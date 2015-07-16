@@ -1,0 +1,75 @@
+---
+layout: post
+title: TimeLine-customization
+description: timeline customization
+platform: wpf
+control: SfSchedule
+documentation: ug
+---
+
+# TimeLine customization
+
+Timeline elements of Day, Week and TimeLine view can be customized by using the following properties.
+
+Time Interval
+
+Time interval can be customized using the TimeInterval property. The default interval is One hour.
+
+TimeMode :
+
+SfSchedule Time format can be changed by using the TimeMode property.
+
+  [XAML]
+
+
+
+   &lt;Grid Background="White" Name="grid"&gt;
+
+        &lt;Schedule:SfSchedule ScheduleType="Week" TimeMode="TwelveHours" &gt;     
+
+        &lt;/Schedule:SfSchedule&gt;
+
+    &lt;/Grid&gt;
+
+
+
+
+
+[C#]
+
+
+
+            SfSchedule schedule = new SfSchedule();
+
+            schedule.ScheduleType = ScheduleType.Week;
+
+            schedule.TimeMode = TimeModes.TwelveHours;
+
+            this.grid.Children.Add(schedule);
+
+
+
+{ ![](TimeLine-customization_images/TimeLine-customization_img1.png) | markdownify }
+{:.image }
+
+
+
+
+{ ![](TimeLine-customization_images/TimeLine-customization_img2.png) | markdownify }
+{:.image }
+
+
+
+
+Major and Minor Tick Visibility
+
+The major and minor tick visibility can be customized by MajorTickVisibility and MinorTickVisibility.
+
+Major and Minor Tick brush
+
+The major and minor tick brush can be customized using HourStroke and MinuteStroke properties.
+
+Interval Height
+
+The height between the intervals can be set using IntervalHeight property and its default value is 40.
+

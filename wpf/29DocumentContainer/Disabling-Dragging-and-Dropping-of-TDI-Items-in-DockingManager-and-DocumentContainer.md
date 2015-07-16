@@ -1,0 +1,39 @@
+---
+layout: post
+title: Disabling-Dragging-and-Dropping-of-TDI-Items-in-DockingManager-and-DocumentContainer
+description: disabling dragging and dropping of tdi items in dockingmanager and documentcontainer
+platform: wpf
+control: DocumentContainer
+documentation: ug
+---
+
+# Disabling Dragging and Dropping of TDI Items in DockingManager and DocumentContainer
+
+By default, TDI items in DockingManager and DocumentContainer are can be dragged. The IsTDIDragDropEnabled property is available to disable the dragging and dropping of TDI items, as demonstrated in the following code:
+
+
+
+<table>
+<tr>
+<td>
+[XAML]        &lt;syncfusion:DockingManager Name="dockingmanager1" UseDocumentContainer="True" IsTDIDragDropEnabled="False"&gt;            &lt;Grid syncfusion:DockingManager.Header="Tab1" syncfusion:DockingManager.State="Document"/&gt;            &lt;Grid syncfusion:DockingManager.Header="Tab2" syncfusion:DockingManager.State="Document"/&gt;        &lt;/syncfusion:DockingManager&gt;</td></tr>
+<tr>
+<td>
+[C#]dockingmanager1.IsTDIDragDropEnabled=false;</td></tr>
+</table>
+
+
+This property is also applicable to DocumentContainer, as shown in the following code.
+
+
+
+<table>
+<tr>
+<td>
+[XAML]        &lt;syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" IsTDIDragDropEnabled="False" &gt;            &lt;Grid syncfusion:DockingManager.Header="Tab1" syncfusion:DockingManager.State="Document"/&gt;            &lt;Grid syncfusion:DockingManager.Header="Tab2" syncfusion:DockingManager.State="Document"/&gt;        &lt;/syncfusion:DocumentContainer&gt;</td></tr>
+<tr>
+<td>
+[C#]documentcontainer1.IsTDIDragDropEnabled=false;</td></tr>
+</table>
+
+

@@ -1,0 +1,43 @@
+---
+layout: post
+title: Links
+description: links
+platform: wpf
+control: Spreadsheet
+documentation: ug
+---
+
+# Links
+
+## Bookmarks and Hyperlinks
+
+A hyperlink is a convenient way to navigate from one workbook to another workbook. Links created in the native Excel will be imported to the Spreadsheet Control. You can also add new links.
+
+
+
+Adding hyperlink to Cell
+
+You can add the hyperlink to the spreadsheet cell using the Insert Hyperlink dialog box. You can open the Insert Hyperlink dialog using the HyperlinkCommand_._
+
+
+
+{ ![](Links_images/Links_img1.png) | markdownify }
+{:.image }
+
+
+
+
+The following code illustrates how to bind the HyperlinkCommand__a button: 
+
+
+
+[XAML]
+
+
+
+&lt;Button Command="{Binding Path= HyperlinkCommand}"&gt;
+
+&lt;/Button&gt;
+
+
+

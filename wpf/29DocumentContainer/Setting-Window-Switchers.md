@@ -1,0 +1,51 @@
+---
+layout: post
+title: Setting-Window-Switchers
+description: setting window switchers
+platform: wpf
+control: DocumentContainer
+documentation: ug
+---
+
+# Setting Window Switchers
+
+Document Container enables the users to switch between the windows using keyboard keys. This feature facilitates easy navigation between the documents. By using CTRL + TAB combination of keys in the keyboard, user can navigate between windows. Window switchers are available for the Document Container for this purpose.
+
+Currently five modes of window switchers are supported. They are as follows.
+
+* Immediate 
+* List
+* QuickTabs 
+* VS2005 
+* VistaFlip 
+
+To set the Quick Tab Mode for the window switchers, use the following code.
+
+
+
+<table>
+<tr>
+<td>
+[XAML]&lt;!-- Adding Document Container --&gt;&lt;syncfusion:DocumentContainer Name="DocContainer" SwitchMode="QuickTabs" Mode="MDI"&gt;  …....  …....&lt;/syncfusion:DocumentContainer&gt;</td></tr>
+<tr>
+<td>
+[C#]//Creating instance of Document ContainerDocumentContainer DocContainer = new DocumentContainer();//Set mode as MDIDocContainer.Mode = DocumentContainerMode.MDI;//Set switch modeDocContainer.SwitchMode = SwitchMode.QuickTabs;  ….......….......//Adding control to the windowthis.Content = DocContainer;</td></tr>
+</table>
+
+
+{ ![](Setting-Window-Switchers_images/Setting-Window-Switchers_img1.jpeg) | markdownify }
+{:.image }
+
+
+
+
+{ ![](Setting-Window-Switchers_images/Setting-Window-Switchers_img2.jpeg) | markdownify }
+{:.image }
+
+
+
+
+{ ![](Setting-Window-Switchers_images/Setting-Window-Switchers_img3.jpeg) | markdownify }
+{:.image }
+
+

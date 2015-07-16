@@ -1,0 +1,31 @@
+---
+layout: post
+title: Customize-segment-brush
+description: customize segment brush
+platform: wpf
+control: Sparkline
+documentation: ug
+---
+
+# Customize segment brush
+
+We can able to customize the first, last, negative, high and low point brushes as like markers in area and line sparkline.
+
+[XAML]
+
+&lt;Syncfusion:SfColumnSparkline ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" &gt;
+
+            &lt;Syncfusion:SfColumnSparkline.SegmentTemplateSelector&gt;
+
+                &lt;Syncfusion:SegmentTemplateSelector FirstPointBrush="Yellow" LastPointBrush="Yellow" HighPointBrush="Red"/&gt;
+
+            &lt;/Syncfusion:SfColumnSparkline.SegmentTemplateSelector&gt;
+
+        &lt;/Syncfusion:SfColumnSparkline&gt;
+
+Following is the snapshot for customize segment,
+
+{ ![C:/Users/ApoorvahR/Desktop/10.png](Customize-segment-brush_images/Customize-segment-brush_img1.png) | markdownify }
+{:.image }
+
+

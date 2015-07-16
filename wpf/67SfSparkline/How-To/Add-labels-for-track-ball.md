@@ -1,0 +1,63 @@
+---
+layout: post
+title: Add-labels-for-track-ball
+description: add labels for track ball
+platform: wpf
+control: Sparkline
+documentation: ug
+---
+
+### Add labels for track ball
+
+We can add labels for track ball to show the corresponding values. In order to add labels for the trackball, you need to subscribe the event OnSparklineMouseMove and you can get the following data’s from event argument.
+
+[XAML]
+
+      &lt;Page.DataContext&gt;
+
+            &lt;local:UsersViewModel/&gt;
+
+      &lt;/Page.DataContext&gt;
+
+            &lt;Syncfusion:SfLineSparkline ShowTrackBall="True" OnSparklineMouseMove="SfLineSparkline_OnSparklineMouseMove" x:Name="sparkline" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" &gt;
+
+            &lt;/Syncfusion:SfLineSparkline&gt;
+
+
+
+[C#]
+
+    ContentPresenter info;
+
+        private void SfLineSparkline_OnSparklineMouseMove(object src, SparklineMouseMoveEventArgs args)
+
+        {
+
+            if (!args.RootPanel.Children.Contains(info))
+
+            {
+
+                info=new ContentPresenter();
+
+                args.RootPanel.Children.Add(info);
+
+                info.Foreground = new SolidColorBrush(Colors.Red);
+
+                info.FontSize = 25;
+
+            }
+
+            info.Content = args.Value.Y;
+
+            info.Arrange(new Rect(args.Coordinate.X,args.Coordinate.Y,info.ActualWidth,info.ActualHeight));
+
+        }
+
+Following is the snapshot for track ball labels,
+
+{ ![C:/Users/ApoorvahR/Desktop/13.png](Add-labels-for-track-ball_images/Add-labels-for-track-ball_img1.png) | markdownify }
+{:.image }
+
+
+
+

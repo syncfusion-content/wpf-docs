@@ -1,0 +1,225 @@
+---
+layout: post
+title: Styles-and-Templates
+description: styles and templates
+platform: wpf
+control: CalendarEdit
+documentation: ug
+---
+
+# Styles and Templates
+
+This section deals with the following Styles and Templates supported by CalendarEdit control. 
+
+## Day Cells Style
+
+You can set the style of a day cell, using the DayCellsStyle property. 
+
+To set this property, use the following code.
+
+[XAML]
+
+
+
+<Window x:Class="WpfApplication4.Window1"
+
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+  Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+
+&lt;Grid Margin="20"&gt;
+
+  &lt;Grid.Resources&gt;
+
+
+
+&lt;!-- day cell style --&gt;
+
+    &lt;Style x:Key="dayCell" TargetType="{x:Type syncfusion:DayCell}"&gt;
+
+      &lt;Setter Property="CornerRadius" Value="0"/&gt;
+
+      &lt;Setter Property="Background" Value="SlateBlue"/&gt;
+
+    &lt;/Style&gt;
+
+  &lt;/Grid.Resources&gt;
+
+
+
+  &lt;!-- Adding calendar with day cell style --&gt;
+
+  &lt;syncfusion:CalendarEdit Name="calendarEdit" DayCellsStyle="{StaticResource dayCell}"/&gt;
+
+&lt;/Grid&gt;
+
+&lt;/Window&gt;
+
+
+
+{ ![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg) | markdownify }
+{:.image }
+
+
+## Day Name Cells Style
+
+You can set the style of the day name cell, using the DayNameCellsStyle property. Use the following code example to set this property.
+
+[XAML]
+
+
+
+<Window x:Class="WpfApplication4.Window1"
+
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+  Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+
+&lt;Grid Margin="20"&gt;
+
+  &lt;Grid.Resources&gt;
+
+    &lt;!-- setting style for DayNameCell --&gt;
+
+    &lt;Style x:Key="dayCell" TargetType="{x:Type syncfusion:DayNameCell}"&gt;
+
+      &lt;Setter Property="Background" Value="Green"/&gt;
+
+    &lt;/Style&gt;
+
+  &lt;/Grid.Resources&gt;
+
+
+
+  &lt;!-- Adding calendar with day name cell style --&gt;
+
+  &lt;syncfusion:CalendarEdit Name="calendarEdit" DayNameCellsStyle="{StaticResource dayCell}"/&gt;
+
+&lt;/Grid&gt;
+
+&lt;/Window&gt;
+
+
+
+{ ![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg) | markdownify }
+{:.image }
+
+
+## Data Template for Day Cell
+
+You can create a data template for the day cell, using the DayCellsDataTemplate property. This dependency property sets the day cell data template using the following code example.
+
+[XAML]
+
+
+
+<Window x:Class="WpfApplication4.Window1"
+
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+    Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+
+  &lt;Grid Margin="20"&gt;
+
+    &lt;Grid.Resources&gt;
+
+
+
+      &lt;!-- setting Data Template for DayCell --&gt;
+
+      &lt;DataTemplate x:Key="dayCell" DataType="syncfusion:DayCell"&gt;
+
+      <TextBlock
+
+      TextBlock.FontFamily="Tahoma"
+
+      TextBlock.FontStyle="Normal"
+
+      TextBlock.FontSize="15"
+
+      Text="{Binding Day}"/>
+
+      &lt;/DataTemplate&gt;
+
+    &lt;/Grid.Resources&gt;
+
+
+
+    &lt;!-- Adding calendar --&gt;
+
+    &lt;syncfusion:CalendarEdit Name="calendarEdit" DayCellsDataTemplate="{StaticResource dayCell}"/&gt;
+
+  &lt;/Grid&gt;
+
+&lt;/Window&gt;
+
+
+
+
+
+{ ![](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg) | markdownify }
+{:.image }
+
+
+## Data Template for Day Name Cell
+
+You can create a data template for the day name cell, using the DayNameCellsDataTemplate property. This dependency property sets the day name cell data template using the following code example.
+
+[XAML]
+
+
+
+<Window x:Class="WpfApplication4.Window1"
+
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+  Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+
+&lt;Grid Margin="20"&gt;
+
+  &lt;Grid.Resources&gt;
+
+
+
+    &lt;!-- setting Data Template for DayNameCell --&gt;
+
+    &lt;DataTemplate x:Key="dayNameCells" DataType="syncfusion:DayNameCell"&gt;
+
+    <TextBlock
+
+    TextBlock.FontFamily="Tahoma"
+
+    TextBlock.FontStyle="Normal"
+
+    TextBlock.FontSize="15"
+
+    Text="{Binding}"/>
+
+    &lt;/DataTemplate&gt;
+
+  &lt;/Grid.Resources&gt;
+
+
+
+  &lt;!-- Adding calendar --&gt;
+
+  &lt;syncfusion:CalendarEdit Name="calendarEdit" DayNameCellsDataTemplate="{StaticResource dayNameCells}"/&gt;
+
+&lt;/Grid&gt;
+
+&lt;/Window&gt;
+
+
+
+{ ![](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg) | markdownify }
+{:.image }
+
+

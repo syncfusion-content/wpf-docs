@@ -1,0 +1,117 @@
+---
+layout: post
+title: Setting-the-Animation-Speed
+description: setting the animation speed
+platform: wpf
+control: TaskBar
+documentation: ug
+---
+
+# Setting the Animation Speed
+
+You can set the animation speed, which controls the time taken to expand or collapse the taskbar items in the TaskBar, using the Speed property. This is an attached property, which controls the time taken to expand or collapse the TaskBarItems in the TaskBar by using the SetSpeed method.
+
+Use the following code snippet to set this property.
+
+
+
+[XAML]
+
+
+
+&lt;!-- Adding TaskBar that have animation speed as 10 --&gt;
+
+&lt;syncfusion:TaskBar Name="taskBar" GroupMargin="5" syncfusion:TaskBar.Speed="10"&gt;
+
+
+
+    &lt;!-- Adding TaskBarItem --&gt;
+
+    &lt;syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1"&gt;
+
+
+
+        &lt;!-- Adding content to TaskBarItem --&gt;
+
+        &lt;StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch"&gt;
+
+            <TextBlock TextWrapping="Wrap">This taskbar provides an UI similar to that of Windows XP.&lt;/TextBlock&gt;
+
+        &lt;/StackPanel&gt;
+
+    &lt;/syncfusion:TaskBarItem&gt;
+
+
+
+    &lt;!-- Adding TaskBarItem --&gt;
+
+    &lt;syncfusion:TaskBarItem Name="taskBarItem2" Header="TaskBarItem2"&gt;
+
+
+
+        &lt;!-- Adding content to TaskBarItem --&gt;
+
+        &lt;StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch"&gt;
+
+            <TextBlock TextWrapping="Wrap">Specify and customize the group margin.&lt;/TextBlock&gt;
+
+        &lt;/StackPanel&gt;
+
+    &lt;/syncfusion:TaskBarItem&gt;
+
+&lt;/syncfusion:TaskBar&gt;
+
+
+
+
+
+[C#]
+
+
+
+// Setting the speed
+
+TaskBar.SetSpeed(taskBar, 10);
+
+
+
+
+
+Methods handled with Speed Property
+
+GetSpeed
+
+This method is used to get the animation speed, which controls the time taken to expand or collapse the TaskBarItems in the TaskBar. It has one argument, which returns the speed value of type, double.
+
+
+
+[C#]
+
+
+
+double speed;
+
+//Getting speed
+
+speed = TaskBar.GetSpeed(taskBar);
+
+
+
+
+
+SetSpeed
+
+This method is used to set the animation speed, which controls the time taken to expand or collapse the TaskBarItems in the TaskBar. It has two arguments. The first argument specifies the object, while the second argument specifies the value of speed of type double.
+
+
+
+[C#]
+
+
+
+//Setting the speed
+
+TaskBar.SetSpeed(taskBar, 10);
+
+
+

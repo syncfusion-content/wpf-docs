@@ -1,0 +1,27 @@
+---
+layout: post
+title: Enable-the-ClickHeaderToMaximize
+description: enable the clickheadertomaximize
+platform: wpf
+control: TileView Control
+documentation: ug
+---
+
+### Enable the ClickHeaderToMaximize
+
+You can enable the ClickHeaderToMaximize feature by using the ClickHeaderToMaximize property through C# as below. Refer to the detailed sample
+
+
+
+[C#]
+
+      TileViewControl item1 = new TileViewControl();
+
+      item1.ClickHeaderToMaximize = true;
+
+
+
+
+
+
+

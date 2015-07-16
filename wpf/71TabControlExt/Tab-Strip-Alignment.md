@@ -1,0 +1,228 @@
+---
+layout: post
+title: Tab-Strip-Alignment
+description: tab strip alignment
+platform: wpf
+control: TabControlExt
+documentation: ug
+---
+
+# Tab Strip Alignment
+
+TabStrip of the TabControlExt can be aligned to all four sides of the TabControlExt by using the TabStripPlacement property. This dependency property is used to dock the Tab Header, relative to the content of the TabControlExt. It returns the docking state of the TabItem.
+
+The following TabStrip placement options are supported by the TabControlExt.
+
+* Top-positions the TabStrip at the top of the TabControlExt control
+* Bottom-positions the TabStrip at the bottom of the TabControlExt control
+* Left-positions the TabStrip to the left of the TabControlExt control
+* Right-positions the TabStrip to the right of the TabControlExt control
+
+
+
+To place the TabStrip to the "Left" of the TabControlExt, use the below code.
+
+
+
+[XAML]
+
+
+
+&lt;!-- Adding TabControlExt with TabStripPlacement is left --&gt;
+
+&lt;syncfusion:TabControlExt Margin="20" Name="tabControlExt" TabStripPlacement="Left"&gt;
+
+
+
+    &lt;!-- Adding TabItemExt --&gt;
+
+    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"/&gt;
+
+
+
+    &lt;!-- Adding TabItemExt --&gt;
+
+    &lt;syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"/&gt;
+
+&lt;/syncfusion:TabControlExt&gt;
+
+
+
+[C#]
+
+
+
+// Creating instance of the TabControlExt control
+
+TabControlExt tabControlExt = new TabControlExt();
+
+
+
+//Creating the instance of StackPanel
+
+StackPanel stackPanel = new StackPanel();
+
+
+
+//Creating instance of the TabItemExt 
+
+TabItemExt tabItemExt1 = new TabItemExt();
+
+
+
+// Setting header of the TabItemExt
+
+tabItemExt1.Header = "TabItemExt1";
+
+
+
+//Adding TabItemExt to TabControlExt
+
+tabControlExt.Items.Add(tabItemExt1);
+
+
+
+//Creating instance of the TabItemExt2 
+
+TabItemExt tabItemExt2 = new TabItemExt();
+
+
+
+// Setting header of the TabItemExt
+
+tabItemExt2.Header = "TabItemExt2";
+
+
+
+//Adding TabItemExt to TabControlExt
+
+tabControlExt.Items.Add(tabItemExt2);
+
+
+
+//Setting TabStripPlacement property as Left
+
+tabControlExt.TabStripPlacement = Dock.Left;
+
+
+
+//Adding control to the StackPanel
+
+stackPanel.Children.Add(tabControlExt); 
+
+
+
+{ ![](Tab-Strip-Alignment_images/Tab-Strip-Alignment_img1.jpeg) | markdownify }
+{:.image }
+
+
+
+
+## Rotating the Tab Strip
+
+To improve the user readability, the Tab Strip text can be rotated, whenever the TabStripPlacement is set to _left_ or _right_. The RotateTextWhenVertical property need to be set to _true_,__to enable this feature. When this property is set to _true_, and when the TabStripPlacement is changed to left or right (in other words, when the tab strip is in the vertical position), the text will be rotated and placed horizontally as in the below image.
+
+Here is the code snippet for rotating the text when tab strip is vertically placed.
+
+
+
+[XAML]
+
+
+
+&lt;!-- Adding TabControlExt with TabStripPlacement is left and RotateTextWhenVertical is true  --&gt;
+
+&lt;syncfusion:TabControlExt Margin="20" Name="tabControlExt" TabStripPlacement="Left" RotateTextWhenVertical="true"&gt;
+
+
+
+  &lt;!-- Adding TabItemExt --&gt;
+
+  &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"/&gt;
+
+
+
+  &lt;!-- Adding TabItemExt --&gt;
+
+  &lt;syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"/&gt;
+
+&lt;/syncfusion:TabControlExt&gt;
+
+
+
+[C#]
+
+
+
+// Creating instance of the TabControlExt control
+
+TabControlExt tabControlExt = new TabControlExt();
+
+
+
+//Creating the instance of StackPanel
+
+StackPanel stackPanel = new StackPanel();
+
+
+
+//Creating instance of the TabItemExt
+
+TabItemExt tabItemExt1 = new TabItemExt();
+
+
+
+// Setting header of the TabItemExt
+
+tabItemExt1.Header = "TabItemExt1";
+
+
+
+//Adding TabItemExt to TabControlExt
+
+tabControlExt.Items.Add(tabItemExt1);
+
+
+
+//Creating instance of the TabItemExt2
+
+TabItemExt tabItemExt2 = new TabItemExt();
+
+
+
+// Setting header of the TabItemExt
+
+tabItemExt2.Header = "TabItemExt2";
+
+
+
+//Adding TabItemExt to TabControlExt
+
+tabControlExt.Items.Add(tabItemExt2);
+
+
+
+//Setting TabStripPlacement property as Left
+
+tabControlExt.TabStripPlacement = Dock.Left;
+
+
+
+//Setting RotateTextWhenVertical property as true
+
+tabControlExt.RotateTextWhenVertical = true;
+
+
+
+//Adding control to the StackPanel
+
+stackPanel.Children.Add(tabControlExt); 
+
+
+
+{ ![](Tab-Strip-Alignment_images/Tab-Strip-Alignment_img2.jpeg) | markdownify }
+{:.image }
+
+
+
+

@@ -1,0 +1,135 @@
+---
+layout: post
+title: Getting-started
+description: getting started
+platform: wpf
+control: Sparkline
+documentation: ug
+---
+
+# Getting started
+
+## Creating sparkline
+
+Following steps explain how to create sparkline,
+
+Adding the assembly reference:
+
+* Open the [Add Reference](http://msdn.microsoft.com/en-us/library/wkze6zky(v=vs.80).aspx) window from your project.
+* To Choose our assemblies follow the below step depending upon the developing environment. 
+* If using VS 2012 choose Assemblies > Extensions > Syncfusion.SfChart.WPF.dll 
+* If using VS 2010 choose .Net>Syncfusion.SfChart.WPF.dll
+* Add the following namespace in your XAML page:
+
+
+
+[XAML]
+
+xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
+
+Initialize the sparkline
+
+You need to initialize the sparkline represented by the following class Syncfusion.UI.Xaml.Charts.SfChart,
+
+[XAML]
+
+&lt;Syncfusion:SfLineSparkline&gt;
+
+&lt;/Syncfusion:SfLineSparkline&gt;
+
+Create a Sample Data Source
+
+Since the above step will produce only an empty sparkline, we need to add some data to the sparkline for plotting. In this step, let’s create a sample data source.
+
+[C#]
+
+
+
+public class UserProfile
+
+ {
+
+   public DateTime TimeStamp { get; set; }
+
+
+
+   public double NoOfUsers { get; set; }
+
+ } 
+
+
+
+public class UsersViewModel
+
+ {
+
+ public UsersViewModel()
+
+  {
+
+   this.UsersList = new ObservableCollection<UserProfile>();
+
+   DateTime date = DateTime.Today;
+
+   UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 3000 });
+
+            UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 5000 });
+
+            UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = -3000 });
+
+                UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = -4000 });
+
+            UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 2000 });
+
+            UsersList.Add(new UserProfile { TimeStamp = date.AddHours(0.5), NoOfUsers = 3000 });  }
+
+ public ObservableCollection<UserProfile> UsersList
+
+  {
+
+    get; set;
+
+  }
+
+ }
+
+> 
+
+> _Note: Syncfusion sparkline also supports items source as collection of double values and collection inherited from IEnumerable._
+
+> 
+
+Binding Data to sparkline
+
+We need to add the above UsersViewModel to the DataContext of the sparkline, bind the data source to the ItemsSource property of the SfLineSparkline, and then map the data using YBindingPath and XBindingPath.
+
+[XAML]
+
+…
+
+            &lt;Grid.DataContext&gt;
+
+                &lt;local:UsersViewModel/&gt;
+
+            &lt;/Grid.DataContext&gt;
+
+            <Syncfusion:SfLineSparkline 
+
+	                ItemsSource="{Binding UsersList}" 
+
+YBindingPath="NoOfUsers">
+
+            &lt;/Syncfusion:SfLineSparkline &gt;
+
+> 
+
+>   _Note:if we do not map the XBindingPath means sparkline data positioned as indexed._
+
+> 
+
+The following illustrates the result of the above code sample,
+
+{ ![C:/Users/ApoorvahR/Desktop/1.png](Getting-started_images/Getting-started_img1.png) | markdownify }
+{:.image }
+
+

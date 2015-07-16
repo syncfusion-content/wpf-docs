@@ -1,0 +1,227 @@
+---
+layout: post
+title: Adding-Tab-Item-to-the-TabControlExt
+description: adding tab item to the tabcontrolext
+platform: wpf
+control: TabControlExt
+documentation: ug
+---
+
+# Adding Tab Item to the TabControlExt
+
+The TabItemExt is added to the TabControlExt by using either XAML or C# coding. Use the following lines of code to add a TabItemExt to the TabControlExt control.
+
+
+
+[XAML]
+
+
+
+&lt;!-- Adding TabControlExt --&gt;
+
+&lt;syncfusion:TabControlExt Name="tabControlExt"&gt;
+
+
+
+    &lt;!-- Adding TabItemExt --&gt;
+
+    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt"/&gt;
+
+&lt;/syncfusion:TabControlExt&gt;
+
+
+
+[C#]
+
+
+
+// Creating instance of the TabControlExt control
+
+TabControlExt tabControlExt = new TabControlExt();
+
+
+
+//Creating the instance of StackPanel
+
+StackPanel stackPanel = new StackPanel();
+
+
+
+//Creating instance of the TabItemExt 
+
+TabItemExt tabItemExt1 = new TabItemExt();
+
+
+
+// Setting header of the TabItemExt
+
+tabItemExt1.Header = "TabItemExt";
+
+
+
+//Adding TabItemExt to TabControlExt
+
+tabControlExt.Items.Add(tabItemExt1);
+
+
+
+//Adding control to the StackPanel
+
+stackPanel.Children.Add(tabControlExt);
+
+
+
+{ ![](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img1.jpeg) | markdownify }
+{:.image }
+
+
+
+
+Adding Content to TabItemExt
+
+To add content to the TabItemExt, use the below code snippet.
+
+
+
+[XAML]
+
+
+
+&lt;!-- Adding TabControlExt with CloseButtonType is Both --&gt;
+
+&lt;syncfusion:TabControlExt Margin="20" Name="tabControlExt" EnableLabelEdit="True"&gt;
+
+
+
+    &lt;!-- Adding TabItemExt --&gt;
+
+    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"&gt;
+
+
+
+        &lt;!-- Adding content to TabItemExt --&gt;
+
+        <TextBlock TextWrapping="Wrap">This is TabItemExt2</TextBlock>
+
+    &lt;/syncfusion:TabItemExt&gt;
+
+
+
+    &lt;!-- Adding TabItemExt --&gt;
+
+    &lt;syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2" IsSelected="False"&gt;
+
+
+
+        &lt;!-- Adding content to TabItemExt --&gt;
+
+        <TextBlock TextWrapping="Wrap">This is TabItemExt2</TextBlock>
+
+    &lt;/syncfusion:TabItemExt&gt;
+
+&lt;/syncfusion:TabControlExt&gt;
+
+
+
+[C#]
+
+
+
+// Creating instance of the TabControlExt control
+
+TabControlExt tabControlExt = new TabControlExt();
+
+
+
+//Creating the instance of StackPanel
+
+StackPanel stackPanel = new StackPanel();
+
+
+
+//Creating instance of the TabItemExt 
+
+TabItemExt tabItemExt1 = new TabItemExt();
+
+
+
+// Setting header of the TabItemExt
+
+tabItemExt1.Header = "TabItemExt1";
+
+
+
+// creating instance for text block
+
+TextBlock textblock1 = new TextBlock();
+
+
+
+//Adding content to TabItemExt
+
+textblock1.Text = "This is TabItemExt1";
+
+
+
+//Adding content to TabItemExt
+
+tabItemExt1.Content = textblock1;
+
+
+
+//Adding TabItemExt to TabControlExt
+
+tabControlExt.Items.Add(tabItemExt1);
+
+
+
+//Creating instance of the TabItemExt2 
+
+TabItemExt tabItemExt2 = new TabItemExt();
+
+
+
+// Setting header of the TabItemExt
+
+tabItemExt2.Header = "TabItemExt2";
+
+
+
+// creating instance for text block
+
+TextBlock textblock2 = new TextBlock();
+
+
+
+// Setting text for textblock
+
+textblock2.Text = "This is TabItemExt2";
+
+
+
+//Adding content to TabItemExt
+
+tabItemExt2.Content = textblock2;
+
+
+
+//Adding TabItemExt to TabControlExt
+
+tabControlExt.Items.Add(tabItemExt2);
+
+
+
+//Adding control to the Stack Panel
+
+stackPanel.Children.Add(tabControlExt); 
+
+
+
+{ ![](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img2.jpeg) | markdownify }
+{:.image }
+
+
+> _Note: To display the TabItemExt, you must already have the TabControlExt in which you are going to add the TabItemExt._
+
+
+

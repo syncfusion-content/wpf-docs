@@ -1,0 +1,13 @@
+---
+layout: post
+title: Keyboard-and-Mouse-support
+description: keyboard and mouse support
+platform: wpf
+control: CurrencyTextBox 
+documentation: ug
+---
+
+# Keyboard and Mouse support
+
+Up or down arrows in the CurrencyTextBox spin the values one step up or down. Mouse Scroll in the CurrencyTextBox spin values one step up or down. The spin behavior in the CurrencyTextBox can be enabled by setting the IsScrollingOnCircle property to true.
+

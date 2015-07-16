@@ -1,0 +1,185 @@
+---
+layout: post
+title: Print-and-Print-Preview
+description: print and print preview
+platform: wpf
+control: Grid Control
+documentation: ug
+---
+
+# Print and Print Preview
+
+Essential Grid for WPF provides an in-built support for printing and print preview.  This feature populates a print dialog that allows you to preview the output and make required modifications if necessary, before sending the grid content for printing.
+
+The GridPrintDialog class plays a vital role in the implementation of printing support. It is built based on Microsoft PrintDialog class that will handle the internal operations for GridPrintDialog. The GridPrintDialog class defines the designer for the Print dialog and exposes a number of properties and APIs to handle the UI requirements and define the interaction logic for the Print Dialog. The users can use these properties to configure the Print and Print Preview options.
+
+Example
+
+Enabling the printing feature is like invoking an API – ShowPrintDialog() on the instances of the grid.
+
+
+
+[C#]
+
+
+
+this.grid.ShowPrintDialog();
+
+
+
+Output
+
+{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img1.jpeg) | markdownify }
+{:.image }
+
+
+## Print Dialog Options
+
+The Print Dialog provides numerous options to configure the output.
+
+Print Button
+
+Clicking the Print button allows the user to send the grid content to the printer for printing.
+
+
+
+{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img2.jpeg) | markdownify }
+{:.image }
+
+
+Page Size Drop-down
+
+This drop down lists out various available paper sizes for printing. For example: ISOA4, ISOA1, ISOA3etc. Selecting the required paper size allows the user to print the grid data in the paper of same size.
+
+> _Note: The paper sizes are also marked in the following way:_
+
+* _Extra-Extra increases the space in addition to the predefined size of the paper, for example- A3._
+* _Rotated -The output is rotated by a defined angle for the selected page size._
+
+
+
+For more information, check the following link: [http://msdn.microsoft.com/en-us/library/system.printing.pagemediasizename.aspx](http://msdn.microsoft.com/en-us/library/system.printing.pagemediasizename.aspx)
+
+
+
+{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img3.jpeg) | markdownify }
+{:.image }
+
+
+Color Drop-down
+
+The options in this drop-down allow you select the color for the data to be printed. Following are the options provided:
+
+* Monochrome—Selecting this option allows the user to print the grid data in the shades of a single color or hue.
+* Color—Selecting this option allows the user to print the grid data in the selected color.
+* Grayscale—Selecting this option allows the user to print the grid data in a range of shades of gray without apparent color, the darkest shade being black and the lightest shade being white.
+* Unknown—This option can be selected in cases where you receive any print configuration settings which does not fall within the other 3 options. The application that is using this configuration will internally set the color option as unknown in such cases.
+
+
+
+{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img4.jpeg) | markdownify }
+{:.image }
+
+
+Zoom Drop-down
+
+The options in this drop-down allow you select the required percentage magnification for viewing the grid data to be printed. Selecting the required option allows you to magnify the preview to various preset zoom levels like 50%, 100%, 200% and 400%. 
+
+
+
+{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img5.jpeg) | markdownify }
+{:.image }
+
+
+Navigation Options
+
+The Print dialog provides four navigational buttons to navigate the grid preview:
+
+{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img6.jpeg) | markdownify }
+{:.image }
+-This button allows you to move to the first page 
+
+
+
+{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img7.jpeg) | markdownify }
+{:.image }
+-This button allows you to move to the last page 
+
+
+
+{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img8.jpeg) | markdownify }
+{:.image }
+-This button allows you to move to the previous page 
+
+
+
+{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img9.jpeg) | markdownify }
+{:.image }
+-This button allows you to move to the next page 
+
+
+
+The following image shows the next button highlighted for an example.
+
+
+
+{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img10.jpeg) | markdownify }
+{:.image }
+
+
+## Printing Header and Footer
+
+Headers and Footers can be added to the document to be printed. 
+
+* GridControl.PrintHeaderTemplate determines the content for the print header. It is a property of GridControl and any value assigned to this property will be provided as an output in the Header section of the print output. For example: A text block outlined with a border is assigned to this property and hence the header also is printed with a border. 
+* GridControl.PrintFooterTemplate defines the print footer. The content represented by the print header will appear at the top of each printed page and likewise, the content represented by the print footer will appear at the bottom of each printed page. 
+* The height of the header and footer can be adjusted using the GridControl properties- PrintHeaderHeight and PrintFooterHeight.
+
+
+
+
+
+[XAML]
+
+
+
+&lt;syncfusion:GridControl x:Name="grid" PrintHeaderHeight="40" PrintFooterHeight="40"&gt;
+
+                        &lt;syncfusion:GridControl.PrintHeaderTemplate&gt;
+
+                            &lt;DataTemplate&gt;
+
+                                &lt;Border CornerRadius="5" BorderBrush="Crimson" BorderThickness="2" HorizontalAlignment="Stretch"&gt;
+
+                                    &lt;TextBlock Text="Header Template" FontSize="24" FontFamily="Calibri" HorizontalAlignment="Center" /&gt;
+
+                                &lt;/Border&gt;
+
+                            &lt;/DataTemplate&gt;
+
+                        &lt;/syncfusion:GridControl.PrintHeaderTemplate&gt;
+
+                        &lt;syncfusion:GridControl.PrintFooterTemplate&gt;
+
+                            &lt;DataTemplate&gt;
+
+                                &lt;Border CornerRadius="5" BorderBrush="Red" BorderThickness="2" HorizontalAlignment="Stretch"&gt;
+
+                                    &lt;TextBlock Text="Footer Template" FontSize="24" FontFamily="Calibri" HorizontalAlignment="Center" /&gt;
+
+                                &lt;/Border&gt;
+
+                            &lt;/DataTemplate&gt;
+
+                        &lt;/syncfusion:GridControl.PrintFooterTemplate&gt;
+
+
+
+Output
+
+The following image is the output of the code above. 
+
+{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img11.jpeg) | markdownify }
+{:.image }
+
+

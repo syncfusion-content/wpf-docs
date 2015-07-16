@@ -1,0 +1,599 @@
+---
+layout: post
+title: Appearance
+description: appearance
+platform: wpf
+control: TreeViewAdv
+documentation: ug
+---
+
+# Appearance
+
+This section deals with the appearance of TreeViewAdv control and contains the following topics:
+
+## Customizing the Appearance of the TreeViewAdv
+
+The TreeViewAdv appearance is customized by using the appearance properties available in the control. You can set the color for the Foreground, Background, Selected Item Foreground, Selected Item Background, MouseOver Foreground and MouseOver Background of TreeViewAdv control.
+
+* SelectedBackground: Gets or sets the background color of the selected treeview item
+* SelectedForeground: Gets or sets the foreground color of the selected treeview item
+* MouseOverForeground: Gets or sets the foreground color of the treeview item over which the mouse pointer moves
+* MouseOverBackground: Gets or sets the background color of the treeview item over which the mouse pointer moves
+* SelectionUnfocussedBackground: Gets or sets the background color of the selected treeview item when the item loses focus
+
+
+
+The following code example illustrates the above property settings.
+
+
+
+[XAML]
+
+
+
+&lt;!-- Adding TreeViewAdv With Brushes --&gt;
+
+&lt;syncfusion:TreeViewAdv MouseOverBackground="Aqua" MouseOverForeground="Magenta" Name="treeViewAdv" SelectedBackground="Orange" SelectedForeground="Red" SelectionUnfocussedBackcolor="Gold"&gt;
+
+
+
+    &lt;!-- Adding TreeViewItemAdv --&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+
+    &lt;/syncfusion:TreeViewItemAdv&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+
+    &lt;/syncfusion:TreeViewItemAdv&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+
+&lt;/syncfusion:TreeViewAdv&gt;
+
+
+
+[C#]
+
+
+
+// Set MouseOverBackground property
+
+treeViewAdv.MouseOverBackground = Brushes.Aqua;
+
+
+
+// Set MouseOverForeground property
+
+treeViewAdv.MouseOverForeground = Brushes.Magenta;
+
+
+
+// Set SelectedBackground property
+
+treeViewAdv.SelectedBackground = Brushes.Orange;
+
+
+
+// Set SelectedForeground property
+
+treeViewAdv.SelectedForeground = Brushes.Red;
+
+
+
+// Set SelectionUnfocussedBackcolor property
+
+treeViewAdv.SelectionUnfocussedBackcolor = Brushes.Gold;
+
+
+
+
+
+{ ![](Appearance_images/Appearance_img1.jpeg) | markdownify }
+{:.image }
+
+
+_SelectedBackground = "Orange"; SelectedForeground = "Red"; SelectionUnfocussedBackcolor = "Gold"_
+
+
+
+## Setting Visual Style
+
+The appearance of the TreeViewAdv control is customized by using the VisualStyle property. It gets or sets the visual style for the TreeViewAdv control. 
+
+The various built-in visual styles are listed below.
+
+* Blend
+* Office2003
+* Office2007Blue
+* Office2007Black
+* Office2007Silver
+* ShinyBlue
+* ShinyRed
+* SyncOrange
+* VS2010
+* Metro
+* Transparent
+
+
+
+
+
+[XAML]
+
+
+
+&lt;!-- Adding TreeViewAdv with visual style --&gt;
+
+&lt;syncfusion:TreeViewAdv Name="treeViewAdv" syncfusion:SkinStorage.VisualStyle="Office2007Blue"&gt;
+
+
+
+  &lt;!-- Adding TreeViewItemAdv --&gt;
+
+  &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+
+  &lt;/syncfusion:TreeViewItemAdv&gt;
+
+  &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+
+  &lt;/syncfusion:TreeViewItemAdv&gt;
+
+  &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
+
+  &lt;/syncfusion:TreeViewItemAdv&gt;
+
+&lt;/syncfusion:TreeViewAdv&gt;
+
+
+
+
+
+[C#]
+
+
+
+//Setting the visaul style as Office2007Blue 
+
+SkinStorage.SetVisualStyle(treeViewAdv, "Office2007Blue"); 
+
+
+
+{ ![](Appearance_images/Appearance_img2.jpeg) | markdownify }
+{:.image }
+
+
+
+
+{ ![](Appearance_images/Appearance_img3.jpeg) | markdownify }
+{:.image }
+
+
+
+
+{ ![](Appearance_images/Appearance_img4.jpeg) | markdownify }
+{:.image }
+
+
+
+
+{ ![](Appearance_images/Appearance_img5.jpeg) | markdownify }
+{:.image }
+
+
+
+
+{ ![](Appearance_images/Appearance_img6.png) | markdownify }
+{:.image }
+
+
+
+
+{ ![](Appearance_images/Appearance_img7.png) | markdownify }
+{:.image }
+
+
+
+
+## Customizing HeaderTextDecorations
+
+You can decorate the header text of the TreeView columns using simple property settings. This is done by defining the HeaderTextDecoration class with customization options.
+
+
+
+[XAML]
+
+
+
+&lt;!-- Adding TreeViewAdv with Text Decorations --&gt;
+
+&lt;syncfusion:TreeViewAdv Name="treeViewAdv"&gt;
+
+
+
+  &lt;!-- Adding TreeViewItemAdv --&gt;
+
+  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" Header="Marital Status"&gt;
+
+    &lt;syncfusion:TreeViewItemAdv.HeaderTextDecorations&gt;
+
+      &lt;TextDecorationCollection&gt;
+
+        &lt;TextDecoration&gt;
+
+          &lt;TextDecoration.Pen&gt;
+
+            &lt;Pen Brush="#FF6699CC"/&gt;
+
+          &lt;/TextDecoration.Pen&gt;
+
+        &lt;/TextDecoration&gt;
+
+      &lt;/TextDecorationCollection&gt;
+
+    &lt;/syncfusion:TreeViewItemAdv.HeaderTextDecorations&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+
+  &lt;/syncfusion:TreeViewItemAdv&gt;
+
+  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" Header="Baby Vaccines"&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+
+  &lt;/syncfusion:TreeViewItemAdv&gt;
+
+  &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
+
+  &lt;/syncfusion:TreeViewItemAdv&gt;
+
+&lt;/syncfusion:TreeViewAdv&gt;
+
+
+
+{ ![](Appearance_images/Appearance_img8.jpeg) | markdownify }
+{:.image }
+
+
+
+
+## Customizing Root Lines
+
+The TreeViewAdv displays root lines, which link the nodes of a tree structure. These TreeViewAdv root lines are displayed or hidden by using the ShowRootLines property of the class TreeViewAdv. To set this property, use the below code
+
+
+
+[XAML]
+
+
+
+&lt;!-- Adding TreeViewAdv With show root lines --&gt;
+
+&lt;syncfusion:TreeViewAdv Name="treeViewAdv" ShowRootLines="False"&gt;
+
+
+
+    &lt;!-- Adding TreeViewItemAdv --&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+
+    &lt;/syncfusion:TreeViewItemAdv&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+
+    &lt;/syncfusion:TreeViewItemAdv&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+
+&lt;/syncfusion:TreeViewAdv&gt;
+
+
+
+[C#]
+
+
+
+// Show root lines
+
+treeViewAdv.ShowRootLines = false;
+
+
+
+{ ![](Appearance_images/Appearance_img9.jpeg) | markdownify }
+{:.image }
+
+
+
+
+See Also
+
+Line Color, Line Pen
+
+### Line Color
+
+The color of the root lines, which connect different nodes in a TreeViewAdv control is changed by using the LineBrush property. Use the following code example to set the color of the root lines.
+
+
+
+[XAML]
+
+
+
+&lt;!-- Adding TreeViewAdv With show root lines and line brush --&gt;
+
+&lt;syncfusion:TreeViewAdv Name="treeViewAdv" LineBrush="Red" ShowRootLines="True"&gt;
+
+
+
+    &lt;!-- Adding TreeViewItemAdv --&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+
+    &lt;/syncfusion:TreeViewItemAdv&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+
+    &lt;/syncfusion:TreeViewItemAdv&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+
+&lt;/syncfusion:TreeViewAdv&gt;
+
+
+
+
+
+[C#]
+
+
+
+// Show root lines
+
+treeViewAdv.ShowRootLines = true;
+
+
+
+// Set line brush
+
+treeViewAdv.LineBrush = Brushes.Red;
+
+
+
+{ ![](Appearance_images/Appearance_img10.jpeg) | markdownify }
+{:.image }
+
+
+
+
+See Also
+
+Root Lines, Line Pen
+
+### Line Pen
+
+The root lines which connect different nodes in a TreeViewAdv control are customized by using the LinePen property. This property specifies the pen color for a node line. To set the LinePen property, refer the below code
+
+
+
+[XAML]
+
+
+
+&lt;!-- Adding TreeViewAdv With show root lines and line pen --&gt;
+
+&lt;syncfusion:TreeViewAdv Name="treeViewAdv" ShowRootLines="True"&gt;
+
+    &lt;syncfusion:TreeViewAdv.LinePen&gt;
+
+        &lt;Pen Brush="Red" Thickness="1"/&gt;
+
+    &lt;/syncfusion:TreeViewAdv.LinePen&gt;
+
+
+
+    &lt;!-- Adding TreeViewItemAdv --&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+
+    &lt;/syncfusion:TreeViewItemAdv&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+
+    &lt;/syncfusion:TreeViewItemAdv&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+
+&lt;/syncfusion:TreeViewAdv&gt;
+
+
+
+[C#]
+
+
+
+// Show root lines
+
+treeViewAdv.ShowRootLines = true;
+
+
+
+// Set line Pen
+
+treeViewAdv.LinePen = new Pen(Brushes.Red, 1);
+
+
+
+
+
+{ ![](Appearance_images/Appearance_img11.jpeg) | markdownify }
+{:.image }
+
+
+
+
+See Also
+
+Root Lines, Line Color
+
+## Customizing Item Foreground
+
+TreeViewAdv provides support to set the text color of the items that are dragged by using the FakeItemForeground property. The following code example can be used to set this property.
+
+
+
+[XAML]
+
+
+
+&lt;!-- Adding TreeViewAdv with FakeDragIndicator and FakeItem foreground --&gt;
+
+&lt;syncfusion:TreeViewAdv FakeItemForeground="Magenta" IsFakeDragIndicator="True" Name="treeViewAdv"&gt;
+
+
+
+    &lt;!-- Adding TreeViewItemAdv --&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+
+    &lt;/syncfusion:TreeViewItemAdv&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+
+        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+
+    &lt;/syncfusion:TreeViewItemAdv&gt;
+
+    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+
+&lt;/syncfusion:TreeViewAdv&gt;
+
+
+
+[C#]
+
+
+
+// Set Fake Item foreground
+
+treeViewAdv.FakeItemForeground = Brushes.Magenta;
+
+
+
+{ ![](Appearance_images/Appearance_img12.jpeg) | markdownify }
+{:.image }
+
+
+
+

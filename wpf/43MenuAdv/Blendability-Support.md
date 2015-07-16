@@ -1,0 +1,43 @@
+---
+layout: post
+title: Blendability-Support
+description: blendability support
+platform: wpf
+control: MenuAdv
+documentation: ug
+---
+
+# Blendability Support
+
+You can customize MenuAdv and MenuItemAdv in Expression Blend. After adding MenuAdv and MenuItemAdv to the design view, you can see MenuAdv and MenuItemAdv in the Objects and Timeline window.
+
+{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Objects&timline.png](Blendability-Support_images/Blendability-Support_img1.png) | markdownify }
+{:.image }
+
+
+{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/BlendDesignView.png](Blendability-Support_images/Blendability-Support_img2.png) | markdownify }
+{:.image }
+
+
+Right-click MenuAdv and in EditTemplate option select Edit a Copy and assign the key name to the resource edited. The same process can be repeated to edit the MenuItemAdv style.
+
+{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Editacopy.png](Blendability-Support_images/Blendability-Support_img3.png) | markdownify }
+{:.image }
+
+
+{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/MenuAdvStyle.png](Blendability-Support_images/Blendability-Support_img4.png) | markdownify }
+{:.image }
+
+
+User can also customize the appearance of the TopScrollButtonStyle, BottomScrollButtonStyle, CheckBoxStyle & RadioButtonStyle using the Edit Additional Templates option by doing right click on the MenuItemAdv and selecting the respective styles from the option.
+
+{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/EditAdditionalTemplates.png](Blendability-Support_images/Blendability-Support_img5.png) | markdownify }
+{:.image }
+
+
+The following screen shot shows the MenuAdv and MenuItemAdv templates edited and customized by using Expression Blend.
+
+{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Blendability.png](Blendability-Support_images/Blendability-Support_img6.png) | markdownify }
+{:.image }
+
+

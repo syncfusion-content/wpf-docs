@@ -1,0 +1,86 @@
+---
+layout: post
+title: Filter-Support
+description: filter support
+platform: wpf
+control: AutoComplete
+documentation: ug
+---
+
+# Filter Support
+
+Filter support is used to filter the matched list of items from the linked source depending on the text entered in the AutoComplete textbox. AutoComplete allows the user to enable Filter the items using IsFilter property.
+
+{ ![C:/Users/ApoorvahR/Desktop/1.png](Filter-Support_images/Filter-Support_img1.png) | markdownify }
+{:.image }
+
+
+
+
+
+Adding Filter Support to an Application 
+
+If the IsFilter property is set as True, once you enter text in the AutoComplete textbox, the matched list of items will be displayed in the drop-down list. If this property is set as False the matched list of items will not be displayed in the drop-down list, instead all the items will be displayed.
+
+
+
+<table>
+<tr>
+<td>
+[XAML]&lt;syncfusion:AutoComplete x:Name="AutoComplete1" IsFilter="true"/&gt;</td></tr>
+<tr>
+<td>
+[C#]AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsFilter = true;</td></tr>
+</table>
+
+
+Tables for properties, methods, and events
+
+Properties
+
+  _Property Table for Filter_
+
+<table>
+<tr>
+<td>
+Property </td><td>
+Description </td><td>
+Type </td><td>
+Data Type </td><td>
+Reference links </td></tr>
+<tr>
+<td>
+IsFilter</td><td>
+Gets or sets the value of IsFilter in the AutoComplete.</td><td>
+DependencyProperty</td><td>
+bool(true)</td><td>
+</td></tr>
+</table>
+
+
+Events
+
+  _Event Table for Filter_
+
+<table>
+<tr>
+<th>
+Event </th><th>
+Description </th><th>
+Arguments </th><th>
+Type </th><th colspan = "2">
+Reference links </th></tr>
+<tr>
+<th>
+IsFilterChanged</th><th>
+ When the value of IsFilter is changed, this event will be triggered.It cannot be cancelled.</th><th>
+DependencyObject,DependencyPropertyChangedEventArgs</th><th colspan = "2">
+DependencyPropertyChangedCallBack </th><th>
+</th></tr>
+</table>
+
+
+Sample Link
+
+WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
+

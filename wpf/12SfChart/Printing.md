@@ -1,0 +1,79 @@
+---
+layout: post
+title: Printing
+description: printing
+platform: wpf
+control: SfChart
+documentation: ug
+---
+
+# Printing
+
+SfChart supports printing that enables you to print the chart. This support works in Windows 8.1 but not in Windows 8.
+
+_Printing_
+
+<table>
+<tr>
+<td>
+Prototype</td><td>
+ Description</td></tr>
+<tr>
+<td>
+Print()</td><td>
+This method is used to print the chart by invoking the Charm window listing with output options.</td></tr>
+</table>
+
+
+The following code example illustrates the Printing feature.
+
+[XAML]
+
+
+
+<syncfusion:SfChart HorizontalAlignment="Right" VerticalAlignment="Top" Height="400" Width="650" Margin="0,50,100,0"
+
+                    Palette="Metro" Loaded="ChartOnLoaded"
+
+                    >
+
+            &lt;syncfusion:SfChart.PrimaryAxis&gt;
+
+                &lt;syncfusion:NumericalAxis Interval="2" FontSize="14" /&gt;
+
+            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+
+            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+
+                &lt;syncfusion:NumericalAxis FontSize="14"/&gt;
+
+            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+
+
+
+
+
+ [C#]
+
+
+
+private void ChartOnLoaded(object sender, RoutedEventArgs routedEventArgs)
+
+        {
+
+            var chart = sender as SfChart;
+
+            if (chart != null)
+
+                chart.Print();
+
+        }
+
+
+
+The following screenshot illustrates Printing.
+
+{ ![C:/Users/rachel/Desktop/snaps/20.png](Printing_images/Printing_img1.png) | markdownify }
+{:.image }
+
+

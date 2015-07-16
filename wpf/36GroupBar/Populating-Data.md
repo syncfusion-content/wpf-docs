@@ -1,0 +1,113 @@
+---
+layout: post
+title: Populating-Data
+description: populating data
+platform: wpf
+control: GroupBar
+documentation: ug
+---
+
+# Populating Data
+
+Data can be populated in the GroupBar control thought XAML, C#, or XML. The GroupBar control also supports binding to objects. The following sections describe how to implement these different forms of data population.
+
+## Through XAML
+
+Create a GroupBar control in XAML, as seen below.
+
+
+
+[XAML]
+
+&lt;syncfusion:GroupBar Name="groupBar1"&gt;
+
+   &lt;syncfusion:GroupBarItem HeaderText="NewGroupBarItem1" IsSelected="True" &gt;
+
+        &lt;syncfusion:GroupView&gt;
+
+          &lt;syncfusion:GroupViewItem Text="New GroupViewItem" /&gt;
+
+        &lt;/syncfusion:GroupView&gt;
+
+   &lt;/syncfusion:GroupBarItem&gt;
+
+
+
+   &lt;syncfusion:GroupBarItem HeaderText="NewGroupBarItem2" /&gt;
+
+
+
+   &lt;syncfusion:GroupBarItem HeaderText="NewGroupBarItem3"  /&gt;
+
+
+
+&lt;/syncfusion:GroupBar&gt;
+
+
+
+## Through C#
+
+To create a GroupBar control in C#, include the following namespace to the directives list.
+
+
+
+[C#]
+
+using Syncfusion.Windows.Tools.Controls;
+
+
+
+
+
+Next, create the GroupBar as follows.
+
+
+
+[C#]
+
+GroupBar gBar = new GroupBar();
+
+
+
+            GroupBarItem gBarItem1 = new GroupBarItem() { HeaderText ="NewGroupBarItem1", 					IsSelected = true };
+
+
+
+            GroupView gView = new GroupView();
+
+            GroupViewItem gViewItem = new GroupViewItem() { Text="New GroupViewItem"};
+
+            gView.Items.Add(gViewItem);
+
+
+
+            gBarItem1.Content = gView;
+
+
+
+            GroupBarItem gBarItem2 = new GroupBarItem() { HeaderText="NewGroupBarItem2"};
+
+            GroupBarItem gBarItem3 = new GroupBarItem() { HeaderText="NewGroupBarItem3"};
+
+
+
+            gBar.Items.Add(gBarItem1);
+
+            gBar.Items.Add(gBarItem2);
+
+            gBar.Items.Add(gBarItem3);
+
+
+
+
+
+
+
+This will generate the following GroupBar control.
+
+
+
+{ ![](Populating-Data_images/Populating-Data_img1.png) | markdownify }
+{:.image }
+
+

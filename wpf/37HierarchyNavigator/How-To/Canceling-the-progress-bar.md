@@ -1,0 +1,37 @@
+---
+layout: post
+title: Canceling-the-progress-bar
+description: canceling the progress bar
+platform: wpf
+control: Hierarchical Navigator
+documentation: ug
+---
+
+### Canceling the progress bar
+
+There are two methods to cancel a progress bar:
+
+1. Calling the CancelProgressBar method in HierarchyNavigator.
+
+C#
+
+
+
+HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
+
+hierarchyNavigator.CancelProgressBar();
+
+
+
+2. Passing an argument in the method to cancel the progress bar for a specified time span. The image below specifies a time span of 1000 ms.
+
+C#
+
+
+
+HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
+
+hierarchyNavigator.OnCancelProgressBar(new TimeSpan(0, 0, 0, 0, 1000));
+
+
+

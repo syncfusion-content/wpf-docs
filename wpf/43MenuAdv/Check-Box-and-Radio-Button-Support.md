@@ -1,0 +1,111 @@
+---
+layout: post
+title: Check-Box-and-Radio-Button-Support
+description: check box and radio button support
+platform: wpf
+control: MenuAdv
+documentation: ug
+---
+
+# Check Box and Radio Button Support
+
+MenuAdv provides a support for selecting several items. MenuItemAdv can be checked by setting the IsCheckable property of the MenuItemAdv to “true”. You can change the icon type (Check Box or Radio Button) by using the CheckIcon property also it can be checked by using the IsChecked property.
+
+Use Case Scenarios
+
+MenuAdv helps users to use MenuItemAdv with the CheckBox or RadioButton support.
+
+Using the Check Box and Radio Button Support in an Application
+
+If you set the CheckIcon property to RadioButton, then MenuItemAdv’s will be grouped based on the value of the GroupName property and end user can select only one item from the group. Similarly, if you set the CheckIcon property to CheckBox, then MenuItemAdv can be checked and unchecked. The Check Box and Radio Button support can be used in an application, as shown in the following the code snippet.
+
+[XAML]
+
+&lt;shared:MenuAdv x:Name="Menu" Margin="10"&gt;
+
+                &lt;shared:MenuItemAdv Header="File"/&gt;
+
+                &lt;shared:MenuItemAdv Header="Edit"/&gt;
+
+                &lt;shared:MenuItemAdv Header="View"&gt;
+
+                    <shared:MenuItemAdv Header="Immediate" 
+
+IsCheckable="True" CheckIconType="CheckBox" IsChecked="True"/>
+
+                    <shared:MenuItemAdv Header="CallStack" 
+
+IsCheckable="True" CheckIconType="CheckBox" IsChecked="False"/>
+
+                    &lt;shared:MenuItemSeparator/&gt;
+
+                    <shared:MenuItemAdv Header="SolutionExplorer" 
+
+IsCheckable="True" CheckIconType="RadioButton" GroupName="group1" 
+
+IsChecked="False"/>
+
+                    <shared:MenuItemAdv Header="TeamExplorer" 
+
+IsCheckable="True" CheckIconType="RadioButton" GroupName="group1" 
+
+IsChecked="True"/>
+
+                    <shared:MenuItemAdv Header="ServerExplorer" 
+
+IsCheckable="True" CheckIconType="RadioButton" GroupName="group1" 
+
+IsChecked="False"/>
+
+                &lt;/shared:MenuItemAdv&gt;
+
+                &lt;shared:MenuItemAdv Header="Project"/&gt;
+
+                &lt;shared:MenuItemAdv Header="Build"/&gt;
+
+            &lt;/shared:MenuAdv&gt;
+
+
+
+{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Chk&Radio.png](Check-Box-and-Radio-Button-Support_images/Check-Box-and-Radio-Button-Support_img1.png) | markdownify }
+{:.image }
+
+
+Properties
+
+The properties for the Check box and Radio button support are described in the following tabulation:   
+
+_Properties Table_
+
+<table>
+<tr>
+<td>
+Property </td><td>
+Description </td><td>
+Type </td><td>
+Data Type </td></tr>
+<tr>
+<td>
+IsCheckable</td><td>
+Gets or sets the value of IsCheckable in MenuItemAdv.</td><td>
+DependencyProperty</td><td>
+bool(false)</td></tr>
+<tr>
+<td>
+CheckIconType</td><td>
+Gets or sets the CeckIconType of MenuItemAdv.</td><td>
+DependencyProperty</td><td>
+CheckIconType(CheckBox)</td></tr>
+<tr>
+<td>
+IsChecked</td><td>
+Gets or sets the IsChecked value of MenuItemAdv.</td><td>
+DependencyProperty</td><td>
+bool(false)</td></tr>
+</table>
+
+
+Sample Link
+
+WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
+

@@ -1,0 +1,365 @@
+<h1 id="label-settings">Label Settings</h1>
+
+<p>Labels</p>
+
+<p>Scale labels associate a numeric value with major scale tick marks. The label stroke can be changed by using the LabelStroke property. The size of the Labels can be changed by using the LabelAutoSizeChange property.</p>
+
+<p>Code Example:</p>
+
+<p>[XAML]</p>
+
+<pre><code>         &amp;lt;syncfusion:SfCircularGauge x:Name="gauge"&amp;gt;
+
+            &amp;lt;syncfusion:SfCircularGauge.MainScale&amp;gt;
+
+                &amp;lt;syncfusion:CircularScale LabelStroke="Red"  LabelAutoSizeChange="True" &amp;gt;                              
+
+                &amp;lt;/syncfusion:CircularScale&amp;gt;
+
+            &amp;lt;/syncfusion:SfCircularGauge.MainScale&amp;gt;
+
+  &amp;lt;/syncfusion:SfCircularGauge&amp;gt;
+</code></pre>
+
+<p>[C#]</p>
+
+<pre><code>        SfCircularGauge circularGauge = new SfCircularGauge();
+
+        CircularScale _mainscale = new CircularScale();
+
+        _mainscale.LabelStroke = new SolidColorBrush(Colors.Red);
+
+        _mainscale.LabelAutoSizeChange = true;
+
+        circularGauge.MainScale = _mainscale;
+
+        this.Grid.Children.Add(circularGauge);
+</code></pre>
+
+<table class="image">
+  <tbody>
+    <tr>
+      <td>{ <img src="Label-Settings_images/Label-Settings_img1.png" alt="" /></td>
+      <td>markdownify }</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Smart Labels</p>
+
+<p>Smart labels allow you to change the numeric scale type of the labels displayed in a gauge scale. They also help you to customize labels by adding prefixes or suffixes to the scale labels.</p>
+
+<p>Enable/Disable Smart Labels</p>
+
+<p>The EnableSmartLabels property is a Boolean property that enables or disables the smart label feature of the CircularGauge.</p>
+
+<p>NumericScaleType</p>
+
+<p>The NumericScaleType property allows you to set the type of label. The following types can be applied to labels:</p>
+
+<ul>
+  <li>Auto</li>
+  <li>Thousands</li>
+  <li>Millions</li>
+  <li>Billions</li>
+  <li>Trillions</li>
+  <li>Quadrillions</li>
+  <li>Quintillions</li>
+</ul>
+
+<p>[XAML]</p>
+
+<p>&lt;syncfusion:SfCircularGauge &gt;</p>
+
+<pre><code>&amp;lt;syncfusion:SfCircularGauge.MainScale&amp;gt;
+
+    &lt;syncfusion:CircularScale EnableSmartLabels="False"  NumericScaleType="Thousands" Interval="20" 
+
+                              MinorTicksPerInterval="5" TickLength="20" 
+
+                              StartAngle="180" SweepAngle="180" StartValue="0"
+
+                               EndValue="100"/&gt;
+
+&amp;lt;/syncfusion:SfCircularGauge.MainScale&amp;gt;
+</code></pre>
+
+<p>&lt;/syncfusion:SfCircularGauge&gt;</p>
+
+<p>[C#]</p>
+
+<pre><code>        SfCircularGauge circularGauge = new SfCircularGauge();
+
+        CircularScale _mainscale = new CircularScale();
+
+        _mainscale.EnableSmartLabels = false;
+
+        _mainscale.Interval = 20;
+
+        _mainscale.MinorTicksPerInterval = 5;
+
+        _mainscale.TickLength = 20;
+
+        _mainscale.StartAngle = 180;
+
+        _mainscale.SweepAngle = 180;
+
+        _mainscale.StartValue = 0;
+
+        _mainscale.EndValue = 100;
+
+        circularGauge.MainScale = _mainscale;
+
+        this.Grid.Children.Add(circularGauge);
+</code></pre>
+
+<p>Screenshot:</p>
+
+<table class="image">
+  <tbody>
+    <tr>
+      <td>{ <img src="Label-Settings_images/Label-Settings_img2.png" alt="" /></td>
+      <td>markdownify }</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Enable  SmartLabels-‘False’’</em></p>
+
+<p>Number of Fraction Digits</p>
+
+<p>The NoOfFractionalDigits property is used to set the number of fractional digits to be displayed in the scale labels.</p>
+
+<p>[XAML]</p>
+
+<p>&lt;syncfusion:SfCircularGauge &gt;</p>
+
+<pre><code>&amp;lt;syncfusion:SfCircularGauge.MainScale&amp;gt;
+
+    &lt;syncfusion:CircularScale EnableSmartLabels="True" 
+
+                              Interval="20"  NoOfFractionalDigit="1"
+
+                              MinorTicksPerInterval="5" TickLength="20" 
+
+                              StartAngle="180" SweepAngle="180" StartValue="0"
+
+                              EndValue="200"/&gt;
+
+&amp;lt;/syncfusion:SfCircularGauge.MainScale&amp;gt;
+</code></pre>
+
+<p>&lt;/syncfusion:SfCircularGauge&gt;</p>
+
+<p>[C#]</p>
+
+<pre><code>        SfCircularGauge circularGauge = new SfCircularGauge();
+
+        CircularScale _mainscale = new CircularScale();
+
+        _mainscale.EnableSmartLabels = true;
+
+        _mainscale.Interval = 2000;
+
+       _mainscale.NoOfFractionalDigit = 1;
+
+        _mainscale.MinorTicksPerInterval = 5;
+
+        _mainscale.TickLength = 20;
+
+        _mainscale.StartAngle = 180;
+
+        _mainscale.SweepAngle = 180;
+
+        _mainscale.StartValue = 0;
+
+        _mainscale.EndValue = 100;
+
+        circularGauge.MainScale = _mainscale;
+
+        this.Grid.Children.Add(circularGauge);
+</code></pre>
+
+<p>Screenshot:</p>
+
+<table class="image">
+  <tbody>
+    <tr>
+      <td>{ <img src="Label-Settings_images/Label-Settings_img3.png" alt="" /></td>
+      <td>markdownify }</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Label Postfix</p>
+
+<p>This property allows you to set the postfix values to the scale labels. The label postfixes are visible even if the EnableSmartLabels property is set to false.</p>
+
+<p>[XAML]</p>
+
+<p>&lt;syncfusion:SfCircularGauge &gt;</p>
+
+<pre><code>&amp;lt;syncfusion:SfCircularGauge.MainScale&amp;gt;
+
+    &lt;syncfusion:CircularScale LabelPostfix="%"
+
+                              Interval="10"  MinorTicksPerInterval="5" 
+
+                              TickLength="20" StartAngle="180" 
+
+                              SweepAngle="180" 
+
+                              StartValue="0" EndValue="100"/&gt;
+
+&amp;lt;/syncfusion:SfCircularGauge.MainScale&amp;gt;
+</code></pre>
+
+<p>&lt;/syncfusion:SfCircularGauge&gt;</p>
+
+<p>[C#]</p>
+
+<pre><code>        SfCircularGauge circularGauge = new SfCircularGauge();
+
+        CircularScale _mainscale = new CircularScale();
+
+        _mainscale.LabelPostfix = "%";
+
+        _mainscale.Interval = 10;
+
+        _mainscale.MinorTicksPerInterval = 5;
+
+        _mainscale.TickLength = 20;
+
+        _mainscale.StartAngle = 180;
+
+        _mainscale.SweepAngle = 0;
+
+        _mainscale.EndValue = 100;
+
+        circularGauge.MainScale = _mainscale;
+
+        this.Grid.Children.Add(circularGauge);
+</code></pre>
+
+<p>Screenshot:</p>
+
+<table class="image">
+  <tbody>
+    <tr>
+      <td>{ <img src="Label-Settings_images/Label-Settings_img4.png" alt="" /></td>
+      <td>markdownify }</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Label Prefix</p>
+
+<p>This property allows you to set the prefix values for the scale labels. The label prefixes are visible even if the EnableSmartLabels property is set to false.</p>
+
+<p>[XAML]</p>
+
+<p>&lt;syncfusion:SfCircularGauge &gt;</p>
+
+<pre><code>&amp;lt;syncfusion:SfCircularGauge.MainScale&amp;gt;
+
+    &lt;syncfusion:CircularScale LabelPrefix="$"
+
+                              Interval="10"  MinorTicksPerInterval="5" 
+
+                              TickLength="20" StartAngle="180" 
+
+                              SweepAngle="180" 
+
+                              StartValue="0" EndValue="100"/&gt;
+
+&amp;lt;/syncfusion:SfCircularGauge.MainScale&amp;gt;
+</code></pre>
+
+<p>&lt;/syncfusion:SfCircularGauge&gt;</p>
+
+<p>[C#]</p>
+
+<pre><code>        SfCircularGauge circularGauge = new SfCircularGauge();
+
+        CircularScale _mainscale = new CircularScale();
+
+        _mainscale.LabelPrefix= "$";
+
+        _mainscale.Interval = 10;
+
+        _mainscale.MinorTicksPerInterval = 5;
+
+        _mainscale.TickLength = 20;
+
+        _mainscale.StartAngle = 180;
+
+        _mainscale.SweepAngle = 0;
+
+        _mainscale.EndValue = 100;
+
+        circularGauge.MainScale = _mainscale;
+
+        this.Grid.Children.Add(circularGauge);
+</code></pre>
+
+<p>Screenshot:</p>
+
+<table class="image">
+  <tbody>
+    <tr>
+      <td>{ <img src="Label-Settings_images/Label-Settings_img5.png" alt="" /></td>
+      <td>markdownify }</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>LabelPosition</p>
+
+<p>The Labels in the scale can be placed inside the scale or outside the scale by selecting one of the options available in the LabelPosition property. These options are:</p>
+
+<ol>
+  <li>Inside (Default)</li>
+  <li>Outside</li>
+</ol>
+
+<p>Code Example</p>
+
+<p>[XAML]</p>
+
+<pre><code>        &amp;lt;syncfusion:SfCircularGauge x:Name="gauge"&amp;gt;
+
+            &amp;lt;syncfusion:SfCircularGauge.MainScale&amp;gt;
+
+                &amp;lt;syncfusion:CircularScale LabelPosition="Outside"&amp;gt;
+
+                &amp;lt;/syncfusion:CircularScale&amp;gt;
+
+            &amp;lt;/syncfusion:SfCircularGauge.MainScale&amp;gt;
+
+        &amp;lt;/syncfusion:SfCircularGauge&amp;gt;
+</code></pre>
+
+<p>[C#]</p>
+
+<pre><code>        SfCircularGauge circularGauge = new SfCircularGauge();
+
+        CircularScale _mainscale = new CircularScale();
+
+        _mainscale.LabelPosition = LabelPosition.Outside;
+
+        circularGauge.MainScale = _mainscale;
+
+        this.Grid.Children.Add(circularGauge);
+</code></pre>
+
+<p>Screenshot:</p>
+
+<table class="image">
+  <tbody>
+    <tr>
+      <td>{ <img src="Label-Settings_images/Label-Settings_img6.png" alt="" /></td>
+      <td>markdownify }</td>
+    </tr>
+  </tbody>
+</table>
+

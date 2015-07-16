@@ -1,0 +1,42 @@
+---
+layout: post
+title: Getting-Started
+description: getting started
+platform: wpf
+control: CheckListBox
+documentation: ug
+---
+
+# Getting Started
+
+This section guides you on getting started with CheckListBox control. It covers the following topics:
+
+## Why to use our CheckListBox control
+
+Here are some highlights about our CheckListBox control.
+
+* Selecting items is made much easier on a first mouse-click
+* You can align the check box to the right, or left side of the CheckListBox Item
+* Drag items between list boxes
+* Built-in Visual Styles and Themes support
+## Create CheckListBox control
+
+
+You can create a CheckListBox control either by using XAML code or C# code. To create a CheckListBox control, use the following code.
+
+<table>
+<tr>
+<td>
+[XAML]&lt;!-- Adding CheckListBox --&gt;&lt;syncfusion:CheckListBox Name="checkListBox"&gt;    &lt;!-- Adding CheckListBox items --&gt;    &lt;syncfusion:CheckListBoxItem Content="Mexico"/&gt;    &lt;syncfusion:CheckListBoxItem Content="Canada" /&gt;    &lt;syncfusion:CheckListBoxItem Content="Bermuda" /&gt;    &lt;syncfusion:CheckListBoxItem Content="Belize" /&gt;    &lt;syncfusion:CheckListBoxItem Content="Panama" /&gt;&lt;/syncfusion:CheckListBox&gt;</td></tr>
+<tr>
+<td>
+[C#]// Creating an instance of CheckListBoxCheckListBox checkListBox = new CheckListBox();// Creating an instance of CheckListBoxItemCheckListBoxItem checkListBoxItem1 = new CheckListBoxItem();// Adding content to CheckListBoxItemcheckListBoxItem1.Content = "Mexico";// Adding CheckListBoxItem to CheckListBoxcheckListBox.Items.Add(checkListBoxItem1);   // Creating an instance of CheckListBoxItemCheckListBoxItem checkListBoxItem2 = new CheckListBoxItem();// Adding content to CheckListBoxItemcheckListBoxItem1.Content = "Bermuda";// Adding CheckListBoxItem to CheckListBoxcheckListBox.Items.Add(checkListBoxItem2); // ........// ........this.Content = checkListBox;   </td></tr>
+</table>
+
+
+
+
+{ ![](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+{:.image }
+
+

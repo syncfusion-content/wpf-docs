@@ -1,0 +1,73 @@
+---
+layout: post
+title: Inserting-a-UI-Element
+description: inserting a ui element
+platform: wpf
+control: RichTextBoxAdv
+documentation: ug
+---
+
+# Inserting a UI Element
+
+In order to insert a UI element in the document, ParagraphAdv provides an inline called UIContainerAdv.
+
+Properties
+
+
+
+_Property Table_
+
+<table>
+<tr>
+<td>
+Property</td><td>
+Description</td><td>
+Type</td><td>
+Data Type</td></tr>
+<tr>
+<td>
+Height</td><td>
+Specifies the height of the image.</td><td>
+Dependency Property</td><td>
+Double</td></tr>
+<tr>
+<td>
+Width</td><td>
+Specifies the width of the image.</td><td>
+Dependency Property</td><td>
+Double</td></tr>
+<tr>
+<td>
+UIElement</td><td>
+Specifies the UI element to be added.</td><td>
+Dependency Property</td><td>
+UIElement</td></tr>
+<tr>
+<td>
+FitToContent</td><td>
+Fits the UIElement based on the size of a page.</td><td>
+Dependency Property</td><td>
+Boolean</td></tr>
+</table>
+
+
+## Adding UIElement to an Application
+
+UIContainerAdv can be used to add a UI element directly to an application by using the following code snippet: 
+
+
+
+<table>
+<tr>
+<td>
+[XAML]      &lt;syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext"&gt;            &lt;syncfusion:DocumentAdv&gt;                &lt;syncfusion:SectionAdv&gt;                    &lt;syncfusion:ParagraphAdv &gt;                        &lt;syncfusion:UIContainerAdv &gt;                            &lt;Button /&gt;                        &lt;/syncfusion:UIContainerAdv&gt;                    &lt;/syncfusion:ParagraphAdv&gt;                &lt;/syncfusion:SectionAdv&gt;            &lt;/syncfusion:DocumentAdv&gt;        &lt;/syncfusion:RichTextBoxAdv&gt;</td></tr>
+<tr>
+<td>
+[C#]           RichTextBoxAdv richtext = new RichTextBoxAdv();           DocumentAdv document = new DocumentAdv();           SectionAdv section = new SectionAdv();           ParagraphAdv paragraph = new ParagraphAdv();           UIContainerAdv uicontainer = new UIContainerAdv();           uicontainer.UIElement = new Button();           paragraph.Inlines.Add(uicontainer);           section.Blocks.Add(paragraph);           document.Sections.Add(section);           richtext.Document = document;</td></tr>
+</table>
+
+
+## Limitations
+
+Cut, copy, and paste operations are not permitted for the UIElement.
+

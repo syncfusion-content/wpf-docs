@@ -1,0 +1,31 @@
+---
+layout: post
+title: Bind-the-Business-objects-to-AutoComplete
+description: bind the business objects to autocomplete
+platform: wpf
+control: AutoComplete
+documentation: ug
+---
+
+### Bind the Business objects to AutoComplete
+
+AutoComplete supports binding the Business objects as its Data Source.
+
+The Business objects can be bound to the AutoComplete by using the CustomSource property and also by setting the value of the Source property as Custom. If the Source property value is set as FilePath or Registry, Binding of Business objects will not be supported.
+
+Also when binding the Business objects, the DisplayMemberPath and the SelectedValuePath property values has to be given so that the DisplayMemberPath value displays in the drop-down list and  the SelectedValuePath assigns values to the SelectedValue property.
+
+You can bind the Business objects to the AutoComplete as mentioned below.
+
+<table>
+<tr>
+<td>
+[XAML]<syncfusion:AutoComplete x:Name="AutoCompleteTextBox" Source="Custom” DisplayMemberPath="Name" SelectedValuePath="EmployeeID">     &lt;syncfusion:AutoComplete.CustomSource&gt;            &lt;local:EmployeeListCollection/&gt;     &lt;/syncfusion:AutoComplete.CustomSource&gt;&lt;/syncfusion:AutoComplete&gt;</td></tr>
+<tr>
+<td>
+[C#]public class EmployeeList    {        public int EmployeeID { get; set; }        public string Name { get; set; }        public string Mailid { get; set; }        public EmployeeList() { }        public EmployeeList(string name, string mail, int id)        {            Name = name;            Mailid = mail;            EmployeeID = id;        }    }    public class EmployeeListCollection : ObservableCollection<EmployeeList>    {        public EmployeeListCollection()        {            this.Add(new EmployeeList() { EmployeeID = 1001, Name = "John", Mailid = "john@syncfusion.com" });            this.Add(new EmployeeList() { EmployeeID = 1002, Name = "Jerry", Mailid = "Jerry@syncfusion.com" });            this.Add(new EmployeeList() { EmployeeID = 1003, Name = "Brad", Mailid = "Brad@syncfusion.com" });            this.Add(new EmployeeList() { EmployeeID = 1004, Name = "lanze", Mailid = "lanze@syncfusion.com" });            this.Add(new EmployeeList() { EmployeeID = 1005, Name = "Chambel", Mailid = "Chambel@syncfusion.com" });            this.Add(new EmployeeList() { EmployeeID = 1006, Name = "Crimson", Mailid = "Crimson@syncfusion.com" });        }    }</td></tr>
+</table>
+
+
+
+

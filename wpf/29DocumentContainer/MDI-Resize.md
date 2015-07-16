@@ -1,0 +1,37 @@
+---
+layout: post
+title: MDI-Resize
+description: mdi resize
+platform: wpf
+control: DocumentContainer
+documentation: ug
+---
+
+# MDI Resize
+
+Document Container provides options to resize its elements. Setting AllowMDIResize property to _true__,_ will enable the end users to resize the container elements. 
+
+To set this property, use the below code.
+
+
+
+[XAML]
+
+
+
+&lt;!-- Adding Document Container --&gt;
+
+&lt;syncfusion:DocumentContainer Name="DocContainer" IsAllowMDIResize="True"  Mode="MDI"&gt;
+
+&lt;FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features"&gt;
+
+&lt;/FlowDocumentScrollViewer&gt;
+
+…....
+
+…....
+
+&lt;/syncfusion:DocumentContainer&gt;
+
+
+

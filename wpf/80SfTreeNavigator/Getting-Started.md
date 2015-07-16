@@ -1,0 +1,69 @@
+---
+layout: post
+title: Getting-Started
+description: getting started 
+platform: wpf
+control: Tree Navigator 
+documentation: ug
+---
+
+# Getting Started 
+
+Namespace : Syncfusion.Windows.Controls.Navigation 
+
+Assembly : Syncfusion.SfTreeNavigator.WPF (in Syncfusion.SfTreeNavigator.WPF.dll) 
+
+The following code sample shows how to create the Tree Navigator from code-behind and XAML, 
+
+
+
+[XAML]
+
+&lt;navigation:SfTreeNavigator Header="Enterprise Toolkit" &gt;
+
+   &lt;navigation:SfTreeNavigatorItem Header="WinRT (XAML)"&gt;
+
+        &lt;navigation:SfTreeNavigatorItem Header="Chart"/&gt;
+
+        &lt;navigation:SfTreeNavigatorItem Header="Tools"/&gt;
+
+   &lt;/navigation:SfTreeNavigatorItem&gt;
+
+   &lt;navigation:SfTreeNavigatorItem Header="Metro Studio"/&gt;
+
+&lt;/navigation:SfTreeNavigator&gt;
+
+
+
+[C#]
+
+SfTreeNavigator sfToolkit = new SfTreeNavigator();
+
+
+
+SfTreeNavigatorItem winrt = new SfTreeNavigatorItem() {Header = "WinRT (XAML)"};
+
+SfTreeNavigatorItem metroStudio = new SfTreeNavigatorItem() {Header = "Metro Studio"};
+
+
+
+SfTreeNavigatorItem winrt_chart = new SfTreeNavigatorItem() {Header = "Chart"};
+
+SfTreeNavigatorItem winrt_tools = new SfTreeNavigatorItem() {Header = "Tools"};
+
+
+
+winrt.Items.Add(winrt_chart);
+
+winrt.Items.Add(winrt_tools);
+
+
+
+sfToolkit.Items.Add(winrt);
+
+sfToolkit.Items.Add(metroStudio);
+
+
+
+
+
