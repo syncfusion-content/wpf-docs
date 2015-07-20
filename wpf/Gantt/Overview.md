@@ -17,7 +17,7 @@ Research scholars, IT companies or any organisaztion that following work breakdo
 
 
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 

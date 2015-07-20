@@ -53,31 +53,31 @@ SkinStorage.VisualStyle(notifyIcon, "Office2007Silver");
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)' | markdownify }}
 {:.image }
 
 
 _NotifyIcon with "Office2007Blue" Visual Style_
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)' | markdownify }}
 {:.image }
 
 
 _NotifyIcon with "Blend" Visual Style_
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 
 _NotifyIcon with "Office2007Silver" Visual Style_
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img4.png) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img4.png)' | markdownify }}
 {:.image }
 
 
 _NotifyIcon with "Metro" Visual Style_
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/notifyicon.png](Layout-Related-Features_images/Layout-Related-Features_img5.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/notifyicon.png](Layout-Related-Features_images/Layout-Related-Features_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -90,14 +90,14 @@ You can set the background and foreground for the BalloonTipHeader by using the 
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon"  HeaderBackground="Blue" HeaderForeground="Red" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/&gt;</td></tr>
+[XAML]<syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon"  HeaderBackground="Blue" HeaderForeground="Red" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/></td></tr>
 <tr>
 <td>
 [C#]notifyIcon.HeaderForeground = Brushes.Red;notifyIcon.HeaderBackground = Brushes.Blue;</td></tr>
 </table>
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img6.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img6.jpeg)' | markdownify }}
 {:.image }
 
 

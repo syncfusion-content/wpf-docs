@@ -30,9 +30,9 @@ Multiple shapes in the map can be selected when “EnableMultiSelection” of Sh
 
 
 
-&lt;syncfusion:SfMap &gt;
+<syncfusion:SfMap >
 
-                &lt;syncfusion:SfMap.Layers&gt;
+                <syncfusion:SfMap.Layers>
 
                     <syncfusion:ShapeFileLayer x:Name="shapeLayer" CrossCursorStroke="#686868" CrossCursorStrokeThickness="0.5"  
 
@@ -40,25 +40,25 @@ Multiple shapes in the map can be selected when “EnableMultiSelection” of Sh
 
 Uri="MapApp.world1.shp"  >
 
-                        &lt;syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                        <syncfusion:ShapeFileLayer.ShapeSettings>
 
-                            &lt;syncfusion:ShapeSetting ShapeFill="#E5E5E5" SelectedShapeColor="#1196CD" ShapeStroke="#C1C1C1" ShapeStrokeThickness="1" /&gt;
+                            <syncfusion:ShapeSetting ShapeFill="#E5E5E5" SelectedShapeColor="#1196CD" ShapeStroke="#C1C1C1" ShapeStrokeThickness="1" />
 
-                        &lt;/syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                        </syncfusion:ShapeFileLayer.ShapeSettings>
 
-                    &lt;/syncfusion:ShapeFileLayer&gt;
+                    </syncfusion:ShapeFileLayer>
 
-                &lt;/syncfusion:SfMap.Layers&gt;
+                </syncfusion:SfMap.Layers>
 
-            &lt;/syncfusion:SfMap &gt;
+            </syncfusion:SfMap >
 
 
 
-{ ![](Map-Selection_images/Map-Selection_img1.png) | markdownify }
+{{ '![](Map-Selection_images/Map-Selection_img1.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Map-Selection_images/Map-Selection_img2.png) | markdownify }
+{{ '![](Map-Selection_images/Map-Selection_img2.png)' | markdownify }}
 {:.image }
 
 

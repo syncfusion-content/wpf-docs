@@ -44,9 +44,9 @@ Sample code for setting zooming feature properties:
 
 [XAML]
 
-&lt;syncfusion:SfMap ZoomLevel="3" MinZoom="1" MaxZoom="20" EnableZoom="True"&gt;                
+<syncfusion:SfMap ZoomLevel="3" MinZoom="1" MaxZoom="20" EnableZoom="True">                
 
-&lt;/syncfusion:SfMap &gt;
+</syncfusion:SfMap >
 
 
 
@@ -84,7 +84,7 @@ Through a mouse wheel event
 
 In addition to the pinching event, the map can be zoomed with mouse events.  When the mouse is scrolled up, the map is zoomed in. When the mouse is scrolled down, the map is zoomed out.
 
-{ ![](Zooming-and-Panning_images/Zooming-and-Panning_img1.png) | markdownify }
+{{ '![](Zooming-and-Panning_images/Zooming-and-Panning_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -100,17 +100,17 @@ Enable and disable pan
 
 The EnablePan property enables or disables the panning feature of the map. A “True” value enables the panning feature. A “False” value disables the panning feature of the map.
 
-&lt;syncfusion:SfMap ShowCoords="True" LatitudeLongitudeType="Decimal" EnablePan="True"&gt;         
+<syncfusion:SfMap ShowCoords="True" LatitudeLongitudeType="Decimal" EnablePan="True">         
 
-            &lt;syncfusion:SfMap.Layers&gt;
+            <syncfusion:SfMap.Layers>
 
-                &lt;syncfusion:ShapeFileLayer   Uri="MapApp.world1.shp"&gt;                    
+                <syncfusion:ShapeFileLayer   Uri="MapApp.world1.shp">                    
 
-                &lt;/syncfusion:ShapeFileLayer&gt;
+                </syncfusion:ShapeFileLayer>
 
-            &lt;/syncfusion:SfMap.Layers&gt;
+            </syncfusion:SfMap.Layers>
 
-        &lt;/syncfusion:SfMap &gt;
+        </syncfusion:SfMap >
 
 
 
@@ -149,7 +149,7 @@ The map can be panned by dragging the map through mouse interactions. This works
 
 > _Note: The map can be panned only when some parts of the map are outside the view of the control._
 
-{ ![](Zooming-and-Panning_images/Zooming-and-Panning_img2.png) | markdownify }
+{{ '![](Zooming-and-Panning_images/Zooming-and-Panning_img2.png)' | markdownify }}
 {:.image }
 
 

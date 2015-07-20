@@ -78,7 +78,7 @@ public class DataSource
 
 
 
-{ ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig86.png](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img1.png) | markdownify }
+{{ '![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig86.png](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -86,7 +86,7 @@ public class DataSource
 
 
 
-{ ![C:/Users/anandakumars/Desktop/1.PNG](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img2.png) | markdownify }
+{{ '![C:/Users/anandakumars/Desktop/1.PNG](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -94,7 +94,7 @@ public class DataSource
 
 
 
-{ ![C:/Users/anandakumars/Desktop/2.PNG](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img3.png) | markdownify }
+{{ '![C:/Users/anandakumars/Desktop/2.PNG](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -102,7 +102,7 @@ public class DataSource
 8. Click Run to preview the report in the designer. You have to provide a DataSet value to preview the report.
 9. Select the collection of business objects by selecitng the necessary method in the provided assembly.
 
-{ ![C:/Users/anandakumars/Desktop/FRImages/21.png](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img4.png) | markdownify }
+{{ '![C:/Users/anandakumars/Desktop/FRImages/21.png](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -110,7 +110,7 @@ public class DataSource
 
 
 
-{ ![C:/Users/anandakumars/Desktop/3.PNG](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img5.png) | markdownify }
+{{ '![C:/Users/anandakumars/Desktop/3.PNG](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img5.png)' | markdownify }}
 {:.image }
 
 

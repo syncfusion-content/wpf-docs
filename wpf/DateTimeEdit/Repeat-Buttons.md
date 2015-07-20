@@ -23,7 +23,7 @@ XAML</td></tr>
 </table>
 
 
-{ ![](Repeat-Buttons_images/Repeat-Buttons_img1.png) | markdownify }
+{{ '![](Repeat-Buttons_images/Repeat-Buttons_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -26,14 +26,14 @@ The following code example illustrates how to add the Expanded Mode to an applic
 <table>
 <tr>
 <td>
-[XAML]&lt;sync:ColorPickerPalette IsExpanded="True"/&gt;</td></tr>
+[XAML]<sync:ColorPickerPalette IsExpanded="True"/></td></tr>
 <tr>
 <td>
 [C#]      ColorPickerPalette colorpicker = new ColorPickerPalette();      colorpicker.IsExpanded = true;</td></tr>
 </table>
 
 
-{ ![](Expanded-Mode_images/Expanded-Mode_img1.png) | markdownify }
+{{ '![](Expanded-Mode_images/Expanded-Mode_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -17,7 +17,7 @@ Key Features
 * Pulsing Tile – The control zooms in and out and translates the content across the x- and y- axis.
 * Freezing – A hub tile can be frozen.
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Overview_images/Overview_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 

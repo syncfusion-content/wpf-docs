@@ -18,7 +18,7 @@ The Orientation property has the following two options.
 
 The default option is Horizontal.  
 
-{ ![](Orientation_images/Orientation_img1.jpeg) | markdownify }
+{{ '![](Orientation_images/Orientation_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -26,11 +26,11 @@ The following code sample illustrates how to set Vertical Orientation to SfRange
 
 [XAML]
 
-&lt;editors:SfRangeSlider Height="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" Orientation="Vertical"  /&gt;
+<editors:SfRangeSlider Height="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" Orientation="Vertical"  />
 
 
 
-{ ![](Orientation_images/Orientation_img2.jpeg) | markdownify }
+{{ '![](Orientation_images/Orientation_img2.jpeg)' | markdownify }}
 {:.image }
 
 

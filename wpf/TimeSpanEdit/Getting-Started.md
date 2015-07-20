@@ -13,7 +13,7 @@ documentation: ug
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -43,7 +43,7 @@ To add TimeSpanEdit control to a Visual Studio.NET project:
 
 
 
-{ ![C:/Users/riaj/Desktop/timespan2.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![C:/Users/riaj/Desktop/timespan2.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -53,7 +53,7 @@ To add TimeSpanEdit control to a Visual Studio.NET project:
 
 
 
-{ ![C:/Users/riaj/Desktop/timespan3.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![C:/Users/riaj/Desktop/timespan3.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -63,7 +63,7 @@ _Assemblies added into References_
 
 4. Press F4 or open the Properties Window to customize the control by setting the required properties.
 
-{ ![C:/Users/riaj/Desktop/timespan4.png](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![C:/Users/riaj/Desktop/timespan4.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -155,13 +155,13 @@ PropertyChangedCallback</td></tr>
 
 
 
-1. Click Start-->All Programs-->Syncfusion-->Essential Studio &lt;XX.X.X.XX&gt; -->Dashboard.
+1. Click Start-->All Programs-->Syncfusion-->Essential Studio <XX.X.X.XX> -->Dashboard.
 
  The Essential Studio Enterprise Edition window is displayed. 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -179,7 +179,7 @@ The User Interface edition panel is displayed by default.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -189,7 +189,7 @@ The User Interface edition panel is displayed by default.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 

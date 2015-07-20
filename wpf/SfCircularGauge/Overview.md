@@ -57,7 +57,7 @@ The GaugeHeader is an object that is used to set a unique header for the Circula
 
 ## Circular gauge elements
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -38,14 +38,14 @@ Use the following code to set the skin for the Document Container.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding document container --&gt;&lt;syncfusion:DocumentContainer Name="DocContainer" syncfusion:SkinStorage.VisualStyle="Office2007Blue" Mode="MDI"&gt;  …....  …....&lt;/syncfusion:DocumentContainer&gt;</td></tr>
+[XAML]<!-- Adding document container --><syncfusion:DocumentContainer Name="DocContainer" syncfusion:SkinStorage.VisualStyle="Office2007Blue" Mode="MDI">  …....  …....</syncfusion:DocumentContainer></td></tr>
 <tr>
 <td>
 [C#] // Setting the visual style as Office2007Blue SkinStorage.SetVisualStyle(DocContainer, "Office2007Blue");  </td></tr>
 </table>
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -53,7 +53,7 @@ _Document Container with "Office2007Blue" Theme_
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -61,7 +61,7 @@ _Document Container with "Blend" Theme_
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -69,7 +69,7 @@ _Document Container with "Office2003" Theme_
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img4.png) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -77,7 +77,7 @@ _Document Container with "Metro" Theme_
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img5.png) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img5.png)' | markdownify }}
 {:.image }
 
 

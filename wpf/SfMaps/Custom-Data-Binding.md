@@ -131,159 +131,159 @@ public class ViewModel
 
 
 
-&lt;Syncfusion:SfMap  Name="Weather_Report" &gt;
+<Syncfusion:SfMap  Name="Weather_Report" >
 
-                 &lt;Syncfusion:SfMap.Layers&gt;
+                 <Syncfusion:SfMap.Layers>
 
-                    &lt;Syncfusion:ShapeFileLayer Background="#FFF2E5A2" CustomDataSource="{Binding Models}" EnableSelection="True" Uri="MapApp.world1.shp"  ShapeIDPath="NAME" ShapeIDTableField="NAME"&gt;
+                    <Syncfusion:ShapeFileLayer Background="#FFF2E5A2" CustomDataSource="{Binding Models}" EnableSelection="True" Uri="MapApp.world1.shp"  ShapeIDPath="NAME" ShapeIDTableField="NAME">
 
-                            &lt;Syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                            <Syncfusion:ShapeFileLayer.ShapeSettings>
 
-                            &lt;Syncfusion:ShapeSetting ShapeValuePath="Latitude" SelectedShapeColor="#FFD96666" ColorPalette="CustomPalette"  ShapeStrokeThickness="0"&gt;
+                            <Syncfusion:ShapeSetting ShapeValuePath="Latitude" SelectedShapeColor="#FFD96666" ColorPalette="CustomPalette"  ShapeStrokeThickness="0">
 
-                            &lt;Syncfusion:ShapeSetting.FillSetting&gt;
+                            <Syncfusion:ShapeSetting.FillSetting>
 
-                                &lt;Syncfusion:ShapeFillSetting AutoFillColors="True"/&gt;
+                                <Syncfusion:ShapeFillSetting AutoFillColors="True"/>
 
-                            &lt;/Syncfusion:ShapeSetting.FillSetting&gt;
+                            </Syncfusion:ShapeSetting.FillSetting>
 
-                            &lt;Syncfusion:ShapeSetting.CustomColors&gt;
+                            <Syncfusion:ShapeSetting.CustomColors>
 
-                                    &lt;Syncfusion:MapColorPalette FillBrush="#FFD6C787"/&gt;
+                                    <Syncfusion:MapColorPalette FillBrush="#FFD6C787"/>
 
-                            &lt;/Syncfusion:ShapeSetting.CustomColors&gt;
+                            </Syncfusion:ShapeSetting.CustomColors>
 
-                        &lt;/Syncfusion:ShapeSetting&gt;
+                        </Syncfusion:ShapeSetting>
 
 
 
-                    &lt;/Syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                    </Syncfusion:ShapeFileLayer.ShapeSettings>
 
-                    &lt;Syncfusion:ShapeFileLayer.CustomDataSourceTemplate&gt;
+                    <Syncfusion:ShapeFileLayer.CustomDataSourceTemplate>
 
-                        &lt;DataTemplate&gt;
+                        <DataTemplate>
 
-                            &lt;Grid&gt;
+                            <Grid>
 
-                                &lt;Grid.RowDefinitions&gt;
+                                <Grid.RowDefinitions>
 
-                                    &lt;RowDefinition Height="1*"/&gt;
+                                    <RowDefinition Height="1*"/>
 
-                                    &lt;RowDefinition Height="9*"/&gt;
+                                    <RowDefinition Height="9*"/>
 
-                                &lt;/Grid.RowDefinitions&gt;
+                                </Grid.RowDefinitions>
 
-                                &lt;Grid.ColumnDefinitions&gt;
+                                <Grid.ColumnDefinitions>
 
-                                    &lt;ColumnDefinition Width="1*"/&gt;
+                                    <ColumnDefinition Width="1*"/>
 
-                                    &lt;ColumnDefinition Width="9*"/&gt;
+                                    <ColumnDefinition Width="9*"/>
 
-                                &lt;/Grid.ColumnDefinitions&gt;
+                                </Grid.ColumnDefinitions>
 
-                                &lt;Ellipse Width="12" Height="12" Grid.Column="0" Grid.Row="0" Fill="#FF474747"/&gt;
+                                <Ellipse Width="12" Height="12" Grid.Column="0" Grid.Row="0" Fill="#FF474747"/>
 
 
 
-                                &lt;Grid Grid.Column="1" Grid.Row="1"&gt;
+                                <Grid Grid.Column="1" Grid.Row="1">
 
-                                    &lt;Grid.ColumnDefinitions&gt;
+                                    <Grid.ColumnDefinitions>
 
-                                        &lt;ColumnDefinition/&gt;
+                                        <ColumnDefinition/>
 
-                                        &lt;ColumnDefinition/&gt;
+                                        <ColumnDefinition/>
 
-                                    &lt;/Grid.ColumnDefinitions&gt;
+                                    </Grid.ColumnDefinitions>
 
-                                    &lt;!-- left column--&gt;
+                                    <!-- left column-->
 
-                                    &lt;Grid Grid.Column="0" Width="80" Height="80" Background="#FFFF4411" DataContext="{Binding Data}"&gt;
+                                    <Grid Grid.Column="0" Width="80" Height="80" Background="#FFFF4411" DataContext="{Binding Data}">
 
-                                        &lt;StackPanel Orientation="Vertical"&gt;
+                                        <StackPanel Orientation="Vertical">
 
-                                            &lt;Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="3,3,3,-3"&gt;
+                                            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="3,3,3,-3">
 
 
 
-                                                &lt;StackPanel Orientation="Horizontal"&gt;
+                                                <StackPanel Orientation="Horizontal">
 
-                                                    &lt;TextBlock FontSize="40" FontFamily="Segoe UI"  FontWeight="Thin" Text="{Binding CurrentTemperature}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/&gt;
+                                                    <TextBlock FontSize="40" FontFamily="Segoe UI"  FontWeight="Thin" Text="{Binding CurrentTemperature}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
 
-                                                    &lt;TextBlock Text="&#186;" FontSize="13" Foreground="White" Padding="0,4,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/&gt;
+                                                    <TextBlock Text="&#186;" FontSize="13" Foreground="White" Padding="0,4,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-                                                &lt;/StackPanel&gt;
+                                                </StackPanel>
 
 
 
-                                            &lt;/Grid&gt;
+                                            </Grid>
 
-                                            &lt;StackPanel Orientation="Horizontal" Margin="0,0,0,35"&gt;
+                                            <StackPanel Orientation="Horizontal" Margin="0,0,0,35">
 
-                                                &lt;Grid Margin="19,0,0,5" HorizontalAlignment="Center" VerticalAlignment="Center"&gt;
+                                                <Grid Margin="19,0,0,5" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-                                                    &lt;StackPanel Orientation="Horizontal"&gt;
+                                                    <StackPanel Orientation="Horizontal">
 
-                                                        &lt;TextBlock FontSize="12" FontFamily="Segoe UI" Text="{Binding AverageHighTemperature}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/&gt;
+                                                        <TextBlock FontSize="12" FontFamily="Segoe UI" Text="{Binding AverageHighTemperature}" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
 
-                                                        &lt;TextBlock Text="&#186;" FontSize="8" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/&gt;
+                                                        <TextBlock Text="&#186;" FontSize="8" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-                                                    &lt;/StackPanel&gt;
+                                                    </StackPanel>
 
-                                                &lt;/Grid&gt;
+                                                </Grid>
 
-                                                &lt;TextBlock Margin="0,0,0,5" FontFamily="Segoe UI" Text="/" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="16"/&gt;
+                                                <TextBlock Margin="0,0,0,5" FontFamily="Segoe UI" Text="/" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="16"/>
 
-                                                &lt;Grid Margin="0,0,0,5" HorizontalAlignment="Center" VerticalAlignment="Center"&gt;
+                                                <Grid Margin="0,0,0,5" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-                                                    &lt;StackPanel Orientation="Horizontal"&gt;
+                                                    <StackPanel Orientation="Horizontal">
 
-                                                        &lt;TextBlock FontSize="12" FontFamily="Segoe UI"  Text="{Binding AverageLowTemperature}" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White"/&gt;
+                                                        <TextBlock FontSize="12" FontFamily="Segoe UI"  Text="{Binding AverageLowTemperature}" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White"/>
 
-                                                        &lt;TextBlock Text="&#186;" FontFamily="Segoe UI" FontSize="7" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/&gt;
+                                                        <TextBlock Text="&#186;" FontFamily="Segoe UI" FontSize="7" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-                                                    &lt;/StackPanel&gt;
+                                                    </StackPanel>
 
-                                                &lt;/Grid&gt;
+                                                </Grid>
 
-                                            &lt;/StackPanel&gt;
+                                            </StackPanel>
 
-                                        &lt;/StackPanel&gt;
+                                        </StackPanel>
 
-                                    &lt;/Grid&gt;
+                                    </Grid>
 
-                                    &lt;Grid Grid.Column="1" Height="80" DataContext="{Binding Data}" Background="Wheat" Width="80"&gt;
+                                    <Grid Grid.Column="1" Height="80" DataContext="{Binding Data}" Background="Wheat" Width="80">
 
-                                        &lt;StackPanel Orientation="Vertical"&gt;
+                                        <StackPanel Orientation="Vertical">
 
-                                            &lt;TextBlock Padding="10,0,0,0" TextWrapping="Wrap" Margin="0,6,0,0" FontFamily="Segoe UI" Text="{Binding City}" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black" FontWeight="Medium"/&gt;
+                                            <TextBlock Padding="10,0,0,0" TextWrapping="Wrap" Margin="0,6,0,0" FontFamily="Segoe UI" Text="{Binding City}" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black" FontWeight="Medium"/>
 
-                                            &lt;TextBlock Margin="10,3,0,0" TextWrapping="Wrap" Foreground="Black" FontFamily="Segoe UI" FontWeight="Thin" Text="{Binding WeatherDescription}" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Center"/&gt;
+                                            <TextBlock Margin="10,3,0,0" TextWrapping="Wrap" Foreground="Black" FontFamily="Segoe UI" FontWeight="Thin" Text="{Binding WeatherDescription}" HorizontalAlignment="Left" FontSize="16" VerticalAlignment="Center"/>
 
-                                        &lt;/StackPanel&gt;
+                                        </StackPanel>
 
-                                    &lt;/Grid&gt;
+                                    </Grid>
 
-                                    &lt;Grid Grid.Column="1"&gt;
+                                    <Grid Grid.Column="1">
 
-                                    &lt;/Grid&gt;
+                                    </Grid>
 
-                                &lt;/Grid&gt;
+                                </Grid>
 
-                            &lt;/Grid&gt;
+                            </Grid>
 
-                        &lt;/DataTemplate&gt;
+                        </DataTemplate>
 
-                    &lt;/Syncfusion:ShapeFileLayer.CustomDataSourceTemplate&gt;
+                    </Syncfusion:ShapeFileLayer.CustomDataSourceTemplate>
 
-                &lt;/Syncfusion:ShapeFileLayer&gt;
+                </Syncfusion:ShapeFileLayer>
 
-            &lt;/Syncfusion:SfMap.Layers&gt;
+            </Syncfusion:SfMap.Layers>
 
-   &lt;/Syncfusion:SfMap &gt;
+   </Syncfusion:SfMap >
 
 
 
-{ ![](Custom-Data-Binding_images/Custom-Data-Binding_img1.png) | markdownify }
+{{ '![](Custom-Data-Binding_images/Custom-Data-Binding_img1.png)' | markdownify }}
 {:.image }
 
 

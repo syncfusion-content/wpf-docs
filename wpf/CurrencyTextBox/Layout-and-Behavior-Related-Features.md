@@ -23,11 +23,11 @@ XAML
 
 
 
-&lt;syncfusion:CurrencyTextBox x:Name="currencyTextBox" Value="123" Height="25" Width="150" CornerRadius="4"/&gt;
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Value="123" Height="25" Width="150" CornerRadius="4"/>
 
 
 
-{ ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img1.png) | markdownify }
+{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -51,7 +51,7 @@ XAML
 
 
 
-{ ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img2.png) | markdownify }
+{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -75,7 +75,7 @@ XAML
 
 
 
-{ ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img3.png) | markdownify }
+{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -89,13 +89,13 @@ The TextSelectionOnFocus property allows the CurrencyTextBox to act like standar
 
 
 
-{ ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img4.png) | markdownify }
+{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img4.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img5.png) | markdownify }
+{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img5.png)' | markdownify }}
 {:.image }
 
 

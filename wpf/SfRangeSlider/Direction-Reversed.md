@@ -15,11 +15,11 @@ The direction of increasing value can be changed using IsDirectionReversed prope
 
 [XAML]
 
-&lt;editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" Value="10" IsDirectionReversed="True"  /&gt;
+<editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" Value="10" IsDirectionReversed="True"  />
 
 
 
-{ ![](Direction-Reversed_images/Direction-Reversed_img1.jpeg) | markdownify }
+{{ '![](Direction-Reversed_images/Direction-Reversed_img1.jpeg)' | markdownify }}
 {:.image }
 
 

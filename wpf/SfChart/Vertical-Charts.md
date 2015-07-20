@@ -37,37 +37,37 @@ The following code example illustrates the Vertical Chart feature.
 
 [XAML]
 
-&lt;syncfusion:SfChart   Height="500" Width="650"&gt;
+<syncfusion:SfChart   Height="500" Width="650">
 
-        &lt;syncfusion:SfChart.Resources&gt;
+        <syncfusion:SfChart.Resources>
 
-                &lt;DataTemplate x:Key="suffix"&gt;
+                <DataTemplate x:Key="suffix">
 
-                    &lt;TextBlock Text="K"  FontSize="14"/&gt;
+                    <TextBlock Text="K"  FontSize="14"/>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-        &lt;/syncfusion:SfChart.Resources&gt;
+        </syncfusion:SfChart.Resources>
 
-            &lt;syncfusion:SfChart.ColumnDefinitions&gt;
+            <syncfusion:SfChart.ColumnDefinitions>
 
-                &lt;syncfusion:ChartColumnDefinition /&gt;
+                <syncfusion:ChartColumnDefinition />
 
-                &lt;syncfusion:ChartColumnDefinition /&gt;
+                <syncfusion:ChartColumnDefinition />
 
-            &lt;/syncfusion:SfChart.ColumnDefinitions&gt;
+            </syncfusion:SfChart.ColumnDefinitions>
 
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:CategoryAxis FontSize="14" /&gt;
+                <syncfusion:CategoryAxis FontSize="14" />
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.SecondaryAxis>
 
-                &lt;syncfusion:NumericalAxis FontSize="14" PostfixLabelTemplate="{StaticResource suffix}" OpposedPosition="True"/&gt;
+                <syncfusion:NumericalAxis FontSize="14" PostfixLabelTemplate="{StaticResource suffix}" OpposedPosition="True"/>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+            </syncfusion:SfChart.SecondaryAxis>
 
 
 
@@ -77,25 +77,25 @@ The following code example illustrates the Vertical Chart feature.
 
 
 
-            &lt;syncfusion:LineSeries IsTransposed="True" XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding }"&gt;
+            <syncfusion:LineSeries IsTransposed="True" XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding }">
 
-                &lt;syncfusion:LineSeries.YAxis&gt;
+                <syncfusion:LineSeries.YAxis>
 
-                    &lt;syncfusion:NumericalAxis FontSize="14" PlotOffset="30" PostfixLabelTemplate="{StaticResource suffix}" OpposedPosition="True" syncfusion:SfChart.Column="1"/&gt;
+                    <syncfusion:NumericalAxis FontSize="14" PlotOffset="30" PostfixLabelTemplate="{StaticResource suffix}" OpposedPosition="True" syncfusion:SfChart.Column="1"/>
 
-                &lt;/syncfusion:LineSeries.YAxis&gt;
+                </syncfusion:LineSeries.YAxis>
 
-            &lt;/syncfusion:LineSeries&gt;
+            </syncfusion:LineSeries>
 
 
 
-        &lt;/syncfusion:SfChart&gt;
+        </syncfusion:SfChart>
 
 
 
 The following screenshot illustrates Vertical Chart.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-82.png](Vertical-Charts_images/Vertical-Charts_img1.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-82.png](Vertical-Charts_images/Vertical-Charts_img1.png)' | markdownify }}
 {:.image }
 
 

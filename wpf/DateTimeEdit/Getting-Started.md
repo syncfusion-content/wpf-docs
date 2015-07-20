@@ -22,7 +22,7 @@ The steps to create a DateTimeEdit control by using Visual Studio in C# are as f
 
 
 
-{ ![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -32,7 +32,7 @@ The steps to create a DateTimeEdit control by using Visual Studio in C# are as f
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -43,7 +43,7 @@ The steps to create a DateTimeEdit control by using Visual Studio in C# are as f
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -63,7 +63,7 @@ namespace WpfApp{    public partial class MainWindow : Window    {        public
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -83,7 +83,7 @@ The steps to create a DateTimeEdit control by using VisualStudio in XAML are as 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -99,11 +99,11 @@ The steps to create a DateTimeEdit control by using VisualStudio in XAML are as 
 XAML</td></tr>
 <tr>
 <td>
-<Window x:Class="WpfApp.MainWindow"        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        Title="DateTimeEdit Demo" Height="280" Width="365"        xmlns:syncfusion="              clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.Wpf"        xmlns:local="clr-namespace:WpfApp">    &lt;Grid x:Name="LayoutRoot"&gt;<syncfusion:DateTimeEdit Height="29" Margin="75,71,50,0"                                    VerticalAlignment="Top"/>    &lt;/Grid&gt;&lt;/Window&gt;</td></tr>
+<Window x:Class="WpfApp.MainWindow"        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        Title="DateTimeEdit Demo" Height="280" Width="365"        xmlns:syncfusion="              clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.Wpf"        xmlns:local="clr-namespace:WpfApp">    <Grid x:Name="LayoutRoot"><syncfusion:DateTimeEdit Height="29" Margin="75,71,50,0"                                    VerticalAlignment="Top"/>    </Grid></Window></td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -122,7 +122,7 @@ The steps to create a DateTimeEdit control in the application by using Expressio
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -132,7 +132,7 @@ The steps to create a DateTimeEdit control in the application by using Expressio
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -145,7 +145,7 @@ The steps to create a DateTimeEdit control in the application by using Expressio
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -155,7 +155,7 @@ The steps to create a DateTimeEdit control in the application by using Expressio
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -167,11 +167,11 @@ The steps to create a DateTimeEdit control in the application by using Expressio
 XAML</td></tr>
 <tr>
 <td>
-<Window x:Class="WpfApp.MainWindow"        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        Title="DateTimeEdit Demo" Height="280" Width="365"        xmlns:syncfusion="              clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.Wpf"        xmlns:local="clr-namespace:WpfApp">    &lt;Grid x:Name="LayoutRoot"&gt;<syncfusion:DateTimeEdit Height="29" Margin="75,71,50,0"                                    VerticalAlignment="Top"/>    &lt;/Grid&gt;&lt;/Window&gt;</td></tr>
+<Window x:Class="WpfApp.MainWindow"        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        Title="DateTimeEdit Demo" Height="280" Width="365"        xmlns:syncfusion="              clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.Wpf"        xmlns:local="clr-namespace:WpfApp">    <Grid x:Name="LayoutRoot"><syncfusion:DateTimeEdit Height="29" Margin="75,71,50,0"                                    VerticalAlignment="Top"/>    </Grid></Window></td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -247,7 +247,7 @@ Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                       
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
 {:.image }
 
 

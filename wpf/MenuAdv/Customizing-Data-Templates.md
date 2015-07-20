@@ -17,33 +17,33 @@ You can customize how a business object is displayed as MenuItemAdv using ItemTe
 
 [XAML]
 
-&lt;syncfusion:MenuAdv ItemsSource="{Binding MenuItems}" &gt;
+<syncfusion:MenuAdv ItemsSource="{Binding MenuItems}" >
 
 
 
-            &lt;syncfusion:MenuAdv.ItemTemplate&gt;
+            <syncfusion:MenuAdv.ItemTemplate>
 
 
 
-                &lt;HierarchicalDataTemplate ItemsSource="{Binding SubItems}"&gt;
+                <HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
 
-                    &lt;StackPanel Orientation="Horizontal"&gt;
+                    <StackPanel Orientation="Horizontal">
 
-                        &lt;Image Source="App.ico"  Width="15" Height="15"/&gt;
+                        <Image Source="App.ico"  Width="15" Height="15"/>
 
-                     &lt;TextBlock Text="{Binding Header}" FontWeight="Bold" 			FontStyle="Italic" /&gt;
+                     <TextBlock Text="{Binding Header}" FontWeight="Bold" 			FontStyle="Italic" />
 
-                    &lt;/StackPanel&gt;
+                    </StackPanel>
 
-                &lt;/HierarchicalDataTemplate&gt;
-
-
-
-            &lt;/syncfusion:MenuAdv.ItemTemplate&gt;
+                </HierarchicalDataTemplate>
 
 
 
-        &lt;/syncfusion:MenuAdv&gt;
+            </syncfusion:MenuAdv.ItemTemplate>
+
+
+
+        </syncfusion:MenuAdv>
 
 
 
@@ -53,7 +53,7 @@ You can customize how a business object is displayed as MenuItemAdv using ItemTe
 
 Implementing the above code will generate the following MenuAdv control.
 
-{ ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png) | markdownify }
+{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)' | markdownify }}
 {:.image }
 
 

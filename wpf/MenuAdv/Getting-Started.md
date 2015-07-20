@@ -11,7 +11,7 @@ documentation: ug
 
 ## Structure of the MenuAdv Control
 
-{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Control-Structure.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Control-Structure.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -25,7 +25,7 @@ The following are the steps to create the MenuAdv control using Visual Studio.
 
 1. Drag MenuAdv from the Visual Studio Toolbox and drop it in the designer.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -34,7 +34,7 @@ The following are the steps to create the MenuAdv control using Visual Studio.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -51,7 +51,7 @@ The MenuAdv control can also be created and configured using Expression Blend. T
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -61,7 +61,7 @@ The MenuAdv control can also be created and configured using Expression Blend. T
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -70,13 +70,13 @@ The MenuAdv control can also be created and configured using Expression Blend. T
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
 8. Configure the properties (such as header or icon) of the MenuItemAdv using the properties in the Collection Editor. This will generate the following control.
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -88,57 +88,57 @@ The MenuAdv control can also be created through XAML. The following code example
 
 [XAML]
 
-&lt;syncfusion:MenuAdv&gt;
+<syncfusion:MenuAdv>
 
 
 
-            &lt;syncfusion:MenuItemAdv Header="Products" &gt;
+            <syncfusion:MenuItemAdv Header="Products" >
 
 
 
-              &lt;syncfusion:MenuItemAdv Header="Business Intelligence" /&gt;              
+              <syncfusion:MenuItemAdv Header="Business Intelligence" />              
 
 
 
-                &lt;syncfusion:MenuItemAdv Header="User Interface" &gt;
+                <syncfusion:MenuItemAdv Header="User Interface" >
 
 
 
-                    &lt;syncfusion:MenuItemAdv Header="WPF  "&gt;
+                    <syncfusion:MenuItemAdv Header="WPF  ">
 
 
 
-                        &lt;syncfusion:MenuItemAdv Header="Tools"/&gt;
+                        <syncfusion:MenuItemAdv Header="Tools"/>
 
-                        &lt;syncfusion:MenuItemAdv Header="Chart"/&gt;
+                        <syncfusion:MenuItemAdv Header="Chart"/>
 
-                        &lt;syncfusion:MenuItemAdv Header="Grid"/&gt;
+                        <syncfusion:MenuItemAdv Header="Grid"/>
 
-                        &lt;syncfusion:MenuItemAdv Header="Diagram"/&gt;
+                        <syncfusion:MenuItemAdv Header="Diagram"/>
 
-                        &lt;syncfusion:MenuItemAdv Header="Gauge"/&gt;
+                        <syncfusion:MenuItemAdv Header="Gauge"/>
 
-                        &lt;syncfusion:MenuItemAdv Header="Schedule"/&gt;
+                        <syncfusion:MenuItemAdv Header="Schedule"/>
 
-                        &lt;syncfusion:MenuItemAdv Header="Edit"/&gt;
-
-
-
-                    &lt;/syncfusion:MenuItemAdv&gt;
+                        <syncfusion:MenuItemAdv Header="Edit"/>
 
 
 
-                    &lt;syncfusion:MenuItemAdv Header="Silverlight "/&gt;               
+                    </syncfusion:MenuItemAdv>
 
 
 
-                &lt;syncfusion:MenuItemAdv Header="Reporting" /&gt;   
+                    <syncfusion:MenuItemAdv Header="Silverlight "/>               
 
 
 
-&lt;/syncfusion:MenuItemAdv&gt;
+                <syncfusion:MenuItemAdv Header="Reporting" />   
 
-&lt;/syncfusion:MenuAdv&gt;
+
+
+</syncfusion:MenuItemAdv>
+
+</syncfusion:MenuAdv>
 
 
 

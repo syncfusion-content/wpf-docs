@@ -15,21 +15,21 @@ When using multiple series' in the Chart, it might be convenient to set the Data
 
 
 
-&lt;sfchart:Chart Name="chart1" DataContext="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}" &gt;
+<sfchart:Chart Name="chart1" DataContext="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}" >
 
-    &lt;sfchart:ChartArea View3DMode="True" &gt;
+    <sfchart:ChartArea View3DMode="True" >
 
-        &lt;sfchart:ChartSeries Label="Sales" DataSource="{Binding}" BindingPathX="Month" BindingPathsY="Sales" Type="Column"&gt;
+        <sfchart:ChartSeries Label="Sales" DataSource="{Binding}" BindingPathX="Month" BindingPathsY="Sales" Type="Column">
 
-        &lt;/sfchart:ChartSeries&gt;
+        </sfchart:ChartSeries>
 
-        &lt;sfchart:ChartSeries Label="Projected Sales" DataSource="{Binding}" BindingPathX="Month" BindingPathsY="Projected" Type="Column"&gt;
+        <sfchart:ChartSeries Label="Projected Sales" DataSource="{Binding}" BindingPathX="Month" BindingPathsY="Projected" Type="Column">
 
-        &lt;/sfchart:ChartSeries&gt;
+        </sfchart:ChartSeries>
 
-    &lt;/sfchart:ChartArea&gt;
+    </sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 See Also
 

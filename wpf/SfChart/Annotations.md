@@ -141,15 +141,15 @@ The following code example and screenshot demonstrate the usage of TextAnnotatio
 
 [XAML]
 
-&lt;syncfusion:SfChart.Annotations&gt;
+<syncfusion:SfChart.Annotations>
 
-            &lt;syncfusion:TextAnnotation Text="Company Details" CoordinateUnit="Pixel" FontFamily="Calibri (Body)" FontSize="14"FontStyle="Italic" Angle="35" X1="300" Y1="580" EnableEditing="True" /&gt;
+            <syncfusion:TextAnnotation Text="Company Details" CoordinateUnit="Pixel" FontFamily="Calibri (Body)" FontSize="14"FontStyle="Italic" Angle="35" X1="300" Y1="580" EnableEditing="True" />
 
-        &lt;/syncfusion:SfChart.Annotations&gt;
+        </syncfusion:SfChart.Annotations>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-77.png](Annotations_images/Annotations_img1.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-77.png](Annotations_images/Annotations_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -173,23 +173,23 @@ SfChart provides you with an editing option for the text in any annotations. The
 
 [XAML]
 
- &lt;syncfusion:SfChart.Annotations&gt;
+ <syncfusion:SfChart.Annotations>
 
-&lt;syncfusion:TextAnnotation Text="Click to Edit Text" CoordinateUnit="Axis" FontSize="24"FontStyle="Italic" X1="1" Y1="1750"/&gt;
+<syncfusion:TextAnnotation Text="Click to Edit Text" CoordinateUnit="Axis" FontSize="24"FontStyle="Italic" X1="1" Y1="1750"/>
 
-&lt;/syncfusion:SfChart.Annotations&gt;
+</syncfusion:SfChart.Annotations>
 
 
 
 Before Editing
 
-{ ![C:/Users/sureshs/Desktop/sshot-2.png](Annotations_images/Annotations_img2.png) | markdownify }
+{{ '![C:/Users/sureshs/Desktop/sshot-2.png](Annotations_images/Annotations_img2.png)' | markdownify }}
 {:.image }
 
 
 OnEditMode:
 
-{ ![C:/Users/sureshs/Desktop/sshot-3.png](Annotations_images/Annotations_img3.png) | markdownify }
+{{ '![C:/Users/sureshs/Desktop/sshot-3.png](Annotations_images/Annotations_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -229,17 +229,17 @@ The following code demonstrates how to add ImageAnnotation to chart control.
 
 
 
-&lt;syncfusion:SfChart.Annotations&gt;
+<syncfusion:SfChart.Annotations>
 
-            &lt;syncfusion:ImageAnnotation ImageSource="Annotation.png" Angle="35" Text="Company Growth" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Foreground="Red" CoordinateUnit="Axis"  X1="1" X2="3.5" Y1="1600" Y2="1710" &gt;
+            <syncfusion:ImageAnnotation ImageSource="Annotation.png" Angle="35" Text="Company Growth" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Foreground="Red" CoordinateUnit="Axis"  X1="1" X2="3.5" Y1="1600" Y2="1710" >
 
-                &lt;/syncfusion:ImageAnnotation&gt;
+                </syncfusion:ImageAnnotation>
 
-        &lt;/syncfusion:SfChart.Annotations&gt;
+        </syncfusion:SfChart.Annotations>
 
 
 
-{ ![C:/Users/rachel/Desktop/snaps/9.png](Annotations_images/Annotations_img4.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/snaps/9.png](Annotations_images/Annotations_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -297,15 +297,15 @@ The following code example demonstrates the usage of RectangleAnnotation.
 
 
 
-&lt;syncfusion:SfChart.Annotations&gt;
+<syncfusion:SfChart.Annotations>
 
-            &lt;syncfusion:RectangleAnnotation Text="Company Growth" Foreground="Red" FontSize="14" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  CoordinateUnit="Axis" X1=0" X2="1" Y1="500" Y2="550"/&gt;
+            <syncfusion:RectangleAnnotation Text="Company Growth" Foreground="Red" FontSize="14" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"  CoordinateUnit="Axis" X1=0" X2="1" Y1="500" Y2="550"/>
 
-        &lt;/syncfusion:SfChart.Annotations&gt;
+        </syncfusion:SfChart.Annotations>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-79.png](Annotations_images/Annotations_img5.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-79.png](Annotations_images/Annotations_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -339,17 +339,17 @@ The following code demonstrates how to add a LineAnnotation to the chart control
 
 
 
-&lt;syncfusion:SfChart.Annotations&gt;
+<syncfusion:SfChart.Annotations>
 
-            &lt;syncfusion:LineAnnotation ShowLine="True" LineCap="Arrow" Stroke="Red" StrokeThickness="3" CoordinateUnit="Axis" X1="0" X2="1" Y1="300" Y2="300"/&gt;
+            <syncfusion:LineAnnotation ShowLine="True" LineCap="Arrow" Stroke="Red" StrokeThickness="3" CoordinateUnit="Axis" X1="0" X2="1" Y1="300" Y2="300"/>
 
-        &lt;/syncfusion:SfChart.Annotations&gt;
-
-
+        </syncfusion:SfChart.Annotations>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-80.png](Annotations_images/Annotations_img6.png) | markdownify }
+
+
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-80.png](Annotations_images/Annotations_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -359,13 +359,13 @@ SfChart provides dragging and resizing support for ShapeAnnotations.The followin
 
 [XAML]
 
-  &lt;syncfusion:SfChart.Annotations&gt;
+  <syncfusion:SfChart.Annotations>
 
-      &lt;syncfusion:RectangleAnnotation CoordinateUnit="Axis X1="0" Y1=”500" X2="1" Y2="550" CanResize="True" CanDrag="True"/&gt;
+      <syncfusion:RectangleAnnotation CoordinateUnit="Axis X1="0" Y1=”500" X2="1" Y2="550" CanResize="True" CanDrag="True"/>
 
- &lt;/syncfusion:SfChart.Annotations&gt;
+ </syncfusion:SfChart.Annotations>
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-81.png](Annotations_images/Annotations_img7.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-81.png](Annotations_images/Annotations_img7.png)' | markdownify }}
 {:.image }
 
 

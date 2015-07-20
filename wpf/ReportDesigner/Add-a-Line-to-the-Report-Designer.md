@@ -11,7 +11,7 @@ documentation: ug
 
 To add a line to the Report Designer, select Line from the Insert tab and drag it to the Report Designer. A line appears on the Report Designer window.
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-28.png](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img1.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-28.png](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -23,7 +23,7 @@ To apply styles to the line:
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-29.png](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img2.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-29.png](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -31,7 +31,7 @@ To apply styles to the line:
 
 
 
-{ ![C:/Users/radhas/Desktop/Image/sshot-29.png](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img3.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/Image/sshot-29.png](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -39,7 +39,7 @@ To apply styles to the line:
 
 
 
-{ ![](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img4.png) | markdownify }
+{{ '![](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -47,7 +47,7 @@ To apply styles to the line:
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-31.png](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img5.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-31.png](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -57,7 +57,7 @@ To delete the lines from the Report Designer, right click the line that you want
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-32.png](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img6.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-32.png](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img6.png)' | markdownify }}
 {:.image }
 
 

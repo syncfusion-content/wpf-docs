@@ -15,15 +15,15 @@ The HeaderTemplate property of Tree Navigator can be used to customize the Tree 
 
 [XAML]
 
-&lt;navigation:SfTreeNavigator.HeaderTemplate&gt;
+<navigation:SfTreeNavigator.HeaderTemplate>
 
-   &lt;DataTemplate&gt;
+   <DataTemplate>
 
-      &lt;TextBlock Text="{Binding}" FontStyle="Italic"/&gt;
+      <TextBlock Text="{Binding}" FontStyle="Italic"/>
 
-   &lt;/DataTemplate&gt;
+   </DataTemplate>
 
-&lt;/navigation:SfTreeNavigator.HeaderTemplate&gt;
+</navigation:SfTreeNavigator.HeaderTemplate>
 
 
 
@@ -33,7 +33,7 @@ Tree Navigator now displayed as shown below.
 
 
 
-{ ![4](Header-Template_images/Header-Template_img1.png) | markdownify }
+{{ '![4](Header-Template_images/Header-Template_img1.png)' | markdownify }}
 {:.image }
 
 

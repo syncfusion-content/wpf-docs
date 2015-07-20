@@ -26,7 +26,7 @@ Following code restricts docking at the top:
 
 <shared:ToolBarManager x:Name="toolBarManager" CanDockAtTop="False"
 
-                               >&lt;/shared:ToolBarManager&gt;
+                               ></shared:ToolBarManager>
 
 
 

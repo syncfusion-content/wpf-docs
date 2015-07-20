@@ -17,7 +17,7 @@ Marker Syntax
 
 Each marker starts with some prefix. By default, it is "%" character, and followed by the variable name and properties. There can be several arguments after the variable that are delimited by some character. By default, it is semicolon (;).
 
-{ ![](Working-with-Template-Markers_images/Working-with-Template-Markers_img1.png) | markdownify }
+{{ '![](Working-with-Template-Markers_images/Working-with-Template-Markers_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -38,7 +38,7 @@ You can specify the following arguments in the marker to customize the worksheet
 
 Here is the sample after dynamically filling the data during runtime.
 
-{ ![](Working-with-Template-Markers_images/Working-with-Template-Markers_img2.png) | markdownify }
+{{ '![](Working-with-Template-Markers_images/Working-with-Template-Markers_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -378,7 +378,7 @@ Detect Data Type and Number Formats
 
 XlsIO now supports detecting the data type and applying the number format to the Template marker. The following is the sample after dynamically detecting and applying data type and number format.
 
-{ ![](Working-with-Template-Markers_images/Working-with-Template-Markers_img3.png) | markdownify }
+{{ '![](Working-with-Template-Markers_images/Working-with-Template-Markers_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -515,7 +515,7 @@ Template Marker with Conditional Formatting
 
 XlsIO allows the CreateConditionalFormat method in the ITemplateMarkerProcessor to dynamically apply the conditional format. It then creates or applies the conditional format to the template marker range dynamically.  Here is the sample for dynamically applied conditional format to data during runtime.
 
-{ ![](Working-with-Template-Markers_images/Working-with-Template-Markers_img4.png) | markdownify }
+{{ '![](Working-with-Template-Markers_images/Working-with-Template-Markers_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -1572,7 +1572,7 @@ Automatically, XlsIO detects the property as image when its type is System.Drawi
 
 In the following example, a marker is added for merging images.  Like a simple template marker, data source and property name is specified (%Customers.Image;) for image also. Further, the image size is specified as 70x70 px (size:70) and its position as middle-center of the cell.
 
-{ ![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image001.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img5.png) | markdownify }
+{{ '![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image001.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -1661,7 +1661,7 @@ The following code examples illustrate on how to insert images in to the Templat
 
 1. Here, the Url of an image is added in the xml document. By Xml Schema Definition it can be a string or AnyURI type.
 
- &lt;Customers&gt;
+ <Customers>
 
 <SalesPerson>Andy Bernard</SalesPerson>
 
@@ -1673,7 +1673,7 @@ The following code examples illustrate on how to insert images in to the Templat
 
 <Image>images/image.jpg</Image>
 
-&lt;/Customers&gt;
+</Customers>
 
 
 
@@ -1722,13 +1722,13 @@ When the size and position is not mentioned, the default size of 50x50pixels and
 
 * Input Template
 
-{ ![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image002.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img6.png) | markdownify }
+{{ '![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image002.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img6.png)' | markdownify }}
 {:.image }
 
 
 * Output Screen
 
-{ ![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image003.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img7.png) | markdownify }
+{{ '![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image003.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -1736,13 +1736,13 @@ When the size and position is not mentioned, the default size of 50x50pixels and
 
 * Input Template
 
-{ ![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image004.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img8.png) | markdownify }
+{{ '![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image004.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img8.png)' | markdownify }}
 {:.image }
 
 
 * Output
 
-{ ![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image005.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img9.png) | markdownify }
+{{ '![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image005.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -1750,13 +1750,13 @@ Image with Size
 
 * Input Template
 
-{ ![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image006.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img10.png) | markdownify }
+{{ '![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image006.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img10.png)' | markdownify }}
 {:.image }
 
 
 * Output
 
-{ ![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image007.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img11.png) | markdownify }
+{{ '![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image007.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -1764,13 +1764,13 @@ Image with Size
 
 * Input Template
 
-{ ![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image008.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img12.png) | markdownify }
+{{ '![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image008.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img12.png)' | markdownify }}
 {:.image }
 
 
 *  Output
 
-{ ![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image009.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img13.png) | markdownify }
+{{ '![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image009.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -1778,13 +1778,13 @@ Image with position and size
 
 * Input Template
 
-{ ![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image010.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img14.png) | markdownify }
+{{ '![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image010.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img14.png)' | markdownify }}
 {:.image }
 
 
 *  Output
 
-{ ![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image011.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img15.png) | markdownify }
+{{ '![C:/Users/labuser/AppData/Local/Temp/msohtmlclip1/02/clip_image011.png](Working-with-Template-Markers_images/Working-with-Template-Markers_img15.png)' | markdownify }}
 {:.image }
 
 

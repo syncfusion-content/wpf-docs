@@ -23,83 +23,83 @@ You can enable ToolTip for TreeMap by setting ShowToolTip to “True”. For mod
 
                       ShowToolTip="True">
 
-    &lt;syncfusion:SfTreeMap.ToolTipTemplate&gt;
+    <syncfusion:SfTreeMap.ToolTipTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;Grid Height="200" Width="420" Margin="0,-420,0,0"&gt;
+            <Grid Height="200" Width="420" Margin="0,-420,0,0">
 
-                &lt;Path Data="M0,0 L360,0 L360,200 L20,200 L-20,220 L0,160 L0,0 z" Fill="#666666" Stroke="Wheat" Opacity="0.9" Stretch="Fill"/&gt;
+                <Path Data="M0,0 L360,0 L360,200 L20,200 L-20,220 L0,160 L0,0 z" Fill="#666666" Stroke="Wheat" Opacity="0.9" Stretch="Fill"/>
 
-                &lt;StackPanel&gt;
+                <StackPanel>
 
-                  &lt;Grid Background="{Binding MappedColor}" Margin="40 10 20 0" Height="40"&gt;
+                  <Grid Background="{Binding MappedColor}" Margin="40 10 20 0" Height="40">
 
-                  &lt;TextBlock Text="{Binding Data.Continent}" Foreground= "White" FontWeight="SemiBold" FontSize="30" TextAlignment="Center"/&gt;
+                  <TextBlock Text="{Binding Data.Continent}" Foreground= "White" FontWeight="SemiBold" FontSize="30" TextAlignment="Center"/>
 
-                  &lt;/Grid&gt;
+                  </Grid>
 
-                  &lt;StackPanel Margin="40 20"&gt;
+                  <StackPanel Margin="40 20">
 
-                  &lt;StackPanel Orientation="Horizontal"&gt;
+                  <StackPanel Orientation="Horizontal">
 
-                  &lt;TextBlock Text="Country" Width="140" FontSize="25"/&gt;
+                  <TextBlock Text="Country" Width="140" FontSize="25"/>
 
-                  &lt;TextBlock Text="-" Width="20" FontSize="25"/&gt;
+                  <TextBlock Text="-" Width="20" FontSize="25"/>
 
-                  &lt;TextBlock Text="{Binding Data.Country}" FontSize="25"/&gt;
+                  <TextBlock Text="{Binding Data.Country}" FontSize="25"/>
 
-                  &lt;/StackPanel&gt;
+                  </StackPanel>
 
-                  &lt;StackPanel Orientation="Horizontal"&gt;
+                  <StackPanel Orientation="Horizontal">
 
-                  &lt;TextBlock Text="Population" Width="140" FontSize="25"/&gt;
+                  <TextBlock Text="Population" Width="140" FontSize="25"/>
 
-                  &lt;TextBlock Text="-" Width="20" FontSize="25"/&gt;
+                  <TextBlock Text="-" Width="20" FontSize="25"/>
 
-                  &lt;TextBlock Text="{Binding Data.Population}" FontSize="25"/&gt;
+                  <TextBlock Text="{Binding Data.Population}" FontSize="25"/>
 
-                  &lt;/StackPanel&gt;
+                  </StackPanel>
 
-                  &lt;/StackPanel&gt;
+                  </StackPanel>
 
-                &lt;/StackPanel&gt;
+                </StackPanel>
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:SfTreeMap.ToolTipTemplate&gt;
+    </syncfusion:SfTreeMap.ToolTipTemplate>
 
-    &lt;syncfusion:SfTreeMap.LeafColorMapping&gt;
+    <syncfusion:SfTreeMap.LeafColorMapping>
 
-        &lt;syncfusion:RangeBrushColorMapping&gt;
+        <syncfusion:RangeBrushColorMapping>
 
-            &lt;syncfusion:RangeBrushColorMapping.Brushes&gt;
+            <syncfusion:RangeBrushColorMapping.Brushes>
 
-                &lt;syncfusion:RangeBrush From="0" To="1" Color="#1BA1E2"/&gt;
+                <syncfusion:RangeBrush From="0" To="1" Color="#1BA1E2"/>
 
-                &lt;syncfusion:RangeBrush From="1" To="2" Color="#F09609"/&gt;
+                <syncfusion:RangeBrush From="1" To="2" Color="#F09609"/>
 
-                &lt;syncfusion:RangeBrush From="2" To="3" Color="#E671B8"/&gt;
+                <syncfusion:RangeBrush From="2" To="3" Color="#E671B8"/>
 
-                &lt;syncfusion:RangeBrush From="3" To="4" Color="#339933"/&gt;
+                <syncfusion:RangeBrush From="3" To="4" Color="#339933"/>
 
-            &lt;/syncfusion:RangeBrushColorMapping.Brushes&gt;
+            </syncfusion:RangeBrushColorMapping.Brushes>
 
-        &lt;/syncfusion:RangeBrushColorMapping&gt;
+        </syncfusion:RangeBrushColorMapping>
 
-    &lt;/syncfusion:SfTreeMap.LeafColorMapping&gt;
+    </syncfusion:SfTreeMap.LeafColorMapping>
 
-    &lt;syncfusion:SfTreeMap.Levels&gt;
+    <syncfusion:SfTreeMap.Levels>
 
-        &lt;syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/&gt;
+        <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/>
 
-        &lt;syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5" ShowLabels="True"/&gt;
+        <syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5" ShowLabels="True"/>
 
-    &lt;/syncfusion:SfTreeMap.Levels&gt;
+    </syncfusion:SfTreeMap.Levels>
 
-&lt;/syncfusion:SfTreeMap&gt;
+</syncfusion:SfTreeMap>
 
 
 
@@ -109,7 +109,7 @@ The following screenshot shows a tree map with a tool tip.
 
 
 
-{ ![](ToolTip-Support_images/ToolTip-Support_img1.png) | markdownify }
+{{ '![](ToolTip-Support_images/ToolTip-Support_img1.png)' | markdownify }}
 {:.image }
 
 

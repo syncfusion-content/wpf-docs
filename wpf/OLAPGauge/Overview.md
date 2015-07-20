@@ -11,7 +11,7 @@ documentation: ug
 
 Essential BI OLAP Gauge for WPF is ideal for highlighting business critical Key Performance Indicator (KPI) information in executive dashboards and report cards. Gauges let you present values against goals in a very intuitive manner. Built-in data binding support allows you to easily bind a gauge to a KPI result from your OLAP database. The Gauge control comes with sophisticated customization support, which provides endless possibility for control customization. It renders a value as a pointer against a circular scale. You can also easily build high quality dashboards and process controls.
 
-{ ![C:/Users/Hari/Pictures/OlapGauge/OLAP Gauge Control.png](Overview_images/Overview_img1.png) | markdownify }
+{{ '![C:/Users/Hari/Pictures/OlapGauge/OLAP Gauge Control.png](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -55,7 +55,7 @@ Description</td></tr>
 Note</td><td>
 > ![](Overview_images/Overview_img2.jpeg)
 {:.image }
-{{ '_Note:_' | markdownify }}</td><td>
+{{{ ''_Note:_'' | markdownify }}}</td><td>
 Represents important information</td></tr>
 <tr>
 <td>

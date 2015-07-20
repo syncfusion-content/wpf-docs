@@ -11,7 +11,7 @@ documentation: ug
 
 Color palette lets you to select colors from a list of available swatches. 
 
-{ ![C:/Users/labuser/Desktop/a.png](Overview_images/Overview_img1.png) | markdownify }
+{{ '![C:/Users/labuser/Desktop/a.png](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 

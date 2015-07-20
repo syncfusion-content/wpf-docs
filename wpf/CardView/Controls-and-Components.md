@@ -24,7 +24,7 @@ CardView control helps to sort or group items based on the given field names.Str
 
 The following screenshot displays the CardView:
 
-{ ![](Controls-and-Components_images/Controls-and-Components_img1.png) | markdownify }
+{{ '![](Controls-and-Components_images/Controls-and-Components_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -56,7 +56,7 @@ You can edit the style of ComboBoxAdv by using Expression Blend. To edit the Com
 
 
 
-{ ![](Controls-and-Components_images/Controls-and-Components_img2.png) | markdownify }
+{{ '![](Controls-and-Components_images/Controls-and-Components_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -97,7 +97,7 @@ CanGroup property can be added directly to an application using the following co
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:CardView CanGroup="False"&gt;        &lt;/syncfusion:CardView&gt;</td></tr>
+[XAML]<syncfusion:CardView CanGroup="False">        </syncfusion:CardView></td></tr>
 <tr>
 <td>
 [C#]CardView cardview = new CardView();       cardview.CanGroup = false;</td></tr>
@@ -141,7 +141,7 @@ CanSort can be added directly to an application using the following code snippet
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:CardView CanSort="False"&gt;        &lt;/syncfusion:CardView&gt;</td></tr>
+[XAML]<syncfusion:CardView CanSort="False">        </syncfusion:CardView></td></tr>
 <tr>
 <td>
 [C#]CardView cardview = new CardView();       cardview.CanSort = false;</td></tr>
@@ -186,7 +186,7 @@ CanEdit property can be added directly to an application using the following cod
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:CardView CanEdit="False"&gt;        &lt;/syncfusion:CardView&gt;</td></tr>
+[XAML]<syncfusion:CardView CanEdit="False">        </syncfusion:CardView></td></tr>
 <tr>
 <td>
 [C#]CardView cardview = new CardView();       cardview.CanEdit = false;</td></tr>
@@ -224,14 +224,14 @@ ShowHeader property can be added directly to an application using the following 
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:CardView ShowHeader="False"&gt;        &lt;/syncfusion:CardView&gt;</td></tr>
+[XAML]<syncfusion:CardView ShowHeader="False">        </syncfusion:CardView></td></tr>
 <tr>
 <td>
 [C#]CardView cardview = new CardView();       cardview.ShowHeader = false;</td></tr>
 </table>
 
 
-{ ![](Controls-and-Components_images/Controls-and-Components_img3.png) | markdownify }
+{{ '![](Controls-and-Components_images/Controls-and-Components_img3.png)' | markdownify }}
 {:.image }
 
 

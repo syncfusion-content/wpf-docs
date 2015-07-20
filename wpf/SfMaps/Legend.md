@@ -68,7 +68,7 @@ Legends are arranged in matrix format. The number of columns in the arranging ma
 
 [XAML]
 
-&lt;syncfusion:SfMap.Layers&gt;
+<syncfusion:SfMap.Layers>
 
                 <syncfusion:ShapeFileLayer 
 
@@ -84,47 +84,47 @@ Legends are arranged in matrix format. The number of columns in the arranging ma
 
 
 
-                    &lt;syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                    <syncfusion:ShapeFileLayer.ShapeSettings>
 
-                        &lt;syncfusion:ShapeSetting ShapeColorValuePath="Population" ShapeFill="#E5E5E5" ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" ShapeValuePath="Population" &gt;
+                        <syncfusion:ShapeSetting ShapeColorValuePath="Population" ShapeFill="#E5E5E5" ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" ShapeValuePath="Population" >
 
-                            &lt;syncfusion:ShapeSetting.FillSetting&gt;
+                            <syncfusion:ShapeSetting.FillSetting>
 
-                                &lt;syncfusion:ShapeFillSetting AutoFillColors="False"&gt;
+                                <syncfusion:ShapeFillSetting AutoFillColors="False">
 
-                                    &lt;syncfusion:ShapeFillSetting.ColorMappings&gt;
+                                    <syncfusion:ShapeFillSetting.ColorMappings>
 
-                                        &lt;syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/&gt;
+                                        <syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/>
 
-                                        &lt;syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/&gt;
+                                        <syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/>
 
-                                        &lt;syncfusion:RangeColorMapping Color="#7FF1B21A" To="143228301" From="82724090"/&gt;
+                                        <syncfusion:RangeColorMapping Color="#7FF1B21A" To="143228301" From="82724090"/>
 
-                                        &lt;syncfusion:RangeColorMapping Color="#7F1DA249" To="50586757" From="22789702"/&gt;
+                                        <syncfusion:RangeColorMapping Color="#7F1DA249" To="50586757" From="22789702"/>
 
-                                        &lt;syncfusion:RangeColorMapping Color="#7FEB737C" To="22789702" From="0"/&gt;
+                                        <syncfusion:RangeColorMapping Color="#7FEB737C" To="22789702" From="0"/>
 
-                                        &lt;syncfusion:RangeColorMapping Color="#7FED2D95" To="82724090" From="50586757"/&gt;        
+                                        <syncfusion:RangeColorMapping Color="#7FED2D95" To="82724090" From="50586757"/>        
 
-                                                                        &lt;/syncfusion:ShapeFillSetting.ColorMappings&gt;
+                                                                        </syncfusion:ShapeFillSetting.ColorMappings>
 
-                                &lt;/syncfusion:ShapeFillSetting&gt;
+                                </syncfusion:ShapeFillSetting>
 
-                            &lt;/syncfusion:ShapeSetting.FillSetting&gt;
+                            </syncfusion:ShapeSetting.FillSetting>
 
-                        &lt;/syncfusion:ShapeSetting&gt;
+                        </syncfusion:ShapeSetting>
 
-                    &lt;/syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
 
-                &lt;/syncfusion:ShapeFileLayer&gt;
+                </syncfusion:ShapeFileLayer>
 
-            &lt;/syncfusion:SfMap.Layers&gt;
+            </syncfusion:SfMap.Layers>
 
-        &lt;/syncfusion:SfMap&gt;
+        </syncfusion:SfMap>
 
 
 
-{ ![](Legend_images/Legend_img1.png) | markdownify }
+{{ '![](Legend_images/Legend_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -132,9 +132,9 @@ _Legend for shape layers_
 
 [XAML]
 
-&lt;syncfusion:SfMap&gt;
+<syncfusion:SfMap>
 
-            &lt;syncfusion:SfMap.Layers&gt;
+            <syncfusion:SfMap.Layers>
 
                 <syncfusion:ShapeFileLayer 
 
@@ -148,39 +148,39 @@ _Legend for shape layers_
 
                     ShapeIDTableField="NAME" Uri="BubbleVisualization.ShapeFile.world1.shp">
 
-                    &lt;syncfusion:ShapeFileLayer.BubbleMarkerSetting&gt;
+                    <syncfusion:ShapeFileLayer.BubbleMarkerSetting>
 
-                        &lt;syncfusion:BubbleMarkerSetting AutoFillColor="False" MaxSize="50" MinSize="20" StrokeThickness="0" ValuePath="Population"&gt;
+                        <syncfusion:BubbleMarkerSetting AutoFillColor="False" MaxSize="50" MinSize="20" StrokeThickness="0" ValuePath="Population">
 
-                            &lt;syncfusion:BubbleMarkerSetting.ColorMappings&gt;
+                            <syncfusion:BubbleMarkerSetting.ColorMappings>
 
-                                &lt;syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/&gt;
+                                <syncfusion:RangeColorMapping Color="#7F20BCEE" To="1347350000" From="314623001"/>
 
-                                &lt;syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/&gt;
+                                <syncfusion:RangeColorMapping Color="#7FA7CE38" To="314623001" From="143228301"/>
 
-                                &lt;syncfusion:RangeColorMapping Color="#7FF1B21A" To="143228301" From="82724090"/&gt;
+                                <syncfusion:RangeColorMapping Color="#7FF1B21A" To="143228301" From="82724090"/>
 
-                                &lt;syncfusion:RangeColorMapping Color="#7F1DA249" To="50586757" From="22789702"/&gt;
+                                <syncfusion:RangeColorMapping Color="#7F1DA249" To="50586757" From="22789702"/>
 
-                                &lt;syncfusion:RangeColorMapping Color="#7FEB737C" To="22789702" From="0"/&gt;
+                                <syncfusion:RangeColorMapping Color="#7FEB737C" To="22789702" From="0"/>
 
-                                &lt;syncfusion:RangeColorMapping Color="#7FED2D95" To="82724090" From="50586757"/&gt;
+                                <syncfusion:RangeColorMapping Color="#7FED2D95" To="82724090" From="50586757"/>
 
-                            &lt;/syncfusion:BubbleMarkerSetting.ColorMappings&gt;
+                            </syncfusion:BubbleMarkerSetting.ColorMappings>
 
-                        &lt;/syncfusion:BubbleMarkerSetting&gt;
+                        </syncfusion:BubbleMarkerSetting>
 
-                    &lt;/syncfusion:ShapeFileLayer.BubbleMarkerSetting&gt;
+                    </syncfusion:ShapeFileLayer.BubbleMarkerSetting>
 
-                &lt;/syncfusion:ShapeFileLayer&gt;
+                </syncfusion:ShapeFileLayer>
 
-            &lt;/syncfusion:SfMap.Layers&gt;
+            </syncfusion:SfMap.Layers>
 
-        &lt;/syncfusion:SfMap&gt;
+        </syncfusion:SfMap>
 
 
 
-{ ![](Legend_images/Legend_img2.png) | markdownify }
+{{ '![](Legend_images/Legend_img2.png)' | markdownify }}
 {:.image }
 
 

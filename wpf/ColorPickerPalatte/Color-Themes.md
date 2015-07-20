@@ -25,7 +25,7 @@ The following code example illustrates how to add the Color Theme feature to an 
 
 
 
-&lt;sync:ColorPickerPalette x:Name="ColorPicker" Themes="Apex" /&gt;
+<sync:ColorPickerPalette x:Name="ColorPicker" Themes="Apex" />
 
 
 
@@ -45,19 +45,19 @@ colorpicker.Themes = PaletteTheme.Apex;
 
 
 
-{ ![](Color-Themes_images/Color-Themes_img1.png) | markdownify }
+{{ '![](Color-Themes_images/Color-Themes_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Color-Themes_images/Color-Themes_img2.png) | markdownify }
+{{ '![](Color-Themes_images/Color-Themes_img2.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Color-Themes_images/Color-Themes_img3.png) | markdownify }
+{{ '![](Color-Themes_images/Color-Themes_img3.png)' | markdownify }}
 {:.image }
 
 

@@ -19,35 +19,35 @@ Here is the code snippet to set the Tab Scrolling Time.
 
 
 
-&lt;!-- Adding TabControlExt with CloseButtonType is Both --&gt;
+<!-- Adding TabControlExt with CloseButtonType is Both -->
 
-&lt;syncfusion:TabControlExt Name="tabControlExt" ScrollingTime="1000" &gt;
-
-
-
-    &lt;!-- Adding TabItemExt --&gt;
-
-    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"&gt;
-
-    &lt;/syncfusion:TabItemExt&gt;
+<syncfusion:TabControlExt Name="tabControlExt" ScrollingTime="1000" >
 
 
 
-    &lt;!-- Adding TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"&gt;
+    <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1">
 
-    &lt;/syncfusion:TabItemExt&gt;
+    </syncfusion:TabItemExt>
 
 
 
-    &lt;!-- Adding TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt3" Header="TabItemExt3"&gt;
+    <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2">
 
-    &lt;/syncfusion:TabItemExt&gt;
+    </syncfusion:TabItemExt>
 
-&lt;/syncfusion:TabControlExt&gt;
+
+
+    <!-- Adding TabItemExt -->
+
+    <syncfusion:TabItemExt Name="tabItemExt3" Header="TabItemExt3">
+
+    </syncfusion:TabItemExt>
+
+</syncfusion:TabControlExt>
 
 
 

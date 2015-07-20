@@ -18,7 +18,7 @@ documentation: ug
 
 
 
-{ ![Description: Description: C:/Documents and Settings/labuser/My Documents/SL tools correct image.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![Description: Description: C:/Documents and Settings/labuser/My Documents/SL tools correct image.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -28,7 +28,7 @@ documentation: ug
 
 
 
-{ ![http://help.syncfusion.com/Ug_101/User%20Interface/WPF/Spreadsheet/ImagesExt/image9_9.jpg](Getting-Started_images/Getting-Started_img2.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/Ug_101/User%20Interface/WPF/Spreadsheet/ImagesExt/image9_9.jpg](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -51,7 +51,7 @@ Following are the steps to add the Spreadsheet control to WPF application using 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -66,7 +66,7 @@ Following are the steps to add the Spreadsheet control to WPF application using 
 
 [XMAL]
 
-&lt;syncfusion:SpreadsheetRibbon DataContext="{Binding ElementName=spreadsheetControl1}"/&gt;
+<syncfusion:SpreadsheetRibbon DataContext="{Binding ElementName=spreadsheetControl1}"/>
 
 
 
@@ -79,7 +79,7 @@ You can also add the Spreadsheet control to a WPF application through XAML and C
 <table>
 <tr>
 <td>
-[XMAL]&lt;syncfusion:SpreadsheetControl HorizontalAlignment="Left"  Name="spreadsheetControl1" VerticalAlignment="Top" /&gt;</td></tr>
+[XMAL]<syncfusion:SpreadsheetControl HorizontalAlignment="Left"  Name="spreadsheetControl1" VerticalAlignment="Top" /></td></tr>
 <tr>
 <td>
  [C#]SpreadsheetControl Spreadsheet1 = new SpreadsheetControl();LayoutRoot.Children.Add(Spreadsheet1);</td></tr>
@@ -115,7 +115,7 @@ Structure of the SpreadsheetRibbon Control
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -125,7 +125,7 @@ Structure of the Spreadsheet Control
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -141,7 +141,7 @@ The following sketch illustrates the Spreadsheet control architecture.
 
 
 
-{ ![C:/Users/ponrajaa/Desktop/spreadsheet_architecture_2.png](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![C:/Users/ponrajaa/Desktop/spreadsheet_architecture_2.png](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 

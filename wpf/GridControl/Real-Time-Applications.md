@@ -32,7 +32,7 @@ Sample
 
 A sample which demonstrates such an application is available in the following sample installation location:
 
-_...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Performance\Trader Grid Test Demo_
+_...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Performance\Trader Grid Test Demo_
 
 > _Note: Refer Performance Optimization section which elaborates on this sample._
 
@@ -62,7 +62,7 @@ grid.Model.Options.ExcelLikeCurrentCell = true;
 
 
 
-{ ![](Real-Time-Applications_images/Real-Time-Applications_img1.jpeg) | markdownify }
+{{ '![](Real-Time-Applications_images/Real-Time-Applications_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -86,7 +86,7 @@ grid.Model.Options.ExcelLikeSelectionFrame = true;
 
 
 
-{ ![](Real-Time-Applications_images/Real-Time-Applications_img2.jpeg) | markdownify }
+{{ '![](Real-Time-Applications_images/Real-Time-Applications_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -106,7 +106,7 @@ grid.Model.TableStyle.CellType = "FormulaCell";
 
 
 
-{ ![](Real-Time-Applications_images/Real-Time-Applications_img3.jpeg) | markdownify }
+{{ '![](Real-Time-Applications_images/Real-Time-Applications_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -152,7 +152,7 @@ protected override void OnPrepareRenderCell(GridPrepareRenderCellEventArgs e)
 
 
 
-{ ![](Real-Time-Applications_images/Real-Time-Applications_img4.jpeg) | markdownify }
+{{ '![](Real-Time-Applications_images/Real-Time-Applications_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -164,7 +164,7 @@ You can create a workbook with multiple sheets similar to excel, using a Tab con
 
 
 
-{ ![](Real-Time-Applications_images/Real-Time-Applications_img5.jpeg) | markdownify }
+{{ '![](Real-Time-Applications_images/Real-Time-Applications_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -172,13 +172,13 @@ Complete Sample Output
 
 
 
-{ ![](Real-Time-Applications_images/Real-Time-Applications_img6.jpeg) | markdownify }
+{{ '![](Real-Time-Applications_images/Real-Time-Applications_img6.jpeg)' | markdownify }}
 {:.image }
 
 
 > _Note: For the complete code for this example, refer the following browser sample:_ 
 
-> _...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Excel Like UI Demo_
+> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Excel Like UI Demo_
 
 
 

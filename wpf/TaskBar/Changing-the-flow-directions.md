@@ -33,31 +33,31 @@ Here is the code for setting this property.
 
 
 
-&lt;!-- Adding TaskBar  --&gt;
+<!-- Adding TaskBar  -->
 
-&lt;syncfusion:TaskBar Name="taskBar" FlowDirection="RightToLeft"&gt;
-
-
-
-    &lt;!-- Adding TaskBarItem --&gt;
-
-    &lt;syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1"&gt;
+<syncfusion:TaskBar Name="taskBar" FlowDirection="RightToLeft">
 
 
 
-        &lt;!-- Adding content to TaskBarItem --&gt;
+    <!-- Adding TaskBarItem -->
 
-        &lt;StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch"&gt;
+    <syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1">
 
-            &lt;TextBlock TextWrapping="Wrap"&gt;
+
+
+        <!-- Adding content to TaskBarItem -->
+
+        <StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch">
+
+            <TextBlock TextWrapping="Wrap">
 
 This is TaskBar that have a TaskBarItem</TextBlock>
 
-        &lt;/StackPanel&gt;
+        </StackPanel>
 
-    &lt;/syncfusion:TaskBarItem&gt;
+    </syncfusion:TaskBarItem>
 
-&lt;/syncfusion:TaskBar&gt;
+</syncfusion:TaskBar>
 
 
 
@@ -75,7 +75,7 @@ taskBar.FlowDirection = FlowDirection.RightToLeft;
 
 
 
-{ ![](Changing-the-flow-directions_images/Changing-the-flow-directions_img1.jpeg) | markdownify }
+{{ '![](Changing-the-flow-directions_images/Changing-the-flow-directions_img1.jpeg)' | markdownify }}
 {:.image }
 
 

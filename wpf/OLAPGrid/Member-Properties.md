@@ -13,7 +13,7 @@ OlapGrid allows binding of Dimension Members along with their properties. Member
 
 Click here for Sample Report with Member Properties
 
-{ ![](Member-Properties_images/Member-Properties_img1.png) | markdownify }
+{{ '![](Member-Properties_images/Member-Properties_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -43,7 +43,7 @@ Me.OlapGrid1.ShowMemberPropertiesToolTip = True
 
 
 
-{ ![](Member-Properties_images/Member-Properties_img2.png) | markdownify }
+{{ '![](Member-Properties_images/Member-Properties_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -51,5 +51,5 @@ Sample Location
 
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\&lt;Versionnumber&gt;\BI\WPF\OlapGrid.WPF\Samples\Application Scenario\Member Properties Demo
+..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Application Scenario\Member Properties Demo
 

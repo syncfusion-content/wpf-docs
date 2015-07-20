@@ -23,19 +23,19 @@ The following code example illustrates how to add the Data Binding to an applica
 
 
 
-&lt;DataTemplate x:Name="header"&gt;
+<DataTemplate x:Name="header">
 
-     &lt;StackPanel Orientation="Horizontal"&gt;
+     <StackPanel Orientation="Horizontal">
 
-         &lt;Image Source="Images/messages.png"/&gt;
+         <Image Source="Images/messages.png"/>
 
          <TextBlock Text="{Binding Name}" FontFamily="Verdana" 
 
                     FontSize="18" Foreground="Blue"/>                      
 
-     &lt;/StackPanel&gt;
+     </StackPanel>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 <syncfusion:TileViewControl x:Name="TileView1" 
 
@@ -45,49 +45,49 @@ The following code example illustrates how to add the Data Binding to an applica
 
             HeaderTemplate="{Binding Source={StaticResource header}}">        
 
-            &lt;syncfusion:TileViewControl.ItemTemplate&gt;                
+            <syncfusion:TileViewControl.ItemTemplate>                
 
-                &lt;DataTemplate&gt;            
+                <DataTemplate>            
 
-                    &lt;StackPanel Orientation="Vertical"&gt;
+                    <StackPanel Orientation="Vertical">
 
-                      &lt;StackPanel Orientation="Horizontal"&gt;
+                      <StackPanel Orientation="Horizontal">
 
                         <TextBlock Text="Name :" FontFamily="Trebuchet MS" 
 
                                     Foreground="Brown" FontSize="14"/>
 
-                        &lt;TextBlock Text="{Binding Name}"/&gt;
+                        <TextBlock Text="{Binding Name}"/>
 
-                      &lt;/StackPanel&gt;
+                      </StackPanel>
 
-                      &lt;StackPanel Orientation="Horizontal"&gt;
+                      <StackPanel Orientation="Horizontal">
 
                         <TextBlock Text="Age :" FontFamily="Trebuchet MS" 
 
                                     Foreground="Brown" FontSize="14"/>
 
-                        &lt;TextBlock Text="{Binding Age}"/&gt;
+                        <TextBlock Text="{Binding Age}"/>
 
-                      &lt;/StackPanel&gt;
+                      </StackPanel>
 
-                      &lt;StackPanel Orientation="Horizontal"&gt;
+                      <StackPanel Orientation="Horizontal">
 
                         <TextBlock Text="Dept :" FontFamily="Trebuchet MS" 
 
                                    Foreground="Brown" FontSize="14"/>
 
-                        &lt;TextBlock Text="{Binding Dept}" /&gt;
+                        <TextBlock Text="{Binding Dept}" />
 
-                      &lt;/StackPanel&gt;
+                      </StackPanel>
 
-                    &lt;/StackPanel&gt;
+                    </StackPanel>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-            &lt;/syncfusion:TileViewControl.ItemTemplate&gt;
+            </syncfusion:TileViewControl.ItemTemplate>
 
-        &lt;/syncfusion:TileViewControl&gt;
+        </syncfusion:TileViewControl>
 
 
 
@@ -133,7 +133,7 @@ public class Data
 
 
 
-{ ![](Data-Binding-Support_images/Data-Binding-Support_img1.png) | markdownify }
+{{ '![](Data-Binding-Support_images/Data-Binding-Support_img1.png)' | markdownify }}
 {:.image }
 
 

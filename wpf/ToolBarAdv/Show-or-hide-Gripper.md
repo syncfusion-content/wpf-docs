@@ -19,7 +19,7 @@ Following code illustrates how to hide the gripper:
 
 
 
-&lt;shared:ToolBarAdv GripperVisibility="Collapsed" &gt;&lt;/shared:ToolBarAdv&gt;
+<shared:ToolBarAdv GripperVisibility="Collapsed" ></shared:ToolBarAdv>
 
 
 
@@ -37,7 +37,7 @@ ToolBarAdv toolBar = new ToolBarAdv();
 
 
 
-{ ![](Show-or-hide-Gripper_images/Show-or-hide-Gripper_img1.png) | markdownify }
+{{ '![](Show-or-hide-Gripper_images/Show-or-hide-Gripper_img1.png)' | markdownify }}
 {:.image }
 
 

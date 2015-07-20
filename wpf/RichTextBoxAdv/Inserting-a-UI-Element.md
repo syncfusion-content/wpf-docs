@@ -60,7 +60,7 @@ UIContainerAdv can be used to add a UI element directly to an application by usi
 <table>
 <tr>
 <td>
-[XAML]      &lt;syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext"&gt;            &lt;syncfusion:DocumentAdv&gt;                &lt;syncfusion:SectionAdv&gt;                    &lt;syncfusion:ParagraphAdv &gt;                        &lt;syncfusion:UIContainerAdv &gt;                            &lt;Button /&gt;                        &lt;/syncfusion:UIContainerAdv&gt;                    &lt;/syncfusion:ParagraphAdv&gt;                &lt;/syncfusion:SectionAdv&gt;            &lt;/syncfusion:DocumentAdv&gt;        &lt;/syncfusion:RichTextBoxAdv&gt;</td></tr>
+[XAML]      <syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            <syncfusion:DocumentAdv>                <syncfusion:SectionAdv>                    <syncfusion:ParagraphAdv >                        <syncfusion:UIContainerAdv >                            <Button />                        </syncfusion:UIContainerAdv>                    </syncfusion:ParagraphAdv>                </syncfusion:SectionAdv>            </syncfusion:DocumentAdv>        </syncfusion:RichTextBoxAdv></td></tr>
 <tr>
 <td>
 [C#]           RichTextBoxAdv richtext = new RichTextBoxAdv();           DocumentAdv document = new DocumentAdv();           SectionAdv section = new SectionAdv();           ParagraphAdv paragraph = new ParagraphAdv();           UIContainerAdv uicontainer = new UIContainerAdv();           uicontainer.UIElement = new Button();           paragraph.Inlines.Add(uicontainer);           section.Blocks.Add(paragraph);           document.Sections.Add(section);           richtext.Document = document;</td></tr>

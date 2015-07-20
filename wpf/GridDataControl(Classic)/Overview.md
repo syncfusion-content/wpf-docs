@@ -21,19 +21,19 @@ EssentialGrid for WPF can be applied to a variety of industries such as finance,
 
 Excel-Like UI: Essential Grid’s rich feature set allows you to build Excel-like UI applications. 
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 
 High Performance - EssentialGrid is a great asset to high-performance applications, as it can display large amounts of real-time data that tends to periodic changes without any performance hits. Following is an illustration of a stock portfolio application using the GridData control.
 
-{ ![](Overview_images/Overview_img2.png) | markdownify }
+{{ '![](Overview_images/Overview_img2.png)' | markdownify }}
 {:.image }
 
 
 File Explorer - Applications that deal with hierarchical data can make use of Essential Grid’s file explorer feature, which allows child items to be displayed on-demand by using the GridTree control.
 
-{ ![](Overview_images/Overview_img3.png) | markdownify }
+{{ '![](Overview_images/Overview_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -131,7 +131,7 @@ The GridData control supports all popular data sources including the following:
 
 Complex objects can bind with the GridData control and the GridData control can display related information through hierarchies. The master-detail relationship can be represented through nested grids, which can be expanded and collapsed as required. Multilevel nesting is also supported.
 
-{ ![](Overview_images/Overview_img4.png) | markdownify }
+{{ '![](Overview_images/Overview_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -157,7 +157,7 @@ Cell Types - Several built-in cell types can be used to display and edit any und
 
 
 
-{ ![](Overview_images/Overview_img5.png) | markdownify }
+{{ '![](Overview_images/Overview_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -169,7 +169,7 @@ Visual Styles and Expression Blend
 
 The GridData control has a rich selection of over 14 built-in styles that provide an attractive look and feel for the grid. The GridData control also allows you to customize all aspects of grid appearance by using Microsoft Expression Blend. 
 
-{ ![C:/Users/vijaysankars/Desktop/1.PNG](Overview_images/Overview_img6.png) | markdownify }
+{{ '![C:/Users/vijaysankars/Desktop/1.PNG](Overview_images/Overview_img6.png)' | markdownify }}
 {:.image }
 
 

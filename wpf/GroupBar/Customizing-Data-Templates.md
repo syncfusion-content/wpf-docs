@@ -19,23 +19,23 @@ You can customize how a business object is displayed by using ItemTemplate of Gr
 
 [XAML]
 
-   &lt;syncfusion:GroupBar Name="groupBar1"  Margin="20" AllowCollapse="True" VisualMode="StackMode" ItemsSource="{Binding GroupItems}"  &gt;
+   <syncfusion:GroupBar Name="groupBar1"  Margin="20" AllowCollapse="True" VisualMode="StackMode" ItemsSource="{Binding GroupItems}"  >
 
-            &lt;syncfusion:GroupBar.ItemTemplate&gt;
+            <syncfusion:GroupBar.ItemTemplate>
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-                    &lt;Grid&gt;
+                    <Grid>
 
-                        &lt;TextBlock Text="{Binding Header}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/&gt;
+                        <TextBlock Text="{Binding Header}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 
-                    &lt;/Grid&gt;
+                    </Grid>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-            &lt;/syncfusion:GroupBar.ItemTemplate&gt;   
+            </syncfusion:GroupBar.ItemTemplate>   
 
-        &lt;/syncfusion:GroupBar&gt;
+        </syncfusion:GroupBar>
 
 
 
@@ -43,7 +43,7 @@ Implementing the above code will create the following GroupBar control.
 
 
 
-{ ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png) | markdownify }
+{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -101,47 +101,47 @@ public class GroupBarItemTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-&lt;DataTemplate x:Key="WpfBookTemplate"&gt;
+<DataTemplate x:Key="WpfBookTemplate">
 
-            &lt;Grid&gt;
+            <Grid>
 
-                &lt;Grid.ColumnDefinitions&gt;
+                <Grid.ColumnDefinitions>
 
-                    &lt;ColumnDefinition Width="25" /&gt;
+                    <ColumnDefinition Width="25" />
 
-                    &lt;ColumnDefinition Width="*" /&gt;
+                    <ColumnDefinition Width="*" />
 
-                &lt;/Grid.ColumnDefinitions&gt;
+                </Grid.ColumnDefinitions>
 
-                &lt;Image Source="wpf.png"/&gt;
+                <Image Source="wpf.png"/>
 
-                &lt;TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/&gt;
+                <TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
 
 
-        &lt;DataTemplate x:Key="CsBookTemplate"&gt;
+        <DataTemplate x:Key="CsBookTemplate">
 
-            &lt;Grid&gt;
+            <Grid>
 
-                &lt;Grid.ColumnDefinitions&gt;
+                <Grid.ColumnDefinitions>
 
-                    &lt;ColumnDefinition Width="25" /&gt;
+                    <ColumnDefinition Width="25" />
 
-                    &lt;ColumnDefinition Width="*" /&gt;
+                    <ColumnDefinition Width="*" />
 
-                &lt;/Grid.ColumnDefinitions&gt;
+                </Grid.ColumnDefinitions>
 
-                &lt;Image Source="images.jpg"/&gt;
+                <Image Source="images.jpg"/>
 
-                &lt;TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/&gt;
+                <TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
 
 
@@ -155,7 +155,7 @@ public class GroupBarItemTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-&lt;local:GroupBarItemTemplateSelector x:Key="groupBarItemTemplateSelector"/&gt;
+<local:GroupBarItemTemplateSelector x:Key="groupBarItemTemplateSelector"/>
 
 
 
@@ -167,11 +167,11 @@ public class GroupBarItemTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-   &lt;syncfusion:GroupBar Name="groupBar1"  Margin="20" AllowCollapse="True" VisualMode="StackMode" ItemTemplateSelector="{StaticResource groupBarItemTemplateSelector}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  &gt;
+   <syncfusion:GroupBar Name="groupBar1"  Margin="20" AllowCollapse="True" VisualMode="StackMode" ItemTemplateSelector="{StaticResource groupBarItemTemplateSelector}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  >
 
 
 
-        &lt;/syncfusion:GroupBar&gt;
+        </syncfusion:GroupBar>
 
 
 
@@ -181,7 +181,7 @@ This will generate the following GroupBar control.
 
 
 
-{ ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png) | markdownify }
+{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -195,19 +195,19 @@ You can customize the header of a GroupViewItem by using a header template. This
 
 [XAML]
 
-  &lt;DataTemplate x:Key="headerTemplate"&gt;
+  <DataTemplate x:Key="headerTemplate">
 
-            &lt;Grid&gt;
+            <Grid>
 
-                &lt;Border Background="Gray"&gt;
+                <Border Background="Gray">
 
-                &lt;TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="White" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/&gt;
+                <TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="White" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 
-                &lt;/Border&gt;
+                </Border>
 
-            &lt;/Grid&gt;
+            </Grid>
 
-  &lt;/DataTemplate&gt;
+  </DataTemplate>
 
 
 
@@ -219,21 +219,21 @@ You can customize the header of a GroupViewItem by using a header template. This
 
 [XAML]
 
-&lt;syncfusion:GroupBar Name="groupBar1"  Margin="20"  VisualMode="StackMode" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"&gt;
+<syncfusion:GroupBar Name="groupBar1"  Margin="20"  VisualMode="StackMode" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}">
 
-            &lt;syncfusion:GroupBar.ItemContainerStyle&gt;
+            <syncfusion:GroupBar.ItemContainerStyle>
 
-                &lt;Style TargetType="{x:Type syncfusion:GroupBarItem}"&gt;
+                <Style TargetType="{x:Type syncfusion:GroupBarItem}">
 
-                    &lt;Setter Property="HeaderTemplate" Value="{StaticResource headerTemplate}" /&gt;                                      
+                    <Setter Property="HeaderTemplate" Value="{StaticResource headerTemplate}" />                                      
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/syncfusion:GroupBar.ItemContainerStyle&gt;
+            </syncfusion:GroupBar.ItemContainerStyle>
 
 
 
-        &lt;/syncfusion:GroupBar&gt;
+        </syncfusion:GroupBar>
 
 
 
@@ -251,25 +251,25 @@ You can customize the content of GroupViewItem by using ContentTemplate. This is
 
 [XAML]
 
-  &lt;DataTemplate x:Key="contentTemplate"&gt;
+  <DataTemplate x:Key="contentTemplate">
 
-            &lt;Grid &gt;
+            <Grid >
 
-                &lt;Grid.ColumnDefinitions&gt;
+                <Grid.ColumnDefinitions>
 
-                    &lt;ColumnDefinition Width="4*"/&gt;
+                    <ColumnDefinition Width="4*"/>
 
-                    &lt;ColumnDefinition Width="6*"/&gt;
+                    <ColumnDefinition Width="6*"/>
 
-                &lt;/Grid.ColumnDefinitions&gt;
+                </Grid.ColumnDefinitions>
 
-                &lt;Image Source="{Binding XPath=@ImagePath}"/&gt;
+                <Image Source="{Binding XPath=@ImagePath}"/>
 
-                &lt;TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Grid.Column="1"/&gt;
+                <TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Grid.Column="1"/>
 
-            &lt;/Grid&gt;
+            </Grid>
 
-  &lt;/DataTemplate&gt;
+  </DataTemplate>
 
 
 
@@ -281,21 +281,21 @@ You can customize the content of GroupViewItem by using ContentTemplate. This is
 
 [XAML]
 
-&lt;syncfusion:GroupBar Name="groupBar1"  Margin="20"  VisualMode="StackMode" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"&gt;
+<syncfusion:GroupBar Name="groupBar1"  Margin="20"  VisualMode="StackMode" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}">
 
-            &lt;syncfusion:GroupBar.ItemContainerStyle&gt;
+            <syncfusion:GroupBar.ItemContainerStyle>
 
-                &lt;Style TargetType="{x:Type syncfusion:GroupBarItem}"&gt;
+                <Style TargetType="{x:Type syncfusion:GroupBarItem}">
 
-                    &lt;Setter Property="HeaderTemplate" Value="{StaticResource headerTemplate}" /&gt;  
+                    <Setter Property="HeaderTemplate" Value="{StaticResource headerTemplate}" />  
 
-                    &lt;Setter Property="ContentTemplate" Value="{StaticResource contentTemplate}"/&gt;
+                    <Setter Property="ContentTemplate" Value="{StaticResource contentTemplate}"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/syncfusion:GroupBar.ItemContainerStyle&gt;
+            </syncfusion:GroupBar.ItemContainerStyle>
 
-        &lt;/syncfusion:GroupBar&gt;
+        </syncfusion:GroupBar>
 
 
 
@@ -305,7 +305,7 @@ This will populate the GroupBar control.
 
 
 
-{ ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png) | markdownify }
+{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -361,47 +361,47 @@ public class GroupBarItemHeaderTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-   &lt;DataTemplate x:Key="WpfBookHeaderTemplate"&gt;
+   <DataTemplate x:Key="WpfBookHeaderTemplate">
 
-            &lt;Grid&gt;
+            <Grid>
 
-                &lt;Grid.ColumnDefinitions&gt;
+                <Grid.ColumnDefinitions>
 
-                    &lt;ColumnDefinition Width="25" /&gt;
+                    <ColumnDefinition Width="25" />
 
-                    &lt;ColumnDefinition Width="*" /&gt;
+                    <ColumnDefinition Width="*" />
 
-                &lt;/Grid.ColumnDefinitions&gt;
+                </Grid.ColumnDefinitions>
 
-                &lt;Image Source="wpficon.png"/&gt;
+                <Image Source="wpficon.png"/>
 
-                &lt;TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/&gt;
+                <TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
 
 
-        &lt;DataTemplate x:Key="CsBookHeaderTemplate"&gt;
+        <DataTemplate x:Key="CsBookHeaderTemplate">
 
-            &lt;Grid&gt;
+            <Grid>
 
-                &lt;Grid.ColumnDefinitions&gt;
+                <Grid.ColumnDefinitions>
 
-                    &lt;ColumnDefinition Width="25" /&gt;
+                    <ColumnDefinition Width="25" />
 
-                    &lt;ColumnDefinition Width="*" /&gt;
+                    <ColumnDefinition Width="*" />
 
-                &lt;/Grid.ColumnDefinitions&gt;
+                </Grid.ColumnDefinitions>
 
-                &lt;Image Source="csicon.png"/&gt;
+                <Image Source="csicon.png"/>
 
-                &lt;TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Blue" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/&gt;
+                <TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Blue" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
 
 
@@ -413,7 +413,7 @@ public class GroupBarItemHeaderTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-  &lt;local:GroupBarItemHeaderTemplateSelector x:Key="groupBarItemHeaderTemplateSelector"/&gt;
+  <local:GroupBarItemHeaderTemplateSelector x:Key="groupBarItemHeaderTemplateSelector"/>
 
 
 
@@ -475,47 +475,47 @@ public class GroupBarItemContentTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-          &lt;DataTemplate x:Key="CsBookHeaderTemplate"&gt;
+          <DataTemplate x:Key="CsBookHeaderTemplate">
 
-            &lt;Grid&gt;
+            <Grid>
 
-                &lt;Grid.ColumnDefinitions&gt;
+                <Grid.ColumnDefinitions>
 
-                    &lt;ColumnDefinition Width="25" /&gt;
+                    <ColumnDefinition Width="25" />
 
-                    &lt;ColumnDefinition Width="*" /&gt;
+                    <ColumnDefinition Width="*" />
 
-                &lt;/Grid.ColumnDefinitions&gt;
+                </Grid.ColumnDefinitions>
 
-                &lt;Image Source="csicon.png"/&gt;
+                <Image Source="csicon.png"/>
 
-                &lt;TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Blue" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/&gt;
+                <TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Blue" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
 
 
-        &lt;DataTemplate x:Key="WpfBookContentTemplate"&gt;
+        <DataTemplate x:Key="WpfBookContentTemplate">
 
-                    &lt;Grid &gt;
+                    <Grid >
 
-                        &lt;Grid.ColumnDefinitions&gt;
+                        <Grid.ColumnDefinitions>
 
-                            &lt;ColumnDefinition Width="4*"/&gt;
+                            <ColumnDefinition Width="4*"/>
 
-                            &lt;ColumnDefinition Width="6*"/&gt;
+                            <ColumnDefinition Width="6*"/>
 
-                        &lt;/Grid.ColumnDefinitions&gt;
+                        </Grid.ColumnDefinitions>
 
-                        &lt;Image Source="{Binding XPath=@ImagePath}"/&gt;
+                        <Image Source="{Binding XPath=@ImagePath}"/>
 
-                        &lt;TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Foreground="Green" Grid.Column="1"/&gt;
+                        <TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Foreground="Green" Grid.Column="1"/>
 
-                    &lt;/Grid&gt;
+                    </Grid>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
 
 
@@ -527,7 +527,7 @@ public class GroupBarItemContentTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-  &lt;local:GroupBarItemContentTemplateSelector x:Key="groupBarItemContentTemplateSelector"/&gt;
+  <local:GroupBarItemContentTemplateSelector x:Key="groupBarItemContentTemplateSelector"/>
 
 
 
@@ -539,23 +539,23 @@ public class GroupBarItemContentTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-       &lt;syncfusion:GroupBar Name="groupBar1"  AllowCollapse="True" VisualMode="StackMode" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   &gt;
+       <syncfusion:GroupBar Name="groupBar1"  AllowCollapse="True" VisualMode="StackMode" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   >
 
-            &lt;syncfusion:GroupBar.ItemContainerStyle&gt;
+            <syncfusion:GroupBar.ItemContainerStyle>
 
-                &lt;Style TargetType="{x:Type syncfusion:GroupBarItem}"&gt;
+                <Style TargetType="{x:Type syncfusion:GroupBarItem}">
 
-                    &lt;Setter Property="HeaderTemplateSelector" Value="{StaticResource groupBarItemHeaderTemplateSelector}"/&gt;
+                    <Setter Property="HeaderTemplateSelector" Value="{StaticResource groupBarItemHeaderTemplateSelector}"/>
 
-                    &lt;Setter Property="ContentTemplateSelector" Value="{StaticResource groupBarItemContentTemplateSelector}"/&gt;
+                    <Setter Property="ContentTemplateSelector" Value="{StaticResource groupBarItemContentTemplateSelector}"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/syncfusion:GroupBar.ItemContainerStyle&gt;
+            </syncfusion:GroupBar.ItemContainerStyle>
 
 
 
-        &lt;/syncfusion:GroupBar&gt;
+        </syncfusion:GroupBar>
 
 
 
@@ -565,7 +565,7 @@ This will populate the GroupBar control.
 
 
 
-{ ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img4.png) | markdownify }
+{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img4.png)' | markdownify }}
 {:.image }
 
 

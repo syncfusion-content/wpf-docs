@@ -15,9 +15,9 @@ Custom Adorners can be added to the Chart or ChartArea to add any custom UI elem
 
 
 
-&lt;sfchart:Chart Name="Chart1"&gt;
+<sfchart:Chart Name="Chart1">
 
-    &lt;sfchart:ChartArea GridBackground="White"&gt;
+    <sfchart:ChartArea GridBackground="White">
 
         <sfchart:ChartSeries Name="Series11" Type= "Column"
 
@@ -25,11 +25,11 @@ Custom Adorners can be added to the Chart or ChartArea to add any custom UI elem
 
         BindingPathX="X" BindingPathsY="Series1Y, Series1Y1" >
 
-        &lt;/sfchart:ChartSeries&gt;
+        </sfchart:ChartSeries>
 
-    &lt;/sfchart:ChartArea&gt;
+    </sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -137,7 +137,7 @@ internal class CustomAdorner : Adorner
 
 
 
-{ ![](Use-Custom-Adorners-In-Chart-Or-Chart-Area_images/Use-Custom-Adorners-In-Chart-Or-Chart-Area_img1.jpeg) | markdownify }
+{{ '![](Use-Custom-Adorners-In-Chart-Or-Chart-Area_images/Use-Custom-Adorners-In-Chart-Or-Chart-Area_img1.jpeg)' | markdownify }}
 {:.image }
 
 

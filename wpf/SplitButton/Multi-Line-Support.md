@@ -17,11 +17,11 @@ Multiline support can be enabled by using the following code:
 
 [XAML]
 
-&lt;sync:SplitButtonAdv SizeMode="Large" IsMultiLine="False"/&gt;
+<sync:SplitButtonAdv SizeMode="Large" IsMultiLine="False"/>
 
 
 
-{ ![](Multi-Line-Support_images/Multi-Line-Support_img1.png) | markdownify }
+{{ '![](Multi-Line-Support_images/Multi-Line-Support_img1.png)' | markdownify }}
 {:.image }
 
 

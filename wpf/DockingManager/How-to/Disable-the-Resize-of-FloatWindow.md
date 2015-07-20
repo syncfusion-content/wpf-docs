@@ -16,7 +16,7 @@ CanResizeInFloatState is the attached property which can be applied on float sta
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:DockingManager&gt;&lt;Grid x:Name="grid1" syncfusion:DockingManager.State="Float" syncfusion:DockingManager.CanResizeInFloatState="False"/&gt;&lt;/syncfusion:DockingManager&gt;</td></tr>
+[XAML]<syncfusion:DockingManager><Grid x:Name="grid1" syncfusion:DockingManager.State="Float" syncfusion:DockingManager.CanResizeInFloatState="False"/></syncfusion:DockingManager></td></tr>
 <tr>
 <td>
 [C#]DockingManager.SetCanResizeInFloatState(grid1, false);</td></tr>

@@ -13,17 +13,17 @@ documentation: ug
 
 [XAML]
 
-              &lt;Schedule:SfSchedule ScheduleType="Week"  IntervalHeight="30"&gt;
+              <Schedule:SfSchedule ScheduleType="Week"  IntervalHeight="30">
 
-            &lt;Schedule:SfSchedule.NonAccessibleBlocks&gt;
+            <Schedule:SfSchedule.NonAccessibleBlocks>
 
-                &lt;Schedule:NonAccessibleBlock Background="LightPink" StartHour="6.00" EndHour="8.00" Label="Non Accessible Block"&gt;
+                <Schedule:NonAccessibleBlock Background="LightPink" StartHour="6.00" EndHour="8.00" Label="Non Accessible Block">
 
-                &lt;/Schedule:NonAccessibleBlock&gt; 
+                </Schedule:NonAccessibleBlock> 
 
-            &lt;/Schedule:SfSchedule.NonAccessibleBlocks&gt;
+            </Schedule:SfSchedule.NonAccessibleBlocks>
 
-        &lt;/Schedule:SfSchedule&gt;
+        </Schedule:SfSchedule>
 
 
 
@@ -43,7 +43,7 @@ documentation: ug
 
 
 
-{ ![](NonAccessibleBlocks_images/NonAccessibleBlocks_img1.png) | markdownify }
+{{ '![](NonAccessibleBlocks_images/NonAccessibleBlocks_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -59,27 +59,27 @@ The  NonAccessibleBlockTemplate can be customized by NonAccessibleBlockTemplate 
 
 
 
-    &lt;Grid Background="White" Name="grid"&gt;
+    <Grid Background="White" Name="grid">
 
-        &lt;Schedule:SfSchedule  Name="schedule" ScheduleType="Week"  IntervalHeight="30"&gt;
+        <Schedule:SfSchedule  Name="schedule" ScheduleType="Week"  IntervalHeight="30">
 
-            &lt;Schedule:SfSchedule.NonAccessibleBlockTemplate&gt;
+            <Schedule:SfSchedule.NonAccessibleBlockTemplate>
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-                    &lt;Border Height="50" Width="60" Background="LightGreen"&gt;
+                    <Border Height="50" Width="60" Background="LightGreen">
 
-                        &lt;TextBlock Text="Main Block"&gt;&lt;/TextBlock&gt;
+                        <TextBlock Text="Main Block"></TextBlock>
 
-                            &lt;/Border&gt;
+                            </Border>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-            &lt;/Schedule:SfSchedule.NonAccessibleBlockTemplate&gt;
+            </Schedule:SfSchedule.NonAccessibleBlockTemplate>
 
-        &lt;/Schedule:SfSchedule&gt;
+        </Schedule:SfSchedule>
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
@@ -99,7 +99,7 @@ The  NonAccessibleBlockTemplate can be customized by NonAccessibleBlockTemplate 
 
 
 
-{ ![](NonAccessibleBlocks_images/NonAccessibleBlocks_img2.png) | markdownify }
+{{ '![](NonAccessibleBlocks_images/NonAccessibleBlocks_img2.png)' | markdownify }}
 {:.image }
 
 

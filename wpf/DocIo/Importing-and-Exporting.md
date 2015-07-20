@@ -298,10 +298,10 @@ The following code illustrates how to insert a HTML string into the body part of
 <table>
 <tr>
 <td>
-[C#]//Inserts XHTML String.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”);</td></tr>
+[C#]//Inserts XHTML String.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”);</td></tr>
 <tr>
 <td>
-[VB.NET]'Inserts XHTML String.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”)</td></tr>
+[VB.NET]'Inserts XHTML String.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”)</td></tr>
 </table>
 
 
@@ -312,10 +312,10 @@ You can also insert the HTML string in the particular position of the document b
 <table>
 <tr>
 <td>
-[C#]//Inserts XHTML with Paragraph index.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”,1);</td></tr>
+[C#]//Inserts XHTML with Paragraph index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1);</td></tr>
 <tr>
 <td>
-[VB.NET]'Inserts XHTML with Paragraph index.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”,1)</td></tr>
+[VB.NET]'Inserts XHTML with Paragraph index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1)</td></tr>
 </table>
 
 
@@ -325,17 +325,17 @@ You can also insert the HTML string in the particular position of the document b
 <table>
 <tr>
 <td>
-[C#]//Inserts XHTML with Paragraph and Paragraph item index.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”,1,2);</td></tr>
+[C#]//Inserts XHTML with Paragraph and Paragraph item index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1,2);</td></tr>
 <tr>
 <td>
-[VB.NET]'Inserts XHTML with Paragraph and Paragraph item index.section.Body.InsertXHTML(“&lt;html&gt;&lt;body&gt;<p>Welcome</p>&lt;/body&gt;&lt;/html&gt;”,1,2)</td></tr>
+[VB.NET]'Inserts XHTML with Paragraph and Paragraph item index.section.Body.InsertXHTML(“<html><body><p>Welcome</p></body></html>”,1,2)</td></tr>
 </table>
 
 
 It is possible to insert XHTML formatted text inside a Paragraph with the following limitations:
 
-* The content is placed inside a &lt;p&gt; tag, to validate against the XHTML schemas as explained before.
-* This HTML example cannot contain any block elements like div, and so on, and results in an exception being thrown otherwise. The only exception to this case is a single &lt;p&gt; tag.
+* The content is placed inside a <p> tag, to validate against the XHTML schemas as explained before.
+* This HTML example cannot contain any block elements like div, and so on, and results in an exception being thrown otherwise. The only exception to this case is a single <p> tag.
 * Among the supported XHTML tags, only the inline tags are used for formatting text.
 
 The following code example illustrates, appending a HTML formatted string into a paragraph.
@@ -384,11 +384,11 @@ Description</td></tr>
 <tr>
 <td>
 Strict</td><td>
-The strict type validation does not support any HTML presentation elements (such as &lt;p&gt;, &lt;a&gt;, &lt;b&gt;, etc.). This is the low-featured XHTML validation type.</td></tr>
+The strict type validation does not support any HTML presentation elements (such as <p>, <a>, <b>, etc.). This is the low-featured XHTML validation type.</td></tr>
 <tr>
 <td>
 Transitional</td><td>
-The Transitional type DTD adds support for HTML presentation elements. That means you can use HTML elements (such as &lt;p&gt;, &lt;a&gt;, &lt;b&gt;, etc.) directly inside of your XHTML document. </td></tr>
+The Transitional type DTD adds support for HTML presentation elements. That means you can use HTML elements (such as <p>, <a>, <b>, etc.) directly inside of your XHTML document. </td></tr>
 </table>
 
 
@@ -1165,7 +1165,7 @@ The following screenshot illustrates the resultant EPub document.
 
 
 
-{ ![](Importing-and-Exporting_images/Importing-and-Exporting_img1.png) | markdownify }
+{{ '![](Importing-and-Exporting_images/Importing-and-Exporting_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -1193,7 +1193,7 @@ The following screenshot illustrates the resultant EPub document.
 
 
 
-{ ![](Importing-and-Exporting_images/Importing-and-Exporting_img2.png) | markdownify }
+{{ '![](Importing-and-Exporting_images/Importing-and-Exporting_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -1219,7 +1219,7 @@ The following code example illustrates how to export header and footer.
 
 The following is the screenshot of the resultant EPub document with the disabled header and footer contents.
 
-{ ![](Importing-and-Exporting_images/Importing-and-Exporting_img3.png) | markdownify }
+{{ '![](Importing-and-Exporting_images/Importing-and-Exporting_img3.png)' | markdownify }}
 {:.image }
 
 

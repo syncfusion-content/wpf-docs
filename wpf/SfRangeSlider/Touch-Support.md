@@ -30,11 +30,11 @@ The following code example and screenshot illustrates the above.
 
 
 
-&lt;editors:SfRangeSlider Height="200" Width="400” HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" MoveToPoint="MoveToTapPosition"/&gt;
+<editors:SfRangeSlider Height="200" Width="400” HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" MoveToPoint="MoveToTapPosition"/>
 
 
 
-{ ![](Touch-Support_images/Touch-Support_img1.png) | markdownify }
+{{ '![](Touch-Support_images/Touch-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -48,11 +48,11 @@ The following code example and screenshot illustrates the above.
 
 
 
-&lt;editors:SfRangeSlider Height="200" Width="400” HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" MoveToPoint="IncrementBySmallChange"/&gt;
+<editors:SfRangeSlider Height="200" Width="400” HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" MoveToPoint="IncrementBySmallChange"/>
 
 
 
-{ ![](Touch-Support_images/Touch-Support_img2.png) | markdownify }
+{{ '![](Touch-Support_images/Touch-Support_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -66,11 +66,11 @@ The following code example and screenshot illustrates the above.
 
 
 
-&lt;editors:SfRangeSlider Height="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" Width="400” MoveToPoint="IncrementByLargeChange"/&gt;
+<editors:SfRangeSlider Height="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" Width="400” MoveToPoint="IncrementByLargeChange"/>
 
 
 
-{ ![](Touch-Support_images/Touch-Support_img3.png) | markdownify }
+{{ '![](Touch-Support_images/Touch-Support_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -84,11 +84,11 @@ The following code example and screenshot illustrates the above.
 
 
 
-&lt;editors:SfRangeSlider Height="200" Width="400” HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" MoveToPoint="None"/&gt;
+<editors:SfRangeSlider Height="200" Width="400” HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" SmallChange="5" LargeChange="10" MoveToPoint="None"/>
 
 
 
-{ ![](Touch-Support_images/Touch-Support_img4.png) | markdownify }
+{{ '![](Touch-Support_images/Touch-Support_img4.png)' | markdownify }}
 {:.image }
 
 

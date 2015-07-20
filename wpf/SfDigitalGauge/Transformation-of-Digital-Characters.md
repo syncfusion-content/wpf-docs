@@ -52,7 +52,7 @@ Screenshot:
 
 
 
-{ ![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img1.png) | markdownify }
+{{ '![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -86,7 +86,7 @@ Screenshot:
 
 
 
-{ ![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img2.png) | markdownify }
+{{ '![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -126,7 +126,7 @@ Screenshot:
 
 
 
-{ ![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img3.png) | markdownify }
+{{ '![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -162,7 +162,7 @@ Screenshot:
 
 
 
-{ ![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img4.png) | markdownify }
+{{ '![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img4.png)' | markdownify }}
 {:.image }
 
 

@@ -21,31 +21,31 @@ The LeftDragProvider property of the DockingManager is used to apply custom temp
 
 [XAML]
 
-        &lt;sftools:DockingManager.LeftDragProvider&gt;
+        <sftools:DockingManager.LeftDragProvider>
 
-            &lt;ControlTemplate TargetType="{x:Type ContentControl}"&gt;
+            <ControlTemplate TargetType="{x:Type ContentControl}">
 
-                &lt;Image Name="Img" sftool:DockPreviewManagerVS2005.ProviderAction="GlobalLeft" Source="\Images\left_normal.png" /&gt;
+                <Image Name="Img" sftool:DockPreviewManagerVS2005.ProviderAction="GlobalLeft" Source="\Images\left_normal.png" />
 
-                &lt;ControlTemplate.Triggers&gt;
+                <ControlTemplate.Triggers>
 
                     <DataTrigger Binding="{Binding Path=IsSideButtonActive, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type
 
             sftools:DockPreviewMainButtonVS2005}}}"Value="true">
 
-                        &lt;Setter TargetName="Img" Property="Source" Value="\Images\left_mouseover.png"/&gt;
+                        <Setter TargetName="Img" Property="Source" Value="\Images\left_mouseover.png"/>
 
-                    &lt;/DataTrigger&gt;
+                    </DataTrigger>
 
-                &lt;/ControlTemplate.Triggers&gt;
+                </ControlTemplate.Triggers>
 
-            &lt;/ControlTemplate&gt;
+            </ControlTemplate>
 
-        &lt;/sftools:DockingManager.LeftDragProvider&gt;
+        </sftools:DockingManager.LeftDragProvider>
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1050555374.jpg](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1050555374.jpg](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59,31 +59,31 @@ The Custom control template for right drag provider is applied using the RightDr
 
 
 
-        &lt;sftools:DockingManager.RightDragProvider&gt;
+        <sftools:DockingManager.RightDragProvider>
 
-            &lt;ControlTemplate TargetType="{x:Type ContentControl}"&gt;
+            <ControlTemplate TargetType="{x:Type ContentControl}">
 
-                &lt;Image Name="Img" sftools:DockPreviewManagerVS2005.ProviderAction="GlobalRight" Source="\Images\right_normal.png" /&gt;
+                <Image Name="Img" sftools:DockPreviewManagerVS2005.ProviderAction="GlobalRight" Source="\Images\right_normal.png" />
 
-                &lt;ControlTemplate.Triggers&gt;
+                <ControlTemplate.Triggers>
 
                     <DataTrigger Binding="{Binding Path=IsSideButtonActive, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type 
 
                  sftools:DockPreviewMainButtonVS2005}}}" Value="true">
 
-                        &lt;Setter TargetName="Img" Property="Source" Value="\Images\right_mouseover.png"/&gt;
+                        <Setter TargetName="Img" Property="Source" Value="\Images\right_mouseover.png"/>
 
-                    &lt;/DataTrigger&gt;
+                    </DataTrigger>
 
-                &lt;/ControlTemplate.Triggers&gt;
+                </ControlTemplate.Triggers>
 
-            &lt;/ControlTemplate&gt;
+            </ControlTemplate>
 
-        &lt;/sftools:DockingManager.RightDragProvider&gt;
+        </sftools:DockingManager.RightDragProvider>
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1323091430.jpg](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1323091430.jpg](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -95,29 +95,29 @@ Control templates for top drag providers is applied using the TopDragProvider pr
 
 [XAML]
 
-        &lt;sftools:DockingManager.TopDragProvider&gt;
+        <sftools:DockingManager.TopDragProvider>
 
-            &lt;ControlTemplate x:Key="TopDragProviderTemplate" TargetType="{x:Type ContentControl}"&gt;
+            <ControlTemplate x:Key="TopDragProviderTemplate" TargetType="{x:Type ContentControl}">
 
-                &lt;Image Name="Img" Width="35" Height="34" sftools:DockPreviewManagerVS2005.ProviderAction="GlobalTop" Source="\Images\up_normal.png"/&gt;
+                <Image Name="Img" Width="35" Height="34" sftools:DockPreviewManagerVS2005.ProviderAction="GlobalTop" Source="\Images\up_normal.png"/>
 
-                &lt;ControlTemplate.Triggers&gt;
+                <ControlTemplate.Triggers>
 
-                    &lt;DataTrigger Binding="{Binding Path=IsSideButtonActive, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type sftools:DockPreviewMainButtonVS2005}}}" Value="true"&gt;
+                    <DataTrigger Binding="{Binding Path=IsSideButtonActive, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type sftools:DockPreviewMainButtonVS2005}}}" Value="true">
 
-                        &lt;Setter TargetName="Img" Property="Source" Value="\Images\up_mouseover.png"/&gt;
+                        <Setter TargetName="Img" Property="Source" Value="\Images\up_mouseover.png"/>
 
-                    &lt;/DataTrigger&gt;
+                    </DataTrigger>
 
-                &lt;/ControlTemplate.Triggers&gt;
+                </ControlTemplate.Triggers>
 
-            &lt;/ControlTemplate&gt;
+            </ControlTemplate>
 
-        &lt;/sftools:DockingManager.TopDragProvider&gt;
+        </sftools:DockingManager.TopDragProvider>
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image350502413.jpg](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image350502413.jpg](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -129,37 +129,37 @@ This Drag provider is the bottom button that appears while dragging a window ove
 
 [XAML]
 
-        &lt;!--Declaring Docking Manager--&gt;
+        <!--Declaring Docking Manager-->
 
-        &lt;syncfusion:DockingManager&gt;
-
-
-
-            &lt;!--Setting the Bottom Drag Provider for the Docking Manager--&gt;
-
-            &lt;syncfusion:DockingManager.BottomDragProvider&gt;
-
-                &lt;ControlTemplate TargetType="{x:Type ContentControl}"&gt;
-
-                    &lt;Image Name="Img" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="GlobalBottom" Source="Images\CustomDragProvider.png" /&gt;
-
-                    &lt;ControlTemplate.Triggers&gt;
-
-                        &lt;DataTrigger Binding="{Binding Path=IsSideButtonActive, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true"&gt;
-
-                            &lt;Setter TargetName="Img" Property="Source" Value="Images\CustomDragProviderOver.png"/&gt;
-
-                        &lt;/DataTrigger&gt;
-
-                    &lt;/ControlTemplate.Triggers&gt;
-
-                &lt;/ControlTemplate&gt;
-
-            &lt;/syncfusion:DockingManager.BottomDragProvider&gt;
+        <syncfusion:DockingManager>
 
 
 
-            &lt;!--Children for the Docking Manager--&gt;
+            <!--Setting the Bottom Drag Provider for the Docking Manager-->
+
+            <syncfusion:DockingManager.BottomDragProvider>
+
+                <ControlTemplate TargetType="{x:Type ContentControl}">
+
+                    <Image Name="Img" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="GlobalBottom" Source="Images\CustomDragProvider.png" />
+
+                    <ControlTemplate.Triggers>
+
+                        <DataTrigger Binding="{Binding Path=IsSideButtonActive, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type syncfusion:DockPreviewMainButtonVS2005}}}" Value="true">
+
+                            <Setter TargetName="Img" Property="Source" Value="Images\CustomDragProviderOver.png"/>
+
+                        </DataTrigger>
+
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+
+            </syncfusion:DockingManager.BottomDragProvider>
+
+
+
+            <!--Children for the Docking Manager-->
 
             <StackPanel syncfusion:DockingManager.Header="Element one"
 
@@ -167,7 +167,7 @@ This Drag provider is the bottom button that appears while dragging a window ove
 
               syncfusion:DockingManager.SideInDockedMode="Left"/>
 
-        &lt;/syncfusion:DockingManager&gt;
+        </syncfusion:DockingManager>
 
 
 
@@ -196,7 +196,7 @@ This drag provider is the center button that appears while dragging a window ove
 <table>
 <tr>
 <td>
-[XAML]        &lt;Window.Resources&gt;            &lt;ControlTemplate x:Key="CenterButtonCustomTemplate" TargetType="{x:Type ContentControl}"&gt;                &lt;Grid&gt;                    &lt;Grid.RowDefinitions&gt;                        &lt;RowDefinition Height="30" /&gt;                        &lt;RowDefinition Height="30" /&gt;                        &lt;RowDefinition Height="30" /&gt;                    &lt;/Grid.RowDefinitions&gt;                    &lt;Grid.ColumnDefinitions&gt;                        &lt;ColumnDefinition Width="30" /&gt;                        &lt;ColumnDefinition Width="30" /&gt;                        &lt;ColumnDefinition Width="30" /&gt;                    &lt;/Grid.ColumnDefinitions&gt;                    &lt;Image Name="TopImg" Grid.Column="1" Grid.Row="0" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Top" Source="Images\CustomDragProvider.png" /&gt;                    &lt;Image Name="LeftImg" Grid.Column="0" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Left" Source="Images\CustomDragProvider.png" /&gt;                    &lt;Image Name="CenterImg" Grid.Column="1" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Center" Source="Images\CustomDragProvider.png" /&gt;                    &lt;Image Name="RightImg" Grid.Column="2" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Right" Source="Images\CustomDragProvider.png" /&gt;                    &lt;Image Name="BottomImg" Grid.Column="1" Grid.Row="2" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Bottom" Source="Images\CustomDragProvider.png" /&gt;                &lt;/Grid&gt;            &lt;/ControlTemplate&gt;        &lt;/Window.Resources&gt;        &lt;Grid&gt;            &lt;!--Declaring Docking Manager and calling the CenterDrag provider using the Resource look up logic --&gt;            &lt;syncfusion:DockingManager CenterDragProvider="{StaticResource CenterButtonCustomTemplate}"&gt;                &lt;!--Children for the Docking Manager--&gt;                <StackPanel syncfusion:DockingManager.Header="Element one"              syncfusion:DockingManager.State="Dock"              syncfusion:DockingManager.SideInDockedMode="Left"/>            &lt;/syncfusion:DockingManager&gt;        &lt;/Grid&gt; ></td></tr>
+[XAML]        <Window.Resources>            <ControlTemplate x:Key="CenterButtonCustomTemplate" TargetType="{x:Type ContentControl}">                <Grid>                    <Grid.RowDefinitions>                        <RowDefinition Height="30" />                        <RowDefinition Height="30" />                        <RowDefinition Height="30" />                    </Grid.RowDefinitions>                    <Grid.ColumnDefinitions>                        <ColumnDefinition Width="30" />                        <ColumnDefinition Width="30" />                        <ColumnDefinition Width="30" />                    </Grid.ColumnDefinitions>                    <Image Name="TopImg" Grid.Column="1" Grid.Row="0" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Top" Source="Images\CustomDragProvider.png" />                    <Image Name="LeftImg" Grid.Column="0" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Left" Source="Images\CustomDragProvider.png" />                    <Image Name="CenterImg" Grid.Column="1" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Center" Source="Images\CustomDragProvider.png" />                    <Image Name="RightImg" Grid.Column="2" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Right" Source="Images\CustomDragProvider.png" />                    <Image Name="BottomImg" Grid.Column="1" Grid.Row="2" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Bottom" Source="Images\CustomDragProvider.png" />                </Grid>            </ControlTemplate>        </Window.Resources>        <Grid>            <!--Declaring Docking Manager and calling the CenterDrag provider using the Resource look up logic -->            <syncfusion:DockingManager CenterDragProvider="{StaticResource CenterButtonCustomTemplate}">                <!--Children for the Docking Manager-->                <StackPanel syncfusion:DockingManager.Header="Element one"              syncfusion:DockingManager.State="Dock"              syncfusion:DockingManager.SideInDockedMode="Left"/>            </syncfusion:DockingManager>        </Grid> ></td></tr>
 <tr>
 <td>
 [C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Applying the template using the Resource look up logic.DockingManager.CenterDragProvider = (ControlTemplate)FindResource("CenterButtonCustomTemplate");</td></tr>
@@ -211,43 +211,43 @@ The Auto hide button in the docked window is customized by using the AwlButtonTe
 
 
 
-        &lt;!--Declaring Docking Manager AutoHideVisibility to False --&gt;
+        <!--Declaring Docking Manager AutoHideVisibility to False -->
 
-        &lt;syncfusion:DockingManager&gt;
-
-
-
-            &lt;!--Declaring the Template for the AutoHide button using AwlButtonTemplate--&gt;
-
-            &lt;syncfusion:DockingManager.AwlButtonTemplate&gt;
-
-                &lt;ControlTemplate TargetType="{x:Type ToggleButton}"&gt;
-
-                    &lt;Border Name="Border"&gt;
-
-                        &lt;TextBlock Name="TextBlock1" Text="||" Foreground="Black"/&gt;
-
-                    &lt;/Border&gt;
-
-                    &lt;ControlTemplate.Triggers&gt;
-
-                        &lt;Trigger Property="IsMouseOver" Value="True" &gt;
-
-                            &lt;Setter TargetName="Border" Property="Background" Value="Black" /&gt;
-
-                            &lt;Setter TargetName="TextBlock1" Property="Foreground" Value="White" /&gt;
-
-                        &lt;/Trigger&gt;
-
-                    &lt;/ControlTemplate.Triggers&gt;
-
-                &lt;/ControlTemplate&gt;
-
-            &lt;/syncfusion:DockingManager.AwlButtonTemplate&gt;
+        <syncfusion:DockingManager>
 
 
 
-            &lt;!--Children for the Docking Manager--&gt;
+            <!--Declaring the Template for the AutoHide button using AwlButtonTemplate-->
+
+            <syncfusion:DockingManager.AwlButtonTemplate>
+
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+
+                    <Border Name="Border">
+
+                        <TextBlock Name="TextBlock1" Text="||" Foreground="Black"/>
+
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+
+                        <Trigger Property="IsMouseOver" Value="True" >
+
+                            <Setter TargetName="Border" Property="Background" Value="Black" />
+
+                            <Setter TargetName="TextBlock1" Property="Foreground" Value="White" />
+
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+
+            </syncfusion:DockingManager.AwlButtonTemplate>
+
+
+
+            <!--Children for the Docking Manager-->
 
             <StackPanel syncfusion:DockingManager.Header="Element one"
 
@@ -255,7 +255,7 @@ The Auto hide button in the docked window is customized by using the AwlButtonTe
 
               syncfusion:DockingManager.SideInDockedMode="Left"/>
 
-        &lt;/syncfusion:DockingManager&gt;
+        </syncfusion:DockingManager>
 
 
 
@@ -265,7 +265,7 @@ The Auto hide button in the docked window is customized by using the AwlButtonTe
 
 
 
-{ ![C:/Users/Hemanth/Desktop/Documentation/Images/awlbutton.jpg](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg) | markdownify }
+{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/awlbutton.jpg](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -279,21 +279,21 @@ The DockingManager facilitates you to apply an user-defined custom Header Templa
 
 [XAML]
 
-        &lt;sftools:DockingManager.HeaderTemplate&gt;
+        <sftools:DockingManager.HeaderTemplate>
 
-            &lt;DataTemplate&gt;
+            <DataTemplate>
 
-                &lt;DockPanel LastChildFill="True" &gt;
+                <DockPanel LastChildFill="True" >
 
-                    &lt;Image DockPanel.Dock="Left"  Source="/Images/DocIO.gif" /&gt;
+                    <Image DockPanel.Dock="Left"  Source="/Images/DocIO.gif" />
 
-                    &lt;TextBlock Text="Docking"/&gt;
+                    <TextBlock Text="Docking"/>
 
-                &lt;/DockPanel&gt;
+                </DockPanel>
 
-            &lt;/DataTemplate&gt;
+            </DataTemplate>
 
-        &lt;/sftools:DockingManager.HeaderTemplate&gt;
+        </sftools:DockingManager.HeaderTemplate>
 
 
 
@@ -301,7 +301,7 @@ The DockingManager facilitates you to apply an user-defined custom Header Templa
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1256965732.jpg](Styles-and-Templates_images/Styles-and-Templates_img5.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1256965732.jpg](Styles-and-Templates_images/Styles-and-Templates_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -317,43 +317,43 @@ The following code illustrates this:
 
 [XAML]
 
-        &lt;Window.Resources&gt;
+        <Window.Resources>
 
-            &lt;!--Declaring the template--&gt;
+            <!--Declaring the template-->
 
-            &lt;ControlTemplate x:Key="closebuttontemplate" TargetType="{x:Type ToggleButton}"&gt;
+            <ControlTemplate x:Key="closebuttontemplate" TargetType="{x:Type ToggleButton}">
 
-                &lt;StackPanel&gt;
+                <StackPanel>
 
-                    &lt;Border x:Name="brdBack" Width="15" Height="15" Margin="0,0,1,1" BorderThickness="1" BorderBrush="Transparent" &gt;
+                    <Border x:Name="brdBack" Width="15" Height="15" Margin="0,0,1,1" BorderThickness="1" BorderBrush="Transparent" >
 
                         <Path Name="pathButton" SnapsToDevicePixels="False" Stretch="Fill" StrokeThickness="2"
 
 Stroke="Red" Data="M109,51 L216,142 M215,52 L109,142" HorizontalAlignment="Center" VerticalAlignment="Center" Width="9" Height="8"/>
 
-                    &lt;/Border&gt;
+                    </Border>
 
-                &lt;/StackPanel&gt;
+                </StackPanel>
 
-            &lt;/ControlTemplate&gt;
+            </ControlTemplate>
 
-        &lt;/Window.Resources&gt;
+        </Window.Resources>
 
-        &lt;Grid&gt;
+        <Grid>
 
-            &lt;!--Declaring Docking Manager--&gt;
+            <!--Declaring Docking Manager-->
 
-            &lt;syncfusion:DockingManager CloseButtonTemplate="{StaticResource closebuttontemplate}"&gt;
+            <syncfusion:DockingManager CloseButtonTemplate="{StaticResource closebuttontemplate}">
 
-                &lt;!--Children for the Docking Manager--&gt;
+                <!--Children for the Docking Manager-->
 
                 <StackPanel syncfusion:DockingManager.State="Dock"
 
                  syncfusion:DockingManager.SideInDockedMode="Left"/>
 
-            &lt;/syncfusion:DockingManager&gt;
+            </syncfusion:DockingManager>
 
-        &lt;/Grid&gt;
+        </Grid>
 
 
 
@@ -377,7 +377,7 @@ DockingManager.CloseButtonTemplate = (ControlTemplate)FindResource("closebuttont
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image240648422.jpg](Styles-and-Templates_images/Styles-and-Templates_img6.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image240648422.jpg](Styles-and-Templates_images/Styles-and-Templates_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -389,31 +389,31 @@ The Context Menu button in the dock window header can be changed in order to hav
 
 [XAML]
 
-        &lt;sftools:DockingManager.MenuButtonTemplate&gt;
+        <sftools:DockingManager.MenuButtonTemplate>
 
-            &lt;ControlTemplate TargetType="{x:Type ToggleButton}"&gt;
+            <ControlTemplate TargetType="{x:Type ToggleButton}">
 
-                &lt;Border Name="Border"&gt;
+                <Border Name="Border">
 
-                    &lt;TextBlock Name="TextBlock1" Text="$" /&gt;
+                    <TextBlock Name="TextBlock1" Text="$" />
 
-                &lt;/Border&gt;
+                </Border>
 
-                &lt;ControlTemplate.Triggers&gt;
+                <ControlTemplate.Triggers>
 
-                    &lt;Trigger Property="IsMouseOver" Value="True" &gt;
+                    <Trigger Property="IsMouseOver" Value="True" >
 
-                        &lt;Setter TargetName="Border" Property="Background" Value="Black" /&gt;
+                        <Setter TargetName="Border" Property="Background" Value="Black" />
 
-                        &lt;Setter TargetName="TextBlock1" Property="Foreground" Value="White" /&gt;
+                        <Setter TargetName="TextBlock1" Property="Foreground" Value="White" />
 
-                    &lt;/Trigger&gt;
+                    </Trigger>
 
-                &lt;/ControlTemplate.Triggers&gt;
+                </ControlTemplate.Triggers>
 
-            &lt;/ControlTemplate&gt;
+            </ControlTemplate>
 
-        &lt;/sftools:DockingManager.MenuButtonTemplate&gt;
+        </sftools:DockingManager.MenuButtonTemplate>
 
 
 
@@ -421,7 +421,7 @@ The Context Menu button in the dock window header can be changed in order to hav
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image80401031.jpg](Styles-and-Templates_images/Styles-and-Templates_img7.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image80401031.jpg](Styles-and-Templates_images/Styles-and-Templates_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -435,17 +435,17 @@ Here is the code snippet for setting this property.
 
 [XAML]
 
-        &lt;syncfusion:DockingManager&gt;
+        <syncfusion:DockingManager>
 
-            &lt;syncfusion:DockingManager.FloatWindowStyle&gt;
+            <syncfusion:DockingManager.FloatWindowStyle>
 
-                &lt;Style TargetType="{x:Type syncfusion:AutoTemplatedContentControl}"&gt;
+                <Style TargetType="{x:Type syncfusion:AutoTemplatedContentControl}">
 
-                    &lt;Setter Property="Background" Value="Yellow"/&gt;
+                    <Setter Property="Background" Value="Yellow"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/syncfusion:DockingManager.FloatWindowStyle&gt;
+            </syncfusion:DockingManager.FloatWindowStyle>
 
             <StackPanel syncfusion:DockingManager.State="Float"
 
@@ -453,7 +453,7 @@ Here is the code snippet for setting this property.
 
               syncfusion:DockingManager.SideInDockedMode="Left"/>
 
-        &lt;/syncfusion:DockingManager&gt;
+        </syncfusion:DockingManager>
 
 
 
@@ -467,21 +467,21 @@ The following code snippet example clearly explains the usage of using the DockH
 
 [XAML]
 
-        &lt;syncfusion:DockingManager Name="DockingManager"&gt;
+        <syncfusion:DockingManager Name="DockingManager">
 
-            &lt;syncfusion:DockingManager.DockHeaderStyle&gt;
+            <syncfusion:DockingManager.DockHeaderStyle>
 
-                &lt;Style TargetType="{x:Type syncfusion:DockHeaderPresenter}"&gt;
+                <Style TargetType="{x:Type syncfusion:DockHeaderPresenter}">
 
-                    &lt;Setter Property="MinHeight" Value="50"/&gt;
+                    <Setter Property="MinHeight" Value="50"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/syncfusion:DockingManager.DockHeaderStyle&gt;
+            </syncfusion:DockingManager.DockHeaderStyle>
 
-            &lt;StackPanel syncfusion:DockingManager.State="Dock"/&gt;
+            <StackPanel syncfusion:DockingManager.State="Dock"/>
 
-        &lt;/syncfusion:DockingManager&gt;
+        </syncfusion:DockingManager>
 
 
 
@@ -495,43 +495,43 @@ The TabControl and TabItem Style is used to customize the tabbed child tabcontro
 
 [XAML]
 
-&lt;syncfusion:DockingManager&gt;
+<syncfusion:DockingManager>
 
-&lt;syncfusion:DockingManager.TabControlStyle&gt;
+<syncfusion:DockingManager.TabControlStyle>
 
-&lt;Style TargetType="{x:Type TabControl}"&gt;
+<Style TargetType="{x:Type TabControl}">
 
-&lt;Setter Property="Background" Value="Blue"/&gt;
+<Setter Property="Background" Value="Blue"/>
 
-&lt;/Style&gt;
+</Style>
 
-&lt;/syncfusion:DockingManager.TabControlStyle&gt;
+</syncfusion:DockingManager.TabControlStyle>
 
-&lt;Grid Name="grid1" /&gt;
+<Grid Name="grid1" />
 
-&lt;Grid Name="grid2" syncfusion:DockingManager.TargetNameInDockedMode="grid1" syncfusion:DockingManager.SideInDockedMode="Tabbed"/&gt; &lt;/syncfusion:DockingManager&gt;
+<Grid Name="grid2" syncfusion:DockingManager.TargetNameInDockedMode="grid1" syncfusion:DockingManager.SideInDockedMode="Tabbed"/> </syncfusion:DockingManager>
 
 
 
 [XAML]
 
-&lt;syncfusion:DockingManager&gt;
+<syncfusion:DockingManager>
 
-            &lt;syncfusion:DockingManager.TabItemStyle&gt;
+            <syncfusion:DockingManager.TabItemStyle>
 
-                &lt;Style TargetType="{x:Type TabItem}"&gt;
+                <Style TargetType="{x:Type TabItem}">
 
-                    &lt;Setter Property="Background" Value="Blue"/&gt;
+                    <Setter Property="Background" Value="Blue"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/syncfusion:DockingManager.TabItemStyle&gt;
+            </syncfusion:DockingManager.TabItemStyle>
 
-            &lt;Grid Name="grid1" syncfusion:DockingManager.Header="tab1"/&gt;
+            <Grid Name="grid1" syncfusion:DockingManager.Header="tab1"/>
 
-            &lt;Grid Name="grid2" syncfusion:DockingManager.Header="tab2" syncfusion:DockingManager.TargetNameInDockedMode="grid1" syncfusion:DockingManager.SideInDockedMode="Tabbed"/&gt;
+            <Grid Name="grid2" syncfusion:DockingManager.Header="tab2" syncfusion:DockingManager.TargetNameInDockedMode="grid1" syncfusion:DockingManager.SideInDockedMode="Tabbed"/>
 
-        &lt;/syncfusion:DockingManager&gt;
+        </syncfusion:DockingManager>
 
 
 
@@ -541,7 +541,7 @@ You can edit the style and template properties that are available in DockingMana
 
 
 
-{ ![C:/Users/Hemanth/Desktop/Documentation/Images/StartScreen.jpg](Styles-and-Templates_images/Styles-and-Templates_img8.jpeg) | markdownify }
+{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/StartScreen.jpg](Styles-and-Templates_images/Styles-and-Templates_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -552,7 +552,7 @@ Using the option, you can edit the template of the available DockingManager part
 
 
 
-{ ![C:/Users/Hemanth/Desktop/Documentation/Images/EditTemplate.jpg](Styles-and-Templates_images/Styles-and-Templates_img9.jpeg) | markdownify }
+{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/EditTemplate.jpg](Styles-and-Templates_images/Styles-and-Templates_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -568,159 +568,159 @@ AwlButtonTemplate
 
 
 
-&lt;ControlTemplate x:Key="awltemplate" TargetType="ToggleButton"&gt;
+<ControlTemplate x:Key="awltemplate" TargetType="ToggleButton">
 
-            &lt;Border Height="18" BorderBrush="#FF094161" BorderThickness="0,0,0,2"  &gt;
+            <Border Height="18" BorderBrush="#FF094161" BorderThickness="0,0,0,2"  >
 
-                &lt;Border.Background&gt;
+                <Border.Background>
 
-                    &lt;LinearGradientBrush StartPoint="0.5,0.978679" EndPoint="0.5,0.0213225"&gt;
+                    <LinearGradientBrush StartPoint="0.5,0.978679" EndPoint="0.5,0.0213225">
 
-                        &lt;GradientStop Color="#FF5DECF4" Offset="0"/&gt;
+                        <GradientStop Color="#FF5DECF4" Offset="0"/>
 
-                        &lt;GradientStop Color="#FF032649" Offset="0.499975"/&gt;
+                        <GradientStop Color="#FF032649" Offset="0.499975"/>
 
-                        &lt;GradientStop Color="#FF0C5777" Offset="0.500025"/&gt;
+                        <GradientStop Color="#FF0C5777" Offset="0.500025"/>
 
-                    &lt;/LinearGradientBrush&gt;
+                    </LinearGradientBrush>
 
-                &lt;/Border.Background&gt;
+                </Border.Background>
 
 
 
-                &lt;Grid Height="20" Width="16"&gt;
+                <Grid Height="20" Width="16">
 
-                    &lt;Border&gt;
+                    <Border>
 
 
 
-                        &lt;Grid&gt;
+                        <Grid>
 
 
 
-                            &lt;Border x:Name="uncheckedArrow" Margin="0,0,1,1" BorderThickness="1" BorderBrush="Transparent" Width="18" Height="15" &gt;
+                            <Border x:Name="uncheckedArrow" Margin="0,0,1,1" BorderThickness="1" BorderBrush="Transparent" Width="18" Height="15" >
 
 
 
-                                &lt;Canvas Width="15" Height="5" &gt;
+                                <Canvas Width="15" Height="5" >
 
-                                    &lt;Path x:Name="backPath" Stretch="Fill" Fill="#FF000000" Data="F1 M 1881.12,-312.749C 1881.98,-312.701 1882.68,-311.447 1882.68,-309.911C 1882.68,-308.372 1881.98,-307.118 1881.12,-307.069L 1881.12,-312.749 Z M 1892.19,-310.27L 1898.69,-309.845L 1892.16,-309.546L 1892.19,-310.27 Z M 1888.15,-309.918C 1888.15,-312.516 1889.66,-314.619 1891.53,-314.619L 1891.54,-305.22C 1889.66,-305.22 1888.15,-307.325 1888.15,-309.918 Z M 1891.05,-305.796L 1891.05,-307.226C 1890.78,-307.22 1889.24,-307.21 1889.01,-307.778C 1889.01,-307.778 1889.05,-306.175 1891.05,-305.796 Z M 1883.27,-311.497L 1887.72,-311.64C 1887.52,-311.076 1887.4,-310.48 1887.4,-309.848C 1887.4,-309.247 1887.52,-308.677 1887.69,-308.14L 1883.25,-308.28C 1883.42,-308.758 1883.51,-309.313 1883.51,-309.911C 1883.51,-310.489 1883.43,-311.026 1883.27,-311.497 Z M 1887.31,-308.515C 1887.31,-308.515 1887.5,-308.733 1887.19,-308.812L 1884.06,-308.909C 1884.06,-308.909 1883.7,-308.951 1883.9,-308.636L 1887.31,-308.515 Z " Height="8" HorizontalAlignment="Right" Width="15"  RenderTransformOrigin="0.5,0.5"&gt;
+                                    <Path x:Name="backPath" Stretch="Fill" Fill="#FF000000" Data="F1 M 1881.12,-312.749C 1881.98,-312.701 1882.68,-311.447 1882.68,-309.911C 1882.68,-308.372 1881.98,-307.118 1881.12,-307.069L 1881.12,-312.749 Z M 1892.19,-310.27L 1898.69,-309.845L 1892.16,-309.546L 1892.19,-310.27 Z M 1888.15,-309.918C 1888.15,-312.516 1889.66,-314.619 1891.53,-314.619L 1891.54,-305.22C 1889.66,-305.22 1888.15,-307.325 1888.15,-309.918 Z M 1891.05,-305.796L 1891.05,-307.226C 1890.78,-307.22 1889.24,-307.21 1889.01,-307.778C 1889.01,-307.778 1889.05,-306.175 1891.05,-305.796 Z M 1883.27,-311.497L 1887.72,-311.64C 1887.52,-311.076 1887.4,-310.48 1887.4,-309.848C 1887.4,-309.247 1887.52,-308.677 1887.69,-308.14L 1883.25,-308.28C 1883.42,-308.758 1883.51,-309.313 1883.51,-309.911C 1883.51,-310.489 1883.43,-311.026 1883.27,-311.497 Z M 1887.31,-308.515C 1887.31,-308.515 1887.5,-308.733 1887.19,-308.812L 1884.06,-308.909C 1884.06,-308.909 1883.7,-308.951 1883.9,-308.636L 1887.31,-308.515 Z " Height="8" HorizontalAlignment="Right" Width="15"  RenderTransformOrigin="0.5,0.5">
 
-                                        &lt;Path.RenderTransform&gt;
+                                        <Path.RenderTransform>
 
-                                            &lt;TransformGroup&gt;
+                                            <TransformGroup>
 
-                                                &lt;ScaleTransform/&gt;
+                                                <ScaleTransform/>
 
-                                                &lt;SkewTransform/&gt;
+                                                <SkewTransform/>
 
-                                                &lt;RotateTransform Angle="90"/&gt;
+                                                <RotateTransform Angle="90"/>
 
-                                                &lt;TranslateTransform X="0.957" Y="0.95699999999999985"/&gt;
+                                                <TranslateTransform X="0.957" Y="0.95699999999999985"/>
 
-                                            &lt;/TransformGroup&gt;
+                                            </TransformGroup>
 
-                                        &lt;/Path.RenderTransform&gt;
+                                        </Path.RenderTransform>
 
-                                    &lt;/Path&gt;
+                                    </Path>
 
-                                    &lt;Path x:Name="unCheckPath" Stretch="Fill" Fill="#FFFFFFFF" Data="F1 M 1881.12,-310.834C 1881.98,-310.786 1882.68,-309.533 1882.68,-307.995C 1882.68,-306.455 1881.98,-305.202 1881.12,-305.154L 1881.12,-310.834 Z M 1892.19,-308.355L 1898.69,-307.929L 1892.16,-307.632L 1892.19,-308.355 Z M 1888.15,-308.004C 1888.15,-310.601 1889.66,-312.704 1891.53,-312.704L 1891.54,-303.305C 1889.66,-303.305 1888.15,-305.409 1888.15,-308.004 Z M 1891.05,-303.881L 1891.05,-305.309C 1890.78,-305.305 1889.24,-305.293 1889.01,-305.864C 1889.01,-305.864 1889.05,-304.26 1891.05,-303.881 Z M 1883.27,-309.581L 1887.72,-309.723C 1887.52,-309.161 1887.4,-308.564 1887.4,-307.933C 1887.4,-307.33 1887.52,-306.762 1887.69,-306.223L 1883.25,-306.364C 1883.42,-306.843 1883.51,-307.397 1883.51,-307.995C 1883.51,-308.573 1883.43,-309.111 1883.27,-309.581 Z M 1887.31,-306.598C 1887.31,-306.598 1887.5,-306.817 1887.19,-306.897L 1884.06,-306.994C 1884.06,-306.994 1883.7,-307.036 1883.9,-306.72L 1887.31,-306.598 Z " Height="8" HorizontalAlignment="Right"  Width="15"  RenderTransformOrigin="0.5,0.5"&gt;
+                                    <Path x:Name="unCheckPath" Stretch="Fill" Fill="#FFFFFFFF" Data="F1 M 1881.12,-310.834C 1881.98,-310.786 1882.68,-309.533 1882.68,-307.995C 1882.68,-306.455 1881.98,-305.202 1881.12,-305.154L 1881.12,-310.834 Z M 1892.19,-308.355L 1898.69,-307.929L 1892.16,-307.632L 1892.19,-308.355 Z M 1888.15,-308.004C 1888.15,-310.601 1889.66,-312.704 1891.53,-312.704L 1891.54,-303.305C 1889.66,-303.305 1888.15,-305.409 1888.15,-308.004 Z M 1891.05,-303.881L 1891.05,-305.309C 1890.78,-305.305 1889.24,-305.293 1889.01,-305.864C 1889.01,-305.864 1889.05,-304.26 1891.05,-303.881 Z M 1883.27,-309.581L 1887.72,-309.723C 1887.52,-309.161 1887.4,-308.564 1887.4,-307.933C 1887.4,-307.33 1887.52,-306.762 1887.69,-306.223L 1883.25,-306.364C 1883.42,-306.843 1883.51,-307.397 1883.51,-307.995C 1883.51,-308.573 1883.43,-309.111 1883.27,-309.581 Z M 1887.31,-306.598C 1887.31,-306.598 1887.5,-306.817 1887.19,-306.897L 1884.06,-306.994C 1884.06,-306.994 1883.7,-307.036 1883.9,-306.72L 1887.31,-306.598 Z " Height="8" HorizontalAlignment="Right"  Width="15"  RenderTransformOrigin="0.5,0.5">
 
-                                        &lt;Path.RenderTransform&gt;
+                                        <Path.RenderTransform>
 
-                                            &lt;TransformGroup&gt;
+                                            <TransformGroup>
 
-                                                &lt;ScaleTransform/&gt;
+                                                <ScaleTransform/>
 
-                                                &lt;SkewTransform/&gt;
+                                                <SkewTransform/>
 
-                                                &lt;RotateTransform Angle="90"/&gt;
+                                                <RotateTransform Angle="90"/>
 
-                                                &lt;TranslateTransform X="-0.958" Y="-0.95799999999999985"/&gt;
+                                                <TranslateTransform X="-0.958" Y="-0.95799999999999985"/>
 
-                                            &lt;/TransformGroup&gt;
+                                            </TransformGroup>
 
-                                        &lt;/Path.RenderTransform&gt;
+                                        </Path.RenderTransform>
 
-                                    &lt;/Path&gt;
+                                    </Path>
 
-                                &lt;/Canvas&gt;
+                                </Canvas>
 
-                            &lt;/Border&gt;
+                            </Border>
 
-                            &lt;Border Margin="0,0,1,1" BorderThickness="1" BorderBrush="Transparent" Width="15" Height="15" Opacity="0" RenderTransformOrigin="0.5,0.5" x:Name="checkedArrow" &gt;
+                            <Border Margin="0,0,1,1" BorderThickness="1" BorderBrush="Transparent" Width="15" Height="15" Opacity="0" RenderTransformOrigin="0.5,0.5" x:Name="checkedArrow" >
 
-                                &lt;Canvas Width="15" Height="3" &gt;
+                                <Canvas Width="15" Height="3" >
 
-                                    &lt;Path x:Name="backheckPath" Stretch="Fill" Fill="#FF000000" Data="F1 M 1881.12,-312.749C 1881.98,-312.701 1882.68,-311.447 1882.68,-309.911C 1882.68,-308.372 1881.98,-307.118 1881.12,-307.069L 1881.12,-312.749 Z M 1892.19,-310.27L 1898.69,-309.845L 1892.16,-309.546L 1892.19,-310.27 Z M 1888.15,-309.918C 1888.15,-312.516 1889.66,-314.619 1891.53,-314.619L 1891.54,-305.22C 1889.66,-305.22 1888.15,-307.325 1888.15,-309.918 Z M 1891.05,-305.796L 1891.05,-307.226C 1890.78,-307.22 1889.24,-307.21 1889.01,-307.778C 1889.01,-307.778 1889.05,-306.175 1891.05,-305.796 Z M 1883.27,-311.497L 1887.72,-311.64C 1887.52,-311.076 1887.4,-310.48 1887.4,-309.848C 1887.4,-309.247 1887.52,-308.677 1887.69,-308.14L 1883.25,-308.28C 1883.42,-308.758 1883.51,-309.313 1883.51,-309.911C 1883.51,-310.489 1883.43,-311.026 1883.27,-311.497 Z M 1887.31,-308.515C 1887.31,-308.515 1887.5,-308.733 1887.19,-308.812L 1884.06,-308.909C 1884.06,-308.909 1883.7,-308.951 1883.9,-308.636L 1887.31,-308.515 Z " Height="8" HorizontalAlignment="Right" Width="15"  RenderTransformOrigin="0.5,0.5"&gt;
+                                    <Path x:Name="backheckPath" Stretch="Fill" Fill="#FF000000" Data="F1 M 1881.12,-312.749C 1881.98,-312.701 1882.68,-311.447 1882.68,-309.911C 1882.68,-308.372 1881.98,-307.118 1881.12,-307.069L 1881.12,-312.749 Z M 1892.19,-310.27L 1898.69,-309.845L 1892.16,-309.546L 1892.19,-310.27 Z M 1888.15,-309.918C 1888.15,-312.516 1889.66,-314.619 1891.53,-314.619L 1891.54,-305.22C 1889.66,-305.22 1888.15,-307.325 1888.15,-309.918 Z M 1891.05,-305.796L 1891.05,-307.226C 1890.78,-307.22 1889.24,-307.21 1889.01,-307.778C 1889.01,-307.778 1889.05,-306.175 1891.05,-305.796 Z M 1883.27,-311.497L 1887.72,-311.64C 1887.52,-311.076 1887.4,-310.48 1887.4,-309.848C 1887.4,-309.247 1887.52,-308.677 1887.69,-308.14L 1883.25,-308.28C 1883.42,-308.758 1883.51,-309.313 1883.51,-309.911C 1883.51,-310.489 1883.43,-311.026 1883.27,-311.497 Z M 1887.31,-308.515C 1887.31,-308.515 1887.5,-308.733 1887.19,-308.812L 1884.06,-308.909C 1884.06,-308.909 1883.7,-308.951 1883.9,-308.636L 1887.31,-308.515 Z " Height="8" HorizontalAlignment="Right" Width="15"  RenderTransformOrigin="0.5,0.5">
 
-                                        &lt;Path.RenderTransform&gt;
+                                        <Path.RenderTransform>
 
-                                            &lt;TransformGroup&gt;
+                                            <TransformGroup>
 
-                                                &lt;ScaleTransform/&gt;
+                                                <ScaleTransform/>
 
-                                                &lt;SkewTransform/&gt;
+                                                <SkewTransform/>
 
-                                                &lt;RotateTransform Angle="90"/&gt;
+                                                <RotateTransform Angle="90"/>
 
-                                                &lt;TranslateTransform X="0.957" Y="0.95699999999999985"/&gt;
+                                                <TranslateTransform X="0.957" Y="0.95699999999999985"/>
 
-                                            &lt;/TransformGroup&gt;
+                                            </TransformGroup>
 
-                                        &lt;/Path.RenderTransform&gt;
+                                        </Path.RenderTransform>
 
-                                    &lt;/Path&gt;
+                                    </Path>
 
-                                    &lt;Path x:Name="checkPath" Stretch="Fill" Fill="#FFFFFFFF" Data="F1 M 1881.12,-310.834C 1881.98,-310.786 1882.68,-309.533 1882.68,-307.995C 1882.68,-306.455 1881.98,-305.202 1881.12,-305.154L 1881.12,-310.834 Z M 1892.19,-308.355L 1898.69,-307.929L 1892.16,-307.632L 1892.19,-308.355 Z M 1888.15,-308.004C 1888.15,-310.601 1889.66,-312.704 1891.53,-312.704L 1891.54,-303.305C 1889.66,-303.305 1888.15,-305.409 1888.15,-308.004 Z M 1891.05,-303.881L 1891.05,-305.309C 1890.78,-305.305 1889.24,-305.293 1889.01,-305.864C 1889.01,-305.864 1889.05,-304.26 1891.05,-303.881 Z M 1883.27,-309.581L 1887.72,-309.723C 1887.52,-309.161 1887.4,-308.564 1887.4,-307.933C 1887.4,-307.33 1887.52,-306.762 1887.69,-306.223L 1883.25,-306.364C 1883.42,-306.843 1883.51,-307.397 1883.51,-307.995C 1883.51,-308.573 1883.43,-309.111 1883.27,-309.581 Z M 1887.31,-306.598C 1887.31,-306.598 1887.5,-306.817 1887.19,-306.897L 1884.06,-306.994C 1884.06,-306.994 1883.7,-307.036 1883.9,-306.72L 1887.31,-306.598 Z " Height="8" HorizontalAlignment="Right"  Width="15"  RenderTransformOrigin="0.5,0.5"&gt;
+                                    <Path x:Name="checkPath" Stretch="Fill" Fill="#FFFFFFFF" Data="F1 M 1881.12,-310.834C 1881.98,-310.786 1882.68,-309.533 1882.68,-307.995C 1882.68,-306.455 1881.98,-305.202 1881.12,-305.154L 1881.12,-310.834 Z M 1892.19,-308.355L 1898.69,-307.929L 1892.16,-307.632L 1892.19,-308.355 Z M 1888.15,-308.004C 1888.15,-310.601 1889.66,-312.704 1891.53,-312.704L 1891.54,-303.305C 1889.66,-303.305 1888.15,-305.409 1888.15,-308.004 Z M 1891.05,-303.881L 1891.05,-305.309C 1890.78,-305.305 1889.24,-305.293 1889.01,-305.864C 1889.01,-305.864 1889.05,-304.26 1891.05,-303.881 Z M 1883.27,-309.581L 1887.72,-309.723C 1887.52,-309.161 1887.4,-308.564 1887.4,-307.933C 1887.4,-307.33 1887.52,-306.762 1887.69,-306.223L 1883.25,-306.364C 1883.42,-306.843 1883.51,-307.397 1883.51,-307.995C 1883.51,-308.573 1883.43,-309.111 1883.27,-309.581 Z M 1887.31,-306.598C 1887.31,-306.598 1887.5,-306.817 1887.19,-306.897L 1884.06,-306.994C 1884.06,-306.994 1883.7,-307.036 1883.9,-306.72L 1887.31,-306.598 Z " Height="8" HorizontalAlignment="Right"  Width="15"  RenderTransformOrigin="0.5,0.5">
 
-                                        &lt;Path.RenderTransform&gt;
+                                        <Path.RenderTransform>
 
-                                            &lt;TransformGroup&gt;
+                                            <TransformGroup>
 
-                                                &lt;ScaleTransform/&gt;
+                                                <ScaleTransform/>
 
-                                                &lt;SkewTransform/&gt;
+                                                <SkewTransform/>
 
-                                                &lt;RotateTransform Angle="90"/&gt;
+                                                <RotateTransform Angle="90"/>
 
-                                                &lt;TranslateTransform X="-0.958" Y="-0.95799999999999985"/&gt;
+                                                <TranslateTransform X="-0.958" Y="-0.95799999999999985"/>
 
-                                            &lt;/TransformGroup&gt;
+                                            </TransformGroup>
 
-                                        &lt;/Path.RenderTransform&gt;
+                                        </Path.RenderTransform>
 
-                                    &lt;/Path&gt;
+                                    </Path>
 
-                                &lt;/Canvas&gt;
+                                </Canvas>
 
-                                &lt;Border.RenderTransform&gt;
+                                <Border.RenderTransform>
 
-                                    &lt;TransformGroup&gt;
+                                    <TransformGroup>
 
-                                        &lt;ScaleTransform/&gt;
+                                        <ScaleTransform/>
 
-                                        &lt;SkewTransform/&gt;
+                                        <SkewTransform/>
 
-                                        &lt;RotateTransform Angle="90"/&gt;
+                                        <RotateTransform Angle="90"/>
 
-                                        &lt;TranslateTransform/&gt;
+                                        <TranslateTransform/>
 
-                                    &lt;/TransformGroup&gt;
+                                    </TransformGroup>
 
-                                &lt;/Border.RenderTransform&gt;
+                                </Border.RenderTransform>
 
-                            &lt;/Border&gt;
+                            </Border>
 
-                        &lt;/Grid&gt;
+                        </Grid>
 
-                    &lt;/Border&gt;
+                    </Border>
 
-                &lt;/Grid&gt;
+                </Grid>
 
-            &lt;/Border&gt;
+            </Border>
 
-        &lt;/ControlTemplate&gt;
+        </ControlTemplate>
 
 
 
@@ -734,45 +734,45 @@ MenuButtonTemplate
 
 
 
-&lt;ControlTemplate x:Key="menubuttontemplate" TargetType="ToggleButton"&gt;
+<ControlTemplate x:Key="menubuttontemplate" TargetType="ToggleButton">
 
-            &lt;Border  Height="18" Width="20" CornerRadius="0,0,0,3" BorderBrush="#FF094161" BorderThickness="2,0,0,2"&gt;
+            <Border  Height="18" Width="20" CornerRadius="0,0,0,3" BorderBrush="#FF094161" BorderThickness="2,0,0,2">
 
-                &lt;Border.Background&gt;
+                <Border.Background>
 
-                    &lt;LinearGradientBrush StartPoint="0.5,0.978679" EndPoint="0.5,0.0213225"&gt;
+                    <LinearGradientBrush StartPoint="0.5,0.978679" EndPoint="0.5,0.0213225">
 
-                        &lt;GradientStop Color="#FF5DECF4" Offset="0"/&gt;
+                        <GradientStop Color="#FF5DECF4" Offset="0"/>
 
-                        &lt;GradientStop Color="#FF032649" Offset="0.499975"/&gt;
+                        <GradientStop Color="#FF032649" Offset="0.499975"/>
 
-                        &lt;GradientStop Color="#FF0C5777" Offset="0.500025"/&gt;
+                        <GradientStop Color="#FF0C5777" Offset="0.500025"/>
 
-                    &lt;/LinearGradientBrush&gt;
+                    </LinearGradientBrush>
 
-                &lt;/Border.Background&gt;
+                </Border.Background>
 
 
 
-                &lt;Grid Height="20" Width="16" &gt;
+                <Grid Height="20" Width="16" >
 
-                    &lt;Border&gt;
+                    <Border>
 
-                        &lt;Canvas Margin="3,6"&gt;
+                        <Canvas Margin="3,6">
 
-                            &lt;Path x:Name="Path_Copy17" Stretch="Fill" Fill="#FF000000" Data="F1 M 1842.1,-286.934L 1844.1,-282.141L 1846.1,-277.347L 1848.11,-282.141L 1850.11,-286.934L 1846.1,-286.934L 1842.1,-286.934 Z " Height="6"  Margin="0,-2" Width="9" /&gt;
+                            <Path x:Name="Path_Copy17" Stretch="Fill" Fill="#FF000000" Data="F1 M 1842.1,-286.934L 1844.1,-282.141L 1846.1,-277.347L 1848.11,-282.141L 1850.11,-286.934L 1846.1,-286.934L 1842.1,-286.934 Z " Height="6"  Margin="0,-2" Width="9" />
 
-                            &lt;Path x:Name="menuPath" Stretch="Fill" Fill="#FFFFFFFF" Data="F1 M 1842.1,-285.093L 1844.1,-280.301L 1846.1,-275.507L 1848.11,-280.301L 1850.11,-285.093L 1846.1,-285.093L 1842.1,-285.093 Z " Height="6"  Width="9" /&gt;
+                            <Path x:Name="menuPath" Stretch="Fill" Fill="#FFFFFFFF" Data="F1 M 1842.1,-285.093L 1844.1,-280.301L 1846.1,-275.507L 1848.11,-280.301L 1850.11,-285.093L 1846.1,-285.093L 1842.1,-285.093 Z " Height="6"  Width="9" />
 
-                        &lt;/Canvas&gt;
+                        </Canvas>
 
-                    &lt;/Border&gt;
+                    </Border>
 
-                &lt;/Grid&gt;
+                </Grid>
 
-            &lt;/Border&gt;
+            </Border>
 
-        &lt;/ControlTemplate&gt;
+        </ControlTemplate>
 
 
 
@@ -784,57 +784,57 @@ CloseButtonTemplate
 
 
 
-&lt;ControlTemplate x:Key="closebuttontemplate" TargetType="ToggleButton"&gt;
+<ControlTemplate x:Key="closebuttontemplate" TargetType="ToggleButton">
 
-            &lt;Border Height="18" Width="20" CornerRadius="0,0,3,0" BorderBrush="#FF094161" BorderThickness="0,0,2,2" Margin="0,-2,0,0" &gt;
+            <Border Height="18" Width="20" CornerRadius="0,0,3,0" BorderBrush="#FF094161" BorderThickness="0,0,2,2" Margin="0,-2,0,0" >
 
-                &lt;Border.Background&gt;
+                <Border.Background>
 
-                    &lt;LinearGradientBrush StartPoint="0.5,0.978679" EndPoint="0.5,0.0213225"&gt;
+                    <LinearGradientBrush StartPoint="0.5,0.978679" EndPoint="0.5,0.0213225">
 
-                        &lt;GradientStop Color="#FF5DECF4" Offset="0"/&gt;
+                        <GradientStop Color="#FF5DECF4" Offset="0"/>
 
-                        &lt;GradientStop Color="#FF032649" Offset="0.499975"/&gt;
+                        <GradientStop Color="#FF032649" Offset="0.499975"/>
 
-                        &lt;GradientStop Color="#FF0C5777" Offset="0.500025"/&gt;
+                        <GradientStop Color="#FF0C5777" Offset="0.500025"/>
 
-                    &lt;/LinearGradientBrush&gt;
+                    </LinearGradientBrush>
 
-                &lt;/Border.Background&gt;
-
-
-
-                &lt;Grid Height="20" Width="18"&gt;
-
-                    &lt;Border &gt;
+                </Border.Background>
 
 
 
-                        &lt;Grid&gt;
+                <Grid Height="20" Width="18">
+
+                    <Border >
 
 
 
-                            &lt;Border x:Name="brdBack" Width="15" Height="15" Margin="0,0,1,1" &gt;
+                        <Grid>
 
-                                &lt;Canvas Margin="2,1"&gt;
 
-                                    &lt;Path x:Name="Path_Copy23" Stretch="Fill" Fill="#FF000000" Data="F1 M 1916.11,-287.252L 1911.05,-283.689L 1906,-287.252L 1909.56,-282.2L 1906,-277.147L 1911.05,-280.71L 1916.11,-277.147L 1912.54,-282.2L 1916.11,-287.252 Z " Height="10.104" Width="10.103" Margin="0,-2" /&gt;
 
-                                    &lt;Path x:Name="closePath" Stretch="Fill" Fill="#FFFFFFFF" Data="F1 M 1916.11,-275.231L 1911.05,-278.795L 1906,-275.231L 1909.56,-280.284L 1906,-285.336L 1911.05,-281.773L 1916.11,-285.336L 1912.54,-280.284L 1916.11,-275.231 Z " Height="10.106" HorizontalAlignment="Right" Width="10.103" /&gt;
+                            <Border x:Name="brdBack" Width="15" Height="15" Margin="0,0,1,1" >
 
-                                &lt;/Canvas&gt;
+                                <Canvas Margin="2,1">
 
-                            &lt;/Border&gt;
+                                    <Path x:Name="Path_Copy23" Stretch="Fill" Fill="#FF000000" Data="F1 M 1916.11,-287.252L 1911.05,-283.689L 1906,-287.252L 1909.56,-282.2L 1906,-277.147L 1911.05,-280.71L 1916.11,-277.147L 1912.54,-282.2L 1916.11,-287.252 Z " Height="10.104" Width="10.103" Margin="0,-2" />
 
-                        &lt;/Grid&gt;
+                                    <Path x:Name="closePath" Stretch="Fill" Fill="#FFFFFFFF" Data="F1 M 1916.11,-275.231L 1911.05,-278.795L 1906,-275.231L 1909.56,-280.284L 1906,-285.336L 1911.05,-281.773L 1916.11,-285.336L 1912.54,-280.284L 1916.11,-275.231 Z " Height="10.106" HorizontalAlignment="Right" Width="10.103" />
 
-                    &lt;/Border&gt;
+                                </Canvas>
 
-                &lt;/Grid&gt;
+                            </Border>
 
-            &lt;/Border&gt;
+                        </Grid>
 
-&lt;/ControlTemplate&gt;
+                    </Border>
+
+                </Grid>
+
+            </Border>
+
+</ControlTemplate>
 
 
 
@@ -846,59 +846,59 @@ The following properties have been applied to customize the Dock Header.
 
 
 
-&lt;syncfusion:DockingManager Name="DockingManager"  FloatWindowBorderBrush="#FF094161" HeaderBorderBrush="#FF094161"  DockFill="True" CloseButtonTemplate="{StaticResource closebuttontemplate}" MenuButtonTemplate="{StaticResource menubuttontemplate}"  AwlButtonTemplate="{StaticResource awltemplate}" Loaded="DockingManager_Loaded"  &gt;
+<syncfusion:DockingManager Name="DockingManager"  FloatWindowBorderBrush="#FF094161" HeaderBorderBrush="#FF094161"  DockFill="True" CloseButtonTemplate="{StaticResource closebuttontemplate}" MenuButtonTemplate="{StaticResource menubuttontemplate}"  AwlButtonTemplate="{StaticResource awltemplate}" Loaded="DockingManager_Loaded"  >
 
 
 
-            &lt;syncfusion:DockingManager.FloatWindowHeaderBackground&gt;
+            <syncfusion:DockingManager.FloatWindowHeaderBackground>
 
-                &lt;LinearGradientBrush StartPoint="0.5,0.1683" EndPoint="0.5,1.12171"&gt;
+                <LinearGradientBrush StartPoint="0.5,0.1683" EndPoint="0.5,1.12171">
 
-                    &lt;GradientStop Color="#FFECF2FA" Offset="0"/&gt;
+                    <GradientStop Color="#FFECF2FA" Offset="0"/>
 
-                    &lt;GradientStop Color="#FF9FBDE3" Offset="1"/&gt;
+                    <GradientStop Color="#FF9FBDE3" Offset="1"/>
 
-                &lt;/LinearGradientBrush&gt;
+                </LinearGradientBrush>
 
-            &lt;/syncfusion:DockingManager.FloatWindowHeaderBackground&gt;
-
-
-
-            &lt;syncfusion:DockingManager.TabItemsBackground&gt;
-
-                &lt;LinearGradientBrush StartPoint="0.478193,0.98499" EndPoint="0.478193,0.0150044"&gt;
-
-                    &lt;GradientStop Color="#FF4BC2D0" Offset="0"/&gt;
-
-                    &lt;GradientStop Color="#FF032649" Offset="0.478"/&gt;
-
-                &lt;/LinearGradientBrush&gt;
-
-            &lt;/syncfusion:DockingManager.TabItemsBackground&gt;
+            </syncfusion:DockingManager.FloatWindowHeaderBackground>
 
 
 
-            &lt;syncfusion:DockingManager.HeaderBackground&gt;
+            <syncfusion:DockingManager.TabItemsBackground>
 
-                &lt;LinearGradientBrush StartPoint="0.5,0.1683" EndPoint="0.5,1.12171"&gt;
+                <LinearGradientBrush StartPoint="0.478193,0.98499" EndPoint="0.478193,0.0150044">
 
-                    &lt;GradientStop Color="#FFECF2FA" Offset="0"/&gt;
+                    <GradientStop Color="#FF4BC2D0" Offset="0"/>
 
-                    &lt;GradientStop Color="#FF9FBDE3" Offset="1"/&gt;
+                    <GradientStop Color="#FF032649" Offset="0.478"/>
 
-                &lt;/LinearGradientBrush&gt;
+                </LinearGradientBrush>
 
-            &lt;/syncfusion:DockingManager.HeaderBackground&gt;
-
-
-
-            &lt;Grid/&gt;
-
-&lt;/syncfusion:DockingManager&gt;
+            </syncfusion:DockingManager.TabItemsBackground>
 
 
 
-{ ![C:/Users/Hemanth/Desktop/Documentation/Images/Templating.jpg](Styles-and-Templates_images/Styles-and-Templates_img10.jpeg) | markdownify }
+            <syncfusion:DockingManager.HeaderBackground>
+
+                <LinearGradientBrush StartPoint="0.5,0.1683" EndPoint="0.5,1.12171">
+
+                    <GradientStop Color="#FFECF2FA" Offset="0"/>
+
+                    <GradientStop Color="#FF9FBDE3" Offset="1"/>
+
+                </LinearGradientBrush>
+
+            </syncfusion:DockingManager.HeaderBackground>
+
+
+
+            <Grid/>
+
+</syncfusion:DockingManager>
+
+
+
+{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/Templating.jpg](Styles-and-Templates_images/Styles-and-Templates_img10.jpeg)' | markdownify }}
 {:.image }
 
 

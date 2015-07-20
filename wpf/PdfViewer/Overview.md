@@ -17,7 +17,7 @@ Use Case Scenario
 
 You can embed the PDF viewer within the .NET application using this feature. The PDF Viewer can also be used as a stand-alone application.
 
-{ ![C:/Users/Suresh/Desktop/WPF UG/Figure 1 PDF Viewer.png](Overview_images/Overview_img1.png) | markdownify }
+{{ '![C:/Users/Suresh/Desktop/WPF UG/Figure 1 PDF Viewer.png](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -67,11 +67,11 @@ Release Notes</td><td>
 <tr>
 <td>
 User Guide (this document)</td><td>
-Online{ [http://help.syncfusion.com/](http://help.syncfusion.com/resources) | markdownify } (Navigate to the PDF Viewer for WPF User Guide.)> {{ '_Note: Click Download as PDF to access a PDF version._' | markdownify }}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
+Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/resources)' | markdownify }} (Navigate to the PDF Viewer for WPF User Guide.)> {{{ ''_Note: Click Download as PDF to access a PDF version._'' | markdownify }}}Installed DocumentationDashboard -> Documentation -> Installed Documentation. </td></tr>
 <tr>
 <td>
 Class Reference</td><td>
-Online{ [http://help.syncfusion.com/](http://help.syncfusion.com/resources) | markdownify }cr (Navigate to the Reporting WPF User Guide. Select {{ '_PDF Viewer_' | markdownify }}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
+Online{{ '[http://help.syncfusion.com/](http://help.syncfusion.com/resources)' | markdownify }}cr (Navigate to the Reporting WPF User Guide. Select {{{ ''_PDF Viewer_'' | markdownify }}}, and then click the Class Reference link found in the upper right section of the page.)Installed DocumentationDashboard -> Documentation -> Installed Documentation.</td></tr>
 </table>
 
 

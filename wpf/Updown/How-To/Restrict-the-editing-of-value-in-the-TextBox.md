@@ -13,8 +13,8 @@ You can restrict the editing of value in the TextBox by setting the AllowEdit pr
 
  [XAML]
 
-&lt;syncfusion:UpDown Name="upDown" AllowEdit="false"&gt;
- &lt;/ syncfusion:UpDown&gt;
+<syncfusion:UpDown Name="upDown" AllowEdit="false">
+ </ syncfusion:UpDown>
 
 
 

@@ -17,29 +17,29 @@ To display KeyTips for Ribbon Backstage
 
 [XAML]
 
-&lt;syncfusion:Backstage x:Name="RibbonBackStage" syncfusion:Ribbon.KeyTip="B"&gt;
+<syncfusion:Backstage x:Name="RibbonBackStage" syncfusion:Ribbon.KeyTip="B">
 
 
 
- &lt;syncfusion:BackStageCommandButton Header="Save" syncfusion:Ribbon.KeyTip="S"   Command="Save"/&gt;
+ <syncfusion:BackStageCommandButton Header="Save" syncfusion:Ribbon.KeyTip="S"   Command="Save"/>
 
- &lt;syncfusion:BackStageCommandButton Header="SaveAs" syncfusion:Ribbon.KeyTip="A" Command="SaveAs"/&gt; 
-
-
-
- &lt;syncfusion:BackstageTabItem syncfusion:Ribbon.KeyTip="I" Header="Info"/&gt;                      
-
- &lt;syncfusion:BackstageTabItem syncfusion:Ribbon.KeyTip="R" Header="Recent"/&gt;
+ <syncfusion:BackStageCommandButton Header="SaveAs" syncfusion:Ribbon.KeyTip="A" Command="SaveAs"/> 
 
 
 
-&lt;/syncfusion:Backstage&gt;
+ <syncfusion:BackstageTabItem syncfusion:Ribbon.KeyTip="I" Header="Info"/>                      
+
+ <syncfusion:BackstageTabItem syncfusion:Ribbon.KeyTip="R" Header="Recent"/>
+
+
+
+</syncfusion:Backstage>
 
 
 
 
 
-{ ![](KeyTips-for-Ribbon-Backstage_images/KeyTips-for-Ribbon-Backstage_img1.png) | markdownify }
+{{ '![](KeyTips-for-Ribbon-Backstage_images/KeyTips-for-Ribbon-Backstage_img1.png)' | markdownify }}
 {:.image }
 
 

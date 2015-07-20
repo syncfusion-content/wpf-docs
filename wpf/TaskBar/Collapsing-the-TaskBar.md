@@ -21,47 +21,47 @@ Use the following code snippet to expand or collapse the TaskBar.
 
 
 
-&lt;!-- Adding TaskBar that have collapsed TaskBarItem --&gt;
+<!-- Adding TaskBar that have collapsed TaskBarItem -->
 
-&lt;syncfusion:TaskBar Name="taskBar" GroupMargin="5" syncfusion:TaskBar.IsOpened="False"&gt;
-
-
-
-    &lt;!-- Adding TaskBarItem --&gt;
-
-    &lt;syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1"&gt;
+<syncfusion:TaskBar Name="taskBar" GroupMargin="5" syncfusion:TaskBar.IsOpened="False">
 
 
 
-        &lt;!-- Adding content to TaskBarItem --&gt;
+    <!-- Adding TaskBarItem -->
 
-        &lt;StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch"&gt;
-
-            <TextBlock TextWrapping="Wrap">This taskbar provides an UI similar to that of Windows XP.&lt;/TextBlock&gt;
-
-        &lt;/StackPanel&gt;
-
-    &lt;/syncfusion:TaskBarItem&gt;
+    <syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1">
 
 
 
-    &lt;!-- Adding TaskBarItem --&gt;
+        <!-- Adding content to TaskBarItem -->
 
-    &lt;syncfusion:TaskBarItem Name="taskBarItem2" Header="TaskBarItem2"&gt;
+        <StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch">
+
+            <TextBlock TextWrapping="Wrap">This taskbar provides an UI similar to that of Windows XP.</TextBlock>
+
+        </StackPanel>
+
+    </syncfusion:TaskBarItem>
 
 
 
-        &lt;!-- Adding content to TaskBarItem --&gt;
+    <!-- Adding TaskBarItem -->
 
-        &lt;StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch"&gt;
+    <syncfusion:TaskBarItem Name="taskBarItem2" Header="TaskBarItem2">
 
-            <TextBlock TextWrapping="Wrap">Specify and customize the group margin.&lt;/TextBlock&gt;
 
-        &lt;/StackPanel&gt;
 
-    &lt;/syncfusion:TaskBarItem&gt;
+        <!-- Adding content to TaskBarItem -->
 
-&lt;/syncfusion:TaskBar&gt;
+        <StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch">
+
+            <TextBlock TextWrapping="Wrap">Specify and customize the group margin.</TextBlock>
+
+        </StackPanel>
+
+    </syncfusion:TaskBarItem>
+
+</syncfusion:TaskBar>
 
 
 
@@ -77,7 +77,7 @@ TaskBar.SetIsOpened(taskBar, false);
 
 
 
-{ ![](Collapsing-the-TaskBar_images/Collapsing-the-TaskBar_img1.jpeg) | markdownify }
+{{ '![](Collapsing-the-TaskBar_images/Collapsing-the-TaskBar_img1.jpeg)' | markdownify }}
 {:.image }
 
 

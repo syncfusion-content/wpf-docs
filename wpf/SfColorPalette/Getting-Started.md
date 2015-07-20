@@ -19,15 +19,15 @@ The following code example shows how to create SfColorPalette from XAML and code
 
 
 
-&lt;Page xmlns:Media="clr-namespace:Syncfusion.Windows.Controls.Media;assembly=Syncfusion.SfColorPalette.Wpf"&gt;
+<Page xmlns:Media="clr-namespace:Syncfusion.Windows.Controls.Media;assembly=Syncfusion.SfColorPalette.Wpf">
 
-     &lt;Grid&gt;
+     <Grid>
 
-         &lt;Media:SfColorPalette/&gt;
+         <Media:SfColorPalette/>
 
-     &lt;/Grid&gt;	
+     </Grid>	
 
-&lt;/Page&gt;
+</Page>
 
 
 
@@ -43,11 +43,11 @@ SfColorPalette colorPalette = new SfColorPalette();
 
 ## Visual Structure
 
-{ ![C:/Users/labuser/Desktop/b.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![C:/Users/labuser/Desktop/b.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 

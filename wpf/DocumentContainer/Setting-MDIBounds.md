@@ -32,23 +32,23 @@ To set the MDI Bounds, use the following code snippet.
 
 
 
-&lt;!-- Adding Document Container --&gt;
+<!-- Adding Document Container -->
 
-&lt;syncfusion:DocumentContainer Name="DocContainer"  Mode="MDI"&gt;
+<syncfusion:DocumentContainer Name="DocContainer"  Mode="MDI">
 
-&lt;FlowDocumentScrollViewer syncfusion:DocumentContainer.MDIBounds="0,0,200,300"&gt;
+<FlowDocumentScrollViewer syncfusion:DocumentContainer.MDIBounds="0,0,200,300">
 
-&lt;/FlowDocumentScrollViewer&gt;
-
-…....
+</FlowDocumentScrollViewer>
 
 …....
 
-&lt;/syncfusion:DocumentContainer&gt;
+…....
+
+</syncfusion:DocumentContainer>
 
 
 
-{ ![](Setting-MDIBounds_images/Setting-MDIBounds_img1.jpeg) | markdownify }
+{{ '![](Setting-MDIBounds_images/Setting-MDIBounds_img1.jpeg)' | markdownify }}
 {:.image }
 
 

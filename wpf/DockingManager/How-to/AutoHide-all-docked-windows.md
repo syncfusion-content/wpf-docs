@@ -16,7 +16,7 @@ You can AutoHide all Docked windows by using the AutoHideAllDockWindow() method.
 <table>
 <tr>
 <td>
-[XAML]  &lt;syncfusion:DockingManager Name="DockingManager"&gt;    &lt;Grid/&gt;    &lt;Grid/&gt;    &lt;Grid/&gt;    &lt;Grid/&gt;  &lt;/syncfusion:DockingManager&gt;</td></tr>
+[XAML]  <syncfusion:DockingManager Name="DockingManager">    <Grid/>    <Grid/>    <Grid/>    <Grid/>  </syncfusion:DockingManager></td></tr>
 <tr>
 <td>
 [C#]DockingManager.AutoHideAllDockWindow();</td></tr>

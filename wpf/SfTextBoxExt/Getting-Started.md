@@ -22,7 +22,7 @@ The following code sample shows how to create the TextBoxExt from code-behind an
 
 Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
 
-    &lt;Grid&gt; 
+    <Grid> 
 
            <editors:SfTextBoxExt HorizontalAlignment="Center" 
 
@@ -32,9 +32,9 @@ Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syn
 
                             Text="Hello! World..."/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Page&gt;
+</Page>
 
 
 

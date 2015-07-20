@@ -23,14 +23,14 @@ To set the CheckBoxAlignment to Right, use the following code.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding CheckListBox with CheckBoxAlignment --&gt;&lt;syncfusion:CheckListBox Name="checkListBox" CheckBoxAlignment="Right"&gt;    &lt;!-- Adding CheckListBox items --&gt;    &lt;syncfusion:CheckListBoxItem Content="Mexico"/&gt;    &lt;syncfusion:CheckListBoxItem Content="Canada" /&gt;    &lt;syncfusion:CheckListBoxItem Content="Bermuda" /&gt;    &lt;syncfusion:CheckListBoxItem Content="Belize" /&gt;    &lt;syncfusion:CheckListBoxItem Content="Panama" /&gt;&lt;/syncfusion:CheckListBox&gt;</td></tr>
+[XAML]<!-- Adding CheckListBox with CheckBoxAlignment --><syncfusion:CheckListBox Name="checkListBox" CheckBoxAlignment="Right">    <!-- Adding CheckListBox items -->    <syncfusion:CheckListBoxItem Content="Mexico"/>    <syncfusion:CheckListBoxItem Content="Canada" />    <syncfusion:CheckListBoxItem Content="Bermuda" />    <syncfusion:CheckListBoxItem Content="Belize" />    <syncfusion:CheckListBoxItem Content="Panama" /></syncfusion:CheckListBox></td></tr>
 <tr>
 <td>
 [C#]// Align the Check Box.checkListBox.CheckBoxAlignment = CheckBoxAlignment.Right;</td></tr>
 </table>
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60,14 +60,14 @@ To set the FlowDirection to RightToLeft, use the below code:
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding CheckListBox with FlowDirection as right  --&gt;&lt;syncfusion:CheckListBox Name="checkListBox" FlowDirection="RightToLeft"&gt;    &lt;!-- Adding CheckListBox items --&gt;    &lt;syncfusion:CheckListBoxItem Content="Mexico"/&gt;    &lt;syncfusion:CheckListBoxItem Content="Canada" /&gt;    &lt;syncfusion:CheckListBoxItem Content="Bermuda" /&gt;    &lt;syncfusion:CheckListBoxItem Content="Belize" /&gt;    &lt;syncfusion:CheckListBoxItem Content="Panama" /&gt;&lt;/syncfusion:CheckListBox&gt;</td></tr>
+[XAML]<!-- Adding CheckListBox with FlowDirection as right  --><syncfusion:CheckListBox Name="checkListBox" FlowDirection="RightToLeft">    <!-- Adding CheckListBox items -->    <syncfusion:CheckListBoxItem Content="Mexico"/>    <syncfusion:CheckListBoxItem Content="Canada" />    <syncfusion:CheckListBoxItem Content="Bermuda" />    <syncfusion:CheckListBoxItem Content="Belize" />    <syncfusion:CheckListBoxItem Content="Panama" /></syncfusion:CheckListBox></td></tr>
 <tr>
 <td>
 [C#]// Set FlowDirection property as RightToLeft.checkListBox.FlowDirection = FlowDirection.RightToLeft;  </td></tr>
 </table>
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -94,7 +94,7 @@ For setting Blend style, refer the below code snippet.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding CheckListBox with Visual Style as Blend --&gt;&lt;syncfusion:CheckListBox Name="checkListBox" syncfusion:SkinStorage.VisualStyle="Blend"&gt;    &lt;!-- Adding CheckListBox items --&gt;    &lt;syncfusion:CheckListBoxItem Content="Mexico"/&gt;    &lt;syncfusion:CheckListBoxItem Content="Canada" /&gt;    &lt;syncfusion:CheckListBoxItem Content="Bermuda" /&gt;    &lt;syncfusion:CheckListBoxItem Content="Belize" /&gt;    &lt;syncfusion:CheckListBoxItem Content="Panama" /&gt;&lt;/syncfusion:CheckListBox&gt;</td></tr>
+[XAML]<!-- Adding CheckListBox with Visual Style as Blend --><syncfusion:CheckListBox Name="checkListBox" syncfusion:SkinStorage.VisualStyle="Blend">    <!-- Adding CheckListBox items -->    <syncfusion:CheckListBoxItem Content="Mexico"/>    <syncfusion:CheckListBoxItem Content="Canada" />    <syncfusion:CheckListBoxItem Content="Bermuda" />    <syncfusion:CheckListBoxItem Content="Belize" />    <syncfusion:CheckListBoxItem Content="Panama" /></syncfusion:CheckListBox></td></tr>
 <tr>
 <td>
 [C#]// Setting the visual style as Blend.SkinStorage.SetVisualStyle(checkListBox, "Blend"); </td></tr>
@@ -103,35 +103,35 @@ For setting Blend style, refer the below code snippet.
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img4.jpeg) | markdownify }
-{:.image }
-
-
-
-
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img5.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img4.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img6.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img5.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img7.png) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img6.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img8.png) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img7.png)' | markdownify }}
+{:.image }
+
+
+
+
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img8.png)' | markdownify }}
 {:.image }
 
 

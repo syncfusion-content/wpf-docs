@@ -11,7 +11,7 @@ documentation: ug
 
 TextElement is used to render texts using custom fonts, size and style in the page of the PDF document. You can also modify it to include hyperlinks, ordered and unordered list, html styled text, and so on. These are explained in the following topics.
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_52.jpg](TextElement_images/TextElement_img1.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_52.jpg](TextElement_images/TextElement_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -167,7 +167,7 @@ PdfFont font = new PdfStandardFont(PdfFontFamily.Courier, 14);
 
 //HtmlString.
 
-string longText = "<font color='#0000F8'>Essential PDF</font> is a &lt;u&gt;&lt;i&gt;.NET</i>&lt;/u&gt; " +
+string longText = "<font color='#0000F8'>Essential PDF</font> is a <u><i>.NET</i></u> " +
 
 "library with the capability to produce Adobe PDF files ";
 
@@ -223,7 +223,7 @@ Dim font As PdfFont = New PdfStandardFont(PdfFontFamily.Courier, 14)
 
 'HtmlString.
 
-Dim longText As String = "<font color='#0000F8'>Essential PDF</font> is a &lt;u&gt;&lt;i&gt;.NET</i>&lt;/u&gt; " & "library with the capability to produce Adobe PDF files "
+Dim longText As String = "<font color='#0000F8'>Essential PDF</font> is a <u><i>.NET</i></u> " & "library with the capability to produce Adobe PDF files "
 
 'Renders HtmlText.
 
@@ -929,7 +929,7 @@ doc.Save("Output.pdf")
 
 
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_53.jpg](TextElement_images/TextElement_img2.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_53.jpg](TextElement_images/TextElement_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -991,7 +991,7 @@ Creates marker with number style, font, finalizer, and the specified symbol that
 <tr>
 <td>
 PdfOrderedMarker (PdfNumberStyle style, string delimiter, string finalizer, PdfFont font):</td><td>
-Creates marker with the number style, font, finalizer, delimiter, and the specified symbol located between numbers. It is used when the MarkerHierarchy property of the PdfOrderedList class is set {{ '_True_' | markdownify }}. Default value for delimiter is '.'.</td></tr>
+Creates marker with the number style, font, finalizer, delimiter, and the specified symbol located between numbers. It is used when the MarkerHierarchy property of the PdfOrderedList class is set {{{ ''_True_'' | markdownify }}}. Default value for delimiter is '.'.</td></tr>
 </table>
 
 
@@ -1357,7 +1357,7 @@ doc.Close(True)
 
 
 
-{ ![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_54.jpg](TextElement_images/TextElement_img3.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_54.jpg](TextElement_images/TextElement_img3.jpeg)' | markdownify }}
 {:.image }
 
 

@@ -20,7 +20,7 @@ ValueChanged – The event occurs when the Value property of the CurrencyTextBox
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:CurrencyTextBox ValueChanged="CurrencyTextBox_ValueChanged"/&gt;</td></tr>
+XAML<syncfusion:CurrencyTextBox ValueChanged="CurrencyTextBox_ValueChanged"/></td></tr>
 <tr>
 <td>
 C#CurrencyTextBox currencyTextBox = new CurrencyTextBox();currencyTextBox.ValueChanged+=new PropertyChangedCallback(CurrencyTextBox_ValueChanged);</td></tr>
@@ -50,7 +50,7 @@ TextChanged – The event occurs when the Value property of the CurrencyTextBox 
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:CurrencyTextBox TextChanged="CurrencyTextBox_TextChanged"/&gt;</td></tr>
+XAML<syncfusion:CurrencyTextBox TextChanged="CurrencyTextBox_TextChanged"/></td></tr>
 <tr>
 <td>
 C#CurrencyTextBox currencyTextBox = new CurrencyTextBox();currencyTextBox.TextChanged += new TextChangedEventHandler(CurrencyTextBox_TextChanged);</td></tr>
@@ -82,7 +82,7 @@ CultureChanged – The event occurs when the Culture property of the CurrencyTex
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:CurrencyTextBox CultureChanged="CurrencyTextBox_CultureChanged"/&gt;</td></tr>
+XAML<syncfusion:CurrencyTextBox CultureChanged="CurrencyTextBox_CultureChanged"/></td></tr>
 <tr>
 <td>
 C#CurrencyTextBox currencyTextBox = new CurrencyTextBox();currencyTextBox.CultureChanged+=new                            PropertyChangedCallback(CurrencyTextBox_CultureChanged);</td></tr>
@@ -114,7 +114,7 @@ MaxValueChanged – The event occurs when the MaxValue property of the CurrencyT
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:CurrencyTextBox MaxValueChanged="CurrencyTextBox_MaxValueChanged"/&gt;</td></tr>
+XAML<syncfusion:CurrencyTextBox MaxValueChanged="CurrencyTextBox_MaxValueChanged"/></td></tr>
 <tr>
 <td>
 C#CurrencyTextBox currencyTextBox = new CurrencyTextBox();currencyTextBox.MaxValueChanged+=new                     PropertyChangedCallback(CurrencyTextBox_MaxValueChanged);</td></tr>
@@ -146,7 +146,7 @@ MinValueChanged – The event occurs when the MinValue property of the CurrencyT
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:CurrencyTextBox MinValueChanged="CurrencyTextBox_MinValueChanged"/&gt;</td></tr>
+XAML<syncfusion:CurrencyTextBox MinValueChanged="CurrencyTextBox_MinValueChanged"/></td></tr>
 <tr>
 <td>
 C#CurrencyTextBox currencyTextBox = new CurrencyTextBox();currencyTextBox.MinValueChanged+=new                      PropertyChangedCallback(CurrencyTextBox_MinValueChanged);</td></tr>
@@ -178,7 +178,7 @@ SelectionChanged – The event occurs when the selection in the textbox is chang
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:CurrencyTextBox SelectionChanged="CurrencyTextBox_SelectionChanged"/&gt;</td></tr>
+XAML<syncfusion:CurrencyTextBox SelectionChanged="CurrencyTextBox_SelectionChanged"/></td></tr>
 <tr>
 <td>
 C#CurrencyTextBox currencyTextBox = new CurrencyTextBox();currencyTextBox.SelectionChanged+=new                         RoutedEventHandler(CurrencyTextBox_SelectionChanged);</td></tr>

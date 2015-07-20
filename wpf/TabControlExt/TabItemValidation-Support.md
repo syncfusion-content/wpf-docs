@@ -19,15 +19,15 @@ The following code illustrates the same.
 
 
 
-&lt;syncfusion:TabControlExt  SelectedItemChangedEvent="SelectedItemChanged" &gt;
+<syncfusion:TabControlExt  SelectedItemChangedEvent="SelectedItemChanged" >
 
-    &lt;Grid syncfusion:TabControlExt.Header="Tab1" /&gt;
+    <Grid syncfusion:TabControlExt.Header="Tab1" />
 
-        &lt;Grid syncfusion:TabControlExt.Header="Tab2" /&gt;
+        <Grid syncfusion:TabControlExt.Header="Tab2" />
 
-            &lt;Grid syncfusion:TabControlExt.Header="Tab3" /&gt;
+            <Grid syncfusion:TabControlExt.Header="Tab3" />
 
-&lt;/syncfusion:TabControlExt&gt;
+</syncfusion:TabControlExt>
 
 
 

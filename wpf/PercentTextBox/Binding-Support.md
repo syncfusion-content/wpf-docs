@@ -9,7 +9,7 @@ documentation: ug
 
 # Binding Support
 
-Data binding is the process of establishing a connection between the application UI and business logic. PercentTextBox supports unidirectional (source -> target or target &lt;- source) or bidirectional (source &lt;-&gt; target). You can bind the data to the PercentTextBox through the Value property.
+Data binding is the process of establishing a connection between the application UI and business logic. PercentTextBox supports unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind the data to the PercentTextBox through the Value property.
 
 The following example shows a simple binding between the PercentValue of the PercentTextBox and another PercentTextBox PercentValue that reflects the typed value:
 
@@ -17,9 +17,9 @@ XAML
 
 
 
-&lt;StackPanel&gt;
+<StackPanel>
 
-    &lt;syncfusion:PercentTextBox x:Name="percentTextBox1" Width="150" Margin="10"/&gt;
+    <syncfusion:PercentTextBox x:Name="percentTextBox1" Width="150" Margin="10"/>
 
     <syncfusion:PercentTextBox x:Name="percentTextBox2" Width="150" Margin="10"  
 
@@ -27,11 +27,11 @@ XAML
 
                      Path=PercentValue,Mode=TwoWay}"/>
 
-&lt;/StackPanel&gt;
+</StackPanel>
 
 
 
-{ ![](Binding-Support_images/Binding-Support_img1.png) | markdownify }
+{{ '![](Binding-Support_images/Binding-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -41,17 +41,17 @@ XAML
 
 
 
-&lt;StackPanel DataContext="{StaticResource myCustomer}"&gt;
+<StackPanel DataContext="{StaticResource myCustomer}">
 
-    &lt;TextBox Text="{Binding FirstName}"/&gt;
+    <TextBox Text="{Binding FirstName}"/>
 
-    &lt;TextBox Text ="{Binding LastName}"/&gt;
+    <TextBox Text ="{Binding LastName}"/>
 
-    &lt;syncfusion:PercentTextBox PercentValue="{Binding Phone}"/&gt;
+    <syncfusion:PercentTextBox PercentValue="{Binding Phone}"/>
 
-    &lt;syncfusion:PercentTextBox PercentValue="{Binding Income}"/&gt;
+    <syncfusion:PercentTextBox PercentValue="{Binding Income}"/>
 
-&lt;/StackPanel&gt;
+</StackPanel>
 
 
 
@@ -61,15 +61,15 @@ XAML
 
 
 
-&lt;StackPanel&gt;
+<StackPanel>
 
-    &lt;StackPanel.Resources&gt;
+    <StackPanel.Resources>
 
-        &lt;c:StringToDoubleConverter x:Key="stringToDoubleConverter"/&gt;
+        <c:StringToDoubleConverter x:Key="stringToDoubleConverter"/>
 
-    &lt;/StackPanel.Resources&gt;
+    </StackPanel.Resources>
 
-    &lt;syncfusion:PercentTextBox x:Name="percentTextBox" Width="150" Margin="10"/&gt;
+    <syncfusion:PercentTextBox x:Name="percentTextBox" Width="150" Margin="10"/>
 
     <TextBox x:Name="textBox" Width="150" Margin="10" Text="{Binding 
 
@@ -77,11 +77,11 @@ XAML
 
         Converter={StaticResource stringToDoubleConverter}}"/>
 
-&lt;/StackPanel&gt;
+</StackPanel>
 
 
 
-{ ![](Binding-Support_images/Binding-Support_img2.png) | markdownify }
+{{ '![](Binding-Support_images/Binding-Support_img2.png)' | markdownify }}
 {:.image }
 
 

@@ -11,7 +11,7 @@ documentation: ug
 
 The progress bar for the HierarchyNavigator control can be displayed or removed.
 
-{ ![](Progress-Bar_images/Progress-Bar_img1.png) | markdownify }
+{{ '![](Progress-Bar_images/Progress-Bar_img1.png)' | markdownify }}
 {:.image }
 
 

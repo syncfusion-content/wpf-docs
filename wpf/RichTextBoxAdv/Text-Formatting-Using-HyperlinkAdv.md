@@ -100,7 +100,7 @@ HyperlinkAdv can be added directly to an application by using the following code
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext"&gt;            &lt;syncfusion:DocumentAdv&gt;                &lt;syncfusion:SectionAdv&gt;                    &lt;syncfusion:ParagraphAdv&gt;                        &lt;syncfusion:HyperlinkAdv Text="This is Hyperlink text"/&gt;                    &lt;/syncfusion:ParagraphAdv&gt;                &lt;/syncfusion:SectionAdv&gt;            &lt;/syncfusion:DocumentAdv&gt;        &lt;/syncfusion:RichTextBoxAdv&gt;</td></tr>
+[XAML]<syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            <syncfusion:DocumentAdv>                <syncfusion:SectionAdv>                    <syncfusion:ParagraphAdv>                        <syncfusion:HyperlinkAdv Text="This is Hyperlink text"/>                    </syncfusion:ParagraphAdv>                </syncfusion:SectionAdv>            </syncfusion:DocumentAdv>        </syncfusion:RichTextBoxAdv></td></tr>
 <tr>
 <td>
 [C#]            RichTextBoxAdv richtext = new RichTextBoxAdv();           DocumentAdv document = new DocumentAdv();           SectionAdv section = new SectionAdv();           ParagraphAdv paragraph = new ParagraphAdv();           HyperlinkAdv hyperlink = new HyperlinkAdv();           hyperlink.Text = "This is Hyperlink text";           paragraph.Inlines.Add(hyperlink);           section.Blocks.Add(paragraph);           document.Sections.Add(section);           richtext.Document = document;</td></tr>

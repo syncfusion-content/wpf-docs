@@ -49,11 +49,11 @@ Following code example illustrates the initialization of Chart with ChartArea,
 
 [XAML]
 
-&lt;syncfusion:Chart&gt;
+<syncfusion:Chart>
 
-&lt;syncfusion:ChartArea BorderBrush="Green"  BorderThickness="5" Background="Gray" SideBySideSeriesPlacement="True"  /&gt;
+<syncfusion:ChartArea BorderBrush="Green"  BorderThickness="5" Background="Gray" SideBySideSeriesPlacement="True"  />
 
-&lt;/syncfusion:Chart&gt;
+</syncfusion:Chart>
 
 
 
@@ -81,7 +81,7 @@ Following code example illustrates the initialization of SfChart that is equival
 
 [XAML]
 
-&lt;syncfusion:SfChart Header="ChartArea" AreaBackground="Red" AreaBorderBrush="Gray" AreaBorderThickness="5" SideBySideSeriesPlacement="True"  /&gt;
+<syncfusion:SfChart Header="ChartArea" AreaBackground="Red" AreaBorderBrush="Gray" AreaBorderThickness="5" SideBySideSeriesPlacement="True"  />
 
 [C#]
 
@@ -196,15 +196,15 @@ Chart
 
 [XAML]
 
-&lt;syncfusion:ChartArea&gt;
+<syncfusion:ChartArea>
 
-  &lt;syncfusion:ChartArea.Legend&gt;
+  <syncfusion:ChartArea.Legend>
 
-                    &lt;syncfusion:ChartLegend syncfusion:Chart.Dock="Floating" Orientation="Vertical"  OffsetX="200" OffsetY="200" ItemTemplate="{StaticResourcelegend}" CheckBoxVisibility="Collapsed"/&gt;
+                    <syncfusion:ChartLegend syncfusion:Chart.Dock="Floating" Orientation="Vertical"  OffsetX="200" OffsetY="200" ItemTemplate="{StaticResourcelegend}" CheckBoxVisibility="Collapsed"/>
 
-  &lt;/syncfusion:ChartArea.Legend&gt;
+  </syncfusion:ChartArea.Legend>
 
-&lt;/syncfusion:ChartArea&gt;
+</syncfusion:ChartArea>
 
 [C#]
 
@@ -230,15 +230,15 @@ SfChart
 
 [XAML]
 
-&lt;syncfusion:SfChart&gt;
+<syncfusion:SfChart>
 
-&lt;syncfusion:SfChart.Legend&gt;
+<syncfusion:SfChart.Legend>
 
-                &lt;syncfusion:ChartLegend  ItemTemplate="{StaticResource legend}"CheckBoxVisibility="Visible" LegendPosition="Outside"  Orientation="Vertical"OffsetY="200" OffsetX="200"   DockPosition="Floating"/&gt;
+                <syncfusion:ChartLegend  ItemTemplate="{StaticResource legend}"CheckBoxVisibility="Visible" LegendPosition="Outside"  Orientation="Vertical"OffsetY="200" OffsetX="200"   DockPosition="Floating"/>
 
-&lt;/syncfusion:SfChart.Legend&gt;
+</syncfusion:SfChart.Legend>
 
-&lt;/syncfusion:SfChart&gt;
+</syncfusion:SfChart>
 
 [C#]
 
@@ -341,21 +341,21 @@ The class design for Axis is different for both ChartArea and SfChart. In ChartA
 
 [XAML]
 
-&lt;syncfusion:ChartArea.PrimaryAxis&gt;
+<syncfusion:ChartArea.PrimaryAxis>
 
-&lt;syncfusion:ChartAxis  ValueType="DateTime"  /&gt;
+<syncfusion:ChartAxis  ValueType="DateTime"  />
 
-&lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+</syncfusion:ChartArea.PrimaryAxis>
 
 In SfChart, Axis can be an instance of NumericalAxis, DateTimeAxis, CategoryAxis, LogarithmicAxis, TimeSpanAxis or DateTimeCategoryAxis. Class name represents the type of data it can plot. For example, NumericalAxis can plot numeric values and DateTimeAxis can plot DateTime values. Following code example illustrates this,
 
 [XAML]
 
-&lt;syncfusion:SfChart.PrimaryAxis&gt;
+<syncfusion:SfChart.PrimaryAxis>
 
-&lt;syncfusion:DateTimeAxis Header="X-Axis"/&gt;
+<syncfusion:DateTimeAxis Header="X-Axis"/>
 
-&lt;/syncfusion:SfChart.PrimaryAxis&gt;
+</syncfusion:SfChart.PrimaryAxis>
 
 The following table compares the APIs,
 
@@ -520,9 +520,9 @@ Chart
 
 [XAML]
 
-&lt;chart:ChartArea&gt;
+<chart:ChartArea>
 
-&lt;chart:Chart.PrimaryAxis&gt;
+<chart:Chart.PrimaryAxis>
 
 <chart:ChartAxis  ValueType="DateTime"  IntersectAction="Hide" 
 
@@ -556,9 +556,9 @@ Chart
 
                   />
 
-&lt;/chart:Chart.PrimaryAxis&gt;
+</chart:Chart.PrimaryAxis>
 
-&lt;/chart:ChartArea&gt;
+</chart:ChartArea>
 
 
 
@@ -634,9 +634,9 @@ SfChart
 
 [XAML]
 
-&lt;sfchart:SfChart&gt;
+<sfchart:SfChart>
 
-&lt;sfchart:SfChart.PrimaryAxis&gt;
+<sfchart:SfChart.PrimaryAxis>
 
 <sfchart:DateTimeAxis Header="X-Axis" OpposedPosition="True" 
 
@@ -674,9 +674,9 @@ SfChart
 
                       />
 
-&lt;sfchart:SfChart.PrimaryAxis/&gt;
+<sfchart:SfChart.PrimaryAxis/>
 
-&lt;/sfchart:SfChart&gt;
+</sfchart:SfChart>
 
 
 
@@ -768,19 +768,19 @@ Chart
 
 [XAML]
 
-&lt;chart:ChartArea.GridLineStroke&gt;
+<chart:ChartArea.GridLineStroke>
 
-   &lt;Pen Brush="#c6c6c6" &gt;
+   <Pen Brush="#c6c6c6" >
 
-       &lt;Pen.DashStyle&gt;
+       <Pen.DashStyle>
 
-          &lt;DashStyle Dashes="1,3"/&gt;
+          <DashStyle Dashes="1,3"/>
 
-       &lt;/Pen.DashStyle&gt;
+       </Pen.DashStyle>
 
-   &lt;/Pen&gt;
+   </Pen>
 
-&lt;/chart:ChartArea.GridLineStroke&gt;
+</chart:ChartArea.GridLineStroke>
 
 
 
@@ -800,17 +800,17 @@ SfChart
 
 [XAML]
 
-&lt;sfchart:NumericalAxis.MajorGridLineStyle&gt;
+<sfchart:NumericalAxis.MajorGridLineStyle>
 
-        &lt;Style TargetType="Line"&gt;
+        <Style TargetType="Line">
 
-        &lt;Setter Property="StrokeDashArray" Value="1,3"&gt;&lt;/Setter&gt;
+        <Setter Property="StrokeDashArray" Value="1,3"></Setter>
 
-        &lt;Setter Property="Stroke" Value="#c6c6c6" /&gt;
+        <Setter Property="Stroke" Value="#c6c6c6" />
 
-        &lt;/Style&gt;
+        </Style>
 
-&lt;/sfchart:NumericalAxis.MajorGridLineStyle&gt;
+</sfchart:NumericalAxis.MajorGridLineStyle>
 
 
 
@@ -832,7 +832,7 @@ Chart
 
 [XAML]
 
-&lt;syncfusion:ChartArea&gt;
+<syncfusion:ChartArea>
 
 <syncfusion:ChartSeries Type="Line"  ShowToolTip="True" 
 
@@ -868,15 +868,15 @@ Chart
 
                    Label="LineSeries" >
 
-    &lt;syncfusion:ChartSeries.YAxis&gt;
+    <syncfusion:ChartSeries.YAxis>
 
-        &lt;syncfusion:ChartAxis IsAutoSetRange="False" Range="20,50"/&gt;
+        <syncfusion:ChartAxis IsAutoSetRange="False" Range="20,50"/>
 
-    &lt;/syncfusion:ChartSeries.YAxis&gt;
+    </syncfusion:ChartSeries.YAxis>
 
-&lt;/syncfusion:ChartSeries&gt;
+</syncfusion:ChartSeries>
 
-&lt;/syncfusion:ChartArea&gt;
+</syncfusion:ChartArea>
 
 
 
@@ -930,7 +930,7 @@ SfChart
 
 [XAML]
 
-&lt;syncfusion:SfChart&gt;
+<syncfusion:SfChart>
 
 
 
@@ -958,15 +958,15 @@ SfChart
 
                     >
 
-    &lt;syncfusion:LineSeries.YAxis&gt;
+    <syncfusion:LineSeries.YAxis>
 
-        &lt;syncfusion:NumericalAxis  Minimum="20" Maximum="50"/&gt;
+        <syncfusion:NumericalAxis  Minimum="20" Maximum="50"/>
 
-    &lt;/syncfusion:LineSeries.YAxis&gt;
+    </syncfusion:LineSeries.YAxis>
 
-&lt;/syncfusion:LineSeries&gt;
+</syncfusion:LineSeries>
 
-&lt;/syncfusion:SfChart&gt;
+</syncfusion:SfChart>
 
  [C#]
 
@@ -1165,9 +1165,9 @@ Chart
 
 [XAML]
 
-&lt;syncfusion:ChartSeries&gt;
+<syncfusion:ChartSeries>
 
-&lt;syncfusion:ChartSeries.ChartAdornmentInfo &gt;
+<syncfusion:ChartSeries.ChartAdornmentInfo >
 
 <syncfusion:ChartAdornmentInfo  SegmentLabelContent="YValue"
 
@@ -1183,9 +1183,9 @@ Chart
 
                             SymbolWidth="15" />
 
-&lt;syncfusion:ChartSeries.ChartAdornmentInfo /&gt;
+<syncfusion:ChartSeries.ChartAdornmentInfo />
 
-&lt;/syncfusion:ChartSeries&gt;
+</syncfusion:ChartSeries>
 
 [C#]
 
@@ -1221,9 +1221,9 @@ SfChart
 
 [XAML]
 
-&lt;syncfusion:LineSeries &gt;
+<syncfusion:LineSeries >
 
-&lt;syncfusion:LineSeries.ChartAdornmentInfo&gt;
+<syncfusion:LineSeries.ChartAdornmentInfo>
 
 <syncfusion:ChartAdornmentInfo  Symbol="Cross"
 
@@ -1245,9 +1245,9 @@ SfChart
 
                              />
 
-&lt;/syncfusion:LineSeries.ChartAdornmentInfo&gt;
+</syncfusion:LineSeries.ChartAdornmentInfo>
 
-&lt;/syncfusion:LineSeries &gt;
+</syncfusion:LineSeries >
 
 
 
@@ -1355,15 +1355,15 @@ Chart
 
 [XAML]
 
-&lt;syncfusion:ChartArea&gt;
+<syncfusion:ChartArea>
 
-&lt;syncfusion:ChartArea.InteractiveCursors&gt;
+<syncfusion:ChartArea.InteractiveCursors>
 
-                    &lt;syncfusion:InteractiveCursor VerticalLabelVisibility="Visible"HorizontalLabelVisibility="Visible" IsBindWithMouseMove="True"IsBindWithSegment="False" OffsetX="100" OffsetY="100"/&gt;
+                    <syncfusion:InteractiveCursor VerticalLabelVisibility="Visible"HorizontalLabelVisibility="Visible" IsBindWithMouseMove="True"IsBindWithSegment="False" OffsetX="100" OffsetY="100"/>
 
-                &lt;/syncfusion:ChartArea.InteractiveCursors&gt;
+                </syncfusion:ChartArea.InteractiveCursors>
 
-&lt;/syncfusion:ChartArea&gt;
+</syncfusion:ChartArea>
 
 
 
@@ -1393,15 +1393,15 @@ SfChart
 
 [XAML]
 
-&lt;syncfusion:SfChart&gt;
+<syncfusion:SfChart>
 
-&lt;syncfusion:SfChart.Behaviors&gt;
+<syncfusion:SfChart.Behaviors>
 
-&lt;syncfusion:ChartCrossHairBehavior HorizontalAxisLabelAlignment="Center"VerticalAxisLabelAlignment="Center" /&gt;
+<syncfusion:ChartCrossHairBehavior HorizontalAxisLabelAlignment="Center"VerticalAxisLabelAlignment="Center" />
 
-&lt;syncfusion:SfChart.Behaviors/&gt;
+<syncfusion:SfChart.Behaviors/>
 
-&lt;/syncfusion:SfChart&gt;
+</syncfusion:SfChart>
 
 [C#]
 
@@ -1425,7 +1425,7 @@ Chart
 
 [XAML]
 
-&lt;syncfusion:ChartArea EnableZoomOnScroll="True" ZoomAllAxes="True"chart:ChartZoomingToolkit.ZoomingToolkitVisibility="Visible"EnableMouseDragZooming="True" /&gt; 
+<syncfusion:ChartArea EnableZoomOnScroll="True" ZoomAllAxes="True"chart:ChartZoomingToolkit.ZoomingToolkitVisibility="Visible"EnableMouseDragZooming="True" /> 
 
 [C#]
 
@@ -1443,15 +1443,15 @@ SfChart
 
 [Xaml]
 
-&lt;syncfusion:SfChart&gt;
+<syncfusion:SfChart>
 
- &lt;syncfusion:SfChart.Behaviors&gt;
+ <syncfusion:SfChart.Behaviors>
 
-&lt;syncfusion:ChartZoomPanBehavior ZoomMode="XY" EnablePinchZooming="False"ZoomRelativeToCursor="False" EnableMouseWheelZooming="True"EnableSelectionZooming="False" EnablePanning="True" /&gt;
+<syncfusion:ChartZoomPanBehavior ZoomMode="XY" EnablePinchZooming="False"ZoomRelativeToCursor="False" EnableMouseWheelZooming="True"EnableSelectionZooming="False" EnablePanning="True" />
 
-&lt;syncfusion:SfChart.Behaviors/&gt;
+<syncfusion:SfChart.Behaviors/>
 
-&lt;/syncfusion:SfChart&gt;
+</syncfusion:SfChart>
 
 [C#]
 
@@ -1483,11 +1483,11 @@ Chart
 
 [XAML]
 
-&lt;syncfusion:ChartAxis.StripLines&gt;
+<syncfusion:ChartAxis.StripLines>
 
-&lt;syncfusion:ChartStripLine x:Name="strip" Start="40" IsSegmented="False"SegmentStartValue="20" SegmentEndValue="40" RepeatEvery="10" RepeatUntil="50"TextRotationAngle="30"  StartFromAxis="False" Width="5" IsPixelWidth="False"Interior="#b4e8f3" &gt;
+<syncfusion:ChartStripLine x:Name="strip" Start="40" IsSegmented="False"SegmentStartValue="20" SegmentEndValue="40" RepeatEvery="10" RepeatUntil="50"TextRotationAngle="30"  StartFromAxis="False" Width="5" IsPixelWidth="False"Interior="#b4e8f3" >
 
-&lt;syncfusion:ChartAxis.StripLines/&gt;
+<syncfusion:ChartAxis.StripLines/>
 
 [C#]
 
@@ -1527,11 +1527,11 @@ SfChart
 
 [XAML]
 
-&lt;syncfusion:NumericalAxis.StripLines&gt;
+<syncfusion:NumericalAxis.StripLines>
 
-&lt;syncfusion:ChartStripLine Start="40" LabelAngle="30" LabelHorizontalAlignment="Center"LabelVerticalAlignment="Center" RepeatEvery="10" RepeatUntil="50"IsSegmented="False" SegmentStartValue="20" SegmentEndValue="50" IsPixelWidth="True"   Width="5" Label="StripLine" Background="#b4e8f3" /&gt;
+<syncfusion:ChartStripLine Start="40" LabelAngle="30" LabelHorizontalAlignment="Center"LabelVerticalAlignment="Center" RepeatEvery="10" RepeatUntil="50"IsSegmented="False" SegmentStartValue="20" SegmentEndValue="50" IsPixelWidth="True"   Width="5" Label="StripLine" Background="#b4e8f3" />
 
-&lt;syncfusion:NumericalAxis.StripLines/&gt;
+<syncfusion:NumericalAxis.StripLines/>
 
 [C#]
 
@@ -1650,25 +1650,25 @@ Chart
 
 [XAML]
 
-&lt;syncfusion:ChartArea&gt;
+<syncfusion:ChartArea>
 
-&lt;syncfusion:ChartArea.Watermark&gt;
+<syncfusion:ChartArea.Watermark>
 
-                    &lt;VisualBrush Stretch="None" Opacity="0.5" AlignmentX="Center" AlignmentY="Center"&gt;
+                    <VisualBrush Stretch="None" Opacity="0.5" AlignmentX="Center" AlignmentY="Center">
 
-                        &lt;VisualBrush.Visual&gt;
+                        <VisualBrush.Visual>
 
-                            &lt;TextBlock  Text="Chart" FontSize="60"Foreground="Gray"&gt;
+                            <TextBlock  Text="Chart" FontSize="60"Foreground="Gray">
 
-                            &lt;/TextBlock&gt;
+                            </TextBlock>
 
-                        &lt;/VisualBrush.Visual&gt;
+                        </VisualBrush.Visual>
 
-                    &lt;/VisualBrush&gt;
+                    </VisualBrush>
 
-  &lt;/syncfusion:ChartArea.Watermark&gt;
+  </syncfusion:ChartArea.Watermark>
 
-&lt;/syncfusion:ChartArea&gt;
+</syncfusion:ChartArea>
 
 
 
@@ -1702,23 +1702,23 @@ SfChart
 
 [XAML]
 
-&lt;syncfusion:SfChart&gt;
+<syncfusion:SfChart>
 
-&lt;syncfusion:SfChart.Watermark&gt;
+<syncfusion:SfChart.Watermark>
 
-                &lt;syncfusion:Watermark Canvas.ZIndex="-1" HorizontalAlignment="Center"VerticalAlignment="Center"&gt;
+                <syncfusion:Watermark Canvas.ZIndex="-1" HorizontalAlignment="Center"VerticalAlignment="Center">
 
-                    &lt;syncfusion:Watermark.Content&gt;
+                    <syncfusion:Watermark.Content>
 
-                        &lt;TextBlock Text="SfChart" FontSize="60" Foreground="Gray"Opacity="0.5"&gt;&lt;/TextBlock&gt;
+                        <TextBlock Text="SfChart" FontSize="60" Foreground="Gray"Opacity="0.5"></TextBlock>
 
-                    &lt;/syncfusion:Watermark.Content&gt;
+                    </syncfusion:Watermark.Content>
 
-                &lt;/syncfusion:Watermark&gt;
+                </syncfusion:Watermark>
 
-&lt;/syncfusion:SfChart.Watermark&gt;
+</syncfusion:SfChart.Watermark>
 
-&lt;/syncfusion:SfChart&gt;
+</syncfusion:SfChart>
 
 [C#]
 
@@ -1754,11 +1754,11 @@ Chart having following Annotations
 
 [XAML]
 
-&lt;syncfusion:Chart.AnnotationLabels&gt;
+<syncfusion:Chart.AnnotationLabels>
 
-     &lt; syncfusion:ChartAnnotationLabel AnnotationShape="None" Template="{StaticResourcetemplateImage}"  Content="Text Annotation" OffsetX="500" OffsetY="100"IsAnnotationDragDrop="True" /&gt;
+     < syncfusion:ChartAnnotationLabel AnnotationShape="None" Template="{StaticResourcetemplateImage}"  Content="Text Annotation" OffsetX="500" OffsetY="100"IsAnnotationDragDrop="True" />
 
-&lt;/syncfusion:Chart.AnnotationLabels&gt;
+</syncfusion:Chart.AnnotationLabels>
 
 [C#]
 
@@ -1786,15 +1786,15 @@ chart.AnnotationLabels.Add(chartannotation);
 
 [XAML]
 
-&lt;syncfusion:ChartSeries.Annotations&gt;
+<syncfusion:ChartSeries.Annotations>
 
-   &lt;syncfusion:AnnotationsCollection &gt;
+   <syncfusion:AnnotationsCollection >
 
-        &lt;syncfusion:ChartSeriesAnnotation X="40702" Y="468"  AnnotationShape="Diamond"Stroke="Black"   Fill="Orange"/&gt;
+        <syncfusion:ChartSeriesAnnotation X="40702" Y="468"  AnnotationShape="Diamond"Stroke="Black"   Fill="Orange"/>
 
-   &lt;/syncfusion:AnnotationsCollection&gt;
+   </syncfusion:AnnotationsCollection>
 
-&lt;/syncfusion:ChartSeries.Annotations&gt;
+</syncfusion:ChartSeries.Annotations>
 
 
 
@@ -1832,13 +1832,13 @@ SfChart having the following Annotations
 
 [XAML]
 
-&lt;syncfusion:SfChart.Annotations&gt;              
+<syncfusion:SfChart.Annotations>              
 
- &lt; syncfusion:ImageAnnotation ImageSource="Annotation.png"VerticalTextAlignment="Center" Foreground="White" CoordinateUnit="Axis" X1="30"X2="75" Y1="520" Y2="560"&gt;                  
+ < syncfusion:ImageAnnotation ImageSource="Annotation.png"VerticalTextAlignment="Center" Foreground="White" CoordinateUnit="Axis" X1="30"X2="75" Y1="520" Y2="560">                  
 
- &lt;/syncfusion:ImageAnnotation&gt;
+ </syncfusion:ImageAnnotation>
 
-&lt;syncfusion:SfChart.Annotations/&gt;
+<syncfusion:SfChart.Annotations/>
 
 [C#]
 
@@ -1870,11 +1870,11 @@ chart.Annotations.Add(imgAnnotation);
 
 [XAML]
 
-&lt;syncfusion:SfChart.Annotations&gt;              
+<syncfusion:SfChart.Annotations>              
 
- &lt; syncfusion:LineAnnotation X1="3" Y1="34" X2="5" Y2="38" CanResize="True"CanDrag="True"&gt;&lt;/ syncfusion:LineAnnotation&gt;   
+ < syncfusion:LineAnnotation X1="3" Y1="34" X2="5" Y2="38" CanResize="True"CanDrag="True"></ syncfusion:LineAnnotation>   
 
-&lt;syncfusion:SfChart.Annotations/&gt;
+<syncfusion:SfChart.Annotations/>
 
 [C#]
 
@@ -1906,11 +1906,11 @@ chart.Annotations.Add(lineAnnotation);
 
 [XAML]
 
-&lt;syncfusion:SfChart.Annotations&gt;              
+<syncfusion:SfChart.Annotations>              
 
- &lt;syncfusion:EllipseAnnotation X1="1" Y1="36" X2="2" Y2="42" CanResize="True"CanDrag="True"&gt;&lt;/ syncfusion:EllipseAnnotation&gt;     
+ <syncfusion:EllipseAnnotation X1="1" Y1="36" X2="2" Y2="42" CanResize="True"CanDrag="True"></ syncfusion:EllipseAnnotation>     
 
-&lt;syncfusion:SfChart.Annotations/&gt;
+<syncfusion:SfChart.Annotations/>
 
 [C#]
 
@@ -1942,11 +1942,11 @@ chart.Annotations.Add(ellipseAnnotation);
 
 [XAML]
 
-&lt;syncfusion:SfChart.Annotations&gt;              
+<syncfusion:SfChart.Annotations>              
 
- &lt;syncfusion:RectangleAnnotation X1="4" Y1="40" X2="6" Y2="42" CanResize="True"CanDrag="True"&gt;&lt;/syncfusion:RectangleAnnotation&gt;           
+ <syncfusion:RectangleAnnotation X1="4" Y1="40" X2="6" Y2="42" CanResize="True"CanDrag="True"></syncfusion:RectangleAnnotation>           
 
-&lt;syncfusion:SfChart.Annotations/&gt;
+<syncfusion:SfChart.Annotations/>
 
 [C#]
 
@@ -1978,13 +1978,13 @@ chart.Annotations.Add(rectAnnotation);
 
 [XAML]
 
-&lt;syncfusion:SfChart.Annotations&gt;              
+<syncfusion:SfChart.Annotations>              
 
- &lt;syncfusion:VerticalLineAnnotation CanDrag="True" ShowAxisLabel="True"CanResize="True" CoordinateUnit="Axis" X1="3"&gt;               
+ <syncfusion:VerticalLineAnnotation CanDrag="True" ShowAxisLabel="True"CanResize="True" CoordinateUnit="Axis" X1="3">               
 
-&lt;/syncfusion:VerticalLineAnnotation&gt;                
+</syncfusion:VerticalLineAnnotation>                
 
-&lt;syncfusion:SfChart.Annotations/&gt;
+<syncfusion:SfChart.Annotations/>
 
 
 
@@ -2010,13 +2010,13 @@ chart.Annotations.Add(verAnnotation);
 
 [XAML]
 
-&lt;syncfusion:SfChart.Annotations&gt;              
+<syncfusion:SfChart.Annotations>              
 
- &lt;syncfusion:HorizontalLineAnnotation CanDrag="True" CanResize="True"CoordinateUnit="Axis" ShowAxisLabel="True"  Y1="40" &gt;                
+ <syncfusion:HorizontalLineAnnotation CanDrag="True" CanResize="True"CoordinateUnit="Axis" ShowAxisLabel="True"  Y1="40" >                
 
-&lt;/syncfusion:HorizontalLineAnnotation&gt;
+</syncfusion:HorizontalLineAnnotation>
 
-&lt;syncfusion:SfChart.Annotations/&gt;
+<syncfusion:SfChart.Annotations/>
 
 [C#]
 
@@ -2040,11 +2040,11 @@ chart.Annotations.Add(horAnnotation);
 
 [XAML]
 
-&lt;syncfusion:SfChart.Annotations&gt;              
+<syncfusion:SfChart.Annotations>              
 
-&lt;syncfusion:TextAnnotation X1="0" Y1="150" Text="Release 1" ContentTemplate="{StaticResource textTemplate}" ToolTipContent="Volume 1 Released!!!"ToolTipTemplate="{StaticResource tooltip}" VerticalAlignment="Top" HorizontalAlignment="Left"  ToolTipPlacement="Top"ShowToolTip="True"&gt;                &lt;/syncfusion:TextAnnotation&gt;
+<syncfusion:TextAnnotation X1="0" Y1="150" Text="Release 1" ContentTemplate="{StaticResource textTemplate}" ToolTipContent="Volume 1 Released!!!"ToolTipTemplate="{StaticResource tooltip}" VerticalAlignment="Top" HorizontalAlignment="Left"  ToolTipPlacement="Top"ShowToolTip="True">                </syncfusion:TextAnnotation>
 
-&lt;syncfusion:SfChart.Annotations/&gt;
+<syncfusion:SfChart.Annotations/>
 
 [C#]
 
@@ -2139,11 +2139,11 @@ Chart
 
 [XAML]
 
-&lt;syncfusion:ChartSeries.Indicators&gt;
+<syncfusion:ChartSeries.Indicators>
 
-                        &lt;syncfusion:IndicatorCollection&gt;
+                        <syncfusion:IndicatorCollection>
 
-                            &lt;syncfusion:IndicatorCollection.Items&gt;
+                            <syncfusion:IndicatorCollection.Items>
 
                                   <syncfusion:ChartTechnicalIndicator 
 
@@ -2151,13 +2151,13 @@ IndicatorType="BollingerBands"
 
 chart:ChartBollingerBand.LowerLineColor ="Blue" chart:ChartBollingerBand.UpperLineColor="Red" chart:ChartBollingerBand.SignalLineColor ="Green" chart:ChartBollingerBand.BollingerMovingAverage="50" >
 
-                                 &lt;/syncfusion:ChartTechnicalIndicator&gt;
+                                 </syncfusion:ChartTechnicalIndicator>
 
-                               &lt;/syncfusion:IndicatorCollection.Items&gt;
+                               </syncfusion:IndicatorCollection.Items>
 
-                             &lt;/syncfusion:IndicatorCollection&gt;
+                             </syncfusion:IndicatorCollection>
 
-                          &lt;/syncfusion:ChartSeries.Indicators&gt;
+                          </syncfusion:ChartSeries.Indicators>
 
 
 
@@ -2191,11 +2191,11 @@ SfChart
 
 [XAML]
 
-&lt;syncfusion:SfChart.TechnicalIndicators&gt;
+<syncfusion:SfChart.TechnicalIndicators>
 
-            &lt;syncfusion:BollingerBandIndicator UpperLineColor="Brown"LowerLineColor="DarkBlue" Period="1" XBindingPath="Year" ItemsSource="{BindingCompanyDetails}" High="High" Open="Open" Close="Close" Low="Low"/&gt;
+            <syncfusion:BollingerBandIndicator UpperLineColor="Brown"LowerLineColor="DarkBlue" Period="1" XBindingPath="Year" ItemsSource="{BindingCompanyDetails}" High="High" Open="Open" Close="Close" Low="Low"/>
 
-        &lt;/syncfusion:SfChart.TechnicalIndicators&gt;
+        </syncfusion:SfChart.TechnicalIndicators>
 
 [C#]
 
@@ -2239,57 +2239,57 @@ SyncChartAreas
 
 [XAML]
 
-  &lt;syncfusion:Chart&gt;
+  <syncfusion:Chart>
 
-                &lt;syncfusion:SyncChartAreas &gt;
+                <syncfusion:SyncChartAreas >
 
-                    &lt;syncfusion:SyncChartAreas.PrimaryAxis&gt;
+                    <syncfusion:SyncChartAreas.PrimaryAxis>
 
-                        &lt;syncfusion:ChartAxis  ValueType="DateTime"LabelDateTimeFormat="MM/dd/yy" Header="Date"&gt;
+                        <syncfusion:ChartAxis  ValueType="DateTime"LabelDateTimeFormat="MM/dd/yy" Header="Date">
 
-                        &lt;/syncfusion:ChartAxis&gt;
+                        </syncfusion:ChartAxis>
 
-                    &lt;/syncfusion:SyncChartAreas.PrimaryAxis&gt;
+                    </syncfusion:SyncChartAreas.PrimaryAxis>
 
-                    &lt;syncfusion:SyncChartAreas.Areas&gt;
+                    <syncfusion:SyncChartAreas.Areas>
 
-                        &lt;syncfusion:ChartArea x:Name="Area1" &gt;
+                        <syncfusion:ChartArea x:Name="Area1" >
 
-                            &lt;syncfusion:ChartArea.SecondaryAxis &gt;
+                            <syncfusion:ChartArea.SecondaryAxis >
 
-                                &lt;syncfusion:ChartAxis EdgeLabelsDrawingMode="Shift" Interval="50" Header="Prices"&gt;
+                                <syncfusion:ChartAxis EdgeLabelsDrawingMode="Shift" Interval="50" Header="Prices">
 
-                                &lt;/syncfusion:ChartAxis&gt;
+                                </syncfusion:ChartAxis>
 
-                            &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+                            </syncfusion:ChartArea.SecondaryAxis>
 
-                            &lt;syncfusion:ChartSeries Type="Line" DataSource="{Bindingdatalist}" BindingPathX="Time" BindingPathsY="Low"  &gt;
+                            <syncfusion:ChartSeries Type="Line" DataSource="{Bindingdatalist}" BindingPathX="Time" BindingPathsY="Low"  >
 
-                            &lt;/syncfusion:ChartSeries&gt;
+                            </syncfusion:ChartSeries>
 
-                        &lt;/syncfusion:ChartArea&gt;
+                        </syncfusion:ChartArea>
 
-                        &lt;syncfusion:ChartArea x:Name="Area2" &gt;
+                        <syncfusion:ChartArea x:Name="Area2" >
 
-                            &lt;syncfusion:ChartArea.SecondaryAxis &gt;
+                            <syncfusion:ChartArea.SecondaryAxis >
 
-                                &lt;syncfusion:ChartAxis EdgeLabelsDrawingMode="Shift" Interval="50" Header="Prices"&gt;
+                                <syncfusion:ChartAxis EdgeLabelsDrawingMode="Shift" Interval="50" Header="Prices">
 
-                                &lt;/syncfusion:ChartAxis&gt;
+                                </syncfusion:ChartAxis>
 
-                            &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+                            </syncfusion:ChartArea.SecondaryAxis>
 
-                            &lt;syncfusion:ChartSeries Type="Line" DataSource="{Bindingdatalist}" BindingPathX="Time" BindingPathsY="High" &gt;
+                            <syncfusion:ChartSeries Type="Line" DataSource="{Bindingdatalist}" BindingPathX="Time" BindingPathsY="High" >
 
-                            &lt;/syncfusion:ChartSeries&gt;
+                            </syncfusion:ChartSeries>
 
-                        &lt;/syncfusion:ChartArea&gt;
+                        </syncfusion:ChartArea>
 
-                    &lt;/syncfusion:SyncChartAreas.Areas&gt;
+                    </syncfusion:SyncChartAreas.Areas>
 
-                &lt;/syncfusion:SyncChartAreas&gt;
+                </syncfusion:SyncChartAreas>
 
-            &lt;/syncfusion:Chart&gt;
+            </syncfusion:Chart>
 
 
 
@@ -2355,43 +2355,43 @@ SfChart
 
 Column Row Definition
 
-&lt;syncfusion:SfChart&gt;
+<syncfusion:SfChart>
 
-            &lt;syncfusion:SfChart.RowDefinitions&gt;
+            <syncfusion:SfChart.RowDefinitions>
 
-                &lt;syncfusion:ChartRowDefinition/&gt;
+                <syncfusion:ChartRowDefinition/>
 
-                &lt;syncfusion:ChartRowDefinition/&gt;
+                <syncfusion:ChartRowDefinition/>
 
-            &lt;/syncfusion:SfChart.RowDefinitions&gt;
+            </syncfusion:SfChart.RowDefinitions>
 
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:CategoryAxis ShowGridLines="False" FontSize="20"Header="Company Name"/&gt;
+                <syncfusion:CategoryAxis ShowGridLines="False" FontSize="20"Header="Company Name"/>
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
 
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.SecondaryAxis>
 
-                &lt;syncfusion:NumericalAxis syncfusion:ChartBase.Row="0"  Interval="40"FontSize="20" Header="Gross Revenue (cr.)"/&gt;
+                <syncfusion:NumericalAxis syncfusion:ChartBase.Row="0"  Interval="40"FontSize="20" Header="Gross Revenue (cr.)"/>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+            </syncfusion:SfChart.SecondaryAxis>
 
-            &lt;syncfusion:LineSeries  Stroke="Red" StrokeThickness="3"XBindingPath="CompanyName" YBindingPath="CompanyTurnOver1" ItemsSource="{BindingCompanyDetails}"/&gt;
+            <syncfusion:LineSeries  Stroke="Red" StrokeThickness="3"XBindingPath="CompanyName" YBindingPath="CompanyTurnOver1" ItemsSource="{BindingCompanyDetails}"/>
 
-            &lt;syncfusion:LineSeries    Stroke="Green" StrokeThickness="3"XBindingPath="CompanyName" YBindingPath="CompanyTurnOver2" ItemsSource="{BindingCompanyDetails}"&gt;
+            <syncfusion:LineSeries    Stroke="Green" StrokeThickness="3"XBindingPath="CompanyName" YBindingPath="CompanyTurnOver2" ItemsSource="{BindingCompanyDetails}">
 
-                &lt;syncfusion:LineSeries.YAxis&gt;
+                <syncfusion:LineSeries.YAxis>
 
-                    &lt;syncfusion:NumericalAxis syncfusion:ChartBase.Row="1"Header="Additional Axis" PlotOffset="30"/&gt;
+                    <syncfusion:NumericalAxis syncfusion:ChartBase.Row="1"Header="Additional Axis" PlotOffset="30"/>
 
-                &lt;/syncfusion:LineSeries.YAxis&gt;
+                </syncfusion:LineSeries.YAxis>
 
-            &lt;/syncfusion:LineSeries&gt;
+            </syncfusion:LineSeries>
 
-&lt;/syncfusion:SfChart&gt;
+</syncfusion:SfChart>
 
 [C#]
 
@@ -2505,7 +2505,7 @@ Chart
 
 [XAML]
 
-&lt;syncfusion:Chart x:Name="chart"/&gt;
+<syncfusion:Chart x:Name="chart"/>
 
 <Button Content="Print"  Command="{x:Static ApplicationCommands.Print}"
 

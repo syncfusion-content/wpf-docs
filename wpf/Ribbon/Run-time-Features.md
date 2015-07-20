@@ -31,14 +31,14 @@ You can set the tooltip for the entire Split Button by using the ToolTip propert
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:SplitButton Label="Paste" SizeForm="Large" &gt;&lt;syncfusion:SplitButton.ToolTip&gt;&lt;syncfusion:ScreenTip Description="Split Button Tooltip" VerticalOffset="32"&gt;&lt;TextBlock Text="I am a Tool Tip" /&gt;&lt;/syncfusion:ScreenTip&gt;&lt;/syncfusion:SplitButton.ToolTip&gt;&lt;/syncfusion:SplitButton&gt;</td></tr>
+[XAML]<syncfusion:SplitButton Label="Paste" SizeForm="Large" ><syncfusion:SplitButton.ToolTip><syncfusion:ScreenTip Description="Split Button Tooltip" VerticalOffset="32"><TextBlock Text="I am a Tool Tip" /></syncfusion:ScreenTip></syncfusion:SplitButton.ToolTip></syncfusion:SplitButton></td></tr>
 <tr>
 <td>
 [C#]ScreenTip screentip = new ScreenTip();TextBlock text = new TextBlock();text.Text = "I am a Tool Tip";screentip.Content = text;splitbutton.ToolTip = screentip; splitbutton = new SplitButton();splitbutton.Label = "Split 1";SplitButton splitbutton 1= new SplitButton();splitbutton1.Label = "Split 2";</td></tr>
 </table>
 
 
-{ ![](Run-time-Features_images/Run-time-Features_img1.jpeg) | markdownify }
+{{ '![](Run-time-Features_images/Run-time-Features_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -55,20 +55,20 @@ The ToolTip property is used to set the tooltip for the upper half of the Split 
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:SplitButton Label="Paste" SizeForm="Large" &gt;&lt;syncfusion:SplitButton.ToolTip&gt;&lt;syncfusion:ScreenTip Description="Split Button Tooltip" VerticalOffset="32"&gt;&lt;TextBlock Text="Top Tool Tip" /&gt;&lt;/syncfusion:ScreenTip&gt;&lt;/syncfusion:SplitButton.ToolTip&gt;&lt;syncfusion:SplitButton.ToggleButtonToolTip&gt;&lt;syncfusion:ScreenTip Description="Toggle Button Tooltip" VerticalOffset="29"&gt;&lt;TextBlock Text="Bottom Tool Tip" /&gt;&lt;/syncfusion:ScreenTip&gt;&lt;/syncfusion:SplitButton.ToggleButtonToolTip&gt;&lt;/syncfusion:SplitButton&gt;</td></tr>
+[XAML]<syncfusion:SplitButton Label="Paste" SizeForm="Large" ><syncfusion:SplitButton.ToolTip><syncfusion:ScreenTip Description="Split Button Tooltip" VerticalOffset="32"><TextBlock Text="Top Tool Tip" /></syncfusion:ScreenTip></syncfusion:SplitButton.ToolTip><syncfusion:SplitButton.ToggleButtonToolTip><syncfusion:ScreenTip Description="Toggle Button Tooltip" VerticalOffset="29"><TextBlock Text="Bottom Tool Tip" /></syncfusion:ScreenTip></syncfusion:SplitButton.ToggleButtonToolTip></syncfusion:SplitButton></td></tr>
 <tr>
 <td>
 [C#]ScreenTip screentip = new ScreenTip();TextBlock text = new TextBlock();text.Text = "Top Tool Tip";screentip.Content = text;// Setting the tooltip for the upper half of the split button.splitbutton.ToolTip = screentip;ScreenTip screentip1 = new ScreenTip();TextBlock text1 = new TextBlock();text1.Text = "Bottom Tool Tip";screentip1.Content = text;// Setting the tooltip for the drop-down in the lower half of the split button.splitbutton.ToggleButtonToolTip = screentip1; screentip = new ScreenTip();TextBlock text = new TextBlock();text.Text = "I am a Tool Tip";screentip.Content = text;splitbutton.ToolTip = screentip; splitbutton = new SplitButton();splitbutton.Label = "Split 1";SplitButton splitbutton 1= new SplitButton();splitbutton1.Label = "Split 2";</td></tr>
 </table>
 
 
-{ ![](Run-time-Features_images/Run-time-Features_img2.jpeg) | markdownify }
+{{ '![](Run-time-Features_images/Run-time-Features_img2.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Run-time-Features_images/Run-time-Features_img3.jpeg) | markdownify }
+{{ '![](Run-time-Features_images/Run-time-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -91,14 +91,14 @@ Insert HelpText in ScreenTip, by using the following code.
 <table>
 <tr>
 <td>
-[Xaml] &lt;syncfusion:ScreenTip Name="screenTip" HelpText="Help Text" Description="Insert Chart" ImageSource="{StaticResource Shapes}"&gt;    &lt;TextBlock Width="150" TextWrapping="Wrap" Text="Insert a Chart illustration" /&gt;&lt;/syncfusion:ScreenTip&gt;</td></tr>
+[Xaml] <syncfusion:ScreenTip Name="screenTip" HelpText="Help Text" Description="Insert Chart" ImageSource="{StaticResource Shapes}">    <TextBlock Width="150" TextWrapping="Wrap" Text="Insert a Chart illustration" /></syncfusion:ScreenTip></td></tr>
 <tr>
 <td colspan = "2">
 [C#]screenTip.HelpText = "Display Help Text";</td></tr>
 </table>
 
 
-{ ![](Run-time-Features_images/Run-time-Features_img4.jpeg) | markdownify }
+{{ '![](Run-time-Features_images/Run-time-Features_img4.jpeg)' | markdownify }}
 {:.image }
 
 

@@ -24,49 +24,49 @@ Set the orientation using the code given below:
 
 
 
-&lt;!-- Adding TabSplitter --&gt;
+<!-- Adding TabSplitter -->
 
-&lt;syncfusion:TabSplitter Name="tabsplitter"&gt;
-
-
-
-    &lt;!-- Adding TabSplitterItem --&gt;
-
-    &lt;syncfusion:TabSplitterItem Header="Window1.xaml" Orientation="Vertical" Name="tabSplitterItem1"&gt;
+<syncfusion:TabSplitter Name="tabsplitter">
 
 
 
-        &lt;!-- Adding TopPanelItems --&gt;
+    <!-- Adding TabSplitterItem -->
 
-        &lt;syncfusion:TabSplitterItem.TopPanelItems&gt; 
-
-            &lt;!-- Adding SplitterPage --&gt;
-
-            &lt;syncfusion:SplitterPage Name="splitterPage1" Header="XAML"&gt;
-
-            &lt;/syncfusion:SplitterPage&gt;
-
-        &lt;/syncfusion:TabSplitterItem.TopPanelItems&gt;
+    <syncfusion:TabSplitterItem Header="Window1.xaml" Orientation="Vertical" Name="tabSplitterItem1">
 
 
 
-        &lt;!-- Adding BottomPanelItems --&gt;
+        <!-- Adding TopPanelItems -->
 
-        &lt;syncfusion:TabSplitterItem.BottomPanelItems&gt; 
+        <syncfusion:TabSplitterItem.TopPanelItems> 
 
-            &lt;!-- Adding SplitterPage --&gt;
+            <!-- Adding SplitterPage -->
 
-            &lt;syncfusion:SplitterPage Name="splitterPage2" Header="Design"&gt;
+            <syncfusion:SplitterPage Name="splitterPage1" Header="XAML">
 
-            &lt;/syncfusion:SplitterPage&gt;
+            </syncfusion:SplitterPage>
 
-        &lt;/syncfusion:TabSplitterItem.BottomPanelItems&gt;
+        </syncfusion:TabSplitterItem.TopPanelItems>
 
 
 
-    &lt;/syncfusion:TabSplitterItem&gt;
+        <!-- Adding BottomPanelItems -->
 
-&lt;/syncfusion:TabSplitter&gt;
+        <syncfusion:TabSplitterItem.BottomPanelItems> 
+
+            <!-- Adding SplitterPage -->
+
+            <syncfusion:SplitterPage Name="splitterPage2" Header="Design">
+
+            </syncfusion:SplitterPage>
+
+        </syncfusion:TabSplitterItem.BottomPanelItems>
+
+
+
+    </syncfusion:TabSplitterItem>
+
+</syncfusion:TabSplitter>
 
 
 
@@ -84,7 +84,7 @@ tabSplitterItem1.Orientation = Orientation.Vertical;
 
 
 
-{ ![](Orientation_images/Orientation_img1.png) | markdownify }
+{{ '![](Orientation_images/Orientation_img1.png)' | markdownify }}
 {:.image }
 
 

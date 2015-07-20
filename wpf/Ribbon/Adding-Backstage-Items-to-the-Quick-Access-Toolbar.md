@@ -23,7 +23,7 @@ If you want add a backstage item into the QAT, follow the steps below:
 
 
 
-{ ![](Adding-Backstage-Items-to-the-Quick-Access-Toolbar_images/Adding-Backstage-Items-to-the-Quick-Access-Toolbar_img1.png) | markdownify }
+{{ '![](Adding-Backstage-Items-to-the-Quick-Access-Toolbar_images/Adding-Backstage-Items-to-the-Quick-Access-Toolbar_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -31,7 +31,7 @@ If you want add a backstage item into the QAT, follow the steps below:
 
 
 
-{ ![](Adding-Backstage-Items-to-the-Quick-Access-Toolbar_images/Adding-Backstage-Items-to-the-Quick-Access-Toolbar_img2.png) | markdownify }
+{{ '![](Adding-Backstage-Items-to-the-Quick-Access-Toolbar_images/Adding-Backstage-Items-to-the-Quick-Access-Toolbar_img2.png)' | markdownify }}
 {:.image }
 
 

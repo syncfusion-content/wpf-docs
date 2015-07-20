@@ -11,7 +11,7 @@ documentation: ug
 
 This feature allows users to enable/disable, create, and edit the calculated members on the fly in the current OLAP report or current view of the OlapClient control. Using this feature, users can define measures and members as they wish using the Calculated Member Editor (as shown in the following image). The Calculated Member Editor dialog can be opened by clicking the button available in the toolbar of the OlapClient control.
 
-{ ![](Calculated-Members-UI-Option-in-OlapClient-Control_images/Calculated-Members-UI-Option-in-OlapClient-Control_img1.png) | markdownify }
+{{ '![](Calculated-Members-UI-Option-in-OlapClient-Control_images/Calculated-Members-UI-Option-in-OlapClient-Control_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -90,7 +90,7 @@ Me.olapClient1.IsCalculatedMembersEnabled = True 
 
 
 
-&lt;CheckBox Name="chk_CalcMember  ToolTip="Enable/Disable Calculated Members" Content="Enable Calculated Members" IsChecked="{Binding ElementName=olapClient1, Path=IsCalculatedMembersEnabled}"/&gt;
+<CheckBox Name="chk_CalcMember  ToolTip="Enable/Disable Calculated Members" Content="Enable Calculated Members" IsChecked="{Binding ElementName=olapClient1, Path=IsCalculatedMembersEnabled}"/>
 
 
 

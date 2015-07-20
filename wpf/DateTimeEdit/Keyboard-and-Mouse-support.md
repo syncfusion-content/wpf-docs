@@ -27,7 +27,7 @@ After selecting any part in the DateTime value if you press the Up or Down arrow
 
 
 
-{ ![](Keyboard-and-Mouse-support_images/Keyboard-and-Mouse-support_img1.png) | markdownify }
+{{ '![](Keyboard-and-Mouse-support_images/Keyboard-and-Mouse-support_img1.png)' | markdownify }}
 {:.image }
 
 

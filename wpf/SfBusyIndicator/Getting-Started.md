@@ -19,15 +19,15 @@ The following code example shows how to create the SfBusyIndicator from XAML and
 
 
 
-&lt;Page xmlns:Notification="clr-namespace:Syncfusion.Windows.Controls.Notification;assembly=Syncfusion.SfBusyIndicator.WPF"&gt;
+<Page xmlns:Notification="clr-namespace:Syncfusion.Windows.Controls.Notification;assembly=Syncfusion.SfBusyIndicator.WPF">
 
-    &lt;Grid Background="CornflowerBlue"&gt;
+    <Grid Background="CornflowerBlue">
 
-        &lt;Notification:SfBusyIndicator/&gt;
+        <Notification:SfBusyIndicator/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Page&gt;
+</Page>
 
 
 

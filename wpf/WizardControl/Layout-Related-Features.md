@@ -23,11 +23,11 @@ Use the following code snippet for setting the minimum height for the page heade
 
 
 
-&lt;syncfusion:WizardControl Name="wizardControl" InteriorPageHeaderMinHeight="150"&gt;
+<syncfusion:WizardControl Name="wizardControl" InteriorPageHeaderMinHeight="150">
 
-    &lt;syncfusion:WizardPage Name="wizardPage" /&gt;
+    <syncfusion:WizardPage Name="wizardPage" />
 
-&lt;/syncfusion:WizardControl&gt;
+</syncfusion:WizardControl>
 
 
 
@@ -51,7 +51,7 @@ wizardControl.InteriorPageHeaderMinHeight = 150;
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -71,11 +71,11 @@ Set the background color of the banner for the Wizard control by using the Banne
 
 
 
-&lt;syncfusion:WizardControl Name="wizardControl"&gt;
+<syncfusion:WizardControl Name="wizardControl">
 
-    &lt;syncfusion:WizardPage Name="wizardPage" BannerBackground="Navy"/&gt;
+    <syncfusion:WizardPage Name="wizardPage" BannerBackground="Navy"/>
 
-&lt;/syncfusion:WizardControl&gt;
+</syncfusion:WizardControl>
 
 
 
@@ -97,7 +97,7 @@ wizardPage.BannerBackground = Brushes.Navy;
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -123,11 +123,11 @@ The following code snippet can be used to set the banner image.
 
 
 
-&lt;syncfusion:WizardControl Name="wizardControl"&gt;
+<syncfusion:WizardControl Name="wizardControl">
 
-    &lt;syncfusion:WizardPage Name="wizardPage" BannerImage="/Image/sync.bmp"/&gt;
+    <syncfusion:WizardPage Name="wizardPage" BannerImage="/Image/sync.bmp"/>
 
-&lt;/syncfusion:WizardControl&gt;
+</syncfusion:WizardControl>
 
 
 
@@ -147,7 +147,7 @@ wizardPage.BannerImage = new BitmapImage(new Uri("/Image/sync.bmp", UriKind.Rela
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -169,11 +169,11 @@ The following code snippet illustrates setting the minimum width for the banner 
 
 
 
-&lt;syncfusion:WizardControl Name="wizardControl" ExteriorPageBannerImageMinWidth="10"&gt;
+<syncfusion:WizardControl Name="wizardControl" ExteriorPageBannerImageMinWidth="10">
 
-    &lt;syncfusion:WizardPage Name="wizardPage" PageType="Exterior" BannerImage="/Image/sync.bmp"/&gt;
+    <syncfusion:WizardPage Name="wizardPage" PageType="Exterior" BannerImage="/Image/sync.bmp"/>
 
-&lt;/syncfusion:WizardControl&gt;
+</syncfusion:WizardControl>
 
 
 
@@ -199,7 +199,7 @@ wizardControl.ExteriorPageBannerImageMinWidth = 10;
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img4.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img4.jpeg)' | markdownify }}
 {:.image }
 
 

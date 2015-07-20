@@ -1236,7 +1236,7 @@ excelEngine.Dispose()
 
 Excel has the sheet tab bar that appears at the bottom of the screen with tab scrolling buttons displayed on the left side. Excel provides an option to show/hide a sheet from your view. This is done by selecting the Hide item in the context menu of the sheet.
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img1.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -1552,7 +1552,7 @@ excelEngine.Dispose()
 
 To allow viewing of a particular worksheet, hide the content in the last part of the worksheet, hide the scrollbars by turning off either scrollbar checkbox in the View tab of the Options dialog box.
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img2.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -1672,7 +1672,7 @@ excelEngine.Dispose()
 
 Some may find it easier to work with the worksheet applications withoutgrid lines. Excel provides options to show/hide grid lines in the worksheet. This is done by accessing the GridLines option in View tab of the ribbon.
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img3.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -1890,7 +1890,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img4.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -2002,7 +2002,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img5.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -2012,7 +2012,7 @@ _Tab Color_
 
 It is difficult to read and understand very large spreadsheets. When you scroll too far to the right or down, you cannot be able to view the headings that are located at the top and at the left side of the worksheet. Without the headings, it is hard to keep track of the columns or rows of data viewed. Excel features Freeze Panes to avoid this problem. This feature can be enabled by selecting Freeze option from the View tab. It allows you to freeze certain areas or panes of the spreadsheet, so that they remain visible at all times while scrolling to the right or bottom. Headings make it easier to read the data in the spreadsheet.
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img6.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -2124,7 +2124,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img7.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -2375,7 +2375,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img8.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -3191,7 +3191,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img9.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -3207,7 +3207,7 @@ Excel allows you to change the orientation of the page from the Page Setup tab. 
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img10.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -3325,7 +3325,7 @@ Scaling lets you specify a certain percentage to reduce or enlarge your workshee
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img11.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -3445,7 +3445,7 @@ Page margins are the blank spaces between the worksheet data and the edges of th
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img12.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -3695,7 +3695,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img13.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -3707,7 +3707,7 @@ In order to fit information on a page or change the appearance of the page, you 
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img14.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -3821,13 +3821,13 @@ Often, there is a need to include some information about your document at the to
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img15.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img15.png)' | markdownify }}
 {:.image }
 
 
 _Page Setup-Headers and Footers_
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img16.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -4309,7 +4309,7 @@ MS Excel enables customization of print settings through the following options.
 
 
 
-{ ![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img17.png) | markdownify }
+{{ '![](Working-with-Excel-Worksheet_images/Working-with-Excel-Worksheet_img17.png)' | markdownify }}
 {:.image }
 
 

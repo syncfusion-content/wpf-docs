@@ -13,11 +13,11 @@ An item can be selected by rolling the mouse over it. The highlight that appears
 
 The mouse wheel can be used to scroll a vertical scroll bar that is enabled in the History or Navigation pop-up control to view the full content.
 
-{ ![](Mouse-Support_images/Mouse-Support_img1.png) | markdownify }
+{{ '![](Mouse-Support_images/Mouse-Support_img1.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Mouse-Support_images/Mouse-Support_img2.png) | markdownify }
+{{ '![](Mouse-Support_images/Mouse-Support_img2.png)' | markdownify }}
 {:.image }
 
 

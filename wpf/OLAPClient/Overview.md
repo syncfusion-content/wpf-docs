@@ -24,7 +24,7 @@ OLAP Client is composed of following components:
 
 
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -65,7 +65,7 @@ Description</td></tr>
 <tr>
 <td>
 Note</td><td>
-> {{ '_Note:_' | markdownify }}</td><td>
+> {{{ ''_Note:_'' | markdownify }}}</td><td>
 Represents important information</td></tr>
 <tr>
 <td>

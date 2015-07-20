@@ -13,7 +13,7 @@ AutoComplete can be used with different kinds of Data Source like FilePath, Regi
 
 When the value of the Source property is set as FilePath, the AutoComplete will displays the path in the local system as the source. This is illustrated in the following image. 
 
-{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/Filepath.png](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img1.png) | markdownify }
+{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/Filepath.png](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -21,7 +21,7 @@ When the value of the Source property is set as FilePath, the AutoComplete will 
 
 When the value of the Source property is set as Registry, the AutoComplete loads the values from the Registry. It is used when the Registry keys are required as input. This is illustrated in the image given below.
 
-{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/Registry.png](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img2.png) | markdownify }
+{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/Registry.png](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -29,7 +29,7 @@ When the value of the Source property is set as Registry, the AutoComplete loads
 
 When the value of the Source property is set as Custom, the AutoComplete loads the values from the Business objects bounded to the AutoComplete control by using the CustomSource property. This is illustrated in the image given below.
 
-{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/UsingC#.png](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img3.png) | markdownify }
+{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/UsingC#.png](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -42,7 +42,7 @@ AutoComplete can be used with different kinds of Data Sources using the Source p
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:AutoComplete x:Name="AutoComplete1" Source="FilePath"/&gt;&lt;syncfusion:AutoComplete x:Name="AutoComplete2" Source ="Registry"/&gt;&lt;syncfusion:AutoComplete x:Name="AutoComplete3" Source="Custom"&gt;     &lt;syncfusion:AutoComplete.CustomSource&gt;             &lt;local:CustomerListCollection/&gt;     &lt;/syncfusion:AutoComplete.CustomSource&gt;&lt;/syncfusion:AutoComplete&gt;</td></tr>
+[XAML]<syncfusion:AutoComplete x:Name="AutoComplete1" Source="FilePath"/><syncfusion:AutoComplete x:Name="AutoComplete2" Source ="Registry"/><syncfusion:AutoComplete x:Name="AutoComplete3" Source="Custom">     <syncfusion:AutoComplete.CustomSource>             <local:CustomerListCollection/>     </syncfusion:AutoComplete.CustomSource></syncfusion:AutoComplete></td></tr>
 <tr>
 <td>
 [C#]AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.Source = SourceMode.FilePath;AutoComplete autoComplete2 = new AutoComplete();this.autoComplete2.SelectionMode = SourceMode.Registry;AutoComplete autoComplete3 = new AutoComplete();this.autoComplete3.SelectionMode = SourceMode.Custom;List<String> products = new List<String>();customSource.Add("Diagram");customSource.Add("Gauge");customSource.Add("Chart");customSource.Add("Schedule");customSource.Add("Grid");customSource.Add("DocIo");customSource.Add("XlsIo");customSource.Add("Pdf");customSource.Add("RichTextBox");customSource.Add("ReportBuilder");this.autoComplete3.CustomSource = products;</td></tr>

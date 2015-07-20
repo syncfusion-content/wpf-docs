@@ -19,9 +19,9 @@ Code Example:
 
 [XAML]
 
-             &lt;syncfusion:SfCircularGauge x:Name="gauge"&gt;
+             <syncfusion:SfCircularGauge x:Name="gauge">
 
-                &lt;syncfusion:SfCircularGauge.MainScale&gt;
+                <syncfusion:SfCircularGauge.MainScale>
 
                     <syncfusion:CircularScale 
 
@@ -43,11 +43,11 @@ Code Example:
 
                                             >
 
-                   &lt;/syncfusion:CircularScale&gt;
+                   </syncfusion:CircularScale>
 
-                &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+                </syncfusion:SfCircularGauge.MainScale>
 
-             &lt;/syncfusion:SfCircularGauge&gt;
+             </syncfusion:SfCircularGauge>
 
 
 
@@ -83,7 +83,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Tick-settings_images/Tick-settings_img1.png) | markdownify }
+{{ '![](Tick-settings_images/Tick-settings_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -103,9 +103,9 @@ Code Example:
 
 
 
-&lt;syncfusion:SfCircularGauge  x:Name="gauge"&gt;
+<syncfusion:SfCircularGauge  x:Name="gauge">
 
-            &lt;syncfusion:SfCircularGauge.Scales &gt;
+            <syncfusion:SfCircularGauge.Scales >
 
                 <syncfusion:CircularScale  x:Name="CircularScale" 
 
@@ -135,11 +135,11 @@ Code Example:
 
                                            EndValue="100">
 
-                &lt;/syncfusion:CircularScale&gt;
+                </syncfusion:CircularScale>
 
-            &lt;/syncfusion:SfCircularGauge.Scales&gt;
+            </syncfusion:SfCircularGauge.Scales>
 
-        &lt;/syncfusion:SfCircularGauge&gt;
+        </syncfusion:SfCircularGauge>
 
 
 
@@ -183,7 +183,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Tick-settings_images/Tick-settings_img2.png) | markdownify }
+{{ '![](Tick-settings_images/Tick-settings_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -203,19 +203,19 @@ Code Example:
 
 [XAML]
 
-            &lt;syncfusion:SfCircularGauge x:Name="gauge"&gt;
+            <syncfusion:SfCircularGauge x:Name="gauge">
 
-                &lt;syncfusion:SfCircularGauge.MainScale&gt;
+                <syncfusion:SfCircularGauge.MainScale>
 
                     <syncfusion:CircularScale TickPosition="Cross"
 
                               TickLength="25" SmallTickLength="15">
 
-                    &lt;/syncfusion:CircularScale&gt;
+                    </syncfusion:CircularScale>
 
-                &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+                </syncfusion:SfCircularGauge.MainScale>
 
-            &lt;/syncfusion:SfCircularGauge&gt;
+            </syncfusion:SfCircularGauge>
 
 
 
@@ -243,7 +243,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Tick-settings_images/Tick-settings_img3.png) | markdownify }
+{{ '![](Tick-settings_images/Tick-settings_img3.png)' | markdownify }}
 {:.image }
 
 

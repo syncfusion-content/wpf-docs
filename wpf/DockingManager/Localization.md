@@ -44,7 +44,7 @@ Sets the string for ToolTipof Close button in DockingManager.</td></tr>
 {:.image }
 ![](Localization_images/Localization_img4.png)
 {:.image }
-{{ '_CloseButtonTooltipText(en-US)                                      CloseButtonTooltipText(fr-FR)_' | markdownify }}</td></tr>
+{{{ ''_CloseButtonTooltipText(en-US)                                      CloseButtonTooltipText(fr-FR)_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 ContextMenuButtonTooltipText</td><td>
@@ -66,7 +66,7 @@ Sets the string for the context menu item in DockingManager.</td></tr>
 {:.image }
 ![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/52.png](Localization_images/Localization_img8.png)
 {:.image }
-{{ '_ContextMenu(en-US)                                     ContextMenu(fr-FR)_' | markdownify }}</td></tr>
+{{{ ''_ContextMenu(en-US)                                     ContextMenu(fr-FR)_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 MoveToNextTabGroup </td><td>
@@ -77,7 +77,7 @@ Sets the string for MoveToNextTabGroup context menu item in the DockingManager a
 {:.image }
 ![](Localization_images/Localization_img10.png)
 {:.image }
-{{ '_MoveToNextTabGroup(en-US)                                        MoveToNextTabGroup(fr-FR)_' | markdownify }}</td></tr>
+{{{ ''_MoveToNextTabGroup(en-US)                                        MoveToNextTabGroup(fr-FR)_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 MoveToPreviousTabGroup</td><td>
@@ -88,7 +88,7 @@ Sets the string for MoveToPreviousTabGroup context menu item in the DockingManag
 {:.image }
 ![](Localization_images/Localization_img12.png)
 {:.image }
-{{ '_MoveToPreviousTabGroup(en-US)                           MoveToPreviousTabGroup(fr-FR)_' | markdownify }}</td></tr>
+{{{ ''_MoveToPreviousTabGroup(en-US)                           MoveToPreviousTabGroup(fr-FR)_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 NewTabgroupMenuItemCancel</td><td>
@@ -99,7 +99,7 @@ Sets the string for the Tab context menu item in the DockingManager and Document
 {:.image }
 ![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/48.png](Localization_images/Localization_img14.png)
 {:.image }
-{{ '_NewTabGroup(en-US)                            NewTabGroup(fr-FR)_' | markdownify }}</td></tr>
+{{{ ''_NewTabGroup(en-US)                            NewTabGroup(fr-FR)_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 TabCloseCloseAllButThisTabCloseAllFloatingDocumentDockableNewHorizontalTabGroupNewVerticalTabGroup</td><td>
@@ -110,7 +110,7 @@ Sets the string for the menu item in the Document Container and DockingManager.<
 {:.image }
 ![](Localization_images/Localization_img16.png)
 {:.image }
-{{ '_MenuItem(en-US)                                                  MenuItem(fr-FR)_' | markdownify }}</td></tr>
+{{{ ''_MenuItem(en-US)                                                  MenuItem(fr-FR)_'' | markdownify }}}</td></tr>
 </table>
 
 

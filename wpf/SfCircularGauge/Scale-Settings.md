@@ -21,11 +21,11 @@ Code Example:
 
 [XAML]
 
-       &lt;syncfusion:SfCircularGauge x:Name="gauge" GaugeHeaderPosition="300,600" &gt;
+       <syncfusion:SfCircularGauge x:Name="gauge" GaugeHeaderPosition="300,600" >
 
 
 
-            &lt;syncfusion:SfCircularGauge.GaugeHeader&gt;
+            <syncfusion:SfCircularGauge.GaugeHeader>
 
 
 
@@ -37,9 +37,9 @@ Code Example:
 
 
 
-            &lt;/syncfusion:SfCircularGauge.GaugeHeader&gt;
+            </syncfusion:SfCircularGauge.GaugeHeader>
 
-            &lt;syncfusion:SfCircularGauge.MainScale&gt;
+            <syncfusion:SfCircularGauge.MainScale>
 
          <syncfusion:CircularScale StartAngle="135" 
 
@@ -53,7 +53,7 @@ Code Example:
 
 
 
-              &lt;syncfusion:CircularScale.Ranges&gt;
+              <syncfusion:CircularScale.Ranges>
 
                    <syncfusion:CircularRange StartValue="0" 
 
@@ -63,21 +63,21 @@ Code Example:
 
                                              EndValue="100" Stroke="#C1252C" />
 
-              &lt;/syncfusion:CircularScale.Ranges&gt;
+              </syncfusion:CircularScale.Ranges>
 
 
 
-              &lt;syncfusion:CircularScale.Pointers&gt;
+              <syncfusion:CircularScale.Pointers>
 
-                  &lt;syncfusion:CircularPointer PointerType="NeedlePointer" Value="170"/&gt;
+                  <syncfusion:CircularPointer PointerType="NeedlePointer" Value="170"/>
 
-              &lt;/syncfusion:CircularScale.Pointers&gt;
+              </syncfusion:CircularScale.Pointers>
 
-         &lt;/syncfusion:CircularScale&gt;
+         </syncfusion:CircularScale>
 
-    &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+    </syncfusion:SfCircularGauge.MainScale>
 
-&lt;/syncfusion:SfCircularGauge&gt;
+</syncfusion:SfCircularGauge>
 
 
 
@@ -121,7 +121,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Scale-Settings_images/Scale-Settings_img1.png) | markdownify }
+{{ '![](Scale-Settings_images/Scale-Settings_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -139,9 +139,9 @@ Code Example:
 
 
 
-        &lt;syncfusion:SfCircularGauge  x:Name="gauge"&gt;
+        <syncfusion:SfCircularGauge  x:Name="gauge">
 
-            &lt;syncfusion:SfCircularGauge.Scales &gt;
+            <syncfusion:SfCircularGauge.Scales >
 
                 <syncfusion:CircularScale  x:Name="CircularScale" 
 
@@ -171,7 +171,7 @@ Code Example:
 
                                            EndValue="100">
 
-                &lt;/syncfusion:CircularScale&gt;
+                </syncfusion:CircularScale>
 
 
 
@@ -203,11 +203,11 @@ Code Example:
 
                                            EndValue="100">
 
-                &lt;/syncfusion:CircularScale&gt;
+                </syncfusion:CircularScale>
 
-            &lt;/syncfusion:SfCircularGauge.Scales&gt;
+            </syncfusion:SfCircularGauge.Scales>
 
-        &lt;/syncfusion:SfCircularGauge&gt;
+        </syncfusion:SfCircularGauge>
 
 
 
@@ -277,7 +277,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Scale-Settings_images/Scale-Settings_img2.png) | markdownify }
+{{ '![](Scale-Settings_images/Scale-Settings_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -293,13 +293,13 @@ Code Example:
 
 [XAML]
 
-    &lt;syncfusion:SfCircularGauge SpacingMargin="0.7"&gt;
+    <syncfusion:SfCircularGauge SpacingMargin="0.7">
 
-      &lt;syncfusion:SfCircularGauge.Scales&gt;
+      <syncfusion:SfCircularGauge.Scales>
 
-                &lt;syncfusion:CircularScale Height="500" Width="500"&gt;
+                <syncfusion:CircularScale Height="500" Width="500">
 
-                    &lt;syncfusion:CircularScale.Ranges&gt;
+                    <syncfusion:CircularScale.Ranges>
 
                         <syncfusion:CircularRange  StartValue="0" 
 
@@ -315,9 +315,9 @@ Code Example:
 
                                                    Stroke="#C1252C" StrokeThickness="5"/>
 
-                    &lt;/syncfusion:CircularScale.Ranges&gt;
+                    </syncfusion:CircularScale.Ranges>
 
-                    &lt;syncfusion:CircularScale.Pointers&gt;
+                    <syncfusion:CircularScale.Pointers>
 
                         <syncfusion:CircularPointer Value="30" 
 
@@ -331,13 +331,13 @@ Code Example:
 
                                                     SymbolPointerStroke="Green"/>
 
-                    &lt;/syncfusion:CircularScale.Pointers&gt;
+                    </syncfusion:CircularScale.Pointers>
 
-                &lt;/syncfusion:CircularScale&gt;
+                </syncfusion:CircularScale>
 
-                &lt;syncfusion:CircularScale Height="300" Width="300"&gt;
+                <syncfusion:CircularScale Height="300" Width="300">
 
-                    &lt;syncfusion:CircularScale.Ranges&gt;
+                    <syncfusion:CircularScale.Ranges>
 
                         <syncfusion:CircularRange  StartValue="0" 
 
@@ -353,21 +353,21 @@ Code Example:
 
                                                    Stroke="#C1252C" StrokeThickness="5"/>
 
-                    &lt;/syncfusion:CircularScale.Ranges&gt;
+                    </syncfusion:CircularScale.Ranges>
 
-                    &lt;syncfusion:CircularScale.Pointers&gt;
+                    <syncfusion:CircularScale.Pointers>
 
                         <syncfusion:CircularPointer Value="30" 
 
                                                     PointerType="NeedlePointer"/>
 
-                    &lt;/syncfusion:CircularScale.Pointers&gt;
+                    </syncfusion:CircularScale.Pointers>
 
-                &lt;/syncfusion:CircularScale&gt;
+                </syncfusion:CircularScale>
 
-            &lt;/syncfusion:SfCircularGauge.Scales&gt;
+            </syncfusion:SfCircularGauge.Scales>
 
-&lt;/syncfusion:SfCircularGauge&gt;
+</syncfusion:SfCircularGauge>
 
 
 
@@ -413,7 +413,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Scale-Settings_images/Scale-Settings_img3.png) | markdownify }
+{{ '![](Scale-Settings_images/Scale-Settings_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -421,7 +421,7 @@ Screenshot:
 
 Screenshot:
 
-{ ![](Scale-Settings_images/Scale-Settings_img4.png) | markdownify }
+{{ '![](Scale-Settings_images/Scale-Settings_img4.png)' | markdownify }}
 {:.image }
 
 

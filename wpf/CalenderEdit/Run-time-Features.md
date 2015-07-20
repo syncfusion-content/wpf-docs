@@ -23,7 +23,7 @@ For setting the MonthChangeDirection property, use the following code.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding calendar with month change direction as vertical --&gt;&lt;syncfusion:CalendarEdit Name="calendarEdit" MonthChangeDirection="Vertical"/&gt;</td></tr>
+[XAML]<!-- Adding calendar with month change direction as vertical --><syncfusion:CalendarEdit Name="calendarEdit" MonthChangeDirection="Vertical"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Month change direction as verticalcalendarEdit.MonthChangeDirection = AnimationDirection.Vertical;//Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
@@ -46,7 +46,7 @@ To set this property, use the following code.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding calendar with change mode time --&gt;&lt;syncfusion:CalendarEdit Name="calendarEdit" ChangeModeTime="10"/&gt;</td></tr>
+[XAML]<!-- Adding calendar with change mode time --><syncfusion:CalendarEdit Name="calendarEdit" ChangeModeTime="10"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting calendar mode changing animation timecalendarEdit.ChangeModeTime = 10;//Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
@@ -62,7 +62,7 @@ To set this property, use the following code.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding calendar with Frame moving time as 500 --&gt;&lt;syncfusion:CalendarEdit Name="calendarEdit" FrameMovingTime="500"/&gt;</td></tr>
+[XAML]<!-- Adding calendar with Frame moving time as 500 --><syncfusion:CalendarEdit Name="calendarEdit" FrameMovingTime="500"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting the frame moving timecalendarEdit.FrameMovingTime = 500;//Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
@@ -128,7 +128,7 @@ Here is the code example for setting this property.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding calendar with scroll to date as true --&gt;&lt;syncfusion:CalendarEdit Name="calendarEdit" ScrollToDateEnabled="True"/&gt;</td></tr>
+[XAML]<!-- Adding calendar with scroll to date as true --><syncfusion:CalendarEdit Name="calendarEdit" ScrollToDateEnabled="True"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Enable scroll to datecalendarEdit.ScrollToDateEnabled = true; //Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>

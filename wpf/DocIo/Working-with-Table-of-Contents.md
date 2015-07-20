@@ -104,7 +104,7 @@ Gets or sets a value indicating whether the table is built from TC fields. When 
 
 
 
-{ ![](Working-with-Table-of-Contents_images/Working-with-Table-of-Contents_img1.png) | markdownify }
+{{ '![](Working-with-Table-of-Contents_images/Working-with-Table-of-Contents_img1.png)' | markdownify }}
 {:.image }
 
 

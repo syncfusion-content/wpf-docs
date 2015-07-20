@@ -17,9 +17,9 @@ The NumberFormatInfo can be set for the UpDown control as shown in the following
 
  [XAML]
 
-&lt;syncfusion:UpDown HorizontalAlignment="Center" VerticalAlignment="Center" Name="upDown" Height="51"Width="140" Value="5555555"&gt;
+<syncfusion:UpDown HorizontalAlignment="Center" VerticalAlignment="Center" Name="upDown" Height="51"Width="140" Value="5555555">
 
-            &lt; syncfusion:UpDown.NumberFormatInfo&gt;
+            < syncfusion:UpDown.NumberFormatInfo>
 
                 <globalization:NumberFormatInfo NumberGroupSeparator="/" NumberDecimalDigits="4"
 
@@ -27,9 +27,9 @@ The NumberFormatInfo can be set for the UpDown control as shown in the following
 
                                        NumberDecimalSeparator="*"/>
 
-            &lt;/ syncfusion:UpDown.NumberFormatInfo&gt;
+            </ syncfusion:UpDown.NumberFormatInfo>
 
-        &lt;/ syncfusion:UpDown&gt;
+        </ syncfusion:UpDown>
 
 
 
@@ -55,7 +55,7 @@ NumberDecimalSeparator = "*"
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1275.png](Number-Formatting_images/Number-Formatting_img1.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1275.png](Number-Formatting_images/Number-Formatting_img1.png)' | markdownify }}
 {:.image }
 
 

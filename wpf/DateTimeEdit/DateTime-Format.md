@@ -19,7 +19,7 @@ DateTimeFormat property defines the Format to display the date value in the Date
 XAML</td></tr>
 <tr>
 <td>
-&lt;syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="ShortDate"&gt;    &lt;syncfusion:DateTimeEdit.DateTimeFormat&gt;        &lt;global:DateTimeFormatInfo ShortDatePattern="MM/dd/yy hh:mm:ss"/&gt;    &lt;/syncfusion:DateTimeEdit.DateTimeFormat&gt;&lt;/syncfusion:DateTimeEdit&gt;</td></tr>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="ShortDate">    <syncfusion:DateTimeEdit.DateTimeFormat>        <global:DateTimeFormatInfo ShortDatePattern="MM/dd/yy hh:mm:ss"/>    </syncfusion:DateTimeEdit.DateTimeFormat></syncfusion:DateTimeEdit></td></tr>
 <tr>
 <td>
 C#</td></tr>
@@ -31,7 +31,7 @@ Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Sha
 
 
 
-{ ![](DateTime-Format_images/DateTime-Format_img1.png) | markdownify }
+{{ '![](DateTime-Format_images/DateTime-Format_img1.png)' | markdownify }}
 {:.image }
 
 

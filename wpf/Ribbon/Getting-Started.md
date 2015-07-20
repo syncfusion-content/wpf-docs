@@ -34,7 +34,7 @@ Here are some highlights of our Ribbon control.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -50,7 +50,7 @@ The different components of the control are described below:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -72,7 +72,7 @@ To create a control using Visual Studio:
 
 Drag and drop the Ribbon control from toolbox to designer. It will generate the Ribbon as shown below:
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -80,7 +80,7 @@ Drag and drop the Ribbon control from toolbox to designer. It will generate the 
 
 Click on the SmartTag button in the Ribbon. The SmartTag opens as shown below:
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -90,7 +90,7 @@ The smart tag is used to add and configure items to the Ribbon. The Visual Studi
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -111,7 +111,7 @@ Search the Ribbon in the toolbox.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -121,7 +121,7 @@ Drag and drop the Ribbon into the designer. It will create the Ribbon control as
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -136,7 +136,7 @@ Add the Ribbon Tabs as follows:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -146,7 +146,7 @@ The Collection Editor window opens:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -177,25 +177,25 @@ QAT Items can be added as follows:
 
 [XAML]
 
-&lt;syncfusion:Ribbon.QuickAccessToolBar&gt;
+<syncfusion:Ribbon.QuickAccessToolBar>
 
- &lt;syncfusion:QuickAccessToolBar&gt;
-
-
-
-    &lt;syncfusion:RibbonButton Label="Undo"/&gt;
+ <syncfusion:QuickAccessToolBar>
 
 
 
-     &lt;syncfusion:RibbonButton Label="Redo"/&gt;
+    <syncfusion:RibbonButton Label="Undo"/>
 
 
 
-  &lt;/syncfusion:QuickAccessToolBar&gt;
+     <syncfusion:RibbonButton Label="Redo"/>
 
 
 
-&lt;/syncfusion:Ribbon.QuickAccessToolBar&gt;
+  </syncfusion:QuickAccessToolBar>
+
+
+
+</syncfusion:Ribbon.QuickAccessToolBar>
 
 
 
@@ -211,7 +211,7 @@ QAT items can also be added through More Commands dialog box.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -223,7 +223,7 @@ All items added to the Ribbon will be included in More Commands dialog. This can
 
 [XAML]
 
-&lt;syncfusion:RibbonBar Header="Clipboard" 					syncfusion:Ribbon.ShowInMoreCommands="False"&gt;
+<syncfusion:RibbonBar Header="Clipboard" 					syncfusion:Ribbon.ShowInMoreCommands="False">
 
 
 
@@ -237,33 +237,33 @@ QAT Menu Items can be added as follows:
 
 [XAML]
 
-&lt;syncfusion:Ribbon.QuickAccessToolBar&gt;
+<syncfusion:Ribbon.QuickAccessToolBar>
 
- &lt;syncfusion:QuickAccessToolBar&gt;
-
-
-
-  &lt;syncfusion:QuickAccessToolBar.QATMenuItems&gt;
+ <syncfusion:QuickAccessToolBar>
 
 
 
-    &lt;syncfusion:RibbonButton Label="Save"/&gt;
+  <syncfusion:QuickAccessToolBar.QATMenuItems>
 
 
 
-    &lt;syncfusion:RibbonButton Label="Print Preview"/&gt;
+    <syncfusion:RibbonButton Label="Save"/>
 
 
 
-  &lt;/syncfusion:QuickAccessToolBar.QATMenuItems&gt;
+    <syncfusion:RibbonButton Label="Print Preview"/>
 
 
 
- &lt;/syncfusion:QuickAccessToolBar&gt;
+  </syncfusion:QuickAccessToolBar.QATMenuItems>
 
 
 
-&lt;/syncfusion:Ribbon.QuickAccessToolBar&gt;
+ </syncfusion:QuickAccessToolBar>
+
+
+
+</syncfusion:Ribbon.QuickAccessToolBar>
 
 
 
@@ -273,7 +273,7 @@ The QAT Menu Items will be displayed as below. After configuring the QAT, it app
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -291,21 +291,21 @@ Application Menu’s left pane items can be populated as follows:
 
 [XAML]
 
-&lt;syncfusion:Ribbon.ApplicationMenu&gt;
+<syncfusion:Ribbon.ApplicationMenu>
 
- &lt;syncfusion:ApplicationMenu Width="38" Height="38" 			ApplicationButtonImage="/Resources/syncfusion.png" IsPopupOpen="False"&gt;         
-
-
-
-  &lt;syncfusion:SimpleMenuButton Label="Save" /&gt;
+ <syncfusion:ApplicationMenu Width="38" Height="38" 			ApplicationButtonImage="/Resources/syncfusion.png" IsPopupOpen="False">         
 
 
 
-  &lt;syncfusion:SplitMenuButton Label="Save As"&gt;
+  <syncfusion:SimpleMenuButton Label="Save" />
 
 
 
-     &lt;syncfusion:ApplicationMenuGroup Header="Save in another format" 			  IconBarEnabled="False"&gt;
+  <syncfusion:SplitMenuButton Label="Save As">
+
+
+
+     <syncfusion:ApplicationMenuGroup Header="Save in another format" 			  IconBarEnabled="False">
 
 
 
@@ -315,19 +315,19 @@ Description="Save a copy of the item to your computer in one of 			the several f
 
 
 
-      &lt;/syncfusion:ApplicationMenuGroup&gt;
+      </syncfusion:ApplicationMenuGroup>
 
 
 
-  &lt;/syncfusion:SplitMenuButton&gt;
+  </syncfusion:SplitMenuButton>
 
 
 
- &lt;/syncfusion:ApplicationMenu&gt;
+ </syncfusion:ApplicationMenu>
 
 
 
-&lt;/syncfusion:Ribbon.ApplicationMenu&gt;
+</syncfusion:Ribbon.ApplicationMenu>
 
 
 
@@ -341,13 +341,13 @@ Footer items for the Application menu can be added as follows:
 
 [XAML]
 
-&lt;syncfusion:ApplicationMenu.ApplicationItems&gt;
+<syncfusion:ApplicationMenu.ApplicationItems>
 
- &lt;syncfusion:RibbonButton SizeForm = "Small" Label="Edit Options"/&gt;
+ <syncfusion:RibbonButton SizeForm = "Small" Label="Edit Options"/>
 
 
 
-&lt;/syncfusion:ApplicationMenu.ApplicationItems&gt;                                   
+</syncfusion:ApplicationMenu.ApplicationItems>                                   
 
 
 
@@ -359,7 +359,7 @@ The Application Menu appears as shown in the following image:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -375,27 +375,27 @@ The BackStageCommandButton can be added to BackStage as follows:
 
 [XAML]
 
-&lt;syncfusion:Ribbon.BackStage&gt;
+<syncfusion:Ribbon.BackStage>
 
 
 
- &lt;syncfusion:Backstage Name="RibbonBackStage"&gt;
+ <syncfusion:Backstage Name="RibbonBackStage">
 
 
 
-  &lt;syncfusion:BackStageCommandButton Header="Save"  Command="Save"/&gt;
+  <syncfusion:BackStageCommandButton Header="Save"  Command="Save"/>
 
 
 
-  &lt;syncfusion:BackStageCommandButton Header="Exit"/&gt;
+  <syncfusion:BackStageCommandButton Header="Exit"/>
 
 
 
- &lt;/syncfusion:Backstage&gt;
+ </syncfusion:Backstage>
 
 
 
-&lt;/syncfusion:Ribbon.BackStage&gt;                  
+</syncfusion:Ribbon.BackStage>                  
 
 
 
@@ -409,41 +409,41 @@ The BackStageTabItem can be added to BackStage as follows.
 
 [XAML]
 
-&lt;syncfusion:Ribbon.BackStage&gt;
+<syncfusion:Ribbon.BackStage>
 
 
 
- &lt;syncfusion:Backstage Name="RibbonBackStage"&gt;
+ <syncfusion:Backstage Name="RibbonBackStage">
 
 
 
-&lt;!--BackStage Tab item helps to show some contents with header.--&gt;
+<!--BackStage Tab item helps to show some contents with header.-->
 
 
 
-   &lt;syncfusion:BackstageTabItem Header="Info" &gt;
+   <syncfusion:BackstageTabItem Header="Info" >
 
 
 
-&lt;!--Back Stage tab item content can be of any type.--&gt;
+<!--Back Stage tab item content can be of any type.-->
 
-                        &lt;Grid&gt;
-
-
-
-                        &lt;/Grid&gt;
+                        <Grid>
 
 
 
-   &lt;/syncfusion:BackstageTabItem&gt;
+                        </Grid>
 
 
 
-  &lt;/syncfusion:Backstage&gt;
+   </syncfusion:BackstageTabItem>
 
 
 
-&lt;/syncfusion:Ribbon.BackStage&gt;                  
+  </syncfusion:Backstage>
+
+
+
+</syncfusion:Ribbon.BackStage>                  
 
 
 
@@ -719,11 +719,11 @@ Set the ItemsSource of the Ribbon , RibbonTab and RibbonBar to the corresponding
 
 
 
-&lt;syncfusion:RibbonWindow.DataContext&gt;
+<syncfusion:RibbonWindow.DataContext>
 
-   &lt;local:ViewModel/&gt;
+   <local:ViewModel/>
 
-&lt;/syncfusion:RibbonWindow.DataContext&gt;    
+</syncfusion:RibbonWindow.DataContext>    
 
 
 
@@ -735,61 +735,61 @@ Set the ItemsSource of the Ribbon , RibbonTab and RibbonBar to the corresponding
 
 
 
-  &lt;syncfusion:Ribbon.ItemContainerStyle&gt;
+  <syncfusion:Ribbon.ItemContainerStyle>
 
 
 
-   &lt;Style TargetType="{x:Type syncfusion:RibbonTab}"&gt;
+   <Style TargetType="{x:Type syncfusion:RibbonTab}">
 
 
 
-    &lt;Setter Property="Caption" Value="{Binding TabHeader}"&gt;&lt;/Setter&gt;
+    <Setter Property="Caption" Value="{Binding TabHeader}"></Setter>
 
-    &lt;Setter Property="Foreground" Value="Red"&gt;&lt;/Setter&gt;
+    <Setter Property="Foreground" Value="Red"></Setter>
 
-    &lt;Setter Property="ItemsSource" Value="{Binding CustomRibbonBars}"/&gt;
+    <Setter Property="ItemsSource" Value="{Binding CustomRibbonBars}"/>
 
-    &lt;Setter Property="ItemContainerStyle"&gt;
+    <Setter Property="ItemContainerStyle">
 
-      &lt;Setter.Value&gt;
-
-
-
-       &lt;Style TargetType="{x:Type syncfusion:RibbonBar}"&gt;
-
-        &lt;Setter Property="Header" Value="{Binding BarHeader}"/&gt;
-
-        &lt;Setter Property="ItemsSource" Value="{Binding CustomRibbonItems}"/&gt;
-
-        &lt;Setter Property="ItemTemplate"&gt;
-
-          &lt;Setter.Value&gt;
-
-            &lt;DataTemplate&gt;
-
-               &lt;syncfusion:RibbonButton Label="{Binding ItemHeader}"/&gt;
-
-             &lt;/DataTemplate&gt;
-
-          &lt;/Setter.Value&gt;
-
-        &lt;/Setter&gt;
-
-       &lt;/Style&gt;
+      <Setter.Value>
 
 
 
-      &lt;/Setter.Value&gt;
+       <Style TargetType="{x:Type syncfusion:RibbonBar}">
 
-     &lt;/Setter&gt;
+        <Setter Property="Header" Value="{Binding BarHeader}"/>
 
-    &lt;/Style&gt;
+        <Setter Property="ItemsSource" Value="{Binding CustomRibbonItems}"/>
 
-   &lt;/syncfusion:Ribbon.ItemContainerStyle&gt;
+        <Setter Property="ItemTemplate">
 
-  &lt;/syncfusion:Ribbon&gt;
+          <Setter.Value>
 
- &lt;/syncfusion:RibbonWindow&gt;
+            <DataTemplate>
+
+               <syncfusion:RibbonButton Label="{Binding ItemHeader}"/>
+
+             </DataTemplate>
+
+          </Setter.Value>
+
+        </Setter>
+
+       </Style>
+
+
+
+      </Setter.Value>
+
+     </Setter>
+
+    </Style>
+
+   </syncfusion:Ribbon.ItemContainerStyle>
+
+  </syncfusion:Ribbon>
+
+ </syncfusion:RibbonWindow>
 
 
 
@@ -799,7 +799,7 @@ The Ribbon is displayed as shown in the following screenshot:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img13.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -813,75 +813,75 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
 
 [XML]
 
-&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+<?xml version="1.0" encoding="utf-8" ?>
 
-&lt;RibbonTabs&gt;
-
-
-
-  &lt;TabCategory Name="Book Rental"&gt;
+<RibbonTabs>
 
 
 
-    &lt;BarCategory Name="Rental"&gt;
-
-      &lt;Command Name="Add to Bookshelf"/&gt;
-
-      &lt;Command Name="My BookShelf"/&gt;
-
-      &lt;Command Name="Popular Books"/&gt;
-
-      &lt;Command Name="Latest Additions"/&gt;
-
-      &lt;Command Name="Price Winning Books"/&gt;
-
-    &lt;/BarCategory&gt;
+  <TabCategory Name="Book Rental">
 
 
 
-    &lt;BarCategory Name="How it works"&gt;
+    <BarCategory Name="Rental">
 
-      &lt;Command Name="Request a book"/&gt;
+      <Command Name="Add to Bookshelf"/>
 
-      &lt;Command Name="Receive"/&gt;
+      <Command Name="My BookShelf"/>
 
-    &lt;/BarCategory&gt;
+      <Command Name="Popular Books"/>
 
+      <Command Name="Latest Additions"/>
 
+      <Command Name="Price Winning Books"/>
 
-  &lt;/TabCategory&gt;
-
-
-
-  &lt;TabCategory Name="Account Settings"&gt;
+    </BarCategory>
 
 
 
-    &lt;BarCategory Name="My Account"&gt;
+    <BarCategory Name="How it works">
 
-      &lt;Command Name="Sign in"/&gt;
+      <Command Name="Request a book"/>
 
-      &lt;Command Name="Deactivate"/&gt;
+      <Command Name="Receive"/>
 
-    &lt;/BarCategory&gt;
-
-
-
-    &lt;BarCategory Name="Security"&gt;
-
-      &lt;Command Name="Enable Secure surfing"/&gt;
-
-      &lt;Command Name="Change Password"/&gt;
-
-    &lt;/BarCategory&gt;
+    </BarCategory>
 
 
 
-  &lt;/TabCategory&gt;  
+  </TabCategory>
 
 
 
-&lt;/RibbonTabs&gt;
+  <TabCategory Name="Account Settings">
+
+
+
+    <BarCategory Name="My Account">
+
+      <Command Name="Sign in"/>
+
+      <Command Name="Deactivate"/>
+
+    </BarCategory>
+
+
+
+    <BarCategory Name="Security">
+
+      <Command Name="Enable Secure surfing"/>
+
+      <Command Name="Change Password"/>
+
+    </BarCategory>
+
+
+
+  </TabCategory>  
+
+
+
+</RibbonTabs>
 
 
 
@@ -893,7 +893,7 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
 
 [XAML]
 
-&lt;XmlDataProvider Source="Data/Data.xml" x:Key="xmlSource" XPath="RibbonTabs"/&gt; 
+<XmlDataProvider Source="Data/Data.xml" x:Key="xmlSource" XPath="RibbonTabs"/> 
 
 
 
@@ -913,91 +913,91 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
 
 
 
- &lt;syncfusion:Ribbon.ItemContainerStyle&gt;
+ <syncfusion:Ribbon.ItemContainerStyle>
 
 
 
-  &lt;Style TargetType="{x:Type syncfusion:RibbonTab}"&gt;
+  <Style TargetType="{x:Type syncfusion:RibbonTab}">
 
 
 
-   &lt;Setter Property="ItemsSource" Value="{Binding XPath=BarCategory}" /&gt;
+   <Setter Property="ItemsSource" Value="{Binding XPath=BarCategory}" />
 
 
 
-    &lt;Setter Property="ItemContainerStyle"&gt;
+    <Setter Property="ItemContainerStyle">
 
 
 
-     &lt;Setter.Value&gt;
+     <Setter.Value>
 
 
 
-       &lt;Style TargetType="{x:Type syncfusion:RibbonBar}"&gt;                                
+       <Style TargetType="{x:Type syncfusion:RibbonBar}">                                
 
 
 
-         &lt;Setter Property="ItemsSource" Value="{Binding XPath=Command}"/&gt;                               
+         <Setter Property="ItemsSource" Value="{Binding XPath=Command}"/>                               
 
 
 
-           &lt;Setter Property="ItemTemplate"&gt;
+           <Setter Property="ItemTemplate">
 
 
 
-             &lt;Setter.Value&gt;
+             <Setter.Value>
 
 
 
-                 &lt;DataTemplate&gt;
+                 <DataTemplate>
 
 
 
-                  &lt;syncfusion:RibbonButton Label="{Binding XPath=@Name}"/&gt;                                            
+                  <syncfusion:RibbonButton Label="{Binding XPath=@Name}"/>                                            
 
 
 
-                 &lt;/DataTemplate&gt;
+                 </DataTemplate>
 
 
 
-             &lt;/Setter.Value&gt;
+             </Setter.Value>
 
 
 
-           &lt;/Setter&gt;
+           </Setter>
 
 
 
-        &lt;Setter Property="Header" Value="{Binding XPath=@Name}"/&gt;
+        <Setter Property="Header" Value="{Binding XPath=@Name}"/>
 
 
 
-      &lt;/Style&gt;
+      </Style>
 
 
 
-    &lt;/Setter.Value&gt;
+    </Setter.Value>
 
 
 
-   &lt;/Setter&gt;
+   </Setter>
 
 
 
-   &lt;Setter Property="Caption" Value="{Binding XPath=@Name}"/&gt;
+   <Setter Property="Caption" Value="{Binding XPath=@Name}"/>
 
 
 
-  &lt;/Style&gt;
+  </Style>
 
 
 
- &lt;/syncfusion:Ribbon.ItemContainerStyle&gt;
+ </syncfusion:Ribbon.ItemContainerStyle>
 
 
 
-&lt;/syncfusion:Ribbon&gt;
+</syncfusion:Ribbon>
 
 
 
@@ -1005,7 +1005,7 @@ A Ribbon is created as shown in the following screenshot:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img14.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -1021,27 +1021,27 @@ It is possible to set the ItemTemplate for the RibborBar to control the display 
 
 [XAML]
 
-       &lt;Style TargetType="{x:Type syncfusion:RibbonBar}"&gt;
+       <Style TargetType="{x:Type syncfusion:RibbonBar}">
 
-        &lt;Setter Property="Header" Value="{Binding BarHeader}"/&gt;
+        <Setter Property="Header" Value="{Binding BarHeader}"/>
 
-        &lt;Setter Property="ItemsSource" Value="{Binding CustomRibbonItems}"/&gt;
+        <Setter Property="ItemsSource" Value="{Binding CustomRibbonItems}"/>
 
-        &lt;Setter Property="ItemTemplate"&gt;
+        <Setter Property="ItemTemplate">
 
-          &lt;Setter.Value&gt;
+          <Setter.Value>
 
-            &lt;DataTemplate&gt;
+            <DataTemplate>
 
-               &lt;syncfusion:RibbonButton Label="{Binding ItemHeader}"/&gt;
+               <syncfusion:RibbonButton Label="{Binding ItemHeader}"/>
 
-             &lt;/DataTemplate&gt;
+             </DataTemplate>
 
-          &lt;/Setter.Value&gt;
+          </Setter.Value>
 
-        &lt;/Setter&gt;
+        </Setter>
 
-       &lt;/Style&gt;
+       </Style>
 
 
 
@@ -1113,27 +1113,27 @@ Define Data templates in the Window’s resources as follows:
 
 [XAML]
 
-&lt;DataTemplate x:Key="SmallButtonTemplate"&gt;
+<DataTemplate x:Key="SmallButtonTemplate">
 
- &lt;syncfusion:RibbonButton SizeForm="Small" Label="{Binding ItemHeader}"/&gt;
+ <syncfusion:RibbonButton SizeForm="Small" Label="{Binding ItemHeader}"/>
 
-&lt;/DataTemplate&gt;
-
-
-
-&lt;DataTemplate x:Key="LargeButtonTemplate"&gt;
-
-  &lt;syncfusion:RibbonButton SizeForm="Large" Label="{Binding ItemHeader}"/&gt;
-
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
-&lt;DataTemplate x:Key="BooleanTemplate"&gt;
+<DataTemplate x:Key="LargeButtonTemplate">
 
-  &lt;syncfusion:RibbonCheckBox  Content="{Binding ItemHeader}"/&gt;
+  <syncfusion:RibbonButton SizeForm="Large" Label="{Binding ItemHeader}"/>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
+
+
+
+<DataTemplate x:Key="BooleanTemplate">
+
+  <syncfusion:RibbonCheckBox  Content="{Binding ItemHeader}"/>
+
+</DataTemplate>
 
 
 
@@ -1145,7 +1145,7 @@ Define Data templates in the Window’s resources as follows:
 
 [XAML]
 
-&lt;local:RibbonItemTemplateSelector x:Key="ribbonItemTemplateSelector"/&gt;
+<local:RibbonItemTemplateSelector x:Key="ribbonItemTemplateSelector"/>
 
 
 
@@ -1157,47 +1157,47 @@ Use this template selector to choose template for the RibbonBar as follows:
 
 [XAML]
 
-&lt;syncfusion:Ribbon Name="Ribbon1"                                       		ItemsSource="{Binding CustomRibbonTabs}"&gt;
+<syncfusion:Ribbon Name="Ribbon1"                                       		ItemsSource="{Binding CustomRibbonTabs}">
 
- &lt;syncfusion:Ribbon.ItemContainerStyle&gt;
-
-
-
-  &lt;Style TargetType="{x:Type syncfusion:RibbonTab}"&gt;
+ <syncfusion:Ribbon.ItemContainerStyle>
 
 
 
-   &lt;Setter Property="Caption" Value="{Binding TabHeader}"&gt;&lt;/Setter&gt;
-
-   &lt;Setter Property="Foreground" Value="Red"&gt;&lt;/Setter&gt;
-
-   &lt;Setter Property="ItemsSource" Value="{Binding CustomRibbonBars}"/&gt;
-
-   &lt;Setter Property="ItemContainerStyle"&gt;
-
-     &lt;Setter.Value&gt;
+  <Style TargetType="{x:Type syncfusion:RibbonTab}">
 
 
 
-       &lt;Style TargetType="{x:Type syncfusion:RibbonBar}"&gt;
+   <Setter Property="Caption" Value="{Binding TabHeader}"></Setter>
 
-         &lt;Setter Property="Header" Value="{Binding BarHeader}"/&gt;
+   <Setter Property="Foreground" Value="Red"></Setter>
 
-         &lt;Setter Property="ItemsSource" Value="{Binding CustomRibbonItems}"/&gt;
+   <Setter Property="ItemsSource" Value="{Binding CustomRibbonBars}"/>
 
-         &lt;Setter Property="ItemTemplateSelector" Value="{StaticResource 				ribbonItemTemplateSelector}"/&gt;                                                     
+   <Setter Property="ItemContainerStyle">
 
-       &lt;/Style&gt;
+     <Setter.Value>
 
-      &lt;/Setter.Value&gt;
 
-    &lt;/Setter&gt;
 
-   &lt;/Style&gt;
+       <Style TargetType="{x:Type syncfusion:RibbonBar}">
 
-  &lt;/syncfusion:Ribbon.ItemContainerStyle&gt;
+         <Setter Property="Header" Value="{Binding BarHeader}"/>
 
-&lt;/syncfusion:Ribbon&gt;
+         <Setter Property="ItemsSource" Value="{Binding CustomRibbonItems}"/>
+
+         <Setter Property="ItemTemplateSelector" Value="{StaticResource 				ribbonItemTemplateSelector}"/>                                                     
+
+       </Style>
+
+      </Setter.Value>
+
+    </Setter>
+
+   </Style>
+
+  </syncfusion:Ribbon.ItemContainerStyle>
+
+</syncfusion:Ribbon>
 
 
 
@@ -1207,7 +1207,7 @@ A ribbon generates as shown in the following screenshot:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img15.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -1250,7 +1250,7 @@ The following code snippet shows how to set the visual style in XAML:
 
 [XAML]
 
-&lt;syncfusion:RibbonWindow x:Class="BackStageSample.MainWindow"        syncfusion:SkinStorage.VisualStyle="Office2010Blue"        Title="BackStage Demo"  xmlns:syncfusion="http://schemas.syncfusion.com/wpf" /&gt;    
+<syncfusion:RibbonWindow x:Class="BackStageSample.MainWindow"        syncfusion:SkinStorage.VisualStyle="Office2010Blue"        Title="BackStage Demo"  xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />    
 
 
 
@@ -1276,7 +1276,7 @@ The class diagram for Ribbon controls are as follows.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img16.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img16.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1284,7 +1284,7 @@ The class diagram for Ribbon controls are as follows.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img17.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img17.jpeg)' | markdownify }}
 {:.image }
 
 

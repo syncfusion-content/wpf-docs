@@ -33,9 +33,9 @@ You need to initialize the sparkline represented by the following class Syncfusi
 
 [XAML]
 
-&lt;Syncfusion:SfLineSparkline&gt;
+<Syncfusion:SfLineSparkline>
 
-&lt;/Syncfusion:SfLineSparkline&gt;
+</Syncfusion:SfLineSparkline>
 
 Create a Sample Data Source
 
@@ -107,11 +107,11 @@ We need to add the above UsersViewModel to the DataContext of the sparkline, bin
 
 …
 
-            &lt;Grid.DataContext&gt;
+            <Grid.DataContext>
 
-                &lt;local:UsersViewModel/&gt;
+                <local:UsersViewModel/>
 
-            &lt;/Grid.DataContext&gt;
+            </Grid.DataContext>
 
             <Syncfusion:SfLineSparkline 
 
@@ -119,7 +119,7 @@ We need to add the above UsersViewModel to the DataContext of the sparkline, bin
 
 YBindingPath="NoOfUsers">
 
-            &lt;/Syncfusion:SfLineSparkline &gt;
+            </Syncfusion:SfLineSparkline >
 
 > 
 
@@ -129,7 +129,7 @@ YBindingPath="NoOfUsers">
 
 The following illustrates the result of the above code sample,
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Getting-started_images/Getting-started_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Getting-started_images/Getting-started_img1.png)' | markdownify }}
 {:.image }
 
 

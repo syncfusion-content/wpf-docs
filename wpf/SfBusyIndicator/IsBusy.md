@@ -15,11 +15,11 @@ The IsBusy property in the BusyIndicator control is used to determine whether an
 
 
 
-&lt;Grid Background="CornflowerBlue"&gt;
+<Grid Background="CornflowerBlue">
 
-    &lt;Navigation:SfBusyIndicator IsBusy="True"/&gt;
+    <Navigation:SfBusyIndicator IsBusy="True"/>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -35,7 +35,7 @@ busyIndicator.IsBusy = true;
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](IsBusy_images/IsBusy_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](IsBusy_images/IsBusy_img1.png)' | markdownify }}
 {:.image }
 
 

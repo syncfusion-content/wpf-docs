@@ -54,7 +54,7 @@ Rulers display the coordinates of elements on the diagram page. Negative label v
 
 
 
-{ ![C:/Users/jeganr/Desktop/UGDocumentation/diagramWPF/DiagramPageIllustrated.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![C:/Users/jeganr/Desktop/UGDocumentation/diagramWPF/DiagramPageIllustrated.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -64,7 +64,7 @@ The class diagram for Essential Diagram WPF is as follows.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -76,7 +76,7 @@ This section illustrates the step-by-step procedure to create a WPF application.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -84,7 +84,7 @@ This section illustrates the step-by-step procedure to create a WPF application.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -119,13 +119,13 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWP
 
 xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
-&lt;Grid Name="diagramgrid"&gt;
+<Grid Name="diagramgrid">
 
-&lt;sfdiagram:DiagramControl&gt;&lt;/sfdiagram:DiagramControl&gt;
+<sfdiagram:DiagramControl></sfdiagram:DiagramControl>
 
-&lt;/Grid&gt;
+</Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -165,15 +165,15 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWP
 
 xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
-&lt;Grid Name="diagramgrid"&gt;
+<Grid Name="diagramgrid">
 
-&lt;sfdiagram:DiagramControl IsSymbolPaletteEnabled="True"&gt;
+<sfdiagram:DiagramControl IsSymbolPaletteEnabled="True">
 
-&lt;/sfdiagram:DiagramControl&gt;
+</sfdiagram:DiagramControl>
 
-&lt;/Grid&gt;
+</Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -216,21 +216,21 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWP
 
 xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;Grid Name="diagramgrid"&gt;
+    <Grid Name="diagramgrid">
 
-        &lt;sfdiagram:DiagramControl IsSymbolPaletteEnabled="True"&gt;
+        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True">
 
-           &lt;sfdiagram:DiagramControl.Model&gt;
+           <sfdiagram:DiagramControl.Model>
 
-                &lt;sfdiagram:DiagramModel&gt;&lt;/sfdiagram:DiagramModel&gt;
+                <sfdiagram:DiagramModel></sfdiagram:DiagramModel>
 
-            &lt;/sfdiagram:DiagramControl.Model&gt;
+            </sfdiagram:DiagramControl.Model>
 
-        &lt;/sfdiagram:DiagramControl&gt;
+        </sfdiagram:DiagramControl>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -285,29 +285,29 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWP
 
 xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;Grid Name="diagramgrid"&gt;
+    <Grid Name="diagramgrid">
 
-        &lt;sfdiagram:DiagramControl IsSymbolPaletteEnabled="True"&gt;
+        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True">
 
-            &lt;sfdiagram:DiagramControl.Model&gt;
+            <sfdiagram:DiagramControl.Model>
 
-                &lt;sfdiagram:DiagramModel&gt;&lt;/sfdiagram:DiagramModel&gt;
+                <sfdiagram:DiagramModel></sfdiagram:DiagramModel>
 
-            &lt;/sfdiagram:DiagramControl.Model&gt;
+            </sfdiagram:DiagramControl.Model>
 
 
 
-            &lt;sfdiagram:DiagramControl.View&gt;
+            <sfdiagram:DiagramControl.View>
 
-                &lt;sfdiagram:DiagramView &gt;&lt;/sfdiagram:DiagramView&gt;
+                <sfdiagram:DiagramView ></sfdiagram:DiagramView>
 
-            &lt;/sfdiagram:DiagramControl.View&gt;
+            </sfdiagram:DiagramControl.View>
 
-        &lt;/sfdiagram:DiagramControl&gt;
+        </sfdiagram:DiagramControl>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -351,7 +351,7 @@ diagramgrid.Children.Add(dc)
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -371,28 +371,28 @@ Following are the steps to create Diagram Control through Designer.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
 2. Select Diagram Control from ToolBox.
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
 3. Drag the Diagram Control onto the Designer.
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
 4. DiagramControl is added to the Page and also the assembly reference is added to the Project file.
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -422,29 +422,29 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWP
 
 xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;Grid Name="diagramgrid"&gt;
+    <Grid Name="diagramgrid">
 
-        &lt;sfdiagram:DiagramControl IsSymbolPaletteEnabled="True"&gt;
+        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True">
 
-            &lt;sfdiagram:DiagramControl.Model&gt;
+            <sfdiagram:DiagramControl.Model>
 
-                &lt;sfdiagram:DiagramModel x:Name="diagramModel"&gt;
+                <sfdiagram:DiagramModel x:Name="diagramModel">
 
-                &lt;/sfdiagram:DiagramModel&gt;
+                </sfdiagram:DiagramModel>
 
-            &lt;/sfdiagram:DiagramControl.Model&gt;
+            </sfdiagram:DiagramControl.Model>
 
-            &lt;sfdiagram:DiagramControl.View&gt;
+            <sfdiagram:DiagramControl.View>
 
-                &lt;sfdiagram:DiagramView&gt;&lt;/sfdiagram:DiagramView&gt;
+                <sfdiagram:DiagramView></sfdiagram:DiagramView>
 
-            &lt;/sfdiagram:DiagramControl.View&gt;
+            </sfdiagram:DiagramControl.View>
 
-        &lt;/sfdiagram:DiagramControl&gt;
+        </sfdiagram:DiagramControl>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -516,21 +516,21 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWP
 
 xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;Grid Name="diagramgrid"&gt;
+    <Grid Name="diagramgrid">
 
-        &lt;sfdiagram:DiagramControl IsSymbolPaletteEnabled="True"&gt;
+        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True">
 
-            &lt;sfdiagram:DiagramControl.View&gt;
+            <sfdiagram:DiagramControl.View>
 
-                &lt;sfdiagram:DiagramView &gt;&lt;/sfdiagram:DiagramView&gt;
+                <sfdiagram:DiagramView ></sfdiagram:DiagramView>
 
-            &lt;/sfdiagram:DiagramControl.View&gt;
+            </sfdiagram:DiagramControl.View>
 
-        &lt;/sfdiagram:DiagramControl&gt;
+        </sfdiagram:DiagramControl>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -856,7 +856,7 @@ diagramModel.Connections.Add(connection)
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1066,41 +1066,41 @@ The following code shows how the automatic layout can be generated.
 
     FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        &lt;!-- Model to add nodes and connections--&gt;
+        <!-- Model to add nodes and connections-->
 
-        &lt;syncfusion:DiagramControl.Model&gt;
+        <syncfusion:DiagramControl.Model>
 
              <syncfusion:DiagramModel LayoutType="DirectedTreeLayout" Orientation="TopBottom" 
 
                                         x:Name="diagramModel">
 
-             &lt;/syncfusion:DiagramModel&gt;
+             </syncfusion:DiagramModel>
 
-        &lt;/syncfusion:DiagramControl.Model&gt;
-
-
-
-        &lt;!--View to display nodes and connections added through model.--&gt;
-
-        &lt;syncfusion:DiagramControl.View&gt;
-
-            &lt;syncfusion:DiagramView Name="diagramView"&gt;
-
-            &lt;/syncfusion:DiagramView&gt;
-
-        &lt;/syncfusion:DiagramControl.View&gt;
-
-    &lt;/syncfusion:DiagramControl&gt;
+        </syncfusion:DiagramControl.Model>
 
 
 
-&lt;/Window&gt;
+        <!--View to display nodes and connections added through model.-->
+
+        <syncfusion:DiagramControl.View>
+
+            <syncfusion:DiagramView Name="diagramView">
+
+            </syncfusion:DiagramView>
+
+        </syncfusion:DiagramControl.View>
+
+    </syncfusion:DiagramControl>
+
+
+
+</Window>
 
 
 
@@ -1316,7 +1316,7 @@ diagramModel.Connections.Add(connection)
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img11.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1467,33 +1467,33 @@ The following code example specifies how the Hierarchical-tree layout can be spe
 
 
 
-&lt;!--Diagram Control--&gt;       
+<!--Diagram Control-->       
 
-&lt;syncfusion:DiagramControl  Name="diagramControl"&gt;           
+<syncfusion:DiagramControl  Name="diagramControl">           
 
-&lt;!-- Model to add nodes and connections--&gt;            &lt;syncfusion:DiagramControl.Model&gt;               
+<!-- Model to add nodes and connections-->            <syncfusion:DiagramControl.Model>               
 
-&lt;syncfusion:DiagramModel  LayoutType="HierarchicalTreeLayout" Orientation="TopBottom"   x:Name="diagramModel"&gt;               &lt;/syncfusion:DiagramModel&gt;           
+<syncfusion:DiagramModel  LayoutType="HierarchicalTreeLayout" Orientation="TopBottom"   x:Name="diagramModel">               </syncfusion:DiagramModel>           
 
-&lt;/syncfusion:DiagramControl.Model&gt;   
+</syncfusion:DiagramControl.Model>   
 
 
 
-&lt;!--View to display nodes and connections added through model.--&gt;            
+<!--View to display nodes and connections added through model.-->            
 
-&lt;syncfusion:DiagramControl.View&gt;              
+<syncfusion:DiagramControl.View>              
 
   <syncfusion:DiagramView Bounds="0,0,700,750"  
 
   Background="White"   Name="diagramView"   >                    
 
-  &lt;/syncfusion:DiagramView&gt;           
+  </syncfusion:DiagramView>           
 
- &lt;/syncfusion:DiagramControl.View&gt;       
+ </syncfusion:DiagramControl.View>       
 
-&lt;/syncfusion:DiagramControl&gt;
+</syncfusion:DiagramControl>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -1815,7 +1815,7 @@ diagramModel.Connections.Add(connection)
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img12.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1937,39 +1937,39 @@ N/A</td></tr>
 
 
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
-
-
-
-        &lt;!-- Model to add nodes and connections--&gt;
-
-        &lt;syncfusion:DiagramControl.Model&gt;
-
-            &lt;syncfusion:DiagramModel x:Name="diagramModel" LayoutType="RadialTreeLayout"&gt;
-
-            &lt;/syncfusion:DiagramModel&gt;
-
-        &lt;/syncfusion:DiagramControl.Model&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        &lt;!--View to display nodes and connections added through model.--&gt;
+        <!-- Model to add nodes and connections-->
 
-        &lt;syncfusion:DiagramControl.View&gt;
+        <syncfusion:DiagramControl.Model>
 
-            &lt;syncfusion:DiagramView Name="diagramView"&gt;
+            <syncfusion:DiagramModel x:Name="diagramModel" LayoutType="RadialTreeLayout">
 
-            &lt;/syncfusion:DiagramView&gt;
+            </syncfusion:DiagramModel>
 
-        &lt;/syncfusion:DiagramControl.View&gt;
-
-    &lt;/syncfusion:DiagramControl&gt;
+        </syncfusion:DiagramControl.Model>
 
 
 
-&lt;/Window&gt;
+        <!--View to display nodes and connections added through model.-->
+
+        <syncfusion:DiagramControl.View>
+
+            <syncfusion:DiagramView Name="diagramView">
+
+            </syncfusion:DiagramView>
+
+        </syncfusion:DiagramControl.View>
+
+    </syncfusion:DiagramControl>
+
+
+
+</Window>
 
 
 
@@ -2175,7 +2175,7 @@ diagramModel.Connections.Add(connection)
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img13.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -2325,11 +2325,11 @@ The Bounds property of the DiagramView class can be used to specify the position
 
     FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
 
-&lt;syncfusion:DiagramControl IsSymbolPaletteEnabled="False" Name="diagramControl"&gt;
+<syncfusion:DiagramControl IsSymbolPaletteEnabled="False" Name="diagramControl">
 
-  &lt;!-- Model to add nodes and connections--&gt;
+  <!-- Model to add nodes and connections-->
 
-&lt;syncfusion:DiagramControl.Model&gt;
+<syncfusion:DiagramControl.Model>
 
 <syncfusion:DiagramModel
 
@@ -2349,21 +2349,21 @@ ColumnCount="4"
 
 x:Name="diagramModel">
 
-&lt;/syncfusion:DiagramModel&gt;
+</syncfusion:DiagramModel>
 
- &lt;/syncfusion:DiagramControl.Model&gt;
+ </syncfusion:DiagramControl.Model>
 
- &lt;!--View to display nodes and connections added through model.--&gt;
+ <!--View to display nodes and connections added through model.-->
 
- &lt;syncfusion:DiagramControl.View&gt;
+ <syncfusion:DiagramControl.View>
 
-     &lt;syncfusion:DiagramView Bounds="0,0,200,200" Name="diagramView"/&gt;
+     <syncfusion:DiagramView Bounds="0,0,200,200" Name="diagramView"/>
 
-     &lt;/syncfusion:DiagramControl.View&gt;
+     </syncfusion:DiagramControl.View>
 
 
 
-&lt;/syncfusion:DiagramControl&gt;&lt;/Window&gt;
+</syncfusion:DiagramControl></Window>
 
 
 
@@ -2419,7 +2419,7 @@ diagramModel.ColumnCount = 3
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img14.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2524,23 +2524,23 @@ The following code illustrates how to generate the BowTie layout:
 
 [XAML]
 
-           &lt;!--Diagram Control--&gt;       
+           <!--Diagram Control-->       
 
-        &lt;syncfusion:DiagramControl  Name="diagramControl" Grid.Row="1"&gt;            
+        <syncfusion:DiagramControl  Name="diagramControl" Grid.Row="1">            
 
-            &lt;syncfusion:DiagramControl.Model&gt;
+            <syncfusion:DiagramControl.Model>
 
-                &lt;syncfusion:DiagramModel x:Name="diagramModel" LayoutType="BowtieLayout"/&gt;
+                <syncfusion:DiagramModel x:Name="diagramModel" LayoutType="BowtieLayout"/>
 
-            &lt;/syncfusion:DiagramControl.Model&gt;            
+            </syncfusion:DiagramControl.Model>            
 
-            &lt;syncfusion:DiagramControl.View&gt;
+            <syncfusion:DiagramControl.View>
 
-                &lt;syncfusion:DiagramView Name="diagramView" Bounds="0, 0, 1400, 700"/&gt;
+                <syncfusion:DiagramView Name="diagramView" Bounds="0, 0, 1400, 700"/>
 
-            &lt;/syncfusion:DiagramControl.View&gt;
+            </syncfusion:DiagramControl.View>
 
-        &lt;/syncfusion:DiagramControl&gt;
+        </syncfusion:DiagramControl>
 
 
 
@@ -2830,7 +2830,7 @@ Connect(n4, n6)
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img15.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -2947,7 +2947,7 @@ _Note: If the OrderNodes property is set to null, then the table layout will be 
 
 
 
-{ ![C:/Users/labuser/Desktop/selection.PNG](Getting-Started_images/Getting-Started_img16.png) | markdownify }
+{{ '![C:/Users/labuser/Desktop/selection.PNG](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
 {:.image }
 
 

@@ -260,7 +260,7 @@ The following screenshot illustrates a group of two nodes created by using code 
 
 
 
-{ ![](Groups_images/Groups_img1.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -298,7 +298,7 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-{ ![](Groups_images/Groups_img2.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -306,7 +306,7 @@ _Selection of Objects to be Grouped_
 
 
 
-{ ![](Groups_images/Groups_img3.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -318,7 +318,7 @@ The new group is indicated by the selection rectangle which is displayed surroun
 
 
 
-{ ![](Groups_images/Groups_img4.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -330,7 +330,7 @@ You can also invoke the Group command by using the context menu which is display
 
 
 
-{ ![](Groups_images/Groups_img5.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -354,7 +354,7 @@ The following steps illustrate how to select an object which has two groups.
 
 
 
-{ ![](Groups_images/Groups_img6.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -364,7 +364,7 @@ _Outer Group Selected_
 
 
 
-{ ![](Groups_images/Groups_img7.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -374,7 +374,7 @@ _Inner Group Selected_
 
 
 
-{ ![](Groups_images/Groups_img8.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -388,7 +388,7 @@ To edit a group, you have to make sure that the corresponding group is selected.
 
 
 
-{ ![](Groups_images/Groups_img9.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -398,7 +398,7 @@ _Resizing a Group_
 
 
 
-{ ![](Groups_images/Groups_img10.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -408,7 +408,7 @@ Once a group is edited, the group's selection rectangle updates its area to fit 
 
 
 
-{ ![](Groups_images/Groups_img11.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -434,7 +434,7 @@ This will display a red adorner along the group's boundary, indicating that the 
 
 
 
-{ ![](Groups_images/Groups_img12.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -444,7 +444,7 @@ _Creating Connection to a Group_
 
 
 
-{ ![](Groups_images/Groups_img13.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -461,7 +461,7 @@ When the mouse pointer is over the center port, a red adorner will be displayed 
 
 
 
-{ ![](Groups_images/Groups_img14.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -471,7 +471,7 @@ _Creating Connection to a Child Object_
 
 
 
-{ ![](Groups_images/Groups_img15.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -689,7 +689,7 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
 
 
 
-{ ![](Groups_images/Groups_img16.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img16.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -701,7 +701,7 @@ As soon as the group is ungrouped, the selection rectangle disappears indicating
 
 
 
-{ ![](Groups_images/Groups_img17.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img17.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -713,7 +713,7 @@ You can also invoke the Ungroup command by using the context menu which is displ
 
 
 
-{ ![](Groups_images/Groups_img18.jpeg) | markdownify }
+{{ '![](Groups_images/Groups_img18.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1239,7 +1239,7 @@ Lan1.Visible = False
 
 
 
-{ ![](Groups_images/Groups_img19.png) | markdownify }
+{{ '![](Groups_images/Groups_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -1247,7 +1247,7 @@ _Before hiding the layer_
 
 
 
-{ ![](Groups_images/Groups_img20.png) | markdownify }
+{{ '![](Groups_images/Groups_img20.png)' | markdownify }}
 {:.image }
 
 

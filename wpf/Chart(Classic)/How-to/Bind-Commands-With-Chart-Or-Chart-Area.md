@@ -15,39 +15,39 @@ Custom RoutedUICommands can be bound to the Chart or ChartArea just like any oth
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-    &lt;XmlDataProvider x:Key="myXmlData"&gt;
+    <XmlDataProvider x:Key="myXmlData">
 
-        &lt;x:XData&gt;
+        <x:XData>
 
-            &lt;Products xmlns=""&gt;
+            <Products xmlns="">
 
-                &lt;Product X="1" Series1Y="3" Series1Y1="6"  Series2Y="4" Series2Y1="6" Series3Y="2" Series3Y1="2"/&gt;
+                <Product X="1" Series1Y="3" Series1Y1="6"  Series2Y="4" Series2Y1="6" Series3Y="2" Series3Y1="2"/>
 
-                &lt;Product X="2" Series1Y="2" Series1Y1="4" Series2Y="3" Series2Y1="5" Series3Y="2.5" Series3Y1="6"/&gt;
+                <Product X="2" Series1Y="2" Series1Y1="4" Series2Y="3" Series2Y1="5" Series3Y="2.5" Series3Y1="6"/>
 
-                &lt;Product X="3" Series1Y="3" Series1Y1="6" Series2Y="3.5" Series2Y1="5" Series3Y="1" Series3Y1="4"/&gt;
+                <Product X="3" Series1Y="3" Series1Y1="6" Series2Y="3.5" Series2Y1="5" Series3Y="1" Series3Y1="4"/>
 
-                &lt;Product X="4" Series1Y="2" Series1Y1="7" Series2Y="1" Series2Y1="6" Series3Y="4" Series3Y1="6"/&gt;
+                <Product X="4" Series1Y="2" Series1Y1="7" Series2Y="1" Series2Y1="6" Series3Y="4" Series3Y1="6"/>
 
-                &lt;Product X="5" Series1Y="1" Series1Y1="3" Series2Y="3.5" Series2Y1="1" Series3Y="3" Series3Y1="8"/&gt;
+                <Product X="5" Series1Y="1" Series1Y1="3" Series2Y="3.5" Series2Y1="1" Series3Y="3" Series3Y1="8"/>
 
-            &lt;/Products&gt;
+            </Products>
 
-        &lt;/x:XData&gt;
+        </x:XData>
 
-    &lt;/XmlDataProvider&gt;
+    </XmlDataProvider>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
-&lt;Grid&gt;
+<Grid>
 
-    &lt;sfchart:Chart Name="Chart1"&gt;
+    <sfchart:Chart Name="Chart1">
 
-        &lt;sfchart:ChartArea GridBackground="White"&gt;
+        <sfchart:ChartArea GridBackground="White">
 
             <sfchart:ChartSeries Name="Series11" Type= "Column"
 
@@ -55,13 +55,13 @@ Custom RoutedUICommands can be bound to the Chart or ChartArea just like any oth
 
             BindingPathX="X" BindingPathsY="Series1Y, Series1Y1" >
 
-            &lt;/sfchart:ChartSeries&gt;
+            </sfchart:ChartSeries>
 
-        &lt;/sfchart:ChartArea&gt;
+        </sfchart:ChartArea>
 
-    &lt;/sfchart:Chart&gt;
+    </sfchart:Chart>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 

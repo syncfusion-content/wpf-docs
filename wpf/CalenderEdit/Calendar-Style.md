@@ -28,7 +28,7 @@ Use the following code example to set this property.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding calendar with calendar style as standard --&gt;&lt;syncfusion:CalendarEdit Name="calendarEdit" CalendarStyle="Standard"/&gt;</td></tr>
+[XAML]<!-- Adding calendar with calendar style as standard --><syncfusion:CalendarEdit Name="calendarEdit" CalendarStyle="Standard"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting calendar style as standardcalendarEdit.CalendarStyle = CalendarStyle.Standard;//Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>

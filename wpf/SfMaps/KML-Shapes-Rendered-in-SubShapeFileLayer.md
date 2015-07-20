@@ -13,29 +13,29 @@ documentation: ug
 
 
 
-        &lt;syncfusion:SfMap&gt;
+        <syncfusion:SfMap>
 
-            &lt;syncfusion:SfMap.Layers&gt;
+            <syncfusion:SfMap.Layers>
 
-                &lt;syncfusion:ShapeFileLayer Uri="KmlImportDemo. ShapeFiles.world1.shp"&gt;
+                <syncfusion:ShapeFileLayer Uri="KmlImportDemo. ShapeFiles.world1.shp">
 
-                    &lt;syncfusion:ShapeFileLayer.SubShapeFileLayers&gt;
+                    <syncfusion:ShapeFileLayer.SubShapeFileLayers>
 
-                        &lt;syncfusion:SubShapeFileLayer Uri="KmlImportDemo.KmlFiles.Eu.kml"/&gt;
+                        <syncfusion:SubShapeFileLayer Uri="KmlImportDemo.KmlFiles.Eu.kml"/>
 
-                    &lt;/syncfusion:ShapeFileLayer.SubShapeFileLayers&gt;
+                    </syncfusion:ShapeFileLayer.SubShapeFileLayers>
 
-                &lt;/syncfusion:ShapeFileLayer&gt;
+                </syncfusion:ShapeFileLayer>
 
-            &lt;/syncfusion:SfMap.Layers&gt;
+            </syncfusion:SfMap.Layers>
 
-        &lt;/syncfusion:SfMap&gt;
-
-
+        </syncfusion:SfMap>
 
 
 
-{ ![](KML-Shapes-Rendered-in-SubShapeFileLayer_images/KML-Shapes-Rendered-in-SubShapeFileLayer_img1.png) | markdownify }
+
+
+{{ '![](KML-Shapes-Rendered-in-SubShapeFileLayer_images/KML-Shapes-Rendered-in-SubShapeFileLayer_img1.png)' | markdownify }}
 {:.image }
 
 

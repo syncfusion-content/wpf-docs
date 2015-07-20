@@ -129,37 +129,37 @@ olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=a
 
 
 
-&lt;!- Adding Elements to Categorical Axis --&gt;
+<!- Adding Elements to Categorical Axis -->
 
-&lt;syncfusion:OlapGrid.CategoricalAxis&gt;
+<syncfusion:OlapGrid.CategoricalAxis>
 
-                    &lt;syncfusion:Dimension Name="Date" HierarchyName="Fiscal" LevelName="Fiscal Year" IncludeMembers="FY 2002, FY 2003"  /&gt;   &lt;!- Multiple Members where specified by comma separate --&gt;                 
+                    <syncfusion:Dimension Name="Date" HierarchyName="Fiscal" LevelName="Fiscal Year" IncludeMembers="FY 2002, FY 2003"  />   <!- Multiple Members where specified by comma separate -->                 
 
-                    &lt;syncfusion:Kpi Name="Revenue" ShowGoal="True" ShowStatus="True" ShowValue="True" ShowTrend="True" /&gt;
+                    <syncfusion:Kpi Name="Revenue" ShowGoal="True" ShowStatus="True" ShowValue="True" ShowTrend="True" />
 
-&lt;/syncfusion:OlapGrid.CategoricalAxis&gt;
-
-
-
-&lt;!- Adding Elements to Series Axis --&gt;
-
-&lt;syncfusion:OlapGrid.SeriesAxis&gt;
-
-                    &lt;syncfusion:Dimension Name="Sales Channel" HierarchyName="Sales Channel" LevelName="Sales Channel" /&gt;
-
-                    &lt;syncfusion:Dimension Name="Product" HierarchyName="Product Model Lines" LevelName="Product Line" IncludeMembers="Road" /&gt;
-
-&lt;/syncfusion:OlapGrid.SeriesAxis&gt;
+</syncfusion:OlapGrid.CategoricalAxis>
 
 
 
-&lt;/syncfusion:OlapGrid&gt;
+<!- Adding Elements to Series Axis -->
+
+<syncfusion:OlapGrid.SeriesAxis>
+
+                    <syncfusion:Dimension Name="Sales Channel" HierarchyName="Sales Channel" LevelName="Sales Channel" />
+
+                    <syncfusion:Dimension Name="Product" HierarchyName="Product Model Lines" LevelName="Product Line" IncludeMembers="Road" />
+
+</syncfusion:OlapGrid.SeriesAxis>
+
+
+
+</syncfusion:OlapGrid>
 
 
 
 
 
-{ ![](Data-Source_images/Data-Source_img1.png) | markdownify }
+{{ '![](Data-Source_images/Data-Source_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -178,5 +178,5 @@ Or
 
 Navigate to:
 
-..\Syncfusion\EssentialStudio\&lt;Versionnumber&gt;\BI\WPF\OlapGrid.WPF\Samples\Defining Reports\XAML Configuration Demo 
+..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Defining Reports\XAML Configuration Demo 
 

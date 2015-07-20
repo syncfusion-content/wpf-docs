@@ -13,7 +13,7 @@ The SplitButtonAdv control displays a button with splitter, which provides both 
 
 
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 

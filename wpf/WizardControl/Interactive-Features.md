@@ -23,11 +23,11 @@ To add a wizard page to the Wizard control, use the below code
 
 
 
-&lt;syncfusion:WizardControl Name="wizardControl"&gt;
+<syncfusion:WizardControl Name="wizardControl">
 
-    &lt;syncfusion:WizardPage Name="wizardPage"/&gt;
+    <syncfusion:WizardPage Name="wizardPage"/>
 
-&lt;/syncfusion:WizardControl&gt;
+</syncfusion:WizardControl>
 
 
 
@@ -47,7 +47,7 @@ wizardControl.Items.Add(wizardPage);
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img1.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -61,13 +61,13 @@ To add two wizard pages to the Wizard control, refer the below code
 
 
 
-&lt;syncfusion:WizardControl Name="wizardControl"&gt;
+<syncfusion:WizardControl Name="wizardControl">
 
-    &lt;syncfusion:WizardPage Name="wizardPage1"/&gt;
+    <syncfusion:WizardPage Name="wizardPage1"/>
 
-    &lt;syncfusion:WizardPage Name="wizardPage2"/&gt;
+    <syncfusion:WizardPage Name="wizardPage2"/>
 
-&lt;/syncfusion:WizardControl&gt;
+</syncfusion:WizardControl>
 
 
 
@@ -89,7 +89,7 @@ wizardControl.Items.Add(wizardPage2);
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img2.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -107,15 +107,15 @@ To set this property, use the below code.
 
 
 
-&lt;syncfusion:WizardControl Name="wizardControl" SelectedWizardPage="wizardPage2" Foreground="SlateBlue"&gt;
+<syncfusion:WizardControl Name="wizardControl" SelectedWizardPage="wizardPage2" Foreground="SlateBlue">
 
-    &lt;syncfusion:WizardPage Name="wizardPage1" Title="WizardPage1"/&gt;
+    <syncfusion:WizardPage Name="wizardPage1" Title="WizardPage1"/>
 
-    &lt;syncfusion:WizardPage Name="wizardPage2" Title="WizardPage2"/&gt;
+    <syncfusion:WizardPage Name="wizardPage2" Title="WizardPage2"/>
 
-    &lt;syncfusion:WizardPage Name="wizardPage3" Title="WizardPage3"/&gt;
+    <syncfusion:WizardPage Name="wizardPage3" Title="WizardPage3"/>
 
-&lt;/syncfusion:WizardControl&gt;
+</syncfusion:WizardControl>
 
 
 
@@ -153,7 +153,7 @@ wizardControl.SelectedWizardPage = wizardPage2;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img3.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -169,13 +169,13 @@ Use the following code snippet to set these properties.
 
 
 
-&lt;syncfusion:WizardControl Name="wizardControl"&gt;
+<syncfusion:WizardControl Name="wizardControl">
 
     <syncfusion:WizardPage Name="wizardPage" Foreground="Navy" Title="WizardPage1"
 
 Description="This is the first page of wizard" />
 
-&lt;/syncfusion:WizardControl&gt;
+</syncfusion:WizardControl>
 
 
 
@@ -199,7 +199,7 @@ wizardPage.Description = "This is the first page of wizard"
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img4.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -221,11 +221,11 @@ Use the below code snippet to set the PageType as Blank.
 
 
 
-&lt;syncfusion:WizardControl Name="wizardControl"&gt;
+<syncfusion:WizardControl Name="wizardControl">
 
-    &lt;syncfusion:WizardPage Name="wizardPage" PageType="Blank"/&gt;
+    <syncfusion:WizardPage Name="wizardPage" PageType="Blank"/>
 
-&lt;/syncfusion:WizardControl&gt;
+</syncfusion:WizardControl>
 
 
 
@@ -247,7 +247,7 @@ wizardPage.PageType = WizardPageType.Blank;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img5.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -261,11 +261,11 @@ Use the following code snippet to set the PageType as Interior.
 
 
 
-&lt;syncfusion:WizardControl Name="wizardControl"&gt;
+<syncfusion:WizardControl Name="wizardControl">
 
-    &lt;syncfusion:WizardPage Name="wizardPage" PageType="Interior"/&gt;
+    <syncfusion:WizardPage Name="wizardPage" PageType="Interior"/>
 
-&lt;/syncfusion:WizardControl&gt;
+</syncfusion:WizardControl>
 
 
 
@@ -295,11 +295,11 @@ Use the following code snippet to set the PageType as Exterior.
 
 
 
-&lt;syncfusion:WizardControl Name="wizardControl"&gt;
+<syncfusion:WizardControl Name="wizardControl">
 
-    &lt;syncfusion:WizardPage Name="wizardPage" PageType="Exterior"/&gt;
+    <syncfusion:WizardPage Name="wizardPage" PageType="Exterior"/>
 
-&lt;/syncfusion:WizardControl&gt;
+</syncfusion:WizardControl>
 
 
 
@@ -319,7 +319,7 @@ wizardPage.PageType = WizardPageType.Exterior;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img6.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -355,9 +355,9 @@ Here is the code snippet.
 
 NextEnabled="True" CancelEnabled="True">
 
-    &lt;syncfusion:WizardPage Name="wizardPage"/&gt;
+    <syncfusion:WizardPage Name="wizardPage"/>
 
-&lt;/syncfusion:WizardControl&gt;
+</syncfusion:WizardControl>
 
 
 
@@ -383,7 +383,7 @@ wizardControl.CancelEnabled = true;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img7.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -405,9 +405,9 @@ To set these properties, refer the below code.
 
 CancelVisible="True" HelpVisible="True" FinishVisible="False">
 
-    &lt;syncfusion:WizardPage Name="wizardPage"/&gt;
+    <syncfusion:WizardPage Name="wizardPage"/>
 
-&lt;/syncfusion:WizardControl&gt;
+</syncfusion:WizardControl>
 
 
 
@@ -437,7 +437,7 @@ wizardControl.HelpVisible = true;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img8.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -457,9 +457,9 @@ You can set custom text for the Back, Next, Finish, Help and Cancel navigation b
 
 HelpText="Help" CancelText="Exit" FinishText="Finish" NextText="Next">
 
-    &lt;syncfusion:WizardPage Name="wizardPage"/&gt;
+    <syncfusion:WizardPage Name="wizardPage"/>
 
-&lt;/syncfusion:WizardControl&gt;
+</syncfusion:WizardControl>
 
 
 
@@ -489,7 +489,7 @@ wizardControl.FinishText = "Finish";
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img9.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -563,11 +563,11 @@ To enable these properties, refer the below code
 
 
 
-&lt;syncfusion:WizardControl Name="wizardControl" CloseWindowOnCancel="True" CloseWindowOnFinish="True"&gt;
+<syncfusion:WizardControl Name="wizardControl" CloseWindowOnCancel="True" CloseWindowOnFinish="True">
 
-    &lt;syncfusion:WizardPage Name="wizardPage"/&gt;
+    <syncfusion:WizardPage Name="wizardPage"/>
 
-&lt;/syncfusion:WizardControl&gt;
+</syncfusion:WizardControl>
 
 
 
@@ -637,7 +637,7 @@ Use the following code snippet to define the Next Button Event for Wizard contro
 
                                         Next="wizardControl_Next">
 
-&lt;!-- Welcome page --&gt;
+<!-- Welcome page -->
 
 			<syncfusion:WizardPage Name="wizPage1"                           Title="Welcome to the Installation Setup Wizard" PageType="Exterior"                                     
 
@@ -647,21 +647,21 @@ CancelVisible="True" FinishVisible="False" HelpVisible="True">
 
 
 
-&lt;StackPanel Orientation="Vertical"&gt;
+<StackPanel Orientation="Vertical">
 
-&lt;TextBlock TextWrapping="Wrap" Margin="0,10,10,10" Text="It is recommended that you close all other applications before continuing."/&gt;
+<TextBlock TextWrapping="Wrap" Margin="0,10,10,10" Text="It is recommended that you close all other applications before continuing."/>
 
-&lt;TextBlock Margin="0,10,10,10" Text="Click Next to continue, or Cancel to exit Setup."/&gt;
+<TextBlock Margin="0,10,10,10" Text="Click Next to continue, or Cancel to exit Setup."/>
 
-&lt;TextBlock Margin="0,10,10,10" Text="For more information, click Help."/&gt;
+<TextBlock Margin="0,10,10,10" Text="For more information, click Help."/>
 
-&lt;/StackPanel&gt;
+</StackPanel>
 
 
 
-&lt;/syncfusion:WizardPage&gt;
+</syncfusion:WizardPage>
 
-                          &lt;/syncfusion:WizardControl&gt;
+                          </syncfusion:WizardControl>
 
 
 

@@ -25,27 +25,27 @@ Here is the code snippet to set the layout type as "MultiLine".
 
 
 
-&lt;!-- Adding TabcontrolExt  --&gt;
+<!-- Adding TabcontrolExt  -->
 
-&lt;syncfusion:TabControlExt Name="tabControlExt" TabItemLayout="MultiLine"&gt;
-
-
-
-    &lt;!-- Adding TabItemExt --&gt;
-
-    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"&gt;
-
-    &lt;/syncfusion:TabItemExt&gt;
+<syncfusion:TabControlExt Name="tabControlExt" TabItemLayout="MultiLine">
 
 
 
-    &lt;!-- Adding TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"&gt;
+    <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1">
 
-    &lt;/syncfusion:TabItemExt&gt;
+    </syncfusion:TabItemExt>
 
-&lt;/syncfusion:TabControlExt&gt;
+
+
+    <!-- Adding TabItemExt -->
+
+    <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2">
+
+    </syncfusion:TabItemExt>
+
+</syncfusion:TabControlExt>
 
 
 
@@ -95,7 +95,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-{ ![](Layout-Type_images/Layout-Type_img1.jpeg) | markdownify }
+{{ '![](Layout-Type_images/Layout-Type_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -113,15 +113,15 @@ The following code snippet illustrates handling the TabItemLayoutChanged event.
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Tabs the control ext_ tab item layout changed.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// <param name="d">The d.&lt;/param&gt;
+/// <param name="d">The d.</param>
 
-/// <param name="e">The &lt;see cref="System.Windows.DependencyPropertyChangedEventArgs"/&gt; instance 	containing the event data.&lt;/param&gt;
+/// <param name="e">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance 	containing the event data.</param>
 
 private void tabControlExt_TabItemLayoutChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 

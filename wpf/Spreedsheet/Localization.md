@@ -21,7 +21,7 @@ The following are steps to implementation Localization support to an application
 
 1. Create a WPF application and add spreadsheet control to it. 
 2. Create a folder named Resources in the application. 
-3. Create a resource file (Resx file) and name it as Syncfusion.Spreadsheet.WPF. &lt;your culture info name&gt;.resx 
+3. Create a resource file (Resx file) and name it as Syncfusion.Spreadsheet.WPF. <your culture info name>.resx 
 
 
 
@@ -31,7 +31,7 @@ _Note: It is mandatory to use this naming convention._
 
 
 
-{ ![D:/Task Doc/UG/9.3/UI/Spreadsheet/Image/LocalizationWPF/Localization/localization.png](Localization_images/Localization_img1.png) | markdownify }
+{{ '![D:/Task Doc/UG/9.3/UI/Spreadsheet/Image/LocalizationWPF/Localization/localization.png](Localization_images/Localization_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -41,7 +41,7 @@ _Note: It is mandatory to use this naming convention._
 
 
 
-{ ![D:/Task Doc/UG/9.3/UI/Spreadsheet/Image/LocalizationWPF/Localization/localization1.png](Localization_images/Localization_img2.png) | markdownify }
+{{ '![D:/Task Doc/UG/9.3/UI/Spreadsheet/Image/LocalizationWPF/Localization/localization1.png](Localization_images/Localization_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -52,7 +52,7 @@ _Note: It is mandatory to use this naming convention._
 
 
 
-{ ![](Localization_images/Localization_img3.png) | markdownify }
+{{ '![](Localization_images/Localization_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -85,18 +85,18 @@ The following code illustrates localizing the application to the Japanese Cultur
 The following are the steps to add Supported Cultures:
 
 1. In the Solution Explorer, right-click application project and choose Unload Project from the Context Menu. The project will be unloaded. 
-2. Right click the project again, and select the Edit &lt;ProjectName&gt;.csproj option. 
+2. Right click the project again, and select the Edit <ProjectName>.csproj option. 
 3. Example: LocalizationSample WPF.csproj
-4. In the .csproj file, find the &lt;SupportedCultures&gt;&lt;/SupportedCultures&gt; tags. Default the tags will be empty. So, add the required cultures. Use semicolon to separate if you want to add multiple culture. 
+4. In the .csproj file, find the <SupportedCultures></SupportedCultures> tags. Default the tags will be empty. So, add the required cultures. Use semicolon to separate if you want to add multiple culture. 
 5. Example: <SupportedCultures>en-GB;de;hi;es;it;Ja</SupportedCultures> 
 6. Save the project.
-7. Right click the &lt;ProjectName&gt;.csproj and choose Reload &lt;ProjectName&gt;.csproj. Project will be added with specific culture. 
+7. Right click the <ProjectName>.csproj and choose Reload <ProjectName>.csproj. Project will be added with specific culture. 
 
 
 
 
 
-{ ![D:/Task Doc/UG/9.3/UI/Spreadsheet/Image/localization.png](Localization_images/Localization_img4.png) | markdownify }
+{{ '![D:/Task Doc/UG/9.3/UI/Spreadsheet/Image/localization.png](Localization_images/Localization_img4.png)' | markdownify }}
 {:.image }
 
 

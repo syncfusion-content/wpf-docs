@@ -13,19 +13,19 @@ We can able to customize the first, last, negative, high and low point brushes a
 
 [XAML]
 
-&lt;Syncfusion:SfColumnSparkline ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" &gt;
+<Syncfusion:SfColumnSparkline ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
 
-            &lt;Syncfusion:SfColumnSparkline.SegmentTemplateSelector&gt;
+            <Syncfusion:SfColumnSparkline.SegmentTemplateSelector>
 
-                &lt;Syncfusion:SegmentTemplateSelector FirstPointBrush="Yellow" LastPointBrush="Yellow" HighPointBrush="Red"/&gt;
+                <Syncfusion:SegmentTemplateSelector FirstPointBrush="Yellow" LastPointBrush="Yellow" HighPointBrush="Red"/>
 
-            &lt;/Syncfusion:SfColumnSparkline.SegmentTemplateSelector&gt;
+            </Syncfusion:SfColumnSparkline.SegmentTemplateSelector>
 
-        &lt;/Syncfusion:SfColumnSparkline&gt;
+        </Syncfusion:SfColumnSparkline>
 
 Following is the snapshot for customize segment,
 
-{ ![C:/Users/ApoorvahR/Desktop/10.png](Customize-segment-brush_images/Customize-segment-brush_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/10.png](Customize-segment-brush_images/Customize-segment-brush_img1.png)' | markdownify }}
 {:.image }
 
 

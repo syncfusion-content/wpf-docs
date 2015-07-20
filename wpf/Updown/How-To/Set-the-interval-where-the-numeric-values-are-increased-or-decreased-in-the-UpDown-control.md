@@ -13,9 +13,9 @@ The Step property is used to specify the interval to be incremented or decrement
 
  [XAML]
 
-&lt;syncfusion:UpDown Name="upDown" Step="3"&gt;
+<syncfusion:UpDown Name="upDown" Step="3">
 
-&lt;/ syncfusion:UpDown&gt; 
+</ syncfusion:UpDown> 
 
 
 

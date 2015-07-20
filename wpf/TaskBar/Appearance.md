@@ -43,33 +43,33 @@ To set the visual style for the TaskBar, use the below code.
 
 
 
-&lt;!-- Adding TaskBar --&gt;
+<!-- Adding TaskBar -->
 
-&lt;syncfusion:TaskBar Name="taskBar" &gt;
-
-
-
-    &lt;!-- Adding TaskBarItem --&gt;
-
-    &lt;syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1"&gt;
+<syncfusion:TaskBar Name="taskBar" >
 
 
 
-        &lt;!-- Adding content to TaskBarItem --&gt;
+    <!-- Adding TaskBarItem -->
 
-        &lt;StackPanel Margin="10" HorizontalAlignment="Center" 										VerticalAlignment="Stretch"&gt;
+    <syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1">
 
-            &lt;TextBlock TextWrapping="Wrap"&gt;
+
+
+        <!-- Adding content to TaskBarItem -->
+
+        <StackPanel Margin="10" HorizontalAlignment="Center" 										VerticalAlignment="Stretch">
+
+            <TextBlock TextWrapping="Wrap">
 
 This TaskBar that have a TaskBarItem.
 
-            &lt;/TextBlock&gt;
+            </TextBlock>
 
-        &lt;/StackPanel&gt;
+        </StackPanel>
 
-    &lt;/syncfusion:TaskBarItem&gt;
+    </syncfusion:TaskBarItem>
 
-&lt;/syncfusion:TaskBar&gt;
+</syncfusion:TaskBar>
 
 
 
@@ -87,7 +87,7 @@ SkinStorage.SetVisualStyle(taskBar, "Office2007Blue");
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/taskbar7blue.png](Appearance_images/Appearance_img1.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/taskbar7blue.png](Appearance_images/Appearance_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -95,7 +95,7 @@ _TaskBar with "Office2007Blue" Visual Style_
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/task7black.png](Appearance_images/Appearance_img2.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/task7black.png](Appearance_images/Appearance_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -103,7 +103,7 @@ _TaskBar with "Office2007Black" Visual Style_
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/task7silver.png](Appearance_images/Appearance_img3.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/task7silver.png](Appearance_images/Appearance_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -111,7 +111,7 @@ _TaskBar with "Office2007Silver" Visual Style_
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/task10blue.png](Appearance_images/Appearance_img4.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/task10blue.png](Appearance_images/Appearance_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -119,7 +119,7 @@ _TaskBar with "Office2010Blue" Visual Style_
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/task10black.png](Appearance_images/Appearance_img5.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/task10black.png](Appearance_images/Appearance_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -127,7 +127,7 @@ _TaskBar with "Office2010Black" Visual Style_
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/task10silver.png](Appearance_images/Appearance_img6.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/task10silver.png](Appearance_images/Appearance_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -135,7 +135,7 @@ _TaskBar with "Office2010Silver" Visual Style_
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/taskblend.png](Appearance_images/Appearance_img7.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/taskblend.png](Appearance_images/Appearance_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -143,7 +143,7 @@ _TaskBar with "Blend" Visual Style_
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/taskvs2010.png](Appearance_images/Appearance_img8.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/taskvs2010.png](Appearance_images/Appearance_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -151,7 +151,7 @@ _TaskBar with "VS2010" Visual Style_
 
 
 
-{ ![](Appearance_images/Appearance_img9.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -159,7 +159,7 @@ _TaskBar with "Metro" Visual Style_
 
 
 
-{ ![](Appearance_images/Appearance_img10.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img10.png)' | markdownify }}
 {:.image }
 
 

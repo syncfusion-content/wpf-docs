@@ -423,19 +423,19 @@ public class OrderInfo
 
                        ItemsSource="{Binding OrderInfoCollection}">
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
-        &lt;syncfusion:GridTextColumn MappingName="OrderID" /&gt;
+        <syncfusion:GridTextColumn MappingName="OrderID" />
 
-        &lt;syncfusion:GridTextColumn MappingName="Customers.CustomerID" /&gt;
+        <syncfusion:GridTextColumn MappingName="Customers.CustomerID" />
 
-        &lt;syncfusion:GridTextColumn MappingName="Country" /&gt;
+        <syncfusion:GridTextColumn MappingName="Country" />
 
-        &lt;syncfusion:GridTextColumn MappingName="ShipCity" /&gt;
+        <syncfusion:GridTextColumn MappingName="ShipCity" />
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -445,7 +445,7 @@ Execute the above code to render the following output.
 
 
 
-{ ![](Features_images/Features_img1.png) | markdownify }
+{{ '![](Features_images/Features_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -556,11 +556,11 @@ The following code example illustrates binding dynamic object data to DataGrid.
 
 
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-    &lt;local:TestData /&gt;
+    <local:TestData />
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -578,7 +578,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img2.png) | markdownify }
+{{ '![](Features_images/Features_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -604,7 +604,7 @@ To create the Web Project
 
 
 
-{ ![](Features_images/Features_img3.png) | markdownify }
+{{ '![](Features_images/Features_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -623,7 +623,7 @@ To Create the Entity Data Model
 
 
 
-{ ![](Features_images/Features_img4.png) | markdownify }
+{{ '![](Features_images/Features_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -637,7 +637,7 @@ _Add New Item Wizard_
 
 
 
-{ ![](Features_images/Features_img5.png) | markdownify }
+{{ '![](Features_images/Features_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -655,7 +655,7 @@ _Entity Data Model Wizard_
 
 
 
-{ ![](Features_images/Features_img6.png) | markdownify }
+{{ '![](Features_images/Features_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -670,7 +670,7 @@ _Choose Your Data Connection Page_
 
 
 
-{ ![](Features_images/Features_img7.png) | markdownify }
+{{ '![](Features_images/Features_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -689,7 +689,7 @@ To create the data service
 
 
 
-{ ![](Features_images/Features_img8.png) | markdownify }
+{{ '![](Features_images/Features_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -747,7 +747,7 @@ To create the ClientApplication, you can add a second project, add a service ref
 
 
 
-{ ![](Features_images/Features_img9.png) | markdownify }
+{{ '![](Features_images/Features_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -785,9 +785,9 @@ _Add Service Reference Wizard_
 
         Height="350">
 
-    &lt;syncfusion:SfDataGrid x:Name="sfdatagrid" AllowEditing="True" /&gt;
+    <syncfusion:SfDataGrid x:Name="sfdatagrid" AllowEditing="True" />
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -825,7 +825,7 @@ void sfdatagrid_Loaded(object sender, RoutedEventArgs e)
 
 
 
-{ ![](Features_images/Features_img10.png) | markdownify }
+{{ '![](Features_images/Features_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -928,7 +928,7 @@ To Create Database with ADO.Net Provider.
 
 
 
-{ ![](Features_images/Features_img11.png) | markdownify }
+{{ '![](Features_images/Features_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -939,7 +939,7 @@ _Add Connection Wizard_
 
 
 
-{ ![](Features_images/Features_img12.png) | markdownify }
+{{ '![](Features_images/Features_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -949,7 +949,7 @@ _Change Data Source page_
 
 
 
-{ ![](Features_images/Features_img13.png) | markdownify }
+{{ '![](Features_images/Features_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -957,7 +957,7 @@ _Modify Connection Page_
 
 6. Select your Database name
 
-{ ![](Features_images/Features_img14.png) | markdownify }
+{{ '![](Features_images/Features_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -969,7 +969,7 @@ _Add Connection Wizard_
 
 
 
-{ ![](Features_images/Features_img15.png) | markdownify }
+{{ '![](Features_images/Features_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -1011,7 +1011,7 @@ To bind data to Grid
 
                            AutoGenerateColumns="True" />
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -1065,7 +1065,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img16.png) | markdownify }
+{{ '![](Features_images/Features_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -1151,7 +1151,7 @@ To create Entity Data Model
 
 
 
-{ ![](Features_images/Features_img17.png) | markdownify }
+{{ '![](Features_images/Features_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -1163,7 +1163,7 @@ _Add New Item Wizard_
 
 
 
-{ ![](Features_images/Features_img18.png) | markdownify }
+{{ '![](Features_images/Features_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -1181,7 +1181,7 @@ _Entity Data Model Wizard_
 
 
 
-{ ![](Features_images/Features_img19.png) | markdownify }
+{{ '![](Features_images/Features_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -1189,7 +1189,7 @@ _Choose Your Data Connection Page_
 
 12. Click New Connection.
 
-{ ![](Features_images/Features_img20.png) | markdownify }
+{{ '![](Features_images/Features_img20.png)' | markdownify }}
 {:.image }
 
 
@@ -1197,7 +1197,7 @@ _Connection Properties Wizard_
 
 13. Click Change button to create your database. You can get list of available services.
 
-{ ![](Features_images/Features_img21.png) | markdownify }
+{{ '![](Features_images/Features_img21.png)' | markdownify }}
 {:.image }
 
 
@@ -1208,7 +1208,7 @@ _Change Data Source Wizard_
 
 
 
-{ ![](Features_images/Features_img22.png) | markdownify }
+{{ '![](Features_images/Features_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -1222,7 +1222,7 @@ _Connection Properties Page_
 
 
 
-{ ![](Features_images/Features_img23.png) | markdownify }
+{{ '![](Features_images/Features_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -1298,11 +1298,11 @@ Add required assemblies to your WPF application to use SfDataGrid.
 
         Height="350">
 
-    &lt;Window.DataContext&gt;
+    <Window.DataContext>
 
-        &lt;local:ViewModel /&gt;
+        <local:ViewModel />
 
-    &lt;/Window.DataContext&gt;
+    </Window.DataContext>
 
     <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -1312,7 +1312,7 @@ Add required assemblies to your WPF application to use SfDataGrid.
 
                            ItemsSource="{Binding OrderDetails}" />
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -1322,7 +1322,7 @@ Now you can execute the code example to render the following output.
 
 
 
-{ ![](Features_images/Features_img24.png) | markdownify }
+{{ '![](Features_images/Features_img24.png)' | markdownify }}
 {:.image }
 
 
@@ -1398,7 +1398,7 @@ To create Linq to SQL Classes
 
 
 
-{ ![](Features_images/Features_img25.png) | markdownify }
+{{ '![](Features_images/Features_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -1410,7 +1410,7 @@ _Add New Item Wizard_
 
 
 
-{ ![](Features_images/Features_img26.png) | markdownify }
+{{ '![](Features_images/Features_img26.png)' | markdownify }}
 {:.image }
 
 
@@ -1420,7 +1420,7 @@ _Design View_
 
 
 
-{ ![](Features_images/Features_img27.png) | markdownify }
+{{ '![](Features_images/Features_img27.png)' | markdownify }}
 {:.image }
 
 
@@ -1430,7 +1430,7 @@ _Add Connection Wizard_
 
 
 
-{ ![](Features_images/Features_img28.png) | markdownify }
+{{ '![](Features_images/Features_img28.png)' | markdownify }}
 {:.image }
 
 
@@ -1440,7 +1440,7 @@ _Change Data Source Page_
 
 
 
-{ ![](Features_images/Features_img29.png) | markdownify }
+{{ '![](Features_images/Features_img29.png)' | markdownify }}
 {:.image }
 
 
@@ -1450,7 +1450,7 @@ _Add Connection Wizard_
 
 
 
-{ ![](Features_images/Features_img30.png) | markdownify }
+{{ '![](Features_images/Features_img30.png)' | markdownify }}
 {:.image }
 
 
@@ -1460,7 +1460,7 @@ _Add Connection Wizard_
 
 
 
-{ ![](Features_images/Features_img31.png) | markdownify }
+{{ '![](Features_images/Features_img31.png)' | markdownify }}
 {:.image }
 
 
@@ -1471,7 +1471,7 @@ _Add Connection Wizard with Test connection succeeded pop up_
 
 
 
-{ ![](Features_images/Features_img32.png) | markdownify }
+{{ '![](Features_images/Features_img32.png)' | markdownify }}
 {:.image }
 
 
@@ -1552,11 +1552,11 @@ Binding ItemsSource
 
         Height="350">
 
-    &lt;Window.DataContext&gt;
+    <Window.DataContext>
 
-        &lt;local:ViewModel /&gt;
+        <local:ViewModel />
 
-    &lt;/Window.DataContext&gt;
+    </Window.DataContext>
 
     <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -1566,7 +1566,7 @@ Binding ItemsSource
 
                            ItemsSource="{Binding Shippers}" />
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -1574,7 +1574,7 @@ Binding ItemsSource
 
 3. The following screenshot displays the output.
 
-{ ![](Features_images/Features_img33.png) | markdownify }
+{{ '![](Features_images/Features_img33.png)' | markdownify }}
 {:.image }
 
 
@@ -1695,19 +1695,19 @@ The following code example illustrates how to define the GridViewDefinition.
 
                        ShowGroupDropArea="True">
 
-    &lt;syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+    <syncfusion:SfDataGrid.DetailsViewDefinition>
 
-        &lt;syncfusion:GridViewDefinition RelationalColumn="OrderDetails"&gt;
+        <syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
 
-            &lt;syncfusion:GridViewDefinition.DataGrid&gt;
+            <syncfusion:GridViewDefinition.DataGrid>
 
-                &lt;syncfusion:SfDataGrid x:Name="FirstDetailsViewGrid"&gt;
+                <syncfusion:SfDataGrid x:Name="FirstDetailsViewGrid">
 
-                    &lt;syncfusion:SfDataGrid.Columns&gt;
+                    <syncfusion:SfDataGrid.Columns>
 
-                        &lt;syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" /&gt;
+                        <syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" />
 
-                        &lt;syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" /&gt;
+                        <syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" />
 
                         <syncfusion:GridTextColumn HeaderText="Product ID"
 
@@ -1721,9 +1721,9 @@ The following code example illustrates how to define the GridViewDefinition.
 
                                                    TextAlignment="Right" />
 
-                        &lt;syncfusion:GridTextColumn MappingName="Quantity" TextAlignment="Right" /&gt;
+                        <syncfusion:GridTextColumn MappingName="Quantity" TextAlignment="Right" />
 
-                        &lt;syncfusion:GridNumericColumn MappingName="Discount" TextAlignment="Right" /&gt;
+                        <syncfusion:GridNumericColumn MappingName="Discount" TextAlignment="Right" />
 
                         <syncfusion:GridTextColumn HeaderText="Order Date"
 
@@ -1731,23 +1731,23 @@ The following code example illustrates how to define the GridViewDefinition.
 
                                                    TextAlignment="Right" />
 
-                    &lt;/syncfusion:SfDataGrid.Columns&gt;
+                    </syncfusion:SfDataGrid.Columns>
 
-                &lt;/syncfusion:SfDataGrid&gt;
+                </syncfusion:SfDataGrid>
 
-            &lt;/syncfusion:GridViewDefinition.DataGrid&gt;
+            </syncfusion:GridViewDefinition.DataGrid>
 
-        &lt;/syncfusion:GridViewDefinition&gt;
+        </syncfusion:GridViewDefinition>
 
-    &lt;/syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+    </syncfusion:SfDataGrid.DetailsViewDefinition>
 
-&lt;/syncfusion:SfDataGrid&gt;
-
-
+</syncfusion:SfDataGrid>
 
 
 
-{ ![](Features_images/Features_img34.png) | markdownify }
+
+
+{{ '![](Features_images/Features_img34.png)' | markdownify }}
 {:.image }
 
 
@@ -1925,11 +1925,11 @@ It is not preferable to change the value of the public properties like AllowFilt
 
                            ItemsSource="{Binding OrderInfoCollection}">
 
-        &lt;syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+        <syncfusion:SfDataGrid.DetailsViewDefinition>
 
-            &lt;syncfusion:GridViewDefinition RelationalColumn="ProductDetails"&gt;
+            <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
 
-                &lt;syncfusion:GridViewDefinition.DataGrid&gt;
+                <syncfusion:GridViewDefinition.DataGrid>
 
                     <syncfusion:SfDataGrid x:Name="DetailsView"
 
@@ -1945,25 +1945,25 @@ It is not preferable to change the value of the public properties like AllowFilt
 
                                            AutoGenerateColumns="False">
 
-                        &lt;syncfusion:SfDataGrid.Columns&gt;
+                        <syncfusion:SfDataGrid.Columns>
 
-                            &lt;syncfusion:GridTextColumn MappingName="OrderID" /&gt;
+                            <syncfusion:GridTextColumn MappingName="OrderID" />
 
-                            &lt;syncfusion:GridTextColumn MappingName="ProductName" /&gt;
+                            <syncfusion:GridTextColumn MappingName="ProductName" />
 
-                        &lt;/syncfusion:SfDataGrid.Columns&gt;
+                        </syncfusion:SfDataGrid.Columns>
 
-                    &lt;/syncfusion:SfDataGrid&gt;
+                    </syncfusion:SfDataGrid>
 
-                &lt;/syncfusion:GridViewDefinition.DataGrid&gt;
+                </syncfusion:GridViewDefinition.DataGrid>
 
-            &lt;/syncfusion:GridViewDefinition&gt;
+            </syncfusion:GridViewDefinition>
 
-        &lt;/syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+        </syncfusion:SfDataGrid.DetailsViewDefinition>
 
-    &lt;/syncfusion:SfDataGrid&gt;
+    </syncfusion:SfDataGrid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -2001,7 +2001,7 @@ There are some limitations in the Master-DetailsView. Those are:
 * It does not have the AddNewRow support.* It does not support Details view Serialization.* It does not have support to bind SelectedItem, CurrentItem.* GroupDropArea is not available for details view grid. </td></tr>
 <tr>
 <td>
-> <br>{{ '_Note: You can use GroupColumnDescriptions to group the column in Master-Details View._' | markdownify }}</td></tr>
+> <br>{{{ ''_Note: You can use GroupColumnDescriptions to group the column in Master-Details View._'' | markdownify }}}</td></tr>
 </table>
 #### Master-Detail View from DataTable relations
 
@@ -2496,11 +2496,11 @@ public class DTViewModel : INotifyPropertyChanged
 
         Height="350">
 
-    &lt;Window.DataContext&gt;
+    <Window.DataContext>
 
-        &lt;local:DTViewModel /&gt;
+        <local:DTViewModel />
 
-    &lt;/Window.DataContext&gt;
+    </Window.DataContext>
 
     <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -2512,7 +2512,7 @@ public class DTViewModel : INotifyPropertyChanged
 
                            ItemsSource="{Binding ItemsSource}" />
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -2540,11 +2540,11 @@ public class DTViewModel : INotifyPropertyChanged
 
         Height="350">
 
-    &lt;Window.DataContext&gt;
+    <Window.DataContext>
 
-        &lt;local:DTViewModel /&gt;
+        <local:DTViewModel />
 
-    &lt;/Window.DataContext&gt;
+    </Window.DataContext>
 
     <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -2556,15 +2556,15 @@ public class DTViewModel : INotifyPropertyChanged
 
                            ItemsSource="{Binding ItemsSource}">
 
-        &lt;syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+        <syncfusion:SfDataGrid.DetailsViewDefinition>
 
-            &lt;syncfusion:GridViewDefinition RelationalColumn="Orders_Products" /&gt;
+            <syncfusion:GridViewDefinition RelationalColumn="Orders_Products" />
 
-        &lt;/syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+        </syncfusion:SfDataGrid.DetailsViewDefinition>
 
-    &lt;/syncfusion:SfDataGrid&gt;
+    </syncfusion:SfDataGrid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -2574,7 +2574,7 @@ public class DTViewModel : INotifyPropertyChanged
 
 
 
-{ ![](Features_images/Features_img35.png) | markdownify }
+{{ '![](Features_images/Features_img35.png)' | markdownify }}
 {:.image }
 
 
@@ -2719,7 +2719,7 @@ The ProductDetails property is a List of ProductInfo type. Here you can find the
 [C#]    public class ProductInfo{    int orderId;    string productName;    public int OrderID    {        get { return orderId; }        set { orderId = value; }    }    public string ProductName    {        get { return productName; }        set { productName = value; }    }}</td></tr>
 <tr>
 <td>
-> {{ '_Note: Both parent collection and child collection have key property OrderID._' | markdownify }}</td></tr>
+> {{{ ''_Note: Both parent collection and child collection have key property OrderID._'' | markdownify }}}</td></tr>
 </table>
 5. Now, load the data for a prepared collection.  Add the following code example in a newly created class file and save it as OrderInfoRepositiory.cs file_._
 
@@ -2879,11 +2879,11 @@ public class OrderInfoRepositiory
 
         Height="350">
 
-    &lt;Window.DataContext&gt;
+    <Window.DataContext>
 
-        &lt;local:OrderInfoRepositiory /&gt;
+        <local:OrderInfoRepositiory />
 
-    &lt;/Window.DataContext&gt;
+    </Window.DataContext>
 
     <syncfusion:SfDataGrid AutoGenerateColumns="True"
 
@@ -2891,15 +2891,15 @@ public class OrderInfoRepositiory
 
                            ItemsSource="{Binding OrderInfoCollection}">
 
-        &lt;syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+        <syncfusion:SfDataGrid.DetailsViewDefinition>
 
-           &lt;syncfusion:GridViewDefinition RelationalColumn="ProductDetails" /&gt;
+           <syncfusion:GridViewDefinition RelationalColumn="ProductDetails" />
 
-        &lt;/syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+        </syncfusion:SfDataGrid.DetailsViewDefinition>
 
-    &lt;/syncfusion:SfDataGrid&gt;
+    </syncfusion:SfDataGrid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -2907,7 +2907,7 @@ public class OrderInfoRepositiory
 
 4. Execute the application; Grid is loaded with Master Details Grid. Click the first record’s expander to render the following output.
 
-{ ![](Features_images/Features_img36.png) | markdownify }
+{{ '![](Features_images/Features_img36.png)' | markdownify }}
 {:.image }
 
 
@@ -2951,13 +2951,13 @@ private void DataGrid_DetailsViewExpanding(object sender, GridDetailsViewExpandi
 
                        ShowGroupDropArea="True">
 
-    &lt;syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+    <syncfusion:SfDataGrid.DetailsViewDefinition>
 
-        &lt;syncfusion:GridViewDefinition RelationalColumn="Details" /&gt;
+        <syncfusion:GridViewDefinition RelationalColumn="Details" />
 
-    &lt;/syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+    </syncfusion:SfDataGrid.DetailsViewDefinition>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 ##### Refresh UI when adding the Child Grid records to the Grid
 
@@ -3007,31 +3007,31 @@ You can cusomtize columns and other settings for the Master-Details view Grid fo
 
                        ItemsSource="{Binding OrderInfoCollection}">
 
-    &lt;syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+    <syncfusion:SfDataGrid.DetailsViewDefinition>
 
-        &lt;syncfusion:GridViewDefinition RelationalColumn="ProductDetails"&gt;
+        <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
 
-            &lt;syncfusion:GridViewDefinition.DataGrid&gt;
+            <syncfusion:GridViewDefinition.DataGrid>
 
-                &lt;syncfusion:SfDataGrid x:Name="DetailsView" AutoGenerateColumns="False"&gt;
+                <syncfusion:SfDataGrid x:Name="DetailsView" AutoGenerateColumns="False">
 
-                    &lt;syncfusion:SfDataGrid.Columns&gt;
+                    <syncfusion:SfDataGrid.Columns>
 
-                        &lt;syncfusion:GridTextColumn MappingName="OrderID" /&gt;
+                        <syncfusion:GridTextColumn MappingName="OrderID" />
 
-                        &lt;syncfusion:GridTextColumn MappingName="ProductName" /&gt;
+                        <syncfusion:GridTextColumn MappingName="ProductName" />
 
-                    &lt;/syncfusion:SfDataGrid.Columns&gt;
+                    </syncfusion:SfDataGrid.Columns>
 
-                &lt;/syncfusion:SfDataGrid&gt;
+                </syncfusion:SfDataGrid>
 
-            &lt;/syncfusion:GridViewDefinition.DataGrid&gt;
+            </syncfusion:GridViewDefinition.DataGrid>
 
-        &lt;/syncfusion:GridViewDefinition&gt;
+        </syncfusion:GridViewDefinition>
 
-    &lt;/syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+    </syncfusion:SfDataGrid.DetailsViewDefinition>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -3051,21 +3051,21 @@ The following code example explains how to customize column in code behind.
 
                        ItemsSource="{Binding OrderInfoCollection}">
 
-    &lt;syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+    <syncfusion:SfDataGrid.DetailsViewDefinition>
 
-        &lt;syncfusion:GridViewDefinition RelationalColumn="ProductDetails"&gt;
+        <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
 
-            &lt;syncfusion:GridViewDefinition.DataGrid&gt;
+            <syncfusion:GridViewDefinition.DataGrid>
 
-                &lt;syncfusion:SfDataGrid x:Name="DetailsView" AutoGenerateColumns="False" /&gt;
+                <syncfusion:SfDataGrid x:Name="DetailsView" AutoGenerateColumns="False" />
 
-            &lt;/syncfusion:GridViewDefinition.DataGrid&gt;
+            </syncfusion:GridViewDefinition.DataGrid>
 
-        &lt;/syncfusion:GridViewDefinition&gt;
+        </syncfusion:GridViewDefinition>
 
-    &lt;/syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+    </syncfusion:SfDataGrid.DetailsViewDefinition>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -3081,7 +3081,7 @@ The following screenshot renders the output of the above code examples. Both giv
 
 
 
-{ ![](Features_images/Features_img37.png) | markdownify }
+{{ '![](Features_images/Features_img37.png)' | markdownify }}
 {:.image }
 
 
@@ -3109,7 +3109,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img38.png) | markdownify }
+{{ '![](Features_images/Features_img38.png)' | markdownify }}
 {:.image }
 
 
@@ -3123,11 +3123,11 @@ You can handle events for the actions in the Master-DetailView like in the Paren
 
 [XAML]
 
-&lt;syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+<syncfusion:SfDataGrid.DetailsViewDefinition>
 
-    &lt;syncfusion:GridViewDefinition RelationalColumn="OrderDetails"&gt;
+    <syncfusion:GridViewDefinition RelationalColumn="OrderDetails">
 
-        &lt;syncfusion:GridViewDefinition.DataGrid&gt;
+        <syncfusion:GridViewDefinition.DataGrid>
 
             <syncfusion:SfDataGrid x:Name="FirstDetailsViewGrid"                                    
 
@@ -3135,11 +3135,11 @@ You can handle events for the actions in the Master-DetailView like in the Paren
 
                                    CurrentCellBeginEdit="FirstDetailsViewGrid_CurrentCellBeginEdit" />
 
-        &lt;/syncfusion:GridViewDefinition.DataGrid&gt;
+        </syncfusion:GridViewDefinition.DataGrid>
 
-    &lt;/syncfusion:GridViewDefinition&gt;
+    </syncfusion:GridViewDefinition>
 
-&lt;/syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+</syncfusion:SfDataGrid.DetailsViewDefinition>
 
 
 
@@ -3213,11 +3213,11 @@ Master-Details View Grid has the GridViewDefintion property that has the DataGri
 
         Height="350">
 
-    &lt;Window.DataContext&gt;
+    <Window.DataContext>
 
-        &lt;local:OrderInfoRepositiory /&gt;
+        <local:OrderInfoRepositiory />
 
-    &lt;/Window.DataContext&gt;
+    </Window.DataContext>
 
     <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -3227,11 +3227,11 @@ Master-Details View Grid has the GridViewDefintion property that has the DataGri
 
                            ItemsSource="{Binding OrderInfoCollection}">
 
-        &lt;syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+        <syncfusion:SfDataGrid.DetailsViewDefinition>
 
-            &lt;syncfusion:GridViewDefinition RelationalColumn="ProductDetails"&gt;
+            <syncfusion:GridViewDefinition RelationalColumn="ProductDetails">
 
-                &lt;syncfusion:GridViewDefinition.DataGrid&gt;
+                <syncfusion:GridViewDefinition.DataGrid>
 
                     <syncfusion:SfDataGrid x:Name="DetailsView"
 
@@ -3247,25 +3247,25 @@ Master-Details View Grid has the GridViewDefintion property that has the DataGri
 
                                            AutoGenerateColumns="False">
 
-                        &lt;syncfusion:SfDataGrid.Columns&gt;
+                        <syncfusion:SfDataGrid.Columns>
 
-                            &lt;syncfusion:GridTextColumn MappingName="OrderID" /&gt;
+                            <syncfusion:GridTextColumn MappingName="OrderID" />
 
-                            &lt;syncfusion:GridTextColumn MappingName="ProductName" /&gt;
+                            <syncfusion:GridTextColumn MappingName="ProductName" />
 
-                        &lt;/syncfusion:SfDataGrid.Columns&gt;
+                        </syncfusion:SfDataGrid.Columns>
 
-                    &lt;/syncfusion:SfDataGrid&gt;
+                    </syncfusion:SfDataGrid>
 
-                &lt;/syncfusion:GridViewDefinition.DataGrid&gt;
+                </syncfusion:GridViewDefinition.DataGrid>
 
-            &lt;/syncfusion:GridViewDefinition&gt;
+            </syncfusion:GridViewDefinition>
 
-        &lt;/syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+        </syncfusion:SfDataGrid.DetailsViewDefinition>
 
-    &lt;/syncfusion:SfDataGrid&gt;
+    </syncfusion:SfDataGrid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -3311,7 +3311,7 @@ void sfdatagrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.A
 
 }
 
-{ ![](Features_images/Features_img39.png) | markdownify }
+{{ '![](Features_images/Features_img39.png)' | markdownify }}
 {:.image }
 
 
@@ -3564,7 +3564,7 @@ The following screenshot renders you the output.
 
 
 
-{ ![](Features_images/Features_img40.png) | markdownify }
+{{ '![](Features_images/Features_img40.png)' | markdownify }}
 {:.image }
 
 
@@ -3592,21 +3592,21 @@ The following code example defines manually to create columns using XAML.
 
                        ItemsSource="{Binding OrderInfoCollection}">
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
-        &lt;syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" /&gt;
+        <syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" />
 
-        &lt;syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" /&gt;
+        <syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" />
 
-        &lt;syncfusion:GridTextColumn HeaderText="Name of Customer" MappingName="CustomerName" /&gt;
+        <syncfusion:GridTextColumn HeaderText="Name of Customer" MappingName="CustomerName" />
 
-        &lt;syncfusion:GridTextColumn HeaderText="Ship Country" MappingName="ShipCountry" /&gt;
+        <syncfusion:GridTextColumn HeaderText="Ship Country" MappingName="ShipCountry" />
 
-        &lt;syncfusion:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" /&gt;
+        <syncfusion:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -3920,11 +3920,11 @@ The following code example illustrates that how to set CellTemplate in Numeric C
 
                               NumberDecimalDigits="0">
 
-    &lt;syncfusion:GridNumericColumn.CellTemplate&gt;
+    <syncfusion:GridNumericColumn.CellTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;Grid&gt;
+            <Grid>
 
                 <ProgressBar x:Name="progressBar" Background="Transparent"  
 
@@ -3936,13 +3936,13 @@ The following code example illustrates that how to set CellTemplate in Numeric C
 
                             VerticalAlignment="Center" TextAlignment="Center"/>
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:GridNumericColumn.CellTemplate&gt;
+    </syncfusion:GridNumericColumn.CellTemplate>
 
-&lt;/syncfusion:GridNumericColumn&gt;
+</syncfusion:GridNumericColumn>
 
 
 
@@ -3950,7 +3950,7 @@ The above XAML code renders the following output.
 
 
 
-{ ![](Features_images/Features_img41.png) | markdownify }
+{{ '![](Features_images/Features_img41.png)' | markdownify }}
 {:.image }
 
 
@@ -3977,11 +3977,11 @@ The following code example illustrates on how to use the above property.
 
 
 
-&lt;DataTemplate x:Key="DefaultTemplate"&gt;
+<DataTemplate x:Key="DefaultTemplate">
 
-    &lt;TextBlock Text="{Binding Path=Value}" Margin="5" FontWeight="Bold" FontStyle="Italic"/&gt;            
+    <TextBlock Text="{Binding Path=Value}" Margin="5" FontWeight="Bold" FontStyle="Italic"/>            
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
@@ -4025,7 +4025,7 @@ The above XAML code renders the following output.
 
 
 
-{ ![CellTemplate](Features_images/Features_img42.png) | markdownify }
+{{ '![CellTemplate](Features_images/Features_img42.png)' | markdownify }}
 {:.image }
 
 
@@ -4041,23 +4041,23 @@ Create required templates with static keys.
 
 
 
-&lt;!-- Need to add this code snippet in Resources--&gt;
+<!-- Need to add this code snippet in Resources-->
 
 
 
-&lt;DataTemplate x:Key="DefaultTemplate"&gt;
+<DataTemplate x:Key="DefaultTemplate">
 
-    &lt;TextBlock Text="{Binding Path=Value}" Foreground="Red" TextAlignment="Center" Background="Transparent" /&gt;
+    <TextBlock Text="{Binding Path=Value}" Foreground="Red" TextAlignment="Center" Background="Transparent" />
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
-&lt;DataTemplate x:Key="AlternateTemplate"&gt;
+<DataTemplate x:Key="AlternateTemplate">
 
-    &lt;TextBlock Text="{Binding Path=Value}" Foreground="Green" TextAlignment="Center" Background="Transparent"/&gt;
+    <TextBlock Text="{Binding Path=Value}" Foreground="Green" TextAlignment="Center" Background="Transparent"/>
 
-&lt;/DataTemplate&gt;        
+</DataTemplate>        
 
 
 
@@ -4075,11 +4075,11 @@ public class TemplateSelector : DataTemplateSelector
 
     private DataTemplate _defaultTemplate;
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Gets or sets DefaultTemplate
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
     public DataTemplate DefaultTemplate
 
@@ -4095,11 +4095,11 @@ public class TemplateSelector : DataTemplateSelector
 
     private DataTemplate _alternateTemplate;
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Gets or Sets AlternateTemplate
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
     public DataTemplate AlternateTemplate
 
@@ -4115,11 +4115,11 @@ public class TemplateSelector : DataTemplateSelector
 
     private string _propertyToEvaluate;
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Gets or sets property to evaluate
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
     public string PropertyToEvaluate
 
@@ -4179,7 +4179,7 @@ DataContextHelper is the helper class that contains Record and value property to
 
 
 
-&lt;!--In your column you have to defined like this --&gt;
+<!--In your column you have to defined like this -->
 
 
 
@@ -4191,7 +4191,7 @@ DataContextHelper is the helper class that contains Record and value property to
 
                                MappingName="Quantity">       
 
-    &lt;syncfusion:GridCurrencyColumn.CellTemplateSelector&gt;
+    <syncfusion:GridCurrencyColumn.CellTemplateSelector>
 
         <local:TemplateSelector DefaultTemplate="{StaticResource DefaultTemplate}"
 
@@ -4199,15 +4199,15 @@ DataContextHelper is the helper class that contains Record and value property to
 
                                 PropertyToEvaluate="Quantity"/>                                
 
-    &lt;/syncfusion:GridCurrencyColumn.CellTemplateSelector&gt;
+    </syncfusion:GridCurrencyColumn.CellTemplateSelector>
 
-&lt;/syncfusion:GridCurrencyColumn&gt;
+</syncfusion:GridCurrencyColumn>
 
 
 
 The above code renders the following output.
 
-{ ![11-12-2014 2-55-07 PM](Features_images/Features_img43.png) | markdownify }
+{{ '![11-12-2014 2-55-07 PM](Features_images/Features_img43.png)' | markdownify }}
 {:.image }
 
 
@@ -4298,7 +4298,7 @@ The following code example creates GridTextColumn.
 
 
 
-&lt;syncfusion:GridTextColumn MappingName="OrderID" TextAlignment="Right" /&gt;
+<syncfusion:GridTextColumn MappingName="OrderID" TextAlignment="Right" />
 
 
 
@@ -4324,9 +4324,9 @@ The following code example shows you how to declare a GridTextColumn in XAML.
 
 [XAML]
 
-&lt;syncfusion:SfDataGrid.Columns&gt;
+<syncfusion:SfDataGrid.Columns>
 
-    &lt;syncfusion:GridTextColumn MappingName="OrderID" TextAlignment="Right" /&gt;
+    <syncfusion:GridTextColumn MappingName="OrderID" TextAlignment="Right" />
 
     <syncfusion:GridTextColumn DisplayBinding="{Binding Path=UnitPrice,
 
@@ -4338,11 +4338,11 @@ The following code example shows you how to declare a GridTextColumn in XAML.
 
                                ValueBinding="{Binding Path=UnitPrice}" />
 
-    &lt;syncfusion:GridTextColumn MappingName="Discount" /&gt;
+    <syncfusion:GridTextColumn MappingName="Discount" />
 
-    &lt;syncfusion:GridTextColumn MappingName="Quantity" TextAlignment="Right" /&gt;
+    <syncfusion:GridTextColumn MappingName="Quantity" TextAlignment="Right" />
 
-&lt;/syncfusion:SfDataGrid.Columns&gt;
+</syncfusion:SfDataGrid.Columns>
 
 
 
@@ -4350,7 +4350,7 @@ The above XAML code has resulted in the following Output.
 
 
 
-{ ![](Features_images/Features_img44.png) | markdownify }
+{{ '![](Features_images/Features_img44.png)' | markdownify }}
 {:.image }
 
 
@@ -4366,11 +4366,11 @@ You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fb
 
 
 
-StringFormat='{} {0:dddd}'}"  &lt;!--  To Format Date  --&gt;
+StringFormat='{} {0:dddd}'}"  <!--  To Format Date  -->
 
-StringFormat='{}{0:C}'}"      &lt;!--  To Format as Currency  --&gt;
+StringFormat='{}{0:C}'}"      <!--  To Format as Currency  -->
 
-StringFormat='{}{0:P}'}"      &lt;!--  To Format as Percent  --&gt;
+StringFormat='{}{0:P}'}"      <!--  To Format as Percent  -->
 
 
 
@@ -4502,7 +4502,7 @@ The following screenshot illustrates the output.
 
 
 
-{ ![](Features_images/Features_img45.png) | markdownify }
+{{ '![](Features_images/Features_img45.png)' | markdownify }}
 {:.image }
 
 
@@ -4642,7 +4642,7 @@ The following screenshot illustrates the output.
 
 
 
-{ ![](Features_images/Features_img46.png) | markdownify }
+{{ '![](Features_images/Features_img46.png)' | markdownify }}
 {:.image }
 
 
@@ -4790,7 +4790,7 @@ The following screenshot illustrates the output.
 
 
 
-{ ![](Features_images/Features_img47.png) | markdownify }
+{{ '![](Features_images/Features_img47.png)' | markdownify }}
 {:.image }
 
 
@@ -4831,7 +4831,7 @@ String.Empty</td></tr>
 <td>
 MaskFormat</td><td>
 MaskFormat</td><td>
-Specifies the display format when mask value is used. It determines whether the literals and prompt characters are included in the formatted string. To know more about MaskFormat { [Click Here](http://help.syncfusion.com/wpf/tools) | markdownify }</td><td>
+Specifies the display format when mask value is used. It determines whether the literals and prompt characters are included in the formatted string. To know more about MaskFormat {{ '[Click Here](http://help.syncfusion.com/wpf/tools)' | markdownify }}</td><td>
 MaskFormat.ExcludePromptAndLiterals</td></tr>
 <tr>
 <td>
@@ -4900,7 +4900,7 @@ The following screenshot illustrates the output.
 
 
 
-{ ![](Features_images/Features_img48.png) | markdownify }
+{{ '![](Features_images/Features_img48.png)' | markdownify }}
 {:.image }
 
 
@@ -4992,7 +4992,7 @@ The following screenshot illustrates the output.
 
 
 
-{ ![](Features_images/Features_img49.png) | markdownify }
+{{ '![](Features_images/Features_img49.png)' | markdownify }}
 {:.image }
 
 
@@ -5148,7 +5148,7 @@ The following screenshot illustrates the output.
 
 
 
-{ ![](Features_images/Features_img50.png) | markdownify }
+{{ '![](Features_images/Features_img50.png)' | markdownify }}
 {:.image }
 
 
@@ -5214,19 +5214,19 @@ The following code example displays how to use GridComboBoxColumn.
 
  [XAML]
 
-&lt;syncfusion:SfDataGrid.Columns&gt;
+<syncfusion:SfDataGrid.Columns>
 
-    &lt;syncfusion:GridTextColumn MappingName="OrderID" TextAlignment="Right" /&gt;
+    <syncfusion:GridTextColumn MappingName="OrderID" TextAlignment="Right" />
 
-    &lt;syncfusion:GridComboBoxColumn ItemsSource="{Binding Path=ComboItems, Source={StaticResource viewmodel}}" MappingName="ProductName" /&gt;
+    <syncfusion:GridComboBoxColumn ItemsSource="{Binding Path=ComboItems, Source={StaticResource viewmodel}}" MappingName="ProductName" />
 
-    &lt;syncfusion:GridTextColumn MappingName="UnitPrice" /&gt;
+    <syncfusion:GridTextColumn MappingName="UnitPrice" />
 
-    &lt;syncfusion:GridTextColumn MappingName="Discount" /&gt;
+    <syncfusion:GridTextColumn MappingName="Discount" />
 
-    &lt;syncfusion:GridTextColumn MappingName="Quantity" TextAlignment="Right" /&gt;
+    <syncfusion:GridTextColumn MappingName="Quantity" TextAlignment="Right" />
 
-&lt;/syncfusion:SfDataGrid.Columns&gt;
+</syncfusion:SfDataGrid.Columns>
 
 
 
@@ -5248,7 +5248,7 @@ The above XAML Code has resulted in the following output:
 
 
 
-{ ![](Features_images/Features_img51.png) | markdownify }
+{{ '![](Features_images/Features_img51.png)' | markdownify }}
 {:.image }
 
 
@@ -5262,23 +5262,23 @@ The following code example shows how to use ItemTemplate in GridComboBoxcolumn.
 
 
 
-&lt;syncfusion:GridComboBoxColumn ItemsSource="{Binding Path=ComboBoxItemsSource, Source={StaticResource viewmodel}}" MappingName="ProductName"&gt;
+<syncfusion:GridComboBoxColumn ItemsSource="{Binding Path=ComboBoxItemsSource, Source={StaticResource viewmodel}}" MappingName="ProductName">
 
-    &lt;syncfusion:GridComboBoxColumn.ItemTemplate&gt;
+    <syncfusion:GridComboBoxColumn.ItemTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;Grid&gt;
+            <Grid>
 
-                &lt;TextBlock Text="{Binding}" /&gt;
+                <TextBlock Text="{Binding}" />
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:GridComboBoxColumn.ItemTemplate&gt;
+    </syncfusion:GridComboBoxColumn.ItemTemplate>
 
-&lt;/syncfusion:GridComboBoxColumn&gt;
+</syncfusion:GridComboBoxColumn>
 
 
 
@@ -5286,7 +5286,7 @@ The above XAML code has resulted in the following output:
 
 
 
-{ ![](Features_images/Features_img52.png) | markdownify }
+{{ '![](Features_images/Features_img52.png)' | markdownify }}
 {:.image }
 
 
@@ -5344,19 +5344,19 @@ The following code example shows how to use GridCheckBoxColumn.
 
 [XAML]
 
-&lt;syncfusion:SfDataGrid.Columns&gt;
+<syncfusion:SfDataGrid.Columns>
 
-    &lt;syncfusion:GridTextColumn MappingName="OrderID" TextAlignment="Right" /&gt;
+    <syncfusion:GridTextColumn MappingName="OrderID" TextAlignment="Right" />
 
-    &lt;syncfusion:GridTextColumn MappingName="UnitPrice" TextAlignment="Right" /&gt;
+    <syncfusion:GridTextColumn MappingName="UnitPrice" TextAlignment="Right" />
 
-    &lt;syncfusion:GridTextColumn MappingName="Discount" TextAlignment="Right" /&gt;
+    <syncfusion:GridTextColumn MappingName="Discount" TextAlignment="Right" />
 
-    &lt;syncfusion:GridCheckBoxColumn MappingName="IsClosed" /&gt;
+    <syncfusion:GridCheckBoxColumn MappingName="IsClosed" />
 
-    &lt;syncfusion:GridTextColumn MappingName="Quantity" TextAlignment="Right" /&gt;
+    <syncfusion:GridTextColumn MappingName="Quantity" TextAlignment="Right" />
 
-&lt;/syncfusion:SfDataGrid.Columns&gt;
+</syncfusion:SfDataGrid.Columns>
 
 
 
@@ -5376,7 +5376,7 @@ The above XAML Code has resulted in following Output:
 
 
 
-{ ![](Features_images/Features_img53.png) | markdownify }
+{{ '![](Features_images/Features_img53.png)' | markdownify }}
 {:.image }
 
 
@@ -5434,11 +5434,11 @@ The following code example shows how to use GridImageColumn.
 
 [XAML]
 
-&lt;syncfusion:SfDataGrid.Columns&gt;
+<syncfusion:SfDataGrid.Columns>
 
-    &lt;syncfusion:GridTextColumn MappingName="ProductID" /&gt;
+    <syncfusion:GridTextColumn MappingName="ProductID" />
 
-    &lt;syncfusion:GridTextColumn HeaderText="Brand" MappingName="ProductModel" /&gt;
+    <syncfusion:GridTextColumn HeaderText="Brand" MappingName="ProductModel" />
 
     <syncfusion:GridImageColumn HeaderText="Image"
 
@@ -5446,9 +5446,9 @@ The following code example shows how to use GridImageColumn.
 
                                 Stretch="Uniform" />
 
-    &lt;syncfusion:GridTextColumn HeaderText="Brand" MappingName="Product" /&gt;
+    <syncfusion:GridTextColumn HeaderText="Brand" MappingName="Product" />
 
-&lt;/syncfusion:SfDataGrid.Columns&gt;
+</syncfusion:SfDataGrid.Columns>
 
 
 
@@ -5458,7 +5458,7 @@ The above XAML Code has resulted in the following output:
 
 
 
-{ ![](Features_images/Features_img54.png) | markdownify }
+{{ '![](Features_images/Features_img54.png)' | markdownify }}
 {:.image }
 
 
@@ -5532,7 +5532,7 @@ The following screenshot illustrates the output.
 
 
 
-{ ![](Features_images/Features_img55.png) | markdownify }
+{{ '![](Features_images/Features_img55.png)' | markdownify }}
 {:.image }
 
 
@@ -5601,11 +5601,11 @@ The following code example shows templating for GridTemplateColumn. Underlying r
 
 [XAML]
 
-&lt;syncfusion:GridTemplateColumn MappingName="CustomerID"&gt;
+<syncfusion:GridTemplateColumn MappingName="CustomerID">
 
-    &lt;syncfusion:GridTemplateColumn.CellTemplate&gt;
+    <syncfusion:GridTemplateColumn.CellTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
             <TextBlock FontStyle="Italic"
 
@@ -5615,15 +5615,15 @@ The following code example shows templating for GridTemplateColumn. Underlying r
 
                        Text="{Binding CustomerID}" />
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:GridTemplateColumn.CellTemplate&gt;
+    </syncfusion:GridTemplateColumn.CellTemplate>
 
-    &lt;syncfusion:GridTemplateColumn.EditTemplate&gt;
+    <syncfusion:GridTemplateColumn.EditTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch"&gt;
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
 
                 <TextBox FontStyle="Italic"
 
@@ -5635,13 +5635,13 @@ The following code example shows templating for GridTemplateColumn. Underlying r
 
                                         Mode=TwoWay}" />
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:GridTemplateColumn.EditTemplate&gt;
+    </syncfusion:GridTemplateColumn.EditTemplate>
 
-&lt;/syncfusion:GridTemplateColumn&gt;
+</syncfusion:GridTemplateColumn>
 
 
 
@@ -5651,7 +5651,7 @@ The above XAML code has resulted in the following output.
 
 
 
-{ ![](Features_images/Features_img56.png) | markdownify }
+{{ '![](Features_images/Features_img56.png)' | markdownify }}
 {:.image }
 
 
@@ -5663,39 +5663,39 @@ CellTemplateSelector and EditTemplateSelector provide a way to select DataTempla
 
 [XAML]
 
-&lt;DataTemplate x:Key="cellTemplate"&gt;
+<DataTemplate x:Key="cellTemplate">
 
-    &lt;CheckBox HorizontalAlignment="Center" IsChecked="{Binding Path=EmployeeStatus, Mode=TwoWay}" /&gt;
+    <CheckBox HorizontalAlignment="Center" IsChecked="{Binding Path=EmployeeStatus, Mode=TwoWay}" />
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
-&lt;!-- CELL TEMPLATE --&gt;
+<!-- CELL TEMPLATE -->
 
-&lt;DataTemplate x:Key="maleCellTemplate"&gt;
+<DataTemplate x:Key="maleCellTemplate">
 
-    &lt;TextBlock Foreground="DeepSkyBlue" Text="{Binding EmployeeGender}" /&gt;
+    <TextBlock Foreground="DeepSkyBlue" Text="{Binding EmployeeGender}" />
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
-&lt;DataTemplate x:Key="femaleCellTemplate"&gt;
+<DataTemplate x:Key="femaleCellTemplate">
 
-    &lt;TextBlock Foreground="DeepPink" Text="{Binding EmployeeGender}" /&gt;
+    <TextBlock Foreground="DeepPink" Text="{Binding EmployeeGender}" />
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
-&lt;!-- EDIT TEMPLATE --&gt;
+<!-- EDIT TEMPLATE -->
 
-&lt;DataTemplate x:Key="maleEditTemplate"&gt;
+<DataTemplate x:Key="maleEditTemplate">
 
-    &lt;TextBox Foreground="DeepSkyBlue" Text="{Binding EmployeeGender}" /&gt;
+    <TextBox Foreground="DeepSkyBlue" Text="{Binding EmployeeGender}" />
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
-&lt;DataTemplate x:Key="femaleEditTemplate"&gt;
+<DataTemplate x:Key="femaleEditTemplate">
 
-    &lt;TextBox Foreground="DeepPink" Text="{Binding EmployeeGender}" /&gt;
+    <TextBox Foreground="DeepPink" Text="{Binding EmployeeGender}" />
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
@@ -5767,13 +5767,13 @@ return Application.Current.Resources["femaleEditTemplate"] as DataTemplate;
 
                        ItemsSource="{Binding GDCSource}">
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
-        &lt;syncfusion:GridTextColumn MappingName="EmployeeName" /&gt;
+        <syncfusion:GridTextColumn MappingName="EmployeeName" />
 
-        &lt;syncfusion:GridTextColumn MappingName="EmployeeDesignation" /&gt;
+        <syncfusion:GridTextColumn MappingName="EmployeeDesignation" />
 
-        &lt;syncfusion:GridTextColumn MappingName="EmployeeAge" /&gt;
+        <syncfusion:GridTextColumn MappingName="EmployeeAge" />
 
         <syncfusion:GridTemplateColumn CellTemplateSelector="{StaticResource cellTemplateSelector}"
 
@@ -5781,13 +5781,13 @@ return Application.Current.Resources["femaleEditTemplate"] as DataTemplate;
 
                                        MappingName="EmployeeGender" />
 
-        &lt;syncfusion:GridTemplateColumn CellTemplate="{StaticResource cellTemplate}" MappingName="EmployeeStatus" /&gt;
+        <syncfusion:GridTemplateColumn CellTemplate="{StaticResource cellTemplate}" MappingName="EmployeeStatus" />
 
-        &lt;syncfusion:GridTextColumn MappingName="EmployeeArea" /&gt;
+        <syncfusion:GridTextColumn MappingName="EmployeeArea" />
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -5795,7 +5795,7 @@ The following screenshot shows the output for the above code.
 
 
 
-{ ![](Features_images/Features_img57.png) | markdownify }
+{{ '![](Features_images/Features_img57.png)' | markdownify }}
 {:.image }
 
 
@@ -5821,21 +5821,21 @@ The following code example explains you about WantsKeyInput.
 
                                MappingName="ProductName"                               syncfusion:FocusManagerHelper.WantsKeyInput="True">
 
-    &lt;syncfusion:GridTemplateColumn.CellTemplate&gt;
+    <syncfusion:GridTemplateColumn.CellTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;Grid&gt;
+            <Grid>
 
-                &lt;TextBox x:Name="text" Text="{Binding ProductName}" /&gt;
+                <TextBox x:Name="text" Text="{Binding ProductName}" />
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:GridTemplateColumn.CellTemplate&gt;
+    </syncfusion:GridTemplateColumn.CellTemplate>
 
-&lt;/syncfusion:GridTemplateColumn&gt;
+</syncfusion:GridTemplateColumn>
 
 
 
@@ -5853,23 +5853,23 @@ The following code example explains you about WantsMouseInput.
 
 [XAML]
 
-&lt;syncfusion:GridTemplateColumn HeaderText="ProductName" MappingName="ProductName"&gt;
+<syncfusion:GridTemplateColumn HeaderText="ProductName" MappingName="ProductName">
 
-    &lt;syncfusion:GridTemplateColumn.CellTemplate&gt;
+    <syncfusion:GridTemplateColumn.CellTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;Grid&gt;
+            <Grid>
 
-                &lt;ComboBox ItemsSource="{Binding ComboItems, Source={StaticResource viewmodel}}" syncfusion:VisualContainer.WantsMouseInput="True" /&gt;
+                <ComboBox ItemsSource="{Binding ComboItems, Source={StaticResource viewmodel}}" syncfusion:VisualContainer.WantsMouseInput="True" />
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:GridTemplateColumn.CellTemplate&gt;
+    </syncfusion:GridTemplateColumn.CellTemplate>
 
-&lt;/syncfusion:GridTemplateColumn&gt;
+</syncfusion:GridTemplateColumn>
 
 
 
@@ -5885,23 +5885,23 @@ The following code example shows, how to set the FocusedElement inside DataTempl
 
 [XAML]
 
-&lt;syncfusion:GridTemplateColumn HeaderText="Order ID" MappingName="OrderID"&gt;
+<syncfusion:GridTemplateColumn HeaderText="Order ID" MappingName="OrderID">
 
-    &lt;syncfusion:GridTemplateColumn.CellTemplate&gt;
+    <syncfusion:GridTemplateColumn.CellTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;TextBlock Text="{Binding OrderID}" /&gt;
+            <TextBlock Text="{Binding OrderID}" />
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:GridTemplateColumn.CellTemplate&gt;
+    </syncfusion:GridTemplateColumn.CellTemplate>
 
-    &lt;syncfusion:GridTemplateColumn.EditTemplate&gt;
+    <syncfusion:GridTemplateColumn.EditTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;Grid&gt;
+            <Grid>
 
                 <TextBox x:Name="textBox"
 
@@ -5917,13 +5917,13 @@ The following code example shows, how to set the FocusedElement inside DataTempl
 
                          syncfusion:FocusManagerHelper.FocusedElement="True" />
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:GridTemplateColumn.EditTemplate&gt;
+    </syncfusion:GridTemplateColumn.EditTemplate>
 
-&lt;/syncfusion:GridTemplateColumn&gt;
+</syncfusion:GridTemplateColumn>
 
 
 
@@ -5939,25 +5939,25 @@ The following XAML code example displays you how to set focus directly to editor
 
 
 
-&lt;syncfusion:SfDataGrid.Columns&gt;
+<syncfusion:SfDataGrid.Columns>
 
-    &lt;syncfusion:GridTemplateColumn HeaderText="Customer ID" MappingName="CustomerID"&gt;
+    <syncfusion:GridTemplateColumn HeaderText="Customer ID" MappingName="CustomerID">
 
-        &lt;syncfusion:GridTemplateColumn.CellTemplate&gt;
+        <syncfusion:GridTemplateColumn.CellTemplate>
 
-            &lt;DataTemplate&gt;
+            <DataTemplate>
 
-                &lt;TextBlock Text="{Binding CustomerID}" /&gt;
+                <TextBlock Text="{Binding CustomerID}" />
 
-            &lt;/DataTemplate&gt;
+            </DataTemplate>
 
-        &lt;/syncfusion:GridTemplateColumn.CellTemplate&gt;
+        </syncfusion:GridTemplateColumn.CellTemplate>
 
-        &lt;syncfusion:GridTemplateColumn.EditTemplate&gt;
+        <syncfusion:GridTemplateColumn.EditTemplate>
 
-            &lt;DataTemplate&gt;
+            <DataTemplate>
 
-                &lt;Grid FocusManager.FocusedElement="{Binding ElementName=textBox}"&gt;
+                <Grid FocusManager.FocusedElement="{Binding ElementName=textBox}">
 
                     <TextBox x:Name="textBox"
 
@@ -5971,15 +5971,15 @@ The following XAML code example displays you how to set focus directly to editor
 
                                             Mode=TwoWay}" />
 
-                &lt;/Grid&gt;
+                </Grid>
 
-            &lt;/DataTemplate&gt;
+            </DataTemplate>
 
-        &lt;/syncfusion:GridTemplateColumn.EditTemplate&gt;
+        </syncfusion:GridTemplateColumn.EditTemplate>
 
-    &lt;/syncfusion:GridTemplateColumn&gt;
+    </syncfusion:GridTemplateColumn>
 
-&lt;/syncfusion:SfDataGrid.Columns&gt;
+</syncfusion:SfDataGrid.Columns>
 
 
 
@@ -6022,19 +6022,19 @@ Then your XAML code is as follows.
 
 
 
-&lt;syncfusion:GridTemplateColumn HeaderText="Order ID" MappingName="OrderID"&gt;
+<syncfusion:GridTemplateColumn HeaderText="Order ID" MappingName="OrderID">
 
-    &lt;syncfusion:GridTemplateColumn.CellTemplate&gt;
+    <syncfusion:GridTemplateColumn.CellTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;TextBlock Text="{Binding Value}" /&gt;
+            <TextBlock Text="{Binding Value}" />
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:GridTemplateColumn.CellTemplate&gt;
+    </syncfusion:GridTemplateColumn.CellTemplate>
 
-&lt;/syncfusion:GridTemplateColumn&gt;
+</syncfusion:GridTemplateColumn>
 
 
 
@@ -6139,11 +6139,11 @@ The following code example shows how to use unboundcolumns in the DataGrid contr
 
                        ItemsSource="{Binding SalesInfo}">
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
-        &lt;syncfusion:GridTextColumn MappingName="Product" /&gt;
+        <syncfusion:GridTextColumn MappingName="Product" />
 
-        &lt;syncfusion:GridTextColumn MappingName="Quantity" TextAlignment="Right" /&gt;
+        <syncfusion:GridTextColumn MappingName="Quantity" TextAlignment="Right" />
 
         <syncfusion:GridTextColumn DisplayBinding="{Binding Path=Amount,
 
@@ -6153,7 +6153,7 @@ The following code example shows how to use unboundcolumns in the DataGrid contr
 
                                    TextAlignment="Right" />
 
-        &lt;!--  UnBoundColumn with Expressions  --&gt;
+        <!--  UnBoundColumn with Expressions  -->
 
         <syncfusion:GridUnBoundColumn AllowEditing="False"
 
@@ -6165,7 +6165,7 @@ The following code example shows how to use unboundcolumns in the DataGrid contr
 
                                       TextAlignment="Right" />
 
-        &lt;!--  UnBoundColumn with Format  --&gt;
+        <!--  UnBoundColumn with Format  -->
 
         <syncfusion:GridUnBoundColumn Width="180"
 
@@ -6175,9 +6175,9 @@ The following code example shows how to use unboundcolumns in the DataGrid contr
 
                                       MappingName="Amount for Product" />
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -6185,7 +6185,7 @@ The following screenshot shows the output.
 
 
 
-{ ![](Features_images/Features_img58.png) | markdownify }
+{{ '![](Features_images/Features_img58.png)' | markdownify }}
 {:.image }
 
 
@@ -6232,7 +6232,7 @@ The following screenshot displays you the output.
 
 
 
-{ ![UnboundColumn1](Features_images/Features_img59.png) | markdownify }
+{{ '![UnboundColumn1](Features_images/Features_img59.png)' | markdownify }}
 {:.image }
 
 
@@ -6321,7 +6321,7 @@ Reset</td></tr>
 <td>
 Columns</td><td>
 Columns</td><td>
-This is a collection of GridColumns that helps to generate columns based on the given GridColumns (For information about GridColumns, see { [Columns](http://help.syncfusion.com/ug/wpf/sfdatagrid/default.htm) | markdownify }).</td><td>
+This is a collection of GridColumns that helps to generate columns based on the given GridColumns (For information about GridColumns, see {{ '[Columns](http://help.syncfusion.com/ug/wpf/sfdatagrid/default.htm)' | markdownify }}).</td><td>
 new Columns()</td></tr>
 <tr>
 <td>
@@ -6358,19 +6358,19 @@ The following code example illustrates how to use GridMultiColumnDropDownList.
 
                                         ValueMember="CustomerID ">
 
-    &lt;syncfusion:GridMultiColumnDropDownList.Columns&gt;
+    <syncfusion:GridMultiColumnDropDownList.Columns>
 
-        &lt;syncfusion:Columns&gt;
+        <syncfusion:Columns>
 
-            &lt;syncfusion:GridTextColumn MappingName=" CustomerID " /&gt;
+            <syncfusion:GridTextColumn MappingName=" CustomerID " />
 
-            &lt;syncfusion:GridTextColumn MappingName="OrderID" /&gt;
+            <syncfusion:GridTextColumn MappingName="OrderID" />
 
-        &lt;/syncfusion:Columns&gt;
+        </syncfusion:Columns>
 
-    &lt;/syncfusion:GridMultiColumnDropDownList.Columns&gt;
+    </syncfusion:GridMultiColumnDropDownList.Columns>
 
-&lt;/syncfusion:GridMultiColumnDropDownList&gt;
+</syncfusion:GridMultiColumnDropDownList>
 
 
 
@@ -6380,7 +6380,7 @@ The above XAML code has resulted in the following output.
 
 
 
-{ ![](Features_images/Features_img60.png) | markdownify }
+{{ '![](Features_images/Features_img60.png)' | markdownify }}
 {:.image }
 
 
@@ -6462,7 +6462,7 @@ The DataGrid control also allows you to set the column sizing for a particular c
 <table>
 <tr>
 <td>
-> {{ '_Note: DataGrid control applies column sizing based on Width, MinimumWidth and MaximumWidth properties._' | markdownify }}</td></tr>
+> {{{ ''_Note: DataGrid control applies column sizing based on Width, MinimumWidth and MaximumWidth properties._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 </td></tr>
@@ -6484,7 +6484,7 @@ The DataGrid control also allows you to set the column sizing for a particular c
 <table>
 <tr>
 <td>
-> {{ '_Note: When you resize the columns and the Columns sizer is in ‘Star’ or ‘AutoWithLastFill’ mode, it remains its behavior._' | markdownify }}</td></tr>
+> {{{ ''_Note: When you resize the columns and the Columns sizer is in ‘Star’ or ‘AutoWithLastFill’ mode, it remains its behavior._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 </td></tr>
@@ -6521,7 +6521,7 @@ The following screenshot illustrates the output.
 
 
 
-{ ![](Features_images/Features_img61.png) | markdownify }
+{{ '![](Features_images/Features_img61.png)' | markdownify }}
 {:.image }
 
 
@@ -6624,7 +6624,7 @@ Used to cacluate the row height based on the content that located in the grid ce
 <table>
 <tr>
 <td>
-> {{ '_Note: The above methods are useful when you create custom GridColumnSizer for SfDataGrid._' | markdownify }}</td></tr>
+> {{{ ''_Note: The above methods are useful when you create custom GridColumnSizer for SfDataGrid._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 </td></tr>
@@ -6703,11 +6703,11 @@ dataGrid.GridColumnSizer = new GridColumnSizerExt(dataGrid);
 
 …
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// GridColumnSizerExt class is the custom GridColumnSizer
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
 
 
@@ -6723,11 +6723,11 @@ public class dColumnSizerExt : GridColumnSizer
 
    }
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Calculate Width for Column When Column Sizer is SizeToCells
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         /// <param name="column">GridColumn</param>
 
@@ -6741,13 +6741,13 @@ public class dColumnSizerExt : GridColumnSizer
 
           }
 
-           /// &lt;summary&gt;
+           /// <summary>
 
            /// Calculate Width for column when ColumnSizer is SizeToHeader
 
            /// HeaderCell width is calculated based on headertext, sorticon and   filter icon
 
-           /// &lt;/summary&gt;
+           /// </summary>
 
            /// <param name="column">GridColumn</param>
 
@@ -6781,7 +6781,7 @@ The following code example shows how to hide the Columns in XAML.
 
                        ItemsSource="{Binding OrderInfoCollection}">
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
         <syncfusion:GridTextColumn HeaderText="Order ID"
 
@@ -6789,17 +6789,17 @@ The following code example shows how to hide the Columns in XAML.
 
                                    MappingName="OrderID" />
 
-        &lt;syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" /&gt;
+        <syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" />
 
-        &lt;syncfusion:GridTextColumn HeaderText="Name of Customer" MappingName="CustomerName" /&gt;
+        <syncfusion:GridTextColumn HeaderText="Name of Customer" MappingName="CustomerName" />
 
-        &lt;syncfusion:GridTextColumn HeaderText="Ship Country" MappingName="ShipCountry" /&gt;
+        <syncfusion:GridTextColumn HeaderText="Ship Country" MappingName="ShipCountry" />
 
-        &lt;syncfusion:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" /&gt;
+        <syncfusion:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -6830,7 +6830,7 @@ To enable resizing you can set SfDataGrid.AllowResizingColumns property value to
 
 When resizing functionality enabled, Grid shows a resizing cursor during hovering at the edge of the column header as shown in the following screenshot:
 
-{ ![](Features_images/Features_img62.png) | markdownify }
+{{ '![](Features_images/Features_img62.png)' | markdownify }}
 {:.image }
 
 
@@ -6842,7 +6842,7 @@ The following screenshot displays how Hidden columns are displayed when AllowRes
 
 
 
-{ ![](Features_images/Features_img63.png) | markdownify }
+{{ '![](Features_images/Features_img63.png)' | markdownify }}
 {:.image }
 
 
@@ -6852,7 +6852,7 @@ _DataGrid with AllowResizingHiddenColumns property enabled_
 
 
 
-{ ![](Features_images/Features_img64.png) | markdownify }
+{{ '![](Features_images/Features_img64.png)' | markdownify }}
 {:.image }
 
 
@@ -6942,7 +6942,7 @@ You can drag the column using the mouse. DataGrid also provides extensive suppor
 
 The following screenshot illustrates how to drag the column.
 
-{ ![](Features_images/Features_img65.png) | markdownify }
+{{ '![](Features_images/Features_img65.png)' | markdownify }}
 {:.image }
 
 
@@ -7192,7 +7192,7 @@ The following screenshot illustrates the output.
 
 
 
-{ ![](Features_images/Features_img66.png) | markdownify }
+{{ '![](Features_images/Features_img66.png)' | markdownify }}
 {:.image }
 
 
@@ -7231,31 +7231,31 @@ The following code example illustrates how to create StackedHeaders.
 
 [XAML]
 
-&lt;syncfusion:SfDataGrid.StackedHeaderRows&gt;
+<syncfusion:SfDataGrid.StackedHeaderRows>
 
-    &lt;syncfusion:StackedHeaderRow&gt;
+    <syncfusion:StackedHeaderRow>
 
-        &lt;syncfusion:StackedHeaderRow.StackedColumns&gt;
+        <syncfusion:StackedHeaderRow.StackedColumns>
 
-            &lt;syncfusion:StackedColumn ChildColumns="OrderID,CustomerID,EmployeeID,ShipCity,ShipCountry, Freight,OrderedDate,ShipPostalCode" HeaderText="Order Shipment Details" /&gt;
+            <syncfusion:StackedColumn ChildColumns="OrderID,CustomerID,EmployeeID,ShipCity,ShipCountry, Freight,OrderedDate,ShipPostalCode" HeaderText="Order Shipment Details" />
 
-        &lt;/syncfusion:StackedHeaderRow.StackedColumns&gt;
+        </syncfusion:StackedHeaderRow.StackedColumns>
 
-    &lt;/syncfusion:StackedHeaderRow&gt;
+    </syncfusion:StackedHeaderRow>
 
-    &lt;syncfusion:StackedHeaderRow&gt;
+    <syncfusion:StackedHeaderRow>
 
-        &lt;syncfusion:StackedHeaderRow.StackedColumns&gt;
+        <syncfusion:StackedHeaderRow.StackedColumns>
 
-            &lt;syncfusion:StackedColumn ChildColumns="OrderID,CustomerID,Freight,EmployeeID" HeaderText="Order Details" /&gt;
+            <syncfusion:StackedColumn ChildColumns="OrderID,CustomerID,Freight,EmployeeID" HeaderText="Order Details" />
 
-            &lt;syncfusion:StackedColumn ChildColumns="ShipCity,ShipCountry,ShipPostalCode" HeaderText="Ship Details" /&gt;
+            <syncfusion:StackedColumn ChildColumns="ShipCity,ShipCountry,ShipPostalCode" HeaderText="Ship Details" />
 
-        &lt;/syncfusion:StackedHeaderRow.StackedColumns&gt;
+        </syncfusion:StackedHeaderRow.StackedColumns>
 
-    &lt;/syncfusion:StackedHeaderRow&gt;
+    </syncfusion:StackedHeaderRow>
 
-&lt;/syncfusion:SfDataGrid.StackedHeaderRows&gt;
+</syncfusion:SfDataGrid.StackedHeaderRows>
 
 
 
@@ -7265,7 +7265,7 @@ The following screenshot displays the output for the above XAML code.
 
 
 
-{ ![](Features_images/Features_img67.png) | markdownify }
+{{ '![](Features_images/Features_img67.png)' | markdownify }}
 {:.image }
 
 
@@ -7283,19 +7283,19 @@ The following code example illustrates this.
 
 [XAML]
 
-&lt;syncfusion:GridTextColumn DisplayBinding="{Binding Path=OrderID}"&gt;
+<syncfusion:GridTextColumn DisplayBinding="{Binding Path=OrderID}">
 
-    &lt;syncfusion:GridTextColumn.HeaderTemplate&gt;
+    <syncfusion:GridTextColumn.HeaderTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;TextBlock Text="OrderID of product has been purchased" TextWrapping="Wrap" /&gt;
+            <TextBlock Text="OrderID of product has been purchased" TextWrapping="Wrap" />
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:GridTextColumn.HeaderTemplate&gt;
+    </syncfusion:GridTextColumn.HeaderTemplate>
 
-&lt;/syncfusion:GridTextColumn&gt;
+</syncfusion:GridTextColumn>
 
 
 
@@ -7305,7 +7305,7 @@ The following screenshot illustrates the output.
 
 
 
-{ ![](Features_images/Features_img68.png) | markdownify }
+{{ '![](Features_images/Features_img68.png)' | markdownify }}
 {:.image }
 
 
@@ -7487,29 +7487,29 @@ SfDataGrid provides support to apply Tooltip for Cell and Headers. You can achie
 
 [XAML]
 
-&lt;syncfusion:GridTextColumn DisplayBinding="{Binding Path=CustomerID}" MappingName="CustomerID"&gt;
+<syncfusion:GridTextColumn DisplayBinding="{Binding Path=CustomerID}" MappingName="CustomerID">
 
-    &lt;syncfusion:GridTextColumn.ToolTipTemplate&gt;
+    <syncfusion:GridTextColumn.ToolTipTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;TextBlock Text="{Binding CustomerID}" /&gt;
+            <TextBlock Text="{Binding CustomerID}" />
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:GridTextColumn.ToolTipTemplate&gt;
+    </syncfusion:GridTextColumn.ToolTipTemplate>
 
-    &lt;syncfusion:GridTextColumn.HeaderToolTipTemplate&gt;
+    <syncfusion:GridTextColumn.HeaderToolTipTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;TextBlock Text="Hedaer for CutomerID" /&gt;
+            <TextBlock Text="Hedaer for CutomerID" />
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:GridTextColumn.HeaderToolTipTemplate&gt;
+    </syncfusion:GridTextColumn.HeaderToolTipTemplate>
 
-&lt;/syncfusion:GridTextColumn&gt;
+</syncfusion:GridTextColumn>
 
 
 
@@ -7519,7 +7519,7 @@ The following screenshot displays the output of Tooltip applied in Header cell.
 
 
 
-{ ![](Features_images/Features_img69.png) | markdownify }
+{{ '![](Features_images/Features_img69.png)' | markdownify }}
 {:.image }
 
 
@@ -7527,7 +7527,7 @@ _DataGrid with Tooltip applied in Header cell_
 
 The following screenshot displays the output of Tooltip applied in Cells.
 
-{ ![](Features_images/Features_img70.png) | markdownify }
+{{ '![](Features_images/Features_img70.png)' | markdownify }}
 {:.image }
 
 
@@ -7557,7 +7557,7 @@ void datagrid_QueryColumnDragging(object sender, Syncfusion.UI.Xaml.Grid.QueryCo
 
         var frozencolindex = datagrid.FrozenColumnCount + this.datagrid.ResolveToStartColumnIndex();
 
-        if (e.From &lt; frozencolindex && e.To &gt; frozencolindex - 1)
+        if (e.From < frozencolindex && e.To > frozencolindex - 1)
 
             e.Cancel = true;
 
@@ -7620,21 +7620,21 @@ public bool AllowFiltering
 
 
 
-    &lt;Window.DataContext&gt;
+    <Window.DataContext>
 
-        &lt;local:OrderInfoRepositiory /&gt;
+        <local:OrderInfoRepositiory />
 
-    &lt;/Window.DataContext&gt;
+    </Window.DataContext>
 
 
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;local:OrderInfoRepositiory x:Key="data" /&gt;
+        <local:OrderInfoRepositiory x:Key="data" />
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
-    &lt;Grid&gt;
+    <Grid>
 
         <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -7646,25 +7646,25 @@ public bool AllowFiltering
 
                                                      Source={StaticResource data}}">
 
-            &lt;syncfusion:SfDataGrid.Columns&gt;
+            <syncfusion:SfDataGrid.Columns>
 
-                &lt;syncfusion:GridTextColumn AllowFiltering="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}, Path=DataContext.AllowFiltering}" MappingName="OrderID" /&gt;
+                <syncfusion:GridTextColumn AllowFiltering="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:MainWindow}}, Path=DataContext.AllowFiltering}" MappingName="OrderID" />
 
-                &lt;syncfusion:GridTextColumn MappingName="CustomerID" /&gt;
+                <syncfusion:GridTextColumn MappingName="CustomerID" />
 
-                &lt;syncfusion:GridTextColumn AllowFiltering="{Binding AllowFiltering, Source={StaticResource data}}" MappingName="CustomerName" /&gt;
+                <syncfusion:GridTextColumn AllowFiltering="{Binding AllowFiltering, Source={StaticResource data}}" MappingName="CustomerName" />
 
-                &lt;syncfusion:GridTextColumn MappingName="ShipCity" /&gt;
+                <syncfusion:GridTextColumn MappingName="ShipCity" />
 
-                &lt;syncfusion:GridTextColumn MappingName="Country" /&gt;
+                <syncfusion:GridTextColumn MappingName="Country" />
 
-            &lt;/syncfusion:SfDataGrid.Columns&gt;
+            </syncfusion:SfDataGrid.Columns>
 
-        &lt;/syncfusion:SfDataGrid&gt;
+        </syncfusion:SfDataGrid>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -7788,11 +7788,11 @@ The following code example shows you how to Bind ComboItems to ComboBoxColumn.
 
         Height="350">
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;local:ViewModel x:Key="data" /&gt;
+        <local:ViewModel x:Key="data" />
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
     <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -7806,17 +7806,17 @@ The following code example shows you how to Bind ComboItems to ComboBoxColumn.
 
                                                  Source={StaticResource data}}">
 
-        &lt;syncfusion:SfDataGrid.Columns&gt;
+        <syncfusion:SfDataGrid.Columns>
 
-            &lt;syncfusion:GridTextColumn MappingName="OrderID" /&gt;
+            <syncfusion:GridTextColumn MappingName="OrderID" />
 
-            &lt;syncfusion:GridComboBoxColumn ItemsSource="{Binding Path=ComboItems, Source={StaticResource data}}" MappingName="CustomerName" /&gt;
+            <syncfusion:GridComboBoxColumn ItemsSource="{Binding Path=ComboItems, Source={StaticResource data}}" MappingName="CustomerName" />
 
-        &lt;/syncfusion:SfDataGrid.Columns&gt;
+        </syncfusion:SfDataGrid.Columns>
 
-    &lt;/syncfusion:SfDataGrid&gt;
+    </syncfusion:SfDataGrid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -7824,7 +7824,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img71.png) | markdownify }
+{{ '![](Features_images/Features_img71.png)' | markdownify }}
 {:.image }
 
 
@@ -7854,11 +7854,11 @@ SfDataGrid has Hyperlink Column that directly loads Hyperlink control as its UIE
 
         Height="350">
 
-    &lt;Window.DataContext&gt;
+    <Window.DataContext>
 
-        &lt;local:ViewModel /&gt;
+        <local:ViewModel />
 
-    &lt;/Window.DataContext&gt;
+    </Window.DataContext>
 
     <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -7872,27 +7872,27 @@ SfDataGrid has Hyperlink Column that directly loads Hyperlink control as its UIE
 
                            ItemsSource="{Binding OrderInfoCollection}"                           ItemsSourceChanged="SfDataGrid_ItemsSourceChanged_1">
 
-        &lt;syncfusion:SfDataGrid.Resources&gt;
+        <syncfusion:SfDataGrid.Resources>
 
-            &lt;Style TargetType="Hyperlink"&gt;
+            <Style TargetType="Hyperlink">
 
-                &lt;Setter Property="Foreground" Value="Red" /&gt;
+                <Setter Property="Foreground" Value="Red" />
 
-            &lt;/Style&gt;
+            </Style>
 
-        &lt;/syncfusion:SfDataGrid.Resources&gt;
+        </syncfusion:SfDataGrid.Resources>
 
-        &lt;syncfusion:SfDataGrid.Columns&gt;
+        <syncfusion:SfDataGrid.Columns>
 
-            &lt;syncfusion:GridTextColumn MappingName="CustomerName" /&gt;
+            <syncfusion:GridTextColumn MappingName="CustomerName" />
 
-            &lt;syncfusion:GridHyperlinkColumn MappingName="ShipCity" /&gt;
+            <syncfusion:GridHyperlinkColumn MappingName="ShipCity" />
 
-        &lt;/syncfusion:SfDataGrid.Columns&gt;
+        </syncfusion:SfDataGrid.Columns>
 
-    &lt;/syncfusion:SfDataGrid&gt;
+    </syncfusion:SfDataGrid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -7902,7 +7902,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img72.png) | markdownify }
+{{ '![](Features_images/Features_img72.png)' | markdownify }}
 {:.image }
 
 
@@ -7938,13 +7938,13 @@ public class BaseCommand : ICommand
 
 
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Creates a new command that always execute.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// <param name="execute">The execution logic.&lt;/param&gt;
+    /// <param name="execute">The execution logic.</param>
 
     public BaseCommand(Action<object> execute)
 
@@ -7956,15 +7956,15 @@ public class BaseCommand : ICommand
 
 
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Creates a new command.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// <param name="execute">The execution logic.&lt;/param&gt;
+    /// <param name="execute">The execution logic.</param>
 
-    /// <param name="canExecute">The execution status logic.&lt;/param&gt;
+    /// <param name="canExecute">The execution status logic.</param>
 
     public BaseCommand(Action<object> execute, Predicate<object> canExecute)
 
@@ -8110,19 +8110,19 @@ Bind command to button inside the DataTemplate.
 
 
 
-    &lt;Window.DataContext&gt;
+    <Window.DataContext>
 
-        &lt;local:ViewModel /&gt;
+        <local:ViewModel />
 
-    &lt;/Window.DataContext&gt;
+    </Window.DataContext>
 
 
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;local:ViewModel x:Key="data" /&gt;
+        <local:ViewModel x:Key="data" />
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
 
 
@@ -8140,17 +8140,17 @@ Bind command to button inside the DataTemplate.
 
                            ItemsSourceChanged="SfDataGrid_ItemsSourceChanged_1">
 
-        &lt;syncfusion:SfDataGrid.Columns&gt;
+        <syncfusion:SfDataGrid.Columns>
 
-            &lt;syncfusion:GridTextColumn MappingName="CustomerName" /&gt;
+            <syncfusion:GridTextColumn MappingName="CustomerName" />
 
 
 
-            &lt;syncfusion:GridTemplateColumn MappingName="Delete"&gt;
+            <syncfusion:GridTemplateColumn MappingName="Delete">
 
-                &lt;syncfusion:GridTemplateColumn.CellTemplate&gt;
+                <syncfusion:GridTemplateColumn.CellTemplate>
 
-                    &lt;DataTemplate&gt;
+                    <DataTemplate>
 
                         <Button Command="{Binding DeleteRecord,
 
@@ -8160,17 +8160,17 @@ Bind command to button inside the DataTemplate.
 
                                 Content="Delete" />
 
-                    &lt;/DataTemplate&gt;
+                    </DataTemplate>
 
-                &lt;/syncfusion:GridTemplateColumn.CellTemplate&gt;
+                </syncfusion:GridTemplateColumn.CellTemplate>
 
-            &lt;/syncfusion:GridTemplateColumn&gt;
+            </syncfusion:GridTemplateColumn>
 
-        &lt;/syncfusion:SfDataGrid.Columns&gt;
+        </syncfusion:SfDataGrid.Columns>
 
-    &lt;/syncfusion:SfDataGrid&gt;
+    </syncfusion:SfDataGrid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -8178,7 +8178,7 @@ The following screenshot displays the output of the above code.
 
 
 
-{ ![](Features_images/Features_img73.png) | markdownify }
+{{ '![](Features_images/Features_img73.png)' | markdownify }}
 {:.image }
 
 
@@ -8220,19 +8220,19 @@ The following code example shows the process of building a DataGrid with multipl
 
 ItemsSource="{Binding OrderInfoCollection}">
 
-&lt;syncfusion:SfDataGrid.Columns&gt;
+<syncfusion:SfDataGrid.Columns>
 
-    &lt;syncfusion:GridTextColumn MappingName="OrderID" /&gt;
+    <syncfusion:GridTextColumn MappingName="OrderID" />
 
-    &lt;syncfusion:GridUnBoundColumn MappingName="EmployeeName"/&gt;
+    <syncfusion:GridUnBoundColumn MappingName="EmployeeName"/>
 
-    &lt;syncfusion:GridTextColumn MappingName="ShipCountry"/&gt;
+    <syncfusion:GridTextColumn MappingName="ShipCountry"/>
 
-    &lt;syncfusion:GridTextColumn MappingName="ShipCity"/&gt;
+    <syncfusion:GridTextColumn MappingName="ShipCity"/>
 
-&lt;/syncfusion:SfDataGrid.Columns&gt;
+</syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -8278,7 +8278,7 @@ The source results in the following output.
 
 
 
-{ ![](Features_images/Features_img74.png) | markdownify }
+{{ '![](Features_images/Features_img74.png)' | markdownify }}
 {:.image }
 
 
@@ -8370,7 +8370,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img75.png) | markdownify }
+{{ '![](Features_images/Features_img75.png)' | markdownify }}
 {:.image }
 
 
@@ -8408,7 +8408,7 @@ The following screenshot illustrates the output.
 
 
 
-{ ![](Features_images/Features_img76.png) | markdownify }
+{{ '![](Features_images/Features_img76.png)' | markdownify }}
 {:.image }
 
 
@@ -8433,11 +8433,11 @@ The following code example illustrates on how to create custom renderer to load 
 
 [C#]
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// CustomRenderer Creation
 
-/// &lt;/summary&gt;
+/// </summary>
 
 /// <param name="TextBlock">Display Control</param>
 
@@ -8615,13 +8615,13 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
 {
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Create new display element.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;returns&gt;&lt;/returns&gt;
+    /// <returns></returns>
 
     protected override TextBlock OnCreateDisplayUIElement()
 
@@ -8631,13 +8631,13 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Create new edit element.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;returns&gt;&lt;/returns&gt;
+    /// <returns></returns>
 
     protected override DatePicker OnCreateEditUIElement()
 
@@ -8663,19 +8663,19 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
 {
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Initialize display element with binding.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="rowColumnIndex"&gt;&lt;/param&gt;
+    /// <param name="rowColumnIndex"></param>
 
-    /// &lt;param name="uiElement"&gt;&lt;/param&gt;
+    /// <param name="uiElement"></param>
 
-    /// &lt;param name="column"&gt;&lt;/param&gt;
+    /// <param name="column"></param>
 
-    /// &lt;param name="dataContext"&gt;&lt;/param&gt;
+    /// <param name="dataContext"></param>
 
     public override void OnInitializeDisplayElement(RowColumnIndex rowColumnIndex, TextBlock uiElement, GridColumn column,
 
@@ -8689,19 +8689,19 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Update display elements binding while scrolling.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="cellRowcolumnIndex"&gt;&lt;/param&gt;
+    /// <param name="cellRowcolumnIndex"></param>
 
-    /// &lt;param name="uiElement"&gt;&lt;/param&gt;
+    /// <param name="uiElement"></param>
 
-    /// &lt;param name="column"&gt;&lt;/param&gt;
+    /// <param name="column"></param>
 
-    /// &lt;param name="dataContext"&gt;&lt;/param&gt;
+    /// <param name="dataContext"></param>
 
     public override void OnUpdateDisplayBinding(RowColumnIndex cellRowcolumnIndex, TextBlock uiElement, GridColumn column, object dataContext)
 
@@ -8715,17 +8715,17 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
 
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// custom binding for display element.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="element"&gt;&lt;/param&gt;
+    /// <param name="element"></param>
 
-    /// &lt;param name="column"&gt;&lt;/param&gt;
+    /// <param name="column"></param>
 
-    /// &lt;param name="dataContext"&gt;&lt;/param&gt;
+    /// <param name="dataContext"></param>
 
     private static void SetDisplayBinding(TextBlock element, GridColumn column, object dataContext)
 
@@ -8769,19 +8769,19 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
 {
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Initialize edit element with binding
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="cellRowcolumnIndex"&gt;&lt;/param&gt;
+    /// <param name="cellRowcolumnIndex"></param>
 
-    /// &lt;param name="element"&gt;&lt;/param&gt;
+    /// <param name="element"></param>
 
-    /// &lt;param name="column"&gt;&lt;/param&gt;
+    /// <param name="column"></param>
 
-    /// &lt;param name="dataContext"&gt;&lt;/param&gt;
+    /// <param name="dataContext"></param>
 
     public override void OnInitializeEditElement(RowColumnIndex cellRowcolumnIndex, DatePicker element, GridColumn column,
 
@@ -8795,19 +8795,19 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Update binding for edit element while scrolling.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="cellRowcolumnIndex"&gt;&lt;/param&gt;
+    /// <param name="cellRowcolumnIndex"></param>
 
-    /// &lt;param name="element"&gt;&lt;/param&gt;
+    /// <param name="element"></param>
 
-    /// &lt;param name="column"&gt;&lt;/param&gt;
+    /// <param name="column"></param>
 
-    /// &lt;param name="dataContext"&gt;&lt;/param&gt;
+    /// <param name="dataContext"></param>
 
     public override void OnUpdateEditBinding(RowColumnIndex cellRowcolumnIndex, DatePicker element, GridColumn column, object dataContext)
 
@@ -8819,17 +8819,17 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Custom binding for edit element.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="element"&gt;&lt;/param&gt;
+    /// <param name="element"></param>
 
-    /// &lt;param name="column"&gt;&lt;/param&gt;
+    /// <param name="column"></param>
 
-    /// &lt;param name="dataContext"&gt;&lt;/param&gt;
+    /// <param name="dataContext"></param>
 
     private static void SetEditBinding(DatePicker element, GridColumn column, object dataContext)
 
@@ -8871,15 +8871,15 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
 {
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// When edit element ready for interaction this method will be called.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="sender"&gt;&lt;/param&gt;
+    /// <param name="sender"></param>
 
-    /// &lt;param name="e"&gt;&lt;/param&gt;
+    /// <param name="e"></param>
 
     protected override void OnEditElementLoaded(object sender, RoutedEventArgs e)
 
@@ -8929,7 +8929,7 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
 {
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Let Renderer decide whether the parent grid should be allowed to handle keys and prevent
 
@@ -8941,15 +8941,15 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
     /// for this renderer.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// <param name="e">A &lt;see cref="KeyEventArgs" /&gt; object.&lt;/param&gt;
+    /// <param name="e">A <see cref="KeyEventArgs" /> object.</param>
 
-    /// &lt;returns&gt;
+    /// <returns>
 
     /// True if the parent grid should be allowed to handle keys; false otherwise.
 
-    /// &lt;/returns&gt;
+    /// </returns>
 
     protected override bool ShouldGridTryToHandleKeyDown(System.Windows.Input.KeyEventArgs e)
 
@@ -9065,13 +9065,13 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Create new display element.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;returns&gt;&lt;/returns&gt;
+    /// <returns></returns>
 
     protected override TextBlock OnCreateDisplayUIElement()
 
@@ -9081,13 +9081,13 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Create new edit element.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;returns&gt;&lt;/returns&gt;
+    /// <returns></returns>
 
     protected override DatePicker OnCreateEditUIElement()
 
@@ -9101,13 +9101,13 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
     #region Display/Edit Value Overrides
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Gets the control value.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;returns&gt;&lt;/returns&gt;
+    /// <returns></returns>
 
     public override object GetControlValue()
 
@@ -9123,13 +9123,13 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
 
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Sets the control value.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// <param name="value">The value.&lt;/param&gt;
+    /// <param name="value">The value.</param>
 
     public override void SetControlValue(object value)
 
@@ -9153,19 +9153,19 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
 
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Initialize display element with binding.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="rowColumnIndex"&gt;&lt;/param&gt;
+    /// <param name="rowColumnIndex"></param>
 
-    /// &lt;param name="uiElement"&gt;&lt;/param&gt;
+    /// <param name="uiElement"></param>
 
-    /// &lt;param name="column"&gt;&lt;/param&gt;
+    /// <param name="column"></param>
 
-    /// &lt;param name="dataContext"&gt;&lt;/param&gt;
+    /// <param name="dataContext"></param>
 
     public override void OnInitializeDisplayElement(RowColumnIndex rowColumnIndex, TextBlock uiElement, GridColumn column,
 
@@ -9181,19 +9181,19 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
 
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Update display elements binding while scrolling.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="cellRowcolumnIndex"&gt;&lt;/param&gt;
+    /// <param name="cellRowcolumnIndex"></param>
 
-    /// &lt;param name="uiElement"&gt;&lt;/param&gt;
+    /// <param name="uiElement"></param>
 
-    /// &lt;param name="column"&gt;&lt;/param&gt;
+    /// <param name="column"></param>
 
-    /// &lt;param name="dataContext"&gt;&lt;/param&gt;
+    /// <param name="dataContext"></param>
 
     public override void OnUpdateDisplayBinding(RowColumnIndex cellRowcolumnIndex, TextBlock uiElement, GridColumn column, object dataContext)
 
@@ -9207,17 +9207,17 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
 
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// custom binding for display element.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="element"&gt;&lt;/param&gt;
+    /// <param name="element"></param>
 
-    /// &lt;param name="column"&gt;&lt;/param&gt;
+    /// <param name="column"></param>
 
-    /// &lt;param name="dataContext"&gt;&lt;/param&gt;
+    /// <param name="dataContext"></param>
 
     private static void SetDisplayBinding(TextBlock element, GridColumn column, object dataContext)
 
@@ -9249,19 +9249,19 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
     #region Edit Element
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Initialize edit element with binding
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="cellRowcolumnIndex"&gt;&lt;/param&gt;
+    /// <param name="cellRowcolumnIndex"></param>
 
-    /// &lt;param name="element"&gt;&lt;/param&gt;
+    /// <param name="element"></param>
 
-    /// &lt;param name="column"&gt;&lt;/param&gt;
+    /// <param name="column"></param>
 
-    /// &lt;param name="dataContext"&gt;&lt;/param&gt;
+    /// <param name="dataContext"></param>
 
     public override void OnInitializeEditElement(RowColumnIndex cellRowcolumnIndex, DatePicker element, GridColumn column,
 
@@ -9277,19 +9277,19 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
 
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Update binding for edit element while scrolling.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="cellRowcolumnIndex"&gt;&lt;/param&gt;
+    /// <param name="cellRowcolumnIndex"></param>
 
-    /// &lt;param name="element"&gt;&lt;/param&gt;
+    /// <param name="element"></param>
 
-    /// &lt;param name="column"&gt;&lt;/param&gt;
+    /// <param name="column"></param>
 
-    /// &lt;param name="dataContext"&gt;&lt;/param&gt;
+    /// <param name="dataContext"></param>
 
     public override void OnUpdateEditBinding(RowColumnIndex cellRowcolumnIndex, DatePicker element, GridColumn column, object dataContext)
 
@@ -9303,17 +9303,17 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
 
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Custom binding for edit element.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="element"&gt;&lt;/param&gt;
+    /// <param name="element"></param>
 
-    /// &lt;param name="column"&gt;&lt;/param&gt;
+    /// <param name="column"></param>
 
-    /// &lt;param name="dataContext"&gt;&lt;/param&gt;
+    /// <param name="dataContext"></param>
 
     private static void SetEditBinding(DatePicker element, GridColumn column, object dataContext)
 
@@ -9343,7 +9343,7 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
 
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Let Renderer decide whether the parent grid should be allowed to handle keys and prevent
 
@@ -9355,15 +9355,15 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
     /// for this renderer.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// <param name="e">A &lt;see cref="KeyEventArgs" /&gt; object.&lt;/param&gt;
+    /// <param name="e">A <see cref="KeyEventArgs" /> object.</param>
 
-    /// &lt;returns&gt;
+    /// <returns>
 
     /// True if the parent grid should be allowed to handle keys; false otherwise.
 
-    /// &lt;/returns&gt;
+    /// </returns>
 
     protected override bool ShouldGridTryToHandleKeyDown(System.Windows.Input.KeyEventArgs e)
 
@@ -9407,15 +9407,15 @@ class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
 
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// When edit element ready for interaction this method will be called.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="sender"&gt;&lt;/param&gt;
+    /// <param name="sender"></param>
 
-    /// &lt;param name="e"&gt;&lt;/param&gt;
+    /// <param name="e"></param>
 
     protected override void OnEditElementLoaded(object sender, RoutedEventArgs e)
 
@@ -9531,15 +9531,15 @@ Finally, add your custom column to SfDataGrid with the following code example in
 
 //Converter for custom column display binding.
 
-&lt;Grid.Resources&gt;
+<Grid.Resources>
 
-    &lt;local:CustomConverter x:Key="converter"/&gt;
+    <local:CustomConverter x:Key="converter"/>
 
-&lt;/Grid.Resources&gt;
+</Grid.Resources>
 
 
 
-&lt;Syncfusion:SfDataGrid.Columns&gt;    
+<Syncfusion:SfDataGrid.Columns>    
 
     <demo:DatePickerColumn MappingName="DateOfMonth"    
 
@@ -9551,7 +9551,7 @@ Finally, add your custom column to SfDataGrid with the following code example in
 
                            AllowEditing="True"/>
 
-&lt;/Syncfusion:SfDataGrid.Columns&gt;
+</Syncfusion:SfDataGrid.Columns>
 
 
 
@@ -9559,13 +9559,13 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img77.png) | markdownify }
+{{ '![](Features_images/Features_img77.png)' | markdownify }}
 {:.image }
 
 
 _Custom Column in Display Mode_
 
-{ ![](Features_images/Features_img78.png) | markdownify }
+{{ '![](Features_images/Features_img78.png)' | markdownify }}
 {:.image }
 
 
@@ -9605,17 +9605,17 @@ The following code example illustrates how to customize star width calculation.
 
                                        LiveDataUpdateMode="AllowDataShaping">
 
-                    &lt;syncfusion:SfDataGrid.Columns&gt;
+                    <syncfusion:SfDataGrid.Columns>
 
-                        &lt;syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" /&gt;
-
-
-
-                        &lt;syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" /&gt;
+                        <syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" />
 
 
 
-                        &lt;syncfusion:GridTextColumn HeaderText="Contact Number" MappingName="ContactNumber" /&gt;
+                        <syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" />
+
+
+
+                        <syncfusion:GridTextColumn HeaderText="Contact Number" MappingName="ContactNumber" />
 
                         <syncfusion:GridNumericColumn HeaderText="Quantity"
 
@@ -9623,9 +9623,9 @@ The following code example illustrates how to customize star width calculation.
 
                                                       NumberDecimalDigits="0" />
 
-                    &lt;/syncfusion:SfDataGrid.Columns&gt;
+                    </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -9761,7 +9761,7 @@ The following screenshot illustrates the output image after applying star column
 
 
 
-{ ![](Features_images/Features_img79.png) | markdownify }
+{{ '![](Features_images/Features_img79.png)' | markdownify }}
 {:.image }
 
 
@@ -9913,7 +9913,7 @@ True</td></tr>
 <tr>
 <td>
 SfDataGrid.SortColumnDescriptions</td><td>
-ObservableCollection&lt;SortColumnDescription&gt;</td><td>
+ObservableCollection<SortColumnDescription></td><td>
 Columns that are added to this collection are allowed to be sorted. </td><td>
 </td></tr>
 <tr>
@@ -9964,13 +9964,13 @@ The following code example illustrates this.
 
                        ItemsSource="{Binding OrderInfoCollection}">
 
-    &lt;syncfusion:SfDataGrid.SortColumnDescriptions&gt;
+    <syncfusion:SfDataGrid.SortColumnDescriptions>
 
-        &lt;syncfusion:SortColumnDescription ColumnName="OrderID" SortDirection="Descending" /&gt;
+        <syncfusion:SortColumnDescription ColumnName="OrderID" SortDirection="Descending" />
 
-    &lt;/syncfusion:SfDataGrid.SortColumnDescriptions&gt;
+    </syncfusion:SfDataGrid.SortColumnDescriptions>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -9992,7 +9992,7 @@ sfdatagrid.SortColumnDescriptions.Add(new SortColumnDescription() { ColumnName =
 
 The following screenshot displays the output.
 
-{ ![](Features_images/Features_img80.png) | markdownify }
+{{ '![](Features_images/Features_img80.png)' | markdownify }}
 {:.image }
 
 
@@ -10103,7 +10103,7 @@ The following screenshot illustrates the MultiColumnSorting in DataGrid.
 
 
 
-{ ![](Features_images/Features_img81.png) | markdownify }
+{{ '![](Features_images/Features_img81.png)' | markdownify }}
 {:.image }
 
 
@@ -10147,7 +10147,7 @@ The following screenshot illustrates the SortNumbers in DataGrid.
 
 
 
-{ ![](Features_images/Features_img82.png) | markdownify }
+{{ '![](Features_images/Features_img82.png)' | markdownify }}
 {:.image }
 
 
@@ -10190,13 +10190,13 @@ In the below example, the column is sorted based on string.Length by using custo
 
         Height="200">
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;local:OrderInfoRepositiory x:Key="data" /&gt;
+        <local:OrderInfoRepositiory x:Key="data" />
 
-        &lt;local:CustomerInfo x:Key="Comparer" /&gt;
+        <local:CustomerInfo x:Key="Comparer" />
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
     <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -10216,15 +10216,15 @@ In the below example, the column is sorted based on string.Length by using custo
 
                            ShowSortNumbers="True">
 
-        &lt;syncfusion:SfDataGrid.SortComparers&gt;
+        <syncfusion:SfDataGrid.SortComparers>
 
-            &lt;Linq:SortComparer Comparer="{StaticResource Comparer}" PropertyName="CustomerName" /&gt;
+            <Linq:SortComparer Comparer="{StaticResource Comparer}" PropertyName="CustomerName" />
 
-        &lt;/syncfusion:SfDataGrid.SortComparers&gt;
+        </syncfusion:SfDataGrid.SortComparers>
 
-    &lt;/syncfusion:SfDataGrid&gt;
+    </syncfusion:SfDataGrid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -10299,7 +10299,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img83.png) | markdownify }
+{{ '![](Features_images/Features_img83.png)' | markdownify }}
 {:.image }
 
 
@@ -10313,7 +10313,7 @@ When you group data by any column, the records are grouped by identical values o
 
 
 
-{ ![](Features_images/Features_img84.png) | markdownify }
+{{ '![](Features_images/Features_img84.png)' | markdownify }}
 {:.image }
 
 
@@ -10368,13 +10368,13 @@ Group Comparer class is assigned to _S_ummaryGroupComparer property of DataGrid.
 
 [XAML]
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-    &lt;local:SummaryGroupComparer x:Key="groupComparer" /&gt;
+    <local:SummaryGroupComparer x:Key="groupComparer" />
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
-&lt;Grid&gt;
+<Grid>
 
     <syncfusion:SfDataGrid x:Name="syncgrid"
 
@@ -10390,11 +10390,11 @@ Group Comparer class is assigned to _S_ummaryGroupComparer property of DataGrid.
 
                            SummaryGroupComparer="{StaticResource groupComparer}">
 
-        &lt;syncfusion:SfDataGrid.CaptionSummaryRow&gt;
+        <syncfusion:SfDataGrid.CaptionSummaryRow>
 
-            &lt;syncfusion:GridSummaryRow Title="Items Count: {IdCount}" ShowSummaryInRow="True"&gt;
+            <syncfusion:GridSummaryRow Title="Items Count: {IdCount}" ShowSummaryInRow="True">
 
-                &lt;syncfusion:GridSummaryRow.SummaryColumns&gt;
+                <syncfusion:GridSummaryRow.SummaryColumns>
 
                     <syncfusion:GridSummaryColumn Name="IdCount"
 
@@ -10404,15 +10404,15 @@ Group Comparer class is assigned to _S_ummaryGroupComparer property of DataGrid.
 
                                                   SummaryType="CountAggregate" />
 
-                &lt;/syncfusion:GridSummaryRow.SummaryColumns&gt;
+                </syncfusion:GridSummaryRow.SummaryColumns>
 
-            &lt;/syncfusion:GridSummaryRow&gt;
+            </syncfusion:GridSummaryRow>
 
-        &lt;/syncfusion:SfDataGrid.CaptionSummaryRow&gt;
+        </syncfusion:SfDataGrid.CaptionSummaryRow>
 
-    &lt;/syncfusion:SfDataGrid&gt;
+    </syncfusion:SfDataGrid>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -10420,7 +10420,7 @@ Now the group rows are automatically sorted by their summary values. You can sor
 
 
 
-{ ![](Features_images/Features_img85.png) | markdownify }
+{{ '![](Features_images/Features_img85.png)' | markdownify }}
 {:.image }
 
 
@@ -10466,7 +10466,7 @@ False</td></tr>
 <tr>
 <td>
 SfDataGrid.GroupColumnDescriptions</td><td>
-ObservableCollection&lt;GroupColumnDescription&gt;</td><td>
+ObservableCollection<GroupColumnDescription></td><td>
 Gets the collection of grouped column in DataGrid </td><td>
 </td></tr>
 <tr>
@@ -10493,7 +10493,7 @@ SfDataGrid.IsGroupDropAreaExpanded</td><td>
 Boolean</td><td>
 Determines a value that indicates whether GroupDropArea is expanded while Grid loads.![](Features_images/Features_img86.jpeg)
 {:.image }
-{{ '_Note: This property gets effective when SfDataGrid.ShowGroupDropArea property is set to ‘true’._' | markdownify }}</td><td>
+{{{ ''_Note: This property gets effective when SfDataGrid.ShowGroupDropArea property is set to ‘true’._'' | markdownify }}}</td><td>
 False</td></tr>
 <tr>
 <td>
@@ -10512,7 +10512,7 @@ The following screenshot illustrates Group or Ungroup the Column in different wa
 
 
 
-{ ![](Features_images/Features_img87.png) | markdownify }
+{{ '![](Features_images/Features_img87.png)' | markdownify }}
 {:.image }
 
 
@@ -10554,11 +10554,11 @@ The following code example illustrates how to perform grouping in XAML.
 
 
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;local:OrderInfoRepositiory x:Key="data" /&gt;
+        <local:OrderInfoRepositiory x:Key="data" />
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
 
 
@@ -10578,15 +10578,15 @@ The following code example illustrates how to perform grouping in XAML.
 
                            ShowGroupDropArea="True">
 
-&lt;syncfusion:SfDataGrid.GroupColumnDescriptions&gt;
+<syncfusion:SfDataGrid.GroupColumnDescriptions>
 
-&lt;syncfusion:GroupColumnDescription ColumnName="OrderID" /&gt;
+<syncfusion:GroupColumnDescription ColumnName="OrderID" />
 
-&lt;/syncfusion:SfDataGrid.GroupColumnDescriptions&gt;
+</syncfusion:SfDataGrid.GroupColumnDescriptions>
 
-    &lt;/syncfusion:SfDataGrid&gt;
+    </syncfusion:SfDataGrid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -10610,7 +10610,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img88.png) | markdownify }
+{{ '![](Features_images/Features_img88.png)' | markdownify }}
 {:.image }
 
 
@@ -10624,7 +10624,7 @@ You can ungroup the grouped column in following ways:
 
 
 
-{ ![](Features_images/Features_img89.png) | markdownify }
+{{ '![](Features_images/Features_img89.png)' | markdownify }}
 {:.image }
 
 
@@ -10636,7 +10636,7 @@ _Ungrouping the column by dragging and dropping the corresponding GroupDropAreaI
 
 
 
-{ ![](Features_images/Features_img90.png) | markdownify }
+{{ '![](Features_images/Features_img90.png)' | markdownify }}
 {:.image }
 
 
@@ -10678,7 +10678,7 @@ for (int i = groups.Count-1; i >= 0 ; i--)
 
 
 
-{ ![](Features_images/Features_img91.png) | markdownify }
+{{ '![](Features_images/Features_img91.png)' | markdownify }}
 {:.image }
 
 
@@ -10712,11 +10712,11 @@ You can freeze the Grouped header. DataGrid provide an interactive support to Fr
 
 
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;local:OrderInfoRepositiory x:Key="data" /&gt;
+        <local:OrderInfoRepositiory x:Key="data" />
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
 
 
@@ -10742,29 +10742,29 @@ You can freeze the Grouped header. DataGrid provide an interactive support to Fr
 
 
 
-        &lt;syncfusion:SfDataGrid.Columns&gt;
+        <syncfusion:SfDataGrid.Columns>
 
-            &lt;syncfusion:GridTextColumn MappingName="OrderID" /&gt;
+            <syncfusion:GridTextColumn MappingName="OrderID" />
 
-            &lt;syncfusion:GridTextColumn AllowGrouping="False" MappingName="CustomerID" /&gt;
+            <syncfusion:GridTextColumn AllowGrouping="False" MappingName="CustomerID" />
 
-            &lt;syncfusion:GridTextColumn MappingName="CustomerName" /&gt;
+            <syncfusion:GridTextColumn MappingName="CustomerName" />
 
-            &lt;syncfusion:GridTextColumn MappingName="ShipCity" /&gt;
+            <syncfusion:GridTextColumn MappingName="ShipCity" />
 
-            &lt;syncfusion:GridTextColumn MappingName="Country" /&gt;
+            <syncfusion:GridTextColumn MappingName="Country" />
 
-        &lt;/syncfusion:SfDataGrid.Columns&gt;
+        </syncfusion:SfDataGrid.Columns>
 
-        &lt;syncfusion:SfDataGrid.GroupColumnDescriptions&gt;
+        <syncfusion:SfDataGrid.GroupColumnDescriptions>
 
-            &lt;syncfusion:GroupColumnDescription ColumnName="OrderID" /&gt;
+            <syncfusion:GroupColumnDescription ColumnName="OrderID" />
 
-        &lt;/syncfusion:SfDataGrid.GroupColumnDescriptions&gt;
+        </syncfusion:SfDataGrid.GroupColumnDescriptions>
 
-    &lt;/syncfusion:SfDataGrid&gt;
+    </syncfusion:SfDataGrid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -10774,7 +10774,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img92.png) | markdownify }
+{{ '![](Features_images/Features_img92.png)' | markdownify }}
 {:.image }
 
 
@@ -11001,11 +11001,11 @@ The following code example defines how to set the custom converter for group des
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;local:GroupDateTimeConverter x:Key="customGroupConverter"&gt;
+<local:GroupDateTimeConverter x:Key="customGroupConverter">
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -11027,13 +11027,13 @@ The following code example defines how to set the custom converter for group des
 
                        ShowColumnWhenGrouped="False">
 
-    &lt;syncfusion:SfDataGrid.GroupColumnDescriptions&gt;
+    <syncfusion:SfDataGrid.GroupColumnDescriptions>
 
-        &lt;syncfusion:GroupColumnDescription ColumnName="Date" Converter="{StaticResource customGroupDateTimeConverter}" /&gt;
+        <syncfusion:GroupColumnDescription ColumnName="Date" Converter="{StaticResource customGroupDateTimeConverter}" />
 
-    &lt;/syncfusion:SfDataGrid.GroupColumnDescriptions&gt;
+    </syncfusion:SfDataGrid.GroupColumnDescriptions>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -11043,7 +11043,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img93.png) | markdownify }
+{{ '![](Features_images/Features_img93.png)' | markdownify }}
 {:.image }
 
 
@@ -11077,11 +11077,11 @@ You can customize GroupDropArea text by using GroupDropAreaText property. You ca
 
         Height="200">
 
-    &lt;Window.DataContext&gt;
+    <Window.DataContext>
 
-        &lt;local:OrderInfoRepositiory /&gt;
+        <local:OrderInfoRepositiory />
 
-    &lt;/Window.DataContext&gt;
+    </Window.DataContext>
 
     <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -11099,7 +11099,7 @@ You can customize GroupDropArea text by using GroupDropAreaText property. You ca
 
                            ShowGroupDropArea="True" />
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -11109,7 +11109,7 @@ The following screenshot displays Group Columns as GroupDropAreaText in GroupDro
 
 
 
-{ ![](Features_images/Features_img94.png) | markdownify }
+{{ '![](Features_images/Features_img94.png)' | markdownify }}
 {:.image }
 
 
@@ -11228,15 +11228,15 @@ The following code example illustrates this.
 
                        ShowColumnWhenGrouped="False">
 
-    &lt;syncfusion:SfDataGrid.GroupColumnDescriptions&gt;
+    <syncfusion:SfDataGrid.GroupColumnDescriptions>
 
-        &lt;syncfusion:GroupColumnDescription ColumnName="Year" /&gt;
+        <syncfusion:GroupColumnDescription ColumnName="Year" />
 
-    &lt;/syncfusion:SfDataGrid.GroupColumnDescriptions&gt;
+    </syncfusion:SfDataGrid.GroupColumnDescriptions>
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
-        &lt;syncfusion:GridTextColumn MappingName="Name" /&gt;
+        <syncfusion:GridTextColumn MappingName="Name" />
 
 
 
@@ -11300,15 +11300,15 @@ The following code example illustrates this.
 
 
 
-        &lt;syncfusion:GridTextColumn MappingName="Year" /&gt;
+        <syncfusion:GridTextColumn MappingName="Year" />
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-    &lt;syncfusion:SfDataGrid.TableSummaryRows&gt;
+    <syncfusion:SfDataGrid.TableSummaryRows>
 
-        &lt;syncfusion:GridSummaryRow ShowSummaryInRow="False"&gt;
+        <syncfusion:GridSummaryRow ShowSummaryInRow="False">
 
-            &lt;syncfusion:GridSummaryRow.SummaryColumns&gt;
+            <syncfusion:GridSummaryRow.SummaryColumns>
 
                 <syncfusion:GridSummaryColumn Name="TQS1"
 
@@ -11326,13 +11326,13 @@ The following code example illustrates this.
 
                                               SummaryType="DoubleAggregate" />
 
-            &lt;/syncfusion:GridSummaryRow.SummaryColumns&gt;
+            </syncfusion:GridSummaryRow.SummaryColumns>
 
-        &lt;/syncfusion:GridSummaryRow&gt;
+        </syncfusion:GridSummaryRow>
 
-    &lt;/syncfusion:SfDataGrid.TableSummaryRows&gt;
+    </syncfusion:SfDataGrid.TableSummaryRows>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -11342,7 +11342,7 @@ The following screenshot displays the output of the above code.
 
 
 
-{ ![](Features_images/Features_img95.png) | markdownify }
+{{ '![](Features_images/Features_img95.png)' | markdownify }}
 {:.image }
 
 
@@ -11378,15 +11378,15 @@ When you declare the summaries as default,DataGrid shows the values in the row. 
 
                        ShowColumnWhenGrouped="False">
 
-    &lt;syncfusion:SfDataGrid.GroupColumnDescriptions&gt;
+    <syncfusion:SfDataGrid.GroupColumnDescriptions>
 
-        &lt;syncfusion:GroupColumnDescription ColumnName="Year" /&gt;
+        <syncfusion:GroupColumnDescription ColumnName="Year" />
 
-    &lt;/syncfusion:SfDataGrid.GroupColumnDescriptions&gt;
+    </syncfusion:SfDataGrid.GroupColumnDescriptions>
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
-        &lt;syncfusion:GridTextColumn MappingName="Name" /&gt;
+        <syncfusion:GridTextColumn MappingName="Name" />
 
 
 
@@ -11450,15 +11450,15 @@ When you declare the summaries as default,DataGrid shows the values in the row. 
 
 
 
-        &lt;syncfusion:GridTextColumn MappingName="Year" /&gt;
+        <syncfusion:GridTextColumn MappingName="Year" />
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-    &lt;syncfusion:SfDataGrid.TableSummaryRows&gt;
+    <syncfusion:SfDataGrid.TableSummaryRows>
 
-        &lt;syncfusion:GridSummaryRow Title="Total Sales : {TotalSales}" ShowSummaryInRow="True"&gt;
+        <syncfusion:GridSummaryRow Title="Total Sales : {TotalSales}" ShowSummaryInRow="True">
 
-            &lt;syncfusion:GridSummaryRow.SummaryColumns&gt;
+            <syncfusion:GridSummaryRow.SummaryColumns>
 
                 <syncfusion:GridSummaryColumn Name="TotalSales"
 
@@ -11468,13 +11468,13 @@ When you declare the summaries as default,DataGrid shows the values in the row. 
 
                                               SummaryType="DoubleAggregate" />
 
-            &lt;/syncfusion:GridSummaryRow.SummaryColumns&gt;
+            </syncfusion:GridSummaryRow.SummaryColumns>
 
-        &lt;/syncfusion:GridSummaryRow&gt;
+        </syncfusion:GridSummaryRow>
 
-    &lt;/syncfusion:SfDataGrid.TableSummaryRows&gt;
+    </syncfusion:SfDataGrid.TableSummaryRows>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -11484,7 +11484,7 @@ The following screenshot displays the output of the above code.
 
 
 
-{ ![](Features_images/Features_img96.png) | markdownify }
+{{ '![](Features_images/Features_img96.png)' | markdownify }}
 {:.image }
 
 
@@ -11506,11 +11506,11 @@ This section explains you about GroupSummaries and how to display it. The Group 
 
 
 
-&lt;syncfusion:SfDataGrid.GroupSummaryRows&gt;
+<syncfusion:SfDataGrid.GroupSummaryRows>
 
-    &lt;syncfusion:GridSummaryRow Title="Total Sales in Year for {ProductCount} Products : {YearSales}" ShowSummaryInRow="True"&gt;
+    <syncfusion:GridSummaryRow Title="Total Sales in Year for {ProductCount} Products : {YearSales}" ShowSummaryInRow="True">
 
-        &lt;syncfusion:GridSummaryRow.SummaryColumns&gt;
+        <syncfusion:GridSummaryRow.SummaryColumns>
 
             <syncfusion:GridSummaryColumn Name="YearSales"
 
@@ -11528,11 +11528,11 @@ This section explains you about GroupSummaries and how to display it. The Group 
 
                                           SummaryType="CountAggregate" />
 
-        &lt;/syncfusion:GridSummaryRow.SummaryColumns&gt;
+        </syncfusion:GridSummaryRow.SummaryColumns>
 
-    &lt;/syncfusion:GridSummaryRow&gt;
+    </syncfusion:GridSummaryRow>
 
-&lt;/syncfusion:SfDataGrid.GroupSummaryRows&gt;
+</syncfusion:SfDataGrid.GroupSummaryRows>
 
 
 
@@ -11542,7 +11542,7 @@ The following screenshot displays the output of the above code.
 
 
 
-{ ![](Features_images/Features_img97.png) | markdownify }
+{{ '![](Features_images/Features_img97.png)' | markdownify }}
 {:.image }
 
 
@@ -11556,11 +11556,11 @@ To show the Group Summaries in column basis you can set the GridSummaryRow.ShowS
 
 
 
-&lt;syncfusion:SfDataGrid.GroupSummaryRows&gt;
+<syncfusion:SfDataGrid.GroupSummaryRows>
 
-    &lt;syncfusion:GridSummaryRow ShowSummaryInRow="False"&gt;
+    <syncfusion:GridSummaryRow ShowSummaryInRow="False">
 
-        &lt;syncfusion:GridSummaryRow.SummaryColumns&gt;
+        <syncfusion:GridSummaryRow.SummaryColumns>
 
             <syncfusion:GridSummaryColumn Name="SQS1"
 
@@ -11578,11 +11578,11 @@ To show the Group Summaries in column basis you can set the GridSummaryRow.ShowS
 
                                           SummaryType="DoubleAggregate" />
 
-        &lt;/syncfusion:GridSummaryRow.SummaryColumns&gt;
+        </syncfusion:GridSummaryRow.SummaryColumns>
 
-    &lt;/syncfusion:GridSummaryRow&gt;
+    </syncfusion:GridSummaryRow>
 
-&lt;/syncfusion:SfDataGrid.GroupSummaryRows&gt;
+</syncfusion:SfDataGrid.GroupSummaryRows>
 
 
 
@@ -11592,7 +11592,7 @@ The following screenshot displays the output of the above code.
 
 
 
-{ ![](Features_images/Features_img98.png) | markdownify }
+{{ '![](Features_images/Features_img98.png)' | markdownify }}
 {:.image }
 
 
@@ -11608,11 +11608,11 @@ This section explains you about TableSummary and how to display it. The TableSum
 
 
 
-&lt;syncfusion:SfDataGrid.TableSummaryRows&gt;
+<syncfusion:SfDataGrid.TableSummaryRows>
 
-    &lt;syncfusion:GridSummaryRow Title="Total Sales : {tableSummary}" ShowSummaryInRow="True"&gt;
+    <syncfusion:GridSummaryRow Title="Total Sales : {tableSummary}" ShowSummaryInRow="True">
 
-        &lt;syncfusion:GridSummaryRow.SummaryColumns&gt;
+        <syncfusion:GridSummaryRow.SummaryColumns>
 
             <syncfusion:GridSummaryColumn Name="tableSummary"
 
@@ -11622,11 +11622,11 @@ This section explains you about TableSummary and how to display it. The TableSum
 
                                           SummaryType="DoubleAggregate" />
 
-        &lt;/syncfusion:GridSummaryRow.SummaryColumns&gt;
+        </syncfusion:GridSummaryRow.SummaryColumns>
 
-    &lt;/syncfusion:GridSummaryRow&gt;
+    </syncfusion:GridSummaryRow>
 
-&lt;/syncfusion:SfDataGrid.TableSummaryRows&gt;
+</syncfusion:SfDataGrid.TableSummaryRows>
 
 
 
@@ -11636,7 +11636,7 @@ The following screenshot displays the TableSummary at the bottom of the Grid.
 
 
 
-{ ![](Features_images/Features_img99.png) | markdownify }
+{{ '![](Features_images/Features_img99.png)' | markdownify }}
 {:.image }
 
 
@@ -11652,11 +11652,11 @@ TableSummary has another dependency property Position that displays Table Summar
 
 
 
-&lt;syncfusion:SfDataGrid.TableSummaryRows&gt;
+<syncfusion:SfDataGrid.TableSummaryRows>
 
-    &lt;syncfusion:GridTableSummaryRow Position="Top" ShowSummaryInRow="False"&gt;
+    <syncfusion:GridTableSummaryRow Position="Top" ShowSummaryInRow="False">
 
-        &lt;syncfusion:GridTableSummaryRow.SummaryColumns&gt;
+        <syncfusion:GridTableSummaryRow.SummaryColumns>
 
             <syncfusion:GridSummaryColumn Name="TQS1"
 
@@ -11690,13 +11690,13 @@ TableSummary has another dependency property Position that displays Table Summar
 
                                           SummaryType="DoubleAggregate" />
 
-        &lt;/syncfusion:GridTableSummaryRow.SummaryColumns&gt;
+        </syncfusion:GridTableSummaryRow.SummaryColumns>
 
-    &lt;/syncfusion:GridTableSummaryRow&gt;
+    </syncfusion:GridTableSummaryRow>
 
-    &lt;syncfusion:GridSummaryRow Title="Total Sales : {TotalSales}" ShowSummaryInRow="True"&gt;
+    <syncfusion:GridSummaryRow Title="Total Sales : {TotalSales}" ShowSummaryInRow="True">
 
-        &lt;syncfusion:GridSummaryRow.SummaryColumns&gt;
+        <syncfusion:GridSummaryRow.SummaryColumns>
 
             <syncfusion:GridSummaryColumn Name="TotalSales"
 
@@ -11706,11 +11706,11 @@ TableSummary has another dependency property Position that displays Table Summar
 
                                           SummaryType="DoubleAggregate" />
 
-        &lt;/syncfusion:GridSummaryRow.SummaryColumns&gt;
+        </syncfusion:GridSummaryRow.SummaryColumns>
 
-    &lt;/syncfusion:GridSummaryRow&gt;
+    </syncfusion:GridSummaryRow>
 
-&lt;/syncfusion:SfDataGrid.TableSummaryRows&gt;
+</syncfusion:SfDataGrid.TableSummaryRows>
 
 
 
@@ -11720,7 +11720,7 @@ The following screenshot displays the output of the above code.
 
 
 
-{ ![](Features_images/Features_img100.png) | markdownify }
+{{ '![](Features_images/Features_img100.png)' | markdownify }}
 {:.image }
 
 
@@ -11736,11 +11736,11 @@ DataGrid provides built-in support for caption summaries, where the summary valu
 
 
 
-&lt;syncfusion:SfDataGrid.CaptionSummaryRow&gt;
+<syncfusion:SfDataGrid.CaptionSummaryRow>
 
-    &lt;syncfusion:GridSummaryRow Title="Total Items : {CaptionSummary}" ShowSummaryInRow="False"&gt;
+    <syncfusion:GridSummaryRow Title="Total Items : {CaptionSummary}" ShowSummaryInRow="False">
 
-        &lt;syncfusion:GridSummaryRow.SummaryColumns&gt;
+        <syncfusion:GridSummaryRow.SummaryColumns>
 
             <syncfusion:GridSummaryColumn Name="CaptionSummary"
 
@@ -11750,11 +11750,11 @@ DataGrid provides built-in support for caption summaries, where the summary valu
 
                                           SummaryType="CountAggregate" />
 
-        &lt;/syncfusion:GridSummaryRow.SummaryColumns&gt;
+        </syncfusion:GridSummaryRow.SummaryColumns>
 
-    &lt;/syncfusion:GridSummaryRow&gt;
+    </syncfusion:GridSummaryRow>
 
-&lt;/syncfusion:SfDataGrid.CaptionSummaryRow&gt;
+</syncfusion:SfDataGrid.CaptionSummaryRow>
 
 
 
@@ -11764,7 +11764,7 @@ The following screenshot displays the caption summary.
 
 
 
-{ ![](Features_images/Features_img101.png) | markdownify }
+{{ '![](Features_images/Features_img101.png)' | markdownify }}
 {:.image }
 
 
@@ -11895,11 +11895,11 @@ return ret;
 
 
 
-&lt;syncfusion:SfDataGrid.GroupSummaryRows&gt;
+<syncfusion:SfDataGrid.GroupSummaryRows>
 
-    &lt;syncfusion:GridSummaryRow Title="Total Sum - {groupSummary}" ShowSummaryInRow="True"&gt;
+    <syncfusion:GridSummaryRow Title="Total Sum - {groupSummary}" ShowSummaryInRow="True">
 
-        &lt;syncfusion:GridSummaryRow.SummaryColumns&gt;
+        <syncfusion:GridSummaryRow.SummaryColumns>
 
             <syncfusion:GridSummaryColumn Name="groupSummary"
 
@@ -11911,11 +11911,11 @@ return ret;
 
                                           SummaryType="Custom" />
 
-        &lt;/syncfusion:GridSummaryRow.SummaryColumns&gt;
+        </syncfusion:GridSummaryRow.SummaryColumns>
 
-    &lt;/syncfusion:GridSummaryRow&gt;
+    </syncfusion:GridSummaryRow>
 
-&lt;/syncfusion:SfDataGrid.GroupSummaryRows&gt;
+</syncfusion:SfDataGrid.GroupSummaryRows>
 
 
 
@@ -11951,13 +11951,13 @@ The following code example displays only group key and items count in Caption su
 
                        ShowGroupDropArea="True">
 
-    &lt;syncfusion:SfDataGrid.GroupColumnDescriptions&gt;
+    <syncfusion:SfDataGrid.GroupColumnDescriptions>
 
-        &lt;syncfusion:GroupColumnDescription ColumnName="Country"/&gt;
+        <syncfusion:GroupColumnDescription ColumnName="Country"/>
 
-    &lt;/syncfusion:SfDataGrid.GroupColumnDescriptions&gt;
+    </syncfusion:SfDataGrid.GroupColumnDescriptions>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -11967,7 +11967,7 @@ The following screenshot displays the output of the above code.
 
 
 
-{ ![](Features_images/Features_img102.png) | markdownify }
+{{ '![](Features_images/Features_img102.png)' | markdownify }}
 {:.image }
 
 
@@ -11999,7 +11999,7 @@ The following highlighted one is CheckBoxFiltering.
 
 
 
-{ ![](Features_images/Features_img103.png) | markdownify }
+{{ '![](Features_images/Features_img103.png)' | markdownify }}
 {:.image }
 
 
@@ -12007,7 +12007,7 @@ _CheckBox Filtering_
 
 The following screenshot displays you the control structure of TextFilters in Excel-Like filtering. When you set cangenerateuniqueitems to ‘true’, you can get Filter value combobox instead of TextBox.
 
-{ ![](Features_images/Features_img104.png) | markdownify }
+{{ '![](Features_images/Features_img104.png)' | markdownify }}
 {:.image }
 
 
@@ -12039,7 +12039,7 @@ To access UI Filtering, you can enable it. UI Filtering is enabled or disabled b
 
                        NavigationMode="Row">
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
         <syncfusion:GridTextColumn AllowBlankFilters="{Binding ElementName=ckbAllowBlankFiltersOrderID,
 
@@ -12065,7 +12065,7 @@ To access UI Filtering, you can enable it. UI Filtering is enabled or disabled b
 
 
 
-        &lt;syncfusion:GridTextColumn MappingName="CustomerID" /&gt;
+        <syncfusion:GridTextColumn MappingName="CustomerID" />
 
 
 
@@ -12143,9 +12143,9 @@ To access UI Filtering, you can enable it. UI Filtering is enabled or disabled b
 
                                    TextAlignment="Right" />
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -12153,7 +12153,7 @@ To access UI Filtering, you can enable it. UI Filtering is enabled or disabled b
 
 The following image displays a funnel icon in the header of the Grid. On clicking the filter icon, an Excel-like filter drop-down list opens and you can filter the data.
 
-{ ![](Features_images/Features_img105.png) | markdownify }
+{{ '![](Features_images/Features_img105.png)' | markdownify }}
 {:.image }
 
 
@@ -12189,11 +12189,11 @@ The following code example shows how to disable the advanced filtering option.
 
 
 
-&lt;Style TargetType="syncfusion:GridFilterControl"&gt;
+<Style TargetType="syncfusion:GridFilterControl">
 
-    &lt;Setter Property="FilterMode" Value="CheckBoxFilter" /&gt;
+    <Setter Property="FilterMode" Value="CheckBoxFilter" />
 
-&lt;/Style&gt;
+</Style>
 
 
 
@@ -12203,7 +12203,7 @@ This filter allows you to filter the data by selecting one or more items using c
 
 
 
-{ ![](Features_images/Features_img106.png) | markdownify }
+{{ '![](Features_images/Features_img106.png)' | markdownify }}
 {:.image }
 
 
@@ -12213,7 +12213,7 @@ It allows you to filter the data based on some conditions as shown in the follow
 
 
 
-{ ![](Features_images/Features_img107.png) | markdownify }
+{{ '![](Features_images/Features_img107.png)' | markdownify }}
 {:.image }
 
 
@@ -12303,7 +12303,7 @@ By default, AllowBlankFilter is set to ‘True’, so the null values are includ
 
 
 
-{ ![SNAGHTML9a72596](Features_images/Features_img108.png) | markdownify }
+{{ '![SNAGHTML9a72596](Features_images/Features_img108.png)' | markdownify }}
 {:.image }
 
 
@@ -12335,7 +12335,7 @@ ImmediateUpdateColumnFilter enables or disables the immediate update of the colu
 
 
 
-{ ![](Features_images/Features_img109.png) | markdownify }
+{{ '![](Features_images/Features_img109.png)' | markdownify }}
 {:.image }
 
 
@@ -12496,11 +12496,11 @@ It is customized using the properties provided in the GridFilterControl. The fol
 
 
 
-&lt;Style TargetType="syncfusion:GridFilterControl"&gt;
+<Style TargetType="syncfusion:GridFilterControl">
 
-    &lt;Setter Property="SortOptionVisibility" Value="Collapsed" /&gt;
+    <Setter Property="SortOptionVisibility" Value="Collapsed" />
 
-&lt;/Style&gt;
+</Style>
 
 
 
@@ -12532,7 +12532,7 @@ It is customized using the properties provided in the GridFilterControl. The fol
 
 This code collapses the sorting options in the GridFilterControl as shown in the following screenshot.
 
-{ ![](Features_images/Features_img110.png) | markdownify }
+{{ '![](Features_images/Features_img110.png)' | markdownify }}
 {:.image }
 
 
@@ -12556,16 +12556,16 @@ The following code example shows how to set the CanGenerateUniqueItems property.
 
 
 
-&lt;Style TargetType="syncfusion:AdvancedFilterControl"&gt;
+<Style TargetType="syncfusion:AdvancedFilterControl">
 
-    &lt;Setter Property="CanGenerateUniqueItems" Value="False" /&gt;
+    <Setter Property="CanGenerateUniqueItems" Value="False" />
 
-&lt;/Style&gt;
-
-
+</Style>
 
 
-{ ![](Features_images/Features_img111.png) | markdownify }
+
+
+{{ '![](Features_images/Features_img111.png)' | markdownify }}
 {:.image }
 
 
@@ -12673,7 +12673,7 @@ The following screenshot displays the output when the filter is applied:
 
 
 
-{ ![](Features_images/Features_img112.png) | markdownify }
+{{ '![](Features_images/Features_img112.png)' | markdownify }}
 {:.image }
 
 
@@ -12707,7 +12707,7 @@ void FilterBtn_Click(object sender, RoutedEventArgs e)
 
 The following screenshot displays the list of male employees with title as Marketing Manager or Tools designer. 
 
-{ ![](Features_images/Features_img113.png) | markdownify }
+{{ '![](Features_images/Features_img113.png)' | markdownify }}
 {:.image }
 
 
@@ -12819,7 +12819,7 @@ The following screenshot displays the filtered records that contain the word “
 
 
 
-{ ![](Features_images/Features_img114.png) | markdownify }
+{{ '![](Features_images/Features_img114.png)' | markdownify }}
 {:.image }
 
 
@@ -12892,11 +12892,11 @@ Now bind this PathFillColor to PART_FilterToggleButtonIndicator.
 
 
 
-&lt;Path.Fill&gt;
+<Path.Fill>
 
-    &lt;SolidColorBrush x:Name="PathFillColor" Color="Gray" /&gt;
+    <SolidColorBrush x:Name="PathFillColor" Color="Gray" />
 
-&lt;/Path.Fill&gt;
+</Path.Fill>
 
 
 
@@ -12914,11 +12914,11 @@ You can improve the filter pop-up opening time by setting CanGenerateUniqueItems
 
 
 
-&lt;Style TargetType="syncfusion:AdvancedFilterControl"&gt;
+<Style TargetType="syncfusion:AdvancedFilterControl">
 
-    &lt;Setter Property="CanGenerateUniqueItems" Value="False" /&gt;
+    <Setter Property="CanGenerateUniqueItems" Value="False" />
 
-&lt;/Style&gt;
+</Style>
 
 
 
@@ -12932,11 +12932,11 @@ By setting the FilterMode property as CheckboxFilter in GridFilterControl style,
 
 
 
-&lt;Style TargetType="syncfusion:GridFilterControl"&gt;
+<Style TargetType="syncfusion:GridFilterControl">
 
-    &lt;Setter Property="FilterMode" Value="CheckBoxFilter"/&gt;
+    <Setter Property="FilterMode" Value="CheckBoxFilter"/>
 
-&lt;/Style&gt;
+</Style>
 
 
 
@@ -12974,7 +12974,7 @@ When you use the Text Filters for the column that has number or date value as un
 
 
 
-&lt;syncfusion:GridNumericColumn FilterBehavior="StringTyped" MappingName="CustomerID" /&gt;
+<syncfusion:GridNumericColumn FilterBehavior="StringTyped" MappingName="CustomerID" />
 
 
 
@@ -13082,7 +13082,7 @@ sfdatagrid.AllowEditing = true;
 
 
 
-{ ![](Features_images/Features_img115.png) | markdownify }
+{{ '![](Features_images/Features_img115.png)' | markdownify }}
 {:.image }
 
 
@@ -13149,11 +13149,11 @@ When SfDataGrid.AllowFocus is set to ‘false’, neither the current cell nor t
 
         Height="350">
 
-    &lt;Window.DataContext&gt;
+    <Window.DataContext>
 
-        &lt;local:OrderInfoRepositiory /&gt;
+        <local:OrderInfoRepositiory />
 
-    &lt;/Window.DataContext&gt;
+    </Window.DataContext>
 
     <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -13169,21 +13169,21 @@ When SfDataGrid.AllowFocus is set to ‘false’, neither the current cell nor t
 
                            ItemsSource="{Binding OrderInfoCollection}">
 
-        &lt;syncfusion:SfDataGrid.Columns&gt;
+        <syncfusion:SfDataGrid.Columns>
 
-            &lt;syncfusion:GridTextColumn AllowFocus="False" MappingName="OrderID" /&gt;
+            <syncfusion:GridTextColumn AllowFocus="False" MappingName="OrderID" />
 
-        &lt;/syncfusion:SfDataGrid.Columns&gt;
+        </syncfusion:SfDataGrid.Columns>
 
-    &lt;/syncfusion:SfDataGrid&gt;
+    </syncfusion:SfDataGrid>
 
-&lt;/Window&gt;
-
-
+</Window>
 
 
 
-{ ![editing](Features_images/Features_img116.png) | markdownify }
+
+
+{{ '![editing](Features_images/Features_img116.png)' | markdownify }}
 {:.image }
 
 
@@ -13226,7 +13226,7 @@ The following screenshot illustrates the output.
 
 
 
-{ ![](Features_images/Features_img117.png) | markdownify }
+{{ '![](Features_images/Features_img117.png)' | markdownify }}
 {:.image }
 
 
@@ -13330,13 +13330,13 @@ void sfdatagrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArg
 
                        ItemsSource="{Binding OrderInfoCollection}">
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
-        &lt;syncfusion:GridTextColumn AllowFocus="False" MappingName="OrderID" /&gt;
+        <syncfusion:GridTextColumn AllowFocus="False" MappingName="OrderID" />
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -13367,13 +13367,13 @@ The data that you edit in loaded EditElement is the bound value from the ValueBi
 
                        ItemsSource="{Binding OrderInfoCollection}">
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
-        &lt;syncfusion:GridTextColumn DisplayBinding="{Binding OrderID}" ValueBinding="{Binding CustomerID}" /&gt;
+        <syncfusion:GridTextColumn DisplayBinding="{Binding OrderID}" ValueBinding="{Binding CustomerID}" />
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -13383,7 +13383,7 @@ The following screenshot illustrates the output. The OrderID is View Mode and Cu
 
 
 
-{ ![](Features_images/Features_img118.png) | markdownify }
+{{ '![](Features_images/Features_img118.png)' | markdownify }}
 {:.image }
 
 
@@ -13409,15 +13409,15 @@ You can update the edited values, like Default, PropertyChanged, LostFocus and E
 
                        ItemsSource="{Binding OrderInfoCollection}">
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
-        &lt;syncfusion:GridTextColumn ValueBinding="{Binding OrderID}" /&gt;
+        <syncfusion:GridTextColumn ValueBinding="{Binding OrderID}" />
 
-        &lt;syncfusion:GridTextColumn MappingName="CustomerID" UpdateTrigger="PropertyChanged" /&gt;
+        <syncfusion:GridTextColumn MappingName="CustomerID" UpdateTrigger="PropertyChanged" />
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -13813,15 +13813,15 @@ You can achieve this by applying style directly to TextBox. By defining correspo
 
 
 
-&lt;syncfusion:SfDataGrid.Resources&gt;
+<syncfusion:SfDataGrid.Resources>
 
-    &lt;Style TargetType="TextBox"&gt;
+    <Style TargetType="TextBox">
 
-        &lt;Setter Property="FontSize" Value="16" /&gt;
+        <Setter Property="FontSize" Value="16" />
 
-    &lt;/Style&gt;
+    </Style>
 
-&lt;/syncfusion:SfDataGrid.Resources&gt;
+</syncfusion:SfDataGrid.Resources>
 
 
 
@@ -13831,7 +13831,7 @@ You can see that in edit mode the font size is changed compared to display mode 
 
 
 
-{ ![](Features_images/Features_img119.png) | markdownify }
+{{ '![](Features_images/Features_img119.png)' | markdownify }}
 {:.image }
 
 
@@ -13947,7 +13947,7 @@ public System.Collections.IEnumerable GetErrors(string propertyName)
 
 
 
-{ ![](Features_images/Features_img120.png) | markdownify }
+{{ '![](Features_images/Features_img120.png)' | markdownify }}
 {:.image }
 
 
@@ -13999,7 +13999,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img121.png) | markdownify }
+{{ '![](Features_images/Features_img121.png)' | markdownify }}
 {:.image }
 
 
@@ -14072,7 +14072,7 @@ private void sfGrid_CurrentCellValidating(object sender, Syncfusion.UI.Xaml.
 
 The following screenshot displays the output.
 
-{ ![](Features_images/Features_img122.png) | markdownify }
+{{ '![](Features_images/Features_img122.png)' | markdownify }}
 {:.image }
 
 
@@ -14138,7 +14138,7 @@ The following screenshot illustrates the output.
 
 
 
-{ ![](Features_images/Features_img123.png) | markdownify }
+{{ '![](Features_images/Features_img123.png)' | markdownify }}
 {:.image }
 
 
@@ -14165,7 +14165,7 @@ The following steps take you though Cutomization on Validation error template.
 
 [XAML]
 
-&lt;ControlTemplate x:Key="ValidationToolTipTemplate"&gt;
+<ControlTemplate x:Key="ValidationToolTipTemplate">
 
     <Grid x:Name="Root"
 
@@ -14175,23 +14175,23 @@ The following steps take you though Cutomization on Validation error template.
 
           RenderTransformOrigin="0,0">
 
-        &lt;Grid.RenderTransform&gt;
+        <Grid.RenderTransform>
 
-            &lt;TranslateTransform x:Name="xform" X="-25" /&gt;
+            <TranslateTransform x:Name="xform" X="-25" />
 
-        &lt;/Grid.RenderTransform&gt;
+        </Grid.RenderTransform>
 
-        &lt;VisualStateManager.VisualStateGroups&gt;
+        <VisualStateManager.VisualStateGroups>
 
-            &lt;VisualStateGroup Name="OpenStates"&gt;
+            <VisualStateGroup Name="OpenStates">
 
-                &lt;VisualStateGroup.Transitions&gt;
+                <VisualStateGroup.Transitions>
 
-                    &lt;VisualTransition GeneratedDuration="0" /&gt;
+                    <VisualTransition GeneratedDuration="0" />
 
-                    &lt;VisualTransition GeneratedDuration="0:0:0.2" To="Open"&gt;
+                    <VisualTransition GeneratedDuration="0:0:0.2" To="Open">
 
-                        &lt;Storyboard&gt;
+                        <Storyboard>
 
                             <DoubleAnimation Duration="0:0:0.2"
 
@@ -14201,13 +14201,13 @@ The following steps take you though Cutomization on Validation error template.
 
                                              To="0">
 
-                                &lt;DoubleAnimation.EasingFunction&gt;
+                                <DoubleAnimation.EasingFunction>
 
-                                    &lt;BackEase Amplitude=".3" EasingMode="EaseOut" /&gt;
+                                    <BackEase Amplitude=".3" EasingMode="EaseOut" />
 
-                                &lt;/DoubleAnimation.EasingFunction&gt;
+                                </DoubleAnimation.EasingFunction>
 
-                            &lt;/DoubleAnimation&gt;
+                            </DoubleAnimation>
 
                             <DoubleAnimation Duration="0:0:0.2"
 
@@ -14217,15 +14217,15 @@ The following steps take you though Cutomization on Validation error template.
 
                                              To="1" />
 
-                        &lt;/Storyboard&gt;
+                        </Storyboard>
 
-                    &lt;/VisualTransition&gt;
+                    </VisualTransition>
 
-                &lt;/VisualStateGroup.Transitions&gt;
+                </VisualStateGroup.Transitions>
 
-                &lt;VisualState x:Name="Closed"&gt;
+                <VisualState x:Name="Closed">
 
-                    &lt;Storyboard&gt;
+                    <Storyboard>
 
                         <DoubleAnimation Duration="0"
 
@@ -14235,13 +14235,13 @@ The following steps take you though Cutomization on Validation error template.
 
                                          To="0" />
 
-                    &lt;/Storyboard&gt;
+                    </Storyboard>
 
-                &lt;/VisualState&gt;
+                </VisualState>
 
-                &lt;VisualState x:Name="Open"&gt;
+                <VisualState x:Name="Open">
 
-                    &lt;Storyboard&gt;
+                    <Storyboard>
 
                         <DoubleAnimation Duration="0"
 
@@ -14259,13 +14259,13 @@ The following steps take you though Cutomization on Validation error template.
 
                                          To="1" />
 
-                    &lt;/Storyboard&gt;
+                    </Storyboard>
 
-                &lt;/VisualState&gt;
+                </VisualState>
 
-            &lt;/VisualStateGroup&gt;
+            </VisualStateGroup>
 
-        &lt;/VisualStateManager.VisualStateGroups&gt;
+        </VisualStateManager.VisualStateGroups>
 
         <Border Margin="4,4,-4,-4"
 
@@ -14291,9 +14291,9 @@ The following steps take you though Cutomization on Validation error template.
 
                 CornerRadius="2" />
 
-        &lt;Border Background="#FFDC000C" CornerRadius="2" /&gt;
+        <Border Background="#FFDC000C" CornerRadius="2" />
 
-        &lt;Border CornerRadius="2"&gt;
+        <Border CornerRadius="2">
 
             <TextBlock MaxWidth="250"
 
@@ -14307,11 +14307,11 @@ The following steps take you though Cutomization on Validation error template.
 
                        UseLayoutRounding="false" />
 
-        &lt;/Border&gt;
+        </Border>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/ControlTemplate&gt;
+</ControlTemplate>
 
 
 
@@ -14323,71 +14323,71 @@ You can change above ControlTemplate codes to change the tooltip style. You can 
 
 [XAML]
 
-&lt;Style x:Key="GridCellStyle1" TargetType="{x:Type syncfusion:GridCell}"&gt;
+<Style x:Key="GridCellStyle1" TargetType="{x:Type syncfusion:GridCell}">
 
-    &lt;Setter Property="Background" Value="Transparent" /&gt;
+    <Setter Property="Background" Value="Transparent" />
 
-    &lt;Setter Property="BorderBrush" Value="Gray" /&gt;
+    <Setter Property="BorderBrush" Value="Gray" />
 
-    &lt;Setter Property="BorderThickness" Value="0,0,1,1" /&gt;
+    <Setter Property="BorderThickness" Value="0,0,1,1" />
 
-    &lt;Setter Property="Padding" Value="0" /&gt;
+    <Setter Property="Padding" Value="0" />
 
-    &lt;Setter Property="FontFamily" Value=" Segoe UI" /&gt;
+    <Setter Property="FontFamily" Value=" Segoe UI" />
 
-    &lt;Setter Property="FontSize" Value="12" /&gt;
+    <Setter Property="FontSize" Value="12" />
 
-    &lt;Setter Property="FocusVisualStyle" Value="{x:Null}" /&gt;
+    <Setter Property="FocusVisualStyle" Value="{x:Null}" />
 
-    &lt;Setter Property="IsTabStop" Value="False" /&gt;
+    <Setter Property="IsTabStop" Value="False" />
 
-    &lt;Setter Property="Template"&gt;
+    <Setter Property="Template">
 
-        &lt;Setter.Value&gt;
+        <Setter.Value>
 
-            &lt;ControlTemplate TargetType="{x:Type syncfusion:GridCell}"&gt;
+            <ControlTemplate TargetType="{x:Type syncfusion:GridCell}">
 
-                &lt;Grid SnapsToDevicePixels="True"&gt;
+                <Grid SnapsToDevicePixels="True">
 
-                    &lt;VisualStateManager.VisualStateGroups&gt;
+                    <VisualStateManager.VisualStateGroups>
 
-                        &lt;VisualStateGroup x:Name="IndicationStates"&gt;
+                        <VisualStateGroup x:Name="IndicationStates">
 
-                            &lt;VisualState x:Name="HasError"&gt;
+                            <VisualState x:Name="HasError">
 
-                                &lt;Storyboard&gt;
+                                <Storyboard>
 
-                                    &lt;DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_InValidCellBorder" Storyboard.TargetProperty="Width"&gt;
+                                    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_InValidCellBorder" Storyboard.TargetProperty="Width">
 
-                                        &lt;EasingDoubleKeyFrame KeyTime="0" Value="0" /&gt;
+                                        <EasingDoubleKeyFrame KeyTime="0" Value="0" />
 
-                                        &lt;EasingDoubleKeyFrame KeyTime="0" Value="10" /&gt;
+                                        <EasingDoubleKeyFrame KeyTime="0" Value="10" />
 
-                                    &lt;/DoubleAnimationUsingKeyFrames&gt;
+                                    </DoubleAnimationUsingKeyFrames>
 
-                                &lt;/Storyboard&gt;
+                                </Storyboard>
 
-                            &lt;/VisualState&gt;
+                            </VisualState>
 
-                            &lt;VisualState x:Name="NoError"&gt;
+                            <VisualState x:Name="NoError">
 
-                                &lt;Storyboard BeginTime="0"&gt;
+                                <Storyboard BeginTime="0">
 
-                                    &lt;DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_InValidCellBorder" Storyboard.TargetProperty="Width"&gt;
+                                    <DoubleAnimationUsingKeyFrames Storyboard.TargetName="PART_InValidCellBorder" Storyboard.TargetProperty="Width">
 
-                                        &lt;EasingDoubleKeyFrame KeyTime="0" Value="1" /&gt;
+                                        <EasingDoubleKeyFrame KeyTime="0" Value="1" />
 
-                                        &lt;EasingDoubleKeyFrame KeyTime="0" Value="0" /&gt;
+                                        <EasingDoubleKeyFrame KeyTime="0" Value="0" />
 
-                                    &lt;/DoubleAnimationUsingKeyFrames&gt;
+                                    </DoubleAnimationUsingKeyFrames>
 
-                                &lt;/Storyboard&gt;
+                                </Storyboard>
 
-                            &lt;/VisualState&gt;
+                            </VisualState>
 
-                        &lt;/VisualStateGroup&gt;
+                        </VisualStateGroup>
 
-                    &lt;/VisualStateManager.VisualStateGroups&gt;
+                    </VisualStateManager.VisualStateGroups>
 
                     <Border Background="{TemplateBinding Background}"
 
@@ -14397,7 +14397,7 @@ You can change above ControlTemplate codes to change the tooltip style. You can 
 
                             SnapsToDevicePixels="True">
 
-                        &lt;Grid&gt;
+                        <Grid>
 
                             <ContentPresenter Margin="{TemplateBinding Padding}"
 
@@ -14407,9 +14407,9 @@ You can change above ControlTemplate codes to change the tooltip style. You can 
 
                                               ContentTemplate="{TemplateBinding ContentTemplate}" />
 
-                        &lt;/Grid&gt;
+                        </Grid>
 
-                    &lt;/Border&gt;
+                    </Border>
 
                     <Border Background="Transparent"
 
@@ -14435,7 +14435,7 @@ You can change above ControlTemplate codes to change the tooltip style. You can 
 
                             SnapsToDevicePixels="True">
 
-                        &lt;Border.ToolTip&gt;
+                        <Border.ToolTip>
 
                             <ToolTip Background="#FFDB000C"
 
@@ -14447,7 +14447,7 @@ You can change above ControlTemplate codes to change the tooltip style. You can 
 
                                      Template="{StaticResource ValidationToolTipTemplate}" />
 
-                        &lt;/Border.ToolTip&gt;
+                        </Border.ToolTip>
 
                         <Path Data="M 10,100 C 10,300 300,-200 300,100"
 
@@ -14457,17 +14457,17 @@ You can change above ControlTemplate codes to change the tooltip style. You can 
 
                               Stretch="Fill" />
 
-                    &lt;/Border&gt;
+                    </Border>
 
-                &lt;/Grid&gt;
+                </Grid>
 
-            &lt;/ControlTemplate&gt;
+            </ControlTemplate>
 
-        &lt;/Setter.Value&gt;
+        </Setter.Value>
 
-    &lt;/Setter&gt;
+    </Setter>
 
-&lt;/Style&gt;
+</Style>
 
 
 
@@ -14477,7 +14477,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img124.png) | markdownify }
+{{ '![](Features_images/Features_img124.png)' | markdownify }}
 {:.image }
 
 
@@ -14551,7 +14551,7 @@ Following screenshot illustrates the difference between AllowDataShaping and Def
 
 
 
-{ ![](Features_images/Features_img125.png) | markdownify }
+{{ '![](Features_images/Features_img125.png)' | markdownify }}
 {:.image }
 
 
@@ -14561,7 +14561,7 @@ When you set LiveDataUpdateMode as AllowDataShapping, it gets updated and arrang
 
 
 
-{ ![](Features_images/Features_img126.png) | markdownify }
+{{ '![](Features_images/Features_img126.png)' | markdownify }}
 {:.image }
 
 
@@ -14599,7 +14599,7 @@ User Interface
 
 
 
-{ ![SNAGHTML19887aaf](Features_images/Features_img127.png) | markdownify }
+{{ '![SNAGHTML19887aaf](Features_images/Features_img127.png)' | markdownify }}
 {:.image }
 
 
@@ -14644,7 +14644,7 @@ Description</td></tr>
 <td>
 AddNewRowIntiating</td><td>
 NewObject</td><td>
-This event is triggered when you start editing in AddNewRow.NewObject – This contains the newly created object that helps to set the default value when you start editing in AddNewRow.> {{ '_Note: NewObject is the read-only property._' | markdownify }}> </td></tr>
+This event is triggered when you start editing in AddNewRow.NewObject – This contains the newly created object that helps to set the default value when you start editing in AddNewRow.> {{{ ''_Note: NewObject is the read-only property._'' | markdownify }}}> </td></tr>
 </table>
 
 
@@ -14804,7 +14804,7 @@ The following screenshot illustrates this:
 
 
 
-{ ![](Features_images/Features_img128.png) | markdownify }
+{{ '![](Features_images/Features_img128.png)' | markdownify }}
 {:.image }
 
 
@@ -14814,7 +14814,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img129.png) | markdownify }
+{{ '![](Features_images/Features_img129.png)' | markdownify }}
 {:.image }
 
 
@@ -14836,49 +14836,49 @@ Customize the appearance of the AddNewRowwatermarktext by editing the AddNewRowC
 
 
 
-&lt;Style TargetType="syncfusion:AddNewRowControl"&gt;
+<Style TargetType="syncfusion:AddNewRowControl">
 
-    &lt;Setter Property="FontSize" Value="12" /&gt;
+    <Setter Property="FontSize" Value="12" />
 
-    &lt;Setter Property="Foreground" Value="White" /&gt;
+    <Setter Property="Foreground" Value="White" />
 
-    &lt;Setter Property="Template"&gt;
+    <Setter Property="Template">
 
-        &lt;Setter.Value&gt;
+        <Setter.Value>
 
-            &lt;ControlTemplate TargetType="syncfusion:AddNewRowControl"&gt;
+            <ControlTemplate TargetType="syncfusion:AddNewRowControl">
 
-                &lt;Grid&gt;
+                <Grid>
 
-                    &lt;VisualStateManager.VisualStateGroups&gt;
+                    <VisualStateManager.VisualStateGroups>
 
-                        &lt;VisualStateGroup x:Name="AddNewRowStates"&gt;
+                        <VisualStateGroup x:Name="AddNewRowStates">
 
-                            &lt;VisualState x:Name="Normal" /&gt;
+                            <VisualState x:Name="Normal" />
 
-                            &lt;VisualState x:Name="Edit"&gt;
+                            <VisualState x:Name="Edit">
 
-                                &lt;Storyboard&gt;
+                                <Storyboard>
 
-                                    &lt;ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_AddNewRowTextBorder" Storyboard.TargetProperty="(UIElement.Visibility)"&gt;
+                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_AddNewRowTextBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
 
-                                        &lt;DiscreteObjectKeyFrame KeyTime="0"&gt;
+                                        <DiscreteObjectKeyFrame KeyTime="0">
 
-                                            &lt;DiscreteObjectKeyFrame.Value&gt;                                                <Visibility>Collapsed</Visibility>
+                                            <DiscreteObjectKeyFrame.Value>                                                <Visibility>Collapsed</Visibility>
 
-                                            &lt;/DiscreteObjectKeyFrame.Value&gt;
+                                            </DiscreteObjectKeyFrame.Value>
 
-                                        &lt;/DiscreteObjectKeyFrame&gt;
+                                        </DiscreteObjectKeyFrame>
 
-                                    &lt;/ObjectAnimationUsingKeyFrames&gt;
+                                    </ObjectAnimationUsingKeyFrames>
 
-                                &lt;/Storyboard&gt;
+                                </Storyboard>
 
-                            &lt;/VisualState&gt;
+                            </VisualState>
 
-                        &lt;/VisualStateGroup&gt;
+                        </VisualStateGroup>
 
-                    &lt;/VisualStateManager.VisualStateGroups&gt;
+                    </VisualStateManager.VisualStateGroups>
 
                     <Rectangle x:Name="PART_CurrentFocusRow"
 
@@ -14904,9 +14904,9 @@ Customize the appearance of the AddNewRowwatermarktext by editing the AddNewRowC
 
                             BorderThickness="{TemplateBinding BorderThickness}">
 
-                        &lt;ContentPresenter /&gt;
+                        <ContentPresenter />
 
-                    &lt;/Border&gt;
+                    </Border>
 
                     <Border x:Name="PART_AddNewRowTextBorder"
 
@@ -14928,23 +14928,23 @@ Customize the appearance of the AddNewRowwatermarktext by editing the AddNewRowC
 
                                           Content="{TemplateBinding AddNewRowText}" />
 
-                    &lt;/Border&gt;
+                    </Border>
 
-                &lt;/Grid&gt;
+                </Grid>
 
-            &lt;/ControlTemplate&gt;
+            </ControlTemplate>
 
-        &lt;/Setter.Value&gt;
+        </Setter.Value>
 
-    &lt;/Setter&gt;
+    </Setter>
 
-&lt;/Style&gt;
+</Style>
 
 
 
 You can add above code example to App.Xaml or in Windows.Resources. The following screenshot illustrate the output.
 
-{ ![](Features_images/Features_img130.png) | markdownify }
+{{ '![](Features_images/Features_img130.png)' | markdownify }}
 {:.image }
 
 
@@ -14988,7 +14988,7 @@ The following screenshot illustrate the output.
 
 
 
-{ ![](Features_images/Features_img131.png) | markdownify }
+{{ '![](Features_images/Features_img131.png)' | markdownify }}
 {:.image }
 
 
@@ -15014,27 +15014,27 @@ AllowEditing="True"
 
 ItemsSource="{Binding Path=OrdersDetails}">
 
-&lt;syncfusion:SfDataGrid.Columns&gt;
+<syncfusion:SfDataGrid.Columns>
 
-&lt;syncfusion:GridTextColumn MappingName="OrderID" /&gt;
+<syncfusion:GridTextColumn MappingName="OrderID" />
 
-&lt;syncfusion:GridTextColumn MappingName="CustomerID" /&gt;
+<syncfusion:GridTextColumn MappingName="CustomerID" />
 
-&lt;syncfusion:GridTextColumn MappingName="ShippingDate" /&gt;
+<syncfusion:GridTextColumn MappingName="ShippingDate" />
 
-&lt;syncfusion:GridTextColumn MappingName="EmployeeDetails.EmployeeID" /&gt;
+<syncfusion:GridTextColumn MappingName="EmployeeDetails.EmployeeID" />
 
-&lt;syncfusion:GridTextColumn MappingName="ShipCity" /&gt;
+<syncfusion:GridTextColumn MappingName="ShipCity" />
 
-&lt;syncfusion:GridTextColumn MappingName="ShipCountry" /&gt;
+<syncfusion:GridTextColumn MappingName="ShipCountry" />
 
-&lt;syncfusion:GridTextColumn MappingName="Freight" /&gt;
+<syncfusion:GridTextColumn MappingName="Freight" />
 
-&lt;syncfusion:GridTextColumn MappingName="IsClosed" /&gt;
+<syncfusion:GridTextColumn MappingName="IsClosed" />
 
-&lt;/syncfusion:SfDataGrid.Columns&gt;
+</syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -15222,7 +15222,7 @@ Gets or sets the record of current row. When you have multiple selections in Dat
 <tr>
 <td>
 SelectedItems</td><td>
-ObservableCollection&lt;object&gt;</td><td>
+ObservableCollection<object></td><td>
 Gets the collection of selected records. DataGrid control also allows you to manipulate this collection. This is maintained only in Row selection.</td></tr>
 <tr>
 <td>
@@ -15285,7 +15285,7 @@ private void SelectAll_Click(object sender, RoutedEventArgs e)
 
 When you click on button that contains above code example, all the rows or cells are selected as displayed in the following screenshot.
 
-{ ![](Features_images/Features_img132.png) | markdownify }
+{{ '![](Features_images/Features_img132.png)' | markdownify }}
 {:.image }
 
 
@@ -15337,7 +15337,7 @@ The current cell is moved to third column (‘0’ based index), second row in s
 
 
 
-{ ![](Features_images/Features_img133.png) | markdownify }
+{{ '![](Features_images/Features_img133.png)' | markdownify }}
 {:.image }
 
 
@@ -15606,7 +15606,7 @@ The following screenshot shows a DataGrid in Row Navigation Mode.
 
 
 
-{ ![](Features_images/Features_img134.png) | markdownify }
+{{ '![](Features_images/Features_img134.png)' | markdownify }}
 {:.image }
 
 
@@ -15616,7 +15616,7 @@ The following screenshot shows a DataGrid in Cell Navigation Mode.
 
 
 
-{ ![](Features_images/Features_img135.png) | markdownify }
+{{ '![](Features_images/Features_img135.png)' | markdownify }}
 {:.image }
 
 
@@ -15675,7 +15675,7 @@ The following screenshot shows a DataGrid inCell Selection.
 
 
 
-{ ![](Features_images/Features_img136.png) | markdownify }
+{{ '![](Features_images/Features_img136.png)' | markdownify }}
 {:.image }
 
 
@@ -15687,7 +15687,7 @@ Selection related operations are handled in Selection Controllers of SfDataGrid 
 
 
 
-{ ![1](Features_images/Features_img137.jpeg) | markdownify }
+{{ '![1](Features_images/Features_img137.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15714,7 +15714,7 @@ Description</td></tr>
 CurrentCellManager</td><td>
 Gets or sets the current cell manager of DataGrid.> ![](Features_images/Features_img138.jpeg)
 {:.image }
-{{ '_Note: You can edit and navigate the current cell using CurrentCellManager._' | markdownify }}</td></tr>
+{{{ ''_Note: You can edit and navigate the current cell using CurrentCellManager._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 SelectedRows</td><td>
@@ -16662,7 +16662,7 @@ The following layout shows the method flow in GridCutCopyPaste andwhere you can 
 
 
 
-{ ![](Features_images/Features_img139.png) | markdownify }
+{{ '![](Features_images/Features_img139.png)' | markdownify }}
 {:.image }
 
 
@@ -16670,7 +16670,7 @@ _Copy Operation_
 
 
 
-{ ![](Features_images/Features_img140.png) | markdownify }
+{{ '![](Features_images/Features_img140.png)' | markdownify }}
 {:.image }
 
 
@@ -16678,7 +16678,7 @@ _Cut Operation_
 
 
 
-{ ![](Features_images/Features_img141.png) | markdownify }
+{{ '![](Features_images/Features_img141.png)' | markdownify }}
 {:.image }
 
 
@@ -17177,23 +17177,23 @@ This topic explains you how to change the Foreground of SelecetdRow. SfDataGrid 
 
 [XAML]
 
-&lt;Style x:Key="VirtualizingCellsControlStyle1" TargetType="{x:Type syncfusion:VirtualizingCellsControl}"&gt;
+<Style x:Key="VirtualizingCellsControlStyle1" TargetType="{x:Type syncfusion:VirtualizingCellsControl}">
 
-    &lt;Setter Property="Background" Value="Transparent" /&gt;
+    <Setter Property="Background" Value="Transparent" />
 
-    &lt;Setter Property="BorderBrush" Value="Gray" /&gt;
+    <Setter Property="BorderBrush" Value="Gray" />
 
-    &lt;Setter Property="BorderThickness" Value="0" /&gt;
+    <Setter Property="BorderThickness" Value="0" />
 
-    &lt;Setter Property="IsTabStop" Value="False" /&gt;
+    <Setter Property="IsTabStop" Value="False" />
 
-    &lt;Setter Property="Template"&gt;
+    <Setter Property="Template">
 
-        &lt;Setter.Value&gt;
+        <Setter.Value>
 
-            &lt;ControlTemplate TargetType="{x:Type syncfusion:VirtualizingCellsControl}"&gt;
+            <ControlTemplate TargetType="{x:Type syncfusion:VirtualizingCellsControl}">
 
-                &lt;Grid&gt;
+                <Grid>
 
                     <Rectangle x:Name="PART_CurrentFocusRow"
 
@@ -17219,7 +17219,7 @@ This topic explains you how to change the Foreground of SelecetdRow. SfDataGrid 
 
                             Visibility="{TemplateBinding HighlightSelectionBorderVisiblity}" />
 
-                    &lt;Rectangle Clip="{TemplateBinding RowBackgroundClip}" Fill="{TemplateBinding Background}" /&gt;
+                    <Rectangle Clip="{TemplateBinding RowBackgroundClip}" Fill="{TemplateBinding Background}" />
 
                     <Border Background="{TemplateBinding RowSelectionBrush}"
 
@@ -17227,7 +17227,7 @@ This topic explains you how to change the Foreground of SelecetdRow. SfDataGrid 
 
                             Visibility="{TemplateBinding SelectionBorderVisiblity}" />
 
-                    &lt;Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"&gt;
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}">
 
                         <ContentPresenter Content="{TemplateBinding Content}"
 
@@ -17235,27 +17235,27 @@ This topic explains you how to change the Foreground of SelecetdRow. SfDataGrid 
 
                                           ContentTemplate="{TemplateBinding ContentTemplate}" />
 
-                    &lt;/Border&gt;
+                    </Border>
 
-                &lt;/Grid&gt;
+                </Grid>
 
-                &lt;ControlTemplate.Triggers&gt;
+                <ControlTemplate.Triggers>
 
-                    &lt;Trigger Property="SelectionBorderVisiblity" Value="Visible"&gt;
+                    <Trigger Property="SelectionBorderVisiblity" Value="Visible">
 
-                        &lt;Setter Property="Foreground" Value="White" /&gt;
+                        <Setter Property="Foreground" Value="White" />
 
-                    &lt;/Trigger&gt;
+                    </Trigger>
 
-                &lt;/ControlTemplate.Triggers&gt;
+                </ControlTemplate.Triggers>
 
-            &lt;/ControlTemplate&gt;
+            </ControlTemplate>
 
-        &lt;/Setter.Value&gt;
+        </Setter.Value>
 
-    &lt;/Setter&gt;
+    </Setter>
 
-&lt;/Style&gt;
+</Style>
 
 
 
@@ -17263,7 +17263,7 @@ The following screenshot illustrates the output. To differentiate you can use Ro
 
 
 
-{ ![](Features_images/Features_img142.png) | markdownify }
+{{ '![](Features_images/Features_img142.png)' | markdownify }}
 {:.image }
 
 
@@ -17299,21 +17299,21 @@ The following code example illustrates using DataPager with the SfDataGrid contr
 
 
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-&lt;local:ViewModel/&gt;
+<local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;Grid.RowDefinitions&gt;
+<Grid.RowDefinitions>
 
-&lt;RowDefinition Height=”*” /&gt;
+<RowDefinition Height=”*” />
 
-&lt;RowDefinition Height=”Auto” /&gt;
+<RowDefinition Height=”Auto” />
 
-&lt;/Grid.RowDefinitions&gt;
+</Grid.RowDefinitions>
 
 <sfgrid:SfDataGrid AutoGenerateColumns=”True” 
 
@@ -17333,7 +17333,7 @@ The following code example illustrates using DataPager with the SfDataGrid contr
 
                                Source=”{Binding OrdersDetails}” />
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -17341,7 +17341,7 @@ The following code example illustrates using DataPager with the SfDataGrid contr
 
 The following screenshot displays the output. 
 
-{ ![DataPager_WPF](Features_images/Features_img143.png) | markdownify }
+{{ '![DataPager_WPF](Features_images/Features_img143.png)' | markdownify }}
 {:.image }
 
 
@@ -17370,23 +17370,23 @@ The following code example illustrates defining DataPager for OnDemandPaging:
 
 
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-&lt;local:ViewModel/&gt;
+<local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;Grid.RowDefinitions&gt;
+        <Grid.RowDefinitions>
 
-            &lt;RowDefinition Height="*" /&gt;
+            <RowDefinition Height="*" />
 
-            &lt;RowDefinition Height="Auto" /&gt;
+            <RowDefinition Height="Auto" />
 
-        &lt;/Grid.RowDefinitions&gt;
+        </Grid.RowDefinitions>
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
 
@@ -17410,7 +17410,7 @@ The following code example illustrates defining DataPager for OnDemandPaging:
 
                          UseOnDemandPaging="True" />
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -17438,7 +17438,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img144.png) | markdownify }
+{{ '![](Features_images/Features_img144.png)' | markdownify }}
 {:.image }
 
 
@@ -17546,11 +17546,11 @@ VirtualizingCollectionView GridItemsSource = new VirtualizingCollectionView(enum
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-&lt;local:ViewModel/&gt;
+<local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -17628,7 +17628,7 @@ This method returns the number of data in view.</td></tr>
 <td>
 GetSourceListForFilteringItems</td><td>
 IEnumerable GetSourceListForFilteringItems()</td><td>
-This method returns the entire data source. > {{ '_Note: This is used while populating items for ExcelLikeFilter pop-up._' | markdownify }}> </td></tr>
+This method returns the entire data source. > {{{ ''_Note: This is used while populating items for ExcelLikeFilter pop-up._'' | markdownify }}}> </td></tr>
 <tr>
 <td>
 ProcessSort</td><td>
@@ -17679,11 +17679,11 @@ public class CustomVirtualizingClass : VirtualizingCollectionView
 
 
 
-  /// &lt;summary&gt;
+  /// <summary>
 
   /// Returns the index of data.
 
-  /// &lt;/summary&gt;   
+  /// </summary>   
 
         protected override int GetIndexOf(object item)
 
@@ -17695,11 +17695,11 @@ public class CustomVirtualizingClass : VirtualizingCollectionView
 
 
 
-  /// &lt;summary&gt;
+  /// <summary>
 
   /// Returns the data for corresponding index.
 
-  /// &lt;/summary&gt;   
+  /// </summary>   
 
         protected override object GetItemAt(int index)
 
@@ -17711,11 +17711,11 @@ public class CustomVirtualizingClass : VirtualizingCollectionView
 
 
 
-  /// &lt;summary&gt;
+  /// <summary>
 
         /// Returns the total view record count.
 
-  /// &lt;/summary&gt;   
+  /// </summary>   
 
         public override int GetViewRecordCount()
 
@@ -17727,11 +17727,11 @@ public class CustomVirtualizingClass : VirtualizingCollectionView
 
 
 
-  /// &lt;summary&gt;
+  /// <summary>
 
         /// Returns the source collection.
 
-  /// &lt;/summary&gt;   
+  /// </summary>   
 
         public override IEnumerable GetInternalSource()
 
@@ -17757,13 +17757,13 @@ The following code example illustrates the methods that are used to achieve Sort
 
 
 
-   /// &lt;summary&gt;
+   /// <summary>
 
    /// Total SortDescription Collection is the parameter for this method.       
 
    /// You can sort your source based on the SortDescription collection.
 
-   /// &lt;/summary&gt;   
+   /// </summary>   
 
    protected override void ProcessSort(SortDescriptionCollection sortDescription)
 
@@ -17775,7 +17775,7 @@ The following code example illustrates the methods that are used to achieve Sort
 
 
 
-   /// &lt;summary&gt;
+   /// <summary>
 
    /// This method returns the collection of Syncfusion.Data.Extensions.GroupResult. 
 
@@ -17783,7 +17783,7 @@ The following code example illustrates the methods that are used to achieve Sort
 
    /// get the collection of GroupResult.
 
-   /// &lt;/summary&gt;   
+   /// </summary>   
 
    protected override IEnumerable<GroupResult> GetGroupedSource(string[] groupBy)
 
@@ -17797,7 +17797,7 @@ The following code example illustrates the methods that are used to achieve Sort
 
    }
 
-   /// &lt;summary&gt;
+   /// <summary>
 
    /// The following method is called when filtering is applied to the column.
 
@@ -17805,7 +17805,7 @@ The following code example illustrates the methods that are used to achieve Sort
 
    /// By applying the Filter predicate, you can filter your source.
 
-   /// &lt;/summary&gt;
+   /// </summary>
 
    protected override void ApplyFilter(Predicate<object> Filter)
 
@@ -17888,7 +17888,7 @@ class IncrementalLoadingViewModel
 
    }
 
-   private IncrementalList &lt;Employee&gt; itemSource;
+   private IncrementalList <Employee> itemSource;
 
    public IncrementalList<Employee> GridItemSource
 
@@ -17908,13 +17908,13 @@ class IncrementalLoadingViewModel
 
    }
 
-   /// &lt;summary&gt;
+   /// <summary>
 
    /// This method is called when the DataGrid is loaded and scrolled. 
 
    /// This method has the number of required data as parameter.
 
-   /// &lt;/summary&gt;   
+   /// </summary>   
 
    void LoadMoreItems(uint count, int baseIndex)
 
@@ -17938,11 +17938,11 @@ class IncrementalLoadingViewModel
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-&lt;local:ViewModel/&gt;
+<local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -17988,7 +17988,7 @@ The following screenshot displays the elements present in the DataGrid.
 
 
 
-{ ![](Features_images/Features_img145.jpeg) | markdownify }
+{{ '![](Features_images/Features_img145.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -18023,7 +18023,7 @@ The section explains you how to edit a SfDataGrid style in ExpressionBlend. To E
 
 
 
-{ ![objectandtimeline](Features_images/Features_img146.png) | markdownify }
+{{ '![objectandtimeline](Features_images/Features_img146.png)' | markdownify }}
 {:.image }
 
 
@@ -18033,7 +18033,7 @@ _Object and Timeline Pane_
 
 
 
-{ ![EditStyle](Features_images/Features_img147.png) | markdownify }
+{{ '![EditStyle](Features_images/Features_img147.png)' | markdownify }}
 {:.image }
 
 
@@ -18045,7 +18045,7 @@ You can see two options in submenu,
 
 
 
-{ ![createresource1](Features_images/Features_img148.png) | markdownify }
+{{ '![createresource1](Features_images/Features_img148.png)' | markdownify }}
 {:.image }
 
 
@@ -18057,7 +18057,7 @@ The Create Style Resources dialog prompts you to enter the name or change the na
 
 
 
-{ ![createresource2](Features_images/Features_img149.png) | markdownify }
+{{ '![createresource2](Features_images/Features_img149.png)' | markdownify }}
 {:.image }
 
 
@@ -18074,7 +18074,7 @@ You can also edit the Datagrid elements in ExpressionBlend. To edit the SfDatagr
 
 
 
-{ ![objectandtimeline](Features_images/Features_img150.png) | markdownify }
+{{ '![objectandtimeline](Features_images/Features_img150.png)' | markdownify }}
 {:.image }
 
 
@@ -18084,7 +18084,7 @@ _Object and Timeline Pane_
 
 
 
-{ ![EditTemplateStyle](Features_images/Features_img151.png) | markdownify }
+{{ '![EditTemplateStyle](Features_images/Features_img151.png)' | markdownify }}
 {:.image }
 
 
@@ -18096,7 +18096,7 @@ You can select the available DataGrid element templates that you can modify the 
 
 
 
-{ ![EditCell](Features_images/Features_img152.png) | markdownify }
+{{ '![EditCell](Features_images/Features_img152.png)' | markdownify }}
 {:.image }
 
 
@@ -18108,7 +18108,7 @@ The Create Style Resources dialog prompts you to enter the name or change the na
 
 
 
-{ ![EditCell](Features_images/Features_img153.png) | markdownify }
+{{ '![EditCell](Features_images/Features_img153.png)' | markdownify }}
 {:.image }
 
 
@@ -18150,7 +18150,7 @@ This section explains you how to edit a SfDataGrid style in VisualStudioDesingVi
 
 
 
-{ ![visualgrid](Features_images/Features_img154.png) | markdownify }
+{{ '![visualgrid](Features_images/Features_img154.png)' | markdownify }}
 {:.image }
 
 
@@ -18158,7 +18158,7 @@ _Designview in Visual Studio_
 
 * Edit a Copy –Edits a copy of the default style. When you select this option, a new dialog window is opened.
 
-{ ![createsource](Features_images/Features_img155.png) | markdownify }
+{{ '![createsource](Features_images/Features_img155.png)' | markdownify }}
 {:.image }
 
 
@@ -18170,7 +18170,7 @@ The Create style Resources dialog prompts you to enter the name or change the na
 
 
 
-{ ![createsource](Features_images/Features_img156.png) | markdownify }
+{{ '![createsource](Features_images/Features_img156.png)' | markdownify }}
 {:.image }
 
 
@@ -18188,7 +18188,7 @@ This section explains you how to edit a SfDataGrid elements style in VisualStudi
 
 
 
-{ ![DesignView](Features_images/Features_img157.png) | markdownify }
+{{ '![DesignView](Features_images/Features_img157.png)' | markdownify }}
 {:.image }
 
 
@@ -18198,7 +18198,7 @@ _Selecting EditCellStyle from EditAdditionalTemplates in Designview_
 
 
 
-{ ![visualcellstyle](Features_images/Features_img158.png) | markdownify }
+{{ '![visualcellstyle](Features_images/Features_img158.png)' | markdownify }}
 {:.image }
 
 
@@ -18210,7 +18210,7 @@ The Create style Resources dialog prompts you to enter the name or change the na
 
 
 
-{ ![visualcellstyle](Features_images/Features_img159.png) | markdownify }
+{{ '![visualcellstyle](Features_images/Features_img159.png)' | markdownify }}
 {:.image }
 
 
@@ -18290,27 +18290,27 @@ The following code example illustrates applying styles for cells.
 
 
 
-&lt;!--  Grid Cell Style  --&gt;
+<!--  Grid Cell Style  -->
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;Style x:Key="customCellStyle"  TargetType="syncfusion:GridCell"&gt;
+<Style x:Key="customCellStyle"  TargetType="syncfusion:GridCell">
 
-&lt;Setter Property="BorderBrush" Value="#FF7fd0de" /&gt;
+<Setter Property="BorderBrush" Value="#FF7fd0de" />
 
-&lt;Setter Property="BorderThickness" Value="0,0,0,1" /&gt;
+<Setter Property="BorderThickness" Value="0,0,0,1" />
 
-&lt;Setter Property="Padding" Value="10,0,0,0" /&gt;
+<Setter Property="Padding" Value="10,0,0,0" />
 
-&lt;Setter Property="FontFamily" Value=" Segoe UI" /&gt;
+<Setter Property="FontFamily" Value=" Segoe UI" />
 
-&lt;Setter Property="Foreground" Value="#FF2A2A2A" /&gt;
+<Setter Property="Foreground" Value="#FF2A2A2A" />
 
-&lt;Setter Property="FontSize" Value="16" /&gt;
+<Setter Property="FontSize" Value="16" />
 
-&lt;/Style&gt;
+</Style>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 <syncfusion:SfDataGrid  x:Name="datagrid" 
 
@@ -18336,19 +18336,19 @@ The following code example illustrates this.
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;Style x:Key="captionSummaryCellStyle" TargetType="syncfusion:GridCaptionSummaryCell"&gt;
+<Style x:Key="captionSummaryCellStyle" TargetType="syncfusion:GridCaptionSummaryCell">
 
-&lt;Setter Property="BorderBrush" Value="#FF7fd0de" /&gt;
+<Setter Property="BorderBrush" Value="#FF7fd0de" />
 
-&lt;Setter Property="FontWeight" Value="Normal" /&gt;
+<Setter Property="FontWeight" Value="Normal" />
 
-&lt;Setter Property="Background" Value="Yellow" /&gt;
+<Setter Property="Background" Value="Yellow" />
 
-&lt;/Style&gt;
+</Style>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -18374,19 +18374,19 @@ GroupSummary row displays all the summary values in GroupSummaryCells. You can a
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;Style x:Key="groupSummaryCellStyle" TargetType="syncfusion:GridGroupSummaryCell"&gt;
+<Style x:Key="groupSummaryCellStyle" TargetType="syncfusion:GridGroupSummaryCell">
 
-&lt;Setter Property="BorderBrush" Value="#FF7fd0de" /&gt;
+<Setter Property="BorderBrush" Value="#FF7fd0de" />
 
-&lt;Setter Property="FontWeight" Value="Normal" /&gt;
+<Setter Property="FontWeight" Value="Normal" />
 
-&lt;Setter Property="Background" Value="Bisque" /&gt;
+<Setter Property="Background" Value="Bisque" />
 
-&lt;/Style&gt;
+</Style>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -18412,19 +18412,19 @@ All the table summary values are displayed in GridTableSummaryCell. DataGrid ena
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;Style x:Key="tableSummaryCellStyle" TargetType="syncfusion:GridTableSummaryCell"&gt;
+<Style x:Key="tableSummaryCellStyle" TargetType="syncfusion:GridTableSummaryCell">
 
-&lt;Setter Property="BorderBrush" Value="#FF7fd0de" /&gt;
+<Setter Property="BorderBrush" Value="#FF7fd0de" />
 
-&lt;Setter Property="FontWeight" Value="Normal" /&gt;
+<Setter Property="FontWeight" Value="Normal" />
 
-&lt;Setter Property="Background" Value="Bisque" /&gt;
+<Setter Property="Background" Value="Bisque" />
 
-&lt;/Style&gt;
+</Style>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -18448,33 +18448,33 @@ DataGrid displays the column header in GridHeaderCellControl that displays the c
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;Style x:Key="headerCellStyle" TargetType="syncfusion:GridHeaderCellControl"&gt;
+<Style x:Key="headerCellStyle" TargetType="syncfusion:GridHeaderCellControl">
 
-&lt;Setter Property="Background" Value="Transparent" /&gt;
+<Setter Property="Background" Value="Transparent" />
 
-&lt;Setter Property="BorderBrush" Value="#FFCEE7E7" /&gt;
+<Setter Property="BorderBrush" Value="#FFCEE7E7" />
 
-&lt;Setter Property="BorderThickness" Value="0,0,1,0" /&gt;
+<Setter Property="BorderThickness" Value="0,0,1,0" />
 
-&lt;Setter Property="HorizontalContentAlignment" Value="Left" /&gt;
+<Setter Property="HorizontalContentAlignment" Value="Left" />
 
-&lt;Setter Property="Padding" Value="10,3,3,3" /&gt;
+<Setter Property="Padding" Value="10,3,3,3" />
 
-&lt;Setter Property="FontFamily" Value="Segoe UI" /&gt;
+<Setter Property="FontFamily" Value="Segoe UI" />
 
-&lt;Setter Property="FontSize" Value="16" /&gt;
+<Setter Property="FontSize" Value="16" />
 
-&lt;Setter Property="Margin" Value="5,0,0,0" /&gt;
+<Setter Property="Margin" Value="5,0,0,0" />
 
-&lt;Setter Property="Foreground" Value="#FF5E5B5C" /&gt;
+<Setter Property="Foreground" Value="#FF5E5B5C" />
 
-&lt;Setter Property="FontWeight" Value="SemiBold" /&gt;
+<Setter Property="FontWeight" Value="SemiBold" />
 
-&lt;/Style&gt;
+</Style>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -18546,15 +18546,15 @@ The following code example illustrates how to set the row style for DataGrid.
 
 
 
-&lt;Window.Resources&gt;       
+<Window.Resources>       
 
-&lt;Style x:Key="rowStyle" TargetType="syncfusion:VirtualizingCellsControl"&gt;
+<Style x:Key="rowStyle" TargetType="syncfusion:VirtualizingCellsControl">
 
-&lt;Setter Property="Background" Value="Bisque" /&gt;
+<Setter Property="Background" Value="Bisque" />
 
-&lt;/Style&gt;
+</Style>
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
 
 
@@ -18580,15 +18580,15 @@ The following code example illustrates how to set the alternate row style for Da
 
 
 
-&lt;Window.Resources&gt;       
+<Window.Resources>       
 
-&lt;Style x:Key="AlternaterowStyle" TargetType="syncfusion:VirtualizingCellsControl"&gt;
+<Style x:Key="AlternaterowStyle" TargetType="syncfusion:VirtualizingCellsControl">
 
-&lt;Setter Property="Background" Value="Bisque" /&gt;
+<Setter Property="Background" Value="Bisque" />
 
-&lt;/Style&gt;
+</Style>
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
 
 
@@ -18614,21 +18614,21 @@ The following code example illustrates applying styles for Group caption row.
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;Style x:Key="captionSummaryRowStyle" TargetType="syncfusion:CaptionSummaryRowControl"&gt;
+<Style x:Key="captionSummaryRowStyle" TargetType="syncfusion:CaptionSummaryRowControl">
 
-&lt;Setter Property="Background" Value="Transparent" /&gt;
+<Setter Property="Background" Value="Transparent" />
 
-&lt;Setter Property="BorderBrush" Value="#FF7fd0de" /&gt;
+<Setter Property="BorderBrush" Value="#FF7fd0de" />
 
-&lt;Setter Property="BorderThickness" Value="0" /&gt;
+<Setter Property="BorderThickness" Value="0" />
 
-&lt;Setter Property="Foreground" Value="#FF2A2A2A" /&gt;
+<Setter Property="Foreground" Value="#FF2A2A2A" />
 
-&lt;/Style&gt;
+</Style>
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
 
 
@@ -18656,23 +18656,23 @@ The following code example illustrates styling of Group Summary rows.
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
 <Style x:Key="groupSummaryRowStyle" 
 
 TargetType="syncfusion:GroupSummaryRowControl">
 
-&lt;Setter Property="Background" Value="Transparent" /&gt;
+<Setter Property="Background" Value="Transparent" />
 
-&lt;Setter Property="BorderBrush" Value="#FF7fd0de" /&gt;
+<Setter Property="BorderBrush" Value="#FF7fd0de" />
 
-&lt;Setter Property="BorderThickness" Value="0,0,1,1" /&gt;
+<Setter Property="BorderThickness" Value="0,0,1,1" />
 
-&lt;Setter Property="Foreground" Value="#FF2A2A2A" /&gt;
+<Setter Property="Foreground" Value="#FF2A2A2A" />
 
-&lt;/Style&gt;
+</Style>
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
 
 
@@ -18698,23 +18698,23 @@ The following code example displays the styling of TableSummaryRow.
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
 <Style x:Key="tableSummaryRowStyle" 
 
 TargetType="syncfusion:TableSummaryRowControl">
 
-&lt;Setter Property="Background" Value="Transparent" /&gt;
+<Setter Property="Background" Value="Transparent" />
 
-&lt;Setter Property="BorderBrush" Value="#FF7fd0de" /&gt;
+<Setter Property="BorderBrush" Value="#FF7fd0de" />
 
-&lt;Setter Property="BorderThickness" Value="0,0,1,1" /&gt;
+<Setter Property="BorderThickness" Value="0,0,1,1" />
 
-&lt;Setter Property="Foreground" Value="#FF2A2A2A" /&gt;
+<Setter Property="Foreground" Value="#FF2A2A2A" />
 
-&lt;/Style&gt;
+</Style>
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
 
 
@@ -18840,21 +18840,21 @@ In the following example, you can set the different row background for DataGrid 
 
 //Custom Style 
 
-&lt;Application.Resources&gt;
+<Application.Resources>
 
-      &lt;Style x:Key="rowStyle1" TargetType="syncfusion:VirtualizingCellsControl"&gt;
+      <Style x:Key="rowStyle1" TargetType="syncfusion:VirtualizingCellsControl">
 
-          &lt;Setter Property="Background" Value="Bisque" /&gt;
+          <Setter Property="Background" Value="Bisque" />
 
-       &lt;/Style&gt;
+       </Style>
 
-      &lt;Style x:Key="rowStyle2" TargetType="syncfusion:VirtualizingCellsControl"&gt;
+      <Style x:Key="rowStyle2" TargetType="syncfusion:VirtualizingCellsControl">
 
-          &lt;Setter Property="Background" Value="Aqua" /&gt;
+          <Setter Property="Background" Value="Aqua" />
 
-      &lt;/Style&gt;
+      </Style>
 
-&lt;/Application.Resources&gt;
+</Application.Resources>
 
 
 
@@ -18900,11 +18900,11 @@ return base.SelectStyle (item, container);
 
 
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
-&lt;local:CustomRowStyleSelector x:Key="rowStyleSelector" /&gt;
+<local:CustomRowStyleSelector x:Key="rowStyleSelector" />
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 <syncfusion:SfDataGrid x:Name="datagrid" 
 
@@ -18920,7 +18920,7 @@ return base.SelectStyle (item, container);
 
 The following screenshot displays the output.
 
-{ ![rowstyle](Features_images/Features_img160.png) | markdownify }
+{{ '![rowstyle](Features_images/Features_img160.png)' | markdownify }}
 {:.image }
 
 
@@ -18956,31 +18956,31 @@ The following code example illustrates how to use HeaderTemplate in DataGrid Col
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;DataTemplate x:Key="headerTemplate"&gt;
+<DataTemplate x:Key="headerTemplate">
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;Grid.ColumnDefinitions&gt;
+<Grid.ColumnDefinitions>
 
-                  &lt;ColumnDefinition Width="Auto" /&gt;
+                  <ColumnDefinition Width="Auto" />
 
-                  &lt;ColumnDefinition Width="*" /&gt;
+                  <ColumnDefinition Width="*" />
 
-&lt;/Grid.ColumnDefinitions&gt;
+</Grid.ColumnDefinitions>
 
 <TextBlock Grid.Column="0" VerticalAlignment="Center"
 
                   Foreground="White" Text="{Binding}" />
 
-                  &lt;Image Source="/Assets/Icon.jpg" Grid.Column="1" /&gt;
+                  <Image Source="/Assets/Icon.jpg" Grid.Column="1" />
 
-&lt;/Grid&gt;
+</Grid>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -18992,25 +18992,25 @@ The following code example illustrates how to use HeaderTemplate in DataGrid Col
 
                          ItemsSource="{Binding GDCSource}">
 
-&lt;syncfusion:SfDataGrid.Columns&gt;
+<syncfusion:SfDataGrid.Columns>
 
 <syncfusion:GridTextColumn MappingName="EmployeeName"
 
 HeaderTemplate="{StaticResource headerTemplate}" />
 
-&lt;syncfusion:GridTextColumn MappingName="EmployeeDesignation" /&gt;
+<syncfusion:GridTextColumn MappingName="EmployeeDesignation" />
 
-&lt;syncfusion:GridTextColumn MappingName="EmployeeAge"  /&gt;
+<syncfusion:GridTextColumn MappingName="EmployeeAge"  />
 
-&lt;syncfusion:GridTextColumn MappingName="EmployeeGender" /&gt;
+<syncfusion:GridTextColumn MappingName="EmployeeGender" />
 
-&lt;syncfusion:GridTextColumn MappingName="EmployeeArea" /&gt;
+<syncfusion:GridTextColumn MappingName="EmployeeArea" />
 
-&lt;syncfusion:GridTextColumn MappingName="EmployeeSalary" /&gt;
+<syncfusion:GridTextColumn MappingName="EmployeeSalary" />
 
-&lt;/syncfusion:SfDataGrid.Columns&gt;
+</syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -19101,29 +19101,29 @@ class GridCellTemplateSelector : DataTemplateSelector
 
 
 
-&lt;Application.Resources&gt;
+<Application.Resources>
 
-    &lt;DataTemplate x:Key="CellTemplate1"&gt;
+    <DataTemplate x:Key="CellTemplate1">
 
-       &lt;TextBlock Foreground="Blue" Text="{Binding Name}" /&gt;
+       <TextBlock Foreground="Blue" Text="{Binding Name}" />
 
-    &lt;/DataTemplate&gt;
+    </DataTemplate>
 
-    &lt;DataTemplate x:Key="CellTemplate2"&gt;
+    <DataTemplate x:Key="CellTemplate2">
 
-        &lt;TextBlock Foreground="Red" Text="{Binding Name}" /&gt;
+        <TextBlock Foreground="Red" Text="{Binding Name}" />
 
-    &lt;/DataTemplate&gt;
+    </DataTemplate>
 
-&lt;/Application.Resources&gt;
+</Application.Resources>
 
 
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
-&lt;local:GridCellTemplateSelector x:Key="templateselector"/&gt; 
+<local:GridCellTemplateSelector x:Key="templateselector"/> 
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -19133,7 +19133,7 @@ class GridCellTemplateSelector : DataTemplateSelector
 
                          CellTemplateSelector="{StaticResource templateselector}"
 
-&lt;/syncfusion:SfDataGrid&gt;    
+</syncfusion:SfDataGrid>    
 
 
 
@@ -19141,7 +19141,7 @@ class GridCellTemplateSelector : DataTemplateSelector
 
 The following screenshot displays the output.
 
-{ ![celltemplateselector](Features_images/Features_img161.png) | markdownify }
+{{ '![celltemplateselector](Features_images/Features_img161.png)' | markdownify }}
 {:.image }
 
 
@@ -19191,21 +19191,21 @@ return base.SelectTemplate(item, container);
 
 
 
-&lt;Application.Resources&gt;
+<Application.Resources>
 
-&lt;DataTemplate x:Key="maleCellTemplate"&gt;
+<DataTemplate x:Key="maleCellTemplate">
 
-&lt;Image Source="/Assets/male.jpg" /&gt;
+<Image Source="/Assets/male.jpg" />
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
-&lt;DataTemplate x:Key="femaleCellTemplate"&gt;
+<DataTemplate x:Key="femaleCellTemplate">
 
-&lt;Image Source="/Assets/female.jpg" /&gt;
+<Image Source="/Assets/female.jpg" />
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
-&lt;/Application.Resources&gt;
+</Application.Resources>
 
 
 
@@ -19213,13 +19213,13 @@ return base.SelectTemplate(item, container);
 
                          ItemsSource="{Binding ItemsSource}">
 
-            &lt;syncfusion:SfDataGrid.Columns&gt;
+            <syncfusion:SfDataGrid.Columns>
 
-              &lt;syncfusion:GridTextColumn MappingName="EmployeeId" /&gt;
+              <syncfusion:GridTextColumn MappingName="EmployeeId" />
 
-              &lt;syncfusion:GridTextColumn MappingName="EmployeeName" /&gt;
+              <syncfusion:GridTextColumn MappingName="EmployeeName" />
 
-              &lt;syncfusion:GridTextColumn MappingName="EmployeeDesignation" /&gt;
+              <syncfusion:GridTextColumn MappingName="EmployeeDesignation" />
 
               <syncfusion:GridTemplateColumn  
 
@@ -19227,9 +19227,9 @@ return base.SelectTemplate(item, container);
 
                    MappingName="EmployeeGender" />
 
-              &lt;/syncfusion:SfDataGrid.Columns&gt;
+              </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;  
+</syncfusion:SfDataGrid>  
 
 
 
@@ -19237,7 +19237,7 @@ return base.SelectTemplate(item, container);
 
 The following screenshot displays the output.
 
-{ ![](Features_images/Features_img162.png) | markdownify }
+{{ '![](Features_images/Features_img162.png)' | markdownify }}
 {:.image }
 
 
@@ -19312,11 +19312,11 @@ throw new NotImplementedException();
 
 
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
-&lt;local:ForegroundColorConverter x:Key="changeForegroundConverter"/&gt; 
+<local:ForegroundColorConverter x:Key="changeForegroundConverter"/> 
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -19326,35 +19326,35 @@ throw new NotImplementedException();
 
                          ItemsSource="{Binding Stocks}">
 
-&lt;syncfusion:SfDataGrid.Columns&gt;
+<syncfusion:SfDataGrid.Columns>
 
-&lt;syncfusion:GridTextColumn MappingName="Symbol" /&gt;
+<syncfusion:GridTextColumn MappingName="Symbol" />
 
-&lt;syncfusion:GridTemplateColumn MappingName="Account" /&gt;
+<syncfusion:GridTemplateColumn MappingName="Account" />
 
-&lt;syncfusion:GridTextColumn MappingName="LastTrade" /&gt;
+<syncfusion:GridTextColumn MappingName="LastTrade" />
 
-&lt;syncfusion:GridTemplateColumn MappingName="Change"&gt;
+<syncfusion:GridTemplateColumn MappingName="Change">
 
-&lt;syncfusion:GridTemplateColumn.CellTemplate&gt;
+<syncfusion:GridTemplateColumn.CellTemplate>
 
-&lt;DataTemplate&gt;
+<DataTemplate>
 
-&lt;TextBlock x:Name="changeValue" HorizontalAlignment="Center" FontSize="24" FontWeight="Light" Foreground="{Binding Change, Converter={StaticResource changeForegroundConverter}}"                                                                          Text="{Binding Change}" /&gt;
+<TextBlock x:Name="changeValue" HorizontalAlignment="Center" FontSize="24" FontWeight="Light" Foreground="{Binding Change, Converter={StaticResource changeForegroundConverter}}"                                                                          Text="{Binding Change}" />
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
-&lt;/syncfusion:GridTemplateColumn.CellTemplate&gt;
+</syncfusion:GridTemplateColumn.CellTemplate>
 
-&lt;/syncfusion:GridTemplateColumn&gt;
+</syncfusion:GridTemplateColumn>
 
-&lt;syncfusion:GridTextColumn MappingName="PreviousClose" /&gt;
+<syncfusion:GridTextColumn MappingName="PreviousClose" />
 
-&lt;syncfusion:GridTextColumn MappingName="Open" /&gt;
+<syncfusion:GridTextColumn MappingName="Open" />
 
-&lt;/syncfusion:SfDataGrid.Columns&gt;
+</syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -19364,7 +19364,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img163.png) | markdownify }
+{{ '![](Features_images/Features_img163.png)' | markdownify }}
 {:.image }
 
 
@@ -19430,11 +19430,11 @@ return base.SelectStyle (item, container);
 
 
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
-&lt;local:CustomRowStyleSelector x:Key="rowStyleSelector "/&gt; 
+<local:CustomRowStyleSelector x:Key="rowStyleSelector "/> 
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -19456,7 +19456,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img164.png) | markdownify }
+{{ '![](Features_images/Features_img164.png)' | markdownify }}
 {:.image }
 
 
@@ -19480,19 +19480,19 @@ The following code example illustrates how to use AlternatingRowStyle in DataGri
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;Style x:Key="alternateRowstyle" TargetType="syncfusion:VirtualizingCellsControl"&gt;
+<Style x:Key="alternateRowstyle" TargetType="syncfusion:VirtualizingCellsControl">
 
-      &lt;Setter Property="Background" Value="Pink"/&gt;
+      <Setter Property="Background" Value="Pink"/>
 
-      &lt;Setter Property="FontStyle" Value="Italic"/&gt;
+      <Setter Property="FontStyle" Value="Italic"/>
 
-      &lt;Setter Property="FontWeight" Value="Bold"/&gt;           
+      <Setter Property="FontWeight" Value="Bold"/>           
 
-&lt;/Style&gt;
+</Style>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -19510,7 +19510,7 @@ The following screenshot displays the output.
 
 
 
-{ ![alternativerowstyle](Features_images/Features_img165.png) | markdownify }
+{{ '![alternativerowstyle](Features_images/Features_img165.png)' | markdownify }}
 {:.image }
 
 
@@ -19534,11 +19534,11 @@ QueryRowHeight is the event that returns row heights in demand. This is raised f
 
 syncgrid.QueryRowHeight += syncgrid_QueryRowHeight;
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// The event sets the height of the row OnDemand.
 
-/// &lt;/summary&gt;
+/// </summary>
 
 /// <param name="sender">Gets the object that raising this event</param>    
 
@@ -19591,15 +19591,15 @@ The following is the code example of the QueryRowHeight event.
 
                        ItemsSource="{Binding CustomerDetails}">
 
-&lt;syncfusion:SfDataGrid.Columns&gt;
+<syncfusion:SfDataGrid.Columns>
 
-    &lt;syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID"/&gt;
+    <syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID"/>
 
-    &lt;syncfusion:GridTextColumn HeaderText="Employee Name" MappingName="CompanyName" /&gt;
+    <syncfusion:GridTextColumn HeaderText="Employee Name" MappingName="CompanyName" />
 
-&lt;/syncfusion:SfDataGrid.Columns&gt;
+</syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -19635,7 +19635,7 @@ The following screenshot displays the output.
 
 
 
-{ ![SNAGHTML1a92b355](Features_images/Features_img166.png) | markdownify }
+{{ '![SNAGHTML1a92b355](Features_images/Features_img166.png)' | markdownify }}
 {:.image }
 
 
@@ -19692,25 +19692,25 @@ The following code example explains how to use the GetAutoRowHeight method in th
 
                        ItemsSource="{Binding CustomerDetails}">
 
-&lt;syncfusion:SfDataGrid.Columns&gt;
+<syncfusion:SfDataGrid.Columns>
 
-    &lt;syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" TextWrapping="Wrap" /&gt;
+    <syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" TextWrapping="Wrap" />
 
-    &lt;syncfusion:GridTextColumn HeaderText="Employee Name" MappingName="CompanyName" TextWrapping="Wrap"/&gt;
+    <syncfusion:GridTextColumn HeaderText="Employee Name" MappingName="CompanyName" TextWrapping="Wrap"/>
 
-    &lt;syncfusion:GridTextColumn HeaderText="Contact Name" MappingName="ContactName" TextWrapping="Wrap" /&gt;
+    <syncfusion:GridTextColumn HeaderText="Contact Name" MappingName="ContactName" TextWrapping="Wrap" />
 
-    &lt;syncfusion:GridTextColumn HeaderText="Nationality ID" MappingName="ContactTitle" TextWrapping="Wrap"/&gt;
+    <syncfusion:GridTextColumn HeaderText="Nationality ID" MappingName="ContactTitle" TextWrapping="Wrap"/>
 
-&lt;/syncfusion:SfDataGrid.Columns&gt;
+</syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;            
+</syncfusion:SfDataGrid>            
 
 
 
 As a result of TextWrapping, the text is wrapped but the height is not increased as illustrated in the following screenshot.
 
-{ ![SNAGHTML1eca4af1](Features_images/Features_img167.png) | markdownify }
+{{ '![SNAGHTML1eca4af1](Features_images/Features_img167.png)' | markdownify }}
 {:.image }
 
 
@@ -19776,7 +19776,7 @@ Now, you can see that the height of the row is resized based on the large text c
 
 
 
-{ ![SNAGHTML1ecbc3c6](Features_images/Features_img168.png) | markdownify }
+{{ '![SNAGHTML1ecbc3c6](Features_images/Features_img168.png)' | markdownify }}
 {:.image }
 
 
@@ -19810,19 +19810,19 @@ The following code example explains how to use the GridRowSizingOptions.
 
                        ItemsSource="{Binding CustomerDetails}">
 
-&lt;syncfusion:SfDataGrid.Columns&gt;
+<syncfusion:SfDataGrid.Columns>
 
-    &lt;syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" TextWrapping="Wrap" /&gt;
+    <syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" TextWrapping="Wrap" />
 
-    &lt;syncfusion:GridTextColumn HeaderText="Employee Name" MappingName="CompanyName" IsHidden="True" TextWrapping="Wrap"/&gt;
+    <syncfusion:GridTextColumn HeaderText="Employee Name" MappingName="CompanyName" IsHidden="True" TextWrapping="Wrap"/>
 
-    &lt;syncfusion:GridTextColumn HeaderText="Contact Name" MappingName="ContactName" TextWrapping="Wrap" /&gt;
+    <syncfusion:GridTextColumn HeaderText="Contact Name" MappingName="ContactName" TextWrapping="Wrap" />
 
-    &lt;syncfusion:GridTextColumn HeaderText="Nationality ID" MappingName="ContactTitle" TextWrapping="Wrap"/&gt;
+    <syncfusion:GridTextColumn HeaderText="Nationality ID" MappingName="ContactTitle" TextWrapping="Wrap"/>
 
-&lt;/syncfusion:SfDataGrid.Columns&gt;
+</syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;            
+</syncfusion:SfDataGrid>            
 
 
 
@@ -19904,7 +19904,7 @@ In the above code example, CustomerID, ContactName and ContactTitle are excluded
 
 
 
-{ ![](Features_images/Features_img169.png) | markdownify }
+{{ '![](Features_images/Features_img169.png)' | markdownify }}
 {:.image }
 
 
@@ -20004,7 +20004,7 @@ void syncgrid_QueryRowHeight(object sender, QueryRowHeightEventArgs e)
 
 The following screenshot displays the output.
 
-{ ![](Features_images/Features_img170.png) | markdownify }
+{{ '![](Features_images/Features_img170.png)' | markdownify }}
 {:.image }
 
 
@@ -20082,7 +20082,7 @@ Run the above code example. Edit with large text and complete editing. Press Tab
 
 
 
-{ ![](Features_images/Features_img171.png) | markdownify }
+{{ '![](Features_images/Features_img171.png)' | markdownify }}
 {:.image }
 
 
@@ -20138,7 +20138,7 @@ The following screenshot displays the output of customized TableSummaryRow contr
 
 
 
-{ ![](Features_images/Features_img172.png) | markdownify }
+{{ '![](Features_images/Features_img172.png)' | markdownify }}
 {:.image }
 
 
@@ -20220,7 +20220,7 @@ The following screenshot displays the SfDataGrid with Freeze Panes support.
 
 
 
-{ ![WPF](Features_images/Features_img173.png) | markdownify }
+{{ '![WPF](Features_images/Features_img173.png)' | markdownify }}
 {:.image }
 
 
@@ -20393,21 +20393,21 @@ You can improve the filter pop-up opening time by setting CanGenerateUniqueItems
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;Style TargetType="syncfusion:GridFilterControl"&gt;
+<Style TargetType="syncfusion:GridFilterControl">
 
-       &lt;Setter Property="FilterMode" Value="AdvancedFilter" /&gt;
+       <Setter Property="FilterMode" Value="AdvancedFilter" />
 
- &lt;/Style&gt;
+ </Style>
 
- &lt;Style TargetType="syncfusion:AdvancedFilterControl"&gt;
+ <Style TargetType="syncfusion:AdvancedFilterControl">
 
-        &lt;Setter Property="CanGenerateUniqueItems" Value="False" /&gt;
+        <Setter Property="CanGenerateUniqueItems" Value="False" />
 
- &lt;/Style&gt;
+ </Style>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -20415,7 +20415,7 @@ You can improve the filter pop-up opening time by setting CanGenerateUniqueItems
 
 The following screenshot displays the AdvancedFiltering with CanGenerateUniqueItems when setto‘True’.
 
-{ ![](Features_images/Features_img174.png) | markdownify }
+{{ '![](Features_images/Features_img174.png)' | markdownify }}
 {:.image }
 
 
@@ -20423,7 +20423,7 @@ _AdvancedFiltering with CanGenerateUniqueItems set to ‘True’._
 
 The following screenshot displays the AdvancedFiltering with CanGenerateUniqueItems when setto‘False’.
 
-{ ![](Features_images/Features_img175.png) | markdownify }
+{{ '![](Features_images/Features_img175.png)' | markdownify }}
 {:.image }
 
 
@@ -20482,17 +20482,17 @@ The following code example illustrates context menu usage with GroupCaptionConte
 
 
 
-&lt;syncfusion:SfDataGrid.GroupCaptionContextMenu&gt;
+<syncfusion:SfDataGrid.GroupCaptionContextMenu>
 
-&lt;ContextMenu&gt;
+<ContextMenu>
 
-&lt;MenuItem Command="{Binding Source={x:Static Member=local:ContextMenuCommands.Expand}}" CommandParameter="{Binding}" Header="Expand" /&gt;
+<MenuItem Command="{Binding Source={x:Static Member=local:ContextMenuCommands.Expand}}" CommandParameter="{Binding}" Header="Expand" />
 
-&lt;MenuItem Command="{Binding Source={x:Static Member=local:ContextMenuCommands.Collapse}}" CommandParameter="{Binding}" Header="Collapse" /&gt;
+<MenuItem Command="{Binding Source={x:Static Member=local:ContextMenuCommands.Collapse}}" CommandParameter="{Binding}" Header="Collapse" />
 
-&lt;/ContextMenu&gt;
+</ContextMenu>
 
-&lt;/syncfusion:SfDataGrid.GroupCaptionContextMenu&gt;
+</syncfusion:SfDataGrid.GroupCaptionContextMenu>
 
 
 
@@ -20646,7 +20646,7 @@ public static class ContextMenuCommands
 
 
 
-{ ![](Features_images/Features_img176.png) | markdownify }
+{{ '![](Features_images/Features_img176.png)' | markdownify }}
 {:.image }
 
 
@@ -20694,7 +20694,7 @@ The following screenshot illustrates aDefault Column Chooser window.
 
 
 
-{ ![columnchooser](Features_images/Features_img177.png) | markdownify }
+{{ '![columnchooser](Features_images/Features_img177.png)' | markdownify }}
 {:.image }
 
 
@@ -20773,21 +20773,21 @@ The following code example illustrates how to add and remove a child from Custom
 
 
 
-   /// &lt;summary&gt;
+   /// <summary>
 
         /// Adds the field to the column chooser whenever the column is hidden.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// &lt;param name="column"&gt;&lt;/param&gt;
+        /// <param name="column"></param>
 
-        /// &lt;remarks&gt;
+        /// <remarks>
 
         /// chooserPanel is a Panel present in the MainPage of the App
 
         /// CustomColumnChooserItem is a control that adds or removes the chooserPanel
 
-        /// &lt;/remarks&gt;
+        /// </remarks>
 
         public void AddChild(GridColumn column)
 
@@ -20803,7 +20803,7 @@ The following code example illustrates how to add and remove a child from Custom
 
             }
 
-            if (this.chooserPanel.Children.Cast &lt;CustomColumnChooserItem&gt;().All(item => (item as 		          	 		    CustomColumnChooserItem).Column.MappingName != column.MappingName) && this.DataGrid.View != null)
+            if (this.chooserPanel.Children.Cast <CustomColumnChooserItem>().All(item => (item as 		          	 		    CustomColumnChooserItem).Column.MappingName != column.MappingName) && this.DataGrid.View != null)
 
             {
 
@@ -20839,21 +20839,21 @@ The following code example illustrates how to add and remove a child from Custom
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Remove the Child for the column chooser whenever the column gets Unhide
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// &lt;param name="column"&gt;&lt;/param&gt;
+        /// <param name="column"></param>
 
-        /// &lt;remarks&gt;
+        /// <remarks>
 
         /// chooserPanel is a Panel present in the MainPage of the App
 
         /// CustomColumnChooserItem is a control that adds or removes to the chooserPanel
 
-        /// &lt;/remarks&gt;
+        /// </remarks>
 
         public void RemoveChild(GridColumn column)
 
@@ -20863,7 +20863,7 @@ The following code example illustrates how to add and remove a child from Custom
 
             {
 
-              var element = this.chooserPanel.Children.Cast &lt;CustomColumnChooserItem&gt;().FirstOrDefault(item => (item as 													CustomColumnChooserItem).Column.MappingName == column.MappingName);
+              var element = this.chooserPanel.Children.Cast <CustomColumnChooserItem>().FirstOrDefault(item => (item as 													CustomColumnChooserItem).Column.MappingName == column.MappingName);
 
                 if (element != null)
 
@@ -20875,15 +20875,15 @@ The following code example illustrates how to add and remove a child from Custom
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Returns the Rect of the ColumnChooserControl
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// &lt;returns&gt;&lt;/returns&gt;
+        /// <returns></returns>
 
-        /// &lt;remarks&gt;&lt;/remarks&gt;
+        /// <remarks></remarks>
 
         public Rect GetControlRect()
 
@@ -20907,7 +20907,7 @@ The following code example illustrates how to add and remove a child from Custom
 
 The following screenshot illustrates a Custom Column Chooser.
 
-{ ![customcolumnchooser](Features_images/Features_img178.png) | markdownify }
+{{ '![customcolumnchooser](Features_images/Features_img178.png)' | markdownify }}
 {:.image }
 
 
@@ -21009,7 +21009,7 @@ Description</td></tr>
 <td>
 Show</td><td>
 Show(int colIndex, MouseEventArgs e)</td><td>
-Called to display the pop-up to enable drag operation.> {{ '_Note: This method shows pop-up in handling pointer events._' | markdownify }}> </td></tr>
+Called to display the pop-up to enable drag operation.> {{{ ''_Note: This method shows pop-up in handling pointer events._'' | markdownify }}}> </td></tr>
 </table>
 #### RowHeader 
 
@@ -21021,11 +21021,11 @@ The following code example displays you how to enable RowHeader in DataGrid.
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-&lt;local:ViewModel/&gt;
+<local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -21039,7 +21039,7 @@ The following code example displays you how to enable RowHeader in DataGrid.
 
 The following screenshot displays a DataGrid with a RowHeader:
 
-{ ![](Features_images/Features_img179.png) | markdownify }
+{{ '![](Features_images/Features_img179.png)' | markdownify }}
 {:.image }
 
 
@@ -21053,11 +21053,11 @@ By default, the RowHeader width value is set to ’45’ (Data Type: double).you
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-&lt;local:ViewModel/&gt;
+<local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -21133,63 +21133,63 @@ The following code example shows you how to edit current row indicator in row he
 
 [XAML]
 
-&lt;Window.Resources&gt;         
+<Window.Resources>         
 
-            &lt;Style TargetType="Syncfusion:GridRowHeaderCell"&gt;
+            <Style TargetType="Syncfusion:GridRowHeaderCell">
 
-            &lt;Setter Property="Template"&gt;
+            <Setter Property="Template">
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;ControlTemplate TargetType="Syncfusion:GridRowHeaderCell"&gt;
+                    <ControlTemplate TargetType="Syncfusion:GridRowHeaderCell">
 
-                        &lt;Border&gt;
+                        <Border>
 
-                            &lt;VisualStateManager.VisualStateGroups&gt;
+                            <VisualStateManager.VisualStateGroups>
 
-                                &lt;VisualStateGroup x:Name="IndicationStates"&gt;
+                                <VisualStateGroup x:Name="IndicationStates">
 
-                                    &lt;VisualState x:Name="CurrentRow"&gt;
+                                    <VisualState x:Name="CurrentRow">
 
-                                        &lt;Storyboard&gt;
+                                        <Storyboard>
 
-                                            &lt;ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_RowHeaderIndicator" Storyboard.TargetProperty="Data"&gt;
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_RowHeaderIndicator" Storyboard.TargetProperty="Data">
 
-                                                &lt;DiscreteObjectKeyFrame KeyTime="0"&gt;
+                                                <DiscreteObjectKeyFrame KeyTime="0">
 
-                                                    &lt;DiscreteObjectKeyFrame.Value&gt;
+                                                    <DiscreteObjectKeyFrame.Value>
 
                                                         <Geometry>F1M-218.342,2910.79L-234.066,2926.52 -233.954,2926.63 -225.428,2926.63 -210.87,2912.07 -206.495,2907.7 -225.313,2888.88 -234.066,2888.88 -218.342,2904.6 -259.829,2904.6 -259.829,2910.79 -218.342,2910.79z</Geometry>
 
-                                                    &lt;/DiscreteObjectKeyFrame.Value&gt;
+                                                    </DiscreteObjectKeyFrame.Value>
 
-                                                &lt;/DiscreteObjectKeyFrame&gt;
+                                                </DiscreteObjectKeyFrame>
 
-                                            &lt;/ObjectAnimationUsingKeyFrames&gt;
+                                            </ObjectAnimationUsingKeyFrames>
 
 
 
-                                            &lt;ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ToolTip" Storyboard.TargetProperty="(UIElement.Visibility)"&gt;
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PART_ToolTip" Storyboard.TargetProperty="(UIElement.Visibility)">
 
-                                                &lt;DiscreteObjectKeyFrame KeyTime="0"&gt;
+                                                <DiscreteObjectKeyFrame KeyTime="0">
 
-                                                    &lt;DiscreteObjectKeyFrame.Value&gt;
+                                                    <DiscreteObjectKeyFrame.Value>
 
                                                         <Visibility>Collapsed</Visibility>
 
-                                                    &lt;/DiscreteObjectKeyFrame.Value&gt;
+                                                    </DiscreteObjectKeyFrame.Value>
 
-                                                &lt;/DiscreteObjectKeyFrame&gt;
+                                                </DiscreteObjectKeyFrame>
 
-                                            &lt;/ObjectAnimationUsingKeyFrames&gt;
+                                            </ObjectAnimationUsingKeyFrames>
 
-                                        &lt;/Storyboard&gt;
+                                        </Storyboard>
 
-                                    &lt;/VisualState&gt;
+                                    </VisualState>
 
-                                &lt;/VisualStateGroup&gt;
+                                </VisualStateGroup>
 
-                            &lt;/VisualStateManager.VisualStateGroups&gt;
+                            </VisualStateManager.VisualStateGroups>
 
                             <Path x:Name="PART_RowHeaderIndicator"
 
@@ -21205,7 +21205,7 @@ The following code example shows you how to edit current row indicator in row he
 
                               Stretch="Fill">
 
-                                &lt;ToolTipService.ToolTip&gt;
+                                <ToolTipService.ToolTip>
 
 
 
@@ -21223,21 +21223,21 @@ The following code example shows you how to edit current row indicator in row he
 
 
 
-                                &lt;/ToolTipService.ToolTip&gt;
+                                </ToolTipService.ToolTip>
 
-                            &lt;/Path&gt;
+                            </Path>
 
-                        &lt;/Border&gt;
+                        </Border>
 
-                    &lt;/ControlTemplate&gt;
+                    </ControlTemplate>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-        &lt;/Style&gt;
+        </Style>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
 
 
@@ -21247,7 +21247,7 @@ The following image displays the output of the RowHeader with customized current
 
 
 
-{ ![](Features_images/Features_img185.png) | markdownify }
+{{ '![](Features_images/Features_img185.png)' | markdownify }}
 {:.image }
 
 
@@ -21323,7 +21323,7 @@ You can enable the ToolTip for columns by setting the GridColumn.ShowToolTip pro
 
                        ShowRowHeader="True">
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
         <syncfusion:GridTextColumn HeaderText="Customer ID"
 
@@ -21341,9 +21341,9 @@ You can enable the ToolTip for columns by setting the GridColumn.ShowToolTip pro
 
                                       MappingName="UnitPrice"/>
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt; 
+</syncfusion:SfDataGrid> 
 
 
 
@@ -21351,7 +21351,7 @@ The following screenshot shows the default ToolTip of a cell with text in the Po
 
 
 
-{ ![](Features_images/Features_img186.png) | markdownify }
+{{ '![](Features_images/Features_img186.png)' | markdownify }}
 {:.image }
 
 
@@ -21359,7 +21359,7 @@ _Default ToolTip of a cell with text in the Popup_
 
 Likewise, you can enable the default ToolTip for the Header by setting the GridColumn.ShowHeaderToolTip property. 
 
-{ ![](Features_images/Features_img187.png) | markdownify }
+{{ '![](Features_images/Features_img187.png)' | markdownify }}
 {:.image }
 
 
@@ -21383,27 +21383,27 @@ You can customize the default style of the ToolTip to be shown on the GridCell o
 
 
 
-&lt;!-- Style Customization For ToolTip Control.--&gt;
+<!-- Style Customization For ToolTip Control.-->
 
 
 
-&lt;Style TargetType="ToolTip"&gt;
+<Style TargetType="ToolTip">
 
-    &lt;Setter Property="FontFamily" Value=" Segoe UI" /&gt;
+    <Setter Property="FontFamily" Value=" Segoe UI" />
 
-    &lt;Setter Property="Foreground" Value="#FF2A2A2A" /&gt;
+    <Setter Property="Foreground" Value="#FF2A2A2A" />
 
-    &lt;Setter Property="FontSize" Value="12" /&gt;
+    <Setter Property="FontSize" Value="12" />
 
-    &lt;Setter Property="BorderBrush" Value="#FF7fd0de" /&gt;
+    <Setter Property="BorderBrush" Value="#FF7fd0de" />
 
-    &lt;Setter Property="BorderThickness" Value="1" /&gt;
+    <Setter Property="BorderThickness" Value="1" />
 
-    &lt;Setter Property="Background" Value="WhiteSmoke"/&gt;
+    <Setter Property="Background" Value="WhiteSmoke"/>
 
-    &lt;Setter Property="Placement" Value="Mouse"/&gt;
+    <Setter Property="Placement" Value="Mouse"/>
 
-&lt;/Style&gt;
+</Style>
 
 
 
@@ -21411,7 +21411,7 @@ The following screenshot shows the customized default ToolTip of the SfDataGrid.
 
 
 
-{ ![](Features_images/Features_img188.png) | markdownify }
+{{ '![](Features_images/Features_img188.png)' | markdownify }}
 {:.image }
 
 
@@ -21426,7 +21426,7 @@ You can customize the default ToolTip by loading the Data Template as its conten
 <table>
 <tr>
 <td>
-[XAML]<!-- Need to add this code in Resources.     Defines the DataTemplate with Key – For GridCellControl-->&lt;DataTemplate x:Key="customToolTip"&gt;    <Image Width="100"           Height="100"           Source="{Binding CustomerID,                             Converter={StaticResource stringToImageConverter}}" />&lt;/DataTemplate&gt;<!-- Need to add this code in Resources.     Defines the DataTemplate with Key - GridHeaderCellControl.-->&lt;DataTemplate x:Key="headerCustomToolTip"&gt;    &lt;Grid&gt;        &lt;Grid.ColumnDefinitions&gt;            &lt;ColumnDefinition Width="*" /&gt;            &lt;ColumnDefinition Width="Auto" /&gt;        &lt;/Grid.ColumnDefinitions&gt;        <Image Width="20"                Height="20"                Source="App.ico" />        &lt;TextBlock Grid.Column="1" Text="{Binding MappingName}" /&gt;    &lt;/Grid&gt;&lt;/DataTemplate&gt;<!-- Defines Grid Columns     Use the key to column’s ToolTipTemplate property via binding in a                        StaticResource to show ToolTip on GridCell.     Use the key to column’s HeaderToolTipTemplate property via binding in a        StaticResource to show ToolTip on GridHeaderCell.--><syncfusion:SfDataGrid AutoGenerateColumns="False"                                       ItemsSource="{Binding OrderList}"                       LiveDataUpdateMode="AllowDataShaping"                       ShowRowHeader="True">    &lt;syncfusion:SfDataGrid.Columns&gt;        <syncfusion:GridTextColumn HeaderText="Customer ID"                                   MappingName="CustomerID"                                   ShowHeaderToolTip="True"                                                                            HeaderToolTipTemplate="{StaticResource headerCustomToolTip}"                                   ToolTipTemplate="{StaticResource customToolTip }"                                   ShowToolTip="True" />        <syncfusion:GridTextColumn HeaderText="Contact Number"                                   MappingName="ContactNumber"/>                 <syncfusion:GridNumericColumn HeaderText="Quantity"                                      MappingName="UnitPrice"/>    &lt;/syncfusion:SfDataGrid.Columns&gt;&lt;/syncfusion:SfDataGrid&gt;</td></tr>
+[XAML]<!-- Need to add this code in Resources.     Defines the DataTemplate with Key – For GridCellControl--><DataTemplate x:Key="customToolTip">    <Image Width="100"           Height="100"           Source="{Binding CustomerID,                             Converter={StaticResource stringToImageConverter}}" /></DataTemplate><!-- Need to add this code in Resources.     Defines the DataTemplate with Key - GridHeaderCellControl.--><DataTemplate x:Key="headerCustomToolTip">    <Grid>        <Grid.ColumnDefinitions>            <ColumnDefinition Width="*" />            <ColumnDefinition Width="Auto" />        </Grid.ColumnDefinitions>        <Image Width="20"                Height="20"                Source="App.ico" />        <TextBlock Grid.Column="1" Text="{Binding MappingName}" />    </Grid></DataTemplate><!-- Defines Grid Columns     Use the key to column’s ToolTipTemplate property via binding in a                        StaticResource to show ToolTip on GridCell.     Use the key to column’s HeaderToolTipTemplate property via binding in a        StaticResource to show ToolTip on GridHeaderCell.--><syncfusion:SfDataGrid AutoGenerateColumns="False"                                       ItemsSource="{Binding OrderList}"                       LiveDataUpdateMode="AllowDataShaping"                       ShowRowHeader="True">    <syncfusion:SfDataGrid.Columns>        <syncfusion:GridTextColumn HeaderText="Customer ID"                                   MappingName="CustomerID"                                   ShowHeaderToolTip="True"                                                                            HeaderToolTipTemplate="{StaticResource headerCustomToolTip}"                                   ToolTipTemplate="{StaticResource customToolTip }"                                   ShowToolTip="True" />        <syncfusion:GridTextColumn HeaderText="Contact Number"                                   MappingName="ContactNumber"/>                 <syncfusion:GridNumericColumn HeaderText="Quantity"                                      MappingName="UnitPrice"/>    </syncfusion:SfDataGrid.Columns></syncfusion:SfDataGrid></td></tr>
 <tr>
 <td>
 </td></tr>
@@ -21437,7 +21437,7 @@ The following screenshot shows the customized ToolTip loaded with image control 
 
 
 
-{ ![](Features_images/Features_img189.png) | markdownify }
+{{ '![](Features_images/Features_img189.png)' | markdownify }}
 {:.image }
 
 
@@ -21445,7 +21445,7 @@ _ToolTip loaded with image_
 
 The following screenshot shows the customized ToolTip of the Header loaded in the Popup.
 
-{ ![](Features_images/Features_img190.png) | markdownify }
+{{ '![](Features_images/Features_img190.png)' | markdownify }}
 {:.image }
 
 
@@ -21473,31 +21473,31 @@ The following XAML has two DataTemplates defined to set for the ToolTip.
 
 
 
-&lt;DataTemplate x:Key="ToolTip1"&gt;
+<DataTemplate x:Key="ToolTip1">
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;Rectangle Fill="Transparent"/&gt;
+        <Rectangle Fill="Transparent"/>
 
-        &lt;TextBlock Text="{Binding UnitPrice}" FontWeight="Bold"/&gt;
+        <TextBlock Text="{Binding UnitPrice}" FontWeight="Bold"/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
-&lt;DataTemplate x:Key="ToolTip2"&gt;
+<DataTemplate x:Key="ToolTip2">
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;Rectangle Fill="Transparent"/&gt;
+        <Rectangle Fill="Transparent"/>
 
-        &lt;TextBlock Text="{Binding UnitPrice}" FontStyle="Italic"/&gt;
+        <TextBlock Text="{Binding UnitPrice}" FontStyle="Italic"/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
@@ -21513,11 +21513,11 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 
     private DataTemplate _defaultTemplate;
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Gets or sets DefaultTemplate.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
     public DataTemplate DefaultTemplate
 
@@ -21533,11 +21533,11 @@ public class ToolTipTemplateSelector : DataTemplateSelector
 
     private DataTemplate _alternateTemplate;
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Gets or Sets AlternateTemplate.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
     public DataTemplate AlternateTemplate
 
@@ -21627,7 +21627,7 @@ The above template selector sets the GridColumn.ToolTipTemplateSelector.
 
                        ShowRowHeader="True">
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
         <syncfusion:GridTextColumn HeaderText="Customer ID"
 
@@ -21643,7 +21643,7 @@ The above template selector sets the GridColumn.ToolTipTemplateSelector.
 
                                       MappingName="UnitPrice">                             
 
-           &lt;syncfusion:GridNumericColumn.ToolTipTemplateSelector&gt;
+           <syncfusion:GridNumericColumn.ToolTipTemplateSelector>
 
                       <local:ToolTipTemplateSelector  
 
@@ -21651,19 +21651,19 @@ The above template selector sets the GridColumn.ToolTipTemplateSelector.
 
                             DefaultTemplate="{StaticResource ToolTip1}" />                             
 
-           &lt;/syncfusion:GridNumericColumn.ToolTipTemplateSelector&gt;
+           </syncfusion:GridNumericColumn.ToolTipTemplateSelector>
 
-        &lt;/syncfusion:GridNumericColumn&gt;
+        </syncfusion:GridNumericColumn>
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
 The following screenshot shows the different ToolTips of the cells.
 
-{ ![](Features_images/Features_img191.png) | markdownify }
+{{ '![](Features_images/Features_img191.png)' | markdownify }}
 {:.image }
 
 
@@ -21689,17 +21689,17 @@ In the following XAML code, the same DataTemplate is set to all the columns to d
 
 
 
-&lt;DataTemplate x:Key="genericToolTip"&gt;
+<DataTemplate x:Key="genericToolTip">
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;Rectangle Fill="Transparent"/&gt;
+        <Rectangle Fill="Transparent"/>
 
-        &lt;TextBlock Text="{Binding Path=Value}"/&gt;
+        <TextBlock Text="{Binding Path=Value}"/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
@@ -21719,7 +21719,7 @@ In the following XAML code, the same DataTemplate is set to all the columns to d
 
                        ShowRowHeader="True">
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
         <syncfusion:GridTextColumn HeaderText="Customer ID"
 
@@ -21755,13 +21755,13 @@ In the following XAML code, the same DataTemplate is set to all the columns to d
 
                                       ShowToolTip="True" />
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
-{ ![](Features_images/Features_img192.png) | markdownify }
+{{ '![](Features_images/Features_img192.png)' | markdownify }}
 {:.image }
 
 
@@ -21781,11 +21781,11 @@ By default, the contextmenu of Grid does not have any instance, and it is initia
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-&lt;local:ViewModel/&gt;
+<local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -21795,27 +21795,27 @@ GridContextMenuOpening="datagrid_GridContextMenuOpening"
 
 ItemsSource="{Binding GDCSource}">
 
-&lt;syncfusion:SfDataGrid.RecordContextMenu&gt;
+<syncfusion:SfDataGrid.RecordContextMenu>
 
-&lt;ContextMenu /&gt;
+<ContextMenu />
 
-&lt;/syncfusion:SfDataGrid.RecordContextMenu&gt;
+</syncfusion:SfDataGrid.RecordContextMenu>
 
-&lt;syncfusion:SfDataGrid.Columns&gt;
+<syncfusion:SfDataGrid.Columns>
 
-&lt;syncfusion:GridTextColumn MappingName="EmployeeId" /&gt;
+<syncfusion:GridTextColumn MappingName="EmployeeId" />
 
-&lt;syncfusion:GridTextColumn MappingName="EmployeeName" /&gt;
+<syncfusion:GridTextColumn MappingName="EmployeeName" />
 
-&lt;syncfusion:GridTextColumn MappingName="EmployeeDesignation" /&gt;
+<syncfusion:GridTextColumn MappingName="EmployeeDesignation" />
 
-&lt;syncfusion:GridTextColumn MappingName="EmployeeArea" /&gt;
+<syncfusion:GridTextColumn MappingName="EmployeeArea" />
 
-&lt;syncfusion:GridTextColumn MappingName="EmployeeGender" /&gt;
+<syncfusion:GridTextColumn MappingName="EmployeeGender" />
 
-&lt;/syncfusion:SfDataGrid.Columns&gt;
+</syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -21881,7 +21881,7 @@ private void datagrid_GridContextMenuOpening(object sender, Syncfusion.UI.Xa
 
 The Menu Items are changed at Execute time according to the column position.
 
-{ ![](Features_images/Features_img193.png) | markdownify }
+{{ '![](Features_images/Features_img193.png)' | markdownify }}
 {:.image }
 
 
@@ -21889,7 +21889,7 @@ _Menu Items changed at Execute time according to column position_
 
 
 
-{ ![](Features_images/Features_img194.png) | markdownify }
+{{ '![](Features_images/Features_img194.png)' | markdownify }}
 {:.image }
 
 
@@ -21905,21 +21905,21 @@ You can also display row index in the row header instead of indicating the statu
 
  [XAML]
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;Style TargetType="syncfusion:GridRowHeaderCell"&gt;
+<Style TargetType="syncfusion:GridRowHeaderCell">
 
-    &lt;Setter Property="Background" Value="Transparent" /&gt;
+    <Setter Property="Background" Value="Transparent" />
 
-    &lt;Setter Property="BorderBrush" Value="#FF7fd0de" /&gt;
+    <Setter Property="BorderBrush" Value="#FF7fd0de" />
 
-    &lt;Setter Property="BorderThickness" Value="0,0,1,1" /&gt;
+    <Setter Property="BorderThickness" Value="0,0,1,1" />
 
-    &lt;Setter Property="Template"&gt;
+    <Setter Property="Template">
 
-        &lt;Setter.Value&gt;
+        <Setter.Value>
 
-            &lt;ControlTemplate TargetType="syncfusion:GridRowHeaderCell"&gt;
+            <ControlTemplate TargetType="syncfusion:GridRowHeaderCell">
 
                 <Border x:Name="PART_RowHeaderCellBorder"
 
@@ -21933,17 +21933,17 @@ You can also display row index in the row header instead of indicating the statu
 
                         Text="{Binding Path=RowIndex, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}" />
 
-                &lt;/Border&gt;
+                </Border>
 
-            &lt;/ControlTemplate&gt;
+            </ControlTemplate>
 
-        &lt;/Setter.Value&gt;
+        </Setter.Value>
 
-    &lt;/Setter&gt;
+    </Setter>
 
-&lt;/Style&gt;
+</Style>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -21951,7 +21951,7 @@ You can also display row index in the row header instead of indicating the statu
 
 The following screenshot displays a row index in row header.
 
-{ ![](Features_images/Features_img195.png) | markdownify }
+{{ '![](Features_images/Features_img195.png)' | markdownify }}
 {:.image }
 
 
@@ -22004,11 +22004,11 @@ The following code example illustrates on how to use Serialization and Deseriali
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-&lt;local:ViewModel/&gt;
+<local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 <syncfusion:SfDataGrid x:Name="sfGrid" 
 
@@ -22022,15 +22022,15 @@ The following code example illustrates on how to use Serialization and Deseriali
 
                          ShowGroupDropArea="True">
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
-        &lt;syncfusion:GridTextColumn MappingName="EmployeeID" /&gt;
+        <syncfusion:GridTextColumn MappingName="EmployeeID" />
 
         <syncfusion:GridTextColumn HeaderText="Employee Name" 
 
         MappingName="Name" />
 
-        &lt;syncfusion:GridTextColumn MappingName="Gender" /&gt;
+        <syncfusion:GridTextColumn MappingName="Gender" />
 
         <syncfusion:GridTextColumn HeaderText="Designation"
 
@@ -22040,33 +22040,33 @@ The following code example illustrates on how to use Serialization and Deseriali
 
         MappingName="MaritalStatus" />
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
-&lt;StackPanel&gt;
+<StackPanel>
 
-    &lt;StackPanel&gt;
+    <StackPanel>
 
-        &lt;TextBlock Margin="5" Text="Serialize the DataGrid" /&gt;
+        <TextBlock Margin="5" Text="Serialize the DataGrid" />
 
         <Button Width="150" x:Name="serializebtn" Margin="5"
 
         Click="OnSerializeDataGrid" Content="Serialize" />
 
-    &lt;/StackPanel&gt;
+    </StackPanel>
 
-    &lt;StackPanel&gt;
+    <StackPanel>
 
-        &lt;TextBlock Margin="5" Text="Deserialize the DataGrid" /&gt;
+        <TextBlock Margin="5" Text="Deserialize the DataGrid" />
 
         <Button Width="150" x:Name="deserializebtn" Margin="5"
 
         Click="OnDeserializeDataGrid" Content="Deserialize" />
 
-    &lt;/StackPanel&gt;
+    </StackPanel>
 
-&lt;/StackPanel&gt;
+</StackPanel>
 
 
 
@@ -22146,7 +22146,7 @@ The following screenshot displays the output.
 
 
 
-{ ![IMG_29052014_165322](Features_images/Features_img196.png) | markdownify }
+{{ '![IMG_29052014_165322](Features_images/Features_img196.png)' | markdownify }}
 {:.image }
 
 
@@ -22432,11 +22432,11 @@ this.dataGrid.SerializationController = new SerializationControllerExt(this.data
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// SerializationControllerExt class is the custom SerializationController
 
-/// &lt;/summary&gt;
+/// </summary>
 
 
 
@@ -22454,11 +22454,11 @@ public class SerializationControllerExt : SerializationController
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Store grid settings - properties, columns,   sortdescriptions,groupdescriptions, stacked headers, filter predicates, summaries
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         /// <param name="serializeOptions">options for serializing grid</param>
 
@@ -22474,11 +22474,11 @@ public class SerializationControllerExt : SerializationController
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Restore grid properties,columns,sortdescriptons,groupdescriptions,filter predicates,stacked headers,summaries
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         /// <param name="serializableDataGrid">serializableDataGrid instance</param>
 
@@ -22526,13 +22526,13 @@ By default, the columns that exist in the grid when you apply serialization alon
 
 
 
-                        &lt;syncfusion:SfDataGrid.Columns&gt;
+                        <syncfusion:SfDataGrid.Columns>
 
-                            &lt;syncfusion:GridTextColumn HeaderText="Product ID"   MappingName="ProductID" /&gt;
+                            <syncfusion:GridTextColumn HeaderText="Product ID"   MappingName="ProductID" />
 
-                            &lt;syncfusion:GridTextColumn HeaderText="Product Name" MappingName="ProductName" /&gt;
+                            <syncfusion:GridTextColumn HeaderText="Product Name" MappingName="ProductName" />
 
-                            &lt;syncfusion:GridTextColumn HeaderText="Quantity Per Unit" MappingName="QuantityPerUnit" /&gt;
+                            <syncfusion:GridTextColumn HeaderText="Quantity Per Unit" MappingName="QuantityPerUnit" />
 
                             <syncfusion:GridTextColumn HeaderText="Price"
 
@@ -22540,9 +22540,9 @@ By default, the columns that exist in the grid when you apply serialization alon
 
                                                        TextAlignment="Right" />
 
-                            &lt;syncfusion:GridTextColumn HeaderText="Units In Stock" MappingName="UnitsInStock" /&gt;
+                            <syncfusion:GridTextColumn HeaderText="Units In Stock" MappingName="UnitsInStock" />
 
-                        &lt;/syncfusion:SfDataGrid.Columns&gt;
+                        </syncfusion:SfDataGrid.Columns>
 
 
 
@@ -22562,7 +22562,7 @@ The following screenshot illustrates the grid after deserialization.
 
 
 
-{ ![](Features_images/Features_img197.png) | markdownify }
+{{ '![](Features_images/Features_img197.png)' | markdownify }}
 {:.image }
 
 
@@ -22580,11 +22580,11 @@ dataGrid.SerializationController = new SerializationControllerExt(dataGrid);
 
 
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// SerializationControllerExt class is the custom SerializationController
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
     public class SerializationControllerExt : SerializationController
 
@@ -22600,13 +22600,13 @@ dataGrid.SerializationController = new SerializationControllerExt(dataGrid);
 
         }
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Restore grid columns from serializableDataGrid
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// &lt;param name="serializableDataGrid"&gt;&lt;/param&gt;
+        /// <param name="serializableDataGrid"></param>
 
 
 
@@ -22636,7 +22636,7 @@ dataGrid.SerializationController = new SerializationControllerExt(dataGrid);
 
 The following screenshot illustrates the output image after deserializing grid using custom serialization controller.
 
-{ ![](Features_images/Features_img198.png) | markdownify }
+{{ '![](Features_images/Features_img198.png)' | markdownify }}
 {:.image }
 
 
@@ -22702,11 +22702,11 @@ Consider, the grid contains the following columns. Here DatePickerColumn is cust
 
                                ItemsSource="{Binding Path=DataItems}>
 
-            &lt;Syncfusion:SfDataGrid.Columns&gt;
+            <Syncfusion:SfDataGrid.Columns>
 
 
 
-                &lt;Syncfusion:GridTextColumn AllowEditing="True" MappingName="ItemNumber"/&gt;
+                <Syncfusion:GridTextColumn AllowEditing="True" MappingName="ItemNumber"/>
 
                 <demo:DatePickerColumn AllowEditing="True"
 
@@ -22716,9 +22716,9 @@ Consider, the grid contains the following columns. Here DatePickerColumn is cust
 
                                        MappingName="Date" />
 
-            &lt;/Syncfusion:SfDataGrid.Columns&gt;
+            </Syncfusion:SfDataGrid.Columns>
 
-&lt;/Syncfusion:SfDataGrid&gt;
+</Syncfusion:SfDataGrid>
 
 
 
@@ -22754,11 +22754,11 @@ dataGrid.SerializationController = new SerializationControllerExt(dataGrid);
 
 
 
-   /// &lt;summary&gt;
+   /// <summary>
 
    /// SerializationControllerExt class is the custom SerializationController
 
-   /// &lt;/summary&gt;
+   /// </summary>
 
 public class SerializationControllerExt : SerializationController
 
@@ -22772,11 +22772,11 @@ public class SerializationControllerExt : SerializationController
 
         }
 
-       /// &lt;summary&gt;
+       /// <summary>
 
         /// Get grid column instance for deserialization
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         /// <param name="serializableColumn">serializableColumn</param>
 
@@ -22796,11 +22796,11 @@ public class SerializationControllerExt : SerializationController
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Get serializable grid column instance
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         /// <param name="column">grid column</param>
 
@@ -22828,11 +22828,11 @@ public class SerializationControllerExt : SerializationController
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Store Grid Column Properties to serializable grid column
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         /// <param name="column">grid column</param>
 
@@ -22854,11 +22854,11 @@ public class SerializationControllerExt : SerializationController
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Restore grid column properties from SerializableGridColumn
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         /// <param name="serializableColumn">serializableColumn</param>
 
@@ -22876,13 +22876,13 @@ public class SerializationControllerExt : SerializationController
 
         }
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Get known types of serializable columns for serialization and deserialization
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// &lt;returns&gt;&lt;/returns&gt;
+        /// <returns></returns>
 
         public override Type[] KnownTypes()
 
@@ -23030,11 +23030,11 @@ The following code example shows you how to use Printing feature in SfDataGrid w
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-&lt;local:ViewModel/&gt;
+<local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -23088,7 +23088,7 @@ The following screenshot displays the SfDataGrid in print preview mode.
 
 
 
-{ ![](Features_images/Features_img199.png) | markdownify }
+{{ '![](Features_images/Features_img199.png)' | markdownify }}
 {:.image }
 
 
@@ -23203,13 +23203,13 @@ The following code example shows you how a CustomPrintManager is developed using
 
         }
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Invokes to Get the column width for the corresponding Mapping name.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// &lt;param name="mappingName"&gt;&lt;/param&gt;
+        /// <param name="mappingName"></param>
 
         /// <returns>double</returns>
 
@@ -23225,15 +23225,15 @@ The following code example shows you how a CustomPrintManager is developed using
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Invokes to Get the Column's List that need to be printed.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// &lt;returns&gt;&lt;/returns&gt;
+        /// <returns></returns>
 
-        /// <remarks>List<string>&lt;/remarks&gt;
+        /// <remarks>List<string></remarks>
 
         protected override System.Collections.Generic.List<string> GetColumnNames()
 
@@ -23261,13 +23261,13 @@ The following code example shows you how a CustomPrintManager is developed using
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Invokes to get the Column's Padding corresponding to the column's Mapping name.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// &lt;param name="mappingName"&gt;&lt;/param&gt;
+        /// <param name="mappingName"></param>
 
         /// <returns>Thickness</returns>
 
@@ -23287,13 +23287,13 @@ The following code example shows you how a CustomPrintManager is developed using
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Invokes to get the column's Header Text
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// &lt;param name="mappingName"&gt;&lt;/param&gt;
+        /// <param name="mappingName"></param>
 
         /// <returns>string</returns>
 
@@ -23311,13 +23311,13 @@ The following code example shows you how a CustomPrintManager is developed using
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Invokes to get the Column Text alignment corresponding with the Mapping name.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// &lt;param name="mappingName"&gt;&lt;/param&gt;
+        /// <param name="mappingName"></param>
 
         /// <returns>TextAlignment</returns>
 
@@ -23359,7 +23359,7 @@ The following screenshot displays you how SfDataGrid is printed.
 
 
 
-{ ![](Features_images/Features_img200.png) | markdownify }
+{{ '![](Features_images/Features_img200.png)' | markdownify }}
 {:.image }
 
 
@@ -23377,21 +23377,21 @@ The following code example illustrates how to set Header and Footer in Printable
 
 [XAML]
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-      &lt;DataTemplate x:Key="headertemplate"&gt;
+      <DataTemplate x:Key="headertemplate">
 
-         &lt;TextBlock Text="OrderDetails" Foreground="Blue" FontSize="25"/&gt;
+         <TextBlock Text="OrderDetails" Foreground="Blue" FontSize="25"/>
 
-      &lt;/DataTemplate&gt;
+      </DataTemplate>
 
-      &lt;DataTemplate x:Key="footertemplate"&gt;
+      <DataTemplate x:Key="footertemplate">
 
-         &lt;Image Width="200" Height="50" Source="../Images/syncfusion.jpg"/&gt;
+         <Image Width="200" Height="50" Source="../Images/syncfusion.jpg"/>
 
-      &lt;/DataTemplate&gt;
+      </DataTemplate>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -23423,7 +23423,7 @@ The following screenshot displays the output for Header and Footer applied in Pr
 
 
 
-{ ![](Features_images/Features_img201.png) | markdownify }
+{{ '![](Features_images/Features_img201.png)' | markdownify }}
 {:.image }
 
 
@@ -23467,7 +23467,7 @@ Description</td></tr>
 <td>
 ExportToExcel</td><td>
 ExportToExcel(ICollectionViewAdv,excelExportingOptions)</td><td>
-Exports data to Excel and returns an ExcelEngine with ExcelExportingOptions{{ '_-_'  | markdownify }}that is used to set the Exporting options.</td></tr>
+Exports data to Excel and returns an ExcelEngine with ExcelExportingOptions{{{ ''_-_' ' | markdownify }}}that is used to set the Exporting options.</td></tr>
 <tr>
 <td>
 ExportToExcel</td><td>
@@ -23552,7 +23552,7 @@ The following screenshot displays the output for the DataGrid.
 
 
 
-{ ![exportexcel](Features_images/Features_img202.png) | markdownify }
+{{ '![exportexcel](Features_images/Features_img202.png)' | markdownify }}
 {:.image }
 
 
@@ -23562,7 +23562,7 @@ The following screenshot displays the exported excel sheet.
 
 
 
-{ ![exporttoexcelsheet](Features_images/Features_img203.png) | markdownify }
+{{ '![exporttoexcelsheet](Features_images/Features_img203.png)' | markdownify }}
 {:.image }
 
 
@@ -23583,7 +23583,7 @@ DefaultValue</td></tr>
 <td>
 AllowOutlining</td><td>
 Boolean</td><td>
-Specifies whether the groups exports with expand or collapse options or not.Indent space is not maintained when AllowOutlining is set to ‘true’. Default value is ‘{{ '_true_' | markdownify }}’.When the Grid contains the Details View definition, the AllowOutlining is set to ‘true’ internally.</td><td>
+Specifies whether the groups exports with expand or collapse options or not.Indent space is not maintained when AllowOutlining is set to ‘true’. Default value is ‘{{{ ''_true_'' | markdownify }}}’.When the Grid contains the Details View definition, the AllowOutlining is set to ‘true’ internally.</td><td>
  True</td></tr>
 <tr>
 <td>
@@ -23854,7 +23854,7 @@ The following screenshot displays the output for DataGrid.
 
 
 
-{ ![exporttoexcehandlergrid](Features_images/Features_img204.png) | markdownify }
+{{ '![exporttoexcehandlergrid](Features_images/Features_img204.png)' | markdownify }}
 {:.image }
 
 
@@ -23864,7 +23864,7 @@ The following screenshot displays the Exported excel sheet.
 
 
 
-{ ![exporthandlerexcel](Features_images/Features_img205.png) | markdownify }
+{{ '![exporthandlerexcel](Features_images/Features_img205.png)' | markdownify }}
 {:.image }
 
 
@@ -23967,7 +23967,7 @@ The following screenshot displays the output for DataGrid.
 
 
 
-{ ![exportcelleventgrid](Features_images/Features_img206.png) | markdownify }
+{{ '![exportcelleventgrid](Features_images/Features_img206.png)' | markdownify }}
 {:.image }
 
 
@@ -23975,7 +23975,7 @@ _Customized font using GridCellExcelExportingHandler_
 
 The following screenshot displays the Exported excel sheet,
 
-{ ![exportcellexcel](Features_images/Features_img207.png) | markdownify }
+{{ '![exportcellexcel](Features_images/Features_img207.png)' | markdownify }}
 {:.image }
 
 
@@ -24055,7 +24055,7 @@ The following screenshot displays the output for DataGrid.
 
 
 
-{ ![childwithgrid](Features_images/Features_img208.png) | markdownify }
+{{ '![childwithgrid](Features_images/Features_img208.png)' | markdownify }}
 {:.image }
 
 
@@ -24065,7 +24065,7 @@ The following screenshot displays the exported excel sheet,
 
 
 
-{ ![expotchildexcel](Features_images/Features_img209.png) | markdownify }
+{{ '![expotchildexcel](Features_images/Features_img209.png)' | markdownify }}
 {:.image }
 
 
@@ -24184,7 +24184,7 @@ Determines whether the stacked headers are exported or not</td><td>
 <td>
 ExportDetailsView</td><td>
  Boolean</td><td>
-Determines whether the Details view is exported or not.> {{ '_Note: When it is set to ‘true’, it exports the details view that are expanded._' | markdownify }}> {{ '_Limitation: While exporting Details view, FitAllColumnsInOnePage is set to ‘true’ internally as horizontal pagination is not supported for Nested Grid._' | markdownify }}> </td><td>
+Determines whether the Details view is exported or not.> {{{ ''_Note: When it is set to ‘true’, it exports the details view that are expanded._'' | markdownify }}}> {{{ ''_Limitation: While exporting Details view, FitAllColumnsInOnePage is set to ‘true’ internally as horizontal pagination is not supported for Nested Grid._'' | markdownify }}}> </td><td>
  False</td></tr>
 <tr>
 <td>
@@ -24289,7 +24289,7 @@ The following screenshot displays the output for DataGrid.
 
 
 
-{ ![](Features_images/Features_img210.png) | markdownify }
+{{ '![](Features_images/Features_img210.png)' | markdownify }}
 {:.image }
 
 
@@ -24297,7 +24297,7 @@ _Exporting SfDataGrid into PDF using the ExportToPdf method._
 
 The following screenshot displays the exported Pdf file.
 
-{ ![](Features_images/Features_img211.png) | markdownify }
+{{ '![](Features_images/Features_img211.png)' | markdownify }}
 {:.image }
 
 
@@ -24399,7 +24399,7 @@ The following screenshot displays the output for DataGrid.
 
 
 
-{ ![](Features_images/Features_img212.png) | markdownify }
+{{ '![](Features_images/Features_img212.png)' | markdownify }}
 {:.image }
 
 
@@ -24407,7 +24407,7 @@ _Cell styles based on the cell type using GridPdfExportingEventHandler._
 
 The following screenshot displays the exported Pdf file.
 
-{ ![](Features_images/Features_img213.png) | markdownify }
+{{ '![](Features_images/Features_img213.png)' | markdownify }}
 {:.image }
 
 
@@ -24523,7 +24523,7 @@ The following screenshot displays the output for DataGrid.
 
 
 
-{ ![](Features_images/Features_img214.png) | markdownify }
+{{ '![](Features_images/Features_img214.png)' | markdownify }}
 {:.image }
 
 
@@ -24531,7 +24531,7 @@ _Customized PDFGridCell using GridCellPdfExportingEventhandler._
 
 The following screenshot displays the exported PDF file.
 
-{ ![](Features_images/Features_img215.png) | markdownify }
+{{ '![](Features_images/Features_img215.png)' | markdownify }}
 {:.image }
 
 
@@ -24617,7 +24617,7 @@ static void ChildGridPDFExportingEventhandler(object sender, ChildGridPdfExporti
 
 The following screenshot displays the output for DataGrid.
 
-{ ![](Features_images/Features_img216.png) | markdownify }
+{{ '![](Features_images/Features_img216.png)' | markdownify }}
 {:.image }
 
 
@@ -24627,7 +24627,7 @@ The following screenshot displays the exported PDF file.
 
 
 
-{ ![](Features_images/Features_img217.png) | markdownify }
+{{ '![](Features_images/Features_img217.png)' | markdownify }}
 {:.image }
 
 
@@ -24704,7 +24704,7 @@ The following screenshot displays you the exported PDF file.
 
 
 
-{ ![](Features_images/Features_img218.png) | markdownify }
+{{ '![](Features_images/Features_img218.png)' | markdownify }}
 {:.image }
 
 
@@ -24814,7 +24814,7 @@ The following screenshot displays the output for the above code,
 
 
 
-{ ![](Features_images/Features_img219.png) | markdownify }
+{{ '![](Features_images/Features_img219.png)' | markdownify }}
 {:.image }
 
 
@@ -24839,7 +24839,7 @@ The following steps illustrate how to implement the Localization support in your
 
 
 
-{ ![Untitled](Features_images/Features_img220.png) | markdownify }
+{{ '![Untitled](Features_images/Features_img220.png)' | markdownify }}
 {:.image }
 
 
@@ -24849,7 +24849,7 @@ _Adding default resource file in resource folder_
 
 
 
-{ ![image2](Features_images/Features_img221.png) | markdownify }
+{{ '![image2](Features_images/Features_img221.png)' | markdownify }}
 {:.image }
 
 
@@ -24885,7 +24885,7 @@ The following screenshot displays the output.
 
 
 
-{ ![](Features_images/Features_img222.png) | markdownify }
+{{ '![](Features_images/Features_img222.png)' | markdownify }}
 {:.image }
 
 
@@ -25232,7 +25232,7 @@ public MainWindow()
 
 
 
-{ ![test1](Features_images/Features_img223.png) | markdownify }
+{{ '![test1](Features_images/Features_img223.png)' | markdownify }}
 {:.image }
 
 
@@ -25240,7 +25240,7 @@ _Add New Project_
 
 4. After you create a new Coded UI project, a CUIT file is added automatically and the Generate Code dialog box appears. In this, choose Record actions, edit UI map or add assertions.
 
-{ ![Record](Features_images/Features_img224.png) | markdownify }
+{{ '![Record](Features_images/Features_img224.png)' | markdownify }}
 {:.image }
 
 
@@ -25250,7 +25250,7 @@ _Generate Code for Coded UI Test_
 
 
 
-{ ![codedui](Features_images/Features_img225.png) | markdownify }
+{{ '![codedui](Features_images/Features_img225.png)' | markdownify }}
 {:.image }
 
 
@@ -25258,7 +25258,7 @@ _CodedUITestBuilder_
 
 6. You can also open the CodedUITestBuilder from existing Coded UI project by right clicking on the CodedUITestMethod1 in CUIT file and clicking the Generate Code For Coded UI Test as shown in the following screenshot. You can see the same CodedUITestBuilder in the bottom right corner of the window.
 
-{ ![test2](Features_images/Features_img226.png) | markdownify }
+{{ '![test2](Features_images/Features_img226.png)' | markdownify }}
 {:.image }
 
 
@@ -25269,7 +25269,7 @@ _CodedUITestMethod_
 
 
 
-{ ![gridcell](Features_images/Features_img227.png) | markdownify }
+{{ '![gridcell](Features_images/Features_img227.png)' | markdownify }}
 {:.image }
 
 
@@ -25303,7 +25303,7 @@ public void RecordedMethod1()
 
 10. You can also create an assertion to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for control (Cell) is now listed in the Assertion dialog box. You can add assertion by clicking the Generate Code button in CodedUITestBuilder.
 
-{ ![Untitled](Features_images/Features_img228.png) | markdownify }
+{{ '![Untitled](Features_images/Features_img228.png)' | markdownify }}
 {:.image }
 
 
@@ -25311,7 +25311,7 @@ _Assertion window_
 
 11. After all tests and assertion are created, right-click on the Test method and click Run Tests to run the test as follows.
 
-{ ![runtest](Features_images/Features_img229.png) | markdownify }
+{{ '![runtest](Features_images/Features_img229.png)' | markdownify }}
 {:.image }
 
 
@@ -25453,7 +25453,7 @@ For UFT Installation
 
 While installing the UFT, make sure that the WPF Add-in is installed. Otherwise, install it.
 
-{ ![wpfaddin](Features_images/Features_img230.png) | markdownify }
+{{ '![wpfaddin](Features_images/Features_img230.png)' | markdownify }}
 {:.image }
 
 
@@ -25467,7 +25467,7 @@ Double-click the Syncfusion Essential Test Studio__Setup file.
 
 > _Note: Setup - Syncfusion Essential QuickTest Professional dialog box opens._
 
-{ ![image1](Features_images/Features_img231.png) | markdownify }
+{{ '![image1](Features_images/Features_img231.png)' | markdownify }}
 {:.image }
 
 
@@ -25477,7 +25477,7 @@ Click Next. The User Information dialog box opens.
 
 
 
-{ ![qtp1](Features_images/Features_img232.png) | markdownify }
+{{ '![qtp1](Features_images/Features_img232.png)' | markdownify }}
 {:.image }
 
 
@@ -25493,7 +25493,7 @@ Select the installation folder dialog box opens.
 
 
 
-{ ![qtp2](Features_images/Features_img233.png) | markdownify }
+{{ '![qtp2](Features_images/Features_img233.png)' | markdownify }}
 {:.image }
 
 
@@ -25505,7 +25505,7 @@ To install in the default location, click Next.
 
 Installation type dialog box opens.
 
-{ ![qtp3](Features_images/Features_img234.png) | markdownify }
+{{ '![qtp3](Features_images/Features_img234.png)' | markdownify }}
 {:.image }
 
 
@@ -25517,7 +25517,7 @@ Click Next. The Ready to Install dialog box opens.
 
 
 
-{ ![qtp4](Features_images/Features_img235.png) | markdownify }
+{{ '![qtp4](Features_images/Features_img235.png)' | markdownify }}
 {:.image }
 
 
@@ -25576,7 +25576,7 @@ _Note: The QuickTest Professional – Add-in Manager window is displayed._
 
 
 
-{ ![addins](Features_images/Features_img236.png) | markdownify }
+{{ '![addins](Features_images/Features_img236.png)' | markdownify }}
 {:.image }
 
 
@@ -25588,7 +25588,7 @@ _Note: The QuickTest Professional – [Start Page] window opens. There are two t
 
 
 
-{ ![startpage](Features_images/Features_img237.png) | markdownify }
+{{ '![startpage](Features_images/Features_img237.png)' | markdownify }}
 {:.image }
 
 
@@ -25598,7 +25598,7 @@ _Quick Test Professional – [Start Page]_
 
 
 
-{ ![startpage1](Features_images/Features_img238.jpeg) | markdownify }
+{{ '![startpage1](Features_images/Features_img238.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -25614,7 +25614,7 @@ _Note: You can also create a new test by selecting the Test tab in the main pane
 
 
 
-{ ![recordpage](Features_images/Features_img239.png) | markdownify }
+{{ '![recordpage](Features_images/Features_img239.png)' | markdownify }}
 {:.image }
 
 
@@ -25624,7 +25624,7 @@ _Quick Test Professional – [Test] Window showing Record tool_
 
 
 
-{ ![Web](Features_images/Features_img240.png) | markdownify }
+{{ '![Web](Features_images/Features_img240.png)' | markdownify }}
 {:.image }
 
 
@@ -25636,7 +25636,7 @@ _Note: The content under the tab is displayed._
 
 
 
-{ ![runsetting](Features_images/Features_img241.png) | markdownify }
+{{ '![runsetting](Features_images/Features_img241.png)' | markdownify }}
 {:.image }
 
 
@@ -25660,16 +25660,16 @@ _Record and Run Settings-Windows Applications_
 
 
 
-{ ![sfdatagrid](Features_images/Features_img242.png) | markdownify }
+{{ '![sfdatagrid](Features_images/Features_img242.png)' | markdownify }}
 {:.image }
 
 
 _Application Details_
 
-10. For Application field, browse and select the path of the application that has to be tested by clicking { ![](Features_images/Features_img243.png) | markdownify }
+10. For Application field, browse and select the path of the application that has to be tested by clicking {{ '![](Features_images/Features_img243.png)' | markdownify }}
 {:.image }
  button.
-11. For working folder field, browse and select the path of the working folder by clicking { ![](Features_images/Features_img244.png) | markdownify }
+11. For working folder field, browse and select the path of the working folder by clicking {{ '![](Features_images/Features_img244.png)' | markdownify }}
 {:.image }
 button.
 12. Select the Launch application check box, to launch the application immediately after clicking OK. 
@@ -25687,7 +25687,7 @@ _Note: The path of the application and working folder are displayed in the Appli
 
 
 
-{ ![qtp1](Features_images/Features_img245.png) | markdownify }
+{{ '![qtp1](Features_images/Features_img245.png)' | markdownify }}
 {:.image }
 
 
@@ -25699,7 +25699,7 @@ _Note: The recording starts. The application in the given path is opened as show
 
 
 
-{ ![qtp2](Features_images/Features_img246.png) | markdownify }
+{{ '![qtp2](Features_images/Features_img246.png)' | markdownify }}
 {:.image }
 
 
@@ -25715,7 +25715,7 @@ _Note: Run dialog box opens. The Results Location tab is selected by default._
 
 
 
-{ ![Run](Features_images/Features_img247.png) | markdownify }
+{{ '![Run](Features_images/Features_img247.png)' | markdownify }}
 {:.image }
 
 
@@ -25731,7 +25731,7 @@ This view is especially provided for the experts in VB Script. In the Expert vie
 
 The following image shows adding a script line to the Expert View pane.
 
-{ ![qtp3](Features_images/Features_img248.png) | markdownify }
+{{ '![qtp3](Features_images/Features_img248.png)' | markdownify }}
 {:.image }
 
 
@@ -25741,7 +25741,7 @@ Editing in Keyboard View
 
 The keyword view is meant for people with no expertise in VB scripts. Keyword view contains the controls used, the user-actions or operations performed, values involved in the operation and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown in the following screenshot:
 
-{ ![qtp4](Features_images/Features_img249.png) | markdownify }
+{{ '![qtp4](Features_images/Features_img249.png)' | markdownify }}
 {:.image }
 
 
@@ -25753,7 +25753,7 @@ Saving a test is as simple as saving any other document or picture. To save a te
 
 1. Click the Save button in the toolbar. The Save Test dialog box opens. 
 
-{ ![Save](Features_images/Features_img250.png) | markdownify }
+{{ '![Save](Features_images/Features_img250.png)' | markdownify }}
 {:.image }
 
 
@@ -25774,7 +25774,7 @@ _Note: The Open Test dialog box opens with a list of saved tests._
 
 
 
-{ ![Opentest](Features_images/Features_img251.png) | markdownify }
+{{ '![Opentest](Features_images/Features_img251.png)' | markdownify }}
 {:.image }
 
 
@@ -25861,7 +25861,7 @@ Int</th></tr>
 
 The following images show QTP test for SfDataGrid.
 
-{ ![](Features_images/Features_img252.png) | markdownify }
+{{ '![](Features_images/Features_img252.png)' | markdownify }}
 {:.image }
 
 
@@ -25901,7 +25901,7 @@ Void</th></tr>
 
 The following image shows the QTP Test for SfMultiColumnDropDownControl.
 
-{ ![](Features_images/Features_img253.png) | markdownify }
+{{ '![](Features_images/Features_img253.png)' | markdownify }}
 {:.image }
 
 
@@ -25927,7 +25927,7 @@ Void</th></tr>
 </table>
 
 
-{ ![QTPSfDataPager](Features_images/Features_img254.png) | markdownify }
+{{ '![QTPSfDataPager](Features_images/Features_img254.png)' | markdownify }}
 {:.image }
 
 

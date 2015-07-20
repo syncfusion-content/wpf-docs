@@ -19,53 +19,53 @@ In SfChart, you can split areas into multiple rows and columns using ChartRowDef
 
  [XAML]
 
-&lt;syncfusion:SfChart.RowDefinitions&gt;
+<syncfusion:SfChart.RowDefinitions>
 
-                &lt;syncfusion:ChartRowDefinition/&gt;
+                <syncfusion:ChartRowDefinition/>
 
-                &lt;syncfusion:ChartRowDefinition/&gt;
+                <syncfusion:ChartRowDefinition/>
 
-            &lt;/syncfusion:SfChart.RowDefinitions&gt;
-
-
-
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
-
-                &lt;syncfusion:CategoryAxis ShowGridLines="False" FontSize="20" Header="Company Name"/&gt;
-
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.RowDefinitions>
 
 
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:NumericalAxis syncfusion:ChartBase.Row="0"  Interval="40" FontSize="20" Header="Gross Revenue (cr.)"/&gt;
+                <syncfusion:CategoryAxis ShowGridLines="False" FontSize="20" Header="Company Name"/>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
-
-
-
-            &lt;syncfusion:LineSeries  Stroke="Red" StrokeThickness="3" XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
 
 
-            &lt;syncfusion:LineSeries    Stroke="Green" StrokeThickness="3" XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"&gt;
+            <syncfusion:SfChart.SecondaryAxis>
+
+                <syncfusion:NumericalAxis syncfusion:ChartBase.Row="0"  Interval="40" FontSize="20" Header="Gross Revenue (cr.)"/>
+
+            </syncfusion:SfChart.SecondaryAxis>
 
 
 
-                &lt;syncfusion:LineSeries.YAxis&gt;
+            <syncfusion:LineSeries  Stroke="Red" StrokeThickness="3" XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
-                    &lt;syncfusion:NumericalAxis syncfusion:ChartBase.Row="1" syncfusion:ChartBase.Column="0" Header="Additional Axis" PlotOffset="30"/&gt;
 
-                &lt;/syncfusion:LineSeries.YAxis&gt;
 
-            &lt;/syncfusion:LineSeries&gt;
+            <syncfusion:LineSeries    Stroke="Green" StrokeThickness="3" XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
+
+
+
+                <syncfusion:LineSeries.YAxis>
+
+                    <syncfusion:NumericalAxis syncfusion:ChartBase.Row="1" syncfusion:ChartBase.Column="0" Header="Additional Axis" PlotOffset="30"/>
+
+                </syncfusion:LineSeries.YAxis>
+
+            </syncfusion:LineSeries>
 
 
 
 The following is the output for the multiple panes.
 
-{ ![C:/Users/rachel/Desktop/wpf/1.png](Area_images/Area_img1.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/1.png](Area_images/Area_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -137,37 +137,37 @@ The following code example shows the customization of chart with different chart
 
 
 
-                &lt;syncfusion:SfChart.Header&gt;
+                <syncfusion:SfChart.Header>
 
-                    &lt;Border CornerRadius="5" BorderBrush="AntiqueWhite" BorderThickness="2"&gt;
+                    <Border CornerRadius="5" BorderBrush="AntiqueWhite" BorderThickness="2">
 
-                        &lt;TextBlock Text="Demand Comparison of Gold" FontSize="20" FontStyle="Italic" FontFamily="Arial"/&gt;
+                        <TextBlock Text="Demand Comparison of Gold" FontSize="20" FontStyle="Italic" FontFamily="Arial"/>
 
-                    &lt;/Border&gt;
+                    </Border>
 
-                &lt;/syncfusion:SfChart.Header&gt;
-
-
-
-                &lt;syncfusion:SfChart.PrimaryAxis&gt;
-
-                    &lt;syncfusion:CategoryAxis Header="Demands" FontSize="14"/&gt;
-
-                &lt;/syncfusion:SfChart.PrimaryAxis&gt;
-
-                &lt;syncfusion:SfChart.SecondaryAxis&gt;
-
-                    &lt;syncfusion:NumericalAxis Header="Values( In Tonnes)" FontSize="14"/&gt;
-
-                &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+                </syncfusion:SfChart.Header>
 
 
 
-                &lt;syncfusion:SfChart.Legend&gt;
+                <syncfusion:SfChart.PrimaryAxis>
 
-                    &lt;syncfusion:ChartLegend Visibility="Visible"/&gt;
+                    <syncfusion:CategoryAxis Header="Demands" FontSize="14"/>
 
-                &lt;/syncfusion:SfChart.Legend&gt;
+                </syncfusion:SfChart.PrimaryAxis>
+
+                <syncfusion:SfChart.SecondaryAxis>
+
+                    <syncfusion:NumericalAxis Header="Values( In Tonnes)" FontSize="14"/>
+
+                </syncfusion:SfChart.SecondaryAxis>
+
+
+
+                <syncfusion:SfChart.Legend>
+
+                    <syncfusion:ChartLegend Visibility="Visible"/>
+
+                </syncfusion:SfChart.Legend>
 
 
 
@@ -197,11 +197,11 @@ The following code example shows the customization of chart with different chart
 
 
 
-            &lt;/syncfusion:SfChart&gt;
+            </syncfusion:SfChart>
 
 
 
-{ ![C:/Users/rachel/Desktop/snaps/2.png](Area_images/Area_img2.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/snaps/2.png](Area_images/Area_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -211,21 +211,21 @@ It defines the placement pattern of bar type series like Column, Bar, RangeColum
 
 [XAML]
 
-&lt;syncfusion:SfChart HorizontalAlignment="Center" SideBySideSeriesPlacement="False" VerticalAlignment="Center" Height="600" Width="700" &gt;
+<syncfusion:SfChart HorizontalAlignment="Center" SideBySideSeriesPlacement="False" VerticalAlignment="Center" Height="600" Width="700" >
 
-&lt;!--Initialize the Chart Series for SfChart--&gt;
-
-
-
-&lt;syncfusion:ColumnSeries  Label="2010" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2010" /&gt;
+<!--Initialize the Chart Series for SfChart-->
 
 
 
-&lt;syncfusion:ColumnSeries Label="2011" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2011" SegmentSpacing="0.5" /&gt;
+<syncfusion:ColumnSeries  Label="2010" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2010" />
 
 
 
-{ ![](Area_images/Area_img3.png) | markdownify }
+<syncfusion:ColumnSeries Label="2011" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2011" SegmentSpacing="0.5" />
+
+
+
+{{ '![](Area_images/Area_img3.png)' | markdownify }}
 {:.image }
 
 

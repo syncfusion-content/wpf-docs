@@ -27,33 +27,33 @@ To create a report:
 
 
 
-{ ![](Creating-and-Storing-OLAP-Report_images/Creating-and-Storing-OLAP-Report_img1.png) | markdownify }
+{{ '![](Creating-and-Storing-OLAP-Report_images/Creating-and-Storing-OLAP-Report_img1.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Creating-and-Storing-OLAP-Report_images/Creating-and-Storing-OLAP-Report_img2.png) | markdownify }
+{{ '![](Creating-and-Storing-OLAP-Report_images/Creating-and-Storing-OLAP-Report_img2.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Creating-and-Storing-OLAP-Report_images/Creating-and-Storing-OLAP-Report_img3.png) | markdownify }
+{{ '![](Creating-and-Storing-OLAP-Report_images/Creating-and-Storing-OLAP-Report_img3.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Creating-and-Storing-OLAP-Report_images/Creating-and-Storing-OLAP-Report_img4.png) | markdownify }
+{{ '![](Creating-and-Storing-OLAP-Report_images/Creating-and-Storing-OLAP-Report_img4.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Creating-and-Storing-OLAP-Report_images/Creating-and-Storing-OLAP-Report_img5.png) | markdownify }
+{{ '![](Creating-and-Storing-OLAP-Report_images/Creating-and-Storing-OLAP-Report_img5.png)' | markdownify }}
 {:.image }
 
 
 You can also load the saved report set by using the load option.
 
-{ ![](Creating-and-Storing-OLAP-Report_images/Creating-and-Storing-OLAP-Report_img6.png) | markdownify }
+{{ '![](Creating-and-Storing-OLAP-Report_images/Creating-and-Storing-OLAP-Report_img6.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Creating-and-Storing-OLAP-Report_images/Creating-and-Storing-OLAP-Report_img7.png) | markdownify }
+{{ '![](Creating-and-Storing-OLAP-Report_images/Creating-and-Storing-OLAP-Report_img7.png)' | markdownify }}
 {:.image }
 
 

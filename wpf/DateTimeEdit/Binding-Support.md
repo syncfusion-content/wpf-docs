@@ -21,11 +21,11 @@ The following example shows a simple binding between the DateTime property of th
 XAML</td></tr>
 <tr>
 <td>
-&lt;syncfusion:DateTimeEdit x:Name="dateTimeEdit1" Height="25" Width="220" Margin="10"/&gt;<syncfusion:DateTimeEdit x:Name="dateTimeEdit2" Height="25" Width="220"                          DateTime="{Binding ElementName=dateTimeEdit1,                                             Path=DateTime,Mode=TwoWay}"                         Margin="10"/></td></tr>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit1" Height="25" Width="220" Margin="10"/><syncfusion:DateTimeEdit x:Name="dateTimeEdit2" Height="25" Width="220"                          DateTime="{Binding ElementName=dateTimeEdit1,                                             Path=DateTime,Mode=TwoWay}"                         Margin="10"/></td></tr>
 </table>
 
 
-{ ![](Binding-Support_images/Binding-Support_img1.png) | markdownify }
+{{ '![](Binding-Support_images/Binding-Support_img1.png)' | markdownify }}
 {:.image }
 
 

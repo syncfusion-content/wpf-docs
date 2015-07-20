@@ -197,21 +197,21 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWP
 
 xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;Grid Name="diagramgrid"&gt;
+    <Grid Name="diagramgrid">
 
-        &lt;sfdiagram:DiagramControl IsSymbolPaletteEnabled="True"&gt;
+        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True">
 
-            &lt;sfdiagram:DiagramControl.View&gt;
+            <sfdiagram:DiagramControl.View>
 
-                &lt;sfdiagram:DiagramView &gt;&lt;/sfdiagram:DiagramView&gt;
+                <sfdiagram:DiagramView ></sfdiagram:DiagramView>
 
-            &lt;/sfdiagram:DiagramControl.View&gt;
+            </sfdiagram:DiagramControl.View>
 
-        &lt;/sfdiagram:DiagramControl&gt;
+        </sfdiagram:DiagramControl>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -286,43 +286,43 @@ Horizontal and Vertical ruler can be initialized for DiagramView in two ways:
 
 
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
-
-
-
-        &lt;!-- Model to add nodes and connections--&gt;
-
-        &lt;syncfusion:DiagramControl.Model&gt;
-
-            &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;
-
-            &lt;/syncfusion:DiagramModel&gt;
-
-        &lt;/syncfusion:DiagramControl.Model&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        &lt;!--View to display nodes and connections added through model.--&gt;
+        <!-- Model to add nodes and connections-->
 
-&lt;syncfusion:DiagramView IsPageEditable="True" Bounds="0,0,12,12" Name="diagramView"&gt;
+        <syncfusion:DiagramControl.Model>
 
-    &lt;syncfusion:DiagramView.HorizontalRuler&gt;
+            <syncfusion:DiagramModel x:Name="diagramModel">
 
-        &lt;syncfusion:HorizontalRuler Name="horizontalRuler" /&gt;
+            </syncfusion:DiagramModel>
 
-    &lt;/syncfusion:DiagramView.HorizontalRuler&gt;
+        </syncfusion:DiagramControl.Model>
 
-    &lt;syncfusion:DiagramView.VerticalRuler&gt;
 
-        &lt;syncfusion:VerticalRuler Name="verticalRuler"  /&gt;
 
-    &lt;/syncfusion:DiagramView.VerticalRuler &gt;
+        <!--View to display nodes and connections added through model.-->
 
-&lt;/syncfusion:DiagramView&gt;        
+<syncfusion:DiagramView IsPageEditable="True" Bounds="0,0,12,12" Name="diagramView">
 
-    &lt;/syncfusion:DiagramControl&gt;
+    <syncfusion:DiagramView.HorizontalRuler>
+
+        <syncfusion:HorizontalRuler Name="horizontalRuler" />
+
+    </syncfusion:DiagramView.HorizontalRuler>
+
+    <syncfusion:DiagramView.VerticalRuler>
+
+        <syncfusion:VerticalRuler Name="verticalRuler"  />
+
+    </syncfusion:DiagramView.VerticalRuler >
+
+</syncfusion:DiagramView>        
+
+    </syncfusion:DiagramControl>
 
 
 
@@ -352,7 +352,7 @@ TryCast(diagramView.VerticalRuler, VerticalRuler())
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img1.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -360,7 +360,7 @@ _Rulers_
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img2.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -436,7 +436,7 @@ No</td></tr>
 </table>
 
 
-{ ![](Diagram-View_images/Diagram-View_img3.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -452,21 +452,21 @@ The following code shows how the properties can be set.
 
 
 
-&lt;syncfusion:DiagramView IsPageEditable="True" Bounds="0,0,12,12" Name="diagramView"&gt;
+<syncfusion:DiagramView IsPageEditable="True" Bounds="0,0,12,12" Name="diagramView">
 
-&lt;syncfusion:DiagramView.HorizontalRuler&gt;
+<syncfusion:DiagramView.HorizontalRuler>
 
-    &lt;syncfusion:HorizontalRuler Name="horizontalRuler" Background="#FFC6C6C6" LabelFontColor="Green"/&gt;
+    <syncfusion:HorizontalRuler Name="horizontalRuler" Background="#FFC6C6C6" LabelFontColor="Green"/>
 
-&lt;/syncfusion:DiagramView.HorizontalRuler&gt;
+</syncfusion:DiagramView.HorizontalRuler>
 
-&lt;syncfusion:DiagramView.VerticalRuler&gt;
+<syncfusion:DiagramView.VerticalRuler>
 
-    &lt;syncfusion:VerticalRuler Name="verticalRuler" Background="#FFC6C6C6" LabelFontColor="Green"/&gt;
+    <syncfusion:VerticalRuler Name="verticalRuler" Background="#FFC6C6C6" LabelFontColor="Green"/>
 
-&lt;/syncfusion:DiagramView.VerticalRuler &gt;
+</syncfusion:DiagramView.VerticalRuler >
 
-&lt;/syncfusion:DiagramView&gt;
+</syncfusion:DiagramView>
 
 
 
@@ -494,7 +494,7 @@ TryCast(diagramView.VerticalRuler, VerticalRuler).LabelFontColor = Brushes.Green
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img4.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -543,23 +543,23 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWP
 
 xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
-&lt;Grid Name="diagramgrid"&gt;
+<Grid Name="diagramgrid">
 
-    &lt;sfdiagram:DiagramControl IsSymbolPaletteEnabled="True" &gt;
+    <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True" >
 
-        &lt;sfdiagram:DiagramControl.View &gt;
+        <sfdiagram:DiagramControl.View >
 
-            &lt;sfdiagram:DiagramView Bounds="0,0,500,500"&gt;
+            <sfdiagram:DiagramView Bounds="0,0,500,500">
 
-            &lt;/sfdiagram:DiagramView&gt;
+            </sfdiagram:DiagramView>
 
-        &lt;/sfdiagram:DiagramControl.View&gt;
+        </sfdiagram:DiagramControl.View>
 
-    &lt;/sfdiagram:DiagramControl&gt;
+    </sfdiagram:DiagramControl>
 
-&lt;/Grid&gt;
+</Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -655,7 +655,7 @@ _Note: No other operations can be performed on page elements while IsPanEnabled 
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img5.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -702,37 +702,37 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWP
 
 xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1" >
 
-&lt;Grid Name="diagramgrid"&gt;
+<Grid Name="diagramgrid">
 
-&lt;sfdiagram:DiagramControl IsSymbolPaletteEnabled="True" &gt;
+<sfdiagram:DiagramControl IsSymbolPaletteEnabled="True" >
 
-&lt;sfdiagram:DiagramControl.Model&gt;
+<sfdiagram:DiagramControl.Model>
 
-&lt;sfdiagram:DiagramModel x:Name="diagramModel" &gt;
+<sfdiagram:DiagramModel x:Name="diagramModel" >
 
-&lt;/sfdiagram:DiagramModel&gt;
+</sfdiagram:DiagramModel>
 
-&lt;/sfdiagram:DiagramControl.Model&gt;
+</sfdiagram:DiagramControl.Model>
 
-&lt;sfdiagram:DiagramControl.View &gt;
+<sfdiagram:DiagramControl.View >
 
-&lt;sfdiagram:DiagramView ShowHorizontalGridLine="True" ShowVerticalGridLine="True"&gt;
+<sfdiagram:DiagramView ShowHorizontalGridLine="True" ShowVerticalGridLine="True">
 
-&lt;syncfusion:DiagramView.Page&gt;
+<syncfusion:DiagramView.Page>
 
-  &lt;syncfusion:DiagramPage x:Name="diagramPage" GridHorizontalOffset="50" GridVerticalOffset="50"/&gt;
+  <syncfusion:DiagramPage x:Name="diagramPage" GridHorizontalOffset="50" GridVerticalOffset="50"/>
 
-&lt;/syncfusion:DiagramView.Page&gt;
+</syncfusion:DiagramView.Page>
 
-&lt;/sfdiagram:DiagramView&gt;
+</sfdiagram:DiagramView>
 
-&lt;/sfdiagram:DiagramControl.View&gt;
+</sfdiagram:DiagramControl.View>
 
-&lt;/sfdiagram:DiagramControl&gt;
+</sfdiagram:DiagramControl>
 
-&lt;/Grid&gt;
+</Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -808,35 +808,35 @@ This property is in DiagramView and can be set in the following ways.
 
 
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
-
-
-
-        &lt;!-- Model to add nodes and connections--&gt;
-
-        &lt;syncfusion:DiagramControl.Model&gt;
-
-            &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;
-
-            &lt;/syncfusion:DiagramModel&gt;
-
-        &lt;/syncfusion:DiagramControl.Model&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        &lt;!--View to display nodes and connections added through model.--&gt;
+        <!-- Model to add nodes and connections-->
 
-&lt;syncfusion:DiagramControl.View&gt;
+        <syncfusion:DiagramControl.Model>
 
-   &lt;syncfusion:DiagramView IsPageEditable="True" Name="diagramView"&gt;
+            <syncfusion:DiagramModel x:Name="diagramModel">
 
-   &lt;/syncfusion:DiagramView&gt;
+            </syncfusion:DiagramModel>
 
-&lt;/syncfusion:DiagramControl.View&gt;
+        </syncfusion:DiagramControl.Model>
 
-    &lt;/syncfusion:DiagramControl&gt;
+
+
+        <!--View to display nodes and connections added through model.-->
+
+<syncfusion:DiagramControl.View>
+
+   <syncfusion:DiagramView IsPageEditable="True" Name="diagramView">
+
+   </syncfusion:DiagramView>
+
+</syncfusion:DiagramControl.View>
+
+    </syncfusion:DiagramControl>
 
 
 
@@ -982,25 +982,25 @@ To enable this feature, set the EnableFitToPage property of the diagram view to 
 
 [XAML]
 
-&lt;Syncfusion:DiagramControl Grid.Row="1" Name="diagramControl"  &gt;
+<Syncfusion:DiagramControl Grid.Row="1" Name="diagramControl"  >
 
-                &lt;Syncfusion:DiagramControl.Model&gt;
+                <Syncfusion:DiagramControl.Model>
 
-                    &lt;Syncfusion:DiagramModel x:Name="diagramModel"&gt;
+                    <Syncfusion:DiagramModel x:Name="diagramModel">
 
-                    &lt;/Syncfusion:DiagramModel&gt;
+                    </Syncfusion:DiagramModel>
 
-                &lt;/Syncfusion:DiagramControl.Model&gt;
+                </Syncfusion:DiagramControl.Model>
 
-                &lt;Syncfusion:DiagramControl.View&gt;
+                <Syncfusion:DiagramControl.View>
 
-                    &lt;Syncfusion:DiagramView EnableFitToPage="True" Name="diagramView"&gt;
+                    <Syncfusion:DiagramView EnableFitToPage="True" Name="diagramView">
 
-                    &lt;/Syncfusion:DiagramView&gt;
+                    </Syncfusion:DiagramView>
 
-                &lt;/Syncfusion:DiagramControl.View&gt;
+                </Syncfusion:DiagramControl.View>
 
-            &lt;/Syncfusion:DiagramControl&gt;
+            </Syncfusion:DiagramControl>
 
 
 
@@ -1016,7 +1016,7 @@ diagramView.EnableFitToPage = true;
 
 
 
-{ ![C:/Users/labuser/Desktop/q11.PNG](Diagram-View_images/Diagram-View_img6.png) | markdownify }
+{{ '![C:/Users/labuser/Desktop/q11.PNG](Diagram-View_images/Diagram-View_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -1024,7 +1024,7 @@ _Fit-to-Page Disabled_
 
 
 
-{ ![C:/Users/labuser/Desktop/q1.PNG](Diagram-View_images/Diagram-View_img7.png) | markdownify }
+{{ '![C:/Users/labuser/Desktop/q1.PNG](Diagram-View_images/Diagram-View_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -1042,11 +1042,11 @@ The following code illustrates how to bring the whole diagram into the viewport 
 
 [XAML]
 
- &lt;Button Command="FitToPage" CommandTarget="{Binding ElementName=diagramView}"CommandParameter="{Binding ElementName=diagramPage}"&gt;
+ <Button Command="FitToPage" CommandTarget="{Binding ElementName=diagramView}"CommandParameter="{Binding ElementName=diagramPage}">
 
     FitToPage
 
-&lt;/Button&gt;
+</Button>
 
 
 
@@ -1146,7 +1146,7 @@ When the code runs, the table layout will be applied to the specified node colle
 
 
 
-{ ![C:/Users/labuser/Desktop/selection.PNG](Diagram-View_images/Diagram-View_img8.png) | markdownify }
+{{ '![C:/Users/labuser/Desktop/selection.PNG](Diagram-View_images/Diagram-View_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -1259,23 +1259,23 @@ PageMargin can be set to diagram page by using DiagramView’s PageMargin proper
 
 [XAML]
 
-&lt;syncfusion:DiagramControl Name="diagramControl" IsSymbolPaletteEnabled="True"&gt;
+<syncfusion:DiagramControl Name="diagramControl" IsSymbolPaletteEnabled="True">
 
-             &lt;syncfusion:DiagramControl.Model&gt;
+             <syncfusion:DiagramControl.Model>
 
-                    &lt;syncfusion:DiagramModel x:Name="diagramModel"/&gt;
+                    <syncfusion:DiagramModel x:Name="diagramModel"/>
 
-             &lt;/syncfusion:DiagramControl.Model&gt;
+             </syncfusion:DiagramControl.Model>
 
 
 
-            &lt;syncfusion:DiagramControl.View&gt;
+            <syncfusion:DiagramControl.View>
 
-                  &lt;syncfusion:DiagramView Name="diagramView" Margin="10,20,10,20"/&gt; 
+                  <syncfusion:DiagramView Name="diagramView" Margin="10,20,10,20"/> 
 
-             &lt;/syncfusion:DiagramControl.View&gt;
+             </syncfusion:DiagramControl.View>
 
-            &lt;/syncfusion:DiagramControl&gt;
+            </syncfusion:DiagramControl>
 
 
 
@@ -1297,7 +1297,7 @@ diagramView.PageMargin = New Thickness(10, 20, 10, 20)
 
 
 
-{ ![Description: C:/Users/sundarm/Desktop/margin.PNG](Diagram-View_images/Diagram-View_img9.png) | markdownify }
+{{ '![Description: C:/Users/sundarm/Desktop/margin.PNG](Diagram-View_images/Diagram-View_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -1363,27 +1363,27 @@ The following code illustrates how to set EnableVirtualization property through 
 
 [XAML]
 
-&lt;!---DiagramControl---&gt;         
+<!---DiagramControl--->         
 
-             &lt;syncfusion:DiagramControl  Name="diagramControl" &gt;
+             <syncfusion:DiagramControl  Name="diagramControl" >
 
-                &lt;syncfusion:DiagramControl.Model&gt;
+                <syncfusion:DiagramControl.Model>
 
-                    &lt;syncfusion:DiagramModel   x:Name="diagramModel" &gt;
+                    <syncfusion:DiagramModel   x:Name="diagramModel" >
 
-                    &lt;/syncfusion:DiagramModel&gt;
+                    </syncfusion:DiagramModel>
 
-                &lt;/syncfusion:DiagramControl.Model&gt;
+                </syncfusion:DiagramControl.Model>
 
-                &lt;syncfusion:DiagramControl.View&gt;
+                <syncfusion:DiagramControl.View>
 
                    <syncfusion:DiagramView EnableVirtualization="True" Name="diagramView" 
 
-                    &lt;/syncfusion:DiagramView&gt;
+                    </syncfusion:DiagramView>
 
-                &lt;/syncfusion:DiagramControl.View&gt;
+                </syncfusion:DiagramControl.View>
 
-            &lt;/syncfusion:DiagramControl&gt;
+            </syncfusion:DiagramControl>
 
 
 
@@ -1513,31 +1513,31 @@ The measurement units property can be specified in the following way.
 
 
 
-&lt;sfdiagram:DiagramControl IsSymbolPaletteEnabled="True" &gt;
+<sfdiagram:DiagramControl IsSymbolPaletteEnabled="True" >
 
-    &lt;sfdiagram:DiagramControl.Model&gt;
+    <sfdiagram:DiagramControl.Model>
 
-        &lt;sfdiagram:DiagramModel x:Name="diagramModel" &gt;
+        <sfdiagram:DiagramModel x:Name="diagramModel" >
 
-        &lt;/sfdiagram:DiagramModel&gt;
+        </sfdiagram:DiagramModel>
 
-    &lt;/sfdiagram:DiagramControl.Model&gt;
+    </sfdiagram:DiagramControl.Model>
 
-    &lt;sfdiagram:DiagramControl.View &gt;
+    <sfdiagram:DiagramControl.View >
 
-        &lt;sfdiagram:DiagramView ShowHorizontalGridLine="True" ShowVerticalGridLine="True"&gt;
+        <sfdiagram:DiagramView ShowHorizontalGridLine="True" ShowVerticalGridLine="True">
 
-            &lt;syncfusion:DiagramView.Page&gt;
+            <syncfusion:DiagramView.Page>
 
-                &lt;syncfusion:DiagramPage x:Name="diagramPage" MeasurementUnits="Inch"/&gt;
+                <syncfusion:DiagramPage x:Name="diagramPage" MeasurementUnits="Inch"/>
 
-            &lt;/syncfusion:DiagramView.Page&gt;
+            </syncfusion:DiagramView.Page>
 
-        &lt;/sfdiagram:DiagramView&gt;
+        </sfdiagram:DiagramView>
 
-    &lt;/sfdiagram:DiagramControl.View&gt;
+    </sfdiagram:DiagramControl.View>
 
-&lt;/sfdiagram:DiagramControl&gt;
+</sfdiagram:DiagramControl>
 
 
 
@@ -1625,7 +1625,7 @@ You can also dynamically change the units at runtime. The ruler values get chang
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img10.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1692,7 +1692,7 @@ diagramView.DateTimeSettings=New DateTimeSettings(New TimeSpan(1,0,0,0,0),50)
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img11.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -1716,7 +1716,7 @@ diagramView.DateTimeSettings.RulerInterval = new TimeSpan(2, 0, 0, 0, 0);
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img12.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -1987,31 +1987,31 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWP
 
 xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;Grid Name="diagramgrid"&gt;
+    <Grid Name="diagramgrid">
 
-        &lt;sfdiagram:DiagramControl IsSymbolPaletteEnabled="True" &gt;
+        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True" >
 
-            &lt;sfdiagram:DiagramControl.Model&gt;
+            <sfdiagram:DiagramControl.Model>
 
-                &lt;sfdiagram:DiagramModel x:Name="diagramModel" &gt;
+                <sfdiagram:DiagramModel x:Name="diagramModel" >
 
-                &lt;/sfdiagram:DiagramModel&gt;
+                </sfdiagram:DiagramModel>
 
-            &lt;/sfdiagram:DiagramControl.Model&gt;
+            </sfdiagram:DiagramControl.Model>
 
-            &lt;sfdiagram:DiagramControl.View &gt;
+            <sfdiagram:DiagramControl.View >
 
-                &lt;sfdiagram:DiagramView ShowHorizontalGridLine="True" ShowVerticalGridLine="True"&gt;
+                <sfdiagram:DiagramView ShowHorizontalGridLine="True" ShowVerticalGridLine="True">
 
-                &lt;/sfdiagram:DiagramView&gt;
+                </sfdiagram:DiagramView>
 
-            &lt;/sfdiagram:DiagramControl.View&gt;
+            </sfdiagram:DiagramControl.View>
 
-        &lt;/sfdiagram:DiagramControl&gt;
+        </sfdiagram:DiagramControl>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -2059,7 +2059,7 @@ diagramgrid.Children.Add(dc)
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img13.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2114,37 +2114,37 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWP
 
 xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;Grid Name="diagramgrid"&gt;
+    <Grid Name="diagramgrid">
 
-        &lt;sfdiagram:DiagramControl IsSymbolPaletteEnabled="True" &gt;
+        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True" >
 
-            &lt;sfdiagram:DiagramControl.Model&gt;
+            <sfdiagram:DiagramControl.Model>
 
-                &lt;sfdiagram:DiagramModel x:Name="diagramModel" &gt;
+                <sfdiagram:DiagramModel x:Name="diagramModel" >
 
-                &lt;/sfdiagram:DiagramModel&gt;
+                </sfdiagram:DiagramModel>
 
-            &lt;/sfdiagram:DiagramControl.Model&gt;
+            </sfdiagram:DiagramControl.Model>
 
-            &lt;sfdiagram:DiagramControl.View &gt;
+            <sfdiagram:DiagramControl.View >
 
-                &lt;sfdiagram:DiagramView ShowHorizontalGridLine="True" ShowVerticalGridLine="True"&gt;
+                <sfdiagram:DiagramView ShowHorizontalGridLine="True" ShowVerticalGridLine="True">
 
-                    &lt;syncfusion:DiagramView.Page&gt;
+                    <syncfusion:DiagramView.Page>
 
-                        &lt;syncfusion:DiagramPage  x:Name="diagramPage" MeasurementUnits="Pixels" GridHorizontalOffset="100"                                        GridVerticalOffset="100"/&gt;
+                        <syncfusion:DiagramPage  x:Name="diagramPage" MeasurementUnits="Pixels" GridHorizontalOffset="100"                                        GridVerticalOffset="100"/>
 
-                    &lt;/syncfusion:DiagramView.Page&gt;
+                    </syncfusion:DiagramView.Page>
 
-                &lt;/sfdiagram:DiagramView&gt;
+                </sfdiagram:DiagramView>
 
-            &lt;/sfdiagram:DiagramControl.View&gt;
+            </sfdiagram:DiagramControl.View>
 
-        &lt;/sfdiagram:DiagramControl&gt;
+        </sfdiagram:DiagramControl>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -2196,7 +2196,7 @@ diagramgrid.Children.Add(dc)
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img14.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2278,7 +2278,7 @@ Users can snap objects with respect to grid lines in the Design environment by u
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img15.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -2286,7 +2286,7 @@ _Node Before Snapping_
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img16.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -2302,9 +2302,9 @@ In the following code example, diagramView is an instance of DiagramView.
 
 [XAML]
 
-&lt;syncfusion:DiagramView  x:Name="diagramView" SnapToHorizontalGrid="True" SnapToVerticalGrid="True" &gt;
+<syncfusion:DiagramView  x:Name="diagramView" SnapToHorizontalGrid="True" SnapToVerticalGrid="True" >
 
-&lt;/syncfusion:DiagramView&gt;
+</syncfusion:DiagramView>
 
 
 
@@ -2332,7 +2332,7 @@ diagramView.SnapToHorizontalGrid = True
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img17.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -2348,9 +2348,9 @@ In the following code example, diagramView is an instance of DiagramView.
 
 [XAML]
 
-&lt;syncfusion:DiagramView  x:Name="diagramView" SnapOffsetX ="50" SnapOffsetY ="50"&gt;
+<syncfusion:DiagramView  x:Name="diagramView" SnapOffsetX ="50" SnapOffsetY ="50">
 
-&lt;/syncfusion:DiagramView&gt;
+</syncfusion:DiagramView>
 
 
 
@@ -2772,7 +2772,7 @@ diagramView.IsZoomEnabled = True
 
 _Note: All other operations can be performed on page elements while IsZoomEnabled is set to True._
 
-{ ![](Diagram-View_images/Diagram-View_img18.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img18.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2794,23 +2794,23 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWP
 
 xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;Grid Name="diagramgrid"&gt;
+    <Grid Name="diagramgrid">
 
-        &lt;sfdiagram:DiagramControl IsSymbolPaletteEnabled="True"&gt;
+        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True">
 
-            &lt;sfdiagram:DiagramControl.View&gt;
+            <sfdiagram:DiagramControl.View>
 
-                &lt;sfdiagram:DiagramView Name="diagramView" ZoomFactor="0.5"&gt;
+                <sfdiagram:DiagramView Name="diagramView" ZoomFactor="0.5">
 
-                &lt;/sfdiagram:DiagramView&gt;
+                </sfdiagram:DiagramView>
 
-            &lt;/sfdiagram:DiagramControl.View&gt;
+            </sfdiagram:DiagramControl.View>
 
-        &lt;/sfdiagram:DiagramControl&gt;
+        </sfdiagram:DiagramControl>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -2904,7 +2904,7 @@ Nudge by using Arrow Keys
 
 The corresponding arrow keys can be used to move the selected objects to top, bottom, left or right. 
 
-{ ![](Diagram-View_images/Diagram-View_img19.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img19.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2962,11 +2962,11 @@ Cut the selected objects from the page into the Clipboard.
 
 
 
-&lt;Button Command="Cut" CommandTarget="{Binding ElementName=diagramView}" CommandParameter="{Binding ElementName=diagramPage}"&gt;
+<Button Command="Cut" CommandTarget="{Binding ElementName=diagramView}" CommandParameter="{Binding ElementName=diagramPage}">
 
     Cut
 
-&lt;/Button&gt;
+</Button>
 
 
 
@@ -2988,7 +2988,7 @@ Copies the selected objects from the page into the Clipboard.
 
 
 
-&lt;Button Command="Copy" CommandTarget="{Binding ElementName=diagramView}" CommandParameter="{Binding ElementName=diagramPage}"&gt;
+<Button Command="Copy" CommandTarget="{Binding ElementName=diagramView}" CommandParameter="{Binding ElementName=diagramPage}">
 
     Copy</Button>
 
@@ -3012,11 +3012,11 @@ Paste the contents of the valid clipboard into the page.
 
 
 
-&lt;Button Command="Paste" CommandTarget="{Binding ElementName=diagramView}" CommandParameter="{Binding ElementName=diagramPage}"&gt;
+<Button Command="Paste" CommandTarget="{Binding ElementName=diagramView}" CommandParameter="{Binding ElementName=diagramPage}">
 
     Paste
 
-&lt;/Button&gt;
+</Button>
 
 
 
@@ -3060,31 +3060,31 @@ Each clipboard command can be disabled as shown in the following code example.
 
     >
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
-        &lt;syncfusion:DiagramControl.Model&gt;
+        <syncfusion:DiagramControl.Model>
 
-            &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;
+            <syncfusion:DiagramModel x:Name="diagramModel">
 
-            &lt;/syncfusion:DiagramModel&gt;
+            </syncfusion:DiagramModel>
 
-        &lt;/syncfusion:DiagramControl.Model&gt;
+        </syncfusion:DiagramControl.Model>
 
-        &lt;!-- Disable Cut, Copy and Past --&gt;
+        <!-- Disable Cut, Copy and Past -->
 
-        &lt;syncfusion:DiagramControl.View&gt;
+        <syncfusion:DiagramControl.View>
 
-            &lt;syncfusion:DiagramView IsCutEnabled="False" IsCopyEnabled="False" IsPasteEnabled="False" Name="diagramView"&gt;
+            <syncfusion:DiagramView IsCutEnabled="False" IsCopyEnabled="False" IsPasteEnabled="False" Name="diagramView">
 
-            &lt;/syncfusion:DiagramView&gt;
+            </syncfusion:DiagramView>
 
-        &lt;/syncfusion:DiagramControl.View&gt;
+        </syncfusion:DiagramControl.View>
 
-    &lt;/syncfusion:DiagramControl&gt;
+    </syncfusion:DiagramControl>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -3134,7 +3134,7 @@ Moves the selected object over other objects by increasing the z-index to maximu
 </table>
 
 
-{ ![](Diagram-View_images/Diagram-View_img20.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img20.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3154,7 +3154,7 @@ Moves the selected object behind all other objects by setting the z-index to 0.
 </table>
 
 
-{ ![](Diagram-View_images/Diagram-View_img21.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img21.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3174,7 +3174,7 @@ Increases the z-index value of the selected object by 1.
 </table>
 
 
-{ ![](Diagram-View_images/Diagram-View_img22.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img22.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3194,7 +3194,7 @@ Decreases the z-index value of the selected object by 1.
 </table>
 
 
-{ ![](Diagram-View_images/Diagram-View_img23.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img23.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3237,35 +3237,35 @@ The following code illustrates how to set the ZorderMode as Index:
 
 
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
-
-
-
-        &lt;!-- Model to add nodes and connections.--&gt;
-
-        &lt;syncfusion:DiagramControl.Model&gt;
-
-            &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;
-
-            &lt;/syncfusion:DiagramModel&gt;
-
-        &lt;/syncfusion:DiagramControl.Model&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        &lt;!--View to display nodes and connections added through the model.--&gt;
+        <!-- Model to add nodes and connections.-->
 
-&lt;syncfusion:DiagramControl.View&gt;
+        <syncfusion:DiagramControl.Model>
 
-   &lt;syncfusion:DiagramView Name="diagramView" ZOrderMode="Index"&gt;
+            <syncfusion:DiagramModel x:Name="diagramModel">
 
-   &lt;/syncfusion:DiagramView&gt;
+            </syncfusion:DiagramModel>
 
-&lt;/syncfusion:DiagramControl.View&gt;
+        </syncfusion:DiagramControl.Model>
 
-    &lt;/syncfusion:DiagramControl&gt;
+
+
+        <!--View to display nodes and connections added through the model.-->
+
+<syncfusion:DiagramControl.View>
+
+   <syncfusion:DiagramView Name="diagramView" ZOrderMode="Index">
+
+   </syncfusion:DiagramView>
+
+</syncfusion:DiagramControl.View>
+
+    </syncfusion:DiagramControl>
 
 
 
@@ -3301,35 +3301,35 @@ The following code illustrates how to set the ZOrderMode as Visual:
 
 
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
-
-
-
-        &lt;!-- Model to add nodes and connections.--&gt;
-
-        &lt;syncfusion:DiagramControl.Model&gt;
-
-            &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;
-
-            &lt;/syncfusion:DiagramModel&gt;
-
-        &lt;/syncfusion:DiagramControl.Model&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        &lt;!--View to display nodes and connections added through the model.--&gt;
+        <!-- Model to add nodes and connections.-->
 
-&lt;syncfusion:DiagramControl.View&gt;
+        <syncfusion:DiagramControl.Model>
 
-   &lt;syncfusion:DiagramView Name="diagramView" ZOrderMode="Index"&gt;
+            <syncfusion:DiagramModel x:Name="diagramModel">
 
-   &lt;/syncfusion:DiagramView&gt;
+            </syncfusion:DiagramModel>
 
-&lt;/syncfusion:DiagramControl.View&gt;
+        </syncfusion:DiagramControl.Model>
 
-    &lt;/syncfusion:DiagramControl&gt;
+
+
+        <!--View to display nodes and connections added through the model.-->
+
+<syncfusion:DiagramControl.View>
+
+   <syncfusion:DiagramView Name="diagramView" ZOrderMode="Index">
+
+   </syncfusion:DiagramView>
+
+</syncfusion:DiagramControl.View>
+
+    </syncfusion:DiagramControl>
 
 
 
@@ -3379,7 +3379,7 @@ The AlignLeft command aligns all selected objects along the left corner of the r
 
 The following screenshot illustrates how the last two nodes are aligned to the left with respect to the first node.
 
-{ ![](Diagram-View_images/Diagram-View_img24.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img24.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3405,7 +3405,7 @@ The following screenshot illustrates how the last two nodes are aligned to the c
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img25.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img25.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3429,7 +3429,7 @@ The following screenshot illustrates how the last two nodes are aligned to the r
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img26.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img26.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3451,7 +3451,7 @@ The AlignTop command aligns all selected objects along the top surface of the re
 
 The following screenshot illustrates how the last two nodes are aligned to the top with respect to the first node.
 
-{ ![](Diagram-View_images/Diagram-View_img27.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img27.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3473,7 +3473,7 @@ The AlignMiddle command aligns all selected objects at the center. This command 
 
 The following screenshot illustrates how the last two nodes are aligned to the center with respect to the vertical axis of the first node.
 
-{ ![](Diagram-View_images/Diagram-View_img28.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img28.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3495,7 +3495,7 @@ The AlignBottom command aligns all selected objects along the bottom surface of 
 
 The following screenshot illustrates how the last two nodes are aligned to the bottom with respect to the first node.
 
-{ ![](Diagram-View_images/Diagram-View_img29.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img29.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3527,7 +3527,7 @@ The SpaceAcross command spaces selected objects with equal horizontal distance b
 
 The following screenshot illustrates horizontally spaced objects.
 
-{ ![](Diagram-View_images/Diagram-View_img30.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img30.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3553,7 +3553,7 @@ The following screenshot illustrates vertically spaced objects.
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img31.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img31.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3610,7 +3610,7 @@ The SameHeight command resizes selected objects to the height of the first objec
 </table>
 
 
-{ ![](Diagram-View_images/Diagram-View_img32.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img32.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3632,7 +3632,7 @@ The SameWidth command resizes selected objects to the width of the first object 
 </table>
 
 
-{ ![](Diagram-View_images/Diagram-View_img33.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img33.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3656,7 +3656,7 @@ The SameSize command resizes selected objects to the height and width of the fir
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img34.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img34.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3722,27 +3722,27 @@ The following code example shows how to disable Undo Redo operation.
 
 
 
-        &lt;sfdiagram:DiagramControl IsSymbolPaletteEnabled="True" &gt;
+        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True" >
 
-            &lt;sfdiagram:DiagramControl.Model&gt;
+            <sfdiagram:DiagramControl.Model>
 
-                &lt;sfdiagram:DiagramModel x:Name="diagramModel" &gt;
+                <sfdiagram:DiagramModel x:Name="diagramModel" >
 
-                &lt;/sfdiagram:DiagramModel&gt;
+                </sfdiagram:DiagramModel>
 
-            &lt;/sfdiagram:DiagramControl.Model&gt;
+            </sfdiagram:DiagramControl.Model>
 
-            &lt;sfdiagram:DiagramControl.View &gt;
+            <sfdiagram:DiagramControl.View >
 
                 <sfdiagram:DiagramView UndoRedoEnabled="False" 
 
  ShowHorizontalGridLine="True" ShowVerticalGridLine="True">
 
-                &lt;/sfdiagram:DiagramView&gt;
+                </sfdiagram:DiagramView>
 
-            &lt;/sfdiagram:DiagramControl.View&gt;
+            </sfdiagram:DiagramControl.View>
 
-        &lt;/sfdiagram:DiagramControl&gt;
+        </sfdiagram:DiagramControl>
 
 
 
@@ -3908,7 +3908,7 @@ The following custom options can be customized using PrintPreview.
 * Different modes—To select printing such as Color, and Black and White
 * Stretch—To adjust the fit of the image on the page
 
-{ ![](Diagram-View_images/Diagram-View_img35.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img35.png)' | markdownify }}
 {:.image }
 
 
@@ -4021,7 +4021,7 @@ diagramModel.Nodes.Add(node)
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img36.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img36.png)' | markdownify }}
 {:.image }
 
 
@@ -4099,23 +4099,23 @@ __The following code illustrates how to enable the DrawingTools.
 
 <syncfusion:DiagramControl Name="diagramControl" 
 
-     &lt;syncfusion:DiagramControl.Model&gt;
+     <syncfusion:DiagramControl.Model>
 
-         &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;
+         <syncfusion:DiagramModel x:Name="diagramModel">
 
-         &lt;/syncfusion:DiagramModel&gt;  
+         </syncfusion:DiagramModel>  
 
-     &lt;/syncfusion:DiagramControl.Model&gt; 
+     </syncfusion:DiagramControl.Model> 
 
-    &lt;syncfusion:DiagramControl.View&gt;
+    <syncfusion:DiagramControl.View>
 
-       &lt;syncfusion:DiagramView Name="diagramView" EnableDrawingTools="True"&gt;
+       <syncfusion:DiagramView Name="diagramView" EnableDrawingTools="True">
 
-        &lt;/syncfusion:DiagramView&gt;
+        </syncfusion:DiagramView>
 
-     &lt;/syncfusion:DiagramControl.View&gt;
+     </syncfusion:DiagramControl.View>
 
-&lt;/syncfusion:DiagramControl&gt;
+</syncfusion:DiagramControl>
 
 
 
@@ -4179,13 +4179,13 @@ In XAML
 
 [XAML]
 
-  &lt;syncfusion:DiagramControl.View&gt;
+  <syncfusion:DiagramControl.View>
 
-                &lt;syncfusion:DiagramView Name="diagramView" ObjectDrawn="diagramView_ObjectDrawn"&gt;
+                <syncfusion:DiagramView Name="diagramView" ObjectDrawn="diagramView_ObjectDrawn">
 
-                &lt;/syncfusion:DiagramView&gt;
+                </syncfusion:DiagramView>
 
-&lt;/syncfusion:DiagramControl.View&gt;
+</syncfusion:DiagramControl.View>
 
 
 
@@ -4246,35 +4246,35 @@ The following code illustrates how to set the DrawingMode as Default:
 
 
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
-
-
-
-        &lt;!-- Model to add nodes and connections.--&gt;
-
-        &lt;syncfusion:DiagramControl.Model&gt;
-
-            &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;
-
-            &lt;/syncfusion:DiagramModel&gt;
-
-        &lt;/syncfusion:DiagramControl.Model&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        &lt;!--View to display nodes and connections added through the model.--&gt;
+        <!-- Model to add nodes and connections.-->
 
-&lt;syncfusion:DiagramControl.View&gt;
+        <syncfusion:DiagramControl.Model>
 
-   &lt;syncfusion:DiagramView Name="diagramView" DrawingMode="Default"&gt;
+            <syncfusion:DiagramModel x:Name="diagramModel">
 
-   &lt;/syncfusion:DiagramView&gt;
+            </syncfusion:DiagramModel>
 
-&lt;/syncfusion:DiagramControl.View&gt;
+        </syncfusion:DiagramControl.Model>
 
-    &lt;/syncfusion:DiagramControl&gt;
+
+
+        <!--View to display nodes and connections added through the model.-->
+
+<syncfusion:DiagramControl.View>
+
+   <syncfusion:DiagramView Name="diagramView" DrawingMode="Default">
+
+   </syncfusion:DiagramView>
+
+</syncfusion:DiagramControl.View>
+
+    </syncfusion:DiagramControl>
 
 
 
@@ -4304,7 +4304,7 @@ diagramview.ZOrderMode = DrawingMode.Default;
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img37.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img37.png)' | markdownify }}
 {:.image }
 
 
@@ -4316,35 +4316,35 @@ The following code illustrates how to set the DrawingMode as Default:
 
 
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
-
-
-
-        &lt;!-- Model to add nodes and connections.--&gt;
-
-        &lt;syncfusion:DiagramControl.Model&gt;
-
-            &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;
-
-            &lt;/syncfusion:DiagramModel&gt;
-
-        &lt;/syncfusion:DiagramControl.Model&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        &lt;!--View to display nodes and connections added through the model.--&gt;
+        <!-- Model to add nodes and connections.-->
 
-&lt;syncfusion:DiagramControl.View&gt;
+        <syncfusion:DiagramControl.Model>
 
-   &lt;syncfusion:DiagramView Name="diagramView" DrawingMode="Continous"&gt;
+            <syncfusion:DiagramModel x:Name="diagramModel">
 
-   &lt;/syncfusion:DiagramView&gt;
+            </syncfusion:DiagramModel>
 
-&lt;/syncfusion:DiagramControl.View&gt;
+        </syncfusion:DiagramControl.Model>
 
-    &lt;/syncfusion:DiagramControl&gt;
+
+
+        <!--View to display nodes and connections added through the model.-->
+
+<syncfusion:DiagramControl.View>
+
+   <syncfusion:DiagramView Name="diagramView" DrawingMode="Continous">
+
+   </syncfusion:DiagramView>
+
+</syncfusion:DiagramControl.View>
+
+    </syncfusion:DiagramControl>
 
 
 
@@ -4374,7 +4374,7 @@ diagramview.ZOrderMode = DrawingMode.Continous;
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img38.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img38.png)' | markdownify }}
 {:.image }
 
 
@@ -4394,29 +4394,29 @@ The following code illustrates how to select a DrawingTool.
 
 
 
-&lt;syncfusion:DiagramControl Name="diagramControl"&gt;
+<syncfusion:DiagramControl Name="diagramControl">
 
-       &lt;syncfusion:DiagramControl.Model&gt;
+       <syncfusion:DiagramControl.Model>
 
-            &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;
+            <syncfusion:DiagramModel x:Name="diagramModel">
 
-            &lt;/syncfusion:DiagramModel&gt;
+            </syncfusion:DiagramModel>
 
 
 
-        &lt;/syncfusion:DiagramControl.Model&gt;
+        </syncfusion:DiagramControl.Model>
 
-       &lt;syncfusion:DiagramControl.View&gt;
+       <syncfusion:DiagramControl.View>
 
-            &lt;syncfusion:DiagramView Name="diagramView" DrawingTool="Polygon"&gt;
+            <syncfusion:DiagramView Name="diagramView" DrawingTool="Polygon">
 
-                &lt;syncfusion:DiagramView.Page&gt;
+                <syncfusion:DiagramView.Page>
 
-                &lt;/syncfusion:DiagramView&gt;
+                </syncfusion:DiagramView>
 
-            &lt;/syncfusion:DiagramControl.View&gt;
+            </syncfusion:DiagramControl.View>
 
-        &lt;/syncfusion:DiagramControl&gt;
+        </syncfusion:DiagramControl>
 
 
 
@@ -4461,7 +4461,7 @@ Shape Drawing
 
 Preview Ellipse – while Drawing 
 
-{ ![C:/Users/labuser/Desktop/a.png](Diagram-View_images/Diagram-View_img39.png) | markdownify }
+{{ '![C:/Users/labuser/Desktop/a.png](Diagram-View_images/Diagram-View_img39.png)' | markdownify }}
 {:.image }
 
 
@@ -4471,7 +4471,7 @@ Ellipse – After Drawing.
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img40.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img40.png)' | markdownify }}
 {:.image }
 
 
@@ -4481,7 +4481,7 @@ Line Drawing
 
 Bezier Line Preview – While Drawing 
 
-{ ![](Diagram-View_images/Diagram-View_img41.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img41.png)' | markdownify }}
 {:.image }
 
 
@@ -4489,7 +4489,7 @@ _Bezier Line Preview_
 
 Bezier Line – After Drawing
 
-{ ![](Diagram-View_images/Diagram-View_img42.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img42.png)' | markdownify }}
 {:.image }
 
 
@@ -4513,7 +4513,7 @@ Steps for drawing a Polygon and Polyline Drawing:
 
 Preview Polygon – While Drawing 
 
-{ ![](Diagram-View_images/Diagram-View_img43.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img43.png)' | markdownify }}
 {:.image }
 
 
@@ -4521,7 +4521,7 @@ _Polygon Preview_
 
 Polygon – After Drawing
 
-{ ![](Diagram-View_images/Diagram-View_img44.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img44.png)' | markdownify }}
 {:.image }
 
 
@@ -4567,11 +4567,11 @@ To define a preview style, see the following code. This code sample is for setti
 
 
 
-&lt;Style TargetType="{x:Type Path}" x:Key="MyStyle"&gt;
+<Style TargetType="{x:Type Path}" x:Key="MyStyle">
 
-       &lt;Setter Property="StrokeDashArray" Value="2,2"/&gt;
+       <Setter Property="StrokeDashArray" Value="2,2"/>
 
-&lt;/Style&gt;
+</Style>
 
 
 
@@ -4601,7 +4601,7 @@ View1.CustomPathStyle = this.Resources["MyStyle"] as Style
 
 The CustomPathStyle property of DiagramView applies the style that is assigned to the preview of the drawing objects.
 
-{ ![](Diagram-View_images/Diagram-View_img45.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img45.png)' | markdownify }}
 {:.image }
 
 
@@ -4918,21 +4918,21 @@ Following code illustrates how to enable SizeToContent support:
 
 
 
-   &lt;syncfusion:DiagramControl  Name="diagramControl" IsSymbolPaletteEnabled="True"&gt;
+   <syncfusion:DiagramControl  Name="diagramControl" IsSymbolPaletteEnabled="True">
 
-            &lt;syncfusion:DiagramControl.Model&gt;
+            <syncfusion:DiagramControl.Model>
 
-                &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;&lt;/syncfusion:DiagramModel&gt;
+                <syncfusion:DiagramModel x:Name="diagramModel"></syncfusion:DiagramModel>
 
-            &lt;/syncfusion:DiagramControl.Model&gt;
+            </syncfusion:DiagramControl.Model>
 
-            &lt;syncfusion:DiagramControl.View&gt;
+            <syncfusion:DiagramControl.View>
 
-                &lt;syncfusion:DiagramView SizeToContent="True"  Name="diagramView"/&gt;
+                <syncfusion:DiagramView SizeToContent="True"  Name="diagramView"/>
 
-            &lt;/syncfusion:DiagramControl.View&gt;
+            </syncfusion:DiagramControl.View>
 
-        &lt;/syncfusion:DiagramControl&gt;
+        </syncfusion:DiagramControl>
 
 
 
@@ -4966,21 +4966,21 @@ Following code illustrates how to define Diagram Page area:
 
 
 
-   &lt;syncfusion:DiagramControl  Name="diagramControl" IsSymbolPaletteEnabled="True"&gt;
+   <syncfusion:DiagramControl  Name="diagramControl" IsSymbolPaletteEnabled="True">
 
-            &lt;syncfusion:DiagramControl.Model&gt;
+            <syncfusion:DiagramControl.Model>
 
-                &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;&lt;/syncfusion:DiagramModel&gt;
+                <syncfusion:DiagramModel x:Name="diagramModel"></syncfusion:DiagramModel>
 
-            &lt;/syncfusion:DiagramControl.Model&gt;
+            </syncfusion:DiagramControl.Model>
 
-            &lt;syncfusion:DiagramControl.View&gt;
+            <syncfusion:DiagramControl.View>
 
-                &lt;syncfusion:DiagramView BoundaryConstraintsArea="100,100,850,1195" Name="diagramView"/&gt;
+                <syncfusion:DiagramView BoundaryConstraintsArea="100,100,850,1195" Name="diagramView"/>
 
-            &lt;/syncfusion:DiagramControl.View&gt;
+            </syncfusion:DiagramControl.View>
 
-        &lt;/syncfusion:DiagramControl&gt;
+        </syncfusion:DiagramControl>
 
 
 
@@ -5010,21 +5010,21 @@ Following code illustrates how to restrict diagram element moving out of specifi
 
 
 
- &lt;syncfusion:DiagramControl  Name="diagramControl" IsSymbolPaletteEnabled="True"&gt;
+ <syncfusion:DiagramControl  Name="diagramControl" IsSymbolPaletteEnabled="True">
 
-            &lt;syncfusion:DiagramControl.Model&gt;
+            <syncfusion:DiagramControl.Model>
 
-                &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;&lt;/syncfusion:DiagramModel&gt;
+                <syncfusion:DiagramModel x:Name="diagramModel"></syncfusion:DiagramModel>
 
-            &lt;/syncfusion:DiagramControl.Model&gt;
+            </syncfusion:DiagramControl.Model>
 
-            &lt;syncfusion:DiagramControl.View&gt;
+            <syncfusion:DiagramControl.View>
 
-                &lt;syncfusion:DiagramView BoundaryConstraintsEnabled="True" Name="diagramView"/&gt;
+                <syncfusion:DiagramView BoundaryConstraintsEnabled="True" Name="diagramView"/>
 
-            &lt;/syncfusion:DiagramControl.View&gt;
+            </syncfusion:DiagramControl.View>
 
-        &lt;/syncfusion:DiagramControl&gt;
+        </syncfusion:DiagramControl>
 
 
 
@@ -5064,21 +5064,21 @@ Following code illustrated how to customize the background:
 
 
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl" IsSymbolPaletteEnabled="True"&gt;
+    <syncfusion:DiagramControl  Name="diagramControl" IsSymbolPaletteEnabled="True">
 
-            &lt;syncfusion:DiagramControl.Model&gt;
+            <syncfusion:DiagramControl.Model>
 
-                &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;&lt;/syncfusion:DiagramModel&gt;
+                <syncfusion:DiagramModel x:Name="diagramModel"></syncfusion:DiagramModel>
 
-            &lt;/syncfusion:DiagramControl.Model&gt;
+            </syncfusion:DiagramControl.Model>
 
-            &lt;syncfusion:DiagramControl.View&gt;
+            <syncfusion:DiagramControl.View>
 
-                &lt;syncfusion:DiagramView OffPageBackground="White" PageBackground="White" Name="diagramView"/&gt;
+                <syncfusion:DiagramView OffPageBackground="White" PageBackground="White" Name="diagramView"/>
 
-            &lt;/syncfusion:DiagramControl.View&gt;
+            </syncfusion:DiagramControl.View>
 
-        &lt;/syncfusion:DiagramControl&gt;
+        </syncfusion:DiagramControl>
 
 
 
@@ -5108,21 +5108,21 @@ Following code illustrates how to customize the background of the Off Page:
 
 
 
-   &lt;syncfusion:DiagramControl  Name="diagramControl" IsSymbolPaletteEnabled="True"&gt;
+   <syncfusion:DiagramControl  Name="diagramControl" IsSymbolPaletteEnabled="True">
 
-            &lt;syncfusion:DiagramControl.Model&gt;
+            <syncfusion:DiagramControl.Model>
 
-                &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;&lt;/syncfusion:DiagramModel&gt;
+                <syncfusion:DiagramModel x:Name="diagramModel"></syncfusion:DiagramModel>
 
-            &lt;/syncfusion:DiagramControl.Model&gt;
+            </syncfusion:DiagramControl.Model>
 
-            &lt;syncfusion:DiagramControl.View&gt;
+            <syncfusion:DiagramControl.View>
 
-                &lt;syncfusion:DiagramView OffPageBackground="White" PageBackground="White" Name="diagramView"/&gt;
+                <syncfusion:DiagramView OffPageBackground="White" PageBackground="White" Name="diagramView"/>
 
-            &lt;/syncfusion:DiagramControl.View&gt;
+            </syncfusion:DiagramControl.View>
 
-        &lt;/syncfusion:DiagramControl&gt;
+        </syncfusion:DiagramControl>
 
 
 
@@ -5152,29 +5152,29 @@ Following code illustrates how to customize the page effect:
 
 
 
-   &lt;syncfusion:DiagramControl  Name="diagramControl" IsSymbolPaletteEnabled="True"&gt;
+   <syncfusion:DiagramControl  Name="diagramControl" IsSymbolPaletteEnabled="True">
 
-            &lt;syncfusion:DiagramControl.Model&gt;
+            <syncfusion:DiagramControl.Model>
 
-                &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;&lt;/syncfusion:DiagramModel&gt;
+                <syncfusion:DiagramModel x:Name="diagramModel"></syncfusion:DiagramModel>
 
-            &lt;/syncfusion:DiagramControl.Model&gt;
+            </syncfusion:DiagramControl.Model>
 
-            &lt;syncfusion:DiagramControl.View&gt;
+            <syncfusion:DiagramControl.View>
 
-                &lt;syncfusion:DiagramView OffPageBackground="White" PageBackground="White" Name="diagramView"&gt;
+                <syncfusion:DiagramView OffPageBackground="White" PageBackground="White" Name="diagramView">
 
-                    &lt;syncfusion:DiagramView.BackgroundEffect&gt;
+                    <syncfusion:DiagramView.BackgroundEffect>
 
-                        &lt;DropShadowEffect BlurRadius="12" Color="Black" Direction="-350" ShadowDepth="30"/&gt;
+                        <DropShadowEffect BlurRadius="12" Color="Black" Direction="-350" ShadowDepth="30"/>
 
-                    &lt;/syncfusion:DiagramView.BackgroundEffect&gt;
+                    </syncfusion:DiagramView.BackgroundEffect>
 
-                &lt;/syncfusion:DiagramView&gt;
+                </syncfusion:DiagramView>
 
-            &lt;/syncfusion:DiagramControl.View&gt;
+            </syncfusion:DiagramControl.View>
 
-        &lt;/syncfusion:DiagramControl&gt;
+        </syncfusion:DiagramControl>
 
 
 
@@ -5212,7 +5212,7 @@ diagramView.BackgroundEffect = drop
 
 
 
-{ ![C:/Users/jeganr/Desktop/RP9.3/Diagram.WPF/3.5/WindowsSamples/Getting Started/Page Settings Demo/Images/PageSettingsDemo.PNG](Diagram-View_images/Diagram-View_img46.png) | markdownify }
+{{ '![C:/Users/jeganr/Desktop/RP9.3/Diagram.WPF/3.5/WindowsSamples/Getting Started/Page Settings Demo/Images/PageSettingsDemo.PNG](Diagram-View_images/Diagram-View_img46.png)' | markdownify }}
 {:.image }
 
 
@@ -5260,7 +5260,7 @@ Multiple selections
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img47.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img47.png)' | markdownify }}
 {:.image }
 
 
@@ -5282,7 +5282,7 @@ This spread and pinch gesture is used to perform, zooming and resizing operation
 * Zooming the DiagramView with two fingers can be done
 * Resizing the Node with two fingers can be done
 
-{ ![](Diagram-View_images/Diagram-View_img48.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img48.png)' | markdownify }}
 {:.image }
 
 
@@ -5290,7 +5290,7 @@ _Spread_
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img49.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img49.png)' | markdownify }}
 {:.image }
 
 
@@ -5331,23 +5331,23 @@ Follow the steps below to use the Overview control for DiagramControl:
 
 
 
-&lt;!-- Diagram Control --&gt;
+<!-- Diagram Control -->
 
-        &lt;syncfusion:DiagramControl Name="diagramControl" IsSymbolPaletteEnabled="True"&gt;
+        <syncfusion:DiagramControl Name="diagramControl" IsSymbolPaletteEnabled="True">
 
-            &lt;syncfusion:DiagramControl.Model&gt;
+            <syncfusion:DiagramControl.Model>
 
-                &lt;syncfusion:DiagramModel x:Name="diagramModel"/&gt;
+                <syncfusion:DiagramModel x:Name="diagramModel"/>
 
-            &lt;/syncfusion:DiagramControl.Model&gt;
+            </syncfusion:DiagramControl.Model>
 
-            &lt;syncfusion:DiagramControl.View&gt;
+            <syncfusion:DiagramControl.View>
 
-                &lt;syncfusion:DiagramView Name="diagramView"/&gt;
+                <syncfusion:DiagramView Name="diagramView"/>
 
-            &lt;/syncfusion:DiagramControl.View&gt;
+            </syncfusion:DiagramControl.View>
 
-        &lt;/syncfusion:DiagramControl&gt;
+        </syncfusion:DiagramControl>
 
 
 
@@ -5357,15 +5357,15 @@ Follow the steps below to use the Overview control for DiagramControl:
 
 
 
-&lt;!-- Overview Control --&gt;
+<!-- Overview Control -->
 
-        &lt;shared:Overview Grid.Column="1" OverviewSourceAncestor="{Binding ElementName=diagramView}"/&gt;
+        <shared:Overview Grid.Column="1" OverviewSourceAncestor="{Binding ElementName=diagramView}"/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
-{ ![C:/Users/labuser/Desktop/ttt.PNG](Diagram-View_images/Diagram-View_img50.png) | markdownify }
+{{ '![C:/Users/labuser/Desktop/ttt.PNG](Diagram-View_images/Diagram-View_img50.png)' | markdownify }}
 {:.image }
 
 
@@ -5506,33 +5506,33 @@ The following code illustrates how to set the ItemSelectionMode as Single:
 
 
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl Name="diagramControl"&gt;
+    <syncfusion:DiagramControl Name="diagramControl">
 
-        &lt;!-- Model to add nodes and connections.--&gt;
+        <!-- Model to add nodes and connections.-->
 
-        &lt;syncfusion:DiagramControl.Model&gt;
+        <syncfusion:DiagramControl.Model>
 
-            &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;
+            <syncfusion:DiagramModel x:Name="diagramModel">
 
-            &lt;/syncfusion:DiagramModel&gt;
+            </syncfusion:DiagramModel>
 
-        &lt;/syncfusion:DiagramControl.Model&gt;
+        </syncfusion:DiagramControl.Model>
 
 
 
-        &lt;!--View to display nodes and connections added through the model.--&gt;
+        <!--View to display nodes and connections added through the model.-->
 
-&lt;syncfusion:DiagramControl.View&gt;
+<syncfusion:DiagramControl.View>
 
-   &lt;syncfusion:DiagramView Name="diagramView" ItemSelectionMode="Single"&gt;
+   <syncfusion:DiagramView Name="diagramView" ItemSelectionMode="Single">
 
-   &lt;/syncfusion:DiagramView&gt;
+   </syncfusion:DiagramView>
 
-&lt;/syncfusion:DiagramControl.View&gt;
+</syncfusion:DiagramControl.View>
 
-    &lt;/syncfusion:DiagramControl&gt;
+    </syncfusion:DiagramControl>
 
 
 
@@ -5560,7 +5560,7 @@ diagramview.ItemSelectionMode = ItemSelectionMode.Single;
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img51.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img51.png)' | markdownify }}
 {:.image }
 
 
@@ -5572,37 +5572,37 @@ The following code illustrates how to set the ItemSelectionMode as Multiple:
 
 
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl Name="diagramControl"&gt;
-
-
-
-        &lt;!-- Model to add nodes and connections.--&gt;
-
-        &lt;syncfusion:DiagramControl.Model&gt;
+    <syncfusion:DiagramControl Name="diagramControl">
 
 
 
-            &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;
+        <!-- Model to add nodes and connections.-->
 
-            &lt;/syncfusion:DiagramModel&gt;
-
-        &lt;/syncfusion:DiagramControl.Model&gt;
+        <syncfusion:DiagramControl.Model>
 
 
 
-        &lt;!—View to display nodes and connections added through the model.--&gt;
+            <syncfusion:DiagramModel x:Name="diagramModel">
 
-&lt;syncfusion:DiagramControl.View&gt;
+            </syncfusion:DiagramModel>
 
-   &lt;syncfusion:DiagramView Name="diagramView" ItemSelectionMode="Multiple"&gt;
+        </syncfusion:DiagramControl.Model>
 
-   &lt;/syncfusion:DiagramView&gt;
 
-&lt;/syncfusion:DiagramControl.View&gt;
 
-    &lt;/syncfusion:DiagramControl&gt;
+        <!—View to display nodes and connections added through the model.-->
+
+<syncfusion:DiagramControl.View>
+
+   <syncfusion:DiagramView Name="diagramView" ItemSelectionMode="Multiple">
+
+   </syncfusion:DiagramView>
+
+</syncfusion:DiagramControl.View>
+
+    </syncfusion:DiagramControl>
 
 
 
@@ -5632,7 +5632,7 @@ diagramview.ItemSelectionMode = ItemSelectionMode.Multiple;
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img52.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img52.png)' | markdownify }}
 {:.image }
 
 
@@ -5722,21 +5722,21 @@ Steps to create ContextViewManager
 
 [XAML]
 
-&lt;syncfusion:DiagramControl  Height="235" Width="250"  Name="targetDiagramControl"&gt;
+<syncfusion:DiagramControl  Height="235" Width="250"  Name="targetDiagramControl">
 
-&lt;syncfusion:DiagramControl.Model&gt;
+<syncfusion:DiagramControl.Model>
 
-&lt;syncfusion:DiagramModel x:Name="targetDiagramModel"/&gt;
+<syncfusion:DiagramModel x:Name="targetDiagramModel"/>
 
-&lt;/syncfusion:DiagramControl.Model&gt;
+</syncfusion:DiagramControl.Model>
 
-&lt;syncfusion:DiagramControl.View&gt;
+<syncfusion:DiagramControl.View>
 
-&lt;syncfusion:DiagramView EnableFitToPage="True" Name="targetDiagramView"/&gt;
+<syncfusion:DiagramView EnableFitToPage="True" Name="targetDiagramView"/>
 
-&lt;/syncfusion:DiagramControl.View&gt;
+</syncfusion:DiagramControl.View>
 
-&lt;/syncfusion:DiagramControl&gt;
+</syncfusion:DiagramControl>
 
 
 
@@ -5829,7 +5829,7 @@ ContextView.ContextViewMode =ContextViewMode.Predecessors
 
 
 
-{ ![C:/Users/jeganr/AppData/Local/Syncfusion/EssentialStudio/10.3.0.25/WPF/Diagram.WPF/Samples/3.5/WindowsSamples/Getting Started/Context View Demo/Images/ContextViewDemo.png](Diagram-View_images/Diagram-View_img53.png) | markdownify }
+{{ '![C:/Users/jeganr/AppData/Local/Syncfusion/EssentialStudio/10.3.0.25/WPF/Diagram.WPF/Samples/3.5/WindowsSamples/Getting Started/Context View Demo/Images/ContextViewDemo.png](Diagram-View_images/Diagram-View_img53.png)' | markdownify }}
 {:.image }
 
 
@@ -5943,15 +5943,15 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWP
 
 xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;Grid Name="diagramgrid"&gt;
+    <Grid Name="diagramgrid">
 
-        &lt;sfdiagram:DiagramControl IsSymbolPaletteEnabled="True"&gt;
+        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True">
 
-        &lt;/sfdiagram:DiagramControl&gt;
+        </sfdiagram:DiagramControl>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -5975,7 +5975,7 @@ diagramcontrol.IsSymbolPaletteEnabled = True
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img54.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img54.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6044,7 +6044,7 @@ diagramControl1.SymbolPalette.ShowPreview = true;
 
 
 
-{ ![Description: C:/Users/jeganr/Desktop/New Images/New Images/Preview.png](Diagram-View_images/Diagram-View_img55.png) | markdownify }
+{{ '![Description: C:/Users/jeganr/Desktop/New Images/New Images/Preview.png](Diagram-View_images/Diagram-View_img55.png)' | markdownify }}
 {:.image }
 
 
@@ -6074,7 +6074,7 @@ TryCast(diagramControl1.SymbolPalette.SymbolGroups(0).Items(0),  SymbolPaletteIt
 
 
 
-{ ![Description: C:/Users/jeganr/Desktop/New Images/New Images/PreviewBrush.png](Diagram-View_images/Diagram-View_img56.png) | markdownify }
+{{ '![Description: C:/Users/jeganr/Desktop/New Images/New Images/PreviewBrush.png](Diagram-View_images/Diagram-View_img56.png)' | markdownify }}
 {:.image }
 
 
@@ -6128,7 +6128,7 @@ dc.SymbolPalette.SymbolGroups.Add(s)
 
 This adds a new empty group named "Custom" and creates a filter for it.
 
-{ ![](Diagram-View_images/Diagram-View_img57.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img57.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6228,7 +6228,7 @@ Run the application. The following output is displayed and the groups and filter
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img58.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img58.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6416,7 +6416,7 @@ Run the application. The following output is displayed and the groups and filter
 
 
 
-{ ![Description: C:/Users/deepav/Desktop/wpffilter.png](Diagram-View_images/Diagram-View_img59.png) | markdownify }
+{{ '![Description: C:/Users/deepav/Desktop/wpffilter.png](Diagram-View_images/Diagram-View_img59.png)' | markdownify }}
 {:.image }
 
 
@@ -6458,7 +6458,7 @@ Symbol Designer application allows you to create new palettes with symbols, and 
 
 Software Path
 
-..\..\Syncfusion\Essential Studio\&lt;Version Number&gt;\utilities\Diagram WPF\Symbol Designer
+..\..\Syncfusion\Essential Studio\<Version Number>\utilities\Diagram WPF\Symbol Designer
 
 (or)
 
@@ -6473,7 +6473,7 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 1. Open the Symbol Designer tool which is available in the software path given above.
 2. If you want to create a new symbol, select New option in the File menu. Type a name for the palette as shown in the below sample and click OK.
 
-{ ![C:/Users/sundarm/Desktop/1.PNG](Diagram-View_images/Diagram-View_img60.png) | markdownify }
+{{ '![C:/Users/sundarm/Desktop/1.PNG](Diagram-View_images/Diagram-View_img60.png)' | markdownify }}
 {:.image }
 
 
@@ -6481,7 +6481,7 @@ _New Symbol PaletteItem Dialog Box_
 
 3. A new symbol palette is created with the given name after which, you can design your own symbol.
 
-{ ![C:/Users/sundarm/Desktop/2nd.PNG](Diagram-View_images/Diagram-View_img61.png) | markdownify }
+{{ '![C:/Users/sundarm/Desktop/2nd.PNG](Diagram-View_images/Diagram-View_img61.png)' | markdownify }}
 {:.image }
 
 
@@ -6489,7 +6489,7 @@ _Flow Diagram Symbol Palette_
 
 4. Draw the desired shapes using drawing tool in the work area.
 
-{ ![C:/Users/sundarm/Desktop/new3rd.PNG](Diagram-View_images/Diagram-View_img62.png) | markdownify }
+{{ '![C:/Users/sundarm/Desktop/new3rd.PNG](Diagram-View_images/Diagram-View_img62.png)' | markdownify }}
 {:.image }
 
 
@@ -6506,7 +6506,7 @@ The Shape of the SymbolPaletteItem can be customized further using format tab in
 
 The node label can also be customized.
 
-{ ![C:/Users/jeganr/Desktop/I/format.PNG](Diagram-View_images/Diagram-View_img63.png) | markdownify }
+{{ '![C:/Users/jeganr/Desktop/I/format.PNG](Diagram-View_images/Diagram-View_img63.png)' | markdownify }}
 {:.image }
 
 
@@ -6514,7 +6514,7 @@ _Format tab_
 
 5. After creating required symbols, we have to save this symbol into the symbol palette. Go to the File menu and click Save. A Save SymbolPaletteGroup dialog will appear as in the following screen shot.
 
-{ ![](Diagram-View_images/Diagram-View_img64.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img64.png)' | markdownify }}
 {:.image }
 
 
@@ -6522,7 +6522,7 @@ _Save SymbolPalette Group Dialog_
 
 6. Give a relevant file name for the palette and click Save. As the PaletteGroup is saved, preview of the symbol will be shown in Symbol Palette.
 
-{ ![C:/Users/sundarm/Desktop/8yh.PNG](Diagram-View_images/Diagram-View_img65.png) | markdownify }
+{{ '![C:/Users/sundarm/Desktop/8yh.PNG](Diagram-View_images/Diagram-View_img65.png)' | markdownify }}
 {:.image }
 
 
@@ -6530,19 +6530,19 @@ _Symbol Palette With New Symbol_
 
 7. Repeat the steps 3 to 7 for creating more symbols.
 
-{ ![C:/Users/jeganr/Desktop/I/mutlipletag3.PNG](Diagram-View_images/Diagram-View_img66.png) | markdownify }
+{{ '![C:/Users/jeganr/Desktop/I/mutlipletag3.PNG](Diagram-View_images/Diagram-View_img66.png)' | markdownify }}
 {:.image }
 
 
 _Symbol pallet with PART_Triangle_
 
-{ ![C:/Users/jeganr/Desktop/I/mutlipletag.PNG](Diagram-View_images/Diagram-View_img67.png) | markdownify }
+{{ '![C:/Users/jeganr/Desktop/I/mutlipletag.PNG](Diagram-View_images/Diagram-View_img67.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/jeganr/Desktop/I/mutlipletag2.PNG](Diagram-View_images/Diagram-View_img68.png) | markdownify }
+{{ '![C:/Users/jeganr/Desktop/I/mutlipletag2.PNG](Diagram-View_images/Diagram-View_img68.png)' | markdownify }}
 {:.image }
 
 
@@ -6633,7 +6633,7 @@ group.Items.Add(item)
 
 This adds the image content to the newly created SymbolPaletteitem that belongs to the SymbolPalettegroup named "Custom".
 
-{ ![](Diagram-View_images/Diagram-View_img69.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img69.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6684,7 +6684,7 @@ The following are the steps to create a SymbolPaletteItem and import symbols fro
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img70.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img70.png)' | markdownify }}
 {:.image }
 
 
@@ -6692,7 +6692,7 @@ _New Project_
 
 7. Design the content as required.
 
-{ ![Description: C:/Users/sundarm/Desktop/IMG_10102011_045130.png](Diagram-View_images/Diagram-View_img71.png) | markdownify }
+{{ '![Description: C:/Users/sundarm/Desktop/IMG_10102011_045130.png](Diagram-View_images/Diagram-View_img71.png)' | markdownify }}
 {:.image }
 
 
@@ -6706,19 +6706,19 @@ _Note: The selected part will act as the parent element, name the element as de
 <table>
 <tr>
 <td>
-<br>{{ '_Note: This name property is required for serialization. So this property cannot be set to null._' | markdownify }}</td></tr>
+<br>{{{ ''_Note: This name property is required for serialization. So this property cannot be set to null._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 10. Click Window option in the blend menu.11. Select the Syncfusion Symbol Exporter add-on. 12. A popup window will be displayed. You can dock this within the blend as shown in following screenshot:</td></tr>
 </table>
 
-{ ![Description: C:/Users/jeganr/Desktop/I/newname.PNG](Diagram-View_images/Diagram-View_img72.png) | markdownify }
+{{ '![Description: C:/Users/jeganr/Desktop/I/newname.PNG](Diagram-View_images/Diagram-View_img72.png)' | markdownify }}
 {:.image }
 
 
 _Syncfusion____Symbol Exporter_
 
-{ ![Description: C:/Users/sundarm/Desktop/obj.PNG](Diagram-View_images/Diagram-View_img73.png) | markdownify }
+{{ '![Description: C:/Users/sundarm/Desktop/obj.PNG](Diagram-View_images/Diagram-View_img73.png)' | markdownify }}
 {:.image }
 
 
@@ -6728,7 +6728,7 @@ _Object and Timeline Window_
 14. The Save SymbolPaletteItem dialog opens.
 15. Name the file and save this as XAML file in the desired location.
 
-{ ![](Diagram-View_images/Diagram-View_img74.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img74.png)' | markdownify }}
 {:.image }
 
 
@@ -6748,7 +6748,7 @@ The following steps demonstrate how to specify a Node or Node with Ports in Symb
 
 At runtime, Nodes that are added in SymbolPalette can be dragged and dropped on the page. All the ports, and their properties will be cloned and a new copy of the node will be created.
 
-{ ![C:/Users/riaj/Desktop/Ports.PNG](Diagram-View_images/Diagram-View_img75.png) | markdownify }
+{{ '![C:/Users/riaj/Desktop/Ports.PNG](Diagram-View_images/Diagram-View_img75.png)' | markdownify }}
 {:.image }
 
 
@@ -6844,7 +6844,7 @@ The groups can be given as SymbolPaletteItem’s content. At runtime, they can b
 
 
 
-{ ![C:/Users/riaj/Desktop/image10_91.png](Diagram-View_images/Diagram-View_img76.png) | markdownify }
+{{ '![C:/Users/riaj/Desktop/image10_91.png](Diagram-View_images/Diagram-View_img76.png)' | markdownify }}
 {:.image }
 
 
@@ -7001,14 +7001,14 @@ No</td></tr>
 <tr>
 <td>
 SymbolPaletteGroupForeground</td><td>
-Specifies the foreground color of the SymbolPalette Group.The default color is SaddleBrown{{ '_._' | markdownify }}</td><td>
+Specifies the foreground color of the SymbolPalette Group.The default color is SaddleBrown{{{ ''_._'' | markdownify }}}</td><td>
 Dependency property</td><td>
 Brush</td><td>
 No</td></tr>
 <tr>
 <td>
 SymbolPaletteGroupBorderBrush</td><td>
-Specifies the border color of the SymbolPalette Group.The default color is Chocolate{{ '_._' | markdownify }}</td><td>
+Specifies the border color of the SymbolPalette Group.The default color is Chocolate{{{ ''_._'' | markdownify }}}</td><td>
 Dependency property</td><td>
 Brush</td><td>
 No</td></tr>
@@ -7134,14 +7134,14 @@ No</td></tr>
 <tr>
 <td>
 CheckerBorderBrush</td><td>
-Specifies the the border color of the Check Boxes in the SymbolPalette pop-up.The default value is DarkSlateGray{{ '_._' | markdownify }}</td><td>
+Specifies the the border color of the Check Boxes in the SymbolPalette pop-up.The default value is DarkSlateGray{{{ ''_._'' | markdownify }}}</td><td>
 Dependency property</td><td>
 Brush</td><td>
 No</td></tr>
 <tr>
 <td>
 CheckerTickBrush</td><td>
-Specifies the Tick color of the selected Check Box in the SymbolPalette pop-up.The default value is DarkSlateGray{{ '_._' | markdownify }}</td><td>
+Specifies the Tick color of the selected Check Box in the SymbolPalette pop-up.The default value is DarkSlateGray{{{ ''_._'' | markdownify }}}</td><td>
 Dependency property</td><td>
 Brush</td><td>
 No</td></tr>
@@ -7222,7 +7222,7 @@ The following screenshot illustrates the various customization options that are 
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img77.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img77.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7232,7 +7232,7 @@ The following screenshot illustrates the various customization options available
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img78.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img78.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7458,35 +7458,35 @@ The following code samples illustrate this.
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-        &lt;Style TargetType="syncfusion:SymbolPaletteGroup"&gt;
+        <Style TargetType="syncfusion:SymbolPaletteGroup">
 
-        &lt;Setter Property="Label" Value="{Binding Label}"&gt;&lt;/Setter&gt;
+        <Setter Property="Label" Value="{Binding Label}"></Setter>
 
-            &lt;Setter Property="syncfusion:SymbolPalette.FilterIndexes" Value="{Binding Filter}"&gt;
+            <Setter Property="syncfusion:SymbolPalette.FilterIndexes" Value="{Binding Filter}">
 
-        &lt;/Setter&gt;
+        </Setter>
 
-        &lt;Setter Property="ItemTemplate"&gt;
+        <Setter Property="ItemTemplate">
 
-            &lt;Setter.Value&gt;
+            <Setter.Value>
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-                        &lt;syncfusion:SymbolPaletteItem Height="50" Width="50"  Content="{Binding Content}"&gt;
+                        <syncfusion:SymbolPaletteItem Height="50" Width="50"  Content="{Binding Content}">
 
-                    &lt;/syncfusion:SymbolPaletteItem&gt;
+                    </syncfusion:SymbolPaletteItem>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-            &lt;/Setter.Value&gt;
+            </Setter.Value>
 
-        &lt;/Setter&gt;
+        </Setter>
 
-        &lt;/Style&gt;
+        </Style>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -7582,7 +7582,7 @@ public string Content { get; set; }
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img79.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img79.png)' | markdownify }}
 {:.image }
 
 
@@ -7685,7 +7685,7 @@ dc.Save()
 
 The Save Dialog box will appear. Select the 'Save as Type' as XAML and select the location at which the file is to be saved and click the save button in the dialog box after specifying a name for the file.
 
-{ ![](Diagram-View_images/Diagram-View_img80.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img80.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7779,7 +7779,7 @@ dc.Load()
 
 The Load Dialog box will appear. Select the 'Files of Type' as XAML and specify the path of the file to be loaded and click the Open button in the dialog box. The selected page gets loaded in the current view and the page is ready to be edited.
 
-{ ![](Diagram-View_images/Diagram-View_img81.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img81.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7847,7 +7847,7 @@ Use Case Scenarios
 
 Localization is the process of customizing the User Interface (UI) in a language and culture specific to a particular country or region to display regional data. Localization is the key feature that provides solutions to global customers with the help of localized resource files provided by controls.
 
-{ ![](Diagram-View_images/Diagram-View_img82.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img82.png)' | markdownify }}
 {:.image }
 
 
@@ -7936,7 +7936,7 @@ End Sub
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img83.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img83.png)' | markdownify }}
 {:.image }
 
 
@@ -7962,7 +7962,7 @@ diagramControl.LocalizationPath = "Resources.Controls"
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img84.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img84.png)' | markdownify }}
 {:.image }
 
 
@@ -7986,7 +7986,7 @@ diagramControl.LocalizationPath = "Resources.X.Y.Z"
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img85.png) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img85.png)' | markdownify }}
 {:.image }
 
 
@@ -8203,9 +8203,9 @@ The events can be specified using DiagramView object as follows.
 
 
 
-&lt;sfdiagram:DiagramView Name="diagramView" NodeClick="diagramView_NodeClick"&gt;
+<sfdiagram:DiagramView Name="diagramView" NodeClick="diagramView_NodeClick">
 
-&lt;/sfdiagram:DiagramView&gt; 
+</sfdiagram:DiagramView> 
 
 
 
@@ -8263,9 +8263,9 @@ End Sub
 
 
 
-&lt;sfdiagram:DiagramView Name="diagramView" ConnectorDoubleClick="diagramView_ConnectorDoubleClick"&gt;
+<sfdiagram:DiagramView Name="diagramView" ConnectorDoubleClick="diagramView_ConnectorDoubleClick">
 
-&lt;/sfdiagram:DiagramView&gt;
+</sfdiagram:DiagramView>
 
 
 
@@ -8375,7 +8375,7 @@ The corresponding node or connector is selected by moving the mouse pointer to t
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img86.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img86.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8393,7 +8393,7 @@ To move the connector, follow these steps.
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img87.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img87.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8664,7 +8664,7 @@ line.LabelBackground = Brushes.Yellow
 
 The following output is generated using the code snippets above:
 
-{ ![](Diagram-View_images/Diagram-View_img88.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img88.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8782,7 +8782,7 @@ line.ContextMenu = menu
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img89.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img89.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8972,7 +8972,7 @@ TryCast(n.Content, Button).IsHitTestVisible = True
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img90.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img90.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8988,13 +8988,13 @@ Users can specify their own custom shapes to be used for the node as follows. Fi
 
 
 
-&lt;Style TargetType="{x:Type Path}" x:Key="myNode"&gt;
+<Style TargetType="{x:Type Path}" x:Key="myNode">
 
-    &lt;Setter Property="Data" Value="M200,239L200,200 240,239 280,202 320,238 281,279 240,244 198,279z"&gt;&lt;/Setter&gt;
+    <Setter Property="Data" Value="M200,239L200,200 240,239 280,202 320,238 281,279 240,244 198,279z"></Setter>
 
-    &lt;Setter Property="Fill" Value="MidnightBlue" /&gt;
+    <Setter Property="Fill" Value="MidnightBlue" />
 
-&lt;/Style&gt;
+</Style>
 
 
 
@@ -9030,7 +9030,7 @@ diagramModel.Nodes.Add(n)
 
 
 
-{ ![](Diagram-View_images/Diagram-View_img91.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img91.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9044,57 +9044,57 @@ You can specify style with triggers which is applied to all the Nodes as shown i
 
 
 
-            &lt;Style TargetType="{x:Type syncfusion:Node}" x:Key="{x:Type syncfusion:Node}"&gt;
+            <Style TargetType="{x:Type syncfusion:Node}" x:Key="{x:Type syncfusion:Node}">
 
-                &lt;Setter Property="LabelHorizontalAlignment" Value="Center"/&gt;
+                <Setter Property="LabelHorizontalAlignment" Value="Center"/>
 
-                &lt;Setter Property="LabelVerticalAlignment" Value="Center"/&gt;
+                <Setter Property="LabelVerticalAlignment" Value="Center"/>
 
-                &lt;Setter Property="Foreground" Value="Black"/&gt;
+                <Setter Property="Foreground" Value="Black"/>
 
-                &lt;Setter Property="FontWeight" Value="Bold"/&gt;
+                <Setter Property="FontWeight" Value="Bold"/>
 
-                &lt;Style.Triggers&gt;
+                <Style.Triggers>
 
-                    &lt;Trigger Property="Level"  Value="0"&gt;
+                    <Trigger Property="Level"  Value="0">
 
-                        &lt;Setter Property="CustomPathStyle"&gt;
+                        <Setter Property="CustomPathStyle">
 
-                            &lt;Setter.Value&gt;
+                            <Setter.Value>
 
-                                &lt;Style TargetType="{x:Type Path}"&gt;
+                                <Style TargetType="{x:Type Path}">
 
-                                    &lt;Setter Property="Fill" Value="LightGray" /&gt;
+                                    <Setter Property="Fill" Value="LightGray" />
 
-                                &lt;/Style&gt;
+                                </Style>
 
-                            &lt;/Setter.Value&gt;
+                            </Setter.Value>
 
-                        &lt;/Setter&gt;
+                        </Setter>
 
-                    &lt;/Trigger&gt;
+                    </Trigger>
 
-                    &lt;Trigger Property="Level"  Value="2"&gt;
+                    <Trigger Property="Level"  Value="2">
 
-                        &lt;Setter Property="CustomPathStyle"&gt;
+                        <Setter Property="CustomPathStyle">
 
-                            &lt;Setter.Value&gt;
+                            <Setter.Value>
 
-                                &lt;Style TargetType="{x:Type Path}"&gt;
+                                <Style TargetType="{x:Type Path}">
 
-                                    &lt;Setter Property="Fill" Value="LightBlue" /&gt;
+                                    <Setter Property="Fill" Value="LightBlue" />
 
-                                &lt;/Style&gt;
+                                </Style>
 
-                            &lt;/Setter.Value&gt;
+                            </Setter.Value>
 
-                        &lt;/Setter&gt;
+                        </Setter>
 
-                    &lt;/Trigger&gt;
+                    </Trigger>
 
-                &lt;/Style.Triggers&gt;
+                </Style.Triggers>
 
-            &lt;/Style&gt;
+            </Style>
 
          1.2.1.5 Restrict Port Connections
 
@@ -9709,31 +9709,31 @@ MultiTrigger enables you to set the property values or start actions based on a 
 
 [XAML]
 
-    &lt;Style.Triggers&gt;
+    <Style.Triggers>
 
-        &lt;MultiTrigger&gt;
+        <MultiTrigger>
 
-            &lt;MultiTrigger.Conditions&gt;
+            <MultiTrigger.Conditions>
 
-                &lt;Condition Property="IsSelected" Value="True"/&gt;
+                <Condition Property="IsSelected" Value="True"/>
 
-                &lt;Condition Property="Tag" Value="True"/&gt;
+                <Condition Property="Tag" Value="True"/>
 
-            &lt;/MultiTrigger.Conditions&gt;
+            </MultiTrigger.Conditions>
 
-            &lt;Setter Property="Effect"&gt;
+            <Setter Property="Effect">
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;DropShadowEffect Color="Gray" BlurRadius="5" Direction="325" ShadowDepth="5"/&gt;
+                    <DropShadowEffect Color="Gray" BlurRadius="5" Direction="325" ShadowDepth="5"/>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-        &lt;/MultiTrigger&gt;
+        </MultiTrigger>
 
-    &lt;/Style.Triggers&gt;
+    </Style.Triggers>
 
 
 
@@ -10200,7 +10200,7 @@ node.LabelVerticalTextAlignment = VerticalAlignment.Top;
 
 
 
-{ ![C:/Users/saranya/Desktop/text.jpg](Diagram-View_images/Diagram-View_img92.jpeg) | markdownify }
+{{ '![C:/Users/saranya/Desktop/text.jpg](Diagram-View_images/Diagram-View_img92.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10248,7 +10248,7 @@ node.Label = "LabelEditor";
 
 
 
-{ ![C:/Users/saranya/Desktop/ls.jpg](Diagram-View_images/Diagram-View_img93.jpeg) | markdownify }
+{{ '![C:/Users/saranya/Desktop/ls.jpg](Diagram-View_images/Diagram-View_img93.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10271,7 +10271,7 @@ conn.LabelHeight = 100;
 conn.Label = "LabelEditor";
 
 
-{ ![](Diagram-View_images/Diagram-View_img94.jpeg) | markdownify }
+{{ '![](Diagram-View_images/Diagram-View_img94.jpeg)' | markdownify }}
 {:.image }
 
 

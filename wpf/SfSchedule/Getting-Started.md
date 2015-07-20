@@ -31,13 +31,13 @@ Refer to the following code to add a Schedule:
 
         Width="950" Height="600">
 
-    &lt;Grid x:Name="LayoutRoot"&gt;
+    <Grid x:Name="LayoutRoot">
 
-        &lt;schedule:SfSchedule/&gt;
+        <schedule:SfSchedule/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -61,7 +61,7 @@ this.grid.Children.Add(schedule);
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -73,25 +73,25 @@ To Add SfSchedule Control, follow the steps below:
 
 1. Create a simple WPF application using Visual Studio.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
 2. Right Click on the Project and select Syncfusion Reference Manager.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
 3. The Syncfusion Reference Manager Wizard will be opened as shown in the figure below.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
 4.  Search for “SfSchedule” using SearchBox and select SfSchedule Control.  Click on done to add selected SfSchedule Control.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -99,11 +99,11 @@ __
 
 5. The SfSchedule assemblies will be automatically added to the Project after Clicking OK
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -149,13 +149,13 @@ xmlns:schedule="clr-namespace:Syncfusion.UI.Xaml.Schedule;assembly=Syncfusion.Sf
 
         Width="950" Height="600">
 
-    &lt;Grid x:Name="LayoutRoot"&gt;
+    <Grid x:Name="LayoutRoot">
 
-        &lt;schedule:SfSchedule/&gt;
+        <schedule:SfSchedule/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -203,7 +203,7 @@ namespace SfScheduleSample
 
 8. The simple SfSchedule control will be created as shown in the figure below.
 
-{ ![C:/Users/jeyasri/Pictures/Schedule/Default.png](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![C:/Users/jeyasri/Pictures/Schedule/Default.png](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 

@@ -21,47 +21,47 @@ To set the group padding, use the below code
 
 
 
-&lt;!-- Adding TaskBar that have group padding as 20 --&gt;
+<!-- Adding TaskBar that have group padding as 20 -->
 
-&lt;syncfusion:TaskBar Name="taskBar" GroupMargin="5" 												syncfusion:TaskBar.GroupPadding="20"&gt;
-
-
-
-    &lt;!-- Adding TaskBarItem --&gt;
-
-    &lt;syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1"&gt;
+<syncfusion:TaskBar Name="taskBar" GroupMargin="5" 												syncfusion:TaskBar.GroupPadding="20">
 
 
 
-        &lt;!-- Adding content to taskbaritem --&gt;
+    <!-- Adding TaskBarItem -->
 
-        &lt;StackPanel Margin="10" HorizontalAlignment="Center" VerticalAlignment="Stretch"&gt;
-
-            <TextBlock TextWrapping="Wrap">This taskbar provides an UI similar to that of Windows XP.&lt;/TextBlock&gt;
-
-        &lt;/StackPanel&gt;
-
-    &lt;/syncfusion:TaskBarItem&gt;
+    <syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1">
 
 
 
-    &lt;!-- Adding TaskBarItem --&gt;
+        <!-- Adding content to taskbaritem -->
 
-    &lt;syncfusion:TaskBarItem Name="taskBarItem2" Header="TaskBarItem2"&gt;
+        <StackPanel Margin="10" HorizontalAlignment="Center" VerticalAlignment="Stretch">
+
+            <TextBlock TextWrapping="Wrap">This taskbar provides an UI similar to that of Windows XP.</TextBlock>
+
+        </StackPanel>
+
+    </syncfusion:TaskBarItem>
 
 
 
-        &lt;!-- Adding content to TaskBarItem --&gt;
+    <!-- Adding TaskBarItem -->
 
-        &lt;StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch"&gt;
+    <syncfusion:TaskBarItem Name="taskBarItem2" Header="TaskBarItem2">
 
-            <TextBlock TextWrapping="Wrap">Specify and customize the group 	margin.&lt;/TextBlock&gt;
 
-        &lt;/StackPanel&gt;
 
-    &lt;/syncfusion:TaskBarItem&gt;
+        <!-- Adding content to TaskBarItem -->
 
-&lt;/syncfusion:TaskBar&gt;
+        <StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch">
+
+            <TextBlock TextWrapping="Wrap">Specify and customize the group 	margin.</TextBlock>
+
+        </StackPanel>
+
+    </syncfusion:TaskBarItem>
+
+</syncfusion:TaskBar>
 
 
 
@@ -79,7 +79,7 @@ TaskBar.SetGroupPadding(taskBar, new Thickness(20));
 
 
 
-{ ![](Setting-Group-Padding_images/Setting-Group-Padding_img1.jpeg) | markdownify }
+{{ '![](Setting-Group-Padding_images/Setting-Group-Padding_img1.jpeg)' | markdownify }}
 {:.image }
 
 

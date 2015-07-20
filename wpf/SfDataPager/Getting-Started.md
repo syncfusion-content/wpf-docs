@@ -47,7 +47,7 @@ Covers an editors like CurrencyTextBox, PercentEdit, DateTimeEdit.</td></tr>
 
 The following screenshot describes the elements of the DataPager control.
 
-{ ![B:/Support/2015/April/24/Image/DataPager/structure1.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/DataPager/structure1.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -69,7 +69,7 @@ The following steps help you to use the SfDataPager in an application:
 
 
 
-{ ![C:/Users/ilanchezhiyan/Desktop/drag.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![C:/Users/ilanchezhiyan/Desktop/drag.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -82,17 +82,17 @@ The following steps help you to use the SfDataPager in an application:
 
 [XAML]
 
-&lt;Window xmlns:datapager="http://schemas.syncfusion.com/wpf"&gt;
+<Window xmlns:datapager="http://schemas.syncfusion.com/wpf">
 
- &lt;Grid&gt;
+ <Grid>
 
-      &lt;datapager:SfDataPager x:Name="sfDataPager"/&gt;
+      <datapager:SfDataPager x:Name="sfDataPager"/>
 
 
 
-  &lt;/Grid&gt;
+  </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -250,13 +250,13 @@ public class ViewModel
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-  &lt;local:ViewModel/&gt;
+  <local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
-&lt;Grid&gt; 
+<Grid> 
 
          <datapager:SfDataPager x:Name="sfDataPager" 
 
@@ -270,7 +270,7 @@ public class ViewModel
 
                                 Source="{Binding OrderInfoCollection}" />
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -278,21 +278,21 @@ public class ViewModel
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-  &lt;local:Viewmodel/&gt;
+  <local:Viewmodel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;Grid.RowDefinitions&gt;
+        <Grid.RowDefinitions>
 
-            &lt;RowDefinition Height="*" /&gt;
+            <RowDefinition Height="*" />
 
-            &lt;RowDefinition Height="Auto" /&gt;
+            <RowDefinition Height="Auto" />
 
-        &lt;/Grid.RowDefinitions&gt;
+        </Grid.RowDefinitions>
 
         <sfgrid:SfDataGrid AutoGenerateColumns="True" 
 
@@ -310,7 +310,7 @@ public class ViewModel
 
                                 Source="{Binding OrdersDetails}" />
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -318,7 +318,7 @@ The following screenshot displays the output for Implementation of the SfDataPag
 
 
 
-{ ![B:/Support/2015/April/24/Image/DataPager/Figure3.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/DataPager/Figure3.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 

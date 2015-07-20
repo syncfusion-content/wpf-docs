@@ -25,7 +25,7 @@ The following code example illustrates how to add the ScrollBar to an applicatio
 
 
 
-&lt;syncfusion:TileViewControl x:Name="TileView1" Background="White"&gt;
+<syncfusion:TileViewControl x:Name="TileView1" Background="White">
 
        <syncfusion:TileViewItem BorderThickness="2" Header="TileViewItem 1"                                         
 
@@ -59,17 +59,17 @@ The following code example illustrates how to add the ScrollBar to an applicatio
 
                HeaderBackground="Gray" Margin="2" CornerRadius="3"/>
 
-&lt;/syncfusion:TileViewControl&gt;
+</syncfusion:TileViewControl>
 
 
 
-{ ![](ScrollBar-Support_images/ScrollBar-Support_img1.png) | markdownify }
+{{ '![](ScrollBar-Support_images/ScrollBar-Support_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](ScrollBar-Support_images/ScrollBar-Support_img2.png) | markdownify }
+{{ '![](ScrollBar-Support_images/ScrollBar-Support_img2.png)' | markdownify }}
 {:.image }
 
 

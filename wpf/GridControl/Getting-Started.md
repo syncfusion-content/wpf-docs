@@ -33,7 +33,7 @@ In the Grid control, each cell acts as a single entity, which is suitable for ap
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -45,7 +45,7 @@ For more detailed information about data source connections, refer to the Data B
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -55,7 +55,7 @@ The GridTree control serves as a multicolumn tree control that is optimized to d
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -67,7 +67,7 @@ Control Hierarchy
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -75,7 +75,7 @@ Model Hierarchy
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -97,7 +97,7 @@ Please follow the steps below to add the Grid control through a designer.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -105,7 +105,7 @@ Please follow the steps below to add the Grid control through a designer.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -113,7 +113,7 @@ Please follow the steps below to add the Grid control through a designer.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
  _Designer after Dropping GridControl_
 
@@ -130,7 +130,7 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -142,7 +142,7 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
 
 
 
- &lt;Grid Name="layoutRoot"/&gt;        
+ <Grid Name="layoutRoot"/>        
 
 
 
@@ -251,7 +251,7 @@ this.gridControl.QueryCellInfo += new Syncfusion.Windows.Controls.Grid.GridQu
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 

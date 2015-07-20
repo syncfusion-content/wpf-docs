@@ -22,14 +22,14 @@ In the following example, PivotGrid component tabulates Amount and Quantity over
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
 3. Select WPF Application and click OK.
 4. Drag and drop the PivotGridControl from the Syncfusion BI WPF toolbox into the Designpage. Required Syncfusion assemblies are added automatically to the application.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -49,31 +49,31 @@ In the following example, PivotGrid component tabulates Amount and Quantity over
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adds PivotGrid Control--&gt;
+        <!—Adds PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
                                      ItemSource="{Binding Source={StaticResource data}}" >
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
 6. Under Solution Explorer, right-click on the project name and select Add  New Item.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
 7. Add New Item dialog box opens as follows.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -196,25 +196,25 @@ ObjectDataProvider is usedto get the ItemSource object. Binding ItemSource with 
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;!-- Specifies the DataSource in Window Resources --&gt;
+    <!-- Specifies the DataSource in Window Resources -->
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;ResourceDictionary&gt;
+        <ResourceDictionary>
 
-            &lt;ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/&gt;
+            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
-        &lt;/ResourceDictionary&gt;
+        </ResourceDictionary>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"                                     ItemSource="{Binding Source={StaticResource data}}" /&gt;
+        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"                                     ItemSource="{Binding Source={StaticResource data}}" />
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -236,17 +236,17 @@ The PivotGrid in XAML is initialized and binding the ItemSource through code-beh
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!-- Adds PivotGrid Control --&gt;
+        <!-- Adds PivotGrid Control -->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -295,39 +295,39 @@ Through XAML
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;!--Specifies the DataSource in Window Resources--&gt;
+    <!--Specifies the DataSource in Window Resources-->
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;ResourceDictionary&gt;
+        <ResourceDictionary>
 
-            &lt;ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/&gt;
+            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
-        &lt;/ResourceDictionary&gt;
+        </ResourceDictionary>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adds PivotGrid Control--&gt;
+        <!—Adds PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
                                      ItemSource="{Binding Source={StaticResource data}}" >
 
-            &lt;!--Specifies Pivot Rows--&gt;
+            <!--Specifies Pivot Rows-->
 
-            &lt;syncfusion:PivotGridControl.PivotRows&gt;
+            <syncfusion:PivotGridControl.PivotRows>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotRows&gt;
+            </syncfusion:PivotGridControl.PivotRows>
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -349,17 +349,17 @@ The PivotGrid in XAML is initialized and adding the PivotRows through code-behin
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adds PivotGrid Control--&gt;
+        <!—Adds PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -417,39 +417,39 @@ Through XAML
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;!--Specifies the DataSource in Window Resources--&gt;
+    <!--Specifies the DataSource in Window Resources-->
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;ResourceDictionary&gt;
+        <ResourceDictionary>
 
-            &lt;ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/&gt;
+            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
-        &lt;/ResourceDictionary&gt;
+        </ResourceDictionary>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adds PivotGrid Control--&gt;
+        <!—Adds PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
                                      ItemSource="{Binding Source={StaticResource data}}" >
 
-            &lt;!--Specifies Pivot Columns--&gt;
+            <!--Specifies Pivot Columns-->
 
-            &lt;syncfusion:PivotGridControl.PivotColumns&gt;
+            <syncfusion:PivotGridControl.PivotColumns>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotColumns&gt;
+            </syncfusion:PivotGridControl.PivotColumns>
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -471,17 +471,17 @@ The PivotGrid in XAML is initialized and adding the PivotColumns through code-be
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adds PivotGrid Control--&gt;
+        <!—Adds PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -539,39 +539,39 @@ End Sub
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;!--Specifies the DataSource in Window Resources--&gt;
+    <!--Specifies the DataSource in Window Resources-->
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;ResourceDictionary&gt;
+        <ResourceDictionary>
 
-            &lt;ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/&gt;
+            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
-        &lt;/ResourceDictionary&gt;
+        </ResourceDictionary>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adds PivotGrid Control--&gt;
+        <!—Adds PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
                                      ItemSource="{Binding Source={StaticResource data}}" >
 
-            &lt;!--Specifies Pivot Calculation Values--&gt; 
+            <!--Specifies Pivot Calculation Values--> 
 
-            &lt;syncfusion:PivotGridControl.PivotCalculations&gt;
+            <syncfusion:PivotGridControl.PivotCalculations>
 
-                &lt;syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/&gt;
+                <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotCalculations&gt;
+            </syncfusion:PivotGridControl.PivotCalculations>
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -593,17 +593,17 @@ The PivotGrid in XAML is initialized and adding the PivotCalculations through co
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adds PivotGrid Control--&gt;
+        <!—Adds PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -665,63 +665,63 @@ Through XAML
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;!--Specifies the DataSource in Window Resources--&gt;
+    <!--Specifies the DataSource in Window Resources-->
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;ResourceDictionary&gt;
+        <ResourceDictionary>
 
-            &lt;ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/&gt;
+            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
-        &lt;/ResourceDictionary&gt;
+        </ResourceDictionary>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
 
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;!—Adds PivotGrid Control--&gt;
+        <!—Adds PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
                                      ItemSource="{Binding Source={StaticResource data}}" >
 
-            &lt;!--Specifies Pivot Rows--&gt;
+            <!--Specifies Pivot Rows-->
 
-            &lt;syncfusion:PivotGridControl.PivotRows&gt;
+            <syncfusion:PivotGridControl.PivotRows>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotRows&gt;
+            </syncfusion:PivotGridControl.PivotRows>
 
-            &lt;!--Specifies Pivot Columns--&gt;
+            <!--Specifies Pivot Columns-->
 
-            &lt;syncfusion:PivotGridControl.PivotColumns&gt;
+            <syncfusion:PivotGridControl.PivotColumns>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
 
-                &lt;syncfusion:PivotItem FieldMappingName="State" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="State" TotalHeader="Total"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotColumns&gt;
+            </syncfusion:PivotGridControl.PivotColumns>
 
-            &lt;!--Specifies Pivot Calculation Values--&gt; 
+            <!--Specifies Pivot Calculation Values--> 
 
-            &lt;syncfusion:PivotGridControl.PivotCalculations&gt;
+            <syncfusion:PivotGridControl.PivotCalculations>
 
-                &lt;syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/&gt;
+                <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
 
-                &lt;syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/&gt;
+                <syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotCalculations&gt;
+            </syncfusion:PivotGridControl.PivotCalculations>
 
-        &lt;/syncfusion:PivotGridControl&gt;            
+        </syncfusion:PivotGridControl>            
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 Through Code-Behind
 
@@ -795,7 +795,7 @@ End Sub
 
 15. Run the application and the following output is generated.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -804,14 +804,14 @@ End Sub
 1. Open the Start menu and select Blend for Visual Studio 2013.
 2. Click New Project, now the dialog box for New Project appears as follows.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
 3. Select WPF Application and click OK.
 4.  Select the Project tab in the application window.
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -828,7 +828,7 @@ Assembly Location
 6. After adding the above assemblies, the PivotGridControl is automatically added into Assests.
 7. Now drag the PivotGridControl from toolbox into the Designer page. Required Syncfusion assemblies are added automatically to the application.
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -848,29 +848,29 @@ Assembly Location
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adds the PivotGrid Control--&gt;
+        <!—Adds the PivotGrid Control-->
 
-        &lt;syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"                                      ItemSource="{Binding Source={StaticResource data}}" &gt;
+        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"                                      ItemSource="{Binding Source={StaticResource data}}" >
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
 9. Under Solution Explorer, right-click on the project name and select Add  New Item.
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
 10. Add New Item dialog box opens as follows.
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -993,25 +993,25 @@ ObjectDataProvider is usedto get the ItemSource object. Binding ItemSource with 
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;!-- Specifies the DataSource in Window Resources --&gt;
+    <!-- Specifies the DataSource in Window Resources -->
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;ResourceDictionary&gt;
+        <ResourceDictionary>
 
-            &lt;ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/&gt;
+            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
-        &lt;/ResourceDictionary&gt;
+        </ResourceDictionary>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"                                     ItemSource="{Binding Source={StaticResource data}}" /&gt;
+        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"                                     ItemSource="{Binding Source={StaticResource data}}" />
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -1033,17 +1033,17 @@ The PivotGrid in XAML is initialized and binding the ItemSource through code-beh
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!-- Adds PivotGrid Control --&gt;
+        <!-- Adds PivotGrid Control -->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -1092,39 +1092,39 @@ Through XAML
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;!--Specifies the DataSource in Window Resources--&gt;
+    <!--Specifies the DataSource in Window Resources-->
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;ResourceDictionary&gt;
+        <ResourceDictionary>
 
-            &lt;ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/&gt;
+            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
-        &lt;/ResourceDictionary&gt;
+        </ResourceDictionary>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adds PivotGrid Control--&gt;
+        <!—Adds PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
                                      ItemSource="{Binding Source={StaticResource data}}" >
 
-            &lt;!--Specifies Pivot Rows--&gt;
+            <!--Specifies Pivot Rows-->
 
-            &lt;syncfusion:PivotGridControl.PivotRows&gt;
+            <syncfusion:PivotGridControl.PivotRows>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotRows&gt;
+            </syncfusion:PivotGridControl.PivotRows>
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -1146,17 +1146,17 @@ The PivotGrid in XAML is initialized and adding the PivotRows through code-behin
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adds PivotGrid Control--&gt;
+        <!—Adds PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -1214,39 +1214,39 @@ Through XAML
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;!--Specifies the DataSource in Window Resources--&gt;
+    <!--Specifies the DataSource in Window Resources-->
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;ResourceDictionary&gt;
+        <ResourceDictionary>
 
-            &lt;ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/&gt;
+            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
-        &lt;/ResourceDictionary&gt;
+        </ResourceDictionary>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adds PivotGrid Control--&gt;
+        <!—Adds PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
                                      ItemSource="{Binding Source={StaticResource data}}" >
 
-            &lt;!--Specifies Pivot Columns--&gt;
+            <!--Specifies Pivot Columns-->
 
-            &lt;syncfusion:PivotGridControl.PivotColumns&gt;
+            <syncfusion:PivotGridControl.PivotColumns>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotColumns&gt;
+            </syncfusion:PivotGridControl.PivotColumns>
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -1268,17 +1268,17 @@ The PivotGrid in XAML is initialized and adding the PivotColumns through code-be
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adds PivotGrid Control--&gt;
+        <!—Adds PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -1336,39 +1336,39 @@ End Sub
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;!--Specifies the DataSource in Window Resources--&gt;
+    <!--Specifies the DataSource in Window Resources-->
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;ResourceDictionary&gt;
+        <ResourceDictionary>
 
-            &lt;ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/&gt;
+            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
-        &lt;/ResourceDictionary&gt;
+        </ResourceDictionary>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adds PivotGrid Control--&gt;
+        <!—Adds PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
                                      ItemSource="{Binding Source={StaticResource data}}" >
 
-            &lt;!--Specifies Pivot Calculation Values--&gt; 
+            <!--Specifies Pivot Calculation Values--> 
 
-            &lt;syncfusion:PivotGridControl.PivotCalculations&gt;
+            <syncfusion:PivotGridControl.PivotCalculations>
 
-                &lt;syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/&gt;
+                <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotCalculations&gt;
+            </syncfusion:PivotGridControl.PivotCalculations>
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -1390,17 +1390,17 @@ The PivotGrid in XAML is initialized and adding the PivotCalculations through co
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adds PivotGrid Control--&gt;
+        <!—Adds PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -1462,63 +1462,63 @@ Through XAML
 
     xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;!--Specifies the DataSource in Window Resources--&gt;
+    <!--Specifies the DataSource in Window Resources-->
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;ResourceDictionary&gt;
+        <ResourceDictionary>
 
-            &lt;ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/&gt;
+            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
-        &lt;/ResourceDictionary&gt;
+        </ResourceDictionary>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
 
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;!—Adds PivotGrid Control--&gt;
+        <!—Adds PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
                                      ItemSource="{Binding Source={StaticResource data}}" >
 
-            &lt;!--Specifies Pivot Rows--&gt;
+            <!--Specifies Pivot Rows-->
 
-            &lt;syncfusion:PivotGridControl.PivotRows&gt;
+            <syncfusion:PivotGridControl.PivotRows>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotRows&gt;
+            </syncfusion:PivotGridControl.PivotRows>
 
-            &lt;!--Specifies Pivot Columns--&gt;
+            <!--Specifies Pivot Columns-->
 
-            &lt;syncfusion:PivotGridControl.PivotColumns&gt;
+            <syncfusion:PivotGridControl.PivotColumns>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
 
-                &lt;syncfusion:PivotItem FieldMappingName="State" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="State" TotalHeader="Total"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotColumns&gt;
+            </syncfusion:PivotGridControl.PivotColumns>
 
-            &lt;!--Specifies Pivot Calculation Values--&gt; 
+            <!--Specifies Pivot Calculation Values--> 
 
-            &lt;syncfusion:PivotGridControl.PivotCalculations&gt;
+            <syncfusion:PivotGridControl.PivotCalculations>
 
-                &lt;syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/&gt;
+                <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
 
-                &lt;syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/&gt;
+                <syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotCalculations&gt;
+            </syncfusion:PivotGridControl.PivotCalculations>
 
-        &lt;/syncfusion:PivotGridControl&gt;            
+        </syncfusion:PivotGridControl>            
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -1590,7 +1590,7 @@ End Sub
 
 18. Run the application and the following output is generated:
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -1601,7 +1601,7 @@ End Sub
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -1618,13 +1618,13 @@ End Sub
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid Name="grid1"&gt;
+    <Grid Name="grid1">
 
 
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -1633,7 +1633,7 @@ End Sub
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img13.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -1681,13 +1681,13 @@ End Sub
 
 8. In Solution Explorer, right-click on the project name and select Add New Item.
 
-{ ![](Getting-Started_images/Getting-Started_img14.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
 {:.image }
 
 
 9. Add New Item dialog box opens as follows.
 
-{ ![](Getting-Started_images/Getting-Started_img15.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -2027,7 +2027,7 @@ End Sub
 
 17. Run the application and the following output is generated. 
 
-{ ![](Getting-Started_images/Getting-Started_img16.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
 {:.image }
 
 

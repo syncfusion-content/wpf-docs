@@ -21,11 +21,11 @@ MarkerVisibility="Visible"
 
                YBindingPath="NoOfUsers">
 
-  &lt;/Syncfusion:SfLineSparkline &gt;
+  </Syncfusion:SfLineSparkline >
 
 Following is the snapshot for markers,
 
-{ ![C:/Users/ApoorvahR/Desktop/8.png](Markers_images/Markers_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/8.png](Markers_images/Markers_img1.png)' | markdownify }}
 {:.image }
 
 

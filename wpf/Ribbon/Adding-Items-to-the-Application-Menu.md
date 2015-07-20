@@ -9,7 +9,7 @@ documentation: ug
 
 # Adding Items to the Application Menu
 
-Different menu items are added to an application menu using the MenuItems property of the ApplicationMenu class. The following lines of code should be added under the &lt;ribbon: ApplicationMenu&gt;&lt;/ribbon:ApplicationMenu&gt; tag to add menu items to an application menu.
+Different menu items are added to an application menu using the MenuItems property of the ApplicationMenu class. The following lines of code should be added under the <ribbon: ApplicationMenu></ribbon:ApplicationMenu> tag to add menu items to an application menu.
 
 
 
@@ -17,19 +17,19 @@ Different menu items are added to an application menu using the MenuItems proper
 
 
 
-&lt;ribbon:Ribbon.ApplicationMenu&gt;
+<ribbon:Ribbon.ApplicationMenu>
 
- &lt;ribbon:ApplicationMenu Width="38" Height="38" ribbon:Ribbon.KeyTip="F" ApplicationButtonImage="/SampleImages/app.png"&gt;
+ <ribbon:ApplicationMenu Width="38" Height="38" ribbon:Ribbon.KeyTip="F" ApplicationButtonImage="/SampleImages/app.png">
 
-    &lt;ribbon:SimpleMenuButton Label="New" Icon="/SampleImages/Document32.png"/&gt;
+    <ribbon:SimpleMenuButton Label="New" Icon="/SampleImages/Document32.png"/>
 
-    &lt;ribbon:SimpleMenuButton Label="Open" Icon="SampleImages/Open32.png" Command="ApplicationCommands.Open" /&gt;
+    <ribbon:SimpleMenuButton Label="Open" Icon="SampleImages/Open32.png" Command="ApplicationCommands.Open" />
 
-    &lt;ribbon:SimpleMenuButton Label="Save" Icon="SampleImages/Save32.png" Command="ApplicationCommands.Save"&gt;
+    <ribbon:SimpleMenuButton Label="Save" Icon="SampleImages/Save32.png" Command="ApplicationCommands.Save">
 
- &lt;/ribbon:ApplicationMenu&gt;
+ </ribbon:ApplicationMenu>
 
-&lt;/ribbon:Ribbon.ApplicationMenu&gt;
+</ribbon:Ribbon.ApplicationMenu>
 
 
 

@@ -13,7 +13,7 @@ AutoComplete supports two kinds of Selection Mode namely Single and Multiple. Yo
 
 When the SelectionMode property is set as Single, only one item can be selected at a time. The following image illustrates the Single selection mode.
 
-{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/SingleSelection.png](Selection-Mode-Support_images/Selection-Mode-Support_img1.png) | markdownify }
+{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/SingleSelection.png](Selection-Mode-Support_images/Selection-Mode-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -23,7 +23,7 @@ When the SelectionMode is set as Multiple, you can select multiple items by usin
 
 The following image illustrates the Multiple selection mode.
 
-{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/MultipleSelection.png](Selection-Mode-Support_images/Selection-Mode-Support_img2.png) | markdownify }
+{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/MultipleSelection.png](Selection-Mode-Support_images/Selection-Mode-Support_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -33,7 +33,7 @@ When the SelectionMode is set as Extended, you can select multiple items at a ti
 
 The following image illustrates the Multiple selection mode.
 
-{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/ExtendedSelection.png](Selection-Mode-Support_images/Selection-Mode-Support_img3.png) | markdownify }
+{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/ExtendedSelection.png](Selection-Mode-Support_images/Selection-Mode-Support_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -46,7 +46,7 @@ The Selectionmode property is used to attain these functionalities by setting it
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:AutoComplete x:Name="AutoComplete2" SelectionMode="Multiple"/&gt;</td></tr>
+[XAML]<syncfusion:AutoComplete x:Name="AutoComplete2" SelectionMode="Multiple"/></td></tr>
 <tr>
 <td>
 [C#]AutoComplete autoComplete1 = new AutoComplete();this.autoComplete2.SelectionMode = SelectionMode.Multiple;</td></tr>

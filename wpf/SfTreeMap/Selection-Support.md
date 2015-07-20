@@ -31,13 +31,13 @@ While selecting a leaf node, you can highlight it by setting HighlightOnSelectio
 
                        SelectionModes="Multiple">
 
-&lt;/syncfusion:SfTreeMap&gt;
+</syncfusion:SfTreeMap>
 
 
 
 
 
-{ ![](Selection-Support_images/Selection-Support_img1.png) | markdownify }
+{{ '![](Selection-Support_images/Selection-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -63,11 +63,11 @@ GroupSelection support is also provided under selection support where the whole 
 
                        SelectionModes="Multiple" >
 
-        &lt;/syncfusion:SfTreeMap&gt;
+        </syncfusion:SfTreeMap>
 
 
 
-{ ![](Selection-Support_images/Selection-Support_img2.png) | markdownify }
+{{ '![](Selection-Support_images/Selection-Support_img2.png)' | markdownify }}
 {:.image }
 
 

@@ -17,25 +17,25 @@ Application Items are the items that are displayed in the right pane of the Appl
 
 
 
-&lt;ribbon:ApplicationMenu.ApplicationItems&gt;
+<ribbon:ApplicationMenu.ApplicationItems>
 
-  &lt;ribbon:ButtonPanel Margin="5,0,5,0"&gt;
+  <ribbon:ButtonPanel Margin="5,0,5,0">
 
-    &lt;ribbon:RibbonButton SizeForm = "Small" Label="Options SmallIcon="SampleImages/Options.png"/&gt;
+    <ribbon:RibbonButton SizeForm = "Small" Label="Options SmallIcon="SampleImages/Options.png"/>
 
-  &lt;/ribbon:ButtonPanel&gt;
+  </ribbon:ButtonPanel>
 
-  &lt;ribbon:ButtonPanel&gt;
+  <ribbon:ButtonPanel>
 
-    &lt;ribbon:RibbonButton SizeForm = "Small" Label="Exit" Command="ApplicationCommands.Close" SmallIcon="SampleImages/Exit.png"/&gt;
+    <ribbon:RibbonButton SizeForm = "Small" Label="Exit" Command="ApplicationCommands.Close" SmallIcon="SampleImages/Exit.png"/>
 
-  &lt;/ribbon:ButtonPanel&gt;
+  </ribbon:ButtonPanel>
 
-&lt;/ribbon:ApplicationMenu.ApplicationItems&gt;
+</ribbon:ApplicationMenu.ApplicationItems>
 
 
 
-{ ![](Adding-Application-Items-to-the-Application-Menu_images/Adding-Application-Items-to-the-Application-Menu_img1.jpeg) | markdownify }
+{{ '![](Adding-Application-Items-to-the-Application-Menu_images/Adding-Application-Items-to-the-Application-Menu_img1.jpeg)' | markdownify }}
 {:.image }
 
 

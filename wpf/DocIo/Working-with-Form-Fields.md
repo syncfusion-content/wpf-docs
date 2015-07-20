@@ -104,7 +104,7 @@ Gets or sets the regular text format.  </td></tr>
 
 WCheckBox class represents a check box form field in a Word document. To add a check box to a Word document, click Check BoxForm Field on the Forms toolbar.
 
-{ ![](Working-with-Form-Fields_images/Working-with-Form-Fields_img1.png) | markdownify }
+{{ '![](Working-with-Form-Fields_images/Working-with-Form-Fields_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -198,7 +198,7 @@ WDropDownFormField class represents a drop-down form field in a Word document. T
 
 
 
-{ ![](Working-with-Form-Fields_images/Working-with-Form-Fields_img2.png) | markdownify }
+{{ '![](Working-with-Form-Fields_images/Working-with-Form-Fields_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -272,7 +272,7 @@ WTextFormField class represents a text form field in a Word document. To add a t
 
 
 
-{ ![](Working-with-Form-Fields_images/Working-with-Form-Fields_img3.png) | markdownify }
+{{ '![](Working-with-Form-Fields_images/Working-with-Form-Fields_img3.png)' | markdownify }}
 {:.image }
 
 

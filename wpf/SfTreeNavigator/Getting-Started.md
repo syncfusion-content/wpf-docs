@@ -19,19 +19,19 @@ The following code sample shows how to create the Tree Navigator from code-behin
 
 [XAML]
 
-&lt;navigation:SfTreeNavigator Header="Enterprise Toolkit" &gt;
+<navigation:SfTreeNavigator Header="Enterprise Toolkit" >
 
-   &lt;navigation:SfTreeNavigatorItem Header="WinRT (XAML)"&gt;
+   <navigation:SfTreeNavigatorItem Header="WinRT (XAML)">
 
-        &lt;navigation:SfTreeNavigatorItem Header="Chart"/&gt;
+        <navigation:SfTreeNavigatorItem Header="Chart"/>
 
-        &lt;navigation:SfTreeNavigatorItem Header="Tools"/&gt;
+        <navigation:SfTreeNavigatorItem Header="Tools"/>
 
-   &lt;/navigation:SfTreeNavigatorItem&gt;
+   </navigation:SfTreeNavigatorItem>
 
-   &lt;navigation:SfTreeNavigatorItem Header="Metro Studio"/&gt;
+   <navigation:SfTreeNavigatorItem Header="Metro Studio"/>
 
-&lt;/navigation:SfTreeNavigator&gt;
+</navigation:SfTreeNavigator>
 
 
 

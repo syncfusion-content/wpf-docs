@@ -18,7 +18,7 @@ MaskedEdit is an enhanced TextBox control that restricts input to conform to a s
 
 Control Structure
 
-{ ![C:/Users/arshiazeba/Desktop/1.jpg](Overview_images/Overview_img1.jpeg) | markdownify }
+{{ '![C:/Users/arshiazeba/Desktop/1.jpg](Overview_images/Overview_img1.jpeg)' | markdownify }}
 {:.image }
 
 

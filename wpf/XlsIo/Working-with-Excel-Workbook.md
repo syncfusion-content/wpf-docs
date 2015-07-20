@@ -219,13 +219,13 @@ MS Excel provides the creator of a workbook the ability to protect the Structure
 
 
 
-{ ![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img1.png) | markdownify }
+{{ '![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img2.png) | markdownify }
+{{ '![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -347,7 +347,7 @@ The following illustration shows a protected document where no sheets can be add
 
 
 
-{ ![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img3.png) | markdownify }
+{{ '![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -355,7 +355,7 @@ The following illustration shows a protected document where no sheets can be add
 
 You can unprotect or remove protection for a document by entering the password in the Unprotect Workbook dialog box in MS Excel as shown in the following screenshot.
 
-{ ![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img4.png) | markdownify }
+{{ '![](Working-with-Excel-Workbook_images/Working-with-Excel-Workbook_img4.png)' | markdownify }}
 {:.image }
 
 

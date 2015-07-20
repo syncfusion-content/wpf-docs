@@ -14,7 +14,7 @@ CalendarEdit control allows you to select multiple dates, by setting the AllowMu
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding CalendarEdit with multiple selection feature--&gt;&lt;syncfusion:CalendarEdit Name="calendarEdit" AllowMultiplySelection="True"/&gt;</td></tr>
+[XAML]<!-- Adding CalendarEdit with multiple selection feature--><syncfusion:CalendarEdit Name="calendarEdit" AllowMultiplySelection="True"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Allow multiple selection of datecalendarEdit.AllowMultiplySelection = true; //Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
@@ -23,7 +23,7 @@ CalendarEdit control allows you to select multiple dates, by setting the AllowMu
 
 
 
-{ ![](Selecting-Multiple-Dates_images/Selecting-Multiple-Dates_img1.jpeg) | markdownify }
+{{ '![](Selecting-Multiple-Dates_images/Selecting-Multiple-Dates_img1.jpeg)' | markdownify }}
 {:.image }
 
 

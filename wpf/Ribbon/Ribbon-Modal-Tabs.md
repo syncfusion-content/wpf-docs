@@ -17,13 +17,13 @@ Print Preview is a Modal Tab which displays Print Preview related commands until
 
 
 
-{ ![C:/Users/sureshkumarc/Desktop/modal Tabs/ModalTab10.png](Ribbon-Modal-Tabs_images/Ribbon-Modal-Tabs_img1.png) | markdownify }
+{{ '![C:/Users/sureshkumarc/Desktop/modal Tabs/ModalTab10.png](Ribbon-Modal-Tabs_images/Ribbon-Modal-Tabs_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/sureshkumarc/Desktop/modal Tabs/Modal Tab2.png](Ribbon-Modal-Tabs_images/Ribbon-Modal-Tabs_img2.png) | markdownify }
+{{ '![C:/Users/sureshkumarc/Desktop/modal Tabs/Modal Tab2.png](Ribbon-Modal-Tabs_images/Ribbon-Modal-Tabs_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -39,27 +39,27 @@ This is illustrated in the code given below.
 
 [XAML]
 
-            &lt;syncfusion:Ribbon.ModalTabCollection &gt;
+            <syncfusion:Ribbon.ModalTabCollection >
 
-                &lt;syncfusion:ModalTabCollection &gt;
+                <syncfusion:ModalTabCollection >
 
                     <syncfusion:RibbonTab Caption="Print Preview" 
 
                                                  Name="printpreviewtab">
 
-                        &lt;syncfusion:RibbonBar Header="Sample Bar"&gt;
+                        <syncfusion:RibbonBar Header="Sample Bar">
 
                             <syncfusion:RibbonButton Label="Close Tab"                                                  
 
                                          Click="CloseModalTab_Click"/>
 
-                        &lt;/syncfusion:RibbonBar&gt;
+                        </syncfusion:RibbonBar>
 
-                    &lt;/syncfusion:RibbonTab&gt;
+                    </syncfusion:RibbonTab>
 
-                &lt;/syncfusion:ModalTabCollection&gt;
+                </syncfusion:ModalTabCollection>
 
-            &lt;/syncfusion:Ribbon.ModalTabCollection&gt;
+            </syncfusion:Ribbon.ModalTabCollection>
 
 
 

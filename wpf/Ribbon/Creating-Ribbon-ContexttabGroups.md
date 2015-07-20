@@ -17,21 +17,21 @@ ContextTabGroups are used to group RibbonTabs in the application for easy naviga
 
 
 
-&lt;syncfusion:Ribbon x:Name="MyRibbon"&gt;
+<syncfusion:Ribbon x:Name="MyRibbon">
 
-    &lt;syncfusion:Ribbon.ContextTabGroups&gt;
+    <syncfusion:Ribbon.ContextTabGroups>
 
-        &lt;syncfusion:ContextTabGroup Name="ContextTabGroup1" IsGroupVisible="True" BackColor="Aqua" Label="Group 1"&gt;
+        <syncfusion:ContextTabGroup Name="ContextTabGroup1" IsGroupVisible="True" BackColor="Aqua" Label="Group 1">
 
-        &lt;/syncfusion:ContextTabGroup&gt;
+        </syncfusion:ContextTabGroup>
 
-        &lt;syncfusion::Ribbon.ContextTabGroups&gt;
+        <syncfusion::Ribbon.ContextTabGroups>
 
-&lt;/syncfusion:Ribbon&gt;
+</syncfusion:Ribbon>
 
 
 
-{ ![](Creating-Ribbon-ContexttabGroups_images/Creating-Ribbon-ContexttabGroups_img1.png) | markdownify }
+{{ '![](Creating-Ribbon-ContexttabGroups_images/Creating-Ribbon-ContexttabGroups_img1.png)' | markdownify }}
 {:.image }
 
 

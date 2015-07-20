@@ -23,11 +23,11 @@ Create the instance for any technical indicator and add it to the TechnicalIndic
 
 
 
-&lt;syncfusion:SfChart.TechnicalIndicators&gt;
+<syncfusion:SfChart.TechnicalIndicators>
 
-            &lt;syncfusion:AccumulationDistributionIndicator/&gt;
+            <syncfusion:AccumulationDistributionIndicator/>
 
-        &lt;/syncfusion:SfChart.TechnicalIndicators&gt;       
+        </syncfusion:SfChart.TechnicalIndicators>       
 
 
 
@@ -41,11 +41,11 @@ The data necessary for the indicator to do calculations, are given as specified.
 
 
 
-&lt;syncfusion:SfChart.TechnicalIndicators&gt;
+<syncfusion:SfChart.TechnicalIndicators>
 
-            &lt;syncfusion:AccumulationDistributionIndicator High="High" Low="Low" Open="Open" Close="Close"/&gt;
+            <syncfusion:AccumulationDistributionIndicator High="High" Low="Low" Open="Open" Close="Close"/>
 
-        &lt;/syncfusion:SfChart.TechnicalIndicators&gt;
+        </syncfusion:SfChart.TechnicalIndicators>
 
 
 
@@ -57,17 +57,17 @@ Finally, the XBindingPath, YBindingPath and the ItemSource are specified to plot
 
 
 
-&lt;syncfusion:SfChart.TechnicalIndicators&gt;
+<syncfusion:SfChart.TechnicalIndicators>
 
-            &lt;syncfusion:AccumulationDistributionIndicator  Volume="Volume" Period="2" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}" High="High" Open="Open" Close="Close" Low="Low"/&gt;
+            <syncfusion:AccumulationDistributionIndicator  Volume="Volume" Period="2" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}" High="High" Open="Open" Close="Close" Low="Low"/>
 
-        &lt;/syncfusion:SfChart.TechnicalIndicators&gt;
-
-
+        </syncfusion:SfChart.TechnicalIndicators>
 
 
 
-{ ![C:/Users/rachel/Desktop/Snapshots/ind1.png](Technical-Indicators_images/Technical-Indicators_img1.png) | markdownify }
+
+
+{{ '![C:/Users/rachel/Desktop/Snapshots/ind1.png](Technical-Indicators_images/Technical-Indicators_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -99,19 +99,19 @@ If you want to apply ATR indicator to a chart, then do the following.
 
 
 
-&lt;syncfusion:SfChart.TechnicalIndicators&gt;
+<syncfusion:SfChart.TechnicalIndicators>
 
-            &lt;syncfusion:AverageTrueRangeIndicator   Period="2" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/&gt;
+            <syncfusion:AverageTrueRangeIndicator   Period="2" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
 
-        &lt;/syncfusion:SfChart.TechnicalIndicators&gt;
-
-
+        </syncfusion:SfChart.TechnicalIndicators>
 
 
 
 
 
-{ ![C:/Users/rachel/Desktop/Snapshots/ind1.png](Technical-Indicators_images/Technical-Indicators_img2.png) | markdownify }
+
+
+{{ '![C:/Users/rachel/Desktop/Snapshots/ind1.png](Technical-Indicators_images/Technical-Indicators_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -145,17 +145,17 @@ If you want to apply SimpleAverageIndicator to a chart, then do the following.
 
 
 
-&lt;syncfusion:SfChart.TechnicalIndicators&gt;
+<syncfusion:SfChart.TechnicalIndicators>
 
-            &lt;syncfusion:SimpleAverageIndicator    SignalLineColor=" DarkBlue "  Period="1" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"/&gt;
+            <syncfusion:SimpleAverageIndicator    SignalLineColor=" DarkBlue "  Period="1" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"/>
 
-        &lt;/syncfusion:SfChart.TechnicalIndicators&gt;
-
-
+        </syncfusion:SfChart.TechnicalIndicators>
 
 
 
-{ ![C:/Users/rachel/Desktop/Snapshots/ind2.png](Technical-Indicators_images/Technical-Indicators_img3.png) | markdownify }
+
+
+{{ '![C:/Users/rachel/Desktop/Snapshots/ind2.png](Technical-Indicators_images/Technical-Indicators_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -195,19 +195,19 @@ If you want to apply RSITechnicalIndicator to a chart, then do the following.
 
 [XAML]
 
-&lt;syncfusion:SfChart.TechnicalIndicators&gt;
+<syncfusion:SfChart.TechnicalIndicators>
 
-            &lt;syncfusion:RSITechnicalIndicator   UpperLineColor="Red" LowerLineColor="Green" SignalLineColor="DarkBlue"  Period="2" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"  &gt;
+            <syncfusion:RSITechnicalIndicator   UpperLineColor="Red" LowerLineColor="Green" SignalLineColor="DarkBlue"  Period="2" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"  >
 
-            &lt;/syncfusion:RSITechnicalIndicator&gt;
+            </syncfusion:RSITechnicalIndicator>
 
-        &lt;/syncfusion:SfChart.TechnicalIndicators&gt;
-
-
+        </syncfusion:SfChart.TechnicalIndicators>
 
 
 
-{ ![C:/Users/rachel/Desktop/Snapshots/ind3.png](Technical-Indicators_images/Technical-Indicators_img4.png) | markdownify }
+
+
+{{ '![C:/Users/rachel/Desktop/Snapshots/ind3.png](Technical-Indicators_images/Technical-Indicators_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -245,17 +245,17 @@ If you want to apply MomentumTechnicalIndicator to a chart, then do the followin
 
 
 
-&lt;syncfusion:SfChart.TechnicalIndicators&gt;
+<syncfusion:SfChart.TechnicalIndicators>
 
-            &lt;syncfusion:MomentumTechnicalIndicator   MomentumLineColor="Red" CenterLineColor="DarkBlue"  Period="2" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"/&gt;
+            <syncfusion:MomentumTechnicalIndicator   MomentumLineColor="Red" CenterLineColor="DarkBlue"  Period="2" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"/>
 
-        &lt;/syncfusion:SfChart.TechnicalIndicators&gt;
-
-
+        </syncfusion:SfChart.TechnicalIndicators>
 
 
 
-{ ![C:/Users/rachel/Desktop/Snapshots/ind4.png](Technical-Indicators_images/Technical-Indicators_img5.png) | markdownify }
+
+
+{{ '![C:/Users/rachel/Desktop/Snapshots/ind4.png](Technical-Indicators_images/Technical-Indicators_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -305,17 +305,17 @@ If you want to apply StochasticTechnicalIndicator to a chart, then do the follow
 
 
 
-&lt;syncfusion:SfChart.TechnicalIndicators&gt;
+<syncfusion:SfChart.TechnicalIndicators>
 
-            &lt;syncfusion:StochasticTechnicalIndicator High="High" Open="Open"  Close="Close" Low="Low" Volume="Volume"  SignalLineColor="DarkBlue"  Period="2" XBindingPath="Year"  KPeriod="7" DPeriod="3" UpperLineColor="Red" LowerLineColor="Red" ItemsSource="{Binding CompanyDetails}"/&gt;
+            <syncfusion:StochasticTechnicalIndicator High="High" Open="Open"  Close="Close" Low="Low" Volume="Volume"  SignalLineColor="DarkBlue"  Period="2" XBindingPath="Year"  KPeriod="7" DPeriod="3" UpperLineColor="Red" LowerLineColor="Red" ItemsSource="{Binding CompanyDetails}"/>
 
-        &lt;/syncfusion:SfChart.TechnicalIndicators&gt;
-
-
+        </syncfusion:SfChart.TechnicalIndicators>
 
 
 
-{ ![C:/Users/rachel/Desktop/Snapshots/ind5.png](Technical-Indicators_images/Technical-Indicators_img6.png) | markdownify }
+
+
+{{ '![C:/Users/rachel/Desktop/Snapshots/ind5.png](Technical-Indicators_images/Technical-Indicators_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -347,15 +347,15 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 
 
 
-&lt;syncfusion:SfChart.TechnicalIndicators&gt;
+<syncfusion:SfChart.TechnicalIndicators>
 
-            &lt;syncfusion:ExponentialAverageIndicator   Period="1" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/&gt;
+            <syncfusion:ExponentialAverageIndicator   Period="1" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
 
-        &lt;/syncfusion:SfChart.TechnicalIndicators&gt;
+        </syncfusion:SfChart.TechnicalIndicators>
 
 
 
-{ ![C:/Users/rachel/Desktop/Snapshots/ind6.png](Technical-Indicators_images/Technical-Indicators_img7.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/Snapshots/ind6.png](Technical-Indicators_images/Technical-Indicators_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -387,15 +387,15 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 
 
 
-&lt;syncfusion:SfChart.TechnicalIndicators&gt;
+<syncfusion:SfChart.TechnicalIndicators>
 
-            &lt;syncfusion:TriangularAverageIndicator High="High" Open="Open"  Close="Close" Low="Low" Volume="Volume"  SignalLineColor="OrangeRed"  Period="2" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"/&gt;
+            <syncfusion:TriangularAverageIndicator High="High" Open="Open"  Close="Close" Low="Low" Volume="Volume"  SignalLineColor="OrangeRed"  Period="2" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"/>
 
-        &lt;/syncfusion:SfChart.TechnicalIndicators&gt;
+        </syncfusion:SfChart.TechnicalIndicators>
 
 
 
-{ ![C:/Users/rachel/Desktop/Snapshots/ind7.png](Technical-Indicators_images/Technical-Indicators_img8.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/Snapshots/ind7.png](Technical-Indicators_images/Technical-Indicators_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -425,17 +425,17 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 
 
 
-&lt;syncfusion:SfChart.TechnicalIndicators&gt;
+<syncfusion:SfChart.TechnicalIndicators>
 
-            &lt;syncfusion:AccumulationDistributionIndicator  Volume="Volume" Period="2" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/&gt;
+            <syncfusion:AccumulationDistributionIndicator  Volume="Volume" Period="2" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
 
-        &lt;/syncfusion:SfChart.TechnicalIndicators&gt;
-
-
+        </syncfusion:SfChart.TechnicalIndicators>
 
 
 
-{ ![C:/Users/rachel/Desktop/Snapshots/ind8.png](Technical-Indicators_images/Technical-Indicators_img9.png) | markdownify }
+
+
+{{ '![C:/Users/rachel/Desktop/Snapshots/ind8.png](Technical-Indicators_images/Technical-Indicators_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -475,17 +475,17 @@ Gets or sets the Brush value that represents the color for the Lower Bollinger B
 
 
 
-&lt;syncfusion:SfChart.TechnicalIndicators&gt;
+<syncfusion:SfChart.TechnicalIndicators>
 
-            &lt;syncfusion:BollingerBandIndicator   UpperLineColor="Red" LowerLineColor="Green" Period="1" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/&gt;
+            <syncfusion:BollingerBandIndicator   UpperLineColor="Red" LowerLineColor="Green" Period="1" XBindingPath="Year"  ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low"/>
 
-        &lt;/syncfusion:SfChart.TechnicalIndicators&gt; 
-
-
+        </syncfusion:SfChart.TechnicalIndicators> 
 
 
 
-{ ![C:/Users/rachel/Desktop/Snapshots/ind9.png](Technical-Indicators_images/Technical-Indicators_img10.png) | markdownify }
+
+
+{{ '![C:/Users/rachel/Desktop/Snapshots/ind9.png](Technical-Indicators_images/Technical-Indicators_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -537,17 +537,17 @@ Gets or sets the Brush value that represents the Divergence Line color.</td></tr
 
 
 
-&lt;syncfusion:SfChart.TechnicalIndicators&gt;
+<syncfusion:SfChart.TechnicalIndicators>
 
-            &lt;syncfusion:MACDTechnicalIndicator   Type="Line" ConvergenceLineColor="Green" DivergenceLineColor="Red" Period="1" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"/&gt;
+            <syncfusion:MACDTechnicalIndicator   Type="Line" ConvergenceLineColor="Green" DivergenceLineColor="Red" Period="1" XBindingPath="Year"  SignalLineColor="DarkBlue" ItemsSource="{Binding CompanyDetails}"   High="High" Open="Open" Close="Close" Low="Low" Volume="Volume"/>
 
-        &lt;/syncfusion:SfChart.TechnicalIndicators&gt;
-
-
+        </syncfusion:SfChart.TechnicalIndicators>
 
 
 
-{ ![C:/Users/rachel/Desktop/Snapshots/ind10.png](Technical-Indicators_images/Technical-Indicators_img11.png) | markdownify }
+
+
+{{ '![C:/Users/rachel/Desktop/Snapshots/ind10.png](Technical-Indicators_images/Technical-Indicators_img11.png)' | markdownify }}
 {:.image }
 
 

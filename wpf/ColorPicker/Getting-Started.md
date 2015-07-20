@@ -31,7 +31,7 @@ To create a ColorPicker control through designer, follow the below steps.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -46,14 +46,14 @@ You can create a ColorPicker control either by using XAML code or C# code. Use t
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding ColorPicker --&gt;&lt;syncfusion:ColorPicker  Name="colorPicker"/&gt;</td></tr>
+[XAML]<!-- Adding ColorPicker --><syncfusion:ColorPicker  Name="colorPicker"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of color pickerColorPicker colorPicker = new ColorPicker();//Adding control to the windowthis.Content = colorPicker; </td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -71,7 +71,7 @@ To create the ColorEdit control through designer, follow the below steps.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -86,7 +86,7 @@ You can create a ColorEdit control either by using XAML code or C# code. Use the
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding ColorEdit --&gt;<syncfusion:ColorEdit  Name="colorEdit"/</td></tr>
+[XAML]<!-- Adding ColorEdit --><syncfusion:ColorEdit  Name="colorEdit"/</td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of ColorEdit controlColorEdit colorEdit = new ColorEdit();//Adding control to the windowthis.Content = colorEdit; </td></tr>
@@ -95,7 +95,7 @@ You can create a ColorEdit control either by using XAML code or C# code. Use the
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.jpeg)' | markdownify }}
 {:.image }
 
 

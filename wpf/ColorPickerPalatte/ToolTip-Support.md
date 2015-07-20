@@ -19,7 +19,7 @@ You can use ToolTip support to know the color name and its variant details.
 
 
 
-{ ![](ToolTip-Support_images/ToolTip-Support_img1.png) | markdownify }
+{{ '![](ToolTip-Support_images/ToolTip-Support_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -20,13 +20,13 @@ In the following example, the OLAP Grid component displays Internet Sales Amount
 1. Open Visual Studio IDE and from the File menu, select New  Project.
 2. In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application and Click OK.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
 3. Drag and drop OLAP Grid control from Syncfusion BI WPF toolbox onto the Design page. The required Syncfusion assemblies are added automatically to the application.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -42,13 +42,13 @@ In the following example, the OLAP Grid component displays Internet Sales Amount
 
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;syncfusion:OlapGrid Name="olapGrid1" HorizontalAlignment="Left" Margin="248,137,0,0" VerticalAlignment="Top"/&gt;
+        <syncfusion:OlapGrid Name="olapGrid1" HorizontalAlignment="Left" Margin="248,137,0,0" VerticalAlignment="Top"/>
 
-   &lt;/Grid&gt;
+   </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -94,11 +94,11 @@ public partial class MainWindow : SampleWindow
 
    }
 
-   /// &lt;summary&gt;
+   /// <summary>
 
    /// Defining OlapReport with Dimension and Measure
 
-   /// &lt;/summary&gt;
+   /// </summary>
 
    private OlapReport CreateOlapReport()
 
@@ -200,11 +200,11 @@ Private Sub MainWindow() As Public
 
 End Sub
 
-      ''' &lt;summary&gt;
+      ''' <summary>
 
       ''' Defining OlapReport with Dimension and Measure
 
-      ''' &lt;/summary&gt;
+      ''' </summary>
 
       Private Function CreateOlapReport() As OlapReport
 
@@ -272,7 +272,7 @@ End Class
 
 6. Run the application.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -283,13 +283,13 @@ OLAP Grid control can also be created and configured using Expression Blend as i
 1. Open Blend for Visual Studio and from the File menu, select New  Project.
 2. In the New Project Dialog box, click WPF item and select WPF Application, then click OK.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
 3. In Projects tab, under Solution Explorer, right-click on the project References and select Add Reference… for adding assembly to an application manually. 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -300,11 +300,11 @@ OLAP Grid control can also be created and configured using Expression Blend as i
 4. Syncfusion.OlapGridCommon.Wpf
 5. Syncfusion.OlapShared.Wpf
 
-Assembly Location: _&lt;system drive&gt;\Program Files(x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;_
+Assembly Location: _<system drive>\Program Files(x86)\Syncfusion\Essential Studio\<version number>\precompiledassemblies\<version number>\<framework version>_
 
 5. After adding the above assemblies, the OlapGrid control is automatically added in the Assests. Now, find OlapGrid and drag it to the designer window.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -330,13 +330,13 @@ Assembly Location: _&lt;system drive&gt;\Program Files(x86)\Syncfusion\Essential
 
       Loaded="Window_Loaded_1" >
 
-    &lt;Grid&gt;
+    <Grid>
 
-       &lt;syncfusion:olapGrid Name="olapGrid1"/&gt;
+       <syncfusion:olapGrid Name="olapGrid1"/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -384,11 +384,11 @@ public partial class MainWindow : SampleWindow
 
 
 
-   /// &lt;summary&gt;
+   /// <summary>
 
    /// Defining OlapReport with Dimension and Measure
 
-   /// &lt;/summary&gt;
+   /// </summary>
 
    private OlapReport CreateOlapReport()
 
@@ -490,11 +490,11 @@ Private Sub MainWindow() As Public
 
 End Sub
 
-      ''' &lt;summary&gt;
+      ''' <summary>
 
       ''' Defining OlapReport with Dimension and Measure
 
-      ''' &lt;/summary&gt;
+      ''' </summary>
 
       Private Function CreateOlapReport() As OlapReport
 
@@ -562,7 +562,7 @@ End Class
 
 8. Run the application.
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -573,11 +573,11 @@ End Class
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -589,7 +589,7 @@ End Class
 5. Syncfusion.OlapGridCommon.Wpf
 6. Syncfusion.OlapShared.Wpf
 
-Assembly Location: _&lt;system drive&gt;\Program Files(x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;_
+Assembly Location: _<system drive>\Program Files(x86)\Syncfusion\Essential Studio\<version number>\precompiledassemblies\<version number>\<framework version>_
 
 4. Include the following namespace in code-behind for instantiating OLAP Grid and to manipulate OlpaDataManager and OlapReport.
 1. Syncfusion.Windows.Grid.Olap
@@ -646,11 +646,11 @@ namespace WpfApplication1
 
         }
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Defining OlapReport with Dimension and Measure
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         private OlapReport CreateOlapReport()
 
@@ -766,11 +766,11 @@ Partial Public Class MainWindow
 
 
 
-      ''' &lt;summary&gt;
+      ''' <summary>
 
       ''' Defining OlapReport with Dimension and Measure
 
-      ''' &lt;/summary&gt;
+      ''' </summary>
 
       Private Function CreateOlapReport() As OlapReport
 
@@ -838,7 +838,7 @@ End Class
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -852,20 +852,20 @@ Creating a Basic Report during design-time
 
 1. Drag and drop the control from the toolbox to the Visual Studio Designer surface.
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
 {:.image }
 
 
 2. Right-click OLAP Grid available in the designer.
 3. Then, navigate to the Configure data source -> Create/Edit data source… option in the Context Menu.
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
 {:.image }
 
 
 Now the Data Source Properties wizard is opened.
 
-{ ![](Getting-Started_images/Getting-Started_img13.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -875,7 +875,7 @@ Now the Data Source Properties wizard is opened.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img14.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -888,7 +888,7 @@ Now the Data Source Properties wizard is opened.
 
 7. When the connection is valid, it displays the summary page of the Data Source Properties Wizard.
 
-{ ![](Getting-Started_images/Getting-Started_img15.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -897,7 +897,7 @@ Now the Data Source Properties wizard is opened.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img16.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -909,7 +909,7 @@ _Note: It does not display any style/formatting applied to the Grid. It displays
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img17.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -918,13 +918,13 @@ _Note: It does not display any style/formatting applied to the Grid. It displays
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img18.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img18.png)' | markdownify }}
 {:.image }
 
 
 14. Click Finish. Run the application.
 
-{ ![](Getting-Started_images/Getting-Started_img19.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img19.png)' | markdownify }}
 {:.image }
 
 

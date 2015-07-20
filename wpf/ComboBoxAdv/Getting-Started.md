@@ -49,7 +49,7 @@ After adding the above namespace, the ComboBoxAdv can be added to the applicatio
 
       SelectedValueDelimiter=" - ">
 
-    &lt;/syncfusion:ComboBoxAdv&gt;
+    </syncfusion:ComboBoxAdv>
 
 
 

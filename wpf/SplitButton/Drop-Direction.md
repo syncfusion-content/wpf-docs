@@ -30,11 +30,11 @@ To set BottomLeft DropDirection
 
 [XAML]
 
-&lt;sync:SplitButtonAdv  DropDirection="BottomLeft"/&gt;
+<sync:SplitButtonAdv  DropDirection="BottomLeft"/>
 
 
 
-{ ![](Drop-Direction_images/Drop-Direction_img1.png) | markdownify }
+{{ '![](Drop-Direction_images/Drop-Direction_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -46,11 +46,11 @@ To set BottomRight Drop Direction
 
 [XAML]
 
-&lt;sync:SplitButtonAdv  DropDirection="BottomRight"/&gt;
+<sync:SplitButtonAdv  DropDirection="BottomRight"/>
 
 
 
-{ ![](Drop-Direction_images/Drop-Direction_img2.png) | markdownify }
+{{ '![](Drop-Direction_images/Drop-Direction_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -62,11 +62,11 @@ To set Right Drop Direction
 
 [XAML]
 
-&lt;sync:SplitButtonAdv  DropDirection="Right"/&gt;
+<sync:SplitButtonAdv  DropDirection="Right"/>
 
 
 
-{ ![](Drop-Direction_images/Drop-Direction_img3.png) | markdownify }
+{{ '![](Drop-Direction_images/Drop-Direction_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -78,11 +78,11 @@ To set Left Drop Direction
 
 [XAML]
 
-&lt;sync:SplitButtonAdv  DropDirection="Left"/&gt;
+<sync:SplitButtonAdv  DropDirection="Left"/>
 
 
 
-{ ![](Drop-Direction_images/Drop-Direction_img4.png) | markdownify }
+{{ '![](Drop-Direction_images/Drop-Direction_img4.png)' | markdownify }}
 {:.image }
 
 

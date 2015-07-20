@@ -37,19 +37,19 @@ Spin buttons will be aligned on the right side of the control.
 
                               ItemsSource="{Binding Employees}">
 
- &lt;/editors:SfDomainUpDown&gt;
+ </editors:SfDomainUpDown>
 
 
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/3.png](Spin-Button-Alignment_images/Spin-Button-Alignment_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/3.png](Spin-Button-Alignment_images/Spin-Button-Alignment_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/8.png](Spin-Button-Alignment_images/Spin-Button-Alignment_img2.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/8.png](Spin-Button-Alignment_images/Spin-Button-Alignment_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -73,19 +73,19 @@ Spin buttons will be aligned on the left side of the control.
 
                               SpinButtonsAlignment="Left"
 
-                              ItemsSource="{Binding Employees}">        &lt;/editors:SfDomainUpDown&gt;
+                              ItemsSource="{Binding Employees}">        </editors:SfDomainUpDown>
 
 
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/9.png](Spin-Button-Alignment_images/Spin-Button-Alignment_img3.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/9.png](Spin-Button-Alignment_images/Spin-Button-Alignment_img3.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/10.png](Spin-Button-Alignment_images/Spin-Button-Alignment_img4.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/10.png](Spin-Button-Alignment_images/Spin-Button-Alignment_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -111,13 +111,13 @@ The spin button’s decrement button will be aligned on the left side of the con
 
                               ItemsSource="{Binding Employees}">        
 
-&lt;/editors:SfDomainUpDown&gt;          
+</editors:SfDomainUpDown>          
 
 
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/11.png](Spin-Button-Alignment_images/Spin-Button-Alignment_img5.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/11.png](Spin-Button-Alignment_images/Spin-Button-Alignment_img5.png)' | markdownify }}
 {:.image }
 
 

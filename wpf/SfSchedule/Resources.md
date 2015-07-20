@@ -17,21 +17,21 @@ Appointments will be grouped based on the resource associated with them only whe
 
 
 
-&lt;Schedule:SfSchedule Name="Schedule1" ScheduleType="Week" Background="WhiteSmoke" Resource="Doctors" &gt;
+<Schedule:SfSchedule Name="Schedule1" ScheduleType="Week" Background="WhiteSmoke" Resource="Doctors" >
 
-    &lt;Schedule:SfSchedule.ScheduleResourceTypeCollection &gt;
+    <Schedule:SfSchedule.ScheduleResourceTypeCollection >
 
-        &lt;Schedule:ResourceType TypeName="Doctors"&gt;
+        <Schedule:ResourceType TypeName="Doctors">
 
-            &lt;Schedule:Resource   DisplayName="Dr.Jacob John, M.D " ResourceName="Dr.Jacob"/&gt;
+            <Schedule:Resource   DisplayName="Dr.Jacob John, M.D " ResourceName="Dr.Jacob"/>
 
-            &lt;Schedule:Resource  DisplayName="Dr.Darsy Mascio, M.D" ResourceName="Dr.Darsy"/&gt;
+            <Schedule:Resource  DisplayName="Dr.Darsy Mascio, M.D" ResourceName="Dr.Darsy"/>
 
-        &lt;/Schedule:ResourceType&gt;
+        </Schedule:ResourceType>
 
-    &lt;/Schedule:SfSchedule.ScheduleResourceTypeCollection&gt;
+    </Schedule:SfSchedule.ScheduleResourceTypeCollection>
 
-&lt;/Schedule:SfSchedule&gt;
+</Schedule:SfSchedule>
 
 
 
@@ -59,7 +59,7 @@ ScheduleAppointment app = new ScheduleAppointment() { StartTime = currentdate
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_28.jpg](Resources_images/Resources_img1.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_28.jpg](Resources_images/Resources_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67,7 +67,7 @@ ScheduleAppointment app = new ScheduleAppointment() { StartTime = currentdate
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_29.jpg](Resources_images/Resources_img2.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_29.jpg](Resources_images/Resources_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -75,7 +75,7 @@ ScheduleAppointment app = new ScheduleAppointment() { StartTime = currentdate
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_30.jpg](Resources_images/Resources_img3.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_30.jpg](Resources_images/Resources_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89,11 +89,11 @@ _The first step is set the ResourceTypesCollection in schedule_
 
 [XAML]
 
-     &lt;schedule:SfSchedule  Resource="Doctors" &gt;
+     <schedule:SfSchedule  Resource="Doctors" >
 
          ...
 
-        &lt;/schedule:SfSchedule&gt;
+        </schedule:SfSchedule>
 
 
 
@@ -103,19 +103,19 @@ After this, we need to create a ResourceTypeCollection, to assign the Resource
 
 [XAML]
 
-      &lt;schedule:SfSchedule Resource="Doctors"  &gt;
+      <schedule:SfSchedule Resource="Doctors"  >
 
                ...
 
-            &lt;schedule:SfSchedule.ScheduleResourceTypeCollection&gt;
+            <schedule:SfSchedule.ScheduleResourceTypeCollection>
 
                ...
 
-            &lt;/schedule:SfSchedule.ScheduleResourceTypeCollection&gt;
+            </schedule:SfSchedule.ScheduleResourceTypeCollection>
 
 
 
-        &lt;/schedule:SfSchedule&gt;
+        </schedule:SfSchedule>
 
 
 
@@ -127,19 +127,19 @@ After Creating the ResourceTypeCollection add the ResourecType, here we create t
 
 [XAML]
 
-      &lt;schedule:SfSchedule  Resource="Doctors" &gt;
+      <schedule:SfSchedule  Resource="Doctors" >
 
-            &lt;schedule:SfSchedule.ScheduleResourceTypeCollection &gt;
+            <schedule:SfSchedule.ScheduleResourceTypeCollection >
 
-                &lt;schedule:ResourceType TypeName="Doctors"&gt;
+                <schedule:ResourceType TypeName="Doctors">
 
                     . . .
 
-                &lt;/schedule:ResourceType&gt;
+                </schedule:ResourceType>
 
-            &lt;/schedule:SfSchedule.ScheduleResourceTypeCollection&gt;
+            </schedule:SfSchedule.ScheduleResourceTypeCollection>
 
-        &lt;/schedule:SfSchedule&gt;
+        </schedule:SfSchedule>
 
 
 
@@ -151,21 +151,21 @@ The next step is create and assign Resources to ResourceType.
 
 [XAML]
 
-    &lt;schedule:SfSchedule  Resource="Doctors" &gt;
+    <schedule:SfSchedule  Resource="Doctors" >
 
-            &lt;schedule:SfSchedule.ScheduleResourceTypeCollection &gt;
+            <schedule:SfSchedule.ScheduleResourceTypeCollection >
 
-                &lt;schedule:ResourceType TypeName="Doctors"&gt;
+                <schedule:ResourceType TypeName="Doctors">
 
-                    &lt;schedule:Resource   DisplayName="Dr.Jacob John, M.D " ResourceName="Dr.Jacob"/&gt;
+                    <schedule:Resource   DisplayName="Dr.Jacob John, M.D " ResourceName="Dr.Jacob"/>
 
-                    &lt;schedule:Resource  DisplayName="Dr.Darsy Mascio, M.D" ResourceName="Dr.Darsy"/&gt;
+                    <schedule:Resource  DisplayName="Dr.Darsy Mascio, M.D" ResourceName="Dr.Darsy"/>
 
-                &lt;/schedule:ResourceType&gt;
+                </schedule:ResourceType>
 
-            &lt;/schedule:SfSchedule.ScheduleResourceTypeCollection&gt;
+            </schedule:SfSchedule.ScheduleResourceTypeCollection>
 
-        &lt;/schedule:SfSchedule&gt;
+        </schedule:SfSchedule>
 
 
 
@@ -253,39 +253,39 @@ Gets or sets the ResourceType value which is a subresource type of its parent Re
 
                              Resource="Hospital" DayHeaderOrder="OrderByDate">
 
-            &lt;schedule:SfSchedule.ScheduleResourceTypeCollection&gt;
+            <schedule:SfSchedule.ScheduleResourceTypeCollection>
 
-                &lt;schedule:ResourceType TypeName="Hospital"&gt;
+                <schedule:ResourceType TypeName="Hospital">
 
-                    &lt;schedule:ResourceType.ResourceCollection&gt;
+                    <schedule:ResourceType.ResourceCollection>
 
-                        &lt;schedule:Resource DisplayName="Apollo Hospital"ResourceName="ApolloHospital"/&gt;
+                        <schedule:Resource DisplayName="Apollo Hospital"ResourceName="ApolloHospital"/>
 
-                        &lt;schedule:Resource DisplayName="Malar Hospital"ResourceName="MalarHospital"/&gt;
+                        <schedule:Resource DisplayName="Malar Hospital"ResourceName="MalarHospital"/>
 
-                    &lt;/schedule:ResourceType.ResourceCollection&gt;
+                    </schedule:ResourceType.ResourceCollection>
 
-                    &lt;schedule:ResourceType.SubResourceType&gt;
+                    <schedule:ResourceType.SubResourceType>
 
-                        &lt;schedule:ResourceType TypeName="Department"&gt;
+                        <schedule:ResourceType TypeName="Department">
 
-                            &lt;schedule:ResourceType.ResourceCollection&gt;
+                            <schedule:ResourceType.ResourceCollection>
 
-                                &lt;schedule:Resource DisplayName="Eye Department" ResourceName="Eye"/&gt;
+                                <schedule:Resource DisplayName="Eye Department" ResourceName="Eye"/>
 
-                                &lt;schedule:Resource DisplayName="Heart Department" ResourceName="Heart"/&gt;
+                                <schedule:Resource DisplayName="Heart Department" ResourceName="Heart"/>
 
-                            &lt;/schedule:ResourceType.ResourceCollection&gt;
+                            </schedule:ResourceType.ResourceCollection>
 
-                        &lt;/schedule:ResourceType&gt;
+                        </schedule:ResourceType>
 
-                    &lt;/schedule:ResourceType.SubResourceType&gt;
+                    </schedule:ResourceType.SubResourceType>
 
-                &lt;/schedule:ResourceType&gt;
+                </schedule:ResourceType>
 
-            &lt;/schedule:SfSchedule.ScheduleResourceTypeCollection&gt;
+            </schedule:SfSchedule.ScheduleResourceTypeCollection>
 
-        &lt;/schedule:SfSchedule&gt;
+        </schedule:SfSchedule>
 
 
 
@@ -325,7 +325,7 @@ Gets or sets the ResourceType value which is a subresource type of its parent Re
 
 
 
-{ ![](Resources_images/Resources_img4.png) | markdownify }
+{{ '![](Resources_images/Resources_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -363,27 +363,27 @@ In the following code example, “DayViewColumnCount” is “two”, so the Sch
 
                        Resource="Doctors" DayViewColumnCount="2">
 
-    &lt;syncfusion:SfSchedule.ScheduleResourceTypeCollection&gt;
+    <syncfusion:SfSchedule.ScheduleResourceTypeCollection>
 
-        &lt;syncfusion:ResourceType TypeName="Doctors"&gt;
+        <syncfusion:ResourceType TypeName="Doctors">
 
-            &lt;syncfusion:Resource ResourceName="Res1" DisplayName="Heart Treatments"/&gt;
+            <syncfusion:Resource ResourceName="Res1" DisplayName="Heart Treatments"/>
 
-            &lt;syncfusion:Resource ResourceName="Res2" DisplayName="Cancer Treatments"/&gt;
+            <syncfusion:Resource ResourceName="Res2" DisplayName="Cancer Treatments"/>
 
-            &lt;syncfusion:Resource ResourceName="Res3" DisplayName="Diabetic Treatments"/&gt;
+            <syncfusion:Resource ResourceName="Res3" DisplayName="Diabetic Treatments"/>
 
-            &lt;syncfusion:Resource ResourceName="Res4" DisplayName="Eye Treatments"/&gt;
+            <syncfusion:Resource ResourceName="Res4" DisplayName="Eye Treatments"/>
 
-            &lt;syncfusion:Resource ResourceName="Res5" DisplayName="Psychology Treatments"/&gt;
+            <syncfusion:Resource ResourceName="Res5" DisplayName="Psychology Treatments"/>
 
-            &lt;syncfusion:Resource ResourceName="Res6" DisplayName="Dermatology Treatments"/&gt;
+            <syncfusion:Resource ResourceName="Res6" DisplayName="Dermatology Treatments"/>
 
-        &lt;/syncfusion:ResourceType&gt;
+        </syncfusion:ResourceType>
 
-    &lt;/syncfusion:SfSchedule.ScheduleResourceTypeCollection&gt;
+    </syncfusion:SfSchedule.ScheduleResourceTypeCollection>
 
-&lt;/syncfusion:SfSchedule&gt;
+</syncfusion:SfSchedule>
 
 
 

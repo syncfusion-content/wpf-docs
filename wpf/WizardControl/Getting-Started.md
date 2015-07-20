@@ -31,7 +31,7 @@ Wizard control is created programmatically by using either XAML or C# code. The 
 
 
 
-&lt;syncfusion:WizardControl Name="wizardControl"/&gt;
+<syncfusion:WizardControl Name="wizardControl"/>
 
 
 
@@ -51,7 +51,7 @@ grid.Children.Add(wizardControl);
 
 > 
 
-{ ![](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
 {:.image }
 
 

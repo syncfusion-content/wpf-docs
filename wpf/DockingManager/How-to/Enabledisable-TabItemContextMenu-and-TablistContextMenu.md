@@ -16,7 +16,7 @@ ShowTabItemContextMenu is the property that is used to disable the showing of Co
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:DockingManager Name="DockingManager" ShowTabItemContextMenu="False" ShowTabListContextMenu="False" UseDocumentContainer="True" ContainerMode="TDI"&gt;        &lt;Grid Name="grid1" syncfusion:DockingManager.State="Document"/&gt;        &lt;Grid Name="grid2" syncfusion:DockingManager.State="Document"/&gt;&lt;/syncfusion:DockingManager&gt;</td></tr>
+[XAML]<syncfusion:DockingManager Name="DockingManager" ShowTabItemContextMenu="False" ShowTabListContextMenu="False" UseDocumentContainer="True" ContainerMode="TDI">        <Grid Name="grid1" syncfusion:DockingManager.State="Document"/>        <Grid Name="grid2" syncfusion:DockingManager.State="Document"/></syncfusion:DockingManager></td></tr>
 <tr>
 <td>
 [C#]//Disables the tabitem context menu.DockingManager.ShowTabItemContextMenu = false;//Disables the tablist context menu.DockingManager.ShowTabListContextMenu = false;</td></tr>

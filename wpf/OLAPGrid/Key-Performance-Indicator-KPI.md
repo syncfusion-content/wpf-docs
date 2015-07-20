@@ -24,7 +24,7 @@ The following are the different types of Indicators:
 
 Click here for Sample KPI Report.
 
-{ ![](Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.png) | markdownify }
+{{ '![](Key-Performance-Indicator-KPI_images/Key-Performance-Indicator-KPI_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -32,5 +32,5 @@ Sample Location
 
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\&lt;Versionnumber&gt;\BI\WPF\OlapGrid.WPF\Samples\Application Scenario\KPI Demo
+..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Application Scenario\KPI Demo
 

@@ -73,43 +73,43 @@ This event is triggered when the position of the scrollbar changed</td></tr>
 
 [XAML]
 
-&lt;chart:SfChart x:Name="financialChart"&gt;            
+<chart:SfChart x:Name="financialChart">            
 
-  &lt;chart:SfChart.PrimaryAxis&gt;
+  <chart:SfChart.PrimaryAxis>
 
-         &lt;chart:CategoryAxis Name="axis1" ZoomPosition="{Binding ElementName=RangeNavigator, Path=ZoomPosition, Mode=TwoWay}" ZoomFactor="{Binding ElementName=RangeNavigator, Path=ZoomFactor, Mode=TwoWay}" Header="Date" LabelFormat="MMM/dd"  LabelTemplate="{StaticResource labelTemplate}" /&gt;                
+         <chart:CategoryAxis Name="axis1" ZoomPosition="{Binding ElementName=RangeNavigator, Path=ZoomPosition, Mode=TwoWay}" ZoomFactor="{Binding ElementName=RangeNavigator, Path=ZoomFactor, Mode=TwoWay}" Header="Date" LabelFormat="MMM/dd"  LabelTemplate="{StaticResource labelTemplate}" />                
 
-  &lt;/chart:SfChart.PrimaryAxis&gt;            
+  </chart:SfChart.PrimaryAxis>            
 
-  &lt;chart:SfChart.SecondaryAxis&gt;                
+  <chart:SfChart.SecondaryAxis>                
 
-                  &lt;chart:NumericalAxis  /&gt;  
+                  <chart:NumericalAxis  />  
 
- &lt;/chart:SfChart.SecondaryAxis&gt;            
+ </chart:SfChart.SecondaryAxis>            
 
-&lt;chart:CandleSeries Name="series" ItemsSource="{Binding StockPriceDetails}" XBindingPath="_Date"  High="High" Open="Open" Close="Close" Low="Low"  Label="Candleseries"&gt;            
+<chart:CandleSeries Name="series" ItemsSource="{Binding StockPriceDetails}" XBindingPath="_Date"  High="High" Open="Open" Close="Close" Low="Low"  Label="Candleseries">            
 
-&lt;/chart:CandleSeries&gt;        
+</chart:CandleSeries>        
 
-&lt;/chart:SfChart&gt;        
+</chart:SfChart>        
 
 
 
- &lt;chart:SfDateTimeRangeNavigator x:Name="RangeNavigator" ItemsSource="{Binding StockPriceDetails}" XBindingPath="_Date" &gt;                
+ <chart:SfDateTimeRangeNavigator x:Name="RangeNavigator" ItemsSource="{Binding StockPriceDetails}" XBindingPath="_Date" >                
 
-&lt;chart:SfDateTimeRangeNavigator.Content&gt;                   
+<chart:SfDateTimeRangeNavigator.Content>                   
 
- &lt;chart:SfLineSparkline ItemsSource="{Binding StockPriceDetails}"   YBindingPath="High" &gt;                    &lt;/chart:SfLineSparkline&gt;                
+ <chart:SfLineSparkline ItemsSource="{Binding StockPriceDetails}"   YBindingPath="High" >                    </chart:SfLineSparkline>                
 
-&lt;/chart:SfDateTimeRangeNavigator.Content&gt;            
+</chart:SfDateTimeRangeNavigator.Content>            
 
-&lt;/chart:SfDateTimeRangeNavigator&gt;
+</chart:SfDateTimeRangeNavigator>
 
 
 
 The following is the screenshot of SfDateTimeRangeNavigator selecting one Quarter of data.
 
-{ ![C:/Users/ApoorvahR/Desktop/3.png](Interactivity_images/Interactivity_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/3.png](Interactivity_images/Interactivity_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -119,7 +119,7 @@ The following is the screenshot of SfDateTimeRangeNavigator after zooming into w
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/4.png](Interactivity_images/Interactivity_img2.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/4.png](Interactivity_images/Interactivity_img2.png)' | markdownify }}
 {:.image }
 
 

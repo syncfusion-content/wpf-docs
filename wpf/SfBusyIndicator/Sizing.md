@@ -17,7 +17,7 @@ ViewBoxWidth
 
 ViewBoxWidth property allows the user to set the width of the ViewBox.
 
-{ ![C:/Users/ApoorvahR/Desktop/4.png](Sizing_images/Sizing_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/4.png](Sizing_images/Sizing_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -33,7 +33,7 @@ The various elements of a TabControlExt control is illustrated in the below imag
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52,7 +52,7 @@ To create the TabControlExt control through designer, follow the below steps.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -68,11 +68,11 @@ TabControlExt control is created by using either XAML or C# code. The following 
 
 
 
-&lt;!-- Adding TabControlExt --&gt;
+<!-- Adding TabControlExt -->
 
-&lt;syncfusion:TabControlExt Name="tabControlExt"&gt;
+<syncfusion:TabControlExt Name="tabControlExt">
 
-&lt;/syncfusion:TabControlExt&gt;
+</syncfusion:TabControlExt>
 
 
 
@@ -98,7 +98,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
 {:.image }
 
 

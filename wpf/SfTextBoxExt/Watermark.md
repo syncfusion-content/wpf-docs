@@ -31,7 +31,7 @@ Watermark property allows the users to specify some information, when the text i
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/2.png](Watermark_images/Watermark_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/2.png](Watermark_images/Watermark_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -49,23 +49,23 @@ Watermark property allows the users to specify some information, when the text i
 
                             Width="400">
 
-            &lt;editors:SfTextBoxExt.Watermark&gt;
+            <editors:SfTextBoxExt.Watermark>
 
-                &lt;StackPanel Orientation="Horizontal"&gt;
+                <StackPanel Orientation="Horizontal">
 
-                    &lt;Image Source="Windows 8.png" Stretch="None" Margin="2"/&gt;
+                    <Image Source="Windows 8.png" Stretch="None" Margin="2"/>
 
-                    &lt;TextBlock Text="Search Windows" Opacity="0.5" Margin="5 2"/&gt;
+                    <TextBlock Text="Search Windows" Opacity="0.5" Margin="5 2"/>
 
-                &lt;/StackPanel&gt;
+                </StackPanel>
 
-            &lt;/editors:SfTextBoxExt.Watermark&gt;
+            </editors:SfTextBoxExt.Watermark>
 
-&lt;/editors:SfTextBoxExt&gt;
+</editors:SfTextBoxExt>
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/3.png](Watermark_images/Watermark_img2.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/3.png](Watermark_images/Watermark_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -91,17 +91,17 @@ Any business object can be bound to the Watermark property and that object can b
 
                             Watermark="{Binding Person}">
 
-            &lt;editors:SfTextBoxExt.WatermarkTemplate&gt;
+            <editors:SfTextBoxExt.WatermarkTemplate>
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-                    &lt;TextBlock Text="{Binding PromptText}" Opacity="0.5"/&gt;
+                    <TextBlock Text="{Binding PromptText}" Opacity="0.5"/>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-            &lt;/editors:SfTextBoxExt.WatermarkTemplate&gt;
+            </editors:SfTextBoxExt.WatermarkTemplate>
 
-&lt;/editors:SfTextBoxExt&gt;
+</editors:SfTextBoxExt>
 
 
 

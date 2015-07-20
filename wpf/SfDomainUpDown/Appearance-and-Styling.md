@@ -39,9 +39,9 @@ The AccentBrush property is used to decorate the hot spots of a control with a s
 
 
 
-&lt;Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"&gt;
+<Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf">
 
-    &lt;Grid&gt;
+    <Grid>
 
 
 
@@ -57,13 +57,13 @@ The AccentBrush property is used to decorate the hot spots of a control with a s
 
                               Value="James">
 
-        &lt;/editors:SfDomainUpDown &gt;
+        </editors:SfDomainUpDown >
 
 
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Page&gt;
+</Page>
 
 
 

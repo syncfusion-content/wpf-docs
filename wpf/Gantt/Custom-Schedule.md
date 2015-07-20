@@ -152,7 +152,7 @@ The following code illustrates Adding Custom Schedule to an Application:
 
                x:Name="Gantt" VisualStyle="Office2010Black">
 
-                &lt;sync:GanttControl.TaskAttributeMapping&gt;
+                <sync:GanttControl.TaskAttributeMapping>
 
                     <sync:TaskAttributeMapping 
 
@@ -170,9 +170,9 @@ The following code illustrates Adding Custom Schedule to an Application:
 
                         ResourceInfoMapping="Resource">
 
-                    &lt;/sync:TaskAttributeMapping&gt;
+                    </sync:TaskAttributeMapping>
 
-                &lt;/sync:GanttControl.TaskAttributeMapping&gt;
+                </sync:GanttControl.TaskAttributeMapping>
 
 
 
@@ -234,7 +234,7 @@ The following image shows Custom Schedule:
 
 
 
-{ ![](Custom-Schedule_images/Custom-Schedule_img1.png) | markdownify }
+{{ '![](Custom-Schedule_images/Custom-Schedule_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -275,7 +275,7 @@ The following code illustrates this:
 
                 ToolTipTemplate="{StaticResource toolTipTemplate}">
 
-                &lt;sync:GanttControl.TaskAttributeMapping&gt;
+                <sync:GanttControl.TaskAttributeMapping>
 
                     <sync:TaskAttributeMapping TaskIdMapping="Id"
 
@@ -297,11 +297,11 @@ The following code illustrates this:
 
                                             >
 
-                    &lt;/sync:TaskAttributeMapping&gt;
+                    </sync:TaskAttributeMapping>
 
-                &lt;/sync:GanttControl.TaskAttributeMapping&gt;
+                </sync:GanttControl.TaskAttributeMapping>
 
-            &lt;/sync:GanttControl&gt;
+            </sync:GanttControl>
 
 
 
@@ -465,7 +465,7 @@ The following image shows Custom DateTime Schedule:
 
 
 
-{ ![C:/Users/thanigaivelan/Desktop/UGImages/custom.png](Custom-Schedule_images/Custom-Schedule_img2.png) | markdownify }
+{{ '![C:/Users/thanigaivelan/Desktop/UGImages/custom.png](Custom-Schedule_images/Custom-Schedule_img2.png)' | markdownify }}
 {:.image }
 
 

@@ -120,7 +120,7 @@ void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 Output
 
-{ ![](Grid-Virtualization_images/Grid-Virtualization_img1.png) | markdownify }
+{{ '![](Grid-Virtualization_images/Grid-Virtualization_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -344,7 +344,7 @@ grid.Model.TableStyle.CellValue = "Edit Me!";
 
 
 
-{ ![](Grid-Virtualization_images/Grid-Virtualization_img2.jpeg) | markdownify }
+{{ '![](Grid-Virtualization_images/Grid-Virtualization_img2.jpeg)' | markdownify }}
 {:.image }
 
 

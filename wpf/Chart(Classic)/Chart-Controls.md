@@ -55,7 +55,7 @@ public IList marks()
 
 The following screenshot illustrates how a Chart Series is associated to the Chart by using IList-based instances.
 
-{ ![](Chart-Controls_images/Chart-Controls_img1.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -79,39 +79,39 @@ Chart provides built-in support to bind XML data created through XmlDataProvider
 
 
 
-&lt;XmlDataProvider x:Key="myXmlData"&gt;
+<XmlDataProvider x:Key="myXmlData">
 
-            &lt;x:XData&gt;
+            <x:XData>
 
-                &lt;Travel xmlns=""&gt;
+                <Travel xmlns="">
 
-                    &lt;TravelDetails DayCount="1"  Kms="30" Day="Mon"/&gt;
+                    <TravelDetails DayCount="1"  Kms="30" Day="Mon"/>
 
-                    &lt;TravelDetails DayCount="2" Kms="45" Day="Tue"/&gt;
+                    <TravelDetails DayCount="2" Kms="45" Day="Tue"/>
 
-                    &lt;TravelDetails DayCount="3" Kms="50" Day="Wed"/&gt;
+                    <TravelDetails DayCount="3" Kms="50" Day="Wed"/>
 
-                    &lt;TravelDetails DayCount="4" Kms="60" Day="Thu"/&gt;
+                    <TravelDetails DayCount="4" Kms="60" Day="Thu"/>
 
-                    &lt;TravelDetails DayCount="5" Kms="55" Day="Fri"/&gt;
+                    <TravelDetails DayCount="5" Kms="55" Day="Fri"/>
 
-                    &lt;TravelDetails DayCount="6" Kms="75" Day="Sat"/&gt;
+                    <TravelDetails DayCount="6" Kms="75" Day="Sat"/>
 
-                    &lt;TravelDetails DayCount="7" Kms="55" Day="Sun"/&gt;
+                    <TravelDetails DayCount="7" Kms="55" Day="Sun"/>
 
-                    &lt;TravelDetails DayCount="8" Kms="40" Day="Mon"/&gt;
+                    <TravelDetails DayCount="8" Kms="40" Day="Mon"/>
 
-                    &lt;TravelDetails DayCount="9" Kms="30" Day="Tue"/&gt;
+                    <TravelDetails DayCount="9" Kms="30" Day="Tue"/>
 
-                   &lt;/Travel&gt;
+                   </Travel>
 
-            &lt;/x:XData&gt;
+            </x:XData>
 
-&lt;/XmlDataProvider&gt;
+</XmlDataProvider>
 
 
 
-&lt;syncfusion:ChartSeries DataSource="{Binding Source={StaticResource myXmlData}, XPath=Travel/TravelDetails}" BindingPathX="DayCount" BindingPathsY="Kms" IsIndexed="False"  Name="series1"  Label="Series1" Type="FastStackingColumn" Interior="{StaticResource SeriesAInterior}" /&gt;
+<syncfusion:ChartSeries DataSource="{Binding Source={StaticResource myXmlData}, XPath=Travel/TravelDetails}" BindingPathX="DayCount" BindingPathsY="Kms" IsIndexed="False"  Name="series1"  Label="Series1" Type="FastStackingColumn" Interior="{StaticResource SeriesAInterior}" />
 
 
 
@@ -127,7 +127,7 @@ chart1.Areas[0].Series[0].BindingPathsY = new string[] { "Sales" };
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img2.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -153,13 +153,13 @@ The following code illustrates how to bind an ObservableCollection as data sourc
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-  &lt;local:Sports x:Key="sportinterest"/&gt;
+  <local:Sports x:Key="sportinterest"/>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
-&lt;sfchart:ChartSeries DataSource="{StaticResource sportinterest}" Type="Column" BindingPathX="SportName" BindingPathsY="Interest"/&gt;
+<sfchart:ChartSeries DataSource="{StaticResource sportinterest}" Type="Column" BindingPathX="SportName" BindingPathsY="Interest"/>
 
 
 
@@ -335,7 +335,7 @@ Add(new Sport(108, "Tennis", 10));
 
 The following screenshot illustrates how a Chart Series is associated to the Chart by using ObservableCollection data source.
 
-{ ![](Chart-Controls_images/Chart-Controls_img3.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -361,33 +361,33 @@ You can bind CollectionViewSource as a Chart Series Data Source to Chart. Chart 
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;local:SalesinLocation x:Key="saleslocation"/&gt;
+<local:SalesinLocation x:Key="saleslocation"/>
 
-&lt;CollectionViewSource Source="{StaticResource saleslocation}" x:Key="cvs"  &gt;
+<CollectionViewSource Source="{StaticResource saleslocation}" x:Key="cvs"  >
 
-&lt;CollectionViewSource.SortDescriptions&gt;
+<CollectionViewSource.SortDescriptions>
 
-&lt;scm:SortDescription PropertyName="LocationID" /&gt;
+<scm:SortDescription PropertyName="LocationID" />
 
-&lt;/CollectionViewSource.SortDescriptions&gt;
+</CollectionViewSource.SortDescriptions>
 
-&lt;/CollectionViewSource&gt;
+</CollectionViewSource>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-&lt;sfchart:ChartArea&gt;
+<sfchart:ChartArea>
 
 <sfchart:ChartSeries  Name="series1" Label="Sales" Type="Column" DataSource="{Binding Source={StaticResource cvs}}"
 
 BindingPathX="LocationName" BindingPathsY="Sales"/>  
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -563,7 +563,7 @@ class SalesinLocation : ObservableCollection<Production>
 
 The following screenshot illustrates how a Chart Series is associated to the Chart by using CollectionViewSource data source.
 
-{ ![](Chart-Controls_images/Chart-Controls_img4.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -755,7 +755,7 @@ this.Mileage = mileage;
 
 The following screenshot illustrates how a Chart Series is associated to the Chart by using LINQ results.
 
-{ ![](Chart-Controls_images/Chart-Controls_img5.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -851,7 +851,7 @@ public class Product
 
 
 
-&lt;syncfusion:ChartSeries Name="series1" Type="Gantt"  Interior="{StaticResource SeriesAInterior}" Label="Allotted Days"  StrokeThickness="0.4"  IsIndexed="False"   BindingPathX=”ID” BindingPathY=”Info.Start,Info.End” /&gt;
+<syncfusion:ChartSeries Name="series1" Type="Gantt"  Interior="{StaticResource SeriesAInterior}" Label="Allotted Days"  StrokeThickness="0.4"  IsIndexed="False"   BindingPathX=”ID” BindingPathY=”Info.Start,Info.End” />
 
 ######  Data Binding Support
 
@@ -879,7 +879,7 @@ You can bind chart data into the DataSource property of ChartSeries control.  Th
 
 
 
-&lt;syncfusion:ChartSeries DataSource="{StaticResource data}" BindingPathX="ProductID" BindingPathsY="Price" /&gt;
+<syncfusion:ChartSeries DataSource="{StaticResource data}" BindingPathX="ProductID" BindingPathsY="Price" />
 
 
 
@@ -1101,11 +1101,11 @@ class CustomPoint : IChartDataPoint
 
         #region IDisposable Members
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Clean up any resources being used.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         public void Dispose()
 
@@ -1159,15 +1159,15 @@ Once you add the Chart control, the first thing to do is to add a Chart Area and
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-&lt;sfchart:ChartArea&gt;
+<sfchart:ChartArea>
 
-&lt;sfchart:ChartSeries/&gt;
+<sfchart:ChartSeries/>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -1185,7 +1185,7 @@ area.Series.Add(series);
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img6.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1201,21 +1201,21 @@ Essential Chart provides support to add multiple Chart Areas to a Chart to visua
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-&lt;sfchart:ChartArea Background="LightGray" GridBackground="White"&gt;
+<sfchart:ChartArea Background="LightGray" GridBackground="White">
 
-&lt;sfchart:ChartSeries/&gt;
+<sfchart:ChartSeries/>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
-&lt;sfchart:ChartArea Background="WhiteSmoke" GridBackground="White" &gt;
+<sfchart:ChartArea Background="WhiteSmoke" GridBackground="White" >
 
-&lt;sfchart:ChartSeries/&gt;
+<sfchart:ChartSeries/>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -1241,7 +1241,7 @@ Chart1.Areas.Add(area1);
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img7.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1257,17 +1257,17 @@ Chart enables you to add headers to the Chart Area object. Any element can be ad
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-&lt;sfchart:ChartArea Background="LightGray" GridBackground="White"&gt;
+<sfchart:ChartArea Background="LightGray" GridBackground="White">
 
-               &lt;sfchart:ChartArea.Header&gt;
+               <sfchart:ChartArea.Header>
 
-                    &lt;StackPanel Orientation="Horizontal"&gt;
+                    <StackPanel Orientation="Horizontal">
 
-                        &lt;TextBlock Text="Filter By:"&gt;&lt;/TextBlock&gt;
+                        <TextBlock Text="Filter By:"></TextBlock>
 
-                        &lt;ComboBox Width="100" Margin="10, 0, 0, 0"&gt;
+                        <ComboBox Width="100" Margin="10, 0, 0, 0">
 
                             <ComboBoxItem>Team 1</ComboBoxItem>
 
@@ -1275,23 +1275,23 @@ Chart enables you to add headers to the Chart Area object. Any element can be ad
 
                             <ComboBoxItem>Team 3</ComboBoxItem>
 
-                        &lt;/ComboBox&gt;
+                        </ComboBox>
 
-                    &lt;/StackPanel&gt;
+                    </StackPanel>
 
-                &lt;/sfchart:ChartArea.Header&gt;
+                </sfchart:ChartArea.Header>
 
-       &lt;!--Chart Series initialization code is hidden for brevity.--&gt;
+       <!--Chart Series initialization code is hidden for brevity.-->
 
-&lt;sfchart:ChartSeries/&gt;
+<sfchart:ChartSeries/>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img8.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1320,7 +1320,7 @@ Header</td><td>
 Sets the title of the chart.</td><td>
 Dependency  Property</td><td>
 Object/ “Chart Header”</td><td>
- &lt;syncfusion:Chart Name="chart1" Header="Chart Header"&gt;</td><td>
+ <syncfusion:Chart Name="chart1" Header="Chart Header"></td><td>
 Sub Property Name : HeaderAlignment Type: HorizontalAlignment / HorizontalAlignment.Left</td></tr>
 </table>
 Setting the Title for a Chart
@@ -1329,9 +1329,9 @@ Set the title for a chart by using the following code.
 
 [XAML]
 
-&lt;sfchart:Chart Name="Chart1" Header="Sales and Month"&gt;
+<sfchart:Chart Name="Chart1" Header="Sales and Month">
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -1343,7 +1343,7 @@ chart1.Header = " Sales and Month "
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img9.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -1357,21 +1357,21 @@ Customize the chart header by using the following code.
 
 
 
-&lt;sfchart:Chart Name="Chart1" &gt;
+<sfchart:Chart Name="Chart1" >
 
-   &lt;sfchart:Chart.Header&gt;
+   <sfchart:Chart.Header>
 
-     &lt;TextBlock Text="Sales and Month" FontSize="16" Foreground="Blue" FontStyle="Italic" FontWeight="Bold" Margin="-5"  /&gt;
+     <TextBlock Text="Sales and Month" FontSize="16" Foreground="Blue" FontStyle="Italic" FontWeight="Bold" Margin="-5"  />
 
-   &lt;/sfchart:Chart.Header&gt;
+   </sfchart:Chart.Header>
 
-&lt;/sfchart:Chart&gt;
-
-
+</sfchart:Chart>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img10.png) | markdownify }
+
+
+{{ '![](Chart-Controls_images/Chart-Controls_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -1387,11 +1387,11 @@ The following code example illustrates how to display the built-in context menu 
 
 
 
-&lt;syncfusion:Chart &gt;
+<syncfusion:Chart >
 
-&lt;syncfusion:ChartArea IsContextMenuEnabled="True" /&gt;                   
+<syncfusion:ChartArea IsContextMenuEnabled="True" />                   
 
-&lt;/syncfusion:Chart&gt;
+</syncfusion:Chart>
 
 
 
@@ -1403,7 +1403,7 @@ area.IsContextMenuEnabled = true;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img11.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1425,7 +1425,7 @@ Chart1.Areas[0].ContextMenu = contextMenu;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img12.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1437,15 +1437,15 @@ You can customize the background of the Chart Area to suit the application by sp
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-&lt;sfchart:ChartArea Background="LightSkyBlue"&gt;
+<sfchart:ChartArea Background="LightSkyBlue">
 
-&lt;sfchart:ChartSeries/&gt;
+<sfchart:ChartSeries/>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -1461,7 +1461,7 @@ Chart1.Areas.Add(area);
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img13.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1473,15 +1473,15 @@ The GridBackground property of the Chart Area is used to change the color of the
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-&lt;sfchart:ChartArea Background="LightSkyBlue" GridBackground="AliceBlue"&gt;
+<sfchart:ChartArea Background="LightSkyBlue" GridBackground="AliceBlue">
 
-&lt;sfchart:ChartSeries/&gt;
+<sfchart:ChartSeries/>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -1499,7 +1499,7 @@ Chart1.Areas.Add(area);
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img14.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1533,15 +1533,15 @@ The following code example illustrates how to set the preceding properties.
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-&lt;sfchart:ChartArea Background="LightSkyBlue" GridBackground="AliceBlue" AlternatingGridBackground="LightPink" AlternatingFillMode="Even" AlternatingFillDirection="Horizontal"&gt;
+<sfchart:ChartArea Background="LightSkyBlue" GridBackground="AliceBlue" AlternatingGridBackground="LightPink" AlternatingFillMode="Even" AlternatingFillDirection="Horizontal">
 
-&lt;sfchart:ChartSeries/&gt;
+<sfchart:ChartSeries/>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -1565,7 +1565,7 @@ Chart1.Areas.Add(area);
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img15.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1628,14 +1628,14 @@ Image Watermark
 <table>
 <tr>
 <td>
-[XAML]     &lt;syncfusion:ChartArea.Watermark&gt;        <VisualBrush Stretch="None" Opacity="0.5" AlignmentX="Center"                                                     AlignmentY="Top">            &lt;VisualBrush.Visual&gt;                &lt;Image Name="img" Source="/WatermarkDemo;component/SyncLogo1.png"&gt;                    &lt;Image.LayoutTransform&gt;                        &lt;RotateTransform Angle="-45"/&gt;                    &lt;/Image.LayoutTransform&gt;                &lt;/Image&gt;            &lt;/VisualBrush.Visual&gt;        &lt;/VisualBrush&gt;    &lt;/syncfusion:ChartArea.Watermark&gt;</td></tr>
+[XAML]     <syncfusion:ChartArea.Watermark>        <VisualBrush Stretch="None" Opacity="0.5" AlignmentX="Center"                                                     AlignmentY="Top">            <VisualBrush.Visual>                <Image Name="img" Source="/WatermarkDemo;component/SyncLogo1.png">                    <Image.LayoutTransform>                        <RotateTransform Angle="-45"/>                    </Image.LayoutTransform>                </Image>            </VisualBrush.Visual>        </VisualBrush>    </syncfusion:ChartArea.Watermark></td></tr>
 <tr>
 <td>
 [C#]            Image image = new Image()            {                Source = new BitmapImage(new Uri(@"D:\WatermarkDemo\SyncLogo1.png")),                LayoutTransform = new RotateTransform() { Angle = -45 }            };                       this.chartArea.Watermark = new VisualBrush()            {                Visual = image,                Stretch = Stretch.None,                AlignmentX = AlignmentX.Center,                AlignmentY = AlignmentY.Top,                Opacity = 0.5                           };</td></tr>
 </table>
 
 
-{ ![Description: C:/Users/johnbowlinboscok/Desktop/REt/Images/ImageWatermark.png](Chart-Controls_images/Chart-Controls_img16.png) | markdownify }
+{{ '![Description: C:/Users/johnbowlinboscok/Desktop/REt/Images/ImageWatermark.png](Chart-Controls_images/Chart-Controls_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -1644,14 +1644,14 @@ Text Watermark
 <table>
 <tr>
 <td>
-[XAML]    &lt;syncfusion:ChartArea.Watermark&gt;        <VisualBrush Stretch="None" Opacity="0.8" AlignmentX="Right"                                                     AlignmentY="Bottom">            &lt;VisualBrush.Visual&gt;                <TextBlock Name="txt" Text="Syncfusion" FontSize="64" Foreground="Red"                                      FontFamily="Microsoft Sans Serif">                    &lt;TextBlock.LayoutTransform&gt;                        &lt;RotateTransform Angle="325"/&gt;                    &lt;/TextBlock.LayoutTransform&gt;                &lt;/TextBlock&gt;            &lt;/VisualBrush.Visual&gt;        &lt;/VisualBrush&gt;    &lt;/syncfusion:ChartArea.Watermark&gt;</td></tr>
+[XAML]    <syncfusion:ChartArea.Watermark>        <VisualBrush Stretch="None" Opacity="0.8" AlignmentX="Right"                                                     AlignmentY="Bottom">            <VisualBrush.Visual>                <TextBlock Name="txt" Text="Syncfusion" FontSize="64" Foreground="Red"                                      FontFamily="Microsoft Sans Serif">                    <TextBlock.LayoutTransform>                        <RotateTransform Angle="325"/>                    </TextBlock.LayoutTransform>                </TextBlock>            </VisualBrush.Visual>        </VisualBrush>    </syncfusion:ChartArea.Watermark></td></tr>
 <tr>
 <td>
 [C#]            TextBlock text = new TextBlock()            {                Text = "Syncfusion",                FontSize = 64,                Foreground = Brushes.Red,                FontFamily = new FontFamily("Microsoft Sans Serif"),                LayoutTransform = new RotateTransform() { Angle = 325 }            };            this.chartArea.Watermark = new VisualBrush()            {                Visual = text,                Stretch = Stretch.None,                AlignmentX = AlignmentX.Right,                AlignmentY = AlignmentY.Bottom,                Opacity = 0.5                           };</td></tr>
 </table>
 
 
-{ ![Description: C:/Users/johnbowlinboscok/Desktop/REt/Images/TextWatermark.png](Chart-Controls_images/Chart-Controls_img17.png) | markdownify }
+{{ '![Description: C:/Users/johnbowlinboscok/Desktop/REt/Images/TextWatermark.png](Chart-Controls_images/Chart-Controls_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -1663,7 +1663,7 @@ Built-in Chart Grid
 
 ChartGrid is the container that is used by Chart, by default, to host the Chart Areas. The following screenshot illustrates the default settings of ChartGrid in which all the Chart Areas are arranged one after the other.
 
-{ ![](Chart-Controls_images/Chart-Controls_img18.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img18.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1673,23 +1673,23 @@ However, the default settings of the ChartGrid can be customized to display the 
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-   &lt;sfchart:Chart.AreasPanel&gt;
+   <sfchart:Chart.AreasPanel>
 
-      &lt;ItemsPanelTemplate&gt;
+      <ItemsPanelTemplate>
 
-         &lt;sfchart:ChartGrid Orientation="Horizontal" AutoRowsCount="2"&gt;&lt;/sfchart:ChartGrid&gt;
+         <sfchart:ChartGrid Orientation="Horizontal" AutoRowsCount="2"></sfchart:ChartGrid>
 
-      &lt;/ItemsPanelTemplate&gt;
+      </ItemsPanelTemplate>
 
-   &lt;/sfchart:Chart.AreasPanel&gt;
+   </sfchart:Chart.AreasPanel>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img19.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img19.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1703,37 +1703,37 @@ Also you can plug-in any kind of Panel as the container for the Chart Area. The 
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-&lt;sfchart:Chart.AreasPanel&gt;
+<sfchart:Chart.AreasPanel>
 
-&lt;ItemsPanelTemplate&gt;
+<ItemsPanelTemplate>
 
-&lt;DockPanel/&gt;
+<DockPanel/>
 
-&lt;/ItemsPanelTemplate&gt;
+</ItemsPanelTemplate>
 
-&lt;/sfchart:Chart.AreasPanel&gt;
+</sfchart:Chart.AreasPanel>
 
-&lt;sfchart:ChartArea Background="LightGray" GridBackground="White" DockPanel.Dock="Top" Height="200"&gt;
+<sfchart:ChartArea Background="LightGray" GridBackground="White" DockPanel.Dock="Top" Height="200">
 
-&lt;sfchart:ChartSeries/&gt;
+<sfchart:ChartSeries/>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
-&lt;sfchart:ChartArea Background="WhiteSmoke" GridBackground="White" DockPanel.Dock="Top" Height="200"&gt;
+<sfchart:ChartArea Background="WhiteSmoke" GridBackground="White" DockPanel.Dock="Top" Height="200">
 
-&lt;sfchart:ChartSeries/&gt;
+<sfchart:ChartSeries/>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
-&lt;sfchart:ChartArea Background="LightSlateGray" GridBackground="White" &gt;
+<sfchart:ChartArea Background="LightSlateGray" GridBackground="White" >
 
-&lt;sfchart:ChartSeries/&gt;
+<sfchart:ChartSeries/>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -1767,7 +1767,7 @@ Chart1.Areas.Add(area2);
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img20.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img20.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1787,45 +1787,45 @@ Essential Chart WPF lets you align multiple chart areas by using a single primar
 
 
 
-&lt;sfChart:SyncChartAreas&gt;
+<sfChart:SyncChartAreas>
 
-    &lt;sfChart:SyncChartAreas.PrimaryAxis&gt;
+    <sfChart:SyncChartAreas.PrimaryAxis>
 
         <sfChart:ChartAxis Name="year" LabelFontSize="8" ValueType="Double" RangePadding="None"
 
         RangeCalculationMode="ConsistentAcrossChartTypes" sfChart:ChartArea.ShowGridLines="True" Header="Year">
 
-        &lt;/sfChart:ChartAxis&gt;
+        </sfChart:ChartAxis>
 
-    &lt;/sfChart:SyncChartAreas.PrimaryAxis&gt;
+    </sfChart:SyncChartAreas.PrimaryAxis>
 
-    &lt;sfChart:SyncChartAreas.Areas&gt;
+    <sfChart:SyncChartAreas.Areas>
 
-        &lt;sfChart:ChartArea Background="Transparent"&gt;
+        <sfChart:ChartArea Background="Transparent">
 
-            &lt;sfChart:ChartArea.SecondaryAxis&gt;
+            <sfChart:ChartArea.SecondaryAxis>
 
-                &lt;sfChart:ChartAxis Name="Literacy" IntersectAction="Hide" LabelFontSize="8" ValueType="Double" Header="Literacy Growth"                   RangePadding="None" sfChart:ChartArea.ShowGridLines="False" /&gt;
+                <sfChart:ChartAxis Name="Literacy" IntersectAction="Hide" LabelFontSize="8" ValueType="Double" Header="Literacy Growth"                   RangePadding="None" sfChart:ChartArea.ShowGridLines="False" />
 
-            &lt;/sfChart:ChartArea.SecondaryAxis&gt;
+            </sfChart:ChartArea.SecondaryAxis>
 
-            &lt;sfChart:ChartSeries Name="series22" Label="Increase In Population" BindingPathX="Year" BindingPathsY="IncreaseInPopulation"              Type="Area" StrokeThickness="2" Interior="Green" &gt;
+            <sfChart:ChartSeries Name="series22" Label="Increase In Population" BindingPathX="Year" BindingPathsY="IncreaseInPopulation"              Type="Area" StrokeThickness="2" Interior="Green" >
 
-                &lt;sfChart:ChartSeries.YAxis&gt;
+                <sfChart:ChartSeries.YAxis>
 
-                    &lt;sfChart:ChartAxis sfChart:ChartArea.ShowGridLines="False" Header="Increase In Population" OpposedPosition="True"                         Orientation="Vertical" LabelFontSize="8" ValueType="Double" RangePadding="None" /&gt;
+                    <sfChart:ChartAxis sfChart:ChartArea.ShowGridLines="False" Header="Increase In Population" OpposedPosition="True"                         Orientation="Vertical" LabelFontSize="8" ValueType="Double" RangePadding="None" />
 
-                &lt;/sfChart:ChartSeries.YAxis&gt;
+                </sfChart:ChartSeries.YAxis>
 
-            &lt;/sfChart:ChartSeries&gt;
+            </sfChart:ChartSeries>
 
-            &lt;sfChart:ChartSeries Name="series21" Label="Literacy Growth" BindingPathX="Year" BindingPathsY="LiteracyGrowth" Type="Spline"             StrokeThickness="2" Interior="DarkBlue"/&gt;
+            <sfChart:ChartSeries Name="series21" Label="Literacy Growth" BindingPathX="Year" BindingPathsY="LiteracyGrowth" Type="Spline"             StrokeThickness="2" Interior="DarkBlue"/>
 
-        &lt;/sfChart:ChartArea&gt;
+        </sfChart:ChartArea>
 
-    &lt;/sfChart:SyncChartAreas.Areas&gt;
+    </sfChart:SyncChartAreas.Areas>
 
-&lt;/sfChart:SyncChartAreas&gt;
+</sfChart:SyncChartAreas>
 
 
 
@@ -1853,7 +1853,7 @@ syncAreas.Areas.Add(area2);
 
 Run the code. The following output is displayed.
 
-{ ![](Chart-Controls_images/Chart-Controls_img21.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img21.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1869,7 +1869,7 @@ Add Additional Zooming Functionality, by using the following code.
 
 
 
-&lt;sfChart:SyncChartAreas IsContextMenuEnabled="True"&gt; 
+<sfChart:SyncChartAreas IsContextMenuEnabled="True"> 
 
 
 
@@ -1881,7 +1881,7 @@ syncArea.IsContextMenuEnabled = true;
 
 When the code runs, the following output displays.
 
-{ ![](Chart-Controls_images/Chart-Controls_img22.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img22.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1955,7 +1955,7 @@ Add Lazy Loading Support, by using the following code.
 
 
 
-&lt;syncfusion:ChartArea EnableLazyLoading="True" IsContextMenuEnabled="True"&gt;
+<syncfusion:ChartArea EnableLazyLoading="True" IsContextMenuEnabled="True">
 
 
 
@@ -1977,7 +1977,7 @@ Display 3D Chart, by using the following code:
 
 //To display the chart type in 3d mode
 
-&lt;syncfusion:ChartArea.Chart3DSettings&gt;
+<syncfusion:ChartArea.Chart3DSettings>
 
                         <syncfusion:Chart3D BackWallThickness="0" 
 
@@ -1985,7 +1985,7 @@ ShowBackWall="False" LeftWallBackground="Transparent" LeftWallThickness="0"
 
 BottomWallBackground="Transparent" BottomWallThickness="0"/>
 
-                    &lt;/syncfusion:ChartArea.Chart3DSettings&gt;
+                    </syncfusion:ChartArea.Chart3DSettings>
 
 
 
@@ -2067,7 +2067,7 @@ CameraProjection.Orthographic;
 
 When the code runs, the following output displays.
 
-{ ![](Chart-Controls_images/Chart-Controls_img23.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img23.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2191,41 +2191,41 @@ Add Interactive Cursors, by using the following code.
 
 //sets the vertical template for the Vertical Label
 
-        &lt;Chart:InteractiveCursor.VerticalLabelTemplate&gt;
+        <Chart:InteractiveCursor.VerticalLabelTemplate>
 
-            &lt;DataTemplate&gt;
+            <DataTemplate>
 
-                &lt;Grid&gt;
+                <Grid>
 
-                    &lt;Label Foreground="GreenYellow" Content="{Binding}"/&gt;
+                    <Label Foreground="GreenYellow" Content="{Binding}"/>
 
-                &lt;/Grid&gt;
+                </Grid>
 
-            &lt;/DataTemplate&gt;
+            </DataTemplate>
 
-        &lt;/Chart:InteractiveCursor.VerticalLabelTemplate&gt;
+        </Chart:InteractiveCursor.VerticalLabelTemplate>
 
 //sets the Horizontal template for the horizontal Label
 
 
 
-        &lt;Chart:InteractiveCursor.HorizontalLabelTemplate&gt;
+        <Chart:InteractiveCursor.HorizontalLabelTemplate>
 
-            &lt;DataTemplate&gt;
+            <DataTemplate>
 
-                &lt;Grid&gt;
+                <Grid>
 
-                    &lt;Label Foreground="GreenYellow" Content="{Binding}"/&gt;
+                    <Label Foreground="GreenYellow" Content="{Binding}"/>
 
-                &lt;/Grid&gt;
+                </Grid>
 
-            &lt;/DataTemplate&gt;
+            </DataTemplate>
 
-        &lt;/Chart:InteractiveCursor.HorizontalLabelTemplate&gt;
+        </Chart:InteractiveCursor.HorizontalLabelTemplate>
 
-    &lt;/Chart:InteractiveCursor&gt;
+    </Chart:InteractiveCursor>
 
-&lt;/Chart:SyncChartAreas.InteractiveCursors&gt;
+</Chart:SyncChartAreas.InteractiveCursors>
 
 
 
@@ -2353,7 +2353,7 @@ This feature is useful when we use an array or list as data source.
 
 
 
-    &lt;syncfusion:ChartSeries Name="series1" BindingPathsY="Y" BindingPathX="X[0]"  Type="FastStackingColumn" Stroke="Black" DataSource="{Binding}"/&gt;
+    <syncfusion:ChartSeries Name="series1" BindingPathsY="Y" BindingPathX="X[0]"  Type="FastStackingColumn" Stroke="Black" DataSource="{Binding}"/>
 
 We can bind the data values with the index “X[0]“ .
 
@@ -2465,9 +2465,9 @@ double</td></tr>
 
                          ElementName=hor_sma,Path=Value,Mode=TwoWay}"   >
 
-&lt;syncfusion:ChartSeries Type="Area" StrokeThickness="1.0" InactiveSeriesOpacityOnZoom="0.25"  x:Name="ser1" DataSource="{Binding ZoomingModel}" BindingPathX="Id" BindingPathsY="YValue" IsIndexed="False" Label="Anomaly" /&gt;
+<syncfusion:ChartSeries Type="Area" StrokeThickness="1.0" InactiveSeriesOpacityOnZoom="0.25"  x:Name="ser1" DataSource="{Binding ZoomingModel}" BindingPathX="Id" BindingPathsY="YValue" IsIndexed="False" Label="Anomaly" />
 
- &lt;/syncfusion:ChartArea&gt;
+ </syncfusion:ChartArea>
 
 
 
@@ -2493,7 +2493,7 @@ Add additional zooming functionality by using the following code.
 
 [XAML]
 
-&lt;sfChart:SyncChartAreas IsContextMenuEnabled="True"&gt; 
+<sfChart:SyncChartAreas IsContextMenuEnabled="True"> 
 
 
 
@@ -2505,7 +2505,7 @@ syncArea.IsContextMenuEnabled = true;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img24.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img24.png)' | markdownify }}
 {:.image }
 
 
@@ -2515,7 +2515,7 @@ SyncChartArea also has support for sector zooming as in ordinary chart areas.
 
 * SyncChart can be zoomed in using sector zooming instead of the Zoom In icon from the Zooming toolkit.
 
-{ ![](Chart-Controls_images/Chart-Controls_img25.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -2527,9 +2527,9 @@ Essential Chart WPF > User Interaction > Zooming and Scrolling Demo
 
 
 
-&lt;sfChart:SyncChartAreas   Name="syncChart" EnableMouseDragZooming="True"&gt;
+<sfChart:SyncChartAreas   Name="syncChart" EnableMouseDragZooming="True">
 
-&lt;/sfChart:SyncChartAreas&gt;
+</sfChart:SyncChartAreas>
 
 
 
@@ -2561,15 +2561,15 @@ You can add one or more Chart Series to a Chart Area to plot points in the Chart
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-  &lt;sfchart:ChartArea&gt;
+  <sfchart:ChartArea>
 
-    &lt;sfchart:ChartSeries/&gt;
+    <sfchart:ChartSeries/>
 
-  &lt;/sfchart:ChartArea&gt;
+  </sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -2626,57 +2626,57 @@ The following code example illustrates how to bind the Chart control to an XMLDa
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;XmlDataProvider x:Key="myXmlData"&gt;
+<XmlDataProvider x:Key="myXmlData">
 
-&lt;x:XData&gt;
+<x:XData>
 
-&lt;Products xmlns=""&gt;
+<Products xmlns="">
 
-&lt;Product Sales="20" Projected="30" Month="1"/&gt;
+<Product Sales="20" Projected="30" Month="1"/>
 
-&lt;Product Sales="12" Projected="28" Month="2"/&gt;
+<Product Sales="12" Projected="28" Month="2"/>
 
-&lt;Product Sales="15" Projected="29" Month="3"/&gt;
+<Product Sales="15" Projected="29" Month="3"/>
 
-&lt;Product Sales="28" Projected="33" Month="4"/&gt;
+<Product Sales="28" Projected="33" Month="4"/>
 
-&lt;Product Sales="24" Projected="30" Month="5"/&gt;
+<Product Sales="24" Projected="30" Month="5"/>
 
-&lt;/Products&gt;
+</Products>
 
-&lt;/x:XData&gt;
+</x:XData>
 
-&lt;/XmlDataProvider&gt;
+</XmlDataProvider>
 
-&lt;/Window.Resources&gt;
-
-
-
-&lt;Grid&gt;
-
-    &lt;sfchart:Chart Name="Chart2"&gt;
-
-        &lt;sfchart:ChartArea &gt;
-
-            &lt;sfchart:ChartSeries DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}" BindingPathX="Month"                BindingPathsY="Sales" Type="Column" Label="Actual Sales"&gt;
-
-            &lt;/sfchart:ChartSeries&gt;
-
-            &lt;sfchart:ChartSeries DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}" BindingPathX="Month"                BindingPathsY="Projected" Type="Column" Label="Projected Sales"&gt;
-
-            &lt;/sfchart:ChartSeries&gt;
-
-        &lt;/sfchart:ChartArea&gt;
-
-    &lt;/sfchart:Chart&gt;
-
-&lt;/Grid&gt;
+</Window.Resources>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img26.jpeg) | markdownify }
+<Grid>
+
+    <sfchart:Chart Name="Chart2">
+
+        <sfchart:ChartArea >
+
+            <sfchart:ChartSeries DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}" BindingPathX="Month"                BindingPathsY="Sales" Type="Column" Label="Actual Sales">
+
+            </sfchart:ChartSeries>
+
+            <sfchart:ChartSeries DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}" BindingPathX="Month"                BindingPathsY="Projected" Type="Column" Label="Projected Sales">
+
+            </sfchart:ChartSeries>
+
+        </sfchart:ChartArea>
+
+    </sfchart:Chart>
+
+</Grid>
+
+
+
+{{ '![](Chart-Controls_images/Chart-Controls_img26.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2706,37 +2706,37 @@ The interior of the Chart Series can be set by using the Interior property.
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;!--To be added in window resources.--&gt;
+<!--To be added in window resources.-->
 
-&lt;LinearGradientBrush x:Key="SeriesAInterior" EndPoint="1,0.5" StartPoint="0,0.5"&gt;
+<LinearGradientBrush x:Key="SeriesAInterior" EndPoint="1,0.5" StartPoint="0,0.5">
 
-&lt;LinearGradientBrush.GradientStops&gt;
+<LinearGradientBrush.GradientStops>
 
-&lt;GradientStop Color="#FFC07E2C" Offset="0"/&gt;
+<GradientStop Color="#FFC07E2C" Offset="0"/>
 
-&lt;GradientStop Color="#FFFFDD9E" Offset="0.5"/&gt;
+<GradientStop Color="#FFFFDD9E" Offset="0.5"/>
 
-&lt;GradientStop Color="#FFC07E2C" Offset="1"/&gt;
+<GradientStop Color="#FFC07E2C" Offset="1"/>
 
-&lt;/LinearGradientBrush.GradientStops&gt;
+</LinearGradientBrush.GradientStops>
 
-&lt;/LinearGradientBrush&gt;
+</LinearGradientBrush>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
-&lt;!--To be added in window resources.--&gt;
+<!--To be added in window resources.-->
 
-&lt;syncfusion:ChartSeries Interior="Red" Data="1 20 2 30 3 55 4 35 5 40" /&gt;
+<syncfusion:ChartSeries Interior="Red" Data="1 20 2 30 3 55 4 35 5 40" />
 
-&lt;syncfusion:ChartSeries Interior="{StaticResource SeriesAInterior}" Label="Series 2" Data="1 30 2 40 3 50 4 25 5 45" /&gt;
+<syncfusion:ChartSeries Interior="{StaticResource SeriesAInterior}" Label="Series 2" Data="1 30 2 40 3 50 4 25 5 45" />
 
 The following screenshot illustrates Chart Series Interior settings.
 
-{ ![](Chart-Controls_images/Chart-Controls_img27.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img27.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2752,17 +2752,17 @@ Essential Chart for WPF enables you to show / hide the Chart Series by using the
 
 
 
-&lt;syncfusion:Chart &gt;
+<syncfusion:Chart >
 
-&lt;syncfusion:ChartArea IsContextMenuEnabled="True" &gt;                   
+<syncfusion:ChartArea IsContextMenuEnabled="True" >                   
 
-&lt;syncfusion:ChartSeries Label="Series 1" IsVisible="False" Data=" 1 35 2 45 3 30 4 25 5 40" /&gt;
+<syncfusion:ChartSeries Label="Series 1" IsVisible="False" Data=" 1 35 2 45 3 30 4 25 5 40" />
 
-&lt;syncfusion:ChartSeries Label="Series 2" Data=" 1 30 2 40 3 50 4 20 5 45" /&gt;
+<syncfusion:ChartSeries Label="Series 2" Data=" 1 30 2 40 3 50 4 20 5 45" />
 
-&lt;/syncfusion:ChartArea&gt;                    
+</syncfusion:ChartArea>                    
 
-&lt;/syncfusion:Chart&gt;
+</syncfusion:Chart>
 
 
 
@@ -2778,7 +2778,7 @@ series.IsVisible = false;
 
 The following screenshot illustrates Chart with Series 1 invisible.
 
-{ ![](Chart-Controls_images/Chart-Controls_img28.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img28.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2794,17 +2794,17 @@ Chart Series can be rotated by using the ChartSeries.IsRotated property.
 
 
 
-&lt;syncfusion:Chart &gt;
+<syncfusion:Chart >
 
-      &lt;syncfusion:ChartArea &gt;                   
+      <syncfusion:ChartArea >                   
 
-            &lt;syncfusion:ChartSeries Label="Series 1" IsRotated="True" Data=" 1 35 2 45 3 30 4 25 5 40" /&gt;
+            <syncfusion:ChartSeries Label="Series 1" IsRotated="True" Data=" 1 35 2 45 3 30 4 25 5 40" />
 
-            &lt;syncfusion:ChartSeries Label="Series 2" Data=" 1 30 2 40 3 50 4 20 5 45" /&gt;
+            <syncfusion:ChartSeries Label="Series 2" Data=" 1 30 2 40 3 50 4 20 5 45" />
 
-      &lt;/syncfusion:ChartArea&gt;                    
+      </syncfusion:ChartArea>                    
 
-&lt;/syncfusion:Chart&gt;
+</syncfusion:Chart>
 
 
 
@@ -2816,7 +2816,7 @@ area.Series[0].IsRotated = true;
 
 The following screenshot illustrates Chart with Series 1 rotated.
 
-{ ![](Chart-Controls_images/Chart-Controls_img29.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img29.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2832,13 +2832,13 @@ The text displayed in the Chart Legends and the Chart Area context menu can be c
 
 
 
-&lt;syncfusion:ChartArea&gt;
+<syncfusion:ChartArea>
 
-     &lt;syncfusion:ChartSeries Type="Column" Label="Series 1"/&gt;
+     <syncfusion:ChartSeries Type="Column" Label="Series 1"/>
 
-     &lt;syncfusion:ChartSeries Type="Column" Label="Series 2"/&gt;
+     <syncfusion:ChartSeries Type="Column" Label="Series 2"/>
 
-&lt;/syncfusion:ChartArea&gt;
+</syncfusion:ChartArea>
 
 
 
@@ -2852,7 +2852,7 @@ area.Series[1].Label = "Series 2";
 
 The following screenshot illustrates Chart with customized Series Labels.
 
-{ ![](Chart-Controls_images/Chart-Controls_img30.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img30.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2868,23 +2868,23 @@ Chart control supports 34 types of charts, among which 12 types are supported in
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-  &lt;local:ProductSalesCollection x:Key="SeriesData1"/&gt;
+  <local:ProductSalesCollection x:Key="SeriesData1"/>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-  &lt;sfchart:ChartArea&gt;
+  <sfchart:ChartArea>
 
-    &lt;sfchart:ChartSeries Type="Area" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"/&gt;
+    <sfchart:ChartSeries Type="Area" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"/>
 
-  &lt;/sfchart:ChartArea&gt;
+  </sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -2904,7 +2904,7 @@ Chart1.Areas[0].Series.Add(series);
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img31.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img31.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2944,25 +2944,25 @@ The following code example illustrates how to set the preceding properties.
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-  &lt;local:ProductSalesCollection x:Key="SeriesData1"/&gt;
+  <local:ProductSalesCollection x:Key="SeriesData1"/>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-  &lt;sfchart:ChartArea&gt;
+  <sfchart:ChartArea>
 
     <sfchart:ChartSeries Type="Area" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"
 
     Interior="LightCoral" Stroke="Black" StrokeThickness="1.5"/>
 
-  &lt;/sfchart:ChartArea&gt;
+  </sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -2988,7 +2988,7 @@ Chart1.Areas[0].Series.Add(series);
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img32.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img32.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3008,59 +3008,59 @@ Chart for WPF enables you to apply custom Data Templates to the Chart Series. By
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;!--Chart Series Data--&gt;
+<!--Chart Series Data-->
 
-&lt;XmlDataProvider x:Key="myXmlData"&gt;
+<XmlDataProvider x:Key="myXmlData">
 
-&lt;x:XData&gt;
+<x:XData>
 
-&lt;Products xmlns=""&gt;
+<Products xmlns="">
 
-&lt;Product Sales="20" Projected="30" Month="1"/&gt;
+<Product Sales="20" Projected="30" Month="1"/>
 
-&lt;Product Sales="12" Projected="28" Month="2"/&gt;
+<Product Sales="12" Projected="28" Month="2"/>
 
-&lt;Product Sales="15" Projected="29" Month="3"/&gt;
+<Product Sales="15" Projected="29" Month="3"/>
 
-&lt;Product Sales="28" Projected="33" Month="4"/&gt;
+<Product Sales="28" Projected="33" Month="4"/>
 
-&lt;Product Sales="24" Projected="30" Month="5"/&gt;
+<Product Sales="24" Projected="30" Month="5"/>
 
-&lt;/Products&gt;
+</Products>
 
-&lt;/x:XData&gt;
+</x:XData>
 
-&lt;/XmlDataProvider&gt;
+</XmlDataProvider>
 
-&lt;!--Line Chart Template--&gt;
+<!--Line Chart Template-->
 
-&lt;DataTemplate x:Key="Template1"&gt;
+<DataTemplate x:Key="Template1">
 
-&lt;Line X1="{Binding X1}" X2="{Binding X2}" Y1="{Binding Y1}" Y2="{Binding Y2}" StrokeThickness="2" Stroke="{Binding Interior}"       StrokeDashArray="3,2" /&gt;
+<Line X1="{Binding X1}" X2="{Binding X2}" Y1="{Binding Y1}" Y2="{Binding Y2}" StrokeThickness="2" Stroke="{Binding Interior}"       StrokeDashArray="3,2" />
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-   &lt;sfchart:ChartArea Background="LightGray" GridBackground="White"&gt;
+   <sfchart:ChartArea Background="LightGray" GridBackground="White">
 
      <sfchart:ChartSeries Template="{StaticResource Template1}" DataSource="{Binding Source={StaticResource myXmlData},
 
      XPath=Products/Product}" BindingPathX="Month" BindingPathsY="Sales" Interior="Red"  Type="Line"/>
 
-   &lt;/sfchart:ChartArea&gt;            
+   </sfchart:ChartArea>            
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img33.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img33.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3102,7 +3102,7 @@ specifies the width of the predefined symbols added to the adornments</td></tr>
 <tr>
 <td>
 SymbolTemplate</td><td>
-specifies the symbol to be displayed in the adornments when the Symbol property is set to {{ '_Custom_' | markdownify }}</td></tr>
+specifies the symbol to be displayed in the adornments when the Symbol property is set to {{{ ''_Custom_'' | markdownify }}}</td></tr>
 <tr>
 <td>
 VerticalAlignment</td><td>
@@ -3124,71 +3124,71 @@ The following code example illustrates how to display adornments in a Chart Seri
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-    &lt;!--Chart Series Data--&gt;
+    <!--Chart Series Data-->
 
-    &lt;XmlDataProvider x:Key="myXmlData"&gt;
+    <XmlDataProvider x:Key="myXmlData">
 
-        &lt;x:XData&gt;
+        <x:XData>
 
-            &lt;Products xmlns=""&gt;
+            <Products xmlns="">
 
-                &lt;Product Sales="20" Projected="30" Month="1"/&gt;
+                <Product Sales="20" Projected="30" Month="1"/>
 
-                &lt;Product Sales="12" Projected="28" Month="2"/&gt;
+                <Product Sales="12" Projected="28" Month="2"/>
 
-                &lt;Product Sales="15" Projected="29" Month="3"/&gt;
+                <Product Sales="15" Projected="29" Month="3"/>
 
-                &lt;Product Sales="28" Projected="33" Month="4"/&gt;
+                <Product Sales="28" Projected="33" Month="4"/>
 
-                &lt;Product Sales="24" Projected="30" Month="5"/&gt;
+                <Product Sales="24" Projected="30" Month="5"/>
 
-            &lt;/Products&gt;
+            </Products>
 
-        &lt;/x:XData&gt;
+        </x:XData>
 
-    &lt;/XmlDataProvider&gt;
+    </XmlDataProvider>
 
-    &lt;!--ChartAdornmentInfo LabelTemplate--&gt;
+    <!--ChartAdornmentInfo LabelTemplate-->
 
-    &lt;DataTemplate x:Key="Lbltxt1"&gt;
+    <DataTemplate x:Key="Lbltxt1">
 
-        &lt;TextBlock Name="TB1" Text ="{Binding}" FontSize="13" Foreground="Red" TextAlignment="Justify"  VerticalAlignment="Center" FontWeight="Bold" /&gt;
+        <TextBlock Name="TB1" Text ="{Binding}" FontSize="13" Foreground="Red" TextAlignment="Justify"  VerticalAlignment="Center" FontWeight="Bold" />
 
-       &lt;/DataTemplate&gt;
+       </DataTemplate>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
-&lt;!--Chart with Adornments--&gt;
+<!--Chart with Adornments-->
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-    &lt;sfchart:ChartArea  Background="LightGray" GridBackground="White"&gt;
+    <sfchart:ChartArea  Background="LightGray" GridBackground="White">
 
-        &lt;sfchart:ChartArea.PrimaryAxis&gt;
+        <sfchart:ChartArea.PrimaryAxis>
 
-            &lt;sfchart:ChartAxis sfchart:ChartArea.ShowGridLines="False" /&gt;
+            <sfchart:ChartAxis sfchart:ChartArea.ShowGridLines="False" />
 
-        &lt;/sfchart:ChartArea.PrimaryAxis&gt;
+        </sfchart:ChartArea.PrimaryAxis>
 
         <sfchart:ChartSeries Type="Column" DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}"
 
         BindingPathX="Month" BindingPathsY="Sales"  Interior="LightSkyBlue" Stroke="Black" StrokeThickness="1.5">
 
-            &lt;sfchart:ChartSeries.AdornmentsInfo&gt;
+            <sfchart:ChartSeries.AdornmentsInfo>
 
-                &lt;sfchart:ChartAdornmentInfo LabelTemplate="{StaticResource Lbltxt1}" LabelContentPath="DataPoint.X" Visible="True"                        VerticalAlignment="Top"  /&gt;
+                <sfchart:ChartAdornmentInfo LabelTemplate="{StaticResource Lbltxt1}" LabelContentPath="DataPoint.X" Visible="True"                        VerticalAlignment="Top"  />
 
-            &lt;/sfchart:ChartSeries.AdornmentsInfo&gt;
+            </sfchart:ChartSeries.AdornmentsInfo>
 
-        &lt;/sfchart:ChartSeries&gt;
+        </sfchart:ChartSeries>
 
-    &lt;/sfchart:ChartArea&gt;
+    </sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -3210,7 +3210,7 @@ adornments.VerticalAlignment = VerticalAlignment.Top;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img34.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img34.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3246,15 +3246,15 @@ The following code example illustrates how to apply predefined symbol templates 
 
 
 
- &lt;Syncfusion:ChartSeries Type="Column"  DataSource="{StaticResource collection1}" BindingPathX="X" BindingPathsY="Y" IsIndexed="True"         Stroke="Black" StrokeThickness="1.5"&gt;
+ <Syncfusion:ChartSeries Type="Column"  DataSource="{StaticResource collection1}" BindingPathX="X" BindingPathsY="Y" IsIndexed="True"         Stroke="Black" StrokeThickness="1.5">
 
-      &lt;Syncfusion:ChartSeries.AdornmentsInfo&gt;
+      <Syncfusion:ChartSeries.AdornmentsInfo>
 
-         &lt;Syncfusion:ChartAdornmentInfo Visible="True" Symbol="Pentagon" SymbolInterior="Green" SymbolHeight="25" SymbolWidth="25" /&gt;
+         <Syncfusion:ChartAdornmentInfo Visible="True" Symbol="Pentagon" SymbolInterior="Green" SymbolHeight="25" SymbolWidth="25" />
 
-         &lt;/Syncfusion:ChartSeries.AdornmentsInfo&gt;
+         </Syncfusion:ChartSeries.AdornmentsInfo>
 
-      &lt;/Syncfusion:ChartSeries&gt;
+      </Syncfusion:ChartSeries>
 
 
 
@@ -3274,7 +3274,7 @@ series1.AdornmentsInfo.SymbolWidth = 25;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img35.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img35.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3286,49 +3286,49 @@ The following code example illustrates how to apply custom symbol templates to c
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-    &lt;local:ProductSalesCollection x:Key="SeriesData1"/&gt;
+    <local:ProductSalesCollection x:Key="SeriesData1"/>
 
-    &lt;DataTemplate x:Key="Lbltxt1"&gt;
+    <DataTemplate x:Key="Lbltxt1">
 
         <TextBlock Name="TB1" Text ="{Binding}" FontSize="11" Foreground="Black" TextAlignment="Justify"  VerticalAlignment="Center"
 
         FontWeight="Bold">
 
-    &lt;/TextBlock&gt;
+    </TextBlock>
 
-    &lt;/DataTemplate&gt;
+    </DataTemplate>
 
-    &lt;DataTemplate x:Key="SymbolTemplate"&gt;
+    <DataTemplate x:Key="SymbolTemplate">
 
-        &lt;Rectangle Stroke="Black" Fill="Red" Width="10" Height="10"/&gt;
+        <Rectangle Stroke="Black" Fill="Red" Width="10" Height="10"/>
 
-    &lt;/DataTemplate&gt;
+    </DataTemplate>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-    &lt;sfchart:ChartArea&gt;
+    <sfchart:ChartArea>
 
-        &lt;sfchart:ChartSeries Type="Area" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"                     Interior="LightCoral" Stroke="Black" StrokeThickness="1.5"&gt;
+        <sfchart:ChartSeries Type="Area" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"                     Interior="LightCoral" Stroke="Black" StrokeThickness="1.5">
 
-            &lt;sfchart:ChartSeries.AdornmentsInfo&gt;
+            <sfchart:ChartSeries.AdornmentsInfo>
 
                 <sfchart:ChartAdornmentInfo SymbolTemplate="{StaticResource SymbolTemplate}" LabelTemplate="{StaticResource Lbltxt1}"
 
                 LabelContentPath="DataPoint.X" Visible="True" VerticalAlignment="Top"/>
 
-            &lt;/sfchart:ChartSeries.AdornmentsInfo&gt;
+            </sfchart:ChartSeries.AdornmentsInfo>
 
-        &lt;/sfchart:ChartSeries&gt;
+        </sfchart:ChartSeries>
 
-    &lt;/sfchart:ChartArea&gt;
+    </sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -3364,7 +3364,7 @@ adornments.SymbolTemplate = this.Resources["SymbolTemplate"] as DataTemplate;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img36.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img36.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3386,19 +3386,19 @@ Use Case Scenarios
 
 Most fastchart types are used in stock market charts. Users can display the data of the point in the adornment.
 
-{ ![](Chart-Controls_images/Chart-Controls_img37.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img37.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img38.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img38.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img39.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img39.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img40.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img40.png)' | markdownify }}
 {:.image }
 
 
@@ -3410,13 +3410,13 @@ Adding Fastchart Types with Adornments to an Application
 
 [XAML]
 
-  &lt;Syncfusion:ChartSeries.AdornmentsInfo&gt;
+  <Syncfusion:ChartSeries.AdornmentsInfo>
 
-         &lt;Syncfusion:ChartAdornmentInfo Visible="True" Symbol="Ellipse" SymbolInterior="Red" SymbolHeight="20" SymbolWidth="20" /&gt;
+         <Syncfusion:ChartAdornmentInfo Visible="True" Symbol="Ellipse" SymbolInterior="Red" SymbolHeight="20" SymbolWidth="20" />
 
-         &lt;/Syncfusion:ChartSeries.AdornmentsInfo&gt;
+         </Syncfusion:ChartSeries.AdornmentsInfo>
 
-      &lt;/Syncfusion:ChartSeries&gt;
+      </Syncfusion:ChartSeries>
 
 
 
@@ -3444,27 +3444,27 @@ Labels can be displayed in the chart types such as Pie, Doughnut, Pyramid and Fu
 
 
 
-&lt;sfchart:ChartArea&gt;
+<sfchart:ChartArea>
 
-    &lt;sfchart:ChartSeries Type="Pie"&gt;
+    <sfchart:ChartSeries Type="Pie">
 
-        &lt;sfchart:ChartSeries DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}" BindingPathX="Month"                 BindingPathsY="Sales" &gt;
+        <sfchart:ChartSeries DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}" BindingPathX="Month"                 BindingPathsY="Sales" >
 
-            &lt;sfchart:ChartSeries.AdornmentsInfo&gt;
+            <sfchart:ChartSeries.AdornmentsInfo>
 
                 <sfchart:ChartAdornmentInfo LabelContentPath="SegmentLabel" Visible="True" SegmentShowLine="False"
 
                 SegmentLabelContent="Percentage" SegmentLabelFontSize="12"/>
 
-            &lt;/sfchart:ChartSeries.AdornmentsInfo&gt;
+            </sfchart:ChartSeries.AdornmentsInfo>
 
-        &lt;/sfchart:ChartSeries&gt;
+        </sfchart:ChartSeries>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img41.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img41.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3474,25 +3474,25 @@ Chart supports applying custom templates to the chart segment labels. The follow
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-    &lt;DataTemplate x:Key="labelsTemplate"&gt;
+    <DataTemplate x:Key="labelsTemplate">
 
-        &lt;Border CornerRadius="1" Margin="0" Padding="2" BorderBrush="Black" Background="MintCream" BorderThickness="1"&gt;
+        <Border CornerRadius="1" Margin="0" Padding="2" BorderBrush="Black" Background="MintCream" BorderThickness="1">
 
-            &lt;ContentPresenter Content="{Binding}"/&gt;
+            <ContentPresenter Content="{Binding}"/>
 
-        &lt;/Border&gt;
+        </Border>
 
-    &lt;/DataTemplate&gt;
+    </DataTemplate>
 
-    &lt;DataTemplate x:Key="connectorTemplate"&gt;
+    <DataTemplate x:Key="connectorTemplate">
 
-        &lt;Line X1="0" X2="10" Y1="0" Y2="0" Stroke="Black"/&gt;
+        <Line X1="0" X2="10" Y1="0" Y2="0" Stroke="Black"/>
 
-    &lt;/DataTemplate&gt;
+    </DataTemplate>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -3500,19 +3500,19 @@ Chart supports applying custom templates to the chart segment labels. The follow
 
 BindingPathsY="Sales" Type="Pie">
 
-    &lt;sfchart:ChartSeries.AdornmentsInfo&gt;
+    <sfchart:ChartSeries.AdornmentsInfo>
 
         <sfchart:ChartAdornmentInfo LabelContentPath="SegmentLabel" SegmentIsOut="False" SegmentLabelContent="Percentage" Visible="True"          SegmentShowLine="True" SegmentLabelFontSize="12" LabelTemplate="{StaticResource labelsTemplate}"
 
         ConnectorTemplate="{StaticResource connectorTemplate}"/>
 
-    &lt;/sfchart:ChartSeries.AdornmentsInfo&gt;
+    </sfchart:ChartSeries.AdornmentsInfo>
 
-&lt;/sfchart:ChartSeries&gt;
+</sfchart:ChartSeries>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img42.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img42.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3636,7 +3636,7 @@ Essential Chart provides support for Empty Points. The data collection that is p
 
 
 
-&lt;syncfusion:ChartSeries Type="Column" Name="series1" EmptyPointInterior="Red" EmptyPointStyle="SymbolAndInterior" Interior="Green" IsIndexed="False" ShowEmptyPoints="True" Stroke="Black"  StrokeThickness="1"/&gt;
+<syncfusion:ChartSeries Type="Column" Name="series1" EmptyPointInterior="Red" EmptyPointStyle="SymbolAndInterior" Interior="Green" IsIndexed="False" ShowEmptyPoints="True" Stroke="Black"  StrokeThickness="1"/>
 
 
 
@@ -3696,7 +3696,7 @@ public IList products()
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img43.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img43.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3732,17 +3732,17 @@ You can customize the empty point symbol using the _EmpyPointSymbolTemplate_ pro
 
 
 
-&lt;!—Data Template for Empty point symbol--&gt;
+<!—Data Template for Empty point symbol-->
 
-&lt;DataTemplate x:Key="EmptyTemp"&gt;                &lt;Grid &gt;                    &lt;Rectangle Fill="Green" Margin="0,0,0,10"  Width="10" Height="10" /&gt;                &lt;/Grid&gt;            &lt;/DataTemplate &gt;
+<DataTemplate x:Key="EmptyTemp">                <Grid >                    <Rectangle Fill="Green" Margin="0,0,0,10"  Width="10" Height="10" />                </Grid>            </DataTemplate >
 
-&lt;!— Adding Data Template for Chart series--&gt;
+<!— Adding Data Template for Chart series-->
 
-&lt;syncfusion:ChartSeries Name="series1" Label="Profit" EmptyPointSymbolTemplate="{StaticResource EmptyTemp}"&gt;
+<syncfusion:ChartSeries Name="series1" Label="Profit" EmptyPointSymbolTemplate="{StaticResource EmptyTemp}">
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img44.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img44.png)' | markdownify }}
 {:.image }
 
 
@@ -3809,7 +3809,7 @@ series1.EmptyPointValue = EmptyPointValue.Zero;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img45.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img45.png)' | markdownify }}
 {:.image }
 
 
@@ -3835,7 +3835,7 @@ series1.EmptyPointValue = EmptyPointValue.Average;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img46.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img46.png)' | markdownify }}
 {:.image }
 
 
@@ -3898,14 +3898,14 @@ Built-in Palette
 <table>
 <tr>
 <td>
-[XAML]   <syncfusion:ChartSeries DataSource="{Binding ProductModel}"            ColorEach="True" Palette="Gradient"                      BindingPathX="Months" BindingPathsY="Sales">     &lt;/syncfusion:ChartSeries&gt;</td></tr>
+[XAML]   <syncfusion:ChartSeries DataSource="{Binding ProductModel}"            ColorEach="True" Palette="Gradient"                      BindingPathX="Months" BindingPathsY="Sales">     </syncfusion:ChartSeries></td></tr>
 <tr>
 <td>
 [C#]     this.Series1.ColorEach = true;     this.Series1.Palette = ChartColorPalette.Gradient;</td></tr>
 </table>
 
 
-{ ![C:/Users/johnbowlinboscok/Desktop/REt/Images/Built-In.png](Chart-Controls_images/Chart-Controls_img47.png) | markdownify }
+{{ '![C:/Users/johnbowlinboscok/Desktop/REt/Images/Built-In.png](Chart-Controls_images/Chart-Controls_img47.png)' | markdownify }}
 {:.image }
 
 
@@ -3914,14 +3914,14 @@ Custom Palette
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:ChartSeries DataSource="{Binding ProductModel}"ColorEach="True" Palette="Custom" BindingPathX="Months" BindingPathsY="Sales"&gt;    &lt;syncfusion:ChartStyleModel.CustomPalette&gt;        &lt;x:Array Type='Brush'&gt;            &lt;SolidColorBrush Color='Violet"&gt;&lt;/SolidColorBrush&gt;&lt;SolidColorBrush Color='Indigo'&gt;&lt;/SolidColorBrush&gt;&lt;SolidColorBrush Color='Blue'&gt;&lt;/SolidColorBrush&gt;&lt;SolidColorBrush Color='Green'&gt;&lt;/SolidColorBrush&gt;&lt;SolidColorBrush Color='Yellow'&gt;&lt;/SolidColorBrush&gt;&lt;SolidColorBrush Color='Orange'&gt;&lt;/SolidColorBrush&gt;&lt;SolidColorBrush Color='Red'&gt;&lt;/SolidColorBrush&gt;        &lt;/x:Array&gt;    &lt;/syncfusion:ChartStyleModel.CustomPalette&gt;&lt;/syncfusion:ChartSeries&gt;</td></tr>
+[XAML]<syncfusion:ChartSeries DataSource="{Binding ProductModel}"ColorEach="True" Palette="Custom" BindingPathX="Months" BindingPathsY="Sales">    <syncfusion:ChartStyleModel.CustomPalette>        <x:Array Type='Brush'>            <SolidColorBrush Color='Violet"></SolidColorBrush><SolidColorBrush Color='Indigo'></SolidColorBrush><SolidColorBrush Color='Blue'></SolidColorBrush><SolidColorBrush Color='Green'></SolidColorBrush><SolidColorBrush Color='Yellow'></SolidColorBrush><SolidColorBrush Color='Orange'></SolidColorBrush><SolidColorBrush Color='Red'></SolidColorBrush>        </x:Array>    </syncfusion:ChartStyleModel.CustomPalette></syncfusion:ChartSeries></td></tr>
 <tr>
 <td>
 [C#]this.Series1.ColorEach = true;this.Series1.Palette = ChartColorPalette.Custom;this.Series1.CustomPalette = new Brush[]{Brushes.Violet,Brushes.Indigo,Brushes.Blue,Brushes.Green,Brushes.Yellow,Brushes.Orange,Brushes.Red};</td></tr>
 </table>
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img48.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img48.png)' | markdownify }}
 {:.image }
 
 
@@ -3937,35 +3937,35 @@ The following code example illustrates this.
 
 
 
-&lt;!--Include this in the Window's Resources section.--&gt;
+<!--Include this in the Window's Resources section.-->
 
-&lt;local:HighlightedToOpacityConverter x:Key="myOpcConverter"/&gt;
+<local:HighlightedToOpacityConverter x:Key="myOpcConverter"/>
 
 
 
-&lt;sfchart:ChartSeries Name="series1" Label="Series 1" Type="Column" DataSource="{StaticResource SeriesData1}" BindingPathX="Date" BindingPathsY="Y1"&gt;
+<sfchart:ChartSeries Name="series1" Label="Series 1" Type="Column" DataSource="{StaticResource SeriesData1}" BindingPathX="Date" BindingPathsY="Y1">
 
-    &lt;sfchart:ChartSeries.Interior&gt;
+    <sfchart:ChartSeries.Interior>
 
-        &lt;!--Increasing the Opacity of the Interior when this series is highlighted.--&gt;
+        <!--Increasing the Opacity of the Interior when this series is highlighted.-->
 
         <LinearGradientBrush EndPoint="0,0.5" StartPoint="1,0.5" Opacity="{Binding ElementName=series1, Path=Highlighted,
 
         Converter={StaticResource myOpcConverter}}">
 
-            &lt;GradientStop Color="#FF434865" Offset="0"/&gt;
+            <GradientStop Color="#FF434865" Offset="0"/>
 
-            &lt;GradientStop Color="#FF7598BF" Offset="0.947"/&gt;
+            <GradientStop Color="#FF7598BF" Offset="0.947"/>
 
-            &lt;GradientStop Color="#FF496B82" Offset="0.75"/&gt;
+            <GradientStop Color="#FF496B82" Offset="0.75"/>
 
-            &lt;GradientStop Color="#FF8DA4C7" Offset="0.365"/&gt;
+            <GradientStop Color="#FF8DA4C7" Offset="0.365"/>
 
-        &lt;/LinearGradientBrush&gt;
+        </LinearGradientBrush>
 
-    &lt;/sfchart:ChartSeries.Interior&gt;
+    </sfchart:ChartSeries.Interior>
 
-&lt;/sfchart:ChartSeries&gt;
+</sfchart:ChartSeries>
 
 
 
@@ -4013,13 +4013,13 @@ public class HighlightedToOpacityConverter : IValueConverter
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img49.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img49.jpeg)' | markdownify }}
 {:.image }
 
 
 A sample which demonstrates Series highlighting feature is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Series\Series Highlight Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Series\Series Highlight Demo_
 
 See Also
 
@@ -4035,105 +4035,105 @@ The following code example illustrates this.
 
 
 
-&lt;!--Include this in the Window's Resources section.--&gt;
+<!--Include this in the Window's Resources section.-->
 
 
 
-&lt;!--Define the interior that will be used as the "highlight" color.--&gt;
+<!--Define the interior that will be used as the "highlight" color.-->
 
-&lt;LinearGradientBrush x:Key="MouseHoverInterior" StartPoint="0,0.5" EndPoint="1,0.5"&gt;
+<LinearGradientBrush x:Key="MouseHoverInterior" StartPoint="0,0.5" EndPoint="1,0.5">
 
-    &lt;GradientStop Color="#FFFDAE41" Offset="0"/&gt;
+    <GradientStop Color="#FFFDAE41" Offset="0"/>
 
-    &lt;GradientStop Color="#FFFDC55C" Offset="0.860442"/&gt;
+    <GradientStop Color="#FFFDC55C" Offset="0.860442"/>
 
-    &lt;GradientStop Color="#FFFDDD77" Offset="0.989014"/&gt;
+    <GradientStop Color="#FFFDDD77" Offset="0.989014"/>
 
-    &lt;GradientStop Color="#FFFDDD77" Offset="1"/&gt;
+    <GradientStop Color="#FFFDDD77" Offset="1"/>
 
-&lt;/LinearGradientBrush&gt;
-
-
-
-&lt;!--Chart Series Data--&gt;
-
-&lt;XmlDataProvider x:Key="myXmlData"&gt;
-
-    &lt;x:XData&gt;
-
-        &lt;Products xmlns=""&gt;
-
-            &lt;Product Sales="20" Projected="30" Month="1"/&gt;
-
-            &lt;Product Sales="12" Projected="28" Month="2"/&gt;
-
-            &lt;Product Sales="15" Projected="29" Month="3"/&gt;
-
-            &lt;Product Sales="28" Projected="33" Month="4"/&gt;
-
-            &lt;Product Sales="24" Projected="30" Month="5"/&gt;
-
-        &lt;/Products&gt;
-
-    &lt;/x:XData&gt;
-
-&lt;/XmlDataProvider&gt;
+</LinearGradientBrush>
 
 
 
-&lt;!--Custom column template where the interior color of the data point segment is changed when the mouse pointer is over it. (ChartSegment.Highlighted property change)--&gt;
+<!--Chart Series Data-->
 
-&lt;DataTemplate x:Key="ColumnTemplate"&gt;
+<XmlDataProvider x:Key="myXmlData">
 
-    &lt;Canvas&gt;
+    <x:XData>
 
-        &lt;Grid Canvas.Left="{Binding X}" Canvas.Top="{Binding Y}" Width="{Binding Width}" Height="{Binding Height}"&gt;
+        <Products xmlns="">
+
+            <Product Sales="20" Projected="30" Month="1"/>
+
+            <Product Sales="12" Projected="28" Month="2"/>
+
+            <Product Sales="15" Projected="29" Month="3"/>
+
+            <Product Sales="28" Projected="33" Month="4"/>
+
+            <Product Sales="24" Projected="30" Month="5"/>
+
+        </Products>
+
+    </x:XData>
+
+</XmlDataProvider>
+
+
+
+<!--Custom column template where the interior color of the data point segment is changed when the mouse pointer is over it. (ChartSegment.Highlighted property change)-->
+
+<DataTemplate x:Key="ColumnTemplate">
+
+    <Canvas>
+
+        <Grid Canvas.Left="{Binding X}" Canvas.Top="{Binding Y}" Width="{Binding Width}" Height="{Binding Height}">
 
             <Border Name="ColumnRect" VerticalAlignment="Bottom" Width="{Binding Width}" Height="{Binding Height}"
 
                            >
 
-                &lt;Border.Style&gt;
+                <Border.Style>
 
-                    &lt;Style TargetType="{x:Type Border}"&gt;
+                    <Style TargetType="{x:Type Border}">
 
-                        &lt;Setter Property="BorderThickness" Value="1"/&gt;
+                        <Setter Property="BorderThickness" Value="1"/>
 
-                        &lt;Setter Property="BorderBrush" Value="Black"/&gt;
+                        <Setter Property="BorderBrush" Value="Black"/>
 
-                        &lt;Setter Property="Background" Value="{Binding Interior}"/&gt;
+                        <Setter Property="Background" Value="{Binding Interior}"/>
 
-                        &lt;Style.Triggers&gt;
+                        <Style.Triggers>
 
-                            &lt;DataTrigger Value="True"&gt;
+                            <DataTrigger Value="True">
 
-                                &lt;DataTrigger.Binding&gt;
+                                <DataTrigger.Binding>
 
-                                    &lt;Binding Path="Highlighted"/&gt;
+                                    <Binding Path="Highlighted"/>
 
-                                &lt;/DataTrigger.Binding&gt;
+                                </DataTrigger.Binding>
 
-                                &lt;Setter Property="Background" Value="{StaticResource MouseHoverInterior}"/&gt;
+                                <Setter Property="Background" Value="{StaticResource MouseHoverInterior}"/>
 
-                            &lt;/DataTrigger&gt;
+                            </DataTrigger>
 
-                        &lt;/Style.Triggers&gt;
+                        </Style.Triggers>
 
-                    &lt;/Style&gt;
+                    </Style>
 
-                &lt;/Border.Style&gt;
+                </Border.Style>
 
-            &lt;/Border&gt;
+            </Border>
 
-        &lt;/Grid&gt;
+        </Grid>
 
-    &lt;/Canvas&gt;
+    </Canvas>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
-&lt;!--Refer to the preceding template while defining a Chart Series.--&gt;
+<!--Refer to the preceding template while defining a Chart Series.-->
 
 <sfchart:ChartSeries Name="series1"  Template="{StaticResource ColumnTemplate}" Type="Column"
 
@@ -4143,13 +4143,13 @@ Stroke="Black" StrokeThickness="1.5" />
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img50.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img50.jpeg)' | markdownify }}
 {:.image }
 
 
 A sample which demonstrates Data Point highlighting feature is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Series\Data Point Highlight Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Series\Data Point Highlight Demo_
 
 See Also
 
@@ -4167,19 +4167,19 @@ Wrap your data in a CollectionViewSource and bind this to a Chart Series.
 
 
 
-&lt;!--Create a CollectionViewSource.--&gt;
+<!--Create a CollectionViewSource.-->
 
-&lt;local:MyDataCollection x:Key="SeriesData1"/&gt;
-
-
-
-&lt;CollectionViewSource x:Key="cvs" Source="{StaticResource SeriesData1}"  /&gt;
+<local:MyDataCollection x:Key="SeriesData1"/>
 
 
 
-&lt;!--Bind this to a Chart Series.--&gt;
+<CollectionViewSource x:Key="cvs" Source="{StaticResource SeriesData1}"  />
 
-&lt;sfchart:ChartSeries DataSource="{Binding Source={StaticResource cvs}}" Template="{StaticResource SeriesTemplate}" Type="Column" BindingPathX="Date" BindingPathsY="Y2" /&gt;
+
+
+<!--Bind this to a Chart Series.-->
+
+<sfchart:ChartSeries DataSource="{Binding Source={StaticResource cvs}}" Template="{StaticResource SeriesTemplate}" Type="Column" BindingPathX="Date" BindingPathsY="Y2" />
 
 The CollectionViewSource has a CurrentItem property which tracks the "selected item". The Chart control listens to this property change and updates the corresponding data point's ChartSegment.IsSelected property appropriately.
 
@@ -4191,73 +4191,73 @@ Create a custom template that renders a data-point segment with a "selected" loo
 
 
 
-&lt;!-- This template helps in 2 ways. 1) It enables to bind to IsSelected property to change the selected segment color. 2) It enables to listen to Canvas.MouseDown event to change selection.--&gt;
+<!-- This template helps in 2 ways. 1) It enables to bind to IsSelected property to change the selected segment color. 2) It enables to listen to Canvas.MouseDown event to change selection.-->
 
-&lt;DataTemplate x:Key="SeriesTemplate"&gt;
+<DataTemplate x:Key="SeriesTemplate">
 
-    &lt;!--Change the CollectionView.CurrentItem in the handler.--&gt;
+    <!--Change the CollectionView.CurrentItem in the handler.-->
 
-    &lt;Canvas MouseDown="Canvas_MouseDown"&gt;
+    <Canvas MouseDown="Canvas_MouseDown">
 
-        &lt;Grid Canvas.Left="{Binding X}" Canvas.Top="{Binding Y}" Width="{Binding Width}" Height="{Binding Height}"&gt;
+        <Grid Canvas.Left="{Binding X}" Canvas.Top="{Binding Y}" Width="{Binding Width}" Height="{Binding Height}">
 
-            &lt;Border Name="ColumnRect" VerticalAlignment="Bottom" Width="{Binding Width}" Height="{Binding Height}"&gt;
+            <Border Name="ColumnRect" VerticalAlignment="Bottom" Width="{Binding Width}" Height="{Binding Height}">
 
-                &lt;Border.Style&gt;
+                <Border.Style>
 
-                    &lt;Style TargetType="{x:Type Border}"&gt;
+                    <Style TargetType="{x:Type Border}">
 
-                        &lt;Setter Property="BorderThickness" Value="1"/&gt;
+                        <Setter Property="BorderThickness" Value="1"/>
 
-                        &lt;Setter Property="BorderBrush" Value="Black"/&gt;
+                        <Setter Property="BorderBrush" Value="Black"/>
 
-                        &lt;Setter Property="Background" Value="{Binding Interior}"/&gt;
+                        <Setter Property="Background" Value="{Binding Interior}"/>
 
-                        &lt;Style.Triggers&gt;
+                        <Style.Triggers>
 
-                            &lt;DataTrigger Value="True"&gt;
+                            <DataTrigger Value="True">
 
-                                &lt;DataTrigger.Binding&gt;
+                                <DataTrigger.Binding>
 
-                                    &lt;!-- By binding to IsSelected you can change the background of "CollectionView.CurrentItem".--&gt;
+                                    <!-- By binding to IsSelected you can change the background of "CollectionView.CurrentItem".-->
 
-&lt;Binding Path="IsSelected"/&gt;
+<Binding Path="IsSelected"/>
 
-                                &lt;/DataTrigger.Binding&gt;
+                                </DataTrigger.Binding>
 
-                                &lt;Setter Property="Background" Value="{StaticResource MouseHoverInterior}"/&gt;
+                                <Setter Property="Background" Value="{StaticResource MouseHoverInterior}"/>
 
-                            &lt;/DataTrigger&gt;
+                            </DataTrigger>
 
-                        &lt;/Style.Triggers&gt;
+                        </Style.Triggers>
 
-                    &lt;/Style&gt;
+                    </Style>
 
-                &lt;/Border.Style&gt;
+                </Border.Style>
 
-            &lt;/Border&gt;
+            </Border>
 
-        &lt;/Grid&gt;
+        </Grid>
 
-    &lt;/Canvas&gt;
+    </Canvas>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
-&lt;!--Defines the interior that will be used as the "highlight" color.--&gt;
+<!--Defines the interior that will be used as the "highlight" color.-->
 
-&lt;LinearGradientBrush x:Key="MouseHoverInterior" StartPoint="0,0.5" EndPoint="1,0.5"&gt;
+<LinearGradientBrush x:Key="MouseHoverInterior" StartPoint="0,0.5" EndPoint="1,0.5">
 
-    &lt;GradientStop Color="#FFFDAE41" Offset="0"/&gt;
+    <GradientStop Color="#FFFDAE41" Offset="0"/>
 
-    &lt;GradientStop Color="#FFFDC55C" Offset="0.860442"/&gt;
+    <GradientStop Color="#FFFDC55C" Offset="0.860442"/>
 
-    &lt;GradientStop Color="#FFFDDD77" Offset="0.989014"/&gt;
+    <GradientStop Color="#FFFDDD77" Offset="0.989014"/>
 
-    &lt;GradientStop Color="#FFFDDD77" Offset="1"/&gt;
+    <GradientStop Color="#FFFDDD77" Offset="1"/>
 
-&lt;/LinearGradientBrush&gt;
+</LinearGradientBrush>
 
 This will cause the CollectionView.CurrentItem to be rendered distinctly. Note that the CurrentItem can be changed by a different Control bound to the same CollectionView, and this change will be automatically reflected in the Chart.
 
@@ -4295,13 +4295,13 @@ private void Canvas_MouseDown(object sender, MouseButtonEventArgs e)
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img51.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img51.jpeg)' | markdownify }}
 {:.image }
 
 
 A sample which demonstrates Data Point highlighting feature is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Series\Selectable Data Points Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Series\Selectable Data Points Demo_
 
 See Also
 
@@ -4315,11 +4315,11 @@ Series can be placed side by side or overlapped by using the ChartArea.SideBySid
 
 
 
-&lt;syncfusion:ChartArea SideBySideSeriesPlacement="True"&gt;
+<syncfusion:ChartArea SideBySideSeriesPlacement="True">
 
-&lt;syncfusion:ChartSeries Type="HiLo" /&gt;
+<syncfusion:ChartSeries Type="HiLo" />
 
-&lt;/syncfusion:ChartArea&gt;
+</syncfusion:ChartArea>
 
 
 
@@ -4331,7 +4331,7 @@ area.SideBySideSeriesPlacement = true;
 
 The following screenshot illustrates Chart Series placed side by side.
 
-{ ![](Chart-Controls_images/Chart-Controls_img52.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img52.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4353,21 +4353,21 @@ The following code example illustrates the usage of the AutoDiscard property, wh
 
 
 
-&lt;syncfusion:ChartArea.PrimaryAxis&gt;
+<syncfusion:ChartArea.PrimaryAxis>
 
-                    &lt;syncfusion:ChartAxis Header="Time" LabelForeground="LightGray" ValueType="Double"	  IsAutoSetRange="False"/&gt;         &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+                    <syncfusion:ChartAxis Header="Time" LabelForeground="LightGray" ValueType="Double"	  IsAutoSetRange="False"/>         </syncfusion:ChartArea.PrimaryAxis>
 
 
 
-&lt;syncfusion:ChartSeries Label="Measurement 1" Type="FastLine" Interior="Orange" AutoDiscard="None" Range="0,10"/&gt;
-
-or
-
-&lt;syncfusion:ChartSeries Label="Measurement 1" Type="FastLine" Interior="Orange" AutoDiscard="ExtendRange" /&gt;
+<syncfusion:ChartSeries Label="Measurement 1" Type="FastLine" Interior="Orange" AutoDiscard="None" Range="0,10"/>
 
 or
 
-&lt;syncfusion:ChartSeries Label="Measurement 1" Type="FastLine" Interior="Orange" AutoDiscard="ResetRange" /&gt;
+<syncfusion:ChartSeries Label="Measurement 1" Type="FastLine" Interior="Orange" AutoDiscard="ExtendRange" />
+
+or
+
+<syncfusion:ChartSeries Label="Measurement 1" Type="FastLine" Interior="Orange" AutoDiscard="ResetRange" />
 
 ###### Controlling the Visibility of Chart Legend Items
 
@@ -4397,7 +4397,7 @@ The following code example illustrates how to set this property.
 
 BindingPathsY="FruitID,NumberOfFruits,Price,Year" Label="Series B" Stroke="#FF000000" StrokeThickness="0.5" >
 
-&lt;/syncfusion:ChartSeries&gt;
+</syncfusion:ChartSeries>
 
 
 
@@ -4409,7 +4409,7 @@ Chart1.Areas[0].Series[0].VisibilityOnLegend = Visibility.Hidden;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img53.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img53.png)' | markdownify }}
 {:.image }
 
 
@@ -4514,21 +4514,21 @@ The following code example illustrates creation of a circle with orange fill at 
 
 
 
-&lt;syncfusion:ChartSeries DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}" BindingPathX="Month" BindingPathsY="Sales" IsIndexed="False" Name="series1" Label="Series1" Type="Area" Interior="{StaticResource SeriesAInterior}"&gt;
+<syncfusion:ChartSeries DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}" BindingPathX="Month" BindingPathsY="Sales" IsIndexed="False" Name="series1" Label="Series1" Type="Area" Interior="{StaticResource SeriesAInterior}">
 
-    &lt;syncfusion:ChartSeries.Annotations&gt;
+    <syncfusion:ChartSeries.Annotations>
 
-        &lt;syncfusion:AnnotationsCollection &gt;
+        <syncfusion:AnnotationsCollection >
 
             <syncfusion:ChartSeriesAnnotation x:Name="serAnnot" X="5" Y="45" OffsetX="0" OffsetY="0" AnnotationShape="Circle"
 
             Fill="Orange" Stroke="Black" />
 
-        &lt;/syncfusion:AnnotationsCollection&gt;
+        </syncfusion:AnnotationsCollection>
 
-    &lt;/syncfusion:ChartSeries.Annotations&gt;
+    </syncfusion:ChartSeries.Annotations>
 
-&lt;/syncfusion:ChartSeries&gt;
+</syncfusion:ChartSeries>
 
 
 
@@ -4554,7 +4554,7 @@ Chart1.Areas[0].Series[0].Annotations.Items[0].Stroke = Brushes.Black;
 
 Run the sample. The following output is provided.
 
-{ ![](Chart-Controls_images/Chart-Controls_img54.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img54.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4594,7 +4594,7 @@ Series1.ShowEmptyPoints = true;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img55.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img55.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4634,7 +4634,7 @@ series1.FastSegmentProperties= list;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img56.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img56.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4698,13 +4698,13 @@ ShowSmartLabels="True"
 
 >
 
-       &lt;sync:ChartSeries.AdornmentsInfo&gt;
+       <sync:ChartSeries.AdornmentsInfo>
 
-            &lt;sync:ChartAdornmentInfo x:Name="adorn" Visible="True" Symbol="Square" SymbolHeight="20" SymbolWidth="20"                                                SymbolInterior="LightBlue" /&gt;
+            <sync:ChartAdornmentInfo x:Name="adorn" Visible="True" Symbol="Square" SymbolHeight="20" SymbolWidth="20"                                                SymbolInterior="LightBlue" />
 
-       &lt;/sync:ChartSeries.AdornmentsInfo&gt;
+       </sync:ChartSeries.AdornmentsInfo>
 
-&lt;/sync:ChartSeries&gt;
+</sync:ChartSeries>
 
 
 
@@ -4720,7 +4720,7 @@ series.ShowSmartLabels = true;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img57.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img57.png)' | markdownify }}
 {:.image }
 
 
@@ -4736,13 +4736,13 @@ ShowSmartLabels="True"
 
 >
 
-       &lt;sync:ChartSeries.AdornmentsInfo&gt;
+       <sync:ChartSeries.AdornmentsInfo>
 
-            &lt;sync:ChartAdornmentInfo x:Name="adorn" Visible="True" Symbol="Square" SymbolHeight="20" SymbolWidth="20"                                                SymbolInterior="LightBlue" /&gt;
+            <sync:ChartAdornmentInfo x:Name="adorn" Visible="True" Symbol="Square" SymbolHeight="20" SymbolWidth="20"                                                SymbolInterior="LightBlue" />
 
-       &lt;/sync:ChartSeries.AdornmentsInfo&gt;
+       </sync:ChartSeries.AdornmentsInfo>
 
-&lt;/sync:ChartSeries&gt;
+</sync:ChartSeries>
 
 
 
@@ -4758,7 +4758,7 @@ AdornemntIntersectActions.AdjustAcrossPoints;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img58.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img58.png)' | markdownify }}
 {:.image }
 
 
@@ -4774,13 +4774,13 @@ ShowSmartLabels="True"
 
 >
 
-       &lt;sync:ChartSeries.AdornmentsInfo&gt;
+       <sync:ChartSeries.AdornmentsInfo>
 
-            &lt;sync:ChartAdornmentInfo x:Name="adorn" Visible="True" Symbol="Square" SymbolHeight="20" SymbolWidth="20"                                                SymbolInterior="LightBlue" /&gt;
+            <sync:ChartAdornmentInfo x:Name="adorn" Visible="True" Symbol="Square" SymbolHeight="20" SymbolWidth="20"                                                SymbolInterior="LightBlue" />
 
-       &lt;/sync:ChartSeries.AdornmentsInfo&gt;
+       </sync:ChartSeries.AdornmentsInfo>
 
-&lt;/sync:ChartSeries&gt;
+</sync:ChartSeries>
 
 
 
@@ -4796,7 +4796,7 @@ AdornemntIntersectActions.None;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img59.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img59.png)' | markdownify }}
 {:.image }
 
 
@@ -4843,25 +4843,25 @@ Specifies the color for the signal line of the Accumulation Distribution technic
 
 [XAML]
 
-&lt;sync:ChartSeries.Indicators&gt;
+<sync:ChartSeries.Indicators>
 
-&lt;sync:IndicatorCollection&gt;
+<sync:IndicatorCollection>
 
-&lt;sync:IndicatorCollection.Items&gt;
+<sync:IndicatorCollection.Items>
 
-&lt;sync:ChartTechnicalIndicator IndicatorType="AccumulationDistribution"          sync:ChartAccumulationDistribution.SignalLineColor="Red"&gt;
+<sync:ChartTechnicalIndicator IndicatorType="AccumulationDistribution"          sync:ChartAccumulationDistribution.SignalLineColor="Red">
 
-&lt;/sync:ChartTechnicalIndicator&gt;
+</sync:ChartTechnicalIndicator>
 
-&lt;/sync:IndicatorCollection.Items&gt;
+</sync:IndicatorCollection.Items>
 
-&lt;/sync:IndicatorCollection&gt;
+</sync:IndicatorCollection>
 
-&lt;/sync:ChartSeries.Indicators&gt;
+</sync:ChartSeries.Indicators>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img60.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img60.png)' | markdownify }}
 {:.image }
 
 
@@ -4871,19 +4871,19 @@ Average True Range (ATR) Indicator is a technical analysis volatility indicator.
 
 [XAML]
 
-&lt;sync:ChartSeries.Indicators&gt;
+<sync:ChartSeries.Indicators>
 
-&lt;sync:IndicatorCollection&gt;
+<sync:IndicatorCollection>
 
-&lt;sync:IndicatorCollection.Items&gt;
+<sync:IndicatorCollection.Items>
 
-&lt;sync:ChartTechnicalIndicator IndicatorType="AverageTrueRange" &gt;
+<sync:ChartTechnicalIndicator IndicatorType="AverageTrueRange" >
 
-&lt;/sync:IndicatorCollection.Items&gt;
+</sync:IndicatorCollection.Items>
 
-&lt;/sync:IndicatorCollection&gt;
+</sync:IndicatorCollection>
 
-&lt;/sync:ChartSeries.Indicators&gt;
+</sync:ChartSeries.Indicators>
 
 Bollinger Band
 
@@ -4917,25 +4917,25 @@ Indicates the identification of a trend.</td></tr>
 
 [XAML]
 
-&lt;sync:ChartSeries.Indicators&gt;
+<sync:ChartSeries.Indicators>
 
-&lt;sync:IndicatorCollection&gt;
+<sync:IndicatorCollection>
 
-&lt;sync:IndicatorCollection.Items&gt;
+<sync:IndicatorCollection.Items>
 
-&lt;sync:ChartTechnicalIndicator IndicatorType="BollingerBands"  sync:ChartBollingerBand.LowerLineColor ="Blue" sync:ChartBollingerBand.UpperLineColor="Red" sync:ChartBollingerBand.SignalLineColor ="Green" sync:ChartBollingerBand.BollingerMovingAverage="50" &gt;
+<sync:ChartTechnicalIndicator IndicatorType="BollingerBands"  sync:ChartBollingerBand.LowerLineColor ="Blue" sync:ChartBollingerBand.UpperLineColor="Red" sync:ChartBollingerBand.SignalLineColor ="Green" sync:ChartBollingerBand.BollingerMovingAverage="50" >
 
-&lt;/sync:ChartTechnicalIndicator&gt;
+</sync:ChartTechnicalIndicator>
 
-&lt;/sync:IndicatorCollection.Items&gt;
+</sync:IndicatorCollection.Items>
 
-&lt;/sync:IndicatorCollection&gt;
+</sync:IndicatorCollection>
 
-&lt;/sync:ChartSeries.Indicators&gt;
+</sync:ChartSeries.Indicators>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img61.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img61.png)' | markdownify }}
 {:.image }
 
 
@@ -4963,21 +4963,21 @@ Indicates the identification of a trend.</td></tr>
 
 [XAML]
 
-&lt;sync:ChartSeries.Indicators&gt;
+<sync:ChartSeries.Indicators>
 
-&lt;sync:IndicatorCollection&gt;
+<sync:IndicatorCollection>
 
-&lt;sync:IndicatorCollection.Items&gt;
+<sync:IndicatorCollection.Items>
 
-&lt;sync:ChartTechnicalIndicator IndicatorType="ExponentialAverage" sync:ChartExponentialAverage.ExponentialAverage="50" sync:ChartExponentialAverage.SignalLineInterior="Red" &gt;
+<sync:ChartTechnicalIndicator IndicatorType="ExponentialAverage" sync:ChartExponentialAverage.ExponentialAverage="50" sync:ChartExponentialAverage.SignalLineInterior="Red" >
 
-&lt;/sync:ChartTechnicalIndicator&gt;
+</sync:ChartTechnicalIndicator>
 
-&lt;/sync:IndicatorCollection.Items&gt;
+</sync:IndicatorCollection.Items>
 
-&lt;/sync:IndicatorCollection&gt;
+</sync:IndicatorCollection>
 
-&lt;/sync:ChartSeries.Indicators&gt;
+</sync:ChartSeries.Indicators>
 
 Simple Average
 
@@ -5003,23 +5003,23 @@ Indicates the identification of a trend.</td></tr>
 
 [XAML]
 
-&lt;sync:ChartSeries.Indicators&gt;
+<sync:ChartSeries.Indicators>
 
-&lt;sync:IndicatorCollection&gt;
+<sync:IndicatorCollection>
 
-&lt;sync:IndicatorCollection.Items&gt;
+<sync:IndicatorCollection.Items>
 
-&lt;sync:ChartTechnicalIndicator IndicatorType="TriangularAverage" sync:ChartSimpleAverage.MovingAverage="20" sync:ChartSimpleAverage.SignalLineInterior="Red" /&gt;      
+<sync:ChartTechnicalIndicator IndicatorType="TriangularAverage" sync:ChartSimpleAverage.MovingAverage="20" sync:ChartSimpleAverage.SignalLineInterior="Red" />      
 
-&lt;/sync:IndicatorCollection.Items&gt;
+</sync:IndicatorCollection.Items>
 
-&lt;/sync:IndicatorCollection&gt;
+</sync:IndicatorCollection>
 
-&lt;/sync:ChartSeries.Indicators&gt;
+</sync:ChartSeries.Indicators>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img62.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img62.png)' | markdownify }}
 {:.image }
 
 
@@ -5047,11 +5047,11 @@ Indicates the identification of a trend.</td></tr>
 
 [XAML]
 
-&lt;sync:ChartSeries.Indicators&gt;
+<sync:ChartSeries.Indicators>
 
-&lt;sync:IndicatorCollection&gt;
+<sync:IndicatorCollection>
 
-&lt;sync:IndicatorCollection.Items&gt;
+<sync:IndicatorCollection.Items>
 
 <sync:ChartTechnicalIndicator IndicatorType="TriangularAverage"
 
@@ -5059,11 +5059,11 @@ sync:ChartTriangularAverage.TriangularAverage="20"
 
 sync:ChartTriangularAverage.SignalLineInterior="Red" />      
 
-&lt;/sync:IndicatorCollection.Items&gt;
+</sync:IndicatorCollection.Items>
 
-&lt;/sync:IndicatorCollection&gt;
+</sync:IndicatorCollection>
 
-&lt;/sync:ChartSeries.Indicators&gt;
+</sync:ChartSeries.Indicators>
 
 MACD
 
@@ -5093,23 +5093,23 @@ Specifies the color for the divergence line of the MACD technical indicator.</td
 
 [XAML]
 
-&lt;sync:ChartSeries.Indicators&gt;
+<sync:ChartSeries.Indicators>
 
-&lt;sync:IndicatorCollection&gt;
+<sync:IndicatorCollection>
 
-&lt;sync:IndicatorCollection.Items&gt;
+<sync:IndicatorCollection.Items>
 
-&lt;sync:ChartTechnicalIndicator IndicatorType="MACD" sync:ChartMACD.SignalLineInterior="Red" sync:ChartMACD.ConvergenceLineColor="Yellow"  sync:ChartMACD.DivergenceLineColor="Blue" /&gt;     
+<sync:ChartTechnicalIndicator IndicatorType="MACD" sync:ChartMACD.SignalLineInterior="Red" sync:ChartMACD.ConvergenceLineColor="Yellow"  sync:ChartMACD.DivergenceLineColor="Blue" />     
 
-&lt;/sync:IndicatorCollection.Items&gt;
+</sync:IndicatorCollection.Items>
 
-&lt;/sync:IndicatorCollection&gt;
+</sync:IndicatorCollection>
 
-&lt;/sync:ChartSeries.Indicators&gt;
+</sync:ChartSeries.Indicators>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img63.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img63.png)' | markdownify }}
 {:.image }
 
 
@@ -5133,23 +5133,23 @@ Measures the amount that a security's price has changed over a given time span.<
 
 [XAML]
 
-&lt;sync:ChartSeries.Indicators&gt;
+<sync:ChartSeries.Indicators>
 
-&lt;sync:IndicatorCollection&gt;
+<sync:IndicatorCollection>
 
-&lt;sync:IndicatorCollection.Items&gt;
+<sync:IndicatorCollection.Items>
 
-&lt;sync:ChartTechnicalIndicator IndicatorType="Momentum" sync:ChartMomentum.MomentumTimeSpan="10" /&gt;     
+<sync:ChartTechnicalIndicator IndicatorType="Momentum" sync:ChartMomentum.MomentumTimeSpan="10" />     
 
-&lt;/sync:IndicatorCollection.Items&gt;
+</sync:IndicatorCollection.Items>
 
-&lt;/sync:IndicatorCollection&gt;
+</sync:IndicatorCollection>
 
-&lt;/sync:ChartSeries.Indicators&gt;
+</sync:ChartSeries.Indicators>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img64.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img64.png)' | markdownify }}
 {:.image }
 
 
@@ -5181,23 +5181,23 @@ Specifies the color for the lower line of the Stochastic technical indicator.</
 
 [XAML]
 
-&lt;sync:ChartSeries.Indicators&gt;
+<sync:ChartSeries.Indicators>
 
-&lt;sync:IndicatorCollection&gt;
+<sync:IndicatorCollection>
 
-&lt;sync:IndicatorCollection.Items&gt;
+<sync:IndicatorCollection.Items>
 
-&lt;sync:ChartTechnicalIndicator IndicatorType="Stochastics"  sync:ChartStochastics.LowerLineColor="Red" sync:ChartStochastics.SignalLineColor="Green" sync:ChartStochastics.UpperLineColor="Blue" /&gt;     
+<sync:ChartTechnicalIndicator IndicatorType="Stochastics"  sync:ChartStochastics.LowerLineColor="Red" sync:ChartStochastics.SignalLineColor="Green" sync:ChartStochastics.UpperLineColor="Blue" />     
 
-&lt;/sync:IndicatorCollection.Items&gt;
+</sync:IndicatorCollection.Items>
 
-&lt;/sync:IndicatorCollection&gt;
+</sync:IndicatorCollection>
 
-&lt;/sync:ChartSeries.Indicators&gt;
+</sync:ChartSeries.Indicators>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img65.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img65.png)' | markdownify }}
 {:.image }
 
 
@@ -5207,23 +5207,23 @@ The Relative Strength Index (RSI) is a well-versed momentum-based oscillator whi
 
 [XAML]
 
-&lt;sync:ChartSeries.Indicators&gt;
+<sync:ChartSeries.Indicators>
 
-&lt;sync:IndicatorCollection&gt;
+<sync:IndicatorCollection>
 
-&lt;sync:IndicatorCollection.Items&gt;
+<sync:IndicatorCollection.Items>
 
-&lt;sync:ChartTechnicalIndicator IndicatorType="RelativeStrengthIndex" /&gt;     
+<sync:ChartTechnicalIndicator IndicatorType="RelativeStrengthIndex" />     
 
-&lt;/sync:IndicatorCollection.Items&gt;
+</sync:IndicatorCollection.Items>
 
-&lt;/sync:IndicatorCollection&gt;
+</sync:IndicatorCollection>
 
-&lt;/sync:ChartSeries.Indicators&gt;
+</sync:ChartSeries.Indicators>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img66.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img66.png)' | markdownify }}
 {:.image }
 
 
@@ -5239,7 +5239,7 @@ When rendered in 3D the plot looks like a ribbon and hence such types are also r
 
 The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed. 
 
-{ ![](Chart-Controls_images/Chart-Controls_img67.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img67.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5311,7 +5311,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Line Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Line Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Line Chart Demo_
 
 See Also
 
@@ -5321,7 +5321,7 @@ Fast Line Chart
 
 Use a Fast Line chart instead of a Line chart when displaying a large number of data points in the chart. This chart type improves performance by foregoing some features in the Line chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img68.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img68.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5395,7 +5395,7 @@ reference to series-owner</td></tr>
 
 A sample which demonstrates Line Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Line Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Line Chart Demo_
 
 Customization of FastLine 
 
@@ -5428,7 +5428,7 @@ Pen</td><td>
 Gets and sets various types of pen for drawing fastchat type. </td><td>
 Attached property for ChartFastSeriesPresenter </td><td>
 System.Drawing.Pen </td><td>
-{ [Pen Class](http://msdn.microsoft.com/en-us/library/system.drawing.pen.aspx) | markdownify }</td></tr>
+{{ '[Pen Class](http://msdn.microsoft.com/en-us/library/system.drawing.pen.aspx)' | markdownify }}</td></tr>
 </table>
 Customizing Fastline
 
@@ -5440,19 +5440,19 @@ The following code illustrates this:
 
 
 
-&lt;syncfusion:ChartSeries Name="series" Type="FastLine" IsIndexed="True"  Interior="LightBlue" &gt;
+<syncfusion:ChartSeries Name="series" Type="FastLine" IsIndexed="True"  Interior="LightBlue" >
 
-                            &lt;syncfusion:ChartFastSeriesPresenter.Pen&gt;
+                            <syncfusion:ChartFastSeriesPresenter.Pen>
 
-                                &lt;Pen Brush="Black" DashCap="Round" DashStyle="DashDot" StartLineCap="Round" EndLineCap="Round"/&gt;
+                                <Pen Brush="Black" DashCap="Round" DashStyle="DashDot" StartLineCap="Round" EndLineCap="Round"/>
 
-                            &lt;/syncfusion:ChartFastSeriesPresenter.Pen&gt;
+                            </syncfusion:ChartFastSeriesPresenter.Pen>
 
-                        &lt;/syncfusion:ChartSeries&gt;
+                        </syncfusion:ChartSeries>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img69.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img69.png)' | markdownify }}
 {:.image }
 
 
@@ -5500,7 +5500,7 @@ Pie, Bar, Stacked Bar, Polar, Radar.</td></tr>
 </table>
 The following screenshot depicts a FastSpline chart:
 
-{ ![](Chart-Controls_images/Chart-Controls_img70.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img70.png)' | markdownify }}
 {:.image }
 
 
@@ -5522,7 +5522,7 @@ Description</td></tr>
 <tr>
 <td>
 Geometry</td><td>
-Draws the spline when set to paths {{ '_Data_' | markdownify }} property.</td></tr>
+Draws the spline when set to paths {{{ ''_Data_'' | markdownify }}} property.</td></tr>
 </table>
 Template for FastSpline
 
@@ -5530,17 +5530,17 @@ The following code example illustrates the template for the FastSpline chart:
 
 [ASPX]
 
-&lt;DataTemplate x:key="{x:Type local:ChartFastSplineSegment}"&gt;
+<DataTemplate x:key="{x:Type local:ChartFastSplineSegment}">
 
-&lt;Grid&gt; 
+<Grid> 
 
-   &lt;Path Stroke="{Binding Interior}" StrokeThickness="{Binding    StrokeThickness}" Data="{Binding Geometry}" ToolTip="{Binding ToolTip}"/&gt;
+   <Path Stroke="{Binding Interior}" StrokeThickness="{Binding    StrokeThickness}" Data="{Binding Geometry}" ToolTip="{Binding ToolTip}"/>
 
-&lt;local:FastSplinePresenter Points="{Binding Points}" Series="{Binding Series}" ToolTip="{Binding ToolTip}"&gt;
+<local:FastSplinePresenter Points="{Binding Points}" Series="{Binding Series}" ToolTip="{Binding ToolTip}">
 
-&lt;/Grid&gt;
+</Grid>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 Sample Link
 
@@ -5564,15 +5564,15 @@ The following code example illustrates the usage of FastSpline charts.
 
 [XAML]
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-   &lt;sfchart:ChartArea Background="LightGray" GridBackground="White"&gt;
+   <sfchart:ChartArea Background="LightGray" GridBackground="White">
 
-     &lt;sfchart:ChartSeries Template="{StaticResource Template1}"        DataSource="{Binding Source={StaticResource myXmlData},XPath=Products/Product}" BindingPathX="Month" BindingPathsY="Sales" Interior="Red"  Type="FastSpline"/&gt;
+     <sfchart:ChartSeries Template="{StaticResource Template1}"        DataSource="{Binding Source={StaticResource myXmlData},XPath=Products/Product}" BindingPathX="Month" BindingPathsY="Sales" Interior="Red"  Type="FastSpline"/>
 
-   &lt;/sfchart:ChartArea&gt;    
+   </sfchart:ChartArea>    
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 Spline Chart
 
@@ -5582,7 +5582,7 @@ When rendered in 3D the plot looks like a ribbon and hence such types are also r
 
 The appearance of the lines and the points can be configured with options such as the colors used, thickness of the lines and the symbols displayed. 
 
-{ ![](Chart-Controls_images/Chart-Controls_img71.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img71.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5677,7 +5677,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Line Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Line Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Line Chart Demo_
 
 See Also
 
@@ -5689,7 +5689,7 @@ A Rotated Spline Chart is similar to a Spline Chart. The only difference is that
 
 The following image shows a sample Rotated Spline Chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img72.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img72.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5736,7 +5736,7 @@ attached property which lets you control the spline curvature</td></tr>
 </table>
 A sample which demonstrates Line Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Line Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Line Chart Demo_
 
 See Also
 
@@ -5746,7 +5746,7 @@ Step Line Chart
 
 Step Line Charts use horizontal and vertical lines to connect data points resulting in a step like progression.
 
-{ ![](Chart-Controls_images/Chart-Controls_img73.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img73.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5833,7 +5833,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Line Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Line Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Line Chart Demo_
 
 See Also
 
@@ -5851,7 +5851,7 @@ Another good reason to use bar charts is when you realize that the number of a d
 
 The following image shows a multi series Bar Chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img74.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img74.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5943,7 +5943,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Bar Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Bar Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Bar Chart Demo_
 
 See Also
 
@@ -5980,7 +5980,7 @@ Code Table
 
 [XAML]
 
-          &lt;syncfusion:ChartSeries Type="FastBar"/&gt;      
+          <syncfusion:ChartSeries Type="FastBar"/>      
 
 
 
@@ -5990,7 +5990,7 @@ Code Table
 
 
 
-{ ![Description: C:/Users/sujithas/Desktop/DesktopFiles/Assigned wrk/2011/Images/sshot-2.png](Chart-Controls_images/Chart-Controls_img75.png) | markdownify }
+{{ '![Description: C:/Users/sujithas/Desktop/DesktopFiles/Assigned wrk/2011/Images/sshot-2.png](Chart-Controls_images/Chart-Controls_img75.png)' | markdownify }}
 {:.image }
 
 
@@ -5998,7 +5998,7 @@ Sample Link
 
 To run the UI WPF sample
 
-1. Open Essential Studio Dashboard by selecting Start -> Program -> Syncfusion-> Essential Studio &lt;&lt;Version Number&gt;> -> Dashboard.
+1. Open Essential Studio Dashboard by selecting Start -> Program -> Syncfusion-> Essential Studio <<Version Number>> -> Dashboard.
 2. Select Run Locally Installed Samples, from the WPF drop-down list on the User Interface pane.
 3. Select Chart in the sample browser.
 4. Select ChartPerformance->FastChartTypesDemo on the Essential Chart pane and click the Run Sample button.
@@ -6009,7 +6009,7 @@ To open the sample project
 
 5. Go to the following sample location in your system:  
 
-_“&lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number \WPF\Chart.WPF\Samples\3.5\WindowsSamples\ChartPerformance\FastChartTypesDemo”_
+_“<sample installation location>\Syncfusion\EssentialStudio\Version Number \WPF\Chart.WPF\Samples\3.5\WindowsSamples\ChartPerformance\FastChartTypesDemo”_
 
 6. This location contains two sub folders CS and VB.  You can open the sample projects from the respective folders based on your application development language.
 Stacking Bar Chart
@@ -6019,7 +6019,7 @@ Stacking Bar Charts are similar to regular bar charts except that the Y values s
 
 The following image shows a sample Stacking Bar Chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img76.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img76.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6119,7 +6119,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Bar Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Bar Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Bar Chart Demo_
 
 See Also
 
@@ -6129,7 +6129,7 @@ Gantt Chart
 
 Frequently used in project management, a Gantt chart provides a graphical illustration of a schedule to help plan, coordinate, and track specific tasks in a project.
 
-{ ![](Chart-Controls_images/Chart-Controls_img77.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img77.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6219,7 +6219,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Gantt Chart Type is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Gantt Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Gantt Chart Demo_
 
 See Also
 
@@ -6229,7 +6229,7 @@ Tornado Chart
 
 The Tornado chart is a bar chart which shows the variability of an output to several different inputs. Variability is displayed using relative lengths of bars across a range. It is mainly used in sensitivity analysis. It shows how different random factors can influence the prognostic outcome.
 
-{ ![](Chart-Controls_images/Chart-Controls_img78.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img78.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6319,7 +6319,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Tornado Chart Type is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Tornado Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Tornado Chart Demo_
 
 See Also
 
@@ -6331,7 +6331,7 @@ In the 100 percent Stacked Bar Chart, the cumulative proportion of each stacked 
 
 The following image shows a sample Stacking Bar 100 Chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img79.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img79.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6360,7 +6360,7 @@ one or more</td></tr>
 </table>
 A sample which demonstrates Bar Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Bar Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Bar Chart Demo_
 
 See Also
 
@@ -6376,7 +6376,7 @@ It is used for comparing the frequency, count, total or average of data in diffe
 
 The following image shows a multi series Column Chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img80.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img80.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6464,7 +6464,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Column Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Column Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Column Chart Demo_
 
 See Also
 
@@ -6476,7 +6476,7 @@ Column Range Chart is similar to the Column Chart except that each column is ren
 
 The following figure shows a Column Range Chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img81.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img81.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6564,7 +6564,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Column Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Column Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Column Chart Demo_
 
 See Also
 
@@ -6576,7 +6576,7 @@ Stacking Column Charts are similar to regular column charts except that the Y va
 
 The following image shows a sample Stacking Column Chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img82.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img82.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6617,7 +6617,7 @@ Description</td></tr>
 ChartStackingColumn100Type.ShowValueAsProbability</td><td>
 bool</td><td>
 ChartArea</td><td>
-y-axis range is set between 0 and 100If true, the y-axis range is set between 0 and 1. Default value is {{ '_false_' | markdownify }}.</td></tr>
+y-axis range is set between 0 and 100If true, the y-axis range is set between 0 and 1. Default value is {{{ ''_false_'' | markdownify }}}.</td></tr>
 </table>
 Template
 
@@ -6686,7 +6686,7 @@ ChartStackingColumnType.SetRequiresNegativeSeriesStack(this.chartArea2, true);
 
 A sample which demonstrates Column Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Column Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Column Chart Demo_
 
 See Also
 
@@ -6698,7 +6698,7 @@ In the 100 % Stacked Column Chart, the cumulative proportion of each stacked ele
 
 The following image shows a sample Stacking Column 100 Chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img83.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img83.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6739,7 +6739,7 @@ Description</td></tr>
 ChartStackingColumn100.ShowValueAsProbability</td><td>
 bool</td><td>
 ChartArea</td><td>
-y-axis range is set from 0 - 100If true, y-axis range is set from 0 - 1. Default value is {{ '_false_' | markdownify }}.</td></tr>
+y-axis range is set from 0 - 100If true, y-axis range is set from 0 - 1. Default value is {{{ ''_false_'' | markdownify }}}.</td></tr>
 </table>
 Template
 
@@ -6782,12 +6782,12 @@ column color</td></tr>
 <td>
 IsUpper</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} – if this is upper column</td></tr>
+{{{ ''_true_'' | markdownify }}} – if this is upper column</td></tr>
 <tr>
 <td>
 IsLower</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} – if this is lower column</td></tr>
+{{{ ''_true_'' | markdownify }}} – if this is lower column</td></tr>
 <tr>
 <td>
 Percentage</td><td>
@@ -6801,7 +6801,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Column Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Column Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Column Chart Demo_
 
 See Also
 
@@ -6821,7 +6821,7 @@ Histograms are useful data summaries that convey the following information:
 
 The shape of the distribution conveys important information such as the probability distribution of the data.
 
-{ ![](Chart-Controls_images/Chart-Controls_img84.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img84.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6936,7 +6936,7 @@ The Chart type Fast Column is added in the Enum of type ChartTypes.
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img85.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img85.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7030,7 +7030,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Fast Column Chart Type is available in the following sample installation path.
 
-_..My Documents\Syncfusion\Essential Studio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Performance-> Fast chart types_
+_..My Documents\Syncfusion\Essential Studio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Performance-> Fast chart types_
 
 The following code example illustrate the usage of Fast Column charts.
 
@@ -7038,7 +7038,7 @@ The following code example illustrate the usage of Fast Column charts.
 
 
 
-&lt;syncfusion:ChartSeries Type="FastColumn" Name="series1" Stroke="Black" DataSource="{Binding}"/&gt;
+<syncfusion:ChartSeries Type="FastColumn" Name="series1" Stroke="Black" DataSource="{Binding}"/>
 
 
 
@@ -7054,7 +7054,7 @@ Run the sample.
 
 A Fast Column chart is displayed pertaining to the data source it is bound to.
 
-{ ![](Chart-Controls_images/Chart-Controls_img86.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img86.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7072,7 +7072,7 @@ Multiple series can be plotted on the same chart and alpha-blended interior colo
 
 The following image shows a multi series Area Chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img87.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img87.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7133,12 +7133,12 @@ y-coordinate of second point</td></tr>
 <td>
 IsStartSegment</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} - if this is start segment</td></tr>
+{{{ ''_true_'' | markdownify }}} - if this is start segment</td></tr>
 <tr>
 <td>
 IsEndSegment</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} - if this is end segment</td></tr>
+{{{ ''_true_'' | markdownify }}} - if this is end segment</td></tr>
 <tr>
 <td>
 Geometry</td><td>
@@ -7157,7 +7157,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Area Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Area Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Area Chart Demo_
 
 See Also
 
@@ -7171,7 +7171,7 @@ Multiple series can be plotted on the same chart and alpha-blended interior colo
 
 The following image shows a multi series Spline Area Chart. 
 
-{ ![](Chart-Controls_images/Chart-Controls_img88.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img88.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7250,12 +7250,12 @@ y-coordinate of second point</td></tr>
 <td>
 IsStartSegment</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} - if this is start segment</td></tr>
+{{{ ''_true_'' | markdownify }}} - if this is start segment</td></tr>
 <tr>
 <td>
 IsEndSegment</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} - if this is end segment</td></tr>
+{{{ ''_true_'' | markdownify }}} - if this is end segment</td></tr>
 <tr>
 <td>
 Geometry</td><td>
@@ -7274,7 +7274,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Area Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Area Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Area Chart Demo_
 
 See Also
 
@@ -7286,7 +7286,7 @@ Stacking Area Charts are similar to regular area charts except that the Y values
 
 The following image shows a sample Stacking Area Chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img89.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img89.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7347,12 +7347,12 @@ y-coordinate of second point</td></tr>
 <td>
 IsStartSegment</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} - if this is start segment</td></tr>
+{{{ ''_true_'' | markdownify }}} - if this is start segment</td></tr>
 <tr>
 <td>
 IsEndSegment</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} - if this is end segment</td></tr>
+{{{ ''_true_'' | markdownify }}} - if this is end segment</td></tr>
 <tr>
 <td>
 Geometry</td><td>
@@ -7362,12 +7362,12 @@ segment geometry</td></tr>
 <td>
 IsUpper</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} – if this is upper segment</td></tr>
+{{{ ''_true_'' | markdownify }}} – if this is upper segment</td></tr>
 <tr>
 <td>
 IsLower</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} – if this is lower segment</td></tr>
+{{{ ''_true_'' | markdownify }}} – if this is lower segment</td></tr>
 <tr>
 <td>
 Interior</td><td>
@@ -7391,7 +7391,7 @@ ChartStackingAreaType.SetRequiresNegativeSeriesStack(this.chartArea1, true);
 
 A sample which demonstrates Area Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Area Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Area Chart Demo_
 
 See Also
 
@@ -7401,7 +7401,7 @@ StackingArea100 Chart
 
 100% stacked area charts are similar to regular area charts except that the y values stack to 100% on top of each other in the specified series order. In the 100% stacked area charts, the cumulative proportion of each stacked element always totals 100%. This type of chart is great to visualize the relative contribution of each series’ values to the whole.
 
-{ ![C:/Users/michaelprabhu/Desktop/StackingArea100_WPF.png](Chart-Controls_images/Chart-Controls_img90.png) | markdownify }
+{{ '![C:/Users/michaelprabhu/Desktop/StackingArea100_WPF.png](Chart-Controls_images/Chart-Controls_img90.png)' | markdownify }}
 {:.image }
 
 
@@ -7409,7 +7409,7 @@ Sample Link
 
 A sample that demonstrates the StackingArea100 chart type is available in the following sample installation path:
 
-..MyDocuments\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Basic Charts\StackingArea100 Chart Demo
+..MyDocuments\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Basic Charts\StackingArea100 Chart Demo
 
 Adding StackingArea100 Chart to Chart Area
 
@@ -7417,17 +7417,17 @@ The StackingArea100 chart type can be added into a chart area through the follow
 
 [XAML]
 
-  &lt;syncfusion:Chart&gt;
+  <syncfusion:Chart>
 
-            &lt;syncfusion:ChartArea&gt;
+            <syncfusion:ChartArea>
 
-                &lt;syncfusion:ChartSeries Data="10,10,20,20,30,30" Type="StackingArea100"/&gt;
+                <syncfusion:ChartSeries Data="10,10,20,20,30,30" Type="StackingArea100"/>
 
-                &lt;syncfusion:ChartSeries Data="20,20,30,30,40,40" Type="StackingArea100"/&gt;
+                <syncfusion:ChartSeries Data="20,20,30,30,40,40" Type="StackingArea100"/>
 
-            &lt;/syncfusion:ChartArea&gt;
+            </syncfusion:ChartArea>
 
-  &lt;/syncfusion:Chart&gt;
+  </syncfusion:Chart>
 
 
 
@@ -7464,11 +7464,11 @@ The data template for a 100% stacked area chart can be overridden by changing th
 
 
 
-  &lt;DataTemplate x:Key="{x:Type local:ChartStackingArea100Segment}"&gt;
+  <DataTemplate x:Key="{x:Type local:ChartStackingArea100Segment}">
 
-    &lt;Path Stroke="{Binding Stroke}" StrokeThickness="{Binding StrokeThickness}" Fill="{Binding Interior}"  Data="{Binding Geometry}" ToolTip="{Binding ToolTip}"/&gt;
+    <Path Stroke="{Binding Stroke}" StrokeThickness="{Binding StrokeThickness}" Fill="{Binding Interior}"  Data="{Binding Geometry}" ToolTip="{Binding ToolTip}"/>
 
-  &lt;/DataTemplate&gt;
+  </DataTemplate>
 
 
 
@@ -7476,27 +7476,27 @@ The data template for a 100% stacked area chart can be overridden by changing th
 
 
 
-&lt;DataTemplate x:Key="customTemplate"&gt;
+<DataTemplate x:Key="customTemplate">
 
-    &lt;Path Stroke="{Binding Stroke}" StrokeThickness="4" Fill="Red"  Data="{Binding Geometry}"/&gt;
+    <Path Stroke="{Binding Stroke}" StrokeThickness="4" Fill="Red"  Data="{Binding Geometry}"/>
 
-  &lt;/DataTemplate&gt;
+  </DataTemplate>
 
 
 
 [Apply Template]
 
-&lt;syncfusion:Chart&gt;
+<syncfusion:Chart>
 
- &lt;syncfusion:ChartArea&gt;
+ <syncfusion:ChartArea>
 
-      &lt;syncfusion:ChartSeries Template="{StaticResource customTemplate}" Data="10,10,20,20,30,30" Type="StackingArea100"/&gt;
+      <syncfusion:ChartSeries Template="{StaticResource customTemplate}" Data="10,10,20,20,30,30" Type="StackingArea100"/>
 
-      &lt;syncfusion:ChartSeries Data="20,20,30,30,40,40" Type="StackingArea100"/&gt;
+      <syncfusion:ChartSeries Data="20,20,30,30,40,40" Type="StackingArea100"/>
 
- &lt;/syncfusion:ChartArea&gt;
+ </syncfusion:ChartArea>
 
-&lt;/syncfusion:Chart&gt;
+</syncfusion:Chart>
 
 
 
@@ -7540,7 +7540,7 @@ StepArea Chart
 
 Step Area Charts are similar to regular area charts except that instead of a straight line tracing the shortest path between points, the values are connected by continuous vertical and horizontal lines forming a step-like progression. Also, step area charts contain only one segment for each series.
 
-{ ![](Chart-Controls_images/Chart-Controls_img91.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img91.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7616,12 +7616,12 @@ segment geometry</td></tr>
 <td>
 IsStartSegment</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} - if this is start segment</td></tr>
+{{{ ''_true_'' | markdownify }}} - if this is start segment</td></tr>
 <tr>
 <td>
 IsEndSegment</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} - if this is end segment</td></tr>
+{{{ ''_true_'' | markdownify }}} - if this is end segment</td></tr>
 <tr>
 <td>
 Interior</td><td>
@@ -7635,7 +7635,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Area Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Area Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Area Chart Demo_
 
 See Also
 
@@ -7645,7 +7645,7 @@ Range Area Chart
 
 Range Area Chart is a variation of Area Chart type that lets you plot bands of data in a chart, like Bollinger bands, weather patterns, etc. Each point in the chart is specified by 2 Y values – the lower and higher end of the band. 
 
-{ ![](Chart-Controls_images/Chart-Controls_img92.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img92.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7712,7 +7712,7 @@ Description</td></tr>
 <td>
 IsHighLow</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} - if this segment is for a "high" area</td></tr>
+{{{ ''_true_'' | markdownify }}} - if this segment is for a "high" area</td></tr>
 <tr>
 <td>
 Geometry</td><td>
@@ -7731,7 +7731,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Range Area Chart Type is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Range-Area Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Range-Area Chart Demo_
 
 See Also
 
@@ -7745,7 +7745,7 @@ The Funnel chart is a single series chart representing the data as portions of 1
 
 Funnel charts are often used to represent stages in a sales process and show the amount of potential revenue for each stage. This type of chart can be useful also in identifying potential problem areas in an organization's sales processes, for example. A funnel chart is similar to a stacked percent bar chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img93.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img93.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7850,7 +7850,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Accumulation Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Accumulation Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Accumulation Chart Demo_
 
 See Also
 
@@ -7862,7 +7862,7 @@ Pyramid chart is similar to the funnel chart. It is often used for geographical 
 
 The following images are some sample Pyramid Charts.
 
-{ ![](Chart-Controls_images/Chart-Controls_img94.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img94.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7962,7 +7962,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Accumulation Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Accumulation Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Accumulation Chart Demo_
 
 See Also
 
@@ -7980,7 +7980,7 @@ It is used to display numerical data, either discrete or continuous. Scatter cha
 
 The following image shows a multi series Scatter Chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img95.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img95.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8052,7 +8052,7 @@ You can modify the size of the Scatter chart by using the Height and Width prope
 
 DataSource="{Binding ExpensiveCarDetails}" BindingPathX="Position" BindingPathsY="Price" syncfusion:ChartScatterType.ScatterHeight="30" syncfusion:ChartScatterType.ScatterWidth="30">
 
-&lt;/syncfusion:ChartSeries&gt;
+</syncfusion:ChartSeries>
 
 
 
@@ -8065,7 +8065,7 @@ ChartScatterType.SetScatterHeight(seriesname, 30);
 
 A sample which demonstrates Scatter and Bubble Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Scatter And Bubble Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Scatter And Bubble Chart Demo_
 
 Fast Scatter chart Type
 
@@ -8082,7 +8082,7 @@ The following points mark the advantages of Fast Scatter Charts over Scatter Cha
 
 The Chart type Fast Scatter is added in the Enum of type ChartTypes.
 
-{ ![](Chart-Controls_images/Chart-Controls_img96.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img96.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8146,7 +8146,7 @@ The following code example illustrates the usage of Fast Scatter charts.
 
 
 
-&lt;syncfusion:ChartSeries Type="FastScatter" Name="series1" Stroke="Black" DataSource="{Binding}"/&gt;
+<syncfusion:ChartSeries Type="FastScatter" Name="series1" Stroke="Black" DataSource="{Binding}"/>
 
 
 
@@ -8162,7 +8162,7 @@ Run the sample.
 
 A Fast Scatter chart is displayed.
 
-{ ![](Chart-Controls_images/Chart-Controls_img97.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img97.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8178,7 +8178,7 @@ You can modify the size of the Fast Scatter chart by using the Height and Width 
 
 DataSource="{Binding ExpensiveCarDetails}" BindingPathX="Position" BindingPathsY="Price" syncfusion:ChartFastScatterType.FastScatterHeight="30" syncfusion:ChartFastScatterType.FastScatterWidth="30">
 
-&lt;/syncfusion:ChartSeries&gt;
+</syncfusion:ChartSeries>
 
 
 
@@ -8191,7 +8191,7 @@ ChartFastScatterType.SetFastScatterHeight(seriesname, 30);
 
 A sample which demonstrates Fast Scatter Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\Essential Studio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Performance-> Fast chart types_
+_..My Documents\Syncfusion\Essential Studio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Performance-> Fast chart types_
 
 See Also
 
@@ -8205,7 +8205,7 @@ Though it's called a bubble chart, the data marker can be rendered as either a c
 
 The following image shows a multi series Bubble Chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img98.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img98.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8304,7 +8304,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Scatter and Bubble Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Scatter And Bubble Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Scatter And Bubble Chart Demo_
 
 See Also
 
@@ -8318,7 +8318,7 @@ A Candle Chart displays stock information using the High, Low, Open and Close va
 
 The following image shows a CandleChart displaying a single series. 
 
-{ ![](Chart-Controls_images/Chart-Controls_img99.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img99.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8426,7 +8426,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Financial Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
 
 See Also
 
@@ -8438,7 +8438,7 @@ Hi Lo Chart is a special kind of chart that is normally used in stock analysis. 
 
 The Hi Lo Chart expect 2 Y values to be specified in the series. One value should represent the high and the other value should represent the low stock price for the period. This can be specified in any order.
 
-{ ![](Chart-Controls_images/Chart-Controls_img100.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img100.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8508,7 +8508,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Financial Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
 
 See Also
 
@@ -8518,7 +8518,7 @@ HiLoOpenClose Chart
 
 Hi Lo Open Close Chart is a special kind of chart that is normally used in stock analysis. This chart type expects 4 Y values for every point in the series. Those values should represent the High, Low, Open and Close values of the stock, in that order, for that period.
 
-{ ![](Chart-Controls_images/Chart-Controls_img101.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img101.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8628,7 +8628,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Financial Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
 
 See Also
 
@@ -8640,7 +8640,7 @@ Kagi Charts are a Japanese invention and date since the late 1870's, but were po
 
 The penetration of a prior column's high or low, by the latest closing price, alters the colors of the lines. These colors depict either a bullish or bearish pattern. Use the PriceUpColor and PriceDownColor properties to specify the colors for these two patterns. The wider the columns, the stronger the pattern.
 
-{ ![](Chart-Controls_images/Chart-Controls_img102.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img102.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8699,12 +8699,12 @@ Description</td></tr>
 <td>
 IsPriceUp</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} – if segment shows price rising</td></tr>
+{{{ ''_true_'' | markdownify }}} – if segment shows price rising</td></tr>
 <tr>
 <td>
 IsPriceDown</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} – if segment shows price recession</td></tr>
+{{{ ''_true_'' | markdownify }}} – if segment shows price recession</td></tr>
 <tr>
 <td>
 Points</td><td>
@@ -8723,7 +8723,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Financial Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
 
 See Also
 
@@ -8737,7 +8737,7 @@ This is a chart that plots the day-to-day increment and decrement in price. It u
 
 This chart requires 2 Y values, the high value and the low value for the specified period.
 
-{ ![](Chart-Controls_images/Chart-Controls_img103.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img103.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8817,12 +8817,12 @@ column width</td></tr>
 <td>
 IsPoint</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} – if segment is point</td></tr>
+{{{ ''_true_'' | markdownify }}} – if segment is point</td></tr>
 <tr>
 <td>
 IsFigure</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} – if segment is figure</td></tr>
+{{{ ''_true_'' | markdownify }}} – if segment is figure</td></tr>
 <tr>
 <td>
 Height</td><td>
@@ -8841,7 +8841,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Financial Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
 
 See Also
 
@@ -8855,7 +8855,7 @@ If the new closing price penetrates the previous bricks closing price in the opp
 
 Since a Renko chart isolates the underlying trends by filtering out the minor ups and downs, Renko charts are excellent in determining support and resistance levels.  
 
-{ ![](Chart-Controls_images/Chart-Controls_img104.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img104.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -8929,12 +8929,12 @@ column width</td></tr>
 <td>
 IsPriceUp</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} – if segment shows price rising</td></tr>
+{{{ ''_true_'' | markdownify }}} – if segment shows price rising</td></tr>
 <tr>
 <td>
 IsPriceDown</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} – if segment shows price recession</td></tr>
+{{{ ''_true_'' | markdownify }}} – if segment shows price recession</td></tr>
 <tr>
 <td>
 Height</td><td>
@@ -8953,7 +8953,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Financial Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
 
 See Also
 
@@ -8967,7 +8967,7 @@ The three-line break chart looks like a series of rising and falling lines of va
 
 The ReversalAmount specifies the threshold amount by which the price should change to begin rendering a new vertical box in the appropriate direction.
 
-{ ![](Chart-Controls_images/Chart-Controls_img105.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img105.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9041,12 +9041,12 @@ column width</td></tr>
 <td>
 IsPriceUp</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} – if segment shows price rising</td></tr>
+{{{ ''_true_'' | markdownify }}} – if segment shows price rising</td></tr>
 <tr>
 <td>
 IsPriceDown</td><td>
 bool</td><td>
-{{ '_true_' | markdownify }} – if segment shows price recession</td></tr>
+{{{ ''_true_'' | markdownify }}} – if segment shows price recession</td></tr>
 <tr>
 <td>
 Height</td><td>
@@ -9065,7 +9065,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Financial Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Financial Chart Demo_
 
 See Also
 
@@ -9083,7 +9083,7 @@ In 1977, John Tukey published an efficient method for displaying a five-number d
 
 The following is an example of a Box and Whisker plot.
 
-{ ![](Chart-Controls_images/Chart-Controls_img106.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img106.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9241,7 +9241,7 @@ ChartBoxAndWhiskerType.SetDefaultOutlierVisible(ser, false);
 
 A sample which demonstrates Box And Whisker Chart Type is available in the following sample installation path.
 
-..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Box-and-Whisker Chart Demo
+..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Box-and-Whisker Chart Demo
 
 See Also
 
@@ -9262,7 +9262,7 @@ The Fast High Low (HiLo) Open Close charts have the following advantages:
 
 The Chart type HiLo Open Close is added in the Enum of type ChartTypes.
 
-{ ![](Chart-Controls_images/Chart-Controls_img107.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img107.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9372,7 +9372,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Financial Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Performance\Fast chart types_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Performance\Fast chart types_
 
 The following code illustrates the creation of Fast High Low (HiLo) Open Close charts.
 
@@ -9380,7 +9380,7 @@ The following code illustrates the creation of Fast High Low (HiLo) Open Close c
 
 
 
-&lt;syncfusion:ChartSeries Type="HiLoOpenClose" Name="series1" Stroke="Black" DataSource="{Binding}"/&gt;
+<syncfusion:ChartSeries Type="HiLoOpenClose" Name="series1" Stroke="Black" DataSource="{Binding}"/>
 
 
 
@@ -9394,7 +9394,7 @@ series.Type = ChartTypes.HiLoOpenClose;
 
 Run the sample. The following output is provided.
 
-{ ![](Chart-Controls_images/Chart-Controls_img108.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img108.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9404,7 +9404,7 @@ Pie Chart
 
 A Pie Chart renders Y values as slices in a pie. These slices are rendered in proportion to the whole which is simply the sum of all the Y values in the series. Consequently, Pie Charts are used to visualize the proportional contribution (in terms of percentage or fraction) of categories of data to the whole data set. The X values in the data series will only be treated as nominal (categorical, qualitative) data. The Pie Chart can display only one DataSeries at a time.
 
-{ ![](Chart-Controls_images/Chart-Controls_img109.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img109.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9473,7 +9473,7 @@ y-coordinate of sector center</td></tr>
 <td>
 IsExploded</td><td>
 double</td><td>
-{{ '_true_' | markdownify }} if segment is leant out</td></tr>
+{{{ ''_true_'' | markdownify }}} if segment is leant out</td></tr>
 <tr>
 <td>
 ExplodRadius</td><td>
@@ -9512,7 +9512,7 @@ specifies the angle (in radians) of the other side of the pie</td></tr>
 </table>
 A sample which demonstrates Pie Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Pie Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Pie Chart Demo_
 
 See Also
 
@@ -9522,7 +9522,7 @@ Doughnut Chart
 
 Doughnut charts are pie charts with a hole, whose value is specified as the doughnut coefficient. The Doughnut Chart is best suited for presenting data in proportions.
 
-{ ![](Chart-Controls_images/Chart-Controls_img110.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img110.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9597,7 +9597,7 @@ y-coordinate of sector center</td></tr>
 <td>
 IsExploded</td><td>
 double</td><td>
-{{ '_true_' | markdownify }} if segment is leant out</td></tr>
+{{{ ''_true_'' | markdownify }}} if segment is leant out</td></tr>
 <tr>
 <td>
 DoughnutCoefficient</td><td>
@@ -9626,7 +9626,7 @@ reference to series-owner</td></tr>
 </table>
 A sample which demonstrates Pie Chart Types is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Pie Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Pie Chart Demo_
 
 See Also
 
@@ -9640,7 +9640,7 @@ APolar Chart is a circular graph on which data is displayed in terms of values a
 
 It is a form of graph that allows a visual comparison between several quantitative or qualitative aspects of a situation and also allows a visual comparison between several situations that are drawn using the same axes (poles).
 
-{ ![](Chart-Controls_images/Chart-Controls_img111.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img111.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9710,7 +9710,7 @@ reference to series-owner</td></tr>
 </table>
 A sample that illustrates Circular Chart Type is available in the following sample installation path.
 
-_..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Circular Chart Demo_
+_..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\Circular Chart Demo_
 
 See Also
 
@@ -9726,7 +9726,7 @@ Line
 
 When the DrawType is Line, the series is drawn as a line segment connecting each point in the chart. The following image illustrates this.
 
-{ ![](Chart-Controls_images/Chart-Controls_img112.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img112.png)' | markdownify }}
 {:.image }
 
 
@@ -9734,7 +9734,7 @@ Area
 
 When the DrawType is Area, the series is drawn as a single area segment connecting each point in the chart. The following image illustrates this.
 
-{ ![](Chart-Controls_images/Chart-Controls_img113.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img113.png)' | markdownify }}
 {:.image }
 
 
@@ -9742,17 +9742,17 @@ Symbol
 
 When the DrawType is Symbol, the series is drawn as separate points as a symbol without connecting each point in the chart. The following image illustrates this.
 
-{ ![](Chart-Controls_images/Chart-Controls_img114.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img114.png)' | markdownify }}
 {:.image }
 
 
 Following are the screenshots of the chart when IsClosed is set to True and False:
 
-{ ![](Chart-Controls_images/Chart-Controls_img115.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img115.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img116.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img116.png)' | markdownify }}
 {:.image }
 
 
@@ -9798,25 +9798,25 @@ Adding Support for IsClosed and DrawType in Radar and Polar Charts to an Applica
 
 Polar Chart
 
-&lt;syncf:ChartArea syncf:ChartPolarType.IsClosed="True" syncf:ChartPolarType.PolarSymbol="{StaticResource sym}" syncf:ChartPolarType.DrawType="Line" Name="Area1"&gt;     
+<syncf:ChartArea syncf:ChartPolarType.IsClosed="True" syncf:ChartPolarType.PolarSymbol="{StaticResource sym}" syncf:ChartPolarType.DrawType="Line" Name="Area1">     
 
- &lt;syncf:ChartSeries StrokeThickness="3" Interior="Red" Type="Polar" x:Name="Series1" Data="0,100,1,150,2,300,3,50,4,214,5,166" &gt;                   
+ <syncf:ChartSeries StrokeThickness="3" Interior="Red" Type="Polar" x:Name="Series1" Data="0,100,1,150,2,300,3,50,4,214,5,166" >                   
 
-&lt;/syncf:ChartSeries&gt;
+</syncf:ChartSeries>
 
-&lt;/syncf:ChartArea&gt;
+</syncf:ChartArea>
 
 
 
 Radar Chart
 
-&lt;syncf:ChartArea syncf:ChartRadarType.IsClosed="True" syncf:ChartRadarType.PolarSymbol="{StaticResource sym}" syncf:ChartRadarType.DrawType="Line" Name="Area1"&gt;     
+<syncf:ChartArea syncf:ChartRadarType.IsClosed="True" syncf:ChartRadarType.PolarSymbol="{StaticResource sym}" syncf:ChartRadarType.DrawType="Line" Name="Area1">     
 
- &lt;syncf:ChartSeries StrokeThickness="3" Interior="Red" Type="Radar" x:Name="Series1" Data="0,100,1,150,2,300,3,50,4,214,5,166" &gt;                   
+ <syncf:ChartSeries StrokeThickness="3" Interior="Red" Type="Radar" x:Name="Series1" Data="0,100,1,150,2,300,3,50,4,214,5,166" >                   
 
-&lt;/syncf:ChartSeries&gt;
+</syncf:ChartSeries>
 
-&lt;/syncf:ChartArea&gt;
+</syncf:ChartArea>
 
 
 
@@ -9957,7 +9957,7 @@ The following code example illustrates the usage of Fast Stacking Column charts.
 
 
 
-&lt;syncfusion:ChartSeries Type="FastStackingColumn" Name="series1" Stroke="Black" DataSource="{Binding}"/&gt;
+<syncfusion:ChartSeries Type="FastStackingColumn" Name="series1" Stroke="Black" DataSource="{Binding}"/>
 
 
 
@@ -9973,13 +9973,13 @@ Run the sample.
 
 A Fast Stacking Column chart is displayed pertaining to the data source it is bound to.
 
-{ ![](Chart-Controls_images/Chart-Controls_img117.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img117.jpeg)' | markdownify }}
 {:.image }
 
 
 A sample which demonstrates Fast Stacking Column Chart Types is available in the following sample installation path.
 
-..My Documents\Syncfusion\Essential Studio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Performance\Fast chart types
+..My Documents\Syncfusion\Essential Studio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Performance\Fast chart types
 
 Stacking Positive and Negative Values for Stacking Chart Types
 
@@ -9993,15 +9993,15 @@ Chart types are:
 
 
 
-{ ![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/StackingBar.png](Chart-Controls_images/Chart-Controls_img118.png) | markdownify }
+{{ '![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/StackingBar.png](Chart-Controls_images/Chart-Controls_img118.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/StackingArea.png](Chart-Controls_images/Chart-Controls_img119.png) | markdownify }
+{{ '![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/StackingArea.png](Chart-Controls_images/Chart-Controls_img119.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/StackingColumn.png](Chart-Controls_images/Chart-Controls_img120.png) | markdownify }
+{{ '![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/StackingColumn.png](Chart-Controls_images/Chart-Controls_img120.png)' | markdownify }}
 {:.image }
 
 
@@ -10047,7 +10047,7 @@ ChartLineType.SetBreakLineForDoublePointsDistanceMoreThan(Chart1.Areas[0].Series
 
 If the data given are 1, 2, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17 and the SetBreakLineForDoublePointsDistanceMoreThan is passed with a value 1, all points that don't have a point after 1 will not be drawn. Following screenshot shows the output for this data.
 
-{ ![](Chart-Controls_images/Chart-Controls_img121.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img121.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10173,7 +10173,7 @@ MedianWeightGradient="{StaticResource SeriesAInterior}"                         
 
 When the code runs, the following output displays.
 
-{ ![](Chart-Controls_images/Chart-Controls_img122.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img122.png)' | markdownify }}
 {:.image }
 
 
@@ -10185,7 +10185,7 @@ Use Case Scenarios
 
 It is used in the field where data are represented in a two dimensional map namely Population Survey. The data of the survey will automatically fit into the HeatMap item by resizing its font size.
 
-{ ![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/HeatMap.png](Chart-Controls_images/Chart-Controls_img123.png) | markdownify }
+{{ '![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/HeatMap.png](Chart-Controls_images/Chart-Controls_img123.png)' | markdownify }}
 {:.image }
 
 
@@ -10193,7 +10193,7 @@ Sample Link
 
 The path to access the sample is: 
 
-_&lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number\WPF\Chart.WPF\WindowSamples\3.5\Controllers \Heat Map\FlatListDemo"_
+_<sample installation location>\Syncfusion\EssentialStudio\Version Number\WPF\Chart.WPF\WindowSamples\3.5\Controllers \Heat Map\FlatListDemo"_
 
 Text Wrapping Behavior in HeatMapItem
 
@@ -10238,7 +10238,7 @@ To add the text wrapping support to the HeatMapItem:
 
 
 
-&lt;syncfusion:HeatMapControl x:Name="heatMap" TextIntersectAction="Wrap"/&gt;
+<syncfusion:HeatMapControl x:Name="heatMap" TextIntersectAction="Wrap"/>
 
 
 
@@ -10252,7 +10252,7 @@ To add the text wrapping support to the HeatMapItem:
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img124.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img124.png)' | markdownify }}
 {:.image }
 
 
@@ -10262,7 +10262,7 @@ To shrink the text for the HeatMapItem.
 
 
 
-&lt;syncfusion:HeatMapControl x:Name="heatMap" TextIntersectAction="Shrink"/&gt;
+<syncfusion:HeatMapControl x:Name="heatMap" TextIntersectAction="Shrink"/>
 
 
 
@@ -10276,7 +10276,7 @@ To shrink the text for the HeatMapItem.
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img125.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img125.png)' | markdownify }}
 {:.image }
 
 
@@ -10308,7 +10308,7 @@ FastScatter and FastColumn Chart types can be added using the property Type in C
 
 //Add FastScatter chart type to the series.
 
-  &lt;sync:ChartSeries  Type="FastScatter" /&gt;
+  <sync:ChartSeries  Type="FastScatter" />
 
 
 
@@ -10328,7 +10328,7 @@ Chart1.Areas[0].Series[0].Type = ChartTypes.FastScatter;
 
 
 
-{ ![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/SL/FastScatter.png](Chart-Controls_images/Chart-Controls_img126.png) | markdownify }
+{{ '![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/SL/FastScatter.png](Chart-Controls_images/Chart-Controls_img126.png)' | markdownify }}
 {:.image }
 
 
@@ -10340,7 +10340,7 @@ Chart1.Areas[0].Series[0].Type = ChartTypes.FastScatter;
 
 
 
-  &lt;sync:ChartSeries  Type="FastColumn" /&gt;
+  <sync:ChartSeries  Type="FastColumn" />
 
 
 
@@ -10360,7 +10360,7 @@ Chart1.Areas[0].Series[0].Type = ChartTypes.FastColumn;
 
 
 
-{ ![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/SL/FastColumn.png](Chart-Controls_images/Chart-Controls_img127.png) | markdownify }
+{{ '![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/SL/FastColumn.png](Chart-Controls_images/Chart-Controls_img127.png)' | markdownify }}
 {:.image }
 
 
@@ -10376,7 +10376,7 @@ You can modify the size of the Fast Scatter chart by using the Height and Width 
 
 DataSource="{Binding ExpensiveCarDetails}" BindingPathX="Position" BindingPathsY="Price" syncfusion:ChartFastScatterType.FastScatterHeight="30" syncfusion:ChartFastScatterType.FastScatterWidth="30">
 
-&lt;/syncfusion:ChartSeries&gt;
+</syncfusion:ChartSeries>
 
 
 
@@ -10403,7 +10403,7 @@ To set the Custom type feature in chart application:
 
 [XAML]
 
-           &lt;syncfusion:ChartSeries Type="Custom" /&gt;
+           <syncfusion:ChartSeries Type="Custom" />
 
 
 
@@ -10483,29 +10483,29 @@ To set the Custom type feature in chart application:
 
 [XAML]
 
-        &lt;!--Hybird Area Line Type Template--&gt;
+        <!--Hybird Area Line Type Template-->
 
-        &lt;DataTemplate x:Key="HybirdAreaLineType"&gt;
+        <DataTemplate x:Key="HybirdAreaLineType">
 
-            &lt;Grid&gt;
+            <Grid>
 
-                &lt;Grid Clip="{Binding Geometry}"&gt;
+                <Grid Clip="{Binding Geometry}">
 
-                    &lt;Rectangle Fill="{Binding HighValueColor}"/&gt;
-
-
-
-                    &lt;Rectangle Fill="{Binding LowValueColor}"  Margin="{Binding HybirdMargin}"  /&gt;
+                    <Rectangle Fill="{Binding HighValueColor}"/>
 
 
 
-                &lt;/Grid&gt;
+                    <Rectangle Fill="{Binding LowValueColor}"  Margin="{Binding HybirdMargin}"  />
 
-                &lt;Line X1="0" Y1="0" X2="{Binding Series.Area.ActualWidth}" Y2="0"  Margin="{Binding HybirdMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stroke="{Binding LineColor}" StrokeThickness="5"/&gt;
 
-            &lt;/Grid&gt;
 
-        &lt;/DataTemplate&gt;
+                </Grid>
+
+                <Line X1="0" Y1="0" X2="{Binding Series.Area.ActualWidth}" Y2="0"  Margin="{Binding HybirdMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Stroke="{Binding LineColor}" StrokeThickness="5"/>
+
+            </Grid>
+
+        </DataTemplate>
 
 
 
@@ -10517,7 +10517,7 @@ To set the Custom type feature in chart application:
 
 
 
-{ ![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/CustomChartTYpe.png](Chart-Controls_images/Chart-Controls_img128.png) | markdownify }
+{{ '![C:/Users/sujithas/Desktop/Assigned wrk/vOL3_2010/Doc/UG/CustomChartTYpe.png](Chart-Controls_images/Chart-Controls_img128.png)' | markdownify }}
 {:.image }
 
 
@@ -10536,7 +10536,7 @@ Or
 
 5. Go to
 
-_&lt;&lt;EssentialStudioInstalledLocation&gt;>\Syncfusion\EssentialStudio\&lt;Version&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\ Custom Chart Type Demo_
+_<<EssentialStudioInstalledLocation>>\Syncfusion\EssentialStudio\<Version>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Gallery\ Custom Chart Type Demo_
 
 There are two folders namely C Sharp and Visual Basic. The user can choose the required folder.
 
@@ -10554,7 +10554,7 @@ The following code example could be used to make a series as Indexed.
 
 
 
-&lt;sfchart:ChartSeries IsIndexed="True" /&gt;
+<sfchart:ChartSeries IsIndexed="True" />
 
 
 
@@ -10568,11 +10568,11 @@ series.IsIndexed = true;
 
 In the following figure, the first chart shows a column chart that is not-indexed while the second chart shows a column chart whose x-axis is indexed.
 
-{ ![](Chart-Controls_images/Chart-Controls_img129.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img129.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img130.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img130.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10644,21 +10644,21 @@ A boolean property used to calculate the axis range based on the modified data v
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-  &lt;sfchart:ChartArea Background="LightGray" GridBackground="White"&gt;
+  <sfchart:ChartArea Background="LightGray" GridBackground="White">
 
-    &lt;sfchart:ChartArea.SecondaryAxis&gt;
+    <sfchart:ChartArea.SecondaryAxis>
 
-      &lt;sfchart:ChartAxis IsAutoSetRange="True" DesiredIntervalsCount="5"RangePadding="Additional"/&gt;
+      <sfchart:ChartAxis IsAutoSetRange="True" DesiredIntervalsCount="5"RangePadding="Additional"/>
 
-    &lt;/sfchart:ChartArea.SecondaryAxis&gt;
+    </sfchart:ChartArea.SecondaryAxis>
 
-    &lt;sfchart:ChartSeries Type="Column" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"/&gt;
+    <sfchart:ChartSeries Type="Column" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"/>
 
-  &lt;/sfchart:ChartArea&gt;
+  </sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -10674,15 +10674,15 @@ Chart1.Areas[0].SecondaryAxis.DesiredIntervalsCount = 5;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img131.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img131.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img132.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img132.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img133.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img133.png)' | markdownify }}
 {:.image }
 
 
@@ -10732,21 +10732,21 @@ The frequency at which the MinimumDateTimeInterval should be rendered. Specified
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-  &lt;sfchart:ChartArea Background="LightGray" GridBackground="White"&gt;
+  <sfchart:ChartArea Background="LightGray" GridBackground="White">
 
-    &lt;sfchart:ChartArea.SecondaryAxis&gt;
+    <sfchart:ChartArea.SecondaryAxis>
 
-      &lt;sfchart:ChartAxis IsAutoSetRange="False" Range="0,100" Interval="25"MinimumInterval="25"/&gt;
+      <sfchart:ChartAxis IsAutoSetRange="False" Range="0,100" Interval="25"MinimumInterval="25"/>
 
-    &lt;/sfchart:ChartArea.SecondaryAxis&gt;
+    </sfchart:ChartArea.SecondaryAxis>
 
-    &lt;sfchart:ChartSeries Type="Column" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"/&gt;
+    <sfchart:ChartSeries Type="Column" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"/>
 
-  &lt;/sfchart:ChartArea&gt;
+  </sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -10768,7 +10768,7 @@ Chart1.Areas[0].SecondaryAxis.MinimumInterval = 25;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img134.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img134.png)' | markdownify }}
 {:.image }
 
 
@@ -10806,15 +10806,15 @@ The following code example illustrates how to set the Range Calculation mode for
 
 [XAML]
 
-&lt;syncfusion:ChartArea&gt;
+<syncfusion:ChartArea>
 
-    &lt;syncfusion:ChartArea.PrimaryAxis&gt;
+    <syncfusion:ChartArea.PrimaryAxis>
 
-        &lt;syncfusion:ChartAxis IsAutoSetRange="True" RangeCalculationMode="AdjustAcrossChartTypes"/&gt;
+        <syncfusion:ChartAxis IsAutoSetRange="True" RangeCalculationMode="AdjustAcrossChartTypes"/>
 
-    &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+    </syncfusion:ChartArea.PrimaryAxis>
 
-&lt;/syncfusion:ChartArea&gt;
+</syncfusion:ChartArea>
 
 
 
@@ -10836,11 +10836,11 @@ chart.Areas[0].PrimaryAxis.RangeCalculationMode = RangeCalculationMode.Consisten
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img135.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img135.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img136.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img136.png)' | markdownify }}
 {:.image }
 
 
@@ -10907,18 +10907,18 @@ Adding IsSetDataValueRange to an Application
 <table>
 <tr>
 <td>
-[XAML]  &lt;syncfusion:ChartAxis x:Name="YAxis" IsAutoSetRange="True" RangeCalculationMode="Default" RangePadding="Normal" IsSetDataValueRange="True"/&gt;</td></tr>
+[XAML]  <syncfusion:ChartAxis x:Name="YAxis" IsAutoSetRange="True" RangeCalculationMode="Default" RangePadding="Normal" IsSetDataValueRange="True"/></td></tr>
 <tr>
 <td>
 [C#]            this.YAxis.IsAutoSetRange = true;            this.YAxis.IsSetDataValueRange = true;</td></tr>
 </table>
 
 
-{ ![C:/Users/ganesan/Desktop/Before.png](Chart-Controls_images/Chart-Controls_img137.png) | markdownify }
+{{ '![C:/Users/ganesan/Desktop/Before.png](Chart-Controls_images/Chart-Controls_img137.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/ganesan/Desktop/After.png](Chart-Controls_images/Chart-Controls_img138.png) | markdownify }
+{{ '![C:/Users/ganesan/Desktop/After.png](Chart-Controls_images/Chart-Controls_img138.png)' | markdownify }}
 {:.image }
 
 
@@ -10932,33 +10932,33 @@ The following lines of code can be used to hide the grid lines of an axis.
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-  &lt;local:ProductSalesCollection x:Key="SeriesData1"/&gt;
+  <local:ProductSalesCollection x:Key="SeriesData1"/>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-  &lt;sfchart:ChartArea Background="LightGray" GridBackground="White"&gt;
+  <sfchart:ChartArea Background="LightGray" GridBackground="White">
 
-    &lt;sfchart:ChartArea.PrimaryAxis&gt;
+    <sfchart:ChartArea.PrimaryAxis>
 
-      &lt;sfchart:ChartAxis sfchart:ChartArea.ShowGridLines="False"/&gt;
+      <sfchart:ChartAxis sfchart:ChartArea.ShowGridLines="False"/>
 
-    &lt;/sfchart:ChartArea.PrimaryAxis&gt;
+    </sfchart:ChartArea.PrimaryAxis>
 
-    &lt;sfchart:ChartArea.SecondaryAxis&gt;
+    <sfchart:ChartArea.SecondaryAxis>
 
-      &lt;sfchart:ChartAxis sfchart:ChartArea.ShowGridLines="False"/&gt;
+      <sfchart:ChartAxis sfchart:ChartArea.ShowGridLines="False"/>
 
-    &lt;/sfchart:ChartArea.SecondaryAxis&gt;
+    </sfchart:ChartArea.SecondaryAxis>
 
-    &lt;sfchart:ChartSeries Type="Column" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"/&gt;
+    <sfchart:ChartSeries Type="Column" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"/>
 
-  &lt;/sfchart:ChartArea&gt;
+  </sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -10972,7 +10972,7 @@ ChartArea.SetShowGridLines(Chart1.Areas[0].SecondaryAxis, false);
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img139.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img139.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10982,47 +10982,47 @@ Grid lines style can be changed using the ChartArea.GridLineStroke attached prop
 
 
 
-&lt;sfchart:ChartArea Background="LightGray" GridBackground="White"&gt;
+<sfchart:ChartArea Background="LightGray" GridBackground="White">
 
-  &lt;sfchart:ChartArea.PrimaryAxis&gt;
+  <sfchart:ChartArea.PrimaryAxis>
 
-    &lt;sfchart:ChartAxis&gt;
+    <sfchart:ChartAxis>
 
-      &lt;sfchart:ChartArea.GridLineStroke&gt;
+      <sfchart:ChartArea.GridLineStroke>
 
-        &lt;Pen Brush="#c6c6c6" Thickness="0.75"&gt;
+        <Pen Brush="#c6c6c6" Thickness="0.75">
 
-          &lt;Pen.DashStyle&gt;
+          <Pen.DashStyle>
 
-            &lt;DashStyle Dashes="1,2"/&gt;
+            <DashStyle Dashes="1,2"/>
 
-          &lt;/Pen.DashStyle&gt;
+          </Pen.DashStyle>
 
-        &lt;/Pen&gt;
+        </Pen>
 
-      &lt;/sfchart:ChartArea.GridLineStroke&gt;
+      </sfchart:ChartArea.GridLineStroke>
 
-    &lt;/sfchart:ChartAxis&gt;
+    </sfchart:ChartAxis>
 
-  &lt;/sfchart:ChartArea.PrimaryAxis&gt;
+  </sfchart:ChartArea.PrimaryAxis>
 
-  &lt;sfchart:ChartArea.SecondaryAxis&gt;
+  <sfchart:ChartArea.SecondaryAxis>
 
-    &lt;sfchart:ChartAxis&gt;
+    <sfchart:ChartAxis>
 
-      &lt;sfchart:ChartArea.GridLineStroke&gt;
+      <sfchart:ChartArea.GridLineStroke>
 
-        &lt;Pen Brush="#C6c6c6" Thickness="0.75"/&gt;
+        <Pen Brush="#C6c6c6" Thickness="0.75"/>
 
-      &lt;/sfchart:ChartArea.GridLineStroke&gt;
+      </sfchart:ChartArea.GridLineStroke>
 
-    &lt;/sfchart:ChartAxis&gt;
+    </sfchart:ChartAxis>
 
-  &lt;/sfchart:ChartArea.SecondaryAxis&gt;
+  </sfchart:ChartArea.SecondaryAxis>
 
-  &lt;sfchart:ChartSeries Type="Column" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"/&gt;
+  <sfchart:ChartSeries Type="Column" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"/>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
 
 
@@ -11052,7 +11052,7 @@ ChartArea.SetGridLineStroke(Chart1.Areas[0].SecondaryAxis, pen1);
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img140.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img140.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11064,33 +11064,33 @@ The number of small ticks to be drawn per interval can be controlled using the S
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-  &lt;local:ProductSalesCollection x:Key="SeriesData1"/&gt;
+  <local:ProductSalesCollection x:Key="SeriesData1"/>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-  &lt;sfchart:ChartArea Background="LightGray" GridBackground="White"&gt;
+  <sfchart:ChartArea Background="LightGray" GridBackground="White">
 
-    &lt;sfchart:ChartArea.PrimaryAxis&gt;
+    <sfchart:ChartArea.PrimaryAxis>
 
-      &lt;sfchart:ChartAxis SmallTicksPerInterval="4"/&gt;
+      <sfchart:ChartAxis SmallTicksPerInterval="4"/>
 
-    &lt;/sfchart:ChartArea.PrimaryAxis&gt;
+    </sfchart:ChartArea.PrimaryAxis>
 
-    &lt;sfchart:ChartArea.SecondaryAxis&gt;
+    <sfchart:ChartArea.SecondaryAxis>
 
-      &lt;sfchart:ChartAxis SmallTicksPerInterval="6"/&gt;
+      <sfchart:ChartAxis SmallTicksPerInterval="6"/>
 
-    &lt;/sfchart:ChartArea.SecondaryAxis&gt;
+    </sfchart:ChartArea.SecondaryAxis>
 
-    &lt;sfchart:ChartSeries Type="Column" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"/&gt;
+    <sfchart:ChartSeries Type="Column" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"/>
 
-  &lt;/sfchart:ChartArea&gt;
+  </sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -11104,7 +11104,7 @@ Chart1.Areas[0].SecondaryAxis.SmallTicksPerInterval = 6;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img141.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img141.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11120,55 +11120,55 @@ The ChartAxis line and tick lines can be customized using the LineStroke and Tic
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-  &lt;sfchart:ChartArea Background="LightGray" GridBackground="White"&gt;
+  <sfchart:ChartArea Background="LightGray" GridBackground="White">
 
-    &lt;sfchart:ChartArea.PrimaryAxis&gt;
+    <sfchart:ChartArea.PrimaryAxis>
 
-      &lt;sfchart:ChartAxis sfchart:ChartArea.ShowGridLines="False"&gt;
+      <sfchart:ChartAxis sfchart:ChartArea.ShowGridLines="False">
 
-        &lt;sfchart:ChartAxis.LineStroke&gt;
+        <sfchart:ChartAxis.LineStroke>
 
-          &lt;Pen Brush="Blue" Thickness="2"/&gt;
+          <Pen Brush="Blue" Thickness="2"/>
 
-        &lt;/sfchart:ChartAxis.LineStroke&gt;
+        </sfchart:ChartAxis.LineStroke>
 
-        &lt;sfchart:ChartAxis.TickLineStroke&gt;
+        <sfchart:ChartAxis.TickLineStroke>
 
-          &lt;Pen Brush="MidnightBlue" Thickness="2"/&gt;
+          <Pen Brush="MidnightBlue" Thickness="2"/>
 
-        &lt;/sfchart:ChartAxis.TickLineStroke&gt;
+        </sfchart:ChartAxis.TickLineStroke>
 
-      &lt;/sfchart:ChartAxis&gt;
+      </sfchart:ChartAxis>
 
-    &lt;/sfchart:ChartArea.PrimaryAxis&gt;
+    </sfchart:ChartArea.PrimaryAxis>
 
-    &lt;sfchart:ChartArea.SecondaryAxis&gt;
+    <sfchart:ChartArea.SecondaryAxis>
 
-      &lt;sfchart:ChartAxis sfchart:ChartArea.ShowGridLines="False"&gt;
+      <sfchart:ChartAxis sfchart:ChartArea.ShowGridLines="False">
 
-        &lt;sfchart:ChartAxis.LineStroke&gt;
+        <sfchart:ChartAxis.LineStroke>
 
-          &lt;Pen Brush="Green" Thickness="2"/&gt;
+          <Pen Brush="Green" Thickness="2"/>
 
-        &lt;/sfchart:ChartAxis.LineStroke&gt;
+        </sfchart:ChartAxis.LineStroke>
 
-        &lt;sfchart:ChartAxis.TickLineStroke&gt;
+        <sfchart:ChartAxis.TickLineStroke>
 
-          &lt;Pen Brush="Green" Thickness="2"/&gt;
+          <Pen Brush="Green" Thickness="2"/>
 
-        &lt;/sfchart:ChartAxis.TickLineStroke&gt;
+        </sfchart:ChartAxis.TickLineStroke>
 
-      &lt;/sfchart:ChartAxis&gt;
+      </sfchart:ChartAxis>
 
-    &lt;/sfchart:ChartArea.SecondaryAxis&gt;
+    </sfchart:ChartArea.SecondaryAxis>
 
-    &lt;sfchart:ChartSeries Type="Column" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"/&gt;
+    <sfchart:ChartSeries Type="Column" DataSource="{StaticResource SeriesData1}" BindingPathX="Year" BindingPathsY="Sales"/>
 
-  &lt;/sfchart:ChartArea&gt;
+  </sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -11198,7 +11198,7 @@ ChartArea.SetShowGridLines(Chart1.Areas[0].SecondaryAxis, false);
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img142.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img142.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11296,53 +11296,53 @@ Code Example
 
 
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-  &lt;sfchart:ChartArea Background="LightGray" GridBackground="White"&gt;
+  <sfchart:ChartArea Background="LightGray" GridBackground="White">
 
-    &lt;sfchart:ChartArea.PrimaryAxis&gt;
+    <sfchart:ChartArea.PrimaryAxis>
 
-      &lt;sfchart:ChartAxis sfchart:ChartArea.ShowGridLines="False"&gt;
+      <sfchart:ChartAxis sfchart:ChartArea.ShowGridLines="False">
 
-      &lt;/sfchart:ChartAxis&gt;
+      </sfchart:ChartAxis>
 
-    &lt;/sfchart:ChartArea.PrimaryAxis&gt;
+    </sfchart:ChartArea.PrimaryAxis>
 
-    &lt;sfchart:ChartArea.SecondaryAxis&gt;
+    <sfchart:ChartArea.SecondaryAxis>
 
-      &lt;sfchart:ChartAxis sfchart:ChartArea.ShowGridLines="False"&gt;
+      <sfchart:ChartAxis sfchart:ChartArea.ShowGridLines="False">
 
-        &lt;sfchart:ChartAxis.StripLines&gt;
+        <sfchart:ChartAxis.StripLines>
 
-          &lt;sfchart:ChartStripLine x:Name="strip1" Interior="MintCream" Offset="0" StartFromAxis="True" Width="15"&gt;
+          <sfchart:ChartStripLine x:Name="strip1" Interior="MintCream" Offset="0" StartFromAxis="True" Width="15">
 
-          &lt;/sfchart:ChartStripLine&gt;
+          </sfchart:ChartStripLine>
 
-          &lt;sfchart:ChartStripLine x:Name="strip2" Interior="MistyRose" Offset="15" StartFromAxis="True" Width="15"&gt;
+          <sfchart:ChartStripLine x:Name="strip2" Interior="MistyRose" Offset="15" StartFromAxis="True" Width="15">
 
-          &lt;/sfchart:ChartStripLine&gt;
+          </sfchart:ChartStripLine>
 
-          &lt;sfchart:ChartStripLine x:Name="strip3" Interior="LightCoral" Offset="30" StartFromAxis="True" Width="10"&gt;
+          <sfchart:ChartStripLine x:Name="strip3" Interior="LightCoral" Offset="30" StartFromAxis="True" Width="10">
 
-          &lt;/sfchart:ChartStripLine&gt;
+          </sfchart:ChartStripLine>
 
-        &lt;/sfchart:ChartAxis.StripLines&gt;
+        </sfchart:ChartAxis.StripLines>
 
-      &lt;/sfchart:ChartAxis&gt;
+      </sfchart:ChartAxis>
 
-    &lt;/sfchart:ChartArea.SecondaryAxis&gt;
+    </sfchart:ChartArea.SecondaryAxis>
 
-&lt;sfchart:ChartSeries Name="Series1" Interior="Red" Type="Scatter" DataSource="{Binding Source = {StatisResource myXmlData}, XPath=Products/Product}" BindingPathX="X" BindingPathsY="Series1Y"/&gt;
-
-
-
- &lt;sfchart:ChartSeries Name="Series2" Interior="Blue" Type="Scatter" DataSource="{Binding Source = {StatisResource myXmlData}, XPath=Products/Product}" BindingPathX="X" BindingPathsY="Series1Y1"/&gt;
+<sfchart:ChartSeries Name="Series1" Interior="Red" Type="Scatter" DataSource="{Binding Source = {StatisResource myXmlData}, XPath=Products/Product}" BindingPathX="X" BindingPathsY="Series1Y"/>
 
 
 
-  &lt;/sfchart:ChartArea&gt;
+ <sfchart:ChartSeries Name="Series2" Interior="Blue" Type="Scatter" DataSource="{Binding Source = {StatisResource myXmlData}, XPath=Products/Product}" BindingPathX="X" BindingPathsY="Series1Y1"/>
 
-&lt;/sfchart:Chart&gt;
+
+
+  </sfchart:ChartArea>
+
+</sfchart:Chart>
 
 To set the labels for the striplines, use the following code example.
 
@@ -11358,7 +11358,7 @@ strip3.Text = new FormattedText("High", CultureInfo.CurrentCulture, FlowDirectio
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img143.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img143.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11421,13 +11421,13 @@ ChartStripLine csY = new ChartStripLine();
 
 Before setting the offset:
 
-{ ![](Chart-Controls_images/Chart-Controls_img144.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img144.png)' | markdownify }}
 {:.image }
 
 
 After setting the offset:
 
-{ ![](Chart-Controls_images/Chart-Controls_img145.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img145.png)' | markdownify }}
 {:.image }
 
 
@@ -11439,47 +11439,47 @@ Custom Origin Lines can be drawn for the X and Y axis by using the ChartArea.Sho
 
 
 
-&lt;sfchart:ChartArea GridBackground="White"&gt;
+<sfchart:ChartArea GridBackground="White">
 
-  &lt;sfchart:ChartArea.PrimaryAxis&gt;
+  <sfchart:ChartArea.PrimaryAxis>
 
     <sfchart:ChartAxis RangePadding="Additional" sfchart:ChartArea.ShowGridLines="False" sfchart:ChartArea.ShowOriginLine="True" Origin="5"
 
     SmallTicksPerInterval="0">
 
-      &lt;sfchart:ChartArea.OriginLineStroke&gt;
+      <sfchart:ChartArea.OriginLineStroke>
 
-        &lt;Pen Brush="Maroon" Thickness="3"/&gt;
+        <Pen Brush="Maroon" Thickness="3"/>
 
-      &lt;/sfchart:ChartArea.OriginLineStroke&gt;
+      </sfchart:ChartArea.OriginLineStroke>
 
-    &lt;/sfchart:ChartAxis&gt;
+    </sfchart:ChartAxis>
 
-  &lt;/sfchart:ChartArea.PrimaryAxis&gt;
+  </sfchart:ChartArea.PrimaryAxis>
 
-  &lt;sfchart:ChartArea.SecondaryAxis&gt;
+  <sfchart:ChartArea.SecondaryAxis>
 
     <sfchart:ChartAxis RangePadding="Additional" sfchart:ChartArea.ShowGridLines="False" sfchart:ChartArea.ShowOriginLine="True" Origin="2"
 
     SmallTicksPerInterval="0">
 
-      &lt;sfchart:ChartArea.OriginLineStroke&gt;
+      <sfchart:ChartArea.OriginLineStroke>
 
-        &lt;Pen Brush="Green" Thickness="3"/&gt;
+        <Pen Brush="Green" Thickness="3"/>
 
-      &lt;/sfchart:ChartArea.OriginLineStroke&gt;
+      </sfchart:ChartArea.OriginLineStroke>
 
-    &lt;/sfchart:ChartAxis&gt;
+    </sfchart:ChartAxis>
 
-  &lt;/sfchart:ChartArea.SecondaryAxis&gt;
+  </sfchart:ChartArea.SecondaryAxis>
 
-  &lt;sfchart:ChartSeries Type="Scatter" DataSource="{StaticResource SeriesData2}" BindingPathX="X"  BindingPathsY="Y"  Interior="Blue"/&gt;
+  <sfchart:ChartSeries Type="Scatter" DataSource="{StaticResource SeriesData2}" BindingPathX="X"  BindingPathsY="Y"  Interior="Blue"/>
 
   <sfchart:ChartSeries Type="Scatter" DataSource="{StaticResource SeriesData1}"
 
   BindingPathX="X" BindingPathsY="Y"  Interior="Red"/>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
 
 
@@ -11509,7 +11509,7 @@ Chart1.Areas[0].SecondaryAxis.Origin = 2;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img146.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img146.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11543,11 +11543,11 @@ gets or sets the length of the axis small tick</td></tr>
 
 
 
-&lt;syncfusion:ChartArea.PrimaryAxis&gt;
+<syncfusion:ChartArea.PrimaryAxis>
 
-    &lt;syncfusion:ChartAxis TickSize="7" SmallTickSize="4" /&gt;
+    <syncfusion:ChartAxis TickSize="7" SmallTickSize="4" />
 
-&lt;/syncfusion:ChartArea.PrimaryAxis&gt;                       
+</syncfusion:ChartArea.PrimaryAxis>                       
 
 
 
@@ -11565,7 +11565,7 @@ area.PrimaryAxis.SmallTickSize = 3;
 
 The following image illustrates Chart with Axis TickSize and SmallTickSize set.
 
-{ ![](Chart-Controls_images/Chart-Controls_img147.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img147.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11635,11 +11635,11 @@ The following code illustrates this:
 
 
 
-&lt;syncfusion:ChartArea.SecondaryAxis &gt;
+<syncfusion:ChartArea.SecondaryAxis >
 
-                            &lt;syncfusion:ChartAxis x:Name="axis" ChartAxisLabels="NextToAxis" ChartLabelPosition="Above" ChartTickLinesPosition="Inside" TickLinesRange="0.5" SmallTickLinesRange="0.5"/&gt;
+                            <syncfusion:ChartAxis x:Name="axis" ChartAxisLabels="NextToAxis" ChartLabelPosition="Above" ChartTickLinesPosition="Inside" TickLinesRange="0.5" SmallTickLinesRange="0.5"/>
 
-       &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+       </syncfusion:ChartArea.SecondaryAxis>
 
 
 
@@ -11655,7 +11655,7 @@ The following code illustrates this:
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img148.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img148.png)' | markdownify }}
 {:.image }
 
 
@@ -11689,27 +11689,27 @@ gets / sets the orientation of the axis.</td></tr>
 
 
 
- &lt;syncfusion:ChartArea Name="area"&gt;                    
+ <syncfusion:ChartArea Name="area">                    
 
-      &lt;syncfusion:ChartSeries Name="series" Data=" 1 35 2 45 3 30 4 25 5 40" /&gt;
+      <syncfusion:ChartSeries Name="series" Data=" 1 35 2 45 3 30 4 25 5 40" />
 
-      &lt;syncfusion:ChartSeries Name="series1" Data=" 1 30 2 50 3 40 4 35 5 30" &gt;
+      <syncfusion:ChartSeries Name="series1" Data=" 1 30 2 50 3 40 4 35 5 30" >
 
-            &lt;syncfusion:ChartSeries.YAxis&gt;
+            <syncfusion:ChartSeries.YAxis>
 
-                    &lt;syncfusion:ChartAxis  Orientation="Horizontal" /&gt;
+                    <syncfusion:ChartAxis  Orientation="Horizontal" />
 
-            &lt;/syncfusion:ChartSeries.YAxis&gt;
+            </syncfusion:ChartSeries.YAxis>
 
-       &lt;/syncfusion:ChartSeries&gt;
+       </syncfusion:ChartSeries>
 
- &lt;/syncfusion:ChartArea&gt;
+ </syncfusion:ChartArea>
 
 
 
 The following image illustrates Chart with Y-axis orientation set as Horizontal.
 
-{ ![](Chart-Controls_images/Chart-Controls_img149.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img149.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11739,21 +11739,21 @@ Indicates whether the axis should be reversed. When reversed, the axis will rend
 
 
 
-&lt;syncfusion:ChartArea&gt;
+<syncfusion:ChartArea>
 
- &lt;syncfusion:ChartArea.PrimaryAxisAxis&gt;
+ <syncfusion:ChartArea.PrimaryAxisAxis>
 
-         &lt;syncfusion:ChartAxis IsInversed="True"&gt;
+         <syncfusion:ChartAxis IsInversed="True">
 
- &lt;/syncfusion:ChartArea.PrimaryAxisAxis&gt;
+ </syncfusion:ChartArea.PrimaryAxisAxis>
 
- &lt;syncfusion:ChartArea.SecondaryAxis&gt;
+ <syncfusion:ChartArea.SecondaryAxis>
 
-    &lt;syncfusion:ChartAxis IsInversed="True"&gt;
+    <syncfusion:ChartAxis IsInversed="True">
 
-          &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+          </syncfusion:ChartArea.SecondaryAxis>
 
-&lt;/syncfusion:ChartArea&gt;                        
+</syncfusion:ChartArea>                        
 
 
 
@@ -11769,7 +11769,7 @@ chart.Areas[0].SecondaryAxis.IsInversed = true;
 
 The following image illustrates Chart with an Inversed Axis.
 
-{ ![](Chart-Controls_images/Chart-Controls_img150.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img150.png)' | markdownify }}
 {:.image }
 
 
@@ -11799,25 +11799,25 @@ Gets / sets a value indicating whether axis should be in opposed position.</td><
 
 
 
-&lt;syncfusion:ChartArea Name="area"&gt;                    
+<syncfusion:ChartArea Name="area">                    
 
- &lt;syncfusion:ChartSeries Name="series" Data=" 1 35 2 45 3 30 4 25 5 40" /&gt;
+ <syncfusion:ChartSeries Name="series" Data=" 1 35 2 45 3 30 4 25 5 40" />
 
- &lt;syncfusion:ChartSeries Name="series1" Data=" 1 30 2 50 3 40 4 35 5 30" &gt;
+ <syncfusion:ChartSeries Name="series1" Data=" 1 30 2 50 3 40 4 35 5 30" >
 
-     &lt;syncfusion:ChartSeries.YAxis&gt;
+     <syncfusion:ChartSeries.YAxis>
 
-          &lt;syncfusion:ChartAxis  Orientation="Vertical" OpposedPosition="True"/&gt;
+          <syncfusion:ChartAxis  Orientation="Vertical" OpposedPosition="True"/>
 
-     &lt;/syncfusion:ChartSeries.YAxis&gt;
+     </syncfusion:ChartSeries.YAxis>
 
- &lt;/syncfusion:ChartSeries&gt;
+ </syncfusion:ChartSeries>
 
-&lt;/syncfusion:ChartArea&gt;
+</syncfusion:ChartArea>
 
 The following image illustrates Chart with Opposed Axis.
 
-{ ![](Chart-Controls_images/Chart-Controls_img151.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img151.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -11833,51 +11833,51 @@ Chart is capable of rendering multiple axes in the same plot. Different series c
 
 
 
-&lt;sfchart:Chart Name="Chart1"&gt;
+<sfchart:Chart Name="Chart1">
 
-&lt;sfchart:ChartArea&gt;
+<sfchart:ChartArea>
 
-   &lt;!--This series is plotted against the default Y axis --&gt;
+   <!--This series is plotted against the default Y axis -->
 
-   &lt;sfchart:ChartSeries Type="Spline" x:Name="Series1" DataSource="{Binding Source={StaticResource dataval}}" BindingPathX="ID" BindingPathsY="Val3" IsIndexed="False" Label="Avg Temperature"&gt;
+   <sfchart:ChartSeries Type="Spline" x:Name="Series1" DataSource="{Binding Source={StaticResource dataval}}" BindingPathX="ID" BindingPathsY="Val3" IsIndexed="False" Label="Avg Temperature">
 
-   &lt;/sfchart:ChartSeries&gt;
+   </sfchart:ChartSeries>
 
-   &lt;!--This series is plotted against a custom Y axis --&gt;
+   <!--This series is plotted against a custom Y axis -->
 
-   &lt;sfchart:ChartSeries Type="SplineArea" x:Name="Series2" DataSource="{Binding Source={StaticResource dataval}}" BindingPathX="ID" BindingPathsY="Val1" Label="Avg Rainfall"&gt;
+   <sfchart:ChartSeries Type="SplineArea" x:Name="Series2" DataSource="{Binding Source={StaticResource dataval}}" BindingPathX="ID" BindingPathsY="Val1" Label="Avg Rainfall">
 
-   &lt;sfchart:ChartSeries.YAxis&gt;
+   <sfchart:ChartSeries.YAxis>
 
-   &lt;sfchart:ChartAxis OpposedPosition="True" RangePadding="Normal" IsAutoSetRange="False" Range="0,100" SmallTicksPerInterval="0" Interval="10" Orientation="Vertical"&gt;
+   <sfchart:ChartAxis OpposedPosition="True" RangePadding="Normal" IsAutoSetRange="False" Range="0,100" SmallTicksPerInterval="0" Interval="10" Orientation="Vertical">
 
    <sfchart:ChartArea.ShowGridLines>false</sfchart:ChartArea.ShowGridLines>
 
-   &lt;sfchart:ChartAxis.Header&gt;
+   <sfchart:ChartAxis.Header>
 
-   &lt;TextBlock Text="Rainfall (mm)" FontFamily="Tahoma" FontSize="14" Foreground="LightSteelBlue"/&gt;
+   <TextBlock Text="Rainfall (mm)" FontFamily="Tahoma" FontSize="14" Foreground="LightSteelBlue"/>
 
-   &lt;/sfchart:ChartAxis.Header&gt;
+   </sfchart:ChartAxis.Header>
 
-   &lt;/sfchart:ChartAxis&gt;
+   </sfchart:ChartAxis>
 
-   &lt;/sfchart:ChartSeries.YAxis&gt;
+   </sfchart:ChartSeries.YAxis>
 
-   &lt;/sfchart:ChartSeries&gt;
+   </sfchart:ChartSeries>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img152.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img152.jpeg)' | markdownify }}
 {:.image }
 
 
 __For more details, refer to the sample in the following location:
 
-_...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Axis\Chart Multiple Opposed Axes Demo_
+_...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Axis\Chart Multiple Opposed Axes Demo_
 
 See Also
 
@@ -11895,7 +11895,7 @@ To add axis range selction, set the EnableRangeSelection to True. The following 
 
 
 
-  &lt;syncfusion:ChartArea Name="area" EnableRangeSelection="True" LineStroke="Maroon" SelectionStroke="LightPink" /&gt;
+  <syncfusion:ChartArea Name="area" EnableRangeSelection="True" LineStroke="Maroon" SelectionStroke="LightPink" />
 
 
 
@@ -11915,7 +11915,7 @@ chart1.Areas[0].EnableRangeSelection = true;
 
 When the code runs, the following output displays.
 
-{ ![C:/Users/sujithas/Desktop/Assigned wrk/VOl2_2010/Feature/WPF/RangeSalection/sshot-1.png](Chart-Controls_images/Chart-Controls_img153.png) | markdownify }
+{{ '![C:/Users/sujithas/Desktop/Assigned wrk/VOl2_2010/Feature/WPF/RangeSalection/sshot-1.png](Chart-Controls_images/Chart-Controls_img153.png)' | markdownify }}
 {:.image }
 
 
@@ -11983,7 +11983,7 @@ area.SecondaryAxis.LogarithmicBase = Math.E;
 
 The following image illustrates Log chart with various LogarithmicBase values.
 
-{ ![](Chart-Controls_images/Chart-Controls_img154.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img154.png)' | markdownify }}
 {:.image }
 
 
@@ -11999,37 +11999,37 @@ Add Show Minor Grid Lines, by using the following code.
 
 
 
-&lt;syncfusion:Chart Name="Chart1" Grid.Row="1" Margin="10"&gt;
+<syncfusion:Chart Name="Chart1" Grid.Row="1" Margin="10">
 
-      &lt;syncfusion:ChartArea Name="area" &gt;
+      <syncfusion:ChartArea Name="area" >
 
-   &lt;syncfusion:ChartArea.PrimaryAxis&gt;
+   <syncfusion:ChartArea.PrimaryAxis>
 
-                    &lt;!--X axis declaration with required property settings--&gt;
+                    <!--X axis declaration with required property settings-->
 
                     <syncfusion:ChartAxis Header="Year"  IsLogarithmic="True" 
 
 EnableLogLabels="True" >
 
-                    &lt;/syncfusion:ChartAxis&gt;
+                    </syncfusion:ChartAxis>
 
-                &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+                </syncfusion:ChartArea.PrimaryAxis>
 
-              &lt;syncfusion:ChartArea.SecondaryAxis&gt;
+              <syncfusion:ChartArea.SecondaryAxis>
 
-                    &lt;!--Y axis declaration with required property settings--&gt;
+                    <!--Y axis declaration with required property settings-->
 
                     <syncfusion:ChartAxis IsLogarithmic="True" 
 
 EnableLogLabels="True">
 
-                    &lt;/syncfusion:ChartAxis&gt;
+                    </syncfusion:ChartAxis>
 
-                &lt;/syncfusion:ChartArea.SecondaryAxis&gt;							
+                </syncfusion:ChartArea.SecondaryAxis>							
 
-&lt;/syncfusion:ChartArea&gt;
+</syncfusion:ChartArea>
 
-&lt;/ syncfusion:Chart&gt;
+</ syncfusion:Chart>
 
 
 
@@ -12049,7 +12049,7 @@ Chart1.Areas[0].PrimaryAxis.IsLogarithmic = true;
 
 When the code runs, the following output displays.
 
-{ ![](Chart-Controls_images/Chart-Controls_img155.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img155.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12103,11 +12103,11 @@ NA</td></tr>
 
 
 
-  &lt;syncfusion:ChartAxis SmallTicksPerInterval="20" IsLogarithmic="True" &gt;
+  <syncfusion:ChartAxis SmallTicksPerInterval="20" IsLogarithmic="True" >
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img156.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img156.png)' | markdownify }}
 {:.image }
 
 
@@ -12137,23 +12137,23 @@ Gets/sets the header alignment. The options included are as follows.FarCenterNea
 
 
 
-&lt;syncfusion:ChartArea Name="area"&gt;
+<syncfusion:ChartArea Name="area">
 
-          &lt;syncfusion:ChartArea.PrimaryAxis&gt;
+          <syncfusion:ChartArea.PrimaryAxis>
 
-              &lt;syncfusion:ChartAxis Header="X-Axis" HeaderAlignment="Near" /&gt;
+              <syncfusion:ChartAxis Header="X-Axis" HeaderAlignment="Near" />
 
-           &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+           </syncfusion:ChartArea.PrimaryAxis>
 
-           &lt;syncfusion:ChartArea.SecondaryAxis&gt;
+           <syncfusion:ChartArea.SecondaryAxis>
 
-               &lt;syncfusion:ChartAxis Header="Y-Axis" HeaderAlignment="Far" /&gt;                      
+               <syncfusion:ChartAxis Header="Y-Axis" HeaderAlignment="Far" />                      
 
-           &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+           </syncfusion:ChartArea.SecondaryAxis>
 
-           &lt;syncfusion:ChartSeries Name="series" Data=" 1 35 2 45 3 30 4 25 5 40" /&gt;                                       
+           <syncfusion:ChartSeries Name="series" Data=" 1 35 2 45 3 30 4 25 5 40" />                                       
 
-&lt;/syncfusion:ChartArea&gt; 
+</syncfusion:ChartArea> 
 
 
 
@@ -12173,7 +12173,7 @@ area.SecondaryAxis.HeaderAlignment = ChartAlignment.Far;
 
 The following image illustrates Chart with Axis HeaderAlignment set.
 
-{ ![](Chart-Controls_images/Chart-Controls_img157.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img157.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12193,13 +12193,13 @@ The following code examples illustrate the creation of Segmented Strip Line at r
 
 
 
-&lt;syncfusion:ChartAxis.StripLines&gt;
+<syncfusion:ChartAxis.StripLines>
 
-&lt;syncfusion:ChartStripLine IsSegmented="True" Start="1" Width="1" SegmentStartValue="10" Interior="Pink" Repeat="3" SegmentEndValue="60"&gt;
+<syncfusion:ChartStripLine IsSegmented="True" Start="1" Width="1" SegmentStartValue="10" Interior="Pink" Repeat="3" SegmentEndValue="60">
 
-&lt;/syncfusion:ChartStripLine&gt;
+</syncfusion:ChartStripLine>
 
-&lt;/syncfusion:ChartAxis.StripLines&gt;
+</syncfusion:ChartAxis.StripLines>
 
 
 
@@ -12233,7 +12233,7 @@ sp.Text = new FormattedText(item.Production.ToString(), CultureInfo.CurrentCultu
 
 Run the code. The following output is displayed.
 
-{ ![](Chart-Controls_images/Chart-Controls_img158.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img158.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12260,15 +12260,15 @@ There are three possible modes. They are,
 
 
 
-{ ![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/BM_Manual.png](Chart-Controls_images/Chart-Controls_img159.png) | markdownify }
+{{ '![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/BM_Manual.png](Chart-Controls_images/Chart-Controls_img159.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/BM_Auto.png](Chart-Controls_images/Chart-Controls_img160.png) | markdownify }
+{{ '![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/BM_Auto.png](Chart-Controls_images/Chart-Controls_img160.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/BM_None.png](Chart-Controls_images/Chart-Controls_img161.png) | markdownify }
+{{ '![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/BM_None.png](Chart-Controls_images/Chart-Controls_img161.png)' | markdownify }}
 {:.image }
 
 
@@ -12380,17 +12380,17 @@ Set the IsRetainAxisPosition propertyto True to add axesin the order they are ad
 
 
 
-&lt;syncfusion:ChartArea IsRetainAxisPosition="True"&gt;
+<syncfusion:ChartArea IsRetainAxisPosition="True">
 
 When the code runs, the following output displays. 
 
-{ ![](Chart-Controls_images/Chart-Controls_img162.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img162.png)' | markdownify }}
 {:.image }
 
 
 Set IsRetainAxisPosition is False to add axes in reverse order.
 
-{ ![](Chart-Controls_images/Chart-Controls_img163.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img163.png)' | markdownify }}
 {:.image }
 
 
@@ -12499,26 +12499,26 @@ Adding Axis Improvement properties to an Application
 <table>
 <tr>
 <td>
-[XAML]            <syncfusion:ChartAxis HeaderPosition="Cross"                      LabelHeight="40" LabelWidth="120"                                            LabelsPrefix="{StaticResource yPrefix}"                       LabelsPostfix="{StaticResource yPostfix}"                      LabelHorizontalAlignment="Left" LabelVerticalAlignment="Top"                      EdgeLabelsDrawingMode="Fit">            &lt;/syncfusion:ChartAxis&gt;</td></tr>
+[XAML]            <syncfusion:ChartAxis HeaderPosition="Cross"                      LabelHeight="40" LabelWidth="120"                                            LabelsPrefix="{StaticResource yPrefix}"                       LabelsPostfix="{StaticResource yPostfix}"                      LabelHorizontalAlignment="Left" LabelVerticalAlignment="Top"                      EdgeLabelsDrawingMode="Fit">            </syncfusion:ChartAxis></td></tr>
 <tr>
 <td>
 [C#]            this.primaryAxis.HeaderPosition = AxisPositions.Cross;            this.primaryAxis.LabelHeight = 40;            this.primaryAxis.LabelWidth = 120;            this.primaryAxis.LabelHorizontalAlignment = HorizontalAlignment.Left;            this.primaryAxis.LabelVerticalAlignment = VerticalAlignment.Top;            this.primaryAxis.LabelsPrefix = xPrefix;            this.primaryAxis.LabelsPostfix = xPostfix;            this.primaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Fit;</td></tr>
 </table>
 
 
-{ ![C:/Users/johnbowlinboscok/Desktop/REt/Images/AxisHeader.png](Chart-Controls_images/Chart-Controls_img164.png) | markdownify }
+{{ '![C:/Users/johnbowlinboscok/Desktop/REt/Images/AxisHeader.png](Chart-Controls_images/Chart-Controls_img164.png)' | markdownify }}
 {:.image }
 
 
 _Primary Axis Labels with Postfix (GHZ) and Secondary Axis Labels withPrefix ($)_
 
-{ ![](Chart-Controls_images/Chart-Controls_img165.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img165.png)' | markdownify }}
 {:.image }
 
 
 _Secondary Axis EdgeLabelsDrawingMode [Shift]_
 
-{ ![C:/Users/johnbowlinboscok/Desktop/REt/Images/AxisLabelAligns.png](Chart-Controls_images/Chart-Controls_img166.png) | markdownify }
+{{ '![C:/Users/johnbowlinboscok/Desktop/REt/Images/AxisLabelAligns.png](Chart-Controls_images/Chart-Controls_img166.png)' | markdownify }}
 {:.image }
 
 
@@ -12540,13 +12540,13 @@ Axis Type Double: In cases where axis ranges have values that are so large (e.g.
 
 Axis Type DateTime: In cases where LabelDateTimeFormat is set to Default, the labels will appear too large displaying “MM/dd/yyyy hh:mm tt”. Smart labels calculate the data range and reduce the labels. For example, only “MM/dd” would be displayed depending upon the interval between two labels. 
 
-{ ![C:/Users/michaelprabhu/Desktop/datetime.png](Chart-Controls_images/Chart-Controls_img167.png) | markdownify }
+{{ '![C:/Users/michaelprabhu/Desktop/datetime.png](Chart-Controls_images/Chart-Controls_img167.png)' | markdownify }}
 {:.image }
 
 
 Axis Type TimeSpan: In cases where the time span is set with intervals of hours, smart labels can convert and display when there is a change with the hours. For example, 12:00  to 15:00 will be displayed as 12:00:00. … 1 … 2 … … … 12 … 13 … 14 … 15:00:00 
 
-{ ![C:/Users/michaelprabhu/Desktop/datetime.png](Chart-Controls_images/Chart-Controls_img168.png) | markdownify }
+{{ '![C:/Users/michaelprabhu/Desktop/datetime.png](Chart-Controls_images/Chart-Controls_img168.png)' | markdownify }}
 {:.image }
 
 
@@ -12582,7 +12582,7 @@ Enum ChartAlignment</td></tr>
 </table>
 Sample Link
 
-C:\Documents and Settings\&lt;user name&gt;\My documents\Syncfusion\Essential Studio\Samples\WPF\Chart.WPF\Samples\3.5\WindowsSamples\ChartAxis\Smart Axis Label
+C:\Documents and Settings\<user name>\My documents\Syncfusion\Essential Studio\Samples\WPF\Chart.WPF\Samples\3.5\WindowsSamples\ChartAxis\Smart Axis Label
 
 Enabling Smart Axis Labels in Chart Axis
 
@@ -12600,11 +12600,11 @@ The following code example shows how to enable smart axis labels:
 
 [XAML]
 
-&lt;syncfusion:ChartArea.PrimaryAxis&gt;
+<syncfusion:ChartArea.PrimaryAxis>
 
-     &lt;syncfusion:ChartAxis EnableSmartAxisLabel="True"/&gt;
+     <syncfusion:ChartAxis EnableSmartAxisLabel="True"/>
 
-&lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+</syncfusion:ChartArea.PrimaryAxis>
 
 ###### Placing axis labels and series segment in between Ticklines
 
@@ -12612,13 +12612,13 @@ Provide the option to position the segments between axis lines and on the axis l
 
 The following screenshot depicts the segments between TickLine
 
-{ ![](Chart-Controls_images/Chart-Controls_img169.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img169.png)' | markdownify }}
 {:.image }
 
 
 The following screenshot depicts the segments on TickLine
 
-{ ![](Chart-Controls_images/Chart-Controls_img170.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img170.png)' | markdownify }}
 {:.image }
 
 
@@ -12658,21 +12658,21 @@ The following code example illustrates the usage of placing axis label and serie
 
 [XAML]
 
-&lt;sfchart:Chart&gt;
+<sfchart:Chart>
 
-&lt;sfchart:ChartArea Background="LightGray" GridBackground="White"&gt;
+<sfchart:ChartArea Background="LightGray" GridBackground="White">
 
-&lt;sfchart:ChartArea.PrimaryAxis&gt;
+<sfchart:ChartArea.PrimaryAxis>
 
-      &lt;sfchart:ChartAxis IsAutoSetRange="False" Range="0,100" Interval="25" MinimumInterval="25" RangeCalculationMode="AdjustAcrossChartType" RangePadding="Addditional"/&gt;
+      <sfchart:ChartAxis IsAutoSetRange="False" Range="0,100" Interval="25" MinimumInterval="25" RangeCalculationMode="AdjustAcrossChartType" RangePadding="Addditional"/>
 
-    &lt;/sfchart:ChartArea.PrimaryAxis&gt;
+    </sfchart:ChartArea.PrimaryAxis>
 
-     &lt;sfchart:ChartSeries Template="{StaticResource Template1}"        DataSource="{Binding Source={StaticResource myXmlData},XPath=Products/Product}" BindingPathX="Month" BindingPathsY="Sales" Interior="Red"  Type="FastSpline"/&gt;
+     <sfchart:ChartSeries Template="{StaticResource Template1}"        DataSource="{Binding Source={StaticResource myXmlData},XPath=Products/Product}" BindingPathX="Month" BindingPathsY="Sales" Interior="Red"  Type="FastSpline"/>
 
-   &lt;/sfchart:ChartArea&gt;          
+   </sfchart:ChartArea>          
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 ##### Chart Labels
 
@@ -12693,7 +12693,7 @@ Font settings of each and every part of Chart such as Chart, ChartArea, ChartLeg
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img171.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img171.png)' | markdownify }}
 {:.image }
 
 
@@ -12759,11 +12759,11 @@ The following code example could be used to customize the Chart Axis Labels.
 
 
 
-&lt;sfchart:ChartArea.PrimaryAxis&gt;
+<sfchart:ChartArea.PrimaryAxis>
 
-&lt;sfchart:ChartAxis  LabelForeground="Blue" LabelBackground="Orange" LabelBorderBrush="Black" LabelBorderThickness="1" LabelCornerRadius="2" LabelFontFamily="Calibri" LabelFontSize="10" LabelFontWeight="Bold" LabelFormat="0%"/&gt;
+<sfchart:ChartAxis  LabelForeground="Blue" LabelBackground="Orange" LabelBorderBrush="Black" LabelBorderThickness="1" LabelCornerRadius="2" LabelFontFamily="Calibri" LabelFontSize="10" LabelFontWeight="Bold" LabelFormat="0%"/>
 
-&lt;/sfchart:ChartArea.PrimaryAxis&gt;
+</sfchart:ChartArea.PrimaryAxis>
 
 
 
@@ -12793,7 +12793,7 @@ The following code example could be used to customize the Chart Axis Labels.
 
 Following given figure illustrates Chart with customized Primary Axis labels.
 
-{ ![](Chart-Controls_images/Chart-Controls_img172.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img172.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12819,7 +12819,7 @@ Description</td></tr>
 <tr>
 <td>
 LabelsMode</td><td>
-{{ '_Auto_' | markdownify }}: content is determined automatically{{ '_Custom_' | markdownify }}: custom values are used for labels content representation{{ '_DataSource_' | markdownify }}: external datasource is used for labels content{{ '_Default_' | markdownify }}: content for labels is either determined automatically, taken from external dataSource or being set with custom values{{ '_None_' | markdownify }}: labels values are taken from point's X-coordinate</td></tr>
+{{{ ''_Auto_'' | markdownify }}}: content is determined automatically{{{ ''_Custom_'' | markdownify }}}: custom values are used for labels content representation{{{ ''_DataSource_'' | markdownify }}}: external datasource is used for labels content{{{ ''_Default_'' | markdownify }}}: content for labels is either determined automatically, taken from external dataSource or being set with custom values{{{ ''_None_'' | markdownify }}}: labels values are taken from point's X-coordinate</td></tr>
 <tr>
 <td>
 LabelsSource</td><td>
@@ -12839,31 +12839,31 @@ By assigning the LabelsMode property to ChartAxis.CustomLabels, you can add Cust
 
 
 
-&lt;syncfusion:Chart Name="Chart1" &gt;
+<syncfusion:Chart Name="Chart1" >
 
-          &lt;syncfusion:ChartArea Name="area" &gt;
+          <syncfusion:ChartArea Name="area" >
 
-                    &lt;syncfusion:ChartArea.PrimaryAxis&gt;
+                    <syncfusion:ChartArea.PrimaryAxis>
 
-                        &lt;syncfusion:ChartAxis LabelsMode="Custom" RangeCalculationMode="AdjustAcrossChartTypes"&gt;
+                        <syncfusion:ChartAxis LabelsMode="Custom" RangeCalculationMode="AdjustAcrossChartTypes">
 
-                            &lt;syncfusion:ChartAxis.CustomLabels&gt;
+                            <syncfusion:ChartAxis.CustomLabels>
 
-                                &lt;syncfusion:ChartAxisLabel Content="III place" Position="0" /&gt;
+                                <syncfusion:ChartAxisLabel Content="III place" Position="0" />
 
-                                &lt;syncfusion:ChartAxisLabel Content="I place" Position="1" /&gt;
+                                <syncfusion:ChartAxisLabel Content="I place" Position="1" />
 
-                                &lt;syncfusion:ChartAxisLabel Content="II place" Position="4" /&gt;
+                                <syncfusion:ChartAxisLabel Content="II place" Position="4" />
 
-                            &lt;/syncfusion:ChartAxis.CustomLabels&gt;
+                            </syncfusion:ChartAxis.CustomLabels>
 
-                        &lt;/syncfusion:ChartAxis&gt;
+                        </syncfusion:ChartAxis>
 
-                    &lt;/syncfusion:ChartArea.PrimaryAxis&gt;                  
+                    </syncfusion:ChartArea.PrimaryAxis>                  
 
-          &lt;/syncfusion:ChartArea&gt;
+          </syncfusion:ChartArea>
 
-&lt;/syncfusion:Chart&gt;         
+</syncfusion:Chart>         
 
 
 
@@ -12911,7 +12911,7 @@ area.PrimaryAxis.CustomLabels.Add(customLabel3);
 
 The following screenshot illustrates Chart PrimaryAxis with Custom Labels.
 
-{ ![](Chart-Controls_images/Chart-Controls_img173.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img173.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12957,7 +12957,7 @@ area.PrimaryAxis.ContentPath = "Content";
 
 The following screenshot illustrates Chart PrimaryAxis with Labels from Data Source.
 
-{ ![](Chart-Controls_images/Chart-Controls_img174.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img174.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -12971,11 +12971,11 @@ The following code example could be used to customize the labels to be rotated w
 
 
 
-&lt;sfchart:ChartArea.PrimaryAxis&gt;
+<sfchart:ChartArea.PrimaryAxis>
 
-&lt;sfchart:ChartAxis LabelRotateAngle="90" LabelFormat="0.000000" /&gt;
+<sfchart:ChartAxis LabelRotateAngle="90" LabelFormat="0.000000" />
 
-&lt;/sfchart:ChartArea.PrimaryAxis&gt;
+</sfchart:ChartArea.PrimaryAxis>
 
 
 
@@ -12989,7 +12989,7 @@ The following code example could be used to customize the labels to be rotated w
 
 The following figure illustrates Chart with Primary Axis labels rotated with 90' angle
 
-{ ![](Chart-Controls_images/Chart-Controls_img175.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img175.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13013,15 +13013,15 @@ Description</td></tr>
 <tr>
 <td>
 IntersectAction</td><td>
-{{ '_Hide_' | markdownify }} – labels are hidden to avoid intersection{{ '_MultipleRows_' | markdownify }} – labels are wrapped into multiple rows to avoid intersection{{ '_None_' | markdownify }} – no special actionLabels may intersect{{ '_Rotate_' | markdownify }} – labels are rotated to avoid intersection{{ '_Wrap_' | markdownify }} – labels are wrapped to avoid intersection</td></tr>
+{{{ ''_Hide_'' | markdownify }}} – labels are hidden to avoid intersection{{{ ''_MultipleRows_'' | markdownify }}} – labels are wrapped into multiple rows to avoid intersection{{{ ''_None_'' | markdownify }}} – no special actionLabels may intersect{{{ ''_Rotate_'' | markdownify }}} – labels are rotated to avoid intersection{{{ ''_Wrap_'' | markdownify }}} – labels are wrapped to avoid intersection</td></tr>
 <tr>
 <td>
 HidePartialLabel</td><td>
-{{ '_True_' | markdownify }} – hides the labels that appear partiallyUsually the labels in the edges will be affected.{{ '_False_' | markdownify }} - labels are drawn as suchNo action will be taken.</td></tr>
+{{{ ''_True_'' | markdownify }}} – hides the labels that appear partiallyUsually the labels in the edges will be affected.{{{ ''_False_'' | markdownify }}} - labels are drawn as suchNo action will be taken.</td></tr>
 <tr>
 <td>
 EdgeLabelsDrawingMode</td><td>
-{{ '_Center_' | markdownify }} – draws the edge labels at the center of the GridLines{{ '_Shift_' | markdownify }} – value indicating that edge label should be shifted to either left or right so that it comes within the Chart Area</td></tr>
+{{{ ''_Center_'' | markdownify }}} – draws the edge labels at the center of the GridLines{{{ ''_Shift_'' | markdownify }}} – value indicating that edge label should be shifted to either left or right so that it comes within the Chart Area</td></tr>
 </table>
 
 
@@ -13041,23 +13041,23 @@ Chart1.Areas[0].PrimaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Shift;
 
 
 
-&lt;syncfusion:ChartArea.PrimaryAxis&gt;
+<syncfusion:ChartArea.PrimaryAxis>
 
-&lt;syncfusion:ChartAxis Header="Product Name"  IntersectAction="MultipleRows" HidePartialLabel="True" EdgeLabelsDrawingMode="Shift"  /&gt;
+<syncfusion:ChartAxis Header="Product Name"  IntersectAction="MultipleRows" HidePartialLabel="True" EdgeLabelsDrawingMode="Shift"  />
 
-&lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+</syncfusion:ChartArea.PrimaryAxis>
 
 The following screenshot illustrates various techniques for avoiding the Label intersection.
 
-{ ![](Chart-Controls_images/Chart-Controls_img176.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img176.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img177.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img177.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img178.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img178.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13087,7 +13087,7 @@ LegendItemsPanel</td><td>
 Sets a template panel for arranging legend items.  </td><td>
 Dependency Property</td><td>
 ItemsPanelTemplate </td><td>
-{ [ItemsPanelTemplate Class](http://msdn.microsoft.com/en-us/library/system.windows.controls.itemspaneltemplate.aspx) | markdownify }</td></tr>
+{{ '[ItemsPanelTemplate Class](http://msdn.microsoft.com/en-us/library/system.windows.controls.itemspaneltemplate.aspx)' | markdownify }}</td></tr>
 </table>
 Customizing legend Panel
 
@@ -13097,11 +13097,11 @@ You can customize the legend panel using the _LegendItemsPanel_ property of Char
 
 
 
-&lt;syncfusion:ChartLegend IconVisibility="Visible" BorderThickness="0" LegendPanel="Custom"&gt;                                    &lt;syncfusion:ChartLegend.LegendItemsPanel&gt;                                        &lt;ItemsPanelTemplate&gt;                                            &lt;StackPanel Orientation="Vertical"/&gt;                                        &lt;/ItemsPanelTemplate&gt;                                    &lt;/syncfusion:ChartLegend.LegendItemsPanel&gt;                                &lt;/syncfusion:ChartLegend&gt;
+<syncfusion:ChartLegend IconVisibility="Visible" BorderThickness="0" LegendPanel="Custom">                                    <syncfusion:ChartLegend.LegendItemsPanel>                                        <ItemsPanelTemplate>                                            <StackPanel Orientation="Vertical"/>                                        </ItemsPanelTemplate>                                    </syncfusion:ChartLegend.LegendItemsPanel>                                </syncfusion:ChartLegend>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img179.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img179.png)' | markdownify }}
 {:.image }
 
 
@@ -13146,27 +13146,27 @@ The styles for a chart area, series, legend, and axis can be customized by using
 
 [XAML]
 
-&lt;sync:Chart x:Name="Chart1" ChartVisualStyle="ChocolateBlend"&gt;
+<sync:Chart x:Name="Chart1" ChartVisualStyle="ChocolateBlend">
 
 //Insert the ChartLegend
 
-&lt;sync:Chart.Legends&gt;
+<sync:Chart.Legends>
 
-                &lt;sync:ChartLegend/&gt;
+                <sync:ChartLegend/>
 
-            &lt;/sync:Chart.Legends&gt;
+            </sync:Chart.Legends>
 
 //Insert the ChartArea
 
-            &lt;sync:ChartArea IsContextMenuEnabled="True"&gt;
+            <sync:ChartArea IsContextMenuEnabled="True">
 
 //Inserts the ChartSeries
 
-                &lt;sync:ChartSeries Data="1,5" Label="Series1"/&gt;
+                <sync:ChartSeries Data="1,5" Label="Series1"/>
 
-            &lt;/sync:ChartArea&gt;
+            </sync:ChartArea>
 
- &lt;/sync:Chart&gt;
+ </sync:Chart>
 
 
 
@@ -13176,7 +13176,7 @@ Chart1.ChartVisualStyle = ChartStyles.ChocolateBlend;
 
 When the code runs, the following output displays. 
 
-{ ![sshot-1](Chart-Controls_images/Chart-Controls_img180.png) | markdownify }
+{{ '![sshot-1](Chart-Controls_images/Chart-Controls_img180.png)' | markdownify }}
 {:.image }
 
 
@@ -13188,9 +13188,9 @@ Essential Chart for WPF provides a number of built-in skins that delivers the ch
 
 
 
-&lt;syncfusion:Chart Grid.Column="0"  syncfusion:SkinStorage.VisualStyle="Office2007Blue" &gt;
+<syncfusion:Chart Grid.Column="0"  syncfusion:SkinStorage.VisualStyle="Office2007Blue" >
 
-&lt;/syncfusion:Chart&gt;
+</syncfusion:Chart>
 
 Required namespace
 
@@ -13231,39 +13231,39 @@ Various Built-In skins supported are:
 
 The following images illustrate the various skins applied to the Chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img181.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img181.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img182.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img182.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img183.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img183.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img184.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img184.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img185.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img185.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img186.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img186.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img187.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img187.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img188.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img188.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img189.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img189.png)' | markdownify }}
 {:.image }
 
 
@@ -13374,7 +13374,7 @@ The chart animation can be enabled by setting EnableAnimation property to _true_
 
 Path=IsChecked}" Interior="Blue" StrokeThickness="2" DataSource="{StaticResource data}" BindingPathX="Name" BindingPathsY="Mark, MinMark,MaxMark, Low, High" AnimateOneByOne="{Binding ElementName=animateind, Path=IsChecked}">
 
-&lt;/syncfusion:ChartSeries&gt;
+</syncfusion:ChartSeries>
 
 
 
@@ -13390,7 +13390,7 @@ chart.Areas[0].Series[0].AnimateOption = AnimationOptions.Rotate;
 
 Run the code. The following output is displayed.
 
-{ ![](Chart-Controls_images/Chart-Controls_img190.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img190.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13448,9 +13448,9 @@ The chart series effects can be applied to the chart by using the following code
 
 
 
-&lt;syncfusion:ChartSeries Type="Column" EnableEffects="True" Label="Mark" DataSource="{StaticResource data}" BindingPathX="Name" BindingPathsY="Mark, MinMark,MaxMark, Low, High"&gt;
+<syncfusion:ChartSeries Type="Column" EnableEffects="True" Label="Mark" DataSource="{StaticResource data}" BindingPathX="Name" BindingPathsY="Mark, MinMark,MaxMark, Low, High">
 
-&lt;/syncfusion:ChartSeries&gt;
+</syncfusion:ChartSeries>
 
 2. Using C#
 
@@ -13462,7 +13462,7 @@ chart.Areas[0].Series[0].EnableEffects = True;
 
 Run the code. The following output is displayed.
 
-{ ![](Chart-Controls_images/Chart-Controls_img191.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img191.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13474,19 +13474,19 @@ Smart Tag appears for the Chart, Chart Area and Chart Legend. By using the Smart
 
 The following screenshot illustrates Smart Tag support in Chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img192.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img192.jpeg)' | markdownify }}
 {:.image }
 
 
 The following screenshot illustrates Smart Tag support in Chart Area.
 
-{ ![](Chart-Controls_images/Chart-Controls_img193.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img193.jpeg)' | markdownify }}
 {:.image }
 
 
 The following screenshot illustrates Smart Tag support in Chart Legend.
 
-{ ![](Chart-Controls_images/Chart-Controls_img194.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img194.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13576,11 +13576,11 @@ The legend icon can be customized by using the following code exaples.
 
 
 
-&lt;syncfusion:ChartLegend Name="chrtlgnd" BorderThickness="0.5" &gt;&lt;/syncfusion:ChartLegend&gt;
+<syncfusion:ChartLegend Name="chrtlgnd" BorderThickness="0.5" ></syncfusion:ChartLegend>
 
 <syncfusion:ChartSeries Name="SeriesA" LegendIcon="Circle" Type="Bar" BindingPathX="FruitName"
 
-BindingPathsY="Price,NumberOfFruits,FruitID,Year" Label="Series A" Stroke="#FF000000" StrokeThickness="0.5" >&lt;/syncfusion:ChartSeries&gt;
+BindingPathsY="Price,NumberOfFruits,FruitID,Year" Label="Series A" Stroke="#FF000000" StrokeThickness="0.5" ></syncfusion:ChartSeries>
 
 2. Using C#
 
@@ -13592,7 +13592,7 @@ Chart1.Areas[0].Series[0].LegendIcon = ChartLegendIcon.Circle;
 
 Run the code. The following output is displayed.
 
-{ ![](Chart-Controls_images/Chart-Controls_img195.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img195.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13606,7 +13606,7 @@ Zooming Using Mouse
 
 You can switch to the zooming mode in the Chart by using the built-in context menu. Users can choose to zoom a specific series, if they do so, the rest of the series will be rendered semi-transparently, based on the InactiveSeriesOpacityOnZoom property (discussed later in this section).
 
-{ ![](Chart-Controls_images/Chart-Controls_img196.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img196.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13614,7 +13614,7 @@ Zoom Using Zooming Toolkit
 
 In the Zooming mode, a Zooming toolkit is displayed at the top-left corner of the ChartArea. Using the buttons in the Zooming toolkit, ChartSeries can be zoomed in, out, reset or closed (to exit zoom mode).
 
-{ ![](Chart-Controls_images/Chart-Controls_img197.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img197.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13660,9 +13660,9 @@ gets or sets zooming toolkit visibility</td></tr>
 
 sch:ChartZoomingToolkit.ZoomOutButtonVisibility="Hidden" sch:ChartZoomingToolkit.ZoomResetButtonVisibility="Collapsed" sch:ChartZoomingToolkit.ZoomingToolkitVisibility="Visible">
 
-&lt;!—-your code here--!&gt;
+<!—-your code here--!>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
 
 
@@ -13682,7 +13682,7 @@ Zooming by Manual Drag
 
 You can also manually drag-select an area to perform the zoom operation.
 
-{ ![](Chart-Controls_images/Chart-Controls_img198.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img198.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13798,7 +13798,7 @@ this.Chart1.Areas[0].PrimaryAxis.ZoomPosition = 5;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img199.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img199.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13810,11 +13810,11 @@ Zooming using mouse can be disabled for a particular axis by using the EnableZoo
 
 
 
-&lt;syncfusion:ChartArea.PrimaryAxis&gt;
+<syncfusion:ChartArea.PrimaryAxis>
 
-&lt;syncfusion:ChartAxis EnableZooming="False"/&gt;
+<syncfusion:ChartAxis EnableZooming="False"/>
 
-&lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+</syncfusion:ChartArea.PrimaryAxis>
 
 
 
@@ -13840,35 +13840,35 @@ The following code illustrates how zooming can be disabled for all the axis in C
 
 
 
-&lt;syncfusion:Chart&gt;
+<syncfusion:Chart>
 
-    &lt;syncfusion:ChartArea IsContextMenuEnabled="True" ZoomAllAxes="False"&gt;
+    <syncfusion:ChartArea IsContextMenuEnabled="True" ZoomAllAxes="False">
 
-        &lt;syncfusion:ChartSeries Label="Series1" Data="1 1 2 2 3 3 4 4 5 5 6 6" Interior="Red" /&gt;
+        <syncfusion:ChartSeries Label="Series1" Data="1 1 2 2 3 3 4 4 5 5 6 6" Interior="Red" />
 
-        &lt;syncfusion:ChartSeries Label="Series2" Data="1 60 2 50 3 40 4 30 5 20 6 10" IsZoomable="True" Interior="Blue"&gt;
+        <syncfusion:ChartSeries Label="Series2" Data="1 60 2 50 3 40 4 30 5 20 6 10" IsZoomable="True" Interior="Blue">
 
-            &lt;syncfusion:ChartSeries.YAxis&gt;
+            <syncfusion:ChartSeries.YAxis>
 
-                &lt;syncfusion:ChartAxis Orientation="Vertical"/&gt;
+                <syncfusion:ChartAxis Orientation="Vertical"/>
 
-            &lt;/syncfusion:ChartSeries.YAxis&gt;
+            </syncfusion:ChartSeries.YAxis>
 
-        &lt;/syncfusion:ChartSeries&gt;
+        </syncfusion:ChartSeries>
 
-        &lt;syncfusion:ChartSeries Label="Series3" Data="1 10 2 20 3 30 4 40 5 30 6 20" Interior="Green"&gt;
+        <syncfusion:ChartSeries Label="Series3" Data="1 10 2 20 3 30 4 40 5 30 6 20" Interior="Green">
 
-            &lt;syncfusion:ChartSeries.YAxis&gt;
+            <syncfusion:ChartSeries.YAxis>
 
-                &lt;syncfusion:ChartAxis Orientation="Vertical"/&gt;
+                <syncfusion:ChartAxis Orientation="Vertical"/>
 
-            &lt;/syncfusion:ChartSeries.YAxis&gt;
+            </syncfusion:ChartSeries.YAxis>
 
-        &lt;/syncfusion:ChartSeries&gt;
+        </syncfusion:ChartSeries>
 
-    &lt;/syncfusion:ChartArea&gt;
+    </syncfusion:ChartArea>
 
-&lt;/syncfusion:Chart&gt;
+</syncfusion:Chart>
 
 
 
@@ -13888,7 +13888,7 @@ Chart1.Areas[0].Series[1].IsZoomable = true;
 
 The following screenshot illustrates this.
 
-{ ![](Chart-Controls_images/Chart-Controls_img200.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img200.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13904,11 +13904,11 @@ The following lines of code can be used to change the opacity of an inactive ser
 
 
 
-&lt;syncfusion:ChartSeries Name="Series1" Label="Series1" Interior="Red" InactiveSeriesOpacityOnZoom="0.65" Data="1 1 2 2 3 3 4 4 5 5 6 6"/&gt;
+<syncfusion:ChartSeries Name="Series1" Label="Series1" Interior="Red" InactiveSeriesOpacityOnZoom="0.65" Data="1 1 2 2 3 3 4 4 5 5 6 6"/>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img201.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img201.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -13920,21 +13920,21 @@ On zooming the chart, the ChartAxis Labels appear with fractional values. This c
 
 
 
-&lt;syncfusion:Chart Name="Chart1" Height="300" Width="400"&gt;
+<syncfusion:Chart Name="Chart1" Height="300" Width="400">
 
-    &lt;syncfusion:ChartArea IsContextMenuEnabled="True" &gt;
+    <syncfusion:ChartArea IsContextMenuEnabled="True" >
 
-        &lt;syncfusion:ChartArea.SecondaryAxis&gt;
+        <syncfusion:ChartArea.SecondaryAxis>
 
-            &lt;syncfusion:ChartAxis IsFractionEnabledOnZoom="False" /&gt;
+            <syncfusion:ChartAxis IsFractionEnabledOnZoom="False" />
 
-        &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+        </syncfusion:ChartArea.SecondaryAxis>
 
-        &lt;syncfusion:ChartSeries Name="Series1" Label="Series1" Interior="Red" Data="1 1 2 2 3 3" /&gt;
+        <syncfusion:ChartSeries Name="Series1" Label="Series1" Interior="Red" Data="1 1 2 2 3 3" />
 
-    &lt;/syncfusion:ChartArea&gt;
+    </syncfusion:ChartArea>
 
-&lt;/syncfusion:Chart&gt;
+</syncfusion:Chart>
 
 
 
@@ -13950,7 +13950,7 @@ Chart1.Areas[0].SecondaryAxis.IsFractionEnabledOnZoom = false;
 
 __For more details, refer to the sample in the following location:
 
-_...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\User Interaction\Zoom And Scrolling Demo_
+_...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\User Interaction\Zoom And Scrolling Demo_
 
 Zooming and Panning support for Chart WPF
 
@@ -13964,11 +13964,11 @@ Add Zooming and Panning to the chart, by using the following code.
 
 
 
- &lt;syncfusion:Chart Name="Chart1" Grid.Row="1" Margin="10"&gt;
+ <syncfusion:Chart Name="Chart1" Grid.Row="1" Margin="10">
 
-         &lt;syncfusion:ChartArea Name="area" IsContextMenuEnabled="True"/&gt;
+         <syncfusion:ChartArea Name="area" IsContextMenuEnabled="True"/>
 
-&lt; syncfusion:Chart/&gt;
+< syncfusion:Chart/>
 
 
 
@@ -13982,7 +13982,7 @@ ChartArea area = this.Chart1.Areas[0];
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img202.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img202.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14002,27 +14002,27 @@ ToolTip can be shown on various sections of a chart control such as chart, chart
 
 
 
-&lt;!-- Sets Tooltips for a chart--&gt;
+<!-- Sets Tooltips for a chart-->
 
-&lt;sf:Chart ToolTip="Chart ToolTip"&gt;
+<sf:Chart ToolTip="Chart ToolTip">
 
-      &lt;syncfusion:ChartArea Margin="10" ToolTip="ChartArea ToolTip"&gt;
+      <syncfusion:ChartArea Margin="10" ToolTip="ChartArea ToolTip">
 
-        &lt;syncfusion:ChartArea.Legend&gt;
+        <syncfusion:ChartArea.Legend>
 
-          &lt;syncfusion:ChartLegend ToolTip="ChartLegend ToolTip" /&gt;
+          <syncfusion:ChartLegend ToolTip="ChartLegend ToolTip" />
 
-        &lt;/syncfusion:ChartArea.Legend&gt;
+        </syncfusion:ChartArea.Legend>
 
-                &lt;syncfusion:ChartSeries Label="Series 1" Data="1 10 2 45 3 13 4 25 5 39" ToolTip="ChartSeries ToolTip" IsIndexed="False"/&gt;                
+                <syncfusion:ChartSeries Label="Series 1" Data="1 10 2 45 3 13 4 25 5 39" ToolTip="ChartSeries ToolTip" IsIndexed="False"/>                
 
-      &lt;/syncfusion:ChartArea&gt;
+      </syncfusion:ChartArea>
 
-    &lt;/syncfusion:Chart&gt;
+    </syncfusion:Chart>
 
 The following image illustrates the tooltip feature in various sections of the chart.
 
-{ ![](Chart-Controls_images/Chart-Controls_img203.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img203.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14054,7 +14054,7 @@ To enable ToolTips for a chart, set the ShowTooltip property to True. The follow
 
 [XAML]
 
-&lt;syncfusion:ChartSeries ShowToolTip="True"&gt;
+<syncfusion:ChartSeries ShowToolTip="True">
 
 
 
@@ -14064,7 +14064,7 @@ Series.ShowToolTip = true;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img204.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img204.png)' | markdownify }}
 {:.image }
 
 
@@ -14076,73 +14076,73 @@ You can set custom tooltips for the chart series. Associate a custom tooltip tex
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
- &lt;!--Defining custom Tooltip in Resources--&gt;
+ <!--Defining custom Tooltip in Resources-->
 
-        &lt;ToolTip x:Key="CustomToolTip"&gt;
+        <ToolTip x:Key="CustomToolTip">
 
-            &lt;ToolTip.Template&gt;
+            <ToolTip.Template>
 
-                &lt;ControlTemplate&gt;
+                <ControlTemplate>
 
                     <Border CornerRadius="5" Background="Bisque" TextBlock.Foreground="Blue"  Padding="3"
 
                     BorderBrush="Black" BorderThickness="2">
 
-                        &lt;Grid&gt;
+                        <Grid>
 
-                            &lt;Grid.RowDefinitions&gt;
+                            <Grid.RowDefinitions>
 
-                                &lt;RowDefinition/&gt;
+                                <RowDefinition/>
 
-                                &lt;RowDefinition/&gt;
+                                <RowDefinition/>
 
-                            &lt;/Grid.RowDefinitions&gt;
+                            </Grid.RowDefinitions>
 
-                            &lt;Grid.ColumnDefinitions&gt;
+                            <Grid.ColumnDefinitions>
 
-                                &lt;ColumnDefinition/&gt;
+                                <ColumnDefinition/>
 
-                                &lt;ColumnDefinition/&gt;
+                                <ColumnDefinition/>
 
-                            &lt;/Grid.ColumnDefinitions&gt;
+                            </Grid.ColumnDefinitions>
 
-                            &lt;TextBlock Text="X value: "/&gt;
+                            <TextBlock Text="X value: "/>
 
-                &lt;TextBlock Text="{Binding CorrespondingPoints[0].DataPoint.X}" Grid.Column="1"/&gt;
+                <TextBlock Text="{Binding CorrespondingPoints[0].DataPoint.X}" Grid.Column="1"/>
 
-                &lt;TextBlock Text="Y value: " Grid.Row="1"/&gt;
+                <TextBlock Text="Y value: " Grid.Row="1"/>
 
-                &lt;TextBlock Text="{Binding CorrespondingPoints[0].DataPoint.Y}" Grid.Column="1" Grid.Row="1"/&gt;
+                <TextBlock Text="{Binding CorrespondingPoints[0].DataPoint.Y}" Grid.Column="1" Grid.Row="1"/>
 
-              &lt;/Grid&gt;
+              </Grid>
 
-                    &lt;/Border&gt;
+                    </Border>
 
-                &lt;/ControlTemplate&gt;
+                </ControlTemplate>
 
-            &lt;/ToolTip.Template&gt;
+            </ToolTip.Template>
 
-        &lt;/ToolTip&gt;
+        </ToolTip>
 
 
 
   <!--Note: To have custom text alone a simple tooltip as below could be used
 
-        &lt;ToolTip x:Key="SimpleToolTip" Content="{Binding CorrespondingPoints[0].DataPoint.X}"/&gt;-->
+        <ToolTip x:Key="SimpleToolTip" Content="{Binding CorrespondingPoints[0].DataPoint.X}"/>-->
 
 
 
- &lt;/Window.Resources&gt;
+ </Window.Resources>
 
-&lt;!--Associate Custom ToolTip with ChartSeries--&gt;
+<!--Associate Custom ToolTip with ChartSeries-->
 
- &lt;syncfusion:ChartSeries Label="Series 1" Data="1 10 2 45 3 13 4 25 5 39" ToolTip="{StaticResource CustomToolTip}" IsIndexed="False"/&gt;
+ <syncfusion:ChartSeries Label="Series 1" Data="1 10 2 45 3 13 4 25 5 39" ToolTip="{StaticResource CustomToolTip}" IsIndexed="False"/>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img205.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img205.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14167,19 +14167,19 @@ The code as follows illustrates how a ToolBar could be added to the Chart contro
 
 
 
-&lt;syncfusion:Chart.ToolBar &gt;
+<syncfusion:Chart.ToolBar >
 
         <syncfusion:ChartToolBar Name="chartToolbar"  SelectedItemChanged="ChartToolBar_SelectedItemChanged" 
 
                                          CloseButtonVisibility="Visible"  TitleBarVisibility="Visible"       >
 
-        &lt;/syncfusion:ChartToolBar&gt;
+        </syncfusion:ChartToolBar>
 
-&lt;/syncfusion:Chart.ToolBar&gt;
+</syncfusion:Chart.ToolBar>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img206.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img206.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14193,19 +14193,19 @@ The following code illustrates how to exclude the toolbar while printing and sav
 
 
 
-&lt;syncfusion:Chart ShowToolBarOnPrintAndSave="False"&gt;
+<syncfusion:Chart ShowToolBarOnPrintAndSave="False">
 
-&lt;syncfusion:Chart.ToolBar&gt;
+<syncfusion:Chart.ToolBar>
 
-&lt;syncfusion:ChartToolBar/&gt;
+<syncfusion:ChartToolBar/>
 
-&lt;/syncfusion:Chart.ToolBar&gt;
+</syncfusion:Chart.ToolBar>
 
-&lt;syncfusion:ChartArea&gt;
+<syncfusion:ChartArea>
 
-&lt;/syncfusion:ChartArea&gt;
+</syncfusion:ChartArea>
 
-&lt;/syncfusion:Chart&gt;
+</syncfusion:Chart>
 
 
 
@@ -14221,19 +14221,19 @@ The following code illustrates how to include the toolbar while printing and sav
 
 
 
-&lt;syncfusion:Chart ShowToolBarOnPrintAndSave="True"&gt;
+<syncfusion:Chart ShowToolBarOnPrintAndSave="True">
 
-&lt;syncfusion:Chart.ToolBar&gt;
+<syncfusion:Chart.ToolBar>
 
-&lt;syncfusion:ChartToolBar/&gt;
+<syncfusion:ChartToolBar/>
 
-&lt;/syncfusion:Chart.ToolBar&gt;
+</syncfusion:Chart.ToolBar>
 
-&lt;syncfusion:ChartArea&gt;
+<syncfusion:ChartArea>
 
-&lt;/syncfusion:ChartArea&gt;
+</syncfusion:ChartArea>
 
-&lt;/syncfusion:Chart&gt;
+</syncfusion:Chart>
 
 
 
@@ -14266,7 +14266,7 @@ Using ToolBar
 
 By clicking the Properties Tool Item in the Toolbar, the property settings dialog can be invoked.
 
-{ ![](Chart-Controls_images/Chart-Controls_img207.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img207.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14357,7 +14357,7 @@ contains the properties specific to Secondary axis of the Chart, which is simila
 </table>
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img208.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img208.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14405,7 +14405,7 @@ End Sub
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img209.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img209.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14421,7 +14421,7 @@ Hiding the Tab
 
 You can hide the tab that is not required using the Chart.HideTabItem(tabIndex) method. 
 
-{ ![](Chart-Controls_images/Chart-Controls_img210.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img210.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14493,7 +14493,7 @@ Chart1.ApplyCustomTabPages += new RoutedEventHandler(Chart1_ItemApplied);
 
 __For more details, refer to the sample in the following location:
 
-_...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\User Interaction\Property Dialog Demo_
+_...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\User Interaction\Property Dialog Demo_
 
 ###### Zoomed Area Selection
 
@@ -14582,7 +14582,7 @@ Converter={StaticResource rangeConverter}}"/>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img211.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img211.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -14604,21 +14604,21 @@ The following code illustrates this.
 
 
 
-&lt;syncfusion:ChartArea IsContextMenuEnabled="True" ContextMenuType="DefaultWithCustom"&gt;                &lt;syncfusion:ChartArea.CustomContextMenuItems&gt;
+<syncfusion:ChartArea IsContextMenuEnabled="True" ContextMenuType="DefaultWithCustom">                <syncfusion:ChartArea.CustomContextMenuItems>
 
-                    &lt;MenuItem Header="MyMenuItem"/&gt;
+                    <MenuItem Header="MyMenuItem"/>
 
-                &lt;/syncfusion:ChartArea.CustomContextMenuItems&gt;
+                </syncfusion:ChartArea.CustomContextMenuItems>
 
-    &lt;/syncfusion:ChartArea&gt;
-
-
+    </syncfusion:ChartArea>
 
 
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img212.png) | markdownify }
+
+
+{{ '![](Chart-Controls_images/Chart-Controls_img212.png)' | markdownify }}
 {:.image }
 
 
@@ -14628,19 +14628,19 @@ By setting ContextMenuType to Custom, menu items are added as a new list.
 
 [XAML]  
 
-&lt;syncfusion:ChartArea IsContextMenuEnabled="True" ContextMenuType="Custom"&gt;
+<syncfusion:ChartArea IsContextMenuEnabled="True" ContextMenuType="Custom">
 
-                &lt;syncfusion:ChartArea.CustomContextMenuItems&gt;
+                <syncfusion:ChartArea.CustomContextMenuItems>
 
-                  &lt;MenuItemHeader="MyMenuItem"Command="ApplicationCommands.Save"/&gt;
+                  <MenuItemHeader="MyMenuItem"Command="ApplicationCommands.Save"/>
 
-                &lt;/syncfusion:ChartArea.CustomContextMenuItems&gt;
-
-
+                </syncfusion:ChartArea.CustomContextMenuItems>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img213.png) | markdownify }
+
+
+{{ '![](Chart-Controls_images/Chart-Controls_img213.png)' | markdownify }}
 {:.image }
 
 
@@ -14661,7 +14661,7 @@ CustomContextMenuItems</td><td>
 Used to customize the context menu.</td><td>
 Normal</td><td>
 ObservableCollection<MenuItem></td><td>
-&lt;syncfusion:ChartArea.CustomContextMenuItems&gt;                    &lt;MenuItem Header="MyMenuItem"/&gt;                &lt;/syncfusion:ChartArea.CustomContextMenuItems&gt;</td><td>
+<syncfusion:ChartArea.CustomContextMenuItems>                    <MenuItem Header="MyMenuItem"/>                </syncfusion:ChartArea.CustomContextMenuItems></td><td>
 Property Name : ContextMenuType Type:DependacyProperty /ContextMenuTypes /Ex: ContextMenuTypes.Custom </td></tr>
 </table>
 _Events_
@@ -14694,7 +14694,7 @@ Use Case Scenarios
 
 
 
-{ ![C:/Users/sujithas/Desktop/UG/sshot-3.png](Chart-Controls_images/Chart-Controls_img214.png) | markdownify }
+{{ '![C:/Users/sujithas/Desktop/UG/sshot-3.png](Chart-Controls_images/Chart-Controls_img214.png)' | markdownify }}
 {:.image }
 
 
@@ -14819,15 +14819,15 @@ Chart1.Areas[0].AllowSegmentDragDrop = true;
 
 [XAML]
 
-        &lt;sync:Chart x:Name="Chart1"&gt;
+        <sync:Chart x:Name="Chart1">
 
-            &lt;sync:ChartArea AllowSegmentDragDrop="True"&gt;                
+            <sync:ChartArea AllowSegmentDragDrop="True">                
 
-                &lt;sync:ChartSeries x:Name="series1" Type="Bubble"/&gt;                              
+                <sync:ChartSeries x:Name="series1" Type="Bubble"/>                              
 
-            &lt;/sync:ChartArea&gt;
+            </sync:ChartArea>
 
-        &lt;/sync:Chart&gt;                              
+        </sync:Chart>                              
 
 ###### ChartAreaBounds
 
@@ -14839,7 +14839,7 @@ Use Case Scenario
 
 ChartAreaBounds is used in obtaining the list of points bound to a user-given rectangle .i.e. viewing the survey details in the area selected by the user.
 
-{ ![C:/Users/sujithas/Desktop/BoundsToRectangle.png](Chart-Controls_images/Chart-Controls_img215.png) | markdownify }
+{{ '![C:/Users/sujithas/Desktop/BoundsToRectangle.png](Chart-Controls_images/Chart-Controls_img215.png)' | markdownify }}
 {:.image }
 
 
@@ -14871,7 +14871,7 @@ chartpoints.ItemsSource = chart.Areas[0].BoundsToPoints(rect, chart.Areas[0].Ser
 
 
 
-{ ![C:/Users/sujithas/Desktop/BoundsToRectangle.png](Chart-Controls_images/Chart-Controls_img216.png) | markdownify }
+{{ '![C:/Users/sujithas/Desktop/BoundsToRectangle.png](Chart-Controls_images/Chart-Controls_img216.png)' | markdownify }}
 {:.image }
 
 
@@ -14903,7 +14903,7 @@ Sample Link
 
 To run the sample:
 
-1. Open Essential Studio Dashboard by selecting Start -> Program -> Syncfusion-> Essential Studio &lt;&lt;Version Number&gt;> -> Dashboard.
+1. Open Essential Studio Dashboard by selecting Start -> Program -> Syncfusion-> Essential Studio <<Version Number>> -> Dashboard.
 2. To run the UI Chart WPF samples, select Run locally installed samples from the WPF drop-down list in the User Interface pane.
 3. Select Chart in the sample browser.
 4. Select User Interaction from the Essential Chart menu and choose Bounds To Rectangle Demo. 
@@ -14912,7 +14912,7 @@ To run the sample:
 To open the sample project:
 
 1. Go to the following location in your system:  
-2. “&lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number \WPF\Chart.WPF\Samples\3.5\WindowsSamples\User Interaction\Bounds To Rectangle Demo”.
+2. “<sample installation location>\Syncfusion\EssentialStudio\Version Number \WPF\Chart.WPF\Samples\3.5\WindowsSamples\User Interaction\Bounds To Rectangle Demo”.
 3. This location contains two sub folders CS and VB.  You can open the sample projects from the respective folders based on your application developing language.
 ###### Serialization 
 
@@ -14965,7 +14965,7 @@ Serializes the Chart control into XAML string.</th><th>
 Public void Serialize()</th><th>
 N/A</th><th>
 string </th><th>
-{ [Serialize](http://sharepoint.syncfusion.com/workspace/Lists/FR%20Related%20Documentation%20Work/Attachments/4137/UG_WPF_Chart_5735_Final.docx) | markdownify }</th></tr>
+{{ '[Serialize](http://sharepoint.syncfusion.com/workspace/Lists/FR%20Related%20Documentation%20Work/Attachments/4137/UG_WPF_Chart_5735_Final.docx)' | markdownify }}</th></tr>
 <tr>
 <th>
 Deserialize</th><th>
@@ -14973,13 +14973,13 @@ Deserializes the string that is being passed as parameter into Chart object. Ret
 Public object Deserialize(string)</th><th>
 N/A</th><th>
 object</th><th>
-{ [Deserialize](http://sharepoint.syncfusion.com/workspace/Lists/FR%20Related%20Documentation%20Work/Attachments/4137/UG_WPF_Chart_5735_Final.docx) | markdownify }</th></tr>
+{{ '[Deserialize](http://sharepoint.syncfusion.com/workspace/Lists/FR%20Related%20Documentation%20Work/Attachments/4137/UG_WPF_Chart_5735_Final.docx)' | markdownify }}</th></tr>
 </table>
 Sample Link
 
 To run the UI WPF sample:
 
-1. Open Essential Studio Dashboard by selecting Start -> Program -> Syncfusion-> Essential Studio &lt;&lt;Version Number&gt;> -> Dashboard.
+1. Open Essential Studio Dashboard by selecting Start -> Program -> Syncfusion-> Essential Studio <<Version Number>> -> Dashboard.
 2. Select Run locally installed samples, from the WPF drop-down list on the User Interface pane.
 3. Select Chart in the sample browser.
 4. Select User Interaction -> Serialization Demo on the Essential Chart pane and click the Run Sample button.
@@ -14990,7 +14990,7 @@ To open the sample project:
 
 Go to the following sample location in your system:  
 
-_“&lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number \WPF\Chart.WPF\Samples\3.5\WindowsSamples\User Interaction\Serialization Demo”_
+_“<sample installation location>\Syncfusion\EssentialStudio\Version Number \WPF\Chart.WPF\Samples\3.5\WindowsSamples\User Interaction\Serialization Demo”_
 
 This location contains two sub folders CS and VB.  You can open the sample projects from the respective folders based on your application developing language.
 
@@ -15008,7 +15008,7 @@ The following code example explains the serialization of the Chart control.
 
 The Chart1 in above code example represents the Chart object, and Serializedstring in above code example has the serialized string (XAML string) while execution. 
 
-{ ![Description: C:/Users/Abdulrahman/Desktop/serialization.png](Chart-Controls_images/Chart-Controls_img217.png) | markdownify }
+{{ '![Description: C:/Users/Abdulrahman/Desktop/serialization.png](Chart-Controls_images/Chart-Controls_img217.png)' | markdownify }}
 {:.image }
 
 
@@ -15142,7 +15142,7 @@ Sample Link
 
 To run the UI WPF sample:
 
-1. Open Essential Studio Dashboard by selecting Start -> Program -> Syncfusion-> Essential Studio &lt;&lt;Version Number&gt;> -> Dashboard.
+1. Open Essential Studio Dashboard by selecting Start -> Program -> Syncfusion-> Essential Studio <<Version Number>> -> Dashboard.
 2. Select Run locally installed samples, from the WPF drop-down list on the User Interface pane.
 3. Select Chart in the sample browser.
 4. Select User Interaction -> Property Dialog Demo on the Essential Chart pane and click the Run Sample button.
@@ -15153,7 +15153,7 @@ To open the sample project:
 
 Go to the following sample location in your system:  
 
-_“&lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number \WPF\Chart.WPF\Samples\3.5\WindowsSamples\User Interaction\Property Dialog Demo”_
+_“<sample installation location>\Syncfusion\EssentialStudio\Version Number \WPF\Chart.WPF\Samples\3.5\WindowsSamples\User Interaction\Property Dialog Demo”_
 
 This location contains two sub folders CS and VB.  You can open the sample projects from the respective folders based on your application developing language.
 
@@ -15173,7 +15173,7 @@ Chart1.ShowPropertyDialog();
 
 
 
-{ ![C:/Users/Abdulrahman/AppData/Local/Syncfusion/EssentialStudio/9.1.0.117/WPF/Chart.WPF/Samples/3.5/WindowsSamples/User Interaction/Property Dialog Demo/Images/PropertyDialog.png](Chart-Controls_images/Chart-Controls_img218.png) | markdownify }
+{{ '![C:/Users/Abdulrahman/AppData/Local/Syncfusion/EssentialStudio/9.1.0.117/WPF/Chart.WPF/Samples/3.5/WindowsSamples/User Interaction/Property Dialog Demo/Images/PropertyDialog.png](Chart-Controls_images/Chart-Controls_img218.png)' | markdownify }}
 {:.image }
 
 
@@ -15181,7 +15181,7 @@ Using Toolbar
 
 By clicking the Properties Tool Item in the Toolbar, the property settings dialog can be invoked.
 
-{ ![](Chart-Controls_images/Chart-Controls_img219.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img219.png)' | markdownify }}
 {:.image }
 
 
@@ -15191,21 +15191,21 @@ You can include a custom tab to the property window in your application easily b
 
 [XAML]
 
-&lt;syncfusion:Chart Margin="20" Grid.Row="1" Grid.Column="0" Name="Chart1"&gt;
+<syncfusion:Chart Margin="20" Grid.Row="1" Grid.Column="0" Name="Chart1">
 
-            &lt;syncfusion:Chart.PropertyWindowTabs&gt;
+            <syncfusion:Chart.PropertyWindowTabs>
 
-                &lt;TabItem Header="AnnotationLabels"&gt;
+                <TabItem Header="AnnotationLabels">
 
-                    &lt;TabItem.Content&gt;
+                    <TabItem.Content>
 
-                    &lt;/TabItem.Content&gt;
+                    </TabItem.Content>
 
-                &lt;/TabItem&gt;
+                </TabItem>
 
-            &lt;/syncfusion:Chart.PropertyWindowTabs&gt;
+            </syncfusion:Chart.PropertyWindowTabs>
 
-&lt;/syncfusion:Chart&gt;
+</syncfusion:Chart>
 
 
 
@@ -15237,7 +15237,7 @@ Chart1.ChartPropertyWindowClosing += new ChartPropertyWindowCancelEventHandler(C
 
 [XAML]
 
-&lt;syncfusion:Chart Margin="20" Grid.Row="1" Grid.Column="0" Name="Chart1" ChartPropertyWindowOpening="Chart1_ChartPropertyWindowOpening" ChartPropertyWindowClosing="Chart1_ChartPropertyWindowClosing" /&gt;
+<syncfusion:Chart Margin="20" Grid.Row="1" Grid.Column="0" Name="Chart1" ChartPropertyWindowOpening="Chart1_ChartPropertyWindowOpening" ChartPropertyWindowClosing="Chart1_ChartPropertyWindowClosing" />
 
 
 
@@ -15249,7 +15249,7 @@ Use Case Scenario
 
 While adding huge amount of data to the chart in real time, the autoscrolling functionality helps us to view a particular set of data in the chart at a given time. This makes the scroll bar to display the recently added data and the set of newly added data to be viewed clearly, according to the AutoScrollingDelta specified for the axis in the chart.
 
-{ ![C:/Users/riaj/Desktop/AutoScrolling.png](Chart-Controls_images/Chart-Controls_img220.png) | markdownify }
+{{ '![C:/Users/riaj/Desktop/AutoScrolling.png](Chart-Controls_images/Chart-Controls_img220.png)' | markdownify }}
 {:.image }
 
 
@@ -15286,15 +15286,15 @@ To enable AutoScrolling
 
 [XAML]
 
-       &lt;syncfusion:ChartArea.PrimaryAxis&gt;
+       <syncfusion:ChartArea.PrimaryAxis>
 
-            &lt;!--Y axis declaration with required property settings--&gt;
+            <!--Y axis declaration with required property settings-->
 
-            &lt;syncfusion:ChartAxis x:Name="XAxis" EnableAutoScrolling="True" AutoScrollingDelta="50" &gt;
+            <syncfusion:ChartAxis x:Name="XAxis" EnableAutoScrolling="True" AutoScrollingDelta="50" >
 
-            &lt;/syncfusion:ChartAxis&gt;
+            </syncfusion:ChartAxis>
 
-       &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+       </syncfusion:ChartArea.PrimaryAxis>
 
 
 
@@ -15354,15 +15354,15 @@ Both Primary and Secondary Axis comes with Rangechanged event. This event occurs
 
 
 
-///&lt;summary&gt;
+///<summary>
 
 ///Event triggered when Axis range is changed.
 
-///&lt;/summary&gt;
+///</summary>
 
-///<param name="sender">Sender Axis of event.&lt;/param&gt;
+///<param name="sender">Sender Axis of event.</param>
 
-///<param name="e">ChartAxisRangeArgument that returns old and new range values.&lt;/param&gt;
+///<param name="e">ChartAxisRangeArgument that returns old and new range values.</param>
 
 
 
@@ -15488,7 +15488,7 @@ MessageBox.Show("X = " + point.X.ToString() + "\n" + "Y = " + point.Y.ToString()
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img221.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img221.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15506,21 +15506,21 @@ Chart Axis Events, Chart MouseEventArgs
 
 
 
-&lt;sfchart:Chart Name="chart1"&gt;
+<sfchart:Chart Name="chart1">
 
-    &lt;sfchart:ChartArea View3DMode="True"&gt;
+    <sfchart:ChartArea View3DMode="True">
 
         <sfchart:ChartSeries Label="Sales" DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}"
 
         BindingPathX="Month" BindingPathsY="Sales" Type="Column" >
 
-        &lt;/sfchart:ChartSeries&gt;
+        </sfchart:ChartSeries>
 
-        &lt;sfchart:ChartSeries Label="Projected Sales" DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}"             BindingPathX="Month" BindingPathsY="Projected" Type="Column" &gt;&lt;/sfchart:ChartSeries&gt;
+        <sfchart:ChartSeries Label="Projected Sales" DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}"             BindingPathX="Month" BindingPathsY="Projected" Type="Column" ></sfchart:ChartSeries>
 
-    &lt;/sfchart:ChartArea&gt;
+    </sfchart:ChartArea>
 
-&lt;/sfchart:Chart&gt;
+</sfchart:Chart>
 
 
 
@@ -15538,7 +15538,7 @@ chart.Areas[0].Series.Add(new ChartSeries(ChartTypes.Column));
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img222.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img222.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15615,25 +15615,25 @@ The following lines of code can be used to customize the side wall's look and fe
 
 
 
-&lt;sfchart:ChartArea View3DMode="True"&gt;
+<sfchart:ChartArea View3DMode="True">
 
-    &lt;sfchart:ChartArea.Chart3DSettings&gt;
+    <sfchart:ChartArea.Chart3DSettings>
 
-        &lt;sfchart:Chart3D ShowBackWall="True" ShowLeftWall="True" ShowBottomWall="True" LeftWallBackground="AliceBlue"                             BottomWallBackground="AliceBlue" BackWallBackground="AliceBlue"/&gt;
+        <sfchart:Chart3D ShowBackWall="True" ShowLeftWall="True" ShowBottomWall="True" LeftWallBackground="AliceBlue"                             BottomWallBackground="AliceBlue" BackWallBackground="AliceBlue"/>
 
-    &lt;/sfchart:ChartArea.Chart3DSettings&gt;
+    </sfchart:ChartArea.Chart3DSettings>
 
     <sfchart:ChartSeries Label="Sales" DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}"
 
     BindingPathX="Month" BindingPathsY="Sales" Type="Column">
 
-    &lt;/sfchart:ChartSeries&gt;
+    </sfchart:ChartSeries>
 
-    &lt;sfchart:ChartSeries Label="Projected Sales" DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}"             BindingPathX="Month" BindingPathsY="Projected" Type="Column"&gt;
+    <sfchart:ChartSeries Label="Projected Sales" DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}"             BindingPathX="Month" BindingPathsY="Projected" Type="Column">
 
-    &lt;/sfchart:ChartSeries&gt;
+    </sfchart:ChartSeries>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
 
 
@@ -15655,7 +15655,7 @@ chart1.Areas[0].Chart3DSettings.BottomWallBackground = Brushes.AliceBlue;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img223.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img223.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15671,15 +15671,15 @@ Chart 3D supports two types of camera projection views namely perspective and or
 
 
 
-&lt;sfchart:ChartArea View3DMode="True"&gt;
+<sfchart:ChartArea View3DMode="True">
 
-    &lt;sfchart:ChartArea.Chart3DSettings&gt;
+    <sfchart:ChartArea.Chart3DSettings>
 
-        &lt;sfchart:Chart3D CameraProjection="Orthographic"/&gt;
+        <sfchart:Chart3D CameraProjection="Orthographic"/>
 
-    &lt;/sfchart:ChartArea.Chart3DSettings&gt;
+    </sfchart:ChartArea.Chart3DSettings>
 
-&lt;/sfchart:ChartArea&gt;
+</sfchart:ChartArea>
 
 
 
@@ -15691,11 +15691,11 @@ chart1.Areas[0].Chart3DSettings.CameraProjection = CameraProjection.Perspective;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img224.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img224.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img225.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img225.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -15716,7 +15716,7 @@ Use Case Scenarios
 
 
 
-{ ![C:/Users/sujithas/AppData/Local/Syncfusion/EssentialStudio/9.2.0.137/WPF/Chart.WPF/Samples/3.5/WindowsSamples/Chart Area/3D Manhattan Chart Demo/Images/3D Manhattan Chart Demo.png](Chart-Controls_images/Chart-Controls_img226.png) | markdownify }
+{{ '![C:/Users/sujithas/AppData/Local/Syncfusion/EssentialStudio/9.2.0.137/WPF/Chart.WPF/Samples/3.5/WindowsSamples/Chart Area/3D Manhattan Chart Demo/Images/3D Manhattan Chart Demo.png](Chart-Controls_images/Chart-Controls_img226.png)' | markdownify }}
 {:.image }
 
 
@@ -15762,15 +15762,15 @@ Adding 3D Manhattan Bar Chart to an Application
 
 [XAML]
 
-        &lt;sync:Chart x:Name="Chart1" &gt;
+        <sync:Chart x:Name="Chart1" >
 
-            &lt;sync:ChartArea  IsClustered="True"&gt;
+            <sync:ChartArea  IsClustered="True">
 
-                &lt;sync:ChartSeries x:Name="series1"/&gt;
+                <sync:ChartSeries x:Name="series1"/>
 
-            &lt;/sync:ChartArea&gt;
+            </sync:ChartArea>
 
-        &lt;/sync:Chart&gt;
+        </sync:Chart>
 
 
 
@@ -15786,11 +15786,11 @@ These 3-D types can be bound to all basic types of data sources such as IList, O
 
 For example, in the column chart type, BindingPathsY[0] corresponds to a mapping value for y-axis, and BindingPathsY[1] corresponds to a mapping value for z-axis. For the range column chart type, BindingPathsY[0] corresponds to a starting value for y-axis, BindingPathsY[1] corresponds to an end value for y-axis, and BindingPathsY[2] corresponds to a mapping value for z-axis.
 
-{ ![](Chart-Controls_images/Chart-Controls_img227.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img227.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img228.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img228.png)' | markdownify }}
 {:.image }
 
 
@@ -15861,13 +15861,13 @@ The attributes of the z-axis (or depth axis) can be set using the DepthAxis prop
 
 
 
-&lt;syncfusion:ChartArea.DepthAxis&gt;
+<syncfusion:ChartArea.DepthAxis>
 
   <syncfusion:ChartAxis Header="Z Axis" RangePadding="Normal" LabelForeground="Black"      
 
 LabelFontWeight="Bold"/>
 
-&lt;/syncfusion:ChartArea.DepthAxis&gt;
+</syncfusion:ChartArea.DepthAxis>
 
 
 
@@ -15941,7 +15941,7 @@ Specifies the color of the line drawn from the location to the annotation, in ca
 <tr>
 <td>
 IsRelative</td><td>
-Z and y values above are x-y coordinates of the plotIf {{ '_true_' | markdownify }}, they are in Chart Area coordinates. Default value is {{ '_false_' | markdownify }}.</td></tr>
+Z and y values above are x-y coordinates of the plotIf {{{ ''_true_'' | markdownify }}}, they are in Chart Area coordinates. Default value is {{{ ''_false_'' | markdownify }}}.</td></tr>
 </table>
 
 
@@ -15951,33 +15951,33 @@ Here is a code example that adds a few annotations to a chart.
 
 
 
-&lt;sfchart:ChartSeries Name="series1"  Label="Series1" Type="Area" Interior="LightSkyBlue"&gt;
+<sfchart:ChartSeries Name="series1"  Label="Series1" Type="Area" Interior="LightSkyBlue">
 
-    &lt;sfchart:ChartSeries.Annotations&gt;
+    <sfchart:ChartSeries.Annotations>
 
-        &lt;sfchart:AnnotationsCollection LineColor="White" x:Uid="Annot"&gt;
+        <sfchart:AnnotationsCollection LineColor="White" x:Uid="Annot">
 
-            &lt;!--Define the look and feel of the annotation.--&gt;
+            <!--Define the look and feel of the annotation.-->
 
-            &lt;sfchart:AnnotationsCollection.AnnotationsTemplate&gt;
+            <sfchart:AnnotationsCollection.AnnotationsTemplate>
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
                     <Button Content="{Binding Y}" ToolTip="{Binding Description}"  Background="LightGray" Name="Button1"
 
                     Click="Button_Click" />
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-            &lt;/sfchart:AnnotationsCollection.AnnotationsTemplate&gt;
+            </sfchart:AnnotationsCollection.AnnotationsTemplate>
 
-        &lt;/sfchart:AnnotationsCollection&gt;
+        </sfchart:AnnotationsCollection>
 
-        &lt;!--The annotations are added to this collection in code-behind.--&gt;
+        <!--The annotations are added to this collection in code-behind.-->
 
-    &lt;/sfchart:ChartSeries.Annotations&gt;
+    </sfchart:ChartSeries.Annotations>
 
-&lt;/sfchart:ChartSeries&gt;
+</sfchart:ChartSeries>
 
 
 
@@ -16001,7 +16001,7 @@ this.Chart1.Areas[0].Series[0].Annotations.Items.Add(ser1HighPoint);
 
 The resultant annotations look like this.
 
-{ ![](Chart-Controls_images/Chart-Controls_img229.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img229.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16059,47 +16059,47 @@ Here is some code example that shows how to add annotations at Chart coordinates
 
 
 
-&lt;syncfusion:Chart Name="chart1"&gt;
+<syncfusion:Chart Name="chart1">
 
 
 
-   &lt;!--Template defining the custom look and feel of the annotations.--&gt;
+   <!--Template defining the custom look and feel of the annotations.-->
 
-    &lt;syncfusion:Chart.AnnotationLabelTemplate&gt;
+    <syncfusion:Chart.AnnotationLabelTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;Border Background="MintCream"  BorderBrush="Black" BorderThickness="1"&gt;
+            <Border Background="MintCream"  BorderBrush="Black" BorderThickness="1">
 
-                &lt;TextBlock Text="{Binding}" Foreground="Black" FontFamily="Tahoma" FontSize="12"  Margin="5"/&gt;
+                <TextBlock Text="{Binding}" Foreground="Black" FontFamily="Tahoma" FontSize="12"  Margin="5"/>
 
-            &lt;/Border&gt;
+            </Border>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:Chart.AnnotationLabelTemplate&gt;
+    </syncfusion:Chart.AnnotationLabelTemplate>
 
-    &lt;syncfusion:Chart.AnnotationLabels&gt;
+    <syncfusion:Chart.AnnotationLabels>
 
-        &lt;syncfusion:ChartAnnotationLabelsCollection&gt;
-
-
-
-            &lt;!--ChartAnnotationLabel instance representing the location and content of the annotation.--&gt;
-
-            &lt;syncfusion:ChartAnnotationLabel x:Name="label1"  Content="Top 6 Products" OffsetX="50" OffsetY="60"&gt;
-
-            &lt;/syncfusion:ChartAnnotationLabel&gt;
-
-        &lt;/syncfusion:ChartAnnotationLabelsCollection&gt;
-
-    &lt;/syncfusion:Chart.AnnotationLabels&gt;
-
-&lt;/syncfusion:Chart&gt;
+        <syncfusion:ChartAnnotationLabelsCollection>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img230.jpeg) | markdownify }
+            <!--ChartAnnotationLabel instance representing the location and content of the annotation.-->
+
+            <syncfusion:ChartAnnotationLabel x:Name="label1"  Content="Top 6 Products" OffsetX="50" OffsetY="60">
+
+            </syncfusion:ChartAnnotationLabel>
+
+        </syncfusion:ChartAnnotationLabelsCollection>
+
+    </syncfusion:Chart.AnnotationLabels>
+
+</syncfusion:Chart>
+
+
+
+{{ '![](Chart-Controls_images/Chart-Controls_img230.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -16163,17 +16163,17 @@ The following code example illustrates the creation of predefined annotation sha
 
 
 
-&lt;syncfusion:Chart.AnnotationsLabel&gt;
+<syncfusion:Chart.AnnotationsLabel>
 
-&lt;syncfusion:ChartAnnotationLabelsCollection&gt;
+<syncfusion:ChartAnnotationLabelsCollection>
 
-&lt;syncfusion:ChartAnnotationLabel x:Name="Annotlabel" Content="Target Reached" OffsetY="200" OffsetX="200" AnnotationShape="Circle" Fill="Red"/&gt;
+<syncfusion:ChartAnnotationLabel x:Name="Annotlabel" Content="Target Reached" OffsetY="200" OffsetX="200" AnnotationShape="Circle" Fill="Red"/>
 
-&lt;/syncfusion:ChartAnnotationLabelsCollection&gt;
+</syncfusion:ChartAnnotationLabelsCollection>
 
-&lt;/syncfusion:Chart.AnnotationsLabel&gt;
+</syncfusion:Chart.AnnotationsLabel>
 
-&lt;syncfusion:ChartArea &gt;
+<syncfusion:ChartArea >
 
 
 
@@ -16193,13 +16193,13 @@ Chart1.AnnotationsLabel[0].AnnotationShape = Red;
 
 Run the code. The following output is displayed.
 
-{ ![](Chart-Controls_images/Chart-Controls_img231.jpeg) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img231.jpeg)' | markdownify }}
 {:.image }
 
 
 A sample which demonstrates the various predefined annotation shapes in Essential Chart, is available in the following install location:
 
-_C:\Documents and Settings\&lt;user name&gt;\My Documents\Syncfusion\Essential Studio\ Samples\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Annotations_
+_C:\Documents and Settings\<user name>\My Documents\Syncfusion\Essential Studio\ Samples\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Annotations_
 
 ##### Localization Support
 
@@ -16228,7 +16228,7 @@ Use the prescribed naming convention as it is mandatory.
 
 The following screenshot explains the addition of a Resource file to the application. 
 
-{ ![C:/Users/murugavelp/Pictures/doc.png](Chart-Controls_images/Chart-Controls_img232.png) | markdownify }
+{{ '![C:/Users/murugavelp/Pictures/doc.png](Chart-Controls_images/Chart-Controls_img232.png)' | markdownify }}
 {:.image }
 
 
@@ -16236,7 +16236,7 @@ Enter the “Name” and “Value” in the Resource file.
 
 The String Property names used in the  Chart are given in the Properties table. This is explained in the following screenshot.
 
-{ ![C:/Users/murugavelp/Pictures/doc1.png](Chart-Controls_images/Chart-Controls_img233.png) | markdownify }
+{{ '![C:/Users/murugavelp/Pictures/doc1.png](Chart-Controls_images/Chart-Controls_img233.png)' | markdownify }}
 {:.image }
 
 
@@ -16256,7 +16256,7 @@ System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalizatio
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img234.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img234.png)' | markdownify }}
 {:.image }
 
 
@@ -16634,7 +16634,7 @@ Sample Link
 
 To run the UI WPF Chart samples:
 
-1. Open Essential Studio Dashboard by selecting Start -> Program -> Syncfusion-> Essential Studio &lt;&lt;Version Number&gt;> -> Dashboard.
+1. Open Essential Studio Dashboard by selecting Start -> Program -> Syncfusion-> Essential Studio <<Version Number>> -> Dashboard.
 2. Click Run locally installed samples from the WPF drop-down list on the User Interface pane.
 3. Select Chart on the sample browser.
 4. Select User Interaction -> Localization Demo on the Essential Chart pane and click the Run Sample button.
@@ -16644,7 +16644,7 @@ To run the UI WPF Chart samples:
 To open the sample projects:
 
 1. Go to the following sample location in your system:  
-2. “&lt;sample installation location&gt;\Syncfusion\EssentialStudio\Version Number \WPF\Chart.WPF\Samples\3.5\WindowsSamples\User Interaction\Localization Demo”
+2. “<sample installation location>\Syncfusion\EssentialStudio\Version Number \WPF\Chart.WPF\Samples\3.5\WindowsSamples\User Interaction\Localization Demo”
 3. This location contains two sub folders CS and VB.  You can open the sample projects from the respective folders based on your application developing language.
 ##### Export Chart to PDF
 
@@ -16688,7 +16688,7 @@ The following steps explain how to convert a chart to PDF.
 1. Syncfusion.Chart.WPF.dll
 2. Syncfusion.ChartConverter.WPF.dll
 
-{ ![](Chart-Controls_images/Chart-Controls_img235.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img235.png)' | markdownify }}
 {:.image }
 
 
@@ -16704,7 +16704,7 @@ control.ChartPdfConverter(Chart1, "chartpdf.pdf");
 
 4. The PDF file is generated as follows.
 
-{ ![](Chart-Controls_images/Chart-Controls_img236.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img236.png)' | markdownify }}
 {:.image }
 
 
@@ -16712,7 +16712,7 @@ control.ChartPdfConverter(Chart1, "chartpdf.pdf");
 
 Essential Chart for WPF now comes with support to print the chart and printing options such as page orientation, print preview, color mode, and more.
 
-{ ![C:/Users/michaelprabhu/Desktop/print.png](Chart-Controls_images/Chart-Controls_img237.png) | markdownify }
+{{ '![C:/Users/michaelprabhu/Desktop/print.png](Chart-Controls_images/Chart-Controls_img237.png)' | markdownify }}
 {:.image }
 
 
@@ -16720,7 +16720,7 @@ Use Case Scenarios
 
 Printing the chart is useful for visual representation in organizational meetings.
 
-{ ![C:/Users/michaelprabhu/Desktop/print.png](Chart-Controls_images/Chart-Controls_img238.png) | markdownify }
+{{ '![C:/Users/michaelprabhu/Desktop/print.png](Chart-Controls_images/Chart-Controls_img238.png)' | markdownify }}
 {:.image }
 
 
@@ -16753,7 +16753,7 @@ Void</th></tr>
 </table>
 ###### Sample Link
 
-..My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Export and Print\Printing Chart Demo
+..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Export and Print\Printing Chart Demo
 
 ###### Printing a Chart
 
@@ -16761,9 +16761,9 @@ Charts can be printed by using the following code example.
 
 [XAML]
 
-&lt;!--Button when clicked executes the Print command--&gt;
+<!--Button when clicked executes the Print command-->
 
-&lt;Button Grid.Row="0" Content="Print"						Command="{x:Static ApplicationCommands.Print}"						CommandTarget="{Binding ElementName=Chart1}" x:Name="button"/&gt;            &lt;!--Button when clicked executes the SwitchPrinting command--&gt;            &lt;Button Grid.Row="0" Grid.Column="1" Content="Printing Mode" 						Command="{x:Static syncfusion:ChartCommands.SwitchPrinting}"						CommandTarget="{Binding ElementName=Chart1}" x:Name="button1" /&gt;
+<Button Grid.Row="0" Content="Print"						Command="{x:Static ApplicationCommands.Print}"						CommandTarget="{Binding ElementName=Chart1}" x:Name="button"/>            <!--Button when clicked executes the SwitchPrinting command-->            <Button Grid.Row="0" Grid.Column="1" Content="Printing Mode" 						Command="{x:Static syncfusion:ChartCommands.SwitchPrinting}"						CommandTarget="{Binding ElementName=Chart1}" x:Name="button1" />
 
 
 
@@ -17020,7 +17020,7 @@ string val = "";
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img239.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img239.png)' | markdownify }}
 {:.image }
 
 
@@ -17052,7 +17052,7 @@ AnovaResult anova = BasicStatisticalFormulas.Anova(0.05, new ChartSeries[] { ser
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img240.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img240.png)' | markdownify }}
 {:.image }
 
 
@@ -17082,7 +17082,7 @@ FTestResult ftest = BasicStatisticalFormulas.FTest(0.05, series1, series2);
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img241.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img241.png)' | markdownify }}
 {:.image }
 
 
@@ -17114,7 +17114,7 @@ TTestResult ttest = BasicStatisticalFormulas.TTestEqualVariances(meandiff.Value,
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img242.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img242.png)' | markdownify }}
 {:.image }
 
 
@@ -17148,7 +17148,7 @@ ZTestResult ztest = BasicStatisticalFormulas.ZTest(meandiff.Value, 10, 5, 0.5, s
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img243.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img243.png)' | markdownify }}
 {:.image }
 
 
@@ -17160,7 +17160,7 @@ value.Text = UtilityFunctions.NormalDistribution((double)probability.SelectedIte
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img244.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img244.png)' | markdownify }}
 {:.image }
 
 
@@ -17172,7 +17172,7 @@ value.Text = UtilityFunctions.FCumulativeDistribution((double)probability.Select
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img245.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img245.png)' | markdownify }}
 {:.image }
 
 
@@ -17184,7 +17184,7 @@ value.Text = UtilityFunctions.TCumulativeDistribution((double)probability.Select
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img246.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img246.png)' | markdownify }}
 {:.image }
 
 
@@ -17198,7 +17198,7 @@ A sparkline can display a trend based on adjacent data in a clear and compact gr
 
 The following screenshot shows three  types of sparklines, which are  drawn inside the grid control cell, based on row values.
 
-{ ![](Chart-Controls_images/Chart-Controls_img247.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img247.png)' | markdownify }}
 {:.image }
 
 
@@ -17372,7 +17372,7 @@ Me.sparkLine1.SparkLineType = SparkLine.SparkLineType.Line
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img248.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img248.png)' | markdownify }}
 {:.image }
 
 
@@ -17410,7 +17410,7 @@ Me.sparkLine1.SparkLineType = SparkLine.SparkLineType. Column
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img249.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img249.png)' | markdownify }}
 {:.image }
 
 
@@ -17448,7 +17448,7 @@ Me.sparkLine1.SparkLineType = SparkLine.SparkLineType. WinLoss
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img250.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img250.png)' | markdownify }}
 {:.image }
 
 
@@ -17476,7 +17476,7 @@ Me.sparkLine1.Markers.ShowMarker  =True
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img251.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img251.png)' | markdownify }}
 {:.image }
 
 
@@ -17552,7 +17552,7 @@ Me.sparkLine1.IsNegativePointHighlighted = true;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img252.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img252.png)' | markdownify }}
 {:.image }
 
 
@@ -17594,7 +17594,7 @@ Me.sparkLine1.IsNegativePointHighlighted = true;
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img253.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img253.png)' | markdownify }}
 {:.image }
 
 
@@ -17642,11 +17642,11 @@ The following code example shows how to configure the range band.
 
 
 
-&lt;syncfusion:SparkLine Grid.Row="0" Grid.Column="10" ItemsSource="{Binding Collections}" DataMemberPath="Y" SparkLineType="Line" BandRange="-5,8" IsEnableRangeBand="True" RangeBandInterior="Red"/&gt;
+<syncfusion:SparkLine Grid.Row="0" Grid.Column="10" ItemsSource="{Binding Collections}" DataMemberPath="Y" SparkLineType="Line" BandRange="-5,8" IsEnableRangeBand="True" RangeBandInterior="Red"/>
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img254.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img254.png)' | markdownify }}
 {:.image }
 
 
@@ -17677,7 +17677,7 @@ TimeLine Control has been designed to visualize large number of data and to hand
 
 #### Appearance and Structure
 
-{ ![C:/Users/riaj/Desktop/Timenavigator.png](Chart-Controls_images/Chart-Controls_img255.png) | markdownify }
+{{ '![C:/Users/riaj/Desktop/Timenavigator.png](Chart-Controls_images/Chart-Controls_img255.png)' | markdownify }}
 {:.image }
 
 
@@ -17821,13 +17821,13 @@ You can specify the starting date and ending date for the TimeLine control by us
 
 
 
-&lt;sync:TimeLineControl x:Name='timelineControl' sync:TimeLineControl.StartDate='9/27/2006' sync:TimeLineControl.EndDate='12/7/2007'&gt;
+<sync:TimeLineControl x:Name='timelineControl' sync:TimeLineControl.StartDate='9/27/2006' sync:TimeLineControl.EndDate='12/7/2007'>
 
-&lt;sync:TimeLineControl.PrimaryAxis&gt;
+<sync:TimeLineControl.PrimaryAxis>
 
-&lt;sync:ChartAxis ValueType='DateTime'/&gt;
+<sync:ChartAxis ValueType='DateTime'/>
 
-&lt;/sync:TimeLineControl.PrimaryAxis&gt;
+</sync:TimeLineControl.PrimaryAxis>
 
 </sync:TimeLineControl
 
@@ -17843,7 +17843,7 @@ TimeLineControl.SetEndDate(timelineControl, datalist[40].TimeStamp);
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img256.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img256.png)' | markdownify }}
 {:.image }
 
 
@@ -17855,13 +17855,13 @@ You can specify the starting value and ending value for the TimeLine control by 
 
 
 
-&lt;sync:TimeLineControl x:Name='timelineControl' sync:TimeLineControl.StartValue='0' sync:TimeLineControl.EndValue='20'&gt;
+<sync:TimeLineControl x:Name='timelineControl' sync:TimeLineControl.StartValue='0' sync:TimeLineControl.EndValue='20'>
 
-&lt;sync:TimeLineControl.PrimaryAxis&gt;
+<sync:TimeLineControl.PrimaryAxis>
 
-&lt;sync:ChartAxis ValueType='Double'/&gt;
+<sync:ChartAxis ValueType='Double'/>
 
-&lt;/sync:TimeLineControl.PrimaryAxis&gt;
+</sync:TimeLineControl.PrimaryAxis>
 
 </sync:TimeLineControl
 
@@ -17877,7 +17877,7 @@ TimeLineControl.SetEndValue(timelineControl, 20);
 
 
 
-{ ![](Chart-Controls_images/Chart-Controls_img257.png) | markdownify }
+{{ '![](Chart-Controls_images/Chart-Controls_img257.png)' | markdownify }}
 {:.image }
 
 

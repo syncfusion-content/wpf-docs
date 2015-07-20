@@ -25,37 +25,37 @@ The following code snippets show how to create an OlapGrid and to add Conditiona
 
 [XAML]
 
-&lt;syncfusion:OlapGrid&gt;
+<syncfusion:OlapGrid>
 
- &lt;syncfusion:OlapGrid.ConditionalFormats&gt; 
+ <syncfusion:OlapGrid.ConditionalFormats> 
 
-   &lt;!-- Adding Conditions --&gt;                       
+   <!-- Adding Conditions -->                       
 
-   &lt;syncfusion:OlapGridDataConditionalFormat Name="C1"&gt;
+   <syncfusion:OlapGridDataConditionalFormat Name="C1">
 
-      &lt;!-- Specifying Cell Style --&gt;
+      <!-- Specifying Cell Style -->
 
-      &lt; syncfusion:OlapGridDataConditionalFormat.CellStyle&gt;
+      < syncfusion:OlapGridDataConditionalFormat.CellStyle>
 
-          &lt;syncfusion:OlapGridCellStyle Background="Yellow" FontFamily="Calibri" FontSize="12"/&gt;
+          <syncfusion:OlapGridCellStyle Background="Yellow" FontFamily="Calibri" FontSize="12"/>
 
-          &lt;/syncfusion:OlapGridDataConditionalFormat.CellStyle&gt;
+          </syncfusion:OlapGridDataConditionalFormat.CellStyle>
 
-      &lt;!-- Specfying Conditions --&gt; 
+      <!-- Specfying Conditions --> 
 
-      &lt;syncfusion:OlapGridDataConditionalFormat.Conditions&gt;
+      <syncfusion:OlapGridDataConditionalFormat.Conditions>
 
-          &lt;syncfusion:OlapGridDataCondition ConditionType="GreaterThan" Value="2000000" MeasureElement="Internet Sales Amount" PredicateType="Or"/&gt;
+          <syncfusion:OlapGridDataCondition ConditionType="GreaterThan" Value="2000000" MeasureElement="Internet Sales Amount" PredicateType="Or"/>
 
-          &lt;syncfusion:OlapGridDataCondition ConditionType="LessThan" Value="5000000" MeasureElement="Internet Sales Amount" PredicateType="And"/&gt;
+          <syncfusion:OlapGridDataCondition ConditionType="LessThan" Value="5000000" MeasureElement="Internet Sales Amount" PredicateType="And"/>
 
-          &lt;/syncfusion:OlapGridDataConditionalFormat.Conditions&gt;
+          </syncfusion:OlapGridDataConditionalFormat.Conditions>
 
-   &lt;/syncfusion:OlapGridDataConditionalFormat&gt;                        
+   </syncfusion:OlapGridDataConditionalFormat>                        
 
- &lt;/syncfusion:OlapGrid.ConditionalFormats&gt;
+ </syncfusion:OlapGrid.ConditionalFormats>
 
-&lt;/syncfusion:OlapGrid&gt;
+</syncfusion:OlapGrid>
 
 
 
@@ -177,7 +177,7 @@ Me.olapgrid1.DataBind()
 
 
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/OlapGridConditionalFormatting.png](Conditional-Formatting_images/Conditional-Formatting_img1.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/OlapGridConditionalFormatting.png](Conditional-Formatting_images/Conditional-Formatting_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -18,7 +18,7 @@ ValueChanged – The event occurs when the Value property of the IntegerTextBox 
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:IntegerTextBox ValueChanged="IntegerTextBox_ValueChanged"/&gt;</td></tr>
+XAML<syncfusion:IntegerTextBox ValueChanged="IntegerTextBox_ValueChanged"/></td></tr>
 <tr>
 <td>
 C#IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.ValueChanged+=new PropertyChangedCallback(IntegerTextBox_ValueChanged);</td></tr>
@@ -46,7 +46,7 @@ TextChanged – The event occurs when the Value property of the IntegerTextBox i
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:IntegerTextBox  TextChanged="integerTextBox_TextChanged"/&gt;</td></tr>
+XAML<syncfusion:IntegerTextBox  TextChanged="integerTextBox_TextChanged"/></td></tr>
 <tr>
 <td>
 C#IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.TextChanged+=new TextChangedEventHandler(IntegerTextBox_TextChanged);</td></tr>
@@ -74,7 +74,7 @@ CultureChanged – The event occurs when the Culture property of the IntegerText
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:IntegerTextBox  CultureChanged="IntegerTextBox_CultureChanged"/&gt;</td></tr>
+XAML<syncfusion:IntegerTextBox  CultureChanged="IntegerTextBox_CultureChanged"/></td></tr>
 <tr>
 <td>
 C#IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.CultureChanged+=new                                                PropertyChangedCallback(IntegerTextBox_CultureChanged);</td></tr>
@@ -102,7 +102,7 @@ MaxValueChanged – The event occurs when the MaxValue property of the IntegerTe
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:IntegerTextBox  MaxValueChanged="IntegerTextBox_MaxValueChanged"/&gt;</td></tr>
+XAML<syncfusion:IntegerTextBox  MaxValueChanged="IntegerTextBox_MaxValueChanged"/></td></tr>
 <tr>
 <td>
 C#IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.MaxValueChanged+=new                           PropertyChangedCallback(IntegerTextBox_MaxValueChanged);</td></tr>
@@ -130,7 +130,7 @@ MinValueChanged – The event occurs when the MinValue property of the IntegerTe
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:IntegerTextBox  MinValueChanged="IntegerTextBox_MinValueChanged"/&gt;</td></tr>
+XAML<syncfusion:IntegerTextBox  MinValueChanged="IntegerTextBox_MinValueChanged"/></td></tr>
 <tr>
 <td>
 C#IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.MinValueChanged+=new                            PropertyChangedCallback(IntegerTextBox_MinValueChanged);</td></tr>
@@ -160,7 +160,7 @@ SelectionChanged – The event occurs when the selection in the textbox is chang
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:IntegerTextBox  SelectionChanged="IntegerTextBox_SelectionChanged"/&gt;</td></tr>
+XAML<syncfusion:IntegerTextBox  SelectionChanged="IntegerTextBox_SelectionChanged"/></td></tr>
 <tr>
 <td>
 C#IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.SelectionChanged+=new RoutedEventHandler(IntegerTextBox_SelectionChanged);</td></tr>

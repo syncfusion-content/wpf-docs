@@ -70,10 +70,10 @@ The following code illustrates how to Import and Export Task Details from or to 
 
 [XAML]
 
-&lt;Sync:GanttControl x:Name="Gantt" /&gt;
+<Sync:GanttControl x:Name="Gantt" />
 
 
-&lt;StackPanel Orientation="Horizontal" HorizontalAlignment="Center"&gt;
+<StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
       <Button Height="25" HorizontalAlignment="Center" VerticalAlignment="Center" 
 
               Margin="0,10,0,0" Width="200"                    
@@ -83,7 +83,7 @@ The following code illustrates how to Import and Export Task Details from or to 
               Margin="0,10,0,0" Width="200"
               Command="{Binding ImportFromXMLCommand, ElementName=gantt}"
               Content="Import From XML" />
-&lt;/StackPanel&gt;
+</StackPanel>
 
 
 
@@ -119,7 +119,7 @@ The following image shows XML Export Import:
 
 
 
-{ ![](Import-and-Export-Support_images/Import-and-Export-Support_img1.png) | markdownify }
+{{ '![](Import-and-Export-Support_images/Import-and-Export-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -131,7 +131,7 @@ The following image shows Importing the exported document in MS Project:
 
 
 
-{ ![](Import-and-Export-Support_images/Import-and-Export-Support_img2.png) | markdownify }
+{{ '![](Import-and-Export-Support_images/Import-and-Export-Support_img2.png)' | markdownify }}
 {:.image }
 
 

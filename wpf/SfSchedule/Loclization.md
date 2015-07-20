@@ -23,7 +23,7 @@ ApplicationLanguages.PrimaryLanguageOverride = "fr-fr";
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_31.jpg](Loclization_images/Loclization_img1.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_31.jpg](Loclization_images/Loclization_img1.jpeg)' | markdownify }}
 {:.image }
 
 

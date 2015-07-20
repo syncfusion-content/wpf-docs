@@ -34,13 +34,13 @@ Sets the string content for the Wizard control.</td></tr>
 {:.image }
 ![](Localization_images/Localization_img6.png)
 {:.image }
-{{ '__' | markdownify }}![](Localization_images/Localization_img7.png)
+{{{ ''__'' | markdownify }}}![](Localization_images/Localization_img7.png)
 {:.image }
 ![](Localization_images/Localization_img8.png)
 {:.image }
 ![](Localization_images/Localization_img9.png)
 {:.image }
-{{ '__' | markdownify }}![](Localization_images/Localization_img10.png)
+{{{ ''__'' | markdownify }}}![](Localization_images/Localization_img10.png)
 {:.image }
 </td></tr>
 </table>

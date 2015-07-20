@@ -199,7 +199,7 @@ Binding the items source property is demonstrated in the code below.
 <table>
 <tr>
 <td>
-XAML&lt;sync:Ribbon ItemsSource="{Binding SampleList}" Name="ribbon"&gt;&lt;/sync:Ribbon&gt;</td></tr>
+XAML<sync:Ribbon ItemsSource="{Binding SampleList}" Name="ribbon"></sync:Ribbon></td></tr>
 <tr>
 <td>
 C#Binding binding = new Binding("SampleList");binding.Source = this;ribbon.SetBinding(Ribbon.ItemsSourceProperty, binding);</td></tr>
@@ -208,7 +208,7 @@ C#Binding binding = new Binding("SampleList");binding.Source = this;ribbon.SetBi
 
 
 
-{ ![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img1.jpeg) | markdownify }
+{{ '![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -220,21 +220,21 @@ The item template can be applied to the ribbon as demonstrated in the following 
 
 
 
-&lt;sync:Ribbon.ItemTemplate&gt;
+<sync:Ribbon.ItemTemplate>
 
-    &lt;DataTemplate&gt;
+    <DataTemplate>
 
-        &lt;TextBlock Text="{Binding Header}" HorizontalAlignment="Center" VerticalAlignment="Center"/&gt;
+        <TextBlock Text="{Binding Header}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-    &lt;/DataTemplate&gt;
+    </DataTemplate>
 
-&lt;/sync:Ribbon.ItemTemplate&gt;
-
-
+</sync:Ribbon.ItemTemplate>
 
 
 
-{ ![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img2.jpeg) | markdownify }
+
+
+{{ '![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -246,67 +246,67 @@ The above image shows ribbon tabs that are bound with an observable collection. 
 
 
 
-&lt;sync:Ribbon.ItemContainerStyle&gt;
+<sync:Ribbon.ItemContainerStyle>
 
-     &lt;Style TargetType="{x:Type sync:RibbonTab}"&gt;
+     <Style TargetType="{x:Type sync:RibbonTab}">
 
-         &lt;Setter Property="Caption" Value="{Binding Header}"/&gt;
+         <Setter Property="Caption" Value="{Binding Header}"/>
 
-         &lt;Setter Property="ContentTemplate"&gt;
+         <Setter Property="ContentTemplate">
 
-             &lt;Setter.Value&gt;
+             <Setter.Value>
 
-                 &lt;DataTemplate&gt;
+                 <DataTemplate>
 
-                     &lt;StackPanel Orientation="Horizontal"&gt;
+                     <StackPanel Orientation="Horizontal">
 
-                         &lt;sync:RibbonBar Header="{Binding MenuHeader1}"&gt;
+                         <sync:RibbonBar Header="{Binding MenuHeader1}">
 
-                             &lt;sync:RibbonButton SizeForm="Large" Label="{Binding MenuItem1}"&gt;
+                             <sync:RibbonButton SizeForm="Large" Label="{Binding MenuItem1}">
 
-                              &lt;sync:RibbonButton.ToolTip&gt;
+                              <sync:RibbonButton.ToolTip>
 
-                                  &lt;sync:ScreenTip VerticalOffset="10" Description="{Binding MenuItem1}"&gt;
+                                  <sync:ScreenTip VerticalOffset="10" Description="{Binding MenuItem1}">
 
-                                     &lt;TextBlock TextWrapping="Wrap" Text="{Binding ToolTip}"/&gt;
+                                     <TextBlock TextWrapping="Wrap" Text="{Binding ToolTip}"/>
 
-                                   &lt;/sync:ScreenTip&gt;
+                                   </sync:ScreenTip>
 
-                               &lt;/sync:RibbonButton.ToolTip&gt;
+                               </sync:RibbonButton.ToolTip>
 
-                               &lt;/sync:RibbonButton&gt;
+                               </sync:RibbonButton>
 
-                               &lt;sync:SplitButton SizeForm="Large" Label="{Binding MenuItem2}" ItemsSource="{Binding MenuList}" Padding="3"/&gt;
+                               <sync:SplitButton SizeForm="Large" Label="{Binding MenuItem2}" ItemsSource="{Binding MenuList}" Padding="3"/>
 
-                           &lt;/sync:RibbonBar&gt;
+                           </sync:RibbonBar>
 
-                           &lt;sync:RibbonBar Header="{Binding MenuHeader2}"&gt;
+                           <sync:RibbonBar Header="{Binding MenuHeader2}">
 
-                               &lt;sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem3}"/&gt;
+                               <sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem3}"/>
 
-                                &lt;sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem4}"/&gt;
+                                <sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem4}"/>
 
-                                &lt;sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem6}"/&gt;
+                                <sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem6}"/>
 
-                            &lt;/sync:RibbonBar&gt;
+                            </sync:RibbonBar>
 
-                        &lt;/StackPanel&gt;
+                        </StackPanel>
 
-                   &lt;/DataTemplate&gt;
+                   </DataTemplate>
 
-               &lt;/Setter.Value&gt;
+               </Setter.Value>
 
-           &lt;/Setter&gt;
+           </Setter>
 
-     &lt;/Style&gt;
+     </Style>
 
-&lt;/sync:Ribbon.ItemContainerStyle&gt;
-
-
+</sync:Ribbon.ItemContainerStyle>
 
 
 
-{ ![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img3.jpeg) | markdownify }
+
+
+{{ '![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -318,9 +318,9 @@ Template Selector can be used so that templates can be applied according to logi
 
 
 
-&lt;sync:RibbonWindow.Resources&gt;
+<sync:RibbonWindow.Resources>
 
-        &lt;sample:SampleSelector x:Key="Selector"/&gt;
+        <sample:SampleSelector x:Key="Selector"/>
 
 
 
@@ -332,43 +332,43 @@ Data Template for Home ribbon tab,
 
 
 
- &lt;DataTemplate x:Key="Home"&gt;
+ <DataTemplate x:Key="Home">
 
-            &lt;StackPanel Orientation="Horizontal"&gt;
+            <StackPanel Orientation="Horizontal">
 
-                &lt;sync:RibbonBar Header="{Binding MenuHeader1}"&gt;
+                <sync:RibbonBar Header="{Binding MenuHeader1}">
 
-                    &lt;sync:RibbonButton SizeForm="Large" Label="{Binding MenuItem1}"&gt;
+                    <sync:RibbonButton SizeForm="Large" Label="{Binding MenuItem1}">
 
-                        &lt;sync:RibbonButton.ToolTip&gt;
+                        <sync:RibbonButton.ToolTip>
 
-                            &lt;sync:ScreenTip VerticalOffset="10" Description="{Binding MenuItem1}"&gt;
+                            <sync:ScreenTip VerticalOffset="10" Description="{Binding MenuItem1}">
 
-                                &lt;TextBlock TextWrapping="Wrap" Text="{Binding ToolTip}"/&gt;
+                                <TextBlock TextWrapping="Wrap" Text="{Binding ToolTip}"/>
 
-                            &lt;/sync:ScreenTip&gt;
+                            </sync:ScreenTip>
 
-                        &lt;/sync:RibbonButton.ToolTip&gt;
+                        </sync:RibbonButton.ToolTip>
 
-                    &lt;/sync:RibbonButton&gt;
+                    </sync:RibbonButton>
 
-                    &lt;sync:SplitButton SizeForm="Large" Label="{Binding MenuItem2}" ItemsSource="{Binding MenuList}" Padding="3"/&gt;
+                    <sync:SplitButton SizeForm="Large" Label="{Binding MenuItem2}" ItemsSource="{Binding MenuList}" Padding="3"/>
 
-                &lt;/sync:RibbonBar&gt;
+                </sync:RibbonBar>
 
-                &lt;sync:RibbonBar Header="{Binding MenuHeader2}"&gt;
+                <sync:RibbonBar Header="{Binding MenuHeader2}">
 
-                    &lt;sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem3}"/&gt;
+                    <sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem3}"/>
 
-                    &lt;sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem4}"/&gt;
+                    <sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem4}"/>
 
-                    &lt;sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem6}"/&gt;
+                    <sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem6}"/>
 
-                &lt;/sync:RibbonBar&gt;
+                </sync:RibbonBar>
 
-            &lt;/StackPanel&gt;
+            </StackPanel>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
 
 
@@ -376,51 +376,51 @@ Data Template for Folder Ribbon Tab,
 
 
 
-&lt;DataTemplate x:Key="Folder"&gt;
+<DataTemplate x:Key="Folder">
 
-            &lt;StackPanel Orientation="Horizontal"&gt;
+            <StackPanel Orientation="Horizontal">
 
-                &lt;sync:RibbonBar Header="{Binding MenuHeader1}"&gt;
+                <sync:RibbonBar Header="{Binding MenuHeader1}">
 
-                    &lt;sync:RibbonButton SizeForm="Large" Label="{Binding MenuItem1}"&gt;
+                    <sync:RibbonButton SizeForm="Large" Label="{Binding MenuItem1}">
 
-                        &lt;sync:RibbonButton.ToolTip&gt;
+                        <sync:RibbonButton.ToolTip>
 
-                            &lt;sync:ScreenTip VerticalOffset="10" Description="{Binding MenuItem1}"&gt;
+                            <sync:ScreenTip VerticalOffset="10" Description="{Binding MenuItem1}">
 
-                                &lt;TextBlock TextWrapping="Wrap" Text="{Binding ToolTip}"/&gt;
+                                <TextBlock TextWrapping="Wrap" Text="{Binding ToolTip}"/>
 
-                            &lt;/sync:ScreenTip&gt;
+                            </sync:ScreenTip>
 
-                        &lt;/sync:RibbonButton.ToolTip&gt;
+                        </sync:RibbonButton.ToolTip>
 
-                    &lt;/sync:RibbonButton&gt;
+                    </sync:RibbonButton>
 
-                    &lt;sync:RibbonButton SizeForm="Large" Label="{Binding MenuItem2}" Padding="3"/&gt;
+                    <sync:RibbonButton SizeForm="Large" Label="{Binding MenuItem2}" Padding="3"/>
 
-                &lt;/sync:RibbonBar&gt;
+                </sync:RibbonBar>
 
-                &lt;sync:RibbonBar Header="{Binding MenuHeader2}"&gt;
+                <sync:RibbonBar Header="{Binding MenuHeader2}">
 
-                    &lt;sync:ButtonPanel&gt;
+                    <sync:ButtonPanel>
 
-                        &lt;sync:RibbonComboBox ItemsSource="{Binding MenuList}" Width="110"/&gt;
+                        <sync:RibbonComboBox ItemsSource="{Binding MenuList}" Width="110"/>
 
-                        &lt;sync:RibbonButton SizeForm="ExtraSmall"/&gt;
+                        <sync:RibbonButton SizeForm="ExtraSmall"/>
 
-                    &lt;/sync:ButtonPanel&gt;
+                    </sync:ButtonPanel>
 
-                    &lt;sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem4}"/&gt;
+                    <sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem4}"/>
 
-                    &lt;sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem6}"/&gt;
+                    <sync:RibbonButton SizeForm="Small" Label="{Binding MenuItem6}"/>
 
-                &lt;/sync:RibbonBar&gt;
+                </sync:RibbonBar>
 
-            &lt;/StackPanel&gt;
+            </StackPanel>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/sync:RibbonWindow.Resources&gt;
+    </sync:RibbonWindow.Resources>
 
 
 
@@ -466,23 +466,23 @@ public class SampleSelector : DataTemplateSelector
 
 
 
-           &lt;sync:Ribbon.ItemContainerStyle&gt;
+           <sync:Ribbon.ItemContainerStyle>
 
-                &lt;Style TargetType="{x:Type sync:RibbonTab}"&gt;
+                <Style TargetType="{x:Type sync:RibbonTab}">
 
-                    &lt;Setter Property="Caption" Value="{Binding Header}"/&gt;
+                    <Setter Property="Caption" Value="{Binding Header}"/>
 
-                    &lt;Setter Property="ContentTemplateSelector"  Value="{StaticResource Selector}"/&gt;
+                    <Setter Property="ContentTemplateSelector"  Value="{StaticResource Selector}"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/sync:Ribbon.ItemContainerStyle&gt;
-
-
+            </sync:Ribbon.ItemContainerStyle>
 
 
 
-{ ![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img4.jpeg) | markdownify }
+
+
+{{ '![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -586,7 +586,7 @@ Removing a tab Item
 
 
 
-{ ![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img5.jpeg) | markdownify }
+{{ '![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -620,7 +620,7 @@ private void RemoveAll_Click_2(object sender, RoutedEventArgs e)
 
 
 
-{ ![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img6.jpeg) | markdownify }
+{{ '![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img6.jpeg)' | markdownify }}
 {:.image }
 
 

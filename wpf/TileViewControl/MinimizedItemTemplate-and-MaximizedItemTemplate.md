@@ -27,9 +27,9 @@ The following code example illustrates how to add the MinimizedItemTemplate and 
 
 
 
-&lt;DataTemplate x:Name="MinTemplate"&gt;
+<DataTemplate x:Name="MinTemplate">
 
-    &lt;Grid&gt;         
+    <Grid>         
 
       <TextBlock Grid.Row="0" HorizontalAlignment="Center" FontSize="18" 
 
@@ -37,25 +37,25 @@ The following code example illustrates how to add the MinimizedItemTemplate and 
 
                  FontWeight="ExtraBold" Foreground="DarkBlue"/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
-&lt;DataTemplate x:Name="MaxTemplate"&gt;
+<DataTemplate x:Name="MaxTemplate">
 
-&lt;Grid Background="{StaticResource background}"&gt;
+<Grid Background="{StaticResource background}">
 
-   &lt;Grid.RowDefinitions&gt;
+   <Grid.RowDefinitions>
 
-            &lt;RowDefinition Height="*"/&gt;
+            <RowDefinition Height="*"/>
 
-            &lt;RowDefinition Height="*"/&gt;                        
+            <RowDefinition Height="*"/>                        
 
-   &lt;/Grid.RowDefinitions&gt;
+   </Grid.RowDefinitions>
 
-   &lt;Image Grid.Row="0" Source="{Binding MinImageSource}"/&gt;                    
+   <Image Grid.Row="0" Source="{Binding MinImageSource}"/>                    
 
-   &lt;StackPanel Orientation="Vertical" Grid.Row="1" Margin="50,25,0,0"&gt;
+   <StackPanel Orientation="Vertical" Grid.Row="1" Margin="50,25,0,0">
 
       <TextBlock Text="Name:" HorizontalAlignment="Left" 
 
@@ -81,23 +81,23 @@ The following code example illustrates how to add the MinimizedItemTemplate and 
 
                  FontFamily="Tahoma"/>
 
-      &lt;TextBlock Text="{Binding Name}" HorizontalAlignment="Left"/&gt;
+      <TextBlock Text="{Binding Name}" HorizontalAlignment="Left"/>
 
-      &lt;TextBlock Text="{Binding DOB}" HorizontalAlignment="Left"/&gt;
+      <TextBlock Text="{Binding DOB}" HorizontalAlignment="Left"/>
 
-      &lt;TextBlock Text="{Binding Age}" HorizontalAlignment="Left"/&gt;
+      <TextBlock Text="{Binding Age}" HorizontalAlignment="Left"/>
 
-      &lt;TextBlock Text="{Binding State}" HorizontalAlignment="Left"/&gt;
+      <TextBlock Text="{Binding State}" HorizontalAlignment="Left"/>
 
-      &lt;TextBlock Text="{Binding Designation}" HorizontalAlignment="Left"/&gt;
+      <TextBlock Text="{Binding Designation}" HorizontalAlignment="Left"/>
 
-      &lt;TextBlock Text="{Binding Experience}" HorizontalAlignment="Left"/&gt;
+      <TextBlock Text="{Binding Experience}" HorizontalAlignment="Left"/>
 
-   &lt;/StackPanel&gt;
+   </StackPanel>
 
-&lt;/Grid&gt;
+</Grid>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
@@ -115,7 +115,7 @@ The following code example illustrates how to add the MinimizedItemTemplate and 
 
 
 
-{ ![](MinimizedItemTemplate-and-MaximizedItemTemplate_images/MinimizedItemTemplate-and-MaximizedItemTemplate_img1.png) | markdownify }
+{{ '![](MinimizedItemTemplate-and-MaximizedItemTemplate_images/MinimizedItemTemplate-and-MaximizedItemTemplate_img1.png)' | markdownify }}
 {:.image }
 
 

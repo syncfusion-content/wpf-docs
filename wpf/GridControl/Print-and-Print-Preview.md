@@ -29,7 +29,7 @@ this.grid.ShowPrintDialog();
 
 Output
 
-{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img1.jpeg) | markdownify }
+{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -43,7 +43,7 @@ Clicking the Print button allows the user to send the grid content to the printe
 
 
 
-{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img2.jpeg) | markdownify }
+{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -62,7 +62,7 @@ For more information, check the following link: [http://msdn.microsoft.com/en-us
 
 
 
-{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img3.jpeg) | markdownify }
+{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -77,7 +77,7 @@ The options in this drop-down allow you select the color for the data to be prin
 
 
 
-{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img4.jpeg) | markdownify }
+{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87,7 +87,7 @@ The options in this drop-down allow you select the required percentage magnifica
 
 
 
-{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img5.jpeg) | markdownify }
+{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -95,25 +95,25 @@ Navigation Options
 
 The Print dialog provides four navigational buttons to navigate the grid preview:
 
-{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img6.jpeg) | markdownify }
+{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img6.jpeg)' | markdownify }}
 {:.image }
 -This button allows you to move to the first page 
 
 
 
-{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img7.jpeg) | markdownify }
+{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img7.jpeg)' | markdownify }}
 {:.image }
 -This button allows you to move to the last page 
 
 
 
-{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img8.jpeg) | markdownify }
+{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img8.jpeg)' | markdownify }}
 {:.image }
 -This button allows you to move to the previous page 
 
 
 
-{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img9.jpeg) | markdownify }
+{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img9.jpeg)' | markdownify }}
 {:.image }
 -This button allows you to move to the next page 
 
@@ -123,7 +123,7 @@ The following image shows the next button highlighted for an example.
 
 
 
-{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img10.jpeg) | markdownify }
+{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -143,35 +143,35 @@ Headers and Footers can be added to the document to be printed.
 
 
 
-&lt;syncfusion:GridControl x:Name="grid" PrintHeaderHeight="40" PrintFooterHeight="40"&gt;
+<syncfusion:GridControl x:Name="grid" PrintHeaderHeight="40" PrintFooterHeight="40">
 
-                        &lt;syncfusion:GridControl.PrintHeaderTemplate&gt;
+                        <syncfusion:GridControl.PrintHeaderTemplate>
 
-                            &lt;DataTemplate&gt;
+                            <DataTemplate>
 
-                                &lt;Border CornerRadius="5" BorderBrush="Crimson" BorderThickness="2" HorizontalAlignment="Stretch"&gt;
+                                <Border CornerRadius="5" BorderBrush="Crimson" BorderThickness="2" HorizontalAlignment="Stretch">
 
-                                    &lt;TextBlock Text="Header Template" FontSize="24" FontFamily="Calibri" HorizontalAlignment="Center" /&gt;
+                                    <TextBlock Text="Header Template" FontSize="24" FontFamily="Calibri" HorizontalAlignment="Center" />
 
-                                &lt;/Border&gt;
+                                </Border>
 
-                            &lt;/DataTemplate&gt;
+                            </DataTemplate>
 
-                        &lt;/syncfusion:GridControl.PrintHeaderTemplate&gt;
+                        </syncfusion:GridControl.PrintHeaderTemplate>
 
-                        &lt;syncfusion:GridControl.PrintFooterTemplate&gt;
+                        <syncfusion:GridControl.PrintFooterTemplate>
 
-                            &lt;DataTemplate&gt;
+                            <DataTemplate>
 
-                                &lt;Border CornerRadius="5" BorderBrush="Red" BorderThickness="2" HorizontalAlignment="Stretch"&gt;
+                                <Border CornerRadius="5" BorderBrush="Red" BorderThickness="2" HorizontalAlignment="Stretch">
 
-                                    &lt;TextBlock Text="Footer Template" FontSize="24" FontFamily="Calibri" HorizontalAlignment="Center" /&gt;
+                                    <TextBlock Text="Footer Template" FontSize="24" FontFamily="Calibri" HorizontalAlignment="Center" />
 
-                                &lt;/Border&gt;
+                                </Border>
 
-                            &lt;/DataTemplate&gt;
+                            </DataTemplate>
 
-                        &lt;/syncfusion:GridControl.PrintFooterTemplate&gt;
+                        </syncfusion:GridControl.PrintFooterTemplate>
 
 
 
@@ -179,7 +179,7 @@ Output
 
 The following image is the output of the code above. 
 
-{ ![](Print-and-Print-Preview_images/Print-and-Print-Preview_img11.jpeg) | markdownify }
+{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img11.jpeg)' | markdownify }}
 {:.image }
 
 

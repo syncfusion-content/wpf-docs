@@ -452,7 +452,7 @@ Complete = 20d
 
                     >
 
-                &lt;gantt:GanttControl.TaskAttributeMapping&gt;
+                <gantt:GanttControl.TaskAttributeMapping>
 
                     <gantt:TaskAttributeMapping TaskIdMapping="Id"
 
@@ -466,9 +466,9 @@ Complete = 20d
 
                                                 DurationMapping="Duration"/>
 
-                &lt;/gantt:GanttControl.TaskAttributeMapping&gt;
+                </gantt:GanttControl.TaskAttributeMapping>
 
-&lt;/gantt:GanttControl&gt;
+</gantt:GanttControl>
 
 
 
@@ -610,7 +610,7 @@ public class Task : NotificationObject
 
                 {
 
-                    if (value &lt;= childTask.Min(s =&gt; s.stDate) && stDate != value)
+                    if (value <= childTask.Min(s => s.stDate) && stDate != value)
 
                         stDate = value;
 
@@ -980,7 +980,7 @@ _Note: If you use the TaskDetails class as your business object, then you should
 
                     >
 
-                &lt;gantt:GanttControl.TaskAttributeMapping&gt;
+                <gantt:GanttControl.TaskAttributeMapping>
 
                     <gantt:TaskAttributeMapping TaskIdMapping="Id"
 
@@ -994,9 +994,9 @@ _Note: If you use the TaskDetails class as your business object, then you should
 
                                                 DurationMapping="Duration"/>
 
-                &lt;/gantt:GanttControl.TaskAttributeMapping&gt;
+                </gantt:GanttControl.TaskAttributeMapping>
 
-&lt;/gantt:GanttControl&gt;
+</gantt:GanttControl>
 
 
 
@@ -1006,7 +1006,7 @@ The corresponding output for the code is as follows.
 
 
 
-{ ![](Auto-Update-Hierarchy_images/Auto-Update-Hierarchy_img1.png) | markdownify }
+{{ '![](Auto-Update-Hierarchy_images/Auto-Update-Hierarchy_img1.png)' | markdownify }}
 {:.image }
 
 

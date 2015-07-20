@@ -15,49 +15,49 @@ The Icon property is used to specify the icon for Document children. Consider th
 
 [XAML]
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-  &lt;DrawingImage x:Key="closeBlue"&gt;
+  <DrawingImage x:Key="closeBlue">
 
-     &lt;DrawingImage.Drawing&gt;
+     <DrawingImage.Drawing>
 
-       &lt;DrawingGroup&gt;
+       <DrawingGroup>
 
-          &lt;DrawingGroup.Children&gt;
+          <DrawingGroup.Children>
 
-             &lt;GeometryDrawing Brush="#009A9A25" Geometry="F1 M 2.19338,1.73276L 18.1934,1.73276L 18.1934,17.7328L 2.19338,17.7328L 2.19338,1.73276 Z "/&gt;
+             <GeometryDrawing Brush="#009A9A25" Geometry="F1 M 2.19338,1.73276L 18.1934,1.73276L 18.1934,17.7328L 2.19338,17.7328L 2.19338,1.73276 Z "/>
 
-             &lt;GeometryDrawing Brush="#dd656564" Geometry="F1 M 16.516,5.58942L 12.4854,5.58942L 10.1947,7.79742L 7.89471,5.58942L 3.87071,5.58942L 8.13871,9.76942L 3.87071,13.8761L 8.03871,13.8761L 10.1947,11.7734L 12.3427,13.8761L 16.5134,13.8761L 12.2427,9.76942L 16.516,5.58942 Z "/&gt;
+             <GeometryDrawing Brush="#dd656564" Geometry="F1 M 16.516,5.58942L 12.4854,5.58942L 10.1947,7.79742L 7.89471,5.58942L 3.87071,5.58942L 8.13871,9.76942L 3.87071,13.8761L 8.03871,13.8761L 10.1947,11.7734L 12.3427,13.8761L 16.5134,13.8761L 12.2427,9.76942L 16.516,5.58942 Z "/>
 
-          &lt;/DrawingGroup.Children&gt;
+          </DrawingGroup.Children>
 
-       &lt;/DrawingGroup&gt;
+       </DrawingGroup>
 
-     &lt;/DrawingImage.Drawing&gt;
+     </DrawingImage.Drawing>
 
-  &lt;/DrawingImage&gt;
+  </DrawingImage>
 
-&lt;/Window.Resources&gt;
-
-
-
-    &lt;Grid&gt;
-
-        &lt;syncfusion:DockingManager Name="DockingManager" ContainerMode="MDI"                UseDocumentContainer="True"&gt;
-
-            &lt;syncfusion:DockingManager.Icon&gt;
-
-                &lt;ImageBrush ImageSource="{StaticResource closeBlue}"/&gt;
-
-            &lt;/syncfusion:DockingManager.Icon&gt;
+</Window.Resources>
 
 
 
-        &lt;Grid Name="grid1"  syncfusion:DockingManager.State="Document"/&gt;
+    <Grid>
 
-        &lt;/syncfusion:DockingManager&gt;
+        <syncfusion:DockingManager Name="DockingManager" ContainerMode="MDI"                UseDocumentContainer="True">
 
-   &lt;/Grid&gt;
+            <syncfusion:DockingManager.Icon>
+
+                <ImageBrush ImageSource="{StaticResource closeBlue}"/>
+
+            </syncfusion:DockingManager.Icon>
+
+
+
+        <Grid Name="grid1"  syncfusion:DockingManager.State="Document"/>
+
+        </syncfusion:DockingManager>
+
+   </Grid>
 
 
 
@@ -65,7 +65,7 @@ In the above code a DrawingImage object is created as a staticresource and assig
 
 
 
-{ ![C:/Users/Hemanth/Desktop/Documentation/Images/Icon.png](Set-Header-Icon-for-MDI-Window_images/Set-Header-Icon-for-MDI-Window_img1.png) | markdownify }
+{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/Icon.png](Set-Header-Icon-for-MDI-Window_images/Set-Header-Icon-for-MDI-Window_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -23,7 +23,7 @@ XAML
 
 
 
-&lt;syncfusion:HierarchyNavigator x:Name="hierarchyNavigator"/&gt;
+<syncfusion:HierarchyNavigator x:Name="hierarchyNavigator"/>
 
 
 
@@ -49,7 +49,7 @@ SkinStorage.SetVisualStyle(this, "Default");
 
 
 
-{ ![](Skins_images/Skins_img1.png) | markdownify }
+{{ '![](Skins_images/Skins_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -63,7 +63,7 @@ SkinStorage.SetVisualStyle(this, "Office2007Blue");
 
 
 
-{ ![](Skins_images/Skins_img2.png) | markdownify }
+{{ '![](Skins_images/Skins_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -77,7 +77,7 @@ SkinStorage.SetVisualStyle(this, "Office2007Black");
 
 
 
-{ ![](Skins_images/Skins_img3.png) | markdownify }
+{{ '![](Skins_images/Skins_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -91,7 +91,7 @@ SkinStorage.SetVisualStyle(this, "Office2007Silver");
 
 
 
-{ ![](Skins_images/Skins_img4.png) | markdownify }
+{{ '![](Skins_images/Skins_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -105,7 +105,7 @@ SkinStorage.SetVisualStyle(this, "Blend");
 
 
 
-{ ![](Skins_images/Skins_img5.png) | markdownify }
+{{ '![](Skins_images/Skins_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -117,7 +117,7 @@ SkinStorage.SetVisualStyle(this, “Metro");
 
 
 
-{ ![](Skins_images/Skins_img6.png) | markdownify }
+{{ '![](Skins_images/Skins_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -129,7 +129,7 @@ SkinStorage.SetVisualStyle(this, “Transparent");
 
 
 
-{ ![](Skins_images/Skins_img7.png) | markdownify }
+{{ '![](Skins_images/Skins_img7.png)' | markdownify }}
 {:.image }
 
 

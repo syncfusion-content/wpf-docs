@@ -15,7 +15,7 @@ The Digital Characters in the Digital Gauge can be viewed in different types of 
 
 [XAML]
 
-   &lt;syncfusion:SfDigitalGauge Value="GAUGE" /&gt;    
+   <syncfusion:SfDigitalGauge Value="GAUGE" />    
 
 
 
@@ -33,7 +33,7 @@ The Digital Characters in the Digital Gauge can be viewed in different types of 
 
 Screenshot:
 
-{ ![](Digital-Characters_images/Digital-Characters_img1.png) | markdownify }
+{{ '![](Digital-Characters_images/Digital-Characters_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -45,7 +45,7 @@ The digital characters set with the value property of the Digital Gauge are disp
 
 [XAML]
 
-&lt;syncfusion:SfDigitalGauge Value="12345"  CharacterType="SegmentSeven" /&gt;
+<syncfusion:SfDigitalGauge Value="12345"  CharacterType="SegmentSeven" />
 
 
 
@@ -65,7 +65,7 @@ Screenshot:
 
 
 
-{ ![](Digital-Characters_images/Digital-Characters_img2.png) | markdownify }
+{{ '![](Digital-Characters_images/Digital-Characters_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -79,7 +79,7 @@ The digital characters set with the value property of the Digital Gauge are disp
 
 [XAML]  
 
-&lt;syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentFourteen" /&gt;
+<syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentFourteen" />
 
 
 
@@ -101,7 +101,7 @@ Screenshot:
 
 
 
-{ ![](Digital-Characters_images/Digital-Characters_img3.png) | markdownify }
+{{ '![](Digital-Characters_images/Digital-Characters_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -113,7 +113,7 @@ The digital characters set with the value property of the digital gauge are disp
 
 [XAML]
 
-  &lt;syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentSixteen" /&gt; 
+  <syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentSixteen" /> 
 
 
 
@@ -135,7 +135,7 @@ Screenshot:
 
 
 
-{ ![](Digital-Characters_images/Digital-Characters_img4.png) | markdownify }
+{{ '![](Digital-Characters_images/Digital-Characters_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -147,7 +147,7 @@ The digital characters set with the value property of the Digital Gauge are disp
 
 [XAML]
 
-&lt;syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="EightCrossEightDotMatrix" /&gt;
+<syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="EightCrossEightDotMatrix" />
 
 
 
@@ -169,7 +169,7 @@ Screenshot:
 
 
 
-{ ![](Digital-Characters_images/Digital-Characters_img5.png) | markdownify }
+{{ '![](Digital-Characters_images/Digital-Characters_img5.png)' | markdownify }}
 {:.image }
 
 

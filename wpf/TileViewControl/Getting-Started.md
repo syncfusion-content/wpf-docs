@@ -13,7 +13,7 @@ documentation: ug
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -31,7 +31,7 @@ The following are the steps to create the TileViewControl using Visual Studio.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -42,7 +42,7 @@ The following are the steps to create the TileViewControl using Visual Studio.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -63,7 +63,7 @@ The TileViewControl can also be created and configured using Expression Blend. T
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -73,14 +73,14 @@ The TileViewControl can also be created and configured using Expression Blend. T
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
 4. To add items to the TileViewControl using the Collection Editor, select TileViewControl and go to Properties.
 5. Click Items (Collection) under Common Properties.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -91,7 +91,7 @@ The TileViewControl can also be created and configured using Expression Blend. T
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -109,17 +109,17 @@ The TileViewControl can also be created through XAML. The following code example
 
 [XAML]
 
-&lt;syncfusion:TileViewControl Name="tileViewControl1" &gt;
+<syncfusion:TileViewControl Name="tileViewControl1" >
 
-     &lt;syncfusion:TileViewItem Header="Item 1" /&gt;
+     <syncfusion:TileViewItem Header="Item 1" />
 
-     &lt;syncfusion:TileViewItem Header="Item 2" /&gt;
+     <syncfusion:TileViewItem Header="Item 2" />
 
-     &lt;syncfusion:TileViewItem Header="Item 3" /&gt;
+     <syncfusion:TileViewItem Header="Item 3" />
 
-     &lt;syncfusion:TileViewItem Header="Item 4" /&gt;
+     <syncfusion:TileViewItem Header="Item 4" />
 
- &lt;/syncfusion:TileViewControl&gt;
+ </syncfusion:TileViewControl>
 
 
 
@@ -171,7 +171,7 @@ This will generate the following TileViewControl.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 

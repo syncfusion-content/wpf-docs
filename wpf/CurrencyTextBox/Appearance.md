@@ -35,7 +35,7 @@ The steps to edit the CurrencyTextBox Template by using Expression Blend are as 
 
 
 
-{ ![](Appearance_images/Appearance_img1.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -45,7 +45,7 @@ The steps to edit the CurrencyTextBox Template by using Expression Blend are as 
 
 
 
-{ ![](Appearance_images/Appearance_img2.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -58,7 +58,7 @@ Another way to edit the Template is as follows:
 
 
 
-{ ![](Appearance_images/Appearance_img3.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -68,7 +68,7 @@ The result of these steps is an XAML, which is placed within your application. T
 
 
 
-&lt;syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Style="{StaticResource CurrencyTextBoxStyle1}"/&gt;
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Style="{StaticResource CurrencyTextBoxStyle1}"/>
 
 
 
@@ -76,7 +76,7 @@ All template items can now be found in the Objects and Timeline window.
 
 
 
-{ ![](Appearance_images/Appearance_img4.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -84,7 +84,7 @@ Now you can replace the existing Template setter and Triggers with your own crea
 
 
 
-{ ![](Appearance_images/Appearance_img5.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -92,11 +92,11 @@ Here is a simple example to customize the UnFocused state of the CurrencyTextBox
 
 
 
-&lt;Trigger Property="IsFocused" Value="False"&gt;
+<Trigger Property="IsFocused" Value="False">
 
-    &lt;Setter Property="Background" TargetName="Border" Value="LightGray"/&gt;
+    <Setter Property="Background" TargetName="Border" Value="LightGray"/>
 
-&lt;/Trigger&gt;
+</Trigger>
 
 
 
@@ -104,7 +104,7 @@ When the control loses its focus, the Background color is set to LightGray. Simi
 
 
 
-{ ![](Appearance_images/Appearance_img6.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img6.png)' | markdownify }}
 {:.image }
 
 

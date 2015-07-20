@@ -29,21 +29,21 @@ The following code example illustrates how to dock the Chart Legend in the Chart
 
 
 
-&lt;chart:Chart.Legends&gt;
+<chart:Chart.Legends>
 
-&lt;chart:ChartLegend chart:Chart.Dock="Left"&gt;
+<chart:ChartLegend chart:Chart.Dock="Left">
 
-&lt;/chart:ChartLegend&gt;
+</chart:ChartLegend>
 
-&lt;/chart:Chart.Legends&gt;
+</chart:Chart.Legends>
 
 
 
-&lt;syncfusion:ChartArea.Legend&gt;
+<syncfusion:ChartArea.Legend>
 
-&lt;syncfusion:ChartLegend Name="Legend1" syncfusion:ChartDockPanel.Dock="Left"/&gt;
+<syncfusion:ChartLegend Name="Legend1" syncfusion:ChartDockPanel.Dock="Left"/>
 
-&lt;/syncfusion:ChartArea.Legend&gt;
+</syncfusion:ChartArea.Legend>
 
 
 
@@ -55,11 +55,11 @@ ChartDockPanel.SetDock(Legend1, ChartDock.Left);
 
 
 
-{ ![](Change-the-position-of-the-Chart-Legend_images/Change-the-position-of-the-Chart-Legend_img1.png) | markdownify }
+{{ '![](Change-the-position-of-the-Chart-Legend_images/Change-the-position-of-the-Chart-Legend_img1.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Change-the-position-of-the-Chart-Legend_images/Change-the-position-of-the-Chart-Legend_img2.png) | markdownify }
+{{ '![](Change-the-position-of-the-Chart-Legend_images/Change-the-position-of-the-Chart-Legend_img2.png)' | markdownify }}
 {:.image }
 
 

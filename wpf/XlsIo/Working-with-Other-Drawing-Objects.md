@@ -166,7 +166,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img1.png) | markdownify }
+{{ '![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -328,7 +328,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img2.png) | markdownify }
+{{ '![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -488,7 +488,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img3.png) | markdownify }
+{{ '![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -656,7 +656,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img4.png) | markdownify }
+{{ '![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -1619,7 +1619,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img5.png) | markdownify }
+{{ '![](Working-with-Other-Drawing-Objects_images/Working-with-Other-Drawing-Objects_img5.png)' | markdownify }}
 {:.image }
 
 

@@ -19,27 +19,27 @@ The headers of all the Tab Items are displayed as the menu items of the Tab List
 
 
 
-&lt;!-- Adding TabControlExt  --&gt;
+<!-- Adding TabControlExt  -->
 
-&lt;syncfusion:TabControlExt Name="tabControlExt" ShowTabListContextMenu="True"&gt;
-
-
-
-    &lt;!-- Adding TabItemExt --&gt;
-
-    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"&gt;
-
-    &lt;/syncfusion:TabItemExt&gt;
+<syncfusion:TabControlExt Name="tabControlExt" ShowTabListContextMenu="True">
 
 
 
-    &lt;!-- Adding TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"&gt;
+    <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1">
 
-    &lt;/syncfusion:TabItemExt&gt;
+    </syncfusion:TabItemExt>
 
-&lt;/syncfusion:TabControlExt&gt;
+
+
+    <!-- Adding TabItemExt -->
+
+    <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2">
+
+    </syncfusion:TabItemExt>
+
+</syncfusion:TabControlExt>
 
 
 
@@ -89,7 +89,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-{ ![](Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-List_images/Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-List_img1.jpeg) | markdownify }
+{{ '![](Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-List_images/Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-List_img1.jpeg)' | markdownify }}
 {:.image }
 
 

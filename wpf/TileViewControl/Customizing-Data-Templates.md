@@ -19,45 +19,45 @@ You can customize how a business object is displayed as Tileview using the _Item
 
 [XAML]
 
-   &lt;syncfusion:TileViewControl ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   &gt;
+   <syncfusion:TileViewControl ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   >
 
-            &lt;syncfusion:TileViewControl.ItemContainerStyle&gt;
+            <syncfusion:TileViewControl.ItemContainerStyle>
 
-                &lt;Style TargetType="syncfusion:TileViewItem"&gt;
+                <Style TargetType="syncfusion:TileViewItem">
 
-                    &lt;Setter Property="Header" Value="{Binding XPath=@Name}"/&gt;
+                    <Setter Property="Header" Value="{Binding XPath=@Name}"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/syncfusion:TileViewControl.ItemContainerStyle&gt;
+            </syncfusion:TileViewControl.ItemContainerStyle>
 
-            &lt;syncfusion:TileViewControl.ItemTemplate&gt;
+            <syncfusion:TileViewControl.ItemTemplate>
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-                    &lt;Grid Margin="10"&gt;
+                    <Grid Margin="10">
 
-                        &lt;Grid.RowDefinitions&gt;
+                        <Grid.RowDefinitions>
 
-                            &lt;RowDefinition Height="Auto"/&gt;
+                            <RowDefinition Height="Auto"/>
 
-                            &lt;RowDefinition Height="Auto"/&gt;
+                            <RowDefinition Height="Auto"/>
 
-                        &lt;/Grid.RowDefinitions&gt;
+                        </Grid.RowDefinitions>
 
-                        &lt;TextBlock Text="Description: " FontWeight="Bold"/&gt;
+                        <TextBlock Text="Description: " FontWeight="Bold"/>
 
-                        &lt;TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Margin="5,5,0,0" Grid.Row="1"/&gt;
+                        <TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Margin="5,5,0,0" Grid.Row="1"/>
 
-                    &lt;/Grid&gt;
+                    </Grid>
 
 
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-            &lt;/syncfusion:TileViewControl.ItemTemplate&gt;
+            </syncfusion:TileViewControl.ItemTemplate>
 
-        &lt;/syncfusion:TileViewControl&gt;
+        </syncfusion:TileViewControl>
 
 
 
@@ -69,7 +69,7 @@ Implementing the above code will generate the following TileViewControl.
 
 
 
-{ ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png) | markdownify }
+{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -135,47 +135,47 @@ public class TileViewItemTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-&lt;DataTemplate x:Key="CsBookTemplate"&gt;
+<DataTemplate x:Key="CsBookTemplate">
 
-            &lt;Grid Margin="10"&gt;
+            <Grid Margin="10">
 
-                &lt;Grid.RowDefinitions&gt;
+                <Grid.RowDefinitions>
 
-                    &lt;RowDefinition Height="Auto"/&gt;
+                    <RowDefinition Height="Auto"/>
 
-                    &lt;RowDefinition Height="Auto"/&gt;
+                    <RowDefinition Height="Auto"/>
 
-                &lt;/Grid.RowDefinitions&gt;
+                </Grid.RowDefinitions>
 
-                &lt;TextBlock Text="Description: " FontWeight="Bold"/&gt;
+                <TextBlock Text="Description: " FontWeight="Bold"/>
 
-                &lt;TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" FontFamily="Courier New" Foreground="Green" Margin="5,5,0,0" Grid.Row="1"/&gt;
+                <TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" FontFamily="Courier New" Foreground="Green" Margin="5,5,0,0" Grid.Row="1"/>
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
 
 
-        &lt;DataTemplate x:Key="WpfBookTemplate"&gt;
+        <DataTemplate x:Key="WpfBookTemplate">
 
-            &lt;Grid Margin="10"&gt;
+            <Grid Margin="10">
 
-                &lt;Grid.RowDefinitions&gt;
+                <Grid.RowDefinitions>
 
-                    &lt;RowDefinition Height="Auto"/&gt;
+                    <RowDefinition Height="Auto"/>
 
-                    &lt;RowDefinition Height="Auto"/&gt;
+                    <RowDefinition Height="Auto"/>
 
-                &lt;/Grid.RowDefinitions&gt;
+                </Grid.RowDefinitions>
 
-                &lt;TextBlock Text="Description: " FontWeight="Bold"/&gt;
+                <TextBlock Text="Description: " FontWeight="Bold"/>
 
-                &lt;TextBlock Text="{Binding XPath=@Description}" FontFamily="Verdana" TextWrapping="Wrap" Margin="5,5,0,0" Foreground="Blue" Grid.Row="1"/&gt;
+                <TextBlock Text="{Binding XPath=@Description}" FontFamily="Verdana" TextWrapping="Wrap" Margin="5,5,0,0" Foreground="Blue" Grid.Row="1"/>
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
 
 
@@ -187,7 +187,7 @@ public class TileViewItemTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-&lt;local:TileViewItemTemplateSelector x:Key="tileViewItemTemplateSelector"/&gt;
+<local:TileViewItemTemplateSelector x:Key="tileViewItemTemplateSelector"/>
 
 
 
@@ -199,21 +199,21 @@ public class TileViewItemTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-&lt;syncfusion:TileViewControl ItemTemplateSelector="{StaticResource tileViewItemTemplateSelector}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  Margin="20" &gt;
+<syncfusion:TileViewControl ItemTemplateSelector="{StaticResource tileViewItemTemplateSelector}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  Margin="20" >
 
-            &lt;syncfusion:TileViewControl.ItemContainerStyle&gt;
+            <syncfusion:TileViewControl.ItemContainerStyle>
 
-                &lt;Style TargetType="syncfusion:TileViewItem"&gt;
+                <Style TargetType="syncfusion:TileViewItem">
 
-                    &lt;Setter Property="Header" Value="{Binding XPath=@Name}"/&gt;
+                    <Setter Property="Header" Value="{Binding XPath=@Name}"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/syncfusion:TileViewControl.ItemContainerStyle&gt;
+            </syncfusion:TileViewControl.ItemContainerStyle>
 
 
 
-        &lt;/syncfusion:TileViewControl&gt;
+        </syncfusion:TileViewControl>
 
 
 
@@ -223,7 +223,7 @@ This will generate the TileViewControl as follows.
 
 
 
-{ ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png) | markdownify }
+{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -239,25 +239,25 @@ You can customize the header of the TileViewItem using the _HeaderTemplate_. The
 
 [XAML]
 
-&lt;DataTemplate x:Key="headerTemplate"&gt;
+<DataTemplate x:Key="headerTemplate">
 
-            &lt;Grid &gt;
+            <Grid >
 
-                &lt;Grid.ColumnDefinitions&gt;
+                <Grid.ColumnDefinitions>
 
-                    &lt;ColumnDefinition Width="Auto"/&gt;
+                    <ColumnDefinition Width="Auto"/>
 
-                    &lt;ColumnDefinition Width="Auto"/&gt;
+                    <ColumnDefinition Width="Auto"/>
 
-                &lt;/Grid.ColumnDefinitions&gt;
+                </Grid.ColumnDefinitions>
 
-                &lt;Image Source="bookicon.png" Stretch="Fill" Width="15" Height="15" Margin="0,0,5,0"/&gt;
+                <Image Source="bookicon.png" Stretch="Fill" Width="15" Height="15" Margin="0,0,5,0"/>
 
-                &lt;TextBlock Text="{Binding XPath=@Name}" Grid.Column="1" FontFamily="Verdana" FontWeight="Bold" Foreground="White"/&gt;
+                <TextBlock Text="{Binding XPath=@Name}" Grid.Column="1" FontFamily="Verdana" FontWeight="Bold" Foreground="White"/>
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
 
 
@@ -269,13 +269,13 @@ You can customize the header of the TileViewItem using the _HeaderTemplate_. The
 
 [XAML]
 
-&lt;syncfusion:TileViewControl  HeaderTemplate="{StaticResource headerTemplate}" ItemTemplate="{StaticResource itemTemplate}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   &gt;
+<syncfusion:TileViewControl  HeaderTemplate="{StaticResource headerTemplate}" ItemTemplate="{StaticResource itemTemplate}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   >
 
 
 
 
 
-        &lt;/syncfusion:TileViewControl&gt;
+        </syncfusion:TileViewControl>
 
 
 
@@ -285,7 +285,7 @@ This will generate the following TileViewControl.
 
 
 
-{ ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png) | markdownify }
+{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)' | markdownify }}
 {:.image }
 
 

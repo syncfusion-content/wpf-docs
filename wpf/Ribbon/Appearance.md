@@ -39,27 +39,27 @@ The following code example illustrates how to set Blend scheme for the Ribbon co
 
 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:syncfusion="http://schemas.syncfusion.com/wpf" Title="Window1" Height="300" Width="320"  syncfusion:SkinStorage.VisualStyle="Blend" >
 
-    &lt;syncfusion:Ribbon x:Name="ribbon"&gt;
+    <syncfusion:Ribbon x:Name="ribbon">
 
-        &lt;syncfusion:Ribbon.ApplicationMenu&gt;
+        <syncfusion:Ribbon.ApplicationMenu>
 
-            &lt;syncfusion:ApplicationMenu Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" &gt;
+            <syncfusion:ApplicationMenu Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" >
 
-            &lt;/syncfusion:ApplicationMenu&gt;
+            </syncfusion:ApplicationMenu>
 
-        &lt;/syncfusion:Ribbon.ApplicationMenu&gt;
+        </syncfusion:Ribbon.ApplicationMenu>
 
-        &lt;syncfusion:RibbonTab Caption="Message" syncfusion:Ribbon.KeyTip="H"&gt;
+        <syncfusion:RibbonTab Caption="Message" syncfusion:Ribbon.KeyTip="H">
 
-            &lt;syncfusion:RibbonBar Header="Clipboard" Name="barClipboaurd" &gt;
+            <syncfusion:RibbonBar Header="Clipboard" Name="barClipboaurd" >
 
-            &lt;/syncfusion:RibbonBar&gt;
+            </syncfusion:RibbonBar>
 
-        &lt;/syncfusion:RibbonTab&gt;
+        </syncfusion:RibbonTab>
 
-    &lt;/syncfusion:Ribbon&gt;
+    </syncfusion:Ribbon>
 
-&lt;/syncfusion:RibbonWindow&gt;
+</syncfusion:RibbonWindow>
 
 
 
@@ -67,7 +67,7 @@ Run the application. The following output is displayed.
 
 
 
-{ ![](Appearance_images/Appearance_img1.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89,7 +89,7 @@ Ribbon.SetActiveColorScheme(ribbon, Brushes.Red);
 
 
 
-{ ![](Appearance_images/Appearance_img2.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -126,7 +126,7 @@ The following code example illustrates how to set the Blend visual style for the
 <table>
 <tr>
 <td>
-[XAML]<syncfusion:RibbonWindow x:Class="EssentialRibbonApplication.RibbonWindow1"  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"                          Title="Window1" Height="300" Width="320" Loaded="RibbonWindow_Loaded"  syncfusion:SkinStorage.VisualStyle="Blend">    &lt;syncfusion:Ribbon x:Name="ribbon" Loaded="ribbon_Loaded" &gt;        &lt;syncfusion:Ribbon.ApplicationMenu&gt;            &lt;syncfusion:ApplicationMenu Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" &gt;            &lt;/syncfusion:ApplicationMenu&gt;        &lt;/syncfusion:Ribbon.ApplicationMenu&gt;        &lt;syncfusion:RibbonTab Caption="Message"  syncfusion:Ribbon.KeyTip="H" IsChecked="True"&gt;            &lt;syncfusion:RibbonBar Header="Clipboard" Name="barClipboaurd" &gt;            &lt;/syncfusion:RibbonBar&gt;        &lt;/syncfusion:RibbonTab&gt;    &lt;/syncfusion:Ribbon&gt;&lt;/syncfusion:RibbonWindow&gt;</td></tr>
+[XAML]<syncfusion:RibbonWindow x:Class="EssentialRibbonApplication.RibbonWindow1"  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"                          Title="Window1" Height="300" Width="320" Loaded="RibbonWindow_Loaded"  syncfusion:SkinStorage.VisualStyle="Blend">    <syncfusion:Ribbon x:Name="ribbon" Loaded="ribbon_Loaded" >        <syncfusion:Ribbon.ApplicationMenu>            <syncfusion:ApplicationMenu Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" >            </syncfusion:ApplicationMenu>        </syncfusion:Ribbon.ApplicationMenu>        <syncfusion:RibbonTab Caption="Message"  syncfusion:Ribbon.KeyTip="H" IsChecked="True">            <syncfusion:RibbonBar Header="Clipboard" Name="barClipboaurd" >            </syncfusion:RibbonBar>        </syncfusion:RibbonTab>    </syncfusion:Ribbon></syncfusion:RibbonWindow></td></tr>
 <tr>
 <td>
 [C#]// Set "Blend" visual style for the Ribbon control.SkinStorage.SetVisualStyle(this, "Blend");</td></tr>
@@ -137,7 +137,7 @@ Run the application. The following output is displayed.
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/ribbon/blend.png](Appearance_images/Appearance_img3.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/blend.png](Appearance_images/Appearance_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -147,55 +147,55 @@ The following figures illustrate how each built-in visual style appears in the R
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2007blue.png](Appearance_images/Appearance_img4.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2007blue.png](Appearance_images/Appearance_img4.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2007black.png](Appearance_images/Appearance_img5.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2007black.png](Appearance_images/Appearance_img5.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2007silver.png](Appearance_images/Appearance_img6.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2007silver.png](Appearance_images/Appearance_img6.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2010Blue.png](Appearance_images/Appearance_img7.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2010Blue.png](Appearance_images/Appearance_img7.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Appearance_images/Appearance_img8.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img8.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Appearance_images/Appearance_img9.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img9.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/ribbon/vs2010.png](Appearance_images/Appearance_img10.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/vs2010.png](Appearance_images/Appearance_img10.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/ribbon/metro.png](Appearance_images/Appearance_img11.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/metro.png](Appearance_images/Appearance_img11.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/ribbon/transparent.png](Appearance_images/Appearance_img12.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/transparent.png](Appearance_images/Appearance_img12.png)' | markdownify }}
 {:.image }
 
 

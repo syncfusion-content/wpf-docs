@@ -386,7 +386,7 @@ You can use the EncryptDocument method to protect a Word document with a passwor
 
 
 
-{ ![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img1.png) | markdownify }
+{{ '![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -420,7 +420,7 @@ Essential DocIO provides support to restrict a Word document from editing. All t
 
 
 
-{ ![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img2.png) | markdownify }
+{{ '![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -456,7 +456,7 @@ Document Properties contain general information about the document such as autho
 
 To view or edit the document properties, go to File menu and click Properties in Microsoft Word. The Document Properties dialog box appears as follows.
 
-{ ![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img3.png) | markdownify }
+{{ '![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -564,7 +564,7 @@ CustomDocumentProperties class enables you to create and save your own custom pr
 
 
 
-{ ![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img4.png) | markdownify }
+{{ '![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -691,7 +691,7 @@ To set the background effects in a Microsoft Word document, open the Design menu
 
 
 
-{ ![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img5.png) | markdownify }
+{{ '![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -765,7 +765,7 @@ The following screenshot shows the Fill Effects dialog box that appears.
 
 
 
-{ ![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img6.png) | markdownify }
+{{ '![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -873,7 +873,7 @@ Gets or sets the watermark type such as picture or text or none.</td></tr>
 
 TextWatermark class represents text watermarks in a Word document. The following screenshot illustrates the Text Watermark settings.
 
-{ ![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img7.png) | markdownify }
+{{ '![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -978,7 +978,7 @@ The following code example illustrates how to use the TextWatermark class.
 
 PictureWatermark class represents picture watermarks in a Word document.
 
-{ ![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img8.png) | markdownify }
+{{ '![](141-Working-with-Word-Documents_images/141-Working-with-Word-Documents_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -1038,7 +1038,7 @@ Gets or sets picture scaling (in percent).</td></tr>
 <tr>
 <td>
 Washout</td><td>
-Gets or sets a value indicating whether washout effect needs to be applied for Picture watermark. Default value is set to {{ '_true_' | markdownify }}.</td></tr>
+Gets or sets a value indicating whether washout effect needs to be applied for Picture watermark. Default value is set to {{{ ''_true_'' | markdownify }}}.</td></tr>
 </table>
 
 

@@ -172,7 +172,7 @@ document.Close(True)
 
 The Document settings help in storing information about the document. It can also control the way they are displayed when they are open in the viewer.
 
-{ ![C:/Users/george/Desktop/UGScreenShots/DocumentInformation.png](Document-Settings_images/Document-Settings_img1.png) | markdownify }
+{{ '![C:/Users/george/Desktop/UGScreenShots/DocumentInformation.png](Document-Settings_images/Document-Settings_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -331,7 +331,7 @@ document.Save("Sample.pdf")
 
 document.Close(True)
 
-{ ![](Document-Settings_images/Document-Settings_img2.png) | markdownify }
+{{ '![](Document-Settings_images/Document-Settings_img2.png)' | markdownify }}
 {:.image }
 
 

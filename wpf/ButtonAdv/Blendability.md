@@ -18,7 +18,7 @@ To edit the ButtonAdv control:
 
 
 
-{ ![](Blendability_images/Blendability_img1.png) | markdownify }
+{{ '![](Blendability_images/Blendability_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -26,7 +26,7 @@ To edit the ButtonAdv control:
 
 
 
-{ ![](Blendability_images/Blendability_img2.png) | markdownify }
+{{ '![](Blendability_images/Blendability_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -36,13 +36,13 @@ To edit the ButtonAdv control:
 
 
 
-{ ![](Blendability_images/Blendability_img3.png) | markdownify }
+{{ '![](Blendability_images/Blendability_img3.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Blendability_images/Blendability_img4.png) | markdownify }
+{{ '![](Blendability_images/Blendability_img4.png)' | markdownify }}
 {:.image }
 
 

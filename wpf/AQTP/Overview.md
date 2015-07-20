@@ -17,7 +17,7 @@ Essential QTP contains custom libraries that enables HP QuickTest Professional (
 
 The custom libraries allow Syncfusion controls to be used as a native object inside the QTP testing environment and enables the testing of applications in QTP. A custom library is written to recognize Syncfusion controls and their events in the QTP. Essential QuickTest Professional enables you to perform regression test on your application containing Syncfusion controls and thereby increasing the reliability of the end product. The following chapters demonstrate usage of the custom library in QTP.
 
-{ ![D:/qtp/qtp/image1.png](Overview_images/Overview_img1.png) | markdownify }
+{{ '![D:/qtp/qtp/image1.png](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 

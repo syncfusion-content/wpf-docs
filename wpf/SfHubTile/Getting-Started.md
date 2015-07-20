@@ -18,9 +18,9 @@ The following code sample shows how to create the hub tile from code-behind and 
 
 
 
-&lt;Page xmlns:control="clr-namespace:Syncfusion.Windows.Controls.Notification;assembly=Syncfusion.SfHubTile.Wpf""&gt;
+<Page xmlns:control="clr-namespace:Syncfusion.Windows.Controls.Notification;assembly=Syncfusion.SfHubTile.Wpf"">
 
- &lt;Grid&gt;
+ <Grid>
 
 
 
@@ -32,13 +32,13 @@ The following code sample shows how to create the hub tile from code-behind and 
 
 
 
-        &lt;/control:SfHubTile&gt;
+        </control:SfHubTile>
 
 
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Page&gt;
+</Page>
 
 
 
@@ -74,9 +74,9 @@ The following code sample shows the usage of the Title, Header and ImageSource p
 
 
 
-&lt;Page xmlns:control="clr-namespace:Syncfusion.Windows.Controls.Notification;assembly=Syncfusion.SfHubTile.Wpf""&gt;
+<Page xmlns:control="clr-namespace:Syncfusion.Windows.Controls.Notification;assembly=Syncfusion.SfHubTile.Wpf"">
 
- &lt;Grid&gt;
+ <Grid>
 
 
 
@@ -96,17 +96,17 @@ ImageSource="NewMail.png"
 
 
 
-        &lt;/control:SfHubTile &gt;
+        </control:SfHubTile >
 
 
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Page&gt;
+</Page>
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/2.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/2.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -125,7 +125,7 @@ Slide Transition
 
 Secondary content will be animated by sliding the tile.
 
-{ ![C:/Users/ApoorvahR/Desktop/3.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/3.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -135,7 +135,7 @@ Secondary content will be animated by fading the tile.
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/4.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/4.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -149,9 +149,9 @@ The following code sample shows how to create a PulsingTile in code-behind and X
 
 
 
-&lt;Page xmlns:control="clr-namespace:Syncfusion.Windows.Controls.Notification;assembly=Syncfusion.SfHubTile.Wpf""&gt;
+<Page xmlns:control="clr-namespace:Syncfusion.Windows.Controls.Notification;assembly=Syncfusion.SfHubTile.Wpf"">
 
-    &lt;Grid&gt;
+    <Grid>
 
 
 
@@ -175,15 +175,15 @@ The following code sample shows how to create a PulsingTile in code-behind and X
 
                    Height="200" />
 
-        &lt;/control:SfPulsingTile&gt;
+        </control:SfPulsingTile>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Page&gt;
+</Page>
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/4.png](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/4.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -215,7 +215,7 @@ The PulseScale property specifies the range of translation in the x- and y-axis 
 
                        HorizontalAlignment="Center" Height="200" />
 
-&lt;/control:SfPulsingTile &gt;
+</control:SfPulsingTile >
 
 
 
@@ -249,7 +249,7 @@ The PulseDuration property specifies the interval for the translation done in th
 
                        HorizontalAlignment="Center" Height="200" />
 
-&lt;/control:SfPulsingTile &gt;
+</control:SfPulsingTile >
 
 
 
@@ -281,7 +281,7 @@ The RadiusX property specifies the range of the translation in the pulsing tile 
 
                        HorizontalAlignment="Center" Height="200" />
 
-&lt;/control: SfPulsingTile&gt;
+</control: SfPulsingTile>
 
 
 
@@ -315,7 +315,7 @@ The RadiusY property specifies the range of the translation in the pulsing tile 
 
                        HorizontalAlignment="Center" Height="200" />
 
-&lt;/control:SfPulsingTile&gt;
+</control:SfPulsingTile>
 
 
 
@@ -393,7 +393,7 @@ Setting the IsFrozen property in a hub tile to true will freeze the animation.
 
       xmlns:shared="clr-namespace:Syncfusion.Windows.Controls;assembly=Syncfusion.SfShared.Wpf"">
 
-    &lt;Grid&gt;
+    <Grid>
 
 
 
@@ -407,25 +407,25 @@ Setting the IsFrozen property in a hub tile to true will freeze the animation.
 
 IsFrozen="True">
 
-            &lt;control:HubTileTransitionCollection&gt;
+            <control:HubTileTransitionCollection>
 
-                &lt;shared:FadeTransition/&gt;
+                <shared:FadeTransition/>
 
-            &lt;/control:HubTileTransitionCollection&gt;
+            </control:HubTileTransitionCollection>
 
-            &lt;control:SfHubTile.SecondaryContent&gt;
+            <control:SfHubTile.SecondaryContent>
 
-                &lt;Image Source="Assets/HubTile.png" Stretch="UniformToFill" /&gt;
+                <Image Source="Assets/HubTile.png" Stretch="UniformToFill" />
 
-            &lt;/control:SfHubTile.SecondaryContent&gt;
+            </control:SfHubTile.SecondaryContent>
 
-        &lt;/control:SfHubTile &gt;
+        </control:SfHubTile >
 
 
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Page&gt;
+</Page>
 
 
 

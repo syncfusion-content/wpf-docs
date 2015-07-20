@@ -17,23 +17,23 @@ Setting ScrollBarVisibility property to Visible:
 
 [XAML]
 
-&lt;shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png"&gt;
+<shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
-   &lt;shared:DropDownMenuGroup IsResizable=”True” ScrollBarVisibility=”Visible”&gt;       
+   <shared:DropDownMenuGroup IsResizable=”True” ScrollBarVisibility=”Visible”>       
 
-&lt;shared:DropDownMenuItem Header="Menu Item 1"/&gt;
+<shared:DropDownMenuItem Header="Menu Item 1"/>
 
-       &lt;shared:DropDownMenuItem Header="Menu Item 2"/&gt;
+       <shared:DropDownMenuItem Header="Menu Item 2"/>
 
-       &lt;shared:DropDownMenuItem Header="Menu Item 3"/&gt;
+       <shared:DropDownMenuItem Header="Menu Item 3"/>
 
-   &lt;/shared:DropDownMenuGroup&gt;
+   </shared:DropDownMenuGroup>
 
-&lt;/shared:DropDownButtonAdv&gt;
+</shared:DropDownButtonAdv>
 
 
 
-{ ![](Scroll-Bar-Support_images/Scroll-Bar-Support_img1.png) | markdownify }
+{{ '![](Scroll-Bar-Support_images/Scroll-Bar-Support_img1.png)' | markdownify }}
 {:.image }
 
 

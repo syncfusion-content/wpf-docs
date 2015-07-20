@@ -14,7 +14,7 @@ Users can handle selected item changed by using the methods Command (ICommand) p
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:HierarchyNavigator HierarchyNavigatorSelectedItemChanged="HierarchyNavigatorSelectedItemChanged" /&gt;</td></tr>
+XAML<syncfusion:HierarchyNavigator HierarchyNavigatorSelectedItemChanged="HierarchyNavigatorSelectedItemChanged" /></td></tr>
 <tr>
 <td>
 C#HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();<br>hierarchyNavigator.HierarchyNavigatorSelectedItemChanged += new HierarchyNavigatorSelectedItemChangedEventHandler(HierarchyNavigatorSelectedItemChanged);</td></tr>

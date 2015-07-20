@@ -17,7 +17,7 @@ The Syncfusion Ribbon control with the Office 2010 UI helps users to create WPF 
 
 
 
-{ ![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img1.png) | markdownify }
+{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -50,7 +50,7 @@ The Office 2010 UI themes can be applied to the Ribbon control, as shown in the 
 <table>
 <tr>
 <td>
-[XAML]       <syncfusion:Ribbon shared:SkinManager.VisualStyle="Office2010Black"                                                       Name="MyRibbon">                       &lt;syncfusion:RibbonTab Caption="Tab1"&gt;                &lt;syncfusion:RibbonBar Header="Ribbon Bar1"/&gt;                &lt;syncfusion:RibbonBar Header="Ribbon Bar1"/&gt;                &lt;syncfusion:RibbonBar Header="Ribbon Bar1"/&gt;            &lt;/syncfusion:RibbonTab&gt;     &lt;/syncfusion:Ribbon&gt;</td></tr>
+[XAML]       <syncfusion:Ribbon shared:SkinManager.VisualStyle="Office2010Black"                                                       Name="MyRibbon">                       <syncfusion:RibbonTab Caption="Tab1">                <syncfusion:RibbonBar Header="Ribbon Bar1"/>                <syncfusion:RibbonBar Header="Ribbon Bar1"/>                <syncfusion:RibbonBar Header="Ribbon Bar1"/>            </syncfusion:RibbonTab>     </syncfusion:Ribbon></td></tr>
 <tr>
 <td>
 [C#]   public void RibbonWindow_Loaded(object sender, EventArgs e)   {    SkinManager.SetVisualStyle(this.MyRibbon, VisualStyle.Office2010Black);   }</td></tr>
@@ -90,23 +90,23 @@ The Application icon is built-in the Ribbon control and is located in the upper-
 
                                           Icon="/Resources/logo.png" >           
 
-            &lt;syncfusion:RibbonTab Caption="Tab1"&gt;
+            <syncfusion:RibbonTab Caption="Tab1">
 
-                &lt;syncfusion:RibbonBar Header="Ribbon Bar1"/&gt;
+                <syncfusion:RibbonBar Header="Ribbon Bar1"/>
 
-                &lt;syncfusion:RibbonBar Header="Ribbon Bar1"/&gt;
+                <syncfusion:RibbonBar Header="Ribbon Bar1"/>
 
-                &lt;syncfusion:RibbonBar Header="Ribbon Bar1"/&gt;
+                <syncfusion:RibbonBar Header="Ribbon Bar1"/>
 
-            &lt;/syncfusion:RibbonTab&gt;
+            </syncfusion:RibbonTab>
 
-     &lt;/syncfusion:Ribbon&gt;
-
-
+     </syncfusion:Ribbon>
 
 
 
-{ ![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img2.png) | markdownify }
+
+
+{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -118,7 +118,7 @@ The Toggle button is a new element in the Ribbon control with the Office 2010 UI
 
 
 
-{ ![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img3.png) | markdownify }
+{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -130,7 +130,7 @@ The Back Stage button is a new element in the Ribbon control with the Office 201
 
 
 
-{ ![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img4.png) | markdownify }
+{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -153,7 +153,7 @@ The Back Stage Tab item is used to display the content of the tab item just like
 
 
 
-{ ![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img5.png) | markdownify }
+{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -165,13 +165,13 @@ The appearance of the QAT in the Office 2010 UI is different when compared to th
 
 
 
-{ ![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img6.png) | markdownify }
+{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img6.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img7.png) | markdownify }
+{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -187,17 +187,17 @@ The Button panel in the Office 2010 UI has the SeparatorVisibility property to c
 
 
 
-&lt;syncfusion:ButtonPanel Margin="0" &gt;
+<syncfusion:ButtonPanel Margin="0" >
 
-&lt;syncfusion:RibbonButton SizeMode="Small" SmallIcon="ClearFormatting16.png"/&gt;
+<syncfusion:RibbonButton SizeMode="Small" SmallIcon="ClearFormatting16.png"/>
 
-&lt;/syncfusion:ButtonPanel&gt;
-
-
+</syncfusion:ButtonPanel>
 
 
 
-{ ![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img8.png) | markdownify }
+
+
+{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -211,17 +211,17 @@ The separators in the Button panel can be collapsed, as shown in the following c
 
 
 
-&lt;syncfusion:ButtonPanel Margin="0"  SeparatorVisibility="Collapsed"&gt;
+<syncfusion:ButtonPanel Margin="0"  SeparatorVisibility="Collapsed">
 
-&lt;syncfusion:RibbonButton SizeMode="Small" SmallIcon="ClearFormatting16.png"/&gt;
+<syncfusion:RibbonButton SizeMode="Small" SmallIcon="ClearFormatting16.png"/>
 
-&lt;/syncfusion:ButtonPanel&gt;
-
-
+</syncfusion:ButtonPanel>
 
 
 
-{ ![C:/Users/sureshkumarc/Desktop/Office 2010/SL/buttonpanel2.png](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img9.png) | markdownify }
+
+
+{{ '![C:/Users/sureshkumarc/Desktop/Office 2010/SL/buttonpanel2.png](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -237,19 +237,19 @@ You can customize the Office 2010 UI in the Ribbon control in a WPF application 
 
 
 
-{ ![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img10.png) | markdownify }
+{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img10.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/sureshkumarc/Desktop/New folder/blue.png](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img11.png) | markdownify }
+{{ '![C:/Users/sureshkumarc/Desktop/New folder/blue.png](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img11.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img12.png) | markdownify }
+{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img12.png)' | markdownify }}
 {:.image }
 
 

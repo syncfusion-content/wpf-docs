@@ -39,13 +39,13 @@ The features of this sample are listed below:
 
 
 
-{ ![](Performance_images/Performance_img1.jpeg) | markdownify }
+{{ '![](Performance_images/Performance_img1.jpeg)' | markdownify }}
 {:.image }
 
 
 > _Note: For complete code for this example, refer the following browser sample:_
 
-> _...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Performance\Trader Grid Test Demo_
+> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Performance\Trader Grid Test Demo_
 
 
 

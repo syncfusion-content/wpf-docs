@@ -31,17 +31,17 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
 Title="MainWindow" Height="600" Width="1000" Icon="App.ico">    
 
-&lt;syncfusion:RibbonWindow.StatusBar&gt;
+<syncfusion:RibbonWindow.StatusBar>
 
-    &lt;syncfusion:RibbonStatusBar&gt;           
+    <syncfusion:RibbonStatusBar>           
 
-        &lt;/syncfusion:RibbonStatusBar&gt;
+        </syncfusion:RibbonStatusBar>
 
-    &lt;/syncfusion:RibbonWindow.StatusBar&gt;    
+    </syncfusion:RibbonWindow.StatusBar>    
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;Grid.RowDefinitions&gt;
+        <Grid.RowDefinitions>
 
 
 
@@ -51,7 +51,7 @@ Title="MainWindow" Height="600" Width="1000" Icon="App.ico">
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -75,7 +75,7 @@ x:Name="ReportDesignerControl" Margin="0,6,0,-6" />
 
 2. Check whether the following highlighted references are added to the References folder.
 
-{ ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig4.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig4.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -85,7 +85,7 @@ x:Name="ReportDesignerControl" Margin="0,6,0,-6" />
 
 > 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-82.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-82.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -93,7 +93,7 @@ x:Name="ReportDesignerControl" Margin="0,6,0,-6" />
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-81.png](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-81.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 

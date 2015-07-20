@@ -31,93 +31,93 @@ You can customize the style of the Drag Indicator which is used to indicate the 
 
     Title="Window1" Height="300" Width="300">
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
 
 
-        &lt;!-- Creating the style for DragIndicator --&gt;
+        <!-- Creating the style for DragIndicator -->
 
-        &lt;Style x:Key="Drag_Marker" TargetType="{x:Type syncfusion:TemplatedAdornerInternalControl}"&gt;
+        <Style x:Key="Drag_Marker" TargetType="{x:Type syncfusion:TemplatedAdornerInternalControl}">
 
-            &lt;Setter Property="HorizontalAlignment" Value="Left"/&gt;
+            <Setter Property="HorizontalAlignment" Value="Left"/>
 
-            &lt;Setter Property="VerticalAlignment" Value="Top"/&gt;
+            <Setter Property="VerticalAlignment" Value="Top"/>
 
-            &lt;Setter Property="SnapsToDevicePixels" Value="False"/&gt;
+            <Setter Property="SnapsToDevicePixels" Value="False"/>
 
-            &lt;Setter Property="Template"&gt;
+            <Setter Property="Template">
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;ControlTemplate TargetType="{x:Type syncfusion:TemplatedAdornerInternalControl}"&gt;
+                    <ControlTemplate TargetType="{x:Type syncfusion:TemplatedAdornerInternalControl}">
 
-                        &lt;Grid&gt;
+                        <Grid>
 
-                            &lt;Grid.ColumnDefinitions&gt;
+                            <Grid.ColumnDefinitions>
 
-                                &lt;ColumnDefinition Width="*"/&gt;
+                                <ColumnDefinition Width="*"/>
 
-                            &lt;/Grid.ColumnDefinitions&gt;
+                            </Grid.ColumnDefinitions>
 
-                            &lt;Rectangle Grid.Column="0" Height="4" Fill="Red"/&gt;
+                            <Rectangle Grid.Column="0" Height="4" Fill="Red"/>
 
-                        &lt;/Grid&gt;
+                        </Grid>
 
-                    &lt;/ControlTemplate&gt;
+                    </ControlTemplate>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-        &lt;/Style&gt;
+        </Style>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
-    &lt;Grid&gt;
-
-
-
-        &lt;!-- Adding TreeViewAdv with DragIndicatorStyle --&gt;
-
-        &lt;syncfusion:TreeViewAdv DragIndicatorStyle="{StaticResource Drag_Marker}"  Name="treeViewAdv"&gt;
+    <Grid>
 
 
 
-            &lt;!-- Adding TreeViewItemAdv --&gt;
+        <!-- Adding TreeViewAdv with DragIndicatorStyle -->
 
-            &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
-
-                &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
-
-                &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
-
-                &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
-
-            &lt;/syncfusion:TreeViewItemAdv&gt;
-
-            &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
-
-                &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
-
-                &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
-
-                &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
-
-                &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
-
-            &lt;/syncfusion:TreeViewItemAdv&gt;
-
-            &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
-
-        &lt;/syncfusion:TreeViewAdv&gt;
-
-    &lt;/Grid&gt;
-
-&lt;/Window&gt;
+        <syncfusion:TreeViewAdv DragIndicatorStyle="{StaticResource Drag_Marker}"  Name="treeViewAdv">
 
 
 
-{ ![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg) | markdownify }
+            <!-- Adding TreeViewItemAdv -->
+
+            <syncfusion:TreeViewItemAdv Header="Marital Status">
+
+                <syncfusion:TreeViewItemAdv Header="Single"/>
+
+                <syncfusion:TreeViewItemAdv Header="Married"/>
+
+                <syncfusion:TreeViewItemAdv Header="Married with Children"/>
+
+            </syncfusion:TreeViewItemAdv>
+
+            <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
+
+                <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
+
+                <syncfusion:TreeViewItemAdv Header="Tetanus"/>
+
+                <syncfusion:TreeViewItemAdv Header="Polio"/>
+
+                <syncfusion:TreeViewItemAdv Header="Measles"/>
+
+            </syncfusion:TreeViewItemAdv>
+
+            <syncfusion:TreeViewItemAdv Header="Country Information"/>
+
+        </syncfusion:TreeViewAdv>
+
+    </Grid>
+
+</Window>
+
+
+
+{{ '![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -143,53 +143,53 @@ User can customize the header of the treeview item by using HeaderTemplate using
 
     Title="Window1" Height="300" Width="300">
 
-  &lt;Window.Resources&gt;
+  <Window.Resources>
 
-    &lt;DataTemplate x:Key="HD1"&gt;
+    <DataTemplate x:Key="HD1">
 
-      &lt;StackPanel Orientation="Horizontal"&gt;
+      <StackPanel Orientation="Horizontal">
 
-        &lt;TextBlock FontWeight="Bold" Text="Marital Status" /&gt;
+        <TextBlock FontWeight="Bold" Text="Marital Status" />
 
-      &lt;/StackPanel&gt;
+      </StackPanel>
 
-    &lt;/DataTemplate&gt;
+    </DataTemplate>
 
-  &lt;/Window.Resources&gt;
-
-
-
-  &lt;Grid&gt;
+  </Window.Resources>
 
 
 
-    &lt;!-- Adding TreeViewAdv with HeaderTemplate --&gt;
-
-    &lt;syncfusion:TreeViewAdv Name="treeViewAdv"&gt;
+  <Grid>
 
 
 
-      &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewAdv with HeaderTemplate -->
 
-      &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" HeaderTemplate="{StaticResource HD1}"&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
-
-      &lt;/syncfusion:TreeViewItemAdv&gt;
-
-    &lt;/syncfusion:TreeViewAdv&gt;
-
-  &lt;/Grid&gt;
-
-&lt;/Window&gt;
+    <syncfusion:TreeViewAdv Name="treeViewAdv">
 
 
 
-{ ![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg) | markdownify }
+      <!-- Adding TreeViewItemAdv -->
+
+      <syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" HeaderTemplate="{StaticResource HD1}">
+
+        <syncfusion:TreeViewItemAdv Header="Single"/>
+
+        <syncfusion:TreeViewItemAdv Header="Married"/>
+
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
+
+      </syncfusion:TreeViewItemAdv>
+
+    </syncfusion:TreeViewAdv>
+
+  </Grid>
+
+</Window>
+
+
+
+{{ '![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -205,119 +205,119 @@ The ExpanderStyle property enables to customize the appearance and style of expa
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
 
 
-    &lt;!-- Template for TreeViewAdvExpander --&gt;
+    <!-- Template for TreeViewAdvExpander -->
 
-    &lt;ControlTemplate x:Key="MyFxExpanderTemplateKey" TargetType="{x:Type Expander}"&gt;
+    <ControlTemplate x:Key="MyFxExpanderTemplateKey" TargetType="{x:Type Expander}">
 
-        &lt;ToggleButton Name="Expander" ClickMode="Press" IsChecked="{Binding Path=IsExpanded, RelativeSource={RelativeSource TemplatedParent}}"&gt;
+        <ToggleButton Name="Expander" ClickMode="Press" IsChecked="{Binding Path=IsExpanded, RelativeSource={RelativeSource TemplatedParent}}">
 
-            &lt;ToggleButton.Style&gt;
+            <ToggleButton.Style>
 
-                &lt;Style TargetType="ToggleButton"&gt;
+                <Style TargetType="ToggleButton">
 
-                    &lt;Setter Property="FrameworkElement.Focusable" Value="False"/&gt;
+                    <Setter Property="FrameworkElement.Focusable" Value="False"/>
 
-                    &lt;Setter Property="FrameworkElement.Width" Value="19"/&gt;
+                    <Setter Property="FrameworkElement.Width" Value="19"/>
 
-                    &lt;Setter Property="FrameworkElement.Height" Value="13"/&gt;
+                    <Setter Property="FrameworkElement.Height" Value="13"/>
 
-                    &lt;Setter Property="Control.Template"&gt;
+                    <Setter Property="Control.Template">
 
-                        &lt;Setter.Value&gt;
+                        <Setter.Value>
 
-                            &lt;ControlTemplate TargetType="ToggleButton"&gt;
+                            <ControlTemplate TargetType="ToggleButton">
 
-                                &lt;Border Height="10" Width="10" BorderBrush="Black" BorderThickness="1"&gt;
+                                <Border Height="10" Width="10" BorderBrush="Black" BorderThickness="1">
 
-                                    &lt;Border Name="BackgroundBorder"  Background="Blue"/&gt;
+                                    <Border Name="BackgroundBorder"  Background="Blue"/>
 
-                                &lt;/Border&gt;
+                                </Border>
 
-                                &lt;ControlTemplate.Triggers&gt;
+                                <ControlTemplate.Triggers>
 
-                                    &lt;Trigger Property="ToggleButton.IsChecked" Value="True"&gt;
+                                    <Trigger Property="ToggleButton.IsChecked" Value="True">
 
-                                        &lt;Setter Property="Background" TargetName="BackgroundBorder" Value="Red"/&gt;
+                                        <Setter Property="Background" TargetName="BackgroundBorder" Value="Red"/>
 
-                                    &lt;/Trigger&gt;
+                                    </Trigger>
 
-                                &lt;/ControlTemplate.Triggers&gt;
+                                </ControlTemplate.Triggers>
 
-                            &lt;/ControlTemplate&gt;
+                            </ControlTemplate>
 
-                        &lt;/Setter.Value&gt;
+                        </Setter.Value>
 
-                    &lt;/Setter&gt;
+                    </Setter>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/ToggleButton.Style&gt;
+            </ToggleButton.Style>
 
-        &lt;/ToggleButton&gt;
+        </ToggleButton>
 
-    &lt;/ControlTemplate&gt;
-
-
-
-    &lt;!-- Style for TreeViewAdvExpander --&gt;
-
-    &lt;Style x:Key="MyEStyle" TargetType="{x:Type Expander}"&gt;
-
-        &lt;Setter Property="Template" Value="{StaticResource MyFxExpanderTemplateKey}"/&gt;
-
-    &lt;/Style&gt;
-
-&lt;/Window.Resources&gt;
-
-&lt;Grid&gt;
+    </ControlTemplate>
 
 
 
-    &lt;!-- Adding TreeViewAdv with expand animation --&gt;
+    <!-- Style for TreeViewAdvExpander -->
 
-    &lt;syncfusion:TreeViewAdv Name="treeViewAdv" ExpanderStyle="{DynamicResource MyEStyle}"&gt;
+    <Style x:Key="MyEStyle" TargetType="{x:Type Expander}">
 
+        <Setter Property="Template" Value="{StaticResource MyFxExpanderTemplateKey}"/>
 
+    </Style>
 
-        &lt;!-- Adding TreeViewItemAdv --&gt;
+</Window.Resources>
 
-        &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="Marital Status"&gt;
-
-            &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
-
-            &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
-
-            &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
-
-        &lt;/syncfusion:TreeViewItemAdv&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
-
-            &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
-
-            &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
-
-            &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
-
-            &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
-
-        &lt;/syncfusion:TreeViewItemAdv&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
-
-    &lt;/syncfusion:TreeViewAdv&gt;
-
-&lt;/Grid&gt;
+<Grid>
 
 
 
+    <!-- Adding TreeViewAdv with expand animation -->
+
+    <syncfusion:TreeViewAdv Name="treeViewAdv" ExpanderStyle="{DynamicResource MyEStyle}">
 
 
-{ ![](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg) | markdownify }
+
+        <!-- Adding TreeViewItemAdv -->
+
+        <syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="Marital Status">
+
+            <syncfusion:TreeViewItemAdv Header="Single"/>
+
+            <syncfusion:TreeViewItemAdv Header="Married"/>
+
+            <syncfusion:TreeViewItemAdv Header="Married with Children"/>
+
+        </syncfusion:TreeViewItemAdv>
+
+        <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
+
+            <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
+
+            <syncfusion:TreeViewItemAdv Header="Tetanus"/>
+
+            <syncfusion:TreeViewItemAdv Header="Polio"/>
+
+            <syncfusion:TreeViewItemAdv Header="Measles"/>
+
+        </syncfusion:TreeViewItemAdv>
+
+        <syncfusion:TreeViewItemAdv Header="Country Information"/>
+
+    </syncfusion:TreeViewAdv>
+
+</Grid>
+
+
+
+
+
+{{ '![](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -333,57 +333,57 @@ You can customize the items under a column header by defining a cell template fo
 
 
 
-&lt;!-- Adding TreeViewAdv with Enabling multiple column --&gt;
+<!-- Adding TreeViewAdv with Enabling multiple column -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv" MultiColumnEnable="True"&gt;
-
-
-
-  &lt;!-- Adding TreeViewItemAdv --&gt;
-
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="Marital Status"&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
-
-  &lt;/syncfusion:TreeViewItemAdv&gt;
-
-  &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
-
-  &lt;/syncfusion:TreeViewItemAdv&gt;
-
-  &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
-
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv" MultiColumnEnable="True">
 
 
 
-  &lt;!-- Adding header --&gt;
+  <!-- Adding TreeViewItemAdv -->
 
-  &lt;syncfusion:TreeViewAdv.Columns&gt;
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="Marital Status">
 
-    &lt;syncfusion:TreeViewColumnCollection&gt;
+    <syncfusion:TreeViewItemAdv Header="Single"/>
+
+    <syncfusion:TreeViewItemAdv Header="Married"/>
+
+    <syncfusion:TreeViewItemAdv Header="Married with Children"/>
+
+  </syncfusion:TreeViewItemAdv>
+
+  <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
+
+    <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
+
+    <syncfusion:TreeViewItemAdv Header="Tetanus"/>
+
+    <syncfusion:TreeViewItemAdv Header="Polio"/>
+
+    <syncfusion:TreeViewItemAdv Header="Measles"/>
+
+  </syncfusion:TreeViewItemAdv>
+
+  <syncfusion:TreeViewItemAdv Header="Country Information">
+
+    <syncfusion:TreeViewItemAdv Header="Canada"/>
+
+    <syncfusion:TreeViewItemAdv Header="France"/>
+
+    <syncfusion:TreeViewItemAdv Header="Germany"/>
+
+    <syncfusion:TreeViewItemAdv Header="UK"/>
+
+    <syncfusion:TreeViewItemAdv Header="USA"/>
+
+  </syncfusion:TreeViewItemAdv>
+
+
+
+  <!-- Adding header -->
+
+  <syncfusion:TreeViewAdv.Columns>
+
+    <syncfusion:TreeViewColumnCollection>
 
       <syncfusion:TreeViewColumn Width="150" Header="Status"
 
@@ -393,39 +393,39 @@ You can customize the items under a column header by defining a cell template fo
 
        DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource AncestorType={x:Type 			syncfusion:TreeViewItemAdv}}}"/>
 
-      &lt;syncfusion:TreeViewColumn Width="50" Header="Country"&gt;
+      <syncfusion:TreeViewColumn Width="50" Header="Country">
 
 
 
-        &lt;!-- Cell Template --&gt;
+        <!-- Cell Template -->
 
-        &lt;syncfusion:TreeViewColumn.CellTemplate&gt;
+        <syncfusion:TreeViewColumn.CellTemplate>
 
-          &lt;DataTemplate&gt;
+          <DataTemplate>
 
-            &lt;Border Margin="1" Width="150" BorderBrush="Red" BorderThickness="1"&gt;
+            <Border Margin="1" Width="150" BorderBrush="Red" BorderThickness="1">
 
-              &lt;TextBlock Margin="2" Text="{Binding Path=Header, RelativeSource={RelativeSource 					AncestorType={x:Type syncfusion:TreeViewItemAdv}}}"/&gt;
+              <TextBlock Margin="2" Text="{Binding Path=Header, RelativeSource={RelativeSource 					AncestorType={x:Type syncfusion:TreeViewItemAdv}}}"/>
 
-            &lt;/Border&gt;
+            </Border>
 
-          &lt;/DataTemplate&gt;
+          </DataTemplate>
 
-        &lt;/syncfusion:TreeViewColumn.CellTemplate&gt;
+        </syncfusion:TreeViewColumn.CellTemplate>
 
-      &lt;/syncfusion:TreeViewColumn&gt;
+      </syncfusion:TreeViewColumn>
 
-    &lt;/syncfusion:TreeViewColumnCollection&gt;
+    </syncfusion:TreeViewColumnCollection>
 
-  &lt;/syncfusion:TreeViewAdv.Columns&gt;
+  </syncfusion:TreeViewAdv.Columns>
 
-&lt;/syncfusion:TreeViewAdv&gt;
-
-
+</syncfusion:TreeViewAdv>
 
 
 
-{ ![](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg) | markdownify }
+
+
+{{ '![](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -443,47 +443,47 @@ The following example can be used to set this property.
 
 
 
-&lt;Grid&gt;
+<Grid>
 
-     &lt;Grid.Resources&gt;
+     <Grid.Resources>
 
-           &lt;Style x:Key="TreeViewItemStyle2" TargetType="{x:Type syncfusion:TreeViewItemAdv}"&gt;
+           <Style x:Key="TreeViewItemStyle2" TargetType="{x:Type syncfusion:TreeViewItemAdv}">
 
-               &lt;Setter Property="LeftImageSource" Value="Resources/App.ico" /&gt;
+               <Setter Property="LeftImageSource" Value="Resources/App.ico" />
 
-               &lt;Setter Property="ImageHeight" Value="16" /&gt;
+               <Setter Property="ImageHeight" Value="16" />
 
-               &lt;Setter Property="ImageWidth" Value="16" /&gt;
+               <Setter Property="ImageWidth" Value="16" />
 
-            &lt;/Style&gt;
+            </Style>
 
-            &lt;Style TargetType="{x:Type syncfusion:TreeViewItemAdv}"&gt;
+            <Style TargetType="{x:Type syncfusion:TreeViewItemAdv}">
 
-                &lt;Setter Property="ItemContainerStyle" Value="{StaticResource TreeViewItemStyle2}"/&gt;
+                <Setter Property="ItemContainerStyle" Value="{StaticResource TreeViewItemStyle2}"/>
 
-            &lt;/Style&gt;
+            </Style>
 
-     &lt;/Grid.Resources&gt;
+     </Grid.Resources>
 
-     &lt;syncfusion:TreeViewAdv&gt;
+     <syncfusion:TreeViewAdv>
 
-         &lt;syncfusion:TreeViewItemAdv Header="Root" IsExpanded="True"&gt;
+         <syncfusion:TreeViewItemAdv Header="Root" IsExpanded="True">
 
-          &lt;syncfusion:TreeViewItemAdv Header="sub-1"/&gt;
+          <syncfusion:TreeViewItemAdv Header="sub-1"/>
 
-          &lt;syncfusion:TreeViewItemAdv Header="sub-2"/&gt;
+          <syncfusion:TreeViewItemAdv Header="sub-2"/>
 
-          &lt;syncfusion:TreeViewItemAdv Header="sub-3"/&gt;
+          <syncfusion:TreeViewItemAdv Header="sub-3"/>
 
-          &lt;syncfusion:TreeViewItemAdv Header="sub-4"/&gt;
+          <syncfusion:TreeViewItemAdv Header="sub-4"/>
 
-          &lt;syncfusion:TreeViewItemAdv Header="sub-5"/&gt;
+          <syncfusion:TreeViewItemAdv Header="sub-5"/>
 
-          &lt;/syncfusion:TreeViewItemAdv&gt;
+          </syncfusion:TreeViewItemAdv>
 
-     &lt;/syncfusion:TreeViewAdv&gt;
+     </syncfusion:TreeViewAdv>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -491,7 +491,7 @@ The following screen shot shows how the TreeViewAdv looks after applying ItemCon
 
 
 
-{ ![](Styles-and-Templates_images/Styles-and-Templates_img5.jpeg) | markdownify }
+{{ '![](Styles-and-Templates_images/Styles-and-Templates_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -517,83 +517,83 @@ User can customize the edited item by using the EditedItemTemplate property, whi
 
     Title="Window1" Height="300" Width="300">
 
-  &lt;Window.Resources&gt;
+  <Window.Resources>
 
 
 
-    &lt;!-- CustomEditedItemTemplate --&gt;
+    <!-- CustomEditedItemTemplate -->
 
-    &lt;DataTemplate x:Key="CustomEditedItemTemplate" DataType="{x:Type syncfusion:TreeViewItemAdv}"&gt;
+    <DataTemplate x:Key="CustomEditedItemTemplate" DataType="{x:Type syncfusion:TreeViewItemAdv}">
 
-      &lt;Border BorderBrush="Red" Background="Orange"  BorderThickness="1" Margin="1" Padding="2"&gt;
+      <Border BorderBrush="Red" Background="Orange"  BorderThickness="1" Margin="1" Padding="2">
 
-        &lt;TextBox Foreground="Green" Text="{Binding Path=(syncfusion:TreeViewItemAdv.Header), Mode=TwoWay, RelativeSource={RelativeSource AncestorType={x:Type syncfusion:TreeViewItemAdv}}}"/&gt;
+        <TextBox Foreground="Green" Text="{Binding Path=(syncfusion:TreeViewItemAdv.Header), Mode=TwoWay, RelativeSource={RelativeSource AncestorType={x:Type syncfusion:TreeViewItemAdv}}}"/>
 
-      &lt;/Border&gt;
+      </Border>
 
-    &lt;/DataTemplate&gt;
+    </DataTemplate>
 
-  &lt;/Window.Resources&gt;
+  </Window.Resources>
 
-  &lt;Grid&gt;
-
-
-
-    &lt;!-- Adding TreeViewAdv with CustomEditedItemTemplate --&gt;
-
-    &lt;syncfusion:TreeViewAdv Name="treeViewAdv" EditedItemTemplate="{StaticResource CustomEditedItemTemplate}"&gt;
+  <Grid>
 
 
 
-      &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewAdv with CustomEditedItemTemplate -->
 
-      &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" Header="Marital Status"&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
-
-      &lt;/syncfusion:TreeViewItemAdv&gt;
-
-      &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" Header="Baby Vaccines"&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
-
-      &lt;/syncfusion:TreeViewItemAdv&gt;
-
-      &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
-
-        &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
-
-      &lt;/syncfusion:TreeViewItemAdv&gt;
-
-    &lt;/syncfusion:TreeViewAdv&gt;
-
-  &lt;/Grid&gt;
-
-&lt;/Window&gt;
+    <syncfusion:TreeViewAdv Name="treeViewAdv" EditedItemTemplate="{StaticResource CustomEditedItemTemplate}">
 
 
 
+      <!-- Adding TreeViewItemAdv -->
+
+      <syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" Header="Marital Status">
+
+        <syncfusion:TreeViewItemAdv Header="Single"/>
+
+        <syncfusion:TreeViewItemAdv Header="Married"/>
+
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
+
+      </syncfusion:TreeViewItemAdv>
+
+      <syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" Header="Baby Vaccines">
+
+        <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
+
+        <syncfusion:TreeViewItemAdv Header="Tetanus"/>
+
+        <syncfusion:TreeViewItemAdv Header="Polio"/>
+
+        <syncfusion:TreeViewItemAdv Header="Measles"/>
+
+      </syncfusion:TreeViewItemAdv>
+
+      <syncfusion:TreeViewItemAdv Header="Country Information">
+
+        <syncfusion:TreeViewItemAdv Header="Canada"/>
+
+        <syncfusion:TreeViewItemAdv Header="France"/>
+
+        <syncfusion:TreeViewItemAdv Header="Germany"/>
+
+        <syncfusion:TreeViewItemAdv Header="UK"/>
+
+        <syncfusion:TreeViewItemAdv Header="USA"/>
+
+      </syncfusion:TreeViewItemAdv>
+
+    </syncfusion:TreeViewAdv>
+
+  </Grid>
+
+</Window>
 
 
-{ ![](Styles-and-Templates_images/Styles-and-Templates_img6.jpeg) | markdownify }
+
+
+
+{{ '![](Styles-and-Templates_images/Styles-and-Templates_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -609,41 +609,41 @@ Allows the application writer to provide custom logic for choosing a template th
 
 
 
-/// &lt;StackPanel Name="stackPanel"&gt;
+/// <StackPanel Name="stackPanel">
 
-/// &lt;local:TreeViewAdv Name="myTreeview"&gt;
+/// <local:TreeViewAdv Name="myTreeview">
 
 ///     <local:TreeViewItemAdv Header="Employee1"
 
 ///      EditedItemTemplateSelector="{StaticResource auctionItemDataTemplateSelector}">
 
-///         &lt;local:TreeViewItemAdv Header="Jesper"/&gt;
+///         <local:TreeViewItemAdv Header="Jesper"/>
 
-///         &lt;local:TreeViewItemAdv Header="Aaberg"/&gt;
+///         <local:TreeViewItemAdv Header="Aaberg"/>
 
-///         &lt;local:TreeViewItemAdv Header="12345"/&gt;
+///         <local:TreeViewItemAdv Header="12345"/>
 
-///     &lt;/local:TreeViewItemAdv&gt;
+///     </local:TreeViewItemAdv>
 
-///     &lt;local:TreeViewItemAdv Header="Employee2"&gt;
+///     <local:TreeViewItemAdv Header="Employee2">
 
-///         &lt;local:TreeViewItemAdv Header="Dominik"/&gt;
+///         <local:TreeViewItemAdv Header="Dominik"/>
 
-///         &lt;local:TreeViewItemAdv Header="Paiha"/&gt;
+///         <local:TreeViewItemAdv Header="Paiha"/>
 
-///         &lt;local:TreeViewItemAdv Header="98765"/&gt;
+///         <local:TreeViewItemAdv Header="98765"/>
 
-///     &lt;/local:TreeViewItemAdv&gt;
+///     </local:TreeViewItemAdv>
 
-/// &lt;/local:TreeViewAdv&gt;
+/// </local:TreeViewAdv>
 
-/// &lt;/StackPanel&gt;
+/// </StackPanel>
 
-/// &lt;/Window&gt;
+/// </Window>
 
 /// ]]>
 
-/// &lt;/code&gt;
+/// </code>
 
 ///
 
@@ -653,7 +653,7 @@ Allows the application writer to provide custom logic for choosing a template th
 
 /// an override of the SelectTemplate method:
 
-/// &lt;code language="C#"&gt;
+/// <code language="C#">
 
 /// using System.Windows;
 

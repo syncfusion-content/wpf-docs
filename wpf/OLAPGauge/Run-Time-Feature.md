@@ -35,7 +35,7 @@ Me.olapGauge1.ShowPointersTooltip = True
 
 The following screen shot illustrates a pointer tooltip displayed for the OLAP Gauge.
 
-{ ![C:/Users/Hari/Pictures/OlapGauge/Pointer Tooltip.png](Run-Time-Feature_images/Run-Time-Feature_img1.png) | markdownify }
+{{ '![C:/Users/Hari/Pictures/OlapGauge/Pointer Tooltip.png](Run-Time-Feature_images/Run-Time-Feature_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -61,7 +61,7 @@ Me.olapGauge1.ShowMarkersTooltip = True
 
 The following screen shot illustrates a marker tooltip displayed for the OLAP Gauge.
 
-{ ![C:/Users/Hari/Pictures/OlapGauge/Marker Tooltip.png](Run-Time-Feature_images/Run-Time-Feature_img2.png) | markdownify }
+{{ '![C:/Users/Hari/Pictures/OlapGauge/Marker Tooltip.png](Run-Time-Feature_images/Run-Time-Feature_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -69,5 +69,5 @@ Sample Location
 
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\&lt;Version Number&gt;\BI\WPF\OLAPGauge.WPF\Samples\Product ShowCase\Product Showcase Demo\
+..\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OLAPGauge.WPF\Samples\Product ShowCase\Product Showcase Demo\
 

@@ -15,7 +15,7 @@ Three toolbars are there in OLAP Client to provide the number of options to perf
 
 This toolbar contains menus to invoke the particular operation of OLAP Client.
 
-{ ![](Tool-Bar-support_images/Tool-Bar-support_img1.png) | markdownify }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -153,7 +153,7 @@ Sorting Row</td></tr>
 
 By using the menus in the OLAP ChartToolBar, the user can customise the appearance and style of the chart. And also the user can change the type of the chart.
 
-{ ![](Tool-Bar-support_images/Tool-Bar-support_img17.png) | markdownify }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -235,7 +235,7 @@ Export the current visual of the chart to PDF</td></tr>
 
 By using the menus in the OLAP Grid Tool Bar, the user can customise the appearance and style of the Grid.
 
-{ ![](Tool-Bar-support_images/Tool-Bar-support_img27.png) | markdownify }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img27.png)' | markdownify }}
 {:.image }
 
 
@@ -474,5 +474,5 @@ When set as True, then it shows from the toolbar.
 
 Sample Link
 
-{Installation Drive}:\Users\&lt;user name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version    number&gt;\BI\WPF\OlapClient.Wpf\Samples\Appearance\OlapClientCustomizationDemo
+{Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version    number>\BI\WPF\OlapClient.Wpf\Samples\Appearance\OlapClientCustomizationDemo
 

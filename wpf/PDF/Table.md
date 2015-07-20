@@ -4246,7 +4246,7 @@ Description</td><td>
 Data Type</td></tr>
 <tr>
 <td>
-{ [ColumnSpan](http://help.syncfusion.com/ug/windows%20forms/documents/column2.htm) | markdownify }</td><td>
+{{ '[ColumnSpan](http://help.syncfusion.com/ug/windows%20forms/documents/column2.htm)' | markdownify }}</td><td>
 Gets or set the column span.</td><td>
 Integer</td></tr>
 <tr>
@@ -4261,12 +4261,12 @@ Gets or sets the image alignment type of the background image.</td><td>
 PdfGridImagePosition</td></tr>
 <tr>
 <td>
-{ [RowSpan](http://help.syncfusion.com/ug/windows%20forms/documents/row2.htm) | markdownify }</td><td>
+{{ '[RowSpan](http://help.syncfusion.com/ug/windows%20forms/documents/row2.htm)' | markdownify }}</td><td>
 Gets or sets the row span</td><td>
 Integer</td></tr>
 <tr>
 <td>
-{ [StringFormat](http://help.syncfusion.com/ug/windows%20forms/documents/drawingtext.htm) | markdownify }</td><td>
+{{ '[StringFormat](http://help.syncfusion.com/ug/windows%20forms/documents/drawingtext.htm)' | markdownify }}</td><td>
 Gets or sets the string format.</td><td>
 PdfStringFormat</td></tr>
 <tr>

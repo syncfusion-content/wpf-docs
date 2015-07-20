@@ -31,13 +31,13 @@ ObservableCollection<DateTime> selectedDates = newObservableCollection<DateTime
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_32.jpg](Visible-Dates-customization_images/Visible-Dates-customization_img1.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_32.jpg](Visible-Dates-customization_images/Visible-Dates-customization_img1.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_33.jpg](Visible-Dates-customization_images/Visible-Dates-customization_img2.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_33.jpg](Visible-Dates-customization_images/Visible-Dates-customization_img2.jpeg)' | markdownify }}
 {:.image }
 
 

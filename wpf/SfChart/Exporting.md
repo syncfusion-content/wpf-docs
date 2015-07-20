@@ -50,29 +50,29 @@ The following code example illustrates the chart exporting feature.
 
 
 
-&lt;syncfusion:SfChart x:Name="Chart"&gt;
+<syncfusion:SfChart x:Name="Chart">
 
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:CategoryAxis  Header="Company Name"/&gt;
+                <syncfusion:CategoryAxis  Header="Company Name"/>
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
-
-
-
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
-
-                &lt;syncfusion:NumericalAxis  Header="Gross Revenue (cr.)"/&gt;
-
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
 
 
-            &lt;syncfusion:LineSeries  Palette="Metro"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+            <syncfusion:SfChart.SecondaryAxis>
+
+                <syncfusion:NumericalAxis  Header="Gross Revenue (cr.)"/>
+
+            </syncfusion:SfChart.SecondaryAxis>
 
 
 
-        &lt;/syncfusion:SfChart&gt;
+            <syncfusion:LineSeries  Palette="Metro"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+
+
+
+        </syncfusion:SfChart>
 
 
 

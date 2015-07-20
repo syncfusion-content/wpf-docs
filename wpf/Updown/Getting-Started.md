@@ -17,17 +17,17 @@ The UpDown control can be added to an application by using the following applica
 
 To create an UpDown instance in the Visual Studio, drag the UpDown control from the Toolbox window to the Design View. An instance of the UpDown control is created in the Design View.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
 The following code example illustrates how to add the UpDown control to an application through XAML.
 
-&lt;syncfusion:UpDown HorizontalAlignment="Left" Height="25" Margin="133,127,0,0" VerticalAlignment="Top" Width="85"/&gt;
+<syncfusion:UpDown HorizontalAlignment="Left" Height="25" Margin="133,127,0,0" VerticalAlignment="Top" Width="85"/>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -45,7 +45,7 @@ grid.Children.Add(upDown);
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -60,13 +60,13 @@ The step-by-step procedure to add the UpDown control to an application through t
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
 5. Drag the UpDown control to the Design View. An instance of the UpDown control is created.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 

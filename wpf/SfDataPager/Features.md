@@ -31,23 +31,23 @@ The following code example explains how to use the Source and PagedSource proper
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-  &lt;local:Viewmodel/&gt;
+  <local:Viewmodel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;Grid.RowDefinitions&gt;
+        <Grid.RowDefinitions>
 
-            &lt;RowDefinition Height="*" /&gt;
+            <RowDefinition Height="*" />
 
-            &lt;RowDefinition Height="Auto" /&gt;
+            <RowDefinition Height="Auto" />
 
-        &lt;/Grid.RowDefinitions&gt;
+        </Grid.RowDefinitions>
 
         <sfgrid:SfDataGrid AutoGenerateColumns="True" 
 
@@ -65,7 +65,7 @@ The following code example explains how to use the Source and PagedSource proper
 
                                                      Source="{Binding OrdersDetails}" />
 
-&lt;/Grid&gt;
+</Grid>
 
 The following screenshot displays the output of the above code.
 
@@ -73,7 +73,7 @@ PageIndex
 
 
 
-{ ![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img1.png) | markdownify }
+{{ '![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -93,7 +93,7 @@ Description</td></tr>
 <td>
 PageIndexChanging</td><td>
  OldPageIndex  NewPageIndex Cancel</td><td>
-Event is triggered when the current page index is changing. By using this event, you can cancel the page navigation operation by setting Cancel{{ '__' | markdownify }}to true.</td></tr>
+Event is triggered when the current page index is changing. By using this event, you can cancel the page navigation operation by setting Cancel{{{ ''__'' | markdownify }}}to true.</td></tr>
 <tr>
 <td>
 PageIndexChanged</td><td>
@@ -110,21 +110,21 @@ The following code explains how to use Source and PagedSource property in ListBo
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-  &lt;local:Viewmodel/&gt;
+  <local:Viewmodel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;Grid.RowDefinitions&gt;
+        <Grid.RowDefinitions>
 
-            &lt;RowDefinition Height="*" /&gt;
+            <RowDefinition Height="*" />
 
-            &lt;RowDefinition Height="Auto" /&gt;
+            <RowDefinition Height="Auto" />
 
-        &lt;/Grid.RowDefinitions&gt;
+        </Grid.RowDefinitions>
 
          <ListBox ItemsSource="{Binding ElementName=sfDataPager,
 
@@ -140,13 +140,13 @@ The following code explains how to use Source and PagedSource property in ListBo
 
                                                      Source="{Binding OrdersDetails}" />
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
 The following screenshot displays the output for ListView binded with PagedCollection.
 
-{ ![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img2.png) | markdownify }
+{{ '![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -176,21 +176,21 @@ The following steps help you to achieve an onDemand loading with the SfDataPager
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-&lt;local:ViewModel/&gt;
+<local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;Grid.RowDefinitions&gt;
+        <Grid.RowDefinitions>
 
-            &lt;RowDefinition Height="*" /&gt;
+            <RowDefinition Height="*" />
 
-            &lt;RowDefinition Height="Auto" /&gt;
+            <RowDefinition Height="Auto" />
 
-        &lt;/Grid.RowDefinitions&gt;
+        </Grid.RowDefinitions>
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
 
@@ -228,7 +228,7 @@ private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs  args)
 
 The following screenshot displays the output for OnDemandPaging,
 
-{ ![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img3.png) | markdownify }
+{{ '![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -240,21 +240,21 @@ The following code example explains how to use PageSize property in SfDataPager.
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-  &lt;local:Viewmodel/&gt;
+  <local:Viewmodel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;Grid.RowDefinitions&gt;
+        <Grid.RowDefinitions>
 
-            &lt;RowDefinition Height="*" /&gt;
+            <RowDefinition Height="*" />
 
-            &lt;RowDefinition Height="Auto" /&gt;
+            <RowDefinition Height="Auto" />
 
-        &lt;/Grid.RowDefinitions&gt;
+        </Grid.RowDefinitions>
 
         <sfgrid:SfDataGrid AutoGenerateColumns="True" 
 
@@ -268,7 +268,7 @@ The following code example explains how to use PageSize property in SfDataPager.
 
                                  Source="{Binding OrdersDetails}" />
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -276,7 +276,7 @@ The following screenshot displays the output for PageSize set as 5.
 
 
 
-{ ![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img4.png) | markdownify }
+{{ '![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -288,37 +288,37 @@ In general, the size of the page is defined in the PageSize property. In some ca
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-&lt;local:ViewModel/&gt;
+<local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
-&lt;Grid&gt;
+<Grid>
 
-                &lt;Grid.RowDefinitions&gt;
+                <Grid.RowDefinitions>
 
-                    &lt;RowDefinition Height="*" /&gt;
+                    <RowDefinition Height="*" />
 
-                    &lt;RowDefinition Height="Auto" /&gt;
+                    <RowDefinition Height="Auto" />
 
-                &lt;/Grid.RowDefinitions&gt;
+                </Grid.RowDefinitions>
 
-                &lt;Grid.ColumnDefinitions&gt;
+                <Grid.ColumnDefinitions>
 
-                    &lt;ColumnDefinition Width="*" /&gt;
+                    <ColumnDefinition Width="*" />
 
-                    &lt;ColumnDefinition Width="Auto" /&gt;
+                    <ColumnDefinition Width="Auto" />
 
-                &lt;/Grid.ColumnDefinitions&gt;
+                </Grid.ColumnDefinitions>
 
 
 
- &lt;StackPanel Grid.Column="1" Grid.Row="1" Height="20" Margin="3,0" Orientation="Horizontal"&gt;
+ <StackPanel Grid.Column="1" Grid.Row="1" Height="20" Margin="3,0" Orientation="Horizontal">
 
-   &lt;ComboBox Name="combobox"  SelectedIndex="0" ItemsSource="{Binding ComboBoxitem}" /&gt;
+   <ComboBox Name="combobox"  SelectedIndex="0" ItemsSource="{Binding ComboBoxitem}" />
 
- &lt;/StackPanel&gt;
+ </StackPanel>
 
 <sfgrid:SfDataGrid AutoGenerateColumns="True" 
 
@@ -340,13 +340,13 @@ In general, the size of the page is defined in the PageSize property. In some ca
 
                          Source="{Binding OrdersDetails}" />
 
-&lt;Grid&gt;
+<Grid>
 
 
 
 The following screenshot displays the output for changing the PagSize value during runtime. 
 
-{ ![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img5.png) | markdownify }
+{{ '![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -406,21 +406,21 @@ The following code example explains how to change the AutoEllipsisbuttontext.
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-&lt;local:ViewModel/&gt;
+<local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;Grid.RowDefinitions&gt;
+        <Grid.RowDefinitions>
 
-            &lt;RowDefinition Height="*" /&gt;
+            <RowDefinition Height="*" />
 
-            &lt;RowDefinition Height="Auto" /&gt;
+            <RowDefinition Height="Auto" />
 
-        &lt;/Grid.RowDefinitions&gt;
+        </Grid.RowDefinitions>
 
 <sfgrid:SfDataGrid AutoGenerateColumns="True" 
 
@@ -440,13 +440,13 @@ The following code example explains how to change the AutoEllipsisbuttontext.
 
                          Source="{Binding OrdersDetails}" />
 
-&lt;Grid&gt;
+<Grid>
 
 
 
 The following screenshot displays the output for AutoEllipsisText changed as …etc.
 
-{ ![B:/Support/2015/April/24/Image/DataPager/figure9.png](Features_images/Features_img9.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/DataPager/figure9.png](Features_images/Features_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -468,11 +468,11 @@ The following code example explains how to apply the AccentBackground and Accent
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-  &lt;local:Viewmodel/&gt;
+  <local:Viewmodel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 <sfgrid:SfDataGrid AutoGenerateColumns="True" 
 
@@ -496,7 +496,7 @@ The following code example explains how to apply the AccentBackground and Accent
 
 The following screenshot displays the output for AccentBackground and AccentForeGround applied to the SfDatapager.
 
-{ ![B:/Support/2015/Pager.png](Features_images/Features_img10.png) | markdownify }
+{{ '![B:/Support/2015/Pager.png](Features_images/Features_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -508,23 +508,23 @@ The following code example explains how to use NumericButtonStyle in SfDataPager
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-  &lt;local:Viewmodel/&gt;
+  <local:Viewmodel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;Style TargetType="datapager:NumericButton"&gt;
+<Style TargetType="datapager:NumericButton">
 
-      &lt;Setter Property="BorderBrush" Value="Blue"/&gt;
+      <Setter Property="BorderBrush" Value="Blue"/>
 
-      &lt;Setter Property="BorderThickness" Value="2"/&gt;
+      <Setter Property="BorderThickness" Value="2"/>
 
-&lt;/Style&gt;
+</Style>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 <sfgrid:SfDataGrid AutoGenerateColumns="True" 
 
@@ -546,7 +546,7 @@ The following code example explains how to use NumericButtonStyle in SfDataPager
 
 The following screenshot displays the output of NumericButtonStyle.
 
-{ ![B:/Support/2015/April/24/Image/DataPager/figure11.png](Features_images/Features_img11.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/DataPager/figure11.png](Features_images/Features_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -714,21 +714,21 @@ The following example displays the MessageBox before the PageChanging,
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-&lt;local:ViewModel/&gt;
+<local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;Grid.RowDefinitions&gt;
+        <Grid.RowDefinitions>
 
-            &lt;RowDefinition Height="*" /&gt;
+            <RowDefinition Height="*" />
 
-            &lt;RowDefinition Height="Auto" /&gt;
+            <RowDefinition Height="Auto" />
 
-        &lt;/Grid.RowDefinitions&gt;
+        </Grid.RowDefinitions>
 
 <sfgrid:SfDataGrid AutoGenerateColumns="True" 
 
@@ -746,7 +746,7 @@ The following example displays the MessageBox before the PageChanging,
 
                          Source="{Binding OrdersDetails}" />
 
-&lt;Grid&gt;
+<Grid>
 
 
 
@@ -783,7 +783,7 @@ SfDataPager supports CodedUITest automation that helps you to create an automati
 
 There are three levels of support in CodedUITest for SfDataPager
 
-{ ![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img25.png) | markdownify }
+{{ '![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -813,7 +813,7 @@ To know more about CodedUITest, refer to the [link](http://help.syncfusion.com/u
 
 The following screenshot displays the SfDataPager properties when you drag the crosshair to the SfDataPager
 
-{ ![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img26.png) | markdownify }
+{{ '![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img26.png)' | markdownify }}
 {:.image }
 
 
@@ -838,7 +838,7 @@ SfDataPager supports QTP test. You can record the actions perfomed in the contro
 
 The following screenshot displays the QTP Test for SfDataPager
 
-{ ![C:/Users/ilanchezhiyan/Pictures/CodedUIBlogImages/DataPager&MultiColumn/QTPSfDataPager.png](Features_images/Features_img27.png) | markdownify }
+{{ '![C:/Users/ilanchezhiyan/Pictures/CodedUIBlogImages/DataPager&MultiColumn/QTPSfDataPager.png](Features_images/Features_img27.png)' | markdownify }}
 {:.image }
 
 

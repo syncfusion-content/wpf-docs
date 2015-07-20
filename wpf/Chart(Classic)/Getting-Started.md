@@ -45,7 +45,7 @@ The complete summary of the features of the Chart control for WPF are listed as 
 
 A chart is composed of various sub elements such as legends, areas, toolbars, headers, and footers. The following screenshot illustrates the elements of the Chart control.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -55,13 +55,13 @@ Users can create a simple chart application with Syncfusion WPF Chart control wi
 
 1. Create a new WPF application in VS2010. You can see the Chart control in the Toolbox of Visual Studio. 
 
-{ ![Description: http://help.syncfusion.com/resources/Content/Ug_101/User%20Interface/WPF/Chart/ImagesExt/image9_7.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![Description: http://help.syncfusion.com/resources/Content/Ug_101/User%20Interface/WPF/Chart/ImagesExt/image9_7.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
 2. Drag the Chart control from the Toolbox and drop it to the designer. It generates a chart with two default series in the designer.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -73,7 +73,7 @@ The following code is auto generated in the XAML window.
 
                                             VerticalAlignment="Top">
 
-            &lt;syncfusion:ChartArea ZoomInCoefficient="0.5" ZoomOutCoefficient="2"&gt;
+            <syncfusion:ChartArea ZoomInCoefficient="0.5" ZoomOutCoefficient="2">
 
                 <syncfusion:ChartSeries Data="1,1,2,2,3,3,4,4,5,5,6,6" 
 
@@ -83,15 +83,15 @@ The following code is auto generated in the XAML window.
 
                                                                 SegmentWidthMode="Fixed”/>
 
-            &lt;/syncfusion:ChartArea&gt;
+            </syncfusion:ChartArea>
 
-        &lt;/syncfusion:Chart&gt;
+        </syncfusion:Chart>
 
 
 
 3. Click the Expand button at the right corner of the chart area in the designer. It generates the Smart Tag for the chart area.
 
-{ ![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/st.png](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/st.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -100,57 +100,57 @@ The following code is auto generated in the XAML window.
 
 
 
-{ ![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/HeaderProperty_HL.png](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/HeaderProperty_HL.png](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
 6. To set the axis header, expand the PrimaryAxis and enter the axis header in the Header field. Similarly, you can do this for the SecondaryAxis.
 
-{ ![C:/Users/johnbowlinboscok/Desktop/UG Images/PrimaryAxisHeader_HL.png](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![C:/Users/johnbowlinboscok/Desktop/UG Images/PrimaryAxisHeader_HL.png](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
 7. To add a legend to the chart area, click Add Chart Area Legend in the Smart Tag.
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
 > _Note: The chart area legend can also be added in the chart area by setting the ShowLegend property of ChartArea as True._
 
-{ ![C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/ShowLegend_HL.png](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+{{ '![C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/ShowLegend_HL.png](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
 {:.image }
 
 
 8. To display the data labels, set the ShowDataLabels property of ChartSeries as True.
 
-{ ![C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/ShowDataLabels_HL.png](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+{{ '![C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/ShowDataLabels_HL.png](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
 {:.image }
 
 
-{ ![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/DataLabels.png](Getting-Started_images/Getting-Started_img13.png) | markdownify }
+{{ '![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/DataLabels.png](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
 {:.image }
 
 
 9. To set icon text of the chart legend, set the Label property of ChartSeries.
 
-{ ![C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/SeriesLabel_HL.png](Getting-Started_images/Getting-Started_img14.png) | markdownify }
+{{ '![C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/SeriesLabel_HL.png](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img15.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -166,23 +166,23 @@ Consolidated Code
 
                                                           Header="My First Chart Control">
 
-                &lt;syncfusion:ChartArea.Legend&gt;
+                <syncfusion:ChartArea.Legend>
 
-                    &lt;syncfusion:ChartLegend /&gt;
+                    <syncfusion:ChartLegend />
 
-                &lt;/syncfusion:ChartArea.Legend&gt;
+                </syncfusion:ChartArea.Legend>
 
-                &lt;syncfusion:ChartArea.SecondaryAxis&gt;
+                <syncfusion:ChartArea.SecondaryAxis>
 
-                    &lt;syncfusion:ChartAxis Header="Secondary Axis" /&gt;
+                    <syncfusion:ChartAxis Header="Secondary Axis" />
 
-                &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+                </syncfusion:ChartArea.SecondaryAxis>
 
-                &lt;syncfusion:ChartArea.PrimaryAxis&gt;
+                <syncfusion:ChartArea.PrimaryAxis>
 
-                    &lt;syncfusion:ChartAxis Header="Primary Axis" /&gt;
+                    <syncfusion:ChartAxis Header="Primary Axis" />
 
-                &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+                </syncfusion:ChartArea.PrimaryAxis>
 
                 <syncfusion:ChartSeries Label="FirstSeries" Data="1,1,2,2,3,3,4,4,5,5,6,6" 
 
@@ -194,9 +194,9 @@ Consolidated Code
 
                                                                 SegmentWidthMode="Fixed" ShowDataLabels="True”/>
 
-       &lt;/syncfusion:ChartArea&gt;
+       </syncfusion:ChartArea>
 
-   &lt;/syncfusion:Chart&gt;
+   </syncfusion:Chart>
 
 Chart Control Smart Tag Support
 
@@ -204,19 +204,19 @@ Smart Tag appears for the chart, chart area and chart legend. By using the Smart
 
 The following screenshot illustrates the Smart Tag for chart.
 
-{ ![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/Chart_ST.png](Getting-Started_images/Getting-Started_img16.png) | markdownify }
+{{ '![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/Chart_ST.png](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
 {:.image }
 
 
 The following screenshot illustrates the Smart Tag for chart area.
 
-{ ![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/ChartArea_ST.png](Getting-Started_images/Getting-Started_img17.png) | markdownify }
+{{ '![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/ChartArea_ST.png](Getting-Started_images/Getting-Started_img17.png)' | markdownify }}
 {:.image }
 
 
 The following screenshot illustrates the Smart Tag for chart legend.
 
-{ ![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/ChartLegend_ST.png](Getting-Started_images/Getting-Started_img18.png) | markdownify }
+{{ '![Description: C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/ChartLegend_ST.png](Getting-Started_images/Getting-Started_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -248,15 +248,15 @@ using Syncfusion.Windows.Chart;
 
 
 
-            &lt;syncfusion:Chart&gt;
+            <syncfusion:Chart>
 
-                &lt;syncfusion:ChartArea&gt;
+                <syncfusion:ChartArea>
 
-                       &lt;syncfusion:ChartSeries /&gt;
+                       <syncfusion:ChartSeries />
 
-                &lt;/syncfusion:ChartArea&gt;
+                </syncfusion:ChartArea>
 
-            &lt;/syncfusion:Chart&gt;
+            </syncfusion:Chart>
 
 
 
@@ -282,7 +282,7 @@ Chart chart = new Chart();
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img19.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -290,15 +290,15 @@ Chart chart = new Chart();
 
 [XAML]
 
-             &lt;syncfusion:Chart&gt;
+             <syncfusion:Chart>
 
-             &lt;syncfusion:ChartArea Header="Student Participation in Sports"&gt;
+             <syncfusion:ChartArea Header="Student Participation in Sports">
 
-                         &lt;syncfusion:ChartSeries/&gt;
+                         <syncfusion:ChartSeries/>
 
-                   &lt;/syncfusion:ChartArea&gt;
+                   </syncfusion:ChartArea>
 
-            &lt;/syncfusion:Chart&gt;
+            </syncfusion:Chart>
 
 
 
@@ -324,7 +324,7 @@ Chart chart = new Chart();
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img20.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img20.png)' | markdownify }}
 {:.image }
 
 
@@ -334,27 +334,27 @@ Chart chart = new Chart();
 
 
 
-            &lt;syncfusion:Chart&gt;
+            <syncfusion:Chart>
 
-                &lt;syncfusion:ChartArea Header="Student Participation in Sports"&gt;
+                <syncfusion:ChartArea Header="Student Participation in Sports">
 
-                    &lt;syncfusion:ChartArea.PrimaryAxis&gt;
+                    <syncfusion:ChartArea.PrimaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Sport Name"/&gt;
+                         <syncfusion:ChartAxis Header="Sport Name"/>
 
-                    &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+                    </syncfusion:ChartArea.PrimaryAxis>
 
-                    &lt;syncfusion:ChartArea.SecondaryAxis&gt;
+                    <syncfusion:ChartArea.SecondaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Interest in Millions"/&gt;
+                         <syncfusion:ChartAxis Header="Interest in Millions"/>
 
-                    &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+                    </syncfusion:ChartArea.SecondaryAxis>
 
-                    &lt;syncfusion:ChartSeries/&gt;
+                    <syncfusion:ChartSeries/>
 
-                &lt;/syncfusion:ChartArea&gt;
+                </syncfusion:ChartArea>
 
-           &lt;/syncfusion:Chart&gt;
+           </syncfusion:Chart>
 
 
 
@@ -392,7 +392,7 @@ Chart chart = new Chart();
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img21.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img21.png)' | markdownify }}
 {:.image }
 
 
@@ -543,33 +543,33 @@ Chart chart = new Chart();
 
 
 
-             &lt;Grid.DataContext&gt;
+             <Grid.DataContext>
 
-                    &lt;local:Model/&gt;
+                    <local:Model/>
 
-              &lt;/Grid.DataContext&gt;
+              </Grid.DataContext>
 
-             &lt;syncfusion:Chart&gt;
+             <syncfusion:Chart>
 
-                &lt;syncfusion:ChartArea Header="Student Participation in Sports"&gt;
+                <syncfusion:ChartArea Header="Student Participation in Sports">
 
-                    &lt;syncfusion:ChartArea.PrimaryAxis&gt;
+                    <syncfusion:ChartArea.PrimaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Sport Name"/&gt;
+                         <syncfusion:ChartAxis Header="Sport Name"/>
 
-                    &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+                    </syncfusion:ChartArea.PrimaryAxis>
 
-                    &lt;syncfusion:ChartArea.SecondaryAxis&gt;
+                    <syncfusion:ChartArea.SecondaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Interest in Millions"/&gt;
+                         <syncfusion:ChartAxis Header="Interest in Millions"/>
 
-                    &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+                    </syncfusion:ChartArea.SecondaryAxis>
 
-                    &lt;syncfusion:ChartSeries DataSource="{Binding SportDetails}"/&gt;
+                    <syncfusion:ChartSeries DataSource="{Binding SportDetails}"/>
 
-                &lt;/syncfusion:ChartArea&gt;
+                </syncfusion:ChartArea>
 
-           &lt;/syncfusion:Chart&gt;
+           </syncfusion:Chart>
 
 
 
@@ -627,7 +627,7 @@ Chart chart = new Chart();
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img22.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -681,35 +681,35 @@ Chart chart = new Chart();
 
 
 
-             &lt;Window.Resources&gt;
+             <Window.Resources>
 
-                   &lt;local:SportCollection x:Key="sportCollection"/&gt;
+                   <local:SportCollection x:Key="sportCollection"/>
 
-             &lt;/Window.Resources&gt;
+             </Window.Resources>
 
 
 
-             &lt;syncfusion:Chart&gt;
+             <syncfusion:Chart>
 
-                &lt;syncfusion:ChartArea Header="Student Participation in Sports"&gt;
+                <syncfusion:ChartArea Header="Student Participation in Sports">
 
-                    &lt;syncfusion:ChartArea.PrimaryAxis&gt;
+                    <syncfusion:ChartArea.PrimaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Sport Name"/&gt;
+                         <syncfusion:ChartAxis Header="Sport Name"/>
 
-                    &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+                    </syncfusion:ChartArea.PrimaryAxis>
 
-                    &lt;syncfusion:ChartArea.SecondaryAxis&gt;
+                    <syncfusion:ChartArea.SecondaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Interest in Millions"/&gt;
+                         <syncfusion:ChartAxis Header="Interest in Millions"/>
 
-                    &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+                    </syncfusion:ChartArea.SecondaryAxis>
 
-                    &lt;syncfusion:ChartSeries DataSource="{StaticResource sportCollection}"/&gt;
+                    <syncfusion:ChartSeries DataSource="{StaticResource sportCollection}"/>
 
-                &lt;/syncfusion:ChartArea&gt;
+                </syncfusion:ChartArea>
 
-           &lt;/syncfusion:Chart&gt;
+           </syncfusion:Chart>
 
 
 
@@ -747,7 +747,7 @@ Chart chart = new Chart();
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img23.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -755,21 +755,21 @@ Chart chart = new Chart();
 
 [XAML]
 
-             &lt;syncfusion:Chart&gt;
+             <syncfusion:Chart>
 
-                &lt;syncfusion:ChartArea Header="Student Participation in Sports"&gt;
+                <syncfusion:ChartArea Header="Student Participation in Sports">
 
-                    &lt;syncfusion:ChartArea.PrimaryAxis&gt;
+                    <syncfusion:ChartArea.PrimaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Sport Name"/&gt;
+                         <syncfusion:ChartAxis Header="Sport Name"/>
 
-                    &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+                    </syncfusion:ChartArea.PrimaryAxis>
 
-                    &lt;syncfusion:ChartArea.SecondaryAxis&gt;
+                    <syncfusion:ChartArea.SecondaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Interest in Millions"/&gt;
+                         <syncfusion:ChartAxis Header="Interest in Millions"/>
 
-                    &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+                    </syncfusion:ChartArea.SecondaryAxis>
 
                     <syncfusion:ChartSeries DataSource="{StaticResource sportCollection}"
 
@@ -777,9 +777,9 @@ Chart chart = new Chart();
 
                                                                     BindingPathsY="Interest"/>        
 
-                  &lt;/syncfusion:ChartArea&gt;
+                  </syncfusion:ChartArea>
 
-           &lt;/syncfusion:Chart&gt;
+           </syncfusion:Chart>
 
 
 
@@ -827,7 +827,7 @@ Chart chart = new Chart();
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img24.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img24.png)' | markdownify }}
 {:.image }
 
 
@@ -835,21 +835,21 @@ Chart chart = new Chart();
 
 [XAML]
 
-             &lt;syncfusion:Chart&gt;
+             <syncfusion:Chart>
 
-                &lt;syncfusion:ChartArea Header="Student Participation in Sports"&gt;
+                <syncfusion:ChartArea Header="Student Participation in Sports">
 
-                    &lt;syncfusion:ChartArea.PrimaryAxis&gt;
+                    <syncfusion:ChartArea.PrimaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Sport Name"/&gt;
+                         <syncfusion:ChartAxis Header="Sport Name"/>
 
-                    &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+                    </syncfusion:ChartArea.PrimaryAxis>
 
-                    &lt;syncfusion:ChartArea.SecondaryAxis&gt;
+                    <syncfusion:ChartArea.SecondaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Interest in Millions"/&gt;
+                         <syncfusion:ChartAxis Header="Interest in Millions"/>
 
-                    &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+                    </syncfusion:ChartArea.SecondaryAxis>
 
                     <syncfusion:ChartSeries ShowDataLabels="True”
 
@@ -859,9 +859,9 @@ Chart chart = new Chart();
 
                                                                     BindingPathsY="Interest"/>        
 
-                  &lt;/syncfusion:ChartArea&gt;
+                  </syncfusion:ChartArea>
 
-           &lt;/syncfusion:Chart&gt;
+           </syncfusion:Chart>
 
 
 
@@ -911,7 +911,7 @@ Chart chart = new Chart();
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img25.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -919,23 +919,23 @@ Chart chart = new Chart();
 
 [XAML]
 
-             &lt;syncfusion:Chart&gt;
+             <syncfusion:Chart>
 
                 <syncfusion:ChartArea ShowLegend="True” 
 
                                                              Header="Student Participation in Sports">
 
-                    &lt;syncfusion:ChartArea.PrimaryAxis&gt;
+                    <syncfusion:ChartArea.PrimaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Sport Name"/&gt;
+                         <syncfusion:ChartAxis Header="Sport Name"/>
 
-                    &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+                    </syncfusion:ChartArea.PrimaryAxis>
 
-                    &lt;syncfusion:ChartArea.SecondaryAxis&gt;
+                    <syncfusion:ChartArea.SecondaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Interest in Millions"/&gt;
+                         <syncfusion:ChartAxis Header="Interest in Millions"/>
 
-                    &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+                    </syncfusion:ChartArea.SecondaryAxis>
 
                     <syncfusion:ChartSeries ShowDataLabels="True”
 
@@ -945,9 +945,9 @@ Chart chart = new Chart();
 
                                                                     BindingPathsY="Interest"/>        
 
-                  &lt;/syncfusion:ChartArea&gt;
+                  </syncfusion:ChartArea>
 
-           &lt;/syncfusion:Chart&gt;
+           </syncfusion:Chart>
 
 
 
@@ -1003,7 +1003,7 @@ Chart chart = new Chart();
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img26.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img26.png)' | markdownify }}
 {:.image }
 
 
@@ -1011,23 +1011,23 @@ Chart chart = new Chart();
 
 [XAML]
 
-               &lt;syncfusion:Chart&gt;
+               <syncfusion:Chart>
 
                 <syncfusion:ChartArea ShowLegend="True” 
 
                                                              Header="Student Participation in Sports">
 
-                    &lt;syncfusion:ChartArea.PrimaryAxis&gt;
+                    <syncfusion:ChartArea.PrimaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Sport Name"/&gt;
+                         <syncfusion:ChartAxis Header="Sport Name"/>
 
-                    &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+                    </syncfusion:ChartArea.PrimaryAxis>
 
-                    &lt;syncfusion:ChartArea.SecondaryAxis&gt;
+                    <syncfusion:ChartArea.SecondaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Interest in Millions"/&gt;
+                         <syncfusion:ChartAxis Header="Interest in Millions"/>
 
-                    &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+                    </syncfusion:ChartArea.SecondaryAxis>
 
                     <syncfusion:ChartSeries Label="Sports Interest”
 
@@ -1039,9 +1039,9 @@ Chart chart = new Chart();
 
                                                                     BindingPathsY="Interest"/>        
 
-                  &lt;/syncfusion:ChartArea&gt;
+                  </syncfusion:ChartArea>
 
-           &lt;/syncfusion:Chart&gt;
+           </syncfusion:Chart>
 
 
 
@@ -1101,7 +1101,7 @@ Chart chart = new Chart();
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img27.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img27.png)' | markdownify }}
 {:.image }
 
 
@@ -1109,23 +1109,23 @@ Chart chart = new Chart();
 
 [XAML]
 
-               &lt;syncfusion:Chart&gt;
+               <syncfusion:Chart>
 
                 <syncfusion:ChartArea ShowLegend="True” 
 
                                                              Header="Student Participation in Sports">
 
-                    &lt;syncfusion:ChartArea.PrimaryAxis&gt;
+                    <syncfusion:ChartArea.PrimaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Sport Name"/&gt;
+                         <syncfusion:ChartAxis Header="Sport Name"/>
 
-                    &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+                    </syncfusion:ChartArea.PrimaryAxis>
 
-                    &lt;syncfusion:ChartArea.SecondaryAxis&gt;
+                    <syncfusion:ChartArea.SecondaryAxis>
 
-                         &lt;syncfusion:ChartAxis Header="Interest in Millions"/&gt;
+                         <syncfusion:ChartAxis Header="Interest in Millions"/>
 
-                    &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+                    </syncfusion:ChartArea.SecondaryAxis>
 
                     <syncfusion:ChartSeries LegendIcon="Pentagon”
 
@@ -1139,9 +1139,9 @@ Chart chart = new Chart();
 
                                                                     BindingPathsY="Interest"/>        
 
-                  &lt;/syncfusion:ChartArea&gt;
+                  </syncfusion:ChartArea>
 
-           &lt;/syncfusion:Chart&gt;
+           </syncfusion:Chart>
 
 
 
@@ -1205,7 +1205,7 @@ Chart chart = new Chart();
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img28.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img28.png)' | markdownify }}
 {:.image }
 
 
@@ -1213,7 +1213,7 @@ Chart chart = new Chart();
 
 The class diagram for Essential Chart for WPF is as follows.
 
-{ ![](Getting-Started_images/Getting-Started_img29.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img29.jpeg)' | markdownify }}
 {:.image }
 
 

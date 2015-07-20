@@ -15,15 +15,15 @@ Multiline support can be enabled by using the following code:
 
 [XAML]
 
-&lt;sync:ButtonAdv SizeMode="Large" IsMultiLine="False"/&gt;
+<sync:ButtonAdv SizeMode="Large" IsMultiLine="False"/>
 
 
 
-{ ![1](Multi-Line-Support_images/Multi-Line-Support_img1.png) | markdownify }
+{{ '![1](Multi-Line-Support_images/Multi-Line-Support_img1.png)' | markdownify }}
 {:.image }
 
 
-> { ![Note](Multi-Line-Support_images/Multi-Line-Support_img2.png) | markdownify }
+> {{ '![Note](Multi-Line-Support_images/Multi-Line-Support_img2.png)' | markdownify }}
 {:.image }
 _Note: This property is applicable only for Large Size Mode Buttons._
 

@@ -36,7 +36,7 @@ Code 39 Extended is an extended version of Code 39 that supports the ASCII chara
 
 
 
-{ ![](Barcode-Symbols_images/Barcode-Symbols_img1.png) | markdownify }
+{{ '![](Barcode-Symbols_images/Barcode-Symbols_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -45,7 +45,7 @@ Code 11
 Code 11 is used primarily for labeling telecommunications equipment. The character set includes the digits 0 to 9, a dash ( - ), and a start / stop code. Each character is encoded with three bars and two spaces. Of these five elements, there may be two wide and three narrow elements, or one wide and four narrow elements.
 
 
-{ ![](Barcode-Symbols_images/Barcode-Symbols_img2.png) | markdownify }
+{{ '![](Barcode-Symbols_images/Barcode-Symbols_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -58,7 +58,7 @@ Codabar is a variable length symbol that performs encoding of the following 20 c
 Codabar uses the characters, A, B, C and D, only as start and stop characters. It is used in libraries, blood banks, the overnight package delivery industry, and a variety of other information processing applications.
 
 
-{ ![](Barcode-Symbols_images/Barcode-Symbols_img3.png) | markdownify }
+{{ '![](Barcode-Symbols_images/Barcode-Symbols_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -72,7 +72,7 @@ Code32 is mainly used for coding pharmaceuticals, cosmetics and dietetics. It ha
 
 
 
-{ ![](Barcode-Symbols_images/Barcode-Symbols_img4.png) | markdownify }
+{{ '![](Barcode-Symbols_images/Barcode-Symbols_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -85,7 +85,7 @@ Code 93 was designed to complement and improve upon Code 39. It can represent th
 
 The asterisk (*) is not a true encode character, but is the start and stop symbol for Code 93.
 
-{ ![](Barcode-Symbols_images/Barcode-Symbols_img5.png) | markdownify }
+{{ '![](Barcode-Symbols_images/Barcode-Symbols_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -111,7 +111,7 @@ The last seven characters of Code Sets A and B (character values 96 - 102) and t
 
 
 
-{ ![](Barcode-Symbols_images/Barcode-Symbols_img6.png) | markdownify }
+{{ '![](Barcode-Symbols_images/Barcode-Symbols_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -121,9 +121,9 @@ The following code example shows how to create a code39 barcode from XAML:
 
 [XAML]
 
-&lt;sync:SfBarcode x:Name="barcode" Text="http://www.syncfusion.com" Symbology="Code39"&gt;
+<sync:SfBarcode x:Name="barcode" Text="http://www.syncfusion.com" Symbology="Code39">
 
-&lt;/sync:SfBarcode&gt;
+</sync:SfBarcode>
 
 
 
@@ -138,7 +138,7 @@ QR bar code
 
 QR bar code is a two dimensional barcode which is of popular use in automotive industry. It is known for fast readability and greater storage capacity. The user can set the data to the Text property to encode and render them in the control. The text can be either Numeric or AlphaNumeric or Binary which is chosen by the InputMode property. It can be encoded using any of the available 40 versions of QR code which can be set using Version property. The ErrorCorrectionLevel property helps to select a level among the four levels Low, Medium, Quartile and High.
 
-{ ![](Barcode-Symbols_images/Barcode-Symbols_img7.png) | markdownify }
+{{ '![](Barcode-Symbols_images/Barcode-Symbols_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -152,7 +152,7 @@ DataMatrix bar codes are widely used in printed media such as labels and letters
 
 
 
-{ ![](Barcode-Symbols_images/Barcode-Symbols_img8.png) | markdownify }
+{{ '![](Barcode-Symbols_images/Barcode-Symbols_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -160,9 +160,9 @@ The symbol can be chosen using the dependency property Symbology. Here is the eq
 
 [XAML]
 
-&lt;sync:SfBarcode x:Name="barcode" Text="http://www.syncfusion.com" Symbology="QRBarcode"&gt;
+<sync:SfBarcode x:Name="barcode" Text="http://www.syncfusion.com" Symbology="QRBarcode">
 
-&lt;/sync:SfBarcode&gt;
+</sync:SfBarcode>
 
 
 

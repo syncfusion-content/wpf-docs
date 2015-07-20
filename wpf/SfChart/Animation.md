@@ -54,11 +54,11 @@ The following example shows the Animation feature for chart series.
 
 
 
-&lt;syncfusion:SfChart&gt;
+<syncfusion:SfChart>
 
-            &lt;syncfusion:ColumnSeries EnableAnimation="True" AnimationDuration="00:00:02" Palette="Metro" XBindingPath="Category" YBindingPath="Count" ItemsSource="{Binding}"/&gt;
+            <syncfusion:ColumnSeries EnableAnimation="True" AnimationDuration="00:00:02" Palette="Metro" XBindingPath="Category" YBindingPath="Count" ItemsSource="{Binding}"/>
 
-        &lt;/syncfusion:SfChart&gt;
+        </syncfusion:SfChart>
 
 
 

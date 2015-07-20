@@ -31,39 +31,39 @@ The following code example illustrates the above property settings.
 
 
 
-&lt;!-- Adding TreeViewAdv With Brushes --&gt;
+<!-- Adding TreeViewAdv With Brushes -->
 
-&lt;syncfusion:TreeViewAdv MouseOverBackground="Aqua" MouseOverForeground="Magenta" Name="treeViewAdv" SelectedBackground="Orange" SelectedForeground="Red" SelectionUnfocussedBackcolor="Gold"&gt;
+<syncfusion:TreeViewAdv MouseOverBackground="Aqua" MouseOverForeground="Magenta" Name="treeViewAdv" SelectedBackground="Orange" SelectedForeground="Red" SelectionUnfocussedBackcolor="Gold">
 
 
 
-    &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewItemAdv -->
 
-    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+    <syncfusion:TreeViewItemAdv Header="Marital Status">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Single"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+    <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Country Information"/>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -103,7 +103,7 @@ treeViewAdv.SelectionUnfocussedBackcolor = Brushes.Gold;
 
 
 
-{ ![](Appearance_images/Appearance_img1.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -137,51 +137,51 @@ The various built-in visual styles are listed below.
 
 
 
-&lt;!-- Adding TreeViewAdv with visual style --&gt;
+<!-- Adding TreeViewAdv with visual style -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv" syncfusion:SkinStorage.VisualStyle="Office2007Blue"&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv" syncfusion:SkinStorage.VisualStyle="Office2007Blue">
 
 
 
-  &lt;!-- Adding TreeViewItemAdv --&gt;
+  <!-- Adding TreeViewItemAdv -->
 
-  &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+  <syncfusion:TreeViewItemAdv Header="Marital Status">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Single"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+  <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
+  <syncfusion:TreeViewItemAdv Header="Country Information">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Canada"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
+    <syncfusion:TreeViewItemAdv Header="France"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Germany"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
+    <syncfusion:TreeViewItemAdv Header="UK"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
+    <syncfusion:TreeViewItemAdv Header="USA"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -197,37 +197,37 @@ SkinStorage.SetVisualStyle(treeViewAdv, "Office2007Blue");
 
 
 
-{ ![](Appearance_images/Appearance_img2.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img2.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Appearance_images/Appearance_img3.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img3.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Appearance_images/Appearance_img4.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img4.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Appearance_images/Appearance_img5.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img5.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Appearance_images/Appearance_img6.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img6.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Appearance_images/Appearance_img7.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -243,73 +243,73 @@ You can decorate the header text of the TreeView columns using simple property s
 
 
 
-&lt;!-- Adding TreeViewAdv with Text Decorations --&gt;
+<!-- Adding TreeViewAdv with Text Decorations -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv"&gt;
-
-
-
-  &lt;!-- Adding TreeViewItemAdv --&gt;
-
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" Header="Marital Status"&gt;
-
-    &lt;syncfusion:TreeViewItemAdv.HeaderTextDecorations&gt;
-
-      &lt;TextDecorationCollection&gt;
-
-        &lt;TextDecoration&gt;
-
-          &lt;TextDecoration.Pen&gt;
-
-            &lt;Pen Brush="#FF6699CC"/&gt;
-
-          &lt;/TextDecoration.Pen&gt;
-
-        &lt;/TextDecoration&gt;
-
-      &lt;/TextDecorationCollection&gt;
-
-    &lt;/syncfusion:TreeViewItemAdv.HeaderTextDecorations&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
-
-  &lt;/syncfusion:TreeViewItemAdv&gt;
-
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" Header="Baby Vaccines"&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
-
-  &lt;/syncfusion:TreeViewItemAdv&gt;
-
-  &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
-
-  &lt;/syncfusion:TreeViewItemAdv&gt;
-
-&lt;/syncfusion:TreeViewAdv&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv">
 
 
 
-{ ![](Appearance_images/Appearance_img8.jpeg) | markdownify }
+  <!-- Adding TreeViewItemAdv -->
+
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" Header="Marital Status">
+
+    <syncfusion:TreeViewItemAdv.HeaderTextDecorations>
+
+      <TextDecorationCollection>
+
+        <TextDecoration>
+
+          <TextDecoration.Pen>
+
+            <Pen Brush="#FF6699CC"/>
+
+          </TextDecoration.Pen>
+
+        </TextDecoration>
+
+      </TextDecorationCollection>
+
+    </syncfusion:TreeViewItemAdv.HeaderTextDecorations>
+
+    <syncfusion:TreeViewItemAdv Header="Single"/>
+
+    <syncfusion:TreeViewItemAdv Header="Married"/>
+
+    <syncfusion:TreeViewItemAdv Header="Married with Children"/>
+
+  </syncfusion:TreeViewItemAdv>
+
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" Header="Baby Vaccines">
+
+    <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
+
+    <syncfusion:TreeViewItemAdv Header="Tetanus"/>
+
+    <syncfusion:TreeViewItemAdv Header="Polio"/>
+
+    <syncfusion:TreeViewItemAdv Header="Measles"/>
+
+  </syncfusion:TreeViewItemAdv>
+
+  <syncfusion:TreeViewItemAdv Header="Country Information">
+
+    <syncfusion:TreeViewItemAdv Header="Canada"/>
+
+    <syncfusion:TreeViewItemAdv Header="France"/>
+
+    <syncfusion:TreeViewItemAdv Header="Germany"/>
+
+    <syncfusion:TreeViewItemAdv Header="UK"/>
+
+    <syncfusion:TreeViewItemAdv Header="USA"/>
+
+  </syncfusion:TreeViewItemAdv>
+
+</syncfusion:TreeViewAdv>
+
+
+
+{{ '![](Appearance_images/Appearance_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -325,39 +325,39 @@ The TreeViewAdv displays root lines, which link the nodes of a tree structure. T
 
 
 
-&lt;!-- Adding TreeViewAdv With show root lines --&gt;
+<!-- Adding TreeViewAdv With show root lines -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv" ShowRootLines="False"&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv" ShowRootLines="False">
 
 
 
-    &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewItemAdv -->
 
-    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+    <syncfusion:TreeViewItemAdv Header="Marital Status">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Single"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+    <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Country Information"/>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -371,7 +371,7 @@ treeViewAdv.ShowRootLines = false;
 
 
 
-{ ![](Appearance_images/Appearance_img9.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -391,39 +391,39 @@ The color of the root lines, which connect different nodes in a TreeViewAdv cont
 
 
 
-&lt;!-- Adding TreeViewAdv With show root lines and line brush --&gt;
+<!-- Adding TreeViewAdv With show root lines and line brush -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv" LineBrush="Red" ShowRootLines="True"&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv" LineBrush="Red" ShowRootLines="True">
 
 
 
-    &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewItemAdv -->
 
-    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+    <syncfusion:TreeViewItemAdv Header="Marital Status">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Single"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+    <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Country Information"/>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -445,7 +445,7 @@ treeViewAdv.LineBrush = Brushes.Red;
 
 
 
-{ ![](Appearance_images/Appearance_img10.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -465,45 +465,45 @@ The root lines which connect different nodes in a TreeViewAdv control are custom
 
 
 
-&lt;!-- Adding TreeViewAdv With show root lines and line pen --&gt;
+<!-- Adding TreeViewAdv With show root lines and line pen -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv" ShowRootLines="True"&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv" ShowRootLines="True">
 
-    &lt;syncfusion:TreeViewAdv.LinePen&gt;
+    <syncfusion:TreeViewAdv.LinePen>
 
-        &lt;Pen Brush="Red" Thickness="1"/&gt;
+        <Pen Brush="Red" Thickness="1"/>
 
-    &lt;/syncfusion:TreeViewAdv.LinePen&gt;
+    </syncfusion:TreeViewAdv.LinePen>
 
 
 
-    &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewItemAdv -->
 
-    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+    <syncfusion:TreeViewItemAdv Header="Marital Status">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Single"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+    <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Country Information"/>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -525,7 +525,7 @@ treeViewAdv.LinePen = new Pen(Brushes.Red, 1);
 
 
 
-{ ![](Appearance_images/Appearance_img11.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -545,39 +545,39 @@ TreeViewAdv provides support to set the text color of the items that are dragged
 
 
 
-&lt;!-- Adding TreeViewAdv with FakeDragIndicator and FakeItem foreground --&gt;
+<!-- Adding TreeViewAdv with FakeDragIndicator and FakeItem foreground -->
 
-&lt;syncfusion:TreeViewAdv FakeItemForeground="Magenta" IsFakeDragIndicator="True" Name="treeViewAdv"&gt;
+<syncfusion:TreeViewAdv FakeItemForeground="Magenta" IsFakeDragIndicator="True" Name="treeViewAdv">
 
 
 
-    &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewItemAdv -->
 
-    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+    <syncfusion:TreeViewItemAdv Header="Marital Status">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Single"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+    <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Country Information"/>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -591,7 +591,7 @@ treeViewAdv.FakeItemForeground = Brushes.Magenta;
 
 
 
-{ ![](Appearance_images/Appearance_img12.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img12.jpeg)' | markdownify }}
 {:.image }
 
 

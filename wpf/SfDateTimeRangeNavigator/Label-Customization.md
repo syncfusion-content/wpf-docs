@@ -27,45 +27,45 @@ Used to set the Interval type which need to be displayed in the Navigator</td></
 </table>
 
 
-&lt;syncfusion:SfDateTimeRangeNavigator x:Name="rangepicker" ItemsSource="{Binding power}"  XBindingPath="Date" &gt;
+<syncfusion:SfDateTimeRangeNavigator x:Name="rangepicker" ItemsSource="{Binding power}"  XBindingPath="Date" >
 
 
 
-            &lt;syncfusion:SfDateTimeRangeNavigator.Intervals&gt; 
+            <syncfusion:SfDateTimeRangeNavigator.Intervals> 
 
-                &lt;syncfusion:Interval IntervalType="Quarter"/&gt;
+                <syncfusion:Interval IntervalType="Quarter"/>
 
-                &lt;syncfusion:Interval IntervalType="Month"/&gt;
+                <syncfusion:Interval IntervalType="Month"/>
 
-            &lt;/syncfusion:SfDateTimeRangeNavigator.Intervals&gt;
+            </syncfusion:SfDateTimeRangeNavigator.Intervals>
 
 
 
-            &lt;syncfusion:SfDateTimeRangeNavigator.Content&gt;
+            <syncfusion:SfDateTimeRangeNavigator.Content>
 
-                &lt;syncfusion:SfChart   &gt;
+                <syncfusion:SfChart   >
 
-                    &lt;syncfusion:SfChart.PrimaryAxis&gt;
+                    <syncfusion:SfChart.PrimaryAxis>
 
-                        &lt;syncfusion:CategoryAxis Visibility="Collapsed" /&gt;
+                        <syncfusion:CategoryAxis Visibility="Collapsed" />
 
-                    &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+                    </syncfusion:SfChart.PrimaryAxis>
 
-                    &lt;syncfusion:SfChart.SecondaryAxis&gt;
+                    <syncfusion:SfChart.SecondaryAxis>
 
-                        &lt;syncfusion:NumericalAxis Visibility="Collapsed" /&gt;
+                        <syncfusion:NumericalAxis Visibility="Collapsed" />
 
-                    &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+                    </syncfusion:SfChart.SecondaryAxis>
 
-                    &lt;syncfusion:FastLineBitmapSeries XBindingPath="Date" ItemsSource="{Binding power}" YBindingPath="Value"&gt;
+                    <syncfusion:FastLineBitmapSeries XBindingPath="Date" ItemsSource="{Binding power}" YBindingPath="Value">
 
-                        &lt;/syncfusion:FastLineBitmapSeries&gt;
+                        </syncfusion:FastLineBitmapSeries>
 
-                &lt;/syncfusion:SfChart&gt;
+                </syncfusion:SfChart>
 
-                &lt;/syncfusion:SfDateTimeRangeNavigator.Content&gt;
+                </syncfusion:SfDateTimeRangeNavigator.Content>
 
-        &lt;/syncfusion:SfDateTimeRangeNavigator&gt;
+        </syncfusion:SfDateTimeRangeNavigator>
 
 
 
@@ -73,7 +73,7 @@ Following is the screenshot of showing only Quarter and Month intervals in the N
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/5.png](Label-Customization_images/Label-Customization_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/5.png](Label-Customization_images/Label-Customization_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -134,23 +134,23 @@ Label Style can be customized using the LabelBarStyle property and this can be a
 
 
 
-&lt;chart:SfDateTimeRangeNavigator.HigherLevelBarStyle&gt;
+<chart:SfDateTimeRangeNavigator.HigherLevelBarStyle>
 
-                    &lt;chart:LabelBarStyle Background="Red" LabelHorizontalAlignment="Left"&gt;
+                    <chart:LabelBarStyle Background="Red" LabelHorizontalAlignment="Left">
 
-                        &lt;chart:LabelBarStyle.LabelStyle&gt;
+                        <chart:LabelBarStyle.LabelStyle>
 
-                            &lt;Style TargetType="TextBlock"&gt;
+                            <Style TargetType="TextBlock">
 
-                                &lt;Setter Property="FontSize" Value="10"/&gt;
+                                <Setter Property="FontSize" Value="10"/>
 
-                            &lt;/Style&gt;
+                            </Style>
 
-                        &lt;/chart:LabelBarStyle.LabelStyle&gt;
+                        </chart:LabelBarStyle.LabelStyle>
 
-                    &lt;/chart:LabelBarStyle&gt;
+                    </chart:LabelBarStyle>
 
-  &lt;/chart:SfDateTimeRangeNavigator.HigherLevelBarStyle&gt;
+  </chart:SfDateTimeRangeNavigator.HigherLevelBarStyle>
 
 
 
@@ -158,7 +158,7 @@ Following is the screenshot of Label HorizontalAlignment set to left.
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/6.png](Label-Customization_images/Label-Customization_img2.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/6.png](Label-Customization_images/Label-Customization_img2.png)' | markdownify }}
 {:.image }
 
 

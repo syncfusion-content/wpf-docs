@@ -13,13 +13,13 @@ This feature enable to highlight the column segments on mouse move and this is a
 
 [XAML]
 
-    &lt;Syncfusion:SfColumnSparkline HighlightSegment="True" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" &gt;
+    <Syncfusion:SfColumnSparkline HighlightSegment="True" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
 
-        &lt;/Syncfusion:SfColumnSparkline&gt;
+        </Syncfusion:SfColumnSparkline>
 
 Following is the snapshot for highlight segment,
 
-{ ![C:/Users/ApoorvahR/Desktop/9.png](Highlight-Segment_images/Highlight-Segment_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/9.png](Highlight-Segment_images/Highlight-Segment_img1.png)' | markdownify }}
 {:.image }
 
 

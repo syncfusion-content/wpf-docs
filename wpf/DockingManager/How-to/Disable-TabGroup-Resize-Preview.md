@@ -16,7 +16,7 @@ TabGroup preview can be enabled or disabled by using the IsTabPreviewEnabled pro
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:DockingManager Name="dockingmanager" IsTabPreviewEnabled="False" UseDocumentContainer="True"&gt;            &lt;Grid syncfusion:DockingManager.Header="tab1" syncfusion:DockingManager.State="Document"/&gt;            &lt;Grid syncfusion:DockingManager.Header="tab2" syncfusion:DockingManager.State="Document"/&gt;        &lt;/syncfusion:DockingManager&gt;</td></tr>
+[XAML]<syncfusion:DockingManager Name="dockingmanager" IsTabPreviewEnabled="False" UseDocumentContainer="True">            <Grid syncfusion:DockingManager.Header="tab1" syncfusion:DockingManager.State="Document"/>            <Grid syncfusion:DockingManager.Header="tab2" syncfusion:DockingManager.State="Document"/>        </syncfusion:DockingManager></td></tr>
 <tr>
 <td>
 [C#]dockingmanager.IsTabPreviewEnabled = false;</td></tr>

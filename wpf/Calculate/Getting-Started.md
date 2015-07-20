@@ -15,7 +15,7 @@ This section covers information on the following topics.
 
 The following illustration shows the Class Diagram for Essential Calculate.
 
-{ ![](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -27,7 +27,7 @@ WPF Application
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog box, select WPF Application template, name the project and click OK. 
 
-{ ![](Getting-Started_images/Getting-Started_img2.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -193,7 +193,7 @@ The step-by-step procedure to create a simple console application is as follows:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -217,21 +217,21 @@ namespace CalcQuickBaseTutorial
 
 {
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Summary description for Class1.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         class Class1
 
         {
 
-                /// &lt;summary&gt;
+                /// <summary>
 
                 /// The main entry point for the application.
 
-                /// &lt;/summary&gt;
+                /// </summary>
 
                 [STAThread]
 
@@ -291,7 +291,7 @@ Namespace CalcQuickBaseTutorial
 
             Dim s As String = Console.ReadLine()
 
-            Do While s &lt;&gt; ""
+            Do While s <> ""
 
                 Dim val As String = cq.ParseAndCompute(s)
 
@@ -331,7 +331,7 @@ End Namespace
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -345,7 +345,7 @@ In this section, you can learn how to create a WPF Application that allows you t
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -355,7 +355,7 @@ In this section, you can learn how to create a WPF Application that allows you t
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -519,7 +519,7 @@ End Sub
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -541,7 +541,7 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -551,7 +551,7 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -561,7 +561,7 @@ In order to add arbitrary calculation support to an object, that object must imp
 
 The first step is to add the class. To do so, right-click your project in the Solution Explorer window, select Add, and select Add Class.
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -571,7 +571,7 @@ The first step is to add the class. To do so, right-click your project in the So
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -593,11 +593,11 @@ namespace Calculate_ICalcData
 
 {
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Summary description for ArrayCalcData.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         public class ArrayCalcData
 
@@ -631,11 +631,11 @@ Imports System
 
 Namespace Calculate_ICalcData 
 
-        ''' &lt;summary&gt; 
+        ''' <summary> 
 
         ''' Summary description for ArrayCalcData. 
 
-        ''' &lt;/summary&gt; 
+        ''' </summary> 
 
         Public Class ArrayCalcData
 
@@ -677,43 +677,43 @@ namespace Calculate_ICalcData
 
         {
 
-                /// &lt;summary&gt;
+                /// <summary>
 
                 /// Original double array.
 
-                /// &lt;/summary&gt;
+                /// </summary>
 
                 private double[,] dValues;
 
 
 
-                /// &lt;summary&gt;
+                /// <summary>
 
                 /// Vector holding the sum of the rows.
 
-                /// &lt;/summary&gt;
+                /// </summary>
 
-                /// &lt;remarks&gt;
+                /// <remarks>
 
                 /// Serves as the last column.
 
-                /// &lt;/remarks&gt;
+                /// </remarks>
 
                 private object[] rowSums;
 
 
 
-                /// &lt;summary&gt;
+                /// <summary>
 
                 /// Vector holding the sum of the columns.
 
-                /// &lt;/summary&gt;
+                /// </summary>
 
-                /// &lt;remarks&gt;
+                /// <remarks>
 
                 /// Serves as the last row.
 
-                /// &lt;/remarks&gt;
+                /// </remarks>
 
                 private object[] colSums;
 
@@ -747,43 +747,43 @@ Public Class ArrayCalcData
 
 
 
-    '/ &lt;summary&gt;
+    '/ <summary>
 
     '/ Original double array.
 
-    '/ &lt;/summary&gt;
+    '/ </summary>
 
     Private dValues(,) As Double
 
 
 
-    '/ &lt;summary&gt;
+    '/ <summary>
 
     '/ Vector holding the sum of the rows.
 
-    '/ &lt;/summary&gt;
+    '/ </summary>
 
-    '/ &lt;remarks&gt;
+    '/ <remarks>
 
     '/ Serves as the last column.
 
-    '/ &lt;/remarks&gt;
+    '/ </remarks>
 
     Private rowSums() As Object
 
 
 
-    '/ &lt;summary&gt;
+    '/ <summary>
 
     '/ Vector holding the sum of the columns.
 
-    '/ &lt;/summary&gt;
+    '/ </summary>
 
-    '/ &lt;remarks&gt;
+    '/ <remarks>
 
     '/ Serves as the last row.
 
-    '/ &lt;/remarks&gt;
+    '/ </remarks>
 
     Private colSums() As Object
 
@@ -809,13 +809,13 @@ If you notice, you are actually populating these added arrays with formula strin
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Wraps the double array with an extra row and column that holds calculated sums.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// &lt;param name="dValues"&gt;&lt;/param&gt;
+/// <param name="dValues"></param>
 
 public ArrayCalcData(double[,] dValues)
 
@@ -871,13 +871,13 @@ public ArrayCalcData(double[,] dValues)
 
 
 
-'/ &lt;summary&gt;
+'/ <summary>
 
 '/ Wraps the double array with an extra row and column that holds calculated sums.
 
-'/ &lt;/summary&gt;
+'/ </summary>
 
-'/ &lt;param name="dValues"&gt;&lt;/param&gt;
+'/ <param name="dValues"></param>
 
 Public Sub New(ByVal dValues(,) As Double)
 
@@ -941,7 +941,7 @@ End Sub
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -949,7 +949,7 @@ Using Visual Studio 2003 with C#, add a colon after the class name in the class 
 
 If you are using VB.NET, then you can add the ICalcData stubs using the drop-down lists at the top of the edit window in Visual Studio. In the left drop-down, select the ICalcData interface as shown below.
 
-{ ![](Getting-Started_images/Getting-Started_img13.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -959,7 +959,7 @@ Then, in the right drop-down, click each of the four items listed to add the pro
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img14.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -1051,19 +1051,19 @@ Syncfusion.Calculate.ValueChangedEventArgs) Implements _
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Gets the value into either the double array or column vector or row vector.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// <param name="row">One-based row index.&lt;/param&gt;
+/// <param name="row">One-based row index.</param>
 
-/// <param name="col">One-based column index.&lt;/param&gt;
+/// <param name="col">One-based column index.</param>
 
-/// <returns>The value.&lt;/returns&gt;
+/// <returns>The value.</returns>
 
-/// &lt;remarks&gt; By convention, ICalcData uses one-based indexes.&lt;/remarks&gt;
+/// <remarks> By convention, ICalcData uses one-based indexes.</remarks>
 
 public object GetValueRowCol(int row, int col)
 
@@ -1099,19 +1099,19 @@ public object GetValueRowCol(int row, int col)
 
 
 
-'/ &lt;summary&gt;
+'/ <summary>
 
 '/ Gets the value into either the double array or column vector or row vector.
 
-'/ &lt;/summary&gt;
+'/ </summary>
 
-'/ <param name="row">One-based row index.&lt;/param&gt;
+'/ <param name="row">One-based row index.</param>
 
-'/ <param name="col">One-based column index.&lt;/param&gt;
+'/ <param name="col">One-based column index.</param>
 
-'/ <returns>The value.&lt;/returns&gt;
+'/ <returns>The value.</returns>
 
-'/ &lt;remarks&gt; By convention, ICalcData uses one-based indexes.&lt;/remarks&gt;
+'/ <remarks> By convention, ICalcData uses one-based indexes.</remarks>
 
 Public Function GetValueRowCol(ByVal row As Integer, ByVal col As Integer) _
 
@@ -1155,19 +1155,19 @@ Here is the code you must use. The code is the reverse process of the GetValueRo
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Sets the value into either the double array or column vector or row vector.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// <param name="row">One-based row index.&lt;/param&gt;
+/// <param name="row">One-based row index.</param>
 
-/// <param name="col">One-based column index.&lt;/param&gt;
+/// <param name="col">One-based column index.</param>
 
-/// <param name="value">The value to be set.&lt;/param&gt;
+/// <param name="value">The value to be set.</param>
 
-/// &lt;remarks&gt; This setter raises the ICalcData.ValueChanged event which, 
+/// <remarks> This setter raises the ICalcData.ValueChanged event which, 
 
 /// is listened to by the CalcEngine to manage the calculations.
 
@@ -1175,7 +1175,7 @@ Here is the code you must use. The code is the reverse process of the GetValueRo
 
 /// By convention, ICalcData uses one-based indexes.
 
-/// &lt;/remarks&gt;
+/// </remarks>
 
 public void SetValueRowCol(object value, int row, int col)
 
@@ -1215,19 +1215,19 @@ public void SetValueRowCol(object value, int row, int col)
 
 
 
-'/ &lt;summary&gt;
+'/ <summary>
 
     '/ Sets the value into either the double array or column vector or row vector.
 
-    '/ &lt;/summary&gt;
+    '/ </summary>
 
-    '/ <param name="row">One-based row index.&lt;/param&gt;
+    '/ <param name="row">One-based row index.</param>
 
-    '/ <param name="col">One-based column index.&lt;/param&gt;
+    '/ <param name="col">One-based column index.</param>
 
-    '/ <param name="value">The value to be set.&lt;/param&gt;
+    '/ <param name="value">The value to be set.</param>
 
-    '/ &lt;remarks&gt; This setter raises the ICalcData.ValueChanged event which, 
+    '/ <remarks> This setter raises the ICalcData.ValueChanged event which, 
 
     '/ is listened to by the CalcEngine to manage the calculations.
 
@@ -1235,7 +1235,7 @@ public void SetValueRowCol(object value, int row, int col)
 
     '/ By convention, ICalcData uses one-based indexes.
 
-    '/ &lt;/remarks&gt;
+    '/ </remarks>
 
     Public Sub SetValueRowCol(ByVal value As Object, ByVal row As Integer, _
 
@@ -1285,13 +1285,13 @@ Here is the code you must use. It is just a Get and Set implementation that goes
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Gets / sets the value of this ArrayCalcData object.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// &lt;remarks&gt;
+/// <remarks>
 
 /// Since this class wraps a double array, the indexing is zero-based but,
 
@@ -1299,7 +1299,7 @@ Here is the code you must use. It is just a Get and Set implementation that goes
 
 /// one is added to the indexes when the ICalcData methods are called.
 
-/// &lt;/remarks&gt;
+/// </remarks>
 
 public object this[int row, int col]
 
@@ -1317,13 +1317,13 @@ public object this[int row, int col]
 
 
 
-'/ &lt;summary&gt;
+'/ <summary>
 
 '/ Gets / sets the value of this ArrayCalcData object.
 
-'/ &lt;/summary&gt;
+'/ </summary>
 
-'/ &lt;remarks&gt;
+'/ <remarks>
 
 '/ Since this class wraps a double array, the indexing is zero-based but, 
 
@@ -1331,7 +1331,7 @@ public object this[int row, int col]
 
 '/ one is added to the indexes when the ICalcData methods are called.
 
-'/ &lt;/remarks&gt;
+'/ </remarks>
 
 Default Public Property Item(ByVal row As Integer, ByVal col As Integer) As Object
 
@@ -1383,15 +1383,15 @@ int nCols;
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Populates the double array.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// &lt;param name="sender"&gt;&lt;/param&gt;
+/// <param name="sender"></param>
 
-/// &lt;param name="e"&gt;&lt;/param&gt;
+/// <param name="e"></param>
 
 private void button1_Click(object sender, System.EventArgs e)
 
@@ -1443,11 +1443,11 @@ private void button1_Click(object sender, System.EventArgs e)
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Displays the ArrayCalcData values in a text box.
 
-/// &lt;/summary&gt;
+/// </summary>
 
 private void ShowObject()
 
@@ -1499,15 +1499,15 @@ Dim nCols As Integer
 
 
 
-'/ &lt;summary&gt;
+'/ <summary>
 
 '/ Populates the double array.
 
-'/ &lt;/summary&gt;
+'/ </summary>
 
-'/ &lt;param name="sender"&gt;&lt;/param&gt;
+'/ <param name="sender"></param>
 
-'/ &lt;param name="e"&gt;&lt;/param&gt;
+'/ <param name="e"></param>
 
 Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) _
 
@@ -1573,11 +1573,11 @@ End Sub
 
 
 
-'/ &lt;summary&gt;
+'/ <summary>
 
 '/ Displays the ArrayCalcData values in a text box.
 
-'/ &lt;/summary&gt;
+'/ </summary>
 
 Private Sub ShowObject()
 
@@ -1613,7 +1613,7 @@ Here is a typical display that you might see if you run the application at this 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img15.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -1627,15 +1627,15 @@ Here is a typical display that you might see if you run the application at this 
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Populates a single entry in the ArrayCalcData object.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// &lt;param name="sender"&gt;&lt;/param&gt;
+/// <param name="sender"></param>
 
-/// &lt;param name="e"&gt;&lt;/param&gt;
+/// <param name="e"></param>
 
 private void button2_Click(object sender, System.EventArgs e)
 
@@ -1671,15 +1671,15 @@ private void button2_Click(object sender, System.EventArgs e)
 
 
 
-'/ &lt;summary&gt;
+'/ <summary>
 
 '/ Populates a single entry in the ArrayCalcData object.
 
-'/ &lt;/summary&gt;
+'/ </summary>
 
-'/ &lt;param name="sender"&gt;&lt;/param&gt;
+'/ <param name="sender"></param>
 
-'/ &lt;param name="e"&gt;&lt;/param&gt;
+'/ <param name="e"></param>
 
 Private Sub button2_Click(ByVal sender As Object, ByVal e As System.EventArgs) _
 
@@ -1719,7 +1719,7 @@ Here is the code you must use. It allows you to specify the row, column and valu
 
 On the previous screen, if you click the Set button, it places 123 in cell 0,0. Notice the calculations update automatically to reflect the new value.
 
-{ ![](Getting-Started_images/Getting-Started_img16.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
 {:.image }
 
 

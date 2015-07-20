@@ -33,7 +33,7 @@ In the Grid control, each cell acts as a single entity, which is suitable for ap
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -43,7 +43,7 @@ The GridData control is designed to be bound with a data source. In the GridData
 
 For more detailed information about data source connections, refer to the Data Binding section. 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -53,7 +53,7 @@ The GridTree control serves as a multicolumn tree control that is optimized to d
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -63,13 +63,13 @@ The following illustration depicts the Class Diagram for Essential Grid for WPF.
 
 Control Hierarchy
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
 Model Hierarchy
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -91,7 +91,7 @@ Please follow the steps below to add the Grid control through a designer.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -99,13 +99,13 @@ Please follow the steps below to add the Grid control through a designer.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
 5. Once you drag GridControl and drop it in ScrollViewer, the grid control is added to the designer and its dependent assemblies are added to the project.
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -122,7 +122,7 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -132,7 +132,7 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
 
 
 
- &lt;Grid Name="layoutRoot"/&gt;        
+ <Grid Name="layoutRoot"/>        
 
 
 
@@ -241,7 +241,7 @@ this.gridControl.QueryCellInfo += new Syncfusion.Windows.Controls.Grid.GridQu
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -259,13 +259,13 @@ Please follow the steps below to add the GridData control through a designer suc
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
 {:.image }
 
 
 4. Once you’ve dragged GridDataControl to the designer from the Toolbox, it is added to the designer, and its dependent DLLs are added to the project.
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -283,7 +283,7 @@ Programmatically Adding the GridData Control:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img13.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -293,7 +293,7 @@ Programmatically Adding the GridData Control:
 
 [XAML]
 
- &lt;Grid Name="layoutRoot"/&gt;        
+ <Grid Name="layoutRoot"/>        
 
 
 
@@ -452,7 +452,7 @@ Once the application runs, the following output is generated.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img14.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -638,7 +638,7 @@ public MainWindow()
 
 When the application runs, the following output is generated.
 
-{ ![](Getting-Started_images/Getting-Started_img15.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -654,7 +654,7 @@ Please follow the steps below to add the GridTree control through a designer suc
 2. Open the designer window.
 3. Drag GridTreeControl from the Toolbox and drop it in the designer window.
 
-{ ![](Getting-Started_images/Getting-Started_img16.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -662,7 +662,7 @@ Please follow the steps below to add the GridTree control through a designer suc
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img17.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -677,7 +677,7 @@ Programmatically Adding GridTree Control
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img18.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -689,7 +689,7 @@ Programmatically Adding GridTree Control
 
 [XAML]
 
- &lt;Grid Name="layoutRoot"/&gt; 
+ <Grid Name="layoutRoot"/> 
 
 
 
@@ -989,7 +989,7 @@ When the application runs, the following output is generated.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img19.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -1301,7 +1301,7 @@ public MainWindow()
 
 When the application runs, the following output is generated.
 
-{ ![](Getting-Started_images/Getting-Started_img20.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img20.png)' | markdownify }}
 {:.image }
 
 
@@ -1512,7 +1512,7 @@ When the application runs, the following output is generated.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img21.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img21.png)' | markdownify }}
 {:.image }
 
 
@@ -1571,13 +1571,13 @@ The ICollectionViewAdv interface is an extended ICollectionView interface that i
 
 ICollectionViewAdv interface implements the following:
 
-{ ![](Getting-Started_images/Getting-Started_img22.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img22.jpeg)' | markdownify }}
 {:.image }
 
 
 ICollectionViewAdv is implemented as two parts in Syncfusion.Linq.Base library, as shown below:
 
-{ ![](Getting-Started_images/Getting-Started_img23.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img23.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1616,7 +1616,7 @@ queryableCollectionView.GroupDescriptions.Add(new PropertyGroupDescription("Ship
 
 The grouping values are stored in a binary tree structure in the ICollectionViewAdv.TopLevelGroup. The visual graph of the TopLevelGroup is as follows:
 
-{ ![](Getting-Started_images/Getting-Started_img24.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img24.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1624,7 +1624,7 @@ The grouping values are stored in a binary tree structure in the ICollectionView
 
 The class diagram for the structure above is as follows:
 
-{ ![](Getting-Started_images/Getting-Started_img25.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img25.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1661,7 +1661,7 @@ foreach (var nodeEntry in queryableCollectionView.TopLevelGroup)
 
 The ICollectionViewAdv interface exposes an ObservableCollection<ISummaryRow> and CaptionSummary.
 
-{ ![](Getting-Started_images/Getting-Started_img26.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img26.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1821,11 +1821,11 @@ Say, your data source is defined in C# class named Order, and it queries the rec
 
 
 
-&lt;Window.Resources&gt;        
+<Window.Resources>        
 
-&lt;ObjectDataProvider x:Key="order" ObjectType="{x:Type local:Order}" &lt;/Window.Resources&gt;
+<ObjectDataProvider x:Key="order" ObjectType="{x:Type local:Order}" </Window.Resources>
 
-&lt;syncfusion:GridDataControl x:Name="dataGrid" AutoPopulateColumns="True"    AutoPopulateRelations="False" ItemsSource="{StaticResource order}" &gt;
+<syncfusion:GridDataControl x:Name="dataGrid" AutoPopulateColumns="True"    AutoPopulateRelations="False" ItemsSource="{StaticResource order}" >
 
 > 
 
@@ -1881,7 +1881,7 @@ public class Order : ObservableCollection<Orders>
 
 The following screenshot shows a GDC which bound with an Object data using the Object Data Provider.
 
-{ ![](Getting-Started_images/Getting-Started_img27.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img27.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1943,23 +1943,23 @@ Code to Bind the Above DataTable to GDC.
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-        &lt;ObjectDataProvider x:Key="CustomerTable" MethodName="GetDataTable" ObjectType="{x:Type local:Data}" /&gt;
+        <ObjectDataProvider x:Key="CustomerTable" MethodName="GetDataTable" ObjectType="{x:Type local:Data}" />
 
-        &lt;CollectionViewSource x:Key="orderSource" Source="{StaticResource CustomerTable}" &gt;
+        <CollectionViewSource x:Key="orderSource" Source="{StaticResource CustomerTable}" >
 
-        &lt;/CollectionViewSource&gt;
+        </CollectionViewSource>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
-&lt;syncfusion:GridDataControl x:Name="dataGrid" AutoPopulateColumns="True" AutoPopulateRelations="False" ShowAddNewRow="False" ItemsSource="{StaticResource orderSource}"&gt;            
+<syncfusion:GridDataControl x:Name="dataGrid" AutoPopulateColumns="True" AutoPopulateRelations="False" ShowAddNewRow="False" ItemsSource="{StaticResource orderSource}">            
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img28.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img28.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2027,23 +2027,23 @@ Binding the Above Collection to GDC.
 
 
 
-&lt;Window.Resources&gt;        
+<Window.Resources>        
 
-&lt;ObjectDataProvider x:Key="customer" ObjectType="{x:Type local:Customer}" /&gt;
+<ObjectDataProvider x:Key="customer" ObjectType="{x:Type local:Customer}" />
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
-&lt;syncfusion:GridDataControl x:Name="grid"  AutoPopulateColumns="True"    AutoPopulateRelations="False" ItemsSource="{StaticResource customer}"&gt;            
+<syncfusion:GridDataControl x:Name="grid"  AutoPopulateColumns="True"    AutoPopulateRelations="False" ItemsSource="{StaticResource customer}">            
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
 The following image shows a Grid bound with an Observable collection.
 
-{ ![](Getting-Started_images/Getting-Started_img29.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img29.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2061,21 +2061,21 @@ Let us see an example usage of this Collection View Source with our GDC.
 
 
 
-&lt;Window.Resources&gt;        
+<Window.Resources>        
 
-&lt;ObjectDataProvider x:Key="customer" ObjectType="{x:Type local:Customer}" /&gt;        
+<ObjectDataProvider x:Key="customer" ObjectType="{x:Type local:Customer}" />        
 
-&lt;CollectionViewSource x:Key="customerSource" Source="{StaticResource customer}" &gt;        
+<CollectionViewSource x:Key="customerSource" Source="{StaticResource customer}" >        
 
-&lt;/CollectionViewSource&gt;    
+</CollectionViewSource>    
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
-&lt;syncfusion:GridDataControl x:Name="grid"  AutoPopulateColumns="True"    AutoPopulateRelations="False" ItemsSource="{StaticResource customerSource}"&gt;            
+<syncfusion:GridDataControl x:Name="grid"  AutoPopulateColumns="True"    AutoPopulateRelations="False" ItemsSource="{StaticResource customerSource}">            
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
@@ -2119,7 +2119,7 @@ this.Add(o);
 
 The following image shows the output of the above given code:
 
-{ ![](Getting-Started_images/Getting-Started_img30.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img30.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2153,7 +2153,7 @@ this.gridDataControl1.ItemsSource = northwind.Orders;
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img31.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img31.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2229,15 +2229,15 @@ public class Customer : ObservableCollection<Customers>
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-        &lt;ObjectDataProvider x:Key="customer" ObjectType="{x:Type local:Customer}" /&gt;
+        <ObjectDataProvider x:Key="customer" ObjectType="{x:Type local:Customer}" />
 
-        &lt;CollectionViewSource x:Key="customerSource" Source="{StaticResource customer}" &gt;
+        <CollectionViewSource x:Key="customerSource" Source="{StaticResource customer}" >
 
-        &lt;/CollectionViewSource&gt;
+        </CollectionViewSource>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -2253,13 +2253,13 @@ public class Customer : ObservableCollection<Customers>
 
                                          ItemsSource="{Binding Source={StaticResource customerSource}}">
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
 The following image shows the output of the above given code:
 
-{ ![](Getting-Started_images/Getting-Started_img32.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img32.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2281,31 +2281,31 @@ You can bind data columns from multiple data tables which are inter-related to t
 
 
 
-&lt;syncfusion:GridDataControl.VisibleColumns&gt;
+<syncfusion:GridDataControl.VisibleColumns>
 
-    &lt;syncfusion:GridDataVisibleColumn MappingName="OrderID" HeaderText="Order ID"&gt;
+    <syncfusion:GridDataVisibleColumn MappingName="OrderID" HeaderText="Order ID">
 
-    &lt;/syncfusion:GridDataVisibleColumn&gt;
+    </syncfusion:GridDataVisibleColumn>
 
-    &lt;syncfusion:GridDataVisibleColumn MappingName="CustomerID" HeaderText="Customer ID"&gt;
+    <syncfusion:GridDataVisibleColumn MappingName="CustomerID" HeaderText="Customer ID">
 
-    &lt;/syncfusion:GridDataVisibleColumn&gt;
+    </syncfusion:GridDataVisibleColumn>
 
-    &lt;syncfusion:GridDataVisibleColumn MappingName="Customers.CompanyName" HeaderText="Customers.CompanyName"/&gt;
+    <syncfusion:GridDataVisibleColumn MappingName="Customers.CompanyName" HeaderText="Customers.CompanyName"/>
 
-    &lt;syncfusion:GridDataVisibleColumn MappingName="Customers.ContactTitle" HeaderText="Customers.ContactTitle"/&gt;
+    <syncfusion:GridDataVisibleColumn MappingName="Customers.ContactTitle" HeaderText="Customers.ContactTitle"/>
 
-&lt;/syncfusion:GridDataControl.VisibleColumns&gt;
+</syncfusion:GridDataControl.VisibleColumns>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img33.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img33.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img34.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img34.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2317,49 +2317,49 @@ You can also apply grouping, sorting, filtering, summaries and conditional forma
 
 // Applying Conditional Formats.
 
-&lt;syncfusion:GridDataControl.ConditionalFormats&gt;
+<syncfusion:GridDataControl.ConditionalFormats>
 
-    &lt;syncfusion:GridDataConditionalFormat Name="C1" ApplyStyleToColumn="Customers.ContactTitle"&gt;
+    <syncfusion:GridDataConditionalFormat Name="C1" ApplyStyleToColumn="Customers.ContactTitle">
 
-        &lt;syncfusion:GridDataConditionalFormat.Style&gt;
+        <syncfusion:GridDataConditionalFormat.Style>
 
-            &lt;syncfusion:GridDataStyleInfo Background="Crimson" Foreground="White"/&gt;
+            <syncfusion:GridDataStyleInfo Background="Crimson" Foreground="White"/>
 
-        &lt;/syncfusion:GridDataConditionalFormat.Style&gt;
+        </syncfusion:GridDataConditionalFormat.Style>
 
-        &lt;syncfusion:GridDataConditionalFormat.Conditions&gt;
+        <syncfusion:GridDataConditionalFormat.Conditions>
 
-            &lt;syncfusion:GridDataCondition ColumnName="Customers.ContactTitle" ConditionType="Equals" Value="Sales Representative"                     PredicateType="Or"/&gt;
+            <syncfusion:GridDataCondition ColumnName="Customers.ContactTitle" ConditionType="Equals" Value="Sales Representative"                     PredicateType="Or"/>
 
-        &lt;/syncfusion:GridDataConditionalFormat.Conditions&gt;
+        </syncfusion:GridDataConditionalFormat.Conditions>
 
-    &lt;/syncfusion:GridDataConditionalFormat&gt;
+    </syncfusion:GridDataConditionalFormat>
 
-&lt;/syncfusion:GridDataControl.ConditionalFormats&gt;
+</syncfusion:GridDataControl.ConditionalFormats>
 
 
 
 // Adding Summaries.
 
-&lt;syncfusion:GridDataControl.TableSummaryRows&gt;
+<syncfusion:GridDataControl.TableSummaryRows>
 
-    &lt;syncfusion:GridDataSummaryRow ShowSummaryInRow="True" Title="Total : {CountSummary} Items" TitleColumnCount="2"&gt;
+    <syncfusion:GridDataSummaryRow ShowSummaryInRow="True" Title="Total : {CountSummary} Items" TitleColumnCount="2">
 
-        &lt;syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+        <syncfusion:GridDataSummaryRow.SummaryColumns>
 
             <syncfusion:GridDataSummaryColumn Name="CountSummary" MappingName="Customers.CustomerID" SummaryType="CountAggregate"
 
             Format="'{Count:d}'"/>
 
-        &lt;/syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+        </syncfusion:GridDataSummaryRow.SummaryColumns>
 
-    &lt;/syncfusion:GridDataSummaryRow&gt;
+    </syncfusion:GridDataSummaryRow>
 
-&lt;/syncfusion:GridDataControl.TableSummaryRows&gt;
+</syncfusion:GridDataControl.TableSummaryRows>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img35.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img35.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2373,7 +2373,7 @@ The following code illustrates this property:
 
 
 
-&lt;syncfusion:GridDataControl x:Name="grid" AutoPopulateColumns="True" AutoPopulateRelations="False" NotifyPropertyChanges="True"&gt;
+<syncfusion:GridDataControl x:Name="grid" AutoPopulateColumns="True" AutoPopulateRelations="False" NotifyPropertyChanges="True">
 
 
 
@@ -2383,7 +2383,7 @@ The following image corresponds to the output of the above given code:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img36.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img36.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2472,7 +2472,7 @@ return result;
 
 The following screenshot illustrates Data Error Validation in the GridData control.
 
-{ ![](Getting-Started_images/Getting-Started_img37.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img37.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2644,7 +2644,7 @@ void grid_CurrentCellValidating(object sender, CurrentCellValidatingEventArgs
 
 Output
 
-{ ![](Getting-Started_images/Getting-Started_img38.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img38.png)' | markdownify }}
 {:.image }
 
 
@@ -2862,7 +2862,7 @@ void OnRowValidating(object sender, GridDataRowValidatingEventArgs args)
 
 Output
 
-{ ![C:/Users/Graham/Desktop/Catch/2012 Vol. 3/UG/validation.png](Getting-Started_images/Getting-Started_img39.png) | markdownify }
+{{ '![C:/Users/Graham/Desktop/Catch/2012 Vol. 3/UG/validation.png](Getting-Started_images/Getting-Started_img39.png)' | markdownify }}
 {:.image }
 
 
@@ -2890,25 +2890,25 @@ HorizontalContentAlignment="Stretch"
 
 ScrollViewer.HorizontalScrollBarVisibility="Disabled" Background="Transparent" Name="lstShelvedOrders" Height="300">
 
-    &lt;ListView.View&gt;
+    <ListView.View>
 
-        &lt;GridView&gt;
+        <GridView>
 
-            &lt;GridViewColumn DisplayMemberBinding="{Binding Path=OrderID}" Header="Shelve ID"  /&gt;
+            <GridViewColumn DisplayMemberBinding="{Binding Path=OrderID}" Header="Shelve ID"  />
 
-            &lt;GridViewColumn DisplayMemberBinding="{Binding Path=CustomerID}" Header="Customer" /&gt;
+            <GridViewColumn DisplayMemberBinding="{Binding Path=CustomerID}" Header="Customer" />
 
-            &lt;GridViewColumn DisplayMemberBinding="{Binding Path=EmployeeID}" Header="PO Number" /&gt;
+            <GridViewColumn DisplayMemberBinding="{Binding Path=EmployeeID}" Header="PO Number" />
 
-            &lt;GridViewColumn DisplayMemberBinding="{Binding Path=OrderDate, StringFormat=MMM dd\, yyyy}" Header="Date"  /&gt;
+            <GridViewColumn DisplayMemberBinding="{Binding Path=OrderDate, StringFormat=MMM dd\, yyyy}" Header="Date"  />
 
-            &lt;GridViewColumn DisplayMemberBinding="{Binding Path=ShipCountry}" Header="Ship Country"  /&gt;
+            <GridViewColumn DisplayMemberBinding="{Binding Path=ShipCountry}" Header="Ship Country"  />
 
-        &lt;/GridView&gt;
+        </GridView>
 
-    &lt;/ListView.View&gt;
+    </ListView.View>
 
-&lt;/ListView&gt;
+</ListView>
 
 
 
@@ -2926,33 +2926,33 @@ AutoPopulateRelations="False"
 
 ItemsSource="{StaticResource ordersSource}" ShowGroupDropArea="True" Height="300">
 
-    &lt;syncfusion:GridDataControl.VisibleColumns&gt;
+    <syncfusion:GridDataControl.VisibleColumns>
 
-        &lt;syncfusion:GridDataVisibleColumn MappingName="OrderID" IsReadOnly="True" HeaderText="Order ID" Width="90" /&gt;
+        <syncfusion:GridDataVisibleColumn MappingName="OrderID" IsReadOnly="True" HeaderText="Order ID" Width="90" />
 
-        &lt;syncfusion:GridDataVisibleColumn MappingName="CustomerID" HeaderText="Customer ID" Width="90" /&gt;
+        <syncfusion:GridDataVisibleColumn MappingName="CustomerID" HeaderText="Customer ID" Width="90" />
 
-        &lt;syncfusion:GridDataVisibleColumn MappingName="EmployeeID" HeaderText="Employee ID" Width="90" /&gt;
+        <syncfusion:GridDataVisibleColumn MappingName="EmployeeID" HeaderText="Employee ID" Width="90" />
 
-        &lt;syncfusion:GridDataVisibleColumn MappingName="OrderDate" HeaderText="Order Date" Width="120"/&gt;
+        <syncfusion:GridDataVisibleColumn MappingName="OrderDate" HeaderText="Order Date" Width="120"/>
 
-        &lt;syncfusion:GridDataVisibleColumn MappingName="ShipCountry" HeaderText="Ship Country" Width="100" /&gt;
+        <syncfusion:GridDataVisibleColumn MappingName="ShipCountry" HeaderText="Ship Country" Width="100" />
 
-    &lt;/syncfusion:GridDataControl.VisibleColumns&gt;
+    </syncfusion:GridDataControl.VisibleColumns>
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
 Following are the sample outputs with IsSynchronizedWithCurrentItem set to true and false.
 
-{ ![](Getting-Started_images/Getting-Started_img40.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img40.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img41.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img41.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2978,25 +2978,25 @@ ShowAddNewRow="False"
 
 >                
 
-&lt;syncfusion:GridDataControl.VisibleColumns&gt;                    
+<syncfusion:GridDataControl.VisibleColumns>                    
 
-&lt;syncfusion:GridDataVisibleColumn MappingName="OrderID" IsReadOnly="True" IsIdentity="True" HeaderText="Order ID" /&gt;
+<syncfusion:GridDataVisibleColumn MappingName="OrderID" IsReadOnly="True" IsIdentity="True" HeaderText="Order ID" />
 
-&lt;syncfusion:GridDataVisibleColumn MappingName="ShipCountry" HeaderText="Ship Country"/&gt;
+<syncfusion:GridDataVisibleColumn MappingName="ShipCountry" HeaderText="Ship Country"/>
 
-&lt;syncfusion:GridDataVisibleColumn MappingName="ShipCity" HeaderText="Ship City" /&gt;
+<syncfusion:GridDataVisibleColumn MappingName="ShipCity" HeaderText="Ship City" />
 
-&lt;syncfusion:GridDataUnboundVisibleColumn HeaderText="UnboundCol1" Format="'{Freight:c} for {ShipCity}'" /&gt;                
+<syncfusion:GridDataUnboundVisibleColumn HeaderText="UnboundCol1" Format="'{Freight:c} for {ShipCity}'" />                
 
-&lt;/syncfusion:GridDataControl.VisibleColumns&gt;            
+</syncfusion:GridDataControl.VisibleColumns>            
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
 The following screenshot shows the output of the above given code:
 
-{ ![](Getting-Started_images/Getting-Started_img42.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img42.png)' | markdownify }}
 {:.image }
 
 
@@ -3024,7 +3024,7 @@ object value = this.dataGrid.Model.Table.GetUnboundValue(5, 5);
 
 Unbound columns allow association of related values that are bound to an expression in the unbound column or through handling the QueryUnboundColumnValue event. Operations like sorting, filtering, grouping, summaries and conditional formatting can now be applied on these dynamic values bound to the underlying source. It uses LINQ Functional Expressions to be dynamically evaluated at run time, and thus only strongly-typed source can be used with this feature.
 
-{ ![](Getting-Started_images/Getting-Started_img43.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img43.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3036,45 +3036,45 @@ Sorting can be done interactively by clicking the header or can be declared by u
 
 
 
-&lt;syncfusion:GridDataControl.SortColumns&gt;
+<syncfusion:GridDataControl.SortColumns>
 
-    &lt;syncfusion:GridDataSortColumn ColumnName="Multiply" SortDirection="Descending" /&gt;
+    <syncfusion:GridDataSortColumn ColumnName="Multiply" SortDirection="Descending" />
 
-&lt;/syncfusion:GridDataControl.SortColumns&gt;
+</syncfusion:GridDataControl.SortColumns>
 
-&lt;syncfusion:GridDataControl.VisibleColumns&gt;
+<syncfusion:GridDataControl.VisibleColumns>
 
-    &lt;syncfusion:GridDataVisibleColumn MappingName="CustomerID" HeaderText="Customer ID" /&gt;
+    <syncfusion:GridDataVisibleColumn MappingName="CustomerID" HeaderText="Customer ID" />
 
-    &lt;syncfusion:GridDataVisibleColumn MappingName="OrderDate" HeaderText="Order Date" /&gt;
+    <syncfusion:GridDataVisibleColumn MappingName="OrderDate" HeaderText="Order Date" />
 
-    &lt;syncfusion:GridDataVisibleColumn MappingName="Freight" HeaderText="Freight" AllowFilter="True"&gt;
+    <syncfusion:GridDataVisibleColumn MappingName="Freight" HeaderText="Freight" AllowFilter="True">
 
-        &lt;syncfusion:GridDataVisibleColumn.FilterPane&gt;
+        <syncfusion:GridDataVisibleColumn.FilterPane>
 
-            &lt;syncfusion:GridDataTextFilteringPane IsThemed="False" Foreground="Black" PredicateType="And" /&gt;
+            <syncfusion:GridDataTextFilteringPane IsThemed="False" Foreground="Black" PredicateType="And" />
 
-        &lt;/syncfusion:GridDataVisibleColumn.FilterPane&gt;
+        </syncfusion:GridDataVisibleColumn.FilterPane>
 
-    &lt;/syncfusion:GridDataVisibleColumn&gt;
+    </syncfusion:GridDataVisibleColumn>
 
     <syncfusion:GridDataUnboundVisibleColumn MappingName="Multiply" HeaderText="Freight * 100" Expression="Freight * 100"
 
     AllowFilter="True" AllowDrag="True" AllowGroup="True">
 
-    &lt;/syncfusion:GridDataUnboundVisibleColumn&gt;
+    </syncfusion:GridDataUnboundVisibleColumn>
 
     <syncfusion:GridDataUnboundVisibleColumn MappingName="FreightSqr" HeaderText="Freight Square" Expression="Freight ^ 2"
 
     AllowFilter="True">
 
-    &lt;/syncfusion:GridDataUnboundVisibleColumn&gt;
+    </syncfusion:GridDataUnboundVisibleColumn>
 
-&lt;/syncfusion:GridDataControl.VisibleColumns&gt;
+</syncfusion:GridDataControl.VisibleColumns>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img44.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img44.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3092,13 +3092,13 @@ Excel-like filtering can be enabled in unbound columns by setting AllowFilter pr
 
 
 
-&lt;syncfusion:GridDataUnboundVisibleColumn MappingName="Multiply" HeaderText="Freight * 100" Expression="Freight * 100" AllowFilter="True" AllowDrag="True" AllowGroup="True"&gt;
+<syncfusion:GridDataUnboundVisibleColumn MappingName="Multiply" HeaderText="Freight * 100" Expression="Freight * 100" AllowFilter="True" AllowDrag="True" AllowGroup="True">
 
-&lt;/syncfusion:GridDataUnboundVisibleColumn&gt;
+</syncfusion:GridDataUnboundVisibleColumn>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img45.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img45.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3112,19 +3112,19 @@ Advanced Filtering mode can be enabled by adding the following code.
 
 
 
-&lt;syncfusion:GridDataUnboundVisibleColumn MappingName="Multiply" HeaderText="Freight * 100" Expression="Freight * 100" AllowFilter="True" AllowDrag="True" AllowGroup="True"&gt;
+<syncfusion:GridDataUnboundVisibleColumn MappingName="Multiply" HeaderText="Freight * 100" Expression="Freight * 100" AllowFilter="True" AllowDrag="True" AllowGroup="True">
 
-    &lt;syncfusion:GridDataVisibleColumn.FilterPane&gt;
+    <syncfusion:GridDataVisibleColumn.FilterPane>
 
-        &lt;syncfusion:GridDataTextFilteringPane IsThemed="False" Foreground="Black" PredicateType="And" /&gt;
+        <syncfusion:GridDataTextFilteringPane IsThemed="False" Foreground="Black" PredicateType="And" />
 
-    &lt;/syncfusion:GridDataVisibleColumn.FilterPane&gt;
+    </syncfusion:GridDataVisibleColumn.FilterPane>
 
-&lt;/syncfusion:GridDataUnboundVisibleColumn&gt;
+</syncfusion:GridDataUnboundVisibleColumn>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img46.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img46.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3138,15 +3138,15 @@ Grouping can be performed interactively or declaratively on the Unbound Columns 
 
 
 
-&lt;syncfusion:GridDataControl.GroupedColumns&gt;
+<syncfusion:GridDataControl.GroupedColumns>
 
-    &lt;syncfusion:GridDataGroupColumn ColumnName="Multiply" /&gt;
+    <syncfusion:GridDataGroupColumn ColumnName="Multiply" />
 
-&lt;/syncfusion:GridDataControl.GroupedColumns&gt;
+</syncfusion:GridDataControl.GroupedColumns>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img47.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img47.png)' | markdownify }}
 {:.image }
 
 
@@ -3160,21 +3160,21 @@ Table Summary
 
 
 
-&lt;syncfusion:GridDataControl.TableSummaryRows&gt;
+<syncfusion:GridDataControl.TableSummaryRows>
 
-    &lt;syncfusion:GridDataSummaryRow ShowSummaryInRow="False" Title="Total : {FreightMultiplySummary}" TitleColumnCount="3"&gt;
+    <syncfusion:GridDataSummaryRow ShowSummaryInRow="False" Title="Total : {FreightMultiplySummary}" TitleColumnCount="3">
 
-        &lt;syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+        <syncfusion:GridDataSummaryRow.SummaryColumns>
 
             <syncfusion:GridDataSummaryColumn Name="FreightMultiplySummary" MappingName="Multiply" SummaryType="Int32Aggregate"
 
             Format="'{Max:d}'" />
 
-        &lt;/syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+        </syncfusion:GridDataSummaryRow.SummaryColumns>
 
-    &lt;/syncfusion:GridDataSummaryRow&gt;
+    </syncfusion:GridDataSummaryRow>
 
-&lt;/syncfusion:GridDataControl.TableSummaryRows&gt;
+</syncfusion:GridDataControl.TableSummaryRows>
 
 
 
@@ -3184,23 +3184,23 @@ Caption Summary
 
 
 
-&lt;syncfusion:GridDataControl.CaptionSummaryRow&gt;
+<syncfusion:GridDataControl.CaptionSummaryRow>
 
-    &lt;syncfusion:GridDataSummaryRow ShowSummaryInRow="False" Title="'{CountSummary}'" TitleColumnCount="4"&gt;
+    <syncfusion:GridDataSummaryRow ShowSummaryInRow="False" Title="'{CountSummary}'" TitleColumnCount="4">
 
-        &lt;syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+        <syncfusion:GridDataSummaryRow.SummaryColumns>
 
             <syncfusion:GridDataSummaryColumn Name="CountSummary" MappingName="Multiply" SummaryType="DoubleAggregate"
 
             Format="Total - '{Sum:###.00}'" >
 
-            &lt;/syncfusion:GridDataSummaryColumn&gt;
+            </syncfusion:GridDataSummaryColumn>
 
-        &lt;/syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+        </syncfusion:GridDataSummaryRow.SummaryColumns>
 
-    &lt;/syncfusion:GridDataSummaryRow&gt;
+    </syncfusion:GridDataSummaryRow>
 
-&lt;/syncfusion:GridDataControl.CaptionSummaryRow&gt;
+</syncfusion:GridDataControl.CaptionSummaryRow>
 
 
 
@@ -3210,27 +3210,27 @@ Group Summary
 
 
 
-&lt;syncfusion:GridDataControl.CaptionSummaryRow&gt;
+<syncfusion:GridDataControl.CaptionSummaryRow>
 
-    &lt;syncfusion:GridDataSummaryRow ShowSummaryInRow="False" Title="'{CountSummary}'" TitleColumnCount="4"&gt;
+    <syncfusion:GridDataSummaryRow ShowSummaryInRow="False" Title="'{CountSummary}'" TitleColumnCount="4">
 
-        &lt;syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+        <syncfusion:GridDataSummaryRow.SummaryColumns>
 
             <syncfusion:GridDataSummaryColumn Name="CountSummary" MappingName="Multiply" SummaryType="DoubleAggregate"
 
             Format="Total - '{Sum:###.00}'" >
 
-            &lt;/syncfusion:GridDataSummaryColumn&gt;
+            </syncfusion:GridDataSummaryColumn>
 
-        &lt;/syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+        </syncfusion:GridDataSummaryRow.SummaryColumns>
 
-    &lt;/syncfusion:GridDataSummaryRow&gt;
+    </syncfusion:GridDataSummaryRow>
 
-&lt;/syncfusion:GridDataControl.CaptionSummaryRow&gt;
+</syncfusion:GridDataControl.CaptionSummaryRow>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img48.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img48.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3330,13 +3330,13 @@ foreach (object obj in gdc.SelectedItems)
 
 Output
 
-{ ![](Getting-Started_images/Getting-Started_img49.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img49.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img50.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img50.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3346,7 +3346,7 @@ C# 4.0 introduces a new type of object: dynamic. More information can be found i
 
 The IDynamicMetaObjectProvider interface defines the interface between the dynamic run-time types.
 
-{ ![](Getting-Started_images/Getting-Started_img51.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img51.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3410,7 +3410,7 @@ Since the collections are dynamic, we need to specify the proper type for the co
 
 
 
-     &lt;syncfusion:GridDataVisibleColumn MappingName="OrderDate" DataType="DateTime" /&gt;
+     <syncfusion:GridDataVisibleColumn MappingName="OrderDate" DataType="DateTime" />
 
 
 
@@ -3421,7 +3421,7 @@ Relations have to be handled in XAML or C#. The AutoPopulateRelations property d
 <table>
 <tr>
 <td>
-[XAML]                     &lt;syncfusion:GridDataControl.Relations&gt;                        &lt;syncfusion:GridDataRelation RelationalColumn="OrderDetails" /&gt;                    &lt;/syncfusion:GridDataControl.Relations&gt;</td></tr>
+[XAML]                     <syncfusion:GridDataControl.Relations>                        <syncfusion:GridDataRelation RelationalColumn="OrderDetails" />                    </syncfusion:GridDataControl.Relations></td></tr>
 <tr>
 <td>
 </td></tr>
@@ -3440,13 +3440,13 @@ You can create an UnboundRow by just setting the UnboundRowCount. It contains a 
 
 
 
-{ ![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/unboundrow top.png](Getting-Started_images/Getting-Started_img52.png) | markdownify }
+{{ '![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/unboundrow top.png](Getting-Started_images/Getting-Started_img52.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Unboundrow_bottom.png](Getting-Started_images/Getting-Started_img53.png) | markdownify }
+{{ '![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Unboundrow_bottom.png](Getting-Started_images/Getting-Started_img53.png)' | markdownify }}
 {:.image }
 
 
@@ -3536,13 +3536,13 @@ Grid groups can be created at design-time as well as run time. They are managed 
 
 AutoPopulateRelations="True" ItemsSource="{StaticResource ordersSource}" ShowGroupDropArea="True">
 
-&lt;syncfusion:GridDataControl.GroupedColumns &gt;
+<syncfusion:GridDataControl.GroupedColumns >
 
-&lt;syncfusion:GridDataGroupColumn ColumnName="ShipCountry"&gt;&lt;/syncfusion:GridDataGroupColumn&gt;
+<syncfusion:GridDataGroupColumn ColumnName="ShipCountry"></syncfusion:GridDataGroupColumn>
 
-&lt;/syncfusion:GridDataControl.GroupedColumns&gt;
+</syncfusion:GridDataControl.GroupedColumns>
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
@@ -3558,7 +3558,7 @@ dataGridControl.GroupedColumns.Add(groupedCol);
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img54.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img54.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3568,7 +3568,7 @@ Run Time Grouping
 
 Run time grouping is enabled by displaying the group drop area, a placeholder to store the current groups. Such groups can be created interactively through the drag-and-drop operation. For example, to group data against a particular column, drag the desired column header and drop it into the group drop area.
 
-{ ![](Getting-Started_images/Getting-Started_img55.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img55.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3604,7 +3604,7 @@ dataGrid.GroupedColumns.Add(groupedCol2);
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img56.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img56.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3773,21 +3773,21 @@ You can also perform sorting through the code. This requires you to define a num
 
 
 
-&lt;syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="True"    AutoPopulateRelations="False"  ItemsSource="{StaticResource customerSource}"&gt;
+<syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="True"    AutoPopulateRelations="False"  ItemsSource="{StaticResource customerSource}">
 
-    &lt;syncfusion:GridDataControl.SortColumns&gt;
+    <syncfusion:GridDataControl.SortColumns>
 
-       &lt;syncfusion:GridDataSortColumn ColumnName="ContactTitle" SortDirection="Descending" /&gt;
+       <syncfusion:GridDataSortColumn ColumnName="ContactTitle" SortDirection="Descending" />
 
-    &lt;/syncfusion:GridDataControl.SortColumns&gt;
+    </syncfusion:GridDataControl.SortColumns>
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
 The following screenshot shows a GDC enabled with sorting feature:
 
-{ ![](Getting-Started_images/Getting-Started_img57.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img57.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3805,7 +3805,7 @@ Disable Sort on All Columns
 
 
 
-&lt;syncfusion:GridDataControl x:Name="dataGrid" ItemsSource="{StaticResource customerSource}" AllowSort="False" /&gt;
+<syncfusion:GridDataControl x:Name="dataGrid" ItemsSource="{StaticResource customerSource}" AllowSort="False" />
 
 
 
@@ -3815,15 +3815,15 @@ Disable Sort on Single Column (Example-CustomerID)
 
 
 
-&lt;syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="True"    AutoPopulateRelations="False"  ItemsSource="{StaticResource customerSource}"&gt;
+<syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="True"    AutoPopulateRelations="False"  ItemsSource="{StaticResource customerSource}">
 
-   &lt;syncfusion:GridDataControl.VisibleColumns&gt;
+   <syncfusion:GridDataControl.VisibleColumns>
 
-      &lt;syncfusion:GridDataVisibleColumn MappingName="CustomerID" HeaderText="CustomerID" AllowSort="False" /&gt;
+      <syncfusion:GridDataVisibleColumn MappingName="CustomerID" HeaderText="CustomerID" AllowSort="False" />
 
-   &lt;/syncfusion:GridDataControl.VisibleColumns&gt;
+   </syncfusion:GridDataControl.VisibleColumns>
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 ##### Multicolumn Sorting
 
@@ -3835,17 +3835,17 @@ Below is the code that sorts the grid by two columns:
 
 
 
-&lt;syncfusion:GridDataControl x:Name="dataGrid" AutoPopulateColumns="True" AutoPopulateRelations="False" ItemsSource="{StaticResource customerSource}"&gt;
+<syncfusion:GridDataControl x:Name="dataGrid" AutoPopulateColumns="True" AutoPopulateRelations="False" ItemsSource="{StaticResource customerSource}">
 
-    &lt;syncfusion:GridDataControl.SortColumns&gt;
+    <syncfusion:GridDataControl.SortColumns>
 
-         &lt;syncfusion:GridDataSortColumn ColumnName="CompanyName" SortDirection="Ascending" /&gt;
+         <syncfusion:GridDataSortColumn ColumnName="CompanyName" SortDirection="Ascending" />
 
-         &lt;syncfusion:GridDataSortColumn ColumnName="ContactTitle" SortDirection="Descending" /&gt;
+         <syncfusion:GridDataSortColumn ColumnName="ContactTitle" SortDirection="Descending" />
 
-    &lt;/syncfusion:GridDataControl.SortColumns&gt;
+    </syncfusion:GridDataControl.SortColumns>
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 > 
 
@@ -3855,7 +3855,7 @@ Below is the code that sorts the grid by two columns:
 
 The following screenshot shows a multicolumn sorting enabled GDC:
 
-{ ![](Getting-Started_images/Getting-Started_img58.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img58.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3999,7 +3999,7 @@ public class CustomerInfo : IComparer<Object>, ISortDirection
 
 The following screenshot displays the Company Name column with the sorted names according to their length.
 
-{ ![D:/Document/CustomSorting/1.jpg](Getting-Started_images/Getting-Started_img59.jpeg) | markdownify }
+{{ '![D:/Document/CustomSorting/1.jpg](Getting-Started_images/Getting-Started_img59.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4033,7 +4033,7 @@ Enable Filter for the Whole Grid
 
 
 
-&lt;syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="True"    AutoPopulateRelations="False"  ItemsSource="{StaticResource customerSource}" ShowFilters="True" /&gt;
+<syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="True"    AutoPopulateRelations="False"  ItemsSource="{StaticResource customerSource}" ShowFilters="True" />
 
 
 
@@ -4045,23 +4045,23 @@ Enable Filter for Single Column
 
 
 
-&lt;syncfusion:GridDataControl x:Name="dataGrid" AutoPopulateColumns="False" AutoPopulateRelations="False"  ItemsSource="{StaticResource customerSource}"&gt;
+<syncfusion:GridDataControl x:Name="dataGrid" AutoPopulateColumns="False" AutoPopulateRelations="False"  ItemsSource="{StaticResource customerSource}">
 
-   &lt;syncfusion:GridDataControl.VisibleColumns&gt;
+   <syncfusion:GridDataControl.VisibleColumns>
 
-      &lt;syncfusion:GridDataVisibleColumn MappingName="CustomerID" HeaderText="CustomerID"/&gt;
+      <syncfusion:GridDataVisibleColumn MappingName="CustomerID" HeaderText="CustomerID"/>
 
-      &lt;syncfusion:GridDataVisibleColumn MappingName="CompanyName" HeaderText="CompanyName" AllowFilter="True" /&gt;
+      <syncfusion:GridDataVisibleColumn MappingName="CompanyName" HeaderText="CompanyName" AllowFilter="True" />
 
-      &lt;syncfusion:GridDataVisibleColumn MappingName="ContactTitle" HeaderText="ContactTitle" /&gt;
+      <syncfusion:GridDataVisibleColumn MappingName="ContactTitle" HeaderText="ContactTitle" />
 
-   &lt;/syncfusion:GridDataControl.VisibleColumns&gt;
+   </syncfusion:GridDataControl.VisibleColumns>
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 The following image shows a GridData control with filter feature enabled for "CompanyName" column:
 
-{ ![](Getting-Started_images/Getting-Started_img60.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img60.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4083,7 +4083,7 @@ ShowFilters="True" />
 
 The following image illustrates the columns, filtered against the criteria ContactTitle=’Accounting Manager'.
 
-{ ![](Getting-Started_images/Getting-Started_img61.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img61.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4099,15 +4099,15 @@ The following code illustrates the addition of a filter to the column 'ContactTi
 
 
 
-&lt;syncfusion:GridDataVisibleColumn MappingName="ContactTitle" HeaderText="ContactTitle"&gt;
+<syncfusion:GridDataVisibleColumn MappingName="ContactTitle" HeaderText="ContactTitle">
 
-                        &lt;syncfusion:GridDataVisibleColumn.Filters&gt;
+                        <syncfusion:GridDataVisibleColumn.Filters>
 
-                            &lt;syncfusion:GridDataFilterPredicate FilterType="StartsWith" FilterValue="Sales" IsCaseSensitive="False" /&gt;
+                            <syncfusion:GridDataFilterPredicate FilterType="StartsWith" FilterValue="Sales" IsCaseSensitive="False" />
 
-                        &lt;/syncfusion:GridDataVisibleColumn.Filters&gt;
+                        </syncfusion:GridDataVisibleColumn.Filters>
 
-&lt;/&lt;syncfusion:GridDataVisibleColumn&gt;
+</<syncfusion:GridDataVisibleColumn>
 
 #### Advanced Filtering
 
@@ -4180,7 +4180,7 @@ Specifies the filter operator to be used for the filter column</td></tr>
 <tr>
 <td>
 MatchCase</td><td>
-Boolean property; when {{ '_true_' | markdownify }}, performs case-sensitive filtering</td></tr>
+Boolean property; when {{{ ''_true_'' | markdownify }}}, performs case-sensitive filtering</td></tr>
 </table>
 The filtering panes are optional. It is possible to enable the filtering panes feature in few specific columns and allow other columns to use the default filter.
 
@@ -4198,65 +4198,65 @@ Let us see some code examples that set up the two kinds of filtering panes.
 
 ItemsSource="{StaticResource orderSource}" ShowColumnOptions="True">
 
-    &lt;syncfusion:GridDataControl.VisibleColumns&gt;
+    <syncfusion:GridDataControl.VisibleColumns>
 
-        &lt;syncfusion:GridDataVisibleColumn MappingName="OrderID"/&gt;
-
-
-
-        &lt;!--Frieght column using Slider Filtering Pane.--&gt;
-
-        &lt;syncfusion:GridDataVisibleColumn MappingName="Freight" AllowFilter="True"&gt;
-
-            &lt;syncfusion:GridDataVisibleColumn.FilterPane&gt;
-
-                &lt;syncfusion:GridDataInt32SliderFilteringPane /&gt;
-
-            &lt;/syncfusion:GridDataVisibleColumn.FilterPane&gt;
-
-        &lt;/syncfusion:GridDataVisibleColumn&gt;
+        <syncfusion:GridDataVisibleColumn MappingName="OrderID"/>
 
 
 
-        &lt;!--ShipCountry column using Text Filtering Pane with the Foreground and PredicateType properties set.--&gt;
+        <!--Frieght column using Slider Filtering Pane.-->
 
-        &lt;syncfusion:GridDataVisibleColumn MappingName="ShipCountry" AllowFilter="True"&gt;
+        <syncfusion:GridDataVisibleColumn MappingName="Freight" AllowFilter="True">
 
-            &lt;syncfusion:GridDataVisibleColumn.FilterPane&gt;
+            <syncfusion:GridDataVisibleColumn.FilterPane>
 
-                &lt;syncfusion:GridDataTextFilteringPane IsThemed="True" Foreground="Black" PredicateType="And" /&gt;
+                <syncfusion:GridDataInt32SliderFilteringPane />
 
-            &lt;/syncfusion:GridDataVisibleColumn.FilterPane&gt;
+            </syncfusion:GridDataVisibleColumn.FilterPane>
 
-        &lt;/syncfusion:GridDataVisibleColumn&gt;
-
-
-
-        &lt;!--ShipCountry column using Text Filtering Pane with the Background and CurrentFilterType properties set.--&gt;
-
-        &lt;syncfusion:GridDataVisibleColumn MappingName="ShipCity" AllowFilter="True"&gt;
-
-            &lt;syncfusion:GridDataVisibleColumn.FilterPane&gt;
-
-                &lt;syncfusion:GridDataTextFilteringPane IsThemed="False"  Background="Orange" CurrentFilterType="GreaterThan" /&gt;
-
-            &lt;/syncfusion:GridDataVisibleColumn.FilterPane&gt;
-
-        &lt;/syncfusion:GridDataVisibleColumn&gt;
-
-    &lt;/syncfusion:GridDataControl.VisibleColumns&gt;
-
-&lt;/syncfusion:GridDataControl&gt;
+        </syncfusion:GridDataVisibleColumn>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img62.jpeg) | markdownify }
+        <!--ShipCountry column using Text Filtering Pane with the Foreground and PredicateType properties set.-->
+
+        <syncfusion:GridDataVisibleColumn MappingName="ShipCountry" AllowFilter="True">
+
+            <syncfusion:GridDataVisibleColumn.FilterPane>
+
+                <syncfusion:GridDataTextFilteringPane IsThemed="True" Foreground="Black" PredicateType="And" />
+
+            </syncfusion:GridDataVisibleColumn.FilterPane>
+
+        </syncfusion:GridDataVisibleColumn>
+
+
+
+        <!--ShipCountry column using Text Filtering Pane with the Background and CurrentFilterType properties set.-->
+
+        <syncfusion:GridDataVisibleColumn MappingName="ShipCity" AllowFilter="True">
+
+            <syncfusion:GridDataVisibleColumn.FilterPane>
+
+                <syncfusion:GridDataTextFilteringPane IsThemed="False"  Background="Orange" CurrentFilterType="GreaterThan" />
+
+            </syncfusion:GridDataVisibleColumn.FilterPane>
+
+        </syncfusion:GridDataVisibleColumn>
+
+    </syncfusion:GridDataControl.VisibleColumns>
+
+</syncfusion:GridDataControl>
+
+
+
+{{ '![](Getting-Started_images/Getting-Started_img62.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img63.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img63.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4316,7 +4316,7 @@ Me.dataGrid.FilterBarMode = GridDataFilterBarMode.Immediate
 
 3. Run the application and use the filtering tokens in the FilterBar. The valid tokens are listed in Tokens to filter the value table. The following is a sample output of FilterBar implementation.
 
-{ ![](Getting-Started_images/Getting-Started_img64.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img64.png)' | markdownify }}
 {:.image }
 
 
@@ -4478,27 +4478,27 @@ To filter items using Dropdown Filter
 
 The Dropdown button is used to filter the required items. We have to set the FilterBarStyle to change the FilterBar cell type.
 
-&lt;syncfusion:GridDataVisibleColumn MappingName="EmployeeID" HeaderText="Employee ID"&gt;
+<syncfusion:GridDataVisibleColumn MappingName="EmployeeID" HeaderText="Employee ID">
 
-     &lt;syncfusion:GridDataVisibleColumn.ColumnStyle&gt;
+     <syncfusion:GridDataVisibleColumn.ColumnStyle>
 
-&lt;syncfusion:GridDataColumnStyle CellType="IntegerEdit        " HorizontalAlignment="Right"&gt;
+<syncfusion:GridDataColumnStyle CellType="IntegerEdit        " HorizontalAlignment="Right">
 
-                  &lt;/syncfusion:GridDataColumnStyle&gt;
+                  </syncfusion:GridDataColumnStyle>
 
-                  &lt;/syncfusion:GridDataVisibleColumn.ColumnStyle&gt;
+                  </syncfusion:GridDataVisibleColumn.ColumnStyle>
 
-                       &lt;syncfusion:GridDataVisibleColumn.FilterBarStyle&gt;
+                       <syncfusion:GridDataVisibleColumn.FilterBarStyle>
 
-                           &lt;syncfusion:GridDataFilterBarStyle CellType="ComboBox" /&gt;
+                           <syncfusion:GridDataFilterBarStyle CellType="ComboBox" />
 
-                       &lt;/syncfusion:GridDataVisibleColumn.FilterBarStyle&gt;
+                       </syncfusion:GridDataVisibleColumn.FilterBarStyle>
 
- &lt;/syncfusion:GridDataVisibleColumn&gt;
+ </syncfusion:GridDataVisibleColumn>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img65.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img65.png)' | markdownify }}
 {:.image }
 
 
@@ -4556,7 +4556,7 @@ NA</td></tr>
 
 To Edit items in Dropdown list 
 
-{ ![C:/Users/riaj/Desktop/edit.png](Getting-Started_images/Getting-Started_img66.png) | markdownify }
+{{ '![C:/Users/riaj/Desktop/edit.png](Getting-Started_images/Getting-Started_img66.png)' | markdownify }}
 {:.image }
 
 
@@ -4602,7 +4602,7 @@ Use Case Scenario
 
 Paging Support is a very useful feature to load large amount of data. We can load millions of records in an efficient way.
 
-{ ![](Getting-Started_images/Getting-Started_img67.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img67.png)' | markdownify }}
 {:.image }
 
 
@@ -4684,7 +4684,7 @@ The GridDataControl supports paging on demand by specifying queries in order to 
 
 [C#]
 
-&lt;syncfusion:DataPagerExt x:Name="dataPager" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" DisplayMode="PreviousNextNumeric" NumericButtonCount="10" AutoEllipsis="True" PageSize="25"/&gt;
+<syncfusion:DataPagerExt x:Name="dataPager" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" DisplayMode="PreviousNextNumeric" NumericButtonCount="10" AutoEllipsis="True" PageSize="25"/>
 
 
 
@@ -4716,7 +4716,7 @@ ViewLevel Sorting, grouping and filtering is provided. Allows to sort the view e
 
 [C#]
 
-&lt;syncfusion:DataPagerExt x:Name="dataPager" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" DisplayMode="PreviousNextNumeric" NumericButtonCount="10" AutoEllipsis="True" PageSize="25"/&gt;
+<syncfusion:DataPagerExt x:Name="dataPager" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" DisplayMode="PreviousNextNumeric" NumericButtonCount="10" AutoEllipsis="True" PageSize="25"/>
 
 
 
@@ -4740,7 +4740,7 @@ Sorting, grouping and filtering are provided at the Source level. Allows to sort
 
 [XAML]
 
-&lt;syncfusion:DataPagerExt x:Name="dataPager" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" DisplayMode="PreviousNextNumeric" NumericButtonCount="10" AutoEllipsis="True" PageSize="25"/&gt;
+<syncfusion:DataPagerExt x:Name="dataPager" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" DisplayMode="PreviousNextNumeric" NumericButtonCount="10" AutoEllipsis="True" PageSize="25"/>
 
 
 
@@ -4897,81 +4897,81 @@ One can easily add the details view to the GridData control by defining the Deta
 
 [XAML]
 
-  &lt;DataTemplate x:Key="EditableView"&gt;
+  <DataTemplate x:Key="EditableView">
 
-            &lt;Border HorizontalAlignment="Left" BorderThickness="0.5" BorderBrush="Gray" CornerRadius="2" ClipToBounds="True"&gt;
+            <Border HorizontalAlignment="Left" BorderThickness="0.5" BorderBrush="Gray" CornerRadius="2" ClipToBounds="True">
 
-                &lt;Grid Margin="5" Width="300" HorizontalAlignment="Left"&gt;
+                <Grid Margin="5" Width="300" HorizontalAlignment="Left">
 
-                    &lt;Grid.ColumnDefinitions&gt;
+                    <Grid.ColumnDefinitions>
 
-                        &lt;ColumnDefinition Width="0.5*"/&gt;
+                        <ColumnDefinition Width="0.5*"/>
 
-                        &lt;ColumnDefinition Width="0.5*"/&gt;
+                        <ColumnDefinition Width="0.5*"/>
 
-                    &lt;/Grid.ColumnDefinitions&gt;
+                    </Grid.ColumnDefinitions>
 
-                    &lt;Grid.RowDefinitions&gt;
+                    <Grid.RowDefinitions>
 
-                        &lt;RowDefinition Height="Auto"/&gt;
+                        <RowDefinition Height="Auto"/>
 
-                        &lt;RowDefinition Height="Auto"/&gt;
+                        <RowDefinition Height="Auto"/>
 
-                        &lt;RowDefinition Height="Auto"/&gt;
+                        <RowDefinition Height="Auto"/>
 
-                        &lt;RowDefinition Height="Auto"/&gt;
+                        <RowDefinition Height="Auto"/>
 
-                        &lt;RowDefinition Height="Auto"/&gt;
+                        <RowDefinition Height="Auto"/>
 
-                        &lt;RowDefinition Height="Auto"/&gt;
+                        <RowDefinition Height="Auto"/>
 
-                        &lt;RowDefinition Height="Auto"/&gt;
+                        <RowDefinition Height="Auto"/>
 
-                        &lt;RowDefinition Height="Auto"/&gt;
+                        <RowDefinition Height="Auto"/>
 
-                        &lt;RowDefinition Height="Auto"/&gt;
+                        <RowDefinition Height="Auto"/>
 
-                    &lt;/Grid.RowDefinitions&gt;
+                    </Grid.RowDefinitions>
 
-                    &lt;Label Content="Supplier Info" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="2" FontSize="13" FontWeight="Bold"/&gt;
+                    <Label Content="Supplier Info" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="2" FontSize="13" FontWeight="Bold"/>
 
-                    &lt;TextBlock Text="Company" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="1" Grid.Column="0" /&gt;
+                    <TextBlock Text="Company" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="1" Grid.Column="0" />
 
-                    &lt;TextBox Text="{Binding Record.Data.Suppliers.CompanyName}" Margin="0,5,0,0" Grid.Row="1" Grid.Column="1" /&gt;
+                    <TextBox Text="{Binding Record.Data.Suppliers.CompanyName}" Margin="0,5,0,0" Grid.Row="1" Grid.Column="1" />
 
-                    &lt;TextBlock Text="Contact Person" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="2" Grid.Column="0" /&gt;
+                    <TextBlock Text="Contact Person" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="2" Grid.Column="0" />
 
-                    &lt;TextBox Text="{Binding Record.Data.Suppliers.ContactName}" Margin="0,5,0,0" Grid.Row="2" Grid.Column="1" /&gt;
+                    <TextBox Text="{Binding Record.Data.Suppliers.ContactName}" Margin="0,5,0,0" Grid.Row="2" Grid.Column="1" />
 
-                    &lt;TextBlock Text="Title" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="3" Grid.Column="0" /&gt;
+                    <TextBlock Text="Title" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="3" Grid.Column="0" />
 
-                    &lt;TextBox Text="{Binding Record.Data.Suppliers.ContactTitle, Mode=OneTime}" Margin="0,5,0,0" Grid.Row="3" Grid.Column="1" /&gt;
+                    <TextBox Text="{Binding Record.Data.Suppliers.ContactTitle, Mode=OneTime}" Margin="0,5,0,0" Grid.Row="3" Grid.Column="1" />
 
-                    &lt;TextBlock Text="Address" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="4" Grid.Column="0" /&gt;
+                    <TextBlock Text="Address" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="4" Grid.Column="0" />
 
-                    &lt;TextBox Text="{Binding Record.Data.Suppliers.Address}" Margin="0,5,0,0" Grid.Row="4" Grid.Column="1" /&gt;
+                    <TextBox Text="{Binding Record.Data.Suppliers.Address}" Margin="0,5,0,0" Grid.Row="4" Grid.Column="1" />
 
-                    &lt;TextBlock Text="City" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="5" Grid.Column="0" /&gt;
+                    <TextBlock Text="City" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="5" Grid.Column="0" />
 
-                    &lt;TextBox Text="{Binding Record.Data.Suppliers.City}" Margin="0,5,0,0" Grid.Row="5" Grid.Column="1" /&gt;
+                    <TextBox Text="{Binding Record.Data.Suppliers.City}" Margin="0,5,0,0" Grid.Row="5" Grid.Column="1" />
 
-                    &lt;TextBlock Text="Postal Code" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="6" Grid.Column="0" /&gt;
+                    <TextBlock Text="Postal Code" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="6" Grid.Column="0" />
 
-                    &lt;TextBox Text="{Binding Record.Data.Suppliers.PostalCode}" Margin="0,5,0,0" Grid.Row="6" Grid.Column="1" /&gt;
+                    <TextBox Text="{Binding Record.Data.Suppliers.PostalCode}" Margin="0,5,0,0" Grid.Row="6" Grid.Column="1" />
 
-                    &lt;TextBlock Text="Country" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="7" Grid.Column="0" /&gt;
+                    <TextBlock Text="Country" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="7" Grid.Column="0" />
 
-                    &lt;TextBox Text="{Binding Record.Data.Suppliers.Country}" Margin="0,5,0,0" Grid.Row="7" Grid.Column="1" /&gt;
+                    <TextBox Text="{Binding Record.Data.Suppliers.Country}" Margin="0,5,0,0" Grid.Row="7" Grid.Column="1" />
 
-                    &lt;TextBlock Text="Phone" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="8" Grid.Column="0" /&gt;
+                    <TextBlock Text="Phone" FontWeight="Bold" Margin="0,5,5,0" Grid.Row="8" Grid.Column="0" />
 
-                    &lt;TextBox Text="{Binding Record.Data.Suppliers.Phone}" Margin="0,5,0,0" Grid.Row="8" Grid.Column="1" /&gt;
+                    <TextBox Text="{Binding Record.Data.Suppliers.Phone}" Margin="0,5,0,0" Grid.Row="8" Grid.Column="1" />
 
-                &lt;/Grid&gt;
+                </Grid>
 
-            &lt;/Border&gt;
+            </Border>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
 
 
@@ -5051,13 +5051,13 @@ dataGrid.DetailsViewTemplate = (DataTemplate)this.Resources["EditableView"];
 
 4. Click on the expander cell in the grid to expand or collapse the details view of that particular record or row.
 
-{ ![](Getting-Started_images/Getting-Started_img68.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img68.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img69.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img69.png)' | markdownify }}
 {:.image }
 
 
@@ -5073,7 +5073,7 @@ The following code illustrates dragging at grid level:
 
 
 
-&lt;syncfusion:GridDataControl x:Name="grid" AllowDragColumns="True" ItemsSource="{StaticResource orderSource}" ShowColumnOptions="True" /&gt;
+<syncfusion:GridDataControl x:Name="grid" AllowDragColumns="True" ItemsSource="{StaticResource orderSource}" ShowColumnOptions="True" />
 
 
 
@@ -5083,27 +5083,27 @@ The following code illustrates dragging at column level:
 
 
 
-&lt;syncfusion:GridDataControl x:Name="grid" AutoPopulateColumns="False"  AutoPopulateRelations="False" ItemsSource="{StaticResource orderSource}" ShowColumnOptions="True" &gt;
+<syncfusion:GridDataControl x:Name="grid" AutoPopulateColumns="False"  AutoPopulateRelations="False" ItemsSource="{StaticResource orderSource}" ShowColumnOptions="True" >
 
-    &lt;syncfusion:GridDataControl.VisibleColumns&gt;
+    <syncfusion:GridDataControl.VisibleColumns>
 
-        &lt;syncfusion:GridDataVisibleColumn MappingName="OrderID" HeaderText="Order ID" AllowDrag="True" /&gt;
+        <syncfusion:GridDataVisibleColumn MappingName="OrderID" HeaderText="Order ID" AllowDrag="True" />
 
-        &lt;syncfusion:GridDataVisibleColumn MappingName="CustomerID" HeaderText="Customer ID" AllowDrag="False" /&gt;
+        <syncfusion:GridDataVisibleColumn MappingName="CustomerID" HeaderText="Customer ID" AllowDrag="False" />
 
-        &lt;syncfusion:GridDataVisibleColumn MappingName="EmployeeID" HeaderText="Employee ID" AllowDrag="True"/&gt;
+        <syncfusion:GridDataVisibleColumn MappingName="EmployeeID" HeaderText="Employee ID" AllowDrag="True"/>
 
-        &lt;syncfusion:GridDataVisibleColumn MappingName="ShipName" HeaderText="ShipName" AllowDrag="True"/&gt;
+        <syncfusion:GridDataVisibleColumn MappingName="ShipName" HeaderText="ShipName" AllowDrag="True"/>
 
-    &lt;/syncfusion:GridDataControl.VisibleColumns&gt;
+    </syncfusion:GridDataControl.VisibleColumns>
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
 The following screenshot illustrates column level dragging:
 
-{ ![](Getting-Started_images/Getting-Started_img70.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img70.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5125,7 +5125,7 @@ dataGrid.Model.TableProperties.DragIndicatorOuterBrush = Brushes.Black;
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img71.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img71.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5141,9 +5141,9 @@ You can enable or disable this feature by using the ShowColumnOptions property o
 
 
 
-&lt;syncfusion:GridDataControl x:Name="dataGrid" ShowColumnOptions="True" ItemsSource="{StaticResource orderSource}" &gt;
+<syncfusion:GridDataControl x:Name="dataGrid" ShowColumnOptions="True" ItemsSource="{StaticResource orderSource}" >
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
@@ -5157,7 +5157,7 @@ this.dataGridControl.ShowColumnOptions = true;
 
 The following screenshot illustrates how the ColumnOptions icon is displayed for individual columns.
 
-{ ![](Getting-Started_images/Getting-Started_img72.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img72.png)' | markdownify }}
 {:.image }
 
 
@@ -5179,23 +5179,23 @@ Selecting this check box, enables filtering on the respective column. To enable 
 <tr>
 <td>
 Allow Sort</td><td>
-Selecting this check box, enables sorting when the user clicks on the column header of the respective column. To enable "sorting" on all the columns in the grid at once, set the AllowSort property to {{ '_true_' | markdownify }}.</td></tr>
+Selecting this check box, enables sorting when the user clicks on the column header of the respective column. To enable "sorting" on all the columns in the grid at once, set the AllowSort property to {{{ ''_true_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 Allow Drag</td><td>
-Selecting this check box, enables you to rearrange columns in the grid by dragging the desired column headers. Also you can group the columns by dragging the column headers onto the Group Drop Area. Note that the "Allow Group" option must be set to {{ '_true_' | markdownify }} for this to take effect.To enable "drag-and-drop" feature on all the columns in the grid at once, set the AllowDragColumns property to {{ '_true_' | markdownify }}.</td></tr>
+Selecting this check box, enables you to rearrange columns in the grid by dragging the desired column headers. Also you can group the columns by dragging the column headers onto the Group Drop Area. Note that the "Allow Group" option must be set to {{{ ''_true_'' | markdownify }}} for this to take effect.To enable "drag-and-drop" feature on all the columns in the grid at once, set the AllowDragColumns property to {{{ ''_true_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 Allow Group</td><td>
-Selecting this check box, enables you to create groups at run time by dragging column headers onto the Group Drop Area. Note that the "Allow Drag" option must be set to {{ '_true_' | markdownify }} for this to take effect.To enable "grouping" on all the columns in the grid at once, set the ShowGroupDropArea to {{ '_true_'| markdownify }}.</td></tr>
+Selecting this check box, enables you to create groups at run time by dragging column headers onto the Group Drop Area. Note that the "Allow Drag" option must be set to {{{ ''_true_'' | markdownify }}} for this to take effect.To enable "grouping" on all the columns in the grid at once, set the ShowGroupDropArea to {{ '_true_'| markdownify }}.</td></tr>
 <tr>
 <td>
 Allow Resize</td><td>
-Selecting this check box, enables you to resize columns in the grid, by pressing and dragging the "mouse-resize" pointer that is displayed over the column divider. To enable the "resizing" operation on all the columns in the grid at once, set the AllowResizeColumns property to {{ '_true_' | markdownify }}.</td></tr>
+Selecting this check box, enables you to resize columns in the grid, by pressing and dragging the "mouse-resize" pointer that is displayed over the column divider. To enable the "resizing" operation on all the columns in the grid at once, set the AllowResizeColumns property to {{{ ''_true_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 Is ReadOnly</td><td>
-Selecting this check box, makes the respective column read-only, allowing no edits to be performed on the column. To enable the "editing" operation on all the columns in the grid at once, set the AllowEdit property to {{ '_true_' | markdownify }}.</td></tr>
+Selecting this check box, makes the respective column read-only, allowing no edits to be performed on the column. To enable the "editing" operation on all the columns in the grid at once, set the AllowEdit property to {{{ ''_true_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 Column Format</td><td>
@@ -5276,11 +5276,11 @@ As the name implies, the Group Summary is associated with every grid group. The 
 
 ItemsSource="{StaticResource ordersSource}" ShowGroupSummaries="True">
 
-&lt;syncfusion:GridDataControl.SummaryRows&gt;
+<syncfusion:GridDataControl.SummaryRows>
 
-&lt;syncfusion:GridDataSummaryRow ShowSummaryInRow="True" Title="Total Freight: {FreightSummary} For {CountSummary} Items" TitleColumnCount="2"&gt;
+<syncfusion:GridDataSummaryRow ShowSummaryInRow="True" Title="Total Freight: {FreightSummary} For {CountSummary} Items" TitleColumnCount="2">
 
-&lt;syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+<syncfusion:GridDataSummaryRow.SummaryColumns>
 
 <syncfusion:GridDataSummaryColumn Name="FreightSummary" MappingName="Freight" SummaryType="Int32Aggregate"
 
@@ -5290,13 +5290,13 @@ Format="'{Sum:c}'"/>
 
 Format="'{Count:d}'"/>
 
-&lt;/syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+</syncfusion:GridDataSummaryRow.SummaryColumns>
 
-&lt;/syncfusion:GridDataSummaryRow&gt;
+</syncfusion:GridDataSummaryRow>
 
-&lt;/syncfusion:GridDataControl.SummaryRows&gt;
+</syncfusion:GridDataControl.SummaryRows>
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
@@ -5354,7 +5354,7 @@ this.dataGrid.SummaryRows.Add(new GridDataSummaryRow()
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img73.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img73.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5368,17 +5368,17 @@ For example, let us consider you want to combine the summaries from all the summ
 
 
 
-&lt;syncfusion:GridDataControl.SummaryRows&gt;
+<syncfusion:GridDataControl.SummaryRows>
 
-    &lt;syncfusion:GridDataSummaryRow ShowSummaryInRow="True" Title="'Charges - {FreightSummary}$ for {OrderCount} Items'"&gt;
+    <syncfusion:GridDataSummaryRow ShowSummaryInRow="True" Title="'Charges - {FreightSummary}$ for {OrderCount} Items'">
 
-        &lt;syncfusion:GridDataSummaryRow.RowStyle&gt;
+        <syncfusion:GridDataSummaryRow.RowStyle>
 
-            &lt;syncfusion:GridDataStyleInfo Background="Yellow" /&gt;
+            <syncfusion:GridDataStyleInfo Background="Yellow" />
 
-        &lt;/syncfusion:GridDataSummaryRow.RowStyle&gt;
+        </syncfusion:GridDataSummaryRow.RowStyle>
 
-        &lt;syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+        <syncfusion:GridDataSummaryRow.SummaryColumns>
 
             <syncfusion:GridDataSummaryColumn Name="FreightSummary" MappingName="Freight" SummaryType="Int32Aggregate"
 
@@ -5388,21 +5388,21 @@ For example, let us consider you want to combine the summaries from all the summ
 
             Format="'{Count}'" />
 
-        &lt;/syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+        </syncfusion:GridDataSummaryRow.SummaryColumns>
 
-    &lt;/syncfusion:GridDataSummaryRow&gt;
+    </syncfusion:GridDataSummaryRow>
 
-&lt;/syncfusion:GridDataControl.SummaryRows&gt;
+</syncfusion:GridDataControl.SummaryRows>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img74.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img74.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img75.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img75.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5422,11 +5422,11 @@ The Table Summary is associated with the whole grid table itself. The GridDataCo
 
 ItemsSource="{StaticResource ordersSource}" ShowTableSummaries="True">
 
-    &lt;syncfusion:GridDataControl.TableSummaryRows&gt;
+    <syncfusion:GridDataControl.TableSummaryRows>
 
-        &lt;syncfusion:GridDataSummaryRow ShowSummaryInRow="True" Title="Total Freight: {FreightSummary} For {CountSummary} Items"                   TitleColumnCount="2"&gt;
+        <syncfusion:GridDataSummaryRow ShowSummaryInRow="True" Title="Total Freight: {FreightSummary} For {CountSummary} Items"                   TitleColumnCount="2">
 
-            &lt;syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+            <syncfusion:GridDataSummaryRow.SummaryColumns>
 
                 <syncfusion:GridDataSummaryColumn Name="FreightSummary" MappingName="Freight" SummaryType="Int32Aggregate"
 
@@ -5436,13 +5436,13 @@ ItemsSource="{StaticResource ordersSource}" ShowTableSummaries="True">
 
                 Format="'{Count:d}'" />
 
-            &lt;/syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+            </syncfusion:GridDataSummaryRow.SummaryColumns>
 
-        &lt;/syncfusion:GridDataSummaryRow&gt;
+        </syncfusion:GridDataSummaryRow>
 
-    &lt;/syncfusion:GridDataControl.TableSummaryRows&gt;
+    </syncfusion:GridDataControl.TableSummaryRows>
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
@@ -5500,7 +5500,7 @@ this.dataGrid.TableSummaryRows.Add(new GridDataSummaryRow()
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img76.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img76.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5520,11 +5520,11 @@ Grid provides built-in support for caption summaries, where the summary values a
 
 ItemsSource="{StaticResource ordersSource}" ShowGroupSummaryInCaption="True">
 
-    &lt;syncfusion:GridDataControl.CaptionSummaryRow&gt;
+    <syncfusion:GridDataControl.CaptionSummaryRow>
 
-        &lt;syncfusion:GridDataSummaryRow ShowSummaryInRow="True" Title="Total Freight: {FreightSummary} For {CountSummary} Items"                   TitleColumnCount="2"&gt;
+        <syncfusion:GridDataSummaryRow ShowSummaryInRow="True" Title="Total Freight: {FreightSummary} For {CountSummary} Items"                   TitleColumnCount="2">
 
-            &lt;syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+            <syncfusion:GridDataSummaryRow.SummaryColumns>
 
                 <syncfusion:GridDataSummaryColumn Name="FreightSummary" MappingName="Freight" SummaryType="Int32Aggregate"
 
@@ -5534,13 +5534,13 @@ ItemsSource="{StaticResource ordersSource}" ShowGroupSummaryInCaption="True">
 
                 Format="'{Count:d}'" />
 
-            &lt;/syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+            </syncfusion:GridDataSummaryRow.SummaryColumns>
 
-        &lt;/syncfusion:GridDataSummaryRow&gt;
+        </syncfusion:GridDataSummaryRow>
 
-    &lt;/syncfusion:GridDataControl.CaptionSummaryRow&gt;
+    </syncfusion:GridDataControl.CaptionSummaryRow>
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
@@ -5600,7 +5600,7 @@ this.dataGrid.CaptionSummaryRow = new GridDataSummaryRow()
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img77.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img77.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5795,7 +5795,7 @@ public static class LinqExtensions
 
 
 
-&lt;syncfusion:LayoutControl.LeftContent&gt;
+<syncfusion:LayoutControl.LeftContent>
 
             <syncfusion:GridDataControl 
 
@@ -5819,43 +5819,43 @@ public static class LinqExtensions
 
 
 
-                &lt;syncfusion:GridDataControl.GroupedColumns&gt;
+                <syncfusion:GridDataControl.GroupedColumns>
 
-                    &lt;syncfusion:GridDataGroupColumn ColumnName="Industry_IndustryID"  /&gt;
+                    <syncfusion:GridDataGroupColumn ColumnName="Industry_IndustryID"  />
 
-                &lt;/syncfusion:GridDataControl.GroupedColumns&gt;
-
-
-
-                &lt;syncfusion:GridDataControl.SummaryRows&gt;
-
-                    &lt;syncfusion:GridDataSummaryRow Name="StdDev" ShowSummaryInRow="False" Title="'{Name} - {Count} Items'" TitleColumnCount="2"&gt;
-
-                        &lt;syncfusion:GridDataSummaryRow.SummaryColumns&gt;
-
-                            &lt;syncfusion:GridDataSummaryColumn Name="StdDevCol" MappingName="Change" SummaryType="Custom" Format="'StdDev ({StdDev})'" CustomAggregate="{Binding Source={StaticResource stdDevAggregate}}"&gt;
-
-                                &lt;syncfusion:GridDataSummaryColumn.ColumnStyle&gt;
-
-                                    &lt;syncfusion:GridDataStyleInfo Background="Pink" HorizontalAlignment="Center" /&gt;
-
-                                &lt;/syncfusion:GridDataSummaryColumn.ColumnStyle&gt;
-
-                            &lt;/syncfusion:GridDataSummaryColumn&gt;
-
-                        &lt;/syncfusion:GridDataSummaryRow.SummaryColumns&gt;
-
-                    &lt;/syncfusion:GridDataSummaryRow&gt;
-
-                &lt;/syncfusion:GridDataControl.SummaryRows&gt;
+                </syncfusion:GridDataControl.GroupedColumns>
 
 
 
-        &lt;/syncfusion:GridDataControl&gt;
+                <syncfusion:GridDataControl.SummaryRows>
+
+                    <syncfusion:GridDataSummaryRow Name="StdDev" ShowSummaryInRow="False" Title="'{Name} - {Count} Items'" TitleColumnCount="2">
+
+                        <syncfusion:GridDataSummaryRow.SummaryColumns>
+
+                            <syncfusion:GridDataSummaryColumn Name="StdDevCol" MappingName="Change" SummaryType="Custom" Format="'StdDev ({StdDev})'" CustomAggregate="{Binding Source={StaticResource stdDevAggregate}}">
+
+                                <syncfusion:GridDataSummaryColumn.ColumnStyle>
+
+                                    <syncfusion:GridDataStyleInfo Background="Pink" HorizontalAlignment="Center" />
+
+                                </syncfusion:GridDataSummaryColumn.ColumnStyle>
+
+                            </syncfusion:GridDataSummaryColumn>
+
+                        </syncfusion:GridDataSummaryRow.SummaryColumns>
+
+                    </syncfusion:GridDataSummaryRow>
+
+                </syncfusion:GridDataControl.SummaryRows>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img78.jpeg) | markdownify }
+        </syncfusion:GridDataControl>
+
+
+
+{{ '![](Getting-Started_images/Getting-Started_img78.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5871,29 +5871,29 @@ You can customize the appearance of summary cells by applying the desired format
 
 
 
-&lt;syncfusion:GridDataSummaryRow&gt;
+<syncfusion:GridDataSummaryRow>
 
-    &lt;syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+    <syncfusion:GridDataSummaryRow.SummaryColumns>
 
-        &lt;syncfusion:GridDataSummaryColumn&gt;
+        <syncfusion:GridDataSummaryColumn>
 
-            &lt;syncfusion:GridDataSummaryColumn.ColumnStyle&gt;
+            <syncfusion:GridDataSummaryColumn.ColumnStyle>
 
-                &lt;syncfusion:GridDataStyleInfo Background="LightPink" Foreground="MidnightBlue" /&gt;
+                <syncfusion:GridDataStyleInfo Background="LightPink" Foreground="MidnightBlue" />
 
-            &lt;/syncfusion:GridDataSummaryColumn.ColumnStyle&gt;
+            </syncfusion:GridDataSummaryColumn.ColumnStyle>
 
-        &lt;/syncfusion:GridDataSummaryColumn&gt;
+        </syncfusion:GridDataSummaryColumn>
 
-    &lt;/syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+    </syncfusion:GridDataSummaryRow.SummaryColumns>
 
-    &lt;syncfusion:GridDataSummaryRow.RowStyle&gt;
+    <syncfusion:GridDataSummaryRow.RowStyle>
 
-        &lt;syncfusion:GridDataStyleInfo Background="LightGreen" /&gt;
+        <syncfusion:GridDataStyleInfo Background="LightGreen" />
 
-    &lt;/syncfusion:GridDataSummaryRow.RowStyle&gt;
+    </syncfusion:GridDataSummaryRow.RowStyle>
 
-&lt;/syncfusion:GridDataSummaryRow&gt;
+</syncfusion:GridDataSummaryRow>
 
 
 
@@ -5921,7 +5921,7 @@ summaryRow.RowStyle.Background = new SolidColorBrush(Colors.LightGreen);
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img79.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img79.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6018,25 +6018,25 @@ The following code illustrates binding of the above relation to the grid, and al
 
 
 
-&lt;syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="False" AutoPopulateRelations="False" ItemsSource="{StaticResource orderSource}"&gt; ShowAddNewRow="False">
+<syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="False" AutoPopulateRelations="False" ItemsSource="{StaticResource orderSource}"> ShowAddNewRow="False">
 
-&lt;syncfusion:GridDataControl.Relations &gt;
+<syncfusion:GridDataControl.Relations >
 
-    &lt;syncfusion:GridDataRelation RelationalColumn="Employee_Orders" RelationType="MasterDetails" &gt;
+    <syncfusion:GridDataRelation RelationalColumn="Employee_Orders" RelationType="MasterDetails" >
 
-        &lt;syncfusion:GridDataRelation.TableProperties&gt;
+        <syncfusion:GridDataRelation.TableProperties>
 
-            &lt;syncfusion:GridDataTableProperties AutoPopulateColumns="True" AlternatingRowBackground="BlanchedAlmond" RowBackground="Beige" &gt;
+            <syncfusion:GridDataTableProperties AutoPopulateColumns="True" AlternatingRowBackground="BlanchedAlmond" RowBackground="Beige" >
 
-            &lt;/syncfusion:GridDataTableProperties&gt;
+            </syncfusion:GridDataTableProperties>
 
-        &lt;/syncfusion:GridDataRelation.TableProperties&gt;
+        </syncfusion:GridDataRelation.TableProperties>
 
-     &lt;/syncfusion:GridDataRelation&gt;
+     </syncfusion:GridDataRelation>
 
-&lt;/syncfusion:GridDataControl.Relations&gt;        
+</syncfusion:GridDataControl.Relations>        
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
@@ -6044,7 +6044,7 @@ The following image shows the output of the above given code:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img80.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img80.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6060,7 +6060,7 @@ To auto-generate the relations, set the AutoPopulateRelations property of the Gr
 
 
 
-&lt;syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="True"     AutoPopulateRelations="True" ItemsSource="{StaticResource orderSource}"&gt; ShowAddNewRow="False"/>
+<syncfusion:GridDataControl x:Name="dataGrid"  AutoPopulateColumns="True"     AutoPopulateRelations="True" ItemsSource="{StaticResource orderSource}"> ShowAddNewRow="False"/>
 
 
 
@@ -6114,29 +6114,29 @@ The following code example illustrates the creation of two stacked headers:
 
                                     ItemsSource="{StaticResource ordersSource}">
 
-            &lt;syncfusion:GridDataControl.StackedHeaderRows&gt;
+            <syncfusion:GridDataControl.StackedHeaderRows>
 
-               &lt;syncfusion:GridDataStackedHeaderRow Name="Row1"&gt;
+               <syncfusion:GridDataStackedHeaderRow Name="Row1">
 
-                  &lt;syncfusion:GridDataStackedHeaderRow.Columns&gt;
+                  <syncfusion:GridDataStackedHeaderRow.Columns>
 
-                      &lt;syncfusion:GridDataStackedHeaderColumn HeaderText="Header 1" Name="Header1" ColumnSpan="3" /&gt;
+                      <syncfusion:GridDataStackedHeaderColumn HeaderText="Header 1" Name="Header1" ColumnSpan="3" />
 
-                      &lt;syncfusion:GridDataStackedHeaderColumn HeaderText="Header 2" Name="Header2" ColumnSpan="2" /&gt;
+                      <syncfusion:GridDataStackedHeaderColumn HeaderText="Header 2" Name="Header2" ColumnSpan="2" />
 
-                   &lt;/syncfusion:GridDataStackedHeaderRow.Columns&gt;
+                   </syncfusion:GridDataStackedHeaderRow.Columns>
 
-               &lt;/syncfusion:GridDataStackedHeaderRow&gt;
+               </syncfusion:GridDataStackedHeaderRow>
 
-            &lt;/syncfusion:GridDataControl.StackedHeaderRows &gt;
+            </syncfusion:GridDataControl.StackedHeaderRows >
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
 Output of the above given code is the following image:
 
-{ ![](Getting-Started_images/Getting-Started_img81.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img81.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6220,9 +6220,9 @@ Returns true if both arguments have same value.</td><td>
 <tr>
 <td>
 Not Equal to</td><td>
-&lt;&gt;</td><td>
+<></td><td>
 Returns true if both arguments does not have same value.</td><td>
-[CustomerID] &lt;&gt; 95</td></tr>
+[CustomerID] <> 95</td></tr>
 <tr>
 <td>
 StartsWith</td><td>
@@ -6256,7 +6256,7 @@ Example
 
 AutoPopulateRelations="False" ItemsSource="{StaticResource productsSource}" ShowGroupDropArea="True">
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
@@ -6268,23 +6268,23 @@ AutoPopulateRelations="False" ItemsSource="{StaticResource productsSource}" Show
 
 
 
-&lt;syncfusion:GridDataControl.VisibleColumns&gt;
+<syncfusion:GridDataControl.VisibleColumns>
 
-    &lt;syncfusion:GridDataUnboundVisibleColumn MappingName="100UnitPrice" HeaderText="Price of 100 units" Expression="UnitPrice * 100"&gt;
+    <syncfusion:GridDataUnboundVisibleColumn MappingName="100UnitPrice" HeaderText="Price of 100 units" Expression="UnitPrice * 100">
 
-        &lt;syncfusion:GridDataUnboundVisibleColumn.ColumnStyle&gt;
+        <syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
 
-            &lt;syncfusion:GridDataColumnStyle Background="PeachPuff"/&gt;
+            <syncfusion:GridDataColumnStyle Background="PeachPuff"/>
 
-        &lt;/syncfusion:GridDataUnboundVisibleColumn.ColumnStyle&gt;
+        </syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
 
-    &lt;/syncfusion:GridDataUnboundVisibleColumn&gt;
+    </syncfusion:GridDataUnboundVisibleColumn>
 
-&lt;/syncfusion:GridDataControl.VisibleColumns&gt;
+</syncfusion:GridDataControl.VisibleColumns>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img82.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img82.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6327,63 +6327,63 @@ The example below displays a Chart control in the tooltip host. The grid is boun
 
 
 
-&lt;DataTemplate x:Key="chartTemplate"&gt;
+<DataTemplate x:Key="chartTemplate">
 
-    &lt;syncfusion:Chart Grid.Row="1" Name="Chart1" Height="400" Width="400" syncfusion:SkinStorage.VisualStyle="Office2007Blue"&gt;
-
-
-
-        &lt;!--Chart Legend declaration--&gt;
-
-        &lt;syncfusion:Chart.Legends&gt;
-
-            &lt;syncfusion:ChartLegend syncfusion:ChartDockPanel.Dock="Bottom"/&gt;
-
-        &lt;/syncfusion:Chart.Legends&gt;
+    <syncfusion:Chart Grid.Row="1" Name="Chart1" Height="400" Width="400" syncfusion:SkinStorage.VisualStyle="Office2007Blue">
 
 
 
-        &lt;!--Chart area to present chart segments.--&gt;
+        <!--Chart Legend declaration-->
 
-        &lt;syncfusion:ChartArea FontWeight="Bold" FontSize="14" &gt;
+        <syncfusion:Chart.Legends>
 
+            <syncfusion:ChartLegend syncfusion:ChartDockPanel.Dock="Bottom"/>
 
-
-            &lt;!--X-axis declaration with required property settings.--&gt;
-
-            &lt;syncfusion:ChartArea.PrimaryAxis &gt;
+        </syncfusion:Chart.Legends>
 
 
 
-                &lt;!--Assigning text for the labels in the Primary Axis with the Product name.--&gt;
+        <!--Chart area to present chart segments.-->
 
-                &lt;syncfusion:ChartAxis  Header="Category" PositionPath="CategoryID" ContentPath="CategoryName" RangePadding="None"                         LabelRotateAngle="270" LabelsSource="{Binding ItemsSource.Categories}"/&gt;
-
-            &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+        <syncfusion:ChartArea FontWeight="Bold" FontSize="14" >
 
 
 
-            &lt;!--Y-axis declaration with required property settings.--&gt;
+            <!--X-axis declaration with required property settings.-->
 
-            &lt;syncfusion:ChartArea.SecondaryAxis&gt;
-
-                &lt;syncfusion:ChartAxis Header="Product"  RangePadding="None" /&gt;
-
-            &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+            <syncfusion:ChartArea.PrimaryAxis >
 
 
 
-            &lt;!-- Binding data to the series from the database.--&gt;
+                <!--Assigning text for the labels in the Primary Axis with the Product name.-->
+
+                <syncfusion:ChartAxis  Header="Category" PositionPath="CategoryID" ContentPath="CategoryName" RangePadding="None"                         LabelRotateAngle="270" LabelsSource="{Binding ItemsSource.Categories}"/>
+
+            </syncfusion:ChartArea.PrimaryAxis>
+
+
+
+            <!--Y-axis declaration with required property settings.-->
+
+            <syncfusion:ChartArea.SecondaryAxis>
+
+                <syncfusion:ChartAxis Header="Product"  RangePadding="None" />
+
+            </syncfusion:ChartArea.SecondaryAxis>
+
+
+
+            <!-- Binding data to the series from the database.-->
 
             <syncfusion:ChartSeries Type="Column" Label="Categories List" BindingPathsY="Count"
 
             Interior="{StaticResource SeriesBInterior}" DataSource="{Binding ItemsSource}" />
 
-        &lt;/syncfusion:ChartArea&gt;
+        </syncfusion:ChartArea>
 
-    &lt;/syncfusion:Chart&gt;
+    </syncfusion:Chart>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
@@ -6433,13 +6433,13 @@ Here is a sample screenshot.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img83.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img83.jpeg)' | markdownify }}
 {:.image }
 
 
 > _Note: For the complete code, refer to the following browser sample._
 
-_...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Tooltips Demo._
+_...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Tooltips Demo._
 
 #### Cell Comments
 
@@ -6482,7 +6482,7 @@ style.Comment = style.Text
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img84.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img84.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6504,63 +6504,63 @@ The following steps illustrate the same:
 
 
 
-&lt;DataTemplate x:Key="chartTemplate"&gt;
+<DataTemplate x:Key="chartTemplate">
 
-    &lt;syncfusion:Chart Grid.Row="1" Name="Chart1" Height="400" Width="400" syncfusion:SkinStorage.VisualStyle="Office2007Blue"&gt;
-
-
-
-        &lt;!--Chart Legend declaration.--&gt;
-
-        &lt;syncfusion:Chart.Legends&gt;
-
-            &lt;syncfusion:ChartLegend syncfusion:ChartDockPanel.Dock="Bottom"/&gt;
-
-        &lt;/syncfusion:Chart.Legends&gt;
+    <syncfusion:Chart Grid.Row="1" Name="Chart1" Height="400" Width="400" syncfusion:SkinStorage.VisualStyle="Office2007Blue">
 
 
 
-        &lt;!--Chart Area to present Chart Segments.--&gt;
+        <!--Chart Legend declaration.-->
 
-        &lt;syncfusion:ChartArea FontWeight="Bold" FontSize="14" &gt;
+        <syncfusion:Chart.Legends>
 
+            <syncfusion:ChartLegend syncfusion:ChartDockPanel.Dock="Bottom"/>
 
-
-            &lt;!--X-axis declaration with required property settings.--&gt;
-
-            &lt;syncfusion:ChartArea.PrimaryAxis &gt;
+        </syncfusion:Chart.Legends>
 
 
 
-                &lt;!--Assigning text for the labels in the Primary Axis with the product name.--&gt;
+        <!--Chart Area to present Chart Segments.-->
 
-                &lt;syncfusion:ChartAxis Header="Category" PositionPath="CategoryID" ContentPath="CategoryName" RangePadding="None"                         LabelRotateAngle="270" LabelsSource="{Binding ItemsSource.Categories}"/&gt;
-
-            &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+        <syncfusion:ChartArea FontWeight="Bold" FontSize="14" >
 
 
 
-            &lt;!--Y-axis declaration with required property settings.--&gt;
+            <!--X-axis declaration with required property settings.-->
 
-            &lt;syncfusion:ChartArea.SecondaryAxis&gt;
-
-                &lt;syncfusion:ChartAxis Header="Product" RangePadding="None" /&gt;
-
-            &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+            <syncfusion:ChartArea.PrimaryAxis >
 
 
 
-            &lt;!-- Binding data to the series from the database.--&gt;
+                <!--Assigning text for the labels in the Primary Axis with the product name.-->
+
+                <syncfusion:ChartAxis Header="Category" PositionPath="CategoryID" ContentPath="CategoryName" RangePadding="None"                         LabelRotateAngle="270" LabelsSource="{Binding ItemsSource.Categories}"/>
+
+            </syncfusion:ChartArea.PrimaryAxis>
+
+
+
+            <!--Y-axis declaration with required property settings.-->
+
+            <syncfusion:ChartArea.SecondaryAxis>
+
+                <syncfusion:ChartAxis Header="Product" RangePadding="None" />
+
+            </syncfusion:ChartArea.SecondaryAxis>
+
+
+
+            <!-- Binding data to the series from the database.-->
 
             <syncfusion:ChartSeries Type="Column" Label="Categories List" BindingPathsY="Count"
 
             Interior="{StaticResource SeriesBInterior}" DataSource="{Binding ItemsSource}" />
 
-        &lt;/syncfusion:ChartArea&gt;
+        </syncfusion:ChartArea>
 
-    &lt;/syncfusion:Chart&gt;
+    </syncfusion:Chart>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
@@ -6622,7 +6622,7 @@ style.CommentTemplateKey = "chartTemplate"
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img85.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img85.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6650,7 +6650,7 @@ Style.CommentAlignment = CommentAlignment.Bottom – Left
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img86.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img86.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6684,7 +6684,7 @@ Me.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.Auto
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img87.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img87.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6716,7 +6716,7 @@ Me.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.AutoWithLastColumn
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img88.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img88.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6748,7 +6748,7 @@ Me.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.SizeToCells
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img89.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img89.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6780,7 +6780,7 @@ Me.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.SizeToHeader
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img90.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img90.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6812,7 +6812,7 @@ Me.grid.Model.Options.ColumnSizer = GridControlLengthUnitType.Star
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img91.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img91.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6878,7 +6878,7 @@ grid.RowBackground = new SolidColorBrush(Colors.Tan);
 
 The following image corresponds to the output of the above given code:
 
-{ ![](Getting-Started_images/Getting-Started_img92.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img92.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6922,7 +6922,7 @@ The following image corresponds to the output of the above given code:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img93.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img93.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6994,53 +6994,53 @@ AutoPopulateRelations="False" ItemsSource="{StaticResource ordersSource}"
 
 ShowGroupDropArea="True" UpdateMode="PropertyChanged">
 
-            &lt;syncfusion:GridDataControl.ConditionalFormats&gt;
+            <syncfusion:GridDataControl.ConditionalFormats>
 
-                &lt;syncfusion:GridDataConditionalFormat Name="C1"&gt;
+                <syncfusion:GridDataConditionalFormat Name="C1">
 
-                    &lt;syncfusion:GridDataConditionalFormat.Style&gt;
+                    <syncfusion:GridDataConditionalFormat.Style>
 
-                        &lt;syncfusion:GridDataStyleInfo Background="Yellow" /&gt;
+                        <syncfusion:GridDataStyleInfo Background="Yellow" />
 
-                    &lt;/syncfusion:GridDataConditionalFormat.Style&gt;
+                    </syncfusion:GridDataConditionalFormat.Style>
 
-                    &lt;syncfusion:GridDataConditionalFormat.Conditions&gt;
+                    <syncfusion:GridDataConditionalFormat.Conditions>
 
-                        &lt;syncfusion:GridDataCondition ColumnName="Freight" ConditionType="GreaterThan" Value="200" PredicateType="Or"/&gt;
+                        <syncfusion:GridDataCondition ColumnName="Freight" ConditionType="GreaterThan" Value="200" PredicateType="Or"/>
 
-                        &lt;syncfusion:GridDataCondition ColumnName="Freight" ConditionType="LessThan" Value="500" PredicateType="And"/&gt;
+                        <syncfusion:GridDataCondition ColumnName="Freight" ConditionType="LessThan" Value="500" PredicateType="And"/>
 
-                    &lt;/syncfusion:GridDataConditionalFormat.Conditions&gt;
+                    </syncfusion:GridDataConditionalFormat.Conditions>
 
-                &lt;/syncfusion:GridDataConditionalFormat&gt;
+                </syncfusion:GridDataConditionalFormat>
 
-                &lt;syncfusion:GridDataConditionalFormat Name="C2" ApplyStyleToColumn="ShipCountry" &gt;
+                <syncfusion:GridDataConditionalFormat Name="C2" ApplyStyleToColumn="ShipCountry" >
 
-                    &lt;syncfusion:GridDataConditionalFormat.Style&gt;
+                    <syncfusion:GridDataConditionalFormat.Style>
 
-                        &lt;syncfusion:GridDataStyleInfo Background="Crimson" Foreground="White"  /&gt;
+                        <syncfusion:GridDataStyleInfo Background="Crimson" Foreground="White"  />
 
-                    &lt;/syncfusion:GridDataConditionalFormat.Style&gt;
+                    </syncfusion:GridDataConditionalFormat.Style>
 
-                    &lt;syncfusion:GridDataConditionalFormat.Conditions&gt;
+                    <syncfusion:GridDataConditionalFormat.Conditions>
 
-                        &lt;syncfusion:GridDataCondition ColumnName="ShipCountry" ConditionType="Equals" Value="USA" PredicateType="Or"/&gt;
+                        <syncfusion:GridDataCondition ColumnName="ShipCountry" ConditionType="Equals" Value="USA" PredicateType="Or"/>
 
-                        &lt;syncfusion:GridDataCondition ColumnName="ShipCountry" ConditionType="Equals" Value="UK" PredicateType="Or"/&gt;
+                        <syncfusion:GridDataCondition ColumnName="ShipCountry" ConditionType="Equals" Value="UK" PredicateType="Or"/>
 
-                    &lt;/syncfusion:GridDataConditionalFormat.Conditions&gt;
+                    </syncfusion:GridDataConditionalFormat.Conditions>
 
-                &lt;/syncfusion:GridDataConditionalFormat&gt;
+                </syncfusion:GridDataConditionalFormat>
 
-           &lt;/syncfusion:GridDataControl.ConditionalFormats&gt;
+           </syncfusion:GridDataControl.ConditionalFormats>
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
 The following image shows the output of the above given code:
 
-{ ![](Getting-Started_images/Getting-Started_img94.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img94.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -7274,7 +7274,7 @@ Visual styles can be set for a grid by using the VisualStyle property. The follo
 
 
 
-&lt;syncfusion:GridDataControl x:Name="dataGrid2" AutoPopulateColumns="False" AutoPopulateRelations="False"  ItemsSource="{StaticResource ordersSource}" syncfusion:SkinStorage.VisualStyle="Office2007Blue" /&gt;
+<syncfusion:GridDataControl x:Name="dataGrid2" AutoPopulateColumns="False" AutoPopulateRelations="False"  ItemsSource="{StaticResource ordersSource}" syncfusion:SkinStorage.VisualStyle="Office2007Blue" />
 
 
 
@@ -7288,93 +7288,93 @@ SkinStorage.SetVisualStyle(dataGrid2, "Office2007Blue");
 
  The following images show different visual styles applied to the grid.
 
-{ ![](Getting-Started_images/Getting-Started_img95.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img95.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img96.png) | markdownify }
-{:.image }
-
-
-
-
-{ ![](Getting-Started_images/Getting-Started_img97.png) | markdownify }
-{:.image }
-
-
-{ ![](Getting-Started_images/Getting-Started_img98.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img96.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img99.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img97.png)' | markdownify }}
+{:.image }
+
+
+{{ '![](Getting-Started_images/Getting-Started_img98.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img100.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img99.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img101.png) | markdownify }
-{:.image }
-
-
-{ ![](Getting-Started_images/Getting-Started_img102.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img100.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img103.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img101.png)' | markdownify }}
+{:.image }
+
+
+{{ '![](Getting-Started_images/Getting-Started_img102.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img104.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img103.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img105.png) | markdownify }
-{:.image }
-
-
-{ ![](Getting-Started_images/Getting-Started_img106.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img104.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img107.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img105.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img108.png) | markdownify }
-{:.image }
-
-
-
-
-{ ![](Getting-Started_images/Getting-Started_img109.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img106.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img110.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img107.png)' | markdownify }}
+{:.image }
+
+
+{{ '![](Getting-Started_images/Getting-Started_img108.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/labuser/Desktop/SnapShots/GDC.png](Getting-Started_images/Getting-Started_img111.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img109.png)' | markdownify }}
+{:.image }
+
+
+
+
+{{ '![](Getting-Started_images/Getting-Started_img110.png)' | markdownify }}
+{:.image }
+
+
+
+
+{{ '![C:/Users/labuser/Desktop/SnapShots/GDC.png](Getting-Started_images/Getting-Started_img111.png)' | markdownify }}
 {:.image }
 
 
@@ -7398,7 +7398,7 @@ this.dataGrid.VisualStyle = VisualStyle.Custom;
 
 The following screenshot shows the custom visual style set for the grid using the above given code: 
 
-{ ![http://help.syncfusion.com/ug_92/User%20Interface/WPF/Grid/ImagesExt/image9_290.png](Getting-Started_images/Getting-Started_img112.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_92/User%20Interface/WPF/Grid/ImagesExt/image9_290.png](Getting-Started_images/Getting-Started_img112.png)' | markdownify }}
 {:.image }
 
 
@@ -7408,45 +7408,45 @@ Custom Visual Style can be defined for nested tables too. The following code ill
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
         <ObjectDataProvider x:Key="CustomerTable"
 
                             MethodName="GetDataTable" ObjectType="{x:Type local:Data}" />
 
-        &lt;CollectionViewSource x:Key="orderSource" Source="{StaticResource CustomerTable}" &gt;
+        <CollectionViewSource x:Key="orderSource" Source="{StaticResource CustomerTable}" >
 
-        &lt;/CollectionViewSource&gt;
+        </CollectionViewSource>
 
-        &lt;local:GridDataVisualStyleConverter x:Key="styleConverter" /&gt;
+        <local:GridDataVisualStyleConverter x:Key="styleConverter" />
 
-        &lt;ObjectDataProvider x:Key="GreenStyle" ObjectType="{x:Type local:GridDataGlassyGreenStyle}"/&gt;
+        <ObjectDataProvider x:Key="GreenStyle" ObjectType="{x:Type local:GridDataGlassyGreenStyle}"/>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
-&lt;syncfusion:GridDataControl x:Name="dataGrid" ShowRowHeader="True" ShowColumnOptions="True" ShowGroupDropArea="True"  ShowFilters="True"  AutoPopulateColumns="True" AutoPopulateRelations="False"  ItemsSource="{StaticResource orderSource}"&gt;
+<syncfusion:GridDataControl x:Name="dataGrid" ShowRowHeader="True" ShowColumnOptions="True" ShowGroupDropArea="True"  ShowFilters="True"  AutoPopulateColumns="True" AutoPopulateRelations="False"  ItemsSource="{StaticResource orderSource}">
 
-                &lt;syncfusion:GridDataControl.Relations &gt;
+                <syncfusion:GridDataControl.Relations >
 
-                    &lt;syncfusion:GridDataRelation RelationalColumn="Employee_Orders" RelationType="MasterDetails" &gt;
+                    <syncfusion:GridDataRelation RelationalColumn="Employee_Orders" RelationType="MasterDetails" >
 
-                        &lt;syncfusion:GridDataRelation.TableProperties&gt;
+                        <syncfusion:GridDataRelation.TableProperties>
 
-                            &lt;syncfusion:GridDataTableProperties CustomVisualStyle="{Binding Source={StaticResource GreenStyle}, Converter={StaticResource styleConverter}}" VisualStyle="Custom" AutoPopulateColumns="True"&gt;
+                            <syncfusion:GridDataTableProperties CustomVisualStyle="{Binding Source={StaticResource GreenStyle}, Converter={StaticResource styleConverter}}" VisualStyle="Custom" AutoPopulateColumns="True">
 
-                            &lt;/syncfusion:GridDataTableProperties&gt;
+                            </syncfusion:GridDataTableProperties>
 
-                        &lt;/syncfusion:GridDataRelation.TableProperties&gt;
+                        </syncfusion:GridDataRelation.TableProperties>
 
-                    &lt;/syncfusion:GridDataRelation&gt;
+                    </syncfusion:GridDataRelation>
 
-                &lt;/syncfusion:GridDataControl.Relations&gt;
+                </syncfusion:GridDataControl.Relations>
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
-{ ![http://help.syncfusion.com/ug_92/User%20Interface/WPF/Grid/ImagesExt/image9_291.png](Getting-Started_images/Getting-Started_img113.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_92/User%20Interface/WPF/Grid/ImagesExt/image9_291.png](Getting-Started_images/Getting-Started_img113.png)' | markdownify }}
 {:.image }
 
 
@@ -7490,7 +7490,7 @@ Blend Styling Demo sample in the sample browser is purely customized in XAML thr
 
 GridDataControl can be customized by using Microsoft Expression Blend 3 or 4. This can be achieved through StyleManager property of _GridDataStyleManager_ type. The properties used to customize the appearance are defined in the GridDataStyleManager class.
 
-{ ![](Getting-Started_images/Getting-Started_img114.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img114.png)' | markdownify }}
 {:.image }
 
 
@@ -7504,7 +7504,7 @@ GridDataStyleManager properties are organized under the following seven groups, 
 * Value Cell Appearance
 * Nested Grid Appearance
 
-{ ![](Getting-Started_images/Getting-Started_img115.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img115.png)' | markdownify }}
 {:.image }
 
 
@@ -7552,7 +7552,7 @@ GridDataUpDownEditVisibleColumnControl</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img116.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img116.png)' | markdownify }}
 {:.image }
 
 
@@ -7626,7 +7626,7 @@ Obsolete.</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img117.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img117.png)' | markdownify }}
 {:.image }
 
 
@@ -7650,19 +7650,19 @@ VerticalAlignment="Top"
 
 Data="M1.5,4.4500742 C2.3284271,4.4500742 3,5.1216469 3,5.9500742 C3,6.7785015 2.3284271,7.4500742 1.5,7.4500742 C0.67157292,7.4500742 0,6.7785015 0,5.9500742 C0,5.1216469 0.67157292,4.4500742 1.5,4.4500742 z M2.8990631,0.00036717192 C3.0453069,0.005159697 3.1827641,0.056897067 3.284497,0.15714154 L8.5183868,5.3089428 C8.6242905,5.4130292 8.6701775,5.5520487 8.6654148,5.6966238 L8.6658916,5.6966238 C8.6662092,5.7011499 8.6654148,5.7055159 8.6656513,5.710042 C8.6654148,5.714488 8.6662092,5.718854 8.6658916,5.7233 L8.6654148,5.7233 C8.6701775,5.867878 8.6242905,6.0069752 8.5183868,6.1111407 L3.284497,11.262862 C3.0519648,11.491915 2.6327903,11.467778 2.3486581,11.208635 C2.3486581,11.208635 2.2061534,11.101613 1.9369454,10.833023 C1.6678151,10.56459 1.7572079,10.396356 1.9367857,10.137055 C2.1164434,9.8779926 4.7354136,6.097723 4.7354136,6.097723 C4.9301553,5.7890387 4.933569,5.630013 4.7354136,5.3222814 C4.7354136,5.3222814 2.1164434,1.5420915 1.9367857,1.2827913 C1.7572079,1.0237284 1.6678151,0.85541332 1.9369454,0.58698106 C2.2061534,0.31847125 2.3486581,0.21136875 2.3486581,0.21136881 C2.5084825,0.065645903 2.711035,-.0057947943 2.8990631,0.00036717192 z" Fill="#FFF5913F" RenderTransformOrigin="0.5,0.5" Stretch="Fill">
 
-&lt;Path.RenderTransform&gt;
+<Path.RenderTransform>
 
-&lt;RotateTransform Angle="90" /&gt;
+<RotateTransform Angle="90" />
 
-&lt;/Path.RenderTransform&gt;
+</Path.RenderTransform>
 
-&lt;/Path&gt;
+</Path>
 
 
 
-&lt;syncfusion:GridDataStyleManager&gt;
+<syncfusion:GridDataStyleManager>
 
-   &lt;syncfusion:GridDataStyleManager.ExpanderAppearence&gt;
+   <syncfusion:GridDataStyleManager.ExpanderAppearence>
 
       <syncfusion:ExpanderAppearence MinusPath="{StaticResource minusPath}"
 
@@ -7686,13 +7686,13 @@ Data="M1.5,4.4500742 C2.3284271,4.4500742 3,5.1216469 3,5.9500742 C3,6.77850
 
       PlusPath="{StaticResource plusPath}" />
 
-   &lt;/syncfusion:GridDataStyleManager.ExpanderAppearence&gt;
+   </syncfusion:GridDataStyleManager.ExpanderAppearence>
 
-&lt;/syncfusion:GridDataStyleManager&gt;
+</syncfusion:GridDataStyleManager>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img118.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img118.png)' | markdownify }}
 {:.image }
 
 
@@ -7748,9 +7748,9 @@ The following code example illustrates the properties defined in this group.
 
 
 
-&lt;Pen x:Key="GroupCellBorder" Brush="#FFC2C2C2" Thickness="1" /&gt;
+<Pen x:Key="GroupCellBorder" Brush="#FFC2C2C2" Thickness="1" />
 
-&lt;syncfusion:GridDataStyleManager.GroupAreaAppearence&gt;
+<syncfusion:GridDataStyleManager.GroupAreaAppearence>
 
 <syncfusion:GroupAreaAppearence GroupAreaBackgroundBrush="#FFE7CD9B" 
 
@@ -7758,13 +7758,13 @@ GroupAreaForegroundBrush="White" DragDropIndicatorBrush="Peru"
 
 DragDropIndicatorOuterBrush="Gray">
 
-&lt;syncfusion:GroupAreaAppearence.GroupHeaderFont&gt;
+<syncfusion:GroupAreaAppearence.GroupHeaderFont>
 
-&lt;syncfusion:GridFontInfo FontFamily="RockWell" FontSize="12" /&gt;
+<syncfusion:GridFontInfo FontFamily="RockWell" FontSize="12" />
 
-&lt;/syncfusion:GroupAreaAppearence.GroupHeaderFont&gt;
+</syncfusion:GroupAreaAppearence.GroupHeaderFont>
 
-&lt;syncfusion:GroupAreaAppearence.GroupCellBorders&gt;
+<syncfusion:GroupAreaAppearence.GroupCellBorders>
 
 <syncfusion:CellBordersInfo
 
@@ -7776,13 +7776,13 @@ Bottom="{StaticResource GroupCellBorder}"
 
       Top="{StaticResource GroupCellBorder}" />
 
-&lt;/syncfusion:GroupAreaAppearence.GroupCellBorders&gt;
+</syncfusion:GroupAreaAppearence.GroupCellBorders>
 
-&lt;/syncfusion:GroupAreaAppearence&gt;
+</syncfusion:GroupAreaAppearence>
 
-&lt;/syncfusion:GridDataStyleManager.GroupAreaAppearence&gt;
+</syncfusion:GridDataStyleManager.GroupAreaAppearence>
 
-{ ![](Getting-Started_images/Getting-Started_img119.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img119.png)' | markdownify }}
 {:.image }
 
 
@@ -7828,7 +7828,7 @@ GroupDropAreaHeight="50" GroupDropAreaText="Customized Group Area"
 
 DragIndicatorInnerBrush="Gray" DragIndicatorOuterBrush="Brown"/>
 
-{ ![](Getting-Started_images/Getting-Started_img120.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img120.png)' | markdownify }}
 {:.image }
 
 
@@ -7942,7 +7942,7 @@ The following code example illustrates the properties defined in this group.
 
 
 
-&lt;syncfusion:GridDataStyleManager.HeaderAppearence&gt;
+<syncfusion:GridDataStyleManager.HeaderAppearence>
 
 <syncfusion:HeaderAppearence ColumnOptionsPopupBackground="#FFF2E2C4"
 
@@ -7954,19 +7954,19 @@ HeaderInnerBorder="#FF674B67" HeaderInnerBorderThickness="0.18"
 
 SortWidgetBrush="#FFF68909">
 
-&lt;syncfusion:HeaderAppearence.HeaderFont&gt;
+<syncfusion:HeaderAppearence.HeaderFont>
 
-&lt;syncfusion:GridFontInfo FontFamily="Segoe UI" FontSize="14.73" FontWeight="SemiBold" /&gt;
+<syncfusion:GridFontInfo FontFamily="Segoe UI" FontSize="14.73" FontWeight="SemiBold" />
 
-&lt;/syncfusion:HeaderAppearence.HeaderFont&gt;
+</syncfusion:HeaderAppearence.HeaderFont>
 
-&lt;syncfusion:HeaderAppearence.HeaderTextMargins&gt;
+<syncfusion:HeaderAppearence.HeaderTextMargins>
 
-&lt;syncfusion:CellMarginsInfo Left="12" /&gt;
+<syncfusion:CellMarginsInfo Left="12" />
 
-&lt;/syncfusion:HeaderAppearence.HeaderTextMargins&gt;
+</syncfusion:HeaderAppearence.HeaderTextMargins>
 
-&lt;syncfusion:HeaderAppearence.HeaderCellBorders&gt;
+<syncfusion:HeaderAppearence.HeaderCellBorders>
 
 <syncfusion:CellBordersInfo
 
@@ -7978,15 +7978,15 @@ Right="{StaticResource ValueCellBorder}"
 
 Top="{StaticResource ValueCellBorder}" />
 
-&lt;/syncfusion:HeaderAppearence.HeaderCellBorders&gt;
+</syncfusion:HeaderAppearence.HeaderCellBorders>
 
-&lt;/syncfusion:HeaderAppearence&gt;
+</syncfusion:HeaderAppearence>
 
-&lt;/syncfusion:GridDataStyleManager.HeaderAppearence&gt;
+</syncfusion:GridDataStyleManager.HeaderAppearence>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img121.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img121.png)' | markdownify }}
 {:.image }
 
 
@@ -8028,13 +8028,13 @@ The following code example illustrates the properties defined in this group.
 
 
 
-&lt;!—HeaderTemplate--&gt;
+<!—HeaderTemplate-->
 
-&lt;DataTemplate x:Name="HeaderTemplate"&gt;
+<DataTemplate x:Name="HeaderTemplate">
 
-&lt;TextBox Height="30" Width="120"/&gt;
+<TextBox Height="30" Width="120"/>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
@@ -8046,23 +8046,23 @@ HeaderStyle="{StaticResource GridDataHeaderCellControlStyle}"/>
 
 
 
-&lt;!— HeaderStyle in Visible Column  --&gt;
+<!— HeaderStyle in Visible Column  -->
 
-&lt;syncfusion:GridDataVisibleColumn MappingName="OrderId"&gt;
+<syncfusion:GridDataVisibleColumn MappingName="OrderId">
 
-&lt;syncfusion:GridDataVisibleColumn.HeaderStyle&gt;
+<syncfusion:GridDataVisibleColumn.HeaderStyle>
 
 <syncfusion:GridDataColumnStyle Background="White"
 
 Foreground="Black"/>
 
-&lt;/syncfusion:GridDataVisibleColumn.HeaderStyle&gt;
+</syncfusion:GridDataVisibleColumn.HeaderStyle>
 
-&lt;/syncfusion:GridDataVisibleColumn&gt;
+</syncfusion:GridDataVisibleColumn>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img122.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img122.png)' | markdownify }}
 {:.image }
 
 
@@ -8132,7 +8132,7 @@ The following code example illustrates the properties defined in this group.
 
 
 
-&lt;syncfusion:GridDataStyleManager.RowAppearence&gt;
+<syncfusion:GridDataStyleManager.RowAppearence>
 
 <syncfusion:RowAppearence CurrentCellSelectionBackground="#FFB31B20"
 
@@ -8152,29 +8152,29 @@ SummaryCaptionForeground="#FF730202" SummaryRowBackground="#FFCBB284"
 
 SummaryRowForeground="#FFFFFFFF">
 
-&lt;syncfusion:RowAppearence.SummaryCaptionFont&gt;
+<syncfusion:RowAppearence.SummaryCaptionFont>
 
 <syncfusion:GridFontInfo FontFamily="Rockwell" FontSize="13.333"
 
 FontWeight="Normal" />
 
-&lt;/syncfusion:RowAppearence.SummaryCaptionFont&gt;
+</syncfusion:RowAppearence.SummaryCaptionFont>
 
-      &lt;syncfusion:RowAppearence.SummaryRowFont&gt;
+      <syncfusion:RowAppearence.SummaryRowFont>
 
 <syncfusion:GridFontInfo FontFamily="Rockwell"
 
 FontSize="13.333" />
 
-&lt;/syncfusion:RowAppearence.SummaryRowFont&gt;
+</syncfusion:RowAppearence.SummaryRowFont>
 
-&lt;/syncfusion:RowAppearence&gt;
+</syncfusion:RowAppearence>
 
-&lt;/syncfusion:GridDataStyleManager.RowAppearence&gt;
+</syncfusion:GridDataStyleManager.RowAppearence>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img123.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img123.png)' | markdownify }}
 {:.image }
 
 
@@ -8338,13 +8338,13 @@ The following code example illustrates the properties defined in this group.
 
 
 
-&lt;syncfusion:GridDataStyleManager.ValueCellAppearance&gt;
+<syncfusion:GridDataStyleManager.ValueCellAppearance>
 
 <syncfusion:ValueCellAppearance CurrentCellBorderBrush="#FFD6BE92"
 
      ValueBackgroundBrush="#FFFDFBFC" ValueForegroundBrush="#FF333333">
 
-&lt;syncfusion:ValueCellAppearance.ValueCellBorders&gt;
+<syncfusion:ValueCellAppearance.ValueCellBorders>
 
       <syncfusion:CellBordersInfo 
 
@@ -8356,29 +8356,29 @@ The following code example illustrates the properties defined in this group.
 
             Top="{StaticResource ValueCellBorder}" />
 
-      &lt;/syncfusion:ValueCellAppearance.ValueCellBorders&gt;
+      </syncfusion:ValueCellAppearance.ValueCellBorders>
 
-&lt;syncfusion:ValueCellAppearance.ValueFont&gt;
+<syncfusion:ValueCellAppearance.ValueFont>
 
-&lt;syncfusion:GridFontInfo FontFamily="Rockwell" FontSize="10" FontWeight="Normal" /&gt;
+<syncfusion:GridFontInfo FontFamily="Rockwell" FontSize="10" FontWeight="Normal" />
 
-&lt;/syncfusion:ValueCellAppearance.ValueFont&gt;
+</syncfusion:ValueCellAppearance.ValueFont>
 
-&lt;syncfusion:ValueCellAppearance.ValueTextMargins&gt;
+<syncfusion:ValueCellAppearance.ValueTextMargins>
 
-&lt;syncfusion:CellMarginsInfo Bottom="2" Left="2" Right="2"                                       Top="2" /&gt;
+<syncfusion:CellMarginsInfo Bottom="2" Left="2" Right="2"                                       Top="2" />
 
-&lt;/syncfusion:ValueCellAppearance.ValueTextMargins&gt;
+</syncfusion:ValueCellAppearance.ValueTextMargins>
 
-&lt;/syncfusion:ValueCellAppearance&gt;
+</syncfusion:ValueCellAppearance>
 
-&lt;/syncfusion:GridDataStyleManager.ValueCellAppearance&gt;
-
-
+</syncfusion:GridDataStyleManager.ValueCellAppearance>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img124.png) | markdownify }
+
+
+{{ '![](Getting-Started_images/Getting-Started_img124.png)' | markdownify }}
 {:.image }
 
 
@@ -8488,13 +8488,13 @@ The following code example illustrates the properties defined in this group.
 
 
 
-&lt;Pen x:Key="ValueCellBorder" Brush="#FFD6BE92" Thickness="0.25" /&gt;
+<Pen x:Key="ValueCellBorder" Brush="#FFD6BE92" Thickness="0.25" />
 
-&lt;syncfusion:GridDataStyleManager.NestedGridAppearance&gt;
+<syncfusion:GridDataStyleManager.NestedGridAppearance>
 
-     &lt;syncfusion:NestedGridAppearance&gt;
+     <syncfusion:NestedGridAppearance>
 
-         &lt;syncfusion:NestedGridAppearance.FirstHeaderColumnBorder&gt;
+         <syncfusion:NestedGridAppearance.FirstHeaderColumnBorder>
 
              <syncfusion:CellBordersInfo 
 
@@ -8506,9 +8506,9 @@ The following code example illustrates the properties defined in this group.
 
              Top="{StaticResource ValueCellBorder}" />
 
-         &lt;/syncfusion:NestedGridAppearance.FirstHeaderColumnBorder&gt;
+         </syncfusion:NestedGridAppearance.FirstHeaderColumnBorder>
 
-         &lt;syncfusion:NestedGridAppearance.LastHeaderColumnBorder&gt;
+         <syncfusion:NestedGridAppearance.LastHeaderColumnBorder>
 
              <syncfusion:CellBordersInfo 
 
@@ -8520,9 +8520,9 @@ The following code example illustrates the properties defined in this group.
 
              Top="{StaticResource ValueCellBorder}" />
 
-         &lt;/syncfusion:NestedGridAppearance.LastHeaderColumnBorder&gt;
+         </syncfusion:NestedGridAppearance.LastHeaderColumnBorder>
 
-     &lt;syncfusion:NestedGridAppearance.NestedHeaderCellBorder&gt;
+     <syncfusion:NestedGridAppearance.NestedHeaderCellBorder>
 
          <syncfusion:CellBordersInfo 
 
@@ -8534,9 +8534,9 @@ The following code example illustrates the properties defined in this group.
 
          Top="{StaticResource ValueCellBorder}" />
 
-         &lt;/syncfusion:NestedGridAppearance.NestedHeaderCellBorder&gt;
+         </syncfusion:NestedGridAppearance.NestedHeaderCellBorder>
 
-         &lt;syncfusion:NestedGridAppearance.TopLeftCellHeaderCellBorder&gt;
+         <syncfusion:NestedGridAppearance.TopLeftCellHeaderCellBorder>
 
                <syncfusion:CellBordersInfo 
 
@@ -8548,21 +8548,21 @@ The following code example illustrates the properties defined in this group.
 
                Top="{StaticResource ValueCellBorder}" />
 
-         &lt;/syncfusion:NestedGridAppearance.TopLeftCellHeaderCellBorder&gt;
+         </syncfusion:NestedGridAppearance.TopLeftCellHeaderCellBorder>
 
-      &lt;/syncfusion:NestedGridAppearance&gt;
+      </syncfusion:NestedGridAppearance>
 
-&lt;/syncfusion:GridDataStyleManager.NestedGridAppearance&gt;
+</syncfusion:GridDataStyleManager.NestedGridAppearance>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img125.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img125.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img126.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img126.png)' | markdownify }}
 {:.image }
 
 
@@ -8607,7 +8607,7 @@ Step by step instructions for Editing Templates
 1. Open the application in Microsoft Expression Blend
 2. Right-click on the GridDataControl and from Object menu, select Edit Additional Templates -> Edit $PartName$Style (e.g. HeaderStyle).  
 
-{ ![](Getting-Started_images/Getting-Started_img127.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img127.png)' | markdownify }}
 {:.image }
 
 
@@ -8623,35 +8623,35 @@ RowStyle can be set using XAML by overriding the style for GridDataRowControl cl
 
 [XAML]
 
-&lt;Style x:Key="RowStyle1" TargetType="{x:Type local:GridDataRowControl}"&gt;
+<Style x:Key="RowStyle1" TargetType="{x:Type local:GridDataRowControl}">
 
-            &lt;Setter Property="Background" Value="Cornsilk"/&gt;
+            <Setter Property="Background" Value="Cornsilk"/>
 
-            &lt;Setter Property="Foreground" Value="Fuchsia" /&gt;
+            <Setter Property="Foreground" Value="Fuchsia" />
 
-            &lt;Setter Property="FontFamily" Value="Monotype Corsiva"/&gt;
+            <Setter Property="FontFamily" Value="Monotype Corsiva"/>
 
-            &lt;Setter Property="FontSize" Value="13" /&gt;
+            <Setter Property="FontSize" Value="13" />
 
-            &lt;Setter Property="FontStretch" Value="Expanded" /&gt;
+            <Setter Property="FontStretch" Value="Expanded" />
 
-            &lt;Setter Property="FontStyle" Value="Normal"  /&gt;
+            <Setter Property="FontStyle" Value="Normal"  />
 
-            &lt;Setter Property="FontWeight" Value="Normal"  /&gt;
+            <Setter Property="FontWeight" Value="Normal"  />
 
-            &lt;Setter Property="Cursor" Value="Pen"  /&gt;
+            <Setter Property="Cursor" Value="Pen"  />
 
-            &lt;Setter Property="FlowDirection" Value="RightToLeft" /&gt;
+            <Setter Property="FlowDirection" Value="RightToLeft" />
 
-            &lt;Setter Property="VerticalAlignment" Value="Center"  /&gt;
+            <Setter Property="VerticalAlignment" Value="Center"  />
 
-            &lt;Setter Property="HorizontalAlignment" Value="Center" /&gt;
+            <Setter Property="HorizontalAlignment" Value="Center" />
 
-        &lt;/Style&gt;
+        </Style>
 
 
 
-&lt;!--Assigning the style resource to the GridDataControl--&gt;
+<!--Assigning the style resource to the GridDataControl-->
 
        RowStyle="{StaticResource RowStyle1}"
 
@@ -8661,35 +8661,35 @@ AlternateRowStyle defines the style for the GridDataRowControl element for alter
 
 [XAML]
 
-&lt;Style x:Key="AlternateRowStyle1" TargetType="{x:Type local:GridDataRowControl}"&gt;
+<Style x:Key="AlternateRowStyle1" TargetType="{x:Type local:GridDataRowControl}">
 
-            &lt;Setter Property="Background" Value="Cornsilk"/&gt;
+            <Setter Property="Background" Value="Cornsilk"/>
 
-            &lt;Setter Property="Foreground" Value="Fuchsia" /&gt;
+            <Setter Property="Foreground" Value="Fuchsia" />
 
-            &lt;Setter Property="FontFamily" Value="Monotype Corsiva"/&gt;
+            <Setter Property="FontFamily" Value="Monotype Corsiva"/>
 
-            &lt;Setter Property="FontSize" Value="13" /&gt;
+            <Setter Property="FontSize" Value="13" />
 
-            &lt;Setter Property="FontStretch" Value="Expanded" /&gt;
+            <Setter Property="FontStretch" Value="Expanded" />
 
-            &lt;Setter Property="FontStyle" Value="Normal"  /&gt;
+            <Setter Property="FontStyle" Value="Normal"  />
 
-            &lt;Setter Property="FontWeight" Value="Normal"  /&gt;
+            <Setter Property="FontWeight" Value="Normal"  />
 
-            &lt;Setter Property="Cursor" Value="Pen"  /&gt;
+            <Setter Property="Cursor" Value="Pen"  />
 
-            &lt;Setter Property="FlowDirection" Value="RightToLeft" /&gt;
+            <Setter Property="FlowDirection" Value="RightToLeft" />
 
-            &lt;Setter Property="VerticalAlignment" Value="Center"  /&gt;
+            <Setter Property="VerticalAlignment" Value="Center"  />
 
-            &lt;Setter Property="HorizontalAlignment" Value="Center" /&gt;
+            <Setter Property="HorizontalAlignment" Value="Center" />
 
-        &lt;/Style&gt;
+        </Style>
 
 
 
-&lt;!--Assigning the style resource to the GridDataControl--&gt;
+<!--Assigning the style resource to the GridDataControl-->
 
        AlternateRowStyle="{StaticResource AlternateRowStyle1}"
 
@@ -8848,7 +8848,7 @@ Null</th><th>
 Void</th></tr>
 <tr>
 <th>
-ShowColumnChooser(Action&lt;GridDataColumnChooserWindow&gt;)</th><th>
+ShowColumnChooser(Action<GridDataColumnChooserWindow>)</th><th>
 Passing the Action method with a customized window pops up the customized GridDataColumnChooserWindow.</th><th>
 Action<GridDataColumnChooserWindow></th><th>
 ------</th><th>
@@ -8905,9 +8905,9 @@ Choose the Export to PDF sample to launch.
 
                             VisualStyle="Office14Blue">
 
-    &lt;syncfusion:GridDataControl.VisibleColumns&gt;
+    <syncfusion:GridDataControl.VisibleColumns>
 
-        &lt;!--  Set IsReadyOnly for columns  --&gt;
+        <!--  Set IsReadyOnly for columns  -->
 
         <syncfusion:GridDataVisibleColumn AllowSort="True"
 
@@ -8931,17 +8931,17 @@ Choose the Export to PDF sample to launch.
 
                                                     MappingName="OrderDate">
 
-            &lt;syncfusion:GridDataDateTimeVisibleColumn.ColumnStyle&gt;
+            <syncfusion:GridDataDateTimeVisibleColumn.ColumnStyle>
 
-                &lt;syncfusion:GridDataColumnStyle HorizontalAlignment="Right" /&gt;
+                <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
 
-            &lt;/syncfusion:GridDataDateTimeVisibleColumn.ColumnStyle&gt;
+            </syncfusion:GridDataDateTimeVisibleColumn.ColumnStyle>
 
-        &lt;/syncfusion:GridDataDateTimeVisibleColumn&gt;
+        </syncfusion:GridDataDateTimeVisibleColumn>
 
-    &lt;/syncfusion:GridDataControl.VisibleColumns&gt;
+    </syncfusion:GridDataControl.VisibleColumns>
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 
 
@@ -9035,7 +9035,7 @@ private void ColumnChooserBtn_Click(object sender, RoutedEventArgs e)
 
 In the result you can get the column chooser window in your application as shown below.
 
-{ ![](Getting-Started_images/Getting-Started_img128.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img128.png)' | markdownify }}
 {:.image }
 
 
@@ -9078,13 +9078,13 @@ gridDataControl.ExportToExcel("Sample.xls", ExcelVersion.Excel97to2003 );
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img129.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img129.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img130.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img130.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9128,13 +9128,13 @@ gridDataControl.ExportToExcel("Sample.xls", ExcelVersion.Excel97to2003 );
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img131.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img131.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img132.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img132.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9162,13 +9162,13 @@ gridDataControl.ExportToExcel("Sample.xls", ExcelVersion.Excel97to2003 );
 
 > _Note: Only the visible grouping contents are exported._
 
-{ ![](Getting-Started_images/Getting-Started_img133.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img133.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img134.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img134.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9212,7 +9212,7 @@ When the code runs, the following output displays.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img135.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img135.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9220,7 +9220,7 @@ When the code runs, the following output displays.
 
 When you are ready to export the entire grid, click Export to CSV; the grid content can then be converted to CSV format. 
 
-{ ![](Getting-Started_images/Getting-Started_img136.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img136.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -9275,7 +9275,7 @@ syncfusion:GridDataContro” x:Name=”dataGrid"
 
                             Vis”alStyle="Syncfu”ionTheme">
 
-    &lt;!--  code for Visible Columns  yncfusionyncfusion:GridDataControl.VisibleColumns&gt;
+    <!--  code for Visible Columns  yncfusionyncfusion:GridDataControl.VisibleColumns>
 
  yncfusionyncfusion:GridDataVisibleColumn He”derText=”Order ID" Map”ingName”"OrderID">
 
@@ -9331,7 +9331,7 @@ yncfusionyncfusion:GridDataVisibleColumn He”derText="Shi” Address" 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img137.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img137.png)' | markdownify }}
 {:.image }
 
 
@@ -9389,7 +9389,7 @@ The following screenshot shows the exported pdf document:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img138.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img138.png)' | markdownify }}
 {:.image }
 
 
@@ -9439,7 +9439,7 @@ if (sfd.ShowDialog() == true)
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img139.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img139.png)' | markdownify }}
 {:.image }
 
 
@@ -9447,7 +9447,7 @@ if (sfd.ShowDialog() == true)
 
 You can convert the selected range of the GridData control into a pdf file.
 
-{ ![](Getting-Started_images/Getting-Started_img140.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img140.png)' | markdownify }}
 {:.image }
 
 
@@ -9499,7 +9499,7 @@ if (sfd.ShowDialog() == true)
 
 The following screenshot shows the exported pdf document of a selected range of the GridData control:
 
-{ ![](Getting-Started_images/Getting-Started_img141.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img141.png)' | markdownify }}
 {:.image }
 
 
@@ -9551,7 +9551,7 @@ using ( Stream stream = sfd.OpenFile())
 
 The following screenshot shows the exported PdfLightTable document of the selected range of the GridData control.
 
-{ ![](Getting-Started_images/Getting-Started_img142.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img142.png)' | markdownify }}
 {:.image }
 
 
@@ -9563,13 +9563,13 @@ The GridData control converts the content of the GridData control to a pdf docum
 
 The following screenshot illustrates how the GridData control appears as a pdf file after grouping the data.
 
-{ ![](Getting-Started_images/Getting-Started_img143.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img143.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img144.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img144.png)' | markdownify }}
 {:.image }
 
 
@@ -9577,7 +9577,7 @@ The following screenshot illustrates how the GridData control appears as a pdf f
 
 The following screenshot illustrates how the GridData control appears as a PdfLightTable document after grouping the data.
 
-{ ![](Getting-Started_images/Getting-Started_img145.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img145.png)' | markdownify }}
 {:.image }
 
 
@@ -9641,9 +9641,9 @@ GridDataHeaderCellControlStyle2}"
 
 
 
-            &lt;!--  Table Summary rows created here  --&gt;
+            <!--  Table Summary rows created here  -->
 
-            &lt;syncfusion:GridDataControl.TableSummaryRows&gt;
+            <syncfusion:GridDataControl.TableSummaryRows>
 
                 <syncfusion:GridDataSummaryRow Title="Total : {CountSummary} Items"
 
@@ -9651,7 +9651,7 @@ GridDataHeaderCellControlStyle2}"
 
                                                TitleColumnCount="2">
 
-                    &lt;syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+                    <syncfusion:GridDataSummaryRow.SummaryColumns>
 
                         <syncfusion:GridDataSummaryColumn Name="CountSummary"
 
@@ -9661,49 +9661,33 @@ GridDataHeaderCellControlStyle2}"
 
                                                 SummaryType="CountAggregate" />
 
-                    &lt;/syncfusion:GridDataSummaryRow.SummaryColumns&gt;
+                    </syncfusion:GridDataSummaryRow.SummaryColumns>
 
-                &lt;/syncfusion:GridDataSummaryRow&gt;
+                </syncfusion:GridDataSummaryRow>
 
-            &lt;/syncfusion:GridDataControl.TableSummaryRows&gt;
-
-
-
-            &lt;!--  Grouped Column Created here  --&gt;
-
-            &lt;syncfusion:GridDataControl.GroupedColumns&gt;
-
-                &lt;syncfusion:GridDataGroupColumn ColumnName="Movie" /&gt;
-
-            &lt;/syncfusion:GridDataControl.GroupedColumns&gt;
+            </syncfusion:GridDataControl.TableSummaryRows>
 
 
 
-            &lt;!--  Visible Column Created here  --&gt;
+            <!--  Grouped Column Created here  -->
 
-            &lt;syncfusion:GridDataControl.VisibleColumns&gt;
+            <syncfusion:GridDataControl.GroupedColumns>
 
+                <syncfusion:GridDataGroupColumn ColumnName="Movie" />
 
-
-                &lt;syncfusion:GridDataVisibleColumn MappingName="Movie"&gt;
-
-                    &lt;syncfusion:GridDataVisibleColumn.FilterPane&gt;
-
-                        <syncfusion:GridDataTextFilteringPane Foreground="Black"
-
-                                                              IsThemed="False"
-
-                                                              PredicateType="And" />
-
-                    &lt;/syncfusion:GridDataVisibleColumn.FilterPane&gt;
-
-                &lt;/syncfusion:GridDataVisibleColumn&gt;
+            </syncfusion:GridDataControl.GroupedColumns>
 
 
 
-  &lt;syncfusion:GridDataVisibleColumn ColumnStyle="{StaticResource GridDataColumnStyle}"                                                                 MappingName="OrderId"&gt;
+            <!--  Visible Column Created here  -->
 
-                    &lt;syncfusion:GridDataVisibleColumn.FilterPane&gt;
+            <syncfusion:GridDataControl.VisibleColumns>
+
+
+
+                <syncfusion:GridDataVisibleColumn MappingName="Movie">
+
+                    <syncfusion:GridDataVisibleColumn.FilterPane>
 
                         <syncfusion:GridDataTextFilteringPane Foreground="Black"
 
@@ -9711,31 +9695,15 @@ GridDataHeaderCellControlStyle2}"
 
                                                               PredicateType="And" />
 
-                    &lt;/syncfusion:GridDataVisibleColumn.FilterPane&gt;
+                    </syncfusion:GridDataVisibleColumn.FilterPane>
 
-                &lt;/syncfusion:GridDataVisibleColumn&gt;
-
-
-
-  &lt;syncfusion:GridDataVisibleColumn ColumnStyle="{StaticResource GridDataColumnStyle}"                                                                   MappingName="Name"&gt;
-
-                    &lt;syncfusion:GridDataVisibleColumn.FilterPane&gt;
-
-                        <syncfusion:GridDataTextFilteringPane Foreground="Black"
-
-                                                              IsThemed="False"
-
-                                                              PredicateType="And" />
-
-                    &lt;/syncfusion:GridDataVisibleColumn.FilterPane&gt;
-
-                &lt;/syncfusion:GridDataVisibleColumn&gt;
+                </syncfusion:GridDataVisibleColumn>
 
 
 
-  &lt;syncfusion:GridDataVisibleColumn ColumnStyle="{StaticResource GridDataColumnStyle}"                                                                 MappingName="SeatNo"&gt;
+  <syncfusion:GridDataVisibleColumn ColumnStyle="{StaticResource GridDataColumnStyle}"                                                                 MappingName="OrderId">
 
-                    &lt;syncfusion:GridDataVisibleColumn.FilterPane&gt;
+                    <syncfusion:GridDataVisibleColumn.FilterPane>
 
                         <syncfusion:GridDataTextFilteringPane Foreground="Black"
 
@@ -9743,15 +9711,15 @@ GridDataHeaderCellControlStyle2}"
 
                                                               PredicateType="And" />
 
-                    &lt;/syncfusion:GridDataVisibleColumn.FilterPane&gt;
+                    </syncfusion:GridDataVisibleColumn.FilterPane>
 
-                &lt;/syncfusion:GridDataVisibleColumn&gt;
+                </syncfusion:GridDataVisibleColumn>
 
 
 
-   &lt;syncfusion:GridDataVisibleColumn ColumnStyle="{StaticResource GridDataColumnStyle}"                                                                  MappingName="City"&gt;
+  <syncfusion:GridDataVisibleColumn ColumnStyle="{StaticResource GridDataColumnStyle}"                                                                   MappingName="Name">
 
-                    &lt;syncfusion:GridDataVisibleColumn.FilterPane&gt;
+                    <syncfusion:GridDataVisibleColumn.FilterPane>
 
                         <syncfusion:GridDataTextFilteringPane Foreground="Black"
 
@@ -9759,17 +9727,49 @@ GridDataHeaderCellControlStyle2}"
 
                                                               PredicateType="And" />
 
-                    &lt;/syncfusion:GridDataVisibleColumn.FilterPane&gt;
+                    </syncfusion:GridDataVisibleColumn.FilterPane>
 
-                &lt;/syncfusion:GridDataVisibleColumn&gt;
-
-   &lt;syncfusion:GridDataVisibleColumn ColumnStyle="{StaticResource GridDataColumnStyle}"                                                               MappingName="Theatre" /&gt;
-
-            &lt;/syncfusion:GridDataControl.VisibleColumns&gt;
+                </syncfusion:GridDataVisibleColumn>
 
 
 
-        &lt;/syncfusion:GridDataControl&gt;
+  <syncfusion:GridDataVisibleColumn ColumnStyle="{StaticResource GridDataColumnStyle}"                                                                 MappingName="SeatNo">
+
+                    <syncfusion:GridDataVisibleColumn.FilterPane>
+
+                        <syncfusion:GridDataTextFilteringPane Foreground="Black"
+
+                                                              IsThemed="False"
+
+                                                              PredicateType="And" />
+
+                    </syncfusion:GridDataVisibleColumn.FilterPane>
+
+                </syncfusion:GridDataVisibleColumn>
+
+
+
+   <syncfusion:GridDataVisibleColumn ColumnStyle="{StaticResource GridDataColumnStyle}"                                                                  MappingName="City">
+
+                    <syncfusion:GridDataVisibleColumn.FilterPane>
+
+                        <syncfusion:GridDataTextFilteringPane Foreground="Black"
+
+                                                              IsThemed="False"
+
+                                                              PredicateType="And" />
+
+                    </syncfusion:GridDataVisibleColumn.FilterPane>
+
+                </syncfusion:GridDataVisibleColumn>
+
+   <syncfusion:GridDataVisibleColumn ColumnStyle="{StaticResource GridDataColumnStyle}"                                                               MappingName="Theatre" />
+
+            </syncfusion:GridDataControl.VisibleColumns>
+
+
+
+        </syncfusion:GridDataControl>
 
 Use the following code to export a customized GridData control:
 
@@ -9839,7 +9839,7 @@ The below screenshot shows the customized blend styling of the GridData control.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img146.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img146.png)' | markdownify }}
 {:.image }
 
 
@@ -9849,7 +9849,7 @@ The screenshot below shows a PDF document of the blend styling GridData control.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img147.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img147.png)' | markdownify }}
 {:.image }
 
 
@@ -10301,7 +10301,7 @@ if (toggleInsertRemove > 0 && (timerCount % insertRemoveModulus) == 0)
 
 > _Note: For complete code of this example, refer the following browser sample:_
 
-> _...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\ Samples\3.5\WindowsSamples\Grid Data Control – Advanced\Trader Grid Test Demo_
+> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\ Samples\3.5\WindowsSamples\Grid Data Control – Advanced\Trader Grid Test Demo_
 
 #### PLINQ Support in GridDataControl
 
@@ -10329,7 +10329,7 @@ _Plinq support_
 
 VisualStyle="Office14Silver">
 
-    &lt;/syncfusion:GridDataControl&gt;
+    </syncfusion:GridDataControl>
 
 
 
@@ -10375,13 +10375,13 @@ The GDCs are extremely customized with appropriate groups and summaries in order
 
 The following image shows the Essential Grid being used in a portfolio application:
 
-{ ![](Getting-Started_images/Getting-Started_img148.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img148.jpeg)' | markdownify }}
 {:.image }
 
 
 > _Note: For complete code of this example, refer to the following browser sample:_
 
-_...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Stock Dashboard Demo_
+_...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Stock Dashboard Demo_
 
 ### VS2010 Designer support  
 
@@ -10400,7 +10400,7 @@ Activating Designer
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img149.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img149.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10423,7 +10423,7 @@ Designer Window has two options:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img150.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img150.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10437,7 +10437,7 @@ This option enables the users to modify the overall settings of the grid. The pr
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img151.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img151.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10451,7 +10451,7 @@ This section explores the various column options such as Auto Populate Columns, 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img152.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img152.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10461,7 +10461,7 @@ This section explores the row-related properties such as Show Add New, Show Grou
 
 Select as you require in this list.
 
-{ ![](Getting-Started_images/Getting-Started_img153.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img153.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10471,7 +10471,7 @@ Cell Properties
 
 This section explores cell level properties such as Allow Edit, Show Error Tooltips, Show Tooltips, Allow Selection combo box, Activate Current Cell Behavior combo box and Visual Style combo box.
 
-{ ![](Getting-Started_images/Getting-Started_img154.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img154.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10490,7 +10490,7 @@ Clear Columns
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img155.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img155.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10504,7 +10504,7 @@ _Note: Property list for visible column in the grid displays._
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img156.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img156.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10514,7 +10514,7 @@ _Note: Property list for visible column in the grid displays._
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img157.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img157.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10524,7 +10524,7 @@ Special Cell Types
 
 This combo box lists the various possible cell types applicable to the column. It also automatically deducts the column type of the grid columns and sets the CellType of it. For example, if the column is of Boolean type, it automatically has a CheckBox.
 
-{ ![](Getting-Started_images/Getting-Started_img158.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img158.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -10542,27 +10542,27 @@ The reason the Freezable trick works is because a Freezable object has its own n
 
 
 
-&lt;TextBox Text="Test" x:Name="txtBlock" /&gt;
+<TextBox Text="Test" x:Name="txtBlock" />
 
 A Separate TextBlock Text can be binded to GridDataVisibleColumn using the following code.
 
 
 
-&lt;syncfusion:GridDataControl AutoPopulateColumns="False" x:Name="dataGrid" ItemsSource="{Binding}"&gt;
+<syncfusion:GridDataControl AutoPopulateColumns="False" x:Name="dataGrid" ItemsSource="{Binding}">
 
 
 
-&lt;syncfusion:GridDataControl.VisibleColumns  &gt;
+<syncfusion:GridDataControl.VisibleColumns  >
 
 
 
-&lt;syncfusion:GridDataVisibleColumn  MappingName="Status"  Width="200"  HeaderText="{Binding Text,ElementName=txtBlock}" /&gt;
+<syncfusion:GridDataVisibleColumn  MappingName="Status"  Width="200"  HeaderText="{Binding Text,ElementName=txtBlock}" />
 
 
 
-&lt;/syncfusion:GridDataControl.VisibleColumns&gt;
+</syncfusion:GridDataControl.VisibleColumns>
 
-&lt;/syncfusion:GridDataControl&gt;
+</syncfusion:GridDataControl>
 
 ### Grid Localization Support
 
@@ -10581,13 +10581,13 @@ Creating a Resource File
 To create a Resource file:
 
 1. Create a folder named “Resources” in the application. 
-2. Create a resource file (Resx file) and name it “Syncfusion.Grid.Wpf.&lt;your culture info name&gt;.resx” E.g. Syncfusion.Grid.Wpf.en-GB.resx. 
+2. Create a resource file (Resx file) and name it “Syncfusion.Grid.Wpf.<your culture info name>.resx” E.g. Syncfusion.Grid.Wpf.en-GB.resx. 
 3. Use the prescribed naming convention as it is mandatory. 
 4. The following screenshot explains the addition of a Resource File to the application. 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img159.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img159.png)' | markdownify }}
 {:.image }
 
 
@@ -10597,7 +10597,7 @@ To create a Resource file:
 
 
 
-{ ![StringSelection](Getting-Started_images/Getting-Started_img160.png) | markdownify }
+{{ '![StringSelection](Getting-Started_images/Getting-Started_img160.png)' | markdownify }}
 {:.image }
 
 
@@ -10609,7 +10609,7 @@ The String Property names used in the Grid are given in the Property table. This
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img161.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img161.png)' | markdownify }}
 {:.image }
 
 
@@ -11027,7 +11027,7 @@ To support the EventToCommand approach, commands have been added for all events 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img162.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img162.png)' | markdownify }}
 {:.image }
 
 
@@ -11101,7 +11101,7 @@ this.SelectedCustomerID = "Customer ID : " + data.CustomerID;
 
 When you select a record while running your application, the SelectedItemChanged command is triggered with the actual GridDataRecordsSelectionChangedEventArgs event argument.
 
-{ ![](Getting-Started_images/Getting-Started_img163.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img163.png)' | markdownify }}
 {:.image }
 
 
@@ -11171,7 +11171,7 @@ this.SelectedCustomerID = "Customer ID : " +  data.CustomerID;
 
 When you select a record while running your application, the SelectedItemChanged command gets triggered with the custom GridDataControl parameter.
 
-{ ![](Getting-Started_images/Getting-Started_img164.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img164.png)' | markdownify }}
 {:.image }
 
 
@@ -11179,7 +11179,7 @@ When you select a record while running your application, the SelectedItemChanged
 
 If there is no parameter set in the View, then the parameter is passed in the method call.
 
-{ ![](Getting-Started_images/Getting-Started_img165.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img165.png)' | markdownify }}
 {:.image }
 
 
@@ -11251,7 +11251,7 @@ When you hover the mouse over a row while running your application, the overridd
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img166.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img166.png)' | markdownify }}
 {:.image }
 
 

@@ -17,22 +17,22 @@ The KeyTips are displayed for the Collapsed RibbonBar.
 
 
 
-&lt;syncfusion:RibbonBar KeyTipOnCollapsed="FS" Header="Font"&gt;
-&lt;syncfusion:RibbonButton  /&gt;
+<syncfusion:RibbonBar KeyTipOnCollapsed="FS" Header="Font">
+<syncfusion:RibbonButton  />
 
 
 
-&lt;/syncfusion:RibbonBar&gt;
-
-
-
-
+</syncfusion:RibbonBar>
 
 
 
 
 
-{ ![](KeyTip-for-Collapsed-Ribbon-bars_images/KeyTip-for-Collapsed-Ribbon-bars_img1.png) | markdownify }
+
+
+
+
+{{ '![](KeyTip-for-Collapsed-Ribbon-bars_images/KeyTip-for-Collapsed-Ribbon-bars_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -42,7 +42,7 @@ The KeyTips are displayed for the Collapsed RibbonBar.
 
 
 
-{ ![C:/Users/riaj/Desktop/David/keytiponcollapsed.png](KeyTip-for-Collapsed-Ribbon-bars_images/KeyTip-for-Collapsed-Ribbon-bars_img2.png) | markdownify }
+{{ '![C:/Users/riaj/Desktop/David/keytiponcollapsed.png](KeyTip-for-Collapsed-Ribbon-bars_images/KeyTip-for-Collapsed-Ribbon-bars_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -52,12 +52,12 @@ Samples Link
 
 To view samples:
 
-* Click Start-->All Programs-->Syncfusion-->Essential Studio &lt;version number&gt; -->Dashboard. (Refer section 2.2)
+* Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard. (Refer section 2.2)
 * In the Dashboard window, click Run Locally Installed Samples for WPF under User Interface Edition panel. 
 
 
 
-{ ![](KeyTip-for-Collapsed-Ribbon-bars_images/KeyTip-for-Collapsed-Ribbon-bars_img3.png) | markdownify }
+{{ '![](KeyTip-for-Collapsed-Ribbon-bars_images/KeyTip-for-Collapsed-Ribbon-bars_img3.png)' | markdownify }}
 {:.image }
 
 

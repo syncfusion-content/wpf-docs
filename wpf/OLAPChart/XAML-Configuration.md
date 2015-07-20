@@ -113,31 +113,31 @@ olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=a
 
 
 
-&lt;!- Adding Elements to Categorical Axis --&gt;
+<!- Adding Elements to Categorical Axis -->
 
-&lt;syncfusion:OlapChart.CategoricalAxis&gt;
+<syncfusion:OlapChart.CategoricalAxis>
 
-                    &lt;syncfusion:Dimension Name="Date" HierarchyName="Fiscal" LevelName="Fiscal Year" IncludeMembers="FY 2002, FY 2003"  /&gt;   &lt;!- Multiple Members where specified by comma separate --&gt;                 
+                    <syncfusion:Dimension Name="Date" HierarchyName="Fiscal" LevelName="Fiscal Year" IncludeMembers="FY 2002, FY 2003"  />   <!- Multiple Members where specified by comma separate -->                 
 
-                    &lt;syncfusion:Kpi Name="Revenue" ShowGoal="True" ShowStatus="True" ShowValue="True" ShowTrend="True" /&gt;
+                    <syncfusion:Kpi Name="Revenue" ShowGoal="True" ShowStatus="True" ShowValue="True" ShowTrend="True" />
 
-&lt;/syncfusion:OlapChart.CategoricalAxis&gt;
-
-
-
-&lt;!- Adding Elements to Series Axis --&gt;
-
-&lt;syncfusion:OlapChart.SeriesAxis&gt;
-
-                    &lt;syncfusion:Dimension Name="Sales Channel" HierarchyName="Sales Channel" LevelName="Sales Channel" /&gt;
-
-                    &lt;syncfusion:Dimension Name="Product" HierarchyName="Product Model Lines" LevelName="Product Line" IncludeMembers="Road" /&gt;
-
-&lt;/syncfusion:OlapChart.SeriesAxis&gt;
+</syncfusion:OlapChart.CategoricalAxis>
 
 
 
-&lt;/syncfusion:OlapChart&gt;
+<!- Adding Elements to Series Axis -->
+
+<syncfusion:OlapChart.SeriesAxis>
+
+                    <syncfusion:Dimension Name="Sales Channel" HierarchyName="Sales Channel" LevelName="Sales Channel" />
+
+                    <syncfusion:Dimension Name="Product" HierarchyName="Product Model Lines" LevelName="Product Line" IncludeMembers="Road" />
+
+</syncfusion:OlapChart.SeriesAxis>
+
+
+
+</syncfusion:OlapChart>
 
 
 
@@ -154,7 +154,7 @@ To access a XAML Configuration Demo sample:
 
 
 
-{ ![](XAML-Configuration_images/XAML-Configuration_img1.png) | markdownify }
+{{ '![](XAML-Configuration_images/XAML-Configuration_img1.png)' | markdownify }}
 {:.image }
 
 

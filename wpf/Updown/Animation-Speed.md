@@ -17,7 +17,7 @@ The AnimationSpeed can be set for the UpDown control as shown in the following c
 
 [XAML]
 
-&lt;syncfusion:UpDown Name="upDown" AnimationSpeed="30"/&gt;
+<syncfusion:UpDown Name="upDown" AnimationSpeed="30"/>
 
 
 

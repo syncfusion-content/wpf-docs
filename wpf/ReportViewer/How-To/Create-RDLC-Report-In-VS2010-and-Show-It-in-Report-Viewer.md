@@ -21,7 +21,7 @@ _Note: In the following example, the new WPF application is created in the name 
 
 
 
-{ ![Description: sshot-1.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img1.png) | markdownify }
+{{ '![Description: sshot-1.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -32,13 +32,13 @@ _Note: In the following example, the new WPF application is created in the name 
 
 
 
-{ ![Description: C:/Users/lingarajs/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Outlook/EV1EZW4I/reportA (2).png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img2.png) | markdownify }
+{{ '![Description: C:/Users/lingarajs/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Outlook/EV1EZW4I/reportA (2).png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img2.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![Description: sshot-2.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img3.png) | markdownify }
+{{ '![Description: sshot-2.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -46,7 +46,7 @@ _Note: In the following example, the new WPF application is created in the name 
 
 
 
-{ ![Description: sshot-3.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img4.png) | markdownify }
+{{ '![Description: sshot-3.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -54,7 +54,7 @@ _Note: In the following example, the new WPF application is created in the name 
 
 
 
-{ ![Description: sshot-4.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img5.png) | markdownify }
+{{ '![Description: sshot-4.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -63,7 +63,7 @@ _Note: In the following example, the new WPF application is created in the name 
 
 
 
-{ ![Description: sshot-5.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img6.png) | markdownify }
+{{ '![Description: sshot-5.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -72,7 +72,7 @@ _Note: In the following example, the new WPF application is created in the name 
 
 
 
-{ ![Description: sshot-6.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img7.png) | markdownify }
+{{ '![Description: sshot-6.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -88,13 +88,13 @@ _Note: In the following example, the new WPF application is created in the name 
 
 
 
-{ ![Description: sshot-7.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img8.png) | markdownify }
+{{ '![Description: sshot-7.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img8.png)' | markdownify }}
 {:.image }
 
 
 9. Select the required object and click Next. The Data Source Configuration Wizard opens.
 
-{ ![Description: sshot-8.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img9.png) | markdownify }
+{{ '![Description: sshot-8.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -103,7 +103,7 @@ _Note: In the following example, the new WPF application is created in the name 
 
 
 
-{ ![Description: sshot-9.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img10.png) | markdownify }
+{{ '![Description: sshot-9.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -112,7 +112,7 @@ _Note: In the following example, the new WPF application is created in the name 
 
 
 
-{ ![Description: sshot-10.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img11.png) | markdownify }
+{{ '![Description: sshot-10.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -124,7 +124,7 @@ _Note: In the following example, the new WPF application is created in the name 
 
 > 
 
-{ ![Description: sshot-add.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img12.png) | markdownify }
+{{ '![Description: sshot-add.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -132,7 +132,7 @@ _Note: In the following example, the new WPF application is created in the name 
 
 
 
-{ ![Description: sshot-11.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img13.png) | markdownify }
+{{ '![Description: sshot-11.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -140,7 +140,7 @@ _Note: In the following example, the new WPF application is created in the name 
 
 
 
-{ ![Description: sshot-1.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img14.png) | markdownify }
+{{ '![Description: sshot-1.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -150,7 +150,7 @@ _Note: In the following example, the new WPF application is created in the name 
 
 
 
-{ ![Description: sshot-12.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img15.png) | markdownify }
+{{ '![Description: sshot-12.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -160,7 +160,7 @@ _Note: In the following example, the new WPF application is created in the name 
 
 
 
-{ ![Description: sshot-13.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img16.png) | markdownify }
+{{ '![Description: sshot-13.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -168,7 +168,7 @@ _Note: In the following example, the new WPF application is created in the name 
 
 > 
 
-{ ![Description: sshot-14.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img17.png) | markdownify }
+{{ '![Description: sshot-14.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -184,13 +184,13 @@ _Note: In the following example, the new WPF application is created in the name 
 
         Title="MainWindow" Height="350" Width="525" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
-    &lt;Grid &gt;
+    <Grid >
 
-        &lt;syncfusion:ReportViewer Name="reportViewer1" ProcessingMode="Local" ReportPath="..\..\SampleReport.rdlc" /&gt;
+        <syncfusion:ReportViewer Name="reportViewer1" ProcessingMode="Local" ReportPath="..\..\SampleReport.rdlc" />
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -236,7 +236,7 @@ void MainWindow_Loaded(object sender, RoutedEventArgs e)
 
 
 
-{ ![Description: sshot-15.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img18.png) | markdownify }
+{{ '![Description: sshot-15.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img18.png)' | markdownify }}
 {:.image }
 
 

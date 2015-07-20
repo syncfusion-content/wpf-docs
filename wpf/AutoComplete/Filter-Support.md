@@ -11,7 +11,7 @@ documentation: ug
 
 Filter support is used to filter the matched list of items from the linked source depending on the text entered in the AutoComplete textbox. AutoComplete allows the user to enable Filter the items using IsFilter property.
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Filter-Support_images/Filter-Support_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Filter-Support_images/Filter-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -27,7 +27,7 @@ If the IsFilter property is set as True, once you enter text in the AutoComplete
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:AutoComplete x:Name="AutoComplete1" IsFilter="true"/&gt;</td></tr>
+[XAML]<syncfusion:AutoComplete x:Name="AutoComplete1" IsFilter="true"/></td></tr>
 <tr>
 <td>
 [C#]AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsFilter = true;</td></tr>

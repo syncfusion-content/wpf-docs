@@ -59,7 +59,7 @@ The following screenshot displays you the elements in SfDataGrid.
 
 
 
-{ ![2](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![2](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -74,7 +74,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -277,11 +277,11 @@ public class OrderInfoRepositiory
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-       &lt;local:OrderInfoRepositiory /&gt;
+       <local:OrderInfoRepositiory />
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -295,7 +295,7 @@ You can bind the data using the following code example.
 
 
 
-&lt;syncfusion:SfDataGrid ColumnSizer="Auto" ItemsSource="{Binding OrderInfoCollection}" /&gt;
+<syncfusion:SfDataGrid ColumnSizer="Auto" ItemsSource="{Binding OrderInfoCollection}" />
 
 
 
@@ -309,11 +309,11 @@ To set the data context using Resource, you can refer the following code example
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-    &lt;local:OrderInfoRepositiory x:Key="data" /&gt;
+    <local:OrderInfoRepositiory x:Key="data" />
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -325,7 +325,7 @@ You can bind the data using the following code example.
 
 [XAML]
 
-&lt;syncfusion:SfDataGrid ColumnSizer="Auto" ItemsSource="{Binding OrderInfoCollection, Source={StaticResource data}}" /&gt;
+<syncfusion:SfDataGrid ColumnSizer="Auto" ItemsSource="{Binding OrderInfoCollection, Source={StaticResource data}}" />
 
 
 
@@ -336,7 +336,7 @@ You can bind the data using the following code example.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -358,19 +358,19 @@ _Data Grid_
 
                        ItemsSource="{Binding OrderInfoCollection}">
 
-    &lt;syncfusion:SfDataGrid.Columns&gt;
+    <syncfusion:SfDataGrid.Columns>
 
-        &lt;syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" /&gt;
+        <syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID" />
 
-        &lt;syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" /&gt;
+        <syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" />
 
-        &lt;syncfusion:GridTextColumn HeaderText="Ship Country" MappingName="ShipCountry" /&gt;
+        <syncfusion:GridTextColumn HeaderText="Ship Country" MappingName="ShipCountry" />
 
-        &lt;syncfusion:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" /&gt;
+        <syncfusion:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
 
-    &lt;/syncfusion:SfDataGrid.Columns&gt;
+    </syncfusion:SfDataGrid.Columns>
 
-&lt;/syncfusion:SfDataGrid&gt;
+</syncfusion:SfDataGrid>
 
 
 
@@ -380,7 +380,7 @@ _Data Grid_
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -410,7 +410,7 @@ _Data Grid_
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -438,7 +438,7 @@ _DataGrid with ShowGroupDropArea and AllowGrouping enabled_
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -466,7 +466,7 @@ _DataGrid with AllowSorting property set to true_
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -478,7 +478,7 @@ _DataGrid Header loaded with filter toggle button_
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -818,13 +818,13 @@ public class OrderInfoRepositiory
 
 
 
-    &lt;Window.DataContext&gt;
+    <Window.DataContext>
 
-        &lt;local:OrderInfoRepositiory /&gt;
+        <local:OrderInfoRepositiory />
 
-    &lt;/Window.DataContext&gt;
+    </Window.DataContext>
 
-    &lt;Grid&gt;
+    <Grid>
 
         <syncfusion:SfDataGrid AutoGenerateColumns="True"
 
@@ -832,17 +832,17 @@ public class OrderInfoRepositiory
 
                                ItemsSource="{Binding OrderInfoCollection}">
 
-            &lt;syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+            <syncfusion:SfDataGrid.DetailsViewDefinition>
 
-                &lt;syncfusion:GridViewDefinition RelationalColumn="ProductDetails" /&gt;
+                <syncfusion:GridViewDefinition RelationalColumn="ProductDetails" />
 
-            &lt;/syncfusion:SfDataGrid.DetailsViewDefinition&gt;
+            </syncfusion:SfDataGrid.DetailsViewDefinition>
 
-        &lt;/syncfusion:SfDataGrid&gt;
+        </syncfusion:SfDataGrid>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -850,7 +850,7 @@ public class OrderInfoRepositiory
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 

@@ -29,7 +29,7 @@ Tree map-like support provides rich UI for shapes and bubbles. Annotation and Cu
 
 Options like zooming, panning, and map selection extend the interactivity of the map.
 
-{ ![C:/Users/karthikeyanp/Desktop/UGPics/RangeColor.png](Overview_images/Overview_img1.png) | markdownify }
+{{ '![C:/Users/karthikeyanp/Desktop/UGPics/RangeColor.png](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 

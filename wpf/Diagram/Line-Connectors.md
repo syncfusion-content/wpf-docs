@@ -13,7 +13,7 @@ Connectors are objects that are used to create a link between two nodes. Each co
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img1.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -338,7 +338,7 @@ AutoAdjustPoints enables the Orthogonal LineConnector to adjust the intermediate
 
 
 
-{ ![Description: C:/Users/jeganr/Desktop/ug/segment1.png](Line-Connectors_images/Line-Connectors_img2.png) | markdownify }
+{{ '![Description: C:/Users/jeganr/Desktop/ug/segment1.png](Line-Connectors_images/Line-Connectors_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -568,7 +568,7 @@ No</td></tr>
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img3.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -576,7 +576,7 @@ No</td></tr>
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img4.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -584,7 +584,7 @@ No</td></tr>
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img5.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -596,7 +596,7 @@ It is also possible to drag-and-drop line connectors from the SymbolPalette. Thr
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img6.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -604,7 +604,7 @@ It is also possible to drag-and-drop line connectors from the SymbolPalette. Thr
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img7.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -612,7 +612,7 @@ It is also possible to drag-and-drop line connectors from the SymbolPalette. Thr
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img8.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -702,7 +702,7 @@ This creates a connection between the two specified nodes.
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img9.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -921,7 +921,7 @@ diagramModel.Connections.Add(l1)
 
 
 
-{ ![Description: C:/Users/jeganr/Desktop/New Images/New Images/ConnectorTypes.png](Line-Connectors_images/Line-Connectors_img10.png) | markdownify }
+{{ '![Description: C:/Users/jeganr/Desktop/New Images/New Images/ConnectorTypes.png](Line-Connectors_images/Line-Connectors_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -1017,11 +1017,11 @@ diagramModel1.Connections.Add(l)
 
 
 
-{ ![Description: C:/Users/jeganr/Desktop/New Images/New Images/ArcHeight.png](Line-Connectors_images/Line-Connectors_img11.png) | markdownify }
+{{ '![Description: C:/Users/jeganr/Desktop/New Images/New Images/ArcHeight.png](Line-Connectors_images/Line-Connectors_img11.png)' | markdownify }}
 {:.image }
 
 
-{ ![Description: C:/Users/jeganr/Desktop/New Images/New Images/ArcDirection.png](Line-Connectors_images/Line-Connectors_img12.png) | markdownify }
+{{ '![Description: C:/Users/jeganr/Desktop/New Images/New Images/ArcDirection.png](Line-Connectors_images/Line-Connectors_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -1055,7 +1055,7 @@ Straight line connectors can be used as poly line by using IntermediatePoints pr
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img13.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1065,7 +1065,7 @@ Orthogonal lines can have more than two intermediate points. All these Intermedi
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img14.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1122,7 +1122,7 @@ lc.IntermediatePoints.Add(New Point(200,300))
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img15.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1179,7 +1179,7 @@ lc.IntermediatePoints(1) = New Point(200,200))
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img16.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img16.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1234,7 +1234,7 @@ lc.IntermediatePoints.RemoveAt(1)
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img17.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img17.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1266,55 +1266,55 @@ No</td></tr>
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-        &lt;ResourceDictionary&gt;
+        <ResourceDictionary>
 
-&lt;Style x:Key="vertexStyle" TargetType="{x:Type Thumb}"&gt;
+<Style x:Key="vertexStyle" TargetType="{x:Type Thumb}">
 
-                &lt;Setter Property="Width" Value="7"/&gt;
+                <Setter Property="Width" Value="7"/>
 
-                &lt;Setter Property="Height" Value="7"/&gt;
+                <Setter Property="Height" Value="7"/>
 
-                &lt;Setter Property="SnapsToDevicePixels" Value="true"/&gt;
+                <Setter Property="SnapsToDevicePixels" Value="true"/>
 
-                &lt;Setter Property="RenderTransform"&gt;
+                <Setter Property="RenderTransform">
 
-                    &lt;Setter.Value&gt;
+                    <Setter.Value>
 
-                        &lt;TranslateTransform X="-3" Y="-3"/&gt;
+                        <TranslateTransform X="-3" Y="-3"/>
 
-                    &lt;/Setter.Value&gt;
+                    </Setter.Value>
 
-                &lt;/Setter&gt;
+                </Setter>
 
-                &lt;Setter Property="Template"&gt;
+                <Setter Property="Template">
 
-                    &lt;Setter.Value&gt;
+                    <Setter.Value>
 
-                        &lt;ControlTemplate TargetType="{x:Type Thumb}"&gt;
+                        <ControlTemplate TargetType="{x:Type Thumb}">
 
-                            &lt;Rectangle RenderTransformOrigin="0.5,0.5" Fill="Beige"  Stroke="Black"  StrokeThickness="1" RadiusX="0" RadiusY="0"&gt;
+                            <Rectangle RenderTransformOrigin="0.5,0.5" Fill="Beige"  Stroke="Black"  StrokeThickness="1" RadiusX="0" RadiusY="0">
 
-                                &lt;Rectangle.RenderTransform&gt;
+                                <Rectangle.RenderTransform>
 
-                                    &lt;RotateTransform Angle="45"/&gt;
+                                    <RotateTransform Angle="45"/>
 
-                                &lt;/Rectangle.RenderTransform&gt;
+                                </Rectangle.RenderTransform>
 
-                            &lt;/Rectangle&gt;
+                            </Rectangle>
 
-                        &lt;/ControlTemplate&gt;
+                        </ControlTemplate>
 
-                    &lt;/Setter.Value&gt;
+                    </Setter.Value>
 
-                &lt;/Setter&gt;
+                </Setter>
 
-            &lt;/Style&gt;
+            </Style>
 
-        &lt;/ResourceDictionary&gt;
+        </ResourceDictionary>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
 
 
@@ -1358,7 +1358,7 @@ lc.VertexStyle = TryCast(Me.Resources("vertexStyle"), Style)
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img18.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img18.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1390,39 +1390,39 @@ No</td></tr>
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-        &lt;ResourceDictionary&gt;
+        <ResourceDictionary>
 
-&lt;Style x:Key="decrator" TargetType="{x:Type Thumb}"&gt;
+<Style x:Key="decrator" TargetType="{x:Type Thumb}">
 
-                &lt;Setter Property="Width" Value="14"/&gt;
+                <Setter Property="Width" Value="14"/>
 
-                &lt;Setter Property="Height" Value="14"/&gt;
+                <Setter Property="Height" Value="14"/>
 
-                &lt;Setter Property="SnapsToDevicePixels" Value="true"/&gt;
+                <Setter Property="SnapsToDevicePixels" Value="true"/>
 
-                &lt;Setter Property="Template"&gt;
+                <Setter Property="Template">
 
-                    &lt;Setter.Value&gt;
+                    <Setter.Value>
 
-                        &lt;ControlTemplate TargetType="{x:Type Thumb}"&gt;
+                        <ControlTemplate TargetType="{x:Type Thumb}">
 
-                            &lt;Rectangle Fill="#66F5F5DC" Stroke="Black"  StrokeThickness="1" RadiusX="0" RadiusY="0"/&gt;
+                            <Rectangle Fill="#66F5F5DC" Stroke="Black"  StrokeThickness="1" RadiusX="0" RadiusY="0"/>
 
-                        &lt;/ControlTemplate&gt;
+                        </ControlTemplate>
 
-                    &lt;/Setter.Value&gt;
+                    </Setter.Value>
 
-                &lt;/Setter&gt;
+                </Setter>
 
-            &lt;/Style&gt;
+            </Style>
 
 
 
-        &lt;/ResourceDictionary&gt;
+        </ResourceDictionary>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
 
 
@@ -1466,7 +1466,7 @@ lc.DecoratorAdornerStyle = TryCast(Me.Resources("decorator"), Style)
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img19.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img19.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1534,7 +1534,7 @@ lc.IsVertexVisible = False
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img20.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img20.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1715,7 +1715,7 @@ diagramModel.Connections.Add(l1)
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img21.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img21.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1738,21 +1738,21 @@ HeadDecoratorShape and TailDecoratorShape can be customized by defining a requir
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;Style TargetType="{x:Type Path}" x:Key="Deco1"&gt;
+<Style TargetType="{x:Type Path}" x:Key="Deco1">
 
-            &lt;Setter Property="Data" Value="M 9,2 11,7 17,7 12,10 14,15 9,12 4,15 6,10 1,7 7,7 Z"&gt;&lt;/Setter&gt;
+            <Setter Property="Data" Value="M 9,2 11,7 17,7 12,10 14,15 9,12 4,15 6,10 1,7 7,7 Z"></Setter>
 
-            &lt;Setter Property="Width" Value="20"/&gt;
+            <Setter Property="Width" Value="20"/>
 
-            &lt;Setter Property="Fill" Value="MidnightBlue" /&gt;
+            <Setter Property="Fill" Value="MidnightBlue" />
 
-            &lt;Setter Property="Height" Value="20"/&gt;
+            <Setter Property="Height" Value="20"/>
 
-        &lt;/Style&gt;
+        </Style>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -1760,7 +1760,7 @@ HeadDecoratorShape and TailDecoratorShape can be customized by defining a requir
 
 
 
-&lt;syncfusion:LineConnector ConnectorType="Bezier"  Label="Line1" LabelWidth="50" IsSelected="True" StartPointPosition="100,400" EndPointPosition="100,500" HeadDecoratorShape="Custom" CustomHeadDecoratorStyle="{StaticResource Deco1}"/&gt;
+<syncfusion:LineConnector ConnectorType="Bezier"  Label="Line1" LabelWidth="50" IsSelected="True" StartPointPosition="100,400" EndPointPosition="100,500" HeadDecoratorShape="Custom" CustomHeadDecoratorStyle="{StaticResource Deco1}"/>
 
 
 
@@ -1804,7 +1804,7 @@ diagramModel.Connections.Add(l1)
 
 
 
-{ ![Description: C:/Users/karthikeyanp/Pictures/images/customhead.png](Line-Connectors_images/Line-Connectors_img22.png) | markdownify }
+{{ '![Description: C:/Users/karthikeyanp/Pictures/images/customhead.png](Line-Connectors_images/Line-Connectors_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -1814,21 +1814,21 @@ diagramModel.Connections.Add(l1)
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;Style TargetType="{x:Type Path}" x:Key="Deco1"&gt;
+<Style TargetType="{x:Type Path}" x:Key="Deco1">
 
-            &lt;Setter Property="Data" Value="M 9,2 11,7 17,7 12,10 14,15 9,12 4,15 6,10 1,7 7,7 Z"&gt;&lt;/Setter&gt;
+            <Setter Property="Data" Value="M 9,2 11,7 17,7 12,10 14,15 9,12 4,15 6,10 1,7 7,7 Z"></Setter>
 
-            &lt;Setter Property="Width" Value="20"/&gt;
+            <Setter Property="Width" Value="20"/>
 
-            &lt;Setter Property="Fill" Value="MidnightBlue" /&gt;
+            <Setter Property="Fill" Value="MidnightBlue" />
 
-            &lt;Setter Property="Height" Value="20"/&gt;
+            <Setter Property="Height" Value="20"/>
 
-        &lt;/Style&gt;
+        </Style>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -1836,7 +1836,7 @@ diagramModel.Connections.Add(l1)
 
 
 
-&lt;syncfusion:LineConnector ConnectorType="Orthogonal” Name="Line1" LabelWidth="50" IsSelected="True" StartPointPosition="100,400" EndPointPosition="100,500" TailDecoratorShape="Custom" CustomTailDecoratorStyle="{StaticResource Deco1}"/&gt;
+<syncfusion:LineConnector ConnectorType="Orthogonal” Name="Line1" LabelWidth="50" IsSelected="True" StartPointPosition="100,400" EndPointPosition="100,500" TailDecoratorShape="Custom" CustomTailDecoratorStyle="{StaticResource Deco1}"/>
 
 
 
@@ -1880,7 +1880,7 @@ diagramModel.Connections.Add(l1)
 
 
 
-{ ![Description: C:/Users/karthikeyanp/Pictures/images/customtailDecoratorstyle.png](Line-Connectors_images/Line-Connectors_img23.png) | markdownify }
+{{ '![Description: C:/Users/karthikeyanp/Pictures/images/customtailDecoratorstyle.png](Line-Connectors_images/Line-Connectors_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -1960,7 +1960,7 @@ diagramModel.Connections.Add(line1)
 
 
 
-{ ![Description: C:/Users/karthikeyanp/Pictures/images/headdeco.png](Line-Connectors_images/Line-Connectors_img24.png) | markdownify }
+{{ '![Description: C:/Users/karthikeyanp/Pictures/images/headdeco.png](Line-Connectors_images/Line-Connectors_img24.png)' | markdownify }}
 {:.image }
 
 
@@ -2038,7 +2038,7 @@ diagramModel.Connections.Add(line1)
 
 
 
-{ ![Description: C:/Users/karthikeyanp/Pictures/images/taildeco.png](Line-Connectors_images/Line-Connectors_img25.png) | markdownify }
+{{ '![Description: C:/Users/karthikeyanp/Pictures/images/taildeco.png](Line-Connectors_images/Line-Connectors_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -2102,31 +2102,31 @@ Through XAML
 
 [XAML]
 
-&lt;syncfusion:LineConnector.SegmentDecoratorSettings&gt;
+<syncfusion:LineConnector.SegmentDecoratorSettings>
 
-   &lt;syncfusion:SegmentDecoratorSettings Unit="RelativeFraction"&gt;
+   <syncfusion:SegmentDecoratorSettings Unit="RelativeFraction">
 
-      &lt;syncfusion:SegmentDecoratorSettings.SegmentDecorator&gt;
+      <syncfusion:SegmentDecoratorSettings.SegmentDecorator>
 
-         &lt;syncfusion:CollectionExt&gt;
-
-
-
-          &lt;syncfusion:SegmentDecorator DecoratorOffset="0.2" DecoratorShape="Arrow" /&gt;
+         <syncfusion:CollectionExt>
 
 
 
-          &lt;syncfusion:SegmentDecorator DecoratorOffset="0.5" DecoratorShape="Diamond"/&gt;
+          <syncfusion:SegmentDecorator DecoratorOffset="0.2" DecoratorShape="Arrow" />
 
 
 
-         &lt;/syncfusion:CollectionExt&gt;
+          <syncfusion:SegmentDecorator DecoratorOffset="0.5" DecoratorShape="Diamond"/>
 
-      &lt;/syncfusion:SegmentDecoratorSettings.SegmentDecorator&gt; 
 
-     &lt;/syncfusion:SegmentDecoratorSettings&gt;
 
-&lt;/syncfusion:LineConnector.SegmentDecoratorSettings&gt;
+         </syncfusion:CollectionExt>
+
+      </syncfusion:SegmentDecoratorSettings.SegmentDecorator> 
+
+     </syncfusion:SegmentDecoratorSettings>
+
+</syncfusion:LineConnector.SegmentDecoratorSettings>
 
 
 
@@ -2190,23 +2190,23 @@ To set the same Style and Shape for the entire Line segment
 
 [XAML]
 
-  &lt;syncfusion:SegmentDecoratorSettings.CustomDecoratorStyle&gt;
+  <syncfusion:SegmentDecoratorSettings.CustomDecoratorStyle>
 
-      &lt;Style TargetType="Path"&gt;
+      <Style TargetType="Path">
 
-          &lt;Setter Property="Stretch" Value="Fill"/&gt;
+          <Setter Property="Stretch" Value="Fill"/>
 
-          &lt;Setter Property="Fill" Value="Red"/&gt;
+          <Setter Property="Fill" Value="Red"/>
 
-          &lt;Setter Property="Width" Value="15"/&gt;
+          <Setter Property="Width" Value="15"/>
 
-          &lt;Setter Property="Height" Value="15"/&gt;
+          <Setter Property="Height" Value="15"/>
 
-          &lt;Setter Property="Stroke" Value="Black"/&gt;
+          <Setter Property="Stroke" Value="Black"/>
 
-          &lt;Setter Property="StrokeThickness" Value="2"/&gt;
+          <Setter Property="StrokeThickness" Value="2"/>
 
-       &lt;/Style&gt;                 &lt;/syncfusion:SegmentDecoratorSettings.CustomDecoratorStyle&gt;
+       </Style>                 </syncfusion:SegmentDecoratorSettings.CustomDecoratorStyle>
 
 
 
@@ -2246,17 +2246,17 @@ To set different shapes and styles to the line segment
 
 [XAML]
 
-&lt;syncfusion:SegmentDecoratorSettings.SegmentDecorator&gt;
+<syncfusion:SegmentDecoratorSettings.SegmentDecorator>
 
-&lt;syncfusion:CollectionExt&gt;
+<syncfusion:CollectionExt>
 
-&lt;syncfusion:SegmentDecorator DecoratorOffset="0.2" DecoratorShape="Arrow" CustomDecoratorStyle="{StaticResource de}" /&gt;
+<syncfusion:SegmentDecorator DecoratorOffset="0.2" DecoratorShape="Arrow" CustomDecoratorStyle="{StaticResource de}" />
 
-&lt;syncfusion:SegmentDecorator DecoratorOffset="0.5" DecoratorShape="Diamond"/&gt;
+<syncfusion:SegmentDecorator DecoratorOffset="0.5" DecoratorShape="Diamond"/>
 
-&lt;/syncfusion:CollectionExt&gt;
+</syncfusion:CollectionExt>
 
-&lt;/syncfusion:SegmentDecoratorSettings.SegmentDecorator&gt;
+</syncfusion:SegmentDecoratorSettings.SegmentDecorator>
 
 
 
@@ -2296,7 +2296,7 @@ Appearance
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img26.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img26.png)' | markdownify }}
 {:.image }
 
 
@@ -2304,31 +2304,31 @@ Appearance
 
 [XAML]
 
-&lt;syncfusion:LineConnector.SegmentDecoratorSettings&gt;
+<syncfusion:LineConnector.SegmentDecoratorSettings>
 
-   &lt;syncfusion:SegmentDecoratorSettings Unit="AbsoluteFraction"&gt;
+   <syncfusion:SegmentDecoratorSettings Unit="AbsoluteFraction">
 
-&lt;syncfusion:SegmentDecoratorSettings.SegmentDecorator&gt;
+<syncfusion:SegmentDecoratorSettings.SegmentDecorator>
 
-  &lt;syncfusion:CollectionExt&gt;
+  <syncfusion:CollectionExt>
 
-      &lt;syncfusion:SegmentDecorator DecoratorOffset="0.25" DecoratorShape="Arrow" /&gt;
+      <syncfusion:SegmentDecorator DecoratorOffset="0.25" DecoratorShape="Arrow" />
 
-     &lt;syncfusion:SegmentDecorator DecoratorOffset="0.5" DecoratorShape="Diamond"/&gt;
+     <syncfusion:SegmentDecorator DecoratorOffset="0.5" DecoratorShape="Diamond"/>
 
-     &lt;/syncfusion:CollectionExt&gt;
+     </syncfusion:CollectionExt>
 
-  &lt;/syncfusion:SegmentDecoratorSettings.SegmentDecorator&gt;
+  </syncfusion:SegmentDecoratorSettings.SegmentDecorator>
 
-&lt;/syncfusion:SegmentDecoratorSettings&gt;
+</syncfusion:SegmentDecoratorSettings>
 
-&lt;/syncfusion:LineConnector.SegmentDecoratorSettings&gt;
-
-
+</syncfusion:LineConnector.SegmentDecoratorSettings>
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img27.png) | markdownify }
+
+
+{{ '![](Line-Connectors_images/Line-Connectors_img27.png)' | markdownify }}
 {:.image }
 
 
@@ -2336,31 +2336,31 @@ Appearance
 
 [XAML]
 
-&lt;syncfusion:LineConnector.SegmentDecoratorSettings&gt;
+<syncfusion:LineConnector.SegmentDecoratorSettings>
 
-   &lt;syncfusion:SegmentDecoratorSettings Unit="RelativeFraction"&gt;
+   <syncfusion:SegmentDecoratorSettings Unit="RelativeFraction">
 
-&lt;syncfusion:SegmentDecoratorSettings.SegmentDecorator&gt;
+<syncfusion:SegmentDecoratorSettings.SegmentDecorator>
 
-  &lt;syncfusion:CollectionExt&gt;
+  <syncfusion:CollectionExt>
 
-      &lt;syncfusion:SegmentDecorator DecoratorOffset="0.25" DecoratorShape="Arrow" /&gt;
+      <syncfusion:SegmentDecorator DecoratorOffset="0.25" DecoratorShape="Arrow" />
 
-     &lt;syncfusion:SegmentDecorator DecoratorOffset="0.5" DecoratorShape="Diamond"/&gt;
+     <syncfusion:SegmentDecorator DecoratorOffset="0.5" DecoratorShape="Diamond"/>
 
-     &lt;/syncfusion:CollectionExt&gt;
+     </syncfusion:CollectionExt>
 
-  &lt;/syncfusion:SegmentDecoratorSettings.SegmentDecorator&gt;
+  </syncfusion:SegmentDecoratorSettings.SegmentDecorator>
 
-&lt;/syncfusion:SegmentDecoratorSettings&gt;
+</syncfusion:SegmentDecoratorSettings>
 
-&lt;/syncfusion:LineConnector.SegmentDecoratorSettings&gt;
-
-
+</syncfusion:LineConnector.SegmentDecoratorSettings>
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img28.png) | markdownify }
+
+
+{{ '![](Line-Connectors_images/Line-Connectors_img28.png)' | markdownify }}
 {:.image }
 
 
@@ -2368,31 +2368,31 @@ Appearance
 
 [XAML]
 
-&lt;syncfusion:LineConnector.SegmentDecoratorSettings&gt;
+<syncfusion:LineConnector.SegmentDecoratorSettings>
 
-   &lt;syncfusion:SegmentDecoratorSettings Unit="AbsoluteValue"&gt;
+   <syncfusion:SegmentDecoratorSettings Unit="AbsoluteValue">
 
-&lt;syncfusion:SegmentDecoratorSettings.SegmentDecorator&gt;
+<syncfusion:SegmentDecoratorSettings.SegmentDecorator>
 
-  &lt;syncfusion:CollectionExt&gt;
+  <syncfusion:CollectionExt>
 
-      &lt;syncfusion:SegmentDecorator DecoratorOffset="25" DecoratorShape="Arrow" /&gt;
+      <syncfusion:SegmentDecorator DecoratorOffset="25" DecoratorShape="Arrow" />
 
-     &lt;syncfusion:SegmentDecorator DecoratorOffset="50" DecoratorShape="Diamond"/&gt;
+     <syncfusion:SegmentDecorator DecoratorOffset="50" DecoratorShape="Diamond"/>
 
-     &lt;/syncfusion:CollectionExt&gt;
+     </syncfusion:CollectionExt>
 
-  &lt;/syncfusion:SegmentDecoratorSettings.SegmentDecorator&gt;
+  </syncfusion:SegmentDecoratorSettings.SegmentDecorator>
 
-&lt;/syncfusion:SegmentDecoratorSettings&gt;
+</syncfusion:SegmentDecoratorSettings>
 
-&lt;/syncfusion:LineConnector.SegmentDecoratorSettings&gt;
-
-
+</syncfusion:LineConnector.SegmentDecoratorSettings>
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img29.png) | markdownify }
+
+
+{{ '![](Line-Connectors_images/Line-Connectors_img29.png)' | markdownify }}
 {:.image }
 
 
@@ -2400,25 +2400,25 @@ Appearance
 
 [XAML]
 
-&lt;syncfusion:LineConnector.SegmentDecoratorSettings&gt;
+<syncfusion:LineConnector.SegmentDecoratorSettings>
 
-   &lt;syncfusion:SegmentDecoratorSettings Unit="RelativeValue"&gt;
+   <syncfusion:SegmentDecoratorSettings Unit="RelativeValue">
 
-&lt;syncfusion:SegmentDecoratorSettings.SegmentDecorator&gt;
+<syncfusion:SegmentDecoratorSettings.SegmentDecorator>
 
-  &lt;syncfusion:CollectionExt&gt;
+  <syncfusion:CollectionExt>
 
-      &lt;syncfusion:SegmentDecorator DecoratorOffset="25" DecoratorShape="Arrow" /&gt;
+      <syncfusion:SegmentDecorator DecoratorOffset="25" DecoratorShape="Arrow" />
 
-     &lt;syncfusion:SegmentDecorator DecoratorOffset="50" DecoratorShape="Diamond"/&gt;
+     <syncfusion:SegmentDecorator DecoratorOffset="50" DecoratorShape="Diamond"/>
 
-     &lt;/syncfusion:CollectionExt&gt;
+     </syncfusion:CollectionExt>
 
-  &lt;/syncfusion:SegmentDecoratorSettings.SegmentDecorator&gt;
+  </syncfusion:SegmentDecoratorSettings.SegmentDecorator>
 
-&lt;/syncfusion:SegmentDecoratorSettings&gt;
+</syncfusion:SegmentDecoratorSettings>
 
-&lt;/syncfusion:LineConnector.SegmentDecoratorSettings&gt;
+</syncfusion:LineConnector.SegmentDecoratorSettings>
 
 
 
@@ -2487,7 +2487,7 @@ diagramModel.Connections.Add(l1)
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img30.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img30.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2527,33 +2527,33 @@ Appearance of the LineConnector can be customized by applying style for the Cust
 
 [XAML]
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-&lt;Style TargetType="{x:Type Path}" x:Key="Deco1"&gt;
+<Style TargetType="{x:Type Path}" x:Key="Deco1">
 
-            &lt;Setter Property="Stroke" Value="Red" /&gt;                        
+            <Setter Property="Stroke" Value="Red" />                        
 
-&lt;/Style&gt;
+</Style>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
-         &lt;Style TargetType="{x:Type syncfusion:LineConnector}"  &gt;
+         <Style TargetType="{x:Type syncfusion:LineConnector}"  >
 
-            &lt;Setter Property="HeadDecoratorShape"  Value="Diamond" /&gt;
+            <Setter Property="HeadDecoratorShape"  Value="Diamond" />
 
-            &lt;Setter Property="TailDecoratorShape" Value="Diamond"/&gt; 
+            <Setter Property="TailDecoratorShape" Value="Diamond"/> 
 
-            &lt;!--set the stroke color--&gt;
+            <!--set the stroke color-->
 
             <Setter Property="CustomPathStyle" 
 
 				Value ="{StaticResource Deco1}>                
 
-            &lt;/Setter&gt;            
+            </Setter>            
 
-         &lt;/Style&gt;
+         </Style>
 
 
 
@@ -2597,7 +2597,7 @@ diagramModel.Connections.Add(l1)
 
 
 
-{ ![Description: C:/Users/sundarm/Desktop/line.PNG](Line-Connectors_images/Line-Connectors_img31.png) | markdownify }
+{{ '![Description: C:/Users/sundarm/Desktop/line.PNG](Line-Connectors_images/Line-Connectors_img31.png)' | markdownify }}
 {:.image }
 
 
@@ -2659,7 +2659,7 @@ diagramModel.Connections.Add(l1)
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img32.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img32.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2724,7 +2724,7 @@ line.FirstSegmentOrientation = SegmentOrientation.Auto
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img33.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img33.png)' | markdownify }}
 {:.image }
 
 
@@ -2749,7 +2749,7 @@ line.FirstSegmentOrientation = SegmentOrientation.Horizontal
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img34.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img34.png)' | markdownify }}
 {:.image }
 
 
@@ -2774,7 +2774,7 @@ line.FirstSegmentOrientation = SegmentOrientation.Vertical
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img35.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img35.png)' | markdownify }}
 {:.image }
 
 
@@ -2954,7 +2954,7 @@ diagramModel.Connections.Add(l1)
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img36.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img36.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2968,21 +2968,21 @@ Create a DataTemplate and add the resource “text.png” to your application.
 
 [XAML]
 
-&lt;DataTemplate x:Key="LabelCustomTemplate"&gt;
+<DataTemplate x:Key="LabelCustomTemplate">
 
-   &lt;StackPanel Orientation="Horizontal"&gt;
+   <StackPanel Orientation="Horizontal">
 
-       &lt;Image Source="text.png" Width="20" Height="20"/&gt;
+       <Image Source="text.png" Width="20" Height="20"/>
 
-       &lt;Border Background="AliceBlue"&gt;
+       <Border Background="AliceBlue">
 
-         &lt;TextBlock Text="Hello"/&gt;
+         <TextBlock Text="Hello"/>
 
-       &lt;/Border&gt;
+       </Border>
 
-   &lt;/StackPanel&gt;
+   </StackPanel>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
@@ -3040,7 +3040,7 @@ diagramModel.Connections.Add(l1)
 
 The following screenshot illustrates "Hello" text on an Alice Blue background with an image on the left.
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image29_92.jpg](Line-Connectors_images/Line-Connectors_img37.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image29_92.jpg](Line-Connectors_images/Line-Connectors_img37.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3082,7 +3082,7 @@ l.IsLabelEditable = True
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img38.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img38.png)' | markdownify }}
 {:.image }
 
 
@@ -3123,7 +3123,7 @@ You can specify a label at run time by following the below mentioned steps.
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img39.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img39.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3207,7 +3207,7 @@ diagramModel.Connections.Add(line1)
 
 
 
-{ ![Description: C:/Users/karthikeyanp/Pictures/images/enablemultilinelabel-lc.png](Line-Connectors_images/Line-Connectors_img40.png) | markdownify }
+{{ '![Description: C:/Users/karthikeyanp/Pictures/images/enablemultilinelabel-lc.png](Line-Connectors_images/Line-Connectors_img40.png)' | markdownify }}
 {:.image }
 
 
@@ -3362,7 +3362,7 @@ line.LabelOrientation = Syncfusion.Windows.Diagram.LabelOrientation.Auto
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img41.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img41.png)' | markdownify }}
 {:.image }
 
 
@@ -3385,7 +3385,7 @@ LineConnector line = new LineConnector();
 line.LabelOrientation = Syncfusion.Windows.Diagram.LabelOrientation.Horizontal;
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img42.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img42.png)' | markdownify }}
 {:.image }
 
 
@@ -3409,7 +3409,7 @@ line.LabelOrientation = Syncfusion.Windows.Diagram.LabelOrientation.Vertical
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img43.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img43.png)' | markdownify }}
 {:.image }
 
 
@@ -3461,7 +3461,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlign
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img44.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img44.png)' | markdownify }}
 {:.image }
 
 
@@ -3489,7 +3489,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlign
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img45.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img45.png)' | markdownify }}
 {:.image }
 
 
@@ -3517,7 +3517,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlign
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img46.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img46.png)' | markdownify }}
 {:.image }
 
 
@@ -3545,7 +3545,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlign
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img47.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img47.png)' | markdownify }}
 {:.image }
 
 
@@ -3601,7 +3601,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientatio
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img48.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img48.png)' | markdownify }}
 {:.image }
 
 
@@ -3629,7 +3629,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientatio
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img49.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img49.png)' | markdownify }}
 {:.image }
 
 
@@ -3657,7 +3657,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientatio
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img50.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img50.png)' | markdownify }}
 {:.image }
 
 
@@ -3691,7 +3691,7 @@ Only Straight and Orthogonal Connector type supports line bridging.
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img51.jpeg) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img51.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3815,7 +3815,7 @@ Example1: Draw an invisible segment, by setting IsStroked to false.
 
 
 
-{ ![C:/Users/saranya/Desktop/style.jpg](Line-Connectors_images/Line-Connectors_img52.jpeg) | markdownify }
+{{ '![C:/Users/saranya/Desktop/style.jpg](Line-Connectors_images/Line-Connectors_img52.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -3867,7 +3867,7 @@ protected override IEnumerable<PathSegment> CreateSegments(Point start, Point en
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img53.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img53.png)' | markdownify }}
 {:.image }
 
 
@@ -3905,7 +3905,7 @@ diagramview.BridgeDirection=BridgeDirection.Top;
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img54.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img54.png)' | markdownify }}
 {:.image }
 
 
@@ -3922,7 +3922,7 @@ diagramview.BridgeDirection=BridgeDirection.Left
 
 
 
-{ ![](Line-Connectors_images/Line-Connectors_img55.png) | markdownify }
+{{ '![](Line-Connectors_images/Line-Connectors_img55.png)' | markdownify }}
 {:.image }
 
 
@@ -3930,7 +3930,7 @@ diagramview.BridgeDirection=BridgeDirection.Left
 
 When a link is drawn between two nodes, by enabling the LineRoutingEnabled property of that link and the diagram view, and if any other node is found in between them, the line will be automatically re-routed around those nodes.
 
-{ ![C:/Users/prakashs/Desktop/Volume 4/Samples/Silverlight/LineRoutingDemo.png](Line-Connectors_images/Line-Connectors_img56.png) | markdownify }
+{{ '![C:/Users/prakashs/Desktop/Volume 4/Samples/Silverlight/LineRoutingDemo.png](Line-Connectors_images/Line-Connectors_img56.png)' | markdownify }}
 {:.image }
 
 

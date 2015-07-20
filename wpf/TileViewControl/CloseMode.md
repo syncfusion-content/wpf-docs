@@ -63,7 +63,7 @@ Background="White">
 
           HeaderBackground="Gray" Margin="2" CornerRadius="3"/>         
 
-&lt;/syncfusion:TileViewControl&gt;
+</syncfusion:TileViewControl>
 
 
 

@@ -17,29 +17,29 @@ You can edit the header of the Tab Item at run time by enabling the EnableLabelE
 
 
 
-&lt;!-- Adding TabControlExt  --&gt;
+<!-- Adding TabControlExt  -->
 
-&lt;syncfusion:TabControlExt Margin="20" Name="tabControlExt" EnableLabelEdit="True"&gt;
-
-
-
-    &lt;!-- Adding TabItemExt --&gt;
-
-    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"&gt;
+<syncfusion:TabControlExt Margin="20" Name="tabControlExt" EnableLabelEdit="True">
 
 
 
-        &lt;!-- Adding content to TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
+
+    <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1">
+
+
+
+        <!-- Adding content to TabItemExt -->
 
         <TextBlock TextWrapping="Wrap">This is TabItemExt2</TextBlock>
 
-    &lt;/syncfusion:TabItemExt&gt;
+    </syncfusion:TabItemExt>
 
-&lt;/syncfusion:TabControlExt&gt;
+</syncfusion:TabControlExt>
 
 
 
-{ ![](Editing-the-Tab-Item-Header-at-Run-Time_images/Editing-the-Tab-Item-Header-at-Run-Time_img1.jpeg) | markdownify }
+{{ '![](Editing-the-Tab-Item-Header-at-Run-Time_images/Editing-the-Tab-Item-Header-at-Run-Time_img1.jpeg)' | markdownify }}
 {:.image }
 
 

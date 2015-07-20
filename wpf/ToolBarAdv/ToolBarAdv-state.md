@@ -25,117 +25,117 @@ Following code illustrates how to set ToolBarAdv to floating state:
 
 
 
-            &lt;shared:ToolBarManager.Resources&gt;
+            <shared:ToolBarManager.Resources>
 
-                &lt;Style TargetType="Button"&gt;
+                <Style TargetType="Button">
 
-                    &lt;Setter Property="Height" Value="20" /&gt;
+                    <Setter Property="Height" Value="20" />
 
-                    &lt;Setter Property="Width" Value="20"/&gt;
+                    <Setter Property="Width" Value="20"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-                &lt;Style TargetType="ToggleButton"&gt;
+                <Style TargetType="ToggleButton">
 
-                    &lt;Setter Property="Height" Value="20"/&gt;
+                    <Setter Property="Height" Value="20"/>
 
-                    &lt;Setter Property="Width" Value="20"/&gt;
+                    <Setter Property="Width" Value="20"/>
 
-                &lt;/Style&gt;
-
-
-
-            &lt;/shared:ToolBarManager.Resources&gt;
-
-            &lt;shared:ToolBarManager.TopToolBarTray&gt;
-
-                &lt;shared:ToolBarTrayAdv VerticalAlignment="Top"&gt;
-
-                    &lt;shared:ToolBarAdv ToolBarName="Standard"&gt;
-
-                        &lt;Button shared:ToolBarAdv.Label="New Document" shared:ToolBarAdv.Icon="Images/NewDocumentHS.png"&gt;
-
-                            &lt;Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/&gt;
-
-                        &lt;/Button&gt;
-
-                        &lt;Button  shared:ToolBarAdv.Label="Open Document" shared:ToolBarAdv.Icon="Images/openHS.png"&gt;
-
-                            &lt;Image Source="Images/openHS.png"  Width="16" Height="16"/&gt;
-
-                        &lt;/Button&gt;
+                </Style>
 
 
 
-                    &lt;shared:ToolBarAdv Band="1"   ToolBarName="Extras" shared:ToolBarManager.ToolBarState="Floating" FloatingBarLocation="500,300"&gt;
+            </shared:ToolBarManager.Resources>
 
-                        &lt;Button shared:ToolBarAdv.Label="Insert Picture"  shared:ToolBarAdv.Icon="Images/InsertPictureHS.png"&gt;
+            <shared:ToolBarManager.TopToolBarTray>
 
-                            &lt;Image Source="Images/InsertPictureHS.png"  Width="16" Height="16"/&gt;
+                <shared:ToolBarTrayAdv VerticalAlignment="Top">
 
-                        &lt;/Button&gt;
+                    <shared:ToolBarAdv ToolBarName="Standard">
 
-                        &lt;Button  shared:ToolBarAdv.Label="Insert Hyperlink"  shared:ToolBarAdv.Icon="Images/InsertHyperlinkHS.png"&gt;
+                        <Button shared:ToolBarAdv.Label="New Document" shared:ToolBarAdv.Icon="Images/NewDocumentHS.png">
 
-                            &lt;Image Source="Images/InsertHyperlinkHS.png"  Width="16" Height="16"/&gt;
+                            <Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/>
 
-                        &lt;/Button&gt;
+                        </Button>
 
-                        &lt;Button  shared:ToolBarAdv.Label="Insert Table"  shared:ToolBarAdv.Icon="Images/TableHS.png"&gt;
+                        <Button  shared:ToolBarAdv.Label="Open Document" shared:ToolBarAdv.Icon="Images/openHS.png">
 
-                            &lt;Image Source="Images/TableHS.png"  Width="16" Height="16"/&gt;
+                            <Image Source="Images/openHS.png"  Width="16" Height="16"/>
 
-                        &lt;/Button&gt;
-
-
-
-                   &lt;/shared:ToolBarAdv&gt;
-
-                &lt;/shared:ToolBarTrayAdv&gt;
+                        </Button>
 
 
 
-            &lt;/shared:ToolBarManager.TopToolBarTray&gt;
+                    <shared:ToolBarAdv Band="1"   ToolBarName="Extras" shared:ToolBarManager.ToolBarState="Floating" FloatingBarLocation="500,300">
+
+                        <Button shared:ToolBarAdv.Label="Insert Picture"  shared:ToolBarAdv.Icon="Images/InsertPictureHS.png">
+
+                            <Image Source="Images/InsertPictureHS.png"  Width="16" Height="16"/>
+
+                        </Button>
+
+                        <Button  shared:ToolBarAdv.Label="Insert Hyperlink"  shared:ToolBarAdv.Icon="Images/InsertHyperlinkHS.png">
+
+                            <Image Source="Images/InsertHyperlinkHS.png"  Width="16" Height="16"/>
+
+                        </Button>
+
+                        <Button  shared:ToolBarAdv.Label="Insert Table"  shared:ToolBarAdv.Icon="Images/TableHS.png">
+
+                            <Image Source="Images/TableHS.png"  Width="16" Height="16"/>
+
+                        </Button>
 
 
 
-            &lt;Grid  &gt;
+                   </shared:ToolBarAdv>
 
-                &lt;Grid.RowDefinitions&gt;
-
-                    &lt;RowDefinition Height="*"/&gt;
-
-                    &lt;RowDefinition Height="Auto"/&gt;
-
-                &lt;/Grid.RowDefinitions&gt;
-
-                &lt;ScrollViewer &gt;
-
-                    &lt;Grid Margin="20"&gt;
-
-                        &lt;Border CornerRadius="2" Background="Black" Opacity="0.3"   Width="600" Height="700"&gt;
-
-                            &lt;Border.Effect&gt;
-
-                                &lt;BlurEffect Radius="15"/&gt;
-
-                            &lt;/Border.Effect&gt;
-
-                        &lt;/Border&gt;
-
-                        &lt;RichTextBox  Width="600" Height="700" Padding="20"&gt;
+                </shared:ToolBarTrayAdv>
 
 
 
-                        &lt;/RichTextBox&gt;
+            </shared:ToolBarManager.TopToolBarTray>
 
-                        &lt;/Grid&gt;
 
-                &lt;/ScrollViewer&gt;
 
-            &lt;/Grid&gt;
+            <Grid  >
 
-        &lt;/shared:ToolBarManager&gt;
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="*"/>
+
+                    <RowDefinition Height="Auto"/>
+
+                </Grid.RowDefinitions>
+
+                <ScrollViewer >
+
+                    <Grid Margin="20">
+
+                        <Border CornerRadius="2" Background="Black" Opacity="0.3"   Width="600" Height="700">
+
+                            <Border.Effect>
+
+                                <BlurEffect Radius="15"/>
+
+                            </Border.Effect>
+
+                        </Border>
+
+                        <RichTextBox  Width="600" Height="700" Padding="20">
+
+
+
+                        </RichTextBox>
+
+                        </Grid>
+
+                </ScrollViewer>
+
+            </Grid>
+
+        </shared:ToolBarManager>
 
 
 
@@ -153,7 +153,7 @@ ToolBarAdv toolBar = new ToolBarAdv();
 
 
 
-{ ![](ToolBarAdv-state_images/ToolBarAdv-state_img1.png) | markdownify }
+{{ '![](ToolBarAdv-state_images/ToolBarAdv-state_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -169,7 +169,7 @@ You can change the location of the floating ToolBarAdv using the _FloatingBarLoc
 
 [XAML]
 
-&lt;shared:ToolBarAdv FloatingBarLocation="50,50"&gt;&lt;/shared:ToolBarAdv&gt;
+<shared:ToolBarAdv FloatingBarLocation="50,50"></shared:ToolBarAdv>
 
 
 

@@ -32,7 +32,7 @@ DOLLARDE( arg1, arg2) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img1.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -57,7 +57,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img2.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -80,7 +80,7 @@ DURATION(SettlementDate,MaturityDate,rate,profit,frequency,basis) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img3.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -98,7 +98,7 @@ RRI(np,pv,fv) where,
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img4.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -119,7 +119,7 @@ FVSCHEDULE(arg1,arg2) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img5.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -140,7 +140,7 @@ DISC(SettlementDate,MaturityDate,rate,value) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img6.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -166,7 +166,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img7.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -193,7 +193,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img8.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -220,7 +220,7 @@ CUMPRINC(rate, np, pv, startPeriod, endPeriod, pp) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img9.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -246,11 +246,11 @@ Remarks:
 
 #VALUE - returns only if FirstInterest or settlementDate is invalid. 
 
-#NUM! -  returns if rate ≤ 0, if par ≤ 0, if frequency is any number other than 1, 2, or 4, if basis &lt; 0 or if basis &gt; 4 and if issue ≥ settlement.
+#NUM! -  returns if rate ≤ 0, if par ≤ 0, if frequency is any number other than 1, 2, or 4, if basis < 0 or if basis > 4 and if issue ≥ settlement.
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img10.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -276,7 +276,7 @@ RECEIVED(Settlementdate,MaturityDate,investment,discount,basis) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img11.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -300,7 +300,7 @@ Example:
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img12.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -320,7 +320,7 @@ DCOUNTA(collection,column,condition) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img13.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -340,7 +340,7 @@ DAVERAGE(collection,column,condition) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img14.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -360,7 +360,7 @@ DGET(collection,column,condition) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/4.png](Calculate-functions_images/Calculate-functions_img15.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/4.png](Calculate-functions_images/Calculate-functions_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -380,7 +380,7 @@ DMAX(collection,column,condition) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img16.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -400,7 +400,7 @@ DMIN(collection,column,condition) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img17.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -418,7 +418,7 @@ DSTDEV(collection,column,condition) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img18.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -438,7 +438,7 @@ DSTDEVP(collection,column,condition) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img19.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -458,7 +458,7 @@ VAR(collection, column, condition) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img20.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img20.png)' | markdownify }}
 {:.image }
 
 
@@ -478,7 +478,7 @@ DVARP(collection, column, condition) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img21.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img21.png)' | markdownify }}
 {:.image }
 
 
@@ -498,7 +498,7 @@ Example:
 
 
 
-{ ![](Calculate-functions_images/Calculate-functions_img22.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -522,7 +522,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img23.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -544,7 +544,7 @@ REMARKS:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img24.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img24.png)' | markdownify }}
 {:.image }
 
 
@@ -564,7 +564,7 @@ COT(number) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img25.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -588,7 +588,7 @@ Example:
 
 
 
-{ ![](Calculate-functions_images/Calculate-functions_img26.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img26.png)' | markdownify }}
 {:.image }
 
 
@@ -610,7 +610,7 @@ CSC(number) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img27.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img27.png)' | markdownify }}
 {:.image }
 
 
@@ -632,7 +632,7 @@ CSCH(number) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img28.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img28.png)' | markdownify }}
 {:.image }
 
 
@@ -656,7 +656,7 @@ The returned angle is given in radians in the range of 0 (zero) to pi.
 
 Example:
 
-l{ ![](Calculate-functions_images/Calculate-functions_img29.png) | markdownify }
+l{{ '![](Calculate-functions_images/Calculate-functions_img29.png)' | markdownify }}
 {:.image }
 
 
@@ -678,7 +678,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img30.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img30.png)' | markdownify }}
 {:.image }
 
 
@@ -697,7 +697,7 @@ Example:
 
 
 
-{ ![](Calculate-functions_images/Calculate-functions_img31.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img31.png)' | markdownify }}
 {:.image }
 
 
@@ -716,7 +716,7 @@ Math.BIGMUL(x,y); where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img32.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img32.png)' | markdownify }}
 {:.image }
 
 
@@ -732,7 +732,7 @@ Math.DIVREM(num1,num2) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img33.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img33.png)' | markdownify }}
 {:.image }
 
 
@@ -751,7 +751,7 @@ IEEERemainder(d1, d2) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img34.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img34.png)' | markdownify }}
 {:.image }
 
 
@@ -770,7 +770,7 @@ TRUNC( number, [num_digits] ) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img35.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img35.png)' | markdownify }}
 {:.image }
 
 
@@ -795,7 +795,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img36.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img36.png)' | markdownify }}
 {:.image }
 
 
@@ -819,7 +819,7 @@ Value zero occurs if an empty string is given as an input.
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img37.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img37.png)' | markdownify }}
 {:.image }
 
 
@@ -845,7 +845,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img38.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img38.png)' | markdownify }}
 {:.image }
 
 
@@ -863,7 +863,7 @@ CEILING(number, [significance],  [mode]) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img39.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img39.png)' | markdownify }}
 {:.image }
 
 
@@ -886,7 +886,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img40.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img40.png)' | markdownify }}
 {:.image }
 
 
@@ -906,7 +906,7 @@ Remarks:
 
 Example:
 
-l{ ![](Calculate-functions_images/Calculate-functions_img41.png) | markdownify }
+l{{ '![](Calculate-functions_images/Calculate-functions_img41.png)' | markdownify }}
 {:.image }
 
 
@@ -926,7 +926,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img42.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img42.png)' | markdownify }}
 {:.image }
 
 
@@ -946,7 +946,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img43.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img43.png)' | markdownify }}
 {:.image }
 
 
@@ -966,7 +966,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img44.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img44.png)' | markdownify }}
 {:.image }
 
 
@@ -996,7 +996,7 @@ CONFIDENCE.T(alpha,stdev,size) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img45.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img45.png)' | markdownify }}
 {:.image }
 
 
@@ -1020,7 +1020,7 @@ SKEW.P(number 1, [number 2],…) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img46.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img46.png)' | markdownify }}
 {:.image }
 
 
@@ -1039,7 +1039,7 @@ COVARIANCE.P(array1,array2) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img47.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img47.png)' | markdownify }}
 {:.image }
 
 
@@ -1064,7 +1064,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img48.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img48.png)' | markdownify }}
 {:.image }
 
 
@@ -1089,7 +1089,7 @@ PERCENTILE.EXC(array, k) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img49.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img49.png)' | markdownify }}
 {:.image }
 
 
@@ -1114,7 +1114,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img50.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img50.png)' | markdownify }}
 {:.image }
 
 
@@ -1139,7 +1139,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img51.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img51.png)' | markdownify }}
 {:.image }
 
 
@@ -1166,7 +1166,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img52.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img52.png)' | markdownify }}
 {:.image }
 
 
@@ -1191,7 +1191,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img53.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img53.png)' | markdownify }}
 {:.image }
 
 
@@ -1216,7 +1216,7 @@ PERMUTATIONA(number, number-chosen) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img54.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img54.png)' | markdownify }}
 {:.image }
 
 
@@ -1243,7 +1243,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img55.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img55.png)' | markdownify }}
 {:.image }
 
 
@@ -1269,7 +1269,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img56.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img56.png)' | markdownify }}
 {:.image }
 
 
@@ -1288,7 +1288,7 @@ NORM.S.DIST(val, cumulative) where:
 
  Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img57.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img57.png)' | markdownify }}
 {:.image }
 
 
@@ -1304,7 +1304,7 @@ NORM.S.INV(probability) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img58.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img58.png)' | markdownify }}
 {:.image }
 
 
@@ -1331,7 +1331,7 @@ WEIBULL.DIST(x,alpha,beta,cumulative) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img59.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img59.png)' | markdownify }}
 {:.image }
 
 
@@ -1357,7 +1357,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img60.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img60.png)' | markdownify }}
 {:.image }
 
 
@@ -1384,7 +1384,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img61.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img61.png)' | markdownify }}
 {:.image }
 
 
@@ -1411,7 +1411,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img62.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img62.png)' | markdownify }}
 {:.image }
 
 
@@ -1433,7 +1433,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img63.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img63.png)' | markdownify }}
 {:.image }
 
 
@@ -1459,7 +1459,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/20.png](Calculate-functions_images/Calculate-functions_img64.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/20.png](Calculate-functions_images/Calculate-functions_img64.png)' | markdownify }}
 {:.image }
 
 
@@ -1485,7 +1485,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/4.png](Calculate-functions_images/Calculate-functions_img65.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/4.png](Calculate-functions_images/Calculate-functions_img65.png)' | markdownify }}
 {:.image }
 
 
@@ -1511,7 +1511,7 @@ BINOM.INV(trial number,sp,value) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/22.png](Calculate-functions_images/Calculate-functions_img66.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/22.png](Calculate-functions_images/Calculate-functions_img66.png)' | markdownify }}
 {:.image }
 
 
@@ -1547,7 +1547,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/23.png](Calculate-functions_images/Calculate-functions_img67.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/23.png](Calculate-functions_images/Calculate-functions_img67.png)' | markdownify }}
 {:.image }
 
 
@@ -1574,7 +1574,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img68.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img68.png)' | markdownify }}
 {:.image }
 
 
@@ -1596,11 +1596,11 @@ Remarks:
 
 #VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if probability &lt;= 0 or probability &gt;= 1 and if Stdev<=0.
+#NUM! - occurs if probability <= 0 or probability >= 1 and if Stdev<=0.
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/5.png](Calculate-functions_images/Calculate-functions_img69.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/5.png](Calculate-functions_images/Calculate-functions_img69.png)' | markdownify }}
 {:.image }
 
 
@@ -1628,7 +1628,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img70.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img70.png)' | markdownify }}
 {:.image }
 
 
@@ -1650,11 +1650,11 @@ Remarks:
 
 #VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if x is negative and if f degFreedom &lt; 1 or degFreedom &gt; 10^10.
+#NUM! - occurs if x is negative and if f degFreedom < 1 or degFreedom > 10^10.
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img71.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img71.png)' | markdownify }}
 {:.image }
 
 
@@ -1677,11 +1677,11 @@ Remarks:
 
 #VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs occurs if f degFreedom &lt; 1 or degFreedom &gt; 10^10.
+#NUM! - occurs occurs if f degFreedom < 1 or degFreedom > 10^10.
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img72.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img72.png)' | markdownify }}
 {:.image }
 
 
@@ -1708,7 +1708,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img73.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img73.png)' | markdownify }}
 {:.image }
 
 
@@ -1734,7 +1734,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img74.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img74.png)' | markdownify }}
 {:.image }
 
 
@@ -1754,7 +1754,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img75.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img75.png)' | markdownify }}
 {:.image }
 
 
@@ -1773,7 +1773,7 @@ CHISQ.TEST(O_range,E_range) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/11.png](Calculate-functions_images/Calculate-functions_img76.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/11.png](Calculate-functions_images/Calculate-functions_img76.png)' | markdownify }}
 {:.image }
 
 
@@ -1798,7 +1798,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/12.png](Calculate-functions_images/Calculate-functions_img77.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/12.png](Calculate-functions_images/Calculate-functions_img77.png)' | markdownify }}
 {:.image }
 
 
@@ -1823,7 +1823,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img78.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img78.png)' | markdownify }}
 {:.image }
 
 
@@ -1850,7 +1850,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img79.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img79.png)' | markdownify }}
 {:.image }
 
 
@@ -1869,7 +1869,7 @@ RANK.AVG(number,ref) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/14.png](Calculate-functions_images/Calculate-functions_img80.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/14.png](Calculate-functions_images/Calculate-functions_img80.png)' | markdownify }}
 {:.image }
 
 
@@ -1890,7 +1890,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/15.png](Calculate-functions_images/Calculate-functions_img81.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/15.png](Calculate-functions_images/Calculate-functions_img81.png)' | markdownify }}
 {:.image }
 
 
@@ -1911,7 +1911,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/16.png](Calculate-functions_images/Calculate-functions_img82.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/16.png](Calculate-functions_images/Calculate-functions_img82.png)' | markdownify }}
 {:.image }
 
 
@@ -1932,7 +1932,7 @@ NEGBINOM.DIST(F_number,S_number,S_probability,cumulative) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/39.png](Calculate-functions_images/Calculate-functions_img83.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/39.png](Calculate-functions_images/Calculate-functions_img83.png)' | markdownify }}
 {:.image }
 
 
@@ -1956,7 +1956,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/17.png](Calculate-functions_images/Calculate-functions_img84.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/17.png](Calculate-functions_images/Calculate-functions_img84.png)' | markdownify }}
 {:.image }
 
 
@@ -1976,7 +1976,7 @@ ZTEST(a1,T_value,sigma) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/18.png](Calculate-functions_images/Calculate-functions_img85.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/18.png](Calculate-functions_images/Calculate-functions_img85.png)' | markdownify }}
 {:.image }
 
 
@@ -1995,7 +1995,7 @@ RANK.EQ( number, ref ) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/42.png](Calculate-functions_images/Calculate-functions_img86.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/42.png](Calculate-functions_images/Calculate-functions_img86.png)' | markdownify }}
 {:.image }
 
 
@@ -2018,7 +2018,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/19.png](Calculate-functions_images/Calculate-functions_img87.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/19.png](Calculate-functions_images/Calculate-functions_img87.png)' | markdownify }}
 {:.image }
 
 
@@ -2039,13 +2039,13 @@ DEC2BIN(num,places) where:
 
 Remarks:
 
-#NUM! - occurs if number &lt; -512 or if number &gt; 511 and if places is zero or negative.
+#NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
 
 #VALUE! - occurs when number or places is non-numeric, if DEC2BIN requires more than the number of characters specified in places.
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/20.png](Calculate-functions_images/Calculate-functions_img88.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/20.png](Calculate-functions_images/Calculate-functions_img88.png)' | markdownify }}
 {:.image }
 
 
@@ -2064,13 +2064,13 @@ DEC2OCT(num, places) where:
 
 Remarks:
 
-#NUM! - occurs if number &lt; -512 or if number &gt; 511 and if places is zero or negative.
+#NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
 
 #VALUE! - occurs if number or places is non-numeric, if DEC2OCT requires more than the number of characters specified in places.
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/21.png](Calculate-functions_images/Calculate-functions_img89.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/21.png](Calculate-functions_images/Calculate-functions_img89.png)' | markdownify }}
 {:.image }
 
 
@@ -2087,13 +2087,13 @@ DEC2HEX(num, places ) where:
 
 Remarks:
 
-#NUM! - occurs if number &lt; -512 or if number &gt; 511 and if places is zero or negative.
+#NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
 
 #VALUE! - occurs if number or places is non-numeric, if DEC2HEX requires more than the number of characters specified in places.
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/22.png](Calculate-functions_images/Calculate-functions_img90.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/22.png](Calculate-functions_images/Calculate-functions_img90.png)' | markdownify }}
 {:.image }
 
 
@@ -2113,7 +2113,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/23.png](Calculate-functions_images/Calculate-functions_img91.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/23.png](Calculate-functions_images/Calculate-functions_img91.png)' | markdownify }}
 {:.image }
 
 
@@ -2132,7 +2132,7 @@ BIN2OCT(num, places) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/24.png](Calculate-functions_images/Calculate-functions_img92.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/24.png](Calculate-functions_images/Calculate-functions_img92.png)' | markdownify }}
 {:.image }
 
 
@@ -2157,7 +2157,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/25.png](Calculate-functions_images/Calculate-functions_img93.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/25.png](Calculate-functions_images/Calculate-functions_img93.png)' | markdownify }}
 {:.image }
 
 
@@ -2182,7 +2182,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/5.7.png](Calculate-functions_images/Calculate-functions_img94.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/5.7.png](Calculate-functions_images/Calculate-functions_img94.png)' | markdownify }}
 {:.image }
 
 
@@ -2207,7 +2207,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/26.png](Calculate-functions_images/Calculate-functions_img95.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/26.png](Calculate-functions_images/Calculate-functions_img95.png)' | markdownify }}
 {:.image }
 
 
@@ -2227,7 +2227,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/27.png](Calculate-functions_images/Calculate-functions_img96.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/27.png](Calculate-functions_images/Calculate-functions_img96.png)' | markdownify }}
 {:.image }
 
 
@@ -2252,7 +2252,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/28.png](Calculate-functions_images/Calculate-functions_img97.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/28.png](Calculate-functions_images/Calculate-functions_img97.png)' | markdownify }}
 {:.image }
 
 
@@ -2277,7 +2277,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/29.png](Calculate-functions_images/Calculate-functions_img98.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/29.png](Calculate-functions_images/Calculate-functions_img98.png)' | markdownify }}
 {:.image }
 
 
@@ -2297,7 +2297,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/30.png](Calculate-functions_images/Calculate-functions_img99.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/30.png](Calculate-functions_images/Calculate-functions_img99.png)' | markdownify }}
 {:.image }
 
 
@@ -2317,7 +2317,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/31.png](Calculate-functions_images/Calculate-functions_img100.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/31.png](Calculate-functions_images/Calculate-functions_img100.png)' | markdownify }}
 {:.image }
 
 
@@ -2337,7 +2337,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/32.png](Calculate-functions_images/Calculate-functions_img101.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/32.png](Calculate-functions_images/Calculate-functions_img101.png)' | markdownify }}
 {:.image }
 
 
@@ -2357,7 +2357,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/33.png](Calculate-functions_images/Calculate-functions_img102.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/33.png](Calculate-functions_images/Calculate-functions_img102.png)' | markdownify }}
 {:.image }
 
 
@@ -2381,7 +2381,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/34.png](Calculate-functions_images/Calculate-functions_img103.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/34.png](Calculate-functions_images/Calculate-functions_img103.png)' | markdownify }}
 {:.image }
 
 
@@ -2397,7 +2397,7 @@ IMSUM(inum1,inum2,...) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/35.png](Calculate-functions_images/Calculate-functions_img104.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/35.png](Calculate-functions_images/Calculate-functions_img104.png)' | markdownify }}
 {:.image }
 
 
@@ -2413,7 +2413,7 @@ IMSUB(inumber1,inumber2) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/5.18.png](Calculate-functions_images/Calculate-functions_img105.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/5.18.png](Calculate-functions_images/Calculate-functions_img105.png)' | markdownify }}
 {:.image }
 
 
@@ -2432,7 +2432,7 @@ IMPRODUCT(inum1, inum2,... ) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img106.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img106.png)' | markdownify }}
 {:.image }
 
 
@@ -2451,7 +2451,7 @@ IMDIV(inum1, inum2) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/36.png](Calculate-functions_images/Calculate-functions_img107.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/36.png](Calculate-functions_images/Calculate-functions_img107.png)' | markdownify }}
 {:.image }
 
 
@@ -2467,7 +2467,7 @@ IMCONJUGATE(inum) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/37.png](Calculate-functions_images/Calculate-functions_img108.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/37.png](Calculate-functions_images/Calculate-functions_img108.png)' | markdownify }}
 {:.image }
 
 
@@ -2483,7 +2483,7 @@ IMSQRT(inum) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/38.png](Calculate-functions_images/Calculate-functions_img109.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/38.png](Calculate-functions_images/Calculate-functions_img109.png)' | markdownify }}
 {:.image }
 
 
@@ -2499,7 +2499,7 @@ IMARGUMENT(inum) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/39.png](Calculate-functions_images/Calculate-functions_img110.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/39.png](Calculate-functions_images/Calculate-functions_img110.png)' | markdownify }}
 {:.image }
 
 
@@ -2515,7 +2515,7 @@ IMSIN(inum) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img111.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img111.png)' | markdownify }}
 {:.image }
 
 
@@ -2539,7 +2539,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/40.png](Calculate-functions_images/Calculate-functions_img112.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/40.png](Calculate-functions_images/Calculate-functions_img112.png)' | markdownify }}
 {:.image }
 
 
@@ -2555,7 +2555,7 @@ IMCOS(inum) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/41.png](Calculate-functions_images/Calculate-functions_img113.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/41.png](Calculate-functions_images/Calculate-functions_img113.png)' | markdownify }}
 {:.image }
 
 
@@ -2577,7 +2577,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/42.png](Calculate-functions_images/Calculate-functions_img114.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/42.png](Calculate-functions_images/Calculate-functions_img114.png)' | markdownify }}
 {:.image }
 
 
@@ -2599,7 +2599,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/43.png](Calculate-functions_images/Calculate-functions_img115.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/43.png](Calculate-functions_images/Calculate-functions_img115.png)' | markdownify }}
 {:.image }
 
 
@@ -2621,7 +2621,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/44.png](Calculate-functions_images/Calculate-functions_img116.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/44.png](Calculate-functions_images/Calculate-functions_img116.png)' | markdownify }}
 {:.image }
 
 
@@ -2643,7 +2643,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/45.png](Calculate-functions_images/Calculate-functions_img117.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/45.png](Calculate-functions_images/Calculate-functions_img117.png)' | markdownify }}
 {:.image }
 
 
@@ -2665,7 +2665,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/46.png](Calculate-functions_images/Calculate-functions_img118.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/46.png](Calculate-functions_images/Calculate-functions_img118.png)' | markdownify }}
 {:.image }
 
 
@@ -2687,7 +2687,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/47.png](Calculate-functions_images/Calculate-functions_img119.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/47.png](Calculate-functions_images/Calculate-functions_img119.png)' | markdownify }}
 {:.image }
 
 
@@ -2709,7 +2709,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/48.png](Calculate-functions_images/Calculate-functions_img120.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/48.png](Calculate-functions_images/Calculate-functions_img120.png)' | markdownify }}
 {:.image }
 
 
@@ -2731,7 +2731,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/49.png](Calculate-functions_images/Calculate-functions_img121.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/49.png](Calculate-functions_images/Calculate-functions_img121.png)' | markdownify }}
 {:.image }
 
 
@@ -2753,7 +2753,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/50.png](Calculate-functions_images/Calculate-functions_img122.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/50.png](Calculate-functions_images/Calculate-functions_img122.png)' | markdownify }}
 {:.image }
 
 
@@ -2773,7 +2773,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/51.png](Calculate-functions_images/Calculate-functions_img123.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/51.png](Calculate-functions_images/Calculate-functions_img123.png)' | markdownify }}
 {:.image }
 
 
@@ -2793,7 +2793,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/5.37.png](Calculate-functions_images/Calculate-functions_img124.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/5.37.png](Calculate-functions_images/Calculate-functions_img124.png)' | markdownify }}
 {:.image }
 
 
@@ -2813,7 +2813,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/53.png](Calculate-functions_images/Calculate-functions_img125.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/53.png](Calculate-functions_images/Calculate-functions_img125.png)' | markdownify }}
 {:.image }
 
 
@@ -2833,7 +2833,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/54.png](Calculate-functions_images/Calculate-functions_img126.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/54.png](Calculate-functions_images/Calculate-functions_img126.png)' | markdownify }}
 {:.image }
 
 
@@ -2858,7 +2858,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/55.png](Calculate-functions_images/Calculate-functions_img127.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/55.png](Calculate-functions_images/Calculate-functions_img127.png)' | markdownify }}
 {:.image }
 
 
@@ -2881,7 +2881,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/56.png](Calculate-functions_images/Calculate-functions_img128.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/56.png](Calculate-functions_images/Calculate-functions_img128.png)' | markdownify }}
 {:.image }
 
 
@@ -2900,7 +2900,7 @@ DELTA(num1,num2) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/57.png](Calculate-functions_images/Calculate-functions_img129.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/57.png](Calculate-functions_images/Calculate-functions_img129.png)' | markdownify }}
 {:.image }
 
 
@@ -2922,7 +2922,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/58.png](Calculate-functions_images/Calculate-functions_img130.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/58.png](Calculate-functions_images/Calculate-functions_img130.png)' | markdownify }}
 {:.image }
 
 
@@ -2944,7 +2944,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img131.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img131.png)' | markdownify }}
 {:.image }
 
 
@@ -2966,7 +2966,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/60.png](Calculate-functions_images/Calculate-functions_img132.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/60.png](Calculate-functions_images/Calculate-functions_img132.png)' | markdownify }}
 {:.image }
 
 
@@ -2991,7 +2991,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/61.png](Calculate-functions_images/Calculate-functions_img133.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/61.png](Calculate-functions_images/Calculate-functions_img133.png)' | markdownify }}
 {:.image }
 
 
@@ -3016,7 +3016,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/62.png](Calculate-functions_images/Calculate-functions_img134.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/62.png](Calculate-functions_images/Calculate-functions_img134.png)' | markdownify }}
 {:.image }
 
 
@@ -3041,7 +3041,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/63.png](Calculate-functions_images/Calculate-functions_img135.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/63.png](Calculate-functions_images/Calculate-functions_img135.png)' | markdownify }}
 {:.image }
 
 
@@ -3061,7 +3061,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/64.png](Calculate-functions_images/Calculate-functions_img136.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/64.png](Calculate-functions_images/Calculate-functions_img136.png)' | markdownify }}
 {:.image }
 
 
@@ -3086,7 +3086,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/65.png](Calculate-functions_images/Calculate-functions_img137.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/65.png](Calculate-functions_images/Calculate-functions_img137.png)' | markdownify }}
 {:.image }
 
 
@@ -3111,7 +3111,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/66.png](Calculate-functions_images/Calculate-functions_img138.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/66.png](Calculate-functions_images/Calculate-functions_img138.png)' | markdownify }}
 {:.image }
 
 
@@ -3136,7 +3136,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/67.png](Calculate-functions_images/Calculate-functions_img139.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/67.png](Calculate-functions_images/Calculate-functions_img139.png)' | markdownify }}
 {:.image }
 
 
@@ -3161,7 +3161,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/68.png](Calculate-functions_images/Calculate-functions_img140.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/68.png](Calculate-functions_images/Calculate-functions_img140.png)' | markdownify }}
 {:.image }
 
 
@@ -3189,7 +3189,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/69.png](Calculate-functions_images/Calculate-functions_img141.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/69.png](Calculate-functions_images/Calculate-functions_img141.png)' | markdownify }}
 {:.image }
 
 
@@ -3207,7 +3207,7 @@ ENCODEURL(name) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/6.1.png](Calculate-functions_images/Calculate-functions_img142.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/6.1.png](Calculate-functions_images/Calculate-functions_img142.png)' | markdownify }}
 {:.image }
 
 
@@ -3230,7 +3230,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/6.2.png](Calculate-functions_images/Calculate-functions_img143.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/6.2.png](Calculate-functions_images/Calculate-functions_img143.png)' | markdownify }}
 {:.image }
 
 
@@ -3250,7 +3250,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/6.3.png](Calculate-functions_images/Calculate-functions_img144.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/6.3.png](Calculate-functions_images/Calculate-functions_img144.png)' | markdownify }}
 {:.image }
 
 
@@ -3268,7 +3268,7 @@ ASC(text) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/70.png](Calculate-functions_images/Calculate-functions_img145.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/70.png](Calculate-functions_images/Calculate-functions_img145.png)' | markdownify }}
 {:.image }
 
 
@@ -3284,7 +3284,7 @@ CODE(name) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/71.png](Calculate-functions_images/Calculate-functions_img146.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/71.png](Calculate-functions_images/Calculate-functions_img146.png)' | markdownify }}
 {:.image }
 
 
@@ -3308,7 +3308,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/72.png](Calculate-functions_images/Calculate-functions_img147.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/72.png](Calculate-functions_images/Calculate-functions_img147.png)' | markdownify }}
 {:.image }
 
 
@@ -3324,7 +3324,7 @@ JIS(name) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/7.4.png](Calculate-functions_images/Calculate-functions_img148.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/7.4.png](Calculate-functions_images/Calculate-functions_img148.png)' | markdownify }}
 {:.image }
 
 
@@ -3341,7 +3341,7 @@ LEFTB(text, bytes) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/7.5.png](Calculate-functions_images/Calculate-functions_img149.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/7.5.png](Calculate-functions_images/Calculate-functions_img149.png)' | markdownify }}
 {:.image }
 
 
@@ -3357,7 +3357,7 @@ LENB(name) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/74.png](Calculate-functions_images/Calculate-functions_img150.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/74.png](Calculate-functions_images/Calculate-functions_img150.png)' | markdownify }}
 {:.image }
 
 
@@ -3377,7 +3377,7 @@ MIDB(text, startNum, numBytes) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/75.png](Calculate-functions_images/Calculate-functions_img151.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/75.png](Calculate-functions_images/Calculate-functions_img151.png)' | markdownify }}
 {:.image }
 
 
@@ -3397,7 +3397,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/76.png](Calculate-functions_images/Calculate-functions_img152.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/76.png](Calculate-functions_images/Calculate-functions_img152.png)' | markdownify }}
 {:.image }
 
 
@@ -3413,7 +3413,7 @@ PROPER(text) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/77.png](Calculate-functions_images/Calculate-functions_img153.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/77.png](Calculate-functions_images/Calculate-functions_img153.png)' | markdownify }}
 {:.image }
 
 
@@ -3434,7 +3434,7 @@ REPLACE(oldText, startNum, numChars, newText) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/78.png](Calculate-functions_images/Calculate-functions_img154.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/78.png](Calculate-functions_images/Calculate-functions_img154.png)' | markdownify }}
 {:.image }
 
 
@@ -3455,7 +3455,7 @@ REPLACEB(oldText, startNum, numBytes, newText) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/79.png](Calculate-functions_images/Calculate-functions_img155.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/79.png](Calculate-functions_images/Calculate-functions_img155.png)' | markdownify }}
 {:.image }
 
 
@@ -3478,7 +3478,7 @@ Blank text - occurs if number is zero.
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/80.png](Calculate-functions_images/Calculate-functions_img156.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/80.png](Calculate-functions_images/Calculate-functions_img156.png)' | markdownify }}
 {:.image }
 
 
@@ -3497,7 +3497,7 @@ RIGHTB(string, num) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/7.13.png](Calculate-functions_images/Calculate-functions_img157.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/7.13.png](Calculate-functions_images/Calculate-functions_img157.png)' | markdownify }}
 {:.image }
 
 
@@ -3521,7 +3521,7 @@ Remarks:
 
 Example: 
 
-{ ![](Calculate-functions_images/Calculate-functions_img158.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img158.png)' | markdownify }}
 {:.image }
 
 
@@ -3543,7 +3543,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img159.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img159.png)' | markdownify }}
 {:.image }
 
 
@@ -3563,7 +3563,7 @@ Remarks:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img160.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img160.png)' | markdownify }}
 {:.image }
 
 
@@ -3581,7 +3581,7 @@ AREAS(reference) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/81.png](Calculate-functions_images/Calculate-functions_img161.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/81.png](Calculate-functions_images/Calculate-functions_img161.png)' | markdownify }}
 {:.image }
 
 
@@ -3597,7 +3597,7 @@ COLUMNS( array ) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/82.png](Calculate-functions_images/Calculate-functions_img162.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/82.png](Calculate-functions_images/Calculate-functions_img162.png)' | markdownify }}
 {:.image }
 
 
@@ -3616,7 +3616,7 @@ HYPERLINK( linkLocation, friendlyName ) where
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/8.3.png](Calculate-functions_images/Calculate-functions_img163.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/8.3.png](Calculate-functions_images/Calculate-functions_img163.png)' | markdownify }}
 {:.image }
 
 
@@ -3630,7 +3630,7 @@ ROW( [reference] ) where,
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/83.png](Calculate-functions_images/Calculate-functions_img164.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/83.png](Calculate-functions_images/Calculate-functions_img164.png)' | markdownify }}
 {:.image }
 
 
@@ -3646,7 +3646,7 @@ ROWS( array ) where:
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img165.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img165.png)' | markdownify }}
 {:.image }
 
 
@@ -3670,7 +3670,7 @@ Example:
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/8.6.png](Calculate-functions_images/Calculate-functions_img166.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/8.6.png](Calculate-functions_images/Calculate-functions_img166.png)' | markdownify }}
 {:.image }
 
 
@@ -3690,7 +3690,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/8.7.png](Calculate-functions_images/Calculate-functions_img167.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/8.7.png](Calculate-functions_images/Calculate-functions_img167.png)' | markdownify }}
 {:.image }
 
 
@@ -3706,7 +3706,7 @@ TRANSPOSE( array ) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/93.png](Calculate-functions_images/Calculate-functions_img168.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/93.png](Calculate-functions_images/Calculate-functions_img168.png)' | markdownify }}
 {:.image }
 
 
@@ -3736,7 +3736,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/8.9.png](Calculate-functions_images/Calculate-functions_img169.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/8.9.png](Calculate-functions_images/Calculate-functions_img169.png)' | markdownify }}
 {:.image }
 
 
@@ -3757,7 +3757,7 @@ CELL( infoType, reference ) where
 
 Example:
 
-{ ![](Calculate-functions_images/Calculate-functions_img170.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img170.png)' | markdownify }}
 {:.image }
 
 
@@ -3773,7 +3773,7 @@ Syntax:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/85.png](Calculate-functions_images/Calculate-functions_img171.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/85.png](Calculate-functions_images/Calculate-functions_img171.png)' | markdownify }}
 {:.image }
 
 
@@ -3791,7 +3791,7 @@ Example:
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/86.png](Calculate-functions_images/Calculate-functions_img172.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/86.png](Calculate-functions_images/Calculate-functions_img172.png)' | markdownify }}
 {:.image }
 
 
@@ -3813,7 +3813,7 @@ Example:
 
 
 
-{ ![](Calculate-functions_images/Calculate-functions_img173.png) | markdownify }
+{{ '![](Calculate-functions_images/Calculate-functions_img173.png)' | markdownify }}
 {:.image }
 
 
@@ -3840,7 +3840,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/10.1.png](Calculate-functions_images/Calculate-functions_img174.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/10.1.png](Calculate-functions_images/Calculate-functions_img174.png)' | markdownify }}
 {:.image }
 
 
@@ -3867,7 +3867,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/10.2.png](Calculate-functions_images/Calculate-functions_img175.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/10.2.png](Calculate-functions_images/Calculate-functions_img175.png)' | markdownify }}
 {:.image }
 
 
@@ -3890,7 +3890,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/10.3.png](Calculate-functions_images/Calculate-functions_img176.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/10.3.png](Calculate-functions_images/Calculate-functions_img176.png)' | markdownify }}
 {:.image }
 
 
@@ -3917,7 +3917,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/87.png](Calculate-functions_images/Calculate-functions_img177.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/87.png](Calculate-functions_images/Calculate-functions_img177.png)' | markdownify }}
 {:.image }
 
 
@@ -3948,7 +3948,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/88.png](Calculate-functions_images/Calculate-functions_img178.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/88.png](Calculate-functions_images/Calculate-functions_img178.png)' | markdownify }}
 {:.image }
 
 
@@ -3974,7 +3974,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/89.png](Calculate-functions_images/Calculate-functions_img179.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/89.png](Calculate-functions_images/Calculate-functions_img179.png)' | markdownify }}
 {:.image }
 
 
@@ -4000,7 +4000,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/90.png](Calculate-functions_images/Calculate-functions_img180.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/90.png](Calculate-functions_images/Calculate-functions_img180.png)' | markdownify }}
 {:.image }
 
 
@@ -4022,7 +4022,7 @@ Remarks:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/91.png](Calculate-functions_images/Calculate-functions_img181.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/91.png](Calculate-functions_images/Calculate-functions_img181.png)' | markdownify }}
 {:.image }
 
 
@@ -4038,7 +4038,7 @@ DAYS(endDate, startDate) where:
 
 Example:
 
-{ ![C:/Users/ApoorvahR/Desktop/94.png](Calculate-functions_images/Calculate-functions_img182.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/94.png](Calculate-functions_images/Calculate-functions_img182.png)' | markdownify }}
 {:.image }
 
 

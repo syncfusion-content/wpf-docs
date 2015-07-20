@@ -26,13 +26,13 @@ The important features of WPFReport Viewer are listed as follows:
 
 
 
-{ ![Description: C:/Users/lingarajs/AppData/Local/Syncfusion/EssentialStudio/9.4.0.62/Reports/WPF/ReportViewer.WPF/Samples/Product Showcase/Product Catalog/Images/productcatelog.png](Overview_images/Overview_img1.png) | markdownify }
+{{ '![Description: C:/Users/lingarajs/AppData/Local/Syncfusion/EssentialStudio/9.4.0.62/Reports/WPF/ReportViewer.WPF/Samples/Product Showcase/Product Catalog/Images/productcatelog.png](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 
 By using the Report Viewer, you can show variety of interactive MicrosoftReport Definition Language (RDL) standard reports. The reports can be exported to PDF and displayed by using Report Viewer.
 
-{ ![Description: D:/TrunkReportingStructure/WPF/ReportViewer.WPF/samples/Product Showcase/Sales Dashboard/Images/salesdashboard.png](Overview_images/Overview_img2.png) | markdownify }
+{{ '![Description: D:/TrunkReportingStructure/WPF/ReportViewer.WPF/samples/Product Showcase/Sales Dashboard/Images/salesdashboard.png](Overview_images/Overview_img2.png)' | markdownify }}
 {:.image }
 
 

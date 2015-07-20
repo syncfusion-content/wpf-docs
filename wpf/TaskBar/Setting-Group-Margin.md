@@ -21,51 +21,51 @@ Use the below code for setting the group margin.
 
 
 
-&lt;!-- Adding TaskBar that have group margin is 5 --&gt;
+<!-- Adding TaskBar that have group margin is 5 -->
 
-&lt;syncfusion:TaskBar Name="taskBar" GroupMargin="5"&gt;
-
-
-
-    &lt;!-- Adding TaskBarItem --&gt;
-
-    &lt;syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1"&gt;
+<syncfusion:TaskBar Name="taskBar" GroupMargin="5">
 
 
 
-        &lt;!-- Adding content to TaskBarItem --&gt;
+    <!-- Adding TaskBarItem -->
 
-        &lt;StackPanel Margin="10" HorizontalAlignment="Center" 										VerticalAlignment="Stretch"&gt;
-
-            &lt;TextBlock TextWrapping="Wrap"&gt;
-
-This taskbar provides an UI similar to that of Windows XP.&lt;/TextBlock&gt;
-
-        &lt;/StackPanel&gt;
-
-    &lt;/syncfusion:TaskBarItem&gt;
+    <syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1">
 
 
 
-    &lt;!-- Adding TaskBarItem --&gt;
+        <!-- Adding content to TaskBarItem -->
 
-    &lt;syncfusion:TaskBarItem Name="taskBarItem2" Header="TaskBarItem2"&gt;
+        <StackPanel Margin="10" HorizontalAlignment="Center" 										VerticalAlignment="Stretch">
+
+            <TextBlock TextWrapping="Wrap">
+
+This taskbar provides an UI similar to that of Windows XP.</TextBlock>
+
+        </StackPanel>
+
+    </syncfusion:TaskBarItem>
 
 
 
-        &lt;!-- Adding content to TaskBarItem --&gt;
+    <!-- Adding TaskBarItem -->
 
-        &lt;StackPanel Margin="10" HorizontalAlignment="Center" 												VerticalAlignment="Stretch"&gt;
+    <syncfusion:TaskBarItem Name="taskBarItem2" Header="TaskBarItem2">
 
-        &lt;TextBlock TextWrapping="Wrap"&gt;
 
-        Specify and customize the group margin.&lt;/TextBlock&gt;
 
-        &lt;/StackPanel&gt;
+        <!-- Adding content to TaskBarItem -->
 
-    &lt;/syncfusion:TaskBarItem&gt;
+        <StackPanel Margin="10" HorizontalAlignment="Center" 												VerticalAlignment="Stretch">
 
-&lt;/syncfusion:TaskBar&gt;
+        <TextBlock TextWrapping="Wrap">
+
+        Specify and customize the group margin.</TextBlock>
+
+        </StackPanel>
+
+    </syncfusion:TaskBarItem>
+
+</syncfusion:TaskBar>
 
 
 
@@ -163,7 +163,7 @@ this.Content = taskBar;
 
 
 
-{ ![](Setting-Group-Margin_images/Setting-Group-Margin_img1.jpeg) | markdownify }
+{{ '![](Setting-Group-Margin_images/Setting-Group-Margin_img1.jpeg)' | markdownify }}
 {:.image }
 
 

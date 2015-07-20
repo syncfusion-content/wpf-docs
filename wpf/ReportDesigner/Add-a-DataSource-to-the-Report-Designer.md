@@ -15,7 +15,7 @@ This feature allows you to add a DataSource to the Report Designer. It binds the
 
 
 
-{ ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig7.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img1.png) | markdownify }
+{{ '![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig7.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -23,7 +23,7 @@ This feature allows you to add a DataSource to the Report Designer. It binds the
 
 
 
-{ ![](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img2.png) | markdownify }
+{{ '![](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -31,7 +31,7 @@ This feature allows you to add a DataSource to the Report Designer. It binds the
 
 
 
-{ ![C:/Users/radhas/Desktop/IMG1.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img3.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/IMG1.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -42,7 +42,7 @@ This feature allows you to add a DataSource to the Report Designer. It binds the
 
 
 
-{ ![C:/Users/radhas/Desktop/IMG2.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img4.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/IMG2.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -50,13 +50,13 @@ This feature allows you to add a DataSource to the Report Designer. It binds the
 
 
 
-{ ![C:/Users/radhas/Desktop/sshot-1.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img5.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/sshot-1.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img5.png)' | markdownify }}
 {:.image }
 
 
 7. Click OK. The DataSource (Adventure) appears in the Report Data panel.
 
-{ ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig12.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img6.png) | markdownify }
+{{ '![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig12.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img6.png)' | markdownify }}
 {:.image }
 
 

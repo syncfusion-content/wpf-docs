@@ -37,43 +37,43 @@ The following code example explains the positioning of adornments in the Chart S
 
 
 
-&lt;syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0"&gt;
+<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            &lt;syncfusion:SfChart.DataContext&gt;
+            <syncfusion:SfChart.DataContext>
 
-                &lt;local:ViewModel&gt;&lt;/local:ViewModel&gt;
+                <local:ViewModel></local:ViewModel>
 
-            &lt;/syncfusion:SfChart.DataContext&gt;
+            </syncfusion:SfChart.DataContext>
 
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:CategoryAxis /&gt;
+                <syncfusion:CategoryAxis />
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.SecondaryAxis>
 
-                &lt;syncfusion:NumericalAxis /&gt;
+                <syncfusion:NumericalAxis />
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
-
-
-
-            &lt;syncfusion:ColumnSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}"&gt;
+            </syncfusion:SfChart.SecondaryAxis>
 
 
 
-                &lt;syncfusion:ColumnSeries.AdornmentsInfo&gt;
+            <syncfusion:ColumnSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
 
-                    &lt;syncfusion:ChartAdornmentInfo AdornmentsPosition="Top" ShowMarker="True" Symbol="Ellipse" SymbolWidth="20" SymbolHeight="20" SymbolInterior="Red"&gt;&lt;/syncfusion:ChartAdornmentInfo&gt;
 
-                &lt;/syncfusion:ColumnSeries.AdornmentsInfo&gt;
 
-            &lt;/syncfusion:ColumnSeries&gt;
+                <syncfusion:ColumnSeries.AdornmentsInfo>
 
-        &lt;/syncfusion:SfChart&gt;
+                    <syncfusion:ChartAdornmentInfo AdornmentsPosition="Top" ShowMarker="True" Symbol="Ellipse" SymbolWidth="20" SymbolHeight="20" SymbolInterior="Red"></syncfusion:ChartAdornmentInfo>
 
-{ ![](Adornments_images/Adornments_img1.png) | markdownify }
+                </syncfusion:ColumnSeries.AdornmentsInfo>
+
+            </syncfusion:ColumnSeries>
+
+        </syncfusion:SfChart>
+
+{{ '![](Adornments_images/Adornments_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -149,59 +149,59 @@ The following code explains the customization of adornments.
 
 
 
-&lt;syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0"&gt;
+<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            &lt;syncfusion:SfChart.Resources&gt;
+            <syncfusion:SfChart.Resources>
 
-                &lt;DataTemplate x:Key="labeltemplate"&gt;
+                <DataTemplate x:Key="labeltemplate">
 
-                    &lt;TextBlock Text="{Binding}" &gt;&lt;/TextBlock&gt;
+                    <TextBlock Text="{Binding}" ></TextBlock>
 
-                &lt;/DataTemplate&gt;
-
-
-
-            &lt;/syncfusion:SfChart.Resources&gt;
-
-            &lt;syncfusion:SfChart.DataContext&gt;
-
-                &lt;local:ViewModel&gt;&lt;/local:ViewModel&gt;
-
-            &lt;/syncfusion:SfChart.DataContext&gt;
-
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
-
-                &lt;syncfusion:CategoryAxis /&gt;
-
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
-
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
-
-                &lt;syncfusion:NumericalAxis  /&gt;
-
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+                </DataTemplate>
 
 
 
-            &lt;syncfusion:ColumnSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}"&gt;
+            </syncfusion:SfChart.Resources>
+
+            <syncfusion:SfChart.DataContext>
+
+                <local:ViewModel></local:ViewModel>
+
+            </syncfusion:SfChart.DataContext>
+
+            <syncfusion:SfChart.PrimaryAxis>
+
+                <syncfusion:CategoryAxis />
+
+            </syncfusion:SfChart.PrimaryAxis>
+
+            <syncfusion:SfChart.SecondaryAxis>
+
+                <syncfusion:NumericalAxis  />
+
+            </syncfusion:SfChart.SecondaryAxis>
 
 
 
-                &lt;syncfusion:ColumnSeries.AdornmentsInfo&gt;
-
-                    &lt;syncfusion:ChartAdornmentInfo AdornmentsPosition="Top" ShowLabel="True" SegmentLabelContent="YValue"  SegmentLabelFormat="#"  ShowMarker="True" Symbol="Ellipse" LabelTemplate="{StaticResource labeltemplate}" SymbolWidth="40" SymbolHeight="40" SymbolInterior="Red"&gt;&lt;/syncfusion:ChartAdornmentInfo&gt;
-
-                &lt;/syncfusion:ColumnSeries.AdornmentsInfo&gt;
+            <syncfusion:ColumnSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
 
 
 
-            &lt;/syncfusion:ColumnSeries&gt;
+                <syncfusion:ColumnSeries.AdornmentsInfo>
 
-        &lt;/syncfusion:SfChart&gt;
+                    <syncfusion:ChartAdornmentInfo AdornmentsPosition="Top" ShowLabel="True" SegmentLabelContent="YValue"  SegmentLabelFormat="#"  ShowMarker="True" Symbol="Ellipse" LabelTemplate="{StaticResource labeltemplate}" SymbolWidth="40" SymbolHeight="40" SymbolInterior="Red"></syncfusion:ChartAdornmentInfo>
+
+                </syncfusion:ColumnSeries.AdornmentsInfo>
 
 
 
-{ ![](Adornments_images/Adornments_img2.png) | markdownify }
+            </syncfusion:ColumnSeries>
+
+        </syncfusion:SfChart>
+
+
+
+{{ '![](Adornments_images/Adornments_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -241,63 +241,63 @@ The following code explains how to add connector line to the adornments.
 
 [XAML]
 
-&lt;syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0"&gt;
+<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            &lt;syncfusion:SfChart.Resources&gt;
+            <syncfusion:SfChart.Resources>
 
-                &lt;DataTemplate x:Key="labeltemplate"&gt;
+                <DataTemplate x:Key="labeltemplate">
 
-                    &lt;TextBlock Text="{Binding}" &gt;&lt;/TextBlock&gt;
+                    <TextBlock Text="{Binding}" ></TextBlock>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-                &lt;Style x:Key="linestyle" TargetType="Path"&gt;
+                <Style x:Key="linestyle" TargetType="Path">
 
-                    &lt;Setter Property="Stroke" Value="Blue"&gt;&lt;/Setter&gt;
+                    <Setter Property="Stroke" Value="Blue"></Setter>
 
-                    &lt;Setter Property="StrokeThickness" Value="3"&gt;&lt;/Setter&gt;
+                    <Setter Property="StrokeThickness" Value="3"></Setter>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/syncfusion:SfChart.Resources&gt;
+            </syncfusion:SfChart.Resources>
 
-            &lt;syncfusion:SfChart.DataContext&gt;
+            <syncfusion:SfChart.DataContext>
 
-                &lt;local:ViewModel&gt;&lt;/local:ViewModel&gt;
+                <local:ViewModel></local:ViewModel>
 
-            &lt;/syncfusion:SfChart.DataContext&gt;
+            </syncfusion:SfChart.DataContext>
 
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:CategoryAxis  /&gt;
+                <syncfusion:CategoryAxis  />
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.SecondaryAxis>
 
-                &lt;syncfusion:NumericalAxis   /&gt;
+                <syncfusion:NumericalAxis   />
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
-
-
-
-            &lt;syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}"&gt;
-
-                &lt;syncfusion:LineSeries.AdornmentsInfo&gt;
-
-                    &lt;syncfusion:ChartAdornmentInfo   ShowLabel="True"  SegmentLabelContent="YValue"  ShowMarker="True" Symbol="Ellipse" SymbolWidth="20" SymbolHeight="20" SymbolInterior="Red" ConnectorRotationAngle="90" ShowConnectorLine="True" ConnectorHeight="20" ConnectorLineStyle="{StaticResource linestyle}"  SegmentLabelFormat="#"   LabelTemplate="{StaticResource labeltemplate}"/&gt;
-
-                &lt;/syncfusion:LineSeries.AdornmentsInfo&gt;
+            </syncfusion:SfChart.SecondaryAxis>
 
 
 
-            &lt;/syncfusion:LineSeries&gt;
+            <syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
 
-        &lt;/syncfusion:SfChart&gt;
+                <syncfusion:LineSeries.AdornmentsInfo>
+
+                    <syncfusion:ChartAdornmentInfo   ShowLabel="True"  SegmentLabelContent="YValue"  ShowMarker="True" Symbol="Ellipse" SymbolWidth="20" SymbolHeight="20" SymbolInterior="Red" ConnectorRotationAngle="90" ShowConnectorLine="True" ConnectorHeight="20" ConnectorLineStyle="{StaticResource linestyle}"  SegmentLabelFormat="#"   LabelTemplate="{StaticResource labeltemplate}"/>
+
+                </syncfusion:LineSeries.AdornmentsInfo>
 
 
 
-{ ![](Adornments_images/Adornments_img3.png) | markdownify }
+            </syncfusion:LineSeries>
+
+        </syncfusion:SfChart>
+
+
+
+{{ '![](Adornments_images/Adornments_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -352,19 +352,19 @@ ItemsSource="{Binding CompanyDetails}"
 
 
 
-            &lt;syncfusion:PieSeries.AdornmentsInfo&gt;
+            <syncfusion:PieSeries.AdornmentsInfo>
 
-                &lt;syncfusion:ChartAdornmentInfo ShowLabel="True" ConnectorHeight="30" ShowConnectorLine="True" /&gt;
+                <syncfusion:ChartAdornmentInfo ShowLabel="True" ConnectorHeight="30" ShowConnectorLine="True" />
 
-            &lt;/syncfusion:PieSeries.AdornmentsInfo&gt;
+            </syncfusion:PieSeries.AdornmentsInfo>
 
-        &lt;/syncfusion:PieSeries&gt;
-
-
+        </syncfusion:PieSeries>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-72.png](Adornments_images/Adornments_img4.png) | markdownify }
+
+
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-72.png](Adornments_images/Adornments_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -386,13 +386,13 @@ ItemsSource="{Binding CompanyDetails}"
 
                 EnableSmartLabels="True">
 
-            &lt;syncfusion:PieSeries.AdornmentsInfo&gt;
+            <syncfusion:PieSeries.AdornmentsInfo>
 
-                &lt;syncfusion:ChartAdornmentInfo ShowLabel="True" ConnectorHeight="30" ShowConnectorLine="True" /&gt;
+                <syncfusion:ChartAdornmentInfo ShowLabel="True" ConnectorHeight="30" ShowConnectorLine="True" />
 
-            &lt;/syncfusion:PieSeries.AdornmentsInfo&gt;
+            </syncfusion:PieSeries.AdornmentsInfo>
 
-        &lt;/syncfusion:PieSeries&gt;
+        </syncfusion:PieSeries>
 
 
 
@@ -400,7 +400,7 @@ ItemsSource="{Binding CompanyDetails}"
 
  The following screenshot illustrates a SmartLabel with LabelPosition as Outside.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-73.png](Adornments_images/Adornments_img5.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-73.png](Adornments_images/Adornments_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -420,19 +420,19 @@ Segment label is positioned inside the circular chart. The following code illus
 
                 EnableSmartLabels="True">
 
-            &lt;syncfusion:PieSeries.AdornmentsInfo&gt;
+            <syncfusion:PieSeries.AdornmentsInfo>
 
-                &lt;syncfusion:ChartAdornmentInfo ShowLabel="True" /&gt;
+                <syncfusion:ChartAdornmentInfo ShowLabel="True" />
 
-            &lt;/syncfusion:PieSeries.AdornmentsInfo&gt;
+            </syncfusion:PieSeries.AdornmentsInfo>
 
-        &lt;/syncfusion:PieSeries&gt;
+        </syncfusion:PieSeries>
 
 
 
  The following screenshot illustrates a SmartLabel with LabelPosition as Inside.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-74.png](Adornments_images/Adornments_img6.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-74.png](Adornments_images/Adornments_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -440,7 +440,7 @@ Connector Type
 
 This property is used to define the type of connector line that is to be drawn. This can either be Bezier or Line.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-76.png](Adornments_images/Adornments_img7.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-76.png](Adornments_images/Adornments_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -462,19 +462,19 @@ The following code example and screenshot demonstrate the usage of UseSeriesPale
 
                 EnableSmartLabels="True">
 
-            &lt;syncfusion:PieSeries.AdornmentsInfo&gt;
+            <syncfusion:PieSeries.AdornmentsInfo>
 
-                &lt;syncfusion:ChartAdornmentInfo UseSeriesPalette="True" ShowLabel="True" ConnectorHeight="40" ShowConnectorLine="True"/&gt;
+                <syncfusion:ChartAdornmentInfo UseSeriesPalette="True" ShowLabel="True" ConnectorHeight="40" ShowConnectorLine="True"/>
 
-            &lt;/syncfusion:PieSeries.AdornmentsInfo&gt;
-
-
-
-        &lt;/syncfusion:PieSeries&gt;
+            </syncfusion:PieSeries.AdornmentsInfo>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-75.png](Adornments_images/Adornments_img8.png) | markdownify }
+        </syncfusion:PieSeries>
+
+
+
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-75.png](Adornments_images/Adornments_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -542,9 +542,9 @@ The following code illustrates the various customization for adornments.
 
                                      >
 
-&lt;!--Adornment Customization--&gt;
+<!--Adornment Customization-->
 
-&lt;syncfusion:ColumnSeries.AdornmentsInfo&gt;
+<syncfusion:ColumnSeries.AdornmentsInfo>
 
 <syncfusion:ChartAdornmentInfo ShowLabel="True"  
 
@@ -564,17 +564,17 @@ The following code illustrates the various customization for adornments.
 
                   SymbolStroke="Black"
 
-                                                   >                    &lt;/syncfusion:ChartAdornmentInfo&gt;
+                                                   >                    </syncfusion:ChartAdornmentInfo>
 
-&lt;/syncfusion:ColumnSeries.AdornmentsInfo&gt;
+</syncfusion:ColumnSeries.AdornmentsInfo>
 
-&lt;/syncfusion:ColumnSeries&gt;
-
-
+</syncfusion:ColumnSeries>
 
 
 
-{ ![](Adornments_images/Adornments_img9.png) | markdownify }
+
+
+{{ '![](Adornments_images/Adornments_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -654,9 +654,9 @@ XAML
 
                                       >
 
-&lt;!—Adornment Label Customization--&gt;
+<!—Adornment Label Customization-->
 
-        &lt;syncfusion:ColumnSeries.AdornmentsInfo&gt;
+        <syncfusion:ColumnSeries.AdornmentsInfo>
 
       <syncfusion:ChartAdornmentInfo ShowLabel="True"  
 
@@ -678,17 +678,17 @@ XAML
 
                                      SegmentLabelFormat="# cm">
 
-                    &lt;/syncfusion:ChartAdornmentInfo&gt;  &lt;/syncfusion:ColumnSeries.AdornmentsInfo&gt;
+                    </syncfusion:ChartAdornmentInfo>  </syncfusion:ColumnSeries.AdornmentsInfo>
 
 
 
- &lt;/syncfusion:ColumnSeries&gt;    
+ </syncfusion:ColumnSeries>    
 
 
 
 
 
-{ ![](Adornments_images/Adornments_img10.png) | markdownify }
+{{ '![](Adornments_images/Adornments_img10.png)' | markdownify }}
 {:.image }
 
 

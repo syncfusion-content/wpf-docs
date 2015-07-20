@@ -11,7 +11,7 @@ documentation: ug
 
 Subset filter is used to filter the number of records in the result set. Subset filter will get a numeric number as input and restrict the number of records within that count.
 
-{ ![](Subset-Filter_images/Subset-Filter_img1.png) | markdownify }
+{{ '![](Subset-Filter_images/Subset-Filter_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -19,11 +19,11 @@ When ShowRange property is set to true, two Thumbs are placed in the track. One 
 
 [XAML]
 
-&lt;editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" ShowRange="True" RangeStart="40" RangeEnd="70"/&gt;
+<editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" ShowRange="True" RangeStart="40" RangeEnd="70"/>
 
 
 
-{ ![](Range_images/Range_img1.jpeg) | markdownify }
+{{ '![](Range_images/Range_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -33,11 +33,11 @@ Gets or sets the start value of the range start.
 
 [XAML]
 
-&lt;editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="10" ShowRange="True" RangeStart="10" RangeEnd="70"/&gt;
+<editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="10" ShowRange="True" RangeStart="10" RangeEnd="70"/>
 
 
 
-{ ![](Range_images/Range_img2.jpeg) | markdownify }
+{{ '![](Range_images/Range_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -49,11 +49,11 @@ Gets or sets the end value of the range end.
 
 [XAML]
 
-&lt;editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" ShowRange="True" RangeStart="30" RangeEnd="90"  /&gt;
+<editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" ShowRange="True" RangeStart="30" RangeEnd="90"  />
 
 
 
-{ ![](Range_images/Range_img3.jpeg) | markdownify }
+{{ '![](Range_images/Range_img3.jpeg)' | markdownify }}
 {:.image }
 
 

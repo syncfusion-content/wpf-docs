@@ -17,51 +17,51 @@ You can customize leaf nodes by assigning data template to LeafTemplate of SfTre
 
 
 
-&lt;Grid Background="Black"&gt;
+<Grid Background="Black">
 
-    &lt;Grid.DataContext&gt;
+    <Grid.DataContext>
 
-        &lt;local:OlymicMedalsViewModel/&gt;
+        <local:OlymicMedalsViewModel/>
 
-    &lt;/Grid.DataContext&gt;
+    </Grid.DataContext>
 
-    &lt;syncfusion:SfTreeMap ItemsSource="{Binding OlympicMedalsDetails}" Margin="50" WeightValuePath="TotalMedals" ColorValuePath="GoldMedals"&gt;
+    <syncfusion:SfTreeMap ItemsSource="{Binding OlympicMedalsDetails}" Margin="50" WeightValuePath="TotalMedals" ColorValuePath="GoldMedals">
 
-        &lt;syncfusion:SfTreeMap.LeafTemplate&gt;
+        <syncfusion:SfTreeMap.LeafTemplate>
 
-            &lt;DataTemplate&gt;
+            <DataTemplate>
 
-                &lt;Border BorderBrush="Transparent" BorderThickness="3" Background="#D73028"&gt;
+                <Border BorderBrush="Transparent" BorderThickness="3" Background="#D73028">
 
-                    &lt;Image Source="{Binding Data.GameImgSource}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,25,0,0" Stretch="None"/&gt;
+                    <Image Source="{Binding Data.GameImgSource}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,25,0,0" Stretch="None"/>
 
-                &lt;/Border&gt;
+                </Border>
 
-            &lt;/DataTemplate&gt;
+            </DataTemplate>
 
-        &lt;/syncfusion:SfTreeMap.LeafTemplate&gt;
+        </syncfusion:SfTreeMap.LeafTemplate>
 
-        &lt;syncfusion:SfTreeMap.Levels&gt;
+        <syncfusion:SfTreeMap.Levels>
 
-            &lt;syncfusion:TreeMapFlatLevel GroupPath="GameName" ShowLabels="True"&gt;
+            <syncfusion:TreeMapFlatLevel GroupPath="GameName" ShowLabels="True">
 
-                &lt;syncfusion:TreeMapFlatLevel.LabelTemplate&gt;
+                <syncfusion:TreeMapFlatLevel.LabelTemplate>
 
-                    &lt;DataTemplate&gt;
+                    <DataTemplate>
 
-                        &lt;TextBlock Padding="10 5 0 0" Text="{Binding Label}" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top"/&gt;
+                        <TextBlock Padding="10 5 0 0" Text="{Binding Label}" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-                    &lt;/DataTemplate&gt;
+                    </DataTemplate>
 
-                &lt;/syncfusion:TreeMapFlatLevel.LabelTemplate&gt;
+                </syncfusion:TreeMapFlatLevel.LabelTemplate>
 
-            &lt;/syncfusion:TreeMapFlatLevel&gt;
+            </syncfusion:TreeMapFlatLevel>
 
-        &lt;/syncfusion:SfTreeMap.Levels&gt;
+        </syncfusion:SfTreeMap.Levels>
 
-    &lt;/syncfusion:SfTreeMap&gt;
+    </syncfusion:SfTreeMap>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -127,7 +127,7 @@ You can customize leaf nodes by assigning data template to LeafTemplate of SfTre
 
 
 
-{ ![](Customizing-Leaf-Nodes_images/Customizing-Leaf-Nodes_img1.png) | markdownify }
+{{ '![](Customizing-Leaf-Nodes_images/Customizing-Leaf-Nodes_img1.png)' | markdownify }}
 {:.image }
 
 

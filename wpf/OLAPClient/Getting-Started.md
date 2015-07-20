@@ -20,13 +20,13 @@ In the following example, the OLAP Client is loaded with the default report by p
 1. Open the Visual Studio IDE and from the File menu, select New  Project.
 2. In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application and click OK.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
 3. Drag and drop the OLAP Client control from the Syncfusion BI WPF toolbox onto the Design page. The required Syncfusion assemblies are added automatically to the application.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -46,17 +46,17 @@ In the following example, the OLAP Client is loaded with the default report by p
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid&gt;
+    <Grid>
 
 
 
-        &lt;syncfusion:OlapClient Name="olapClient1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/&gt;
+        <syncfusion:OlapClient Name="olapClient1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
 
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -76,15 +76,15 @@ In the following example, the OLAP Client is loaded with the default report by p
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid&gt;
+    <Grid>
 
 
 
-&lt;syncfusion:OlapClient Name="olapClient1" Height="600" Width="700"/&gt;
+<syncfusion:OlapClient Name="olapClient1" Height="600" Width="700"/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -162,7 +162,7 @@ End Class
 
 7. Run the application.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -188,11 +188,11 @@ The OLAP Client control can also be created and configured by using the Expressi
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -208,12 +208,12 @@ The OLAP Client control can also be created and configured by using the Expressi
 8. Syncfusion.OlapShared.Wpf
 9. Syncfusion.OlapTools.Wpf
 
-Assembly Location: &lt;system drive&gt;\Program Files(x86)\Syncfusion\Essential Studio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\&lt;framework version&gt;
+Assembly Location: <system drive>\Program Files(x86)\Syncfusion\Essential Studio\<version number>\precompiledassemblies\<version number>\<framework version>
 
 6. The OLAP Client is added under the Assets automatically.
 7. Now, drag and drop the OLAP Client to the Designer.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -233,13 +233,13 @@ Assembly Location: &lt;system drive&gt;\Program Files(x86)\Syncfusion\Essential 
 
      Width="900" Height="630" >
 
-    &lt;Grid&gt;
+    <Grid>
 
-      &lt;syncfusion:OlapClient Name="olapClient1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/&gt;
+      <syncfusion:OlapClient Name="olapClient1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -322,7 +322,7 @@ End Class
 
 10. Run the application and the following output is displayed.
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -333,11 +333,11 @@ End Class
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -356,7 +356,7 @@ End Class
 12. Syncfusion.OlapTools.WPF
 13. Syncfusion.Tools.WPF
 
-Assembly Location: &lt;system drive&gt;:\Program Files (x86)\Syncfusion\EssentialStudio\&lt;version number&gt;\precompiledassmblies\&lt;version number&gt;\&lt;Framework version&gt;\
+Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudio\<version number>\precompiledassmblies\<version number>\<Framework version>\
 
 4. Add the following namespaces in the code-behind for instantiating the OlapClient and manipulating the OlapDataManager.
 1. Syncfusion.Olap.Manager
@@ -456,7 +456,7 @@ Partial Public Class MainWindow
 
 End Class
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 

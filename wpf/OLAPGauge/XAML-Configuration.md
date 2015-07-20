@@ -111,37 +111,37 @@ olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=a
 
 
 
-&lt;!- Adding Elements to Categorical Axis --&gt;
+<!- Adding Elements to Categorical Axis -->
 
-&lt;syncfusion:OlapGauge.CategoricalAxis&gt;
+<syncfusion:OlapGauge.CategoricalAxis>
 
-                    &lt;syncfusion:Dimension Name="Date" HierarchyName="Fiscal" LevelName="Fiscal Year" IncludeMembers="FY 2002, FY 2003"  /&gt;     &lt;!- Multiple Members where specified by comma separate --&gt;               
+                    <syncfusion:Dimension Name="Date" HierarchyName="Fiscal" LevelName="Fiscal Year" IncludeMembers="FY 2002, FY 2003"  />     <!- Multiple Members where specified by comma separate -->               
 
-                    &lt;syncfusion:Kpi Name="Revenue" ShowGoal="True" ShowStatus="True" ShowValue="True" ShowTrend="True" /&gt;
+                    <syncfusion:Kpi Name="Revenue" ShowGoal="True" ShowStatus="True" ShowValue="True" ShowTrend="True" />
 
-&lt;/syncfusion:OlapGauge.CategoricalAxis&gt;
-
-
-
-&lt;!- Adding Elements to Series Axis --&gt;
-
-&lt;syncfusion:OlapGauge.SeriesAxis&gt;
-
-                    &lt;syncfusion:Dimension Name="Sales Channel" HierarchyName="Sales Channel" LevelName="Sales Channel" /&gt;
-
-                    &lt;syncfusion:Dimension Name="Product" HierarchyName="Product Model Lines" LevelName="Product Line" IncludeMembers="Road" /&gt;
-
-&lt;/syncfusion:OlapGauge.SeriesAxis&gt;
+</syncfusion:OlapGauge.CategoricalAxis>
 
 
 
-&lt;/syncfusion:OlapGauge&gt;
+<!- Adding Elements to Series Axis -->
+
+<syncfusion:OlapGauge.SeriesAxis>
+
+                    <syncfusion:Dimension Name="Sales Channel" HierarchyName="Sales Channel" LevelName="Sales Channel" />
+
+                    <syncfusion:Dimension Name="Product" HierarchyName="Product Model Lines" LevelName="Product Line" IncludeMembers="Road" />
+
+</syncfusion:OlapGauge.SeriesAxis>
+
+
+
+</syncfusion:OlapGauge>
 
 
 
 
 
-{ ![](XAML-Configuration_images/XAML-Configuration_img1.png) | markdownify }
+{{ '![](XAML-Configuration_images/XAML-Configuration_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -151,5 +151,5 @@ Sample Link
 
 A sample demo is available at the following link:     
 
-..\Syncfusion\EssentialStudio\&lt;Versionnumber&gt;\BI\WPF\OlapGauge.WPF\Samples\Defining Reports\XAML Configuration Demo 
+..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGauge.WPF\Samples\Defining Reports\XAML Configuration Demo 
 

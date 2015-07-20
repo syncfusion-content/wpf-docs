@@ -167,11 +167,11 @@ public class Model
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-   &lt;local:ViewModel/&gt;
+   <local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -179,27 +179,27 @@ public class Model
 
 [XAML]
 
-&lt;syncfusion:MenuAdv ItemsSource="{Binding MenuItems}"&gt;
+<syncfusion:MenuAdv ItemsSource="{Binding MenuItems}">
 
 
 
-            &lt;syncfusion:MenuAdv.ItemTemplate&gt;
+            <syncfusion:MenuAdv.ItemTemplate>
 
 
 
-                &lt;HierarchicalDataTemplate ItemsSource="{Binding SubItems}"&gt;
+                <HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
 
-                    &lt;TextBlock Text="{Binding Header}" /&gt;
+                    <TextBlock Text="{Binding Header}" />
 
-                &lt;/HierarchicalDataTemplate&gt;
-
-
-
-            &lt;/syncfusion:MenuAdv.ItemTemplate&gt;
+                </HierarchicalDataTemplate>
 
 
 
-        &lt;/syncfusion:MenuAdv&gt;
+            </syncfusion:MenuAdv.ItemTemplate>
+
+
+
+        </syncfusion:MenuAdv>
 
 
 
@@ -207,7 +207,7 @@ public class Model
 
 Implementing the above code will generate the following control.
 
-{ ![](Data-Binding_images/Data-Binding_img1.png) | markdownify }
+{{ '![](Data-Binding_images/Data-Binding_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -219,81 +219,81 @@ An XML file can also be used as _ItemsSource_ for the MenuAdv control. The follo
 
 [XML]
 
-&lt;Categories&gt;
+<Categories>
 
 
 
-  &lt;Root Name="Products" &gt;
+  <Root Name="Products" >
 
 
 
-    &lt;SubItem Name="User Interface" &gt;
+    <SubItem Name="User Interface" >
 
-      &lt;SubItem Name="ASP .NET"/&gt;
+      <SubItem Name="ASP .NET"/>
 
-      &lt;SubItem Name="ASP .NET MVC"/&gt;
+      <SubItem Name="ASP .NET MVC"/>
 
-      &lt;SubItem Name="WPF"&gt;
+      <SubItem Name="WPF">
 
-        &lt;SubItem Name="Tools"/&gt;
+        <SubItem Name="Tools"/>
 
-        &lt;SubItem Name="Chart"/&gt;
+        <SubItem Name="Chart"/>
 
-        &lt;SubItem Name="Grid"/&gt;
+        <SubItem Name="Grid"/>
 
-        &lt;SubItem Name="Diagram"/&gt;
+        <SubItem Name="Diagram"/>
 
-        &lt;SubItem Name="Gauge"/&gt;
+        <SubItem Name="Gauge"/>
 
-        &lt;SubItem Name="Schedule"/&gt;
+        <SubItem Name="Schedule"/>
 
-        &lt;SubItem Name="Edit"/&gt;
+        <SubItem Name="Edit"/>
 
-      &lt;/SubItem&gt;
-
-
-
-      &lt;SubItem Name="Silverlight"/&gt;
-
-      &lt;SubItem Name="Mobile MVC"/&gt;
-
-      &lt;SubItem Name="Windows Phone"/&gt;
-
-      &lt;SubItem Name="Windows Forms"/&gt;
-
-    &lt;/SubItem&gt;
+      </SubItem>
 
 
 
-    &lt;SubItem Name="Business Intelligence"&gt;
+      <SubItem Name="Silverlight"/>
 
-      &lt;SubItem Name="WPF"/&gt;
+      <SubItem Name="Mobile MVC"/>
 
-      &lt;SubItem Name="ASP.NET"/&gt;
+      <SubItem Name="Windows Phone"/>
 
-      &lt;SubItem Name="ASP.NET MVC"/&gt;
+      <SubItem Name="Windows Forms"/>
 
-      &lt;SubItem Name="Silverlight"/&gt;
-
-    &lt;/SubItem&gt;
+    </SubItem>
 
 
 
-    &lt;SubItem Name="Reporting"&gt;
+    <SubItem Name="Business Intelligence">
 
-      &lt;SubItem Name="WPF"/&gt;
+      <SubItem Name="WPF"/>
 
-      &lt;SubItem Name="Windows Forms"/&gt;
+      <SubItem Name="ASP.NET"/>
 
-    &lt;/SubItem&gt;   
+      <SubItem Name="ASP.NET MVC"/>
+
+      <SubItem Name="Silverlight"/>
+
+    </SubItem>
 
 
 
-  &lt;/Root&gt;
+    <SubItem Name="Reporting">
+
+      <SubItem Name="WPF"/>
+
+      <SubItem Name="Windows Forms"/>
+
+    </SubItem>   
 
 
 
-&lt;/Categories&gt;
+  </Root>
+
+
+
+</Categories>
 
 
 
@@ -301,7 +301,7 @@ An XML file can also be used as _ItemsSource_ for the MenuAdv control. The follo
 
 [XAML]
 
-&lt;XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Categories"/&gt; 
+<XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Categories"/> 
 
 
 
@@ -311,31 +311,31 @@ An XML file can also be used as _ItemsSource_ for the MenuAdv control. The follo
 
 [XAML]
 
-  &lt;syncfusion:MenuAdv	ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Root}" &gt;
+  <syncfusion:MenuAdv	ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Root}" >
 
 
 
-       &lt;syncfusion:MenuAdv.ItemTemplate&gt;
+       <syncfusion:MenuAdv.ItemTemplate>
 
 
 
-            &lt;HierarchicalDataTemplate ItemsSource="{Binding 			XPath=SubItem}"&gt;
+            <HierarchicalDataTemplate ItemsSource="{Binding 			XPath=SubItem}">
 
 
 
-                    &lt;TextBlock Text="{Binding XPath=@Name}" /&gt;
+                    <TextBlock Text="{Binding XPath=@Name}" />
 
 
 
-                &lt;/HierarchicalDataTemplate&gt;
+                </HierarchicalDataTemplate>
 
 
 
-            &lt;/syncfusion:MenuAdv.ItemTemplate&gt;
+            </syncfusion:MenuAdv.ItemTemplate>
 
 
 
-        &lt;/syncfusion:MenuAdv&gt;
+        </syncfusion:MenuAdv>
 
 
 
@@ -345,7 +345,7 @@ An XML file can also be used as _ItemsSource_ for the MenuAdv control. The follo
 
 This will create the following MenuAdv control.
 
-{ ![](Data-Binding_images/Data-Binding_img2.png) | markdownify }
+{{ '![](Data-Binding_images/Data-Binding_img2.png)' | markdownify }}
 {:.image }
 
 

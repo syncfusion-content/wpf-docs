@@ -91,11 +91,11 @@ public class ViewModel
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-   &lt;local:ViewModel/&gt;
+   <local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -105,21 +105,21 @@ public class ViewModel
 
 [XAML]
 
-  &lt;syncfusion:TileViewControl ItemsSource="{Binding TileItems}" &gt;
+  <syncfusion:TileViewControl ItemsSource="{Binding TileItems}" >
 
-            &lt;syncfusion:TileViewControl.ItemContainerStyle&gt;
+            <syncfusion:TileViewControl.ItemContainerStyle>
 
-                &lt;Style TargetType="{x:Type syncfusion:TileViewItem}"&gt;
+                <Style TargetType="{x:Type syncfusion:TileViewItem}">
 
-                    &lt;Setter Property="Header" Value="{Binding Header}" /&gt;
+                    <Setter Property="Header" Value="{Binding Header}" />
 
-                    &lt;Setter Property="Content" Value="{Binding Content}"/&gt;
+                    <Setter Property="Content" Value="{Binding Content}"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/syncfusion:TileViewControl.ItemContainerStyle&gt;
+            </syncfusion:TileViewControl.ItemContainerStyle>
 
-        &lt;/syncfusion:TileViewControl&gt;
+        </syncfusion:TileViewControl>
 
 
 
@@ -129,7 +129,7 @@ This creates the following TileViewControl.
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img1.png) | markdownify }
+{{ '![](Data-Binding_images/Data-Binding_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -145,25 +145,25 @@ An XML file can also be used as _ItemsSource_ for the TileViewControl. The follo
 
 [XML]
 
-&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+<?xml version="1.0" encoding="utf-8" ?>
 
-&lt;Books&gt;
-
-
-
-  &lt;Book Name="Programming C# 4.0" Description="Learn C# fundamentals, such as variables, flow control, loops, and methods"/&gt;
-
-  &lt;Book Name="Programming WPF" Description="A tutorial on XAML, the new HTML-like markup language for declaring Windows UI"/&gt;
-
-  &lt;Book Name="Essential WPF" Description="Visuals and media, including 2D, 3D, video, and animation"/&gt;
-
-  &lt;Book Name="WPF Unleashed" Description="Examines the WPF feature areas in incredible depth: controls, layout, resources, data binding, styling, graphics, animation, and more"/&gt;
+<Books>
 
 
 
+  <Book Name="Programming C# 4.0" Description="Learn C# fundamentals, such as variables, flow control, loops, and methods"/>
+
+  <Book Name="Programming WPF" Description="A tutorial on XAML, the new HTML-like markup language for declaring Windows UI"/>
+
+  <Book Name="Essential WPF" Description="Visuals and media, including 2D, 3D, video, and animation"/>
+
+  <Book Name="WPF Unleashed" Description="Examines the WPF feature areas in incredible depth: controls, layout, resources, data binding, styling, graphics, animation, and more"/>
 
 
-&lt;/Books&gt;
+
+
+
+</Books>
 
 
 
@@ -177,7 +177,7 @@ An XML file can also be used as _ItemsSource_ for the TileViewControl. The follo
 
 [XAML]
 
-&lt;XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Books"/&gt; 
+<XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Books"/> 
 
 
 
@@ -189,33 +189,33 @@ An XML file can also be used as _ItemsSource_ for the TileViewControl. The follo
 
 [XAML]
 
-&lt;syncfusion:TileViewControl ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   &gt;
+<syncfusion:TileViewControl ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   >
 
-            &lt;syncfusion:TileViewControl.ItemContainerStyle&gt;
+            <syncfusion:TileViewControl.ItemContainerStyle>
 
-                &lt;Style TargetType="{x:Type syncfusion:TileViewItem}"&gt;
+                <Style TargetType="{x:Type syncfusion:TileViewItem}">
 
-                    &lt;Setter Property="Header" Value="{Binding XPath=@Name}" /&gt;
+                    <Setter Property="Header" Value="{Binding XPath=@Name}" />
 
-                    &lt;Setter Property="ContentTemplate"&gt;
+                    <Setter Property="ContentTemplate">
 
-                        &lt;Setter.Value&gt;
+                        <Setter.Value>
 
-                            &lt;DataTemplate&gt;
+                            <DataTemplate>
 
-                                &lt;TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap"/&gt;
+                                <TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap"/>
 
-                            &lt;/DataTemplate&gt;
+                            </DataTemplate>
 
-                        &lt;/Setter.Value&gt;
+                        </Setter.Value>
 
-                    &lt;/Setter&gt;                    
+                    </Setter>                    
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/syncfusion:TileViewControl.ItemContainerStyle&gt;
+            </syncfusion:TileViewControl.ItemContainerStyle>
 
-&lt;/syncfusion:TileViewControl&gt;
+</syncfusion:TileViewControl>
 
 
 
@@ -225,7 +225,7 @@ This will create the following TileViewControl.
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img2.png) | markdownify }
+{{ '![](Data-Binding_images/Data-Binding_img2.png)' | markdownify }}
 {:.image }
 
 

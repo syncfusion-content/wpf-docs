@@ -13,7 +13,7 @@ The Thumb tooltip displays the current value where the Thumb stands.
 
 
 
-{ ![](Thumb-ToolTip_images/Thumb-ToolTip_img1.jpeg) | markdownify }
+{{ '![](Thumb-ToolTip_images/Thumb-ToolTip_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -23,11 +23,11 @@ ThumbToolTipPrecision property is used to define the precision of the value disp
 
 [XAML]
 
-&lt;editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" Value="50" ThumbToolTipPrecision="2"/&gt;
+<editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" Value="50" ThumbToolTipPrecision="2"/>
 
 
 
-{ ![](Thumb-ToolTip_images/Thumb-ToolTip_img2.jpeg) | markdownify }
+{{ '![](Thumb-ToolTip_images/Thumb-ToolTip_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -47,11 +47,11 @@ Tooltip is placed either below the Thumb in horizontal orientation or right of t
 
 [XAML]
 
-&lt;editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" Value="50" ThumbToolTipPlacement="BottonRight" /&gt;
+<editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" Value="50" ThumbToolTipPlacement="BottonRight" />
 
 
 
-{ ![](Thumb-ToolTip_images/Thumb-ToolTip_img3.jpeg) | markdownify }
+{{ '![](Thumb-ToolTip_images/Thumb-ToolTip_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -65,11 +65,11 @@ Tooltip is placed either above the Thumb in horizontal orientation or left of th
 
 [XAML]
 
-&lt;editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" Value="50" ThumbToolTipPlacement="TopLeft" /&gt;
+<editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" Value="50" ThumbToolTipPlacement="TopLeft" />
 
 
 
-{ ![](Thumb-ToolTip_images/Thumb-ToolTip_img4.jpeg) | markdownify }
+{{ '![](Thumb-ToolTip_images/Thumb-ToolTip_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -81,7 +81,7 @@ No Tooltip appears.
 
 
 
-{ ![](Thumb-ToolTip_images/Thumb-ToolTip_img5.jpeg) | markdownify }
+{{ '![](Thumb-ToolTip_images/Thumb-ToolTip_img5.jpeg)' | markdownify }}
 {:.image }
 
 

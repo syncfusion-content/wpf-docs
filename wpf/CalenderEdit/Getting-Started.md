@@ -30,7 +30,7 @@ The various elements of CalendarEdit control are illustrated in the following im
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -47,7 +47,7 @@ To create the CalendarEdit control through designer, follow the steps:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -60,14 +60,14 @@ To create the CalendarEdit control through code, use the following XAML or C# co
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding CalendarEdit control --&gt;&lt;syncfusion:CalendarEdit Name="calendarEdit"/&gt;</td></tr>
+[XAML]<!-- Adding CalendarEdit control --><syncfusion:CalendarEdit Name="calendarEdit"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
 {:.image }
 
 

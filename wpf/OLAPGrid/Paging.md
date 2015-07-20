@@ -20,7 +20,7 @@ When you process large CellSet, it is splitted into several number of segments a
 1. Include the following Syncfusion assembly from the installed location.
 1. Syncfusion.OlapShared.Wpf
 
-Assembly Location: &lt;system drive&gt;:\Program Files (x86)\Syncfusion\EssentialStudio\&lt;version number&gt;\precompiledassemblies\&lt;version number&gt;\
+Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudio\<version number>\precompiledassemblies\<version number>\
 
 2. Add the namespace and OlapPager in XAML page as follows.
 
@@ -38,31 +38,31 @@ x:Class="SampleApplication.MainWindow"
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;Grid.RowDefinitions&gt;
+        <Grid.RowDefinitions>
 
-                &lt;RowDefinition Height="*"/&gt;
+                <RowDefinition Height="*"/>
 
-                &lt;RowDefinition Height="Auto"/&gt;
+                <RowDefinition Height="Auto"/>
 
-        &lt;/Grid.RowDefinitions&gt;
+        </Grid.RowDefinitions>
 
-    &lt;GroupBox  Header="OlapGrid" Grid.Row="0"&gt;
+    <GroupBox  Header="OlapGrid" Grid.Row="0">
 
-         &lt;syncfusion:OlapGrid  Name="olapGrid" Background="Transparent" SeriesStrokeThickness="0"&gt;&lt;/syncfusion:OlapGrid&gt;
+         <syncfusion:OlapGrid  Name="olapGrid" Background="Transparent" SeriesStrokeThickness="0"></syncfusion:OlapGrid>
 
-    &lt;/GroupBox&gt;
+    </GroupBox>
 
-    &lt;GroupBox Grid.Row="1" Header="OlapPager" Margin="5" &gt;
+    <GroupBox Grid.Row="1" Header="OlapPager" Margin="5" >
 
-    &lt;pager:OlapPager x:Name="olapPager" &gt;&lt;/pager:OlapPager&gt;
+    <pager:OlapPager x:Name="olapPager" ></pager:OlapPager>
 
-    &lt;/GroupBox&gt;
+    </GroupBox>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -272,11 +272,11 @@ End Namespace
 
 
 
-{ ![](Paging_images/Paging_img1.png) | markdownify }
+{{ '![](Paging_images/Paging_img1.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Paging_images/Paging_img2.png) | markdownify }
+{{ '![](Paging_images/Paging_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -284,7 +284,7 @@ Sample Link
 
 Refer to the following location for sample.:
 
-&lt;system drive&gt;\Users\&lt;user name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version number&gt;\
+<system drive>\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version number>\
 
 WPF\OlapGrid.WPF\Paging
 

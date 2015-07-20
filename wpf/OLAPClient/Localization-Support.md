@@ -15,7 +15,7 @@ Use Case Scenarios
 
 Localization helps the user to create an application that targets several cultures.
 
-{ ![](Localization-Support_images/Localization-Support_img1.png) | markdownify }
+{{ '![](Localization-Support_images/Localization-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -25,7 +25,7 @@ The OLAP Client for WPF supports “resx” based localization. The following st
 
 * Translation
 * Resource File and File name conventions
-* &lt;SupportedCultures&gt; Tag inclusion into the project file
+* <SupportedCultures> Tag inclusion into the project file
 * Specifying the CurrentUICulture
 
 See Also
@@ -667,13 +667,13 @@ After translating the strings that can be localized, perform the following in th
 
 
 
-{ ![](Localization-Support_images/Localization-Support_img2.png) | markdownify }
+{{ '![](Localization-Support_images/Localization-Support_img2.png)' | markdownify }}
 {:.image }
 
 
 6. The Add New Item dialog displays.
 
-{ ![](Localization-Support_images/Localization-Support_img3.png) | markdownify }
+{{ '![](Localization-Support_images/Localization-Support_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -681,7 +681,7 @@ After translating the strings that can be localized, perform the following in th
 
 
 
-> _Note: The resource file name should strictly be in the format  “Syncfusion.OlapClient.WPF.&lt;&lt;Culture Code&gt;>.resx”._
+> _Note: The resource file name should strictly be in the format  “Syncfusion.OlapClient.WPF.<<Culture Code>>.resx”._
 
 Examples
 
@@ -701,23 +701,23 @@ Now, the new resource file is included successfully.
 
 8. Copy and paste the translated locale to the resource file created in the earlier step.
 
-{ ![](Localization-Support_images/Localization-Support_img4.png) | markdownify }
+{{ '![](Localization-Support_images/Localization-Support_img4.png)' | markdownify }}
 {:.image }
 
 
-&lt;SupportedCultures&gt; Tag Inclusion into the Project File
+<SupportedCultures> Tag Inclusion into the Project File
 
-In Silverlight, we need to specify the list of supported cultures using the &lt;SupportedCultures&gt; tag in the project file. To specify the supported cultures in a project file, perform the following steps: 
+In Silverlight, we need to specify the list of supported cultures using the <SupportedCultures> tag in the project file. To specify the supported cultures in a project file, perform the following steps: 
 
 1. Go to Solution Explorer, Right-click the project file and select Unload.
 2. Again, right click the project file and select Edit. Now, the project files will appear in the XML editor in Visual Studio.
-3. Find the tag &lt;SupportedCultures&gt; and then specify the culture code, which is already appended in the resource file name.
+3. Find the tag <SupportedCultures> and then specify the culture code, which is already appended in the resource file name.
 
 Example: <SupportedCultures>fr-FR<SupportedCultures>
 
 You can specify multiple cultures as well, by using the (;) semi-colon operator to separate the culture codes.
 
-Example:<SupportedCultures>en-US;fr;fr-FR;ru;ru-RU;&lt;/SupportedCultures&gt;
+Example:<SupportedCultures>en-US;fr;fr-FR;ru;ru-RU;</SupportedCultures>
 
 4. Now, right click the project name and select Reload.
 

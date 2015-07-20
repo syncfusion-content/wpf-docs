@@ -13,13 +13,13 @@ documentation: ug
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -421,7 +421,7 @@ The steps to create a CurrencyTextBox by using Visual Studio in C# are as follow
 
 
 
-{ ![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -431,7 +431,7 @@ The steps to create a CurrencyTextBox by using Visual Studio in C# are as follow
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -442,7 +442,7 @@ The steps to create a CurrencyTextBox by using Visual Studio in C# are as follow
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -484,7 +484,7 @@ public partial class MainWindow : Window
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -510,7 +510,7 @@ The steps to create a CurrencyTextBox by using Visual Studio in XAML are as foll
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -534,19 +534,19 @@ XAML
 
 
 
-    &lt;Grid x:Name="LayoutRoot"&gt;
+    <Grid x:Name="LayoutRoot">
 
-        &lt;syncfusion:CurrencyTextBox Height="23" HorizontalAlignment="Left" Margin="108,143,0,0" Name="currencyTextBox1" VerticalAlignment="Top" Width="120" /&gt;
+        <syncfusion:CurrencyTextBox Height="23" HorizontalAlignment="Left" Margin="108,143,0,0" Name="currencyTextBox1" VerticalAlignment="Top" Width="120" />
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
-
-
+</Window>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+
+
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -565,7 +565,7 @@ The steps to create a CurrencyTextBox in the application by using Expression Ble
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -575,7 +575,7 @@ The steps to create a CurrencyTextBox in the application by using Expression Ble
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -589,7 +589,7 @@ Syncfusion.Shared.WPF.dll
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -599,7 +599,7 @@ Syncfusion.Shared.WPF.dll
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -619,17 +619,17 @@ XAML
 
 
 
-    &lt;Grid x:Name="LayoutRoot"&gt;
+    <Grid x:Name="LayoutRoot">
 
-        &lt;syncfusion:CurrencyTextBox Height="23" HorizontalAlignment="Left" Margin="108,143,0,0" Name="currencyTextBox1" VerticalAlignment="Top" Width="120" /&gt;
+        <syncfusion:CurrencyTextBox Height="23" HorizontalAlignment="Left" Margin="108,143,0,0" Name="currencyTextBox1" VerticalAlignment="Top" Width="120" />
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img13.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -659,7 +659,7 @@ C#currencyTextBox.Value = 100;</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img14.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -685,7 +685,7 @@ C#currencyTextBox.MinValue = -999.99;currencyTextBox.MaxValue = 999.99;</td></tr
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img15.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -713,7 +713,7 @@ C#currencyTextBox.UseNullOption = true;currencyTextBox.NullValue = null;currency
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img16.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
 {:.image }
 
 

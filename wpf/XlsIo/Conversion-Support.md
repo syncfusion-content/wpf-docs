@@ -368,7 +368,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Conversion-Support_images/Conversion-Support_img1.jpeg) | markdownify }
+{{ '![](Conversion-Support_images/Conversion-Support_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -552,7 +552,7 @@ excelEngine.Dispose()
 
 The following screenshot shows an Excel Chart converted to an image.
 
-{ ![](Conversion-Support_images/Conversion-Support_img2.jpeg) | markdownify }
+{{ '![](Conversion-Support_images/Conversion-Support_img2.jpeg)' | markdownify }}
 {:.image }
 
 

@@ -23,13 +23,13 @@ The following code example explains how to perform the Sorting operation in Char
 
                   XBindingPath="CompanyName"        YBindingPath="CompanyTurnOver"/>
 
-            &lt;/syncfusion:SfChart&gt;
+            </syncfusion:SfChart>
 
 
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-64.png](Sorting_images/Sorting_img1.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-64.png](Sorting_images/Sorting_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -45,9 +45,9 @@ The following code example and screenshot demonstrate Sorting in Ascending order
 
           XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"/>
 
-&lt;/syncfusion:SfChart&gt;
+</syncfusion:SfChart>
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-65.png](Sorting_images/Sorting_img2.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-65.png](Sorting_images/Sorting_img2.png)' | markdownify }}
 {:.image }
 
 

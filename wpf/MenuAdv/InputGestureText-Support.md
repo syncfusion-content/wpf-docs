@@ -21,87 +21,87 @@ The value assigned by using the InputGestureText property will be displayed in M
 
 [XAML]
 
-&lt;shared:MenuAdv x:Name="Menu" Margin="10"&gt;
+<shared:MenuAdv x:Name="Menu" Margin="10">
 
-                &lt;shared:MenuItemAdv Header="File"&gt;
+                <shared:MenuItemAdv Header="File">
 
-                    &lt;shared:MenuItemAdv Header="New" InputGestureText="Ctrl+n"&gt;
+                    <shared:MenuItemAdv Header="New" InputGestureText="Ctrl+n">
 
-                        &lt;shared:MenuItemAdv.Icon&gt;
+                        <shared:MenuItemAdv.Icon>
 
-                            &lt;Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/&gt;
+                            <Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
 
-                        &lt;/shared:MenuItemAdv.Icon&gt;
+                        </shared:MenuItemAdv.Icon>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                    &lt;shared:MenuItemAdv Header="Cut" InputGestureText="Ctrl+x"&gt;
+                    <shared:MenuItemAdv Header="Cut" InputGestureText="Ctrl+x">
 
-                        &lt;shared:MenuItemAdv.Icon&gt;
+                        <shared:MenuItemAdv.Icon>
 
-                            &lt;Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/&gt;
+                            <Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
 
-                        &lt;/shared:MenuItemAdv.Icon&gt;
+                        </shared:MenuItemAdv.Icon>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                    &lt;shared:MenuItemAdv Header="Copy" InputGestureText="Ctrl+c"&gt;
+                    <shared:MenuItemAdv Header="Copy" InputGestureText="Ctrl+c">
 
-                        &lt;shared:MenuItemAdv.Icon&gt;
+                        <shared:MenuItemAdv.Icon>
 
-                            &lt;Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/&gt;
+                            <Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
 
-                        &lt;/shared:MenuItemAdv.Icon&gt;
+                        </shared:MenuItemAdv.Icon>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                    &lt;shared:MenuItemAdv Header="Paste" InputGestureText="Ctrl+v"&gt;
+                    <shared:MenuItemAdv Header="Paste" InputGestureText="Ctrl+v">
 
-                        &lt;shared:MenuItemAdv.Icon&gt;
+                        <shared:MenuItemAdv.Icon>
 
-                            &lt;Image Source="/MenuControlDemo;component/Images/PasteIcon.jpg"/&gt;
+                            <Image Source="/MenuControlDemo;component/Images/PasteIcon.jpg"/>
 
-                        &lt;/shared:MenuItemAdv.Icon&gt;
+                        </shared:MenuItemAdv.Icon>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                    &lt;shared:MenuItemAdv Header="Undo" InputGestureText="Ctrl+z"&gt;
+                    <shared:MenuItemAdv Header="Undo" InputGestureText="Ctrl+z">
 
-                        &lt;shared:MenuItemAdv.Icon&gt;
+                        <shared:MenuItemAdv.Icon>
 
-                            &lt;Image Source="/MenuControlDemo;component/Images/UndoIcon.jpg"/&gt;
+                            <Image Source="/MenuControlDemo;component/Images/UndoIcon.jpg"/>
 
-                        &lt;/shared:MenuItemAdv.Icon&gt;
+                        </shared:MenuItemAdv.Icon>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                    &lt;shared:MenuItemAdv Header="Redo" InputGestureText="Ctrl+y"&gt;
+                    <shared:MenuItemAdv Header="Redo" InputGestureText="Ctrl+y">
 
-                        &lt;shared:MenuItemAdv.Icon&gt;
+                        <shared:MenuItemAdv.Icon>
 
-                            &lt;Image Source="/MenuControlDemo;component/Images/RedoIcon.jpg"/&gt;
+                            <Image Source="/MenuControlDemo;component/Images/RedoIcon.jpg"/>
 
-                        &lt;/shared:MenuItemAdv.Icon&gt;
+                        </shared:MenuItemAdv.Icon>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                    &lt;shared:MenuItemSeparator/&gt;
+                    <shared:MenuItemSeparator/>
 
-                &lt;/shared:MenuItemAdv&gt;
+                </shared:MenuItemAdv>
 
-                &lt;shared:MenuItemAdv Header="Edit"/&gt;
+                <shared:MenuItemAdv Header="Edit"/>
 
-                &lt;shared:MenuItemAdv Header="View"/&gt;
+                <shared:MenuItemAdv Header="View"/>
 
-                &lt;shared:MenuItemAdv Header="Project"/&gt;
+                <shared:MenuItemAdv Header="Project"/>
 
-                &lt;shared:MenuItemAdv Header="Build"/&gt;
+                <shared:MenuItemAdv Header="Build"/>
 
-            &lt;/shared:MenuAdv&gt;
+            </shared:MenuAdv>
 
 
 
-{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/InputGesTxt.png](InputGestureText-Support_images/InputGestureText-Support_img1.png) | markdownify }
+{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/InputGesTxt.png](InputGestureText-Support_images/InputGestureText-Support_img1.png)' | markdownify }}
 {:.image }
 
 

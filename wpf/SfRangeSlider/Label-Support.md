@@ -79,11 +79,11 @@ In the following code example, the CustomCollection property is bound to CustomL
 
 
 
-&lt;editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowCustomLabels="True" CustomLabels="{Binding CustomCollection}" /&gt;
+<editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowCustomLabels="True" CustomLabels="{Binding CustomCollection}" />
 
 
 
-{ ![](Label-Support_images/Label-Support_img1.png) | markdownify }
+{{ '![](Label-Support_images/Label-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -97,13 +97,13 @@ The default value of ShowCustomLabels is false. When set to true, it displays th
 
 
 
-&lt;editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowCustomLabels="True" CustomLabels="{Binding CustomCollection}" /&gt;
+<editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowCustomLabels="True" CustomLabels="{Binding CustomCollection}" />
 
 
 
 
 
-{ ![](Label-Support_images/Label-Support_img2.png) | markdownify }
+{{ '![](Label-Support_images/Label-Support_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -124,11 +124,11 @@ The following code example illustrates the usage of the LabelPlacement property.
 
 [XAML]
 
-&lt;editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowCustomLabels="True" CustomLabels="{Binding CustomCollection}" LabelPlacement="BottomRight"/&gt;
+<editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowCustomLabels="True" CustomLabels="{Binding CustomCollection}" LabelPlacement="BottomRight"/>
 
 
 
-{ ![](Label-Support_images/Label-Support_img3.png) | markdownify }
+{{ '![](Label-Support_images/Label-Support_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -146,7 +146,7 @@ CustomLabels="{Binding CustomCollection}" LabelPlacement="TopLeft"/>
 
 
 
-{ ![](Label-Support_images/Label-Support_img4.png) | markdownify }
+{{ '![](Label-Support_images/Label-Support_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -162,11 +162,11 @@ The default value of the ShowValueLabels property is false. When set to true, it
 
 
 
-&lt;editors:SfRangeSlider Width="200" Minimum="100"   Maximum="200" TickFrequency="20" TickPlacement="BottomRight" ShowValueLabels="True"/&gt;
+<editors:SfRangeSlider Width="200" Minimum="100"   Maximum="200" TickFrequency="20" TickPlacement="BottomRight" ShowValueLabels="True"/>
 
 
 
-{ ![](Label-Support_images/Label-Support_img5.png) | markdownify }
+{{ '![](Label-Support_images/Label-Support_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -189,11 +189,11 @@ The following code example illustrates the usage of ValuePlacement property. The
 
 
 
-&lt;editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowValueLabels="True" ValuePlacement="TopLeft"/&gt;
+<editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowValueLabels="True" ValuePlacement="TopLeft"/>
 
 
 
-{ ![](Label-Support_images/Label-Support_img6.png) | markdownify }
+{{ '![](Label-Support_images/Label-Support_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -205,11 +205,11 @@ _ValuePlacement in Bottom Right_
 
 
 
-&lt;editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowValueLabels="True" ValuePlacement="BottomRight"/&gt;
+<editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowValueLabels="True" ValuePlacement="BottomRight"/>
 
 
 
-{ ![](Label-Support_images/Label-Support_img7.png) | markdownify }
+{{ '![](Label-Support_images/Label-Support_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -232,11 +232,11 @@ The following code example illustrates the usage of LabelOrientation property. T
 
 
 
-&lt;editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowValueLabels="True" LabelOrientation="Horizontal"/&gt;
+<editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowValueLabels="True" LabelOrientation="Horizontal"/>
 
 
 
-{ ![](Label-Support_images/Label-Support_img8.png) | markdownify }
+{{ '![](Label-Support_images/Label-Support_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -248,11 +248,11 @@ _LabelOrientation as Horizontal_
 
 
 
-&lt;editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowValueLabels="True" LabelOrientation="Vertical"/&gt;
+<editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowValueLabels="True" LabelOrientation="Vertical"/>
 
 
 
-{ ![](Label-Support_images/Label-Support_img9.png) | markdownify }
+{{ '![](Label-Support_images/Label-Support_img9.png)' | markdownify }}
 {:.image }
 
 

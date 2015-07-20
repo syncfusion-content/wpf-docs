@@ -13,13 +13,13 @@ The Barcode control helps rendering bar codes in desktop (WPF) application. The 
 
 
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Overview_images/Overview_img2.png) | markdownify }
+{{ '![](Overview_images/Overview_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -27,7 +27,7 @@ The Barcode control helps rendering bar codes in desktop (WPF) application. The 
 
 Structure of the Control
 
-{ ![](Overview_images/Overview_img3.png) | markdownify }
+{{ '![](Overview_images/Overview_img3.png)' | markdownify }}
 {:.image }
 
 

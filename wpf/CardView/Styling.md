@@ -31,7 +31,7 @@ These visual styles can be applied to the CardView control through XAML. The fol
 
  [XAML]
 
-&lt;syncfusion:CardView         syncfusion:SkinStorage.VisualStyle="Office2010Blue"        /&gt;    
+<syncfusion:CardView         syncfusion:SkinStorage.VisualStyle="Office2010Blue"        />    
 
 
 
@@ -55,17 +55,17 @@ The ItemContainerStyle property of CardView is used to set the styles for CardVi
 
 [XAML]
 
-&lt;Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="contactStyle"&gt;
+<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="contactStyle">
 
-            &lt;Setter Property="Header" Value="{Binding Name}"/&gt;
+            <Setter Property="Header" Value="{Binding Name}"/>
 
-            &lt;Setter Property="Foreground" Value="Green"/&gt;
+            <Setter Property="Foreground" Value="Green"/>
 
-            &lt;Setter Property="FontWeight" Value="Bold"/&gt;
+            <Setter Property="FontWeight" Value="Bold"/>
 
-            &lt;Setter Property="FontSize" Value="16"/&gt;
+            <Setter Property="FontSize" Value="16"/>
 
-        &lt;/Style&gt;
+        </Style>
 
 
 
@@ -95,7 +95,7 @@ This generates the following CardView control.
 
 
 
-{ ![](Styling_images/Styling_img1.png) | markdownify }
+{{ '![](Styling_images/Styling_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -111,31 +111,31 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 [XAML]
 
-&lt;Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="ageStyle1"&gt;
+<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="ageStyle1">
 
-            &lt;Setter Property="Header" Value="{Binding Name}"/&gt;
+            <Setter Property="Header" Value="{Binding Name}"/>
 
-            &lt;Setter Property="Foreground" Value="Green"/&gt;
+            <Setter Property="Foreground" Value="Green"/>
 
-            &lt;Setter Property="FontWeight" Value="Bold"/&gt;
+            <Setter Property="FontWeight" Value="Bold"/>
 
-            &lt;Setter Property="FontSize" Value="16"/&gt;
+            <Setter Property="FontSize" Value="16"/>
 
-        &lt;/Style&gt;
+        </Style>
 
 
 
-        &lt;Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="ageStyle2"&gt;
+        <Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="ageStyle2">
 
-            &lt;Setter Property="Header" Value="{Binding Name}"/&gt;
+            <Setter Property="Header" Value="{Binding Name}"/>
 
-            &lt;Setter Property="Foreground" Value="Blue"/&gt;
+            <Setter Property="Foreground" Value="Blue"/>
 
-            &lt;Setter Property="FontWeight" Value="Bold"/&gt;
+            <Setter Property="FontWeight" Value="Bold"/>
 
-            &lt;Setter Property="FontSize" Value="16"/&gt;
+            <Setter Property="FontSize" Value="16"/>
 
-        &lt;/Style&gt;
+        </Style>
 
 
 
@@ -209,7 +209,7 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 [XAML]
 
-        &lt;local:CardViewItemContainerStyleSelector x:Key="cardViewItemContainerStyleSelector"/&gt;
+        <local:CardViewItemContainerStyleSelector x:Key="cardViewItemContainerStyleSelector"/>
 
 
 
@@ -243,7 +243,7 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 This generates the following CardView control.
 
-{ ![](Styling_images/Styling_img2.png) | markdownify }
+{{ '![](Styling_images/Styling_img2.png)' | markdownify }}
 {:.image }
 
 

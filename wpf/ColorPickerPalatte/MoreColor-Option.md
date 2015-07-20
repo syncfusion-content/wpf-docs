@@ -47,13 +47,13 @@ colorpicker.MoreColorOptionVisibility = System.Visibility.Visible;
 
 
 
-{ ![](MoreColor-Option_images/MoreColor-Option_img1.png) | markdownify }
+{{ '![](MoreColor-Option_images/MoreColor-Option_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](MoreColor-Option_images/MoreColor-Option_img2.png) | markdownify }
+{{ '![](MoreColor-Option_images/MoreColor-Option_img2.png)' | markdownify }}
 {:.image }
 
 

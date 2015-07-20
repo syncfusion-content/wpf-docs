@@ -21,11 +21,11 @@ The following code example illustrates how bind the itemsSource to the SfMultico
 
 
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-  &lt;local:Viewmodel/&gt;
+  <local:Viewmodel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -41,7 +41,7 @@ The following code example illustrates how bind the itemsSource to the SfMultico
 
 The following screenshot illustrates the output of the above code.
 
-{ ![B:/Support/2015/April/24/Image/Figure2.png](Features_images/Features_img1.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/Figure2.png](Features_images/Features_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -87,7 +87,7 @@ new Data(){Name="Maxwell", Designation= "WebDesigner"}, City="CapeTown",Country=
 
 The following screenshot illustrates the output for SfMultiColumnDropDownControl.
 
-{ ![B:/Support/2015/April/24/Image/Figure2.png](Features_images/Features_img2.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/Figure2.png](Features_images/Features_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -231,27 +231,27 @@ public class Data:INotifyPropertyChanged
 
                                                  >
 
-     &lt;syncfusion:SfMultiColumnDropDownControl.Columns&gt;
+     <syncfusion:SfMultiColumnDropDownControl.Columns>
 
-       &lt;syncfusion:Columns&gt;
+       <syncfusion:Columns>
 
-         &lt;syncfusion:GridTextColumn MappingName="Name" /&gt;
+         <syncfusion:GridTextColumn MappingName="Name" />
 
-         &lt;syncfusion:GridTextColumn MappingName="customerDetails.Designation" /&gt;
+         <syncfusion:GridTextColumn MappingName="customerDetails.Designation" />
 
-         &lt;syncfusion:GridTextColumn MappingName="City" /&gt;
+         <syncfusion:GridTextColumn MappingName="City" />
 
-         &lt;syncfusion:GridTextColumn MappingName="Country" /&gt;
+         <syncfusion:GridTextColumn MappingName="Country" />
 
-       &lt;/syncfusion:Columns&gt;
+       </syncfusion:Columns>
 
-     &lt;/syncfusion:SfMultiColumnDropDownControl.Columns&gt;
+     </syncfusion:SfMultiColumnDropDownControl.Columns>
 
-&lt;/syncfusion:SfMultiColumnDropDownControl&gt;
+</syncfusion:SfMultiColumnDropDownControl>
 
 The following screenshot illustrates the output for Complex property binding in SfMultiColumnDropDownControl.
 
-{ ![C:/Users/apoorvah.ramanathan/Desktop/1.png](Features_images/Features_img3.png) | markdownify }
+{{ '![C:/Users/apoorvah.ramanathan/Desktop/1.png](Features_images/Features_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -273,11 +273,11 @@ The following code example illustrates the usage of Columns in the SfMultiColumn
 
 
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-  &lt;local:Viewmodel/&gt;
+  <local:Viewmodel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -295,23 +295,23 @@ The following code example illustrates the usage of Columns in the SfMultiColumn
 
                                            ItemsSource="{Binding GridItemSource}">
 
-&lt;syncfusion:SfMultiColumnDropDownControl.Columns&gt;
+<syncfusion:SfMultiColumnDropDownControl.Columns>
 
-&lt;syncfusion:GridTextColumn MappingName="Name" /&gt;
+<syncfusion:GridTextColumn MappingName="Name" />
 
-&lt;syncfusion:GridTextColumn MappingName="Designation" /&gt;
+<syncfusion:GridTextColumn MappingName="Designation" />
 
-&lt;syncfusion:GridTextColumn MappingName="City" /&gt;
+<syncfusion:GridTextColumn MappingName="City" />
 
-&lt;syncfusion:GridTextColumn MappingName="Country" /&gt;
+<syncfusion:GridTextColumn MappingName="Country" />
 
-&lt;/syncfusion:SfMultiColumnDropDownControl.Columns&gt;
+</syncfusion:SfMultiColumnDropDownControl.Columns>
 
-&lt;/syncfusion:SfMultiColumnDropDownControl&gt;
+</syncfusion:SfMultiColumnDropDownControl>
 
 The above code example displays the following output.
 
-{ ![B:/Support/2015/April/24/Image/Figure2.png](Features_images/Features_img4.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/Figure2.png](Features_images/Features_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -338,11 +338,11 @@ As an example of this feature, consider a simple scenario where the SfMultiColum
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-  &lt;local:Viewmodel/&gt;
+  <local:Viewmodel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -356,13 +356,13 @@ As an example of this feature, consider a simple scenario where the SfMultiColum
 
 In the above code example, AutoCompletion is enabled .It gives the matching suggestion from the collection based on the input as illustrated in the following screenshot.
 
-{ ![B:/Support/2015/April/24/Image/Figure8.png](Features_images/Features_img5.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/Figure8.png](Features_images/Features_img5.png)' | markdownify }}
 {:.image }
 
 
 The following screenshot displays the output for AllowAutoCompletion set to False.
 
-{ ![B:/Support/2015/April/24/Image/Figure9.png](Features_images/Features_img6.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/Figure9.png](Features_images/Features_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -380,11 +380,11 @@ The following code example illustrates how to set SelectedIndex in SfMultiColumn
 
 
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-  &lt;local:Viewmodel/&gt;
+  <local:Viewmodel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -402,11 +402,11 @@ The following code example illustrates how to set SelectedIndex in SfMultiColumn
 
 
 
-&lt;/syncfusion:SfMultiColumnDropDownControl&gt;
+</syncfusion:SfMultiColumnDropDownControl>
 
 The following screenshot illustrates the output of the above code.
 
-{ ![B:/Support/2015/April/24/Image/Figure10.png](Features_images/Features_img7.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/Figure10.png](Features_images/Features_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -422,7 +422,7 @@ Description</td></tr>
 <tr>
 <td>
 SelectionChanged</td><td>
-This event is raised when the Selection is changed.The SelectionChanged event handler receives two arguments, namely Sender and SelectionChangedEventArgs{{ '_,_' | markdownify }} as objects.The SelectionChangedEventArgs object contains the following properties:* SelectedIndex: Gets the selected index of the SfDataGrid in the DropDownPopup.* SelectedItem: Gets the selected item of the SfDataGrid in the DropDownPopup.</td></tr>
+This event is raised when the Selection is changed.The SelectionChanged event handler receives two arguments, namely Sender and SelectionChangedEventArgs{{{ ''_,_'' | markdownify }}} as objects.The SelectionChangedEventArgs object contains the following properties:* SelectedIndex: Gets the selected index of the SfDataGrid in the DropDownPopup.* SelectedItem: Gets the selected item of the SfDataGrid in the DropDownPopup.</td></tr>
 </table>
 #### How To
 
@@ -449,11 +449,11 @@ The following code example illustrates how to use TextSelectionOnFocus in SfMult
 
                                             ValueMember="Cast">
 
-&lt;/syncfusion:SfMultiColumnDropDownControl&gt;
+</syncfusion:SfMultiColumnDropDownControl>
 
 The following screenshot displays the SfMultiDropDownControl when setting TextSelectionOnFocus to true.
 
-{ ![B:/Support/2015/April/24/Image/Figure11.png](Features_images/Features_img8.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/Figure11.png](Features_images/Features_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -470,11 +470,11 @@ The following code example illustrates how to enable IncrementalFiltering in SfM
 
 
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-  &lt;local:Viewmodel/&gt;
+  <local:Viewmodel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -492,25 +492,25 @@ The following code example illustrates how to enable IncrementalFiltering in SfM
 
 
 
-&lt;syncfusion:SfMultiColumnDropDownControl.Columns&gt;
+<syncfusion:SfMultiColumnDropDownControl.Columns>
 
-&lt;syncfusion:GridTextColumn MappingName="Name" /&gt;
+<syncfusion:GridTextColumn MappingName="Name" />
 
-&lt;syncfusion:GridTextColumn MappingName="Designation" /&gt;
+<syncfusion:GridTextColumn MappingName="Designation" />
 
-&lt;syncfusion:GridTextColumn MappingName="City" /&gt;
+<syncfusion:GridTextColumn MappingName="City" />
 
-&lt;syncfusion:GridTextColumn MappingName="Country" /&gt;
+<syncfusion:GridTextColumn MappingName="Country" />
 
-&lt;/syncfusion:SfMultiColumnDropDownControl.Columns&gt;
+</syncfusion:SfMultiColumnDropDownControl.Columns>
 
 
 
-&lt;/syncfusion:SfMultiColumnDropDownControl&gt;
+</syncfusion:SfMultiColumnDropDownControl>
 
 In above code example Name property is defined as DisplayMember. Therefore, when you start typing on the Editor, it filters the items that are in the Name Colum. The following screenshot displays the output for IncrementalFiltering.
 
-{ ![B:/Support/2015/April/24/Image/Figure8.png](Features_images/Features_img9.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/Figure8.png](Features_images/Features_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -528,15 +528,15 @@ class CustomMultiColumnControl:SfMultiColumnDropDownControl
 
 {
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Returns true if the item is displayed in the Filtered List, otherwise returns false.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="item"&gt;&lt;/param&gt;
+    /// <param name="item"></param>
 
-    /// &lt;returns&gt;&lt;/returns&gt;
+    /// <returns></returns>
 
     protected override bool FilterRecord(object item)
 
@@ -554,19 +554,19 @@ class CustomMultiColumnControl:SfMultiColumnDropDownControl
 
 
 
-        }    /// &lt;summary&gt;
+        }    /// <summary>
 
     /// Gets the Object for the source from the source to the given type.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;param name="source"&gt;&lt;/param&gt;
+    /// <param name="source"></param>
 
-    /// &lt;param name="typeDescendant"&gt;&lt;/param&gt;
+    /// <param name="typeDescendant"></param>
 
-    /// &lt;returns&gt;&lt;/returns&gt;
+    /// <returns></returns>
 
-    /// &lt;remarks&gt;&lt;/remarks&gt;
+    /// <remarks></remarks>
 
     public static DependencyObject FindDescendant(Object source, Type typeDescendant)
 
@@ -642,7 +642,7 @@ class CustomMultiColumnControl:SfMultiColumnDropDownControl
 
 Here, Name is defined as DisplayMember. But it also searches the match case from the City__Column and displays the filtered item as illustrated in the following screenshot.
 
-{ ![B:/Support/2015/April/24/Image/Figure12.png](Features_images/Features_img10.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/Figure12.png](Features_images/Features_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -684,11 +684,11 @@ The following code example illustrates how to customize the DropDownPopup.
 
 
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-  &lt;local:Viewmodel/&gt;
+  <local:Viewmodel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -714,11 +714,11 @@ The following code example illustrates how to customize the DropDownPopup.
 
 
 
-&lt;/syncfusion:SfMultiColumnDropDownControl&gt;
+</syncfusion:SfMultiColumnDropDownControl>
 
 The following screenshot displays the output for above code example.
 
-{ ![B:/Support/2015/April/24/Image/Figure13.png](Features_images/Features_img11.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/Figure13.png](Features_images/Features_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -840,7 +840,7 @@ This event is raised before the Popup is closed; the event can be cancelled.The 
 <tr>
 <td>
 PopupOpened</td><td>
-This event is raised when the Popup is opened.The PopupOpened event handler receives two arguments, namely Sender and PopupOpenedEventArgs{{ '_,_' | markdownify }} as objects.</td></tr>
+This event is raised when the Popup is opened.The PopupOpened event handler receives two arguments, namely Sender and PopupOpenedEventArgs{{{ ''_,_'' | markdownify }}} as objects.</td></tr>
 <tr>
 <td>
 PopupOpening</td><td>
@@ -900,7 +900,7 @@ Coded UI Test Builder generates code from recorded session and custom class is i
 </table>
 The following screenshot illustrates the SfMultiColumnDropDownControl properties, when you drag the crosshair to the SfMultiColumnDropDown control.
 
-{ ![C:/Users/ilanchezhiyan/Desktop/sfmulticolumn.png](Features_images/Features_img12.png) | markdownify }
+{{ '![C:/Users/ilanchezhiyan/Desktop/sfmulticolumn.png](Features_images/Features_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -925,7 +925,7 @@ SfMultiColumnDropDownControl supports for QTP test. You can record the actions p
 
 The following screenshot illustrates the QTP Test for SfMultiColumnDropDownControl.
 
-{ ![C:/Users/apoorvah.ramanathan/Desktop/1.png](Features_images/Features_img13.png) | markdownify }
+{{ '![C:/Users/apoorvah.ramanathan/Desktop/1.png](Features_images/Features_img13.png)' | markdownify }}
 {:.image }
 
 

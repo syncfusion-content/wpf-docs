@@ -1520,7 +1520,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Charts_images/Working-with-Charts_img1.png) | markdownify }
+{{ '![](Working-with-Charts_images/Working-with-Charts_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -2437,7 +2437,7 @@ excelEngine.Dispose()
 
 In MS Excel, the Sparklines can be inserted by selecting any of the sparklines type from the Insert tab. 
 
-{ ![](Working-with-Charts_images/Working-with-Charts_img2.png) | markdownify }
+{{ '![](Working-with-Charts_images/Working-with-Charts_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -2610,7 +2610,7 @@ Sparklines Options by XlsIO
 
 MS Excel provides various options through Sparklines tool ribbon in order to customize the appearance of the Sparklines.
 
-{ ![](Working-with-Charts_images/Working-with-Charts_img3.png) | markdownify }
+{{ '![](Working-with-Charts_images/Working-with-Charts_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -3584,7 +3584,7 @@ Hidden and Empty Cell Settings
 
 Normally,  in a sparkline group data there is a possibility of an empty cell or a hidden cell. MS Excel 2010 provides a dialog box to apply settings on hidden and empty cells.
 
-{ ![](Working-with-Charts_images/Working-with-Charts_img4.png) | markdownify }
+{{ '![](Working-with-Charts_images/Working-with-Charts_img4.png)' | markdownify }}
 {:.image }
 
 

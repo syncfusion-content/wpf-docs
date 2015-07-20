@@ -19,47 +19,47 @@ Specify the position the ToolBarAdv in the ToolBarTrayAdv as given in the follow
 
 
 
-&lt;shared:ToolBarTrayAdv &gt;
+<shared:ToolBarTrayAdv >
 
-                    &lt;shared:ToolBarAdv ToolBarName="Standard"&gt;
+                    <shared:ToolBarAdv ToolBarName="Standard">
 
-                        &lt;Button shared:ToolBarAdv.Icon="Images/NewDocumentHS.png"&gt;
+                        <Button shared:ToolBarAdv.Icon="Images/NewDocumentHS.png">
 
-                            &lt;Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/&gt;
+                            <Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/>
 
-                        &lt;/Button&gt;
+                        </Button>
 
-                        &lt;Button  &gt;
+                        <Button  >
 
-                            &lt;Image Source="Images/openHS.png"  Width="16" Height="16"/&gt;
+                            <Image Source="Images/openHS.png"  Width="16" Height="16"/>
 
-                        &lt;/Button&gt;
+                        </Button>
 
-                    &lt;/shared:ToolBarAdv&gt;
+                    </shared:ToolBarAdv>
 
-                    &lt;shared:ToolBarAdv Band="1"   ToolBarName="Extras"&gt;
+                    <shared:ToolBarAdv Band="1"   ToolBarName="Extras">
 
-                        &lt;Button &gt;
+                        <Button >
 
-                            &lt;Image Source="Images/InsertPictureHS.png"  Width="16" Height="16"/&gt;
+                            <Image Source="Images/InsertPictureHS.png"  Width="16" Height="16"/>
 
-                        &lt;/Button&gt;
+                        </Button>
 
-                        &lt;Button  &gt;
+                        <Button  >
 
-                            &lt;Image Source="Images/InsertHyperlinkHS.png"  Width="16" Height="16"/&gt;
+                            <Image Source="Images/InsertHyperlinkHS.png"  Width="16" Height="16"/>
 
-                        &lt;/Button&gt;
+                        </Button>
 
-                        &lt;Button  &gt;
+                        <Button  >
 
-                            &lt;Image Source="Images/TableHS.png"  Width="16" Height="16"/&gt;
+                            <Image Source="Images/TableHS.png"  Width="16" Height="16"/>
 
-                        &lt;/Button&gt;
+                        </Button>
 
-                    &lt;/shared:ToolBarAdv&gt;
+                    </shared:ToolBarAdv>
 
-                &lt;/shared:ToolBarTrayAdv&gt;
+                </shared:ToolBarTrayAdv>
 
 
 
@@ -177,7 +177,7 @@ button = new Button();
 
 
 
-{ ![](Specifying-the-Position-of-ToolBarAdvs-in-a-ToolBarTrayAdv_images/Specifying-the-Position-of-ToolBarAdvs-in-a-ToolBarTrayAdv_img1.png) | markdownify }
+{{ '![](Specifying-the-Position-of-ToolBarAdvs-in-a-ToolBarTrayAdv_images/Specifying-the-Position-of-ToolBarAdvs-in-a-ToolBarTrayAdv_img1.png)' | markdownify }}
 {:.image }
 
 

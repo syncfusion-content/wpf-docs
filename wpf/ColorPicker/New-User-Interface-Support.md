@@ -29,11 +29,11 @@ The following code example illustrates how to add the New User Interface support
 
 
 
-&lt;sync:ColorPicker VisualizationStyle="HSV" BrushMode="Solid"/&gt;
+<sync:ColorPicker VisualizationStyle="HSV" BrushMode="Solid"/>
 
 
 
-&lt;sync:ColorEdit VisualizationStyle="HSV"/&gt;
+<sync:ColorEdit VisualizationStyle="HSV"/>
 
 
 
@@ -71,25 +71,25 @@ The following code example illustrates how to add the New User Interface support
 
 
 
-{ ![](New-User-Interface-Support_images/New-User-Interface-Support_img1.png) | markdownify }
+{{ '![](New-User-Interface-Support_images/New-User-Interface-Support_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](New-User-Interface-Support_images/New-User-Interface-Support_img2.png) | markdownify }
+{{ '![](New-User-Interface-Support_images/New-User-Interface-Support_img2.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](New-User-Interface-Support_images/New-User-Interface-Support_img3.png) | markdownify }
+{{ '![](New-User-Interface-Support_images/New-User-Interface-Support_img3.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](New-User-Interface-Support_images/New-User-Interface-Support_img4.png) | markdownify }
+{{ '![](New-User-Interface-Support_images/New-User-Interface-Support_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -136,35 +136,35 @@ The appearance of the ColorPicker can be customized using Styles. The following 
 
 
 
-{ ![](New-User-Interface-Support_images/New-User-Interface-Support_img5.png) | markdownify }
+{{ '![](New-User-Interface-Support_images/New-User-Interface-Support_img5.png)' | markdownify }}
 {:.image }
 
 
-{ ![](New-User-Interface-Support_images/New-User-Interface-Support_img6.png) | markdownify }
-{:.image }
-
-
-
-
-{ ![](New-User-Interface-Support_images/New-User-Interface-Support_img7.png) | markdownify }
+{{ '![](New-User-Interface-Support_images/New-User-Interface-Support_img6.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](New-User-Interface-Support_images/New-User-Interface-Support_img8.png) | markdownify }
+{{ '![](New-User-Interface-Support_images/New-User-Interface-Support_img7.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](New-User-Interface-Support_images/New-User-Interface-Support_img9.png) | markdownify }
+{{ '![](New-User-Interface-Support_images/New-User-Interface-Support_img8.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](New-User-Interface-Support_images/New-User-Interface-Support_img10.png) | markdownify }
+{{ '![](New-User-Interface-Support_images/New-User-Interface-Support_img9.png)' | markdownify }}
+{:.image }
+
+
+
+
+{{ '![](New-User-Interface-Support_images/New-User-Interface-Support_img10.png)' | markdownify }}
 {:.image }
 
 

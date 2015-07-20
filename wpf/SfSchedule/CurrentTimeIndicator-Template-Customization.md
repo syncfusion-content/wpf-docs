@@ -17,13 +17,13 @@ The visibility of current time indicator enabled by using the CurrentTimeIndicat
 
 
 
-  &lt;Grid Background="White" Name="grid"&gt;
+  <Grid Background="White" Name="grid">
 
-     &lt;Schedule:SfSchedule ScheduleType="Week"   CurrentTimeIndicatorVisibility="Visible"&gt;     
+     <Schedule:SfSchedule ScheduleType="Week"   CurrentTimeIndicatorVisibility="Visible">     
 
-        &lt;/Schedule:SfSchedule&gt;
+        </Schedule:SfSchedule>
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
@@ -45,13 +45,13 @@ The visibility of current time indicator enabled by using the CurrentTimeIndicat
 
 
 
-{ ![](CurrentTimeIndicator-Template-Customization_images/CurrentTimeIndicator-Template-Customization_img1.png) | markdownify }
+{{ '![](CurrentTimeIndicator-Template-Customization_images/CurrentTimeIndicator-Template-Customization_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](CurrentTimeIndicator-Template-Customization_images/CurrentTimeIndicator-Template-Customization_img2.png) | markdownify }
+{{ '![](CurrentTimeIndicator-Template-Customization_images/CurrentTimeIndicator-Template-Customization_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -63,25 +63,25 @@ The CurrentTimeIndicator can be customized by using the__CurrentTimeIndicatorTem
 
 
 
-      &lt;Grid Background="White" Name="grid"&gt;
+      <Grid Background="White" Name="grid">
 
-        &lt;Schedule:SfSchedule x:Name="schedule" ScheduleType="Week" CurrentTimeIndicatorVisibility="Visible"&gt;
+        <Schedule:SfSchedule x:Name="schedule" ScheduleType="Week" CurrentTimeIndicatorVisibility="Visible">
 
-            &lt;Schedule:SfSchedule.CurrentTimeIndicatorTemplate&gt;
+            <Schedule:SfSchedule.CurrentTimeIndicatorTemplate>
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-                    &lt;Border Background="DarkGreen" Height="10" Width="100"&gt;&lt;/Border&gt;
+                    <Border Background="DarkGreen" Height="10" Width="100"></Border>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-            &lt;/Schedule:SfSchedule.CurrentTimeIndicatorTemplate&gt;
+            </Schedule:SfSchedule.CurrentTimeIndicatorTemplate>
 
-        &lt;/Schedule:SfSchedule&gt;        
+        </Schedule:SfSchedule>        
 
 
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
@@ -105,7 +105,7 @@ The CurrentTimeIndicator can be customized by using the__CurrentTimeIndicatorTem
 
 
 
-{ ![](CurrentTimeIndicator-Template-Customization_images/CurrentTimeIndicator-Template-Customization_img3.png) | markdownify }
+{{ '![](CurrentTimeIndicator-Template-Customization_images/CurrentTimeIndicator-Template-Customization_img3.png)' | markdownify }}
 {:.image }
 
 

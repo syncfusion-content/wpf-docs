@@ -20,7 +20,7 @@ Follow the below steps to add ToolBarAdv Control to WPF Application:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -36,7 +36,7 @@ Follow the below steps to add ToolBarAdv Control to WPF Application:
 
 [XAML]
 
-&lt;syncfusion:ToolBarAdv Height="100" HorizontalAlignment="Left" Margin="92,90,0,0" Name="toolBarAdv1" VerticalAlignment="Top" Width="200" /&gt;
+<syncfusion:ToolBarAdv Height="100" HorizontalAlignment="Left" Margin="92,90,0,0" Name="toolBarAdv1" VerticalAlignment="Top" Width="200" />
 
 
 
@@ -48,7 +48,7 @@ Follow the below steps to add ToolBarAdv Control to WPF Application:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 

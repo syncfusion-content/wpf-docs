@@ -23,17 +23,17 @@ You can enable this feature by setting the layerType property value as "OSM".
 
 
 
-        &lt;syncfusion:SfMap&gt;
+        <syncfusion:SfMap>
 
-            &lt;syncfusion:SfMap.Layers&gt;
+            <syncfusion:SfMap.Layers>
 
-                &lt;syncfusion:ImageryLayer LayerType="OSM" /&gt;
+                <syncfusion:ImageryLayer LayerType="OSM" />
 
-            &lt;/syncfusion:SfMap.Layers&gt;
+            </syncfusion:SfMap.Layers>
 
-        &lt;/syncfusion:SfMap &gt;
+        </syncfusion:SfMap >
 
-{ ![](Map-Providers_images/Map-Providers_img1.png) | markdownify }
+{{ '![](Map-Providers_images/Map-Providers_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -57,15 +57,15 @@ Aerial View
 
 
 
-        &lt;syncfusion:SfMap&gt;
+        <syncfusion:SfMap>
 
-            &lt;syncfusion:SfMap.Layers&gt;
+            <syncfusion:SfMap.Layers>
 
-                &lt;syncfusion:ImageryLayer LayerType="Bing" BingMapKey="Bing Map Key" BingMapStyle="Aerial" /&gt;     
+                <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="Bing Map Key" BingMapStyle="Aerial" />     
 
-            &lt;/syncfusion:SfMap.Layers&gt;
+            </syncfusion:SfMap.Layers>
 
-        &lt;/syncfusion:SfMap &gt;
+        </syncfusion:SfMap >
 
 
 
@@ -73,7 +73,7 @@ Aerial View
 
 The following screenshot illustrates the Aerial View
 
-{ ![](Map-Providers_images/Map-Providers_img2.png) | markdownify }
+{{ '![](Map-Providers_images/Map-Providers_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -83,15 +83,15 @@ Road View
 
 
 
-        &lt;syncfusion:SfMap&gt;
+        <syncfusion:SfMap>
 
-            &lt;syncfusion:SfMap.Layers&gt;
+            <syncfusion:SfMap.Layers>
 
-                &lt;syncfusion:ImageryLayer LayerType="Bing" BingMapKey="Bing Map Key" BingMapStyle="Road" /&gt;     
+                <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="Bing Map Key" BingMapStyle="Road" />     
 
-            &lt;/syncfusion:SfMap.Layers&gt;
+            </syncfusion:SfMap.Layers>
 
-        &lt;/syncfusion:SfMap &gt;
+        </syncfusion:SfMap >
 
 
 
@@ -99,7 +99,7 @@ Road View
 
 The following screenshot illustrates the Road view.
 
-{ ![](Map-Providers_images/Map-Providers_img3.png) | markdownify }
+{{ '![](Map-Providers_images/Map-Providers_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -109,15 +109,15 @@ AerialWithLabelView
 
 
 
-        &lt;syncfusion:SfMap&gt;
+        <syncfusion:SfMap>
 
-            &lt;syncfusion:SfMap.Layers&gt;
+            <syncfusion:SfMap.Layers>
 
-                &lt;syncfusion:ImageryLayer LayerType="Bing" BingMapKey="Bing Map Key" BingMapStyle="AerialWithLabels" /&gt;     
+                <syncfusion:ImageryLayer LayerType="Bing" BingMapKey="Bing Map Key" BingMapStyle="AerialWithLabels" />     
 
-            &lt;/syncfusion:SfMap.Layers&gt;
+            </syncfusion:SfMap.Layers>
 
-        &lt;/syncfusion:SfMap &gt;
+        </syncfusion:SfMap >
 
 
 
@@ -125,7 +125,7 @@ AerialWithLabelView
 
 The following screenshot illustrates the AerialWithLabel view.
 
-{ ![](Map-Providers_images/Map-Providers_img4.png) | markdownify }
+{{ '![](Map-Providers_images/Map-Providers_img4.png)' | markdownify }}
 {:.image }
 
 

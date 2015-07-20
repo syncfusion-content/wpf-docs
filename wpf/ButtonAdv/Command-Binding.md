@@ -15,7 +15,7 @@ The Command can be binded as follows:
 
 [XAML]
 
-&lt;sync:ButtonAdv SizeMode="Normal" Command="{Binding CustomCommand}" CommandParameter="CUSTOM"/&gt;
+<sync:ButtonAdv SizeMode="Normal" Command="{Binding CustomCommand}" CommandParameter="CUSTOM"/>
 
 
 

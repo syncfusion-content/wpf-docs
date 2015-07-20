@@ -19,7 +19,7 @@ RadiusX and RadiusY properties in the Radial Menu can be used to define the X an
 
 
 
-&lt;navigation:SfRadialMenu RadiusX="150" RadiusY="150" /&gt;
+<navigation:SfRadialMenu RadiusX="150" RadiusY="150" />
 
 
 
@@ -33,11 +33,11 @@ CenterRimRadiusFactor property can be used to define the radius of the center ri
 
 
 
-&lt;navigation:SfRadialMenu   CenterRimRadiusFactor="0.3" IsOpen="True" /&gt;
+<navigation:SfRadialMenu   CenterRimRadiusFactor="0.3" IsOpen="True" />
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/7.png](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/7.png](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -51,11 +51,11 @@ RimBackground property used to fill the outer rim (outer circle).
 
 
 
-&lt;navigation:SfRadialMenu IsOpen="True" RimBackground="Green" /&gt;
+<navigation:SfRadialMenu IsOpen="True" RimBackground="Green" />
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/8.png](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/8.png](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -73,13 +73,13 @@ RimActiveBrush property used to fill the expander rim and this expander rim only
 
 
 
-&lt;navigation:SfRadialMenu RimActiveBrush="Red" RimBackground="Green" IsOpen="True" /&gt;
+<navigation:SfRadialMenu RimActiveBrush="Red" RimBackground="Green" IsOpen="True" />
 
 
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/9.png](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/9.png](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -93,13 +93,13 @@ The RimHoverBrush property can be used to fill the expander rim while the pointe
 
 
 
-&lt;navigation:SfRadialMenu RimActiveBrush="Red" RimBackground="Green"   RimHoverBrush="Blue" IsOpen="True" /&gt;
+<navigation:SfRadialMenu RimActiveBrush="Red" RimBackground="Green"   RimHoverBrush="Blue" IsOpen="True" />
 
 
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/10.png](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/10.png](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -113,11 +113,11 @@ RimRadiusFactor property of Radial Menu can be used to set the radius of the ite
 
 
 
-&lt;navigation:SfRadialMenu RimActiveBrush="Red" RimRadiusFactor="0.7" RimBackground="Green"   RimHoverBrush="Blue" IsOpen="True" /&gt;
+<navigation:SfRadialMenu RimActiveBrush="Red" RimRadiusFactor="0.7" RimBackground="Green"   RimHoverBrush="Blue" IsOpen="True" />
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/11.png](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/11.png](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -145,25 +145,25 @@ Each SfRadialMenuItem can be set with a different background color on mouse over
 
 
 
-&lt;navigation:SfRadialMenu IsOpen="True"&gt;
-  &lt;navigation:SfRadialMenuItem Header="Bold" MenuMouseOverBackgroundColor="Pink" ShowMouseOverStyle="true"&gt;
-    &lt;navigation:SfRadialMenuItem/&gt;
-  &lt;/navigation:SfRadialMenuItem&gt;
-  &lt;navigation:SfRadialMenuItem Header="Copy" MenuMouseOverBackgroundColor="PaleTurquoise" ShowMouseOverStyle="true"&gt;
-    &lt;navigation:SfRadialMenuItem/&gt;
-  &lt;/navigation:SfRadialMenuItem&gt;
-  &lt;navigation:SfRadialMenuItem Header="Undo" MenuMouseOverBackgroundColor="Pink" ShowMouseOverStyle="true"&gt;
-    &lt;navigation:SfRadialMenuItem/&gt;
-  &lt;/navigation:SfRadialMenuItem&gt;
-  &lt;navigation:SfRadialMenuItem Header="Font Size" MenuMouseOverBackgroundColor="PaleTurquoise" ShowMouseOverStyle="true"&gt;
-    &lt;navigation:SfRadialMenuItem/&gt;
-  &lt;/navigation:SfRadialMenuItem&gt;
- &lt;navigation:SfRadialMenuItem Header="Color" MenuMouseOverBackgroundColor="Lavender" ShowMouseOverStyle="true"&gt;
-    &lt;navigation:SfRadialMenuItem/&gt;
-  &lt;/navigation:SfRadialMenuItem&gt;
-&lt;/navigation:SfRadialMenu&gt; 
+<navigation:SfRadialMenu IsOpen="True">
+  <navigation:SfRadialMenuItem Header="Bold" MenuMouseOverBackgroundColor="Pink" ShowMouseOverStyle="true">
+    <navigation:SfRadialMenuItem/>
+  </navigation:SfRadialMenuItem>
+  <navigation:SfRadialMenuItem Header="Copy" MenuMouseOverBackgroundColor="PaleTurquoise" ShowMouseOverStyle="true">
+    <navigation:SfRadialMenuItem/>
+  </navigation:SfRadialMenuItem>
+  <navigation:SfRadialMenuItem Header="Undo" MenuMouseOverBackgroundColor="Pink" ShowMouseOverStyle="true">
+    <navigation:SfRadialMenuItem/>
+  </navigation:SfRadialMenuItem>
+  <navigation:SfRadialMenuItem Header="Font Size" MenuMouseOverBackgroundColor="PaleTurquoise" ShowMouseOverStyle="true">
+    <navigation:SfRadialMenuItem/>
+  </navigation:SfRadialMenuItem>
+ <navigation:SfRadialMenuItem Header="Color" MenuMouseOverBackgroundColor="Lavender" ShowMouseOverStyle="true">
+    <navigation:SfRadialMenuItem/>
+  </navigation:SfRadialMenuItem>
+</navigation:SfRadialMenu> 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png) | markdownify }
+{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)' | markdownify }}
 {:.image }
 
 

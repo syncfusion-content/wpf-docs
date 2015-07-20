@@ -33,7 +33,7 @@ Me.olapGauge.RowsCount = 2
 
 
 
-{ ![C:/Users/Hari/Pictures/OlapGauge/Multiple Gauge.png](Gauge-Customization_images/Gauge-Customization_img1.png) | markdownify }
+{{ '![C:/Users/Hari/Pictures/OlapGauge/Multiple Gauge.png](Gauge-Customization_images/Gauge-Customization_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -41,7 +41,7 @@ Sample Location
 
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\&lt;Version Number&gt;\BI\WPF\OLAPGauge.WPF\Samples\Product ShowCase\Product Showcase Demo\
+..\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OLAPGauge.WPF\Samples\Product ShowCase\Product Showcase Demo\
 
 ## How to represent KPI values in OLAP Gauge?
 
@@ -49,7 +49,7 @@ The OLAP Gauge control provides support to display Key Performance Indicators (K
 
 You can easily view the KPI Value and KPI Goal with the help of _Pointers_ and _Markers_, and the KPI status and KPI trend values through user friendly images in OLAP Gauge WPF.  Each gauge represents a member against one KPI combination.
 
-{ ![C:/Users/Hari/Pictures/OlapGauge/KPI.png](Gauge-Customization_images/Gauge-Customization_img2.png) | markdownify }
+{{ '![C:/Users/Hari/Pictures/OlapGauge/KPI.png](Gauge-Customization_images/Gauge-Customization_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -57,7 +57,7 @@ Sample Location
 
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\&lt;Version Number&gt;\BI\WPF\OLAPGauge.WPF\Samples\Product ShowCase\Product Showcase Demo\
+..\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OLAPGauge.WPF\Samples\Product ShowCase\Product Showcase Demo\
 
 ## How to show as well as hide gauge header, gauge factor and gauge labels? 
 
@@ -89,7 +89,7 @@ Me.olapGauge1.ShowGaugeLabels = True
 
 The following screen shot shows the output:
 
-{ ![C:/Users/Hari/Pictures/OlapGauge/With labels.png](Gauge-Customization_images/Gauge-Customization_img3.png) | markdownify }
+{{ '![C:/Users/Hari/Pictures/OlapGauge/With labels.png](Gauge-Customization_images/Gauge-Customization_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -119,7 +119,7 @@ Me.olapGauge1.ShowGaugeLabels = False
 
 The following screen shot shows the output:
 
-{ ![C:/Users/Hari/Pictures/OlapGauge/No label name inside.png](Gauge-Customization_images/Gauge-Customization_img4.png) | markdownify }
+{{ '![C:/Users/Hari/Pictures/OlapGauge/No label name inside.png](Gauge-Customization_images/Gauge-Customization_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -127,5 +127,5 @@ Sample Location
 
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\&lt;Version Number&gt;\BI\WPF\OLAPGauge.WPF\Samples\Product ShowCase\Product Showcase Demo\
+..\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OLAPGauge.WPF\Samples\Product ShowCase\Product Showcase Demo\
 

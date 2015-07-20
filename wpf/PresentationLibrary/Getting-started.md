@@ -19,7 +19,7 @@ In this section, you can learn how to create a simple PowerPoint presentation wi
 
 Initially, you can learn how to create a slide as follows.
 
-{ ![](Getting-started_images/Getting-started_img1.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -91,7 +91,7 @@ textPart.Font.Bold = true;
 
 Refer to the following screenshot.
 
-{ ![](Getting-started_images/Getting-started_img2.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -139,13 +139,13 @@ textPart.Font.FontSize = 40;
 
 On saving the Presentation at this instance will result with the PowerPoint Presentation with one slide and its contents are follows. 
 
-{ ![](Getting-started_images/Getting-started_img3.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img3.png)' | markdownify }}
 {:.image }
 
 
 Now this section demonstrates how to create a bulleted and numbered list in the second slide as follows.
 
-{ ![](Getting-started_images/Getting-started_img4.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -319,7 +319,7 @@ paragraph.FirstLineIndent = -20;
 
 Refer to the following screenshot.
 
-{ ![](Getting-started_images/Getting-started_img5.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -389,7 +389,7 @@ paragraph.FirstLineIndent = -20;
 
 On saving the presentation, the second slide with the list is as follows.
 
-{ ![](Getting-started_images/Getting-started_img6.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -483,7 +483,7 @@ paragraph.FirstLineIndent = -20;
 
 On saving the presentation, the slide looks like the following screenshot.
 
-{ ![](Getting-started_images/Getting-started_img7.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -537,7 +537,7 @@ picture = thirdSlide.Shapes.AddPicture(new MemoryStream(image.ImageData), 485, 1
 
 After adding the images into the slide, the slide looks like the following screenshot. 
 
-{ ![](Getting-started_images/Getting-started_img8.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -677,7 +677,7 @@ chart.ChartData.SetValue(7, 4, 30);
 
 After filling these data, the embedded excel sheet looks like the following screenshot. 
 
-{ ![](Getting-started_images/Getting-started_img9.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -735,7 +735,7 @@ presentation.Close();
 
 Now the chart added in the slide looks like chart in the following screenshot.
 
-{ ![](Getting-started_images/Getting-started_img10.png) | markdownify }
+{{ '![](Getting-started_images/Getting-started_img10.png)' | markdownify }}
 {:.image }
 
 

@@ -51,25 +51,25 @@ ItemsSource="{Binding StockPriceDetails}" XBindingPath="_Date"
 
 ShowToolTip="true" ToolTipLabelFormat ="MMM/dd/yyyy">
 
-&lt;chart:SfDateTimeRangeNavigator.LeftToolTipTemplate&gt;
+<chart:SfDateTimeRangeNavigator.LeftToolTipTemplate>
 
-&lt;DataTemplate&gt;
+<DataTemplate>
 
 -----------------------
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
-&lt;/chart:SfDateTimeRangeNavigator.LeftToolTipTemplate&gt;
+</chart:SfDateTimeRangeNavigator.LeftToolTipTemplate>
 
-&lt;chart:SfDateTimeRangeNavigator.Content&gt;
+<chart:SfDateTimeRangeNavigator.Content>
 
-&lt;/chart:SfDateTimeRangeNavigator.Content&gt;
+</chart:SfDateTimeRangeNavigator.Content>
 
-&lt;/chart:SfDateTimeRangeNavigator&gt;
+</chart:SfDateTimeRangeNavigator>
 
 
 
-{ ![](ToolTip-Support_images/ToolTip-Support_img1.png) | markdownify }
+{{ '![](ToolTip-Support_images/ToolTip-Support_img1.png)' | markdownify }}
 {:.image }
 
 

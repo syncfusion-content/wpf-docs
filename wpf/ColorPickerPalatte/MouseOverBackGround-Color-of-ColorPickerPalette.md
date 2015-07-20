@@ -16,7 +16,7 @@ You can change the background color of the ColorPickerPalette at mouse over, bas
 <table>
 <tr>
 <td>
-[XAML]   <syncfusion:ColorPickerPalette  x:Name="ColorPickerPalette1" MouseOverBackground="Green">                                                      &lt;/syncfusion:ColorPickerPalette&gt;</td></tr>
+[XAML]   <syncfusion:ColorPickerPalette  x:Name="ColorPickerPalette1" MouseOverBackground="Green">                                                      </syncfusion:ColorPickerPalette></td></tr>
 <tr>
 <td>
 [C#]ColorPickerPalette ColorPickerPalette1 = new ColorPickerPalette();ColorPickerPalette1.MouseOverBackground = Brushes.Green;</td></tr>

@@ -23,39 +23,39 @@ If HeaderTemplate is specified for TreeMapLevel, then the header can be bound by
 
 
 
-&lt;Grid Background="Black"&gt;
+<Grid Background="Black">
 
-    &lt;Grid.DataContext&gt;
+    <Grid.DataContext>
 
-        &lt;local:PopulationViewModel/&gt;
+        <local:PopulationViewModel/>
 
-    &lt;/Grid.DataContext&gt;
+    </Grid.DataContext>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
                         WeightValuePath="Population" ColorValuePath="Growth">
 
-        &lt;syncfusion:SfTreeMap.Levels&gt;
+        <syncfusion:SfTreeMap.Levels>
 
-            &lt;syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10" HeaderHeight="50"/&gt;
+            <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10" HeaderHeight="50"/>
 
-            &lt;syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5"/&gt;
+            <syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5"/>
 
-        &lt;/syncfusion:SfTreeMap.Levels&gt;
+        </syncfusion:SfTreeMap.Levels>
 
-    &lt;/syncfusion:SfTreeMap&gt;
+    </syncfusion:SfTreeMap>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
-{ ![](Headers-and-Labels_images/Headers-and-Labels_img1.png) | markdownify }
+{{ '![](Headers-and-Labels_images/Headers-and-Labels_img1.png)' | markdownify }}
 {:.image }
 
 
 TreeMap with Hierarchical Collection:
 
-For TreeMap with Hierarchical Collection, HeaderPath must be specified. The header can be bound by referring Data.&lt;FieldName&gt; to the datatemplate where FieldName refers to the field of object specified in the particular treemap level.
+For TreeMap with Hierarchical Collection, HeaderPath must be specified. The header can be bound by referring Data.<FieldName> to the datatemplate where FieldName refers to the field of object specified in the particular treemap level.
 
 
 
@@ -63,27 +63,27 @@ For TreeMap with Hierarchical Collection, HeaderPath must be specified. The head
 
 
 
-&lt;Grid Background="Black"&gt;
+<Grid Background="Black">
 
-    &lt;Grid.Resources&gt;
+    <Grid.Resources>
 
-        &lt;local:CountrySalesCollection x:Key="countrySalesCollection"/&gt;
+        <local:CountrySalesCollection x:Key="countrySalesCollection"/>
 
-    &lt;/Grid.Resources&gt;
+    </Grid.Resources>
 
-    &lt;syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource countrySalesCollection}}" WeightValuePath="Sales" ColorValuePath="Expense"&gt;
+    <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource countrySalesCollection}}" WeightValuePath="Sales" ColorValuePath="Expense">
 
-        &lt;syncfusion:SfTreeMap.Levels&gt;
+        <syncfusion:SfTreeMap.Levels>
 
-            &lt;syncfusion:TreeMapHierarchicalLevel ChildPath="RegionalSalesCollection" ChildGap="10" HeaderHeight="25" HeaderPath="Name"&gt;
+            <syncfusion:TreeMapHierarchicalLevel ChildPath="RegionalSalesCollection" ChildGap="10" HeaderHeight="25" HeaderPath="Name">
 
-            &lt;/syncfusion:TreeMapHierarchicalLevel&gt;
+            </syncfusion:TreeMapHierarchicalLevel>
 
-        &lt;/syncfusion:SfTreeMap.Levels&gt;
+        </syncfusion:SfTreeMap.Levels>
 
-    &lt;/syncfusion:SfTreeMap&gt;
+    </syncfusion:SfTreeMap>
 
-&lt;/Grid&gt;
+</Grid>
 
 ## Labels
 
@@ -99,13 +99,13 @@ If LabelTemplate is specified for TreeMapLevel, then the label can be bound by r
 
 
 
-&lt;Grid Background="Black"&gt;
+<Grid Background="Black">
 
-    &lt;Grid.DataContext&gt;
+    <Grid.DataContext>
 
-        &lt;local:PopulationViewModel/&gt;
+        <local:PopulationViewModel/>
 
-    &lt;/Grid.DataContext&gt;
+    </Grid.DataContext>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
 
@@ -113,55 +113,55 @@ If LabelTemplate is specified for TreeMapLevel, then the label can be bound by r
 
                           ColorValuePath="Growth">
 
-        &lt;syncfusion:SfTreeMap.Levels&gt;
+        <syncfusion:SfTreeMap.Levels>
 
-            &lt;syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10" ShowLabels="True"/&gt;
+            <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10" ShowLabels="True"/>
 
-        &lt;/syncfusion:SfTreeMap.Levels&gt;
+        </syncfusion:SfTreeMap.Levels>
 
-    &lt;/syncfusion:SfTreeMap&gt;
+    </syncfusion:SfTreeMap>
 
-&lt;/Grid&gt;
-
-
+</Grid>
 
 
 
-{ ![](Headers-and-Labels_images/Headers-and-Labels_img2.png) | markdownify }
+
+
+{{ '![](Headers-and-Labels_images/Headers-and-Labels_img2.png)' | markdownify }}
 {:.image }
 
 
 TreeMap with Hierarchical Collection:
 
-For TreeMap with Hierarchical Collection, LabelPath must be specified. The label can be bound by referring Data. &lt;FieldName&gt; to the datatemplate where FieldName refers to the field of object specified in the particular treemap level.
+For TreeMap with Hierarchical Collection, LabelPath must be specified. The label can be bound by referring Data. <FieldName> to the datatemplate where FieldName refers to the field of object specified in the particular treemap level.
 
 
 
 [XAML]
 
-&lt;Grid Background="Black"&gt;
+<Grid Background="Black">
 
-    &lt;Grid.Resources&gt;
+    <Grid.Resources>
 
-        &lt;local:CountrySalesCollection x:Key="countrySalesCollection"/&gt;
+        <local:CountrySalesCollection x:Key="countrySalesCollection"/>
 
-    &lt;/Grid.Resources&gt;
+    </Grid.Resources>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource countrySalesCollection}}"
 
                       WeightValuePath="Sales" ColorValuePath="Expense">
 
-        &lt;syncfusion:SfTreeMap.Levels&gt;
+        <syncfusion:SfTreeMap.Levels>
 
-            &lt;syncfusion:TreeMapHierarchicalLevel ChildPath="RegionalSalesCollection" ChildGap="10" ShowLabels="True" LabelPath="Name"&gt;
+            <syncfusion:TreeMapHierarchicalLevel ChildPath="RegionalSalesCollection" ChildGap="10" ShowLabels="True" LabelPath="Name">
 
-            &lt;/syncfusion:TreeMapHierarchicalLevel&gt;
+            </syncfusion:TreeMapHierarchicalLevel>
 
-        &lt;/syncfusion:SfTreeMap.Levels&gt;
+        </syncfusion:SfTreeMap.Levels>
 
-    &lt;/syncfusion:SfTreeMap&gt;
+    </syncfusion:SfTreeMap>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 

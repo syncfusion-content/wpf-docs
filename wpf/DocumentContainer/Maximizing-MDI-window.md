@@ -17,23 +17,23 @@ You can maximize the MDI window by setting the CanMDIMaximize property to True. 
 
 
 
-&lt;!-- Adding Document Container --&gt;
+<!-- Adding Document Container -->
 
-&lt;syncfusion:DocumentContainer Name="DocContainer" CanMDIMaximize = "True"  Mode="MDI"&gt;
+<syncfusion:DocumentContainer Name="DocContainer" CanMDIMaximize = "True"  Mode="MDI">
 
-&lt;FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features"&gt;
+<FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features">
 
-&lt;/FlowDocumentScrollViewer&gt;
-
-…....
+</FlowDocumentScrollViewer>
 
 …....
 
-&lt;/syncfusion:DocumentContainer&gt;
+…....
+
+</syncfusion:DocumentContainer>
 
 
 
-{ ![](Maximizing-MDI-window_images/Maximizing-MDI-window_img1.jpeg) | markdownify }
+{{ '![](Maximizing-MDI-window_images/Maximizing-MDI-window_img1.jpeg)' | markdownify }}
 {:.image }
 
 

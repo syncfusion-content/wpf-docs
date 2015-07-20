@@ -49,37 +49,37 @@ Gets or sets the bool that represents a value to enable start the range from ze
 </table>
  [XAML]
 
-&lt;syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0"&gt;
+<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            &lt;syncfusion:SfChart.DataContext&gt;
+            <syncfusion:SfChart.DataContext>
 
-                &lt;local:ViewModel/&gt;
+                <local:ViewModel/>
 
-            &lt;/syncfusion:SfChart.DataContext&gt;
+            </syncfusion:SfChart.DataContext>
 
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:CategoryAxis   Header="Company Name"/&gt;
+                <syncfusion:CategoryAxis   Header="Company Name"/>
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.SecondaryAxis>
 
-                &lt;syncfusion:NumericalAxis Interval="100" Minimum="0" Maximum="1000" RangePadding="Round"   Header="Gross Revenue "/&gt;
+                <syncfusion:NumericalAxis Interval="100" Minimum="0" Maximum="1000" RangePadding="Round"   Header="Gross Revenue "/>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
-
-
-
-            &lt;syncfusion:ColumnSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}"&gt;
-
-            &lt;/syncfusion:ColumnSeries&gt;
-
-        &lt;/syncfusion:SfChart&gt;
+            </syncfusion:SfChart.SecondaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/chart3.png](Axis_images/Axis_img1.png) | markdownify }
+            <syncfusion:ColumnSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
+
+            </syncfusion:ColumnSeries>
+
+        </syncfusion:SfChart>
+
+
+
+{{ '![C:/Users/rachel/Desktop/wpf/chart3.png](Axis_images/Axis_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -111,43 +111,43 @@ Gets or sets the LabelPlacement that represents the position of the label in the
 
 
 
-&lt;syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0"&gt;
+<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-                &lt;syncfusion:SfChart.DataContext&gt;
+                <syncfusion:SfChart.DataContext>
 
-                    &lt;local:ViewModel/&gt;
+                    <local:ViewModel/>
 
-                &lt;/syncfusion:SfChart.DataContext&gt;
-
-
-
-                &lt;syncfusion:SfChart.PrimaryAxis&gt;
-
-                    &lt;syncfusion:CategoryAxis   Header="Company Name"/&gt;
-
-                &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+                </syncfusion:SfChart.DataContext>
 
 
 
-                &lt;syncfusion:SfChart.SecondaryAxis&gt;
+                <syncfusion:SfChart.PrimaryAxis>
 
-                    &lt;syncfusion:NumericalAxis Interval="10" Minimum="200" Maximum="400" RangePadding="Round"   Header="Gross Revenue "/&gt;
+                    <syncfusion:CategoryAxis   Header="Company Name"/>
 
-                &lt;/syncfusion:SfChart.SecondaryAxis&gt;
-
-
-
-                &lt;syncfusion:ColumnSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}"&gt;
-
-                &lt;/syncfusion:ColumnSeries&gt;
+                </syncfusion:SfChart.PrimaryAxis>
 
 
 
-            &lt;/syncfusion:SfChart&gt;
+                <syncfusion:SfChart.SecondaryAxis>
+
+                    <syncfusion:NumericalAxis Interval="10" Minimum="200" Maximum="400" RangePadding="Round"   Header="Gross Revenue "/>
+
+                </syncfusion:SfChart.SecondaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/chart3.png](Axis_images/Axis_img2.png) | markdownify }
+                <syncfusion:ColumnSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
+
+                </syncfusion:ColumnSeries>
+
+
+
+            </syncfusion:SfChart>
+
+
+
+{{ '![C:/Users/rachel/Desktop/wpf/chart3.png](Axis_images/Axis_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -222,13 +222,13 @@ The default IntervalType of a DateTimeAxis is Auto. It calculates the type autom
 
 [XAML]
 
-&lt;syncfusion:SfChart.PrimaryAxis&gt;
+<syncfusion:SfChart.PrimaryAxis>
 
                 <syncfusion:DateTimeAxis Name="Primary" 
 
                                     IntervalType="Years" Interval="1" />
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
 
 
@@ -238,41 +238,41 @@ The following code example and screenshot are for DateTimeAxis.
 
 
 
-  &lt;syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0"&gt;
+  <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            &lt;syncfusion:SfChart.DataContext&gt;
+            <syncfusion:SfChart.DataContext>
 
-                &lt;local:ViewModel/&gt;
+                <local:ViewModel/>
 
-            &lt;/syncfusion:SfChart.DataContext&gt;
-
-
-
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
-
-                &lt;syncfusion:DateTimeAxis Interval="1" LabelFormat="yyyy" IntervalType="Years”/&gt;
-
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.DataContext>
 
 
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:NumericalAxis /&gt;
+                <syncfusion:DateTimeAxis Interval="1" LabelFormat="yyyy" IntervalType="Years”/>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
-
-
-
-            &lt;syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="Year" YBindingPath="CompanyTurnOver"  ItemsSource="{Binding CompanyDetails}"&gt;
-
-            &lt;/syncfusion:LineSeries&gt;
-
-        &lt;/syncfusion:SfChart&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-3.png](Axis_images/Axis_img3.png) | markdownify }
+            <syncfusion:SfChart.SecondaryAxis>
+
+                <syncfusion:NumericalAxis />
+
+            </syncfusion:SfChart.SecondaryAxis>
+
+
+
+            <syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="Year" YBindingPath="CompanyTurnOver"  ItemsSource="{Binding CompanyDetails}">
+
+            </syncfusion:LineSeries>
+
+        </syncfusion:SfChart>
+
+
+
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-3.png](Axis_images/Axis_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -302,43 +302,43 @@ Gets or sets the DateTimeIntervalType that represents the type of the interval.<
 
 
 
-&lt;syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0"&gt;
+<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            &lt;syncfusion:SfChart.DataContext&gt;
+            <syncfusion:SfChart.DataContext>
 
-                &lt;local:ViewModel/&gt;
+                <local:ViewModel/>
 
-            &lt;/syncfusion:SfChart.DataContext&gt;
-
-
-
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
-
-                &lt;syncfusion:DateTimeCategoryAxis Interval="1" LabelFormat="yyyy" IntervalType="Years"  Header="Company Name"/&gt;
-
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.DataContext>
 
 
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:NumericalAxis   Header="Gross Revenue (cr.)"/&gt;
+                <syncfusion:DateTimeCategoryAxis Interval="1" LabelFormat="yyyy" IntervalType="Years"  Header="Company Name"/>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
-
-
-
-            &lt;syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="Year" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}"&gt;
-
-            &lt;/syncfusion:LineSeries&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
 
 
-        &lt;/syncfusion:SfChart&gt;
+            <syncfusion:SfChart.SecondaryAxis>
+
+                <syncfusion:NumericalAxis   Header="Gross Revenue (cr.)"/>
+
+            </syncfusion:SfChart.SecondaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-3.png](Axis_images/Axis_img4.png) | markdownify }
+            <syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="Year" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
+
+            </syncfusion:LineSeries>
+
+
+
+        </syncfusion:SfChart>
+
+
+
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-3.png](Axis_images/Axis_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -372,39 +372,39 @@ Gets or sets the timespan value that represents the maximum value for the Axis. 
 
 [XAML]
 
- &lt;syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0"&gt;
+ <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            &lt;syncfusion:SfChart.DataContext&gt;
+            <syncfusion:SfChart.DataContext>
 
-                &lt;local:ViewModel/&gt;
+                <local:ViewModel/>
 
-            &lt;/syncfusion:SfChart.DataContext&gt;
-
-
-
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
-
-                &lt;syncfusion:TimeSpanAxis Interval="00:00:01" Header="Company Name"/&gt;
-
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.DataContext>
 
 
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:NumericalAxis   Header="Gross Revenue (cr.)"/&gt;
+                <syncfusion:TimeSpanAxis Interval="00:00:01" Header="Company Name"/>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
-
-            &lt;syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="Year" YBindingPath="CompanyTurnOver"  ItemsSource="{Binding CompanyDetails}"&gt;
-
-            &lt;/syncfusion:LineSeries&gt;
-
-        &lt;/syncfusion:SfChart&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![](Axis_images/Axis_img5.png) | markdownify }
+            <syncfusion:SfChart.SecondaryAxis>
+
+                <syncfusion:NumericalAxis   Header="Gross Revenue (cr.)"/>
+
+            </syncfusion:SfChart.SecondaryAxis>
+
+            <syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="Year" YBindingPath="CompanyTurnOver"  ItemsSource="{Binding CompanyDetails}">
+
+            </syncfusion:LineSeries>
+
+        </syncfusion:SfChart>
+
+
+
+{{ '![](Axis_images/Axis_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -444,37 +444,37 @@ Gets or sets the double value that represents the logarithmic base value of the 
 
 
 
-&lt;syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0"&gt;
+<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            &lt;syncfusion:SfChart.DataContext&gt;
+            <syncfusion:SfChart.DataContext>
 
-                &lt;local:ViewModel/&gt;
+                <local:ViewModel/>
 
-            &lt;/syncfusion:SfChart.DataContext&gt;
-
-
-
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
-
-                &lt;syncfusion:CategoryAxis   Header="Company Name"/&gt;
-
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.DataContext>
 
 
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:LogarithmicAxis LogarithmicBase="10"   Header="Gross Revenue (cr.)"/&gt;
+                <syncfusion:CategoryAxis   Header="Company Name"/>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
-
-            &lt;syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}"&gt;
-
-            &lt;/syncfusion:LineSeries&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
 
 
-        &lt;/syncfusion:SfChart&gt;
+            <syncfusion:SfChart.SecondaryAxis>
+
+                <syncfusion:LogarithmicAxis LogarithmicBase="10"   Header="Gross Revenue (cr.)"/>
+
+            </syncfusion:SfChart.SecondaryAxis>
+
+            <syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
+
+            </syncfusion:LineSeries>
+
+
+
+        </syncfusion:SfChart>
 
 
 
@@ -482,7 +482,7 @@ Gets or sets the double value that represents the logarithmic base value of the 
 
 The following screenshot illustrates the SfChart with LogarithmicAxis.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-5.png](Axis_images/Axis_img6.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-5.png](Axis_images/Axis_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -508,23 +508,23 @@ By default, all the series are plotted based on Primary and Secondary Axis. You 
 
      >
 
-            &lt;syncfusion:ColumnSeries.XAxis&gt;
+            <syncfusion:ColumnSeries.XAxis>
 
-                &lt;syncfusion:NumericalAxis Header="Additional X Axis"/&gt;
+                <syncfusion:NumericalAxis Header="Additional X Axis"/>
 
-            &lt;/syncfusion:ColumnSeries.XAxis&gt;
-
-
-
-            &lt;syncfusion:ColumnSeries.YAxis&gt;
-
-                &lt;syncfusion:NumericalAxis Header="Additional Y Axis"/&gt;
-
-            &lt;/syncfusion:ColumnSeries.YAxis&gt;
+            </syncfusion:ColumnSeries.XAxis>
 
 
 
-        &lt;/syncfusion:ColumnSeries&gt;
+            <syncfusion:ColumnSeries.YAxis>
+
+                <syncfusion:NumericalAxis Header="Additional Y Axis"/>
+
+            </syncfusion:ColumnSeries.YAxis>
+
+
+
+        </syncfusion:ColumnSeries>
 
 
 
@@ -548,7 +548,7 @@ By default, all the series are plotted based on Primary and Secondary Axis. You 
 
 The following screenshot illustrates SfChart with multiple axes.
 
-{ ![C:/Users/rachel/Desktop/snaps/6.png](Axis_images/Axis_img7.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/snaps/6.png](Axis_images/Axis_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -564,23 +564,23 @@ The following is the code example for setting the OpposedPosition property.
 
 
 
-&lt;syncfusion:ColumnSeries.XAxis&gt;
+<syncfusion:ColumnSeries.XAxis>
 
-            &lt;syncfusion:NumericalAxis Header="Additional X Axis" OpposedPosition="True"/&gt;
+            <syncfusion:NumericalAxis Header="Additional X Axis" OpposedPosition="True"/>
 
-        &lt;/syncfusion:ColumnSeries.XAxis&gt;
+        </syncfusion:ColumnSeries.XAxis>
 
 
 
-        &lt;syncfusion:ColumnSeries.YAxis&gt;
+        <syncfusion:ColumnSeries.YAxis>
 
-            &lt;syncfusion:NumericalAxis Header="Additional Y Axis" OpposedPosition="True"/&gt;
+            <syncfusion:NumericalAxis Header="Additional Y Axis" OpposedPosition="True"/>
 
-        &lt;/syncfusion:ColumnSeries.YAxis&gt;
+        </syncfusion:ColumnSeries.YAxis>
 
 The following is a screenshot demonstrating y-axis of a chart arranged in OpposedPosition.
 
-{ ![C:/Users/rachel/Desktop/snaps/7.png](Axis_images/Axis_img8.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/snaps/7.png](Axis_images/Axis_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -590,23 +590,23 @@ This feature is used to reverse chart plotting inverse the axis scaling.
 
 [XAML]
 
-&lt;syncfusion:SfChart.PrimaryAxis&gt;
+<syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:CategoryAxis   FontSize="16" IsInversed="True" OpposedPosition="True" /&gt;
+                <syncfusion:CategoryAxis   FontSize="16" IsInversed="True" OpposedPosition="True" />
 
-            &lt;/ syncfusion:SfChart.PrimaryAxis&gt;
-
-
-
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
-
-                &lt;syncfusion:NumericalAxis FontSize="16" Minimum="0" Maximum="2000" Interval=”200” IsInversed="True" OpposedPosition="True" /&gt;
-
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+            </ syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/snaps/8.png](Axis_images/Axis_img9.png) | markdownify }
+            <syncfusion:SfChart.SecondaryAxis>
+
+                <syncfusion:NumericalAxis FontSize="16" Minimum="0" Maximum="2000" Interval=”200” IsInversed="True" OpposedPosition="True" />
+
+            </syncfusion:SfChart.SecondaryAxis>
+
+
+
+{{ '![C:/Users/rachel/Desktop/snaps/8.png](Axis_images/Axis_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -624,19 +624,19 @@ ChartAxis calculates the range and intervals automatically based on the values o
 
 [XAML]
 
-&lt;syncfusion:SfChart.PrimaryAxis&gt;
+<syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:CategoryAxis FontSize="14"/&gt;
+                <syncfusion:CategoryAxis FontSize="14"/>
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
 
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.SecondaryAxis>
 
-                &lt;syncfusion:NumericalAxis FontSize="14"/&gt;
+                <syncfusion:NumericalAxis FontSize="14"/>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+            </syncfusion:SfChart.SecondaryAxis>
 
 Range Padding
 
@@ -653,13 +653,13 @@ The following types are available for NumericalAxis:
 
 By default, the default RangePadding value for PrimaryAxis is Auto and for SecondaryAxis, the default value is Round.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-109.png](Axis_images/Axis_img10.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-109.png](Axis_images/Axis_img10.png)' | markdownify }}
 {:.image }
 
 
 The following screenshot demonstrates RangePadding as None, where no padding is applied for the axis.
 
-{ ![](Axis_images/Axis_img11.png) | markdownify }
+{{ '![](Axis_images/Axis_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -667,7 +667,7 @@ Normal RangePadding for a NumericalAxis is used mostly for the y-axis to have pa
 
 The following screenshot illustrates a chart’s y-axis with RangePadding set to Normal.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-11.png](Axis_images/Axis_img12.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-11.png](Axis_images/Axis_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -675,7 +675,7 @@ Round RangePadding for a NumericalAxis rounds the range of the chart axis to the
 
 The following screenshot demonstrates a chart’s x-axis with RangePadding set to Round.
 
-{ ![](Axis_images/Axis_img13.png) | markdownify }
+{{ '![](Axis_images/Axis_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -683,7 +683,7 @@ If RangePadding for NumericalAxis is set to Additional, the interval of the axis
 
 The following screenshot demonstrates a chart’s x-axis with RangePadding set to Additional.
 
-{ ![](Axis_images/Axis_img14.png) | markdownify }
+{{ '![](Axis_images/Axis_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -699,19 +699,19 @@ By default, the RangePadding for a DateTimeAxis is None.
 
 The following screenshot demonstrates a chart’s x-axis with RangePadding set to None. 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-9.png](Axis_images/Axis_img15.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-9.png](Axis_images/Axis_img15.png)' | markdownify }}
 {:.image }
 
 
 When RangePadding for DateTimeAxis is set to Additional, the DateTime interval of the axis is added as padding, as shown in the following screenshot.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-10.png](Axis_images/Axis_img16.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-10.png](Axis_images/Axis_img16.png)' | markdownify }}
 {:.image }
 
 
 When RangePadding for DateTimeAxis is set to Round, the range of the chart axis is rounded off to the nearest possible DateTime value, as shown in the following screenshot.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-9.png](Axis_images/Axis_img17.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-9.png](Axis_images/Axis_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -730,17 +730,17 @@ The following code example and screenshot shows LabelPlacement set to OnTicks.
 
 [XAML]
 
-  &lt;syncfusion:SfChart.PrimaryAxis&gt;
+  <syncfusion:SfChart.PrimaryAxis>
 
      <syncfusion:CategoryAxis LabelPlacement="OnTicks" 
 
          FontSize="16"  />
 
- &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+ </syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-15.png](Axis_images/Axis_img18.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-15.png](Axis_images/Axis_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -750,19 +750,19 @@ The following code example and screenshot shows LabelPlacement set to BetweenTic
 
 
 
-  &lt;syncfusion:SfChart.PrimaryAxis&gt;
+  <syncfusion:SfChart.PrimaryAxis>
 
     <syncfusion:CategoryAxis LabelPlacement="BetweenTicks" 
 
            FontSize="16"  />
 
-    &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+    </syncfusion:SfChart.PrimaryAxis>
 
 
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-16.png](Axis_images/Axis_img19.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-16.png](Axis_images/Axis_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -774,33 +774,33 @@ The following code example and screenshot illustrate the use of LabelsPosition.
 
 [XAML]
 
-  &lt;syncfusion:SfChart.PrimaryAxis&gt;
+  <syncfusion:SfChart.PrimaryAxis>
 
     <syncfusion:CategoryAxis  LabelsPosition="Inside" 
 
            FontSize="16"  />
 
-    &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+    </syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-17.png](Axis_images/Axis_img20.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-17.png](Axis_images/Axis_img20.png)' | markdownify }}
 {:.image }
 
 
 [XAML]
 
-  &lt;syncfusion:SfChart.PrimaryAxis&gt;
+  <syncfusion:SfChart.PrimaryAxis>
 
     <syncfusion:CategoryAxis  LabelsPosition="Outside" 
 
            FontSize="16"  />
 
-    &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+    </syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-18.png](Axis_images/Axis_img21.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-18.png](Axis_images/Axis_img21.png)' | markdownify }}
 {:.image }
 
 
@@ -821,15 +821,15 @@ The following code example and screenshot show EdgeLabelsDrawingMode set to Cent
 
 [XAML]
 
-  &lt;syncfusion:SfChart.PrimaryAxis&gt;
+  <syncfusion:SfChart.PrimaryAxis>
 
-  &lt;syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Center" FontSize="16"  /&gt;
+  <syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Center" FontSize="16"  />
 
-    &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+    </syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-19.png](Axis_images/Axis_img22.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-19.png](Axis_images/Axis_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -837,15 +837,15 @@ The following code example and screenshot shows EdgeLabelsDrawingMode set to Fit
 
 [XAML]
 
-  &lt;syncfusion:SfChart.PrimaryAxis&gt;
+  <syncfusion:SfChart.PrimaryAxis>
 
-  &lt;syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Fit" FontSize="16"  /&gt;
+  <syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Fit" FontSize="16"  />
 
-    &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+    </syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-20.png](Axis_images/Axis_img23.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-20.png](Axis_images/Axis_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -853,15 +853,15 @@ The following code example and screenshot shows EdgeLabelDrawingMode set to Hide
 
 [XAML]
 
-  &lt;syncfusion:SfChart.PrimaryAxis&gt;
+  <syncfusion:SfChart.PrimaryAxis>
 
-  &lt;syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Hide" FontSize="16"  /&gt;
+  <syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Hide" FontSize="16"  />
 
-    &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+    </syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-21.png](Axis_images/Axis_img24.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-21.png](Axis_images/Axis_img24.png)' | markdownify }}
 {:.image }
 
 
@@ -869,15 +869,15 @@ The following code example and screenshot shows EdgeLabelsDrawingMode set to Shi
 
 [XAML]
 
-  &lt;syncfusion:SfChart.PrimaryAxis&gt;
+  <syncfusion:SfChart.PrimaryAxis>
 
-  &lt;syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Shift" FontSize="16"  /&gt;
+  <syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Shift" FontSize="16"  />
 
-    &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+    </syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-22.png](Axis_images/Axis_img25.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-22.png](Axis_images/Axis_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -897,17 +897,17 @@ The following code example and screenshot shows LabelsIntersectAction set to Non
 
 [XAML]
 
-  &lt;syncfusion:SfChart.PrimaryAxis&gt;
+  <syncfusion:SfChart.PrimaryAxis>
 
     <syncfusion:DateTimeAxis   LabelsIntersectAction="None"  
 
            FontSize="16"  />
 
-    &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+    </syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-23.png](Axis_images/Axis_img26.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-23.png](Axis_images/Axis_img26.png)' | markdownify }}
 {:.image }
 
 
@@ -915,17 +915,17 @@ The following code example and screenshot shows LabelsIntersectAction set to Hid
 
 [XAML]
 
-  &lt;syncfusion:SfChart.PrimaryAxis&gt;
+  <syncfusion:SfChart.PrimaryAxis>
 
     <syncfusion:DateTimeAxis   LabelsIntersectAction="Hide"  
 
            FontSize="16"  />
 
-    &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+    </syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-24.png](Axis_images/Axis_img27.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-24.png](Axis_images/Axis_img27.png)' | markdownify }}
 {:.image }
 
 
@@ -935,19 +935,19 @@ The following code example and screenshot show LabelsIntersectAction set to Mult
 
 
 
-  &lt;syncfusion:SfChart.PrimaryAxis&gt;
+  <syncfusion:SfChart.PrimaryAxis>
 
     <syncfusion:DateTimeAxis   LabelsIntersectAction="MultipleRows"  
 
            FontSize="16"  />
 
-    &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+    </syncfusion:SfChart.PrimaryAxis>
 
 
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-25.png](Axis_images/Axis_img28.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-25.png](Axis_images/Axis_img28.png)' | markdownify }}
 {:.image }
 
 
@@ -959,21 +959,21 @@ The following code example and screenshot demonstrate the usage of PrefixLabelTe
 
 [XAML]
 
-  &lt;DataTemplate x:Key="yPrefix"&gt;
+  <DataTemplate x:Key="yPrefix">
 
-     &lt;TextBlock FontSize="15" VerticalAlignment="Center" Text="$"/&gt;
+     <TextBlock FontSize="15" VerticalAlignment="Center" Text="$"/>
 
-  &lt;/DataTemplate&gt;
+  </DataTemplate>
 
-&lt;syncfusion:SfChart.SecondaryAxis&gt;
+<syncfusion:SfChart.SecondaryAxis>
 
-       &lt;syncfusion:NumericalAxis FontSize="16" Minimum="0" Maximum="1000" PrefixLabelTemplate="{StaticResource yPrefix}" /&gt;
+       <syncfusion:NumericalAxis FontSize="16" Minimum="0" Maximum="1000" PrefixLabelTemplate="{StaticResource yPrefix}" />
 
-&lt;/syncfusion:SfChart.SecondaryAxis&gt;
+</syncfusion:SfChart.SecondaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-26.png](Axis_images/Axis_img29.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-26.png](Axis_images/Axis_img29.png)' | markdownify }}
 {:.image }
 
 
@@ -981,21 +981,21 @@ The following code example and screenshot demonstrate the usage of PostfixLabelT
 
 [XAML]
 
-  &lt;DataTemplate x:Key="yPostfix"&gt;
+  <DataTemplate x:Key="yPostfix">
 
-       &lt;TextBlock FontSize="8" VerticalAlignment="Top" Text="0"/&gt;
+       <TextBlock FontSize="8" VerticalAlignment="Top" Text="0"/>
 
- &lt;/DataTemplate&gt;
+ </DataTemplate>
 
-&lt;chart:SfChart.SecondaryAxis&gt;
+<chart:SfChart.SecondaryAxis>
 
-       &lt;chart:NumericalAxis FontSize="16" Minimum="0" Maximum="100" PostfixLabelTemplate="{StaticResource yPostfix}" /&gt;
+       <chart:NumericalAxis FontSize="16" Minimum="0" Maximum="100" PostfixLabelTemplate="{StaticResource yPostfix}" />
 
-&lt;/chart:SfChart.SecondaryAxis&gt;
+</chart:SfChart.SecondaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-27.png](Axis_images/Axis_img30.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-27.png](Axis_images/Axis_img30.png)' | markdownify }}
 {:.image }
 
 
@@ -1005,23 +1005,23 @@ SfChart provides the LabelFormat property for defining the custom formatting for
 
 [XAML#]
 
- &lt;syncfusion:SfChart.PrimaryAxis&gt;
+ <syncfusion:SfChart.PrimaryAxis>
 
-      &lt;syncfusion:DateTimeAxis LabelFormat="hh:mm tt" IntervalType="Hours" Interval="1" Header="Computer sales" /&gt;
+      <syncfusion:DateTimeAxis LabelFormat="hh:mm tt" IntervalType="Hours" Interval="1" Header="Computer sales" />
 
-&lt;/syncfusion:SfChart.PrimaryAxis&gt;
-
-
-
-&lt;syncfusion:SfChart.SecondaryAxis&gt;
-
-      &lt;syncfusion:NumericalAxis Header="Quantity Sold" LabelFormat="##.00"/&gt;
-
-&lt;/syncfusion:SfChart.SecondaryAxis&gt;
+</syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![](Axis_images/Axis_img31.png) | markdownify }
+<syncfusion:SfChart.SecondaryAxis>
+
+      <syncfusion:NumericalAxis Header="Quantity Sold" LabelFormat="##.00"/>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+
+
+{{ '![](Axis_images/Axis_img31.png)' | markdownify }}
 {:.image }
 
 
@@ -1049,39 +1049,39 @@ Gets or sets the style for the axis labels. The label’s Foreground, FontSize a
 
 [XAML]
 
-&lt;syncfusion:SfChart Height="250" Width="500"&gt;
+<syncfusion:SfChart Height="250" Width="500">
 
-            &lt; syncfusion:SfChart.PrimaryAxis&gt;
+            < syncfusion:SfChart.PrimaryAxis>
 
-                &lt; syncfusion:CategoryAxis  Header="City"&gt;
+                < syncfusion:CategoryAxis  Header="City">
 
-                    &lt; syncfusion:CategoryAxis.LabelStyle&gt;
+                    < syncfusion:CategoryAxis.LabelStyle>
 
-                        &lt; syncfusion:LabelStyle FontSize="10" FontFamily="Arial" Foreground="Green" &gt;&lt;/syncfusion:LabelStyle&gt;
+                        < syncfusion:LabelStyle FontSize="10" FontFamily="Arial" Foreground="Green" ></syncfusion:LabelStyle>
 
-                    &lt;/syncfusion:CategoryAxis.LabelStyle&gt;
+                    </syncfusion:CategoryAxis.LabelStyle>
 
-                &lt;/syncfusion:CategoryAxis&gt;
+                </syncfusion:CategoryAxis>
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.SecondaryAxis>
 
-                &lt;syncfusion:NumericalAxis x:Name="axis" Header="Year" &gt;
+                <syncfusion:NumericalAxis x:Name="axis" Header="Year" >
 
-                    &lt;syncfusion:NumericalAxis.LabelStyle &gt;
+                    <syncfusion:NumericalAxis.LabelStyle >
 
-                        &lt;syncfusion:LabelStyle FontSize="10" Foreground="Green" FontFamily="Arial" &gt;&lt;/syncfusion:LabelStyle&gt;
+                        <syncfusion:LabelStyle FontSize="10" Foreground="Green" FontFamily="Arial" ></syncfusion:LabelStyle>
 
-                    &lt;/syncfusion:NumericalAxis.LabelStyle&gt;
+                    </syncfusion:NumericalAxis.LabelStyle>
 
-                &lt;/syncfusion:NumericalAxis&gt;
+                </syncfusion:NumericalAxis>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+            </syncfusion:SfChart.SecondaryAxis>
 
-            &lt;syncfusion:LineSeries XBindingPath="City" YBindingPath="Year1950" ItemsSource="{Binding PopulationPercent}"&gt;&lt;/syncfusion:LineSeries&gt;
+            <syncfusion:LineSeries XBindingPath="City" YBindingPath="Year1950" ItemsSource="{Binding PopulationPercent}"></syncfusion:LineSeries>
 
-        &lt;/syncfusion:SfChart&gt;
+        </syncfusion:SfChart>
 
 ## GridLines and TickLines 
 
@@ -1093,17 +1093,17 @@ The following code example and screenshot show ShowGridLines set to False.
 
 [XAML]
 
-  &lt;syncfusion:SfChart.PrimaryAxis&gt;
+  <syncfusion:SfChart.PrimaryAxis>
 
     <syncfusion:CategoryAxis ShowGridLines="False" 
 
            FontSize="16"  />
 
-    &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+    </syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-112.png](Axis_images/Axis_img32.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-112.png](Axis_images/Axis_img32.png)' | markdownify }}
 {:.image }
 
 
@@ -1115,15 +1115,15 @@ The following code example and screenshot illustrate major and small ticklines s
 
 [XAML]
 
-   &lt;syncfusion:SfChart.PrimaryAxis&gt;
+   <syncfusion:SfChart.PrimaryAxis>
 
-&lt;syncfusion:NumericalAxis LabelsPosition="Inside" TickLineSize="10" SmallTickLineSize="5" TickLinesPosition="Inside" SmallTickLinesPosition="Inside" SmallTicksPerInterval="2"  FontSize="16"  /&gt;
+<syncfusion:NumericalAxis LabelsPosition="Inside" TickLineSize="10" SmallTickLineSize="5" TickLinesPosition="Inside" SmallTickLinesPosition="Inside" SmallTicksPerInterval="2"  FontSize="16"  />
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-28.png](Axis_images/Axis_img33.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-28.png](Axis_images/Axis_img33.png)' | markdownify }}
 {:.image }
 
 
@@ -1131,59 +1131,59 @@ You can customize the appearance of major gridline, minor gridlines and tickline
 
 [XAML]
 
-&lt;syncfusion:SfChart&gt;
+<syncfusion:SfChart>
 
-   &lt;syncfusion:SfChart.Resources&gt;
+   <syncfusion:SfChart.Resources>
 
-                &lt;Style x:Key="majorTickLineStyle" TargetType="Line"&gt;
+                <Style x:Key="majorTickLineStyle" TargetType="Line">
 
-                    &lt;Setter Property="Stroke" Value="Red"/&gt;
+                    <Setter Property="Stroke" Value="Red"/>
 
-                    &lt;Setter Property="StrokeThickness" Value="1"/&gt;
+                    <Setter Property="StrokeThickness" Value="1"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-                &lt;Style x:Key="minorTickLineStyle" TargetType="Line"&gt;
+                <Style x:Key="minorTickLineStyle" TargetType="Line">
 
-                    &lt;Setter Property="Stroke" Value="Green"/&gt;
+                    <Setter Property="Stroke" Value="Green"/>
 
-                    &lt;Setter Property="StrokeThickness" Value="1"/&gt;
+                    <Setter Property="StrokeThickness" Value="1"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-                &lt;Style x:Key="axisLineStyle" TargetType="Line"&gt;
+                <Style x:Key="axisLineStyle" TargetType="Line">
 
-                    &lt;Setter Property="Stroke" Value="OrangeRed"/&gt;
+                    <Setter Property="Stroke" Value="OrangeRed"/>
 
-                    &lt;Setter Property="StrokeThickness" Value="1"/&gt;
+                    <Setter Property="StrokeThickness" Value="1"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-                &lt;Style x:Key="majorGridLineStyle" TargetType="Line"&gt;
+                <Style x:Key="majorGridLineStyle" TargetType="Line">
 
-                &lt;Setter Property="Stroke" Value="Gray"/&gt;
+                <Setter Property="Stroke" Value="Gray"/>
 
-                &lt;Setter Property="StrokeThickness" Value="1"/&gt;
+                <Setter Property="StrokeThickness" Value="1"/>
 
-                    &lt;Setter Property="StrokeDashArray" Value="4,2"/&gt;
+                    <Setter Property="StrokeDashArray" Value="4,2"/>
 
-                 &lt;/Style&gt;
+                 </Style>
 
-                &lt;Style x:Key="minorGridLineStyle" TargetType="Line"&gt;
+                <Style x:Key="minorGridLineStyle" TargetType="Line">
 
-                    &lt;Setter Property="Stroke" Value="Gray"/&gt;
+                    <Setter Property="Stroke" Value="Gray"/>
 
-                    &lt;Setter Property="StrokeThickness" Value="1"/&gt;
+                    <Setter Property="StrokeThickness" Value="1"/>
 
-                    &lt;Setter Property="StrokeDashArray" Value="1,2"/&gt;
+                    <Setter Property="StrokeDashArray" Value="1,2"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-  &lt;/syncfusion:SfChart.Resources&gt;
+  </syncfusion:SfChart.Resources>
 
 
 
-  &lt;syncfusion:SfChart.PrimaryAxis&gt;
+  <syncfusion:SfChart.PrimaryAxis>
 
                 <syncfusion:DateTimeAxis  MajorGridLineStyle="{StaticResource majorGridLineStyle }"
 
@@ -1201,9 +1201,9 @@ You can customize the appearance of major gridline, minor gridlines and tickline
 
                    />
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.SecondaryAxis>
 
                 <syncfusion:NumericalAxis MajorTickLineStyle="{StaticResource majorTickLineStyle}"
 
@@ -1219,19 +1219,19 @@ You can customize the appearance of major gridline, minor gridlines and tickline
 
                       SmallTickLineSize="5" HorizontalAlignment="Right"  
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+            </syncfusion:SfChart.SecondaryAxis>
 
 
 
-            &lt;syncfusion:FastLineBitmapSeries   XBindingPath="Date" YBindingPath="Value" &gt;
+            <syncfusion:FastLineBitmapSeries   XBindingPath="Date" YBindingPath="Value" >
 
-            &lt;/syncfusion:FastLineBitmapSeries&gt;
+            </syncfusion:FastLineBitmapSeries>
 
-        &lt;/syncfusion:SfChart&gt;
+        </syncfusion:SfChart>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-29.png](Axis_images/Axis_img34.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-29.png](Axis_images/Axis_img34.png)' | markdownify }}
 {:.image }
 
 

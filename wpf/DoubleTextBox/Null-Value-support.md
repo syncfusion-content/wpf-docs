@@ -27,7 +27,7 @@ In this sample, the NullValue (NullValue = 1) is set to the Value property of th
 
 
 
-{ ![](Null-Value-support_images/Null-Value-support_img1.png) | markdownify }
+{{ '![](Null-Value-support_images/Null-Value-support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -47,7 +47,7 @@ In this sample, the NullValue (NullValue = null) is set to the Value property of
 
 
 
-{ ![](Null-Value-support_images/Null-Value-support_img2.png) | markdownify }
+{{ '![](Null-Value-support_images/Null-Value-support_img2.png)' | markdownify }}
 {:.image }
 
 

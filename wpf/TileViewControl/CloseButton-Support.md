@@ -63,7 +63,7 @@ Background="White">
 
           HeaderBackground="Gray" Margin="2" CornerRadius="3"/>         
 
-&lt;/syncfusion:TileViewControl&gt;
+</syncfusion:TileViewControl>
 
 
 
@@ -121,7 +121,7 @@ The following code example illustrates how to add the CloseButton feature to an 
 
 
 
-{ ![](CloseButton-Support_images/CloseButton-Support_img1.png) | markdownify }
+{{ '![](CloseButton-Support_images/CloseButton-Support_img1.png)' | markdownify }}
 {:.image }
 
 

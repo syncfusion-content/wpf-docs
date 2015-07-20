@@ -17,7 +17,7 @@ If the IntegerTextBox is read-only, then no user input or edits are allowed but 
 
 The Corner Radius describes the degree to which corners are rounded. This property has no default value.
 
-{ ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img1.png) | markdownify }
+{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -39,7 +39,7 @@ XAML
 
 
 
-{ ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img2.png) | markdownify }
+{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -61,7 +61,7 @@ XAML
 
 
 
-{ ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img3.png) | markdownify }
+{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -73,11 +73,11 @@ If you press the Enter key in the IntegerTextBox then the Focus moves to the nex
 
 The TextSelectionOnFocus property allows the IntegerTextBox to act like standard text boxes when the cursor hovers over. 
 
-{ ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img4.png) | markdownify }
+{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img4.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img5.png) | markdownify }
+{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img5.png)' | markdownify }}
 {:.image }
 
 

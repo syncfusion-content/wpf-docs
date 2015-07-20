@@ -31,7 +31,7 @@ You can define the condition for formatting the Spreadsheet cells using a condit
 
 
 
-{ ![](Formatting_images/Formatting_img1.png) | markdownify }
+{{ '![](Formatting_images/Formatting_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -41,7 +41,7 @@ You can define the condition for formatting the Spreadsheet cells using a condit
 
 
 
-{ ![](Formatting_images/Formatting_img2.png) | markdownify }
+{{ '![](Formatting_images/Formatting_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -51,7 +51,7 @@ You can define the condition for formatting the Spreadsheet cells using a condit
 
 
 
-{ ![](Formatting_images/Formatting_img3.png) | markdownify }
+{{ '![](Formatting_images/Formatting_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -61,7 +61,7 @@ You can define the condition for formatting the Spreadsheet cells using a condit
 
 
 
-{ ![](Formatting_images/Formatting_img4.png) | markdownify }
+{{ '![](Formatting_images/Formatting_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -75,19 +75,19 @@ The following code illustrates how to bind the ConditionalFormatCommand to a but
 
 
 
-&lt;Button Command="{Binding Path=ConditionalFormatCommand}"&gt;
+<Button Command="{Binding Path=ConditionalFormatCommand}">
 
-            &lt;Button.CommandParameter&gt;
+            <Button.CommandParameter>
 
                 <XlsIO:ExcelComparisonOperator>Greater</XlsIO:ExcelComparisonOperator>
 
-            &lt;/Button.CommandParameter&gt;
+            </Button.CommandParameter>
 
-        &lt;/Button&gt;
+        </Button>
 
 
 
-{ ![](Formatting_images/Formatting_img5.png) | markdownify }
+{{ '![](Formatting_images/Formatting_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -107,19 +107,19 @@ You can define the number formatting using the NumberFormattingCommand. Number f
 
 
 
-&lt;Button Command="{Binding Path=NumberFormatCommand}" Grid.Row="2"&gt;
+<Button Command="{Binding Path=NumberFormatCommand}" Grid.Row="2">
 
-&lt;Button.CommandParameter&gt;
+<Button.CommandParameter>
 
-<System:String>0.00%&lt;/System:String&gt;
+<System:String>0.00%</System:String>
 
-&lt;/Button.CommandParameter&gt;
+</Button.CommandParameter>
 
-&lt;/Button&gt;
+</Button>
 
 
 
-{ ![](Formatting_images/Formatting_img6.png) | markdownify }
+{{ '![](Formatting_images/Formatting_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -133,7 +133,7 @@ This feature center aligns the cell value in Spreadsheet, across the range of se
 
 
 
-{ ![](Formatting_images/Formatting_img7.png) | markdownify }
+{{ '![](Formatting_images/Formatting_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -183,7 +183,7 @@ The following code snippet manually sets the center across selection by calling 
 
 [XAML]
 
-&lt;Button Content="CentreAcrossSelection" Margin="5" Width="200" Command="{Binding ElementName=spreadSheetControl, Path=CenterAcrossSelectionCommand}"/&gt;
+<Button Content="CentreAcrossSelection" Margin="5" Width="200" Command="{Binding ElementName=spreadSheetControl, Path=CenterAcrossSelectionCommand}"/>
 
 
 
@@ -193,7 +193,7 @@ The output displayed is shown in the following screenshot:
 
 
 
-{ ![](Formatting_images/Formatting_img8.png) | markdownify }
+{{ '![](Formatting_images/Formatting_img8.png)' | markdownify }}
 {:.image }
 
 

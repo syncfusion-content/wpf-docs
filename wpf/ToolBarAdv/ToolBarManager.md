@@ -21,57 +21,57 @@ The following code illustrates how to place the ToolBarAdv at the top:
 
 
 
-&lt;shared:ToolBarManager x:Name="toolBarManager" &gt; 
+<shared:ToolBarManager x:Name="toolBarManager" > 
 
-            &lt;shared:ToolBarManager.Resources&gt;
+            <shared:ToolBarManager.Resources>
 
-                &lt;Style TargetType="Button"&gt;
+                <Style TargetType="Button">
 
-                    &lt;Setter Property="Height" Value="20" /&gt;
+                    <Setter Property="Height" Value="20" />
 
-                    &lt;Setter Property="Width" Value="20"/&gt;
+                    <Setter Property="Width" Value="20"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-                &lt;Style TargetType="ToggleButton"&gt;
+                <Style TargetType="ToggleButton">
 
-                    &lt;Setter Property="Height" Value="20"/&gt;
+                    <Setter Property="Height" Value="20"/>
 
-                    &lt;Setter Property="Width" Value="20"/&gt;
+                    <Setter Property="Width" Value="20"/>
 
-                &lt;/Style&gt;
-
-
-
-            &lt;/shared:ToolBarManager.Resources&gt;
-
-            &lt;shared:ToolBarManager.TopToolBarTray&gt;
-
-                &lt;shared:ToolBarTrayAdv &gt;
-
-                    &lt;shared:ToolBarAdv ToolBarName="Standard"&gt;
-
-                        &lt;Button&gt;
-
-                            &lt;Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/&gt;
-
-                        &lt;/Button&gt;
-
-                        &lt;Button &gt;
-
-                            &lt;Image Source="Images/openHS.png"  Width="16" Height="16"/&gt;
-
-                        &lt;/Button&gt;
-
-                    &lt;/shared:ToolBarAdv&gt;
-
-                &lt;/shared:ToolBarTrayAdv&gt;
+                </Style>
 
 
 
-            &lt;/shared:ToolBarManager.TopToolBarTray&gt;
+            </shared:ToolBarManager.Resources>
 
-        &lt;/shared:ToolBarManager&gt;
+            <shared:ToolBarManager.TopToolBarTray>
+
+                <shared:ToolBarTrayAdv >
+
+                    <shared:ToolBarAdv ToolBarName="Standard">
+
+                        <Button>
+
+                            <Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/>
+
+                        </Button>
+
+                        <Button >
+
+                            <Image Source="Images/openHS.png"  Width="16" Height="16"/>
+
+                        </Button>
+
+                    </shared:ToolBarAdv>
+
+                </shared:ToolBarTrayAdv>
+
+
+
+            </shared:ToolBarManager.TopToolBarTray>
+
+        </shared:ToolBarManager>
 
 
 

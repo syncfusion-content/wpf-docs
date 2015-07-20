@@ -37,7 +37,7 @@ The pattern is set by using the Pattern property. The following code snippet ill
 XAML</td></tr>
 <tr>
 <td>
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="ShortDate">&lt;/syncfusion:DateTimeEdit&gt;</td></tr>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="ShortDate"></syncfusion:DateTimeEdit></td></tr>
 <tr>
 <td>
 C#</td></tr>
@@ -47,7 +47,7 @@ Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                    Syn
 </table>
 
 
-{ ![](DateTime-Patterns_images/DateTime-Patterns_img1.png) | markdownify }
+{{ '![](DateTime-Patterns_images/DateTime-Patterns_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -63,7 +63,7 @@ You can also set the custom pattern for displaying the date in the DateTimeEdit 
 XAML</td></tr>
 <tr>
 <td>
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="CustomPattern"                          CustomPattern="MM/dd/yy hh:mm:ss">&lt;/syncfusion:DateTimeEdit&gt;</td></tr>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="CustomPattern"                          CustomPattern="MM/dd/yy hh:mm:ss"></syncfusion:DateTimeEdit></td></tr>
 <tr>
 <td>
 C#</td></tr>
@@ -73,7 +73,7 @@ Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Sha
 </table>
 
 
-{ ![](DateTime-Patterns_images/DateTime-Patterns_img2.png) | markdownify }
+{{ '![](DateTime-Patterns_images/DateTime-Patterns_img2.png)' | markdownify }}
 {:.image }
 
 

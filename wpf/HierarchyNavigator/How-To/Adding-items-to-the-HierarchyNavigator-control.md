@@ -78,33 +78,33 @@ XAML
 
 
 
-&lt;syncfusion:HierarchyNavigator x:Name="hierarchyNavigatorcontrol1"     VerticalAlignment="Top" Height="30" Width="600"&gt;
+<syncfusion:HierarchyNavigator x:Name="hierarchyNavigatorcontrol1"     VerticalAlignment="Top" Height="30" Width="600">
 
-    &lt;syncfusion:HierarchyNavigator.Items&gt;
+    <syncfusion:HierarchyNavigator.Items>
 
-        &lt;syncfusion:HierarchyNavigatorItem Content="Syncfusion"&gt;
+        <syncfusion:HierarchyNavigatorItem Content="Syncfusion">
 
-            &lt;syncfusion:HierarchyNavigatorItem.Items&gt;
+            <syncfusion:HierarchyNavigatorItem.Items>
 
-                &lt;syncfusion:HierarchyNavigatorItem Content="User Interface"/&gt;
+                <syncfusion:HierarchyNavigatorItem Content="User Interface"/>
 
-                &lt;syncfusion:HierarchyNavigatorItem Content="Silverlight"&gt;
+                <syncfusion:HierarchyNavigatorItem Content="Silverlight">
 
-                    &lt;syncfusion:HierarchyNavigatorItem.Items&gt;
+                    <syncfusion:HierarchyNavigatorItem.Items>
 
-                        &lt;syncfusion:HierarchyNavigatorItem Content="Tools"/&gt;
+                        <syncfusion:HierarchyNavigatorItem Content="Tools"/>
 
-                    &lt;/syncfusion:HierarchyNavigatorItem.Items&gt;
+                    </syncfusion:HierarchyNavigatorItem.Items>
 
-                &lt;/syncfusion:HierarchyNavigatorItem&gt;
+                </syncfusion:HierarchyNavigatorItem>
 
-            &lt;/syncfusion:HierarchyNavigatorItem.Items&gt;
+            </syncfusion:HierarchyNavigatorItem.Items>
 
-        &lt;/syncfusion:HierarchyNavigatorItem&gt;
+        </syncfusion:HierarchyNavigatorItem>
 
-    &lt;/syncfusion:HierarchyNavigator.Items&gt;
+    </syncfusion:HierarchyNavigator.Items>
 
-&lt;/syncfusion:HierarchyNavigator&gt;
+</syncfusion:HierarchyNavigator>
 
 
 

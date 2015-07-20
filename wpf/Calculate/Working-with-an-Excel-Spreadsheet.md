@@ -28,21 +28,21 @@ The spreadsheet you are using is a car insurance calculator. It uses Names to ma
 
 
 
-{ ![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img1.jpeg) | markdownify }
+{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img1.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img2.jpeg) | markdownify }
+{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img2.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img3.jpeg) | markdownify }
+{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img3.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img4.jpeg) | markdownify }
+{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -52,7 +52,7 @@ This layout represents a general calculation design process which you can use fo
 
 For example, consider the below form which accepts input values from the user. Once the values are set, the user clicks a button on the form that puts these values into the inputs sheet and then retrieves the insurance costs from the Outputs sheet and displays it on the form.
 
-{ ![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img5.jpeg) | markdownify }
+{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -80,7 +80,7 @@ Limitation-You cannot perform actual computations on the contents of the XLS fil
 
 A sample which illustrates the usage of Essential XlsIO with Essential Calculate is available in the following sample installation location:
 
-_&lt;Install Location&gt;\WPF\Calculate.Wpf\Samples\2.0\Xls File Using CalcEngine Demo\cs_ 
+_<Install Location>\WPF\Calculate.Wpf\Samples\2.0\Xls File Using CalcEngine Demo\cs_ 
 
 In this sample, the following two classes are used: 
 

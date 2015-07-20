@@ -23,7 +23,7 @@ The MaxValidation and MinValidation can be set for the UpDown control as shown i
 
  [XAML]
 
-&lt;syncfusion:UpDown Name="upDown" MaxValue="100" MinValue="0" MaxValidation="OnLostFocus"MinValidation="OnKeyPress" MaxValueOnExceedMaxDigit="True" MinValueOnExceedMinDigit="True"/&gt;
+<syncfusion:UpDown Name="upDown" MaxValue="100" MinValue="0" MaxValidation="OnLostFocus"MinValidation="OnKeyPress" MaxValueOnExceedMaxDigit="True" MinValueOnExceedMinDigit="True"/>
 
 
 

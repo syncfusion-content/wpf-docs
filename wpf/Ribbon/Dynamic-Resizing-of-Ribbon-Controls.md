@@ -26,7 +26,7 @@ The following code illustrates this.
 <table>
 <tr>
 <td>
-[XAML]   &lt;syncfusion:Ribbon Name="MyRibbon" IsAutoSizeFormEnabled="True"&gt;&lt;/syncfusion:Ribbon&gt;</td></tr>
+[XAML]   <syncfusion:Ribbon Name="MyRibbon" IsAutoSizeFormEnabled="True"></syncfusion:Ribbon></td></tr>
 <tr>
 <td>
 [C#]  Ribbon MyRibbon = new Ribbon();MyRibbon.IsAutoSizeFormEnabled = true;</td></tr>
@@ -37,7 +37,7 @@ Ribbon items automatically changed its size form when window resized.
 
 
 
-{ ![](Dynamic-Resizing-of-Ribbon-Controls_images/Dynamic-Resizing-of-Ribbon-Controls_img1.jpeg) | markdownify }
+{{ '![](Dynamic-Resizing-of-Ribbon-Controls_images/Dynamic-Resizing-of-Ribbon-Controls_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -47,7 +47,7 @@ Small size form buttons automatically changed to extra small buttons when resize
 
 
 
-{ ![](Dynamic-Resizing-of-Ribbon-Controls_images/Dynamic-Resizing-of-Ribbon-Controls_img2.jpeg) | markdownify }
+{{ '![](Dynamic-Resizing-of-Ribbon-Controls_images/Dynamic-Resizing-of-Ribbon-Controls_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -57,7 +57,7 @@ Large size form buttons changed to small size form buttons when resized.
 
 
 
-{ ![](Dynamic-Resizing-of-Ribbon-Controls_images/Dynamic-Resizing-of-Ribbon-Controls_img3.jpeg) | markdownify }
+{{ '![](Dynamic-Resizing-of-Ribbon-Controls_images/Dynamic-Resizing-of-Ribbon-Controls_img3.jpeg)' | markdownify }}
 {:.image }
 
 

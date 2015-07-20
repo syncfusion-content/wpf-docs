@@ -15,7 +15,7 @@ The Editor can be disabled or enabled using the property AllowEditing and its de
 
 
 
-     &lt;Schedule:SfSchedule AllowEditing="False" /&gt;
+     <Schedule:SfSchedule AllowEditing="False" />
 
 
 
@@ -33,13 +33,13 @@ The Editor can be disabled or enabled using the property AllowEditing and its de
 
               this.grid.Children.Add(schedule);
 
-{ ![](Enabling-and-Disabling-Schedule-Editor_images/Enabling-and-Disabling-Schedule-Editor_img1.png) | markdownify }
+{{ '![](Enabling-and-Disabling-Schedule-Editor_images/Enabling-and-Disabling-Schedule-Editor_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Enabling-and-Disabling-Schedule-Editor_images/Enabling-and-Disabling-Schedule-Editor_img2.png) | markdownify }
+{{ '![](Enabling-and-Disabling-Schedule-Editor_images/Enabling-and-Disabling-Schedule-Editor_img2.png)' | markdownify }}
 {:.image }
 
 

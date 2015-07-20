@@ -15,9 +15,9 @@ The collection of MenuItem elements can be organized by ContextMenuType property
 
 
 
-        &lt;Schedule:SfSchedule x:Name="schedule"   ScheduleType="Week" ContextMenuType="RadialMenu"&gt;
+        <Schedule:SfSchedule x:Name="schedule"   ScheduleType="Week" ContextMenuType="RadialMenu">
 
-        &lt;/Schedule:SfSchedule&gt;
+        </Schedule:SfSchedule>
 
 
 
@@ -39,11 +39,11 @@ The collection of MenuItem elements can be organized by ContextMenuType property
 
 
 
-{ ![](ContextMenuType_images/ContextMenuType_img1.png) | markdownify }
+{{ '![](ContextMenuType_images/ContextMenuType_img1.png)' | markdownify }}
 {:.image }
 
 
-{ ![](ContextMenuType_images/ContextMenuType_img2.png) | markdownify }
+{{ '![](ContextMenuType_images/ContextMenuType_img2.png)' | markdownify }}
 {:.image }
 
 

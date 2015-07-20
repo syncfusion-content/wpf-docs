@@ -142,7 +142,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Events_images/Events_img1.jpeg) | markdownify }
+{{ '![](Events_images/Events_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -232,7 +232,7 @@ Output
 
 The following output is generated using the code above.
 
-{ ![](Events_images/Events_img2.jpeg) | markdownify }
+{{ '![](Events_images/Events_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -312,7 +312,7 @@ Output
 
 The following output is generated using the code above.
 
-{ ![](Events_images/Events_img3.jpeg) | markdownify }
+{{ '![](Events_images/Events_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -390,7 +390,7 @@ Output
 
 The following output is generated using the code above.
 
-{ ![](Events_images/Events_img4.jpeg) | markdownify }
+{{ '![](Events_images/Events_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1277,7 +1277,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Events_images/Events_img5.jpeg) | markdownify }
+{{ '![](Events_images/Events_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1325,7 +1325,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Events_images/Events_img6.jpeg) | markdownify }
+{{ '![](Events_images/Events_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1418,7 +1418,7 @@ Output
 
 The following outputs are generated using the code above.
 
-{ ![](Events_images/Events_img7.jpeg) | markdownify }
+{{ '![](Events_images/Events_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1426,7 +1426,7 @@ _MouseUp_
 
 
 
-{ ![](Events_images/Events_img8.jpeg) | markdownify }
+{{ '![](Events_images/Events_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1434,7 +1434,7 @@ _MouseMove_
 
 
 
-{ ![](Events_images/Events_img9.jpeg) | markdownify }
+{{ '![](Events_images/Events_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1442,7 +1442,7 @@ _MouseHover_
 
 
 
-{ ![](Events_images/Events_img10.jpeg) | markdownify }
+{{ '![](Events_images/Events_img10.jpeg)' | markdownify }}
 {:.image }
 
 

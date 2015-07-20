@@ -137,15 +137,15 @@ End Sub
 
 
 
-{ ![Grid Hyperlink Col](Hyperlink-Cells_images/Hyperlink-Cells_img1.png) | markdownify }
+{{ '![Grid Hyperlink Col](Hyperlink-Cells_images/Hyperlink-Cells_img1.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Hyperlink-Cells_images/Hyperlink-Cells_img2.png) | markdownify }
+{{ '![](Hyperlink-Cells_images/Hyperlink-Cells_img2.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Hyperlink-Cells_images/Hyperlink-Cells_img3.png) | markdownify }
+{{ '![](Hyperlink-Cells_images/Hyperlink-Cells_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -153,5 +153,5 @@ Sample Location
 
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\&lt;Versionnumber&gt;\BI\WPF\OlapGrid.WPF\Samples\Appearance\Hyperlink Header Demo
+..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Appearance\Hyperlink Header Demo
 

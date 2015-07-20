@@ -73,22 +73,22 @@ The following code illustrates how to define style:
                     >
 
 
-   &lt;!-- Header Node style--&gt;
+   <!-- Header Node style-->
 
 
-      &lt;Style TargetType="chart:HeaderNode"&gt;
+      <Style TargetType="chart:HeaderNode">
 
 
-          &lt;Setter Property="MaxHeight" Value="24"/&gt;
+          <Setter Property="MaxHeight" Value="24"/>
 
 
-          &lt;Setter Property="Template"&gt;
+          <Setter Property="Template">
 
 
-              &lt;Setter.Value&gt;
+              <Setter.Value>
 
 
-                  &lt;ControlTemplate TargetType="chart:HeaderNode"&gt;
+                  <ControlTemplate TargetType="chart:HeaderNode">
 
 
                       <Border Background="{TemplateBinding Background}" Name="PART_HeaderBorder" 
@@ -97,55 +97,55 @@ The following code illustrates how to define style:
                             BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0">
 
 
-                          &lt;Grid Width="{TemplateBinding NodeWidth}" VerticalAlignment="Center"&gt;
+                          <Grid Width="{TemplateBinding NodeWidth}" VerticalAlignment="Center">
 
 
-                              &lt;Grid.ColumnDefinitions&gt;
+                              <Grid.ColumnDefinitions>
 
 
-                                  &lt;ColumnDefinition Width="10" /&gt;
+                                  <ColumnDefinition Width="10" />
 
 
-                                  &lt;ColumnDefinition Width="*" /&gt;
+                                  <ColumnDefinition Width="*" />
 
 
-                                  &lt;ColumnDefinition Width="10" /&gt;
+                                  <ColumnDefinition Width="10" />
 
 
-                              &lt;/Grid.ColumnDefinitions&gt;
+                              </Grid.ColumnDefinitions>
 
 
-                              &lt;Rectangle HorizontalAlignment="Left" Grid.Column="1" Height="6.4" VerticalAlignment="Top" Width="{TemplateBinding NodeWidth}" Stroke="#FF111111"&gt;
+                              <Rectangle HorizontalAlignment="Left" Grid.Column="1" Height="6.4" VerticalAlignment="Top" Width="{TemplateBinding NodeWidth}" Stroke="#FF111111">
 
 
-                                  &lt;Rectangle.Fill&gt;
+                                  <Rectangle.Fill>
 
 
-                                      &lt;LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"&gt;
+                                      <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 
 
-                                          &lt;GradientStop Color="#FF414141" Offset="0" /&gt;
+                                          <GradientStop Color="#FF414141" Offset="0" />
 
 
-                                          &lt;GradientStop Color="#FF6D6D6D" Offset="0.087" /&gt;
+                                          <GradientStop Color="#FF6D6D6D" Offset="0.087" />
 
 
-                                          &lt;GradientStop Color="#FF767676" Offset="0.304" /&gt;
+                                          <GradientStop Color="#FF767676" Offset="0.304" />
 
 
-                                          &lt;GradientStop Color="Black" Offset="0.957" /&gt;
+                                          <GradientStop Color="Black" Offset="0.957" />
 
 
-                                          &lt;GradientStop Color="#FF343434" Offset="1" /&gt;
+                                          <GradientStop Color="#FF343434" Offset="1" />
 
 
-                                      &lt;/LinearGradientBrush&gt;
+                                      </LinearGradientBrush>
 
 
-                                  &lt;/Rectangle.Fill&gt;
+                                  </Rectangle.Fill>
 
 
-                              &lt;/Rectangle&gt;
+                              </Rectangle>
 
 
                               <Path Data="M0.3,0.3 L9.834909,0.30036073 9.8351226,5.9832297 5.0695471,10.734966 0.32096295,5.9863821 z"
@@ -172,28 +172,28 @@ The following code illustrates how to define style:
                                   Width="10.135">
 
 
-                                  &lt;Path.Fill&gt;
+                                  <Path.Fill>
 
 
-                                      &lt;LinearGradientBrush EndPoint="1.009,0.985" StartPoint="0.339,0.286"&gt;
+                                      <LinearGradientBrush EndPoint="1.009,0.985" StartPoint="0.339,0.286">
 
 
-                                          &lt;GradientStop Color="DimGray" Offset="0.008" /&gt;
+                                          <GradientStop Color="DimGray" Offset="0.008" />
 
 
-                                          &lt;GradientStop Color="#FF7F7F7F" Offset="0.511" /&gt;
+                                          <GradientStop Color="#FF7F7F7F" Offset="0.511" />
 
 
-                                          &lt;GradientStop Color="#FF2A2A2A" Offset="1" /&gt;
+                                          <GradientStop Color="#FF2A2A2A" Offset="1" />
 
 
-                                      &lt;/LinearGradientBrush&gt;
+                                      </LinearGradientBrush>
 
 
-                                  &lt;/Path.Fill&gt;
+                                  </Path.Fill>
 
 
-                              &lt;/Path&gt;
+                              </Path>
 
 
                               <Path Data="M0.3,0.3 L9.834909,0.30036073 9.8351226,5.9832297 5.0695471,10.734966 0.32096295,5.9863821 z"
@@ -220,148 +220,148 @@ The following code illustrates how to define style:
                                   Width="10.135">
 
 
-                                  &lt;Path.Fill&gt;
+                                  <Path.Fill>
 
 
-                                      &lt;LinearGradientBrush EndPoint="1.009,0.985" StartPoint="0.339,0.286"&gt;
+                                      <LinearGradientBrush EndPoint="1.009,0.985" StartPoint="0.339,0.286">
 
 
-                                          &lt;GradientStop Color="DimGray" Offset="0.008" /&gt;
+                                          <GradientStop Color="DimGray" Offset="0.008" />
 
 
-                                          &lt;GradientStop Color="#FF7F7F7F" Offset="0.511" /&gt;
+                                          <GradientStop Color="#FF7F7F7F" Offset="0.511" />
 
 
-                                          &lt;GradientStop Color="#FF2A2A2A" Offset="1" /&gt;
+                                          <GradientStop Color="#FF2A2A2A" Offset="1" />
 
 
-                                      &lt;/LinearGradientBrush&gt;
+                                      </LinearGradientBrush>
 
 
-                                  &lt;/Path.Fill&gt;
+                                  </Path.Fill>
 
 
-                              &lt;/Path&gt;
+                              </Path>
 
 
-                          &lt;/Grid&gt;
+                          </Grid>
 
 
-                      &lt;/Border&gt;
+                      </Border>
 
 
-                  &lt;/ControlTemplate&gt;
+                  </ControlTemplate>
 
 
-              &lt;/Setter.Value&gt;
+              </Setter.Value>
 
 
-          &lt;/Setter&gt;
+          </Setter>
 
 
-      &lt;/Style&gt;
+      </Style>
 
-    &lt;!-- Task Node style--&gt;
-    &lt;Style x:Key="TaskNode" TargetType="{x:Type chart:GanttNode}"&gt;
-        &lt;Setter Property="Template"&gt;
-            &lt;Setter.Value&gt;
-                &lt;ControlTemplate TargetType="{x:Type  chart:GanttNode}"&gt;
-                    &lt;Border Name="PART_Border" Height="18" VerticalAlignment="Center" BorderThickness="0.5" BorderBrush="#FF4D4D4D"&gt;
-                        &lt;Border.Background&gt;
-                            &lt;LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"&gt;
-                                &lt;GradientStop Color="#FFF6F6F6" Offset="0"/&gt;
-                                &lt;GradientStop Color="#FFC5C5C5" Offset="1"/&gt;
-                            &lt;/LinearGradientBrush&gt;
-                        &lt;/Border.Background&gt;
-                        &lt;Grid&gt;
-                            &lt;Grid.ColumnDefinitions&gt;
-                                &lt;ColumnDefinition Width="Auto" /&gt;
-                                &lt;ColumnDefinition Width="*" /&gt;
-                                &lt;ColumnDefinition Width="Auto" /&gt;
-                            &lt;/Grid.ColumnDefinitions&gt;
-                            &lt;!-- To access the drag and drop feature, have the thumb with specified name --&gt;
-                            &lt;Thumb Cursor="SizeAll" x:Name="PART_DragDropThumb"  Grid.Column="0" Grid.ColumnSpan="3"&gt;
-                                &lt;Thumb.Template&gt;
-                                    &lt;ControlTemplate&gt;
-                                        &lt;Border Background="Transparent"/&gt;
-                                    &lt;/ControlTemplate&gt;
-                                &lt;/Thumb.Template&gt;
-                            &lt;/Thumb&gt;
+    <!-- Task Node style-->
+    <Style x:Key="TaskNode" TargetType="{x:Type chart:GanttNode}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type  chart:GanttNode}">
+                    <Border Name="PART_Border" Height="18" VerticalAlignment="Center" BorderThickness="0.5" BorderBrush="#FF4D4D4D">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFF6F6F6" Offset="0"/>
+                                <GradientStop Color="#FFC5C5C5" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <!-- To access the drag and drop feature, have the thumb with specified name -->
+                            <Thumb Cursor="SizeAll" x:Name="PART_DragDropThumb"  Grid.Column="0" Grid.ColumnSpan="3">
+                                <Thumb.Template>
+                                    <ControlTemplate>
+                                        <Border Background="Transparent"/>
+                                    </ControlTemplate>
+                                </Thumb.Template>
+                            </Thumb>
 
-                            &lt;Border HorizontalAlignment="Left" VerticalAlignment="Center" Width="{TemplateBinding ProgressWidth}" Grid.Column="0" Grid.ColumnSpan="3"&gt;
-                                &lt;Grid HorizontalAlignment="Stretch" Width="{TemplateBinding ProgressWidth}"&gt;
-                                    &lt;Rectangle HorizontalAlignment="Stretch" Height="12" Stroke="#FFD26202" VerticalAlignment="Center"&gt;
-                                        &lt;Rectangle.Fill&gt;
-                                            &lt;LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"&gt;
-                                                &lt;GradientStop Color="#FFFEB300" Offset="0"/&gt;
-                                                &lt;GradientStop Color="#FFFE7600" Offset="1"/&gt;
-                                            &lt;/LinearGradientBrush&gt;
-                                        &lt;/Rectangle.Fill&gt;
-                                    &lt;/Rectangle&gt;
-                                    &lt;!-- To access the progress resizing feature, have the thumb with specified name --&gt;
-                                    &lt;Thumb Cursor="SizeWE" x:Name="PART_ProgressThumb" HorizontalAlignment="Right"&gt;
-                                        &lt;Thumb.Template&gt;
-                                            &lt;ControlTemplate&gt;
-                                                &lt;Border Background="Transparent" BorderBrush="Transparent"&gt;
-                                                    &lt;Rectangle Height="2" Width="5" Fill="Transparent" /&gt;
-                                                &lt;/Border&gt;
-                                            &lt;/ControlTemplate&gt;
-                                        &lt;/Thumb.Template&gt;
-                                    &lt;/Thumb&gt;
-                                &lt;/Grid&gt;
-                            &lt;/Border&gt;
+                            <Border HorizontalAlignment="Left" VerticalAlignment="Center" Width="{TemplateBinding ProgressWidth}" Grid.Column="0" Grid.ColumnSpan="3">
+                                <Grid HorizontalAlignment="Stretch" Width="{TemplateBinding ProgressWidth}">
+                                    <Rectangle HorizontalAlignment="Stretch" Height="12" Stroke="#FFD26202" VerticalAlignment="Center">
+                                        <Rectangle.Fill>
+                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                <GradientStop Color="#FFFEB300" Offset="0"/>
+                                                <GradientStop Color="#FFFE7600" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </Rectangle.Fill>
+                                    </Rectangle>
+                                    <!-- To access the progress resizing feature, have the thumb with specified name -->
+                                    <Thumb Cursor="SizeWE" x:Name="PART_ProgressThumb" HorizontalAlignment="Right">
+                                        <Thumb.Template>
+                                            <ControlTemplate>
+                                                <Border Background="Transparent" BorderBrush="Transparent">
+                                                    <Rectangle Height="2" Width="5" Fill="Transparent" />
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Thumb.Template>
+                                    </Thumb>
+                                </Grid>
+                            </Border>
 
-                            &lt;!-- To access the resizing feature, have the thumb with the specified name --&gt;
-                            &lt;Thumb Cursor="ScrollE" Grid.Column="2" x:Name="PART_RightThumb" HorizontalAlignment="Right"&gt;
-                                &lt;Thumb.Template&gt;
-                                    &lt;ControlTemplate&gt;
-                                        &lt;Rectangle HorizontalAlignment="Right" Height="20" VerticalAlignment="Center" Width="6" Stroke="#FFD26202"&gt;
-                                            &lt;Rectangle.Fill&gt;
-                                                &lt;LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"&gt;
-                                                    &lt;GradientStop Color="#FFFEB300" Offset="0"/&gt;
-                                                    &lt;GradientStop Color="#FFFE7600" Offset="1"/&gt;
-                                                &lt;/LinearGradientBrush&gt;
-                                            &lt;/Rectangle.Fill&gt;
-                                        &lt;/Rectangle&gt;
-                                    &lt;/ControlTemplate&gt;
-                                &lt;/Thumb.Template&gt;
-                            &lt;/Thumb&gt;
+                            <!-- To access the resizing feature, have the thumb with the specified name -->
+                            <Thumb Cursor="ScrollE" Grid.Column="2" x:Name="PART_RightThumb" HorizontalAlignment="Right">
+                                <Thumb.Template>
+                                    <ControlTemplate>
+                                        <Rectangle HorizontalAlignment="Right" Height="20" VerticalAlignment="Center" Width="6" Stroke="#FFD26202">
+                                            <Rectangle.Fill>
+                                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                    <GradientStop Color="#FFFEB300" Offset="0"/>
+                                                    <GradientStop Color="#FFFE7600" Offset="1"/>
+                                                </LinearGradientBrush>
+                                            </Rectangle.Fill>
+                                        </Rectangle>
+                                    </ControlTemplate>
+                                </Thumb.Template>
+                            </Thumb>
 
-                            &lt;!-- To access the resizing feature, have the thumb with the specified name --&gt;
-                            &lt;Thumb Cursor="SizeWE" Grid.Column="0" x:Name="PART_LeftThumb" HorizontalAlignment="Left"&gt;
-                                &lt;Thumb.Template&gt;
-                                    &lt;ControlTemplate&gt;
-                                        &lt;Border Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Width="4" Height="20"/&gt;
-                                    &lt;/ControlTemplate&gt;
-                                &lt;/Thumb.Template&gt;
-                            &lt;/Thumb&gt;
-                        &lt;/Grid&gt;
-                    &lt;/Border&gt;
-                &lt;/ControlTemplate&gt;
-            &lt;/Setter.Value&gt;
-        &lt;/Setter&gt;
-    &lt;/Style&gt;
+                            <!-- To access the resizing feature, have the thumb with the specified name -->
+                            <Thumb Cursor="SizeWE" Grid.Column="0" x:Name="PART_LeftThumb" HorizontalAlignment="Left">
+                                <Thumb.Template>
+                                    <ControlTemplate>
+                                        <Border Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Width="4" Height="20"/>
+                                    </ControlTemplate>
+                                </Thumb.Template>
+                            </Thumb>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
- &lt;!--Milestone style--&gt;
-    &lt;Style x:Key="MileStone" TargetType="chart:MileStone"&gt;
-        &lt;Setter Property="Template"&gt;
-            &lt;Setter.Value&gt;
-                &lt;ControlTemplate TargetType="chart:MileStone"&gt;
-                    &lt;Grid&gt;
-                        &lt;Path Stretch="Fill" Data="F1 M 551.156,416.878L 552.734,419.766L 555.621,421.344L 552.734,422.922L 551.156,425.81L 549.577,422.922L 546.69,421.344L 549.577,419.766L 551.156,416.878 Z "                                               HorizontalAlignment="Left" Height="19" VerticalAlignment="Center" Width="19" Stroke="#FFD26202"&gt;
-                            &lt;Path.Fill&gt;
-                                &lt;LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"&gt;
-                                    &lt;GradientStop Color="#FFFEB300" Offset="0"/&gt;
-                                    &lt;GradientStop Color="#FFFE7600" Offset="1"/&gt;
-                                &lt;/LinearGradientBrush&gt;
-                            &lt;/Path.Fill&gt;
-                        &lt;/Path&gt;
-                    &lt;/Grid&gt;
-                &lt;/ControlTemplate&gt;
-            &lt;/Setter.Value&gt;
-        &lt;/Setter&gt;
-    &lt;/Style&gt;
-&lt;/ResourceDictionary&gt;
+ <!--Milestone style-->
+    <Style x:Key="MileStone" TargetType="chart:MileStone">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="chart:MileStone">
+                    <Grid>
+                        <Path Stretch="Fill" Data="F1 M 551.156,416.878L 552.734,419.766L 555.621,421.344L 552.734,422.922L 551.156,425.81L 549.577,422.922L 546.69,421.344L 549.577,419.766L 551.156,416.878 Z "                                               HorizontalAlignment="Left" Height="19" VerticalAlignment="Center" Width="19" Stroke="#FFD26202">
+                            <Path.Fill>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFFEB300" Offset="0"/>
+                                    <GradientStop Color="#FFFE7600" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Path.Fill>
+                        </Path>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
 
 
 
@@ -381,7 +381,7 @@ The following code illustrates how to add the styles to the application:
                                  VisualStyle="Office2010Silver">
 
 
-                  &lt;sync:GanttControl.TaskAttributeMapping&gt;
+                  <sync:GanttControl.TaskAttributeMapping>
 
 
                       <sync:TaskAttributeMapping TaskIdMapping="Id"
@@ -411,29 +411,29 @@ The following code illustrates how to add the styles to the application:
 
 
 
-                      &lt;/sync:TaskAttributeMapping&gt;
+                      </sync:TaskAttributeMapping>
 
 
-                  &lt;/sync:GanttControl.TaskAttributeMapping&gt;
+                  </sync:GanttControl.TaskAttributeMapping>
 
 
-                  &lt;sync:GanttControl.Resources&gt;
+                  <sync:GanttControl.Resources>
 
 
-                      &lt;Style TargetType="chart:GanttNode" BasedOn="{StaticResource TaskNode}"/&gt;
+                      <Style TargetType="chart:GanttNode" BasedOn="{StaticResource TaskNode}"/>
 
 
-                      &lt;Style TargetType="chart:MileStone" BasedOn="{StaticResource MileStone}"/&gt;
+                      <Style TargetType="chart:MileStone" BasedOn="{StaticResource MileStone}"/>
 
 
-                  &lt;/sync:GanttControl.Resources&gt;
+                  </sync:GanttControl.Resources>
 
 
-              &lt;/sync:GanttControl&gt;
+              </sync:GanttControl>
 
 
 
-{ ![](Custom-Node-Style_images/Custom-Node-Style_img1.png) | markdownify }
+{{ '![](Custom-Node-Style_images/Custom-Node-Style_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -441,7 +441,7 @@ _Custom Node Style_
 
 
 
-{ ![](Custom-Node-Style_images/Custom-Node-Style_img2.png) | markdownify }
+{{ '![](Custom-Node-Style_images/Custom-Node-Style_img2.png)' | markdownify }}
 {:.image }
 
 

@@ -19,61 +19,61 @@ Use the below code snippet to set this property.
 
 
 
-&lt;!-- Adding GroupBar --&gt;
+<!-- Adding GroupBar -->
 
-&lt;syncfusion:GroupBar Height="200" DefaultItemImage="App.ico" Width="230" Name="groupBar"&gt;
-
-
-
-  &lt;!-- Adding GroupBarItem --&gt;
-
-  &lt;syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem"&gt;
+<syncfusion:GroupBar Height="200" DefaultItemImage="App.ico" Width="230" Name="groupBar">
 
 
 
-    &lt;!-- Adding content for GroupBar item using panel --&gt;
+  <!-- Adding GroupBarItem -->
 
-    &lt;StackPanel Orientation="Vertical"&gt;
+  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">
 
-      &lt;TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/&gt;
+
+
+    <!-- Adding content for GroupBar item using panel -->
+
+    <StackPanel Orientation="Vertical">
+
+      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>
 
       <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>
 
       <RadioButton Margin="4,2,2,2">Vertical</RadioButton>
 
-      &lt;TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/&gt;
+      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>
 
       <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>
 
       <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>
 
-    &lt;/StackPanel&gt;
+    </StackPanel>
 
-  &lt;/syncfusion:GroupBarItem&gt;
-
-
-
-  &lt;!-- Adding GroupBarItem --&gt;
-
-  &lt;syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General"&gt;
+  </syncfusion:GroupBarItem>
 
 
 
-    &lt;!-- Adding content for GroupBar item using GroupView --&gt;
+  <!-- Adding GroupBarItem -->
 
-    &lt;syncfusion:GroupView Name="groupView" IsListViewMode="True"&gt;
+  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">
 
-      &lt;syncfusion:GroupViewItem Text="List View"/&gt;
 
-      &lt;syncfusion:GroupViewItem Text="Show ContextMenu"/&gt;
 
-      &lt;syncfusion:GroupViewItem Text="Show ToolTip"/&gt;
+    <!-- Adding content for GroupBar item using GroupView -->
 
-    &lt;/syncfusion:GroupView&gt;
+    <syncfusion:GroupView Name="groupView" IsListViewMode="True">
 
-  &lt;/syncfusion:GroupBarItem&gt;
+      <syncfusion:GroupViewItem Text="List View"/>
 
-&lt;/syncfusion:GroupBar&gt;
+      <syncfusion:GroupViewItem Text="Show ContextMenu"/>
+
+      <syncfusion:GroupViewItem Text="Show ToolTip"/>
+
+    </syncfusion:GroupView>
+
+  </syncfusion:GroupBarItem>
+
+</syncfusion:GroupBar>
 
 
 

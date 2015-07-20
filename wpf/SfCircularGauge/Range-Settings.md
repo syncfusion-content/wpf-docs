@@ -19,27 +19,27 @@ Code Example:
 
 [XAML]
 
-&lt;syncfusion:SfCircularGauge x:Name="gauge"&gt;
+<syncfusion:SfCircularGauge x:Name="gauge">
 
-                &lt;syncfusion:SfCircularGauge.MainScale&gt;
+                <syncfusion:SfCircularGauge.MainScale>
 
-                    &lt;syncfusion:CircularScale &gt;
+                    <syncfusion:CircularScale >
 
-                        &lt;syncfusion:CircularScale.Ranges&gt;
+                        <syncfusion:CircularScale.Ranges>
 
-                            &lt;syncfusion:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10"/&gt;
+                            <syncfusion:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10"/>
 
-                            &lt;syncfusion:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10"/&gt;
+                            <syncfusion:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10"/>
 
-                            &lt;syncfusion:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/&gt;
+                            <syncfusion:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
 
-                        &lt;/syncfusion:CircularScale.Ranges&gt;
+                        </syncfusion:CircularScale.Ranges>
 
-                    &lt;/syncfusion:CircularScale&gt;
+                    </syncfusion:CircularScale>
 
-                &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+                </syncfusion:SfCircularGauge.MainScale>
 
-            &lt;/syncfusion:SfCircularGauge&gt;
+            </syncfusion:SfCircularGauge>
 
 
 
@@ -65,7 +65,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Range-Settings_images/Range-Settings_img1.png) | markdownify }
+{{ '![](Range-Settings_images/Range-Settings_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -81,23 +81,23 @@ Code Example:
 
 
 
-&lt;syncfusion:SfCircularGauge x:Name="gauge"&gt;
+<syncfusion:SfCircularGauge x:Name="gauge">
 
-            &lt;syncfusion:SfCircularGauge.Scales&gt;
+            <syncfusion:SfCircularGauge.Scales>
 
-                &lt;syncfusion:CircularScale  RangePosition="Inside"&gt;
+                <syncfusion:CircularScale  RangePosition="Inside">
 
-                    &lt;syncfusion:CircularScale.Ranges&gt;
+                    <syncfusion:CircularScale.Ranges>
 
-                        &lt;syncfusion:CircularRange StartValue="30" EndValue="100" Stroke="Red" StartWidth="2" EndWidth="20" /&gt;
+                        <syncfusion:CircularRange StartValue="30" EndValue="100" Stroke="Red" StartWidth="2" EndWidth="20" />
 
-                    &lt;/syncfusion:CircularScale.Ranges&gt;
+                    </syncfusion:CircularScale.Ranges>
 
-                &lt;/syncfusion:CircularScale&gt;
+                </syncfusion:CircularScale>
 
-            &lt;/syncfusion:SfCircularGauge.Scales&gt;
+            </syncfusion:SfCircularGauge.Scales>
 
-        &lt;/syncfusion:SfCircularGauge&gt;
+        </syncfusion:SfCircularGauge>
 
 
 
@@ -133,7 +133,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Range-Settings_images/Range-Settings_img2.png) | markdownify }
+{{ '![](Range-Settings_images/Range-Settings_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -145,29 +145,29 @@ Code Example:
 
 [XAML]
 
-            &lt;syncfusion:SfCircularGauge x:Name="gauge"&gt;
+            <syncfusion:SfCircularGauge x:Name="gauge">
 
-                &lt;syncfusion:SfCircularGauge.MainScale&gt;
+                <syncfusion:SfCircularGauge.MainScale>
 
                     <syncfusion:CircularScale  BindRangeStrokeToLabels="True"
 
                                                BindRangeStrokeToTicks="True">
 
-                         &lt;syncfusion:CircularScale.Ranges&gt;
+                         <syncfusion:CircularScale.Ranges>
 
-                            &lt;syncfusion:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10"/&gt;
+                            <syncfusion:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10"/>
 
-                            &lt;syncfusion:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10"/&gt;
+                            <syncfusion:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10"/>
 
-                            &lt;syncfusion:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/&gt;
+                            <syncfusion:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
 
-                        &lt;/syncfusion:CircularScale.Ranges&gt;
+                        </syncfusion:CircularScale.Ranges>
 
-                    &lt;/syncfusion:CircularScale&gt;
+                    </syncfusion:CircularScale>
 
-                &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+                </syncfusion:SfCircularGauge.MainScale>
 
-            &lt;/syncfusion:SfCircularGauge&gt;
+            </syncfusion:SfCircularGauge>
 
 
 
@@ -197,7 +197,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Range-Settings_images/Range-Settings_img3.png) | markdownify }
+{{ '![](Range-Settings_images/Range-Settings_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -215,27 +215,27 @@ Code Example:
 
 [XAML]
 
-            &lt;syncfusion:SfCircularGauge x:Name="gauge"&gt;
+            <syncfusion:SfCircularGauge x:Name="gauge">
 
-                &lt;syncfusion:SfCircularGauge.MainScale&gt;
+                <syncfusion:SfCircularGauge.MainScale>
 
-                    &lt;syncfusion:CircularScale RangePosition="Outside"&gt;
+                    <syncfusion:CircularScale RangePosition="Outside">
 
-                        &lt;syncfusion:CircularScale.Ranges&gt;
+                        <syncfusion:CircularScale.Ranges>
 
-                            &lt;syncfusion:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10"/&gt;
+                            <syncfusion:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10"/>
 
-                            &lt;syncfusion:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10"/&gt;
+                            <syncfusion:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10"/>
 
-                            &lt;syncfusion:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/&gt;
+                            <syncfusion:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
 
-                        &lt;/syncfusion:CircularScale.Ranges&gt;
+                        </syncfusion:CircularScale.Ranges>
 
-                    &lt;/syncfusion:CircularScale&gt;
+                    </syncfusion:CircularScale>
 
-                &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+                </syncfusion:SfCircularGauge.MainScale>
 
-            &lt;/syncfusion:SfCircularGauge&gt;
+            </syncfusion:SfCircularGauge>
 
 
 
@@ -263,7 +263,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Range-Settings_images/Range-Settings_img4.png) | markdownify }
+{{ '![](Range-Settings_images/Range-Settings_img4.png)' | markdownify }}
 {:.image }
 
 

@@ -17,19 +17,19 @@ The Task Bar Item is added to the Task Bar by using either XAML or C# coding. Us
 
 
 
-&lt;!-- Adding TaskBar --&gt;
+<!-- Adding TaskBar -->
 
-&lt;syncfusion:TaskBar Name="taskBar" &gt;
+<syncfusion:TaskBar Name="taskBar" >
 
 
 
-&lt;!-- Adding TaskBarItem --&gt;
+<!-- Adding TaskBarItem -->
 
-&lt;syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1"&gt;
+<syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1">
 
-&lt;/syncfusion:TaskBarItem&gt;
+</syncfusion:TaskBarItem>
 
-&lt;/syncfusion:TaskBar&gt;
+</syncfusion:TaskBar>
 
 
 
@@ -73,7 +73,7 @@ The following screen shot shows the TaskBar control with TaskBar Item.
 
 
 
-{ ![](Adding-a-TaskBar-Item-to-the-TaskBar-Control_images/Adding-a-TaskBar-Item-to-the-TaskBar-Control_img1.jpeg) | markdownify }
+{{ '![](Adding-a-TaskBar-Item-to-the-TaskBar-Control_images/Adding-a-TaskBar-Item-to-the-TaskBar-Control_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89,29 +89,29 @@ To add text to the TaskBar Item, use the below code
 
 
 
-&lt;!-- Adding TaskBar  --&gt;
+<!-- Adding TaskBar  -->
 
-&lt;syncfusion:TaskBar Name="taskBar" &gt;
-
-
-
-&lt;!-- Adding TaskBarItem --&gt;
-
-&lt;syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1"&gt;
+<syncfusion:TaskBar Name="taskBar" >
 
 
 
-&lt;!-- Adding content to TaskBarItem --&gt;
+<!-- Adding TaskBarItem -->
 
-&lt;StackPanel Margin="10" HorizontalAlignment="Center" VerticalAlignment="Stretch"&gt;
+<syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1">
 
-&lt;TextBlock TextWrapping="Wrap"&gt; This TaskBar that have a TaskBarItem.&lt;/TextBlock&gt;
 
-&lt;/StackPanel&gt;
 
-&lt;/syncfusion:TaskBarItem&gt;
+<!-- Adding content to TaskBarItem -->
 
-&lt;/syncfusion:TaskBar&gt;
+<StackPanel Margin="10" HorizontalAlignment="Center" VerticalAlignment="Stretch">
+
+<TextBlock TextWrapping="Wrap"> This TaskBar that have a TaskBarItem.</TextBlock>
+
+</StackPanel>
+
+</syncfusion:TaskBarItem>
+
+</syncfusion:TaskBar>
 
 
 
@@ -175,7 +175,7 @@ The following screen shot illustrates how text has been added to the TaskBar Ite
 
 
 
-{ ![](Adding-a-TaskBar-Item-to-the-TaskBar-Control_images/Adding-a-TaskBar-Item-to-the-TaskBar-Control_img2.jpeg) | markdownify }
+{{ '![](Adding-a-TaskBar-Item-to-the-TaskBar-Control_images/Adding-a-TaskBar-Item-to-the-TaskBar-Control_img2.jpeg)' | markdownify }}
 {:.image }
 
 

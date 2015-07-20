@@ -21,13 +21,13 @@ MenuItemSeparator can be added to an application, as shown in the following code
 
 [XAML]
 
-&lt;shared:MenuAdv x:Name="Menu" Margin="10"&gt;
+<shared:MenuAdv x:Name="Menu" Margin="10">
 
-                &lt;shared:MenuItemAdv Header="File"/&gt;
+                <shared:MenuItemAdv Header="File"/>
 
-                &lt;shared:MenuItemAdv Header="Edit"/&gt;
+                <shared:MenuItemAdv Header="Edit"/>
 
-                &lt;shared:MenuItemAdv Header="View"&gt;
+                <shared:MenuItemAdv Header="View">
 
                     <shared:MenuItemAdv Header="Immediate" 
 
@@ -37,7 +37,7 @@ IsCheckable="True" CheckIconType="CheckBox" IsChecked="True"/>
 
 IsCheckable="True" CheckIconType="CheckBox" IsChecked="False"/>
 
-                    &lt;shared:MenuItemSeparator/&gt;
+                    <shared:MenuItemSeparator/>
 
                     <shared:MenuItemAdv Header="SolutionExplorer" 
 
@@ -57,17 +57,17 @@ IsCheckable="True" CheckIconType="RadioButton" GroupName="group1"
 
 IsChecked="False"/>
 
-                &lt;/shared:MenuItemAdv&gt;
+                </shared:MenuItemAdv>
 
-                &lt;shared:MenuItemAdv Header="Project"/&gt;
+                <shared:MenuItemAdv Header="Project"/>
 
-                &lt;shared:MenuItemAdv Header="Build"/&gt;
+                <shared:MenuItemAdv Header="Build"/>
 
-            &lt;/shared:MenuAdv&gt;
+            </shared:MenuAdv>
 
 
 
-{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Chk&Radio.png](MenuItemSeparator-Support_images/MenuItemSeparator-Support_img1.png) | markdownify }
+{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Chk&Radio.png](MenuItemSeparator-Support_images/MenuItemSeparator-Support_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -13,7 +13,7 @@ Spreadsheet control provides SpreadsheetRibbon support to format the spreadsheet
 
 
 
-{ ![](SpreadsheetRibbon-Support_images/SpreadsheetRibbon-Support_img1.png) | markdownify }
+{{ '![](SpreadsheetRibbon-Support_images/SpreadsheetRibbon-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -27,11 +27,11 @@ The following XAML code will be automatically added to the XAML viewer. You can 
 
 
 
-&lt;Syncfusion:SpreadsheetRibbon DataContext="{Binding ElementName=spreadControl}"/&gt;
+<Syncfusion:SpreadsheetRibbon DataContext="{Binding ElementName=spreadControl}"/>
 
 
 
-{ ![](SpreadsheetRibbon-Support_images/SpreadsheetRibbon-Support_img2.png) | markdownify }
+{{ '![](SpreadsheetRibbon-Support_images/SpreadsheetRibbon-Support_img2.png)' | markdownify }}
 {:.image }
 
 

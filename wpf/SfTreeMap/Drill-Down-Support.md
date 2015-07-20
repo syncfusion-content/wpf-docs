@@ -62,43 +62,43 @@ Gets or sets a color for highlighting tree map item while drill down.</td></tr>
 
                       LeafLabelPath="Name" BorderThickness="1">
 
-    &lt;syncfusion:SfTreeMap.DrillDownHeaderTemplate&gt;
+    <syncfusion:SfTreeMap.DrillDownHeaderTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;Border Background="#1A9DAF"&gt;
+            <Border Background="#1A9DAF">
 
-                &lt;StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10 0"&gt;
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10 0">
 
-                    &lt;Path x:Name="path" Data="M197,153.5 L197,138 186.75,145.5 z" Height="16" Width="8" Fill="White" Stretch="Fill" /&gt;
+                    <Path x:Name="path" Data="M197,153.5 L197,138 186.75,145.5 z" Height="16" Width="8" Fill="White" Stretch="Fill" />
 
                     <TextBlock Text="{Binding}" Margin="10 0" FontSize="15" 
 
                                FontWeight="Normal" FontFamily="Segoe UI" Foreground="White"/>
 
-                &lt;/StackPanel&gt;
+                </StackPanel>
 
-            &lt;/Border&gt;
+            </Border>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:SfTreeMap.DrillDownHeaderTemplate&gt;
+    </syncfusion:SfTreeMap.DrillDownHeaderTemplate>
 
-    &lt;syncfusion:SfTreeMap.LeafColorMapping&gt;
+    <syncfusion:SfTreeMap.LeafColorMapping>
 
-        &lt;syncfusion:UniColorMapping Color="#CCDFE3"/&gt;
+        <syncfusion:UniColorMapping Color="#CCDFE3"/>
 
-    &lt;/syncfusion:SfTreeMap.LeafColorMapping&gt;
+    </syncfusion:SfTreeMap.LeafColorMapping>
 
-    &lt;syncfusion:SfTreeMap.Levels&gt;
+    <syncfusion:SfTreeMap.Levels>
 
-        &lt;syncfusion:TreeMapFlatLevel GroupPath="Continent" ShowLabels="True"/&gt;
+        <syncfusion:TreeMapFlatLevel GroupPath="Continent" ShowLabels="True"/>
 
-        &lt;syncfusion:TreeMapFlatLevel GroupPath="Country" ShowLabels="True"/&gt;
+        <syncfusion:TreeMapFlatLevel GroupPath="Country" ShowLabels="True"/>
 
-    &lt;/syncfusion:SfTreeMap.Levels&gt;
+    </syncfusion:SfTreeMap.Levels>
 
-&lt;/syncfusion:SfTreeMap&gt;
+</syncfusion:SfTreeMap>
 
 
 
@@ -108,7 +108,7 @@ The following screenshot illustrates a TreeMap with drill down support.
 
 
 
-{ ![](Drill-Down-Support_images/Drill-Down-Support_img1.png) | markdownify }
+{{ '![](Drill-Down-Support_images/Drill-Down-Support_img1.png)' | markdownify }}
 {:.image }
 
 

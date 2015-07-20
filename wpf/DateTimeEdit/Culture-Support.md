@@ -29,7 +29,7 @@ Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                       
 </table>
 
 
-{ ![](Culture-Support_images/Culture-Support_img1.png) | markdownify }
+{{ '![](Culture-Support_images/Culture-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -51,7 +51,7 @@ Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                       
 </table>
 
 
-{ ![](Culture-Support_images/Culture-Support_img2.png) | markdownify }
+{{ '![](Culture-Support_images/Culture-Support_img2.png)' | markdownify }}
 {:.image }
 
 

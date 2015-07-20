@@ -23,11 +23,11 @@ Range band feature used to highlight the particular mentioned range along Y axis
 
                 YBindingPath="NoOfUsers">
 
-  &lt;/Syncfusion:SfLineSparkline &gt;
+  </Syncfusion:SfLineSparkline >
 
 Following is the snapshot for range band,
 
-{ ![C:/Users/ApoorvahR/Desktop/5.png](Range-Band_images/Range-Band_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/5.png](Range-Band_images/Range-Band_img1.png)' | markdownify }}
 {:.image }
 
 

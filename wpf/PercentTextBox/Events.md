@@ -18,7 +18,7 @@ PercentValueChanged – The event occurs when the PercentValue property of the P
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:PercentTextBox ValueChanged="PercentTextBox_PercentValueChanged"/&gt;</td></tr>
+XAML<syncfusion:PercentTextBox ValueChanged="PercentTextBox_PercentValueChanged"/></td></tr>
 <tr>
 <td>
 C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.PercentValueChanged+=new PropertyChangedCallback(PercentTextBox_PercentValueChanged);</td></tr>
@@ -46,7 +46,7 @@ TextChanged – The event occurs when the PercentValue property of the PercentTe
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:PercentTextBox TextChanged="PercentTextBox_TextChanged"/&gt;</td></tr>
+XAML<syncfusion:PercentTextBox TextChanged="PercentTextBox_TextChanged"/></td></tr>
 <tr>
 <td>
 C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.TextChanged += new TextChangedEventHandler(PercentTextBox_TextChanged);</td></tr>
@@ -74,7 +74,7 @@ CultureChanged – The event occurs when the Culture property of the PercentText
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:PercentTextBox CultureChanged="PercentTextBox_CultureChanged"/&gt;</td></tr>
+XAML<syncfusion:PercentTextBox CultureChanged="PercentTextBox_CultureChanged"/></td></tr>
 <tr>
 <td>
 C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.CultureChanged+=new                            PropertyChangedCallback(PercentTextBox_CultureChanged);</td></tr>
@@ -102,7 +102,7 @@ MaxValueChanged – The event occurs when the MaxValue property of the PercentTe
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:PercentTextBox MaxValueChanged="PercentTextBox_MaxValueChanged"/&gt;</td></tr>
+XAML<syncfusion:PercentTextBox MaxValueChanged="PercentTextBox_MaxValueChanged"/></td></tr>
 <tr>
 <td>
 C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.MaxValueChanged+=new                     PropertyChangedCallback(PercentTextBox_MaxValueChanged);</td></tr>
@@ -130,7 +130,7 @@ MinValueChanged – The event occurs when the MinValue property of the PercentTe
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:PercentTextBox MinValueChanged="PercentTextBox_MinValueChanged"/&gt;</td></tr>
+XAML<syncfusion:PercentTextBox MinValueChanged="PercentTextBox_MinValueChanged"/></td></tr>
 <tr>
 <td>
 C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.MinValueChanged+=new                      PropertyChangedCallback(PercentTextBox_MinValueChanged);</td></tr>
@@ -158,7 +158,7 @@ SelectionChanged – The event occurs when the selection in the textbox is chang
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:PercentTextBox SelectionChanged="PercentTextBox_SelectionChanged"/&gt;</td></tr>
+XAML<syncfusion:PercentTextBox SelectionChanged="PercentTextBox_SelectionChanged"/></td></tr>
 <tr>
 <td>
 C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.SelectionChanged+=new                         RoutedEventHandler(PercentTextBox_SelectionChanged);</td></tr>

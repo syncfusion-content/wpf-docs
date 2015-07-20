@@ -20,7 +20,7 @@ Finish-to-start—You cannot start a task until the other task is completed.
 
 
 
-{ ![](Dependency-Relationship_images/Dependency-Relationship_img1.png) | markdownify }
+{{ '![](Dependency-Relationship_images/Dependency-Relationship_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -28,7 +28,7 @@ Finish-to-finish—You cannot finish a task until the other task is completed.
 
 
 
-{ ![](Dependency-Relationship_images/Dependency-Relationship_img2.png) | markdownify }
+{{ '![](Dependency-Relationship_images/Dependency-Relationship_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -36,7 +36,7 @@ Start-to-start—You cannot start a task until the other task is also started.
 
 
 
-{ ![](Dependency-Relationship_images/Dependency-Relationship_img3.png) | markdownify }
+{{ '![](Dependency-Relationship_images/Dependency-Relationship_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -44,7 +44,7 @@ Start-to-Finish—You cannot finish a task until another the other task is start
 
 
 
-{ ![](Dependency-Relationship_images/Dependency-Relationship_img4.png) | markdownify }
+{{ '![](Dependency-Relationship_images/Dependency-Relationship_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -68,7 +68,7 @@ NA</td></tr>
 <tr>
 <td>
 GanttTaskRelationship</td><td>
-This contains four relationships. They are:* StartToStart* StartToFinish* FinishToFinish* FinishToStart<br>You can asign this to the {{ '_TaskDetails_' | markdownify }} to set the relationship between tasks.</td><td>
+This contains four relationships. They are:* StartToStart* StartToFinish* FinishToFinish* FinishToStart<br>You can asign this to the {{{ ''_TaskDetails_'' | markdownify }}} to set the relationship between tasks.</td><td>
 Predecessor</td><td>
 Enum</td><td>
 NA</td></tr>
@@ -162,7 +162,7 @@ The following image shows the Dependency Relationship:
 
 
 
-{ ![](Dependency-Relationship_images/Dependency-Relationship_img5.png) | markdownify }
+{{ '![](Dependency-Relationship_images/Dependency-Relationship_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -216,7 +216,7 @@ This helps to change the dependency relationships and resources of the tasks dyn
 
 
 
-{ ![](Dependency-Relationship_images/Dependency-Relationship_img6.png) | markdownify }
+{{ '![](Dependency-Relationship_images/Dependency-Relationship_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -234,7 +234,7 @@ The dynamic editing of predecessor will be automatically included in the Gantt b
 
              ToolTipTemplate="{StaticResource toolTipTemplate}"> 
 
-              &lt;gantt:GanttControl.TaskAttributeMapping&gt;
+              <gantt:GanttControl.TaskAttributeMapping>
 
                     <gantt:TaskAttributeMapping TaskIdMapping="Id"
 
@@ -254,11 +254,11 @@ The dynamic editing of predecessor will be automatically included in the Gantt b
 
                                             ResourceInfoMapping="Resource">
 
-                    &lt;/gantt:TaskAttributeMapping&gt;
+                    </gantt:TaskAttributeMapping>
 
-                &lt;/gantt:GanttControl.TaskAttributeMapping&gt;
+                </gantt:GanttControl.TaskAttributeMapping>
 
-            &lt;/gantt:GanttControl&gt;
+            </gantt:GanttControl>
 
 
 

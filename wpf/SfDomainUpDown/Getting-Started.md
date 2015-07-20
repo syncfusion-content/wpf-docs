@@ -20,9 +20,9 @@ The following code sample shows how to create the DomainUpDown from code-behind 
 
 
 
-&lt;Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"&gt;
+<Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf">
 
-    &lt;Grid&gt;
+    <Grid>
 
 
 
@@ -34,9 +34,9 @@ The following code sample shows how to create the DomainUpDown from code-behind 
 
                                Width="200"/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Page&gt;
+</Page>
 
 
 

@@ -25,7 +25,7 @@ C#Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new               
 </table>
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -41,7 +41,7 @@ C#Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new               
 </table>
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -56,14 +56,14 @@ You can customize the Number Format either by using the NumberFormat property or
 <table>
 <tr>
 <td>
-XAML<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"                             Value="1234567">    &lt;syncfusion:CurrencyTextBox.NumberFormat&gt;        <numberformat:NumberFormatInfo CurrencyGroupSeparator="/"                       CurrencyDecimalDigits="4" CurrencyDecimalSeparator="*"                       CurrencySymbol="$"/>    &lt;/syncfusion:CurrencyTextBox.NumberFormat&gt;&lt;/syncfusion:CurrencyTextBox&gt;</td></tr>
+XAML<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"                             Value="1234567">    <syncfusion:CurrencyTextBox.NumberFormat>        <numberformat:NumberFormatInfo CurrencyGroupSeparator="/"                       CurrencyDecimalDigits="4" CurrencyDecimalSeparator="*"                       CurrencySymbol="$"/>    </syncfusion:CurrencyTextBox.NumberFormat></syncfusion:CurrencyTextBox></td></tr>
 <tr>
 <td>
 C#Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new                           Syncfusion.Windows.Shared.CurrencyTextBox();currencyTextBox.Width = 100;currencyTextBox.Height = 25;currencyTextBox.Value = 1234567;currencyTextBox.NumberFormat = new NumberFormatInfo() { CurrencyGroupSeparator = "/",                                CurrencyDecimalDigits = 4, CurrencyDecimalSeparator = "*",                                CurrencySymbol = "$" };</td></tr>
 </table>
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -72,14 +72,14 @@ C#Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new               
 <table>
 <tr>
 <td>
-XAML<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"                             Value="1234567"                            CurrencyGroupSeparator="/" CurrencyDecimalDigits="4"                             CurrencyDecimalSeparator="*" CurrencySymbol="$">&lt;/syncfusion:CurrencyTextBox&gt;</td></tr>
+XAML<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"                             Value="1234567"                            CurrencyGroupSeparator="/" CurrencyDecimalDigits="4"                             CurrencyDecimalSeparator="*" CurrencySymbol="$"></syncfusion:CurrencyTextBox></td></tr>
 <tr>
 <td>
 C#Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new                           Syncfusion.Windows.Shared.CurrencyTextBox();currencyTextBox.Width = 100;currencyTextBox.Height = 25;currencyTextBox.Value = 1234567;currencyTextBox.CurrencyGroupSeparator = "/";currencyTextBox.CurrencyDecimalDigits = 4;currencyTextBox.CurrencyDecimalSeparator = "*";currencyTextBox.CurrencySymbol = "$";</td></tr>
 </table>
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -123,7 +123,7 @@ XAML
 
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -215,7 +215,7 @@ XAML
 
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img6.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img6.png)' | markdownify }}
 {:.image }
 
 

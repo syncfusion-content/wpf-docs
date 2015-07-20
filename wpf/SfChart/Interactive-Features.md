@@ -87,7 +87,7 @@ The following code example can be added to enable and customize the ToolTip feat
 
 The following screenshot is an example of the ToolTip in a FinancialSeries.
 
-{ ![](Interactive-Features_images/Interactive-Features_img1.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -135,11 +135,11 @@ ChartCrossHairBehavior implements the feature of tracking data points in a chart
 
 
 
-         &lt;syncfusion:SfChart.Behaviors&gt;
+         <syncfusion:SfChart.Behaviors>
 
-            &lt;syncfusion:ChartCrossHairBehavior/&gt;
+            <syncfusion:ChartCrossHairBehavior/>
 
-        &lt;/syncfusion:SfChart.Behaviors&gt;
+        </syncfusion:SfChart.Behaviors>
 
 Create an instance for ChartCrossHairBehavior and add this to the Behaviors collection.
 
@@ -149,21 +149,21 @@ To display the movement of X and Y values in the axis set the ShowTrackBallInfo 
 
 
 
-&lt;syncfusion:SfChart.PrimaryAxis&gt;
+<syncfusion:SfChart.PrimaryAxis>
 
-            &lt;syncfusion:CategoryAxis ShowTrackBallInfo="True" /&gt;
+            <syncfusion:CategoryAxis ShowTrackBallInfo="True" />
 
-        &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+        </syncfusion:SfChart.PrimaryAxis>
 
-        &lt;syncfusion:SfChart.SecondaryAxis&gt;
+        <syncfusion:SfChart.SecondaryAxis>
 
-            &lt;syncfusion:NumericalAxis  ShowTrackBallInfo="True"/&gt;
+            <syncfusion:NumericalAxis  ShowTrackBallInfo="True"/>
 
-        &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+        </syncfusion:SfChart.SecondaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-89.png](Interactive-Features_images/Interactive-Features_img2.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-89.png](Interactive-Features_images/Interactive-Features_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -179,11 +179,11 @@ You can create an instance for ChartTrackBallBehavior and add it to the Behavior
 
 
 
-&lt;syncfusion:SfChart.Behaviors&gt;
+<syncfusion:SfChart.Behaviors>
 
-            &lt;syncfusion:ChartTrackBallBehavior/&gt;
+            <syncfusion:ChartTrackBallBehavior/>
 
-        &lt;/syncfusion:SfChart.Behaviors&gt;
+        </syncfusion:SfChart.Behaviors>
 
 
 
@@ -195,15 +195,15 @@ To view the movement of TrackBallBehavior in the Axis, set the ShowTrackBallInfo
 
 
 
-&lt;syncfusion:SfChart.PrimaryAxis&gt;
+<syncfusion:SfChart.PrimaryAxis>
 
-            &lt;syncfusion:CategoryAxis ShowTrackBallInfo="True"  /&gt;
+            <syncfusion:CategoryAxis ShowTrackBallInfo="True"  />
 
-        &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+        </syncfusion:SfChart.PrimaryAxis>
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img3.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -253,7 +253,7 @@ Gets or sets the TrackballLabelDisplayMode for the Chart TrackBall.</td></tr>
 </table>
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img4.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -266,11 +266,11 @@ This feature allows you to display the label in two different modes. This proper
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img5.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img5.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img6.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -334,11 +334,11 @@ Zooming the Chart using Mouse- You must enable the EnableMouseWheelZooming prope
 
 
 
-&lt;syncfusion:SfChart.Behaviors&gt;
+<syncfusion:SfChart.Behaviors>
 
-            &lt;syncfusion:ChartZoomPanBehavior EnableMouseWheelZooming="True"/&gt;
+            <syncfusion:ChartZoomPanBehavior EnableMouseWheelZooming="True"/>
 
-        &lt;/syncfusion:SfChart.Behaviors&gt;
+        </syncfusion:SfChart.Behaviors>
 
 
 
@@ -346,11 +346,11 @@ Also, there are options for selection zooming, when you want to zoom in on a par
 
 [XAML]
 
-&lt;syncfusion:SfChart.Behaviors&gt;
+<syncfusion:SfChart.Behaviors>
 
-            &lt;syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True"/&gt;
+            <syncfusion:ChartZoomPanBehavior EnableSelectionZooming="True"/>
 
-        &lt;/syncfusion:SfChart.Behaviors&gt;
+        </syncfusion:SfChart.Behaviors>
 
 
 
@@ -360,29 +360,29 @@ Zooming the Chart in Touch monitor- By enabling the EnablePinchZooming property,
 
 
 
-&lt;syncfusion:SfChart.SecondaryAxis&gt;
+<syncfusion:SfChart.SecondaryAxis>
 
-            &lt;syncfusion:NumericalAxis  EnableTouchMode="True"/&gt;
+            <syncfusion:NumericalAxis  EnableTouchMode="True"/>
 
-        &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+        </syncfusion:SfChart.SecondaryAxis>
 
 
 
-        &lt;syncfusion:SfChart.Behaviors&gt;
+        <syncfusion:SfChart.Behaviors>
 
-            &lt;syncfusion:ChartZoomPanBehavior EnablePinchZooming="True" /&gt;
+            <syncfusion:ChartZoomPanBehavior EnablePinchZooming="True" />
 
-        &lt;/syncfusion:SfChart.Behaviors&gt;
+        </syncfusion:SfChart.Behaviors>
 
 Zooming relative to the cursor- By enabling the ZoomRelativeToCursor property, you can zoom the chart area relative to cursor current position. This feature has a close view of the required region.
 
 [XAML]
 
-&lt;syncfusion:SfChart.Behaviors&gt;
+<syncfusion:SfChart.Behaviors>
 
-            &lt;syncfusion:ChartZoomPanBehavior ZoomRelativeToCursor="True"/&gt;
+            <syncfusion:ChartZoomPanBehavior ZoomRelativeToCursor="True"/>
 
-        &lt;/syncfusion:SfChart.Behaviors&gt;
+        </syncfusion:SfChart.Behaviors>
 
 ZoomPosition and ZoomFactor
 
@@ -400,15 +400,15 @@ The value of ZoomFactor and ZoomPosition must also fall within the value of 0 to
 
 
 
-&lt;syncfusion:SfChart.SecondaryAxis&gt;
+<syncfusion:SfChart.SecondaryAxis>
 
-            &lt;syncfusion:NumericalAxis ZoomPosition="0.4" ZoomFactor="0.2"/&gt;
+            <syncfusion:NumericalAxis ZoomPosition="0.4" ZoomFactor="0.2"/>
 
-        &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+        </syncfusion:SfChart.SecondaryAxis>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-91.png](Interactive-Features_images/Interactive-Features_img7.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-91.png](Interactive-Features_images/Interactive-Features_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -416,7 +416,7 @@ Enable Auto Interval on Zooming
 
 The EnableAutoIntervalOnZooming property is used to define whether you need to keep the interval as a constant or not. While zooming, the intervals change, depending on the VisibleRange aspect to zooming, like in the following image. By default, for intervals based on available size and range, automatic calculation is available.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-92.png](Interactive-Features_images/Interactive-Features_img8.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-92.png](Interactive-Features_images/Interactive-Features_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -426,15 +426,15 @@ In some scenarios, you may be required to maintain the interval count as a const
 
 
 
-&lt;syncfusion:SfChart.PrimaryAxis&gt;
+<syncfusion:SfChart.PrimaryAxis>
 
-            &lt;syncfusion:NumericalAxis Interval="2" FontSize="14" EnableAutoIntervalOnZooming="False"/&gt;
+            <syncfusion:NumericalAxis Interval="2" FontSize="14" EnableAutoIntervalOnZooming="False"/>
 
-        &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+        </syncfusion:SfChart.PrimaryAxis>
 
 Here, Interval is defined as 2, to maintain this interval on zooming.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-93.png](Interactive-Features_images/Interactive-Features_img9.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-93.png](Interactive-Features_images/Interactive-Features_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -444,11 +444,11 @@ You can view the zoomed data or series by panning the chart. This can be done by
 
 [XAML]
 
-&lt;syncfusion:SfChart.Behaviors&gt;
+<syncfusion:SfChart.Behaviors>
 
-     &lt;syncfusion:ChartZoomPanBehavior EnablePanning="True" /&gt;
+     <syncfusion:ChartZoomPanBehavior EnablePanning="True" />
 
-&lt;/syncfusion:SfChart.Behaviors&gt;
+</syncfusion:SfChart.Behaviors>
 
 Zooming Toolbar
 
@@ -492,15 +492,15 @@ The following code example can be used to display the zooming tool bar in SfChar
 
 [XAML]
 
-&lt;chart:SfChart&gt;
+<chart:SfChart>
 
-    &lt;chart:SfChart.Behaviors&gt;
+    <chart:SfChart.Behaviors>
 
-         &lt;chart:ChartZoomPanBehavior EnableZoomingToolBar="True" ToolBarItems="All" ToolBarOrientation="Horizontal" HorizontalPosition="Left" VerticalPosition="Top" ToolBarBackground="#E6E6E6" EnableSelectionZooming="True"/&gt;
+         <chart:ChartZoomPanBehavior EnableZoomingToolBar="True" ToolBarItems="All" ToolBarOrientation="Horizontal" HorizontalPosition="Left" VerticalPosition="Top" ToolBarBackground="#E6E6E6" EnableSelectionZooming="True"/>
 
-    &lt;/chart:SfChart.Behaviors&gt;
+    </chart:SfChart.Behaviors>
 
-&lt;/chart:SfChart&gt;
+</chart:SfChart>
 
 
 
@@ -536,7 +536,7 @@ chart.Behaviors.Add(behavior);
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img10.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -548,11 +548,11 @@ You can use the following code example to add selection to the chart.
 
 [XAML]
 
-&lt;syncfusion:SfChart.Behaviors&gt;
+<syncfusion:SfChart.Behaviors>
 
-&lt;syncfusion:ChartSelectionBehavior/&gt;
+<syncfusion:ChartSelectionBehavior/>
 
-&lt;/syncfusion:SfChart.Behaviors&gt;
+</syncfusion:SfChart.Behaviors>
 
 ChartSelectionBehavior have two types of selection.
 
@@ -629,13 +629,13 @@ This property is used to define the custom brush for the selected segment. You c
 
 SegmentSelectionBrush="Red">
 
-&lt;/syncfusion:ColumnSeries&gt;
+</syncfusion:ColumnSeries>
 
 
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_141.jpg](Interactive-Features_images/Interactive-Features_img11.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_141.jpg](Interactive-Features_images/Interactive-Features_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -647,28 +647,28 @@ Use the following code example to set SelectedIndex in a SfChart.
 
 [XAML]
 
-&lt;chart:SfChart Name="chart" &gt;
+<chart:SfChart Name="chart" >
 
-&lt;chart:SfChart.Behaviors&gt;
+<chart:SfChart.Behaviors>
 
 <chart:ChartSelectionBehavior SelectionMode="MouseClick"
 
                               EnableSegmentSelection="true" />
 
-&lt;/chart:SfChart.Behaviors&gt;
+</chart:SfChart.Behaviors>
 
-&lt;chart:ColumnSeries Name="column" SelectedIndex="2"    ItemsSource="{Binding CurrencyDetails}" SegmentSelectionBrush="Green"     XBindingPath="CurrencyName" YBindingPath="CurrencyValue"&gt;
+<chart:ColumnSeries Name="column" SelectedIndex="2"    ItemsSource="{Binding CurrencyDetails}" SegmentSelectionBrush="Green"     XBindingPath="CurrencyName" YBindingPath="CurrencyValue">
 
 . . .
 
-&lt;/chart:ColumnSeries&gt;
+</chart:ColumnSeries>
 
-&lt;/chart:SfChart&gt;
+</chart:SfChart>
 
 
 The following screenshot illustrates a SfChart with SelectedIndex.
 
-{ ![F:/Trunk/WPF/SfChart.WPF/Selection/Images/Selection.png](Interactive-Features_images/Interactive-Features_img12.png) | markdownify }
+{{ '![F:/Trunk/WPF/SfChart.WPF/Selection/Images/Selection.png](Interactive-Features_images/Interactive-Features_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -702,15 +702,15 @@ Use the following code example to set series selection in a SfChart.
 
 [XAML]
 
-&lt;chart:SfChart SeriesSelectedIndex="1"&gt;
+<chart:SfChart SeriesSelectedIndex="1">
 
 
 
-&lt;chart:SfChart.Behaviors&gt;
+<chart:SfChart.Behaviors>
 
-&lt;chart:ChartSelectionBehavior  EnableSeriesSelection="True" /&gt;
+<chart:ChartSelectionBehavior  EnableSeriesSelection="True" />
 
-&lt;/chart:SfChart.Behaviors&gt;
+</chart:SfChart.Behaviors>
 
 
 
@@ -722,7 +722,7 @@ Use the following code example to set series selection in a SfChart.
 
                       ItemsSource="{Binding Fruits}">
 
-&lt;chart:ColumnSeries.AdornmentsInfo&gt;
+<chart:ColumnSeries.AdornmentsInfo>
 
 <chart:ChartAdornmentInfo   AdornmentsPosition="TopAndBottom"
 
@@ -730,11 +730,11 @@ Use the following code example to set series selection in a SfChart.
 
                             HighlightOnSelection="True"/>
 
-&lt;/chart:ColumnSeries.AdornmentsInfo&gt;
+</chart:ColumnSeries.AdornmentsInfo>
 
 
 
-&lt;/chart:ColumnSeries&gt;
+</chart:ColumnSeries>
 
 
 
@@ -752,7 +752,7 @@ Use the following code example to set series selection in a SfChart.
 
 
 
-&lt;chart:ColumnSeries3D.AdornmentsInfo&gt;
+<chart:ColumnSeries3D.AdornmentsInfo>
 
 <chart:ChartAdornmentInfo3D   AdornmentsPosition="TopAndBottom"
 
@@ -760,19 +760,19 @@ Use the following code example to set series selection in a SfChart.
 
                               HighlightOnSelection="True"/>
 
-&lt;/chart:ColumnSeries3D.AdornmentsInfo&gt;
+</chart:ColumnSeries3D.AdornmentsInfo>
 
 
 
-&lt;/chart:ColumnSeries&gt;
+</chart:ColumnSeries>
 
 
 
-&lt;/chart:SfChart&gt;
+</chart:SfChart>
 
 The following screenshot is an example of a SfChart with series selection.
 
-{ ![](Interactive-Features_images/Interactive-Features_img13.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -864,41 +864,41 @@ The following code example is used to enable dragging for the ColumnSeries.
 
 [XAML]
 
-&lt;!-- Add the Chart control--&gt;
+<!-- Add the Chart control-->
 
-        &lt;syncfusion:SfChart&gt;
+        <syncfusion:SfChart>
 
-            &lt;!-- Assign the datacontext object for the Chart--&gt;
+            <!-- Assign the datacontext object for the Chart-->
 
-            &lt; syncfusion:SfChart.DataContext&gt;
+            < syncfusion:SfChart.DataContext>
 
-                &lt;local:CategoryDataViewModel/&gt;
+                <local:CategoryDataViewModel/>
 
-            &lt;/ syncfusion:SfChart.DataContext&gt;
+            </ syncfusion:SfChart.DataContext>
 
-            &lt;!-- Add a legend to the Chart--&gt;
+            <!-- Add a legend to the Chart-->
 
-            &lt; syncfusion:SfChart.Legend&gt;
+            < syncfusion:SfChart.Legend>
 
-                &lt; syncfusion:ChartLegend/&gt;
+                < syncfusion:ChartLegend/>
 
-            &lt;/ syncfusion:SfChart.Legend&gt;
+            </ syncfusion:SfChart.Legend>
 
-            &lt;!-- Add axes to the Chart--&gt;
+            <!-- Add axes to the Chart-->
 
-            &lt; syncfusion:SfChart.PrimaryAxis&gt;
+            < syncfusion:SfChart.PrimaryAxis>
 
-                &lt; syncfusion:CategoryAxis/&gt;
+                < syncfusion:CategoryAxis/>
 
-            &lt;/ syncfusion:SfChart.PrimaryAxis&gt;
+            </ syncfusion:SfChart.PrimaryAxis>
 
-            &lt; syncfusion:SfChart.SecondaryAxis&gt;
+            < syncfusion:SfChart.SecondaryAxis>
 
-                &lt; syncfusion:NumericalAxis/&gt;
+                < syncfusion:NumericalAxis/>
 
-            &lt;/ syncfusion:SfChart.SecondaryAxis&gt;
+            </ syncfusion:SfChart.SecondaryAxis>
 
-            &lt;!-- Add ColumnSeries to the Chart--&gt;
+            <!-- Add ColumnSeries to the Chart-->
 
             < syncfusion:ColumnSeries Label="Sports" ItemsSource="{Binding CategoricalDatas}" 
 
@@ -906,13 +906,13 @@ The following code example is used to enable dragging for the ColumnSeries.
 
                     EnableSegmentDragging="True"/>
 
-        &lt;/ syncfusion:SfChart&gt;
+        </ syncfusion:SfChart>
 
 
 
 The following screenshot illustrates dragging a data point.
 
-{ ![C:/Users/rachel/Desktop/snaps/11.png](Interactive-Features_images/Interactive-Features_img14.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/snaps/11.png](Interactive-Features_images/Interactive-Features_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -927,41 +927,41 @@ The following code example is used to enable LineSeries dragging.
 
 [XAML]
 
-&lt;!-- Add the Chart control--&gt;
+<!-- Add the Chart control-->
 
-        &lt;syncfusion:SfChart&gt;
+        <syncfusion:SfChart>
 
-            &lt;!-- Assign the datacontext object for the Chart--&gt;
+            <!-- Assign the datacontext object for the Chart-->
 
-            &lt;syncfusion:SfChart.DataContext&gt;
+            <syncfusion:SfChart.DataContext>
 
-                &lt;local:CategoryDataViewModel/&gt;
+                <local:CategoryDataViewModel/>
 
-            &lt;/syncfusion:SfChart.DataContext&gt;
+            </syncfusion:SfChart.DataContext>
 
-            &lt;! —Add a legend to the Chart--&gt;
+            <! —Add a legend to the Chart-->
 
-            &lt;syncfusion:SfChart.Legend&gt;
+            <syncfusion:SfChart.Legend>
 
-                &lt;syncfusion:ChartLegend/&gt;
+                <syncfusion:ChartLegend/>
 
-            &lt;/syncfusion:SfChart.Legend&gt;
+            </syncfusion:SfChart.Legend>
 
-            &lt;!-- Add axes to the Chart--&gt;
+            <!-- Add axes to the Chart-->
 
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:CategoryAxis/&gt;
+                <syncfusion:CategoryAxis/>
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.SecondaryAxis>
 
-                &lt;syncfusion:NumericalAxis/&gt;
+                <syncfusion:NumericalAxis/>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+            </syncfusion:SfChart.SecondaryAxis>
 
-         &lt;!-- Add LineSeries to the Chart--&gt;
+         <!-- Add LineSeries to the Chart-->
 
         <syncfusion:LineSeries Label="Sports" ItemsSource="{Binding CategoricalDatas}"
 
@@ -969,13 +969,13 @@ The following code example is used to enable LineSeries dragging.
 
                    EnableSeriesDragging="True"/>
 
-        &lt;/syncfusion:SfChart&gt;
+        </syncfusion:SfChart>
 
 
 
 The following screenshot illustrates dragging a LineSeries.
 
-{ ![C:/Users/rachel/Desktop/snaps/12.png](Interactive-Features_images/Interactive-Features_img15.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/snaps/12.png](Interactive-Features_images/Interactive-Features_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -1017,37 +1017,37 @@ Gets or sets a template for the visible range label view in touch mode.</td></tr
 
 [XAML]
 
-&lt;Grid.Resources&gt;
+<Grid.Resources>
 
-            &lt;DataTemplate x:Key="thumblabeltemplate"&gt;
+            <DataTemplate x:Key="thumblabeltemplate">
 
-                &lt;Grid&gt;
+                <Grid>
 
-                    &lt;Border BorderBrush="Pink" BorderThickness="2"&gt;
+                    <Border BorderBrush="Pink" BorderThickness="2">
 
-                        &lt;TextBlock Text="{Binding}" FontSize="15"&gt;&lt;/TextBlock&gt;
+                        <TextBlock Text="{Binding}" FontSize="15"></TextBlock>
 
-                    &lt;/Border&gt;
+                    </Border>
 
-                &lt;/Grid&gt;
+                </Grid>
 
-            &lt;/DataTemplate&gt;
+            </DataTemplate>
 
-        &lt;/Grid.Resources&gt;
+        </Grid.Resources>
 
 
 
-        &lt;syncfusion:NumericalAxis EnableScrollBar="True" DeferredScrolling="True" EnableTouchMode="True" ThumbLabelVisibility="Visible" ThumbLabelTemplate="{StaticResource thumblabeltemplate}" /&gt;
+        <syncfusion:NumericalAxis EnableScrollBar="True" DeferredScrolling="True" EnableTouchMode="True" ThumbLabelVisibility="Visible" ThumbLabelTemplate="{StaticResource thumblabeltemplate}" />
 
 
 
 The following screenshots illustrate the SfChart with scrollbar enabled.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-97.png](Interactive-Features_images/Interactive-Features_img16.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-97.png](Interactive-Features_images/Interactive-Features_img16.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-98.png](Interactive-Features_images/Interactive-Features_img17.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-98.png](Interactive-Features_images/Interactive-Features_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -1063,15 +1063,15 @@ The following example shows the HighlighOnSelection feature for adornment.
 
 [XAML]
 
-&lt;syncfusion:SfChart Margin="10" Name="chart"&gt;
+<syncfusion:SfChart Margin="10" Name="chart">
 
 
 
-        &lt;syncfusion:SfChart.Behaviors&gt;
+        <syncfusion:SfChart.Behaviors>
 
-            &lt;syncfusion:ChartSelectionBehavior/&gt;
+            <syncfusion:ChartSelectionBehavior/>
 
-        &lt;/syncfusion:SfChart.Behaviors&gt;
+        </syncfusion:SfChart.Behaviors>
 
 
 
@@ -1081,25 +1081,25 @@ The following example shows the HighlighOnSelection feature for adornment.
 
 
 
-            &lt;syncfusion:FastLineBitmapSeries.AdornmentsInfo&gt;
+            <syncfusion:FastLineBitmapSeries.AdornmentsInfo>
 
-                &lt;syncfusion:ChartAdornmentInfo  ShowLabel="True" UseSeriesPalette="True" HighlightOnSelection="True"/&gt;
+                <syncfusion:ChartAdornmentInfo  ShowLabel="True" UseSeriesPalette="True" HighlightOnSelection="True"/>
 
-            &lt;/syncfusion:FastLineBitmapSeries.AdornmentsInfo&gt;
-
-
-
-        &lt;/syncfusion:FastLineBitmapSeries&gt;
+            </syncfusion:FastLineBitmapSeries.AdornmentsInfo>
 
 
 
-    &lt;/syncfusion:SfChart&gt;
+        </syncfusion:FastLineBitmapSeries>
+
+
+
+    </syncfusion:SfChart>
 
 
 
 The following demonstrate the output for the above screenshots:
 
-{ ![](Interactive-Features_images/Interactive-Features_img18.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img18.png)' | markdownify }}
 {:.image }
 
 

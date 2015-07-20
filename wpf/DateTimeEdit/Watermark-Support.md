@@ -23,7 +23,7 @@ XAML</td></tr>
 </table>
 
 
-{ ![](Watermark-Support_images/Watermark-Support_img1.png) | markdownify }
+{{ '![](Watermark-Support_images/Watermark-Support_img1.png)' | markdownify }}
 {:.image }
 
 

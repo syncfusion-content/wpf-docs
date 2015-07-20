@@ -13,7 +13,7 @@ The EnableExtendedScrolling property is used to change the values based on the c
 
 
 
-{ ![](Extended-Scrolling_images/Extended-Scrolling_img1.png) | markdownify }
+{{ '![](Extended-Scrolling_images/Extended-Scrolling_img1.png)' | markdownify }}
 {:.image }
 
 

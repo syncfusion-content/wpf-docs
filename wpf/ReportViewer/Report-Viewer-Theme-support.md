@@ -78,865 +78,865 @@ The following code example illustrates a Report Viewer control template.
 
 
 
-&lt;Style TargetType="local:ReportViewer"&gt;
+<Style TargetType="local:ReportViewer">
 
-        &lt;Setter Property="Template"&gt;
+        <Setter Property="Template">
 
-            &lt;Setter.Value&gt;
+            <Setter.Value>
 
-                &lt;ControlTemplate TargetType="local:ReportViewer"&gt;
+                <ControlTemplate TargetType="local:ReportViewer">
 
 
 
-                    &lt;Grid x:Name="PART_MainGrid" Height="Auto" Margin="0,0,0,0" Background="Transparent"&gt;
+                    <Grid x:Name="PART_MainGrid" Height="Auto" Margin="0,0,0,0" Background="Transparent">
 
-                        &lt;Grid.RowDefinitions&gt;
+                        <Grid.RowDefinitions>
 
-                            &lt;RowDefinition Name="PART_toolBarGridRow" Height="28"/&gt;
+                            <RowDefinition Name="PART_toolBarGridRow" Height="28"/>
 
-                            &lt;RowDefinition Name="PART_dsCredentialRow" Height="Auto"/&gt;
+                            <RowDefinition Name="PART_dsCredentialRow" Height="Auto"/>
 
-                            &lt;RowDefinition Name="PART_parameterGridRow" Height="Auto"/&gt;
+                            <RowDefinition Name="PART_parameterGridRow" Height="Auto"/>
 
-                            &lt;RowDefinition Name="PART_viewerContentRow" Height="*" /&gt;
+                            <RowDefinition Name="PART_viewerContentRow" Height="*" />
 
-                            &lt;RowDefinition Name="PART_gridExceptionRow" Height="0"/&gt;
+                            <RowDefinition Name="PART_gridExceptionRow" Height="0"/>
 
-                            &lt;RowDefinition Name="PART_loadingIndicatorRow" Height="0"/&gt;
+                            <RowDefinition Name="PART_loadingIndicatorRow" Height="0"/>
 
-                        &lt;/Grid.RowDefinitions&gt;
+                        </Grid.RowDefinitions>
 
 
 
-                        &lt;!--Toolbar--&gt;
+                        <!--Toolbar-->
 
-                        &lt;StackPanel Name="PART_toolBar" Height="28" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="0"&gt;
+                        <StackPanel Name="PART_toolBar" Height="28" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="0">
 
-                            &lt;StackPanel.Background&gt;
+                            <StackPanel.Background>
 
-                                &lt;LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"&gt;
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
 
-                                    &lt;GradientStop Color="#FFFEFBF4" Offset="0.027"/&gt;
+                                    <GradientStop Color="#FFFEFBF4" Offset="0.027"/>
 
-                                    &lt;GradientStop Color="#FFEAEEEF" Offset="0.029"/&gt;
+                                    <GradientStop Color="#FFEAEEEF" Offset="0.029"/>
 
-                                    &lt;GradientStop Color="#FFDCE4F1" Offset="0.498"/&gt;
+                                    <GradientStop Color="#FFDCE4F1" Offset="0.498"/>
 
-                                    &lt;GradientStop Color="#FFE6EAF3" Offset="0.966"/&gt;
+                                    <GradientStop Color="#FFE6EAF3" Offset="0.966"/>
 
-                                    &lt;GradientStop Color="FloralWhite" Offset="0.968"/&gt;
+                                    <GradientStop Color="FloralWhite" Offset="0.968"/>
 
-                                    &lt;GradientStop Color="#FFD4DBEB" Offset="0.503"/&gt;
+                                    <GradientStop Color="#FFD4DBEB" Offset="0.503"/>
 
-                                &lt;/LinearGradientBrush&gt;
+                                </LinearGradientBrush>
 
 
 
-                            &lt;/StackPanel.Background&gt;
+                            </StackPanel.Background>
 
 
 
-                            &lt;!--Print--&gt;
+                            <!--Print-->
 
-                            &lt;Button Style="{StaticResource ButtonStyle}" Name="PART_buttonPrint" Width="22" Height="22" ToolTip="{x:Static prop:Resources.menuItemPrint}" IsEnabled="False" Margin="2,3,2,3" &gt;
+                            <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonPrint" Width="22" Height="22" ToolTip="{x:Static prop:Resources.menuItemPrint}" IsEnabled="False" Margin="2,3,2,3" >
 
-                                &lt;Image Stretch="None"&gt;
+                                <Image Stretch="None">
 
-                                    &lt;Image.Style&gt;
+                                    <Image.Style>
 
-                                        &lt;Style&gt;
+                                        <Style>
 
-                                            &lt;Style.Triggers&gt;
+                                            <Style.Triggers>
 
-                                                &lt;Trigger Property="Button.IsEnabled" Value="False"&gt;
+                                                <Trigger Property="Button.IsEnabled" Value="False">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource PrintDisabled}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource PrintDisabled}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                                &lt;Trigger Property="Button.IsEnabled" Value="True"&gt;
+                                                <Trigger Property="Button.IsEnabled" Value="True">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource Print}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource Print}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                            &lt;/Style.Triggers&gt;
+                                            </Style.Triggers>
 
-                                        &lt;/Style&gt;
+                                        </Style>
 
-                                    &lt;/Image.Style&gt;
+                                    </Image.Style>
 
-                                &lt;/Image&gt;
+                                </Image>
 
-                                &lt;!--PrintDisabled--&gt;
+                                <!--PrintDisabled-->
 
-                            &lt;/Button&gt;
+                            </Button>
 
 
 
-                            &lt;ComboBox Name="PART_exportControl" Height="22" Width="35" Style="{StaticResource ExportComboBox}" ItemContainerStyle="{StaticResource ItemTemplate}" IsEnabled="False" ToolTip="Export" /&gt;
+                            <ComboBox Name="PART_exportControl" Height="22" Width="35" Style="{StaticResource ExportComboBox}" ItemContainerStyle="{StaticResource ItemTemplate}" IsEnabled="False" ToolTip="Export" />
 
 
 
-                            &lt;Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6"&gt;
+                            <Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6">
 
-                                &lt;Rectangle.Fill&gt;
+                                <Rectangle.Fill>
 
-                                    &lt;LinearGradientBrush EndPoint="0.662,0.5" StartPoint="0.338,0.5"&gt;
+                                    <LinearGradientBrush EndPoint="0.662,0.5" StartPoint="0.338,0.5">
 
-                                        &lt;GradientStop Color="#FFBCBCBC" Offset="0.508"/&gt;
+                                        <GradientStop Color="#FFBCBCBC" Offset="0.508"/>
 
-                                        &lt;GradientStop Color="White" Offset="0.525"/&gt;
+                                        <GradientStop Color="White" Offset="0.525"/>
 
-                                    &lt;/LinearGradientBrush&gt;
+                                    </LinearGradientBrush>
 
-                                &lt;/Rectangle.Fill&gt;
+                                </Rectangle.Fill>
 
-                            &lt;/Rectangle&gt;
+                            </Rectangle>
 
 
 
-                            &lt;!--Navigates to First--&gt;
+                            <!--Navigates to First-->
 
-                            &lt;Button Style="{StaticResource ButtonStyle}" Name="PART_buttonFirst" ToolTip="{x:Static prop:Resources.menuItemFirst}" Width="22" Height="22" IsEnabled="False" Margin="0,3,0,3" &gt;
+                            <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonFirst" ToolTip="{x:Static prop:Resources.menuItemFirst}" Width="22" Height="22" IsEnabled="False" Margin="0,3,0,3" >
 
-                                &lt;Image Stretch="None"&gt;
+                                <Image Stretch="None">
 
-                                    &lt;Image.Style&gt;
+                                    <Image.Style>
 
-                                        &lt;Style&gt;
+                                        <Style>
 
-                                            &lt;Style.Triggers&gt;
+                                            <Style.Triggers>
 
-                                                &lt;Trigger Property="Button.IsEnabled" Value="False"&gt;
+                                                <Trigger Property="Button.IsEnabled" Value="False">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource First_NavDisabled}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource First_NavDisabled}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                                &lt;Trigger Property="Button.IsEnabled" Value="True"&gt;
+                                                <Trigger Property="Button.IsEnabled" Value="True">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource First_Nav}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource First_Nav}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                            &lt;/Style.Triggers&gt;
+                                            </Style.Triggers>
 
-                                        &lt;/Style&gt;
+                                        </Style>
 
-                                    &lt;/Image.Style&gt;
+                                    </Image.Style>
 
-                                &lt;/Image&gt;
+                                </Image>
 
-                                &lt;!--First_NavDisabled--&gt;
+                                <!--First_NavDisabled-->
 
-                            &lt;/Button&gt;
+                            </Button>
 
 
 
-                            &lt;!--Navigates to Previous--&gt;
+                            <!--Navigates to Previous-->
 
-                            &lt;Button Style="{StaticResource ButtonStyle}" Name="PART_buttonPrevious" Width="22" Height="22" ToolTip="{x:Static prop:Resources.menuItemPrevious}" IsEnabled="False" Margin="2,3,2,3" &gt;
+                            <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonPrevious" Width="22" Height="22" ToolTip="{x:Static prop:Resources.menuItemPrevious}" IsEnabled="False" Margin="2,3,2,3" >
 
-                                &lt;Image&gt;
+                                <Image>
 
-                                    &lt;Image.Style&gt;
+                                    <Image.Style>
 
-                                        &lt;Style&gt;
+                                        <Style>
 
-                                            &lt;Style.Triggers&gt;
+                                            <Style.Triggers>
 
-                                                &lt;Trigger Property="Button.IsEnabled" Value="False"&gt;
+                                                <Trigger Property="Button.IsEnabled" Value="False">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource Previous_NavDisabled}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource Previous_NavDisabled}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                                &lt;Trigger Property="Button.IsEnabled" Value="True"&gt;
+                                                <Trigger Property="Button.IsEnabled" Value="True">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource Previous_Nav}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource Previous_Nav}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                            &lt;/Style.Triggers&gt;
+                                            </Style.Triggers>
 
-                                        &lt;/Style&gt;
+                                        </Style>
 
-                                    &lt;/Image.Style&gt;
+                                    </Image.Style>
 
-                                &lt;/Image&gt;
+                                </Image>
 
-                                &lt;!--Previous_NavDisabled--&gt;
+                                <!--Previous_NavDisabled-->
 
-                            &lt;/Button&gt;
+                            </Button>
 
 
 
-                            &lt;!--Current Page--&gt;
+                            <!--Current Page-->
 
-                            &lt;TextBox Name="PART_textBoxCurrentPage" Width="60" Height="22" IsReadOnly="False" IsEnabled="False" BorderBrush="Gray" Margin="2,3,2,3" &gt;
+                            <TextBox Name="PART_textBoxCurrentPage" Width="60" Height="22" IsReadOnly="False" IsEnabled="False" BorderBrush="Gray" Margin="2,3,2,3" >
 
-                            &lt;/TextBox&gt;
+                            </TextBox>
 
                             <TextBlock Name="PART_labelOf" Width="Auto" VerticalAlignment="Center" Foreground="Black" Margin="2,3,5,3">of</TextBlock>
 
 
 
-                            &lt;!--Total number of pages--&gt;
+                            <!--Total number of pages-->
 
-                            &lt;TextBlock Name="PART_textBoxTotalPages" Width="Auto" xml:space="preserve" IsEnabled="false" Margin="2,3,5,3" VerticalAlignment="Center" Foreground="Black" TextAlignment="Center" HorizontalAlignment="Center"/&gt;
+                            <TextBlock Name="PART_textBoxTotalPages" Width="Auto" xml:space="preserve" IsEnabled="false" Margin="2,3,5,3" VerticalAlignment="Center" Foreground="Black" TextAlignment="Center" HorizontalAlignment="Center"/>
 
 
 
-                            &lt;!--Navigates to Next--&gt;
+                            <!--Navigates to Next-->
 
-                            &lt;Button Style="{StaticResource ButtonStyle}" Name="PART_buttonNext" Width="22" Height="22" ToolTip="{x:Static prop:Resources.menuItemNext}" IsEnabled="False" Margin="2,3,2,3" &gt;
+                            <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonNext" Width="22" Height="22" ToolTip="{x:Static prop:Resources.menuItemNext}" IsEnabled="False" Margin="2,3,2,3" >
 
-                                &lt;Image Stretch="None"&gt;
+                                <Image Stretch="None">
 
-                                    &lt;Image.Style&gt;
+                                    <Image.Style>
 
-                                        &lt;Style&gt;
+                                        <Style>
 
-                                            &lt;Style.Triggers&gt;
+                                            <Style.Triggers>
 
-                                                &lt;Trigger Property="Button.IsEnabled" Value="False"&gt;
+                                                <Trigger Property="Button.IsEnabled" Value="False">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource Next_NavDisabled}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource Next_NavDisabled}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                                &lt;Trigger Property="Button.IsEnabled" Value="True"&gt;
+                                                <Trigger Property="Button.IsEnabled" Value="True">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource Next_Nav}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource Next_Nav}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                            &lt;/Style.Triggers&gt;
+                                            </Style.Triggers>
 
-                                        &lt;/Style&gt;
+                                        </Style>
 
-                                    &lt;/Image.Style&gt;
+                                    </Image.Style>
 
-                                &lt;/Image&gt;
+                                </Image>
 
-                                &lt;!--Next_NavDisabled--&gt;
+                                <!--Next_NavDisabled-->
 
-                            &lt;/Button&gt;
+                            </Button>
 
 
 
-                            &lt;!--Navigates to Last--&gt;
+                            <!--Navigates to Last-->
 
-                            &lt;Button Style="{StaticResource ButtonStyle}" Name="PART_buttonLast" Width="22" Height="22" ToolTip="{x:Static prop:Resources.menuItemLast}" IsEnabled="False" Margin="2,3,2,3" &gt;
+                            <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonLast" Width="22" Height="22" ToolTip="{x:Static prop:Resources.menuItemLast}" IsEnabled="False" Margin="2,3,2,3" >
 
-                                &lt;Image Stretch="None"&gt;
+                                <Image Stretch="None">
 
-                                    &lt;Image.Style&gt;
+                                    <Image.Style>
 
-                                        &lt;Style&gt;
+                                        <Style>
 
-                                            &lt;Style.Triggers&gt;
+                                            <Style.Triggers>
 
-                                                &lt;Trigger Property="Button.IsEnabled" Value="False"&gt;
+                                                <Trigger Property="Button.IsEnabled" Value="False">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource Last_NavDisabled}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource Last_NavDisabled}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                                &lt;Trigger Property="Button.IsEnabled" Value="True"&gt;
+                                                <Trigger Property="Button.IsEnabled" Value="True">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource Last_Nav}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource Last_Nav}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                            &lt;/Style.Triggers&gt;
+                                            </Style.Triggers>
 
-                                        &lt;/Style&gt;
+                                        </Style>
 
-                                    &lt;/Image.Style&gt;
+                                    </Image.Style>
 
-                                &lt;/Image&gt;
+                                </Image>
 
-                                &lt;!--Last_NavDisabled--&gt;
+                                <!--Last_NavDisabled-->
 
-                            &lt;/Button&gt;
+                            </Button>
 
 
 
-                            &lt;!--Back Parent Report--&gt;
+                            <!--Back Parent Report-->
 
-                            &lt;Button Style="{StaticResource ButtonStyle}" Name="PART_btnback" Width="22" Height="22" ToolTip="{x:Static prop:Resources.toolTipBack}" IsEnabled="True" Margin="2,3,2,3" Visibility="Collapsed"&gt;
+                            <Button Style="{StaticResource ButtonStyle}" Name="PART_btnback" Width="22" Height="22" ToolTip="{x:Static prop:Resources.toolTipBack}" IsEnabled="True" Margin="2,3,2,3" Visibility="Collapsed">
 
-                                &lt;Image Source="{StaticResource ReportBack}" Stretch="None"/&gt;
+                                <Image Source="{StaticResource ReportBack}" Stretch="None"/>
 
-                            &lt;/Button&gt;
+                            </Button>
 
 
 
-                            &lt;Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6"&gt;
+                            <Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6">
 
-                                &lt;Rectangle.Fill&gt;
+                                <Rectangle.Fill>
 
-                                    &lt;LinearGradientBrush EndPoint="0.662,0.5" StartPoint="0.338,0.5"&gt;
+                                    <LinearGradientBrush EndPoint="0.662,0.5" StartPoint="0.338,0.5">
 
-                                        &lt;GradientStop Color="#FFBCBCBC" Offset="0.508"/&gt;
+                                        <GradientStop Color="#FFBCBCBC" Offset="0.508"/>
 
-                                        &lt;GradientStop Color="White" Offset="0.525"/&gt;
+                                        <GradientStop Color="White" Offset="0.525"/>
 
-                                    &lt;/LinearGradientBrush&gt;
+                                    </LinearGradientBrush>
 
-                                &lt;/Rectangle.Fill&gt;
+                                </Rectangle.Fill>
 
-                            &lt;/Rectangle&gt;
+                            </Rectangle>
 
 
 
-                            &lt;!--Zooming--&gt;
+                            <!--Zooming-->
 
-                            &lt;Border Name="PART_comboBoxExternalBorder" BorderBrush="Gray" Width="70" Height="22" ToolTip="{x:Static prop:Resources.toolTipZoom}" BorderThickness="0" Margin="2,3,2,3"&gt;
+                            <Border Name="PART_comboBoxExternalBorder" BorderBrush="Gray" Width="70" Height="22" ToolTip="{x:Static prop:Resources.toolTipZoom}" BorderThickness="0" Margin="2,3,2,3">
 
-                                &lt;ComboBox Name="PART_comboBoxPageZoom" Width="70" Height="22"  SelectedIndex="2" IsEnabled="False"&gt;
+                                <ComboBox Name="PART_comboBoxPageZoom" Width="70" Height="22"  SelectedIndex="2" IsEnabled="False">
 
-                                    &lt;ComboBoxItem Content="25%"/&gt;
+                                    <ComboBoxItem Content="25%"/>
 
-                                    &lt;ComboBoxItem Content="50%"/&gt;
+                                    <ComboBoxItem Content="50%"/>
 
-                                    &lt;ComboBoxItem Content="100%"/&gt;
+                                    <ComboBoxItem Content="100%"/>
 
-                                    &lt;ComboBoxItem Content="200%"/&gt;
+                                    <ComboBoxItem Content="200%"/>
 
-                                    &lt;ComboBoxItem Content="300%"/&gt;
+                                    <ComboBoxItem Content="300%"/>
 
-                                    &lt;ComboBoxItem Content="400%"/&gt;
+                                    <ComboBoxItem Content="400%"/>
 
-                                    &lt;ComboBoxItem Content="500%"/&gt;
+                                    <ComboBoxItem Content="500%"/>
 
-                                &lt;/ComboBox&gt;
+                                </ComboBox>
 
-                            &lt;/Border&gt;
+                            </Border>
 
 
 
-                            &lt;!--Prints Layout--&gt;
+                            <!--Prints Layout-->
 
-                            &lt;ToggleButton Style="{StaticResource ViewerToggleButtonStyle}" Name="PART_buttonPrintLayout" Width="22" Height="22" ToolTip="{x:Static prop:Resources.menuItemPrintLayout}" IsEnabled="False" Margin="2,3,2,3"&gt;
+                            <ToggleButton Style="{StaticResource ViewerToggleButtonStyle}" Name="PART_buttonPrintLayout" Width="22" Height="22" ToolTip="{x:Static prop:Resources.menuItemPrintLayout}" IsEnabled="False" Margin="2,3,2,3">
 
-                                &lt;Image Stretch="None" &gt;
+                                <Image Stretch="None" >
 
-                                    &lt;Image.Style&gt;
+                                    <Image.Style>
 
-                                        &lt;Style&gt;
+                                        <Style>
 
-                                            &lt;Style.Triggers&gt;
+                                            <Style.Triggers>
 
-                                                &lt;Trigger Property="ToggleButton.IsEnabled" Value="False"&gt;
+                                                <Trigger Property="ToggleButton.IsEnabled" Value="False">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource PrintLayoutXDisabled}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource PrintLayoutXDisabled}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                                &lt;Trigger Property="ToggleButton.IsEnabled" Value="True"&gt;
+                                                <Trigger Property="ToggleButton.IsEnabled" Value="True">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource PrintLayoutX}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource PrintLayoutX}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                            &lt;/Style.Triggers&gt;
+                                            </Style.Triggers>
 
-                                        &lt;/Style&gt;
+                                        </Style>
 
-                                    &lt;/Image.Style&gt;
+                                    </Image.Style>
 
-                                &lt;/Image&gt;
+                                </Image>
 
-                                &lt;!--PrintLayoutXDisabled--&gt;
+                                <!--PrintLayoutXDisabled-->
 
-                            &lt;/ToggleButton&gt;
+                            </ToggleButton>
 
 
 
-                            &lt;!--Prints Setup--&gt;
+                            <!--Prints Setup-->
 
-                            &lt;Button Style="{StaticResource ButtonStyle}" Name="PART_buttonPageSetup" Width="22" Height="22" ToolTip="{x:Static prop:Resources.toolTipPageSetUp}" IsEnabled="False" Margin="2,3,2,3" Visibility="Visible" &gt;
+                            <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonPageSetup" Width="22" Height="22" ToolTip="{x:Static prop:Resources.toolTipPageSetUp}" IsEnabled="False" Margin="2,3,2,3" Visibility="Visible" >
 
-                                &lt;Image Source="{StaticResource PageSetup}" Stretch="None"/&gt;
+                                <Image Source="{StaticResource PageSetup}" Stretch="None"/>
 
-                                &lt;!--PrintSetupDisabled--&gt;
+                                <!--PrintSetupDisabled-->
 
-                            &lt;/Button&gt;
+                            </Button>
 
 
 
-                            &lt;Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6"&gt;
+                            <Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6">
 
-                                &lt;Rectangle.Fill&gt;
+                                <Rectangle.Fill>
 
-                                    &lt;LinearGradientBrush EndPoint="0.662,0.5" StartPoint="0.338,0.5"&gt;
+                                    <LinearGradientBrush EndPoint="0.662,0.5" StartPoint="0.338,0.5">
 
-                                        &lt;GradientStop Color="#FFBCBCBC" Offset="0.508"/&gt;
+                                        <GradientStop Color="#FFBCBCBC" Offset="0.508"/>
 
-                                        &lt;GradientStop Color="White" Offset="0.525"/&gt;
+                                        <GradientStop Color="White" Offset="0.525"/>
 
-                                    &lt;/LinearGradientBrush&gt;
+                                    </LinearGradientBrush>
 
-                                &lt;/Rectangle.Fill&gt;
+                                </Rectangle.Fill>
 
-                            &lt;/Rectangle&gt;
+                            </Rectangle>
 
 
 
-                            &lt;!--Refresh --&gt;
+                            <!--Refresh -->
 
-                            &lt;Button Style="{StaticResource ButtonStyle}" Height="22" Width="22" Name="PART_buttonRefresh" ToolTip="{x:Static prop:Resources.menuItemRefresh}" IsEnabled="False" Margin="2,3,2,3"&gt;
+                            <Button Style="{StaticResource ButtonStyle}" Height="22" Width="22" Name="PART_buttonRefresh" ToolTip="{x:Static prop:Resources.menuItemRefresh}" IsEnabled="False" Margin="2,3,2,3">
 
-                                &lt;Image HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Width="16" Stretch="Fill" &gt;
+                                <Image HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Width="16" Stretch="Fill" >
 
-                                    &lt;Image.Style&gt;
+                                    <Image.Style>
 
-                                        &lt;Style&gt;
+                                        <Style>
 
-                                            &lt;Style.Triggers&gt;
+                                            <Style.Triggers>
 
-                                                &lt;Trigger Property="Button.IsEnabled" Value="False"&gt;
+                                                <Trigger Property="Button.IsEnabled" Value="False">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource RefreshDisabled}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource RefreshDisabled}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                                &lt;Trigger Property="Button.IsEnabled" Value="True"&gt;
+                                                <Trigger Property="Button.IsEnabled" Value="True">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource Refresh}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource Refresh}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                            &lt;/Style.Triggers&gt;
+                                            </Style.Triggers>
 
-                                        &lt;/Style&gt;
+                                        </Style>
 
-                                    &lt;/Image.Style&gt;
+                                    </Image.Style>
 
-                                &lt;/Image&gt;
+                                </Image>
 
-                                &lt;!--RefreshDisabled--&gt;
+                                <!--RefreshDisabled-->
 
-                            &lt;/Button&gt;
+                            </Button>
 
 
 
-                            &lt;!--Shows/Hides Document map--&gt;
+                            <!--Shows/Hides Document map-->
 
-                            &lt;Button Style="{StaticResource ButtonStyle}" Name="PART_buttonShowOrHideDocumentMap" Width="22" ToolTip="{x:Static prop:Resources.menuItemShowHide}" IsEnabled="False" Visibility="Collapsed" Margin="2,3,2,3"&gt;
+                            <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonShowOrHideDocumentMap" Width="22" ToolTip="{x:Static prop:Resources.menuItemShowHide}" IsEnabled="False" Visibility="Collapsed" Margin="2,3,2,3">
 
-                                &lt;Image Source="{StaticResource ShowHideDisabled}" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Width="16"/&gt;
+                                <Image Source="{StaticResource ShowHideDisabled}" Stretch="None" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16" Width="16"/>
 
-                                &lt;!--ShowHideDisabled--&gt;
+                                <!--ShowHideDisabled-->
 
-                            &lt;/Button&gt;
+                            </Button>
 
 
 
-                            &lt;!--Parameterised query--&gt;
+                            <!--Parameterised query-->
 
-                            &lt;Button Style="{StaticResource ButtonStyle}" Name="PART_buttonParameters" Width="22" Height="22" ToolTip="{x:Static prop:Resources.toolTipParameters}" IsEnabled="False" Visibility="Collapsed" Margin="2,3,2,3" Background="Transparent" &gt;
+                            <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonParameters" Width="22" Height="22" ToolTip="{x:Static prop:Resources.toolTipParameters}" IsEnabled="False" Visibility="Collapsed" Margin="2,3,2,3" Background="Transparent" >
 
-                                &lt;Image Stretch="None" &gt;
+                                <Image Stretch="None" >
 
-                                    &lt;Image.Style&gt;
+                                    <Image.Style>
 
-                                        &lt;Style&gt;
+                                        <Style>
 
-                                            &lt;Style.Triggers&gt;
+                                            <Style.Triggers>
 
-                                                &lt;Trigger Property="Button.IsEnabled" Value="False"&gt;
+                                                <Trigger Property="Button.IsEnabled" Value="False">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource ParametersDisabled}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource ParametersDisabled}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                                &lt;Trigger Property="Button.IsEnabled" Value="True"&gt;
+                                                <Trigger Property="Button.IsEnabled" Value="True">
 
-                                                    &lt;Setter Property="Image.Source" Value="{StaticResource Parameters}"/&gt;
+                                                    <Setter Property="Image.Source" Value="{StaticResource Parameters}"/>
 
-                                                &lt;/Trigger&gt;
+                                                </Trigger>
 
-                                            &lt;/Style.Triggers&gt;
+                                            </Style.Triggers>
 
-                                        &lt;/Style&gt;
+                                        </Style>
 
-                                    &lt;/Image.Style&gt;
+                                    </Image.Style>
 
-                                &lt;/Image&gt;
+                                </Image>
 
-                                &lt;!--ParametersDisabled--&gt;
+                                <!--ParametersDisabled-->
 
-                            &lt;/Button&gt;
+                            </Button>
 
 
 
-                            &lt;Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6"&gt;
+                            <Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6">
 
-                                &lt;Rectangle.Fill&gt;
+                                <Rectangle.Fill>
 
-                                    &lt;LinearGradientBrush EndPoint="0.662,0.5" StartPoint="0.338,0.5"&gt;
+                                    <LinearGradientBrush EndPoint="0.662,0.5" StartPoint="0.338,0.5">
 
-                                        &lt;GradientStop Color="#FFBCBCBC" Offset="0.508"/&gt;
+                                        <GradientStop Color="#FFBCBCBC" Offset="0.508"/>
 
-                                        &lt;GradientStop Color="White" Offset="0.525"/&gt;
+                                        <GradientStop Color="White" Offset="0.525"/>
 
-                                    &lt;/LinearGradientBrush&gt;
+                                    </LinearGradientBrush>
 
-                                &lt;/Rectangle.Fill&gt;
+                                </Rectangle.Fill>
 
-                            &lt;/Rectangle&gt;
+                            </Rectangle>
 
 
 
-                            &lt;TextBox Name="PART_textBoxFind" Width="60" Height="22" xml:space="preserve" IsEnabled="False" BorderBrush="Gray" ToolTip="{x:Static prop:Resources.toolTipFindTextBox}" Margin="2,3,2,3" Visibility="Collapsed"/&gt;
+                            <TextBox Name="PART_textBoxFind" Width="60" Height="22" xml:space="preserve" IsEnabled="False" BorderBrush="Gray" ToolTip="{x:Static prop:Resources.toolTipFindTextBox}" Margin="2,3,2,3" Visibility="Collapsed"/>
 
 
 
-            &lt;!--Find--&gt;
+            <!--Find-->
 
-            &lt;Button Style="{StaticResource ButtonStyle}" Name="PART_buttonFind" Width="22" Height="22" ToolTip="{x:Static prop:Resources.toolTipFind}" IsEnabled="False" Visibility="Collapsed" Margin="2,3,2,3"&gt;
+            <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonFind" Width="22" Height="22" ToolTip="{x:Static prop:Resources.toolTipFind}" IsEnabled="False" Visibility="Collapsed" Margin="2,3,2,3">
 
-                &lt;Image Stretch="None"&gt;
+                <Image Stretch="None">
 
-                    &lt;Image.Style&gt;
+                    <Image.Style>
 
-                        &lt;Style&gt;
+                        <Style>
 
-                            &lt;Style.Triggers&gt;
+                            <Style.Triggers>
 
-                              &lt;Trigger Property="Button.IsEnabled" Value="False"&gt;
+                              <Trigger Property="Button.IsEnabled" Value="False">
 
-                                   &lt;Setter Property="Image.Source" Value="{StaticResource FindDisabled}"/&gt;
+                                   <Setter Property="Image.Source" Value="{StaticResource FindDisabled}"/>
 
-                              &lt;/Trigger&gt;
+                              </Trigger>
 
-                              &lt;Trigger Property="Button.IsEnabled" Value="True"&gt;
+                              <Trigger Property="Button.IsEnabled" Value="True">
 
-                                   &lt;Setter Property="Image.Source" Value="{StaticResource Find}"/&gt;
+                                   <Setter Property="Image.Source" Value="{StaticResource Find}"/>
 
-                              &lt;/Trigger&gt;
+                              </Trigger>
 
-                            &lt;/Style.Triggers&gt;
+                            </Style.Triggers>
 
-                        &lt;/Style&gt;
+                        </Style>
 
-                    &lt;/Image.Style&gt;
+                    </Image.Style>
 
-                 &lt;/Image&gt;
+                 </Image>
 
-                &lt;!--FindDisabled--&gt;
+                <!--FindDisabled-->
 
-            &lt;/Button&gt;
+            </Button>
 
-        &lt;/StackPanel&gt;
+        </StackPanel>
 
 
 
-                        &lt;!-- DataSoruce Credential Prompt --&gt;
+                        <!-- DataSoruce Credential Prompt -->
 
-                        &lt;Grid Grid.Row="1" FlowDirection="LeftToRight"&gt;
+                        <Grid Grid.Row="1" FlowDirection="LeftToRight">
 
-                            &lt;Grid.RowDefinitions&gt;
+                            <Grid.RowDefinitions>
 
-                                &lt;RowDefinition Height="Auto" x:Name="PART_rowDefinitionFordsCredentialBlock"/&gt;
+                                <RowDefinition Height="Auto" x:Name="PART_rowDefinitionFordsCredentialBlock"/>
 
-                            &lt;/Grid.RowDefinitions&gt;
+                            </Grid.RowDefinitions>
 
-                            &lt;ScrollViewer Name="PART_scorllDSCredentialBlock" HorizontalAlignment="Stretch" VerticalScrollBarVisibility="Auto"  HorizontalScrollBarVisibility="Disabled" Visibility="Collapsed"&gt;
+                            <ScrollViewer Name="PART_scorllDSCredentialBlock" HorizontalAlignment="Stretch" VerticalScrollBarVisibility="Auto"  HorizontalScrollBarVisibility="Disabled" Visibility="Collapsed">
 
-                                &lt;StackPanel Name="PART_stackPaneldsCredential" Grid.Row="0" Background="LightBlue" Width="Auto" Height="Auto"&gt;
+                                <StackPanel Name="PART_stackPaneldsCredential" Grid.Row="0" Background="LightBlue" Width="Auto" Height="Auto">
 
-                                    &lt;Grid&gt;
+                                    <Grid>
 
-                                        &lt;Grid.ColumnDefinitions&gt;
+                                        <Grid.ColumnDefinitions>
 
-                                            &lt;ColumnDefinition Width="300*"/&gt;
+                                            <ColumnDefinition Width="300*"/>
 
-                                            &lt;ColumnDefinition Width="100*"/&gt;
+                                            <ColumnDefinition Width="100*"/>
 
-                                        &lt;/Grid.ColumnDefinitions&gt;
+                                        </Grid.ColumnDefinitions>
 
-                                        &lt;Grid Background="#efefef" x:Name="PART_grid_DsCredentialblock" Grid.Column="0" Width="Auto"&gt;
+                                        <Grid Background="#efefef" x:Name="PART_grid_DsCredentialblock" Grid.Column="0" Width="Auto">
 
-                                            &lt;StackPanel Width="Auto" Name="PART_sPanel_Head"&gt;
+                                            <StackPanel Width="Auto" Name="PART_sPanel_Head">
 
-                                            &lt;/StackPanel&gt;
+                                            </StackPanel>
 
-                                        &lt;/Grid&gt;
+                                        </Grid>
 
-                                        &lt;StackPanel Grid.Column="1" Background="#efefef"&gt;
+                                        <StackPanel Grid.Column="1" Background="#efefef">
 
-                                            &lt;Button Content="{x:Static prop:Resources.btnViewReport}" HorizontalAlignment="Right" x:Name="PART_btnViewReport1" Width="Auto" Margin="0,5,20,5"/&gt;
+                                            <Button Content="{x:Static prop:Resources.btnViewReport}" HorizontalAlignment="Right" x:Name="PART_btnViewReport1" Width="Auto" Margin="0,5,20,5"/>
 
-                                        &lt;/StackPanel&gt;
+                                        </StackPanel>
 
-                                    &lt;/Grid&gt;
+                                    </Grid>
 
-                                &lt;/StackPanel&gt;
+                                </StackPanel>
 
-                            &lt;/ScrollViewer&gt;
+                            </ScrollViewer>
 
-                        &lt;/Grid&gt;
+                        </Grid>
 
 
 
 
 
-                        &lt;Grid Grid.Row="2" FlowDirection="LeftToRight"&gt;
+                        <Grid Grid.Row="2" FlowDirection="LeftToRight">
 
-                            &lt;!--Parameter prompt panel--&gt;
+                            <!--Parameter prompt panel-->
 
-                            &lt;Grid.RowDefinitions&gt;
+                            <Grid.RowDefinitions>
 
-                                &lt;RowDefinition Height="Auto" x:Name="PART_rowDefinitionForParameterBlock"/&gt;
+                                <RowDefinition Height="Auto" x:Name="PART_rowDefinitionForParameterBlock"/>
 
-                            &lt;/Grid.RowDefinitions&gt;
+                            </Grid.RowDefinitions>
 
-                            &lt;ScrollViewer x:Name="PART_scrollViewerParamBlock" HorizontalAlignment="Stretch" VerticalScrollBarVisibility="Auto"  HorizontalScrollBarVisibility="Disabled" Visibility="Collapsed"&gt;
+                            <ScrollViewer x:Name="PART_scrollViewerParamBlock" HorizontalAlignment="Stretch" VerticalScrollBarVisibility="Auto"  HorizontalScrollBarVisibility="Disabled" Visibility="Collapsed">
 
-                                &lt;StackPanel Name="PART_stackPanelParameters" Grid.Row="0" Background="LightBlue" Width="Auto" Height="Auto"&gt;
+                                <StackPanel Name="PART_stackPanelParameters" Grid.Row="0" Background="LightBlue" Width="Auto" Height="Auto">
 
-                                    &lt;Grid&gt;
+                                    <Grid>
 
-                                        &lt;Grid.ColumnDefinitions&gt;
+                                        <Grid.ColumnDefinitions>
 
-                                            &lt;ColumnDefinition Width="Auto"/&gt;
+                                            <ColumnDefinition Width="Auto"/>
 
-                                            &lt;ColumnDefinition Width="100*"/&gt;
+                                            <ColumnDefinition Width="100*"/>
 
-                                        &lt;/Grid.ColumnDefinitions&gt;
+                                        </Grid.ColumnDefinitions>
 
 
 
-                                        &lt;Grid Background="#efefef" x:Name="PART_grid_ReportParameterBlock" Grid.Column="0" &gt;
+                                        <Grid Background="#efefef" x:Name="PART_grid_ReportParameterBlock" Grid.Column="0" >
 
-                                            &lt;Grid.ColumnDefinitions&gt;
+                                            <Grid.ColumnDefinitions>
 
-                                                &lt;ColumnDefinition Width="Auto"/&gt;
+                                                <ColumnDefinition Width="Auto"/>
 
-                                                &lt;ColumnDefinition Width="Auto"/&gt;
+                                                <ColumnDefinition Width="Auto"/>
 
-                                                &lt;ColumnDefinition Width="Auto"/&gt;
+                                                <ColumnDefinition Width="Auto"/>
 
-                                                &lt;ColumnDefinition Width="Auto"/&gt;
+                                                <ColumnDefinition Width="Auto"/>
 
-                                            &lt;/Grid.ColumnDefinitions&gt;
+                                            </Grid.ColumnDefinitions>
 
-                                            &lt;Grid.RowDefinitions&gt;
+                                            <Grid.RowDefinitions>
 
-                                            &lt;/Grid.RowDefinitions&gt;
+                                            </Grid.RowDefinitions>
 
-                                        &lt;/Grid&gt;
+                                        </Grid>
 
 
 
-                                        &lt;StackPanel Grid.Column="1" Background="#efefef"&gt;
+                                        <StackPanel Grid.Column="1" Background="#efefef">
 
-                                            &lt;Button Content="{x:Static prop:Resources.btnViewReport}" HorizontalAlignment="Right" x:Name="PART_btnViewReport" Width="Auto" Margin="0,5,20,5"/&gt;
+                                            <Button Content="{x:Static prop:Resources.btnViewReport}" HorizontalAlignment="Right" x:Name="PART_btnViewReport" Width="Auto" Margin="0,5,20,5"/>
 
-                                        &lt;/StackPanel&gt;
+                                        </StackPanel>
 
-                                    &lt;/Grid&gt;
+                                    </Grid>
 
-                                &lt;/StackPanel&gt;
+                                </StackPanel>
 
-                            &lt;/ScrollViewer&gt;
+                            </ScrollViewer>
 
-                        &lt;/Grid&gt;
+                        </Grid>
 
 
 
-                        &lt;Grid Name="PART_gridRenderingRegion" Grid.Row="3" Height="Auto" Margin="0,0,0,0" FlowDirection="LeftToRight"&gt;
+                        <Grid Name="PART_gridRenderingRegion" Grid.Row="3" Height="Auto" Margin="0,0,0,0" FlowDirection="LeftToRight">
 
-                            &lt;Grid&gt;
+                            <Grid>
 
-                                &lt;Grid.RowDefinitions&gt;
+                                <Grid.RowDefinitions>
 
-                                    &lt;RowDefinition Height="Auto"&gt;&lt;/RowDefinition&gt;
+                                    <RowDefinition Height="Auto"></RowDefinition>
 
-                                    &lt;RowDefinition Height="*"&gt;&lt;/RowDefinition&gt;
+                                    <RowDefinition Height="*"></RowDefinition>
 
-                                &lt;/Grid.RowDefinitions&gt;
+                                </Grid.RowDefinitions>
 
-                                &lt;Grid Name="PART_ExceptionGrid" Grid.Row="0" Visibility="Collapsed" Background="LightBlue"&gt;
+                                <Grid Name="PART_ExceptionGrid" Grid.Row="0" Visibility="Collapsed" Background="LightBlue">
 
-                                    &lt;Grid.ColumnDefinitions&gt;
+                                    <Grid.ColumnDefinitions>
 
-                                        &lt;ColumnDefinition Width="24"&gt;&lt;/ColumnDefinition&gt;
+                                        <ColumnDefinition Width="24"></ColumnDefinition>
 
-                                        &lt;ColumnDefinition Width="749"&gt;&lt;/ColumnDefinition&gt;
+                                        <ColumnDefinition Width="749"></ColumnDefinition>
 
-                                        &lt;ColumnDefinition Width="0" /&gt;
+                                        <ColumnDefinition Width="0" />
 
-                                    &lt;/Grid.ColumnDefinitions&gt;
+                                    </Grid.ColumnDefinitions>
 
-                                    &lt;Image Source="{StaticResource error}" Height="24" Width="24" Margin="5,5,5,5" Grid.ColumnSpan="2" HorizontalAlignment="Left"&gt;&lt;/Image&gt;
+                                    <Image Source="{StaticResource error}" Height="24" Width="24" Margin="5,5,5,5" Grid.ColumnSpan="2" HorizontalAlignment="Left"></Image>
 
-                                    &lt;TextBlock Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="23" Margin="10,7,10,0" Width="730"&gt;
+                                    <TextBlock Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="23" Margin="10,7,10,0" Width="730">
 
-                        Report Viewer encountered some issues loading this report. Please click <Hyperlink x:Name="PART_hyperlink">here &lt;/Hyperlink&gt;  to see details of the issues.
+                        Report Viewer encountered some issues loading this report. Please click <Hyperlink x:Name="PART_hyperlink">here </Hyperlink>  to see details of the issues.
 
-                                    &lt;/TextBlock&gt;
+                                    </TextBlock>
 
-                                &lt;/Grid&gt;
+                                </Grid>
 
-                                &lt;Grid Grid.Row="1" x:Name="PART_renderArea"&gt;
+                                <Grid Grid.Row="1" x:Name="PART_renderArea">
 
-                                    &lt;Grid.ColumnDefinitions&gt;
+                                    <Grid.ColumnDefinitions>
 
-                                        &lt;ColumnDefinition Width="Auto"&gt;&lt;/ColumnDefinition&gt;
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
 
-                                        &lt;ColumnDefinition Width="Auto"&gt;&lt;/ColumnDefinition&gt;
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
 
-                                        &lt;ColumnDefinition Width="*"&gt;&lt;/ColumnDefinition&gt;
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
 
-                                    &lt;/Grid.ColumnDefinitions&gt;
+                                    </Grid.ColumnDefinitions>
 
-                                    &lt;Grid Grid.Column="0" Height="Auto" Width="Auto" x:Name="PART_treeItemArea" Visibility="Collapsed"&gt;
+                                    <Grid Grid.Column="0" Height="Auto" Width="Auto" x:Name="PART_treeItemArea" Visibility="Collapsed">
 
-                                        &lt;TreeView Name="PART_DocumentMap" Height="Auto" Width="Auto" BorderThickness="0"/&gt;
+                                        <TreeView Name="PART_DocumentMap" Height="Auto" Width="Auto" BorderThickness="0"/>
 
-                                    &lt;/Grid&gt;
+                                    </Grid>
 
-                                    &lt;GridSplitter x:Name="PART_viewerSpliter" Visibility="Collapsed" Grid.Column="1" ShowsPreview="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ResizeBehavior="PreviousAndNext" Width="5" Background="#FFD4DBEB"/&gt;
+                                    <GridSplitter x:Name="PART_viewerSpliter" Visibility="Collapsed" Grid.Column="1" ShowsPreview="True" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ResizeBehavior="PreviousAndNext" Width="5" Background="#FFD4DBEB"/>
 
-                                    &lt;!--Viewer Page--&gt;
+                                    <!--Viewer Page-->
 
-                                    &lt;ScrollViewer x:Name="PART_scrollViewer" Grid.Column="2" Height="Auto" Width="Auto" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"&gt;
+                                    <ScrollViewer x:Name="PART_scrollViewer" Grid.Column="2" Height="Auto" Width="Auto" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
 
-                                        &lt;ScrollViewer.Resources&gt;
+                                        <ScrollViewer.Resources>
 
-                                            &lt;DataTemplate x:Key="ReportViewerCellTeamplate"&gt;
+                                            <DataTemplate x:Key="ReportViewerCellTeamplate">
 
-                                                &lt;ContentControl Content="{Binding Path=CellBoundValue}"&gt;&lt;/ContentControl&gt;
+                                                <ContentControl Content="{Binding Path=CellBoundValue}"></ContentControl>
 
-                                            &lt;/DataTemplate&gt;
+                                            </DataTemplate>
 
-                                        &lt;/ScrollViewer.Resources&gt;
+                                        </ScrollViewer.Resources>
 
-                                        &lt;StackPanel Orientation="Vertical" Name="PART_PageView" Height="Auto" Width="Auto" Background="White"&gt;
+                                        <StackPanel Orientation="Vertical" Name="PART_PageView" Height="Auto" Width="Auto" Background="White">
 
-                                            &lt;StackPanel.LayoutTransform&gt;
+                                            <StackPanel.LayoutTransform>
 
-                                                &lt;ScaleTransform x:Name="PART_Zoom"&gt;&lt;/ScaleTransform&gt;
+                                                <ScaleTransform x:Name="PART_Zoom"></ScaleTransform>
 
-                                            &lt;/StackPanel.LayoutTransform&gt;
+                                            </StackPanel.LayoutTransform>
 
-                                            &lt;Border x:Name="PART_PageViewBody" Background="Transparent" Height="Auto" Width="Auto"&gt;
+                                            <Border x:Name="PART_PageViewBody" Background="Transparent" Height="Auto" Width="Auto">
 
-                                                &lt;StackPanel x:Name="PART_PageViewContainer" Background="Transparent" Height="Auto" Width="Auto"&gt;
+                                                <StackPanel x:Name="PART_PageViewContainer" Background="Transparent" Height="Auto" Width="Auto">
 
-                                                    &lt;Border Name="PART_PageHeaderBorder" Height="Auto" Width="Auto" Background="Transparent"&gt;
+                                                    <Border Name="PART_PageHeaderBorder" Height="Auto" Width="Auto" Background="Transparent">
 
-                                                        &lt;Canvas x:Name="PART_CanvasHeader" Visibility="Collapsed" Background="Transparent"/&gt;
+                                                        <Canvas x:Name="PART_CanvasHeader" Visibility="Collapsed" Background="Transparent"/>
 
-                                                    &lt;/Border&gt;
+                                                    </Border>
 
-                                                    &lt;Border Name="PART_PageBodyBorder" Height="Auto" Width="Auto" Background="Transparent"&gt;
+                                                    <Border Name="PART_PageBodyBorder" Height="Auto" Width="Auto" Background="Transparent">
 
-                                                        &lt;Canvas x:Name="PART_canvasContentPage" Grid.Row="2" Background="Transparent" Width="Auto" Height="Auto"/&gt;
+                                                        <Canvas x:Name="PART_canvasContentPage" Grid.Row="2" Background="Transparent" Width="Auto" Height="Auto"/>
 
-                                                    &lt;/Border&gt;
+                                                    </Border>
 
-                                                    &lt;Border Name="PART_PageFooterBorder" Height="Auto" Width="Auto" Background="Transparent"&gt;
+                                                    <Border Name="PART_PageFooterBorder" Height="Auto" Width="Auto" Background="Transparent">
 
-                                                        &lt;Canvas x:Name="PART_CanvasFooter" Visibility="Collapsed" Background="Transparent"/&gt;
+                                                        <Canvas x:Name="PART_CanvasFooter" Visibility="Collapsed" Background="Transparent"/>
 
-                                                    &lt;/Border&gt;
+                                                    </Border>
 
-                                                &lt;/StackPanel&gt;
+                                                </StackPanel>
 
-                                            &lt;/Border&gt;
+                                            </Border>
 
-                                        &lt;/StackPanel&gt;
+                                        </StackPanel>
 
-                                    &lt;/ScrollViewer&gt;
+                                    </ScrollViewer>
 
-                                &lt;/Grid&gt;
+                                </Grid>
 
-                            &lt;/Grid&gt;
+                            </Grid>
 
 
 
-                        &lt;/Grid&gt;
+                        </Grid>
 
 
 
-                        &lt;Grid x:Name="PART_gridException" Grid.Row="4" Background="White" Visibility="Collapsed" FlowDirection="LeftToRight"&gt;
+                        <Grid x:Name="PART_gridException" Grid.Row="4" Background="White" Visibility="Collapsed" FlowDirection="LeftToRight">
 
-                            &lt;StackPanel  Orientation="Vertical" HorizontalAlignment="Center"&gt;
+                            <StackPanel  Orientation="Vertical" HorizontalAlignment="Center">
 
-                                &lt;StackPanel Orientation="Horizontal" HorizontalAlignment="Center" &gt;
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
 
-                                    &lt;Image Name="PART_imageException" Source="{StaticResource Exception}" Width="48" HorizontalAlignment="Center"/&gt;
+                                    <Image Name="PART_imageException" Source="{StaticResource Exception}" Width="48" HorizontalAlignment="Center"/>
 
-                                    &lt;TextBlock Name="PART_textBlockException"&gt;&lt;/TextBlock&gt;
+                                    <TextBlock Name="PART_textBlockException"></TextBlock>
 
-                                &lt;/StackPanel&gt;
+                                </StackPanel>
 
-                                &lt;ScrollViewer Name="PART_groupBoxExpandedExceptionScroll" Grid.Row="3" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Height="400"&gt;
+                                <ScrollViewer Name="PART_groupBoxExpandedExceptionScroll" Grid.Row="3" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Height="400">
 
-                                    &lt;GroupBox Name="PART_groupBoxExpandedException" Width="420" Margin="5,0,5,0" FlowDirection="RightToLeft" BorderThickness="0"&gt;
+                                    <GroupBox Name="PART_groupBoxExpandedException" Width="420" Margin="5,0,5,0" FlowDirection="RightToLeft" BorderThickness="0">
 
-                                        &lt;GroupBox.Header&gt;
+                                        <GroupBox.Header>
 
                                             <ToggleButton Name="PART_toggleShowDetails" HorizontalAlignment="Right" Margin="0,0,0,0" VerticalAlignment="Bottom">Show Details</ToggleButton>
 
-                                        &lt;/GroupBox.Header&gt;
+                                        </GroupBox.Header>
 
-                                        &lt;WrapPanel Name="PART_ShowError" Visibility="Collapsed" Width="auto"&gt;
+                                        <WrapPanel Name="PART_ShowError" Visibility="Collapsed" Width="auto">
 
-                                            &lt;TextBox Name="PART_textBlockStackTrace" TextWrapping="Wrap" FlowDirection="LeftToRight" Width="390" IsReadOnly="True" &gt;&lt;/TextBox&gt;
+                                            <TextBox Name="PART_textBlockStackTrace" TextWrapping="Wrap" FlowDirection="LeftToRight" Width="390" IsReadOnly="True" ></TextBox>
 
-                                            &lt;TextBox Name="PART_textBlockStackTraceMessage" TextWrapping="Wrap" FlowDirection="LeftToRight" Width="390" IsReadOnly="True" &gt;&lt;/TextBox&gt;
+                                            <TextBox Name="PART_textBlockStackTraceMessage" TextWrapping="Wrap" FlowDirection="LeftToRight" Width="390" IsReadOnly="True" ></TextBox>
 
-                                        &lt;/WrapPanel&gt;
+                                        </WrapPanel>
 
-                                    &lt;/GroupBox&gt;
+                                    </GroupBox>
 
-                                &lt;/ScrollViewer&gt;
+                                </ScrollViewer>
 
-                            &lt;/StackPanel&gt;
+                            </StackPanel>
 
-                        &lt;/Grid&gt;
+                        </Grid>
 
 
 
-                        &lt;Grid x:Name="PART_gridLoadingIndicator" Grid.Row="5" Background="White" Visibility="Collapsed" FlowDirection="LeftToRight"&gt;
+                        <Grid x:Name="PART_gridLoadingIndicator" Grid.Row="5" Background="White" Visibility="Collapsed" FlowDirection="LeftToRight">
 
-                            &lt;loading:LoadingIndicator&gt;&lt;/loading:LoadingIndicator&gt;
+                            <loading:LoadingIndicator></loading:LoadingIndicator>
 
-                        &lt;/Grid&gt;
+                        </Grid>
 
-                    &lt;/Grid&gt;
+                    </Grid>
 
-                    &lt;ControlTemplate.Triggers&gt;
+                    <ControlTemplate.Triggers>
 
-                        &lt;Trigger Property="local:ReportViewer.ViewMode" Value="Normal"&gt;
+                        <Trigger Property="local:ReportViewer.ViewMode" Value="Normal">
 
-                            &lt;Setter TargetName="PART_gridRenderingRegion" Property="Background" Value="White"/&gt;
+                            <Setter TargetName="PART_gridRenderingRegion" Property="Background" Value="White"/>
 
-                        &lt;/Trigger&gt;
+                        </Trigger>
 
-                        &lt;Trigger Property="local:ReportViewer.ViewMode" Value="Print"&gt;
+                        <Trigger Property="local:ReportViewer.ViewMode" Value="Print">
 
-                            &lt;Setter TargetName="PART_gridRenderingRegion" Property="Background" Value="LightGray"/&gt;
+                            <Setter TargetName="PART_gridRenderingRegion" Property="Background" Value="LightGray"/>
 
-                        &lt;/Trigger&gt;
+                        </Trigger>
 
-                    &lt;/ControlTemplate.Triggers&gt;
+                    </ControlTemplate.Triggers>
 
-                &lt;/ControlTemplate&gt;
+                </ControlTemplate>
 
-            &lt;/Setter.Value&gt;
+            </Setter.Value>
 
-        &lt;/Setter&gt;
+        </Setter>
 
-&lt;/Style&gt;
+</Style>
 
 
 

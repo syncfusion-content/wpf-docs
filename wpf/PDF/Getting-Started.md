@@ -17,7 +17,7 @@ Creating a Console Application
 
 1. Open Microsoft Visual Studio. Open File menu and click New Project. In the New Project dialog, select Console Application template, name the project and click OK.
 
-{ ![C:/Users/SURESH/Desktop/CreateProject.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![C:/Users/SURESH/Desktop/CreateProject.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -28,7 +28,7 @@ Creating a Console Application
 2. Syncfusion.Compression.Base.dll
 3. Syncfusion.Pdf.Base.dll
 
-{ ![C:/Users/SURESH/Desktop/AddingReference.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![C:/Users/SURESH/Desktop/AddingReference.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -250,7 +250,7 @@ Merges documents in asynchronous mode.</th></tr>
 
 The following illustration displays the Class Diagram for Essential PDF.
 
-{ ![C:/Users/Suresh/Desktop/DesktopItems/UGRevamp/ClassDiagram.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![C:/Users/Suresh/Desktop/DesktopItems/UGRevamp/ClassDiagram.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -912,7 +912,7 @@ _**Supported only in PdfGrid class_
 
 This article explains you the various steps required to create a basic invoice document using fundamental elements such as text, table, images, and footer. The following screenshot illustrates you a simple invoice created using Essential PDF library.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -973,7 +973,7 @@ Dim page As PdfPage = document.Pages.Add()
 
 The above code creates a landscape PDF and sets the four margins of the pages as 50 points. The following image illustrates you how the document looks after adding the page settings.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -1025,7 +1025,7 @@ page.Graphics.DrawImage(img, New RectangleF(g.ClientSize.Width - img.Width, 0, i
 
 In the above code, the X- coordinate of the image is chosen from the right corner of the page by calculating the difference of the page width and the image width. The following screenshot illustrates how the document appears after adding the logo.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -1085,7 +1085,7 @@ Dim result As PdfLayoutResult = element.Draw(page, New RectangleF(0, 0, page.Gra
 
 Specify the essential properties of the text such as font, brush, etc., and draw the text to the left most corner (0,0 – coordinate) of the page. Note that the PdfTextElement returns the layout result of the text element that helps you to add the next element without overlapping. The following screenshot displays the document after adding the sender’s address.
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -1201,7 +1201,7 @@ g.DrawString(currentDate, subHeadingFont, element.Brush, New PointF(g.ClientSize
 
 The invoice document appears like the following screenshot with the added invoice number and date.
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -1315,7 +1315,7 @@ result = element.Draw(page, New RectangleF(10, result.Bounds.Bottom + 3, g.Clien
 
 The following screenshot displays a PDF document with content.
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -1679,7 +1679,7 @@ Dim gridResult As PdfGridLayoutResult = grid.Draw(page, New RectangleF(New Point
 
 The invoice document appears like the following image after drawing the table to the page.
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -1759,7 +1759,7 @@ gridResult.Page.Graphics.DrawString(totalDue.ToString("C"), font, New PdfSolidBr
 
 Now the document appears as the following screenshot.
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -1865,7 +1865,7 @@ document.Save("Invoice.pdf")
 
 The following screenshot illustrates the completed document that is ready to be distributed.
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
 {:.image }
 
 

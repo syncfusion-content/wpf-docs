@@ -13,7 +13,7 @@ Auto Append is used to guide the complete text by appending the entered text wit
 
 
 
-{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/AutoAppend.png](Auto-Append-Support_images/Auto-Append-Support_img1.png) | markdownify }
+{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/AutoAppend.png](Auto-Append-Support_images/Auto-Append-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -26,7 +26,7 @@ If the IsAutoAppend property is set as True, once you enter the text the AutoCom
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:AutoComplete x:Name="AutoComplete1" IsAutoAppend="true"/&gt;</td></tr>
+[XAML]<syncfusion:AutoComplete x:Name="AutoComplete1" IsAutoAppend="true"/></td></tr>
 <tr>
 <td>
 [C#]AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsAutoAppend = true;</td></tr>

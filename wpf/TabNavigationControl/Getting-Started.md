@@ -13,7 +13,7 @@ documentation: ug
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -25,7 +25,7 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 1. Open a VS2010 project. The Syncfusion controls are listed in the toolbox.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -35,7 +35,7 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -45,7 +45,7 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -55,7 +55,7 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -66,7 +66,7 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -173,12 +173,12 @@ Occurs whenever the selected item is changed</td></tr>
 
 To view samples:
 
-1. Click Start-->All Programs-->Syncfusion-->Essential Studio &lt;version number&gt; -->Dashboard.
+1. Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard.
 2. The Essential Studio Enterprise Edition window is displayed. 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -196,7 +196,7 @@ The User Interface edition panel is displayed by default.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -204,7 +204,7 @@ The User Interface edition panel is displayed by default.
 
 2. Click Run Locally Installed Samples. The WPF Sample Browser displays.
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 

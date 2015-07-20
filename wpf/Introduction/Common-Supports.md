@@ -15,19 +15,19 @@ Most of the Syncfusion controls are enhanced with blend support. The following s
 
 1. Create a WPF project in Expression Blend and refer to the Syncfusion corresponding control’s assemblies. For example, to add Docking Manager control, add its assembly Syncfusion.Tools.Wpf and its dependency assembly Syncfusion.Shared.Wpf
 
-{ ![C:/Users/labuser/Desktop/blend_images/docking-1_edited.png](Common-Supports_images/Common-Supports_img1.png) | markdownify }
+{{ '![C:/Users/labuser/Desktop/blend_images/docking-1_edited.png](Common-Supports_images/Common-Supports_img1.png)' | markdownify }}
 {:.image }
 
 
 2. Search for Control in the Toolbox.
 
-{ ![C:/Users/labuser/Desktop/blend_images/docking_2_Edited.png](Common-Supports_images/Common-Supports_img2.png) | markdownify }
+{{ '![C:/Users/labuser/Desktop/blend_images/docking_2_Edited.png](Common-Supports_images/Common-Supports_img2.png)' | markdownify }}
 {:.image }
 
 
 3. Drag the control to the designer. It generates the control in designer.
 
-{ ![C:/Users/labuser/Desktop/blend_images/Docking-3.png](Common-Supports_images/Common-Supports_img3.png) | markdownify }
+{{ '![C:/Users/labuser/Desktop/blend_images/Docking-3.png](Common-Supports_images/Common-Supports_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -75,7 +75,7 @@ To localize WPF controls, the resource file needs to be created as per following
 
 
 
-{ ![](Common-Supports_images/Common-Supports_img4.png) | markdownify }
+{{ '![](Common-Supports_images/Common-Supports_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -87,7 +87,7 @@ To localize WPF controls, the resource file needs to be created as per following
 
 The following screenshot explains the addition of a Resource file to the application.
 
-{ ![](Common-Supports_images/Common-Supports_img5.png) | markdownify }
+{{ '![](Common-Supports_images/Common-Supports_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -100,13 +100,13 @@ To assign Values in Resource, the resource file need to be updated as per the fo
 
 
 
-{ ![](Common-Supports_images/Common-Supports_img6.png) | markdownify }
+{{ '![](Common-Supports_images/Common-Supports_img6.png)' | markdownify }}
 {:.image }
 
 
 3. Similarly add all need key (Name) for required assembly for example (Syncfusion.Tools.Wpf.dll). And the following screenshot displays the String property names for Tools.WPF controls with French values.
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image252_12.jpg](Common-Supports_images/Common-Supports_img7.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image252_12.jpg](Common-Supports_images/Common-Supports_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -148,67 +148,67 @@ Resource file (.resx)</th></tr>
 <tr>
 <td>
 Syncfusion.Tools.wpf.dll</td><td>
-{ [Syncfusion.Tools.Wpf.resx](https://syncfusion.atlassian.net/secure/attachment/197843/Syncfusion.Tools.Wpf.resx) | markdownify }</td></tr>
+{{ '[Syncfusion.Tools.Wpf.resx](https://syncfusion.atlassian.net/secure/attachment/197843/Syncfusion.Tools.Wpf.resx)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.Shared.wpf.dll</td><td>
-{ [Syncfusion.Shared.Wpf.resx](https://syncfusion.atlassian.net/secure/attachment/197842/Syncfusion.Shared.Wpf.resx) | markdownify }</td></tr>
+{{ '[Syncfusion.Shared.Wpf.resx](https://syncfusion.atlassian.net/secure/attachment/197842/Syncfusion.Shared.Wpf.resx)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.ReportViewer.wpf.dll.</td><td>
-{ [Syncfusion.ReportViewer.Wpf.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.ReportViewer.Wpf.resx?version=1&modificationDate=1429777829642&api=v2) | markdownify }</td></tr>
+{{ '[Syncfusion.ReportViewer.Wpf.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.ReportViewer.Wpf.resx?version=1&modificationDate=1429777829642&api=v2)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.ReportDesigner.wpf.dll</td><td>
-{ [Syncfusion.ReportDesigner.Wpf.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.ReportDesigner.Wpf.resx?version=1&modificationDate=1429778208537&api=v2) | markdownify }</td></tr>
+{{ '[Syncfusion.ReportDesigner.Wpf.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.ReportDesigner.Wpf.resx?version=1&modificationDate=1429778208537&api=v2)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.SfSchedule.WPF.dll</td><td>
-{ [Syncfusion.Schedule.WPF.resx](https://syncfusion.atlassian.net/secure/attachment/198894/Syncfusion.Schedule.WPF.resx) | markdownify }</td></tr>
+{{ '[Syncfusion.Schedule.WPF.resx](https://syncfusion.atlassian.net/secure/attachment/198894/Syncfusion.Schedule.WPF.resx)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.Diagram.wpf.dll</td><td>
-{ [Syncfusion.Diagram.Wpf.resx](https://syncfusion.atlassian.net/secure/attachment/198885/Syncfusion.Diagram.Wpf.resx) | markdownify }</td></tr>
+{{ '[Syncfusion.Diagram.Wpf.resx](https://syncfusion.atlassian.net/secure/attachment/198885/Syncfusion.Diagram.Wpf.resx)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapChart.WPF.dll</td><td>
-{ [Syncfusion.OlapChart.WPF.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapChart.WPF.resx?version=1&modificationDate=1429782554725&api=v2) | markdownify }</td></tr>
+{{ '[Syncfusion.OlapChart.WPF.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapChart.WPF.resx?version=1&modificationDate=1429782554725&api=v2)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapGrid.WPF.dll</td><td>
-{ [Syncfusion.OlapGrid.WPF.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapGrid.WPF.resx?version=1&modificationDate=1429782601212&api=v2) | markdownify }</td></tr>
+{{ '[Syncfusion.OlapGrid.WPF.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapGrid.WPF.resx?version=1&modificationDate=1429782601212&api=v2)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapClient.WPF.dll</td><td>
-{ [Syncfusion.OlapClient.WPF.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapClient.WPF.resx?version=1&modificationDate=1429782644966&api=v2) | markdownify }</td></tr>
+{{ '[Syncfusion.OlapClient.WPF.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapClient.WPF.resx?version=1&modificationDate=1429782644966&api=v2)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapGauge.WPF.dll</td><td>
-{ [Syncfusion.OlapGauge.wpf.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapGauge.wpf.resx?version=1&modificationDate=1429782671861&api=v2) | markdownify }</td></tr>
+{{ '[Syncfusion.OlapGauge.wpf.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapGauge.wpf.resx?version=1&modificationDate=1429782671861&api=v2)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapShared.WPF.dll</td><td>
-{ [Syncfusion.OlapShared.WPF.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapShared.WPF.resx?version=1&modificationDate=1429782739175&api=v2) | markdownify }</td></tr>
+{{ '[Syncfusion.OlapShared.WPF.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapShared.WPF.resx?version=1&modificationDate=1429782739175&api=v2)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.OlapTools.WPF.dll</td><td>
-{ [Syncfusion.OlapTools.WPF.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapTools.WPF.resx?version=1&modificationDate=1429782790451&api=v2) | markdownify }</td></tr>
+{{ '[Syncfusion.OlapTools.WPF.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.OlapTools.WPF.resx?version=1&modificationDate=1429782790451&api=v2)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.PivotAnalysis.WPF.dll</td><td>
-{ [Syncfusion.PivotAnalysis.Wpf.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.PivotAnalysis.Wpf.resx?version=1&modificationDate=1429782815969&api=v2) | markdownify }</td></tr>
+{{ '[Syncfusion.PivotAnalysis.Wpf.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.PivotAnalysis.Wpf.resx?version=1&modificationDate=1429782815969&api=v2)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.SfGrid.WPF.dll</td><td>
-{ [Syncfusion.SfGrid.WPF.resx](https://syncfusion.atlassian.net/secure/attachment/198980/Syncfusion.SfGrid.WPF.resx) | markdownify }</td></tr>
+{{ '[Syncfusion.SfGrid.WPF.resx](https://syncfusion.atlassian.net/secure/attachment/198980/Syncfusion.SfGrid.WPF.resx)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.Spreadsheet.Wpf.dll</td><td>
-{ [Syncfusion.Speradsheet.Wpf.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.Speradsheet.Wpf.resx?version=1&modificationDate=1429786635340&api=v2) | markdownify }</td></tr>
+{{ '[Syncfusion.Speradsheet.Wpf.resx](https://syncfusion.atlassian.net/wiki/download/attachments/48955541/Syncfusion.Speradsheet.Wpf.resx?version=1&modificationDate=1429786635340&api=v2)' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.Grid.WPF.dll</td><td>
-{ [Syncfusion.Grid.Wpf.resx](https://syncfusion.atlassian.net/secure/attachment/199075/Syncfusion.Grid.Wpf.resx) | markdownify }</td></tr>
+{{ '[Syncfusion.Grid.Wpf.resx](https://syncfusion.atlassian.net/secure/attachment/199075/Syncfusion.Grid.Wpf.resx)' | markdownify }}</td></tr>
 </table>
 
 

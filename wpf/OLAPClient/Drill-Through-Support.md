@@ -83,19 +83,19 @@ End Sub
 
 
 
-{ ![](Drill-Through-Support_images/Drill-Through-Support_img1.png) | markdownify }
+{{ '![](Drill-Through-Support_images/Drill-Through-Support_img1.png)' | markdownify }}
 {:.image }
 
 
 _Hyperlink Cell Click_
 
-{ ![](Drill-Through-Support_images/Drill-Through-Support_img2.png) | markdownify }
+{{ '![](Drill-Through-Support_images/Drill-Through-Support_img2.png)' | markdownify }}
 {:.image }
 
 
 _Attribute Hierarchy Selector_
 
-{ ![](Drill-Through-Support_images/Drill-Through-Support_img3.png) | markdownify }
+{{ '![](Drill-Through-Support_images/Drill-Through-Support_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -103,5 +103,5 @@ _Grid with drill-through data_
 
 Sample Link
 
-SystemDrive:\&lt;UserName&gt;\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\WPF\OlapClient.WPF\CS\Samples\Product Showcase\DrillThrough Demo\CS 
+SystemDrive:\<UserName>\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\WPF\OlapClient.WPF\CS\Samples\Product Showcase\DrillThrough Demo\CS 
 

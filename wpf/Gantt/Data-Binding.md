@@ -25,7 +25,7 @@ The following code illustrates how to bind the Task Detials to the Gantt Control
 
 [XAML]
 
- &lt;Sync:GanttControl ItemsSource="{Binding GanttItemSource}" x:Name="Gantt" &gt;
+ <Sync:GanttControl ItemsSource="{Binding GanttItemSource}" x:Name="Gantt" >
 
 
 
@@ -105,7 +105,7 @@ The following image shows the BindingTask Details:
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img1.png) | markdownify }
+{{ '![](Data-Binding_images/Data-Binding_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -130,8 +130,8 @@ The following code illustrate how to map the properties using the TaskAttributeM
 
 
 [XAML]
- &lt;gantt:TaskAttributeMapping TaskIdMapping="Id"                     TaskNameMapping="Name"                     StartDateMapping="StartDate"                      ChildMapping="ChildTask"                     FinishDateMapping="EndDate"                     DurationMapping="Duration"                     ResourceInfoMapping="Resource"                     ProgressMapping="Complete"                     PredecessorMapping="Predecessor"&gt;
- &lt;/gantt:TaskAttributeMapping&gt;
+ <gantt:TaskAttributeMapping TaskIdMapping="Id"                     TaskNameMapping="Name"                     StartDateMapping="StartDate"                      ChildMapping="ChildTask"                     FinishDateMapping="EndDate"                     DurationMapping="Duration"                     ResourceInfoMapping="Resource"                     ProgressMapping="Complete"                     PredecessorMapping="Predecessor">
+ </gantt:TaskAttributeMapping>
 
 
 
@@ -155,11 +155,11 @@ The following code illustrates how to bind the external source to Gantt control:
 
 [XAML]
 
-&lt;Sync:GanttControl x:Name="Gantt" ItemsSource="{Binding GanttItemSource}"&gt;
-      &lt;Sync:GanttControl.TaskMapping&gt;
-           &lt;Sync:TaskCollectionMapping TaskIdMapping="Id"                                       TaskNameMapping="Name"                                       StartDateMapping="SDate"                                       FinishDateMapping="EDate"                                       ResourceNameMapping="ResName"                                       ChildMapping="ChildTask"                                       PredecessorMapping="Predecessor"                                       ProgressMapping="Complete" /&gt;
-            &lt;/Sync:GanttControl.TaskMapping&gt;
-&lt;/Sync:GanttControl&gt;
+<Sync:GanttControl x:Name="Gantt" ItemsSource="{Binding GanttItemSource}">
+      <Sync:GanttControl.TaskMapping>
+           <Sync:TaskCollectionMapping TaskIdMapping="Id"                                       TaskNameMapping="Name"                                       StartDateMapping="SDate"                                       FinishDateMapping="EDate"                                       ResourceNameMapping="ResName"                                       ChildMapping="ChildTask"                                       PredecessorMapping="Predecessor"                                       ProgressMapping="Complete" />
+            </Sync:GanttControl.TaskMapping>
+</Sync:GanttControl>
 
 
 
@@ -254,7 +254,7 @@ The following image shows the External Property Binding:
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img2.png) | markdownify }
+{{ '![](Data-Binding_images/Data-Binding_img2.png)' | markdownify }}
 {:.image }
 
 

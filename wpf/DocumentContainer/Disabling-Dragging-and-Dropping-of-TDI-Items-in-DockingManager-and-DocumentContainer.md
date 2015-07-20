@@ -16,7 +16,7 @@ By default, TDI items in DockingManager and DocumentContainer are can be dragged
 <table>
 <tr>
 <td>
-[XAML]        &lt;syncfusion:DockingManager Name="dockingmanager1" UseDocumentContainer="True" IsTDIDragDropEnabled="False"&gt;            &lt;Grid syncfusion:DockingManager.Header="Tab1" syncfusion:DockingManager.State="Document"/&gt;            &lt;Grid syncfusion:DockingManager.Header="Tab2" syncfusion:DockingManager.State="Document"/&gt;        &lt;/syncfusion:DockingManager&gt;</td></tr>
+[XAML]        <syncfusion:DockingManager Name="dockingmanager1" UseDocumentContainer="True" IsTDIDragDropEnabled="False">            <Grid syncfusion:DockingManager.Header="Tab1" syncfusion:DockingManager.State="Document"/>            <Grid syncfusion:DockingManager.Header="Tab2" syncfusion:DockingManager.State="Document"/>        </syncfusion:DockingManager></td></tr>
 <tr>
 <td>
 [C#]dockingmanager1.IsTDIDragDropEnabled=false;</td></tr>
@@ -30,7 +30,7 @@ This property is also applicable to DocumentContainer, as shown in the following
 <table>
 <tr>
 <td>
-[XAML]        &lt;syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" IsTDIDragDropEnabled="False" &gt;            &lt;Grid syncfusion:DockingManager.Header="Tab1" syncfusion:DockingManager.State="Document"/&gt;            &lt;Grid syncfusion:DockingManager.Header="Tab2" syncfusion:DockingManager.State="Document"/&gt;        &lt;/syncfusion:DocumentContainer&gt;</td></tr>
+[XAML]        <syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" IsTDIDragDropEnabled="False" >            <Grid syncfusion:DockingManager.Header="Tab1" syncfusion:DockingManager.State="Document"/>            <Grid syncfusion:DockingManager.Header="Tab2" syncfusion:DockingManager.State="Document"/>        </syncfusion:DocumentContainer></td></tr>
 <tr>
 <td>
 [C#]documentcontainer1.IsTDIDragDropEnabled=false;</td></tr>

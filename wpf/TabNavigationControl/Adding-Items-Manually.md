@@ -15,67 +15,67 @@ Tab Navigation control is based on Items control. Therefore, items can be added 
 
 XAML
 
-  &lt;syncfusion:TabNavigationControl TransitionEffect="Slide" &gt;
+  <syncfusion:TabNavigationControl TransitionEffect="Slide" >
 
-            &lt;syncfusion:TabNavigationItem Header="1"&gt;
+            <syncfusion:TabNavigationItem Header="1">
 
-                &lt;syncfusion:TabNavigationItem.Content&gt;
+                <syncfusion:TabNavigationItem.Content>
 
-                    &lt;Grid&gt;
+                    <Grid>
 
-                        &lt;TextBlock Text="Item 1"/&gt;
+                        <TextBlock Text="Item 1"/>
 
-                    &lt;/Grid&gt;
+                    </Grid>
 
-                &lt;/syncfusion:TabNavigationItem.Content&gt;
+                </syncfusion:TabNavigationItem.Content>
 
-            &lt;/syncfusion:TabNavigationItem&gt;
+            </syncfusion:TabNavigationItem>
 
-            &lt;syncfusion:TabNavigationItem Header="2"&gt;
+            <syncfusion:TabNavigationItem Header="2">
 
-                &lt;syncfusion:TabNavigationItem.Content&gt;
+                <syncfusion:TabNavigationItem.Content>
 
-                    &lt;Grid&gt;
+                    <Grid>
 
-                        &lt;TextBlock Text="Item 2"/&gt;
+                        <TextBlock Text="Item 2"/>
 
-                    &lt;/Grid&gt;
+                    </Grid>
 
-                &lt;/syncfusion:TabNavigationItem.Content&gt;
+                </syncfusion:TabNavigationItem.Content>
 
-            &lt;/syncfusion:TabNavigationItem&gt;
+            </syncfusion:TabNavigationItem>
 
-            &lt;syncfusion:TabNavigationItem Header="3"&gt;
+            <syncfusion:TabNavigationItem Header="3">
 
-                &lt;syncfusion:TabNavigationItem.Content&gt;
+                <syncfusion:TabNavigationItem.Content>
 
-                    &lt;Grid&gt;
+                    <Grid>
 
-                        &lt;TextBlock Text="Item 3"/&gt;
+                        <TextBlock Text="Item 3"/>
 
-                    &lt;/Grid&gt;
+                    </Grid>
 
-                &lt;/syncfusion:TabNavigationItem.Content&gt;
+                </syncfusion:TabNavigationItem.Content>
 
-            &lt;/syncfusion:TabNavigationItem&gt;
+            </syncfusion:TabNavigationItem>
 
-            &lt;syncfusion:TabNavigationItem Header="4"&gt;
+            <syncfusion:TabNavigationItem Header="4">
 
-                &lt;syncfusion:TabNavigationItem.Content&gt;
+                <syncfusion:TabNavigationItem.Content>
 
-                    &lt;Grid&gt;
+                    <Grid>
 
-                        &lt;TextBlock Text="Item 4"/&gt;
+                        <TextBlock Text="Item 4"/>
 
-                    &lt;/Grid&gt;
+                    </Grid>
 
-                &lt;/syncfusion:TabNavigationItem.Content&gt;
+                </syncfusion:TabNavigationItem.Content>
 
-            &lt;/syncfusion:TabNavigationItem&gt;
+            </syncfusion:TabNavigationItem>
 
 
 
-        &lt;/syncfusion:TabNavigationControl&gt;
+        </syncfusion:TabNavigationControl>
 
 
 
@@ -183,7 +183,7 @@ tabNavControl.Items.Add(item4)
 
 
 
-{ ![](Adding-Items-Manually_images/Adding-Items-Manually_img1.png) | markdownify }
+{{ '![](Adding-Items-Manually_images/Adding-Items-Manually_img1.png)' | markdownify }}
 {:.image }
 
 

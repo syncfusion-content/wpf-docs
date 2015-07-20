@@ -431,13 +431,13 @@ Syncfusion.Grid.WPFSyncfusion.GridCommon.WPFSyncfusion.Shared.WPFSyncfusion.Pivo
 
 While processing [ClickOnce](https://msdn.microsoft.com/en-us/library/ms996413.aspx) deployment for publishing an applications with Syncfusion WPF component, change the Publish Status option of the Syncfusion Assemblies as “Include”.
 
-{ ![](Deployment_images/Deployment_img1.png) | markdownify }
+{{ '![](Deployment_images/Deployment_img1.png)' | markdownify }}
 {:.image }
 
 
 _Selecting Application Files for changing the status_
 
-{ ![](Deployment_images/Deployment_img2.png) | markdownify }
+{{ '![](Deployment_images/Deployment_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -458,7 +458,7 @@ Signing the manifest
 
 Navigate to project properties and select Signing tab. In the tab check “Sign the ClickOnce manifests” and select “Select From File” option and sign the application with the attached .pfx file.
 
-{ ![](Deployment_images/Deployment_img3.png) | markdownify }
+{{ '![](Deployment_images/Deployment_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -466,7 +466,7 @@ Navigate to project properties and select Signing tab. In the tab check “Sign 
 
 In the Publish tab, click “Options” and in the publish options dialog check “Use application manifest for trust information” under Manifest as in the following screenshot.
 
-{ ![](Deployment_images/Deployment_img4.png) | markdownify }
+{{ '![](Deployment_images/Deployment_img4.png)' | markdownify }}
 {:.image }
 
 

@@ -17,23 +17,23 @@ You can minimize the MDI window by setting the CanMDIMinimize property to _true_
 
 
 
-&lt;!-- Adding Document Container --&gt;
+<!-- Adding Document Container -->
 
-&lt;syncfusion:DocumentContainer Name="DocContainer" CanMDIMinimize="True"  Mode="MDI"&gt;
+<syncfusion:DocumentContainer Name="DocContainer" CanMDIMinimize="True"  Mode="MDI">
 
-&lt;FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features"&gt;
+<FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features">
 
-&lt;/FlowDocumentScrollViewer&gt;
-
-…....
+</FlowDocumentScrollViewer>
 
 …....
 
-&lt;/syncfusion:DocumentContainer&gt;
+…....
+
+</syncfusion:DocumentContainer>
 
 
 
-{ ![](Minimizing-MDI-window_images/Minimizing-MDI-window_img1.jpeg) | markdownify }
+{{ '![](Minimizing-MDI-window_images/Minimizing-MDI-window_img1.jpeg)' | markdownify }}
 {:.image }
 
 

@@ -38,7 +38,7 @@ XAML</td></tr>
 </table>
 
 
-{ ![](Dropdown-Popup_images/Dropdown-Popup_img1.png) | markdownify }
+{{ '![](Dropdown-Popup_images/Dropdown-Popup_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -54,7 +54,7 @@ XAML</td></tr>
 </table>
 
 
-{ ![](Dropdown-Popup_images/Dropdown-Popup_img2.png) | markdownify }
+{{ '![](Dropdown-Popup_images/Dropdown-Popup_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -70,7 +70,7 @@ XAML</td></tr>
 </table>
 
 
-{ ![](Dropdown-Popup_images/Dropdown-Popup_img3.png) | markdownify }
+{{ '![](Dropdown-Popup_images/Dropdown-Popup_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -86,7 +86,7 @@ XAML</td></tr>
 </table>
 
 
-{ ![](Dropdown-Popup_images/Dropdown-Popup_img4.png) | markdownify }
+{{ '![](Dropdown-Popup_images/Dropdown-Popup_img4.png)' | markdownify }}
 {:.image }
 
 

@@ -25,9 +25,9 @@ XAML
 
 
 
-&lt;syncfusion:TabNavigationControl TransitionEffect="Slide" ItemsSource="{Binding MyCollection}"&gt;
+<syncfusion:TabNavigationControl TransitionEffect="Slide" ItemsSource="{Binding MyCollection}">
 
-&lt;/syncfusion:TabNavigationControl&gt;
+</syncfusion:TabNavigationControl>
 
 
 
@@ -169,7 +169,7 @@ XAML
 
 ItemsSource="{Binding MyCollection}">
 
-&lt;/syncfusion:TabNavigationControl&gt;
+</syncfusion:TabNavigationControl>
 
 
 
@@ -293,7 +293,7 @@ To bind XML data to a TabNavigation control, convert the XML data to a collectio
 
 
 
-{ ![](Adding-items-through-Items-Source_images/Adding-items-through-Items-Source_img1.png) | markdownify }
+{{ '![](Adding-items-through-Items-Source_images/Adding-items-through-Items-Source_img1.png)' | markdownify }}
 {:.image }
 
 

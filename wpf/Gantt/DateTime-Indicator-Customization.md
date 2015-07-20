@@ -76,7 +76,7 @@ The following code samples illustrate how to customize the DateTime indicator.
 
                     ItemsSource="{Binding TaskDetails}">
 
-        &lt;gantt:GanttControl.CurrentDateLine&gt;   
+        <gantt:GanttControl.CurrentDateLine>   
 
                 <Line Stroke="Green" 
 
@@ -84,9 +84,9 @@ The following code samples illustrate how to customize the DateTime indicator.
 
                       StrokeThickness="2" />
 
-        &lt;/gantt:GanttControl.CurrentDateLine&gt;
+        </gantt:GanttControl.CurrentDateLine>
 
-        &lt;gantt:GanttControl.TaskAttributeMapping&gt;
+        <gantt:GanttControl.TaskAttributeMapping>
 
                 <gantt:TaskAttributeMapping TaskIdMapping="Id"
 
@@ -100,9 +100,9 @@ The following code samples illustrate how to customize the DateTime indicator.
 
                                             DurationMapping="Duration/>
 
-        &lt;/gantt:GanttControl.TaskAttributeMapping&gt;
+        </gantt:GanttControl.TaskAttributeMapping>
 
-&lt;/gantt:GanttControl&gt;
+</gantt:GanttControl>
 
 
 
@@ -132,7 +132,7 @@ The following image shows the resultant output:
 
 
 
-{ ![](DateTime-Indicator-Customization_images/DateTime-Indicator-Customization_img1.png) | markdownify }
+{{ '![](DateTime-Indicator-Customization_images/DateTime-Indicator-Customization_img1.png)' | markdownify }}
 {:.image }
 
 

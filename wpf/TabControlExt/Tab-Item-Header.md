@@ -23,19 +23,19 @@ The following code snippet illustrates how to add images to the tab item header.
 
 
 
-&lt;!-- Adding TabcontrolExt  --&gt;
+<!-- Adding TabcontrolExt  -->
 
-&lt;syncfusion:TabControlExt Name="tabControlExt"&gt;
+<syncfusion:TabControlExt Name="tabControlExt">
 
 
 
-    &lt;!-- Adding TabItemExt with image  --&gt;
+    <!-- Adding TabItemExt with image  -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt1" Image="Sync.png" Header="TabItemExt1"&gt;
+    <syncfusion:TabItemExt Name="tabItemExt1" Image="Sync.png" Header="TabItemExt1">
 
-    &lt;/syncfusion:TabItemExt&gt;
+    </syncfusion:TabItemExt>
 
-&lt;/syncfusion:TabControlExt&gt;
+</syncfusion:TabControlExt>
 
 
 
@@ -85,7 +85,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-{ ![](Tab-Item-Header_images/Tab-Item-Header_img1.jpeg) | markdownify }
+{{ '![](Tab-Item-Header_images/Tab-Item-Header_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -114,19 +114,19 @@ To set the tab item header image alignment as "AboveText", use the below code.
 
 
 
-&lt;!-- Adding TabControlExt  --&gt;
+<!-- Adding TabControlExt  -->
 
-&lt;syncfusion:TabControlExt Name="tabControlExt"&gt;
+<syncfusion:TabControlExt Name="tabControlExt">
 
 
 
-    &lt;!-- Adding TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt1" Image="Sync.png" ImageAlignment="AboveText" Header="TabItemExt1"&gt;
+    <syncfusion:TabItemExt Name="tabItemExt1" Image="Sync.png" ImageAlignment="AboveText" Header="TabItemExt1">
 
-    &lt;/syncfusion:TabItemExt&gt;
+    </syncfusion:TabItemExt>
 
-&lt;/syncfusion:TabControlExt&gt;
+</syncfusion:TabControlExt>
 
 
 
@@ -184,7 +184,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-{ ![](Tab-Item-Header_images/Tab-Item-Header_img2.jpeg) | markdownify }
+{{ '![](Tab-Item-Header_images/Tab-Item-Header_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -202,15 +202,15 @@ The following code snippet illustrates handling the ImageAlignmentChanged event.
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Tabs the item ext1_ image alignment changed.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// <param name="d">The d.&lt;/param&gt;
+/// <param name="d">The d.</param>
 
-/// <param name="e">The &lt;see cref="System.Windows.DependencyPropertyChangedEventArgs"/&gt; instance containing the event data.&lt;/param&gt;
+/// <param name="e">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
 
 private void tabItemExt1_ImageAlignmentChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 

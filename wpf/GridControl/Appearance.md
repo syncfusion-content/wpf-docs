@@ -87,7 +87,7 @@ The following graphic illustrates the effect of using the GridStyleInfo inherita
 
 
 
-{ ![](Appearance_images/Appearance_img1.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -172,7 +172,7 @@ Output
 
 The code above displays the following output:
 
-{ ![](Appearance_images/Appearance_img2.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -225,7 +225,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Appearance_images/Appearance_img3.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -335,7 +335,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Appearance_images/Appearance_img4.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -399,7 +399,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Appearance_images/Appearance_img5.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -503,7 +503,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Appearance_images/Appearance_img6.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -689,7 +689,7 @@ Output
 
 The following output is generated using the code above.
 
-{ ![](Appearance_images/Appearance_img7.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -861,7 +861,7 @@ The CustomNumberFormat class converts the double value to string based on the cu
 
 The output is shown in the following screenshot:
 
-{ ![](Appearance_images/Appearance_img8.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -935,7 +935,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Appearance_images/Appearance_img9.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1019,7 +1019,7 @@ Output
 
 The following output is generated using the code above.
 
-{ ![](Appearance_images/Appearance_img10.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1067,7 +1067,7 @@ grid.Model.Options.FloodCell = false;
 
 
 
-{ ![](Appearance_images/Appearance_img11.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img11.png)' | markdownify }}
 {:.image }
 
 

@@ -51,7 +51,7 @@ SkinStorage.SetVisualStyle(this.DockingManager, Office2007Silver);
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/dock/7blue.png](Advanced-Features_images/Advanced-Features_img1.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/dock/7blue.png](Advanced-Features_images/Advanced-Features_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -59,7 +59,7 @@ _DockingManager with "Office2007Blue" Visual Style_
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/dock/7black.png](Advanced-Features_images/Advanced-Features_img2.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/dock/7black.png](Advanced-Features_images/Advanced-Features_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -67,7 +67,7 @@ _DockingManager with "Office2007Black" Visual Style_
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img3.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -75,7 +75,7 @@ _DockingManager with "Office2007Silver" Visual Style_
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img4.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -83,7 +83,7 @@ _DockingManager with "Office2010Blue" Visual Style_
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img5.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -91,7 +91,7 @@ _DockingManager with "Office2010Black" Visual Style_
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img6.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -99,7 +99,7 @@ _DockingManager with "Office2010Silver" Visual Style_
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img7.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -107,7 +107,7 @@ _DockingManager with "Blend” Visual Style_
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img8.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -115,7 +115,7 @@ _DockingManager with “VS2010” Visual Style_
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img9.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -123,7 +123,7 @@ _DockingManager with “Metro” Visual Style_
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img10.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -144,14 +144,14 @@ By default, this property is set to true. Once the MDI / TDI children are not re
 <table>
 <tr>
 <td>
-[XAML]        &lt;!--Declaring Docking Manager--&gt;        &lt;syncfusion:DockingManager UseDocumentContainer="False"&gt;            &lt;!--Children for the Docking Manager--&gt;            <StackPanel syncfusion:DockingManager.Header="Element one"              syncfusion:DockingManager.State="Dock"              syncfusion:DockingManager.SideInDockedMode="Left"/>        &lt;/syncfusion:DockingManager&gt;</td></tr>
+[XAML]        <!--Declaring Docking Manager-->        <syncfusion:DockingManager UseDocumentContainer="False">            <!--Children for the Docking Manager-->            <StackPanel syncfusion:DockingManager.Header="Element one"              syncfusion:DockingManager.State="Dock"              syncfusion:DockingManager.SideInDockedMode="Left"/>        </syncfusion:DockingManager></td></tr>
 <tr>
 <td>
 [C#]//Creating the instance of the DockingManager.DockingManager = new DockingManager();// Disintegrating the MDI / TDI children from the DockingManager.DockingManager.UseDocumentContainer = false;</td></tr>
 </table>
 
 
-{ ![C:/Users/Hemanth/Desktop/Documentation/Images/ElementOne.jpg](Advanced-Features_images/Advanced-Features_img11.jpeg) | markdownify }
+{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/ElementOne.jpg](Advanced-Features_images/Advanced-Features_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -167,37 +167,37 @@ The below code snippet creates a client control for the DockingManager.
 
 [XAML]
 
-        &lt;!--Declaring Docking Manager--&gt;
+        <!--Declaring Docking Manager-->
 
-        &lt;syncfusion:DockingManager UseDocumentContainer="False"&gt;
+        <syncfusion:DockingManager UseDocumentContainer="False">
 
-            &lt;syncfusion:DockingManager.ClientControl&gt;
+            <syncfusion:DockingManager.ClientControl>
 
-                &lt;StackPanel Background="PeachPuff"&gt;
+                <StackPanel Background="PeachPuff">
 
-                    &lt;TextBlock Text="I am Client Area"/&gt;
+                    <TextBlock Text="I am Client Area"/>
 
-                &lt;/StackPanel&gt;
+                </StackPanel>
 
-            &lt;/syncfusion:DockingManager.ClientControl&gt;
-
-
-
-            &lt;!--Children for the Docking Manager--&gt;
-
-            &lt;StackPanel syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Left"/&gt;
-
-            &lt;StackPanel  syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Top"/&gt;
-
-            &lt;StackPanel syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Right"/&gt;
-
-            &lt;StackPanel syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Bottom"/&gt;
-
-        &lt;/syncfusion:DockingManager&gt;
+            </syncfusion:DockingManager.ClientControl>
 
 
 
-{ ![C:/Users/Hemanth/Desktop/Documentation/Images/ClientControl.jpg](Advanced-Features_images/Advanced-Features_img12.jpeg) | markdownify }
+            <!--Children for the Docking Manager-->
+
+            <StackPanel syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Left"/>
+
+            <StackPanel  syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Top"/>
+
+            <StackPanel syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Right"/>
+
+            <StackPanel syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Bottom"/>
+
+        </syncfusion:DockingManager>
+
+
+
+{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/ClientControl.jpg](Advanced-Features_images/Advanced-Features_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -214,7 +214,7 @@ In the DockingManager with MDI / TDI children, there will be every necessity to 
 <table>
 <tr>
 <td>
-[XAML]        &lt;!--Declaring Docking Manager with the close button click event--&gt;        <syncfusion:DockingManager  CloseButtonClick="DockingManager_CloseButtonClick">            &lt;!--Adding Child for the Docking Manager--&gt;            &lt;StackPanel syncfusion:DockingManager.State="Document" syncfusion:DockingManager.SideInDockedMode="Left"/&gt;        &lt;/syncfusion:DockingManager&gt;</td></tr>
+[XAML]        <!--Declaring Docking Manager with the close button click event-->        <syncfusion:DockingManager  CloseButtonClick="DockingManager_CloseButtonClick">            <!--Adding Child for the Docking Manager-->            <StackPanel syncfusion:DockingManager.State="Document" syncfusion:DockingManager.SideInDockedMode="Left"/>        </syncfusion:DockingManager></td></tr>
 <tr>
 <td>
 [C#]//Creating the instance of the DockingManager.DockingManager = new DockingManager();//Creating the event for the Close Button Click.DockingManager.CloseButtonClick += new CloseButtonEventHandler(DockingManager_CloseButtonClick);</td></tr>
@@ -229,7 +229,7 @@ In the DockingManager with MDI / TDI children, there will be every necessity to 
 <table>
 <tr>
 <td>
-[XAML]        &lt;!--Declaring Docking Manager with Close AllTabs and CloseOtherTabs--&gt;        &lt;syncfusion:DockingManager CloseAllTabs="DockingManager_CloseAllTabs" CloseOtherTabs="DockingManager_CloseOtherTabs"&gt;            &lt;!--Children for the Docking Manager--&gt;            &lt;StackPanel syncfusion:DockingManager.State="Document" syncfusion:DockingManager.SideInDockedMode="Left"/&gt;        &lt;/syncfusion:DockingManager&gt;</td></tr>
+[XAML]        <!--Declaring Docking Manager with Close AllTabs and CloseOtherTabs-->        <syncfusion:DockingManager CloseAllTabs="DockingManager_CloseAllTabs" CloseOtherTabs="DockingManager_CloseOtherTabs">            <!--Children for the Docking Manager-->            <StackPanel syncfusion:DockingManager.State="Document" syncfusion:DockingManager.SideInDockedMode="Left"/>        </syncfusion:DockingManager></td></tr>
 <tr>
 <td>
 [C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Creating the event for the Close All Tabs.DockingManager.CloseAllTabs += new OnCloseTabsEventHandler(DockingManager_CloseAllTabs);//Creating the event for the Close Other Tabs.DockingManager.CloseOtherTabs += new OnCloseTabsEventHandler(DockingManager_CloseOtherTabs);</td></tr>
@@ -268,7 +268,7 @@ DockFillDocumentMode</td></tr>
 
 ### Sample Link
 
-SystemDrive\Users\&lt;user_name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version_number&gt;\ WPF\Tools.WPF\Samples\3.5\WindowsSamples\Docking Manager\Docking Demo
+SystemDrive\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<Version_number>\ WPF\Tools.WPF\Samples\3.5\WindowsSamples\Docking Manager\Docking Demo
 
 ### Adding DockFillDocumentMode to an Application 
 
@@ -281,14 +281,14 @@ The following code snippet shows how to set values for the DockFillDocumentMode 
 <table>
 <tr>
 <td>
-[XAML]<syncfusion:DockingManager x:Name="dockingManager"DockFillDocumentMode="Normal" UseDocumentContainer="true" >&lt;!-- Product Showcase Window --&gt;<ListBox BorderThickness="0" Name="Parent1" syncfusion:DockingManager.State="Document"syncfusion:DockingManager.DesiredHeightInDockedMode="100"syncfusion:DockingManager.Header="Product Showcase" >&lt;/ListBox&gt;&lt;!-- Docking Manager Window--&gt;<ListBox BorderThickness="0" syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Docking Manager" >&lt;/ListBox&gt;&lt;/syncfusion:DockingManager &gt;</td></tr>
+[XAML]<syncfusion:DockingManager x:Name="dockingManager"DockFillDocumentMode="Normal" UseDocumentContainer="true" ><!-- Product Showcase Window --><ListBox BorderThickness="0" Name="Parent1" syncfusion:DockingManager.State="Document"syncfusion:DockingManager.DesiredHeightInDockedMode="100"syncfusion:DockingManager.Header="Product Showcase" ></ListBox><!-- Docking Manager Window--><ListBox BorderThickness="0" syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Docking Manager" ></ListBox></syncfusion:DockingManager ></td></tr>
 <tr>
 <td>
 [C#]this.dockingManager.DockFillDocumentMode =DockFillDocumentMode.Normal;</td></tr>
 </table>
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img13.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -312,35 +312,35 @@ You can bind the custom object to the DataContext property of the DockingManager
 
     xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
-            &lt;Window.Resources&gt;
+            <Window.Resources>
 
-                &lt;!--Custom object which is defined in the code behind can be accessed through the key logic in XAML--&gt;
+                <!--Custom object which is defined in the code behind can be accessed through the key logic in XAML-->
 
-                &lt;local:Person x:Key="person" /&gt;
+                <local:Person x:Key="person" />
 
-            &lt;/Window.Resources&gt;
+            </Window.Resources>
 
-            &lt;!--Setting the Data Context for the Docking Manager--&gt;
+            <!--Setting the Data Context for the Docking Manager-->
 
-            &lt;syncfusion:DockingManager x:Name="DockingManager"   DataContext="{StaticResource person}" &gt;
+            <syncfusion:DockingManager x:Name="DockingManager"   DataContext="{StaticResource person}" >
 
-                &lt;Border syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Left"&gt;
+                <Border syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Left">
 
-                    &lt;!--Setting the object to the dock window elements--&gt;
+                    <!--Setting the object to the dock window elements-->
 
-                    &lt;StackPanel Background="{Binding BackgroundBrush}"&gt;
+                    <StackPanel Background="{Binding BackgroundBrush}">
 
-                        &lt;TextBlock Text="{Binding Name}" /&gt;
+                        <TextBlock Text="{Binding Name}" />
 
-                        &lt;TextBlock Text="{Binding Age}" /&gt;
+                        <TextBlock Text="{Binding Age}" />
 
-                    &lt;/StackPanel&gt;
+                    </StackPanel>
 
-                &lt;/Border&gt;
+                </Border>
 
-            &lt;/syncfusion:DockingManager&gt;
+            </syncfusion:DockingManager>
 
-        &lt;/Window&gt;
+        </Window>
 
 ### Custom object in the Code Behind
 
@@ -348,21 +348,21 @@ You can bind the custom object to the DataContext property of the DockingManager
 
 [C#]
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Interaction logic for the class person
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         public class Person
 
         {
 
-            /// &lt;summary&gt;
+            /// <summary>
 
-            /// Initializes a new instance of the &lt;see cref="Person"/&gt; class.
+            /// Initializes a new instance of the <see cref="Person"/> class.
 
-            /// &lt;/summary&gt;
+            /// </summary>
 
             public Person()
 
@@ -376,13 +376,13 @@ You can bind the custom object to the DataContext property of the DockingManager
 
             }
 
-            /// &lt;summary&gt;
+            /// <summary>
 
             /// Gets or sets the name.
 
-            /// &lt;/summary&gt;
+            /// </summary>
 
-            /// <value>The name.&lt;/value&gt;
+            /// <value>The name.</value>
 
             public string Name
 
@@ -394,13 +394,13 @@ You can bind the custom object to the DataContext property of the DockingManager
 
             }
 
-            /// &lt;summary&gt;
+            /// <summary>
 
             /// Gets or sets the age.
 
-            /// &lt;/summary&gt;
+            /// </summary>
 
-            /// <value>The age.&lt;/value&gt;
+            /// <value>The age.</value>
 
             public int Age
 
@@ -412,13 +412,13 @@ You can bind the custom object to the DataContext property of the DockingManager
 
             }
 
-            /// &lt;summary&gt;
+            /// <summary>
 
             /// Gets or sets the background brush.
 
-            /// &lt;/summary&gt;
+            /// </summary>
 
-            /// <value>The background brush.&lt;/value&gt;
+            /// <value>The background brush.</value>
 
             public Brush BackgroundBrush
 
@@ -436,7 +436,7 @@ You can bind the custom object to the DataContext property of the DockingManager
 
 
 
-{ ![C:/Users/Hemanth/Desktop/Documentation/Images/DataBinding.jpg](Advanced-Features_images/Advanced-Features_img14.jpeg) | markdownify }
+{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/DataBinding.jpg](Advanced-Features_images/Advanced-Features_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -598,14 +598,14 @@ Hosting a Windows Form Host in DockingManager is an easy process for which you n
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:DockingManager DockFill="True" UseInteropCompatibilityMode="True"&gt;      &lt;WebBrowser Name="web1"/&gt;&lt;/syncfusion:DockingManager&gt;</td></tr>
+[XAML]<syncfusion:DockingManager DockFill="True" UseInteropCompatibilityMode="True">      <WebBrowser Name="web1"/></syncfusion:DockingManager></td></tr>
 <tr>
 <td>
 [C#]//Navigating the webbrowser control defined in xaml to the given url.web1.Navigate(new Uri("http://syncfusion.com"));</td></tr>
 </table>
 
 
-{ ![C:/Users/Hemanth/Desktop/Documentation/Images/WFH.jpg](Advanced-Features_images/Advanced-Features_img15.jpeg) | markdownify }
+{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/WFH.jpg](Advanced-Features_images/Advanced-Features_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -622,7 +622,7 @@ Use Case Scenario
 
 
 
-{ ![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/LinkedManager.png](Advanced-Features_images/Advanced-Features_img16.png) | markdownify }
+{{ '![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/LinkedManager.png](Advanced-Features_images/Advanced-Features_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -634,14 +634,14 @@ Samples Link
 
 To view samples:
 
-1. Click Start-->All Programs-->Syncfusion-->Essential Studio &lt;version number&gt; -->Dashboard. (Refer section 2.2)
+1. Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard. (Refer section 2.2)
 2. In the Dashboard window, click Run Locally Installed Samples for WPF under User Interface Edition panel. 
 
 
 
 
 
-{ ![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/LinkedManagerLocation.png](Advanced-Features_images/Advanced-Features_img17.png) | markdownify }
+{{ '![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/LinkedManagerLocation.png](Advanced-Features_images/Advanced-Features_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -769,7 +769,7 @@ Use Case Scenario
 
 
 
-{ ![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/MaximizeAndMinimize.png](Advanced-Features_images/Advanced-Features_img18.png) | markdownify }
+{{ '![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/MaximizeAndMinimize.png](Advanced-Features_images/Advanced-Features_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -779,12 +779,12 @@ Samples Link
 
 To view samples:
 
-1. Click Start-->All Programs-->Syncfusion-->Essential Studio &lt;version number&gt; -->Dashboard. (Refer section 2.2)
+1. Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard. (Refer section 2.2)
 2. In the Dashboard window, click Run Locally Installed Samples for WPF under User Interface Edition panel. 
 
 
 
-{ ![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/MaximizeAndMinimizeLocation.png](Advanced-Features_images/Advanced-Features_img19.png) | markdownify }
+{{ '![C:/Users/riaj/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/MaximizeAndMinimizeLocation.png](Advanced-Features_images/Advanced-Features_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -863,7 +863,7 @@ When the docked window is minimized it will go to AutoHidden state and the DockW
 <table>
 <tr>
 <td>
-[XAML]<syncfusion:DockingManager x:Name="dockingManager"                MaximizeButtonEnabled="True" MinimizeButtonEnabled="True">                &lt;!--Ribbon Window--&gt;                <ListBox Name="ListBox3"                              syncfusion:DockingManager.CanClose="False"                             syncfusion:DockingManager.CanFloat="False"                              syncfusion:DockingManager.DesiredWidthInDockedMode="200"                               syncfusion:DocumentContainer.MDIBounds="30,30,300,300"                               syncfusion:DockingManager.DesiredHeightInFloatingMode="200"                             syncfusion:DockingManager.Header="Ribbon" >                    <ListBoxItem Margin="2,2,2,2">Ribbon Sample</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">Ribbon DataBinding Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">Ribbon State Persistance</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">ContextTabGroup Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">BackStage Demo</ListBoxItem>                &lt;/ListBox&gt; &lt;/syncfusion:DockingManager &gt;</td></tr>
+[XAML]<syncfusion:DockingManager x:Name="dockingManager"                MaximizeButtonEnabled="True" MinimizeButtonEnabled="True">                <!--Ribbon Window-->                <ListBox Name="ListBox3"                              syncfusion:DockingManager.CanClose="False"                             syncfusion:DockingManager.CanFloat="False"                              syncfusion:DockingManager.DesiredWidthInDockedMode="200"                               syncfusion:DocumentContainer.MDIBounds="30,30,300,300"                               syncfusion:DockingManager.DesiredHeightInFloatingMode="200"                             syncfusion:DockingManager.Header="Ribbon" >                    <ListBoxItem Margin="2,2,2,2">Ribbon Sample</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">Ribbon DataBinding Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">Ribbon State Persistance</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">ContextTabGroup Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">BackStage Demo</ListBoxItem>                </ListBox> </syncfusion:DockingManager ></td></tr>
 <tr>
 <td>
 [C#]//enables the maximize and minimize featuredockingManager.MaximizeButtonEnabled = true;dockingManager.MinimizeButtonEnabled = true;</td></tr>
@@ -902,7 +902,7 @@ MaximizeMode</td></tr>
 
 #### Sample Link
 
-SystemDrive\Users\&lt;user_name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version_number&gt;\ WPF\Tools.WPF\Samples\3.5\WindowsSamples\Docking Manager\Maximization Demo
+SystemDrive\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<Version_number>\ WPF\Tools.WPF\Samples\3.5\WindowsSamples\Docking Manager\Maximization Demo
 
 #### Adding MaximizeMode to an Application 
 
@@ -915,14 +915,14 @@ The following code snippet shows how to set values for the MaximizeMode property
 <table>
 <tr>
 <td>
-[XAML]<syncfusion:DockingManager x:Name="dockingManager"MaximizeButtonEnabled="true" MaximizeMode="FullScreen" >&lt;!-- Product Showcase Window --&gt;<ListBox BorderThickness="0" Name="Parent1" syncfusion:DockingManager.DesiredHeightInDockedMode="100"syncfusion:DockingManager.Header="Product Showcase" >&lt;/ListBox&gt;&lt;!-- Docking Manager Window--&gt;<ListBox BorderThickness="0" syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Docking Manager" >&lt;/ListBox&gt;&lt;/syncfusion:DockingManager &gt;</td></tr>
+[XAML]<syncfusion:DockingManager x:Name="dockingManager"MaximizeButtonEnabled="true" MaximizeMode="FullScreen" ><!-- Product Showcase Window --><ListBox BorderThickness="0" Name="Parent1" syncfusion:DockingManager.DesiredHeightInDockedMode="100"syncfusion:DockingManager.Header="Product Showcase" ></ListBox><!-- Docking Manager Window--><ListBox BorderThickness="0" syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Docking Manager" ></ListBox></syncfusion:DockingManager ></td></tr>
 <tr>
 <td>
 [C#]this.dockingManager.MaximizeMode = MaximizeMode.FullScreen;</td></tr>
 </table>
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img20.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img20.png)' | markdownify }}
 {:.image }
 
 
@@ -930,7 +930,7 @@ _MaximizeMode = “FullScreen” (when MaximizedState is Normal)_
 
 
 
-{ ![](Advanced-Features_images/Advanced-Features_img21.png) | markdownify }
+{{ '![](Advanced-Features_images/Advanced-Features_img21.png)' | markdownify }}
 {:.image }
 
 
@@ -946,7 +946,7 @@ This feature helps the user to have a clear view of the AutoHidden items header 
 
 
 
-{ ![C:/Users/riaj/Desktop/ScrollableAutoHiddenPanel.png](Advanced-Features_images/Advanced-Features_img22.png) | markdownify }
+{{ '![C:/Users/riaj/Desktop/ScrollableAutoHiddenPanel.png](Advanced-Features_images/Advanced-Features_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -956,12 +956,12 @@ Samples Link
 
 To view samples:
 
-1. Click Start-->All Programs-->Syncfusion-->Essential Studio &lt;version number&gt; -->Dashboard. (Refer section 2.2)
+1. Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard. (Refer section 2.2)
 2. In the Dashboard window, click Run Locally Installed Samples for WPF under User Interface Edition panel. 
 
 
 
-{ ![C:/Users/riaj/Desktop/ScrollableAutoHiddenPanelLocation.png](Advanced-Features_images/Advanced-Features_img23.png) | markdownify }
+{{ '![C:/Users/riaj/Desktop/ScrollableAutoHiddenPanelLocation.png](Advanced-Features_images/Advanced-Features_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -1012,7 +1012,7 @@ The Scroll support helps to provide a clear view of the AutoHidden items without
 <table>
 <tr>
 <td>
-[XAML]<syncfusion:DockingManager x:Name="dockingManager"                EnableScrollableSidePanel="True">                &lt;!-- Product Showcase Window --&gt;                <ListBox BorderThickness="0"                              syncfusion:DockingManager.SideInDockedMode="Bottom"                              syncfusion:DockingManager.State="AutoHidden"                              syncfusion:DockingManager.Header="Product Showcase" >                    <ListBoxItem Margin="2,2,2,2">PortfolioAnalyzer(CAL)&lt;/ListBoxItem&gt;                    <ListBoxItem Margin="2,2,2,2">Ribbon-Dock Viewer Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">TabControlExt IE7 Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">PRISM 4 (Mef Boostrapper)&lt;/ListBoxItem&gt;                    <ListBoxItem Margin="2,2,2,2">PRISM 4 (Unity Boostrapper)&lt;/ListBoxItem&gt;                &lt;/ListBox&gt;                &lt;!-- Docking Manager Window--&gt;                <ListBox BorderThickness="0"                              syncfusion:DockingManager.SideInDockedMode="Bottom"                              syncfusion:DockingManager.State="AutoHidden"                              syncfusion:DockingManager.Header="Docking Manager" >                    <ListBoxItem Margin="2,2,2,2">Docking Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">MDI Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">AutoHide Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">State Persistance Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">Custom Docking Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">Custom Button Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">Mac-Style Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">Document Container Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">VS2010 Demo</ListBoxItem>                &lt;/ListBox&gt; &lt;/syncfusion:DockingManager &gt;</td></tr>
+[XAML]<syncfusion:DockingManager x:Name="dockingManager"                EnableScrollableSidePanel="True">                <!-- Product Showcase Window -->                <ListBox BorderThickness="0"                              syncfusion:DockingManager.SideInDockedMode="Bottom"                              syncfusion:DockingManager.State="AutoHidden"                              syncfusion:DockingManager.Header="Product Showcase" >                    <ListBoxItem Margin="2,2,2,2">PortfolioAnalyzer(CAL)</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">Ribbon-Dock Viewer Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">TabControlExt IE7 Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">PRISM 4 (Mef Boostrapper)</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">PRISM 4 (Unity Boostrapper)</ListBoxItem>                </ListBox>                <!-- Docking Manager Window-->                <ListBox BorderThickness="0"                              syncfusion:DockingManager.SideInDockedMode="Bottom"                              syncfusion:DockingManager.State="AutoHidden"                              syncfusion:DockingManager.Header="Docking Manager" >                    <ListBoxItem Margin="2,2,2,2">Docking Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">MDI Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">AutoHide Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">State Persistance Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">Custom Docking Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">Custom Button Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">Mac-Style Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">Document Container Demo</ListBoxItem>                    <ListBoxItem Margin="2,2,2,2">VS2010 Demo</ListBoxItem>                </ListBox> </syncfusion:DockingManager ></td></tr>
 <tr>
 <td>
 [C#]//enables the scrollable autohidden featuredockingManager.EnableScrollableSidePanel = true; </td></tr>
@@ -1067,7 +1067,7 @@ SplitterResizeMode</td></tr>
 
 ### Sample Link
 
-SystemDrive\Users\&lt;user_name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version_number&gt;\ WPF\Tools.WPF\Samples\3.5\WindowsSamples\Docking Manager\Docking Demo
+SystemDrive\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<Version_number>\ WPF\Tools.WPF\Samples\3.5\WindowsSamples\Docking Manager\Docking Demo
 
 
 
@@ -1082,7 +1082,7 @@ The following code snippet shows how to set values for the ContainerSplitterResi
 <table>
 <tr>
 <td>
-[XAML]<syncfusion:DockingManager x:Name="dockingManager"ContainerSplitterResize="EdgeChildren">&lt;!-- Product Showcase Window --&gt;<ListBox BorderThickness="0" Name="Parent1" syncfusion:DockingManager.Header="Product Showcase" >&lt;/ListBox&gt;&lt;!-- Docking Manager Window--&gt;<ListBox BorderThickness="0" syncfusion:DockingManager.TargetNameInDockedMode="Parent1"syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Docking Manager" >&lt;/ListBox&gt;&lt;!-- Ribbon Window--&gt;<ListBox BorderThickness="0" Name="Parent2"syncfusion:DockingManager.TargetNameInDockedMode="Parent1"syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.Header="Ribbon" >&lt;/ListBox&gt;&lt;!-- TreeView Window--&gt;<ListBox BorderThickness="0" syncfusion:DockingManager.TargetNameInDockedMode="Parent2"syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="TreeView" >&lt;/ListBox&gt;&lt;/syncfusion:DockingManager &gt;</td></tr>
+[XAML]<syncfusion:DockingManager x:Name="dockingManager"ContainerSplitterResize="EdgeChildren"><!-- Product Showcase Window --><ListBox BorderThickness="0" Name="Parent1" syncfusion:DockingManager.Header="Product Showcase" ></ListBox><!-- Docking Manager Window--><ListBox BorderThickness="0" syncfusion:DockingManager.TargetNameInDockedMode="Parent1"syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Docking Manager" ></ListBox><!-- Ribbon Window--><ListBox BorderThickness="0" Name="Parent2"syncfusion:DockingManager.TargetNameInDockedMode="Parent1"syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.Header="Ribbon" ></ListBox><!-- TreeView Window--><ListBox BorderThickness="0" syncfusion:DockingManager.TargetNameInDockedMode="Parent2"syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="TreeView" ></ListBox></syncfusion:DockingManager ></td></tr>
 <tr>
 <td>
 [C#]this.dockingManager.ContainerSplitterResize=SplitterResizeMode.EdgeChildren;</td></tr>
@@ -1130,7 +1130,7 @@ The following code snippet shows how to set values for the DockFillMode property
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:DockingManager x:Name="dockingManager"&gt;&lt;!-- Product Showcase Window --&gt;<ListBox BorderThickness="0" Name="Parent1" syncfusion:DockingManager.DockFillMode="Absolute"syncfusion:DockingManager.DesiredHeightInDockedMode="100"syncfusion:DockingManager.Header="Product Showcase" >&lt;/ListBox&gt;&lt;!-- Docking Manager Window--&gt;<ListBox BorderThickness="0" syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Docking Manager" >&lt;/ListBox&gt;&lt;/syncfusion:DockingManager &gt;</td></tr>
+[XAML]<syncfusion:DockingManager x:Name="dockingManager"><!-- Product Showcase Window --><ListBox BorderThickness="0" Name="Parent1" syncfusion:DockingManager.DockFillMode="Absolute"syncfusion:DockingManager.DesiredHeightInDockedMode="100"syncfusion:DockingManager.Header="Product Showcase" ></ListBox><!-- Docking Manager Window--><ListBox BorderThickness="0" syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Docking Manager" ></ListBox></syncfusion:DockingManager ></td></tr>
 <tr>
 <td>
 [C#]DockingManager.SetDockFillMode(Parent1, DockFillModes.Absolute);</td></tr>

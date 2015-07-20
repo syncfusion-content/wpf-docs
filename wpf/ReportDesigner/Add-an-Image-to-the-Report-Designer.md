@@ -15,7 +15,7 @@ You can add an image to the Syncfusion Essential Report Designer by using the fo
 
 
 
-{ ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig36.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img1.png) | markdownify }
+{{ '![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig36.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -29,7 +29,7 @@ You can add an image to the Syncfusion Essential Report Designer by using the fo
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-23.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img2.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-23.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -37,7 +37,7 @@ You can add an image to the Syncfusion Essential Report Designer by using the fo
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-24.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img3.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-24.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -53,7 +53,7 @@ You can add an image to the Syncfusion Essential Report Designer by using the fo
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-25.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img4.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-25.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -64,7 +64,7 @@ Setting Image Properties by using the Properties Grid
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-26.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img5.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-26.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -72,7 +72,7 @@ Deleting Image
 
 To delete the image from the Report Designer, right click the image and click Delete.
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-27.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img6.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-27.png](Add-an-Image-to-the-Report-Designer_images/Add-an-Image-to-the-Report-Designer_img6.png)' | markdownify }}
 {:.image }
 
 

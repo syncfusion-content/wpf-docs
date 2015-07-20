@@ -24,51 +24,51 @@ Use the below code snippet to set the orientation.
 
 
 
-&lt;!-- Adding TaskBar that have group orientation as horizontal --&gt;
+<!-- Adding TaskBar that have group orientation as horizontal -->
 
-&lt;syncfusion:TaskBar Name="taskBar" GroupMargin="5" GroupOrientation="Horizontal"&gt;
-
-
-
-    &lt;!-- Adding TaskBarItem --&gt;
-
-    &lt;syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1"&gt;
+<syncfusion:TaskBar Name="taskBar" GroupMargin="5" GroupOrientation="Horizontal">
 
 
 
-        &lt;!-- Adding content to TaskBarItem --&gt;
+    <!-- Adding TaskBarItem -->
 
-        &lt;StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch"&gt;
-
-            &lt;TextBlock TextWrapping="Wrap"&gt;
-
-This taskbar provides an UI similar to that of Windows XP.&lt;/TextBlock&gt;
-
-        &lt;/StackPanel&gt;
-
-    &lt;/syncfusion:TaskBarItem&gt;
+    <syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1">
 
 
 
-    &lt;!-- Adding TaskBarItem --&gt;
+        <!-- Adding content to TaskBarItem -->
 
-    &lt;syncfusion:TaskBarItem Name="taskBarItem2" Header="TaskBarItem2"&gt;
+        <StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch">
+
+            <TextBlock TextWrapping="Wrap">
+
+This taskbar provides an UI similar to that of Windows XP.</TextBlock>
+
+        </StackPanel>
+
+    </syncfusion:TaskBarItem>
 
 
 
-        &lt;!-- Adding content to TaskBarItem --&gt;
+    <!-- Adding TaskBarItem -->
 
-        &lt;StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch"&gt;
+    <syncfusion:TaskBarItem Name="taskBarItem2" Header="TaskBarItem2">
 
-            &lt;TextBlock TextWrapping="Wrap"&gt;
 
-Specify and customize the group margin.&lt;/TextBlock&gt;
 
-        &lt;/StackPanel&gt;
+        <!-- Adding content to TaskBarItem -->
 
-    &lt;/syncfusion:TaskBarItem&gt;
+        <StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch">
 
-&lt;/syncfusion:TaskBar&gt;
+            <TextBlock TextWrapping="Wrap">
+
+Specify and customize the group margin.</TextBlock>
+
+        </StackPanel>
+
+    </syncfusion:TaskBarItem>
+
+</syncfusion:TaskBar>
 
 
 
@@ -166,7 +166,7 @@ this.Content = taskBar;
 
 
 
-{ ![](Changing-Orientation-of-Taskbar_images/Changing-Orientation-of-Taskbar_img1.jpeg) | markdownify }
+{{ '![](Changing-Orientation-of-Taskbar_images/Changing-Orientation-of-Taskbar_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -186,15 +186,15 @@ The following code snippet illustrates handling the GroupOrientationChanged even
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Tasks the bar_ group orientation changed.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// <param name="d">The d.&lt;/param&gt;
+/// <param name="d">The d.</param>
 
-/// <param name="e">The &lt;see cref="System.Windows.DependencyPropertyChangedEventArgs"/&gt; instance 	containing the event data.&lt;/param&gt;
+/// <param name="e">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance 	containing the event data.</param>
 
 private void taskBar_GroupOrientationChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 

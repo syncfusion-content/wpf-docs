@@ -25,7 +25,7 @@ schedule.Appointments.Add(new ScheduleAppointment() { Status= new ScheduleAppoin
 
 
 
-{ ![](Schedule-Appointment-Status_images/Schedule-Appointment-Status_img1.png) | markdownify }
+{{ '![](Schedule-Appointment-Status_images/Schedule-Appointment-Status_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -53,7 +53,7 @@ The AppointmentStatusCollection property used to set the status to collection of
 
 
 
-{ ![](Schedule-Appointment-Status_images/Schedule-Appointment-Status_img2.png) | markdownify }
+{{ '![](Schedule-Appointment-Status_images/Schedule-Appointment-Status_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -85,7 +85,7 @@ The selected appointment can be marked by AppointmentSelectionBrush property.
 
 
 
-{ ![](Schedule-Appointment-Status_images/Schedule-Appointment-Status_img3.png) | markdownify }
+{{ '![](Schedule-Appointment-Status_images/Schedule-Appointment-Status_img3.png)' | markdownify }}
 {:.image }
 
 

@@ -17,7 +17,7 @@ TreeMapsare a growing trend in data visualization. It displays hierarchical in
 
 To create the SfTreeMap control through VisualStudio, drag SfTreeMap from Toolbox and drop it to the designer. It will generate the following the SfTreeMap control.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -34,7 +34,7 @@ The SfTreeMap control can also be created and configured using Expression Blend.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -66,15 +66,15 @@ In the following code example, the SfTreeMap control is created.
 
         Title="TreeMap Demo" WindowState="Maximized">
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;syncfusion:SfTreeMap&gt;
+        <syncfusion:SfTreeMap>
 
-        &lt;/syncfusion:SfTreeMap&gt;
+        </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -178,37 +178,37 @@ After defining the ItemsSource, set the DataContext of the TreeMap as shown here
 
 [XAML]
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;Grid.DataContext&gt;
+        <Grid.DataContext>
 
-            &lt;local:PopulationViewModel/&gt;
+            <local:PopulationViewModel/>
 
-        &lt;/Grid.DataContext&gt;
+        </Grid.DataContext>
 
-  &lt;syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" ItemsLayoutMode="Squarified" WeightValuePath="Population"/&gt;
+  <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" ItemsLayoutMode="Squarified" WeightValuePath="Population"/>
 
-&lt;syncfusion:SfTreeMap.Levels&gt;
+<syncfusion:SfTreeMap.Levels>
 
-                &lt;syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="5" HeaderHeight="30"&gt;
+                <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="5" HeaderHeight="30">
 
-                    &lt;syncfusion:TreeMapFlatLevel.HeaderTemplate&gt;
+                    <syncfusion:TreeMapFlatLevel.HeaderTemplate>
 
-                        &lt;DataTemplate&gt;
+                        <DataTemplate>
 
-                            &lt;TextBlock Text="{Binding Header}" Foreground="#D6D6D6" FontSize="18" FontWeight="Light" HorizontalAlignment="Left" VerticalAlignment="Center"/&gt;
+                            <TextBlock Text="{Binding Header}" Foreground="#D6D6D6" FontSize="18" FontWeight="Light" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
-                        &lt;/DataTemplate&gt;
+                        </DataTemplate>
 
-                    &lt;/syncfusion:TreeMapFlatLevel.HeaderTemplate&gt;
+                    </syncfusion:TreeMapFlatLevel.HeaderTemplate>
 
-                &lt;/syncfusion:TreeMapFlatLevel&gt;
+                </syncfusion:TreeMapFlatLevel>
 
 
 
-            &lt;/syncfusion:SfTreeMap.Levels&gt;
+            </syncfusion:SfTreeMap.Levels>
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
@@ -218,7 +218,7 @@ this.TreeMap.DataContext = new PopulationViewModel();
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 

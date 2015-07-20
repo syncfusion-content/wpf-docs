@@ -18,7 +18,7 @@ For setting the AllowSelection property, use the following code.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding calendar with allow selection of a date --&gt;&lt;syncfusion:CalendarEdit Name="calendarEdit" AllowSelection="True"/&gt;</td></tr>
+[XAML]<!-- Adding calendar with allow selection of a date --><syncfusion:CalendarEdit Name="calendarEdit" AllowSelection="True"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Allow selection of a datecalendarEdit.AllowSelection = true;//Adding calendarEdit as window contentthis.Content = calendarEdit;</td></tr>
@@ -27,7 +27,7 @@ For setting the AllowSelection property, use the following code.
 
 
 
-{ ![](Selecting-the-Date-and-Year-at-Run-Time_images/Selecting-the-Date-and-Year-at-Run-Time_img1.jpeg) | markdownify }
+{{ '![](Selecting-the-Date-and-Year-at-Run-Time_images/Selecting-the-Date-and-Year-at-Run-Time_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -42,14 +42,14 @@ To set the IsAllowYearSelection property, use the following code.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Setting IsAllowYearSelection property--&gt;&lt;syncfusion:CalendarEdit Name="calendarEdit" IsAllowYearSelection="True"/&gt;</td></tr>
+[XAML]<!-- Setting IsAllowYearSelection property--><syncfusion:CalendarEdit Name="calendarEdit" IsAllowYearSelection="True"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Allow selection of yearcalendarEdit.IsAllowYearSelection = true;//Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
 </table>
 
 
-{ ![](Selecting-the-Date-and-Year-at-Run-Time_images/Selecting-the-Date-and-Year-at-Run-Time_img2.jpeg) | markdownify }
+{{ '![](Selecting-the-Date-and-Year-at-Run-Time_images/Selecting-the-Date-and-Year-at-Run-Time_img2.jpeg)' | markdownify }}
 {:.image }
 
 

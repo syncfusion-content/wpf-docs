@@ -16,7 +16,7 @@ PivotSchemaDesigner for WPF can be support in PivotGrid samples so that PivotGri
 
 
 
-{ ![C:/Users/dwarageshmb/Desktop/Doc Images/PivotGrid WPF/7.png](PivotSchemaDesigner-for-WPF_images/PivotSchemaDesigner-for-WPF_img1.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Doc Images/PivotGrid WPF/7.png](PivotSchemaDesigner-for-WPF_images/PivotSchemaDesigner-for-WPF_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -37,7 +37,7 @@ The layout section is used to rearrange and reposition the fields in a PivotGrid
 
 Report filter is used to filter the entire report based on the selected item in the report filter. The Report filter pop-up window can be launched by clicking on the expander icon available in the right corner of each filter item.
 
-{ ![](PivotSchemaDesigner-for-WPF_images/PivotSchemaDesigner-for-WPF_img2.png) | markdownify }
+{{ '![](PivotSchemaDesigner-for-WPF_images/PivotSchemaDesigner-for-WPF_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -57,7 +57,7 @@ Values are used to display summary values.
 
 The Pivot Computation Information window is used to change or edit value format and summary type.
 
-{ ![](PivotSchemaDesigner-for-WPF_images/PivotSchemaDesigner-for-WPF_img3.png) | markdownify }
+{{ '![](PivotSchemaDesigner-for-WPF_images/PivotSchemaDesigner-for-WPF_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -67,8 +67,8 @@ The PivotTableDesigner can be bound to PivotGrid with the help of the PivotContr
 
 [XAML]
 
-&lt;!--PivotTable designer--&gt;
-&lt;syncfusion:PivotTableDesigner Grid.Column="1" PivotControl="{Binding ElementName=pivotGrid1}"/&gt;
+<!--PivotTable designer-->
+<syncfusion:PivotTableDesigner Grid.Column="1" PivotControl="{Binding ElementName=pivotGrid1}"/>
 
 ### Features
 
@@ -82,11 +82,11 @@ This feature enables the user to load required set of items in PivotSchemaDesign
 
 The following screen shot shows a PivotSchemaDesigner control with all items and required items in a pivot table field list:
 
-{ ![C:/Users/diana/Desktop/AllItems.png](PivotSchemaDesigner-for-WPF_images/PivotSchemaDesigner-for-WPF_img4.png) | markdownify }
+{{ '![C:/Users/diana/Desktop/AllItems.png](PivotSchemaDesigner-for-WPF_images/PivotSchemaDesigner-for-WPF_img4.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/diana/Desktop/MinimumItems.png](PivotSchemaDesigner-for-WPF_images/PivotSchemaDesigner-for-WPF_img5.png) | markdownify }
+{{ '![C:/Users/diana/Desktop/MinimumItems.png](PivotSchemaDesigner-for-WPF_images/PivotSchemaDesigner-for-WPF_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -116,7 +116,7 @@ Sample Link
 
 A sample is placed in the following location:
 
-SystemDrive\Users\&lt;user_name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version_number&gt;\BI\WPF\PivotAnalysis.Wpf\Product Showcase\PivotGridDemo
+SystemDrive\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<Version_number>\BI\WPF\PivotAnalysis.Wpf\Product Showcase\PivotGridDemo
 
 ### Sample IList Data
 

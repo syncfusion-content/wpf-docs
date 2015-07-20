@@ -21,7 +21,7 @@ When reducing the size of the schedule in week and month views, headers may be o
 
                                ScheduleType="Week">                           
 
-        &lt;/syncfusion:SfSchedule&gt;
+        </syncfusion:SfSchedule>
 
 
 
@@ -47,21 +47,21 @@ When reducing the size of the schedule in week and month views, headers may be o
 
 
 
-{ ![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img1.png) | markdownify }
+{{ '![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img1.png)' | markdownify }}
 {:.image }
 
 
-__{ ![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img2.png) | markdownify }
+__{{ '![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img2.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img3.png) | markdownify }
+{{ '![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img3.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img4.png) | markdownify }
+{{ '![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -81,7 +81,7 @@ In the time line view, the width of the hours can be automatically adjusted by e
 
                               ScheduleType="TimeLine">                           
 
-        &lt;/syncfusion:SfSchedule&gt;
+        </syncfusion:SfSchedule>
 
 
 
@@ -97,13 +97,13 @@ In the time line view, the width of the hours can be automatically adjusted by e
 </table>
 
 
-{ ![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img5.png) | markdownify }
+{{ '![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img5.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img6.png) | markdownify }
+{{ '![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img6.png)' | markdownify }}
 {:.image }
 
 

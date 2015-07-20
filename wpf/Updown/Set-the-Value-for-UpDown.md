@@ -17,7 +17,7 @@ A value can be set for the UpDown control as shown in the following code example
 
  [XAML]
 
-&lt;syncfusion:UpDown Name="upDown" Value="10"/&gt;
+<syncfusion:UpDown Name="upDown" Value="10"/>
 
 
 

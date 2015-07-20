@@ -165,7 +165,7 @@ public class TreeViewModel
 
 
 
-{ ![](Populating-Items_images/Populating-Items_img1.png) | markdownify }
+{{ '![](Populating-Items_images/Populating-Items_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -191,13 +191,13 @@ ItemTemplate property of the Tree Navigator can be used to customize the display
 
                                     >
 
-        &lt;navigation:SfTreeNavigator.ItemTemplate&gt;
+        <navigation:SfTreeNavigator.ItemTemplate>
 
-            &lt;primitives:HierarchicalDataTemplate ItemsSource="{Binding Models}"&gt;
+            <primitives:HierarchicalDataTemplate ItemsSource="{Binding Models}">
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-                    &lt;StackPanel Orientation="Horizontal"&gt;
+                    <StackPanel Orientation="Horizontal">
 
                         <TextBlock Text="{Binding Header}" 
 
@@ -205,15 +205,15 @@ ItemTemplate property of the Tree Navigator can be used to customize the display
 
 VerticalAlignment="Center" Margin="18 0 0 0"/>
 
-                    &lt;/StackPanel&gt;
+                    </StackPanel>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-                &lt;/primitives:HierarchicalDataTemplate&gt;
+                </primitives:HierarchicalDataTemplate>
 
-        &lt;/navigation:SfTreeNavigator.ItemTemplate&gt;
+        </navigation:SfTreeNavigator.ItemTemplate>
 
- &lt;/navigation:SfTreeNavigator&gt;
+ </navigation:SfTreeNavigator>
 
 
 
@@ -223,7 +223,7 @@ This will populate the Tree Navigator as follows.
 
 
 
-{ ![3](Populating-Items_images/Populating-Items_img2.png) | markdownify }
+{{ '![3](Populating-Items_images/Populating-Items_img2.png)' | markdownify }}
 {:.image }
 
 

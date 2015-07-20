@@ -21,25 +21,25 @@ The following code sample shows how to create the RadialMenu from code-behind an
 
 
 
-&lt;Page xmlns:navigation="clr-namespace:Syncfusion.Windows.Controls.Navigation;assembly=Syncfusion.SfRadialMenu.Wpf"&gt; 
+<Page xmlns:navigation="clr-namespace:Syncfusion.Windows.Controls.Navigation;assembly=Syncfusion.SfRadialMenu.Wpf"> 
 
-     &lt;Grid&gt;
+     <Grid>
 
-&lt;navigation:SfRadialMenu&gt; 
+<navigation:SfRadialMenu> 
 
-&lt;navigation:SfRadialMenuItem Header="Bold"/&gt;
+<navigation:SfRadialMenuItem Header="Bold"/>
 
-&lt;navigation:RadialMenuItem Header="Cut"/&gt; 
+<navigation:RadialMenuItem Header="Cut"/> 
 
-&lt;navigation:SfRadialMenuItem Header="Copy"/&gt; 
+<navigation:SfRadialMenuItem Header="Copy"/> 
 
-&lt;navigation:SfRadialMenuItem Header="Paste"/&gt; 
+<navigation:SfRadialMenuItem Header="Paste"/> 
 
-&lt;/navigation:SfRadialMenu&gt; 
+</navigation:SfRadialMenu> 
 
-     &lt;/Grid&gt; 
+     </Grid> 
 
-&lt;/Page&gt; 
+</Page> 
 
 
 

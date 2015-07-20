@@ -19,11 +19,11 @@ The Tick Frequency property is used to define the number of ticks along the trac
 
 [XAML]
 
-&lt;editors:SfRangeSlider Width="200"  Minimum="0"  Maximum="100" TickFrequency="20" Value="40" /&gt;
+<editors:SfRangeSlider Width="200"  Minimum="0"  Maximum="100" TickFrequency="20" Value="40" />
 
 
 
-{ ![](Ticks_images/Ticks_img1.png) | markdownify }
+{{ '![](Ticks_images/Ticks_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -37,7 +37,7 @@ When the SnapsTo property is set to StepValues, the StepFrequency property is us
 
 [XAML]
 
-&lt;editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0"  Maximum="100" StepFrequency="20" Value="40"/&gt;
+<editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0"  Maximum="100" StepFrequency="20" Value="40"/>
 
 Snaps To 
 
@@ -78,7 +78,7 @@ TickFrequency="20" TickPlacement="BottomRight" Value="40"   />
 
 
 
-{ ![](Ticks_images/Ticks_img2.jpeg) | markdownify }
+{{ '![](Ticks_images/Ticks_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -92,11 +92,11 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 [XAML]
 
-&lt;editors:SfRangeSlider Width="200"  Minimum="0"   Maximum="100" TickFrequency="20" TickPlacement="TopLeft"  Value="40"   /&gt;
+<editors:SfRangeSlider Width="200"  Minimum="0"   Maximum="100" TickFrequency="20" TickPlacement="TopLeft"  Value="40"   />
 
 
 
-{ ![](Ticks_images/Ticks_img3.jpeg) | markdownify }
+{{ '![](Ticks_images/Ticks_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -110,11 +110,11 @@ Tick marks are placed on both sides of the track either in horizontal or vertica
 
 [XAML]
 
-&lt;editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" TickFrequency="20"  TickPlacement="Outside" Value="40"/&gt;
+<editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" TickFrequency="20"  TickPlacement="Outside" Value="40"/>
 
 
 
-{ ![](Ticks_images/Ticks_img4.jpeg) | markdownify }
+{{ '![](Ticks_images/Ticks_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -126,11 +126,11 @@ Ticks are placed inside the track.
 
 [XAML]
 
-&lt;editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" TickFrequency="20" TickPlacement="Inline" Value="40" /&gt;
+<editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" TickFrequency="20" TickPlacement="Inline" Value="40" />
 
 
 
-{ ![](Ticks_images/Ticks_img5.jpeg) | markdownify }
+{{ '![](Ticks_images/Ticks_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -142,11 +142,11 @@ No Tick mark appears.
 
 [XAML]
 
-&lt;editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" TickFrequency="20" TickPlacement="None" Value="40" /&gt;
+<editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" TickFrequency="20" TickPlacement="None" Value="40" />
 
 
 
-{ ![](Ticks_images/Ticks_img6.jpeg) | markdownify }
+{{ '![](Ticks_images/Ticks_img6.jpeg)' | markdownify }}
 {:.image }
 
 

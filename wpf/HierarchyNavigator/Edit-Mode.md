@@ -18,7 +18,7 @@ This feature allows you to easily edit a navigation path by using the AutoComple
 
 
 
-{ ![](Edit-Mode_images/Edit-Mode_img1.png) | markdownify }
+{{ '![](Edit-Mode_images/Edit-Mode_img1.png)' | markdownify }}
 {:.image }
 
 

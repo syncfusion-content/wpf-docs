@@ -30,13 +30,13 @@ The ItemsSource set for SfTreeMap must be a flat collection of data. The followi
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.DataContext&gt;
+        <Grid.DataContext>
 
-            &lt;local:PopulationViewModel/&gt;
+            <local:PopulationViewModel/>
 
-        &lt;/Grid.DataContext&gt;
+        </Grid.DataContext>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
 
@@ -46,7 +46,7 @@ The ItemsSource set for SfTreeMap must be a flat collection of data. The followi
 
 
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
@@ -124,13 +124,13 @@ You must specify the GroupPath for each and every flat level of TreeMap. It is a
 
 [XAML]
 
-&lt;Grid Background="Black"&gt;
+<Grid Background="Black">
 
-    &lt;Grid.DataContext&gt;
+    <Grid.DataContext>
 
-        &lt;local:PopulationViewModel/&gt;
+        <local:PopulationViewModel/>
 
-    &lt;/Grid.DataContext&gt;
+    </Grid.DataContext>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
 
@@ -138,29 +138,29 @@ You must specify the GroupPath for each and every flat level of TreeMap. It is a
 
                           ColorValuePath="Growth">
 
-        &lt;syncfusion:SfTreeMap.Levels&gt;
+        <syncfusion:SfTreeMap.Levels>
 
-                &lt;syncfusion:TreeMapFlatLevel GroupPath="Continent” HeaderHeight="30"&gt;
+                <syncfusion:TreeMapFlatLevel GroupPath="Continent” HeaderHeight="30">
 
-                    &lt;syncfusion:TreeMapFlatLevel.HeaderTemplate&gt;
+                    <syncfusion:TreeMapFlatLevel.HeaderTemplate>
 
-                        &lt;DataTemplate&gt;
+                        <DataTemplate>
 
-                            &lt;TextBlock Text="{Binding Header}" Foreground="#D6D6D6" FontSize="18" FontWeight="Light" HorizontalAlignment="Left" VerticalAlignment="Center"/&gt;
+                            <TextBlock Text="{Binding Header}" Foreground="#D6D6D6" FontSize="18" FontWeight="Light" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
-                        &lt;/DataTemplate&gt;
+                        </DataTemplate>
 
-                    &lt;/syncfusion:TreeMapFlatLevel.HeaderTemplate&gt;
+                    </syncfusion:TreeMapFlatLevel.HeaderTemplate>
 
-                &lt;/syncfusion:TreeMapFlatLevel&gt;
+                </syncfusion:TreeMapFlatLevel>
 
 
 
-            &lt;/syncfusion:SfTreeMap.Levels&gt;
+            </syncfusion:SfTreeMap.Levels>
 
-        &lt;/syncfusion:SfTreeMap&gt;
+        </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
@@ -176,13 +176,13 @@ You can specify GroupGap for separating the items of every flat level and it is 
 
 
 
-&lt;Grid Background="Black"&gt;
+<Grid Background="Black">
 
-    &lt;Grid.DataContext&gt;
+    <Grid.DataContext>
 
-        &lt;local:PopulationViewModel/&gt;
+        <local:PopulationViewModel/>
 
-    &lt;/Grid.DataContext&gt;
+    </Grid.DataContext>
 
     <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
 
@@ -190,21 +190,21 @@ You can specify GroupGap for separating the items of every flat level and it is 
 
                           ColorValuePath="Growth">
 
-&lt;syncfusion:SfTreeMap.Levels&gt;
+<syncfusion:SfTreeMap.Levels>
 
-                &lt;syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="5" HeaderHeight="30"&gt;
-
-
-
-                &lt;/syncfusion:TreeMapFlatLevel&gt;
+                <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="5" HeaderHeight="30">
 
 
 
-            &lt;/syncfusion:SfTreeMap.Levels&gt;
+                </syncfusion:TreeMapFlatLevel>
 
-        &lt;/syncfusion:SfTreeMap&gt;
 
-    &lt;/Grid&gt;
+
+            </syncfusion:SfTreeMap.Levels>
+
+        </syncfusion:SfTreeMap>
+
+    </Grid>
 
 
 
@@ -218,13 +218,13 @@ GroupBorderBrush provides the border color for the group levels.
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.Resources&gt;
+        <Grid.Resources>
 
-            &lt;local:CountrySalesCollection x:Key="countrySalesCollection"/&gt;
+            <local:CountrySalesCollection x:Key="countrySalesCollection"/>
 
-        &lt;/Grid.Resources&gt;
+        </Grid.Resources>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource 
 
@@ -234,19 +234,19 @@ GroupBorderBrush provides the border color for the group levels.
 
                               ColorValuePath="Expense">
 
-            &lt;syncfusion:SfTreeMap.Levels&gt;
+            <syncfusion:SfTreeMap.Levels>
 
-                 &lt;syncfusion:TreeMapFlatLevel GroupBorderBrush="Red" GroupPath="Continent" GroupBorderThickness="3"&gt;
+                 <syncfusion:TreeMapFlatLevel GroupBorderBrush="Red" GroupPath="Continent" GroupBorderThickness="3">
 
 
 
-                &lt;/syncfusion:TreeMapFlatLevel&gt;
+                </syncfusion:TreeMapFlatLevel>
 
-                           &lt;/syncfusion:SfTreeMap.Levels&gt;
+                           </syncfusion:SfTreeMap.Levels>
 
-        &lt;/syncfusion:SfTreeMap&gt;
+        </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
@@ -260,13 +260,13 @@ GroupBackground specifies the background brush for the levels. The GroupBackgrou
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.Resources&gt;
+        <Grid.Resources>
 
-            &lt;local:CountrySalesCollection x:Key="countrySalesCollection"/&gt;
+            <local:CountrySalesCollection x:Key="countrySalesCollection"/>
 
-        &lt;/Grid.Resources&gt;
+        </Grid.Resources>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource 
 
@@ -276,17 +276,17 @@ GroupBackground specifies the background brush for the levels. The GroupBackgrou
 
                               ColorValuePath="Expense">
 
-            &lt;syncfusion:SfTreeMap.Levels&gt;
+            <syncfusion:SfTreeMap.Levels>
 
-                  &lt;syncfusion:TreeMapFlatLevel GroupPadding="5" GroupPath="Continent" GroupBackground="Red"&gt;                                      
+                  <syncfusion:TreeMapFlatLevel GroupPadding="5" GroupPath="Continent" GroupBackground="Red">                                      
 
-                &lt;/syncfusion:TreeMapFlatLevel&gt;
+                </syncfusion:TreeMapFlatLevel>
 
-             &lt;/syncfusion:SfTreeMap.Levels&gt;
+             </syncfusion:SfTreeMap.Levels>
 
-        &lt;/syncfusion:SfTreeMap&gt;
+        </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
@@ -304,13 +304,13 @@ The ItemsSource set for TreeMap must be a nested data collection. The following 
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.Resources&gt;
+        <Grid.Resources>
 
-            &lt;local:CountrySalesCollection x:Key="countrySalesCollection"/&gt;
+            <local:CountrySalesCollection x:Key="countrySalesCollection"/>
 
-        &lt;/Grid.Resources&gt;
+        </Grid.Resources>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource 
 
@@ -320,15 +320,15 @@ The ItemsSource set for TreeMap must be a nested data collection. The following 
 
                               ColorValuePath="Expense">
 
-            &lt;syncfusion:SfTreeMap.Levels&gt;
+            <syncfusion:SfTreeMap.Levels>
 
-                &lt;syncfusion:TreeMapHierarchicalLevel/&gt;
+                <syncfusion:TreeMapHierarchicalLevel/>
 
-            &lt;/syncfusion:SfTreeMap.Levels&gt;
+            </syncfusion:SfTreeMap.Levels>
 
-        &lt;/syncfusion:SfTreeMap&gt;
+        </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
@@ -576,13 +576,13 @@ You must specify ChildPath for each and every hierarchical level of TreeMap. It 
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.Resources&gt;
+        <Grid.Resources>
 
-            &lt;local:CountrySalesCollection x:Key="countrySalesCollection"/&gt;
+            <local:CountrySalesCollection x:Key="countrySalesCollection"/>
 
-        &lt;/Grid.Resources&gt;
+        </Grid.Resources>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource 
 
@@ -592,25 +592,25 @@ You must specify ChildPath for each and every hierarchical level of TreeMap. It 
 
                               ColorValuePath="Expense">
 
-            &lt;syncfusion:SfTreeMap.Levels&gt;
+            <syncfusion:SfTreeMap.Levels>
 
                 <syncfusion:TreeMapHierarchicalLevel
 
                               ChildPath="RegionalSalesCollection">
 
-                     &lt;/syncfusion:TreeMapHierarchicalLevel&gt;
+                     </syncfusion:TreeMapHierarchicalLevel>
 
-            &lt;/syncfusion:SfTreeMap.Levels&gt;
+            </syncfusion:SfTreeMap.Levels>
 
-        &lt;/syncfusion:SfTreeMap&gt;
+        </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt;
-
-
+    </Grid>
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/Note.png](TreeMap-Levels_images/TreeMap-Levels_img1.png) | markdownify }
+
+
+{{ '![C:/Users/ApoorvahR/Desktop/Note.png](TreeMap-Levels_images/TreeMap-Levels_img1.png)' | markdownify }}
 {:.image }
 _Note: The specified field must be a collection of sub class (object) specified in the nested data collection._
 
@@ -626,13 +626,13 @@ You can specify ChildGap for separating the child items of every level and it is
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.Resources&gt;
+        <Grid.Resources>
 
-            &lt;local:CountrySalesCollection x:Key="countrySalesCollection"/&gt;
+            <local:CountrySalesCollection x:Key="countrySalesCollection"/>
 
-        &lt;/Grid.Resources&gt;
+        </Grid.Resources>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding Source={StaticResource 
 
@@ -642,27 +642,27 @@ You can specify ChildGap for separating the child items of every level and it is
 
                               ColorValuePath="Expense">
 
-            &lt;syncfusion:SfTreeMap.Levels&gt;
+            <syncfusion:SfTreeMap.Levels>
 
                 <syncfusion:TreeMapHierarchicalLevel ChildGap="10"
 
                               ChildPath="RegionalSalesCollection">
 
-                     &lt;/syncfusion:TreeMapHierarchicalLevel&gt;
+                     </syncfusion:TreeMapHierarchicalLevel>
 
-            &lt;/syncfusion:SfTreeMap.Levels&gt;
+            </syncfusion:SfTreeMap.Levels>
 
-        &lt;/syncfusion:SfTreeMap&gt;
+        </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt;
-
-
+    </Grid>
 
 
 
 
 
-{ ![](TreeMap-Levels_images/TreeMap-Levels_img2.png) | markdownify }
+
+
+{{ '![](TreeMap-Levels_images/TreeMap-Levels_img2.png)' | markdownify }}
 {:.image }
 
 

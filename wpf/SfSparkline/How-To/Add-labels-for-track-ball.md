@@ -13,15 +13,15 @@ We can add labels for track ball to show the corresponding values. In order to a
 
 [XAML]
 
-      &lt;Page.DataContext&gt;
+      <Page.DataContext>
 
-            &lt;local:UsersViewModel/&gt;
+            <local:UsersViewModel/>
 
-      &lt;/Page.DataContext&gt;
+      </Page.DataContext>
 
-            &lt;Syncfusion:SfLineSparkline ShowTrackBall="True" OnSparklineMouseMove="SfLineSparkline_OnSparklineMouseMove" x:Name="sparkline" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" &gt;
+            <Syncfusion:SfLineSparkline ShowTrackBall="True" OnSparklineMouseMove="SfLineSparkline_OnSparklineMouseMove" x:Name="sparkline" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
 
-            &lt;/Syncfusion:SfLineSparkline&gt;
+            </Syncfusion:SfLineSparkline>
 
 
 
@@ -55,7 +55,7 @@ We can add labels for track ball to show the corresponding values. In order to a
 
 Following is the snapshot for track ball labels,
 
-{ ![C:/Users/ApoorvahR/Desktop/13.png](Add-labels-for-track-ball_images/Add-labels-for-track-ball_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/13.png](Add-labels-for-track-ball_images/Add-labels-for-track-ball_img1.png)' | markdownify }}
 {:.image }
 
 

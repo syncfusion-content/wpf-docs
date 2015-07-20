@@ -33,19 +33,19 @@ The leaf nodes of TreeMap can be colored by setting LeafColorMapping of TreeMap.
 
                        ColorValuePath="Growth">
 
-    &lt;syncfusion:SfTreeMap.LeafColorMapping&gt;
+    <syncfusion:SfTreeMap.LeafColorMapping>
 
-        &lt;syncfusion:UniColorMapping Color="Crimson"/&gt;
+        <syncfusion:UniColorMapping Color="Crimson"/>
 
-    &lt;/syncfusion:SfTreeMap.LeafColorMapping&gt;
+    </syncfusion:SfTreeMap.LeafColorMapping>
 
-    &lt;syncfusion:SfTreeMap.Levels&gt;
+    <syncfusion:SfTreeMap.Levels>
 
-        &lt;syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/&gt;
+        <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/>
 
-    &lt;/syncfusion:SfTreeMap.Levels&gt;
+    </syncfusion:SfTreeMap.Levels>
 
- &lt;/syncfusion:SfTreeMap&gt;
+ </syncfusion:SfTreeMap>
 
 
 
@@ -69,37 +69,37 @@ The headers of TreeMap level can also be colored using ColorMapping property of 
 
                        ColorValuePath="Growth">
 
-    &lt;syncfusion:SfTreeMap.LeafColorMapping&gt;
+    <syncfusion:SfTreeMap.LeafColorMapping>
 
-        &lt;syncfusion:UniColorMapping Color="Orange"/&gt;
+        <syncfusion:UniColorMapping Color="Orange"/>
 
-    &lt;/syncfusion:SfTreeMap.LeafColorMapping&gt;
+    </syncfusion:SfTreeMap.LeafColorMapping>
 
-    &lt;syncfusion:SfTreeMap.Levels&gt;
+    <syncfusion:SfTreeMap.Levels>
 
-        &lt;syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10" HeaderHeight="20"&gt;
+        <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10" HeaderHeight="20">
 
-            &lt;syncfusion:TreeMapFlatLevel.ColorMapping&gt;
+            <syncfusion:TreeMapFlatLevel.ColorMapping>
 
-                &lt;syncfusion:UniColorMapping Color="YellowGreen"/&gt;
+                <syncfusion:UniColorMapping Color="YellowGreen"/>
 
-            &lt;/syncfusion:TreeMapFlatLevel.ColorMapping&gt;
+            </syncfusion:TreeMapFlatLevel.ColorMapping>
 
-        &lt;/syncfusion:TreeMapFlatLevel&gt;
+        </syncfusion:TreeMapFlatLevel>
 
-        &lt;syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5" HeaderHeight="15"&gt;
+        <syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5" HeaderHeight="15">
 
-            &lt;syncfusion:TreeMapFlatLevel.ColorMapping&gt;
+            <syncfusion:TreeMapFlatLevel.ColorMapping>
 
-                &lt;syncfusion:UniColorMapping Color="Crimson"/&gt;
+                <syncfusion:UniColorMapping Color="Crimson"/>
 
-            &lt;/syncfusion:TreeMapFlatLevel.ColorMapping&gt;
+            </syncfusion:TreeMapFlatLevel.ColorMapping>
 
-        &lt;/syncfusion:TreeMapFlatLevel&gt;
+        </syncfusion:TreeMapFlatLevel>
 
-    &lt;/syncfusion:SfTreeMap.Levels&gt;
+    </syncfusion:SfTreeMap.Levels>
 
- &lt;/syncfusion:SfTreeMap&gt;  
+ </syncfusion:SfTreeMap>  
 
 
 
@@ -113,13 +113,13 @@ TreeMap leaf nodes can be colored with the help of Color property specified usin
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.DataContext&gt;
+        <Grid.DataContext>
 
-            &lt;local:PopulationViewModel/&gt;
+            <local:PopulationViewModel/>
 
-        &lt;/Grid.DataContext&gt;
+        </Grid.DataContext>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"                              
 
@@ -127,13 +127,13 @@ TreeMap leaf nodes can be colored with the help of Color property specified usin
 
                               ColorValuePath="Growth">
 
-            &lt;syncfusion:SfTreeMap.LeafColorMapping&gt;
+            <syncfusion:SfTreeMap.LeafColorMapping>
 
-                &lt;syncfusion:UniColorMapping Color="Crimson"/&gt;
+                <syncfusion:UniColorMapping Color="Crimson"/>
 
-            &lt;/syncfusion:SfTreeMap.LeafColorMapping&gt;
+            </syncfusion:SfTreeMap.LeafColorMapping>
 
-            &lt;syncfusion:SfTreeMap.Levels&gt;
+            <syncfusion:SfTreeMap.Levels>
 
                 <syncfusion:TreeMapFlatLevel GroupPath="Continent" 
 
@@ -145,19 +145,19 @@ TreeMap leaf nodes can be colored with the help of Color property specified usin
 
                                              ShowLabels="True"/>
 
-            &lt;/syncfusion:SfTreeMap.Levels&gt;
+            </syncfusion:SfTreeMap.Levels>
 
-        &lt;/syncfusion:SfTreeMap&gt;
+        </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt;
-
-
+    </Grid>
 
 
 
 
 
-{ ![](ColorMapping_images/ColorMapping_img1.png) | markdownify }
+
+
+{{ '![](ColorMapping_images/ColorMapping_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -175,43 +175,43 @@ The leaf nodes of TreeMap can be colored based upon the range, such as From and 
 
                       WeightValuePath="Population" ColorValuePath="Growth">
 
-    &lt;syncfusion:SfTreeMap.LeafColorMapping&gt;
+    <syncfusion:SfTreeMap.LeafColorMapping>
 
-        &lt;syncfusion:RangeBrushColorMapping&gt;
+        <syncfusion:RangeBrushColorMapping>
 
-            &lt;syncfusion:RangeBrushColorMapping.Brushes&gt;
+            <syncfusion:RangeBrushColorMapping.Brushes>
 
-                &lt;syncfusion:RangeBrush From="0" To="1" Color="#A4C400"/&gt;
+                <syncfusion:RangeBrush From="0" To="1" Color="#A4C400"/>
 
-                &lt;syncfusion:RangeBrush From="1" To="2" Color="#AA00FF"/&gt;
+                <syncfusion:RangeBrush From="1" To="2" Color="#AA00FF"/>
 
-                &lt;syncfusion:RangeBrush From="2" To="3" Color="#F0A30A"/&gt;
+                <syncfusion:RangeBrush From="2" To="3" Color="#F0A30A"/>
 
-                &lt;syncfusion:RangeBrush From="3" To="4" Color="#1BA1E2"/&gt;
+                <syncfusion:RangeBrush From="3" To="4" Color="#1BA1E2"/>
 
-            &lt;/syncfusion:RangeBrushColorMapping.Brushes&gt;
+            </syncfusion:RangeBrushColorMapping.Brushes>
 
-        &lt;/syncfusion:RangeBrushColorMapping&gt;
+        </syncfusion:RangeBrushColorMapping>
 
-    &lt;/syncfusion:SfTreeMap.LeafColorMapping&gt;
+    </syncfusion:SfTreeMap.LeafColorMapping>
 
-    &lt;syncfusion:SfTreeMap.Levels&gt;
+    <syncfusion:SfTreeMap.Levels>
 
-        &lt;syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/&gt;
+        <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/>
 
         <syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5"
 
                                      ShowLabels="True"/>
 
-    &lt;/syncfusion:SfTreeMap.Levels&gt;
+    </syncfusion:SfTreeMap.Levels>
 
-&lt;/syncfusion:SfTreeMap&gt;
-
-
+</syncfusion:SfTreeMap>
 
 
 
-{ ![](ColorMapping_images/ColorMapping_img2.png) | markdownify }
+
+
+{{ '![](ColorMapping_images/ColorMapping_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -229,33 +229,33 @@ The leaf nodes of TreeMap can be colored based upon the Color specified using De
 
                       WeightValuePath="Population" ColorValuePath="Growth">
 
-    &lt;syncfusion:SfTreeMap.LeafColorMapping&gt;
+    <syncfusion:SfTreeMap.LeafColorMapping>
 
         <syncfusion:DesaturationColorMapping From="1" To="0.5" 
 
                                              RangeMinimum="0" RangeMaximum="4" Color="DeepSkyBlue">
 
-        &lt;/syncfusion:DesaturationColorMapping&gt;
+        </syncfusion:DesaturationColorMapping>
 
-    &lt;/syncfusion:SfTreeMap.LeafColorMapping&gt;
+    </syncfusion:SfTreeMap.LeafColorMapping>
 
-    &lt;syncfusion:SfTreeMap.Levels&gt;
+    <syncfusion:SfTreeMap.Levels>
 
-        &lt;syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/&gt;
+        <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/>
 
         <syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5"
 
                                      ShowLabels="True"/>
 
-    &lt;/syncfusion:SfTreeMap.Levels&gt;
+    </syncfusion:SfTreeMap.Levels>
 
-&lt;/syncfusion:SfTreeMap&gt;
-
-
+</syncfusion:SfTreeMap>
 
 
 
-{ ![](ColorMapping_images/ColorMapping_img3.png) | markdownify }
+
+
+{{ '![](ColorMapping_images/ColorMapping_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -273,47 +273,47 @@ The leaf nodes are colored by using the brushes mentioned in Colors collection o
 
                       WeightValuePath="Population" ColorValuePath="Growth">
 
-    &lt;syncfusion:SfTreeMap.LeafColorMapping&gt;
+    <syncfusion:SfTreeMap.LeafColorMapping>
 
-        &lt;syncfusion:PaletteColorMapping&gt;
+        <syncfusion:PaletteColorMapping>
 
-            &lt;syncfusion:PaletteColorMapping.Colors&gt;
+            <syncfusion:PaletteColorMapping.Colors>
 
-                &lt;SolidColorBrush Color="Red"/&gt;&lt;SolidColorBrush Color="Blue"/&gt;
+                <SolidColorBrush Color="Red"/><SolidColorBrush Color="Blue"/>
 
-                &lt;SolidColorBrush Color="Green"/&gt;&lt;SolidColorBrush Color="Yellow"/&gt;&lt;SolidColorBrush Color="Orange"/&gt;&lt;SolidColorBrush Color="Orchid"/&gt;&lt;SolidColorBrush Color="Brown"/&gt;&lt;SolidColorBrush Color="BlueViolet"/&gt;&lt;SolidColorBrush Color="OrangeRed"/&gt;
+                <SolidColorBrush Color="Green"/><SolidColorBrush Color="Yellow"/><SolidColorBrush Color="Orange"/><SolidColorBrush Color="Orchid"/><SolidColorBrush Color="Brown"/><SolidColorBrush Color="BlueViolet"/><SolidColorBrush Color="OrangeRed"/>
 
-                &lt;SolidColorBrush Color="Magenta"/&gt;
+                <SolidColorBrush Color="Magenta"/>
 
-                &lt;SolidColorBrush Color="Olive"/&gt;
+                <SolidColorBrush Color="Olive"/>
 
-                &lt;SolidColorBrush Color="Crimson"/&gt;
+                <SolidColorBrush Color="Crimson"/>
 
-                &lt;SolidColorBrush Color="DeepSkyBlue"/&gt;
+                <SolidColorBrush Color="DeepSkyBlue"/>
 
-            &lt;/syncfusion:PaletteColorMapping.Colors&gt;
+            </syncfusion:PaletteColorMapping.Colors>
 
-        &lt;/syncfusion:PaletteColorMapping&gt;
+        </syncfusion:PaletteColorMapping>
 
-    &lt;/syncfusion:SfTreeMap.LeafColorMapping&gt;
+    </syncfusion:SfTreeMap.LeafColorMapping>
 
-    &lt;syncfusion:SfTreeMap.Levels&gt;
+    <syncfusion:SfTreeMap.Levels>
 
-        &lt;syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/&gt;
+        <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/>
 
         <syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5"
 
                                      ShowLabels="True"/>
 
-    &lt;/syncfusion:SfTreeMap.Levels&gt;
+    </syncfusion:SfTreeMap.Levels>
 
-&lt;/syncfusion:SfTreeMap&gt;
-
-
+</syncfusion:SfTreeMap>
 
 
 
-{ ![](ColorMapping_images/ColorMapping_img4.png) | markdownify }
+
+
+{{ '![](ColorMapping_images/ColorMapping_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -333,67 +333,67 @@ The leaf nodes are colored by using different ColorMappings available in the Tre
 
 
 
-            &lt;syncfusion:SfTreeMap.GroupColorMappings&gt;
+            <syncfusion:SfTreeMap.GroupColorMappings>
 
-                &lt;syncfusion:GroupColorMapping GroupID="North America"&gt;
+                <syncfusion:GroupColorMapping GroupID="North America">
 
-                    &lt;syncfusion:GroupColorMapping.TreeMapColorMapping&gt;
+                    <syncfusion:GroupColorMapping.TreeMapColorMapping>
 
-                        &lt;syncfusion:DesaturationColorMapping From="1" To="0.1" Color="#F3D240" RangeMinimum="0" RangeMaximum="6"/&gt;
+                        <syncfusion:DesaturationColorMapping From="1" To="0.1" Color="#F3D240" RangeMinimum="0" RangeMaximum="6"/>
 
-                    &lt;/syncfusion:GroupColorMapping.TreeMapColorMapping&gt;
+                    </syncfusion:GroupColorMapping.TreeMapColorMapping>
 
-                &lt;/syncfusion:GroupColorMapping&gt;
+                </syncfusion:GroupColorMapping>
 
-                &lt;syncfusion:GroupColorMapping GroupID="Asia"&gt;
+                <syncfusion:GroupColorMapping GroupID="Asia">
 
-                    &lt;syncfusion:GroupColorMapping.TreeMapColorMapping&gt;
+                    <syncfusion:GroupColorMapping.TreeMapColorMapping>
 
-                        &lt;syncfusion:DesaturationColorMapping From="1" To="0.1" Color="#77D8D8" RangeMinimum="0" RangeMaximum="7"/&gt;
+                        <syncfusion:DesaturationColorMapping From="1" To="0.1" Color="#77D8D8" RangeMinimum="0" RangeMaximum="7"/>
 
-                    &lt;/syncfusion:GroupColorMapping.TreeMapColorMapping&gt;
+                    </syncfusion:GroupColorMapping.TreeMapColorMapping>
 
-                &lt;/syncfusion:GroupColorMapping&gt;
+                </syncfusion:GroupColorMapping>
 
-                &lt;syncfusion:GroupColorMapping GroupID="Africa"&gt;
+                <syncfusion:GroupColorMapping GroupID="Africa">
 
-                    &lt;syncfusion:GroupColorMapping.TreeMapColorMapping&gt;
+                    <syncfusion:GroupColorMapping.TreeMapColorMapping>
 
-                        &lt;syncfusion:DesaturationColorMapping From="1" To="0.1" Color="#faafbe" RangeMinimum="0" RangeMaximum="6"/&gt;
+                        <syncfusion:DesaturationColorMapping From="1" To="0.1" Color="#faafbe" RangeMinimum="0" RangeMaximum="6"/>
 
-                    &lt;/syncfusion:GroupColorMapping.TreeMapColorMapping&gt;
+                    </syncfusion:GroupColorMapping.TreeMapColorMapping>
 
-                &lt;/syncfusion:GroupColorMapping&gt;
+                </syncfusion:GroupColorMapping>
 
-                &lt;syncfusion:GroupColorMapping GroupID="Europe"&gt;
+                <syncfusion:GroupColorMapping GroupID="Europe">
 
-                    &lt;syncfusion:GroupColorMapping.TreeMapColorMapping&gt;
+                    <syncfusion:GroupColorMapping.TreeMapColorMapping>
 
-                        &lt;syncfusion:DesaturationColorMapping From="1" To="0.1" Color="#AED960" RangeMinimum="0" RangeMaximum="6"/&gt;
+                        <syncfusion:DesaturationColorMapping From="1" To="0.1" Color="#AED960" RangeMinimum="0" RangeMaximum="6"/>
 
-                    &lt;/syncfusion:GroupColorMapping.TreeMapColorMapping&gt;
+                    </syncfusion:GroupColorMapping.TreeMapColorMapping>
 
-                &lt;/syncfusion:GroupColorMapping&gt;
+                </syncfusion:GroupColorMapping>
 
-                &lt;syncfusion:GroupColorMapping GroupID="South America"&gt;
+                <syncfusion:GroupColorMapping GroupID="South America">
 
-                    &lt;syncfusion:GroupColorMapping.TreeMapColorMapping&gt;
+                    <syncfusion:GroupColorMapping.TreeMapColorMapping>
 
-                        &lt;syncfusion:DesaturationColorMapping From="1" To="0" Color="#FFAF51" RangeMinimum="0" RangeMaximum="6"/&gt;
+                        <syncfusion:DesaturationColorMapping From="1" To="0" Color="#FFAF51" RangeMinimum="0" RangeMaximum="6"/>
 
-                    &lt;/syncfusion:GroupColorMapping.TreeMapColorMapping&gt;
+                    </syncfusion:GroupColorMapping.TreeMapColorMapping>
 
-                &lt;/syncfusion:GroupColorMapping&gt;
+                </syncfusion:GroupColorMapping>
 
-            &lt;/syncfusion:SfTreeMap.GroupColorMappings&gt;
-
-
-
-&lt;/syncfusion:SfTreeMap&gt;
+            </syncfusion:SfTreeMap.GroupColorMappings>
 
 
 
-{ ![](ColorMapping_images/ColorMapping_img5.png) | markdownify }
+</syncfusion:SfTreeMap>
+
+
+
+{{ '![](ColorMapping_images/ColorMapping_img5.png)' | markdownify }}
 {:.image }
 
 

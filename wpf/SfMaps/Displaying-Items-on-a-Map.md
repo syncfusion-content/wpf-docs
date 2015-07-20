@@ -21,61 +21,61 @@ Implement the Model and ViewModel, as mentioned in the Data Binding topic, and i
 
 [XAML]
 
-&lt;syncfusion:SfMap&gt;
+<syncfusion:SfMap>
 
-            &lt;syncfusion:SfMap.Layers&gt;
+            <syncfusion:SfMap.Layers>
 
-                &lt;syncfusion:ShapeFileLayer Background="White" ItemsSource="{Binding Countries}" ShapeIDPath="NAME" ShapeIDTableField="NAME" Uri="BubbleVisualization.ShapeFiles.world1.shp"&gt;
+                <syncfusion:ShapeFileLayer Background="White" ItemsSource="{Binding Countries}" ShapeIDPath="NAME" ShapeIDTableField="NAME" Uri="BubbleVisualization.ShapeFiles.world1.shp">
 
-                    &lt;syncfusion:ShapeFileLayer.ItemsTemplate&gt;
+                    <syncfusion:ShapeFileLayer.ItemsTemplate>
 
-                        &lt;DataTemplate&gt;
+                        <DataTemplate>
 
-                            &lt;Grid Background="#332D2D2D"&gt;
+                            <Grid Background="#332D2D2D">
 
-                                &lt;TextBlock Margin="5" Foreground="White" Opacity="1" FontSize="12" FontWeight="SemiBold" FontFamily="Segoe UI" Text="{Binding Data.NAME}"/&gt;
+                                <TextBlock Margin="5" Foreground="White" Opacity="1" FontSize="12" FontWeight="SemiBold" FontFamily="Segoe UI" Text="{Binding Data.NAME}"/>
 
-                            &lt;/Grid&gt;
+                            </Grid>
 
-                        &lt;/DataTemplate&gt;
+                        </DataTemplate>
 
-                    &lt;/syncfusion:ShapeFileLayer.ItemsTemplate&gt;
+                    </syncfusion:ShapeFileLayer.ItemsTemplate>
 
-                    &lt;syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                    <syncfusion:ShapeFileLayer.ShapeSettings>
 
-                        &lt;syncfusion:ShapeSetting ShapeFill="#E5E5E5" ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" ShapeValuePath="Population" ShapeColorValuePath="Population" &gt;
+                        <syncfusion:ShapeSetting ShapeFill="#E5E5E5" ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" ShapeValuePath="Population" ShapeColorValuePath="Population" >
 
-                            &lt;syncfusion:ShapeSetting.FillSetting&gt;
+                            <syncfusion:ShapeSetting.FillSetting>
 
-                                &lt;syncfusion:ShapeFillSetting AutoFillColors="False"&gt;
+                                <syncfusion:ShapeFillSetting AutoFillColors="False">
 
-                                    &lt;syncfusion:ShapeFillSetting.ColorMappings&gt;
+                                    <syncfusion:ShapeFillSetting.ColorMappings>
 
-                                        &lt;syncfusion:RangeColorMapping To="1500000000" From="750000000" Color="#2A91CF"/&gt;
+                                        <syncfusion:RangeColorMapping To="1500000000" From="750000000" Color="#2A91CF"/>
 
-                                        &lt;syncfusion:RangeColorMapping To="750000000" From="1000" Color="#3D9FD8"/&gt;
+                                        <syncfusion:RangeColorMapping To="750000000" From="1000" Color="#3D9FD8"/>
 
-                                        &lt;syncfusion:RangeColorMapping From="0" To="1000" Color="#C7E9FA"/&gt;
+                                        <syncfusion:RangeColorMapping From="0" To="1000" Color="#C7E9FA"/>
 
-                                    &lt;/syncfusion:ShapeFillSetting.ColorMappings&gt;
+                                    </syncfusion:ShapeFillSetting.ColorMappings>
 
-                                &lt;/syncfusion:ShapeFillSetting&gt;
+                                </syncfusion:ShapeFillSetting>
 
-                            &lt;/syncfusion:ShapeSetting.FillSetting&gt;
+                            </syncfusion:ShapeSetting.FillSetting>
 
-                        &lt;/syncfusion:ShapeSetting&gt;
+                        </syncfusion:ShapeSetting>
 
-                    &lt;/syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
 
-                &lt;/syncfusion:ShapeFileLayer&gt;
+                </syncfusion:ShapeFileLayer>
 
-            &lt;/syncfusion:SfMap.Layers&gt;
+            </syncfusion:SfMap.Layers>
 
-        &lt;/syncfusion:SfMap&gt;
+        </syncfusion:SfMap>
 
 
 
-{ ![](Displaying-Items-on-a-Map_images/Displaying-Items-on-a-Map_img1.png) | markdownify }
+{{ '![](Displaying-Items-on-a-Map_images/Displaying-Items-on-a-Map_img1.png)' | markdownify }}
 {:.image }
 
 

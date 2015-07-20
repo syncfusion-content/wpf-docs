@@ -53,7 +53,7 @@ Each page can contain page templates from the document and from the parent secti
 9.    Document stamp elements that have Foreground property set to True.
 
 
-{ ![C:/Users/SURESH/Desktop/UGRevamp/TemplateElement.png](TemplateElement_images/TemplateElement_img1.png) | markdownify }
+{{ '![C:/Users/SURESH/Desktop/UGRevamp/TemplateElement.png](TemplateElement_images/TemplateElement_img1.png)' | markdownify }}
 {:.image }
 
 

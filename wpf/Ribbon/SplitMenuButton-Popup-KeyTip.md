@@ -23,14 +23,14 @@ The following code snippet illustrates how to set keytip for SplitMenuButton Pop
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:SplitMenuButton Label="Print" Name="printBtn" syncfusion:Ribbon.SplitMenuKeyTip="U" syncfusion:Ribbon.KeyTip="PR"&gt;</td></tr>
+[XAML]<syncfusion:SplitMenuButton Label="Print" Name="printBtn" syncfusion:Ribbon.SplitMenuKeyTip="U" syncfusion:Ribbon.KeyTip="PR"></td></tr>
 <tr>
 <td>
 [C#]Ribbon.SetKeyTip(printBtn, "PR");Ribbon.SetSplitMenuKeyTip(printBtn, "U");</td></tr>
 </table>
 
 
-{ ![](SplitMenuButton-Popup-KeyTip_images/SplitMenuButton-Popup-KeyTip_img1.jpeg) | markdownify }
+{{ '![](SplitMenuButton-Popup-KeyTip_images/SplitMenuButton-Popup-KeyTip_img1.jpeg)' | markdownify }}
 {:.image }
 
 

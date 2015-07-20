@@ -32,7 +32,7 @@ schedule.Appointments.Add(new ScheduleAppointment() { StartTime= new DateTime(20
 
 
 
-{ ![](Adding-Appointments_images/Adding-Appointments_img1.png) | markdownify }
+{{ '![](Adding-Appointments_images/Adding-Appointments_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -67,11 +67,11 @@ Add appointments by using the ItemsSource property.
 
         WindowState="Maximized">
 
-    &lt;Grid Name="grid"}"&gt;
+    <Grid Name="grid"}">
 
-        &lt;Schedule:SfSchedule Name="schedule" ScheduleType="Day" ItemsSource="{Binding MappedAppointments}"&gt;
+        <Schedule:SfSchedule Name="schedule" ScheduleType="Day" ItemsSource="{Binding MappedAppointments}">
 
-            &lt;Schedule:SfSchedule.AppointmentMapping&gt;
+            <Schedule:SfSchedule.AppointmentMapping>
 
                 <Schedule:ScheduleAppointmentMapping
 
@@ -81,13 +81,13 @@ Add appointments by using the ItemsSource property.
 
                     EndTimeMapping="MappedEndTime"/>
 
-            &lt;/Schedule:SfSchedule.AppointmentMapping&gt;
+            </Schedule:SfSchedule.AppointmentMapping>
 
-        &lt;/Schedule:SfSchedule&gt;
+        </Schedule:SfSchedule>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -143,7 +143,7 @@ Add appointments by using the ItemsSource property.
 
 
 
-{ ![](Adding-Appointments_images/Adding-Appointments_img2.png) | markdownify }
+{{ '![](Adding-Appointments_images/Adding-Appointments_img2.png)' | markdownify }}
 {:.image }
 
 

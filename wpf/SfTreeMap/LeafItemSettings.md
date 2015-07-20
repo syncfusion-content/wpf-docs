@@ -17,27 +17,27 @@ LeafItemSettings of SfTreeMap is a setting by which we can settings the template
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.DataContext&gt;
+        <Grid.DataContext>
 
-            &lt;local:PopulationViewModel/&gt;
+            <local:PopulationViewModel/>
 
-        &lt;/Grid.DataContext&gt;
+        </Grid.DataContext>
 
         <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" WeightValuePath="Population" ColorValuePath="Growth"
 
                               ItemsLayoutMode="Squarified" Margin="10">
 
-            &lt;syncfusion:SfTreeMap.LeafItemSettings&gt;
+            <syncfusion:SfTreeMap.LeafItemSettings>
 
-                &lt;syncfusion:LeafItemSettings/&gt;
+                <syncfusion:LeafItemSettings/>
 
-            &lt;/syncfusion:SfTreeMap.LeafItemSettings&gt;
+            </syncfusion:SfTreeMap.LeafItemSettings>
 
-       &lt;/syncfusion:SfTreeMap&gt;
+       </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt; 
+    </Grid> 
 
 
 
@@ -57,25 +57,25 @@ LabelPath of the leaves is WeightValuePath by default and you can change the Lab
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.DataContext&gt;
+        <Grid.DataContext>
 
-            &lt;local:PopulationViewModel/&gt;
+            <local:PopulationViewModel/>
 
-        &lt;/Grid.DataContext&gt;
+        </Grid.DataContext>
 
         <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" WeightValuePath="Population" ColorValuePath="Growth"
 
                               ItemsLayoutMode="Squarified" Margin="10">
 
-            &lt;syncfusion:SfTreeMap.LeafItemSettings&gt;
+            <syncfusion:SfTreeMap.LeafItemSettings>
 
-                &lt;syncfusion:LeafItemSettings LabelPath="Country"/&gt;                                                                                      &lt;/syncfusion:SfTreeMap.LeafItemSettings&gt;
+                <syncfusion:LeafItemSettings LabelPath="Country"/>                                                                                      </syncfusion:SfTreeMap.LeafItemSettings>
 
-       &lt;/syncfusion:SfTreeMap&gt;
+       </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt; 
+    </Grid> 
 
 
 
@@ -89,41 +89,41 @@ LabelTemplate of LeafitemSettings class provides the template for the labels of 
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.DataContext&gt;
+        <Grid.DataContext>
 
-            &lt;local:PopulationViewModel/&gt;
+            <local:PopulationViewModel/>
 
-        &lt;/Grid.DataContext&gt;
+        </Grid.DataContext>
 
         <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" WeightValuePath="Population" ColorValuePath="Growth"
 
                               ItemsLayoutMode="Squarified" Margin="10">
 
-            &lt;syncfusion:SfTreeMap.LeafItemSettings&gt;
+            <syncfusion:SfTreeMap.LeafItemSettings>
 
-                &lt;syncfusion:LeafItemSettings&gt;
+                <syncfusion:LeafItemSettings>
 
-                    &lt;syncfusion:LeafItemSettings.LabelTemplate&gt;
+                    <syncfusion:LeafItemSettings.LabelTemplate>
 
-                            &lt;DataTemplate&gt;
+                            <DataTemplate>
 
-                                &lt;TextBlock Text="{Binding Data.Country}" Foreground="White" FontSize="16" FontWeight="Normal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0"/&gt;
+                                <TextBlock Text="{Binding Data.Country}" Foreground="White" FontSize="16" FontWeight="Normal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0"/>
 
-                            &lt;/DataTemplate&gt;
+                            </DataTemplate>
 
 
 
-                    &lt;/syncfusion:LeafItemSettings.LabelTemplate&gt;
+                    </syncfusion:LeafItemSettings.LabelTemplate>
 
-                &lt;/syncfusion:LeafItemSettings&gt;
+                </syncfusion:LeafItemSettings>
 
-            &lt;/syncfusion:SfTreeMap.LeafItemSettings&gt;
+            </syncfusion:SfTreeMap.LeafItemSettings>
 
-       &lt;/syncfusion:SfTreeMap&gt;
+       </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt; 
+    </Grid> 
 
 
 
@@ -137,29 +137,29 @@ Gap provides the gap between the leaves at Leaf Level.
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.DataContext&gt;
+        <Grid.DataContext>
 
-            &lt;local:PopulationViewModel/&gt;
+            <local:PopulationViewModel/>
 
-        &lt;/Grid.DataContext&gt;
+        </Grid.DataContext>
 
         <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" WeightValuePath="Population" ColorValuePath="Growth"
 
                               ItemsLayoutMode="Squarified" Margin="10">
 
-            &lt;syncfusion:SfTreeMap.LeafItemSettings&gt;
+            <syncfusion:SfTreeMap.LeafItemSettings>
 
-                &lt;syncfusion:LeafItemSettings Gap="5"&gt;
+                <syncfusion:LeafItemSettings Gap="5">
 
-                &lt;/syncfusion:LeafItemSettings&gt;
+                </syncfusion:LeafItemSettings>
 
-            &lt;/syncfusion:SfTreeMap.LeafItemSettings&gt;
+            </syncfusion:SfTreeMap.LeafItemSettings>
 
-       &lt;/syncfusion:SfTreeMap&gt;
+       </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt; 
+    </Grid> 
 
 
 
@@ -173,33 +173,33 @@ BorderBrush provides the border color for the leafNodes and BorderThickness prov
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.DataContext&gt;
+        <Grid.DataContext>
 
-            &lt;local:PopulationViewModel/&gt;
+            <local:PopulationViewModel/>
 
-        &lt;/Grid.DataContext&gt;
+        </Grid.DataContext>
 
         <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" WeightValuePath="Population" ColorValuePath="Growth"
 
                               ItemsLayoutMode="Squarified" Margin="10">
 
-            &lt;syncfusion:SfTreeMap.LeafItemSettings&gt;
+            <syncfusion:SfTreeMap.LeafItemSettings>
 
-                &lt;syncfusion:LeafItemSettings BorderBrush="Red" BorderThickness="3"/&gt;  
+                <syncfusion:LeafItemSettings BorderBrush="Red" BorderThickness="3"/>  
 
-            &lt;/syncfusion:SfTreeMap.LeafItemSettings&gt;
+            </syncfusion:SfTreeMap.LeafItemSettings>
 
-       &lt;/syncfusion:SfTreeMap&gt;
+       </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt; 
-
-
+    </Grid> 
 
 
 
-{ ![](LeafItemSettings_images/LeafItemSettings_img1.png) | markdownify }
+
+
+{{ '![](LeafItemSettings_images/LeafItemSettings_img1.png)' | markdownify }}
 {:.image }
 
 

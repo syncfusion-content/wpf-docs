@@ -11,11 +11,11 @@ documentation: ug
 
 ## Control Structure
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -423,20 +423,20 @@ The steps to create a PercentTextBox by using Visual Studio in C# are as follows
 
 
 
-{ ![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
 3. On the Project Dialog window, select WPF Application, in the name field, type the name of the project, and then click OK.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
 4. Add the following reference with the sample project:
 1. Syncfusion.Shared.WPF.dll
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -470,7 +470,7 @@ public partial class MainWindow : Window
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -494,7 +494,7 @@ The steps to create a PercentTextBox by using Visual Studio in XAML are as follo
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -514,17 +514,17 @@ XAML
 
 
 
-    &lt;Grid x:Name="LayoutRoot"&gt;
+    <Grid x:Name="LayoutRoot">
 
-        &lt;syncfusion:PercentTextBox Height="23" HorizontalAlignment="Left" Margin="92,134,0,0" Name="percentTextBox1" VerticalAlignment="Top" Width="120" /&gt;
+        <syncfusion:PercentTextBox Height="23" HorizontalAlignment="Left" Margin="92,134,0,0" Name="percentTextBox1" VerticalAlignment="Top" Width="120" />
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -541,13 +541,13 @@ The steps to create a PercentTextBox in the application by using Expression Blen
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
 3. In the Project types panel, select WPF Application and then click OK.
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -558,13 +558,13 @@ The steps to create a PercentTextBox in the application by using Expression Blen
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
 {:.image }
 
 
 6. Drag the PercentTextBox control to Design View.
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -582,17 +582,17 @@ XAML
 
 
 
-    &lt;Grid x:Name="LayoutRoot"&gt;
+    <Grid x:Name="LayoutRoot">
 
-        &lt;syncfusion:PercentTextBox Height="23" HorizontalAlignment="Left" Margin="92,134,0,0" Name="percentTextBox1" VerticalAlignment="Top" Width="120" /&gt;
+        <syncfusion:PercentTextBox Height="23" HorizontalAlignment="Left" Margin="92,134,0,0" Name="percentTextBox1" VerticalAlignment="Top" Width="120" />
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img13.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -620,7 +620,7 @@ C# percentTextBox.PercentValue = 100;</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img14.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -644,7 +644,7 @@ C# percentTextBox.MinValue = -999.99;percentTextBox.MaxValue = 999.99;</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img15.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -664,7 +664,7 @@ C# percentTextBox.UseNullOption = true;percentTextBox.NullValue = null;percentTe
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img16.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
 {:.image }
 
 

@@ -13,13 +13,13 @@ The same procedure followed for normal appointments while editing/deleting appoi
 
 Double clicking the recurrence appointment opens the below confirmation pop-up,
 
-{ ![](EditingDeleting-Recurrence-Appointment_images/EditingDeleting-Recurrence-Appointment_img1.png) | markdownify }
+{{ '![](EditingDeleting-Recurrence-Appointment_images/EditingDeleting-Recurrence-Appointment_img1.png)' | markdownify }}
 {:.image }
 
 
 Single clicking the recurrence appointment will open the below quick appointment window with the options, “Just this one” and “The Entire Series” enabled. It also encompasses the delete icon within it for deleting the appointments.
 
-{ ![](EditingDeleting-Recurrence-Appointment_images/EditingDeleting-Recurrence-Appointment_img2.png) | markdownify }
+{{ '![](EditingDeleting-Recurrence-Appointment_images/EditingDeleting-Recurrence-Appointment_img2.png)' | markdownify }}
 {:.image }
 
 

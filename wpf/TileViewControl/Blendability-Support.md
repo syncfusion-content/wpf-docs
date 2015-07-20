@@ -28,7 +28,7 @@ The following are the step-by-step procedure to edit the TileViewControl in Micr
 
 
 
-{ ![](Blendability-Support_images/Blendability-Support_img1.png) | markdownify }
+{{ '![](Blendability-Support_images/Blendability-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -41,7 +41,7 @@ The following are the step-by-step procedure to edit the TileViewControl in Micr
 
 
 
-{ ![](Blendability-Support_images/Blendability-Support_img2.png) | markdownify }
+{{ '![](Blendability-Support_images/Blendability-Support_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -51,7 +51,7 @@ The following are the step-by-step procedure to edit the TileViewControl in Micr
 
 
 
-{ ![](Blendability-Support_images/Blendability-Support_img3.png) | markdownify }
+{{ '![](Blendability-Support_images/Blendability-Support_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -61,7 +61,7 @@ The following are the step-by-step procedure to edit the TileViewControl in Micr
 
 
 
-{ ![](Blendability-Support_images/Blendability-Support_img4.png) | markdownify }
+{{ '![](Blendability-Support_images/Blendability-Support_img4.png)' | markdownify }}
 {:.image }
 
 

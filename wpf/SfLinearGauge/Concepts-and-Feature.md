@@ -21,9 +21,9 @@ The foreground of the label is customized by setting the LabelStroke of the line
 
 
 
-        &lt;Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal"&gt;
+        <Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal">
 
-            &lt;Gauges:SfLinearGauge.MainScale&gt;
+            <Gauges:SfLinearGauge.MainScale>
 
                 <Gauges:LinearScale LabelStroke="Red" Minimum="0" Maximum="10" Interval="1"  MinorTicksPerInterval="3"
 
@@ -31,11 +31,11 @@ The foreground of the label is customized by setting the LabelStroke of the line
 
                                     LabelOffset="5">
 
-                &lt;/Gauges:LinearScale&gt;
+                </Gauges:LinearScale>
 
-            &lt;/Gauges:SfLinearGauge.MainScale&gt;
+            </Gauges:SfLinearGauge.MainScale>
 
-        &lt;/Gauges:SfLinearGauge&gt;
+        </Gauges:SfLinearGauge>
 
 
 
@@ -67,7 +67,7 @@ The foreground of the label is customized by setting the LabelStroke of the line
 
 The following screenshot illustrates customizing Labels of the Linear Gauge:
 
-{ ![](Concepts-and-Feature_images/Concepts-and-Feature_img1.png) | markdownify }
+{{ '![](Concepts-and-Feature_images/Concepts-and-Feature_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -84,9 +84,9 @@ The labels in the scale can be placed above or below the linear scale by choosin
 
 
 
-        &lt;Gauges:SfLinearGauge&gt;
+        <Gauges:SfLinearGauge>
 
-            &lt;Gauges:SfLinearGauge.MainScale&gt;
+            <Gauges:SfLinearGauge.MainScale>
 
                 <Gauges:LinearScale TickPosition="Cross"
 
@@ -102,11 +102,11 @@ The labels in the scale can be placed above or below the linear scale by choosin
 
                                     Interval="10">
 
-                &lt;/Gauges:LinearScale&gt;
+                </Gauges:LinearScale>
 
-            &lt;/Gauges:SfLinearGauge.MainScale&gt;
+            </Gauges:SfLinearGauge.MainScale>
 
-        &lt;/Gauges:SfLinearGauge&gt;
+        </Gauges:SfLinearGauge>
 
 
 
@@ -146,7 +146,7 @@ The labels in the scale can be placed above or below the linear scale by choosin
 
 The following screenshot illustrates the labels positioned above the Scale:
 
-{ ![](Concepts-and-Feature_images/Concepts-and-Feature_img2.png) | markdownify }
+{{ '![](Concepts-and-Feature_images/Concepts-and-Feature_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -162,9 +162,9 @@ Bar pointer is an accenting line or colored bar that is placed on the Linear Gau
 
 
 
-        &lt;Gauges:SfLinearGauge&gt;
+        <Gauges:SfLinearGauge>
 
-            &lt;Gauges:SfLinearGauge.MainScale&gt;
+            <Gauges:SfLinearGauge.MainScale>
 
                 <Gauges:LinearScale BindRangeStrokeToLabels="True"
 
@@ -172,17 +172,17 @@ Bar pointer is an accenting line or colored bar that is placed on the Linear Gau
 
                                     ScaleBarLength="300">
 
-                    &lt;Gauges:LinearScale.Pointers&gt;
+                    <Gauges:LinearScale.Pointers>
 
-                        &lt;Gauges:LinearPointer PointerType="BarPointer" Value="40" /&gt;
+                        <Gauges:LinearPointer PointerType="BarPointer" Value="40" />
 
-                    &lt;/Gauges:LinearScale.Pointers&gt;
+                    </Gauges:LinearScale.Pointers>
 
-                &lt;/Gauges:LinearScale&gt;
+                </Gauges:LinearScale>
 
-            &lt;/Gauges:SfLinearGauge.MainScale&gt;
+            </Gauges:SfLinearGauge.MainScale>
 
-        &lt;/Gauges:SfLinearGauge&gt;
+        </Gauges:SfLinearGauge>
 
 
 
@@ -214,7 +214,7 @@ Bar pointer is an accenting line or colored bar that is placed on the Linear Gau
 
 The following screenshot illustrates the Linear Gauge with Bar Pointer:
 
-{ ![](Concepts-and-Feature_images/Concepts-and-Feature_img3.png) | markdownify }
+{{ '![](Concepts-and-Feature_images/Concepts-and-Feature_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -226,9 +226,9 @@ In the symbol pointer type, the value is pointed by a symbol on the scale. You c
 
 
 
-       &lt;Gauges:SfLinearGauge&gt;
+       <Gauges:SfLinearGauge>
 
-            &lt;Gauges:SfLinearGauge.MainScale&gt;
+            <Gauges:SfLinearGauge.MainScale>
 
                 <Gauges:LinearScale BindRangeStrokeToLabels="True"
 
@@ -236,17 +236,17 @@ In the symbol pointer type, the value is pointed by a symbol on the scale. You c
 
                                     ScaleBarLength="300">
 
-                    &lt;Gauges:LinearScale.Pointers&gt;
+                    <Gauges:LinearScale.Pointers>
 
-                        &lt;Gauges:LinearPointer PointerType="SymbolPointer" Value="40"  SymbolPointerStyle = "Triangle"/&gt;
+                        <Gauges:LinearPointer PointerType="SymbolPointer" Value="40"  SymbolPointerStyle = "Triangle"/>
 
-                    &lt;/Gauges:LinearScale.Pointers&gt;
+                    </Gauges:LinearScale.Pointers>
 
-                &lt;/Gauges:LinearScale&gt;
+                </Gauges:LinearScale>
 
-            &lt;/Gauges:SfLinearGauge.MainScale&gt;
+            </Gauges:SfLinearGauge.MainScale>
 
-        &lt;/Gauges:SfLinearGauge&gt;
+        </Gauges:SfLinearGauge>
 
 
 
@@ -276,7 +276,7 @@ In the symbol pointer type, the value is pointed by a symbol on the scale. You c
 
 The following screenshot illustrates the Linear Gauge with Symbol Pointer:
 
-{ ![](Concepts-and-Feature_images/Concepts-and-Feature_img4.png) | markdownify }
+{{ '![](Concepts-and-Feature_images/Concepts-and-Feature_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -294,9 +294,9 @@ The SymbolPointer in the scale can be placed above, below, or in between the sca
 
 
 
-   &lt;Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal"&gt;
+   <Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal">
 
-            &lt;Gauges:SfLinearGauge.MainScale&gt;
+            <Gauges:SfLinearGauge.MainScale>
 
                 <Gauges:LinearScale ScaleDirection="Forward"
 
@@ -312,21 +312,21 @@ The SymbolPointer in the scale can be placed above, below, or in between the sca
 
                                     Minimum="0" Maximum="100">
 
-                    &lt;Gauges:LinearScale.Pointers&gt;
+                    <Gauges:LinearScale.Pointers>
 
-                        &lt;Gauges:LinearPointer Value="40" PointerType="BarPointer" /&gt;
+                        <Gauges:LinearPointer Value="40" PointerType="BarPointer" />
 
-                        &lt;Gauges:LinearPointer Value="40" PointerType="SymbolPointer" SymbolPointerPosition="Above"/&gt;
+                        <Gauges:LinearPointer Value="40" PointerType="SymbolPointer" SymbolPointerPosition="Above"/>
 
 
 
-                    &lt;/Gauges:LinearScale.Pointers&gt;
+                    </Gauges:LinearScale.Pointers>
 
-                &lt;/Gauges:LinearScale&gt;
+                </Gauges:LinearScale>
 
-            &lt;/Gauges:SfLinearGauge.MainScale&gt;
+            </Gauges:SfLinearGauge.MainScale>
 
-        &lt;/Gauges:SfLinearGauge&gt;
+        </Gauges:SfLinearGauge>
 
 
 
@@ -372,7 +372,7 @@ The SymbolPointer in the scale can be placed above, below, or in between the sca
 
 The following screenshot illustrates the SymbolPointer:
 
-{ ![](Concepts-and-Feature_images/Concepts-and-Feature_img5.png) | markdownify }
+{{ '![](Concepts-and-Feature_images/Concepts-and-Feature_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -388,13 +388,13 @@ The stroke of the range is personalized by changing the RangeStroke of the linea
 
 
 
-        &lt;Gauges:SfLinearGauge Orientation="Horizontal"&gt;
+        <Gauges:SfLinearGauge Orientation="Horizontal">
 
-            &lt;Gauges:SfLinearGauge.MainScale&gt;
+            <Gauges:SfLinearGauge.MainScale>
 
-                &lt;Gauges:LinearScale&gt;
+                <Gauges:LinearScale>
 
-                    &lt;Gauges:LinearScale.Ranges&gt;
+                    <Gauges:LinearScale.Ranges>
 
                         <Gauges:LinearRange StartValue="0" EndValue="35" 
 
@@ -412,13 +412,13 @@ The stroke of the range is personalized by changing the RangeStroke of the linea
 
                                             RangeStroke="Red"/>
 
-                    &lt;/Gauges:LinearScale.Ranges&gt;
+                    </Gauges:LinearScale.Ranges>
 
-                &lt;/Gauges:LinearScale&gt;
+                </Gauges:LinearScale>
 
-            &lt;/Gauges:SfLinearGauge.MainScale&gt;
+            </Gauges:SfLinearGauge.MainScale>
 
-        &lt;/Gauges:SfLinearGauge&gt;
+        </Gauges:SfLinearGauge>
 
 
 
@@ -442,7 +442,7 @@ The stroke of the range is personalized by changing the RangeStroke of the linea
 
 
 
-{ ![](Concepts-and-Feature_images/Concepts-and-Feature_img6.png) | markdownify }
+{{ '![](Concepts-and-Feature_images/Concepts-and-Feature_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -454,15 +454,15 @@ By setting the BindWithRangeStrokeToLabels, the stroke of the labels can be set 
 
 
 
-       &lt;Gauges:SfLinearGauge Orientation="Horizontal"&gt;
+       <Gauges:SfLinearGauge Orientation="Horizontal">
 
-            &lt;Gauges:SfLinearGauge.MainScale&gt;
+            <Gauges:SfLinearGauge.MainScale>
 
                 <Gauges:LinearScale BindRangeStrokeToLabels="True"
 
                                     BindRangeStrokeToTicks="True">
 
-                    &lt;Gauges:LinearScale.Ranges&gt;
+                    <Gauges:LinearScale.Ranges>
 
                         <Gauges:LinearRange StartValue="0" EndValue="35" 
 
@@ -482,13 +482,13 @@ By setting the BindWithRangeStrokeToLabels, the stroke of the labels can be set 
 
                                             RangeOffset="5" RangeStroke="Red"/>
 
-                    &lt;/Gauges:LinearScale.Ranges&gt;
+                    </Gauges:LinearScale.Ranges>
 
-                &lt;/Gauges:LinearScale&gt;
+                </Gauges:LinearScale>
 
-            &lt;/Gauges:SfLinearGauge.MainScale&gt;
+            </Gauges:SfLinearGauge.MainScale>
 
-        &lt;/Gauges:SfLinearGauge&gt;
+        </Gauges:SfLinearGauge>
 
 
 
@@ -518,7 +518,7 @@ By setting the BindWithRangeStrokeToLabels, the stroke of the labels can be set 
 
 
 
-{ ![](Concepts-and-Feature_images/Concepts-and-Feature_img7.png) | markdownify }
+{{ '![](Concepts-and-Feature_images/Concepts-and-Feature_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -535,9 +535,9 @@ The range can be placed above or below the scale by choosing the options availab
 
 
 
-       &lt;Gauges:SfLinearGauge&gt;
+       <Gauges:SfLinearGauge>
 
-            &lt;Gauges:SfLinearGauge.MainScale&gt;
+            <Gauges:SfLinearGauge.MainScale>
 
                 <Gauges:LinearScale BindRangeStrokeToLabels="True" 
 
@@ -547,7 +547,7 @@ The range can be placed above or below the scale by choosing the options availab
 
                                     ScaleBarLength="300">
 
-                    &lt;Gauges:LinearScale.Ranges&gt;
+                    <Gauges:LinearScale.Ranges>
 
                         <Gauges:LinearRange StartValue="65" EndValue="100" 
 
@@ -557,13 +557,13 @@ The range can be placed above or below the scale by choosing the options availab
 
                                             RangeStroke="Red"/>
 
-                    &lt;/Gauges:LinearScale.Ranges&gt;
+                    </Gauges:LinearScale.Ranges>
 
-                &lt;/Gauges:LinearScale&gt;
+                </Gauges:LinearScale>
 
-            &lt;/Gauges:SfLinearGauge.MainScale&gt;
+            </Gauges:SfLinearGauge.MainScale>
 
-        &lt;/Gauges:SfLinearGauge&gt;
+        </Gauges:SfLinearGauge>
 
 
 
@@ -595,7 +595,7 @@ The range can be placed above or below the scale by choosing the options availab
 
 The following screenshot displays the Linear Gauge with the Range positioned above:
 
-{ ![](Concepts-and-Feature_images/Concepts-and-Feature_img8.png) | markdownify }
+{{ '![](Concepts-and-Feature_images/Concepts-and-Feature_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -611,9 +611,9 @@ The range of the main scale can be mentioned by Minimum and Maximum of the linea
 
 
 
-        &lt;Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal"&gt;
+        <Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal">
 
-            &lt;Gauges:SfLinearGauge.MainScale&gt;
+            <Gauges:SfLinearGauge.MainScale>
 
                 <Gauges:LinearScale ScaleDirection="Forward"
 
@@ -629,7 +629,7 @@ The range of the main scale can be mentioned by Minimum and Maximum of the linea
 
                                     Minimum="0" Maximum="10">
 
-                    &lt;Gauges:LinearScale.Ranges&gt;
+                    <Gauges:LinearScale.Ranges>
 
                         <Gauges:LinearRange StartValue="0" EndValue="5" 
 
@@ -643,21 +643,21 @@ The range of the main scale can be mentioned by Minimum and Maximum of the linea
 
                                             RangeStroke="Red"/>
 
-                    &lt;/Gauges:LinearScale.Ranges&gt;
+                    </Gauges:LinearScale.Ranges>
 
-                    &lt;Gauges:LinearScale.Pointers&gt;
+                    <Gauges:LinearScale.Pointers>
 
-                        &lt;Gauges:LinearPointer Value="3" PointerType="BarPointer" /&gt;
+                        <Gauges:LinearPointer Value="3" PointerType="BarPointer" />
 
-                        &lt;Gauges:LinearPointer Value="3" PointerType="SymbolPointer"/&gt;
+                        <Gauges:LinearPointer Value="3" PointerType="SymbolPointer"/>
 
-                    &lt;/Gauges:LinearScale.Pointers&gt;
+                    </Gauges:LinearScale.Pointers>
 
-                &lt;/Gauges:LinearScale&gt;
+                </Gauges:LinearScale>
 
-            &lt;/Gauges:SfLinearGauge.MainScale&gt;
+            </Gauges:SfLinearGauge.MainScale>
 
-        &lt;/Gauges:SfLinearGauge&gt;
+        </Gauges:SfLinearGauge>
 
 
 
@@ -705,7 +705,7 @@ The range of the main scale can be mentioned by Minimum and Maximum of the linea
 
 The following screenshot displaysthe Linear Gauge:
 
-{ ![](Concepts-and-Feature_images/Concepts-and-Feature_img9.png) | markdownify }
+{{ '![](Concepts-and-Feature_images/Concepts-and-Feature_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -721,9 +721,9 @@ By setting the MajorTickStroke and MinorTickStroke, the stroke of the major tick
 
 
 
-        &lt;Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal"&gt;
+        <Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal">
 
-            &lt;Gauges:SfLinearGauge.MainScale&gt;
+            <Gauges:SfLinearGauge.MainScale>
 
                 <Gauges:LinearScale Minimum="0" Maximum="10"
 
@@ -737,11 +737,11 @@ By setting the MajorTickStroke and MinorTickStroke, the stroke of the major tick
 
                                     MinorTickStrokeThickness="1">
 
-                &lt;/Gauges:LinearScale&gt;
+                </Gauges:LinearScale>
 
-            &lt;/Gauges:SfLinearGauge.MainScale&gt;
+            </Gauges:SfLinearGauge.MainScale>
 
-        &lt;/Gauges:SfLinearGauge&gt; 
+        </Gauges:SfLinearGauge> 
 
 
 
@@ -785,7 +785,7 @@ By setting the MajorTickStroke and MinorTickStroke, the stroke of the major tick
 
 The following screenshot illustrates customizingthe Ticks of the Linear Gauge:
 
-{ ![](Concepts-and-Feature_images/Concepts-and-Feature_img10.png) | markdownify }
+{{ '![](Concepts-and-Feature_images/Concepts-and-Feature_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -803,9 +803,9 @@ The ticks in the scale can be placed above, below, or in between the scale by ch
 
 
 
-        &lt;Gauges:SfLinearGauge&gt;
+        <Gauges:SfLinearGauge>
 
-            &lt;Gauges:SfLinearGauge.MainScale&gt;
+            <Gauges:SfLinearGauge.MainScale>
 
                 <Gauges:LinearScale TickPosition="Cross"
 
@@ -817,11 +817,11 @@ The ticks in the scale can be placed above, below, or in between the scale by ch
 
                                     Interval="10">
 
-                &lt;/Gauges:LinearScale&gt;
+                </Gauges:LinearScale>
 
-            &lt;/Gauges:SfLinearGauge.MainScale&gt;
+            </Gauges:SfLinearGauge.MainScale>
 
-        &lt;/Gauges:SfLinearGauge&gt;
+        </Gauges:SfLinearGauge>
 
 
 
@@ -855,7 +855,7 @@ The ticks in the scale can be placed above, below, or in between the scale by ch
 
 The following screenshot displays Ticks Positioned across the Scale: 
 
-{ ![](Concepts-and-Feature_images/Concepts-and-Feature_img11.png) | markdownify }
+{{ '![](Concepts-and-Feature_images/Concepts-and-Feature_img11.png)' | markdownify }}
 {:.image }
 
 

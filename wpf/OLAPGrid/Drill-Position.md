@@ -45,11 +45,11 @@ A sample is available in following locations:
 
 Windows XP:
 
-..\Syncfusion\EssentialStudio\&lt;Versionnumber&gt;\BI\WPF\OlapGrid.WPF\Samples\Data Relation\Drill Types Demo
+..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Data Relation\Drill Types Demo
 
 Windows 7/Vista:
 
-C:\Users\&lt;UserName&gt;\AppData\Local\Syncfusion\EssentialStudio\x.x.x.x\BI\WPF\OlapGrid.WPF\SamplesData Relation\Drill Types Demo
+C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\x.x.x.x\BI\WPF\OlapGrid.WPF\SamplesData Relation\Drill Types Demo
 
 ## Adding Drill Position to an Application 
 

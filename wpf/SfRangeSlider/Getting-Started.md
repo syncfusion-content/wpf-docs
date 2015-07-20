@@ -20,15 +20,15 @@ The following code sample illustrates how to create the SfRangeSlider from code-
 
 [XAML]
 
-&lt;Window xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"&gt; 
+<Window xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"> 
 
-&lt;Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}"&gt;     
+<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">     
 
-&lt;editors:SfRangeSlider Width="500" HorizontalAlignment="Center" VerticalAlignment="Center" Minimum="0" Maximum="100"/&gt;
+<editors:SfRangeSlider Width="500" HorizontalAlignment="Center" VerticalAlignment="Center" Minimum="0" Maximum="100"/>
 
-&lt;/Grid&gt;
+</Grid>
 
-&lt;/Window&gt; 
+</Window> 
 
 
 

@@ -33,7 +33,7 @@ The Non-Working hour’s background brush can be customized using the NonWorking
 
 
 
-        &lt;Grid Background="White"&gt;
+        <Grid Background="White">
 
             <Schedule:SfSchedule IsHighLightWorkingHours="True" 
 
@@ -45,7 +45,7 @@ The Non-Working hour’s background brush can be customized using the NonWorking
 
                              ScheduleType="Week"  NonWorkingHourBrush="LightBlue"/>
 
-        &lt;/Grid&gt;
+        </Grid>
 
 
 
@@ -75,7 +75,7 @@ The Non-Working hour’s background brush can be customized using the NonWorking
 
 
 
-{ ![](Non-Working-Hours_images/Non-Working-Hours_img1.png) | markdownify }
+{{ '![](Non-Working-Hours_images/Non-Working-Hours_img1.png)' | markdownify }}
 {:.image }
 
 

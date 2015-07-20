@@ -18,14 +18,14 @@ CalendarEdit control provides the HeaderBackground and HeaderForeground properti
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding calendar with header background and foreground --&gt;&lt;syncfusion:CalendarEdit Name="calendarEdit" HeaderBackground="SaddleBrown" HeaderForeground="Bisque"/&gt;</td></tr>
+[XAML]<!-- Adding calendar with header background and foreground --><syncfusion:CalendarEdit Name="calendarEdit" HeaderBackground="SaddleBrown" HeaderForeground="Bisque"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting Header BackgroundcalendarEdit.HeaderBackground = Brushes.SaddleBrown;//Setting Header foregroundcalendarEdit.HeaderForeground = Brushes.Bisque;  //Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
 </table>
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -38,7 +38,7 @@ To set the SelectionBorderBrush property, use the following code.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding calendar with selection border brush --&gt;&lt;syncfusion:CalendarEdit Name="calendarEdit" SelectionBorderBrush="Aqua"/&gt;</td></tr>
+[XAML]<!-- Adding calendar with selection border brush --><syncfusion:CalendarEdit Name="calendarEdit" SelectionBorderBrush="Aqua"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting the brush for the Selection day gridcalendarEdit.SelectionBorderBrush = Brushes.Aqua;    //Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
@@ -47,7 +47,7 @@ To set the SelectionBorderBrush property, use the following code.
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -60,14 +60,14 @@ You can set the corner radius for the selection border by using the SelectionBor
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding calendar with selection border corner radius --&gt;&lt;syncfusion:CalendarEdit Name="calendarEdit" SelectionBorderCornerRadius="0"/&gt;</td></tr>
+[XAML]<!-- Adding calendar with selection border corner radius --><syncfusion:CalendarEdit Name="calendarEdit" SelectionBorderCornerRadius="0"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting corner radius for selection bordercalendarEdit.SelectionBorderCornerRadius = new CornerRadius(0); //Adding CalendarEdit as window contentthis.Content = calendarEdit; </td></tr>
 </table>
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -84,14 +84,14 @@ This is mainly used to differentiate the SelectedDates from other dates.
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:CalendarEdit Name="calendarEdit1" SelectionForeground="Red"/&gt;</td></tr>
+[XAML]<syncfusion:CalendarEdit Name="calendarEdit1" SelectionForeground="Red"/></td></tr>
 <tr>
 <td>
 [C#]calendarEdit1.SelectionForeground = new SolidColorBrush(Colors.Red);</td></tr>
 </table>
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img4.png) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img4.png)' | markdownify }}
 {:.image }
 
 

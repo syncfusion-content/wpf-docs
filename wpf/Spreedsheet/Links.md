@@ -21,7 +21,7 @@ You can add the hyperlink to the spreadsheet cell using the Insert Hyperlink dia
 
 
 
-{ ![](Links_images/Links_img1.png) | markdownify }
+{{ '![](Links_images/Links_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -35,9 +35,9 @@ The following code illustrates how to bind the HyperlinkCommand__a button:
 
 
 
-&lt;Button Command="{Binding Path= HyperlinkCommand}"&gt;
+<Button Command="{Binding Path= HyperlinkCommand}">
 
-&lt;/Button&gt;
+</Button>
 
 
 

@@ -18,7 +18,7 @@ The following steps illustrate how to add a bookmark in Word:
 
 
 
-{ ![](Working-with-Bookmarks_images/Working-with-Bookmarks_img1.png) | markdownify }
+{{ '![](Working-with-Bookmarks_images/Working-with-Bookmarks_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -244,13 +244,13 @@ Due to MS Word’s behavior, you cannot replace the bookmark content, when the b
 
 Case 1
 
-{ ![^E6721B4986F9545EF92693A89BD41D3E477EF62EB5EA1E82CE^pimgpsh_fullsize_distr](Working-with-Bookmarks_images/Working-with-Bookmarks_img2.png) | markdownify }
+{{ '![^E6721B4986F9545EF92693A89BD41D3E477EF62EB5EA1E82CE^pimgpsh_fullsize_distr](Working-with-Bookmarks_images/Working-with-Bookmarks_img2.png)' | markdownify }}
 {:.image }
 
 
 Case 2
 
-{ ![^808D0403340DCCC6C0D4853B479F46AE75C9328F5BFE21863E^pimgpsh_fullsize_distr](Working-with-Bookmarks_images/Working-with-Bookmarks_img3.png) | markdownify }
+{{ '![^808D0403340DCCC6C0D4853B479F46AE75C9328F5BFE21863E^pimgpsh_fullsize_distr](Working-with-Bookmarks_images/Working-with-Bookmarks_img3.png)' | markdownify }}
 {:.image }
 
 

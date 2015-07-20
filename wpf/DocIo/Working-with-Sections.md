@@ -32,7 +32,7 @@ Document sections are divided by section breaks that define where the sections s
 
 The following screenshot illustrates the breaks accessible through the Insert menu in the Microsoft Word Break dialog box.
 
-{ ![](Working-with-Sections_images/Working-with-Sections_img1.png) | markdownify }
+{{ '![](Working-with-Sections_images/Working-with-Sections_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -144,7 +144,7 @@ The following code example illustrates how to create a simple Word document, and
 
 Headers and Footers are displayed at the top and bottom of document pages respectively. Headers can have the title of a book in all the pages, and footers can have the current page number and page count in all the pages. Headers and Footers can also include text, graphics, and nearly any other information that can be contained by a document.
 
-{ ![](Working-with-Sections_images/Working-with-Sections_img2.png) | markdownify }
+{{ '![](Working-with-Sections_images/Working-with-Sections_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -277,7 +277,7 @@ The following code example illustrates how to turn on this option by using DocIO
 
 The following screenshot illustrates the various page setup options accessible through the PageLayout menu in Microsoft Word.
 
-{ ![](Working-with-Sections_images/Working-with-Sections_img3.png) | markdownify }
+{{ '![](Working-with-Sections_images/Working-with-Sections_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -391,7 +391,7 @@ You can insert page numbers of different formats such as Arabic numerals, Roman 
 
 The following screenshot shows the page number option of Microsoft Word.
 
-{ ![](Working-with-Sections_images/Working-with-Sections_img4.png) | markdownify }
+{{ '![](Working-with-Sections_images/Working-with-Sections_img4.png)' | markdownify }}
 {:.image }
 
 

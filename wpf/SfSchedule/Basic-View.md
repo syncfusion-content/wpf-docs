@@ -38,13 +38,13 @@ Code Example:
 
         WindowState="Maximized">
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;schedule:SfSchedule&gt;&lt;/schedule:SfSchedule&gt;
+        <schedule:SfSchedule></schedule:SfSchedule>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -64,7 +64,7 @@ this.grid.Children.Add(schedule);
 
 
 
-{ ![](Basic-View_images/Basic-View_img1.png) | markdownify }
+{{ '![](Basic-View_images/Basic-View_img1.png)' | markdownify }}
 {:.image }
 
 

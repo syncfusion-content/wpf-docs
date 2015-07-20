@@ -17,19 +17,19 @@ The WeightValuePath ofSfTreeMap is a path to a field on the source object, which
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.DataContext&gt;
+        <Grid.DataContext>
 
-            &lt;local:PopulationViewModel/&gt;
+            <local:PopulationViewModel/>
 
-        &lt;/Grid.DataContext&gt;
+        </Grid.DataContext>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
                               WeightValuePath="Population”/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
@@ -37,7 +37,7 @@ The WeightValuePath ofSfTreeMap is a path to a field on the source object, which
 
 > _Note:____The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection._
 
-{ ![](WeightValuePath_images/WeightValuePath_img1.png) | markdownify }
+{{ '![](WeightValuePath_images/WeightValuePath_img1.png)' | markdownify }}
 {:.image }
 
 

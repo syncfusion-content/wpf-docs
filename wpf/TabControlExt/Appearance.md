@@ -13,7 +13,7 @@ This section deals with the appearance of TabControlExt control and contains the
 
 
 
-{ ![](Appearance_images/Appearance_img1.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -47,23 +47,23 @@ The following code example illustrates how to set the visual style for the TabCo
 
 
 
-&lt;!-- Adding TabControlExt --&gt;
+<!-- Adding TabControlExt -->
 
-&lt;syncfusion:TabControlExt Name="tabControlExt" syncfusion:SkinStorage.VisualStyle="Office2007Blue"&gt;
-
-
-
-    &lt;!-- Adding TabItemExt --&gt;
-
-    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"/&gt;
+<syncfusion:TabControlExt Name="tabControlExt" syncfusion:SkinStorage.VisualStyle="Office2007Blue">
 
 
 
-    &lt;!-- Adding TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"/&gt;
+    <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"/>
 
-&lt;/syncfusion:TabControlExt&gt;
+
+
+    <!-- Adding TabItemExt -->
+
+    <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"/>
+
+</syncfusion:TabControlExt>
 
 
 
@@ -135,55 +135,55 @@ SkinStorage.SetVisualStyle(tabControlExt, "Office2007Blue");
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/tab/7blue.png](Appearance_images/Appearance_img2.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/7blue.png](Appearance_images/Appearance_img2.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/tab/7black.png](Appearance_images/Appearance_img3.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/7black.png](Appearance_images/Appearance_img3.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/tab/7silver.png](Appearance_images/Appearance_img4.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/7silver.png](Appearance_images/Appearance_img4.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/tab/10blue.png](Appearance_images/Appearance_img5.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/10blue.png](Appearance_images/Appearance_img5.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/tab/10black.png](Appearance_images/Appearance_img6.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/10black.png](Appearance_images/Appearance_img6.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/tab/10silver.png](Appearance_images/Appearance_img7.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/10silver.png](Appearance_images/Appearance_img7.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/tab/vs2010.png](Appearance_images/Appearance_img8.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/vs2010.png](Appearance_images/Appearance_img8.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Appearance_images/Appearance_img9.jpeg) | markdownify }
+{{ '![](Appearance_images/Appearance_img9.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ramalakshmim/Desktop/ugss/tab/metro.png](Appearance_images/Appearance_img10.png) | markdownify }
+{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/metro.png](Appearance_images/Appearance_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -191,7 +191,7 @@ SkinStorage.SetVisualStyle(tabControlExt, "Office2007Blue");
 
 
 
-{ ![](Appearance_images/Appearance_img11.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -269,13 +269,13 @@ The following code example shows how to use the customization properties in the 
 
                             TabItemHoverForeground="Yellow">
 
-                &lt;sync:TabItemExt Header="TabItem1"/&gt;
+                <sync:TabItemExt Header="TabItem1"/>
 
-                &lt;sync:TabItemExt Header="TabItem2"/&gt;
+                <sync:TabItemExt Header="TabItem2"/>
 
-                &lt;sync:TabItemExt Header="TabItem3"/&gt;              
+                <sync:TabItemExt Header="TabItem3"/>              
 
-&lt;/sync:TabControlExt&gt;
+</sync:TabControlExt>
 
 
 
@@ -285,7 +285,7 @@ The following screenshot is the sample output for the above code example.
 
 
 
-{ ![](Appearance_images/Appearance_img12.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img12.png)' | markdownify }}
 {:.image }
 
 

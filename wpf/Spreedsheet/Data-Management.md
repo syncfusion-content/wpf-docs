@@ -25,7 +25,7 @@ The Data Validation enables you to dynamically validate the data entered in a ce
 
 
 
-{ ![](Data-Management_images/Data-Management_img1.png) | markdownify }
+{{ '![](Data-Management_images/Data-Management_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -75,19 +75,19 @@ You can define the data validation to the Spreadsheet cells using the Data Valid
 
 
 
-{ ![](Data-Management_images/Data-Management_img2.png) | markdownify }
+{{ '![](Data-Management_images/Data-Management_img2.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Data-Management_images/Data-Management_img3.png) | markdownify }
+{{ '![](Data-Management_images/Data-Management_img3.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Data-Management_images/Data-Management_img4.png) | markdownify }
+{{ '![](Data-Management_images/Data-Management_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -97,7 +97,7 @@ The input message will be displayed as tooltip, when the particular cell is in a
 
 
 
-{ ![](Data-Management_images/Data-Management_img5.png) | markdownify }
+{{ '![](Data-Management_images/Data-Management_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -107,7 +107,7 @@ The error message will be display only when you enter the value beyond the data 
 
 
 
-{ ![](Data-Management_images/Data-Management_img6.png) | markdownify }
+{{ '![](Data-Management_images/Data-Management_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -123,9 +123,9 @@ The following code illustrates how to bind the DataValidationCommand to a button
 
 
 
-&lt;Button Command="{Binding Path=DataValidationCommand}"&gt;
+<Button Command="{Binding Path=DataValidationCommand}">
 
-                    &lt;/Button&gt;
+                    </Button>
 
 
 
@@ -147,19 +147,19 @@ The following code illustrates how to bind the InsertCommentCommand__to a button
 
 
 
-&lt;Button Command="{Binding Path= InsertCommentCommand}"&gt;
+<Button Command="{Binding Path= InsertCommentCommand}">
 
-&lt;/Button&gt;
+</Button>
 
 
 
-{ ![](Data-Management_images/Data-Management_img7.png) | markdownify }
+{{ '![](Data-Management_images/Data-Management_img7.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Data-Management_images/Data-Management_img8.png) | markdownify }
+{{ '![](Data-Management_images/Data-Management_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -173,7 +173,7 @@ You can edit the existing comments using the Edit Comment dialog box. You can op
 
 
 
-{ ![](Data-Management_images/Data-Management_img9.png) | markdownify }
+{{ '![](Data-Management_images/Data-Management_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -187,9 +187,9 @@ The following code illustrates how to bind the InsertCommentCommand__to a button
 
 
 
-&lt;Button Command="{Binding Path= InsertCommentCommand}"&gt;
+<Button Command="{Binding Path= InsertCommentCommand}">
 
-&lt;/Button&gt;
+</Button>
 
 
 
@@ -205,9 +205,9 @@ The following code illustrates how to bind the DeleteCommentCommand__to a button
 
 
 
-&lt;Button Command="{Binding Path= DeleteCommentCommand}"&gt;
+<Button Command="{Binding Path= DeleteCommentCommand}">
 
-&lt;/Button&gt;
+</Button>
 
 
 
@@ -217,7 +217,7 @@ Spreadsheet offers some helper methods that enable you to import and export data
 
 
 
-{ ![](Data-Management_images/Data-Management_img10.png) | markdownify }
+{{ '![](Data-Management_images/Data-Management_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -351,7 +351,7 @@ By default, the normal copy and paste option is enabled in the Spreadsheet contr
 
 
 
-{ ![](Data-Management_images/Data-Management_img11.png) | markdownify }
+{{ '![](Data-Management_images/Data-Management_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -365,13 +365,13 @@ If you are pasting the date in the spreadsheet cells, it will show this small po
 
 
 
-{ ![C:/Users/ponrajaa/Desktop/document/New Document/Spreadsheet_Images/WPF/Copy1.png](Data-Management_images/Data-Management_img12.png) | markdownify }
+{{ '![C:/Users/ponrajaa/Desktop/document/New Document/Spreadsheet_Images/WPF/Copy1.png](Data-Management_images/Data-Management_img12.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/ponrajaa/Desktop/document/New Document/Spreadsheet_Images/WPF/Copy2.png](Data-Management_images/Data-Management_img13.png) | markdownify }
+{{ '![C:/Users/ponrajaa/Desktop/document/New Document/Spreadsheet_Images/WPF/Copy2.png](Data-Management_images/Data-Management_img13.png)' | markdownify }}
 {:.image }
 
 

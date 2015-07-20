@@ -121,7 +121,7 @@ SearchItemPath property specifies the property path by which the filtering has t
 
                             AutoCompleteSource="{Binding Employees}" />
 
-{ ![C:/Users/ApoorvahR/Desktop/4.png](Auto-Complete_images/Auto-Complete_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/4.png](Auto-Complete_images/Auto-Complete_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -167,7 +167,7 @@ The filtered suggestions are displayed in a drop-down list.  Users can pick an i
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/5.png](Auto-Complete_images/Auto-Complete_img2.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/5.png](Auto-Complete_images/Auto-Complete_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -199,7 +199,7 @@ AutoCompleteMode="Append"
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/6.png](Auto-Complete_images/Auto-Complete_img3.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/6.png](Auto-Complete_images/Auto-Complete_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -231,7 +231,7 @@ The text will be appended to the first matched item in the suggestions collectio
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/7.png](Auto-Complete_images/Auto-Complete_img4.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/7.png](Auto-Complete_images/Auto-Complete_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -265,27 +265,27 @@ The AutoCompleteItemTemplate helps to decorate the suggested item with visual el
 
                             AutoCompleteSource="{Binding Employees}" >
 
-            &lt;editors:SfTextBoxExt.AutoCompleteItemTemplate&gt;
+            <editors:SfTextBoxExt.AutoCompleteItemTemplate>
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-                    &lt;StackPanel Orientation="Horizontal"&gt;
+                    <StackPanel Orientation="Horizontal">
 
-                        &lt;Image Source="User.png" Margin="2" Stretch="Uniform" Width="12"/&gt;
+                        <Image Source="User.png" Margin="2" Stretch="Uniform" Width="12"/>
 
-                        &lt;TextBlock Text="{Binding Name}" Margin="5 2"/&gt;
+                        <TextBlock Text="{Binding Name}" Margin="5 2"/>
 
-                    &lt;/StackPanel&gt;
+                    </StackPanel>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-            &lt;/editors:SfTextBoxExt.AutoCompleteItemTemplate&gt;
+            </editors:SfTextBoxExt.AutoCompleteItemTemplate>
 
-        &lt;/editors:SfTextBoxExt&gt;
+        </editors:SfTextBoxExt>
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/8.png](Auto-Complete_images/Auto-Complete_img5.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/8.png](Auto-Complete_images/Auto-Complete_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -344,7 +344,7 @@ SuggestionMode="None"
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/9.png](Auto-Complete_images/Auto-Complete_img6.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/9.png](Auto-Complete_images/Auto-Complete_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -374,7 +374,7 @@ SuggestionMode="StartsWith"
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/10.png](Auto-Complete_images/Auto-Complete_img7.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/10.png](Auto-Complete_images/Auto-Complete_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -404,7 +404,7 @@ SuggestionMode="StartsWithCaseSensitive"
 
                             AutoCompleteSource="{Binding Employees}"/>
 
-{ ![C:/Users/ApoorvahR/Desktop/11.png](Auto-Complete_images/Auto-Complete_img8.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/11.png](Auto-Complete_images/Auto-Complete_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -438,7 +438,7 @@ The control returns all possible matches which start with the text typed by the 
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/12.png](Auto-Complete_images/Auto-Complete_img9.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/12.png](Auto-Complete_images/Auto-Complete_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -472,7 +472,7 @@ SuggestionMode="StartsWithOrdinalCaseSensitive"
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/13.png](Auto-Complete_images/Auto-Complete_img10.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/13.png](Auto-Complete_images/Auto-Complete_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -507,7 +507,7 @@ The control return all possible matches which contains the text typed by the use
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/14.png](Auto-Complete_images/Auto-Complete_img11.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/14.png](Auto-Complete_images/Auto-Complete_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -539,7 +539,7 @@ The control return all possible matches which contains the text typed by the use
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/15.png](Auto-Complete_images/Auto-Complete_img12.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/15.png](Auto-Complete_images/Auto-Complete_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -573,7 +573,7 @@ The control return all possible matches which contains the text typed by the use
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/16.png](Auto-Complete_images/Auto-Complete_img13.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/16.png](Auto-Complete_images/Auto-Complete_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -605,7 +605,7 @@ The control return all possible matches which contains the text typed by the use
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/17.png](Auto-Complete_images/Auto-Complete_img14.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/17.png](Auto-Complete_images/Auto-Complete_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -639,7 +639,7 @@ The control return all possible matches which equals the text typed by the user.
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/18.png](Auto-Complete_images/Auto-Complete_img15.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/18.png](Auto-Complete_images/Auto-Complete_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -669,7 +669,7 @@ The control return all possible matches which equals the text typed by the user 
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/19.png](Auto-Complete_images/Auto-Complete_img16.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/19.png](Auto-Complete_images/Auto-Complete_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -701,7 +701,7 @@ The control return all possible matches which equals the text typed by the user 
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/20.png](Auto-Complete_images/Auto-Complete_img17.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/20.png](Auto-Complete_images/Auto-Complete_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -733,7 +733,7 @@ The control return all possible matches which equals the text typed by the user 
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/21.png](Auto-Complete_images/Auto-Complete_img18.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/21.png](Auto-Complete_images/Auto-Complete_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -811,7 +811,7 @@ autoComplete.Filter = MyFilter;
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/22.png](Auto-Complete_images/Auto-Complete_img19.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/22.png](Auto-Complete_images/Auto-Complete_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -847,7 +847,7 @@ This option allows the control to filter suggestions by ignoring the case. The d
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/23.png](Auto-Complete_images/Auto-Complete_img20.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/23.png](Auto-Complete_images/Auto-Complete_img20.png)' | markdownify }}
 {:.image }
 
 
@@ -879,7 +879,7 @@ MinimumPrefixCharacters="2"
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/24.png](Auto-Complete_images/Auto-Complete_img21.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/24.png](Auto-Complete_images/Auto-Complete_img21.png)' | markdownify }}
 {:.image }
 
 
@@ -945,7 +945,7 @@ The drop-down list will open at top of the control.
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/25.png](Auto-Complete_images/Auto-Complete_img22.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/25.png](Auto-Complete_images/Auto-Complete_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -977,7 +977,7 @@ The drop-down list will open at bottom of the control.
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/26.png](Auto-Complete_images/Auto-Complete_img23.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/26.png](Auto-Complete_images/Auto-Complete_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -1007,7 +1007,7 @@ SuggestionBoxPlacement="None"
 
                             AutoCompleteSource="{Binding Employees}"/>
 
-{ ![C:/Users/ApoorvahR/Desktop/27.png](Auto-Complete_images/Auto-Complete_img24.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/27.png](Auto-Complete_images/Auto-Complete_img24.png)' | markdownify }}
 {:.image }
 
 

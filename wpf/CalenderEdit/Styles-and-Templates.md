@@ -29,37 +29,37 @@ To set this property, use the following code.
 
   Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
-&lt;Grid Margin="20"&gt;
+<Grid Margin="20">
 
-  &lt;Grid.Resources&gt;
-
-
-
-&lt;!-- day cell style --&gt;
-
-    &lt;Style x:Key="dayCell" TargetType="{x:Type syncfusion:DayCell}"&gt;
-
-      &lt;Setter Property="CornerRadius" Value="0"/&gt;
-
-      &lt;Setter Property="Background" Value="SlateBlue"/&gt;
-
-    &lt;/Style&gt;
-
-  &lt;/Grid.Resources&gt;
+  <Grid.Resources>
 
 
 
-  &lt;!-- Adding calendar with day cell style --&gt;
+<!-- day cell style -->
 
-  &lt;syncfusion:CalendarEdit Name="calendarEdit" DayCellsStyle="{StaticResource dayCell}"/&gt;
+    <Style x:Key="dayCell" TargetType="{x:Type syncfusion:DayCell}">
 
-&lt;/Grid&gt;
+      <Setter Property="CornerRadius" Value="0"/>
 
-&lt;/Window&gt;
+      <Setter Property="Background" Value="SlateBlue"/>
+
+    </Style>
+
+  </Grid.Resources>
 
 
 
-{ ![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg) | markdownify }
+  <!-- Adding calendar with day cell style -->
+
+  <syncfusion:CalendarEdit Name="calendarEdit" DayCellsStyle="{StaticResource dayCell}"/>
+
+</Grid>
+
+</Window>
+
+
+
+{{ '![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -79,33 +79,33 @@ You can set the style of the day name cell, using the DayNameCellsStyle property
 
   Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
-&lt;Grid Margin="20"&gt;
+<Grid Margin="20">
 
-  &lt;Grid.Resources&gt;
+  <Grid.Resources>
 
-    &lt;!-- setting style for DayNameCell --&gt;
+    <!-- setting style for DayNameCell -->
 
-    &lt;Style x:Key="dayCell" TargetType="{x:Type syncfusion:DayNameCell}"&gt;
+    <Style x:Key="dayCell" TargetType="{x:Type syncfusion:DayNameCell}">
 
-      &lt;Setter Property="Background" Value="Green"/&gt;
+      <Setter Property="Background" Value="Green"/>
 
-    &lt;/Style&gt;
+    </Style>
 
-  &lt;/Grid.Resources&gt;
-
-
-
-  &lt;!-- Adding calendar with day name cell style --&gt;
-
-  &lt;syncfusion:CalendarEdit Name="calendarEdit" DayNameCellsStyle="{StaticResource dayCell}"/&gt;
-
-&lt;/Grid&gt;
-
-&lt;/Window&gt;
+  </Grid.Resources>
 
 
 
-{ ![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg) | markdownify }
+  <!-- Adding calendar with day name cell style -->
+
+  <syncfusion:CalendarEdit Name="calendarEdit" DayNameCellsStyle="{StaticResource dayCell}"/>
+
+</Grid>
+
+</Window>
+
+
+
+{{ '![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -125,15 +125,15 @@ You can create a data template for the day cell, using the DayCellsDataTemplate 
 
     Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
-  &lt;Grid Margin="20"&gt;
+  <Grid Margin="20">
 
-    &lt;Grid.Resources&gt;
+    <Grid.Resources>
 
 
 
-      &lt;!-- setting Data Template for DayCell --&gt;
+      <!-- setting Data Template for DayCell -->
 
-      &lt;DataTemplate x:Key="dayCell" DataType="syncfusion:DayCell"&gt;
+      <DataTemplate x:Key="dayCell" DataType="syncfusion:DayCell">
 
       <TextBlock
 
@@ -145,25 +145,25 @@ You can create a data template for the day cell, using the DayCellsDataTemplate 
 
       Text="{Binding Day}"/>
 
-      &lt;/DataTemplate&gt;
+      </DataTemplate>
 
-    &lt;/Grid.Resources&gt;
-
-
-
-    &lt;!-- Adding calendar --&gt;
-
-    &lt;syncfusion:CalendarEdit Name="calendarEdit" DayCellsDataTemplate="{StaticResource dayCell}"/&gt;
-
-  &lt;/Grid&gt;
-
-&lt;/Window&gt;
+    </Grid.Resources>
 
 
 
+    <!-- Adding calendar -->
+
+    <syncfusion:CalendarEdit Name="calendarEdit" DayCellsDataTemplate="{StaticResource dayCell}"/>
+
+  </Grid>
+
+</Window>
 
 
-{ ![](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg) | markdownify }
+
+
+
+{{ '![](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -183,15 +183,15 @@ You can create a data template for the day name cell, using the DayNameCellsData
 
   Title="Window1" Height="300" Width="300" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
-&lt;Grid Margin="20"&gt;
+<Grid Margin="20">
 
-  &lt;Grid.Resources&gt;
+  <Grid.Resources>
 
 
 
-    &lt;!-- setting Data Template for DayNameCell --&gt;
+    <!-- setting Data Template for DayNameCell -->
 
-    &lt;DataTemplate x:Key="dayNameCells" DataType="syncfusion:DayNameCell"&gt;
+    <DataTemplate x:Key="dayNameCells" DataType="syncfusion:DayNameCell">
 
     <TextBlock
 
@@ -203,23 +203,23 @@ You can create a data template for the day name cell, using the DayNameCellsData
 
     Text="{Binding}"/>
 
-    &lt;/DataTemplate&gt;
+    </DataTemplate>
 
-  &lt;/Grid.Resources&gt;
-
-
-
-  &lt;!-- Adding calendar --&gt;
-
-  &lt;syncfusion:CalendarEdit Name="calendarEdit" DayNameCellsDataTemplate="{StaticResource dayNameCells}"/&gt;
-
-&lt;/Grid&gt;
-
-&lt;/Window&gt;
+  </Grid.Resources>
 
 
 
-{ ![](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg) | markdownify }
+  <!-- Adding calendar -->
+
+  <syncfusion:CalendarEdit Name="calendarEdit" DayNameCellsDataTemplate="{StaticResource dayNameCells}"/>
+
+</Grid>
+
+</Window>
+
+
+
+{{ '![](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg)' | markdownify }}
 {:.image }
 
 

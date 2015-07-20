@@ -23,7 +23,7 @@ XAML
 
 
 
-{ ![](Watermark-Support_images/Watermark-Support_img1.png) | markdownify }
+{{ '![](Watermark-Support_images/Watermark-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -45,25 +45,25 @@ XAML
 
             UseNullOption="True">
 
-    &lt;syncfusion:PercentTextBox.WatermarkTemplate&gt;
+    <syncfusion:PercentTextBox.WatermarkTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;Border Background="LightGray"&gt;
+            <Border Background="LightGray">
 
-                &lt;TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="5,0,0,0"/&gt;
+                <TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="5,0,0,0"/>
 
-            &lt;/Border&gt;
+            </Border>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:PercentTextBox.WatermarkTemplate&gt;
+    </syncfusion:PercentTextBox.WatermarkTemplate>
 
-&lt;/syncfusion:PercentTextBox&gt;
+</syncfusion:PercentTextBox>
 
 
 
-{ ![](Watermark-Support_images/Watermark-Support_img2.png) | markdownify }
+{{ '![](Watermark-Support_images/Watermark-Support_img2.png)' | markdownify }}
 {:.image }
 
 

@@ -25,15 +25,15 @@ The following code example explains how to add a Circular Gauge:
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid Name="Grid" Background="Black"&gt;
+    <Grid Name="Grid" Background="Black">
 
-     &lt;syncfusion:SfCircularGauge x:Name="gauge"  &gt;
+     <syncfusion:SfCircularGauge x:Name="gauge"  >
 
-       &lt;syncfusion:SfCircularGauge x:Name="gauge" GaugeHeaderPosition="300,600" &gt;
+       <syncfusion:SfCircularGauge x:Name="gauge" GaugeHeaderPosition="300,600" >
 
 
 
-            &lt;syncfusion:SfCircularGauge.GaugeHeader&gt;
+            <syncfusion:SfCircularGauge.GaugeHeader>
 
 
 
@@ -45,9 +45,9 @@ The following code example explains how to add a Circular Gauge:
 
 
 
-            &lt;/syncfusion:SfCircularGauge.GaugeHeader&gt;
+            </syncfusion:SfCircularGauge.GaugeHeader>
 
-            &lt;syncfusion:SfCircularGauge.MainScale&gt;
+            <syncfusion:SfCircularGauge.MainScale>
 
          <syncfusion:CircularScale StartAngle="135" 
 
@@ -61,7 +61,7 @@ The following code example explains how to add a Circular Gauge:
 
 
 
-              &lt;syncfusion:CircularScale.Ranges&gt;
+              <syncfusion:CircularScale.Ranges>
 
                    <syncfusion:CircularRange StartValue="0" 
 
@@ -71,23 +71,23 @@ The following code example explains how to add a Circular Gauge:
 
                                              EndValue="100" Stroke="#C1252C" />
 
-              &lt;/syncfusion:CircularScale.Ranges&gt;
+              </syncfusion:CircularScale.Ranges>
 
 
 
-              &lt;syncfusion:CircularScale.Pointers&gt;
+              <syncfusion:CircularScale.Pointers>
 
-                  &lt;syncfusion:CircularPointer PointerType="NeedlePointer" Value="170"/&gt;
+                  <syncfusion:CircularPointer PointerType="NeedlePointer" Value="170"/>
 
-              &lt;/syncfusion:CircularScale.Pointers&gt;
+              </syncfusion:CircularScale.Pointers>
 
-         &lt;/syncfusion:CircularScale&gt;
+         </syncfusion:CircularScale>
 
-    &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+    </syncfusion:SfCircularGauge.MainScale>
 
-&lt;/syncfusion:SfCircularGauge&gt;    &lt;/Grid&gt;
+</syncfusion:SfCircularGauge>    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -131,7 +131,7 @@ The following code example explains how to add a Circular Gauge:
 
 Screenshot:
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -143,25 +143,25 @@ To add SfCircularGauge Control, follow the steps below:
 
 1. Create a simple WPF application by using Visual Studio.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
 2. Right-Click on the Project and select Syncfusion Reference Manager.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
 3. The Syncfusion Reference Manager Wizard is opened as follows.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
 4. Search SfCircularGauge by using Search Box and select SfCircularGauge Control.  Click done to add selected SfCircularGauge Control.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -169,11 +169,11 @@ To add SfCircularGauge Control, follow the steps below:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -201,13 +201,13 @@ xmlns:syncfusion ="http://schemas.syncfusion.com/wpf"
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid Name="Grid" Background="Black"&gt;
+    <Grid Name="Grid" Background="Black">
 
-        &lt;syncfusion:SfCircularGauge&gt;&lt;/syncfusion:SfCircularGauge&gt;
+        <syncfusion:SfCircularGauge></syncfusion:SfCircularGauge>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -247,7 +247,7 @@ namespace CircularGauge
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 

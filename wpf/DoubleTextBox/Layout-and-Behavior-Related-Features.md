@@ -19,7 +19,7 @@ The Corner Radius describes the degree to which corners are rounded. This proper
 
 
 
-{ ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img1.png) | markdownify }
+{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -41,7 +41,7 @@ XAML
 
 
 
-{ ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img2.png) | markdownify }
+{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -61,7 +61,7 @@ XAML
 
 
 
-{ ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img3.png) | markdownify }
+{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -75,13 +75,13 @@ The TextSelectionOnFocus property allows the DoubleTextBox to act like standard 
 
 
 
-{ ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img4.png) | markdownify }
+{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img4.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img5.png) | markdownify }
+{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img5.png)' | markdownify }}
 {:.image }
 
 

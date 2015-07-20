@@ -23,23 +23,23 @@ To set the MDI window state to "minimized", use the below code snippet. FlowDocu
 
 
 
-&lt;!-- Adding Document Container --&gt;
+<!-- Adding Document Container -->
 
-&lt;syncfusion:DocumentContainer Name="DocContainer" Mode="MDI"&gt;
+<syncfusion:DocumentContainer Name="DocContainer" Mode="MDI">
 
-&lt;FlowDocumentScrollViewer syncfusion:DocumentContainer.MDIWindowState="Minimized" &gt;
+<FlowDocumentScrollViewer syncfusion:DocumentContainer.MDIWindowState="Minimized" >
 
-&lt;/FlowDocumentScrollViewer&gt;
-
-…....
+</FlowDocumentScrollViewer>
 
 …....
 
-&lt;/syncfusion:DocumentContainer&gt;
+…....
+
+</syncfusion:DocumentContainer>
 
 
 
-{ ![](Setting-Window-State_images/Setting-Window-State_img1.jpeg) | markdownify }
+{{ '![](Setting-Window-State_images/Setting-Window-State_img1.jpeg)' | markdownify }}
 {:.image }
 
 

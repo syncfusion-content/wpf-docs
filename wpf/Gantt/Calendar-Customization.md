@@ -61,14 +61,14 @@ N/A</td></tr>
 <tr>
 <td>
 DefaultStartTime</td><td>
-Gets or sets the task starting time in a day. This is based on the {{ '_GanttTime_' | markdownify }} class of the Gantt control.By default this is set to 9.00 AM</td><td>
+Gets or sets the task starting time in a day. This is based on the {{{ ''_GanttTime_'' | markdownify }}} class of the Gantt control.By default this is set to 9.00 AM</td><td>
 Dependency Property</td><td>
 GanttTime</td><td>
 N/A</td></tr>
 <tr>
 <td>
 DefaultEndTime</td><td>
-Gets or sets the task ending time in a day. This is based on the {{ '_GanttTime_' | markdownify }} class of the Gantt control.By default this is set to 6.00 PM</td><td>
+Gets or sets the task ending time in a day. This is based on the {{{ ''_GanttTime_'' | markdownify }}} class of the Gantt control.By default this is set to 6.00 PM</td><td>
 Dependency Property</td><td>
 GanttTime</td><td>
 N/A</td></tr>
@@ -87,9 +87,9 @@ The following code illustrates adding Calendar Customization to an Application:
 
 
 
-  &lt;sync:GanttControl Grid.Row="1"  x:Name="Gantt"&gt;
+  <sync:GanttControl Grid.Row="1"  x:Name="Gantt">
 
-                &lt;sync:GanttControl.TaskAttributeMapping&gt;
+                <sync:GanttControl.TaskAttributeMapping>
 
                     <sync:TaskAttributeMapping TaskIdMapping="Id"
 
@@ -107,11 +107,11 @@ The following code illustrates adding Calendar Customization to an Application:
 
                                             PredecessorMapping="Predecessor">
 
-                    &lt;/sync:TaskAttributeMapping&gt;
+                    </sync:TaskAttributeMapping>
 
-                &lt;/sync:GanttControl.TaskAttributeMapping&gt;
+                </sync:GanttControl.TaskAttributeMapping>
 
-            &lt;/sync:GanttControl&gt;           
+            </sync:GanttControl>           
 
 
 
@@ -147,7 +147,7 @@ The following image shows Customized Calender:
 
 
 
-{ ![](Calendar-Customization_images/Calendar-Customization_img1.png) | markdownify }
+{{ '![](Calendar-Customization_images/Calendar-Customization_img1.png)' | markdownify }}
 {:.image }
 
 

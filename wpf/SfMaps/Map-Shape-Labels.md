@@ -29,9 +29,9 @@ Gets or sets the field name in the database (.dbf) file.</td></tr>
 
 [XAML]
 
-    &lt;syncfusion:SfMap&gt;
+    <syncfusion:SfMap>
 
-        &lt;syncfusion:SfMap.Layers&gt;
+        <syncfusion:SfMap.Layers>
 
             <syncfusion:ShapeFileLayer x:Name="shapeFileLayer"   
 
@@ -39,11 +39,11 @@ Gets or sets the field name in the database (.dbf) file.</td></tr>
 
                                        LabelPath="NAME" FontSize="14">
 
-            &lt;/syncfusion:ShapeFileLayer&gt;
+            </syncfusion:ShapeFileLayer>
 
-        &lt;/syncfusion:SfMap.Layers&gt;
+        </syncfusion:SfMap.Layers>
 
-    &lt;/syncfusion:SfMap&gt;  
+    </syncfusion:SfMap>  
 
 
 
@@ -53,9 +53,9 @@ The labels can also be customized by modifying the ItemsTemplate of ShapeFileLay
 
 [XAML]
 
-     &lt;syncfusion:SfMap&gt;
+     <syncfusion:SfMap>
 
-        &lt;syncfusion:SfMap.Layers&gt;
+        <syncfusion:SfMap.Layers>
 
             <syncfusion:ShapeFileLayer x:Name="shapeFileLayer" 
 
@@ -63,33 +63,33 @@ The labels can also be customized by modifying the ItemsTemplate of ShapeFileLay
 
                                        LabelPath="NAME">
 
-                &lt;syncfusion:ShapeFileLayer.ItemsTemplate&gt;
+                <syncfusion:ShapeFileLayer.ItemsTemplate>
 
-                    &lt;DataTemplate&gt;
+                    <DataTemplate>
 
-                        &lt;Grid Background="Gray" Opacity="0.75"&gt;
+                        <Grid Background="Gray" Opacity="0.75">
 
                             <TextBlock Text="{Binding DBFData[NAME]}"
 
                                        FontSize="14" Margin="10 5"/>
 
-                        &lt;/Grid&gt;
+                        </Grid>
 
-                    &lt;/DataTemplate&gt;
+                    </DataTemplate>
 
-                &lt;/syncfusion:ShapeFileLayer.ItemsTemplate&gt;
+                </syncfusion:ShapeFileLayer.ItemsTemplate>
 
-            &lt;/syncfusion:ShapeFileLayer&gt;
+            </syncfusion:ShapeFileLayer>
 
-        &lt;/syncfusion:SfMap.Layers&gt;
+        </syncfusion:SfMap.Layers>
 
-    &lt;/syncfusion:SfMap&gt; 
-
-
+    </syncfusion:SfMap> 
 
 
 
-{ ![](Map-Shape-Labels_images/Map-Shape-Labels_img1.png) | markdownify }
+
+
+{{ '![](Map-Shape-Labels_images/Map-Shape-Labels_img1.png)' | markdownify }}
 {:.image }
 
 

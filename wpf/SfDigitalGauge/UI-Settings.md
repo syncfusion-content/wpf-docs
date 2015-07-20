@@ -26,7 +26,7 @@ The distance between the characters can be set by using the CharacterSpacing p
 
 [XAML]
 
-           &lt;syncfusion:SfDigitalGauge  Value="SYNCFUSION" CharacterSpacing="50"/&gt;
+           <syncfusion:SfDigitalGauge  Value="SYNCFUSION" CharacterSpacing="50"/>
 
 
 
@@ -46,7 +46,7 @@ Screenshot:
 
 
 
-{ ![](UI-Settings_images/UI-Settings_img1.png) | markdownify }
+{{ '![](UI-Settings_images/UI-Settings_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -60,7 +60,7 @@ The Stroke of the character can be changed by using CharacterStroke property.
 
 [XAML]
 
-       &lt;syncfusion:SfDigitalGauge  Value="SYNCFUSION"   CharacterType="SegmentFourteen" CharacterStroke="Yellow" /&gt;
+       <syncfusion:SfDigitalGauge  Value="SYNCFUSION"   CharacterType="SegmentFourteen" CharacterStroke="Yellow" />
 
 
 
@@ -82,7 +82,7 @@ Screenshot:
 
 
 
-{ ![](UI-Settings_images/UI-Settings_img2.png) | markdownify }
+{{ '![](UI-Settings_images/UI-Settings_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -96,7 +96,7 @@ By using SegmentThickness property, you can adjust the thickness of the segmen
 
 [XAML]
 
-      &lt;syncfusion:SfDigitalGauge  Value="SYNCFUSION"  CharacterType="SegmentFourteen  SegmentThickness="5"/&gt;
+      <syncfusion:SfDigitalGauge  Value="SYNCFUSION"  CharacterType="SegmentFourteen  SegmentThickness="5"/>
 
 
 
@@ -126,7 +126,7 @@ Screenshot:
 
 
 
-{ ![](UI-Settings_images/UI-Settings_img3.png) | markdownify }
+{{ '![](UI-Settings_images/UI-Settings_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -140,7 +140,7 @@ The Characters are aligned by using EnableRTLFormat property. The default value 
 
 [XAML]
 
-      &lt;syncfusion:SfDigitalGauge  Value="SYNCFUSION"  CharacterType="SegmentFourteen"   EnableRTLFormat="True" /&gt;
+      <syncfusion:SfDigitalGauge  Value="SYNCFUSION"  CharacterType="SegmentFourteen"   EnableRTLFormat="True" />
 
 
 
@@ -166,7 +166,7 @@ Screenshot:
 
 
 
-{ ![](UI-Settings_images/UI-Settings_img4.png) | markdownify }
+{{ '![](UI-Settings_images/UI-Settings_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -180,7 +180,7 @@ DimmedBrush property is used to apply brushes to the dimmed segment. This prope
 
 [XAML]
 
-      &lt;syncfusion:SfDigitalGauge  Value="SYNCFUSION" CharacterType="SegmentFourteen"  DimmedBrush="White" /&gt;
+      <syncfusion:SfDigitalGauge  Value="SYNCFUSION" CharacterType="SegmentFourteen"  DimmedBrush="White" />
 
 
 
@@ -206,7 +206,7 @@ Screenshot:
 
 
 
-{ ![](UI-Settings_images/UI-Settings_img5.png) | markdownify }
+{{ '![](UI-Settings_images/UI-Settings_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -220,7 +220,7 @@ DimmedBrushOpacity property is used to set the opacity of the brushes to the dim
 
 [XAML]
 
-      &lt;syncfusion:SfDigitalGauge  Value="SYNCFUSION" DimmedBrush="White"  DimmedBrushOpacity="20" CharacterType="SegmentFourteen" /&gt;
+      <syncfusion:SfDigitalGauge  Value="SYNCFUSION" DimmedBrush="White"  DimmedBrushOpacity="20" CharacterType="SegmentFourteen" />
 
 
 
@@ -246,7 +246,7 @@ Screenshot:
 
 
 
-{ ![](UI-Settings_images/UI-Settings_img6.png) | markdownify }
+{{ '![](UI-Settings_images/UI-Settings_img6.png)' | markdownify }}
 {:.image }
 
 

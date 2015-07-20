@@ -21,17 +21,17 @@ You can set custom path using Path property of Carousel control as shown in the 
 
 
 
-&lt;syncfusion:Carousel x:Name="carousel" Height="400" Width="450"&gt;
-    &lt;syncfusion:Carousel.Path&gt;
-        &lt;Path Data="M0,300 L600,300" Stroke="Blue" StrokeThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/&gt;
-    &lt;/syncfusion:Carousel.Path&gt;
-&lt;/syncfusion:Carousel&gt;
+<syncfusion:Carousel x:Name="carousel" Height="400" Width="450">
+    <syncfusion:Carousel.Path>
+        <Path Data="M0,300 L600,300" Stroke="Blue" StrokeThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+    </syncfusion:Carousel.Path>
+</syncfusion:Carousel>
 
 
 
 
 
-{ ![](Path-support_images/Path-support_img1.png) | markdownify }
+{{ '![](Path-support_images/Path-support_img1.png)' | markdownify }}
 {:.image }
 
 

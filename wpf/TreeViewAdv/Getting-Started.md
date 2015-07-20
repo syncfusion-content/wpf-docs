@@ -13,7 +13,7 @@ documentation: ug
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -39,7 +39,7 @@ The TreeViewAdv control can be created in Visual Studio (VS). To create the cont
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -52,7 +52,7 @@ The TreeViewAdv control can be created in Visual Studio (VS). To create the cont
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -62,7 +62,7 @@ The TreeViewAdv control can be created in Visual Studio (VS). To create the cont
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -80,7 +80,7 @@ TreeViewAdv can also be created and configured using the Expression Blend. To cr
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -93,7 +93,7 @@ TreeViewAdv can also be created and configured using the Expression Blend. To cr
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -103,7 +103,7 @@ The Collection Editor window opens:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -117,7 +117,7 @@ This generates the TreeViewItemAdvs as follows:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -135,47 +135,47 @@ TreeViewAdv can be created in XAML as follows:
 
 [XAML]
 
-&lt;syncfusion:TreeViewAdv&gt;
+<syncfusion:TreeViewAdv>
 
 
 
- &lt;syncfusion:TreeViewItemAdv Header="Root1"&gt;
+ <syncfusion:TreeViewItemAdv Header="Root1">
 
 
 
-   &lt;syncfusion:TreeViewItemAdv Header="SubItem1"/&gt;
+   <syncfusion:TreeViewItemAdv Header="SubItem1"/>
 
-   &lt;syncfusion:TreeViewItemAdv Header="SubItem2"/&gt;
+   <syncfusion:TreeViewItemAdv Header="SubItem2"/>
 
-   &lt;syncfusion:TreeViewItemAdv Header="SubItem2"/&gt;
+   <syncfusion:TreeViewItemAdv Header="SubItem2"/>
 
-   &lt;syncfusion:TreeViewItemAdv Header="SubItem2"/&gt;
-
-
-
- &lt;/syncfusion:TreeViewItemAdv&gt;
+   <syncfusion:TreeViewItemAdv Header="SubItem2"/>
 
 
 
- &lt;syncfusion:TreeViewItemAdv Header="Root2"&gt;
+ </syncfusion:TreeViewItemAdv>
 
 
 
-   &lt;syncfusion:TreeViewItemAdv Header="SubItem1"/&gt;
-
-   &lt;syncfusion:TreeViewItemAdv Header="SubItem2"/&gt;
-
-   &lt;syncfusion:TreeViewItemAdv Header="SubItem2"/&gt;
-
-   &lt;syncfusion:TreeViewItemAdv Header="SubItem2"/&gt;
+ <syncfusion:TreeViewItemAdv Header="Root2">
 
 
 
- &lt;/syncfusion:TreeViewItemAdv&gt;
+   <syncfusion:TreeViewItemAdv Header="SubItem1"/>
+
+   <syncfusion:TreeViewItemAdv Header="SubItem2"/>
+
+   <syncfusion:TreeViewItemAdv Header="SubItem2"/>
+
+   <syncfusion:TreeViewItemAdv Header="SubItem2"/>
 
 
 
-&lt;/syncfusion:TreeViewAdv&gt;
+ </syncfusion:TreeViewItemAdv>
+
+
+
+</syncfusion:TreeViewAdv>
 
 
 
@@ -269,7 +269,7 @@ This generates the TreeViewAdv as follows:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -407,11 +407,11 @@ public class ViewModel
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-   &lt;local:ViewModel/&gt;
+   <local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -421,27 +421,27 @@ public class ViewModel
 
 [XAML]
 
-&lt;syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}"&gt;
+<syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}">
 
 
 
-   &lt;syncfusion:TreeViewAdv.ItemTemplate&gt;
+   <syncfusion:TreeViewAdv.ItemTemplate>
 
 
 
-                &lt;HierarchicalDataTemplate ItemsSource="{Binding SubItems}"&gt;
+                <HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
 
-                    &lt;TextBlock Text="{Binding Header}" /&gt;
+                    <TextBlock Text="{Binding Header}" />
 
-                &lt;/HierarchicalDataTemplate&gt;
-
-
-
-    &lt;/syncfusion:TreeViewAdv.ItemTemplate&gt;
+                </HierarchicalDataTemplate>
 
 
 
- &lt;/syncfusion:TreeViewAdv&gt;
+    </syncfusion:TreeViewAdv.ItemTemplate>
+
+
+
+ </syncfusion:TreeViewAdv>
 
 
 
@@ -453,7 +453,7 @@ The TreeViewAdv will be created as follows:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -467,59 +467,59 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 
 [XAML]
 
-&lt;Products&gt;
+<Products>
 
 
 
-  &lt;Product Name="Tools" &gt;
+  <Product Name="Tools" >
 
 
 
-    &lt;Feature Name="Ribbon" &gt;
+    <Feature Name="Ribbon" >
 
-      &lt;Feature Name="Office2010UI"/&gt;
+      <Feature Name="Office2010UI"/>
 
-      &lt;Feature Name="Data Binding Support"/&gt;
+      <Feature Name="Data Binding Support"/>
 
-    &lt;/Feature&gt;
-
-
-
-    &lt;Feature Name="Docking Manager"&gt;
-
-      &lt;Feature Name="Maximization"/&gt;
-
-      &lt;Feature Name="State Persistence"/&gt;
-
-    &lt;/Feature&gt;
+    </Feature>
 
 
 
-    &lt;Feature Name="TreeView"&gt;
+    <Feature Name="Docking Manager">
 
-      &lt;Feature Name="Editing"/&gt;
+      <Feature Name="Maximization"/>
 
-      &lt;Feature Name="Sorting"/&gt;
+      <Feature Name="State Persistence"/>
 
-    &lt;/Feature&gt;
-
-
-
-    &lt;Feature Name="Data Editors" &gt;
-
-      &lt;Feature Name="Watermark Text" /&gt;
-
-      &lt;Feature Name="Extended Value Scrolling" /&gt;
-
-    &lt;/Feature&gt;
+    </Feature>
 
 
 
-  &lt;/Product&gt;
+    <Feature Name="TreeView">
+
+      <Feature Name="Editing"/>
+
+      <Feature Name="Sorting"/>
+
+    </Feature>
 
 
 
-&lt;/Products&gt;
+    <Feature Name="Data Editors" >
+
+      <Feature Name="Watermark Text" />
+
+      <Feature Name="Extended Value Scrolling" />
+
+    </Feature>
+
+
+
+  </Product>
+
+
+
+</Products>
 
 
 
@@ -531,7 +531,7 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 
 [XAML]
 
-&lt;XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Products"/&gt; 
+<XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Products"/> 
 
 
 
@@ -543,31 +543,31 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 
 [XAML]
 
-&lt;syncfusion:TreeViewAdv	ItemsSource="{Binding Source={StaticResource 			xmlSource}, XPath=Product}" &gt;
+<syncfusion:TreeViewAdv	ItemsSource="{Binding Source={StaticResource 			xmlSource}, XPath=Product}" >
 
 
 
- &lt;syncfusion:TreeViewAdv.ItemTemplate&gt;
+ <syncfusion:TreeViewAdv.ItemTemplate>
 
 
 
-  &lt;HierarchicalDataTemplate ItemsSource="{Binding XPath=Feature}"&gt;
+  <HierarchicalDataTemplate ItemsSource="{Binding XPath=Feature}">
 
 
 
-   &lt;TextBlock Text="{Binding XPath=@Name}" /&gt;
+   <TextBlock Text="{Binding XPath=@Name}" />
 
 
 
-  &lt;/HierarchicalDataTemplate&gt;
+  </HierarchicalDataTemplate>
 
 
 
- &lt;/syncfusion:TreeViewAdv.ItemTemplate&gt;
+ </syncfusion:TreeViewAdv.ItemTemplate>
 
 
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -577,7 +577,7 @@ TreeViewAdv will be created as follows:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -669,67 +669,67 @@ The GetEmployees() method given in the above code snippet returns the list of Em
 
 
 
-              &lt;syncfusion:TreeViewAdv.ItemContainerStyle&gt;
+              <syncfusion:TreeViewAdv.ItemContainerStyle>
 
-                  &lt;Style TargetType="syncfusion:TreeViewItemAdv"&gt;
+                  <Style TargetType="syncfusion:TreeViewItemAdv">
 
-                      &lt;Setter Property="LeftImageSource" Value="bullet.png"/&gt;
+                      <Setter Property="LeftImageSource" Value="bullet.png"/>
 
-                      &lt;Setter Property="IsLoadOnDemand" Value="True"/&gt;
+                      <Setter Property="IsLoadOnDemand" Value="True"/>
 
-                      &lt;Setter Property="LoadingHeader" Value="Loading Products..."/&gt;
+                      <Setter Property="LoadingHeader" Value="Loading Products..."/>
 
-                      &lt;Setter Property="ItemContainerStyle"&gt;
+                      <Setter Property="ItemContainerStyle">
 
-                        &lt;Setter.Value&gt;
+                        <Setter.Value>
 
-                          &lt;Style TargetType="syncfusion:TreeViewItemAdv"&gt;
+                          <Style TargetType="syncfusion:TreeViewItemAdv">
 
-                            &lt;Setter Property="IsLoadOnDemand" Value="True"/&gt;
+                            <Setter Property="IsLoadOnDemand" Value="True"/>
 
-                            &lt;Setter Property="LeftImageSource" Value="bullet.png"/&gt;
+                            <Setter Property="LeftImageSource" Value="bullet.png"/>
 
-                            &lt;Setter Property="LoadingHeader" Value="Loading Orders..."/&gt;
+                            <Setter Property="LoadingHeader" Value="Loading Orders..."/>
 
-                            &lt;Setter Property="ItemContainerStyle"&gt;
+                            <Setter Property="ItemContainerStyle">
 
-                             &lt;Setter.Value&gt;
+                             <Setter.Value>
 
-                              &lt;Style TargetType="syncfusion:TreeViewItemAdv"&gt;
+                              <Style TargetType="syncfusion:TreeViewItemAdv">
 
-                               &lt;Setter Property="IsLoadOnDemand" Value="False"/&gt;
+                               <Setter Property="IsLoadOnDemand" Value="False"/>
 
-                               &lt;Setter Property="LeftImageSource" Value="bullet.png"/&gt;
+                               <Setter Property="LeftImageSource" Value="bullet.png"/>
 
-                              &lt;/Style&gt;
+                              </Style>
 
-                             &lt;/Setter.Value&gt;
+                             </Setter.Value>
 
-                            &lt;/Setter&gt;
+                            </Setter>
 
-                           &lt;/Style&gt;
+                           </Style>
 
-                        &lt;/Setter.Value&gt;
+                        </Setter.Value>
 
-                      &lt;/Setter&gt;
+                      </Setter>
 
-                  &lt;/Style&gt;
+                  </Style>
 
-             &lt;/syncfusion:TreeViewAdv.ItemContainerStyle&gt;
+             </syncfusion:TreeViewAdv.ItemContainerStyle>
 
-            &lt;syncfusion:TreeViewAdv.ItemTemplate&gt;
+            <syncfusion:TreeViewAdv.ItemTemplate>
 
-               &lt;HierarchicalDataTemplate ItemsSource="{Binding Products}"&gt;
+               <HierarchicalDataTemplate ItemsSource="{Binding Products}">
 
-                  &lt;TextBlock Text="{Binding Name}"/&gt;
+                  <TextBlock Text="{Binding Name}"/>
 
-               &lt;/HierarchicalDataTemplate&gt;
+               </HierarchicalDataTemplate>
 
-            &lt;/syncfusion:TreeViewAdv.ItemTemplate&gt;
+            </syncfusion:TreeViewAdv.ItemTemplate>
 
 
 
-                &lt;/syncfusion:TreeViewAdv&gt;
+                </syncfusion:TreeViewAdv>
 
 
 
@@ -829,7 +829,7 @@ Retrieve the data from WCF service and load the data to the corresponding TreeVi
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -864,13 +864,13 @@ The class diagram for TreeView control is as follows.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img13.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img13.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img14.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -888,7 +888,7 @@ To create the TreeViewAdv control through designer, do the below steps
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img15.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -908,39 +908,39 @@ TreeViewAdv control is created by using either XAML or C# code. Use the below co
 
 
 
-&lt;!-- Adding TreeViewAdv --&gt;
+<!-- Adding TreeViewAdv -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv"&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv">
 
 
 
-    &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewItemAdv -->
 
-    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+    <syncfusion:TreeViewItemAdv Header="Marital Status">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Single"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+    <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Country Information"/>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -986,7 +986,7 @@ The following screen shot shows the TreeViewAdv control.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img16.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img16.jpeg)' | markdownify }}
 {:.image }
 
 

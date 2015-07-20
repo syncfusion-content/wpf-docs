@@ -185,7 +185,7 @@ Encryption is a method for protecting a workbook with a password that converts i
 
 A password for encrypting a workbook can be set in MS Excel through File > Info > Protect Workbook option.
 
-{ ![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img1.png) | markdownify }
+{{ '![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -195,13 +195,13 @@ There are two different passwords to encrypt a document.
 
 
 
-{ ![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img2.png) | markdownify }
+{{ '![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img2.png)' | markdownify }}
 {:.image }
 
 
 2. Password to Modify-This password does not encrypt and is only meant to give specific users permission to edit workbook data and save changes to the file.
 
-{ ![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img3.png) | markdownify }
+{{ '![](Saving-Excel-Workbook_images/Saving-Excel-Workbook_img3.png)' | markdownify }}
 {:.image }
 
 

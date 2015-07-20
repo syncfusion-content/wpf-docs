@@ -25,7 +25,7 @@ XAML
 
 
 
-        &lt;/syncfusion:TabNavigationControl&gt;
+        </syncfusion:TabNavigationControl>
 
 
 
@@ -45,7 +45,7 @@ XAML
 
 
 
-        &lt;/syncfusion:TabNavigationControl&gt;
+        </syncfusion:TabNavigationControl>
 
 
 
@@ -65,7 +65,7 @@ XAML
 
 
 
-        &lt;/syncfusion:TabNavigationControl&gt;
+        </syncfusion:TabNavigationControl>
 
 
 
@@ -85,7 +85,7 @@ XAML
 
 
 
-        &lt;/syncfusion:TabNavigationControl&gt;
+        </syncfusion:TabNavigationControl>
 
 
 
@@ -105,7 +105,7 @@ XAML
 
 
 
-        &lt;/syncfusion:TabNavigationControl&gt;
+        </syncfusion:TabNavigationControl>
 
 
 
@@ -125,7 +125,7 @@ XAML
 
 
 
-        &lt;/syncfusion:TabNavigationControl&gt;
+        </syncfusion:TabNavigationControl>
 
 
 
@@ -145,7 +145,7 @@ XAML
 
 
 
-        &lt;/syncfusion:TabNavigationControl&gt;
+        </syncfusion:TabNavigationControl>
 
 
 

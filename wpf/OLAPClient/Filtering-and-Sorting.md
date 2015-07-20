@@ -40,23 +40,23 @@ Fields that form filter expression:
 
 1. We can apply filter using the filter dialog window. By clicking the column filter or row filter button in the OLAP client toolbar the appropriate filter dialog window will be displayed.
 
-{ ![](Filtering-and-Sorting_images/Filtering-and-Sorting_img1.png) | markdownify }
+{{ '![](Filtering-and-Sorting_images/Filtering-and-Sorting_img1.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Filtering-and-Sorting_images/Filtering-and-Sorting_img2.png) | markdownify }
+{{ '![](Filtering-and-Sorting_images/Filtering-and-Sorting_img2.png)' | markdownify }}
 {:.image }
 
 
 2. Then by checking the Filter 1 check box, we can apply the first filter condition to the current report.
 
-{ ![](Filtering-and-Sorting_images/Filtering-and-Sorting_img3.png) | markdownify }
+{{ '![](Filtering-and-Sorting_images/Filtering-and-Sorting_img3.png)' | markdownify }}
 {:.image }
 
 
 3. From the condition combo box we can choose the condition we want to include in the filter expression.
 
-{ ![](Filtering-and-Sorting_images/Filtering-and-Sorting_img4.png) | markdownify }
+{{ '![](Filtering-and-Sorting_images/Filtering-and-Sorting_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -65,7 +65,7 @@ Fields that form filter expression:
 
 
 
-{ ![](Filtering-and-Sorting_images/Filtering-and-Sorting_img5.png) | markdownify }
+{{ '![](Filtering-and-Sorting_images/Filtering-and-Sorting_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -120,7 +120,7 @@ Row Sorting
 
 Row sorting will sort the rows in the result set, based on the row total of each row.
 
-{ ![](Filtering-and-Sorting_images/Filtering-and-Sorting_img6.png) | markdownify }
+{{ '![](Filtering-and-Sorting_images/Filtering-and-Sorting_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -136,17 +136,17 @@ The sorting dialog will contain three options namely:
 
 The sorting dialog will appear when we click the row/column sorting button in the OLAP Client tool bar. By giving the proper input, we can apply Sorting.
 
-{ ![](Filtering-and-Sorting_images/Filtering-and-Sorting_img7.png) | markdownify }
+{{ '![](Filtering-and-Sorting_images/Filtering-and-Sorting_img7.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Filtering-and-Sorting_images/Filtering-and-Sorting_img8.png) | markdownify }
+{{ '![](Filtering-and-Sorting_images/Filtering-and-Sorting_img8.png)' | markdownify }}
 {:.image }
 
 
 By Checking the Sort check box we can set the sorting for the current report.
 
-{ ![](Filtering-and-Sorting_images/Filtering-and-Sorting_img9.png) | markdownify }
+{{ '![](Filtering-and-Sorting_images/Filtering-and-Sorting_img9.png)' | markdownify }}
 {:.image }
 
 

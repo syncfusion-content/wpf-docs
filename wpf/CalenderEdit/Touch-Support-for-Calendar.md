@@ -11,7 +11,7 @@ documentation: ug
 
 Swipe support is provided for the calendar. When you swipe from right to left over the calendar, it moves to the next month. When you swipe from left to right over the calendar, it moves to the previous month.
 
-{ ![](Touch-Support-for-Calendar_images/Touch-Support-for-Calendar_img1.png) | markdownify }
+{{ '![](Touch-Support-for-Calendar_images/Touch-Support-for-Calendar_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -19,7 +19,7 @@ Swipe support is provided for the calendar. When you swipe from right to left ov
 
 
 
-{ ![](Touch-Support-for-Calendar_images/Touch-Support-for-Calendar_img2.png) | markdownify }
+{{ '![](Touch-Support-for-Calendar_images/Touch-Support-for-Calendar_img2.png)' | markdownify }}
 {:.image }
 
 

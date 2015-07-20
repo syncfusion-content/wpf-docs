@@ -21,51 +21,51 @@ The appearance of the TabSplitter control is customized by using the appearance 
 
 
 
-&lt;!-- Adding TabSplitter With Selected Brush --&gt;
+<!-- Adding TabSplitter With Selected Brush -->
 
-&lt;syncfusion:TabSplitter Name="tabsplitter" MouseOverBackground="Green" MouseOverForeground="Yellow" SelectedBackground="Red" SelectedForeground="YellowGreen"&gt;
-
-
-
-    &lt;!-- Adding TabSplitterItem --&gt;
-
-    &lt;syncfusion:TabSplitterItem Header="Window1.xaml"  Name="tabSplitterItem1"&gt;
+<syncfusion:TabSplitter Name="tabsplitter" MouseOverBackground="Green" MouseOverForeground="Yellow" SelectedBackground="Red" SelectedForeground="YellowGreen">
 
 
 
-        &lt;!-- Adding TopPanelItems --&gt;
+    <!-- Adding TabSplitterItem -->
 
-        &lt;syncfusion:TabSplitterItem.TopPanelItems&gt; 
-
-            &lt;!-- Adding SplitterPage --&gt;
-
-            &lt;syncfusion:SplitterPage Name="splitterPage1" Header="XAML"&gt;
-
-            &lt;/syncfusion:SplitterPage&gt;
-
-        &lt;/syncfusion:TabSplitterItem.TopPanelItems&gt;
+    <syncfusion:TabSplitterItem Header="Window1.xaml"  Name="tabSplitterItem1">
 
 
 
-        &lt;!-- Adding BottomPanelItems --&gt;
+        <!-- Adding TopPanelItems -->
 
-        &lt;syncfusion:TabSplitterItem.BottomPanelItems&gt; 
+        <syncfusion:TabSplitterItem.TopPanelItems> 
 
-            &lt;!-- Adding SplitterPage --&gt;
+            <!-- Adding SplitterPage -->
 
-            &lt;syncfusion:SplitterPage Name="splitterPage2" Header="Design"&gt;
+            <syncfusion:SplitterPage Name="splitterPage1" Header="XAML">
 
-            &lt;/syncfusion:SplitterPage&gt;
+            </syncfusion:SplitterPage>
 
-        &lt;/syncfusion:TabSplitterItem.BottomPanelItems&gt;
-
-
-
-    &lt;/syncfusion:TabSplitterItem&gt;
+        </syncfusion:TabSplitterItem.TopPanelItems>
 
 
 
-&lt;/syncfusion:TabSplitter&gt;
+        <!-- Adding BottomPanelItems -->
+
+        <syncfusion:TabSplitterItem.BottomPanelItems> 
+
+            <!-- Adding SplitterPage -->
+
+            <syncfusion:SplitterPage Name="splitterPage2" Header="Design">
+
+            </syncfusion:SplitterPage>
+
+        </syncfusion:TabSplitterItem.BottomPanelItems>
+
+
+
+    </syncfusion:TabSplitterItem>
+
+
+
+</syncfusion:TabSplitter>
 
 
 
@@ -99,7 +99,7 @@ tabsplitter.MouseOverForeground = Brushes.Yellow;
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img1.png) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -23,49 +23,49 @@ The Icon support can be added to an application by using the Icon property of Me
 
 
 
-&lt;shared:MenuAdv x:Name="Menu"/&gt;
+<shared:MenuAdv x:Name="Menu"/>
 
-                &lt;shared:MenuItemAdv Header="File"&gt;
+                <shared:MenuItemAdv Header="File">
 
-                    &lt;shared:MenuItemAdv Header="New"&gt;
+                    <shared:MenuItemAdv Header="New">
 
-                        &lt;shared:MenuItemAdv.Icon&gt;
+                        <shared:MenuItemAdv.Icon>
 
-                            &lt;Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/&gt;
+                            <Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
 
-                        &lt;/shared:MenuItemAdv.Icon&gt;
+                        </shared:MenuItemAdv.Icon>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                    &lt;shared:MenuItemAdv Header="Copy"&gt;
+                    <shared:MenuItemAdv Header="Copy">
 
-                        &lt;shared:MenuItemAdv.Icon&gt;
+                        <shared:MenuItemAdv.Icon>
 
-                            &lt;Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/&gt;
+                            <Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
 
-                        &lt;/shared:MenuItemAdv.Icon&gt;
+                        </shared:MenuItemAdv.Icon>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                    &lt;shared:MenuItemAdv Header="Cut"&gt;
+                    <shared:MenuItemAdv Header="Cut">
 
-                        &lt;shared:MenuItemAdv.Icon&gt;
+                        <shared:MenuItemAdv.Icon>
 
-                            &lt;Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/&gt;
+                            <Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
 
-                        &lt;/shared:MenuItemAdv.Icon&gt;
+                        </shared:MenuItemAdv.Icon>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                &lt;/shared:MenuItemAdv&gt;
+                </shared:MenuItemAdv>
 
-                &lt;shared:MenuItemAdv Header="Edit"/&gt;
+                <shared:MenuItemAdv Header="Edit"/>
 
-&lt;/shared:MenuAdv&gt;
+</shared:MenuAdv>
 
 
 
-{ ![](Icon-Support_images/Icon-Support_img1.png) | markdownify }
+{{ '![](Icon-Support_images/Icon-Support_img1.png)' | markdownify }}
 {:.image }
 
 

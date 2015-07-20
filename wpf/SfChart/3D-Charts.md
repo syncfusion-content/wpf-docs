@@ -40,9 +40,9 @@ xmlns:Syncfusion="using:Syncfusion.UI.Xaml.Charts"
 
 [XAML]
 
-&lt;Syncfusion:SfChart3D&gt;
+<Syncfusion:SfChart3D>
 
-&lt;/Syncfusion:SfChart3D&gt;
+</Syncfusion:SfChart3D>
 
 
 
@@ -50,21 +50,21 @@ xmlns:Syncfusion="using:Syncfusion.UI.Xaml.Charts"
 
 [XAML]
 
-&lt;Syncfusion:SfChart3D&gt;
+<Syncfusion:SfChart3D>
 
- &lt;Syncfusion:SfChart3D.PrimaryAxis&gt;
+ <Syncfusion:SfChart3D.PrimaryAxis>
 
-       &lt;Syncfusion:CategoryAxis3D/&gt;
+       <Syncfusion:CategoryAxis3D/>
 
-  &lt;/Syncfusion:SfChart3D.PrimaryAxis&gt;
+  </Syncfusion:SfChart3D.PrimaryAxis>
 
-  &lt;Syncfusion:SfChart3D.SecondaryAxis&gt;
+  <Syncfusion:SfChart3D.SecondaryAxis>
 
-       &lt; Syncfusion:NumericalAxis3D/&gt;
+       < Syncfusion:NumericalAxis3D/>
 
-  &lt;/Syncfusion:SfChart3D.SecondaryAxis&gt;
+  </Syncfusion:SfChart3D.SecondaryAxis>
 
-&lt;/Syncfusion:SfChart3D &gt;
+</Syncfusion:SfChart3D >
 
 Add Chart Series to Chart
 
@@ -72,23 +72,23 @@ To begin with plotting data choose from a wide variety of graphical representati
 
 [XAML]
 
-&lt;Syncfusion:SfChart3D x:Name="Chart"&gt;
+<Syncfusion:SfChart3D x:Name="Chart">
 
-  &lt;Syncfusion:SfChart3D.PrimaryAxis&gt;
+  <Syncfusion:SfChart3D.PrimaryAxis>
 
-    &lt;Syncfusion:DateTimeAxis3D/&gt;
+    <Syncfusion:DateTimeAxis3D/>
 
-  &lt;/Syncfusion:SfChart3D.PrimaryAxis&gt;
+  </Syncfusion:SfChart3D.PrimaryAxis>
 
-  &lt;Syncfusion:SfChart3D.SecondaryAxis&gt;
+  <Syncfusion:SfChart3D.SecondaryAxis>
 
-   &lt;Syncfusion:NumericalAxis3D/&gt;
+   <Syncfusion:NumericalAxis3D/>
 
-  &lt;/Syncfusion:SfChart3D.SecondaryAxis&gt;
+  </Syncfusion:SfChart3D.SecondaryAxis>
 
-  &lt;Syncfusion:ColumnSeries3D/&gt;
+  <Syncfusion:ColumnSeries3D/>
 
-&lt;/Syncfusion:SfChart3D&gt;
+</Syncfusion:SfChart3D>
 
 
 
@@ -158,39 +158,39 @@ Add the above UsersViewModel to the DataContext of the chart, bind the data sour
 
 …
 
-&lt;Page.DataContext&gt;
+<Page.DataContext>
 
-      &lt;local:UsersViewModel/&gt;
+      <local:UsersViewModel/>
 
-&lt;/ Page.DataContext&gt;
+</ Page.DataContext>
 
 …
 
-&lt;Syncfusion:SfChart3D x:Name="Chart" Height="500" Width="500"&gt;
+<Syncfusion:SfChart3D x:Name="Chart" Height="500" Width="500">
 
 
 
-        &lt;Syncfusion:SfChart3D.PrimaryAxis&gt;
+        <Syncfusion:SfChart3D.PrimaryAxis>
 
 
 
-            &lt;Syncfusion:CategoryAxis3D/&gt;
+            <Syncfusion:CategoryAxis3D/>
 
 
 
-        &lt;/Syncfusion:SfChart3D.PrimaryAxis&gt;
+        </Syncfusion:SfChart3D.PrimaryAxis>
 
 
 
-        &lt;Syncfusion:SfChart3D.SecondaryAxis&gt;
+        <Syncfusion:SfChart3D.SecondaryAxis>
 
 
 
-            &lt;Syncfusion:NumericalAxis3D/&gt;
+            <Syncfusion:NumericalAxis3D/>
 
 
 
-        &lt;/Syncfusion:SfChart3D.SecondaryAxis&gt;
+        </Syncfusion:SfChart3D.SecondaryAxis>
 
 
 
@@ -210,15 +210,15 @@ YBindingPath="NoOfUsers">
 
 
 
-        &lt;/Syncfusion:ColumnSeries3D&gt;
+        </Syncfusion:ColumnSeries3D>
 
 
 
-    &lt;/Syncfusion:SfChart3D &gt;
+    </Syncfusion:SfChart3D >
 
 The following screenshot illustrates the result of the above code sample:
 
-{ ![](3D-Charts_images/3D-Charts_img1.png) | markdownify }
+{{ '![](3D-Charts_images/3D-Charts_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -319,39 +319,39 @@ The following code can be used to create a simple doughnut series:
 
 …
 
-&lt;Page.DataContext&gt;
+<Page.DataContext>
 
-      &lt;local:UsersViewModel/&gt;
+      <local:UsersViewModel/>
 
-&lt;/Page.DataContext&gt;
+</Page.DataContext>
 
 …
 
-&lt;Syncfusion:SfChart3D x:Name="Chart" Height="500" Width="500"&gt;
+<Syncfusion:SfChart3D x:Name="Chart" Height="500" Width="500">
 
 
 
-        &lt;Syncfusion:SfChart3D.PrimaryAxis&gt;
+        <Syncfusion:SfChart3D.PrimaryAxis>
 
 
 
-            &lt;Syncfusion:CategoryAxis3D/&gt;
+            <Syncfusion:CategoryAxis3D/>
 
 
 
-        &lt;/Syncfusion:SfChart3D.PrimaryAxis&gt;
+        </Syncfusion:SfChart3D.PrimaryAxis>
 
 
 
-        &lt;Syncfusion:SfChart3D.SecondaryAxis&gt;
+        <Syncfusion:SfChart3D.SecondaryAxis>
 
 
 
-            &lt;Syncfusion:NumericalAxis3D/&gt;
+            <Syncfusion:NumericalAxis3D/>
 
 
 
-        &lt;/Syncfusion:SfChart3D.SecondaryAxis&gt;
+        </Syncfusion:SfChart3D.SecondaryAxis>
 
 
 
@@ -371,11 +371,11 @@ YBindingPath="NoOfUsers">
 
 
 
-                &lt;/Syncfusion:DoughnutSeries3D&gt;
+                </Syncfusion:DoughnutSeries3D>
 
 
 
-    &lt;/Syncfusion:SfChart3D &gt;
+    </Syncfusion:SfChart3D >
 
 
 
@@ -435,7 +435,7 @@ public class UsersViewModel
 
 The following image illustrates the result of the above code sample:
 
-{ ![](3D-Charts_images/3D-Charts_img2.png) | markdownify }
+{{ '![](3D-Charts_images/3D-Charts_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -451,7 +451,7 @@ The following code example illustrates how to enable the dynamic rotation:
 
 [XAML]
 
-&lt;Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" Height="500" Width="600"&gt;
+<Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" Height="500" Width="600">
 
 SegmentSelection
 
@@ -467,29 +467,29 @@ The following code example illustrates how to set the selection brush for indivi
 
 
 
-  &lt;Syncfusion:SfChart3D.PrimaryAxis&gt;
+  <Syncfusion:SfChart3D.PrimaryAxis>
 
 
 
-       &lt;Syncfusion:CategoryAxis3D/&gt;
+       <Syncfusion:CategoryAxis3D/>
 
 
 
-   &lt;/Syncfusion:SfChart3D.PrimaryAxis&gt;
+   </Syncfusion:SfChart3D.PrimaryAxis>
 
 
 
 
 
-      &lt;Syncfusion:SfChart3D.SecondaryAxis&gt;
+      <Syncfusion:SfChart3D.SecondaryAxis>
 
 
 
-         &lt;Syncfusion:NumericalAxis3D/&gt;
+         <Syncfusion:NumericalAxis3D/>
 
 
 
-      &lt;/Syncfusion:SfChart3D.SecondaryAxis&gt;
+      </Syncfusion:SfChart3D.SecondaryAxis>
 
 
 
@@ -513,15 +513,15 @@ SegmentSelectionBrush="Red"
 
 
 
-        &lt;/Syncfusion:ColumnSeries3D&gt;
+        </Syncfusion:ColumnSeries3D>
 
 
 
-    &lt;/Syncfusion:SfChart3D &gt;
+    </Syncfusion:SfChart3D >
 
 The following screenshot illustrates the result of the above code example.
 
-{ ![](3D-Charts_images/3D-Charts_img3.png) | markdownify }
+{{ '![](3D-Charts_images/3D-Charts_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -533,7 +533,7 @@ The following code example can be used to set series selection in a SfChart3D.
 
 [XAML]
 
-&lt;chart:SfChart3D EnableSeriesSelection="True" SeriesSelectedIndex="0"&gt;
+<chart:SfChart3D EnableSeriesSelection="True" SeriesSelectedIndex="0">
 
 
 
@@ -545,7 +545,7 @@ The following code example can be used to set series selection in a SfChart3D.
 
                         ItemsSource="{Binding Fruits}">
 
-&lt;chart:ColumnSeries3D.AdornmentsInfo&gt;
+<chart:ColumnSeries3D.AdornmentsInfo>
 
 <chart:ChartAdornmentInfo3D   AdornmentsPosition="TopAndBottom"
 
@@ -553,9 +553,9 @@ The following code example can be used to set series selection in a SfChart3D.
 
                               HighlightOnSelection="True"/>
 
-&lt;/chart:ColumnSeries3D.AdornmentsInfo&gt;
+</chart:ColumnSeries3D.AdornmentsInfo>
 
-&lt;/chart:ColumnSeries3D &gt;
+</chart:ColumnSeries3D >
 
 
 
@@ -567,7 +567,7 @@ The following code example can be used to set series selection in a SfChart3D.
 
                         ItemsSource="{Binding Fruits}">
 
-&lt;chart:ColumnSeries3D.AdornmentsInfo&gt;
+<chart:ColumnSeries3D.AdornmentsInfo>
 
 <chart:ChartAdornmentInfo3D   AdornmentsPosition="TopAndBottom"
 
@@ -575,17 +575,17 @@ The following code example can be used to set series selection in a SfChart3D.
 
                               HighlightOnSelection="True"/>
 
-&lt;/chart:ColumnSeries3D.AdornmentsInfo&gt;
+</chart:ColumnSeries3D.AdornmentsInfo>
 
-&lt;/chart:ColumnSeries3D &gt;
+</chart:ColumnSeries3D >
 
 
 
-&lt;/chart:SfChart3D &gt;
+</chart:SfChart3D >
 
 The following screenshot is an example of a SfChart3D with series selection.
 
-{ ![](3D-Charts_images/3D-Charts_img4.png) | markdownify }
+{{ '![](3D-Charts_images/3D-Charts_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -597,31 +597,31 @@ The following code example illustrates how to enable dynamic explode for circula
 
 [XAML]
 
-  &lt;Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" Height="500" Width="600"&gt;
+  <Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" Height="500" Width="600">
 
 
 
-        &lt;Syncfusion:SfChart3D.PrimaryAxis&gt;
+        <Syncfusion:SfChart3D.PrimaryAxis>
 
 
 
-            &lt;Syncfusion:CategoryAxis3D/&gt;
+            <Syncfusion:CategoryAxis3D/>
 
 
 
-        &lt;/Syncfusion:SfChart3D.PrimaryAxis&gt;
+        </Syncfusion:SfChart3D.PrimaryAxis>
 
 
 
-        &lt;Syncfusion:SfChart3D.SecondaryAxis&gt;
+        <Syncfusion:SfChart3D.SecondaryAxis>
 
 
 
-            &lt;Syncfusion:NumericalAxis3D/&gt;
+            <Syncfusion:NumericalAxis3D/>
 
 
 
-        &lt;/Syncfusion:SfChart3D.SecondaryAxis&gt;
+        </Syncfusion:SfChart3D.SecondaryAxis>
 
 
 
@@ -645,15 +645,15 @@ YBindingPath="NoOfUsers">
 
 
 
-        &lt;/Syncfusion:PieSeries3D&gt;
+        </Syncfusion:PieSeries3D>
 
 
 
-    &lt;/Syncfusion:SfChart3D &gt;
+    </Syncfusion:SfChart3D >
 
 The following image illustrates the result of the above code sample:
 
-{ ![](3D-Charts_images/3D-Charts_img5.png) | markdownify }
+{{ '![](3D-Charts_images/3D-Charts_img5.png)' | markdownify }}
 {:.image }
 
 

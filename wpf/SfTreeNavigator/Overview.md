@@ -13,7 +13,7 @@ The tree navigator control provides a unique interface that can expand a tree st
 
 
 
-{ ![1](Overview_images/Overview_img1.png) | markdownify }
+{{ '![1](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 

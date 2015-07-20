@@ -26,7 +26,7 @@ NavigationPopupOpening occurs when the navigation pop-up window is in the proces
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:HierarchyNavigator NavigationPopupOpening="NavigationPopupOpening"/&gt;</td></tr>
+XAML<syncfusion:HierarchyNavigator NavigationPopupOpening="NavigationPopupOpening"/></td></tr>
 <tr>
 <td>
 C#HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();<br>hierarchyNavigator.NavigationPopupOpening +=new EventHandler(NavigationPopupOpening);</td></tr>
@@ -41,7 +41,7 @@ NavigationPopupOpened occurs when the navigation pop-up window is open.
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:HierarchyNavigator NavigationPopupOpened="NavigationPopupOpened"/&gt;</td></tr>
+XAML<syncfusion:HierarchyNavigator NavigationPopupOpened="NavigationPopupOpened"/></td></tr>
 <tr>
 <td>
 C#HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();<br>hierarchyNavigator.NavigationPopupOpened += new EventHandler(NavigationPopupOpened);</td></tr>
@@ -56,7 +56,7 @@ NavigationPopupClosing occurs when the navigation pop-up window is closing.
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:HierarchyNavigator NavigationPopupClosing="NavigationPopupClosing"/&gt;</td></tr>
+XAML<syncfusion:HierarchyNavigator NavigationPopupClosing="NavigationPopupClosing"/></td></tr>
 <tr>
 <td>
 C#HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();<br>hierarchyNavigator.NavigationPopupClosing +=new EventHandler(NavigationPopupClosing);</td></tr>
@@ -71,7 +71,7 @@ NavigationPopupClosed occurs when the navigation pop-up window is closed.
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:HierarchyNavigator NavigationPopupClosing="NavigationPopupClosing"/&gt;</td></tr>
+XAML<syncfusion:HierarchyNavigator NavigationPopupClosing="NavigationPopupClosing"/></td></tr>
 <tr>
 <td>
 C#HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();<br>hierarchyNavigator.NavigationPopupClosing +=new EventHandler(NavigationPopupClosing);</td></tr>

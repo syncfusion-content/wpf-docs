@@ -124,17 +124,17 @@ XAML
 
 
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-     &lt;local:HierarchicalItemsSource x:Key="hierarchicalItemsSource"/&gt;
+     <local:HierarchicalItemsSource x:Key="hierarchicalItemsSource"/>
 
-     &lt;HierarchicalDataTemplate x:Key="myHierarchicalTemplate" ItemsSource="{Binding Items}"&gt;
+     <HierarchicalDataTemplate x:Key="myHierarchicalTemplate" ItemsSource="{Binding Items}">
 
-            &lt;TextBlock Text="{Binding ContentString}" Margin="2,0" /&gt;
+            <TextBlock Text="{Binding ContentString}" Margin="2,0" />
 
-     &lt;/HierarchicalDataTemplate&gt;
+     </HierarchicalDataTemplate>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
@@ -154,7 +154,7 @@ XAML
 
 
 
-{ ![](Template-Customizing_images/Template-Customizing_img1.png) | markdownify }
+{{ '![](Template-Customizing_images/Template-Customizing_img1.png)' | markdownify }}
 {:.image }
 
 

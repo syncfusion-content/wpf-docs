@@ -15,7 +15,7 @@ The schedule All Day panel visibility can be customized by ShowAllDay and its de
 
 
 
-    &lt;Schedule:SfSchedule x:Name="schedule" ShowAllDay="False"/&gt;
+    <Schedule:SfSchedule x:Name="schedule" ShowAllDay="False"/>
 
 
 
@@ -33,7 +33,7 @@ The schedule All Day panel visibility can be customized by ShowAllDay and its de
 
 
 
-{ ![](All-Day-Panel_images/All-Day-Panel_img1.png) | markdownify }
+{{ '![](All-Day-Panel_images/All-Day-Panel_img1.png)' | markdownify }}
 {:.image }
 
 

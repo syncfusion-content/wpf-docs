@@ -24,23 +24,23 @@ To set the Tab Item Size mode to "ShrinkToFit", refer the code snippet.
 
 
 
-&lt;!-- Adding TabcontrolExt  --&gt;
+<!-- Adding TabcontrolExt  -->
 
-&lt;syncfusion:TabControlExt Name="tabControlExt" TabItemSize="ShrinkToFit"&gt;
+<syncfusion:TabControlExt Name="tabControlExt" TabItemSize="ShrinkToFit">
 
-    &lt;!-- Adding TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"&gt;
+    <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1">
 
-    &lt;/syncfusion:TabItemExt&gt;
+    </syncfusion:TabItemExt>
 
-    &lt;!-- Adding TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"&gt;
+    <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2">
 
-    &lt;/syncfusion:TabItemExt&gt;
+    </syncfusion:TabItemExt>
 
-&lt;/syncfusion:TabControlExt&gt;
+</syncfusion:TabControlExt>
 
 
 
@@ -108,7 +108,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-{ ![](Resizing-the-Tab-Item_images/Resizing-the-Tab-Item_img1.jpeg) | markdownify }
+{{ '![](Resizing-the-Tab-Item_images/Resizing-the-Tab-Item_img1.jpeg)' | markdownify }}
 {:.image }
 
 

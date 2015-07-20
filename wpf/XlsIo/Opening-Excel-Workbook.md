@@ -267,7 +267,7 @@ Dim workbook As IWorkbook = application.Workbooks.OpenReadOnly("Sample.xlsx")
 
 This section illustrates how to open an encrypted document in XlsIO. To open an encrypted file, the password must be provided to decrypt the file. The following code example shows the way of decrypting a file to access its data.
 
-{ ![](Opening-Excel-Workbook_images/Opening-Excel-Workbook_img1.png) | markdownify }
+{{ '![](Opening-Excel-Workbook_images/Opening-Excel-Workbook_img1.png)' | markdownify }}
 {:.image }
 
 

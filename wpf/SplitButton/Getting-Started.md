@@ -15,7 +15,7 @@ This section guides you on getting started with the SplitButtonAdv control. It d
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -35,7 +35,7 @@ The following code explains how to declare a SplitButtonAdv control using XAML:
 
 [XAML]
 
-&lt;sync:SplitButtonAdv Label="Hello World"/&gt;
+<sync:SplitButtonAdv Label="Hello World"/>
 
 
 
@@ -51,7 +51,7 @@ button.Label = "Hello World";
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -77,7 +77,7 @@ Use the following code snippet to set the SizeMode to Small:
 
 [XAML]
 
-&lt;sync:SplitButtonAdv SizeMode="Small" Label="Hello World"/&gt;
+<sync:SplitButtonAdv SizeMode="Small" Label="Hello World"/>
 
 
 
@@ -91,7 +91,7 @@ button.SizeMode = SizeMode.Small;
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -107,7 +107,7 @@ Use the following code snippet to set the SizeMode to Normal:
 
 [XAML]
 
-&lt;sync:SplitButtonAdv SizeMode="Normal" Label="Hello World"/&gt;
+<sync:SplitButtonAdv SizeMode="Normal" Label="Hello World"/>
 
 
 
@@ -121,7 +121,7 @@ button.SizeMode = SizeMode.Normal;
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -137,7 +137,7 @@ Use the following code snippet to set the SizeMode to Large:
 
 [XAML]
 
-&lt;sync:SplitButtonAdv SizeMode="Large" Label="Hello World"/&gt;
+<sync:SplitButtonAdv SizeMode="Large" Label="Hello World"/>
 
 
 
@@ -151,7 +151,7 @@ button.SizeMode = SizeMode.Large;
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -172,7 +172,7 @@ The SmallIcon property can be set as follows:
 
 [XAML]
 
-&lt;sync:SplitButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/&gt;
+<sync:SplitButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/>
 
 
 
@@ -188,7 +188,7 @@ button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -198,7 +198,7 @@ The SmallIcon property can be set even when the SizeMode is Normal:
 
 [XAML]
 
-&lt;sync:SplitButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/&gt;
+<sync:SplitButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/>
 
 
 
@@ -214,7 +214,7 @@ button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -226,7 +226,7 @@ The LargeIcon property can be set as follows:
 
 [XAML]
 
-&lt;sync:SplitButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/&gt;
+<sync:SplitButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/>
 
 
 
@@ -242,7 +242,7 @@ button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -258,19 +258,19 @@ Adding DropDownMenuItems to DropDownButtonAdv:
 
 [XAML]
 
-&lt;shared:SplitButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png"&gt;
+<shared:SplitButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
-   &lt;shared:DropDownMenuGroup&gt;
+   <shared:DropDownMenuGroup>
 
-       &lt;shared:DropDownMenuItem Header="Menu Item 1"/&gt;
+       <shared:DropDownMenuItem Header="Menu Item 1"/>
 
-       &lt;shared:DropDownMenuItem Header="Menu Item 2"/&gt;
+       <shared:DropDownMenuItem Header="Menu Item 2"/>
 
-       &lt;shared:DropDownMenuItem Header="Menu Item 3"/&gt;
+       <shared:DropDownMenuItem Header="Menu Item 3"/>
 
-   &lt;/shared:DropDownMenuGroup&gt;
+   </shared:DropDownMenuGroup>
 
-&lt;/shared:SplitButtonAdv&gt;
+</shared:SplitButtonAdv>
 
 
 
@@ -296,7 +296,7 @@ button.Content = menuItem1;
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 

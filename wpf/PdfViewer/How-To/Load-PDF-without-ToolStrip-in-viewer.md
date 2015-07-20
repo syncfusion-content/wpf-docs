@@ -29,7 +29,7 @@ pdfDocumentView1.Load("Template.pdf")
 
 The following screenshot illustrates the PDF document in PdfDocumentView.
 
-{ ![](Load-PDF-without-ToolStrip-in-viewer_images/Load-PDF-without-ToolStrip-in-viewer_img1.png) | markdownify }
+{{ '![](Load-PDF-without-ToolStrip-in-viewer_images/Load-PDF-without-ToolStrip-in-viewer_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -26,7 +26,7 @@ Command for RibbonBar LauncherButton can be set using LauncherCommand attached p
 <table>
 <tr>
 <td>
-[XAML] &lt;TextBox Name="mainTextBox" Width="150"&gt;&lt;/TextBox&gt;        &lt;!-- LauncherButton Command and LauncherButton CommandTarget--&gt;        &lt;syncfusion:RibbonBar  IsLauncherButtonVisible="True" syncfusion:RibbonBar.LauncherCommand="ApplicationCommands.Paste" syncfusion:RibbonBar.LauncherCommandTarget="{Binding ElementName=mainTextBox}" &gt;        &lt;/syncfusion:RibbonBar&gt;</td></tr>
+[XAML] <TextBox Name="mainTextBox" Width="150"></TextBox>        <!-- LauncherButton Command and LauncherButton CommandTarget-->        <syncfusion:RibbonBar  IsLauncherButtonVisible="True" syncfusion:RibbonBar.LauncherCommand="ApplicationCommands.Paste" syncfusion:RibbonBar.LauncherCommandTarget="{Binding ElementName=mainTextBox}" >        </syncfusion:RibbonBar></td></tr>
 <tr>
 <td>
 [C#]//LauncherButton CommandRibbonBar.SetLauncherCommand(mainRibbonBar, ApplicationCommands.Paste);//LauncherButton CommandTargetRibbonBar.SetLauncherCommandTarget(mainRibbonBar, mainTextBox);</td></tr>

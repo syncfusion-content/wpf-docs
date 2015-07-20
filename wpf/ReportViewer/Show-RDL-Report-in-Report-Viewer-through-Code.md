@@ -16,7 +16,7 @@ You can create a simple sample through code with the Syncfusion WPF ReportViewer
 
 
 
-{ ![Description: 5.png](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img1.png) | markdownify }
+{{ '![Description: 5.png](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -26,7 +26,7 @@ You can create a simple sample through code with the Syncfusion WPF ReportViewer
 
 > 
 
-{ ![Description: 6.png](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img2.png) | markdownify }
+{{ '![Description: 6.png](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -42,11 +42,11 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
         Title=" Mail Merge" Height="350" Width="525">
 
-    &lt;Grid Name="grid1"&gt;
+    <Grid Name="grid1">
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -90,7 +90,7 @@ reportViewer1.RefreshReport();
 
 
 
-{ ![Description: D:/TrunkReportingStructure/WPF/ReportViewer.WPF/samples/Product Showcase/Mail Merge/Images/mailmerge.png](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img3.png) | markdownify }
+{{ '![Description: D:/TrunkReportingStructure/WPF/ReportViewer.WPF/samples/Product Showcase/Mail Merge/Images/mailmerge.png](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img3.png)' | markdownify }}
 {:.image }
 
 

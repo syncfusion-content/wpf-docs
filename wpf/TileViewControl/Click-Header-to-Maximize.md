@@ -29,15 +29,15 @@ The following code example illustrates how to add the Click Header to Maximize t
 
             ClickHeaderToMaximize ="True" >
 
-      &lt;syncfusion:TileViewItem x:Name="Tile1" Header="TileViewItem 1" /&gt;
+      <syncfusion:TileViewItem x:Name="Tile1" Header="TileViewItem 1" />
 
-      &lt;syncfusion:TileViewItem x:Name="Tile2" Header="TileViewItem 2" /&gt;
+      <syncfusion:TileViewItem x:Name="Tile2" Header="TileViewItem 2" />
 
-      &lt;syncfusion:TileViewItem x:Name="Tile3" Header="TileViewItem 3" /&gt;
+      <syncfusion:TileViewItem x:Name="Tile3" Header="TileViewItem 3" />
 
-      &lt;syncfusion:TileViewItem x:Name="Tile4" Header="TileViewItem 4" /&gt; 
+      <syncfusion:TileViewItem x:Name="Tile4" Header="TileViewItem 4" /> 
 
-&lt;/syncfusion:TileViewControl&gt;
+</syncfusion:TileViewControl>
 
 
 

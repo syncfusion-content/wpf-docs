@@ -18,10 +18,10 @@ Use the code snippet to apply a DataContext to the GroupBar control.
 <table>
 <tr>
 <td>
-[XAML]<Window x:Class="WpfApplication1.Window1"    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    xmlns:local="clr-namespace:WpfApplication1"    Title="Window1" Height="300" Width="300">  &lt;Window.Resources&gt;    &lt;!--Custom object which is defined in the code behind can be accessed through the key logic in XAML--&gt;    &lt;local:GroupData x:Key="groupData" /&gt;  &lt;/Window.Resources&gt;  &lt;Grid Margin="30"&gt;    &lt;!-- Adding GroupBar --&gt;    <syncfusion:GroupBar Height="200" DataContext="{Binding groupData}"    VisualMode="Default" AllowCollapse="True" Width="230" Name="groupBar">      &lt;!-- Adding GroupBarItem --&gt;      &lt;syncfusion:GroupBarItem Name="groupBarItem" Header="{Binding Header}"&gt;        &lt;!-- Adding content for GroupBar item using panel --&gt;        &lt;StackPanel Orientation="Vertical"&gt;          &lt;TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/&gt;          <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>          <RadioButton Margin="4,2,2,2">Vertical</RadioButton>          &lt;TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/&gt;          <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>          <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>        &lt;/StackPanel&gt;      &lt;/syncfusion:GroupBarItem&gt;      &lt;!-- Adding GroupBarItem --&gt;      &lt;syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General"&gt;        &lt;!-- Adding content for GroupBar item using GroupView --&gt;        &lt;syncfusion:GroupView Name="groupView" IsListViewMode="True"&gt;          &lt;syncfusion:GroupViewItem Text="{Binding ListView}"/&gt;          &lt;syncfusion:GroupViewItem Text="Show ContextMenu"/&gt;          &lt;syncfusion:GroupViewItem Text="Show ToolTip"/&gt;        &lt;/syncfusion:GroupView&gt;      &lt;/syncfusion:GroupBarItem&gt;    &lt;/syncfusion:GroupBar&gt;  &lt;/Grid&gt;&lt;/Window&gt;</td></tr>
+[XAML]<Window x:Class="WpfApplication1.Window1"    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"    xmlns:local="clr-namespace:WpfApplication1"    Title="Window1" Height="300" Width="300">  <Window.Resources>    <!--Custom object which is defined in the code behind can be accessed through the key logic in XAML-->    <local:GroupData x:Key="groupData" />  </Window.Resources>  <Grid Margin="30">    <!-- Adding GroupBar -->    <syncfusion:GroupBar Height="200" DataContext="{Binding groupData}"    VisualMode="Default" AllowCollapse="True" Width="230" Name="groupBar">      <!-- Adding GroupBarItem -->      <syncfusion:GroupBarItem Name="groupBarItem" Header="{Binding Header}">        <!-- Adding content for GroupBar item using panel -->        <StackPanel Orientation="Vertical">          <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>          <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>          <RadioButton Margin="4,2,2,2">Vertical</RadioButton>          <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>          <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>          <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>        </StackPanel>      </syncfusion:GroupBarItem>      <!-- Adding GroupBarItem -->      <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">        <!-- Adding content for GroupBar item using GroupView -->        <syncfusion:GroupView Name="groupView" IsListViewMode="True">          <syncfusion:GroupViewItem Text="{Binding ListView}"/>          <syncfusion:GroupViewItem Text="Show ContextMenu"/>          <syncfusion:GroupViewItem Text="Show ToolTip"/>        </syncfusion:GroupView>      </syncfusion:GroupBarItem>    </syncfusion:GroupBar>  </Grid></Window></td></tr>
 <tr>
 <td>
-[C#]/// &lt;summary&gt;/// Interaction logic for the class GroupData/// &lt;/summary&gt;public class GroupData{    /// &lt;summary&gt;    /// Initializes a new instance of the &lt;see cref="GroupData"/&gt; class.    /// &lt;/summary&gt;    public GroupData()    {        this.Header = "GroupBarItem1";        this.ListView = "ListViewItem";    }    /// &lt;summary&gt;    /// Gets or sets the header.    /// &lt;/summary&gt;    /// <value>The header.&lt;/value&gt;    public string Header    {        get;        set;    }    /// &lt;summary&gt;    /// Gets or sets the list view.    /// &lt;/summary&gt;    /// <value>The list view.&lt;/value&gt;    public string ListView    {        get;        set;    }}</td></tr>
+[C#]/// <summary>/// Interaction logic for the class GroupData/// </summary>public class GroupData{    /// <summary>    /// Initializes a new instance of the <see cref="GroupData"/> class.    /// </summary>    public GroupData()    {        this.Header = "GroupBarItem1";        this.ListView = "ListViewItem";    }    /// <summary>    /// Gets or sets the header.    /// </summary>    /// <value>The header.</value>    public string Header    {        get;        set;    }    /// <summary>    /// Gets or sets the list view.    /// </summary>    /// <value>The list view.</value>    public string ListView    {        get;        set;    }}</td></tr>
 </table>
 ## Data-Binding to Objects
 
@@ -107,11 +107,11 @@ public bool IsSelected { get; set; }
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-   &lt;local:ViewModel/&gt;
+   <local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -123,23 +123,23 @@ public bool IsSelected { get; set; }
 
 [XAML]
 
-    &lt;syncfusion:GroupBar Name="groupBar1" ItemsSource="{Binding GroupItems}" VisualMode="StackMode"&gt;
+    <syncfusion:GroupBar Name="groupBar1" ItemsSource="{Binding GroupItems}" VisualMode="StackMode">
 
-            &lt;syncfusion:GroupBar.ItemContainerStyle&gt;
+            <syncfusion:GroupBar.ItemContainerStyle>
 
-                &lt;Style TargetType="{x:Type syncfusion:GroupBarItem}"&gt;
+                <Style TargetType="{x:Type syncfusion:GroupBarItem}">
 
-                    &lt;Setter Property="HeaderText" Value="{Binding Header}"/&gt;
+                    <Setter Property="HeaderText" Value="{Binding Header}"/>
 
-                    &lt;Setter Property="Content" Value="{Binding Content}"/&gt;
+                    <Setter Property="Content" Value="{Binding Content}"/>
 
-                    &lt;Setter Property="IsSelected" Value="{Binding IsSelected}" /&gt;
+                    <Setter Property="IsSelected" Value="{Binding IsSelected}" />
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/syncfusion:GroupBar.ItemContainerStyle&gt;        
+            </syncfusion:GroupBar.ItemContainerStyle>        
 
-        &lt;/syncfusion:GroupBar&gt;
+        </syncfusion:GroupBar>
 
 
 
@@ -149,7 +149,7 @@ This creates the following GroupBar control.
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img1.png) | markdownify }
+{{ '![](Data-Binding_images/Data-Binding_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -163,23 +163,23 @@ An XML file can also be used as the ItemsSource for the GroupBar control. The fo
 
 [XML]
 
-&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+<?xml version="1.0" encoding="utf-8" ?>
 
-&lt;Books&gt;
-
-
-
-  &lt;Book Name="Programming C# 4.0" Description="Learn C# fundamentals, such as variables, flow control, loops, and methods" ImagePath="programming-c-sharp-four.png"/&gt;
-
-  &lt;Book Name="Programming WPF" Description="A tutorial on XAML, the new HTML-like markup language for declaring Windows UI" ImagePath="programming-wpf.png"/&gt;
-
-  &lt;Book Name="Essential WPF" Description="Visuals and media, including 2D, 3D, video, and animation" ImagePath="essential_wpf.png"/&gt;
-
-  &lt;Book Name="WPF Unleashed" Description="Examines the WPF feature areas in incredible depth: controls, layout, resources, data binding, styling, graphics, animation, and more" ImagePath="wpf-unleashed.png"/&gt;
+<Books>
 
 
 
-&lt;/Books&gt;
+  <Book Name="Programming C# 4.0" Description="Learn C# fundamentals, such as variables, flow control, loops, and methods" ImagePath="programming-c-sharp-four.png"/>
+
+  <Book Name="Programming WPF" Description="A tutorial on XAML, the new HTML-like markup language for declaring Windows UI" ImagePath="programming-wpf.png"/>
+
+  <Book Name="Essential WPF" Description="Visuals and media, including 2D, 3D, video, and animation" ImagePath="essential_wpf.png"/>
+
+  <Book Name="WPF Unleashed" Description="Examines the WPF feature areas in incredible depth: controls, layout, resources, data binding, styling, graphics, animation, and more" ImagePath="wpf-unleashed.png"/>
+
+
+
+</Books>
 
 
 
@@ -191,7 +191,7 @@ An XML file can also be used as the ItemsSource for the GroupBar control. The fo
 
 [XAML]
 
-&lt;XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Books"/&gt; 
+<XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Books"/> 
 
 
 
@@ -207,61 +207,61 @@ An XML file can also be used as the ItemsSource for the GroupBar control. The fo
 
   >
 
-            &lt;syncfusion:GroupBar.ItemContainerStyle&gt;
+            <syncfusion:GroupBar.ItemContainerStyle>
 
-                &lt;Style TargetType="{x:Type syncfusion:GroupBarItem}"&gt;
+                <Style TargetType="{x:Type syncfusion:GroupBarItem}">
 
-                     &lt;Setter Property="HeaderTemplate"&gt;
+                     <Setter Property="HeaderTemplate">
 
-                        &lt;Setter.Value&gt;
+                        <Setter.Value>
 
-                            &lt;DataTemplate&gt;
+                            <DataTemplate>
 
-                                &lt;Grid&gt;
+                                <Grid>
 
-                                    &lt;TextBlock Text="{Binding XPath=@Name}" /&gt;
+                                    <TextBlock Text="{Binding XPath=@Name}" />
 
-                                &lt;/Grid&gt;
+                                </Grid>
 
-                            &lt;/DataTemplate&gt;
+                            </DataTemplate>
 
-                        &lt;/Setter.Value&gt;
+                        </Setter.Value>
 
-                    &lt;/Setter&gt;
+                    </Setter>
 
-                    &lt;Setter Property="ContentTemplate"&gt;
+                    <Setter Property="ContentTemplate">
 
-                        &lt;Setter.Value&gt;
+                        <Setter.Value>
 
-                            &lt;DataTemplate&gt;
+                            <DataTemplate>
 
-                                &lt;Grid&gt;
+                                <Grid>
 
-                                    &lt;Grid.ColumnDefinitions&gt;
+                                    <Grid.ColumnDefinitions>
 
-                                        &lt;ColumnDefinition Width="4*"/&gt;
+                                        <ColumnDefinition Width="4*"/>
 
-                                        &lt;ColumnDefinition Width="6*"/&gt;
+                                        <ColumnDefinition Width="6*"/>
 
-                                    &lt;/Grid.ColumnDefinitions&gt;
+                                    </Grid.ColumnDefinitions>
 
-                                    &lt;Image Source="{Binding XPath=@ImagePath}"/&gt;
+                                    <Image Source="{Binding XPath=@ImagePath}"/>
 
-                                    &lt;TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Grid.Column="1"/&gt;
+                                    <TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Grid.Column="1"/>
 
-                                &lt;/Grid&gt;                               
+                                </Grid>                               
 
-                            &lt;/DataTemplate&gt;
+                            </DataTemplate>
 
-                        &lt;/Setter.Value&gt;
+                        </Setter.Value>
 
-                    &lt;/Setter&gt;
+                    </Setter>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/syncfusion:GroupBar.ItemContainerStyle&gt;        
+            </syncfusion:GroupBar.ItemContainerStyle>        
 
-        &lt;/syncfusion:GroupBar&gt;
+        </syncfusion:GroupBar>
 
 
 
@@ -271,7 +271,7 @@ This will create the following GroupBar control.
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img2.png) | markdownify }
+{{ '![](Data-Binding_images/Data-Binding_img2.png)' | markdownify }}
 {:.image }
 
 

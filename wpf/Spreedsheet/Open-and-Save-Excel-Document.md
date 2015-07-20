@@ -86,7 +86,7 @@ You can also open the Excel document by using the ImportFromExcelCommand_._ When
 
 
 
-{ ![](Open-and-Save-Excel-Document_images/Open-and-Save-Excel-Document_img1.png) | markdownify }
+{{ '![](Open-and-Save-Excel-Document_images/Open-and-Save-Excel-Document_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -98,7 +98,7 @@ The following code illustrates how to bind the ImportFromExcelCommand__to a butt
 
 [XAML]
 
-&lt;Button Command="{Binding Path= ImportFromExcelCommand}"/&gt;
+<Button Command="{Binding Path= ImportFromExcelCommand}"/>
 
 
 
@@ -122,7 +122,7 @@ Save As dialog box will open. Save the document at the required location.
 
 
 
-{ ![](Open-and-Save-Excel-Document_images/Open-and-Save-Excel-Document_img2.png) | markdownify }
+{{ '![](Open-and-Save-Excel-Document_images/Open-and-Save-Excel-Document_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -138,7 +138,7 @@ The following code illustrates how to bind the ExportToExcelCommand__to a button
 
 [XAML]
 
-&lt;Button Command="{Binding Path= ExportToExcelCommand}"/&gt;
+<Button Command="{Binding Path= ExportToExcelCommand}"/>
 
 
 

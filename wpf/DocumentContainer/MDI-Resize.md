@@ -19,19 +19,19 @@ To set this property, use the below code.
 
 
 
-&lt;!-- Adding Document Container --&gt;
+<!-- Adding Document Container -->
 
-&lt;syncfusion:DocumentContainer Name="DocContainer" IsAllowMDIResize="True"  Mode="MDI"&gt;
+<syncfusion:DocumentContainer Name="DocContainer" IsAllowMDIResize="True"  Mode="MDI">
 
-&lt;FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features"&gt;
+<FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features">
 
-&lt;/FlowDocumentScrollViewer&gt;
-
-…....
+</FlowDocumentScrollViewer>
 
 …....
 
-&lt;/syncfusion:DocumentContainer&gt;
+…....
+
+</syncfusion:DocumentContainer>
 
 
 

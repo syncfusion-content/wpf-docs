@@ -13,7 +13,7 @@ The EnableRangeAdorner property is used to show the adorner range based on the m
 
 
 
-{ ![](Range-Adorner_images/Range-Adorner_img1.png) | markdownify }
+{{ '![](Range-Adorner_images/Range-Adorner_img1.png)' | markdownify }}
 {:.image }
 
 

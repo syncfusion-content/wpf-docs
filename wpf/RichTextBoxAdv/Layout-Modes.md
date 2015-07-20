@@ -15,7 +15,7 @@ The layout mode feature allows choosing several layouts in the document. They ar
 
 
 
-{ ![](Layout-Modes_images/Layout-Modes_img1.jpeg) | markdownify }
+{{ '![](Layout-Modes_images/Layout-Modes_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -25,7 +25,7 @@ The layout mode feature allows choosing several layouts in the document. They ar
 
 
 
-{ ![](Layout-Modes_images/Layout-Modes_img2.png) | markdownify }
+{{ '![](Layout-Modes_images/Layout-Modes_img2.png)' | markdownify }}
 {:.image }
 
 

@@ -18,7 +18,7 @@ Setting RibbonButton label in multiple lines:
 <table>
 <tr>
 <td>
-[XAML] &lt;!--RibbonButton with IsMultiLine set to true--&gt;        &lt;syncfusion:RibbonButton Name="ribbonButton"  IsMultiLine="True" Label="Ribbon Button Label \nwill be displayed in \nmultiple lines"/&gt;</td></tr>
+[XAML] <!--RibbonButton with IsMultiLine set to true-->        <syncfusion:RibbonButton Name="ribbonButton"  IsMultiLine="True" Label="Ribbon Button Label \nwill be displayed in \nmultiple lines"/></td></tr>
 <tr>
 <td>
 [C#]//RibbonButton with IsMultiline set to trueribbonButton.IsMultiLine = true;ribbonButton.Label = "Ribbon Button Label \nwill be displayed in \nmultiple lines";</td></tr>

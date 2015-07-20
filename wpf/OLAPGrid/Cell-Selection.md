@@ -21,11 +21,11 @@ The following code snippets show how to create an OlapGrid and specify its cell 
 
 [XAML]
 
-&lt;!--Adding OlapGrid and Enabling Cell Selection--&gt;
+<!--Adding OlapGrid and Enabling Cell Selection-->
 
-&lt;syncfusion:OlapGrid AllowSelection="True"&gt; 
+<syncfusion:OlapGrid AllowSelection="True"> 
 
-&lt;/syncfusion:OlapGrid&gt;
+</syncfusion:OlapGrid>
 
 
 
@@ -91,7 +91,7 @@ Me.OlapGrid1.DataBind()
 
 The screenshot below illustrates the Cell Selection.
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/OlapGrid Cell Selection.png](Cell-Selection_images/Cell-Selection_img1.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/OlapGrid Cell Selection.png](Cell-Selection_images/Cell-Selection_img1.png)' | markdownify }}
 {:.image }
 
 

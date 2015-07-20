@@ -60,7 +60,7 @@ To highlight a set of tasks in Gantt chart region:
 
                     HighlightedItems="{Binding HighlightedTasks}">
 
-&lt;/sync:GanttControl&gt;
+</sync:GanttControl>
 
 
 
@@ -68,11 +68,11 @@ To highlight a set of tasks in Gantt chart region:
 
 /// Codes in View Model 
 
-/// &lt;summary&gt;
+/// <summary>
 
-/// Initializes a new instance of the &lt;see cref="ViewModel"/&gt; class.
+/// Initializes a new instance of the <see cref="ViewModel"/> class.
 
-/// &lt;/summary&gt;
+/// </summary>
 
 public ViewModel()
 
@@ -88,13 +88,13 @@ IList _highlightedTasks = new List<Task>();
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Gets or sets the highlighted tasks.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// <value>The highlighted tasks.&lt;/value&gt;
+/// <value>The highlighted tasks.</value>
 
 public IList HighlightedTasks
 
@@ -122,11 +122,11 @@ public IList HighlightedTasks
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Adds the highlighted tasks.
 
-/// &lt;/summary&gt;
+/// </summary>
 
 internal void AddHighlightedTasks()
 
@@ -162,7 +162,7 @@ The following image shows the Gantt with Highlighted Tasks:
 
 
 
-{ ![](Highlighting-Tasks_images/Highlighting-Tasks_img1.png) | markdownify }
+{{ '![](Highlighting-Tasks_images/Highlighting-Tasks_img1.png)' | markdownify }}
 {:.image }
 
 

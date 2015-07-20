@@ -17,23 +17,23 @@ Using the Header property, user can set the header for the Document Container el
 
 
 
-&lt;!-- Adding Document Container --&gt;
+<!-- Adding Document Container -->
 
-&lt;syncfusion:DocumentContainer Name="DocContainer"  Mode="MDI"&gt;
+<syncfusion:DocumentContainer Name="DocContainer"  Mode="MDI">
 
-&lt;FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features"&gt;
+<FlowDocumentScrollViewer syncfusion:DocumentContainer.Header="Features">
 
-&lt;/FlowDocumentScrollViewer&gt;
-
-…....
+</FlowDocumentScrollViewer>
 
 …....
 
-&lt;/syncfusion:DocumentContainer&gt;
+…....
+
+</syncfusion:DocumentContainer>
 
 
 
-{ ![](Setting-Header-of-the-Document-container_images/Setting-Header-of-the-Document-container_img1.jpeg) | markdownify }
+{{ '![](Setting-Header-of-the-Document-container_images/Setting-Header-of-the-Document-container_img1.jpeg)' | markdownify }}
 {:.image }
 
 

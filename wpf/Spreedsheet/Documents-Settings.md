@@ -28,7 +28,7 @@ You can protect the workbook using the Protect Structure and Windows dialog box.
 
 
 
-{ ![](Documents-Settings_images/Documents-Settings_img1.png) | markdownify }
+{{ '![](Documents-Settings_images/Documents-Settings_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -42,9 +42,9 @@ The following code illustrates how to bind the ProtectWorkbookCommand__to a butt
 
 
 
-&lt;Button Command="{Binding Path= ProtectWorkbookCommand}"&gt;
+<Button Command="{Binding Path= ProtectWorkbookCommand}">
 
-&lt;/Button&gt;
+</Button>
 
 
 
@@ -58,7 +58,7 @@ You can unprotect the workbook using the Unprotect Workbook dialog box. You can 
 
 
 
-{ ![](Documents-Settings_images/Documents-Settings_img2.png) | markdownify }
+{{ '![](Documents-Settings_images/Documents-Settings_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -113,7 +113,7 @@ You can protect/unprotect the current worksheet using the Protect Sheet dialog b
 
 
 
-{ ![](Documents-Settings_images/Documents-Settings_img3.png) | markdownify }
+{{ '![](Documents-Settings_images/Documents-Settings_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -127,9 +127,9 @@ The following code illustrates how to bind the ProtectCurrentSheetCommand__to a 
 
 
 
-&lt;Button Command="{Binding Path= ProtectCurrentSheetCommand}"&gt;
+<Button Command="{Binding Path= ProtectCurrentSheetCommand}">
 
-&lt;/Button&gt;
+</Button>
 
 
 
@@ -166,7 +166,7 @@ You can also encrypt the workbook using the Encrypt Document dialog box. You can
 
 
 
-{ ![](Documents-Settings_images/Documents-Settings_img4.png) | markdownify }
+{{ '![](Documents-Settings_images/Documents-Settings_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -180,9 +180,9 @@ The following code illustrates how to bind the EncryptCommand__to a button:
 
 
 
-&lt;Button Command="{Binding Path= EncryptCommand}"&gt;
+<Button Command="{Binding Path= EncryptCommand}">
 
-&lt;/Button&gt;
+</Button>
 
 
 
@@ -192,7 +192,7 @@ When you open encrypted document Password dialog box will open. Enter password t
 
 
 
-{ ![](Documents-Settings_images/Documents-Settings_img5.png) | markdownify }
+{{ '![](Documents-Settings_images/Documents-Settings_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -249,11 +249,11 @@ The following code illustrates how to bind the HideCurrentSheetCommand__to a but
 
 
 
-&lt;Button Command="{Binding Path= HideCurrentSheetCommand}"&gt;
+<Button Command="{Binding Path= HideCurrentSheetCommand}">
 
 <System:bool>true</System:bool>
 
-&lt;/Button&gt;
+</Button>
 
 
 
@@ -263,7 +263,7 @@ You can unhide the worksheet by using the Unhide dialog box. To open the Unhide 
 
 
 
-{ ![](Documents-Settings_images/Documents-Settings_img6.png) | markdownify }
+{{ '![](Documents-Settings_images/Documents-Settings_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -277,11 +277,11 @@ The following code illustrates how to bind the HideCurrentSheetCommand__to a but
 
 
 
-&lt;Button Command="{Binding Path= HideCurrentSheetCommand}"&gt;
+<Button Command="{Binding Path= HideCurrentSheetCommand}">
 
 <System:bool>false</System:bool>
 
-&lt;/Button&gt;
+</Button>
 
 
 
@@ -349,9 +349,9 @@ The following code illustrates how to bind the InsertSheetCommandto a button:
 
 
 
-&lt;Button Command="{Binding Path= InsertSheetCommand}"&gt;
+<Button Command="{Binding Path= InsertSheetCommand}">
 
-&lt;/Button&gt;
+</Button>
 
 
 
@@ -367,9 +367,9 @@ The following code illustrates how to bind the DeleteCurrentSheetCommand button:
 
 
 
-&lt;Button Command="{Binding Path= DeleteCurrentSheetCommand}"&gt;
+<Button Command="{Binding Path= DeleteCurrentSheetCommand}">
 
-&lt;/Button&gt;
+</Button>
 
 
 
@@ -383,7 +383,7 @@ When importing and exporting and the Excel sheet, users can get and set the valu
 
 
 
-{ ![](Documents-Settings_images/Documents-Settings_img7.png) | markdownify }
+{{ '![](Documents-Settings_images/Documents-Settings_img7.png)' | markdownify }}
 {:.image }
 
 

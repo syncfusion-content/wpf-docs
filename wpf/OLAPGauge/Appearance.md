@@ -33,7 +33,7 @@ Me.olapGauge1.DataBind()
 
 
 
-{ ![C:/Users/Hari/Pictures/OlapGauge/Radius.png](Appearance_images/Appearance_img1.png) | markdownify }
+{{ '![C:/Users/Hari/Pictures/OlapGauge/Radius.png](Appearance_images/Appearance_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -41,7 +41,7 @@ Sample Location
 
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\&lt;Version Number&gt;\BI\WPF\OlapGauge.WPF\Samples\Gauge Customization\Customization Demo\
+..\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OlapGauge.WPF\Samples\Gauge Customization\Customization Demo\
 
 ## Explain the built-in frame types available for gauge control
 
@@ -78,31 +78,31 @@ Me.olapGauge1.FrameType = GaugeFrameType.CircularWithInnerLeftGradient
 
 The following screen shots illustrate the various frame types.
 
-{ ![C:/Users/Hari/Pictures/OlapGauge/CircularWithInnerLeftGradient.png](Appearance_images/Appearance_img2.png) | markdownify }
+{{ '![C:/Users/Hari/Pictures/OlapGauge/CircularWithInnerLeftGradient.png](Appearance_images/Appearance_img2.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/Hari/Pictures/OlapGauge/CircularWithDarkOuterFrames.png](Appearance_images/Appearance_img3.png) | markdownify }
-{:.image }
-
-
-
-
-{ ![C:/Users/Hari/Pictures/OlapGauge/CircularCenterGradient.png](Appearance_images/Appearance_img4.png) | markdownify }
-{:.image }
-
-
-{ ![C:/Users/Hari/Pictures/OlapGauge/CircularWithInnerTopGradient.png](Appearance_images/Appearance_img5.png) | markdownify }
-{:.image }
-
-
-{ ![C:/Users/Hari/Pictures/OlapGauge/Full Circle.png](Appearance_images/Appearance_img6.png) | markdownify }
+{{ '![C:/Users/Hari/Pictures/OlapGauge/CircularWithDarkOuterFrames.png](Appearance_images/Appearance_img3.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/Hari/Pictures/OlapGauge/Half Circle.png](Appearance_images/Appearance_img7.png) | markdownify }
+{{ '![C:/Users/Hari/Pictures/OlapGauge/CircularCenterGradient.png](Appearance_images/Appearance_img4.png)' | markdownify }}
+{:.image }
+
+
+{{ '![C:/Users/Hari/Pictures/OlapGauge/CircularWithInnerTopGradient.png](Appearance_images/Appearance_img5.png)' | markdownify }}
+{:.image }
+
+
+{{ '![C:/Users/Hari/Pictures/OlapGauge/Full Circle.png](Appearance_images/Appearance_img6.png)' | markdownify }}
+{:.image }
+
+
+
+
+{{ '![C:/Users/Hari/Pictures/OlapGauge/Half Circle.png](Appearance_images/Appearance_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -110,7 +110,7 @@ Sample Location
 
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\&lt;Version Number&gt;\BI\WPF\OlapGauge.WPF\Samples\Gauge Customization\Customization Demo\
+..\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OlapGauge.WPF\Samples\Gauge Customization\Customization Demo\
 
 ## Explain the skin types that are available for Gauge control
 
@@ -126,31 +126,31 @@ The OLAP Gauge control allows you to present your data using different built-in-
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/Default%20Theme.png](Appearance_images/Appearance_img8.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/Default%20Theme.png](Appearance_images/Appearance_img8.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/Office2007Blue%20Theme.png](Appearance_images/Appearance_img9.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/Office2007Blue%20Theme.png](Appearance_images/Appearance_img9.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/Black%202007%20theme.png](Appearance_images/Appearance_img10.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/Black%202007%20theme.png](Appearance_images/Appearance_img10.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/silver%20Theme.png](Appearance_images/Appearance_img11.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/silver%20Theme.png](Appearance_images/Appearance_img11.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/Blend%20Theme.png](Appearance_images/Appearance_img12.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/Blend%20Theme.png](Appearance_images/Appearance_img12.png)' | markdownify }}
 {:.image }
 
 
-{ ![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/2003%20Blue%20theme.png](Appearance_images/Appearance_img13.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/2003%20Blue%20theme.png](Appearance_images/Appearance_img13.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/manimala.paramasivam/Desktop/OlapGauge.png](Appearance_images/Appearance_img14.png) | markdownify }
+{{ '![C:/Users/manimala.paramasivam/Desktop/OlapGauge.png](Appearance_images/Appearance_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -164,9 +164,9 @@ To set the visual style for the controls, use the code given below.
 
 
 
-&lt;!—To set Office2007Blue visual style for OLAP Gauge--&gt;
+<!—To set Office2007Blue visual style for OLAP Gauge-->
 
-&lt;gauge:OlapGauge Name="olapGauge1" Radius="120" syncfusion:SkinStorage.VisualStyle="Office2007Blue"/&gt;
+<gauge:OlapGauge Name="olapGauge1" Radius="120" syncfusion:SkinStorage.VisualStyle="Office2007Blue"/>
 
 
 
@@ -192,7 +192,7 @@ SkinStorage.SetVisualStyle(olapGauge1, "Office2007Blue");
 
 Run the code. The following output is obtained.
 
-{ ![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/Office2007Blue%20Theme.png](Appearance_images/Appearance_img15.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/Office2007Blue%20Theme.png](Appearance_images/Appearance_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -200,5 +200,5 @@ Sample Location
 
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\&lt;Version Number&gt;\BI\WPF\OlapGauge.WPF\Samples\Gauge Customization\Customization Demo\
+..\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OlapGauge.WPF\Samples\Gauge Customization\Customization Demo\
 

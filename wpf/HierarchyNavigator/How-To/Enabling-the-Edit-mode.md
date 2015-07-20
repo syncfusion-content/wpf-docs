@@ -23,7 +23,7 @@ hierarchyNavigator.IsEnableEditMode = true;
 
 
 
-{ ![](Enabling-the-Edit-mode_images/Enabling-the-Edit-mode_img1.png) | markdownify }
+{{ '![](Enabling-the-Edit-mode_images/Enabling-the-Edit-mode_img1.png)' | markdownify }}
 {:.image }
 
 

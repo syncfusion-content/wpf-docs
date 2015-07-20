@@ -15,7 +15,7 @@ This section shows a Document Object Model of DocIO that helps you to interact w
 
 The following illustration shows the Class Diagram for Essential DocIO.
 
-{ ![](DocIO-Document-Object-Model_images/DocIO-Document-Object-Model_img1.png) | markdownify }
+{{ '![](DocIO-Document-Object-Model_images/DocIO-Document-Object-Model_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -26,35 +26,35 @@ The following code snippet illustrates how to set the Tab Scroll style as "Exten
 
 
 
-&lt;!-- Adding TabControlExt --&gt;
+<!-- Adding TabControlExt -->
 
-&lt;syncfusion:TabControlExt Margin="20" Name="tabControlExt" TabScrollStyle="Extended"&gt;
-
-
-
-    &lt;!-- Adding TabItemExt --&gt;
-
-    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"&gt;
-
-    &lt;/syncfusion:TabItemExt&gt;
+<syncfusion:TabControlExt Margin="20" Name="tabControlExt" TabScrollStyle="Extended">
 
 
 
-    &lt;!-- Adding TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"&gt;
+    <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1">
 
-    &lt;/syncfusion:TabItemExt&gt;
+    </syncfusion:TabItemExt>
 
 
 
-    &lt;!-- Adding TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt3" Header="TabItemExt3"&gt;
+    <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2">
 
-    &lt;/syncfusion:TabItemExt&gt;
+    </syncfusion:TabItemExt>
 
-&lt;/syncfusion:TabControlExt&gt;
+
+
+    <!-- Adding TabItemExt -->
+
+    <syncfusion:TabItemExt Name="tabItemExt3" Header="TabItemExt3">
+
+    </syncfusion:TabItemExt>
+
+</syncfusion:TabControlExt>
 
 
 
@@ -104,7 +104,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-{ ![](Setting-Scroll-Style_images/Setting-Scroll-Style_img1.jpeg) | markdownify }
+{{ '![](Setting-Scroll-Style_images/Setting-Scroll-Style_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -122,15 +122,15 @@ When the TabControlExt has many Tab Items, it is complicated to scroll the Tab I
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Tabs the control ext_ tab scroll style changed.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// <param name="d">The d.&lt;/param&gt;
+/// <param name="d">The d.</param>
 
-/// <param name="e">The &lt;see cref="System.Windows.DependencyPropertyChangedEventArgs"/&gt; instance containing the event data.&lt;/param&gt;
+/// <param name="e">The <see cref="System.Windows.DependencyPropertyChangedEventArgs"/> instance containing the event data.</param>
 
 private void tabControlExt_TabScrollStyleChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 

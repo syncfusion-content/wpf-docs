@@ -21,7 +21,7 @@ Installing on a build machine
 
 
 
-{ ![Description: C:/Users/vinothm/Downloads/Link install screen shot/Link install screen shot/Link install.bmp](Configuring-a-build-machine-to-compile-projects-after-version-V81030_images/Configuring-a-build-machine-to-compile-projects-after-version-V81030_img1.png) | markdownify }
+{{ '![Description: C:/Users/vinothm/Downloads/Link install screen shot/Link install screen shot/Link install.bmp](Configuring-a-build-machine-to-compile-projects-after-version-V81030_images/Configuring-a-build-machine-to-compile-projects-after-version-V81030_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -31,7 +31,7 @@ Installing on a build machine
 
 
 
-{ ![Description: C:/Users/vinothm/Downloads/Install without key.bmp](Configuring-a-build-machine-to-compile-projects-after-version-V81030_images/Configuring-a-build-machine-to-compile-projects-after-version-V81030_img2.png) | markdownify }
+{{ '![Description: C:/Users/vinothm/Downloads/Install without key.bmp](Configuring-a-build-machine-to-compile-projects-after-version-V81030_images/Configuring-a-build-machine-to-compile-projects-after-version-V81030_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -44,7 +44,7 @@ Installing on a build machine
 
 
 
-{ ![Description: C:/Users/vinothm/Downloads/Link install screen shot/Link install screen shot/Link install 4.bmp](Configuring-a-build-machine-to-compile-projects-after-version-V81030_images/Configuring-a-build-machine-to-compile-projects-after-version-V81030_img3.png) | markdownify }
+{{ '![Description: C:/Users/vinothm/Downloads/Link install screen shot/Link install screen shot/Link install 4.bmp](Configuring-a-build-machine-to-compile-projects-after-version-V81030_images/Configuring-a-build-machine-to-compile-projects-after-version-V81030_img3.png)' | markdownify }}
 {:.image }
 
 

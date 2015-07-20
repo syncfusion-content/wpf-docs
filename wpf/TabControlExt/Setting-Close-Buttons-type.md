@@ -29,23 +29,23 @@ The following code snippet illustrates how to set the "Both" Close button mode i
 
 
 
-&lt;!-- Adding TabcontrolExt with CloseButtonType is Both --&gt;
+<!-- Adding TabcontrolExt with CloseButtonType is Both -->
 
-&lt;syncfusion:TabControlExt Margin="20" Name="tabControlExt" CloseButtonType="Both"&gt;
-
-
-
-    &lt;!-- Adding TabItemExt --&gt;
-
-    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"/&gt;
+<syncfusion:TabControlExt Margin="20" Name="tabControlExt" CloseButtonType="Both">
 
 
 
-    &lt;!-- Adding TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"/&gt;
+    <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"/>
 
-&lt;/syncfusion:TabControlExt&gt;
+
+
+    <!-- Adding TabItemExt -->
+
+    <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"/>
+
+</syncfusion:TabControlExt>
 
 
 
@@ -113,7 +113,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-{ ![](Setting-Close-Buttons-type_images/Setting-Close-Buttons-type_img1.jpeg) | markdownify }
+{{ '![](Setting-Close-Buttons-type_images/Setting-Close-Buttons-type_img1.jpeg)' | markdownify }}
 {:.image }
 
 

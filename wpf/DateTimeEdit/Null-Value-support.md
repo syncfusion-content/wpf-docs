@@ -23,7 +23,7 @@ C#</td></tr>
 </table>
 
 
-{ ![](Null-Value-support_images/Null-Value-support_img1.png) | markdownify }
+{{ '![](Null-Value-support_images/Null-Value-support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -45,7 +45,7 @@ XAML</td></tr>
 </table>
 
 
-{ ![](Null-Value-support_images/Null-Value-support_img2.png) | markdownify }
+{{ '![](Null-Value-support_images/Null-Value-support_img2.png)' | markdownify }}
 {:.image }
 
 

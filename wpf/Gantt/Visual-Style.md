@@ -48,7 +48,7 @@ The following code illustrates how to set the VisualStyle of Gantt control:
 
 [XAML]
 
-&lt;Sync:GanttControl x:Name="Gantt" VisualStyle="Office2010Blue"/&gt;
+<Sync:GanttControl x:Name="Gantt" VisualStyle="Office2010Blue"/>
 
 
 
@@ -65,7 +65,7 @@ The following shows Office 2010 Blue:
 
 
 
-{ ![](Visual-Style_images/Visual-Style_img1.png) | markdownify }
+{{ '![](Visual-Style_images/Visual-Style_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -75,7 +75,7 @@ The following image shows Office 2010 silver:
 
 
 
-{ ![](Visual-Style_images/Visual-Style_img2.png) | markdownify }
+{{ '![](Visual-Style_images/Visual-Style_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -85,7 +85,7 @@ The following image shows Office 2010Silver:
 
 
 
-{ ![](Visual-Style_images/Visual-Style_img3.png) | markdownify }
+{{ '![](Visual-Style_images/Visual-Style_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -95,7 +95,7 @@ The following image shows Office 2010Metro:
 
 
 
-{ ![](Visual-Style_images/Visual-Style_img4.png) | markdownify }
+{{ '![](Visual-Style_images/Visual-Style_img4.png)' | markdownify }}
 {:.image }
 
 

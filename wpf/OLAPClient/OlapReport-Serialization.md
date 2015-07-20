@@ -33,7 +33,7 @@ The user can maintain the Chart and/or the Grid appearance settings with its OLA
 
 The following image shows a serialized Chart and Grid appearance settings in an XML format: 
 
-{ ![C:/Users/diana/Desktop/AdditionalInfoSerialization.png](OlapReport-Serialization_images/OlapReport-Serialization_img1.png) | markdownify }
+{{ '![C:/Users/diana/Desktop/AdditionalInfoSerialization.png](OlapReport-Serialization_images/OlapReport-Serialization_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -72,9 +72,9 @@ The user can find samples in the following locations:
 
 For OlapChart
 
-SystemDrive:\Users\&lt;user_name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version_number&gt;\BI\WPF\OlapChart.WPF\Samples\Serialization\Serialization Demo
+SystemDrive:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\OlapChart.WPF\Samples\Serialization\Serialization Demo
 
 For OlapGrid
 
-SystemDrive:\Users\&lt;user_name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version_number&gt;\BI\WPF\OlapGrid.WPF\Samples\Serialization\Serialization Demo
+SystemDrive:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\OlapGrid.WPF\Samples\Serialization\Serialization Demo
 

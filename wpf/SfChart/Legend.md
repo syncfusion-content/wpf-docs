@@ -75,49 +75,49 @@ The following code example shows how to create a simple legend. For sample data,
 
 [XAML]
 
- &lt;syncfusion:SfChart x:Name="ColumnChart"&gt;
+ <syncfusion:SfChart x:Name="ColumnChart">
 
-            &lt;!-- Assign DataContext object for the Chart--&gt;
+            <!-- Assign DataContext object for the Chart-->
 
-            &lt;syncfusion:SfChart.DataContext&gt;
+            <syncfusion:SfChart.DataContext>
 
-                &lt;local:CategoryDataViewModel/&gt;
+                <local:CategoryDataViewModel/>
 
-            &lt;/syncfusion:SfChart.DataContext&gt;
+            </syncfusion:SfChart.DataContext>
 
-            &lt;!-- Add Legend to the Chart--&gt;
+            <!-- Add Legend to the Chart-->
 
-            &lt;syncfusion:SfChart.Legend&gt;
+            <syncfusion:SfChart.Legend>
 
-                &lt;syncfusion:ChartLegend/&gt;
+                <syncfusion:ChartLegend/>
 
-            &lt;/syncfusion:SfChart.Legend&gt;
+            </syncfusion:SfChart.Legend>
 
-            &lt;!-- Add Axes to the Chart--&gt;
+            <!-- Add Axes to the Chart-->
 
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:CategoryAxis/&gt;
+                <syncfusion:CategoryAxis/>
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.SecondaryAxis>
 
-                &lt;syncfusion:NumericalAxis/&gt;
+                <syncfusion:NumericalAxis/>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+            </syncfusion:SfChart.SecondaryAxis>
 
-            &lt;!-- Add ColumnSeries to the Chart--&gt;
+            <!-- Add ColumnSeries to the Chart-->
 
             <syncfusion:ColumnSeries Label="Turnover" ItemsSource="{BindingCategoricalDatas}"
 
                          XBindingPath="Category" YBindingPath="Value"/>
 
-        &lt;/syncfusion:SfChart&gt;  
+        </syncfusion:SfChart>  
 
 The following screenshot illustrates a chart with a simple legend.
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Legend_images/Legend_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Legend_images/Legend_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -139,13 +139,13 @@ The following code example shows how to create a ChartLegend for a chart.
 
 [XAML]
 
-        &lt;syncfusion:SfChart.Legend&gt;
+        <syncfusion:SfChart.Legend>
 
             <syncfusion:ChartLegend DockPosition="Bottom" Orientation="Horizontal" 
 
                       CheckBoxVisibility="Visible"/>
 
-        &lt;/syncfusion:SfChart.Legend&gt;
+        </syncfusion:SfChart.Legend>
 
 Multiple Legends
 
@@ -155,53 +155,53 @@ The following code example shows how to create multiple legends in a single char
 
 [XAML]
 
-&lt;syncfusion:SfChart Height="500" Width="600" x:Name="LineChart"&gt;
+<syncfusion:SfChart Height="500" Width="600" x:Name="LineChart">
 
 
 
-            &lt;syncfusion:SfChart.ColumnDefinitions&gt;
+            <syncfusion:SfChart.ColumnDefinitions>
 
-                &lt;syncfusion:ChartColumnDefinition/&gt;
+                <syncfusion:ChartColumnDefinition/>
 
-                &lt;syncfusion:ChartColumnDefinition/&gt;
+                <syncfusion:ChartColumnDefinition/>
 
-            &lt;/syncfusion:SfChart.ColumnDefinitions&gt;
-
-
-
-            &lt;syncfusion:SfChart.DataContext&gt;
-
-                &lt;local:ChartViewModel/&gt;
-
-            &lt;/syncfusion:SfChart.DataContext&gt;
+            </syncfusion:SfChart.ColumnDefinitions>
 
 
 
-            &lt;syncfusion:SfChart.Legend&gt;
+            <syncfusion:SfChart.DataContext>
 
-                &lt;syncfusion:ChartLegendCollection&gt;
+                <local:ChartViewModel/>
 
-                    &lt;syncfusion:ChartLegend syncfusion:ChartBase.Column="0"/&gt;
-
-                    &lt;syncfusion:ChartLegend syncfusion:ChartBase.Column="1"/&gt;
-
-                &lt;/syncfusion:ChartLegendCollection&gt;
-
-            &lt;/syncfusion:SfChart.Legend&gt;
+            </syncfusion:SfChart.DataContext>
 
 
 
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
+            <syncfusion:SfChart.Legend>
 
-                &lt;syncfusion:CategoryAxis  LabelFormat="yyyy"/&gt;
+                <syncfusion:ChartLegendCollection>
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+                    <syncfusion:ChartLegend syncfusion:ChartBase.Column="0"/>
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+                    <syncfusion:ChartLegend syncfusion:ChartBase.Column="1"/>
 
-                &lt;syncfusion:NumericalAxis/&gt;
+                </syncfusion:ChartLegendCollection>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+            </syncfusion:SfChart.Legend>
+
+
+
+            <syncfusion:SfChart.PrimaryAxis>
+
+                <syncfusion:CategoryAxis  LabelFormat="yyyy"/>
+
+            </syncfusion:SfChart.PrimaryAxis>
+
+            <syncfusion:SfChart.SecondaryAxis>
+
+                <syncfusion:NumericalAxis/>
+
+            </syncfusion:SfChart.SecondaryAxis>
 
 
 
@@ -209,25 +209,25 @@ The following code example shows how to create multiple legends in a single char
 
                                XBindingPath="Year" YBindingPath="Sports">
 
-            &lt;/syncfusion:ColumnSeries&gt;
+            </syncfusion:ColumnSeries>
 
        <syncfusion:SplineAreaSeries Label="Books" ItemsSource="{Binding Data}" 
 
                                XBindingPath="Year" YBindingPath="Books">
 
-            &lt;syncfusion:SplineAreaSeries.XAxis&gt;
+            <syncfusion:SplineAreaSeries.XAxis>
 
                 <syncfusion:CategoryAxis syncfusion:ChartBase.Column="1"
 
                     LabelFormat="yyyy" Visibility="Visible"/>
 
-                &lt;/syncfusion:SplineAreaSeries.XAxis&gt;
+                </syncfusion:SplineAreaSeries.XAxis>
 
-            &lt;/syncfusion:SplineAreaSeries&gt;
+            </syncfusion:SplineAreaSeries>
 
 
 
-        &lt;/syncfusion:SfChart &gt;
+        </syncfusion:SfChart >
 
 
 
@@ -291,7 +291,7 @@ The following code example shows how to create multiple legends in a single char
 
 The following screenshot shows a chart with multiple legends.
 
-{ ![](Legend_images/Legend_img2.png) | markdownify }
+{{ '![](Legend_images/Legend_img2.png)' | markdownify }}
 {:.image }
 
 

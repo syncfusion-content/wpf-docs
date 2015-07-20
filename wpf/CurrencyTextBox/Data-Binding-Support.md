@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Binding Support
 
-Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target &lt;- source) or bidirectional (source &lt;-&gt; target). You can bind the data to the CurrencyTextBox through the Value property.
+Data binding is the process of establishing a connection between the application UI and business logic. Data binding can be unidirectional (source -> target or target <- source) or bidirectional (source <-> target). You can bind the data to the CurrencyTextBox through the Value property.
 
 The following example shows a simple binding between the value of the CurrencyTextBox and another CurrencyTextBox value that reflects the typed value:
 
@@ -19,19 +19,19 @@ XAML
 
 
 
-&lt;StackPanel&gt;
+<StackPanel>
 
-    &lt;syncfusion:CurrencyTextBox x:Name="currencyTextBox1" Width="150" Margin="10"/&gt;
+    <syncfusion:CurrencyTextBox x:Name="currencyTextBox1" Width="150" Margin="10"/>
 
     <syncfusion:CurrencyTextBox x:Name="currencyTextBox2" Width="150" Margin="10" 
 
             Value="{Binding ElementName=currencyTextBox1,Path=Value,Mode=TwoWay}"/>
 
-&lt;/StackPanel&gt;
+</StackPanel>
 
 
 
-{ ![](Data-Binding-Support_images/Data-Binding-Support_img1.png) | markdownify }
+{{ '![](Data-Binding-Support_images/Data-Binding-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -43,17 +43,17 @@ XAML
 
 
 
-&lt;StackPanel DataContext="{StaticResource myCustomer}"&gt;
+<StackPanel DataContext="{StaticResource myCustomer}">
 
-    &lt;TextBox Text="{Binding FirstName}"/&gt;
+    <TextBox Text="{Binding FirstName}"/>
 
-    &lt;TextBox Text ="{Binding LastName}"/&gt;
+    <TextBox Text ="{Binding LastName}"/>
 
-    &lt;syncfusion:CurrencyTextBox Value="{Binding Phone}"/&gt;
+    <syncfusion:CurrencyTextBox Value="{Binding Phone}"/>
 
-    &lt;syncfusion:CurrencyTextBox Value="{Binding Income}"/&gt;
+    <syncfusion:CurrencyTextBox Value="{Binding Income}"/>
 
-&lt;/StackPanel&gt;
+</StackPanel>
 
 
 
@@ -65,17 +65,17 @@ XAML
 
 
 
-&lt;StackPanel&gt;
+<StackPanel>
 
-    &lt;StackPanel.Resources&gt;
+    <StackPanel.Resources>
 
-        &lt;c:StringToDecimalConverter x:Key="stringToDecimalConverter"/&gt;
+        <c:StringToDecimalConverter x:Key="stringToDecimalConverter"/>
 
-    &lt;/StackPanel.Resources&gt;
+    </StackPanel.Resources>
 
 
 
-&lt;syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="150" Margin="10"/&gt;
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="150" Margin="10"/>
 
 <TextBox x:Name="textBox" Width="150" Margin="10" Text="{Binding 
 
@@ -83,13 +83,13 @@ XAML
 
         stringToDecimalConverter}}"/>
 
-&lt;/StackPanel&gt;
+</StackPanel>
 
 
 
 
 
-{ ![](Data-Binding-Support_images/Data-Binding-Support_img2.png) | markdownify }
+{{ '![](Data-Binding-Support_images/Data-Binding-Support_img2.png)' | markdownify }}
 {:.image }
 
 

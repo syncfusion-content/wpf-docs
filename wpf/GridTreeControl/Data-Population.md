@@ -75,21 +75,21 @@ The following code example illustrates how to set these properties for the GridT
 
 [XAML]
 
-&lt;sf:GridTreeControl Name="treeGrid" RequestTreeItems="treeGrid_RequestTreeItems" &gt;
+<sf:GridTreeControl Name="treeGrid" RequestTreeItems="treeGrid_RequestTreeItems" >
 
-    &lt;sf:GridTreeControl.Columns&gt;
+    <sf:GridTreeControl.Columns>
 
-        &lt;sf:GridTreeColumn MappingName="FirstName" HeaderText="First Name"/&gt;
+        <sf:GridTreeColumn MappingName="FirstName" HeaderText="First Name"/>
 
-        &lt;sf:GridTreeColumn MappingName="LastName" HeaderText="Last Name"/&gt;
+        <sf:GridTreeColumn MappingName="LastName" HeaderText="Last Name"/>
 
-        &lt;sf:GridTreeColumn MappingName="Salary" /&gt;
+        <sf:GridTreeColumn MappingName="Salary" />
 
-        &lt;sf:GridTreeColumn MappingName="Rating" /&gt;
+        <sf:GridTreeColumn MappingName="Rating" />
 
-    &lt;/sf:GridTreeControl.Columns&gt;
+    </sf:GridTreeControl.Columns>
 
-&lt;/sf:GridTreeControl&gt;
+</sf:GridTreeControl>
 
 
 

@@ -19,15 +19,15 @@ The following code example shows how to create the SfCalculator from XAML and co
 
 
 
-&lt;Page xmlns:Input="using:Syncfusion.UI.Xaml.Controls.Input"&gt;
+<Page xmlns:Input="using:Syncfusion.UI.Xaml.Controls.Input">
 
-    &lt;Grid Background="CornflowerBlue"&gt;
+    <Grid Background="CornflowerBlue">
 
-        &lt;Input:SfCalculator/&gt;
+        <Input:SfCalculator/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Page&gt;
+</Page>
 
 
 

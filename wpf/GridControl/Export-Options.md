@@ -52,13 +52,13 @@ gridControl.Model.ExportToExcel(@"Sample.xlsx", ExcelVersion.Excel2007);
 
 
 
-{ ![](Export-Options_images/Export-Options_img1.jpeg) | markdownify }
+{{ '![](Export-Options_images/Export-Options_img1.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Export-Options_images/Export-Options_img2.jpeg) | markdownify }
+{{ '![](Export-Options_images/Export-Options_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -134,13 +134,13 @@ gridControl.Model.ExportToExcel(range, mySheet, excelRange, @"Sample2.xls", Exce
 
 
 
-{ ![](Export-Options_images/Export-Options_img3.jpeg) | markdownify }
+{{ '![](Export-Options_images/Export-Options_img3.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Export-Options_images/Export-Options_img4.jpeg) | markdownify }
+{{ '![](Export-Options_images/Export-Options_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -170,19 +170,19 @@ gridControl.Model.ExportToExcel(range, excelEngine, 0, mySheet.Range[5,5], @"Sam
 
 
 
-{ ![](Export-Options_images/Export-Options_img5.jpeg) | markdownify }
+{{ '![](Export-Options_images/Export-Options_img5.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Export-Options_images/Export-Options_img6.jpeg) | markdownify }
+{{ '![](Export-Options_images/Export-Options_img6.jpeg)' | markdownify }}
 {:.image }
 
 
 > _Note: For more details, refer the following browser sample:_
 
-> _...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\ExcelExport\GridControl Excel Export Demo_
+> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\ExcelExport\GridControl Excel Export Demo_
 
 ## Exporting to CSV
 
@@ -227,7 +227,7 @@ When the code runs, the following output displays.
 
 
 
-{ ![](Export-Options_images/Export-Options_img7.jpeg) | markdownify }
+{{ '![](Export-Options_images/Export-Options_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -235,7 +235,7 @@ When you are ready to export the entire grid, click Export Whole Grid; the grid 
 
 
 
-{ ![](Export-Options_images/Export-Options_img8.jpeg) | markdownify }
+{{ '![](Export-Options_images/Export-Options_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -283,13 +283,13 @@ When the code runs, the following output displays.
 
 
 
-{ ![](Export-Options_images/Export-Options_img9.jpeg) | markdownify }
+{{ '![](Export-Options_images/Export-Options_img9.jpeg)' | markdownify }}
 {:.image }
 
 
 To export a selection, highlight the portion of the grid you want to export, and then click Export Selected Range; the selected grid content will then be exported to a CSV file.
 
-{ ![](Export-Options_images/Export-Options_img10.jpeg) | markdownify }
+{{ '![](Export-Options_images/Export-Options_img10.jpeg)' | markdownify }}
 {:.image }
 
 

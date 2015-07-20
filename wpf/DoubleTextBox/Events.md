@@ -20,7 +20,7 @@ ValueChanged – The event occurs when the Value property of the DoubleTextBox i
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:DoubleTextBox ValueChanged="DoubleTextBox_ValueChanged"/&gt;</td></tr>
+XAML<syncfusion:DoubleTextBox ValueChanged="DoubleTextBox_ValueChanged"/></td></tr>
 <tr>
 <td>
 C#DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.ValueChanged += new PropertyChangedCallback(DoubleTextBox_ValueChanged);</td></tr>
@@ -54,7 +54,7 @@ TextChanged – The event occurs when the Value property of the DoubleTextBox is
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:DoubleTextBox TextChanged="DoubleTextBox_TextChanged"/&gt;</td></tr>
+XAML<syncfusion:DoubleTextBox TextChanged="DoubleTextBox_TextChanged"/></td></tr>
 <tr>
 <td>
 C#DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.TextChanged+=new TextChangedEventHandler(DoubleTextBox_TextChanged);</td></tr>
@@ -86,7 +86,7 @@ CultureChanged – The event occurs when the Culture property of the DoubleTextB
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:DoubleTextBox CultureChanged="DoubleTextBox_CultureChanged"/&gt;</td></tr>
+XAML<syncfusion:DoubleTextBox CultureChanged="DoubleTextBox_CultureChanged"/></td></tr>
 <tr>
 <td>
 C#DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.CultureChanged+=new PropertyChangedCallback(DoubleTextBox_CultureChanged);</td></tr>
@@ -120,7 +120,7 @@ MaxValueChanged – The event occurs when the MaxValue property of the DoubleTex
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:DoubleTextBox MaxValueChanged="DoubleTextBox_MaxValueChanged"/&gt;</td></tr>
+XAML<syncfusion:DoubleTextBox MaxValueChanged="DoubleTextBox_MaxValueChanged"/></td></tr>
 <tr>
 <td>
 C#DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.MaxValueChanged+=new               PropertyChangedCallback(DoubleTextBox_MaxValueChanged);</td></tr>
@@ -152,7 +152,7 @@ MinValueChanged – The event occurs when the MinValue property of the DoubleTex
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:DoubleTextBox MinValueChanged="DoubleTextBox_MinValueChanged"/&gt;</td></tr>
+XAML<syncfusion:DoubleTextBox MinValueChanged="DoubleTextBox_MinValueChanged"/></td></tr>
 <tr>
 <td>
 C#DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.MinValueChanged+=new              PropertyChangedCallback(DoubleTextBox_MinValueChanged);</td></tr>
@@ -184,7 +184,7 @@ SelectionChanged – The event occurs when the selection in the textbox is chang
 <table>
 <tr>
 <td>
-XAML&lt;syncfusion:DoubleTextBox SelectionChanged="DoubleTextBox_SelectionChanged"/&gt;</td></tr>
+XAML<syncfusion:DoubleTextBox SelectionChanged="DoubleTextBox_SelectionChanged"/></td></tr>
 <tr>
 <td>
 C#DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.SelectionChanged+=new RoutedEventHandler(DoubleTextBox_SelectionChanged);</td></tr>

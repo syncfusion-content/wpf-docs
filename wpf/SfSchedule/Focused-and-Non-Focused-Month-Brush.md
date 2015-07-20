@@ -41,7 +41,7 @@ In Schedule month view, date of the current selected month and date of previous/
 
 
 
-{ ![](Focused-and-Non-Focused-Month-Brush_images/Focused-and-Non-Focused-Month-Brush_img1.png) | markdownify }
+{{ '![](Focused-and-Non-Focused-Month-Brush_images/Focused-and-Non-Focused-Month-Brush_img1.png)' | markdownify }}
 {:.image }
 
 

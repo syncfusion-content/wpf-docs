@@ -11,7 +11,7 @@ documentation: ug
 
 Microsoft Excel has the ability to insert comments in cells. Comments give additional information about a cell, such as, what the value represents. You can insert and format comments through the Insert menu in Excel. You can also format the comments inserted through the Format Comment dialog box.
 
-{ ![](Insert-Comments_images/Insert-Comments_img1.png) | markdownify }
+{{ '![](Insert-Comments_images/Insert-Comments_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -171,7 +171,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Insert-Comments_images/Insert-Comments_img2.png) | markdownify }
+{{ '![](Insert-Comments_images/Insert-Comments_img2.png)' | markdownify }}
 {:.image }
 
 

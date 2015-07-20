@@ -19,7 +19,7 @@ The NullValue can be set for the UpDown control as shown in the following code e
 
  [XAML]
 
-&lt;syncfusion:UpDown Name="upDown" UseNullOption="true" NullValue="1"/&gt;
+<syncfusion:UpDown Name="upDown" UseNullOption="true" NullValue="1"/>
 
 
 

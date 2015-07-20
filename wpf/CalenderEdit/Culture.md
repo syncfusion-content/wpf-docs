@@ -16,14 +16,14 @@ To change the culture for the CalendarEdit control, use the following code examp
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding calendar with culture as Afrikaans --&gt;&lt;syncfusion:CalendarEdit Name="calendarEdit" Culture="Afrikaans"/&gt;</td></tr>
+[XAML]<!-- Adding calendar with culture as Afrikaans --><syncfusion:CalendarEdit Name="calendarEdit" Culture="Afrikaans"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting the culturecalendarEdit.Culture = new CultureInfo(2); //Adding CalendarEdit as window contentthis.Content = calendarEdit;   </td></tr>
 </table>
 
 
-{ ![](Culture_images/Culture_img1.jpeg) | markdownify }
+{{ '![](Culture_images/Culture_img1.jpeg)' | markdownify }}
 {:.image }
 
 

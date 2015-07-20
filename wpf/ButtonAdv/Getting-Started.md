@@ -13,7 +13,7 @@ This section guides you on getting started with the ButtonAdv control. It descri
 
 ## Control Structure
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -31,7 +31,7 @@ The following code explains how to declare the ButtonAdv control using XAML.
 
 [XAML]
 
-&lt;sync:ButtonAdv Label="Hello World"/&gt;
+<sync:ButtonAdv Label="Hello World"/>
 
 
 
@@ -45,7 +45,7 @@ button.Label = "Hello World";
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -66,14 +66,14 @@ Use the following code example to set the SizeMode to Small:
 <table>
 <tr>
 <td>
-[XAML]&lt;sync:ButtonAdv SizeMode="Small" Label="Hello World"/&gt;</td></tr>
+[XAML]<sync:ButtonAdv SizeMode="Small" Label="Hello World"/></td></tr>
 <tr>
 <td>
 [C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -88,14 +88,14 @@ Use the following code example to set the SizeMode to Normal:
 <table>
 <tr>
 <td>
-[XAML]&lt;sync:ButtonAdv SizeMode="Normal" Label="Hello World"/&gt;</td></tr>
+[XAML]<sync:ButtonAdv SizeMode="Normal" Label="Hello World"/></td></tr>
 <tr>
 <td>
 [C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -108,14 +108,14 @@ Use the following code example to set the SizeMode to Large:
 <table>
 <tr>
 <td>
-[XAML]&lt;sync:ButtonAdv SizeMode="Large" Label="Hello World"/&gt;</td></tr>
+[XAML]<sync:ButtonAdv SizeMode="Large" Label="Hello World"/></td></tr>
 <tr>
 <td>
 [C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large;</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -133,14 +133,14 @@ The SmallIcon property can be set as follows:
 <table>
 <tr>
 <td>
-[XAML]&lt;sync:ButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/&gt;</td></tr>
+[XAML]<sync:ButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/></td></tr>
 <tr>
 <td>
 [C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -151,14 +151,14 @@ The SmallIcon property can be set even when the SizeMode is Normal:
 <table>
 <tr>
 <td>
-[XAML]&lt;sync:ButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/&gt;</td></tr>
+[XAML]<sync:ButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/></td></tr>
 <tr>
 <td>
 [C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -169,14 +169,14 @@ The LargeIcon property can be set as follows:
 <table>
 <tr>
 <td>
-[XAML]&lt;sync:ButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/&gt;</td></tr>
+[XAML]<sync:ButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/></td></tr>
 <tr>
 <td>
 [C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large;button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -187,13 +187,13 @@ The Iconsize can be set using the following two properties:
 * IconWidth
 * IconHeight
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -204,7 +204,7 @@ The IconWidth and IconHeight can be set as follows:
 <table>
 <tr>
 <td>
-[XAML]  &lt;sync:ButtonAdv   SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Hello World"  SmallIcon ="female.png"  /&gt;</td></tr>
+[XAML]  <sync:ButtonAdv   SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Hello World"  SmallIcon ="female.png"  /></td></tr>
 <tr>
 <td>
 [C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.IconWidth=20;button.IconHeight=20;</td></tr>

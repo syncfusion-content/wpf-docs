@@ -21,7 +21,7 @@ Spell Checking engine contains in-built dialog for checking spellings.
 
 
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 

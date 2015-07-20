@@ -24,18 +24,18 @@ The following code snippet is used to set this property.
 <table>
 <tr>
 <td>
-[XAML]&lt;!--BalloonTipHeaderVisibility="Visible" --&gt;&lt;syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipHeaderVisibility="Visible" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/&gt;&lt;!--BalloonTipHeaderVisibility="Collapsed" --&gt;&lt;syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipHeaderVisibility="Collapsed" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/&gt;</td></tr>
+[XAML]<!--BalloonTipHeaderVisibility="Visible" --><syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipHeaderVisibility="Visible" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/><!--BalloonTipHeaderVisibility="Collapsed" --><syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipHeaderVisibility="Collapsed" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/></td></tr>
 <tr>
 <td>
 [C#]//BalloonTipHeaderVisibility="Visible"notifyIcon.BalloonTipHeaderVisibility = Visibility.Visible;//BalloonTipHeaderVisibility="Collapsed"notifyIcon.BalloonTipHeaderVisibility = Visibility.Collapsed;</td></tr>
 </table>
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img1.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img1.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img2.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -46,14 +46,14 @@ BalloonTipText property is used to set the text that should be displayed in the 
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Virus Scan has been completed" BalloonTipTitle="AntiVirus Software" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/&gt;</td></tr>
+[XAML]<syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Virus Scan has been completed" BalloonTipTitle="AntiVirus Software" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/></td></tr>
 <tr>
 <td>
 [C#]notifyIcon.BalloonTipText = "Virus Scan has been completed";notifyIcon.BalloonTipTitle = "AntiVirus Software"; </td></tr>
 </table>
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img3.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -74,14 +74,14 @@ The following code snippet is used to set this property.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- BalloonTipIcon="Warning" --&gt;&lt;syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipIcon="Warning" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/&gt;</td></tr>
+[XAML]<!-- BalloonTipIcon="Warning" --><syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipIcon="Warning" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/></td></tr>
 <tr>
 <td>
 [C#]//BalloonTipIcon="Warning"notifyIcon.BalloonTipIcon = BalloonTipIcon.Warning;</td></tr>
 </table>
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img4.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -107,7 +107,7 @@ The following code snippet is used to set these properties.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- For Fade --&gt;&lt;syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipAnimationEffect="Fade"  ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/&gt;&lt;!-- For Scale --&gt;&lt;syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipAnimationEffect="Scale"  ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/&gt;</td></tr>
+[XAML]<!-- For Fade --><syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipAnimationEffect="Fade"  ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/><!-- For Scale --><syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipAnimationEffect="Scale"  ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/></td></tr>
 <tr>
 <td>
 [C#]NotifyIcon notifyIcon = new NotifyIcon();notifyIcon.BalloonTipText = "Custom Notify Icon is Available";notifyIcon.BalloonTipTitle = "Default NotifyIcon";//For FadenotifyIcon.BalloonTipAnimationEffect = BalloonTipAnimationEffects.Fade;//For ScalenotifyIcon.BalloonTipAnimationEffect = BalloonTipAnimationEffects.Scale;// Duration for Showing NotifyIconnotifyIcon.ShowBalloonTipTime = 1000;// // Duration for Hiding NotifyIconnotifyIcon.HideBalloonTipTime = 1000;</td></tr>
@@ -137,18 +137,18 @@ The shape for the NotifyIcon is set by using the BalloonTipShape property. The f
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Rectangle Shape --&gt;&lt;syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipShape="Rectangle" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/&gt;&lt;!-- RoundedRectangle Shape --&gt;&lt;syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipShape="RoundedRectangle" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/&gt;&lt;!-- Balloon Shape --&gt;&lt;syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipShape="Balloon" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/&gt;</td></tr>
+[XAML]<!-- Rectangle Shape --><syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipShape="Rectangle" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/><!-- RoundedRectangle Shape --><syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipShape="RoundedRectangle" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/><!-- Balloon Shape --><syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipShape="Balloon" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/></td></tr>
 <tr>
 <td>
 [C#]// Rectangle ShapenotifyIcon.BalloonTipShape = BalloonTipShapes.Rectangle;//RoundedRectangle ShapenotifyIcon.BalloonTipShape = BalloonTipShapes.RoundedRectangle;//Balloon ShapenotifyIcon.BalloonTipShape = BalloonTipShapes.RoundedRectangle;</td></tr>
 </table>
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img5.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img5.jpeg)' | markdownify }}
 {:.image }
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img6.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img6.jpeg)' | markdownify }}
 {:.image }
 
 

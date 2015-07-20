@@ -23,23 +23,23 @@ Following code illustrates how to add an item in Add or Remove Buttons:
 
 
 
-&lt;shared:ToolBarAdv &gt;
+<shared:ToolBarAdv >
 
-                        &lt;Button shared:ToolBarAdv.Label="New Document" shared:ToolBarAdv.Icon="Images/NewDocumentHS.png"&gt;
+                        <Button shared:ToolBarAdv.Label="New Document" shared:ToolBarAdv.Icon="Images/NewDocumentHS.png">
 
-                            &lt;Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/&gt;
+                            <Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/>
 
-                        &lt;/Button&gt;
+                        </Button>
 
-                        &lt;Button  shared:ToolBarAdv.Label="Open Document" shared:ToolBarAdv.Icon="Images/openHS.png"&gt;
+                        <Button  shared:ToolBarAdv.Label="Open Document" shared:ToolBarAdv.Icon="Images/openHS.png">
 
-                            &lt;Image Source="Images/openHS.png"  Width="16" Height="16"/&gt;
+                            <Image Source="Images/openHS.png"  Width="16" Height="16"/>
 
-                        &lt;/Button&gt;
+                        </Button>
 
 
 
-                    &lt;/shared:ToolBarAdv&gt;
+                    </shared:ToolBarAdv>
 
 
 
@@ -107,7 +107,7 @@ ToolBarAdv toolBar = new ToolBarAdv();
 
 
 
-{ ![](Add-or-Remove-buttons_images/Add-or-Remove-buttons_img1.png) | markdownify }
+{{ '![](Add-or-Remove-buttons_images/Add-or-Remove-buttons_img1.png)' | markdownify }}
 {:.image }
 
 

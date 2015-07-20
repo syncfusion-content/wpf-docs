@@ -39,39 +39,39 @@ The following code illustrates how to add a custom tooltip to the Gantt control.
 
 [XAML]
 
- &lt;DataTemplate x:Key="ToolTipTemp"&gt;
-            &lt;Grid&gt;
-                &lt;Grid.ColumnDefinitions&gt;
-                    &lt;ColumnDefinition /&gt;
-                    &lt;ColumnDefinition /&gt;
-                &lt;/Grid.ColumnDefinitions&gt;
-                &lt;Grid.RowDefinitions&gt;
-                    &lt;RowDefinition Height="40" /&gt;
-                    &lt;RowDefinition Height="40" /&gt;
-                    &lt;RowDefinition Height="40" /&gt;
-                    &lt;RowDefinition Height="40" /&gt;
-                    &lt;RowDefinition Height="40" /&gt;
-                &lt;/Grid.RowDefinitions&gt;
-                &lt;Border Grid.Column="0" Grid.Row="0" Margin="-2"                        CornerRadius="5" Grid.ColumnSpan="2" Background="#FF1F4877"                        BorderThickness="2"&gt;
-                    &lt;TextBlock  Margin="5,0,0,0" Text="{Binding TaskName}"                                HorizontalAlignment="Center"                                VerticalAlignment="Center" FontWeight="Bold"                                FontFamily="Verdana" Foreground="WhiteSmoke" /&gt;
+ <DataTemplate x:Key="ToolTipTemp">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <Border Grid.Column="0" Grid.Row="0" Margin="-2"                        CornerRadius="5" Grid.ColumnSpan="2" Background="#FF1F4877"                        BorderThickness="2">
+                    <TextBlock  Margin="5,0,0,0" Text="{Binding TaskName}"                                HorizontalAlignment="Center"                                VerticalAlignment="Center" FontWeight="Bold"                                FontFamily="Verdana" Foreground="WhiteSmoke" />
 
-                &lt;/Border&gt;
-                &lt;TextBlock Margin="1" Text="TaskID:" Grid.Column="0"                           Grid.Row="1" VerticalAlignment="Center"                           FontFamily="Verdana" /&gt;
-                &lt;TextBlock Margin="1" Text="{Binding TaskId}" Grid.Column="1"                           VerticalAlignment="Center" Grid.Row="1"                           FontFamily="Verdana" /&gt;
+                </Border>
+                <TextBlock Margin="1" Text="TaskID:" Grid.Column="0"                           Grid.Row="1" VerticalAlignment="Center"                           FontFamily="Verdana" />
+                <TextBlock Margin="1" Text="{Binding TaskId}" Grid.Column="1"                           VerticalAlignment="Center" Grid.Row="1"                           FontFamily="Verdana" />
 
-                &lt;TextBlock Margin="1" Text="Start Date:" Grid.Column="0"                           Grid.Row="2" VerticalAlignment="Center"                           FontFamily="Verdana" /&gt;
+                <TextBlock Margin="1" Text="Start Date:" Grid.Column="0"                           Grid.Row="2" VerticalAlignment="Center"                           FontFamily="Verdana" />
                 <TextBlock Margin="1" Text="{Binding StartDate}" Grid.Row="2"
 
                            Grid.Column="1" VerticalAlignment="Center"
                            FontFamily="Verdana" />
-                &lt;TextBlock Margin="1" Text="Finish Date:"  Grid.Column="0"                           Grid.Row="3" VerticalAlignment="Center"                           FontFamily="Verdana" /&gt;
-                &lt;TextBlock Margin="1" Text="{Binding FinishDate}" Grid.Column="1"                           Grid.Row="3" VerticalAlignment="Center"                           FontFamily="Verdana" /&gt;
-                &lt;TextBlock Margin="1" Text="Progress:" Grid.Column="0"                           Grid.Row="4" VerticalAlignment="Center"                           FontFamily="Verdana" /&gt;
-                &lt;ProgressBar Margin="1" Height="25" Value="{Binding Progress}"                             Grid.Column="1" VerticalAlignment="Center"                             Grid.Row="4" /&gt;
-            &lt;/Grid&gt; 
-        &lt;/DataTemplate&gt;
+                <TextBlock Margin="1" Text="Finish Date:"  Grid.Column="0"                           Grid.Row="3" VerticalAlignment="Center"                           FontFamily="Verdana" />
+                <TextBlock Margin="1" Text="{Binding FinishDate}" Grid.Column="1"                           Grid.Row="3" VerticalAlignment="Center"                           FontFamily="Verdana" />
+                <TextBlock Margin="1" Text="Progress:" Grid.Column="0"                           Grid.Row="4" VerticalAlignment="Center"                           FontFamily="Verdana" />
+                <ProgressBar Margin="1" Height="25" Value="{Binding Progress}"                             Grid.Column="1" VerticalAlignment="Center"                             Grid.Row="4" />
+            </Grid> 
+        </DataTemplate>
 
-&lt;Sync:GanttControl x:Name="Gantt" ToolTipTemplate="{StaticResource ToolTipTemp}"/&gt;
+<Sync:GanttControl x:Name="Gantt" ToolTipTemplate="{StaticResource ToolTipTemp}"/>
 
 
 
@@ -81,7 +81,7 @@ The following image shows Custom ToolTip:
 
 
 
-{ ![](CustomToolTip_images/CustomToolTip_img1.png) | markdownify }
+{{ '![](CustomToolTip_images/CustomToolTip_img1.png)' | markdownify }}
 {:.image }
 
 

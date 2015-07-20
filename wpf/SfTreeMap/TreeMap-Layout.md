@@ -23,13 +23,13 @@ The following code illustrates how to set a squarified layout in Treemap.
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.DataContext&gt;
+        <Grid.DataContext>
 
-            &lt;local:PopulationViewModel/&gt;
+            <local:PopulationViewModel/>
 
-        &lt;/Grid.DataContext&gt;
+        </Grid.DataContext>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
 
@@ -39,15 +39,15 @@ The following code illustrates how to set a squarified layout in Treemap.
 
                               ColorValuePath="Growth">
 
-        &lt;/syncfusion:SfTreeMap&gt;
+        </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt;  
+    </Grid>  
 
 
 
 The following screenshot illustrates a squarified layout.
 
-{ ![](TreeMap-Layout_images/TreeMap-Layout_img1.png) | markdownify }
+{{ '![](TreeMap-Layout_images/TreeMap-Layout_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -63,13 +63,13 @@ The following code illustrates how to set a slice and dice layout in Treemap.
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.DataContext&gt;
+        <Grid.DataContext>
 
-            &lt;local:PopulationViewModel/&gt;
+            <local:PopulationViewModel/>
 
-        &lt;/Grid.DataContext&gt;
+        </Grid.DataContext>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
 
@@ -79,9 +79,9 @@ The following code illustrates how to set a slice and dice layout in Treemap.
 
                               ColorValuePath="Growth">
 
-        &lt;/syncfusion:SfTreeMap&gt;
+        </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
@@ -99,7 +99,7 @@ The following screenshot illustrates a slice-and-dice layout.
 
 _Slice-and-dice layout_
 
-{ ![C:/Users/MageshyadavM/Downloads/image250_3.jpg](TreeMap-Layout_images/TreeMap-Layout_img2.jpeg) | markdownify }
+{{ '![C:/Users/MageshyadavM/Downloads/image250_3.jpg](TreeMap-Layout_images/TreeMap-Layout_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -113,13 +113,13 @@ The following code illustrates how to set a slice and dice layout horizontally i
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.DataContext&gt;
+        <Grid.DataContext>
 
-            &lt;local:PopulationViewModel/&gt;
+            <local:PopulationViewModel/>
 
-        &lt;/Grid.DataContext&gt;
+        </Grid.DataContext>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
 
@@ -129,15 +129,15 @@ The following code illustrates how to set a slice and dice layout horizontally i
 
                               ColorValuePath="Growth">
 
-        &lt;/syncfusion:SfTreeMap&gt;
+        </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
 The following screenshot shows a Slice-and-dice TreeMap in horizontal layout.
 
-{ ![](TreeMap-Layout_images/TreeMap-Layout_img3.png) | markdownify }
+{{ '![](TreeMap-Layout_images/TreeMap-Layout_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -151,13 +151,13 @@ The following code illustrates how to set a slice and dice layout vertically in 
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.DataContext&gt;
+        <Grid.DataContext>
 
-            &lt;local:PopulationViewModel/&gt;
+            <local:PopulationViewModel/>
 
-        &lt;/Grid.DataContext&gt;
+        </Grid.DataContext>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}"
 
@@ -167,9 +167,9 @@ The following code illustrates how to set a slice and dice layout vertically in 
 
                               ColorValuePath="Growth">
 
-        &lt;/syncfusion:SfTreeMap&gt;
+        </syncfusion:SfTreeMap>
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
@@ -177,7 +177,7 @@ The following screenshot shows a Slice-and-dice TreeMap in vertical layout.
 
 
 
-{ ![](TreeMap-Layout_images/TreeMap-Layout_img4.png) | markdownify }
+{{ '![](TreeMap-Layout_images/TreeMap-Layout_img4.png)' | markdownify }}
 {:.image }
 
 

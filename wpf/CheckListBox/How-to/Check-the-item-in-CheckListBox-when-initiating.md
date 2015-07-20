@@ -15,15 +15,15 @@ To check the items when initiating the CheckListBox control, use the IsSelected 
 
 
 
-&lt;syncfusion:CheckListBox.ItemContainerStyle&gt;
+<syncfusion:CheckListBox.ItemContainerStyle>
 
-            &lt;Style TargetType="syncfusion:CheckListBoxItem"&gt;
+            <Style TargetType="syncfusion:CheckListBoxItem">
 
-                &lt;Setter Property="IsSelected" Value="{Binding IsChecked, Mode=TwoWay}"/&gt;
+                <Setter Property="IsSelected" Value="{Binding IsChecked, Mode=TwoWay}"/>
 
-            &lt;/Style&gt;
+            </Style>
 
-&lt;/syncfusion:CheckListBox.ItemContainerStyle&gt;
+</syncfusion:CheckListBox.ItemContainerStyle>
 
 
 

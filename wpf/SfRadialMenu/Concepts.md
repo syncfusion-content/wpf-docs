@@ -91,7 +91,7 @@ Bind the Application command collection to the ItemsSource property of the Radia
 
 [XAML]
 
-&lt;navigation:SfRadialMenu IsOpen="True" ItemsSource="{Binding Options}"/&gt;
+<navigation:SfRadialMenu IsOpen="True" ItemsSource="{Binding Options}"/>
 
 
 This will populate the RadialMenu as shown in the image below. 
@@ -100,7 +100,7 @@ This will populate the RadialMenu as shown in the image below.
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Concepts_images/Concepts_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Concepts_images/Concepts_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -124,7 +124,7 @@ DisplayMemberPath="Name"
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/2.png](Concepts_images/Concepts_img2.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/2.png](Concepts_images/Concepts_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -156,29 +156,29 @@ ItemTemplate property of the RadialMenu can be used to customize the header part
 
 
 
-&lt;navigation:SfRadialMenu IsOpen="True" ItemsSource="{Binding Options}"&gt;
+<navigation:SfRadialMenu IsOpen="True" ItemsSource="{Binding Options}">
 
-            &lt;navigation:SfRadialMenu.ItemTemplate&gt;
+            <navigation:SfRadialMenu.ItemTemplate>
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-                    &lt;StackPanel &gt;
+                    <StackPanel >
 
-                        &lt;Image Height="15" Width="15" Source="{Binding ImagePath}"/&gt;
+                        <Image Height="15" Width="15" Source="{Binding ImagePath}"/>
 
-                        &lt;TextBlock Margin="0,5,0,0" Text="{Binding Name}"/&gt;
+                        <TextBlock Margin="0,5,0,0" Text="{Binding Name}"/>
 
-                    &lt;/StackPanel&gt;
+                    </StackPanel>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-            &lt;/navigation:SfRadialMenu.ItemTemplate&gt;
+            </navigation:SfRadialMenu.ItemTemplate>
 
-   &lt;/navigation:SfRadialMenu&gt;
+   </navigation:SfRadialMenu>
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/3.png](Concepts_images/Concepts_img3.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/3.png](Concepts_images/Concepts_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -192,31 +192,31 @@ The Icon property of the RadialMenu is used to customize the icon displayed in t
 
 
 
-&lt;navigation:SfRadialMenu IsOpen="True" &gt;
+<navigation:SfRadialMenu IsOpen="True" >
 
-&lt;navigation:SfRadialMenu.Icon&gt;
+<navigation:SfRadialMenu.Icon>
 
-                &lt;Grid Background="White"&gt;
+                <Grid Background="White">
 
                     <Image Source="ms-appx:///Assets/text.png" Width="20"  
 
  	 	 	                Stretch="Uniform"/>
 
-                &lt;/Grid&gt;
+                </Grid>
 
-            &lt;/navigation:SfRadialMenu.Icon&gt;
-
-
-
- &lt;/navigation:SfRadialMenu&gt;
+            </navigation:SfRadialMenu.Icon>
 
 
+
+ </navigation:SfRadialMenu>
 
 
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/4.png](Concepts_images/Concepts_img4.png) | markdownify }
+
+
+{{ '![C:/Users/ApoorvahR/Desktop/4.png](Concepts_images/Concepts_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -230,43 +230,43 @@ Color Palette can be formed in Radial Menu with the Radial Color Items.
 
 
 
-&lt;navigation:SfRadialMenu IsOpen="True" &gt;
+<navigation:SfRadialMenu IsOpen="True" >
 
-    &lt;navigation:SfRadialMenuItem Header="Font Color"&gt;
-
-
-
-       &lt;navigation:SfRadialMenuItem Header="Font"/&gt;
+    <navigation:SfRadialMenuItem Header="Font Color">
 
 
 
-       &lt;navigation:SfRadialColorItem Color="Red"&gt;
-
-           &lt;navigation:SfRadialColorItem Color="DarkRed"/&gt;
-
-           &lt;navigation:SfRadialColorItem Color="IndianRed"/&gt;
-
-           &lt;navigation:SfRadialColorItem Color="OrangeRed"/&gt;
-
-           &lt;navigation:SfRadialColorItem Color="MediumVioletRed"/&gt;
-
-       &lt;/navigation:SfRadialColorItem&gt;
-
-       &lt;navigation:SfRadialColorItem Color="Green"/&gt;
-
-       &lt;navigation:SfRadialColorItem Color="Blue"/&gt;
+       <navigation:SfRadialMenuItem Header="Font"/>
 
 
 
-     &lt;/navigation:SfRadialMenuItem&gt;
+       <navigation:SfRadialColorItem Color="Red">
 
-&lt;/navigation:SfRadialMenu&gt;
+           <navigation:SfRadialColorItem Color="DarkRed"/>
+
+           <navigation:SfRadialColorItem Color="IndianRed"/>
+
+           <navigation:SfRadialColorItem Color="OrangeRed"/>
+
+           <navigation:SfRadialColorItem Color="MediumVioletRed"/>
+
+       </navigation:SfRadialColorItem>
+
+       <navigation:SfRadialColorItem Color="Green"/>
+
+       <navigation:SfRadialColorItem Color="Blue"/>
+
+
+
+     </navigation:SfRadialMenuItem>
+
+</navigation:SfRadialMenu>
 
 
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/5.png](Concepts_images/Concepts_img5.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/5.png](Concepts_images/Concepts_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -288,11 +288,11 @@ Position of the tooltip displayed relative to the Radial Menu can be customized 
 
 [XAML]
 
-&lt;navigation:SfRadialMenuItem  ToolTip="Bold" ToolTipPlacement="Top"  /&gt;
+<navigation:SfRadialMenuItem  ToolTip="Bold" ToolTipPlacement="Top"  />
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/6.png](Concepts_images/Concepts_img6.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/6.png](Concepts_images/Concepts_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -320,7 +320,7 @@ VisibleSegmentsCount property is used to specify the number of segments availabl
 <table>
 <tr>
 <td>
-[XAML]&lt;navigation:SfRadialMenu LayoutType="Custom" VisibleSegmentsCount="7" /&gt;</td></tr>
+[XAML]<navigation:SfRadialMenu LayoutType="Custom" VisibleSegmentsCount="7" /></td></tr>
 <tr>
 <td>
 [C#]SfRadialMenu radialMenu = new SfRadialMenu();radialMenu.LayoutType = LayoutType.Custom; radialMenu.VisibleSeggmentsCount = 7; </td></tr>
@@ -332,14 +332,14 @@ SegmentIndex property is used to specify the index of the SfRadialMenuItem in ci
 <table>
 <tr>
 <td>
-[XAML] &lt;navigation:SfRadialMenu LayoutType="Custom" VisibleSegmentsCount="7" /&gt;   &lt;navigation:SfRadialMenuItem Header="Item  2" SegmentIndex="1" /&gt;   &lt;navigation:SfRadialMenuItem Header="Item 5" SegmentIndex="4" /&gt;   &lt;navigation:SfRadialMenuItem Header="Item 1" SegmentIndex="0" /&gt;   &lt;navigation:SfRadialMenuItem Header="Item 6" SegmentIndex="5" /&gt;   &lt;navigation:SfRadialMenuItem Header="Item 3" SegmentIndex="2" /&gt;&lt;/navigation:SfRadialMenu&gt; </td></tr>
+[XAML] <navigation:SfRadialMenu LayoutType="Custom" VisibleSegmentsCount="7" />   <navigation:SfRadialMenuItem Header="Item  2" SegmentIndex="1" />   <navigation:SfRadialMenuItem Header="Item 5" SegmentIndex="4" />   <navigation:SfRadialMenuItem Header="Item 1" SegmentIndex="0" />   <navigation:SfRadialMenuItem Header="Item 6" SegmentIndex="5" />   <navigation:SfRadialMenuItem Header="Item 3" SegmentIndex="2" /></navigation:SfRadialMenu> </td></tr>
 <tr>
 <td>
 [C#]SfRadialMenu radialMenu = new SfRadialMenu();radialMenu.LayoutType = LayoutType.Custom; radialMenu.VisibleSeggmentsCount = 7; SfRadialMenuItem item2 = new SfRadialMenuItem() { Header = "Item 2", SegmentIndex = 1 };               SfRadialMenuItem item5 = new SfRadialMenuItem() { Header   ="Item 5", SegmentIndex = 4 };SfRadialMenuItem item1 = new SfRadialMenuItem() { Header = "Item 1", SegmentIndex = 0 };SfRadialMenuItem item6 = new SfRadialMenuItem() { Header = "Item 6", SegmentIndex = 5 };SfRadialMenuItem item3 = new SfRadialMenuItem() { Header = "Item 3",SegmentIndex = 2 };radialMenu.Items.Add(item2);radialMenu.Items.Add(item5);radialMenu.Items.Add(item1);radialMenu.Items.Add(item6); radialMenu.Items.Add(item3); </td></tr>
 </table>
 
 
-{ ![](Concepts_images/Concepts_img7.png) | markdownify }
+{{ '![](Concepts_images/Concepts_img7.png)' | markdownify }}
 {:.image }
 
 

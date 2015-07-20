@@ -19,17 +19,17 @@ Use the following code snippet to set the color for the Drag Marker.
 
 
 
-&lt;!-- Adding TabControlExt --&gt;
+<!-- Adding TabControlExt -->
 
-&lt;syncfusion:TabControlExt Margin="20" Name="tabControlExt" DragMarkerColor="Red"&gt;
+<syncfusion:TabControlExt Margin="20" Name="tabControlExt" DragMarkerColor="Red">
 
 
 
-    &lt;!-- Adding TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"/&gt;
+    <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"/>
 
-&lt;/syncfusion:TabControlExt&gt;
+</syncfusion:TabControlExt>
 
 
 

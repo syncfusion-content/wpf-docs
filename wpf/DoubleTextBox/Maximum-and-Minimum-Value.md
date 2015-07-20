@@ -61,7 +61,7 @@ Initially there is no value assigned to the DoubleTextBox. So it displays the de
 
 
 
-{ ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img1.png) | markdownify }
+{{ '![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -71,7 +71,7 @@ MaxValidation is set to OnLostFocus, so the MaxValidation will be performed only
 
 
 
-{ ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img2.png) | markdownify }
+{{ '![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -81,7 +81,7 @@ MinValidation is set to OnKeyPress, so you cannot enter a value less than the Mi
 
 
 
-{ ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img3.png) | markdownify }
+{{ '![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img3.png)' | markdownify }}
 {:.image }
 
 

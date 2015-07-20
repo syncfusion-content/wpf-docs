@@ -13,11 +13,11 @@ Each Barcode symbol can be associated with optional settings that may affect tha
 
 [XAML]
 
-&lt;sync:SfBarcode.SymbologySettings&gt;
+<sync:SfBarcode.SymbologySettings>
 
-         &lt;sync:Code39Setting BarHeight="45" EnableCheckDigit="False" EncodeStartStopSymbols="True" NarrowBarWidth="1" ShowCheckDigit="False"/&gt;
+         <sync:Code39Setting BarHeight="45" EnableCheckDigit="False" EncodeStartStopSymbols="True" NarrowBarWidth="1" ShowCheckDigit="False"/>
 
-&lt;/sync:SfBarcode.SymbologySettings&gt;
+</sync:SfBarcode.SymbologySettings>
 
 
 
@@ -27,11 +27,11 @@ The one dimensional barcodes have some of the settings in common, such as BarHei
 
 [XAML]
 
-&lt;sync:SfBarcode.SymbologySettings&gt;
+<sync:SfBarcode.SymbologySettings>
 
-         &lt;sync:Code39Setting BarHeight="45" NarrowBarWidth="1"/&gt;
+         <sync:Code39Setting BarHeight="45" NarrowBarWidth="1"/>
 
-&lt;/sync:SfBarcode.SymbologySettings&gt;
+</sync:SfBarcode.SymbologySettings>
 
 
 
@@ -41,11 +41,11 @@ The EncodeStartStopSymbols property adds Start and Stop symbols to signal a bar 
 
 [XAML]
 
-&lt;sync:SfBarcode.SymbologySettings&gt;
+<sync:SfBarcode.SymbologySettings>
 
-         &lt;sync:Code39Setting EnableCheckDigit="False" EncodeStartStopSymbols="True" ShowCheckDigit="False"/&gt;
+         <sync:Code39Setting EnableCheckDigit="False" EncodeStartStopSymbols="True" ShowCheckDigit="False"/>
 
-&lt;/sync:SfBarcode.SymbologySettings&gt;
+</sync:SfBarcode.SymbologySettings>
 
 
 
@@ -59,11 +59,11 @@ The DataMatrix barcode settings has the properties to modify the encoding and si
 
 [XAML]
 
-&lt;sync:SfBarcode.SymbologySettings&gt;
+<sync:SfBarcode.SymbologySettings>
 
-         &lt;sync:DataMatrixSetting XDimension="8" Encoding="ASCIINumeric” Size="Size104x104" /&gt;
+         <sync:DataMatrixSetting XDimension="8" Encoding="ASCIINumeric” Size="Size104x104" />
 
-&lt;/sync:SfBarcode.SymbologySettings&gt;
+</sync:SfBarcode.SymbologySettings>
 
 
 
@@ -220,11 +220,11 @@ The QRBarcode settings has properties to modify the version, error correction le
 
 [XAML]
 
-&lt;sync:SfBarcode.SymbologySettings&gt;
+<sync:SfBarcode.SymbologySettings>
 
-         &lt;sync:QRBarcodeSetting XDimension="8" ErrorCorrectionLevel="High” InputMode="BinaryMode”  Version="Auto" /&gt;
+         <sync:QRBarcodeSetting XDimension="8" ErrorCorrectionLevel="High” InputMode="BinaryMode”  Version="Auto" />
 
-&lt;/sync:SfBarcode.SymbologySettings&gt;
+</sync:SfBarcode.SymbologySettings>
 
 
 

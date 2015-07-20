@@ -61,23 +61,23 @@ colorpicker.RecentlyUsedPanelVisibility = System.Windows.
 
 
 
-{ ![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img1.png) | markdownify }
+{{ '![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img1.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img2.png) | markdownify }
-{:.image }
-
-
-
-
-{ ![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img3.png) | markdownify }
+{{ '![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img2.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img4.png) | markdownify }
+{{ '![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img3.png)' | markdownify }}
+{:.image }
+
+
+
+
+{{ '![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img4.png)' | markdownify }}
 {:.image }
 
 

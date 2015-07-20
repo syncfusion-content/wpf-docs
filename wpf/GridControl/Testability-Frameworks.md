@@ -19,7 +19,7 @@ With the Grid control, UI Automation is enabled for writing testable application
 
 
 
-{ ![](Testability-Frameworks_images/Testability-Frameworks_img1.png) | markdownify }
+{{ '![](Testability-Frameworks_images/Testability-Frameworks_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -36,7 +36,7 @@ Following are the different sets of identifiers that can be obtained for the Gri
 
 Each cell in the grid is considered as an Automation Element, which in itself has some providers implemented. The following figure displays the different sets of identifiers for a Grid Cell Element.
 
-{ ![](Testability-Frameworks_images/Testability-Frameworks_img2.png) | markdownify }
+{{ '![](Testability-Frameworks_images/Testability-Frameworks_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -48,7 +48,7 @@ Following are the different set of identifiers that can be obtained for each Gri
 * GridItemPattern* ValuePattern* SelectionItemPattern* ScrollItemPattern</td></tr>
 <tr>
 <td>
-> <br>{{ '_Note: With NUnit or any other test frameworks, using TestApi from codeplex.com makes it quite easy to write unit tests. We are not recommending/fixing any issues with TestApi, it is an open source library from Microsoft._' | markdownify }}</td></tr>
+> <br>{{{ ''_Note: With NUnit or any other test frameworks, using TestApi from codeplex.com makes it quite easy to write unit tests. We are not recommending/fixing any issues with TestApi, it is an open source library from Microsoft._'' | markdownify }}}</td></tr>
 </table>
 Using UI Automation Patterns
 
@@ -64,7 +64,7 @@ The following set of instructions illustrates the same.
 
 
 
-{ ![](Testability-Frameworks_images/Testability-Frameworks_img3.png) | markdownify }
+{{ '![](Testability-Frameworks_images/Testability-Frameworks_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -78,15 +78,15 @@ The following set of instructions illustrates the same.
 
 
 
-&lt;Grid&gt;
+<Grid>
 
-    &lt;ScrollViewer CanContentScroll="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"&gt;
+    <ScrollViewer CanContentScroll="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
 
-        &lt;syncfusion:GridControl x:Name="grid" /&gt;
+        <syncfusion:GridControl x:Name="grid" />
 
-    &lt;/ScrollViewer&gt;
+    </ScrollViewer>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -120,7 +120,7 @@ private void InitGrid()
 
 
 
-{ ![](Testability-Frameworks_images/Testability-Frameworks_img4.png) | markdownify }
+{{ '![](Testability-Frameworks_images/Testability-Frameworks_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -212,7 +212,7 @@ Essential Grid WPF now supports automated UI testing with VS 2010 Coded UI techn
 
 The architectural diagram is as follows:
 
-{ ![](Testability-Frameworks_images/Testability-Frameworks_img5.jpeg) | markdownify }
+{{ '![](Testability-Frameworks_images/Testability-Frameworks_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -268,13 +268,13 @@ Preparing the Grid application
 
     StartupUri="Window1.xaml">
 
-    &lt;Application.Resources&gt;
+    <Application.Resources>
 
 
 
-    &lt;/Application.Resources&gt;
+    </Application.Resources>
 
-&lt;/Application&gt;
+</Application>
 
 
 
@@ -294,13 +294,13 @@ Preparing the Grid application
 
     StartupUri="Window1.xaml">
 
-    &lt;syncfusion:GridControlTestApplication.Resources&gt;
+    <syncfusion:GridControlTestApplication.Resources>
 
 
 
-    &lt;/syncfusion:GridControlTestApplication.Resources&gt;
+    </syncfusion:GridControlTestApplication.Resources>
 
-&lt;/syncfusion:GridControlTestApplication&gt;
+</syncfusion:GridControlTestApplication>
 
 
 
@@ -314,11 +314,11 @@ namespace WpfApplication3
 
 {
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Interaction logic for App.xaml
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
     public partial class App : GridControlTestApplication
 
@@ -340,7 +340,7 @@ Creating Unit Tests with VS2010
 
 
 
-{ ![](Testability-Frameworks_images/Testability-Frameworks_img6.jpeg) | markdownify }
+{{ '![](Testability-Frameworks_images/Testability-Frameworks_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -350,7 +350,7 @@ Creating Unit Tests with VS2010
 
 
 
-{ ![](Testability-Frameworks_images/Testability-Frameworks_img7.jpeg) | markdownify }
+{{ '![](Testability-Frameworks_images/Testability-Frameworks_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -375,7 +375,7 @@ The following code illustrates this.
 4. Build and run the Grid application that you configured.
 * Right-click on the TestMethod body and then select as below,
 
-{ ![](Testability-Frameworks_images/Testability-Frameworks_img8.jpeg) | markdownify }
+{{ '![](Testability-Frameworks_images/Testability-Frameworks_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -385,13 +385,13 @@ The following code illustrates this.
 
 
 
-{ ![](Testability-Frameworks_images/Testability-Frameworks_img9.jpeg) | markdownify }
+{{ '![](Testability-Frameworks_images/Testability-Frameworks_img9.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Testability-Frameworks_images/Testability-Frameworks_img10.jpeg) | markdownify }
+{{ '![](Testability-Frameworks_images/Testability-Frameworks_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -401,7 +401,7 @@ The following code illustrates this.
 
 
 
-{ ![](Testability-Frameworks_images/Testability-Frameworks_img11.jpeg) | markdownify }
+{{ '![](Testability-Frameworks_images/Testability-Frameworks_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -414,7 +414,7 @@ The following code illustrates this.
 
 
 
-{ ![](Testability-Frameworks_images/Testability-Frameworks_img12.jpeg) | markdownify }
+{{ '![](Testability-Frameworks_images/Testability-Frameworks_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -452,7 +452,7 @@ Testing the Application with Generated Coded UI Test
 
 
 
-{ ![](Testability-Frameworks_images/Testability-Frameworks_img13.jpeg) | markdownify }
+{{ '![](Testability-Frameworks_images/Testability-Frameworks_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -465,7 +465,7 @@ _Note: The sample test procedure mentioned above requires the sample to be run i
 
 > 
 
-{ ![](Testability-Frameworks_images/Testability-Frameworks_img14.jpeg) | markdownify }
+{{ '![](Testability-Frameworks_images/Testability-Frameworks_img14.jpeg)' | markdownify }}
 {:.image }
 
 _Test Result_

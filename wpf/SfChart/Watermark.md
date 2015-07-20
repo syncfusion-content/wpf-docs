@@ -47,31 +47,31 @@ The following code example explains how to set your custom text as Watermark.
 
 
 
-&lt;syncfusion:SfChart.Watermark&gt;
+<syncfusion:SfChart.Watermark>
 
 
 
-            &lt;syncfusion:Watermark Canvas.ZIndex="-1"  HorizontalAlignment="Center" VerticalAlignment="Center"&gt;
+            <syncfusion:Watermark Canvas.ZIndex="-1"  HorizontalAlignment="Center" VerticalAlignment="Center">
 
 
 
-                &lt;syncfusion:Watermark.Content&gt;
+                <syncfusion:Watermark.Content>
 
-                    &lt;TextBlock Text="Demand Report" FontSize="60" Foreground="Gray" Opacity="0.5"&gt;&lt;/TextBlock&gt;
+                    <TextBlock Text="Demand Report" FontSize="60" Foreground="Gray" Opacity="0.5"></TextBlock>
 
-                &lt;/syncfusion:Watermark.Content&gt;
+                </syncfusion:Watermark.Content>
 
 
 
-            &lt;/syncfusion:Watermark&gt;
+            </syncfusion:Watermark>
 
-        &lt;/syncfusion:SfChart.Watermark&gt;
+        </syncfusion:SfChart.Watermark>
 
 
 
 The following screenshot illustrates the Watermark with custom text.
 
-{ ![C:/Users/rachel/Desktop/snaps/21.png](Watermark_images/Watermark_img1.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/snaps/21.png](Watermark_images/Watermark_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -83,23 +83,23 @@ You can set images as Watermark for SfChart, using the Content property, since i
 
 
 
-        &lt;syncfusion:SfChart.Watermark&gt;
+        <syncfusion:SfChart.Watermark>
 
-            &lt;syncfusion:Watermark   HorizontalAlignment="Right" VerticalAlignment="Top"&gt;
+            <syncfusion:Watermark   HorizontalAlignment="Right" VerticalAlignment="Top">
 
-                &lt;syncfusion:Watermark.Content&gt;
+                <syncfusion:Watermark.Content>
 
-                    &lt;Image Source="ms-appx:///Assets/syncfusion.png" Height="50" Width="50"/&gt;
+                    <Image Source="ms-appx:///Assets/syncfusion.png" Height="50" Width="50"/>
 
-                &lt;/syncfusion:Watermark.Content&gt;
+                </syncfusion:Watermark.Content>
 
-            &lt;/syncfusion:Watermark&gt;
+            </syncfusion:Watermark>
 
-        &lt;/syncfusion:SfChart.Watermark&gt;
+        </syncfusion:SfChart.Watermark>
 
 The following screenshot illustrates the image Watermark, center aligned.
 
-{ ![C:/Users/rachel/Desktop/snaps/22.png](Watermark_images/Watermark_img2.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/snaps/22.png](Watermark_images/Watermark_img2.png)' | markdownify }}
 {:.image }
 
 

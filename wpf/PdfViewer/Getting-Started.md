@@ -385,7 +385,7 @@ No</td></tr>
 
 The following screenshot is a pictorial representation of PDF Viewer. 
 
-{ ![C:/Users/Suresh/Desktop/WPF UG/StructureOfPDFViewer_edited.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![C:/Users/Suresh/Desktop/WPF UG/StructureOfPDFViewer_edited.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -393,7 +393,7 @@ _Structure of PDF Viewer_
 
 ToolStrip
 
-{ ![C:/Users/Suresh/Desktop/WPF UG/StructureOfToolStrip_edited.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![C:/Users/Suresh/Desktop/WPF UG/StructureOfToolStrip_edited.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -420,7 +420,7 @@ Following steps demonstrate how to create a simple application with Essential Pd
 1. Create new WPF application in Visual Studio.
 2. Open the Visual Studio tool box. Navigate to “Syncfusion WPF Toolbox” tab, and drag the PdfViewerControl toolbox item to the Designer window. 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -458,7 +458,7 @@ When you drag the PdfViewerControl toolbox item to the window, it automaticall
 
 [XAML]
 
-&lt;syncfusion:PdfViewerControl Name="pdfViewerControl1"/&gt;
+<syncfusion:PdfViewerControl Name="pdfViewerControl1"/>
 
 
 
@@ -547,11 +547,11 @@ When you drag the PdfViewerControl toolbox item to the window, it automaticall
 
 [XAML]
 
-    &lt;Window.DataContext&gt;
+    <Window.DataContext>
 
-        &lt;local:PdfReport/&gt;
+        <local:PdfReport/>
 
-    &lt;/Window.DataContext&gt;
+    </Window.DataContext>
 
 
 
@@ -559,7 +559,7 @@ When you drag the PdfViewerControl toolbox item to the window, it automaticall
 
 [XAML]
 
-&lt;Syncfusion:PdfViewerControl ItemSource="{Binding DocumentStream}"/&gt;
+<Syncfusion:PdfViewerControl ItemSource="{Binding DocumentStream}"/>
 
 
 
@@ -571,7 +571,7 @@ In addition to the PdfViewerControl, Syncfusion also provides PdfDocumentView co
 
 1. Drag the PdfDocumentView control from the toolbox and drop it into the application’s window. Name the control as documentViewer.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -584,7 +584,7 @@ _Toolbox showing the PdfDocumentView control_
 
 [XAML]
 
-&lt;Syncfusion:PdfDocumentView Name="documentViewer"/&gt;
+<Syncfusion:PdfDocumentView Name="documentViewer"/>
 
 Loading a document
 
@@ -759,7 +759,7 @@ The PdfDocumentView control also provides the Print APIs, to print the PDF docum
 
 The following screenshot illustrates the completely customized PDF Viewer created by using the PdfDocumentView control
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 

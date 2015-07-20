@@ -27,25 +27,25 @@ The following code example illustrates how to add the MinimizedHeaderTemplate an
 
 
 
-&lt;DataTemplate x:Name="NormalHeader"&gt;
+<DataTemplate x:Name="NormalHeader">
 
-     &lt;StackPanel Orientation="Horizontal"&gt;
+     <StackPanel Orientation="Horizontal">
 
-          &lt;Image Source="Images/messages.png"/&gt;
+          <Image Source="Images/messages.png"/>
 
           <TextBlock Text="{Binding Name}" FontFamily="Verdana" 
 
                      FontSize="18" Foreground="Blue"/>                      
 
-     &lt;/StackPanel&gt;
+     </StackPanel>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
-&lt;DataTemplate x:Name="MinHeader"&gt;
+<DataTemplate x:Name="MinHeader">
 
-     &lt;StackPanel Orientation="Horizontal"&gt;
+     <StackPanel Orientation="Horizontal">
 
-           &lt;Image Source="Images/Email.png"/&gt;
+           <Image Source="Images/Email.png"/>
 
            <TextBlock Text="{Binding Name}" FontFamily="Verdana" 
 
@@ -53,23 +53,23 @@ The following code example illustrates how to add the MinimizedHeaderTemplate an
 
                       TextTrimming="WordEllipsis"/>                                        
 
-     &lt;/StackPanel&gt;
+     </StackPanel>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
-&lt;DataTemplate x:Name="MaxHeader"&gt;
+<DataTemplate x:Name="MaxHeader">
 
-     &lt;StackPanel Orientation="Horizontal"&gt;
+     <StackPanel Orientation="Horizontal">
 
-           &lt;Image Source="Images/phonelist.png"/&gt;
+           <Image Source="Images/phonelist.png"/>
 
            <TextBlock Text="{Binding Dept}" FontFamily="Verdana" 
 
                       FontSize="18" Foreground="White"/>                    
 
-     &lt;/StackPanel&gt;
+     </StackPanel>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
@@ -83,19 +83,19 @@ The following code example illustrates how to add the MinimizedHeaderTemplate an
 
      HeaderTemplate="{Binding Source={StaticResource NormalHeader}}">  
 
-&lt;/syncfusion:TileViewControl&gt;
+</syncfusion:TileViewControl>
 
 
 
 
 
-{ ![](MinimizedHeaderTemplate--MaximizedHeaderTemplate_images/MinimizedHeaderTemplate--MaximizedHeaderTemplate_img1.png) | markdownify }
+{{ '![](MinimizedHeaderTemplate--MaximizedHeaderTemplate_images/MinimizedHeaderTemplate--MaximizedHeaderTemplate_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](MinimizedHeaderTemplate--MaximizedHeaderTemplate_images/MinimizedHeaderTemplate--MaximizedHeaderTemplate_img2.png) | markdownify }
+{{ '![](MinimizedHeaderTemplate--MaximizedHeaderTemplate_images/MinimizedHeaderTemplate--MaximizedHeaderTemplate_img2.png)' | markdownify }}
 {:.image }
 
 

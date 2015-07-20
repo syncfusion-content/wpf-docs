@@ -16,7 +16,7 @@ To add a matrix to the Syncfusion Report Designer:
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-44.png](Add-a-Matrix-to-the-Report-Designer_images/Add-a-Matrix-to-the-Report-Designer_img1.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-44.png](Add-a-Matrix-to-the-Report-Designer_images/Add-a-Matrix-to-the-Report-Designer_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -24,19 +24,19 @@ To add a matrix to the Syncfusion Report Designer:
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-45.png](Add-a-Matrix-to-the-Report-Designer_images/Add-a-Matrix-to-the-Report-Designer_img2.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-45.png](Add-a-Matrix-to-the-Report-Designer_images/Add-a-Matrix-to-the-Report-Designer_img2.png)' | markdownify }}
 {:.image }
 
 
 4. Drag the required fields from the Available fields to Row Groups, Column Groups, and Values fields.
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-46.png](Add-a-Matrix-to-the-Report-Designer_images/Add-a-Matrix-to-the-Report-Designer_img3.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-46.png](Add-a-Matrix-to-the-Report-Designer_images/Add-a-Matrix-to-the-Report-Designer_img3.png)' | markdownify }}
 {:.image }
 
 
 5. Click Finish. A matrix is added to the Report Designer with the selected data fields.
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-62.png](Add-a-Matrix-to-the-Report-Designer_images/Add-a-Matrix-to-the-Report-Designer_img4.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-62.png](Add-a-Matrix-to-the-Report-Designer_images/Add-a-Matrix-to-the-Report-Designer_img4.png)' | markdownify }}
 {:.image }
 
 

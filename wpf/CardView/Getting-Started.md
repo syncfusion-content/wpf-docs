@@ -11,7 +11,7 @@ documentation: ug
 
 ## Control Structure
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -23,7 +23,7 @@ The CardView control can be created through Visual Studio, Expression Blend, XAM
 
 To create the CardView control through Visual Studio, drag the CardView from the Toolbox and drop it in the Designer area. It generates the CardView control.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -39,19 +39,19 @@ The CardView control can also be created and configured using Expression Blend. 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
 3. Drag the CardView to the designer. This generates the following CardView control.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
 4. To add the items to the CardView by using the CollectionEditor, select the CardView and go to Properties area, and then click Items (Collection) under Common Properties.
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -61,7 +61,7 @@ The CardView control can also be created and configured using Expression Blend. 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -87,57 +87,57 @@ After adding the above namespace the CardViewControl can be added to the applica
 
 [XAML]
 
-         &lt;syncfusion:CardView &gt;
+         <syncfusion:CardView >
 
-            &lt;syncfusion:CardViewItem Header="Item1" &gt;
+            <syncfusion:CardViewItem Header="Item1" >
 
-                &lt;ListBox&gt;
+                <ListBox>
 
-                    &lt;ListBoxItem HorizontalContentAlignment="Stretch" Padding="1"&gt;
+                    <ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
 
-                        &lt;Grid &gt;
+                        <Grid >
 
-                            &lt;Grid.ColumnDefinitions&gt;
+                            <Grid.ColumnDefinitions>
 
-                                &lt;ColumnDefinition Width="75"/&gt;
+                                <ColumnDefinition Width="75"/>
 
-                                &lt;ColumnDefinition Width="*"/&gt;
+                                <ColumnDefinition Width="*"/>
 
-                            &lt;/Grid.ColumnDefinitions&gt;
+                            </Grid.ColumnDefinitions>
 
-                            &lt;TextBlock Text="Name:"/&gt;
+                            <TextBlock Text="Name:"/>
 
-                            &lt;TextBox  Grid.Column="1" Text="David" /&gt;
+                            <TextBox  Grid.Column="1" Text="David" />
 
-                        &lt;/Grid&gt;
+                        </Grid>
 
-                    &lt;/ListBoxItem&gt;
+                    </ListBoxItem>
 
-                    &lt;ListBoxItem HorizontalContentAlignment="Stretch" Padding="1"&gt;
+                    <ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
 
-                        &lt;Grid &gt;
+                        <Grid >
 
-                            &lt;Grid.ColumnDefinitions&gt;
+                            <Grid.ColumnDefinitions>
 
-                                &lt;ColumnDefinition Width="75"/&gt;
+                                <ColumnDefinition Width="75"/>
 
-                                &lt;ColumnDefinition Width="*"/&gt;
+                                <ColumnDefinition Width="*"/>
 
-                            &lt;/Grid.ColumnDefinitions&gt;
+                            </Grid.ColumnDefinitions>
 
-                            &lt;TextBlock Text="DOB:"/&gt;
+                            <TextBlock Text="DOB:"/>
 
-                            &lt;TextBox  Grid.Column="1" Text="2/25/1986" /&gt;
+                            <TextBox  Grid.Column="1" Text="2/25/1986" />
 
-                        &lt;/Grid&gt;
+                        </Grid>
 
-                    &lt;/ListBoxItem&gt;
+                    </ListBoxItem>
 
-                &lt;/ListBox&gt;
+                </ListBox>
 
-            &lt;/syncfusion:CardViewItem&gt;
+            </syncfusion:CardViewItem>
 
-        &lt;/syncfusion:CardView&gt;
+        </syncfusion:CardView>
 
 
 

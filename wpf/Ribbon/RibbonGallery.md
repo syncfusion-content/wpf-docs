@@ -13,7 +13,7 @@ Ribbon instance now allows the users to add a Gallery control in both Ribbon, as
 
 
 
-{ ![](RibbonGallery_images/RibbonGallery_img1.jpeg) | markdownify }
+{{ '![](RibbonGallery_images/RibbonGallery_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -40,11 +40,11 @@ Use the following code snippet to add an InRibbon RibbonGallery control to a Rib
 
 
 
-&lt;ribbon:RibbonGallery VisualMode="InRibbon" LargeIcon="SampleImages/WordArt32.png" Label="Gallery" SizeForm="Large" ItemWidth="70" MenuIconBarEnabled="True" ResizeDirection="HorizontalAndVertical"/&gt;
+<ribbon:RibbonGallery VisualMode="InRibbon" LargeIcon="SampleImages/WordArt32.png" Label="Gallery" SizeForm="Large" ItemWidth="70" MenuIconBarEnabled="True" ResizeDirection="HorizontalAndVertical"/>
 
 
 
-{ ![](RibbonGallery_images/RibbonGallery_img2.jpeg) | markdownify }
+{{ '![](RibbonGallery_images/RibbonGallery_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -58,11 +58,11 @@ The following code snippet is used to add a DropDown RibbonGallery control to a 
 
 
 
-&lt;ribbon:RibbonGallery VisualMode="Dropdown" LargeIcon="SampleImages/WordArt32.png" Label="Gallery" SizeForm="Large" ItemWidth="70" MenuIconBarEnabled="True" ResizeDirection="HorizontalAndVertical"/&gt;
+<ribbon:RibbonGallery VisualMode="Dropdown" LargeIcon="SampleImages/WordArt32.png" Label="Gallery" SizeForm="Large" ItemWidth="70" MenuIconBarEnabled="True" ResizeDirection="HorizontalAndVertical"/>
 
 
 
-{ ![](RibbonGallery_images/RibbonGallery_img3.jpeg) | markdownify }
+{{ '![](RibbonGallery_images/RibbonGallery_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -80,11 +80,11 @@ Use the following code snippet to add a Ribbon Gallery Items.
 
 
 
-&lt;ribbon:RibbonGalleryItem&gt;
+<ribbon:RibbonGalleryItem>
 
-&lt;Image Source="SampleImages/Apex.png"/&gt;
+<Image Source="SampleImages/Apex.png"/>
 
-&lt;/ribbon:RibbonGalleryItem&gt;
+</ribbon:RibbonGalleryItem>
 
 
 
@@ -100,15 +100,15 @@ Use the following code to add a Ribbon Gallery Group to the Ribbon Gallery contr
 
 
 
-&lt;ribbon:RibbonGallery.GalleryGroups&gt;
+<ribbon:RibbonGallery.GalleryGroups>
 
-              &lt;ribbon:RibbonGalleryGroup Label="First group"&gt;
+              <ribbon:RibbonGalleryGroup Label="First group">
 
                 ....
 
-              &lt;/ribbon:RibbonGalleryGroup&gt;
+              </ribbon:RibbonGalleryGroup>
 
-&lt;/ribbon:RibbonGallery.GalleryGroups&gt;
+</ribbon:RibbonGallery.GalleryGroups>
 
 
 
@@ -128,63 +128,63 @@ To specify the GalleryFilters of the RibbonGallery, use the below code
 
 
 
-&lt;ribbon:RibbonGallery VisualMode="Dropdown" LargeIcon="SampleImages/WordArt32.png" Label="Gallery"   SizeForm="Large" ItemWidth="70" MenuIconBarEnabled="True" ResizeDirection="HorizontalAndVertical"&gt;
+<ribbon:RibbonGallery VisualMode="Dropdown" LargeIcon="SampleImages/WordArt32.png" Label="Gallery"   SizeForm="Large" ItemWidth="70" MenuIconBarEnabled="True" ResizeDirection="HorizontalAndVertical">
 
 
 
-            &lt;ribbon:RibbonGallery.GalleryFilters&gt;
+            <ribbon:RibbonGallery.GalleryFilters>
 
-              &lt;ribbon:RibbonGalleryFilter Label="All"/&gt;
+              <ribbon:RibbonGalleryFilter Label="All"/>
 
-              &lt;ribbon:RibbonGalleryFilter Label="First Group"/&gt;
+              <ribbon:RibbonGalleryFilter Label="First Group"/>
 
-              &lt;ribbon:RibbonGalleryFilter Label="Second Group"/&gt;
+              <ribbon:RibbonGalleryFilter Label="Second Group"/>
 
-              &lt;ribbon:RibbonGalleryFilter Label="Third Group"/&gt;
+              <ribbon:RibbonGalleryFilter Label="Third Group"/>
 
-            &lt;/ribbon:RibbonGallery.GalleryFilters&gt;
-
-
-
-&lt;ribbon:RibbonGallery.GalleryGroups&gt;
-
-              &lt;ribbon:RibbonGalleryGroup Label="First group" ribbon:RibbonGallery.FilterIndexes="0,1"&gt;
-
-                &lt;ribbon:RibbonGalleryItem&gt;
-
-                  &lt;Image Source="SampleImages/Apex.png"/&gt;
-
-                &lt;/ribbon:RibbonGalleryItem&gt;
-
-                &lt;ribbon:RibbonGalleryItem&gt;
-
-                  &lt;Image Source="SampleImages/Aspect.png"/&gt;
-
-                &lt;/ribbon:RibbonGalleryItem&gt;
+            </ribbon:RibbonGallery.GalleryFilters>
 
 
 
-              &lt;ribbon:RibbonGalleryGroup Label="Second group" ribbon:RibbonGallery.FilterIndexes="0,2"&gt;
+<ribbon:RibbonGallery.GalleryGroups>
 
-                &lt;ribbon:RibbonGalleryItem Content="Item" ToolTip="Set the specified style" /&gt;
+              <ribbon:RibbonGalleryGroup Label="First group" ribbon:RibbonGallery.FilterIndexes="0,1">
 
-                &lt;ribbon:RibbonGalleryItem&gt;
+                <ribbon:RibbonGalleryItem>
+
+                  <Image Source="SampleImages/Apex.png"/>
+
+                </ribbon:RibbonGalleryItem>
+
+                <ribbon:RibbonGalleryItem>
+
+                  <Image Source="SampleImages/Aspect.png"/>
+
+                </ribbon:RibbonGalleryItem>
+
+
+
+              <ribbon:RibbonGalleryGroup Label="Second group" ribbon:RibbonGallery.FilterIndexes="0,2">
+
+                <ribbon:RibbonGalleryItem Content="Item" ToolTip="Set the specified style" />
+
+                <ribbon:RibbonGalleryItem>
 
                   Text1
 
-                &lt;/ribbon:RibbonGalleryItem&gt;
+                </ribbon:RibbonGalleryItem>
 
-                &lt;ribbon:RibbonGalleryItem&gt;
+                <ribbon:RibbonGalleryItem>
 
                   Text2
 
-                &lt;/ribbon:RibbonGalleryItem&gt;
+                </ribbon:RibbonGalleryItem>
 
-              &lt;/ribbon:RibbonGalleryGroup&gt;
+              </ribbon:RibbonGalleryGroup>
 
-             &lt;/ribbon:RibbonGallery.GalleryGroups&gt;
+             </ribbon:RibbonGallery.GalleryGroups>
 
-&lt;/ribbon:RibbonGallery&gt;
+</ribbon:RibbonGallery>
 
 
 
@@ -192,7 +192,7 @@ In the above code snippet, FilterIndexes property is set to "0,1". This denotes 
 
 
 
-{ ![](RibbonGallery_images/RibbonGallery_img4.jpeg) | markdownify }
+{{ '![](RibbonGallery_images/RibbonGallery_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -214,29 +214,29 @@ In the expanded Gallery items (in both the Visual Mode), it is possible to add c
 
 
 
-&lt;!--Creating Ribbon Gallery--&gt;
+<!--Creating Ribbon Gallery-->
 
-&lt;syncfusion:RibbonGallery  VisualMode="InRibbon"&gt;
+<syncfusion:RibbonGallery  VisualMode="InRibbon">
 
 …..
 
-&lt;!--Add some Gallery Items here--&gt;
+<!--Add some Gallery Items here-->
 
 ……
 
-&lt;!--Adding custom Menu items--&gt;
+<!--Adding custom Menu items-->
 
-&lt;syncfusion:RibbonGallery.MenuItems&gt;
+<syncfusion:RibbonGallery.MenuItems>
 
-  &lt;syncfusion:RibbonButton SizeForm = "Small" Label="Menu Item-1" /&gt;
+  <syncfusion:RibbonButton SizeForm = "Small" Label="Menu Item-1" />
 
-  &lt;syncfusion:RibbonButton SizeForm = "Small" Label="Menu Item-2" /&gt;
+  <syncfusion:RibbonButton SizeForm = "Small" Label="Menu Item-2" />
 
-  &lt;syncfusion:RibbonButton SizeForm = "Small" Label="Menu Item-3" /&gt;
+  <syncfusion:RibbonButton SizeForm = "Small" Label="Menu Item-3" />
 
-&lt;/syncfusion:RibbonGallery.MenuItems&gt;
+</syncfusion:RibbonGallery.MenuItems>
 
-&lt;/syncfusion:RibbonGallery&gt;
+</syncfusion:RibbonGallery>
 
 
 
@@ -244,7 +244,7 @@ This displays the gallery item with three custom Menu items at the bottom of the
 
 
 
-{ ![](RibbonGallery_images/RibbonGallery_img5.jpeg) | markdownify }
+{{ '![](RibbonGallery_images/RibbonGallery_img5.jpeg)' | markdownify }}
 {:.image }
 
 

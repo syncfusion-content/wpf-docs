@@ -24,7 +24,7 @@ To create the SfBarcode control in Visual Studio:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -34,23 +34,23 @@ The following code example shows how to create the Barcode control from XAML:
 
 [XAML]
 
-&lt;Page xmlns:sync="using:Syncfusion.UI.Xaml.Controls.Barcode"&gt;
+<Page xmlns:sync="using:Syncfusion.UI.Xaml.Controls.Barcode">
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;sync:SfBarcode x:Name="barcode" Text="http://www.syncfusion.com" Symbology="QRBarcode"&gt;
+        <sync:SfBarcode x:Name="barcode" Text="http://www.syncfusion.com" Symbology="QRBarcode">
 
-                    &lt;sync:SfBarcode.SymbologySettings&gt;
+                    <sync:SfBarcode.SymbologySettings>
 
-                        &lt;sync:QRBarcodeSetting XDimension="8"/&gt;
+                        <sync:QRBarcodeSetting XDimension="8"/>
 
-                    &lt;/sync:SfBarcode.SymbologySettings&gt;
+                    </sync:SfBarcode.SymbologySettings>
 
-                &lt;/sync:SfBarcode&gt;
+                </sync:SfBarcode>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Page&gt;
+</Page>
 
 
 
@@ -60,7 +60,7 @@ The text to be encoded can be set using the Text property. By default, this orig
 
 [XAML]
 
-&lt;sync:SfBarcode x:Name="barcode" Text="http://www.syncfusion.com" DisplayText="False” Symbology="QRBarcode"/&gt;
+<sync:SfBarcode x:Name="barcode" Text="http://www.syncfusion.com" DisplayText="False” Symbology="QRBarcode"/>
 
 
 

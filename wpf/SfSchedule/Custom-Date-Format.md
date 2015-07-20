@@ -21,15 +21,15 @@ The Header background can be changed by HeaderBackground property.
 
 
 
-    &lt;Grid Background="White"&gt;
+    <Grid Background="White">
 
         <Schedule:SfSchedule  ScheduleType="Week"
 
             HeaderDateFormat="dd-MMMM-yyyy"   HeaderBackground="Red" >
 
-        &lt;/Schedule:SfSchedule&gt;
+        </Schedule:SfSchedule>
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
@@ -53,13 +53,13 @@ The Header background can be changed by HeaderBackground property.
 
 
 
-{ ![](Custom-Date-Format_images/Custom-Date-Format_img1.png) | markdownify }
+{{ '![](Custom-Date-Format_images/Custom-Date-Format_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Custom-Date-Format_images/Custom-Date-Format_img2.png) | markdownify }
+{{ '![](Custom-Date-Format_images/Custom-Date-Format_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -75,13 +75,13 @@ The default timespan format in Day, Week and Timeline view can be customized by 
 
 
 
-   &lt;Grid Background="White"  Name="grid"&gt;
+   <Grid Background="White"  Name="grid">
 
     <Schedule:SfSchedule  ScheduleType="Week"
 
       MajorTickTimeFormat="hh tt" TimeInterval="ThirtyMin"  MinorTickVisibility=" Visible"  MajorTickVisibility="Visible"       MinorTickTimeFormat=":mm tt" />
 
-  &lt;/Grid&gt;
+  </Grid>
 
 
 
@@ -113,7 +113,7 @@ The default timespan format in Day, Week and Timeline view can be customized by 
 
 
 
-{ ![](Custom-Date-Format_images/Custom-Date-Format_img3.png) | markdownify }
+{{ '![](Custom-Date-Format_images/Custom-Date-Format_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -125,15 +125,15 @@ The default date format of month view can be customized by using the MonthHeader
 
 
 
-  &lt;Grid Background="White"&gt;
+  <Grid Background="White">
 
     <Schedule:SfSchedule  ScheduleType="Month"
 
           MonthHeaderDateFormat="dd MMM" >   
 
-    &lt;/Schedule:SfSchedule&gt;
+    </Schedule:SfSchedule>
 
-  &lt;/Grid&gt;
+  </Grid>
 
 
 
@@ -153,7 +153,7 @@ The default date format of month view can be customized by using the MonthHeader
 
 
 
-{ ![](Custom-Date-Format_images/Custom-Date-Format_img4.png) | markdownify }
+{{ '![](Custom-Date-Format_images/Custom-Date-Format_img4.png)' | markdownify }}
 {:.image }
 
 

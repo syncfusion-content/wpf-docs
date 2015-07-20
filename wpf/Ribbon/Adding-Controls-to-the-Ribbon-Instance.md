@@ -21,31 +21,31 @@ MenuButton control is used in the menu bars to display items. It can have sub me
 
 
 
-&lt;ribbon:MenuButton Label="Prepare" Icon="SampleImages/Prepare32.png" &gt;
+<ribbon:MenuButton Label="Prepare" Icon="SampleImages/Prepare32.png" >
 
-  &lt;ribbon:ApplicationMenuGroup Header="Prepare document for distribution"&gt;
+  <ribbon:ApplicationMenuGroup Header="Prepare document for distribution">
 
-    &lt;ribbon:SimpleMenuButton Label="Properties" Description="View and edit document properties, such as Title, Author. and Keywords."  Icon="SampleImages/Properties32.png"/&gt;
+    <ribbon:SimpleMenuButton Label="Properties" Description="View and edit document properties, such as Title, Author. and Keywords."  Icon="SampleImages/Properties32.png"/>
 
-    &lt;ribbon:SimpleMenuButton Label="Inspect Document" Description="Checks the document for hidden metadata or personal information"  Icon="SampleImages/InspectDocument32.png"/&gt;
+    <ribbon:SimpleMenuButton Label="Inspect Document" Description="Checks the document for hidden metadata or personal information"  Icon="SampleImages/InspectDocument32.png"/>
 
-    &lt;ribbon:SimpleMenuButton Label="Encrypt Document" Description="Increase the security of the document by adding encryption"  Icon="SampleImages/EncryptDocument32.png"/&gt;
+    <ribbon:SimpleMenuButton Label="Encrypt Document" Description="Increase the security of the document by adding encryption"  Icon="SampleImages/EncryptDocument32.png"/>
 
     <ribbon:MenuButton Label="Restrict Permissions" Description="Grant people access while restricting their ability to edit, copy, and print."
 
 Icon="SampleImages/RestrictPermissions32.png">
 
-    &lt;ribbon:RibbonMenuItem Header="Unrestricted Access" IsChecked="True" IsCheckable="True"/&gt;
+    <ribbon:RibbonMenuItem Header="Unrestricted Access" IsChecked="True" IsCheckable="True"/>
 
-    &lt;ribbon:RibbonMenuItem Header="Restricted Access" IsChecked="False" IsCheckable="True"/&gt;
+    <ribbon:RibbonMenuItem Header="Restricted Access" IsChecked="False" IsCheckable="True"/>
 
-  &lt;/ribbon:ApplicationMenuGroup&gt;
+  </ribbon:ApplicationMenuGroup>
 
-&lt;/ribbon:MenuButton&gt;
+</ribbon:MenuButton>
 
 
 
-{ ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img1.jpeg) | markdownify }
+{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59,7 +59,7 @@ The following image gives you an idea of the hierarchy and appearance of the Dro
 
 
 
-{ ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img2.png) | markdownify }
+{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -79,7 +79,7 @@ Here is the code you will need to use to create a DropDownMenuItem control for a
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding DropDownMenuItem --&gt;&lt;sync:DropDownMenuItem Header="Item 1"&gt;&lt;/sync:DropDownMenuItem&gt;</td></tr>
+[XAML]<!-- Adding DropDownMenuItem --><sync:DropDownMenuItem Header="Item 1"></sync:DropDownMenuItem></td></tr>
 <tr>
 <td>
 [C#]// Creating an instance of TabSplitterDropDownMenuItem drop = new DropDownMenuItem(); // Adding DropDownMenuItem to DropDownMenuGroup DropDownMenuGroup dgrp = new DropDownMenuGroup();dgrp.Items.Add(drop);</td></tr>
@@ -97,7 +97,7 @@ You will have to use the following code to add a DropDownMenuItem to the DropDow
 <table>
 <tr>
 <td>
-[XAML] &lt;!-- Adding DropDownMenuItem --&gt;  &lt;sync:DropDownMenuGroup Width="150"&gt;            &lt;sync:DropDownMenuItem Header="Items"&gt;            &lt;sync:DropDownMenuItem Header="Item 1"&gt;&lt;/sync:DropDownMenuItem&gt;            &lt;sync:DropDownMenuItem Header="Item 2"&gt;&lt;/sync:DropDownMenuItem&gt;            &lt;sync:DropDownMenuItem Header="Item 3"&gt;&lt;/sync:DropDownMenuItem&gt;            &lt;sync:DropDownMenuItem Header="Item 4"&gt;&lt;/sync:DropDownMenuItem&gt;            &lt;/sync:DropDownMenuItem&gt;  &lt;/sync:DropDownMenuGroup&gt;</td></tr>
+[XAML] <!-- Adding DropDownMenuItem -->  <sync:DropDownMenuGroup Width="150">            <sync:DropDownMenuItem Header="Items">            <sync:DropDownMenuItem Header="Item 1"></sync:DropDownMenuItem>            <sync:DropDownMenuItem Header="Item 2"></sync:DropDownMenuItem>            <sync:DropDownMenuItem Header="Item 3"></sync:DropDownMenuItem>            <sync:DropDownMenuItem Header="Item 4"></sync:DropDownMenuItem>            </sync:DropDownMenuItem>  </sync:DropDownMenuGroup></td></tr>
 <tr>
 <td>
 [C#]// Creating an instance of DropDownMenuItemDropDownMenuItem drop = new DropDownMenuItem();// Adding DropDownMenuItem inside DropDownMenuItemdrop.Items.Add(new DropDownMenuItem());drop.Items.Add(new DropDownMenuItem());drop.Items.Add(new DropDownMenuItem());drop.Items.Add(new DropDownMenuItem());// Adding DropDownMenuItem inside DropDownMenuGroupDropDownMenuGroup dgrp = new DropDownMenuGroup();dgrp.Items.Add(drop);</td></tr>
@@ -113,7 +113,7 @@ In order to add the DropDownMenuGroup to the DropDownButtonAdv control, use the 
 <table>
 <tr>
 <td>
-[XAML] &lt;!-- Adding DropDownMenuGroup in DropDownButtonAdv --&gt;   &lt;sync:DropDownButtonAdv Label="ItemsCollection" Width="150"    IsMultiLine="True"&gt;            &lt;sync:DropDownMenuGroup Width="150"&gt;            &lt;sync:DropDownMenuItem Header="Items"&gt;            &lt;sync:DropDownMenuItem Header="Item 1"&gt;&lt;/sync:DropDownMenuItem&gt;            &lt;sync:DropDownMenuItem Header="Item 2"&gt;&lt;/sync:DropDownMenuItem&gt;            &lt;sync:DropDownMenuItem Header="Item 3"&gt;&lt;/sync:DropDownMenuItem&gt;            &lt;sync:DropDownMenuItem Header="Item 4"&gt;&lt;/sync:DropDownMenuItem&gt;            &lt;/sync:DropDownMenuItem&gt;            &lt;/sync:DropDownMenuGroup&gt;   &lt;/sync:DropDownButtonAdv&gt;</td></tr>
+[XAML] <!-- Adding DropDownMenuGroup in DropDownButtonAdv -->   <sync:DropDownButtonAdv Label="ItemsCollection" Width="150"    IsMultiLine="True">            <sync:DropDownMenuGroup Width="150">            <sync:DropDownMenuItem Header="Items">            <sync:DropDownMenuItem Header="Item 1"></sync:DropDownMenuItem>            <sync:DropDownMenuItem Header="Item 2"></sync:DropDownMenuItem>            <sync:DropDownMenuItem Header="Item 3"></sync:DropDownMenuItem>            <sync:DropDownMenuItem Header="Item 4"></sync:DropDownMenuItem>            </sync:DropDownMenuItem>            </sync:DropDownMenuGroup>   </sync:DropDownButtonAdv></td></tr>
 <tr>
 <td>
 [C#]// Creating an instance of DropDownMenuItemDropDownMenuItem drop = new DropDownMenuItem();// Adding DropDownMenuItem inside DropDownMenuItemdrop.Items.Add(new DropDownMenuItem());drop.Items.Add(new DropDownMenuItem());drop.Items.Add(new DropDownMenuItem());drop.Items.Add(new DropDownMenuItem());// Adding DropDownMenuItem inside DropDownMenuGroupDropDownMenuGroup dgrp = new DropDownMenuGroup();dgrp.Items.Add(drop);// Adding DropDownGroup inside DropDownButtonAdvDropDownButtonAdv dbtn = new DropDownButtonAdv();dbtn.Content = dbtn;</td></tr>
@@ -161,27 +161,27 @@ This is the code that you will need to use in order to create a DropDownMenuItem
 
 [XAML]
 
- &lt;!-- Adding DropDirection Proerty in DropDownButtonAdv --&gt;
+ <!-- Adding DropDirection Proerty in DropDownButtonAdv -->
 
-   &lt;sync:DropDownButtonAdv Label="ItemsCollection" Width="150" DropDirection="Right"&gt;
+   <sync:DropDownButtonAdv Label="ItemsCollection" Width="150" DropDirection="Right">
 
-            &lt;sync:DropDownMenuGroup Width="150"&gt;
+            <sync:DropDownMenuGroup Width="150">
 
-            &lt;sync:DropDownMenuItem Header="Items"&gt;
+            <sync:DropDownMenuItem Header="Items">
 
-            &lt;sync:DropDownMenuItem Header="Item 1"&gt;&lt;/sync:DropDownMenuItem&gt;
+            <sync:DropDownMenuItem Header="Item 1"></sync:DropDownMenuItem>
 
-            &lt;sync:DropDownMenuItem Header="Item 2"&gt;&lt;/sync:DropDownMenuItem&gt;
+            <sync:DropDownMenuItem Header="Item 2"></sync:DropDownMenuItem>
 
-            &lt;sync:DropDownMenuItem Header="Item 3"&gt;&lt;/sync:DropDownMenuItem&gt;
+            <sync:DropDownMenuItem Header="Item 3"></sync:DropDownMenuItem>
 
-            &lt;sync:DropDownMenuItem Header="Item 4"&gt;&lt;/sync:DropDownMenuItem&gt;
+            <sync:DropDownMenuItem Header="Item 4"></sync:DropDownMenuItem>
 
-            &lt;/sync:DropDownMenuItem&gt;
+            </sync:DropDownMenuItem>
 
-            &lt;/sync:DropDownMenuGroup&gt;
+            </sync:DropDownMenuGroup>
 
-   &lt;/sync:DropDownButtonAdv&gt;
+   </sync:DropDownButtonAdv>
 
 
 
@@ -195,27 +195,27 @@ Here is the code that you will use in order to keep the dropdown menu open. It u
 
 [XAML]
 
- &lt;!-- Adding IsDropDown Proerty in DropDownButtonAdv --&gt;
+ <!-- Adding IsDropDown Proerty in DropDownButtonAdv -->
 
-   &lt;sync:DropDownButtonAdv Label="ItemsCollection" Width="150" IsDropDownOpen="True"&gt;
+   <sync:DropDownButtonAdv Label="ItemsCollection" Width="150" IsDropDownOpen="True">
 
-            &lt;sync:DropDownMenuGroup Width="150"&gt;
+            <sync:DropDownMenuGroup Width="150">
 
-            &lt;sync:DropDownMenuItem Header="Items"&gt;
+            <sync:DropDownMenuItem Header="Items">
 
-            &lt;sync:DropDownMenuItem Header="Item 1"&gt;&lt;/sync:DropDownMenuItem&gt;
+            <sync:DropDownMenuItem Header="Item 1"></sync:DropDownMenuItem>
 
-            &lt;sync:DropDownMenuItem Header="Item 2"&gt;&lt;/sync:DropDownMenuItem&gt;
+            <sync:DropDownMenuItem Header="Item 2"></sync:DropDownMenuItem>
 
-            &lt;sync:DropDownMenuItem Header="Item 3"&gt;&lt;/sync:DropDownMenuItem&gt;
+            <sync:DropDownMenuItem Header="Item 3"></sync:DropDownMenuItem>
 
-            &lt;sync:DropDownMenuItem Header="Item 4"&gt;&lt;/sync:DropDownMenuItem&gt;
+            <sync:DropDownMenuItem Header="Item 4"></sync:DropDownMenuItem>
 
-            &lt;/sync:DropDownMenuItem&gt;
+            </sync:DropDownMenuItem>
 
-            &lt;/sync:DropDownMenuGroup&gt;
+            </sync:DropDownMenuGroup>
 
-  &lt;/sync:DropDownButtonAdv&gt;
+  </sync:DropDownButtonAdv>
 
 
 
@@ -236,14 +236,14 @@ Split Button in the Ribbon instance enables to display a menu when the split but
 <table>
 <tr>
 <td>
-[XAML]&lt;ribbon:SplitButton Label=" Split1 " Command="sample:SampleCommands.CustomCommand" SizeForm="Small"  HitTestArea="ImageOnly"   SmallIcon="SampleImages/TextHighlight.png" /&gt;&lt;ribbon:SplitButton Label=" Split2 " Command="sample:SampleCommands.CustomCommand" SizeForm="Small" SmallIcon="SampleImages/TextHighlight.png" /&gt;</td></tr>
+[XAML]<ribbon:SplitButton Label=" Split1 " Command="sample:SampleCommands.CustomCommand" SizeForm="Small"  HitTestArea="ImageOnly"   SmallIcon="SampleImages/TextHighlight.png" /><ribbon:SplitButton Label=" Split2 " Command="sample:SampleCommands.CustomCommand" SizeForm="Small" SmallIcon="SampleImages/TextHighlight.png" /></td></tr>
 <tr>
 <td>
 [C#]SplitButton splitbutton = new SplitButton();splitbutton.Label = "Split 1";SplitButton splitbutton 1= new SplitButton();splitbutton1.Label = "Split 2";</td></tr>
 </table>
 
 
-{ ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img3.jpeg) | markdownify }
+{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -263,29 +263,29 @@ SplitMenuButton is similar to MenuButton. It is used to perform multiple operati
 
 
 
-&lt;ribbon:SplitMenuButton Label="Save As" Icon="/SampleImages/SaveAs32.png"&gt;
+<ribbon:SplitMenuButton Label="Save As" Icon="/SampleImages/SaveAs32.png">
 
-&lt;ribbon:ApplicationMenuGroup Header="Header1" IconBarEnabled="True"&gt;
+<ribbon:ApplicationMenuGroup Header="Header1" IconBarEnabled="True">
 
 <ribbon:RibbonButton SizeForm = "Small" Label="Item1"
 
 SmallIcon="SampleImages/Document32.png"/>
 
-&lt;ribbon:RibbonButton SizeForm = "Small" Label="Item3" SmallIcon="SampleImages/Save32.png"/&gt;
+<ribbon:RibbonButton SizeForm = "Small" Label="Item3" SmallIcon="SampleImages/Save32.png"/>
 
-&lt;ribbon:RibbonButton SizeForm = "Small" Label="Item4" SmallIcon="SampleImages/Close32.png"/&gt;
+<ribbon:RibbonButton SizeForm = "Small" Label="Item4" SmallIcon="SampleImages/Close32.png"/>
 
-&lt;ribbon:RibbonButton SizeForm = "Small" Label="Item5"	 SmallIcon="SampleImages/Print32.png"/&gt;
+<ribbon:RibbonButton SizeForm = "Small" Label="Item5"	 SmallIcon="SampleImages/Print32.png"/>
 
-&lt;ribbon:RibbonButton SizeForm = "Small" Label="Item6" SmallIcon="SampleImages/Open32.png"/&gt;
+<ribbon:RibbonButton SizeForm = "Small" Label="Item6" SmallIcon="SampleImages/Open32.png"/>
 
-&lt;/ribbon:ApplicationMenuGroup&gt;
+</ribbon:ApplicationMenuGroup>
 
-&lt;/ribbon:SplitMenuButton&gt;
+</ribbon:SplitMenuButton>
 
 
 
-{ ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img4.jpeg) | markdownify }
+{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -301,11 +301,11 @@ The difference between the other menu button and SimpleMenuButton is that it can
 
 
 
-&lt;ribbon:SimpleMenuButton Label="New" Icon="/SampleImages/Document32.png"/&gt;
+<ribbon:SimpleMenuButton Label="New" Icon="/SampleImages/Document32.png"/>
 
 
 
-{ ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img5.jpeg) | markdownify }
+{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -320,14 +320,14 @@ RibbonMenuItems are used as entities in menus like ApplicationMenu, Split Button
 <table>
 <tr>
 <td>
-[XAML]&lt;ribbon:RibbonMenuItem  Header="Paste" IsCheckable="True" Command="ApplicationCommands.Paste"&gt;&lt;ribbon:RibbonMenuItem.Icon&gt;&lt;Image Source="SampleImages/Paste16.png"/&gt;&lt;/ribbon:RibbonMenuItem.Icon&gt;&lt;/ribbon:RibbonMenuItem&gt;</td></tr>
+[XAML]<ribbon:RibbonMenuItem  Header="Paste" IsCheckable="True" Command="ApplicationCommands.Paste"><ribbon:RibbonMenuItem.Icon><Image Source="SampleImages/Paste16.png"/></ribbon:RibbonMenuItem.Icon></ribbon:RibbonMenuItem></td></tr>
 <tr>
 <td>
 [C#]RibbonMenuItem menuitem = new RibbonMenuItem();menuitem.Header = "Paste";menuitem.Icon = new BitmapImage(new Uri("/Images/Paste16.Png", UriKind.Relative));</td></tr>
 </table>
 
 
-{ ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img6.jpeg) | markdownify }
+{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -342,14 +342,14 @@ RibbonTextBox control is similar to a normal text box. RibbonTextBox has all the
 <table>
 <tr>
 <td>
-[XAML]&lt;ribbon:RibbonTextBox&gt; Ribbon Text Box &lt;/ribbon:RibbonTextBox&gt;</td></tr>
+[XAML]<ribbon:RibbonTextBox> Ribbon Text Box </ribbon:RibbonTextBox></td></tr>
 <tr>
 <td>
 [C#]RibbonTextBox textbox = new RibbonTextBox();textbox.Text = "Ribbon textbox";</td></tr>
 </table>
 
 
-{ ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img7.jpeg) | markdownify }
+{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -364,14 +364,14 @@ RibbonComboBox control is used to display the list of items, as drop-down menu i
 <table>
 <tr>
 <td>
-[XAML]&lt;ribbon:RibbonComboBox Width="100" IsEditable="True" &gt;<ComboBoxItem>Arial</ComboBoxItem><ComboBoxItem>Tahoma</ComboBoxItem><ComboBoxItem>Verdana</ComboBoxItem>&lt;/ribbon:RibbonComboBox&gt;</td></tr>
+[XAML]<ribbon:RibbonComboBox Width="100" IsEditable="True" ><ComboBoxItem>Arial</ComboBoxItem><ComboBoxItem>Tahoma</ComboBoxItem><ComboBoxItem>Verdana</ComboBoxItem></ribbon:RibbonComboBox></td></tr>
 <tr>
 <td>
 [C#]RibbonComboBox combo = new RibbonComboBox();ComboBoxItem item1 = new ComboBoxItem();item1.Content = "Arial";combo.Items.Add(item1);ComboBoxItem item2 = new ComboBoxItem();item2.Content = "Tahoma";combo.Items.Add(item2);ComboBoxItem item3 = new ComboBoxItem();item3.Content = "Verdana";combo.Items.Add(item3);</td></tr>
 </table>
 
 
-{ ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img8.jpeg) | markdownify }
+{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -386,14 +386,14 @@ RibbonCheckBox control is similar to a normal check box control. It is used to s
 <table>
 <tr>
 <td>
-[XAML]&lt;ribbon:RibbonCheckBox Content="Check box" &gt;&lt;/ribbon:RibbonCheckBox&gt;</td></tr>
+[XAML]<ribbon:RibbonCheckBox Content="Check box" ></ribbon:RibbonCheckBox></td></tr>
 <tr>
 <td>
 [C#]RibbonCheckBox checkbox = new RibbonCheckBox();checkbox.Content = "Check box";</td></tr>
 </table>
 
 
-{ ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img9.jpeg) | markdownify }
+{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -408,14 +408,14 @@ RibbonRadioButton control is used to select options among a group. RibbonRadioBu
 <table>
 <tr>
 <td>
-[XAML]&lt;ribbon:RibbonRadioButton Content="Radio button 1" &gt;&lt;/ribbon:RibbonRadioButton&gt;</td></tr>
+[XAML]<ribbon:RibbonRadioButton Content="Radio button 1" ></ribbon:RibbonRadioButton></td></tr>
 <tr>
 <td>
 [C#]RibbonRadioButton radiobutton = new RibbonRadioButton();radiobutton.Content = "Radio Button 1";</td></tr>
 </table>
 
 
-{ ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img10.jpeg) | markdownify }
+{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -432,14 +432,14 @@ To add this control is to the application, use the following code snippet.
 <table>
 <tr>
 <td>
-[XAML]&lt;ribbon:RibbonListBox Width="128" Height="36"&gt;&lt;ComboBoxItem&gt;&lt;StackPanel Orientation="Horizontal"&gt;&lt;Image Source="SampleImages/SchemeBlue.png"/&gt;&lt;Image Source="SampleImages/SchemeSilver.png"/&gt;&lt;Image Source="SampleImages/SchemeBlack.png"/&gt;&lt;/StackPanel&gt;&lt;/ComboBoxItem&gt;&lt;/ribbon:RibbonListBox&gt;</td></tr>
+[XAML]<ribbon:RibbonListBox Width="128" Height="36"><ComboBoxItem><StackPanel Orientation="Horizontal"><Image Source="SampleImages/SchemeBlue.png"/><Image Source="SampleImages/SchemeSilver.png"/><Image Source="SampleImages/SchemeBlack.png"/></StackPanel></ComboBoxItem></ribbon:RibbonListBox></td></tr>
 <tr>
 <td>
 [C#]RibbonListBox listbox = new RibbonListBox();ComboBoxItem item = new ComboBoxItem();item.Content = "Item1";listbox.Items.Add(item);</td></tr>
 </table>
 
 
-{ ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img11.jpeg) | markdownify }
+{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -455,19 +455,19 @@ RibbonStatusBar control is added to a RibbonWindow to display the current status
 
 
 
-&lt;ribbon:RibbonWindow.StatusBar&gt;
+<ribbon:RibbonWindow.StatusBar>
 
-&lt;ribbon:RibbonStatusBar&gt;
+<ribbon:RibbonStatusBar>
 
 <TextBlock VerticalAlignment="Center" Margin="7,3,0,0" Foreground="{Binding 					Path=Foreground, Mode=OneWay, RelativeSource={RelativeSource FindAncestor, 					AncestorType={x:Type ribbon:RibbonStatusBar}}}">Ready</TextBlock>
 
-&lt;/ribbon:RibbonStatusBar&gt;
+</ribbon:RibbonStatusBar>
 
-&lt;/ribbon:RibbonWindow.StatusBar&gt;
+</ribbon:RibbonWindow.StatusBar>
 
 
 
-{ ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img12.png) | markdownify }
+{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -483,7 +483,7 @@ The _TabPanelItem_ is located at the right corner below the main window close bu
 
 
 
-{ ![D:/Documentation/TabPanelItemZoom.png](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img13.png) | markdownify }
+{{ '![D:/Documentation/TabPanelItemZoom.png](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -497,11 +497,11 @@ This following code snippet explains how to create and configure _TabPanelItem_.
 
 XAML
 
-&lt;syncfusion:Ribbon.TabPanelItem&gt;
+<syncfusion:Ribbon.TabPanelItem>
 
-&lt;syncfusion:RibbonButton SizeForm="ExtraSmall" SmallIcon="help16.png" /&gt;
+<syncfusion:RibbonButton SizeForm="ExtraSmall" SmallIcon="help16.png" />
 
-&lt;/syncfusion:Ribbon.TabPanelItem&gt;
+</syncfusion:Ribbon.TabPanelItem>
 
 
 

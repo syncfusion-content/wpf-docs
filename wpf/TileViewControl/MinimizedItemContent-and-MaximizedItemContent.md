@@ -27,7 +27,7 @@ The following code example illustrates how to add the MinimizedItemContent and M
 
 
 
-&lt;syncfusion:TileViewControl x:Name="TileView1" Background="White"&gt;
+<syncfusion:TileViewControl x:Name="TileView1" Background="White">
 
      <syncfusion:TileViewItem BorderThickness="2" Header="TileViewItem 1" 
 
@@ -77,13 +77,13 @@ The following code example illustrates how to add the MinimizedItemContent and M
 
           CornerRadius="3"/>
 
-&lt;/syncfusion:TileViewControl&gt;
+</syncfusion:TileViewControl>
 
 
 
 
 
-{ ![](MinimizedItemContent-and-MaximizedItemContent_images/MinimizedItemContent-and-MaximizedItemContent_img1.png) | markdownify }
+{{ '![](MinimizedItemContent-and-MaximizedItemContent_images/MinimizedItemContent-and-MaximizedItemContent_img1.png)' | markdownify }}
 {:.image }
 
 

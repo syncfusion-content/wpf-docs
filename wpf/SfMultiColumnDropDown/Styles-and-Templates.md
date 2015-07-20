@@ -22,13 +22,13 @@ This section explains you how to edit the SfMultiColumnDropDownControl structure
 
 
 
-{ ![A:/Dcumentationimages/sfmulticolumnimage/blendtemplatenew.png](Styles-and-Templates_images/Styles-and-Templates_img1.png) | markdownify }
+{{ '![A:/Dcumentationimages/sfmulticolumnimage/blendtemplatenew.png](Styles-and-Templates_images/Styles-and-Templates_img1.png)' | markdownify }}
 {:.image }
 
 
 3. Go to the Menu bar and Choose Object > EditStyle.
 
-{ ![A:/Dcumentationimages/sfmulticolumnimage/objectwindow.png](Styles-and-Templates_images/Styles-and-Templates_img2.png) | markdownify }
+{{ '![A:/Dcumentationimages/sfmulticolumnimage/objectwindow.png](Styles-and-Templates_images/Styles-and-Templates_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -37,7 +37,7 @@ This section explains you how to edit the SfMultiColumnDropDownControl structure
 
 
 
-{ ![A:/Dcumentationimages/sfmulticolumnimage/editcopy.png](Styles-and-Templates_images/Styles-and-Templates_img3.png) | markdownify }
+{{ '![A:/Dcumentationimages/sfmulticolumnimage/editcopy.png](Styles-and-Templates_images/Styles-and-Templates_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -58,14 +58,14 @@ This section explain you how to edit a SfMultiColumnDropDownControl style in Vis
 
 
 
-{ ![C:/Users/apoorvah.ramanathan/Desktop/1.png](Styles-and-Templates_images/Styles-and-Templates_img4.png) | markdownify }
+{{ '![C:/Users/apoorvah.ramanathan/Desktop/1.png](Styles-and-Templates_images/Styles-and-Templates_img4.png)' | markdownify }}
 {:.image }
 
 
 3. Click Edit Template, you have two options in sub menu bar.
 1. Edit a Copy –Edit a copy of the default style, when you select this option, a new dialog window opens as follows.
 
-{ ![C:/Users/apoorvah.ramanathan/Desktop/1.png](Styles-and-Templates_images/Styles-and-Templates_img5.png) | markdownify }
+{{ '![C:/Users/apoorvah.ramanathan/Desktop/1.png](Styles-and-Templates_images/Styles-and-Templates_img5.png)' | markdownify }}
 {:.image }
 
 

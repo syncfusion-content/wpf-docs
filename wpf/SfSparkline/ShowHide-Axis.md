@@ -13,13 +13,13 @@ Following code used to enable the axis and this feature applicable for all the s
 
 [XAML]
 
-&lt;Syncfusion:SfLineSparkline ShowAxis="True" ItemsSource="{Binding UsersList}"                     YBindingPath="NoOfUsers" &gt;
+<Syncfusion:SfLineSparkline ShowAxis="True" ItemsSource="{Binding UsersList}"                     YBindingPath="NoOfUsers" >
 
-&lt;/Syncfusion:SfLineSparkline&gt;
+</Syncfusion:SfLineSparkline>
 
 Following is the snapshot for axis visibility,
 
-{ ![C:/Users/ApoorvahR/Desktop/11.png](ShowHide-Axis_images/ShowHide-Axis_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/11.png](ShowHide-Axis_images/ShowHide-Axis_img1.png)' | markdownify }}
 {:.image }
 
 

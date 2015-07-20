@@ -41,7 +41,7 @@ If this property is set to true, then when you enter a value less than the MinVa
 
 If this property is set to true, then when you enter a value greater than the MaxValue then it will automatically assign the MaxValue to the Value property. Otherwise it will not allow the key press.
 
-> { ![C:/Users/ApoorvahR/Desktop/Note.png](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img1.png) | markdownify }
+> {{ '![C:/Users/ApoorvahR/Desktop/Note.png](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img1.png)' | markdownify }}
 {:.image }
 _Note: This will be enabled only when the MaxValidation is set to OnKeyPress._
 
@@ -61,7 +61,7 @@ Initially there is no value assigned to the CurrencyTextBox. So it displays the 
 
 
 
-{ ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img2.png) | markdownify }
+{{ '![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -69,7 +69,7 @@ MaxValidation is set to OnLostFocus, so the MaxValidation will be performed only
 
 
 
-{ ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img3.png) | markdownify }
+{{ '![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -77,7 +77,7 @@ MinValidation is set to OnKeyPress, so you cannot enter a value less than the Mi
 
 
 
-{ ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img4.png) | markdownify }
+{{ '![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img4.png)' | markdownify }}
 {:.image }
 
 

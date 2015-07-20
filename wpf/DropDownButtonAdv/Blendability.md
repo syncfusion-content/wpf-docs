@@ -18,7 +18,7 @@ To modify the button control:
 
 
 
-{ ![C:/Users/Jawahar/Desktop/sshot-4.png](Blendability_images/Blendability_img1.png) | markdownify }
+{{ '![C:/Users/Jawahar/Desktop/sshot-4.png](Blendability_images/Blendability_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -28,7 +28,7 @@ To modify the button control:
 
 
 
-{ ![C:/Users/Jawahar/Desktop/sshot-5.png](Blendability_images/Blendability_img2.png) | markdownify }
+{{ '![C:/Users/Jawahar/Desktop/sshot-5.png](Blendability_images/Blendability_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -38,13 +38,13 @@ To modify the button control:
 
 
 
-{ ![](Blendability_images/Blendability_img3.png) | markdownify }
+{{ '![](Blendability_images/Blendability_img3.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Blendability_images/Blendability_img4.png) | markdownify }
+{{ '![](Blendability_images/Blendability_img4.png)' | markdownify }}
 {:.image }
 
 

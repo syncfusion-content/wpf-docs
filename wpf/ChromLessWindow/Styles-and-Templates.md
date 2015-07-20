@@ -33,7 +33,7 @@ Title="ChromelessWindowTestSample" Height="300" Width="300"
 
 TitleBarTemplate="{StaticResource TemplateKey}">
 
-&lt;/shared:ChromelessWindow&gt;
+</shared:ChromelessWindow>
 
 
 
@@ -43,27 +43,27 @@ For example, use the following code for a TitleBarTemplate.
 
 
 
-&lt;ControlTemplate x:Key="TemplateKey" TargetType="{x:Type shared:TitleBar}"&gt;
+<ControlTemplate x:Key="TemplateKey" TargetType="{x:Type shared:TitleBar}">
 
-    &lt;Border Name="border" Height="30" CornerRadius="5,5,0,0" Background="Red"&gt;
+    <Border Name="border" Height="30" CornerRadius="5,5,0,0" Background="Red">
 
-        &lt;Border BorderBrush="#4A4A4A" Background="Transparent" BorderThickness="0,0,0,1" Width="Auto" CornerRadius="5,5,0,0"&gt;
+        <Border BorderBrush="#4A4A4A" Background="Transparent" BorderThickness="0,0,0,1" Width="Auto" CornerRadius="5,5,0,0">
 
-        &lt;/Border&gt;
+        </Border>
 
-    &lt;/Border&gt;
+    </Border>
 
-&lt;/ControlTemplate&gt;
+</ControlTemplate>
 
 
 
-{ ![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg) | markdownify }
+{{ '![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg) | markdownify }
+{{ '![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -89,7 +89,7 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  MinimizeButtonTemp
 
 
 
-&lt;/ shared:ChromelessWindow&gt;
+</ shared:ChromelessWindow>
 
 
 
@@ -99,19 +99,19 @@ For example, use the following code for a MinimizeButtonTemplate.
 
 
 
-&lt;!--Sample code for the Control Template--&gt;
+<!--Sample code for the Control Template-->
 
-&lt;ControlTemplate x:Key="MinTemplateKey" TargetType="{x:Type shared:TitleButton}"&gt;
+<ControlTemplate x:Key="MinTemplateKey" TargetType="{x:Type shared:TitleButton}">
 
-    &lt;Border Name="border"  Height="30"  Width="30"  CornerRadius="5,5,0,0"  Background="Red"&gt;
+    <Border Name="border"  Height="30"  Width="30"  CornerRadius="5,5,0,0"  Background="Red">
 
-        &lt;Border BorderBrush="#4A4A4A" Background="Transparent" BorderThickness="0,0,0,1" 	Width="Auto" CornerRadius="5,5,0,0"&gt;
+        <Border BorderBrush="#4A4A4A" Background="Transparent" BorderThickness="0,0,0,1" 	Width="Auto" CornerRadius="5,5,0,0">
 
-        &lt;/Border&gt;
+        </Border>
 
-    &lt;/Border&gt;
+    </Border>
 
-&lt;/ControlTemplate&gt;
+</ControlTemplate>
 
 
 
@@ -137,7 +137,7 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  MaximizeButtonTemp
 
 
 
-&lt;/ shared:ChromelessWindow&gt;
+</ shared:ChromelessWindow>
 
 
 
@@ -147,19 +147,19 @@ For example, use the following code for a MaximizeButtonTemplate.
 
 
 
-&lt;!--Sample code for the Control Template--&gt;
+<!--Sample code for the Control Template-->
 
-&lt;ControlTemplate x:Key="MaxTemplateKey" TargetType="{x:Type shared:TitleButton}"&gt;
+<ControlTemplate x:Key="MaxTemplateKey" TargetType="{x:Type shared:TitleButton}">
 
-    &lt;Border Name="border"  Height="30"  Width="30"  CornerRadius="5,5,0,0"  Background="Red"&gt;
+    <Border Name="border"  Height="30"  Width="30"  CornerRadius="5,5,0,0"  Background="Red">
 
-        &lt;Border BorderBrush="#4A4A4A" Background="Transparent" BorderThickness="0,0,0,1" 	Width="Auto" CornerRadius="5,5,0,0"&gt;
+        <Border BorderBrush="#4A4A4A" Background="Transparent" BorderThickness="0,0,0,1" 	Width="Auto" CornerRadius="5,5,0,0">
 
-        &lt;/Border&gt;
+        </Border>
 
-    &lt;/Border&gt;
+    </Border>
 
-&lt;/ControlTemplate&gt;
+</ControlTemplate>
 
 
 
@@ -183,7 +183,7 @@ xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared
 
 Title="ChromelessWindowTestSample"  Height="300" Width="300"  RestoreButtonTemplate="{StaticResource  ResTemplateKey}">
 
-&lt;/ shared:ChromelessWindow&gt;
+</ shared:ChromelessWindow>
 
 
 
@@ -193,19 +193,19 @@ For example, use the following code for a RestoreButtonTemplate.
 
 
 
-&lt;!--Sample code for the Control Template--&gt;
+<!--Sample code for the Control Template-->
 
-&lt;ControlTemplate x:Key="ResTemplateKey" TargetType="{x:Type shared:TitleButton}"&gt;
+<ControlTemplate x:Key="ResTemplateKey" TargetType="{x:Type shared:TitleButton}">
 
-    &lt;Border Name="border"  Height="30"  Width="30"  CornerRadius="5,5,0,0"  Background="Red"&gt;
+    <Border Name="border"  Height="30"  Width="30"  CornerRadius="5,5,0,0"  Background="Red">
 
-        &lt;Border BorderBrush="#4A4A4A" Background="Transparent" BorderThickness="0,0,0,1" Width="Auto" CornerRadius="5,5,0,0"&gt;
+        <Border BorderBrush="#4A4A4A" Background="Transparent" BorderThickness="0,0,0,1" Width="Auto" CornerRadius="5,5,0,0">
 
-        &lt;/Border&gt;
+        </Border>
 
-    &lt;/Border&gt;
+    </Border>
 
-&lt;/ControlTemplate&gt;
+</ControlTemplate>
 
 
 
@@ -229,7 +229,7 @@ xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared
 
 Title="ChromelessWindowTestSample"  Height="300" Width="300"  CloseButtonTemplate="{StaticResource  CloseTemplateKey}">
 
-&lt;/ shared:ChromelessWindow&gt;
+</ shared:ChromelessWindow>
 
 
 
@@ -239,19 +239,19 @@ For example, use the following code for a CloseButtonTemplate.
 
 
 
-&lt;!--Sample code for the Control Template--&gt;
+<!--Sample code for the Control Template-->
 
-&lt;ControlTemplate x:Key="CloseTemplateKey" TargetType="{x:Type shared:TitleButton}"&gt;
+<ControlTemplate x:Key="CloseTemplateKey" TargetType="{x:Type shared:TitleButton}">
 
-    &lt;Border Name="border"  Height="30"  Width="30"  CornerRadius="5,5,0,0"  Background="Red"&gt;
+    <Border Name="border"  Height="30"  Width="30"  CornerRadius="5,5,0,0"  Background="Red">
 
-        &lt;Border BorderBrush="#4A4A4A" Background="Transparent" BorderThickness="0,0,0,1" 	Width="Auto" CornerRadius="5,5,0,0"&gt;
+        <Border BorderBrush="#4A4A4A" Background="Transparent" BorderThickness="0,0,0,1" 	Width="Auto" CornerRadius="5,5,0,0">
 
-        &lt;/Border&gt;
+        </Border>
 
-    &lt;/Border&gt;
+    </Border>
 
-&lt;/ControlTemplate&gt;
+</ControlTemplate>
 
 
 

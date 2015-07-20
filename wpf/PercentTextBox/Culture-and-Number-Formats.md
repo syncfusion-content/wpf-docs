@@ -23,7 +23,7 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 1
 </table>
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -37,7 +37,7 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 1
 </table>
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -50,7 +50,7 @@ You can customize the Number Format either by using the Number Format property o
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"             PercentValue="1234567">    &lt;syncfusion:PercentTextBox.NumberFormat&gt;        <numberformat:NumberFormatInfo PercentGroupSeparator="/"        PercentDecimalDigits="4" PercentDecimalSeparator="*"         PercentSymbol="%"/>    &lt;/syncfusion:PercentTextBox.NumberFormat&gt;&lt;/syncfusion:PercentTextBox&gt;</td></tr>
+XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"             PercentValue="1234567">    <syncfusion:PercentTextBox.NumberFormat>        <numberformat:NumberFormatInfo PercentGroupSeparator="/"        PercentDecimalDigits="4" PercentDecimalSeparator="*"         PercentSymbol="%"/>    </syncfusion:PercentTextBox.NumberFormat></syncfusion:PercentTextBox></td></tr>
 <tr>
 <td>
 C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.NumberFormat = new NumberFormatInfo(){    PercentGroupSeparator = "/",    PercentDecimalDigits = 4,    PercentDecimalSeparator = "*",    PercentSymbol = "%"};</td></tr>
@@ -67,7 +67,7 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 1
 </table>
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -111,7 +111,7 @@ XAML
 
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -187,7 +187,7 @@ XAML
 
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)' | markdownify }}
 {:.image }
 
 

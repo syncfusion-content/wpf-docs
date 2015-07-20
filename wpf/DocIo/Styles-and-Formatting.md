@@ -638,7 +638,7 @@ WParagraphStyle class represents paragraph style in DocIO. Paragraph Style is a
 
 
 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img1.png) | markdownify }
+{{ '![](Styles-and-Formatting_images/Styles-and-Formatting_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -900,7 +900,7 @@ WParagraphFormat class represents paragraph formatting in Essential DocIO. The 
 
 
 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img2.png) | markdownify }
+{{ '![](Styles-and-Formatting_images/Styles-and-Formatting_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -1241,7 +1241,7 @@ You can specify the type of the list style by using the ListType property. Eve
 
 The following screenshot demonstrates how to create list styles by using Microsoft Word.
 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img3.png) | markdownify }
+{{ '![](Styles-and-Formatting_images/Styles-and-Formatting_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -2069,7 +2069,7 @@ section.AddParagraph()
 
 Text Box control is a container that provides support to insert text, images, and so on. DocIO supports text box and its methods. The WTextBoxFormat class specifies formatting for the Text Box.
 
-{ ![](Styles-and-Formatting_images/Styles-and-Formatting_img4.png) | markdownify }
+{{ '![](Styles-and-Formatting_images/Styles-and-Formatting_img4.png)' | markdownify }}
 {:.image }
 
 

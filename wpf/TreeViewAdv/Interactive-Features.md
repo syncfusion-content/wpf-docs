@@ -23,17 +23,17 @@ The TreeviewItem is added to a TreeViewAdv control either by using XAML or Proce
 
 
 
-&lt;!-- Adding TreeViewAdv --&gt;
+<!-- Adding TreeViewAdv -->
 
-&lt;syncfusion:TreeViewAdv Name="treeView1"&gt;
+<syncfusion:TreeViewAdv Name="treeView1">
 
 
 
-    &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewItemAdv -->
 
-    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Marital Status"/>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -81,39 +81,39 @@ The following code example can be used to set this property.
 
 
 
-&lt;!-- Adding TreeViewAdv with multiselection of items  --&gt;
+<!-- Adding TreeViewAdv with multiselection of items  -->
 
-&lt;syncfusion:TreeViewAdv AllowMultiSelect="True" Name="treeViewAdv"&gt;
+<syncfusion:TreeViewAdv AllowMultiSelect="True" Name="treeViewAdv">
 
 
 
-    &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewItemAdv -->
 
-    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+    <syncfusion:TreeViewItemAdv Header="Marital Status">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Single"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+    <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Country Information"/>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -129,7 +129,7 @@ treeViewAdv.AllowMultiSelect = true;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img1.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -147,17 +147,17 @@ Here are the code snippets to select multiple items in the TreeViewAdv control u
 
 
 
-&lt;syncfusion:TreeViewAdv x:Name="treeView" AllowMultiSelect="True"&gt;          
+<syncfusion:TreeViewAdv x:Name="treeView" AllowMultiSelect="True">          
 
-    &lt;syncfusion:TreeViewItemAdv Header="item1"/&gt;      
+    <syncfusion:TreeViewItemAdv Header="item1"/>      
 
-    &lt;syncfusion:TreeViewItemAdv Header="item2"/&gt; 
+    <syncfusion:TreeViewItemAdv Header="item2"/> 
 
-    &lt;syncfusion:TreeViewItemAdv Header="item3"/&gt;    
+    <syncfusion:TreeViewItemAdv Header="item3"/>    
 
-    &lt;syncfusion:TreeViewItemAdv Header="item4"/&gt;
+    <syncfusion:TreeViewItemAdv Header="item4"/>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -201,45 +201,45 @@ The following code snippet sets a collection used to generate the content of the
 
     Title="Window1" Height="300" Width="300">
 
-  &lt;Window.Resources&gt;
+  <Window.Resources>
 
 
 
-    &lt;!--Custom object which is defined in the code behind can be accessed through the key logic in XAML--&gt;
+    <!--Custom object which is defined in the code behind can be accessed through the key logic in XAML-->
 
-    &lt;local:CountryStatistics x:Key="myHierSalesList"/&gt;
+    <local:CountryStatistics x:Key="myHierSalesList"/>
 
-    &lt;HierarchicalDataTemplate ItemsSource="{Binding Path=RegionalStats}" DataType="{x:Type local:CountryList}"&gt;
+    <HierarchicalDataTemplate ItemsSource="{Binding Path=RegionalStats}" DataType="{x:Type local:CountryList}">
 
-      &lt;StackPanel Orientation="Horizontal"   Width="404"&gt;
+      <StackPanel Orientation="Horizontal"   Width="404">
 
-        &lt;TextBlock VerticalAlignment="Center"  HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding Path=Name}"/&gt;
+        <TextBlock VerticalAlignment="Center"  HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding Path=Name}"/>
 
-      &lt;/StackPanel&gt;
+      </StackPanel>
 
-    &lt;/HierarchicalDataTemplate&gt;
+    </HierarchicalDataTemplate>
 
-  &lt;/Window.Resources&gt;
+  </Window.Resources>
 
-  &lt;Grid&gt;
-
-
-
-    &lt;!-- Adding TreeViewAdv with CustomEditedItemTemplate --&gt;
-
-    &lt;syncfusion:TreeViewAdv Name="treeViewAdv" DataContext="{Binding treeViewHeader}"&gt;
+  <Grid>
 
 
 
-      &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewAdv with CustomEditedItemTemplate -->
 
-      &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" Header="Country"  ItemsSource="{StaticResource myHierSalesList}"/&gt;
+    <syncfusion:TreeViewAdv Name="treeViewAdv" DataContext="{Binding treeViewHeader}">
 
-    &lt;/syncfusion:TreeViewAdv&gt;
 
-  &lt;/Grid&gt;
 
-&lt;/Window&gt;
+      <!-- Adding TreeViewItemAdv -->
+
+      <syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" Header="Country"  ItemsSource="{StaticResource myHierSalesList}"/>
+
+    </syncfusion:TreeViewAdv>
+
+  </Grid>
+
+</Window>
 
 
 
@@ -297,7 +297,7 @@ public class CountryList : INotifyPropertyChanged
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img2.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -322,39 +322,39 @@ The Expanded state is identified by setting the ExpandedImageSource property and
 
 
 
-&lt;!-- Adding TreeViewAdv With collapse and expand image --&gt;
+<!-- Adding TreeViewAdv With collapse and expand image -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv"&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv">
 
 
 
-    &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewItemAdv -->
 
-    &lt;syncfusion:TreeViewItemAdv Name="treeviewitem1" Header="Marital Status" CollapsedImageSource="star.png"&gt;
+    <syncfusion:TreeViewItemAdv Name="treeviewitem1" Header="Marital Status" CollapsedImageSource="star.png">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Single"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Name="treeviewitem2" Header="Baby Vaccines" ExpandedImageSource="happy.png"&gt;
+    <syncfusion:TreeViewItemAdv Name="treeviewitem2" Header="Baby Vaccines" ExpandedImageSource="happy.png">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Country Information"/>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -376,7 +376,7 @@ treeviewitem2.ExpandedImageSource = new BitmapImage(new Uri("happy.png", UriKind
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img3.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -392,51 +392,51 @@ User can also set the height and width of the node images in a TreeViewAdv contr
 
 
 
-&lt;!-- Adding TreeViewAdv with image width and height --&gt;
+<!-- Adding TreeViewAdv with image width and height -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv"&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv">
 
 
 
-  &lt;!-- Adding TreeViewItemAdv --&gt;
+  <!-- Adding TreeViewItemAdv -->
 
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" ImageHeight="25" ImageWidth="25" LeftImageSource="happy.png" Header="Marital Status"&gt;
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" ImageHeight="25" ImageWidth="25" LeftImageSource="happy.png" Header="Marital Status">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Single"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" RightImageSource="star.png" Header="Baby Vaccines"&gt;
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" RightImageSource="star.png" Header="Baby Vaccines">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
+  <syncfusion:TreeViewItemAdv Header="Country Information">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Canada"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
+    <syncfusion:TreeViewItemAdv Header="France"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Germany"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
+    <syncfusion:TreeViewItemAdv Header="UK"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
+    <syncfusion:TreeViewItemAdv Header="USA"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -460,7 +460,7 @@ treeViewItemAdv1.ImageWidth = 25;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img4.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -479,51 +479,51 @@ You can add images to the left and right corner of the header of the TreeViewIte
 
 
 
-&lt;!-- Adding TreeViewAdv with left and right image --&gt;
+<!-- Adding TreeViewAdv with left and right image -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv"&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv">
 
 
 
-  &lt;!-- Adding TreeViewItemAdv --&gt;
+  <!-- Adding TreeViewItemAdv -->
 
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" LeftImageSource="happy.png" Header="Marital Status"&gt;
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" LeftImageSource="happy.png" Header="Marital Status">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Single"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" RightImageSource="star.png" Header="Baby Vaccines"&gt;
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" RightImageSource="star.png" Header="Baby Vaccines">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
+  <syncfusion:TreeViewItemAdv Header="Country Information">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Canada"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
+    <syncfusion:TreeViewItemAdv Header="France"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Germany"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
+    <syncfusion:TreeViewItemAdv Header="UK"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
+    <syncfusion:TreeViewItemAdv Header="USA"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -545,7 +545,7 @@ treeViewItemAdv2.RightImageSource = new BitmapImage(new Uri("star.png", UriKind.
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img5.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -565,51 +565,51 @@ TreeViewAdv has the advanced ability to sort the TreeViewItemAdv items at run ti
 
 
 
-&lt;!-- Adding TreeViewAdv with sorting --&gt;
+<!-- Adding TreeViewAdv with sorting -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv" Sorting="Ascending"&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv" Sorting="Ascending">
 
 
 
-  &lt;!-- Adding TreeViewItemAdv --&gt;
+  <!-- Adding TreeViewItemAdv -->
 
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="Marital Status"&gt;
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="Marital Status">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Single"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+  <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
+  <syncfusion:TreeViewItemAdv Header="Country Information">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Canada"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
+    <syncfusion:TreeViewItemAdv Header="France"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Germany"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
+    <syncfusion:TreeViewItemAdv Header="UK"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
+    <syncfusion:TreeViewItemAdv Header="USA"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -637,51 +637,51 @@ Using SortingField property, you can specify a sorting criteria. This is depende
 
 
 
-&lt;!-- Adding TreeViewAdv with sorting --&gt;
+<!-- Adding TreeViewAdv with sorting -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv" Sorting="Ascending" SortingField="Header"&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv" Sorting="Ascending" SortingField="Header">
 
 
 
-  &lt;!-- Adding TreeViewItemAdv --&gt;
+  <!-- Adding TreeViewItemAdv -->
 
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="Marital Status"&gt;
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="Marital Status">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Single"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+  <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
+  <syncfusion:TreeViewItemAdv Header="Country Information">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Canada"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
+    <syncfusion:TreeViewItemAdv Header="France"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Germany"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
+    <syncfusion:TreeViewItemAdv Header="UK"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
+    <syncfusion:TreeViewItemAdv Header="USA"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -699,7 +699,7 @@ treeViewAdv.SortingField = "Header";
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img6.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -715,39 +715,39 @@ You can expand or collapse the TreeViewAdv by enabling or disabling the IsExpand
 
 
 
-&lt;!-- Adding TreeViewAdv with expand the node --&gt;
+<!-- Adding TreeViewAdv with expand the node -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv"&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv">
 
 
 
-    &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewItemAdv -->
 
-    &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv" IsExpanded="True" Header="Marital Status"&gt;
+    <syncfusion:TreeViewItemAdv Name="treeViewItemAdv" IsExpanded="True" Header="Marital Status">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Single"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+    <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Country Information"/>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -763,7 +763,7 @@ treeViewItemAdv.IsExpanded = true;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img7.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -789,57 +789,57 @@ The Expand or Collapse operation in a TreeViewAdv leads to an animated action. T
 
     Title="Window1" Height="300" Width="300">
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;!-- Define Expand Animation --&gt;
+        <!-- Define Expand Animation -->
 
-        &lt;DoubleAnimation x:Key="ExpandAnimation" Duration="0:0:1.5"/&gt;
+        <DoubleAnimation x:Key="ExpandAnimation" Duration="0:0:1.5"/>
 
-    &lt;/Window.Resources&gt;
+    </Window.Resources>
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;!-- Adding TreeViewAdv with expand animation --&gt;
+        <!-- Adding TreeViewAdv with expand animation -->
 
-        &lt;syncfusion:TreeViewAdv Name="treeViewAdv"&gt;
+        <syncfusion:TreeViewAdv Name="treeViewAdv">
 
-            &lt;!-- Adding TreeViewItemAdv --&gt;
+            <!-- Adding TreeViewItemAdv -->
 
-            &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv" ExpandAnimation="{StaticResource ExpandAnimation}"  Header="Marital Status"&gt;
+            <syncfusion:TreeViewItemAdv Name="treeViewItemAdv" ExpandAnimation="{StaticResource ExpandAnimation}"  Header="Marital Status">
 
-                &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+                <syncfusion:TreeViewItemAdv Header="Single"/>
 
-                &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+                <syncfusion:TreeViewItemAdv Header="Married"/>
 
-                &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+                <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-            &lt;/syncfusion:TreeViewItemAdv&gt;
+            </syncfusion:TreeViewItemAdv>
 
-            &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+            <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-                &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+                <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-                &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+                <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-                &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+                <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-                &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+                <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-            &lt;/syncfusion:TreeViewItemAdv&gt;
+            </syncfusion:TreeViewItemAdv>
 
-            &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+            <syncfusion:TreeViewItemAdv Header="Country Information"/>
 
-        &lt;/syncfusion:TreeViewAdv&gt;
+        </syncfusion:TreeViewAdv>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
-
-
+</Window>
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img8.jpeg) | markdownify }
+
+
+{{ '![](Interactive-Features_images/Interactive-Features_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -855,39 +855,39 @@ The speed of animation that is generated while expanding or collapsing the TreeV
 
 
 
-&lt;!-- Set animation speed --&gt;
+<!-- Set animation speed -->
 
-&lt;syncfusion:TreeViewAdv AnimationSpeed="2"  Name="treeViewAdv"&gt;
+<syncfusion:TreeViewAdv AnimationSpeed="2"  Name="treeViewAdv">
 
 
 
-    &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewItemAdv -->
 
-    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+    <syncfusion:TreeViewItemAdv Header="Marital Status">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Single"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+    <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Country Information"/>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -921,39 +921,39 @@ Use the following code to set this property.
 
 
 
-&lt;!-- Set animation type as fade --&gt;
+<!-- Set animation type as fade -->
 
-&lt;syncfusion:TreeViewAdv AnimationType="Fade" Name="treeViewAdv"&gt; 
+<syncfusion:TreeViewAdv AnimationType="Fade" Name="treeViewAdv"> 
 
 
 
-    &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewItemAdv -->
 
-    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+    <syncfusion:TreeViewItemAdv Header="Marital Status">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Single"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+    <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Country Information"/>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -1001,65 +1001,65 @@ You can enable animation, while the tree nodes are expanded and collapsed. This 
 
     Title="Window1" Height="300" Width="300">
 
-  &lt;Window.Resources&gt;
+  <Window.Resources>
 
-    &lt;DoubleAnimation x:Key="FadeAnimation" Duration="0:0:1.5"/&gt;
+    <DoubleAnimation x:Key="FadeAnimation" Duration="0:0:1.5"/>
 
-  &lt;/Window.Resources&gt;
+  </Window.Resources>
 
-  &lt;Grid&gt;
-
-
-
-    &lt;!-- Adding TreeViewAdv with fade animation --&gt;
-
-    &lt;syncfusion:TreeViewAdv Name="treeViewAdv"&gt;
+  <Grid>
 
 
 
-      &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewAdv with fade animation -->
 
-      &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" FadeAnimation="{StaticResource FadeAnimation}" Header="Marital Status"&gt;
+    <syncfusion:TreeViewAdv Name="treeViewAdv">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+      <!-- Adding TreeViewItemAdv -->
 
-      &lt;/syncfusion:TreeViewItemAdv&gt;
+      <syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" FadeAnimation="{StaticResource FadeAnimation}" Header="Marital Status">
 
-      &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" Header="Baby Vaccines"&gt;
+        <syncfusion:TreeViewItemAdv Header="Single"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+      </syncfusion:TreeViewItemAdv>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+      <syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" Header="Baby Vaccines">
 
-      &lt;/syncfusion:TreeViewItemAdv&gt;
+        <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-      &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
+        <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
+      </syncfusion:TreeViewItemAdv>
 
-        &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
+      <syncfusion:TreeViewItemAdv Header="Country Information">
 
-        &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Canada"/>
 
-      &lt;/syncfusion:TreeViewItemAdv&gt;
+        <syncfusion:TreeViewItemAdv Header="France"/>
 
-    &lt;/syncfusion:TreeViewAdv&gt;
+        <syncfusion:TreeViewItemAdv Header="Germany"/>
 
-  &lt;/Grid&gt;
+        <syncfusion:TreeViewItemAdv Header="UK"/>
 
-&lt;/Window&gt;
+        <syncfusion:TreeViewItemAdv Header="USA"/>
+
+      </syncfusion:TreeViewItemAdv>
+
+    </syncfusion:TreeViewAdv>
+
+  </Grid>
+
+</Window>
 
 
 
@@ -1076,51 +1076,51 @@ The flow direction for the TreeViewAdv is set through the FlowDirection property
 
 
 
-&lt;!-- Adding TreeViewAdv with flow direction --&gt;
+<!-- Adding TreeViewAdv with flow direction -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv" FlowDirection="RightToLeft" &gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv" FlowDirection="RightToLeft" >
 
 
 
-  &lt;!-- Adding TreeViewItemAdv --&gt;
+  <!-- Adding TreeViewItemAdv -->
 
-  &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+  <syncfusion:TreeViewItemAdv Header="Marital Status">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Single"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+  <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
+  <syncfusion:TreeViewItemAdv Header="Country Information">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Canada"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
+    <syncfusion:TreeViewItemAdv Header="France"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Germany"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
+    <syncfusion:TreeViewItemAdv Header="UK"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
+    <syncfusion:TreeViewItemAdv Header="USA"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -1136,7 +1136,7 @@ treeViewAdv.FlowDirection = FlowDirection.LeftToRight;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img9.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1152,39 +1152,39 @@ TreeViewAdv control now provides support to reorder the columns in the TreeViewA
 
 
 
-&lt;!-- Adding TreeViewAdv with column reorder --&gt;
+<!-- Adding TreeViewAdv with column reorder -->
 
-&lt;syncfusion:TreeViewAdv  AllowsColumnReorder="True" Name="treeViewAdv"&gt;
+<syncfusion:TreeViewAdv  AllowsColumnReorder="True" Name="treeViewAdv">
 
 
 
-    &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewItemAdv -->
 
-    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+    <syncfusion:TreeViewItemAdv Header="Marital Status">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Single"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+    <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Country Information"/>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -1210,51 +1210,51 @@ You can show a node to be selected, at runtime, when the TreeViewAdv control is 
 
 
 
-&lt;!-- Adding TreeViewAdv with selected --&gt;
+<!-- Adding TreeViewAdv with selected -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv"&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv">
 
 
 
-  &lt;!-- Adding TreeViewItemAdv --&gt;
+  <!-- Adding TreeViewItemAdv -->
 
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" IsSelected="True" Header="Marital Status"&gt;
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" IsSelected="True" Header="Marital Status">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Single"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" Header="Baby Vaccines"&gt;
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" Header="Baby Vaccines">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
+  <syncfusion:TreeViewItemAdv Header="Country Information">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Canada"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
+    <syncfusion:TreeViewItemAdv Header="France"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Germany"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
+    <syncfusion:TreeViewItemAdv Header="UK"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
+    <syncfusion:TreeViewItemAdv Header="USA"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -1270,7 +1270,7 @@ treeViewItemAdv1.IsSelected = true;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img10.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1286,51 +1286,51 @@ TreeView control can be created with multiple columns by setting the MultiColumn
 
 
 
-&lt;!-- Adding TreeViewAdv with Enabling multiple column --&gt;
+<!-- Adding TreeViewAdv with Enabling multiple column -->
 
-&lt;syncfusion:TreeViewAdv  Name="treeViewAdv" MultiColumnEnable="True"&gt;
+<syncfusion:TreeViewAdv  Name="treeViewAdv" MultiColumnEnable="True">
 
 
 
-  &lt;!-- Adding TreeViewItemAdv --&gt;
+  <!-- Adding TreeViewItemAdv -->
 
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="Marital Status"&gt;
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="Marital Status">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Single"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+  <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
+  <syncfusion:TreeViewItemAdv Header="Country Information">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Canada"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
+    <syncfusion:TreeViewItemAdv Header="France"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Germany"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
+    <syncfusion:TreeViewItemAdv Header="UK"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
+    <syncfusion:TreeViewItemAdv Header="USA"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -1348,7 +1348,7 @@ treeViewAdv.MultiColumnEnable = true;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img11.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1364,57 +1364,57 @@ You can set headers for individual columns using the Columns property. All the c
 
 
 
-&lt;!-- Adding TreeViewAdv with Enabling multiple column --&gt;
+<!-- Adding TreeViewAdv with Enabling multiple column -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv" MultiColumnEnable="True"&gt;
-
-
-
- &lt;!-- Adding TreeViewItemAdv --&gt;
-
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="Marital Status"&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
-
-  &lt;/syncfusion:TreeViewItemAdv&gt;
-
-  &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
-
-  &lt;/syncfusion:TreeViewItemAdv&gt;
-
-  &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
-
-    &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
-
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv" MultiColumnEnable="True">
 
 
 
- &lt;!-- Adding header --&gt;
+ <!-- Adding TreeViewItemAdv -->
 
-  &lt;syncfusion:TreeViewAdv.Columns&gt;
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv" Header="Marital Status">
 
-    &lt;syncfusion:TreeViewColumnCollection&gt;
+    <syncfusion:TreeViewItemAdv Header="Single"/>
+
+    <syncfusion:TreeViewItemAdv Header="Married"/>
+
+    <syncfusion:TreeViewItemAdv Header="Married with Children"/>
+
+  </syncfusion:TreeViewItemAdv>
+
+  <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
+
+    <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
+
+    <syncfusion:TreeViewItemAdv Header="Tetanus"/>
+
+    <syncfusion:TreeViewItemAdv Header="Polio"/>
+
+    <syncfusion:TreeViewItemAdv Header="Measles"/>
+
+  </syncfusion:TreeViewItemAdv>
+
+  <syncfusion:TreeViewItemAdv Header="Country Information">
+
+    <syncfusion:TreeViewItemAdv Header="Canada"/>
+
+    <syncfusion:TreeViewItemAdv Header="France"/>
+
+    <syncfusion:TreeViewItemAdv Header="Germany"/>
+
+    <syncfusion:TreeViewItemAdv Header="UK"/>
+
+    <syncfusion:TreeViewItemAdv Header="USA"/>
+
+  </syncfusion:TreeViewItemAdv>
+
+
+
+ <!-- Adding header -->
+
+  <syncfusion:TreeViewAdv.Columns>
+
+    <syncfusion:TreeViewColumnCollection>
 
       <syncfusion:TreeViewColumn Width="150" Header="Status"
 
@@ -1428,15 +1428,15 @@ You can set headers for individual columns using the Columns property. All the c
 
       DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource AncestorType={x:Type 			syncfusion:TreeViewItemAdv}}}"/>
 
-    &lt;/syncfusion:TreeViewColumnCollection&gt;
+    </syncfusion:TreeViewColumnCollection>
 
-  &lt;/syncfusion:TreeViewAdv.Columns&gt;
+  </syncfusion:TreeViewAdv.Columns>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img12.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1450,51 +1450,51 @@ The width property of TreeViewColumn has changed from a double type to a GridLen
 
 [XAML]
 
-  &lt;!-- Adding TreeViewAdv with Enabling multiple column --&gt;
+  <!-- Adding TreeViewAdv with Enabling multiple column -->
 
-&lt;syncfusion:TreeViewAdvName="treeViewAdv"MultiColumnEnable="True"&gt;
+<syncfusion:TreeViewAdvName="treeViewAdv"MultiColumnEnable="True">
 
-&lt;!-- Adding TreeViewItemAdv --&gt;
+<!-- Adding TreeViewItemAdv -->
 
-&lt;syncfusion:TreeViewItemAdvName="treeViewItemAdv" Header="111"&gt;
+<syncfusion:TreeViewItemAdvName="treeViewItemAdv" Header="111">
 
-&lt;syncfusion:TreeViewItemAdvHeader="211"/&gt;
+<syncfusion:TreeViewItemAdvHeader="211"/>
 
-&lt;syncfusion:TreeViewItemAdvHeader="212"/&gt;
+<syncfusion:TreeViewItemAdvHeader="212"/>
 
-&lt;syncfusion:TreeViewItemAdvHeader="213"/&gt;
+<syncfusion:TreeViewItemAdvHeader="213"/>
 
-&lt;/syncfusion:TreeViewItemAdv&gt;
+</syncfusion:TreeViewItemAdv>
 
-&lt;syncfusion:TreeViewItemAdvHeader="Steve"&gt;
+<syncfusion:TreeViewItemAdvHeader="Steve">
 
-&lt;syncfusion:TreeViewItemAdvHeader="Charles"/&gt;
+<syncfusion:TreeViewItemAdvHeader="Charles"/>
 
-&lt;syncfusion:TreeViewItemAdvHeader="Greg"/&gt;
+<syncfusion:TreeViewItemAdvHeader="Greg"/>
 
-&lt;syncfusion:TreeViewItemAdvHeader="Danielle"/&gt;
+<syncfusion:TreeViewItemAdvHeader="Danielle"/>
 
-&lt;syncfusion:TreeViewItemAdvHeader="Ethan"/&gt;
+<syncfusion:TreeViewItemAdvHeader="Ethan"/>
 
-&lt;/syncfusion:TreeViewItemAdv&gt;
+</syncfusion:TreeViewItemAdv>
 
-&lt;syncfusion:TreeViewItemAdvHeader="President"&gt;
+<syncfusion:TreeViewItemAdvHeader="President">
 
-&lt;syncfusion:TreeViewItemAdvHeader="TeamLead"/&gt;
+<syncfusion:TreeViewItemAdvHeader="TeamLead"/>
 
-&lt;syncfusion:TreeViewItemAdvHeader="TeamLead"/&gt;
+<syncfusion:TreeViewItemAdvHeader="TeamLead"/>
 
-&lt;syncfusion:TreeViewItemAdvHeader="ProductLead"/&gt;
+<syncfusion:TreeViewItemAdvHeader="ProductLead"/>
 
-&lt;syncfusion:TreeViewItemAdvHeader="ProductManager"/&gt;
+<syncfusion:TreeViewItemAdvHeader="ProductManager"/>
 
-&lt;/syncfusion:TreeViewItemAdv&gt;
+</syncfusion:TreeViewItemAdv>
 
-&lt;!-- Adding header --&gt;
+<!-- Adding header -->
 
-&lt;syncfusion:TreeViewAdv.Columns&gt;
+<syncfusion:TreeViewAdv.Columns>
 
-&lt;syncfusion:TreeViewColumnCollection&gt;
+<syncfusion:TreeViewColumnCollection>
 
 <syncfusion:TreeViewColumn Width="0.3*" Header="ID"
 
@@ -1508,11 +1508,11 @@ DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource Ances
 
 DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource AncestorType={x:Type syncfusion:TreeViewItemAdv}}}"/>
 
-&lt;/syncfusion:TreeViewColumnCollection&gt;
+</syncfusion:TreeViewColumnCollection>
 
-&lt;/syncfusion:TreeViewAdv.Columns&gt;
+</syncfusion:TreeViewAdv.Columns>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -1530,39 +1530,39 @@ Use the following code to enable this property.
 
 
 
-&lt;!-- Adding TreeViewAdv with drag and drop --&gt;
+<!-- Adding TreeViewAdv with drag and drop -->
 
-&lt;syncfusion:TreeViewAdv AllowDragDrop="True" Name="treeViewAdv"&gt;
+<syncfusion:TreeViewAdv AllowDragDrop="True" Name="treeViewAdv">
 
 
 
-    &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewItemAdv -->
 
-    &lt;syncfusion:TreeViewItemAdv Header="Marital Status"&gt;
+    <syncfusion:TreeViewItemAdv Header="Marital Status">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Single"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Baby Vaccines"&gt;
+    <syncfusion:TreeViewItemAdv Header="Baby Vaccines">
 
-        &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-        &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+        <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-    &lt;/syncfusion:TreeViewItemAdv&gt;
+    </syncfusion:TreeViewItemAdv>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Country Information"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Country Information"/>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -1578,7 +1578,7 @@ treeViewAdv.AllowDragDrop = true;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img13.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1594,51 +1594,51 @@ You can easily edit the tree node items at runtime, by enabling IsEditable prope
 
 
 
-&lt;!-- Adding TreeViewAdv with Editable --&gt;
+<!-- Adding TreeViewAdv with Editable -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv"&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv">
 
 
 
-  &lt;!-- Adding TreeViewItemAdv --&gt;
+  <!-- Adding TreeViewItemAdv -->
 
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" IsEditable="True" Header="Marital Status"&gt;
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" IsEditable="True" Header="Marital Status">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Single"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" Header="Baby Vaccines"&gt;
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" Header="Baby Vaccines">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
+  <syncfusion:TreeViewItemAdv Header="Country Information">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Canada"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
+    <syncfusion:TreeViewItemAdv Header="France"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Germany"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
+    <syncfusion:TreeViewItemAdv Header="UK"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
+    <syncfusion:TreeViewItemAdv Header="USA"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -1656,7 +1656,7 @@ treeViewItemAdv1.IsEditable = true;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img14.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1672,51 +1672,51 @@ You can also set a node to be in edit mode when the tree view loads. This is don
 
 
 
-&lt;!-- Adding TreeViewAdv with Editable --&gt;
+<!-- Adding TreeViewAdv with Editable -->
 
-&lt;syncfusion:TreeViewAdv Name="treeViewAdv"&gt;
+<syncfusion:TreeViewAdv Name="treeViewAdv">
 
 
 
-  &lt;!-- Adding TreeViewItemAdv --&gt;
+  <!-- Adding TreeViewItemAdv -->
 
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" IsInEditMode="True" Header="Marital Status"&gt;
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" IsInEditMode="True" Header="Marital Status">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Single"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Single"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Married with Children"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Married with Children"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" Header="Baby Vaccines"&gt;
+  <syncfusion:TreeViewItemAdv Name="treeViewItemAdv2" Header="Baby Vaccines">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Hepatitis B"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Hepatitis B"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Tetanus"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Tetanus"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Polio"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Polio"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Measles"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Measles"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-  &lt;syncfusion:TreeViewItemAdv Header="Country Information"&gt;
+  <syncfusion:TreeViewItemAdv Header="Country Information">
 
-    &lt;syncfusion:TreeViewItemAdv Header="Canada"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Canada"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="France"/&gt;
+    <syncfusion:TreeViewItemAdv Header="France"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="Germany"/&gt;
+    <syncfusion:TreeViewItemAdv Header="Germany"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="UK"/&gt;
+    <syncfusion:TreeViewItemAdv Header="UK"/>
 
-    &lt;syncfusion:TreeViewItemAdv Header="USA"/&gt;
+    <syncfusion:TreeViewItemAdv Header="USA"/>
 
-  &lt;/syncfusion:TreeViewItemAdv&gt;
+  </syncfusion:TreeViewItemAdv>
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -1730,7 +1730,7 @@ treeViewItemAdv1.IsInEditMode = true;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img15.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1819,19 +1819,19 @@ Use the following code snippet to define the SelectedTreeItem binding in TreeVie
 
 [XAML]
 
-                &lt;sync:TreeViewAdv  ItemsSource="{Binding ItemsCollection}" SelectedTreeItem="{Binding Path=SelectedItem,Mode=TwoWay}" AllowMultiSelect="False" x:Name="tree" Margin="36,12,121,76" &gt;
+                <sync:TreeViewAdv  ItemsSource="{Binding ItemsCollection}" SelectedTreeItem="{Binding Path=SelectedItem,Mode=TwoWay}" AllowMultiSelect="False" x:Name="tree" Margin="36,12,121,76" >
 
-                &lt;sync:TreeViewAdv.ItemTemplate&gt;
+                <sync:TreeViewAdv.ItemTemplate>
 
-                &lt;HierarchicalDataTemplate ItemsSource="{Binding Children}"&gt;
+                <HierarchicalDataTemplate ItemsSource="{Binding Children}">
 
-                    &lt;TextBlock Text="{Binding Name}"/&gt;
+                    <TextBlock Text="{Binding Name}"/>
 
-                &lt;/HierarchicalDataTemplate&gt;
+                </HierarchicalDataTemplate>
 
-            &lt;/sync:TreeViewAdv.ItemTemplate&gt;
+            </sync:TreeViewAdv.ItemTemplate>
 
-        &lt;/sync:TreeViewAdv&gt;
+        </sync:TreeViewAdv>
 
 
 
@@ -1859,11 +1859,11 @@ VirtualizationMode: Sets the virtualization mode for TreeViewItems. If Virtualiz
 
 
 
-&lt;syncfusion:TreeViewAdv IsVirtualizing="True"  VirtualizationMode="Normal"&gt;
+<syncfusion:TreeViewAdv IsVirtualizing="True"  VirtualizationMode="Normal">
 
 
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -1890,11 +1890,11 @@ items.VirtualizationMode = Syncfusion.Windows.Tools.VirtualizationMode.Normal;
 
 
 
-&lt;syncfusion:TreeViewAdv IsVirtualizing="True" VirtualizationMode="Extended"&gt;
+<syncfusion:TreeViewAdv IsVirtualizing="True" VirtualizationMode="Extended">
 
 
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -2081,13 +2081,13 @@ The LoadOnDemand feature enables users to load items dynamically when a particul
 
 [XAML]
 
-        &lt;syncfusion:TreeViewAdv LoadOnDemand="TreeViewAdv_LoadOnDemand"&gt;
+        <syncfusion:TreeViewAdv LoadOnDemand="TreeViewAdv_LoadOnDemand">
 
             <syncfusion:TreeViewItemAdv IsLoadOnDemand="True"
 
  LoadingHeader="Loading Sub Items..."/>
 
-        &lt;/syncfusion:TreeViewAdv&gt;
+        </syncfusion:TreeViewAdv>
 
 
 
@@ -2152,7 +2152,7 @@ Loading Items"/>
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img16.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -2162,29 +2162,29 @@ Loading Items"/>
 
 [XAML]
 
-        &lt;syncfusion:TreeViewAdv LoadOnDemand="TreeViewAdv_LoadOnDemand"&gt;
+        <syncfusion:TreeViewAdv LoadOnDemand="TreeViewAdv_LoadOnDemand">
 
-            &lt;syncfusion:TreeViewItemAdv IsLoadOnDemand="True"  &gt;
+            <syncfusion:TreeViewItemAdv IsLoadOnDemand="True"  >
 
-                &lt;syncfusion:TreeViewItemAdv.LoadingHeaderTemplate&gt;
+                <syncfusion:TreeViewItemAdv.LoadingHeaderTemplate>
 
-                    &lt;DataTemplate&gt;
+                    <DataTemplate>
 
-                        &lt;TextBlock Text="Loading Sub Items..."/&gt;
+                        <TextBlock Text="Loading Sub Items..."/>
 
-                    &lt;/DataTemplate&gt;
+                    </DataTemplate>
 
-                &lt;/syncfusion:TreeViewItemAdv.LoadingHeaderTemplate&gt;
+                </syncfusion:TreeViewItemAdv.LoadingHeaderTemplate>
 
-            &lt;/syncfusion:TreeViewItemAdv&gt;
+            </syncfusion:TreeViewItemAdv>
 
-        &lt;/syncfusion:TreeViewAdv&gt;
-
-
+        </syncfusion:TreeViewAdv>
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img17.png) | markdownify }
+
+
+{{ '![](Interactive-Features_images/Interactive-Features_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -2242,7 +2242,7 @@ The TreeViewAdv control provides support to change the opacity of an element bei
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img18.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img18.png)' | markdownify }}
 {:.image }
 
 

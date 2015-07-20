@@ -33,7 +33,7 @@ These styles can be applied to the control using XAML. The following code exampl
 
  [XAML]
 
-&lt;syncfusion:TileViewControl         syncfusion:SkinStorage.VisualStyle="Office2010Blue"        /&gt;    
+<syncfusion:TileViewControl         syncfusion:SkinStorage.VisualStyle="Office2010Blue"        />    
 
 
 
@@ -55,55 +55,55 @@ The following illustrations show the TileViewControl that is applied with differ
 
 
 
-{ ![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2007Blue.png](Styling_images/Styling_img1.png) | markdownify }
+{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2007Blue.png](Styling_images/Styling_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2007silver.png](Styling_images/Styling_img2.png) | markdownify }
+{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2007silver.png](Styling_images/Styling_img2.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2007Black.png](Styling_images/Styling_img3.png) | markdownify }
+{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2007Black.png](Styling_images/Styling_img3.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2010Blue.png](Styling_images/Styling_img4.png) | markdownify }
+{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2010Blue.png](Styling_images/Styling_img4.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2010silver.png](Styling_images/Styling_img5.png) | markdownify }
+{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2010silver.png](Styling_images/Styling_img5.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2010Black.png](Styling_images/Styling_img6.png) | markdownify }
+{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2010Black.png](Styling_images/Styling_img6.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/boopeshkumart/Desktop/TileView_Themes/blend.png](Styling_images/Styling_img7.png) | markdownify }
+{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/blend.png](Styling_images/Styling_img7.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/boopeshkumart/Desktop/TileView_Themes/metro.png](Styling_images/Styling_img8.png) | markdownify }
+{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/metro.png](Styling_images/Styling_img8.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![C:/Users/boopeshkumart/Desktop/TileView_Themes/transparent.png](Styling_images/Styling_img9.png) | markdownify }
+{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/transparent.png](Styling_images/Styling_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -119,41 +119,41 @@ The _ItemContainerStyle_ property of _TileViewControl_ sets the style of TileVie
 
 [XAML]
 
-    &lt;Style TargetType="{x:Type syncfusion:TileViewItem}" x:Key="itemStyle"&gt;
+    <Style TargetType="{x:Type syncfusion:TileViewItem}" x:Key="itemStyle">
 
-            &lt;Setter Property="Header" Value="{Binding XPath=@Name}"/&gt;
+            <Setter Property="Header" Value="{Binding XPath=@Name}"/>
 
-            &lt;Setter Property="ContentTemplate"&gt;
+            <Setter Property="ContentTemplate">
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
 
 
-                    &lt;DataTemplate&gt;
+                    <DataTemplate>
 
-                        &lt;Grid Margin="10"&gt;
+                        <Grid Margin="10">
 
-                            &lt;Grid.RowDefinitions&gt;
+                            <Grid.RowDefinitions>
 
-                                &lt;RowDefinition Height="Auto"/&gt;
+                                <RowDefinition Height="Auto"/>
 
-                                &lt;RowDefinition Height="Auto"/&gt;
+                                <RowDefinition Height="Auto"/>
 
-                            &lt;/Grid.RowDefinitions&gt;
+                            </Grid.RowDefinitions>
 
-                            &lt;TextBlock Text="Description: " FontWeight="Bold"/&gt;
+                            <TextBlock Text="Description: " FontWeight="Bold"/>
 
-                            &lt;TextBlock Text="{Binding XPath=@Description}" FontFamily="Verdana" TextWrapping="Wrap" Margin="5,5,0,0"  Grid.Row="1"/&gt;
+                            <TextBlock Text="{Binding XPath=@Description}" FontFamily="Verdana" TextWrapping="Wrap" Margin="5,5,0,0"  Grid.Row="1"/>
 
-                        &lt;/Grid&gt;
+                        </Grid>
 
-                    &lt;/DataTemplate&gt;
+                    </DataTemplate>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-        &lt;/Style&gt;
+        </Style>
 
 
 
@@ -167,13 +167,13 @@ The _ItemContainerStyle_ property of _TileViewControl_ sets the style of TileVie
 
 [XAML]
 
-&lt;syncfusion:TileViewControl  ItemContainerStyle="{StaticResource itemStyle}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  &gt;
+<syncfusion:TileViewControl  ItemContainerStyle="{StaticResource itemStyle}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  >
 
 
 
 
 
-        &lt;/syncfusion:TileViewControl&gt;
+        </syncfusion:TileViewControl>
 
 
 
@@ -183,7 +183,7 @@ This will generate the following TileViewControl.
 
 
 
-{ ![](Styling_images/Styling_img10.png) | markdownify }
+{{ '![](Styling_images/Styling_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -251,77 +251,77 @@ The _ItemContainerStyleSelector_ property is used to choose the ItemContainerSty
 
 [XAML]
 
-&lt;Style TargetType="{x:Type syncfusion:TileViewItem}" x:Key="CsBookStyle"&gt;
+<Style TargetType="{x:Type syncfusion:TileViewItem}" x:Key="CsBookStyle">
 
-            &lt;Setter Property="Header" Value="{Binding XPath=@Name}"/&gt;
+            <Setter Property="Header" Value="{Binding XPath=@Name}"/>
 
-            &lt;Setter Property="ContentTemplate"&gt;
+            <Setter Property="ContentTemplate">
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;DataTemplate&gt;
+                    <DataTemplate>
 
-                        &lt;Grid Margin="10"&gt;
+                        <Grid Margin="10">
 
-                            &lt;Grid.RowDefinitions&gt;
+                            <Grid.RowDefinitions>
 
-                                &lt;RowDefinition Height="Auto"/&gt;
+                                <RowDefinition Height="Auto"/>
 
-                                &lt;RowDefinition Height="Auto"/&gt;
+                                <RowDefinition Height="Auto"/>
 
-                            &lt;/Grid.RowDefinitions&gt;
+                            </Grid.RowDefinitions>
 
-                            &lt;TextBlock Text="Description: " FontWeight="Bold"/&gt;
+                            <TextBlock Text="Description: " FontWeight="Bold"/>
 
-                            &lt;TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" FontFamily="Courier New" Foreground="Green" Margin="5,5,0,0" Grid.Row="1"/&gt;
+                            <TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" FontFamily="Courier New" Foreground="Green" Margin="5,5,0,0" Grid.Row="1"/>
 
-                        &lt;/Grid&gt;
+                        </Grid>
 
-                    &lt;/DataTemplate&gt;
+                    </DataTemplate>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-        &lt;/Style&gt;
-
-
-
-        &lt;Style TargetType="{x:Type syncfusion:TileViewItem}" x:Key="WpfBookStyle"&gt;
-
-            &lt;Setter Property="Header" Value="{Binding XPath=@Name}"/&gt;
-
-            &lt;Setter Property="ContentTemplate"&gt;
-
-                &lt;Setter.Value&gt;
+        </Style>
 
 
 
-                    &lt;DataTemplate&gt;
+        <Style TargetType="{x:Type syncfusion:TileViewItem}" x:Key="WpfBookStyle">
 
-                        &lt;Grid Margin="10"&gt;
+            <Setter Property="Header" Value="{Binding XPath=@Name}"/>
 
-                            &lt;Grid.RowDefinitions&gt;
+            <Setter Property="ContentTemplate">
 
-                                &lt;RowDefinition Height="Auto"/&gt;
+                <Setter.Value>
 
-                                &lt;RowDefinition Height="Auto"/&gt;
 
-                            &lt;/Grid.RowDefinitions&gt;
 
-                            &lt;TextBlock Text="Description: " FontWeight="Bold"/&gt;
+                    <DataTemplate>
 
-                            &lt;TextBlock Text="{Binding XPath=@Description}" FontFamily="Verdana" Foreground="Blue" TextWrapping="Wrap" Margin="5,5,0,0"  Grid.Row="1"/&gt;
+                        <Grid Margin="10">
 
-                        &lt;/Grid&gt;
+                            <Grid.RowDefinitions>
 
-                    &lt;/DataTemplate&gt;
+                                <RowDefinition Height="Auto"/>
 
-                &lt;/Setter.Value&gt;
+                                <RowDefinition Height="Auto"/>
 
-            &lt;/Setter&gt;
+                            </Grid.RowDefinitions>
 
-        &lt;/Style&gt;
+                            <TextBlock Text="Description: " FontWeight="Bold"/>
+
+                            <TextBlock Text="{Binding XPath=@Description}" FontFamily="Verdana" Foreground="Blue" TextWrapping="Wrap" Margin="5,5,0,0"  Grid.Row="1"/>
+
+                        </Grid>
+
+                    </DataTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
 
 
 
@@ -331,7 +331,7 @@ The _ItemContainerStyleSelector_ property is used to choose the ItemContainerSty
 
 [XAML]
 
-&lt;local:TileViewItemContainerStyleSelector x:Key="tileViewStyleSelector"/&gt;
+<local:TileViewItemContainerStyleSelector x:Key="tileViewStyleSelector"/>
 
 
 
@@ -343,11 +343,11 @@ The _ItemContainerStyleSelector_ property is used to choose the ItemContainerSty
 
 [XAML]
 
-&lt;syncfusion:TileViewControl  ItemContainerStyleSelector="{StaticResource tileViewStyleSelector}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  Margin="20" &gt;
+<syncfusion:TileViewControl  ItemContainerStyleSelector="{StaticResource tileViewStyleSelector}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  Margin="20" >
 
 
 
-         &lt;/syncfusion:TileViewControl&gt;
+         </syncfusion:TileViewControl>
 
 
 
@@ -357,7 +357,7 @@ This will generate the following TileViewControl.
 
 
 
-{ ![](Styling_images/Styling_img11.png) | markdownify }
+{{ '![](Styling_images/Styling_img11.png)' | markdownify }}
 {:.image }
 
 

@@ -39,7 +39,7 @@ To enable RTL support, the FlowDirection property of the OLAP Grid control needs
 
 [XAML]
 
-&lt;syncfusion:OlapGrid x:Name="olapGrid" FlowDirection="RightToLeft" ReportName="SalesReport" SharedDataManagerName="localManager" olapshared:DataSource.DataManagerName="localManager"&gt;  
+<syncfusion:OlapGrid x:Name="olapGrid" FlowDirection="RightToLeft" ReportName="SalesReport" SharedDataManagerName="localManager" olapshared:DataSource.DataManagerName="localManager">  
 
 
 
@@ -55,7 +55,7 @@ To enable RTL support, the FlowDirection property of the OLAP Grid control needs
 
 
 
-{ ![](RTL-Support_images/RTL-Support_img1.png) | markdownify }
+{{ '![](RTL-Support_images/RTL-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -67,5 +67,5 @@ A sample is locally available in the following location:
 
 SystemDrive
 
-\Users\&lt;user_name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version_number&gt;\BI\WPF\OlapGrid.WPF\Localization\LocalizationDemo
+\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\OlapGrid.WPF\Localization\LocalizationDemo
 

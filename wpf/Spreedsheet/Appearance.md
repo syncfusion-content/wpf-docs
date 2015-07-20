@@ -31,7 +31,7 @@ Spreadsheet control provides API support for specifying the font style for the c
 </table>
 
 
-{ ![](Appearance_images/Appearance_img1.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -47,9 +47,9 @@ You can set the font family to the spreadsheet cells using the _FontFamilyComman
 
 
 
-&lt;Button Command="{Binding Path= FontFamilyCommand}" CommandParameter =" Arial Black"&gt;
+<Button Command="{Binding Path= FontFamilyCommand}" CommandParameter =" Arial Black">
 
-&lt;/Button&gt;
+</Button>
 
 
 
@@ -67,9 +67,9 @@ The following code illustrates how to merge the selected cells in Spreadsheet:
 
 
 
-&lt;Button Command="{Binding Path= MergeCommand}" CommandParameter ="MergeAndCenter"&gt;
+<Button Command="{Binding Path= MergeCommand}" CommandParameter ="MergeAndCenter">
 
-&lt;/Button&gt;
+</Button>
 
 
 
@@ -81,13 +81,13 @@ The following code illustrates how to unmerge the selected cells in Spreadsheet:
 
 
 
-&lt;Button Command="{Binding Path= MergeCommand}" CommandParameter =" UnMerge"&gt;
+<Button Command="{Binding Path= MergeCommand}" CommandParameter =" UnMerge">
 
-&lt;/Button&gt;
+</Button>
 
 
 
-{ ![](Appearance_images/Appearance_img2.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -105,29 +105,29 @@ The following code illustrates, how to add and remove the cell border in Spreads
 
 [XAML]
 
-&lt;!--To draw the Bottom Border--&gt;
+<!--To draw the Bottom Border-->
 
-&lt;Button Command="{Binding Path= BorderCommand}" CommandParameter ="BottomBorder"&gt;
+<Button Command="{Binding Path= BorderCommand}" CommandParameter ="BottomBorder">
 
-&lt;/Button&gt;
+</Button>
 
-&lt;!--To draw the Top Border--&gt;
+<!--To draw the Top Border-->
 
-&lt;Button Command="{Binding Path= BorderCommand}" CommandParameter ="TopBorder"&gt;
+<Button Command="{Binding Path= BorderCommand}" CommandParameter ="TopBorder">
 
-&lt;/Button&gt;
+</Button>
 
-&lt;!--To draw all Border--&gt;
+<!--To draw all Border-->
 
-&lt;Button Command="{Binding Path= BorderCommand}" CommandParameter ="AllBorder"&gt;
+<Button Command="{Binding Path= BorderCommand}" CommandParameter ="AllBorder">
 
-&lt;/Button&gt;
-
-
+</Button>
 
 
 
-{ ![](Appearance_images/Appearance_img3.png) | markdownify }
+
+
+{{ '![](Appearance_images/Appearance_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -155,17 +155,17 @@ The following code illustrates this:
 
 
 
-&lt;Button Command="{Binding Path= FreezePaneCommand}" Grid.Row="2"&gt;
+<Button Command="{Binding Path= FreezePaneCommand}" Grid.Row="2">
 
-&lt;Button.CommandParameter&gt;                                                        <Syncfusion:Freeze>FreezePanes</Syncfusion:Freeze>
+<Button.CommandParameter>                                                        <Syncfusion:Freeze>FreezePanes</Syncfusion:Freeze>
 
-&lt;/Button.CommandParameter&gt;
+</Button.CommandParameter>
 
-&lt;/Button&gt;
+</Button>
 
 
 
-{ ![](Appearance_images/Appearance_img4.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -181,7 +181,7 @@ Users can wrap text for a selected range of cells by just calling a method.
 
 
 
-{ ![](Appearance_images/Appearance_img5.png) | markdownify }
+{{ '![](Appearance_images/Appearance_img5.png)' | markdownify }}
 {:.image }
 
 

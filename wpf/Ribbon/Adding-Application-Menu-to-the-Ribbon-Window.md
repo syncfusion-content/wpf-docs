@@ -17,15 +17,15 @@ You can add an application menu to the ribbon window. An application menu contai
 
 
 
-&lt;ribbon:Ribbon.ApplicationMenu&gt;
+<ribbon:Ribbon.ApplicationMenu>
 
-  &lt;ribbon:ApplicationMenu Width="38" Height="38" ribbon:Ribbon.KeyTip="F"&gt;
+  <ribbon:ApplicationMenu Width="38" Height="38" ribbon:Ribbon.KeyTip="F">
 
     ...
 
-  &lt;/ribbon:ApplicationMenu&gt;
+  </ribbon:ApplicationMenu>
 
-&lt;/ribbon:Ribbon.ApplicationMenu&gt;
+</ribbon:Ribbon.ApplicationMenu>
 
 
 
@@ -37,17 +37,17 @@ Image is added to application menu button by using the ApplicationButtonImage pr
 
 
 
-&lt;ribbon:Ribbon.ApplicationMenu&gt;
+<ribbon:Ribbon.ApplicationMenu>
 
-  &lt;ribbon:ApplicationMenu Width="38" Height="38" ribbon:Ribbon.KeyTip="F" ApplicationButtonImage="/SampleImages/app.png" &gt;
+  <ribbon:ApplicationMenu Width="38" Height="38" ribbon:Ribbon.KeyTip="F" ApplicationButtonImage="/SampleImages/app.png" >
 
-  &lt;/ribbon:ApplicationMenu&gt;
+  </ribbon:ApplicationMenu>
 
-&lt;/ribbon:Ribbon.ApplicationMenu&gt;
+</ribbon:Ribbon.ApplicationMenu>
 
 
 
-{ ![](Adding-Application-Menu-to-the-Ribbon-Window_images/Adding-Application-Menu-to-the-Ribbon-Window_img1.jpeg) | markdownify }
+{{ '![](Adding-Application-Menu-to-the-Ribbon-Window_images/Adding-Application-Menu-to-the-Ribbon-Window_img1.jpeg)' | markdownify }}
 {:.image }
 
 

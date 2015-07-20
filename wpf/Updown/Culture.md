@@ -17,7 +17,7 @@ Culture can be set to en-US for the UpDown control as shown in the following cod
 
  [XAML]
 
-&lt;syncfusion:UpDown Name="upDown" Culture="en-US"/&gt;
+<syncfusion:UpDown Name="upDown" Culture="en-US"/>
 
 
 
@@ -27,7 +27,7 @@ UpDown upDown = new UpDown();
 
 upDown. Culture = new CultureInfo("en-US");
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1273.jpg](Culture_images/Culture_img1.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1273.jpg](Culture_images/Culture_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -35,7 +35,7 @@ Culture can also be set to bs-Latn for the UpDown control as shown in the follow
 
 [XAML]
 
-&lt;syncfusion:UpDown Name="upDown" Culture="bs-Latn"/&gt;
+<syncfusion:UpDown Name="upDown" Culture="bs-Latn"/>
 
 
 
@@ -47,7 +47,7 @@ upDown. Culture = new CultureInfo("bs-Latn");
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1274.jpg](Culture_images/Culture_img2.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1274.jpg](Culture_images/Culture_img2.jpeg)' | markdownify }}
 {:.image }
 
 

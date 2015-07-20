@@ -34,7 +34,7 @@ The visual style can be applied in XAML as follows:
 
 [XAML]
 
-&lt;syncfusion:TreeViewAdv        syncfusion:SkinStorage.VisualStyle="Office2010Blue"/&gt;    
+<syncfusion:TreeViewAdv        syncfusion:SkinStorage.VisualStyle="Office2010Blue"/>    
 
 
 
@@ -64,19 +64,19 @@ The ItemContainerStyle property of the TreeViewAdv is used to set the style of t
 
 [XAML]
 
-   &lt;Style TargetType="{x:Type syncfusion:TreeViewItemAdv}" 			x:Key="treeViewAdvItemContainerStyle"&gt;
+   <Style TargetType="{x:Type syncfusion:TreeViewItemAdv}" 			x:Key="treeViewAdvItemContainerStyle">
 
-            &lt;Setter Property="IsExpanded" Value="True"/&gt;
+            <Setter Property="IsExpanded" Value="True"/>
 
-            &lt;Setter Property="Foreground" Value="Green"/&gt;
+            <Setter Property="Foreground" Value="Green"/>
 
-            &lt;Setter Property="IsEditable" Value="False"/&gt;
+            <Setter Property="IsEditable" Value="False"/>
 
-            &lt;Setter Property="FontStyle" Value="Italic"/&gt;
+            <Setter Property="FontStyle" Value="Italic"/>
 
-            &lt;Setter Property="FontWeight" Value="Bold"/&gt;
+            <Setter Property="FontWeight" Value="Bold"/>
 
-   &lt;/Style&gt;	
+   </Style>	
 
 
 
@@ -104,7 +104,7 @@ The TreeViewAdv will be generated as follows:
 
 
 
-{ ![](Styling_images/Styling_img1.png) | markdownify }
+{{ '![](Styling_images/Styling_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -168,33 +168,33 @@ public class TreeViewAdvItemContainerStyleSelector : StyleSelector
 
 [XAML]
 
-&lt;Style TargetType="{x:Type syncfusion:TreeViewItemAdv}" 		x:Key="RootItemsStyle"&gt;
+<Style TargetType="{x:Type syncfusion:TreeViewItemAdv}" 		x:Key="RootItemsStyle">
 
-            &lt;Setter Property="IsExpanded" Value="True"/&gt;
+            <Setter Property="IsExpanded" Value="True"/>
 
-            &lt;Setter Property="Foreground" Value="Green"/&gt;
+            <Setter Property="Foreground" Value="Green"/>
 
-            &lt;Setter Property="IsEditable" Value="False"/&gt;
+            <Setter Property="IsEditable" Value="False"/>
 
-            &lt;Setter Property="FontStyle" Value="Italic"/&gt;
+            <Setter Property="FontStyle" Value="Italic"/>
 
-            &lt;Setter Property="FontWeight" Value="Bold"/&gt;
+            <Setter Property="FontWeight" Value="Bold"/>
 
-        &lt;/Style&gt;
+        </Style>
 
 
 
-        &lt;Style TargetType="{x:Type syncfusion:TreeViewItemAdv}" x:Key="InnerItemsStyle"&gt;
+        <Style TargetType="{x:Type syncfusion:TreeViewItemAdv}" x:Key="InnerItemsStyle">
 
-            &lt;Setter Property="IsExpanded" Value="True"/&gt;
+            <Setter Property="IsExpanded" Value="True"/>
 
-            &lt;Setter Property="Foreground" Value="Blue"/&gt;
+            <Setter Property="Foreground" Value="Blue"/>
 
-            &lt;Setter Property="IsEditable" Value="True"/&gt;
+            <Setter Property="IsEditable" Value="True"/>
 
-            &lt;Setter Property="FontStyle" Value="Italic"/&gt;           
+            <Setter Property="FontStyle" Value="Italic"/>           
 
-        &lt;/Style&gt;
+        </Style>
 
 
 
@@ -206,7 +206,7 @@ public class TreeViewAdvItemContainerStyleSelector : StyleSelector
 
 [XAML]
 
-&lt;local:TreeViewAdvItemContainerStyleSelector x:Key="treeViewAdvItemContainerStyleSelector"/&gt;
+<local:TreeViewAdvItemContainerStyleSelector x:Key="treeViewAdvItemContainerStyleSelector"/>
 
 
 
@@ -232,7 +232,7 @@ The TreeViewAdv generates as shown in the following screen shot:
 
 
 
-{ ![](Styling_images/Styling_img2.png) | markdownify }
+{{ '![](Styling_images/Styling_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -248,27 +248,27 @@ The user can customize the style of the expander displayed in the TreeViewAdv us
 
 [XAML]
 
-&lt;Style TargetType="{x:Type Expander}" x:Key="expanderStyle"&gt;
+<Style TargetType="{x:Type Expander}" x:Key="expanderStyle">
 
-   &lt;Setter Property="Template" &gt;
+   <Setter Property="Template" >
 
-     &lt;Setter.Value&gt;
-
-
-
-       &lt;ControlTemplate TargetType="{x:Type Expander}"&gt;
-
-         &lt;CheckBox IsChecked="{Binding 		Path=IsExpanded,RelativeSource={RelativeSource AncestorType={x:Type 	Expander}}, Mode=TwoWay}"&gt;&lt;/CheckBox&gt;
-
-         &lt;/ControlTemplate&gt;
+     <Setter.Value>
 
 
 
-      &lt;/Setter.Value&gt;
+       <ControlTemplate TargetType="{x:Type Expander}">
 
-   &lt;/Setter&gt;
+         <CheckBox IsChecked="{Binding 		Path=IsExpanded,RelativeSource={RelativeSource AncestorType={x:Type 	Expander}}, Mode=TwoWay}"></CheckBox>
 
- &lt;/Style&gt;
+         </ControlTemplate>
+
+
+
+      </Setter.Value>
+
+   </Setter>
+
+ </Style>
 
 
 
@@ -296,7 +296,7 @@ The TreeViewAdv generates as shown in the following screenshot:
 
 
 
-{ ![](Styling_images/Styling_img3.png) | markdownify }
+{{ '![](Styling_images/Styling_img3.png)' | markdownify }}
 {:.image }
 
 

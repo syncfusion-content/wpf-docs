@@ -31,7 +31,7 @@ Chart1.Legends.Add(legend);
 
 
 
-{ ![](Add-Custom-Legends_images/Add-Custom-Legends_img1.jpeg) | markdownify }
+{{ '![](Add-Custom-Legends_images/Add-Custom-Legends_img1.jpeg)' | markdownify }}
 {:.image }
 
 

@@ -37,7 +37,7 @@ The current day highlighting brush in all view can be customized by CurrentDateB
 
 
 
-{ ![](Current-Day-Highlighting_images/Current-Day-Highlighting_img1.png) | markdownify }
+{{ '![](Current-Day-Highlighting_images/Current-Day-Highlighting_img1.png)' | markdownify }}
 {:.image }
 
 

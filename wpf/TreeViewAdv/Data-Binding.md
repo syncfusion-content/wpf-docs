@@ -33,41 +33,41 @@ You can bind the custom object to the DataContext property of the control, and t
 
     Title="Window1" Height="300" Width="300">
 
-  &lt;Window.Resources&gt;
+  <Window.Resources>
 
 
 
-    &lt;!--Custom object which is defined in the code behind can be accessed through the key logic in XAML--&gt;
+    <!--Custom object which is defined in the code behind can be accessed through the key logic in XAML-->
 
-    &lt;local:TreeViewHeader x:Key="treeViewHeader"/&gt;
+    <local:TreeViewHeader x:Key="treeViewHeader"/>
 
-  &lt;/Window.Resources&gt;
+  </Window.Resources>
 
-  &lt;Grid&gt;
-
-
-
-    &lt;!-- Adding TreeViewAdv with CustomEditedItemTemplate --&gt;
-
-    &lt;syncfusion:TreeViewAdv Name="treeViewAdv" DataContext="{Binding treeViewHeader}"&gt;
+  <Grid>
 
 
 
-     &lt;!-- Adding TreeViewItemAdv --&gt;
+    <!-- Adding TreeViewAdv with CustomEditedItemTemplate -->
 
-      &lt;syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" Header="Marital Status"&gt;
+    <syncfusion:TreeViewAdv Name="treeViewAdv" DataContext="{Binding treeViewHeader}">
 
-        &lt;syncfusion:TreeViewItemAdv Header="{Binding Header1}"/&gt;
 
-        &lt;syncfusion:TreeViewItemAdv Header="{Binding Header2}"/&gt;
 
-      &lt;/syncfusion:TreeViewItemAdv&gt;
+     <!-- Adding TreeViewItemAdv -->
 
-    &lt;/syncfusion:TreeViewAdv&gt;
+      <syncfusion:TreeViewItemAdv Name="treeViewItemAdv1" Header="Marital Status">
 
-  &lt;/Grid&gt;
+        <syncfusion:TreeViewItemAdv Header="{Binding Header1}"/>
 
-&lt;/Window&gt;
+        <syncfusion:TreeViewItemAdv Header="{Binding Header2}"/>
+
+      </syncfusion:TreeViewItemAdv>
+
+    </syncfusion:TreeViewAdv>
+
+  </Grid>
+
+</Window>
 
 
 
@@ -77,21 +77,21 @@ You can bind the custom object to the DataContext property of the control, and t
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Interaction logic for the class TreeViewHeader
 
-/// &lt;/summary&gt;
+/// </summary>
 
 public class TreeViewHeader
 
 {
 
-    /// &lt;summary&gt;
+    /// <summary>
 
-    /// Initializes a new instance of the &lt;see cref="TreeViewHeader"/&gt; class.
+    /// Initializes a new instance of the <see cref="TreeViewHeader"/> class.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
     public TreeViewHeader()
 
@@ -105,13 +105,13 @@ public class TreeViewHeader
 
 
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Gets or sets the header1.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// <value>The header1.&lt;/value&gt;
+    /// <value>The header1.</value>
 
     public string Header1
 
@@ -125,13 +125,13 @@ public class TreeViewHeader
 
 
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Gets or sets the header2.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// <value>The header2.&lt;/value&gt;
+    /// <value>The header2.</value>
 
     public string Header2
 
@@ -149,7 +149,7 @@ public class TreeViewHeader
 
 
 
-{ ![](Data-Binding_images/Data-Binding_img1.jpeg) | markdownify }
+{{ '![](Data-Binding_images/Data-Binding_img1.jpeg)' | markdownify }}
 {:.image }
 
 

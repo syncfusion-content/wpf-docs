@@ -19,29 +19,29 @@ Create a GroupBar control in XAML, as seen below.
 
 [XAML]
 
-&lt;syncfusion:GroupBar Name="groupBar1"&gt;
+<syncfusion:GroupBar Name="groupBar1">
 
-   &lt;syncfusion:GroupBarItem HeaderText="NewGroupBarItem1" IsSelected="True" &gt;
+   <syncfusion:GroupBarItem HeaderText="NewGroupBarItem1" IsSelected="True" >
 
-        &lt;syncfusion:GroupView&gt;
+        <syncfusion:GroupView>
 
-          &lt;syncfusion:GroupViewItem Text="New GroupViewItem" /&gt;
+          <syncfusion:GroupViewItem Text="New GroupViewItem" />
 
-        &lt;/syncfusion:GroupView&gt;
+        </syncfusion:GroupView>
 
-   &lt;/syncfusion:GroupBarItem&gt;
-
-
-
-   &lt;syncfusion:GroupBarItem HeaderText="NewGroupBarItem2" /&gt;
+   </syncfusion:GroupBarItem>
 
 
 
-   &lt;syncfusion:GroupBarItem HeaderText="NewGroupBarItem3"  /&gt;
+   <syncfusion:GroupBarItem HeaderText="NewGroupBarItem2" />
 
 
 
-&lt;/syncfusion:GroupBar&gt;
+   <syncfusion:GroupBarItem HeaderText="NewGroupBarItem3"  />
+
+
+
+</syncfusion:GroupBar>
 
 
 
@@ -107,7 +107,7 @@ This will generate the following GroupBar control.
 
 
 
-{ ![](Populating-Data_images/Populating-Data_img1.png) | markdownify }
+{{ '![](Populating-Data_images/Populating-Data_img1.png)' | markdownify }}
 {:.image }
 
 

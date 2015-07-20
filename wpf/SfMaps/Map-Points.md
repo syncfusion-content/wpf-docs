@@ -21,9 +21,9 @@ MapPointTemplate is a DataTemplate type, used to customize or override the defau
 
 [XAML]
 
-&lt;syncfusion:SfMap&gt;
+<syncfusion:SfMap>
 
-     &lt;syncfusion:SfMap.Layers&gt;
+     <syncfusion:SfMap.Layers>
 
          <syncfusion:ShapeFileLayer ShapeIDPath="NAME"  ShapeIDTableField="Continent"                                                         
 
@@ -31,25 +31,25 @@ MapPointTemplate is a DataTemplate type, used to customize or override the defau
 
                                     Uri=" MapApp.ShapeFiles.continent.shp">
 
-                 &lt;syncfusion:ShapeFileLayer.MapPointTemplate&gt;
+                 <syncfusion:ShapeFileLayer.MapPointTemplate>
 
-                     &lt;DataTemplate&gt;
+                     <DataTemplate>
 
                             <Ellipse Height="10" Width="10” Stroke="White"      
 
                                                  Fill="#8AC63C"/>
 
-                      &lt;/DataTemplate&gt;
+                      </DataTemplate>
 
-                 &lt;/syncfusion:ShapeFileLayer.MapPointTemplate&gt;
+                 </syncfusion:ShapeFileLayer.MapPointTemplate>
 
-         &lt;/syncfusion:ShapeFileLayer&gt;
+         </syncfusion:ShapeFileLayer>
 
 
 
-      &lt;/syncfusion:SfMap.Layers&gt;
+      </syncfusion:SfMap.Layers>
 
-&lt;/syncfusion:SfMap&gt;                     
+</syncfusion:SfMap>                     
 
 
 
@@ -63,31 +63,31 @@ MapPointPopupTemplate is a DataTemplate used to expose the template for the MapP
 
 [XAML]
 
-&lt;syncfusion:SfMap &gt;
+<syncfusion:SfMap >
 
-     &lt;syncfusion:SfMap.Layers&gt;
+     <syncfusion:SfMap.Layers>
 
          <syncfusion:ShapeFileLayer Background="White" EnableSelection="True" 
 
                                     Uri="MapApp.ShapeFiles.states.shp">
 
-              &lt;syncfusion:ShapeFileLayer.SubShapeFileLayers&gt;
+              <syncfusion:ShapeFileLayer.SubShapeFileLayers>
 
                  <syncfusion:SubShapeFileLayer   EnableSelection="True" 
 
                                     Uri="MapApp.ShapeFiles.landslide.shp">
 
-                  &lt;syncfusion:SubShapeFileLayer.MapPointPopupTemplate&gt;
+                  <syncfusion:SubShapeFileLayer.MapPointPopupTemplate>
 
-                        &lt;DataTemplate&gt;
+                        <DataTemplate>
 
                              <Border Background="#FF252525" Opacity="0.9"  Height="110"
 
                                      BorderThickness="0.5">
 
-                               &lt;StackPanel Margin="10,5,20,0"&gt;
+                               <StackPanel Margin="10,5,20,0">
 
-                                   &lt;StackPanel&gt;
+                                   <StackPanel>
 
                                        <TextBlock Text="Landslide Event in USA"  
 
@@ -95,35 +95,35 @@ MapPointPopupTemplate is a DataTemplate used to expose the template for the MapP
 
                                          FontSize="20"  FontFamily="Segoe UI" />
 
-                                    &lt;/StackPanel&gt;
+                                    </StackPanel>
 
-                            &lt;Grid Margin="10,5,10,0"&gt;
+                            <Grid Margin="10,5,10,0">
 
                                <Rectangle Stroke="#FF505050" StrokeDashArray="6 2" 
 
                                           Height="2"  VerticalAlignment="Center" />
 
-                            &lt;/Grid&gt;
+                            </Grid>
 
-                            &lt;Grid Margin="10,5,0,0" &gt;
+                            <Grid Margin="10,5,0,0" >
 
-                               &lt;Grid.ColumnDefinitions&gt;
+                               <Grid.ColumnDefinitions>
 
-                                    &lt;ColumnDefinition Width="0.41*"/&gt;
+                                    <ColumnDefinition Width="0.41*"/>
 
-                                    &lt;ColumnDefinition Width="0.1*"/&gt;
+                                    <ColumnDefinition Width="0.1*"/>
 
-                                    &lt;ColumnDefinition Width="0.49*"/&gt;
+                                    <ColumnDefinition Width="0.49*"/>
 
-                                &lt;/Grid.ColumnDefinitions&gt;
+                                </Grid.ColumnDefinitions>
 
-                                &lt;Grid.RowDefinitions&gt;
+                                <Grid.RowDefinitions>
 
-                                     &lt;RowDefinition/&gt;
+                                     <RowDefinition/>
 
-                                     &lt;RowDefinition/&gt;
+                                     <RowDefinition/>
 
-                                &lt;/Grid.RowDefinitions&gt;
+                                </Grid.RowDefinitions>
 
                              <TextBlock Foreground="#FFACACAC" Grid.Column="0" 
 
@@ -167,41 +167,41 @@ MapPointPopupTemplate is a DataTemplate used to expose the template for the MapP
 
                                         Text="{Binding [YEAR]}" />
 
-                          &lt;/Grid&gt;
+                          </Grid>
 
-                       &lt;/StackPanel&gt;
+                       </StackPanel>
 
-                    &lt;/Border&gt;
+                    </Border>
 
-                  &lt;/DataTemplate&gt;
+                  </DataTemplate>
 
-              &lt;/syncfusion:SubShapeFileLayer.MapPointPopupTemplate&gt;
+              </syncfusion:SubShapeFileLayer.MapPointPopupTemplate>
 
-              &lt;syncfusion:SubShapeFileLayer.MapPointTemplate&gt;
+              <syncfusion:SubShapeFileLayer.MapPointTemplate>
 
-                 &lt;DataTemplate&gt;
+                 <DataTemplate>
 
                       <Ellipse Height="10" Width="10" Margin="-10,-10,0,0" Stroke="White" 
 
                                                                          Fill="#8AC63C"/>
 
-                 &lt;/DataTemplate&gt;
+                 </DataTemplate>
 
-              &lt;/syncfusion:SubShapeFileLayer.MapPointTemplate&gt;
+              </syncfusion:SubShapeFileLayer.MapPointTemplate>
 
-           &lt;/syncfusion:SubShapeFileLayer&gt;
+           </syncfusion:SubShapeFileLayer>
 
-       &lt;/syncfusion:ShapeFileLayer.SubShapeFileLayers&gt;
+       </syncfusion:ShapeFileLayer.SubShapeFileLayers>
 
-     &lt;/syncfusion:ShapeFileLayer&gt;
+     </syncfusion:ShapeFileLayer>
 
-   &lt;/syncfusion:SfMap.Layers&gt;
+   </syncfusion:SfMap.Layers>
 
-&lt;/syncfusion:SfMap&gt;
+</syncfusion:SfMap>
 
 
 
-{ ![](Map-Points_images/Map-Points_img1.png) | markdownify }
+{{ '![](Map-Points_images/Map-Points_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -15,43 +15,43 @@ Appointment Tooltip is used to view the details of the appointment in user requi
 
 
 
-&lt;Schedule:SfSchedule ScheduleType="Week" Background="WhiteSmoke" &gt;
+<Schedule:SfSchedule ScheduleType="Week" Background="WhiteSmoke" >
 
-    &lt;Schedule:SfSchedule.AppointmentTooltipTemplate&gt;
+    <Schedule:SfSchedule.AppointmentTooltipTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;Grid Background="WhiteSmoke"  Height="90" Width="210"&gt;
+            <Grid Background="WhiteSmoke"  Height="90" Width="210">
 
-                &lt;Grid.RowDefinitions&gt;
+                <Grid.RowDefinitions>
 
-                    &lt;RowDefinition/&gt;
+                    <RowDefinition/>
 
-                    &lt;RowDefinition Height="10"/&gt;
+                    <RowDefinition Height="10"/>
 
-                    &lt;RowDefinition/&gt;
+                    <RowDefinition/>
 
-                    &lt;RowDefinition /&gt;
+                    <RowDefinition />
 
-                &lt;/Grid.RowDefinitions&gt;
+                </Grid.RowDefinitions>
 
-                &lt;Border Grid.Row="0" Background="{Binding AppointmentBackground}"&gt;
+                <Border Grid.Row="0" Background="{Binding AppointmentBackground}">
 
-                    &lt;TextBlock Margin="10,5,0,0"  FontSize="16" Text="{Binding Subject}" Grid.Row="0"/&gt;
+                    <TextBlock Margin="10,5,0,0"  FontSize="16" Text="{Binding Subject}" Grid.Row="0"/>
 
-                &lt;/Border&gt;
+                </Border>
 
-                &lt;TextBlock FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="20,0,0,0" Text="Location: " Grid.Row="2"/&gt;
+                <TextBlock FontSize="16" FontWeight="Bold" FontStyle="Italic" Margin="20,0,0,0" Text="Location: " Grid.Row="2"/>
 
-                &lt;TextBlock FontSize="16" Margin="20,0,0,0" Text="{Binding Location}" Grid.Row="3"/&gt;
+                <TextBlock FontSize="16" Margin="20,0,0,0" Text="{Binding Location}" Grid.Row="3"/>
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/Schedule:SfSchedule.AppointmentTooltipTemplate&gt;
+    </Schedule:SfSchedule.AppointmentTooltipTemplate>
 
-&lt;/Schedule:SfSchedule&gt;
+</Schedule:SfSchedule>
 
 
 
@@ -75,7 +75,7 @@ Location = "Hutchison Road"
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_23.jpg](Tooltip_images/Tooltip_img1.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_23.jpg](Tooltip_images/Tooltip_img1.jpeg)' | markdownify }}
 {:.image }
 
 

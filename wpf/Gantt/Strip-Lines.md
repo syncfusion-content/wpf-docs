@@ -282,7 +282,7 @@ The following code example illustrates binding the strip line collection to Stri
 
                    StripLines="{Binding StripCollection}">
 
-         &lt;sync:GanttControl.TaskAttributeMapping&gt;
+         <sync:GanttControl.TaskAttributeMapping>
 
                     <sync:TaskAttributeMapping TaskIdMapping="TaskId"
 
@@ -302,9 +302,9 @@ The following code example illustrates binding the strip line collection to Stri
 
                                             ResourceInfoMapping="Resources"/>
 
-         &lt;/sync:GanttControl.TaskAttributeMapping&gt;
+         </sync:GanttControl.TaskAttributeMapping>
 
-&lt;/sync:GanttControl&gt;                                                
+</sync:GanttControl>                                                
 
 
 
@@ -314,7 +314,7 @@ The following image shows the Resultant output:
 
 
 
-{ ![](Strip-Lines_images/Strip-Lines_img1.png) | markdownify }
+{{ '![](Strip-Lines_images/Strip-Lines_img1.png)' | markdownify }}
 {:.image }
 
 

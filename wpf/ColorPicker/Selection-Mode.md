@@ -16,7 +16,7 @@ To set the ColorSelection Mode as "HSV" for ColorEdit control, use the below cod
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding ColorEdit --&gt;&lt;syncfusion:ColorEdit  Margin="20" VisualizationStyle="HSV" Name="colorEdit"/&gt;</td></tr>
+[XAML]<!-- Adding ColorEdit --><syncfusion:ColorEdit  Margin="20" VisualizationStyle="HSV" Name="colorEdit"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of color editColorEdit colorEdit = new ColorEdit();//Setting selection mode as HSVcolorEdit.VisualizationStyle = ColorSelectionMode.HSV;    //Adding control to the windowthis.Content = colorEdit;</td></tr>
@@ -25,7 +25,7 @@ To set the ColorSelection Mode as "HSV" for ColorEdit control, use the below cod
 
 
 
-{ ![](Selection-Mode_images/Selection-Mode_img1.jpeg) | markdownify }
+{{ '![](Selection-Mode_images/Selection-Mode_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -59,7 +59,7 @@ this.Content = colorPicker;
 
 
 
-{ ![](Selection-Mode_images/Selection-Mode_img2.jpeg) | markdownify }
+{{ '![](Selection-Mode_images/Selection-Mode_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -91,7 +91,7 @@ this.Content = colorEdit;
 
 
 
-{ ![](Selection-Mode_images/Selection-Mode_img3.jpeg) | markdownify }
+{{ '![](Selection-Mode_images/Selection-Mode_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -123,7 +123,7 @@ this.Content = colorPicker;
 
 
 
-{ ![](Selection-Mode_images/Selection-Mode_img4.jpeg) | markdownify }
+{{ '![](Selection-Mode_images/Selection-Mode_img4.jpeg)' | markdownify }}
 {:.image }
 
 

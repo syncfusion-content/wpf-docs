@@ -462,7 +462,7 @@ To begin with, create a Word document with a single section and customized page 
 
 This creates an A4 size Word document with the four margins of the pages set to 72 points. The following screenshot shows how the document appears after customizing the page settings.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -486,7 +486,7 @@ You can add a header to a document and position it according to your requirement
 
 In the preceding code, the picture is appended to the paragraph, and the width and height of the picture are set to fit inside the cell. The following screenshot shows how the document looks after adding the logo.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -512,7 +512,7 @@ You can append address text to the paragraph by specifying the font and size in 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -552,7 +552,7 @@ Similarly, you can append the Merge field for the current date, and reuse the fo
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -578,7 +578,7 @@ The contents are displayed as shown in the following template document. You can 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -632,7 +632,7 @@ For the other rows, you can specify the cell format and string format just as fo
 
 The contents are displayed as shown in the following template document.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -658,7 +658,7 @@ The invoice template appears as shown in the following screenshot.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -682,7 +682,7 @@ You can add an empty paragraph to the footer of the current section and apply a 
 
 The invoice document appears as follows.
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -706,7 +706,7 @@ The final template document that is ready to be distributed, appears as follows.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -774,7 +774,7 @@ The final document that is ready to be distributed, appears as follows.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 

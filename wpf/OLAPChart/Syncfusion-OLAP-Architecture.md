@@ -17,13 +17,13 @@ Syncfusion's OLAP architecture allows you to build a full life cycle Reporting s
 
 Let us see how the Syncfusion OLAP components allow you to build a full life cycle Reporting solution for your enterprise.
 
-{ ![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img1.png) | markdownify }
+{{ '![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img1.png)' | markdownify }}
 {:.image }
 
 
 ### Class Structure Diagram
 
-{ ![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img2.png) | markdownify }
+{{ '![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img2.png)' | markdownify }}
 {:.image }
 
 

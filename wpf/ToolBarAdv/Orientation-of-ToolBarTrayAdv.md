@@ -17,47 +17,47 @@ The following code illustrates how to set orientation:
 
 [XAML]           
 
-            &lt;shared:ToolBarTrayAdv Orientation="Vertical" &gt;
+            <shared:ToolBarTrayAdv Orientation="Vertical" >
 
-                    &lt;shared:ToolBarAdv ToolBarName="Standard"&gt;
+                    <shared:ToolBarAdv ToolBarName="Standard">
 
-                        &lt;Button shared:ToolBarAdv.Icon="Images/NewDocumentHS.png"&gt;
+                        <Button shared:ToolBarAdv.Icon="Images/NewDocumentHS.png">
 
-                            &lt;Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/&gt;
+                            <Image Source="Images/NewDocumentHS.png" Width="16" Height="16"/>
 
-                        &lt;/Button&gt;
+                        </Button>
 
-                        &lt;Button  &gt;
+                        <Button  >
 
-                            &lt;Image Source="Images/openHS.png"  Width="16" Height="16"/&gt;
+                            <Image Source="Images/openHS.png"  Width="16" Height="16"/>
 
-                        &lt;/Button&gt;
+                        </Button>
 
-                    &lt;/shared:ToolBarAdv&gt;
+                    </shared:ToolBarAdv>
 
-                    &lt;shared:ToolBarAdv Band="1"   ToolBarName="Extras"&gt;
+                    <shared:ToolBarAdv Band="1"   ToolBarName="Extras">
 
-                        &lt;Button &gt;
+                        <Button >
 
-                            &lt;Image Source="Images/InsertPictureHS.png"  Width="16" Height="16"/&gt;
+                            <Image Source="Images/InsertPictureHS.png"  Width="16" Height="16"/>
 
-                        &lt;/Button&gt;
+                        </Button>
 
-                        &lt;Button  &gt;
+                        <Button  >
 
-                            &lt;Image Source="Images/InsertHyperlinkHS.png"  Width="16" Height="16"/&gt;
+                            <Image Source="Images/InsertHyperlinkHS.png"  Width="16" Height="16"/>
 
-                        &lt;/Button&gt;
+                        </Button>
 
-                        &lt;Button  &gt;
+                        <Button  >
 
-                            &lt;Image Source="Images/TableHS.png"  Width="16" Height="16"/&gt;
+                            <Image Source="Images/TableHS.png"  Width="16" Height="16"/>
 
-                        &lt;/Button&gt;
+                        </Button>
 
-                    &lt;/shared:ToolBarAdv&gt;
+                    </shared:ToolBarAdv>
 
-                &lt;/shared:ToolBarTrayAdv&gt;
+                </shared:ToolBarTrayAdv>
 
 
 
@@ -131,7 +131,7 @@ ToolBarTrayAdv tray = new ToolBarTrayAdv();
 
 
 
-{ ![](Orientation-of-ToolBarTrayAdv_images/Orientation-of-ToolBarTrayAdv_img1.png) | markdownify }
+{{ '![](Orientation-of-ToolBarTrayAdv_images/Orientation-of-ToolBarTrayAdv_img1.png)' | markdownify }}
 {:.image }
 
 

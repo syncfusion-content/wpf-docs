@@ -27,13 +27,13 @@ The following code example explains how to add a Digital Gauge in your applicati
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid Name="Grid"&gt;
+    <Grid Name="Grid">
 
-        &lt;syncfusion:SfDigitalGauge&gt;&lt;/syncfusion:SfDigitalGauge&gt;
+        <syncfusion:SfDigitalGauge></syncfusion:SfDigitalGauge>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -53,7 +53,7 @@ Screenshot:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -67,7 +67,7 @@ To add SfDigitalGauge Control, refer to the following steps:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -75,7 +75,7 @@ To add SfDigitalGauge Control, refer to the following steps:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -83,7 +83,7 @@ To add SfDigitalGauge Control, refer to the following steps:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -91,7 +91,7 @@ To add SfDigitalGauge Control, refer to the following steps:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -99,13 +99,13 @@ To add SfDigitalGauge Control, refer to the following steps:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -139,13 +139,13 @@ xmlns:syncfusion ="http://schemas.syncfusion.com/wpf"
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid Name="Grid"&gt;
+    <Grid Name="Grid">
 
-        &lt;syncfusion:SfDigitalGauge&gt;&lt;/syncfusion:SfDigitalGauge&gt;  
+        <syncfusion:SfDigitalGauge></syncfusion:SfDigitalGauge>  
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt; 
+</Window> 
 
 
 
@@ -189,7 +189,7 @@ namespace  DigitalGauge
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 

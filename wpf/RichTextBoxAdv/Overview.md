@@ -13,7 +13,7 @@ RichTextBoxAdv is a control for formatting text, such as aligning and indenting 
 
 
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 

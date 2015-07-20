@@ -44,7 +44,7 @@ Data Type</td></tr>
 <tr>
 <td>
 AutoPopulateColumns</td><td>
-By setting this property to {{ '_true_' | markdownify }}, the GridTree control populates the properties that are present in the underlying collection without defining them in the XAML or in C#.</td><td>
+By setting this property to {{{ ''_true_'' | markdownify }}}, the GridTree control populates the properties that are present in the underlying collection without defining them in the XAML or in C#.</td><td>
 Dependency Property</td><td>
 Boolean</td></tr>
 <tr>
@@ -64,7 +64,7 @@ In the GridTree control, you can populate the columns automatically by setting t
 
 [XAML]
 
-&lt;syncfusion:GridTreeControl Name="treeGrid" AutoPopulateColumns="True"&gt;
+<syncfusion:GridTreeControl Name="treeGrid" AutoPopulateColumns="True">
 
 
 
@@ -282,7 +282,7 @@ In GridTree control you can define the cell type for each column by using the pr
 * Static* TextBlock* TextBox* RichText* ExpanderCell* Data Template* ComboBox* DropDownList* CheckBox* Currency edit* Double edit* DateTime edit* Integer edit* Mask edit* Percent edit* Up Down edit* TimeSpan edit* Image* Hyperlink* Button</td></tr>
 <tr>
 <td>
-> <br>{{ '_Note: It is not possible to change the cell type for the first column of the GridTree control._' | markdownify }}</td></tr>
+> <br>{{{ ''_Note: It is not possible to change the cell type for the first column of the GridTree control._'' | markdownify }}}</td></tr>
 </table>
 #### Static
 
@@ -294,15 +294,15 @@ The following is an example of how to define such a column.
 
 [XAML]
 
-&lt;syncfusion:GridTreeColumn Width="150" MappingName="Address"&gt;
+<syncfusion:GridTreeColumn Width="150" MappingName="Address">
 
-                    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+                    <syncfusion:GridTreeColumn.StyleInfo>
 
-                        &lt;syncfusion:GridStyleInfo CellType="Static"/&gt;
+                        <syncfusion:GridStyleInfo CellType="Static"/>
 
-                    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+                    </syncfusion:GridTreeColumn.StyleInfo>
 
- &lt;/syncfusion:GridTreeColumn&gt;
+ </syncfusion:GridTreeColumn>
 
 
 
@@ -318,7 +318,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Address")
 
 
 
-{ ![](Columns_images/Columns_img1.png) | markdownify }
+{{ '![](Columns_images/Columns_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -336,15 +336,15 @@ The following is an example of how to define such a column.
 
 [XAML]
 
-&lt;syncfusion:GridTreeColumn Width="130" MappingName="FirstName"&gt;
+<syncfusion:GridTreeColumn Width="130" MappingName="FirstName">
 
-    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+    <syncfusion:GridTreeColumn.StyleInfo>
 
-        &lt;syncfusion:GridDataStyleInfo CellType="TextBlock" /&gt;
+        <syncfusion:GridDataStyleInfo CellType="TextBlock" />
 
-    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+    </syncfusion:GridTreeColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeColumn&gt;
+</syncfusion:GridTreeColumn>
 
 
 
@@ -372,7 +372,7 @@ The following screenshot shows a simple demo of this cell type.
 
 
 
-{ ![](Columns_images/Columns_img2.png) | markdownify }
+{{ '![](Columns_images/Columns_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -388,15 +388,15 @@ The following code snippet explains how to define such a column.
 
 [XAML]
 
-&lt;syncfusion:GridTreeColumn Width="130" MappingName="FirstName"&gt;
+<syncfusion:GridTreeColumn Width="130" MappingName="FirstName">
 
-    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+    <syncfusion:GridTreeColumn.StyleInfo>
 
-        &lt;syncfusion:GridDataStyleInfo CellType="TextBox" /&gt;
+        <syncfusion:GridDataStyleInfo CellType="TextBox" />
 
-    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+    </syncfusion:GridTreeColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeColumn&gt;
+</syncfusion:GridTreeColumn>
 
 
 
@@ -424,7 +424,7 @@ The following screenshot shows a simple demo of TextBox cell type.
 
 
 
-{ ![](Columns_images/Columns_img3.png) | markdownify }
+{{ '![](Columns_images/Columns_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -446,13 +446,13 @@ The following is an example of how to define such a column.
 
                                   MappingName="IsRead">
 
-                        &lt;syncfusion:GridDataVisibleColumn.ColumnStyle&gt;
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
 
-                            &lt;syncfusion:GridDataColumnStyle HorizontalAlignment="Center" CellType="RichText" /&gt;
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" CellType="RichText" />
 
-                        &lt;/syncfusion:GridDataVisibleColumn.ColumnStyle&gt;
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
 
-                    &lt;/syncfusion:GridDataVisibleColumn&gt;
+                    </syncfusion:GridDataVisibleColumn>
 
 
 
@@ -516,7 +516,7 @@ emp.Document = doc;
 
 
 
-{ ![](Columns_images/Columns_img4.png) | markdownify }
+{{ '![](Columns_images/Columns_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -568,7 +568,7 @@ private void treeGrid_RequestNodeImage(object sender, GridTreeRequestNodeImageEv
 
 
 
-{ ![](Columns_images/Columns_img5.png) | markdownify }
+{{ '![](Columns_images/Columns_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -636,9 +636,9 @@ The following example code shows a simple DataTemplate.
 
 [XAML]
 
-&lt;Window.Resources&gt;
+<Window.Resources>
 
-    &lt;DataTemplate x:Key="sliderTemplate"&gt;
+    <DataTemplate x:Key="sliderTemplate">
 
         <Slider Value="{Binding Path=CellBoundValue, Mode=TwoWay}" 
 
@@ -646,15 +646,15 @@ The following example code shows a simple DataTemplate.
 
                 Height="30" Width="150" />
 
-    &lt;/DataTemplate&gt;
+    </DataTemplate>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
 
 
-&lt;syncfusion:GridTreeColumn MappingName="Weight"&gt;
+<syncfusion:GridTreeColumn MappingName="Weight">
 
-    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+    <syncfusion:GridTreeColumn.StyleInfo>
 
         <syncfusion:GridDataStyleInfo 
 
@@ -664,9 +664,9 @@ The following example code shows a simple DataTemplate.
 
                     CellItemTemplate="{StaticResource sliderTemplate}"/>
 
-    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+    </syncfusion:GridTreeColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeColumn&gt;
+</syncfusion:GridTreeColumn>
 
 
 
@@ -698,7 +698,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Weight")
 
 
 
-{ ![](Columns_images/Columns_img6.png) | markdownify }
+{{ '![](Columns_images/Columns_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -772,7 +772,7 @@ The following is an example of how to define such a column.
 
                             MappingName="Department">
 
-    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+    <syncfusion:GridTreeColumn.StyleInfo>
 
         <syncfusion:GridDataStyleInfo CellType="ComboBox"
 
@@ -784,9 +784,9 @@ The following is an example of how to define such a column.
 
                                         ValueMember="Shipcity" />
 
-    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+    </syncfusion:GridTreeColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeColumn&gt;
+</syncfusion:GridTreeColumn>
 
 
 
@@ -818,7 +818,7 @@ We can change the combo box drop-down list style by using the GridDropDownStyle 
 
 
 
-{ ![](Columns_images/Columns_img7.png) | markdownify }
+{{ '![](Columns_images/Columns_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -904,7 +904,7 @@ The following is an example of how to define such a column.
 
                             MappingName="Department">
 
-    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+    <syncfusion:GridTreeColumn.StyleInfo>
 
         <syncfusion:GridDataStyleInfo CellType="DropDownList"
 
@@ -916,17 +916,17 @@ The following is an example of how to define such a column.
 
                                         ValueMember="Shipcity">
 
-            &lt;syncfusion:GridDataStyleInfo.DropdownEdit&gt;
+            <syncfusion:GridDataStyleInfo.DropdownEdit>
 
-                &lt;syncfusion:GridDropdownEditStyleInfo ShowButton="False"/&gt;
+                <syncfusion:GridDropdownEditStyleInfo ShowButton="False"/>
 
-            &lt;/syncfusion:GridDataStyleInfo.DropdownEdit&gt;
+            </syncfusion:GridDataStyleInfo.DropdownEdit>
 
-        &lt;/syncfusion:GridDataStyleInfo&gt;
+        </syncfusion:GridDataStyleInfo>
 
-    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+    </syncfusion:GridTreeColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeColumn&gt;
+</syncfusion:GridTreeColumn>
 
 
 
@@ -970,7 +970,7 @@ The following screenshot shows a simple demo of the DropDownList cell type.
 
 
 
-{ ![](Columns_images/Columns_img8.png) | markdownify }
+{{ '![](Columns_images/Columns_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -1002,15 +1002,15 @@ The following code shows how to define such a column.
 
 [XAML]
 
-&lt;syncfusion:GridTreeColumn MappingName="IsMajor"&gt;
+<syncfusion:GridTreeColumn MappingName="IsMajor">
 
-    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+    <syncfusion:GridTreeColumn.StyleInfo>
 
-        &lt;syncfusion:GridDataStyleInfo CellType="CheckBox" IsThreeState="False"/&gt;
+        <syncfusion:GridDataStyleInfo CellType="CheckBox" IsThreeState="False"/>
 
-    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+    </syncfusion:GridTreeColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeColumn&gt;
+</syncfusion:GridTreeColumn>
 
 
 
@@ -1038,7 +1038,7 @@ The following screenshot shows a simple demo of CheckBox cell type.
 
 
 
-{ ![](Columns_images/Columns_img9.png) | markdownify }
+{{ '![](Columns_images/Columns_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -1112,15 +1112,15 @@ The following code snippet explains how to define a CurrencyEdit column.
 
 [XAML]
 
-&lt;syncfusion:GridTreeColumn Width="130" MappingName="Salary"&gt;
+<syncfusion:GridTreeColumn Width="130" MappingName="Salary">
 
-    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+    <syncfusion:GridTreeColumn.StyleInfo>
 
-        &lt;syncfusion:GridDataColumnStyle CellType="CurrencyEdit" /&gt;
+        <syncfusion:GridDataColumnStyle CellType="CurrencyEdit" />
 
-    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+    </syncfusion:GridTreeColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeColumn&gt;
+</syncfusion:GridTreeColumn>
 
 
 
@@ -1136,7 +1136,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Salary")
 
 
 
-{ ![](Columns_images/Columns_img10.png) | markdownify }
+{{ '![](Columns_images/Columns_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -1194,15 +1194,15 @@ The following code demonstrates how to define an IntegerEdit column.
 
 [XAML]
 
-&lt;syncfusion:GridTreeColumn HeaderText="ID" MappingName="Employee ID"&gt;
+<syncfusion:GridTreeColumn HeaderText="ID" MappingName="Employee ID">
 
-    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+    <syncfusion:GridTreeColumn.StyleInfo>
 
-        &lt;syncfusion:GridStyleInfo CellType="IntegerEdit" /&gt;
+        <syncfusion:GridStyleInfo CellType="IntegerEdit" />
 
-    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+    </syncfusion:GridTreeColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeColumn&gt;
+</syncfusion:GridTreeColumn>
 
 
 
@@ -1222,7 +1222,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Employee ID")
 
 
 
-{ ![](Columns_images/Columns_img11.png) | markdownify }
+{{ '![](Columns_images/Columns_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -1288,15 +1288,15 @@ The following code sample demonstrates how to define a DoubleEdit column.
 
 [XAML]
 
-&lt;syncfusion:GridTreeColumn MappingName="Salary" HeaderText="Amount"&gt;
+<syncfusion:GridTreeColumn MappingName="Salary" HeaderText="Amount">
 
-    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+    <syncfusion:GridTreeColumn.StyleInfo>
 
-        &lt;syncfusion:GridDataColumnStyle CellType="DoubleEdit"/&gt;
+        <syncfusion:GridDataColumnStyle CellType="DoubleEdit"/>
 
-    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+    </syncfusion:GridTreeColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeColumn&gt;
+</syncfusion:GridTreeColumn>
 
 
 
@@ -1314,7 +1314,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Salary")
 
 
 
-{ ![](Columns_images/Columns_img12.png) | markdownify }
+{{ '![](Columns_images/Columns_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -1340,7 +1340,7 @@ Sets to PercentEdit.</td></tr>
 <tr>
 <td>
 PercentEditMode</td><td>
-Indicates how the the text can be edited in the PercentEdit cells.Possible values: {{ '_PercentMode_' | markdownify }} and {{ '_DoubleMode_' | markdownify }}.</td></tr>
+Indicates how the the text can be edited in the PercentEdit cells.Possible values: {{{ ''_PercentMode_'' | markdownify }}} and {{{ ''_DoubleMode_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 PercentSymbol</td><td>
@@ -1386,23 +1386,23 @@ The following code sample demonstrates how to define a PercentEdit column.
 
 [XAML]
 
-&lt;syncfusion:GridTreeColumn MappingName="Hike"&gt;
+<syncfusion:GridTreeColumn MappingName="Hike">
 
-    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+    <syncfusion:GridTreeColumn.StyleInfo>
 
-        &lt;syncfusion:GridStyleInfo HorizontalAlignment="Right" CellType="PercentEdit"&gt;
+        <syncfusion:GridStyleInfo HorizontalAlignment="Right" CellType="PercentEdit">
 
-            &lt;syncfusion:GridStyleInfo.PercentEdit&gt;
+            <syncfusion:GridStyleInfo.PercentEdit>
 
-                &lt;syncfusion:GridPercentEditStyleInfo IsScrollingOnCircle="False" /&gt;
+                <syncfusion:GridPercentEditStyleInfo IsScrollingOnCircle="False" />
 
-            &lt;/syncfusion:GridStyleInfo.PercentEdit&gt;
+            </syncfusion:GridStyleInfo.PercentEdit>
 
-        &lt;/syncfusion:GridStyleInfo&gt;
+        </syncfusion:GridStyleInfo>
 
-    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+    </syncfusion:GridTreeColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeColumn&gt;
+</syncfusion:GridTreeColumn>
 
 
 
@@ -1436,7 +1436,7 @@ treeGrid.Columns.Add(percentColumn);
 
 
 
-{ ![](Columns_images/Columns_img13.png) | markdownify }
+{{ '![](Columns_images/Columns_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -1470,11 +1470,11 @@ Sets the maximum and minimum values for a DateTime cell.</td></tr>
 <tr>
 <td>
 IsCalendarEnabled</td><td>
-Enables the calendar pop-up when set to {{ '_true_' | markdownify }}.</td></tr>
+Enables the calendar pop-up when set to {{{ ''_true_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 IsWatchEnabled</td><td>
-Enables the watch pop-up when set to {{ '_true_' | markdownify }}.</td></tr>
+Enables the watch pop-up when set to {{{ ''_true_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 NoneDateText</td><td>
@@ -1490,15 +1490,15 @@ By setting true//false you can enable/disable editing of the cell</td></tr>
 <tr>
 <td>
 IsEmptyDateEnabled</td><td>
-You can leave a cell with an empty value, when you set this property to {{ '_true_' | markdownify }}.</td></tr>
+You can leave a cell with an empty value, when you set this property to {{{ ''_true_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 IsEnabledRepeatButton</td><td>
-The RepeatButton can be disabled by applying {{ '_false_' | markdownify }} to this property.</td></tr>
+The RepeatButton can be disabled by applying {{{ ''_false_'' | markdownify }}} to this property.</td></tr>
 <tr>
 <td>
 IsVisibleRepeatButton</td><td>
-The visibility of the Repeat Button can be enabled by setting the {{ '_IsEnabledRepeatButton_' | markdownify }} property to {{ '_true._' | markdownify }}</td></tr>
+The visibility of the Repeat Button can be enabled by setting the {{{ ''_IsEnabledRepeatButton_'' | markdownify }}} property to {{{ ''_true._'' | markdownify }}}</td></tr>
 <tr>
 <td>
 NoneDateText</td><td>
@@ -1572,15 +1572,15 @@ The following code sample demonstrates how to define a column with DateTime Edit
 
 [XAML]
 
-&lt;syncfusion:GridTreeColumn HeaderText="DOB" MappingName="Birth Date"&gt;
+<syncfusion:GridTreeColumn HeaderText="DOB" MappingName="Birth Date">
 
-    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+    <syncfusion:GridTreeColumn.StyleInfo>
 
-        &lt;syncfusion:GridStyleInfo CellType="DateTimeEdit" /&gt;
+        <syncfusion:GridStyleInfo CellType="DateTimeEdit" />
 
-    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+    </syncfusion:GridTreeColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeColumn&gt;
+</syncfusion:GridTreeColumn>
 
 
 
@@ -1598,7 +1598,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Birth Date")
 
 
 
-{ ![](Columns_images/Columns_img14.png) | markdownify }
+{{ '![](Columns_images/Columns_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -1646,15 +1646,15 @@ The following code sample demonstrates how to define a MaskEdit column.
 
 [XAML]
 
-&lt;syncfusion:GridTreeColumn MappingName="LastName"&gt;
+<syncfusion:GridTreeColumn MappingName="LastName">
 
-    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+    <syncfusion:GridTreeColumn.StyleInfo>
 
-        &lt;syncfusion:GridDataStyleInfo CellType="MaskEdit" /&gt;
+        <syncfusion:GridDataStyleInfo CellType="MaskEdit" />
 
-    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+    </syncfusion:GridTreeColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeColumn&gt;
+</syncfusion:GridTreeColumn>
 
 
 
@@ -1672,7 +1672,7 @@ treeGrid.Columns.Add(new GridTreeColumn("LastName")
 
 
 
-{ ![](Columns_images/Columns_img15.png) | markdownify }
+{{ '![](Columns_images/Columns_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -1728,15 +1728,15 @@ The following sample demonstrates how to define a column with UpDownEdit cells.
 
 [XAML]
 
-&lt;syncfusion:GridTreeColumn MappingName="Rating"&gt;
+<syncfusion:GridTreeColumn MappingName="Rating">
 
-    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+    <syncfusion:GridTreeColumn.StyleInfo>
 
-        &lt;syncfusion:GridStyleInfo CellType="UpDownEdit" /&gt;
+        <syncfusion:GridStyleInfo CellType="UpDownEdit" />
 
-    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+    </syncfusion:GridTreeColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeColumn&gt;
+</syncfusion:GridTreeColumn>
 
 
 
@@ -1768,7 +1768,7 @@ treeGrid.Columns.Add(updownColumn);
 
 
 
-{ ![](Columns_images/Columns_img16.png) | markdownify }
+{{ '![](Columns_images/Columns_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -1808,15 +1808,15 @@ The following code sample demonstrates how to define a column with TimeSpanEdit 
 
 [XAML]
 
-&lt;syncfusion:GridTreeColumn HeaderText="Time Avail" MappingName="Time"&gt;
+<syncfusion:GridTreeColumn HeaderText="Time Avail" MappingName="Time">
 
-    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+    <syncfusion:GridTreeColumn.StyleInfo>
 
-        &lt;syncfusion:GridDataColumnStyle CellType="TimeSpanEdit" /&gt;
+        <syncfusion:GridDataColumnStyle CellType="TimeSpanEdit" />
 
-    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+    </syncfusion:GridTreeColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeColumn&gt;
+</syncfusion:GridTreeColumn>
 
 
 
@@ -1834,7 +1834,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Time")
 
 
 
-{ ![](Columns_images/Columns_img17.png) | markdownify }
+{{ '![](Columns_images/Columns_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -1882,15 +1882,15 @@ The following code sample demonstrates how to define a column with Image cells.
 
 [XAML]
 
-&lt;syncfusion:GridTreeColumn MappingName="Image" HeaderText="Progress"&gt;
+<syncfusion:GridTreeColumn MappingName="Image" HeaderText="Progress">
 
-    &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+    <syncfusion:GridTreeColumn.StyleInfo>
 
-        &lt;syncfusion:GridStyleInfo CellType="ImageCell" /&gt;
+        <syncfusion:GridStyleInfo CellType="ImageCell" />
 
-    &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+    </syncfusion:GridTreeColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeColumn&gt;
+</syncfusion:GridTreeColumn>
 
 
 
@@ -1908,7 +1908,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Image")
 
 
 
-{ ![](Columns_images/Columns_img18.png) | markdownify }
+{{ '![](Columns_images/Columns_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -1942,15 +1942,15 @@ The following code shows how to define such a column.
 
 [XAML]
 
-&lt;syncfusion:GridTreeColumn HeaderText="Department" MappingName="Department"&gt;
+<syncfusion:GridTreeColumn HeaderText="Department" MappingName="Department">
 
-                        &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+                        <syncfusion:GridTreeColumn.StyleInfo>
 
-                            &lt;syncfusion:GridStyleInfo CellType="Hyperlink" /&gt;
+                            <syncfusion:GridStyleInfo CellType="Hyperlink" />
 
-                        &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+                        </syncfusion:GridTreeColumn.StyleInfo>
 
-                    &lt;/syncfusion:GridTreeColumn&gt;
+                    </syncfusion:GridTreeColumn>
 
 
 
@@ -1974,7 +1974,7 @@ this.treeGrid.Columns.Add(new GridTreeColumn("Department")
 
 The following screenshot shows a simple demo of Hyperlink cell.
 
-{ ![](Columns_images/Columns_img19.png) | markdownify }
+{{ '![](Columns_images/Columns_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -2008,15 +2008,15 @@ The following code snippet shows a simple demo of Button cell type.
 
 [XAML]
 
-&lt;syncfusion:GridTreeColumn HeaderText="Department" MappingName="Department"&gt;
+<syncfusion:GridTreeColumn HeaderText="Department" MappingName="Department">
 
-                        &lt;syncfusion:GridTreeColumn.StyleInfo&gt;
+                        <syncfusion:GridTreeColumn.StyleInfo>
 
-                            &lt;syncfusion:GridStyleInfo CellType="Button" /&gt;
+                            <syncfusion:GridStyleInfo CellType="Button" />
 
-                        &lt;/syncfusion:GridTreeColumn.StyleInfo&gt;
+                        </syncfusion:GridTreeColumn.StyleInfo>
 
-                    &lt;/syncfusion:GridTreeColumn&gt;
+                    </syncfusion:GridTreeColumn>
 
 
 
@@ -2042,7 +2042,7 @@ The following screenshot shows a simple demo of Button cell type.
 
 
 
-{ ![](Columns_images/Columns_img20.png) | markdownify }
+{{ '![](Columns_images/Columns_img20.png)' | markdownify }}
 {:.image }
 
 
@@ -2166,13 +2166,13 @@ The following code snippet shows a simple usage of Format.
 
                                     MappingName="CarCost">
 
-    &lt;syncfusion:GridTreeUnboundColumn.StyleInfo&gt;
+    <syncfusion:GridTreeUnboundColumn.StyleInfo>
 
-        &lt;syncfusion:GridStyleInfo HorizontalAlignment="Right" /&gt;
+        <syncfusion:GridStyleInfo HorizontalAlignment="Right" />
 
-    &lt;/syncfusion:GridTreeUnboundColumn.StyleInfo&gt;
+    </syncfusion:GridTreeUnboundColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeUnboundColumn&gt; 
+</syncfusion:GridTreeUnboundColumn> 
 
 <syncfusion:GridTreeUnboundColumn Format="'{Cost:c} of {Model}'"
 
@@ -2180,11 +2180,11 @@ The following code snippet shows a simple usage of Format.
 
                                     MappingName="ModelCost">
 
-    &lt;syncfusion:GridTreeUnboundColumn.StyleInfo&gt;
+    <syncfusion:GridTreeUnboundColumn.StyleInfo>
 
-        &lt;syncfusion:GridStyleInfo HorizontalAlignment="Right" /&gt;
+        <syncfusion:GridStyleInfo HorizontalAlignment="Right" />
 
-    &lt;/syncfusion:GridTreeUnboundColumn.StyleInfo&gt;
+    </syncfusion:GridTreeUnboundColumn.StyleInfo>
 
 </syncfusion:GridTreeUnboundColumn
 
@@ -2206,7 +2206,7 @@ treeGrid.Columns.Add(new GridTreeUnboundColumn() { 
 
 
 
-{ ![](Columns_images/Columns_img21.png) | markdownify }
+{{ '![](Columns_images/Columns_img21.png)' | markdownify }}
 {:.image }
 
 
@@ -2251,61 +2251,61 @@ Adds the first argument with the second argument or subtracts the second argumen
 <td>
 Or</td><td>
 OR</td><td>
-Returns 1, if either the first argument or the second one returns {{ '_true_' | markdownify }}.</td><td>
+Returns 1, if either the first argument or the second one returns {{{ ''_true_'' | markdownify }}}.</td><td>
 [Val]=50 OR [Val]=100</td></tr>
 <tr>
 <td>
 And</td><td>
 AND</td><td>
-Returns 1, if both the parameters return {{ '_true_' | markdownify }}.</td><td>
+Returns 1, if both the parameters return {{{ ''_true_'' | markdownify }}}.</td><td>
 [Val]< 50 AND [Val]>100</td></tr>
 <tr>
 <td>
 Less than</td><td>
 <</td><td>
-Returns {{ '_true,_' | markdownify }} if the first parameter is less than the second one.</td><td>
+Returns {{{ ''_true,_'' | markdownify }}} if the first parameter is less than the second one.</td><td>
 [OrderID] < 2000</td></tr>
 <tr>
 <td>
 Greater than</td><td>
 ></td><td>
-Returns {{ '_true,_' | markdownify }} if the first parameter is greater than the second one.</td><td>
+Returns {{{ ''_true,_'' | markdownify }}} if the first parameter is greater than the second one.</td><td>
 [OrderID] > 2500</td></tr>
 <tr>
 <td>
 Less than Or Equal to</td><td>
 <=</td><td>
-Returns {{ '_true,_' | markdownify }} if the first parameter is less than or equal to the second one.</td><td>
+Returns {{{ ''_true,_'' | markdownify }}} if the first parameter is less than or equal to the second one.</td><td>
 [OrderID] <= 2050</td></tr>
 <tr>
 <td>
 Greater than Or Equal to</td><td>
 >=</td><td>
-Returns {{ '_true,_' | markdownify }} if the first parameter is greater than or equal to the second one.</td><td>
+Returns {{{ ''_true,_'' | markdownify }}} if the first parameter is greater than or equal to the second one.</td><td>
 [OrderID] >= 2056</td></tr>
 <tr>
 <td>
 Equal</td><td>
 =</td><td>
-Returns {{ '_true,_' | markdownify }} if both the arguments have the same value.</td><td>
+Returns {{{ ''_true,_'' | markdownify }}} if both the arguments have the same value.</td><td>
 [CustomerID] = 90</td></tr>
 <tr>
 <td>
 Not Equal to</td><td>
-&lt;&gt;</td><td>
-Returns {{ '_true,_' | markdownify }} if both the arguments does not have the same value.</td><td>
-[CustomerID] &lt;&gt; 95</td></tr>
+<></td><td>
+Returns {{{ ''_true,_'' | markdownify }}} if both the arguments does not have the same value.</td><td>
+[CustomerID] <> 95</td></tr>
 <tr>
 <td>
 StartsWith</td><td>
 StartsWith</td><td>
-Returns {{ '_true,_' | markdownify }} if the value starts with the given string.</td><td>
+Returns {{{ ''_true,_'' | markdownify }}} if the value starts with the given string.</td><td>
 ProductName StartsWith Chai</td></tr>
 <tr>
 <td>
 EndsWith</td><td>
 EndsWith</td><td>
-Returns {{ '_true,_' | markdownify }} if the value ends with the specified string.</td><td>
+Returns {{{ ''_true,_'' | markdownify }}} if the value ends with the specified string.</td><td>
 PruductName EndsWith i</td></tr>
 <tr>
 <td>
@@ -2330,13 +2330,13 @@ The following code snippet shows a simple way to use expressions.
 
                                     PercentWidth="2">
 
-    &lt;syncfusion:GridTreeUnboundColumn.StyleInfo&gt;
+    <syncfusion:GridTreeUnboundColumn.StyleInfo>
 
-     &lt;syncfusion:GridStyleInfo HorizontalAlignment="Right" CellType="CurrencyEdit" /&gt;
+     <syncfusion:GridStyleInfo HorizontalAlignment="Right" CellType="CurrencyEdit" />
 
-    &lt;/syncfusion:GridTreeUnboundColumn.StyleInfo&gt;
+    </syncfusion:GridTreeUnboundColumn.StyleInfo>
 
-&lt;/syncfusion:GridTreeUnboundColumn&gt;
+</syncfusion:GridTreeUnboundColumn>
 
 
 
@@ -2348,7 +2348,7 @@ Expression = "Quantity*Cost" });
 
 
 
-{ ![](Columns_images/Columns_img22.png) | markdownify }
+{{ '![](Columns_images/Columns_img22.png)' | markdownify }}
 {:.image }
 
 

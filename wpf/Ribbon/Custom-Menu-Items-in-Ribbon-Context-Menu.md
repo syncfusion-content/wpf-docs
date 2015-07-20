@@ -17,23 +17,23 @@ Ribbon Context Menu now supports display of custom items. You can add custom ite
 
 
 
-&lt;syncfusion:Ribbon Name="ribbon" syncfusion:RibbonContextMenu.IsCustomContextMenuItemsOnTop="True" &gt;
+<syncfusion:Ribbon Name="ribbon" syncfusion:RibbonContextMenu.IsCustomContextMenuItemsOnTop="True" >
 
- 	&lt;syncfusion:RibbonContextMenu.CustomContextMenuItems &gt;                
+ 	<syncfusion:RibbonContextMenu.CustomContextMenuItems >                
 
-       		&lt;syncfusion:RibbonMenuItem Header="Edit" IsCheckable="True" / &gt;                  
+       		<syncfusion:RibbonMenuItem Header="Edit" IsCheckable="True" / >                  
 
-       		&lt;syncfusion:RibbonMenuItem Header="Delete" IsCheckable="True"  /&gt;                               
+       		<syncfusion:RibbonMenuItem Header="Delete" IsCheckable="True"  />                               
 
-       		&lt;syncfusion:RibbonMenuItem Header="Rename" IsCheckable="True"  /&gt;                                
+       		<syncfusion:RibbonMenuItem Header="Rename" IsCheckable="True"  />                                
 
- 	&lt;/syncfusion:RibbonContextMenu.CustomContextMenuItems&gt;
+ 	</syncfusion:RibbonContextMenu.CustomContextMenuItems>
 
-&lt;/syncfusion:Ribbon&gt;
+</syncfusion:Ribbon>
 
 
 
-{ ![](Custom-Menu-Items-in-Ribbon-Context-Menu_images/Custom-Menu-Items-in-Ribbon-Context-Menu_img1.jpeg) | markdownify }
+{{ '![](Custom-Menu-Items-in-Ribbon-Context-Menu_images/Custom-Menu-Items-in-Ribbon-Context-Menu_img1.jpeg)' | markdownify }}
 {:.image }
 
 

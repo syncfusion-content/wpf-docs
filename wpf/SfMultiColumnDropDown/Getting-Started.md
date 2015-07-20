@@ -39,11 +39,11 @@ You can either drag the control from Visual Studio or Expression Blend, or add t
 
 [XAML]
 
-&lt;Window xmlns:syncfusion="http://schemas.syncfusion.com/wpf"&gt;
+<Window xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
-&lt;syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"/&gt;
+<syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"/>
 
-&lt;/Window&gt;
+</Window>
 
 Populating With Data
 
@@ -57,7 +57,7 @@ Once you have added the SfMultiColumnDropDownControl to your application, you ma
 
 The following screenshot illustrates the structure of the SfMultiColumnDropDown control.
 
-{ ![B:/Support/2015/April/24/Image/ControlStructure.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/ControlStructure.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -229,11 +229,11 @@ private ObservableCollection<Data> employeeDetails;
 
 
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-  &lt;local:Viewmodel/&gt;
+  <local:Viewmodel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -249,7 +249,7 @@ private ObservableCollection<Data> employeeDetails;
 
 The following screenshot illustrates the output of the above code.
 
-{ ![B:/Support/2015/April/24/Image/Figure2.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/Figure2.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -265,11 +265,11 @@ The following code example illustrates how to add SfMultiColumnDropDownControl i
 
 
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-  &lt;local:Viewmodel/&gt;
+  <local:Viewmodel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -279,11 +279,11 @@ The following code example illustrates how to add SfMultiColumnDropDownControl i
 
         syncfusion:SfDataGrid.Columns>
 
-                &lt;syncfusion:GridTextColumn MappingName="Name"/&gt;
+                <syncfusion:GridTextColumn MappingName="Name"/>
 
-                &lt;syncfusion:GridTextColumn MappingName="Designation"/&gt;
+                <syncfusion:GridTextColumn MappingName="Designation"/>
 
-                &lt;syncfusion:GridTextColumn MappingName="City"/&gt;
+                <syncfusion:GridTextColumn MappingName="City"/>
 
                 <syncfusion:GridMultiColumnDropDownList ItemsSource="{Binding EmpDetails}"
 
@@ -297,31 +297,31 @@ The following code example illustrates how to add SfMultiColumnDropDownControl i
 
                                                   AllowEditing="True">                                                        
 
-                    &lt;syncfusion:GridMultiColumnDropDownList.Columns &gt;
+                    <syncfusion:GridMultiColumnDropDownList.Columns >
 
-                        &lt;syncfusion:Columns&gt;
+                        <syncfusion:Columns>
 
-                            &lt;syncfusion:GridTextColumn MappingName="Name" /&gt;
+                            <syncfusion:GridTextColumn MappingName="Name" />
 
-                            &lt;syncfusion:GridTextColumn MappingName="Designation" /&gt;
+                            <syncfusion:GridTextColumn MappingName="Designation" />
 
-                            &lt;syncfusion:GridTextColumn MappingName="City" /&gt;
+                            <syncfusion:GridTextColumn MappingName="City" />
 
-                             &lt;syncfusion:GridTextColumn MappingName="Country" /&gt;                        
+                             <syncfusion:GridTextColumn MappingName="Country" />                        
 
-                        &lt;/syncfusion:Columns&gt;
+                        </syncfusion:Columns>
 
-                    &lt;/syncfusion:GridMultiColumnDropDownList.Columns &gt;
+                    </syncfusion:GridMultiColumnDropDownList.Columns >
 
-                &lt;/syncfusion:GridMultiColumnDropDownList&gt;
+                </syncfusion:GridMultiColumnDropDownList>
 
-            &lt;/syncfusion:SfDataGrid.Columns&gt;
+            </syncfusion:SfDataGrid.Columns>
 
-        &lt;/syncfusion:SfDataGrid&gt;
+        </syncfusion:SfDataGrid>
 
 The following screenshot displays the output for MultiColumnControl inside the SfDataGrid.
 
-{ ![B:/Support/2015/April/24/Image/Figure3.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![B:/Support/2015/April/24/Image/Figure3.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 

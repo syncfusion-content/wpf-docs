@@ -32,7 +32,7 @@ The following were the properties of Value cells that can be formatted:
 
 
 
-{ ![Grid Style Dialog](Grid-Styling_images/Grid-Styling_img1.png) | markdownify }
+{{ '![Grid Style Dialog](Grid-Styling_images/Grid-Styling_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -178,5 +178,5 @@ Sample Location
 
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\&lt;Versionnumber&gt;\BI\WPF\OlapGrid.WPF\Samples\Exporting\Exporting Grid Demo
+..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Exporting\Exporting Grid Demo
 

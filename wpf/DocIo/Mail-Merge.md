@@ -17,13 +17,13 @@ The following steps illustrate how to perform Mail Merge:
 
 
 
-{ ![](Mail-Merge_images/Mail-Merge_img1.png) | markdownify }
+{{ '![](Mail-Merge_images/Mail-Merge_img1.png)' | markdownify }}
 {:.image }
 
 
 1. Enter the merge field name, and the text to be inserted before and after the field. Note that the merge field name should match the field name of the data source.
 
-{ ![](Mail-Merge_images/Mail-Merge_img2.png) | markdownify }
+{{ '![](Mail-Merge_images/Mail-Merge_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -358,15 +358,15 @@ You can merge outer group fields placed within inner nested group using Nested M
 
 1. Implicit group:
 
-&lt;&lt;FieldName&gt;>
+<<FieldName>>
 
-&lt;&lt;Image:FieldName &gt;>
+<<Image:FieldName >>
 
 2. Explicit group:
 
-&lt;&lt;TableName:FieldName&gt;>
+<<TableName:FieldName>>
 
-&lt;&lt; Image:TableName:FieldName &gt;>
+<< Image:TableName:FieldName >>
 
 Nested Mail Merge with relational Objects
 
@@ -534,15 +534,15 @@ System.Diagnostics.Process.Start( "NestedMailMerge.doc" );
 
 
 
-///&lt;summary&gt;
+///<summary>
 
 ///Gets the table
 
-///&lt;/summary&gt;
+///</summary>
 
-///&lt;param name="sqlQuery"&gt;&lt;/param&gt;
+///<param name="sqlQuery"></param>
 
-///&lt;returns&gt;&lt;/returns&gt;
+///<returns></returns>
 
 private DataTable GetNestedDataTable( string sqlQuery )
 
@@ -658,15 +658,15 @@ System.Diagnostics.Process.Start("NestedMailMerge.doc")
 
 End Sub
 
-'/ &lt;summary&gt;
+'/ <summary>
 
 '/ Get the table
 
-'/ &lt;/summary&gt;
+'/ </summary>
 
-'/ &lt;param name="sqlQuery"&gt;&lt;/param&gt;
+'/ <param name="sqlQuery"></param>
 
-'/ &lt;returns&gt;&lt;/returns&gt;
+'/ <returns></returns>
 
 Private Function GetNestedDataTable(ByVal sqlQuery As String) As DataTable
 
@@ -1792,7 +1792,7 @@ prevTagWasElement = False
 
 ElementName = String.Empty
 
-While readOn AndAlso Me.reader.NodeType &lt;&gt; XmlNodeType.Text
+While readOn AndAlso Me.reader.NodeType <> XmlNodeType.Text
 
 'If the current element is empty, stop reading and return false.
 
@@ -2094,7 +2094,7 @@ document.Save("sample.doc");
 
 
 
-///&lt;summary&gt;
+///<summary>
 
 ///Called for every merge field encountered in the document.
 
@@ -2102,7 +2102,7 @@ document.Save("sample.doc");
 
 ///else with the document. In this case we modify cell formatting.
 
-///&lt;/summary&gt;     
+///</summary>     
 
 
 
@@ -2124,11 +2124,11 @@ args.CharacterFormat.TextColor = Color.FromArgb( 255 , 102 ,0 );
 
 
 
-///&lt;summary&gt;
+///<summary>
 
 ///Creates DataTable and fills it with data.
 
-///&lt;/summary&gt;
+///</summary>
 
 private static DataTable GetDataTable()
 
@@ -2182,7 +2182,7 @@ document.Save("sample.doc")
 
 End Sub
 
-'&lt;summary&gt;
+'<summary>
 
 'Called for every merge field encountered in the document.
 
@@ -2190,7 +2190,7 @@ End Sub
 
 'else with the document. In this case we modify cell formatting.
 
-'&lt;/summary&gt;     
+'</summary>     
 
 Private Sub AlternateRows_MergeField(ByVal sender As Object, ByVal args As MergeFieldEventArgs)
 
@@ -2204,11 +2204,11 @@ End If
 
 End Sub
 
-'&lt;summary&gt;
+'<summary>
 
 'Creates DataTable and fills it with data.
 
-'&lt;/summary&gt;
+'</summary>
 
 Private Shared Function GetDataTable() As DataTable
 
@@ -2274,13 +2274,13 @@ document.Save("sample.doc");
 
 }
 
-///&lt;summary&gt;
+///<summary>
 
 ///This is called when mail merge engine encounters Image:XXX merge field in the document.
 
 ///You have a chance to return an image object, file name, or a stream that contains an image.
 
-///&lt;/summary&gt;
+///</summary>
 
 private void MergeField_ProductImage(object sender, MergeImageFieldEventArgs args)
 
@@ -2300,11 +2300,11 @@ args.Image = Image.FromFile (ProductFileName ) );
 
 }
 
-//&lt;summary&gt;
+//<summary>
 
 ///Creates DataTable and fills it with data.
 
-///&lt;/summary&gt;
+///</summary>
 
 private static DataTable GetDataTable()
 
@@ -2356,13 +2356,13 @@ document.Save("sample.doc")
 
 End Sub
 
-'''&lt;summary&gt;
+'''<summary>
 
 '''This is called when mail merge engine encounters Image:XXX merge field in a document.
 
 '''You have a chance to return an Image object, file name or a stream that contains the image.
 
-'''&lt;/summary&gt;
+'''</summary>
 
 Private Sub MergeField_ProductImage(ByVal sender As Object, ByVal args As MergeImageFieldEventArgs)
 
@@ -2378,11 +2378,11 @@ End If
 
 End Sub
 
-'''&lt;summary&gt;
+'''<summary>
 
 '''Creates DataTable and fills it with data.
 
-'''&lt;/summary&gt;
+'''</summary>
 
 Private Shared Function GetDataTable() As DataTable
 

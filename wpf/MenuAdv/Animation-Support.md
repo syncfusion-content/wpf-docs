@@ -23,45 +23,45 @@ If the PopUpAnimationType property is set to Fade, the submenu will open with fa
 
 [XAML]
 
-&lt;shared:MenuAdv x:Name="Menu" Margin="10" PopUpAnimationType="Slide”&gt;
+<shared:MenuAdv x:Name="Menu" Margin="10" PopUpAnimationType="Slide”>
 
-                &lt;shared:MenuItemAdv Header="File"/&gt;
+                <shared:MenuItemAdv Header="File"/>
 
-                &lt;shared:MenuItemAdv Header="Edit"/&gt;
+                <shared:MenuItemAdv Header="Edit"/>
 
-                &lt;shared:MenuItemAdv Header="View"/&gt;
+                <shared:MenuItemAdv Header="View"/>
 
-                &lt;shared:MenuItemAdv Header="Project"/&gt;
+                <shared:MenuItemAdv Header="Project"/>
 
-                &lt;shared:MenuItemAdv Header="VerticalAnimation"&gt;
+                <shared:MenuItemAdv Header="VerticalAnimation">
 
-                    &lt;shared:MenuItemAdv Header="HorizontalAnimation"&gt;
+                    <shared:MenuItemAdv Header="HorizontalAnimation">
 
-                          &lt;shared:MenuItemAdv Header="Item1"/&gt;
+                          <shared:MenuItemAdv Header="Item1"/>
 
-                          &lt;shared:MenuItemAdv Header="Item2"/&gt;
+                          <shared:MenuItemAdv Header="Item2"/>
 
-                          &lt;shared:MenuItemAdv Header="Item3"/&gt;
+                          <shared:MenuItemAdv Header="Item3"/>
 
-                          &lt;shared:MenuItemAdv Header="Item4"/&gt;
+                          <shared:MenuItemAdv Header="Item4"/>
 
-                          &lt;shared:MenuItemAdv Header="Item5"/&gt;
+                          <shared:MenuItemAdv Header="Item5"/>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                    &lt;shared:MenuItemAdv Header="Item1"/&gt;
+                    <shared:MenuItemAdv Header="Item1"/>
 
-                    &lt;shared:MenuItemAdv Header="Item2"/&gt;
+                    <shared:MenuItemAdv Header="Item2"/>
 
-                    &lt;shared:MenuItemAdv Header="Item3"/&gt;
+                    <shared:MenuItemAdv Header="Item3"/>
 
-                    &lt;shared:MenuItemAdv Header="Item4"/&gt;
+                    <shared:MenuItemAdv Header="Item4"/>
 
-                    &lt;shared:MenuItemAdv Header="Item5"/&gt;
+                    <shared:MenuItemAdv Header="Item5"/>
 
-                &lt;/shared:MenuItemAdv&gt;
+                </shared:MenuItemAdv>
 
-&lt;/shared:MenuAdv&gt;
+</shared:MenuAdv>
 
 
 

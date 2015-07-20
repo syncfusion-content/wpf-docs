@@ -49,14 +49,14 @@ Binary Logical Operators
 
 >=       Greater Than Or Equal
 
-&lt;&gt;       Not Equal
+<>       Not Equal
 
 All operations are subject to the following hierarchy of operations. The level 1 operations are done first, followed by level 2, and so on. Within the same level, the operations are performed from left to right in the order in which they are encountered during the parsing of the formula.
 
 1. - (Unary Minus)
 2. *    /
 3. +    -
-4. &lt;   &gt;    =    &lt;=    &gt;=    &lt;&gt;
+4. <   >    =    <=    >=    <>
 5. & (Concatenation)
 
 If you want to change the default operator’s precedence, then use parentheses to explicitly indicate the operation order.

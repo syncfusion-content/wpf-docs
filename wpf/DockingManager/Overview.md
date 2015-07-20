@@ -37,13 +37,13 @@ Features
 
 
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 
 Visual Tree: 
 
-{ ![](Overview_images/Overview_img2.png) | markdownify }
+{{ '![](Overview_images/Overview_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -51,7 +51,7 @@ Visual Tree:
 
 
 
-{ ![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/Docking_Class.png](Overview_images/Overview_img3.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/Docking_Class.png](Overview_images/Overview_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -465,7 +465,7 @@ bool</td><td>
 <tr>
 <td>
 CustomMenuItems</td><td>
-Specifies items on the { [CustomMenuitem](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F3105262providingcustommenuitems.htm) | markdownify } collection to  provide user menu items to choose from, for the header context menu for child element.</td><td>
+Specifies items on the {{ '[CustomMenuitem](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F3105262providingcustommenuitems.htm)' | markdownify }} collection to  provide user menu items to choose from, for the header context menu for child element.</td><td>
 CustomMenuItemCollection</td><td>
 </td></tr>
 <tr>
@@ -483,13 +483,13 @@ double</td><td>
 <tr>
 <td>
 DockAbility</td><td>
-Specifies the dockability of the child element, while docking it in the internal DockedElementTabbedHost. Refer to { [Dockability](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31088dockabilityofchild.htm) | markdownify } for more information.</td><td>
+Specifies the dockability of the child element, while docking it in the internal DockedElementTabbedHost. Refer to {{ '[Dockability](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31088dockabilityofchild.htm)' | markdownify }} for more information.</td><td>
 DockAbility</td><td>
-* {{ '_All_' | markdownify }}* {{ '_Bottom_' | markdownify }}* {{ '_Horizontal_' | markdownify }}* {{ '_Left_' | markdownify }}* {{ '_None_' | markdownify }}* {{ '_Right_' | markdownify }}* {{ '_Tabbed_' | markdownify }}* {{ '_Top_' | markdownify }}* Vertical<br></td></tr>
+* {{{ ''_All_'' | markdownify }}}* {{{ ''_Bottom_'' | markdownify }}}* {{{ ''_Horizontal_'' | markdownify }}}* {{{ ''_Left_'' | markdownify }}}* {{{ ''_None_'' | markdownify }}}* {{{ ''_Right_'' | markdownify }}}* {{{ ''_Tabbed_'' | markdownify }}}* {{{ ''_Top_'' | markdownify }}}* Vertical<br></td></tr>
 <tr>
 <td>
 DockHeaderPresenter</td><td>
-Specifies the DockHeaderPresenter object for the specified child. { [DockHeaderPresenter](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31067dockwindowheaderstyle.htm) | markdownify } acts as a Header container for the parent window.</td><td>
+Specifies the DockHeaderPresenter object for the specified child. {{ '[DockHeaderPresenter](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31067dockwindowheaderstyle.htm)' | markdownify }} acts as a Header container for the parent window.</td><td>
 DockHeaderPresenter</td><td>
 </td></tr>
 <tr>
@@ -501,19 +501,19 @@ DockingManager</td><td>
 <tr>
 <td>
 DockFill</td><td>
-Specifies whether child can be filled in the remaining client area of { [DockingManager](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31095detectwhetherthewindowishostedindockingmanager.htm) | markdownify }.</td><td>
+Specifies whether child can be filled in the remaining client area of {{ '[DockingManager](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31095detectwhetherthewindowishostedindockingmanager.htm)' | markdownify }}.</td><td>
 bool</td><td>
 * True* False<br></td></tr>
 <tr>
 <td>
 DocumentMDIHeaderStyle</td><td>
-Specifies the Document { [MDI Header Style](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31052717documentmdiheaderstyle.htm) | markdownify } for the DockingManager children.</td><td>
+Specifies the Document {{ '[MDI Header Style](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31052717documentmdiheaderstyle.htm)' | markdownify }} for the DockingManager children.</td><td>
 Style</td><td>
 </td></tr>
 <tr>
 <td>
 DocumentTabControlStyle</td><td>
-Specifies the DocumentTabControl style which holds the { [Document tab](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31052715documenttabcontrolstyle.htm) | markdownify } children.</td><td>
+Specifies the DocumentTabControl style which holds the {{ '[Document tab](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31052715documenttabcontrolstyle.htm)' | markdownify }} children.</td><td>
 Style</td><td>
 </td></tr>
 <tr>
@@ -549,19 +549,19 @@ object</td><td>
 <tr>
 <td>
 HeaderTemplate</td><td>
-Specifies the { [Header Control](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31063customizingheadertemplate.htm) | markdownify } Template for DockingManager.</td><td>
+Specifies the {{ '[Header Control](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31063customizingheadertemplate.htm)' | markdownify }} Template for DockingManager.</td><td>
 DataTemplate</td><td>
 </td></tr>
 <tr>
 <td>
 HostSize</td><td>
-Specifies the { [DockedElementTabbedHost Size](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31089getsetdockedelementtabbedhostsize.htm) | markdownify }, which acts as a container for Docked Children.</td><td>
+Specifies the {{ '[DockedElementTabbedHost Size](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31089getsetdockedelementtabbedhostsize.htm)' | markdownify }}, which acts as a container for Docked Children.</td><td>
 Size</td><td>
 </td></tr>
 <tr>
 <td>
 Icon</td><td>
-Specifies the icon for Document Child in { [MDI mode](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31098setheadericonformdiwindow.htm) | markdownify }.</td><td>
+Specifies the icon for Document Child in {{ '[MDI mode](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31098setheadericonformdiwindow.htm)' | markdownify }}.</td><td>
 Brush</td><td>
 </td></tr>
 <tr>
@@ -579,7 +579,7 @@ bool</td><td>
 <tr>
 <td>
 IsRollupFloatWindow</td><td>
-Specifies the { [rollup behavior](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F310813rollingthefloatwindowup.htm) | markdownify } for individual Float child in DockingManager.</td><td>
+Specifies the {{ '[rollup behavior](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F310813rollingthefloatwindowup.htm)' | markdownify }} for individual Float child in DockingManager.</td><td>
 bool</td><td>
 * True* False<br></td></tr>
 <tr>
@@ -609,7 +609,7 @@ string</td><td>
 <tr>
 <td>
 TargetNameInFloatMode</td><td>
-Specifies the target of the child that needs to be docked in the Float { [state of the child](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F310512layoutthechild.htm) | markdownify }.</td><td>
+Specifies the target of the child that needs to be docked in the Float {{ '[state of the child](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F310512layoutthechild.htm)' | markdownify }}.</td><td>
 string</td><td>
 </td></tr>
 <tr>

@@ -55,19 +55,19 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 1
 
 Initially there is no value assigned to the PercentTextBox. So it displays the default value as zero.
 
-{ ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img1.png) | markdownify }
+{{ '![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img1.png)' | markdownify }}
 {:.image }
 
 
 MaxValidation is set to OnLostFocus, so the MaxValidation will be performed only in the lost focus.
 
-{ ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img2.png) | markdownify }
+{{ '![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img2.png)' | markdownify }}
 {:.image }
 
 
 MinValidation is set to OnKeyPress, so you cannot enter a value less than the MinValue. If you try to enter a value less than the MinValue, then the MinValue will be set to the PercentValue property if the MinValueOnExceedMinDigit is set to true, otherwise it will not allow the key press.
 
-{ ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img3.png) | markdownify }
+{{ '![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img3.png)' | markdownify }}
 {:.image }
 
 

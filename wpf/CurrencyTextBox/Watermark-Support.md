@@ -25,7 +25,7 @@ Watermark is the dummy content displayed in the CurrencyTextBox when the value i
 
 
 
-{ ![](Watermark-Support_images/Watermark-Support_img1.png) | markdownify }
+{{ '![](Watermark-Support_images/Watermark-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -51,25 +51,25 @@ You can customize the Visual appearance of the WatermarkText by using the Waterm
 
                             UseNullOption="True">
 
-    &lt;syncfusion:CurrencyTextBox.WatermarkTemplate&gt;
+    <syncfusion:CurrencyTextBox.WatermarkTemplate>
 
-        &lt;DataTemplate&gt;
+        <DataTemplate>
 
-            &lt;Border Background="LightGray"&gt;
+            <Border Background="LightGray">
 
-                &lt;TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="5,0,0,0"/&gt;
+                <TextBlock Text="{Binding}" VerticalAlignment="Center" Margin="5,0,0,0"/>
 
-            &lt;/Border&gt;
+            </Border>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
-    &lt;/syncfusion:CurrencyTextBox.WatermarkTemplate&gt;
+    </syncfusion:CurrencyTextBox.WatermarkTemplate>
 
-&lt;/syncfusion:CurrencyTextBox&gt;
+</syncfusion:CurrencyTextBox>
 
 
 
-{ ![](Watermark-Support_images/Watermark-Support_img2.png) | markdownify }
+{{ '![](Watermark-Support_images/Watermark-Support_img2.png)' | markdownify }}
 {:.image }
 
 

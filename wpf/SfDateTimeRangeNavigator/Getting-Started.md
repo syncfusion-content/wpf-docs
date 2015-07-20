@@ -20,7 +20,7 @@ A SfDateTimeRangeNavigator is composed of various elements such as Higher level 
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -51,9 +51,9 @@ Initialize the SfDateTimeRangeNavigator
 
 [XAML]
 
-&lt;Syncfusion:SfDateTimeRangeNavigator&gt;
+<Syncfusion:SfDateTimeRangeNavigator>
 
-&lt;/Syncfusion:SfDateTimeRangeNavigator &gt;
+</Syncfusion:SfDateTimeRangeNavigator >
 
 
 
@@ -67,9 +67,9 @@ Since the above step will produce an empty SfDateTimeRangeNavigator without any 
 
 [XAML]
 
-&lt;Syncfusion:SfDateTimeRangeNavigator ItemsSource="{Binding ItemsSource}" XBindingPath="Date"  &gt;
+<Syncfusion:SfDateTimeRangeNavigator ItemsSource="{Binding ItemsSource}" XBindingPath="Date"  >
 
- &lt;/Syncfusion:SfDateTimeRangeNavigator &gt;
+ </Syncfusion:SfDateTimeRangeNavigator >
 
 
 
@@ -101,23 +101,23 @@ To add any UI content inside a SfDateTimeRangeNavigator</td></tr>
 
 [XAML]
 
-&lt;Syncfusion:SfDateTimeRangeNavigator ItemsSource="{Binding ItemsSource}" XBindingPath="Date"  &gt;
+<Syncfusion:SfDateTimeRangeNavigator ItemsSource="{Binding ItemsSource}" XBindingPath="Date"  >
 
-&lt;Syncfusion:SfDateTimeRangeNavigator.Content&gt;
+<Syncfusion:SfDateTimeRangeNavigator.Content>
 
-&lt;Syncfusion:SfChart x:Name="Chart"&gt;
+<Syncfusion:SfChart x:Name="Chart">
 
-  &lt;Syncfusion:SfChart.PrimaryAxis&gt;
+  <Syncfusion:SfChart.PrimaryAxis>
 
-    &lt;Syncfusion:DateTimeAxis/&gt;
+    <Syncfusion:DateTimeAxis/>
 
-  &lt;/Syncfusion:SfChart.PrimaryAxis&gt;
+  </Syncfusion:SfChart.PrimaryAxis>
 
-  &lt;Syncfusion:SfChart.SecondaryAxis&gt;
+  <Syncfusion:SfChart.SecondaryAxis>
 
-   &lt;Syncfusion:NumericalAxis/&gt;
+   <Syncfusion:NumericalAxis/>
 
-  &lt;/Syncfusion:SfChart.SecondaryAxis&gt;
+  </Syncfusion:SfChart.SecondaryAxis>
 
   <Syncfusion:LineSeries 
 
@@ -127,17 +127,17 @@ To add any UI content inside a SfDateTimeRangeNavigator</td></tr>
 
                 YBindingPath="NoOfUsers">
 
-  &lt;/Syncfusion:LineSeries&gt;
+  </Syncfusion:LineSeries>
 
 
 
-&lt;/Syncfusion:SfChart&gt;
+</Syncfusion:SfChart>
 
 
 
-&lt;/Syncfusion:SfDateTimeRangeNavigator.Content &gt;
+</Syncfusion:SfDateTimeRangeNavigator.Content >
 
- &lt;/Syncfusion:SfDateTimeRangeNavigator &gt;
+ </Syncfusion:SfDateTimeRangeNavigator >
 
 
 
@@ -145,7 +145,7 @@ The following illustrates the result of the above code sample:
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/2.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/2.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -303,7 +303,7 @@ The following output is displayed as a result of the above code example.
 
 
 
-{ ![C:/Users/sureshs/Desktop/navigatorwpf3.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![C:/Users/sureshs/Desktop/navigatorwpf3.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 

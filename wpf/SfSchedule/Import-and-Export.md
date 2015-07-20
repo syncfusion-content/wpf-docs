@@ -31,7 +31,7 @@ The exported .ics file will be saved in specified location. These exported files
 
 
 
-{ ![](Import-and-Export_images/Import-and-Export_img1.png) | markdownify }
+{{ '![](Import-and-Export_images/Import-and-Export_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -53,7 +53,7 @@ If the imported calendar has already been given a name, it can be imported into 
 
 
 
-{ ![](Import-and-Export_images/Import-and-Export_img2.png) | markdownify }
+{{ '![](Import-and-Export_images/Import-and-Export_img2.png)' | markdownify }}
 {:.image }
 
 

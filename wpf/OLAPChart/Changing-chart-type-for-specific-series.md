@@ -17,13 +17,13 @@ To change the chart type of a specific series, right-click on the particular ser
 
 The following screen shot shows how a specific column chart series is changed to line chart series.
 
-{ ![](Changing-chart-type-for-specific-series_images/Changing-chart-type-for-specific-series_img1.png) | markdownify }
+{{ '![](Changing-chart-type-for-specific-series_images/Changing-chart-type-for-specific-series_img1.png)' | markdownify }}
 {:.image }
 
 
 The following screenshot shows a column chart series changed to line chart.
 
-{ ![](Changing-chart-type-for-specific-series_images/Changing-chart-type-for-specific-series_img2.png) | markdownify }
+{{ '![](Changing-chart-type-for-specific-series_images/Changing-chart-type-for-specific-series_img2.png)' | markdownify }}
 {:.image }
 
 

@@ -11,7 +11,7 @@ documentation: ug
 
 ImageElement is used to render images in the page of the PDF document. It can also support replacing images; HTML to image and PDF to image. These are explained in the following topics.
 
-{ ![](ImageElement_images/ImageElement_img1.png) | markdownify }
+{{ '![](ImageElement_images/ImageElement_img1.png)' | markdownify }}
 {:.image }
 
 

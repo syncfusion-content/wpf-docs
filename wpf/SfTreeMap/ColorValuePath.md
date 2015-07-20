@@ -17,19 +17,19 @@ The ColorValuePath ofSfTreeMap is a path to a field on the source object, which 
 
 
 
-    &lt;Grid Background="Black"&gt;
+    <Grid Background="Black">
 
-        &lt;Grid.DataContext&gt;
+        <Grid.DataContext>
 
-            &lt;local:PopulationViewModel/&gt;
+            <local:PopulationViewModel/>
 
-        &lt;/Grid.DataContext&gt;
+        </Grid.DataContext>
 
         <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
                               ColorValuePath="Growth"/>
 
-    &lt;/Grid&gt; 
+    </Grid> 
 
 
 

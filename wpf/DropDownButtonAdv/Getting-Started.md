@@ -13,7 +13,7 @@ This section guides you on getting started with the DropDownButtonAdv control. I
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -31,7 +31,7 @@ The following code explains how to add a DropDownButtonAdv control using XAML:
 
  [XAML]
 
-&lt;sync:DropDownButtonAdv Label="Hello World"/&gt;
+<sync:DropDownButtonAdv Label="Hello World"/>
 
 
 
@@ -47,7 +47,7 @@ button.Label = "Hello World";
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -70,14 +70,14 @@ Use the following code snippet to set the SizeMode to Small:
 <table>
 <tr>
 <td>
- [XAML]&lt;sync:DropDownButtonAdv SizeMode="Small" Label="Hello World"/&gt;</td></tr>
+ [XAML]<sync:DropDownButtonAdv SizeMode="Small" Label="Hello World"/></td></tr>
 <tr>
 <td>
  [C#]DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -92,14 +92,14 @@ Use the following code snippet to set the SizeMode to Normal:
 <table>
 <tr>
 <td>
- [XAML]&lt;sync:DropDownButtonAdv SizeMode="Normal" Label="Hello World"/&gt;</td></tr>
+ [XAML]<sync:DropDownButtonAdv SizeMode="Normal" Label="Hello World"/></td></tr>
 <tr>
 <td>
  [C#]DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -114,14 +114,14 @@ Use the following code snippet to set the SizeMode to Large:
 <table>
 <tr>
 <td>
- [XAML]&lt;sync:DropDownButtonAdv SizeMode="Large" Label="Hello World"/&gt;</td></tr>
+ [XAML]<sync:DropDownButtonAdv SizeMode="Large" Label="Hello World"/></td></tr>
 <tr>
 <td>
  [C#]DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large;</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -139,14 +139,14 @@ The SmallIcon property can be set as follows:
 <table>
 <tr>
 <td>
- [XAML]&lt;sync:DropDownButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/&gt;</td></tr>
+ [XAML]<sync:DropDownButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/></td></tr>
 <tr>
 <td>
  [C#]DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -157,14 +157,14 @@ The SmallIcon property can be set even when the SizeMode is Normal:
 <table>
 <tr>
 <td>
- [XAML]&lt;sync:DropDownButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/&gt;</td></tr>
+ [XAML]<sync:DropDownButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/></td></tr>
 <tr>
 <td>
 [C#]DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -175,14 +175,14 @@ The LargeIcon property can be set as follows:
 <table>
 <tr>
 <td>
- [XAML]&lt;sync:DropDownButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/&gt;</td></tr>
+ [XAML]<sync:DropDownButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/></td></tr>
 <tr>
 <td>
  [C#]DropDownButtonAdv button = new DropDownButtonAdv();button.Label = "Hello World";button.SizeMode = SizeMode.Large;button.LargeIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -197,14 +197,14 @@ Adding DropDownMenuItems to DropDownButtonAdv:
 <table>
 <tr>
 <td>
- [XAML]&lt;shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png"&gt;   &lt;shared:DropDownMenuGroup&gt;       &lt;shared:DropDownMenuItem Header="Menu Item 1"/&gt;       &lt;shared:DropDownMenuItem Header="Menu Item 2"/&gt;       &lt;shared:DropDownMenuItem Header="Menu Item 3"/&gt;   &lt;/shared:DropDownMenuGroup&gt;&lt;/shared:DropDownButtonAdv&gt;</td></tr>
+ [XAML]<shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">   <shared:DropDownMenuGroup>       <shared:DropDownMenuItem Header="Menu Item 1"/>       <shared:DropDownMenuItem Header="Menu Item 2"/>       <shared:DropDownMenuItem Header="Menu Item 3"/>   </shared:DropDownMenuGroup></shared:DropDownButtonAdv></td></tr>
 <tr>
 <td>
  [C#]DropDownButtonAdv button = new DropDownButtonAdv();DropDownMenuGroup menu = new DropDownMenuGroup();DropDownMenuItem menuItem1 = new DropDownMenuItem();DropDownMenuItem menuItem2 = new DropDownMenuItem();DropDownMenuItem menuItem3 = new DropDownMenuItem();menu.Items.Add(menuItem1);menu.Items.Add(menuItem2);menu.Items.Add(menuItem3);button.Content = menu;</td></tr>
 </table>
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 

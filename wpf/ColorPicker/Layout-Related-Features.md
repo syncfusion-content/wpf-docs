@@ -37,14 +37,14 @@ Use the following code example to set this property.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding ColorPicker --&gt;&lt;syncfusion:ColorPicker FlowDirection="RightToLeft" Name="colorPicker"/&gt;&lt;!-- Adding ColorEdit --&gt;&lt;syncfusion:ColorEdit FlowDirection="RightToLeft" Name="colorEdit"/&gt;</td></tr>
+[XAML]<!-- Adding ColorPicker --><syncfusion:ColorPicker FlowDirection="RightToLeft" Name="colorPicker"/><!-- Adding ColorEdit --><syncfusion:ColorEdit FlowDirection="RightToLeft" Name="colorEdit"/></td></tr>
 <tr>
 <td>
 [C#]// Setting flow direction as right to left for ColorEditcolorEdit.FlowDirection = FlowDirection.RightToLeft;// Setting flow direction as right to left for ColorPickercolorPicker.FlowDirection = FlowDirection.RightToLeft;</td></tr>
 </table>
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -73,7 +73,7 @@ To set the visual style for the ColorPicker and ColorEdit controls, use the foll
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding ColorPicker --&gt;&lt;syncfusion:ColorPicker  syncfusion:SkinStorage.VisualStyle="Office2003" Name="colorPicker"/&gt;&lt;!-- Adding ColorEdit --&gt;&lt;syncfusion:ColorEdit syncfusion:SkinStorage.VisualStyle="Office2007Blue" Name="colorEdit"/&gt;</td></tr>
+[XAML]<!-- Adding ColorPicker --><syncfusion:ColorPicker  syncfusion:SkinStorage.VisualStyle="Office2003" Name="colorPicker"/><!-- Adding ColorEdit --><syncfusion:ColorEdit syncfusion:SkinStorage.VisualStyle="Office2007Blue" Name="colorEdit"/></td></tr>
 <tr>
 <td>
 [C#]//Setting the visual style as Office2007Blue for ColorEdit SkinStorage.SetVisualStyle(colorEdit, "Office2007Blue");  //Setting the visual style as Office2007Blue  for ColorPickerSkinStorage.SetVisualStyle(colorPicker, "Office2007Blue");  </td></tr>
@@ -82,49 +82,49 @@ To set the visual style for the ColorPicker and ColorEdit controls, use the foll
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img4.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img4.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img5.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img5.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img6.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img6.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img7.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img7.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img8.png) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img8.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img9.png) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -135,7 +135,7 @@ The sliders available for the ColorEdit control are Alpha, Blue, Green and Red. 
 <table>
 <tr>
 <td>
-[XAML]&lt;Tools:ColorEdit Name="myColorEditor" BackgroundA="DarkBlue" BackgroundB="Yellow" BackgroundG="Black" BackgroundR="Orange"/&gt;</td></tr>
+[XAML]<Tools:ColorEdit Name="myColorEditor" BackgroundA="DarkBlue" BackgroundB="Yellow" BackgroundG="Black" BackgroundR="Orange"/></td></tr>
 <tr>
 <td>
 [C#]myColorEditor.BackgroundA = Brushes.DarkBlue;myColorEditor.BackgroundB = Brushes.Yellow;myColorEditor.BackgroundG = Brushes.Black;myColorEditor.BackgroundR = Brushes.Orange;</td></tr>
@@ -144,7 +144,7 @@ The sliders available for the ColorEdit control are Alpha, Blue, Green and Red. 
 
 
 
-{ ![](Layout-Related-Features_images/Layout-Related-Features_img10.jpeg) | markdownify }
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img10.jpeg)' | markdownify }}
 {:.image }
 
 

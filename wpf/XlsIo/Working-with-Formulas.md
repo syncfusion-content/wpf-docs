@@ -15,7 +15,7 @@ Formulas are entries in Excel that have equations where values are calculated fo
 
 Excel supports various built-in functions that make large calculations in large sheets easier. The following sections illustrate the usage in XlsIO.
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img1.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -127,7 +127,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img2.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -740,7 +740,7 @@ Returns or sets the object's formula in A1-style notation and in the language of
 <tr>
 <td>
 FormulaArray</td><td>
-Represents array-entered formula. Visit { [http://www.cpearson.com/excel/array.htm](http://www.cpearson.com/excel/ArrayFormulas.aspx) | markdownify } for more information. </td></tr>
+Represents array-entered formula. Visit {{ '[http://www.cpearson.com/excel/array.htm](http://www.cpearson.com/excel/ArrayFormulas.aspx)' | markdownify }} for more information. </td></tr>
 <tr>
 <td>
 FormulaArrayR1C1</td><td>
@@ -1380,7 +1380,7 @@ Checks to see if two text values are identical.</td></tr>
 <tr>
 <td>
 EXP</td><td>
-Returns {{ '_e_' | markdownify }} raised to the power of a given number.</td></tr>
+Returns {{{ ''_e_'' | markdownify }}} raised to the power of a given number.</td></tr>
 <tr>
 <td>
 EXPONDIST</td><td>
@@ -2204,11 +2204,11 @@ Named Ranges is a powerful feature in Excel that makes it possible to assign a n
 
 To create Named Ranges in MS Excel, open Formulas tab and click Define Name button under Defined Names section. Names are created at workbook-level, by default, but you can create a sheet-level name, by entering the sheet name followed by an exclamation mark (!), followed by the name of the range. For instance, to create a named range TEST on Sheet1, enter the name as 'Sheet1!TEST'.
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img3.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img3.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img4.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -2354,7 +2354,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img5.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -2810,7 +2810,7 @@ excelEngine.Dispose()
 
 Excel has an option to find the quickest way to identify any cell that contains an error on the active worksheet and ignore the error that shows with green indicator through the Error Checking dialog box. This dialog box provides various options to get information on the error, how a formula is evaluated, its trace, and an option to ignore the error by changing its data type.
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img6.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -2824,7 +2824,7 @@ Excel has the following set of rules that can be enabled or disabled to show/hid
 * Unlocked Cells containing Formulas-This rule treats an unlocked cell containing a formula as an error and displays a warning when checking for errors.
 * Formulas referring to Empty Cells-This rule treats formulas that refer to empty cells as an error and displays a warning.
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img7.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -3008,7 +3008,7 @@ Excel has a range of options that allows you to control the way it calculates. T
 
 
 
-{ ![](Working-with-Formulas_images/Working-with-Formulas_img8.png) | markdownify }
+{{ '![](Working-with-Formulas_images/Working-with-Formulas_img8.png)' | markdownify }}
 {:.image }
 
 

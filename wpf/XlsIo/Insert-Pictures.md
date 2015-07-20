@@ -11,7 +11,7 @@ documentation: ug
 
 Excel allows you to insert a picture through the Insert tab -> Illustrations section,and then clicking Pictures button. It allows you to customize the image by sizing, formatting, and positioning the image.
 
-{ ![](Insert-Pictures_images/Insert-Pictures_img1.png) | markdownify }
+{{ '![](Insert-Pictures_images/Insert-Pictures_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -141,7 +141,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Insert-Pictures_images/Insert-Pictures_img2.png) | markdownify }
+{{ '![](Insert-Pictures_images/Insert-Pictures_img2.png)' | markdownify }}
 {:.image }
 
 

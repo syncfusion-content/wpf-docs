@@ -21,7 +21,7 @@ The following code adds the Click event handler to the SplitButtonAdv control:
 
 [XAML]
 
-&lt;shared:SplitButtonAdv Click="SplitButtonAdv_Click"/&gt;
+<shared:SplitButtonAdv Click="SplitButtonAdv_Click"/>
 
 
 
@@ -43,7 +43,7 @@ The following code adds the DropDownOpening event handler to the SplitButtonAdv 
 
 [XAML]
 
-&lt;shared:SplitButtonAdv DropDownOpening="SplitButtonAdv_DropDownOpening"/&gt;
+<shared:SplitButtonAdv DropDownOpening="SplitButtonAdv_DropDownOpening"/>
 
 
 
@@ -65,7 +65,7 @@ The following code adds the DropDownOpened event handler to the SplitButtonAdv c
 
 [XAML]
 
-&lt;shared:SplitButtonAdv DropDownOpened="SplitButtonAdv_DropDownOpened"/&gt;
+<shared:SplitButtonAdv DropDownOpened="SplitButtonAdv_DropDownOpened"/>
 
 
 
@@ -87,7 +87,7 @@ The following code adds the DropDownClosing event handler to the SplitButtonAdv 
 
 [XAML]
 
-&lt;shared:SplitButtonAdv DropDownClosing="SplitButtonAdv_DropDownClosing"/&gt;
+<shared:SplitButtonAdv DropDownClosing="SplitButtonAdv_DropDownClosing"/>
 
 
 
@@ -109,7 +109,7 @@ The following code adds the DropDownClosed event handler to the SplitButtonAdv c
 
 [XAML]
 
-&lt;shared:SplitButtonAdv DropDownClosed="SplitButtonAdv_DropDownClosed"/&gt;
+<shared:SplitButtonAdv DropDownClosed="SplitButtonAdv_DropDownClosed"/>
 
 
 

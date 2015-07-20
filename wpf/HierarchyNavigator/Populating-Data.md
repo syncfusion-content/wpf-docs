@@ -17,7 +17,7 @@ XAML
 
 
 
-&lt;syncfusion:HierarchyNavigator x:Name="hierarchyNavigatorcontrol1" VerticalAlignment="Top" Height="30" Width="600"&gt;
+<syncfusion:HierarchyNavigator x:Name="hierarchyNavigatorcontrol1" VerticalAlignment="Top" Height="30" Width="600">
 
 
 
@@ -27,33 +27,33 @@ XAML
 
 
 
-&lt;syncfusion:HierarchyNavigator x:Name="hierarchyNavigatorcontrol1"   VerticalAlignment="Top" Height="30" Width="600"&gt;
+<syncfusion:HierarchyNavigator x:Name="hierarchyNavigatorcontrol1"   VerticalAlignment="Top" Height="30" Width="600">
 
-    &lt;syncfusion:HierarchyNavigator.Items&gt;
+    <syncfusion:HierarchyNavigator.Items>
 
-        &lt;syncfusion:HierarchyNavigatorItem Content="Syncfusion"&gt;
+        <syncfusion:HierarchyNavigatorItem Content="Syncfusion">
 
-            &lt;syncfusion:HierarchyNavigatorItem.Items&gt;
+            <syncfusion:HierarchyNavigatorItem.Items>
 
-                &lt;syncfusion:HierarchyNavigatorItem Content="User Interface"/&gt;
+                <syncfusion:HierarchyNavigatorItem Content="User Interface"/>
 
-                &lt;syncfusion:HierarchyNavigatorItem Content="Silverlight"&gt;
+                <syncfusion:HierarchyNavigatorItem Content="Silverlight">
 
-                    &lt;syncfusion:HierarchyNavigatorItem.Items&gt;
+                    <syncfusion:HierarchyNavigatorItem.Items>
 
-                        &lt;syncfusion:HierarchyNavigatorItem Content="Tools"/&gt;
+                        <syncfusion:HierarchyNavigatorItem Content="Tools"/>
 
-                    &lt;/syncfusion:HierarchyNavigatorItem.Items&gt;
+                    </syncfusion:HierarchyNavigatorItem.Items>
 
-                &lt;/syncfusion:HierarchyNavigatorItem&gt;
+                </syncfusion:HierarchyNavigatorItem>
 
-            &lt;/syncfusion:HierarchyNavigatorItem.Items&gt;
+            </syncfusion:HierarchyNavigatorItem.Items>
 
-        &lt;/syncfusion:HierarchyNavigatorItem&gt;
+        </syncfusion:HierarchyNavigatorItem>
 
-    &lt;/syncfusion:HierarchyNavigator.Items&gt;
+    </syncfusion:HierarchyNavigator.Items>
 
-&lt;/syncfusion:HierarchyNavigator&gt;
+</syncfusion:HierarchyNavigator>
 
 
 
@@ -117,7 +117,7 @@ hierarchyNavigator1.Items.Add(hierarchyNavigatorItem1);
 
 The following figure shows the items added in code displayed on the interface.
 
-{ ![](Populating-Data_images/Populating-Data_img1.png) | markdownify }
+{{ '![](Populating-Data_images/Populating-Data_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -247,31 +247,31 @@ XAML
 
 
 
-&lt;syncfusion:HierarchyNavigator Name="hierarchyNavigator2"&gt;
+<syncfusion:HierarchyNavigator Name="hierarchyNavigator2">
 
-    &lt;syncfusion:HierarchyNavigator.ItemsSource&gt;
+    <syncfusion:HierarchyNavigator.ItemsSource>
 
-        &lt;local:HierarchicalItemsSource /&gt;
+        <local:HierarchicalItemsSource />
 
-    &lt;/syncfusion:HierarchyNavigator.ItemsSource&gt;
+    </syncfusion:HierarchyNavigator.ItemsSource>
 
-    &lt;syncfusion:HierarchyNavigator.ItemTemplate&gt;
+    <syncfusion:HierarchyNavigator.ItemTemplate>
 
-        &lt;HierarchicalDataTemplate ItemsSource="{Binding HierarchyItems}"&gt;
+        <HierarchicalDataTemplate ItemsSource="{Binding HierarchyItems}">
 
-            &lt;TextBlock Text="{Binding ContentString}" Margin="2,0" /&gt;
+            <TextBlock Text="{Binding ContentString}" Margin="2,0" />
 
-        &lt;/HierarchicalDataTemplate&gt;
+        </HierarchicalDataTemplate>
 
-    &lt;/syncfusion:HierarchyNavigator.ItemTemplate&gt;
+    </syncfusion:HierarchyNavigator.ItemTemplate>
 
-&lt;/syncfusion:HierarchyNavigator&gt; 
+</syncfusion:HierarchyNavigator> 
 
 
 
 The following screenshot shows the items added in code displayed on the interface.
 
-{ ![](Populating-Data_images/Populating-Data_img2.png) | markdownify }
+{{ '![](Populating-Data_images/Populating-Data_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -285,39 +285,39 @@ XML
 
 
 
-&lt;categories&gt;
+<categories>
 
-  &lt;category name="Synfusion"&gt;
+  <category name="Synfusion">
 
-    &lt;category name="User Interface"&gt;
+    <category name="User Interface">
 
-      &lt;category name="Silverlight"&gt;
+      <category name="Silverlight">
 
-        &lt;category name="Essential Tools" /&gt;
+        <category name="Essential Tools" />
 
-        &lt;category name="Essential Grid" /&gt;
+        <category name="Essential Grid" />
 
-        &lt;category name="Essential Schedule" /&gt;
+        <category name="Essential Schedule" />
 
-        &lt;category name="Essential Ribbon" /&gt;
+        <category name="Essential Ribbon" />
 
-        &lt;category name="Essential Gauge" /&gt;
+        <category name="Essential Gauge" />
 
-        &lt;category name="Essential Chart" /&gt;
+        <category name="Essential Chart" />
 
-      &lt;/category&gt;
+      </category>
 
-      &lt;category name="WPF" /&gt;
+      <category name="WPF" />
 
-      &lt;category name="MVC" /&gt;
+      <category name="MVC" />
 
-      &lt;category name="ASP .Net" /&gt;
+      <category name="ASP .Net" />
 
-    &lt;/category&gt;
+    </category>
 
-  &lt;/category&gt;
+  </category>
 
-&lt;/categories&gt;
+</categories>
 
 
 
@@ -425,25 +425,25 @@ XAML
 
 
 
-&lt;syncfusion:HierarchyNavigator VerticalAlignment="Center" Name="hierarchyNavigator1" Height="30"&gt;
+<syncfusion:HierarchyNavigator VerticalAlignment="Center" Name="hierarchyNavigator1" Height="30">
 
-    &lt;syncfusion:HierarchyNavigator.ItemTemplate&gt;
+    <syncfusion:HierarchyNavigator.ItemTemplate>
 
-        &lt;HierarchicalDataTemplate ItemsSource="{Binding HierarchyItems}"&gt;
+        <HierarchicalDataTemplate ItemsSource="{Binding HierarchyItems}">
 
-            &lt;TextBlock Margin="10,0,0,0" Text="{Binding ContentStr}" Grid.Column="0"/&gt;
+            <TextBlock Margin="10,0,0,0" Text="{Binding ContentStr}" Grid.Column="0"/>
 
-        &lt;/HierarchicalDataTemplate&gt;
+        </HierarchicalDataTemplate>
 
-    &lt;/syncfusion:HierarchyNavigator.ItemTemplate&gt;
+    </syncfusion:HierarchyNavigator.ItemTemplate>
 
-&lt;/syncfusion:HierarchyNavigator&gt;
+</syncfusion:HierarchyNavigator>
 
 
 
 The image displayed below shows the output of the above code—items bound to XML data.
 
-{ ![](Populating-Data_images/Populating-Data_img3.png) | markdownify }
+{{ '![](Populating-Data_images/Populating-Data_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -456,7 +456,7 @@ The steps to bind XML data through WCF services are as follows:
 1. Create an XML and a class object. Refer the XML data-binding class and the XML used in the 
 2. The following screenshot shows the items added in code displayed on the interface.
 
-{ ![](Populating-Data_images/Populating-Data_img4.png) | markdownify }
+{{ '![](Populating-Data_images/Populating-Data_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -632,28 +632,28 @@ XAML
      xmlns:local="clr-namespace:WCFServicesInHierarchy" 
      x:Class="WCFServicesInHierarchy.MainWindow"
 x:Name="Window" Title="MainWindow" UseLayoutRounding="True" Width="640" Height="480">
-    &lt;Window.DataContext&gt;
-        &lt;local:CustomSource/&gt;
-    &lt;/Window.DataContext&gt;
+    <Window.DataContext>
+        <local:CustomSource/>
+    </Window.DataContext>
 
-    &lt;Grid x:Name="LayoutRoot"&gt;
-        &lt;syncfusion:HierarchyNavigator Name="hierarchyNavigator1" VerticalAlignment="Center" ItemsSource="{Binding Categories}"&gt;
-            &lt;syncfusion:HierarchyNavigator.ItemTemplate&gt;
-                &lt;HierarchicalDataTemplate ItemsSource="{Binding HierarchyItems}"&gt;
-                    &lt;Border&gt;
-                        &lt;TextBlock Text="{Binding ContentStr}" Margin="2,0"/&gt;
-                    &lt;/Border&gt;
-                &lt;/HierarchicalDataTemplate&gt;
-            &lt;/syncfusion:HierarchyNavigator.ItemTemplate&gt;
-        &lt;/syncfusion:HierarchyNavigator&gt;
-    &lt;/Grid&gt;
-&lt;/Window&gt;
+    <Grid x:Name="LayoutRoot">
+        <syncfusion:HierarchyNavigator Name="hierarchyNavigator1" VerticalAlignment="Center" ItemsSource="{Binding Categories}">
+            <syncfusion:HierarchyNavigator.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding HierarchyItems}">
+                    <Border>
+                        <TextBlock Text="{Binding ContentStr}" Margin="2,0"/>
+                    </Border>
+                </HierarchicalDataTemplate>
+            </syncfusion:HierarchyNavigator.ItemTemplate>
+        </syncfusion:HierarchyNavigator>
+    </Grid>
+</Window>
 
 
 
 The image displayed below shows the output of the above code—items bound to XML data.
 
-{ ![](Populating-Data_images/Populating-Data_img5.png) | markdownify }
+{{ '![](Populating-Data_images/Populating-Data_img5.png)' | markdownify }}
 {:.image }
 
 

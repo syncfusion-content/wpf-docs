@@ -27,19 +27,19 @@ The following code example illustrates how to add the IsSelected to an applicati
 
 [XAML]
 
-&lt;syncfusion:TileViewControl x:Name="TileView" Height="600" Width="800"&gt;
+<syncfusion:TileViewControl x:Name="TileView" Height="600" Width="800">
 
-      &lt;syncfusion:TileViewItem x:Name="Tile1" Header="TileViewItem 1" /&gt;
+      <syncfusion:TileViewItem x:Name="Tile1" Header="TileViewItem 1" />
 
-      &lt;syncfusion:TileViewItem x:Name="Tile2" Header="TileViewItem 2" /&gt;
+      <syncfusion:TileViewItem x:Name="Tile2" Header="TileViewItem 2" />
 
-      &lt;syncfusion:TileViewItem x:Name="Tile3" Header="TileViewItem 3" /&gt;
+      <syncfusion:TileViewItem x:Name="Tile3" Header="TileViewItem 3" />
 
       <syncfusion:TileViewItem x:Name="Tile4" Header="TileViewItem 4" 
 
                                IsSelected="True" /> 
 
-&lt;/syncfusion:TileViewControl&gt;
+</syncfusion:TileViewControl>
 
 
 

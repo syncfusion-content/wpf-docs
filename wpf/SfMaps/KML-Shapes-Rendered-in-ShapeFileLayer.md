@@ -21,21 +21,21 @@ A KML file can be rendered with the help of the ShapeFileLayer in SfMap. The KML
 
 
 
-        &lt;syncfusion:SfMap&gt;
+        <syncfusion:SfMap>
 
-            &lt;syncfusion:SfMap.Layers&gt;
+            <syncfusion:SfMap.Layers>
 
-                &lt;syncfusion:ShapeFileLayer Uri="KmlImportDemo.KMLFiles.Eu.kml"&gt;                    
+                <syncfusion:ShapeFileLayer Uri="KmlImportDemo.KMLFiles.Eu.kml">                    
 
-                &lt;/syncfusion:ShapeFileLayer&gt;
+                </syncfusion:ShapeFileLayer>
 
-            &lt;/syncfusion:SfMap.Layers&gt;
+            </syncfusion:SfMap.Layers>
 
-        &lt;/syncfusion:SfMap&gt;
+        </syncfusion:SfMap>
 
 
 
-{ ![](KML-Shapes-Rendered-in-ShapeFileLayer_images/KML-Shapes-Rendered-in-ShapeFileLayer_img1.png) | markdownify }
+{{ '![](KML-Shapes-Rendered-in-ShapeFileLayer_images/KML-Shapes-Rendered-in-ShapeFileLayer_img1.png)' | markdownify }}
 {:.image }
 
 

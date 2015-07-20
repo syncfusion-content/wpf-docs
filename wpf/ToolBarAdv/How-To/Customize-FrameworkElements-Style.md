@@ -19,7 +19,7 @@ Following code snippet shows the resource dictionary containing FrameworkElement
 
 
 
-&lt;shared:ToolBarAdv ControlsResourceDictionary="ControlsResource.xaml"&gt;&lt;/shared:ToolBarAdv&gt;
+<shared:ToolBarAdv ControlsResourceDictionary="ControlsResource.xaml"></shared:ToolBarAdv>
 
 
 

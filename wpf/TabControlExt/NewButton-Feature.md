@@ -17,13 +17,13 @@ New button feature in TabControlExt is used to display NewTabButton similar to I
 
 
 
-&lt;syncfusion:TabControlExt  Name=”tabcontrol” IsNewButtonEnabled=”True” NewButtonClick="TabControlExt_NewTabItemClick" &gt;
+<syncfusion:TabControlExt  Name=”tabcontrol” IsNewButtonEnabled=”True” NewButtonClick="TabControlExt_NewTabItemClick" >
 
-    &lt;Grid  syncfusion:TabControlExt.Header=”Tab1”&gt;
+    <Grid  syncfusion:TabControlExt.Header=”Tab1”>
 
-        &lt;Grid syncfusion:TabControlExt.Header=”Tab2”/&gt;
+        <Grid syncfusion:TabControlExt.Header=”Tab2”/>
 
-&lt;/syncfusion:TabControlExt&gt;
+</syncfusion:TabControlExt>
 
 
 
@@ -53,7 +53,7 @@ Run the code. The following output is displayed.
 
 
 
-{ ![](NewButton-Feature_images/NewButton-Feature_img1.jpeg) | markdownify }
+{{ '![](NewButton-Feature_images/NewButton-Feature_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -67,13 +67,13 @@ This New button can also displayed at first end using the code below.
 
 
 
-&lt;syncfusion:TabControlExt  Name=”tabcontrol” IsNewButtonEnabled=”True” NewButtonAlignment=”First”  NewButtonClick="TabControlExt_NewTabItemClick" &gt;
+<syncfusion:TabControlExt  Name=”tabcontrol” IsNewButtonEnabled=”True” NewButtonAlignment=”First”  NewButtonClick="TabControlExt_NewTabItemClick" >
 
-    &lt;Grid  syncfusion:TabControlExt.Header=”Tab1”&gt;
+    <Grid  syncfusion:TabControlExt.Header=”Tab1”>
 
-        &lt;Grid syncfusion:TabControlExt.Header=”Tab2”/&gt;
+        <Grid syncfusion:TabControlExt.Header=”Tab2”/>
 
-&lt;/syncfusion:TabControlExt&gt;
+</syncfusion:TabControlExt>
 
 
 
@@ -103,7 +103,7 @@ Run the code. The following output is displayed.
 
 
 
-{ ![](NewButton-Feature_images/NewButton-Feature_img2.jpeg) | markdownify }
+{{ '![](NewButton-Feature_images/NewButton-Feature_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -119,9 +119,9 @@ The following code illustrates the same.
 
 
 
-&lt;syncfusion:TabControlExt Name="tabcontrol" NewButtonAlignment="Last" NewButtonBackground="Yellow" NewButtonBorderThickness="20” NewButtonClick="TabControlExt_NewTabItemClick" NewButtonStyle="{StaticResource mystyle}" IsNewButtonEnabled="True" Loaded="tabcontrol_Loaded"&gt;
+<syncfusion:TabControlExt Name="tabcontrol" NewButtonAlignment="Last" NewButtonBackground="Yellow" NewButtonBorderThickness="20” NewButtonClick="TabControlExt_NewTabItemClick" NewButtonStyle="{StaticResource mystyle}" IsNewButtonEnabled="True" Loaded="tabcontrol_Loaded">
 
-&lt;/syncfusion:TabControlExt&gt;
+</syncfusion:TabControlExt>
 
 
 

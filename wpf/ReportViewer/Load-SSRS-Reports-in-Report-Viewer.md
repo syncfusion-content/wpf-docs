@@ -23,7 +23,7 @@ Syncfusion.Windows.Reports.Viewer.ReportViewer reportViewer1 = new Syncfusion.Wi
 
 // SQL ReportingService url.
 
-reportViewer1.ReportServerUrl = @"http://&lt;&lt;SERVER NAME&gt;>/ReportServer";
+reportViewer1.ReportServerUrl = @"http://<<SERVER NAME>>/ReportServer";
 
 
 
@@ -61,7 +61,7 @@ this.Loaded += (sender, arg) =>
 
 
 
-{ ![Description: C:/Users/lingarajs/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Outlook/EV1EZW4I/new1 (4).png](Load-SSRS-Reports-in-Report-Viewer_images/Load-SSRS-Reports-in-Report-Viewer_img1.png) | markdownify }
+{{ '![Description: C:/Users/lingarajs/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Outlook/EV1EZW4I/new1 (4).png](Load-SSRS-Reports-in-Report-Viewer_images/Load-SSRS-Reports-in-Report-Viewer_img1.png)' | markdownify }}
 {:.image }
 
 

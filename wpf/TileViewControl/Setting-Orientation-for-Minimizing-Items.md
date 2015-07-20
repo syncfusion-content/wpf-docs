@@ -55,7 +55,7 @@ The following code example illustrates how to add the Orientation for Minimizing
 
                              HeaderBackground="Gray" CornerRadius="3"/>
 
-&lt;/syncfusion:TileViewControl&gt;
+</syncfusion:TileViewControl>
 
 
 
@@ -103,7 +103,7 @@ The following code example illustrates how to add the Orientation for Minimizing
 
 
 
-{ ![](Setting-Orientation-for-Minimizing-Items_images/Setting-Orientation-for-Minimizing-Items_img1.png) | markdownify }
+{{ '![](Setting-Orientation-for-Minimizing-Items_images/Setting-Orientation-for-Minimizing-Items_img1.png)' | markdownify }}
 {:.image }
 
 

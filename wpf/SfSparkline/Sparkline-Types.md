@@ -17,11 +17,11 @@ Line sparkline rendered using polyline and the following code is used to create 
 
 …
 
-            &lt;Grid.DataContext&gt;
+            <Grid.DataContext>
 
-                &lt;local:UsersViewModel/&gt;
+                <local:UsersViewModel/>
 
-            &lt;/Grid.DataContext&gt;
+            </Grid.DataContext>
 
             <Syncfusion:SfLineSparkline 
 
@@ -29,13 +29,13 @@ Line sparkline rendered using polyline and the following code is used to create 
 
 YBindingPath="NoOfUsers">
 
-            &lt;/Syncfusion:SfLineSparkline &gt;
+            </Syncfusion:SfLineSparkline >
 
 
 
 The following illustrates the result of the above code sample,
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Sparkline-Types_images/Sparkline-Types_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Sparkline-Types_images/Sparkline-Types_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -45,13 +45,13 @@ Column sparkline used to visualize the raw data as a rectangle and following cod
 
 [XAML]
 
-   &lt;Syncfusion:SfColumnSparkline ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" &gt;
+   <Syncfusion:SfColumnSparkline ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
 
-        &lt;/Syncfusion:SfColumnSparkline&gt;
+        </Syncfusion:SfColumnSparkline>
 
 Following is the snapshot for Column Sparkline,
 
-{ ![C:/Users/ApoorvahR/Desktop/2.png](Sparkline-Types_images/Sparkline-Types_img2.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/2.png](Sparkline-Types_images/Sparkline-Types_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -65,11 +65,11 @@ Following code is used to create area sparkline and all the line sparkline featu
 
  ItemsSource="{Binding UsersList}"  YBindingPath="NoOfUsers">
 
-  &lt;/Syncfusion:SfAreaSparkline &gt;
+  </Syncfusion:SfAreaSparkline >
 
 Following is the snapshot for area sparkline,
 
-{ ![C:/Users/ApoorvahR/Desktop/3.png](Sparkline-Types_images/Sparkline-Types_img3.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/3.png](Sparkline-Types_images/Sparkline-Types_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -81,15 +81,15 @@ WinLoss sparkline render as a column segment and it show the positive, negative 
 
 …
 
-  &lt;Page.DataContext&gt;
+  <Page.DataContext>
 
-            &lt;local:MatchDetailsViewModel/&gt;
+            <local:MatchDetailsViewModel/>
 
-  &lt;/Page.DataContext&gt;
+  </Page.DataContext>
 
-        &lt;Syncfusion:SfWinLossSparkline x:Name="sparkline" ItemsSource="{Binding Match}" YBindingPath="Result" &gt;
+        <Syncfusion:SfWinLossSparkline x:Name="sparkline" ItemsSource="{Binding Match}" YBindingPath="Result" >
 
-        &lt;/Syncfusion:SfWinLossSparkline&gt;
+        </Syncfusion:SfWinLossSparkline>
 
 
 
@@ -138,7 +138,7 @@ public class MatchDetailsModel
 Execute the above code to render the following output.
 
 
-{ ![C:/Users/ApoorvahR/Desktop/4.png](Sparkline-Types_images/Sparkline-Types_img4.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/4.png](Sparkline-Types_images/Sparkline-Types_img4.png)' | markdownify }}
 {:.image }
 
 

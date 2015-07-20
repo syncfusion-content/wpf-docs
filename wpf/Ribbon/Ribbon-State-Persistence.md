@@ -204,23 +204,23 @@ WindowState="Normal" WindowStyle="SingleBorderWindow"
 
     Title="Ribbon Sample Demo"  WindowStartupLocation="CenterScreen">
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;syncfusion:Ribbon Name="MyRibbon" AutoPersist="True"&gt;
+        <syncfusion:Ribbon Name="MyRibbon" AutoPersist="True">
 
-            &lt;syncfusion:Ribbon.QuickAccessToolBar&gt;
+            <syncfusion:Ribbon.QuickAccessToolBar>
 
-                &lt;syncfusion:QuickAccessToolBar AutoPersist="True"&gt;
+                <syncfusion:QuickAccessToolBar AutoPersist="True">
 
-                &lt;/syncfusion:QuickAccessToolBar&gt;
+                </syncfusion:QuickAccessToolBar>
 
-            &lt;/syncfusion:Ribbon.QuickAccessToolBar&gt;
+            </syncfusion:Ribbon.QuickAccessToolBar>
 
-        &lt;/syncfusion:Ribbon&gt;
+        </syncfusion:Ribbon>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/syncfusion:RibbonWindow&gt;
+</syncfusion:RibbonWindow>
 
 
 

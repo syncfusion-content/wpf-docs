@@ -62,7 +62,7 @@ The following properties are no longer used and do not make any change in the Up
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1258.png](Overview_images/Overview_img1.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1258.png](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 

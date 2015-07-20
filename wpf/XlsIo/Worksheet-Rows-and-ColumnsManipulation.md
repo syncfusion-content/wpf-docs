@@ -509,7 +509,7 @@ Delete Rows and Columns
 
 MS Excel allows you to delete rows and columns in a spreadsheet by selecting and deleting the rows through the context menu that appears on right-clicking.
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img1.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -762,7 +762,7 @@ _Note:_
 
 Excel allows you to hide a row/column by using the Hide command, but a row or column also becomes hidden when you change its row height or column width to zero. You can also show a hidden row/column by using the Unhide command.
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img2.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -917,7 +917,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img3.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -1211,9 +1211,9 @@ MS Excel allows you to set the row height and column width by using the Format m
 
 
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img4.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img4.png)' | markdownify }}
 {:.image }
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img5.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -1373,7 +1373,7 @@ excelEngine.Dispose()
 
 AutoFit is the option in MS Excel that can be enabled or disabled through the Format menu. AutoFit is the name given to the automatic width (or height) adjustment to fit the contents of a cell, row, or column.
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img6.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -1939,7 +1939,7 @@ Microsoft Excel has grouping and outlining features that allows you to group lar
 
 
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img7.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -2099,7 +2099,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img8.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -2107,7 +2107,7 @@ _Grouping in XlsIO_
 
 Excel has options to customize the Grouping settings through the Settings dialog box. You can show the Summary details row below or right of the column by using the options provided in the Settings dialog box.
 
-{ ![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img9.png) | markdownify }
+{{ '![](Worksheet-Rows-and-ColumnsManipulation_images/Worksheet-Rows-and-ColumnsManipulation_img9.png)' | markdownify }}
 {:.image }
 
 

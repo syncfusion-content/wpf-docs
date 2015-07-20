@@ -13,7 +13,7 @@ documentation: ug
 
 The various elements of the ColorPickerPalette are illustrated in the following screenshot.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -36,7 +36,7 @@ The following code example illustrates how to add the ColorPickerPalette control
 
 [XAML]
 
-   &lt;syncfusion:ColorPickerPalette x:Name="ColorPicker"/&gt;
+   <syncfusion:ColorPickerPalette x:Name="ColorPicker"/>
 
 
 
@@ -70,7 +70,7 @@ To add a ColorPickerPalette control to an application through Microsoft Expressi
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -80,7 +80,7 @@ To add a ColorPickerPalette control to an application through Microsoft Expressi
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 

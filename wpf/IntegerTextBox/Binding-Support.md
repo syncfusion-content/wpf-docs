@@ -17,17 +17,17 @@ XAML
 
 
 
-&lt;StackPanel&gt;
+<StackPanel>
 
-    &lt;syncfusion:IntegerTextBox x:Name="integerTextBox1" Width="150" Margin="10"/&gt;
+    <syncfusion:IntegerTextBox x:Name="integerTextBox1" Width="150" Margin="10"/>
 
-    &lt;syncfusion:IntegerTextBox x:Name="integerTextBox2" Width="150" Margin="10" Value="{Binding ElementName=integerTextBox1,Path=Value,Mode=TwoWay}"/&gt;
+    <syncfusion:IntegerTextBox x:Name="integerTextBox2" Width="150" Margin="10" Value="{Binding ElementName=integerTextBox1,Path=Value,Mode=TwoWay}"/>
 
-&lt;/StackPanel&gt;
+</StackPanel>
 
 
 
-{ ![](Binding-Support_images/Binding-Support_img1.png) | markdownify }
+{{ '![](Binding-Support_images/Binding-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -39,17 +39,17 @@ XAML
 
 
 
-&lt;StackPanel DataContext="{StaticResource myCustomer}"&gt;
+<StackPanel DataContext="{StaticResource myCustomer}">
 
-    &lt;TextBox Text="{Binding FirstName}"/&gt;
+    <TextBox Text="{Binding FirstName}"/>
 
-    &lt;TextBox Text ="{Binding LastName}"/&gt;
+    <TextBox Text ="{Binding LastName}"/>
 
-    &lt;syncfusion:IntegerTextBox Value="{Binding Phone}"/&gt;
+    <syncfusion:IntegerTextBox Value="{Binding Phone}"/>
 
-    &lt;syncfusion:IntegerTextBox Value="{Binding Income}"/&gt;
+    <syncfusion:IntegerTextBox Value="{Binding Income}"/>
 
-&lt;/StackPanel&gt;
+</StackPanel>
 
 
 
@@ -63,17 +63,17 @@ XAML
 
 
 
-&lt;StackPanel&gt;
+<StackPanel>
 
-    &lt;StackPanel.Resources&gt;
+    <StackPanel.Resources>
 
-        &lt;c:StringToIntConverter x:Key="stringToIntConverter"/&gt;
+        <c:StringToIntConverter x:Key="stringToIntConverter"/>
 
-    &lt;/StackPanel.Resources&gt;
+    </StackPanel.Resources>
 
 
 
-    &lt;syncfusion:IntegerTextBox x:Name="integerTextBox" Width="150" Margin="10"/&gt;
+    <syncfusion:IntegerTextBox x:Name="integerTextBox" Width="150" Margin="10"/>
 
     <TextBox x:Name="textBox" Width="150" Margin="10" Text="{Binding 
 
@@ -81,11 +81,11 @@ XAML
 
              Converter={StaticResource stringToIntConverter}}"/>    
 
-&lt;/StackPanel&gt;
+</StackPanel>
 
 
 
-{ ![](Binding-Support_images/Binding-Support_img2.png) | markdownify }
+{{ '![](Binding-Support_images/Binding-Support_img2.png)' | markdownify }}
 {:.image }
 
 

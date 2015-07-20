@@ -51,7 +51,7 @@ Sample Link
 
 A demo available in the following location:
 
-&lt;InstalledDrive&gt;:\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OlapClient.WPF\Samples\Appearance\Skin Customization Demo
+<InstalledDrive>:\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OlapClient.WPF\Samples\Appearance\Skin Customization Demo
 
 ## Adding Theming to an Application 
 
@@ -61,7 +61,7 @@ The following code samples demonstrate how theming is added to the OlapClient co
 
 
 
-      &lt;syncfusion:OlapClient  x:Name="olapClient" VisualStyle="Transparent"/&gt;
+      <syncfusion:OlapClient  x:Name="olapClient" VisualStyle="Transparent"/>
 
 
 

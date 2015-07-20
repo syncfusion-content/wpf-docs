@@ -19,27 +19,27 @@ QTP Tool interacts with the control through CustomServerBase extension through t
 
 [C#]
 
-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+<?xml version="1.0" encoding="UTF-8"?>
 
-&lt;Controls&gt;
+<Controls>
 
-  &lt;Control Type="Syncfusion.Windows.Shared.DateTimeEdit" MappedTo="SfDateTimeEdit"&gt;
+  <Control Type="Syncfusion.Windows.Shared.DateTimeEdit" MappedTo="SfDateTimeEdit">
 
-    &lt;CustomServer&gt;
+    <CustomServer>
 
-      &lt;Component&gt;
+      <Component>
 
         <DllName>Syncfusion.QtpDateTimeEdit.Wpf.dll</DllName>
 
         <TypeName>Syncfusion.Windows.Controls.QTP.DateTimeEditServer</TypeName>
 
-      &lt;/Component&gt;
+      </Component>
 
-    &lt;/CustomServer&gt;
+    </CustomServer>
 
-  &lt;/Control&gt;
+  </Control>
 
-&lt;/Controls&gt;
+</Controls>
 
 
 

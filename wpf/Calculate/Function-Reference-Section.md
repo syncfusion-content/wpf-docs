@@ -152,7 +152,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img1.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -238,13 +238,13 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img2.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img2.png)' | markdownify }}
 {:.image }
 
 
 where:
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img3.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img3.png)' | markdownify }}
 {:.image }
  is COMBIN(n,x).    
 
@@ -254,7 +254,7 @@ where:
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img4.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -358,7 +358,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img5.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -421,7 +421,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img6.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -429,7 +429,7 @@ Remarks
 
 where:
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img7.jpeg) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -495,7 +495,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img8.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -533,7 +533,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img9.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -622,7 +622,7 @@ Remarks
 * array1 and array2 must have the same number of data points. 
 * The covariance is:
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img10.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -831,7 +831,7 @@ Remarks
 <td>
 <br></td></tr>
 </table>
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img11.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -913,7 +913,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img12.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -923,7 +923,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img13.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -1029,7 +1029,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img14.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -1051,7 +1051,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img15.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -1112,11 +1112,11 @@ a+bx
 
 where:
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img16.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img16.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img17.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -1168,7 +1168,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img18.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -1176,7 +1176,7 @@ Remarks
 
 * The standard gamma probability density function is:
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img19.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -1186,7 +1186,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img20.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img20.png)' | markdownify }}
 {:.image }
 
 
@@ -1249,7 +1249,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img21.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img21.png)' | markdownify }}
 {:.image }
 
 
@@ -1311,7 +1311,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img22.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -1389,7 +1389,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img23.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -1483,13 +1483,13 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img24.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img24.png)' | markdownify }}
 {:.image }
 
 
 where:
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img25.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -1673,7 +1673,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img26.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img26.png)' | markdownify }}
 {:.image }
 
 
@@ -1843,7 +1843,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img27.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img27.png)' | markdownify }}
 {:.image }
 
 
@@ -1870,7 +1870,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img28.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img28.png)' | markdownify }}
 {:.image }
 
 
@@ -2053,7 +2053,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img29.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img29.png)' | markdownify }}
 {:.image }
 
 
@@ -2136,7 +2136,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img30.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img30.png)' | markdownify }}
 {:.image }
 
 
@@ -2173,7 +2173,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img31.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img31.png)' | markdownify }}
 {:.image }
 
 
@@ -2301,7 +2301,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img32.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img32.png)' | markdownify }}
 {:.image }
 
 
@@ -2374,7 +2374,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img33.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img33.png)' | markdownify }}
 {:.image }
 
 
@@ -2497,7 +2497,7 @@ Remarks
 
 For cumulative = False:
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img34.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img34.png)' | markdownify }}
 {:.image }
 
 
@@ -2505,7 +2505,7 @@ For cumulative = False:
 
 For cumulative = True:
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img35.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img35.png)' | markdownify }}
 {:.image }
 
 
@@ -2631,7 +2631,7 @@ Remarks
 * In annuity functions, the cash you pay out such as a deposit to savings is represented by a negative number; the cash you receive such as a dividend check is represented by a positive number.
 * One financial argument is solved for in terms of the others. When rate is not 0, then,
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img36.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img36.png)' | markdownify }}
 {:.image }
 
 
@@ -2827,7 +2827,7 @@ Remarks
 
 The equation for the Pearson product moment correlation coefficient, r, is:
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img37.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img37.png)' | markdownify }}
 {:.image }
 
 
@@ -2894,7 +2894,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img38.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img38.png)' | markdownify }}
 {:.image }
 
 
@@ -2926,7 +2926,7 @@ Remarks
 
 The equation for skewness is defined as:
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img39.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img39.png)' | markdownify }}
 {:.image }
 
 
@@ -2966,7 +2966,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img40.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img40.png)' | markdownify }}
 {:.image }
 
 
@@ -3027,7 +3027,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img41.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img41.png)' | markdownify }}
 {:.image }
 
 
@@ -3050,7 +3050,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img42.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img42.png)' | markdownify }}
 {:.image }
 
 
@@ -3079,7 +3079,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img43.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img43.png)' | markdownify }}
 {:.image }
 
 
@@ -3108,7 +3108,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img44.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img44.png)' | markdownify }}
 {:.image }
 
 
@@ -3135,7 +3135,7 @@ Remarks
 * Arguments that contain True evaluate as 1; arguments that contain text or False evaluate as 0 (zero).
 * STDEVPA uses the following formula: 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img45.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img45.png)' | markdownify }}
 {:.image }
 
 
@@ -3165,7 +3165,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img46.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img46.png)' | markdownify }}
 {:.image }
 
 
@@ -3334,7 +3334,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img47.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img47.png)' | markdownify }}
 {:.image }
 
 
@@ -3359,7 +3359,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img48.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img48.png)' | markdownify }}
 {:.image }
 
 
@@ -3387,7 +3387,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img49.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img49.png)' | markdownify }}
 {:.image }
 
 
@@ -3419,7 +3419,7 @@ Remarks
 
 * The formula for the hyperbolic tangent is:
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img50.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img50.png)' | markdownify }}
 {:.image }
 
 
@@ -3622,7 +3622,7 @@ Remarks
 
 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img51.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img51.png)' | markdownify }}
 {:.image }
 
 
@@ -3788,13 +3788,13 @@ Remarks
 
 * ZTEST is calculated as follows when sigma is not omitted: 
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img52.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img52.png)' | markdownify }}
 {:.image }
 
 
 or when sigma is omitted:
 
-{ ![](Function-Reference-Section_images/Function-Reference-Section_img53.png) | markdownify }
+{{ '![](Function-Reference-Section_images/Function-Reference-Section_img53.png)' | markdownify }}
 {:.image }
 
 

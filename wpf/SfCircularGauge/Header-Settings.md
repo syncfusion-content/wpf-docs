@@ -36,9 +36,9 @@ Code Example:
 
 [XAML]
 
-        &lt;syncfusion:SfCircularGauge GaugeHeaderPosition="300,600" &gt;
+        <syncfusion:SfCircularGauge GaugeHeaderPosition="300,600" >
 
-            &lt;syncfusion:SfCircularGauge.GaugeHeader&gt;
+            <syncfusion:SfCircularGauge.GaugeHeader>
 
                 <TextBlock Text="Temperature (K)" 
 
@@ -46,9 +46,9 @@ Code Example:
 
                               FontSize="20" Foreground="White"/>
 
-            &lt;/syncfusion:SfCircularGauge.GaugeHeader&gt;
+            </syncfusion:SfCircularGauge.GaugeHeader>
 
-        &lt;/syncfusion:SfCircularGauge&gt; 
+        </syncfusion:SfCircularGauge> 
 
 
 
@@ -70,7 +70,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Header-Settings_images/Header-Settings_img1.png) | markdownify }
+{{ '![](Header-Settings_images/Header-Settings_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -86,7 +86,7 @@ Gauge Header as Text
 
                              GaugeHeaderPosition="300,400" FontSize="20"  >
 
-     &lt;syncfusion:SfCircularGauge.MainScale&gt;
+     <syncfusion:SfCircularGauge.MainScale>
 
           <syncfusion:CircularScale  RimStroke="White" 
 
@@ -96,7 +96,7 @@ Gauge Header as Text
 
                                      EndValue="100" >
 
-             &lt;syncfusion:CircularScale.Ranges&gt;
+             <syncfusion:CircularScale.Ranges>
 
                <syncfusion:CircularRange StartValue="0" EndValue="40" 
 
@@ -110,21 +110,21 @@ Gauge Header as Text
 
                                           Stroke="#d1dbdb"/>
 
-             &lt;/syncfusion:CircularScale.Ranges&gt;
+             </syncfusion:CircularScale.Ranges>
 
-          &lt;syncfusion:CircularScale.Pointers&gt;
+          <syncfusion:CircularScale.Pointers>
 
              <syncfusion:CircularPointer   Value="65" SymbolPointerStroke="Red"
 
                                           PointerType="SymbolPointer"    />
 
-         &lt;/syncfusion:CircularScale.Pointers&gt;
+         </syncfusion:CircularScale.Pointers>
 
-    &lt;/syncfusion:CircularScale&gt;
+    </syncfusion:CircularScale>
 
-&lt;/syncfusion:SfCircularGauge.MainScale&gt;
+</syncfusion:SfCircularGauge.MainScale>
 
-        &lt;/syncfusion:SfCircularGauge&gt;
+        </syncfusion:SfCircularGauge>
 
 
 
@@ -170,7 +170,7 @@ Gauge Header as Text
 
 Screenshot:
 
-{ ![](Header-Settings_images/Header-Settings_img2.png) | markdownify }
+{{ '![](Header-Settings_images/Header-Settings_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -180,19 +180,19 @@ Gauge Header as UI Element
 
 
 
-&lt;syncfusion:SfCircularGauge GaugeHeaderPosition="300,600"&gt;
+<syncfusion:SfCircularGauge GaugeHeaderPosition="300,600">
 
-&lt;syncfusion:SfCircularGauge.GaugeHeader&gt;
+<syncfusion:SfCircularGauge.GaugeHeader>
 
-                &lt;Grid&gt;
+                <Grid>
 
-                    &lt;Grid.RowDefinitions&gt;
+                    <Grid.RowDefinitions>
 
-                        &lt;RowDefinition/&gt;
+                        <RowDefinition/>
 
-                        &lt;RowDefinition/&gt;
+                        <RowDefinition/>
 
-                    &lt;/Grid.RowDefinitions&gt;
+                    </Grid.RowDefinitions>
 
                     <TextBlock Grid.Row="1"  Text="Fual Availability" 
 
@@ -202,11 +202,11 @@ Gauge Header as UI Element
 
                            Source="Assets/FuelIcon.jpg"/>
 
-                 &lt;/Grid&gt;
+                 </Grid>
 
-&lt;/syncfusion:SfCircularGauge.GaugeHeader&gt;
+</syncfusion:SfCircularGauge.GaugeHeader>
 
-   &lt;/syncfusion:SfCircularGauge&gt;
+   </syncfusion:SfCircularGauge>
 
 
 
@@ -254,7 +254,7 @@ Gauge Header as UI Element
 
 Screenshot:
 
-{ ![](Header-Settings_images/Header-Settings_img3.png) | markdownify }
+{{ '![](Header-Settings_images/Header-Settings_img3.png)' | markdownify }}
 {:.image }
 
 

@@ -31,7 +31,7 @@ Gets or sets a string that represents the Y values of a series.</td></tr>
 <tr>
 <td>
 Stroke</td><td>
-Gets or sets the { [Brush](http://msdn.microsoft.com/en-us/library/system.windows.media.brush.aspx) | markdownify } that specifies how the series outline is painted.</td></tr>
+Gets or sets the {{ '[Brush](http://msdn.microsoft.com/en-us/library/system.windows.media.brush.aspx)' | markdownify }} that specifies how the series outline is painted.</td></tr>
 <tr>
 <td>
 StrokeThickness                               </td><td>
@@ -43,7 +43,7 @@ Gets or sets the ChartColorPalette of the series.</td></tr>
 <tr>
 <td>
 Interior</td><td>
-Gets or sets the { [Brush](http://msdn.microsoft.com/en-us/library/system.windows.media.brush.aspx) | markdownify } that specifies how the series interior is painted</td></tr>
+Gets or sets the {{ '[Brush](http://msdn.microsoft.com/en-us/library/system.windows.media.brush.aspx)' | markdownify }} that specifies how the series interior is painted</td></tr>
 </table>
 ## LineSeries
 
@@ -53,37 +53,37 @@ The following code example explains how to create a simple LineSeries using give
 
 [XAML]
 
-&lt;syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0"&gt;
+<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            &lt;syncfusion:SfChart.DataContext&gt;
+            <syncfusion:SfChart.DataContext>
 
-                &lt;local:ViewModel&gt;&lt;/local:ViewModel&gt;
+                <local:ViewModel></local:ViewModel>
 
-            &lt;/syncfusion:SfChart.DataContext&gt;
-
-
-
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
-
-                &lt;syncfusion:CategoryAxis  Header="Company Name"/&gt;
-
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.DataContext>
 
 
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:NumericalAxis  Header="Gross Revenue (cr.)"/&gt;
+                <syncfusion:CategoryAxis  Header="Company Name"/>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
-
-
-
-            &lt;syncfusion:LineSeries  x:Name="series1" Palette="Metro"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
 
 
-        &lt;/syncfusion:SfChart&gt;  
+            <syncfusion:SfChart.SecondaryAxis>
+
+                <syncfusion:NumericalAxis  Header="Gross Revenue (cr.)"/>
+
+            </syncfusion:SfChart.SecondaryAxis>
+
+
+
+            <syncfusion:LineSeries  x:Name="series1" Palette="Metro"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+
+
+
+        </syncfusion:SfChart>  
 
 
 
@@ -135,7 +135,7 @@ The following code example explains how to create a simple LineSeries using give
 
 
 
-{ ![](Series_images/Series_img1.png) | markdownify }
+{{ '![](Series_images/Series_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -149,33 +149,33 @@ In ColumnSeries, categories are represented along PrimaryAxis and values are rep
 
 
 
-&lt;syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0"&gt;
+<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            &lt;syncfusion:SfChart.DataContext&gt;
+            <syncfusion:SfChart.DataContext>
 
-                &lt;local:ViewModel&gt;&lt;/local:ViewModel&gt;
+                <local:ViewModel></local:ViewModel>
 
-            &lt;/syncfusion:SfChart.DataContext&gt;
+            </syncfusion:SfChart.DataContext>
 
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:CategoryAxis  Header="Company Name"/&gt;
+                <syncfusion:CategoryAxis  Header="Company Name"/>
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.SecondaryAxis>
 
-                &lt;syncfusion:NumericalAxis  Header="Gross Revenue (cr.)"/&gt;
+                <syncfusion:NumericalAxis  Header="Gross Revenue (cr.)"/>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+            </syncfusion:SfChart.SecondaryAxis>
 
-            &lt;syncfusion:ColumnSeries  x:Name="series1" Palette="Metro"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+            <syncfusion:ColumnSeries  x:Name="series1" Palette="Metro"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
-        &lt;/syncfusion:SfChart&gt;
+        </syncfusion:SfChart>
 
 
 
-{ ![](Series_images/Series_img2.png) | markdownify }
+{{ '![](Series_images/Series_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -185,11 +185,11 @@ BarSeries is rendered using a collection of rectangles of varying heights, align
 
 [XAML]
 
-    &lt;syncfusion:BarSeries Interior="LightBlue"   x:Name="series1"  Stroke="Red" StrokeThickness="3"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+    <syncfusion:BarSeries Interior="LightBlue"   x:Name="series1"  Stroke="Red" StrokeThickness="3"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-{ ![](Series_images/Series_img3.png) | markdownify }
+{{ '![](Series_images/Series_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -201,11 +201,11 @@ AreaSeries is rendered using a collection of line segments connected to form a c
 
 
 
-&lt;syncfusion:AreaSeries Interior="LightBlue"   x:Name="series1"  Stroke="Red" StrokeThickness="3"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+<syncfusion:AreaSeries Interior="LightBlue"   x:Name="series1"  Stroke="Red" StrokeThickness="3"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-{ ![](Series_images/Series_img4.png) | markdownify }
+{{ '![](Series_images/Series_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -215,11 +215,11 @@ SplineSeries resembles line series, but the difference between them is that inst
 
 [XAML]
 
-    &lt;syncfusion:SplineSeries    x:Name="series1"  Palette="Metro"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+    <syncfusion:SplineSeries    x:Name="series1"  Palette="Metro"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-{ ![](Series_images/Series_img5.png) | markdownify }
+{{ '![](Series_images/Series_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -231,11 +231,11 @@ ScatterSeries is a type of mathematical diagram that uses [Cartesian coordinates
 
 
 
-&lt;syncfusion:ScatterSeries    x:Name="series1"  ScatterWidth="20" ScatterHeight="20"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+<syncfusion:ScatterSeries    x:Name="series1"  ScatterWidth="20" ScatterHeight="20"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-{ ![](Series_images/Series_img6.png) | markdownify }
+{{ '![](Series_images/Series_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -267,11 +267,11 @@ Gets or sets the suggested size of the bubble.</td></tr>
 </table>
  [XAML]
 
-&lt;syncfusion:BubbleSeries   x:Name="series1"  MinimumRadius="20" MaximumRadius="40" Size="Value"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt; 
+<syncfusion:BubbleSeries   x:Name="series1"  MinimumRadius="20" MaximumRadius="40" Size="Value"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/> 
 
 
 
-{ ![](Series_images/Series_img7.png) | markdownify }
+{{ '![](Series_images/Series_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -281,11 +281,11 @@ SplineAreaSeries connects a series of data points using smooth Bezier line curve
 
 [XAML]
 
-&lt;syncfusion:SplineAreaSeries   x:Name="series1"  Stroke="Red" StrokeThickness="3" Interior="Blue"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+<syncfusion:SplineAreaSeries   x:Name="series1"  Stroke="Red" StrokeThickness="3" Interior="Blue"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-{ ![](Series_images/Series_img8.png) | markdownify }
+{{ '![](Series_images/Series_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -295,11 +295,11 @@ StepAreaSeries is similar to AreaSeries but it does not use the shortest distanc
 
 [XAML]
 
-&lt;syncfusion:StepAreaSeries   x:Name="series1"  Stroke="Red" StrokeThickness="3" Interior="Blue"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+<syncfusion:StepAreaSeries   x:Name="series1"  Stroke="Red" StrokeThickness="3" Interior="Blue"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-{ ![](Series_images/Series_img9.png) | markdownify }
+{{ '![](Series_images/Series_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -309,11 +309,11 @@ StepLineSeries is similar to LineSeries, but it does not use the shortest distan
 
 [XAML]
 
-    &lt;syncfusion:StepLineSeries   x:Name="series1"  Stroke="Red" StrokeThickness="3" Interior="Blue"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;  
+    <syncfusion:StepLineSeries   x:Name="series1"  Stroke="Red" StrokeThickness="3" Interior="Blue"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>  
 
 
 
-{ ![](Series_images/Series_img10.png) | markdownify }
+{{ '![](Series_images/Series_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -323,11 +323,11 @@ The FastLineSeries is a special kind of line series that can render a collection
 
 [XAML]
 
-&lt;syncfusion:FastLineSeries   x:Name="series1"   StrokeThickness="3" Interior="Blue"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+<syncfusion:FastLineSeries   x:Name="series1"   StrokeThickness="3" Interior="Blue"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-{ ![](Series_images/Series_img11.png) | markdownify }
+{{ '![](Series_images/Series_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -355,45 +355,45 @@ StackingColumnSeries resembles multiple types of series of the ColumnSeries. Eac
 
 
 
-&lt;syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0"&gt;
+<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
 
 
-            &lt;syncfusion:SfChart.DataContext&gt;
+            <syncfusion:SfChart.DataContext>
 
-                &lt;local:ViewModel1&gt;&lt;/local:ViewModel1&gt;
+                <local:ViewModel1></local:ViewModel1>
 
-            &lt;/syncfusion:SfChart.DataContext&gt;
-
-
-
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
-
-                &lt;syncfusion:CategoryAxis  Header="Company Name"/&gt;
-
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
-
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
-
-                &lt;syncfusion:NumericalAxis Interval="100" Header="Gross Revenue (cr.)"/&gt;
-
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+            </syncfusion:SfChart.DataContext>
 
 
 
-            &lt;syncfusion:StackingColumnSeries   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+            <syncfusion:SfChart.PrimaryAxis>
+
+                <syncfusion:CategoryAxis  Header="Company Name"/>
+
+            </syncfusion:SfChart.PrimaryAxis>
+
+            <syncfusion:SfChart.SecondaryAxis>
+
+                <syncfusion:NumericalAxis Interval="100" Header="Gross Revenue (cr.)"/>
+
+            </syncfusion:SfChart.SecondaryAxis>
 
 
 
-            &lt;syncfusion:StackingColumnSeries   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+            <syncfusion:StackingColumnSeries   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-        &lt;/syncfusion:SfChart&gt;
+            <syncfusion:StackingColumnSeries   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-{ ![](Series_images/Series_img12.png) | markdownify }
+        </syncfusion:SfChart>
+
+
+
+{{ '![](Series_images/Series_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -405,17 +405,17 @@ StackingColumn100Series resembles StackingColumnSeries. StackingColumn100Series 
 
 
 
-    &lt;syncfusion:StackingColumn100Series   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+    <syncfusion:StackingColumn100Series   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-        &lt;syncfusion:StackingColumn100Series   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+        <syncfusion:StackingColumn100Series   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
 
 
-{ ![](Series_images/Series_img13.png) | markdownify }
+{{ '![](Series_images/Series_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -425,15 +425,15 @@ StackingBarSeries is a multiple series type of BarSeries. Each BarSeries is then
 
 [XAML]
 
-&lt;syncfusion:StackingBarSeries   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+<syncfusion:StackingBarSeries   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-        &lt;syncfusion:StackingBarSeries   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+        <syncfusion:StackingBarSeries   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-{ ![](Series_images/Series_img14.png) | markdownify }
+{{ '![](Series_images/Series_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -443,13 +443,13 @@ StackingBar100Series resembles a StackingBarSeries. StackingBar100Series display
 
 [XAML]
 
-&lt;syncfusion:StackingBar100Series   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+<syncfusion:StackingBar100Series   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
-        &lt;syncfusion:StackingBar100Series   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+        <syncfusion:StackingBar100Series   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-{ ![](Series_images/Series_img15.png) | markdownify }
+{{ '![](Series_images/Series_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -459,15 +459,15 @@ StackingAreaSeries is representing areas stacked vertically one above the other.
 
 [XAML]
 
-&lt;syncfusion:StackingAreaSeries   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+<syncfusion:StackingAreaSeries   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-        &lt;syncfusion:StackingAreaSeries   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+        <syncfusion:StackingAreaSeries   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-{ ![](Series_images/Series_img16.png) | markdownify }
+{{ '![](Series_images/Series_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -479,15 +479,15 @@ StackingArea100Series is similar to StackingAreaSeries, but this series displays
 
 
 
-&lt;syncfusion:StackingArea100Series   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+<syncfusion:StackingArea100Series   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-        &lt;syncfusion:StackingArea100Series   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+        <syncfusion:StackingArea100Series   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-{ ![](Series_images/Series_img17.png) | markdownify }
+{{ '![](Series_images/Series_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -499,15 +499,15 @@ FastStackingColumnSeries is similar to StackingColumnSeries with y-coordinate va
 
 
 
-&lt;syncfusion:FastStackingColumnBitmapSeries  x:Name="series1"   Interior="Blue" Stroke="Red"   XBindingPath="CompanyName"YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+<syncfusion:FastStackingColumnBitmapSeries  x:Name="series1"   Interior="Blue" Stroke="Red"   XBindingPath="CompanyName"YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-        &lt;syncfusion:FastStackingColumnBitmapSeries x:Name="series2"   Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName"YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+        <syncfusion:FastStackingColumnBitmapSeries x:Name="series2"   Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName"YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-{ ![](Series_images/Series_img18.png) | markdownify }
+{{ '![](Series_images/Series_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -565,27 +565,27 @@ Gets or sets the distance between the actual center point of the chart and the e
 
 
 
-        &lt;syncfusion:PieSeries  x:Name="series1"   EnableSmartLabels="True" LabelPosition="OutsideExtended"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"&gt;
+        <syncfusion:PieSeries  x:Name="series1"   EnableSmartLabels="True" LabelPosition="OutsideExtended"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
 
 
 
-            &lt;syncfusion:PieSeries.AdornmentsInfo&gt;
+            <syncfusion:PieSeries.AdornmentsInfo>
 
-                &lt;syncfusion:ChartAdornmentInfo AdornmentsPosition="Bottom" ShowLabel="True" HorizontalAlignment="Center" UseSeriesPalette="True" ShowConnectorLine="True" ConnectorHeight="80" SegmentLabelContent="LabelContentPath"&gt;
-
-
+                <syncfusion:ChartAdornmentInfo AdornmentsPosition="Bottom" ShowLabel="True" HorizontalAlignment="Center" UseSeriesPalette="True" ShowConnectorLine="True" ConnectorHeight="80" SegmentLabelContent="LabelContentPath">
 
 
 
-                &lt;/syncfusion:ChartAdornmentInfo&gt;
-
-            &lt;/syncfusion:PieSeries.AdornmentsInfo&gt;
-
-        &lt;/syncfusion:PieSeries&gt;
 
 
+                </syncfusion:ChartAdornmentInfo>
 
-{ ![](Series_images/Series_img19.png) | markdownify }
+            </syncfusion:PieSeries.AdornmentsInfo>
+
+        </syncfusion:PieSeries>
+
+
+
+{{ '![](Series_images/Series_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -595,15 +595,15 @@ By having custom StartAngle and EndAngle, you can draw pie series in different s
 
 [XAML]
 
-&lt;syncfusion:SfChart Name="chart" &gt;
+<syncfusion:SfChart Name="chart" >
 
-&lt;syncfusion:PieSeries StartAngle="180" EndAngle="360" x:Name="pieSeries" Palette="Metro" XBindingPath="_Date" YBindingPath="Low" ItemsSource="{Binding StockPriceDetails}"/&gt;
+<syncfusion:PieSeries StartAngle="180" EndAngle="360" x:Name="pieSeries" Palette="Metro" XBindingPath="_Date" YBindingPath="Low" ItemsSource="{Binding StockPriceDetails}"/>
 
-&lt;/syncfusion:SfChart&gt;
+</syncfusion:SfChart>
 
 
 
-{ ![](Series_images/Series_img20.png) | markdownify }
+{{ '![](Series_images/Series_img20.png)' | markdownify }}
 {:.image }
 
 
@@ -649,27 +649,27 @@ Gets or sets the double value that is used to control the DoughnutSeries renderi
 
 
 
-  &lt;syncfusion:DoughnutSeries  x:Name="series1"   EnableSmartLabels="True" DoughnutCoefficient="0.5" LabelPosition="OutsideExtended"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"&gt;
+  <syncfusion:DoughnutSeries  x:Name="series1"   EnableSmartLabels="True" DoughnutCoefficient="0.5" LabelPosition="OutsideExtended"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
 
 
 
-            &lt;syncfusion:DoughnutSeries.AdornmentsInfo&gt;
+            <syncfusion:DoughnutSeries.AdornmentsInfo>
 
-                &lt;syncfusion:ChartAdornmentInfo AdornmentsPosition="Bottom" ShowLabel="True" HorizontalAlignment="Center" UseSeriesPalette="True" ShowConnectorLine="True" ConnectorHeight="80" SegmentLabelContent="LabelContentPath"&gt;
-
-
-
-                &lt;/syncfusion:ChartAdornmentInfo&gt;
+                <syncfusion:ChartAdornmentInfo AdornmentsPosition="Bottom" ShowLabel="True" HorizontalAlignment="Center" UseSeriesPalette="True" ShowConnectorLine="True" ConnectorHeight="80" SegmentLabelContent="LabelContentPath">
 
 
 
-            &lt;/syncfusion:DoughnutSeries.AdornmentsInfo&gt;
-
-        &lt;/syncfusion:DoughnutSeries&gt;
+                </syncfusion:ChartAdornmentInfo>
 
 
 
-{ ![](Series_images/Series_img21.png) | markdownify }
+            </syncfusion:DoughnutSeries.AdornmentsInfo>
+
+        </syncfusion:DoughnutSeries>
+
+
+
+{{ '![](Series_images/Series_img21.png)' | markdownify }}
 {:.image }
 
 
@@ -679,11 +679,11 @@ By having custom StartAngle and EndAngle, you can draw doughnut series in differ
 
 [XAML]
 
-&lt;syncfusion:SfChart Name="chart" &gt;
+<syncfusion:SfChart Name="chart" >
 
-&lt;syncfusion:DoughnutSeries   StartAngle="180" EndAngle="360" x:Name="doughnutseries" Palette="Metro"   XBindingPath="_Date" YBindingPath="Low"ItemsSource="{Binding StockPriceDetails}"/&gt;
+<syncfusion:DoughnutSeries   StartAngle="180" EndAngle="360" x:Name="doughnutseries" Palette="Metro"   XBindingPath="_Date" YBindingPath="Low"ItemsSource="{Binding StockPriceDetails}"/>
 
-&lt;syncfusion:DoughnutSeries.AdornmentsInfo&gt;
+<syncfusion:DoughnutSeries.AdornmentsInfo>
 
 
 
@@ -701,15 +701,15 @@ ConnectorHeight="80"
 
 SegmentLabelContent="LabelContentPath">
 
-                    &lt;/syncfusion:ChartAdornmentInfo&gt;
+                    </syncfusion:ChartAdornmentInfo>
 
-                &lt;/syncfusion:DoughnutSeries.AdornmentsInfo&gt;
+                </syncfusion:DoughnutSeries.AdornmentsInfo>
 
-&lt;/syncfusion:SfChart&gt;
+</syncfusion:SfChart>
 
 
 
-{ ![](Series_images/Series_img22.png) | markdownify }
+{{ '![](Series_images/Series_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -745,15 +745,15 @@ Represents the mode for the PyramidSeries.</td></tr>
 
 
 
-  &lt;syncfusion:PyramidSeries  x:Name="series1"   PyramidMode="Linear"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"&gt;
+  <syncfusion:PyramidSeries  x:Name="series1"   PyramidMode="Linear"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
 
 
 
-        &lt;/syncfusion:PyramidSeries&gt;        
+        </syncfusion:PyramidSeries>        
 
 
 
-{ ![](Series_images/Series_img23.png) | markdownify }
+{{ '![](Series_images/Series_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -787,13 +787,13 @@ Represents the mode for the FunnelSeries.</td></tr>
 
 [XAML]
 
-    &lt;syncfusion:FunnelSeries  x:Name="series1"   FunnelMode="ValueIsHeight" MinHeight="10"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"&gt;
+    <syncfusion:FunnelSeries  x:Name="series1"   FunnelMode="ValueIsHeight" MinHeight="10"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
 
-        &lt;/syncfusion:FunnelSeries&gt;
+        </syncfusion:FunnelSeries>
 
 
 
-{ ![](Series_images/Series_img24.png) | markdownify }
+{{ '![](Series_images/Series_img24.png)' | markdownify }}
 {:.image }
 
 
@@ -823,13 +823,13 @@ Gets or sets the string that describes low value in Y-axis.</td></tr>
 
 [XAML]
 
-  &lt;syncfusion:RangeColumnSeries x:Name="series1"  Low="Value"   XBindingPath="CompanyName" High="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"&gt;
+  <syncfusion:RangeColumnSeries x:Name="series1"  Low="Value"   XBindingPath="CompanyName" High="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
 
-        &lt;/syncfusion:RangeColumnSeries&gt;
+        </syncfusion:RangeColumnSeries>
 
 
 
-{ ![](Series_images/Series_img25.png) | markdownify }
+{{ '![](Series_images/Series_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -867,13 +867,13 @@ Gets or sets the brush that represents the interior color for the low value data
 
 [XAML]
 
-  &lt;syncfusion:RangeAreaSeries x:Name="series1"  Low="Value"   LowValueInterior="Blue"  XBindingPath="CompanyName" High="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"&gt;
+  <syncfusion:RangeAreaSeries x:Name="series1"  Low="Value"   LowValueInterior="Blue"  XBindingPath="CompanyName" High="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
 
-        &lt;/syncfusion:RangeAreaSeries&gt;
+        </syncfusion:RangeAreaSeries>
 
 
 
-{ ![](Series_images/Series_img26.png) | markdownify }
+{{ '![](Series_images/Series_img26.png)' | markdownify }}
 {:.image }
 
 
@@ -905,15 +905,15 @@ Gets or sets the ChartSeriesDrawType that describes the series rendering type is
 
 
 
-     &lt;syncfusion:RadarSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" IsClosed="True" DrawType="Line" ItemsSource="{Binding CompanyDetails}"&gt;
+     <syncfusion:RadarSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" IsClosed="True" DrawType="Line" ItemsSource="{Binding CompanyDetails}">
 
 
 
-        &lt;/syncfusion:RadarSeries&gt;
+        </syncfusion:RadarSeries>
 
 
 
-{ ![](Series_images/Series_img27.png) | markdownify }
+{{ '![](Series_images/Series_img27.png)' | markdownify }}
 {:.image }
 
 
@@ -943,13 +943,13 @@ Gets or sets the ChartSeriesDrawType that describes the series rendering type as
 
 [XAML]
 
-   &lt;syncfusion:PolarSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" IsClosed="True" DrawType="Line" ItemsSource="{Binding CompanyDetails}"&gt;
+   <syncfusion:PolarSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" IsClosed="True" DrawType="Line" ItemsSource="{Binding CompanyDetails}">
 
-        &lt;/syncfusion:PolarSeries&gt;
+        </syncfusion:PolarSeries>
 
 
 
-{ ![](Series_images/Series_img28.png) | markdownify }
+{{ '![](Series_images/Series_img28.png)' | markdownify }}
 {:.image }
 
 
@@ -981,13 +981,13 @@ Gets or sets the string that describes low value in Y-axis.</td></tr>
 
 
 
-   &lt;syncfusion:HiLoSeries x:Name="series1"    XBindingPath="CompanyName" High="CompanyTurnOver" Low="Value"  ItemsSource="{Binding CompanyDetails}"&gt;
+   <syncfusion:HiLoSeries x:Name="series1"    XBindingPath="CompanyName" High="CompanyTurnOver" Low="Value"  ItemsSource="{Binding CompanyDetails}">
 
-        &lt;/syncfusion:HiLoSeries&gt;
+        </syncfusion:HiLoSeries>
 
 
 
-{ ![](Series_images/Series_img29.png) | markdownify }
+{{ '![](Series_images/Series_img29.png)' | markdownify }}
 {:.image }
 
 
@@ -1027,13 +1027,13 @@ Gets or sets the string that describes close value in Y-axis.</td></tr>
 
 [XAML]
 
-     &lt;syncfusion:HiLoOpenCloseSeries x:Name="series1"    XBindingPath="CompanyName" High="CompanyTurnOver" Low="Value" Open="Open" Close="Close" ItemsSource="{Binding CompanyDetails}"&gt;
+     <syncfusion:HiLoOpenCloseSeries x:Name="series1"    XBindingPath="CompanyName" High="CompanyTurnOver" Low="Value" Open="Open" Close="Close" ItemsSource="{Binding CompanyDetails}">
 
-        &lt;/syncfusion:HiLoOpenCloseSeries&gt;
+        </syncfusion:HiLoOpenCloseSeries>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-57.png](Series_images/Series_img30.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-57.png](Series_images/Series_img30.png)' | markdownify }}
 {:.image }
 
 
@@ -1079,13 +1079,13 @@ Represents that brush color for the segments that show stock price has gone down
 
 [XAML]
 
-    &lt;syncfusion:CandleSeries x:Name="series1" BearFillColor="Green" BullFillColor="Red"   XBindingPath="CompanyName"High="CompanyTurnOver" Low="Value" Open="Open" Close="Close" ItemsSource="{Binding CompanyDetails}"&gt;
+    <syncfusion:CandleSeries x:Name="series1" BearFillColor="Green" BullFillColor="Red"   XBindingPath="CompanyName"High="CompanyTurnOver" Low="Value" Open="Open" Close="Close" ItemsSource="{Binding CompanyDetails}">
 
-        &lt;/syncfusion:CandleSeries&gt;
+        </syncfusion:CandleSeries>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-58.png](Series_images/Series_img31.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-58.png](Series_images/Series_img31.png)' | markdownify }}
 {:.image }
 
 
@@ -1117,13 +1117,13 @@ Gets or sets a collection of Double values that indicates the pattern of dashes 
 
 
 
-&lt;syncfusion:FastLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open"&gt;
+<syncfusion:FastLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open">
 
-            &lt;/syncfusion:FastLineBitmapSeries&gt;
+            </syncfusion:FastLineBitmapSeries>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-113.png](Series_images/Series_img32.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-113.png](Series_images/Series_img32.png)' | markdownify }}
 {:.image }
 
 
@@ -1133,13 +1133,13 @@ FastColumnBitmapSeries displays a series of column segments rendered using Writa
 
  [XAML]
 
-&lt;syncfusion:FastColumnBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open"&gt;
+<syncfusion:FastColumnBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open">
 
-            &lt;/syncfusion:FastColumnBitmapSeries&gt;
+            </syncfusion:FastColumnBitmapSeries>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-114.png](Series_images/Series_img33.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-114.png](Series_images/Series_img33.png)' | markdownify }}
 {:.image }
 
 
@@ -1171,13 +1171,13 @@ Gets or sets the suggested height of the FastScatterBitmapSeries.</td></tr>
 
 
 
-&lt;syncfusion:FastScatterBitmapSeries ScatterHeight="15" ScatterWidth="15" ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open"&gt;
+<syncfusion:FastScatterBitmapSeries ScatterHeight="15" ScatterWidth="15" ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open">
 
-            &lt;/syncfusion:FastScatterBitmapSeries&gt;
+            </syncfusion:FastScatterBitmapSeries>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-115.png](Series_images/Series_img34.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-115.png](Series_images/Series_img34.png)' | markdownify }}
 {:.image }
 
 
@@ -1203,13 +1203,13 @@ Gets or sets the bool that is used to avoid jagged patterns in the line.</td></t
 
 [XAML]
 
-&lt;syncfusion:FastStepLineBitmapSeries EnableAntiAliasing="True"   ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open"&gt;
+<syncfusion:FastStepLineBitmapSeries EnableAntiAliasing="True"   ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open">
 
-            &lt;/syncfusion:FastStepLineBitmapSeries&gt;
+            </syncfusion:FastStepLineBitmapSeries>
 
 
 
-{ ![](Series_images/Series_img35.png) | markdownify }
+{{ '![](Series_images/Series_img35.png)' | markdownify }}
 {:.image }
 
 
@@ -1221,13 +1221,13 @@ FastBarBitmapSeries displays a series of bar segments rendered using WritableBit
 
 
 
-&lt;syncfusion:FastBarBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open"&gt;
+<syncfusion:FastBarBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open">
 
-            &lt;/syncfusion:FastBarBitmapSeries&gt;
+            </syncfusion:FastBarBitmapSeries>
 
 
 
-{ ![](Series_images/Series_img36.png) | markdownify }
+{{ '![](Series_images/Series_img36.png)' | markdownify }}
 {:.image }
 
 
@@ -1257,13 +1257,13 @@ Gets or sets the string that describes low value in Y-axis.</td></tr>
 
 [XAML]
 
-&lt;syncfusion:FastHiLoBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" High="High"  Low="Low" &gt;
+<syncfusion:FastHiLoBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" High="High"  Low="Low" >
 
-            &lt;/syncfusion:FastHiLoBitmapSeries&gt;
+            </syncfusion:FastHiLoBitmapSeries>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-118.png](Series_images/Series_img37.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-118.png](Series_images/Series_img37.png)' | markdownify }}
 {:.image }
 
 
@@ -1301,13 +1301,13 @@ Gets or sets the string that describes close value in Y-axis.</td></tr>
 
 [XAML]
 
-&lt;syncfusion:FastHiLoOpenCloseBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" High="High" Open="Open" Low="Low" Close="Close"&gt;
+<syncfusion:FastHiLoOpenCloseBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" High="High" Open="Open" Low="Low" Close="Close">
 
-            &lt;/syncfusion:FastHiLoOpenCloseBitmapSeries&gt;
+            </syncfusion:FastHiLoOpenCloseBitmapSeries>
 
 
 
-{ ![](Series_images/Series_img38.png) | markdownify }
+{{ '![](Series_images/Series_img38.png)' | markdownify }}
 {:.image }
 
 
@@ -1355,13 +1355,13 @@ Represents that brush color for the segments that shows stock price has gone dow
 
 
 
-&lt;syncfusion:FastCandleBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" High="High" Open="Open" Low="Low" Close="Close"&gt;
+<syncfusion:FastCandleBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" High="High" Open="Open" Low="Low" Close="Close">
 
-            &lt;/syncfusion:FastCandleBitmapSeries&gt;
+            </syncfusion:FastCandleBitmapSeries>
 
 
 
-{ ![](Series_images/Series_img39.png) | markdownify }
+{{ '![](Series_images/Series_img39.png)' | markdownify }}
 {:.image }
 
 
@@ -1401,7 +1401,7 @@ Gets or sets bool that represents a value whether to display normal distribution
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-59.png](Series_images/Series_img40.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-59.png](Series_images/Series_img40.png)' | markdownify }}
 {:.image }
 
 
@@ -1467,7 +1467,7 @@ Fixed value means each error bar is placed at a constant distance from the data 
 
 The following screenshot is an example of a Fixed value type.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-60.png](Series_images/Series_img41.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-60.png](Series_images/Series_img41.png)' | markdownify }}
 {:.image }
 
 
@@ -1479,11 +1479,11 @@ The following screenshot is an example of a Fixed value type.
 
 Percentage means the error bar is drawn with the percentage value of the error value to the datapoint.
 
- &lt;syncfusion:ErrorBarSeries Name="Errorseries" ItemsSource="{Binding EnergyProductions}" XBindingPath="ID" YBindingPath="Coal" HorizontalErrorPath="HorizontalErrorValue" VerticalErrorPath="VerticalErrorValue" VerticalErrorValue="50" HorizontalErrorValue="1" Mode="Both" Type="Percentage" /&gt;
+ <syncfusion:ErrorBarSeries Name="Errorseries" ItemsSource="{Binding EnergyProductions}" XBindingPath="ID" YBindingPath="Coal" HorizontalErrorPath="HorizontalErrorValue" VerticalErrorPath="VerticalErrorValue" VerticalErrorValue="50" HorizontalErrorValue="1" Mode="Both" Type="Percentage" />
 
 The following screenshot is an example of Percentage type.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-61.png](Series_images/Series_img42.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-61.png](Series_images/Series_img42.png)' | markdownify }}
 {:.image }
 
 
@@ -1491,13 +1491,13 @@ The following screenshot is an example of Percentage type.
 
 Standard Deviation means that each end of the error bar is placed at a distance N times the standard deviation in user scale units from the computed value.
 
- &lt;syncfusion:ErrorBarSeries Name="Errorseries"   ItemsSource="{Binding EnergyProductions}" XBindingPath="ID" YBindingPath="Coal" HorizontalErrorPath="HorizontalErrorValue" VerticalErrorPath="VerticalErrorValue"   VerticalErrorValue="50" HorizontalErrorValue="1" Mode="Both" Type="StandardDeviation" /&gt;
+ <syncfusion:ErrorBarSeries Name="Errorseries"   ItemsSource="{Binding EnergyProductions}" XBindingPath="ID" YBindingPath="Coal" HorizontalErrorPath="HorizontalErrorValue" VerticalErrorPath="VerticalErrorValue"   VerticalErrorValue="50" HorizontalErrorValue="1" Mode="Both" Type="StandardDeviation" />
 
 
 
 The following screenshot is an example of Standard Deviation Error Bars.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-62.png](Series_images/Series_img43.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-62.png](Series_images/Series_img43.png)' | markdownify }}
 {:.image }
 
 
@@ -1511,7 +1511,7 @@ Standard Errors mean that the placement of each end of the error bar corresponds
 
 The following screenshot is an example of StandardErrors.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-63.png](Series_images/Series_img44.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-63.png](Series_images/Series_img44.png)' | markdownify }}
 {:.image }
 
 

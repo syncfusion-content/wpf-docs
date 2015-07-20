@@ -30,7 +30,7 @@ Manual calculations requires you to explicitly request Essential Calculate to co
 
 If you have an algebraic expression that just contains constants and function library methods, the most straight forward way of using Essential Calculate is to invoke its ParseAndCalculate method. Using CalcQuickBase makes this very simple. Consider, for example, the below form with a text box and a button on it. When you click the button, the computed value of the formula is displayed in the text box.
 
-{ ![](Add-Calculation-Support_images/Add-Calculation-Support_img1.png) | markdownify }
+{{ '![](Add-Calculation-Support_images/Add-Calculation-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -138,7 +138,7 @@ Me.calculator("height") = 2.5
 
 
 
-{ ![](Add-Calculation-Support_images/Add-Calculation-Support_img2.jpeg) | markdownify }
+{{ '![](Add-Calculation-Support_images/Add-Calculation-Support_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -185,7 +185,7 @@ By default, CalcQuickBase does not try to track any dependencies among the varia
 
  In practice, some additional work needs to be done. When a variable is auto-changed, nothing actually happens until you try to use it. For example, assume that you have a series of text boxes on a form with some of the text boxes holding numerical values and some text boxes holding formulas that reference these values through variables that you have registered with a CalcQuickBase object.
 
-{ ![](Add-Calculation-Support_images/Add-Calculation-Support_img3.png) | markdownify }
+{{ '![](Add-Calculation-Support_images/Add-Calculation-Support_img3.png)' | markdownify }}
 {:.image }
 
 

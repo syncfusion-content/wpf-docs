@@ -91,9 +91,9 @@ Bind the Employees collection to the ItemsSource property of DomainUpDown:
 
 
 
-&lt;Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"&gt;
+<Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf">
 
-    &lt;Grid&gt;
+    <Grid>
 
         <editors:SfDomainUpDown x:Name="domainUpDown"
 
@@ -105,11 +105,11 @@ Bind the Employees collection to the ItemsSource property of DomainUpDown:
 
                               ItemsSource="{Binding Employees}" >           
 
-        &lt;/editors:SfDomainUpDown&gt;
+        </editors:SfDomainUpDown>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Page&gt;
+</Page>
 
 
 
@@ -137,29 +137,29 @@ ContentTemplate helps the user decorate the content with visual elements. At thi
 
                               ItemsSource="{Binding Employees}">
 
-            &lt;editors:SfDomainUpDown.ContentTemplate&gt;
+            <editors:SfDomainUpDown.ContentTemplate>
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-                    &lt;StackPanel Orientation="Horizontal"&gt;
+                    <StackPanel Orientation="Horizontal">
 
-                        &lt;Image Height="24" Width="24" Source="Image.png"/&gt;
+                        <Image Height="24" Width="24" Source="Image.png"/>
 
-                        &lt;TextBlock Text="{Binding Name}"/&gt;
+                        <TextBlock Text="{Binding Name}"/>
 
-                    &lt;/StackPanel&gt;
+                    </StackPanel>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-            &lt;/editors:SfDomainUpDown.ContentTemplate&gt;
+            </editors:SfDomainUpDown.ContentTemplate>
 
-&lt;/editors:SfDomainUpDown&gt;
-
-
+</editors:SfDomainUpDown>
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/2.png](Populating-Data_images/Populating-Data_img1.png) | markdownify }
+
+
+{{ '![C:/Users/ApoorvahR/Desktop/2.png](Populating-Data_images/Populating-Data_img1.png)' | markdownify }}
 {:.image }
 
 

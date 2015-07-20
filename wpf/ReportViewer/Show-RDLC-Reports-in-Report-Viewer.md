@@ -37,7 +37,7 @@ this.grid1.Children.Add(reportViewer1);
 
 > _Note: To load the company sales report, you can use following installed sample location._
 
-> _&lt;InstalledLocation&gt;\Syncfusion\Essential Studio\&lt;Version Number&gt;\ Common\Data\ReportTemplate\Company Sales.rdl_
+> _<InstalledLocation>\Syncfusion\Essential Studio\<Version Number>\ Common\Data\ReportTemplate\Company Sales.rdl_
 
 
 
@@ -71,7 +71,7 @@ reportViewer1.DataSources.Add(new Syncfusion.Windows.Reports.ReportDataSource { 
 
 > _Note: AdventureWorks().GetData() information can be obtained from following location._ 
 
-> _&lt;Installed Location&gt;\Syncfusion\Essential Studio\&lt;Version Number&gt;\ Reports\WPF\ReportViewer.WPF\Samples\Product Showcase\Company Sales\CS\DataSource.cs_
+> _<Installed Location>\Syncfusion\Essential Studio\<Version Number>\ Reports\WPF\ReportViewer.WPF\Samples\Product Showcase\Company Sales\CS\DataSource.cs_
 
 
 
@@ -97,7 +97,7 @@ this.Loaded += (sender, arg) =>
 
 
 
-{ ![Description: C:/Users/lingarajs/AppData/Local/Syncfusion/EssentialStudio/9.4.0.62/Reports/WPF/ReportViewer.WPF/Samples/Product Showcase/Company Sales/Images/CompanySalesDemo.png](Show-RDLC-Reports-in-Report-Viewer_images/Show-RDLC-Reports-in-Report-Viewer_img1.png) | markdownify }
+{{ '![Description: C:/Users/lingarajs/AppData/Local/Syncfusion/EssentialStudio/9.4.0.62/Reports/WPF/ReportViewer.WPF/Samples/Product Showcase/Company Sales/Images/CompanySalesDemo.png](Show-RDLC-Reports-in-Report-Viewer_images/Show-RDLC-Reports-in-Report-Viewer_img1.png)' | markdownify }}
 {:.image }
 
 

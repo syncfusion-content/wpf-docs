@@ -18,17 +18,17 @@ The following code sample shows how to create the rating from code-behind and XA
 
 
 
-&lt;Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"&gt;
+<Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf">
 
 
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;editors:SfRating/&gt;           
+        <editors:SfRating/>           
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Page&gt;
+</Page>
 
 
 

@@ -41,11 +41,11 @@ this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Reverse Order Comparer for Descending sort order
 
-/// &lt;/summary&gt;
+/// </summary>
 
 public class ReverseOrderComparer : IComparer
 
@@ -95,11 +95,11 @@ Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Prod
 
 
 
-''' &lt;summary&gt;
+''' <summary>
 
 ''' Reverse Order Comparer for Descending sort order
 
-''' &lt;/summary&gt;
+''' </summary>
 
 public class ReverseOrderComparer : IComparer
 
@@ -155,7 +155,7 @@ Me.PivotGridControl1.FreezeHeaders = True
 
 
 
-{ ![](Features_images/Features_img1.png) | markdownify }
+{{ '![](Features_images/Features_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -258,7 +258,7 @@ Me.PivotGridControl1.SummaryCellStyle.Background = New SolidColorBrush(Color.Fro
 
 The formatting set in the above code generates the following PivotTable.
 
-{ ![](Features_images/Features_img2.png) | markdownify }
+{{ '![](Features_images/Features_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -289,39 +289,39 @@ By default, Grouping Bar is enabled. It can be disabled by setting ShowGroupingB
 
 [XAML]
 
-&lt;syncfusion:PivotGrid&gt;
+<syncfusion:PivotGrid>
 
-  &lt;!--Adding PivotRows--&gt;
+  <!--Adding PivotRows-->
 
-   &lt;syncfusion:PivotGridControl.PivotRows&gt;
+   <syncfusion:PivotGridControl.PivotRows>
 
-     &lt;syncfusion:PivotItem FieldMappingName="Product" FieldHeader="Product" TotalHeader="Total"/&gt;
+     <syncfusion:PivotItem FieldMappingName="Product" FieldHeader="Product" TotalHeader="Total"/>
 
-     &lt;syncfusion:PivotItem FieldMappingName="Date" FieldHeader="Date" TotalHeader="Total"/&gt;
+     <syncfusion:PivotItem FieldMappingName="Date" FieldHeader="Date" TotalHeader="Total"/>
 
-   &lt;/syncfusion:PivotGridControl.PivotRows&gt;
+   </syncfusion:PivotGridControl.PivotRows>
 
-   &lt;!--Adding PivotColumns--&gt;
+   <!--Adding PivotColumns-->
 
-   &lt;syncfusion:PivotGridControl.PivotColumns&gt;
+   <syncfusion:PivotGridControl.PivotColumns>
 
-     &lt;syncfusion:PivotItem FieldMappingName="Country" FieldHeader="Country" TotalHeader="Total"/&gt;
+     <syncfusion:PivotItem FieldMappingName="Country" FieldHeader="Country" TotalHeader="Total"/>
 
-     &lt;syncfusion:PivotItem FieldMappingName="State" FieldHeader="State" TotalHeader="Total"/&gt;
+     <syncfusion:PivotItem FieldMappingName="State" FieldHeader="State" TotalHeader="Total"/>
 
-   &lt;/syncfusion:PivotGridControl.PivotColumns&gt;
+   </syncfusion:PivotGridControl.PivotColumns>
 
-   &lt;!--Adding PivotCalculations--&gt;
+   <!--Adding PivotCalculations-->
 
-     &lt;syncfusion:PivotGridControl.PivotCalculations&gt;
+     <syncfusion:PivotGridControl.PivotCalculations>
 
-       &lt;syncfusion:PivotComputationInfo CalculationName = "Total" Description = "Summation of values" FieldName = "Amount" Format = "C" SummaryType="DoubleTotalSum"/&gt;
+       <syncfusion:PivotComputationInfo CalculationName = "Total" Description = "Summation of values" FieldName = "Amount" Format = "C" SummaryType="DoubleTotalSum"/>
 
-       &lt;syncfusion:PivotComputationInfo CalculationName = "Total" Description = "Summation of values" FieldName = "Quantity" Format = "#,##0"/&gt;
+       <syncfusion:PivotComputationInfo CalculationName = "Total" Description = "Summation of values" FieldName = "Quantity" Format = "#,##0"/>
 
-     &lt;/syncfusion:PivotGridControl.PivotCalculations&gt;
+     </syncfusion:PivotGridControl.PivotCalculations>
 
-&lt;/syncfusion:PivotGrid&gt;
+</syncfusion:PivotGrid>
 
 
 
@@ -377,7 +377,7 @@ pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldNam
 
 
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid GroupingBar.png](Features_images/Features_img3.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid GroupingBar.png](Features_images/Features_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -385,7 +385,7 @@ Filtering
 
 Filtering of data displays only a subset of data that meets criteria specified by you and hides data that you don’t want to get displayed. The Items present in the FilterHeaderArea, ColumnHeaderArea and RowHeaderArea provides the option of run-time filtering which is represented as a Funnel symbol on it. On clicking, it opens a filter popup which displays a list of elements through which filtering can be applied. 
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/Filter Popup.png](Features_images/Features_img4.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/Filter Popup.png](Features_images/Features_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -417,7 +417,7 @@ Sorting data enables you to quickly visualize, organize and understand the data 
 
 The following image illustrates the Sort indicator with Sort types.
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/Sort.png](Features_images/Features_img5.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/Sort.png](Features_images/Features_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -455,7 +455,7 @@ This feature enables the user to restrict grouping for any specific field at run
 
 The following screenshot shows disabled grouping:
 
-{ ![C:/Users/rajaduraic/Desktop/GroupingWPF_Mkt.png](Features_images/Features_img6.png) | markdownify }
+{{ '![C:/Users/rajaduraic/Desktop/GroupingWPF_Mkt.png](Features_images/Features_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -504,37 +504,37 @@ The following code snippets, explains the implementation of the disable grouping
 
 /// Adding Pivot Columns
 
-&lt;syncfusion:PivotGridControl.PivotColumns&gt;
+<syncfusion:PivotGridControl.PivotColumns>
 
-    &lt;syncfusion:PivotItem FieldMappingName="Country" FieldHeader="Country" TotalHeader="Total" AllowRunTimeGroupByField="False"/&gt;
+    <syncfusion:PivotItem FieldMappingName="Country" FieldHeader="Country" TotalHeader="Total" AllowRunTimeGroupByField="False"/>
 
-&lt;/syncfusion:PivotGridControl.PivotColumns&gt;
+</syncfusion:PivotGridControl.PivotColumns>
 
 
 
 /// Adding Pivot Rows
 
-&lt;syncfusion:PivotGridControl.PivotRows&gt;
+<syncfusion:PivotGridControl.PivotRows>
 
-    &lt;syncfusion:PivotItem FieldMappingName="Product" FieldHeader="Product" TotalHeader="Total" AllowRunTimeGroupByField="False"/&gt;
+    <syncfusion:PivotItem FieldMappingName="Product" FieldHeader="Product" TotalHeader="Total" AllowRunTimeGroupByField="False"/>
 
-&lt;/syncfusion:PivotGridControl.PivotRows&gt;
+</syncfusion:PivotGridControl.PivotRows>
 
-&lt;syncfusion:PivotGridControl.PivotCalculations&gt;
+<syncfusion:PivotGridControl.PivotCalculations>
 
 
 
 /// Adding Pivot Calculations
 
-    &lt;syncfusion:PivotComputationInfo CalculationName = "Total" Description = "Summation of values" FieldName = "Amount" Format = "C" SummaryType="DoubleTotalSum" AllowRunTimeGroupByField="False"/&gt;
+    <syncfusion:PivotComputationInfo CalculationName = "Total" Description = "Summation of values" FieldName = "Amount" Format = "C" SummaryType="DoubleTotalSum" AllowRunTimeGroupByField="False"/>
 
-&lt;/syncfusion:PivotGridControl.PivotCalculations&gt;
+</syncfusion:PivotGridControl.PivotCalculations>
 
 
 
 /// Enabling Disabled Background for Grouping disabled items.
 
-  &lt;CheckBox x:Name="chkBoxShowDisabledGroupBackground"  Margin="5"  Content="ShowDisabledGroupBG"  IsChecked="{Binding ElementName=pivotGrid1,Path=ShowDisabledGroupBackground,Mode=TwoWay}"/&gt;
+  <CheckBox x:Name="chkBoxShowDisabledGroupBackground"  Margin="5"  Content="ShowDisabledGroupBG"  IsChecked="{Binding ElementName=pivotGrid1,Path=ShowDisabledGroupBackground,Mode=TwoWay}"/>
 
 
 
@@ -708,19 +708,19 @@ Me.PivotGrid1.ValueCellStyle.IsHyperlinkCell = True
 
 The below screen shot shows how the Column Header is hyperlinked.
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Hyperlink Col.png](Features_images/Features_img7.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Hyperlink Col.png](Features_images/Features_img7.png)' | markdownify }}
 {:.image }
 
 
 The below screen shot shows how the Row Header is hyperlinked.
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Hyperlink Row.png](Features_images/Features_img8.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Hyperlink Row.png](Features_images/Features_img8.png)' | markdownify }}
 {:.image }
 
 
 The below screen shot shows how the value in a cell is hyperlinked.
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid HyperlinkVal.png](Features_images/Features_img9.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid HyperlinkVal.png](Features_images/Features_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -738,7 +738,7 @@ Use Case Scenarios
 
 Conditional Formatting can be used in Marketing software to help users easily trace the product sales rate for different regions. 
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid CF.png](Features_images/Features_img10.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid CF.png](Features_images/Features_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -748,85 +748,85 @@ Conditional Formatting can be added to code behind and XAML, as shown in the fol
 
 [XAML]
 
-  &lt;!--Specifying PivotRows.--&gt;
+  <!--Specifying PivotRows.-->
 
-            &lt;syncfusion:PivotGridControl.PivotRows&gt;
+            <syncfusion:PivotGridControl.PivotRows>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotRows&gt;
+            </syncfusion:PivotGridControl.PivotRows>
 
-            &lt;!--Specifying PivotColumns.--&gt;
+            <!--Specifying PivotColumns.-->
 
-            &lt;syncfusion:PivotGridControl.PivotColumns&gt;
+            <syncfusion:PivotGridControl.PivotColumns>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
 
-                &lt;syncfusion:PivotItem FieldMappingName="State" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="State" TotalHeader="Total"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotColumns&gt;
+            </syncfusion:PivotGridControl.PivotColumns>
 
-            &lt;!--Specifying PivotCalculationValues.--&gt; 
+            <!--Specifying PivotCalculationValues.--> 
 
-            &lt;syncfusion:PivotGridControl.PivotCalculations&gt;
+            <syncfusion:PivotGridControl.PivotCalculations>
 
-                &lt;syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/&gt;
+                <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
 
-                &lt;syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/&gt;
+                <syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotCalculations&gt;
+            </syncfusion:PivotGridControl.PivotCalculations>
 
 
 
-&lt;syncfusion:PivotGrid.ConditionalFormats&gt; 
+<syncfusion:PivotGrid.ConditionalFormats> 
 
-   &lt;!-- Adding Conditions. --&gt;                       
+   <!-- Adding Conditions. -->                       
 
-   &lt;syncfusion:PivotGridDataConditionalFormat Name="C1"&gt;
+   <syncfusion:PivotGridDataConditionalFormat Name="C1">
 
-      &lt;!-- Specifying the Cell Style. --&gt;
+      <!-- Specifying the Cell Style. -->
 
-      &lt;syncfusion:PivotGridDataConditionalFormat.CellStyle&gt;
+      <syncfusion:PivotGridDataConditionalFormat.CellStyle>
 
-          &lt;syncfusion:PivotGridCellStyle Background="Green" FontFamily="Calibri" FontSize="12"/&gt;
+          <syncfusion:PivotGridCellStyle Background="Green" FontFamily="Calibri" FontSize="12"/>
 
-      &lt;/syncfusion:PivotGridDataConditionalFormat.CellStyle&gt;
+      </syncfusion:PivotGridDataConditionalFormat.CellStyle>
 
-      &lt;!-- Specifying Conditions. --&gt; 
+      <!-- Specifying Conditions. --> 
 
-      &lt;syncfusion:PivotGridDataConditionalFormat.Conditions&gt;
+      <syncfusion:PivotGridDataConditionalFormat.Conditions>
 
-          &lt;syncfusion:PivotGridDataCondition ConditionType="GreaterThan" Value="5000000" MeasureElement="Amount" PredicateType="And"/&gt;
+          <syncfusion:PivotGridDataCondition ConditionType="GreaterThan" Value="5000000" MeasureElement="Amount" PredicateType="And"/>
 
-          &lt;/syncfusion:PivotGridDataConditionalFormat.Conditions&gt;
+          </syncfusion:PivotGridDataConditionalFormat.Conditions>
 
-      &lt;/syncfusion:PivotGridDataConditionalFormat&gt;
+      </syncfusion:PivotGridDataConditionalFormat>
 
-   &lt;syncfusion:PivotGridDataConditionalFormat Name="C2"&gt;
+   <syncfusion:PivotGridDataConditionalFormat Name="C2">
 
-      &lt;!-- Specifying the Cell Style. --&gt;
+      <!-- Specifying the Cell Style. -->
 
-      &lt;syncfusion:PivotGridDataConditionalFormat.CellStyle&gt;
+      <syncfusion:PivotGridDataConditionalFormat.CellStyle>
 
-          &lt;syncfusion:PivotGridCellStyle Background="Red" FontFamily="Calibri" FontSize="12"/&gt;
+          <syncfusion:PivotGridCellStyle Background="Red" FontFamily="Calibri" FontSize="12"/>
 
-      &lt;/syncfusion:PivotGridDataConditionalFormat.CellStyle&gt;
+      </syncfusion:PivotGridDataConditionalFormat.CellStyle>
 
-      &lt;!-- Specifying Conditions. --&gt; 
+      <!-- Specifying Conditions. --> 
 
-      &lt;syncfusion:PivotGridDataConditionalFormat.Conditions&gt;
+      <syncfusion:PivotGridDataConditionalFormat.Conditions>
 
           <syncfusion:PivotGridDataCondition ConditionType="LessThan" Value="100000
 
 " MeasureElement="Amount" PredicateType="And"/>
 
-          &lt;/syncfusion:PivotGridDataConditionalFormat.Conditions&gt;
+          </syncfusion:PivotGridDataConditionalFormat.Conditions>
 
-      &lt;/syncfusion:PivotGridDataConditionalFormat&gt;           
+      </syncfusion:PivotGridDataConditionalFormat>           
 
-&lt;/syncfusion:PivotGrid.ConditionalFormats&gt;
+</syncfusion:PivotGrid.ConditionalFormats>
 
 
 
@@ -958,7 +958,7 @@ Me.PivotGrid1.ConditionalFormats.Add(conditionalFormat2)
 
 
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid CF.png](Features_images/Features_img11.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid CF.png](Features_images/Features_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -991,7 +991,7 @@ Use Case Scenarios
 
 Cell Templates will be useful when users require a rich User Interface (UI) appearance.
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Cell Template.png](Features_images/Features_img12.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Cell Template.png](Features_images/Features_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -1001,59 +1001,59 @@ RowHeaderStyle of PivotGrid can be customized by using the Template, as shown in
 
 [XAML]
 
-&lt;Style x:Key="rowStyle" TargetType="{x:Type syncfusion:PivotGridTemplateCell}"&gt;
+<Style x:Key="rowStyle" TargetType="{x:Type syncfusion:PivotGridTemplateCell}">
 
- &lt;Setter Property="Template"&gt;
+ <Setter Property="Template">
 
-  &lt;Setter.Value&gt;
+  <Setter.Value>
 
-    &lt;ControlTemplate TargetType="{x:Type syncfusion:PivotGridTemplateCell}"&gt;
+    <ControlTemplate TargetType="{x:Type syncfusion:PivotGridTemplateCell}">
 
-     &lt;StackPanel Grid.Column="1" Orientation="Horizontal" Background="{StaticResource RowHeaderBackgroundBrush}"&gt;
+     <StackPanel Grid.Column="1" Orientation="Horizontal" Background="{StaticResource RowHeaderBackgroundBrush}">
 
-       &lt;!—Adding an Expander. --&gt;                                
+       <!—Adding an Expander. -->                                
 
-       &lt;Expander Margin="1" x:Name="PART_Expander" IsExpanded="{Binding IsExpanded,RelativeSource={RelativeSource TemplatedParent}}" Visibility="{Binding Converter={StaticResource expanderVisiblityConverter}}" Grid.Column="0"/&gt;
+       <Expander Margin="1" x:Name="PART_Expander" IsExpanded="{Binding IsExpanded,RelativeSource={RelativeSource TemplatedParent}}" Visibility="{Binding Converter={StaticResource expanderVisiblityConverter}}" Grid.Column="0"/>
 
-       &lt;!—Adding an Image. --&gt;
+       <!—Adding an Image. -->
 
-       &lt;Image Margin="2,5,1,0" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center"&gt;
+       <Image Margin="2,5,1,0" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center">
 
-         &lt;Image.Style&gt;
+         <Image.Style>
 
-          &lt;Style TargetType="{x:Type Image}"&gt;
+          <Style TargetType="{x:Type Image}">
 
-           &lt;Style.Triggers&gt;
+           <Style.Triggers>
 
-             &lt;DataTrigger Binding="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}}" Value="Car"&gt;
+             <DataTrigger Binding="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}}" Value="Car">
 
-               &lt;Setter Property="Source" Value="{StaticResource Car}"/&gt;
+               <Setter Property="Source" Value="{StaticResource Car}"/>
 
-               &lt;Setter Property="Width" Value="32"/&gt;
+               <Setter Property="Width" Value="32"/>
 
-               &lt;Setter Property="Height" Value="32"/&gt;
+               <Setter Property="Height" Value="32"/>
 
-             &lt;/DataTrigger&gt;
+             </DataTrigger>
 
-             &lt;DataTrigger Binding="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}}" Value="Bike"&gt;
+             <DataTrigger Binding="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}}" Value="Bike">
 
-               &lt;Setter Property="Source" Value="{StaticResource Bike}"/&gt;
+               <Setter Property="Source" Value="{StaticResource Bike}"/>
 
-               &lt;Setter Property="Width" Value="32"/&gt;
+               <Setter Property="Width" Value="32"/>
 
-               &lt;Setter Property="Height" Value="32"/&gt;
+               <Setter Property="Height" Value="32"/>
 
-              &lt;/DataTrigger&gt;                                              
+              </DataTrigger>                                              
 
-             &lt;/Style.Triggers&gt;                                                
+             </Style.Triggers>                                                
 
-            &lt;/Style&gt;
+            </Style>
 
-           &lt;/Image.Style&gt;
+           </Image.Style>
 
-          &lt;/Image&gt;
+          </Image>
 
-          &lt;!-- A Textblock representing the Cell Value. --&gt;
+          <!-- A Textblock representing the Cell Value. -->
 
           <TextBlock Grid.Column="1" VerticalAlignment="Top" Margin="2,5,2,0"
 
@@ -1061,35 +1061,35 @@ RowHeaderStyle of PivotGrid can be customized by using the Template, as shown in
 
             TextWrapping="Wrap" FontFamily="Calibri" FontSize="12" />                                   
 
-      &lt;/StackPanel&gt;                            
+      </StackPanel>                            
 
-     &lt;/ControlTemplate&gt;
+     </ControlTemplate>
 
-   &lt;/Setter.Value&gt;
+   </Setter.Value>
 
- &lt;/Setter&gt;
+ </Setter>
 
-&lt;/Style&gt;
-
-
-
-&lt;syncfusion:PivotGridControl&gt;
-
- &lt;!—Specifying RowHeaderCellStyle. --&gt;
-
- &lt;syncfusion:PivotGridControl.RowHeaderCellStyle&gt;
-
-   &lt;syncfusion:PivotGridCellStyle Style="{StaticResource rowStyle}"/&gt;
-
-  &lt;/syncfusion:PivotGridControl.RowHeaderCellStyle&gt;
-
-&lt;/syncfusion:PivotGridControl&gt;
+</Style>
 
 
 
+<syncfusion:PivotGridControl>
+
+ <!—Specifying RowHeaderCellStyle. -->
+
+ <syncfusion:PivotGridControl.RowHeaderCellStyle>
+
+   <syncfusion:PivotGridCellStyle Style="{StaticResource rowStyle}"/>
+
+  </syncfusion:PivotGridControl.RowHeaderCellStyle>
+
+</syncfusion:PivotGridControl>
 
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Cell Template.png](Features_images/Features_img13.png) | markdownify }
+
+
+
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Cell Template.png](Features_images/Features_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -1120,41 +1120,41 @@ The following code snippets show how to create a PivotGrid and to specify Cell S
 
 [XAML]
 
-&lt;!--Adding PivotGrid and Enabling Cell Selection--&gt;
+<!--Adding PivotGrid and Enabling Cell Selection-->
 
-&lt;syncfusion:PivotGrid AllowSelection="True"&gt; 
+<syncfusion:PivotGrid AllowSelection="True"> 
 
-  &lt;!--Adding PivotRows--&gt;
+  <!--Adding PivotRows-->
 
-   &lt;syncfusion:PivotGridControl.PivotRows&gt;
+   <syncfusion:PivotGridControl.PivotRows>
 
-     &lt;syncfusion:PivotItem FieldMappingName="Product" FieldHeader="Product" TotalHeader="Total"/&gt;
+     <syncfusion:PivotItem FieldMappingName="Product" FieldHeader="Product" TotalHeader="Total"/>
 
-     &lt;syncfusion:PivotItem FieldMappingName="Date" FieldHeader="Date" TotalHeader="Total"/&gt;
+     <syncfusion:PivotItem FieldMappingName="Date" FieldHeader="Date" TotalHeader="Total"/>
 
-   &lt;/syncfusion:PivotGridControl.PivotRows&gt;
+   </syncfusion:PivotGridControl.PivotRows>
 
-   &lt;!--Adding PivotColumns--&gt;
+   <!--Adding PivotColumns-->
 
-   &lt;syncfusion:PivotGridControl.PivotColumns&gt;
+   <syncfusion:PivotGridControl.PivotColumns>
 
-     &lt;syncfusion:PivotItem FieldMappingName="Country" FieldHeader="Country" TotalHeader="Total"/&gt;
+     <syncfusion:PivotItem FieldMappingName="Country" FieldHeader="Country" TotalHeader="Total"/>
 
-     &lt;syncfusion:PivotItem FieldMappingName="State" FieldHeader="State" TotalHeader="Total"/&gt;
+     <syncfusion:PivotItem FieldMappingName="State" FieldHeader="State" TotalHeader="Total"/>
 
-   &lt;/syncfusion:PivotGridControl.PivotColumns&gt;
+   </syncfusion:PivotGridControl.PivotColumns>
 
-   &lt;!--Adding PivotCalculations--&gt;
+   <!--Adding PivotCalculations-->
 
-     &lt;syncfusion:PivotGridControl.PivotCalculations&gt;
+     <syncfusion:PivotGridControl.PivotCalculations>
 
-       &lt;syncfusion:PivotComputationInfo CalculationName = "Total" Description = "Summation of values" FieldName = "Amount" Format = "C" SummaryType="DoubleTotalSum"/&gt;
+       <syncfusion:PivotComputationInfo CalculationName = "Total" Description = "Summation of values" FieldName = "Amount" Format = "C" SummaryType="DoubleTotalSum"/>
 
-       &lt;syncfusion:PivotComputationInfo CalculationName = "Total" Description = "Summation of values" FieldName = "Quantity" Format = "#,##0"/&gt;
+       <syncfusion:PivotComputationInfo CalculationName = "Total" Description = "Summation of values" FieldName = "Quantity" Format = "#,##0"/>
 
-     &lt;/syncfusion:PivotGridControl.PivotCalculations&gt;
+     </syncfusion:PivotGridControl.PivotCalculations>
 
-&lt;/syncfusion:PivotGrid&gt;
+</syncfusion:PivotGrid>
 
 
 
@@ -1224,7 +1224,7 @@ Me.pivotGridControl1.AllowSelection = False
 
 
 
-{ ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Cell Selection.png](Features_images/Features_img14.png) | markdownify }
+{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Cell Selection.png](Features_images/Features_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -1306,7 +1306,7 @@ End If
 
 
 
-{ ![](Features_images/Features_img15.png) | markdownify }
+{{ '![](Features_images/Features_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -1382,7 +1382,7 @@ End If
 
 
 
-{ ![](Features_images/Features_img16.png) | markdownify }
+{{ '![](Features_images/Features_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -1452,7 +1452,7 @@ End If
 
 
 
-{ ![](Features_images/Features_img17.png) | markdownify }
+{{ '![](Features_images/Features_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -1515,13 +1515,13 @@ GridCsvExport csvExport = new GridCsvExport(this.Target);                       
 
 }
 
-{ ![](Features_images/Features_img18.png) | markdownify }
+{{ '![](Features_images/Features_img18.png)' | markdownify }}
 {:.image }
 
 
 #### Sample Link
 
-{Installation Drive}:\Users\&lt;user name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version number&gt;\ WPF\PivotAnalysis.WPF\Samples\Exporting\Exporting Demo\
+{Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version number>\ WPF\PivotAnalysis.WPF\Samples\Exporting\Exporting Demo\
 
 ### Sample Link
 
@@ -1548,43 +1548,43 @@ PivotGrid Field List (or Dynamic Field List ) can be launched by setting the Sho
 
         <syncfusion:PivotGridControl ShowFieldList="True"
 
-           &lt;!--Specifying PivotRows--&gt;
+           <!--Specifying PivotRows-->
 
-            &lt;syncfusion:PivotGridControl.PivotRows&gt;
+            <syncfusion:PivotGridControl.PivotRows>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/>
 
-             &lt;/syncfusion:PivotGridControl.PivotRows&gt;
+             </syncfusion:PivotGridControl.PivotRows>
 
-            &lt;!--Specifying PivotColumns--&gt;
+            <!--Specifying PivotColumns-->
 
-            &lt;syncfusion:PivotGridControl.PivotColumns&gt;
+            <syncfusion:PivotGridControl.PivotColumns>
 
-                &lt;syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotColumns&gt;
+            </syncfusion:PivotGridControl.PivotColumns>
 
-            &lt;!--Specifying PivotCalculationValues--&gt; 
+            <!--Specifying PivotCalculationValues--> 
 
-            &lt;syncfusion:PivotGridControl.PivotCalculations&gt;
+            <syncfusion:PivotGridControl.PivotCalculations>
 
-                &lt;syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/&gt;
+                <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
 
-                &lt;syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/&gt;
+                <syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotCalculations&gt;
+            </syncfusion:PivotGridControl.PivotCalculations>
 
-            &lt;!--Specifying Pivot Fields--&gt; 
+            <!--Specifying Pivot Fields--> 
 
-               &lt;syncfusion:PivotGridControl.PivotFields&gt;
+               <syncfusion:PivotGridControl.PivotFields>
 
-                &lt;syncfusion:PivotItem FieldMappingName="State" FieldHeader="State" TotalHeader="Total"/&gt;
+                <syncfusion:PivotItem FieldMappingName="State" FieldHeader="State" TotalHeader="Total"/>
 
-            &lt;/syncfusion:PivotGridControl.PivotFields&gt;
+            </syncfusion:PivotGridControl.PivotFields>
 
-                   &lt;/syncfusion:PivotGridControl&gt;
+                   </syncfusion:PivotGridControl>
 
 
 
@@ -1652,7 +1652,7 @@ PivotGrid Field List (or Dynamic Field List ) can be launched by setting the Sho
 
 
 
-{ ![Description: C:/Users/dwarageshmb/Desktop/2011 Vol 1 Docs/PivotGrid Field List.png](Features_images/Features_img19.png) | markdownify }
+{{ '![Description: C:/Users/dwarageshmb/Desktop/2011 Vol 1 Docs/PivotGrid Field List.png](Features_images/Features_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -1742,7 +1742,7 @@ This feature is useful for applications related to Stock Market where the data w
 
 Adding Grouping Bar Context Menu
 
-{ ![Description: C:/Syncfusion/BI/WPF/PivotAnalysis.Wpf/Samples/Grouping Bar/Context Menu Demo/Images/ContextMenu.png](Features_images/Features_img20.png) | markdownify }
+{{ '![Description: C:/Syncfusion/BI/WPF/PivotAnalysis.Wpf/Samples/Grouping Bar/Context Menu Demo/Images/ContextMenu.png](Features_images/Features_img20.png)' | markdownify }}
 {:.image }
 
 
@@ -1799,7 +1799,7 @@ Me.pivotGrid1.AllowRowHeaderAreaAutoSizing = False
 
 
 
-{ ![C:/Users/maheswarir/Desktop/When property = true in wpf.PNG](Features_images/Features_img21.png) | markdownify }
+{{ '![C:/Users/maheswarir/Desktop/When property = true in wpf.PNG](Features_images/Features_img21.png)' | markdownify }}
 {:.image }
 
 
@@ -1817,7 +1817,7 @@ Me.pivotGrid1.AllowRowHeaderAreaAutoSizing = True
 
 
 
-{ ![C:/Users/maheswarir/Desktop/when false.PNG](Features_images/Features_img22.png) | markdownify }
+{{ '![C:/Users/maheswarir/Desktop/when false.PNG](Features_images/Features_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -2039,7 +2039,7 @@ void</td></tr>
 </table>
 
 
-{ ![Description: C:/Users/dwarageshmb/Desktop/2011 Vol 1 Docs/Serialization.png](Features_images/Features_img23.png) | markdownify }
+{{ '![Description: C:/Users/dwarageshmb/Desktop/2011 Vol 1 Docs/Serialization.png](Features_images/Features_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -2094,7 +2094,7 @@ Me.pivotGrid1.GroupingBar.AllowRemove = True
 
 
 
-{ ![](Features_images/Features_img24.png) | markdownify }
+{{ '![](Features_images/Features_img24.png)' | markdownify }}
 {:.image }
 
 
@@ -2104,11 +2104,11 @@ A demo of this feature is available in the following location:
 
 Windows 7/Vista
 
-_SystemDrive:\Users\&lt;user_name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version_number&gt;\BI\WPF\PivotAnalysis.Wpf\Samples\Grouping Bar\Grouping Bar Demo_
+_SystemDrive:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\PivotAnalysis.Wpf\Samples\Grouping Bar\Grouping Bar Demo_
 
 Windows XP
 
-_SystemDrive:\Syncfusion\EssentialStudio\&lt;version_number&gt;\ BI\WPF\PivotAnalysis.Wpf\Samples\Grouping Bar\Grouping Bar Demo_ 
+_SystemDrive:\Syncfusion\EssentialStudio\<version_number>\ BI\WPF\PivotAnalysis.Wpf\Samples\Grouping Bar\Grouping Bar Demo_ 
 
 ## Runtime Custom Summary Type setting
 
@@ -2120,7 +2120,7 @@ The user can set different custom summary types at runtime.
 
 The following screenshot shows the custom summary at runtime:
 
-{ ![C:/Users/arulraja/Desktop/ScreenShots/CustomSummaries.png](Features_images/Features_img25.png) | markdownify }
+{{ '![C:/Users/arulraja/Desktop/ScreenShots/CustomSummaries.png](Features_images/Features_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -2226,7 +2226,7 @@ The user can maintain collapsed or expanded states and save/load these settings 
 
 The following image shows state persistence in the PivotGrid control:
 
-{ ![D:/Diana/2012/2012_Vol 1/Mkt Content 2012/StatePersistenceDemo2.png](Features_images/Features_img26.png) | markdownify }
+{{ '![D:/Diana/2012/2012_Vol 1/Mkt Content 2012/StatePersistenceDemo2.png](Features_images/Features_img26.png)' | markdownify }}
 {:.image }
 
 
@@ -2256,7 +2256,7 @@ Sample Link
 
 The user can find a sample in the following location:
 
-SystemDrive:\Users\&lt;user_name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version_number&gt;\BI\WPF\PivotAnalysis.Wpf\Samples\Appearance\State Persistence Demo
+SystemDrive:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\PivotAnalysis.Wpf\Samples\Appearance\State Persistence Demo
 
 Adding State Persistence to an Application 
 
@@ -2284,11 +2284,11 @@ When the user has more computational fields with sub-totals for each group in Pi
 
 The following screenshot shows the PivotGrid with the sub-totals shown and hidden.
 
-{ ![](Features_images/Features_img27.png) | markdownify }
+{{ '![](Features_images/Features_img27.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Features_images/Features_img28.png) | markdownify }
+{{ '![](Features_images/Features_img28.png)' | markdownify }}
 {:.image }
 
 
@@ -2365,15 +2365,15 @@ To hide sub-totals, set the ShowSubTotals property as False as illustrated here.
 
 [XAML]
 
-&lt;Grid&gt;
+<Grid>
 
 <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"
 
 ShowSubTotals="False" ItemSource="{Binding Source={StaticResource data}}" >
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -2409,7 +2409,7 @@ End Sub
 
 
 
-{ ![](Features_images/Features_img29.png) | markdownify }
+{{ '![](Features_images/Features_img29.png)' | markdownify }}
 {:.image }
 
 
@@ -2421,15 +2421,15 @@ To hide sub-totals, set the ShowColumnSubTotals property as False as illustrated
 
 [XAML]
 
-&lt;Grid&gt;
+<Grid>
 
 <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"
 
 ShowColumnSubTotals="False" ItemSource="{Binding Source={StaticResource data}}" >
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -2463,7 +2463,7 @@ End Sub
 
 
 
-{ ![](Features_images/Features_img30.png) | markdownify }
+{{ '![](Features_images/Features_img30.png)' | markdownify }}
 {:.image }
 
 
@@ -2475,15 +2475,15 @@ To hide sub-totals, set the ShowRowSubTotals property as False as illustrated he
 
 [XAML]
 
-&lt;Grid&gt;
+<Grid>
 
 <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"
 
 ShowRowSubTotals="False" ItemSource="{Binding Source={StaticResource data}}" >
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -2519,7 +2519,7 @@ End Sub
 
 
 
-{ ![](Features_images/Features_img31.png) | markdownify }
+{{ '![](Features_images/Features_img31.png)' | markdownify }}
 {:.image }
 
 
@@ -2575,7 +2575,7 @@ Me.pivotGrid1.ResizePivotGridToFit = True
 
 
 
-{ ![](Features_images/Features_img32.png) | markdownify }
+{{ '![](Features_images/Features_img32.png)' | markdownify }}
 {:.image }
 
 
@@ -2597,7 +2597,7 @@ Me.pivotGrid1.ResizePivotGridToFit = False
 
 
 
-{ ![](Features_images/Features_img33.png) | markdownify }
+{{ '![](Features_images/Features_img33.png)' | markdownify }}
 {:.image }
 
 
@@ -2619,7 +2619,7 @@ The pivot row fields, pivot column fields, and PivotComputationInfo fields can b
 
 The above mentioned options will rearrange the fields in the respective pivot item area.
 
-{ ![](Features_images/Features_img34.png) | markdownify }
+{{ '![](Features_images/Features_img34.png)' | markdownify }}
 {:.image }
 
 
@@ -2627,7 +2627,7 @@ Sample Link
 
 A demo of this feature is available in the following location:
 
-C:\Users\&lt;UserName&gt;\AppData\Local\Syncfusion\EssentialStudio\x.x.x.x\ BI\WPF\PivotAnalysis.WPF\Samples\Grouping Bar\Context Menu Demo\
+C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\x.x.x.x\ BI\WPF\PivotAnalysis.WPF\Samples\Grouping Bar\Context Menu Demo\
 
 ### Sort by value of computations fields
 
@@ -2645,7 +2645,7 @@ Use Case Scenarios
 
 Using this feature, the values in the columns can be sorted in given order, either ascending or descending. 
 
-{ ![](Features_images/Features_img35.png) | markdownify }
+{{ '![](Features_images/Features_img35.png)' | markdownify }}
 {:.image }
 
 
@@ -2776,7 +2776,7 @@ Use Case Scenarios
 
 This feature helps the user to add or remove the filter items from programmatic level instead of UI.
 
-{ ![](Features_images/Features_img36.png) | markdownify }
+{{ '![](Features_images/Features_img36.png)' | markdownify }}
 {:.image }
 
 
@@ -2833,7 +2833,7 @@ Reference links </th></tr>
 <th>
 AddFilter</th><th>
 Used to add a filter item in the filter collection.</th><th>
-(&lt;FilterExpression&gt; item) </th><th>
+(<FilterExpression> item) </th><th>
 NA </th><th>
 void</th><th>
 NA</th></tr>
@@ -3018,15 +3018,15 @@ Me.pivotGrid1.SummaryCellStyle.ToolTipEnabled = True
 
 
 
-{ ![C:/Users/arulraja/Desktop/Toolto.png](Features_images/Features_img37.png) | markdownify }
+{{ '![C:/Users/arulraja/Desktop/Toolto.png](Features_images/Features_img37.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/arulraja/Desktop/TooltipColumn.png](Features_images/Features_img38.png) | markdownify }
+{{ '![C:/Users/arulraja/Desktop/TooltipColumn.png](Features_images/Features_img38.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/arulraja/Desktop/TooltipRow.png](Features_images/Features_img39.png) | markdownify }
+{{ '![C:/Users/arulraja/Desktop/TooltipRow.png](Features_images/Features_img39.png)' | markdownify }}
 {:.image }
 
 
@@ -3050,7 +3050,7 @@ Me.pivotGrid1.CustomToolTipTemplateKey = "CustomTemplateTooltip"
 
 
 
-{ ![C:/Users/arulraja/Desktop/TooltipCustom.png](Features_images/Features_img40.png) | markdownify }
+{{ '![C:/Users/arulraja/Desktop/TooltipCustom.png](Features_images/Features_img40.png)' | markdownify }}
 {:.image }
 
 
@@ -3104,7 +3104,7 @@ Me.pivotGrid1.SummaryCellStyle.CustomToolTipTemplateKey = "SummaryCellTemplateTo
 
 
 
-{ ![C:/Users/arulraja/Desktop/TooltipColumnCustom.png](Features_images/Features_img41.png) | markdownify }
+{{ '![C:/Users/arulraja/Desktop/TooltipColumnCustom.png](Features_images/Features_img41.png)' | markdownify }}
 {:.image }
 
 
@@ -3177,7 +3177,7 @@ Type </th></tr>
 <th>
 ChangeValue</th><th>
 Triggered when changing a cell’s value. Using this event we can alter the PivotCellInfo.</th><th>
-&lt;object&gt; oldValue, <object >newValue, &lt;int&gt; row1, &lt;int&gt; col1, <PivotCellInfo >pi</th><th>
+<object> oldValue, <object >newValue, <int> row1, <int> col1, <PivotCellInfo >pi</th><th>
 Event </th></tr>
 </table>
 
@@ -3224,11 +3224,11 @@ Me.pivotGrid1.EnableUpdating = True
 
 
 
-{ ![C:/Users/arulraja/AppData/Local/Syncfusion/EssentialStudio/10.2.0.48/BI/WPF/PivotAnalysis.Wpf/Samples/Interactive Features/Editing Demo/Images/Editing.png](Features_images/Features_img42.png) | markdownify }
+{{ '![C:/Users/arulraja/AppData/Local/Syncfusion/EssentialStudio/10.2.0.48/BI/WPF/PivotAnalysis.Wpf/Samples/Interactive Features/Editing Demo/Images/Editing.png](Features_images/Features_img42.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/arulraja/AppData/Local/Syncfusion/EssentialStudio/10.2.0.48/BI/WPF/PivotAnalysis.Wpf/Samples/Interactive Features/Updating Demo/Images/Updating.png](Features_images/Features_img43.png) | markdownify }
+{{ '![C:/Users/arulraja/AppData/Local/Syncfusion/EssentialStudio/10.2.0.48/BI/WPF/PivotAnalysis.Wpf/Samples/Interactive Features/Updating Demo/Images/Updating.png](Features_images/Features_img43.png)' | markdownify }}
 {:.image }
 
 
@@ -3352,7 +3352,7 @@ Use Case Scenarios
 
 Enabling UI-level expand/collapse operations will allow the end user to expand and collapse the particular cell and entire row or column individually. Programmatically, they can expand/collapse any number of rows or columns.
 
-{ ![C:/Users/arulraja/AppData/Local/Syncfusion/EssentialStudio/10.2.0.48/BI/WPF/PivotAnalysis.Wpf/Samples/Grouping Bar/Context Menu Demo/Images/ExpandCollapse.png](Features_images/Features_img44.png) | markdownify }
+{{ '![C:/Users/arulraja/AppData/Local/Syncfusion/EssentialStudio/10.2.0.48/BI/WPF/PivotAnalysis.Wpf/Samples/Grouping Bar/Context Menu Demo/Images/ExpandCollapse.png](Features_images/Features_img44.png)' | markdownify }}
 {:.image }
 
 
@@ -3503,11 +3503,11 @@ Me.PivotGrid1.RowHeaderCellStyle.EnableContextMenu = True
 
 
 
-{ ![C:/Users/arulraja/AppData/Local/Syncfusion/EssentialStudio/10.2.0.48/BI/WPF/PivotAnalysis.Wpf/Samples/Grouping Bar/Context Menu Demo/Images/ExpandCollapse.png](Features_images/Features_img45.png) | markdownify }
+{{ '![C:/Users/arulraja/AppData/Local/Syncfusion/EssentialStudio/10.2.0.48/BI/WPF/PivotAnalysis.Wpf/Samples/Grouping Bar/Context Menu Demo/Images/ExpandCollapse.png](Features_images/Features_img45.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Features_images/Features_img46.png) | markdownify }
+{{ '![](Features_images/Features_img46.png)' | markdownify }}
 {:.image }
 
 
@@ -3632,7 +3632,7 @@ BaseField</td><td>
 Gets or sets the BaseField for calculations [Applicable only for the PercentageOfParentTotal calculation type].</td><td>
 CLR</td><td>
 string</td><td>
-&lt;Class Reference link for BaseField in PivotAnalysis.Base&gt;.</td></tr>
+<Class Reference link for BaseField in PivotAnalysis.Base>.</td></tr>
 </table>
 
 
@@ -3640,7 +3640,7 @@ Sample Location
 
 The sample is available in the following location:
 
-_&lt;SystemDrive&gt;:\Users\&lt;user_name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version_number&gt;\BI\WPF\PivotAnalysis.Wpf\Samples\Product Showcase\PivotGrid Demo_
+_<SystemDrive>:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\PivotAnalysis.Wpf\Samples\Product Showcase\PivotGrid Demo_
 
 ### Implementing Custom Calculations 
 
@@ -3648,11 +3648,11 @@ To show the value cell as a percentage of its summary cells, use the following c
 
 [XAML]
 
-&lt;syncfusion:PivotGridControl.PivotCalculations&gt;
+<syncfusion:PivotGridControl.PivotCalculations>
 
-                    &lt;syncfusion:PivotComputationInfo FieldName="Amount" Format="C" CalculationName="Amount Total" CalculationType="PercentageOfParentTotal" BaseField="Country" /&gt;
+                    <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" CalculationName="Amount Total" CalculationType="PercentageOfParentTotal" BaseField="Country" />
 
-&lt;/syncfusion:PivotGridControl.PivotCalculations&gt;
+</syncfusion:PivotGridControl.PivotCalculations>
 
 
 
@@ -3675,7 +3675,7 @@ To change the value cell’s calculation for different view dynamically, do the 
 
 
 
-{ ![](Features_images/Features_img47.png) | markdownify }
+{{ '![](Features_images/Features_img47.png)' | markdownify }}
 {:.image }
 
 
@@ -3687,7 +3687,7 @@ Use Case Scenarios
 
 The user can utilize this method when they want to know the raw item from which the Pivot Cell’s value is obtained and also they can get the raw items of the summary cells.
 
-{ ![](Features_images/Features_img48.png) | markdownify }
+{{ '![](Features_images/Features_img48.png)' | markdownify }}
 {:.image }
 
 
@@ -3716,7 +3716,7 @@ Sample Link
 
 You can find a sample in the following location:
 
-&lt;InstalledDrive&gt;:\Users\&lt;UserName&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version&gt;\BI\Wpf\PivotAnalysis.Wpf\Samples\Interactive Features\Drill-Through Demo
+<InstalledDrive>:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\BI\Wpf\PivotAnalysis.Wpf\Samples\Interactive Features\Drill-Through Demo
 
 Adding GetRawItemFor method  to an Application 
 
@@ -3724,7 +3724,7 @@ Adding the GetRawItemFor method to an application is described in the following 
 
 1. Add the GridData control to the application.
 
-&lt;syncfusion:GridDataControl x:Name="gridDataControl1" /&gt;
+<syncfusion:GridDataControl x:Name="gridDataControl1" />
 
 
 
@@ -3788,7 +3788,7 @@ Sample Link
 
 A sample demo available in the following link,
 
-&lt;InstalledDrive&gt;:\Users\sabapathyk\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\PivotAnalysis.WPF\Samples\Appearance\Skin Customization Demo
+<InstalledDrive>:\Users\sabapathyk\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\PivotAnalysis.WPF\Samples\Appearance\Skin Customization Demo
 
 Adding Theming to an Application 
 
@@ -3798,7 +3798,7 @@ The following code sample demonstrates adding theming to the PivotGrid control.
 
 
 
-      &lt;syncfusion:PivotGridControl  x:Name="pivotGrid" VisualStyle="Transparent"/&gt;
+      <syncfusion:PivotGridControl  x:Name="pivotGrid" VisualStyle="Transparent"/>
 
 
 
@@ -4123,7 +4123,7 @@ This method is used to add the filter expression for the columns programmaticall
 <td>
 ApplyFilters</td><td>
 1. void ApplyFilters()<br>2. public void ApplyFilters(bool clearExistingFilter)<br></td><td>
-This method uses the contents of HiddenRowIndexes to display pivot results filtered by using calculation values.Any previous filters are first cleared.This method uses the contents of HiddenRowIndexes to display pivot results filtered by using calculation values. Any previous filters are optionally cleared depending upon the Boolean value received from the “clearExisitingFilter” parameter.The preceding methods take effect only when the RowPivotsOnly property is set to {{ '_true_' | markdownify }}.</td></tr>
+This method uses the contents of HiddenRowIndexes to display pivot results filtered by using calculation values.Any previous filters are first cleared.This method uses the contents of HiddenRowIndexes to display pivot results filtered by using calculation values. Any previous filters are optionally cleared depending upon the Boolean value received from the “clearExisitingFilter” parameter.The preceding methods take effect only when the RowPivotsOnly property is set to {{{ ''_true_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 ClearFilters</td><td>
@@ -4143,7 +4143,7 @@ This method is used raise the FilterActionCompleted event.</td></tr>
 <td>
 GetFilteredValueFields()</td><td>
 1. List<string> GetFilteredValueFields()<br>2. List<string> GetFilteredFieldValues(string fieldName, bool returnExclusions)<br></td><td>
-This method returns the currently filtered value field names; RowPivotsOnly property must be set to {{ '_true_' | markdownify }}.This method returns a list of filtered values associated with a specific value column; RowPivotsOnly property must be set to {{ '_true_' | markdownify }}.</td></tr>
+This method returns the currently filtered value field names; RowPivotsOnly property must be set to {{{ ''_true_'' | markdownify }}}.This method returns a list of filtered values associated with a specific value column; RowPivotsOnly property must be set to {{{ ''_true_'' | markdownify }}}.</td></tr>
 <tr>
 <td>
 UpdateAllSummariesRespectingHiddenRowIndexes</td><td>
@@ -4170,7 +4170,7 @@ Specifies whether the PivotGridControl allows to set a filter on the Calculat
 <tr>
 <td>
 RowPivotOnly</td><td>
-Specifies whether the PivotGridControl is used to pivot only rows, or both rows and columns. The default value is set to allow pivoting both rows and columns.Setting this property to true will produce the following changes:1. ShowGroupingBar property will be automatically set to {{ '_false_' | markdownify }}.2. The TopLeft covered cell that normally appears in a PivotGrid is replaced with individual header cells that have the same appearance as that of Calculation header cells.</td></tr>
+Specifies whether the PivotGridControl is used to pivot only rows, or both rows and columns. The default value is set to allow pivoting both rows and columns.Setting this property to true will produce the following changes:1. ShowGroupingBar property will be automatically set to {{{ ''_false_'' | markdownify }}}.2. The TopLeft covered cell that normally appears in a PivotGrid is replaced with individual header cells that have the same appearance as that of Calculation header cells.</td></tr>
 </table>
 
 
@@ -4229,7 +4229,7 @@ pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo(){FieldName =
 
 Screenshot
 
-{ ![](Features_images/Features_img49.png) | markdownify }
+{{ '![](Features_images/Features_img49.png)' | markdownify }}
 {:.image }
 
 
@@ -4256,7 +4256,7 @@ The default Context Menu lists the following Items:
 
 
 
-{ ![](Features_images/Features_img50.png) | markdownify }
+{{ '![](Features_images/Features_img50.png)' | markdownify }}
 {:.image }
 
 
@@ -4404,7 +4404,7 @@ Use Case Scenario
 
 This feature enables users to show or hide particular pivot calculations in the pivot grid at run time.
 
-{ ![](Features_images/Features_img51.png) | markdownify }
+{{ '![](Features_images/Features_img51.png)' | markdownify }}
 {:.image }
 
 
@@ -4440,7 +4440,7 @@ Sample Link
 
 A sample of this feature can be found in the following location:
 
-&lt;InstalledDrive&gt;:\Users\&lt;UserName&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;Version&gt;\BI\Wpf\PivotAnalysis.Wpf\Samples\Product Showcase\RowPivotsOnly Demo
+<InstalledDrive>:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\<Version>\BI\Wpf\PivotAnalysis.Wpf\Samples\Product Showcase\RowPivotsOnly Demo
 
 Showing the Pivot Value Chooser in an Application
 
@@ -4540,13 +4540,13 @@ To enable asynchronous loading
 
 
 
-{ ![](Features_images/Features_img52.png) | markdownify }
+{{ '![](Features_images/Features_img52.png)' | markdownify }}
 {:.image }
 
 
 _PivotGrid Control Loading Asynchronously_
 
-{ ![](Features_images/Features_img53.png) | markdownify }
+{{ '![](Features_images/Features_img53.png)' | markdownify }}
 {:.image }
 
 
@@ -4577,13 +4577,13 @@ When the user has more computational fields with subtotals and wants to view the
 
 The following screenshots show the PivotGrid with the PivotItem “Product” subtotal shown and hidden:
 
-{ ![](Features_images/Features_img54.png) | markdownify }
+{{ '![](Features_images/Features_img54.png)' | markdownify }}
 {:.image }
 
 
 _Subtotals displayed_
 
-{ ![](Features_images/Features_img55.png) | markdownify }
+{{ '![](Features_images/Features_img55.png)' | markdownify }}
 {:.image }
 
 
@@ -4591,7 +4591,7 @@ _Subtotals hidden_
 
 The expander for the item “Car” is collapsed in the following screenshot since it only has a single row (FY2005) after its subtotal is hidden:
 
-{ ![](Features_images/Features_img56.png) | markdownify }
+{{ '![](Features_images/Features_img56.png)' | markdownify }}
 {:.image }
 
 
@@ -4630,7 +4630,7 @@ Sample Link
 
 Use the following steps to view a sample of this feature:
 
-1. Select Start > Programs > Syncfusion > Essential Studio &lt;version number&gt; > Dashboard
+1. Select Start > Programs > Syncfusion > Essential Studio <version number> > Dashboard
 2. Click Run Samples for the WPF platform.
 3. Select PivotGrid.
 4. Navigate to Product Showcase > Pivot Grid Demo.
@@ -4643,7 +4643,7 @@ The following code sample shows how to set values for the ShowSubTotal property:
 
 [XAML]
 
- &lt;syncfusion:PivotItem FieldMappingName="Product" FieldHeader="Product" ShowSubTotal="False" TotalHeader="Total"/&gt;
+ <syncfusion:PivotItem FieldMappingName="Product" FieldHeader="Product" ShowSubTotal="False" TotalHeader="Total"/>
 
 
 
@@ -4689,7 +4689,7 @@ Users can show or hide the expander symbol for items with a single row or column
 
 [XAML]
 
-  &lt;syncfusion:PivotGridControl ShowExpanderForSinglePivot="False" Name="pivotGrid/&gt;
+  <syncfusion:PivotGridControl ShowExpanderForSinglePivot="False" Name="pivotGrid/>
 
 
 
@@ -4763,7 +4763,7 @@ To enable RTL support, the FlowDirection property of the PivotGrid control needs
 
 [XAML]
 
-&lt;syncfusion:PivotGridControl FlowDirection="RightToLeft" x:Name="pivotGrid1" ItemSource="{Binding ProductSalesData}" &gt;  
+<syncfusion:PivotGridControl FlowDirection="RightToLeft" x:Name="pivotGrid1" ItemSource="{Binding ProductSalesData}" >  
 
 
 
@@ -4779,7 +4779,7 @@ To enable RTL support, the FlowDirection property of the PivotGrid control needs
 
 
 
-{ ![](Features_images/Features_img57.jpeg) | markdownify }
+{{ '![](Features_images/Features_img57.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -4789,7 +4789,7 @@ Sample Link
 
 A sample is available locally in the following location:
 
-SystemDrive:\Users\&lt;user_name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version_number&gt;\BI\WPF\PivotAnalysis.WPF\Localization\LocalizationDemo
+SystemDrive:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\PivotAnalysis.WPF\Localization\LocalizationDemo
 
 Top Summary Layout
 
@@ -4823,7 +4823,7 @@ The following code shows how to set the GridLayout property. You can also set th
 
 [XAML]
 
-&lt;pivotGrid:PivotGridControl Grid.Row="0" GridLayout="TopSummary" VisualStyle="Default" HorizontalAlignment="Left" Margin="0,0,0,0" Name="pivotGrid"                                     ItemSource="{Binding DataTableSFA}" &gt;
+<pivotGrid:PivotGridControl Grid.Row="0" GridLayout="TopSummary" VisualStyle="Default" HorizontalAlignment="Left" Margin="0,0,0,0" Name="pivotGrid"                                     ItemSource="{Binding DataTableSFA}" >
 
 
 
@@ -4843,7 +4843,7 @@ Me.pivotGrid.GridLayout = GridLayout.TopSummary
 
 The following image illustrates a Pivot Grid which is set show the summary data at the top.  
 
-{ ![](Features_images/Features_img58.png) | markdownify }
+{{ '![](Features_images/Features_img58.png)' | markdownify }}
 {:.image }
 
 
@@ -4853,7 +4853,7 @@ Sample Link
 
 Windows 8/7/Vista
 
-{Installation Drive}:\Users\&lt;user name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version number&gt;\BI\WPF\PivotAnalysis.WPF\ProductShowCase\PivotCustomization Demo
+{Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version number>\BI\WPF\PivotAnalysis.WPF\ProductShowCase\PivotCustomization Demo
 
 Print Preview and Print
 
@@ -4938,7 +4938,7 @@ Following code example shows how to set the PrintHeader and PrintFooter properti
 
 [XAML]
 
-&lt;syncfusion:PivotGridControl x:Name="pivotGrid1" syncfusion:PrintSettings.PrintFooter="True" syncfusion:PrintSettings.PrintHeader="True" VerticalAlignment="Top" ItemSource="{Binding ProductSalesData}"&gt;
+<syncfusion:PivotGridControl x:Name="pivotGrid1" syncfusion:PrintSettings.PrintFooter="True" syncfusion:PrintSettings.PrintHeader="True" VerticalAlignment="Top" ItemSource="{Binding ProductSalesData}">
 
 
 
@@ -4966,7 +4966,7 @@ Print Preview
 
 The following screenshot displays a Print Preview window along with a header and footer:
 
-{ ![](Features_images/Features_img59.png) | markdownify }
+{{ '![](Features_images/Features_img59.png)' | markdownify }}
 {:.image }
 
 
@@ -4982,7 +4982,7 @@ Click on the “Zoom” drop-down button in the print preview window and select 
 
 The following screen shot shows the zooming options dropdown in the Print preview window:
 
-{ ![](Features_images/Features_img60.png) | markdownify }
+{{ '![](Features_images/Features_img60.png)' | markdownify }}
 {:.image }
 
 
@@ -4994,7 +4994,7 @@ Click the “PageSettings” button in the print preview to change the page sett
 
 The following screenshot shows the Page setting icon in a Print preview window:
 
-{ ![](Features_images/Features_img61.png) | markdownify }
+{{ '![](Features_images/Features_img61.png)' | markdownify }}
 {:.image }
 
 
@@ -5006,7 +5006,7 @@ Click the “Print” button in the print preview window to print the PivotGrid 
 
 The following screen shot shows the Print icon in the print preview window.
 
-{ ![](Features_images/Features_img62.png) | markdownify }
+{{ '![](Features_images/Features_img62.png)' | markdownify }}
 {:.image }
 
 
@@ -5016,7 +5016,7 @@ Sample Link
 
 Windows 8/7/Vista
 
-{Installation Drive}:\Users\&lt;user name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version number&gt;\BI\WPF\PivotAnalysis.Wpf\Printing\Printing Demo
+{Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version number>\BI\WPF\PivotAnalysis.Wpf\Printing\Printing Demo
 
 Multi-column Sorting
 
@@ -5030,25 +5030,25 @@ Applying multi-column sorting in PivotGrid Control
 
 Refer the following screenshots that display the step-by-step implementation of multi-column sorting.
 
-{ ![D:/Capture18.PNG](Features_images/Features_img63.png) | markdownify }
+{{ '![D:/Capture18.PNG](Features_images/Features_img63.png)' | markdownify }}
 {:.image }
 
 
 _Normal PivotGrid without any sorting_
 
-{ ![D:/Capture19.PNG](Features_images/Features_img64.png) | markdownify }
+{{ '![D:/Capture19.PNG](Features_images/Features_img64.png)' | markdownify }}
 {:.image }
 
 
  _“Quantity” has been sorted in the descending order_
 
-{ ![D:/Capture20.PNG](Features_images/Features_img65.png) | markdownify }
+{{ '![D:/Capture20.PNG](Features_images/Features_img65.png)' | markdownify }}
 {:.image }
 
 
 _Multi-columns (Amount and Quantity) has been sorted in the above PivotGrid_
 
-{ ![D:/Capture21.PNG](Features_images/Features_img66.png) | markdownify }
+{{ '![D:/Capture21.PNG](Features_images/Features_img66.png)' | markdownify }}
 {:.image }
 
 
@@ -5056,7 +5056,7 @@ _Multi-columns (Amount and Quantity) has been sorted in the above PivotGrid_
 
 Sample Link
 
-{Installation Drive}:\Users\&lt;user name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version    number&gt;\BI\WPF\PivotAnalysis.Wpf\Samples\Sorting\Sorting Demo
+{Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version    number>\BI\WPF\PivotAnalysis.Wpf\Samples\Sorting\Sorting Demo
 
 Cell selection with headers
 
@@ -5086,7 +5086,7 @@ The following code example explains the usage of the "EnableAllowSelctionWithHea
 
 [XAML]
 
-&lt;syncfusion:PivotGridControl Margin="5" Grid.Row="0" x:Name="pivotGrid1" ShowGroupingBar="False" ItemSource="{Binding ProductSalesData}" AllowSelectionWithHeaders="True"&gt;
+<syncfusion:PivotGridControl Margin="5" Grid.Row="0" x:Name="pivotGrid1" ShowGroupingBar="False" ItemSource="{Binding ProductSalesData}" AllowSelectionWithHeaders="True">
 
 
 
@@ -5098,13 +5098,13 @@ this.pivotGrid1.AllowSelectionWithHeaders = true;
 
 It is used to select the header cells along with the value cells while selecting the respective row(s) or column(s). Refer the following screenshots.
 
-{ ![D:/Capture15.PNG](Features_images/Features_img67.png) | markdownify }
+{{ '![D:/Capture15.PNG](Features_images/Features_img67.png)' | markdownify }}
 {:.image }
 
 
 _Selecting the sub-columns along with headers_
 
-{ ![D:/Capture16.PNG](Features_images/Features_img68.png) | markdownify }
+{{ '![D:/Capture16.PNG](Features_images/Features_img68.png)' | markdownify }}
 {:.image }
 
 
@@ -5112,5 +5112,5 @@ _Selecting the entire row along with headers_
 
 Sample Link
 
-{Installation Drive}:\Users\&lt;user name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version    number&gt;\BI\WPF\PivotAnalysis.Wpf\Samples\Selection\Cell Selection Demo
+{Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version    number>\BI\WPF\PivotAnalysis.Wpf\Samples\Selection\Cell Selection Demo
 

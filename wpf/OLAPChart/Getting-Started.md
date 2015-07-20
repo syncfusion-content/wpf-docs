@@ -25,13 +25,13 @@ In the following example, the OLAP Chart component displays the Internet Sales A
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
 4. From the Visual Studio toolbox, drag and drop the OlapChart under Syncfusion BI WPF tag. It automatically adds the required assemblies.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -51,13 +51,13 @@ In the following example, the OLAP Chart component displays the Internet Sales A
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;syncfusion:OlapChart x:Name="olapChart" HorizontalAlignment="Left" VerticalAlignment="Top" Height="319" Width="517"/&gt;
+        <syncfusion:OlapChart x:Name="olapChart" HorizontalAlignment="Left" VerticalAlignment="Top" Height="319" Width="517"/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -117,11 +117,11 @@ namespace SampleApplication
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Defining OlapReport with Dimension and Measure
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         private OlapReport CreateOlapReport()
 
@@ -233,11 +233,11 @@ Me.olapChart.DataBind()
 
 
 
-      ''' &lt;summary&gt;
+      ''' <summary>
 
       ''' Defining OlapReport with Dimension and Measure
 
-      ''' &lt;/summary&gt;
+      ''' </summary>
 
       Private Function CreateOlapReport() As OlapReport
 
@@ -309,7 +309,7 @@ End Namespace
 
 7. Run the application
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -319,13 +319,13 @@ You can also create and configure OLAP Chart by using Expression Blend as illust
 
 1. Open Blend for Visual Studio and from the File menu, select New  Project. Enter a valid project name and click OK.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
 2. Select Project tab in the application window.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -336,14 +336,14 @@ You can also create and configure OLAP Chart by using Expression Blend as illust
 
 Assemblies Location
 
-&lt;SystemDrive&gt;:\Program Files (x86)\Syncfusion\EssentialStudio\&lt;version&gt;\precompiledassemblies\&lt;version&gt;\&lt;Framework&gt;\
+<SystemDrive>:\Program Files (x86)\Syncfusion\EssentialStudio\<version>\precompiledassemblies\<version>\<Framework>\
 
 4. After adding the above assemblies, OlapChat control is automatically added in the Assests.
 5. Now, find the OlapChart and drag it to the designer window. 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -363,13 +363,13 @@ Assemblies Location
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;syncfusion:OlapChart x:Name="olapChart" HorizontalAlignment="Left" VerticalAlignment="Top" Height="319" Width="517"/&gt;
+        <syncfusion:OlapChart x:Name="olapChart" HorizontalAlignment="Left" VerticalAlignment="Top" Height="319" Width="517"/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -429,11 +429,11 @@ public partial class MainWindow : SampleWindow
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Defining OlapReport with Dimension and Measure
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         private OlapReport CreateOlapReport()
 
@@ -543,11 +543,11 @@ End Sub
 
 
 
-      ''' &lt;summary&gt;
+      ''' <summary>
 
       ''' Defining OlapReport with Dimension and Measure
 
-      ''' &lt;/summary&gt;
+      ''' </summary>
 
       Private Function CreateOlapReport() As OlapReport
 
@@ -617,7 +617,7 @@ End Namespace
 
 8. Run the application
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -627,11 +627,11 @@ End Namespace
 2. In the New Project Dialog box, click the tree node Windows under Visual C# and select WPF Application. 
 3. Type a name for the application and click OK. Here, name of the application is “SampleApplication”.
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -647,7 +647,7 @@ End Namespace
 
 Assemblies Location
 
-&lt;SystemDrive&gt;:\Program Files (x86)\Syncfusion\EssentialStudio\&lt;version&gt;\precompiledassemblies\&lt;version&gt;\&lt;Framework&gt;\
+<SystemDrive>:\Program Files (x86)\Syncfusion\EssentialStudio\<version>\precompiledassemblies\<version>\<Framework>\
 
 5. Include the following namespaces in code-behind to use OlapChart, OlapReport and OlapDataManger in the program.
 1. Syncfusion.Olap.Reports
@@ -712,11 +712,11 @@ public partial class MainWindow : SampleWindow
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Defining OlapReport with Dimension and Measure
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         private OlapReport CreateOlapReport()
 
@@ -832,11 +832,11 @@ End Sub
 
 
 
-      ''' &lt;summary&gt;
+      ''' <summary>
 
       ''' Defining OlapReport with Dimension and Measure
 
-      ''' &lt;/summary&gt;
+      ''' </summary>
 
       Private Function CreateOlapReport() As OlapReport
 
@@ -906,7 +906,7 @@ End Namespace
 
 6. Run the application.
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -920,20 +920,20 @@ Create a Basic Report during design-time
 
 1. Drag and drop the control from the toolbox to the Visual Studio designer surface.
 
-{ ![](Getting-Started_images/Getting-Started_img11.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
 {:.image }
 
 
 2. Right-click OlapChart available in designer.
 3. Then, navigate to the Configure data source -> Create/Edit data source… option in the context menu.
 
-{ ![](Getting-Started_images/Getting-Started_img12.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
 {:.image }
 
 
 4. Now, the Data Source Properties wizard opens.
 
-{ ![](Getting-Started_images/Getting-Started_img13.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -943,7 +943,7 @@ Create a Basic Report during design-time
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img14.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -956,7 +956,7 @@ Create a Basic Report during design-time
 
 10. When the connection is valid. It displays the summary page of the Data Source Properties Wizard.
 
-{ ![](Getting-Started_images/Getting-Started_img15.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -965,7 +965,7 @@ Create a Basic Report during design-time
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img16.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -975,20 +975,20 @@ _Note: It does not display any style/formatting applied to the chart. It only di
 
 14. Drag and drop dimensions, to frame a new query. 
 
-{ ![](Getting-Started_images/Getting-Started_img17.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img17.png)' | markdownify }}
 {:.image }
 
 
 15. Then, click OK, to save the query or click Cancel, to revert the changes made during this session.
 16. The summary page of the Data Source Properties displays the resultant MDX query. 
 
-{ ![](Getting-Started_images/Getting-Started_img18.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img18.png)' | markdownify }}
 {:.image }
 
 
 17. Click Finish. Run the application.
 
-{ ![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img19.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img19.png)' | markdownify }}
 {:.image }
 
 

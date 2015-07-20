@@ -35,7 +35,7 @@ Me.OlapGrid1.ExportToExcel("fileName")
 
 
 
-{ ![Excel Export](Export_images/Export_img1.png) | markdownify }
+{{ '![Excel Export](Export_images/Export_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -67,7 +67,7 @@ Me.OlapGrid1.ExportToWord("fileName")
 
 
 
-{ ![Word Export](Export_images/Export_img2.png) | markdownify }
+{{ '![Word Export](Export_images/Export_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -97,7 +97,7 @@ Me.OlapGrid1.ExportToPdf("fileName")
 
 
 
-{ ![](Export_images/Export_img3.png) | markdownify }
+{{ '![](Export_images/Export_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -109,7 +109,7 @@ Sample Location
 
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\&lt;Versionnumber&gt;\BI\WPF\OlapGrid.WPF\Samples\Exporting\Exporting Grid Demo
+..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Exporting\Exporting Grid Demo
 
 ## CSV Export
 
@@ -216,11 +216,11 @@ End If
 
 
 
-{ ![](Export_images/Export_img4.png) | markdownify }
+{{ '![](Export_images/Export_img4.png)' | markdownify }}
 {:.image }
 
 
 Sample Link
 
-{Installation Drive}:\Users\&lt;user name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version    number&gt;\BI\WPF\OlapGrid.Wpf\Samples\Exporting\Exporting Demo
+{Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version    number>\BI\WPF\OlapGrid.Wpf\Samples\Exporting\Exporting Demo
 

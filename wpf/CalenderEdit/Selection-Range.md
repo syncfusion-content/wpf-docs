@@ -21,7 +21,7 @@ For setting the selection range mode, use the following code.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding CalendarEdit with selection range mode --&gt;&lt;syncfusion:CalendarEdit Name="calendarEdit" SelectionRangeMode="WholeColumn"/&gt;</td></tr>
+[XAML]<!-- Adding CalendarEdit with selection range mode --><syncfusion:CalendarEdit Name="calendarEdit" SelectionRangeMode="WholeColumn"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Sets selection range mode as whole columncalendarEdit.SelectionRangeMode = SelectionRangeMode.WholeColumn;  //Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>

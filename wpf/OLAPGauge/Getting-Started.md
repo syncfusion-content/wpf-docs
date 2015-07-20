@@ -19,13 +19,13 @@ This section explains on how to configure an OLAP Gauge component in an applicat
 2. In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application.
 3. Then type a name for the application and click OK. Here, name of the application is “SampleApplication”.
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
 4. From the Visual Studio Toolbox, drag and drop the OlapGauge under Syncfusion BI WPF tag. It automatically add the required assemblies.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -45,13 +45,13 @@ This section explains on how to configure an OLAP Gauge component in an applicat
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;syncfusion:OlapGauge x:Name="olapGauge" HorizontalAlignment="Left" VerticalAlignment="Top"/&gt;
+        <syncfusion:OlapGauge x:Name="olapGauge" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -111,11 +111,11 @@ namespace SampleApplication
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Defining OlapReport with Dimension and Measure
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         private OlapReport CreateOlapReport()
 
@@ -225,11 +225,11 @@ Me.olapGauge.DataBind()
 
 
 
-      ''' &lt;summary&gt;
+      ''' <summary>
 
       ''' Defining OlapReport with Dimension and Measure
 
-      ''' &lt;/summary&gt;
+      ''' </summary>
 
       Private Function CreateOlapReport() As OlapReport
 
@@ -301,7 +301,7 @@ End Namespace
 
 7. Run the application                                                    
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -311,13 +311,13 @@ OLAP Gauge control can also be created and configured by using Expression Blend 
 
 1. Open Blend for Visual Studio and from the File menu, select New  Project. Enter a valid project name and click OK.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
 2. Select Project tab in the application window. 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -327,12 +327,12 @@ OLAP Gauge control can also be created and configured by using Expression Blend 
 
 Assemblies Location:
 
-&lt;SystemDrive&gt;:\ProgramFiles(x86)\Syncfusion\EssentialStudio\&lt;version&gt;\precompiledassemblies\&lt;version&gt;\&lt;Framework&gt;\
+<SystemDrive>:\ProgramFiles(x86)\Syncfusion\EssentialStudio\<version>\precompiledassemblies\<version>\<Framework>\
 
 4. After adding the above assemblies, OlapGauge control is automatically added in the Assests.
 5. Now, find OlapGauge and drag it to the designer window. 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -352,13 +352,13 @@ Assemblies Location:
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;syncfusion:OlapGauge x:Name="olapGauge" HorizontalAlignment="Left" VerticalAlignment="Top"/&gt;
+        <syncfusion:OlapGauge x:Name="olapGauge" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -418,11 +418,11 @@ public partial class MainWindow : SampleWindow
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Defining OlapReport with Dimension and Measure
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         private OlapReport CreateOlapReport()
 
@@ -532,11 +532,11 @@ End Sub
 
 
 
-      ''' &lt;summary&gt;
+      ''' <summary>
 
       ''' Defining OlapReport with Dimension and Measure
 
-      ''' &lt;/summary&gt;
+      ''' </summary>
 
       Private Function CreateOlapReport() As OlapReport
 
@@ -610,7 +610,7 @@ End Namespace
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -622,11 +622,11 @@ End Namespace
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -640,7 +640,7 @@ End Namespace
 
 Assemblies Location
 
-&lt;SystemDrive&gt;:\ProgramFiles(x86)\Syncfusion\EssentialStudio\&lt;version&gt;\precompiledassemblies\&lt;version&gt;\&lt;Framework&gt;\
+<SystemDrive>:\ProgramFiles(x86)\Syncfusion\EssentialStudio\<version>\precompiledassemblies\<version>\<Framework>\
 
 5. Include the following namespaces in code-behind for using OlapGauge, OlapReport and OlapDataManger in the program.
 1. Syncfusion.Olap.Reports
@@ -705,11 +705,11 @@ public partial class MainWindow : SampleWindow
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Defining OlapReport with Dimension and Measure
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         private OlapReport CreateOlapReport()
 
@@ -827,11 +827,11 @@ End Sub
 
 
 
-      ''' &lt;summary&gt;
+      ''' <summary>
 
       ''' Defining OlapReport with Dimension and Measure
 
-      ''' &lt;/summary&gt;
+      ''' </summary>
 
       Private Function CreateOlapReport() As OlapReport
 
@@ -903,7 +903,7 @@ End Namespace
 
 6. Run the application.                                      
 
-{ ![](Getting-Started_images/Getting-Started_img10.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
 {:.image }
 
 

@@ -39,7 +39,7 @@ Sample Link
 
 You can find a demonstration in the following location:
 
-_...\MyDocuments\Syncfusion\EssentialStudio\&lt;VersionNumber&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Zooming\_
+_...\MyDocuments\Syncfusion\EssentialStudio\<VersionNumber>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Zooming\_
 
 ## Change Zoom Scale of the Grid Control
 
@@ -57,7 +57,7 @@ gridControl.ZoomScale = 1.5;
 
 
 
-{ ![](Zoom-In-and-Zoom-Out_images/Zoom-In-and-Zoom-Out_img1.png) | markdownify }
+{{ '![](Zoom-In-and-Zoom-Out_images/Zoom-In-and-Zoom-Out_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -65,7 +65,7 @@ _Increased Zoom Scale_
 
 
 
-{ ![](Zoom-In-and-Zoom-Out_images/Zoom-In-and-Zoom-Out_img2.png) | markdownify }
+{{ '![](Zoom-In-and-Zoom-Out_images/Zoom-In-and-Zoom-Out_img2.png)' | markdownify }}
 {:.image }
 
 

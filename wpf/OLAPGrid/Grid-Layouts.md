@@ -23,7 +23,7 @@ The following were the four different kinds of layouts supported by OlapGrid:
 
 Normal Layout is the default layout of OlapGrid in which the summary cells are positioned at the bottom of each parent member and the child member appears adjacent to it.
 
-{ ![Grid Normal](Grid-Layouts_images/Grid-Layouts_img1.png) | markdownify }
+{{ '![Grid Normal](Grid-Layouts_images/Grid-Layouts_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -53,7 +53,7 @@ Me.OlapGrid1.Layout = GridLayout.Normal
 
 In the Excel-like layout, the summary cells are positioned at the bottom and the child members appear below the parent member with some indent space.
 
-{ ![](Grid-Layouts_images/Grid-Layouts_img2.png) | markdownify }
+{{ '![](Grid-Layouts_images/Grid-Layouts_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -83,7 +83,7 @@ Me.OlapGrid1.Layout = GridLayout.ExceLikeLayout
 
 This kind of layout is used to display member properties along with dimension members. The properties appear adjacent to each member.
 
-{ ![](Grid-Layouts_images/Grid-Layouts_img3.png) | markdownify }
+{{ '![](Grid-Layouts_images/Grid-Layouts_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -113,7 +113,7 @@ Me.OlapGrid1.Layout = GridLayout.ExcelLikeLayoutWithMemberProperties
 
 In Normal Top Summary layout, the summary cells are positioned at the top of each parent member and the child member appears adjacent to it.
 
-{ ![Grid Normal Top](Grid-Layouts_images/Grid-Layouts_img4.png) | markdownify }
+{{ '![Grid Normal Top](Grid-Layouts_images/Grid-Layouts_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -143,7 +143,7 @@ Me.OlapGrid1.Layout = GridLayout.NormalTopSummary
 
 In this kind of layout, the summary cells were made hidden and the child member appears adjacent to the parent member.
 
-{ ![Grid No Summaries](Grid-Layouts_images/Grid-Layouts_img5.png) | markdownify }
+{{ '![Grid No Summaries](Grid-Layouts_images/Grid-Layouts_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -175,5 +175,5 @@ Sample Location
 
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\&lt;Versionnumber&gt;\BI\WPF\OlapGrid.WPF\Samples\Product Showcase\Grid Layout Demo
+..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Product Showcase\Grid Layout Demo
 

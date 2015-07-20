@@ -46,11 +46,11 @@ Itis the default palette for SfChart, used to apply a set of predefined brushes
 
 
 
-&lt;syncfusion:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" Height="400"Width="650" Palette="Metro" /&gt;
+<syncfusion:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" Height="400"Width="650" Palette="Metro" />
 
 The following is the screenshot for the series with multiple palettes.
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_149.jpg](Styling-and-Customization_images/Styling-and-Customization_img1.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_149.jpg](Styling-and-Customization_images/Styling-and-Customization_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -68,35 +68,35 @@ The Custom Palette option enables you to define your own color brushes for the
 
 
 
-            &lt;syncfusion:SfChart.ColorModel&gt;
+            <syncfusion:SfChart.ColorModel>
 
 
 
-                &lt;syncfusion:ChartColorModel&gt;
+                <syncfusion:ChartColorModel>
 
-                    &lt;syncfusion:ChartColorModel.CustomBrushes&gt;
+                    <syncfusion:ChartColorModel.CustomBrushes>
 
-                        &lt;SolidColorBrush Color="Green"/&gt;
+                        <SolidColorBrush Color="Green"/>
 
-                        &lt;SolidColorBrush Color="Blue"/&gt;
+                        <SolidColorBrush Color="Blue"/>
 
-                        &lt;SolidColorBrush Color="Red" /&gt;
+                        <SolidColorBrush Color="Red" />
 
-                        &lt;SolidColorBrush Color="Yellow"/&gt;
+                        <SolidColorBrush Color="Yellow"/>
 
-                        &lt;SolidColorBrush Color="Gray"/&gt;
+                        <SolidColorBrush Color="Gray"/>
 
-                    &lt;/syncfusion:ChartColorModel.CustomBrushes&gt;
+                    </syncfusion:ChartColorModel.CustomBrushes>
 
-                &lt;/syncfusion:ChartColorModel&gt;
-
-
-
-            &lt;/syncfusion:SfChart.ColorModel&gt;
+                </syncfusion:ChartColorModel>
 
 
 
-        &lt;/syncfusion:SfChart&gt;
+            </syncfusion:SfChart.ColorModel>
+
+
+
+        </syncfusion:SfChart>
 
 
 
@@ -104,7 +104,7 @@ The Custom Palette option enables you to define your own color brushes for the
 
 The following screenshot demonstrates series with CustomPalette.
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_150.jpg](Styling-and-Customization_images/Styling-and-Customization_img2.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_150.jpg](Styling-and-Customization_images/Styling-and-Customization_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -136,7 +136,7 @@ It is the default palette for series also. This palette applies a set of predefi
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_151.jpg](Styling-and-Customization_images/Styling-and-Customization_img3.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_151.jpg](Styling-and-Customization_images/Styling-and-Customization_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -144,7 +144,7 @@ None Palette
 
 It applies the same color to all the segments, as shown in the following screenshot. And the brushes vary for additional series based on that predefined order.
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_152.jpg](Styling-and-Customization_images/Styling-and-Customization_img4.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_152.jpg](Styling-and-Customization_images/Styling-and-Customization_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -168,31 +168,31 @@ The Custom Palette option enables you to define your own color brushes for th
 
 
 
-            &lt;syncfusion:LineSeries.ColorModel&gt;
+            <syncfusion:LineSeries.ColorModel>
 
-                &lt;syncfusion:ChartColorModel &gt;
+                <syncfusion:ChartColorModel >
 
-                    &lt;syncfusion:ChartColorModel.CustomBrushes&gt;
+                    <syncfusion:ChartColorModel.CustomBrushes>
 
-                        &lt;SolidColorBrush Color="Green"/&gt;
+                        <SolidColorBrush Color="Green"/>
 
-                        &lt;SolidColorBrush Color="Blue"/&gt;
+                        <SolidColorBrush Color="Blue"/>
 
-                        &lt;SolidColorBrush Color="Red" /&gt;
+                        <SolidColorBrush Color="Red" />
 
-                        &lt;SolidColorBrush Color="Yellow"/&gt;
+                        <SolidColorBrush Color="Yellow"/>
 
-                        &lt;SolidColorBrush Color="Gray"/&gt;
+                        <SolidColorBrush Color="Gray"/>
 
-                    &lt;/syncfusion:ChartColorModel.CustomBrushes&gt;
+                    </syncfusion:ChartColorModel.CustomBrushes>
 
-                &lt;/syncfusion:ChartColorModel&gt;
+                </syncfusion:ChartColorModel>
 
-            &lt;/syncfusion:LineSeries.ColorModel&gt;
+            </syncfusion:LineSeries.ColorModel>
 
 
 
-        &lt;/syncfusion:LineSeries&gt;
+        </syncfusion:LineSeries>
 
 
 
@@ -204,69 +204,69 @@ SfChart provides you with the option to customize the legends depending on the a
 
 [XAML]
 
-&lt;syncfusion:SfChart.Legend&gt;
+<syncfusion:SfChart.Legend>
 
-            &lt;syncfusion:ChartLegend&gt;
-
-
-
-                &lt;!-- Custom panel for legend items--&gt;
-
-                &lt;syncfusion:ChartLegend.ItemsPanel&gt;
-
-                    &lt;ItemsPanelTemplate &gt;
-
-                        &lt;WrapPanel  Width="300"/&gt;
-
-                    &lt;/ItemsPanelTemplate&gt;
-
-                &lt;/syncfusion:ChartLegend.ItemsPanel&gt;
+            <syncfusion:ChartLegend>
 
 
 
-                &lt;!--Custom template for legend item--&gt;
+                <!-- Custom panel for legend items-->
 
-                &lt;syncfusion:ChartLegend.ItemTemplate&gt;
+                <syncfusion:ChartLegend.ItemsPanel>
 
-                    &lt;DataTemplate&gt;
+                    <ItemsPanelTemplate >
 
-                        &lt;Grid&gt;
+                        <WrapPanel  Width="300"/>
 
-                            &lt;Grid.ColumnDefinitions&gt;
+                    </ItemsPanelTemplate>
 
-                                &lt;ColumnDefinition/&gt;
-
-                                &lt;ColumnDefinition/&gt;
-
-                            &lt;/Grid.ColumnDefinitions&gt;
+                </syncfusion:ChartLegend.ItemsPanel>
 
 
 
-                            &lt;!--For Legend icon--&gt;
+                <!--Custom template for legend item-->
 
-                            &lt;Ellipse Margin="35,0,0,0"  Width="15" Height="15" Fill="{Binding Interior}"&gt;&lt;/Ellipse&gt;
+                <syncfusion:ChartLegend.ItemTemplate>
 
+                    <DataTemplate>
 
+                        <Grid>
 
-                            &lt;!--For Legend label--&gt;
+                            <Grid.ColumnDefinitions>
 
-                            &lt;TextBlock Margin="10,5,5,0" FontSize="16" Grid.Column="1" Foreground="{Binding Interior}" Text="{Binding Label}"&gt;&lt;/TextBlock&gt;
+                                <ColumnDefinition/>
 
-                        &lt;/Grid&gt;
+                                <ColumnDefinition/>
 
-                    &lt;/DataTemplate&gt;
-
-                &lt;/syncfusion:ChartLegend.ItemTemplate&gt;
-
-            &lt;/syncfusion:ChartLegend&gt;
-
-        &lt;/syncfusion:SfChart.Legend&gt;
-
-    &lt;/Grid&gt;
+                            </Grid.ColumnDefinitions>
 
 
 
-{ ![C:/Users/rachel/Desktop/snaps/17.png](Styling-and-Customization_images/Styling-and-Customization_img5.png) | markdownify }
+                            <!--For Legend icon-->
+
+                            <Ellipse Margin="35,0,0,0"  Width="15" Height="15" Fill="{Binding Interior}"></Ellipse>
+
+
+
+                            <!--For Legend label-->
+
+                            <TextBlock Margin="10,5,5,0" FontSize="16" Grid.Column="1" Foreground="{Binding Interior}" Text="{Binding Label}"></TextBlock>
+
+                        </Grid>
+
+                    </DataTemplate>
+
+                </syncfusion:ChartLegend.ItemTemplate>
+
+            </syncfusion:ChartLegend>
+
+        </syncfusion:SfChart.Legend>
+
+    </Grid>
+
+
+
+{{ '![C:/Users/rachel/Desktop/snaps/17.png](Styling-and-Customization_images/Styling-and-Customization_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -360,11 +360,11 @@ The following code example illustrates the use of CustomTemplate property.
 
 >
 
-&lt;syncfusion:ScatterSeries.CustomTemplate&gt; 
+<syncfusion:ScatterSeries.CustomTemplate> 
 
-&lt;DataTemplate&gt;
+<DataTemplate>
 
-    &lt;Canvas&gt;
+    <Canvas>
 
        <Path Data="M20.125,32l0.5,12.375L10.3125,
 
@@ -382,13 +382,13 @@ The following code example illustrates the use of CustomTemplate property.
 
         Canvas.Top="{Binding RectY}"/>
 
-    &lt;/Canvas&gt;
+    </Canvas>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
-&lt;/syncfusion:ScatterSeries.CustomTemplate&gt;
+</syncfusion:ScatterSeries.CustomTemplate>
 
-&lt;/syncfusion:ScatterSeries&gt;
+</syncfusion:ScatterSeries>
 
 
 
@@ -396,7 +396,7 @@ The following code example illustrates the use of CustomTemplate property.
 
 The following screenshot represents chart scatter series. By default, that series displays Ellipse symbol. By using the Custom Template feature, it can be changed to arrow shape:
 
-{ ![C:/Users/sureshs/Desktop/wpf.png](Styling-and-Customization_images/Styling-and-Customization_img6.png) | markdownify }
+{{ '![C:/Users/sureshs/Desktop/wpf.png](Styling-and-Customization_images/Styling-and-Customization_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -420,47 +420,47 @@ SfChart provides the option to define your own template for Tooltip, based on yo
 
                                 >
 
-            &lt;syncfusion:LineSeries.TooltipTemplate&gt;
+            <syncfusion:LineSeries.TooltipTemplate>
 
 
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-                    &lt;Grid &gt;
+                    <Grid >
 
 
 
-                        &lt;StackPanel HorizontalAlignment="Right"&gt;
+                        <StackPanel HorizontalAlignment="Right">
 
-                            &lt;Grid Background="OrangeRed"&gt;
+                            <Grid Background="OrangeRed">
 
                                 <TextBlock Text="{Binding Item.Demand }" Width="85" Height="25" Margin="5"
 
                                 VerticalAlignment="Center"    TextAlignment="Center"  Foreground="White" FontSize="15"/>
 
-                            &lt;/Grid&gt;
+                            </Grid>
 
-                            &lt;Grid Background="MediumSpringGreen"&gt;
+                            <Grid Background="MediumSpringGreen">
 
                                 <TextBlock VerticalAlignment="Center" TextAlignment="Center" Margin="5" Text="{Binding YData}" Height="25"
 
                                  Width="85" HorizontalAlignment="Center" Foreground="White" FontSize="15"/>
 
-                            &lt;/Grid&gt;
+                            </Grid>
 
-                        &lt;/StackPanel&gt;
+                        </StackPanel>
 
-                    &lt;/Grid&gt;
+                    </Grid>
 
-                &lt;/DataTemplate&gt;
-
-
-
-            &lt;/syncfusion:LineSeries.TooltipTemplate&gt;
+                </DataTemplate>
 
 
 
-        &lt;/syncfusion:LineSeries&gt;
+            </syncfusion:LineSeries.TooltipTemplate>
+
+
+
+        </syncfusion:LineSeries>
 
 
 
@@ -468,7 +468,7 @@ SfChart provides the option to define your own template for Tooltip, based on yo
 
 The following screenshot illustrates custom Tooltip.
 
-{ ![C:/Users/rachel/Desktop/snaps/19.png](Styling-and-Customization_images/Styling-and-Customization_img7.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/snaps/19.png](Styling-and-Customization_images/Styling-and-Customization_img7.png)' | markdownify }}
 {:.image }
 
 

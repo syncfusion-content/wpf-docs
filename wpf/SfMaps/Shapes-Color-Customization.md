@@ -39,35 +39,35 @@ These setting works only when “AutoFillColor” is set as false.
 
 
 
-&lt;syncfusion:SfMap&gt;
+<syncfusion:SfMap>
 
-            &lt;syncfusion:SfMap.Layers&gt;
+            <syncfusion:SfMap.Layers>
 
-                &lt;syncfusion:ShapeFileLayer Uri="MapApp.usa_st.shp"&gt;
+                <syncfusion:ShapeFileLayer Uri="MapApp.usa_st.shp">
 
-                    &lt;syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                    <syncfusion:ShapeFileLayer.ShapeSettings>
 
-                        &lt;syncfusion:ShapeSetting ShapeFill="Gray" ShapeStroke="Black" ShapeStrokeThickness="1"&gt;
+                        <syncfusion:ShapeSetting ShapeFill="Gray" ShapeStroke="Black" ShapeStrokeThickness="1">
 
-                            &lt;syncfusion:ShapeSetting.FillSetting&gt;
+                            <syncfusion:ShapeSetting.FillSetting>
 
-                                &lt;syncfusion:ShapeFillSetting AutoFillColors="False"/&gt;
+                                <syncfusion:ShapeFillSetting AutoFillColors="False"/>
 
-                            &lt;/syncfusion:ShapeSetting.FillSetting&gt;
+                            </syncfusion:ShapeSetting.FillSetting>
 
-                        &lt;/syncfusion:ShapeSetting&gt;
+                        </syncfusion:ShapeSetting>
 
-                    &lt;/syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
 
-                &lt;/syncfusion:ShapeFileLayer&gt;
+                </syncfusion:ShapeFileLayer>
 
-            &lt;/syncfusion:SfMap.Layers&gt;
+            </syncfusion:SfMap.Layers>
 
-        &lt;/syncfusion:SfMap &gt;
+        </syncfusion:SfMap >
 
 
 
-{ ![C:/Users/karthikeyanp/Desktop/UGPics/ShapeFill.png](Shapes-Color-Customization_images/Shapes-Color-Customization_img1.png) | markdownify }
+{{ '![C:/Users/karthikeyanp/Desktop/UGPics/ShapeFill.png](Shapes-Color-Customization_images/Shapes-Color-Customization_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -109,27 +109,27 @@ The fill color of a particular bubble fill is determined by its under-bound valu
 
 [XAML]
 
-&lt;syncfusion:ShapeSetting ShapeFill="#E5E5E5" ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" ShapeValuePath="Population"&gt;
+<syncfusion:ShapeSetting ShapeFill="#E5E5E5" ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" ShapeValuePath="Population">
 
-    &lt;syncfusion:ShapeSetting.FillSetting&gt;
+    <syncfusion:ShapeSetting.FillSetting>
 
-        &lt;syncfusion:ShapeFillSetting AutoFillColors="False"&gt;
+        <syncfusion:ShapeFillSetting AutoFillColors="False">
 
-           &lt;syncfusion:ShapeFillSetting.ColorMappings&gt;
+           <syncfusion:ShapeFillSetting.ColorMappings>
 
-              &lt;syncfusion:RangeColorMapping To="1500000000" From="750000000" Color="#2A91CF"/&gt;
+              <syncfusion:RangeColorMapping To="1500000000" From="750000000" Color="#2A91CF"/>
 
-              &lt;syncfusion:RangeColorMapping To="750000000" From="0" Color="#3D9FD8"/&gt;
+              <syncfusion:RangeColorMapping To="750000000" From="0" Color="#3D9FD8"/>
 
-              &lt;syncfusion:RangeColorMapping To="0" From="0" Color="#C7E9FA"/&gt;
+              <syncfusion:RangeColorMapping To="0" From="0" Color="#C7E9FA"/>
 
-           &lt;/syncfusion:ShapeFillSetting.ColorMappings&gt;
+           </syncfusion:ShapeFillSetting.ColorMappings>
 
-       &lt;/syncfusion:ShapeFillSetting&gt;
+       </syncfusion:ShapeFillSetting>
 
-   &lt;/syncfusion:ShapeSetting.FillSetting&gt;
+   </syncfusion:ShapeSetting.FillSetting>
 
- &lt;/syncfusion:ShapeSetting&gt;
+ </syncfusion:ShapeSetting>
 
 
 
@@ -143,47 +143,47 @@ AutoFillColor must be set to false to enable the range color mapping.
 
 [XAML]
 
-&lt;syncfusion:SfMap&gt;
+<syncfusion:SfMap>
 
-            &lt;syncfusion:SfMap.Layers&gt;
+            <syncfusion:SfMap.Layers>
 
-                &lt;syncfusion:ShapeFileLayer ItemsSource="{Binding Countries}" Uri="BubbleVisualization.world1.shp" ShapeIDPath="NAME" ShapeIDTableField="NAME"&gt;
+                <syncfusion:ShapeFileLayer ItemsSource="{Binding Countries}" Uri="BubbleVisualization.world1.shp" ShapeIDPath="NAME" ShapeIDTableField="NAME">
 
-                    &lt;syncfusion:ShapeFileLayer.ShapeSettings &gt;
+                    <syncfusion:ShapeFileLayer.ShapeSettings >
 
-                        &lt;syncfusion:ShapeSetting ShapeFill="#E5E5E5" ShapeStroke="Black" ShapeStrokeThickness="1" ShapeColorValuePath="Population" ShapeValuePath="Population"&gt;
+                        <syncfusion:ShapeSetting ShapeFill="#E5E5E5" ShapeStroke="Black" ShapeStrokeThickness="1" ShapeColorValuePath="Population" ShapeValuePath="Population">
 
-                            &lt;syncfusion:ShapeSetting.FillSetting&gt;
+                            <syncfusion:ShapeSetting.FillSetting>
 
-                                &lt;syncfusion:ShapeFillSetting AutoFillColors="False"&gt;
+                                <syncfusion:ShapeFillSetting AutoFillColors="False">
 
-                                    &lt;syncfusion:ShapeFillSetting.ColorMappings&gt;
+                                    <syncfusion:ShapeFillSetting.ColorMappings>
 
-                                        &lt;syncfusion:RangeColorMapping To="1500000000" From="750000000" Color="#2A91CF"/&gt;
+                                        <syncfusion:RangeColorMapping To="1500000000" From="750000000" Color="#2A91CF"/>
 
-                                        &lt;syncfusion:RangeColorMapping To="750000000" From="0" Color="#3D9FD8"/&gt;
+                                        <syncfusion:RangeColorMapping To="750000000" From="0" Color="#3D9FD8"/>
 
-                                        &lt;syncfusion:RangeColorMapping To="0" From="0" Color="#C7E9FA"/&gt;
+                                        <syncfusion:RangeColorMapping To="0" From="0" Color="#C7E9FA"/>
 
-                                    &lt;/syncfusion:ShapeFillSetting.ColorMappings&gt;
+                                    </syncfusion:ShapeFillSetting.ColorMappings>
 
-                                &lt;/syncfusion:ShapeFillSetting&gt;
+                                </syncfusion:ShapeFillSetting>
 
-                            &lt;/syncfusion:ShapeSetting.FillSetting&gt;
+                            </syncfusion:ShapeSetting.FillSetting>
 
-                        &lt;/syncfusion:ShapeSetting&gt;
+                        </syncfusion:ShapeSetting>
 
-                    &lt;/syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
 
-                &lt;/syncfusion:ShapeFileLayer&gt;
+                </syncfusion:ShapeFileLayer>
 
-            &lt;/syncfusion:SfMap.Layers&gt;
+            </syncfusion:SfMap.Layers>
 
-        &lt;/syncfusion:SfMap &gt;
+        </syncfusion:SfMap >
 
 
 
-{ ![](Shapes-Color-Customization_images/Shapes-Color-Customization_img2.png) | markdownify }
+{{ '![](Shapes-Color-Customization_images/Shapes-Color-Customization_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -200,35 +200,35 @@ ColorPalette has to be set in the ShapeSetting’s ColorPalette property. ColorP
 
 
 
-&lt;syncfusion:SfMap &gt;
+<syncfusion:SfMap >
 
-            &lt;syncfusion:SfMap.Layers&gt;
+            <syncfusion:SfMap.Layers>
 
-                &lt;syncfusion:ShapeFileLayer Uri="MapApp.usa_st.shp"&gt;
+                <syncfusion:ShapeFileLayer Uri="MapApp.usa_st.shp">
 
-                    &lt;syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                    <syncfusion:ShapeFileLayer.ShapeSettings>
 
-                        &lt;syncfusion:ShapeSetting ColorPalette="Metro"&gt;
+                        <syncfusion:ShapeSetting ColorPalette="Metro">
 
-                            &lt;syncfusion:ShapeSetting.FillSetting&gt;
+                            <syncfusion:ShapeSetting.FillSetting>
 
-                                &lt;syncfusion:ShapeFillSetting AutoFillColors="True"/&gt;
+                                <syncfusion:ShapeFillSetting AutoFillColors="True"/>
 
-                            &lt;/syncfusion:ShapeSetting.FillSetting&gt;
+                            </syncfusion:ShapeSetting.FillSetting>
 
-                        &lt;/syncfusion:ShapeSetting&gt;
+                        </syncfusion:ShapeSetting>
 
-                    &lt;/syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
 
-                &lt;/syncfusion:ShapeFileLayer&gt;
+                </syncfusion:ShapeFileLayer>
 
-            &lt;/syncfusion:SfMap.Layers&gt;
+            </syncfusion:SfMap.Layers>
 
-        &lt;/syncfusion:SfMap &gt;
+        </syncfusion:SfMap >
 
 
 
-{ ![](Shapes-Color-Customization_images/Shapes-Color-Customization_img3.png) | markdownify }
+{{ '![](Shapes-Color-Customization_images/Shapes-Color-Customization_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -246,47 +246,47 @@ Code to set CustomColorPalette:
 
 
 
- &lt;syncfusion:SfMap&gt;
+ <syncfusion:SfMap>
 
-            &lt;syncfusion:SfMap.Layers&gt;
+            <syncfusion:SfMap.Layers>
 
-                &lt;syncfusion:ShapeFileLayer Uri="MapApp.usa_st.shp"&gt;
+                <syncfusion:ShapeFileLayer Uri="MapApp.usa_st.shp">
 
-                    &lt;syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                    <syncfusion:ShapeFileLayer.ShapeSettings>
 
-                        &lt;syncfusion:ShapeSetting ColorPalette="CustomPalette"&gt;
+                        <syncfusion:ShapeSetting ColorPalette="CustomPalette">
 
-                            &lt;syncfusion:ShapeSetting.CustomColors&gt;
+                            <syncfusion:ShapeSetting.CustomColors>
 
-                                &lt;syncfusion:MapColorPalette FillBrush="Gray"/&gt;
+                                <syncfusion:MapColorPalette FillBrush="Gray"/>
 
-                                &lt;syncfusion:MapColorPalette FillBrush="Gold"/&gt;
+                                <syncfusion:MapColorPalette FillBrush="Gold"/>
 
-                                &lt;syncfusion:MapColorPalette FillBrush="LightBlue"/&gt;
+                                <syncfusion:MapColorPalette FillBrush="LightBlue"/>
 
-                                &lt;syncfusion:MapColorPalette FillBrush="LightCyan"/&gt;
+                                <syncfusion:MapColorPalette FillBrush="LightCyan"/>
 
-                            &lt;/syncfusion:ShapeSetting.CustomColors&gt;
+                            </syncfusion:ShapeSetting.CustomColors>
 
-                            &lt;syncfusion:ShapeSetting.FillSetting&gt;
+                            <syncfusion:ShapeSetting.FillSetting>
 
-                                &lt;syncfusion:ShapeFillSetting AutoFillColors="True"/&gt;
+                                <syncfusion:ShapeFillSetting AutoFillColors="True"/>
 
-                            &lt;/syncfusion:ShapeSetting.FillSetting&gt;
+                            </syncfusion:ShapeSetting.FillSetting>
 
-                        &lt;/syncfusion:ShapeSetting&gt;
+                        </syncfusion:ShapeSetting>
 
-                    &lt;/syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
 
-                &lt;/syncfusion:ShapeFileLayer&gt;
+                </syncfusion:ShapeFileLayer>
 
-            &lt;/syncfusion:SfMap.Layers&gt;
+            </syncfusion:SfMap.Layers>
 
-        &lt;/syncfusion:SfMap &gt;
+        </syncfusion:SfMap >
 
 
 
-{ ![](Shapes-Color-Customization_images/Shapes-Color-Customization_img4.png) | markdownify }
+{{ '![](Shapes-Color-Customization_images/Shapes-Color-Customization_img4.png)' | markdownify }}
 {:.image }
 
 

@@ -19,21 +19,21 @@ The user can customize the business object that has to be displayed as TreeViewI
 
 [XAML]
 
-&lt;HierarchicalDataTemplate ItemsSource="{Binding Models}"&gt;
+<HierarchicalDataTemplate ItemsSource="{Binding Models}">
 
 
 
-    &lt;CheckBox Content="{Binding Caption}" IsChecked="{Binding 			Path=IsChecked,Mode=TwoWay}"/&gt;
+    <CheckBox Content="{Binding Caption}" IsChecked="{Binding 			Path=IsChecked,Mode=TwoWay}"/>
 
 
 
-&lt;/HierarchicalDataTemplate&gt;
+</HierarchicalDataTemplate>
 
 
 
 
 
-{ ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png) | markdownify }
+{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -99,27 +99,27 @@ public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-&lt;HierarchicalDataTemplate ItemsSource="{Binding SubItems}" 		x:Key="CheckableTemplate"&gt;
+<HierarchicalDataTemplate ItemsSource="{Binding SubItems}" 		x:Key="CheckableTemplate">
 
 
 
-     &lt;CheckBox Content="{Binding Header}" /&gt;
+     <CheckBox Content="{Binding Header}" />
 
 
 
-&lt;/HierarchicalDataTemplate&gt;
+</HierarchicalDataTemplate>
 
 
 
-&lt;HierarchicalDataTemplate ItemsSource="{Binding SubItems}" 						x:Key="NormalTemplate"&gt;
+<HierarchicalDataTemplate ItemsSource="{Binding SubItems}" 						x:Key="NormalTemplate">
 
 
 
-    &lt;TextBlock Text="{Binding Header}" /&gt;
+    <TextBlock Text="{Binding Header}" />
 
 
 
-&lt;/HierarchicalDataTemplate&gt;
+</HierarchicalDataTemplate>
 
 
 
@@ -131,7 +131,7 @@ public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-&lt;local:TreeViewAdvItemTemplateSelector x:Key="treeViewItemTemplateSelector"/&gt;
+<local:TreeViewAdvItemTemplateSelector x:Key="treeViewItemTemplateSelector"/>
 
 
 
@@ -143,9 +143,9 @@ public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-&lt;syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}" 		ItemTemplateSelector="{StaticResource treeViewItemTemplateSelector}"&gt;           
+<syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}" 		ItemTemplateSelector="{StaticResource treeViewItemTemplateSelector}">           
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -153,7 +153,7 @@ The TreeVewAdv generates as shown in the following screenshot:
 
 
 
-{ ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png) | markdownify }
+{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -169,15 +169,15 @@ The user can modify the template while editing the TreeViewItemAdv. The followin
 
 [XAML]
 
-&lt;DataTemplate x:Key="EditTemplate"&gt;
+<DataTemplate x:Key="EditTemplate">
 
 
 
-      &lt;TextBox Text="{Binding Header}" FontStyle="Italic" 				FontWeight="Bold" /&gt;
+      <TextBox Text="{Binding Header}" FontStyle="Italic" 				FontWeight="Bold" />
 
 
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
@@ -189,9 +189,9 @@ The user can modify the template while editing the TreeViewItemAdv. The followin
 
 [XAML]
 
-&lt;syncfusion:TreeViewAdv EditedItemTemplate="{StaticResource EditTemplate}" ItemsSource="{Binding TreeItems}" &gt;
+<syncfusion:TreeViewAdv EditedItemTemplate="{StaticResource EditTemplate}" ItemsSource="{Binding TreeItems}" >
 
-&lt;/syncfusion:TreeViewAdv&gt;
+</syncfusion:TreeViewAdv>
 
 
 
@@ -201,7 +201,7 @@ While editing the TreeViewItemAdv appears as shown in the following screen shot:
 
 
 
-{ ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png) | markdownify }
+{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -261,19 +261,19 @@ public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-&lt;DataTemplate  x:Key="CheckableEditTemplate"&gt;
+<DataTemplate  x:Key="CheckableEditTemplate">
 
-  &lt;TextBox Text="{Binding Header}" FontStyle="Italic" 		FontWeight="Bold" Foreground="Blue"/&gt;
+  <TextBox Text="{Binding Header}" FontStyle="Italic" 		FontWeight="Bold" Foreground="Blue"/>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
-&lt;DataTemplate  x:Key="NormalEditTemplate"&gt;
+<DataTemplate  x:Key="NormalEditTemplate">
 
-     &lt;TextBox Text="{Binding Header}" FontStyle="Italic" FontWeight="Bold" 	Foreground="Green"/&gt;
+     <TextBox Text="{Binding Header}" FontStyle="Italic" FontWeight="Bold" 	Foreground="Green"/>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
@@ -285,7 +285,7 @@ public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 
 [XAML]
 
-&lt;local:TreeViewAdvEditTemplateSelector x:Key="treeViewAdvEditTemplateSelector"/&gt;
+<local:TreeViewAdvEditTemplateSelector x:Key="treeViewAdvEditTemplateSelector"/>
 
 
 
@@ -309,7 +309,7 @@ The TreeViewAdv generates as shown in the following screenshot:
 
 
 
-{ ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img4.png) | markdownify }
+{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img4.png)' | markdownify }}
 {:.image }
 
 

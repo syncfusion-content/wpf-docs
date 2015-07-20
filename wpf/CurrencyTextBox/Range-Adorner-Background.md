@@ -13,7 +13,7 @@ The RangeAdornerBackground property is used to set the background color of the r
 
 
 
-{ ![](Range-Adorner-Background_images/Range-Adorner-Background_img1.png) | markdownify }
+{{ '![](Range-Adorner-Background_images/Range-Adorner-Background_img1.png)' | markdownify }}
 {:.image }
 
 

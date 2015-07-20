@@ -28,23 +28,23 @@ To place the TabStrip to the "Left" of the TabControlExt, use the below code.
 
 
 
-&lt;!-- Adding TabControlExt with TabStripPlacement is left --&gt;
+<!-- Adding TabControlExt with TabStripPlacement is left -->
 
-&lt;syncfusion:TabControlExt Margin="20" Name="tabControlExt" TabStripPlacement="Left"&gt;
-
-
-
-    &lt;!-- Adding TabItemExt --&gt;
-
-    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"/&gt;
+<syncfusion:TabControlExt Margin="20" Name="tabControlExt" TabStripPlacement="Left">
 
 
 
-    &lt;!-- Adding TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"/&gt;
+    <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"/>
 
-&lt;/syncfusion:TabControlExt&gt;
+
+
+    <!-- Adding TabItemExt -->
+
+    <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"/>
+
+</syncfusion:TabControlExt>
 
 
 
@@ -112,7 +112,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-{ ![](Tab-Strip-Alignment_images/Tab-Strip-Alignment_img1.jpeg) | markdownify }
+{{ '![](Tab-Strip-Alignment_images/Tab-Strip-Alignment_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -130,23 +130,23 @@ Here is the code snippet for rotating the text when tab strip is vertically plac
 
 
 
-&lt;!-- Adding TabControlExt with TabStripPlacement is left and RotateTextWhenVertical is true  --&gt;
+<!-- Adding TabControlExt with TabStripPlacement is left and RotateTextWhenVertical is true  -->
 
-&lt;syncfusion:TabControlExt Margin="20" Name="tabControlExt" TabStripPlacement="Left" RotateTextWhenVertical="true"&gt;
-
-
-
-  &lt;!-- Adding TabItemExt --&gt;
-
-  &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"/&gt;
+<syncfusion:TabControlExt Margin="20" Name="tabControlExt" TabStripPlacement="Left" RotateTextWhenVertical="true">
 
 
 
-  &lt;!-- Adding TabItemExt --&gt;
+  <!-- Adding TabItemExt -->
 
-  &lt;syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"/&gt;
+  <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"/>
 
-&lt;/syncfusion:TabControlExt&gt;
+
+
+  <!-- Adding TabItemExt -->
+
+  <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"/>
+
+</syncfusion:TabControlExt>
 
 
 
@@ -220,7 +220,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-{ ![](Tab-Strip-Alignment_images/Tab-Strip-Alignment_img2.jpeg) | markdownify }
+{{ '![](Tab-Strip-Alignment_images/Tab-Strip-Alignment_img2.jpeg)' | markdownify }}
 {:.image }
 
 

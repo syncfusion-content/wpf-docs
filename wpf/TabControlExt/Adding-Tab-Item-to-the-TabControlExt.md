@@ -17,17 +17,17 @@ The TabItemExt is added to the TabControlExt by using either XAML or C# coding. 
 
 
 
-&lt;!-- Adding TabControlExt --&gt;
+<!-- Adding TabControlExt -->
 
-&lt;syncfusion:TabControlExt Name="tabControlExt"&gt;
+<syncfusion:TabControlExt Name="tabControlExt">
 
 
 
-    &lt;!-- Adding TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt"/&gt;
+    <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt"/>
 
-&lt;/syncfusion:TabControlExt&gt;
+</syncfusion:TabControlExt>
 
 
 
@@ -71,7 +71,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-{ ![](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img1.jpeg) | markdownify }
+{{ '![](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -87,39 +87,39 @@ To add content to the TabItemExt, use the below code snippet.
 
 
 
-&lt;!-- Adding TabControlExt with CloseButtonType is Both --&gt;
+<!-- Adding TabControlExt with CloseButtonType is Both -->
 
-&lt;syncfusion:TabControlExt Margin="20" Name="tabControlExt" EnableLabelEdit="True"&gt;
-
-
-
-    &lt;!-- Adding TabItemExt --&gt;
-
-    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"&gt;
+<syncfusion:TabControlExt Margin="20" Name="tabControlExt" EnableLabelEdit="True">
 
 
 
-        &lt;!-- Adding content to TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-        <TextBlock TextWrapping="Wrap">This is TabItemExt2</TextBlock>
-
-    &lt;/syncfusion:TabItemExt&gt;
+    <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1">
 
 
 
-    &lt;!-- Adding TabItemExt --&gt;
-
-    &lt;syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2" IsSelected="False"&gt;
-
-
-
-        &lt;!-- Adding content to TabItemExt --&gt;
+        <!-- Adding content to TabItemExt -->
 
         <TextBlock TextWrapping="Wrap">This is TabItemExt2</TextBlock>
 
-    &lt;/syncfusion:TabItemExt&gt;
+    </syncfusion:TabItemExt>
 
-&lt;/syncfusion:TabControlExt&gt;
+
+
+    <!-- Adding TabItemExt -->
+
+    <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2" IsSelected="False">
+
+
+
+        <!-- Adding content to TabItemExt -->
+
+        <TextBlock TextWrapping="Wrap">This is TabItemExt2</TextBlock>
+
+    </syncfusion:TabItemExt>
+
+</syncfusion:TabControlExt>
 
 
 
@@ -217,7 +217,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-{ ![](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img2.jpeg) | markdownify }
+{{ '![](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img2.jpeg)' | markdownify }}
 {:.image }
 
 

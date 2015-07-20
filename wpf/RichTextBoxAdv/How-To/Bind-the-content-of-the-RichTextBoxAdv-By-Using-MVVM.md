@@ -19,7 +19,7 @@ The following code example illustrates defining MVVM extension for the XAMLText 
 
 
 
-&lt;syncfusion:RichTextBoxAdv x:Name="richTextBoxAdv" XAMLText="{Binding DescriptionXaml}" /&gt;
+<syncfusion:RichTextBoxAdv x:Name="richTextBoxAdv" XAMLText="{Binding DescriptionXaml}" />
 
 
 
@@ -29,15 +29,15 @@ The following code example illustrates defining MVVM extension for the XAMLText 
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Handles the LayoutUpdated event of the richTextBoxAdv control.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// <param name="sender">The source of the event.&lt;/param&gt;
+/// <param name="sender">The source of the event.</param>
 
-/// <param name="e">The &lt;see cref="EventArgs"/&gt; instance containing the event data.&lt;/param&gt;
+/// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
 
 void richTextBoxAdv_LayoutUpdated(object sender, EventArgs e)
 
@@ -51,11 +51,11 @@ void richTextBoxAdv_LayoutUpdated(object sender, EventArgs e)
 
 }
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Sample View Model class
 
-/// &lt;/summary&gt;
+/// </summary>
 
 public class ViewModel : INotifyPropertyChanged
 
@@ -63,11 +63,11 @@ public class ViewModel : INotifyPropertyChanged
 
     private String descriptionXaml;
 
-    /// &lt;summary&gt;
+    /// <summary>
 
-    /// Initializes a new instance of the &lt;see cref="ViewModel"/&gt; class.
+    /// Initializes a new instance of the <see cref="ViewModel"/> class.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
     public ViewModel()
 
@@ -75,21 +75,21 @@ public class ViewModel : INotifyPropertyChanged
 
       // Sample description xaml.
 
-DescriptionXaml = "&lt;RichText:DocumentAdv xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\" xmlns:RichText=\"clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.RichTextBoxAdv.Silverlight\" &gt;\r\n<RichText:SectionAdv>&lt;RichText:ParagraphAdv ListType=\"None\" TextAlignment=\"Left\" LeftIndent=\"0\" RightIndent=\"0\" BeforeSpacing=\"0\" AfterSpacing=\"13\" &gt;\r\n<RichText:SpanAdv Text=\"RichTextBoxAdv is a control using which you can format the text, align and indent the paragraph, and display the content in pages or web layout mode.\" FontStyle=\"Normal\" Baseline=\"Normal\" HighlightColor=\"#00000000\" Foreground=\"#FF000000\" FontSize=\"12\" FontFamily=\"Segoe UI\" FontWeight=\"Normal\" >\r\n</RichText:SpanAdv>\r\n</RichText:ParagraphAdv>\r\n</RichText:SectionAdv>&lt;/RichText:DocumentAdv&gt;";
+DescriptionXaml = "<RichText:DocumentAdv xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\" xmlns:RichText=\"clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.RichTextBoxAdv.Silverlight\" >\r\n<RichText:SectionAdv><RichText:ParagraphAdv ListType=\"None\" TextAlignment=\"Left\" LeftIndent=\"0\" RightIndent=\"0\" BeforeSpacing=\"0\" AfterSpacing=\"13\" >\r\n<RichText:SpanAdv Text=\"RichTextBoxAdv is a control using which you can format the text, align and indent the paragraph, and display the content in pages or web layout mode.\" FontStyle=\"Normal\" Baseline=\"Normal\" HighlightColor=\"#00000000\" Foreground=\"#FF000000\" FontSize=\"12\" FontFamily=\"Segoe UI\" FontWeight=\"Normal\" >\r\n</RichText:SpanAdv>\r\n</RichText:ParagraphAdv>\r\n</RichText:SectionAdv></RichText:DocumentAdv>";
 
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Gets or sets the description xaml.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;value&gt;
+    /// <value>
 
     /// The description xaml.
 
-    /// &lt;/value&gt;
+    /// </value>
 
     public String DescriptionXaml
 
@@ -117,17 +117,17 @@ DescriptionXaml = "&lt;RichText:DocumentAdv xmlns=\"http://schemas.microsoft.com
 
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Gets or sets the content of the xaml.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
-    /// &lt;value&gt;
+    /// <value>
 
     /// The content of the xaml.
 
-    /// &lt;/value&gt;
+    /// </value>
 
     internal String XamlContent
 
@@ -151,11 +151,11 @@ DescriptionXaml = "&lt;RichText:DocumentAdv xmlns=\"http://schemas.microsoft.com
 
     }
 
-    /// &lt;summary&gt;
+    /// <summary>
 
     /// Occurs when a property value changes.
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
     public event PropertyChangedEventHandler PropertyChanged;
 

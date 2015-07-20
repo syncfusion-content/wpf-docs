@@ -279,7 +279,7 @@ SizeF pageSize = page.Size;
 
 AspectRatio dimension = AspectRatio.None;
 
-string html = "&lt;html&gt;&lt;body&gt;<p>Hello World</p>&lt;/body&gt;&lt;/html&gt;";
+string html = "<html><body><p>Hello World</p></body></html>";
 
 //Declares layout format for the image.
 
@@ -327,7 +327,7 @@ Dim pageSize As SizeF = page.Size
 
 Dim dimension As AspectRatio = AspectRatio.None
 
-Dim html As String = "&lt;html&gt;&lt;body&gt;<p>Hello World</p>&lt;/body&gt;&lt;/html&gt;";
+Dim html As String = "<html><body><p>Hello World</p></body></html>";
 
 'Declaring the layout format for the image.
 

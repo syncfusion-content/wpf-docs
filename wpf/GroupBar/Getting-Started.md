@@ -17,7 +17,7 @@ The GroupBar control implements list-type controls in the user interface, simila
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -59,7 +59,7 @@ The following steps describe how to create the GroupBar control via Visual Studi
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -69,7 +69,7 @@ The following steps describe how to create the GroupBar control via Visual Studi
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -82,7 +82,7 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -90,7 +90,7 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 3. Drag GroupBar to the designer and drop it there. This will generate the control. 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -100,7 +100,7 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -110,7 +110,7 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -131,7 +131,7 @@ To create the GroupBar control through code, use the following XAML or C# code.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding GroupBar --&gt;&lt;syncfusion:GroupBar Height="300" Width="230" Name="groupBar"/&gt;</td></tr>
+[XAML]<!-- Adding GroupBar --><syncfusion:GroupBar Height="300" Width="230" Name="groupBar"/></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of GroupBarGroupBar groupBar = new GroupBar();//Setting height for GroupBargroupBar.Height = 300;//Setting width for GroupBargroupBar.Width = 200;//Adding GroupBar to windowthis.Content = groupBar;</td></tr>
@@ -197,7 +197,7 @@ Binding Itemssource Property
 <table>
 <tr>
 <td>
-[XAML]&lt;sync:GroupBar Name="gBar" ItemsSource="{Binding SampleList}"/&gt;</td></tr>
+[XAML]<sync:GroupBar Name="gBar" ItemsSource="{Binding SampleList}"/></td></tr>
 <tr>
 <td>
 [C#]Binding bind = new Binding();          bind.Source = this;          bind.Path = new PropertyPath("SampleList");          gBar.SetBinding(GroupBar.ItemssourceProperty, bind);</td></tr>
@@ -208,7 +208,7 @@ Binding Itemssource Property
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img8.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -226,21 +226,21 @@ Apply the ItemTemplate to GroupBar, by using the following code.
 
 [XAML]       
 
- &lt;sync:GroupBar.ItemTemplate&gt;
+ <sync:GroupBar.ItemTemplate>
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-                    &lt;TextBlock Text="{Binding Name}" FontWeight="Bold"/&gt;
+                    <TextBlock Text="{Binding Name}" FontWeight="Bold"/>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-            &lt;/sync:GroupBar.ItemTemplate&gt;
-
-
+            </sync:GroupBar.ItemTemplate>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img9.jpeg) | markdownify }
+
+
+{{ '![](Getting-Started_images/Getting-Started_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -256,15 +256,15 @@ The Item Container Style should be declared as follows.
 
 
 
-&lt;sync:GroupBar.ItemContainerStyle&gt;
+<sync:GroupBar.ItemContainerStyle>
 
-&lt;Style TargetType="{x:Type sync:GroupBarItem}"&gt;
+<Style TargetType="{x:Type sync:GroupBarItem}">
 
 
 
-&lt;/Style&gt;
+</Style>
 
-&lt;/sync:GroupBar.ItemContainerStyle&gt;
+</sync:GroupBar.ItemContainerStyle>
 
 
 
@@ -274,21 +274,21 @@ Apply Header Template to the Header Template property of the Item, by using the 
 
 
 
-&lt;Setter Property="Header" Value="{Binding}"/&gt;
+<Setter Property="Header" Value="{Binding}"/>
 
-                        &lt;Setter Property="HeaderTemplate"&gt;
+                        <Setter Property="HeaderTemplate">
 
-                            &lt;Setter.Value&gt;
+                            <Setter.Value>
 
-                               &lt;DataTemplate&gt;
+                               <DataTemplate>
 
-                                     &lt;TextBlock Text="{Binding Name}" FontWeight="Bold"/&gt;
+                                     <TextBlock Text="{Binding Name}" FontWeight="Bold"/>
 
-                                &lt;/DataTemplate&gt;
+                                </DataTemplate>
 
-                            &lt;/Setter.Value&gt;
+                            </Setter.Value>
 
-                         &lt;/Setter&gt;
+                         </Setter>
 
 
 
@@ -300,31 +300,29 @@ Apply Content Template to Content Template property of the item, by using the fo
 
 
 
- &lt;Setter Property="Content" Value="{Binding}"/&gt;
+ <Setter Property="Content" Value="{Binding}"/>
 
-                        &lt;Setter Property="ContentTemplate"&gt;
+                        <Setter Property="ContentTemplate">
 
-                            &lt;Setter.Value&gt;
+                            <Setter.Value>
 
-                                &lt;DataTemplate&gt;
+                                <DataTemplate>
 
-                                    &lt;StackPanel Height="50"&gt;
+                                    <StackPanel Height="50">
 
-                     &lt;TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="1" HorizontalAlignment="Center" FontSize="14"/&gt;
+                     <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="1" HorizontalAlignment="Center" FontSize="14"/>
 
-                                        &lt;TextBlock Text="{Binding Location}" HorizontalAlignment="Center"/&gt;
+                                        <TextBlock Text="{Binding Location}" HorizontalAlignment="Center"/>
 
-                                        &lt;TextBlock Text="{Binding Population}" HorizontalAlignment="Center"/&gt;
+                                        <TextBlock Text="{Binding Population}" HorizontalAlignment="Center"/>
 
-                                    &lt;/StackPanel&gt;
+                                    </StackPanel>
 
-                                &lt;/DataTemplate&gt;
+                                </DataTemplate>
 
-                            &lt;/Setter.Value&gt;
+                            </Setter.Value>
 
-                        &lt;/Setter&gt;
-
-
+                        </Setter>
 
 
 
@@ -332,7 +330,9 @@ Apply Content Template to Content Template property of the item, by using the fo
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img10.jpeg) | markdownify }
+
+
+{{ '![](Getting-Started_images/Getting-Started_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -348,19 +348,19 @@ The following code illustrates this.
 
 
 
-&lt;DataTemplate x:Key="North"&gt;
+<DataTemplate x:Key="North">
 
-         &lt;StackPanel Height="50"&gt;
+         <StackPanel Height="50">
 
-              &lt;TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="1" HorizontalAlignment="Center" FontSize="14" Foreground="Blue"/&gt;
+              <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="1" HorizontalAlignment="Center" FontSize="14" Foreground="Blue"/>
 
-              &lt;TextBlock Text="{Binding Location}" HorizontalAlignment="Center" Foreground="Blue"/&gt;
+              <TextBlock Text="{Binding Location}" HorizontalAlignment="Center" Foreground="Blue"/>
 
-              &lt;TextBlock Text="{Binding Population}" HorizontalAlignment="Center" Foreground="Blue"/&gt;
+              <TextBlock Text="{Binding Population}" HorizontalAlignment="Center" Foreground="Blue"/>
 
-         &lt;/StackPanel&gt;
+         </StackPanel>
 
- &lt;/DataTemplate&gt;
+ </DataTemplate>
 
 
 
@@ -368,19 +368,19 @@ The following code illustrates this.
 
 
 
-&lt;DataTemplate x:Key="South"&gt;
+<DataTemplate x:Key="South">
 
-        &lt;StackPanel Height="50"&gt;
+        <StackPanel Height="50">
 
-            &lt;TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="1" HorizontalAlignment="Center" FontSize="14" Foreground="Red"/&gt;
+            <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="1" HorizontalAlignment="Center" FontSize="14" Foreground="Red"/>
 
-            &lt;TextBlock Text="{Binding Location}" HorizontalAlignment="Center" Foreground="Red"/&gt;
+            <TextBlock Text="{Binding Location}" HorizontalAlignment="Center" Foreground="Red"/>
 
-            &lt;TextBlock Text="{Binding Population}" HorizontalAlignment="Center" Foreground="Red"/&gt;
+            <TextBlock Text="{Binding Population}" HorizontalAlignment="Center" Foreground="Red"/>
 
-        &lt;/StackPanel&gt;
+        </StackPanel>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
@@ -390,19 +390,19 @@ The following code illustrates this.
 
 
 
-&lt;DataTemplate x:Key="Other"&gt;
+<DataTemplate x:Key="Other">
 
-    &lt;StackPanel Height="50"&gt;
+    <StackPanel Height="50">
 
-        &lt;TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="1" HorizontalAlignment="Center" FontSize="14" Foreground="Brown"/&gt;
+        <TextBlock Text="{Binding Name}" FontWeight="Bold" Margin="1" HorizontalAlignment="Center" FontSize="14" Foreground="Brown"/>
 
-        &lt;TextBlock Text="{Binding Location}" HorizontalAlignment="Center" Foreground="Brown"/&gt;
+        <TextBlock Text="{Binding Location}" HorizontalAlignment="Center" Foreground="Brown"/>
 
-        &lt;TextBlock Text="{Binding Population}" HorizontalAlignment="Center" Foreground="Brown"/&gt;
+        <TextBlock Text="{Binding Population}" HorizontalAlignment="Center" Foreground="Brown"/>
 
-      &lt;/StackPanel&gt;
+      </StackPanel>
 
-&lt;/DataTemplate&gt;
+</DataTemplate>
 
 
 
@@ -410,11 +410,11 @@ The following code illustrates this.
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
     /// Logic for Template Selector
 
-    /// &lt;/summary&gt;
+    /// </summary>
 
     public class SampleTemplateSelector : DataTemplateSelector
 
@@ -462,35 +462,35 @@ The following code illustrates this.
 
 
 
-&lt;sync:GroupBar.ItemContainerStyle&gt;
+<sync:GroupBar.ItemContainerStyle>
 
-                    &lt;Style TargetType="{x:Type sync:GroupBarItem}"&gt;
+                    <Style TargetType="{x:Type sync:GroupBarItem}">
 
-                        &lt;Setter Property="Header" Value="{Binding}"/&gt;
+                        <Setter Property="Header" Value="{Binding}"/>
 
-                        &lt;Setter Property="HeaderTemplate"&gt;
+                        <Setter Property="HeaderTemplate">
 
-                            &lt;Setter.Value&gt;
+                            <Setter.Value>
 
-                                &lt;DataTemplate&gt;
+                                <DataTemplate>
 
-                                    &lt;TextBlock Text="{Binding Name}" FontWeight="Bold"/&gt;
+                                    <TextBlock Text="{Binding Name}" FontWeight="Bold"/>
 
-                                &lt;/DataTemplate&gt;
+                                </DataTemplate>
 
-                            &lt;/Setter.Value&gt;
+                            </Setter.Value>
 
-                        &lt;/Setter&gt;
+                        </Setter>
 
-                        &lt;Setter Property="Content" Value="{Binding}"/&gt;
+                        <Setter Property="Content" Value="{Binding}"/>
 
-                    &lt;Setter Property="ContentTemplateSelector" Value="{StaticResource Selector}"/&gt;
+                    <Setter Property="ContentTemplateSelector" Value="{StaticResource Selector}"/>
 
-&lt;/Style&gt;
+</Style>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img11.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -538,13 +538,13 @@ private void gBar_ContextMenuItemClick(object sender, GroupBarContextMenuItemEve
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img12.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img12.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img13.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img13.jpeg)' | markdownify }}
 {:.image }
 
 

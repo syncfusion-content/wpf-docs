@@ -25,13 +25,13 @@ Code Example:
 
 [XAML]
 
-&lt;syncfusion:SfCircularGauge x:Name="gauge"&gt;
+<syncfusion:SfCircularGauge x:Name="gauge">
 
-   &lt;syncfusion:SfCircularGauge.MainScale&gt;
+   <syncfusion:SfCircularGauge.MainScale>
 
-      &lt;syncfusion:CircularScale&gt;
+      <syncfusion:CircularScale>
 
-         &lt;syncfusion:CircularScale.Pointers&gt;
+         <syncfusion:CircularScale.Pointers>
 
             <syncfusion:CircularPointer Value="80"
 
@@ -51,13 +51,13 @@ Code Example:
 
                                         NeedlePointerVisibility="Visible"   /> 
 
-         &lt;/syncfusion:CircularScale.Pointers&gt;
+         </syncfusion:CircularScale.Pointers>
 
-      &lt;/syncfusion:CircularScale&gt;
+      </syncfusion:CircularScale>
 
-   &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+   </syncfusion:SfCircularGauge.MainScale>
 
-&lt;/syncfusion:SfCircularGauge&gt;
+</syncfusion:SfCircularGauge>
 
 
 
@@ -77,7 +77,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Pointer-Settings_images/Pointer-Settings_img1.png) | markdownify }
+{{ '![](Pointer-Settings_images/Pointer-Settings_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -98,13 +98,13 @@ Code Example:
 
 
 
-&lt;syncfusion:SfCircularGauge x:Name="gauge"&gt;
+<syncfusion:SfCircularGauge x:Name="gauge">
 
-            &lt;syncfusion:SfCircularGauge.Scales&gt;
+            <syncfusion:SfCircularGauge.Scales>
 
-                &lt;syncfusion:CircularScale&gt;
+                <syncfusion:CircularScale>
 
-                    &lt;syncfusion:CircularScale.Pointers&gt;
+                    <syncfusion:CircularScale.Pointers>
 
                         <syncfusion:CircularPointer 
 
@@ -126,13 +126,13 @@ Code Example:
 
                                         NeedlePointerVisibility="Visible"   />
 
-                    &lt;/syncfusion:CircularScale.Pointers&gt;
+                    </syncfusion:CircularScale.Pointers>
 
-                &lt;/syncfusion:CircularScale&gt;
+                </syncfusion:CircularScale>
 
-            &lt;/syncfusion:SfCircularGauge.Scales&gt;
+            </syncfusion:SfCircularGauge.Scales>
 
-        &lt;/syncfusion:SfCircularGauge&gt;
+        </syncfusion:SfCircularGauge>
 
 
 
@@ -178,7 +178,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Pointer-Settings_images/Pointer-Settings_img2.png) | markdownify }
+{{ '![](Pointer-Settings_images/Pointer-Settings_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -194,13 +194,13 @@ Code Example:
 
 [XAML]
 
-   &lt;syncfusion:SfCircularGauge x:Name="gauge"&gt;
+   <syncfusion:SfCircularGauge x:Name="gauge">
 
-      &lt;syncfusion:SfCircularGauge.MainScale&gt;
+      <syncfusion:SfCircularGauge.MainScale>
 
-         &lt;syncfusion:CircularScale&gt;
+         <syncfusion:CircularScale>
 
-            &lt;syncfusion:CircularScale.Pointers&gt;
+            <syncfusion:CircularScale.Pointers>
 
                <syncfusion:CircularPointer Value="80"
 
@@ -216,13 +216,13 @@ Code Example:
 
                                            />
 
-            &lt;/syncfusion:CircularScale.Pointers&gt;
+            </syncfusion:CircularScale.Pointers>
 
-         &lt;/syncfusion:CircularScale&gt;
+         </syncfusion:CircularScale>
 
-       &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+       </syncfusion:SfCircularGauge.MainScale>
 
-   &lt;/syncfusion:SfCircularGauge&gt;
+   </syncfusion:SfCircularGauge>
 
 
 
@@ -256,7 +256,7 @@ Screenshot:
 </td></tr>
 <tr>
 <td>
-{{ '_Circular Scale with Range Pointer_' | markdownify }}</td></tr>
+{{{ ''_Circular Scale with Range Pointer_'' | markdownify }}}</td></tr>
 </table>
 RangePointerPosition
 
@@ -271,13 +271,13 @@ Code Example:
 
 [XAML]
 
-            &lt;syncfusion:SfCircularGauge x:Name="gauge"&gt;
+            <syncfusion:SfCircularGauge x:Name="gauge">
 
-                &lt;syncfusion:SfCircularGauge.MainScale&gt;
+                <syncfusion:SfCircularGauge.MainScale>
 
-                    &lt;syncfusion:CircularScale RangePointerPosition="Outside"&gt;
+                    <syncfusion:CircularScale RangePointerPosition="Outside">
 
-                        &lt;syncfusion:CircularScale.Pointers&gt;
+                        <syncfusion:CircularScale.Pointers>
 
                             <syncfusion:CircularPointer Value="80"
 
@@ -287,13 +287,13 @@ Code Example:
 
                                                    RangePointerStrokeThickness="8"/>
 
-                        &lt;/syncfusion:CircularScale.Pointers&gt;
+                        </syncfusion:CircularScale.Pointers>
 
-                    &lt;/syncfusion:CircularScale&gt;
+                    </syncfusion:CircularScale>
 
-                &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+                </syncfusion:SfCircularGauge.MainScale>
 
-            &lt;/syncfusion:SfCircularGauge&gt;
+            </syncfusion:SfCircularGauge>
 
 
 
@@ -319,7 +319,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Pointer-Settings_images/Pointer-Settings_img4.png) | markdownify }
+{{ '![](Pointer-Settings_images/Pointer-Settings_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -337,13 +337,13 @@ Code Example:
 
 
 
-&lt;syncfusion:SfCircularGauge x:Name="gauge"&gt;
+<syncfusion:SfCircularGauge x:Name="gauge">
 
-   &lt;syncfusion:SfCircularGauge.MainScale&gt;
+   <syncfusion:SfCircularGauge.MainScale>
 
-      &lt;syncfusion:CircularScale&gt;
+      <syncfusion:CircularScale>
 
-         &lt;syncfusion:CircularScale.Pointers&gt;
+         <syncfusion:CircularScale.Pointers>
 
             <syncfusion:CircularPointer Value="80"
 
@@ -357,13 +357,13 @@ Code Example:
 
                                         />
 
-         &lt;/syncfusion:CircularScale.Pointers&gt;
+         </syncfusion:CircularScale.Pointers>
 
-      &lt;/syncfusion:CircularScale&gt;
+      </syncfusion:CircularScale>
 
-   &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+   </syncfusion:SfCircularGauge.MainScale>
 
-&lt;/syncfusion:SfCircularGauge&gt;
+</syncfusion:SfCircularGauge>
 
 
 
@@ -389,7 +389,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Pointer-Settings_images/Pointer-Settings_img5.png) | markdownify }
+{{ '![](Pointer-Settings_images/Pointer-Settings_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -407,13 +407,13 @@ Code Example:
 
 
 
-        &lt;syncfusion:SfCircularGauge x:Name="gauge"&gt;
+        <syncfusion:SfCircularGauge x:Name="gauge">
 
-            &lt;syncfusion:SfCircularGauge.MainScale&gt;
+            <syncfusion:SfCircularGauge.MainScale>
 
-                &lt;syncfusion:CircularScale&gt;
+                <syncfusion:CircularScale>
 
-                    &lt;syncfusion:CircularScale.Pointers&gt;
+                    <syncfusion:CircularScale.Pointers>
 
                         <syncfusion:CircularPointer PointerType="SymbolPointer" 
 
@@ -427,13 +427,13 @@ Code Example:
 
                                    Value="50"/>
 
-                    &lt;/syncfusion:CircularScale.Pointers&gt;
+                    </syncfusion:CircularScale.Pointers>
 
-                &lt;/syncfusion:CircularScale&gt;
+                </syncfusion:CircularScale>
 
-            &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+            </syncfusion:SfCircularGauge.MainScale>
 
-        &lt;/syncfusion:SfCircularGauge&gt;
+        </syncfusion:SfCircularGauge>
 
 
 
@@ -459,7 +459,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Pointer-Settings_images/Pointer-Settings_img6.png) | markdownify }
+{{ '![](Pointer-Settings_images/Pointer-Settings_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -477,21 +477,21 @@ Code Example:
 
 
 
-      &lt;syncfusion:SfCircularGauge x:Name="gauge"&gt;
+      <syncfusion:SfCircularGauge x:Name="gauge">
 
-            &lt;syncfusion:SfCircularGauge.MainScale&gt;
+            <syncfusion:SfCircularGauge.MainScale>
 
-                &lt;syncfusion:CircularScale&gt;
+                <syncfusion:CircularScale>
 
-&lt;syncfusion:CircularScale.Pointers&gt;
+<syncfusion:CircularScale.Pointers>
 
     <syncfusion:CircularPointer   Value="65" PointerType="SymbolPointer" 
 
                                   Symbol="Diamond"   >
 
-         &lt;syncfusion:CircularPointer.SymbolPointerTemplate&gt;
+         <syncfusion:CircularPointer.SymbolPointerTemplate>
 
-               &lt;DataTemplate&gt;
+               <DataTemplate>
 
                     <Polygon Fill="Red"  Points=" 0,7.5 5,5 5,0 15,0 15,5 10,5 10,10 15,10                      
 
@@ -499,23 +499,23 @@ Code Example:
 
 
 
-                     &lt;/Polygon&gt;
+                     </Polygon>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-         &lt;/syncfusion:CircularPointer.SymbolPointerTemplate&gt;
+         </syncfusion:CircularPointer.SymbolPointerTemplate>
 
-      &lt;/syncfusion:CircularPointer&gt;
+      </syncfusion:CircularPointer>
 
-&lt;/syncfusion:CircularScale.Pointers&gt;
+</syncfusion:CircularScale.Pointers>
 
 
 
- &lt;/syncfusion:CircularScale&gt;
+ </syncfusion:CircularScale>
 
-            &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+            </syncfusion:SfCircularGauge.MainScale>
 
-        &lt;/syncfusion:SfCircularGauge&gt;
+        </syncfusion:SfCircularGauge>
 
 
 
@@ -523,7 +523,7 @@ Code Example:
 
 Screenshot:
 
-{ ![](Pointer-Settings_images/Pointer-Settings_img7.png) | markdownify }
+{{ '![](Pointer-Settings_images/Pointer-Settings_img7.png)' | markdownify }}
 {:.image }
 
 

@@ -19,39 +19,39 @@ To set the size of the Expander button, use the below code
 
 
 
-&lt;!-- Adding TaskBar that have button size is 20 --&gt;
+<!-- Adding TaskBar that have button size is 20 -->
 
-&lt;syncfusion:TaskBar Name="taskBar" GroupMargin="5" syncfusion:TaskBar.ButtonSize="20"&gt;
+<syncfusion:TaskBar Name="taskBar" GroupMargin="5" syncfusion:TaskBar.ButtonSize="20">
 
-    &lt;!-- Adding TaskBarItem --&gt;
+    <!-- Adding TaskBarItem -->
 
-    &lt;syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1"&gt;
+    <syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1">
 
-        &lt;!-- Adding content to taskbaritem --&gt;
+        <!-- Adding content to taskbaritem -->
 
-        &lt;StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch"&gt;
+        <StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch">
 
-            <TextBlock TextWrapping="Wrap">This taskbar provides an UI similar to that of Windows XP.&lt;/TextBlock&gt;
+            <TextBlock TextWrapping="Wrap">This taskbar provides an UI similar to that of Windows XP.</TextBlock>
 
-        &lt;/StackPanel&gt;
+        </StackPanel>
 
-    &lt;/syncfusion:TaskBarItem&gt;
+    </syncfusion:TaskBarItem>
 
-    &lt;!-- Adding TaskBarItem --&gt;
+    <!-- Adding TaskBarItem -->
 
-    &lt;syncfusion:TaskBarItem Name="taskBarItem2" Header="TaskBarItem2"&gt;
+    <syncfusion:TaskBarItem Name="taskBarItem2" Header="TaskBarItem2">
 
-        &lt;!-- Adding content to taskbaritem --&gt;
+        <!-- Adding content to taskbaritem -->
 
-        &lt;StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch"&gt;
+        <StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch">
 
-            <TextBlock TextWrapping="Wrap">Specify and customize the group margin.&lt;/TextBlock&gt;
+            <TextBlock TextWrapping="Wrap">Specify and customize the group margin.</TextBlock>
 
-        &lt;/StackPanel&gt;
+        </StackPanel>
 
-    &lt;/syncfusion:TaskBarItem&gt;
+    </syncfusion:TaskBarItem>
 
-&lt;/syncfusion:TaskBar&gt;
+</syncfusion:TaskBar>
 
 
 
@@ -69,7 +69,7 @@ TaskBar.SetButtonSize(taskBar, 20);
 
 
 
-{ ![](Changing-the-size-of-Expander-Button_images/Changing-the-size-of-Expander-Button_img1.jpeg) | markdownify }
+{{ '![](Changing-the-size-of-Expander-Button_images/Changing-the-size-of-Expander-Button_img1.jpeg)' | markdownify }}
 {:.image }
 
 

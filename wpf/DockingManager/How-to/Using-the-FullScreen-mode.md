@@ -28,7 +28,7 @@ In this mode, fullscreen will be disabled and only the Tab panel will be hidden 
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- To use Control Mode--&gt;&lt;syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="ControlMode"/&gt;&lt;!-- None disables this feature--&gt;&lt;syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="None"/&gt;&lt;!-- To use Window Mode--&gt;&lt;syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="WindowMode"/&gt;</td></tr>
+[XAML]<!-- To use Control Mode--><syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="ControlMode"/><!-- None disables this feature--><syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="None"/><!-- To use Window Mode--><syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="WindowMode"/></td></tr>
 <tr>
 <td>
 [C#]//Disables this feature.DockingManager.TDIFullScreenMode = FullScreenMode.None;//To use controlMode.DockingManager.TDIFullScreenMode = FullScreenMode.ControlMode;//To use Window Mode.DockingManager.TDIFullScreenMode = FullScreenMode.WindowMode;</td></tr>

@@ -88,7 +88,7 @@ Used to customize the line stroke of month view.</td></tr>
 
                                MajorTickStrokeDashArray="5,10"
 
-                               MinorTickStrokeDashArray="5,5">&lt;/syncfusion:SfSchedule&gt;
+                               MinorTickStrokeDashArray="5,5"></syncfusion:SfSchedule>
 
 
 
@@ -126,7 +126,7 @@ Used to customize the line stroke of month view.</td></tr>
 
 
 
-{ ![](Stroke-Customization_images/Stroke-Customization_img1.png) | markdownify }
+{{ '![](Stroke-Customization_images/Stroke-Customization_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -23,13 +23,13 @@ SfSchedule Time format can be changed by using the TimeMode property.
 
 
 
-   &lt;Grid Background="White" Name="grid"&gt;
+   <Grid Background="White" Name="grid">
 
-        &lt;Schedule:SfSchedule ScheduleType="Week" TimeMode="TwelveHours" &gt;     
+        <Schedule:SfSchedule ScheduleType="Week" TimeMode="TwelveHours" >     
 
-        &lt;/Schedule:SfSchedule&gt;
+        </Schedule:SfSchedule>
 
-    &lt;/Grid&gt;
+    </Grid>
 
 
 
@@ -49,13 +49,13 @@ SfSchedule Time format can be changed by using the TimeMode property.
 
 
 
-{ ![](TimeLine-customization_images/TimeLine-customization_img1.png) | markdownify }
+{{ '![](TimeLine-customization_images/TimeLine-customization_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](TimeLine-customization_images/TimeLine-customization_img2.png) | markdownify }
+{{ '![](TimeLine-customization_images/TimeLine-customization_img2.png)' | markdownify }}
 {:.image }
 
 

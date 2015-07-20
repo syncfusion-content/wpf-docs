@@ -17,13 +17,13 @@ The following procedure illustrates how to install Essential Test Studio:
 > 
 _Note: Setup - Syncfusion Essential QuickTest Professional dialog box opens._ 
 
-{ ![D:/qtp/qtp/image1.png](Installation-and-Deployment_images/Installation-and-Deployment_img1.png) | markdownify }
+{{ '![D:/qtp/qtp/image1.png](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)' | markdownify }}
 {:.image }
 
 
 2. Click Next. User Information dialog box opens. 
 
-{ ![D:/qtp/qtp/qtp1.png](Installation-and-Deployment_images/Installation-and-Deployment_img2.png) | markdownify }
+{{ '![D:/qtp/qtp/qtp1.png](Installation-and-Deployment_images/Installation-and-Deployment_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -36,7 +36,7 @@ _Note: Setup - Syncfusion Essential QuickTest Professional dialog box opens._
 
 5. Select the installation folder dialog box opens. 
 
-{ ![D:/qtp/qtp/qtp2.png](Installation-and-Deployment_images/Installation-and-Deployment_img3.png) | markdownify }
+{{ '![D:/qtp/qtp/qtp2.png](Installation-and-Deployment_images/Installation-and-Deployment_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -46,26 +46,26 @@ _Note: You can also browse to choose a location by clicking Browse._
 
 7. Installation type dialog box opens.
 
-{ ![D:/qtp/qtp/qtp3.png](Installation-and-Deployment_images/Installation-and-Deployment_img4.png) | markdownify }
+{{ '![D:/qtp/qtp/qtp3.png](Installation-and-Deployment_images/Installation-and-Deployment_img4.png)' | markdownify }}
 {:.image }
 
 
 8. Choose from the options listed. For example, To install the complete setup, Click Complete.
 9. Click Next. Ready to Install dialog box opens.
 
-{ ![D:/qtp/qtp/qtp4.png](Installation-and-Deployment_images/Installation-and-Deployment_img5.png) | markdownify }
+{{ '![D:/qtp/qtp/qtp4.png](Installation-and-Deployment_images/Installation-and-Deployment_img5.png)' | markdownify }}
 {:.image }
 
 
 10. Click Install to continue with the installation.
 
-{ ![D:/qtp/qtp/qtp5.png](Installation-and-Deployment_images/Installation-and-Deployment_img6.png) | markdownify }
+{{ '![D:/qtp/qtp/qtp5.png](Installation-and-Deployment_images/Installation-and-Deployment_img6.png)' | markdownify }}
 {:.image }
 
 
 > _Note: The Completed screen is displayed once the selected package is installed._
 
-{ ![D:/qtp/qtp/qtp6.png](Installation-and-Deployment_images/Installation-and-Deployment_img7.png) | markdownify }
+{{ '![D:/qtp/qtp/qtp6.png](Installation-and-Deployment_images/Installation-and-Deployment_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -79,7 +79,7 @@ The Essential QTP samples are installed in the following location, locally on th
 
 _Grid samples- {installed location of the product}\ WPF\QTPSamples \_ 
 
-> _Note: By default, the installed location of the product corresponds to- &lt;Drive&gt;:\Program Files\Syncfusion\Essential QTP \&lt;version number&gt;\_
+> _Note: By default, the installed location of the product corresponds to- <Drive>:\Program Files\Syncfusion\Essential QTP \<version number>\_
 
 The executable files for the samples are available in the following location:
 

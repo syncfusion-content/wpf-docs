@@ -204,7 +204,7 @@ This adds a port to the node at the location (50,0) with respect to the node.
 
 
 
-{ ![](Connection-Port_images/Connection-Port_img1.jpeg) | markdownify }
+{{ '![](Connection-Port_images/Connection-Port_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -422,7 +422,7 @@ diagramModel.Nodes.Add(node)
 
 
 
-{ ![](Connection-Port_images/Connection-Port_img2.jpeg) | markdownify }
+{{ '![](Connection-Port_images/Connection-Port_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -587,7 +587,7 @@ diagramModel.Nodes.Add(node)
 
 
 
-{ ![](Connection-Port_images/Connection-Port_img3.jpeg) | markdownify }
+{{ '![](Connection-Port_images/Connection-Port_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -629,31 +629,31 @@ Through XAML
 
 [XAML]
 
-         &lt;Style TargetType="{x:Type syncfusion:ConnectionPort}"&gt;
+         <Style TargetType="{x:Type syncfusion:ConnectionPort}">
 
-            &lt;Setter Property="PortShape" Value="Diamond"/&gt;
+            <Setter Property="PortShape" Value="Diamond"/>
 
-            &lt;Setter Property="CustomPathStyle" &gt;
+            <Setter Property="CustomPathStyle" >
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;Style TargetType="{x:Type Path}"&gt;
+                    <Style TargetType="{x:Type Path}">
 
-                        &lt;Setter Property="Stroke" Value="Red" /&gt;
+                        <Setter Property="Stroke" Value="Red" />
 
-                        &lt;Setter Property="StrokeThickness" Value="3"/&gt;
+                        <Setter Property="StrokeThickness" Value="3"/>
 
-                    &lt;/Style&gt;
+                    </Style>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-          &lt;/Style&gt;
+          </Style>
 
 
 
-{ ![Description: C:/Users/sundarm/Desktop/connectionport.PNG](Connection-Port_images/Connection-Port_img4.png) | markdownify }
+{{ '![Description: C:/Users/sundarm/Desktop/connectionport.PNG](Connection-Port_images/Connection-Port_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -913,7 +913,7 @@ diagramModel.Connections.Add(o1)
 
 
 
-{ ![](Connection-Port_images/Connection-Port_img5.jpeg) | markdownify }
+{{ '![](Connection-Port_images/Connection-Port_img5.jpeg)' | markdownify }}
 {:.image }
 
 

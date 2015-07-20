@@ -18,7 +18,7 @@ The main functionality of the OLAP Grid is as follows:
 * Renders the results of an OLAP query in a cross tab UI. 
 * Provides drill down and drill up functionality.
 
-{ ![Figure 1.OLAP Grid Control](Overview_images/Overview_img1.png) | markdownify }
+{{ '![Figure 1.OLAP Grid Control](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 

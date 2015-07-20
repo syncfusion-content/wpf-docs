@@ -55,7 +55,7 @@ Pointer is a key element of the linear scale that points a value or measure on t
 
 ## Linear Gauge Elements
 
-{ ![](Overview_images/Overview_img1.jpeg) | markdownify }
+{{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
 {:.image }
 
 

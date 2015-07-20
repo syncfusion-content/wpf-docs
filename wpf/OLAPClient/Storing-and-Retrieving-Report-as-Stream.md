@@ -241,5 +241,5 @@ con.Close()
 
 Samples which demonstrate this feature is available in the following sample installation location.
 
-_&lt;Install Location&gt;\Syncfusion\EssentialStudio\&lt;Version Number&gt;\BI\WPF\OlapClient.WPF\Samples\OLAP Client\_
+_<Install Location>\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OlapClient.WPF\Samples\OLAP Client\_
 

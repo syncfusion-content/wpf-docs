@@ -157,14 +157,14 @@ treeGrid.SupportRowSizing</td></tr>
 <tr>
 <td>
 SupportsVisualStyles</td><td>
-Determines whether the GridTree control will use the VisualStyle property to control the appearance of the GridTree control. If this property is {{ '_true_' | markdownify }}, you can directly set the VisualStyle property for the grid. You also have the option of applying the changes through the SkinManager found in the Syncfusion.Shared.WPF library. The GridTree control is bound to the SkinManager values through its Template.</td><td>
+Determines whether the GridTree control will use the VisualStyle property to control the appearance of the GridTree control. If this property is {{{ ''_true_'' | markdownify }}}, you can directly set the VisualStyle property for the grid. You also have the option of applying the changes through the SkinManager found in the Syncfusion.Shared.WPF library. The GridTree control is bound to the SkinManager values through its Template.</td><td>
 Dependency property</td><td>
 bool</td><td>
 treeGrid.SupportsVisualStyle</td></tr>
 <tr>
 <td>
 VisualStyle</td><td>
-Determines the VisualStyle that is applied to the GridTree control when SupportsVisualStyles property is set to {{ '_true_' | markdownify }}.</td><td>
+Determines the VisualStyle that is applied to the GridTree control when SupportsVisualStyles property is set to {{{ ''_true_'' | markdownify }}}.</td><td>
 Dependency property</td><td>
 VisualStyle</td><td>
 treeGrid.VisualStyle</td></tr>

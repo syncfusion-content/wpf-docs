@@ -23,7 +23,7 @@ To hide non-working hours in the schedule, the ShowNonWorkingHours property in
 
                                ShowNonWorkingHours="False">
 
-        &lt;/syncfusion:SfSchedule&gt;      
+        </syncfusion:SfSchedule>      
 
 
 
@@ -43,7 +43,7 @@ To hide non-working hours in the schedule, the ShowNonWorkingHours property in
 
              this.grid.Children.Add(schedule);
 
-{ ![](Hiding-Non-Working-Hours_images/Hiding-Non-Working-Hours_img1.png) | markdownify }
+{{ '![](Hiding-Non-Working-Hours_images/Hiding-Non-Working-Hours_img1.png)' | markdownify }}
 {:.image }
 
 

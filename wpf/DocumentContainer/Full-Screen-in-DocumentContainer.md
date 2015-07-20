@@ -20,7 +20,7 @@ TDIFullScreenMode is the property used to define the full-screen mode for TDI it
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" TDIFullScreenMode="WindowMode" /&gt;</td></tr>
+[XAML]<syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" TDIFullScreenMode="WindowMode" /></td></tr>
 <tr>
 <td>
 [C#]documentcontainer1. TDIFullScreenMode=FullScreenMode.WindowMode;</td></tr>
@@ -34,7 +34,7 @@ TDIFullScreenMode is the property used to define the full-screen mode for TDI it
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:TabControlExt Name="tabcontrol1" FullScreenMode="WindowMode"/&gt;</td></tr>
+[XAML]<syncfusion:TabControlExt Name="tabcontrol1" FullScreenMode="WindowMode"/></td></tr>
 <tr>
 <td>
 [C#]tabcontrol1. FullScreenMode= FullScreenMode.WindowMode; </td></tr>
@@ -47,7 +47,7 @@ A toolbar can be placed with headers in the header panel of TDI items in Documen
 
 
 
-{ ![](Full-Screen-in-DocumentContainer_images/Full-Screen-in-DocumentContainer_img1.jpeg) | markdownify }
+{{ '![](Full-Screen-in-DocumentContainer_images/Full-Screen-in-DocumentContainer_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -56,7 +56,7 @@ A toolbar can be placed with headers in the header panel of TDI items in Documen
 <table>
 <tr>
 <td>
-[XAML]        &lt;syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" &gt;            &lt;syncfusion:DocumentContainer.TDIToolBarTray&gt;                &lt;ToolBarTray&gt;                    &lt;ToolBar&gt;                        &lt;Button Content="Tool" /&gt;                    &lt;/ToolBar&gt;                &lt;/ToolBarTray&gt;            &lt;/syncfusion:DocumentContainer.TDIToolBarTray&gt;            &lt;Grid syncfusion:DocumentContainer.Header="tab1" /&gt;            &lt;Grid syncfusion:DocumentContainer.Header="tab2"/&gt;        &lt;/syncfusion:DocumentContainer&gt;</td></tr>
+[XAML]        <syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" >            <syncfusion:DocumentContainer.TDIToolBarTray>                <ToolBarTray>                    <ToolBar>                        <Button Content="Tool" />                    </ToolBar>                </ToolBarTray>            </syncfusion:DocumentContainer.TDIToolBarTray>            <Grid syncfusion:DocumentContainer.Header="tab1" />            <Grid syncfusion:DocumentContainer.Header="tab2"/>        </syncfusion:DocumentContainer></td></tr>
 <tr>
 <td>
 [C#]ToolBarTray tooltray = new ToolBarTray();ToolBar toolbar = new ToolBar(); toolbar.Items.Add(new Button{Content="Tool"}); tooltray.ToolBars.Add(toolbar);documentcontainer1.TDIToolBarTray = tooltray;</td></tr>
@@ -70,7 +70,7 @@ This feature is also applicable to TabControlExt, as demonstrated in the followi
 <table>
 <tr>
 <td>
-[XAML]        &lt;syncfusion:TabControlExt Name="tabcontrol"&gt;            &lt;syncfusion:TabControlExt.ToolBarTray&gt;                &lt;ToolBarTray&gt;                    &lt;ToolBar&gt;                        &lt;Button Content="Tool" /&gt;                    &lt;/ToolBar&gt;                &lt;/ToolBarTray&gt;            &lt;/syncfusion:TabControlExt.ToolBarTray&gt;        &lt;/syncfusion:TabControlExt&gt;</td></tr>
+[XAML]        <syncfusion:TabControlExt Name="tabcontrol">            <syncfusion:TabControlExt.ToolBarTray>                <ToolBarTray>                    <ToolBar>                        <Button Content="Tool" />                    </ToolBar>                </ToolBarTray>            </syncfusion:TabControlExt.ToolBarTray>        </syncfusion:TabControlExt></td></tr>
 <tr>
 <td>
 [C#]ToolBarTray tooltray = new ToolBarTray();ToolBar toolbar = new ToolBar(); toolbar.Items.Add(new Button{Content="Tool"}); tooltray.ToolBars.Add(toolbar);tabcontrol.ToolBarTray = tooltray;</td></tr>
@@ -84,7 +84,7 @@ SizetoContentInMDI is used to resize an MDI window to its child size. This is an
 <table>
 <tr>
 <td>
-[XAML]        &lt;syncfusion:DocumentContainer Mode="MDI"&gt;            &lt;Grid Name="grid1" syncfusion:DocumentContainer.SizetoContentInMDI="True" Width="200"  Height="200" /&gt;        &lt;/syncfusion:DocumentContainer&gt;</td></tr>
+[XAML]        <syncfusion:DocumentContainer Mode="MDI">            <Grid Name="grid1" syncfusion:DocumentContainer.SizetoContentInMDI="True" Width="200"  Height="200" />        </syncfusion:DocumentContainer></td></tr>
 <tr>
 <td>
 [C#]DocumentContainer.SetSizetoContentInMDI(grid1,true);</td></tr>

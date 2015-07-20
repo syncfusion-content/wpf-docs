@@ -35,7 +35,7 @@ Me.OlapGrid1.FreezeHeaders = True
 
 
 
-{ ![](Freeze-Headers_images/Freeze-Headers_img1.png) | markdownify }
+{{ '![](Freeze-Headers_images/Freeze-Headers_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -43,5 +43,5 @@ Sample Location
 
 A sample demo is available at the following location:
 
-..\Syncfusion\EssentialStudio\&lt;Versionnumber&gt;\BI\WPF\OlapGrid.WPF\Samples\Appearance\Frozen Header Demo
+..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Appearance\Frozen Header Demo
 

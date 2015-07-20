@@ -26,19 +26,19 @@ The core features of the DateTimeEdit are as follows:
 
 
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Overview_images/Overview_img2.png) | markdownify }
+{{ '![](Overview_images/Overview_img2.png)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Overview_images/Overview_img3.png) | markdownify }
+{{ '![](Overview_images/Overview_img3.png)' | markdownify }}
 {:.image }
 
 

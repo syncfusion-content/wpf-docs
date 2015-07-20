@@ -13,7 +13,7 @@ Data set is a collection of data fields. You can add the data set to the corresp
 
 1. Right click the added data source (Adventure) and click Add DataSet.
 
-{ ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig13.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img1.png) | markdownify }
+{{ '![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig13.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -21,7 +21,7 @@ Data set is a collection of data fields. You can add the data set to the corresp
 
 > 
 
-{ ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig14.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img2.png) | markdownify }
+{{ '![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig14.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -29,7 +29,7 @@ Data set is a collection of data fields. You can add the data set to the corresp
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-6.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img3.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-6.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -37,7 +37,7 @@ Data set is a collection of data fields. You can add the data set to the corresp
 
 
 
-{ ![C:/Users/radhas/Desktop/ScreenShot/sshot-5.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img4.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/ScreenShot/sshot-5.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -45,7 +45,7 @@ Data set is a collection of data fields. You can add the data set to the corresp
 
 
 
-{ ![C:/Users/radhas/Desktop/ScreenShot/sshot-6.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img5.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/ScreenShot/sshot-6.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -53,7 +53,7 @@ Data set is a collection of data fields. You can add the data set to the corresp
 
 
 
-{ ![](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img6.png) | markdownify }
+{{ '![](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -61,7 +61,7 @@ Data set is a collection of data fields. You can add the data set to the corresp
 
 > 
 
-{ ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig19.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img7.png) | markdownify }
+{{ '![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig19.png](Add-a-Data-Set-to-Report-Designer_images/Add-a-Data-Set-to-Report-Designer_img7.png)' | markdownify }}
 {:.image }
 
 

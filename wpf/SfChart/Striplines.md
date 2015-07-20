@@ -101,51 +101,51 @@ The following example illustrates the Stripline feature of chart.
 
 
 
-&lt;syncfusion:SfChart&gt;
+<syncfusion:SfChart>
 
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:CategoryAxis Header="Category" ShowGridLines="False"/&gt;
+                <syncfusion:CategoryAxis Header="Category" ShowGridLines="False"/>
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.SecondaryAxis>
 
-                &lt;syncfusion:NumericalAxis Header="Count"&gt;
-
-
-
-                    &lt;syncfusion:NumericalAxis.StripLines&gt;
-
-                        &lt;syncfusion:ChartStripLine Start="240" Width="20" Label="High Revenue" Background="Purple"/&gt;
+                <syncfusion:NumericalAxis Header="Count">
 
 
 
-                        &lt;syncfusion:ChartStripLine Start="280" Width="20" Label="Average Revenue" Background="BlueViolet"/&gt;
+                    <syncfusion:NumericalAxis.StripLines>
+
+                        <syncfusion:ChartStripLine Start="240" Width="20" Label="High Revenue" Background="Purple"/>
 
 
 
-                        &lt;syncfusion:ChartStripLine Start="320" Width="20" Label="Low Revenue" Background="Violet" /&gt;
-
-                    &lt;/syncfusion:NumericalAxis.StripLines&gt;
+                        <syncfusion:ChartStripLine Start="280" Width="20" Label="Average Revenue" Background="BlueViolet"/>
 
 
 
-                &lt;/syncfusion:NumericalAxis&gt;
+                        <syncfusion:ChartStripLine Start="320" Width="20" Label="Low Revenue" Background="Violet" />
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
-
-
-
-            &lt;syncfusion:LineSeries XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+                    </syncfusion:NumericalAxis.StripLines>
 
 
 
-        &lt;/syncfusion:SfChart&gt;
+                </syncfusion:NumericalAxis>
+
+            </syncfusion:SfChart.SecondaryAxis>
 
 
 
-{ ![](Striplines_images/Striplines_img1.png) | markdownify }
+            <syncfusion:LineSeries XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+
+
+
+        </syncfusion:SfChart>
+
+
+
+{{ '![](Striplines_images/Striplines_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -155,57 +155,57 @@ The following example illustrates the Segmented Stripline feature of chart.
 
 
 
-&lt;syncfusion:SfChart x:Name="Chart"   Margin="10"&gt;
+<syncfusion:SfChart x:Name="Chart"   Margin="10">
 
 
 
-                &lt;syncfusion:SfChart.PrimaryAxis&gt;
+                <syncfusion:SfChart.PrimaryAxis>
 
-                    &lt;syncfusion:CategoryAxis Header="Category" ShowGridLines="False"/&gt;
+                    <syncfusion:CategoryAxis Header="Category" ShowGridLines="False"/>
 
-                &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+                </syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:SfChart.SecondaryAxis&gt;
+                <syncfusion:SfChart.SecondaryAxis>
 
-                    &lt;syncfusion:NumericalAxis Header="Count"&gt;
-
-
-
-                        &lt;syncfusion:NumericalAxis.StripLines&gt;
-
-                            &lt;syncfusion:ChartStripLine  IsSegmented="True" SegmentStartValue="0" SegmentEndValue="2" Start="240" Width="20" Label="High Revenue" Background="Purple"/&gt;
+                    <syncfusion:NumericalAxis Header="Count">
 
 
 
-                            &lt;syncfusion:ChartStripLine  IsSegmented="True" SegmentStartValue="2" SegmentEndValue="4" Start="280" Width="20" Label="Average Revenue" Background="BlueViolet"/&gt;
+                        <syncfusion:NumericalAxis.StripLines>
+
+                            <syncfusion:ChartStripLine  IsSegmented="True" SegmentStartValue="0" SegmentEndValue="2" Start="240" Width="20" Label="High Revenue" Background="Purple"/>
 
 
 
-                            &lt;syncfusion:ChartStripLine  IsSegmented="True" SegmentStartValue="0" SegmentEndValue="2" Start="320" Width="20" Label="Low Revenue" Background="Violet" /&gt;
-
-                        &lt;/syncfusion:NumericalAxis.StripLines&gt;
+                            <syncfusion:ChartStripLine  IsSegmented="True" SegmentStartValue="2" SegmentEndValue="4" Start="280" Width="20" Label="Average Revenue" Background="BlueViolet"/>
 
 
 
-                    &lt;/syncfusion:NumericalAxis&gt;
+                            <syncfusion:ChartStripLine  IsSegmented="True" SegmentStartValue="0" SegmentEndValue="2" Start="320" Width="20" Label="Low Revenue" Background="Violet" />
 
-                &lt;/syncfusion:SfChart.SecondaryAxis&gt;
-
-
-
-                &lt;syncfusion:LineSeries XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/&gt;
+                        </syncfusion:NumericalAxis.StripLines>
 
 
+
+                    </syncfusion:NumericalAxis>
+
+                </syncfusion:SfChart.SecondaryAxis>
+
+
+
+                <syncfusion:LineSeries XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
 
 
-        &lt;/syncfusion:SfChart&gt;
+
+
+        </syncfusion:SfChart>
 
 
 
-{ ![](Striplines_images/Striplines_img2.png) | markdownify }
+{{ '![](Striplines_images/Striplines_img2.png)' | markdownify }}
 {:.image }
 
 

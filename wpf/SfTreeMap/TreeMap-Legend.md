@@ -27,57 +27,57 @@ The legend can be positioned to Left, Right, Top or Bottom of TreeMap with the h
 
                       Margin="10" Name="TreeMap">
 
-    &lt;syncfusion:SfTreeMap.Legend&gt;
+    <syncfusion:SfTreeMap.Legend>
 
-        &lt;syncfusion:TreeMapLegend Margin="0 5" LegendItemMargin="0 0 20 10" LegendItemElementMargin="0 0 10 0" BorderThickness="0,0,0,2" BorderBrush="#CCCCCC" HorizontalAlignment="Left" LegendIconStyle="Rectangle" LegendIconHeight="18" LegendIconWidth="18" FontSize="25" Width="{Binding ActualWidth, ElementName=TreeMap}"&gt;
+        <syncfusion:TreeMapLegend Margin="0 5" LegendItemMargin="0 0 20 10" LegendItemElementMargin="0 0 10 0" BorderThickness="0,0,0,2" BorderBrush="#CCCCCC" HorizontalAlignment="Left" LegendIconStyle="Rectangle" LegendIconHeight="18" LegendIconWidth="18" FontSize="25" Width="{Binding ActualWidth, ElementName=TreeMap}">
 
-            &lt;syncfusion:TreeMapLegend.Header&gt;
+            <syncfusion:TreeMapLegend.Header>
 
-               &lt;TextBlock Text="Population Growth FY2012" FontSize="35"                                   Margin="0,0,0,10”/&gt;
+               <TextBlock Text="Population Growth FY2012" FontSize="35"                                   Margin="0,0,0,10”/>
 
-            &lt;/syncfusion:TreeMapLegend.Header&gt;
+            </syncfusion:TreeMapLegend.Header>
 
-        &lt;/syncfusion:TreeMapLegend&gt;
+        </syncfusion:TreeMapLegend>
 
-    &lt;/syncfusion:SfTreeMap.Legend&gt;
+    </syncfusion:SfTreeMap.Legend>
 
 
 
-    &lt;syncfusion:SfTreeMap.LeafColorMapping&gt;
+    <syncfusion:SfTreeMap.LeafColorMapping>
 
-        &lt;syncfusion:RangeBrushColorMapping&gt;
+        <syncfusion:RangeBrushColorMapping>
 
-            &lt;syncfusion:RangeBrushColorMapping.Brushes&gt;
+            <syncfusion:RangeBrushColorMapping.Brushes>
 
-                &lt;syncfusion:RangeBrush Color="#77D8D8" From="0" To="1" LegendLabel="1 % Growth"/&gt;
+                <syncfusion:RangeBrush Color="#77D8D8" From="0" To="1" LegendLabel="1 % Growth"/>
 
-                &lt;syncfusion:RangeBrush Color="#AED960" From="1" To="2" LegendLabel="2 % Growth"/&gt;
+                <syncfusion:RangeBrush Color="#AED960" From="1" To="2" LegendLabel="2 % Growth"/>
 
-                &lt;syncfusion:RangeBrush Color="#FFAF51" From="2" To="3" LegendLabel="3 % Growth"/&gt;
+                <syncfusion:RangeBrush Color="#FFAF51" From="2" To="3" LegendLabel="3 % Growth"/>
 
-                &lt;syncfusion:RangeBrush Color="#F3D240" From="3" To="4" LegendLabel="4 % Growth"/&gt;
+                <syncfusion:RangeBrush Color="#F3D240" From="3" To="4" LegendLabel="4 % Growth"/>
 
-            &lt;/syncfusion:RangeBrushColorMapping.Brushes&gt;
+            </syncfusion:RangeBrushColorMapping.Brushes>
 
-        &lt;/syncfusion:RangeBrushColorMapping&gt;
+        </syncfusion:RangeBrushColorMapping>
 
-    &lt;/syncfusion:SfTreeMap.LeafColorMapping&gt;
+    </syncfusion:SfTreeMap.LeafColorMapping>
 
-    &lt;syncfusion:SfTreeMap.Levels&gt;
+    <syncfusion:SfTreeMap.Levels>
 
-        &lt;syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/&gt;
+        <syncfusion:TreeMapFlatLevel GroupPath="Continent" GroupGap="10"/>
 
         <syncfusion:TreeMapFlatLevel GroupPath="Country" GroupGap="5"
 
                                      ShowLabels="True"/>
 
-    &lt;/syncfusion:SfTreeMap.Levels&gt;
+    </syncfusion:SfTreeMap.Levels>
 
-&lt;/syncfusion:SfTreeMap&gt;
+</syncfusion:SfTreeMap>
 
 
 
-{ ![](TreeMap-Legend_images/TreeMap-Legend_img1.png) | markdownify }
+{{ '![](TreeMap-Legend_images/TreeMap-Legend_img1.png)' | markdownify }}
 {:.image }
 
 

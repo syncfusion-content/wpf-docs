@@ -17,7 +17,7 @@ The section illustrates how to add the Report Viewer to the WPF application. It 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -27,7 +27,7 @@ The section illustrates how to add the Report Viewer to the WPF application. It 
 
 
 
-{ ![Description: 3.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![Description: 3.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -41,13 +41,13 @@ The section illustrates how to add the Report Viewer to the WPF application. It 
 
     Title="Window1" Height="371" Width="559" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;syncfusion:ReportViewer Name="reportViewer1" /&gt;
+        <syncfusion:ReportViewer Name="reportViewer1" />
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt; 
+</Window> 
 
 
 
@@ -55,11 +55,11 @@ The section illustrates how to add the Report Viewer to the WPF application. It 
                         1. <Window x:Class="WpfApplication6.Window1"    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                         2.     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                         3.     Title="Window1" Height="371" Width="559" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-                        4.     &lt;Grid&gt;
-                        5.         &lt;syncfusion:ReportViewer Name="reportViewer1" ReportPath="D:\ReportTemplate\Invoice.rdl"/&gt;
-                        6.     &lt;/Grid&gt;
+                        4.     <Grid>
+                        5.         <syncfusion:ReportViewer Name="reportViewer1" ReportPath="D:\ReportTemplate\Invoice.rdl"/>
+                        6.     </Grid>
 
-&lt;/Window&gt; 
+</Window> 
 
 
 
@@ -79,7 +79,7 @@ this.Loaded += (sender, arg) =>
 
 5. Run the application. The following output displays.
 
-{ ![Description: C:/Users/lingarajs/AppData/Local/Syncfusion/EssentialStudio/9.4.0.62/Reports/WPF/ReportViewer.WPF/Samples/Product Showcase/Invoice/Images/InvoiceDemo.png](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![Description: C:/Users/lingarajs/AppData/Local/Syncfusion/EssentialStudio/9.4.0.62/Reports/WPF/ReportViewer.WPF/Samples/Product Showcase/Invoice/Images/InvoiceDemo.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -87,7 +87,7 @@ this.Loaded += (sender, arg) =>
 
 
 
-{ ![Description: sa.png](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![Description: sa.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -95,7 +95,7 @@ The following output is the exported PDF report.
 
 > 
 
-{ ![Description: C:/Users/lingarajs/AppData/Local/Syncfusion/EssentialStudio/9.4.0.62/Reports/WPF/ReportWriter.WPF/Samples/Product Showcase/Invoice/Images/Invoice.png](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![Description: C:/Users/lingarajs/AppData/Local/Syncfusion/EssentialStudio/9.4.0.62/Reports/WPF/ReportWriter.WPF/Samples/Product Showcase/Invoice/Images/Invoice.png](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 

@@ -89,7 +89,7 @@ Binding a simple collection to the chart
 
 [XAML]
 
-&lt;syncfusion:SfChart &gt;
+<syncfusion:SfChart >
 
             <syncfusion:LineSeries
 
@@ -99,11 +99,11 @@ Binding a simple collection to the chart
 
                 YBindingPath="Year2010">
 
-            &lt;/syncfusion:LineSeries&gt;
+            </syncfusion:LineSeries>
 
 
 
-        &lt;/syncfusion:SfChart&gt;
+        </syncfusion:SfChart>
 
 Binding complex property to the chart
 
@@ -111,7 +111,7 @@ The complex property binding feature enables you to access nested object referen
 
 [XAML]
 
-&lt;syncfusion:LineSeries ItemsSource="{Binding  DataWithMulData}" XBindingPath="StadiumObject.CupDetailsObj.CupName" YBindingPath="StadiumObject.NumSeats" /&gt; 
+<syncfusion:LineSeries ItemsSource="{Binding  DataWithMulData}" XBindingPath="StadiumObject.CupDetailsObj.CupName" YBindingPath="StadiumObject.NumSeats" /> 
 
 
 
@@ -209,15 +209,15 @@ public class ViewModel
 
 
 
-&lt;chart:SfChart&gt;
+<chart:SfChart>
 
       <chart:ColumnSeries x:Name="series" ItemsSource="{Binding Brands}"
 
 XBindingPath="Brand[1]" YBindingPath="Count[0]" >
 
-      &lt;/chart:ColumnSeries&gt;
+      </chart:ColumnSeries>
 
-&lt;/chart:SfChart&gt;
+</chart:SfChart>
 
 
 

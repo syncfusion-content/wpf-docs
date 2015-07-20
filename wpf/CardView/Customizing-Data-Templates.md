@@ -17,51 +17,51 @@ You can customize how a business object is displayed using ItemTemplate of CardV
 
 [XAML]
 
-  &lt;syncfusion:CardView ItemsSource="{Binding Contacts}" &gt;
+  <syncfusion:CardView ItemsSource="{Binding Contacts}" >
 
 
 
-                &lt;syncfusion:CardView.ItemTemplate&gt;
+                <syncfusion:CardView.ItemTemplate>
 
-                    &lt;DataTemplate &gt;
+                    <DataTemplate >
 
-                        &lt;ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled"&gt;
+                        <ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled">
 
-                            &lt;ListBoxItem&gt;
+                            <ListBoxItem>
 
-                                &lt;StackPanel Orientation="Horizontal"&gt;
+                                <StackPanel Orientation="Horizontal">
 
-                                    &lt;TextBlock Text="Name:"/&gt;
+                                    <TextBlock Text="Name:"/>
 
-                                    &lt;TextBlock Text="{Binding Name}" Margin="5,0,0,0"/&gt;
+                                    <TextBlock Text="{Binding Name}" Margin="5,0,0,0"/>
 
-                                &lt;/StackPanel&gt;
+                                </StackPanel>
 
-                            &lt;/ListBoxItem&gt;
-
-
-
-                            &lt;ListBoxItem&gt;
-
-                                &lt;StackPanel Orientation="Horizontal"&gt;
-
-                                    &lt;TextBlock Text="Age    :"/&gt;
-
-                                    &lt;TextBlock Text="{Binding Age}" Margin="5,0,0,0"/&gt;
-
-                                &lt;/StackPanel&gt;
-
-                            &lt;/ListBoxItem&gt;
-
-                        &lt;/ListBox&gt;
-
-                    &lt;/DataTemplate&gt;
-
-                &lt;/syncfusion:CardView.ItemTemplate&gt;
+                            </ListBoxItem>
 
 
 
-            &lt;/syncfusion:CardView&gt;
+                            <ListBoxItem>
+
+                                <StackPanel Orientation="Horizontal">
+
+                                    <TextBlock Text="Age    :"/>
+
+                                    <TextBlock Text="{Binding Age}" Margin="5,0,0,0"/>
+
+                                </StackPanel>
+
+                            </ListBoxItem>
+
+                        </ListBox>
+
+                    </DataTemplate>
+
+                </syncfusion:CardView.ItemTemplate>
+
+
+
+            </syncfusion:CardView>
 
 
 
@@ -73,7 +73,7 @@ Implementing the above code generates the following output.
 
 
 
-{ ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png) | markdownify }
+{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -89,19 +89,19 @@ You can also customize header of the CardViewItem using a header template. This 
 
 [XAML]
 
-  &lt;DataTemplate x:Key="headerTemplate"&gt;
+  <DataTemplate x:Key="headerTemplate">
 
-            &lt;Grid&gt;
+            <Grid>
 
-                &lt;Border Background="Gray"&gt;
+                <Border Background="Gray">
 
-                &lt;TextBlock Text="{Binding Path=Name}" Margin="5" Foreground="White" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/&gt;
+                <TextBlock Text="{Binding Path=Name}" Margin="5" Foreground="White" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 
-                &lt;/Border&gt;
+                </Border>
 
-            &lt;/Grid&gt;
+            </Grid>
 
-  &lt;/DataTemplate&gt;
+  </DataTemplate>
 
 
 
@@ -128,7 +128,7 @@ You can also customize header of the CardViewItem using a header template. This 
 
 This generates the following CardView control.
 
-{ ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png) | markdownify }
+{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -142,59 +142,59 @@ You can edit the values loaded in CardViewItem using EditItemTemplate. This is i
 
 [XAML]
 
-   &lt;DataTemplate x:Key="contactEditTemplate"&gt;
+   <DataTemplate x:Key="contactEditTemplate">
 
-            &lt;ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectedIndex="0" ToolTip="{Binding Path=Validation.HasError, ElementName=txt}"&gt;
+            <ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectedIndex="0" ToolTip="{Binding Path=Validation.HasError, ElementName=txt}">
 
-                &lt;ListBoxItem HorizontalContentAlignment="Stretch" Padding="1"&gt;
+                <ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
 
-                    &lt;Grid &gt;
+                    <Grid >
 
-                        &lt;Grid.ColumnDefinitions&gt;
+                        <Grid.ColumnDefinitions>
 
-                            &lt;ColumnDefinition Width="75"/&gt;
+                            <ColumnDefinition Width="75"/>
 
-                            &lt;ColumnDefinition /&gt;
+                            <ColumnDefinition />
 
-                        &lt;/Grid.ColumnDefinitions&gt;
+                        </Grid.ColumnDefinitions>
 
-                        &lt;TextBlock Text="Name:"/&gt;
+                        <TextBlock Text="Name:"/>
 
-                        &lt;TextBox Grid.Column="1"   x:Name="txt" HorizontalAlignment="Stretch" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" /&gt;
+                        <TextBox Grid.Column="1"   x:Name="txt" HorizontalAlignment="Stretch" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
 
-                    &lt;/Grid&gt;
+                    </Grid>
 
-                &lt;/ListBoxItem&gt;
-
-
-
-                &lt;ListBoxItem HorizontalContentAlignment="Stretch" Padding="1"&gt;
-
-                    &lt;Grid &gt;
-
-                        &lt;Grid.ColumnDefinitions&gt;
-
-                            &lt;ColumnDefinition Width="75"/&gt;
-
-                            &lt;ColumnDefinition Width="*"/&gt;
-
-                        &lt;/Grid.ColumnDefinitions&gt;
-
-                        &lt;TextBlock Text="Age:"/&gt;
-
-                        &lt;TextBox  Grid.Column="1"  Text="{Binding Age, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" /&gt;
-
-                    &lt;/Grid&gt;
-
-                &lt;/ListBoxItem&gt;
+                </ListBoxItem>
 
 
 
+                <ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
+
+                    <Grid >
+
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition Width="75"/>
+
+                            <ColumnDefinition Width="*"/>
+
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Text="Age:"/>
+
+                        <TextBox  Grid.Column="1"  Text="{Binding Age, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+
+                    </Grid>
+
+                </ListBoxItem>
 
 
-            &lt;/ListBox&gt;
 
-        &lt;/DataTemplate&gt;
+
+
+            </ListBox>
+
+        </DataTemplate>
 
 
 
@@ -226,7 +226,7 @@ Implementing the above codes generate the following CardView control.
 
 
 
-{ ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png) | markdownify }
+{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)' | markdownify }}
 {:.image }
 
 

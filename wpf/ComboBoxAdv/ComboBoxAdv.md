@@ -19,7 +19,7 @@ The following screenshot displays the ComboBoxAdv.
 
 
 
-{ ![](ComboBoxAdv_images/ComboBoxAdv_img1.png) | markdownify }
+{{ '![](ComboBoxAdv_images/ComboBoxAdv_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -50,7 +50,7 @@ To create an ComboBoxAdv instance in Visual Studio:
 
 
 
-{ ![](ComboBoxAdv_images/ComboBoxAdv_img2.png) | markdownify }
+{{ '![](ComboBoxAdv_images/ComboBoxAdv_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -60,7 +60,7 @@ To create an ComboBoxAdv instance in Visual Studio:
 
 
 
-{ ![](ComboBoxAdv_images/ComboBoxAdv_img3.png) | markdownify }
+{{ '![](ComboBoxAdv_images/ComboBoxAdv_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -70,7 +70,7 @@ To create an ComboBoxAdv instance in Visual Studio:
 
 
 
-{ ![](ComboBoxAdv_images/ComboBoxAdv_img4.png) | markdownify }
+{{ '![](ComboBoxAdv_images/ComboBoxAdv_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -83,7 +83,7 @@ To create ComboBoxAdv instance in Expression Blend:
 
 
 
-{ ![](ComboBoxAdv_images/ComboBoxAdv_img5.png) | markdownify }
+{{ '![](ComboBoxAdv_images/ComboBoxAdv_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -92,7 +92,7 @@ To create ComboBoxAdv instance in Expression Blend:
 
 
 
-{ ![](ComboBoxAdv_images/ComboBoxAdv_img6.png) | markdownify }
+{{ '![](ComboBoxAdv_images/ComboBoxAdv_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -102,7 +102,7 @@ To create ComboBoxAdv instance in Expression Blend:
 
 
 
-{ ![](ComboBoxAdv_images/ComboBoxAdv_img7.png) | markdownify }
+{{ '![](ComboBoxAdv_images/ComboBoxAdv_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -120,7 +120,7 @@ You can edit the style of ComboBoxAdv by using Expression Blend. To edit the Com
 1. Drag the ComboBoxAdv control to the Design view. The ComboBoxAdv control will appear as shown in the screen shot displayed below.
 2. Right-click the ComboBoxAdv control, select Edit Template, and then select Edit a Copy.
 
-{ ![](ComboBoxAdv_images/ComboBoxAdv_img8.png) | markdownify }
+{{ '![](ComboBoxAdv_images/ComboBoxAdv_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -168,7 +168,7 @@ AllowMultiSelect property can be added directly to an application using the foll
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:ComboBoxAdv AllowMultiSelect="True"&gt;        &lt;/syncfusion:ComboBoxAdv&gt;</td></tr>
+[XAML]<syncfusion:ComboBoxAdv AllowMultiSelect="True">        </syncfusion:ComboBoxAdv></td></tr>
 <tr>
 <td>
 [C#]ComboBoxAdv comboBox = new ComboBoxAdv();       comboBox.AllowMultiSelect = true;</td></tr>
@@ -177,7 +177,7 @@ AllowMultiSelect property can be added directly to an application using the foll
 
 
 
-{ ![](ComboBoxAdv_images/ComboBoxAdv_img9.png) | markdownify }
+{{ '![](ComboBoxAdv_images/ComboBoxAdv_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -214,14 +214,14 @@ DefaultText property can be added directly to an application in the following wa
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:ComboBoxAdv DefaultText="..Choose Items.."&gt;        &lt;/syncfusion:ComboBoxAdv&gt;</td></tr>
+[XAML]<syncfusion:ComboBoxAdv DefaultText="..Choose Items..">        </syncfusion:ComboBoxAdv></td></tr>
 <tr>
 <td>
 [C#]ComboBoxAdv comboBox = new ComboBoxAdv();       comboBox.DefaultText = "..Choose Items..";</td></tr>
 </table>
 
 
-{ ![](ComboBoxAdv_images/ComboBoxAdv_img10.png) | markdownify }
+{{ '![](ComboBoxAdv_images/ComboBoxAdv_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -258,14 +258,14 @@ Delimiter string customization can be added directly to an application using the
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:ComboBoxAdv SelectedValueDelimiter="#"&gt;        &lt;/syncfusion:ComboBoxAdv&gt;</td></tr>
+[XAML]<syncfusion:ComboBoxAdv SelectedValueDelimiter="#">        </syncfusion:ComboBoxAdv></td></tr>
 <tr>
 <td>
 [C#]ComboBoxAdv comboBox = new ComboBoxAdv();       comboBox.SelectedValueDelimiter = "#";</td></tr>
 </table>
 
 
-{ ![](ComboBoxAdv_images/ComboBoxAdv_img11.png) | markdownify }
+{{ '![](ComboBoxAdv_images/ComboBoxAdv_img11.png)' | markdownify }}
 {:.image }
 
 

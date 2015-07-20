@@ -29,7 +29,7 @@ xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared
 
 Title="ChromelessWindowTestSample"  Height="300" Width="300" >
 
-&lt;/shared:ChromelessWindow&gt;
+</shared:ChromelessWindow>
 
 
 
@@ -55,7 +55,7 @@ xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared
 
 Title="ChromelessWindowTestSample"  Height="300" Width="300"  >
 
-&lt;/ shared:ChromelessWindow&gt;
+</ shared:ChromelessWindow>
 
 
 
@@ -67,23 +67,23 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  >
 
 
 
-&lt;ControlTemplate x:Key="ChromelessWindowTemplate" TargetType="{x:Type shared:ChromelessWindow}"&gt;
+<ControlTemplate x:Key="ChromelessWindowTemplate" TargetType="{x:Type shared:ChromelessWindow}">
 
-    &lt;AdornerDecorator&gt;
+    <AdornerDecorator>
 
-        &lt;Border Name="OuterBorder" Background="#F1401013" BorderThickness="{Binding ElementName=ResizeThicknessSlider,Path=Value}"CornerRadius="{Binding ElementName=CornerRadiusSlider,Path=Value}"  BorderBrush="#401013"&gt;
+        <Border Name="OuterBorder" Background="#F1401013" BorderThickness="{Binding ElementName=ResizeThicknessSlider,Path=Value}"CornerRadius="{Binding ElementName=CornerRadiusSlider,Path=Value}"  BorderBrush="#401013">
 
-            &lt;Border  Name="ContentAreaBorder" CornerRadius="{Binding ElementName=CornerRadiusSlider,Path=Value}" &gt;
+            <Border  Name="ContentAreaBorder" CornerRadius="{Binding ElementName=CornerRadiusSlider,Path=Value}" >
 
-                &lt;ContentPresenter Grid.Row="1"  Margin="0,0,0,0"  /&gt;
+                <ContentPresenter Grid.Row="1"  Margin="0,0,0,0"  />
 
-            &lt;/Border&gt;
+            </Border>
 
-        &lt;/Border&gt;
+        </Border>
 
-    &lt;/AdornerDecorator&gt;
+    </AdornerDecorator>
 
-&lt;/ControlTemplate&gt;
+</ControlTemplate>
 
 
 
@@ -111,13 +111,13 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  >
 
 Template="{StaticResource ChromelessWindowTemplate}” >
 
-&lt;Grid&gt;
+<Grid>
 
-&lt;TextBlock&gt; Hello World! &lt;/TextBlock&gt;
+<TextBlock> Hello World! </TextBlock>
 
-&lt;/Grid&gt;
+</Grid>
 
-&lt;/ shared:ChromelessWindow&gt;
+</ shared:ChromelessWindow>
 
 
 
@@ -133,15 +133,15 @@ This displays a ChromelessWindow with "Hello World" in it.
 
 
 
-&lt;ControlTemplate x:Key="Titlebartemplate" TargetType="{x:Type shared:TitleBar}"&gt;
+<ControlTemplate x:Key="Titlebartemplate" TargetType="{x:Type shared:TitleBar}">
 
-    &lt;Border Name="border" Background="#AA161616" Height="30"   &gt;
+    <Border Name="border" Background="#AA161616" Height="30"   >
 
-        &lt;ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0,0,0,0"/&gt;
+        <ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0,0,0,0"/>
 
-    &lt;/Border&gt;
+    </Border>
 
-&lt;/ControlTemplate&gt;
+</ControlTemplate>
 
 
 
@@ -157,51 +157,51 @@ This displays a ChromelessWindow with "Hello World" in it.
 
 
 
-&lt;ControlTemplate x:Key="ChromelessWindowTemplate" TargetType="{x:Type shared:ChromelessWindow}"&gt;
+<ControlTemplate x:Key="ChromelessWindowTemplate" TargetType="{x:Type shared:ChromelessWindow}">
 
-    &lt;AdornerDecorator&gt;
+    <AdornerDecorator>
 
-        &lt;Border Name="OuterBorder" Background="#F1401013" BorderThickness="{Binding ElementName=ResizeThicknessSlider,Path=Value}" CornerRadius="{Binding ElementName=CornerRadiusSlider,Path=Value}"  BorderBrush="#401013"&gt;
+        <Border Name="OuterBorder" Background="#F1401013" BorderThickness="{Binding ElementName=ResizeThicknessSlider,Path=Value}" CornerRadius="{Binding ElementName=CornerRadiusSlider,Path=Value}"  BorderBrush="#401013">
 
-            &lt;Grid&gt;
+            <Grid>
 
-                &lt;Grid.RowDefinitions&gt;
+                <Grid.RowDefinitions>
 
-                    &lt;RowDefinition Height="30"/&gt;
+                    <RowDefinition Height="30"/>
 
-                    &lt;RowDefinition Height="*"/&gt;
+                    <RowDefinition Height="*"/>
 
-                &lt;/Grid.RowDefinitions&gt;
+                </Grid.RowDefinitions>
 
-                &lt;shared:TitleBar Name="PART_TitleBar" Grid.Row="0" Template="{StaticResource Titlebartemplate}" &gt;
+                <shared:TitleBar Name="PART_TitleBar" Grid.Row="0" Template="{StaticResource Titlebartemplate}" >
 
-                    &lt;Grid VerticalAlignment="Top" Height="30"&gt;
+                    <Grid VerticalAlignment="Top" Height="30">
 
-                        &lt;StackPanel Orientation="Horizontal"&gt;
+                        <StackPanel Orientation="Horizontal">
 
-                            &lt;Image x:Name="PART_Icon" Source="{Binding RelativeSource={RelativeSource FindAncestor,  AncestorType={x:Type shared:ChromelessWindow}}, Path=Icon}" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="4,4,2,4"  MaxWidth="16" MaxHeight="16" MinWidth="16" MinHeight="16" /&gt;
+                            <Image x:Name="PART_Icon" Source="{Binding RelativeSource={RelativeSource FindAncestor,  AncestorType={x:Type shared:ChromelessWindow}}, Path=Icon}" VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="4,4,2,4"  MaxWidth="16" MaxHeight="16" MinWidth="16" MinHeight="16" />
 
-                            &lt;ContentControl Foreground="{TemplateBinding Foreground}"  Content="{TemplateBinding Title}" VerticalAlignment="Center" HorizontalAlignment="Left" x:Name="TitlePresenter" Margin="5,5,5,5" /&gt;
+                            <ContentControl Foreground="{TemplateBinding Foreground}"  Content="{TemplateBinding Title}" VerticalAlignment="Center" HorizontalAlignment="Left" x:Name="TitlePresenter" Margin="5,5,5,5" />
 
-                        &lt;/StackPanel&gt;
+                        </StackPanel>
 
-                    &lt;/Grid&gt;
+                    </Grid>
 
-                &lt;/shared:TitleBar&gt;
+                </shared:TitleBar>
 
-                &lt;Border Grid.Row="1" Name="ContentAreaBorder"  CornerRadius="{Binding ElementName=CornerRadiusSlider,Path=Value}" &gt;
+                <Border Grid.Row="1" Name="ContentAreaBorder"  CornerRadius="{Binding ElementName=CornerRadiusSlider,Path=Value}" >
 
-                    &lt;ContentPresenter Grid.Row="1"  Margin="0,0,0,0"  /&gt;
+                    <ContentPresenter Grid.Row="1"  Margin="0,0,0,0"  />
 
-                &lt;/Border&gt;
+                </Border>
 
-            &lt;/Grid&gt;
+            </Grid>
 
-        &lt;/Border&gt;
+        </Border>
 
-    &lt;/AdornerDecorator&gt;
+    </AdornerDecorator>
 
-&lt;/ControlTemplate&gt;
+</ControlTemplate>
 
 
 
@@ -215,83 +215,83 @@ For example, the following code can be used to create a ControlTemplate for the 
 
 
 
-&lt;ControlTemplate x:Key="MinimizeIcon" TargetType="{x:Type Button}"&gt;
+<ControlTemplate x:Key="MinimizeIcon" TargetType="{x:Type Button}">
 
-    &lt;Border Name="minborder4"   BorderThickness="1" CornerRadius="1" Background="Transparent"  Height="20" Width="22"  Margin="1,0,1,5"&gt;
+    <Border Name="minborder4"   BorderThickness="1" CornerRadius="1" Background="Transparent"  Height="20" Width="22"  Margin="1,0,1,5">
 
-        &lt;Canvas Width="9" Height="9"&gt;
+        <Canvas Width="9" Height="9">
 
-            &lt;Line X1="0" X2="8"  Y1="6" Y2="6" Stroke="White" StrokeThickness="1"/&gt;
+            <Line X1="0" X2="8"  Y1="6" Y2="6" Stroke="White" StrokeThickness="1"/>
 
-            &lt;Line X1="0" X2="8"  Y1="7" Y2="7" Stroke="White" StrokeThickness="1"/&gt;
+            <Line X1="0" X2="8"  Y1="7" Y2="7" Stroke="White" StrokeThickness="1"/>
 
-            &lt;Line X1="0" X2="8"  Y1="8" Y2="8" Stroke="White" StrokeThickness="1"/&gt;
+            <Line X1="0" X2="8"  Y1="8" Y2="8" Stroke="White" StrokeThickness="1"/>
 
-        &lt;/Canvas&gt;
+        </Canvas>
 
-    &lt;/Border&gt;
+    </Border>
 
-    &lt;ControlTemplate.Triggers&gt;
+    <ControlTemplate.Triggers>
 
-        &lt;Trigger Property="IsMouseOver" Value="true"&gt;
+        <Trigger Property="IsMouseOver" Value="true">
 
-            &lt;Setter TargetName="minborder4" Property="Background" &gt;
+            <Setter TargetName="minborder4" Property="Background" >
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;LinearGradientBrush EndPoint="0,1" StartPoint="0,0"&gt;
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
 
-                        &lt;GradientStop Color="#66FFFFFF" Offset="0"/&gt;
+                        <GradientStop Color="#66FFFFFF" Offset="0"/>
 
-                        &lt;GradientStop Color="#00FFFFFF" Offset="1"/&gt;
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
 
-                    &lt;/LinearGradientBrush&gt;
+                    </LinearGradientBrush>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-            &lt;Setter TargetName="minborder4" Property="BorderBrush" &gt;
+            <Setter TargetName="minborder4" Property="BorderBrush" >
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;LinearGradientBrush EndPoint="0,1" StartPoint="0,0"&gt;
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
 
-                        &lt;GradientStop Color="#00FFFFFF" Offset="0"/&gt;
+                        <GradientStop Color="#00FFFFFF" Offset="0"/>
 
-                        &lt;GradientStop Color="#7FFFFFFF" Offset="0.1"/&gt;
+                        <GradientStop Color="#7FFFFFFF" Offset="0.1"/>
 
-                    &lt;/LinearGradientBrush&gt;
+                    </LinearGradientBrush>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-        &lt;/Trigger&gt;
+        </Trigger>
 
-        &lt;Trigger Property="IsPressed" Value="true"&gt;
+        <Trigger Property="IsPressed" Value="true">
 
-            &lt;Setter TargetName="minborder4" Property="Background"&gt;
+            <Setter TargetName="minborder4" Property="Background">
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;LinearGradientBrush EndPoint="0,1" StartPoint="0,0"&gt;
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
 
-                        &lt;GradientStop Color="#99FFFFFF" Offset="0"/&gt;
+                        <GradientStop Color="#99FFFFFF" Offset="0"/>
 
-                        &lt;GradientStop Color="#00FFFFFF" Offset="1"/&gt;
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
 
-                    &lt;/LinearGradientBrush&gt;
+                    </LinearGradientBrush>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-        &lt;/Trigger&gt;
+        </Trigger>
 
-    &lt;/ControlTemplate.Triggers&gt;
+    </ControlTemplate.Triggers>
 
-&lt;/ControlTemplate&gt;
+</ControlTemplate>
 
 
 
@@ -303,95 +303,95 @@ For example, the following code can be used to create a ControlTemplate for the 
 
 
 
-&lt;ControlTemplate x:Key="RestoreIcon" TargetType="{x:Type Button}"&gt;
+<ControlTemplate x:Key="RestoreIcon" TargetType="{x:Type Button}">
 
-    &lt;Border Name="resborder4"   BorderThickness="1" CornerRadius="1" Background="Transparent"  Height="20" Width="20"  Margin="1,0,1,5"&gt;
+    <Border Name="resborder4"   BorderThickness="1" CornerRadius="1" Background="Transparent"  Height="20" Width="20"  Margin="1,0,1,5">
 
-        &lt;Canvas Width="9" Height="8"&gt;
+        <Canvas Width="9" Height="8">
 
-            &lt;Line X1="2" X2="9"  Y1="1.5" Y2="1.5" Stroke="White" StrokeThickness="1"/&gt;
+            <Line X1="2" X2="9"  Y1="1.5" Y2="1.5" Stroke="White" StrokeThickness="1"/>
 
-            &lt;Rectangle Canvas.Left="6" Canvas.Top="2"  Stroke="White" Width="3" Height="5" StrokeThickness="1"/&gt;
+            <Rectangle Canvas.Left="6" Canvas.Top="2"  Stroke="White" Width="3" Height="5" StrokeThickness="1"/>
 
-            &lt;Line X1="3" X2="8"  Y1="3" Y2="3" Stroke="White" StrokeThickness="1"/&gt;
+            <Line X1="3" X2="8"  Y1="3" Y2="3" Stroke="White" StrokeThickness="1"/>
 
-            &lt;Line X1="2" X2="8"  Y1="7" Y2="7" Stroke="White" StrokeThickness="1"/&gt;
+            <Line X1="2" X2="8"  Y1="7" Y2="7" Stroke="White" StrokeThickness="1"/>
 
-            &lt;Line X1="0" X2="7"  Y1="2.5" Y2="2.5" Stroke="White" StrokeThickness="1"/&gt;
+            <Line X1="0" X2="7"  Y1="2.5" Y2="2.5" Stroke="White" StrokeThickness="1"/>
 
-            &lt;Rectangle Canvas.Left="0" Canvas.Top="3" Stroke="White" Width="7" Height="5" StrokeThickness="1"/&gt;
+            <Rectangle Canvas.Left="0" Canvas.Top="3" Stroke="White" Width="7" Height="5" StrokeThickness="1"/>
 
-            &lt;Line X1="1" X2="6"  Y1="4" Y2="4" Stroke="White" StrokeThickness="1"/&gt;
+            <Line X1="1" X2="6"  Y1="4" Y2="4" Stroke="White" StrokeThickness="1"/>
 
-            &lt;Line X1="0" X2="6"  Y1="8" Y2="8" Stroke="White" StrokeThickness="1"/&gt;
+            <Line X1="0" X2="6"  Y1="8" Y2="8" Stroke="White" StrokeThickness="1"/>
 
-        &lt;/Canvas&gt;
+        </Canvas>
 
-    &lt;/Border&gt;
+    </Border>
 
-    &lt;ControlTemplate.Triggers&gt;
+    <ControlTemplate.Triggers>
 
-        &lt;Trigger Property="IsMouseOver" Value="true"&gt;
+        <Trigger Property="IsMouseOver" Value="true">
 
-            &lt;Setter TargetName="resborder4" Property="Background" &gt;
+            <Setter TargetName="resborder4" Property="Background" >
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;LinearGradientBrush EndPoint="0,1" StartPoint="0,0"&gt;
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
 
-                        &lt;GradientStop Color="#66FFFFFF" Offset="0"/&gt;
+                        <GradientStop Color="#66FFFFFF" Offset="0"/>
 
-                        &lt;GradientStop Color="#00FFFFFF" Offset="1"/&gt;
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
 
-                    &lt;/LinearGradientBrush&gt;
+                    </LinearGradientBrush>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-            &lt;Setter TargetName="resborder4" Property="BorderBrush" &gt;
+            <Setter TargetName="resborder4" Property="BorderBrush" >
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;LinearGradientBrush EndPoint="0,1" StartPoint="0,0"&gt;
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
 
-                        &lt;GradientStop Color="#00FFFFFF" Offset="0"/&gt;
+                        <GradientStop Color="#00FFFFFF" Offset="0"/>
 
-                        &lt;GradientStop Color="#7FFFFFFF" Offset="0.1"/&gt;
+                        <GradientStop Color="#7FFFFFFF" Offset="0.1"/>
 
-                    &lt;/LinearGradientBrush&gt;
+                    </LinearGradientBrush>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-        &lt;/Trigger&gt;
+        </Trigger>
 
-        &lt;Trigger Property="IsPressed" Value="true"&gt;
+        <Trigger Property="IsPressed" Value="true">
 
-            &lt;Setter TargetName="resborder4" Property="Background"&gt;
+            <Setter TargetName="resborder4" Property="Background">
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;LinearGradientBrush EndPoint="0,1" StartPoint="0,0"&gt;
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
 
-                        &lt;GradientStop Color="#99FFFFFF" Offset="0"/&gt;
+                        <GradientStop Color="#99FFFFFF" Offset="0"/>
 
-                        &lt;GradientStop Color="#00FFFFFF" Offset="1"/&gt;
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
 
-                    &lt;/LinearGradientBrush&gt;
+                    </LinearGradientBrush>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-        &lt;/Trigger&gt;
+        </Trigger>
 
 
 
-    &lt;/ControlTemplate.Triggers&gt;
+    </ControlTemplate.Triggers>
 
-&lt;/ControlTemplate&gt;
+</ControlTemplate>
 
 
 
@@ -403,83 +403,83 @@ For example, the following code can be used to create a ControlTemplate for the 
 
 
 
-&lt;ControlTemplate x:Key="MaximizeIcon" TargetType="{x:Type Button}"&gt;
+<ControlTemplate x:Key="MaximizeIcon" TargetType="{x:Type Button}">
 
-    &lt;Border Name="maxborder4" BorderThickness="1" CornerRadius="1" Background="Transparent" Height="20" Width="22" HorizontalAlignment="Right" Margin="1,2,1,5"&gt;
+    <Border Name="maxborder4" BorderThickness="1" CornerRadius="1" Background="Transparent" Height="20" Width="22" HorizontalAlignment="Right" Margin="1,2,1,5">
 
-        &lt;Canvas Width="9" Height="9"&gt;
+        <Canvas Width="9" Height="9">
 
-            &lt;Rectangle Fill="Transparent" Stroke="White" Width="9" Height="7"/&gt;
+            <Rectangle Fill="Transparent" Stroke="White" Width="9" Height="7"/>
 
-            &lt;Rectangle Canvas.Top="1" Canvas.Left="1" Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Background}" Width="7" Height="3" Margin="0,2,0,0"/&gt;
+            <Rectangle Canvas.Top="1" Canvas.Left="1" Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Background}" Width="7" Height="3" Margin="0,2,0,0"/>
 
-            &lt;Line X1="0" X2="8"  Y1="8" Y2="8" Stroke="Transparent" StrokeThickness="1"/&gt;
+            <Line X1="0" X2="8"  Y1="8" Y2="8" Stroke="Transparent" StrokeThickness="1"/>
 
-        &lt;/Canvas&gt;
+        </Canvas>
 
-    &lt;/Border&gt;
+    </Border>
 
-    &lt;ControlTemplate.Triggers&gt;
+    <ControlTemplate.Triggers>
 
-        &lt;Trigger Property="IsMouseOver" Value="true"&gt;
+        <Trigger Property="IsMouseOver" Value="true">
 
-            &lt;Setter TargetName="maxborder4" Property="Background" &gt;
+            <Setter TargetName="maxborder4" Property="Background" >
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;LinearGradientBrush EndPoint="0,1" StartPoint="0,0"&gt;
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
 
-                        &lt;GradientStop Color="#66FFFFFF" Offset="0"/&gt;
+                        <GradientStop Color="#66FFFFFF" Offset="0"/>
 
-                        &lt;GradientStop Color="#00FFFFFF" Offset="1"/&gt;
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
 
-                    &lt;/LinearGradientBrush&gt;
+                    </LinearGradientBrush>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-            &lt;Setter TargetName="maxborder4" Property="BorderBrush" &gt;
+            <Setter TargetName="maxborder4" Property="BorderBrush" >
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;LinearGradientBrush EndPoint="0,1" StartPoint="0,0"&gt;
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
 
-                        &lt;GradientStop Color="#00FFFFFF" Offset="0"/&gt;
+                        <GradientStop Color="#00FFFFFF" Offset="0"/>
 
-                        &lt;GradientStop Color="#7FFFFFFF" Offset="0.1"/&gt;
+                        <GradientStop Color="#7FFFFFFF" Offset="0.1"/>
 
-                    &lt;/LinearGradientBrush&gt;
+                    </LinearGradientBrush>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-        &lt;/Trigger&gt;
+        </Trigger>
 
-        &lt;Trigger Property="IsPressed" Value="true"&gt;
+        <Trigger Property="IsPressed" Value="true">
 
-            &lt;Setter TargetName="maxborder4" Property="Background"&gt;
+            <Setter TargetName="maxborder4" Property="Background">
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;LinearGradientBrush EndPoint="0,1" StartPoint="0,0"&gt;
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
 
-                        &lt;GradientStop Color="#99FFFFFF" Offset="0"/&gt;
+                        <GradientStop Color="#99FFFFFF" Offset="0"/>
 
-                        &lt;GradientStop Color="#00FFFFFF" Offset="1"/&gt;
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
 
-                    &lt;/LinearGradientBrush&gt;
+                    </LinearGradientBrush>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-        &lt;/Trigger&gt;
+        </Trigger>
 
-    &lt;/ControlTemplate.Triggers&gt;
+    </ControlTemplate.Triggers>
 
-&lt;/ControlTemplate&gt;
+</ControlTemplate>
 
 
 
@@ -491,79 +491,79 @@ For example, the following code can be used to create a ControlTemplate for the 
 
 
 
-&lt;ControlTemplate x:Key="CloseIcon" TargetType="{x:Type Button}"&gt;
+<ControlTemplate x:Key="CloseIcon" TargetType="{x:Type Button}">
 
-    &lt;Border Name="closeborder4" BorderThickness="1" CornerRadius="1" Background="Transparent" Height="20" Width="22" HorizontalAlignment="Right" Margin="1,0,1,5"&gt;
+    <Border Name="closeborder4" BorderThickness="1" CornerRadius="1" Background="Transparent" Height="20" Width="22" HorizontalAlignment="Right" Margin="1,0,1,5">
 
-        &lt;Canvas Width="12" Height="9"&gt;
+        <Canvas Width="12" Height="9">
 
-            &lt;Path Fill="#FFFFFFFF" Stretch="Fill" Stroke="#FF000000" Width="11" Height="10" Canvas.Left="0.875" Data="M284.20002,237.66667 L287.59967,237.66667 288.733,239.46634 290.06676,237.53303 293.0665,237.53303 293.0665,238.99951 290.59978,241.26536 290.59978,242.26457 293.19982,244.59636 293.19982,245.66247 290.13311,245.72877 288.74141,243.79678 287.39973,245.59584 284.26634,245.59584 284.26634,244.663 286.66638,242.39751 286.66638,241.26476 284.19968,238.79938 z"/&gt;
+            <Path Fill="#FFFFFFFF" Stretch="Fill" Stroke="#FF000000" Width="11" Height="10" Canvas.Left="0.875" Data="M284.20002,237.66667 L287.59967,237.66667 288.733,239.46634 290.06676,237.53303 293.0665,237.53303 293.0665,238.99951 290.59978,241.26536 290.59978,242.26457 293.19982,244.59636 293.19982,245.66247 290.13311,245.72877 288.74141,243.79678 287.39973,245.59584 284.26634,245.59584 284.26634,244.663 286.66638,242.39751 286.66638,241.26476 284.19968,238.79938 z"/>
 
-        &lt;/Canvas&gt;
+        </Canvas>
 
-    &lt;/Border&gt;
+    </Border>
 
-    &lt;ControlTemplate.Triggers&gt;
+    <ControlTemplate.Triggers>
 
-        &lt;Trigger Property="IsMouseOver" Value="true"&gt;
+        <Trigger Property="IsMouseOver" Value="true">
 
-            &lt;Setter TargetName="closeborder4" Property="Background" &gt;
+            <Setter TargetName="closeborder4" Property="Background" >
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;LinearGradientBrush EndPoint="0,1" StartPoint="0,0"&gt;
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
 
-                        &lt;GradientStop Color="#66FFFFFF" Offset="0"/&gt;
+                        <GradientStop Color="#66FFFFFF" Offset="0"/>
 
-                        &lt;GradientStop Color="#00FFFFFF" Offset="1"/&gt;
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
 
-                    &lt;/LinearGradientBrush&gt;
+                    </LinearGradientBrush>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-            &lt;Setter TargetName="closeborder4" Property="BorderBrush" &gt;
+            <Setter TargetName="closeborder4" Property="BorderBrush" >
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;LinearGradientBrush EndPoint="0,1" StartPoint="0,0"&gt;
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
 
-                        &lt;GradientStop Color="#00FFFFFF" Offset="0"/&gt;
+                        <GradientStop Color="#00FFFFFF" Offset="0"/>
 
-                        &lt;GradientStop Color="#7FFFFFFF" Offset="0.1"/&gt;
+                        <GradientStop Color="#7FFFFFFF" Offset="0.1"/>
 
-                    &lt;/LinearGradientBrush&gt;
+                    </LinearGradientBrush>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-        &lt;/Trigger&gt;
+        </Trigger>
 
-        &lt;Trigger Property="IsPressed" Value="true"&gt;
+        <Trigger Property="IsPressed" Value="true">
 
-            &lt;Setter TargetName="closeborder4" Property="Background"&gt;
+            <Setter TargetName="closeborder4" Property="Background">
 
-                &lt;Setter.Value&gt;
+                <Setter.Value>
 
-                    &lt;LinearGradientBrush EndPoint="0,1" StartPoint="0,0"&gt;
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
 
-                        &lt;GradientStop Color="#99FFFFFF" Offset="0"/&gt;
+                        <GradientStop Color="#99FFFFFF" Offset="0"/>
 
-                        &lt;GradientStop Color="#00FFFFFF" Offset="1"/&gt;
+                        <GradientStop Color="#00FFFFFF" Offset="1"/>
 
-                    &lt;/LinearGradientBrush&gt;
+                    </LinearGradientBrush>
 
-                &lt;/Setter.Value&gt;
+                </Setter.Value>
 
-            &lt;/Setter&gt;
+            </Setter>
 
-        &lt;/Trigger&gt;
+        </Trigger>
 
-    &lt;/ControlTemplate.Triggers&gt;
+    </ControlTemplate.Triggers>
 
-&lt;/ControlTemplate&gt;
+</ControlTemplate>
 
 
 
@@ -575,17 +575,17 @@ The Buttons can then be added to the TitleBar using the below code.
 
 
 
-&lt;StackPanel   Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center"&gt;
+<StackPanel   Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
 
-    &lt;shared:TitleButton x:Name="MinimizeButton" Command="shared:ChromelessWindow.ToggleMinimizedState" Template="{StaticResource MinimizeIcon}"  ToolTip="Minimize"/&gt;
+    <shared:TitleButton x:Name="MinimizeButton" Command="shared:ChromelessWindow.ToggleMinimizedState" Template="{StaticResource MinimizeIcon}"  ToolTip="Minimize"/>
 
-    &lt;shared:TitleButton x:Name="PART_MaximizeButton"  Command="shared:ChromelessWindow.ToggleMaximizedState"   Template="{StaticResource MaximizeIcon}" ToolTip="Maximize"/&gt;
+    <shared:TitleButton x:Name="PART_MaximizeButton"  Command="shared:ChromelessWindow.ToggleMaximizedState"   Template="{StaticResource MaximizeIcon}" ToolTip="Maximize"/>
 
-    &lt;shared:TitleButton x:Name="PART_RestoreButton"  Command="shared:ChromelessWindow.ToggleMaximizedState"  Template="{StaticResource RestoreIcon}" ToolTip="Maximize"/&gt;
+    <shared:TitleButton x:Name="PART_RestoreButton"  Command="shared:ChromelessWindow.ToggleMaximizedState"  Template="{StaticResource RestoreIcon}" ToolTip="Maximize"/>
 
-    &lt;shared:TitleButton x:Name="CloseButton"  Command="shared:ChromelessWindow.CloseWindow"  Template="{StaticResource CloseIcon}" ToolTip="Close"/&gt;
+    <shared:TitleButton x:Name="CloseButton"  Command="shared:ChromelessWindow.CloseWindow"  Template="{StaticResource CloseIcon}" ToolTip="Close"/>
 
-&lt;/StackPanel&gt;
+</StackPanel>
 
 
 
@@ -611,51 +611,51 @@ Title="ChromelessWindowTestSample"  Height="Auto" Width="Auto"
 
     CornerRadius="{Binding ElementName=CornerRadiusSlider,Path=Value}" Template="{StaticResource ChromelessWindowTemplate}">
 
-    &lt;Border  CornerRadius="{Binding ElementName=CornerRadiusSlider,Path=Value}"&gt;
+    <Border  CornerRadius="{Binding ElementName=CornerRadiusSlider,Path=Value}">
 
-        &lt;Grid  x:Name="RootGrid"&gt;
+        <Grid  x:Name="RootGrid">
 
-            &lt;Grid  x:Name="ControlsGrid" HorizontalAlignment="Center" VerticalAlignment="Center"&gt;
+            <Grid  x:Name="ControlsGrid" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-                &lt;Grid.RowDefinitions&gt;
+                <Grid.RowDefinitions>
 
-                    &lt;RowDefinition Height="50"/&gt;
+                    <RowDefinition Height="50"/>
 
-                    &lt;RowDefinition Height="50"/&gt;
+                    <RowDefinition Height="50"/>
 
-                &lt;/Grid.RowDefinitions&gt;
+                </Grid.RowDefinitions>
 
-                &lt;Grid.ColumnDefinitions&gt;
+                <Grid.ColumnDefinitions>
 
-                    &lt;ColumnDefinition Width="160"/&gt;
+                    <ColumnDefinition Width="160"/>
 
-                    &lt;ColumnDefinition Width="164"/&gt;
+                    <ColumnDefinition Width="164"/>
 
-                    &lt;ColumnDefinition Width="*"/&gt;
+                    <ColumnDefinition Width="*"/>
 
-                &lt;/Grid.ColumnDefinitions&gt;
+                </Grid.ColumnDefinitions>
 
-                &lt;Slider x:Name="CornerRadiusSlider" Height="Auto" Maximum="100" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" Value="5" HorizontalAlignment="Stretch"/&gt;
+                <Slider x:Name="CornerRadiusSlider" Height="Auto" Maximum="100" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="1" Value="5" HorizontalAlignment="Stretch"/>
 
-                &lt;TextBlock Text="Corner Radius"  Margin="10,0,4,0" FontSize="14" x:Name="CornerRadiusTextBlock" Grid.Row="0" VerticalAlignment="Center" Foreground="Brown"/&gt;
+                <TextBlock Text="Corner Radius"  Margin="10,0,4,0" FontSize="14" x:Name="CornerRadiusTextBlock" Grid.Row="0" VerticalAlignment="Center" Foreground="Brown"/>
 
-&lt;Slider x:Name="ResizeThicknessSlider" Height="Auto" Maximum="100" Grid.Row="1" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="1" Value="2" HorizontalAlignment="Stretch"/&gt;
+<Slider x:Name="ResizeThicknessSlider" Height="Auto" Maximum="100" Grid.Row="1" VerticalAlignment="Center" Grid.Column="1" Grid.ColumnSpan="1" Value="2" HorizontalAlignment="Stretch"/>
 
-&lt;TextBlock Text="Resize Thickness"  HorizontalAlignment="Left" FontSize="14" Margin="10,0,0,0" x:Name="ResizeThicknessTextBlock" Grid.Row="2" VerticalAlignment="Center" Grid.ColumnSpan="2" Foreground="Brown"/&gt;
+<TextBlock Text="Resize Thickness"  HorizontalAlignment="Left" FontSize="14" Margin="10,0,0,0" x:Name="ResizeThicknessTextBlock" Grid.Row="2" VerticalAlignment="Center" Grid.ColumnSpan="2" Foreground="Brown"/>
 
-&lt;TextBlock Text="{Binding Path=Value, ElementName=CornerRadiusSlider, Mode=Default}" TextWrapping="NoWrap" x:Name="CornerRadiusValueTextBlock" HorizontalAlignment="Right" Margin="5,0,5,0" VerticalAlignment="Center" Width="60" Grid.Column="2" Grid.Row="0" FontSize="16" FontWeight="Bold" TextTrimming="CharacterEllipsis" Foreground="Brown"/&gt;
+<TextBlock Text="{Binding Path=Value, ElementName=CornerRadiusSlider, Mode=Default}" TextWrapping="NoWrap" x:Name="CornerRadiusValueTextBlock" HorizontalAlignment="Right" Margin="5,0,5,0" VerticalAlignment="Center" Width="60" Grid.Column="2" Grid.Row="0" FontSize="16" FontWeight="Bold" TextTrimming="CharacterEllipsis" Foreground="Brown"/>
 
-&lt;TextBlock Text="{Binding Path=Value, ElementName=ResizeThicknessSlider, Mode=Default}" TextWrapping="NoWrap" x:Name="ResizeThicknessValueTextBlock" FontSize="16" FontWeight="Bold" HorizontalAlignment="Right" Margin="5,0,5,0" VerticalAlignment="Center" Width="60" Grid.Column="2" Grid.Row="1" TextTrimming="CharacterEllipsis" Foreground="Brown"/&gt;
+<TextBlock Text="{Binding Path=Value, ElementName=ResizeThicknessSlider, Mode=Default}" TextWrapping="NoWrap" x:Name="ResizeThicknessValueTextBlock" FontSize="16" FontWeight="Bold" HorizontalAlignment="Right" Margin="5,0,5,0" VerticalAlignment="Center" Width="60" Grid.Column="2" Grid.Row="1" TextTrimming="CharacterEllipsis" Foreground="Brown"/>
 
-&lt;/Grid&gt;
+</Grid>
 
-        &lt;/Grid&gt;
+        </Grid>
 
-    &lt;/Border&gt;
+    </Border>
 
 
 
-&lt;/shared:ChromelessWindow&gt;
+</shared:ChromelessWindow>
 
 
 
@@ -663,7 +663,7 @@ The following screenshot shows the Custom ChromelessWindow control created using
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
 {:.image }
 
 

@@ -15,47 +15,47 @@ The following code example shows how to handle empty points in a series using sa
 
 [XAML]
 
-     &lt;syncfusion:SfChart&gt;
+     <syncfusion:SfChart>
 
 
 
-            &lt;!-- Assign datacontext object for the Chart--&gt;
+            <!-- Assign datacontext object for the Chart-->
 
-            &lt;syncfusion:SfChart.DataContext&gt;
+            <syncfusion:SfChart.DataContext>
 
-                &lt;local:CategoryDataViewModel/&gt;
+                <local:CategoryDataViewModel/>
 
-            &lt;/syncfusion:SfChart.DataContext&gt;
-
-
-
-            &lt;!-- Add Legend to the Chart--&gt;
-
-            &lt;syncfusion:SfChart.Legend&gt;
-
-                &lt;syncfusion:ChartLegend/&gt;
-
-            &lt;/syncfusion:SfChart.Legend&gt;
+            </syncfusion:SfChart.DataContext>
 
 
 
-            &lt;!-- Add Axes to the Chart--&gt;
+            <!-- Add Legend to the Chart-->
 
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
+            <syncfusion:SfChart.Legend>
 
-                &lt;syncfusion:CategoryAxis/&gt;
+                <syncfusion:ChartLegend/>
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
-
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
-
-                &lt;syncfusion:NumericalAxis/&gt;
-
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+            </syncfusion:SfChart.Legend>
 
 
 
-&lt;!-- Add ColumnSeries to the Chart--&gt;
+            <!-- Add Axes to the Chart-->
+
+            <syncfusion:SfChart.PrimaryAxis>
+
+                <syncfusion:CategoryAxis/>
+
+            </syncfusion:SfChart.PrimaryAxis>
+
+            <syncfusion:SfChart.SecondaryAxis>
+
+                <syncfusion:NumericalAxis/>
+
+            </syncfusion:SfChart.SecondaryAxis>
+
+
+
+<!-- Add ColumnSeries to the Chart-->
 
             <syncfusion:ColumnSeries Label="Sports" ItemsSource="{Binding EmptyPointDatas}"
 
@@ -67,7 +67,7 @@ The following code example shows how to handle empty points in a series using sa
 
                     EmptyPointValue="Average"/>
 
-        &lt;/syncfusion:SfChart&gt;
+        </syncfusion:SfChart>
 
 
 
@@ -241,15 +241,15 @@ public class CategoryDataViewModel
 
 The following is a screenshot of a ColumnSeries with empty points.
 
-{ ![](EmptyPoints_images/EmptyPoints_img1.png) | markdownify }
+{{ '![](EmptyPoints_images/EmptyPoints_img1.png)' | markdownify }}
 {:.image }
 
 
-{ ![](EmptyPoints_images/EmptyPoints_img2.png) | markdownify }
+{{ '![](EmptyPoints_images/EmptyPoints_img2.png)' | markdownify }}
 {:.image }
 
 
-{ ![](EmptyPoints_images/EmptyPoints_img3.png) | markdownify }
+{{ '![](EmptyPoints_images/EmptyPoints_img3.png)' | markdownify }}
 {:.image }
 
 

@@ -51,7 +51,7 @@ xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.Sf
 
 > 
 
-> _Note: Adding the extension Syncfusion.SfChart.WPF, adds all the Syncfusion WPF controls.You can also add the SfChart reference alone from the following location. C:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version&gt;\Assemblies\(3.5/4.0/4.5.1)&lt;Visual Studio Version&gt;_
+> _Note: Adding the extension Syncfusion.SfChart.WPF, adds all the Syncfusion WPF controls.You can also add the SfChart reference alone from the following location. C:\Program Files (x86)\Syncfusion\Essential Studio\<version>\Assemblies\(3.5/4.0/4.5.1)<Visual Studio Version>_
 
 > __
 
@@ -61,27 +61,27 @@ You need to initialize the chart represented by the following class Syncfusion.U
 
 [XAML]
 
-&lt;syncfusion:SfChart&gt;
+<syncfusion:SfChart>
 
 
 
-&lt;/syncfusion:SfChart&gt;
+</syncfusion:SfChart>
 
 Add SfChart from Toolbox
 
 Drag and drop the SfChart control from the Toolbox to the required location, where the chart has to be displayed. You can select Toolbox from the View menu, when the toolbox window is not available in the project. Now the Toolbox window appears at the left end of the screen.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
 The Syncfusion WPF reference is added to the application reference and the xmlns namespace is added to MainPage.xaml.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/rachel/Desktop/sshot-33.png](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/sshot-33.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -183,13 +183,13 @@ Height="300" Width="500">
 
 
 
-        &lt;/syncfusion:SfChart&gt;
+        </syncfusion:SfChart>
 
 
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -199,25 +199,25 @@ The following code example illustrates how to add Primary (horizontal) and Secon
 
 [XAML]
 
-&lt;syncfusion:SfChart.PrimaryAxis&gt;
+<syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:CategoryAxis Header="Demands" FontSize="14"/&gt;
+                <syncfusion:CategoryAxis Header="Demands" FontSize="14"/>
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
-
-
-
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
-
-                &lt;syncfusion:NumericalAxis Header="Values ( In Tonnes)" FontSize="14"/&gt;
-
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
 
 
+            <syncfusion:SfChart.SecondaryAxis>
+
+                <syncfusion:NumericalAxis Header="Values ( In Tonnes)" FontSize="14"/>
+
+            </syncfusion:SfChart.SecondaryAxis>
 
 
-{ ![F:/Snaps/sshot-5.png](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+
+
+
+{{ '![F:/Snaps/sshot-5.png](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -237,7 +237,7 @@ To begin plotting data, choose from a wide variety of graphical representations 
 <syncfusion:ColumnSeries Label="2010"                                 ItemsSource="{Binding Demands}"                                XBindingPath="Demand"                                YBindingPath="Year2010"                                />            <syncfusion:ColumnSeries Label="2011"                                 ItemsSource="{Binding Demands}"                                XBindingPath="Demand"                                YBindingPath="Year2011"/></td></tr>
 <tr>
 <td>
-{{ '_Note: Syncfusion Chart also supports rendering combination of multiple series._' | markdownify }}</td></tr>
+{{{ ''_Note: Syncfusion Chart also supports rendering combination of multiple series._'' | markdownify }}}</td></tr>
 </table>
 After you have added the series, you can add ItemSource, XBindingPath and YBindingPath APIs, to populate your data to the chart. 
 
@@ -255,11 +255,11 @@ Legends act as indicators for the chart. They carry some metadata about plotting
 
 [XAML]
 
-&lt;syncfusion:SfChart.Legend&gt;
+<syncfusion:SfChart.Legend>
 
-                &lt;syncfusion:ChartLegend Visibility="Visible"/&gt;
+                <syncfusion:ChartLegend Visibility="Visible"/>
 
-            &lt;/syncfusion:SfChart.Legend&gt;
+            </syncfusion:SfChart.Legend>
 
 
 
@@ -267,41 +267,41 @@ Now you have created a Chart demonstrating the studies related to Gold demands i
 
 [XAML]
 
-&lt;syncfusion:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" Header="Demand Comparison of Gold" FontSize="16" Height="300" Width="500"&gt;
+<syncfusion:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" Header="Demand Comparison of Gold" FontSize="16" Height="300" Width="500">
 
 
 
-                &lt;!--Initialize the Primary Axis for SfChart--&gt;
+                <!--Initialize the Primary Axis for SfChart-->
 
-                &lt;syncfusion:SfChart.PrimaryAxis&gt;
+                <syncfusion:SfChart.PrimaryAxis>
 
-                    &lt;syncfusion:CategoryAxis Header="Demands" FontSize="14"/&gt;
+                    <syncfusion:CategoryAxis Header="Demands" FontSize="14"/>
 
-                &lt;/syncfusion:SfChart.PrimaryAxis&gt;
-
-
-
-                &lt;!--Initialize the Secondary Axis for SfChart--&gt;
-
-                &lt;syncfusion:SfChart.SecondaryAxis&gt;
-
-                    &lt;syncfusion:NumericalAxis Header="Values( In Tonnes)" FontSize="14"/&gt;
-
-                &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+                </syncfusion:SfChart.PrimaryAxis>
 
 
 
-                &lt;!--Adding Legend to the SfChart--&gt;
+                <!--Initialize the Secondary Axis for SfChart-->
 
-                &lt;syncfusion:SfChart.Legend&gt;
+                <syncfusion:SfChart.SecondaryAxis>
 
-                    &lt;syncfusion:ChartLegend Visibility="Visible"/&gt;
+                    <syncfusion:NumericalAxis Header="Values( In Tonnes)" FontSize="14"/>
 
-                &lt;/syncfusion:SfChart.Legend&gt;
+                </syncfusion:SfChart.SecondaryAxis>
 
 
 
-                &lt;!--Initialize the Chart Series for SfChart--&gt;
+                <!--Adding Legend to the SfChart-->
+
+                <syncfusion:SfChart.Legend>
+
+                    <syncfusion:ChartLegend Visibility="Visible"/>
+
+                </syncfusion:SfChart.Legend>
+
+
+
+                <!--Initialize the Chart Series for SfChart-->
 
                 <syncfusion:ColumnSeries Label="2010" 
 
@@ -325,7 +325,7 @@ Now you have created a Chart demonstrating the studies related to Gold demands i
 
                                 />
 
-            &lt;/syncfusion:SfChart&gt;
+            </syncfusion:SfChart>
 
 Code Behind
 
@@ -422,7 +422,7 @@ Imports Syncfusion.UI.Xaml.Charts
 
 > _Note: Adding the extension Syncfusion.SfChart.WPF, will add all the Syncfusion WPF controls. Also you can add the SfChart reference alone from the below location._ 
 
-_C:\Program Files (x86)\Syncfusion\Essential Studio\&lt;version&gt;\Assemblies\(3.5/4.0/4.5.1)&lt;Visual Studio Version&gt;_
+_C:\Program Files (x86)\Syncfusion\Essential Studio\<version>\Assemblies\(3.5/4.0/4.5.1)<Visual Studio Version>_
 
 The following section demonstrates a simple Chart with the data discussed above, that is SfChart from XAML. A collection property called Demand is created. (For more details). 
 

@@ -19,7 +19,7 @@ Key features
 
 SfBulletGraph Elements
 
-{ ![](Introduction_images/Introduction_img1.png) | markdownify }
+{{ '![](Introduction_images/Introduction_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -23,7 +23,7 @@ Create a new WPF application in the Visual Studio and follow the steps given.
 
 1. Drag and drop the SfMaskedEdit control from the toolbox to the designer. It generates the SfMaskedEdit as shown:
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -31,11 +31,11 @@ The following code example shows how to create the SfMaskedEdit from XAML.
 
 [XAML]
 
-&lt;syncfusion:SfMaskedEdit HorizontalAlignment="Left" Margin="103,143,0,0" TextWrapping="Wrap" Text="SfMaskedEdit" VerticalAlignment="Top" Width="255" Height="46"/&gt;
+<syncfusion:SfMaskedEdit HorizontalAlignment="Left" Margin="103,143,0,0" TextWrapping="Wrap" Text="SfMaskedEdit" VerticalAlignment="Top" Width="255" Height="46"/>
 
 
 
-{ ![C:/Users/arshiazeba/Desktop/1.jpg](Getting-Started_images/Getting-Started_img2.jpeg) | markdownify }
+{{ '![C:/Users/arshiazeba/Desktop/1.jpg](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -49,7 +49,7 @@ To create a MaskedEdit control, use the following code.
 
     this.Content = maskededit;
 
-{ ![C:/Users/arshiazeba/Desktop/1.jpg](Getting-Started_images/Getting-Started_img3.jpeg) | markdownify }
+{{ '![C:/Users/arshiazeba/Desktop/1.jpg](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -64,19 +64,19 @@ The SfMaskedEdit control can also be created and configured by using the Express
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
 3. Now drag and drop the SfMaskedEdit into the designer. It generates the SfMaskedEdit. Then configure the properties of the SfMaskedEdit control by using the properties area.
 
-{ ![C:/Users/arshiazeba/Desktop/1.jpg](Getting-Started_images/Getting-Started_img5.jpeg) | markdownify }
+{{ '![C:/Users/arshiazeba/Desktop/1.jpg](Getting-Started_images/Getting-Started_img5.jpeg)' | markdownify }}
 {:.image }
 
 
 This generates the SfMaskedEdit as follows:
 
-{ ![C:/Users/arshiazeba/Desktop/1.jpg](Getting-Started_images/Getting-Started_img6.jpeg) | markdownify }
+{{ '![C:/Users/arshiazeba/Desktop/1.jpg](Getting-Started_images/Getting-Started_img6.jpeg)' | markdownify }}
 {:.image }
 
 

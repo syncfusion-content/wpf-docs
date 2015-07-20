@@ -237,7 +237,7 @@ Public Function ComputeMymin(ByVal args As String) As String
 
                         s1 = engine.GetValueFromArg(s)
 
-                        If s1 &lt;&gt; "" And Double.TryParse(s1, System.Globalization.NumberStyles.Number, Nothing, d) Then
+                        If s1 <> "" And Double.TryParse(s1, System.Globalization.NumberStyles.Number, Nothing, d) Then
 
                             min = Math.Min(min, d)
 
@@ -257,7 +257,7 @@ Public Function ComputeMymin(ByVal args As String) As String
 
                     s1 = engine.GetValueFromArg(r)
 
-                    If s1 &lt;&gt; "" And Double.TryParse(s1, System.Globalization.NumberStyles.Number, Nothing, d) Then
+                    If s1 <> "" And Double.TryParse(s1, System.Globalization.NumberStyles.Number, Nothing, d) Then
 
                         min = Math.Min(min, d)
 
@@ -273,7 +273,7 @@ Public Function ComputeMymin(ByVal args As String) As String
 
         Next r
 
-        If min &lt;&gt; Double.MaxValue Then
+        If min <> Double.MaxValue Then
 
             Return min.ToString()
 

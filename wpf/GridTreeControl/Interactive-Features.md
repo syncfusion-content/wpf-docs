@@ -180,7 +180,7 @@ The following screenshot shows the GridTree control enabled with multicolumn sor
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img1.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -253,19 +253,19 @@ The following code example illustrates these settings.
 
 
 
-&lt;syncfusion:GridTreeControl Name="gridTreeControl2" Grid.Row="1" RequestTreeItems="gridTreeControl2_RequestTreeItems" PercentSizingBehavior="SizeUntouchedColumns"&gt;
+<syncfusion:GridTreeControl Name="gridTreeControl2" Grid.Row="1" RequestTreeItems="gridTreeControl2_RequestTreeItems" PercentSizingBehavior="SizeUntouchedColumns">
 
-    &lt;syncfusion:GridTreeControl.Columns&gt;
+    <syncfusion:GridTreeControl.Columns>
 
-        &lt;syncfusion:GridTreeColumn MappingName="Title"  Width="180"/&gt;
+        <syncfusion:GridTreeColumn MappingName="Title"  Width="180"/>
 
-        &lt;syncfusion:GridTreeColumn MappingName="FirstName" PercentWidth="1"/&gt;
+        <syncfusion:GridTreeColumn MappingName="FirstName" PercentWidth="1"/>
 
-        &lt;syncfusion:GridTreeColumn MappingName="LastName" PercentWidth="1"/&gt;
+        <syncfusion:GridTreeColumn MappingName="LastName" PercentWidth="1"/>
 
-    &lt;/syncfusion:GridTreeControl.Columns&gt;
+    </syncfusion:GridTreeControl.Columns>
 
-&lt;/syncfusion:GridTreeControl&gt;
+</syncfusion:GridTreeControl>
 
 
 
@@ -398,7 +398,7 @@ The following screen shot shows the back color set on a level-by-level basis, wi
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img2.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -430,7 +430,7 @@ The following screen shot shows the StyleInfo property applied to the “Departm
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img3.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -514,7 +514,7 @@ void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img4.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -672,7 +672,7 @@ args.NodeImage = employees.GetItemBitmap(args.Item as Employee);
 
 Here is a screen shot that shows custom glyphs and node images.
 
-{ ![](Interactive-Features_images/Interactive-Features_img5.jpeg) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -720,7 +720,7 @@ The appearance of the GridTree control can be customized using Microsoft Express
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img6.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -735,7 +735,7 @@ GridTreeStyleManager properties are organized under different groups, each repre
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img7.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -775,7 +775,7 @@ CellMarginsInfo type property describes cell text margins in the cell</td></tr>
 </table>
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img8.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -783,7 +783,7 @@ _Before Cell Appearance Applied_
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img9.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -795,7 +795,7 @@ XAML Code
 
 [XAML]
 
-&lt;sf:GridTreeStyleManager.CellAppearance&gt;
+<sf:GridTreeStyleManager.CellAppearance>
 
    <sf:TreeCellAppearance 
 
@@ -803,59 +803,59 @@ XAML Code
 
          CellForegroundBrush="#FF333333">
 
-        &lt;sf:TreeCellAppearance.CellFont&gt;
+        <sf:TreeCellAppearance.CellFont>
 
-           &lt;sf:GridFontInfo FontFamily="Rockwell" FontSize="10" /&gt;
+           <sf:GridFontInfo FontFamily="Rockwell" FontSize="10" />
 
-        &lt;/sf:TreeCellAppearance.CellFont&gt;
+        </sf:TreeCellAppearance.CellFont>
 
-        &lt;sf:TreeCellAppearance.CellTextMargins&gt;
+        <sf:TreeCellAppearance.CellTextMargins>
 
-           &lt;sf:CellMarginsInfo Bottom="2 Left="2" Right="2" Top="2" /&gt;
+           <sf:CellMarginsInfo Bottom="2 Left="2" Right="2" Top="2" />
 
-         &lt;/sf:TreeCellAppearance.CellTextMargins&gt;
+         </sf:TreeCellAppearance.CellTextMargins>
 
-         &lt;sf:TreeCellAppearance.CellBorders&gt;
+         <sf:TreeCellAppearance.CellBorders>
 
-           &lt;sf:CellBordersInfo&gt;
+           <sf:CellBordersInfo>
 
-              &lt;sf:CellBordersInfo.Top&gt;
+              <sf:CellBordersInfo.Top>
 
-                   &lt;Pen Brush="#FFD6BE92" Thickness="0.25" /&gt;
+                   <Pen Brush="#FFD6BE92" Thickness="0.25" />
 
-              &lt;/sf:CellBordersInfo.Top&gt;
+              </sf:CellBordersInfo.Top>
 
-              &lt;sf:CellBordersInfo.Right&gt;
+              <sf:CellBordersInfo.Right>
 
-                      &lt;Pen Brush="#FFD6BE92" Thickness="0.25" /&gt;
+                      <Pen Brush="#FFD6BE92" Thickness="0.25" />
 
-               &lt;/sf:CellBordersInfo.Right&gt;
+               </sf:CellBordersInfo.Right>
 
-               &lt;sf:CellBordersInfo.Left&gt;
+               <sf:CellBordersInfo.Left>
 
-                     &lt;Pen Brush="#FFD6BE92" Thickness="0.25" /&gt;
+                     <Pen Brush="#FFD6BE92" Thickness="0.25" />
 
-               &lt;/sf:CellBordersInfo.Left&gt;
+               </sf:CellBordersInfo.Left>
 
-               &lt;sf:CellBordersInfo.Bottom&gt;
+               <sf:CellBordersInfo.Bottom>
 
-                     &lt;Pen Brush="#FFD6BE92" Thickness="0.25" /&gt;
+                     <Pen Brush="#FFD6BE92" Thickness="0.25" />
 
-               &lt;/sf:CellBordersInfo.Bottom&gt;
+               </sf:CellBordersInfo.Bottom>
 
-             &lt;/sf:CellBordersInfo&gt;
+             </sf:CellBordersInfo>
 
-          &lt;/sf:TreeCellAppearance.CellBorders&gt;
+          </sf:TreeCellAppearance.CellBorders>
 
-       &lt;/sf:TreeCellAppearance&gt;
+       </sf:TreeCellAppearance>
 
-    &lt;/sf:GridTreeStyleManager.CellAppearance&gt;
-
-
+    </sf:GridTreeStyleManager.CellAppearance>
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img10.png) | markdownify }
+
+
+{{ '![](Interactive-Features_images/Interactive-Features_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -909,7 +909,7 @@ Geometry type used to display different types of plus glyph</td></tr>
 </table>
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img11.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -917,7 +917,7 @@ _Before Expander Appearance Applied_
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img12.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -929,7 +929,7 @@ XAML Code
 
 [XAML]
 
-    &lt;sf:GridTreeStyleManager.ExpanderAppearance&gt;
+    <sf:GridTreeStyleManager.ExpanderAppearance>
 
         <sf:TreeExpanderAppearance ExpanderBorderBrush="Black"
 
@@ -943,41 +943,41 @@ XAML Code
 
                                     ExpanderPlusPath="M1.5,4.4500742C2.3284271,4.4500742 3,5.1216469 3,5.9500742 3,6.7785015 2.3284271,7.4500742 1.5,7.4500742 0.67157292,7.4500742 0,6.7785015 0,5.9500742 0,5.1216469 0.67157292,4.4500742 1.5,4.4500742z M2.8990631,0.00036717192C3.0453069,0.005159697,3.1827641,0.056897067,3.284497,0.15714154L8.5183868,5.3089428C8.6242905,5.4130292,8.6701775,5.5520487,8.6654148,5.6966238L8.6658916,5.6966238C8.6662092,5.7011499 8.6654148,5.7055159 8.6656513,5.710042 8.6654148,5.714488 8.6662092,5.718854 8.6658916,5.7233L8.6654148,5.7233C8.6701775,5.867878,8.6242905,6.0069752,8.5183868,6.1111407L3.284497,11.262862C3.0519648,11.491915 2.6327903,11.467778 2.3486581,11.208635 2.3486581,11.208635 2.2061534,11.101613 1.9369454,10.833023 1.6678151,10.56459 1.7572079,10.396356 1.9367857,10.137055 2.1164434,9.8779926 4.7354136,6.097723 4.7354136,6.097723 4.9301553,5.7890387 4.933569,5.630013 4.7354136,5.3222814 4.7354136,5.3222814 2.1164434,1.5420915 1.9367857,1.2827913 1.7572079,1.0237284 1.6678151,0.85541332 1.9369454,0.58698106 2.2061534,0.31847125 2.3486581,0.21136875 2.3486581,0.21136881 2.5084825,0.065645903 2.711035,-0.0057947943 2.8990631,0.00036717192z">
 
-             &lt;sf:TreeExpanderAppearance.ExpanderBackground&gt;
+             <sf:TreeExpanderAppearance.ExpanderBackground>
 
-                &lt;LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1"&gt;
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
 
-                    &lt;GradientStop Offset="0" Color="#FFF5913F" /&gt;
+                    <GradientStop Offset="0" Color="#FFF5913F" />
 
-                    &lt;GradientStop Offset="1" Color="#FFC14804" /&gt;
+                    <GradientStop Offset="1" Color="#FFC14804" />
 
-                &lt;/LinearGradientBrush&gt;
+                </LinearGradientBrush>
 
-             &lt;/sf:TreeExpanderAppearance.ExpanderBackground&gt;
+             </sf:TreeExpanderAppearance.ExpanderBackground>
 
-             &lt;sf:TreeExpanderAppearance.ExpanderExpandedBackground&gt;
+             <sf:TreeExpanderAppearance.ExpanderExpandedBackground>
 
-                &lt;LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1"&gt;
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
 
-                    &lt;GradientStop Color="#FFF5913F" /&gt;
+                    <GradientStop Color="#FFF5913F" />
 
-                    &lt;GradientStop Offset="1" Color="#FFC14804" /&gt;
+                    <GradientStop Offset="1" Color="#FFC14804" />
 
-                &lt;/LinearGradientBrush&gt;
+                </LinearGradientBrush>
 
-              &lt;/sf:TreeExpanderAppearance.ExpanderExpandedBackground&gt;
+              </sf:TreeExpanderAppearance.ExpanderExpandedBackground>
 
-           &lt;/sf:TreeExpanderAppearance&gt;
+           </sf:TreeExpanderAppearance>
 
-       &lt;/sf:GridTreeStyleManager.ExpanderAppearance&gt;
-
-
+       </sf:GridTreeStyleManager.ExpanderAppearance>
 
 
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img13.png) | markdownify }
+
+
+{{ '![](Interactive-Features_images/Interactive-Features_img13.png)' | markdownify }}
 {:.image }
 
 
@@ -1035,7 +1035,7 @@ Used to change the sort icon background color</td></tr>
 </table>
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img14.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img14.png)' | markdownify }}
 {:.image }
 
 
@@ -1043,7 +1043,7 @@ _Before Header Appearance Applied_
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img15.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -1055,7 +1055,7 @@ XAML Code
 
 [XAML]
 
-    &lt;sf:GridTreeStyleManager.HeaderAppearance&gt;
+    <sf:GridTreeStyleManager.HeaderAppearance>
 
        <sf:TreeHeaderAppearance 
 
@@ -1063,7 +1063,7 @@ XAML Code
 
            HeaderHoverForegroundBrush="White">
 
-          &lt;sf:TreeHeaderAppearance.HeaderFont&gt;
+          <sf:TreeHeaderAppearance.HeaderFont>
 
              <sf:GridFontInfo FontFamily="Rockwell"
 
@@ -1071,45 +1071,45 @@ XAML Code
 
                               FontWeight="Bold" />
 
-             &lt;/sf:TreeHeaderAppearance.HeaderFont&gt;
+             </sf:TreeHeaderAppearance.HeaderFont>
 
-           &lt;sf:TreeHeaderAppearance.HeaderHoverBackgroundBrush&gt;
+           <sf:TreeHeaderAppearance.HeaderHoverBackgroundBrush>
 
-             &lt;LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1"&gt;
+             <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
 
-                 &lt;GradientStop Offset="0" Color="#FFF33A42" /&gt;
+                 <GradientStop Offset="0" Color="#FFF33A42" />
 
-                 &lt;GradientStop Offset="1" Color="#FF8E191C" /&gt;
+                 <GradientStop Offset="1" Color="#FF8E191C" />
 
-             &lt;/LinearGradientBrush&gt;
+             </LinearGradientBrush>
 
-            &lt;/sf:TreeHeaderAppearance.HeaderHoverBackgroundBrush&gt;
+            </sf:TreeHeaderAppearance.HeaderHoverBackgroundBrush>
 
-           &lt;sf:TreeHeaderAppearance.HeaderBackgroundBrush&gt;
+           <sf:TreeHeaderAppearance.HeaderBackgroundBrush>
 
-             &lt;LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1"&gt;
+             <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
 
-                 &lt;GradientStop Offset="0" Color="#FFCB1C23" /&gt;
+                 <GradientStop Offset="0" Color="#FFCB1C23" />
 
-                 &lt;GradientStop Offset="1" Color="#FF8E191C" /&gt;
+                 <GradientStop Offset="1" Color="#FF8E191C" />
 
-             &lt;/LinearGradientBrush&gt;
+             </LinearGradientBrush>
 
-            &lt;/sf:TreeHeaderAppearance.HeaderBackgroundBrush&gt;
+            </sf:TreeHeaderAppearance.HeaderBackgroundBrush>
 
-            &lt;sf:TreeHeaderAppearance.SortWidgetBrush&gt;
+            <sf:TreeHeaderAppearance.SortWidgetBrush>
 
-             &lt;LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1"&gt;
+             <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
 
-                  &lt;GradientStop Offset="0" Color="#FFF5913F" /&gt;
+                  <GradientStop Offset="0" Color="#FFF5913F" />
 
-                  &lt;GradientStop Offset="1" Color="#FFC14804" /&gt;
+                  <GradientStop Offset="1" Color="#FFC14804" />
 
-             &lt;/LinearGradientBrush&gt;
+             </LinearGradientBrush>
 
-          &lt;/sf:TreeHeaderAppearance.SortWidgetBrush&gt;
+          </sf:TreeHeaderAppearance.SortWidgetBrush>
 
-          &lt;sf:TreeHeaderAppearance.HeaderTextMargins&gt;
+          <sf:TreeHeaderAppearance.HeaderTextMargins>
 
             <sf:CellMarginsInfo Bottom="1"
 
@@ -1119,17 +1119,17 @@ XAML Code
 
                                 Top="1" />
 
-        &lt;/sf:TreeHeaderAppearance.HeaderTextMargins&gt;
+        </sf:TreeHeaderAppearance.HeaderTextMargins>
 
-    &lt;/sf:TreeHeaderAppearance&gt;
+    </sf:TreeHeaderAppearance>
 
-  &lt;/sf:GridTreeStyleManager.HeaderAppearance&gt;
-
-
+  </sf:GridTreeStyleManager.HeaderAppearance>
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img16.png) | markdownify }
+
+
+{{ '![](Interactive-Features_images/Interactive-Features_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -1195,7 +1195,7 @@ Used to change the hover foregrond color of the GridTree control</td></tr>
 </table>
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img17.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -1203,7 +1203,7 @@ _Before Row Appearance Applied_
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img18.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -1215,7 +1215,7 @@ XAML Code
 
 [XAML]
 
-   &lt;sf:GridTreeStyleManager.RowAppearance&gt;
+   <sf:GridTreeStyleManager.RowAppearance>
 
       <sf:TreeRowAppearance CurrentCellSelectionBackground="#FFB31B20"
 
@@ -1231,27 +1231,27 @@ XAML Code
 
                             RowHoverForegroundBrush="Black">
 
-              &lt;sf:TreeRowAppearance.RowHeaderBackgroundBrush&gt;
+              <sf:TreeRowAppearance.RowHeaderBackgroundBrush>
 
-                   &lt;LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1"&gt;
+                   <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
 
-                      &lt;GradientStop Offset="0" Color="#FFCB1C23" /&gt;
+                      <GradientStop Offset="0" Color="#FFCB1C23" />
 
-                      &lt;GradientStop Offset="1" Color="#FF8E191C" /&gt;
+                      <GradientStop Offset="1" Color="#FF8E191C" />
 
-                   &lt;/LinearGradientBrush&gt;
+                   </LinearGradientBrush>
 
-               &lt;/sf:TreeRowAppearance.RowHeaderBackgroundBrush&gt;
+               </sf:TreeRowAppearance.RowHeaderBackgroundBrush>
 
-      &lt;/sf:TreeRowAppearance&gt;
+      </sf:TreeRowAppearance>
 
- &lt;/sf:GridTreeStyleManager.RowAppearance&gt;
-
-
+ </sf:GridTreeStyleManager.RowAppearance>
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img19.png) | markdownify }
+
+
+{{ '![](Interactive-Features_images/Interactive-Features_img19.png)' | markdownify }}
 {:.image }
 
 

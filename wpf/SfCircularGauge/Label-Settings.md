@@ -19,17 +19,17 @@ Code Example:
 
 
 
-             &lt;syncfusion:SfCircularGauge x:Name="gauge"&gt;
+             <syncfusion:SfCircularGauge x:Name="gauge">
 
-                &lt;syncfusion:SfCircularGauge.MainScale&gt;
+                <syncfusion:SfCircularGauge.MainScale>
 
-                    &lt;syncfusion:CircularScale LabelStroke="Red"  LabelAutoSizeChange="True" &gt;                              
+                    <syncfusion:CircularScale LabelStroke="Red"  LabelAutoSizeChange="True" >                              
 
-                    &lt;/syncfusion:CircularScale&gt;
+                    </syncfusion:CircularScale>
 
-                &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+                </syncfusion:SfCircularGauge.MainScale>
 
-      &lt;/syncfusion:SfCircularGauge&gt;
+      </syncfusion:SfCircularGauge>
 
 
 
@@ -49,7 +49,7 @@ Code Example:
 
 
 
-{ ![](Label-Settings_images/Label-Settings_img1.png) | markdownify }
+{{ '![](Label-Settings_images/Label-Settings_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -85,9 +85,9 @@ The NumericScaleType property allows you to set the type of label. The following
 
 
 
- &lt;syncfusion:SfCircularGauge &gt;
+ <syncfusion:SfCircularGauge >
 
-    &lt;syncfusion:SfCircularGauge.MainScale&gt;
+    <syncfusion:SfCircularGauge.MainScale>
 
         <syncfusion:CircularScale EnableSmartLabels="False"  NumericScaleType="Thousands" Interval="20" 
 
@@ -97,9 +97,9 @@ The NumericScaleType property allows you to set the type of label. The following
 
                                    EndValue="100"/>
 
-    &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+    </syncfusion:SfCircularGauge.MainScale>
 
- &lt;/syncfusion:SfCircularGauge&gt;
+ </syncfusion:SfCircularGauge>
 
 
 
@@ -135,7 +135,7 @@ The NumericScaleType property allows you to set the type of label. The following
 
 Screenshot:
 
-{ ![](Label-Settings_images/Label-Settings_img2.png) | markdownify }
+{{ '![](Label-Settings_images/Label-Settings_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -151,9 +151,9 @@ The NoOfFractionalDigits property is used to set the number of fractional digits
 
 
 
- &lt;syncfusion:SfCircularGauge &gt;
+ <syncfusion:SfCircularGauge >
 
-    &lt;syncfusion:SfCircularGauge.MainScale&gt;
+    <syncfusion:SfCircularGauge.MainScale>
 
         <syncfusion:CircularScale EnableSmartLabels="True" 
 
@@ -165,9 +165,9 @@ The NoOfFractionalDigits property is used to set the number of fractional digits
 
                                   EndValue="200"/>
 
-    &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+    </syncfusion:SfCircularGauge.MainScale>
 
- &lt;/syncfusion:SfCircularGauge&gt;
+ </syncfusion:SfCircularGauge>
 
 
 
@@ -205,7 +205,7 @@ The NoOfFractionalDigits property is used to set the number of fractional digits
 
 Screenshot:
 
-{ ![](Label-Settings_images/Label-Settings_img3.png) | markdownify }
+{{ '![](Label-Settings_images/Label-Settings_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -217,9 +217,9 @@ This property allows you to set the postfix values to the scale labels. The labe
 
 
 
- &lt;syncfusion:SfCircularGauge &gt;
+ <syncfusion:SfCircularGauge >
 
-    &lt;syncfusion:SfCircularGauge.MainScale&gt;
+    <syncfusion:SfCircularGauge.MainScale>
 
         <syncfusion:CircularScale LabelPostfix="%"
 
@@ -231,9 +231,9 @@ This property allows you to set the postfix values to the scale labels. The labe
 
                                   StartValue="0" EndValue="100"/>
 
-    &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+    </syncfusion:SfCircularGauge.MainScale>
 
- &lt;/syncfusion:SfCircularGauge&gt;
+ </syncfusion:SfCircularGauge>
 
 
 
@@ -269,7 +269,7 @@ This property allows you to set the postfix values to the scale labels. The labe
 
 Screenshot:
 
-{ ![](Label-Settings_images/Label-Settings_img4.png) | markdownify }
+{{ '![](Label-Settings_images/Label-Settings_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -285,9 +285,9 @@ This property allows you to set the prefix values for the scale labels. The labe
 
 
 
- &lt;syncfusion:SfCircularGauge &gt;
+ <syncfusion:SfCircularGauge >
 
-    &lt;syncfusion:SfCircularGauge.MainScale&gt;
+    <syncfusion:SfCircularGauge.MainScale>
 
         <syncfusion:CircularScale LabelPrefix="$"
 
@@ -299,9 +299,9 @@ This property allows you to set the prefix values for the scale labels. The labe
 
                                   StartValue="0" EndValue="100"/>
 
-    &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+    </syncfusion:SfCircularGauge.MainScale>
 
- &lt;/syncfusion:SfCircularGauge&gt;
+ </syncfusion:SfCircularGauge>
 
 
 
@@ -337,7 +337,7 @@ This property allows you to set the prefix values for the scale labels. The labe
 
 Screenshot:
 
-{ ![](Label-Settings_images/Label-Settings_img5.png) | markdownify }
+{{ '![](Label-Settings_images/Label-Settings_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -354,17 +354,17 @@ Code Example
 
 [XAML]
 
-            &lt;syncfusion:SfCircularGauge x:Name="gauge"&gt;
+            <syncfusion:SfCircularGauge x:Name="gauge">
 
-                &lt;syncfusion:SfCircularGauge.MainScale&gt;
+                <syncfusion:SfCircularGauge.MainScale>
 
-                    &lt;syncfusion:CircularScale LabelPosition="Outside"&gt;
+                    <syncfusion:CircularScale LabelPosition="Outside">
 
-                    &lt;/syncfusion:CircularScale&gt;
+                    </syncfusion:CircularScale>
 
-                &lt;/syncfusion:SfCircularGauge.MainScale&gt;
+                </syncfusion:SfCircularGauge.MainScale>
 
-            &lt;/syncfusion:SfCircularGauge&gt;
+            </syncfusion:SfCircularGauge>
 
 
 
@@ -390,7 +390,7 @@ Code Example
 
 Screenshot:
 
-{ ![](Label-Settings_images/Label-Settings_img6.png) | markdownify }
+{{ '![](Label-Settings_images/Label-Settings_img6.png)' | markdownify }}
 {:.image }
 
 

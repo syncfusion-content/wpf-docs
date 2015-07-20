@@ -11,7 +11,7 @@ documentation: ug
 
 Color Picker now comes with Gradient tool which returns a brush of type Solid, Linear or Radial. The offsets can be added or dropped dynamically and its position can be changed to produce different color combinations.
 
-{ ![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img1.jpeg) | markdownify }
+{{ '![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -26,7 +26,7 @@ This property specifies whether Brush is of type Solid or Gradient. The followin
 <table>
 <tr>
 <td>
-[XAML]&lt;Syncfusion:ColorPicker x:Name="colorPicker"  BrushMode="Solid"   &gt;</  Syncfusion: ColorPicker >&lt;Syncfusion: ColorPicker x:Name="colorPicker"  BrushMode="Gradient"   &gt;</  Syncfusion: ColorPicker ></td></tr>
+[XAML]<Syncfusion:ColorPicker x:Name="colorPicker"  BrushMode="Solid"   ></  Syncfusion: ColorPicker ><Syncfusion: ColorPicker x:Name="colorPicker"  BrushMode="Gradient"   ></  Syncfusion: ColorPicker ></td></tr>
 <tr>
 <td>
 [C#]ColorPicker colorPicker = new ColorPicker ();colorPicker.BrushMode =  BrushModes.Solid;colorPicker.BrushMode =  BrushModes.Gradient;</td></tr>
@@ -35,13 +35,13 @@ This property specifies whether Brush is of type Solid or Gradient. The followin
 
 
 
-{ ![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img2.jpeg) | markdownify }
+{{ '![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img2.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img3.jpeg) | markdownify }
+{{ '![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -56,7 +56,7 @@ The following code examples illustrate this:
 <table>
 <tr>
 <td>
-[XAML]&lt;Syncfusion: ColorPicker x:Name="colorPicker"  EnableSolidToGradientSwitch="true"   &gt;</  Syncfusion: ColorPicker >&lt;Syncfusion:ColorEdit x:Name="colorPicker"  EnableSolidToGradientSwitch="false"   &gt;</  Syncfusion: ColorEdit ></td></tr>
+[XAML]<Syncfusion: ColorPicker x:Name="colorPicker"  EnableSolidToGradientSwitch="true"   ></  Syncfusion: ColorPicker ><Syncfusion:ColorEdit x:Name="colorPicker"  EnableSolidToGradientSwitch="false"   ></  Syncfusion: ColorEdit ></td></tr>
 <tr>
 <td>
 [C#]ColorPicker colorPicker = new ColorPicker ();colorPicker.EnableSolidToGradientSwitch =  true;colorPicker.EnableSolidToGradientSwitch =  false;</td></tr>
@@ -65,13 +65,13 @@ The following code examples illustrate this:
 
 
 
-{ ![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img4.jpeg) | markdownify }
+{{ '![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img4.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img5.jpeg) | markdownify }
+{{ '![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -86,7 +86,7 @@ The following code example illustrate this:
 <table>
 <tr>
 <td>
-[XAML]&lt;Syncfusion:ColorPicker x:Name="colorPicker"  IsGradientEditorEnabled="true"   &gt;</  Syncfusion: ColorPicker >&lt;Syncfusion: ColorPicker x:Name="colorPicker"  IsGradientEditorEnabled="false"   &gt;</  Syncfusion: ColorPicker ></td></tr>
+[XAML]<Syncfusion:ColorPicker x:Name="colorPicker"  IsGradientEditorEnabled="true"   ></  Syncfusion: ColorPicker ><Syncfusion: ColorPicker x:Name="colorPicker"  IsGradientEditorEnabled="false"   ></  Syncfusion: ColorPicker ></td></tr>
 <tr>
 <td>
 [C#]ColorPicker colorPicker = new ColorPicker ();colorPicker.IsGradientEditorEnabled =  true;colorPicker. IsGradientEditorEnabled =  false;</td></tr>
@@ -95,13 +95,13 @@ The following code example illustrate this:
 
 
 
-{ ![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img6.jpeg) | markdownify }
+{{ '![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img6.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img7.jpeg) | markdownify }
+{{ '![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -112,7 +112,7 @@ The property specifies whether GradientEditor should be displayed as a Popup or 
 <table>
 <tr>
 <td>
-[XAML]&lt;Syncfusion:ColorPicker x:Name="colorPicker"    GradientPropertyEditorMode="Popup" &gt;&lt;/ Syncfusion: ColorPicker &gt;&lt;Syncfusion: ColorPicker x:Name="colorPicker"  GradientPropertyEditorMode="Extended"  &gt;&lt;/Syncfusion: ColorPicker &gt;</td></tr>
+[XAML]<Syncfusion:ColorPicker x:Name="colorPicker"    GradientPropertyEditorMode="Popup" ></ Syncfusion: ColorPicker ><Syncfusion: ColorPicker x:Name="colorPicker"  GradientPropertyEditorMode="Extended"  ></Syncfusion: ColorPicker ></td></tr>
 <tr>
 <td>
 [C#]ColorPicker colorPicker = new ColorPicker ();colorPicker.GradientPropertyEditorMode =  GradientPropertyEditorMode.Popup;colorPicker. GradientPropertyEditorMode =  GradientPropertyEditorMode.Extended;</td></tr>
@@ -130,32 +130,32 @@ The following code example illustrate this:
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:ColorPicker IsAlphaVisible="True"&gt;&lt;/syncfusion:ColorPicker&gt;  &lt;syncfusion:ColorPicker IsAlphaVisible="false"&gt;&lt;/syncfusion:ColorPicker&gt;</td></tr>
+[XAML]<syncfusion:ColorPicker IsAlphaVisible="True"></syncfusion:ColorPicker>  <syncfusion:ColorPicker IsAlphaVisible="false"></syncfusion:ColorPicker></td></tr>
 <tr>
 <td>
 [C#]ColorPicker colorPicker = new ColorPicker();colorPicker.IsAlphaVisible = true;colorPicker.IsAlphaVisible = false;</td></tr>
 </table>
 
 
-{ ![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img8.jpeg) | markdownify }
+{{ '![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img8.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img9.jpeg) | markdownify }
+{{ '![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img9.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img10.jpeg) | markdownify }
+{{ '![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img10.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img11.jpeg) | markdownify }
+{{ '![](ColorPicker-with-Gradient-Support_images/ColorPicker-with-Gradient-Support_img11.jpeg)' | markdownify }}
 {:.image }
 
 

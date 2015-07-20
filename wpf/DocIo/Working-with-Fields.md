@@ -13,7 +13,7 @@ Fields are special elements of a Word document. To insert a field, click Insert 
 
 
 
-{ ![](Working-with-Fields_images/Working-with-Fields_img1.png) | markdownify }
+{{ '![](Working-with-Fields_images/Working-with-Fields_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -23,7 +23,7 @@ WField class represents a field in a Word document. There are many types of fiel
 
 
 
-{ ![](Working-with-Fields_images/Working-with-Fields_img2.png) | markdownify }
+{{ '![](Working-with-Fields_images/Working-with-Fields_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -294,7 +294,7 @@ You can refer these fields in other parts of the document easily. For example, y
 
 
 
-{ ![](Working-with-Fields_images/Working-with-Fields_img3.png) | markdownify }
+{{ '![](Working-with-Fields_images/Working-with-Fields_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -471,7 +471,7 @@ To add a Cross-Reference field in Microsoft Word, click the Insert menu and then
 
 
 
-{ ![](Working-with-Fields_images/Working-with-Fields_img4.png) | markdownify }
+{{ '![](Working-with-Fields_images/Working-with-Fields_img4.png)' | markdownify }}
 {:.image }
 
 

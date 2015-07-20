@@ -125,37 +125,37 @@ The following code illustrates these settings.
 
 
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        &lt;!-- Model to add nodes and connections--&gt;
+        <!-- Model to add nodes and connections-->
 
-&lt;syncfusion:DiagramControl.Model&gt;
+<syncfusion:DiagramControl.Model>
 
     <syncfusion:DiagramModel LayoutType="DirectedTreeLayout" HorizontalSpacing="50" VerticalSpacing="50" SpaceBetweenSubTrees="100"
 
     x:Name="diagramModel">
 
-    &lt;/syncfusion:DiagramModel&gt;
+    </syncfusion:DiagramModel>
 
-&lt;/syncfusion:DiagramControl.Model&gt;
+</syncfusion:DiagramControl.Model>
 
 
 
-        &lt;!--View to display nodes and connections added through model.--&gt;
+        <!--View to display nodes and connections added through model.-->
 
-        &lt;syncfusion:DiagramControl.View&gt;
+        <syncfusion:DiagramControl.View>
 
-            &lt;syncfusion:DiagramView Name="diagramView"&gt;
+            <syncfusion:DiagramView Name="diagramView">
 
-            &lt;/syncfusion:DiagramView&gt;
+            </syncfusion:DiagramView>
 
-        &lt;/syncfusion:DiagramControl.View&gt;
+        </syncfusion:DiagramControl.View>
 
-    &lt;/syncfusion:DiagramControl&gt;
+    </syncfusion:DiagramControl>
 
 
 
@@ -185,7 +185,7 @@ Horizontal Spacing refers to the spaces between the edges of the adjacent nodes 
 
 
 
-{ ![C:/Users/jeganr/AppData/Local/Temp/Rar$DI01.402/HR&vr.png](Diagram-Model_images/Diagram-Model_img1.png) | markdownify }
+{{ '![C:/Users/jeganr/AppData/Local/Temp/Rar$DI01.402/HR&vr.png](Diagram-Model_images/Diagram-Model_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -197,7 +197,7 @@ SpaceBetweenSubTrees refers to the spaces between adjacent Subtrees.
 
 
 
-{ ![](Diagram-Model_images/Diagram-Model_img2.png) | markdownify }
+{{ '![](Diagram-Model_images/Diagram-Model_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -242,33 +242,33 @@ The tree orientation can be set using the following code.
 
 [XAML]
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        &lt;!-- Model to add nodes and connections--&gt;
+        <!-- Model to add nodes and connections-->
 
-&lt;syncfusion:DiagramControl.Model&gt;
+<syncfusion:DiagramControl.Model>
 
-    &lt;syncfusion:DiagramModel LayoutType="DirectedTreeLayout" Orientation="BottomTop" x:Name="diagramModel"&gt;
+    <syncfusion:DiagramModel LayoutType="DirectedTreeLayout" Orientation="BottomTop" x:Name="diagramModel">
 
-    &lt;/syncfusion:DiagramModel&gt;
+    </syncfusion:DiagramModel>
 
-&lt;/syncfusion:DiagramControl.Model&gt;
+</syncfusion:DiagramControl.Model>
 
-        &lt;!--View to display nodes and connections added through model.--&gt;
+        <!--View to display nodes and connections added through model.-->
 
-        &lt;syncfusion:DiagramControl.View&gt;
+        <syncfusion:DiagramControl.View>
 
-            &lt;syncfusion:DiagramView Name="diagramView"&gt;
+            <syncfusion:DiagramView Name="diagramView">
 
-            &lt;/syncfusion:DiagramView&gt;
+            </syncfusion:DiagramView>
 
-        &lt;/syncfusion:DiagramControl.View&gt;
+        </syncfusion:DiagramControl.View>
 
-    &lt;/syncfusion:DiagramControl&gt;
+    </syncfusion:DiagramControl>
 
 
 
@@ -338,7 +338,7 @@ TryCast(diagramView.Page, DiagramPage).InvalidateArrange()
 
 The orientations are illustrated below.
 
-{ ![](Diagram-Model_images/Diagram-Model_img3.jpeg) | markdownify }
+{{ '![](Diagram-Model_images/Diagram-Model_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -346,7 +346,7 @@ _BottomTop Orientation_
 
 
 
-{ ![](Diagram-Model_images/Diagram-Model_img4.jpeg) | markdownify }
+{{ '![](Diagram-Model_images/Diagram-Model_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -354,7 +354,7 @@ _TopBottom Orientation_
 
 
 
-{ ![](Diagram-Model_images/Diagram-Model_img5.jpeg) | markdownify }
+{{ '![](Diagram-Model_images/Diagram-Model_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -362,7 +362,7 @@ _LeftRight Orientation_
 
 
 
-{ ![](Diagram-Model_images/Diagram-Model_img6.jpeg) | markdownify }
+{{ '![](Diagram-Model_images/Diagram-Model_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -483,43 +483,43 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWP
 
 xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
 
-    &lt;Window.Resources&gt;
+    <Window.Resources>
 
-        &lt;ResourceDictionary&gt;
+        <ResourceDictionary>
 
-            &lt;local:CountrySalesList x:Key="myList"/&gt;
+            <local:CountrySalesList x:Key="myList"/>
 
                 <HierarchicalDataTemplate x:Key="myHierTemp" ItemsSource="{Binding Path=RegionalSales}"
 
                 DataType="{x:Type local:CountrySale}">
 
-                &lt;/HierarchicalDataTemplate&gt;
+                </HierarchicalDataTemplate>
 
-        &lt;/ResourceDictionary&gt;
+        </ResourceDictionary>
 
-&lt;/Window.Resources&gt;
+</Window.Resources>
 
-    &lt;Grid Name="diagramgrid"&gt;
+    <Grid Name="diagramgrid">
 
-        &lt;sfdiagram:DiagramControl IsSymbolPaletteEnabled="True"&gt;
+        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True">
 
             <sfdiagram:DiagramModel x:Name="diagramModel" LayoutType="DirectedTreeLayout"
 
-            HierarchicalDataTemplate="{StaticResource myHierTemp}">&lt;/sfdiagram:DiagramModel&gt;
+            HierarchicalDataTemplate="{StaticResource myHierTemp}"></sfdiagram:DiagramModel>
 
-        &lt;/sfdiagram:DiagramControl.Model&gt;
+        </sfdiagram:DiagramControl.Model>
 
-        &lt;sfdiagram:DiagramControl.View &gt;
+        <sfdiagram:DiagramControl.View >
 
-            &lt;sfdiagram:DiagramView Bounds="0,0,500,500"&gt;&lt;/sfdiagram:DiagramView&gt;
+            <sfdiagram:DiagramView Bounds="0,0,500,500"></sfdiagram:DiagramView>
 
-        &lt;/sfdiagram:DiagramControl.View&gt;
+        </sfdiagram:DiagramControl.View>
 
-        &lt;/sfdiagram:DiagramControl&gt;
+        </sfdiagram:DiagramControl>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -555,7 +555,7 @@ Me(0).RegionalSales.Add(New RegionSale() With {.Name = "San Fransico", .Revenue 
 
 
 
-{ ![](Diagram-Model_images/Diagram-Model_img7.jpeg) | markdownify }
+{{ '![](Diagram-Model_images/Diagram-Model_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -597,35 +597,35 @@ The following code example illustrates how to set the EnableCycleDetection prope
 
 
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        &lt;!-- Model to add nodes and connections--&gt;
+        <!-- Model to add nodes and connections-->
 
- &lt;syncfusion:DiagramControl.Model&gt;
+ <syncfusion:DiagramControl.Model>
 
 <syncfusion:DiagramModel x:Name="diagramModel" LayoutType="HierarchicalTreeLayout" EnableCycleDetection="True"
 
 Orientation="TopBottom" >
 
-&lt;/syncfusion:DiagramModel&gt;
+</syncfusion:DiagramModel>
 
- &lt;/syncfusion:DiagramControl.Model&gt;
+ </syncfusion:DiagramControl.Model>
 
-        &lt;!--View to display nodes and connections added through model.--&gt;
+        <!--View to display nodes and connections added through model.-->
 
-        &lt;syncfusion:DiagramControl.View&gt;
+        <syncfusion:DiagramControl.View>
 
-            &lt;syncfusion:DiagramView Name="diagramView"&gt;
+            <syncfusion:DiagramView Name="diagramView">
 
-            &lt;/syncfusion:DiagramView&gt;
+            </syncfusion:DiagramView>
 
-        &lt;/syncfusion:DiagramControl.View&gt;
+        </syncfusion:DiagramControl.View>
 
-    &lt;/syncfusion:DiagramControl&gt;
+    </syncfusion:DiagramControl>
 
 
 
@@ -669,7 +669,7 @@ The following screenshot illustrates Cyclic Paths in the Hierarchical-Tree layou
 
 
 
-{ ![](Diagram-Model_images/Diagram-Model_img8.jpeg) | markdownify }
+{{ '![](Diagram-Model_images/Diagram-Model_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -749,11 +749,11 @@ diagramModel.TableExpandMode=TableExpandMode.Horizontal
 
 
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
-        &lt;!-- Model to add nodes and connections--&gt;
+        <!-- Model to add nodes and connections-->
 
 <syncfusion:DiagramModel
 
@@ -771,25 +771,25 @@ diagramModel.TableExpandMode=TableExpandMode.Horizontal
 
     x:Name="diagramModel">
 
-&lt;/syncfusion:DiagramModel&gt;
+</syncfusion:DiagramModel>
 
-        &lt;!--View to display nodes and connections added through model.--&gt;
+        <!--View to display nodes and connections added through model.-->
 
-        &lt;syncfusion:DiagramControl.View&gt;
+        <syncfusion:DiagramControl.View>
 
-            &lt;syncfusion:DiagramView Name="diagramView"&gt;
+            <syncfusion:DiagramView Name="diagramView">
 
-            &lt;/syncfusion:DiagramView&gt;
+            </syncfusion:DiagramView>
 
-        &lt;/syncfusion:DiagramControl.View&gt;
+        </syncfusion:DiagramControl.View>
 
-    &lt;/syncfusion:DiagramControl&gt;
-
-
+    </syncfusion:DiagramControl>
 
 
 
-{ ![](Diagram-Model_images/Diagram-Model_img9.jpeg) | markdownify }
+
+
+{{ '![](Diagram-Model_images/Diagram-Model_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -797,7 +797,7 @@ _Table layout with TableExpandMode as Horizontal and ColumnCount as 4_
 
 
 
-{ ![](Diagram-Model_images/Diagram-Model_img10.jpeg) | markdownify }
+{{ '![](Diagram-Model_images/Diagram-Model_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -874,13 +874,13 @@ diagramModel.ColumnCount=5
 
 
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        &lt;!-- Model to add nodes and connections--&gt;        
+        <!-- Model to add nodes and connections-->        
 
 <syncfusion:DiagramModel
 
@@ -898,21 +898,19 @@ diagramModel.ColumnCount=5
 
     x:Name="diagramModel">
 
-&lt;/syncfusion:DiagramModel&gt;
+</syncfusion:DiagramModel>
 
-        &lt;!--View to display nodes and connections added through model.--&gt;
+        <!--View to display nodes and connections added through model.-->
 
-        &lt;syncfusion:DiagramControl.View&gt;
+        <syncfusion:DiagramControl.View>
 
-            &lt;syncfusion:DiagramView Name="diagramView"&gt;
+            <syncfusion:DiagramView Name="diagramView">
 
-            &lt;/syncfusion:DiagramView&gt;
+            </syncfusion:DiagramView>
 
-        &lt;/syncfusion:DiagramControl.View&gt;
+        </syncfusion:DiagramControl.View>
 
-    &lt;/syncfusion:DiagramControl&gt;
-
-
+    </syncfusion:DiagramControl>
 
 
 
@@ -920,7 +918,9 @@ diagramModel.ColumnCount=5
 
 
 
-{ ![](Diagram-Model_images/Diagram-Model_img11.jpeg) | markdownify }
+
+
+{{ '![](Diagram-Model_images/Diagram-Model_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -928,7 +928,7 @@ _RowCount specified as 3_
 
 
 
-{ ![](Diagram-Model_images/Diagram-Model_img12.jpeg) | markdownify }
+{{ '![](Diagram-Model_images/Diagram-Model_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -994,13 +994,13 @@ diagramModel.EnableLayoutWithVariedSizes = True
 
 
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        &lt;!-- Model to add nodes and connections--&gt;
+        <!-- Model to add nodes and connections-->
 
 <syncfusion:DiagramModel
 
@@ -1020,23 +1020,23 @@ diagramModel.EnableLayoutWithVariedSizes = True
 
     x:Name="diagramModel">
 
-&lt;/syncfusion:DiagramModel&gt;
+</syncfusion:DiagramModel>
 
-        &lt;!--View to display nodes and connections added through model.--&gt;
+        <!--View to display nodes and connections added through model.-->
 
-        &lt;syncfusion:DiagramControl.View&gt;
+        <syncfusion:DiagramControl.View>
 
-            &lt;syncfusion:DiagramView Name="diagramView"&gt;
+            <syncfusion:DiagramView Name="diagramView">
 
-            &lt;/syncfusion:DiagramView&gt;
+            </syncfusion:DiagramView>
 
-        &lt;/syncfusion:DiagramControl.View&gt;
+        </syncfusion:DiagramControl.View>
 
-    &lt;/syncfusion:DiagramControl&gt;
+    </syncfusion:DiagramControl>
 
 
 
-{ ![](Diagram-Model_images/Diagram-Model_img13.jpeg) | markdownify }
+{{ '![](Diagram-Model_images/Diagram-Model_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1044,7 +1044,7 @@ _EnableLayoutWithVariedSize set to false_
 
 
 
-{ ![](Diagram-Model_images/Diagram-Model_img14.jpeg) | markdownify }
+{{ '![](Diagram-Model_images/Diagram-Model_img14.jpeg)' | markdownify }}
 {:.image }
 
 

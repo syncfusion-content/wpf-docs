@@ -17,7 +17,7 @@ The MaxValue and MinValue can be set for the UpDown control as shown in the foll
 
 [XAML]
 
-&lt;syncfusion:UpDown Name="upDown" MaxValue="100" MinValue="0"/&gt;
+<syncfusion:UpDown Name="upDown" MaxValue="100" MinValue="0"/>
 
 
 

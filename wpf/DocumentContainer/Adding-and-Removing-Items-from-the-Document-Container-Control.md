@@ -20,7 +20,7 @@ Document Container allows the user to add new elements to its container(such as 
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:DocumentContainer Name="DocContainer"&gt;&lt;Button &gt;&lt;/Button&gt;&lt;/syncfusion:DocumentContainer&gt;</td></tr>
+[XAML]<syncfusion:DocumentContainer Name="DocContainer"><Button ></Button></syncfusion:DocumentContainer></td></tr>
 <tr>
 <td>
 [C#]Button a = new Button();DocContainer.Items.Add(a);</td></tr>

@@ -180,13 +180,13 @@ XAML
 
 
 
-&lt;StackPanel Name="CommandBindingStackPanel"&gt;
+<StackPanel Name="CommandBindingStackPanel">
 
-    &lt;StackPanel.DataContext&gt;
+    <StackPanel.DataContext>
 
-        &lt;local:ViewModel /&gt;
+        <local:ViewModel />
 
-    &lt;/StackPanel.DataContext&gt;
+    </StackPanel.DataContext>
 
     <syncfusion:HierarchyNavigator Name="hierarchyNavigator1" 
 
@@ -196,11 +196,11 @@ XAML
 
                      Items="{StaticResource NavigationSampleData}" />
 
-    &lt;TextBlock Text="Selected Item" VerticalAlignment="Center" FontWeight="Bold" /&gt;
+    <TextBlock Text="Selected Item" VerticalAlignment="Center" FontWeight="Bold" />
 
-    &lt;TextBox Text="{Binding LastCommand}" Height="50" IsReadOnly="True" Margin="2" /&gt;
+    <TextBox Text="{Binding LastCommand}" Height="50" IsReadOnly="True" Margin="2" />
 
-&lt;/StackPanel&gt;
+</StackPanel>
 
 
 

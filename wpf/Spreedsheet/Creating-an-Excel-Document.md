@@ -49,7 +49,7 @@ The following code illustrates how to bind the NewCommand__to a button:
 
 [XAML]
 
-&lt;Button Command="{Binding Path=NewCommand}"/&gt;
+<Button Command="{Binding Path=NewCommand}"/>
 
 
 

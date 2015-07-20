@@ -57,19 +57,19 @@ C#Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windo
 
 Initially there is no value assigned to the IntegerTextBox. So it displays the default value as zero.
 
-{ ![](Minimum-and-Maximum-Value_images/Minimum-and-Maximum-Value_img1.png) | markdownify }
+{{ '![](Minimum-and-Maximum-Value_images/Minimum-and-Maximum-Value_img1.png)' | markdownify }}
 {:.image }
 
 
 MaxValidation is set to OnLostFocus, so the MaxValidation will be performed only in the lost focus.
 
-{ ![](Minimum-and-Maximum-Value_images/Minimum-and-Maximum-Value_img2.png) | markdownify }
+{{ '![](Minimum-and-Maximum-Value_images/Minimum-and-Maximum-Value_img2.png)' | markdownify }}
 {:.image }
 
 
 MinValidation is set to OnKeyPress, so you cannot enter a value less than the MinValue. If you try to enter a value less than the MinValue, then the MinValue will set to the Value property because MinValueOnExceedMinDigit is set to true.
 
-{ ![](Minimum-and-Maximum-Value_images/Minimum-and-Maximum-Value_img3.png) | markdownify }
+{{ '![](Minimum-and-Maximum-Value_images/Minimum-and-Maximum-Value_img3.png)' | markdownify }}
 {:.image }
 
 

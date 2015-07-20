@@ -19,7 +19,7 @@ TabSplitter is similar to the VS 2008 style split view of tabbed groups with fea
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 

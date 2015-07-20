@@ -15,7 +15,7 @@ For each node in the tree, there is a GridTreeNode object that holds the informa
 
 The following screen shot illustrates the GridTree control architecture.
 
-{ ![](Architecture_images/Architecture_img1.jpeg) | markdownify }
+{{ '![](Architecture_images/Architecture_img1.jpeg)' | markdownify }}
 {:.image }
 
 

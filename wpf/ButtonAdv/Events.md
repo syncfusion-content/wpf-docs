@@ -18,7 +18,7 @@ The following code adds the Click event handler to the ButtonAdv control:
 <table>
 <tr>
 <td>
-[XAML]&lt;sync:ButtonAdv Click="button_Click"/&gt;</td></tr>
+[XAML]<sync:ButtonAdv Click="button_Click"/></td></tr>
 <tr>
 <td>
 [C#]ButtonAdv button = new ButtonAdv()button.Click += new RoutedEventHandler(button_Click);</td></tr>
@@ -32,7 +32,7 @@ The following code adds the Checked event handler to the ButtonAdv control:
 <table>
 <tr>
 <td>
-[XAML]&lt;sync:ButtonAdv Checked="button_Checked"/&gt;</td></tr>
+[XAML]<sync:ButtonAdv Checked="button_Checked"/></td></tr>
 <tr>
 <td>
 [C#]ButtonAdv button = new ButtonAdv()button.Checked += new RoutedEventHandler(button_Checked);</td></tr>

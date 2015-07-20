@@ -13,7 +13,7 @@ RichTextBoxAdv allows you to zoom in and out on the content of the document. CTR
 
 
 
-{ ![](Zooming-and-Printing_images/Zooming-and-Printing_img1.png) | markdownify }
+{{ '![](Zooming-and-Printing_images/Zooming-and-Printing_img1.png)' | markdownify }}
 {:.image }
 
 

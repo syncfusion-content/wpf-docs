@@ -25,7 +25,7 @@ The section explains how to edit a SfDataPager style in Expression Blend. The fo
 
 
 
-{ ![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/expressionblend.png](Styles-and-Templates_images/Styles-and-Templates_img1.png) | markdownify }
+{{ '![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/expressionblend.png](Styles-and-Templates_images/Styles-and-Templates_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -35,7 +35,7 @@ The section explains how to edit a SfDataPager style in Expression Blend. The fo
 
 
 
-{ ![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/object.png](Styles-and-Templates_images/Styles-and-Templates_img2.png) | markdownify }
+{{ '![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/object.png](Styles-and-Templates_images/Styles-and-Templates_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -44,7 +44,7 @@ The section explains how to edit a SfDataPager style in Expression Blend. The fo
 
 
 
-{ ![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/editcopy.png](Styles-and-Templates_images/Styles-and-Templates_img3.png) | markdownify }
+{{ '![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/editcopy.png](Styles-and-Templates_images/Styles-and-Templates_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -65,7 +65,7 @@ This section explains how to edit the style of SfDataPager in Visual studio Desi
 
 
 
-{ ![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/edittemplate.png](Styles-and-Templates_images/Styles-and-Templates_img4.png) | markdownify }
+{{ '![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/edittemplate.png](Styles-and-Templates_images/Styles-and-Templates_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -74,7 +74,7 @@ This section explains how to edit the style of SfDataPager in Visual studio Desi
 
 
 
-{ ![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/editcopyvisual.png](Styles-and-Templates_images/Styles-and-Templates_img5.png) | markdownify }
+{{ '![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/editcopyvisual.png](Styles-and-Templates_images/Styles-and-Templates_img5.png)' | markdownify }}
 {:.image }
 
 

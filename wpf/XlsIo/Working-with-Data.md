@@ -892,13 +892,13 @@ excelEngine.Dispose()
 
 The following images illustrates the import from excel to grid and export from grid to excel by using DataTable.
 
-{ ![](Working-with-Data_images/Working-with-Data_img1.png) | markdownify }
+{{ '![](Working-with-Data_images/Working-with-Data_img1.png)' | markdownify }}
 {:.image }
 
 
 __
 
-{ ![](Working-with-Data_images/Working-with-Data_img2.png) | markdownify }
+{{ '![](Working-with-Data_images/Working-with-Data_img2.png)' | markdownify }}
 {:.image }
 
 

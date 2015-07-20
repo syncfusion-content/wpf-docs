@@ -23,7 +23,7 @@ The view of the Bullet Graph is changed by setting the Orientation property. Qua
 
                                   Minimum="0" Maximum="10" Interval="2" >
 
-            &lt;syncfusion:SfBulletGraph.QualitativeRanges&gt;
+            <syncfusion:SfBulletGraph.QualitativeRanges>
 
                 <syncfusion:QualitativeRange RangeEnd="3" 
 
@@ -31,7 +31,7 @@ The view of the Bullet Graph is changed by setting the Orientation property. Qua
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
                 <syncfusion:QualitativeRange RangeEnd="7" 
 
@@ -39,7 +39,7 @@ The view of the Bullet Graph is changed by setting the Orientation property. Qua
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
                 <syncfusion:QualitativeRange RangeEnd="10" 
 
@@ -47,13 +47,13 @@ The view of the Bullet Graph is changed by setting the Orientation property. Qua
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
-            &lt;/syncfusion:SfBulletGraph.QualitativeRanges&gt;
+            </syncfusion:SfBulletGraph.QualitativeRanges>
 
 
 
-        &lt;/syncfusion:SfBulletGraph&gt;
+        </syncfusion:SfBulletGraph>
 
 
 
@@ -87,11 +87,11 @@ The view of the Bullet Graph is changed by setting the Orientation property. Qua
 
 
 
-{ ![](Concept-and-Features_images/Concept-and-Features_img1.png) | markdownify }
+{{ '![](Concept-and-Features_images/Concept-and-Features_img1.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Concept-and-Features_images/Concept-and-Features_img2.png) | markdownify }
+{{ '![](Concept-and-Features_images/Concept-and-Features_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -109,9 +109,9 @@ The Caption for a Bullet Graph is used to specify a unique label describing the 
 
                                   QuantitativeScaleLength="400">
 
-            &lt;syncfusion:SfBulletGraph.Caption&gt;
+            <syncfusion:SfBulletGraph.Caption>
 
-                &lt;StackPanel Margin="0,0,10,0"&gt;
+                <StackPanel Margin="0,0,10,0">
 
                     <TextBlock Text="Revenue YTD" Foreground="Black"
 
@@ -121,11 +121,11 @@ The Caption for a Bullet Graph is used to specify a unique label describing the 
 
                                FontSize="13" HorizontalAlignment="Center"/>
 
-                &lt;/StackPanel&gt;
+                </StackPanel>
 
-            &lt;/syncfusion:SfBulletGraph.Caption&gt;
+            </syncfusion:SfBulletGraph.Caption>
 
-&lt;/syncfusion:SfBulletGraph&gt;
+</syncfusion:SfBulletGraph>
 
 
 
@@ -175,7 +175,7 @@ The Caption for a Bullet Graph is used to specify a unique label describing the 
 
 
 
-{ ![C:/Users/Giftline/Desktop/blessy3.jpg](Concept-and-Features_images/Concept-and-Features_img3.jpeg) | markdownify }
+{{ '![C:/Users/Giftline/Desktop/blessy3.jpg](Concept-and-Features_images/Concept-and-Features_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -208,7 +208,7 @@ Code Example
 
                               CaptionPosition="Far">
 
-    &lt;/syncfusion:SfBulletGraph&gt;
+    </syncfusion:SfBulletGraph>
 
 
 
@@ -248,7 +248,7 @@ SfBulletGraph bulletgraph = new SfBulletGraph();
 
 
 
-{ ![C:/Users/Giftline/Desktop/New folder/1.jpg](Concept-and-Features_images/Concept-and-Features_img4.png) | markdownify }
+{{ '![C:/Users/Giftline/Desktop/New folder/1.jpg](Concept-and-Features_images/Concept-and-Features_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -284,7 +284,7 @@ Code Example:
 
                               CaptionPosition="Near">
 
-    &lt;/syncfusion:SfBulletGraph&gt;
+    </syncfusion:SfBulletGraph>
 
 
 
@@ -328,7 +328,7 @@ SfBulletGraph bulletgraph = new SfBulletGraph();
 
 
 
-{ ![C:/Users/Giftline/Desktop/New folder/3.jpg](Concept-and-Features_images/Concept-and-Features_img5.png) | markdownify }
+{{ '![C:/Users/Giftline/Desktop/New folder/3.jpg](Concept-and-Features_images/Concept-and-Features_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -358,7 +358,7 @@ Code Example:
 
                                   ComparativeMeasureSymbolStrokeThickness="6">
 
-        &lt;/syncfusion:SfBulletGraph&gt;
+        </syncfusion:SfBulletGraph>
 
 
 
@@ -394,7 +394,7 @@ SfBulletGraph bulletgraph = new SfBulletGraph();
 
 
 
-{ ![C:/Users/Giftline/Desktop/New folder/4.jpg](Concept-and-Features_images/Concept-and-Features_img6.png) | markdownify }
+{{ '![C:/Users/Giftline/Desktop/New folder/4.jpg](Concept-and-Features_images/Concept-and-Features_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -418,7 +418,7 @@ Code Example:
 
                                   QuantitativeScaleLength="400">
 
-            &lt;syncfusion:SfBulletGraph.QualitativeRanges&gt;
+            <syncfusion:SfBulletGraph.QualitativeRanges>
 
                 <syncfusion:QualitativeRange RangeEnd="4.5" 
 
@@ -426,7 +426,7 @@ Code Example:
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
                 <syncfusion:QualitativeRange RangeEnd="7.5" 
 
@@ -434,7 +434,7 @@ Code Example:
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
                 <syncfusion:QualitativeRange RangeEnd="10" 
 
@@ -442,11 +442,11 @@ Code Example:
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
-            &lt;/syncfusion:SfBulletGraph.QualitativeRanges&gt;
+            </syncfusion:SfBulletGraph.QualitativeRanges>
 
-        &lt;/syncfusion:SfBulletGraph&gt;
+        </syncfusion:SfBulletGraph>
 
 
 
@@ -482,7 +482,7 @@ Code Example:
 
 
 
-{ ![C:/Users/Giftline/Desktop/New folder/5.jpg](Concept-and-Features_images/Concept-and-Features_img7.png) | markdownify }
+{{ '![C:/Users/Giftline/Desktop/New folder/5.jpg](Concept-and-Features_images/Concept-and-Features_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -504,7 +504,7 @@ Code Example:
 
                                   BindRangeStrokeToTicks="True">
 
-            &lt;syncfusion:SfBulletGraph.QualitativeRanges&gt;
+            <syncfusion:SfBulletGraph.QualitativeRanges>
 
                 <syncfusion:QualitativeRange RangeEnd="4.5" 
 
@@ -512,7 +512,7 @@ Code Example:
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
                 <syncfusion:QualitativeRange RangeEnd="7.5" 
 
@@ -520,7 +520,7 @@ Code Example:
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
                 <syncfusion:QualitativeRange RangeEnd="10" 
 
@@ -528,11 +528,11 @@ Code Example:
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
-            &lt;/syncfusion:SfBulletGraph.QualitativeRanges&gt;
+            </syncfusion:SfBulletGraph.QualitativeRanges>
 
-        &lt;/syncfusion:SfBulletGraph&gt;
+        </syncfusion:SfBulletGraph>
 
 
 
@@ -570,7 +570,7 @@ Code Example:
 
 
 
-{ ![C:/Users/Giftline/Desktop/New folder/6.jpg](Concept-and-Features_images/Concept-and-Features_img8.png) | markdownify }
+{{ '![C:/Users/Giftline/Desktop/New folder/6.jpg](Concept-and-Features_images/Concept-and-Features_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -607,7 +607,7 @@ Code Example:
 
                                   MajorTickStroke="Red" MinorTickStroke="Green">
 
-        &lt;/syncfusion:SfBulletGraph&gt;
+        </syncfusion:SfBulletGraph>
 
 
 
@@ -647,7 +647,7 @@ Code Example:
 
 
 
-{ ![C:/Users/Giftline/Desktop/New folder/7.jpg](Concept-and-Features_images/Concept-and-Features_img9.png) | markdownify }
+{{ '![C:/Users/Giftline/Desktop/New folder/7.jpg](Concept-and-Features_images/Concept-and-Features_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -685,7 +685,7 @@ Code Example:
 
                                   TickPosition="Cross">
 
-        &lt;/syncfusion:SfBulletGraph&gt;
+        </syncfusion:SfBulletGraph>
 
 
 
@@ -731,7 +731,7 @@ Code Example:
 
 
 
-{ ![](Concept-and-Features_images/Concept-and-Features_img10.png) | markdownify }
+{{ '![](Concept-and-Features_images/Concept-and-Features_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -759,7 +759,7 @@ Code Example:
 
                                   LabelStroke="Red">
 
-        &lt;/syncfusion:SfBulletGraph&gt;
+        </syncfusion:SfBulletGraph>
 
 
 
@@ -799,7 +799,7 @@ Code Example:
 
 
 
-{ ![C:/Users/Giftline/Desktop/New folder/8.jpg](Concept-and-Features_images/Concept-and-Features_img11.png) | markdownify }
+{{ '![C:/Users/Giftline/Desktop/New folder/8.jpg](Concept-and-Features_images/Concept-and-Features_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -826,7 +826,7 @@ Code Example:
 
                                   LabelPosition="Above">
 
-        &lt;/syncfusion:SfBulletGraph&gt;
+        </syncfusion:SfBulletGraph>
 
 
 
@@ -860,7 +860,7 @@ SfBulletGraph bulletgraph = new SfBulletGraph();
 
 
 
-{ ![C:/Users/Giftline/Desktop/New folder/9.jpg](Concept-and-Features_images/Concept-and-Features_img12.png) | markdownify }
+{{ '![C:/Users/Giftline/Desktop/New folder/9.jpg](Concept-and-Features_images/Concept-and-Features_img12.png)' | markdownify }}
 {:.image }
 
 
@@ -904,21 +904,21 @@ Code Example:
 
 
 
-            &lt;syncfusion:SfBulletGraph.FeaturedMeasureToolTipTemplate&gt;
+            <syncfusion:SfBulletGraph.FeaturedMeasureToolTipTemplate>
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-                    &lt;Border BorderBrush="#D3D3D3" BorderThickness="1.5" Background="#232323" CornerRadius="5"&gt;
+                    <Border BorderBrush="#D3D3D3" BorderThickness="1.5" Background="#232323" CornerRadius="5">
 
-                        &lt;TextBlock Text="{Binding}" FontSize="14" Foreground="#D3D3D3" Margin="12 8"/&gt;
+                        <TextBlock Text="{Binding}" FontSize="14" Foreground="#D3D3D3" Margin="12 8"/>
 
-                    &lt;/Border&gt;
+                    </Border>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-            &lt;/syncfusion:SfBulletGraph.FeaturedMeasureToolTipTemplate&gt;
+            </syncfusion:SfBulletGraph.FeaturedMeasureToolTipTemplate>
 
-            &lt;syncfusion:SfBulletGraph.QualitativeRanges&gt;
+            <syncfusion:SfBulletGraph.QualitativeRanges>
 
                 <syncfusion:QualitativeRange RangeEnd="4.5"
 
@@ -926,7 +926,7 @@ Code Example:
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
                 <syncfusion:QualitativeRange RangeEnd="7.5"
 
@@ -934,7 +934,7 @@ Code Example:
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
                 <syncfusion:QualitativeRange RangeEnd="10"
 
@@ -942,19 +942,19 @@ Code Example:
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
-            &lt;/syncfusion:SfBulletGraph.QualitativeRanges&gt;
-
-
-
-        &lt;/syncfusion:SfBulletGraph&gt;
+            </syncfusion:SfBulletGraph.QualitativeRanges>
 
 
 
+        </syncfusion:SfBulletGraph>
 
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image279_20.jpg](Concept-and-Features_images/Concept-and-Features_img13.jpeg) | markdownify }
+
+
+
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image279_20.jpg](Concept-and-Features_images/Concept-and-Features_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -990,21 +990,21 @@ Code Example:
 
 
 
-            &lt;syncfusion:SfBulletGraph.ComparativeMeasureToolTipTemplate&gt;
+            <syncfusion:SfBulletGraph.ComparativeMeasureToolTipTemplate>
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-                    &lt;Border BorderBrush="#D3D3D3" BorderThickness="1.5" Background="#232323" CornerRadius="5"&gt;
+                    <Border BorderBrush="#D3D3D3" BorderThickness="1.5" Background="#232323" CornerRadius="5">
 
-                        &lt;TextBlock Text="{Binding}" FontSize="14" Foreground="#D3D3D3" Margin="12 8"/&gt;
+                        <TextBlock Text="{Binding}" FontSize="14" Foreground="#D3D3D3" Margin="12 8"/>
 
-                    &lt;/Border&gt;
+                    </Border>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-            &lt;/syncfusion:SfBulletGraph.ComparativeMeasureToolTipTemplate&gt;
+            </syncfusion:SfBulletGraph.ComparativeMeasureToolTipTemplate>
 
-            &lt;syncfusion:SfBulletGraph.QualitativeRanges&gt;
+            <syncfusion:SfBulletGraph.QualitativeRanges>
 
                 <syncfusion:QualitativeRange RangeEnd="4.5"
 
@@ -1012,7 +1012,7 @@ Code Example:
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
                 <syncfusion:QualitativeRange RangeEnd="7.5"
 
@@ -1020,7 +1020,7 @@ Code Example:
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
                 <syncfusion:QualitativeRange RangeEnd="10"
 
@@ -1028,19 +1028,19 @@ Code Example:
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
-            &lt;/syncfusion:SfBulletGraph.QualitativeRanges&gt;
-
-
-
-        &lt;/syncfusion:SfBulletGraph&gt;
+            </syncfusion:SfBulletGraph.QualitativeRanges>
 
 
 
+        </syncfusion:SfBulletGraph>
 
 
-{ ![undefined](Concept-and-Features_images/Concept-and-Features_img14.jpeg) | markdownify }
+
+
+
+{{ '![undefined](Concept-and-Features_images/Concept-and-Features_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1078,33 +1078,33 @@ Code Example:
 
 
 
-            &lt;syncfusion:SfBulletGraph.QualitativeRangeToolTipTemplate&gt;
+            <syncfusion:SfBulletGraph.QualitativeRangeToolTipTemplate>
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-                    &lt;Border BorderBrush="#D3D3D3" BorderThickness="1.5" CornerRadius="5"&gt;
+                    <Border BorderBrush="#D3D3D3" BorderThickness="1.5" CornerRadius="5">
 
-                        &lt;Border Background="{Binding RangeStroke}" Opacity="0.7" CornerRadius="5"&gt;
+                        <Border Background="{Binding RangeStroke}" Opacity="0.7" CornerRadius="5">
 
-                            &lt;StackPanel Orientation="Horizontal" Margin="12 8" &gt;
+                            <StackPanel Orientation="Horizontal" Margin="12 8" >
 
-                                &lt;TextBlock Text="{Binding RangeStart}" FontSize="14" Foreground="Black"/&gt;
+                                <TextBlock Text="{Binding RangeStart}" FontSize="14" Foreground="Black"/>
 
-                                &lt;TextBlock Text="-" FontSize="14" Foreground="Black" Width="10" TextAlignment="Center"/&gt;
+                                <TextBlock Text="-" FontSize="14" Foreground="Black" Width="10" TextAlignment="Center"/>
 
-                                &lt;TextBlock Text="{Binding RangeEnd}" FontSize="14" Foreground="Black"/&gt;
+                                <TextBlock Text="{Binding RangeEnd}" FontSize="14" Foreground="Black"/>
 
-                            &lt;/StackPanel&gt;
+                            </StackPanel>
 
-                        &lt;/Border&gt;
+                        </Border>
 
-                    &lt;/Border&gt;
+                    </Border>
 
-                &lt;/DataTemplate&gt;
+                </DataTemplate>
 
-            &lt;/syncfusion:SfBulletGraph.QualitativeRangeToolTipTemplate&gt;
+            </syncfusion:SfBulletGraph.QualitativeRangeToolTipTemplate>
 
-            &lt;syncfusion:SfBulletGraph.QualitativeRanges&gt;
+            <syncfusion:SfBulletGraph.QualitativeRanges>
 
                 <syncfusion:QualitativeRange RangeEnd="4.5"
 
@@ -1112,7 +1112,7 @@ Code Example:
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
                 <syncfusion:QualitativeRange RangeEnd="7.5"
 
@@ -1120,7 +1120,7 @@ Code Example:
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
                 <syncfusion:QualitativeRange RangeEnd="10"
 
@@ -1128,19 +1128,19 @@ Code Example:
 
                                              RangeOpacity="1">
 
-                &lt;/syncfusion:QualitativeRange&gt;
+                </syncfusion:QualitativeRange>
 
-            &lt;/syncfusion:SfBulletGraph.QualitativeRanges&gt;
-
-
-
-        &lt;/syncfusion:SfBulletGraph&gt;
+            </syncfusion:SfBulletGraph.QualitativeRanges>
 
 
 
+        </syncfusion:SfBulletGraph>
 
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image279_22.jpg](Concept-and-Features_images/Concept-and-Features_img15.jpeg) | markdownify }
+
+
+
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image279_22.jpg](Concept-and-Features_images/Concept-and-Features_img15.jpeg)' | markdownify }}
 {:.image }
 
 

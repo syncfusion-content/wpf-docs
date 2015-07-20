@@ -22,7 +22,7 @@ The following code adds the DropDownOpening event handler to the DropDownButtonA
 <table>
 <tr>
 <td>
- [XAML]&lt;shared:DropDownButtonAdv DropDownOpening="DropDownButtonAdv_DropDownOpening"/&gt;</td></tr>
+ [XAML]<shared:DropDownButtonAdv DropDownOpening="DropDownButtonAdv_DropDownOpening"/></td></tr>
 <tr>
 <td>
  [C#]DropDownButtonAdv button = new DropDownButtonAdv();button.DropDownOpening +=new CancelEventHandler(button_DropDownOpening);</td></tr>
@@ -40,7 +40,7 @@ The following code adds the DropDownOpened event handler to the DropDownButtonAd
 <table>
 <tr>
 <td>
- [XAML]&lt;shared:DropDownButtonAdv DropDownOpened="DropDownButtonAdv_DropDownOpened"/&gt;</td></tr>
+ [XAML]<shared:DropDownButtonAdv DropDownOpened="DropDownButtonAdv_DropDownOpened"/></td></tr>
 <tr>
 <td>
  [C#]DropDownButtonAdv button = new DropDownButtonAdv();button.DropDownOpened +=new RoutedEventHandler(button_DropDownOpened);</td></tr>
@@ -58,7 +58,7 @@ The following code adds the DropDownClosing event handler to the DropDownButtonA
 <table>
 <tr>
 <td>
- [XAML]&lt;shared:DropDownButtonAdv DropDownClosing="DropDownButtonAdv_DropDownClosing"/&gt;</td></tr>
+ [XAML]<shared:DropDownButtonAdv DropDownClosing="DropDownButtonAdv_DropDownClosing"/></td></tr>
 <tr>
 <td>
  [C#]DropDownButtonAdv button = new DropDownButtonAdv();button.DropDownClosing +=new CancelEventHandler(button_DropDownClosing);</td></tr>
@@ -76,7 +76,7 @@ The following code adds the DropDownClosed event handler to the DropDownButtonAd
 <table>
 <tr>
 <td>
- [XAML]&lt;shared:DropDownButtonAdv DropDownClosed="DropDownButtonAdv_DropDownClosed"/&gt;</td></tr>
+ [XAML]<shared:DropDownButtonAdv DropDownClosed="DropDownButtonAdv_DropDownClosed"/></td></tr>
 <tr>
 <td>
  [C#]DropDownButtonAdv button = new DropDownButtonAdv();button.DropDownClosed +=new RoutedEventHandler(button_DropDownClosed);</td></tr>

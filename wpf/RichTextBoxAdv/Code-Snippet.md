@@ -25,41 +25,41 @@ documentation: ug
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid&gt;
+    <Grid>
 
-        &lt;DockPanel&gt;
+        <DockPanel>
 
-            &lt;Menu DockPanel.Dock="Top"&gt;
+            <Menu DockPanel.Dock="Top">
 
                 <MenuItem Command="{x:Static syncfusion:RichTextBoxAdv.ToggleBold}" 
 
                           Header="Bold"/>
 
-            &lt;/Menu&gt;
+            </Menu>
 
-            &lt;syncfusion:RichTextBoxAdv x:Name="richtextbox"&gt;
+            <syncfusion:RichTextBoxAdv x:Name="richtextbox">
 
-                &lt;syncfusion:DocumentAdv&gt;
+                <syncfusion:DocumentAdv>
 
-                    &lt;syncfusion:SectionAdv&gt;
+                    <syncfusion:SectionAdv>
 
-                        &lt;syncfusion:ParagraphAdv&gt;
+                        <syncfusion:ParagraphAdv>
 
-                            &lt;syncfusion:SpanAdv Text="I am the Text...."/&gt;
+                            <syncfusion:SpanAdv Text="I am the Text...."/>
 
-                        &lt;/syncfusion:ParagraphAdv&gt;
+                        </syncfusion:ParagraphAdv>
 
-                    &lt;/syncfusion:SectionAdv&gt;
+                    </syncfusion:SectionAdv>
 
-                &lt;/syncfusion:DocumentAdv&gt;
+                </syncfusion:DocumentAdv>
 
-            &lt;/syncfusion:RichTextBoxAdv&gt;
+            </syncfusion:RichTextBoxAdv>
 
-        &lt;/DockPanel&gt;
+        </DockPanel>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 

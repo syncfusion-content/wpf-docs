@@ -17,7 +17,7 @@ Syncfusion's OLAP architecture allows you to build a full life cycle reporting s
 
 Let us see how the Syncfusion OLAP components allow you to build a full life cycle reporting solution for your enterprise.
 
-{ ![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img1.jpeg) | markdownify }
+{{ '![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -25,7 +25,7 @@ Let us see how the Syncfusion OLAP components allow you to build a full life cyc
 
 
 
-{ ![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img2.png) | markdownify }
+{{ '![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -143,7 +143,7 @@ OlapReport</td></tr>
 <tr>
 <td>
 DataBind()</td><td>
-The method is used to fill or bind the data present in {{ '_DataManager_' | markdownify }} into the {{ '_Gauge_' | markdownify }} control.</td><td>
+The method is used to fill or bind the data present in {{{ ''_DataManager_'' | markdownify }}} into the {{{ ''_Gauge_'' | markdownify }}} control.</td><td>
 -</td><td>
 void</td><td>
 -</td></tr>

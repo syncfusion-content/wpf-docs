@@ -23,7 +23,7 @@ ChartArea.
 
 Chart header is the title of the chart, which is usually displayed at the top center of the ChartArea.  The following illustration displays the Chart header displayed in the chart area:
 
-{ ![](Core-Features_images/Core-Features_img1.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -146,7 +146,7 @@ this.olapchart1.Series[0].Area.BorderBrush = Brushes.Black;
 
 
 
-{ ![](Core-Features_images/Core-Features_img2.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -196,7 +196,7 @@ OlapArea allows you to customize the background properties in an easy manner. Th
 
 
 
-{ ![](Core-Features_images/Core-Features_img3.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -336,7 +336,7 @@ Next i
 
 The following figure shows an OlapChart with PointLabels enabled:
 
-{ ![](Core-Features_images/Core-Features_img4.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -397,19 +397,19 @@ Me.olapchart1.Series(0).StrokeThickness = 4
 
 The series border is applied for the first series of a Column chart by using the StrokeThickness property. Notice that the first series element is surrounded with the applied border.
 
-{ ![](Core-Features_images/Core-Features_img5.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img5.png)' | markdownify }}
 {:.image }
 
 
 Notice the variation. The same series border property is applied for a series in the line chart. Instead of creating a 4 pixel width border it increases the thickness of the particular series line.
 
-{ ![](Core-Features_images/Core-Features_img6.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img6.png)' | markdownify }}
 {:.image }
 
 
 Since, you know that the pie chart renders everything in a single series each block in the pie chart known as segments will have the border applied on them. This is described in the following illustration:
 
-{ ![](Core-Features_images/Core-Features_img7.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -423,8 +423,8 @@ The following data template will be used to customize the series:
 
 
 
-&lt;DataTemplate x:Key="ColumnTemplate"&gt;
-                &lt;Canvas Name="myCanvas"&gt;
+<DataTemplate x:Key="ColumnTemplate">
+                <Canvas Name="myCanvas">
                     <Grid Name="OuterGrid" 
 
                           Canvas.Left="{Binding X}" 
@@ -434,11 +434,11 @@ The following data template will be used to customize the series:
                           Height="{Binding ElementName=myCanvas, 
 
                           Path=ActualHeight}" >
-                        &lt;Border Name="ColumnRect"                           VerticalAlignment="Bottom"                           Width="{Binding Width}" Height="{Binding Height}"                          CornerRadius="8,8,0,0" Background="{Binding Interior}"&gt;
-                        &lt;/Border&gt;
-                    &lt;/Grid&gt;
-                &lt;/Canvas&gt;
-&lt;/DataTemplate&gt;
+                        <Border Name="ColumnRect"                           VerticalAlignment="Bottom"                           Width="{Binding Width}" Height="{Binding Height}"                          CornerRadius="8,8,0,0" Background="{Binding Interior}">
+                        </Border>
+                    </Grid>
+                </Canvas>
+</DataTemplate>
 
 
 
@@ -494,7 +494,7 @@ Me.olapchart1.Series(i).Template = TryCast(Me.Resources("ColumnTemplate"), DataT
 
 A sample, which demonstrates all the series customization, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Customization\Series Customization Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Customization\Series Customization Demo
 
 ### How to customize series thickness for line?
 
@@ -553,7 +553,7 @@ End Sub
 
 
 
-{ ![](Core-Features_images/Core-Features_img8.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -605,7 +605,7 @@ Sample Link
 
 The samples can be found in the following location:
 
-C:\Users\&lt;username&gt;\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OLAPChart.WPF\Samples\Appearance\Chart Animations Demo\
+C:\Users\<username>\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OLAPChart.WPF\Samples\Appearance\Chart Animations Demo\
 
 #### Adding Chart Animation Support to an Application 
 
@@ -669,7 +669,7 @@ Sample Link
 
 The installed samples can be found here:
 
-C:\Users\&lt;username&gt;\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OLAPChart.WPF\Samples\Chart Types\Pie Chart Demo
+C:\Users\<username>\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OLAPChart.WPF\Samples\Chart Types\Pie Chart Demo
 
 #### Adding Pie Chart features to an Application 
 
@@ -765,7 +765,7 @@ In general, for column type charts, the horizontal grid line belongs to the seco
 
 The following illustration describes how the chart will look after the horizontal grid lines are disabled:
 
-{ ![](Core-Features_images/Core-Features_img9.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -799,7 +799,7 @@ In general, for column type charts, the vertical grid line belongs to the primar
 
 The following illustration describes how the chart will look after the vertical grid lines are disabled:
 
-{ ![](Core-Features_images/Core-Features_img10.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -835,11 +835,11 @@ To display the ‘%’ symbol in secondary axis, you need to set the secondary a
 
 
 
-       &lt;syncfusion:OlapChart.SecondaryAxis&gt;
+       <syncfusion:OlapChart.SecondaryAxis>
 
-              &lt;syncfusion:ChartAxis LabelFormat="00.00%" /&gt;
+              <syncfusion:ChartAxis LabelFormat="00.00%" />
 
-       &lt;/syncfusion:OlapChart.SecondaryAxis&gt;
+       </syncfusion:OlapChart.SecondaryAxis>
 
 
 
@@ -851,11 +851,11 @@ To display the currency symbol in the secondary axis, you need to set the second
 
 
 
-       &lt;syncfusion:OlapChart.SecondaryAxis&gt;
+       <syncfusion:OlapChart.SecondaryAxis>
 
-              &lt;syncfusion:ChartAxis LabelFormat="C" /&gt;
+              <syncfusion:ChartAxis LabelFormat="C" />
 
-       &lt;/syncfusion:OlapChart.SecondaryAxis&gt;
+       </syncfusion:OlapChart.SecondaryAxis>
 
 ### How to customize the OlapAxis label font settings?
 
@@ -865,7 +865,7 @@ The label font settings of the primary and the secondary axis can easily be appl
 
 
 
-       &lt;syncfusion:OlapChart.PrimaryAxis&gt;
+       <syncfusion:OlapChart.PrimaryAxis>
               <syncfusion:ChartAxis LabelFormat="C"
 
                          LabelFontFamily="Arial" 
@@ -875,11 +875,11 @@ The label font settings of the primary and the secondary axis can easily be appl
                          LabelFontWeight="ExtraBold" 
 
                          LabelForeground="DarkGray"  />
-       &lt;/syncfusion:OlapChart.PrimaryAxis&gt;
+       </syncfusion:OlapChart.PrimaryAxis>
 
 
 
-       &lt;syncfusion:OlapChart.SecondaryAxis&gt;
+       <syncfusion:OlapChart.SecondaryAxis>
               <syncfusion:ChartAxis LabelFormat="C"
 
                          LabelFontFamily="Arial" 
@@ -889,7 +889,7 @@ The label font settings of the primary and the secondary axis can easily be appl
                          LabelFontWeight="ExtraBold" 
 
                          LabelForeground="DarkGray"  />
-       &lt;/syncfusion:OlapChart.SecondaryAxis&gt;
+       </syncfusion:OlapChart.SecondaryAxis>
 
 
 
@@ -947,7 +947,7 @@ The following code snippet is used to collapse the PrimaryAxis label:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" PrimaryAxisLabelVisibility="Collapsed" /&gt;
+<syncfusion:OlapChart Name="olapchart1" PrimaryAxisLabelVisibility="Collapsed" />
 
 
 
@@ -975,7 +975,7 @@ Me.olapchart1.PrimaryAxisLabelVisibility = System.Windows.Visibility.Collapsed
 
 The following illustration shows how the OlapChart will look after collapsing the PrimaryAxis label.
 
-{ ![](Core-Features_images/Core-Features_img11.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -995,9 +995,9 @@ The ChartLegend can be added to an OlapChart by adding the ChartLegend of the Es
 
 [XAML]
 
-       &lt;syncfusion:OlapChart.Legend&gt;
-            &lt;baseChart:ChartLegend Background="Transparent"/&gt;
-       &lt;/syncfusion:OlapChart.Legend&gt;
+       <syncfusion:OlapChart.Legend>
+            <baseChart:ChartLegend Background="Transparent"/>
+       </syncfusion:OlapChart.Legend>
 
 
 
@@ -1021,10 +1021,10 @@ The ChartLegend has a visibility property using which you can show or hide the C
 
 
 
-&lt;syncfusion:OlapChart.Legend&gt;
+<syncfusion:OlapChart.Legend>
 
-        &lt;baseChart:ChartLegend Visibility="Collapsed" /&gt;
-&lt;/syncfusion:OlapChart.Legend&gt;
+        <baseChart:ChartLegend Visibility="Collapsed" />
+</syncfusion:OlapChart.Legend>
 
 
 
@@ -1056,9 +1056,9 @@ The visibility of the legend check box can be toggled by using the CheckBoxVisib
 
 
 
-&lt;syncfusion:OlapChart.Legend&gt;
-    &lt;baseChart:ChartLegend CheckBoxVisibility="Collapsed" /&gt;
-&lt;/syncfusion:OlapChart.Legend&gt;
+<syncfusion:OlapChart.Legend>
+    <baseChart:ChartLegend CheckBoxVisibility="Collapsed" />
+</syncfusion:OlapChart.Legend>
 
 
 
@@ -1089,9 +1089,9 @@ The visibility of the legend icon can be toggled by using the IconVisibility pro
 [XAML]
 
 
-&lt;syncfusion:OlapChart.Legend&gt;
-    &lt;baseChart:ChartLegend IconVisibility="Collapsed" /&gt;
-&lt;/syncfusion:OlapChart.Legend&gt;
+<syncfusion:OlapChart.Legend>
+    <baseChart:ChartLegend IconVisibility="Collapsed" />
+</syncfusion:OlapChart.Legend>
 
 
 
@@ -1145,11 +1145,11 @@ You can use the RowsCount and ColumnsCount property to create the rows or the co
 
 
 
-&lt;syncfusion:OlapChart.Legend&gt;
+<syncfusion:OlapChart.Legend>
     <baseChart:ChartLegend Background="Transparent" 
 
                            RowsCount="2" ColumnsCount="2" />
-&lt;/syncfusion:OlapChart.Legend&gt;
+</syncfusion:OlapChart.Legend>
 
 
 
@@ -1180,19 +1180,19 @@ Me.olapChart.Legend.ColumnsCount = 2
 
 The following chart has only one legend, but we have set RowsCount = 2 and ColumnsCount = 2. Therefore, the resultant legend will appear as follows: 
 
-{ ![](Core-Features_images/Core-Features_img12.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img12.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Core-Features_images/Core-Features_img13.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img13.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Core-Features_images/Core-Features_img14.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img14.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Core-Features_images/Core-Features_img15.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img15.png)' | markdownify }}
 {:.image }
 
 
@@ -1221,7 +1221,7 @@ The supported chart types are as follows:
 
 The default chart type is Column chart. The following illustration shows a column chart:
 
-{ ![](Core-Features_images/Core-Features_img16.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -1233,7 +1233,7 @@ Column chart is the most basic type of chart. Column charts are widely used for 
 
 The following illustration shows the basic column chart:
 
-{ ![](Core-Features_images/Core-Features_img17.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img17.png)' | markdownify }}
 {:.image }
 
 
@@ -1243,7 +1243,7 @@ The following code snippet shows how to select a simple column chart:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="Column" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="Column" />
 
 
 
@@ -1273,7 +1273,7 @@ olapChart.ChartType = ChartTypes.Column
 
 A sample, which demonstrates all the available type of Column charts, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
 
 ### How to create a stacking column chart?
 
@@ -1281,7 +1281,7 @@ Stacking column chart is a simple form of chart, which contains segments in each
 
 The following illustration shows the stacking column chart:
 
-{ ![](Core-Features_images/Core-Features_img18.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -1291,7 +1291,7 @@ The following code snippet shows how to select a stacking column chart:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="StackingColumn" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="StackingColumn" />
 
 
 
@@ -1321,7 +1321,7 @@ olapChart.ChartType = ChartTypes.StackingColumn
 
 A sample, which demonstrates all the available type of Column charts, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
 
 ### How to create a stacking column 100 chart?
 
@@ -1329,7 +1329,7 @@ Stacking column 100 chart is a simple form of chart.  Similar to the stacking co
 
 The following illustration shows the stacking column 100 chart:
 
-{ ![](Core-Features_images/Core-Features_img19.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -1339,7 +1339,7 @@ The following code snippet shows how to select a stacking column 100 chart:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="StackingColumn100" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="StackingColumn100" />
 
 
 
@@ -1369,7 +1369,7 @@ olapChart.ChartType = ChartTypes.StackingColumn100
 
 A sample, which demonstrates all the available type of Column charts, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Column Chart Demo
 
 ### How to create a bar chart?
 
@@ -1377,7 +1377,7 @@ Bar chart is the same as the Column chart, the variation is it is rotated 90 deg
 
 The following illustration shows the simple bar chart:
 
-{ ![](Core-Features_images/Core-Features_img20.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img20.png)' | markdownify }}
 {:.image }
 
 
@@ -1387,7 +1387,7 @@ The following code snippet shows how to select a bar chart:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="Bar" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="Bar" />
 
 
 
@@ -1415,7 +1415,7 @@ olapChart.ChartType = ChartTypes.Bar
 
 A sample, which demonstrates all the available type of Bar charts, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
 
 ### How to create a stacking bar chart?
 
@@ -1423,7 +1423,7 @@ StackingBar chart is the same as the StackingColumn chart, the variation is it i
 
 The following illustration shows the simple bar chart:
 
-{ ![](Core-Features_images/Core-Features_img21.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img21.png)' | markdownify }}
 {:.image }
 
 
@@ -1433,7 +1433,7 @@ The following code snippet shows how to select a bar chart:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="StackingBar" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="StackingBar" />
 
 
 
@@ -1459,7 +1459,7 @@ olapChart.ChartType = ChartTypes.StackingBar
 
 A sample, which demonstrates all the available type of Bar charts, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
 
 ### How to create a stacking bar 100 chart?
 
@@ -1467,7 +1467,7 @@ StackingBar100 chart is the same as the StackingColumn100 chart, the variation i
 
 The following illustration shows the StackingBar100 chart:
 
-{ ![](Core-Features_images/Core-Features_img22.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -1477,7 +1477,7 @@ The following code snippet shows how to select a bar chart:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="StackingBar100" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="StackingBar100" />
 
 
 
@@ -1505,7 +1505,7 @@ olapChart.ChartType = ChartTypes.StackingBar100
 
 A sample, which demonstrates all the available type of Bar charts, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Bar Chart Demo
 
 ### How to create an Area chart?
 
@@ -1513,7 +1513,7 @@ Area chart fills the quantitative data over a period of time. It is mainly used 
 
 The following illustration shows the simple Area chart:
 
-{ ![](Core-Features_images/Core-Features_img23.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -1523,7 +1523,7 @@ The following code snippet shows how to select an Area chart:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="Area" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="Area" />
 
 
 
@@ -1547,7 +1547,7 @@ olapChart.ChartType = ChartTypes.Area
 
 A sample, which demonstrates all the available type of Area charts, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
 ### How to create a stacking area chart?
 
@@ -1555,7 +1555,7 @@ StackingArea chart fills the quantitative data over a period of time just like t
 
 The following illustration shows the StackingArea chart:
 
-{ ![](Core-Features_images/Core-Features_img24.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img24.png)' | markdownify }}
 {:.image }
 
 
@@ -1565,7 +1565,7 @@ The following code snippet shows how to select a StackingArea chart:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="StackingArea" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="StackingArea" />
 
 
 
@@ -1593,7 +1593,7 @@ olapChart.ChartType = ChartTypes.StackingArea
 
 A sample, which demonstrates all the available type of Area charts, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
 ### How to create a spline area?
 
@@ -1601,7 +1601,7 @@ Spline area chart is usually used in the case of approximating the intervals by 
 
 The following illustration shows the Spline area chart:
 
-{ ![](Core-Features_images/Core-Features_img25.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -1611,7 +1611,7 @@ The following code snippet shows how to select a Spline area chart:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="SplineArea" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="SplineArea" />
 
 
 
@@ -1639,7 +1639,7 @@ olapChart.ChartType = ChartTypes.SplineArea
 
 A sample, which demonstrates all the available type of Area charts, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
 ### How to create a step area?
 
@@ -1647,7 +1647,7 @@ In the Step area chart, the points are plotted instead of a straight line tracin
 
 The following illustration shows the Step area chart:
 
-{ ![](Core-Features_images/Core-Features_img26.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img26.png)' | markdownify }}
 {:.image }
 
 
@@ -1657,7 +1657,7 @@ The following code snippet shows how to select a Step area chart:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="StepArea" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="StepArea" />
 
 
 
@@ -1683,7 +1683,7 @@ olapChart.ChartType = ChartTypes.StepArea
 
 A sample, which demonstrates all the available type of Area charts, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Area Chart Demo
 
 ### How to create a line chart?
 
@@ -1691,7 +1691,7 @@ Line chart is a simple form of chart, which connects a series of data points. Us
 
 The following illustration shows the Line chart:
 
-{ ![](Core-Features_images/Core-Features_img27.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img27.png)' | markdownify }}
 {:.image }
 
 
@@ -1701,7 +1701,7 @@ The following code snippet shows how to select a Line chart:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="Line" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="Line" />
 
 
 
@@ -1729,7 +1729,7 @@ olapChart.ChartType = ChartTypes.Line
 
 A sample, which demonstrates all the available type of Line charts, can be found in the following installation location.
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
 ### How to create a spline chart?
 
@@ -1737,7 +1737,7 @@ Spline chart is a simple form of chart, which connects the series of data points
 
 The following illustration shows the Spline chart:
 
-{ ![](Core-Features_images/Core-Features_img28.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img28.png)' | markdownify }}
 {:.image }
 
 
@@ -1747,7 +1747,7 @@ The following code snippet shows how to select a Spline chart:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="Spline" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="Spline" />
 
 
 
@@ -1775,7 +1775,7 @@ olapChart.ChartType = ChartTypes.Spline
 
 A sample, which demonstrates all the available type of Line charts, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
 ### How to create a rotate spline chart?
 
@@ -1783,7 +1783,7 @@ RotatedSpline chart is similar to the Spline chart, but is rotated 90 degrees in
 
 The following illustration shows the RotatedSpline chart:
 
-{ ![](Core-Features_images/Core-Features_img29.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img29.png)' | markdownify }}
 {:.image }
 
 
@@ -1793,7 +1793,7 @@ The following code snippet shows how to select a RotatedSpline chart.
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="RotatedSpline" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="RotatedSpline" />
 
 
 
@@ -1819,7 +1819,7 @@ olapChart.ChartType = ChartTypes.RotatedSpline
 
 A sample, which demonstrates all the available type of Line charts, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
 ### How to create a step line chart?
 
@@ -1827,7 +1827,7 @@ StepLine chart is another form of chart, which connects the series of data point
 
 The following illustration shows the StepLine chart:
 
-{ ![](Core-Features_images/Core-Features_img30.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img30.png)' | markdownify }}
 {:.image }
 
 
@@ -1837,7 +1837,7 @@ The following code snippet shows how to select a StepLine chart:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="StepLine" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="StepLine" />
 
 
 
@@ -1865,7 +1865,7 @@ olapChart.ChartType = ChartTypes.StepLine
 
 A sample, which demonstrates all the available type of Line charts, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Line Chart Demo
 
 ### How to create a scatter chart?
 
@@ -1873,7 +1873,7 @@ Scatter chart is a collection of points plotted in the rectangular co-ordinate s
 
 The following illustration shows the Scatter chart:
 
-{ ![](Core-Features_images/Core-Features_img31.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img31.png)' | markdownify }}
 {:.image }
 
 
@@ -1883,7 +1883,7 @@ The following code snippet shows how to select a Scatter chart:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="Scatter" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="Scatter" />
 
 
 
@@ -1911,7 +1911,7 @@ olapChart.ChartType = ChartTypes.Scatter
 
 A sample, which demonstrates the Scatter chart, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Scatter Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Scatter Chart Demo
 
 ### How to create a pie chart?
 
@@ -1919,7 +1919,7 @@ Pie chart renders the data points in segments. It is capable of rendering only o
 
 The following illustration shows the Pie chart:
 
-{ ![](Core-Features_images/Core-Features_img32.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img32.png)' | markdownify }}
 {:.image }
 
 
@@ -1929,7 +1929,7 @@ The following code snippet shows how to select a Pie chart:
 
 
 
-&lt;syncfusion:OlapChart Name="olapchart1" ChartType="Pie" /&gt;
+<syncfusion:OlapChart Name="olapchart1" ChartType="Pie" />
 
 
 
@@ -1961,7 +1961,7 @@ olapChart.ChartType = ChartTypes.Pie
 
 A sample, which demonstrates the Pie chart, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Types\Pie Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Types\Pie Chart Demo
 
 ## Chart Palette
 
@@ -2019,7 +2019,7 @@ Me.olapchart1.ColorModel.Palette = CType(System.Enum.Parse(GetType(Syncfusion.Wi
 
 The following image shows before and after applying the EarthTone palette:
 
-{ ![](Core-Features_images/Core-Features_img33.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img33.png)' | markdownify }}
 {:.image }
 
 
@@ -2029,7 +2029,7 @@ Custom palettes can be applied to an OlapChart by setting the _“Interior”_ p
 
 A sample, which demonstrates all the series customization, can be found in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Customization\Series Customization Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Customization\Series Customization Demo
 
 See also
 
@@ -2041,11 +2041,11 @@ Excel like palettes are very useful in displaying the OlapChart in business appl
 
 The following type of excel like palettes are available:
 
-{ ![](Core-Features_images/Core-Features_img34.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img34.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Core-Features_images/Core-Features_img35.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img35.png)' | markdownify }}
 {:.image }
 
 
@@ -2257,13 +2257,13 @@ Me.olapchart1.Series(0).ShowToolTip = False
 
 While binding hierarchical dimensions (for example, the time dimension could include 3 levels namely Year, Quarter, and Month), the Chart allows you to visualize the data for different levels by using the collapsible labels. This is illustrated in the following screenshot:
 
-{ ![](Core-Features_images/Core-Features_img36.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img36.png)' | markdownify }}
 {:.image }
 
 
 A sample, which demonstrates the multiple level Drill-Down feature, is available in the following sample installation location.
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Creating Reports\Reports In Code
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Creating Reports\Reports In Code
 
 See also
 
@@ -2295,7 +2295,7 @@ this.olapchart1.OlapDataManager.CurrentReport.ShowExpanders = false;
 
 The following image shows an OlapChart with expanders disabled:
 
-{ ![](Core-Features_images/Core-Features_img37.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img37.png)' | markdownify }}
 {:.image }
 
 
@@ -2324,13 +2324,13 @@ The KPI Elements can be defined in the OlapReport in the following way:
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// OlapReport with KPI Elements
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
-        /// &lt;returns&gt;&lt;/returns&gt;
+        /// <returns></returns>
 
         private OlapReport LoadBasicKPI()
 
@@ -2410,13 +2410,13 @@ The KPI Elements can be defined in the OlapReport in the following way:
 
 
 
-    ''' &lt;summary&gt;
+    ''' <summary>
 
     ''' OlapReport with KPI Elements
 
-    ''' &lt;/summary&gt;
+    ''' </summary>
 
-    ''' &lt;returns&gt;&lt;/returns&gt;
+    ''' <returns></returns>
 
     Private Function LoadBasicKPI() As OlapReport
 
@@ -2476,7 +2476,7 @@ The KPI Elements can be defined in the OlapReport in the following way:
 
 
 
-{ ![](Core-Features_images/Core-Features_img38.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img38.png)' | markdownify }}
 {:.image }
 
 
@@ -2525,7 +2525,7 @@ The following topics illustrate the customization options provided by the Chart 
 
 A sample, which demonstrates all the appearance properties, is available in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Appearance
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Appearance
 
 ### Chart Style and Legends   
 
@@ -2625,13 +2625,13 @@ ChartDockPanel.SetDock(Me.olapchart1.Legend, ChartDock.Floating)
 
 
 
-{ ![](Core-Features_images/Core-Features_img39.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img39.png)' | markdownify }}
 {:.image }
 
 
 A sample, which demonstrates all the appearance properties, is available in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Appearance
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Appearance
 
 ### Chart Border and Background Style
 
@@ -2695,13 +2695,13 @@ Me.olapchart1.GridBackground = Brushes.LightGray
 
 
 
-{ ![](Core-Features_images/Core-Features_img40.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img40.png)' | markdownify }}
 {:.image }
 
 
 A sample, which demonstrates all the appearance properties, is available in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Appearance
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Appearance
 
 ### Chart Points Labels
 
@@ -2746,7 +2746,7 @@ Next series
 
 A sample, which demonstrates all the appearance properties, is available in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Appearance
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Appearance
 
 ### Chart Axis Labels
 
@@ -2856,25 +2856,25 @@ Me.olapchart1.SecondaryAxis.LabelFontWeight = FontWeights.Bold
 
 
 
-{ ![](Core-Features_images/Core-Features_img41.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img41.png)' | markdownify }}
 {:.image }
 
 
 A sample, which demonstrates all the appearance properties, is available in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Appearance
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Appearance
 
 ## Watermark
 
 OLAP Chart for WPF supports the watermark feature, which can be used to show text, image, or both as a watermark inside the chart area. There are many customization options available for the watermarked content. The content can be aligned both horizontally and vertically. Its Font style can be changed. The interior of the content can be customized and the opacity can also be varied.
 
-{ ![](Core-Features_images/Core-Features_img42.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img42.png)' | markdownify }}
 {:.image }
 
 
 A sample, which demonstrates all the watermark features, is available in the following installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Chart Appearance\Watermark Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Chart Appearance\Watermark Demo
 
 ## Theming
 
@@ -2920,7 +2920,7 @@ Sample Link
 
 A demo is available in the following location:
 
-&lt;InstalledDrive&gt;:\Users\&lt;UserName&gt;\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OlapChart.WPF\Samples\Appearance\Skin Customization Demo
+<InstalledDrive>:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OlapChart.WPF\Samples\Appearance\Skin Customization Demo
 
 ### Adding Theming to an Application 
 
@@ -2930,7 +2930,7 @@ The following code snippets demonstrate how theming is added to the OLAPChart co
 
 
 
-      &lt;syncfusion:OlapChart  x:Name="olapChart" VisualStyle="Transparent"/&gt; 
+      <syncfusion:OlapChart  x:Name="olapChart" VisualStyle="Transparent"/> 
 
 
 
@@ -2952,7 +2952,7 @@ OLAP Chart for WPF allows you to zoom into a narrower range within the OLAP Char
 
 In the Zooming mode, a Zooming toolkit is displayed at the top-left corner of the OLAP Chart. Using the buttons in the Zooming toolkit, ChartSeries can be zoomed in, out, reset, or closed.
 
-{ ![](Core-Features_images/Core-Features_img43.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img43.png)' | markdownify }}
 {:.image }
 
 
@@ -3025,7 +3025,7 @@ The following code snippet illustrates the above settings:
 
 
 
-&lt;/syncfusion:OlapChart&gt;
+</syncfusion:OlapChart>
 
 
 
@@ -3055,7 +3055,7 @@ ChartZoomingToolkit.SetZoomingToolkitVisibility(olapChart, Visibility.Visible)
 
 A sample, which demonstrates the zooming feature, is available in the following sample installation location:
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Zooming and Scrolling\Zooming and Scrolling Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Zooming and Scrolling\Zooming and Scrolling Demo
 
 ## Exporting
 
@@ -3067,7 +3067,7 @@ OLAP Chart can be exported into various image and document formats. The followin
 
 A sample, which demonstrates the Chart Export feature, is available in the following installation. location.
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Export and Print\Exporting Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Export and Print\Exporting Chart Demo
 
 ### Exporting as an Image
 
@@ -3083,7 +3083,7 @@ An OLAP Chart can be copied to the clipboard or exported as an image. It can be 
 
 A sample, which demonstrates this feature, is available in the following sample installation location.
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Export and Print\Exporting Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Export and Print\Exporting Chart Demo
 
 ### Exporting to Word Document
 
@@ -3151,13 +3151,13 @@ Me.olapchart1.ExportIntoTemplateDoc("..\..\OutputDocument\Document.doc",
 
 
 
-{ ![](Core-Features_images/Core-Features_img44.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img44.png)' | markdownify }}
 {:.image }
 
 
 A sample, which demonstrates this feature, is available in the following sample installation location.
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Export and Print\Exporting Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Export and Print\Exporting Chart Demo
 
 See also
 
@@ -3179,13 +3179,13 @@ Me.olapchart1.ExportIntoNewPdf("..\..\TemplateDocument\PdfDocument.pdf")
 
 
 
-{ ![](Core-Features_images/Core-Features_img45.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img45.png)' | markdownify }}
 {:.image }
 
 
 A sample, which demonstrates this feature, is available in the following sample installation location.
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Export and Print\Exporting Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Export and Print\Exporting Chart Demo
 
 ## Printing
 
@@ -3193,13 +3193,13 @@ Essential BI OLAP Chart for WPF supports the printing feature. OLAP Charts can b
 
 The following image illustrates printing a cropped image:
 
-{ ![](Core-Features_images/Core-Features_img46.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img46.png)' | markdownify }}
 {:.image }
 
 
 A sample, which demonstrates the Chart Print feature, is available in the below sample installation location.
 
-..\Syncfusion\&lt;Version Number&gt;\BI\WPF\OlapChart.WPF\Samples\Export and Print\Printing Chart Demo
+..\Syncfusion\<Version Number>\BI\WPF\OlapChart.WPF\Samples\Export and Print\Printing Chart Demo
 
 ## RTL Support
 
@@ -3235,7 +3235,7 @@ To enable RTL support, the FlowDirection property of the OLAP Chart control need
 
 [XAML]
 
-&lt;syncfusion:OlapChart x:Name="olapChart" FlowDirection="RightToLeft" HorizontalAlignment="Stretch" olapshared:DataSource.DataManagerName="localManager" olapshared:DataSource.ConnectionString="{Binding OlapConnectionString}"&gt;
+<syncfusion:OlapChart x:Name="olapChart" FlowDirection="RightToLeft" HorizontalAlignment="Stretch" olapshared:DataSource.DataManagerName="localManager" olapshared:DataSource.ConnectionString="{Binding OlapConnectionString}">
 
 
 
@@ -3253,7 +3253,7 @@ To enable RTL support, the FlowDirection property of the OLAP Chart control need
 
 
 
-{ ![](Core-Features_images/Core-Features_img47.png) | markdownify }
+{{ '![](Core-Features_images/Core-Features_img47.png)' | markdownify }}
 {:.image }
 
 
@@ -3261,5 +3261,5 @@ Sample Link
 
 A sample of RTL support is available locally in the following location:
 
-SystemDrive:\Users\&lt;user_name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version_number&gt;\BI\WPF\OlapChart.WPF\Localization\LocalizationDemo
+SystemDrive:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\OlapChart.WPF\Localization\LocalizationDemo
 

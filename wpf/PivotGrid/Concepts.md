@@ -67,17 +67,17 @@ PivotItem can be defined in XAML or in code-behind.
 
 
 
-  &lt;!--Defining Pivot Rows--&gt;
+  <!--Defining Pivot Rows-->
 
-  &lt;syncfusion:PivotGridControl.PivotRows&gt;
+  <syncfusion:PivotGridControl.PivotRows>
 
-     &lt;!--Adding PivotItem to PivotRows--&gt;
+     <!--Adding PivotItem to PivotRows-->
 
      <syncfusion:PivotItem FieldMappingName="Product" FieldHeader="Product" 
 
      TotalHeader="Total"/>                    
 
-  &lt;/syncfusion:PivotGridControl.PivotRows&gt; 
+  </syncfusion:PivotGridControl.PivotRows> 
 
 
 
@@ -125,11 +125,11 @@ this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Reverse Order Comparer for Descending sort order
 
-/// &lt;/summary&gt;
+/// </summary>
 
 public class ReverseOrderComparer : IComparer
 
@@ -179,11 +179,11 @@ Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Prod
 
 
 
-''' &lt;summary&gt;
+''' <summary>
 
 ''' Reverse Order Comparer for Descending sort order
 
-''' &lt;/summary&gt;
+''' </summary>
 
 public class ReverseOrderComparer : IComparer
 
@@ -301,29 +301,29 @@ Through XAML
 
  [XAML]
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adding PivotGrid Control--&gt;
+        <!—Adding PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
                                      ItemSource="{Binding Source={StaticResource data}}" >
 
-&lt;!--Defining Pivot Calculations --&gt;
+<!--Defining Pivot Calculations -->
 
-   &lt;syncfusion:PivotGridControl.PivotCalculations&gt;
+   <syncfusion:PivotGridControl.PivotCalculations>
 
-     &lt;!--Adding PivotComputationInfo to PivotCalculations--&gt;
+     <!--Adding PivotComputationInfo to PivotCalculations-->
 
      <syncfusion:PivotComputationInfo CalculationName = "Total" FieldName =   
 
      "Quantity" SummaryType="Count"/>
 
-   &lt;/syncfusion:PivotGridControl.PivotCalculations&gt;
+   </syncfusion:PivotGridControl.PivotCalculations>
 
   </syncfusion:PivotGridControl
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -378,7 +378,7 @@ The PivotComputationInfo property replaces each format specification in a specif
 
 
 
-&lt;!—Decimal Format--&gt;
+<!—Decimal Format-->
 
 <syncfusion:PivotComputationInfo CalculationName = "Total" FieldName =   
 
@@ -460,9 +460,9 @@ Through XAML
 
 [XAML]
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adding PivotGrid Control--&gt;
+        <!—Adding PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
@@ -470,11 +470,11 @@ Through XAML
 
 
 
-&lt;syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" DisplayOption="All" SummaryType="DoubleTotalSum"/&gt;
+<syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" DisplayOption="All" SummaryType="DoubleTotalSum"/>
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -522,7 +522,7 @@ End Sub
 
 
 
-{ ![](Concepts_images/Concepts_img1.png) | markdownify }
+{{ '![](Concepts_images/Concepts_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -544,9 +544,9 @@ Through XAML
 
 [XAML]
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adding PivotGrid Control--&gt;
+        <!—Adding PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
@@ -554,11 +554,11 @@ Through XAML
 
 
 
-&lt;syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" DisplayOption="Calculations" SummaryType="DoubleTotalSum"/&gt;
+<syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" DisplayOption="Calculations" SummaryType="DoubleTotalSum"/>
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -606,7 +606,7 @@ End Sub
 
 
 
-{ ![](Concepts_images/Concepts_img2.png) | markdownify }
+{{ '![](Concepts_images/Concepts_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -628,9 +628,9 @@ Through XAML
 
 [XAML]
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adding PivotGrid Control--&gt;
+        <!—Adding PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
@@ -638,11 +638,11 @@ Through XAML
 
 
 
-&lt;syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" DisplayOption="Summary" SummaryType="DoubleTotalSum"/&gt;
+<syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" DisplayOption="Summary" SummaryType="DoubleTotalSum"/>
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -690,7 +690,7 @@ End Sub
 
 
 
-{ ![](Concepts_images/Concepts_img3.png) | markdownify }
+{{ '![](Concepts_images/Concepts_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -712,9 +712,9 @@ Through XAML
 
 [XAML]
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adding PivotGrid Control--&gt;
+        <!—Adding PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
@@ -722,11 +722,11 @@ Through XAML
 
 
 
-&lt;syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" DisplayOption="GrandTotals" SummaryType="DoubleTotalSum"/&gt;
+<syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" DisplayOption="GrandTotals" SummaryType="DoubleTotalSum"/>
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -774,7 +774,7 @@ End Sub
 
 
 
-{ ![](Concepts_images/Concepts_img4.png) | markdownify }
+{{ '![](Concepts_images/Concepts_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -796,9 +796,9 @@ Through XAML
 
 [XAML]
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!—Adding PivotGrid Control--&gt;
+        <!—Adding PivotGrid Control-->
 
         <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
@@ -806,11 +806,11 @@ Through XAML
 
 
 
-&lt;syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" DisplayOption="None" SummaryType="DoubleTotalSum"/&gt;
+<syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" DisplayOption="None" SummaryType="DoubleTotalSum"/>
 
-&lt;/syncfusion:PivotGridControl&gt;
+</syncfusion:PivotGridControl>
 
-&lt;/Grid&gt;
+</Grid>
 
 
 
@@ -858,7 +858,7 @@ End Sub
 
 
 
-{ ![](Concepts_images/Concepts_img5.png) | markdownify }
+{{ '![](Concepts_images/Concepts_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -954,21 +954,21 @@ Through XAML
 
 [XAML]
 
-&lt;Grid&gt;
+<Grid>
 
-        &lt;!--Adding PivotGrid Control--&gt;
+        <!--Adding PivotGrid Control-->
 
-        &lt;syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"                                      ItemSource="{Binding Source={StaticResource data}}" &gt;
-
-
-
-&lt;syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" CalculationType="PercentageOfParentColumnTotal" /&gt;
+        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"                                      ItemSource="{Binding Source={StaticResource data}}" >
 
 
 
-&lt;/syncfusion:PivotGridControl&gt;
+<syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" SummaryType="DoubleTotalSum" CalculationType="PercentageOfParentColumnTotal" />
 
-&lt;/Grid&gt;
+
+
+</syncfusion:PivotGridControl>
+
+</Grid>
 
 
 
@@ -1027,7 +1027,7 @@ End Sub
 
 
 
-{ ![](Concepts_images/Concepts_img6.png) | markdownify }
+{{ '![](Concepts_images/Concepts_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -1107,7 +1107,7 @@ Description</td></tr>
 <tr>
 <td>
 PadString</td><td>
-You can use this property to specify a custom string in the Pivot Computation column instead of the cell’s original value. The default value is “*”.> {{ '_Note: The SummaryType enumerator must be set to DisplayIfDiscreteValuesEqual to use this property._' | markdownify }}</td></tr>
+You can use this property to specify a custom string in the Pivot Computation column instead of the cell’s original value. The default value is “*”.> {{{ ''_Note: The SummaryType enumerator must be set to DisplayIfDiscreteValuesEqual to use this property._'' | markdownify }}}</td></tr>
 </table>
 
 
@@ -1117,7 +1117,7 @@ Code Sample
 
 
 
-&lt;syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" SummaryType="DisplayIfDiscreteValuesEqual" PadString="***"/&gt;
+<syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" SummaryType="DisplayIfDiscreteValuesEqual" PadString="***"/>
 
 
 
@@ -1145,7 +1145,7 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() 
 
 Screenshot
 
-{ ![](Concepts_images/Concepts_img7.png) | markdownify }
+{{ '![](Concepts_images/Concepts_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -1191,7 +1191,7 @@ The following code sample explains how to set PadString to display the discrete 
 
 
 
-&lt;syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" SummaryType="DisplayIfDiscreteValuesEqual" PadString="999"/&gt;
+<syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" SummaryType="DisplayIfDiscreteValuesEqual" PadString="999"/>
 
 
 
@@ -1217,7 +1217,7 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() 
 
 
 
-{ ![](Concepts_images/Concepts_img8.png) | markdownify }
+{{ '![](Concepts_images/Concepts_img8.png)' | markdownify }}
 {:.image }
 
 

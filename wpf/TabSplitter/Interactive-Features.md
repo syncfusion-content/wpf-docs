@@ -17,21 +17,21 @@ TabSplitter contains one or more pages that are defined as TabSplitter Items. Us
 
 [XAML]
 
- &lt;!-- Adding TabSplitter --&gt;
+ <!-- Adding TabSplitter -->
 
-&lt;syncfusion:TabSplitter Name="tabsplitter"&gt;
-
-
-
-    &lt;!-- Adding TabSplitterItem --&gt;
-
-   &lt;syncfusion:TabSplitterItem Header="Window1.xaml" Name="tabSplitterItem1"&gt;
-
-    &lt;/syncfusion:TabSplitterItem&gt;
+<syncfusion:TabSplitter Name="tabsplitter">
 
 
 
-&lt;/syncfusion:TabSplitter&gt;
+    <!-- Adding TabSplitterItem -->
+
+   <syncfusion:TabSplitterItem Header="Window1.xaml" Name="tabSplitterItem1">
+
+    </syncfusion:TabSplitterItem>
+
+
+
+</syncfusion:TabSplitter>
 
 
 
@@ -71,7 +71,7 @@ this.Content = tabsplitter;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img1.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -94,59 +94,59 @@ TabSplitter Items contains a collection of pages. These pages are defined as Pan
 
 
 
-&lt;!-- Adding TabSplitter --&gt;
+<!-- Adding TabSplitter -->
 
-&lt;syncfusion:TabSplitter Name="tabsplitter"&gt;
-
-
-
-    &lt;!-- Adding TabSplitterItem --&gt;
-
-&lt;syncfusion:TabSplitterItem Header="Window1.xaml"  Name="tabSplitterItem1"&gt;
+<syncfusion:TabSplitter Name="tabsplitter">
 
 
 
-        &lt;!-- Adding TopPanelItems --&gt;
+    <!-- Adding TabSplitterItem -->
 
-        &lt;syncfusion:TabSplitterItem.TopPanelItems&gt;
-
-
-
-            &lt;!-- Adding SplitterPage --&gt;
-
-            &lt;syncfusion:SplitterPage Name="splitterPage1" Header="XAML"&gt;
-
-            &lt;/syncfusion:SplitterPage&gt;
+<syncfusion:TabSplitterItem Header="Window1.xaml"  Name="tabSplitterItem1">
 
 
 
-        &lt;/syncfusion:TabSplitterItem.TopPanelItems&gt;
+        <!-- Adding TopPanelItems -->
+
+        <syncfusion:TabSplitterItem.TopPanelItems>
 
 
 
-        &lt;!-- Adding BottomPanelItems --&gt;
+            <!-- Adding SplitterPage -->
 
-        &lt;syncfusion:TabSplitterItem.BottomPanelItems&gt;
+            <syncfusion:SplitterPage Name="splitterPage1" Header="XAML">
 
-
-
-            &lt;!-- Adding SplitterPage --&gt;
-
-            &lt;syncfusion:SplitterPage Name="splitterPage2" Header="Design"&gt;
-
-            &lt;/syncfusion:SplitterPage&gt;
+            </syncfusion:SplitterPage>
 
 
 
-        &lt;/syncfusion:TabSplitterItem.BottomPanelItems&gt;
+        </syncfusion:TabSplitterItem.TopPanelItems>
 
 
 
-    &lt;/syncfusion:TabSplitterItem&gt;
+        <!-- Adding BottomPanelItems -->
+
+        <syncfusion:TabSplitterItem.BottomPanelItems>
 
 
 
-&lt;/syncfusion:TabSplitter&gt;
+            <!-- Adding SplitterPage -->
+
+            <syncfusion:SplitterPage Name="splitterPage2" Header="Design">
+
+            </syncfusion:SplitterPage>
+
+
+
+        </syncfusion:TabSplitterItem.BottomPanelItems>
+
+
+
+    </syncfusion:TabSplitterItem>
+
+
+
+</syncfusion:TabSplitter>
 
 
 
@@ -214,7 +214,7 @@ this.Content = tabsplitter;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img2.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -230,59 +230,59 @@ You can split the pages in the TabSplitter Item by using the SplitterPage. The f
 
 
 
-&lt;!-- Adding TabSplitter --&gt;
+<!-- Adding TabSplitter -->
 
-&lt;syncfusion:TabSplitter Name="tabsplitter"&gt;
-
-
-
-    &lt;!-- Adding TabSplitterItem --&gt;
-
-  &lt;syncfusion:TabSplitterItem Header="Window1.xaml" Name="tabSplitterItem1"&gt;
+<syncfusion:TabSplitter Name="tabsplitter">
 
 
 
-        &lt;!-- Adding TopPanelItems --&gt;
+    <!-- Adding TabSplitterItem -->
 
-        &lt;syncfusion:TabSplitterItem.TopPanelItems&gt;
-
-
-
-            &lt;!-- Adding SplitterPage --&gt;
-
-            &lt;syncfusion:SplitterPage Name="splitterPage1" Header="XAML"&gt;
-
-            &lt;/syncfusion:SplitterPage&gt;
+  <syncfusion:TabSplitterItem Header="Window1.xaml" Name="tabSplitterItem1">
 
 
 
-        &lt;/syncfusion:TabSplitterItem.TopPanelItems&gt;
+        <!-- Adding TopPanelItems -->
+
+        <syncfusion:TabSplitterItem.TopPanelItems>
 
 
 
-        &lt;!-- Adding BottomPanelItems --&gt;
+            <!-- Adding SplitterPage -->
 
-        &lt;syncfusion:TabSplitterItem.BottomPanelItems&gt;
+            <syncfusion:SplitterPage Name="splitterPage1" Header="XAML">
 
-
-
-            &lt;!-- Adding Splitter Page --&gt;
-
-            &lt;syncfusion:SplitterPage Name="splitterPage2" Header="Design"&gt;
-
-            &lt;/syncfusion:SplitterPage&gt;
+            </syncfusion:SplitterPage>
 
 
 
-        &lt;/syncfusion:TabSplitterItem.BottomPanelItems&gt;
+        </syncfusion:TabSplitterItem.TopPanelItems>
 
 
 
-    &lt;/syncfusion:TabSplitterItem&gt;
+        <!-- Adding BottomPanelItems -->
+
+        <syncfusion:TabSplitterItem.BottomPanelItems>
 
 
 
-&lt;/syncfusion:TabSplitter&gt;
+            <!-- Adding Splitter Page -->
+
+            <syncfusion:SplitterPage Name="splitterPage2" Header="Design">
+
+            </syncfusion:SplitterPage>
+
+
+
+        </syncfusion:TabSplitterItem.BottomPanelItems>
+
+
+
+    </syncfusion:TabSplitterItem>
+
+
+
+</syncfusion:TabSplitter>
 
 
 
@@ -350,7 +350,7 @@ this.Content = tabsplitter;
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img3.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -366,57 +366,57 @@ You can collapse or expand the Bottom Panel by using the IsCollapsedBottomPanel 
 
 
 
-&lt;!-- Adding TabSplitter --&gt;
+<!-- Adding TabSplitter -->
 
-&lt;syncfusion:TabSplitter Name="tabsplitter"&gt;
-
-
-
-    &lt;!-- Adding TabSplitterItem --&gt;
-
-    &lt;syncfusion:TabSplitterItem Header="Window1.xaml" IsCollapsedBottomPanel="True" Name="tabSplitterItem1"&gt;
+<syncfusion:TabSplitter Name="tabsplitter">
 
 
 
-        &lt;!-- Adding TopPanelItems --&gt;
+    <!-- Adding TabSplitterItem -->
 
-        &lt;syncfusion:TabSplitterItem.TopPanelItems&gt;
-
-
-
-            &lt;!-- Adding SplitterPage --&gt;
-
-            &lt;syncfusion:SplitterPage Name="splitterPage1" Header="XAML"&gt;
-
-            &lt;/syncfusion:SplitterPage&gt;
-
-        &lt;/syncfusion:TabSplitterItem.TopPanelItems&gt;
+    <syncfusion:TabSplitterItem Header="Window1.xaml" IsCollapsedBottomPanel="True" Name="tabSplitterItem1">
 
 
 
-        &lt;!-- Adding BottomPanelItems --&gt;
+        <!-- Adding TopPanelItems -->
 
-        &lt;syncfusion:TabSplitterItem.BottomPanelItems&gt;
-
-
-
-            &lt;!-- Adding SplitterPage --&gt;
-
-            &lt;syncfusion:SplitterPage Name="splitterPage2" Header="Design"&gt;
-
-            &lt;/syncfusion:SplitterPage&gt;
+        <syncfusion:TabSplitterItem.TopPanelItems>
 
 
 
-        &lt;/syncfusion:TabSplitterItem.BottomPanelItems&gt;
+            <!-- Adding SplitterPage -->
+
+            <syncfusion:SplitterPage Name="splitterPage1" Header="XAML">
+
+            </syncfusion:SplitterPage>
+
+        </syncfusion:TabSplitterItem.TopPanelItems>
 
 
 
-    &lt;/syncfusion:TabSplitterItem&gt;
+        <!-- Adding BottomPanelItems -->
+
+        <syncfusion:TabSplitterItem.BottomPanelItems>
 
 
 
-&lt;/syncfusion:TabSplitter&gt;
+            <!-- Adding SplitterPage -->
+
+            <syncfusion:SplitterPage Name="splitterPage2" Header="Design">
+
+            </syncfusion:SplitterPage>
+
+
+
+        </syncfusion:TabSplitterItem.BottomPanelItems>
+
+
+
+    </syncfusion:TabSplitterItem>
+
+
+
+</syncfusion:TabSplitter>
 
 
 
@@ -434,7 +434,7 @@ tabSplitterItem1.IsCollapsedBottomPanel = true; 
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img4.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -450,51 +450,51 @@ You can set the height of the BottomPanel in TabSplitter using BottomPanelHeight
 
 
 
-&lt;!-- Adding TabSplitter --&gt;
+<!-- Adding TabSplitter -->
 
-&lt;syncfusion:TabSplitter BottomPanelHeight="150"&gt;
-
-
-
-        &lt;!-- Adding TabSplitterItem --&gt;
-
-            &lt;syncfusion:TabSplitterItem Header="MainWindow.xaml"&gt;
+<syncfusion:TabSplitter BottomPanelHeight="150">
 
 
 
-&lt;!-- Adding TopPanelItems --&gt;
+        <!-- Adding TabSplitterItem -->
 
-                &lt;syncfusion:TabSplitterItem.TopPanelItems&gt;
-
-
-
-                    &lt;syncfusion:SplitterPage Header="Design" /&gt;
+            <syncfusion:TabSplitterItem Header="MainWindow.xaml">
 
 
 
-                &lt;/syncfusion:TabSplitterItem.TopPanelItems&gt;
+<!-- Adding TopPanelItems -->
+
+                <syncfusion:TabSplitterItem.TopPanelItems>
 
 
 
-&lt;!-- Adding BottomPanelItems --&gt;
-
-                &lt;syncfusion:TabSplitterItem.BottomPanelItems&gt;
+                    <syncfusion:SplitterPage Header="Design" />
 
 
 
-                    &lt;syncfusion:SplitterPage Header="XAML"/&gt;
+                </syncfusion:TabSplitterItem.TopPanelItems>
 
 
 
-                &lt;/syncfusion:TabSplitterItem.BottomPanelItems&gt;
+<!-- Adding BottomPanelItems -->
+
+                <syncfusion:TabSplitterItem.BottomPanelItems>
 
 
 
-            &lt;/syncfusion:TabSplitterItem&gt;
+                    <syncfusion:SplitterPage Header="XAML"/>
 
 
 
- &lt;/syncfusion:TabSplitter&gt;
+                </syncfusion:TabSplitterItem.BottomPanelItems>
+
+
+
+            </syncfusion:TabSplitterItem>
+
+
+
+ </syncfusion:TabSplitter>
 
 
 
@@ -516,7 +516,7 @@ You can set the height of the BottomPanel in TabSplitter using BottomPanelHeight
 
 
 
-{ ![](Interactive-Features_images/Interactive-Features_img5.png) | markdownify }
+{{ '![](Interactive-Features_images/Interactive-Features_img5.png)' | markdownify }}
 {:.image }
 
 

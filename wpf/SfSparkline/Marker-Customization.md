@@ -21,17 +21,17 @@ MarkerVisibility="Visible" Padding="20"
 
                YBindingPath="NoOfUsers">
 
-  &lt;Syncfusion:SfLineSparkline.MarkerTemplateSelector&gt;
+  <Syncfusion:SfLineSparkline.MarkerTemplateSelector>
 
-                &lt;Syncfusion:MarkerTemplateSelector FirstPointBrush="Yellow" LastPointBrush="Yellow" HighPointBrush="Red" MarkerHeight="15" MarkerWidth="15"/&gt;
+                <Syncfusion:MarkerTemplateSelector FirstPointBrush="Yellow" LastPointBrush="Yellow" HighPointBrush="Red" MarkerHeight="15" MarkerWidth="15"/>
 
-            &lt;/Syncfusion:SfLineSparkline.MarkerTemplateSelector&gt;
+            </Syncfusion:SfLineSparkline.MarkerTemplateSelector>
 
-  &lt;/Syncfusion:SfLineSparkline &gt;
+  </Syncfusion:SfLineSparkline >
 
 Following is the snapshot above code,
 
-{ ![C:/Users/ApoorvahR/Desktop/7.png](Marker-Customization_images/Marker-Customization_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/7.png](Marker-Customization_images/Marker-Customization_img1.png)' | markdownify }}
 {:.image }
 
 

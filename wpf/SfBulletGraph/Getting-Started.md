@@ -45,7 +45,7 @@ Code example
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid x:Name="LayoutRoot"&gt;
+    <Grid x:Name="LayoutRoot">
 
         <syncfusion:SfBulletGraph Orientation="Horizontal" LabelStroke="Black" MajorTickStroke="Black" TickPosition="Below" LabelPosition="Below"  FeaturedMeasure="4.5" ComparativeMeasure="7" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -53,7 +53,7 @@ Code example
 
                                   QuantitativeScaleLength="400">
 
-                &lt;syncfusion:SfBulletGraph.QualitativeRanges&gt;
+                <syncfusion:SfBulletGraph.QualitativeRanges>
 
                     <syncfusion:QualitativeRange RangeEnd="4.5" 
 
@@ -61,7 +61,7 @@ Code example
 
                                              RangeOpacity="1">
 
-                    &lt;/syncfusion:QualitativeRange&gt;
+                    </syncfusion:QualitativeRange>
 
                     <syncfusion:QualitativeRange RangeEnd="7.5" 
 
@@ -69,7 +69,7 @@ Code example
 
                                              RangeOpacity="1">
 
-                    &lt;/syncfusion:QualitativeRange&gt;
+                    </syncfusion:QualitativeRange>
 
                     <syncfusion:QualitativeRange RangeEnd="10" 
 
@@ -77,15 +77,15 @@ Code example
 
                                              RangeOpacity="1">
 
-                    &lt;/syncfusion:QualitativeRange&gt;
+                    </syncfusion:QualitativeRange>
 
-                &lt;/syncfusion:SfBulletGraph.QualitativeRanges&gt;
+                </syncfusion:SfBulletGraph.QualitativeRanges>
 
-            &lt;/syncfusion:SfBulletGraph&gt;
+            </syncfusion:SfBulletGraph>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -127,7 +127,7 @@ Code example
 
 
 
-{ ![C:/Users/Giftline/Desktop/blessy1.jpg](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+{{ '![C:/Users/Giftline/Desktop/blessy1.jpg](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -139,35 +139,35 @@ To Add SfBulletGraph Control, follow the steps:
 
 1. Create a simple WPF application by using Visual Studio.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
 2. Right-Click on the Project and select SyncfusionReferenceManager.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
 3. The Syncfusion Reference Manager Wizard opens as follows.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
 4. Search SfBulletGraph by using SearchBox and select SfBulletGraph Control.  Click done to add the selected SfBulletGraph Control.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
 5. The SfBulletGraph assemblies is automatically added to the Project after Clicking OK.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -197,7 +197,7 @@ To Add SfBulletGraph Control, follow the steps:
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid x:Name="LayoutRoot"&gt;
+    <Grid x:Name="LayoutRoot">
 
         <syncfusion:SfBulletGraph Orientation="Horizontal" LabelStroke="Black" MajorTickStroke="Black" TickPosition="Below" LabelPosition="Below"  FeaturedMeasure="4.5" ComparativeMeasure="7" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -205,7 +205,7 @@ To Add SfBulletGraph Control, follow the steps:
 
                                   QuantitativeScaleLength="400">
 
-                &lt;syncfusion:SfBulletGraph.QualitativeRanges&gt;
+                <syncfusion:SfBulletGraph.QualitativeRanges>
 
                     <syncfusion:QualitativeRange RangeEnd="4.5" 
 
@@ -213,7 +213,7 @@ To Add SfBulletGraph Control, follow the steps:
 
                                              RangeOpacity="1">
 
-                    &lt;/syncfusion:QualitativeRange&gt;
+                    </syncfusion:QualitativeRange>
 
                     <syncfusion:QualitativeRange RangeEnd="7.5" 
 
@@ -221,7 +221,7 @@ To Add SfBulletGraph Control, follow the steps:
 
                                              RangeOpacity="1">
 
-                    &lt;/syncfusion:QualitativeRange&gt;
+                    </syncfusion:QualitativeRange>
 
                     <syncfusion:QualitativeRange RangeEnd="10" 
 
@@ -229,15 +229,15 @@ To Add SfBulletGraph Control, follow the steps:
 
                                              RangeOpacity="1">
 
-                    &lt;/syncfusion:QualitativeRange&gt;
+                    </syncfusion:QualitativeRange>
 
-                &lt;/syncfusion:SfBulletGraph.QualitativeRanges&gt;
+                </syncfusion:SfBulletGraph.QualitativeRanges>
 
-            &lt;/syncfusion:SfBulletGraph&gt;
+            </syncfusion:SfBulletGraph>
 
-    &lt;/Grid&gt;
+    </Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -305,7 +305,7 @@ namespace BulletGraph
 
 8.  The simple SfBulletGraph control is created as follows.
 
-{ ![C:/Users/Giftline/Desktop/blessy2.jpg](Getting-Started_images/Getting-Started_img8.jpeg) | markdownify }
+{{ '![C:/Users/Giftline/Desktop/blessy2.jpg](Getting-Started_images/Getting-Started_img8.jpeg)' | markdownify }}
 {:.image }
 
 

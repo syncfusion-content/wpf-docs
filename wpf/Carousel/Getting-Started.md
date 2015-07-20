@@ -11,7 +11,7 @@ documentation: ug
 
 ## Structure of the Carousel Control
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -25,7 +25,7 @@ Follow the steps to add the Carousel control by using VisualStudio.
 
 1. Open Visual Studio. On the File menu, select New -> Project. This opens the New Project Dialog box.
 
-{ ![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -66,82 +66,82 @@ The following code shows how Carousel can be added to an application by using Vi
 
 
 
-&lt;syncfusion:Carousel x:Name="carousel" Height="400" Width="450"&gt;
-    &lt;syncfusion:Carousel.Path&gt;
-        &lt;Path Data="M0,300 L600,300" Stroke="Blue" StrokeThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/&gt;
-    &lt;/syncfusion:Carousel.Path&gt;
-    &lt;syncfusion:CarouselItem&gt;
-        &lt;syncfusion:CarouselItem.Content&gt;
+<syncfusion:Carousel x:Name="carousel" Height="400" Width="450">
+    <syncfusion:Carousel.Path>
+        <Path Data="M0,300 L600,300" Stroke="Blue" StrokeThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+    </syncfusion:Carousel.Path>
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
 
-            &lt;Viewbox Height="100" Width="100"&gt;
-                &lt;Image Source="/CarouselDemo;component/Images/Chrysanthemum.jpg"/&gt;
-            &lt;/Viewbox&gt;
-        &lt;/syncfusion:CarouselItem.Content&gt;
-    &lt;/syncfusion:CarouselItem&gt;
+            <Viewbox Height="100" Width="100">
+                <Image Source="/CarouselDemo;component/Images/Chrysanthemum.jpg"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
 
-    &lt;syncfusion:CarouselItem&gt;
-        &lt;syncfusion:CarouselItem.Content&gt;
-            &lt;Viewbox Height="100" Width="100"&gt;
-                &lt;Image Source="/CarouselDemo;component/Images/Desert.jpg"/&gt;
-            &lt;/Viewbox&gt;
-        &lt;/syncfusion:CarouselItem.Content&gt;
-    &lt;/syncfusion:CarouselItem&gt;
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
+            <Viewbox Height="100" Width="100">
+                <Image Source="/CarouselDemo;component/Images/Desert.jpg"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
 
-    &lt;syncfusion:CarouselItem&gt;
-        &lt;syncfusion:CarouselItem.Content&gt;
-            &lt;Viewbox Height="100" Width="100"&gt;
-                &lt;Image Source="/CarouselDemo;component/Images/Hydrangeas.jpg"/&gt;
-            &lt;/Viewbox&gt;
-        &lt;/syncfusion:CarouselItem.Content&gt;
-    &lt;/syncfusion:CarouselItem&gt;
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
+            <Viewbox Height="100" Width="100">
+                <Image Source="/CarouselDemo;component/Images/Hydrangeas.jpg"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
 
-    &lt;syncfusion:CarouselItem&gt;
-        &lt;syncfusion:CarouselItem.Content&gt;
-            &lt;Viewbox Height="100" Width="100"&gt;
-                &lt;Image Source="/CarouselDemo;component/Images/Jellyfish.jpg"/&gt;
-            &lt;/Viewbox&gt;
-        &lt;/syncfusion:CarouselItem.Content&gt;
-    &lt;/syncfusion:CarouselItem&gt;
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
+            <Viewbox Height="100" Width="100">
+                <Image Source="/CarouselDemo;component/Images/Jellyfish.jpg"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
 
-    &lt;syncfusion:CarouselItem&gt;
-        &lt;syncfusion:CarouselItem.Content&gt;
-            &lt;Viewbox Height="100" Width="100"&gt;
-                &lt;Image Source="/CarouselDemo;component/Images/Koala.jpg"/&gt;
-            &lt;/Viewbox&gt;
-        &lt;/syncfusion:CarouselItem.Content&gt;
-    &lt;/syncfusion:CarouselItem&gt;
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
+            <Viewbox Height="100" Width="100">
+                <Image Source="/CarouselDemo;component/Images/Koala.jpg"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
 
-    &lt;syncfusion:CarouselItem&gt;
-        &lt;syncfusion:CarouselItem.Content&gt;
-            &lt;Viewbox Height="100" Width="100"&gt;
-                &lt;Image Source="/CarouselDemo;component/Images/Lighthouse.jpg"/&gt;
-            &lt;/Viewbox&gt;
-        &lt;/syncfusion:CarouselItem.Content&gt;
-    &lt;/syncfusion:CarouselItem&gt;
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
+            <Viewbox Height="100" Width="100">
+                <Image Source="/CarouselDemo;component/Images/Lighthouse.jpg"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
 
-    &lt;syncfusion:CarouselItem&gt;
-        &lt;syncfusion:CarouselItem.Content&gt;
-            &lt;Viewbox Height="100" Width="100"&gt;
-                &lt;Image Source="/CarouselDemo;component/Images/Penguins.jpg"/&gt;
-            &lt;/Viewbox&gt;
-        &lt;/syncfusion:CarouselItem.Content&gt;
-    &lt;/syncfusion:CarouselItem&gt;
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
+            <Viewbox Height="100" Width="100">
+                <Image Source="/CarouselDemo;component/Images/Penguins.jpg"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
 
-    &lt;syncfusion:CarouselItem&gt;
-        &lt;syncfusion:CarouselItem.Content&gt;
-            &lt;Viewbox Height="100" Width="100"&gt;
-                &lt;Image Source="/CarouselDemo;component/Images/Tulips.jpg"/&gt;
-            &lt;/Viewbox&gt;
-        &lt;/syncfusion:CarouselItem.Content&gt;
-    &lt;/syncfusion:CarouselItem&gt;
+    <syncfusion:CarouselItem>
+        <syncfusion:CarouselItem.Content>
+            <Viewbox Height="100" Width="100">
+                <Image Source="/CarouselDemo;component/Images/Tulips.jpg"/>
+            </Viewbox>
+        </syncfusion:CarouselItem.Content>
+    </syncfusion:CarouselItem>
 
-&lt;/syncfusion:Carousel&gt;
-
-
+</syncfusion:Carousel>
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+
+
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -153,7 +153,7 @@ Follow the steps to add Carousel in an application by using Blend.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -163,7 +163,7 @@ Follow the steps to add Carousel in an application by using Blend.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -181,7 +181,7 @@ Syncfusion.Shared.Wpf.dll
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 

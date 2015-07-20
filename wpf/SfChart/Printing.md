@@ -37,17 +37,17 @@ The following code example illustrates the Printing feature.
 
                     >
 
-            &lt;syncfusion:SfChart.PrimaryAxis&gt;
+            <syncfusion:SfChart.PrimaryAxis>
 
-                &lt;syncfusion:NumericalAxis Interval="2" FontSize="14" /&gt;
+                <syncfusion:NumericalAxis Interval="2" FontSize="14" />
 
-            &lt;/syncfusion:SfChart.PrimaryAxis&gt;
+            </syncfusion:SfChart.PrimaryAxis>
 
-            &lt;syncfusion:SfChart.SecondaryAxis&gt;
+            <syncfusion:SfChart.SecondaryAxis>
 
-                &lt;syncfusion:NumericalAxis FontSize="14"/&gt;
+                <syncfusion:NumericalAxis FontSize="14"/>
 
-            &lt;/syncfusion:SfChart.SecondaryAxis&gt;
+            </syncfusion:SfChart.SecondaryAxis>
 
 
 
@@ -73,7 +73,7 @@ private void ChartOnLoaded(object sender, RoutedEventArgs routedEventArgs)
 
 The following screenshot illustrates Printing.
 
-{ ![C:/Users/rachel/Desktop/snaps/20.png](Printing_images/Printing_img1.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/snaps/20.png](Printing_images/Printing_img1.png)' | markdownify }}
 {:.image }
 
 

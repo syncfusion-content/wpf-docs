@@ -18,7 +18,7 @@ You can use CanResizePopup property to attain this functionality by setting the 
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:AutoComplete x:Name="AutoComplete1" CanResizePopup ="true" /&gt;</td></tr>
+[XAML]<syncfusion:AutoComplete x:Name="AutoComplete1" CanResizePopup ="true" /></td></tr>
 <tr>
 <td>
 [C#]AutoComplete autoComplete1 = new AutoComplete();autoComplete1. CanResizePopup = true;</td></tr>

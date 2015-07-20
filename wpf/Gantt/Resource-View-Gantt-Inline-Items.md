@@ -76,7 +76,7 @@ The following code illustrates this.
 
                     ItemsSource="{Binding TeamDetails}">
 
-                &lt;gantt:GanttControl.TaskAttributeMapping&gt;
+                <gantt:GanttControl.TaskAttributeMapping>
 
                     <gantt:TaskAttributeMapping TaskNameMapping="Name"
 
@@ -88,9 +88,9 @@ The following code illustrates this.
 
                                            InLineTaskMapping="InLineItems"/>
 
-                &lt;/gantt:GanttControl.TaskAttributeMapping&gt;
+                </gantt:GanttControl.TaskAttributeMapping>
 
-&lt;/gantt:GanttControl&gt;
+</gantt:GanttControl>
 
 
 
@@ -148,7 +148,7 @@ The following shows the Resultant output:
 
 
 
-{ ![](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img1.png) | markdownify }
+{{ '![](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -167,12 +167,12 @@ The following code sample illustrates this:
 
 
 
- &lt;gantt:GanttControl Grid.Row="1" x:Name="Gantt"&gt;
-                &lt;gantt:GanttControl.TaskAttributeMapping&gt;
-                    &lt;gantt:TaskAttributeMapping                                             TaskNameMapping="Name"                                            StartDateMapping="StartDate"                                             ChildMapping="SubItems"                                            FinishDateMapping="FinishDate"                                            InLineTaskMapping="InLineItems"&gt;
-                    &lt;/gantt:TaskAttributeMapping&gt;
-                &lt;/gantt:GanttControl.TaskAttributeMapping&gt;
- &lt;/gantt:GanttControl&gt;
+ <gantt:GanttControl Grid.Row="1" x:Name="Gantt">
+                <gantt:GanttControl.TaskAttributeMapping>
+                    <gantt:TaskAttributeMapping                                             TaskNameMapping="Name"                                            StartDateMapping="StartDate"                                             ChildMapping="SubItems"                                            FinishDateMapping="FinishDate"                                            InLineTaskMapping="InLineItems">
+                    </gantt:TaskAttributeMapping>
+                </gantt:GanttControl.TaskAttributeMapping>
+ </gantt:GanttControl>
 
 
 
@@ -208,7 +208,7 @@ The following image shows the resultant output:
 
 
 
-{ ![](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img2.png) | markdownify }
+{{ '![](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -220,7 +220,7 @@ The following is the data structure used to build a Resource view Gantt:
 
 
 
-{ ![](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img3.png) | markdownify }
+{{ '![](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img3.png)' | markdownify }}
 {:.image }
 
 

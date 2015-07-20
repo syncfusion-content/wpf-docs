@@ -35,7 +35,7 @@ In this navigation mode, the header of current hierarchy level item can be displ
 
 
 
-{ ![](Navigation-Mode_images/Navigation-Mode_img1.png) | markdownify }
+{{ '![](Navigation-Mode_images/Navigation-Mode_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -65,7 +65,7 @@ In this navigation mode, header of each level from the root to current level sta
 
 
 
-{ ![](Navigation-Mode_images/Navigation-Mode_img2.png) | markdownify }
+{{ '![](Navigation-Mode_images/Navigation-Mode_img2.png)' | markdownify }}
 {:.image }
 
 

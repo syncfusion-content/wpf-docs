@@ -32,63 +32,63 @@ AnnotationLabel’s appearance is customized by the following properties:
 
 
 
-&lt;syncfusion:SfMap &gt;         
+<syncfusion:SfMap >         
 
-&lt;syncfusion:SfMap.Layers&gt;
+<syncfusion:SfMap.Layers>
 
-&lt;syncfusion:ShapeFileLayer   Uri="MapApp.world1.shp"&gt;                    
+<syncfusion:ShapeFileLayer   Uri="MapApp.world1.shp">                    
 
-&lt;syncfusion:ShapeFileLayer.Annotations&gt;
+<syncfusion:ShapeFileLayer.Annotations>
 
-&lt;syncfusion:MapAnnotations Latitude="-22" Longitude="132" AnnotationLabel="Australia" AnnotationLabelFontFamily="Times New Roman" AnnotationLabelFontSize="20" AnnotationLabelFontStyle="Oblique" AnnotationLabelForeground="Red" &gt;
+<syncfusion:MapAnnotations Latitude="-22" Longitude="132" AnnotationLabel="Australia" AnnotationLabelFontFamily="Times New Roman" AnnotationLabelFontSize="20" AnnotationLabelFontStyle="Oblique" AnnotationLabelForeground="Red" >
 
-&lt;syncfusion:MapAnnotations.AnnotationSymbol&gt;
+<syncfusion:MapAnnotations.AnnotationSymbol>
 
-&lt;Ellipse Fill="Orange" Height="10" Width="10"&gt;                                    
+<Ellipse Fill="Orange" Height="10" Width="10">                                    
 
-&lt;/Ellipse&gt;
+</Ellipse>
 
-&lt;/syncfusion:MapAnnotations.AnnotationSymbol&gt;
+</syncfusion:MapAnnotations.AnnotationSymbol>
 
-&lt;/syncfusion:MapAnnotations&gt;
+</syncfusion:MapAnnotations>
 
-&lt;syncfusion:MapAnnotations Latitude="40" Longitude="-98" AnnotationLabel="Unites States of America" AnnotationLabelFontFamily="Times New Roman" AnnotationLabelFontSize="20" AnnotationLabelFontStyle="Oblique" AnnotationLabelForeground="Red" &gt;
+<syncfusion:MapAnnotations Latitude="40" Longitude="-98" AnnotationLabel="Unites States of America" AnnotationLabelFontFamily="Times New Roman" AnnotationLabelFontSize="20" AnnotationLabelFontStyle="Oblique" AnnotationLabelForeground="Red" >
 
-&lt;syncfusion:MapAnnotations.AnnotationSymbol&gt;
+<syncfusion:MapAnnotations.AnnotationSymbol>
 
-&lt;Ellipse Fill="Orange" Height="10" Width="10"&gt;
+<Ellipse Fill="Orange" Height="10" Width="10">
 
-&lt;/Ellipse&gt;
+</Ellipse>
 
-&lt;/syncfusion:MapAnnotations.AnnotationSymbol&gt;
+</syncfusion:MapAnnotations.AnnotationSymbol>
 
-&lt;/syncfusion:MapAnnotations&gt;
+</syncfusion:MapAnnotations>
 
-&lt;/syncfusion:ShapeFileLayer.Annotations&gt;
-
-
+</syncfusion:ShapeFileLayer.Annotations>
 
 
 
-&lt;syncfusion:ShapeFileLayer.ShapeSettings&gt;
-
-&lt;syncfusion:ShapeSetting&gt;
 
 
+<syncfusion:ShapeFileLayer.ShapeSettings>
 
-&lt;/syncfusion:ShapeSetting&gt;
-
-&lt;/syncfusion:ShapeFileLayer.ShapeSettings&gt;
-
-&lt;/syncfusion:ShapeFileLayer&gt;
-
-&lt;/syncfusion:SfMap.Layers&gt;
-
-&lt;/syncfusion:SfMap &gt;
+<syncfusion:ShapeSetting>
 
 
 
-{ ![](Annotations_images/Annotations_img1.png) | markdownify }
+</syncfusion:ShapeSetting>
+
+</syncfusion:ShapeFileLayer.ShapeSettings>
+
+</syncfusion:ShapeFileLayer>
+
+</syncfusion:SfMap.Layers>
+
+</syncfusion:SfMap >
+
+
+
+{{ '![](Annotations_images/Annotations_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -106,75 +106,75 @@ AnnotationTemplateis a DataTemplate type, used to customize or override the defa
 
 [XAML]
 
-&lt;syncfusion:SfMap &gt;
+<syncfusion:SfMap >
 
-            &lt;syncfusion:SfMap.Layers&gt;
+            <syncfusion:SfMap.Layers>
 
-                &lt;syncfusion:ShapeFileLayer   Uri="MapApp.world1.shp"&gt;
+                <syncfusion:ShapeFileLayer   Uri="MapApp.world1.shp">
 
-                    &lt;syncfusion:ShapeFileLayer.AnnotationTemplate&gt;
+                    <syncfusion:ShapeFileLayer.AnnotationTemplate>
 
-                        &lt;DataTemplate&gt;
+                        <DataTemplate>
 
-                            &lt;Grid Margin="-50,-20,0,0"&gt;
+                            <Grid Margin="-50,-20,0,0">
 
-                                &lt;ContentPresenter Content="{Binding AnnotationSymbol}"/&gt;
+                                <ContentPresenter Content="{Binding AnnotationSymbol}"/>
 
-                                &lt;TextBlock Text="{Binding AnnotationLabel}" HorizontalAlignment="Center" VerticalAlignment="Center"/&gt;
+                                <TextBlock Text="{Binding AnnotationLabel}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-                            &lt;/Grid&gt;
+                            </Grid>
 
-                        &lt;/DataTemplate&gt;
+                        </DataTemplate>
 
-                    &lt;/syncfusion:ShapeFileLayer.AnnotationTemplate&gt;
+                    </syncfusion:ShapeFileLayer.AnnotationTemplate>
 
-                    &lt;syncfusion:ShapeFileLayer.Annotations&gt;
+                    <syncfusion:ShapeFileLayer.Annotations>
 
-                        &lt;syncfusion:MapAnnotations Latitude="-22" Longitude="132" AnnotationLabel="Australia"  &gt;
+                        <syncfusion:MapAnnotations Latitude="-22" Longitude="132" AnnotationLabel="Australia"  >
 
-                            &lt;syncfusion:MapAnnotations.AnnotationSymbol&gt;
+                            <syncfusion:MapAnnotations.AnnotationSymbol>
 
-                                &lt;Image Height="100" Width="100" Source="note.jpg" /&gt;
+                                <Image Height="100" Width="100" Source="note.jpg" />
 
-                            &lt;/syncfusion:MapAnnotations.AnnotationSymbol&gt;
+                            </syncfusion:MapAnnotations.AnnotationSymbol>
 
-                        &lt;/syncfusion:MapAnnotations&gt;
+                        </syncfusion:MapAnnotations>
 
-                        &lt;syncfusion:MapAnnotations Latitude="40" Longitude="-98" AnnotationLabel="USA"&gt;
+                        <syncfusion:MapAnnotations Latitude="40" Longitude="-98" AnnotationLabel="USA">
 
-                            &lt;syncfusion:MapAnnotations.AnnotationSymbol&gt;
+                            <syncfusion:MapAnnotations.AnnotationSymbol>
 
-                                &lt;Image Height="100" Width="100" Source="note.jpg" /&gt;
+                                <Image Height="100" Width="100" Source="note.jpg" />
 
-                            &lt;/syncfusion:MapAnnotations.AnnotationSymbol&gt;
+                            </syncfusion:MapAnnotations.AnnotationSymbol>
 
-                        &lt;/syncfusion:MapAnnotations&gt;
+                        </syncfusion:MapAnnotations>
 
-                    &lt;/syncfusion:ShapeFileLayer.Annotations&gt;
-
-
+                    </syncfusion:ShapeFileLayer.Annotations>
 
 
 
-                    &lt;syncfusion:ShapeFileLayer.ShapeSettings&gt;
-
-                        &lt;syncfusion:ShapeSetting&gt;
 
 
+                    <syncfusion:ShapeFileLayer.ShapeSettings>
 
-                        &lt;/syncfusion:ShapeSetting&gt;
-
-                    &lt;/syncfusion:ShapeFileLayer.ShapeSettings&gt;
-
-                &lt;/syncfusion:ShapeFileLayer&gt;
-
-            &lt;/syncfusion:SfMap.Layers&gt;
-
-        &lt;/syncfusion:SfMap &gt;
+                        <syncfusion:ShapeSetting>
 
 
 
-{ ![](Annotations_images/Annotations_img2.png) | markdownify }
+                        </syncfusion:ShapeSetting>
+
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
+
+                </syncfusion:ShapeFileLayer>
+
+            </syncfusion:SfMap.Layers>
+
+        </syncfusion:SfMap >
+
+
+
+{{ '![](Annotations_images/Annotations_img2.png)' | markdownify }}
 {:.image }
 
 

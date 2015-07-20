@@ -82,7 +82,7 @@ Likewise, you can also add other controls from the table above. A sample output 
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img1.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -92,7 +92,7 @@ A check box is created in the grid.
 
 > _Note: For complete code, please refer to the following browser sample:_
 
-> _...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Basic Cell Type Demo_
+> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Basic Cell Type Demo_
 
 ### Combo Box Cells
 
@@ -195,7 +195,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img2.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -229,7 +229,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img3.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -263,7 +263,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img4.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -301,7 +301,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img5.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -339,7 +339,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img6.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -373,7 +373,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img7.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -383,7 +383,7 @@ An Exclusive Combo Box in a Grid is created.
 
 > _Note: For complete code, please refer to the following browser sample._
 
-> _...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo_
+> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo_
 
 ### Drop-down List Cells
 
@@ -431,7 +431,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img8.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img8.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -481,7 +481,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img9.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -527,7 +527,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img10.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -535,7 +535,7 @@ _Exclusive Drop-down List Control_
 
 > _Note: For complete code, please refer to the following browser sample._
 
-> _...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo_
+> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo_
 
 
 
@@ -623,7 +623,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img11.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -671,7 +671,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img12.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -719,7 +719,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img13.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -727,7 +727,7 @@ _Currency Cell with a Positive Value_
 
 > _Note: For complete code, please refer to the following browser sample._
 
-> _...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Currency Cell Demo_
+> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Currency Cell Demo_
 
 ### Date Time Cells
 
@@ -863,7 +863,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img14.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -871,7 +871,7 @@ _DateTime Cell_
 
 > _Note: For complete code, please refer to the following browser sample._
 
-> _...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Date Time Cell Demo_
+> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Date Time Cell Demo_
 
 ### Double Edit Cells
 
@@ -1001,7 +1001,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img15.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1009,7 +1009,7 @@ _Double Edit Cell_
 
 > _Note: For complete code, please refer to the following browser sample._
 
-> _...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Double Edit Cell Demo_
+> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Double Edit Cell Demo_
 
 
 
@@ -1093,7 +1093,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img16.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img16.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1101,7 +1101,7 @@ _Integer Edit_
 
 > _Note: For complete code, please refer to the following browser sample._
 
-> _...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Interger Edit Cell Demo_
+> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Interger Edit Cell Demo_
 
 ### Mask Edit Cells
 
@@ -1159,7 +1159,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img17.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img17.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1167,7 +1167,7 @@ _Mask Edit Cell_
 
 > _Note: For complete code, please refer to the following browser sample._
 
-> _...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Mask Edit Cell Demo_
+> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Mask Edit Cell Demo_
 
 ### Percent Edit Cells
 
@@ -1281,7 +1281,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img18.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img18.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1289,7 +1289,7 @@ _Percent Edit Cell_
 
 > _Note: For complete code, please refer to the following browser sample._
 
-_...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Percent Edit Cell Demo_
+_...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Percent Edit Cell Demo_
 
 ### RichTextBox CellType
 
@@ -1375,7 +1375,7 @@ The Cell Value for RichTextBox must be in FlowDocument as shown below.
 
 
 
-{ ![C:/Users/kamalakannana/Desktop/IMG_03082011_073458.png](Cell-Types_images/Cell-Types_img19.png) | markdownify }
+{{ '![C:/Users/kamalakannana/Desktop/IMG_03082011_073458.png](Cell-Types_images/Cell-Types_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -1487,7 +1487,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img20.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img20.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1495,7 +1495,7 @@ _Up Down Edit_
 
 > _Note: For complete code, please refer to the following browser sample._
 
-_...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\UpDown Cell Demo_
+_...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\UpDown Cell Demo_
 
 ### Nested Grid Cells 
 
@@ -1585,7 +1585,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img21.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img21.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2043,7 +2043,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img22.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img22.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2239,7 +2239,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img23.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img23.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2339,7 +2339,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img24.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img24.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2347,7 +2347,7 @@ _Nested Grid-Rows and Columns Independent of Parent Grid_
 
 > _Note: For complete code, please refer to the following browser sample._
 
-> _...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Nested Grid Demo_
+> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Nested Grid Demo_
 
 ## Formula Cells
 
@@ -2389,7 +2389,7 @@ Essential Grid's Formula Library contains the mathematical functions that are av
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img25.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img25.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2422,7 +2422,7 @@ Addition, Subtraction </td><td>
 <tr>
 <td>
 Less Than, Greater Than, Equal, Less Than Or Equal, Greater Than Or Equal, Not Equal </td><td>
- &lt;  &gt; = &lt;= &gt;= &lt;&gt;  </td><td>
+ <  > = <= >= <>  </td><td>
 3rd</td></tr>
 </table>
 
@@ -2681,7 +2681,7 @@ Public Function ComputeSumPosNums(args As String) As String
 
                         End Try
 
-                        If s1 &lt;&gt; "" Then
+                        If s1 <> "" Then
 
 
 
@@ -2709,7 +2709,7 @@ Public Function ComputeSumPosNums(args As String) As String
 
                     End Try
 
-                    If s1 &lt;&gt; "" Then
+                    If s1 <> "" Then
 
                         If Double.TryParse(s1, NumberStyles.Number, Nothing, d) And d > 0 Then
 
@@ -4805,15 +4805,15 @@ Behavior</td></tr>
 <tr>
 <td>
 1 or omitted</td><td>
-MATCH finds the largest value that is less than or equal to {{ '_lookup_value_' | markdownify }}. </td></tr>
+MATCH finds the largest value that is less than or equal to {{{ ''_lookup_value_'' | markdownify }}}. </td></tr>
 <tr>
 <td>
 0</td><td>
-MATCH finds the first value that is exactly equal to {{ '_lookup_value_' | markdownify }}. </td></tr>
+MATCH finds the first value that is exactly equal to {{{ ''_lookup_value_'' | markdownify }}}. </td></tr>
 <tr>
 <td>
 -1</td><td>
-MATCH finds the smallest value that is greater than or equal to{{  '_lookup_value_' | markdownify }}. </td></tr>
+MATCH finds the smallest value that is greater than or equal to{{{ ' '_lookup_value_'' | markdownify }}}. </td></tr>
 </table>
 
 
@@ -5367,7 +5367,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img26.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img26.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5375,7 +5375,7 @@ _Custom Drop-down_
 
 > _Note: For complete code, please refer to the following browser sample._
 
-> _...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Custom Drop Down Demo_
+> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Custom Drop Down Demo_
 
 
 
@@ -5487,17 +5487,17 @@ Data Template Definition
 
 
 
-&lt;DataTemplate x:Key="editableEmployee"&gt;
+<DataTemplate x:Key="editableEmployee">
 
-            &lt;StackPanel Margin="8,0"  Orientation="Horizontal"&gt;
+            <StackPanel Margin="8,0"  Orientation="Horizontal">
 
-                &lt;TextBlock FontWeight="Bold" syncfusion:VisualContainer.WantsMouseInput="False" Text="{Binding Path=Name}" Width="70" /&gt;
+                <TextBlock FontWeight="Bold" syncfusion:VisualContainer.WantsMouseInput="False" Text="{Binding Path=Name}" Width="70" />
 
-                &lt;TextBox Text="{Binding Path=Title}" BorderThickness="0"  Padding="0" Margin="0" Width="130" x:Name="tb"/&gt;
+                <TextBox Text="{Binding Path=Title}" BorderThickness="0"  Padding="0" Margin="0" Width="130" x:Name="tb"/>
 
-            &lt;/StackPanel&gt;
+            </StackPanel>
 
-        &lt;/DataTemplate&gt;
+        </DataTemplate>
 
 
 
@@ -5545,7 +5545,7 @@ The following output is generated using the code above.
 
 
 
-{ ![](Cell-Types_images/Cell-Types_img27.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img27.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5553,7 +5553,7 @@ _Data Template with Cell Template Assigned_
 
 > _Note: For complete code, please refer to the following browser sample._
 
-> _...\My Documents\Syncfusion\EssentialStudio\&lt;Version Number&gt;\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Data Template Cell Demo_
+> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Data Template Cell Demo_
 
 ### Rich Text Box Cells
 
@@ -5791,7 +5791,7 @@ Output
 
 The following output is generated using the code above.
 
-{ ![](Cell-Types_images/Cell-Types_img28.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img28.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -5811,81 +5811,81 @@ Example
 
 
 
-&lt;local:MyDataCollection x:Key="SeriesData1"/&gt;
+<local:MyDataCollection x:Key="SeriesData1"/>
 
 
 
-&lt;DataTemplate x:Key="DataChart"&gt;
+<DataTemplate x:Key="DataChart">
 
 
 
-            &lt;!--Hosting Chart control in second Row of the Grid--&gt;
+            <!--Hosting Chart control in second Row of the Grid-->
 
-            &lt;syncfusion:Chart   x:Name="Chart1" Grid.Row="1" Margin="15"&gt;
-
-
-
-                &lt;!--Chart Legend declaration--&gt;
-
-               &lt;syncfusion:Chart.Legends&gt;
-
-                    &lt;syncfusion:ChartLegend /&gt;
-
-                &lt;/syncfusion:Chart.Legends&gt;
+            <syncfusion:Chart   x:Name="Chart1" Grid.Row="1" Margin="15">
 
 
 
-                &lt;!--Chart area to present chart segments--&gt;
+                <!--Chart Legend declaration-->
 
-                &lt;syncfusion:ChartArea IsContextMenuEnabled="True" &gt;
+               <syncfusion:Chart.Legends>
 
+                    <syncfusion:ChartLegend />
 
-
-                    &lt;!--Primary Axis(X)--&gt;
-
-                    &lt;syncfusion:ChartArea.PrimaryAxis&gt;
+                </syncfusion:Chart.Legends>
 
 
 
-                        &lt;!--X axis declaration with required property settings--&gt;
+                <!--Chart area to present chart segments-->
 
-                        &lt;syncfusion:ChartAxis Header="Year" Interval="2" &gt;
-
-                        &lt;/syncfusion:ChartAxis&gt;
-
-                    &lt;/syncfusion:ChartArea.PrimaryAxis&gt;
+                <syncfusion:ChartArea IsContextMenuEnabled="True" >
 
 
 
-                    &lt;!--Secondary Axis(Y)--&gt;
+                    <!--Primary Axis(X)-->
 
-                    &lt;syncfusion:ChartArea.SecondaryAxis&gt;
-
-
-
-                        &lt;!--Y axis declaration with required property settings--&gt;
-
-                        &lt;syncfusion:ChartAxis Header="Profit" SmallTicksPerInterval="0"  LabelFormat="0.00"&gt;
-
-                        &lt;/syncfusion:ChartAxis&gt;
-
-                    &lt;/syncfusion:ChartArea.SecondaryAxis&gt;
+                    <syncfusion:ChartArea.PrimaryAxis>
 
 
 
-                    &lt;!--Chart 1st series declaration--&gt;
+                        <!--X axis declaration with required property settings-->
+
+                        <syncfusion:ChartAxis Header="Year" Interval="2" >
+
+                        </syncfusion:ChartAxis>
+
+                    </syncfusion:ChartArea.PrimaryAxis>
+
+
+
+                    <!--Secondary Axis(Y)-->
+
+                    <syncfusion:ChartArea.SecondaryAxis>
+
+
+
+                        <!--Y axis declaration with required property settings-->
+
+                        <syncfusion:ChartAxis Header="Profit" SmallTicksPerInterval="0"  LabelFormat="0.00">
+
+                        </syncfusion:ChartAxis>
+
+                    </syncfusion:ChartArea.SecondaryAxis>
+
+
+
+                    <!--Chart 1st series declaration-->
 
                     <syncfusion:ChartSeries Name="series1" Label="Profit in $"  Type="Spline" StrokeThickness=" 3" Interior="Green"  DataSource="{StaticResource SeriesData1}" 
 
                                      BindingPathX="Year" BindingPathsY="Y1" IsIndexed="False">
 
-                    &lt;/syncfusion:ChartSeries&gt;
+                    </syncfusion:ChartSeries>
 
-                &lt;/syncfusion:ChartArea&gt;
+                </syncfusion:ChartArea>
 
-            &lt;/syncfusion:Chart&gt;
+            </syncfusion:Chart>
 
-        &lt;/DataTemplate &gt;
+        </DataTemplate >
 
 
 
@@ -5969,7 +5969,7 @@ Output
 
 The following output is generated using the code above.
 
-{ ![](Cell-Types_images/Cell-Types_img29.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img29.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -6050,7 +6050,7 @@ grid.Model[2, 2].ImageIndex = 1;
 
 The following output is generated using the code above.
 
-{ ![](Cell-Types_images/Cell-Types_img30.jpeg) | markdownify }
+{{ '![](Cell-Types_images/Cell-Types_img30.jpeg)' | markdownify }}
 {:.image }
 
 

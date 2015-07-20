@@ -23,7 +23,7 @@ Excel-Like UI: Essential Grid’s rich feature set allows you to build Excel-lik
 
 
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -31,13 +31,13 @@ High Performance - EssentialGrid is a great asset to high-performance applicatio
 
 
 
-{ ![](Overview_images/Overview_img2.png) | markdownify }
+{{ '![](Overview_images/Overview_img2.png)' | markdownify }}
 {:.image }
 
 
 File Explorer - Applications that deal with hierarchical data can make use of Essential Grid’s file explorer feature, which allows child items to be displayed on-demand by using the GridTree control.
 
-{ ![](Overview_images/Overview_img3.png) | markdownify }
+{{ '![](Overview_images/Overview_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -138,7 +138,7 @@ Several built-in cell types can be used to display and edit any underlying data 
 
 
 
-{ ![](Overview_images/Overview_img4.png) | markdownify }
+{{ '![](Overview_images/Overview_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -148,7 +148,7 @@ The GridTree control provides an effective option for sorting. Also, its appeara
 
 
 
-{ ![](Overview_images/Overview_img5.png) | markdownify }
+{{ '![](Overview_images/Overview_img5.png)' | markdownify }}
 {:.image }
 
 

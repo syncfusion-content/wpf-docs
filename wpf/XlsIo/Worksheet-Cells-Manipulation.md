@@ -1011,7 +1011,7 @@ excelEngine.Dispose()
 
 Find and Replace feature in Excel enables you to navigate between large spreadsheets. It carries out a simultaneous search in Microsoft Excel values, formulas, and also comments. XlsIO also supports finding and replacing contents in a worksheet. It has various options to find the first matching entry, find all the matching entries, and replace the found content with various data and data sources.
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img1.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -1889,7 +1889,7 @@ This is used to sort a range of cells by values at runtime. This is explained in
 
 
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img2.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -2055,7 +2055,7 @@ excelEngine.Dispose()
 
 With this feature, MS Excel moves the text that is applied with the selected color to the specified location (bottom or top) of the sorting range.
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img3.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -2229,7 +2229,7 @@ excelEngine.Dispose()
 
 With this feature, MS Excel moves the cell text and color to the specified location (bottom or top) of the sorting range.
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img4.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -2403,7 +2403,7 @@ MS Excel AutoFilter feature literally makes filtering out unwanted data in a dat
 
 
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img5.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -2637,7 +2637,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img6.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -2649,7 +2649,7 @@ The Data Validation feature available in MS Excel dynamically validates the data
 
 
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img7.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -2798,7 +2798,7 @@ excelEngine.Dispose()
 
 The following screenshots illustrate the error alert settings through the Data Validation dialog box in MS Excel.
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img8.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -2806,7 +2806,7 @@ _Error Alert Options in MS Excel_
 
 
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img9.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -3126,7 +3126,7 @@ excelEngine.Dispose()
 
 A Hyperlink is a convenient way to instantly access another place in the workbook, or another workbook, or a file associated with another application. A hyperlink can be inserted in a cell or a shape in Excel. Select the cell or shape, and select Hyperlink from the Insert menu, or right-click anywhere in the cell or shape, and then select Hyperlink from the pop-up menu. You can enter a cell reference in the current workbook, browse to another workbook, a different file, or a web page, and even enter an email address and subject line. You can also edit the text for a hyperlink in a cell. Following is the Insert Hyperlink dialog box of MS Excel that allows setting various hyperlinks.
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img10.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -3371,7 +3371,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img11.png) | markdownify }
+{{ '![](Worksheet-Cells-Manipulation_images/Worksheet-Cells-Manipulation_img11.png)' | markdownify }}
 {:.image }
 
 

@@ -39,7 +39,7 @@ When there is no appointment in the current view, we can navigate to view the pr
 
 
 
-{ ![](Appointment-Navigation_images/Appointment-Navigation_img1.png) | markdownify }
+{{ '![](Appointment-Navigation_images/Appointment-Navigation_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -51,21 +51,21 @@ Previous appointment navigation button can be customized by PreviousNavigationBu
 
 
 
-            &lt;Schedule:SfSchedule x:Name="schedule" ScheduleType="Day" ShowAppointmentNavigationButtons="True"&gt;
+            <Schedule:SfSchedule x:Name="schedule" ScheduleType="Day" ShowAppointmentNavigationButtons="True">
 
-            &lt;Schedule:SfSchedule.PreviousNavigationButtonTemplate&gt;
+            <Schedule:SfSchedule.PreviousNavigationButtonTemplate>
 
-                &lt;DataTemplate&gt;
+                <DataTemplate>
 
-&lt;Border Height="200" Width="50" Background="Red"/&gt;                &lt;/DataTemplate&gt;
+<Border Height="200" Width="50" Background="Red"/>                </DataTemplate>
 
-            &lt;/Schedule:SfSchedule.PreviousNavigationButtonTemplate&gt;
+            </Schedule:SfSchedule.PreviousNavigationButtonTemplate>
 
-        &lt;/Schedule:SfSchedule&gt;
+        </Schedule:SfSchedule>
 
 
 
-{ ![](Appointment-Navigation_images/Appointment-Navigation_img2.png) | markdownify }
+{{ '![](Appointment-Navigation_images/Appointment-Navigation_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -77,21 +77,21 @@ By using the NextNavigationButtonTemplate property the next appointment navigati
 
 
 
-            &lt;Schedule:SfSchedule x:Name="schedule" ScheduleType="Day" ShowAppointmentNavigationButtons="True"&gt;
+            <Schedule:SfSchedule x:Name="schedule" ScheduleType="Day" ShowAppointmentNavigationButtons="True">
 
-             &lt;Schedule:SfSchedule.NextNavigationButtonTemplate&gt;                &lt;DataTemplate&gt;
+             <Schedule:SfSchedule.NextNavigationButtonTemplate>                <DataTemplate>
 
-&lt;Border Height="200" Width="50" Background="Red"/&gt;                                &lt;/DataTemplate&gt;
+<Border Height="200" Width="50" Background="Red"/>                                </DataTemplate>
 
-            &lt;/Schedule:SfSchedule.NextNavigationButtonTemplate&gt;
+            </Schedule:SfSchedule.NextNavigationButtonTemplate>
 
-        &lt;/Schedule:SfSchedule&gt;
-
-
+        </Schedule:SfSchedule>
 
 
 
-{ ![](Appointment-Navigation_images/Appointment-Navigation_img3.png) | markdownify }
+
+
+{{ '![](Appointment-Navigation_images/Appointment-Navigation_img3.png)' | markdownify }}
 {:.image }
 
 

@@ -22,7 +22,7 @@ The current visual of the chart can be exported to the following form:
 
 By clicking the Export menus in the Chart toolbar, the user can export the chart to the corresponding mode. 
 
-{ ![](Export_images/Export_img1.png) | markdownify }
+{{ '![](Export_images/Export_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -78,7 +78,7 @@ The user can perform these exports in two ways:
 
 The OlapGridtoolbar provides the menu to perform the export operation. By clicking any one of the Export buttons, the user can export the grid to the corresponding format.
 
-{ ![](Export_images/Export_img6.png) | markdownify }
+{{ '![](Export_images/Export_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -219,15 +219,15 @@ End If
 
 
 
-{ ![](Export_images/Export_img10.png) | markdownify }
+{{ '![](Export_images/Export_img10.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Export_images/Export_img11.png) | markdownify }
+{{ '![](Export_images/Export_img11.png)' | markdownify }}
 {:.image }
 
 
 Sample Link
 
-{Installation Drive}:\Users\&lt;user name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version    number&gt;\BI\WPF\OlapClient.Wpf\Samples\Appearance\OlapClientCustomizationDemo
+{Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version    number>\BI\WPF\OlapClient.Wpf\Samples\Appearance\OlapClientCustomizationDemo
 

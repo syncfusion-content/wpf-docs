@@ -19,31 +19,31 @@ The icon of the DropDownMenuItem can be added as follows:
 
  [XAML]
 
-&lt;shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png"&gt;
+<shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
-   &lt;shared:DropDownMenuGroup&gt;
+   <shared:DropDownMenuGroup>
 
-       &lt;shared:DropDownMenuItem Header="Menu Item 1"&gt;
+       <shared:DropDownMenuItem Header="Menu Item 1">
 
-          &lt;shared:DropDownMenuItem.Icon&gt;
+          <shared:DropDownMenuItem.Icon>
 
-              &lt;Image Source="Images/Home.png"/&gt;
+              <Image Source="Images/Home.png"/>
 
-          &lt;/shared:DropDownMenuItem.Icon&gt;
+          </shared:DropDownMenuItem.Icon>
 
-       &lt;/shared:DropDownMenuItem&gt;
+       </shared:DropDownMenuItem>
 
-       &lt;shared:DropDownMenuItem Header="Menu Item 2"/&gt;
+       <shared:DropDownMenuItem Header="Menu Item 2"/>
 
-       &lt;shared:DropDownMenuItem Header="Menu Item 3"/&gt;
+       <shared:DropDownMenuItem Header="Menu Item 3"/>
 
-   &lt;/shared:DropDownMenuGroup&gt;
+   </shared:DropDownMenuGroup>
 
-&lt;/shared:DropDownButtonAdv&gt;
+</shared:DropDownButtonAdv>
 
 
 
-{ ![](DropDownMenuItem_images/DropDownMenuItem_img1.png) | markdownify }
+{{ '![](DropDownMenuItem_images/DropDownMenuItem_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -57,23 +57,23 @@ The feature can be enabled by using the property IsCheckable:
 
  [XAML]
 
-&lt;shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png"&gt;
+<shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
-   &lt;shared:DropDownMenuGroup&gt;
+   <shared:DropDownMenuGroup>
 
-        &lt;shared:DropDownMenuItem Header="Menu Item 1" IsCheckable="True"/&gt;
+        <shared:DropDownMenuItem Header="Menu Item 1" IsCheckable="True"/>
 
-        &lt;shared:DropDownMenuItem Header="Menu Item 2"/&gt;
+        <shared:DropDownMenuItem Header="Menu Item 2"/>
 
-        &lt;shared:DropDownMenuItem Header="Menu Item 3" IsCheckable="True"/&gt;
+        <shared:DropDownMenuItem Header="Menu Item 3" IsCheckable="True"/>
 
-   &lt;/shared:DropDownMenuGroup&gt;
+   </shared:DropDownMenuGroup>
 
-&lt;/shared:DropDownButtonAdv&gt;
+</shared:DropDownButtonAdv>
 
 
 
-{ ![](DropDownMenuItem_images/DropDownMenuItem_img2.png) | markdownify }
+{{ '![](DropDownMenuItem_images/DropDownMenuItem_img2.png)' | markdownify }}
 {:.image }
 
 

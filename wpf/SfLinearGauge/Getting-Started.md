@@ -27,11 +27,11 @@ Refer to the following code example to add a Linear Gauge to your application:
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid Name="Grid"&gt;
+    <Grid Name="Grid">
 
-        &lt;Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal"&gt;
+        <Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal">
 
-            &lt;Gauges:SfLinearGauge.MainScale&gt;
+            <Gauges:SfLinearGauge.MainScale>
 
                 <Gauges:LinearScale ScaleDirection="Forward"
 
@@ -47,23 +47,23 @@ Refer to the following code example to add a Linear Gauge to your application:
 
                                     Minimum="0" Maximum="100">
 
-                    &lt;Gauges:LinearScale.Pointers&gt;
+                    <Gauges:LinearScale.Pointers>
 
-                        &lt;Gauges:LinearPointer Value="40" PointerType="BarPointer" /&gt;
+                        <Gauges:LinearPointer Value="40" PointerType="BarPointer" />
 
-                        &lt;Gauges:LinearPointer Value="40" PointerType="SymbolPointer"/&gt;
+                        <Gauges:LinearPointer Value="40" PointerType="SymbolPointer"/>
 
-                    &lt;/Gauges:LinearScale.Pointers&gt;
+                    </Gauges:LinearScale.Pointers>
 
-                &lt;/Gauges:LinearScale&gt;
+                </Gauges:LinearScale>
 
-            &lt;/Gauges:SfLinearGauge.MainScale&gt;
+            </Gauges:SfLinearGauge.MainScale>
 
-        &lt;/Gauges:SfLinearGauge&gt;
+        </Gauges:SfLinearGauge>
 
-&lt;/Grid&gt;
+</Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -109,7 +109,7 @@ Refer to the following code example to add a Linear Gauge to your application:
 
 The following screenshot displays the Linear Gauge:
 
-{ ![](Getting-Started_images/Getting-Started_img1.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -119,35 +119,35 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 
 1. Create a simple WPF application by using the Visual Studio.
 
-{ ![](Getting-Started_images/Getting-Started_img2.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
 {:.image }
 
 
 2. Right_-_click the Project and select the Syncfusion Reference Manager.
 
-{ ![](Getting-Started_images/Getting-Started_img3.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
 {:.image }
 
 
 3. The Syncfusion Reference Manager Wizard opens as shown in the following figure.
 
-{ ![](Getting-Started_images/Getting-Started_img4.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
 {:.image }
 
 
 4. Search for the SfLinearGauge by using the Search Box and select the SfLinearGauge control.  Click Done to add the selected SfLinearGauge control.
 
-{ ![](Getting-Started_images/Getting-Started_img5.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
 {:.image }
 
 
 5. The SfLinearGauge assemblies are automatically added to the Project after clicking OK.
 
-{ ![](Getting-Started_images/Getting-Started_img6.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
 {:.image }
 
 
-{ ![](Getting-Started_images/Getting-Started_img7.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -183,11 +183,11 @@ xmlns:LinearGauge="http://schemas.syncfusion.com/wpf"
 
         Title="MainWindow" Height="350" Width="525">
 
-    &lt;Grid Name="Grid"&gt;
+    <Grid Name="Grid">
 
-        &lt;Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal"&gt;
+        <Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal">
 
-            &lt;Gauges:SfLinearGauge.MainScale&gt;
+            <Gauges:SfLinearGauge.MainScale>
 
                 <Gauges:LinearScale ScaleDirection="Forward"
 
@@ -203,23 +203,23 @@ xmlns:LinearGauge="http://schemas.syncfusion.com/wpf"
 
                                     Minimum="0" Maximum="100">
 
-                    &lt;Gauges:LinearScale.Pointers&gt;
+                    <Gauges:LinearScale.Pointers>
 
-                        &lt;Gauges:LinearPointer Value="40" PointerType="BarPointer" /&gt;
+                        <Gauges:LinearPointer Value="40" PointerType="BarPointer" />
 
-                        &lt;Gauges:LinearPointer Value="40" PointerType="SymbolPointer"/&gt;
+                        <Gauges:LinearPointer Value="40" PointerType="SymbolPointer"/>
 
-                    &lt;/Gauges:LinearScale.Pointers&gt;
+                    </Gauges:LinearScale.Pointers>
 
-                &lt;/Gauges:LinearScale&gt;
+                </Gauges:LinearScale>
 
-            &lt;/Gauges:SfLinearGauge.MainScale&gt;
+            </Gauges:SfLinearGauge.MainScale>
 
-        &lt;/Gauges:SfLinearGauge&gt;
+        </Gauges:SfLinearGauge>
 
-&lt;/Grid&gt;
+</Grid>
 
-&lt;/Window&gt;
+</Window>
 
 
 
@@ -287,7 +287,7 @@ namespace  LinearGauge
 
 8. The simple SfLinearGauge control is created as shown in the following figure.
 
-{ ![](Getting-Started_images/Getting-Started_img8.png) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
 {:.image }
 
 

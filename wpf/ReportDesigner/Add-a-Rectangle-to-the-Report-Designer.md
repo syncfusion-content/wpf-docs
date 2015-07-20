@@ -11,7 +11,7 @@ documentation: ug
 
 To add a rectangle to the Syncfusion Report Designer, select Rectangle from the Insert tab and drag it to the Report Designer. A rectangle appears on the Report Designer.
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-33.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img1.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-33.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -21,7 +21,7 @@ To apply styles to the rectangle:
 
 1. Right click the added rectangle and click Rectangle Properties. It displays the Control Properties Dialog.
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-53.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img2.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-53.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -39,7 +39,7 @@ The following illustration shows the rectangle styled by the properties grid.
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-34.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img3.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-34.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -49,7 +49,7 @@ To add report items such as text boxes, lines, and images, to the rectangle, dra
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-35.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img4.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-35.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img4.png)' | markdownify }}
 {:.image }
 
 

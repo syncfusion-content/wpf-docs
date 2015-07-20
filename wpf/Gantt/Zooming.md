@@ -33,7 +33,7 @@ To add the built-in zooming:
 
 [XAML]
 
-&lt;Slider Minimum="80" Maximum="600" Value="100" x:Name="ZoomSlider" Width="150"/&gt;
+<Slider Minimum="80" Maximum="600" Value="100" x:Name="ZoomSlider" Width="150"/>
 
 
 
@@ -77,11 +77,11 @@ To add the built-in zooming:
 
 
 
-        /// &lt;summary&gt;
+        /// <summary>
 
         /// Handles the ValueChanged event of the slider control.
 
-        /// &lt;/summary&gt;
+        /// </summary>
 
         void slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
 
@@ -101,7 +101,7 @@ The following image shows Built-in Zooming in Gantt:
 
 
 
-{ ![](Zooming_images/Zooming_img1.png) | markdownify }
+{{ '![](Zooming_images/Zooming_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -173,13 +173,13 @@ private List<double> _zoomFactors  = new List<double> { 100d, 200d, 30
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Gets or sets the zoom factors.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// <value>The zoom factors.&lt;/value&gt;
+/// <value>The zoom factors.</value>
 
 public List<double> ZoomFactors
 
@@ -211,13 +211,13 @@ private double _zoomFactor;
 
 
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Gets or sets the zoom factor.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// <value>The zoom factor.&lt;/value&gt;
+/// <value>The zoom factor.</value>
 
 public double ZoomFactor
 
@@ -245,15 +245,15 @@ public double ZoomFactor
 
 /// Event Handler in code behind
 
-/// &lt;summary&gt;
+/// <summary>
 
 /// Handles the ZoomChanged event of the Gantt control.
 
-/// &lt;/summary&gt;
+/// </summary>
 
-/// <param name="sender">The source of the event.&lt;/param&gt;
+/// <param name="sender">The source of the event.</param>
 
-/// <param name="args">The &lt;see cref="Syncfusion.Windows.Controls.Gantt.ZoomChangedEventArgs"/&gt; instance containing the event data.&lt;/param&gt;
+/// <param name="args">The <see cref="Syncfusion.Windows.Controls.Gantt.ZoomChangedEventArgs"/> instance containing the event data.</param>
 
 private void Gantt_ZoomChanged(object sender, ZoomChangedEventArgs args)
 
@@ -385,7 +385,7 @@ The following image shows Custom Zooming in Gantt:
 
 
 
-{ ![](Zooming_images/Zooming_img2.png) | markdownify }
+{{ '![](Zooming_images/Zooming_img2.png)' | markdownify }}
 {:.image }
 
 

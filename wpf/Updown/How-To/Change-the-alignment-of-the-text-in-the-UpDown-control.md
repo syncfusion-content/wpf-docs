@@ -18,7 +18,7 @@ The TextAlignment can set to the left in the UpDown control as shown in the foll
 <syncfusion:UpDown Name="upDown" TextAlignment="Left"
 
 >
- &lt;/ syncfusion:UpDown&gt; 
+ </ syncfusion:UpDown> 
 
 
 
@@ -30,7 +30,7 @@ upDown.TextAlignment = TextAlignment.Left;
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1276.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img1.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1276.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -43,7 +43,7 @@ The TextAlignment can be set to the right in the UpDown control as shown in the 
 <syncfusion:UpDown Name="upDown" TextAlignment="Right"
 
 >
- &lt;/ syncfusion:UpDown&gt; 
+ </ syncfusion:UpDown> 
 
 
 
@@ -53,7 +53,7 @@ UpDown upDown = new UpDown();
 
 upDown.TextAlignment = TextAlignment.Right;
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1277.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img2.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1277.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -61,8 +61,8 @@ The TextAlignment can be set to the center in the UpDown control as shown in th
 
  [XAML]
 
-&lt;syncfusion:UpDown Name="upDown" TextAlignment="Center"&gt; 
-&lt;/ syncfusion:UpDown&gt; 
+<syncfusion:UpDown Name="upDown" TextAlignment="Center"> 
+</ syncfusion:UpDown> 
 
 
 
@@ -74,7 +74,7 @@ upDown.TextAlignment = TextAlignment.Center;
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1278.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img3.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1278.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -82,8 +82,8 @@ The TextAlignment can be set to Justify in the UpDown control as shown in the fo
 
  [XAML]
 
-&lt;syncfusion:UpDown Name="upDown" TextAlignment=" Justify "&gt; 
-&lt;/ syncfusion:UpDown&gt;
+<syncfusion:UpDown Name="upDown" TextAlignment=" Justify "> 
+</ syncfusion:UpDown>
 
 
 
@@ -95,7 +95,7 @@ upDown.TextAlignment = TextAlignment.Justify;
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1276.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img4.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1276.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img4.png)' | markdownify }}
 {:.image }
 
 

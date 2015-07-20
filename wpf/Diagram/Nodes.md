@@ -384,7 +384,7 @@ Steps for adding a node to the diagram using the SymbolPalette.
 
 
 
-{ ![](Nodes_images/Nodes_img1.jpeg) | markdownify }
+{{ '![](Nodes_images/Nodes_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -394,7 +394,7 @@ _Item Selected_
 
 
 
-{ ![](Nodes_images/Nodes_img2.jpeg) | markdownify }
+{{ '![](Nodes_images/Nodes_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -404,7 +404,7 @@ _Item Dragged_
 
 
 
-{ ![](Nodes_images/Nodes_img3.jpeg) | markdownify }
+{{ '![](Nodes_images/Nodes_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -420,33 +420,33 @@ Node can also be added into the model through XAML. The following code shows how
 
 
 
-&lt;syncfusion:DiagramControl Name="diagramControl" IsSymbolPaletteEnabled="True"&gt;
+<syncfusion:DiagramControl Name="diagramControl" IsSymbolPaletteEnabled="True">
 
-    &lt;syncfusion:DiagramControl.Model&gt;
+    <syncfusion:DiagramControl.Model>
 
-        &lt;syncfusion:DiagramModel   x:Name="diagramModel"&gt;
+        <syncfusion:DiagramModel   x:Name="diagramModel">
 
-            &lt;syncfusion:DiagramModel.Nodes&gt;
+            <syncfusion:DiagramModel.Nodes>
 
-                &lt;syncfusion:Node Width="200" Height="70" Shape="FlowChart_Card"&gt;
+                <syncfusion:Node Width="200" Height="70" Shape="FlowChart_Card">
 
-                &lt;/syncfusion:Node&gt;
+                </syncfusion:Node>
 
-            &lt;/syncfusion:DiagramModel.Nodes&gt;
+            </syncfusion:DiagramModel.Nodes>
 
-        &lt;/syncfusion:DiagramModel&gt;
+        </syncfusion:DiagramModel>
 
-    &lt;/syncfusion:DiagramControl.Model&gt;
+    </syncfusion:DiagramControl.Model>
 
-    &lt;syncfusion:DiagramControl.View&gt;
+    <syncfusion:DiagramControl.View>
 
-        &lt;syncfusion:DiagramView IsZoomEnabled="True" Bounds="0,0,1200,1200" Name="diagramView"&gt;
+        <syncfusion:DiagramView IsZoomEnabled="True" Bounds="0,0,1200,1200" Name="diagramView">
 
-        &lt;/syncfusion:DiagramView&gt;
+        </syncfusion:DiagramView>
 
-    &lt;/syncfusion:DiagramControl.View&gt;
+    </syncfusion:DiagramControl.View>
 
-&lt;/syncfusion:DiagramControl&gt;
+</syncfusion:DiagramControl>
 
 
 
@@ -597,7 +597,7 @@ The following is a list of built-in shapes.
 
 
 
-{ ![](Nodes_images/Nodes_img4.jpeg) | markdownify }
+{{ '![](Nodes_images/Nodes_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -605,7 +605,7 @@ _Built-in Shapes_
 
 
 
-{ ![](Nodes_images/Nodes_img5.jpeg) | markdownify }
+{{ '![](Nodes_images/Nodes_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -626,23 +626,23 @@ Style can be applied for CustomPathStyle in two different ways,
 
 
 
-&lt;Style TargetType="{x:Type syncfusion:Node}" x:Key="{x:Type syncfusion:Node}"&gt;
+<Style TargetType="{x:Type syncfusion:Node}" x:Key="{x:Type syncfusion:Node}">
 
-    &lt;Setter Property="CustomPathStyle"&gt;
+    <Setter Property="CustomPathStyle">
 
-        &lt;Setter.Value&gt;
+        <Setter.Value>
 
-            &lt;Style TargetType="{x:Type Path}"&gt;
+            <Style TargetType="{x:Type Path}">
 
-                &lt;Setter Property="Fill" Value="LightGray" /&gt;
+                <Setter Property="Fill" Value="LightGray" />
 
-            &lt;/Style&gt;
+            </Style>
 
-        &lt;/Setter.Value&gt;
+        </Setter.Value>
 
-    &lt;/Setter&gt;
+    </Setter>
 
-&lt;/Style&gt;
+</Style>
 
 
 
@@ -694,13 +694,13 @@ You can specify your own custom shapes to be used for the node as follows. First
 
 
 
-&lt;Style TargetType="{x:Type Path}" x:Key="myNode"&gt;
+<Style TargetType="{x:Type Path}" x:Key="myNode">
 
-    &lt;Setter Property="Data" Value="M200,239L200,200 240,239 280,202 320,238 281,279 240,244 198,279z"&gt;&lt;/Setter&gt;
+    <Setter Property="Data" Value="M200,239L200,200 240,239 280,202 320,238 281,279 240,244 198,279z"></Setter>
 
-    &lt;Setter Property="Fill" Value="MidnightBlue" /&gt;
+    <Setter Property="Fill" Value="MidnightBlue" />
 
-&lt;/Style&gt;
+</Style>
 
 
 
@@ -738,7 +738,7 @@ diagramModel.Nodes.Add(n)
 
 
 
-{ ![](Nodes_images/Nodes_img6.jpeg) | markdownify }
+{{ '![](Nodes_images/Nodes_img6.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -797,35 +797,35 @@ Node’s Content can be specified in two ways,
 
 
 
-&lt;syncfusion:DiagramControl Name="diagramControl" IsSymbolPaletteEnabled="True"&gt;
+<syncfusion:DiagramControl Name="diagramControl" IsSymbolPaletteEnabled="True">
 
-    &lt;syncfusion:DiagramControl.Model&gt;
+    <syncfusion:DiagramControl.Model>
 
-        &lt;syncfusion:DiagramModel   x:Name="diagramModel"&gt;
+        <syncfusion:DiagramModel   x:Name="diagramModel">
 
-            &lt;syncfusion:DiagramModel.Nodes&gt;
+            <syncfusion:DiagramModel.Nodes>
 
-                &lt;syncfusion:Node Width="200" Height="70" Shape="FlowChart_Card" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"&gt;
+                <syncfusion:Node Width="200" Height="70" Shape="FlowChart_Card" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
 
-                    &lt;Button Content="Click Me!"&gt;&lt;/Button&gt;
+                    <Button Content="Click Me!"></Button>
 
-                &lt;/syncfusion:Node&gt;
+                </syncfusion:Node>
 
-            &lt;/syncfusion:DiagramModel.Nodes&gt;
+            </syncfusion:DiagramModel.Nodes>
 
-        &lt;/syncfusion:DiagramModel&gt;
+        </syncfusion:DiagramModel>
 
-    &lt;/syncfusion:DiagramControl.Model&gt;
+    </syncfusion:DiagramControl.Model>
 
-    &lt;syncfusion:DiagramControl.View&gt;
+    <syncfusion:DiagramControl.View>
 
-        &lt;syncfusion:DiagramView IsZoomEnabled="True" Bounds="0,0,1200,1200" Name="diagramView"&gt;
+        <syncfusion:DiagramView IsZoomEnabled="True" Bounds="0,0,1200,1200" Name="diagramView">
 
-        &lt;/syncfusion:DiagramView&gt;
+        </syncfusion:DiagramView>
 
-    &lt;/syncfusion:DiagramControl.View&gt;
+    </syncfusion:DiagramControl.View>
 
-&lt;/syncfusion:DiagramControl&gt;
+</syncfusion:DiagramControl>
 
 
 
@@ -865,7 +865,7 @@ TryCast(n.Content, Button).IsHitTestVisible = True
 
 
 
-{ ![](Nodes_images/Nodes_img7.jpeg) | markdownify }
+{{ '![](Nodes_images/Nodes_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -967,43 +967,43 @@ Specify ContentTemplate for node.
 
 
 
-&lt;!-- Template for Node --&gt;
+<!-- Template for Node -->
 
-&lt;!-- Define the appearance of the Business Object --&gt;
+<!-- Define the appearance of the Business Object -->
 
-&lt;DataTemplate x:Key="NodeTemplate"&gt;
+<DataTemplate x:Key="NodeTemplate">
 
-    &lt;Border BorderThickness="2" BorderBrush="Blue" CornerRadius="5"&gt;
+    <Border BorderThickness="2" BorderBrush="Blue" CornerRadius="5">
 
-        &lt;TextBlock Text="{Binding Path=BusinessProperty}" HorizontalAlignment="Center" VerticalAlignment="Center"/&gt;
+        <TextBlock Text="{Binding Path=BusinessProperty}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
-    &lt;/Border&gt;
+    </Border>
 
-&lt;/DataTemplate&gt;
-
-
+</DataTemplate>
 
 
 
-&lt;!-- Style for Node --&gt;
-
-&lt;Style TargetType="{x:Type syncfusion:Node}" x:Key="{x:Type syncfusion:Node}"&gt;
-
-    &lt;Setter Property="Width" Value="175" /&gt;
-
-    &lt;Setter Property="Height" Value="100" /&gt;
-
-    &lt;Setter Property="VerticalContentAlignment" Value="Stretch"&gt;&lt;/Setter&gt;
-
-    &lt;Setter Property="HorizontalContentAlignment" Value="Stretch"&gt;&lt;/Setter&gt;
-
-    &lt;Setter Property="ContentTemplate" Value="{StaticResource NodeTemplate}" /&gt;
-
-&lt;/Style&gt;
 
 
+<!-- Style for Node -->
 
-{ ![](Nodes_images/Nodes_img8.png) | markdownify }
+<Style TargetType="{x:Type syncfusion:Node}" x:Key="{x:Type syncfusion:Node}">
+
+    <Setter Property="Width" Value="175" />
+
+    <Setter Property="Height" Value="100" />
+
+    <Setter Property="VerticalContentAlignment" Value="Stretch"></Setter>
+
+    <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+
+    <Setter Property="ContentTemplate" Value="{StaticResource NodeTemplate}" />
+
+</Style>
+
+
+
+{{ '![](Nodes_images/Nodes_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -1206,7 +1206,7 @@ The steps to rotate a node are as follows.
 
 
 
-{ ![](Nodes_images/Nodes_img9.jpeg) | markdownify }
+{{ '![](Nodes_images/Nodes_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1268,7 +1268,7 @@ After Rotating the Node:
 
 
 
-{ ![C:/Users/ramyathirugnanam/Desktop/Node Rotation.PNG](Nodes_images/Nodes_img10.png) | markdownify }
+{{ '![C:/Users/ramyathirugnanam/Desktop/Node Rotation.PNG](Nodes_images/Nodes_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -1278,7 +1278,7 @@ After rotating the Group
 
 
 
-{ ![](Nodes_images/Nodes_img11.png) | markdownify }
+{{ '![](Nodes_images/Nodes_img11.png)' | markdownify }}
 {:.image }
 
 
@@ -1317,7 +1317,7 @@ Resizing a node affects the node's width and height. To resize a node, follow th
 
 
 
-{ ![](Nodes_images/Nodes_img12.jpeg) | markdownify }
+{{ '![](Nodes_images/Nodes_img12.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1387,45 +1387,45 @@ diagramPage.EnableResizingCurrentNodeOnMultipleSelection = True
 
 
 
-    &lt;!--Diagram Control--&gt;
+    <!--Diagram Control-->
 
-    &lt;syncfusion:DiagramControl  Name="diagramControl"&gt;
-
-
-
-        &lt;!-- Model to add nodes and connections--&gt;
-
-        &lt;syncfusion:DiagramControl.Model&gt;
-
-            &lt;syncfusion:DiagramModel x:Name="diagramModel"&gt;
-
-            &lt;/syncfusion:DiagramModel&gt;
-
-        &lt;/syncfusion:DiagramControl.Model&gt;
+    <syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        &lt;!--View to display nodes and connections added through model.--&gt;
+        <!-- Model to add nodes and connections-->
 
-        &lt;syncfusion:DiagramControl.View&gt;
+        <syncfusion:DiagramControl.Model>
 
-            &lt;syncfusion:DiagramView Name="diagramView"&gt;
+            <syncfusion:DiagramModel x:Name="diagramModel">
 
-&lt;syncfusion:DiagramView.Page&gt;
+            </syncfusion:DiagramModel>
 
-&lt;syncfusion:DiagramPage EnableResizingCurrentNodeOnMultipleSelection="True" x:Name="diagramPage"/&gt;
-
-&lt;/syncfusion:DiagramView.Page&gt;
-
-            &lt;/syncfusion:DiagramView&gt;
-
-        &lt;/syncfusion:DiagramControl.View&gt;
-
-    &lt;/syncfusion:DiagramControl&gt;
+        </syncfusion:DiagramControl.Model>
 
 
 
-{ ![](Nodes_images/Nodes_img13.jpeg) | markdownify }
+        <!--View to display nodes and connections added through model.-->
+
+        <syncfusion:DiagramControl.View>
+
+            <syncfusion:DiagramView Name="diagramView">
+
+<syncfusion:DiagramView.Page>
+
+<syncfusion:DiagramPage EnableResizingCurrentNodeOnMultipleSelection="True" x:Name="diagramPage"/>
+
+</syncfusion:DiagramView.Page>
+
+            </syncfusion:DiagramView>
+
+        </syncfusion:DiagramControl.View>
+
+    </syncfusion:DiagramControl>
+
+
+
+{{ '![](Nodes_images/Nodes_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1624,7 +1624,7 @@ diagramModel.Nodes.Add(n)
 
 
 
-{ ![](Nodes_images/Nodes_img14.jpeg) | markdownify }
+{{ '![](Nodes_images/Nodes_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1667,7 +1667,7 @@ A user can specify a label at run time by following the below mentioned steps.
 
 
 
-{ ![](Nodes_images/Nodes_img15.jpeg) | markdownify }
+{{ '![](Nodes_images/Nodes_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1723,7 +1723,7 @@ n.IsLabelEditable = True
 
 
 
-{ ![](Nodes_images/Nodes_img16.png) | markdownify }
+{{ '![](Nodes_images/Nodes_img16.png)' | markdownify }}
 {:.image }
 
 
@@ -1807,7 +1807,7 @@ This will place the label at the center of the node.
 
 
 
-{ ![](Nodes_images/Nodes_img17.jpeg) | markdownify }
+{{ '![](Nodes_images/Nodes_img17.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1857,7 +1857,7 @@ n.Label = 45
 
 
 
-{ ![](Nodes_images/Nodes_img18.png) | markdownify }
+{{ '![](Nodes_images/Nodes_img18.png)' | markdownify }}
 {:.image }
 
 
@@ -1873,7 +1873,7 @@ Node’s Label can be set as Multiline Label by setting the EnableMultiline prop
 
 
 
-&lt;syncfusion:Node Shape="FlowChart_Card" Height="100" Width="100" OffsetX="500" OffsetY="500" Name="Node1" EnableMultilineLabel="true”/&gt;
+<syncfusion:Node Shape="FlowChart_Card" Height="100" Width="100" OffsetX="500" OffsetY="500" Name="Node1" EnableMultilineLabel="true”/>
 
 
 
@@ -1921,7 +1921,7 @@ diagramModel.Nodes.Add(node1)
 
 
 
-{ ![Description: C:/Users/karthikeyanp/Pictures/images/enablemultilinelabel-node.png](Nodes_images/Nodes_img19.png) | markdownify }
+{{ '![Description: C:/Users/karthikeyanp/Pictures/images/enablemultilinelabel-node.png](Nodes_images/Nodes_img19.png)' | markdownify }}
 {:.image }
 
 
@@ -2045,7 +2045,7 @@ diagramModel.Nodes.Add(n)
 
 
 
-{ ![](Nodes_images/Nodes_img20.jpeg) | markdownify }
+{{ '![](Nodes_images/Nodes_img20.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2063,37 +2063,37 @@ Gripper can be customized using the GripperStyle property of the Node.  However,
 
 
 
-&lt;Style x:Key="GripperStyle"  TargetType="{x:Type syncfusion:Gripper}"&gt;
+<Style x:Key="GripperStyle"  TargetType="{x:Type syncfusion:Gripper}">
 
-                &lt;Setter Property="Width" Value="30"/&gt;
+                <Setter Property="Width" Value="30"/>
 
-                &lt;Setter Property="Height" Value="30"/&gt;
+                <Setter Property="Height" Value="30"/>
 
-                &lt;Setter Property="HorizontalAlignment" Value="Left"/&gt;
+                <Setter Property="HorizontalAlignment" Value="Left"/>
 
-                &lt;Setter Property="VerticalAlignment" Value="Top"/&gt; 
+                <Setter Property="VerticalAlignment" Value="Top"/> 
 
-                &lt;Setter Property="Margin" Value="10,-15,0,0"/&gt;
+                <Setter Property="Margin" Value="10,-15,0,0"/>
 
-                &lt;Setter Property="Template"&gt;
+                <Setter Property="Template">
 
-                    &lt;Setter.Value&gt;
+                    <Setter.Value>
 
-                        &lt;ControlTemplate TargetType="{x:Type syncfusion:Gripper}"&gt;
+                        <ControlTemplate TargetType="{x:Type syncfusion:Gripper}">
 
-                            &lt;Border Background="Salmon" CornerRadius="10" BorderThickness="2" BorderBrush="Gray"&gt;
+                            <Border Background="Salmon" CornerRadius="10" BorderThickness="2" BorderBrush="Gray">
 
-                                &lt;Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Content="G" FontWeight="Bold"/&gt;
+                                <Label HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Content="G" FontWeight="Bold"/>
 
-                            &lt;/Border&gt;
+                            </Border>
 
-                        &lt;/ControlTemplate&gt;
+                        </ControlTemplate>
 
-                    &lt;/Setter.Value&gt;
+                    </Setter.Value>
 
-                &lt;/Setter&gt;
+                </Setter>
 
-&lt;/Style&gt;
+</Style>
 
 
 
@@ -2125,7 +2125,7 @@ diagramModel.Nodes.Add(node)
 
 
 
-{ ![](Nodes_images/Nodes_img21.jpeg) | markdownify }
+{{ '![](Nodes_images/Nodes_img21.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2171,7 +2171,7 @@ Node can be selected at run time just by clicking on the node.
 
 
 
-{ ![](Nodes_images/Nodes_img22.png) | markdownify }
+{{ '![](Nodes_images/Nodes_img22.png)' | markdownify }}
 {:.image }
 
 
@@ -2179,7 +2179,7 @@ _Node before selecion_
 
 
 
-{ ![](Nodes_images/Nodes_img23.png) | markdownify }
+{{ '![](Nodes_images/Nodes_img23.png)' | markdownify }}
 {:.image }
 
 
@@ -2240,7 +2240,7 @@ Items can be deselected by clicking on any part of the drawing area other than t
 
 
 
-{ ![](Nodes_images/Nodes_img24.jpeg) | markdownify }
+{{ '![](Nodes_images/Nodes_img24.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -2636,35 +2636,35 @@ The following code illustrates how to create the style for ResizerThumb
 
 
 
-&lt;Style x:Key="TopLeftCornerResizerThump"  TargetType="syncfusion:ResizerThumb" &gt;
+<Style x:Key="TopLeftCornerResizerThump"  TargetType="syncfusion:ResizerThumb" >
 
-   &lt;Setter Property="SnapsToDevicePixels" Value="True"/&gt;
+   <Setter Property="SnapsToDevicePixels" Value="True"/>
 
-   &lt;Setter Property="OverridesDefaultStyle" Value="true"/&gt;
+   <Setter Property="OverridesDefaultStyle" Value="true"/>
 
-   &lt;Setter Property="IsTabStop" Value="false"/&gt;
+   <Setter Property="IsTabStop" Value="false"/>
 
-   &lt;Setter Property="Focusable" Value="false"/&gt;
+   <Setter Property="Focusable" Value="false"/>
 
-   &lt;Setter Property="Height" Value="15"/&gt;
+   <Setter Property="Height" Value="15"/>
 
-   &lt;Setter Property="Width" Value="15"/&gt;
+   <Setter Property="Width" Value="15"/>
 
-   &lt;Setter Property="Cursor" Value="SizeNWSE"/&gt;
+   <Setter Property="Cursor" Value="SizeNWSE"/>
 
-   &lt;Setter Property="Margin" Value="-3 -3 0 0"/&gt;
+   <Setter Property="Margin" Value="-3 -3 0 0"/>
 
-   &lt;Setter Property="VerticalAlignment" Value="Top"/&gt;
+   <Setter Property="VerticalAlignment" Value="Top"/>
 
-   &lt;Setter Property="HorizontalAlignment" Value="Left"/&gt;
+   <Setter Property="HorizontalAlignment" Value="Left"/>
 
-    &lt;Setter Property="Template"&gt;
+    <Setter Property="Template">
 
-    &lt;Setter.Value&gt;
+    <Setter.Value>
 
-      &lt;ControlTemplate TargetType="syncfusion:ResizerThumb"&gt;
+      <ControlTemplate TargetType="syncfusion:ResizerThumb">
 
-         &lt;Grid&gt;
+         <Grid>
 
           <Rectangle HorizontalAlignment="Stretch" Margin="{TemplateBinding Margin}"
 
@@ -2682,15 +2682,15 @@ The following code illustrates how to create the style for ResizerThumb
 
             StrokeStartLineCap="Round" Margin="{TemplateBinding Margin}"/>
 
-           &lt;/Grid&gt;
+           </Grid>
 
-         &lt;/ControlTemplate&gt;
+         </ControlTemplate>
 
-     &lt;/Setter.Value&gt;
+     </Setter.Value>
 
-  &lt;/Setter&gt;
+  </Setter>
 
-&lt;/Style&gt;
+</Style>
 
 
 
@@ -2706,25 +2706,25 @@ The following code illustrates how to assign the Resize Handler Style to Node
 
 
 
-&lt;Style TargetType="syncfusion:Node"&gt;
+<Style TargetType="syncfusion:Node">
 
-&lt;Setter Property="TopResizer" Value="{StaticResource  TopResizerThump}"/&gt;
+<Setter Property="TopResizer" Value="{StaticResource  TopResizerThump}"/>
 
-&lt;Setter Property="LeftResizer" Value="{StaticResource LeftResizerThump}"/&gt;
+<Setter Property="LeftResizer" Value="{StaticResource LeftResizerThump}"/>
 
-&lt;Setter Property="RightResizer" Value="{StaticResource RightResizerThump}"/&gt;
+<Setter Property="RightResizer" Value="{StaticResource RightResizerThump}"/>
 
-&lt;Setter Property="BottomResizer" Value="{StaticResource BottomResizerThump}"/&gt;
+<Setter Property="BottomResizer" Value="{StaticResource BottomResizerThump}"/>
 
-&lt;Setter Property="TopLeftCornerResizer" Value="{StaticResource TopLeftCornerResizerThump}"/&gt;
+<Setter Property="TopLeftCornerResizer" Value="{StaticResource TopLeftCornerResizerThump}"/>
 
-&lt;Setter Property="TopRightCornerResizer" Value="{StaticResource TopRightCornerResizerThump}"/&gt;
+<Setter Property="TopRightCornerResizer" Value="{StaticResource TopRightCornerResizerThump}"/>
 
-&lt;Setter Property="BottomLeftCornerResizer" Value="{StaticResource BottomLeftCornerResizerThump}"/&gt;
+<Setter Property="BottomLeftCornerResizer" Value="{StaticResource BottomLeftCornerResizerThump}"/>
 
-&lt;Setter Property="BottomRightCornerResizer" Value="{StaticResource BottomRightCornerResizerThump}"/&gt;
+<Setter Property="BottomRightCornerResizer" Value="{StaticResource BottomRightCornerResizerThump}"/>
 
-&lt;/Style&gt;
+</Style>
 
 
 
@@ -2792,13 +2792,13 @@ The following code illustrates how to set the ResizerThumb Template to Null.
 
 [XAML]
 
-&lt;Style x:Key="TopResizerThump" TargetType="syncfusion:ResizerThumb"&gt; 
+<Style x:Key="TopResizerThump" TargetType="syncfusion:ResizerThumb"> 
 
-       &lt;Setter Property="Template" Value="{x:Null}"&gt;
+       <Setter Property="Template" Value="{x:Null}">
 
-       &lt;/Setter&gt;
+       </Setter>
 
-&lt;/Style&gt;
+</Style>
 
 
 
@@ -2806,7 +2806,7 @@ Following is a sample screenshot of customized resizer that has only four corner
 
 
 
-{ ![](Nodes_images/Nodes_img25.png) | markdownify }
+{{ '![](Nodes_images/Nodes_img25.png)' | markdownify }}
 {:.image }
 
 
@@ -3108,7 +3108,7 @@ Essential Diagram for WPF provides layout representation for nodes. Numerous nod
 
 
 
-{ ![](Nodes_images/Nodes_img26.png) | markdownify }
+{{ '![](Nodes_images/Nodes_img26.png)' | markdownify }}
 {:.image }
 
 

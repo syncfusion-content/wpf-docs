@@ -23,7 +23,7 @@ BreakCharacterFormat property is used to set character formatting for the Break 
 
 
 
-{ ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img1.png) | markdownify }
+{{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -474,7 +474,7 @@ The following screenshot illustrates the various layout formats available in Mic
 
 
 
-{ ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img2.png) | markdownify }
+{{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -618,7 +618,7 @@ A Hyperlink is a colored and underlined text or a graphic that when clicked, dir
 
 
 
-{ ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img3.png) | markdownify }
+{{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -927,7 +927,7 @@ WSymbol class represents a symbol in the Word document. To insert a symbol, clic
 
 
 
-{ ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img4.png) | markdownify }
+{{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -1001,7 +1001,7 @@ The following code example illustrates how to use the WSymbol class.
 
 Break class represents a break in the Word document. To insert a break, open the PageLayout menu, and click Breaks in Microsoft Word.
 
-{ ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img5.png) | markdownify }
+{{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -1013,7 +1013,7 @@ You can use the AppendBreak method of WParagraph to insert a break by using DocI
 * Page* Column* Line</td></tr>
 <tr>
 <td>
-> <br>{{ '_Note: Now, direct support is provided to insert section breaks by calling the InsertSectionBreak method._' | markdownify }}</td></tr>
+> <br>{{{ ''_Note: Now, direct support is provided to insert section breaks by calling the InsertSectionBreak method._'' | markdownify }}}</td></tr>
 </table>
 Class Hierarchy
 
@@ -1101,7 +1101,7 @@ When you copy information as an embedded instance, the destination file requires
 
 
 
-{ ![](Working-with-Paragraphs_images/Working-with-Paragraphs_img6.png) | markdownify }
+{{ '![](Working-with-Paragraphs_images/Working-with-Paragraphs_img6.png)' | markdownify }}
 {:.image }
 
 

@@ -41,46 +41,46 @@ In the following example, TopItemPosition is set to 0.0. So the SelectedItem is 
 
 
 
-&lt;syncfusion:Carousel x:Name="carousel" Height="400" Width="450" ItemsPerPage="5" OpacityEnabled="True" ScalingEnabled="True" SkewAngleXEnabled="False"                     TopItemPosition="0"&gt;
-    &lt;syncfusion:Carousel.Path&gt;
-        &lt;Path Data="M0,300 L600,300" Stroke="Blue" StrokeThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/&gt;
-    &lt;/syncfusion:Carousel.Path&gt;
-    &lt;syncfusion:Carousel.OpacityFractions&gt;
-        &lt;syncfusion:PathFractionCollection&gt;
-            &lt;!--Fraction represents the position in Path-                Value represents the Opacity of Carousel item in a particular point--&gt;
-            &lt;syncfusion:FractionValue Fraction="0" Value="1"/&gt;
-            &lt;syncfusion:FractionValue Fraction="1" Value="0.5"/&gt;
-        &lt;/syncfusion:PathFractionCollection&gt;
-    &lt;/syncfusion:Carousel.OpacityFractions&gt;
+<syncfusion:Carousel x:Name="carousel" Height="400" Width="450" ItemsPerPage="5" OpacityEnabled="True" ScalingEnabled="True" SkewAngleXEnabled="False"                     TopItemPosition="0">
+    <syncfusion:Carousel.Path>
+        <Path Data="M0,300 L600,300" Stroke="Blue" StrokeThickness="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+    </syncfusion:Carousel.Path>
+    <syncfusion:Carousel.OpacityFractions>
+        <syncfusion:PathFractionCollection>
+            <!--Fraction represents the position in Path-                Value represents the Opacity of Carousel item in a particular point-->
+            <syncfusion:FractionValue Fraction="0" Value="1"/>
+            <syncfusion:FractionValue Fraction="1" Value="0.5"/>
+        </syncfusion:PathFractionCollection>
+    </syncfusion:Carousel.OpacityFractions>
 
-    &lt;syncfusion:Carousel.ScaleFractions&gt;
-         &lt;syncfusion:PathFractionCollection&gt;
-            &lt;syncfusion:FractionValue Fraction="0" Value="1"/&gt;
-            &lt;syncfusion:FractionValue Fraction="1" Value="0.5"/&gt;
-        &lt;/syncfusion:PathFractionCollection&gt;
-    &lt;/syncfusion:Carousel.ScaleFractions&gt;
+    <syncfusion:Carousel.ScaleFractions>
+         <syncfusion:PathFractionCollection>
+            <syncfusion:FractionValue Fraction="0" Value="1"/>
+            <syncfusion:FractionValue Fraction="1" Value="0.5"/>
+        </syncfusion:PathFractionCollection>
+    </syncfusion:Carousel.ScaleFractions>
 
-    &lt;syncfusion:Carousel.ItemTemplate&gt;
-        &lt;DataTemplate&gt;
-            &lt;Border Height="100" Width="100"&gt;
-                &lt;Border.Background&gt;
-                    &lt;LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0"&gt;
-                        &lt;GradientStop Color="#FF8B8B8B" Offset="0"/&gt;
-                        &lt;GradientStop Color="#FFDADADA" Offset="1"/&gt;
-                        &lt;GradientStop Color="#FFF3F3F3" Offset="0.536"/&gt;
-                    &lt;/LinearGradientBrush&gt;
-                &lt;/Border.Background&gt;
-                &lt;ContentControl Content="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Center"/&gt;
-            &lt;/Border&gt;
-        &lt;/DataTemplate&gt;
-    &lt;/syncfusion:Carousel.ItemTemplate&gt;
-&lt;/syncfusion:Carousel&gt;
-
-
+    <syncfusion:Carousel.ItemTemplate>
+        <DataTemplate>
+            <Border Height="100" Width="100">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF8B8B8B" Offset="0"/>
+                        <GradientStop Color="#FFDADADA" Offset="1"/>
+                        <GradientStop Color="#FFF3F3F3" Offset="0.536"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <ContentControl Content="{Binding}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+        </DataTemplate>
+    </syncfusion:Carousel.ItemTemplate>
+</syncfusion:Carousel>
 
 
 
-{ ![](Change-SelectedItem-position_images/Change-SelectedItem-position_img1.png) | markdownify }
+
+
+{{ '![](Change-SelectedItem-position_images/Change-SelectedItem-position_img1.png)' | markdownify }}
 {:.image }
 
 

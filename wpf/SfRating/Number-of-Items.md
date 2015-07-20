@@ -17,11 +17,11 @@ The following code sample shows how to use the ItemsCount property:
 
 
 
-&lt;editors:SfRating ItemsCount="5" Value="2"/&gt;
+<editors:SfRating ItemsCount="5" Value="2"/>
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/2.png](Number-of-Items_images/Number-of-Items_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/2.png](Number-of-Items_images/Number-of-Items_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -19,47 +19,47 @@ Use the following code snippet to set this property.
 
 
 
-&lt;!-- Adding TaskBar that have animation speed as 10 --&gt;
+<!-- Adding TaskBar that have animation speed as 10 -->
 
-&lt;syncfusion:TaskBar Name="taskBar" GroupMargin="5" syncfusion:TaskBar.Speed="10"&gt;
-
-
-
-    &lt;!-- Adding TaskBarItem --&gt;
-
-    &lt;syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1"&gt;
+<syncfusion:TaskBar Name="taskBar" GroupMargin="5" syncfusion:TaskBar.Speed="10">
 
 
 
-        &lt;!-- Adding content to TaskBarItem --&gt;
+    <!-- Adding TaskBarItem -->
 
-        &lt;StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch"&gt;
-
-            <TextBlock TextWrapping="Wrap">This taskbar provides an UI similar to that of Windows XP.&lt;/TextBlock&gt;
-
-        &lt;/StackPanel&gt;
-
-    &lt;/syncfusion:TaskBarItem&gt;
+    <syncfusion:TaskBarItem Name="taskBarItem1" Header="TaskBarItem1">
 
 
 
-    &lt;!-- Adding TaskBarItem --&gt;
+        <!-- Adding content to TaskBarItem -->
 
-    &lt;syncfusion:TaskBarItem Name="taskBarItem2" Header="TaskBarItem2"&gt;
+        <StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch">
+
+            <TextBlock TextWrapping="Wrap">This taskbar provides an UI similar to that of Windows XP.</TextBlock>
+
+        </StackPanel>
+
+    </syncfusion:TaskBarItem>
 
 
 
-        &lt;!-- Adding content to TaskBarItem --&gt;
+    <!-- Adding TaskBarItem -->
 
-        &lt;StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch"&gt;
+    <syncfusion:TaskBarItem Name="taskBarItem2" Header="TaskBarItem2">
 
-            <TextBlock TextWrapping="Wrap">Specify and customize the group margin.&lt;/TextBlock&gt;
 
-        &lt;/StackPanel&gt;
 
-    &lt;/syncfusion:TaskBarItem&gt;
+        <!-- Adding content to TaskBarItem -->
 
-&lt;/syncfusion:TaskBar&gt;
+        <StackPanel Margin="10" HorizontalAlignment="Center" 											VerticalAlignment="Stretch">
+
+            <TextBlock TextWrapping="Wrap">Specify and customize the group margin.</TextBlock>
+
+        </StackPanel>
+
+    </syncfusion:TaskBarItem>
+
+</syncfusion:TaskBar>
 
 
 

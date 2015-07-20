@@ -55,7 +55,7 @@ OlapDataManager DataManager = New OlapDataManager() { ShowLevelTypeAll = True }
 
 
 
-{ ![](Support-for-All-Level-Type-Member_images/Support-for-All-Level-Type-Member_img1.png) | markdownify }
+{{ '![](Support-for-All-Level-Type-Member_images/Support-for-All-Level-Type-Member_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -67,9 +67,9 @@ A demo of this feature is available in the following location:
 
 Windows XP
 
-_..\Syncfusion\EssentialStudio\&lt;Versionnumber&gt;\BI\WPF\OlapGrid.WPF\Samples\Defining Reports\Reports-in-code Demo_
+_..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Defining Reports\Reports-in-code Demo_
 
 Windows 7/Vista
 
-_C:\Users\&lt;UserName&gt;\AppData\Local\Syncfusion\EssentialStudio\x.x.x.x\BI\ WPF\OlapGrid.WPF\Samples\Defining Reports\Reports-in-code Demo_
+_C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\x.x.x.x\BI\ WPF\OlapGrid.WPF\Samples\Defining Reports\Reports-in-code Demo_
 

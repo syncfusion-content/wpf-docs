@@ -17,11 +17,11 @@ The following code examples illustrate how to add Trendlines to the chart.
 
 
 
-&lt;syncfusion:LineSeries.Trendlines &gt;
+<syncfusion:LineSeries.Trendlines >
 
-            &lt;syncfusion:Trendline  IsTrendlineVisible="True"/&gt;
+            <syncfusion:Trendline  IsTrendlineVisible="True"/>
 
-        &lt;/syncfusion:LineSeries.Trendlines&gt;
+        </syncfusion:LineSeries.Trendlines>
 
 
 
@@ -31,15 +31,15 @@ You can set the Polynomial order for the line. Polynomial order calculates order
 
 
 
-&lt;syncfusion:LineSeries.Trendlines &gt;
+<syncfusion:LineSeries.Trendlines >
 
-    &lt;syncfusion:Trendline IsTrendlineVisible="True"  PolynomialOrder="2" /&gt;
+    <syncfusion:Trendline IsTrendlineVisible="True"  PolynomialOrder="2" />
 
-&lt;/syncfusion:LineSeries.Trendlines&gt;
+</syncfusion:LineSeries.Trendlines>
 
 The lines of Trendlines can be customized using properties such as Stroke, StrokeThickness, and StrokeDashedArray.Stroke is used to add color to the line stroke, StrokeThickness is used to specify line thickness and StrokeDashedArray is used to draw dotted lines.
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-85.png](Trendlines_images/Trendlines_img1.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-85.png](Trendlines_images/Trendlines_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -78,17 +78,17 @@ Polynomial Trendline is a curved line that is used when data fluctuates.
 
 
 
-&lt;syncfusion:LineSeries.Trendlines &gt;
+<syncfusion:LineSeries.Trendlines >
 
-            &lt;syncfusion:Trendline IsTrendlineVisible="True" Type="Linear"/&gt;
+            <syncfusion:Trendline IsTrendlineVisible="True" Type="Linear"/>
 
-        &lt;/syncfusion:LineSeries.Trendlines&gt;
-
-
+        </syncfusion:LineSeries.Trendlines>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-86.png](Trendlines_images/Trendlines_img2.png) | markdownify }
+
+
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-86.png](Trendlines_images/Trendlines_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -107,17 +107,17 @@ The following code example illustrates how to enable Forecasting in Trendlines.
 
 
 
-&lt;syncfusion:LineSeries.Trendlines &gt;
+<syncfusion:LineSeries.Trendlines >
 
-    &lt;syncfusion:Trendline ForwardForecast="5" /&gt;
+    <syncfusion:Trendline ForwardForecast="5" />
 
-&lt;/syncfusion:LineSeries.Trendlines&gt;
-
-
+</syncfusion:LineSeries.Trendlines>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-87.png](Trendlines_images/Trendlines_img3.png) | markdownify }
+
+
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-87.png](Trendlines_images/Trendlines_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -125,15 +125,15 @@ The following code example illustrates how to enable Forecasting in Trendlines.
 
 
 
-&lt;syncfusion:LineSeries.Trendlines &gt;
+<syncfusion:LineSeries.Trendlines >
 
-    &lt;syncfusion:Trendline BackwardForecast="10" /&gt;
+    <syncfusion:Trendline BackwardForecast="10" />
 
-&lt;/syncfusion:LineSeries.Trendlines&gt;
+</syncfusion:LineSeries.Trendlines>
 
 
 
-{ ![C:/Users/rachel/Desktop/wpf/sshot-88.png](Trendlines_images/Trendlines_img4.png) | markdownify }
+{{ '![C:/Users/rachel/Desktop/wpf/sshot-88.png](Trendlines_images/Trendlines_img4.png)' | markdownify }}
 {:.image }
 
 

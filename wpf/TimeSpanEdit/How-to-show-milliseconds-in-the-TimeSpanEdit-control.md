@@ -11,7 +11,7 @@ documentation: ug
 
 The character z in the format string is used to display milliseconds in the TimeSpanEdit control. 
 
-{ ![](How-to-show-milliseconds-in-the-TimeSpanEdit-control_images/How-to-show-milliseconds-in-the-TimeSpanEdit-control_img1.png) | markdownify }
+{{ '![](How-to-show-milliseconds-in-the-TimeSpanEdit-control_images/How-to-show-milliseconds-in-the-TimeSpanEdit-control_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -19,7 +19,7 @@ The character z in the format string is used to display milliseconds in the Time
 
 [XAML]
 
-&lt;syncfusion:TimeSpanEdit Value="10.2:25:52" Format=" d 'days' h 'hours' m 'minutes' :s 'sec' z 'msec' "/&gt;
+<syncfusion:TimeSpanEdit Value="10.2:25:52" Format=" d 'days' h 'hours' m 'minutes' :s 'sec' z 'msec' "/>
 
 
 

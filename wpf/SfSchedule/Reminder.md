@@ -73,7 +73,7 @@ Schedule reminds you the particular appointment in the specified time by setting
 
 
 
-{ ![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_24.jpg](Reminder_images/Reminder_img1.jpeg) | markdownify }
+{{ '![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_24.jpg](Reminder_images/Reminder_img1.jpeg)' | markdownify }}
 {:.image }
 
 

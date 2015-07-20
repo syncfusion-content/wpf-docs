@@ -76,7 +76,7 @@ grid.Model.RowHeights[3] = 40;
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img1.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -138,7 +138,7 @@ grid.Model.ColumnWidths.SetHidden(1010, 10000, false);
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img2.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -160,7 +160,7 @@ grid.Model.FrozenColumns = 3;
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img3.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img3.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -184,7 +184,7 @@ grid.Model.FooterStyle.Background = Brushes.LightCoral;
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img4.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img4.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -212,7 +212,7 @@ grid.Model.HeaderStyle.Font.FontStyle = FontStyles.Italic;
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img5.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img5.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -222,13 +222,13 @@ Grid allows the user to resize the rows and columns at run time. When this featu
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img6.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img6.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img7.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img7.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -286,13 +286,13 @@ grid.Model.InsertRows(5, 2);
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img8.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img8.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img9.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img9.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -333,7 +333,7 @@ grid.Model.MoveColumns(1, 2, 4);
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img10.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img10.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -366,7 +366,7 @@ grid.Model.RemoveColumns(2, 3);
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img11.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img11.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -401,13 +401,13 @@ grid.Model.ResizeRowsToFit(GridRangeInfo.Row(2), GridResizeToFitOptions.NoShrink
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img12.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img12.jpeg)' | markdownify }}
 {:.image }
 
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img13.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img13.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -429,7 +429,7 @@ this.grid.AllowDragColumns = true;
 
 The following image illustrates this feature:
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img14.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img14.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -492,7 +492,7 @@ gridControl.Model.Options.CopyPasteOption |= CopyPaste.PasteText;
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img15.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img15.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -521,7 +521,7 @@ gridControl.Model.TextDataExchange.TabDelimiter = ",";
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img16.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img16.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -636,13 +636,13 @@ class HtmlCopy : IGridCopyPaste
 
 
 
-        sb.Append("&lt;html&gt;&lt;body&gt;&lt;table border=1&gt;");
+        sb.Append("<html><body><table border=1>");
 
         for (int row = top; row <= bottom; row++)
 
         {
 
-            sb.Append("&lt;tr&gt;");
+            sb.Append("<tr>");
 
             for (int col = left; col <= right; col++)
 
@@ -758,7 +758,7 @@ class HtmlCopy : IGridCopyPaste
 
                 {
 
-                    sb.Append(@"&lt;td style=" + stylesheet + "&gt;");
+                    sb.Append(@"<td style=" + stylesheet + ">");
 
                 }
 
@@ -768,7 +768,7 @@ class HtmlCopy : IGridCopyPaste
 
                 {
 
-                    sb.Append(@"&lt;td&gt;");
+                    sb.Append(@"<td>");
 
                 }
 
@@ -788,23 +788,23 @@ class HtmlCopy : IGridCopyPaste
 
                 {
 
-                    sb.Append("&lt;pre&gt;       &lt;/pre&gt;");
+                    sb.Append("<pre>       </pre>");
 
                 }
 
 
 
-                sb.Append("&lt;/td&gt;");
+                sb.Append("</td>");
 
                 stylesheet = string.Empty;
 
             }
 
-            sb.Append("&lt;/tr&gt;");
+            sb.Append("</tr>");
 
         }
 
-        sb.Append("&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;");
+        sb.Append("</table></body></html>");
 
         DataObject dataObject = new DataObject();
 
@@ -850,7 +850,7 @@ gridControl.Model.GridCopyPaste = htmlCopy;
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img17.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img17.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -969,7 +969,7 @@ grid.Model.Options.AllowSelection = GridSelectionFlags.Multiple | GridSelectionF
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img18.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img18.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1033,7 +1033,7 @@ grid.Model.Options.DrawSelectionOptions = GridDrawSelectionOptions.AlphaBlend;
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img19.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img19.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1053,7 +1053,7 @@ grid.Model.Options.HighlightSelectionBackground = Brushes.LightBlue;
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img20.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img20.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1071,7 +1071,7 @@ grid.Model.Options.HighlightSelectionForeground = Brushes.Red;
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img21.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img21.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1102,7 +1102,7 @@ grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.One;
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img22.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img22.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1127,7 +1127,7 @@ grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.MultiSimple;
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img23.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img23.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1156,7 +1156,7 @@ grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.MultiExtended;
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img24.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img24.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1234,15 +1234,15 @@ The following code illustrates how to set the Width property of GridDataVisible
 
 Width Value set to Star:
 
-                    &lt;syncfusion:GridDataVisibleColumn MappingName="OrderID" Binding="{Binding OrderID}" Width="1.2*"/&gt;
+                    <syncfusion:GridDataVisibleColumn MappingName="OrderID" Binding="{Binding OrderID}" Width="1.2*"/>
 
 
 
 Width value set to “Double”
 
-                    &lt;syncfusion:GridDataVisibleColumn MappingName="CustomerID" Width="40" &gt;
+                    <syncfusion:GridDataVisibleColumn MappingName="CustomerID" Width="40" >
 
-                       &lt;/syncfusion:GridDataVisibleColumn&gt;
+                       </syncfusion:GridDataVisibleColumn>
 
 
 
@@ -1250,19 +1250,19 @@ Width value set to “SizeToCells”
 
 
 
-&lt;syncfusion:GridDataVisibleColumn MappingName="EmployeeID" Width="SizeToCells" Binding="{Binding EmployeeID}"/&gt;
+<syncfusion:GridDataVisibleColumn MappingName="EmployeeID" Width="SizeToCells" Binding="{Binding EmployeeID}"/>
 
 
 
 Width value set to "SizeToHeader”
 
-                    &lt;syncfusion:GridDataVisibleColumn MappingName="ShipName" Width="SizeToHeader" Binding="{Binding ShipName}"/&gt;
+                    <syncfusion:GridDataVisibleColumn MappingName="ShipName" Width="SizeToHeader" Binding="{Binding ShipName}"/>
 
 
 
 
 
-                &lt;/syncfusion:GridDataControl.VisibleColumns&gt;
+                </syncfusion:GridDataControl.VisibleColumns>
 
 
 
@@ -1289,7 +1289,7 @@ Width = new GridDataControlLength(value);
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img25.jpeg) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img25.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -1515,7 +1515,7 @@ The following is a sample output of Resizing support implementation.
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img26.png) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img26.png)' | markdownify }}
 {:.image }
 
 
@@ -1529,7 +1529,7 @@ The following screenshot explains how to hide and unhide a Column.
 
 Hover over the header cell’s border line. The cursor will be changed to single bar, as like in the following screenshot.
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img27.png) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img27.png)' | markdownify }}
 {:.image }
 
 
@@ -1537,7 +1537,7 @@ Drag it to Column 2 so that the Border color changes as like in the following sc
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img28.png) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img28.png)' | markdownify }}
 {:.image }
 
 
@@ -1545,7 +1545,7 @@ The following image shows the output after hiding the row by Mouse Dragging.
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img29.png) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img29.png)' | markdownify }}
 {:.image }
 
 
@@ -1553,7 +1553,7 @@ To unhide the hidden row, hover the mouse on the hidden column border line. A do
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img30.png) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img30.png)' | markdownify }}
 {:.image }
 
 
@@ -1561,7 +1561,7 @@ Double clicking on it will unhide all the hidden columns in that particular hidd
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img31.png) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img31.png)' | markdownify }}
 {:.image }
 
 
@@ -1788,7 +1788,7 @@ It is also possible to nest transactions. If you are in the middle of a transact
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img32.png) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img32.png)' | markdownify }}
 {:.image }
 
 
@@ -2138,7 +2138,7 @@ style.CellValue = bi;
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img33.png) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img33.png)' | markdownify }}
 {:.image }
 
 
@@ -2194,7 +2194,7 @@ style.CellValue = _flowDocument;
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img34.png) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img34.png)' | markdownify }}
 {:.image }
 
 
@@ -2735,7 +2735,7 @@ this.grid.Model.GraphicModel.GraphicCells.Add(cellspan);
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img35.png) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img35.png)' | markdownify }}
 {:.image }
 
 
@@ -2757,7 +2757,7 @@ style.CellValue = bi;
 
 
 
-{ ![](Working-with-Grid_images/Working-with-Grid_img36.png) | markdownify }
+{{ '![](Working-with-Grid_images/Working-with-Grid_img36.png)' | markdownify }}
 {:.image }
 
 

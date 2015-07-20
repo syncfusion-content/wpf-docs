@@ -16,13 +16,13 @@ You can insert a TextBox in the Report Designer and drag report items to the Tex
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-17.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img1.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-17.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img1.png)' | markdownify }}
 {:.image }
 
 
 1. To add the first value of the data field, drag the data field from the Report Data to the added TextBox.
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-18.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img2.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-18.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -34,7 +34,7 @@ To apply styles to the TextBox:
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-18.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img3.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-18.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -47,7 +47,7 @@ To apply styles to the TextBox:
 
 
 
-{ ![C:/Users/radhas/Desktop/ScreenShot/sshot-19.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img4.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/ScreenShot/sshot-19.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -56,7 +56,7 @@ To apply styles to the TextBox:
 
 
 
-{ ![](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img5.png) | markdownify }
+{{ '![](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -68,7 +68,7 @@ To apply styles to the TextBox:
 
 > 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-19.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img6.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-19.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -76,7 +76,7 @@ To apply styles to the TextBox:
 
 
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-20.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img7.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-20.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -84,7 +84,7 @@ Deleting TextBox
 
 To delete the TextBox, right click the TextBox to be deleted, and then select Delete.
 
-{ ![C:/Users/radhas/Desktop/DesignerDocument/sshot-21.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img8.png) | markdownify }
+{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-21.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img8.png)' | markdownify }}
 {:.image }
 
 

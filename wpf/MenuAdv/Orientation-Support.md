@@ -13,13 +13,13 @@ The MenuAdv control can align its content vertically and horizontally by using t
 
 When the value of the Orientation property is set to Horizontal, the Items of MenuAdv will be arranged horizontally.
 
-{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Createusingc#.png](Orientation-Support_images/Orientation-Support_img1.png) | markdownify }
+{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Createusingc#.png](Orientation-Support_images/Orientation-Support_img1.png)' | markdownify }}
 {:.image }
 
 
 Similarly, when the value of the Orientation property is set to Vertical, the Items of MenuAdv will be arranged vertically.
 
-{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Verti-Orien.png](Orientation-Support_images/Orientation-Support_img2.png) | markdownify }
+{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Verti-Orien.png](Orientation-Support_images/Orientation-Support_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -33,45 +33,45 @@ Users can add the Orientation support to MenuAdv used in the application as ment
 
 [XAML]
 
-&lt;shared:MenuAdv x:Name="Menu"  Orientation="Horizontal”/&gt;
+<shared:MenuAdv x:Name="Menu"  Orientation="Horizontal”/>
 
-                &lt;shared:MenuItemAdv Header="File"&gt;
+                <shared:MenuItemAdv Header="File">
 
-                    &lt;shared:MenuItemAdv Header="New"&gt;
+                    <shared:MenuItemAdv Header="New">
 
-                        &lt;shared:MenuItemAdv.Icon&gt;
+                        <shared:MenuItemAdv.Icon>
 
-                            &lt;Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/&gt;
+                            <Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
 
-                        &lt;/shared:MenuItemAdv.Icon&gt;
+                        </shared:MenuItemAdv.Icon>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                    &lt;shared:MenuItemAdv Header="Copy"&gt;
+                    <shared:MenuItemAdv Header="Copy">
 
-                        &lt;shared:MenuItemAdv.Icon&gt;
+                        <shared:MenuItemAdv.Icon>
 
-                            &lt;Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/&gt;
+                            <Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
 
-                        &lt;/shared:MenuItemAdv.Icon&gt;
+                        </shared:MenuItemAdv.Icon>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                    &lt;shared:MenuItemAdv Header="Cut"&gt;
+                    <shared:MenuItemAdv Header="Cut">
 
-                        &lt;shared:MenuItemAdv.Icon&gt;
+                        <shared:MenuItemAdv.Icon>
 
-                            &lt;Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/&gt;
+                            <Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
 
-                        &lt;/shared:MenuItemAdv.Icon&gt;
+                        </shared:MenuItemAdv.Icon>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                &lt;/shared:MenuItemAdv&gt;
+                </shared:MenuItemAdv>
 
-                &lt;shared:MenuItemAdv Header="Edit"/&gt;
+                <shared:MenuItemAdv Header="Edit"/>
 
-&lt;/shared:MenuAdv&gt;
+</shared:MenuAdv>
 
 
 
@@ -117,45 +117,45 @@ When the ExpandMode property is set to ExpandOnClick, you can open the submenu o
 
 
 
-&lt;shared:MenuAdv x:Name="Menu"  ExpandMode="ExpandOnMouseOver”/&gt;
+<shared:MenuAdv x:Name="Menu"  ExpandMode="ExpandOnMouseOver”/>
 
-                &lt;shared:MenuItemAdv Header="File"&gt;
+                <shared:MenuItemAdv Header="File">
 
-                    &lt;shared:MenuItemAdv Header="New"&gt;
+                    <shared:MenuItemAdv Header="New">
 
-                        &lt;shared:MenuItemAdv.Icon&gt;
+                        <shared:MenuItemAdv.Icon>
 
-                            &lt;Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/&gt;
+                            <Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
 
-                        &lt;/shared:MenuItemAdv.Icon&gt;
+                        </shared:MenuItemAdv.Icon>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                    &lt;shared:MenuItemAdv Header="Copy"&gt;
+                    <shared:MenuItemAdv Header="Copy">
 
-                        &lt;shared:MenuItemAdv.Icon&gt;
+                        <shared:MenuItemAdv.Icon>
 
-                            &lt;Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/&gt;
+                            <Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
 
-                        &lt;/shared:MenuItemAdv.Icon&gt;
+                        </shared:MenuItemAdv.Icon>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                    &lt;shared:MenuItemAdv Header="Cut"&gt;
+                    <shared:MenuItemAdv Header="Cut">
 
-                        &lt;shared:MenuItemAdv.Icon&gt;
+                        <shared:MenuItemAdv.Icon>
 
-                            &lt;Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/&gt;
+                            <Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
 
-                        &lt;/shared:MenuItemAdv.Icon&gt;
+                        </shared:MenuItemAdv.Icon>
 
-                    &lt;/shared:MenuItemAdv&gt;
+                    </shared:MenuItemAdv>
 
-                &lt;/shared:MenuItemAdv&gt;
+                </shared:MenuItemAdv>
 
-                &lt;shared:MenuItemAdv Header="Edit"/&gt;
+                <shared:MenuItemAdv Header="Edit"/>
 
-&lt;/shared:MenuAdv&gt;
+</shared:MenuAdv>
 
 
 

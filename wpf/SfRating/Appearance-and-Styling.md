@@ -17,23 +17,23 @@ The RatedFill property fills the rated area with the specified solid color in th
 
 
 
-&lt;editors:SfRating ItemsCount="5" Value="2"&gt;
+<editors:SfRating ItemsCount="5" Value="2">
 
-            &lt;editors:SfRating.ItemContainerStyle&gt;
+            <editors:SfRating.ItemContainerStyle>
 
-                &lt;Style TargetType="editors:RatingItem"&gt;
+                <Style TargetType="editors:RatingItem">
 
-                    &lt;Setter Property="RatedFill" Value="Green"/&gt;
+                    <Setter Property="RatedFill" Value="Green"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/editors:SfRating.ItemContainerStyle&gt;
+            </editors:SfRating.ItemContainerStyle>
 
-&lt;/editors:SfRating&gt;
+</editors:SfRating>
 
 
 
-{ ![C:/Users/ApoorvahR/Desktop/7.png](Appearance-and-Styling_images/Appearance-and-Styling_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/7.png](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -45,23 +45,23 @@ The PointerOverFill property fills the mouse over area with the specified solid 
 
 
 
-&lt;editors:SfRating ItemsCount="5" Value="2"&gt;
+<editors:SfRating ItemsCount="5" Value="2">
 
-            &lt;editors:SfRating.ItemContainerStyle&gt;
+            <editors:SfRating.ItemContainerStyle>
 
-                &lt;Style TargetType="editors:RatingItem"&gt;
+                <Style TargetType="editors:RatingItem">
 
-&lt;Setter Property="PointerOverFill" Value="Green"/&gt;
+<Setter Property="PointerOverFill" Value="Green"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/editors:SfRating.ItemContainerStyle&gt;
+            </editors:SfRating.ItemContainerStyle>
 
-&lt;/editors:SfRating&gt;
+</editors:SfRating>
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png) | markdownify }
+{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -73,25 +73,25 @@ RatedStroke sets the stroke for the rated area with the specified solid color in
 
 
 
-&lt;editors:SfRating ItemsCount="5" Value="2"&gt;
+<editors:SfRating ItemsCount="5" Value="2">
 
-            &lt;editors:SfRating.ItemContainerStyle&gt;
+            <editors:SfRating.ItemContainerStyle>
 
-                &lt;Style TargetType="editors:RatingItem"&gt;
+                <Style TargetType="editors:RatingItem">
 
-                    &lt;Setter Property="RatedStroke" Value="Green"/&gt;
+                    <Setter Property="RatedStroke" Value="Green"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/editors:SfRating.ItemContainerStyle&gt;
+            </editors:SfRating.ItemContainerStyle>
 
-&lt;/editors:SfRating &gt;
-
-
+</editors:SfRating >
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png) | markdownify }
+
+
+{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -103,25 +103,25 @@ RatedStrokeThickness sets the stroke thickness for the rated area with the speci
 
 
 
-&lt;editors:SfRating ItemsCount="5" Value="2"&gt;
+<editors:SfRating ItemsCount="5" Value="2">
 
-            &lt;editors:SfRating.ItemContainerStyle&gt;
+            <editors:SfRating.ItemContainerStyle>
 
-                &lt;Style TargetType="editors:RatingItem"&gt;
+                <Style TargetType="editors:RatingItem">
 
-                    &lt;Setter Property="RatedStroke" Value="Green"/&gt;
+                    <Setter Property="RatedStroke" Value="Green"/>
 
-&lt;Setter Property="RatedStrokeThickness" Value="2"/&gt;
+<Setter Property="RatedStrokeThickness" Value="2"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/editors:SfRating.ItemContainerStyle&gt;
+            </editors:SfRating.ItemContainerStyle>
 
-&lt;/editors:SfRating&gt;
+</editors:SfRating>
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png) | markdownify }
+{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -133,25 +133,25 @@ PointerOverStroke sets the stroke for the mouseover area with the specified soli
 
 
 
-&lt;editors:SfRating ItemsCount="5" Value="2"&gt;
+<editors:SfRating ItemsCount="5" Value="2">
 
-            &lt;editors:SfRating.ItemContainerStyle&gt;
+            <editors:SfRating.ItemContainerStyle>
 
-                &lt;Style TargetType="editors:RatingItem"&gt;
+                <Style TargetType="editors:RatingItem">
 
-&lt;Setter Property="PointerOverStroke" Value="Green"/&gt;
+<Setter Property="PointerOverStroke" Value="Green"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/editors:SfRating.ItemContainerStyle&gt;
+            </editors:SfRating.ItemContainerStyle>
 
-&lt;/editors:SfRating&gt;
-
-
+</editors:SfRating>
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png) | markdownify }
+
+
+{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -163,25 +163,25 @@ PointerOverStrokeThickness sets the stroke thickness for the mouseover area with
 
 
 
-&lt;editors:SfRating ItemsCount="5" Value="2"&gt;
+<editors:SfRating ItemsCount="5" Value="2">
 
-            &lt;editors:SfRating.ItemContainerStyle&gt;
+            <editors:SfRating.ItemContainerStyle>
 
-                &lt;Style TargetType="editors:RatingItem"&gt;
+                <Style TargetType="editors:RatingItem">
 
-                    &lt;Setter Property="PointerOverStroke" Value="Green"/&gt;
+                    <Setter Property="PointerOverStroke" Value="Green"/>
 
-&lt;Setter Property="PointerOverStrokeThickness" Value="2"/&gt;
+<Setter Property="PointerOverStrokeThickness" Value="2"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/editors:SfRating.ItemContainerStyle&gt;
+            </editors:SfRating.ItemContainerStyle>
 
-&lt;/editors:SfRating&gt;
+</editors:SfRating>
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png) | markdownify }
+{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -193,23 +193,23 @@ The UnratedFill property fills the unrated area with the specified solid color i
 
 
 
-&lt;editors:SfRating ItemsCount="5" Value="2"&gt;
+<editors:SfRating ItemsCount="5" Value="2">
 
-            &lt;editors:SfRating.ItemContainerStyle&gt;
+            <editors:SfRating.ItemContainerStyle>
 
-                &lt;Style TargetType="editors:RatingItem"&gt;
+                <Style TargetType="editors:RatingItem">
 
-&lt;Setter Property="UnratedFill" Value="Green"/&gt;
+<Setter Property="UnratedFill" Value="Green"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/editors:SfRating.ItemContainerStyle&gt;
+            </editors:SfRating.ItemContainerStyle>
 
-&lt;/editors:SfRating &gt;
+</editors:SfRating >
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png) | markdownify }
+{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -221,23 +221,23 @@ UnratedStroke sets the stroke for the unrated area with the specified solid colo
 
 
 
-&lt;editors:SfRating ItemsCount="5" Value="2"&gt;
+<editors:SfRating ItemsCount="5" Value="2">
 
-            &lt;editors:SfRating.ItemContainerStyle&gt;
+            <editors:SfRating.ItemContainerStyle>
 
-                &lt;Style TargetType="editors:RatingItem"&gt;
+                <Style TargetType="editors:RatingItem">
 
-&lt;Setter Property="UnratedStroke" Value="Green"/&gt;
+<Setter Property="UnratedStroke" Value="Green"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/editors:SfRating.ItemContainerStyle&gt;
+            </editors:SfRating.ItemContainerStyle>
 
-&lt;/editors:SfRating &gt;
+</editors:SfRating >
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png) | markdownify }
+{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -249,25 +249,25 @@ UnratedStrokeThickness sets the stroke thickness for the unrated area with the s
 
 
 
-&lt;editors:SfRating ItemsCount="5" Value="2"&gt;
+<editors:SfRating ItemsCount="5" Value="2">
 
-            &lt;editors:SfRating.ItemContainerStyle&gt;
+            <editors:SfRating.ItemContainerStyle>
 
-                &lt;Style TargetType="editors:RatingItem"&gt;
+                <Style TargetType="editors:RatingItem">
 
-                    &lt;Setter Property="UnratedStroke" Value="Green"/&gt;
+                    <Setter Property="UnratedStroke" Value="Green"/>
 
-&lt;Setter Property="UnratedStrokeThickness" Value="2"/&gt;
+<Setter Property="UnratedStrokeThickness" Value="2"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/editors:SfRating.ItemContainerStyle&gt;
+            </editors:SfRating.ItemContainerStyle>
 
-&lt;/editors:SfRating &gt;
+</editors:SfRating >
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img9.png) | markdownify }
+{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -285,21 +285,21 @@ XAML
 
                              VerticalContentAlignment="Center" Value="3">
 
-&lt;syncfusion:SfRatingItem Height="20"/&gt;
+<syncfusion:SfRatingItem Height="20"/>
 
-                    &lt;syncfusion:SfRatingItem Height="18"/&gt;
+                    <syncfusion:SfRatingItem Height="18"/>
 
-                    &lt;syncfusion:SfRatingItem Height="16"/&gt;
+                    <syncfusion:SfRatingItem Height="16"/>
 
-                    &lt;syncfusion:SfRatingItem Height="14"/&gt;
+                    <syncfusion:SfRatingItem Height="14"/>
 
-                    &lt;syncfusion:SfRatingItem Height="12"/&gt;
+                    <syncfusion:SfRatingItem Height="12"/>
 
-                &lt;/syncfusion:SfRating&gt;
+                </syncfusion:SfRating>
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img10.png) | markdownify }
+{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -307,23 +307,23 @@ To set same Height for each SfRatingItem, you can use the ItemContainerStyle.
 
 XAML
 
-&lt;syncfusion:SfRating Height="50" Width="300" ItemsCount="10" Value="4"&gt;
+<syncfusion:SfRating Height="50" Width="300" ItemsCount="10" Value="4">
 
-&lt;syncfusion:SfRating.ItemContainerStyle&gt;
+<syncfusion:SfRating.ItemContainerStyle>
 
-                        &lt;Style TargetType="syncfusion:SfRatingItem"&gt;
+                        <Style TargetType="syncfusion:SfRatingItem">
 
-&lt;Setter Property="Height" Value="12"/&gt;
+<Setter Property="Height" Value="12"/>
 
-                        &lt;/Style&gt;
+                        </Style>
 
-                    &lt;/syncfusion:SfRating.ItemContainerStyle&gt;
+                    </syncfusion:SfRating.ItemContainerStyle>
 
-                &lt;/syncfusion:SfRating&gt;
+                </syncfusion:SfRating>
 
 
 
-{ ![](Appearance-and-Styling_images/Appearance-and-Styling_img11.png) | markdownify }
+{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img11.png)' | markdownify }}
 {:.image }
 
 

@@ -187,7 +187,7 @@ The following code example illustrates how to create an empty table with two row
 </table>
 
 
-{ ![](Working-with-Tables_images/Working-with-Tables_img1.png) | markdownify }
+{{ '![](Working-with-Tables_images/Working-with-Tables_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -224,7 +224,7 @@ The following screenshot illustrates how to set the above properties by using th
 
 
 
-{ ![](Working-with-Tables_images/Working-with-Tables_img2.png) | markdownify }
+{{ '![](Working-with-Tables_images/Working-with-Tables_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -318,7 +318,7 @@ WTableCell class represents a table cell in a Word document. WTextBody is thebas
 
 The following screenshot illustrates how to set the Cell Format in Microsoft Word.
 
-{ ![](Working-with-Tables_images/Working-with-Tables_img3.png) | markdownify }
+{{ '![](Working-with-Tables_images/Working-with-Tables_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -484,7 +484,7 @@ The following screenshot illustrates how to set Row Format in Microsoft Word.
 
 
 
-{ ![](Working-with-Tables_images/Working-with-Tables_img4.png) | markdownify }
+{{ '![](Working-with-Tables_images/Working-with-Tables_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -548,7 +548,7 @@ WTableStyle class represents table style in a Word document. Table style specif
 
 
 
-{ ![http://help.syncfusion.com/ug/asp.net/ImagesExt/image25_32.png](Working-with-Tables_images/Working-with-Tables_img5.png) | markdownify }
+{{ '![http://help.syncfusion.com/ug/asp.net/ImagesExt/image25_32.png](Working-with-Tables_images/Working-with-Tables_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -585,7 +585,7 @@ The following screenshot illustrates how to set the conditional formatting to th
 
 
 
-{ ![sshot-2](Working-with-Tables_images/Working-with-Tables_img6.png) | markdownify }
+{{ '![sshot-2](Working-with-Tables_images/Working-with-Tables_img6.png)' | markdownify }}
 {:.image }
 
 

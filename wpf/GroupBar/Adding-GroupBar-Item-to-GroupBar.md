@@ -16,7 +16,7 @@ GroupBar Item is added to the GroupBar using XAML or C# code. The following code
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding GroupBar --&gt;&lt;syncfusion:GroupBar Height="200" Width="230" Name="groupBar"&gt;  &lt;!-- Adding GroupBarItem --&gt;  &lt;syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem"/&gt;&lt;/syncfusion:GroupBar&gt;</td></tr>
+[XAML]<!-- Adding GroupBar --><syncfusion:GroupBar Height="200" Width="230" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem"/></syncfusion:GroupBar></td></tr>
 <tr>
 <td>
 [C#]//Creating an instance of GroupBarGroupBar groupBar = new GroupBar();//Creating an instance of GroupBarItemGroupBarItem groupBarItem = new GroupBarItem();//Setting header for GroupBar itemgroupBarItem.Header = "GroupBarItem";//Adding GroupBar item to GroupBargroupBar.Items.Add(groupBarItem);//Adding GroupBar to the windowthis.Content = groupBar;</td></tr>
@@ -25,7 +25,7 @@ GroupBar Item is added to the GroupBar using XAML or C# code. The following code
 
 
 
-{ ![](Adding-GroupBar-Item-to-GroupBar_images/Adding-GroupBar-Item-to-GroupBar_img1.jpeg) | markdownify }
+{{ '![](Adding-GroupBar-Item-to-GroupBar_images/Adding-GroupBar-Item-to-GroupBar_img1.jpeg)' | markdownify }}
 {:.image }
 
 

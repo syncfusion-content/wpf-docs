@@ -51,7 +51,7 @@ The following code example illustrates how to add the minimizing item size to an
 
                              HeaderBackground="Gray" CornerRadius="3"/>
 
-&lt;/syncfusion:TileViewControl&gt;
+</syncfusion:TileViewControl>
 
 
 
@@ -99,7 +99,7 @@ The following code example illustrates how to add the minimizing item size to an
 
 
 
-{ ![](Minimizing-Item-Size_images/Minimizing-Item-Size_img1.png) | markdownify }
+{{ '![](Minimizing-Item-Size_images/Minimizing-Item-Size_img1.png)' | markdownify }}
 {:.image }
 
 

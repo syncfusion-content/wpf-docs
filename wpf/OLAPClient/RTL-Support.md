@@ -39,7 +39,7 @@ To enable RTL support, the FlowDirection property of the OLAP Client control nee
 
 [XAML]
 
-&lt;syncfusion:OlapClient x:Name="olapClient1" FlowDirection="RightToLeft" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"                                       OlapDataManager="{Binding ClientDataManager}" /&gt;
+<syncfusion:OlapClient x:Name="olapClient1" FlowDirection="RightToLeft" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"                                       OlapDataManager="{Binding ClientDataManager}" />
 
 
 
@@ -55,7 +55,7 @@ To enable RTL support, the FlowDirection property of the OLAP Client control nee
 
 
 
-{ ![](RTL-Support_images/RTL-Support_img1.jpeg) | markdownify }
+{{ '![](RTL-Support_images/RTL-Support_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -65,5 +65,5 @@ Sample Link
 
 A sample is available locally in the following location:
 
-SystemDrive:\Users\&lt;user_name&gt;\AppData\Local\Syncfusion\EssentialStudio\&lt;version_number&gt;\BI\WPF\OlapClient.WPF\Localization\LocalizationDemo
+SystemDrive:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\OlapClient.WPF\Localization\LocalizationDemo
 

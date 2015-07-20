@@ -17,7 +17,7 @@ XAML
 
 
 
-&lt;syncfusion:HierarchyNavigator x:Name="hierarchyNavigator"/&gt;
+<syncfusion:HierarchyNavigator x:Name="hierarchyNavigator"/>
 
 
 

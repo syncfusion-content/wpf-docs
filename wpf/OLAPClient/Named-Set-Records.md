@@ -13,7 +13,7 @@ OLAP Client now supports the binding of OLAP data with named set records pre-def
 
 The Cube Dimension Browser displays the Dimensions, Measures and KPIs along with named set, from the selected cube, inside a tree on the left. To visualize these members, you can drag the members to the Axes Element Builder area.
 
-{ ![](Named-Set-Records_images/Named-Set-Records_img1.png) | markdownify }
+{{ '![](Named-Set-Records_images/Named-Set-Records_img1.png)' | markdownify }}
 {:.image }
 
 

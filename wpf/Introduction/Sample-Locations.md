@@ -19,7 +19,7 @@ Run the samples
 
 To run the samples, open the corresponding Dashboard from the following location:
 
-Start -> All Programs -> Syncfusion -> Essential Studio &lt;x.x.x.x&gt; -> Dashboard
+Start -> All Programs -> Syncfusion -> Essential Studio <x.x.x.x> -> Dashboard
 
 Else open the Dashboard from the following installed location:
 
@@ -27,7 +27,7 @@ _C:\Program Files (x86)\Syncfusion\EssentialStudio\XX.X.X.XX\Infrastructure\Dash
 
 The following screenshot displays the Dashboard.
 
-{ ![](Sample-Locations_images/Sample-Locations_img1.png) | markdownify }
+{{ '![](Sample-Locations_images/Sample-Locations_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -17,19 +17,19 @@ You can add items to the drop-down menu of the Quick Access Toolbar by using the
 
 
 
-&lt;syncfusion:Ribbon.QuickAccessToolBar&gt;
+<syncfusion:Ribbon.QuickAccessToolBar>
 
-&lt;syncfusion:QuickAccessToolBar&gt;
+<syncfusion:QuickAccessToolBar>
 
-    &lt;syncfusion:QuickAccessToolBar.QATMenuItems&gt;
+    <syncfusion:QuickAccessToolBar.QATMenuItems>
 
-        &lt;syncfusion:RibbonButton Label="Testing1" /&gt;
+        <syncfusion:RibbonButton Label="Testing1" />
 
-        &lt;syncfusion:RibbonButton Label="Testing2" /&gt;
+        <syncfusion:RibbonButton Label="Testing2" />
 
-    &lt;/syncfusion:QuickAccessToolBar.QATMenuItems&gt;
+    </syncfusion:QuickAccessToolBar.QATMenuItems>
 
-&lt;/syncfusion:QuickAccessToolBar&gt;
+</syncfusion:QuickAccessToolBar>
 
 
 
@@ -59,7 +59,7 @@ this.ribbon1.QuickAccessToolBar.QATMenuItems.Add(button2);
 
 
 
-{ ![](Adding-Items-to-Drop-Down-Menu-of-the-Quick-Access-Toolbar_images/Adding-Items-to-Drop-Down-Menu-of-the-Quick-Access-Toolbar_img1.jpeg) | markdownify }
+{{ '![](Adding-Items-to-Drop-Down-Menu-of-the-Quick-Access-Toolbar_images/Adding-Items-to-Drop-Down-Menu-of-the-Quick-Access-Toolbar_img1.jpeg)' | markdownify }}
 {:.image }
 
 

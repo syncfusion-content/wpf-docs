@@ -91,7 +91,7 @@ The CardView control can also support data-binding to objects. The following exa
 
                 {
 
-                    if (this.Age &lt; 1 || this.Age &gt; 100)
+                    if (this.Age < 1 || this.Age > 100)
 
                     {
 
@@ -163,11 +163,11 @@ The CardView control can also support data-binding to objects. The following exa
 
 [XAML]
 
-&lt;Window.DataContext&gt;
+<Window.DataContext>
 
-   &lt;local:ViewModel/&gt;
+   <local:ViewModel/>
 
-&lt;/Window.DataContext&gt;
+</Window.DataContext>
 
 
 
@@ -179,57 +179,57 @@ The CardView control can also support data-binding to objects. The following exa
 
 [XAML]
 
-      &lt;syncfusion:CardView ItemsSource="{Binding Contacts}" &gt;
+      <syncfusion:CardView ItemsSource="{Binding Contacts}" >
 
-          &lt;syncfusion:CardView.ItemTemplate&gt;
+          <syncfusion:CardView.ItemTemplate>
 
-                    &lt;DataTemplate &gt;
+                    <DataTemplate >
 
-                        &lt;ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled"&gt;
+                        <ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled">
 
-                            &lt;ListBoxItem&gt;
+                            <ListBoxItem>
 
-                                &lt;StackPanel Orientation="Horizontal"&gt;
+                                <StackPanel Orientation="Horizontal">
 
-                                    &lt;TextBlock Text="Name:"/&gt;
+                                    <TextBlock Text="Name:"/>
 
-                                    &lt;TextBlock Text="{Binding Name}" Margin="5,0,0,0"/&gt;
+                                    <TextBlock Text="{Binding Name}" Margin="5,0,0,0"/>
 
-                                &lt;/StackPanel&gt;
+                                </StackPanel>
 
-                            &lt;/ListBoxItem&gt;
+                            </ListBoxItem>
 
 
 
-                            &lt;ListBoxItem&gt;
+                            <ListBoxItem>
 
-                                &lt;StackPanel Orientation="Horizontal"&gt;
+                                <StackPanel Orientation="Horizontal">
 
-                                    &lt;TextBlock Text="Age    :"/&gt;
+                                    <TextBlock Text="Age    :"/>
 
-                                    &lt;TextBlock Text="{Binding Age}" Margin="5,0,0,0"/&gt;
+                                    <TextBlock Text="{Binding Age}" Margin="5,0,0,0"/>
 
-                                &lt;/StackPanel&gt;
+                                </StackPanel>
 
-                            &lt;/ListBoxItem&gt;
+                            </ListBoxItem>
 
-                        &lt;/ListBox&gt;
+                        </ListBox>
 
-                    &lt;/DataTemplate&gt;
+                    </DataTemplate>
 
-                &lt;/syncfusion:CardView.ItemTemplate&gt;
+                </syncfusion:CardView.ItemTemplate>
 
-                 &lt;syncfusion:CardView.HeaderTemplate&gt;
+                 <syncfusion:CardView.HeaderTemplate>
 
-                           &lt;DataTemplate&gt;
+                           <DataTemplate>
 
-                                &lt;TextBlock Text="{Binding Name}"/&gt;
+                                <TextBlock Text="{Binding Name}"/>
 
-                           &lt;/DataTemplate&gt;
+                           </DataTemplate>
 
-                 &lt;/syncfusion:CardView.HeaderTemplate&gt;
+                 </syncfusion:CardView.HeaderTemplate>
 
-       &lt;/syncfusion:CardView&gt;
+       </syncfusion:CardView>
 
 
 
@@ -237,7 +237,7 @@ The CardView control can also support data-binding to objects. The following exa
 
 This creates the following CardView control.
 
-{ ![](Data-Binding-to-Objects_images/Data-Binding-to-Objects_img1.png) | markdownify }
+{{ '![](Data-Binding-to-Objects_images/Data-Binding-to-Objects_img1.png)' | markdownify }}
 {:.image }
 
 

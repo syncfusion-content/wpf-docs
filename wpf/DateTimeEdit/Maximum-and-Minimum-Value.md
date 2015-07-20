@@ -33,7 +33,7 @@ Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                       
 </table>
 
 
-{ ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img1.png) | markdownify }
+{{ '![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img1.png)' | markdownify }}
 {:.image }
 
 

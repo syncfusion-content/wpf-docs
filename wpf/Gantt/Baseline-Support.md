@@ -79,7 +79,7 @@ The following codes illustrate this:
 
              ToolTipTemplate="{StaticResource toolTipTemplate}">          
 
-                &lt;gantt:GanttControl.TaskAttributeMapping&gt;
+                <gantt:GanttControl.TaskAttributeMapping>
 
                     <gantt:TaskAttributeMapping TaskIdMapping="Id"
 
@@ -107,11 +107,11 @@ The following codes illustrate this:
 
                                             BaselineStartMapping="BaselineStart" >
 
-                    &lt;/gantt:TaskAttributeMapping&gt;
+                    </gantt:TaskAttributeMapping>
 
-                &lt;/gantt:GanttControl.TaskAttributeMapping&gt;
+                </gantt:GanttControl.TaskAttributeMapping>
 
-            &lt;/gantt:GanttControl&gt;
+            </gantt:GanttControl>
 
 
 
@@ -133,7 +133,7 @@ The following image shows the BaseLine Table View:
 
 
 
-{ ![C:/Users/thanigaivelan/Desktop/UGImages/IMG_02012012_053236.png](Baseline-Support_images/Baseline-Support_img1.png) | markdownify }
+{{ '![C:/Users/thanigaivelan/Desktop/UGImages/IMG_02012012_053236.png](Baseline-Support_images/Baseline-Support_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -161,7 +161,7 @@ This helps the Project Lead to store the estimation and will help to schedule th
 
 
 
-{ ![C:/Users/thanigaivelan/Desktop/UGImages/IMG_02012012_053003.png](Baseline-Support_images/Baseline-Support_img2.png) | markdownify }
+{{ '![C:/Users/thanigaivelan/Desktop/UGImages/IMG_02012012_053003.png](Baseline-Support_images/Baseline-Support_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -212,7 +212,7 @@ The following codes illustrate Adding On-Demand Baseline Column Inclusion to an 
 
              ShowAddNewColumn="True">          
 
-                &lt;gantt:GanttControl.TaskAttributeMapping&gt;
+                <gantt:GanttControl.TaskAttributeMapping>
 
                     <gantt:TaskAttributeMapping TaskIdMapping="Id"
 
@@ -242,11 +242,11 @@ The following codes illustrate Adding On-Demand Baseline Column Inclusion to an 
 
                                             >
 
-                    &lt;/gantt:TaskAttributeMapping&gt;
+                    </gantt:TaskAttributeMapping>
 
-                &lt;/gantt:GanttControl.TaskAttributeMapping&gt;
+                </gantt:GanttControl.TaskAttributeMapping>
 
-            &lt;/gantt:GanttControl&gt;
+            </gantt:GanttControl>
 
 
 
@@ -322,7 +322,7 @@ The following codes illustrate adding Project Statistics to an application:
 
              ToolTipTemplate="{StaticResource toolTipTemplate}">          
 
-                &lt;gantt:GanttControl.TaskAttributeMapping&gt;
+                <gantt:GanttControl.TaskAttributeMapping>
 
                     <gantt:TaskAttributeMapping TaskIdMapping="Id"
 
@@ -352,11 +352,11 @@ The following codes illustrate adding Project Statistics to an application:
 
                                             >
 
-                    &lt;/gantt:TaskAttributeMapping&gt;
+                    </gantt:TaskAttributeMapping>
 
-                &lt;/gantt:GanttControl.TaskAttributeMapping&gt;
+                </gantt:GanttControl.TaskAttributeMapping>
 
-            &lt;/gantt:GanttControl&gt;
+            </gantt:GanttControl>
 
 
 
@@ -378,7 +378,7 @@ Sample Project Statistic Visual:
 
 
 
-{ ![C:/Users/labuser/Desktop/a.png](Baseline-Support_images/Baseline-Support_img3.png) | markdownify }
+{{ '![C:/Users/labuser/Desktop/a.png](Baseline-Support_images/Baseline-Support_img3.png)' | markdownify }}
 {:.image }
 
 

@@ -15,21 +15,21 @@ While switching the TabItems in TabControl the content of previously selected it
 
 XAML
 
-&lt;syncfusion:TabControlExt Name="tabcontrol" IsDisableUnloadTabItemExtContent="True"&gt;
+<syncfusion:TabControlExt Name="tabcontrol" IsDisableUnloadTabItemExtContent="True">
 
-   &lt;syncfusion:TabItemExt Header="tab1"&gt;
+   <syncfusion:TabItemExt Header="tab1">
 
-     &lt;TextBlock Text="content1" Unloaded="TextBlock_Unloaded"/&gt;
+     <TextBlock Text="content1" Unloaded="TextBlock_Unloaded"/>
 
-   &lt;/syncfusion:TabItemExt&gt;
+   </syncfusion:TabItemExt>
 
-   &lt;syncfusion:TabItemExt Header="tab2"&gt;
+   <syncfusion:TabItemExt Header="tab2">
 
-     &lt;TextBlock Text="content2" Unloaded="TextBlock_Unloaded_1"/&gt;
+     <TextBlock Text="content2" Unloaded="TextBlock_Unloaded_1"/>
 
-   &lt;/syncfusion:TabItemExt&gt;
+   </syncfusion:TabItemExt>
 
-&lt;/syncfusion:TabControlExt&gt;
+</syncfusion:TabControlExt>
 
 
 

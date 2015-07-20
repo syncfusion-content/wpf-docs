@@ -18,7 +18,7 @@ You can arrange GroupView items in list view mode using the following code.
 <table>
 <tr>
 <td>
-[XAML]&lt;!-- Adding GroupBar that have visual mode is Multiple Expansion --&gt;&lt;syncfusion:GroupBar Height="300" Width="230" Name="groupBar"&gt;  &lt;!-- Adding GroupBarItem --&gt;  &lt;syncfusion:GroupBarItem Name="groupBarItem1"  Header="General"&gt;    &lt;!-- Adding content for GroupBar item using GroupView --&gt;    &lt;syncfusion:GroupView Name="groupView" IsListViewMode="True"&gt;      &lt;syncfusion:GroupViewItem Text="List View"/&gt;      &lt;syncfusion:GroupViewItem Text="Show ContextMenu"/&gt;      &lt;syncfusion:GroupViewItem Text="Show ToolTip"/&gt;    &lt;/syncfusion:GroupView&gt;  &lt;/syncfusion:GroupBarItem&gt;&lt;/syncfusion:GroupBar&gt;</td></tr>
+[XAML]<!-- Adding GroupBar that have visual mode is Multiple Expansion --><syncfusion:GroupBar Height="300" Width="230" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1"  Header="General">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView Name="groupView" IsListViewMode="True">      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem></syncfusion:GroupBar></td></tr>
 <tr>
 <td>
 [C#]groupview.IsListViewMode = true;</td></tr>

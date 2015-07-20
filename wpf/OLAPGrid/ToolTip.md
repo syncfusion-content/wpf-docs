@@ -39,7 +39,7 @@ Me.OlapGrid1.ShowHeaderCellsToolTip = True
 
 
 
-{ ![](ToolTip_images/ToolTip_img1.png) | markdownify }
+{{ '![](ToolTip_images/ToolTip_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -69,7 +69,7 @@ Me.OlapGrid1.ShowValueCellToolTip = True
 
 
 
-{ ![](ToolTip_images/ToolTip_img2.png) | markdownify }
+{{ '![](ToolTip_images/ToolTip_img2.png)' | markdownify }}
 {:.image }
 
 

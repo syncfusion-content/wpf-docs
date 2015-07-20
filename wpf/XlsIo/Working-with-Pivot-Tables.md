@@ -17,19 +17,19 @@ Essential XlsIO supports the usage of Pivot Table. Creation and Manipulation of 
 
 In Excel, Pivot Table can be inserted by selecting the PivotTable option from the Insert menu.
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img1.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img1.png)' | markdownify }}
 {:.image }
 
 
 Excel automatically selects the entire range. However, it is possible to modify it if necessary. It also allows choosing where to place the PivotTable. New Worksheet is most commonly used to place the pivot table.
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img2.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img2.png)' | markdownify }}
 {:.image }
 
 
 Once you select a field, the Pivot Table appears. Now you need to populate it with data fields that appear in the field list on the right. Fields can be dragged to one of the defined areas of the Pivot Table grid.
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img3.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -726,7 +726,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img4.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -867,7 +867,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img5.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -1102,7 +1102,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img6.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img6.png)' | markdownify }}
 {:.image }
 
 
@@ -1212,7 +1212,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img7.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img7.png)' | markdownify }}
 {:.image }
 
 
@@ -1220,7 +1220,7 @@ excelEngine.Dispose()
 
 Excel provides various options through the PivotTableOptions dialog box to customize the appearance of the pivot table.
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img8.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img8.png)' | markdownify }}
 {:.image }
 
 
@@ -1856,7 +1856,7 @@ excelEngine.Dispose()
 
 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img9.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img9.png)' | markdownify }}
 {:.image }
 
 
@@ -1975,7 +1975,7 @@ Formatting the Pivot Table By using Excel 2007
 
 Excel 2007 provides set of built-in styles that allow formatting the pivot table row and column header. When your cell pointer is inside the pivot table, you have two new ribbon tabs under PivotTable Tools heading, Options and Design. On the Design ribbon, the Pivot Table Styles gallery offers 85 built-in formats for pivot tables. 
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img10.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img10.png)' | markdownify }}
 {:.image }
 
 
@@ -2467,19 +2467,19 @@ PivotChart Creation by Using MS Excel 2010
 
 In Microsoft Excel, the PivotChart can be created by using the PivotChart Option from the Insert menu. Refer to Figure 113: PivotChart Creation.
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img11.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img11.png)' | markdownify }}
 {:.image }
 
 
 By default, MS Excel selects the entire range. However, it is possible to modify the selected range if required. It also allows choosing the position of the PivotChart. New Worksheet is most commonly used to place the PivotChart.
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img12.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img12.png)' | markdownify }}
 {:.image }
 
 
 Once you select a field, the PivotTable and the PivotChart appear. PivotTable and PivotChart should be popoulated with data fields that appear on the field list to the right. Fields can be dragged to the PivotTable grid to one of the defined areas and also there is an option to move the created PivotChart to a separate sheet.
 
-{ ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img13.png) | markdownify }
+{{ '![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img13.png)' | markdownify }}
 {:.image }
 
 

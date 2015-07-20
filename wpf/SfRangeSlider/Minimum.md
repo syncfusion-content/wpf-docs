@@ -15,7 +15,7 @@ Gets or sets the minimum possible value of the range. (Inherited from [RangeBase
 
 [XAML]
 
-&lt;editors:SfRangeSlider Width="500" Minimum="0" Maximum="100" /&gt;
+<editors:SfRangeSlider Width="500" Minimum="0" Maximum="100" />
 
 
 

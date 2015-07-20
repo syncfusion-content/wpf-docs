@@ -13,15 +13,15 @@ We can customize the marker for specific data point with custom template for Lin
 
 [XAML]
 
-   &lt;Syncfusion:SfLineSparkline x:Name="sparkline" MarkerVisibility="Visible" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" &gt;
+   <Syncfusion:SfLineSparkline x:Name="sparkline" MarkerVisibility="Visible" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
 
-            &lt;Syncfusion:SfLineSparkline.MarkerTemplateSelector&gt;
+            <Syncfusion:SfLineSparkline.MarkerTemplateSelector>
 
-                &lt;local:CustomMarkersTemplateSelector MarkerHeight="10" MarkerWidth="10"/&gt;
+                <local:CustomMarkersTemplateSelector MarkerHeight="10" MarkerWidth="10"/>
 
-            &lt;/Syncfusion:SfLineSparkline.MarkerTemplateSelector&gt;
+            </Syncfusion:SfLineSparkline.MarkerTemplateSelector>
 
-        &lt;/Syncfusion:SfLineSparkline&gt;
+        </Syncfusion:SfLineSparkline>
 
 
 
@@ -55,7 +55,7 @@ We can customize the marker for specific data point with custom template for Lin
 
 Following is the snapshot for custom marker position,
 
-{ ![C:/Users/ApoorvahR/Desktop/12.png](Customize-the-marker-for-specific-data-point_images/Customize-the-marker-for-specific-data-point_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/12.png](Customize-the-marker-for-specific-data-point_images/Customize-the-marker-for-specific-data-point_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -23,7 +23,7 @@ C#Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windo
 </table>
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -37,7 +37,7 @@ C#Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windo
 </table>
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)' | markdownify }}
 {:.image }
 
 
@@ -50,14 +50,14 @@ You can customize the Number Format either by using the NumberFormat property or
 <table>
 <tr>
 <td>
-XAML<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                            Culture="en-US" Value="123456789012345">     &lt;syncfusion:IntegerTextBox.NumberFormat&gt;        &lt;numberformat:NumberFormatInfo NumberGroupSeparator="/"/&gt;    &lt;/syncfusion:IntegerTextBox.NumberFormat&gt;&lt;/syncfusion:IntegerTextBox&gt;</td></tr>
+XAML<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                            Culture="en-US" Value="123456789012345">     <syncfusion:IntegerTextBox.NumberFormat>        <numberformat:NumberFormatInfo NumberGroupSeparator="/"/>    </syncfusion:IntegerTextBox.NumberFormat></syncfusion:IntegerTextBox></td></tr>
 <tr>
 <td>
 C#Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.Value = 1234567;integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");integerTextBox.NumberFormat = new System.Globalization.NumberFormatInfo() {                                   NumberGroupSeparator = "/" };</td></tr>
 </table>
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)' | markdownify }}
 {:.image }
 
 
@@ -71,7 +71,7 @@ C#Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windo
 </table>
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)' | markdownify }}
 {:.image }
 
 
@@ -99,7 +99,7 @@ integerTextBox.NumberFormat = new System.Globalization.NumberFormatInfo() {
 
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)' | markdownify }}
 {:.image }
 
 
@@ -123,7 +123,7 @@ integerTextBox.NumberGroupSizes = new Int32Collection() { 2, 3, 0 };
 
 
 
-{ ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img6.png) | markdownify }
+{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img6.png)' | markdownify }}
 {:.image }
 
 

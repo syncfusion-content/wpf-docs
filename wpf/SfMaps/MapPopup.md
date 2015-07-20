@@ -17,117 +17,117 @@ It also customizes the MapPopup template. “MapPopupCustomTemplate” is a Data
 
 [XAML]
 
-&lt;syncfusion:SfMap &gt;
+<syncfusion:SfMap >
 
-            &lt;syncfusion:SfMap.Layers&gt;
+            <syncfusion:SfMap.Layers>
 
-                &lt;syncfusion:ShapeFileLayer TranslateZoomLevel="5"  ShapeIDPath="NAME" MapPopupVisibility="Visible" Background="#FFCFCECD" ShapeIDTableField="NAME"   ItemsSource="{Binding Countries}" Uri="MapApp.world1.shp"&gt;
+                <syncfusion:ShapeFileLayer TranslateZoomLevel="5"  ShapeIDPath="NAME" MapPopupVisibility="Visible" Background="#FFCFCECD" ShapeIDTableField="NAME"   ItemsSource="{Binding Countries}" Uri="MapApp.world1.shp">
 
-                    &lt;syncfusion:ShapeFileLayer.PopupCustomTemplate&gt;
+                    <syncfusion:ShapeFileLayer.PopupCustomTemplate>
 
-                        &lt;DataTemplate&gt;
+                        <DataTemplate>
 
-                            &lt;Border&gt;
+                            <Border>
 
-                                &lt;Grid Width="200"&gt;
+                                <Grid Width="200">
 
-                                    &lt;Grid.RowDefinitions&gt;
+                                    <Grid.RowDefinitions>
 
-                                        &lt;RowDefinition /&gt;
+                                        <RowDefinition />
 
-                                        &lt;RowDefinition /&gt;
+                                        <RowDefinition />
 
-                                        &lt;RowDefinition /&gt;
+                                        <RowDefinition />
 
-                                    &lt;/Grid.RowDefinitions&gt;
+                                    </Grid.RowDefinitions>
 
-                                    &lt;Grid.ColumnDefinitions&gt;
+                                    <Grid.ColumnDefinitions>
 
-                                        &lt;ColumnDefinition/&gt;
+                                        <ColumnDefinition/>
 
-                                    &lt;/Grid.ColumnDefinitions&gt;
+                                    </Grid.ColumnDefinitions>
 
-                                    &lt;Border VerticalAlignment="Center" Padding="10,5,0,0" Height="30" Background="#FF4B4A4A"  Grid.ColumnSpan="2"&gt;
+                                    <Border VerticalAlignment="Center" Padding="10,5,0,0" Height="30" Background="#FF4B4A4A"  Grid.ColumnSpan="2">
 
-                                        &lt;TextBlock Foreground="White" FontFamily="Segoe UI" FontSize="14"  Text="{Binding NAME}"/&gt;
+                                        <TextBlock Foreground="White" FontFamily="Segoe UI" FontSize="14"  Text="{Binding NAME}"/>
 
-                                    &lt;/Border&gt;
+                                    </Border>
 
-                                    &lt;Border Padding="3,10,3,3"  Background="White"  Grid.Row="1" Grid.ColumnSpan="2"&gt;
+                                    <Border Padding="3,10,3,3"  Background="White"  Grid.Row="1" Grid.ColumnSpan="2">
 
-                                        &lt;StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"  Height="35" Background="White" Orientation="Horizontal"&gt;
+                                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"  Height="35" Background="White" Orientation="Horizontal">
 
-                                            &lt;TextBlock  Foreground="Black" FontFamily="Segoe UI"  FontSize="16" Text="Total Sales:" /&gt;
+                                            <TextBlock  Foreground="Black" FontFamily="Segoe UI"  FontSize="16" Text="Total Sales:" />
 
-                                            &lt;TextBlock Foreground="Black"  FontFamily="Segoe UI" FontSize="16" Text="{Binding Population}"/&gt;
+                                            <TextBlock Foreground="Black"  FontFamily="Segoe UI" FontSize="16" Text="{Binding Population}"/>
 
-                                        &lt;/StackPanel&gt;
+                                        </StackPanel>
 
-                                    &lt;/Border&gt;
+                                    </Border>
 
-                                    &lt;Border HorizontalAlignment="Center" Grid.Row="2"&gt;
+                                    <Border HorizontalAlignment="Center" Grid.Row="2">
 
-                                        &lt;StackPanel Orientation="Horizontal"&gt;
+                                        <StackPanel Orientation="Horizontal">
 
-                                            &lt;ItemsControl Background="White" x:Name="ProductName"  ItemsSource="{Binding NAME}" DisplayMemberPath="NAME"/&gt;
+                                            <ItemsControl Background="White" x:Name="ProductName"  ItemsSource="{Binding NAME}" DisplayMemberPath="NAME"/>
 
-                                            &lt;ItemsControl  Background="White"  ItemsSource="{Binding Population}" DisplayMemberPath="Population"/&gt;
+                                            <ItemsControl  Background="White"  ItemsSource="{Binding Population}" DisplayMemberPath="Population"/>
 
-                                        &lt;/StackPanel&gt;
+                                        </StackPanel>
 
-                                    &lt;/Border&gt;
+                                    </Border>
 
-                                &lt;/Grid&gt;
+                                </Grid>
 
-                            &lt;/Border&gt;
+                            </Border>
 
-                        &lt;/DataTemplate&gt;
+                        </DataTemplate>
 
-                    &lt;/syncfusion:ShapeFileLayer.PopupCustomTemplate&gt;
+                    </syncfusion:ShapeFileLayer.PopupCustomTemplate>
 
-                    &lt;syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                    <syncfusion:ShapeFileLayer.ShapeSettings>
 
-                        &lt;syncfusion:ShapeSetting  ShapeStroke="#FF1978AA" ShapeValuePath="Population" ColorPalette="CustomPalette" ShapeStrokeThickness="0.5"  &gt;
+                        <syncfusion:ShapeSetting  ShapeStroke="#FF1978AA" ShapeValuePath="Population" ColorPalette="CustomPalette" ShapeStrokeThickness="0.5"  >
 
-                            &lt;syncfusion:ShapeSetting.CustomColors&gt;
+                            <syncfusion:ShapeSetting.CustomColors>
 
-                                &lt;syncfusion:MapColorPalette FillBrush="#FFC6EAFB"/&gt;
+                                <syncfusion:MapColorPalette FillBrush="#FFC6EAFB"/>
 
-                                &lt;syncfusion:MapColorPalette FillBrush="#FF93D3F4"/&gt;
+                                <syncfusion:MapColorPalette FillBrush="#FF93D3F4"/>
 
-                                &lt;syncfusion:MapColorPalette FillBrush="#FF5FB5E6"/&gt;
+                                <syncfusion:MapColorPalette FillBrush="#FF5FB5E6"/>
 
-                                &lt;syncfusion:MapColorPalette FillBrush="#FF3E9FD8"/&gt;
+                                <syncfusion:MapColorPalette FillBrush="#FF3E9FD8"/>
 
-                                &lt;syncfusion:MapColorPalette FillBrush="#FF2991CF"/&gt;
-
-
-
-                            &lt;/syncfusion:ShapeSetting.CustomColors&gt;
-
-                            &lt;syncfusion:ShapeSetting.FillSetting&gt;
-
-                                &lt;syncfusion:ShapeFillSetting AutoFillColors="True"/&gt;
-
-                            &lt;/syncfusion:ShapeSetting.FillSetting&gt;
-
-                        &lt;/syncfusion:ShapeSetting&gt;
-
-                    &lt;/syncfusion:ShapeFileLayer.ShapeSettings&gt;
+                                <syncfusion:MapColorPalette FillBrush="#FF2991CF"/>
 
 
 
-                &lt;/syncfusion:ShapeFileLayer&gt;
+                            </syncfusion:ShapeSetting.CustomColors>
+
+                            <syncfusion:ShapeSetting.FillSetting>
+
+                                <syncfusion:ShapeFillSetting AutoFillColors="True"/>
+
+                            </syncfusion:ShapeSetting.FillSetting>
+
+                        </syncfusion:ShapeSetting>
+
+                    </syncfusion:ShapeFileLayer.ShapeSettings>
 
 
 
-            &lt;/syncfusion:SfMap.Layers&gt;
-
-        &lt;/syncfusion:SfMap &gt;
+                </syncfusion:ShapeFileLayer>
 
 
 
-{ ![](MapPopup_images/MapPopup_img1.png) | markdownify }
+            </syncfusion:SfMap.Layers>
+
+        </syncfusion:SfMap >
+
+
+
+{{ '![](MapPopup_images/MapPopup_img1.png)' | markdownify }}
 {:.image }
 
 

@@ -13,15 +13,15 @@ MenuItemAdv detects the boundaries and opens its submenu in the opposite directi
 
 
 
-{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-Menu/Bydetection.png](Boundary-Detection_images/Boundary-Detection_img1.png) | markdownify }
+{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-Menu/Bydetection.png](Boundary-Detection_images/Boundary-Detection_img1.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-Menu/By-Vert2.png](Boundary-Detection_images/Boundary-Detection_img2.png) | markdownify }
+{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-Menu/By-Vert2.png](Boundary-Detection_images/Boundary-Detection_img2.png)' | markdownify }}
 {:.image }
 
 
-{ ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-Menu/by-vert1.png](Boundary-Detection_images/Boundary-Detection_img3.png) | markdownify }
+{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-Menu/by-vert1.png](Boundary-Detection_images/Boundary-Detection_img3.png)' | markdownify }}
 {:.image }
 
 

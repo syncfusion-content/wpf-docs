@@ -15,7 +15,7 @@ Essential Chart for WPF is intended for developers looking to add advanced, feat
 
 The following image shows an example of a Chart control (line chart):
 
-{ ![](Overview_images/Overview_img1.jpeg) | markdownify }
+{{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
 {:.image }
 
 

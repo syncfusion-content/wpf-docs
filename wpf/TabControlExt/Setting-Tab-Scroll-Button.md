@@ -25,27 +25,27 @@ Here is the code snippet to set the Tab Scroll Button Visibility as "Visible".
 
 
 
-&lt;!-- Adding TabcontrolExt --&gt;
+<!-- Adding TabcontrolExt -->
 
-&lt;syncfusion:TabControlExt Name="tabControlExt" TabScrollButtonVisibility="Visible"&gt;
-
-
-
-    &lt;!-- Adding TabItemExt --&gt;
-
-    &lt;syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"&gt;
-
-    &lt;/syncfusion:TabItemExt&gt;
+<syncfusion:TabControlExt Name="tabControlExt" TabScrollButtonVisibility="Visible">
 
 
 
-    &lt;!-- Adding TabItemExt --&gt;
+    <!-- Adding TabItemExt -->
 
-    &lt;syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2" &gt;
+    <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1">
 
-    &lt;/syncfusion:TabItemExt&gt;
+    </syncfusion:TabItemExt>
 
-&lt;/syncfusion:TabControlExt&gt;
+
+
+    <!-- Adding TabItemExt -->
+
+    <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2" >
+
+    </syncfusion:TabItemExt>
+
+</syncfusion:TabControlExt>
 
 
 
@@ -95,7 +95,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-{ ![](Setting-Tab-Scroll-Button_images/Setting-Tab-Scroll-Button_img1.jpeg) | markdownify }
+{{ '![](Setting-Tab-Scroll-Button_images/Setting-Tab-Scroll-Button_img1.jpeg)' | markdownify }}
 {:.image }
 
 

@@ -37,14 +37,14 @@ The below code shows how to disable Tabbed menu item using ShowTabbedMenuItem at
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:DockingManager&gt;     &lt;Grid Name="grid1" syncfusion:DockingManager.ShowTabbedMenuItem="False"/&gt;  &lt;/syncfusion:DockingManager&gt;</td></tr>
+[XAML]<syncfusion:DockingManager>     <Grid Name="grid1" syncfusion:DockingManager.ShowTabbedMenuItem="False"/>  </syncfusion:DockingManager></td></tr>
 <tr>
 <td>
 [C#]DockingManager.SetShowTabbedMenuItem(grid1, false);</td></tr>
 </table>
 
 
-{ ![](Remove-Individual-Menu-Items_images/Remove-Individual-Menu-Items_img1.png) | markdownify }
+{{ '![](Remove-Individual-Menu-Items_images/Remove-Individual-Menu-Items_img1.png)' | markdownify }}
 {:.image }
 
 

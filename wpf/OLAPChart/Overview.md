@@ -11,7 +11,7 @@ documentation: ug
 
 Essential OLAP Chart control allows you to efficiently visualize the multidimensional data from the OLAP data source, with the help of a report, which is bound to it.
 
-{ ![](Overview_images/Overview_img1.png) | markdownify }
+{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
 {:.image }
 
 
@@ -51,7 +51,7 @@ Description</td></tr>
 <tr>
 <td>
 Note</td><td>
-> {{ '_Note:_' | markdownify }}</td><td>
+> {{{ ''_Note:_'' | markdownify }}}</td><td>
 Represents important information</td></tr>
 <tr>
 <td>

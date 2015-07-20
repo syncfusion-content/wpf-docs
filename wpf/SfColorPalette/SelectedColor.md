@@ -11,7 +11,7 @@ documentation: ug
 
 Selected color property of the SfColorPallette returns the currently selected color.
 
-{ ![C:/Users/ApoorvahR/Desktop/2.png](SelectedColor_images/SelectedColor_img1.png) | markdownify }
+{{ '![C:/Users/ApoorvahR/Desktop/2.png](SelectedColor_images/SelectedColor_img1.png)' | markdownify }}
 {:.image }
 
 

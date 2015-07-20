@@ -17,7 +17,7 @@ TaskBar control has the capability to provide a UI that is similar to the Window
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img1.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -48,7 +48,7 @@ To create the TaskBar control through designer, do the following steps:
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img2.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
 {:.image }
 
 
@@ -68,11 +68,11 @@ TaskBar control is created by using either XAML or C# code. The following lines 
 
 
 
-&lt;!-- Adding TaskBar --&gt;
+<!-- Adding TaskBar -->
 
-&lt;syncfusion:TaskBar Name="taskBar" &gt;
+<syncfusion:TaskBar Name="taskBar" >
 
-&lt;/syncfusion:TaskBar&gt;
+</syncfusion:TaskBar>
 
 
 
@@ -100,7 +100,7 @@ The following screen shot shows the TaskBar control.
 
 
 
-{ ![](Getting-Started_images/Getting-Started_img3.jpeg) | markdownify }
+{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
 {:.image }
 
 
