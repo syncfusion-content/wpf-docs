@@ -1380,7 +1380,7 @@ Checks to see if two text values are identical.</td></tr>
 <tr>
 <td>
 EXP</td><td>
-Returns {{{ ''_e_'' | markdownify }}} raised to the power of a given number.</td></tr>
+Returns {{ '_e_' | markdownify }} raised to the power of a given number.</td></tr>
 <tr>
 <td>
 EXPONDIST</td><td>

@@ -143,7 +143,7 @@ OlapReport</td></tr>
 <tr>
 <td>
 DataBind()</td><td>
-The method is used to fill or bind the data present in {{{ ''_DataManager_'' | markdownify }}} into the {{{ ''_Gauge_'' | markdownify }}} control.</td><td>
+The method is used to fill or bind the data present in {{ '_DataManager_' | markdownify }} into the {{ '_Gauge_' | markdownify }} control.</td><td>
 -</td><td>
 void</td><td>
 -</td></tr>

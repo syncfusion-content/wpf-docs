@@ -87,7 +87,7 @@ gridTreeNode.ParentNode</td></tr>
 <tr>
 <td>
 SelectedColumns</td><td>
-Holds the column names that are selected for this node. This property is only valid when GridTreeControl.EnableNodeSelections is {{{ ''_false_'' | markdownify }}} and GridTreeControl.EnableSelections is {{{ ''_true_'' | markdownify }}}.</td><td>
+Holds the column names that are selected for this node. This property is only valid when GridTreeControl.EnableNodeSelections is {{ '_false_' | markdownify }} and GridTreeControl.EnableSelections is {{ '_true_' | markdownify }}.</td><td>
 Normal</td><td>
 List<string></td><td>
 gridTreeNoe.SelectedColumns</td></tr>

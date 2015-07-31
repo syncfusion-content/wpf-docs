@@ -4805,15 +4805,15 @@ Behavior</td></tr>
 <tr>
 <td>
 1 or omitted</td><td>
-MATCH finds the largest value that is less than or equal to {{{ ''_lookup_value_'' | markdownify }}}. </td></tr>
+MATCH finds the largest value that is less than or equal to {{ '_lookup_value_' | markdownify }}. </td></tr>
 <tr>
 <td>
 0</td><td>
-MATCH finds the first value that is exactly equal to {{{ ''_lookup_value_'' | markdownify }}}. </td></tr>
+MATCH finds the first value that is exactly equal to {{ '_lookup_value_' | markdownify }}. </td></tr>
 <tr>
 <td>
 -1</td><td>
-MATCH finds the smallest value that is greater than or equal to{{{ ' '_lookup_value_'' | markdownify }}}. </td></tr>
+MATCH finds the smallest value that is greater than or equal to{{ ' '_lookup_value_' | markdownify }}. </td></tr>
 </table>
 
 

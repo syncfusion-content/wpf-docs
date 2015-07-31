@@ -4123,7 +4123,7 @@ This method is used to add the filter expression for the columns programmaticall
 <td>
 ApplyFilters</td><td>
 1. void ApplyFilters()<br>2. public void ApplyFilters(bool clearExistingFilter)<br></td><td>
-This method uses the contents of HiddenRowIndexes to display pivot results filtered by using calculation values.Any previous filters are first cleared.This method uses the contents of HiddenRowIndexes to display pivot results filtered by using calculation values. Any previous filters are optionally cleared depending upon the Boolean value received from the “clearExisitingFilter” parameter.The preceding methods take effect only when the RowPivotsOnly property is set to {{{ ''_true_'' | markdownify }}}.</td></tr>
+This method uses the contents of HiddenRowIndexes to display pivot results filtered by using calculation values.Any previous filters are first cleared.This method uses the contents of HiddenRowIndexes to display pivot results filtered by using calculation values. Any previous filters are optionally cleared depending upon the Boolean value received from the “clearExisitingFilter” parameter.The preceding methods take effect only when the RowPivotsOnly property is set to {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 ClearFilters</td><td>
@@ -4143,7 +4143,7 @@ This method is used raise the FilterActionCompleted event.</td></tr>
 <td>
 GetFilteredValueFields()</td><td>
 1. List<string> GetFilteredValueFields()<br>2. List<string> GetFilteredFieldValues(string fieldName, bool returnExclusions)<br></td><td>
-This method returns the currently filtered value field names; RowPivotsOnly property must be set to {{{ ''_true_'' | markdownify }}}.This method returns a list of filtered values associated with a specific value column; RowPivotsOnly property must be set to {{{ ''_true_'' | markdownify }}}.</td></tr>
+This method returns the currently filtered value field names; RowPivotsOnly property must be set to {{ '_true_' | markdownify }}.This method returns a list of filtered values associated with a specific value column; RowPivotsOnly property must be set to {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 UpdateAllSummariesRespectingHiddenRowIndexes</td><td>
@@ -4170,7 +4170,7 @@ Specifies whether the PivotGridControl allows to set a filter on the Calculat
 <tr>
 <td>
 RowPivotOnly</td><td>
-Specifies whether the PivotGridControl is used to pivot only rows, or both rows and columns. The default value is set to allow pivoting both rows and columns.Setting this property to true will produce the following changes:1. ShowGroupingBar property will be automatically set to {{{ ''_false_'' | markdownify }}}.2. The TopLeft covered cell that normally appears in a PivotGrid is replaced with individual header cells that have the same appearance as that of Calculation header cells.</td></tr>
+Specifies whether the PivotGridControl is used to pivot only rows, or both rows and columns. The default value is set to allow pivoting both rows and columns.Setting this property to true will produce the following changes:1. ShowGroupingBar property will be automatically set to {{ '_false_' | markdownify }}.2. The TopLeft covered cell that normally appears in a PivotGrid is replaced with individual header cells that have the same appearance as that of Calculation header cells.</td></tr>
 </table>
 
 

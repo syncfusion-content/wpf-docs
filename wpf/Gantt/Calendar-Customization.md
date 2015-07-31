@@ -61,14 +61,14 @@ N/A</td></tr>
 <tr>
 <td>
 DefaultStartTime</td><td>
-Gets or sets the task starting time in a day. This is based on the {{{ ''_GanttTime_'' | markdownify }}} class of the Gantt control.By default this is set to 9.00 AM</td><td>
+Gets or sets the task starting time in a day. This is based on the {{ '_GanttTime_' | markdownify }} class of the Gantt control.By default this is set to 9.00 AM</td><td>
 Dependency Property</td><td>
 GanttTime</td><td>
 N/A</td></tr>
 <tr>
 <td>
 DefaultEndTime</td><td>
-Gets or sets the task ending time in a day. This is based on the {{{ ''_GanttTime_'' | markdownify }}} class of the Gantt control.By default this is set to 6.00 PM</td><td>
+Gets or sets the task ending time in a day. This is based on the {{ '_GanttTime_' | markdownify }} class of the Gantt control.By default this is set to 6.00 PM</td><td>
 Dependency Property</td><td>
 GanttTime</td><td>
 N/A</td></tr>

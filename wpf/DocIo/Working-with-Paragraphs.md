@@ -1013,7 +1013,7 @@ You can use the AppendBreak method of WParagraph to insert a break by using DocI
 * Page* Column* Line</td></tr>
 <tr>
 <td>
-> <br>{{{ ''_Note: Now, direct support is provided to insert section breaks by calling the InsertSectionBreak method._'' | markdownify }}}</td></tr>
+> <br>{{ '_Note: Now, direct support is provided to insert section breaks by calling the InsertSectionBreak method._' | markdownify }}</td></tr>
 </table>
 Class Hierarchy
 

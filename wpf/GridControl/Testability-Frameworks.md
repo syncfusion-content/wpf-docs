@@ -48,7 +48,7 @@ Following are the different set of identifiers that can be obtained for each Gri
 * GridItemPattern* ValuePattern* SelectionItemPattern* ScrollItemPattern</td></tr>
 <tr>
 <td>
-> <br>{{{ ''_Note: With NUnit or any other test frameworks, using TestApi from codeplex.com makes it quite easy to write unit tests. We are not recommending/fixing any issues with TestApi, it is an open source library from Microsoft._'' | markdownify }}}</td></tr>
+> <br>{{ '_Note: With NUnit or any other test frameworks, using TestApi from codeplex.com makes it quite easy to write unit tests. We are not recommending/fixing any issues with TestApi, it is an open source library from Microsoft._' | markdownify }}</td></tr>
 </table>
 Using UI Automation Patterns
 

@@ -44,7 +44,7 @@ Data Type</td></tr>
 <tr>
 <td>
 AutoPopulateColumns</td><td>
-By setting this property to {{{ ''_true_'' | markdownify }}}, the GridTree control populates the properties that are present in the underlying collection without defining them in the XAML or in C#.</td><td>
+By setting this property to {{ '_true_' | markdownify }}, the GridTree control populates the properties that are present in the underlying collection without defining them in the XAML or in C#.</td><td>
 Dependency Property</td><td>
 Boolean</td></tr>
 <tr>
@@ -282,7 +282,7 @@ In GridTree control you can define the cell type for each column by using the pr
 * Static* TextBlock* TextBox* RichText* ExpanderCell* Data Template* ComboBox* DropDownList* CheckBox* Currency edit* Double edit* DateTime edit* Integer edit* Mask edit* Percent edit* Up Down edit* TimeSpan edit* Image* Hyperlink* Button</td></tr>
 <tr>
 <td>
-> <br>{{{ ''_Note: It is not possible to change the cell type for the first column of the GridTree control._'' | markdownify }}}</td></tr>
+> <br>{{ '_Note: It is not possible to change the cell type for the first column of the GridTree control._' | markdownify }}</td></tr>
 </table>
 #### Static
 
@@ -1340,7 +1340,7 @@ Sets to PercentEdit.</td></tr>
 <tr>
 <td>
 PercentEditMode</td><td>
-Indicates how the the text can be edited in the PercentEdit cells.Possible values: {{{ ''_PercentMode_'' | markdownify }}} and {{{ ''_DoubleMode_'' | markdownify }}}.</td></tr>
+Indicates how the the text can be edited in the PercentEdit cells.Possible values: {{ '_PercentMode_' | markdownify }} and {{ '_DoubleMode_' | markdownify }}.</td></tr>
 <tr>
 <td>
 PercentSymbol</td><td>
@@ -1470,11 +1470,11 @@ Sets the maximum and minimum values for a DateTime cell.</td></tr>
 <tr>
 <td>
 IsCalendarEnabled</td><td>
-Enables the calendar pop-up when set to {{{ ''_true_'' | markdownify }}}.</td></tr>
+Enables the calendar pop-up when set to {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 IsWatchEnabled</td><td>
-Enables the watch pop-up when set to {{{ ''_true_'' | markdownify }}}.</td></tr>
+Enables the watch pop-up when set to {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 NoneDateText</td><td>
@@ -1490,15 +1490,15 @@ By setting true//false you can enable/disable editing of the cell</td></tr>
 <tr>
 <td>
 IsEmptyDateEnabled</td><td>
-You can leave a cell with an empty value, when you set this property to {{{ ''_true_'' | markdownify }}}.</td></tr>
+You can leave a cell with an empty value, when you set this property to {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 IsEnabledRepeatButton</td><td>
-The RepeatButton can be disabled by applying {{{ ''_false_'' | markdownify }}} to this property.</td></tr>
+The RepeatButton can be disabled by applying {{ '_false_' | markdownify }} to this property.</td></tr>
 <tr>
 <td>
 IsVisibleRepeatButton</td><td>
-The visibility of the Repeat Button can be enabled by setting the {{{ ''_IsEnabledRepeatButton_'' | markdownify }}} property to {{{ ''_true._'' | markdownify }}}</td></tr>
+The visibility of the Repeat Button can be enabled by setting the {{ '_IsEnabledRepeatButton_' | markdownify }} property to {{ '_true._' | markdownify }}</td></tr>
 <tr>
 <td>
 NoneDateText</td><td>
@@ -2251,61 +2251,61 @@ Adds the first argument with the second argument or subtracts the second argumen
 <td>
 Or</td><td>
 OR</td><td>
-Returns 1, if either the first argument or the second one returns {{{ ''_true_'' | markdownify }}}.</td><td>
+Returns 1, if either the first argument or the second one returns {{ '_true_' | markdownify }}.</td><td>
 [Val]=50 OR [Val]=100</td></tr>
 <tr>
 <td>
 And</td><td>
 AND</td><td>
-Returns 1, if both the parameters return {{{ ''_true_'' | markdownify }}}.</td><td>
+Returns 1, if both the parameters return {{ '_true_' | markdownify }}.</td><td>
 [Val]< 50 AND [Val]>100</td></tr>
 <tr>
 <td>
 Less than</td><td>
 <</td><td>
-Returns {{{ ''_true,_'' | markdownify }}} if the first parameter is less than the second one.</td><td>
+Returns {{ '_true,_' | markdownify }} if the first parameter is less than the second one.</td><td>
 [OrderID] < 2000</td></tr>
 <tr>
 <td>
 Greater than</td><td>
 ></td><td>
-Returns {{{ ''_true,_'' | markdownify }}} if the first parameter is greater than the second one.</td><td>
+Returns {{ '_true,_' | markdownify }} if the first parameter is greater than the second one.</td><td>
 [OrderID] > 2500</td></tr>
 <tr>
 <td>
 Less than Or Equal to</td><td>
 <=</td><td>
-Returns {{{ ''_true,_'' | markdownify }}} if the first parameter is less than or equal to the second one.</td><td>
+Returns {{ '_true,_' | markdownify }} if the first parameter is less than or equal to the second one.</td><td>
 [OrderID] <= 2050</td></tr>
 <tr>
 <td>
 Greater than Or Equal to</td><td>
 >=</td><td>
-Returns {{{ ''_true,_'' | markdownify }}} if the first parameter is greater than or equal to the second one.</td><td>
+Returns {{ '_true,_' | markdownify }} if the first parameter is greater than or equal to the second one.</td><td>
 [OrderID] >= 2056</td></tr>
 <tr>
 <td>
 Equal</td><td>
 =</td><td>
-Returns {{{ ''_true,_'' | markdownify }}} if both the arguments have the same value.</td><td>
+Returns {{ '_true,_' | markdownify }} if both the arguments have the same value.</td><td>
 [CustomerID] = 90</td></tr>
 <tr>
 <td>
 Not Equal to</td><td>
 <></td><td>
-Returns {{{ ''_true,_'' | markdownify }}} if both the arguments does not have the same value.</td><td>
+Returns {{ '_true,_' | markdownify }} if both the arguments does not have the same value.</td><td>
 [CustomerID] <> 95</td></tr>
 <tr>
 <td>
 StartsWith</td><td>
 StartsWith</td><td>
-Returns {{{ ''_true,_'' | markdownify }}} if the value starts with the given string.</td><td>
+Returns {{ '_true,_' | markdownify }} if the value starts with the given string.</td><td>
 ProductName StartsWith Chai</td></tr>
 <tr>
 <td>
 EndsWith</td><td>
 EndsWith</td><td>
-Returns {{{ ''_true,_'' | markdownify }}} if the value ends with the specified string.</td><td>
+Returns {{ '_true,_' | markdownify }} if the value ends with the specified string.</td><td>
 PruductName EndsWith i</td></tr>
 <tr>
 <td>

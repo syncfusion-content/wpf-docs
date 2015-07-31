@@ -34,7 +34,7 @@ Sets the string to add and remove button content in the Ribbon QAT customizati
 {:.image }
 ![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/2.png](Localization_images/Localization_img2.png)
 {:.image }
-{{{ ''_Add and Remove in QAT(en-US                                                   Add and Remove in QAT(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_Add and Remove in QAT(en-US                                                   Add and Remove in QAT(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 AddToQATCustomizeQATContextMenuQATShowBelowMinimizeRibbon</td><td>
@@ -49,7 +49,7 @@ Sets the string to add to QAT context menu item in the Ribbon.</td></tr>
 {:.image }
 ![](Localization_images/Localization_img4.png)
 {:.image }
-{{{ ''_QAT Context Menu(en-US)                                                     QAT Context Menu(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_QAT Context Menu(en-US)                                                     QAT Context Menu(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 Choose</td><td>
@@ -122,7 +122,7 @@ Sets the string for the OKand Cancel buttons content in QAT customization dia
 {:.image }
 ![](Localization_images/Localization_img16.png)
 {:.image }
-{{{ ''_OK and Cancel in QAT(en-US)                                              OK and Cancel in QAT(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_OK and Cancel in QAT(en-US)                                              OK and Cancel in QAT(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 QAT</td><td>
@@ -144,7 +144,7 @@ Sets the string content for the Combo box of QAT customization dialog window in 
 {:.image }
 ![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/14.png](Localization_images/Localization_img20.png)
 {:.image }
-{{{ ' '_QAT customization(en-US)                                                                     QAT customization(fr-FR)_'' | markdownify }}}</td></tr>
+{{ ' '_QAT customization(en-US)                                                                     QAT customization(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 QATDuplicateAlert</td><td>
@@ -155,7 +155,7 @@ The selected command is already                                La commande séle
 {:.image }
 ![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/16.png](Localization_images/Localization_img22.png)
 {:.image }
-{{{ ''_QATDuplicateAlert(en-US)                                                          QATDuplicateAlert(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_QATDuplicateAlert(en-US)                                                          QATDuplicateAlert(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 QATResetContent</td><td>
@@ -166,7 +166,7 @@ Are you sure you want to restore the                   Etes-vous sûr que vous v
 {:.image }
 ![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/20.png](Localization_images/Localization_img24.png)
 {:.image }
-{{{ ''_QATResetContent(en-US)                                           QATResetContent(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_QATResetContent(en-US)                                           QATResetContent(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 QATResetTitle</td><td>
@@ -177,7 +177,7 @@ Reset Customizations                                                           E
 {:.image }
 ![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/18.png](Localization_images/Localization_img26.png)
 {:.image }
-{{{ ''_QATResetTitle(en-US)                                                              QATResetTitle(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_QATResetTitle(en-US)                                                              QATResetTitle(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 QATMoreCommandsQATShowAbove</td><td>
@@ -188,7 +188,7 @@ Sets the string for the context menu item in QAT dropdown in the Ribbon.</td></t
 {:.image }
 ![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/22.png](Localization_images/Localization_img28.png)
 {:.image }
-{{{ ''_QAT Context Menu(en-US)                                                   QAT Context Menu(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_QAT Context Menu(en-US)                                                   QAT Context Menu(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 RemoveFromQAT</td><td>
@@ -199,7 +199,7 @@ Remove from Quick Access Toolbar                           Supprimer de la barre
 {:.image }
 ![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/24.png](Localization_images/Localization_img30.png)
 {:.image }
-{{{ ''_RemoveFromQAT(en-US)                                              RemoveFromQAT(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_RemoveFromQAT(en-US)                                              RemoveFromQAT(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 Reset Modify</td><td>

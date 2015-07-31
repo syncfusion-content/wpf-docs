@@ -1038,7 +1038,7 @@ Gets or sets picture scaling (in percent).</td></tr>
 <tr>
 <td>
 Washout</td><td>
-Gets or sets a value indicating whether washout effect needs to be applied for Picture watermark. Default value is set to {{{ ''_true_'' | markdownify }}}.</td></tr>
+Gets or sets a value indicating whether washout effect needs to be applied for Picture watermark. Default value is set to {{ '_true_' | markdownify }}.</td></tr>
 </table>
 
 

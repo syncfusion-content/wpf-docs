@@ -2001,7 +2001,7 @@ There are some limitations in the Master-DetailsView. Those are:
 * It does not have the AddNewRow support.* It does not support Details view Serialization.* It does not have support to bind SelectedItem, CurrentItem.* GroupDropArea is not available for details view grid. </td></tr>
 <tr>
 <td>
-> <br>{{{ ''_Note: You can use GroupColumnDescriptions to group the column in Master-Details View._'' | markdownify }}}</td></tr>
+> <br>{{ '_Note: You can use GroupColumnDescriptions to group the column in Master-Details View._' | markdownify }}</td></tr>
 </table>
 #### Master-Detail View from DataTable relations
 
@@ -2719,7 +2719,7 @@ The ProductDetails property is a List of ProductInfo type. Here you can find the
 [C#]    public class ProductInfo{    int orderId;    string productName;    public int OrderID    {        get { return orderId; }        set { orderId = value; }    }    public string ProductName    {        get { return productName; }        set { productName = value; }    }}</td></tr>
 <tr>
 <td>
-> {{{ ''_Note: Both parent collection and child collection have key property OrderID._'' | markdownify }}}</td></tr>
+> {{ '_Note: Both parent collection and child collection have key property OrderID._' | markdownify }}</td></tr>
 </table>
 5. Now, load the data for a prepared collection.  Add the following code example in a newly created class file and save it as OrderInfoRepositiory.cs file_._
 
@@ -6462,7 +6462,7 @@ The DataGrid control also allows you to set the column sizing for a particular c
 <table>
 <tr>
 <td>
-> {{{ ''_Note: DataGrid control applies column sizing based on Width, MinimumWidth and MaximumWidth properties._'' | markdownify }}}</td></tr>
+> {{ '_Note: DataGrid control applies column sizing based on Width, MinimumWidth and MaximumWidth properties._' | markdownify }}</td></tr>
 <tr>
 <td>
 </td></tr>
@@ -6484,7 +6484,7 @@ The DataGrid control also allows you to set the column sizing for a particular c
 <table>
 <tr>
 <td>
-> {{{ ''_Note: When you resize the columns and the Columns sizer is in ‘Star’ or ‘AutoWithLastFill’ mode, it remains its behavior._'' | markdownify }}}</td></tr>
+> {{ '_Note: When you resize the columns and the Columns sizer is in ‘Star’ or ‘AutoWithLastFill’ mode, it remains its behavior._' | markdownify }}</td></tr>
 <tr>
 <td>
 </td></tr>
@@ -6624,7 +6624,7 @@ Used to cacluate the row height based on the content that located in the grid ce
 <table>
 <tr>
 <td>
-> {{{ ''_Note: The above methods are useful when you create custom GridColumnSizer for SfDataGrid._'' | markdownify }}}</td></tr>
+> {{ '_Note: The above methods are useful when you create custom GridColumnSizer for SfDataGrid._' | markdownify }}</td></tr>
 <tr>
 <td>
 </td></tr>
@@ -10493,7 +10493,7 @@ SfDataGrid.IsGroupDropAreaExpanded</td><td>
 Boolean</td><td>
 Determines a value that indicates whether GroupDropArea is expanded while Grid loads.![](Features_images/Features_img86.jpeg)
 {:.image }
-{{{ ''_Note: This property gets effective when SfDataGrid.ShowGroupDropArea property is set to ‘true’._'' | markdownify }}}</td><td>
+{{ '_Note: This property gets effective when SfDataGrid.ShowGroupDropArea property is set to ‘true’._' | markdownify }}</td><td>
 False</td></tr>
 <tr>
 <td>
@@ -14644,7 +14644,7 @@ Description</td></tr>
 <td>
 AddNewRowIntiating</td><td>
 NewObject</td><td>
-This event is triggered when you start editing in AddNewRow.NewObject – This contains the newly created object that helps to set the default value when you start editing in AddNewRow.> {{{ ''_Note: NewObject is the read-only property._'' | markdownify }}}> </td></tr>
+This event is triggered when you start editing in AddNewRow.NewObject – This contains the newly created object that helps to set the default value when you start editing in AddNewRow.> {{ '_Note: NewObject is the read-only property._' | markdownify }}> </td></tr>
 </table>
 
 
@@ -15714,7 +15714,7 @@ Description</td></tr>
 CurrentCellManager</td><td>
 Gets or sets the current cell manager of DataGrid.> ![](Features_images/Features_img138.jpeg)
 {:.image }
-{{{ ''_Note: You can edit and navigate the current cell using CurrentCellManager._'' | markdownify }}}</td></tr>
+{{ '_Note: You can edit and navigate the current cell using CurrentCellManager._' | markdownify }}</td></tr>
 <tr>
 <td>
 SelectedRows</td><td>
@@ -17628,7 +17628,7 @@ This method returns the number of data in view.</td></tr>
 <td>
 GetSourceListForFilteringItems</td><td>
 IEnumerable GetSourceListForFilteringItems()</td><td>
-This method returns the entire data source. > {{{ ''_Note: This is used while populating items for ExcelLikeFilter pop-up._'' | markdownify }}}> </td></tr>
+This method returns the entire data source. > {{ '_Note: This is used while populating items for ExcelLikeFilter pop-up._' | markdownify }}> </td></tr>
 <tr>
 <td>
 ProcessSort</td><td>
@@ -21009,7 +21009,7 @@ Description</td></tr>
 <td>
 Show</td><td>
 Show(int colIndex, MouseEventArgs e)</td><td>
-Called to display the pop-up to enable drag operation.> {{{ ''_Note: This method shows pop-up in handling pointer events._'' | markdownify }}}> </td></tr>
+Called to display the pop-up to enable drag operation.> {{ '_Note: This method shows pop-up in handling pointer events._' | markdownify }}> </td></tr>
 </table>
 #### RowHeader 
 
@@ -23467,7 +23467,7 @@ Description</td></tr>
 <td>
 ExportToExcel</td><td>
 ExportToExcel(ICollectionViewAdv,excelExportingOptions)</td><td>
-Exports data to Excel and returns an ExcelEngine with ExcelExportingOptions{{{ ''_-_' ' | markdownify }}}that is used to set the Exporting options.</td></tr>
+Exports data to Excel and returns an ExcelEngine with ExcelExportingOptions{{ '_-_' ' | markdownify }}that is used to set the Exporting options.</td></tr>
 <tr>
 <td>
 ExportToExcel</td><td>
@@ -23583,7 +23583,7 @@ DefaultValue</td></tr>
 <td>
 AllowOutlining</td><td>
 Boolean</td><td>
-Specifies whether the groups exports with expand or collapse options or not.Indent space is not maintained when AllowOutlining is set to ‘true’. Default value is ‘{{{ ''_true_'' | markdownify }}}’.When the Grid contains the Details View definition, the AllowOutlining is set to ‘true’ internally.</td><td>
+Specifies whether the groups exports with expand or collapse options or not.Indent space is not maintained when AllowOutlining is set to ‘true’. Default value is ‘{{ '_true_' | markdownify }}’.When the Grid contains the Details View definition, the AllowOutlining is set to ‘true’ internally.</td><td>
  True</td></tr>
 <tr>
 <td>
@@ -24184,7 +24184,7 @@ Determines whether the stacked headers are exported or not</td><td>
 <td>
 ExportDetailsView</td><td>
  Boolean</td><td>
-Determines whether the Details view is exported or not.> {{{ ''_Note: When it is set to ‘true’, it exports the details view that are expanded._'' | markdownify }}}> {{{ ''_Limitation: While exporting Details view, FitAllColumnsInOnePage is set to ‘true’ internally as horizontal pagination is not supported for Nested Grid._'' | markdownify }}}> </td><td>
+Determines whether the Details view is exported or not.> {{ '_Note: When it is set to ‘true’, it exports the details view that are expanded._' | markdownify }}> {{ '_Limitation: While exporting Details view, FitAllColumnsInOnePage is set to ‘true’ internally as horizontal pagination is not supported for Nested Grid._' | markdownify }}> </td><td>
  False</td></tr>
 <tr>
 <td>

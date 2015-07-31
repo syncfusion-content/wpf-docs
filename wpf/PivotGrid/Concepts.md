@@ -1107,7 +1107,7 @@ Description</td></tr>
 <tr>
 <td>
 PadString</td><td>
-You can use this property to specify a custom string in the Pivot Computation column instead of the cell’s original value. The default value is “*”.> {{{ ''_Note: The SummaryType enumerator must be set to DisplayIfDiscreteValuesEqual to use this property._'' | markdownify }}}</td></tr>
+You can use this property to specify a custom string in the Pivot Computation column instead of the cell’s original value. The default value is “*”.> {{ '_Note: The SummaryType enumerator must be set to DisplayIfDiscreteValuesEqual to use this property._' | markdownify }}</td></tr>
 </table>
 
 

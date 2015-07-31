@@ -55,7 +55,7 @@ Description</td></tr>
 Note</td><td>
 > ![](Overview_images/Overview_img2.jpeg)
 {:.image }
-{{{ ''_Note:_'' | markdownify }}}</td><td>
+{{ '_Note:_' | markdownify }}</td><td>
 Represents important information</td></tr>
 <tr>
 <td>

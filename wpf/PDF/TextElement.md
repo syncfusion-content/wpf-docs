@@ -991,7 +991,7 @@ Creates marker with number style, font, finalizer, and the specified symbol that
 <tr>
 <td>
 PdfOrderedMarker (PdfNumberStyle style, string delimiter, string finalizer, PdfFont font):</td><td>
-Creates marker with the number style, font, finalizer, delimiter, and the specified symbol located between numbers. It is used when the MarkerHierarchy property of the PdfOrderedList class is set {{{ ''_True_'' | markdownify }}}. Default value for delimiter is '.'.</td></tr>
+Creates marker with the number style, font, finalizer, delimiter, and the specified symbol located between numbers. It is used when the MarkerHierarchy property of the PdfOrderedList class is set {{ '_True_' | markdownify }}. Default value for delimiter is '.'.</td></tr>
 </table>
 
 

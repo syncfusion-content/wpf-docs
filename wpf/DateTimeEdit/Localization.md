@@ -27,7 +27,7 @@ Sets the string for the Calendar Text in DateTimeEdit.</td></tr>
 {:.image }
 ![](Localization_images/Localization_img2.png)
 {:.image }
-{{{ ''_AccessCalendarText(en-US)                                                              AccessCalendarText(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_AccessCalendarText(en-US)                                                              AccessCalendarText(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 AccessClockText</td><td>
@@ -38,7 +38,7 @@ Sets the string for the Clock Text in DateTimeEdit</td></tr>
 {:.image }
 ![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/56.png](Localization_images/Localization_img4.png)
 {:.image }
-{{{ ''_AccessClockText(en-US)                                              AccessClockText(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_AccessClockText(en-US)                                              AccessClockText(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 AccessEmptyDateText</td><td>
@@ -49,7 +49,7 @@ Sets the string for the Empty Date Text in DateTimeEdit.</td></tr>
 {:.image }
 ![](Localization_images/Localization_img6.png)
 {:.image }
-{{{ ''_AccessEmptyDateText (en-US)                                                   AccessEmptyDateText(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_AccessEmptyDateText (en-US)                                                   AccessEmptyDateText(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 AccessWatchText</td><td>
@@ -67,7 +67,7 @@ Sets the string for the Today Label in DateTimeEdit.</td></tr>
 {:.image }
 ![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/68.png](Localization_images/Localization_img8.png)
 {:.image }
-{{{ ''_TodayLabel                                                                            TodayLabel_'' | markdownify }}}</td></tr>
+{{ '_TodayLabel                                                                            TodayLabel_' | markdownify }}</td></tr>
 </table>
 
 

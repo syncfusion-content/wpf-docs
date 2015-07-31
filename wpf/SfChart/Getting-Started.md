@@ -237,7 +237,7 @@ To begin plotting data, choose from a wide variety of graphical representations 
 <syncfusion:ColumnSeries Label="2010"                                 ItemsSource="{Binding Demands}"                                XBindingPath="Demand"                                YBindingPath="Year2010"                                />            <syncfusion:ColumnSeries Label="2011"                                 ItemsSource="{Binding Demands}"                                XBindingPath="Demand"                                YBindingPath="Year2011"/></td></tr>
 <tr>
 <td>
-{{{ ''_Note: Syncfusion Chart also supports rendering combination of multiple series._'' | markdownify }}}</td></tr>
+{{ '_Note: Syncfusion Chart also supports rendering combination of multiple series._' | markdownify }}</td></tr>
 </table>
 After you have added the series, you can add ItemSource, XBindingPath and YBindingPath APIs, to populate your data to the chart. 
 

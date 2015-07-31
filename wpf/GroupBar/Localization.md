@@ -33,7 +33,7 @@ Sets the string for the context menu item in GroupBar.</td></tr>
 {:.image }
 ![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/30.png](Localization_images/Localization_img2.png)
 {:.image }
-{{{ ''_ContextMenu(en-US)                                                                                    ContextMenu(en-US)_'' | markdownify }}}</td></tr>
+{{ '_ContextMenu(en-US)                                                                                    ContextMenu(en-US)_' | markdownify }}</td></tr>
 <tr>
 <td>
 ShowfewerbuttonsShowmorebuttonsButtons</td><td>
@@ -44,7 +44,7 @@ Sets the string for the Dropdown Menu Item in GroupBar.</td></tr>
 {:.image }
 ![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/32.png](Localization_images/Localization_img4.png)
 {:.image }
-{{{ ''_Dropdown Menu Item(en-US)                                                             Dropdown Menu Item(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_Dropdown Menu Item(en-US)                                                             Dropdown Menu Item(fr-FR)_' | markdownify }}</td></tr>
 </table>
 
 

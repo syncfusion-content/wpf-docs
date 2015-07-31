@@ -68,7 +68,7 @@ NA</td></tr>
 <tr>
 <td>
 GanttTaskRelationship</td><td>
-This contains four relationships. They are:* StartToStart* StartToFinish* FinishToFinish* FinishToStart<br>You can asign this to the {{{ ''_TaskDetails_'' | markdownify }}} to set the relationship between tasks.</td><td>
+This contains four relationships. They are:* StartToStart* StartToFinish* FinishToFinish* FinishToStart<br>You can asign this to the {{ '_TaskDetails_' | markdownify }} to set the relationship between tasks.</td><td>
 Predecessor</td><td>
 Enum</td><td>
 NA</td></tr>

@@ -4180,7 +4180,7 @@ Specifies the filter operator to be used for the filter column</td></tr>
 <tr>
 <td>
 MatchCase</td><td>
-Boolean property; when {{{ ''_true_'' | markdownify }}}, performs case-sensitive filtering</td></tr>
+Boolean property; when {{ '_true_' | markdownify }}, performs case-sensitive filtering</td></tr>
 </table>
 The filtering panes are optional. It is possible to enable the filtering panes feature in few specific columns and allow other columns to use the default filter.
 
@@ -5179,23 +5179,23 @@ Selecting this check box, enables filtering on the respective column. To enable 
 <tr>
 <td>
 Allow Sort</td><td>
-Selecting this check box, enables sorting when the user clicks on the column header of the respective column. To enable "sorting" on all the columns in the grid at once, set the AllowSort property to {{{ ''_true_'' | markdownify }}}.</td></tr>
+Selecting this check box, enables sorting when the user clicks on the column header of the respective column. To enable "sorting" on all the columns in the grid at once, set the AllowSort property to {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 Allow Drag</td><td>
-Selecting this check box, enables you to rearrange columns in the grid by dragging the desired column headers. Also you can group the columns by dragging the column headers onto the Group Drop Area. Note that the "Allow Group" option must be set to {{{ ''_true_'' | markdownify }}} for this to take effect.To enable "drag-and-drop" feature on all the columns in the grid at once, set the AllowDragColumns property to {{{ ''_true_'' | markdownify }}}.</td></tr>
+Selecting this check box, enables you to rearrange columns in the grid by dragging the desired column headers. Also you can group the columns by dragging the column headers onto the Group Drop Area. Note that the "Allow Group" option must be set to {{ '_true_' | markdownify }} for this to take effect.To enable "drag-and-drop" feature on all the columns in the grid at once, set the AllowDragColumns property to {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 Allow Group</td><td>
-Selecting this check box, enables you to create groups at run time by dragging column headers onto the Group Drop Area. Note that the "Allow Drag" option must be set to {{{ ''_true_'' | markdownify }}} for this to take effect.To enable "grouping" on all the columns in the grid at once, set the ShowGroupDropArea to {{ '_true_'| markdownify }}.</td></tr>
+Selecting this check box, enables you to create groups at run time by dragging column headers onto the Group Drop Area. Note that the "Allow Drag" option must be set to {{ '_true_' | markdownify }} for this to take effect.To enable "grouping" on all the columns in the grid at once, set the ShowGroupDropArea to {{ '_true_'| markdownify }}.</td></tr>
 <tr>
 <td>
 Allow Resize</td><td>
-Selecting this check box, enables you to resize columns in the grid, by pressing and dragging the "mouse-resize" pointer that is displayed over the column divider. To enable the "resizing" operation on all the columns in the grid at once, set the AllowResizeColumns property to {{{ ''_true_'' | markdownify }}}.</td></tr>
+Selecting this check box, enables you to resize columns in the grid, by pressing and dragging the "mouse-resize" pointer that is displayed over the column divider. To enable the "resizing" operation on all the columns in the grid at once, set the AllowResizeColumns property to {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 Is ReadOnly</td><td>
-Selecting this check box, makes the respective column read-only, allowing no edits to be performed on the column. To enable the "editing" operation on all the columns in the grid at once, set the AllowEdit property to {{{ ''_true_'' | markdownify }}}.</td></tr>
+Selecting this check box, makes the respective column read-only, allowing no edits to be performed on the column. To enable the "editing" operation on all the columns in the grid at once, set the AllowEdit property to {{ '_true_' | markdownify }}.</td></tr>
 <tr>
 <td>
 Column Format</td><td>

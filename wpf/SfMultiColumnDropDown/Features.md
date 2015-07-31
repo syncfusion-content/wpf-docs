@@ -422,7 +422,7 @@ Description</td></tr>
 <tr>
 <td>
 SelectionChanged</td><td>
-This event is raised when the Selection is changed.The SelectionChanged event handler receives two arguments, namely Sender and SelectionChangedEventArgs{{{ ''_,_'' | markdownify }}} as objects.The SelectionChangedEventArgs object contains the following properties:* SelectedIndex: Gets the selected index of the SfDataGrid in the DropDownPopup.* SelectedItem: Gets the selected item of the SfDataGrid in the DropDownPopup.</td></tr>
+This event is raised when the Selection is changed.The SelectionChanged event handler receives two arguments, namely Sender and SelectionChangedEventArgs{{ '_,_' | markdownify }} as objects.The SelectionChangedEventArgs object contains the following properties:* SelectedIndex: Gets the selected index of the SfDataGrid in the DropDownPopup.* SelectedItem: Gets the selected item of the SfDataGrid in the DropDownPopup.</td></tr>
 </table>
 #### How To
 
@@ -840,7 +840,7 @@ This event is raised before the Popup is closed; the event can be cancelled.The 
 <tr>
 <td>
 PopupOpened</td><td>
-This event is raised when the Popup is opened.The PopupOpened event handler receives two arguments, namely Sender and PopupOpenedEventArgs{{{ ''_,_'' | markdownify }}} as objects.</td></tr>
+This event is raised when the Popup is opened.The PopupOpened event handler receives two arguments, namely Sender and PopupOpenedEventArgs{{ '_,_' | markdownify }} as objects.</td></tr>
 <tr>
 <td>
 PopupOpening</td><td>

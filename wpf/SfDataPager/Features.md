@@ -93,7 +93,7 @@ Description</td></tr>
 <td>
 PageIndexChanging</td><td>
  OldPageIndex  NewPageIndex Cancel</td><td>
-Event is triggered when the current page index is changing. By using this event, you can cancel the page navigation operation by setting Cancel{{{ ''__'' | markdownify }}}to true.</td></tr>
+Event is triggered when the current page index is changing. By using this event, you can cancel the page navigation operation by setting Cancel{{ '__' | markdownify }}to true.</td></tr>
 <tr>
 <td>
 PageIndexChanged</td><td>

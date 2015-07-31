@@ -256,7 +256,7 @@ Screenshot:
 </td></tr>
 <tr>
 <td>
-{{{ ''_Circular Scale with Range Pointer_'' | markdownify }}}</td></tr>
+{{ '_Circular Scale with Range Pointer_' | markdownify }}</td></tr>
 </table>
 RangePointerPosition
 

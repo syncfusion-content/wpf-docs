@@ -28,7 +28,7 @@ Sets the string for the context menu item in DocumentContainer.</td></tr>
 {:.image }
 ![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/36.png](Localization_images/Localization_img2.png)
 {:.image }
-{{{ ''_ContextMenu(en-US)                                                      ContextMenu(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_ContextMenu(en-US)                                                      ContextMenu(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td colspan = "4">
 MoveToNextTabGroup </td><td colspan = "2">
@@ -39,7 +39,7 @@ Sets the string for MoveToNextTabGroup context menu item in DockingManager and D
 {:.image }
 ![](Localization_images/Localization_img4.png)
 {:.image }
-{{{ ''_MoveToNextTabGroup(en-US)                                       MoveToNextTabGroup(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_MoveToNextTabGroup(en-US)                                       MoveToNextTabGroup(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td colspan = "3">
 MoveToPreviousTabGroup</td><td colspan = "3">
@@ -50,7 +50,7 @@ Sets the string for MoveToPreviousTabGroup context menu item in DockingManager a
 {:.image }
 ![](Localization_images/Localization_img6.png)
 {:.image }
-{{{ ''_MoveToPreviousTabGroup(en-US)                           MoveToPreviousTabGroup(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_MoveToPreviousTabGroup(en-US)                           MoveToPreviousTabGroup(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td colspan = "2">
 NewTabgroupMenuItemCancel</td><td colspan = "4">
@@ -61,7 +61,7 @@ Sets the string for the Tab context menu item in DockingManager and DocumentCont
 {:.image }
 ![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/48.png](Localization_images/Localization_img8.png)
 {:.image }
-{{{ ''_NewTabGroup(en-US)                                NewTabGroup(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_NewTabGroup(en-US)                                NewTabGroup(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td>
 TabCloseCloseAllButThisTabCloseAllFloatingDocumentDockableNewHorizontalTabGroupNewVerticalTabGroup</td><td colspan = "5">
@@ -72,7 +72,7 @@ Sets the string for the menu item in DocumentContainer and DockingManager.</td><
 {:.image }
 ![](Localization_images/Localization_img10.png)
 {:.image }
-{{{ ''_MenuItem(en-US)                                                 MenuItem(fr-FR)_'' | markdownify }}}</td></tr>
+{{ '_MenuItem(en-US)                                                 MenuItem(fr-FR)_' | markdownify }}</td></tr>
 </table>
 
 

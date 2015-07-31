@@ -3102,7 +3102,7 @@ specifies the width of the predefined symbols added to the adornments</td></tr>
 <tr>
 <td>
 SymbolTemplate</td><td>
-specifies the symbol to be displayed in the adornments when the Symbol property is set to {{{ ''_Custom_'' | markdownify }}}</td></tr>
+specifies the symbol to be displayed in the adornments when the Symbol property is set to {{ '_Custom_' | markdownify }}</td></tr>
 <tr>
 <td>
 VerticalAlignment</td><td>
@@ -5522,7 +5522,7 @@ Description</td></tr>
 <tr>
 <td>
 Geometry</td><td>
-Draws the spline when set to paths {{{ ''_Data_'' | markdownify }}} property.</td></tr>
+Draws the spline when set to paths {{ '_Data_' | markdownify }} property.</td></tr>
 </table>
 Template for FastSpline
 
@@ -6617,7 +6617,7 @@ Description</td></tr>
 ChartStackingColumn100Type.ShowValueAsProbability</td><td>
 bool</td><td>
 ChartArea</td><td>
-y-axis range is set between 0 and 100If true, the y-axis range is set between 0 and 1. Default value is {{{ ''_false_'' | markdownify }}}.</td></tr>
+y-axis range is set between 0 and 100If true, the y-axis range is set between 0 and 1. Default value is {{ '_false_' | markdownify }}.</td></tr>
 </table>
 Template
 
@@ -6739,7 +6739,7 @@ Description</td></tr>
 ChartStackingColumn100.ShowValueAsProbability</td><td>
 bool</td><td>
 ChartArea</td><td>
-y-axis range is set from 0 - 100If true, y-axis range is set from 0 - 1. Default value is {{{ ''_false_'' | markdownify }}}.</td></tr>
+y-axis range is set from 0 - 100If true, y-axis range is set from 0 - 1. Default value is {{ '_false_' | markdownify }}.</td></tr>
 </table>
 Template
 
@@ -6782,12 +6782,12 @@ column color</td></tr>
 <td>
 IsUpper</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} – if this is upper column</td></tr>
+{{ '_true_' | markdownify }} – if this is upper column</td></tr>
 <tr>
 <td>
 IsLower</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} – if this is lower column</td></tr>
+{{ '_true_' | markdownify }} – if this is lower column</td></tr>
 <tr>
 <td>
 Percentage</td><td>
@@ -7133,12 +7133,12 @@ y-coordinate of second point</td></tr>
 <td>
 IsStartSegment</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} - if this is start segment</td></tr>
+{{ '_true_' | markdownify }} - if this is start segment</td></tr>
 <tr>
 <td>
 IsEndSegment</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} - if this is end segment</td></tr>
+{{ '_true_' | markdownify }} - if this is end segment</td></tr>
 <tr>
 <td>
 Geometry</td><td>
@@ -7250,12 +7250,12 @@ y-coordinate of second point</td></tr>
 <td>
 IsStartSegment</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} - if this is start segment</td></tr>
+{{ '_true_' | markdownify }} - if this is start segment</td></tr>
 <tr>
 <td>
 IsEndSegment</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} - if this is end segment</td></tr>
+{{ '_true_' | markdownify }} - if this is end segment</td></tr>
 <tr>
 <td>
 Geometry</td><td>
@@ -7347,12 +7347,12 @@ y-coordinate of second point</td></tr>
 <td>
 IsStartSegment</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} - if this is start segment</td></tr>
+{{ '_true_' | markdownify }} - if this is start segment</td></tr>
 <tr>
 <td>
 IsEndSegment</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} - if this is end segment</td></tr>
+{{ '_true_' | markdownify }} - if this is end segment</td></tr>
 <tr>
 <td>
 Geometry</td><td>
@@ -7362,12 +7362,12 @@ segment geometry</td></tr>
 <td>
 IsUpper</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} – if this is upper segment</td></tr>
+{{ '_true_' | markdownify }} – if this is upper segment</td></tr>
 <tr>
 <td>
 IsLower</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} – if this is lower segment</td></tr>
+{{ '_true_' | markdownify }} – if this is lower segment</td></tr>
 <tr>
 <td>
 Interior</td><td>
@@ -7616,12 +7616,12 @@ segment geometry</td></tr>
 <td>
 IsStartSegment</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} - if this is start segment</td></tr>
+{{ '_true_' | markdownify }} - if this is start segment</td></tr>
 <tr>
 <td>
 IsEndSegment</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} - if this is end segment</td></tr>
+{{ '_true_' | markdownify }} - if this is end segment</td></tr>
 <tr>
 <td>
 Interior</td><td>
@@ -7712,7 +7712,7 @@ Description</td></tr>
 <td>
 IsHighLow</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} - if this segment is for a "high" area</td></tr>
+{{ '_true_' | markdownify }} - if this segment is for a "high" area</td></tr>
 <tr>
 <td>
 Geometry</td><td>
@@ -8699,12 +8699,12 @@ Description</td></tr>
 <td>
 IsPriceUp</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} – if segment shows price rising</td></tr>
+{{ '_true_' | markdownify }} – if segment shows price rising</td></tr>
 <tr>
 <td>
 IsPriceDown</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} – if segment shows price recession</td></tr>
+{{ '_true_' | markdownify }} – if segment shows price recession</td></tr>
 <tr>
 <td>
 Points</td><td>
@@ -8817,12 +8817,12 @@ column width</td></tr>
 <td>
 IsPoint</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} – if segment is point</td></tr>
+{{ '_true_' | markdownify }} – if segment is point</td></tr>
 <tr>
 <td>
 IsFigure</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} – if segment is figure</td></tr>
+{{ '_true_' | markdownify }} – if segment is figure</td></tr>
 <tr>
 <td>
 Height</td><td>
@@ -8929,12 +8929,12 @@ column width</td></tr>
 <td>
 IsPriceUp</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} – if segment shows price rising</td></tr>
+{{ '_true_' | markdownify }} – if segment shows price rising</td></tr>
 <tr>
 <td>
 IsPriceDown</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} – if segment shows price recession</td></tr>
+{{ '_true_' | markdownify }} – if segment shows price recession</td></tr>
 <tr>
 <td>
 Height</td><td>
@@ -9041,12 +9041,12 @@ column width</td></tr>
 <td>
 IsPriceUp</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} – if segment shows price rising</td></tr>
+{{ '_true_' | markdownify }} – if segment shows price rising</td></tr>
 <tr>
 <td>
 IsPriceDown</td><td>
 bool</td><td>
-{{{ ''_true_'' | markdownify }}} – if segment shows price recession</td></tr>
+{{ '_true_' | markdownify }} – if segment shows price recession</td></tr>
 <tr>
 <td>
 Height</td><td>
@@ -9473,7 +9473,7 @@ y-coordinate of sector center</td></tr>
 <td>
 IsExploded</td><td>
 double</td><td>
-{{{ ''_true_'' | markdownify }}} if segment is leant out</td></tr>
+{{ '_true_' | markdownify }} if segment is leant out</td></tr>
 <tr>
 <td>
 ExplodRadius</td><td>
@@ -9597,7 +9597,7 @@ y-coordinate of sector center</td></tr>
 <td>
 IsExploded</td><td>
 double</td><td>
-{{{ ''_true_'' | markdownify }}} if segment is leant out</td></tr>
+{{ '_true_' | markdownify }} if segment is leant out</td></tr>
 <tr>
 <td>
 DoughnutCoefficient</td><td>
@@ -12819,7 +12819,7 @@ Description</td></tr>
 <tr>
 <td>
 LabelsMode</td><td>
-{{{ ''_Auto_'' | markdownify }}}: content is determined automatically{{{ ''_Custom_'' | markdownify }}}: custom values are used for labels content representation{{{ ''_DataSource_'' | markdownify }}}: external datasource is used for labels content{{{ ''_Default_'' | markdownify }}}: content for labels is either determined automatically, taken from external dataSource or being set with custom values{{{ ''_None_'' | markdownify }}}: labels values are taken from point's X-coordinate</td></tr>
+{{ '_Auto_' | markdownify }}: content is determined automatically{{ '_Custom_' | markdownify }}: custom values are used for labels content representation{{ '_DataSource_' | markdownify }}: external datasource is used for labels content{{ '_Default_' | markdownify }}: content for labels is either determined automatically, taken from external dataSource or being set with custom values{{ '_None_' | markdownify }}: labels values are taken from point's X-coordinate</td></tr>
 <tr>
 <td>
 LabelsSource</td><td>
@@ -13013,15 +13013,15 @@ Description</td></tr>
 <tr>
 <td>
 IntersectAction</td><td>
-{{{ ''_Hide_'' | markdownify }}} – labels are hidden to avoid intersection{{{ ''_MultipleRows_'' | markdownify }}} – labels are wrapped into multiple rows to avoid intersection{{{ ''_None_'' | markdownify }}} – no special actionLabels may intersect{{{ ''_Rotate_'' | markdownify }}} – labels are rotated to avoid intersection{{{ ''_Wrap_'' | markdownify }}} – labels are wrapped to avoid intersection</td></tr>
+{{ '_Hide_' | markdownify }} – labels are hidden to avoid intersection{{ '_MultipleRows_' | markdownify }} – labels are wrapped into multiple rows to avoid intersection{{ '_None_' | markdownify }} – no special actionLabels may intersect{{ '_Rotate_' | markdownify }} – labels are rotated to avoid intersection{{ '_Wrap_' | markdownify }} – labels are wrapped to avoid intersection</td></tr>
 <tr>
 <td>
 HidePartialLabel</td><td>
-{{{ ''_True_'' | markdownify }}} – hides the labels that appear partiallyUsually the labels in the edges will be affected.{{{ ''_False_'' | markdownify }}} - labels are drawn as suchNo action will be taken.</td></tr>
+{{ '_True_' | markdownify }} – hides the labels that appear partiallyUsually the labels in the edges will be affected.{{ '_False_' | markdownify }} - labels are drawn as suchNo action will be taken.</td></tr>
 <tr>
 <td>
 EdgeLabelsDrawingMode</td><td>
-{{{ ''_Center_'' | markdownify }}} – draws the edge labels at the center of the GridLines{{{ ''_Shift_'' | markdownify }}} – value indicating that edge label should be shifted to either left or right so that it comes within the Chart Area</td></tr>
+{{ '_Center_' | markdownify }} – draws the edge labels at the center of the GridLines{{ '_Shift_' | markdownify }} – value indicating that edge label should be shifted to either left or right so that it comes within the Chart Area</td></tr>
 </table>
 
 
@@ -15941,7 +15941,7 @@ Specifies the color of the line drawn from the location to the annotation, in ca
 <tr>
 <td>
 IsRelative</td><td>
-Z and y values above are x-y coordinates of the plotIf {{{ ''_true_'' | markdownify }}}, they are in Chart Area coordinates. Default value is {{{ ''_false_'' | markdownify }}}.</td></tr>
+Z and y values above are x-y coordinates of the plotIf {{ '_true_' | markdownify }}, they are in Chart Area coordinates. Default value is {{ '_false_' | markdownify }}.</td></tr>
 </table>
 
 

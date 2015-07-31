@@ -65,7 +65,7 @@ Description</td></tr>
 <tr>
 <td>
 Note</td><td>
-> {{{ ''_Note:_'' | markdownify }}}</td><td>
+> {{ '_Note:_' | markdownify }}</td><td>
 Represents important information</td></tr>
 <tr>
 <td>

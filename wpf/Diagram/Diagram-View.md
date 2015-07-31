@@ -6706,7 +6706,7 @@ _Note: The selected part will act as the parent element, name the element as de
 <table>
 <tr>
 <td>
-<br>{{{ ''_Note: This name property is required for serialization. So this property cannot be set to null._'' | markdownify }}}</td></tr>
+<br>{{ '_Note: This name property is required for serialization. So this property cannot be set to null._' | markdownify }}</td></tr>
 <tr>
 <td>
 10. Click Window option in the blend menu.11. Select the Syncfusion Symbol Exporter add-on. 12. A popup window will be displayed. You can dock this within the blend as shown in following screenshot:</td></tr>
@@ -7001,14 +7001,14 @@ No</td></tr>
 <tr>
 <td>
 SymbolPaletteGroupForeground</td><td>
-Specifies the foreground color of the SymbolPalette Group.The default color is SaddleBrown{{{ ''_._'' | markdownify }}}</td><td>
+Specifies the foreground color of the SymbolPalette Group.The default color is SaddleBrown{{ '_._' | markdownify }}</td><td>
 Dependency property</td><td>
 Brush</td><td>
 No</td></tr>
 <tr>
 <td>
 SymbolPaletteGroupBorderBrush</td><td>
-Specifies the border color of the SymbolPalette Group.The default color is Chocolate{{{ ''_._'' | markdownify }}}</td><td>
+Specifies the border color of the SymbolPalette Group.The default color is Chocolate{{ '_._' | markdownify }}</td><td>
 Dependency property</td><td>
 Brush</td><td>
 No</td></tr>
@@ -7134,14 +7134,14 @@ No</td></tr>
 <tr>
 <td>
 CheckerBorderBrush</td><td>
-Specifies the the border color of the Check Boxes in the SymbolPalette pop-up.The default value is DarkSlateGray{{{ ''_._'' | markdownify }}}</td><td>
+Specifies the the border color of the Check Boxes in the SymbolPalette pop-up.The default value is DarkSlateGray{{ '_._' | markdownify }}</td><td>
 Dependency property</td><td>
 Brush</td><td>
 No</td></tr>
 <tr>
 <td>
 CheckerTickBrush</td><td>
-Specifies the Tick color of the selected Check Box in the SymbolPalette pop-up.The default value is DarkSlateGray{{{ ''_._'' | markdownify }}}</td><td>
+Specifies the Tick color of the selected Check Box in the SymbolPalette pop-up.The default value is DarkSlateGray{{ '_._' | markdownify }}</td><td>
 Dependency property</td><td>
 Brush</td><td>
 No</td></tr>

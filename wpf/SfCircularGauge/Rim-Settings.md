@@ -94,8 +94,8 @@ Screenshot:
 </td></tr>
 <tr>
 <td>
-{{{ ''_Full Circular Gauge_'' | markdownify }}}</td><td>
-{{{ ''_Semi Circular Gauge (Top and Bottom)_'' | markdownify }}}</td></tr>
+{{ '_Full Circular Gauge_' | markdownify }}</td><td>
+{{ '_Semi Circular Gauge (Top and Bottom)_' | markdownify }}</td></tr>
 <tr>
 <td>
 ![](Rim-Settings_images/Rim-Settings_img3.png)
@@ -106,8 +106,8 @@ Screenshot:
 </td></tr>
 <tr>
 <td>
-{{{ ''_Semi Circular Gauge (Left and Right)_'' | markdownify }}}</td><td>
-{{{ ''_Quarter Circular Gauge (Starting at right angles)_'' | markdownify }}}</td></tr>
+{{ '_Semi Circular Gauge (Left and Right)_' | markdownify }}</td><td>
+{{ '_Quarter Circular Gauge (Starting at right angles)_' | markdownify }}</td></tr>
 <tr>
 <td>
 ![](Rim-Settings_images/Rim-Settings_img5.png)
@@ -116,7 +116,7 @@ Screenshot:
 </td></tr>
 <tr>
 <td>
-{{{ ''_Quarter Circular Gauge (Starting at 45 degree)_'' | markdownify }}}</td><td>
+{{ '_Quarter Circular Gauge (Starting at 45 degree)_' | markdownify }}</td><td>
 </td></tr>
 </table>
 
