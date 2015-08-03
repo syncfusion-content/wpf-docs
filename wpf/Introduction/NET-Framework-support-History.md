@@ -7,9 +7,9 @@ control: Introduction
 documentation: ug
 ---
 
-## .NET Framework support History
+# .NET Framework support History
 
-Version Compatibility
+## Version Compatibility
 
 The table represents the .NET framework versions vs Syncfusion version.
 
@@ -17,12 +17,12 @@ _.NET framework versions vs Syncfusion version_
 
 <table>
 <tr>
-<td>
-Syncfusion version</td><td>
-.NET 3.5</td><td>
-.NET 4.0</td><td>
-.NET 4.5</td><td>
-.NET 4.5.1</td></tr>
+<th>
+Syncfusion version</th><th>
+.NET 3.5</th><th>
+.NET 4.0</th><th>
+.NET 4.5</th><th>
+.NET 4.5.1</th></tr>
 <tr>
 <td>
 Earlier Version</td><td>
@@ -47,7 +47,7 @@ Yes</td></tr>
 </table>
 
 
-Control compatibility 
+## Control compatibility 
 
 Syncfusion WPF controls are always updated with the Microsoft latest Framework. The following table contains information about controls compatibility with earlier version of .NET Framework
 
@@ -55,13 +55,13 @@ _List of controls compatibility with earlier version of .NET Framework_
 
 <table>
 <tr>
-<td>
-Category</td><td>
-Controls</td><td>
-.NET 3.5</td><td>
-.NET 4.0</td><td>
-.NET 4.5</td><td>
-.NET 4.5.1</td></tr>
+<th>
+Category</th><th>
+Controls</th><th>
+.NET 3.5</th><th>
+.NET 4.0</th><th>
+.NET 4.5</th><th>
+.NET 4.5.1</th></tr>
 <tr>
 <td>
 GRIDS</td><td>

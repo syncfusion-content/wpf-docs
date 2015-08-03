@@ -18,16 +18,16 @@ To edit the ButtonAdv control:
 
 
 
-{{ '![](Blendability_images/Blendability_img1.png)' | markdownify }}
-{:.image }
+![](Blendability_images/Blendability_img1.png)
+
 
 
 3. The Create Style Resource window appears as follows. Click OK to create a new style for Button control.
 
 
 
-{{ '![](Blendability_images/Blendability_img2.png)' | markdownify }}
-{:.image }
+![](Blendability_images/Blendability_img2.png)
+
 
 
 
@@ -36,13 +36,13 @@ To edit the ButtonAdv control:
 
 
 
-{{ '![](Blendability_images/Blendability_img3.png)' | markdownify }}
-{:.image }
+![](Blendability_images/Blendability_img3.png)
 
 
 
 
-{{ '![](Blendability_images/Blendability_img4.png)' | markdownify }}
-{:.image }
+
+![](Blendability_images/Blendability_img4.png)
+
 
 

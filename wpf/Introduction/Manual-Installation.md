@@ -7,7 +7,7 @@ control: Introduction
 documentation: ug
 ---
 
-## Manual Installation
+# Manual Installation
 
 For step-by-step installation procedure for the installation of Essential Studio, you can refer to: Installation->Installation and Deployment in the Common UG or from the following location.
 

@@ -7,31 +7,31 @@ control: SfBarcode
 documentation: ug
 ---
 
-## Barcode Customization
+# Barcode Customization
 
 The color of the barcode can be customized by modifying the DarkBarBrush and LightBarBrush properties of the barcode control. 
-
+{% highlight html %}
 [XAML]
 
 <sync:SfBarcode x:Name="barcode" Text="82698640929" DarkBarBrush=”Red” LightBarBrush="Blue” Symbology="QRBarcode"/>
 
 
-
+{% endhighlight  %}
 
 
 The DarkBarBrush represents the color of the dark bar (Black color usually) and the LightBarBrush represents the color of the gap between two adjacent black bars (White color usually).
 
 {{ '![](Barcode-Customization_images/Barcode-Customization_img1.png)' | markdownify }}
-{:.image }
+
 
 
 
 
 {{ '![](Barcode-Customization_images/Barcode-Customization_img2.png)' | markdownify }}
-{:.image }
 
 
-> _Note: The DarkBarBrush and LightBarBrush customizations are applicable only for one dimensional barcodes. In order for a barcode symbol to be recognized by a scanner, there must be an adequate contrast between the dark bars and the light spaces and not all the barcode scanners have support for colored barcodes._
+
+> Note: The DarkBarBrush and LightBarBrush customizations are applicable only for one dimensional barcodes. In order for a barcode symbol to be recognized by a scanner, there must be an adequate contrast between the dark bars and the light spaces and not all the barcode scanners have support for colored barcodes.
 
 
 

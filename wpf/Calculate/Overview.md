@@ -16,7 +16,7 @@ The range of calculations include simple algebraic expressions such as (1.2^3-1)
 Essential Calculate allows you to add extensive calculation support to your business objects. It enables to easily setup forms that have calculation dependencies among various controls.
 
 {{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
-{:.image }
+
 
 
 Key Features

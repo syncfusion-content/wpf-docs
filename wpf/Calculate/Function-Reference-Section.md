@@ -153,7 +153,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img1.png)' | markdownify }}
-{:.image }
+
 
 
 where:
@@ -239,13 +239,13 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img2.png)' | markdownify }}
-{:.image }
+
 
 
 where:
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img3.png)' | markdownify }}
-{:.image }
+
  is COMBIN(n,x).    
 
 
@@ -255,7 +255,7 @@ where:
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img4.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -359,7 +359,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img5.png)' | markdownify }}
-{:.image }
+
 
 
 where:
@@ -422,7 +422,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img6.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -430,7 +430,7 @@ Remarks
 where:
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img7.jpeg)' | markdownify }}
-{:.image }
+
 
 
 ## CONCATENATE
@@ -496,7 +496,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img8.png)' | markdownify }}
-{:.image }
+
 
 
 where:
@@ -534,7 +534,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img9.png)' | markdownify }}
-{:.image }
+
 
 
 ## COUNT
@@ -623,7 +623,7 @@ Remarks
 * The covariance is:
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img10.png)' | markdownify }}
-{:.image }
+
 
 
 where:
@@ -832,7 +832,7 @@ Remarks
 <br></td></tr>
 </table>
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img11.png)' | markdownify }}
-{:.image }
+
 
 
 ## Dollar
@@ -914,7 +914,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img12.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -924,7 +924,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img13.png)' | markdownify }}
-{:.image }
+
 
 
 ## FACT
@@ -1030,7 +1030,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img14.png)' | markdownify }}
-{:.image }
+
 
 
 ## FISHERINV
@@ -1052,7 +1052,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img15.png)' | markdownify }}
-{:.image }
+
 
 
 ## Fixed
@@ -1113,11 +1113,11 @@ a+bx
 where:
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img16.png)' | markdownify }}
-{:.image }
+
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img17.png)' | markdownify }}
-{:.image }
+
 
 
 x-bar and y-bar are the sample means AVERAGE(known_xs) and AVERAGE(known_ys).
@@ -1169,7 +1169,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img18.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1177,7 +1177,7 @@ Remarks
 * The standard gamma probability density function is:
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img19.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1187,7 +1187,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img20.png)' | markdownify }}
-{:.image }
+
 
 
 ## Gammainv
@@ -1250,7 +1250,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img21.png)' | markdownify }}
-{:.image }
+
 
 
 ## GROWTH
@@ -1312,7 +1312,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img22.png)' | markdownify }}
-{:.image }
+
 
 
 ## HLOOKUP
@@ -1390,7 +1390,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img23.png)' | markdownify }}
-{:.image }
+
 
 
 where:
@@ -1484,13 +1484,13 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img24.png)' | markdownify }}
-{:.image }
+
 
 
 where:
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img25.png)' | markdownify }}
-{:.image }
+
 
 
 x-bar and y-bar are the sample means AVERAGE(known_x's) and AVERAGE(known_y's).
@@ -1674,7 +1674,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img26.png)' | markdownify }}
-{:.image }
+
 
 
 where:
@@ -1844,7 +1844,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img27.png)' | markdownify }}
-{:.image }
+
 
 
 ## LOGNORMDIST
@@ -1871,7 +1871,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img28.png)' | markdownify }}
-{:.image }
+
 
 
 ## Lower
@@ -2054,7 +2054,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img29.png)' | markdownify }}
-{:.image }
+
 
 
 ## MOD
@@ -2137,7 +2137,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img30.png)' | markdownify }}
-{:.image }
+
 
 
 where:
@@ -2174,7 +2174,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img31.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2302,7 +2302,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img32.png)' | markdownify }}
-{:.image }
+
 
 
 ## ODD
@@ -2375,7 +2375,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img33.png)' | markdownify }}
-{:.image }
+
 
 
 where:
@@ -2498,7 +2498,7 @@ Remarks
 For cumulative = False:
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img34.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -2506,7 +2506,7 @@ For cumulative = False:
 For cumulative = True:
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img35.png)' | markdownify }}
-{:.image }
+
 
 
 ## Pow
@@ -2632,7 +2632,7 @@ Remarks
 * One financial argument is solved for in terms of the others. When rate is not 0, then,
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img36.png)' | markdownify }}
-{:.image }
+
 
 
 When rate is 0:
@@ -2828,7 +2828,7 @@ Remarks
 The equation for the Pearson product moment correlation coefficient, r, is:
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img37.png)' | markdownify }}
-{:.image }
+
 
 
 where:
@@ -2895,7 +2895,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img38.png)' | markdownify }}
-{:.image }
+
 
 
 ## SinH
@@ -2927,7 +2927,7 @@ Remarks
 The equation for skewness is defined as:
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img39.png)' | markdownify }}
-{:.image }
+
 
 
 ## SLN
@@ -2967,7 +2967,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img40.png)' | markdownify }}
-{:.image }
+
 
 
 where:
@@ -3028,7 +3028,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img41.png)' | markdownify }}
-{:.image }
+
 
 
 ## STDEV
@@ -3051,7 +3051,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img42.png)' | markdownify }}
-{:.image }
+
 
 
 where:
@@ -3080,7 +3080,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img43.png)' | markdownify }}
-{:.image }
+
 
 
 where:
@@ -3109,7 +3109,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img44.png)' | markdownify }}
-{:.image }
+
 
 
 where:
@@ -3136,7 +3136,7 @@ Remarks
 * STDEVPA uses the following formula: 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img45.png)' | markdownify }}
-{:.image }
+
 
 
 where:
@@ -3166,7 +3166,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img46.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -3335,7 +3335,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img47.png)' | markdownify }}
-{:.image }
+
 
 
 ## SUMX2PY2
@@ -3360,7 +3360,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img48.png)' | markdownify }}
-{:.image }
+
 
 
 ## SYD
@@ -3388,7 +3388,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img49.png)' | markdownify }}
-{:.image }
+
 
 
 ## TAN
@@ -3420,7 +3420,7 @@ Remarks
 * The formula for the hyperbolic tangent is:
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img50.png)' | markdownify }}
-{:.image }
+
 
 
 ## TEXT
@@ -3623,7 +3623,7 @@ Remarks
 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img51.png)' | markdownify }}
-{:.image }
+
 
 
 where:
@@ -3789,13 +3789,13 @@ Remarks
 * ZTEST is calculated as follows when sigma is not omitted: 
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img52.png)' | markdownify }}
-{:.image }
+
 
 
 or when sigma is omitted:
 
 {{ '![](Function-Reference-Section_images/Function-Reference-Section_img53.png)' | markdownify }}
-{:.image }
+
 
 
 where:

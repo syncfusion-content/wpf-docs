@@ -31,8 +31,9 @@ Namespace: Syncfusion.UI.Xaml.BulletGraph
 
 Refer to the following code to creating a Bullet Graph with all its basic properties specified in code.
 
-Code example
+### Code example
 
+{% highlight html %}
 [XAML]
 
 <Window x:Class="SfBulletGraph.MainWindow"
@@ -87,8 +88,8 @@ Code example
 
 </Window>
 
-
-
+{% endhighlight %}
+{% highlight c# %}
 [C#]
 
          SfBulletGraph bulletgraph = new SfBulletGraph();
@@ -124,11 +125,11 @@ Code example
             this.Grid.Children.Add(bulletgraph);        
 
 
+{% endhighlight %}
 
 
+![C:/Users/Giftline/Desktop/blessy1.jpg](Getting-Started_images/Getting-Started_img1.jpeg)
 
-{{ '![C:/Users/Giftline/Desktop/blessy1.jpg](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 ## Create the SfBulletGraph with the Syncfusion Reference Manager
@@ -139,40 +140,40 @@ To Add SfBulletGraph Control, follow the steps:
 
 1. Create a simple WPF application by using Visual Studio.
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 2. Right-Click on the Project and select SyncfusionReferenceManager.
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 3. The Syncfusion Reference Manager Wizard opens as follows.
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 4. Search SfBulletGraph by using SearchBox and select SfBulletGraph Control.  Click done to add the selected SfBulletGraph Control.
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 5. The SfBulletGraph assemblies is automatically added to the Project after Clicking OK.
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 6. Create a namespace reference to the SfBulletGraph control by using Syncfusion’s global namespace reference schemas.syncfusion.com or the SfBulletGraph control’s namespace reference by using Syncfusion.UI.Xaml.BulletGraph available in the Syncfusion.SfBulletGraph.WPF assembly.
-
+{% highlight html %}
 [XAML]
 
   xmlns:bulletgraph="http://schemas.syncfusion.com/wpf" 
@@ -181,10 +182,10 @@ To Add SfBulletGraph Control, follow the steps:
 
   xmlns:bulletgraph ="clr-    namespace:Syncfusion.UI.Xaml.BulletGraph;assembly=Syncfusion.SfBulletGraph. WPF"
 
-
+{% endhighlight  %}
 
 7. Add the following code to create a simple SfBulletGraph control.
-
+{% highlight html %}
 [XAML]
 
 <Window x:Class="SfBulletGraph.MainWindow"
@@ -239,7 +240,8 @@ To Add SfBulletGraph Control, follow the steps:
 
 </Window>
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -300,19 +302,16 @@ namespace BulletGraph
  }
 
 }
-
+{% endhighlight %}
 
 
 8.  The simple SfBulletGraph control is created as follows.
 
-{{ '![C:/Users/Giftline/Desktop/blessy2.jpg](Getting-Started_images/Getting-Started_img8.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Giftline/Desktop/blessy2.jpg](Getting-Started_images/Getting-Started_img8.jpeg)
 
 
-> _Note:_   
 
-1. _The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version._
-2. _The Syncfusion Reference Manager can be used only in Visual Studio 2010, 2012, and 2013._
+> Note:   1. The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version. 2. The Syncfusion Reference Manager can be used only in Visual Studio 2010, 2012, and 2013.
 
 
 

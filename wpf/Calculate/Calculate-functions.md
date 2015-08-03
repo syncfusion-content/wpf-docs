@@ -15,7 +15,7 @@ documentation: ug
 
 A dollar price expressed as a fraction converts into a dollar price expressed as a decimal number.
 
-Syntax:
+#### Syntax:
 
 DOLLARDE( arg1, arg2) where:
 
@@ -24,23 +24,23 @@ DOLLARDE( arg1, arg2) where:
 
 
 
- Remarks:
+#### Remarks:
 
 #NUM! - Occurs if the fraction is less than 0.
 
 #DIV/0! - Occurs if the fraction is equal to 0.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img1.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img1.png)
+
 
 
 ### DOLLARFR
 
 A dollar price expressed as a decimal number converts into a dollar price expressed as a fraction.
 
-Syntax:
+#### Syntax:
 
 DOLLARFR (decNum, arg2) where:
 
@@ -49,7 +49,7 @@ DOLLARFR (decNum, arg2) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #NUM! - Occurs if the fraction is less than 0.
 
@@ -57,15 +57,15 @@ Remarks:
 
 Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img2.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img2.png)
+
 
 
 ### DURATION
 
 Returns the annual duration of a security with periodic interest payments.
 
-Syntax:
+#### Syntax:
 
 DURATION(SettlementDate,MaturityDate,rate,profit,frequency,basis) where:
 
@@ -78,17 +78,17 @@ DURATION(SettlementDate,MaturityDate,rate,profit,frequency,basis) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img3.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img3.png)
+
 
 
 ### RRI
 
 The RRI function returns an equivalent interest rate when investment value increases.
 
-Syntax:
+#### Syntax:
 
 RRI(np,pv,fv) where,
 
@@ -96,38 +96,38 @@ RRI(np,pv,fv) where,
 * pv is the present investment value.
 * fv is the future investment value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img4.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img4.png)
+
 
 
 ### FVSCHEDULE
 
 The FVSCHEDULE method returns the future value of an initial principle after applying a series of compound interest rates.
 
-Syntax:
+#### Syntax:
 
 FVSCHEDULE(arg1,arg2) where:
 
 * Arg1 is the present value.
 * Arg2 is an array interest rate.
 
- Remarks:
+#### Remarks:
 
 #VALUE! – occurs any other than numbers or blank cells.
 
 Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img5.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img5.png)
+
 
 
 ### DISC
 
 The DISC function returns security discount rate.
 
-Syntax:
+#### Syntax:
 
 DISC(SettlementDate,MaturityDate,rate,value) where:
 
@@ -138,17 +138,17 @@ DISC(SettlementDate,MaturityDate,rate,value) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img6.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img6.png)
+
 
 
 ### INTRATE
 
 The INTRATE function returns the interest rate for a fully invested security.
 
-Syntax:
+#### Syntax:
 
 INTRATE(SettlementDate,MaturityDate, investment, amount, basis ) where:
 
@@ -158,7 +158,7 @@ INTRATE(SettlementDate,MaturityDate, investment, amount, basis ) where:
 * amount - amount to be received at maturitydate.
 * Basis - type of day count basis.
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if settlementdate is greater than or equal to maturitydate, investment and amount is less than or equal to zero.
 
@@ -166,15 +166,15 @@ Remarks:
 
 Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img7.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img7.png)
+
 
 
 ### CUMIPMT
 
 Calculates the cumulative interest paid on a loan or investment, between two specified periods. 
 
-Syntax:
+#### Syntax:
 
 CUMIPMT(rate, np,pv,startPeriod, endPeriod, pp) where,
 
@@ -187,21 +187,21 @@ CUMIPMT(rate, np,pv,startPeriod, endPeriod, pp) where,
 
 
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if rate,np or pv is less than or equals zero, if startPeriod or endPeriod is less than one, if startPeriod is greater than endPeriod and pp is any number other than 0 or 1.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img8.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img8.png)
+
 
 
 ### CUMPRINC
 
 The CUMPRINC function calculates the cumulative payment on the principal of a loan or investment, between two specified periods. 
 
-Syntax:
+#### Syntax:
 
 CUMPRINC(rate, np, pv, startPeriod, endPeriod, pp) where:
 
@@ -214,21 +214,21 @@ CUMPRINC(rate, np, pv, startPeriod, endPeriod, pp) where:
 
 
 
- Remarks:
+#### Remarks:
 
 #NUM! - occurs if rate, np or pv is less than or equals zero, if startPeriod or endPeriod is less than one, if startPeriod is greater than endPeriod and pp is any number other than 0 or 1.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img9.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img9.png)
+
 
 
 ### ACCRINT
 
 The ACCRINT function returns the accrued interest for a security with periodic interest payments.
 
-Syntax:
+#### Syntax:
 
 ACCRINT(IssueDate,FirstIntrestDate,settlementDate,rate,parvalue,frequency,basis) where:
 
@@ -242,23 +242,23 @@ ACCRINT(IssueDate,FirstIntrestDate,settlementDate,rate,parvalue,frequency,basis)
 
 
 
-Remarks:
+#### Remarks:
 
 #VALUE - returns only if FirstInterest or settlementDate is invalid. 
 
 #NUM! -  returns if rate ≤ 0, if par ≤ 0, if frequency is any number other than 1, 2, or 4, if basis < 0 or if basis > 4 and if issue ≥ settlement.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img10.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img10.png)
+
 
 
 ### RECEIVED
 
 The RECEIVED function returns the amount received at maturity for a fully invested security.
 
-Syntax:
+#### Syntax:
 
 RECEIVED(Settlementdate,MaturityDate,investment,discount,basis) where:
 
@@ -270,14 +270,14 @@ RECEIVED(Settlementdate,MaturityDate,investment,discount,basis) where:
 
 
 
- Remarks:
+#### Remarks:
 
 #NUM! - occurs if settlement ≥ maturity and if investment and discount is ≤ 0.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img11.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img11.png)
+
 
 
 ## Database Functions
@@ -286,7 +286,7 @@ Example:
 
 The DCOUNT function counts the number of cells that contain numbers in a column of a list that matches the given conditions.
 
-Syntax:
+#### Syntax:
 
 DCOUNT(collection,column,condition) where:
 
@@ -296,19 +296,19 @@ DCOUNT(collection,column,condition) where:
 
 
 
-Example:
+#### Example:
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img12.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img12.png)
+
 
 
 ### DCOUNTA
 
 The DCOUNTA function counts the number of nonblank cells in a column of a list that matches the given conditions.
 
-Syntax:
+#### Syntax:
 
 DCOUNTA(collection,column,condition) where:
 
@@ -318,17 +318,17 @@ DCOUNTA(collection,column,condition) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img13.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img13.png)
+
 
 
 ### DAVERAGE
 
 The DAVERAGE function finds the average values obtained from a column of a list that matches the given conditions.
 
-Syntax:
+#### Syntax:
 
 DAVERAGE(collection,column,condition) where:
 
@@ -338,17 +338,17 @@ DAVERAGE(collection,column,condition) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img14.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img14.png)
+
 
 
 ### DGET
 
 The DGET function renders value from the column of list from the specified condition.
 
-Syntax:
+#### Syntax:
 
 DGET(collection,column,condition) where:
 
@@ -358,17 +358,17 @@ DGET(collection,column,condition) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/4.png](Calculate-functions_images/Calculate-functions_img15.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/4.png](Calculate-functions_images/Calculate-functions_img15.png)
+
 
 
 ### DMAX
 
 The DMAX function returns the largest number in a column of a list that matches the given conditions.
 
-Syntax:
+#### Syntax:
 
 DMAX(collection,column,condition) where:
 
@@ -378,17 +378,17 @@ DMAX(collection,column,condition) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img16.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img16.png)
+
 
 
 ### DMIN
 
 The DMIN function returns the smallest number in a column of a list that matches the given conditions.
 
-Syntax:
+#### Syntax:
 
 DMIN(collection,column,condition) where:
 
@@ -398,17 +398,17 @@ DMIN(collection,column,condition) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img17.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img17.png)
+
 
 
 ### DSTDEV
 
 The DSTDEV function estimates the standard deviation of a population based on a sample by using the numbers in a column of a list that matches the given conditions.
 
-Syntax:
+#### Syntax:
 
 DSTDEV(collection,column,condition) where:
 
@@ -416,17 +416,17 @@ DSTDEV(collection,column,condition) where:
 * column indicates the column used in the function.
 * condition is the range of cells that contains the given conditions.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img18.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img18.png)
+
 
 
 ### DSTDEVP
 
 The DSTDEVP function calculates the standard deviation of a population based on the entire population, using the numbers in a column of a list that match the given conditions.
 
-Syntax:
+#### Syntax:
 
 DSTDEVP(collection,column,condition) where:
 
@@ -436,17 +436,17 @@ DSTDEVP(collection,column,condition) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img19.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img19.png)
+
 
 
 ### DVAR
 
 The DVAR function estimates the variance of a population based on a sample by using the numbers in a column of a list which matches the conditions.
 
-Syntax:
+#### Syntax:
 
 VAR(collection, column, condition) where:
 
@@ -456,17 +456,17 @@ VAR(collection, column, condition) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img20.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img20.png)
+
 
 
 ### DVARP
 
 The DVARP function calculates the variance of a population based on the entire population by using the numbers in a column of a list or database that matches the conditions.
 
-Syntax:
+#### Syntax:
 
 DVARP(collection, column, condition) where:
 
@@ -476,17 +476,17 @@ DVARP(collection, column, condition) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img21.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img21.png)
+
 
 
 ### DSUM
 
 The DSUM function adds the numbers in a field (column) of records in a list that matches the given conditions.
 
-Syntax:
+#### Syntax:
 
 DSUM(collection, column, condition) where:
 
@@ -494,12 +494,12 @@ DSUM(collection, column, condition) where:
 * column indicates the column used in the function
 * condition is the range of cells that contains the given conditions.
 
-Example:
+#### Example:
 
 
 
-{{ '![](Calculate-functions_images/Calculate-functions_img22.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img22.png)
+
 
 
 ## Math and Trigonometry
@@ -508,51 +508,51 @@ Example:
 
 The SEC function returns the secant of an angle.
 
-Syntax:
+#### Syntax:
 
 SEC(number) where:
 
 * number - angle radians to get the secant value.
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if the number is outside of its constraints.
 
 #VALUE! - occurs if number is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img23.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img23.png)
+
 
 
 ### SECH
 
 The SECH function returns the hyperbolic secant of an angle.
 
-Syntax:
+#### Syntax:
 
 SECH(number) where:
 
 * number - angle radians to get the hyperbolic secant value.
 
-REMARKS:
+#### REMARKS:
 
 #NUM! - occurs if the number is outside of its constraints.
 
 #VALUE! - occurs if the number is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img24.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img24.png)
+
 
 
 ### COT
 
 The COT function returns the cotangent of an angle specified in radians.
 
-Syntax:
+#### Syntax:
 
 COT(number) where:
 
@@ -562,78 +562,78 @@ COT(number) where:
 
 #VALUE! - occurs if the number is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img25.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img25.png)
+
 
 
 ### COTH
 
 The COTH function returns the hyperbolic cotangent of a hyperbolic angle.
 
-Syntax:
+#### Syntax:
 
 COTH(number) where:
 
 * number - angle radians to get the hyperbolic cotangent value.
 
- Remarks:
+#### Remarks:
 
 #NUM! - occurs if the number is outside of its constraints.
 
 #VALUE! - occurs if the number is a non-numeric value.
 
-Example:
+#### Example:
 
 
 
-{{ '![](Calculate-functions_images/Calculate-functions_img26.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img26.png)
+
 
 
 ### CSC
 
 The CSC function returns the cosecant of an angle specified in radians.
 
-Syntax:
+#### Syntax:
 
 CSC(number) where:
 
 * number - angle radians to get the cosecant value.
 
- Remarks:
+#### Remarks:
 
 #NUM! - occurs if the number is outside of its constraints.
 
 #VALUE! - occurs if the number is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img27.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img27.png)
+
 
 
 ### CSCH
 
 The CSCH function returns the hyperbolic cosecant of an angle specified in radians.
 
-Syntax:
+#### Syntax:
 
 CSCH(number) where:
 
 * number - angle radians to get the hyperbolic cosecant value.
 
- Remarks:
+#### Remarks:
 
 #NUM! - occurs if the number is outside of its constraints.
 
 #VALUE! - occurs if the number is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img28.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img28.png)
+
 
 
 ### ACOT
@@ -642,70 +642,70 @@ The ACOT function retrieves the principal value of the inverse trigonometric co
 
 To obtain in degrees, use DEGREES function before ACOT function.
 
-Syntax:
+#### Syntax:
 
 ACOT(number) or DEGREES ACOT(number) where:
 
 * number that is to be converted into acotangent.
 
- Remarks:
+#### Remarks:
 
 #VALUE! - occurs if the number is a non-numeric value.
 
 The returned angle is given in radians in the range of 0 (zero) to pi.
 
-Example:
+#### Example:
 
-l{{ '![](Calculate-functions_images/Calculate-functions_img29.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img29.png)
+
 
 
 ### ACOTH
 
 The ACOTH function retrieves the inverse hyperbolic cotangent of a number.
 
-Syntax:
+#### Syntax:
 
 ACOTH(number) where:
 
 * number that is to be converted into cotangent.
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if number is less than one.
 
 #VALUE! - occurs if absolute value of number is less than one.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img30.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img30.png)
+
 
 
 ### ACSCH
 
 The ACSCH function computes the inverse hyperbolic cosecant of its argument.
 
-Syntax:
+#### Syntax:
 
 x = ACSCH(y) where:
 
 * x is a complex or real array
 * y is a complex or real array
 
-Example:
+#### Example:
 
 
 
-{{ '![](Calculate-functions_images/Calculate-functions_img31.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img31.png)
+
 
 
 ### BIGMUL
 
 The BIGMUL function gives the full value of multiplying two 32-bit numbers.
 
-Syntax:
+#### Syntax:
 
 Math.BIGMUL(x,y); where:
 
@@ -714,33 +714,33 @@ Math.BIGMUL(x,y); where:
 
 
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img32.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img32.png)
+
 
 
 ### DIVREM
 
 The DIVREM function calculates the quotient of two numbers and also returns the remainder in an output parameter.
 
-Syntax:
+#### Syntax:
 
 Math.DIVREM(num1,num2) where:
 
 * num1 and num2 are integers.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img33.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img33.png)
+
 
 
 ### IEEERemainder
 
 IEEERemainder function returns the remainder operation on two arguments.
 
-Syntax:
+#### Syntax:
 
 IEEERemainder(d1, d2) where:
 
@@ -749,17 +749,17 @@ IEEERemainder(d1, d2) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img34.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img34.png)
+
 
 
 ### TRUNC
 
 The TRUNC function truncates a supplied number to a specified number of decimal places.
 
-Syntax:
+#### Syntax:
 
 TRUNC( number, [num_digits] ) where:
 
@@ -768,17 +768,17 @@ TRUNC( number, [num_digits] ) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img35.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img35.png)
+
 
 
 ### COMBINA
 
 For a given number of items, the COMBINA function returns the number of combinations.
 
-Syntax:
+#### Syntax:
 
 COMBINA(number1, number2) where:
 
@@ -787,29 +787,29 @@ COMBINA(number1, number2) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if either value is out of range.
 
 #VALUE! - occurs if either value is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img36.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img36.png)
+
 
 
 ### ARABIC
 
 A Roman numeral is converted into an Arabic numeral.
 
-Syntax:
+#### Syntax:
 
 ARABIC( romannumeral ) where 
 
 * romannumeral is the text given by you to convert it into Arabic numeral
 
-Remarks:
+#### Remarks:
 
 #VALUE! - occurs if text is not a valid value.
 
@@ -817,17 +817,17 @@ Remarks:
 
 Value zero occurs if an empty string is given as an input.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img37.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img37.png)
+
 
 
 ### BASE
 
 A number is converted into a text representation with the given radix (base).
 
-Syntax:
+#### Syntax:
 
 BASE(number,radix [Minlength]) where:
 
@@ -837,23 +837,23 @@ BASE(number,radix [Minlength]) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if Number, Radix, or Minlength are outside the minimum or maximum constraints.
 
 #VALUE! - occurs if Number is a non-numeric value.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img38.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img38.png)
+
 
 
 ### CEILING.MATH
 
 The CEILING.MATH function returns number rounded up to a multiple of another number.
 
-Syntax:
+#### Syntax:
 
 CEILING(number, [significance],  [mode]) where:
 
@@ -861,17 +861,17 @@ CEILING(number, [significance],  [mode]) where:
 * significance - multiple to which the number is rounded.
 * mode is for negative numbers, it controls whether the number is rounded toward or away from zero.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img39.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img39.png)
+
 
 
 ### DECIMAL
 
 A text representation of a number in a given base has been converted into a decimal number.
 
-Syntax:
+#### Syntax:
 
 DECIMAL(text, radix) where:
 
@@ -880,94 +880,94 @@ DECIMAL(text, radix) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #NUM! or #VALUE! - occurs if text or radix is outside the constraints.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img40.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img40.png)
+
 
 
 ### MDETERM
 
 The MDETERM function retrieves the matrix determinant of an array.
 
-Syntax:
+#### Syntax:
 
 MDETERM(array) where:
 
 * array is a numeric array with an equal number of rows and columns.(a matrix)
 
-Remarks:
+#### Remarks:
 
 #VALUE! - occurs if any cell in the array is empty or has text in it and if the array does not have an equal number of rows and columns.
 
-Example:
+#### Example:
 
-l{{ '![](Calculate-functions_images/Calculate-functions_img41.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img41.png)
+
 
 
 ### MINVERSE
 
 The MINVERSE function retrieves the inverse matrix for the matrix stored in an array.
 
-Syntax:
+#### Syntax:
 
 MINVERSE(array) where:
 
 * array is an numeric array with an equal number of rows and columns.(a matrix)
 
-Remarks:
+#### Remarks:
 
 #VALUE! - occurs when any cell in the array is empty or has text in it and if the array does not have an equal number of rows and columns.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img42.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img42.png)
+
 
 
 ### MMULT
 
 The MMULT function returns the matrix product of two arrays. Both the arrays should have same number of columns and same number of rows.
 
-Syntax:
+#### Syntax:
 
 MMULT(M1,M2) where:
 
 * M1, M2 are the matrix arrays that is to be multiplied.
 
-Remarks:
+#### Remarks:
 
 #VALUE! - occurs if any cell in the array is empty or contains text in it and if the array does not have an equal number of rows and columns.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img43.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img43.png)
+
 
 
 ### MUNIT
 
 The MUNIT function retrieves the unit matrix for the particular dimension that has been specified.
 
-Syntax:
+#### Syntax:
 
 MUNIT(dimension) where:
 
 * Dimension is an integer specifying the dimension of the unit matrix that you want to return.
 
-Remarks:
+#### Remarks:
 
 #VALUE! - occurs if the dimension is a value that is equal to or smaller than zero.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img44.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img44.png)
+
 
 
 ## Statistical functions
@@ -976,7 +976,7 @@ Example:
 
 CONFIDENCE.T function retrieves the confidence interval for a population mean.
 
-Syntax:
+#### Syntax:
 
 CONFIDENCE.T(alpha,stdev,size) where:
 
@@ -986,7 +986,7 @@ CONFIDENCE.T(alpha,stdev,size) where:
 
 
 
- Remarks:
+#### Remarks:
 
 #VALUE! - occurs if any argument is non-numeric.
 
@@ -994,23 +994,22 @@ CONFIDENCE.T(alpha,stdev,size) where:
 
 #DIV/0! - occurs if the size is equal to one.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img45.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img45.png)
 
 
 ### SKEW.P
 
 Returns the skewness of a distribution based on a population: a characterization of the degree of asymmetry of a distribution around its mean.
 
-Syntax:
+#### Syntax:
 
 SKEW.P(number 1, [number 2],…) where:
 
 * Number 1 is required, and subsequent numbers are optional. Number 2,... up to 254 are numbers or names, arrays, or references that contain numbers for which you want the population skewness, can be used.
 
- Remarks:
+#### Remarks:
 
 #NUM! - occurs if arguments do not have a valid value.
 
@@ -1018,17 +1017,17 @@ SKEW.P(number 1, [number 2],…) where:
 
 #DIV/0! - occurs if there are fewer than three data points, or the sample standard deviation is zero.
 
-Example:
+3### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img46.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img46.png)
+
 
 
 ### COVARIANCE.P
 
 The COVARIANCE.P function retrieves population covariance, the average of the products of deviations for each data point pair in two data sets.
 
-Syntax:
+#### Syntax:
 
 COVARIANCE.P(array1,array2) where:
 
@@ -1037,17 +1036,17 @@ COVARIANCE.P(array1,array2) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img47.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img47.png)
+
 
 
 ###  COVARIANCE.S
 
 The COVARIANCE.S function returns the sample covariance, the average of the products of deviations for each data point pair in two data sets.
 
-Syntax:
+#### Syntax:
 
 COVARIANCE.S(array1,array2) where:
 
@@ -1056,23 +1055,23 @@ COVARIANCE.S(array1,array2) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #N/A - occurs when values are different number of data points.
 
 #DIV/0! - occurs if either array1 or array2 is empty or contain only one data point each.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img48.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img48.png)
+
 
 
 ### PERCENTILE.EXC
 
 The PERCENTILE.EXC function returns the k-th percentile of values in a range, where k is in the range of 0 to 1, exclusively.
 
-Syntax:
+#### Syntax:
 
 PERCENTILE.EXC(array, k) where:
 
@@ -1081,23 +1080,23 @@ PERCENTILE.EXC(array, k) where:
 
 
 
- Remarks:
+####  Remarks:
 
 #NUM! - occurs if k is equal to or less than zero, if k is equal to or greater than 1and if the array is empty.
 
 #VALUE! - occurs if k is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img49.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img49.png)
+
 
 
 ### PERCENTILE.INC
 
 The PERCENTILE.INC function returns the k-th percentile of values in a range, where k is in the range 0 to 1.
 
-Syntax:
+#### Syntax:
 
 PERCENTILE.INC(array,k) where:
 
@@ -1106,23 +1105,22 @@ PERCENTILE.INC(array,k) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if k is equal to or less than zero, if k is equal to or greater than 1and if the array is empty.
 
 #VALUE! - occurs if k is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img50.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img50.png)
 
 
 ### PERCENTRANK.EXC
 
 The PERCENTRANK.EXC function returns the rank of a value in a data set as a percentage (0 to 1, exclusively) of the data set.
 
-Syntax:
+#### Syntax:
 
 PERCENTRANK.EXC(array, x ) where:
 
@@ -1131,7 +1129,7 @@ PERCENTRANK.EXC(array, x ) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if this argument is empty.
 
@@ -1139,15 +1137,15 @@ Remarks:
 
 Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img51.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img51.png)
+
 
 
 ### STDEV.P
 
 The STDEV.P function calculates the standard deviation of a supplied set of values.
 
-Syntax:
+#### Syntax:
 
 STDEV.P(number1,[number2],...]) where:
 
@@ -1156,7 +1154,7 @@ STDEV.P(number1,[number2],...]) where:
 
 
 
-Remarks:
+#### Remarks:
 
 * Arguments can either be numbers or names, arrays, or references that contain numbers.
 * The standard deviation is calculated using the "n" method.
@@ -1164,17 +1162,17 @@ Remarks:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img52.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img52.png)
+
 
 
 ### STDEV.S
 
 The STDEV.S function calculates the sample standard deviation of a supplied set of values.
 
-Syntax:
+#### Syntax:
 
 STDEV.S(number1,[number2],...]) where:
 
@@ -1183,23 +1181,23 @@ STDEV.S(number1,[number2],...]) where:
 
 
 
-Remarks:
+#### Remarks:
 
 * Arguments can either be numbers or names, arrays, or references that contain numbers.
 * The standard deviation is calculated using the "n" method.
 * Arguments that are error values or text that cannot be translated into numbers cause errors.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img53.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img53.png)
+
 
 
 ### PERMUTATIONA
 
 The PERMUTATIONA function returns the number of permutations for a given number of objects (with repetitions) that can be selected from the total number of objects.
 
-Syntax:
+#### Syntax:
 
 PERMUTATIONA(number, number-chosen) where:
 
@@ -1208,23 +1206,23 @@ PERMUTATIONA(number, number-chosen) where:
 
 
 
- Remarks:
+#### Remarks:
 
 #VALUE! - occurs if numeric arguments use data types that are non-numeric.
 
 #NUM! - occurs if numeric arguments are values that are not valid.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img54.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img54.png)
+
 
 
 ### NORMDIST
 
 The NORM.DIST function calculates the normal distribution for a supplied value of x, and a supplied distribution mean & standard deviation.
 
-Syntax:
+#### Syntax:
 
 NORM.DIST(x,mean,stdev,cumulative) where:
 
@@ -1235,7 +1233,7 @@ NORM.DIST(x,mean,stdev,cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #VALUE! - occurs if mean or stdev is non-numeric.
 
@@ -1243,15 +1241,14 @@ Remarks:
 
 Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img55.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img55.png)
 
 
 ### NORMINV
 
 Returns theinverse of the normal cumulative distribution for the specified mean and standard deviation.
 
-Syntax: 
+#### Syntax: 
 
 NORMINV(probability, mean, stdev), where:
 
@@ -1261,7 +1258,7 @@ NORMINV(probability, mean, stdev), where:
 
 
 
-Remarks:
+#### Remarks:
 
 #NUM! - if probability or stdev is equal to or less than zero, equal to or greater than 1.
 
@@ -1269,15 +1266,15 @@ Remarks:
 
 Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img56.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img56.png)
+
 
 
 ### NORM.S.DIST
 
 The NORM.S.DIST function returns the standard normal distribution.
 
-Syntax:
+#### Syntax:
 
 NORM.S.DIST(val, cumulative) where:
 
@@ -1286,17 +1283,17 @@ NORM.S.DIST(val, cumulative) where:
 
 
 
- Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img57.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img57.png)
+
 
 
 ### NORM.S.INV
 
 The NORM.S.INV function returns the inverse of the standard normal cumulative distribution.
 
-Syntax:
+#### Syntax:
 
 NORM.S.INV(probability) where:
 
@@ -1304,15 +1301,15 @@ NORM.S.INV(probability) where:
 
 Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img58.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img58.png)
+
 
 
 ### WEIBULL.DIST
 
 The WEIBULL.DIST function returns the Weibull distribution.
 
-Syntax:
+#### Syntax:
 
 WEIBULL.DIST(x,alpha,beta,cumulative) where:
 
@@ -1323,23 +1320,23 @@ WEIBULL.DIST(x,alpha,beta,cumulative) where:
 
 
 
- Remarks:
+#### Remarks:
 
 #NUM! - occurs when x is less than zero and if alpha or beta is equal to or less than zero.
 
 #VALUE! - occurs if beta is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img59.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img59.png)
+
 
 
 ### EXPON.DIST
 
 The EXPON.DIST function calculates the value of the probability density function or the cumulative distribution function for the exponential distribution.
 
-Syntax:
+#### Syntax:
 
 EXPON.DIST(x,y,cumulative) where:
 
@@ -1349,7 +1346,7 @@ EXPON.DIST(x,y,cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if x is less than zero and if y is equal to or less than zero. 
 
@@ -1357,15 +1354,15 @@ Remarks:
 
 Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img60.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img60.png)
+
 
 
 ### GAMMA.DIST
 
 The GAMMA.DIST function returns either the cumulative distribution or the probability density function for the Gamma Distribution.
 
-Syntax:
+#### Syntax:
 
 GAMMA.DIST(x,y,z,cumulative) where:
 
@@ -1376,7 +1373,7 @@ GAMMA.DIST(x,y,z,cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if x is less than zero, if z  is equal to or less than zero and occurs if alpha is equal to or less than zero. 
 
@@ -1384,15 +1381,15 @@ Remarks:
 
 Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img61.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img61.png)
+
 
 
 ### GAMMA.INV
 
 The GAMMA.INV function returns the inverse of the Gamma Distribution.
 
-Syntax:
+#### Syntax:
 
 GAMMA.INV(x,y,z,cumulative) where
 
@@ -1403,45 +1400,45 @@ GAMMA.INV(x,y,z,cumulative) where
 
 
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if x is less than zero, if z  is equal to or less than zero and occurs if alpha is equal to or less than zero. 
 
 #VALUE! - occurs if x or y or z is non-numeric
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img62.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img62.png)
+
 
 
 ### GAMMALN.PRECISE
 
 The GAMMALN.PRECISE function returns the natural logarithm of the Gamma Distribution.
 
-Syntax:
+#### Syntax:
 
 GAMMALN.PRECISE( x ) where:
 
 * x is the positive numeric value that evaluates the function. 
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if x is less than zero.
 
 #VALUE! - occurs if x is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img63.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img63.png)
+
 
 
 ### F.INV
 
 The F.INV function returns the inverse of the F probability distribution.
 
-Syntax:
+#### Syntax:
 
 F.INV(probability,degFreedom1,degFreedom2) where:
 
@@ -1451,23 +1448,22 @@ F.INV(probability,degFreedom1,degFreedom2) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if probability is equal to or less than zero and if probability is equal to or greater than one.
 
 #VALUE! - occurs if probability or degFreedom1 or degFreedom2 is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/20.png](Calculate-functions_images/Calculate-functions_img64.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/20.png](Calculate-functions_images/Calculate-functions_img64.png)
 
 
 ### F.INV.RT
 
 The F.INV.RT function calculates the inverse of the Cumulative F Distribution for a supplied probability.
 
-Syntax:
+#### Syntax:
 
 F.INV.RT(probability,degFreedom1,degFreedom2) where:
 
@@ -1477,23 +1473,23 @@ F.INV.RT(probability,degFreedom1,degFreedom2) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if probability is equal to or less than zero and if probability is equal to or greater than one.
 
 #VALUE! - occurs if probability or degFreedom1 or degFreedom2 is non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/4.png](Calculate-functions_images/Calculate-functions_img65.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/4.png](Calculate-functions_images/Calculate-functions_img65.png)
+
 
 
 ### BINOM.INV
 
 The BINOM.INV function returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion value.
 
-Syntax:
+#### Syntax:
 
 BINOM.INV(trial number,sp,value) where:
 
@@ -1503,23 +1499,23 @@ BINOM.INV(trial number,sp,value) where:
 
 
 
- Remarks:
+#### Remarks:
 
 #NUM! - occurs if trial number is less than zero, if sp and value is less than zero or greater one.
 
 #VALUE! - occurs if trials, sp and value are non-numeric.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/22.png](Calculate-functions_images/Calculate-functions_img66.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/22.png](Calculate-functions_images/Calculate-functions_img66.png)
+
 
 
 ### HYPGEOM.DIST
 
 The HYPGEOM.DIST function returns the hypergeometric distribution for a specified number of successes from a population sample.
 
-Syntax:
+#### Syntax:
 
 HYPGEOM.DIST(S_sample,size,S- population,ps,cumulative) where:
 
@@ -1531,7 +1527,7 @@ HYPGEOM.DIST(S_sample,size,S- population,ps,cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #VALUE! - occurs if any argument is non-numeric.
 
@@ -1545,17 +1541,17 @@ Remarks:
 
 #NUM! - occurs if ps ≤ 0.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/23.png](Calculate-functions_images/Calculate-functions_img67.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/23.png](Calculate-functions_images/Calculate-functions_img67.png)
+
 
 
 ### LOGNORM.DIST
 
 The LOGNORM.DIST function calculates the Log-Normal Probability Density Function or the Cumulative Log-Normal Distribution Function for a supplied value of x.
 
-Syntax:
+#### Syntax:
 
 LOGNORM.DIST(x,mean,stdev,cumulative) where:
 
@@ -1566,23 +1562,23 @@ LOGNORM.DIST(x,mean,stdev,cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #VALUE! - occurs if any argument is non-numeric.
 
 #NUM! - occurs if x ≤ 0 or if stdev ≤ 0.
 
-Example:
+#### Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img68.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img68.png)
+
 
 
 ### LOGNORM.INV
 
 The LOGNORM.INV function calculates the inverse of the Cumulative Log-Normal Distribution Function of x, for a supplied probability.
 
-Syntax:
+#### Syntax:
 
 LOGNORM.INV(probability, mean, stdev) where:
 
@@ -1592,23 +1588,23 @@ LOGNORM.INV(probability, mean, stdev) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #VALUE! - occurs if any argument is non-numeric.
 
 #NUM! - occurs if probability <= 0 or probability >= 1 and if Stdev<=0.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/5.png](Calculate-functions_images/Calculate-functions_img69.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/5.png](Calculate-functions_images/Calculate-functions_img69.png)
+
 
 
 ### CONFIDENCE.NORM
 
 The CONFIDENCE.NORM function uses a [Normal Distribution](http://en.wikipedia.org/wiki/Normal_distribution) to calculate a confidence value that can be used to construct the confidence interval for a population mean, for a supplied probability and sample size.
 
-Syntax:
+#### Syntax:
 
 CONFIDENCE.NORM(alpha,stdev,size) where:
 
@@ -1618,7 +1614,7 @@ CONFIDENCE.NORM(alpha,stdev,size) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #VALUE! - occurs if any argument is non-numeric.
 
@@ -1628,15 +1624,15 @@ Remarks:
 
 Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img70.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img70.png)
+
 
 
 ### CHISQ.DIST
 
 The CHISQ.DIST function calculates the Probability Density Function or the Cumulative Distribution Function for the [chi-square distribution](http://en.wikipedia.org/wiki/Chi-square_distribution).
 
-Syntax:
+#### Syntax:
 
 CHISQ.DIST(x,degFreedom,cumulative) where:
 
@@ -1646,23 +1642,23 @@ CHISQ.DIST(x,degFreedom,cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #VALUE! - occurs if any argument is non-numeric.
 
 #NUM! - occurs if x is negative and if f degFreedom < 1 or degFreedom > 10^10.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img71.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img71.png)
+
 
 
 ### CHISQ.DIST.RT
 
 The CHISQ.DIST.RT function calculates the right-tailed probability of the [chi-square distribution](http://en.wikipedia.org/wiki/Chi-square_distribution).
 
-Syntax:
+#### Syntax:
 
 CHISQ.DIST.RT(x,degFreedom) where:
 
@@ -1671,7 +1667,7 @@ CHISQ.DIST.RT(x,degFreedom) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #VALUE! - occurs if either argument is non-numeric.
 
@@ -1679,17 +1675,17 @@ Remarks:
 
 #NUM! - occurs occurs if f degFreedom < 1 or degFreedom > 10^10.
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img72.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img72.png)
+
 
 
 ### F.DIST 
 
 The F.DIST function calculates the Probability Density Function or the Cumulative Distribution Function for the F Distribution.
 
-Syntax:
+#### Syntax:
 
 F.DIST(x,degFreedom1,degFreedom2,cumulative) where:
 
@@ -1700,23 +1696,23 @@ F.DIST(x,degFreedom1,degFreedom2,cumulative) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #VALUE! - occurs if any argument is non-numeric.
 
 #NUM! - occurs if x is negative, if degFreedom1< 1 and if degFreedom1< 1
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img73.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img73.png)
+
 
 
 ### F.DIST.RT
 
 The F.DIST.RT function calculates the F Probability Distribution, which measures the degree of diversity between two data sets.
 
-Syntax:
+#### Syntax:
 
 F.DIST.RT(x, degFreedom1, degFreedom2) where:
 
@@ -1726,7 +1722,7 @@ F.DIST.RT(x, degFreedom1, degFreedom2) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #VALUE! - occurs if any argument is non-numeric.
 
@@ -1734,35 +1730,35 @@ Remarks:
 
 Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img74.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img74.png)
+
 
 
 ### MODE.MULT
 
 The MODE.MULT function returns a vertical array of the statistical modes (the most frequently occurring values) within a list of supplied numbers.
 
-Syntax:
+#### Syntax:
 
 MODE.MULT(number1) where:
 
 * number1 is the first number argument for which you want to calculate the mode.
 
-Remarks:
+#### Remarks:
 
 #N/A - occurs if the data set contains no duplicate data points.
 
 Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img75.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img75.png)
+
 
 
 ### CHISQ.TEST
 
 The CHISQ.TEST function function performs the chi-square test on two supplied data sets (of observed and expected frequencies), and returns the probability that the differences between the sets are simply due to sampling error. 
 
-Syntax:
+#### Syntax:
 
 CHISQ.TEST(O_range,E_range) where:
 
@@ -1771,17 +1767,17 @@ CHISQ.TEST(O_range,E_range) where:
 
 
 
-Example:
+#### Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/11.png](Calculate-functions_images/Calculate-functions_img76.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/11.png](Calculate-functions_images/Calculate-functions_img76.png)
+
 
 
 ### CHISQ.INV
 
 The CHISQ.INV function returns the inverse of the left-tailed probability of the chi-squared distribution.
 
-Syntax:
+#### Syntax:
 
 CHISQ.INV(probability,degFreedom) where:
 
@@ -1790,7 +1786,7 @@ CHISQ.INV(probability,degFreedom) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if probability is is less than zero, if probability is greater than 1 and degFreedom is less than 1.
 
@@ -1798,15 +1794,15 @@ Remarks:
 
 Example:
 
-{{ '![C:/Users/ApoorvahR/Desktop/12.png](Calculate-functions_images/Calculate-functions_img77.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/12.png](Calculate-functions_images/Calculate-functions_img77.png)
+
 
 
 ### CHISQ.INV.RT
 
 The CHISQ.INV.RT function calculates the inverse of the right-tailed probability of the [chi-square distribution](http://en.wikipedia.org/wiki/Chi-square_distribution).
 
-Syntax:
+#### Syntax:
 
 CHISQ.INV.RT(probability, degFreedom) where:
 
@@ -1815,7 +1811,7 @@ CHISQ.INV.RT(probability, degFreedom) where:
 
 
 
-Remarks:
+#### Remarks:
 
 #NUM! - occurs if probability is is less than zero, if probability is greater than 1 and if degFreedom is less than 1.
 
@@ -1823,8 +1819,8 @@ Remarks:
 
 Example:
 
-{{ '![](Calculate-functions_images/Calculate-functions_img78.png)' | markdownify }}
-{:.image }
+![](Calculate-functions_images/Calculate-functions_img78.png)
+
 
 
 ### BINOM.DIST
@@ -1851,7 +1847,7 @@ Remarks:
 Example:
 
 {{ '![](Calculate-functions_images/Calculate-functions_img79.png)' | markdownify }}
-{:.image }
+
 
 
 ### RANK.AVG
@@ -1870,7 +1866,7 @@ RANK.AVG(number,ref) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/14.png](Calculate-functions_images/Calculate-functions_img80.png)' | markdownify }}
-{:.image }
+
 
 
 ### QUARTILE.EXC
@@ -1891,7 +1887,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/15.png](Calculate-functions_images/Calculate-functions_img81.png)' | markdownify }}
-{:.image }
+
 
 
 ### QUARTILE.INC
@@ -1912,7 +1908,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/16.png](Calculate-functions_images/Calculate-functions_img82.png)' | markdownify }}
-{:.image }
+
 
 
 ### NEGBINOM.DIST
@@ -1933,7 +1929,7 @@ NEGBINOM.DIST(F_number,S_number,S_probability,cumulative) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/39.png](Calculate-functions_images/Calculate-functions_img83.png)' | markdownify }}
-{:.image }
+
 
 
 ### POISSON.DIST
@@ -1957,7 +1953,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/17.png](Calculate-functions_images/Calculate-functions_img84.png)' | markdownify }}
-{:.image }
+
 
 
 ### ZTEST
@@ -1977,7 +1973,7 @@ ZTEST(a1,T_value,sigma) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/18.png](Calculate-functions_images/Calculate-functions_img85.png)' | markdownify }}
-{:.image }
+
 
 
 ### RANK.EQ
@@ -1996,7 +1992,7 @@ RANK.EQ( number, ref ) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/42.png](Calculate-functions_images/Calculate-functions_img86.png)' | markdownify }}
-{:.image }
+
 
 
 ### CHIDIST
@@ -2019,7 +2015,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/19.png](Calculate-functions_images/Calculate-functions_img87.png)' | markdownify }}
-{:.image }
+
 
 
 ## Engineering Functions
@@ -2046,7 +2042,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/20.png](Calculate-functions_images/Calculate-functions_img88.png)' | markdownify }}
-{:.image }
+
 
 
 ### DEC2OCT
@@ -2071,7 +2067,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/21.png](Calculate-functions_images/Calculate-functions_img89.png)' | markdownify }}
-{:.image }
+
 
 
 ### DEC2HEX
@@ -2094,7 +2090,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/22.png](Calculate-functions_images/Calculate-functions_img90.png)' | markdownify }}
-{:.image }
+
 
 
 ### BIN2DEC
@@ -2114,7 +2110,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/23.png](Calculate-functions_images/Calculate-functions_img91.png)' | markdownify }}
-{:.image }
+
 
 
 ### BIN2OCT
@@ -2133,7 +2129,7 @@ BIN2OCT(num, places) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/24.png](Calculate-functions_images/Calculate-functions_img92.png)' | markdownify }}
-{:.image }
+
 
 
 ### BIN2HEX
@@ -2158,7 +2154,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/25.png](Calculate-functions_images/Calculate-functions_img93.png)' | markdownify }}
-{:.image }
+
 
 
 ### HEX2BIN
@@ -2183,7 +2179,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/5.7.png](Calculate-functions_images/Calculate-functions_img94.png)' | markdownify }}
-{:.image }
+
 
 
 ### HEX2OCT
@@ -2208,7 +2204,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/26.png](Calculate-functions_images/Calculate-functions_img95.png)' | markdownify }}
-{:.image }
+
 
 
 ### HEX2DEC
@@ -2228,7 +2224,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/27.png](Calculate-functions_images/Calculate-functions_img96.png)' | markdownify }}
-{:.image }
+
 
 
 ### OCT2BIN
@@ -2253,7 +2249,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/28.png](Calculate-functions_images/Calculate-functions_img97.png)' | markdownify }}
-{:.image }
+
 
 
 ### OCT2HEX
@@ -2278,7 +2274,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/29.png](Calculate-functions_images/Calculate-functions_img98.png)' | markdownify }}
-{:.image }
+
 
 
 ### OCT2DEC
@@ -2298,7 +2294,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/30.png](Calculate-functions_images/Calculate-functions_img99.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMABS
@@ -2318,7 +2314,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/31.png](Calculate-functions_images/Calculate-functions_img100.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMAGINARY
@@ -2338,7 +2334,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/32.png](Calculate-functions_images/Calculate-functions_img101.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMREAL
@@ -2358,7 +2354,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/33.png](Calculate-functions_images/Calculate-functions_img102.png)' | markdownify }}
-{:.image }
+
 
 
 ### COMPLEX
@@ -2382,7 +2378,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/34.png](Calculate-functions_images/Calculate-functions_img103.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMSUM
@@ -2398,7 +2394,7 @@ IMSUM(inum1,inum2,...) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/35.png](Calculate-functions_images/Calculate-functions_img104.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMSUB
@@ -2414,7 +2410,7 @@ IMSUB(inumber1,inumber2) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/5.18.png](Calculate-functions_images/Calculate-functions_img105.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMPRODUCT
@@ -2433,7 +2429,7 @@ IMPRODUCT(inum1, inum2,... ) where:
 Example:
 
 {{ '![](Calculate-functions_images/Calculate-functions_img106.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMDIV
@@ -2452,7 +2448,7 @@ IMDIV(inum1, inum2) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/36.png](Calculate-functions_images/Calculate-functions_img107.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMCONJUGATE
@@ -2468,7 +2464,7 @@ IMCONJUGATE(inum) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/37.png](Calculate-functions_images/Calculate-functions_img108.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMSQRT
@@ -2484,7 +2480,7 @@ IMSQRT(inum) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/38.png](Calculate-functions_images/Calculate-functions_img109.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMARGUMENT
@@ -2500,7 +2496,7 @@ IMARGUMENT(inum) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/39.png](Calculate-functions_images/Calculate-functions_img110.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMSIN
@@ -2516,7 +2512,7 @@ IMSIN(inum) where:
 Example:
 
 {{ '![](Calculate-functions_images/Calculate-functions_img111.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMCSC
@@ -2540,7 +2536,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/40.png](Calculate-functions_images/Calculate-functions_img112.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMCOS
@@ -2556,7 +2552,7 @@ IMCOS(inum) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/41.png](Calculate-functions_images/Calculate-functions_img113.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMSEC
@@ -2578,7 +2574,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/42.png](Calculate-functions_images/Calculate-functions_img114.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMTAN
@@ -2600,7 +2596,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/43.png](Calculate-functions_images/Calculate-functions_img115.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMCOT
@@ -2622,7 +2618,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/44.png](Calculate-functions_images/Calculate-functions_img116.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMSINH
@@ -2644,7 +2640,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/45.png](Calculate-functions_images/Calculate-functions_img117.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMCSCH
@@ -2666,7 +2662,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/46.png](Calculate-functions_images/Calculate-functions_img118.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMCOSH
@@ -2688,7 +2684,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/47.png](Calculate-functions_images/Calculate-functions_img119.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMSECH
@@ -2710,7 +2706,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/48.png](Calculate-functions_images/Calculate-functions_img120.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMTANH
@@ -2732,7 +2728,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/49.png](Calculate-functions_images/Calculate-functions_img121.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMCOTH
@@ -2754,7 +2750,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/50.png](Calculate-functions_images/Calculate-functions_img122.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMLOG10
@@ -2774,7 +2770,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/51.png](Calculate-functions_images/Calculate-functions_img123.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMLOG2
@@ -2794,7 +2790,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/5.37.png](Calculate-functions_images/Calculate-functions_img124.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMLN
@@ -2814,7 +2810,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/53.png](Calculate-functions_images/Calculate-functions_img125.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMEXP
@@ -2834,7 +2830,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/54.png](Calculate-functions_images/Calculate-functions_img126.png)' | markdownify }}
-{:.image }
+
 
 
 ### IMPOWER
@@ -2859,7 +2855,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/55.png](Calculate-functions_images/Calculate-functions_img127.png)' | markdownify }}
-{:.image }
+
 
 
 ### GESTEP
@@ -2882,7 +2878,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/56.png](Calculate-functions_images/Calculate-functions_img128.png)' | markdownify }}
-{:.image }
+
 
 
 ### DELTA
@@ -2901,7 +2897,7 @@ DELTA(num1,num2) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/57.png](Calculate-functions_images/Calculate-functions_img129.png)' | markdownify }}
-{:.image }
+
 
 
 ### BITAND
@@ -2923,7 +2919,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/58.png](Calculate-functions_images/Calculate-functions_img130.png)' | markdownify }}
-{:.image }
+
 
 
 ### BITOR
@@ -2945,7 +2941,7 @@ Remarks:
 Example:
 
 {{ '![](Calculate-functions_images/Calculate-functions_img131.png)' | markdownify }}
-{:.image }
+
 
 
 ### BITXOR
@@ -2967,7 +2963,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/60.png](Calculate-functions_images/Calculate-functions_img132.png)' | markdownify }}
-{:.image }
+
 
 
 ### BITLSHIFT
@@ -2992,7 +2988,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/61.png](Calculate-functions_images/Calculate-functions_img133.png)' | markdownify }}
-{:.image }
+
 
 
 ### BITRSHIFT
@@ -3017,7 +3013,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/62.png](Calculate-functions_images/Calculate-functions_img134.png)' | markdownify }}
-{:.image }
+
 
 
 ### ERF
@@ -3042,7 +3038,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/63.png](Calculate-functions_images/Calculate-functions_img135.png)' | markdownify }}
-{:.image }
+
 
 
 ### ERF.PRECISE
@@ -3062,7 +3058,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/64.png](Calculate-functions_images/Calculate-functions_img136.png)' | markdownify }}
-{:.image }
+
 
 
 ### BESSELI
@@ -3087,7 +3083,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/65.png](Calculate-functions_images/Calculate-functions_img137.png)' | markdownify }}
-{:.image }
+
 
 
 ### BESSELJ
@@ -3112,7 +3108,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/66.png](Calculate-functions_images/Calculate-functions_img138.png)' | markdownify }}
-{:.image }
+
 
 
 ### BESSELY
@@ -3137,7 +3133,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/67.png](Calculate-functions_images/Calculate-functions_img139.png)' | markdownify }}
-{:.image }
+
 
 
 ### BESSELK
@@ -3162,7 +3158,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/68.png](Calculate-functions_images/Calculate-functions_img140.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -3190,7 +3186,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/69.png](Calculate-functions_images/Calculate-functions_img141.png)' | markdownify }}
-{:.image }
+
 
 
 ## Web Functions
@@ -3208,7 +3204,7 @@ ENCODEURL(name) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/6.1.png](Calculate-functions_images/Calculate-functions_img142.png)' | markdownify }}
-{:.image }
+
 
 
 ### FILTERXML
@@ -3231,7 +3227,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/6.2.png](Calculate-functions_images/Calculate-functions_img143.png)' | markdownify }}
-{:.image }
+
 
 
 ### WEBSERVICE
@@ -3251,7 +3247,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/6.3.png](Calculate-functions_images/Calculate-functions_img144.png)' | markdownify }}
-{:.image }
+
 
 
 ## Text Functions
@@ -3269,7 +3265,7 @@ ASC(text) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/70.png](Calculate-functions_images/Calculate-functions_img145.png)' | markdownify }}
-{:.image }
+
 
 
 ### CODE
@@ -3285,7 +3281,7 @@ CODE(name) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/71.png](Calculate-functions_images/Calculate-functions_img146.png)' | markdownify }}
-{:.image }
+
 
 
 ### FINDB
@@ -3309,7 +3305,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/72.png](Calculate-functions_images/Calculate-functions_img147.png)' | markdownify }}
-{:.image }
+
 
 
 ### JIS
@@ -3325,7 +3321,7 @@ JIS(name) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/7.4.png](Calculate-functions_images/Calculate-functions_img148.png)' | markdownify }}
-{:.image }
+
 
 
 ### LEFTB
@@ -3342,7 +3338,7 @@ LEFTB(text, bytes) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/7.5.png](Calculate-functions_images/Calculate-functions_img149.png)' | markdownify }}
-{:.image }
+
 
 
 ### LENB
@@ -3358,7 +3354,7 @@ LENB(name) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/74.png](Calculate-functions_images/Calculate-functions_img150.png)' | markdownify }}
-{:.image }
+
 
 
 ### MIDB
@@ -3378,7 +3374,7 @@ MIDB(text, startNum, numBytes) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/75.png](Calculate-functions_images/Calculate-functions_img151.png)' | markdownify }}
-{:.image }
+
 
 
 ### NUMBERVALUE
@@ -3398,7 +3394,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/76.png](Calculate-functions_images/Calculate-functions_img152.png)' | markdownify }}
-{:.image }
+
 
 
 ### PROPER
@@ -3414,7 +3410,7 @@ PROPER(text) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/77.png](Calculate-functions_images/Calculate-functions_img153.png)' | markdownify }}
-{:.image }
+
 
 
 ### REPLACE
@@ -3435,7 +3431,7 @@ REPLACE(oldText, startNum, numChars, newText) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/78.png](Calculate-functions_images/Calculate-functions_img154.png)' | markdownify }}
-{:.image }
+
 
 
 ### REPLACEB
@@ -3456,7 +3452,7 @@ REPLACEB(oldText, startNum, numBytes, newText) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/79.png](Calculate-functions_images/Calculate-functions_img155.png)' | markdownify }}
-{:.image }
+
 
 
 ### REPT
@@ -3479,7 +3475,7 @@ Blank text - occurs if number is zero.
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/80.png](Calculate-functions_images/Calculate-functions_img156.png)' | markdownify }}
-{:.image }
+
 
 
 ### RIGHTB
@@ -3498,7 +3494,7 @@ RIGHTB(string, num) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/7.13.png](Calculate-functions_images/Calculate-functions_img157.png)' | markdownify }}
-{:.image }
+
 
 
 ### SEARCHB
@@ -3522,7 +3518,7 @@ Remarks:
 Example: 
 
 {{ '![](Calculate-functions_images/Calculate-functions_img158.png)' | markdownify }}
-{:.image }
+
 
 
 ### UNICHAR
@@ -3544,7 +3540,7 @@ Remarks:
 Example:
 
 {{ '![](Calculate-functions_images/Calculate-functions_img159.png)' | markdownify }}
-{:.image }
+
 
 
 ### UNICODE
@@ -3564,7 +3560,7 @@ Remarks:
 Example:
 
 {{ '![](Calculate-functions_images/Calculate-functions_img160.png)' | markdownify }}
-{:.image }
+
 
 
 ## Lookup and Reference Functions
@@ -3582,7 +3578,7 @@ AREAS(reference) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/81.png](Calculate-functions_images/Calculate-functions_img161.png)' | markdownify }}
-{:.image }
+
 
 
 ### COLUMNS
@@ -3598,7 +3594,7 @@ COLUMNS( array ) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/82.png](Calculate-functions_images/Calculate-functions_img162.png)' | markdownify }}
-{:.image }
+
 
 
 ### HYPERLINK
@@ -3617,7 +3613,7 @@ HYPERLINK( linkLocation, friendlyName ) where
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/8.3.png](Calculate-functions_images/Calculate-functions_img163.png)' | markdownify }}
-{:.image }
+
 
 
 ### ROW
@@ -3631,7 +3627,7 @@ ROW( [reference] ) where,
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/83.png](Calculate-functions_images/Calculate-functions_img164.png)' | markdownify }}
-{:.image }
+
 
 
 ### ROWS
@@ -3647,7 +3643,7 @@ ROWS( array ) where:
 Example:
 
 {{ '![](Calculate-functions_images/Calculate-functions_img165.png)' | markdownify }}
-{:.image }
+
 
 
 ### SHEET
@@ -3671,7 +3667,7 @@ Example:
 
 
 {{ '![C:/Users/ApoorvahR/Desktop/8.6.png](Calculate-functions_images/Calculate-functions_img166.png)' | markdownify }}
-{:.image }
+
 
 
 ### SHEETS
@@ -3691,7 +3687,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/8.7.png](Calculate-functions_images/Calculate-functions_img167.png)' | markdownify }}
-{:.image }
+
 
 
 ### TRANSPOSE
@@ -3707,7 +3703,7 @@ TRANSPOSE( array ) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/93.png](Calculate-functions_images/Calculate-functions_img168.png)' | markdownify }}
-{:.image }
+
 
 
 ### FORMULATEXT
@@ -3737,7 +3733,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/8.9.png](Calculate-functions_images/Calculate-functions_img169.png)' | markdownify }}
-{:.image }
+
 
 
 ## Information Functions
@@ -3758,7 +3754,7 @@ CELL( infoType, reference ) where
 Example:
 
 {{ '![](Calculate-functions_images/Calculate-functions_img170.png)' | markdownify }}
-{:.image }
+
 
 
 ### INFO
@@ -3774,7 +3770,7 @@ Syntax:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/85.png](Calculate-functions_images/Calculate-functions_img171.png)' | markdownify }}
-{:.image }
+
 
 
 ### TYPE
@@ -3792,7 +3788,7 @@ Example:
 
 
 {{ '![C:/Users/ApoorvahR/Desktop/86.png](Calculate-functions_images/Calculate-functions_img172.png)' | markdownify }}
-{:.image }
+
 
 
 ### ISFORMULA
@@ -3814,7 +3810,7 @@ Example:
 
 
 {{ '![](Calculate-functions_images/Calculate-functions_img173.png)' | markdownify }}
-{:.image }
+
 
 
 ## Date and Time Functions
@@ -3841,7 +3837,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/10.1.png](Calculate-functions_images/Calculate-functions_img174.png)' | markdownify }}
-{:.image }
+
 
 
 ### EOMONTH
@@ -3868,7 +3864,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/10.2.png](Calculate-functions_images/Calculate-functions_img175.png)' | markdownify }}
-{:.image }
+
 
 
 ### NETWORKDAYS.INTL
@@ -3891,7 +3887,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/10.3.png](Calculate-functions_images/Calculate-functions_img176.png)' | markdownify }}
-{:.image }
+
 
 
 ### WEEKNUM
@@ -3918,7 +3914,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/87.png](Calculate-functions_images/Calculate-functions_img177.png)' | markdownify }}
-{:.image }
+
 
 
 ### WORKDAY.INTL
@@ -3949,7 +3945,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/88.png](Calculate-functions_images/Calculate-functions_img178.png)' | markdownify }}
-{:.image }
+
 
 
 ### YEARFRAC
@@ -3975,7 +3971,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/89.png](Calculate-functions_images/Calculate-functions_img179.png)' | markdownify }}
-{:.image }
+
 
 
 ### WORKDAY
@@ -4001,7 +3997,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/90.png](Calculate-functions_images/Calculate-functions_img180.png)' | markdownify }}
-{:.image }
+
 
 
 ### ISOWEEKNUM
@@ -4023,7 +4019,7 @@ Remarks:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/91.png](Calculate-functions_images/Calculate-functions_img181.png)' | markdownify }}
-{:.image }
+
 
 
 ###  DAYS
@@ -4039,6 +4035,6 @@ DAYS(endDate, startDate) where:
 Example:
 
 {{ '![C:/Users/ApoorvahR/Desktop/94.png](Calculate-functions_images/Calculate-functions_img182.png)' | markdownify }}
-{:.image }
+
 
 

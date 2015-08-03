@@ -9,19 +9,19 @@ documentation: ug
 
 # Header
 
-Header
+## Header
 
 The Header is displayed below the animation. The Header property can be used to get or set the content which indicates the information related to loading. 
 
-{{ '![C:/Users/ApoorvahR/Desktop/2.png](Header_images/Header_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/2.png](Header_images/Header_img1.png)
 
 
-Header Template
 
-Header template can be used to get or set the template that defines how the header section of the SfBusyIndicator[](http://msdn.microsoft.com/en-us/library/system.web.ui.webcontrols.repeater.aspx)control is displayed.
+## Header Template
 
-{{ '![C:/Users/ApoorvahR/Desktop/3.png](Header_images/Header_img2.png)' | markdownify }}
-{:.image }
+Header template can be used to get or set the template that defines how the header section of the SfBusyIndicator control is displayed.
+
+![C:/Users/ApoorvahR/Desktop/3.png](Header_images/Header_img2.png)
+
 
 

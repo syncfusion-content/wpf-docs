@@ -13,11 +13,11 @@ The Busy Indicator control includes over 20 built-in animations that can be disp
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/1.png](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/1.png](Overview_images/Overview_img1.png)
 
 
-Key Features
+
+## Key Features
 
 * IsBusy – The control will show the animation when this property is set.
 * Header – A user customized string that is displayed while showing animation.

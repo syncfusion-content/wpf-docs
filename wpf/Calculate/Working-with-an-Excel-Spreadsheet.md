@@ -29,21 +29,21 @@ The spreadsheet you are using is a car insurance calculator. It uses Names to ma
 
 
 {{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img1.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
 
 {{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img2.jpeg)' | markdownify }}
-{:.image }
+
 
 
 {{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img3.jpeg)' | markdownify }}
-{:.image }
+
 
 
 {{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img4.jpeg)' | markdownify }}
-{:.image }
+
 
 
 
@@ -53,7 +53,7 @@ This layout represents a general calculation design process which you can use fo
 For example, consider the below form which accepts input values from the user. Once the values are set, the user clicks a button on the form that puts these values into the inputs sheet and then retrieves the insurance costs from the Outputs sheet and displays it on the form.
 
 {{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img5.jpeg)' | markdownify }}
-{:.image }
+
 
 
 Before learning about the actual code used in this sample to access XLS files, you need to know about a couple of classes in Essential Calculate as well as the role that Essential XlsIO plays.

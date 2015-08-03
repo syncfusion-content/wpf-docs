@@ -7,9 +7,9 @@ control: Bullet Graph
 documentation: ug
 ---
 
-## Introduction
+# Introduction
 
-Key features
+## Key features
 
 1. Easy to use- SfBulletGraph is available in Visual Studio toolbox itself, you can easily drag and drop the control from toolbox.
 2. Data Binding Support - The control can be bound to your application data from a variety of data sources in the form of binding declaration or by setting its properties directly.
@@ -17,13 +17,13 @@ Key features
 
 
 
-SfBulletGraph Elements
+## SfBulletGraph Elements
 
-{{ '![](Introduction_images/Introduction_img1.png)' | markdownify }}
-{:.image }
+![](Introduction_images/Introduction_img1.png)
 
 
-Bullet Graphs types
+
+## Bullet Graphs types
 
 The Bullet Graph types can be differed by its orientation of the control, the control direction may be horizontal or vertical.
 

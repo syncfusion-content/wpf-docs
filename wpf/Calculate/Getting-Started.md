@@ -16,7 +16,7 @@ This section covers information on the following topics.
 The following illustration shows the Class Diagram for Essential Calculate.
 
 {{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
-{:.image }
+
 
 
 ## Create Platform Application
@@ -28,7 +28,7 @@ WPF Application
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog box, select WPF Application template, name the project and click OK. 
 
 {{ '![](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
-{:.image }
+
 
 
 A new WPF application is created.
@@ -194,7 +194,7 @@ The step-by-step procedure to create a simple console application is as follows:
 
 
 {{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -332,7 +332,7 @@ End Namespace
 
 
 {{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+
 
 
 ### WPF Application Using Variables and CalcQuickBase
@@ -346,7 +346,7 @@ In this section, you can learn how to create a WPF Application that allows you t
 
 
 {{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -356,7 +356,7 @@ In this section, you can learn how to create a WPF Application that allows you t
 
 
 {{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -520,7 +520,7 @@ End Sub
 
 
 {{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -542,7 +542,7 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
 
 {{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+
 
 
 2. As you drop the controls on the form, accept the default names so that you can copy and paste the code snippets later in this lesson. 
@@ -552,7 +552,7 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
 
 {{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+
 
 
 You now have your basic form. Before leaving this form in the designer, double click both buttons to add the button handler code stubs to your Form1 code. You can add the code to these stubs later.
@@ -562,7 +562,7 @@ In order to add arbitrary calculation support to an object, that object must imp
 The first step is to add the class. To do so, right-click your project in the Solution Explorer window, select Add, and select Add Class.
 
 {{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -572,7 +572,7 @@ The first step is to add the class. To do so, right-click your project in the So
 
 
 {{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -942,7 +942,7 @@ End Sub
 
 
 {{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
-{:.image }
+
 
 
 Using Visual Studio 2003 with C#, add a colon after the class name in the class declaration and type ICalcData. Pressing the tab key adds the method stubs. Given below is a picture showing this technique.
@@ -950,7 +950,7 @@ Using Visual Studio 2003 with C#, add a colon after the class name in the class 
 If you are using VB.NET, then you can add the ICalcData stubs using the drop-down lists at the top of the edit window in Visual Studio. In the left drop-down, select the ICalcData interface as shown below.
 
 {{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -960,7 +960,7 @@ Then, in the right drop-down, click each of the four items listed to add the pro
 
 
 {{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1614,7 +1614,7 @@ Here is a typical display that you might see if you run the application at this 
 
 
 {{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
-{:.image }
+
 
 
 
@@ -1720,6 +1720,6 @@ Here is the code you must use. It allows you to specify the row, column and valu
 On the previous screen, if you click the Set button, it places 123 in cell 0,0. Notice the calculations update automatically to reflect the new value.
 
 {{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
-{:.image }
+
 
 

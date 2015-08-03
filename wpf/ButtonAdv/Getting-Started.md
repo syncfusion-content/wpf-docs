@@ -13,8 +13,8 @@ This section guides you on getting started with the ButtonAdv control. It descri
 
 ## Control Structure
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 _Control Structure_
@@ -24,11 +24,11 @@ _Control Structure_
 The ButtonAdv control is available in the following assembly:
 
 *  Syncfusion.Shared.WPF
-### Setting Label
+## Setting Label
 
 
 The following code explains how to declare the ButtonAdv control using XAML.
-
+{% highlight html %}
 [XAML]
 
 <sync:ButtonAdv Label="Hello World"/>
@@ -36,20 +36,21 @@ The following code explains how to declare the ButtonAdv control using XAML.
 
 
 The ButtonAdv control can be created using the C# code as follows:
-
+{% endhighlight %}
+{% highlight c# %}
 [C#]
 
 ButtonAdv button = new ButtonAdv()
 
 button.Label = "Hello World";
 
+{% endhighlight  %}
+
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
 
-
-### Set Size Mode
+## Set Size Mode
 
 The size mode of the ButtonAdv control can be easily modified by using the property SizeMode. The SizeMode property contains the following values:
 
@@ -57,69 +58,63 @@ The size mode of the ButtonAdv control can be easily modified by using the prope
 * Normal
 * Large
 
-Small Mode
+## Small Mode
 
 When the SizeMode is set to Small, the icon of the ButtonAdv control is displayed without the label.
 
 Use the following code example to set the SizeMode to Small:
 
-<table>
-<tr>
-<td>
-[XAML]<sync:ButtonAdv SizeMode="Small" Label="Hello World"/></td></tr>
-<tr>
-<td>
-[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;</td></tr>
-</table>
+{% highlight html %}
+[XAML]<sync:ButtonAdv SizeMode="Small" Label="Hello World"/>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;
+{% endhighlight  %}
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
 
-Normal Mode
+
+## Normal Mode
 
 The ButtonAdv control retains the default appearance, when the SizeMode is set to Normal.
 
 Use the following code example to set the SizeMode to Normal:
 
-<table>
-<tr>
-<td>
-[XAML]<sync:ButtonAdv SizeMode="Normal" Label="Hello World"/></td></tr>
-<tr>
-<td>
-[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;</td></tr>
-</table>
+{% highlight html %}
+[XAML]<sync:ButtonAdv SizeMode="Normal" Label="Hello World"/>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;
+
+{% endhighlight %}
+
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
 
-
-Large Mode
+## Large Mode
 
 When the SizeMode is set to Large, the ButtonAdv control is displayed with large icon and provides multiline support.
 
 Use the following code example to set the SizeMode to Large:
 
-<table>
-<tr>
-<td>
-[XAML]<sync:ButtonAdv SizeMode="Large" Label="Hello World"/></td></tr>
-<tr>
-<td>
-[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large;</td></tr>
-</table>
+{% highlight html %}
+[XAML]<sync:ButtonAdv SizeMode="Large" Label="Hello World"/>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large;
+{% endhighlight  %}
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
 
 
-### Setting Image
+
+## Setting Image
 
 The image displayed on the control can be set using the following two properties:
 
@@ -129,86 +124,77 @@ The image displayed on the control can be set using the following two properties
 
 
 The SmallIcon property can be set as follows:
+{% highlight html %}
+[XAML]<sync:ButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/>
+{% endhighlight %}
+{% highlight c# %}
+[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
-<table>
-<tr>
-<td>
-[XAML]<sync:ButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/></td></tr>
-<tr>
-<td>
-[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
-</table>
+{% endhighlight  %}
 
+![](Getting-Started_images/Getting-Started_img6.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
 
 
 
 
 The SmallIcon property can be set even when the SizeMode is Normal:
 
-<table>
-<tr>
-<td>
-[XAML]<sync:ButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/></td></tr>
-<tr>
-<td>
-[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
-</table>
+{% highlight html %}
+[XAML]<sync:ButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/>
+{% endhighlight %}
+{% highlight c# %}
+[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
+{% endhighlight  %}
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 
 
 The LargeIcon property can be set as follows:
 
-<table>
-<tr>
-<td>
-[XAML]<sync:ButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/></td></tr>
-<tr>
-<td>
+{% highlight html %}
+[XAML]<sync:ButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/>
+{% endhighlight  %}
+{% highlight c# %}
 [C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large;button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
-</table>
+{% endhighlight %}
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
 
 
-### Set Icon Width and Height
+
+## Set Icon Width and Height
 
 The Iconsize can be set using the following two properties:
 
 * IconWidth
 * IconHeight
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
+
+![](Getting-Started_images/Getting-Started_img10.png)
+
 
 
 
 
 The IconWidth and IconHeight can be set as follows:
 
-<table>
-<tr>
-<td>
-[XAML]  <sync:ButtonAdv   SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Hello World"  SmallIcon ="female.png"  /></td></tr>
-<tr>
-<td>
-[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.IconWidth=20;button.IconHeight=20;</td></tr>
-</table>
+{% highlight html %}
+[XAML]  <sync:ButtonAdv   SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Hello World"  SmallIcon ="female.png"  />
+{% endhighlight %}
+{% highlight c# %}
+[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.IconWidth=20;button.IconHeight=20;
+{% endhighlight %}
 
 
 ## ButtonAdv Members
@@ -219,13 +205,13 @@ _Properties table_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Type</td><td>
-Value it accepts</td><td>
-Description</td><td>
-Default Value</td><td>
-Reference Link</td></tr>
+<th>
+Name</th><th>
+Type</th><th>
+Value it accepts</th><th>
+Description</th><th>
+Default Value</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 Label</td><td>
@@ -323,12 +309,12 @@ _Events table_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Event Type</td><td>
-Event Args Parameter</td><td>
-Description</td><td>
-Reference Link</td></tr>
+<th>
+Name</th><th>
+Event Type</th><th>
+Event Args Parameter</th><th>
+Description</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 Click</td><td>
