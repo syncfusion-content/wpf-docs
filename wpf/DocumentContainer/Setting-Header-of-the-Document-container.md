@@ -13,7 +13,7 @@ Using the Header property, user can set the header for the Document Container el
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -31,9 +31,9 @@ Using the Header property, user can set the header for the Document Container el
 
 </syncfusion:DocumentContainer>
 
+{% endhighlight %}
 
+![](Setting-Header-of-the-Document-container_images/Setting-Header-of-the-Document-container_img1.jpeg)
 
-{{ '![](Setting-Header-of-the-Document-container_images/Setting-Header-of-the-Document-container_img1.jpeg)' | markdownify }}
-{:.image }
 
 

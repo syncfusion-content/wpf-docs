@@ -13,13 +13,13 @@ SfChart provide support for Vertical Charts. You can use this to change the posi
 
 The following APIs are used to change axis positions.
 
-_Vertical Charts_
+Vertical Charts
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 IsTransposed</td><td>
@@ -35,7 +35,7 @@ The following code example illustrates the Vertical Chart feature.
 
 
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfChart   Height="500" Width="650">
 
@@ -91,11 +91,11 @@ The following code example illustrates the Vertical Chart feature.
 
         </syncfusion:SfChart>
 
-
+{% endhighlight %}
 
 The following screenshot illustrates Vertical Chart.
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-82.png](Vertical-Charts_images/Vertical-Charts_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/wpf/sshot-82.png](Vertical-Charts_images/Vertical-Charts_img1.png)
+
 
 

@@ -19,13 +19,13 @@ NumericalAxis is used to plot numericals to the chart. You can set NumericalAxis
 
 The following APIs are used to customize NumericalAxis.
 
-_Properties_
+Properties
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Interval</td><td>
@@ -47,7 +47,8 @@ Gets or sets the NumericalPadding that specifies how to render the segments in c
 StartRangeFromZero</td><td>
 Gets or sets the bool that represents a value to enable start the range from zero. </td></tr>
 </table>
- [XAML]
+ 
+{% highlight xml %}
 
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
@@ -77,10 +78,10 @@ Gets or sets the bool that represents a value to enable start the range from ze
 
         </syncfusion:SfChart>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/chart3.png](Axis_images/Axis_img1.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/chart3.png](Axis_images/Axis_img1.png)' | markdownify }}
-{:.image }
 
 
 ## CategoryAxis
@@ -89,13 +90,13 @@ CategoryAxis is an index based axis that plots values based on the index of the 
 
 The following APIs are used in CategoryAxis.
 
-_CategoryAxis_
+CategoryAxis
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Interval</td><td>
@@ -107,7 +108,7 @@ Gets or sets the LabelPlacement that represents the position of the label in the
 </table>
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -145,10 +146,10 @@ Gets or sets the LabelPlacement that represents the position of the label in the
 
             </syncfusion:SfChart>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/chart3.png](Axis_images/Axis_img2.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/chart3.png](Axis_images/Axis_img2.png)' | markdownify }}
-{:.image }
 
 
 ## DateTimeAxis
@@ -157,13 +158,13 @@ DateTimeAxis is used to plot DateTime values. The DateTimeAxis is widely used to
 
 The following APIs are used for customizing DateTimeAxis.
 
-_DateTimeAxis_
+DateTimeAxis
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Minimum</td><td>
@@ -201,7 +202,8 @@ Gets or sets the double value that represents the close working time of a day.</
 WorkingDays</td><td>
 Gets or sets the double value that represents the working days of a week.</td></tr>
 </table>
-DateTimeIntervalType
+
+###DateTimeIntervalType
 
 The DateTime interval corresponds to the type specified in the IntervalType property.
 
@@ -220,7 +222,7 @@ For instance, if the Interval is set as 2 and IntervalType is set as Days, the l
 
 The default IntervalType of a DateTimeAxis is Auto. It calculates the type automatically and the interval, accordingly.
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -230,11 +232,11 @@ The default IntervalType of a DateTimeAxis is Auto. It calculates the type autom
 
             </syncfusion:SfChart.PrimaryAxis>
 
-
+{% endhighlight %}
 
 The following code example and screenshot are for DateTimeAxis.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -270,23 +272,23 @@ The following code example and screenshot are for DateTimeAxis.
 
         </syncfusion:SfChart>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/sshot-3.png](Axis_images/Axis_img3.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-3.png](Axis_images/Axis_img3.png)' | markdownify }}
-{:.image }
 
 
 ## DateTimeCategoryAxis
 
 DateTimeCategoryAxis is a special type of axis used mainly with financial series. All the data points are plotted with equal spaces, similar to CategoryAxis, thereby removing space for missing dates. Intervals and range for the axis are calculated similar to DateTimeAxis. There are no visual gaps between points, even when the difference between two points is more than a year.
 
-_DateTimeCategoryAxis_
+DateTimeCategoryAxis
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Interval</td><td>
@@ -298,7 +300,7 @@ Gets or sets the DateTimeIntervalType that represents the type of the interval.<
 </table>
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -336,10 +338,10 @@ Gets or sets the DateTimeIntervalType that represents the type of the interval.<
 
         </syncfusion:SfChart>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/sshot-3.png](Axis_images/Axis_img4.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-3.png](Axis_images/Axis_img4.png)' | markdownify }}
-{:.image }
 
 
 ## TimeSpanAxis
@@ -348,13 +350,13 @@ TimeSpanAxis is used to plot the time span values in the PrimaryAxis. TimeSpanAx
 
 The following APIs are used in TimeSpanAxis.
 
-_TimeSpanAxis_
+TimeSpanAxis
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Interval</td><td>
@@ -370,7 +372,7 @@ Gets or sets the timespan value that represents the maximum value for the Axis. 
 </table>
 
 
-[XAML]
+{% highlight xml %}
 
  <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
@@ -402,10 +404,10 @@ Gets or sets the timespan value that represents the maximum value for the Axis. 
 
         </syncfusion:SfChart>
 
+{% endhighlight %}
 
+![](Axis_images/Axis_img5.png)
 
-{{ '![](Axis_images/Axis_img5.png)' | markdownify }}
-{:.image }
 
 
 ## LogarithmicAxis
@@ -414,13 +416,13 @@ LogarithmicAxis is used to plot the logarithmic scale for the chart. In order to
 
 The following APIs are used to customize the LogarithmicAxis.
 
-_LogarithmicAxis_
+LogarithmicAxis
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Interval</td><td>
@@ -440,7 +442,7 @@ Gets or sets the double value that represents the logarithmic base value of the 
 </table>
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -476,14 +478,14 @@ Gets or sets the double value that represents the logarithmic base value of the 
 
         </syncfusion:SfChart>
 
+{% endhighlight %}
 
-
-> _Note: Logarithmic Axis does not support zero or negative values._
+Note: Logarithmic Axis does not support zero or negative values._
 
 The following screenshot illustrates the SfChart with LogarithmicAxis.
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-5.png](Axis_images/Axis_img6.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/wpf/sshot-5.png](Axis_images/Axis_img6.png)
+
 
 
 ## Multiple Axes
@@ -492,8 +494,7 @@ SfChart provides a way to arrange multiple series inside the same chart area, gi
 
 By default, all the series are plotted based on Primary and Secondary Axis. You can add more axes by adding additional axis to the series. There are two properties XAxis and YAxis in all the series, except Accumulation Series.
 
- [XAML]
-
+{% highlight xml %}
 
 
  <syncfusion:ColumnSeries Label="2010" 
@@ -506,7 +507,7 @@ By default, all the series are plotted based on Primary and Secondary Axis. You 
 
      Interior="Green"
 
-     >
+     
 
             <syncfusion:ColumnSeries.XAxis>
 
@@ -543,24 +544,24 @@ By default, all the series are plotted based on Primary and Secondary Axis. You 
     />
 
 
-
+{% endhighlight %}
 
 
 The following screenshot illustrates SfChart with multiple axes.
 
-{{ '![C:/Users/rachel/Desktop/snaps/6.png](Axis_images/Axis_img7.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/snaps/6.png](Axis_images/Axis_img7.png)
 
 
-> _Note: The first series is plotting based on additional X & Y axis and second series (or remaining series) is plotting against the Primary and Secondary axis._
 
-Axis Positioning
+Note: The first series is plotting based on additional X & Y axis and second series (or remaining series) is plotting against the Primary and Secondary axis.
+
+###Axis Positioning
 
 By default, the x-axis is arranged horizontally at the bottom of the chart and the y-axis is arranged vertically on the left-side of the chart. You can change the alignment of the axes by setting OpposedPosition to True. It arranges the x-axis at the top and the y-axis on the right-side of the chart. 
 
 The following is the code example for setting the OpposedPosition property.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -577,18 +578,20 @@ The following is the code example for setting the OpposedPosition property.
             <syncfusion:NumericalAxis Header="Additional Y Axis" OpposedPosition="True"/>
 
         </syncfusion:ColumnSeries.YAxis>
+		
+		{% endhighlight %}
 
 The following is a screenshot demonstrating y-axis of a chart arranged in OpposedPosition.
 
-{{ '![C:/Users/rachel/Desktop/snaps/7.png](Axis_images/Axis_img8.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/snaps/7.png](Axis_images/Axis_img8.png)
+
 
 
 ## Inversed Axis
 
 This feature is used to reverse chart plotting inverse the axis scaling.
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -604,25 +607,25 @@ This feature is used to reverse chart plotting inverse the axis scaling.
 
             </syncfusion:SfChart.SecondaryAxis>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/snaps/8.png](Axis_images/Axis_img9.png)
 
-{{ '![C:/Users/rachel/Desktop/snaps/8.png](Axis_images/Axis_img9.png)' | markdownify }}
-{:.image }
 
 
 ## Axis range and Interval
 
 ChartAxis calculates the range and intervals automatically based on the values of series data points. You can also explicitly specify the range and interval using the Minimum, Maximum and Interval properties. 
 
-> _Tip: You cannot specify range for CategoryAxis instead you can use ZoomFactor and ZoomPosition._
+Tip: You cannot specify range for CategoryAxis instead you can use ZoomFactor and ZoomPosition.
 
 
 
-> _Note: You can force the NumericalAxis to start range from zero by enabling StartRangeFromZero. The following is the code example for setting the ChartAxis properties._
+Note: You can force the NumericalAxis to start range from zero by enabling StartRangeFromZero. The following is the code example for setting the ChartAxis properties.
 
  The following is the code sample for setting the ChartAxis properties:
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfChart.PrimaryAxis>
 
@@ -637,8 +640,9 @@ ChartAxis calculates the range and intervals automatically based on the values o
                 <syncfusion:NumericalAxis FontSize="14"/>
 
             </syncfusion:SfChart.SecondaryAxis>
+{% endhighlight %}
 
-Range Padding
+###Range Padding
 
 The NumericalAxis and DateTimeAxis have a RangePadding property that can be used to add padding to the range of a chart's axes.
 
@@ -653,41 +657,41 @@ The following types are available for NumericalAxis:
 
 By default, the default RangePadding value for PrimaryAxis is Auto and for SecondaryAxis, the default value is Round.
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-109.png](Axis_images/Axis_img10.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/wpf/sshot-109.png](Axis_images/Axis_img10.png)
+
 
 
 The following screenshot demonstrates RangePadding as None, where no padding is applied for the axis.
 
-{{ '![](Axis_images/Axis_img11.png)' | markdownify }}
-{:.image }
+![](Axis_images/Axis_img11.png)
+
 
 
 Normal RangePadding for a NumericalAxis is used mostly for the y-axis to have padding based on the Range calculation.
 
 The following screenshot illustrates a chart’s y-axis with RangePadding set to Normal.
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-11.png](Axis_images/Axis_img12.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/wpf/sshot-11.png](Axis_images/Axis_img12.png)
+
 
 
 Round RangePadding for a NumericalAxis rounds the range of the chart axis to the nearest possible value.
 
 The following screenshot demonstrates a chart’s x-axis with RangePadding set to Round.
 
-{{ '![](Axis_images/Axis_img13.png)' | markdownify }}
-{:.image }
+![](Axis_images/Axis_img13.png)
+
 
 
 If RangePadding for NumericalAxis is set to Additional, the interval of the axis is added as padding.
 
 The following screenshot demonstrates a chart’s x-axis with RangePadding set to Additional.
 
-{{ '![](Axis_images/Axis_img14.png)' | markdownify }}
-{:.image }
+![](Axis_images/Axis_img14.png)
 
 
-DateTimeAxis RangePadding
+
+###DateTimeAxis RangePadding
 
 The RangePadding types available in the DateTimeAxis are: 
 
@@ -699,25 +703,25 @@ By default, the RangePadding for a DateTimeAxis is None.
 
 The following screenshot demonstrates a chart’s x-axis with RangePadding set to None. 
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-9.png](Axis_images/Axis_img15.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/wpf/sshot-9.png](Axis_images/Axis_img15.png)
+
 
 
 When RangePadding for DateTimeAxis is set to Additional, the DateTime interval of the axis is added as padding, as shown in the following screenshot.
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-10.png](Axis_images/Axis_img16.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/wpf/sshot-10.png](Axis_images/Axis_img16.png)
+
 
 
 When RangePadding for DateTimeAxis is set to Round, the range of the chart axis is rounded off to the nearest possible DateTime value, as shown in the following screenshot.
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-9.png](Axis_images/Axis_img17.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/wpf/sshot-9.png](Axis_images/Axis_img17.png)
+
 
 
 ## Positioning axis labels
 
-Label Placement
+###Label Placement
 
 The CategoryAxis includes the LabelPlacement property, used to set the labels of the axis between the tick lines or on the tick lines of the category axis. By default the LabelPlacement value for the CategoryAxis is OnTicks.
 
@@ -728,7 +732,7 @@ There are two types of LabelPlacement:
 
 The following code example and screenshot shows LabelPlacement set to OnTicks.
 
-[XAML]
+{% highlight xml %}
 
   <syncfusion:SfChart.PrimaryAxis>
 
@@ -738,15 +742,15 @@ The following code example and screenshot shows LabelPlacement set to OnTicks.
 
  </syncfusion:SfChart.PrimaryAxis>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/sshot-15.png](Axis_images/Axis_img18.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-15.png](Axis_images/Axis_img18.png)' | markdownify }}
-{:.image }
 
 
 The following code example and screenshot shows LabelPlacement set to BetweenTicks.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -759,20 +763,20 @@ The following code example and screenshot shows LabelPlacement set to BetweenTic
     </syncfusion:SfChart.PrimaryAxis>
 
 
+{% endhighlight %}
+
+
+![C:/Users/rachel/Desktop/wpf/sshot-16.png](Axis_images/Axis_img19.png)
 
 
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-16.png](Axis_images/Axis_img19.png)' | markdownify }}
-{:.image }
-
-
-Label Position 
+###Label Position 
 
 The LabelsPosition property is used to position the axis label either inside or outside the chart plotting area.
 
 The following code example and screenshot illustrate the use of LabelsPosition.
 
-[XAML]
+{% highlight xml %}
 
   <syncfusion:SfChart.PrimaryAxis>
 
@@ -782,13 +786,13 @@ The following code example and screenshot illustrate the use of LabelsPosition.
 
     </syncfusion:SfChart.PrimaryAxis>
 
+{% endhighlight %}
+
+![C:/Users/rachel/Desktop/wpf/sshot-17.png](Axis_images/Axis_img20.png)
 
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-17.png](Axis_images/Axis_img20.png)' | markdownify }}
-{:.image }
 
-
-[XAML]
+{% highlight xml %}
 
   <syncfusion:SfChart.PrimaryAxis>
 
@@ -797,14 +801,14 @@ The following code example and screenshot illustrate the use of LabelsPosition.
            FontSize="16"  />
 
     </syncfusion:SfChart.PrimaryAxis>
+{% endhighlight %}
+
+
+![C:/Users/rachel/Desktop/wpf/sshot-18.png](Axis_images/Axis_img21.png)
 
 
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-18.png](Axis_images/Axis_img21.png)' | markdownify }}
-{:.image }
-
-
-Positioning Edge Labels
+###Positioning Edge Labels
 
 SfChart provides support to customize the edge labels of the axis to adjust its position using the EdgeLabelDrawingMode property. 
 
@@ -819,7 +823,7 @@ The following are the customizing options in EdgeLabelDrawingMode.
 
 The following code example and screenshot show EdgeLabelsDrawingMode set to Center.
 
-[XAML]
+{% highlight xml %}
 
   <syncfusion:SfChart.PrimaryAxis>
 
@@ -827,15 +831,15 @@ The following code example and screenshot show EdgeLabelsDrawingMode set to Cent
 
     </syncfusion:SfChart.PrimaryAxis>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/sshot-19.png](Axis_images/Axis_img22.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-19.png](Axis_images/Axis_img22.png)' | markdownify }}
-{:.image }
 
 
 The following code example and screenshot shows EdgeLabelsDrawingMode set to Fit.
 
-[XAML]
+{% highlight xml %}
 
   <syncfusion:SfChart.PrimaryAxis>
 
@@ -843,15 +847,15 @@ The following code example and screenshot shows EdgeLabelsDrawingMode set to Fit
 
     </syncfusion:SfChart.PrimaryAxis>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/sshot-20.png](Axis_images/Axis_img23.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-20.png](Axis_images/Axis_img23.png)' | markdownify }}
-{:.image }
 
 
 The following code example and screenshot shows EdgeLabelDrawingMode set to Hide.
 
-[XAML]
+{% highlight xml %}
 
   <syncfusion:SfChart.PrimaryAxis>
 
@@ -859,15 +863,15 @@ The following code example and screenshot shows EdgeLabelDrawingMode set to Hide
 
     </syncfusion:SfChart.PrimaryAxis>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/sshot-21.png](Axis_images/Axis_img24.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-21.png](Axis_images/Axis_img24.png)' | markdownify }}
-{:.image }
 
 
 The following code example and screenshot shows EdgeLabelsDrawingMode set to Shift.
 
-[XAML]
+{% highlight xml %}
 
   <syncfusion:SfChart.PrimaryAxis>
 
@@ -875,10 +879,10 @@ The following code example and screenshot shows EdgeLabelsDrawingMode set to Shi
 
     </syncfusion:SfChart.PrimaryAxis>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/sshot-22.png](Axis_images/Axis_img25.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-22.png](Axis_images/Axis_img25.png)' | markdownify }}
-{:.image }
 
 
 ## Smart Labels
@@ -895,7 +899,7 @@ The following are the options for intersecting action.
 
 The following code example and screenshot shows LabelsIntersectAction set to None.
 
-[XAML]
+{% highlight xml %}
 
   <syncfusion:SfChart.PrimaryAxis>
 
@@ -905,15 +909,15 @@ The following code example and screenshot shows LabelsIntersectAction set to Non
 
     </syncfusion:SfChart.PrimaryAxis>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/sshot-23.png](Axis_images/Axis_img26.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-23.png](Axis_images/Axis_img26.png)' | markdownify }}
-{:.image }
 
 
 The following code example and screenshot shows LabelsIntersectAction set to Hide.
 
-[XAML]
+{% highlight xml %}
 
   <syncfusion:SfChart.PrimaryAxis>
 
@@ -923,15 +927,15 @@ The following code example and screenshot shows LabelsIntersectAction set to Hid
 
     </syncfusion:SfChart.PrimaryAxis>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/sshot-24.png](Axis_images/Axis_img27.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-24.png](Axis_images/Axis_img27.png)' | markdownify }}
-{:.image }
 
 
 The following code example and screenshot show LabelsIntersectAction set to MultipleRows.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -943,12 +947,12 @@ The following code example and screenshot show LabelsIntersectAction set to Mult
 
     </syncfusion:SfChart.PrimaryAxis>
 
+{% endhighlight %}
 
 
 
+![C:/Users/rachel/Desktop/wpf/sshot-25.png](Axis_images/Axis_img28.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-25.png](Axis_images/Axis_img28.png)' | markdownify }}
-{:.image }
 
 
 ## Add units to labels
@@ -957,7 +961,7 @@ You can customize the axis label to display its measuring units by adding a pref
 
 The following code example and screenshot demonstrate the usage of PrefixLabelTemplate.
 
-[XAML]
+{% highlight xml %}
 
   <DataTemplate x:Key="yPrefix">
 
@@ -971,15 +975,15 @@ The following code example and screenshot demonstrate the usage of PrefixLabelTe
 
 </syncfusion:SfChart.SecondaryAxis>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/sshot-26.png](Axis_images/Axis_img29.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-26.png](Axis_images/Axis_img29.png)' | markdownify }}
-{:.image }
 
 
 The following code example and screenshot demonstrate the usage of PostfixLabelTemplate.
 
-[XAML]
+{% highlight xml %}
 
   <DataTemplate x:Key="yPostfix">
 
@@ -993,17 +997,17 @@ The following code example and screenshot demonstrate the usage of PostfixLabelT
 
 </chart:SfChart.SecondaryAxis>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/sshot-27.png](Axis_images/Axis_img30.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-27.png](Axis_images/Axis_img30.png)' | markdownify }}
-{:.image }
 
 
 ## Formatting axis labels
 
 SfChart provides the LabelFormat property for defining the custom formatting for the axis labels. This property supports all standard formatting type of numerical and date time values.
 
-[XAML#]
+{% highlight xml %}
 
  <syncfusion:SfChart.PrimaryAxis>
 
@@ -1019,23 +1023,23 @@ SfChart provides the LabelFormat property for defining the custom formatting for
 
 </syncfusion:SfChart.SecondaryAxis>
 
+{% endhighlight %}
 
+![](Axis_images/Axis_img31.png)
 
-{{ '![](Axis_images/Axis_img31.png)' | markdownify }}
-{:.image }
 
 
 ## Styling Header and Labels
 
 SfChart provides support to customize the axis header and label. The following APIs are used to customize the header and label.
 
-_HeaderStyle and LabelStyle_
+HeaderStyle and LabelStyle
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 HeaderStyle</td><td>
@@ -1047,7 +1051,7 @@ Gets or sets the style for the axis labels. The label’s Foreground, FontSize a
 </table>
 
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfChart Height="250" Width="500">
 
@@ -1082,16 +1086,16 @@ Gets or sets the style for the axis labels. The label’s Foreground, FontSize a
             <syncfusion:LineSeries XBindingPath="City" YBindingPath="Year1950" ItemsSource="{Binding PopulationPercent}"></syncfusion:LineSeries>
 
         </syncfusion:SfChart>
-
+{% endhighlight %}
 ## GridLines and TickLines 
 
-GridLines
+###GridLines
 
 By default, gridlines are automatically added to the ChartAxis in its defined intervals. SfChart supports customization of gridline. You can control the visibility of the gridlines using the ShowGridLines property. 
 
 The following code example and screenshot show ShowGridLines set to False.
 
-[XAML]
+{% highlight xml %}
 
   <syncfusion:SfChart.PrimaryAxis>
 
@@ -1101,19 +1105,19 @@ The following code example and screenshot show ShowGridLines set to False.
 
     </syncfusion:SfChart.PrimaryAxis>
 
+{% endhighlight %}
+
+![C:/Users/rachel/Desktop/wpf/sshot-112.png](Axis_images/Axis_img32.png)
 
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-112.png](Axis_images/Axis_img32.png)' | markdownify }}
-{:.image }
 
-
-Ticklines
+###Ticklines
 
 Ticklines are small markers extending from the gridlines, used to indicate the axis scaling. Tickline can be positioned either inside or outside of the axis line.
 
 The following code example and screenshot illustrate major and small ticklines set to Inside.
 
-[XAML]
+{% highlight xml %}
 
    <syncfusion:SfChart.PrimaryAxis>
 
@@ -1121,15 +1125,15 @@ The following code example and screenshot illustrate major and small ticklines s
 
             </syncfusion:SfChart.PrimaryAxis>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/sshot-28.png](Axis_images/Axis_img33.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-28.png](Axis_images/Axis_img33.png)' | markdownify }}
-{:.image }
 
 
 You can customize the appearance of major gridline, minor gridlines and ticklines using the MajorTickLineStyle, MinorTickLineStyle, MajorGridLineStyle and MinorGridLineStyle properties. Also axis lines can be customized using AxisLineStyle as follows.
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfChart>
 
@@ -1229,9 +1233,9 @@ You can customize the appearance of major gridline, minor gridlines and tickline
 
         </syncfusion:SfChart>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/sshot-29.png](Axis_images/Axis_img34.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-29.png](Axis_images/Axis_img34.png)' | markdownify }}
-{:.image }
 
 

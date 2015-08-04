@@ -13,7 +13,7 @@ You can minimize the MDI window by setting the CanMDIMinimize property to _true_
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -31,9 +31,9 @@ You can minimize the MDI window by setting the CanMDIMinimize property to _true_
 
 </syncfusion:DocumentContainer>
 
+{% endhighlight %}
 
+![](Minimizing-MDI-window_images/Minimizing-MDI-window_img1.jpeg)
 
-{{ '![](Minimizing-MDI-window_images/Minimizing-MDI-window_img1.jpeg)' | markdownify }}
-{:.image }
 
 

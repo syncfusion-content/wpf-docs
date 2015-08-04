@@ -28,7 +28,7 @@ To set the MDI Bounds, use the following code snippet.
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -46,9 +46,9 @@ To set the MDI Bounds, use the following code snippet.
 
 </syncfusion:DocumentContainer>
 
+{% endhighlight %}
 
+![](Setting-MDIBounds_images/Setting-MDIBounds_img1.jpeg)
 
-{{ '![](Setting-MDIBounds_images/Setting-MDIBounds_img1.jpeg)' | markdownify }}
-{:.image }
 
 

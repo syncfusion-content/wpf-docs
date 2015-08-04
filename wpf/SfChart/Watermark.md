@@ -19,13 +19,13 @@ You can add the text to chart background using this feature. This can be done by
 
 The following APIs are used to add Watermark to chart.
 
-_Add Text Watermark_
+Add Text Watermark
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 HorizontalAlignment</td><td>
@@ -43,8 +43,7 @@ Gets or sets the object value that represents the content for the Watermark</td>
 
 The following code example explains how to set your custom text as Watermark.
 
-[XAML]
-
+{% highlight xml %}
 
 
 <syncfusion:SfChart.Watermark>
@@ -67,19 +66,19 @@ The following code example explains how to set your custom text as Watermark.
 
         </syncfusion:SfChart.Watermark>
 
-
+{% endhighlight %}
 
 The following screenshot illustrates the Watermark with custom text.
 
-{{ '![C:/Users/rachel/Desktop/snaps/21.png](Watermark_images/Watermark_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/snaps/21.png](Watermark_images/Watermark_img1.png)
+
 
 
 ## Add Image as Watermark
 
 You can set images as Watermark for SfChart, using the Content property, since it can hold any kind of object. The following code example illustrates image Watermark.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -98,8 +97,9 @@ You can set images as Watermark for SfChart, using the Content property, since i
         </syncfusion:SfChart.Watermark>
 
 The following screenshot illustrates the image Watermark, center aligned.
+{% endhighlight %}
 
-{{ '![C:/Users/rachel/Desktop/snaps/22.png](Watermark_images/Watermark_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/snaps/22.png](Watermark_images/Watermark_img2.png)
+
 
 

@@ -33,7 +33,7 @@ Depending upon the requirement, adornments can be positioned in three ways.
 
 The following code example explains the positioning of adornments in the Chart Segment.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -72,9 +72,11 @@ The following code example explains the positioning of adornments in the Chart S
             </syncfusion:ColumnSeries>
 
         </syncfusion:SfChart>
+		
+		{% endhighlight %}
 
-{{ '![](Adornments_images/Adornments_img1.png)' | markdownify }}
-{:.image }
+![](Adornments_images/Adornments_img1.png)
+
 
 
 ## Customizing Adornments
@@ -85,13 +87,13 @@ SfChart allows you to define your own template for symbols by specifying SymbolT
 
 The following APIs are used in customizing the adornments.
 
-_Customizing Adornments_
+Customizing Adornments
 
 <table>
 <tr>
-<td>
- Property</td><td>
-  Definition</td></tr>
+<th>
+ Property</th><th>
+  Definition</th></tr>
 <tr>
 <td>
 HorizontalAlignment</td><td>
@@ -145,7 +147,7 @@ Gets or sets the DataTemplate value that represents the template for the adornme
 
 The following code explains the customization of adornments.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -199,10 +201,10 @@ The following code explains the customization of adornments.
 
         </syncfusion:SfChart>
 
+{% endhighlight %}
 
+![](Adornments_images/Adornments_img2.png)
 
-{{ '![](Adornments_images/Adornments_img2.png)' | markdownify }}
-{:.image }
 
 
 ## Adding Connector to Adornments
@@ -211,13 +213,13 @@ Connector is a line that is used to connect the data point in the series to the 
 
 The following APIs are used in Connectors.
 
-_Adornments_
+Adornments
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 ShowConnectorLine</td><td>
@@ -239,7 +241,7 @@ Gets or sets the double value that represents the rotation angle for the connect
 
 The following code explains how to add connector line to the adornments.
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
@@ -295,30 +297,30 @@ The following code explains how to add connector line to the adornments.
 
         </syncfusion:SfChart>
 
+{% endhighlight %}
 
+![](Adornments_images/Adornments_img3.png)
 
-{{ '![](Adornments_images/Adornments_img3.png)' | markdownify }}
-{:.image }
 
 
 ## SmartLabel support for CircularSeries
 
 When there are more points or points with similar values, the labels in Pie or Doughnut chart overlap with each other. SmartLabel feature is used here to prevent the overlap, by allowing labels to realign with respect to the available space.
 
-Advantages of using Smart Labels
+###Advantages of using Smart Labels
 
 1. Avoids the overlap of segment labels.
 2. To view the label clearly and place the labels around the chart.
 
 
 
-_SmartLabel_
+SmartLabel
 
 <table>
 <tr>
-<td>
-API Name</td><td>
-Descriptions</td></tr>
+<th>
+API Name</th><th>
+Descriptions</th></tr>
 <tr>
 <td>
 ConnectorMode</td><td>
@@ -332,11 +334,12 @@ This property is used to enable or disable the smart labels support.</td></tr>
 UseSeriesPalette</td><td>
 Gets or sets the boolean value that represents a value whether to set the series’ segment interior to the adornment connector line stroke and as label background brush.</td></tr>
 </table>
-SmartLabels with LabelPosition as OutsideExtended
+
+###SmartLabels with LabelPosition as OutsideExtended
 
 Segment label is positioned outside the circular chart with an extended connector line. The following code example illustrates how to set SmartLabels for OutsideExtended position with Bezier type connector line.
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:PieSeries
 
@@ -362,17 +365,17 @@ ItemsSource="{Binding CompanyDetails}"
 
 
 
+{% endhighlight %}
+
+![C:/Users/rachel/Desktop/wpf/sshot-72.png](Adornments_images/Adornments_img4.png)
 
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-72.png](Adornments_images/Adornments_img4.png)' | markdownify }}
-{:.image }
 
-
-SmartLabels with LabelPosition as Outside
+###SmartLabels with LabelPosition as Outside
 
 Segment label is positioned outside the circular chart. The following code example shows how to set label position as Outside.
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:PieSeries
 
@@ -395,20 +398,20 @@ ItemsSource="{Binding CompanyDetails}"
         </syncfusion:PieSeries>
 
 
-
+{% endhighlight %}
 
 
  The following screenshot illustrates a SmartLabel with LabelPosition as Outside.
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-73.png](Adornments_images/Adornments_img5.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/wpf/sshot-73.png](Adornments_images/Adornments_img5.png)
 
 
-Smart Labels with LabelPosition as Inside
+
+###Smart Labels with LabelPosition as Inside
 
 Segment label is positioned inside the circular chart. The following code illustrates how to set the smart labels position to Inside.
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:PieSeries
 
@@ -428,25 +431,25 @@ Segment label is positioned inside the circular chart. The following code illus
 
         </syncfusion:PieSeries>
 
-
+{% endhighlight %}
 
  The following screenshot illustrates a SmartLabel with LabelPosition as Inside.
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-74.png](Adornments_images/Adornments_img6.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/wpf/sshot-74.png](Adornments_images/Adornments_img6.png)
 
 
-Connector Type
+
+###Connector Type
 
 This property is used to define the type of connector line that is to be drawn. This can either be Bezier or Line.
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-76.png](Adornments_images/Adornments_img7.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/wpf/sshot-76.png](Adornments_images/Adornments_img7.png)
+
 
 
 The following code example and screenshot demonstrate the usage of UseSeriesPalette property.
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:PieSeries
 
@@ -472,23 +475,23 @@ The following code example and screenshot demonstrate the usage of UseSeriesPale
 
         </syncfusion:PieSeries>
 
+{% endhighlight %}
+
+![C:/Users/rachel/Desktop/wpf/sshot-75.png](Adornments_images/Adornments_img8.png)
 
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-75.png](Adornments_images/Adornments_img8.png)' | markdownify }}
-{:.image }
 
-
-## Customizing Adornments
+### Customizing Adornments
 
 SfChart adornments, also known as DataLabels, can be customized with direct APIs. The following APIs are used in customizing the adornments.
 
-_Customizing Adornments_
+Customizing Adornments
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 HorizontalAlignment</td><td>
@@ -530,7 +533,7 @@ Gets or sets the DataTemplate that represents the custom shape for the symbol.</
 
 The following code illustrates the various customization for adornments.
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:ColumnSeries Label="2013"
 
@@ -571,22 +574,22 @@ The following code illustrates the various customization for adornments.
 </syncfusion:ColumnSeries>
 
 
+{% endhighlight %}
 
 
+![](Adornments_images/Adornments_img9.png)
 
-{{ '![](Adornments_images/Adornments_img9.png)' | markdownify }}
-{:.image }
 
 
 The following APIs are used to customize the labels of the adornments.
 
-_Customizing Adornment Labels_
+###Customizing Adornment Labels
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 SegmentLabelContent</td><td>
@@ -640,7 +643,7 @@ Gets or sets the outer margin of the adornment labels.</td></tr>
 
 The following code example explains the customization of adornments labels.
 
-XAML
+{% highlight xml %}
 
 
 
@@ -684,11 +687,11 @@ XAML
 
  </syncfusion:ColumnSeries>    
 
+{% endhighlight %}
 
 
 
+![](Adornments_images/Adornments_img10.png)
 
-{{ '![](Adornments_images/Adornments_img10.png)' | markdownify }}
-{:.image }
 
 

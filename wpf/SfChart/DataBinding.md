@@ -11,9 +11,9 @@ documentation: ug
 
 SfChart offers Itemsource property to bind various datasource ranges from simple collection property to complex properties.
 
-Binding a simple collection to the chart
+###Binding a simple collection to the chart
 
-[C#]
+{% highlight C# %}
 
     public class GoldDemand
 
@@ -85,9 +85,9 @@ Binding a simple collection to the chart
 
             public ObservableCollection<GoldDemand> Demands { get; set; }       }
 
+{% endhighlight %}
 
-
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfChart >
 
@@ -104,18 +104,19 @@ Binding a simple collection to the chart
 
 
         </syncfusion:SfChart>
+{% endhighlight %}
 
-Binding complex property to the chart
+###Binding complex property to the chart
 
 The complex property binding feature enables you to access nested object reference property values to render the chart segment. 
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:LineSeries ItemsSource="{Binding  DataWithMulData}" XBindingPath="StadiumObject.CupDetailsObj.CupName" YBindingPath="StadiumObject.NumSeats" /> 
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
         public class StadiumDetails
 
@@ -150,13 +151,14 @@ The complex property binding feature enables you to access nested object referen
             public StadiumDetails StadiumObject { get; set; }
 
         }
+{% endhighlight %}
 
-Binding array property to the chart
+###Binding array property to the chart
 
 The SfChart supports array values for the XBindingPath and YBindingPath. XBindingPath and YBindingPath are bound with the property name in the corresponding index value. You can bind the same property with different index values.
 
 The following code example demonstrates how to bind the array values for the XBindingPath and YBindingPath.
-
+{% highlight C# %}
 public class Model
 
 {
@@ -203,9 +205,9 @@ public class ViewModel
 
 }
 
+{% endhighlight %}
 
-
-[XAML]
+{% highlight xml %}
 
 
 
@@ -220,10 +222,10 @@ XBindingPath="Brand[1]" YBindingPath="Count[0]" >
 </chart:SfChart>
 
 
+{% endhighlight %}
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -249,7 +251,7 @@ chart.Series.Add(series);
 
 }
 
-
+{% endhighlight %}
 
 
 

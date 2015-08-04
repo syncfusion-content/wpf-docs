@@ -11,7 +11,7 @@ documentation: ug
 
 3D charts are used to view two-dimensional data in a three-dimensional view, and can be rotated in all 3 dimensions to get the best possible view of the data.
 
-Key features
+##Key features
 
 * Eight types of chart series.
 * Perspective view.
@@ -27,28 +27,30 @@ Key features
 The following steps explain how to create 3D charts.
 
 1. Open the Add Reference window from your project.
-2. Choose Windows > Extensions > Syncfusion controls for WinRT XAML.
+2. Choose Windows > Extensions > Syncfusion controls for WinRT XAML.
 3. Add the following namespace in your XAML page:
 
 
 
-[XAML]
+{% highlight xml %}
 
 xmlns:Syncfusion="using:Syncfusion.UI.Xaml.Charts"
 
+{% endhighlight %}
+
 4. Initialize the chart represented by the following class, Syncfusion.UI.Xaml.Charts.SfChart3D:
 
-[XAML]
+{% highlight xml %}
 
 <Syncfusion:SfChart3D>
 
 </Syncfusion:SfChart3D>
-
+{% endhighlight %}
 
 
 5. Next, declare the primary axis and secondary axis:
 
-[XAML]
+{% highlight xml %}
 
 <Syncfusion:SfChart3D>
 
@@ -65,12 +67,12 @@ xmlns:Syncfusion="using:Syncfusion.UI.Xaml.Charts"
   </Syncfusion:SfChart3D.SecondaryAxis>
 
 </Syncfusion:SfChart3D >
-
-Add Chart Series to Chart
+{% endhighlight %}
+###Add Chart Series to Chart
 
 To begin with plotting data choose from a wide variety of graphical representations available in the Chart library (e.g., 3DColumn series, 3D PieSeries). The graph selected will depend on the scenario of the user and the nature of the data.
 
-[XAML]
+{% highlight xml %}
 
 <Syncfusion:SfChart3D x:Name="Chart">
 
@@ -90,13 +92,13 @@ To begin with plotting data choose from a wide variety of graphical representati
 
 </Syncfusion:SfChart3D>
 
+{% endhighlight %}
 
-
-Create a Sample Data Source
+###Create a Sample Data Source
 
 Since the above step will produce only an empty column 3D chart, plotting data must be added to the chart. This step illustrates how to create a sample data source. The data source must implement the IEnumerable interface.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -149,22 +151,20 @@ public class UsersViewModel
   }
 
  }
+{% endhighlight %}
 
-Binding Data to ChartSeries
+###Binding Data to ChartSeries
 
 Add the above UsersViewModel to the DataContext of the chart, bind the data source to the ItemsSource property of the 3D column series, and then map the data using XBindingPath and YBindingPath properties.
 
-[XAML]
+{% highlight xml %}
 
-…
 
 <Page.DataContext>
 
       <local:UsersViewModel/>
 
 </ Page.DataContext>
-
-…
 
 <Syncfusion:SfChart3D x:Name="Chart" Height="500" Width="500">
 
@@ -215,11 +215,11 @@ YBindingPath="NoOfUsers">
 
 
     </Syncfusion:SfChart3D >
-
+{% endhighlight %}
 The following screenshot illustrates the result of the above code sample:
 
-{{ '![](3D-Charts_images/3D-Charts_img1.png)' | markdownify }}
-{:.image }
+![](3D-Charts_images/3D-Charts_img1.png)
+
 
 
 ## Adornments
@@ -296,9 +296,10 @@ A Boolean property to show or hide the markers.</td></tr>
 ShowLabel</td><td>
 A Boolean property to show or hide the labels</td></tr>
 </table>
+
 ## Series
 
-Series Types
+###Series Types
 
 * Column
 * Bar
@@ -311,21 +312,18 @@ Series Types
 
 
 
-Create a simple chart series
+###Create a simple chart series
 
 The following code can be used to create a simple doughnut series:
 
-[XAML]
+{% highlight xml %}
 
-…
 
 <Page.DataContext>
 
       <local:UsersViewModel/>
 
 </Page.DataContext>
-
-…
 
 <Syncfusion:SfChart3D x:Name="Chart" Height="500" Width="500">
 
@@ -376,10 +374,9 @@ YBindingPath="NoOfUsers">
 
 
     </Syncfusion:SfChart3D >
+{% endhighlight %}
 
-
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -432,11 +429,11 @@ public class UsersViewModel
   }
 
  }
-
+{% endhighlight %}
 The following image illustrates the result of the above code sample:
 
-{{ '![](3D-Charts_images/3D-Charts_img2.png)' | markdownify }}
-{:.image }
+![](3D-Charts_images/3D-Charts_img2.png)
+
 
 
 ## Interactivity
@@ -449,17 +446,17 @@ Dynamic rotation
 
 The following code example illustrates how to enable the dynamic rotation:
 
-[XAML]
+{% highlight xml %}
 
 <Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" Height="500" Width="600">
-
-SegmentSelection
+{% endhighlight %}
+##SegmentSelection
 
 To enable segment selection in a 3D chart, set the SegmentSelectionBrush property in chart series.
 
 The following code example illustrates how to set the selection brush for individual series. For data refer to the Series category in 3D charts.
 
-[XAML]
+{% highlight xml %}
 
   <Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" 
 
@@ -518,20 +515,20 @@ SegmentSelectionBrush="Red"
 
 
     </Syncfusion:SfChart3D >
-
+{% endhighlight %}
 The following screenshot illustrates the result of the above code example.
 
-{{ '![](3D-Charts_images/3D-Charts_img3.png)' | markdownify }}
-{:.image }
+![](3D-Charts_images/3D-Charts_img3.png)
 
 
-SeriesSelection
+
+##SeriesSelection
 
 Series selection support is used to highlight the series programmatically or by user interaction. Also you can get a series SelectedIndex, PreviousSelectedIndex value in SelectionChanged event arguments. 
 
 The following code example can be used to set series selection in a SfChart3D.
 
-[XAML]
+{% highlight xml %}
 
 <chart:SfChart3D EnableSeriesSelection="True" SeriesSelectedIndex="0">
 
@@ -582,20 +579,20 @@ The following code example can be used to set series selection in a SfChart3D.
 
 
 </chart:SfChart3D >
-
+{% endhighlight %}
 The following screenshot is an example of a SfChart3D with series selection.
 
-{{ '![](3D-Charts_images/3D-Charts_img4.png)' | markdownify }}
-{:.image }
+![](3D-Charts_images/3D-Charts_img4.png)
 
 
-Dynamic explode
+
+##Dynamic explode
 
 This feature allows users to explode a particular segment in a circular series. This can also be achieved by setting the ExplodeIndex property. 
 
 The following code example illustrates how to enable dynamic explode for circular series, for data please refer series category in 3D charts.
 
-[XAML]
+{% highlight xml %}
 
   <Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" Height="500" Width="600">
 
@@ -650,10 +647,10 @@ YBindingPath="NoOfUsers">
 
 
     </Syncfusion:SfChart3D >
-
+{% endhighlight %}
 The following image illustrates the result of the above code sample:
 
-{{ '![](3D-Charts_images/3D-Charts_img5.png)' | markdownify }}
-{:.image }
+![](3D-Charts_images/3D-Charts_img5.png)
+
 
 

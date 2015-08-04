@@ -13,7 +13,7 @@ You can maximize the MDI window by setting the CanMDIMaximize property to True. 
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -25,15 +25,12 @@ You can maximize the MDI window by setting the CanMDIMaximize property to True. 
 
 </FlowDocumentScrollViewer>
 
-…....
-
-…....
 
 </syncfusion:DocumentContainer>
 
+{% endhighlight %}
 
+![](Maximizing-MDI-window_images/Maximizing-MDI-window_img1.jpeg)
 
-{{ '![](Maximizing-MDI-window_images/Maximizing-MDI-window_img1.jpeg)' | markdownify }}
-{:.image }
 
 

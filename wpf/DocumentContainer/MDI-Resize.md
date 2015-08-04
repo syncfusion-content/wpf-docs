@@ -15,7 +15,7 @@ To set this property, use the below code.
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -34,4 +34,4 @@ To set this property, use the below code.
 </syncfusion:DocumentContainer>
 
 
-
+{% endhighlight %}

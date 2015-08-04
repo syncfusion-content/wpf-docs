@@ -25,27 +25,27 @@ To set the Quick Tab Mode for the window switchers, use the following code.
 
 <table>
 <tr>
-<td>
-[XAML]<!-- Adding Document Container --><syncfusion:DocumentContainer Name="DocContainer" SwitchMode="QuickTabs" Mode="MDI">  …....  …....</syncfusion:DocumentContainer></td></tr>
+<th>
+[XAML]<!-- Adding Document Container --><syncfusion:DocumentContainer Name="DocContainer" SwitchMode="QuickTabs" Mode="MDI">  …....  …....</syncfusion:DocumentContainer></th></tr>
 <tr>
 <td>
 [C#]//Creating instance of Document ContainerDocumentContainer DocContainer = new DocumentContainer();//Set mode as MDIDocContainer.Mode = DocumentContainerMode.MDI;//Set switch modeDocContainer.SwitchMode = SwitchMode.QuickTabs;  ….......….......//Adding control to the windowthis.Content = DocContainer;</td></tr>
 </table>
 
 
-{{ '![](Setting-Window-Switchers_images/Setting-Window-Switchers_img1.jpeg)' | markdownify }}
-{:.image }
+![](Setting-Window-Switchers_images/Setting-Window-Switchers_img1.jpeg)
 
 
 
 
-{{ '![](Setting-Window-Switchers_images/Setting-Window-Switchers_img2.jpeg)' | markdownify }}
-{:.image }
+
+![](Setting-Window-Switchers_images/Setting-Window-Switchers_img2.jpeg)
 
 
 
 
-{{ '![](Setting-Window-Switchers_images/Setting-Window-Switchers_img3.jpeg)' | markdownify }}
-{:.image }
+
+![](Setting-Window-Switchers_images/Setting-Window-Switchers_img3.jpeg)
+
 
 

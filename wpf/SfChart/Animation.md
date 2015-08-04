@@ -30,13 +30,13 @@ The following types of series support Animation.
 
 The following APIs are used to customize the Animation.
 
-_Customization API for Animation_
+Customization API for Animation
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></th>
 <tr>
 <td>
 EnableAnimation</td><td>
@@ -50,7 +50,7 @@ Gets or sets the TimeSpan value that represents the animation speed for the char
 
 The following example shows the Animation feature for chart series.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -60,5 +60,5 @@ The following example shows the Animation feature for chart series.
 
         </syncfusion:SfChart>
 
-
+{% endhighlight %}
 
