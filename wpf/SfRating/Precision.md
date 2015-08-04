@@ -17,11 +17,13 @@ Precision defines the accuracy level of the rating control. It provides the foll
 
 
 
-Standard
+### Standard
 
 The rating item will be filled completely based on the value of the Rating control when the mouse enters the rating item.
 
 In the following example, 1.3 has been set for the value. The rating item has been filled completely for standard precision.
+
+{%highlight xaml%}
 
 [XAML]
 
@@ -31,17 +33,19 @@ In the following example, 1.3 has been set for the value. The rating item has be
 
 Precision="Standard/>
 
+{%endhighlight%}
+
+![][C:/Users/ApoorvahR/Desktop/3.png](Precision_images/Precision_img1.png)
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/3.png](Precision_images/Precision_img1.png)' | markdownify }}
-{:.image }
 
-
-Half
+### Half
 
 The rating item will be filled partially based on the value of the Rating control when the mouse enters the rating item.
 
 In this case, 0.3 has been set for the value. The rating item was filled partially.
+
+{%highlight xaml%}
 
 [XAML]
 
@@ -49,17 +53,19 @@ In this case, 0.3 has been set for the value. The rating item was filled partial
 
 <editors:SfRating ItemsCount="5" Value="1.3" Precision="Half"/>
 
+{%endhighlight%}
+
+![][C:/Users/ApoorvahR/Desktop/4.png](Precision_images/Precision_img2.png)
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/4.png](Precision_images/Precision_img2.png)' | markdownify }}
-{:.image }
 
-
-Exact
+### Exact
 
 The rating item will be filled exactly based on the value of the Rating control and when mouse enters the rating item.
 
 In this case, 1.3 has been set for the Value. Rating item was filled to reflect the exact value.
+
+{%highlight xaml%}
 
 [XAML]
 
@@ -69,9 +75,9 @@ In this case, 1.3 has been set for the Value. Rating item was filled to reflect 
 
 Precision="Exact"/>
 
+{%endhighlight%}
 
+![][C:/Users/ApoorvahR/Desktop/5.png](Precision_images/Precision_img3.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/5.png](Precision_images/Precision_img3.png)' | markdownify }}
-{:.image }
 
 

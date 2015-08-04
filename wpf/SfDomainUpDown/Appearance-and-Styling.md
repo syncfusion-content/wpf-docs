@@ -13,7 +13,7 @@ documentation: ug
 
 Items will spin up or down with smooth transition. The transition can be disabled using the EnableSpinAnimation property.
 
-
+{%highlight xaml%}
 
 [XAML]
 
@@ -28,12 +28,13 @@ Items will spin up or down with smooth transition. The transition can be disable
                                  Width="200" EnableSpinAnimation="True"/>
 
 
+{%endhighlight%}
 
 ## Accent Brush
 
 The AccentBrush property is used to decorate the hot spots of a control with a solid color. 
 
-
+{%highlight xaml%}
 
 [XAML]
 
@@ -65,7 +66,7 @@ The AccentBrush property is used to decorate the hot spots of a control with a s
 
 </Page>
 
-
+{%endhighlight%}
 
 
 

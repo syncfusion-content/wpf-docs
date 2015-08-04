@@ -11,8 +11,8 @@ documentation: ug
 
 This section guides you on getting started with NotifyIcon control. 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.jpeg)
+
 
 
 ## Why to use our NotifyIcon control
@@ -29,14 +29,17 @@ NotifyIcon is created either by using XAML code or with C# code, as follows.
 <table>
 <tr>
 <td>
+{%highlight xaml%}
 [XAML]<syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available" BalloonTipTitle="Default NotifyIcon" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/></td></tr>
+{%endhighlight%}
 <tr>
 <td>
+{%highlight c#%}
 [C#]NotifyIcon notifyIcon = new NotifyIcon();notifyIcon.BalloonTipText = "Custom Notify Icon is Available";notifyIcon.BalloonTipTitle = "Default NotifyIcon";notifyIcon.ShowBalloonTipTime = 1000;notifyIcon.HideBalloonTipTime = 1000;</td></tr>
+{%endhighlight%}
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 

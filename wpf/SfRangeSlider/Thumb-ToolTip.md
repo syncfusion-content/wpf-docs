@@ -13,25 +13,28 @@ The Thumb tooltip displays the current value where the Thumb stands.
 
 
 
-{{ '![](Thumb-ToolTip_images/Thumb-ToolTip_img1.jpeg)' | markdownify }}
-{:.image }
+![](Thumb-ToolTip_images/Thumb-ToolTip_img1.jpeg)
 
 
-Thumb ToolTip Precision  
+
+## Thumb ToolTip Precision  
 
 ThumbToolTipPrecision property is used to define the precision of the value displayed in the tooltip.  
+
+
+{%highlight xaml#%}
 
 [XAML]
 
 <editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" Value="50" ThumbToolTipPrecision="2"/>
 
+{%endhighlight%}
+
+![](Thumb-ToolTip_images/Thumb-ToolTip_img2.jpeg)
 
 
-{{ '![](Thumb-ToolTip_images/Thumb-ToolTip_img2.jpeg)' | markdownify }}
-{:.image }
 
-
-Thumb ToolTip Position 
+## Thumb ToolTip Position 
 
 The position of the Thumb tooltip in relation to the Thumb can be controlled by the ThumbToolTipPlacement property. It has the following options.  
 
@@ -39,49 +42,51 @@ The position of the Thumb tooltip in relation to the Thumb can be controlled by 
 2. TopLeft 
 3. None 
 
-BottmRight  
+### BottmRight  
 
 Tooltip is placed either below the Thumb in horizontal orientation or right of the Thumb in vertical orientation. 
 
-
+{%highlight xaml#%}
 
 [XAML]
 
 <editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" Value="50" ThumbToolTipPlacement="BottonRight" />
 
 
+{%endhighlight%}
 
-{{ '![](Thumb-ToolTip_images/Thumb-ToolTip_img3.jpeg)' | markdownify }}
-{:.image }
+![](Thumb-ToolTip_images/Thumb-ToolTip_img3.jpeg)
+
 
 
 > _Note: This option displays the tooltip to right in vertical orientation._  
 
-TopLeft 
+### TopLeft 
 
 Tooltip is placed either above the Thumb in horizontal orientation or left of the Thumb in vertical orientation. 
 
 
+{%highlight xaml#%}
 
 [XAML]
 
 <editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" Value="50" ThumbToolTipPlacement="TopLeft" />
 
+{%endhighlight%}
 
+![](Thumb-ToolTip_images/Thumb-ToolTip_img4.jpeg)
 
-{{ '![](Thumb-ToolTip_images/Thumb-ToolTip_img4.jpeg)' | markdownify }}
-{:.image }
 
 
 > _Note: This option displays the tooltip to left in vertical orientation._  
 
-None 
+### None 
 
 No Tooltip appears. 
 
 
 
-{{ '![](Thumb-ToolTip_images/Thumb-ToolTip_img5.jpeg)' | markdownify }}
-{:.image }
+![](Thumb-ToolTip_images/Thumb-ToolTip_img5.jpeg)
+
 
 
