@@ -11,7 +11,7 @@ documentation: ug
 
 TreeMap enables drill down to expose the hierarchy by clicking on a treemap node and allows drill up by clicking on drill down header. At a time, only one level of the hierarchy can be seen in the treemap.
 
-Enabling Drill Down
+## Enabling Drill Down
 
 Treemap items can be drilled down by enabling the property EnableDrillDown to ‘_true’_. The hierarchy of treemap levels can be shown by clicking on treemap items. The previous level can be drilled up by clicking on drill down header. DrilldDown header can be customized with the help of DrillDownHeaderTemplate property.
 
@@ -20,9 +20,9 @@ _Drill D__own Properties_
 <table>
 <tr>
 <td>
-Property </td><td>
-Type </td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 EnableDrillDown</td><td>
@@ -47,7 +47,7 @@ Gets or sets a color for highlighting tree map item while drill down.</td></tr>
 
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -100,7 +100,7 @@ Gets or sets a color for highlighting tree map item while drill down.</td></tr>
 
 </syncfusion:SfTreeMap>
 
-
+{% endhighlight %}
 
 
 
@@ -108,8 +108,8 @@ The following screenshot illustrates a TreeMap with drill down support.
 
 
 
-{{ '![](Drill-Down-Support_images/Drill-Down-Support_img1.png)' | markdownify }}
-{:.image }
+![](Drill-Down-Support_images/Drill-Down-Support_img1.png)
+
 
 
 _TreeMap with drill down support_

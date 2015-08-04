@@ -12,7 +12,7 @@ documentation: ug
 The HeaderTemplate property of Tree Navigator can be used to customize the Tree Navigator header. 
 
 
-
+{% highlight xml %}
 [XAML]
 
 <navigation:SfTreeNavigator.HeaderTemplate>
@@ -24,7 +24,7 @@ The HeaderTemplate property of Tree Navigator can be used to customize the Tree 
    </DataTemplate>
 
 </navigation:SfTreeNavigator.HeaderTemplate>
-
+{% endhighlight %}
 
 
 
@@ -33,8 +33,7 @@ Tree Navigator now displayed as shown below.
 
 
 
-{{ '![4](Header-Template_images/Header-Template_img1.png)' | markdownify }}
-{:.image }
+![4](Header-Template_images/Header-Template_img1.png)
 
 
 

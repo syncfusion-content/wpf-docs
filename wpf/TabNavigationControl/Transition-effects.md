@@ -14,7 +14,7 @@ Transition Effect property is used to set the effect for the Tab navigation cont
 * Slide – The item/page navigates with slide effect.
 
 
-
+~~~ xml
 XAML
 
 
@@ -26,6 +26,8 @@ XAML
 
 
         </syncfusion:TabNavigationControl>
+~~~
+{:.prettyprint}
 
 
 
@@ -34,7 +36,7 @@ XAML
 * Fade – During navigation, the previous item fades out and the new item appears with variation in opacity.
 
 
-
+~~~ xml
 XAML
 
 
@@ -46,7 +48,8 @@ XAML
 
 
         </syncfusion:TabNavigationControl>
-
+~~~
+{:.prettyprint}
 
 
 
@@ -54,7 +57,7 @@ XAML
 * Zoom – The new item appears with a zooming effect.
 
 
-
+~~~xml
 XAML
 
 
@@ -66,7 +69,8 @@ XAML
 
 
         </syncfusion:TabNavigationControl>
-
+~~~
+{:.prettyprint}
 
 
 
@@ -74,7 +78,7 @@ XAML
 * Blur – The new item appears with blur effect.
 
 
-
+~~~ xml
 XAML
 
 
@@ -86,7 +90,8 @@ XAML
 
 
         </syncfusion:TabNavigationControl>
-
+~~~
+{:.prettyprint}
 
 
 
@@ -94,7 +99,7 @@ XAML
 * Push – The new item descends from the top 
 
 
-
+~~~ xml
 XAML
 
 
@@ -107,14 +112,15 @@ XAML
 
         </syncfusion:TabNavigationControl>
 
-
+~~~
+{:.prettyprint}
 
 
 
 * PushIn – The new item ascends from the bottom
 
 
-
+~~~ xml
 XAML
 
 
@@ -126,7 +132,8 @@ XAML
 
 
         </syncfusion:TabNavigationControl>
-
+~~~
+{:.prettyprint}
 
 
 
@@ -134,7 +141,7 @@ XAML
 * Wipe – The old item gets washed out and the new item appears.
 
 
-
+~~~ xml
 XAML
 
 
@@ -147,7 +154,8 @@ XAML
 
         </syncfusion:TabNavigationControl>
 
-
+~~~
+{:.prettyprint}
 
 
 

@@ -16,7 +16,7 @@ You can also set the value for Left, Right, Bottom and Top group padding.
 To set the group padding, use the below code
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -63,10 +63,10 @@ To set the group padding, use the below code
 
 </syncfusion:TaskBar>
 
+{% endhighlight %}
 
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -75,12 +75,12 @@ To set the group padding, use the below code
 
 TaskBar.SetGroupPadding(taskBar, new Thickness(20));
 
+{% endhighlight %}
 
 
 
+![](Setting-Group-Padding_images/Setting-Group-Padding_img1.jpeg)
 
-{{ '![](Setting-Group-Padding_images/Setting-Group-Padding_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 

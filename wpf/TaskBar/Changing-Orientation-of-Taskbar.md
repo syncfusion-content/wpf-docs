@@ -19,7 +19,7 @@ TaskBar control supports the following types of orientation.
 Use the below code snippet to set the orientation.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -69,11 +69,11 @@ Specify and customize the group margin.</TextBlock>
     </syncfusion:TaskBarItem>
 
 </syncfusion:TaskBar>
+{% endhighlight %}
 
 
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -161,18 +161,17 @@ taskBar.GroupOrientation = Orientation.Horizontal;
 //Adding TaskBar as content of window
 
 this.Content = taskBar; 
+{% endhighlight %}
 
 
 
 
-
-{{ '![](Changing-Orientation-of-Taskbar_images/Changing-Orientation-of-Taskbar_img1.jpeg)' | markdownify }}
-{:.image }
+![](Changing-Orientation-of-Taskbar_images/Changing-Orientation-of-Taskbar_img1.jpeg)
 
 
 
 
-GroupOrientationChanged Event
+## GroupOrientationChanged Event
 
 This event is handled when the GroupOrientation property is changed.
 
@@ -181,7 +180,7 @@ While setting the orientation of the TaskBar, you may want to change the positio
 The following code snippet illustrates handling the GroupOrientationChanged event.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -209,6 +208,6 @@ else
 taskBar.GroupMargin = new Thickness(0, 0, 0, 5);
 
 }
-
+{% endhighlight %}
 
 

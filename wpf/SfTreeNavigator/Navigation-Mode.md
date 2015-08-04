@@ -11,12 +11,12 @@ documentation: ug
 
 Two types of Navigation mode are supported by Tree Navigator to navigate between hierarchy levels. 
 
-Default 
+## Default 
 
 In this navigation mode, the header of current hierarchy level item can be displayed in the top of the Tree Navigator with the back button. This back button is used to navigate towards the root from the current level. 
 
 
-
+{% highlight xml %}
 [XAML]
 
 <navigation:SfTreeNavigator ItemsSource="{Binding Models}"  
@@ -31,22 +31,22 @@ In this navigation mode, the header of current hierarchy level item can be displ
 
                             VerticalAlignment="Center" />
 
+{% endhighlight %}
+
+
+
+![](Navigation-Mode_images/Navigation-Mode_img1.png)
 
 
 
 
-{{ '![](Navigation-Mode_images/Navigation-Mode_img1.png)' | markdownify }}
-{:.image }
 
-
-
-
-Extended 
+## Extended 
 
 In this navigation mode, header of each level from the root to current level stacked one by one in the top of the Tree Navigator.  When click on any of that header will take us to the corresponding level. 
 
 
-
+{% highlight xml %}
 [XAML]
 
 <navigation:SfTreeNavigator ItemsSource="{Binding Models}"  
@@ -62,11 +62,10 @@ In this navigation mode, header of each level from the root to current level sta
                             VerticalAlignment="Center" />
 
 
+{% endhighlight %}
 
 
-
-{{ '![](Navigation-Mode_images/Navigation-Mode_img2.png)' | markdownify }}
-{:.image }
+![](Navigation-Mode_images/Navigation-Mode_img2.png)
 
 
 > _Note: Header of the Extended mode can be styled using TreeNavigatorHeaderItem available in the same namespace._

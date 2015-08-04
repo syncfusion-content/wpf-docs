@@ -9,14 +9,14 @@ documentation: ug
 
 # Populating Items 
 
-Items Source 
+## Items Source 
 
 Tree Navigator items can be populated with the business object collection. Let us create a Tree Navigator which will show the list of Syncfusion Enterprise Toolkit products.  
 
 Create a Model class with the necessary properties. 
 
 
-
+{% highlight c# %}
 [C#]
 
   public class TreeModel : NotificationObject
@@ -70,7 +70,7 @@ Create a Model class with the necessary properties.
 
 
     }
-
+{% endhighlight %}
 
 
 > _Note: NotificationObject is a class which implements INotifyPropertyChanged interface._
@@ -80,7 +80,7 @@ Create a Model class with the necessary properties.
 Create a View Model class with the hierarchical items as follows.  
 
 
-
+{% highlight c# %}
 [C#]
 
 public class TreeViewModel 
@@ -136,7 +136,7 @@ public class TreeViewModel
         }
 
     }
-
+{% endhighlight %}
 
 
 
@@ -144,7 +144,7 @@ public class TreeViewModel
  Bind the Models collection to the ItemsSource property of the Tree Navigator control as follows. 
 
 
-
+{% highlight xml %}
 [XAML]
 
 <navigation:SfTreeNavigator ItemsSource="{Binding Models}"  
@@ -158,25 +158,25 @@ public class TreeViewModel
                             VerticalAlignment="Center" />
 
 
-
+{% endhighlight %}
 
 
  This will populate the Tree Navigator as shown below. 
 
 
 
-{{ '![](Populating-Items_images/Populating-Items_img1.png)' | markdownify }}
-{:.image }
+![](Populating-Items_images/Populating-Items_img1.png)
 
 
 
 
-Item Template 
+
+## Item Template 
 
 ItemTemplate property of the Tree Navigator can be used to customize the display of business objects. 
 
 
-
+{% highlight xml %}
 [XAML]
 
 <navigation:SfTreeNavigator ItemsSource="{Binding Models}"  
@@ -214,7 +214,7 @@ VerticalAlignment="Center" Margin="18 0 0 0"/>
         </navigation:SfTreeNavigator.ItemTemplate>
 
  </navigation:SfTreeNavigator>
-
+{% endhighlight %}
 
 
 
@@ -223,8 +223,8 @@ This will populate the Tree Navigator as follows.
 
 
 
-{{ '![3](Populating-Items_images/Populating-Items_img2.png)' | markdownify }}
-{:.image }
+![3](Populating-Items_images/Populating-Items_img2.png)
+
 
 
 

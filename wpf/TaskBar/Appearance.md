@@ -22,8 +22,8 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '*Property*' | markdownify }}</td><td>
+{{ '*Description*' | markdownify }}</td></tr>
 <tr>
 <td>
 VisualStyle</td><td>
@@ -38,7 +38,7 @@ To set the visual style for the TaskBar, use the below code.
 
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -70,11 +70,11 @@ This TaskBar that have a TaskBarItem.
     </syncfusion:TaskBarItem>
 
 </syncfusion:TaskBar>
+{% endhighlight %}
 
 
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -83,84 +83,77 @@ This TaskBar that have a TaskBarItem.
 
 SkinStorage.SetVisualStyle(taskBar, "Office2007Blue");
 
+{% endhighlight %}
 
 
 
-
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/taskbar7blue.png](Appearance_images/Appearance_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/taskbar7blue.png](Appearance_images/Appearance_img1.png)
 
 
 _TaskBar with "Office2007Blue" Visual Style_
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/task7black.png](Appearance_images/Appearance_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/task7black.png](Appearance_images/Appearance_img2.png)
 
 
 _TaskBar with "Office2007Black" Visual Style_
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/task7silver.png](Appearance_images/Appearance_img3.png)' | markdownify }}
-{:.image }
-
+![C:/Users/ramalakshmim/Desktop/ugss/task7silver.png](Appearance_images/Appearance_img3.png)
 
 _TaskBar with "Office2007Silver" Visual Style_
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/task10blue.png](Appearance_images/Appearance_img4.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/task10blue.png](Appearance_images/Appearance_img4.png)
 
 
 _TaskBar with "Office2010Blue" Visual Style_
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/task10black.png](Appearance_images/Appearance_img5.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/task10black.png](Appearance_images/Appearance_img5.png)
 
 
 _TaskBar with "Office2010Black" Visual Style_
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/task10silver.png](Appearance_images/Appearance_img6.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/task10silver.png](Appearance_images/Appearance_img6.png)
+
 
 
 _TaskBar with "Office2010Silver" Visual Style_
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/taskblend.png](Appearance_images/Appearance_img7.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/taskblend.png](Appearance_images/Appearance_img7.png)
+
 
 
 _TaskBar with "Blend" Visual Style_
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/taskvs2010.png](Appearance_images/Appearance_img8.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/taskvs2010.png](Appearance_images/Appearance_img8.png)
 
 
 _TaskBar with "VS2010" Visual Style_
 
 
 
-{{ '![](Appearance_images/Appearance_img9.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img9.png)
+
 
 
 _TaskBar with "Metro" Visual Style_
 
 
 
-{{ '![](Appearance_images/Appearance_img10.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img10.png)
+
 
 
 _TaskBar with "Transparent" Visual Style_

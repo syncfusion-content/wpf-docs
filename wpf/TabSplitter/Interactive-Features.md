@@ -15,6 +15,7 @@ This section illustrates the following interactive features of TabSplitter contr
 
 TabSplitter contains one or more pages that are defined as TabSplitter Items. Use the following code to add a TabSplitter Item to the TabSplitter control.
 
+{% highlight xml %}
 [XAML]
 
  <!-- Adding TabSplitter -->
@@ -25,16 +26,16 @@ TabSplitter contains one or more pages that are defined as TabSplitter Items. Us
 
     <!-- Adding TabSplitterItem -->
 
-   <syncfusion:TabSplitterItem Header="Window1.xaml" Name="tabSplitterItem1">
+   <syncfusion:TabSplitterItem Header="Window1.xml" Name="tabSplitterItem1">
 
     </syncfusion:TabSplitterItem>
 
 
 
 </syncfusion:TabSplitter>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -53,7 +54,7 @@ TabSplitterItem tabSplitterItem1 = new TabSplitterItem();
 
 // Adding header of the TabSplitterItem
 
-tabSplitterItem1.Header = "Window1.xaml";         
+tabSplitterItem1.Header = "Window1.xml";         
 
 
 
@@ -66,13 +67,13 @@ tabSplitter.Items.Add(tabSplitterItem1);
 // Adding TabSplitter to Window 
 
 this.Content = tabsplitter;
+{% endhighlight %}
 
 
 
 
+![](Interactive-Features_images/Interactive-Features_img1.png)
 
-{{ '![](Interactive-Features_images/Interactive-Features_img1.png)' | markdownify }}
-{:.image }
 
 
 
@@ -90,6 +91,7 @@ TabSplitter Items contains a collection of pages. These pages are defined as Pan
 
  The following code example can be used to add Panel Items to the TabSplitter Item:
 
+{% highlight xml %}
 [XAML]
 
 
@@ -102,7 +104,7 @@ TabSplitter Items contains a collection of pages. These pages are defined as Pan
 
     <!-- Adding TabSplitterItem -->
 
-<syncfusion:TabSplitterItem Header="Window1.xaml"  Name="tabSplitterItem1">
+<syncfusion:TabSplitterItem Header="Window1.xml"  Name="tabSplitterItem1">
 
 
 
@@ -147,9 +149,9 @@ TabSplitter Items contains a collection of pages. These pages are defined as Pan
 
 
 </syncfusion:TabSplitter>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -168,7 +170,7 @@ TabSplitterItem tabSplitterItem1 = new TabSplitterItem();
 
 // Adding header of the TabSplitterItem
 
-tabSplitterItem1.Header = "Window1.xaml";
+tabSplitterItem1.Header = "Window1.xml";
 
 
 
@@ -209,13 +211,13 @@ tabSplitter.Items.Add(tabSplitterItem1);
 // Adding TabSplitter to Window 
 
 this.Content = tabsplitter;
+{% endhighlight %}
 
 
 
 
+![](Interactive-Features_images/Interactive-Features_img2.png)
 
-{{ '![](Interactive-Features_images/Interactive-Features_img2.png)' | markdownify }}
-{:.image }
 
 
 
@@ -225,7 +227,7 @@ this.Content = tabsplitter;
 You can split the pages in the TabSplitter Item by using the SplitterPage. The following code example illustrates how to add a SplitterPage to the TabSplitter Item.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -238,7 +240,7 @@ You can split the pages in the TabSplitter Item by using the SplitterPage. The f
 
     <!-- Adding TabSplitterItem -->
 
-  <syncfusion:TabSplitterItem Header="Window1.xaml" Name="tabSplitterItem1">
+  <syncfusion:TabSplitterItem Header="Window1.xml" Name="tabSplitterItem1">
 
 
 
@@ -283,9 +285,9 @@ You can split the pages in the TabSplitter Item by using the SplitterPage. The f
 
 
 </syncfusion:TabSplitter>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -304,7 +306,7 @@ TabSplitterItem tabSplitterItem1 = new TabSplitterItem();
 
 // Adding header of the TabSplitterItem
 
-tabSplitterItem1.Header = "Window1.xaml";
+tabSplitterItem1.Header = "Window1.xml";
 
 
 
@@ -345,13 +347,13 @@ tabSplitter.Items.Add(tabSplitterItem1);
 // Adding TabSplitter to Window 
 
 this.Content = tabsplitter;
+{% endhighlight %}
 
 
 
 
+![](Interactive-Features_images/Interactive-Features_img3.png)
 
-{{ '![](Interactive-Features_images/Interactive-Features_img3.png)' | markdownify }}
-{:.image }
 
 
 
@@ -361,7 +363,7 @@ this.Content = tabsplitter;
 You can collapse or expand the Bottom Panel by using the IsCollapsedBottomPanel property. The default value is _false_. To collapse the Bottom Panel, refer to the following code snippet:
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -374,7 +376,7 @@ You can collapse or expand the Bottom Panel by using the IsCollapsedBottomPanel 
 
     <!-- Adding TabSplitterItem -->
 
-    <syncfusion:TabSplitterItem Header="Window1.xaml" IsCollapsedBottomPanel="True" Name="tabSplitterItem1">
+    <syncfusion:TabSplitterItem Header="Window1.xml" IsCollapsedBottomPanel="True" Name="tabSplitterItem1">
 
 
 
@@ -417,11 +419,11 @@ You can collapse or expand the Bottom Panel by using the IsCollapsedBottomPanel 
 
 
 </syncfusion:TabSplitter>
+{% endhighlight %}
 
 
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -429,13 +431,13 @@ You can collapse or expand the Bottom Panel by using the IsCollapsedBottomPanel 
 // Enable IsCollapseBottomPanel property.
 
 tabSplitterItem1.IsCollapsedBottomPanel = true;  
+{% endhighlight %}
 
 
 
 
+![](Interactive-Features_images/Interactive-Features_img4.png)
 
-{{ '![](Interactive-Features_images/Interactive-Features_img4.png)' | markdownify }}
-{:.image }
 
 
 
@@ -445,7 +447,7 @@ tabSplitterItem1.IsCollapsedBottomPanel = true; 
 You can set the height of the BottomPanel in TabSplitter using BottomPanelHeight property. To set the height of the BottomPanel, refer the following code snippet: 
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -458,7 +460,7 @@ You can set the height of the BottomPanel in TabSplitter using BottomPanelHeight
 
         <!-- Adding TabSplitterItem -->
 
-            <syncfusion:TabSplitterItem Header="MainWindow.xaml">
+            <syncfusion:TabSplitterItem Header="MainWindow.xml">
 
 
 
@@ -495,9 +497,9 @@ You can set the height of the BottomPanel in TabSplitter using BottomPanelHeight
 
 
  </syncfusion:TabSplitter>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -512,12 +514,12 @@ You can set the height of the BottomPanel in TabSplitter using BottomPanelHeight
 
             tabSplitter.BottomPanelHeight = 150;
 
+{% endhighlight %}
 
 
 
+![](Interactive-Features_images/Interactive-Features_img5.png)
 
-{{ '![](Interactive-Features_images/Interactive-Features_img5.png)' | markdownify }}
-{:.image }
 
 
 

@@ -20,7 +20,7 @@ Tab Scroll button visibility is controlled by using the TabScrollButtonVisibilit
 Here is the code snippet to set the Tab Scroll Button Visibility as "Visible".
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -46,9 +46,9 @@ Here is the code snippet to set the Tab Scroll Button Visibility as "Visible".
     </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -92,11 +92,11 @@ tabControlExt.TabScrollButtonVisibility = TabScrollButtonVisibility.Visible;
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt);
+{% endhighlight  %}
 
 
+![](Setting-Tab-Scroll-Button_images/Setting-Tab-Scroll-Button_img1.jpeg)
 
-{{ '![](Setting-Tab-Scroll-Button_images/Setting-Tab-Scroll-Button_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 

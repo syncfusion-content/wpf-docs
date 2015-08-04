@@ -25,7 +25,7 @@ ItemsSource:
 The ItemsSource set for SfTreeMap must be a flat collection of data. The following code shows how to bind a flat collection as ItemsSource to a TreeMap.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -47,11 +47,10 @@ The ItemsSource set for SfTreeMap must be a flat collection of data. The followi
 
 
     </Grid>
+{% endhighlight %}
 
 
-
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -113,7 +112,7 @@ PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Coun
         }        
 
     }
-
+{% endhighlight %}
 
 
 GroupPath:
@@ -121,7 +120,7 @@ GroupPath:
 You must specify the GroupPath for each and every flat level of TreeMap. It is a path to a field on the source object, which serves as the “Group” for the levels specified. Based upon the GroupPath, the data is grouped in the TreeMap. If GroupPath is not specified, then the items are not grouped, and it is shown in the order, in which they are specified in the ItemsSource.
 
 
-
+{% highlight xml %}
 [XAML]
 
 <Grid Background="Black">
@@ -162,7 +161,7 @@ You must specify the GroupPath for each and every flat level of TreeMap. It is a
 
     </Grid>
 
-
+{% endhighlight  %}
 
 
 
@@ -171,7 +170,7 @@ GroupGap:
 You can specify GroupGap for separating the items of every flat level and it is used to differentiate the levels mentioned for TreeMap.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -205,7 +204,7 @@ You can specify GroupGap for separating the items of every flat level and it is 
         </syncfusion:SfTreeMap>
 
     </Grid>
-
+{% endhighlight %}
 
 
 ### GroupBorderBrush
@@ -213,7 +212,7 @@ You can specify GroupGap for separating the items of every flat level and it is 
 GroupBorderBrush provides the border color for the group levels.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -247,7 +246,7 @@ GroupBorderBrush provides the border color for the group levels.
         </syncfusion:SfTreeMap>
 
     </Grid>
-
+{% endhighlight %}
 
 
 ### GroupBackground
@@ -255,7 +254,7 @@ GroupBorderBrush provides the border color for the group levels.
 GroupBackground specifies the background brush for the levels. The GroupBackground is effectively seen when we provide GroupPadding also while defining the Levels.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -287,19 +286,19 @@ GroupBackground specifies the background brush for the levels. The GroupBackgrou
         </syncfusion:SfTreeMap>
 
     </Grid>
-
+{% endhighlight %}
 
 
 ## TreeMapHierarchicalLevel:
 
 TreeMapHierarchicalLevel is used to define levels for hierarchical data collection which contains tree-structured data. 
 
-ItemsSource:
+### ItemsSource:
 
 The ItemsSource set for TreeMap must be a nested data collection. The following code shows how to bind a hierarchical data collection as ItemsSource for TreeMap.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -329,11 +328,11 @@ The ItemsSource set for TreeMap must be a nested data collection. The following 
         </syncfusion:SfTreeMap>
 
     </Grid>
+{% endhighlight %}
 
 
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -559,19 +558,19 @@ The ItemsSource set for TreeMap must be a nested data collection. The following 
         #endregion
 
     }
+{% endhighlight %}
 
 
 
 
 
 
-
-ChildPath:
+### ChildPath:
 
 You must specify ChildPath for each and every hierarchical level of TreeMap. It is a path to a field on the source object, which serves as the “Child” for the level specified. Based upon the ChildPath, the treemap contains child items.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -605,23 +604,22 @@ You must specify ChildPath for each and every hierarchical level of TreeMap. It 
         </syncfusion:SfTreeMap>
 
     </Grid>
+{% endhighlight %}
 
 
 
+![C:/Users/ApoorvahR/Desktop/Note.png](TreeMap-Levels_images/TreeMap-Levels_img1.png)
 
-
-{{ '![C:/Users/ApoorvahR/Desktop/Note.png](TreeMap-Levels_images/TreeMap-Levels_img1.png)' | markdownify }}
-{:.image }
 _Note: The specified field must be a collection of sub class (object) specified in the nested data collection._
 
 
 
-ChildGap: 
+### ChildGap: 
 
 You can specify ChildGap for separating the child items of every level and it is used to differentiate the levels mentioned for TreeMap.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -655,14 +653,14 @@ You can specify ChildGap for separating the child items of every level and it is
         </syncfusion:SfTreeMap>
 
     </Grid>
+{% endhighlight %}
 
 
 
 
 
 
+![](TreeMap-Levels_images/TreeMap-Levels_img2.png)
 
-{{ '![](TreeMap-Levels_images/TreeMap-Levels_img2.png)' | markdownify }}
-{:.image }
 
 

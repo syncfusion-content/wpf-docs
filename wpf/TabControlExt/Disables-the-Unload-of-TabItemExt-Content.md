@@ -12,7 +12,7 @@ documentation: ug
 While switching the TabItems in TabControl the content of previously selected items will be unloaded. To enable or disable unload of TabItemExt content the IsDisableUnloadTabItemExtContent property can be used. 
 
 
-
+{% highlight xml %}
 XAML
 
 <syncfusion:TabControlExt Name="tabcontrol" IsDisableUnloadTabItemExtContent="True">
@@ -30,15 +30,15 @@ XAML
    </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
 
 
-
-
+{% highlight c# %}
 C#
 
 tabcontrol.IsDisableUnloadTabItemExtContent = true;
-
+{% endhighlight %}
 
 
 When the value is set to true the TabItem content will not get unloaded during tab switching.

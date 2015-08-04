@@ -16,8 +16,8 @@ _FlowDirection property table_
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '*Property*' | markdownify }}</td><td>
+{{ '*Description*' | markdownify }}</td></tr>
 <tr>
 <td>
 FlowDirection</td><td>
@@ -28,7 +28,7 @@ Sets the flow direction for the TaskBar. The options provided are as follows.Lef
 Here is the code for setting this property.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -58,11 +58,11 @@ This is TaskBar that have a TaskBarItem</TextBlock>
     </syncfusion:TaskBarItem>
 
 </syncfusion:TaskBar>
+{% endhighlight %}
 
 
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -70,13 +70,12 @@ This is TaskBar that have a TaskBarItem</TextBlock>
 // Setting flow direction as right to left
 
 taskBar.FlowDirection = FlowDirection.RightToLeft;
+{% endhighlight %}
 
 
 
 
-
-{{ '![](Changing-the-flow-directions_images/Changing-the-flow-directions_img1.jpeg)' | markdownify }}
-{:.image }
+![](Changing-the-flow-directions_images/Changing-the-flow-directions_img1.jpeg)
 
 
 _FlowDirection = "RightToLeft"_
