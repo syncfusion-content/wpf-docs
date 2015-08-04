@@ -27,7 +27,7 @@ The following code example illustrates the above property settings.
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -65,9 +65,9 @@ The following code example illustrates the above property settings.
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -99,12 +99,11 @@ treeViewAdv.SelectedForeground = Brushes.Red;
 
 treeViewAdv.SelectionUnfocussedBackcolor = Brushes.Gold;
 
+{% endhighlight %}
 
 
 
-
-{{ '![](Appearance_images/Appearance_img1.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img1.jpeg)
 
 
 _SelectedBackground = "Orange"; SelectedForeground = "Red"; SelectionUnfocussedBackcolor = "Gold"_
@@ -133,8 +132,7 @@ The various built-in visual styles are listed below.
 
 
 
-[XAML]
-
+{% highlight xml %}
 
 
 <!-- Adding TreeViewAdv with visual style -->
@@ -184,10 +182,10 @@ The various built-in visual styles are listed below.
 </syncfusion:TreeViewAdv>
 
 
+{% endhighlight %}
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -195,40 +193,33 @@ The various built-in visual styles are listed below.
 
 SkinStorage.SetVisualStyle(treeViewAdv, "Office2007Blue"); 
 
+{% endhighlight %}
 
-
-{{ '![](Appearance_images/Appearance_img2.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-{{ '![](Appearance_images/Appearance_img3.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img2.jpeg)
 
 
 
 
-{{ '![](Appearance_images/Appearance_img4.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img3.jpeg)
 
 
 
 
-{{ '![](Appearance_images/Appearance_img5.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img4.jpeg)
 
 
 
 
-{{ '![](Appearance_images/Appearance_img6.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img5.jpeg)
+
+
+
+![](Appearance_images/Appearance_img6.png)
 
 
 
 
-{{ '![](Appearance_images/Appearance_img7.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img7.png)
 
 
 
@@ -239,7 +230,7 @@ You can decorate the header text of the TreeView columns using simple property s
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -307,11 +298,9 @@ You can decorate the header text of the TreeView columns using simple property s
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
-
-{{ '![](Appearance_images/Appearance_img8.jpeg)' | markdownify }}
-{:.image }
-
+![](Appearance_images/Appearance_img8.jpeg)
 
 
 
@@ -320,9 +309,7 @@ You can decorate the header text of the TreeView columns using simple property s
 The TreeViewAdv displays root lines, which link the nodes of a tree structure. These TreeViewAdv root lines are displayed or hidden by using the ShowRootLines property of the class TreeViewAdv. To set this property, use the below code
 
 
-
-[XAML]
-
+{% highlight xml %}
 
 
 <!-- Adding TreeViewAdv With show root lines -->
@@ -359,9 +346,9 @@ The TreeViewAdv displays root lines, which link the nodes of a tree structure. T
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -369,25 +356,24 @@ The TreeViewAdv displays root lines, which link the nodes of a tree structure. T
 
 treeViewAdv.ShowRootLines = false;
 
+{% endhighlight %}
+
+![](Appearance_images/Appearance_img9.jpeg)
 
 
-{{ '![](Appearance_images/Appearance_img9.jpeg)' | markdownify }}
-{:.image }
 
 
-
-
-See Also
+### See Also
 
 Line Color, Line Pen
 
-### Line Color
+#### Line Color
 
 The color of the root lines, which connect different nodes in a TreeViewAdv control is changed by using the LineBrush property. Use the following code example to set the color of the root lines.
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -426,10 +412,10 @@ The color of the root lines, which connect different nodes in a TreeViewAdv cont
 </syncfusion:TreeViewAdv>
 
 
+{% endhighlight %}
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -443,25 +429,23 @@ treeViewAdv.ShowRootLines = true;
 
 treeViewAdv.LineBrush = Brushes.Red;
 
+{% endhighlight %}
 
-
-{{ '![](Appearance_images/Appearance_img10.jpeg)' | markdownify }}
-{:.image }
-
+![](Appearance_images/Appearance_img10.jpeg)
 
 
 
-See Also
+###See Also
 
 Root Lines, Line Pen
 
-### Line Pen
+#### Line Pen
 
 The root lines which connect different nodes in a TreeViewAdv control are customized by using the LinePen property. This property specifies the pen color for a node line. To set the LinePen property, refer the below code
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -505,10 +489,9 @@ The root lines which connect different nodes in a TreeViewAdv control are custom
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
-
-[C#]
-
+{% highlight C# %}
 
 
 // Show root lines
@@ -522,16 +505,15 @@ treeViewAdv.ShowRootLines = true;
 treeViewAdv.LinePen = new Pen(Brushes.Red, 1);
 
 
+{% endhighlight %}
+
+
+![](Appearance_images/Appearance_img11.jpeg)
 
 
 
-{{ '![](Appearance_images/Appearance_img11.jpeg)' | markdownify }}
-{:.image }
 
-
-
-
-See Also
+### See Also
 
 Root Lines, Line Color
 
@@ -541,9 +523,7 @@ TreeViewAdv provides support to set the text color of the items that are dragged
 
 
 
-[XAML]
-
-
+{% highlight xml %}
 
 <!-- Adding TreeViewAdv with FakeDragIndicator and FakeItem foreground -->
 
@@ -579,9 +559,8 @@ TreeViewAdv provides support to set the text color of the items that are dragged
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
-
-[C#]
 
 
 
@@ -591,9 +570,7 @@ treeViewAdv.FakeItemForeground = Brushes.Magenta;
 
 
 
-{{ '![](Appearance_images/Appearance_img12.jpeg)' | markdownify }}
-{:.image }
-
+![](Appearance_images/Appearance_img12.jpeg)
 
 
 

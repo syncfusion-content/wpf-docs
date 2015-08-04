@@ -11,15 +11,15 @@ documentation: ug
 
 It is possible to get the intermediate value, before the value is snapped to either the tick or step value when you interact with SfRangeSlider. 
 
-IntermediateValue 
+## IntermediateValue 
 
 Gets the intermediate value. This works when ShowRange is false. 
 
-IntermediateRangeStart  
+## IntermediateRangeStart  
 
 Gets the intermediate RangeStart value. 
 
-IntermediateRangeEnd 
+## IntermediateRangeEnd 
 
 Gets the intermediate RangeEnd value.  
 

@@ -18,14 +18,14 @@ The following controls assemble the CardView control.
 
 ## CardView
 
-Use Case Scenarios
+## Use Case Scenarios
 
 CardView control helps to sort or group items based on the given field names.Structure of the CardView Control
 
 The following screenshot displays the CardView:
 
-{{ '![](Controls-and-Components_images/Controls-and-Components_img1.png)' | markdownify }}
-{:.image }
+![](Controls-and-Components_images/Controls-and-Components_img1.png)
+
 
 
 * CardViewHeader: It shows the header of the card view control
@@ -33,20 +33,22 @@ The following screenshot displays the CardView:
 
 
 
-Sample link
+## Sample link
 
 1. Select Start -> Programs -> Syncfusion -> Essential Studio 9.2.0.137 -> Dashboard.
 2. Select Run Locally Installed Samples in WPF CardView.
 3. Now select the CardView item in the tree.
 4. Choose CardView demo.
-### Appearance
+
+## Appearance
 
 
 You can customize the appearance of the ComboBoxAdv control by editing the style of the control in Expression Blend or by using the following properties exposed by CardView control:
 
 * Edit style in Expression Blend 
 * Customizing by using properties
-### Blendability
+
+## Blendability
 
 
 You can edit the style of ComboBoxAdv by using Expression Blend. To edit the ComboBoxAdv control’s style in Expression Blend:
@@ -56,17 +58,15 @@ You can edit the style of ComboBoxAdv by using Expression Blend. To edit the Com
 
 
 
-{{ '![](Controls-and-Components_images/Controls-and-Components_img2.png)' | markdownify }}
-{:.image }
+![](Controls-and-Components_images/Controls-and-Components_img2.png)
 
+## Features of CardView control
 
-### Features of CardView control
-
-#### Grouping
+## Grouping
 
 Cards inside the CardView control can be grouped by the fields available in the list. Grouping can be achieved by dragging the field from the list to the header panel in the CardView control. Grouping can be controlled by the property called CanGroup. By default CanGroup value will be true.
 
-Properties
+### Properties
 
 _Property/Properties Table_
 
@@ -88,11 +88,11 @@ NA</td></tr>
 </table>
 
 
-Adding grouping to an Application 
+### Adding grouping to an Application 
 
 CanGroup property can be added directly to an application using the following code snippet:
 
-
+{% highlight xml %}
 
 <table>
 <tr>
@@ -102,15 +102,18 @@ CanGroup property can be added directly to an application using the following co
 <td>
 [C#]CardView cardview = new CardView();       cardview.CanGroup = false;</td></tr>
 </table>
-#### Filtering
+
+{% endhighlight %}
+
+## Filtering
 
 Cards can be filtered by the values which are given for the fields. To filter the cards, just check the values in the listed popup that opens when you click the button which is available in the front of the fields list.
 
-#### Sorting
+## Sorting
 
 Cards can be sorted inside the CardView Control. It can be achieved by the fields available. To sort the cards just click on the field name listed in the header. It can be controlled by the property called CanSort. By default the value is true.
 
-Properties
+### Properties
 
 _Property/Properties Table_
 
@@ -132,11 +135,11 @@ NA</td></tr>
 </table>
 
 
-Adding sorting to an Application 
+### Adding sorting to an Application 
 
 CanSort can be added directly to an application using the following code snippet: 
 
-
+{% highlight xml %}
 
 <table>
 <tr>
@@ -146,22 +149,25 @@ CanSort can be added directly to an application using the following code snippet
 <td>
 [C#]CardView cardview = new CardView();       cardview.CanSort = false;</td></tr>
 </table>
-#### Editing
+
+{% endhighlight %}
+
+## Editing
 
 More attractive feature in the CardView control is editing. CanEdit property allows the user to edit the fields available in the cards. Moreover we can customize the Item template while editing by using the property called EditItemTemplate.
 
-Properties
+### Properties
 
 _Property/Properties Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td><td>
-Reference links</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 CanEdit</td><td>
@@ -179,9 +185,11 @@ NA</td></tr>
 </table>
 
 
-Adding editing to an Application 
+### Adding editing to an Application 
 
 CanEdit property can be added directly to an application using the following code example:
+
+{% highlight xml %}
 
 <table>
 <tr>
@@ -191,22 +199,25 @@ CanEdit property can be added directly to an application using the following cod
 <td>
 [C#]CardView cardview = new CardView();       cardview.CanEdit = false;</td></tr>
 </table>
-#### Header Panel
+
+{% endhighlight %}
+
+## Header Panel
 
 It is the base to showcase the fields when you drop the fields from the list. We can customize the visibility of the Header panel by using the property called ShowHeader.
 
-Properties
+### Properties
 
 _Property/Properties Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td><td>
-Reference links</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 ShowHeader</td><td>
@@ -217,9 +228,11 @@ NA</td></tr>
 </table>
 
 
-Adding Header Panel visibility customization to an Application 
+### Adding Header Panel visibility customization to an Application 
 
 ShowHeader property can be added directly to an application using the following code example:
+
+{% highlight xml %}
 
 <table>
 <tr>
@@ -230,9 +243,10 @@ ShowHeader property can be added directly to an application using the following 
 [C#]CardView cardview = new CardView();       cardview.ShowHeader = false;</td></tr>
 </table>
 
+{% endhighlight %}
 
-{{ '![](Controls-and-Components_images/Controls-and-Components_img3.png)' | markdownify }}
-{:.image }
+![](Controls-and-Components_images/Controls-and-Components_img3.png)
+
 
 
 

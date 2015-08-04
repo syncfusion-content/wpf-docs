@@ -11,21 +11,25 @@ documentation: ug
 
 Paging in OlapClient provides you support to load and render large amount of data without any performance constraint.  
 
-OlapPager user control is included and bounded with the same OlapDataManager object of OlapClient. To enable paging, set EnablePaging property of OlapReport object to True.
+OlapPager user control is included and bounded with the same OlapDataManager object of OlapClient. To enable paging, set EnablePaging 
+property of OlapReport object to True.
 
-When you process large CellSet, it is split into several number of segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible way by utilizing the GUI options in OlapPager. You can also change the page size at runtime by using PageSetting window.
+When you process large CellSet, it is split into several number of segments and each segment is assigned and rendered in a separate page. 
+You can navigate back and forth in all possible way by utilizing the GUI options in OlapPager. You can also change the page size at runtime
+by using PageSetting window.
 
 ## Adding OlapPager in Application
 
 1. Include the following Syncfusion assembly from the installed location.
-1. Syncfusion.OlapShared.Wpf
+   1. Syncfusion.OlapShared.Wpf
 
 Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudio\<version number>\precompiledassemblies\<version number>\
 
 2. Create a new OlapClient sample as follows.
 
-[XAML]
+{% highlight xml %}  
 
+[XAML]
 
 
 <Window       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -60,9 +64,11 @@ Title="MainWindow" Height="350" Width="525">
 
 </Window>
 
-
+{% endhighlight %}
 
 3. Enable paging in OlapReport.
+
+{% highlight C# %}  
 
 [C#]
 
@@ -154,7 +160,9 @@ public partial class MainWindow : SampleWindow
 
 } 
 
+{% endhighlight %} 
 
+{% highlight vbnet %}
 
 [VB]
 
@@ -252,17 +260,19 @@ End Class
 
 End Namespace
 
+{% endhighlight %} 
 
 
-{{ '![](Paging_images/Paging_img1.png)' | markdownify }}
-{:.image }
+
+![](Paging_images/Paging_img1.png)
 
 
-{{ '![](Paging_images/Paging_img2.png)' | markdownify }}
-{:.image }
+
+![](Paging_images/Paging_img2.png)
 
 
-Sample Link:
+
+### Sample Link:
 
 Refer to the following location for the sample:
 

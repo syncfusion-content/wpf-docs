@@ -11,7 +11,7 @@ documentation: ug
 
 The CardView control can display the given data in the format of cards. These cards can be grouped, sorted and filtered.
 
-Feature Summary
+## Feature Summary
 
 Features of the CardView control are as follows:
 

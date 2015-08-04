@@ -9,13 +9,14 @@ documentation: ug
 
 # Getting Started 
 
-Namespace : Syncfusion.Windows.Controls.Navigation 
+### Namespace : Syncfusion.Windows.Controls.Navigation 
 
-Assembly : Syncfusion.SfRadialMenu.WPF (in Syncfusion.SfRadialMenu.WPF.dll) 
+### Assembly : Syncfusion.SfRadialMenu.WPF (in Syncfusion.SfRadialMenu.WPF.dll) 
 
 The following code sample shows how to create the RadialMenu from code-behind and XAML. 
 
 
+{%highlight xaml%}
 
 [XAML]
 
@@ -42,8 +43,10 @@ The following code sample shows how to create the RadialMenu from code-behind an
 </Page> 
 
 
+{%endhighlight%}
 
 
+{%highlight c#%}
 
 [C#]
 
@@ -64,6 +67,6 @@ radialMenu.Items.Add(copy);
 radialMenu.Items.Add(paste); 
 
 
-
+{%endhighlight%}
 
 

@@ -9,7 +9,8 @@ documentation: ug
 
 # Export
 
-When creating OLAP Report in OLAP Client, the report will be previewed in the OLAP Chart and OLAP Grid. OLAP Client has the option to export the current visual of this Chart and Grid to various forms.
+When creating OLAP Report in OLAP Client, the report will be previewed in the OLAP Chart and OLAP Grid. OLAP Client has the option to 
+export the current visual of this Chart and Grid to various forms.
 
 ## Export Options in Chart
 
@@ -22,8 +23,10 @@ The current visual of the chart can be exported to the following form:
 
 By clicking the Export menus in the Chart toolbar, the user can export the chart to the corresponding mode. 
 
-{{ '![](Export_images/Export_img1.png)' | markdownify }}
-{:.image }
+![](Export_images/Export_img1.png)
+
+
+
 
 
 _Export Menus in OlapChart Toolbar:_
@@ -35,34 +38,38 @@ Icon</th><th>
 Name</th><th>
 Description</th></tr>
 <tr>
-<td>
-![](Export_images/Export_img2.png)
-{:.image }
+<td> 
+{{ '![](Export_images/Export_img2.png)' | markdownify }}
+
 </td><td>
 Export Chart</td><td>
 Export the current visual of the chart as Image</td></tr>
 <tr>
 <td>
-![](Export_images/Export_img3.png)
-{:.image }
+{{ '![](Export_images/Export_img3.png)' | markdownify }}
+
+
 </td><td>
 Print</td><td>
 Print the current visual of the chart</td></tr>
 <tr>
 <td>
-![](Export_images/Export_img4.png)
-{:.image }
+{{ '![](Export_images/Export_img4.png)' | markdownify }}
+
+
 </td><td>
 Export to word</td><td>
 Export the current visual of the chart to Word</td></tr>
 <tr>
 <td>
-![](Export_images/Export_img5.png)
-{:.image }
+{{ '![](Export_images/Export_img5.png)' | markdownify }}
+
+
 </td><td>
 Export to PDF</td><td>
 Export the current visual of the chart to PDF</td></tr>
-</table>
+</table> 
+
 ## Export Options in Grid
 
 The Grid can be exported to the following form:
@@ -76,10 +83,11 @@ The user can perform these exports in two ways:
 1. Through OlapGrid Tool Bar menu
 1. Through APIs
 
-The OlapGridtoolbar provides the menu to perform the export operation. By clicking any one of the Export buttons, the user can export the grid to the corresponding format.
+The OlapGridtoolbar provides the menu to perform the export operation. By clicking any one of the Export buttons, the user can export the 
+grid to the corresponding format.
 
-{{ '![](Export_images/Export_img6.png)' | markdownify }}
-{:.image }
+![](Export_images/Export_img6.png)
+
 
 
 _Export menus in OlapGrid Toolbar_
@@ -91,36 +99,40 @@ Icon</td><td>
 Name</td><td>
 Description</td></tr>
 <tr>
-<td>
-![](Export_images/Export_img7.png)
-{:.image }
+<td> 
+{{ '![](Export_images/Export_img7.png)' | markdownify }}
+
+
 </td><td>
 Export to Excel</td><td>
 Export the Grid to Excel</td></tr>
 <tr>
 <td>
-![](Export_images/Export_img8.png)
-{:.image }
+{{ '![](Export_images/Export_img8.png)' | markdownify }}
+
+
 </td><td>
 Export to word</td><td>
 Export the Grid to Word</td></tr>
 <tr>
-<td>
-![](Export_images/Export_img9.png)
-{:.image }
+<td> 
+{{ '![](Export_images/Export_img9.png)' | markdownify }}
+
+
 </td><td>
 Export to PDF</td><td>
 Export the Grid to PDF</td></tr>
-</table>
+</table> 
+
 ## CSV Export
 
 OLAP Client for WPF provides support to export OLAP Grid to CSV file format. 
 
-Use Case Scenarios 
+### Use Case Scenarios 
 
 You can export the contents of the OLAP Grid in OLAP Client to the CSV file format for future references and analysis purposes.
 
-Methods
+### Methods
 
 _Methods_
 
@@ -149,15 +161,16 @@ void</td></tr>
 </table>
 
 
-Adding CSV Export for OLAP Client in an application
+### Adding CSV Export for OLAP Client in an application
 
-The GridCsvExport class provides support for exporting data from OLAP Grid in OLAP Client to a CSV file format. Add the following dll, along with the default dll’s in the reference folder: 
+The GridCsvExport class provides support for exporting data from OLAP Grid in OLAP Client to a CSV file format. Add the following dll,
+along with the default dll’s in the reference folder: 
 
 * Syncfusion.OlapGridConverter.Wpf
 
 
 
-[C#] 
+{% highlight C# %}   [C#] 
 
 SaveFileDialog saveFileDialog = new SaveFileDialog();
 
@@ -187,9 +200,11 @@ if (saveFileDialog.ShowDialog() == true)
 
 } 
 
+ {% endhighlight %}
 
-
-[VB]
+ 
+ 
+{% highlight vbnet %}  [VB]
 
 Dim saveFileDialog As New SaveFileDialog()
 
@@ -215,19 +230,22 @@ End If
 
 End If
 
+{% endhighlight %}
 
 
 
 
-{{ '![](Export_images/Export_img10.png)' | markdownify }}
-{:.image }
+
+![](Export_images/Export_img10.png)
 
 
-{{ '![](Export_images/Export_img11.png)' | markdownify }}
-{:.image }
 
 
-Sample Link
+![](Export_images/Export_img11.png)
+
+
+
+### Sample Link
 
 {Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version    number>\BI\WPF\OlapClient.Wpf\Samples\Appearance\OlapClientCustomizationDemo
 

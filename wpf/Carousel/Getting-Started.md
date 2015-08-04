@@ -11,8 +11,8 @@ documentation: ug
 
 ## Structure of the Carousel Control
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 ## Add Carousel to an Application
@@ -25,8 +25,8 @@ Follow the steps to add the Carousel control by using VisualStudio.
 
 1. Open Visual Studio. On the File menu, select New -> Project. This opens the New Project Dialog box.
 
-{{ '![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+   ![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 2. In the Project Dialog window, select WPF Application and in the name field type the name of the project, and then click OK.
@@ -35,8 +35,7 @@ Follow the steps to add the Carousel control by using VisualStudio.
 
 The following code shows how the Carousel control can be added to an application:
 
-[C#]
-
+{% highlight C# %}
 
 
 Carousel carousel = new Carousel();
@@ -47,7 +46,7 @@ carousel.Items.Add(new CarouselItem() { Content = "4" });
 carousel.Items.Add(new CarouselItem() { Content = "5" });
 this.LayoutRoot.Children.Add(carousel);
 
-
+{% endhighlight %}
 
 ### Add through XAML
 
@@ -62,7 +61,7 @@ Follow the steps to add Carousel by using Visual Studio in XAML.
 
 The following code shows how Carousel can be added to an application by using Visual Studio in XAML:
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -138,12 +137,10 @@ The following code shows how Carousel can be added to an application by using Vi
 </syncfusion:Carousel>
 
 
+{% endhighlight %}
 
 
-
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
-
+![](Getting-Started_images/Getting-Started_img3.png)
 
 ### Add through Blend
 
@@ -153,9 +150,7 @@ Follow the steps to add Carousel in an application by using Blend.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
-
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -163,8 +158,7 @@ Follow the steps to add Carousel in an application by using Blend.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 3. Add the following Reference with the sample project.
@@ -181,7 +175,5 @@ Syncfusion.Shared.Wpf.dll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
-
+![](Getting-Started_images/Getting-Started_img6.png)
 

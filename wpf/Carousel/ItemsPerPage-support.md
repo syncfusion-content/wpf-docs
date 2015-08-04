@@ -11,11 +11,11 @@ documentation: ug
 
 Using ItemsPerPage property, you can get or set the number of items to be displayed in the Carousel control. Carousel panel displays only items for the currently visible items.
 
-Using ItemsPerPage in an Application
+## Using ItemsPerPage in an Application
 
 In the below sample, ItemsPerPage is set as 5. Hence, while running the sample, only 5 items will be displayed in the path.
 
-
+{% highlight xml %}
 
 <table>
 <tr>
@@ -27,22 +27,24 @@ In the below sample, ItemsPerPage is set as 5. Hence, while running the sample, 
 </table>
 
 
-{{ '![](ItemsPerPage-support_images/ItemsPerPage-support_img1.png)' | markdownify }}
-{:.image }
+{% endhighlight %}
 
 
-Properties
+![](ItemsPerPage-support_images/ItemsPerPage-support_img1.png)
+
+
+## Properties
 
  _Plan Projection Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 ItemsPerPage</td><td>

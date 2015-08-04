@@ -16,12 +16,7 @@ Follow the below steps to add ToolBarAdv Control to WPF Application:
 1. Create a new WPF project.
 2. ToolBarAdv Control will be listed in the Tool Box.
 
-
-
-
-
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -30,26 +25,27 @@ Follow the below steps to add ToolBarAdv Control to WPF Application:
 
 
 
-> _Note: Following XAML code will be automatically added in the XAML Viewer. You can also manually add this code instead of dragging the control from ToolBox._
+> Note: Following XAML code will be automatically added in the XAML Viewer. You can also manually add this code instead of dragging the control from ToolBox.
 
 
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:ToolBarAdv Height="100" HorizontalAlignment="Left" Margin="92,90,0,0" Name="toolBarAdv1" VerticalAlignment="Top" Width="200" />
 
 
-
+{% endhighlight %}
 
 
 4. ToolBarAdv Control is added.
+
 ## Appearance and Structure of the Control
 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 * The Overflow Button is the ToggleButton, when you click this OverflowPanel will be displayed.
@@ -67,12 +63,12 @@ _Properties of ToolBarAdv_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 Band</td><td>
@@ -171,12 +167,12 @@ _ToolBarTrayAdv_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 IsLocked</td><td>
@@ -205,12 +201,12 @@ _ToolBarManager_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td><td>
-Reference links</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 TopToolBarTray</td><td>

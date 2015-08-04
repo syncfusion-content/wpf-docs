@@ -17,7 +17,7 @@ You can bind the custom object to the DataContext property of the control, and t
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -70,10 +70,10 @@ You can bind the custom object to the DataContext property of the control, and t
 </Window>
 
 
+{% endhighlight %}
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -146,12 +146,10 @@ public class TreeViewHeader
 }
 
 
+{% endhighlight %}
 
 
-
-{{ '![](Data-Binding_images/Data-Binding_img1.jpeg)' | markdownify }}
-{:.image }
-
+![](Data-Binding_images/Data-Binding_img1.jpeg)
 
 
 

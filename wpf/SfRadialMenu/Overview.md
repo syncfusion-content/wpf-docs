@@ -21,7 +21,7 @@ Key Features
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/1.png](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![][C:/Users/ApoorvahR/Desktop/1.png](Overview_images/Overview_img1.png)
+
 
 

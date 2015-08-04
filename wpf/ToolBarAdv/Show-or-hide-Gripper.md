@@ -13,19 +13,17 @@ You can show or hide the gripper in ToolBarAdv using the _GripperVisibility_ pro
 
 Following code illustrates how to hide the gripper:
 
-
-
-[XAML]
+{% highlight xml %}
 
 
 
 <shared:ToolBarAdv GripperVisibility="Collapsed" ></shared:ToolBarAdv>
 
 
+{% endhighlight %}
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -34,11 +32,10 @@ ToolBarAdv toolBar = new ToolBarAdv();
             toolBar.GripperVisibility = Visibility.Collapsed;
 
 
+{% endhighlight %}
 
 
-
-{{ '![](Show-or-hide-Gripper_images/Show-or-hide-Gripper_img1.png)' | markdownify }}
-{:.image }
+![](Show-or-hide-Gripper_images/Show-or-hide-Gripper_img1.png)
 
 
 

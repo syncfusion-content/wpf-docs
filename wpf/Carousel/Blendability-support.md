@@ -11,7 +11,7 @@ documentation: ug
 
 The template of the Carousel control can be easily editable in Expression Blend, to give a nice look and feel.
 
-Using Blendability Support in an Application
+## Using Blendability Support in an Application
 
 Following are the steps to edit the template in Expression Blend.
 
@@ -20,8 +20,8 @@ Following are the steps to edit the template in Expression Blend.
 
 
 
-{{ '![](Blendability-support_images/Blendability-support_img1.png)' | markdownify }}
-{:.image }
+   ![](Blendability-support_images/Blendability-support_img1.png)
+
 
 
 
@@ -30,8 +30,8 @@ A window opens as shown below where you can create a new style for the Carousel 
 
 
 
-{{ '![](Blendability-support_images/Blendability-support_img2.png)' | markdownify }}
-{:.image }
+   ![](Blendability-support_images/Blendability-support_img2.png)
+
 
 
 
@@ -40,16 +40,15 @@ What’s produced through this set of steps is quite a bit of XAML which is plac
 
 
 
-{{ '![](Blendability-support_images/Blendability-support_img3.png)' | markdownify }}
-{:.image }
+   ![](Blendability-support_images/Blendability-support_img3.png)
+
 
 
 
 
 Now you can edit each part in the template and can create custom look and feel for the control. In the following example, template for CarouselItem is edited to give a reflection effect.
 
-[XAML]
-
+{% highlight xml %}
 
 
         <Style TargetType="syncfusion:CarouselItem">
@@ -87,11 +86,11 @@ Now you can edit each part in the template and can create custom look and feel f
             </Setter>
         </Style>
 
+{% endhighlight %}
 
 
 
+![](Blendability-support_images/Blendability-support_img4.png)
 
-{{ '![](Blendability-support_images/Blendability-support_img4.png)' | markdownify }}
-{:.image }
 
 
