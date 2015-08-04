@@ -15,7 +15,7 @@ The following code illustrates how to set orientation:
 
 
 
-[XAML]           
+{% highlight xml %}          
 
             <shared:ToolBarTrayAdv Orientation="Vertical" >
 
@@ -60,10 +60,10 @@ The following code illustrates how to set orientation:
                 </shared:ToolBarTrayAdv>
 
 
+{% endhighlight %}
 
 
-
-[C#]
+{% highlight C# %}
 
 ToolBarTrayAdv tray = new ToolBarTrayAdv();
 
@@ -128,12 +128,8 @@ ToolBarTrayAdv tray = new ToolBarTrayAdv();
             tray.ToolBars.Add(toolBar);
 
 
+{% endhighlight %}
 
 
-
-{{ '![](Orientation-of-ToolBarTrayAdv_images/Orientation-of-ToolBarTrayAdv_img1.png)' | markdownify }}
-{:.image }
-
-
-
+![](Orientation-of-ToolBarTrayAdv_images/Orientation-of-ToolBarTrayAdv_img1.png)
 

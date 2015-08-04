@@ -12,7 +12,7 @@ documentation: ug
 You can set the selected page by using the IsSelectedPage property. If this property is set to _true_, the page is selected, else it is not selected.
 
 
-
+{% highlight xml %}
 [XAML]
 
  <!-- Adding TabSplitter -->
@@ -23,7 +23,7 @@ You can set the selected page by using the IsSelectedPage property. If this prop
 
     <!-- Adding TabSplitterItem -->
 
-<syncfusion:TabSplitterItem Header="Window1.xaml"  Name="tabSplitterItem1">
+<syncfusion:TabSplitterItem Header="Window1.xml"  Name="tabSplitterItem1">
 
 
 
@@ -60,9 +60,9 @@ You can set the selected page by using the IsSelectedPage property. If this prop
 
 
 </syncfusion:TabSplitter>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
  [C#]
 
 
@@ -70,11 +70,11 @@ You can set the selected page by using the IsSelectedPage property. If this prop
 // Enable the IsSelectedPage property.
 
 splitterPage1.IsSelectedPage = true;
+{% endhighlight %}
 
 
+![](Selected-Page_images/Selected-Page_img1.png)
 
-{{ '![](Selected-Page_images/Selected-Page_img1.png)' | markdownify }}
-{:.image }
 
 
 

@@ -32,11 +32,11 @@ The visual style can be applied in XAML as follows:
 
 
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:TreeViewAdv        syncfusion:SkinStorage.VisualStyle="Office2010Blue"/>    
 
-
+{% endhighlight %}
 
 
 
@@ -46,12 +46,12 @@ Visual styles can be applied in C# as follows:
 
 
 
-[C#]
+{% highlight C# %}
 
 SkinStorage.SetVisualStyle(treeviewAdvinstance, "Office2010Blue");
 
 
-
+{% endhighlight %}
 
 
 ## ItemContainerStyle
@@ -60,11 +60,9 @@ The ItemContainerStyle property of the TreeViewAdv is used to set the style of t
 
 1. Create the Style for TreeViewItemAdv as follows :
 
+   ~~~ css
 
-
-[XAML]
-
-   <Style TargetType="{x:Type syncfusion:TreeViewItemAdv}" 			x:Key="treeViewAdvItemContainerStyle">
+        <Style TargetType="{x:Type syncfusion:TreeViewItemAdv}" 			x:Key="treeViewAdvItemContainerStyle">
 
             <Setter Property="IsExpanded" Value="True"/>
 
@@ -76,19 +74,18 @@ The ItemContainerStyle property of the TreeViewAdv is used to set the style of t
 
             <Setter Property="FontWeight" Value="Bold"/>
 
-   </Style>	
+         </Style>	
 
-
-
+   ~~~
+   {:.prettyprint }
 
 
 2. Set the ItemContainerStyle of the TreeViewAdv as follows:
 
+   ~~~ xml
 
-
-[XAML]
-
-<syncfusion:TreeViewAdv  ItemsSource="{Binding TreeItems}"            
+       
+       <syncfusion:TreeViewAdv  ItemsSource="{Binding TreeItems}"            
 
          ItemTemplate="{StaticResource NormalTemplate}"
 
@@ -96,17 +93,15 @@ The ItemContainerStyle property of the TreeViewAdv is used to set the style of t
 
             />
 
-
-
+   ~~~
+   {:.prettyprint }
 
 
 The TreeViewAdv will be generated as follows:
 
 
 
-{{ '![](Styling_images/Styling_img1.png)' | markdownify }}
-{:.image }
-
+![](Styling_images/Styling_img1.png)
 
 
 
@@ -116,59 +111,51 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 1. Create the StyleSelector as given in the following code snippet:
 
+   ~~~ cs
+
+		public class TreeViewAdvItemContainerStyleSelector : StyleSelector
+
+		{
+			public override Style SelectStyle(object item, DependencyObject container)
+
+			{
+				Window window = Application.Current.MainWindow;
 
 
-[C#]
+				if (((Model)item).Level == 0)
 
-public class TreeViewAdvItemContainerStyleSelector : StyleSelector
-
-    {
-
-
-
-        public override Style SelectStyle(object item, DependencyObject container)
-
-        {
-
-
-
-            Window window = Application.Current.MainWindow;
-
-
-
-            if (((Model)item).Level == 0)
-
-            {
+				{
 
                 return ((Style)window.Resources["RootItemsStyle"]);
 
-            }
+				}
 
-            else
+				else
 
-            {
+				{
 
-                return ((Style)window.Resources["InnerItemsStyle"]);
+					return ((Style)window.Resources["InnerItemsStyle"]);
 
-            }           
+				}           
 
 
 
-        }
+			}
 
-    }
-
+		}
+		
+   ~~~
+   {:.prettyprint }
 
 
 
 
 2. Create the style in the Window’s resource as follows:
 
+   ~~~ css
 
-
-[XAML]
-
-<Style TargetType="{x:Type syncfusion:TreeViewItemAdv}" 		x:Key="RootItemsStyle">
+		
+       <Style TargetType="{x:Type syncfusion:TreeViewItemAdv}" 		x:Key="RootItemsStyle">
 
             <Setter Property="IsExpanded" Value="True"/>
 
@@ -184,7 +171,7 @@ public class TreeViewAdvItemContainerStyleSelector : StyleSelector
 
 
 
-        <Style TargetType="{x:Type syncfusion:TreeViewItemAdv}" x:Key="InnerItemsStyle">
+         <Style TargetType="{x:Type syncfusion:TreeViewItemAdv}" x:Key="InnerItemsStyle">
 
             <Setter Property="IsExpanded" Value="True"/>
 
@@ -194,7 +181,11 @@ public class TreeViewAdvItemContainerStyleSelector : StyleSelector
 
             <Setter Property="FontStyle" Value="Italic"/>           
 
-        </Style>
+         </Style>
+		
+   ~~~
+   {:.prettyprint }
+
 
 
 
@@ -202,39 +193,36 @@ public class TreeViewAdvItemContainerStyleSelector : StyleSelector
 
 3. Define the style selector in the Window’s resource as follows:
 
+   ~~~ xml
 
-
-[XAML]
-
-<local:TreeViewAdvItemContainerStyleSelector x:Key="treeViewAdvItemContainerStyleSelector"/>
-
-
-
+       <local:TreeViewAdvItemContainerStyleSelector x:Key="treeViewAdvItemContainerStyleSelector"/>
+		
+   ~~~
+   {:.prettyprint }
 
 
 4. Set the ItemContainerStyle for the TreeViewAdv as follows:
 
+   ~~~ xml
 
-
-[XAML]
-
-<syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}"            
+   
+       <syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}"            
 
                         ItemTemplate="{StaticResource NormalTemplate}"
 
                         ItemContainerStyleSelector="{StaticResource treeViewAdvItemContainerStyleSelector}"  />
 
 
-
+		
+   ~~~
+   {:.prettyprint }
 
 
 The TreeViewAdv generates as shown in the following screen shot:
 
 
 
-{{ '![](Styling_images/Styling_img2.png)' | markdownify }}
-{:.image }
-
+![](Styling_images/Styling_img2.png)
 
 
 
@@ -244,61 +232,51 @@ The user can customize the style of the expander displayed in the TreeViewAdv us
 
 1. Create the style for the Expander as given in the following code snippet:
 
+   ~~~ xml
+  
+       <Style TargetType="{x:Type Expander}" x:Key="expanderStyle">
 
+         <Setter Property="Template" >
 
-[XAML]
-
-<Style TargetType="{x:Type Expander}" x:Key="expanderStyle">
-
-   <Setter Property="Template" >
-
-     <Setter.Value>
-
-
-
-       <ControlTemplate TargetType="{x:Type Expander}">
+         <Setter.Value>
+		 
+         <ControlTemplate TargetType="{x:Type Expander}">
 
          <CheckBox IsChecked="{Binding 		Path=IsExpanded,RelativeSource={RelativeSource AncestorType={x:Type 	Expander}}, Mode=TwoWay}"></CheckBox>
 
          </ControlTemplate>
 
+         </Setter.Value>
 
+         </Setter>
 
-      </Setter.Value>
-
-   </Setter>
-
- </Style>
-
-
-
+         </Style>
+		 
+   ~~~
+   {:.prettyprint }
 
 
 2. Set the style to the ExpanderStyle property of the TreeViewAdv.
 
+   ~~~ xml
 
-
-[XAML]
-
-<syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}"            
+        <syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}"            
 
                         ItemTemplate="{StaticResource NormalTemplate}"
 
                         ExpanderStyle="{StaticResource expanderStyle}"
 
                                  />
-
-
-
+	
+   ~~~
+   {:.prettyprint }
 
 
 The TreeViewAdv generates as shown in the following screenshot:
 
 
 
-{{ '![](Styling_images/Styling_img3.png)' | markdownify }}
-{:.image }
-
+![](Styling_images/Styling_img3.png)
 
 
 

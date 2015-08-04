@@ -19,7 +19,7 @@ TabSplitter Items are placed horizontally or vertically by using the Orientation
 Set the orientation using the code given below:
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -32,7 +32,7 @@ Set the orientation using the code given below:
 
     <!-- Adding TabSplitterItem -->
 
-    <syncfusion:TabSplitterItem Header="Window1.xaml" Orientation="Vertical" Name="tabSplitterItem1">
+    <syncfusion:TabSplitterItem Header="Window1.xml" Orientation="Vertical" Name="tabSplitterItem1">
 
 
 
@@ -68,10 +68,10 @@ Set the orientation using the code given below:
 
 </syncfusion:TabSplitter>
 
+{% endhighlight %}
 
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -79,13 +79,13 @@ Set the orientation using the code given below:
 // Set the Orientation
 
 tabSplitterItem1.Orientation = Orientation.Vertical;
+{% endhighlight %}
 
 
 
 
+![](Orientation_images/Orientation_img1.png)
 
-{{ '![](Orientation_images/Orientation_img1.png)' | markdownify }}
-{:.image }
 
 
 

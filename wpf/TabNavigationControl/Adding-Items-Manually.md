@@ -12,7 +12,7 @@ documentation: ug
 Tab Navigation control is based on Items control. Therefore, items can be added through the property Items in Tab Navigation control. Any kind of items can be added into Tab Navigation control, which will be wrapped by the container Tab Navigation Item.
 
 
-
+{% highlight xml %}
 XAML
 
   <syncfusion:TabNavigationControl TransitionEffect="Slide" >
@@ -76,11 +76,11 @@ XAML
 
 
         </syncfusion:TabNavigationControl>
+{% endhighlight %}
 
 
 
-
-
+{% highlight c# %}
 C#
 
 TabNavigationControl tabNavControl = new TabNavigationControl();
@@ -127,10 +127,10 @@ TabNavigationControl tabNavControl = new TabNavigationControl();
 
             tabNavControl.Items.Add(item4);
 
+{% endhighlight  %}
 
 
-
-
+{% highlight vb %}
 [VB.NET]
 
 
@@ -178,13 +178,13 @@ tabNavControl.Items.Add(item2)
 tabNavControl.Items.Add(item3)
 
 tabNavControl.Items.Add(item4)
+{% endhighlight %}
 
 
 
 
+![](Adding-Items-Manually_images/Adding-Items-Manually_img1.png)
 
-{{ '![](Adding-Items-Manually_images/Adding-Items-Manually_img1.png)' | markdownify }}
-{:.image }
 
 
 

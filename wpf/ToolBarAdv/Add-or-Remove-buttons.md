@@ -11,7 +11,7 @@ documentation: ug
 
 ToolBarAdv provides option to show or hide an item. By default, the Add or Remove Button will be listed in the overflow popup. When you click Add or Remove Button, a popup will display the items available in ToolBarAdv. Unselect the respective checkboxes of the items you want to hide.
 
-Adding an Item to Add or Remove Button
+## Adding an Item to Add or Remove Button
 
 You can add an item to Add or Remove Buttons, setting the ToolBarAdv.Icon and ToolBarAdv.Label properties. 
 
@@ -19,7 +19,7 @@ Following code illustrates how to add an item in Add or Remove Buttons:
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -41,11 +41,10 @@ Following code illustrates how to add an item in Add or Remove Buttons:
 
                     </shared:ToolBarAdv>
 
+{% endhighlight %}
 
 
-
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -103,12 +102,11 @@ ToolBarAdv toolBar = new ToolBarAdv();
 
             toolBar.Items.Add(button);
 
+{% endhighlight %}
 
 
 
-
-{{ '![](Add-or-Remove-buttons_images/Add-or-Remove-buttons_img1.png)' | markdownify }}
-{:.image }
+![](Add-or-Remove-buttons_images/Add-or-Remove-buttons_img1.png)
 
 
 

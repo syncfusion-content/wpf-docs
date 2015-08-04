@@ -13,8 +13,8 @@ documentation: ug
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 > _Note: Support for Skins is provided only in Silverlight and not in WPF._
@@ -25,8 +25,8 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 1. Open a VS2010 project. The Syncfusion controls are listed in the toolbox.
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 
@@ -35,8 +35,7 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -45,8 +44,8 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 
@@ -55,8 +54,7 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
 
 
 5. Add Items to the control manually or through Items Source property.
@@ -66,8 +64,8 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
+
 
 
 
@@ -78,7 +76,7 @@ To enable transition effects, items should be added to the control. The followin
 
 ### Properties
 
-Tab Navigation Control
+#### Tab Navigation Control
 
 
 
@@ -87,10 +85,10 @@ _Property table_
 <table>
 <tr>
 <th>
-Properties</th><th>
-Description</th><th>
-Type Of Property</th><th>
-Acceptable Value</th></tr>
+{{ '*Properties*' | markdownify }}</th><th>
+{{ '*Description*' | markdownify }}</th><th>
+{{ '*Type Of Property*' | markdownify }}</th><th>
+{{ '*Acceptable Value*' | markdownify }}</th></tr>
 <tr>
 <td>
 HeaderVisibility</td><td>
@@ -119,7 +117,7 @@ TransitionEffects (Enum)</td><td>
 
 
 
-Tab Navigation Item
+#### Tab Navigation Item
 
 
 
@@ -128,10 +126,10 @@ _Property Table_
 <table>
 <tr>
 <td>
-Properties</td><td>
-Description</td><td>
-Type Of Property</td><td>
-Acceptable Value</td></tr>
+{{ '*Properties*' | markdownify }}</td><td>
+{{ '*Description*' | markdownify }}</td><td>
+{{ '*Type Of Property*' | markdownify }}</td><td>
+{{ '*Acceptable Value*' | markdownify }}</td></tr>
 <tr>
 <td>
 Header</td><td>
@@ -156,8 +154,8 @@ _Event Table_
 <table>
 <tr>
 <td>
-Name</td><td>
-Description</td></tr>
+{{ '*Name*' | markdownify }}</td><td>
+{{ '*Description*' | markdownify }}</td></tr>
 <tr>
 <td>
 SelectionChanging</td><td>
@@ -178,8 +176,8 @@ To view samples:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 
@@ -196,16 +194,16 @@ The User Interface edition panel is displayed by default.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
+
 
 
 
 
 2. Click Run Locally Installed Samples. The WPF Sample Browser displays.
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
+
 
 
 3. On the left pane, go to Tab Navigation ->Tab Navigation Demo.

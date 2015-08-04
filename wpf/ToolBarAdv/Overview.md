@@ -11,11 +11,11 @@ documentation: ug
 
 ToolBarAdv control is a container for a group of commands or control, which have relative functions. Usually they consist of buttons to invoke the commands. 
 
-IT Scenarios
+## IT Scenarios
 
 ToolBarAdv control helps you access the frequently used commends easily. 
 
-Feature List:
+## Feature List:
 
 Following features are available in ToolBarAdv:
 
@@ -30,7 +30,7 @@ Following features are available in ToolBarAdv:
 
 
 
-Samples Link
+## Samples Link
 
 To view a sample:
 

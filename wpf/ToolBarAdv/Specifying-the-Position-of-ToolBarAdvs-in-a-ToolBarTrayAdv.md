@@ -14,8 +14,7 @@ You can specify the position the ToolBarAdv in the ToolBarTrayAdv using the Band
 Specify the position the ToolBarAdv in the ToolBarTrayAdv as given in the following code:
 
 
-
-[XAML]
+{% highlight xml %}
 
 
 
@@ -61,11 +60,11 @@ Specify the position the ToolBarAdv in the ToolBarTrayAdv as given in the follow
 
                 </shared:ToolBarTrayAdv>
 
+{% endhighlight %}
 
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -175,11 +174,9 @@ button = new Button();
 
 
 
+{% endhighlight %}
 
-
-{{ '![](Specifying-the-Position-of-ToolBarAdvs-in-a-ToolBarTrayAdv_images/Specifying-the-Position-of-ToolBarAdvs-in-a-ToolBarTrayAdv_img1.png)' | markdownify }}
-{:.image }
-
+![](Specifying-the-Position-of-ToolBarAdvs-in-a-ToolBarTrayAdv_images/Specifying-the-Position-of-ToolBarAdvs-in-a-ToolBarTrayAdv_img1.png)
 
 
 

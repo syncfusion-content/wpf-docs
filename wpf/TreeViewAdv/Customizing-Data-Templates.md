@@ -17,7 +17,7 @@ The user can customize the business object that has to be displayed as TreeViewI
 
 
 
-[XAML]
+{% highlight xml %}
 
 <HierarchicalDataTemplate ItemsSource="{Binding Models}">
 
@@ -29,14 +29,11 @@ The user can customize the business object that has to be displayed as TreeViewI
 
 </HierarchicalDataTemplate>
 
+{% endhighlight %}
 
 
 
-
-{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)' | markdownify }}
-{:.image }
-
-
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
 
 
 The icon in front of the checkbox is created using the LeftImageSource option available in the TreeViewItemADv.
@@ -53,7 +50,7 @@ The following example illustrates this:
 
 
 
-[C#]
+{% highlight C# %}
 
 public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 
@@ -89,7 +86,7 @@ public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 
 
 
-
+{% endhighlight %}
 
 
 
@@ -97,7 +94,7 @@ public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 
 
 
-[XAML]
+{% highlight xml %}
 
 <HierarchicalDataTemplate ItemsSource="{Binding SubItems}" 		x:Key="CheckableTemplate">
 
@@ -121,7 +118,7 @@ public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 
 </HierarchicalDataTemplate>
 
-
+{% endhighlight %}
 
 
 
@@ -129,34 +126,31 @@ public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 
 
 
-[XAML]
+{% highlight xml %}
 
 <local:TreeViewAdvItemTemplateSelector x:Key="treeViewItemTemplateSelector"/>
 
 
-
+{% endhighlight %}
 
 
 4. Use the template selector to choose the template for the TreeViewAdv as follows:
 
 
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}" 		ItemTemplateSelector="{StaticResource treeViewItemTemplateSelector}">           
 
 </syncfusion:TreeViewAdv>
 
-
+{% endhighlight %}
 
 The TreeVewAdv generates as shown in the following screenshot:
 
 
 
-{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)' | markdownify }}
-{:.image }
-
-
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
 
 
 ## Edit Template
@@ -167,7 +161,7 @@ The user can modify the template while editing the TreeViewItemAdv. The followin
 
 
 
-[XAML]
+{% highlight xml %}
 
 <DataTemplate x:Key="EditTemplate">
 
@@ -180,29 +174,27 @@ The user can modify the template while editing the TreeViewItemAdv. The followin
 </DataTemplate>
 
 
-
+{% endhighlight %}
 
 
 2. Set the EditedItemTemplate for the TreeViewAdv to the above template as follows:
 
 
-
-[XAML]
+{% highlight xml %}
 
 <syncfusion:TreeViewAdv EditedItemTemplate="{StaticResource EditTemplate}" ItemsSource="{Binding TreeItems}" >
 
 </syncfusion:TreeViewAdv>
 
 
-
+{% endhighlight %}
 
 
 While editing the TreeViewItemAdv appears as shown in the following screen shot:
 
 
 
-{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)' | markdownify }}
-{:.image }
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
 
 
 
@@ -217,7 +209,7 @@ The following example explains how to choose the template at runtime:
 
 
 
-[C#]
+{% highlight C# %}
 
 public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 
@@ -251,7 +243,7 @@ public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 
     }
 
-
+{% endhighlight %}
 
 
 
@@ -259,7 +251,7 @@ public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 
 
 
-[XAML]
+{% highlight xml %}
 
 <DataTemplate  x:Key="CheckableEditTemplate">
 
@@ -275,7 +267,7 @@ public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 
 </DataTemplate>
 
-
+{% endhighlight %}
 
 
 
@@ -283,11 +275,11 @@ public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 
 
 
-[XAML]
+{% highlight xml %}
 
 <local:TreeViewAdvEditTemplateSelector x:Key="treeViewAdvEditTemplateSelector"/>
 
-
+{% endhighlight %}
 
 
 
@@ -295,7 +287,7 @@ public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 
 
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:TreeViewAdv 
 
@@ -303,15 +295,13 @@ EditedItemTemplateSelector="{StaticResource treeViewAdvEditTemplateSelector}"
 
 ItemsSource="{Binding TreeItems}" />           
 
-
+{% endhighlight %}
 
 The TreeViewAdv generates as shown in the following screenshot:
 
 
 
-{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img4.png)' | markdownify }}
-{:.image }
-
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img4.png)
 
 
 

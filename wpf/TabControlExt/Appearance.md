@@ -13,8 +13,8 @@ This section deals with the appearance of TabControlExt control and contains the
 
 
 
-{{ '![](Appearance_images/Appearance_img1.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img1.jpeg)
+
 
 
 
@@ -30,8 +30,8 @@ _Property table_
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '*Property*' | markdownify }}</td><td>
+{{ '*Description*' | markdownify }}</td></tr>
 <tr>
 <td>
 VisualStyle</td><td>
@@ -42,7 +42,7 @@ Sets the visual style for the TabControlExt control. The options provided are as
 The following code example illustrates how to set the visual style for the TabControlExt.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -64,9 +64,9 @@ The following code example illustrates how to set the visual style for the TabCo
     <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"/>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -130,69 +130,69 @@ stackPanel.Children.Add(tabControlExt);
 // Setting the visual style as Office2007Blue
 
 SkinStorage.SetVisualStyle(tabControlExt, "Office2007Blue");
+{% endhighlight %}
+
+
+
+
+![C:/Users/ramalakshmim/Desktop/ugss/tab/7blue.png](Appearance_images/Appearance_img2.png)
 
 
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/7blue.png](Appearance_images/Appearance_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/tab/7black.png](Appearance_images/Appearance_img3.png)
 
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/7black.png](Appearance_images/Appearance_img3.png)' | markdownify }}
-{:.image }
+
+![C:/Users/ramalakshmim/Desktop/ugss/tab/7silver.png](Appearance_images/Appearance_img4.png)
 
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/7silver.png](Appearance_images/Appearance_img4.png)' | markdownify }}
-{:.image }
+
+![C:/Users/ramalakshmim/Desktop/ugss/tab/10blue.png](Appearance_images/Appearance_img5.png)
 
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/10blue.png](Appearance_images/Appearance_img5.png)' | markdownify }}
-{:.image }
+
+![C:/Users/ramalakshmim/Desktop/ugss/tab/10black.png](Appearance_images/Appearance_img6.png)
 
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/10black.png](Appearance_images/Appearance_img6.png)' | markdownify }}
-{:.image }
+
+![C:/Users/ramalakshmim/Desktop/ugss/tab/10silver.png](Appearance_images/Appearance_img7.png)
 
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/10silver.png](Appearance_images/Appearance_img7.png)' | markdownify }}
-{:.image }
+
+![C:/Users/ramalakshmim/Desktop/ugss/tab/vs2010.png](Appearance_images/Appearance_img8.png)
 
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/vs2010.png](Appearance_images/Appearance_img8.png)' | markdownify }}
-{:.image }
+
+![](Appearance_images/Appearance_img9.jpeg)
 
 
 
 
-{{ '![](Appearance_images/Appearance_img9.jpeg)' | markdownify }}
-{:.image }
 
-
-
-
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/tab/metro.png](Appearance_images/Appearance_img10.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/tab/metro.png](Appearance_images/Appearance_img10.png)
 
 
 
 
 
 
-{{ '![](Appearance_images/Appearance_img11.png)' | markdownify }}
-{:.image }
+
+![](Appearance_images/Appearance_img11.png)
+
 
 
 
@@ -208,10 +208,10 @@ _Customization Properties_
 <table>
 <tr>
 <th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
+{{ '*Property*' | markdownify }}</th><th>
+{{ '*Description*' | markdownify }}</th><th>
+{{ '*Type*' | markdownify }}</th><th>
+{{ '*Data Type*' | markdownify }}</th></tr>
 <tr>
 <th>
 TabItemSelectedBackground</th><th>
@@ -254,7 +254,7 @@ Brush</th></tr>
 The following code example shows how to use the customization properties in the TabControlExt control.
 
 
-
+{% highlight xml %}
 [XAML]
 
 <sync:TabControlExt TabItemSelectedBackground="Gold" Height="100" Margin="100"
@@ -277,7 +277,7 @@ The following code example shows how to use the customization properties in the 
 
 </sync:TabControlExt>
 
-
+{% endhighlight %}
 
 
 
@@ -285,8 +285,8 @@ The following screenshot is the sample output for the above code example.
 
 
 
-{{ '![](Appearance_images/Appearance_img12.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img12.png)
+
 
 
 

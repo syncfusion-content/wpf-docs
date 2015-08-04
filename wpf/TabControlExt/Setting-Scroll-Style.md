@@ -21,7 +21,7 @@ The following Tab Scroll styles supported by the TabControlExt control.
 The following code snippet illustrates how to set the Tab Scroll style as "Extended".
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -55,9 +55,9 @@ The following code snippet illustrates how to set the Tab Scroll style as "Exten
     </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -101,23 +101,23 @@ tabControlExt.TabScrollStyle = TabScrollStyle.Extended;
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt); 
+{% endhighlight %}
+
+
+![](Setting-Scroll-Style_images/Setting-Scroll-Style_img1.jpeg)
 
 
 
-{{ '![](Setting-Scroll-Style_images/Setting-Scroll-Style_img1.jpeg)' | markdownify }}
-{:.image }
 
 
-
-
-TabScrollStyleChanged Event
+## TabScrollStyleChanged Event
 
 This event is triggered when the TabScrollStyle property is changed.
 
 When the TabControlExt has many Tab Items, it is complicated to scroll the Tab Items in the Normal mode. In such cases, the Tab Scroll style is switched to the Extended mode. The following code illustrates how this is done.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -141,7 +141,7 @@ if (tabControlExt.TabScrollStyle == TabScrollStyle.Extended)
 tabControlExt.TabItemSize = TabItemSizeMode.ShrinkToFit;
 
 }
-
+{% endhighlight %}
 
 
 In the above example, the Tab Item Size Mode is set to "ShrinkToFit" when the Tab Scroll style is switched to the Extended mode.

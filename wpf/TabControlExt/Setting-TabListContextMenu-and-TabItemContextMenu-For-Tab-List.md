@@ -14,7 +14,7 @@ In TabControlExt, context menu is displayed for the Tab List by setting the Show
 The headers of all the Tab Items are displayed as the menu items of the Tab List context menu using the below code snippet.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -40,9 +40,9 @@ The headers of all the Tab Items are displayed as the menu items of the Tab List
     </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -86,11 +86,10 @@ tabControlExt.ShowTabListContextMenu = true;
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt);
+{% endhighlight %}
 
 
-
-{{ '![](Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-List_images/Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-List_img1.jpeg)' | markdownify }}
-{:.image }
+![](Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-List_images/Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-List_img1.jpeg)
 
 
 

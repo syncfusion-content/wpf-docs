@@ -11,8 +11,7 @@ documentation: ug
 
 ## Control Structure
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 ## Create the CardView Control
@@ -23,8 +22,7 @@ The CardView control can be created through Visual Studio, Expression Blend, XAM
 
 To create the CardView control through Visual Studio, drag the CardView from the Toolbox and drop it in the Designer area. It generates the CardView control.
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
 ### Through Expression Blend
@@ -39,20 +37,17 @@ The CardView control can also be created and configured using Expression Blend. 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 3. Drag the CardView to the designer. This generates the following CardView control.
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 4. To add the items to the CardView by using the CollectionEditor, select the CardView and go to Properties area, and then click Items (Collection) under Common Properties.
 
-{{ '![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -61,8 +56,7 @@ The CardView control can also be created and configured using Expression Blend. 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -71,13 +65,13 @@ The CardView control can also be created and configured using Expression Blend. 
 
 
 
-> _Note: You can also customize the appearance of CardView control and its items using the template editing feature available in the Expression Blend._
+> Note: You can also customize the appearance of CardView control and its items using the template editing feature available in the Expression Blend.
 
 ### Through XAML
 
 To create the CardView control through XAML, add the following namespace to the directives list.
 
-[XAML]
+{% highlight xml %}
 
 xmlns:syncfusion=http://schemas.syncfusion.com/wpf
 
@@ -85,7 +79,7 @@ xmlns:syncfusion=http://schemas.syncfusion.com/wpf
 
 After adding the above namespace the CardViewControl can be added to the application as follows:
 
-[XAML]
+
 
          <syncfusion:CardView >
 
@@ -140,26 +134,26 @@ After adding the above namespace the CardViewControl can be added to the applica
         </syncfusion:CardView>
 
 
-
+{% endhighlight %}
 
 
 ### Through C#
 
 To create the CardView control through C#, include the following namespace to the directives list.
 
-[C#]
+{% highlight C# %}
 
 using Syncfusion.Windows.Tools.Controls;
 
 
-
+{% endhighlight %}
 
 
 Next, create the CardView control as illustrated in the following code example.
 
-[C#]
 
 
+{% highlight C# %}
 
 CardView cardView = new CardView();
 
@@ -171,7 +165,7 @@ CardView cardView = new CardView();
 
             cardView.Items.Add(cardViewItem1);
 
-
+{% endhighlight %}
 
 
 

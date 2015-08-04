@@ -16,7 +16,7 @@ The icon of legend item can be set by LegendIconStyle of TreeMapLegend. Custom l
 The legend can be positioned to Left, Right, Top or Bottom of TreeMap with the help of LegendPosition property.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -74,10 +74,10 @@ The legend can be positioned to Left, Right, Top or Bottom of TreeMap with the h
     </syncfusion:SfTreeMap.Levels>
 
 </syncfusion:SfTreeMap>
+{% endhighlight %}
 
 
+![](TreeMap-Legend_images/TreeMap-Legend_img1.png)
 
-{{ '![](TreeMap-Legend_images/TreeMap-Legend_img1.png)' | markdownify }}
-{:.image }
 
 

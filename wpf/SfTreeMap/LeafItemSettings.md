@@ -12,7 +12,7 @@ documentation: ug
 LeafItemSettings of SfTreeMap is a setting by which we can settings the template for the leafNode.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -39,7 +39,7 @@ LeafItemSettings of SfTreeMap is a setting by which we can settings the template
 
     </Grid> 
 
-
+{% endhighlight %}
 
 
 
@@ -52,7 +52,7 @@ LeafItemSettings of SfTreeMap is a setting by which we can settings the template
 LabelPath of the leaves is WeightValuePath by default and you can change the LabelPath as desired based on the data provided.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -76,7 +76,7 @@ LabelPath of the leaves is WeightValuePath by default and you can change the Lab
        </syncfusion:SfTreeMap>
 
     </Grid> 
-
+{% endhighlight %}
 
 
 ## LabelTemplate
@@ -84,7 +84,7 @@ LabelPath of the leaves is WeightValuePath by default and you can change the Lab
 LabelTemplate of LeafitemSettings class provides the template for the labels of the leafNodes.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -124,7 +124,7 @@ LabelTemplate of LeafitemSettings class provides the template for the labels of 
        </syncfusion:SfTreeMap>
 
     </Grid> 
-
+{% endhighlight %}
 
 
 ## Gap
@@ -132,7 +132,7 @@ LabelTemplate of LeafitemSettings class provides the template for the labels of 
 Gap provides the gap between the leaves at Leaf Level.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -160,7 +160,7 @@ Gap provides the gap between the leaves at Leaf Level.
        </syncfusion:SfTreeMap>
 
     </Grid> 
-
+{% endhighlight %}
 
 
 ## BorderBrush
@@ -168,7 +168,7 @@ Gap provides the gap between the leaves at Leaf Level.
 BorderBrush provides the border color for the leafNodes and BorderThickness provides the thickness of the BorderBrush.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -194,12 +194,12 @@ BorderBrush provides the border color for the leafNodes and BorderThickness prov
        </syncfusion:SfTreeMap>
 
     </Grid> 
+{% endhighlight %}
 
 
 
 
+![](LeafItemSettings_images/LeafItemSettings_img1.png)
 
-{{ '![](LeafItemSettings_images/LeafItemSettings_img1.png)' | markdownify }}
-{:.image }
 
 

@@ -12,7 +12,7 @@ documentation: ug
 The TabItemExt is added to the TabControlExt by using either XAML or C# coding. Use the following lines of code to add a TabItemExt to the TabControlExt control.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -28,13 +28,13 @@ The TabItemExt is added to the TabControlExt by using either XAML or C# coding. 
     <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt"/>
 
 </syncfusion:TabControlExt>
-
+{% endhighlight %}
 
 
 [C#]
 
 
-
+{% highlight c# %}
 // Creating instance of the TabControlExt control
 
 TabControlExt tabControlExt = new TabControlExt();
@@ -69,20 +69,20 @@ tabControlExt.Items.Add(tabItemExt1);
 
 stackPanel.Children.Add(tabControlExt);
 
+{% endhighlight%}
+
+![](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img1.jpeg)}
 
 
-{{ '![](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-Adding Content to TabItemExt
+### Adding Content to TabItemExt
 
 To add content to the TabItemExt, use the below code snippet.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -120,9 +120,9 @@ To add content to the TabItemExt, use the below code snippet.
     </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -214,11 +214,11 @@ tabControlExt.Items.Add(tabItemExt2);
 //Adding control to the Stack Panel
 
 stackPanel.Children.Add(tabControlExt); 
+{% endhighlight %}
 
 
+![](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img2.jpeg)
 
-{{ '![](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 > _Note: To display the TabItemExt, you must already have the TabControlExt in which you are going to add the TabItemExt._

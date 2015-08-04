@@ -13,21 +13,20 @@ The fields can be formatted to show what the numerals denote i.e. hours minutes 
 
 
 
-{{ '![](Custom-format-string_images/Custom-format-string_img1.png)' | markdownify }}
-{:.image }
+![](Custom-format-string_images/Custom-format-string_img1.png)
 
 
 
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:TimeSpanEdit Value="10.2:25:52" Format="d ‘days’ h 'hours'"  Height="40"/>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 timeSpanEdit1.Format = @" d 'days' h 'hours'";
 
-
+{% endhighlight %}
 

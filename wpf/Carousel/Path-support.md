@@ -11,13 +11,13 @@ documentation: ug
 
 Carousel panel arrange its children on a path. You can specify any path and it can be created easily using expression blend. You can arrange the items in any path.
 
-Adding Path support to an Application 
+## Adding Path support to an Application 
 
 You can set custom path using Path property of Carousel control as shown in the below example.
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -27,17 +27,17 @@ You can set custom path using Path property of Carousel control as shown in the 
     </syncfusion:Carousel.Path>
 </syncfusion:Carousel>
 
+{% endhighlight %}
+
+
+
+![](Path-support_images/Path-support_img1.png)
 
 
 
 
-{{ '![](Path-support_images/Path-support_img1.png)' | markdownify }}
-{:.image }
 
-
-
-
-Properties
+## Properties
 
 
 
@@ -45,12 +45,12 @@ _CustomEditor Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 Path</td><td>

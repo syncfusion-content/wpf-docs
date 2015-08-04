@@ -13,7 +13,7 @@ The CardView control can also support data-binding to objects. The following exa
 
 1. Create a class that act as a model for CardViewItem as follows.
 
-[C#]
+{% highlight C# %}
 
   public class Contact : IDataErrorInfo
 
@@ -114,14 +114,14 @@ The CardView control can also support data-binding to objects. The following exa
     }
 
 
-
+{% endhighlight %}
 
 
 
 
 2. Create a ViewModel class and initialize the items as follows.
 
-[C#]
+{% highlight C# %}
 
    public class ViewModel
 
@@ -156,12 +156,12 @@ The CardView control can also support data-binding to objects. The following exa
     }
 
 
-
+{% endhighlight %}
 
 
 3. Create a ViewModel instance and use it as DataContext for the root window.
 
-[XAML]
+{% highlight xml %}
 
 <Window.DataContext>
 
@@ -170,14 +170,14 @@ The CardView control can also support data-binding to objects. The following exa
 </Window.DataContext>
 
 
-
+{% endhighlight %}
 
 
 
 
 4. Configure the ItemTemplate and HeaderTemplate for the CardView control.
 
-[XAML]
+{% highlight xml %}
 
       <syncfusion:CardView ItemsSource="{Binding Contacts}" >
 
@@ -232,14 +232,12 @@ The CardView control can also support data-binding to objects. The following exa
        </syncfusion:CardView>
 
 
-
+{% endhighlight %}
 
 
 This creates the following CardView control.
 
-{{ '![](Data-Binding-to-Objects_images/Data-Binding-to-Objects_img1.png)' | markdownify }}
-{:.image }
-
+![](Data-Binding-to-Objects_images/Data-Binding-to-Objects_img1.png)
 
 _CardView with object binding_
 

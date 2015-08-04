@@ -14,7 +14,7 @@ The closure of TabItem can now be restricted by setting e.Cancel to true in OnCl
 The following code illustrates the same.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -28,9 +28,9 @@ The following code illustrates the same.
         <Grid syncfusion:TabControlExt.Header="Tab3" />
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -48,6 +48,6 @@ private void SelectedItemChangedEvent(object sender, CloseTabEventArgs e)
     }      
 
 }
-
+{% endhighlight %}
 
 

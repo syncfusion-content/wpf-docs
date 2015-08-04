@@ -18,7 +18,7 @@ You can add images to the Tab Item headers by using the Image property of the Ta
 The following code snippet illustrates how to add images to the tab item header.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -36,9 +36,9 @@ The following code snippet illustrates how to add images to the tab item header.
     </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -82,13 +82,10 @@ tabControlExt.Items.Add(tabItemExt1);
 //Adding control to the stack panel
 
 stackPanel.Children.Add(tabControlExt);
+{% endhighlight %}
 
 
-
-{{ '![](Tab-Item-Header_images/Tab-Item-Header_img1.jpeg)' | markdownify }}
-{:.image }
-
-
+![](Tab-Item-Header_images/Tab-Item-Header_img1.jpeg)
 
 
 See Also
@@ -109,7 +106,7 @@ You can align the Tab Item header image by using the ImageAlignment property of 
 To set the tab item header image alignment as "AboveText", use the below code.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -127,9 +124,9 @@ To set the tab item header image alignment as "AboveText", use the below code.
     </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -179,25 +176,25 @@ tabControlExt.Items.Add(tabItemExt1);
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt);
+{% endhighlight %}
+
+
+
+
+![](Tab-Item-Header_images/Tab-Item-Header_img2.jpeg)
 
 
 
 
 
-{{ '![](Tab-Item-Header_images/Tab-Item-Header_img2.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-ImageAlignmentChanged Event
+### ImageAlignmentChanged Event
 
 This event is triggered when the ImageAlignment property is changed.
 
 The following code snippet illustrates handling the ImageAlignmentChanged event.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -225,7 +222,7 @@ tabControlExt.TabItemSize = TabItemSizeMode.ShrinkToFit;
 }
 
 }
-
+{% endhighlight %}
 
 
 In the above example, when the ImageAlignment property is set to LeftOfText, the Tab Item header looks enlarged. To avoid this, the TabItemSize property is set as ShrinkToFit.

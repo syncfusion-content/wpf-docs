@@ -12,7 +12,7 @@ documentation: ug
 You can edit the header of the Tab Item at run time by enabling the EnableLabelEdit dependency property. The following code snippet sets this property.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -36,11 +36,11 @@ You can edit the header of the Tab Item at run time by enabling the EnableLabelE
     </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
 
+![](Editing-the-Tab-Item-Header-at-Run-Time_images/Editing-the-Tab-Item-Header-at-Run-Time_img1.jpeg)
 
-{{ '![](Editing-the-Tab-Item-Header-at-Run-Time_images/Editing-the-Tab-Item-Header-at-Run-Time_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 

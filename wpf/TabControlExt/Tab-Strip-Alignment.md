@@ -23,7 +23,7 @@ The following TabStrip placement options are supported by the TabControlExt.
 To place the TabStrip to the "Left" of the TabControlExt, use the below code.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -45,9 +45,9 @@ To place the TabStrip to the "Left" of the TabControlExt, use the below code.
     <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"/>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -109,11 +109,11 @@ tabControlExt.TabStripPlacement = Dock.Left;
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt); 
+{% endhighlight %}
 
 
+![](Tab-Strip-Alignment_images/Tab-Strip-Alignment_img1.jpeg)
 
-{{ '![](Tab-Strip-Alignment_images/Tab-Strip-Alignment_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -125,7 +125,7 @@ To improve the user readability, the Tab Strip text can be rotated, whenever the
 Here is the code snippet for rotating the text when tab strip is vertically placed.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -147,9 +147,9 @@ Here is the code snippet for rotating the text when tab strip is vertically plac
   <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"/>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -217,11 +217,11 @@ tabControlExt.RotateTextWhenVertical = true;
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt); 
+{% endhighlight %}
 
 
+![](Tab-Strip-Alignment_images/Tab-Strip-Alignment_img2.jpeg)
 
-{{ '![](Tab-Strip-Alignment_images/Tab-Strip-Alignment_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 
