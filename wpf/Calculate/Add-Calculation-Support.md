@@ -25,6 +25,7 @@ Manual calculations requires you to explicitly request Essential Calculate to co
 
 * ParseAndCompute-This method accepts a formula string, parse it, and then return the computed value of the parsed formula. You can also directly invoke computation methods for any of the library functions of Essential Calculate through the CalcEngine class.
 * Indexer method by using Variables
+
 ### ParseAndCalculate Method
 
 
@@ -456,10 +457,10 @@ End Sub
 
 
 
-{% endhighlight %}
+
 
 ' 9) Handles the changing of the text in the text box so the CalcQuickBase object can be updated as the text changes.
-{% highlight vbnet %}
+
 Private Sub textBoxA_Leave(ByVal sender As Object, ByVal e As EventArgs)
 
         If Me.textBoxA.Modified Then
@@ -630,8 +631,6 @@ Name</th><th>
 Description</th></tr>
 <tr>
 <td>
-![Public method](Add-Calculation-Support_images/Add-Calculation-Support_img4.jpeg)
-
 ResetKeys()</td><td>
 Clears the keys used by the Calculate engine</td></tr>
 </table>

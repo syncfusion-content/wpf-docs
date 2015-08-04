@@ -7,7 +7,7 @@ control: SfDataPager Control
 documentation: ug
 ---
 
-## Features
+# Features
 
 This section explains the key Features of SfDataPager.
 
@@ -16,18 +16,19 @@ This section explains the key Features of SfDataPager.
 * PageNavigation
 * On DemandPaging
 * UIAutomation
-### DataBinding
+
+## DataBinding
 
 
 Databinding is the master feature of SfDataPager. SfDataPager is bound to an external data source to display the data. 
 
-#### Source and PagedSource
+### Source and PagedSource
 
 SfDataPager exposes the Source property, where you can pass your collection of data for Paging. SfDataPager automatically wrap the collection in the PagedCollectionView and exposes to the PagedSource property. You can pass the PagedSource property to any ItemsControl’s ItemsSource property.
 
 The following code example explains how to use the Source and PagedSource property.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -66,29 +67,29 @@ The following code example explains how to use the Source and PagedSource proper
                                                      Source="{Binding OrdersDetails}" />
 
 </Grid>
-
+{% endhighlight  %}
 The following screenshot displays the output of the above code.
 
-PageIndex
+#### PageIndex
 
 
 
-{{ '![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img1.png)
+
 
 
 
 
 SfDataPager exposes the PageIndex property. It contains the index of the currently selected page.You can use this property to set or get the current page of the SfDataPager. 
 
-Events
+#### Events
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Parameters</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Parameters</th><th>
+Description</th></tr>
 <tr>
 <td>
 PageIndexChanging</td><td>
@@ -100,14 +101,15 @@ PageIndexChanged</td><td>
  OldPageIndex NewPageIndex</td><td>
 Event is triggered after the current page index is changed.</td></tr>
 </table>
-##### How to bind the PageCollection to the other controls?
+
+#### How to bind the PageCollection to the other controls?
 
 SfDataPager automatically wraps the collection in PagedCollectionView and exposes to the PagedSource property. You can pass the PagedSource property to any ItemsControl’s ItemsSource property. Here, the PagesSource property is binded to the ListBox.
 
 The following code explains how to use Source and PagedSource property in ListBox.
 
 
-
+{% highlight html %}
 [XAML]
 
 <Window.DataContext>
@@ -142,12 +144,12 @@ The following code explains how to use Source and PagedSource property in ListBo
 
 </Grid>
 
-
+{% endhighlight %}
 
 The following screenshot displays the output for ListView binded with PagedCollection.
 
-{{ '![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img2.png)
+
 
 
 #### On DemandPaging
@@ -163,7 +165,7 @@ The OnDemandLoading event is triggered when the pager moves to the corresponding
 
 In an OnDemandLoading event, you can use the LoadDynamicItems method to load the data for the corresponding page.
 
-> _Note: In OnDemand paging, you cannot assign a value for the Source property._
+> Note: In OnDemand paging, you cannot assign a value for the Source property.
 
 
 
@@ -173,7 +175,7 @@ The following steps help you to achieve an onDemand loading with the SfDataPager
 2. Set the PageCount value for the SfDataPager control.
 
 
-
+{% highlight html %}
 [XAML]
 
 <Window.DataContext>
@@ -212,10 +214,10 @@ The following steps help you to achieve an onDemand loading with the SfDataPager
 
                          UseOnDemandPaging="True" />
 
-
+{% endhighlight %}
 
 3. Wire up the OnDemandLoading event of SfDataPager.
-
+{% highlight c# %}
 [C#]
 
 private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs  args)
@@ -225,11 +227,11 @@ private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs  args)
 }
 
 
-
+{% endhighlight %}
 The following screenshot displays the output for OnDemandPaging,
 
-{{ '![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img3.png)' | markdownify }}
-{:.image }
+![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img3.png)
+
 
 
 #### Page Size
@@ -237,7 +239,7 @@ The following screenshot displays the output for OnDemandPaging,
 SfDataPager splits the data into separate pages based on the PageSize. In order to specify the size of the page, you can use the PageSize property. By defaults, it is set to 0 and all the data is displayed in a single page.
 
 The following code example explains how to use PageSize property in SfDataPager.
-
+{% highlight html %}
 [XAML]
 
 <Window.DataContext>
@@ -270,22 +272,22 @@ The following code example explains how to use PageSize property in SfDataPager.
 
 </Grid>
 
-
+{% endhighlight %}
 
 The following screenshot displays the output for PageSize set as 5.
 
 
 
-{{ '![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img4.png)' | markdownify }}
-{:.image }
+![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img4.png)
 
 
-##### How To
 
-###### How to change the PageSize in Runtime
+#### How To
+
+#### How to change the PageSize in Runtime
 
 In general, the size of the page is defined in the PageSize property. In some cases, you may want to change it during the run time. The following code example explains how to change the size of the page during runtime for a ComboBox.
-
+{% highlight html %}
 [XAML]
 
 <Window.DataContext>
@@ -342,15 +344,15 @@ In general, the size of the page is defined in the PageSize property. In some ca
 
 <Grid>
 
-
+{% endhighlight %}
 
 The following screenshot displays the output for changing the PagSize value during runtime. 
 
-{{ '![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img5.png)' | markdownify }}
-{:.image }
+![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img5.png)
 
 
-### Appearance
+
+## Appearance
 
 SfDataPager supports appearance styles by using the following properties.
 
@@ -358,7 +360,8 @@ SfDataPager supports appearance styles by using the following properties.
 * AccentBrush
 * DisplayMode
 * Orientation
-#### AutoEllipsisMode
+
+### AutoEllipsisMode
 
 
 The AutoEllipsis button is displayed when the page count is greater than numeric button count. The SfDataPager control allows you to define the AutoEllipsis button by using the AutoEllipsisMode property which is the Enum type. 
@@ -372,26 +375,26 @@ The following table explains the different AutoEllipsisModes.
 
 <table>
 <tr>
-<td>
- Enum Values</td><td>
-Description</td></tr>
+<th>
+ Enum Values</th><th>
+Description</th></tr>
 <tr>
 <td>
  After</td><td>
-Displays the ellipsis button after the numeric buttons.![B:/Support/2015/April/24/Image/DataPager/AutoElipseafter.png](Features_images/Features_img6.png)
-{:.image }
+Displays the ellipsis button after the numeric buttons.{{'![B:/Support/2015/April/24/Image/DataPager/AutoElipseafter.png](Features_images/Features_img6.png)'|markdownify}}
+
 </td></tr>
 <tr>
 <td>
  Before</td><td>
-Displays the ellipsis button before the numeric buttons.![B:/Support/2015/April/24/Image/DataPager/before.png](Features_images/Features_img7.png)
-{:.image }
+Displays the ellipsis button before the numeric buttons.{{'![B:/Support/2015/April/24/Image/DataPager/before.png](Features_images/Features_img7.png)'|markdownify}}
+
 </td></tr>
 <tr>
 <td>
  Both</td><td>
-Displays the ellipsis button before and after the numeric buttons.![B:/Support/2015/April/24/Image/DataPager/both.png](Features_images/Features_img8.png)
-{:.image }
+Displays the ellipsis button before and after the numeric buttons.{{'![B:/Support/2015/April/24/Image/DataPager/both.png](Features_images/Features_img8.png)'|markdownify}}
+
 </td></tr>
 <tr>
 <td>
@@ -400,10 +403,10 @@ It does not display the AutoEllipsisButton.</td></tr>
 </table>
 
 
-> _Note: By Default AutoEllipsisMode is set to None._
+> Note: By Default AutoEllipsisMode is set to None.
 
 The following code example explains how to change the AutoEllipsisbuttontext.
-
+{% highlight html %}
 [XAML]
 
 <Window.DataContext>
@@ -442,15 +445,15 @@ The following code example explains how to change the AutoEllipsisbuttontext.
 
 <Grid>
 
-
+{% endhighlight %}
 
 The following screenshot displays the output for AutoEllipsisText changed as …etc.
 
-{{ '![B:/Support/2015/April/24/Image/DataPager/figure9.png](Features_images/Features_img9.png)' | markdownify }}
-{:.image }
+![B:/Support/2015/April/24/Image/DataPager/figure9.png](Features_images/Features_img9.png)
 
 
-#### AccentBrush
+
+### AccentBrush
 
 AccentBrush properties are used to decorate the SfDataPager control with a solid color. There are two AccentBrush properties in the SfDataPager control:
 
@@ -465,7 +468,7 @@ AccentBrush properties are used to decorate the SfDataPager control with a solid
 The following code example explains how to apply the AccentBackground and AccentForeground properties for the SfDataPager control.
 
 
-
+{% highlight html %}
 [XAML]
 
 <Window.DataContext>
@@ -492,12 +495,12 @@ The following code example explains how to apply the AccentBackground and Accent
 
                          Source="{Binding OrdersDetails}" />
 
-
+{% endhighlight  %}
 
 The following screenshot displays the output for AccentBackground and AccentForeGround applied to the SfDatapager.
 
-{{ '![B:/Support/2015/Pager.png](Features_images/Features_img10.png)' | markdownify }}
-{:.image }
+![B:/Support/2015/Pager.png](Features_images/Features_img10.png)
+
 
 
 
@@ -505,7 +508,7 @@ The following screenshot displays the output for AccentBackground and AccentFore
 The following code example explains how to use NumericButtonStyle in SfDataPager.
 
 
-
+{% highlight html %}
 [XAML]
 
 <Window.DataContext>
@@ -542,15 +545,15 @@ The following code example explains how to use NumericButtonStyle in SfDataPager
 
                          Source="{Binding OrdersDetails}" />
 
-
+{% endhighlight  %}
 
 The following screenshot displays the output of NumericButtonStyle.
 
-{{ '![B:/Support/2015/April/24/Image/DataPager/figure11.png](Features_images/Features_img11.png)' | markdownify }}
-{:.image }
+![B:/Support/2015/April/24/Image/DataPager/figure11.png](Features_images/Features_img11.png)
 
 
-#### Display Modes
+
+### Display Modes
 
 The SfDataPager control allows you to choose the elements that are visible in the control. This can be achieved by using the DisplayMode property.The following table explains the PageDisplayMode enum values.
 
@@ -558,74 +561,74 @@ The SfDataPager control allows you to choose the elements that are visible in th
 
 <table>
 <tr>
-<td>
-Enum Values</td><td>
-Description</td></tr>
+<th>
+Enum Values</th><th>
+Description</th></tr>
 <tr>
 <td>
 FirstLastPreviousNextNumeric</td><td>
-Displays all the navigation buttons and numeric page buttons.![B:/Support/2015/April/24/Image/DataPager/1.png](Features_images/Features_img12.png)
-{:.image }
+Displays all the navigation buttons and numeric page buttons.{{'![B:/Support/2015/April/24/Image/DataPager/1.png](Features_images/Features_img12.png)'|markdownify}}
+
 </td></tr>
 <tr>
 <td>
 FirstLastNumeric</td><td>
-Displays the first page, last page navigation button and numeric page buttons.![B:/Support/2015/April/24/Image/DataPager/2.png](Features_images/Features_img13.png)
-{:.image }
+Displays the first page, last page navigation button and numeric page buttons.{{'![B:/Support/2015/April/24/Image/DataPager/2.png](Features_images/Features_img13.png)'|markdownify}}
+
 </td></tr>
 <tr>
 <td>
 PreviousNextNumeric</td><td>
-Displays the previous, next page navigation buttons and numeric page buttons.![B:/Support/2015/April/24/Image/DataPager/3.png](Features_images/Features_img14.png)
-{:.image }
+Displays the previous, next page navigation buttons and numeric page buttons.{{'![B:/Support/2015/April/24/Image/DataPager/3.png](Features_images/Features_img14.png)'|markdownify}}
+
 </td></tr>
 <tr>
 <td>
 FirstLastPreviousNext</td><td>
-Displays only the page navigation buttons. Numeric page buttons are not displayed.![B:/Support/2015/April/24/Image/DataPager/4.png](Features_images/Features_img15.png)
-{:.image }
+Displays only the page navigation buttons. Numeric page buttons are not displayed.{{'![B:/Support/2015/April/24/Image/DataPager/4.png](Features_images/Features_img15.png)'|markdownify}}
+
 </td></tr>
 <tr>
 <td>
 FirstLast</td><td>
-Displays only the first and last page navigation buttons.![B:/Support/2015/April/24/Image/DataPager/5.png](Features_images/Features_img16.png)
-{:.image }
+Displays only the first and last page navigation buttons.{{'![B:/Support/2015/April/24/Image/DataPager/5.png](Features_images/Features_img16.png)'|markdownify}}
+
 </td></tr>
 <tr>
 <td>
 PreviousNext</td><td>
-Displays only the previous and next page navigation buttons.![B:/Support/2015/April/24/Image/DataPager/6.png](Features_images/Features_img17.png)
-{:.image }
+Displays only the previous and next page navigation buttons.{{'![B:/Support/2015/April/24/Image/DataPager/6.png](Features_images/Features_img17.png)'|markdownify}}
+
 </td></tr>
 <tr>
 <td>
 Numeric</td><td>
-Displays only the numeric page buttons.![B:/Support/2015/April/24/Image/DataPager/7.png](Features_images/Features_img18.png)
-{:.image }
+Displays only the numeric page buttons.{{'![B:/Support/2015/April/24/Image/DataPager/7.png](Features_images/Features_img18.png)'|markdownify}}
+
 </td></tr>
 <tr>
 <td>
 First</td><td>
-Displays only the first page navigation button.![B:/Support/2015/April/24/Image/DataPager/8.png](Features_images/Features_img19.png)
-{:.image }
+Displays only the first page navigation button.{{'![B:/Support/2015/April/24/Image/DataPager/8.png](Features_images/Features_img19.png)'|markdownify}}
+
 </td></tr>
 <tr>
 <td>
 Last</td><td>
-Displays only the last page navigation button.![B:/Support/2015/April/24/Image/DataPager/9.png](Features_images/Features_img20.png)
-{:.image }
+Displays only the last page navigation button.{{'![B:/Support/2015/April/24/Image/DataPager/9.png](Features_images/Features_img20.png)'|markdownify}}
+
 </td></tr>
 <tr>
 <td>
 Previous</td><td>
-Displays only the previous page navigation button.![B:/Support/2015/April/24/Image/DataPager/10.png](Features_images/Features_img21.png)
-{:.image }
+Displays only the previous page navigation button.{{'![B:/Support/2015/April/24/Image/DataPager/10.png](Features_images/Features_img21.png)'|markdownify}}
+
 </td></tr>
 <tr>
 <td>
 Next</td><td>
-Displays only the next page navigation button.![B:/Support/2015/April/24/Image/DataPager/11.png](Features_images/Features_img22.png)
-{:.image }
+Displays only the next page navigation button.{{'![B:/Support/2015/April/24/Image/DataPager/11.png](Features_images/Features_img22.png)'|markdownify}}
+
 </td></tr>
 <tr>
 <td>
@@ -634,9 +637,9 @@ It does not display anything</td></tr>
 </table>
 
 
-_Note: By Default, DisplayMode is set to FirstLastPreviousNextNumeric._
+> Note: By Default, DisplayMode is set to FirstLastPreviousNextNumeric.
 
-#### Orientation
+### Orientation
 
 SfDataPager allows you to arrange the child elements either horizontally or vertically.  This can be achieved by using the Orientation Property. Orientation is an Enum type.  The following table describes the Orientation enum values.
 
@@ -644,20 +647,20 @@ SfDataPager allows you to arrange the child elements either horizontally or vert
 
 <table>
 <tr>
-<td>
-Enum Value</td><td>
-Description</td></tr>
+<th>
+Enum Value</th><th>
+Description</th></tr>
 <tr>
 <td>
 Horizontal</td><td>
-This is the default enum value for Orientation.  Arranges all the Navigation Buttons and Numeric Buttons Horizontally.![B:/Support/2015/April/24/Image/DataPager/3.png](Features_images/Features_img23.png)
-{:.image }
+This is the default enum value for Orientation.  Arranges all the Navigation Buttons and Numeric Buttons Horizontally.{{'![B:/Support/2015/April/24/Image/DataPager/3.png](Features_images/Features_img23.png)'|markdownify}}
+
 </td></tr>
 <tr>
 <td>
 Vertical</td><td>
-Arranges all the Navigation Buttons and Numeric Buttons Vertically.![B:/Support/2015/April/24/Image/DataPager/figure12.png](Features_images/Features_img24.png)
-{:.image }
+Arranges all the Navigation Buttons and Numeric Buttons Vertically.{{'![B:/Support/2015/April/24/Image/DataPager/figure12.png](Features_images/Features_img24.png)'|markdownify}}
+
 </td></tr>
 </table>
 
@@ -670,10 +673,10 @@ SfDataPager provides the following methods for page navigations.
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 MoveToFirstPage</td><td>
@@ -704,13 +707,13 @@ This method moves the current page index to the corresponding page index that is
 
 #### How To
 
-##### How to Interact with User before Page Changes
+#### How to Interact with User before Page Changes
 
 When you are working with Paging, you may be in Edit mode or in CurrentPage. In this case, you can stop navigating the Paging by using the PageIndexChanging event before changing the page.
 
 The following example displays the MessageBox before the PageChanging,
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -749,7 +752,8 @@ The following example displays the MessageBox before the PageChanging,
 <Grid>
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 [C#]
 
 void sfDataPager_PageIndexChanging(object sender, PageIndexChangingEventArgs args)
@@ -769,7 +773,7 @@ void sfDataPager_PageIndexChanging(object sender, PageIndexChangingEventArgs arg
   }
 
 
-
+{% endhighlight %}
 ### UIAutomation
 
 SfDataPager supports the following UIAutomation,
@@ -783,8 +787,8 @@ SfDataPager supports CodedUITest automation that helps you to create an automati
 
 There are three levels of support in CodedUITest for SfDataPager
 
-{{ '![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img25.png)' | markdownify }}
-{:.image }
+![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img25.png)
+
 
 
 
@@ -813,17 +817,17 @@ To know more about CodedUITest, refer to the [link](http://help.syncfusion.com/u
 
 The following screenshot displays the SfDataPager properties when you drag the crosshair to the SfDataPager
 
-{{ '![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img26.png)' | markdownify }}
-{:.image }
+![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img26.png)
+
 
 
 The following table describes the properties of SfDataPager.
 
 <table>
 <tr>
-<td>
-  UI Element</td><td>
-Properties</td></tr>
+<th>
+  UI Element</th><th>
+Properties</th></tr>
 <tr>
 <td>
 SfDataPager</td><td>
@@ -832,14 +836,14 @@ SfDataPager</td><td>
 
 
 
-#### Quick Test Professional
+### Quick Test Professional
 
 SfDataPager supports QTP test. You can record the actions perfomed in the control by the corresponding method name with Syncfusion namespace. To know more about QTPtest, refer to the [link](http://help.syncfusion.com/ug/wpf/Documents/quicktestprofessionalqtp.htm)
 
 The following screenshot displays the QTP Test for SfDataPager
 
-{{ '![C:/Users/ilanchezhiyan/Pictures/CodedUIBlogImages/DataPager&MultiColumn/QTPSfDataPager.png](Features_images/Features_img27.png)' | markdownify }}
-{:.image }
+![C:/Users/ilanchezhiyan/Pictures/CodedUIBlogImages/DataPager&MultiColumn/QTPSfDataPager.png](Features_images/Features_img27.png)
+
 
 
 

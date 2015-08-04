@@ -11,13 +11,12 @@ documentation: ug
 
 You can use the Microsoft Excel to design spreadsheets that can be used on systems where MS Excel is not installed. This can be done by using a combination of Essential XlsIO and Essential Calculate, where the former can be used to read and write the spreadsheet and later to actually do the computation as values in the spreadsheet are modified. 
 
-Example
+## Example
 
 To illustrate this process, consider a sample project, Essential Studio\xx.x.x.xx\WPF\Calculation.Wpf\Samples\2.0\XlsFileUsingExcelRW. 
 
-> _Note: This requires you to have Essential XlsIO installed in addition to Essential Calculate. MS Excel is not required._
+> Note: This requires you to have Essential XlsIO installed in addition to Essential Calculate. MS Excel is not required.
 
-> __
 
 The spreadsheet you are using is a car insurance calculator. It uses Names to manage variable values and has the following four sheets.
 
@@ -28,21 +27,21 @@ The spreadsheet you are using is a car insurance calculator. It uses Names to ma
 
 
 
-{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img1.jpeg)' | markdownify }}
+![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img1.jpeg)
 
 
 
 
 
-{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img2.jpeg)' | markdownify }}
+![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img2.jpeg)
 
 
 
-{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img3.jpeg)' | markdownify }}
+![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img3.jpeg)
 
 
 
-{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img4.jpeg)' | markdownify }}
+![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img4.jpeg)
 
 
 
@@ -52,7 +51,7 @@ This layout represents a general calculation design process which you can use fo
 
 For example, consider the below form which accepts input values from the user. Once the values are set, the user clicks a button on the form that puts these values into the inputs sheet and then retrieves the insurance costs from the Outputs sheet and displays it on the form.
 
-{{ '![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img5.jpeg)' | markdownify }}
+![](Working-with-an-Excel-Spreadsheet_images/Working-with-an-Excel-Spreadsheet_img5.jpeg)
 
 
 

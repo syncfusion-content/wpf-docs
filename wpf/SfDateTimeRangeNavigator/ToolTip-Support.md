@@ -11,7 +11,7 @@ documentation: ug
 
 DateTimeRangeNavigator control provides ToolTip support for Sliders. Sliders are used to select a particular region of data in the DateTimeRangeNavigator control. ToolTips for sliders show the selected start and end date time values. You can even view exact date values to the precision of milliseconds.
 
-Properties
+## Properties
 
 The following properties are used to customize the ToolTip Settings for the DateTimeRangeNavigator control.
 
@@ -19,9 +19,9 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowToolTip</td><td>
@@ -40,7 +40,7 @@ RightToolTipTemplate</td><td>
 Sets the data template for the right tooltip.</td></tr>
 </table>
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -68,9 +68,9 @@ ShowToolTip="true" ToolTipLabelFormat ="MMM/dd/yyyy">
 </chart:SfDateTimeRangeNavigator>
 
 
+{% endhighlight %}
+![](ToolTip-Support_images/ToolTip-Support_img1.png)
 
-{{ '![](ToolTip-Support_images/ToolTip-Support_img1.png)' | markdownify }}
-{:.image }
 
 
 _DateTimeRangeNavigator with tooltip_

@@ -7,7 +7,7 @@ control: SfDataPager Control
 documentation: ug
 ---
 
-## Styles and Templates
+# Styles and Templates
 
 WPF styling and Templating is a suite of features (styles and templates) that allow develpers and designers to create visual compelling effects and consistent appearance of the products.
 
@@ -15,7 +15,8 @@ This section explains the information to change the visual appearance of the Dat
 
 * Edit Appearance in Expression Blend
 * Edit Appearance in VisualStudio
-### Edit Appearance in Expression Blend
+
+## Edit Appearance in Expression Blend
 
 
 The section explains how to edit a SfDataPager style in Expression Blend. The following steps helps to Edit the style of the control in Expression Blend.
@@ -25,8 +26,8 @@ The section explains how to edit a SfDataPager style in Expression Blend. The fo
 
 
 
-{{ '![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/expressionblend.png](Styles-and-Templates_images/Styles-and-Templates_img1.png)' | markdownify }}
-{:.image }
+![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/expressionblend.png](Styles-and-Templates_images/Styles-and-Templates_img1.png)
+
 
 
 
@@ -35,8 +36,8 @@ The section explains how to edit a SfDataPager style in Expression Blend. The fo
 
 
 
-{{ '![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/object.png](Styles-and-Templates_images/Styles-and-Templates_img2.png)' | markdownify }}
-{:.image }
+![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/object.png](Styles-and-Templates_images/Styles-and-Templates_img2.png)
+
 
 
 * There are two options in submenu,
@@ -44,8 +45,8 @@ The section explains how to edit a SfDataPager style in Expression Blend. The fo
 
 
 
-{{ '![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/editcopy.png](Styles-and-Templates_images/Styles-and-Templates_img3.png)' | markdownify }}
-{:.image }
+![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/editcopy.png](Styles-and-Templates_images/Styles-and-Templates_img3.png)
+
 
 
 
@@ -55,7 +56,7 @@ The Create style Resources dialog prompts you to enter the name or change the na
 When Ok is pressed, the Expression Blend generates the style of the SfDataPager control in the Resource section. You can edit the generated XAML in the XAML view or in VisualStudio
 
 * Create Empty- create an empty style for the SfDataPager. When you select this option, the Create style Resources dialog is opened. You can enter the name or change the name of style and choose the location for the style.
-### Edit Appearance in Visual Studio
+## Edit Appearance in Visual Studio
 
 
 This section explains how to edit the style of SfDataPager in Visual studio Designing View. To Edit the control style in Visual studio, refer to the following steps,
@@ -65,8 +66,8 @@ This section explains how to edit the style of SfDataPager in Visual studio Desi
 
 
 
-{{ '![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/edittemplate.png](Styles-and-Templates_images/Styles-and-Templates_img4.png)' | markdownify }}
-{:.image }
+![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/edittemplate.png](Styles-and-Templates_images/Styles-and-Templates_img4.png)
+
 
 
 * Click EditTemplate, you have the following two options. 
@@ -74,8 +75,8 @@ This section explains how to edit the style of SfDataPager in Visual studio Desi
 
 
 
-{{ '![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/editcopyvisual.png](Styles-and-Templates_images/Styles-and-Templates_img5.png)' | markdownify }}
-{:.image }
+![A:/Dcumentationimages/sfmulticolumnimage/sfdatapager/editcopyvisual.png](Styles-and-Templates_images/Styles-and-Templates_img5.png)
+
 
 
 

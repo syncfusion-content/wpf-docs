@@ -9,7 +9,7 @@ documentation: ug
 
 # Dropdown Popup
 
-Dropdown popup contains the following parts (Refer Control Structure):
+## Dropdown popup contains the following parts (Refer Control Structure):
 
 * Calendar Button
 * Clock Button
@@ -28,66 +28,52 @@ You can display the Dropdown Popup by checking the DropDown Button. The visibili
 
 
 
-<table>
-<tr>
-<td>
-XAML</td></tr>
-<tr>
-<td>
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"                         IsCalendarEnabled="False" IsWatchEnabled="True"                          IsEmptyDateEnabled="True"/></td></tr>
-</table>
+{% highlight html %}
+XAML
 
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"                         IsCalendarEnabled="False" IsWatchEnabled="True"                          IsEmptyDateEnabled="True"/>
 
-{{ '![](Dropdown-Popup_images/Dropdown-Popup_img1.png)' | markdownify }}
-{:.image }
+{% endhighlight %}
+
+![](Dropdown-Popup_images/Dropdown-Popup_img1.png)
 
 
 
 
-<table>
-<tr>
-<td>
-XAML</td></tr>
-<tr>
-<td>
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"                         IsCalendarEnabled="True" IsWatchEnabled="False"                          IsEmptyDateEnabled="True"/></td></tr>
-</table>
 
+{% highlight html %}
+XAML
 
-{{ '![](Dropdown-Popup_images/Dropdown-Popup_img2.png)' | markdownify }}
-{:.image }
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"                         IsCalendarEnabled="True" IsWatchEnabled="False"                          IsEmptyDateEnabled="True"/>
+
+{% endhighlight  %}
+
+![](Dropdown-Popup_images/Dropdown-Popup_img2.png)
 
 
 
 
-<table>
-<tr>
-<td>
-XAML</td></tr>
-<tr>
-<td>
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"                          IsCalendarEnabled="True" IsWatchEnabled="True"                          IsEmptyDateEnabled="False"/></td></tr>
-</table>
+
+{% highlight html %}
+XAML
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"                          IsCalendarEnabled="True" IsWatchEnabled="True"                          IsEmptyDateEnabled="False"/>
+{% endhighlight %}
 
 
-{{ '![](Dropdown-Popup_images/Dropdown-Popup_img3.png)' | markdownify }}
-{:.image }
+![](Dropdown-Popup_images/Dropdown-Popup_img3.png)
 
 
 
 
-<table>
-<tr>
-<td>
-XAML</td></tr>
-<tr>
-<td>
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" EnableClassicStyle="False" IsEmptyDateEnabled="True"                         DateTime="07/05/2010" Pattern="LongDate"/></td></tr>
-</table>
+{% highlight html %}
+XAML
 
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" EnableClassicStyle="False" IsEmptyDateEnabled="True"                         DateTime="07/05/2010" Pattern="LongDate"/>
 
-{{ '![](Dropdown-Popup_images/Dropdown-Popup_img4.png)' | markdownify }}
-{:.image }
+{% endhighlight  %}
+
+![](Dropdown-Popup_images/Dropdown-Popup_img4.png)
+
 
 
 ## Working with DropDown Popup

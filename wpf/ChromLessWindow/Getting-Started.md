@@ -14,7 +14,7 @@ This section guides you on getting started with ChromelessWindow control. It des
 ## Create ChromelessWindow Control
 
 You can create a ChromelessWindow by using the following XAML code example.
-
+{% highlight html %}
 [XAML]
 
 
@@ -31,7 +31,7 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300" >
 
 </shared:ChromelessWindow>
 
-
+{% endhighlight  %}
 
 ## Create a Custom ChromelessWindow Control
 
@@ -40,7 +40,7 @@ To create a custom ChromelessWindow, follow the below steps:
 1. Use the following code to create a transparent window.
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -57,11 +57,11 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  >
 
 </ shared:ChromelessWindow>
 
-
+{% endhighlight  %}
 
 2. Now you can write your own ChromelessWindowTemplate to customize your ChromelessWindow. For example, the following code can be used to create a ControlTemplate for the ChromelessWindow.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -85,16 +85,16 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  >
 
 </ControlTemplate>
 
+{% endhighlight %}
 
-
-> _Note: All the templates should be written in App.xaml file only._
+> Note: All the templates should be written in App.xaml file only.
 
 
 
 3. Now to apply the custom template you have created, and then set the Template property, refer the following code example.
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -119,7 +119,7 @@ Template="{StaticResource ChromelessWindowTemplate}” >
 
 </ shared:ChromelessWindow>
 
-
+{% endhighlight %}
 
 This displays a ChromelessWindow with "Hello World" in it.
 
@@ -128,7 +128,7 @@ This displays a ChromelessWindow with "Hello World" in it.
 4. Now if you wish to include a TitleBar, you need to write another template for the TitleBar. The following code (for example) can be used to create a TitleBarTemplate.
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -142,17 +142,17 @@ This displays a ChromelessWindow with "Hello World" in it.
     </Border>
 
 </ControlTemplate>
+{% endhighlight %}
 
 
-
-> _Note: The drag and drop feature for the ChromelessWindow is available only with the TitleBar. You will have to include a TitleBar into your ChromelessWindow, to incorporate this feature. Also it is necessary to specify the name of the TitleBar as "PART_TitleBar", to enable the drag and drop feature._
+> Note: The drag and drop feature for the ChromelessWindow is available only with the TitleBar. You will have to include a TitleBar into your ChromelessWindow, to incorporate this feature. Also it is necessary to specify the name of the TitleBar as "PART_TitleBar", to enable the drag and drop feature.
 
 
 
 5. The following code indicates the modified ControlTemplate for the ChromelessWindow, which includes the TitleBar.
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -204,12 +204,12 @@ This displays a ChromelessWindow with "Hello World" in it.
 </ControlTemplate>
 
 
-
+{% endhighlight  %}
 6. ChromelessWindow provides options to customize the TitleBar Buttons by writing custom templates for the Maximize, Minimize, Restore and Close Buttons and include these Buttons in the TitleBar.
 
 For example, the following code can be used to create a ControlTemplate for the MinimizeButton.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -293,11 +293,11 @@ For example, the following code can be used to create a ControlTemplate for the 
 
 </ControlTemplate>
 
-
+{% endhighlight %}
 
 For example, the following code can be used to create a ControlTemplate for the RestoreButton.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -393,12 +393,12 @@ For example, the following code can be used to create a ControlTemplate for the 
 
 </ControlTemplate>
 
-
+{% endhighlight %}
 
 For example, the following code can be used to create a ControlTemplate for the MaximizeButton.
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -481,11 +481,11 @@ For example, the following code can be used to create a ControlTemplate for the 
 
 </ControlTemplate>
 
-
+{% endhighlight  %}
 
 For example, the following code can be used to create a ControlTemplate for the CloseButton.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -565,11 +565,11 @@ For example, the following code can be used to create a ControlTemplate for the 
 
 </ControlTemplate>
 
-
+{% endhighlight %}
 
 The Buttons can then be added to the TitleBar using the below code.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -587,12 +587,12 @@ The Buttons can then be added to the TitleBar using the below code.
 
 </StackPanel>
 
-
+{% endhighlight %}
 
 As the last step, some content can be added to the ChromelessWindow as follows.
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -657,13 +657,13 @@ Title="ChromelessWindowTestSample"  Height="Auto" Width="Auto"
 
 </shared:ChromelessWindow>
 
-
+{% endhighlight  %}
 
 The following screenshot shows the Custom ChromelessWindow control created using the preceding code.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.jpeg)
+
 
 

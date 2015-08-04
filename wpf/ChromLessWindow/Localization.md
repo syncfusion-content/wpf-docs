@@ -13,19 +13,19 @@ Syncfusion Tools allow you to set custom resource through the Resx file. You can
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 CloseTooltip</td><td>
 Sets the string for the ToolTip of Close button in the ChromelessWindow.</td></tr>
 <tr>
 <td colspan = "2">
-![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/59.png](Localization_images/Localization_img1.png)
-{:.image }
-![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/60.png](Localization_images/Localization_img2.png)
-{:.image }
+{{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/59.png](Localization_images/Localization_img1.png)'| markdownify}}
+
+{{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/60.png](Localization_images/Localization_img2.png)'| markdownify}}
+
 </td></tr>
 <tr>
 <td>
@@ -33,10 +33,10 @@ MaximizeTooltip</td><td>
 Sets the string for the ToolTip of Maximize button in the ChromelessWindow.</td></tr>
 <tr>
 <td colspan = "2">
-![](Localization_images/Localization_img3.png)
-{:.image }
-![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/62.png](Localization_images/Localization_img4.png)
-{:.image }
+{{'![](Localization_images/Localization_img3.png)'| markdownify}}
+
+{{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/62.png](Localization_images/Localization_img4.png)'| markdownify}}
+
 </td></tr>
 <tr>
 <td>
@@ -44,10 +44,10 @@ MinimizeTooltip</td><td>
 Sets the string for the ToolTip of Minimize button in the ChromelessWindow.</td></tr>
 <tr>
 <td colspan = "2">
-![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/63.png](Localization_images/Localization_img5.png)
-{:.image }
-![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/64.png](Localization_images/Localization_img6.png)
-{:.image }
+{{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/63.png](Localization_images/Localization_img5.png)'| markdownify}}
+
+{{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/64.png](Localization_images/Localization_img6.png)'| markdownify}}
+
 </td></tr>
 <tr>
 <td>
@@ -55,10 +55,10 @@ RestoreTooltip</td><td>
 Sets the string for the ToolTip of Restore button in the ChromelessWindow.</td></tr>
 <tr>
 <td colspan = "2">
-![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/65.png](Localization_images/Localization_img7.png)
-{:.image }
-![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/66.png](Localization_images/Localization_img8.png)
-{:.image }
+{{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/65.png](Localization_images/Localization_img7.png)'| markdownify}}
+
+{{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/66.png](Localization_images/Localization_img8.png)'| markdownify}}
+
 </td></tr>
 </table>
 

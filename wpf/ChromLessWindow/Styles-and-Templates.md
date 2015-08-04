@@ -16,7 +16,7 @@ This section deals with the following Styles and Templates supported by Chromele
 ChromelessWindow enables you to write your own templates for the TitleBar. The TitleBarTemplate property is used to apply this custom template to the TitleBar.
 
 The following code snippet illustrates how to set the TitleBarTemplate property.
-
+{% highlight html %}
 [XAML]
 
 
@@ -35,10 +35,10 @@ TitleBarTemplate="{StaticResource TemplateKey}">
 
 </shared:ChromelessWindow>
 
-
+{% endhighlight  %}
 
 For example, use the following code for a TitleBarTemplate.
-
+{% highlight html %}
 [XAML]
 
 
@@ -55,16 +55,16 @@ For example, use the following code for a TitleBarTemplate.
 
 </ControlTemplate>
 
+{% endhighlight %}
+
+![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)
 
 
-{{ '![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 
+![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)
 
-{{ '![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 ## Custom Template for Minimize Button
@@ -72,7 +72,7 @@ For example, use the following code for a TitleBarTemplate.
 ChromelessWindow enables you to write your own templates for the Minimize button that is used in the TitleBar. MinimizeButtonTemplate property is used to apply the custom template for the Minimize button of the TitleBar.
 
 The following code snippet illustrates how to set the MinimizeButtonTemplate property.
-
+{% highlight html %}
 [XAML]
 
 
@@ -91,10 +91,10 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  MinimizeButtonTemp
 
 </ shared:ChromelessWindow>
 
-
+{% endhighlight %}
 
 For example, use the following code for a MinimizeButtonTemplate.
-
+{% highlight html %}
 [XAML]
 
 
@@ -113,14 +113,14 @@ For example, use the following code for a MinimizeButtonTemplate.
 
 </ControlTemplate>
 
-
+{% endhighlight %}
 
 ## Custom Template for Maximize Button
 
 ChromelessWindow enables you to write your own templates for the Maximize button that is used in the TitleBar. MaximizeButtonTemplate property is used to apply the template for the Maximize button of the TitleBar.
 
 The following code snippet illustrates how to set the MaximizeButtonTemplate property.
-
+{% highlight html %}
 [XAML]
 
 
@@ -139,10 +139,10 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  MaximizeButtonTemp
 
 </ shared:ChromelessWindow>
 
-
+{% endhighlight %}
 
 For example, use the following code for a MaximizeButtonTemplate.
-
+{% highlight html %}
 [XAML]
 
 
@@ -161,14 +161,14 @@ For example, use the following code for a MaximizeButtonTemplate.
 
 </ControlTemplate>
 
-
+{% endhighlight %}
 
 ## Custom Template for Restore Button
 
 ChromelessWindow enables you to write your own template for the Restore button in the TitleBar. RestoreButtonTemplate property is used to apply the template for the Restore button.
 
 To set the RestoreButtonTemplate property, use the below code
-
+{% highlight html %}
 [XAML]
 
 
@@ -185,10 +185,10 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  RestoreButtonTempl
 
 </ shared:ChromelessWindow>
 
-
+{% endhighlight  %}
 
 For example, use the following code for a RestoreButtonTemplate.
-
+{% highlight html %}
 [XAML]
 
 
@@ -207,14 +207,14 @@ For example, use the following code for a RestoreButtonTemplate.
 
 </ControlTemplate>
 
-
+{% endhighlight %}
 
 ## Custom Template for Close Button
 
 ChromelessWindow enables you to write your own templates for the Close button in the TitleBar. CloseButtonTemplate property is used to apply the template for the close button.
 
 To set the CloseButtonTemplate property, use the following code.
-
+{% highlight html %}
 [XAML]
 
 
@@ -232,9 +232,9 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  CloseButtonTemplat
 </ shared:ChromelessWindow>
 
 
-
+{% endhighlight  %}
 For example, use the following code for a CloseButtonTemplate.
-
+{% highlight html %}
 [XAML]
 
 
@@ -253,5 +253,5 @@ For example, use the following code for a CloseButtonTemplate.
 
 </ControlTemplate>
 
-
+{% endhighlight  %}
 
