@@ -11,32 +11,34 @@ documentation: ug
 
 Filter support is used to filter the matched list of items from the linked source depending on the text entered in the AutoComplete textbox. AutoComplete allows the user to enable Filter the items using IsFilter property.
 
-{{ '![C:/Users/ApoorvahR/Desktop/1.png](Filter-Support_images/Filter-Support_img1.png)' | markdownify }}
-{:.image }
+![](Filter-Support_images/Filter-Support_img1.png)
 
 
 
 
 
-Adding Filter Support to an Application 
+
+## Adding Filter Support to an Application 
 
 If the IsFilter property is set as True, once you enter text in the AutoComplete textbox, the matched list of items will be displayed in the drop-down list. If this property is set as False the matched list of items will not be displayed in the drop-down list, instead all the items will be displayed.
 
 
 
-<table>
-<tr>
-<td>
+
+{% highlight xml %}
+
 [XAML]<syncfusion:AutoComplete x:Name="AutoComplete1" IsFilter="true"/></td></tr>
-<tr>
-<td>
+{% endhighlight %}
+
+{% highlight cs %}
+
 [C#]AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsFilter = true;</td></tr>
-</table>
+{% endhighlight %}
 
 
-Tables for properties, methods, and events
+## Tables for properties, methods, and events
 
-Properties
+### Properties
 
   _Property Table for Filter_
 
@@ -58,7 +60,7 @@ bool(true)</td><td>
 </table>
 
 
-Events
+### Events
 
   _Event Table for Filter_
 
@@ -80,7 +82,7 @@ DependencyPropertyChangedCallBack </th><th>
 </table>
 
 
-Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-Feature Summary
+## Feature Summary
 
 The features of the ComboBoxAdv control are listed below:
 
@@ -29,19 +29,21 @@ After adding reference to the above assembly, the control can be added to the ap
 
 To add ComboBoxAdv using XAML, first include the following namespace in the XAML.
 
+{% highlight xml %}
 
 
 [XAML]
 
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-
+{% endhighlight %}
 
 
 
 After adding the above namespace, the ComboBoxAdv can be added to the application as shown below:
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -50,7 +52,7 @@ After adding the above namespace, the ComboBoxAdv can be added to the applicatio
       SelectedValueDelimiter=" - ">
 
     </syncfusion:ComboBoxAdv>
-
+{% endhighlight %}
 
 
 
@@ -60,24 +62,28 @@ After adding the above namespace, the ComboBoxAdv can be added to the applicatio
 To add ComboBoxAdv using C#, first include the following namespace in C#.
 
 
+{% highlight cs %}
+
 
 [C#]
 
 using Syncfusion.Windows.Tools.Controls;
 
-
+{% endhighlight %}
 
 
 
 After adding the above namespace, the ComboBoxAdv can be added to the application as shown below:
 
 
+{% highlight cs %}
+
 
 [C#]
 
     ComboBoxAdv comboBoxAdv = new ComboBoxAdv { AllowMultiSelect = true, 	SelectedValueDelimiter = " - ", DefaultText = " Choose Itmes ", 	ItemsSource = Countries, DisplayMemberPath="Name", 	SelectedValuePath="Code" };
 
-
+{% endhighlight %}
 
 
 

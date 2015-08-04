@@ -9,11 +9,13 @@ documentation: ug
 
 # Label Settings
 
-Labels
+## Labels
 
 Scale labels associate a numeric value with major scale tick marks. The label stroke can be changed by using the LabelStroke property. The size of the Labels can be changed by using the LabelAutoSizeChange property.
 
-Code Example:
+#### Code Example:
+
+{% highlight xml %}
 
 [XAML]
 
@@ -31,7 +33,10 @@ Code Example:
 
       </syncfusion:SfCircularGauge>
 
+{% endhighlight %}
 
+
+{% highlight C# %}
 
 [C#]
 
@@ -46,28 +51,28 @@ Code Example:
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
+
+
+![](Label-Settings_images/Label-Settings_img1.png)
 
 
 
-{{ '![](Label-Settings_images/Label-Settings_img1.png)' | markdownify }}
-{:.image }
 
 
-
-
-Smart Labels
+## Smart Labels
 
 Smart labels allow you to change the numeric scale type of the labels displayed in a gauge scale. They also help you to customize labels by adding prefixes or suffixes to the scale labels.
 
 
 
-Enable/Disable Smart Labels
+### Enable/Disable Smart Labels
 
 The EnableSmartLabels property is a Boolean property that enables or disables the smart label feature of the CircularGauge.
 
 
 
-NumericScaleType
+## NumericScaleType
 
 The NumericScaleType property allows you to set the type of label. The following types can be applied to labels:
 
@@ -80,6 +85,8 @@ The NumericScaleType property allows you to set the type of label. The following
 * Quintillions
 
 
+
+{% highlight xml %}
 
 [XAML]
 
@@ -100,8 +107,9 @@ The NumericScaleType property allows you to set the type of label. The following
     </syncfusion:SfCircularGauge.MainScale>
 
  </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -128,24 +136,24 @@ The NumericScaleType property allows you to set the type of label. The following
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
+
+
+
+
+### Screenshot:
+![](Label-Settings_images/Label-Settings_img2.png)
 
 
 
 
 
-Screenshot:
+#### _Enable  SmartLabels-‘False’’_
 
-{{ '![](Label-Settings_images/Label-Settings_img2.png)' | markdownify }}
-{:.image }
-
-
-
-
-_Enable  SmartLabels-‘False’’_
-
-Number of Fraction Digits
+## Number of Fraction Digits
 
 The NoOfFractionalDigits property is used to set the number of fractional digits to be displayed in the scale labels.
+{% highlight xml %}
 
 [XAML]
 
@@ -168,7 +176,9 @@ The NoOfFractionalDigits property is used to set the number of fractional digits
     </syncfusion:SfCircularGauge.MainScale>
 
  </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
+{% highlight C# %}
 
 
 [C#]
@@ -198,20 +208,21 @@ The NoOfFractionalDigits property is used to set the number of fractional digits
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
 
 
 
 
+### Screenshot:
 
-Screenshot:
-
-{{ '![](Label-Settings_images/Label-Settings_img3.png)' | markdownify }}
-{:.image }
+![](Label-Settings_images/Label-Settings_img3.png)
 
 
-Label Postfix
+
+## Label Postfix
 
 This property allows you to set the postfix values to the scale labels. The label postfixes are visible even if the EnableSmartLabels property is set to false. 
+{% highlight xml %}
 
 [XAML]
 
@@ -234,7 +245,9 @@ This property allows you to set the postfix values to the scale labels. The labe
     </syncfusion:SfCircularGauge.MainScale>
 
  </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
+{% highlight C# %}
 
 
 [C#]
@@ -260,26 +273,27 @@ This property allows you to set the postfix values to the scale labels. The labe
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
 
 
 
 
 
 
+### Screenshot:
 
-Screenshot:
-
-{{ '![](Label-Settings_images/Label-Settings_img4.png)' | markdownify }}
-{:.image }
+![](Label-Settings_images/Label-Settings_img4.png)
 
 
 
 
-Label Prefix
+
+## Label Prefix
 
 This property allows you to set the prefix values for the scale labels. The label prefixes are visible even if the EnableSmartLabels property is set to false.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -302,8 +316,9 @@ This property allows you to set the prefix values for the scale labels. The labe
     </syncfusion:SfCircularGauge.MainScale>
 
  </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -329,28 +344,30 @@ This property allows you to set the prefix values for the scale labels. The labe
 
             this.Grid.Children.Add(circularGauge);
 
+{% endhighlight %}
 
 
 
 
 
+### Screenshot:
 
-Screenshot:
-
-{{ '![](Label-Settings_images/Label-Settings_img5.png)' | markdownify }}
-{:.image }
+![](Label-Settings_images/Label-Settings_img5.png)
 
 
 
 
-LabelPosition
+
+## LabelPosition
 
 The Labels in the scale can be placed inside the scale or outside the scale by selecting one of the options available in the LabelPosition property. These options are:
 
 1. Inside (Default)
 2. Outside
 
-Code Example
+### Code Example
+
+{% highlight xml %}
 
 [XAML]
 
@@ -366,11 +383,12 @@ Code Example
 
             </syncfusion:SfCircularGauge>
 
+{% endhighlight %}
 
 
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -383,14 +401,14 @@ Code Example
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
 
 
 
 
+### Screenshot:
 
-Screenshot:
+![](Label-Settings_images/Label-Settings_img6.png)
 
-{{ '![](Label-Settings_images/Label-Settings_img6.png)' | markdownify }}
-{:.image }
 
 

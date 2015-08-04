@@ -13,8 +13,8 @@ The EnableExtendedScrolling property is used to change the values based on the c
 
 
 
-{{ '![](Extended-Scrolling_images/Extended-Scrolling_img1.png)' | markdownify }}
-{:.image }
+![](Extended-Scrolling_images/Extended-Scrolling_img1.png)
+
 
 
 ## Adding Extended Scrolling to an Application 
@@ -23,13 +23,17 @@ The EnableExtendedScrolling property must be set either in XAML or the code file
 
 
 
-<table>
-<tr>
-<td>
-[XAML]  EnableExtendedScrolling ="True"</td></tr>
-<tr>
-<td>
-[C#]  control.EnableExtendedScrolling = true;</td></tr>
-</table>
+{% highlight xml %}
+
+[XAML]
+  EnableExtendedScrolling ="True"
+  
+{% endhighlight %}
+  
+
+{% highlight C# %}
+[C#]  
+control.EnableExtendedScrolling = true;
+{% endhighlight %}
 
 

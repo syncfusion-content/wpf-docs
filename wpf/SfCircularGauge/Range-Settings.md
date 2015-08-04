@@ -9,13 +9,16 @@ documentation: ug
 
 # Range Settings
 
-Ranges
+## Ranges
 
 Range is a visual element that begins and ends at specified values within a scale. These start and end values are set by the StartValue and EndValue properties of the range. A range’s UI is customized by the Stroke and StrokeThickness properties.
 
 
 
-Code Example:
+### Code Example:
+
+
+{% highlight xml %}
 
 [XAML]
 
@@ -40,7 +43,10 @@ Code Example:
                 </syncfusion:SfCircularGauge.MainScale>
 
             </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
+
+{% highlight C# %}
 
 
 [C#]
@@ -59,23 +65,25 @@ Code Example:
 
             circularGauge.MainScale = _mainscale;
 
-            this.Grid.Children.Add(circularGauge);
+ {% endhighlight %}           this.Grid.Children.Add(circularGauge);
 
 
 
-Screenshot:
+###Screenshot:
 
-{{ '![](Range-Settings_images/Range-Settings_img1.png)' | markdownify }}
-{:.image }
-
+![](Range-Settings_images/Range-Settings_img1.png)
 
 
 
-Range Width Customization
+
+
+## Range Width Customization
 
 Range start and end width can be customized by using the StartWidth and EndWidth property of range.
 
-Code Example:
+### Code Example:
+
+{% highlight xml %}
 
 [XAML]
 
@@ -98,9 +106,11 @@ Code Example:
             </syncfusion:SfCircularGauge.Scales>
 
         </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
 
 
+{% highlight C# %}
 
 
 [C#]
@@ -128,20 +138,22 @@ Code Example:
             circularGauge.Scales.Add(scale);
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
+
+
+### Screenshot:
+
+![](Range-Settings_images/Range-Settings_img2.png)
 
 
 
-Screenshot:
-
-{{ '![](Range-Settings_images/Range-Settings_img2.png)' | markdownify }}
-{:.image }
-
-
-Binding Range Stroke
+## Binding Range Stroke
 
 You can bind the range’s stroke to the tick lines and labels within its range by setting the BindRangeStrokeToLabels and BindRangeStrokeToTicks properties to true.
 
-Code Example:
+### Code Example:
+
+{% highlight xml %}
 
 [XAML]
 
@@ -168,8 +180,9 @@ Code Example:
                 </syncfusion:SfCircularGauge.MainScale>
 
             </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -190,18 +203,17 @@ Code Example:
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
 
 
 
 
+### Screenshot:
 
-Screenshot:
-
-{{ '![](Range-Settings_images/Range-Settings_img3.png)' | markdownify }}
-{:.image }
+![](Range-Settings_images/Range-Settings_img3.png)
 
 
-RangePosition
+## RangePosition
 
 The range can be placed inside the scale, outside the scale, or on the scale by selecting one of the options available in the RangePosition property. These options are:
 
@@ -211,7 +223,9 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 
 
-Code Example:
+### Code Example:
+
+{% highlight xml %}
 
 [XAML]
 
@@ -236,8 +250,10 @@ Code Example:
                 </syncfusion:SfCircularGauge.MainScale>
 
             </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
 
+{% highlight C# %}
 
 [C#]
 
@@ -258,12 +274,12 @@ Code Example:
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
 
 
+### Screenshot:
 
-Screenshot:
+![](Range-Settings_images/Range-Settings_img4.png)
 
-{{ '![](Range-Settings_images/Range-Settings_img4.png)' | markdownify }}
-{:.image }
 
 

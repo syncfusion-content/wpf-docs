@@ -13,72 +13,69 @@ documentation: ug
 
 ColorPalette having the Swatches button on the right top corner of the control, on clicking the button will navigates to the list of swatches.
 
-{{ '![C:/Users/ApoorvahR/Desktop/3.png](Interaction_images/Interaction_img1.png)' | markdownify }}
-{:.image }
+![](Interaction_images/Interaction_img1.png)
+
 
 
 ## Swatches
 
 Swatches page has the list of swatches, each swatches will have the list of colors.
 
-Apex
+### Apex
 
-{{ '![C:/Users/ApoorvahR/Desktop/4.png](Interaction_images/Interaction_img2.png)' | markdownify }}
-{:.image }
-
-
-Hardcover
-
-{{ '![C:/Users/ApoorvahR/Desktop/5.png](Interaction_images/Interaction_img3.png)' | markdownify }}
-{:.image }
+![](Interaction_images/Interaction_img2.png)
 
 
-Metro
+### Hardcover
 
-{{ '![C:/Users/ApoorvahR/Desktop/6.png](Interaction_images/Interaction_img4.png)' | markdownify }}
-{:.image }
-
-
-Module
-
-{{ '![C:/Users/ApoorvahR/Desktop/7.png](Interaction_images/Interaction_img5.png)' | markdownify }}
-{:.image }
+![](Interaction_images/Interaction_img3.png)
 
 
-Office
 
-{{ '![C:/Users/ApoorvahR/Desktop/8.png](Interaction_images/Interaction_img6.png)' | markdownify }}
-{:.image }
+### Metro
 
-
-Paper
-
-{{ '![C:/Users/ApoorvahR/Desktop/9.png](Interaction_images/Interaction_img7.png)' | markdownify }}
-{:.image }
+![](Interaction_images/Interaction_img4.png)
 
 
-Pushpin
+### Module
 
-{{ '![C:/Users/ApoorvahR/Desktop/10.png](Interaction_images/Interaction_img8.png)' | markdownify }}
-{:.image }
-
-
-Solstice
-
-{{ '![C:/Users/ApoorvahR/Desktop/11.png](Interaction_images/Interaction_img9.png)' | markdownify }}
-{:.image }
+![](Interaction_images/Interaction_img5.png)
 
 
-Urban
 
-{{ '![C:/Users/ApoorvahR/Desktop/12.png](Interaction_images/Interaction_img10.png)' | markdownify }}
-{:.image }
+### Office
+
+![](Interaction_images/Interaction_img6.png)
 
 
-Waveform
 
-{{ '![C:/Users/ApoorvahR/Desktop/13.png](Interaction_images/Interaction_img11.png)' | markdownify }}
-{:.image }
+### Paper
+
+![](Interaction_images/Interaction_img7.png)
+
+
+
+### Pushpin
+
+![](Interaction_images/Interaction_img8.png)
+
+
+
+### Solstice
+
+![](Interaction_images/Interaction_img9.png)
+
+
+
+### Urban
+
+![](Interaction_images/Interaction_img10.png)
+
+
+### Waveform
+
+![](Interaction_images/Interaction_img11.png)
+
 
 
 

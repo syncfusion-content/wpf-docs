@@ -13,7 +13,7 @@ The ColorPicker control provides an easy and an efficient way to select colors f
 
 This section also discusses the ColorEdit control, which is similar to the ColorPicker.
 
-Features
+## Features
 
 * The selected color is visualized in a tooltip for the benefit of the users.
 * ColorPicker is used in two modes— RGB and HSV.

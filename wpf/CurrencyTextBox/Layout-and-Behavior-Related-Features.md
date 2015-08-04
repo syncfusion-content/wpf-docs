@@ -19,16 +19,18 @@ The Corner Radius describes the degree to which corners are rounded. This proper
 
 
 
+{% highlight xml %}
+
 XAML
 
 
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Value="123" Height="25" Width="150" CornerRadius="4"/>
 
+{% endhighlight %}
 
+![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img1.png)
 
-{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img1.png)' | markdownify }}
-{:.image }
 
 
 ## Negative Foreground
@@ -37,7 +39,8 @@ The Foreground of the CurrencyTextBox can be customized based on the Value prope
 
 > _Note: The NegativeForeground in the CurrencyTextBox can be enabled by setting the ApplyNegativeForeground property to true._
 
-> 
+
+{% highlight xml %}
 
 XAML
 
@@ -49,10 +52,10 @@ XAML
 
                             ApplyNegativeForeground="True"/>
 
+{% endhighlight %}
 
+![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img2.png)
 
-{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img2.png)' | markdownify }}
-{:.image }
 
 
 ## Zero Color
@@ -61,7 +64,9 @@ The Foreground of the CurrencyTextBox can be customized based on the Value prope
 
 > _Note: The ZeroColor in the CurrencyTextBox can be enabled by setting the ApplyZeroColor property to true._
 
-> 
+
+
+{% highlight xml %}
 
 XAML
 
@@ -72,11 +77,11 @@ XAML
                             CornerRadius="2" Value="0" ZeroColor="Magenta" 
 
                             ApplyZeroColor="True"/>
+{% endhighlight %}
 
 
+![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img3.png)
 
-{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img3.png)' | markdownify }}
-{:.image }
 
 
 ## EnterToMoveNext
@@ -89,13 +94,13 @@ The TextSelectionOnFocus property allows the CurrencyTextBox to act like standar
 
 
 
-{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img4.png)' | markdownify }}
-{:.image }
+![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img4.png)
 
 
 
 
-{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img5.png)' | markdownify }}
-{:.image }
+
+![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img5.png)
+
 
 

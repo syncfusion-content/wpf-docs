@@ -13,8 +13,8 @@ documentation: ug
 
 The various elements of the ColorPickerPalette are illustrated in the following screenshot.
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 * The Selected Color represents the color that you select.
@@ -30,33 +30,37 @@ The various elements of the ColorPickerPalette are illustrated in the following 
 
 ColorPickerPalette can be added to an application by using XAML or C# code.
 
-Adding through XAML
+### Adding through XAML
 
 The following code example illustrates how to add the ColorPickerPalette control to an application through XAML.
+
+{% highlight xml %}
 
 [XAML]
 
    <syncfusion:ColorPickerPalette x:Name="ColorPicker"/>
 
+{% endhighlight %}
 
 
 
-
-Adding through C#
+### Adding through C#
 
 The following code example illustrates how to add the ColorPickerPalette control to an application through C#.
+
+{% highlight C# %}
 
 [C#]
 
             ColorPickerPalette colorpicker = new ColorPickerPalette();
 
            this.LayoutRoot.Children.Add(colorpicker);
+{% endhighlight %}
 
 
 
 
-
-Adding through Blend
+### Adding through Blend
 
 The following are the step by step procedure for adding ColorPickerPalette control to an application through Microsoft Expression Blend.
 
@@ -70,8 +74,8 @@ To add a ColorPickerPalette control to an application through Microsoft Expressi
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 
@@ -80,7 +84,7 @@ To add a ColorPickerPalette control to an application through Microsoft Expressi
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
+
 
 

@@ -11,11 +11,11 @@ documentation: ug
 
 Expanded Mode allows you to pick colors from the ColorPickerPalette. By setting IsExpanded Property to True, the ColorPickerPalette control can be hosted in Expanded Mode. By default, this mode is set to False.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 Expanded Mode can be used when you want to have the ColorPickerPalette without drop down.
 
-Adding Expanded Mode to an Application 
+## Adding Expanded Mode to an Application 
 
 Expanded Mode can be added to an application by using XAML or C# code.
 
@@ -23,23 +23,28 @@ The following code example illustrates how to add the Expanded Mode to an applic
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<sync:ColorPickerPalette IsExpanded="True"/></td></tr>
-<tr>
-<td>
-[C#]      ColorPickerPalette colorpicker = new ColorPickerPalette();      colorpicker.IsExpanded = true;</td></tr>
-</table>
+{% highlight xml %}
 
 
-{{ '![](Expanded-Mode_images/Expanded-Mode_img1.png)' | markdownify }}
-{:.image }
+[XAML]
+<sync:ColorPickerPalette IsExpanded="True"/>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]     
+ ColorPickerPalette colorpicker = new ColorPickerPalette();     
+ colorpicker.IsExpanded = true;
+{% endhighlight %}
+
+
+![](Expanded-Mode_images/Expanded-Mode_img1.png)
 
 
 
 
-Properties
+
+## Properties
 
   _IsExpanded Property Table_
 
@@ -61,7 +66,7 @@ False</td><td>
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

@@ -13,26 +13,27 @@ Header support allows you to show text, an image, or any UI content inside the G
 
 
 
-Adding Header in Circular Gauge
+## Adding Header in Circular Gauge
 
-To add a header in the gauge, the following properties are required:
+### To add a header in the gauge, the following properties are required:
 
 * GaugeHeader
 * GaugeHeaderPosition
 
 
 
-Gauge Header
+#### Gauge Header
 
 The GaugeHeader is an object that can be used to set a unique header for the Circular Gauge. You can add text as well as images as headers in a circular gauge and only one header can be added in a circular gauge.
 
 
 
-GaugeHeaderPosition
+#### GaugeHeaderPosition
 
 This property places the header in a Circular Gauge. The value for GaugeHeaderPosition is specified in point type. By default, it is placed at (0, 0).
 
-Code Example:
+##### Code Example:
+{% highlight xml %}
 
 [XAML]
 
@@ -49,8 +50,9 @@ Code Example:
             </syncfusion:SfCircularGauge.GaugeHeader>
 
         </syncfusion:SfCircularGauge> 
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -63,20 +65,23 @@ Code Example:
             circularGauge.GaugeHeader = _textBlock;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
+
+
+
+
+###### Screenshot:
+
+![](Header-Settings_images/Header-Settings_img1.png)
 
 
 
 
 
-Screenshot:
-
-{{ '![](Header-Settings_images/Header-Settings_img1.png)' | markdownify }}
-{:.image }
+#### Gauge Header as Text
 
 
-
-
-Gauge Header as Text
+{% highlight xml %}
 
 [XAML]
 
@@ -125,8 +130,9 @@ Gauge Header as Text
 </syncfusion:SfCircularGauge.MainScale>
 
         </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -165,16 +171,18 @@ Gauge Header as Text
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
+
+
+##### Screenshot:
+
+![](Header-Settings_images/Header-Settings_img2.png)
 
 
 
-Screenshot:
+#### Gauge Header as UI Element
 
-{{ '![](Header-Settings_images/Header-Settings_img2.png)' | markdownify }}
-{:.image }
-
-
-Gauge Header as UI Element
+{% highlight xml %}
 
 [XAML]
 
@@ -207,10 +215,11 @@ Gauge Header as UI Element
 </syncfusion:SfCircularGauge.GaugeHeader>
 
    </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -248,14 +257,14 @@ Gauge Header as UI Element
 
            this.Grid.Children.Add(circularGauge);
 
+{% endhighlight %}
 
 
 
+##### Screenshot:
 
-Screenshot:
+![](Header-Settings_images/Header-Settings_img3.png)
 
-{{ '![](Header-Settings_images/Header-Settings_img3.png)' | markdownify }}
-{:.image }
 
 
 

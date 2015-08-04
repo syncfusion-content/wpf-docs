@@ -11,15 +11,18 @@ documentation: ug
 
 In addition to colors in Theme colors and Standard colors, MoreColor feature allows you to select wide range of color options. MoreColor feature includes two categories namely Standard Colors and Custom Colors. The Standard Colors includes 140 colors clustered in the shape of a Hexagon. The color chosen from this cluster will also be added in the RecentlyUsedPanel. You can also set the visibility of the MoreColor Option by using the MoreColorOptionVisibility property.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 MoreColor Option can be used when you want to select colors using standard and custom colors.
 
-Adding MoreColor Option to an Application 
+## Adding MoreColor Option to an Application 
 
 MoreColor Option can be added to an application by using XAML or C# code.
 
 The following code example illustrates how to add the MoreColor Option to an Application through XAML.
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -29,11 +32,13 @@ The following code example illustrates how to add the MoreColor Option to an App
 
                          MoreColorOptionVisibility="Visible" />
 
-
+{% endhighlight %}
 
 
 
 The following code example illustrates how to add the MoreColor Option to an Application through C#.
+
+{% highlight C# %}
 
 [C#]
 
@@ -43,23 +48,23 @@ ColorPickerPalette colorpicker = new ColorPickerPalette();
 
 colorpicker.MoreColorOptionVisibility = System.Visibility.Visible;
 
+{% endhighlight %}
+
+
+
+![](MoreColor-Option_images/MoreColor-Option_img1.png)
 
 
 
 
-{{ '![](MoreColor-Option_images/MoreColor-Option_img1.png)' | markdownify }}
-{:.image }
+
+![](MoreColor-Option_images/MoreColor-Option_img2.png)
 
 
 
 
-{{ '![](MoreColor-Option_images/MoreColor-Option_img2.png)' | markdownify }}
-{:.image }
 
-
-
-
-Properties
+## Properties
 
   _MoreColorOptionVisibility Property Table_
 
@@ -81,7 +86,7 @@ Visibility.Visible</td><td>
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

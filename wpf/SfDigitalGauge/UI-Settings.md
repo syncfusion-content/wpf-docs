@@ -7,7 +7,7 @@ control: Digital Gauge
 documentation: ug
 ---
 
-## UI Settings
+# UI Settings
 
 There are some other UI modifications that can be achieved in the Digital Gauge. They are:
 
@@ -18,17 +18,19 @@ There are some other UI modifications that can be achieved in the Digital Gauge.
 * Dimmed Brush stroke
 * Dimmed Brush opacity
 
-Character Spacing
+## Character Spacing
 
 The distance between the characters can be set by using the CharacterSpacing property.
 
 
+{% highlight xml %}
 
 [XAML]
 
            <syncfusion:SfDigitalGauge  Value="SYNCFUSION" CharacterSpacing="50"/>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -39,30 +41,32 @@ The distance between the characters can be set by using the CharacterSpacing p
             digitalgauge.CharacterSpacing = 50;
 
             this.Grid.Children.Add(digitalgauge);      
+{% endhighlight %}
+
+
+### Screenshot:
 
 
 
-Screenshot:
-
-
-
-{{ '![](UI-Settings_images/UI-Settings_img1.png)' | markdownify }}
-{:.image }
+![](UI-Settings_images/UI-Settings_img1.png)
 
 
 
 
-Character Stroke
+## Character Stroke
 
 The Stroke of the character can be changed by using CharacterStroke property.
 
 
 
+{% highlight xml %}
+
 [XAML]
 
        <syncfusion:SfDigitalGauge  Value="SYNCFUSION"   CharacterType="SegmentFourteen" CharacterStroke="Yellow" />
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -76,28 +80,31 @@ The Stroke of the character can be changed by using CharacterStroke property.
 
             this.Grid.Children.Add(digitalgauge);
 
+{% endhighlight %}
 
-
-Screenshot:
-
-
-
-{{ '![](UI-Settings_images/UI-Settings_img2.png)' | markdownify }}
-{:.image }
+### Screenshot:
 
 
 
+![](UI-Settings_images/UI-Settings_img2.png)
 
-Segment Thickness
+
+
+
+
+## Segment Thickness
 
 By using SegmentThickness property, you can adjust the thickness of the segment.
 
 
+{% highlight xml %}
 
 [XAML]
 
       <syncfusion:SfDigitalGauge  Value="SYNCFUSION"  CharacterType="SegmentFourteen  SegmentThickness="5"/>
+{% endhighlight %}
 
+{% highlight C# %}
 
 
 [C#]
@@ -118,31 +125,33 @@ By using SegmentThickness property, you can adjust the thickness of the segmen
 
             this.Grid.Children.Add(digitalgauge);
 
+{% endhighlight %}
+
+
+
+### Screenshot:
+
+
+
+![](UI-Settings_images/UI-Settings_img3.png)
 
 
 
 
-Screenshot:
 
-
-
-{{ '![](UI-Settings_images/UI-Settings_img3.png)' | markdownify }}
-{:.image }
-
-
-
-
-RTL (Right to Left) support
+## RTL (Right to Left) support
 
 The Characters are aligned by using EnableRTLFormat property. The default value of EnableRTLFormat is False.
 
 
+{% highlight xml %}
 
 [XAML]
 
       <syncfusion:SfDigitalGauge  Value="SYNCFUSION"  CharacterType="SegmentFourteen"   EnableRTLFormat="True" />
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -157,32 +166,35 @@ The Characters are aligned by using EnableRTLFormat property. The default value 
             digitalgauge.CharacterType = CharacterType.SegmentFourteen;
 
             this.Grid.Children.Add(digitalgauge);
+{% endhighlight %}
+
+
+
+
+### Screenshot:
+
+
+
+![](UI-Settings_images/UI-Settings_img4.png)
 
 
 
 
 
-Screenshot:
-
-
-
-{{ '![](UI-Settings_images/UI-Settings_img4.png)' | markdownify }}
-{:.image }
-
-
-
-
-Dimmed Brush stroke
+## Dimmed Brush stroke
 
 DimmedBrush property is used to apply brushes to the dimmed segment. This property is used to suit the background of the Digital gauge.
 
 
 
+{% highlight xml %}
 [XAML]
 
       <syncfusion:SfDigitalGauge  Value="SYNCFUSION" CharacterType="SegmentFourteen"  DimmedBrush="White" />
 
+{% endhighlight %}
 
+{% highlight C# %}
 
 [C#]
 
@@ -198,32 +210,34 @@ DimmedBrush property is used to apply brushes to the dimmed segment. This prope
 
             this.Grid.Children.Add(digitalgauge);
 
+{% endhighlight %}
+
+
+
+### Screenshot:
+
+
+
+![](UI-Settings_images/UI-Settings_img5.png)
 
 
 
 
-Screenshot:
 
-
-
-{{ '![](UI-Settings_images/UI-Settings_img5.png)' | markdownify }}
-{:.image }
-
-
-
-
-Dimmed Brush opacity
+## Dimmed Brush opacity
 
 DimmedBrushOpacity property is used to set the opacity of the brushes to the dimmed segment.
 
 
 
+{% highlight xml %}
+
 [XAML]
 
       <syncfusion:SfDigitalGauge  Value="SYNCFUSION" DimmedBrush="White"  DimmedBrushOpacity="20" CharacterType="SegmentFourteen" />
+{% endhighlight %}
 
-
-
+{% highlight C# %}
 [C#]
 
             SfDigitalGauge digitalgauge = new SfDigitalGauge();
@@ -238,16 +252,17 @@ DimmedBrushOpacity property is used to set the opacity of the brushes to the dim
 
             this.Grid.Children.Add(digitalgauge);
 
+{% endhighlight %}
 
 
 
 
-Screenshot:
+### Screenshot:
 
 
 
-{{ '![](UI-Settings_images/UI-Settings_img6.png)' | markdownify }}
-{:.image }
+![](UI-Settings_images/UI-Settings_img6.png)
+
 
 
 

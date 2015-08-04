@@ -11,15 +11,17 @@ documentation: ug
 
 The ColorPickerPalette control includes three panels namely ThemePanel, StandardColorPanel, RecentlyUsedPanel. You can set the visibility of these panels by using the ThemePanelVisibility, StandardPanelVisibility, RecentlyUsedPanelVisibility properties respectively. The ThemePanel displays the palette of selected theme colors and their variant colors in the panel. The StandardColorPanel displays a palette of 8 preset colors in panel. The RecentlyUsedColor panel displays the most recently used colors.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 You can use the ColorPickerPalette control to view the panels of your choice.
 
-Adding Setting Panel Visibilities to an Application 
+## Adding Setting Panel Visibilities to an Application 
 
 Setting Panel Visibilities can be added to an application by using XAML or C# code.
 
 The following code example illustrates how to add the Setting Panel Visibilities feature to an application through XAML.
+
+{% highlight xml %}
 
 [XAML]
 
@@ -37,13 +39,14 @@ The following code example illustrates how to add the Setting Panel Visibilities
 
                          RecentlyUsedPanelVisibility="Collapsed"/>
 
-
+{% endhighlight %}
 
 
 
 The following code example illustrates how to add the Setting Panel Visibilities feature to an application through C#.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -58,32 +61,29 @@ colorpicker.StandardPanelVisibility = System.Windows.Visibility.Collapsed;
 colorpicker.RecentlyUsedPanelVisibility = System.Windows.
 
                                           Visibility.Collapsed;
+{% endhighlight %}
+
+![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img1.png)
 
 
 
-{{ '![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img1.png)' | markdownify }}
-{:.image }
-
-
-{{ '![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img2.png)' | markdownify }}
-{:.image }
-
-
-
-
-{{ '![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img3.png)' | markdownify }}
-{:.image }
+![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img2.png)
 
 
 
 
-{{ '![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img4.png)' | markdownify }}
-{:.image }
+![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img3.png)
 
 
 
 
-Properties
+
+![](Setting-Panel-Visibilities_images/Setting-Panel-Visibilities_img4.png)
+
+
+
+
+## Properties
 
 _Panel Visibility Properties Table_
 
@@ -119,7 +119,7 @@ RecentlyUsedPanelVisibility.Visible</td><td>
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

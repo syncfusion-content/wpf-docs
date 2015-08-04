@@ -9,23 +9,23 @@ documentation: ug
 
 # ComboBoxAdv 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 If multiple choices are allowed for the user, then the ComboBoxAdv is useful to display those multiple choices.  Instead of displaying all the choices initially, the choices displayed with in the dropdown whenever the user click on the ComboBoxAdv control.
 
-Structure of the ComboBoxAdv Control
+## Structure of the ComboBoxAdv Control
 
 The following screenshot displays the ComboBoxAdv.
 
 
 
-{{ '![](ComboBoxAdv_images/ComboBoxAdv_img1.png)' | markdownify }}
-{:.image }
+![](ComboBoxAdv_images/ComboBoxAdv_img1.png)
 
 
-ComboBoxItemAdv: It can be added inside the ComboBoxAdv control. It is originally derived from the ComboBoxItem.
 
-Sample link
+## ComboBoxItemAdv: It can be added inside the ComboBoxAdv control. It is originally derived from the ComboBoxItem.
+
+## Sample link
 
 To view samples:
 
@@ -50,8 +50,8 @@ To create an ComboBoxAdv instance in Visual Studio:
 
 
 
-{{ '![](ComboBoxAdv_images/ComboBoxAdv_img2.png)' | markdownify }}
-{:.image }
+![](ComboBoxAdv_images/ComboBoxAdv_img2.png)
+
 
 
 3. In the New Project dialog box, select WPF Application.
@@ -60,8 +60,8 @@ To create an ComboBoxAdv instance in Visual Studio:
 
 
 
-{{ '![](ComboBoxAdv_images/ComboBoxAdv_img3.png)' | markdownify }}
-{:.image }
+![](ComboBoxAdv_images/ComboBoxAdv_img3.png)
+
 
 
 
@@ -70,8 +70,8 @@ To create an ComboBoxAdv instance in Visual Studio:
 
 
 
-{{ '![](ComboBoxAdv_images/ComboBoxAdv_img4.png)' | markdownify }}
-{:.image }
+![](ComboBoxAdv_images/ComboBoxAdv_img4.png)
+
 
 
 ### Creating the ComboBoxAdv Control in Expression Blend
@@ -83,8 +83,8 @@ To create ComboBoxAdv instance in Expression Blend:
 
 
 
-{{ '![](ComboBoxAdv_images/ComboBoxAdv_img5.png)' | markdownify }}
-{:.image }
+![](ComboBoxAdv_images/ComboBoxAdv_img5.png)
+
 
 
 3. In the Project type’s pane, select WPF,and then select WPF Application.
@@ -92,8 +92,8 @@ To create ComboBoxAdv instance in Expression Blend:
 
 
 
-{{ '![](ComboBoxAdv_images/ComboBoxAdv_img6.png)' | markdownify }}
-{:.image }
+![](ComboBoxAdv_images/ComboBoxAdv_img6.png)
+
 
 
 5. On the Window menu, select Assets. The Assets Library dialog box opens.
@@ -102,8 +102,8 @@ To create ComboBoxAdv instance in Expression Blend:
 
 
 
-{{ '![](ComboBoxAdv_images/ComboBoxAdv_img7.png)' | markdownify }}
-{:.image }
+![](ComboBoxAdv_images/ComboBoxAdv_img7.png)
+
 
 
 ## Appearance
@@ -120,8 +120,8 @@ You can edit the style of ComboBoxAdv by using Expression Blend. To edit the Com
 1. Drag the ComboBoxAdv control to the Design view. The ComboBoxAdv control will appear as shown in the screen shot displayed below.
 2. Right-click the ComboBoxAdv control, select Edit Template, and then select Edit a Copy.
 
-{{ '![](ComboBoxAdv_images/ComboBoxAdv_img8.png)' | markdownify }}
-{:.image }
+![](ComboBoxAdv_images/ComboBoxAdv_img8.png)
+
 
 
 ## Features of ComboBoxAdv control
@@ -130,7 +130,7 @@ You can edit the style of ComboBoxAdv by using Expression Blend. To edit the Com
 
 If we want to select more than one item in the ComboBoxAdv, AllowMultiSelect property will be helpful to do this. It allows you to select multiple items in the drop down list. The selected items will be displayed in ascending order as shown in the drop down list. When AllowMutliSelect property is true, the SelectedItems property exposes the items that are selected in the drop down list.
 
-Properties
+#### Properties
 
 _Properties Table_
 
@@ -159,33 +159,37 @@ NA</td></tr>
 </table>
 
 
-Adding Multiple Selections to an Application 
+#### Adding Multiple Selections to an Application 
 
 AllowMultiSelect property can be added directly to an application using the following code snippet.
 
 
-
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:ComboBoxAdv AllowMultiSelect="True">        </syncfusion:ComboBoxAdv></td></tr>
-<tr>
-<td>
-[C#]ComboBoxAdv comboBox = new ComboBoxAdv();       comboBox.AllowMultiSelect = true;</td></tr>
-</table>
+{% highlight xml %}
 
 
+[XAML]
+<syncfusion:ComboBoxAdv AllowMultiSelect="True"></syncfusion:ComboBoxAdv></td></tr>
+{% endhighlight %}
+
+{% highlight cs %}
+
+[C#]
+ComboBoxAdv comboBox = new ComboBoxAdv();
+comboBox.AllowMultiSelect = true;
+{% endhighlight %}
 
 
-{{ '![](ComboBoxAdv_images/ComboBoxAdv_img9.png)' | markdownify }}
-{:.image }
+
+
+![](ComboBoxAdv_images/ComboBoxAdv_img9.png)
+
 
 
 ### Default Text
 
 It displays the default text in the ComboBoxAdv when none of the items is selected in the drop down list.
 
-_Properties Table_
+#### _Properties Table_
 
 <table>
 <tr>
@@ -205,31 +209,35 @@ NA</td></tr>
 </table>
 
 
-Adding DefaultText property to an Application 
+#### Adding DefaultText property to an Application 
 
 DefaultText property can be added directly to an application in the following way: 
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:ComboBoxAdv DefaultText="..Choose Items..">        </syncfusion:ComboBoxAdv></td></tr>
-<tr>
-<td>
-[C#]ComboBoxAdv comboBox = new ComboBoxAdv();       comboBox.DefaultText = "..Choose Items..";</td></tr>
-</table>
+{% highlight xml %}
+
+[XAML]
+<syncfusion:ComboBoxAdv DefaultText="..Choose Items.."></syncfusion:ComboBoxAdv>
+{% endhighlight %}
+
+{% highlight cs %}
+
+[C#]
+ComboBoxAdv comboBox = new ComboBoxAdv();       
+comboBox.DefaultText = "..Choose Items..";
+{% endhighlight %}
 
 
-{{ '![](ComboBoxAdv_images/ComboBoxAdv_img10.png)' | markdownify }}
-{:.image }
+![](ComboBoxAdv_images/ComboBoxAdv_img10.png)
+
 
 
 ### Delimiter String Customization
 
 A delimiter string in a ComboBoxAdv is “A string that can be displayed between the selected items in the ComboBoxAdv”. We can customize this string by using the property called “SelectedValueDelimiter” in the ComboBoxAdv.
 
-_Properties Table_
+#### _Properties Table_
 
 <table>
 <tr>
@@ -249,24 +257,29 @@ NA</td></tr>
 </table>
 
 
-Adding Delimiter String Customization to an Application 
+#### Adding Delimiter String Customization to an Application 
 
 Delimiter string customization can be added directly to an application using the following code snippet: 
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:ComboBoxAdv SelectedValueDelimiter="#">        </syncfusion:ComboBoxAdv></td></tr>
-<tr>
-<td>
-[C#]ComboBoxAdv comboBox = new ComboBoxAdv();       comboBox.SelectedValueDelimiter = "#";</td></tr>
-</table>
+{% highlight xml %}
+
+[XAML]
+<syncfusion:ComboBoxAdv SelectedValueDelimiter="#"></syncfusion:ComboBoxAdv>
+{% endhighlight %}
+
+{% highlight cs %}
+
+[C#]
+ComboBoxAdv comboBox = new ComboBoxAdv();     
+comboBox.SelectedValueDelimiter = "#";
+
+{% endhighlight %}
 
 
-{{ '![](ComboBoxAdv_images/ComboBoxAdv_img11.png)' | markdownify }}
-{:.image }
+![](ComboBoxAdv_images/ComboBoxAdv_img11.png)
+
 
 
 
