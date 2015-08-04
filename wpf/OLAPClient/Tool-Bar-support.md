@@ -15,8 +15,8 @@ Three toolbars are there in OLAP Client to provide the number of options to perf
 
 This toolbar contains menus to invoke the particular operation of OLAP Client.
 
-{{ '![](Tool-Bar-support_images/Tool-Bar-support_img1.png)' | markdownify }}
-{:.image }
+![](Tool-Bar-support_images/Tool-Bar-support_img1.png)
+
 
 
 _Toolbar Table_
@@ -29,132 +29,149 @@ Name</th><th>
 Description</th><th>
 Reference Link</th></tr>
 <tr>
-<td>
-![](Tool-Bar-support_images/Tool-Bar-support_img2.png)
-{:.image }
+<td> 
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img2.png)' | markdownify }}
+
+
 </td><td>
 Connection option</td><td>
 Displays the Connection option dialog to connect to the server or Offline cube</td><td>
 Connection option</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img3.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img3.png)' | markdownify }}
+
+
 </td><td>
 New Report</td><td>
 Create a new session to create the report</td><td>
 New Report</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img4.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img4.png)' | markdownify }}
+
+
 </td><td>
 Load Report</td><td>
 Load the reports from the saved XML file</td><td>
 Load Report</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img5.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img5.png)' | markdownify }}
+
+
 </td><td>
 Save Report</td><td>
 Save the current session as an XML file</td><td>
 Save Report</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img6.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img6.png)' | markdownify }}
+
+
 </td><td>
 Save As Report</td><td>
 Save a copy of the current session as an XML file</td><td>
 Save As Report</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img7.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img7.png)' | markdownify }}
+
+
 </td><td>
 Add Report</td><td>
 Add a new report to the current report set</td><td>
 Add Report</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img8.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img8.png)' | markdownify }}
+
+
 </td><td>
 Remove Report</td><td>
 Remove the selected report from the current report set</td><td>
 Remove Report</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img9.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img9.png)' | markdownify }}
+
+
 </td><td>
 Rename Report</td><td>
 Rename the selected report in the current report set</td><td>
 Rename Report</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img10.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img10.png)' | markdownify }}
+
+
 </td><td>
 Report list</td><td>
 Displays the reports in the current report set</td><td>
 Report list</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img11.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img11.png)' | markdownify }}
+
+
 </td><td>
 Toggle Pivot</td><td>
 Toggle the axis of the selected report</td><td>
 -</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img12.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img12.png)' | markdownify }}
+
+
 </td><td>
 Show/Hide expanders</td><td>
 Show/Hide the expanders of the Chart and Grid control of the selected report</td><td>
 -</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img13.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img13.png)' | markdownify }}
+
+
 </td><td>
 Column Filter</td><td>
 Displays the Filter dialog window to filter the Column Elements in the selected report</td><td>
 Column Filter</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img14.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img14.png)' | markdownify }}
+
+
 </td><td>
 Row Filter</td><td>
 Displays the Filer dialog window to filter the Row Elements in the selected report</td><td>
 Row Filter</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img15.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img15.png)' | markdownify }}
+
+
 </td><td>
 Sorting Column</td><td>
 Displays the Sorting dialog window to sort the Column Elements in the selected report</td><td>
 Sorting Column</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img16.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img16.png)' | markdownify }}
+
+
 </td><td>
 Sorting Row</td><td>
 Displays the Sorting dialog window to sort the Row Elements in the selected report</td><td>
 Sorting Row</td></tr>
-</table>
+</table> 
+
+
 ## OLAP Chart Tool Bar
 
 By using the menus in the OLAP ChartToolBar, the user can customise the appearance and style of the chart. And also the user can change the type of the chart.
 
-{{ '![](Tool-Bar-support_images/Tool-Bar-support_img17.png)' | markdownify }}
-{:.image }
+![](Tool-Bar-support_images/Tool-Bar-support_img17.png)
+
 
 
 The following is the list of options in the OLAP Chart Tool Bar.
@@ -169,74 +186,85 @@ Name</th><th>
 Description</th></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img18.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img18.png)' | markdownify }}
+
+
 </td><td>
 Chart Appearance</td><td>
 Displays the Chart appearance dialog widow to change the chart appearance</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img19.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img19.png)' | markdownify }}
+
+
 </td><td>
 Show Legend</td><td>
 Show/Hide the legend of the chart</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img20.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img20.png)' | markdownify }}
+
+
 </td><td>
 Chart Colour Palette</td><td>
 Displays the list of colour palettes to change the current colour of the chart</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img21.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img21.png)' | markdownify }}
+
+
 </td><td>
 Chart Types</td><td>
 Displays the list of chart types to change the current chart</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img22.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img22.png)' | markdownify }}
+
+
 </td><td>
 Export Chart</td><td>
 Exports the current visual of the chart as Image</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img23.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img23.png)' | markdownify }}
+
+
 </td><td>
 Print</td><td>
 Prints the current visual of the chart</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img24.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img24.png)' | markdownify }}
+
+
 </td><td>
 Print mode</td><td>
 Used to fix the area of the chart to be printed</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img25.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img25.png)' | markdownify }}
+
+
 </td><td>
 Export to word</td><td>
 Export the current visual of the chart to Word</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img26.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img26.png)' | markdownify }}
+
+
 </td><td>
 Export to Pdf</td><td>
 Export the current visual of the chart to PDF</td></tr>
 </table>
+
+
 ## OLAP Grid Tool Bar
 
 By using the menus in the OLAP Grid Tool Bar, the user can customise the appearance and style of the Grid.
 
-{{ '![](Tool-Bar-support_images/Tool-Bar-support_img27.png)' | markdownify }}
-{:.image }
+![](Tool-Bar-support_images/Tool-Bar-support_img27.png)
+
 
 
 The following are the options in the OLAP Grid Tool Bar.
@@ -251,70 +279,80 @@ Name</td><td>
 Description</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img28.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img28.png)' | markdownify }}
+
+
 </td><td>
 Grid Style</td><td>
 Displays the Grid Style Dialog to change the current style of the Grid</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img29.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img29.png)' | markdownify }}
+
+
 </td><td>
 Show header tooltip</td><td>
 Show/Hide the Header cell tool tip.</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img30.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img30.png)' | markdownify }}
+
+
 </td><td>
 Show value cell tooltip</td><td>
 Show/Hide the value cell tool tip.</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img31.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img31.png)' | markdownify }}
+
+
 </td><td>
 Freeze Headers</td><td>
 Freeze the Header cells of the Grid</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img32.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img32.png)' | markdownify }}
+
+
 </td><td>
 Grid Layout</td><td>
 Lists different types of grid layout to change the current layout</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img33.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img33.png)' | markdownify }}
+
+
 </td><td>
 Export to Excel</td><td>
 Export the Grid to Excel</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img34.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img34.png)' | markdownify }}
+
+
 </td><td>
 Export to word</td><td>
 Export the Grid to Word</td></tr>
 <tr>
 <td>
-![](Tool-Bar-support_images/Tool-Bar-support_img35.png)
-{:.image }
+{{ '![](Tool-Bar-support_images/Tool-Bar-support_img35.png)' | markdownify }}
+
+
 </td><td>
 Export to Pdf</td><td>
 Export the Grid to PDF</td></tr>
-</table>
+</table> 
+
+
 ## Show/Hide Toolbar Options
 
 It allows you to show/hide the OLAP Client toolbar options in an application.
 
-Use Case Scenario 
+### Use Case Scenario 
 
 You can customize the visibility of the toolbar options based on their requirement. 
 
-Properties
+### Properties
 
 _Properties_
 
@@ -438,7 +476,9 @@ Boolean</td></tr>
 
 Adding/Removing OLAP Client toolbar options in an application
 
-[C#]
+{% highlight C# %}  
+
+ [C#]
 
 //Disable the Connection Option from current view of the OLAP Client Toolbar.
 
@@ -451,8 +491,10 @@ this.olapClient1.OlapClientToolBar.ShowConnectOptionButton = false;
 // When set as true, then it shows from the toolbar.
 
 
+{% endhighlight %}
 
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -468,11 +510,11 @@ this.olapClient1.OlapClientToolBar.ShowConnectOptionButton = false;
 
 When set as True, then it shows from the toolbar.
 
+{% endhighlight %} 
 
 
 
-
-Sample Link
+### Sample Link
 
 {Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version    number>\BI\WPF\OlapClient.Wpf\Samples\Appearance\OlapClientCustomizationDemo
 

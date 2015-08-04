@@ -9,7 +9,9 @@ documentation: ug
 
 # Overview
 
-Essential OLAP Client control lets you efficiently browse and analyze the multidimensional data from the OLAP data source. It lists all the Cubes, Dimensions, Measures and KPIs that are available in the data source, and lets you to slice and dice the cube. You can also create the report from the data source using OLAP Client and store it for later use. It also previews the report in the Grid and Chart while creating.
+Essential OLAP Client control lets you efficiently browse and analyze the multidimensional data from the OLAP data source. It lists all the Cubes, 
+Dimensions, Measures and KPIs that are available in the data source, and lets you to slice and dice the cube. You can also create the report from 
+the data source using OLAP Client and store it for later use. It also previews the report in the Grid and Chart while creating.
 
 OLAP Client is composed of following components:
 
@@ -24,11 +26,11 @@ OLAP Client is composed of following components:
 
 
 
-{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.png)
 
 
-Key Features
+
+## Key Features
 
 The Important features of OLAP Client controls are listed below.
 
@@ -42,7 +44,7 @@ Filter and Sorting - You can specify filters and sorting criteria by using the d
 
 Export support - You can also export the OlapGrid and OlapChart to MS-Excel and other supported image formats.  
 
-User Guide Organization
+## User Guide Organization
 
 The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of OLAP Client control. It is organized into the following sections:
 
@@ -50,7 +52,7 @@ The product comes with numerous samples as well as an extensive documentation to
 * Getting Started - This section guides you on getting started with the BI application, OLAP Client control, and so on.
 * Concepts and Features - The features of OLAP Client control are illustrated with use case scenarios, code examples and screen shots under this section.
 
-Document Conventions
+## Document Conventions
 
 The following conventions will help you to quickly identify the important sections of information while using the content.
 
@@ -75,15 +77,16 @@ Represents an example</td></tr>
 <tr>
 <td>
 Tip</td><td>
-![](Overview_images/Overview_img2.jpeg)
-{:.image }
+{{ '![](Overview_images/Overview_img2.jpeg)' | markdownify }}
+
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
-![](Overview_images/Overview_img3.jpeg)
-{:.image }
+{{ '![](Overview_images/Overview_img3.jpeg)' | markdownify }}
+
+
 </td><td>
 Represents additional information on the topic</td></tr>
 </table>

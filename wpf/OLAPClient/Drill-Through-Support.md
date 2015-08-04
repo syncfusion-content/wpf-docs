@@ -28,10 +28,13 @@ EnableDrillThrough</td><td>
 Gets or sets a value indicating whether to enable/disable drill-through action. </td><td>
 Dependency</td><td>
 Boolean</td></tr>
-</table>
+</table> 
+
 ## Adding Drill-through for OLAP Client in an application
 
 The following code example explains you on how to enable the drill-through option in your application.
+
+{% highlight C# %} 
 
 [C#]
 
@@ -57,7 +60,10 @@ void OlapGrid_LinkClick(object sender, Syncfusion.Windows.Grid.Olap.LinkLabelEve
 
 }
 
-
+ {% endhighlight %}
+ 
+ 
+ {% highlight vbnet %} 
 
 [VB]
 
@@ -80,28 +86,28 @@ Private Sub OlapGrid_LinkClick(sender As Object, e As Syncfusion.Windows.Grid.Ol
 End Sub
 
 
+{% endhighlight %}
 
 
+![](Drill-Through-Support_images/Drill-Through-Support_img1.png)
 
-{{ '![](Drill-Through-Support_images/Drill-Through-Support_img1.png)' | markdownify }}
-{:.image }
 
 
 _Hyperlink Cell Click_
 
-{{ '![](Drill-Through-Support_images/Drill-Through-Support_img2.png)' | markdownify }}
-{:.image }
+![](Drill-Through-Support_images/Drill-Through-Support_img2.png)
+
 
 
 _Attribute Hierarchy Selector_
 
-{{ '![](Drill-Through-Support_images/Drill-Through-Support_img3.png)' | markdownify }}
-{:.image }
+![](Drill-Through-Support_images/Drill-Through-Support_img3.png)
+
 
 
 _Grid with drill-through data_
 
-Sample Link
+## Sample Link
 
 SystemDrive:\<UserName>\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\WPF\OlapClient.WPF\CS\Samples\Product Showcase\DrillThrough Demo\CS 
 
