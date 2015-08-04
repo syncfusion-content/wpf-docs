@@ -29,22 +29,22 @@ The CardView control has the following built-in styles:
 
 These visual styles can be applied to the CardView control through XAML. The following example illustrates how to apply Office2007Blue style to the CardView control.
 
- [XAML]
+ {% highlight xml %}
 
 <syncfusion:CardView         syncfusion:SkinStorage.VisualStyle="Office2010Blue"        />    
 
 
-
+{% endhighlight %}
 
 
 These styles can also be applied to the CardView control through C#. The following code example illustrates this.
 
-[C#]
+{% highlight C# %}
 
 SkinStorage.SetVisualStyle(cardViewInstance, "Office2010Blue");
 
 
-
+{% endhighlight %}
 
 
 ## ItemContainerStyle
@@ -53,7 +53,7 @@ The ItemContainerStyle property of CardView is used to set the styles for CardVi
 
 1. Create a style for CardViewItem.
 
-[XAML]
+{% highlight xml %}
 
 <Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="contactStyle">
 
@@ -67,13 +67,13 @@ The ItemContainerStyle property of CardView is used to set the styles for CardVi
 
         </Style>
 
-
+{% endhighlight %}
 
 
 
 2. Set the ItemContainerStyle of CardView.
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
 
@@ -84,7 +84,7 @@ The ItemContainerStyle property of CardView is used to set the styles for CardVi
                                  ItemContainerStyle="{StaticResource contactStyle}"
 
                                                                 />
-
+{% endhighlight %}
 
 
 
@@ -95,8 +95,7 @@ This generates the following CardView control.
 
 
 
-{{ '![](Styling_images/Styling_img1.png)' | markdownify }}
-{:.image }
+![](Styling_images/Styling_img1.png)
 
 
 
@@ -109,7 +108,7 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 
 
-[XAML]
+{% highlight xml %}
 
 <Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="ageStyle1">
 
@@ -138,7 +137,7 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
         </Style>
 
 
-
+{% endhighlight %}
 
 
 
@@ -151,7 +150,7 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 
 
-[C#]
+{% highlight C# %}
 
     public class CardViewItemContainerStyleSelector : StyleSelector
 
@@ -193,7 +192,7 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
     }
 
-
+{% endhighlight %}
 
 
 
@@ -207,11 +206,11 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 
 
-[XAML]
+{% highlight xml %}
 
         <local:CardViewItemContainerStyleSelector x:Key="cardViewItemContainerStyleSelector"/>
 
-
+{% endhighlight %}
 
 
 
@@ -219,7 +218,7 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 
 
-[XAML]
+{% highlight xml %}
 
    <syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
 
@@ -234,7 +233,7 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
                                                                 />
 
 
-
+{% endhighlight %}
 
 
 
@@ -243,8 +242,7 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 This generates the following CardView control.
 
-{{ '![](Styling_images/Styling_img2.png)' | markdownify }}
-{:.image }
+![](Styling_images/Styling_img2.png)
 
 
 

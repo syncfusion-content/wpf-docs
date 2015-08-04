@@ -13,8 +13,8 @@ documentation: ug
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 
@@ -43,8 +43,7 @@ To add TimeSpanEdit control to a Visual Studio.NET project:
 
 
 
-{{ '![C:/Users/riaj/Desktop/timespan2.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+   ![C:/Users/riaj/Desktop/timespan2.png](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -53,18 +52,17 @@ To add TimeSpanEdit control to a Visual Studio.NET project:
 
 
 
-{{ '![C:/Users/riaj/Desktop/timespan3.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+   ![C:/Users/riaj/Desktop/timespan3.png](Getting-Started_images/Getting-Started_img3.png)
 
 
-_Assemblies added into References_
+   _Assemblies added into References_
 
 
 
 4. Press F4 or open the Properties Window to customize the control by setting the required properties.
 
-{{ '![C:/Users/riaj/Desktop/timespan4.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+   ![C:/Users/riaj/Desktop/timespan4.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
+
 
 
 ## TimeSpanEdit Members
@@ -75,11 +73,11 @@ _Property table_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td><td>
-Type Of Property</td><td>
-Acceptable Value</td></tr>
+<th>
+Properties</th><th>
+Description</th><th>
+Type Of Property</th><th>
+Acceptable Value</th></tr>
 <tr>
 <td>
 MaxValue</td><td>
@@ -135,11 +133,11 @@ Any string</td></tr>
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Description</td><td>
-Argument</td><td>
-Type</td></tr>
+<th>
+Event</th><th>
+Description</th><th>
+Argument</th><th>
+Type</th></tr>
 <tr>
 <td>
 ValueChanged</td><td>
@@ -157,12 +155,11 @@ PropertyChangedCallback</td></tr>
 
 1. Click Start-->All Programs-->Syncfusion-->Essential Studio <XX.X.X.XX> -->Dashboard.
 
- The Essential Studio Enterprise Edition window is displayed. 
+   The Essential Studio Enterprise Edition window is displayed. 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -175,24 +172,10 @@ The User Interface edition panel is displayed by default.
 3. Run Online XBAP Samples – View the online XBAP samples  for WPF
 4. Explore Samples-Locate the WPF samples on the disk
 
+   ![](Getting-Started_images/Getting-Started_img6.png)
 
+5. Select Run Locally Installed Samples. The WPF Sample Browser displays.
 
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
-
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
-
-
-
-
-2.  Select Run Locally Installed Samples. The WPF Sample Browser displays.
-
-
-
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
-
-
-
-
-3. On the left pane, go to Editor Controls ->Time Span Edit Demo.
+6. On the left pane, go to Editor Controls ->Time Span Edit Demo.

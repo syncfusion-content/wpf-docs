@@ -17,7 +17,7 @@ You can customize the style of the Drag Indicator which is used to indicate the 
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -115,11 +115,9 @@ You can customize the style of the Drag Indicator which is used to indicate the 
 
 </Window>
 
+{% endhighlight %}
 
-
-{{ '![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)' | markdownify }}
-{:.image }
-
+![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)
 
 
 
@@ -129,7 +127,7 @@ User can customize the header of the treeview item by using HeaderTemplate using
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -188,10 +186,10 @@ User can customize the header of the treeview item by using HeaderTemplate using
 </Window>
 
 
+{% endhighlight %}
 
-{{ '![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)' | markdownify }}
-{:.image }
 
+![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)
 
 
 
@@ -200,9 +198,7 @@ User can customize the header of the treeview item by using HeaderTemplate using
 The ExpanderStyle property enables to customize the appearance and style of expansion of the TreeViewAdv during the Expand or Collapse operation. The following code example illustrates how to set this property.
 
 
-
-[XAML]
-
+{% highlight xml %}
 
 
 <Window.Resources>
@@ -314,12 +310,10 @@ The ExpanderStyle property enables to customize the appearance and style of expa
 </Grid>
 
 
+{% endhighlight %}
 
 
-
-{{ '![](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg)' | markdownify }}
-{:.image }
-
+![](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg)
 
 
 
@@ -329,7 +323,7 @@ You can customize the items under a column header by defining a cell template fo
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -421,13 +415,11 @@ You can customize the items under a column header by defining a cell template fo
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
 
 
-
-{{ '![](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg)' | markdownify }}
-{:.image }
-
+![](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg)
 
 
 
@@ -439,8 +431,7 @@ The following example can be used to set this property.
 
 
 
-[XAML]
-
+{% highlight xml %}
 
 
 <Grid>
@@ -485,15 +476,13 @@ The following example can be used to set this property.
 
 </Grid>
 
-
+{% endhighlight %}
 
 The following screen shot shows how the TreeViewAdv looks after applying ItemContainerStyle property.
 
 
 
-{{ '![](Styles-and-Templates_images/Styles-and-Templates_img5.jpeg)' | markdownify }}
-{:.image }
-
+![](Styles-and-Templates_images/Styles-and-Templates_img5.jpeg)
 
 
 
@@ -502,8 +491,7 @@ The following screen shot shows how the TreeViewAdv looks after applying ItemCon
 User can customize the edited item by using the EditedItemTemplate property, which gets or sets the DataTemplate that is used to display each item in edit mode. 
 
 
-
-[XAML]
+{% highlight xml %}
 
 
 
@@ -590,23 +578,19 @@ User can customize the edited item by using the EditedItemTemplate property, whi
 </Window>
 
 
+{% endhighlight %}
 
 
-
-{{ '![](Styles-and-Templates_images/Styles-and-Templates_img6.jpeg)' | markdownify }}
-{:.image }
+![](Styles-and-Templates_images/Styles-and-Templates_img6.jpeg)
 
 
-
-
-EditedItemTemplateSelector
+### EditedItemTemplateSelector
 
 Allows the application writer to provide custom logic for choosing a template that is used to display each item in edit mode. It is a custom DataTemplateSelector object that provides logic and returns a DataTemplate. The default value is null reference.
 
 
 
-[C#]
-
+{% highlight C# %}
 
 
 /// <StackPanel Name="stackPanel">
@@ -711,5 +695,5 @@ Allows the application writer to provide custom logic for choosing a template th
 
 /// }
 
-
+{% endhighlight %}
 

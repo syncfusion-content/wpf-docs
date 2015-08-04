@@ -11,14 +11,13 @@ documentation: ug
 
 You can control Scaling, Opacity and Skewing for CarouselItem’s using ScaleFractions, OpacityFractions and SkewAngleXFractions,SkewAngleYFractions properties. Using TopItemPosition property, you can change the position of SelectedItem in a given path.
 
-Adding Scaling, Opacity and Skewing Support to an Application 
+## Adding Scaling, Opacity and Skewing Support to an Application 
 
 You can enable or disable this feature, using OpacityEnabled, ScalingEnabled, SkewXEnabled, SkewYEnabled properties.
 
 The following code illustrates the usage of these properties.
 
-[XAML]
-
+{% highlight xml %}
 
 
 <syncfusion:Carousel x:Name="carousel" Height="400" Width="450" ItemsPerPage="5" OpacityEnabled="True" ScalingEnabled="True" SkewAngleXEnabled="False"                     TopItemPosition="0">
@@ -58,17 +57,15 @@ The following code illustrates the usage of these properties.
 
 
 
+{% endhighlight %}
 
 
 
-
-{{ '![](Scaling-Opacity-and-Skewing-Support_images/Scaling-Opacity-and-Skewing-Support_img1.png)' | markdownify }}
-{:.image }
+![](Scaling-Opacity-and-Skewing-Support_images/Scaling-Opacity-and-Skewing-Support_img1.png)
 
 
 
-
-Properties
+## Properties
 
 
 
@@ -76,12 +73,12 @@ Properties
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 OpacityEnabled</td><td>

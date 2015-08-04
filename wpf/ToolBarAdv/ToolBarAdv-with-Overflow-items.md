@@ -19,9 +19,6 @@ ToolBarAdv enables you to set the overflow mode for each item.
 
 
 
-{{ '![](ToolBarAdv-with-Overflow-items_images/ToolBarAdv-with-Overflow-items_img1.png)' | markdownify }}
-{:.image }
-
-
+![](ToolBarAdv-with-Overflow-items_images/ToolBarAdv-with-Overflow-items_img1.png)
 
 
