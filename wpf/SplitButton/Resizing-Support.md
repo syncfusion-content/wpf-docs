@@ -13,11 +13,10 @@ The DropDownMenuGroup supports resizing, if the property IsResizable is set to t
 
 Setting IsResizable property to true:
 
+{% highlight xml %}
 
-
-[XAML]
-
-<shared:SplitButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
+   <shared:SplitButtonAdv Label="Hello World" 
+   x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
    <shared:DropDownMenuGroup IsResizable=”True”>
 
@@ -29,13 +28,13 @@ Setting IsResizable property to true:
 
    </shared:DropDownMenuGroup>
 
-</shared:SplitButtonAdv>
+   </shared:SplitButtonAdv>
+
+{% endhighlight %}
 
 
 
-{{ '![](Resizing-Support_images/Resizing-Support_img1.png)' | markdownify }}
-{:.image }
-
+![](Resizing-Support_images/Resizing-Support_img1.png)
 
 
 

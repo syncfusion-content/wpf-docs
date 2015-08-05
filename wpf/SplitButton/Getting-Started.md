@@ -15,8 +15,7 @@ This section guides you on getting started with the SplitButtonAdv control. It d
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -26,34 +25,34 @@ This section guides you on getting started with the SplitButtonAdv control. It d
 The SplitButtonAdv control is available in the following assembly:
 
 *  Syncfusion.Shared.WPF
+
 ### Setting Label
 
 
 The following code explains how to declare a SplitButtonAdv control using XAML:
 
 
-
-[XAML]
+{% highlight xml %}
 
 <sync:SplitButtonAdv Label="Hello World"/>
 
+{% endhighlight %}
 
 
 The SplitButtonAdv control can be created through C# as follows:
 
 
 
-[C#]
+
+{% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv()
 
 button.Label = "Hello World";
 
+{% endhighlight %}
 
-
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
-
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -67,21 +66,20 @@ The size mode of the SplitButtonAdv control can be easily changed using the prop
 
 
 
-Small Mode
+#### Small Mode
 
 When the SizeMode is set to Small, the icon of the DropDownButtonAdv control is displayed without the label.
 
 Use the following code snippet to set the SizeMode to Small:
 
 
-
-[XAML]
+{% highlight xml %}
 
 <sync:SplitButtonAdv SizeMode="Small" Label="Hello World"/>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv()
 
@@ -89,29 +87,26 @@ button.Label = "Hello World";
 
 button.SizeMode = SizeMode.Small;
 
+{% endhighlight %}
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
-
-Normal Mode
+#### Normal Mode
 
 The DropDownButtonAdv control retains the default appearance, when the SizeMode is set to Normal, 
 
 Use the following code snippet to set the SizeMode to Normal:
 
-
-
-[XAML]
+{% highlight xml %}
 
 <sync:SplitButtonAdv SizeMode="Normal" Label="Hello World"/>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv()
 
@@ -119,29 +114,26 @@ button.Label = "Hello World";
 
 button.SizeMode = SizeMode.Normal;
 
+{% endhighlight %}
 
-
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
-
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
-Large Mode
+#### Large Mode
 
 When the SizeMode is set to Large, the DropDownButtonAdv control is displayed with large icon and provides multiline support.
 
 Use the following code snippet to set the SizeMode to Large:
 
 
-
-[XAML]
+{% highlight xml %}
 
 <sync:SplitButtonAdv SizeMode="Large" Label="Hello World"/>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv()
 
@@ -149,11 +141,9 @@ button.Label = "Hello World";
 
 button.SizeMode = SizeMode.Large;
 
+{% endhighlight %}
 
-
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
-
+![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -169,14 +159,13 @@ The Image displayed in the control can be set using two properties:
 The SmallIcon property can be set as follows:
 
 
-
-[XAML]
+{% highlight xml %}
 
 <sync:SplitButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv()
 
@@ -186,23 +175,22 @@ button.SizeMode = SizeMode.Small;
 
 button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
+{% endhighlight %}
 
-
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
-
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
 The SmallIcon property can be set even when the SizeMode is Normal:
 
-[XAML]
+{% highlight xml %}
 
 <sync:SplitButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/>
 
+{% endhighlight  %}
 
 
-[C#]
+{% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv()
 
@@ -212,25 +200,22 @@ button.SizeMode = SizeMode.Normal;
 
 button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
+{% endhighlight %}
 
-
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
-
-
+![](Getting-Started_images/Getting-Started_img7.png)
 
 
 The LargeIcon property can be set as follows:
 
 
 
-[XAML]
+{% highlight xml %}
 
 <sync:SplitButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
 
@@ -240,11 +225,9 @@ button.SizeMode = SizeMode.Large;
 
 button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
+{% endhighlight %}
 
-
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
-
+![](Getting-Started_images/Getting-Started_img8.png)
 
 
 
@@ -252,11 +235,11 @@ button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 The DropDownMenuGroup acts as a container for SplitButtonAdv, which provides customization such as Resizing, Header and Scrollbar support.
 
-Adding DropDownMenuItems to DropDownButtonAdv:
+#### Adding DropDownMenuItems to DropDownButtonAdv:
 
 
 
-[XAML]
+{% highlight xml %}
 
 <shared:SplitButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
@@ -272,9 +255,9 @@ Adding DropDownMenuItems to DropDownButtonAdv:
 
 </shared:SplitButtonAdv>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 SplitButtonAdv button = new SplitButtonAdv();
 
@@ -294,11 +277,9 @@ menu.Items.Add(menuItem3);
 
 button.Content = menuItem1;
 
+{% endhighlight %}
 
-
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
-
+![](Getting-Started_images/Getting-Started_img9.png)
 
 
 
@@ -312,13 +293,13 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Type</td><td>
-Value it accepts</td><td>
-Description</td><td>
-Default Value</td><td>
-Reference Link</td></tr>
+<th>
+Name</th><th>
+Type</th><th>
+Value it accepts</th><th>
+Description</th><th>
+Default Value</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 Label</td><td>
@@ -370,12 +351,12 @@ _Events Table_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Event Type</td><td>
-Event Args Parameter</td><td>
-Description</td><td>
-Reference Link</td></tr>
+<th>
+Name</th><th>
+Event Type</th><th>
+Event Args Parameter</th><th>
+Description</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 DropDownOpened</td><td>
