@@ -13,7 +13,7 @@ The Spell Checking engine can also be customized to ignore certain text or words
 
 
 
-Properties
+### Properties
 
 
 
@@ -22,8 +22,8 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 ExcludeEmailAddress</td><td>
@@ -55,11 +55,11 @@ Specifies whether or not to Spell Check numbers or words with numbers during Spe
 </table>
 
 
-Setting Spell Checking options  
+### Setting Spell Checking options  
 
 Create a spell checker instance and set the spell checking options as given below:
 
-
+{%highlight c#%}
 
 [C#]
 
@@ -80,8 +80,9 @@ SpellCheck.ExcludeWordsInUpperCase = true;
 SpellCheck.ExcludeWordsWithNumbers = true;
 
 
+{%endhighlight%}
 
-Sample Link
+### Sample Link
 
 To access the sample link:
 
