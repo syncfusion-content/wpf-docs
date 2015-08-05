@@ -11,7 +11,7 @@ documentation: ug
 
 The direction of increasing value can be changed using IsDirectionReversed property. When this property is set to True, the direction of increasing value is towards left in the horizontal orientation and down in the vertical orientation. The default is false. 
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 

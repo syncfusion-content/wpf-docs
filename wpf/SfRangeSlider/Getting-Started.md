@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started 
 
-### Namespace:  Syncfusion.Windows.Controls.Input
-### Assembly:  Syncfusion.SfInput.WPF (in Syncfusion.SfInput.WPF.dll) 
+ Namespace:  Syncfusion.Windows.Controls.Input
+ Assembly:  Syncfusion.SfInput.WPF (in Syncfusion.SfInput.WPF.dll) 
 
 Dependent assembly: Syncfusion.SfShared.WPF.dll
 
 The following code sample illustrates how to create the SfRangeSlider from code-behind and XAML.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 

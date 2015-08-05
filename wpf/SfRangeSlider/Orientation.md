@@ -25,7 +25,7 @@ The default option is Horizontal.
 The following code sample illustrates how to set Vertical Orientation to SfRangeSlider.  
 
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 

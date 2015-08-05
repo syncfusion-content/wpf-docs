@@ -15,7 +15,7 @@ You can place tick marks along the track in a uniform manner and you can also cu
 
 The Tick Frequency property is used to define the number of ticks along the track, based on Minimum and Maximum values. 
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -33,7 +33,7 @@ The Tick Frequency property is used to define the number of ticks along the trac
 
 When the SnapsTo property is set to StepValues, the StepFrequency property is used to specify the interval between snap points. 
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -70,7 +70,7 @@ The default option is Inline.
 
 Tick marks are placed either below the track in horizontal orientation or right of the track in vertical orientation. 
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -90,7 +90,7 @@ TickFrequency="20" TickPlacement="BottomRight" Value="40"   />
 
 Tick marks are placed either above the track in horizontal orientation or left of the track in vertical orientation. 
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -108,7 +108,7 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 Tick marks are placed on both sides of the track either in horizontal or vertical orientation.  
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -124,7 +124,7 @@ Tick marks are placed on both sides of the track either in horizontal or vertica
 
 Ticks are placed inside the track.  
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -140,7 +140,7 @@ Ticks are placed inside the track.
 
 No Tick mark appears.  
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
