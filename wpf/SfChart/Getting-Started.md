@@ -250,7 +250,7 @@ After you have added the series, you can add ItemSource, XBindingPath and YBindi
 
 Legends act as indicators for the chart. They carry some metadata about plotting data in the ChartSeries. (For more details)
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfChart.Legend>
 
@@ -398,7 +398,7 @@ Some developers prefer code behind as the first approach for development, to cre
 
 1. Open the Add Reference window from your project.
 2. Choose Windows > Extensions >Syncfusion.SfChart.WPF.
-3. Add the following namespace in your C# file, MainPage.xaml.cs.
+3. Add the following namespace in your {% highlight C# %} file, MainPage.xaml.cs.
 
 
 

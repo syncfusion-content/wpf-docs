@@ -17,7 +17,7 @@ You can customize how a business object is displayed by using ItemTemplate of Gr
 
 
 
-[XAML]
+{% highlight xml %}
 
    <syncfusion:GroupBar Name="groupBar1"  Margin="20" AllowCollapse="True" VisualMode="StackMode" ItemsSource="{Binding GroupItems}"  >
 
@@ -37,14 +37,14 @@ You can customize how a business object is displayed by using ItemTemplate of Gr
 
         </syncfusion:GroupBar>
 
-
+{% endhighlight %}
 
 Implementing the above code will create the following GroupBar control.
 
 
 
-{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)' | markdownify }}
-{:.image }
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
+
 
 
 ## Item Template Selector
@@ -55,7 +55,7 @@ Using ItemTemplateSelector, you can use different templates for items depending 
 
 
 
-[C#]
+{% highlight C# %}
 
 public class GroupBarItemTemplateSelector : DataTemplateSelector
 
@@ -91,7 +91,7 @@ public class GroupBarItemTemplateSelector : DataTemplateSelector
 
     }
 
-
+{% endhighlight %}
 
 
 
@@ -99,7 +99,7 @@ public class GroupBarItemTemplateSelector : DataTemplateSelector
 
 
 
-[XAML]
+{% highlight xml %}
 
 <DataTemplate x:Key="WpfBookTemplate">
 
@@ -145,7 +145,7 @@ public class GroupBarItemTemplateSelector : DataTemplateSelector
 
 
 
-
+{% endhighlight %}
 
 
 
@@ -153,11 +153,11 @@ public class GroupBarItemTemplateSelector : DataTemplateSelector
 
 
 
-[XAML]
+{% highlight xml %}
 
 <local:GroupBarItemTemplateSelector x:Key="groupBarItemTemplateSelector"/>
 
-
+{% endhighlight %}
 
 
 
@@ -165,7 +165,7 @@ public class GroupBarItemTemplateSelector : DataTemplateSelector
 
 
 
-[XAML]
+{% highlight xml %}
 
    <syncfusion:GroupBar Name="groupBar1"  Margin="20" AllowCollapse="True" VisualMode="StackMode" ItemTemplateSelector="{StaticResource groupBarItemTemplateSelector}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  >
 
@@ -175,14 +175,14 @@ public class GroupBarItemTemplateSelector : DataTemplateSelector
 
 
 
-
+{% endhighlight %}
 
 This will generate the following GroupBar control.
 
 
 
-{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)' | markdownify }}
-{:.image }
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
+
 
 
 ## Header Template
@@ -193,7 +193,7 @@ You can customize the header of a GroupViewItem by using a header template. This
 
 
 
-[XAML]
+{% highlight xml %}
 
   <DataTemplate x:Key="headerTemplate">
 
@@ -209,7 +209,7 @@ You can customize the header of a GroupViewItem by using a header template. This
 
   </DataTemplate>
 
-
+{% endhighlight %}
 
 
 
@@ -217,7 +217,7 @@ You can customize the header of a GroupViewItem by using a header template. This
 
 
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:GroupBar Name="groupBar1"  Margin="20"  VisualMode="StackMode" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}">
 
@@ -237,7 +237,7 @@ You can customize the header of a GroupViewItem by using a header template. This
 
 
 
-
+{% endhighlight %}
 
 The code above applies HeaderTemplate to the GroupBar, so the headers of the group-bar items will contains a text box with a white foreground. 
 
@@ -249,7 +249,7 @@ You can customize the content of GroupViewItem by using ContentTemplate. This is
 
 
 
-[XAML]
+{% highlight xml %}
 
   <DataTemplate x:Key="contentTemplate">
 
@@ -272,14 +272,14 @@ You can customize the content of GroupViewItem by using ContentTemplate. This is
   </DataTemplate>
 
 
-
+{% endhighlight %}
 
 
 2. Set ContentTemplate for GroupBarItem to the above template.
 
 
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:GroupBar Name="groupBar1"  Margin="20"  VisualMode="StackMode" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}">
 
@@ -298,15 +298,15 @@ You can customize the content of GroupViewItem by using ContentTemplate. This is
         </syncfusion:GroupBar>
 
 
-
+{% endhighlight %}
 
 
 This will populate the GroupBar control.
 
 
 
-{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)' | markdownify }}
-{:.image }
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
+
 
 
 ## Header Template Selector
@@ -317,7 +317,7 @@ With HeaderTemplateSelector, you can use different templates for the GroupBarIte
 
 
 
-[C#]
+{% highlight C# %}
 
 public class GroupBarItemHeaderTemplateSelector : DataTemplateSelector
 
@@ -353,13 +353,13 @@ public class GroupBarItemHeaderTemplateSelector : DataTemplateSelector
 
     }
 
-
+{% endhighlight %}
 
 2. Define the data templates in the Window’s resources.
 
 
 
-[XAML]
+{% highlight xml %}
 
    <DataTemplate x:Key="WpfBookHeaderTemplate">
 
@@ -404,18 +404,18 @@ public class GroupBarItemHeaderTemplateSelector : DataTemplateSelector
         </DataTemplate>
 
 
-
+{% endhighlight %}
 
 
 3. Create an instance for the template selector in the Window’s resources.
 
 
 
-[XAML]
+{% highlight xml %}
 
   <local:GroupBarItemHeaderTemplateSelector x:Key="groupBarItemHeaderTemplateSelector"/>
 
-
+{% endhighlight %}
 
 
 
@@ -429,7 +429,7 @@ With ContentTemplateSelector, you can use different templates for GroupBarItem�
 
 
 
-[C#]
+{% highlight C# %}
 
 public class GroupBarItemContentTemplateSelector : DataTemplateSelector
 
@@ -466,14 +466,14 @@ public class GroupBarItemContentTemplateSelector : DataTemplateSelector
     }
 
 
-
+{% endhighlight %}
 
 
 2. Define the data templates in the Window’s resources.
 
 
 
-[XAML]
+{% highlight xml %}
 
           <DataTemplate x:Key="CsBookHeaderTemplate">
 
@@ -518,18 +518,18 @@ public class GroupBarItemContentTemplateSelector : DataTemplateSelector
                 </DataTemplate>
 
 
-
+{% endhighlight %}
 
 
 3. Create an instance of the template selector in the Window’s resources.
 
 
 
-[XAML]
+{% highlight xml %}
 
   <local:GroupBarItemContentTemplateSelector x:Key="groupBarItemContentTemplateSelector"/>
 
-
+{% endhighlight %}
 
 
 
@@ -537,7 +537,7 @@ public class GroupBarItemContentTemplateSelector : DataTemplateSelector
 
 
 
-[XAML]
+{% highlight xml %}
 
        <syncfusion:GroupBar Name="groupBar1"  AllowCollapse="True" VisualMode="StackMode" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   >
 
@@ -558,14 +558,14 @@ public class GroupBarItemContentTemplateSelector : DataTemplateSelector
         </syncfusion:GroupBar>
 
 
-
+{% endhighlight %}
 
 
 This will populate the GroupBar control.
 
 
 
-{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img4.png)' | markdownify }}
-{:.image }
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img4.png)
+
 
 

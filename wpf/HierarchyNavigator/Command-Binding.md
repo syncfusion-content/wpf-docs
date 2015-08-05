@@ -15,7 +15,7 @@ The steps to listen to the command binding are as follows:
 
 1. Create a DelegateCommand class inherited from ICommand, which will be used in the ViewModel sample class.
 
-C#
+{% highlight C# %}
 
 
 
@@ -84,12 +84,12 @@ public class DelegateCommand : ICommand
     }
 
 }
-
+{% endhighlight %}
 
 
 2. Create the ViewModel sample class, to bind the command in the sample WPF application.
 
-C#
+{% highlight C# %}
 
 
 
@@ -169,14 +169,14 @@ public class ViewModel : INotifyPropertyChanged
 
     }
 
-
+{% endhighlight %}
 
 1. Bind the command in the HierarchyNavigator control.
 2. To do this, create a new instance of the ViewModel sample class and set DataContext for the parent StackPanel. This will reflect changes in the children. Whenever the selected item changes, the TextBox Text value will change.
 
 
 
-XAML
+{% highlight xml %}
 
 
 
@@ -202,7 +202,7 @@ XAML
 
 </StackPanel>
 
-
+{% endhighlight %}
 
 
 

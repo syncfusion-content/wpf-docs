@@ -20,18 +20,17 @@ ValueChanged – The event occurs when the Value property of the DoubleTextBox i
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox ValueChanged="DoubleTextBox_ValueChanged"/></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox ValueChanged="DoubleTextBox_ValueChanged"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.ValueChanged += new PropertyChangedCallback(DoubleTextBox_ValueChanged);</td></tr>
+{% highlight C# %} DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.ValueChanged += new PropertyChangedCallback(DoubleTextBox_ValueChanged); {% endhighlight %} </td></tr>
 </table>
 
 
 You can handle the ValueChanged event as follows:
 
 
-
-C#
+{% highlight C# %} 
 
 
 
@@ -43,7 +42,7 @@ private void DoubleTextBox_ValueChanged(DependencyObject d, DependencyPropertyCh
 
         }
 
-
+{% endhighlight %}
 
 ## TextChanged
 
@@ -54,10 +53,10 @@ TextChanged – The event occurs when the Value property of the DoubleTextBox is
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox TextChanged="DoubleTextBox_TextChanged"/></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox TextChanged="DoubleTextBox_TextChanged"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.TextChanged+=new TextChangedEventHandler(DoubleTextBox_TextChanged);</td></tr>
+{% highlight C# %} DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.TextChanged+=new TextChangedEventHandler(DoubleTextBox_TextChanged); {% endhighlight %} </td></tr>
 </table>
 
 
@@ -65,7 +64,7 @@ You can handle the TextChanged event as follows:
 
 
 
-C#
+{% highlight C# %}
 
 
 
@@ -76,7 +75,7 @@ private void DoubleTextBox_TextChanged(object sender, TextChangedEventArgs e)
             //Insert code to do some operations when Text of DoubleTextBox changes.
 
         }
-
+{% endhighlight %}
 ## CultureChanged
 
 CultureChanged – The event occurs when the Culture property of the DoubleTextBox is changed.
@@ -86,10 +85,10 @@ CultureChanged – The event occurs when the Culture property of the DoubleTextB
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox CultureChanged="DoubleTextBox_CultureChanged"/></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox CultureChanged="DoubleTextBox_CultureChanged"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.CultureChanged+=new PropertyChangedCallback(DoubleTextBox_CultureChanged);</td></tr>
+{% highlight C# %} DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.CultureChanged+=new PropertyChangedCallback(DoubleTextBox_CultureChanged); {% endhighlight %} </td></tr>
 </table>
 
 
@@ -97,7 +96,7 @@ You can handle the CultureChanged event as follows:
 
 
 
-C#
+{% highlight C# %}
 
 
 
@@ -109,7 +108,7 @@ private void DoubleTextBox_CultureChanged(DependencyObject d, DependencyProperty
 
         }
 
-
+{% endhighlight %}
 
 ## MaxValueChanged
 
@@ -120,10 +119,10 @@ MaxValueChanged – The event occurs when the MaxValue property of the DoubleTex
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox MaxValueChanged="DoubleTextBox_MaxValueChanged"/></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox MaxValueChanged="DoubleTextBox_MaxValueChanged"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.MaxValueChanged+=new               PropertyChangedCallback(DoubleTextBox_MaxValueChanged);</td></tr>
+{% highlight C# %} DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.MaxValueChanged+=new               PropertyChangedCallback(DoubleTextBox_MaxValueChanged); {% endhighlight %} </td></tr>
 </table>
 
 
@@ -131,7 +130,7 @@ You can handle the MaxValueChanged event as follows:
 
 
 
-C#
+{% highlight C# %}
 
 
 
@@ -142,7 +141,7 @@ private void DoubleTextBox_MaxValueChanged(DependencyObject d, DependencyPropert
             //Insert code to do some operations when the MaxValue changed
 
         }
-
+{% endhighlight %}
 ## MinValueChanged
 
 MinValueChanged – The event occurs when the MinValue property of the DoubleTextBox is changed.
@@ -152,10 +151,10 @@ MinValueChanged – The event occurs when the MinValue property of the DoubleTex
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox MinValueChanged="DoubleTextBox_MinValueChanged"/></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox MinValueChanged="DoubleTextBox_MinValueChanged"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.MinValueChanged+=new              PropertyChangedCallback(DoubleTextBox_MinValueChanged);</td></tr>
+{% highlight C# %} DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.MinValueChanged+=new              PropertyChangedCallback(DoubleTextBox_MinValueChanged); {% endhighlight %} </td></tr>
 </table>
 
 
@@ -163,7 +162,7 @@ You can handle the MinValueChanged event as follows:
 
 
 
-C#
+{% highlight C# %}
 
 
 
@@ -174,7 +173,7 @@ private void DoubleTextBox_MinValueChanged(DependencyObject d, DependencyPropert
             //Insert code to do some operations when the MinValue changed
 
         }
-
+{% endhighlight %}
 ## SelectionChanged
 
 SelectionChanged – The event occurs when the selection in the textbox is changed.
@@ -184,10 +183,10 @@ SelectionChanged – The event occurs when the selection in the textbox is chang
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox SelectionChanged="DoubleTextBox_SelectionChanged"/></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox SelectionChanged="DoubleTextBox_SelectionChanged"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.SelectionChanged+=new RoutedEventHandler(DoubleTextBox_SelectionChanged);</td></tr>
+{% highlight C# %} DoubleTextBox doubleTextBox = new DoubleTextBox();doubleTextBox.SelectionChanged+=new RoutedEventHandler(DoubleTextBox_SelectionChanged); {% endhighlight %} </td></tr>
 </table>
 
 
@@ -195,7 +194,7 @@ You can handle the SelectionChanged event as follows:
 
 
 
-C#
+{% highlight C# %}
 
 
 
@@ -208,4 +207,4 @@ private void DoubleTextBox_SelectionChanged(object sender, RoutedEventArgs e)
         }
 
 
-
+{% endhighlight %}

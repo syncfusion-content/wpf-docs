@@ -12,7 +12,7 @@ documentation: ug
 The Refresh button is on the right side of the HierarchyNavigator control. Clicking the Refresh button will initiate the HierarchyNavigatorRefreshButtonClick event.
 
 {{ '![](Using-the-Refresh-button_images/Using-the-Refresh-button_img1.png)' | markdownify }}
-{:.image }
+
 
 
 <table>

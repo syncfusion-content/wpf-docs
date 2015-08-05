@@ -11,7 +11,7 @@ documentation: ug
 
 The GroupBar control implements list-type controls in the UI, similar to the Microsoft Outlook Bar. It has a container to host controls within it. Use it to host a categorized collection of command items and custom controls wired to execute custom commands. It includes several customizable features which can be easily implemented in WPF applications.
 
-Features
+##Features
 
 * Vertical and Horizontal layouts and orientation of GroupBar items.
 * Alignment and Orientation of GroupView Items.
@@ -29,7 +29,7 @@ Features
 
 
 
-Navigation Pane Features
+##Navigation Pane Features
 
 * Resize the Pop up.
 * Expand / Collapse the Navigation Pane.

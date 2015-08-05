@@ -58,17 +58,17 @@ To create the Document Container control through designer, drag a Document Conta
 
 ###Programmatically
 
-To create the Document Container programmatically, use the following XAML or C# code.
+To create the Document Container programmatically, use the following XAML or {% highlight C# %} code.
 
 
 
 <table>
 <tr>
-<th>
-[XAML]<!-- Adding Document Container --><syncfusion:DocumentContainer Name="DocContainer"/></th></tr>
+<td>
+{% highlight xml %}<!-- Adding Document Container --><syncfusion:DocumentContainer Name="DocContainer"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-[C#]//Creating instance of document containerDocumentContainer DocContainer = new DocumentContainer();//Adding control to the windowthis.Content = DocContainer;</td></tr>
+{% highlight C# %}//Creating instance of document containerDocumentContainer DocContainer = new DocumentContainer();//Adding control to the windowthis.Content = DocContainer;{% endhighlight %}</td></tr>
 </table>
 
 

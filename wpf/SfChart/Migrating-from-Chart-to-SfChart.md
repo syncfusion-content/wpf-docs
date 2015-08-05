@@ -83,7 +83,7 @@ Following code example illustrates the initialization of SfChart that is equival
 
 <syncfusion:SfChart Header="ChartArea" AreaBackground="Red" AreaBorderBrush="Gray" AreaBorderThickness="5" SideBySideSeriesPlacement="True"  />
 
-[C#]
+{% highlight C# %}
 
 SfChart chart = new SfChart();
 
@@ -344,7 +344,7 @@ Gets or sets the visibility for Legend icon symbol.</td></tr>
 
 The class design for Axis is different for both ChartArea and SfChart. In ChartArea, Axis is the instance of ChartAxis type and its type is mentioned in ValueType property as in the following code example.
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:ChartArea.PrimaryAxis>
 

@@ -16,29 +16,29 @@ The steps to customize templates by using Expression Blend are as follows:
 The following are the default resources, which are used for HierarchyNavigator control that can be changed in Expression Blend.
 
 {{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img1.png)' | markdownify }}
-{:.image }
+
 
 
 2. Right-click the HierarchyNavigator control and select Edit, then select Style, and type a name.
 
 {{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img2.png)' | markdownify }}
-{:.image }
+
 
 
 3. Right-click the HierarchyNavigatorItemsControl and select Edit, then select Template, and then select Edit a Copy, to edit the Refresh button, the History button, or the overall content. Additional styles (templates) can be used to edit a template available in the HierarchyNavigatorItemsControl class.
 
 {{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img3.png)' | markdownify }}
-{:.image }
+
 
 
 4. Right-click the Part_HierarchyNavigatorItemsControl and select Edit, and then select Additional Templates. A list of additional styles to edit will be displayed. Figure 40 displays the style names.
 
 {{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img4.png)' | markdownify }}
-{:.image }
+
 
 
 {{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img5.png)' | markdownify }}
-{:.image }
+
 
 
 5. Storyboards used in the VisualStateManager of every control are easy to customize and manage. 
@@ -47,13 +47,13 @@ The following are the default resources, which are used for HierarchyNavigator c
 
 
 {{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img6.png)' | markdownify }}
-{:.image }
+
 
 
 7. Click the Visual State name, to edit the storyboard.
 
 {{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img7.png)' | markdownify }}
-{:.image }
+
 
 
 #### Customized sample styles
@@ -86,13 +86,13 @@ The following XAML is used for the HierarchyNavigator control’s main style.
 4. Right-click the PART_HierarchyNavigatorItemsControl and select Edit Additional Templates, then select Edit Generated Item Container (ItemContainerStyle), and select Edit a Copy, to edit the item-container style.
 
 {{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img8.png)' | markdownify }}
-{:.image }
+
 
 
 5. In the Create Style Resource dialog box, type the style name.
 
 {{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img9.png)' | markdownify }}
-{:.image }
+
 
 
 #### Sample XAML for ItemContainerStyle
@@ -509,10 +509,10 @@ XAML
 Each part of a template can be edited. In the output for the above style, as shown in Figure 47 the background has been changed to a gradient and the down arrow has been changed to a square.
 
 {{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img10.png)' | markdownify }}
-{:.image }
+
 
 
 {{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img11.png)' | markdownify }}
-{:.image }
+
 
 

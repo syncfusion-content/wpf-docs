@@ -11,13 +11,13 @@ documentation: ug
 
 Flow Direction of the GroupBar is set by using the FlowDirection property. 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 FlowDirection</td><td>
@@ -33,10 +33,10 @@ Use the following code snippet to set this property.
 <table>
 <tr>
 <td>
-[XAML]<!-- Adding GroupBar that has flow direction as left to right --><syncfusion:GroupBar Height="300" Width="230" Name="groupBar" FlowDirection="RightToLeft"><!-- Adding GroupBarItem --><syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">  <!-- Adding content for GroupBar item using GroupView -->  <syncfusion:GroupView Name="groupView" IsListViewMode="True">    <syncfusion:GroupViewItem Text="List View"/>    <syncfusion:GroupViewItem Text="Show ContextMenu"/>    <syncfusion:GroupViewItem Text="Show ToolTip"/>  </syncfusion:GroupView></syncfusion:GroupBarItem><!-- Adding GroupBarItem --><syncfusion:GroupBarItem HeaderImageSource="Tasks.png" Name="groupBarItem2" Header="Visual Mode">  <!-- Adding content for GroupBar item using GroupView -->  <syncfusion:GroupView>    <syncfusion:GroupViewItem Text="Default"/>    <syncfusion:GroupViewItem Text="Multiple Expansion"/>    <syncfusion:GroupViewItem Text="StackMode"/>  </syncfusion:GroupView></syncfusion:GroupBarItem><!-- Adding GroupBarItem --><syncfusion:GroupBarItem HeaderImageSource="Notes.png" Name="groupBarItem3" Header="State Persistence">  <!-- Adding content for GroupBar item using GroupView -->  <syncfusion:GroupView>    <syncfusion:GroupViewItem Text="Save State"/>    <syncfusion:GroupViewItem Text="Load State"/>    <syncfusion:GroupViewItem Text="Reset State"/>  </syncfusion:GroupView></syncfusion:GroupBarItem></syncfusion:GroupBar></td></tr>
+{% highlight xml %}<!-- Adding GroupBar that has flow direction as left to right --><syncfusion:GroupBar Height="300" Width="230" Name="groupBar" FlowDirection="RightToLeft"><!-- Adding GroupBarItem --><syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">  <!-- Adding content for GroupBar item using GroupView -->  <syncfusion:GroupView Name="groupView" IsListViewMode="True">    <syncfusion:GroupViewItem Text="List View"/>    <syncfusion:GroupViewItem Text="Show ContextMenu"/>    <syncfusion:GroupViewItem Text="Show ToolTip"/>  </syncfusion:GroupView></syncfusion:GroupBarItem><!-- Adding GroupBarItem --><syncfusion:GroupBarItem HeaderImageSource="Tasks.png" Name="groupBarItem2" Header="Visual Mode">  <!-- Adding content for GroupBar item using GroupView -->  <syncfusion:GroupView>    <syncfusion:GroupViewItem Text="Default"/>    <syncfusion:GroupViewItem Text="Multiple Expansion"/>    <syncfusion:GroupViewItem Text="StackMode"/>  </syncfusion:GroupView></syncfusion:GroupBarItem><!-- Adding GroupBarItem --><syncfusion:GroupBarItem HeaderImageSource="Notes.png" Name="groupBarItem3" Header="State Persistence">  <!-- Adding content for GroupBar item using GroupView -->  <syncfusion:GroupView>    <syncfusion:GroupViewItem Text="Save State"/>    <syncfusion:GroupViewItem Text="Load State"/>    <syncfusion:GroupViewItem Text="Reset State"/>  </syncfusion:GroupView></syncfusion:GroupBarItem></syncfusion:GroupBar>{% endhighlight %}</td></tr>
 <tr>
 <td>
-[C#]// Setting flow direction as RightToLeftgroupBar.FlowDirection = FlowDirection.RightToLeft;  </td></tr>
+{% highlight C# %}// Setting flow direction as RightToLeftgroupBar.FlowDirection = FlowDirection.RightToLeft; {% endhighlight %} </td></tr>
 </table>
 
 

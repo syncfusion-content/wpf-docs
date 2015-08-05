@@ -36,7 +36,7 @@ To set the MDI window state to "minimized", use the below code snippet. FlowDocu
 
 </syncfusion:DocumentContainer>
 
-% endhighlight %}
+{% endhighlight %}
 
 ![](Setting-Window-State_images/Setting-Window-State_img1.jpeg)
 

@@ -35,25 +35,23 @@ You can validate the MaxValue in two ways:
 
 If this property is set to true, then when you enter a value less than the MinValue then it will automatically assign the MinValue to the Value property. Otherwise it will not allow the key press.
 
-> _Note: This will be enabled only when the MinValidation is set to OnKeyPress._
+Note: This will be enabled only when the MinValidation is set to OnKeyPress.
 
-> 
 
 ## MaxValueOnExceedMaxDigit
 
 If this property is set to true, then when you enter a value greater than the MaxValue then it will automatically assign the MaxValue to the Value property. Otherwise it will not allow the key press.
 
-> _Note: This will be enabled only when the MaxValidation is set to OnKeyPress._
+Note: This will be enabled only when the MaxValidation is set to OnKeyPress.
 
-> 
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                             MinValue="-999" MaxValue="999"                             MinValidation="OnKeyPress" MaxValidation="OnLostFocus"                            MinValueOnExceedMinDigit="True"                             MaxValueOnExceedMaxDigit="True"/></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                             MinValue="-999" MaxValue="999"                             MinValidation="OnKeyPress" MaxValidation="OnLostFocus"                            MinValueOnExceedMinDigit="True"                             MaxValueOnExceedMaxDigit="True"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.MinValue = -999;doubleTextBox.MaxValue = 999;doubleTextBox.MinValidation = Syncfusion.Windows.Shared.MinValidation.OnKeyPress;doubleTextBox.MaxValidation = Syncfusion.Windows.Shared.MaxValidation.OnLostFocus;doubleTextBox.MinValueOnExceedMinDigit = true;doubleTextBox.MaxValueOnExceedMaxDigit = true;</td></tr>
+{% highlight C# %} Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.MinValue = -999;doubleTextBox.MaxValue = 999;doubleTextBox.MinValidation = Syncfusion.Windows.Shared.MinValidation.OnKeyPress;doubleTextBox.MaxValidation = Syncfusion.Windows.Shared.MaxValidation.OnLostFocus;doubleTextBox.MinValueOnExceedMinDigit = true;doubleTextBox.MaxValueOnExceedMaxDigit = true; {% endhighlight %} </td></tr>
 </table>
 
 
@@ -61,8 +59,8 @@ Initially there is no value assigned to the DoubleTextBox. So it displays the de
 
 
 
-{{ '![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img1.png)' | markdownify }}
-{:.image }
+![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img1.png)
+
 
 
 
@@ -71,8 +69,8 @@ MaxValidation is set to OnLostFocus, so the MaxValidation will be performed only
 
 
 
-{{ '![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img2.png)' | markdownify }}
-{:.image }
+![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img2.png)
+
 
 
 
@@ -81,8 +79,8 @@ MinValidation is set to OnKeyPress, so you cannot enter a value less than the Mi
 
 
 
-{{ '![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img3.png)' | markdownify }}
-{:.image }
+![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img3.png)
+
 
 
 See Also

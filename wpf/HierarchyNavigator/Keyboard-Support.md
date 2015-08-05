@@ -11,13 +11,13 @@ documentation: ug
 
 The HierarchyNavigator control supports keyboard navigation. This allows you to select an item and open a pop-up menu by using the keyboard.
 
-_Keyboard functionality table_
+Keyboard functionality table
 
 <table>
 <tr>
-<td>
-Key</td><td>
-Functionality</td></tr>
+<th>
+Key</th><th>
+Functionality</th></tr>
 <tr>
 <td>
 Arrow Keys</td><td>

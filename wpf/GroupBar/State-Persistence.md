@@ -19,7 +19,7 @@ You can set the state persistence using the following code.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -42,14 +42,14 @@ resgisterEvents(myGroupBar);
 myGroupBar.ResetBarState();
 
 resgisterEvents(myGroupBar);
-
+{% endhighlight %}
 
 
 The ResetBarState method is used to register the events. The following code illustrates this.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -95,7 +95,7 @@ if (groupBar != null)
 
 }
 
-
+{% endhighlight %}
 
 You can also save the state persisted on loading the GroupBar. By using the SaveOriginalState property, you can enable the saving the state on loading. This dependency property sets the value indicating whether to save the state persisted on loading the GroupBar. 
 
@@ -106,10 +106,10 @@ Use the below code snippet to set this property.
 <table>
 <tr>
 <td>
-[XAML]<!-- Adding GroupBar --><syncfusion:GroupBar Height="200" Width="230" SaveOriginalState="True" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem" IsSelected="True">    <!-- Adding content for GroupBar item using panel -->    <StackPanel Orientation="Vertical">      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>      <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>      <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>    </StackPanel>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView Name="groupView" IsListViewMode="True">      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem></syncfusion:GroupBar></td></tr>
+{% highlight xml %}<!-- Adding GroupBar --><syncfusion:GroupBar Height="200" Width="230" SaveOriginalState="True" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem" IsSelected="True">    <!-- Adding content for GroupBar item using panel -->    <StackPanel Orientation="Vertical">      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>      <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>      <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>    </StackPanel>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView Name="groupView" IsListViewMode="True">      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem></syncfusion:GroupBar>{% endhighlight %}</td></tr>
 <tr>
 <td>
-[C#]//Enable the save state propertygroupBar.SaveOriginalState = true;  </td></tr>
+{% highlight C# %}//Enable the save state propertygroupBar.SaveOriginalState = true; {% endhighlight %} </td></tr>
 </table>
 
 

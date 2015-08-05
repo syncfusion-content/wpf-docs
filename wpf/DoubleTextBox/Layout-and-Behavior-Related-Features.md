@@ -19,19 +19,18 @@ The Corner Radius describes the degree to which corners are rounded. This proper
 
 
 
-{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img1.png)' | markdownify }}
-{:.image }
+![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img1.png)
+
 
 
 ## Negative Foreground
 
 The Foreground of the DoubleTextBox can be customized based on the Value property. When a Negative value is assigned to a Value property, then automatically a NegativeForeground value is assigned to the Foreground property.
 
-> _Note: The NegativeForeground in the DoubleTextBox can be enabled by setting the ApplyNegativeForeground property to true._
+Note: The NegativeForeground in the DoubleTextBox can be enabled by setting the ApplyNegativeForeground property to true.
 
-> 
 
-XAML
+{% highlight xml %}
 
 
 
@@ -39,30 +38,29 @@ XAML
 
                            ApplyNegativeForeground="True" NegativeForeground="Red"/>
 
+{% endhighlight %}
 
+![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img2.png)
 
-{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img2.png)' | markdownify }}
-{:.image }
 
 
 ## Zero Color
 
 The Foreground of the DoubleTextBox can be customized based on the Value property. When zero is assigned as a value to a Value property, then automatically the ZeroColor is set to the Foreground property.
 
-> _Note: The ZeroColor in the DoubleTextBox can be enabled by setting the ApplyZeroColor property to true._
+Note: The ZeroColor in the DoubleTextBox can be enabled by setting the ApplyZeroColor property to true.
+ 
 
-> 
-
-XAML
+{% highlight xml %}
 
 <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25" Value ="0"
 
             ApplyZeroColor="True" ZeroColor="Magenta"/>
 
+{% endhighlight %}
 
+![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img3.png)
 
-{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img3.png)' | markdownify }}
-{:.image }
 
 
 ## EnterToMoveNext
@@ -75,13 +73,13 @@ The TextSelectionOnFocus property allows the DoubleTextBox to act like standard 
 
 
 
-{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img4.png)' | markdownify }}
-{:.image }
+![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img4.png)
 
 
 
 
-{{ '![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img5.png)' | markdownify }}
-{:.image }
+
+![](Layout-and-Behavior-Related-Features_images/Layout-and-Behavior-Related-Features_img5.png)
+
 
 

@@ -13,12 +13,12 @@ An item can be selected by rolling the mouse over it. The highlight that appears
 
 The mouse wheel can be used to scroll a vertical scroll bar that is enabled in the History or Navigation pop-up control to view the full content.
 
-{{ '![](Mouse-Support_images/Mouse-Support_img1.png)' | markdownify }}
-{:.image }
+![](Mouse-Support_images/Mouse-Support_img1.png)
 
 
-{{ '![](Mouse-Support_images/Mouse-Support_img2.png)' | markdownify }}
-{:.image }
+
+![](Mouse-Support_images/Mouse-Support_img2.png)
+
 
 
 The mouse can be rolled over a Hierarchy Navigator item to view a pop-up (without clicking the item) even when there is a pop-up displayed for another item.

@@ -17,11 +17,11 @@ CreateHorizontalTabGroup() and CreateVerticalTabGroup(). Their usages are given 
 
 <table>
 <tr>
-<th>
-[XAML]<syncfusion:DocumentContainer  Name="documentcontainer1" Mode="TDI">            <Grid Name="grid1"/>            <Grid Name="grid2"/>        </syncfusion:DocumentContainer></th></tr>
+<td>
+{% highlight xml %}<syncfusion:DocumentContainer  Name="documentcontainer1" Mode="TDI">            <Grid Name="grid1"/>            <Grid Name="grid2"/>        </syncfusion:DocumentContainer>{% endhighlight %}</td></tr>
 <tr>
 <td>
-[C#]//To create horizontal tab groupdocumentcontainer1.CreateHorizontalTabGroup(grid1);//To create vertical tab group  documentcontainer1.CreateVerticalTabGroup(grid1);</td></tr>
+{% highlight C# %}//To create horizontal tab groupdocumentcontainer1.CreateHorizontalTabGroup(grid1);//To create vertical tab group  documentcontainer1.CreateVerticalTabGroup(grid1);{% endhighlight %}</td></tr>
 </table>
 
 

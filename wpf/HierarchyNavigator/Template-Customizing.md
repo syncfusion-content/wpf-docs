@@ -19,7 +19,7 @@ The steps to create a HierarchicalDataTemplate are as follows:
 
 1. Create a Business Object with its collections.
 
-C#
+{% highlight C# %}
 
 
 
@@ -113,14 +113,14 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 
 }
 
-
+{% endhighlight %}
 
 2. Add HierarchicalDataTemplate. 
 3. Add a template and ItemsSource to bind the object collections.
 
 
 
-XAML
+{highlight xml %}
 
 
 
@@ -136,13 +136,13 @@ XAML
 
 </Window.Resources>
 
-
+{% endhighlight %}
 
 4. Add hierarchicalItemsSource with the HierarchyNavigator control ItemsSource property.
 
 
 
-XAML
+{highlight xml %}
 
 
 
@@ -152,9 +152,9 @@ XAML
 
            ItemsSource="{StaticResource hierarchicalItemsSource}"/>
 
+{% endhighlight %}
 
+![](Template-Customizing_images/Template-Customizing_img1.png)
 
-{{ '![](Template-Customizing_images/Template-Customizing_img1.png)' | markdownify }}
-{:.image }
 
 

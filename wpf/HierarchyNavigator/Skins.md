@@ -19,117 +19,116 @@ Add the following DLLs to apply the corresponding theme for Hierarchy Navigator 
 
 1. Create HierarchyNavigator instance either in XAML or code behind, as shown below.
 
-XAML
+{highlight xml %}
 
 
 
 <syncfusion:HierarchyNavigator x:Name="hierarchyNavigator"/>
-
+{% endhighlight %}
 
 
 Or
 
-C#
+{% highlight C# %}
 
 
 
 HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
 
-
+{% endhighlight %}
 
 2. Apply Visual Style as shown below in code behind by calling the static method in SkinStorage class in Syncfusion.Shared.WPF.
 
 Window7
 
-C#
+{% highlight C# %}
 
 
 
 SkinStorage.SetVisualStyle(this, "Default");
 
+{% endhighlight %}
 
+![](Skins_images/Skins_img1.png)
 
-{{ '![](Skins_images/Skins_img1.png)' | markdownify }}
-{:.image }
 
 
 Office2007Blue 
 
-C#
+{% highlight C# %}
 
 
 
 SkinStorage.SetVisualStyle(this, "Office2007Blue");
 
+{% endhighlight %}
 
+![](Skins_images/Skins_img2.png)
 
-{{ '![](Skins_images/Skins_img2.png)' | markdownify }}
-{:.image }
 
 
 Office2007Black
 
-C#
+{% highlight C# %}
 
 
 
 SkinStorage.SetVisualStyle(this, "Office2007Black");
 
+{% endhighlight %}
 
+![](Skins_images/Skins_img3.png)
 
-{{ '![](Skins_images/Skins_img3.png)' | markdownify }}
-{:.image }
 
 
 Office2007Silver
 
-C#
+{% highlight C# %}
 
 
 
 SkinStorage.SetVisualStyle(this, "Office2007Silver");
 
+{% endhighlight %}
 
+![](Skins_images/Skins_img4.png)
 
-{{ '![](Skins_images/Skins_img4.png)' | markdownify }}
-{:.image }
 
 
 Expression Blend
 
-C#
-
+{% highlight C# %}
 
 
 SkinStorage.SetVisualStyle(this, "Blend");
 
+{% endhighlight %}
 
+![](Skins_images/Skins_img5.png)
 
-{{ '![](Skins_images/Skins_img5.png)' | markdownify }}
-{:.image }
 
 
 Metro Theme
 
-C#
+{% highlight C# %}
 
 SkinStorage.SetVisualStyle(this, “Metro");
 
+{% endhighlight %}
 
+![](Skins_images/Skins_img6.png)
 
-{{ '![](Skins_images/Skins_img6.png)' | markdownify }}
-{:.image }
 
 
 Transparent Theme
 
-[C#]
+[{% highlight C# %}]
 
 SkinStorage.SetVisualStyle(this, “Transparent");
 
+{% endhighlight %}
 
+![](Skins_images/Skins_img7.png)
 
-{{ '![](Skins_images/Skins_img7.png)' | markdownify }}
-{:.image }
 
 

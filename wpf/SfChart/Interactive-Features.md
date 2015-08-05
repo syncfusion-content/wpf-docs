@@ -514,7 +514,7 @@ The following code example can be used to display the zooming tool bar in SfChar
 {% endhighlight %}
 
 
-{% highlight C# %}
+{% highlight {% highlight C# %} %}
 
 SfChart chart = new SfChart();
 

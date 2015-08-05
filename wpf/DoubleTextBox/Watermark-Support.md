@@ -16,15 +16,15 @@ Watermark is the dummy content displayed in the DoubleTextBox when the value is 
 <table>
 <tr>
 <td>
-XAML</td></tr>
+{% highlight xml %} XAML {% endhighlight %} </td></tr>
 <tr>
 <td>
-<syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25"                            WatermarkText="Type Here" WatermarkTextIsVisible="True"                            WatermarkOpacity="0.5" UseNullOption="True"/></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25"                            WatermarkText="Type Here" WatermarkTextIsVisible="True"                            WatermarkOpacity="0.5" UseNullOption="True"/> {% endhighlight %} </td></tr>
 </table>
 
 
-{{ '![](Watermark-Support_images/Watermark-Support_img1.png)' | markdownify }}
-{:.image }
+![](Watermark-Support_images/Watermark-Support_img1.png)
+
 
 
 
@@ -37,7 +37,7 @@ You can customize the Visual appearance of the WatermarkText by using the Waterm
 
 
 
-XAML
+{% highlight xml %}
 
 
 
@@ -65,9 +65,9 @@ XAML
 
 </syncfusion:DoubleTextBox>
 
+{% endhighlight %}
 
+![](Watermark-Support_images/Watermark-Support_img2.png)
 
-{{ '![](Watermark-Support_images/Watermark-Support_img2.png)' | markdownify }}
-{:.image }
 
 
