@@ -16,11 +16,11 @@ _GridTreeNode Property_
 <table>
 <tr>
 <td>
-GridTreeNode Property</td><td>
-Description</td><td>
-Type of Property</td><td>
-Value It Accepts</td><td>
-Property Syntax</td></tr>
+{{ '**GridTreeNode Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type of Property**' | markdownify }}</td><td>
+{{ '**Value It Accepts**' | markdownify }}</td><td>
+{{ '**Property Syntax**' | markdownify }}</td></tr>
 <tr>
 <td>
 ChildNodes</td><td>
