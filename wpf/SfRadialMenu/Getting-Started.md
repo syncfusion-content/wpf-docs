@@ -9,14 +9,14 @@ documentation: ug
 
 # Getting Started 
 
-### Namespace : Syncfusion.Windows.Controls.Navigation 
+Namespace : Syncfusion.Windows.Controls.Navigation 
 
-### Assembly : Syncfusion.SfRadialMenu.WPF (in Syncfusion.SfRadialMenu.WPF.dll) 
+Assembly : Syncfusion.SfRadialMenu.WPF (in Syncfusion.SfRadialMenu.WPF.dll) 
 
 The following code sample shows how to create the RadialMenu from code-behind and XAML. 
 
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 

@@ -89,7 +89,7 @@ Populate the Application command collection as follows.
 
 Bind the Application command collection to the ItemsSource property of the RadialMenu control. 
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -103,7 +103,7 @@ This will populate the RadialMenu as shown in the image below.
 
 
 
-![][C:/Users/ApoorvahR/Desktop/1.png](Concepts_images/Concepts_img1.png)
+![](Concepts_images/Concepts_img1.png)
 
 
 
@@ -113,7 +113,7 @@ This will populate the RadialMenu as shown in the image below.
 
 DisplayMemberPath property of the Radial Menu used to define which business model property needs to be displayed inside the header of the Radial Menu items.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -128,7 +128,7 @@ DisplayMemberPath="Name"
 
 {%endhighlight%}
 
-![][C:/Users/ApoorvahR/Desktop/2.png](Concepts_images/Concepts_img2.png)
+![](Concepts_images/Concepts_img2.png)
 
 
 
@@ -138,7 +138,7 @@ _Displaying member path_
 
 CommandPath property of the Radial Menu can be used to bind the command in the business object to the radial menu item when items are populated using data binding. 
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -155,7 +155,7 @@ CommandPath property of the Radial Menu can be used to bind the command in the b
 
 ItemTemplate property of the RadialMenu can be used to customize the header part of the radial menu items.  
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]   
 
@@ -183,7 +183,7 @@ ItemTemplate property of the RadialMenu can be used to customize the header part
 
 {%endhighlight%}
 
-![][C:/Users/ApoorvahR/Desktop/3.png](Concepts_images/Concepts_img3.png)
+![](Concepts_images/Concepts_img3.png)
 
 
 
@@ -191,7 +191,7 @@ ItemTemplate property of the RadialMenu can be used to customize the header part
 
 The Icon property of the RadialMenu is used to customize the icon displayed in the center of RadialMenu circle.   
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -221,7 +221,7 @@ The Icon property of the RadialMenu is used to customize the icon displayed in t
 
 
 
-![][C:/Users/ApoorvahR/Desktop/4.png](Concepts_images/Concepts_img4.png)
+![](Concepts_images/Concepts_img4.png)
 
 
 
@@ -229,7 +229,7 @@ The Icon property of the RadialMenu is used to customize the icon displayed in t
 
 Color Palette can be formed in Radial Menu with the Radial Color Items. 
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -271,7 +271,7 @@ Color Palette can be formed in Radial Menu with the Radial Color Items.
 
 
 
-![][C:/Users/ApoorvahR/Desktop/5.png](Concepts_images/Concepts_img5.png)
+![](Concepts_images/Concepts_img5.png)
 
 
 
@@ -289,7 +289,7 @@ Position of the tooltip displayed relative to the Radial Menu can be customized 
 * Right: Tooltip is displayed right of the Radial Menu.
 * Bottom: Tooltip is displayed at the bottom of the Radial Menu.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -297,7 +297,7 @@ Position of the tooltip displayed relative to the Radial Menu can be customized 
 
 {%endhighlight%}
 
-![][C:/Users/ApoorvahR/Desktop/6.png](Concepts_images/Concepts_img6.png)
+![](Concepts_images/Concepts_img6.png)
 
 
 
@@ -322,35 +322,52 @@ Number of segments in the panel is determined by VisibleSegmentsCount property. 
 
 VisibleSegmentsCount property is used to specify the number of segments available in circular panel. When children count is greater than the value given in VisibleSegmentsCount property then overflowing children are not arranged in the panel. When children count is lesser than VisibleSegmentsCount property then remaining segments are left free.
 
-<table>
-<tr>
-<td>
-{%highlight xaml%}
-[XAML]<navigation:SfRadialMenu LayoutType="Custom" VisibleSegmentsCount="7" /></td></tr>
+
+{%highlight xml%}
+[XAML]
+
+<navigation:SfRadialMenu LayoutType="Custom" VisibleSegmentsCount="7" />
+
 {%endhighlight%}
-<tr>
-<td>
+
 {%highlight c#%}
-[C#]SfRadialMenu radialMenu = new SfRadialMenu();radialMenu.LayoutType = LayoutType.Custom; radialMenu.VisibleSeggmentsCount = 7; </td></tr>
+[C#]
+SfRadialMenu radialMenu = new SfRadialMenu();
+radialMenu.LayoutType = LayoutType.Custom;
+ radialMenu.VisibleSeggmentsCount = 7; 
 {%endhighlight%}
-</table>
+
 
 ### SegmentIndex
 
 SegmentIndex property is used to specify the index of the SfRadialMenuItem in circular panel. Based on the index, the RadialMenuItems are inserted in the segment. When SegmentIndex is not specified for a RadialMenuItem (or) two or more RadialMenuItems having the same SegmentIndex, then the menu item is arranged in the next available free segment. 
 
-<table>
-<tr>
-<td>
-{%highlight xaml%}
-[XAML] <navigation:SfRadialMenu LayoutType="Custom" VisibleSegmentsCount="7" />   <navigation:SfRadialMenuItem Header="Item  2" SegmentIndex="1" />   <navigation:SfRadialMenuItem Header="Item 5" SegmentIndex="4" />   <navigation:SfRadialMenuItem Header="Item 1" SegmentIndex="0" />   <navigation:SfRadialMenuItem Header="Item 6" SegmentIndex="5" />   <navigation:SfRadialMenuItem Header="Item 3" SegmentIndex="2" /></navigation:SfRadialMenu> </td></tr>
+
+{%highlight xml%}
+[XAML] 
+<navigation:SfRadialMenu LayoutType="Custom" VisibleSegmentsCount="7" />  
+ <navigation:SfRadialMenuItem Header="Item  2" SegmentIndex="1" />   
+ <navigation:SfRadialMenuItem Header="Item 5" SegmentIndex="4" />   
+ <navigation:SfRadialMenuItem Header="Item 1" SegmentIndex="0" />  
+ <navigation:SfRadialMenuItem Header="Item 6" SegmentIndex="5" />  
+ <navigation:SfRadialMenuItem Header="Item 3" SegmentIndex="2" />
+ </navigation:SfRadialMenu> 
 {%endhighlight%}
-<tr>
-<td>
+
 {%highlight c#%}
-[C#]SfRadialMenu radialMenu = new SfRadialMenu();radialMenu.LayoutType = LayoutType.Custom; radialMenu.VisibleSeggmentsCount = 7; SfRadialMenuItem item2 = new SfRadialMenuItem() { Header = "Item 2", SegmentIndex = 1 };               SfRadialMenuItem item5 = new SfRadialMenuItem() { Header   ="Item 5", SegmentIndex = 4 };SfRadialMenuItem item1 = new SfRadialMenuItem() { Header = "Item 1", SegmentIndex = 0 };SfRadialMenuItem item6 = new SfRadialMenuItem() { Header = "Item 6", SegmentIndex = 5 };SfRadialMenuItem item3 = new SfRadialMenuItem() { Header = "Item 3",SegmentIndex = 2 };radialMenu.Items.Add(item2);radialMenu.Items.Add(item5);radialMenu.Items.Add(item1);radialMenu.Items.Add(item6); radialMenu.Items.Add(item3); </td></tr>
+[C#]
+SfRadialMenu radialMenu = new SfRadialMenu();
+radialMenu.LayoutType = LayoutType.Custom; 
+radialMenu.VisibleSeggmentsCount = 7; 
+SfRadialMenuItem item2 = new SfRadialMenuItem() { Header = "Item 2", SegmentIndex = 1 };               
+SfRadialMenuItem item5 = new SfRadialMenuItem() { Header   ="Item 5", SegmentIndex = 4 };
+SfRadialMenuItem item1 = new SfRadialMenuItem() { Header = "Item 1", SegmentIndex = 0 };
+SfRadialMenuItem item6 = new SfRadialMenuItem() { Header = "Item 6", SegmentIndex = 5 };
+SfRadialMenuItem item3 = new SfRadialMenuItem() { Header = "Item 3",SegmentIndex = 2 };
+radialMenu.Items.Add(item2);radialMenu.Items.Add(item5);radialMenu.Items.Add(item1);
+radialMenu.Items.Add(item6); radialMenu.Items.Add(item3); </td></tr>
 {%endhighlight%}
-</table>
+
 
 
 ![](Concepts_images/Concepts_img7.png)

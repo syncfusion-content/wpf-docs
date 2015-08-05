@@ -14,7 +14,7 @@ documentation: ug
 RadiusX and RadiusY properties in the Radial Menu can be used to define the X and Y axis radius to render the control. 
 
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -26,7 +26,7 @@ RadiusX and RadiusY properties in the Radial Menu can be used to define the X an
 
 CenterRimRadiusFactor property can be used to define the radius of the center rim (inner circle). 
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -36,7 +36,7 @@ CenterRimRadiusFactor property can be used to define the radius of the center ri
 
 {%endhighlight%}
 
-![][C:/Users/ApoorvahR/Desktop/7.png](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
 
@@ -44,7 +44,7 @@ CenterRimRadiusFactor property can be used to define the radius of the center ri
 
 RimBackground property used to fill the outer rim (outer circle).
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -54,7 +54,7 @@ RimBackground property used to fill the outer rim (outer circle).
 
 
 
-![][C:/Users/ApoorvahR/Desktop/8.png](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
 
 
@@ -66,7 +66,7 @@ _RadialMenu outer ring flled with color_
 
 RimActiveBrush property used to fill the expander rim and this expander rim only visible when the items have sub items.   
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -79,7 +79,7 @@ RimActiveBrush property used to fill the expander rim and this expander rim only
 
 
 
-![][C:/Users/ApoorvahR/Desktop/9.png](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 
 
@@ -87,7 +87,7 @@ RimActiveBrush property used to fill the expander rim and this expander rim only
 
 The RimHoverBrush property can be used to fill the expander rim while the pointer is hovering over it. 
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -99,7 +99,7 @@ The RimHoverBrush property can be used to fill the expander rim while the pointe
 
 
 
-![][C:/Users/ApoorvahR/Desktop/10.png](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 
 
@@ -107,7 +107,7 @@ The RimHoverBrush property can be used to fill the expander rim while the pointe
 
 RimRadiusFactor property of Radial Menu can be used to set the radius of the items panel. Lowest values to this factor increases the thickness of the outer rim. Highest values to this factor decreases the thickness of the outer rim. 
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -117,7 +117,7 @@ RimRadiusFactor property of Radial Menu can be used to set the radius of the ite
 
 {%endhighlight%}
 
-![][C:/Users/ApoorvahR/Desktop/11.png](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
+![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
 
 
@@ -125,7 +125,7 @@ RimRadiusFactor property of Radial Menu can be used to set the radius of the ite
 
 The navigation button displayed in the center of radial menu can be styled using NaviationButtonStyle property. 
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -141,7 +141,7 @@ IsOpen="True" />
 
 Each SfRadialMenuItem can be set with a different background color on mouse over by using the MenuMouseOverBackgroundColor property. Before that, the ShowMouseOverStyle property should be set to true.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 

@@ -11,7 +11,7 @@ documentation: ug
 
 The Radial Menu displays a hierarchical menu in a circular layout. Typically used as a context menu, it can expose more menu items in the same space than traditional menus.
 
-Key Features
+### Key Features
 
 * Items Source – Any business object collection can be bound to control. 
 * Commanding – Each item can be bound to a command that could perform an action. 
@@ -21,7 +21,7 @@ Key Features
 
 
 
-![][C:/Users/ApoorvahR/Desktop/1.png](Overview_images/Overview_img1.png)
+![](Overview_images/Overview_img1.png)
 
 
 
