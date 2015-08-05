@@ -121,7 +121,7 @@ Bind the Employees collection to the ItemsSource property of DomainUpDown:
 
 ContentTemplate helps the user decorate the content with visual elements. At this point, the control is populated with list of employees, and the Employee model contains two properties: Name and Email. In this example, the control is set to display content based on Name.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -159,6 +159,6 @@ ContentTemplate helps the user decorate the content with visual elements. At thi
 
 
 
-![][C:/Users/ApoorvahR/Desktop/2.png](Populating-Data_images/Populating-Data_img1.png)
+![](Populating-Data_images/Populating-Data_img1.png)
 
 

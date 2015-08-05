@@ -12,7 +12,7 @@ documentation: ug
 Incrementing the value starts from the maximum value once it has reached the minimum value and starts from the minimum value once it has reached the maximum value.
 
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
