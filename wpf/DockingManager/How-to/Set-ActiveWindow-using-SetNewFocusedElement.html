@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Set-ActiveWindow-using-SetNewFocusedElement</title>
+	<meta name="" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/syntax.css" rel="stylesheet">
+	<link href="/css/post.css" rel="stylesheet">	
+	<link href="/css/menu.css" rel="stylesheet">
+	<link href="//cdn.syncfusion.com/documentation/teststyles/ej.widgets.core.min-gzip.css" rel="stylesheet">
+	<link href="//cdn.syncfusion.com/documentation/teststyles/ej.theme.min-gzip.css" rel="stylesheet">	
+	
+	<script src="//cdn.syncfusion.com/documentation/scripts/run_prettify.js"></script>			
+	<script src="//cdn.syncfusion.com/documentation/scripts/jquery-2.1.1.min.js"></script>	
+	<!--<script src="/script/app.js"></script>	
+	<script src="/script/dojo.js"></script> -->	
+	<script>
+		if (typeof jQuery == 'undefined') {
+			document.write(unescape("%3Cscript src='/script/jquery-2.1.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+		}
+	</script>
+	<script src="//cdn.syncfusion.com/documentation/scripts/jquery.easing.1.3.min.js"></script>
+	<script>
+		if (typeof jQuery.easing == 'undefined') {
+			document.write(unescape("%3Cscript src='/script/jquery.easing.1.3.min.js' type='text/javascript'%3E%3C/script%3E"));
+		}
+	</script>
+	<script src="//cdn.syncfusion.com/documentation/scripts/ej.treeview.checkbox.waitingpopup.min.js"></script>
+	<script>
+		if (typeof ej == 'undefined') {
+			document.write(unescape("%3Cscript src='/script/ej.treeview.checkbox.waitingpopup.min.js' type='text/javascript'%3E%3C/script%3E"));
+		}
+	</script>	
+	<script src="//cdn.syncfusion.com/documentation/scripts/jquery-migrate-1.2.1.min.js"></script>
+	<script src="//cdn.syncfusion.com/documentation/scripts/bootstrap.min.js"></script>	
+	<script src="/script/toc.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-233131-11', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</head>
+
+<body>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(function() {
+			return $("h2,h3").each(function(i, el) {
+				var $el, icon, id;
+				$el = $(el);
+				id = $el.attr('id');
+				icon = '<i class="fa fa-link"></i>';
+				if (id) {
+					return $el.append($("<a />").addClass("permalink").attr({href: "#" + id,title:"Permalink"}).html(icon));
+				}
+			});
+		});
+		
+		$(".left-menu-icon").click(function(){
+			$(".left-toc").toggle();
+		}); 
+		
+		$('#rightsidetoc').toc();
+		$('#rightsidetoc').toc({ noBackToTopLinks: true });
+		$('#rightsidetoc').toc({ listType: 'ol' });
+		$("#rightsidetoc ul:first").attr("id","righttree");
+		$('#rightsidetoc ol').length ? $("#rightsidetoc").css("display","block") : $("#rightsidetoc").css("display","none")
+ 
+		$('.treeview').ejTreeView({  loadOnDemand: true,nodeSelect: onNodeSelect }); 
+ 
+		$(".left-toc").css("background-image", "none");
+		$(".left-toc .left-toc-content").css("display","block");
+ 
+		function onNodeSelect(args) {
+			var tree = $('.treeview').data('ejTreeView');
+              if(this.isExpanded(args.currentElement))
+                tree.collapseNode(args.currentElement);
+              else
+                tree.expandNode(args.currentElement);
+            
+			$(args.currentElement).find('> div > .e-text').removeClass('e-active');
+		}
+
+		var lastSegment = window.location.pathname;
+
+		if (window.location.pathname.indexOf("api") > -1) {
+			lastSegment = window.location.pathname+window.location.hash;
+		}
+		
+		$("ul > li a[href='" + lastSegment + "']").parents('ul').css('display','block');
+		$("ul > li a[href='" + lastSegment + "']").closest('a').addClass('node-selected');
+		
+		var  expandedNode= $(".node-selected").parents('li');
+		
+		for(var i=1;i< expandedNode.length;i++)	{
+			$($(expandedNode[i]).find(".e-plus:first")).removeClass("e-plus").addClass("e-minus");
+		}
+
+		$("#api-reference > ul li a").click(function(){
+			$("ul li a").removeClass("node-selected");
+			$(this).addClass("node-selected");
+		});
+	});
+	
+	$(".e-item").click(function() {
+		$(this).addClass('e-collapse');
+	});
+	
+	$(window).load(function()
+	{
+		$(".syncfusion-menu .search").css("display","block");
+		$(".search #gsc-i-id1").attr("placeholder", "Search");
+		$(".search #gsc-i-id1").removeAttr("title");
+		$(".search .gsc-search-button-v2").removeAttr("title");
+		setSearchPopupHeight();
+		var offsetval=$(".node-selected").offset();
+		
+		if (offsetval && (($(".node-selected").offset().top) > $(".left-toc").height())) {
+			$(".left-toc").scrollTop((($(".node-selected").offset().top)-($(".left-toc").offset().top)- 100));
+		}
+	});
+
+	$(window).resize(function(){
+		setSearchPopupHeight();
+	});
+
+	function setSearchPopupHeight() {
+		var viewPort=viewport();
+		var popupHeight=(viewPort.height*75)/100;
+		var PopupWidth=(viewPort.width*65)/100;
+		var topPosition=(viewPort.height-popupHeight)/2;
+		var leftPosition=(viewPort.width-PopupWidth)/2;
+		
+		if (viewPort.width < 992) {
+			PopupWidth=(viewPort.width*80)/100;
+			leftPosition=(viewPort.width-PopupWidth)/2;
+			$(".syncfusion-menu .search .gsc-results-wrapper-overlay").css({"height":popupHeight+"px","top":topPosition+"px","width":PopupWidth+"px","left":leftPosition+"px"});
+		}
+		else {
+			$(".syncfusion-menu .search .gsc-results-wrapper-overlay").css({"height":popupHeight+"px","top":topPosition+"px","width":PopupWidth+"px","left":leftPosition+"px"});
+		}
+		$(".syncfusion-menu .search .gsc-modal-background-image").css({"height":viewPort.height+"px"});
+	}
+
+	function viewport() {
+		if (typeof $.browser.safari != 'undefined' && $.browser.safari) {
+			return { width: $(window).width(), height: $(window).height() };
+		}
+		else {
+			var e = window, a = 'inner';
+			if (!('innerWidth' in window)) {
+				a = 'client';
+				e = document.documentElement || document.body;
+			}
+			return { width: e[a + 'Width'], height: e[a + 'Height'] };
+		}
+	}
+</script>
+<script src="//cdn.syncfusion.com/documentation/scripts/static-top-toc.js"></script>
+<div class="container-fluid">
+    <div class="row-fluid">
+       <nav class="navbar navbar-inverse navbar-fixed-top syncfusion-menu">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="nav-toggle-icon"></span>       
+      </button>
+	  <div class="syncfusion-logo">	
+	  <div class="left-menu-icon">
+	  </div>
+	   <div>
+	   <a href="http://help.syncfusion.com/">
+	  <img  src="/images/syncfusion-logo.svg">
+		</img>
+	   </a>	   	
+	   </div>
+	    <div class="js-doc">
+								
+		                         
+								
+								
+                                
+                                
+                                
+                                
+                                
+								
+								 
+								
+								
+																
+									
+									
+								
+								
+								  <span>WPF</span>
+								
+								
+						
+		 </div>
+	  </div>		
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">     
+     
+      <ul class="nav navbar-nav navbar-right">
+	  <li class="search">
+							
+									
+
+
+
+
+
+
+
+
+
+
+
+
+								
+
+
+
+
+<script>
+  (function() {
+    var cx = '014729256687841406486:2hr2o6966iq';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+
+
+
+
+
+                               
+		
+	  </li>
+	    			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+						<li class="menu-links active"><a href="http://samples.syncfusion.com/" target="_blank">Demo</a></li>
+<li class="menu-links active "><a href="http://www.syncfusion.com/support/directtrac" target="_blank">Support</a></li>
+<li class="menu-links active "><a href="https://www.syncfusion.com/forums/wpf" target="_blank">Forum</a></li>
+<li class="menu-links active"><a href="https://www.syncfusion.com/downloads/wpf" target="_blank">Download</a></li>
+					'				
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			
+      </ul>
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+</nav>
+    </div>
+</div>
+
+
+    <div class="help-content">
+<!--googleoff: all-->
+<div class="left-toc">
+<div class="left-toc-content">
+
+
+
+
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					
+						<?xml version="1.0" encoding="utf-8"?>
+<ul class="treeview">
+<li> <a href="http://help.syncfusion.com/cr/wpf"> API Reference</a></li>
+  <li>Introduction<ul><li><a href="/wpf/introduction/overview">Overview</a></li><li><a href="/wpf/introduction/system-requirement">System Requirement</a></li><li><a href="/wpf/introduction/net-framework-support-history">NET Framework support History</a></li><li><a href="/wpf/introduction/manual-installation">Manual Installation</a></li><li><a href="/wpf/introduction/deployment">Deployment</a></li><li><a href="/wpf/introduction/themes">Themes</a></li><li><a href="/wpf/introduction/sample-locations">Sample Locations</a></li><li><a href="/wpf/introduction/common-supports">Common Supports</a></li></ul></li>
+  <li>AutoComplete<ul><li><a href="/wpf/autocomplete/overview">Overview</a></li><li><a href="/wpf/autocomplete/getting-started">Getting Started</a></li><li><a href="/wpf/autocomplete/basic-core-features">Basic Core Features</a></li><li><a href="/wpf/autocomplete/filepath-registry--custom-data-source-support">FilePath Registry  Custom Data Source Support</a></li><li><a href="/wpf/autocomplete/data-binding">Data Binding</a></li><li><a href="/wpf/autocomplete/selection-mode-support">Selection Mode Support</a></li><li><a href="/wpf/autocomplete/auto-append-support">Auto Append Support</a></li><li><a href="/wpf/autocomplete/filter-support">Filter Support</a></li><li><a href="/wpf/autocomplete/custom-filtration-support">Custom Filtration Support</a></li><li><a href="/wpf/autocomplete/history-support">History Support</a></li><li><a href="/wpf/autocomplete/popup-resize-support">Popup Resize Support</a></li><li><a href="/wpf/autocomplete/appearance">Appearance</a></li><li><a href="/wpf/autocomplete/how-to/bind-the-business-objects-to-autocomplete">Bind the Business objects to AutoComplete</a></li></ul></li>
+  <li>SfBarcode<ul><li><a href="/wpf/sfbarcode/overview">Overview</a></li><li><a href="/wpf/sfbarcode/getting-started">Getting-Started</a></li><li><a href="/wpf/sfbarcode/barcode-symbols">Barcode-Symbols</a></li><li><a href="/wpf/sfbarcode/barcode-customization">Barcode-Customization</a></li><li><a href="/wpf/sfbarcode/symbology-settings">Symbology-Settings</a></li></ul></li>
+  <li>SfBulletGraph<ul><li><a href="/wpf/sfbulletgraph/introduction">Introduction</a></li><li><a href="/wpf/sfbulletgraph/getting-started">Getting-Started</a></li><li><a href="/wpf/sfbulletgraph/concept-and-features">Concept-and-Features</a></li></ul></li>
+  <li>SfBusyIndicator<ul><li><a href="/wpf/sfbusyindicator/overview">Overview</a></li><li><a href="/wpf/sfbusyindicator/getting-started">Getting-Started</a></li><li><a href="/wpf/sfbusyindicator/sizing">Sizing</a></li><li><a href="/wpf/sfbusyindicator/animationtypes">AnimationTypes</a></li><li><a href="/wpf/sfbusyindicator/header">Header</a></li><li><a href="/wpf/sfbusyindicator/isbusy">IsBusy</a></li></ul></li>
+  <li>ButtonAdv<ul><li><a href="/wpf/buttonadv/overview">Overview</a></li><li><a href="/wpf/buttonadv/getting-started">Getting-Started</a></li><li><a href="/wpf/buttonadv/blendability">Blendability</a></li><li><a href="/wpf/buttonadv/checkable-support">Checkable-Support</a></li><li><a href="/wpf/buttonadv/command-binding">Command-Binding</a></li><li><a href="/wpf/buttonadv/events">Events</a></li><li><a href="/wpf/buttonadv/multi-line-support">Multi-Line-Support</a></li></ul></li>
+  <li>Calculate<ul><li><a href="/wpf/calculate/overview">Overview</a></li><li><a href="/wpf/calculate/getting-started">Getting-Started</a></li><li><a href="/wpf/calculate/add-calculation-support">Add-Calculation-Support</a></li><li><a href="/wpf/calculate/calculate-functions">Calculate-functions</a></li><li><a href="/wpf/calculate/function-library">Function-Library</a></li><li><a href="/wpf/calculate/function-reference-section">Function-Reference-Section</a></li><li><a href="/wpf/calculate/inside-calcengine">Inside-CalcEngine</a></li><li><a href="/wpf/calculate/supported-algebra">Supported-Algebra</a></li><li><a href="/wpf/calculate/working-with-an-excel-spreadsheet">Working-with-an-Excel-Spreadsheet</a></li></ul></li>
+  <li>SfCalculator<ul><li><a href="/wpf/sfcalculator/overview">Overview</a></li><li><a href="/wpf/sfcalculator/getting-started">Getting-Started</a></li><li><a href="/wpf/sfcalculator/memory">Memory</a></li><li><a href="/wpf/sfcalculator/value">Value</a></li></ul></li>
+  <li>SfCalculator<ul><li><a href="/wpf/sfcalculator/overview">Overview</a></li><li><a href="/wpf/sfcalculator/getting-started">Getting-Started</a></li><li><a href="/wpf/sfcalculator/memory">Memory</a></li><li><a href="/wpf/sfcalculator/value">Value</a></li></ul></li>
+  <li>CardView<ul><li><a href="/wpf/cardview/overview">Overview</a></li><li><a href="/wpf/cardview/getting-started">Getting Started</a></li><li><a href="/wpf/cardview/data-binding-to-objects">Data Binding to Objects</a></li><li><a href="/wpf/cardview/customizing-data-templates">Customizing Data Templates</a></li><li><a href="/wpf/cardview/styling">Styling</a></li><li><a href="/wpf/cardview/controls-and-components">Controls and Components</a></li></ul></li>
+  <li>Carousel<ul><li><a href="/wpf/carousel/overview">Overview</a></li><li><a href="/wpf/carousel/getting-started">Getting Started</a></li><li><a href="/wpf/carousel/data-binding">Data Binding</a></li><li><a href="/wpf/carousel/path-support">Path support</a></li><li><a href="/wpf/carousel/itemsperpage-support">ItemsPerPage support</a></li><li><a href="/wpf/carousel/scaling-opacity-and-skewing-support">Scaling Opacity and Skewing Support</a></li><li><a href="/wpf/carousel/blendability-support">Blendability support</a></li><li><a href="/wpf/carousel/how-to/change-selecteditem-position">Change SelectedItem position</a></li></ul></li>
+  <li>SfChart<ul><li><a href="/wpf/sfchart/overview">Overview</a></li><li><a href="/wpf/sfchart/getting-started">Getting Started</a></li><li><a href="/wpf/sfchart/area">Area</a></li><li><a href="/wpf/sfchart/axis">Axis</a></li><li><a href="/wpf/sfchart/legend">Legend</a></li><li><a href="/wpf/sfchart/series">Series</a></li><li><a href="/wpf/sfchart/sorting">Sorting</a></li><li><a href="/wpf/sfchart/emptypoints">EmptyPoints</a></li><li><a href="/wpf/sfchart/databinding">DataBinding</a></li><li><a href="/wpf/sfchart/adornments">Adornments</a></li><li><a href="/wpf/sfchart/annotations">Annotations</a></li><li><a href="/wpf/sfchart/vertical-charts">Vertical Charts</a></li><li><a href="/wpf/sfchart/striplines">Striplines</a></li><li><a href="/wpf/sfchart/technical-indicators">Technical Indicators</a></li><li><a href="/wpf/sfchart/trendlines">Trendlines</a></li><li><a href="/wpf/sfchart/interactive-features">Interactive Features</a></li><li><a href="/wpf/sfchart/styling-and-customization">Styling and Customization</a></li><li><a href="/wpf/sfchart/animation">Animation</a></li><li><a href="/wpf/sfchart/exporting">Exporting</a></li><li><a href="/wpf/sfchart/printing">Printing</a></li><li><a href="/wpf/sfchart/watermark">Watermark</a></li><li><a href="/wpf/sfchart/performance">Performance</a></li><li><a href="/wpf/sfchart/d-charts">D Charts</a></li><li><a href="/wpf/sfchart/migrating-from-chart-to-sfchart">Migrating from Chart to SfChart</a></li><li><a href="/wpf/sfchart/how-to/add-custom-labels-to-track-ball-behavior">Add custom labels to track ball behavior</a></li><li><a href="/wpf/sfchart/how-to/transform-axis-value-to-pixel-value-and-vice-versa">Transform axis value to pixel value and vice versa</a></li><li><a href="/wpf/sfchart/how-to/add-range-of-points-dynamically">Add range of points dynamically</a></li><li><a href="/wpf/sfchart/how-to/print-the-sfchart">Print the SfChart</a></li><li><a href="/wpf/sfchart/how-to/export-chart-to-image-windows-">Export Chart to Image Windows </a></li></ul></li>
+  <li>CheckListBox<ul><li><a href="/wpf/checklistbox/overview">Overview</a></li><li><a href="/wpf/checklistbox/getting-started">Getting Started</a></li><li><a href="/wpf/checklistbox/item-selection">Item Selection</a></li><li><a href="/wpf/checklistbox/layout-related-features">Layout Related Features</a></li><li><a href="/wpf/checklistbox/how-to/check-the-item-in-checklistbox-when-initiating">Check the item in CheckListBox when initiating</a></li></ul></li>
+  <li>ChromelessWindow<ul><li><a href="/wpf/chromlesswindow/overview">Overview</a></li><li><a href="/wpf/chromlesswindow/getting-started">Getting Started</a></li><li><a href="/wpf/chromlesswindow/layout-related-features">Layout Related Features</a></li><li><a href="/wpf/chromlesswindow/styles-and-templates">Styles and Templates</a></li><li><a href="/wpf/chromlesswindow/localization">Localization</a></li></ul></li>
+  <li>Circular Gauge<ul><li><a href="/wpf/sfcirculargauge/overview">Overview</a></li><li><a href="/wpf/sfcirculargauge/getting-started">Getting Started</a></li><li><a href="/wpf/sfcirculargauge/header-settings">Header Settings</a></li><li><a href="/wpf/sfcirculargauge/label-settings">Label Settings</a></li><li><a href="/wpf/sfcirculargauge/pointer-settings">Pointer Settings</a></li><li><a href="/wpf/sfcirculargauge/range-settings">Range Settings</a></li><li><a href="/wpf/sfcirculargauge/scale-settings">Scale Settings</a></li><li><a href="/wpf/sfcirculargauge/tick-settings">Tick settings</a></li><li><a href="/wpf/sfcirculargauge/rim-settings">Rim Settings</a></li></ul></li>
+  <li>Color Palette<ul><li><a href="/wpf/sfcolorpalette/overview">Overview</a></li><li><a href="/wpf/sfcolorpalette/getting-started">Getting Started</a></li><li><a href="/wpf/sfcolorpalette/selectedcolor">SelectedColor</a></li><li><a href="/wpf/sfcolorpalette/interaction">Interaction</a></li></ul></li>
+  <li>ColorPicker<ul><li><a href="/wpf/colorpicker/overview">Overview</a></li><li><a href="/wpf/colorpicker/getting-started">Getting Started</a></li><li><a href="/wpf/colorpicker/selection-mode">Selection Mode</a></li><li><a href="/wpf/colorpicker/scrgb-color">ScRGB Color</a></li><li><a href="/wpf/colorpicker/new-user-interface-support">New User Interface Support</a></li><li><a href="/wpf/colorpicker/layout-related-features">Layout Related Features</a></li><li><a href="/wpf/colorpicker/colorpicker-with-gradient-support">ColorPicker with Gradient Support</a></li></ul></li>
+  <li>ColorPickerPalette<ul><li><a href="/wpf/colorpickerpalatte/overview">Overview</a></li><li><a href="/wpf/colorpickerpalatte/getting-started">Getting Started</a></li><li><a href="/wpf/colorpickerpalatte/setting-panel-visibilities">Setting Panel Visibilities</a></li><li><a href="/wpf/colorpickerpalatte/color-themes">Color Themes</a></li><li><a href="/wpf/colorpickerpalatte/morecolor-option">MoreColor Option</a></li><li><a href="/wpf/colorpickerpalatte/tooltip-support">ToolTip Support</a></li><li><a href="/wpf/colorpickerpalatte/expanded-mode">Expanded Mode</a></li><li><a href="/wpf/colorpickerpalatte/appearance">Appearance</a></li><li><a href="/wpf/colorpickerpalatte/mouseoverbackground-color-of-colorpickerpalette">MouseOverBackGround Color of ColorPickerPalette</a></li></ul></li>
+  <li>ComboBoxAdv<ul><li><a href="/wpf/comboboxadv/overview">Overview</a></li><li><a href="/wpf/comboboxadv/getting-started">Getting Started</a></li><li><a href="/wpf/comboboxadv/comboboxadv">ComboBoxAdv</a></li></ul></li>
+  <li>CurrencyTextBox <ul><li><a href="/wpf/currencytextbox/overview">Overview</a></li><li><a href="/wpf/currencytextbox/getting-started">Getting Started</a></li><li><a href="/wpf/currencytextbox/data-binding-support">Data Binding Support</a></li><li><a href="/wpf/currencytextbox/culture-and-number-formats">Culture and Number Formats</a></li><li><a href="/wpf/colorpickerpalatte/mouseoverbackground-color-of-colorpickerpalette">MouseOverBackGround Color of ColorPickerPalette</a></li></ul></li>
+  <li>SfDataGrid<ul><li><a href="/wpf/sfdatagrid/overview">Overview</a></li><li><a href="/wpf/sfdatagrid/getting-started">Getting-Started</a></li><li><a href="/wpf/sfdatagrid/features">Features</a></li></ul></li>
+  <li>SfDataPager<ul><li><a href="/wpf/sfdatapager/overview">Overview</a></li><li><a href="/wpf/sfdatapager/getting-started">Getting-Started</a></li><li><a href="/wpf/sfdatapager/features">Features</a></li><li><a href="/wpf/sfdatapager/styles-and-templates">Styles-and-Templates</a></li></ul></li>
+  <li>DateTimeEdit<ul><li><a href="/wpf/datetimeedit/overview">Overview</a></li><li><a href="/wpf/datetimeedit/getting-started">Getting-Started</a></li><li><a href="/wpf/datetimeedit/appearance">Appearance</a></li><li><a href="/wpf/datetimeedit/binding-support">Binding-Support</a></li><li><a href="/wpf/datetimeedit/culture-support">Culture-Support</a></li><li><a href="/wpf/datetimeedit/datetime-format">DateTime-Format</a></li><li><a href="/wpf/datetimeedit/datetime-patterns">DateTime-Patterns</a></li><li><a href="/wpf/datetimeedit/dropdown-popup">Dropdown-Popup</a></li><li><a href="/wpf/datetimeedit/editing-support">Editing-Support</a></li><li><a href="/wpf/datetimeedit/events">Events</a></li><li><a href="/wpf/datetimeedit/keyboard-and-mouse-support">Keyboard-and-Mouse-support</a></li><li><a href="/wpf/datetimeedit/localization">Localization</a></li><li><a href="/wpf/datetimeedit/maximum-and-minimum-value">Maximum-and-Minimum-Value</a></li><li><a href="/wpf/datetimeedit/null-value-support">Null-Value-support</a></li><li><a href="/wpf/datetimeedit/qtp-support-for-datetimeedit-control">QTP-Support-for-DateTimeEdit-control</a></li><li><a href="/wpf/datetimeedit/repeat-buttons">Repeat-Buttons</a></li><li><a href="/wpf/datetimeedit/watermark-support">Watermark-Support</a></li></ul></li>
+  <li>SfDateTimeRangeNavigator<ul><li><a href="/wpf/sfdatetimerangenavigator/overview">Overview</a></li><li><a href="/wpf/sfdatetimerangenavigator/getting-started">Getting-Started</a></li><li><a href="/wpf/sfdatetimerangenavigator/interactivity">Interactivity</a></li><li><a href="/wpf/sfdatetimerangenavigator/label-customization">Label-Customization</a></li><li><a href="/wpf/sfdatetimerangenavigator/tooltip-support">ToolTip-Support</a></li></ul></li>
+  <li>Diagram<ul><li><a href="/wpf/diagram/overview">Overview</a></li><li><a href="/wpf/diagram/getting-started">Getting-Started</a></li><li><a href="/wpf/diagram/connection-port">Connection-Port</a></li><li><a href="/wpf/diagram/diagram-model">Diagram-Model</a></li><li><a href="/wpf/diagram/diagram-view">Diagram-View</a></li><li><a href="/wpf/diagram/groups">Groups</a></li><li><a href="/wpf/diagram/line-connectors">Line-Connectors</a></li><li><a href="/wpf/diagram/nodes">Nodes</a></li></ul></li>
+  <li>SfDigitalGauge<ul><li><a href="/wpf/sfdigitalgauge/overview">Overview</a></li><li><a href="/wpf/sfdigitalgauge/getting-started">Getting-Started</a></li><li><a href="/wpf/sfdigitalgauge/digital-characters">Digital-Characters</a></li><li><a href="/wpf/sfdigitalgauge/transformation-of-digital-characters">Transformation-of-Digital-Characters</a></li><li><a href="/wpf/sfdigitalgauge/ui-settings">UI-Settings</a></li></ul></li>
+  <li>DockingManager<ul><li><a href="/wpf/dockingmanager/overview">Overview</a></li><li><a href="/wpf/dockingmanager/getting-started">Getting-Started</a></li><li><a href="/wpf/dockingmanager/advanced-features">Advanced-Features</a></li><li><a href="/wpf/dockingmanager/basic-features">Basic-Features</a></li><li><a href="/wpf/dockingmanager/interactive-features">Interactive-Features</a></li><li><a href="/wpf/dockingmanager/localization">Localization</a></li><li><a href="/wpf/dockingmanager/other-features">Other-Features</a></li><li><a href="/wpf/dockingmanager/styles-and-templates">Styles-and-Templates</a></li></ul></li>
+  <li>DocumentContainer<ul><li><a href="/wpf/documentcontainer/overview">Overview</a></li><li><a href="/wpf/documentcontainer/getting-started">Getting-Started</a></li><li><a href="/wpf/documentcontainer/adding-and-removing-items-from-the-document-container-control">Adding-and-Removing-Items-from-the-Document-Container-Control</a></li><li><a href="/wpf/documentcontainer/creating-tab-groups">Creating-Tab-Groups</a></li><li><a href="/wpf/documentcontainer/disabling-dragging-and-dropping-of-tdi-items-in-dockingmanager-and-documentcontainer">Disabling-Dragging-and-Dropping-of-TDI-Items-in-DockingManager-and-DocumentContainer</a></li><li><a href="/wpf/documentcontainer/full-screen-in-documentcontainer">Full-Screen-in-DocumentContainer</a></li><li><a href="/wpf/documentcontainer/layout-related-features">Layout-Related-Features</a></li><li><a href="/wpf/documentcontainer/localization">Localization</a></li><li><a href="/wpf/documentcontainer/maximizing-mdi-window">Maximizing-MDI-window</a></li><li><a href="/wpf/documentcontainer/mdi-resize">MDI-Resize</a></li><li><a href="/wpf/documentcontainer/minimizing-mdi-window">Basic-Features</a></li><li><a href="/wpf/documentcontainer/setting-header-of-the-document-container">Setting-Header-of-the-Document-container</a></li><li><a href="/wpf/documentcontainer/setting-mdibounds">Setting-MDIBounds</a></li><li><a href="/wpf/documentcontainer/setting-mode-for-document-container">Other-Features</a></li><li><a href="/wpf/documentcontainer/setting-window-state">Setting-Window-State</a></li><li><a href="/wpf/documentcontainer/setting-window-switchers">Setting-Window-Switchers</a></li><li><a href="/wpf/documentcontainer/state-persistence">State-Persistence</a></li></ul></li>
+  <li>SfDomainUpDown<ul><li><a href="/wpf/sfdomainupdown/getting-started">Getting-Started</a></li><li><a href="/wpf/sfdomainupdown/appearance-and-styling">Appearance-and-Styling</a></li><li><a href="/wpf/sfdomainupdown/autoreverse">AutoReverse</a></li><li><a href="/wpf/sfdomainupdown/gestures">Gestures</a></li><li><a href="/wpf/sfdomainupdown/populating-data">Populating-Data</a></li><li><a href="/wpf/sfdomainupdown/spin-button-alignment">Spin-Button-Alignment</a></li></ul></li>
+  <li>DoubleTextBox<ul><li><a href="/wpf/doubletextbox/overview">Overview</a></li><li><a href="/wpf/doubletextbox/getting-started">Getting-Started</a></li><li><a href="/wpf/doubletextbox/appearance">Appearance</a></li><li><a href="/wpf/doubletextbox/binding-support">Binding-Support</a></li><li><a href="/wpf/doubletextbox/culture-and-number-formats">Culture-and-Number-Formats</a></li><li><a href="/wpf/doubletextbox/events">Events</a></li><li><a href="/wpf/doubletextbox/extended-scrolling">Extended-Scrolling</a></li><li><a href="/wpf/doubletextbox/keyboard-and-mouse-support">Keyboard-and-Mouse-support</a></li><li><a href="/wpf/doubletextbox/layout-and-behavior-related-features">Layout-and-Behavior-Related-Features</a></li><li><a href="/wpf/doubletextbox/maximum-and-minimum-value">Maximum-and-Minimum-Value</a></li><li><a href="/wpf/doubletextbox/null-value-support">Null-Value-support</a></li><li><a href="/wpf/doubletextbox/range-adorner">Range-Adorner</a></li><li><a href="/wpf/doubletextbox/range-adorner-background">Range-Adorner-Background</a></li><li><a href="/wpf/doubletextbox/watermark-support">Watermark-Support</a></li></ul></li>
+  <li>DropDownButtonAdv<ul><li><a href="/wpf/dropdownbuttonadv/overview">Overview</a></li><li><a href="/wpf/dropdownbuttonadv/getting-started">Getting-Started</a></li><li><a href="/wpf/dropdownbuttonadv/blendability">Blendability</a></li><li><a href="/wpf/dropdownbuttonadv/drop-direction">Drop-Direction</a></li><li><a href="/wpf/dropdownbuttonadv/dropdownmenuitem">DropDownMenuItem</a></li><li><a href="/wpf/dropdownbuttonadv/events">Events</a></li><li><a href="/wpf/dropdownbuttonadv/multi-line-support">Multi-Line-Support</a></li><li><a href="/wpf/dropdownbuttonadv/resizing-support">Resizing-Support</a></li><li><a href="/wpf/dropdownbuttonadv/scroll-bar-support">Scroll-Bar-Support</a></li></ul></li>
+  <li>Gantt<ul><li><a href="/wpf/gantt/overview">Overview</a></li><li><a href="/wpf/gantt/getting-started">Getting-Started</a></li><li><a href="/wpf/gantt/auto-update-hierarchy">Auto-Update-Hierarchy</a></li><li><a href="/wpf/gantt/baseline-support">Baseline-Support</a></li><li><a href="/wpf/gantt/calendar-customization">Calendar-Customization</a></li><li><a href="/wpf/gantt/custom-node-style">Custom-Node-Style</a></li><li><a href="/wpf/gantt/custom-schedule">Custom-Schedule</a></li><li><a href="/wpf/gantt/customtooltip">CustomToolTip</a></li><li><a href="/wpf/gantt/data-binding">Data-Binding</a></li><li><a href="/wpf/gantt/datetime-indicator-customization">DateTime-Indicator-Customization</a></li><li><a href="/wpf/gantt/dependency-relationship">Dependency-Relationship</a></li><li><a href="/wpf/gantt/highlighting-tasks">Highlighting-Tasks</a></li><li><a href="/wpf/gantt/import-and-export-support">Import-and-Export-Support</a></li><li><a href="/wpf/gantt/resource-view-gantt-inline-items">Resource-View-Gantt-Inline-Items</a></li><li><a href="/wpf/gantt/strip-lines">Strip-Lines</a></li><li><a href="/wpf/gantt/visual-style">Visual-Style</a></li><li><a href="/wpf/gantt/zooming">Zooming</a></li></ul></li>
+  <li>GridControl<ul><li><a href="/wpf/gridcontrol/overview">Overview</a></li><li><a href="/wpf/gridcontrol/getting-started">Getting-Started</a></li><li><a href="/wpf/gridcontrol/appearance">Appearance</a></li><li><a href="/wpf/gridcontrol/cell-types">Cell-Types</a></li><li><a href="/wpf/gridcontrol/events">Events</a></li><li><a href="/wpf/gridcontrol/excel-importing">Excel-Importing</a></li><li><a href="/wpf/gridcontrol/export-options">Export-Options</a></li><li><a href="/wpf/gridcontrol/grid-virtualization">Grid-Virtualization</a></li><li><a href="/wpf/gridcontrol/performance">Performance</a></li><li><a href="/wpf/gridcontrol/print-and-print-preview">Print-and-Print-Preview</a></li><li><a href="/wpf/gridcontrol/real-time-applications">Real-Time-Applications</a></li><li><a href="/wpf/gridcontrol/serialization-support">Serialization-Support</a></li><li><a href="/wpf/gridcontrol/testability-frameworks">Testability-Frameworks</a></li><li><a href="/wpf/gridcontrol/working-with-grid">Working-with-Grid</a></li><li><a href="/wpf/gridcontrol/zoom-in-and-zoom-out">Zoom-In-and-Zoom-Out</a></li></ul></li>
+  <li>GridTreeControl<ul><li><a href="/wpf/gridtreecontrol/overview">Overview</a></li><li><a href="/wpf/gridtreecontrol/getting-started">Getting-Started</a></li><li><a href="/wpf/gridtreecontrol/architecture">Architecture</a></li><li><a href="/wpf/gridtreecontrol/columns">Columns</a></li><li><a href="/wpf/gridtreecontrol/data-population">Data-Population</a></li><li><a href="/wpf/gridtreecontrol/gridtree-control-events">GridTree-Control-Events</a></li><li><a href="/wpf/gridtreecontrol/gridtree-control-properties">GridTree-Control-Properties</a></li><li><a href="/wpf/gridtreecontrol/gridtreenode-objects">GridTreeNode-Objects</a></li><li><a href="/wpf/gridtreecontrol/interactive-features">Interactive-Features</a></li></ul></li>
+  <li>GroupBar<ul><li><a href="/wpf/groupbar/overview">Overview</a></li><li><a href="/wpf/groupbar/getting-started">Getting-Started</a></li><li><a href="/wpf/groupbar/adding-content-to-groupbar-item">Adding-Content-to-GroupBar-Item</a></li><li><a href="/wpf/groupbar/adding-groupbar-item-to-groupbar">Adding-GroupBar-Item-to-GroupBar</a></li><li><a href="/wpf/groupbar/adding-groupview-in-listview-mode">Adding-Groupview-in-ListView-Mode</a></li><li><a href="/wpf/groupbar/adjusting-the-groupbar-width">Adjusting-the-GroupBar-width</a></li><li><a href="/wpf/groupbar/appearance">Appearance</a></li><li><a href="/wpf/groupbar/changing-header-height">Changing-Header-Height</a></li><li><a href="/wpf/groupbar/changing-the-orientations-of-groupbar-groupbar-itemsgroupview-groupviewitems">Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems</a></li><li><a href="/wpf/groupbar/closing-the-groupbar-in-stack-mode">Closing-the-GroupBar-in-Stack-Mode</a></li><li><a href="/wpf/groupbar/collapsing-the-groupbar">Collapsing-the-GroupBar</a></li><li><a href="/wpf/groupbar/customizing-data-templates">Customizing-Data-Templates</a></li><li><a href="/wpf/groupbar/data-binding">Data-Binding</a></li><li><a href="/wpf/groupbar/default-image-for-the-groupview-item">Default-Image-for-the-GroupView-Item</a></li><li><a href="/wpf/groupbar/drag-and-drop">Drag-and-Drop</a></li><li><a href="/wpf/groupbar/groupbar-items">GroupBar-Items</a></li><li><a href="/wpf/groupbar/localization">Localization</a></li><li><a href="/wpf/groupbar/navigation-pane-in-groupbar">Navigation-Pane-in-GroupBar</a></li><li><a href="/wpf/groupbar/populating-data">Populating-Data</a></li><li><a href="/wpf/groupbar/rotating-the-content">Rotating-the-Content</a></li><li><a href="/wpf/groupbar/rotating-the-groupbar">Rotating-the-GroupBar</a></li><li><a href="/wpf/groupbar/setting-animation-for-groupbar-expansioncollapse">Setting-Animation-for-GroupBar-expansioncollapse</a></li><li><a href="/wpf/groupbar/setting-the-flowdirection-for-groupbar">Setting-the-FlowDirection-for-GroupBar</a></li><li><a href="/wpf/groupbar/setting-tooltip-for-groupbar">Setting-ToolTip-for-GroupBar</a></li><li><a href="/wpf/groupbar/state-persistence">State-Persistence</a></li><li><a href="/wpf/groupbar/toolbars-in-groupbar">Toolbars-in-GroupBar</a></li><li><a href="/wpf/groupbar/using-context-menu-in-groupbar">Using-Context-menu-in-GroupBar</a></li></ul></li>
+  <li>HierarchyNavigator<ul><li><a href="/wpf/hierarchynavigator/overview">Overview</a></li><li><a href="/wpf/hierarchynavigator/getting-started">Getting-Started</a></li><li><a href="/wpf/hierarchynavigator/command-binding">Command-Binding</a></li><li><a href="/wpf/hierarchynavigator/edit-mode">Edit-Mode</a></li><li><a href="/wpf/hierarchynavigator/keyboard-support">Keyboard-Support</a></li><li><a href="/wpf/hierarchynavigator/mouse-support">Mouse-Support</a></li><li><a href="/wpf/hierarchynavigator/populating-data">Populating-Data</a></li><li><a href="/wpf/hierarchynavigator/progress-bar">Progress-Bar</a></li><li><a href="/wpf/hierarchynavigator/refresh-button">Refresh-Button</a></li><li><a href="/wpf/hierarchynavigator/skins">Skins</a></li><li><a href="/wpf/hierarchynavigator/template-customizing">Template-Customizing</a></li><li><a href="/wpf/gridtreecontrol/tooltip">Tooltip</a></li></ul></li>
+  <li>SfHubTile<ul><li><a href="/wpf/sfhubtile/overview">Overview</a></li><li><a href="/wpf/sfhubtile/getting-started">Getting-Started</a></li></ul></li>
+  <li>IntegerTextBox<ul><li><a href="/wpf/integertextbox/overview">Overview</a></li><li><a href="/wpf/integertextbox/getting-started">Getting-Started</a></li><li><a href="/wpf/integertextbox/appearance">Appearance</a></li><li><a href="/wpf/integertextbox/binding-support">Binding-Support</a></li><li><a href="/wpf/integertextbox/culture-and-number-formats">Culture-and-Number-Formats</a></li><li><a href="/wpf/integertextbox/events">Events</a></li><li><a href="/wpf/integertextbox/extended-scrolling">Extended-Scrolling</a></li><li><a href="/wpf/integertextbox/keyboard-and-mouse-support">Keyboard-and-Mouse-support</a></li><li><a href="/wpf/integertextbox/layout-and-behavior-related-features">Layout-and-Behavior-Related-Features</a></li><li><a href="/wpf/integertextbox/minimum-and-maximum-value">Minimum-and-Maximum-Value</a></li><li><a href="/wpf/integertextbox/null-value-support">Null-Value-support</a></li><li><a href="/wpf/integertextbox/range-adorner">Range-Adorner</a></li><li><a href="/wpf/integertextbox/overview">Overview</a></li><li><a href="/wpf/integertextbox/range-adorner-background">Range-Adorner-Background</a></li><li><a href="/wpf/integertextbox/watermark-support">Watermark-Support</a></li></ul></li>
+  <li>SfLinearGauge<ul><li><a href="/wpf/sflineargauge/overview">Overview</a></li><li><a href="/wpf/sflineargauge/getting-started">Getting-Started</a></li><li><a href="/wpf/sflineargauge/concepts-and-feature">Concepts-and-Feature</a></li></ul></li>
+  <li>SfMaps<ul><li><a href="/wpf/sfmaps/overview">Overview</a></li><li><a href="/wpf/sfmaps/getting-started">Getting-Started</a></li><li><a href="/wpf/sfmaps/annotations">Annotations</a></li><li><a href="/wpf/sfmaps/basic-kml-format">Basic-KML-Format</a></li><li><a href="/wpf/sfmaps/bubbles">Bubbles</a></li><li><a href="/wpf/sfmaps/commands-for-zooming-and-panning">Commands-for-Zooming-and-Panning</a></li><li><a href="/wpf/sfmaps/custom-data-binding">Custom-Data-Binding</a></li><li><a href="/wpf/sfmaps/displaying-items-on-a-map">Displaying-Items-on-a-Map</a></li><li><a href="/wpf/sfmaps/kml-shapes-rendered-in-shapefilelayer">KML-Shapes-Rendered-in-ShapeFileLayer</a></li><li><a href="/wpf/sfmaps/kml-shapes-rendered-in-subshapefilelayer">KML-Shapes-Rendered-in-SubShapeFileLayer</a></li><li><a href="/wpf/sfmaps/legend">Legend</a></li><li><a href="/wpf/sfmaps/map-points">Map-Points</a></li><li><a href="/wpf/sfmaps/mappopup">MapPopup</a></li><li><a href="/wpf/sfmaps/map-providers">Map-Providers</a></li><li><a href="/wpf/sfmaps/map-selection">Map-Selection</a></li><li><a href="/wpf/sfmaps/map-shape-labels">Map-Shape-Labels</a></li><li><a href="/wpf/sfmaps/multilayer-support">Multilayer-Support</a></li><li><a href="/wpf/sfmaps/shapes-color-customization">Shapes-Color-Customization</a></li><li><a href="/wpf/sfmaps/zooming-and-panning">Zooming-and-Panning</a></li></ul></li>
+  <li>MenuAdv<ul><li><a href="/wpf/menuadv/overview">Overview</a></li><li><a href="/wpf/menuadv/getting-started">Getting-Started</a></li><li><a href="/wpf/menuadv/animation-support">Animation-Support</a></li><li><a href="/wpf/menuadv/binding-and-datatemplate-support">Binding-and-DataTemplate-Support</a></li><li><a href="/wpf/menuadv/blendability-support">Blendability-Support</a></li><li><a href="/wpf/menuadv/boundary-detection">Boundary-Detection</a></li><li><a href="/wpf/menuadv/check-box-and-radio-button-support">Check-Box-and-Radio-Button-Support</a></li><li><a href="/wpf/menuadv/command-binding-and-command-target-support">Command-Binding-and-Command-Target-Support</a></li><li><a href="/wpf/menuadv/customizing-data-templates">Customizing-Data-Templates</a></li><li><a href="/wpf/menuadv/data-binding">Data-Binding</a></li><li><a href="/wpf/menuadv/icon-support">Icon-Support</a></li><li><a href="/wpf/menuadv/inputgesturetext-support">InputGestureText-Support</a></li><li><a href="/wpf/menuadv/keyboard-navigation-support">Keyboard-Navigation-Support</a></li><li><a href="/wpf/menuadv/menuitemseparator-support">MenuItemSeparator-Support</a></li><li><a href="/wpf/menuadv/orientation-support">Orientation-Support</a></li><li><a href="/wpf/menuadv/scroll-support">Scroll-Support</a></li><li><a href="/wpf/menuadv/styling">Styling</a></li></ul></li>
+  <li>SfMultiColumnDropDown<ul><li><a href="/wpf/sfmulticolumndropdown/overview">Overview</a></li><li><a href="/wpf/sfmulticolumndropdown/getting-started">Getting-Started</a></li><li><a href="/wpf/sfmulticolumndropdown/features">Features</a></li><li><a href="/wpf/sfmulticolumndropdown/styles-and-templates">Styles-and-Templates</a></li></ul></li>
+  <li>NotifyIcon<ul><li><a href="/wpf/notifyicon/overview">Overview</a></li><li><a href="/wpf/notifyicon/getting-started">Getting-Started</a></li><li><a href="/wpf/notifyicon/interactive-features">Interactive-Features</a></li><li><a href="/wpf/notifyicon/layout-related-features">Styles-and-Templates</a></li></ul></li>
+  <li>OLAPChart<ul><li><a href="/wpf/olapchart/overview">Overview</a></li><li><a href="/wpf/olapchart/getting-started">Getting-Started</a></li><li><a href="/wpf/olapchart/changing-chart-type-for-specific-series">Changing-chart-type-for-specific-series</a></li><li><a href="/wpf/olapchart/core-features">Core-Features</a></li><li><a href="/wpf/olapchart/drill-position">Drill-Position</a></li><li><a href="/wpf/olapchart/paging">Paging</a></li><li><a href="/wpf/olapchart/syncfusion-olap-architecture">Syncfusion-OLAP-Architecture</a></li><li><a href="/wpf/olapchart/xaml-configuration">XAML-Configuration</a></li></ul></li>
+  <li>OLAPClient<ul><li><a href="/wpf/olapclient/overview">Overview</a></li><li><a href="/wpf/olapclient/getting-started">Getting-Started</a></li><li><a href="/wpf/olapchart/calculated-members-ui-option-in-olapclient-control">Calculated-Members-UI-Option-in-OlapClient-Control</a></li><li><a href="/wpf/olapchart/creating-and-storing-olap-report">Creating-and-Storing-OLAP-Report</a></li><li><a href="/wpf/olapchart/data-binding">Data-Binding</a></li><li><a href="/wpf/olapchart/drill-through-support">Drill-Through-Support</a></li><li><a href="/wpf/olapchart/export">Export</a></li><li><a href="/wpf/olapclient/filtering-and-sorting">Filtering-and-Sorting</a></li><li><a href="/wpf/olapclient/localization-support">Localization-Support</a></li><li><a href="/wpf/olapchart/named-set-records">Named-Set-Records</a></li><li><a href="/wpf/olapchart/olapreport-serialization">OlapReport-Serialization</a></li><li><a href="/wpf/olapchart/paging">Paging</a></li><li><a href="/wpf/olapchart/rtl-support">RTL-Support</a></li><li><a href="/wpf/olapchart/storing-and-retrieving-report-as-stream">Storing-and-Retrieving-Report-as-Stream</a></li><li><a href="/wpf/olapchart/subset-filter">Subset-Filter</a></li><li><a href="/wpf/olapchart/rtl-support">RTL-Support</a></li><li><a href="/wpf/olapchart/theming">Theming</a></li><li><a href="/wpf/olapclient/tool-bar-support">Tool-Bar-support</a></li></ul></li>
+  <li>OLAPGauge<ul><li><a href="/wpf/olapgauge/overview">Overview</a></li><li><a href="/wpf/olapgauge/getting-started">Getting-Started</a></li><li><a href="/wpf/olapgauge/appearance">Appearance</a></li><li><a href="/wpf/olapgauge/gauge-customization">Gauge-Customization</a></li><li><a href="/wpf/olapgauge/rtl-support">RTL-Support</a></li><li><a href="/wpf/olapgauge/run-time-feature">Run-Time-Feature</a></li><li><a href="/wpf/olapgauge/syncfusion-olap-architecture">Syncfusion-OLAP-Architecture</a></li><li><a href="/wpf/olapgauge/xaml-configuration">XAML-Configuration</a></li></ul></li>
+  <li>OLAPGrid<ul><li><a href="/wpf/olapgrid/overview">Overview</a></li><li><a href="/wpf/olapgrid/getting-started">Getting-Started</a></li><li><a href="/wpf/olapgrid/cell-selection">Cell-Selection</a></li><li><a href="/wpf/olapgrid/conditional-formatting">Conditional-Formatting</a></li><li><a href="/wpf/olapgrid/data-source">Data-Source</a></li><li><a href="/wpf/olapgrid/drill-position">Drill-Position</a></li><li><a href="/wpf/olapgrid/drill-updown">Drill-UpDown</a></li><li><a href="/wpf/olapgrid/export">Export</a></li><li><a href="/wpf/olapgrid/freeze-headers">Freeze-Headers</a></li><li><a href="/wpf/olapgrid/grid-layouts">Grid-Layouts</a></li><li><a href="/wpf/olapgrid/grid-styling">Grid-Styling</a></li><li><a href="/wpf/olapgrid/hyperlink-cells">Hyperlink-Cells</a></li><li><a href="/wpf/olapgrid/key-performance-indicator-kpi">Key-Performance-Indicator-KPI</a></li><li><a href="/wpf/olapgrid/member-properties">Member-Properties</a></li><li><a href="/wpf/olapgrid/paging">Paging</a></li><li><a href="/wpf/olapgrid/rtl-support">RTL-Support</a></li><li><a href="/wpf/olapgrid/support-for-all-level-type-member">Support-for-All-Level-Type-Member</a></li><li><a href="/wpf/olapgrid/theming">Theming</a></li><li><a href="/wpf/olapgrid/tooltip">ToolTip</a></li><li><a href="/wpf/olapgrid/xaml-configuration">XAML-Configuration</a></li></ul></li>
+  <li>PercentTextBox<ul><li><a href="/wpf/percenttextbox/overview">Overview</a></li><li><a href="/wpf/percenttextbox/getting-started">Getting-Started</a></li><li><a href="/wpf/percenttextbox/appearance">Appearance</a></li><li><a href="/wpf/percenttextbox/binding-support">Binding-Support</a></li><li><a href="/wpf/percenttextbox/culture-and-number-formats">Culture-and-Number-Formats</a></li><li><a href="/wpf/percenttextbox/events">Events</a></li><li><a href="/wpf/percenttextbox/extended-scrolling">Extended-Scrolling</a></li><li><a href="/wpf/percenttextbox/keyboard-and-mouse-support">Keyboard-and-Mouse-support</a></li><li><a href="/wpf/percenttextbox/layout-and-behavior-related-features">Layout-and-Behavior-Related-Features</a></li><li><a href="/wpf/percenttextbox/maximum-and-minimum-value">Maximum-and-Minimum-Value</a></li><li><a href="/wpf/percenttextbox/null-value-support">Null-Value-support</a></li><li><a href="/wpf/percenttextbox/range-adorner">Range-Adorner</a></li><li><a href="/wpf/percenttextbox/range-adorner-background">Range-Adorner-Background</a></li><li><a href="/wpf/percenttextbox/watermark-support">Watermark-Support</a></li></ul></li>
+  <li>PivotGrid<ul><li><a href="/wpf/pivotgrid/overview">Overview</a></li><li><a href="/wpf/pivotgrid/getting-started">Getting-Started</a></li><li><a href="/wpf/pivotgrid/concepts">Concepts</a></li><li><a href="/wpf/pivotgrid/features">Features</a></li><li><a href="/wpf/pivotgrid/pivotschemadesigner-for-wpf">PivotSchemaDesigner-for-WPF</a></li></ul></li>
+  <li>PresentationLibrary<ul><li><a href="/wpf/presentationlibrary/overview">Overview</a></li><li><a href="/wpf/presentationlibrary/getting-started">Getting-started</a></li></ul></li>
+  <li>AQTP<ul><li><a href="/wpf/aqtp/overview">Overview</a></li><li><a href="/wpf/aqtp/getting-started">Getting-Started</a></li><li><a href="/wpf/aqtp/installation-and-deployment">Installation-and-Deployment</a></li><li><a href="/wpf/aqtp/supported-controls">Supported-Controls</a></li></ul></li>
+  <li>SfRadialMenu<ul><li><a href="/wpf/sfradialmenu/overview">Overview</a></li><li><a href="/wpf/sfradialmenu/getting-started">Getting-Started</a></li><li><a href="/wpf/sfradialmenu/appearance-and-styling">Appearance-and-Styling</a></li><li><a href="/wpf/sfradialmenu/concepts">Concepts</a></li></ul></li>
+  <li>SfRadialSlider<ul><li><a href="/wpf/sfradialslider/overview">Overview</a></li><li><a href="/wpf/sfradialslider/getting-started">Getting-Started</a></li><li><a href="/wpf/sfradialslider/concepts">Concepts</a></li></ul></li>
+  <li>SfRangeSlider<ul><li><a href="/wpf/sfrangeslider/overview">Overview</a></li><li><a href="/wpf/sfrangeslider/getting-started">Getting-Started</a></li><li><a href="/wpf/sfrangeslider/direction-reversed">Direction-Reversed</a></li><li><a href="/wpf/sfrangeslider/gestures">Gestures</a></li><li><a href="/wpf/sfrangeslider/intermediate-values">Intermediate-Values</a></li><li><a href="/wpf/sfrangeslider/label-support">Label-Support</a></li><li><a href="/wpf/sfrangeslider/maximum">Maximum</a></li><li><a href="/wpf/sfrangeslider/minimum">Minimum</a></li><li><a href="/wpf/sfrangeslider/orientation">Orientation</a></li><li><a href="/wpf/sfrangeslider/range">Range</a></li><li><a href="/wpf/sfrangeslider/thumb-tooltip">Thumb-ToolTip</a></li><li><a href="/wpf/sfrangeslider/ticks">Ticks</a></li><li><a href="/wpf/sfrangeslider/touch-support">Touch-Support</a></li></ul></li>
+  <li>SfRating<ul><li><a href="/wpf/sfrating/getting-started">Getting-Started</a></li><li><a href="/wpf/sfrating/appearance-and-styling">Appearance-and-Stylingw</a></li><li><a href="/wpf/sfrating/number-of-items">Number-of-Items</a></li><li><a href="/wpf/sfrating/precision">Precision</a></li><li><a href="/wpf/sfrating/tooltip">ToolTip</a></li></ul></li>
+  <li>ReportDesigner<ul><li><a href="/wpf/reportdesigner/overview">Overview</a></li><li><a href="/wpf/reportdesigner/getting-started">Getting-Started</a></li><li><a href="/wpf/reportdesigner/add-a-chart-to-the-report-designer">Add-a-Chart-to-the-Report-Designer</a></li><li><a href="/wpf/reportdesigner/add-a-data-set-to-report-designer">Add-a-Data-Set-to-Report-Designer</a></li><li><a href="/wpf/reportdesigner/add-a-datasource-to-the-report-designer">Add-a-DataSource-to-the-Report-Designer</a></li><li><a href="/wpf/reportdesigner/add-a-gauge-to-the-report-designer">Add-a-Gauge-to-the-Report-Designer</a></li><li><a href="/wpf/reportdesigner/add-a-line-to-the-report-designer">Add-a-Line-to-the-Report-Designer</a></li><li><a href="/wpf/reportdesigner/add-a-matrix-to-the-report-designer">Add-a-Matrix-to-the-Report-Designer</a></li><li><a href="/wpf/reportdesigner/add-an-image-to-the-report-designer">Add-an-Image-to-the-Report-Designer</a></li><li><a href="/wpf/reportdesigner/add-a-rectangle-to-the-report-designer">Add-a-Rectangle-to-the-Report-Designer</a></li><li><a href="/wpf/reportdesigner/add-a-table-to-the-report-designer">Add-a-Table-to-the-Report-Designer</a></li><li><a href="/wpf/add-a-textbox-to-the-report-designer">Add-a-TextBox-to-the-Report-Designer</a></li><li><a href="/wpf/reportdesigner/create-rdlc-reports-in-the-report-designer">Create-RDLC-Reports-in-the-Report-Designer</a></li><li><a href="/wpf/reportdesigner/tables-for-properties-methods-and-events">Tables-for-Properties-Methods-and-Events</a></li></ul></li>
+  <li>ReportViewer<ul><li><a href="/wpf/reportviewer/overview">Overview</a></li><li><a href="/wpf/reportviewer/getting-started">Getting-Started</a></li><li><a href="/wpf/reportviewer/limitations">Limitations</a></li><li><a href="/wpf/reportviewer/load-ssrs-reports-in-report-viewer">Load-SSRS-Reports-in-Report-Viewer</a></li><li><a href="/wpf/reportviewer/members">Members</a></li><li><a href="/wpf/reportviewer/report-viewer-theme-support">Report-Viewer-Theme-support</a></li><li><a href="/wpf/reportviewer/show-rdlc-reports-in-report-viewer">Show-RDLC-Reports-in-Report-Viewer</a></li><li><a href="/wpf/reportviewer/show-rdl-report-in-report-viewer-through-code">Show-RDL-Report-in-Report-Viewer-through-Code</a></li></ul></li>
+  <li>Ribbon<ul><li><a href="/wpf/ribbon/overview">Overview</a></li><li><a href="/wpf/ribbon/getting-started">Getting-Started</a></li><li><a href="/wpf/ribbon/adding-application-items-to-the-application-menu">Adding-Application-Items-to-the-Application-Menu</a></li><li><a href="/wpf/ribbon/adding-application-menu-to-the-ribbon-window">Adding-Application-Menu-to-the-Ribbon-Window</a></li><li><a href="/wpf/ribbon/adding-backstage-items-to-the-quick-access-toolbar">Adding-Backstage-Items-to-the-Quick-Access-Toolbar</a></li><li><a href="/wpf/ribbon/adding-controls-to-the-ribbon-instance">Adding-Controls-to-the-Ribbon-Instance</a></li><li><a href="/wpf/ribbon/adding-items-to-drop-down-menu-of-the-quick-access-toolbar">Adding-Items-to-Drop-Down-Menu-of-the-Quick-Access-Toolbar</a></li><li><a href="/wpf/ribbon/adding-items-to-the-application-menu">Adding-Items-to-the-Application-Menu</a></li><li><a href="/wpf/ribbonappearance">Appearance</a></li><li><a href="/wpf/ribbon/creating-ribbon-contexttabgroups">Creating-Ribbon-ContexttabGroups</a></li><li><a href="/wpf/ribbon/custom-menu-items-in-ribbon-context-menu">Custom-Menu-Items-in-Ribbon-Context-Menu</a></li><li><a href="/wpf/ribbon/data-binding-support-for-wpf-ribbon">Data-Binding-Support-for-WPF-Ribbon</a></li><li><a href="/wpf/ribbon/dynamic-resizing-of-ribbon-controls">Dynamic-Resizing-of-Ribbon-Controls</a></li><li><a href="/wpf/ribbon/keytip-for-collapsed-ribbon-bars">KeyTip-for-Collapsed-Ribbon-bars</a></li><li><a href="/wpf/ribbon/keytips-for-ribbon-backstage">KeyTips-for-Ribbon-Backstage</a></li><li><a href="/wpf/ribbon/linebreaks-in-ribbonbutton-label">LineBreaks-in-RibbonButton-Label</a></li><li><a href="/wpf/ribbon/linebreak-support">LineBreak-Support</a></li><li><a href="/wpf/ribbon/localization">Localization</a></li><li><a href="/wpf/ribbon/minitoolbar">MiniToolbar</a></li><li><a href="/wpf/ribbon/office--user-interface-ui">Office--User-Interface-UI</a></li><li><a href="/wpf/ribbon/quick-access-toolbar">Quick-Access-Toolbar</a></li><li><a href="/wpf/ribbon/ribbonbar-launcherbutton-command-support">RibbonBar-LauncherButton-Command-Support</a></li><li><a href="/wpf/ribbon/ribbongallery">RibbonGallery</a></li><li><a href="/wpf/ribbon/ribbon-modal-tabs">Ribbon-Modal-Tabs</a></li><li><a href="/wpf/ribbon/ribbon-state-persistence">Ribbon-State-Persistence</a></li><li><a href="/wpf/ribbon/run-time-features">Run-time-Features</a></li><li><a href="/wpf/ribbon/scrolling-ribbon-tab-and-ribbon-bar">Scrolling-Ribbon-Tab-and-Ribbon-Bar</a></li><li><a href="/wpf/ribbon/splitmenubutton-popup-keytip">SplitMenuButton-Popup-KeyTip</a></li><li><a href="/wpf/ribbon/ui-automation-support-for-ribbon">UI-Automation-Support-for-Ribbon</a></li><li><a href="/wpf/ribbon/windows--default-window-behavior">Windows--Default-Window-Behavior</a></li></ul></li>
+  <li>RichTextBoxAdv<ul><li><a href="/wpf/richtextboxadv/overview">Overview</a></li><li><a href="/wpf/richtextboxadv/getting-started">Getting-Started</a></li><li><a href="/wpf/richtextboxadv/clipboard-support">Clipboard-Support</a></li><li><a href="/wpf/richtextboxadv/code-snippet">Code-Snippet</a></li><li><a href="/wpf/richtextboxadv/commands-support">Commands-Support</a></li><li><a href="/wpf/richtextboxadv/context-menu-support">Context-Menu-Support</a></li><li><a href="/wpf/richtextboxadv/disable-editing">Disable-Editing</a></li><li><a href="/wpf/richtextboxadv/import-and-export">Import-and-Export</a></li><li><a href="/wpf/richtextboxadv/inserting-a-ui-element">Inserting-a-UI-Element</a></li><li><a href="/wpf/richtextboxadv/inserting-images">Inserting-Images</a></li><li><a href="/wpf/richtextboxadv/insert-tables">Insert-Tables</a></li><li><a href="/wpf/richtextboxadv/keyboard-support">Keyboard-Support</a></li><li><a href="/wpf/richtextboxadv/layout-modes">Layout-Modes</a></li><li><a href="/wpf/richtextboxadv/paragraph-alignment-and-indentation">Paragraph-Alignment-and-Indentation</a></li><li><a href="/wpf/richtextboxadv/richtextboxadv-methods">RichTextBoxAdv-Methods</a></li><li><a href="/wpf/richtextboxadv/richtextribbon-support">RichTextRibbon-Support</a></li><li><a href="/wpf/richtextboxadv/text-formatting-using-hyperlinkadv">Text-Formatting-Using-HyperlinkAdv</a></li><li><a href="/wpf/richtextboxadv/text-formatting-using-spanadv">Text-Formatting-Using-SpanAdv</a></li><li><a href="/wpf/richtextboxadv/touch-events">Touch-Events</a></li><li><a href="/wpf/richtextboxadv/zooming-and-printing">Zooming-and-Printing</a></li></ul></li>
+  <li>SfSchedule<ul><li><a href="/wpf/sfschedule/overview">Overview</a></li><li><a href="/wpf/sfschedule/getting-started">Getting-Started</a></li><li><a href="/wpf/sfschedule/adding-appointments">Adding-Appointments</a></li><li><a href="/wpf/sfschedule/all-day-panel">All-Day-Panel</a></li><li><a href="/wpf/sfschedule/appointment-navigation">Appointment-Navigation</a></li><li><a href="/wpf/sfschedule/appointment-template-customization">Appointment-Template-Customization</a></li><li><a href="/wpf/sfschedule/basic-view">Basic-View</a></li><li><a href="/wpf/sfschedule/commands">Commands</a></li><li><a href="/wpf/sfschedule/contextmenutype">ContextMenuType</a></li><li><a href="/wpf/sfschedule/current-day-highlighting">Current-Day-Highlighting</a></li><li><a href="/wpf/sfschedule/currenttimeindicator-template-customization">CurrentTimeIndicator-Template-Customization</a></li><li><a href="/wpf/sfschedule/custom-date-format">Custom-Date-Format</a></li><li><a href="/wpf/sfschedule/enabling-and-disabling-schedule-editor">Enabling-and-Disabling-Schedule-Editor</a></li><li><a href="/wpf/sfschedule/enabling-auto-formatting">Enabling-Auto-Formatting</a></li><li><a href="/wpf/sfschedule/event">Event</a></li><li><a href="/wpf/sfschedule/focused-and-non-focused-month-brush">Focused-and-Non-Focused-Month-Brush</a></li><li><a href="/wpf/sfschedule/hiding-non-working-hours">Hiding-Non-Working-Hours</a></li><li><a href="/wpf/sfschedule/import-and-export">Import-and-Export</a></li><li><a href="/wpf/sfschedule/loclization">Loclization</a></li><li><a href="/wpf/sfschedule/nonaccessibleblocks">NonAccessibleBlocks</a></li><li><a href="/wpf/sfschedule/non-working-hours">Non-Working-Hours</a></li><li><a href="/wpf/sfschedule/recurrence">Recurrence</a></li><li><a href="/wpf/sfschedule/reminder">Reminder</a></li><li><a href="/wpf/sfschedule/resources">Resources</a></li><li><a href="/wpf/sfschedule/schedule-appointment-status">Schedule-Appointment-Status</a></li><li><a href="/wpf/sfschedule/stroke-customization">Stroke-Customization</a></li><li><a href="/wpf/sfschedule/timeline-customization">TimeLine-customization</a></li><li><a href="/wpf/sfschedule/time-zone">Time-Zone</a></li><li><a href="/wpf/sfschedule/tooltip">Tooltip</a></li><li><a href="/wpf/sfschedule/visible-dates-customization">Visible-Dates-customization</a></li></ul></li>
+  <li>SfSparkline<ul><li><a href="/wpf/sfsparklinee/overview">Overview</a></li><li><a href="/wpf/sfsparkline/getting-started">Getting-Started</a></li><li><a href="/wpf/sfsparklinee/customize-segment-brush">Customize-segment-brush</a></li><li><a href="/wpf/sfsparkline/highlight-segment">Highlight-Segment</a></li><li><a href="/wpf/sfsparklinee/overview">Overview</a></li><li><a href="/wpf/sfsparkline/marker-customization">Marker-Customization</a></li><li><a href="/wpf/sfsparklinee/overview">Overview</a></li><li><a href="/wpf/sfsparkline/markers">Markers</a></li><li><a href="/wpf/sfsparkline/range-band">Range-Band</a></li><li><a href="/wpf/sfsparklinee/overview">Overview</a></li><li><a href="/wpf/sfsparkline/showhide-axis">ShowHide-Axis</a></li><li><a href="/wpf/sfsparklinee/overview">Overview</a></li><li><a href="/wpf/sfsparkline/sparkline-types">Sparkline-Types</a></li><li><a href="/wpf/sfsparkline/track-ball">Track-ball</a></li></ul></li>
+  <li>SpellChecker<ul><li><a href="/wpf/spellchecker/overview">Overview</a></li><li><a href="/wpf/spellchecker/getting-started">Getting-Started</a></li><li><a href="/wpf/spellchecker/spellcheckdialog">SpellCheckDialog</a></li><li><a href="/wpf/spellchecker/spell-checking-options">Spell-Checking-Options</a></li><li><a href="/wpf/spellchecker/user-dictionary">User-Dictionary</a></li></ul></li>
+  <li>SplitButton<ul><li><a href="/wpf/splitbutton/overview">Overview</a></li><li><a href="/wpf/splitbutton/getting-started">Getting-Started</a></li><li><a href="/wpf/splitbutton/blendability">Blendability</a></li><li><a href="/wpf/splitbutton/drop-direction">Drop-Direction</a></li><li><a href="/wpf/splitbutton/dropdownmenuitem">DropDownMenuItem</a></li><li><a href="/wpf/splitbutton/events">Events</a></li><li><a href="/wpf/splitbutton/multi-line-support">Multi-Line-Support</a></li><li><a href="/wpf/splitbutton/resizing-support">Resizing-Support</a></li><li><a href="/wpf/splitbutton/scroll-bar-support">Scroll-Bar-Support</a></li></ul></li>
+  <li>Spreedsheet<ul><li><a href="/wpf/spreedsheet/overview">Overview</a></li><li><a href="/wpf/spreedsheet/getting-started">Getting-Started</a></li><li><a href="/wpf/spreedsheet/appearance">Appearance</a></li><li><a href="/wpf/spreedsheet/command-support">Command-Support</a></li><li><a href="/wpf/spreedsheet/creating-an-excel-document">Creating-an-Excel-Document</a></li><li><a href="/wpf/spreedsheet/data-management">Data-Management</a></li><li><a href="/wpf/spreedsheet/documents-settings">Documents-Settings</a></li><li><a href="/wpf/spreedsheet/formatting">Formatting</a></li><li><a href="/wpf/spreedsheet/links">Links</a></li><li><a href="/wpf/spreedsheet/localization">Localization</a></li><li><a href="/wpf/spreedsheet/open-and-save-excel-document">Open-and-Save-Excel-Document</a></li><li><a href="/wpf/spreedsheet/spreadsheetribbon-support">SpreadsheetRibbon-Support</a></li></ul></li>
+  <li>TabControlExt<ul><li><a href="/wpf/tabcontrolext/overview">Overview</a></li><li><a href="/wpf/tabcontrolext/getting-started">Getting-Started</a></li><li><a href="/wpf/tabcontrolext/adding-tab-item-to-the-tabcontrolext">Adding-Tab-Item-to-the-TabControlExt</a></li><li><a href="/wpf/tabcontrolext/appearance">Appearance</a></li><li><a href="/wpf/tabcontrolext/disables-the-unload-of-tabitemext-content">Disables-the-Unload-of-TabItemExt-Content</a></li><li><a href="/wpf/tabcontrolext/drag-marker">Drag-Marker</a></li><li><a href="/wpf/tabcontrolext/editing-the-tab-item-header-at-run-time">Editing-the-Tab-Item-Header-at-Run-Time</a></li><li><a href="/wpf/tabcontrolext/layout-type">Layout-Type</a></li><li><a href="/wpf/tabcontrolext/newbutton-feature">NewButton-Feature</a></li><li><a href="/wpf/tabcontrolext/resizing-the-tab-item">Resizing-the-Tab-Item</a></li><li><a href="/wpf/tabcontrolext/restricting-tab-item-closing">Restricting-Tab-Item-Closing</a></li><li><a href="/wpf/tabcontrolext/setting-close-buttons-type">Setting-Close-Buttons-type</a></li><li><a href="/wpf/tabcontrolext/setting-scroll-style">Setting-Scroll-Style</a></li><li><a href="/wpf/tabcontrolext/setting-tablistcontextmenu-and-tabitemcontextmenu-for-tab-item">Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-Item</a></li><li><a href="/wpf/tabcontrolext/setting-tablistcontextmenu-and-tabitemcontextmenu-for-tab-list">Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-List</a></li><li><a href="/wpf/tabcontrolext/setting-tab-scroll-button">Setting-Tab-Scroll-Button</a></li><li><a href="/wpf/tabcontrolext/setting-tab-scrolling-time">Setting-Tab-Scrolling-Time</a></li><li><a href="/wpf/tabcontrolext/tab-item-header">Tab-Item-Header</a></li><li><a href="/wpf/tabcontrolext/tabitemvalidation-support">TabItemValidation-Support</a></li><li><a href="/wpf/tabcontrolext/tab-strip-alignment">Tab-Strip-Alignment</a></li></ul></li>
+  <li>TabNavigationControl<ul><li><a href="/wpf/tabnavigationcontrol/overview">Overview</a></li><li><a href="/wpf/tabnavigationcontrol/getting-started">Getting-Started</a></li><li><a href="/wpf/tabnavigationcontrol/adding-items-manually">Adding-Items-Manually</a></li><li><a href="/wpf/tabnavigationcontrol/adding-items-through-items-source">Adding-items-through-Items-Source</a></li><li><a href="/wpf/tabnavigationcontrol/transition-effects">Transition-effects</a></li></ul></li>
+  <li>TabSplitter<ul><li><a href="/wpf/tabsplitter/overview">Overview</a></li><li><a href="/wpf/tabsplitter/getting-started">Getting-Started</a></li><li><a href="/wpf/tabsplitter/interactive-features">Interactive-Features</a></li><li><a href="/wpf/tabsplitter/layout-related-features">Layout-Related-Features</a></li><li><a href="/wpf/tabsplitter/orientation">Orientation</a></li><li><a href="/wpf/tabsplitter/selected-page">Selected-Page</a></li></ul></li>
+  <li>TaskBar<ul><li><a href="/wpf/taskbar/overview">Overview</a></li><li><a href="/wpf/taskbar/getting-started">Getting-Started</a></li><li><a href="/wpf/taskbar/adding-a-taskbar-item-to-the-taskbar-control">Adding-a-TaskBar-Item-to-the-TaskBar-Control</a></li><li><a href="/wpf/taskbar/appearance">Appearance</a></li><li><a href="/wpf/taskbar/changing-orientation-of-taskbar">Changing-Orientation-of-Taskbar</a></li><li><a href="/wpf/taskbar/changing-the-flow-directions">Changing-the-flow-directions</a></li><li><a href="/wpf/taskbar/changing-the-size-of-expander-button">Changing-the-size-of-Expander-Button</a></li><li><a href="/wpf/taskbar/collapsing-the-taskbar">Collapsing-the-TaskBar</a></li><li><a href="/wpf/taskbar/setting-group-margin">Setting-Group-Margin</a></li><li><a href="/wpf/taskbar/setting-group-padding">Setting-Group-Padding</a></li><li><a href="/wpf/taskbar/setting-group-width">Setting-Group-Width</a></li><li><a href="/wpf/taskbar/setting-header-image">Setting-Header-Image</a></li><li><a href="/wpf/taskbar/setting-the-animation-speed">Setting-the-Animation-Speed</a></li></ul></li>
+  <li>SfTextBoxExt<ul><li><a href="/wpf/sftextboxext/overview">Overview</a></li><li><a href="/wpf/sftextboxext/getting-started">Getting-Started</a></li><li><a href="/wpf/sftextboxext/auto-complete">Auto-Complete</a></li><li><a href="/wpf/sftextboxext/watermark">Watermark</a></li></ul></li>
+  <li>TileViewControl<ul><li><a href="/wpf/tileviewcontrol/overview">Overview</a></li><li><a href="/wpf/tileviewcontrol/getting-started">Getting-Started</a></li><li><a href="/wpf/tileviewcontrol/blendability-support">Blendability-Support</a></li><li><a href="/wpf/tileviewcontrol/click-header-to-maximize">Click-Header-to-Maximize</a></li><li><a href="/wpf/tileviewcontrol/closebutton-support">CloseButton-Support</a></li><li><a href="/wpf/tileviewcontrol/closemode">CloseMode</a></li><li><a href="/wpf/tileviewcontrol/customizing-data-templates">Customizing-Data-Templates</a></li><li><a href="/wpf/tileviewcontrol/data-binding">Data-Binding</a></li><li><a href="/wpf/tileviewcontrol/data-binding-support">Data-Binding-Support</a></li><li><a href="/wpf/tileviewcontrol/dragand-drop">Dragand-Drop</a></li><li><a href="/wpf/tileviewcontrol/isselected">IsSelected</a></li><li><a href="/wpf/tileviewcontrol/minimizedheadertemplate--maximizedheadertemplate">MinimizedHeaderTemplate--MaximizedHeaderTemplate</a></li><li><a href="/wpf/tileviewcontrol/minimizeditemcontent-and-maximizeditemcontent">MinimizedItemContent-and-MaximizedItemContent</a></li><li><a href="/wpf/tileviewcontrol/minimizeditemtemplate-and-maximizeditemtemplate">MinimizedItemTemplate-and-MaximizedItemTemplate</a></li><li><a href="/wpf/tileviewcontrol/minimizing-item-size">Minimizing-Item-Size</a></li><li><a href="/wpf/tileviewcontrol/scrollbar-support">ScrollBar-Support</a></li><li><a href="/wpf/tileviewcontrol/selecteditem">SelectedItem</a></li><li><a href="/wpf/tileviewcontrol/minimizedheadertemplate--maximizedheadertemplate">MinimizedHeaderTemplate--MaximizedHeaderTemplate</a></li><li><a href="/wpf/tileviewcontrol/setting-orientation-for-minimizing-items">Setting-Orientation-for-Minimizing-Items</a></li><li><a href="/wpf/tileviewcontrol/styling">Styling</a></li><li><a href="/wpf/tileviewcontrol/touch-support">Touch-Support</a></li></ul></li>
+  <li>TimeSpanEdit<ul><li><a href="/wpf/timespanedit/overview">Overview</a></li><li><a href="/wpf/timespanedit/getting-started">Getting-Started</a></li><li><a href="/wpf/timespanedit/custom-format-string">Custom-format-string</a></li><li><a href="/wpf/timespanedit/how-to-show-milliseconds-in-the-timespanedit-control">How-to-show-milliseconds-in-the-TimeSpanEdit-control</a></li><li><a href="/wpf/timespanedit/incrementdecrement-value-on-scrolling">Incrementdecrement-value-on-scrolling</a></li><li><a href="/wpf/timespanedit/keyboard-navigation-support">Keyboard-navigation-support</a></li><li><a href="/wpf/timespanedit/spinarrowbuttons-to-change-the-value">SpinArrowButtons-to-change-the-value</a></li></ul></li>
+  <li>ToolBarAdv<ul><li><a href="/wpf/toolbaradv/overview">Overview</a></li><li><a href="/wpf/toolbaradv/getting-started">Getting-Started</a></li><li><a href="/wpf/toolbaradv/add-or-remove-buttons">Add-or-Remove-buttons</a></li><li><a href="/wpf/toolbaradv/orientation-of-toolbartrayadv">Orientation-of-ToolBarTrayAdv</a></li><li><a href="/wpf/toolbaradv/show-or-hide-gripper">Show-or-hide-Gripper</a></li><li><a href="/wpf/toolbaradv/specifying-the-position-of-toolbaradvs-in-a-toolbartrayadv">Specifying-the-Position-of-ToolBarAdvs-in-a-ToolBarTrayAdv</a></li><li><a href="/wpf/toolbaradv/toolbaradv-state">ToolBarAdv-state</a></li><li><a href="/wpf/toolbaradv/toolbaradv-with-overflow-items">ToolBarAdv-with-Overflow-items</a></li><li><a href="/wpf/toolbaradv/toolbarmanager">ToolBarManager</a></li></ul></li>
+  <li>SfTreeMap<ul><li><a href="/wpf/sftreemap/overview">Overview</a></li><li><a href="/wpf/sftreemap/getting-started">Getting-Started</a></li><li><a href="/wpf/sftreemap/colormapping">ColorMapping</a></li><li><a href="/wpf/sftreemap/colorvaluepath">ColorValuePath</a></li><li><a href="/wpf/sftreemap/customizing-leaf-nodes">Customizing-Leaf-Nodes</a></li><li><a href="/wpf/sftreemap/drill-down-support">Drill-Down-Support</a></li><li><a href="/wpf/sftreemap/headers-and-labels">Headers-and-Labels</a></li><li><a href="/wpf/sftreemap/leafitemsettings">LeafItemSettings</a></li><li><a href="/wpf/sftreemap/selection-support">Selection-Support</a></li><li><a href="/wpf/sftreemap/tooltip-support">ToolTip-Support</a></li><li><a href="/wpf/sftreemap/treemap-layout">TreeMap-Layout</a></li><li><a href="/wpf/sftreemap/treemap-legend">TreeMap-Legend</a></li><li><a href="/wpf/sftreemap/treemap-levels">TreeMap-Levels</a></li><li><a href="/wpf/sftreemap/weightvaluepath">WeightValuePath</a></li></ul></li>
+  <li>SfTreeNavigator<ul><li><a href="/wpf/sftreenavigator/overview">Overview</a></li><li><a href="/wpf/sftreenavigator/getting-started">Getting-Started</a></li><li><a href="/wpf/sftreenavigator/header-template">Header-Template</a></li><li><a href="/wpf/sftreenavigator/navigation-mode">Navigation-Mode</a></li><li><a href="/wpf/sftreenavigator/populating-items">Populating-Items</a></li><li><a href="/wpf/sftreenavigator/selected-item">Selected-Item</a></li></ul></li>
+  <li>TreeViewAdv<ul><li><a href="/wpf/treeviewadv/overview">Overview</a></li><li><a href="/wpf/treeviewadv/getting-started">Getting-Started</a></li><li><a href="/wpf/treeviewadv/appearance">Appearance</a></li><li><a href="/wpf/treeviewadv/customizing-data-templates">Customizing-Data-Templates</a></li><li><a href="/wpf/treeviewadv/data-binding">Data-Binding</a></li><li><a href="/wpf/treeviewadv/interactive-features">Interactive-Features</a></li><li><a href="/wpf/treeviewadv/styles-and-templates">Styles-and-Templates</a></li><li><a href="/wpf/treeviewadv/styling">SStyling</a></li></ul></li>
+  <li>Updown<ul><li><a href="/wpf/updown/overview">Overview</a></li><li><a href="/wpf/updown/getting-started">Getting-Started</a></li><li><a href="/wpf/updown/animation-speed">Animation-Speed</a></li><li><a href="/wpf/updown/appearance">Appearance</a></li><li><a href="/wpf/updown/culture">Culture</a></li><li><a href="/wpf/updown/keyboard-and-mouse-support">Keyboard-and-Mouse-Support</a></li><li><a href="/wpf/updown/maximum-and-minimum-validation">Maximum-and-Minimum-Validation</a></li><li><a href="/wpf/updown/maximum-and-minimum-value">Maximum-and-Minimum-Value</a></li><li><a href="/wpf/updown/null-value">Null-Value</a></li><li><a href="/wpf/updown/number-formatting">Number-Formatting</a></li><li><a href="/wpf/updown/set-the-value-for-updown">Set-the-Value-for-UpDown</a></li></ul></li>
+</ul>
+					
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			</div>
+</div>
+<!--googleon: all-->
+
+        
+        
+
+	
+		        <div class="post">
+<div id="breadcrumb">				
+<ul class="bread-crumb">
+<!--     <li><a href="http://help.syncfusion.com/">Home</a></li>-->
+	
+	<li><a href="http://helpjs.syncfusion.com/"><i class="fa fa-home"></i></a></li>
+	<li class="separator"><a></a></li>
+     <!-- set offset value 1 to display platform -->
+        
+            <li class="active breadcrumb-links"><a href="/wpf/DockingManager/">
+			
+			DockingManager</a></li>
+			<li class="separator"><a></a></li>
+			
+        
+     <!-- set offset value 1 to display platform -->
+        
+            <li class="active breadcrumb-links"><a href="/wpf/DockingManager/How-to/">
+			
+			How-to</a></li>
+			<li class="separator"><a></a></li>
+			
+        
+     <!-- set offset value 1 to display platform -->
+        
+            <li class="breadcrumb-links">Set ActiveWindow using SetNewFocusedElement </li>
+        
+    
+</ul>
+</div>				
+				
+				<div id="rightsidetoc"></div>
+					 
+            
+            <div class="post-content">
+            <h3 id="set-activewindow-using-setnewfocusedelement">Set ActiveWindow using SetNewFocusedElement()</h3>
+
+<p>This method is used to activate the new child as an active window and the focus is moved to the given child.</p>
+
+<p>[C#]</p>
+
+<p>DockingManager.SetNewFocusedElement(element);</p>
+
+
+            </div>
+            
+       
+        </div>		
+    </div>
+
+
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12 footer navbar-inverse navbar-fixed-bottom">
+		<a class="copyright" target="_blank" href="http://www.syncfusion.com/copyright">Copyright &copy; 2001 - 2015 Syncfusion Inc. All Rights Reserved</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
