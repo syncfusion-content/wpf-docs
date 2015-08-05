@@ -17,9 +17,13 @@ The Map control contains the following commands:
 * ZoomReset Command
 * PanReset Command
 
-ZoomIn Command
+## ZoomIn Command
 
 ZoomIn command—zooms in the map.
+
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -36,10 +40,15 @@ ZoomIn command—zooms in the map.
             </ syncfusion:SfMap >
 
          <Button Content="ZoomIn" Name="zoomIn" Grid.Row="0" Command="{Binding ElementName=Map,Path=ZoomInCommand}" VerticalAlignment="Bottom"/>
+{% endhighlight %}
 
-ZoomOut Command
+## ZoomOut Command
 
 ZoomOut Command--zooms out the map.
+
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -56,10 +65,14 @@ ZoomOut Command--zooms out the map.
         </syncfusion:SfMap >
 
  <Button Content="ZoomOut" Name="zoomOut" Grid.Row="2"  Command="{Binding ElementName=Map,Path=ZoomOutCommand}"/>
+{% endhighlight %}
 
-Pan Command
+## Pan Command
 
 Pan Command is used to navigate on the Map control. The direction of the navigation is the Command parameter for the Pan Command.
+
+
+{% highlight xml %}
 
 [XAML]
 
@@ -86,10 +99,15 @@ Pan Command is used to navigate on the Map control. The direction of the navigat
         <Button Width="50" Height="20"  Grid.Row="0" Content="Top" Name="topPan" Command="{Binding ElementName=Map,Path=PanCommand}" CommandParameter="top" Margin="355,10,355,474"/>
 
         <Button Width="75" Height="20" Content="Bottom" Name="bottomPan" Command="{Binding ElementName=Map,Path=PanCommand}" CommandParameter="bottom" Margin="355,442,330,42"/>
+{% endhighlight %}
 
-ZoomReset Command
+## ZoomReset Command
 
 The ZoomReset command resets the ZoomLevel value of the Map control.
+
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -107,11 +125,15 @@ The ZoomReset command resets the ZoomLevel value of the Map control.
 
             <Button Grid.Column="0" Grid.Row="0"  Content="ZoomRest" Command="{Binding ElementName=Map,Path=ZoomResetCommand}" Margin="0,435,10,10"/>
 
+{% endhighlight %}
 
-
-PanReset Command
+## PanReset Command
 
 The PanReset command resets the map at its initial position; it resets the pan values.
+
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -133,5 +155,5 @@ The PanReset command resets the map at its initial position; it resets the pan v
 
         <Button Grid.Row="0" Content="PanRest" Command="{Binding ElementName=Map,Path=PanResetCommand}" Margin="0,440,0,0"/>
 
-
+{% endhighlight %}
 

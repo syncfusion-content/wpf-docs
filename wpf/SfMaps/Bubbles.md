@@ -56,7 +56,7 @@ Gets or sets colors to bubble shape. </td></tr>
 <tr>
 <td>
 ColorMapping</td><td>
-ObservableCollection<RangeColorMapping></td><td>
+ObservableCollection;&ltRangeColorMapping;&gt</td><td>
 Gets or sets the tree map colors.</td></tr>
 <tr>
 <td>
@@ -71,9 +71,12 @@ Gets or sets the border color of the bubble.</td></tr>
 </table>
 
 
-Adding Bubbles to a Map
+## Adding Bubbles to a Map
 
 To add bubbles to a map, the bubble marker setting has to be added to the shape file layer.  Set the AutoFillColor as true and set the Fill property. Create the Model and ViewModel as illustrtaed in the Data Binding topic and add the following code. Also set the MaxSize, MinSize, and ValuePath properties as illustrated in the following code example.
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -110,16 +113,16 @@ To add bubbles to a map, the bubble marker setting has to be added to the shape 
         </syncfusion:SfMap >
 
 
+{% endhighlight %}
 
 
+![](Bubbles_images/Bubbles_img1.png)
 
-{{ '![](Bubbles_images/Bubbles_img1.png)' | markdownify }}
-{:.image }
 
 
 _Adding Bubbles_
 
-Customizing Bubble Symbol
+## Customizing Bubble Symbol
 
 The shape of the bubble symbol can be modified by using built-in symbols like circle, rectangle, diamond, triangle, trapezoid, star, pentagon, and pushpin that are available in the BubbleType enum property. Also, bubbles can be customized by setting the CustomTemplate of the BubbleMarkerSetting.
 
@@ -142,6 +145,8 @@ CustomTemplate</td><td>
 DataTemplate</td><td>
 Gets or sets the template to customize the bubble.> {{ '_Note: BubbleType should be set as “Custom” to show a customized bubble shape._' | markdownify }}</td></tr>
 </table>
+
+{% highlight xml %}
 
 
 [XAML]
@@ -208,17 +213,17 @@ Gets or sets the template to customize the bubble.> {{ '_Note: BubbleType should
 
     </syncfusion:SfMap>	
 
+{% endhighlight %}
 
 
 
+![](Bubbles_images/Bubbles_img2.png)
 
-{{ '![](Bubbles_images/Bubbles_img2.png)' | markdownify }}
-{:.image }
 
 
 _Bubble with Star Symbol_
 
-Range Color Mapping
+## Range Color Mapping
 
 Range color mapping is one of the features used to differentiate the bubble fill, based on its under-bound value and color ranges. It contains the following properties:
 
@@ -245,6 +250,8 @@ Gets or sets the color values for a given range.</td></tr>
 
 The fill color of a particular bubble fill can be determined by its under-bound value and the color range. For example, consider the following color ranges:
 
+{% highlight xml %}
+
 [XAML]
 
               <syncfusion:BubbleMarkerSetting AutoFillColor="False" MaxSize="100" MinSize="50" ColorValuePath="Population"                                                        ValuePath="Population" BubbleType="Star">
@@ -267,6 +274,7 @@ The fill color of a particular bubble fill can be determined by its under-bound 
 
                 </syncfusion:ShapeFileLayer.BubbleMarkerSetting>
 
+{% endhighlight %}
 
 
 When the under-bound object value is 22789702, then the fill color of the corresponding bubble is set to “#7FEB737C”.  As mentioned earlier, the under-bound value of the bubble is set through the “ValuePath” in the BubbleMarkerSetting.
@@ -275,9 +283,12 @@ When the under-bound value is under any of the given sorted range or above the s
 
 “AutoFillColor” must be set as “false” to enable range color mapping.
 
-Code Sample
+## Code Sample
 
 Create the “Model” and the “ViewModel” as mentioned in the Data Binding topic and add the following code
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -325,10 +336,10 @@ Create the “Model” and the “ViewModel” as mentioned in the Data Binding 
 
         </syncfusion:SfMap >
 
+{% endhighlight %}
 
+![](Bubbles_images/Bubbles_img3.png)
 
-{{ '![](Bubbles_images/Bubbles_img3.png)' | markdownify }}
-{:.image }
 
 
 _RangeColorMapping for Bubbles_

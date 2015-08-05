@@ -17,9 +17,12 @@ MenuAdv supports animation types to open the submenu pop-up. The following anima
 
 The Animation support can be used by using the PopUpAnimationType property. If the PopUpAnimationType property is set to None, the submenu will open without any animation.
 
-Adding the Animation Support to an Application
+## Adding the Animation Support to an Application
 
 If the PopUpAnimationType property is set to Fade, the submenu will open with faded animation. If the PopUpAnimationType property is set to Slide, the submenu will open like the slide. If the PopUpAnimationType property is set to Scroll, the submenu popup open with scroll animation. The Animation support can be added to an application, as shown in the following code snippet.
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -62,10 +65,10 @@ If the PopUpAnimationType property is set to Fade, the submenu will open with fa
                 </shared:MenuItemAdv>
 
 </shared:MenuAdv>
+{% endhighlight %}
 
 
-
-Properties
+## Properties
 
 The property for the Animation support is described in the following tabulation:
 
@@ -87,7 +90,7 @@ PopUpAnimationType(None)</td></tr>
 </table>
 
 
-Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

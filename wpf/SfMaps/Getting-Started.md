@@ -19,8 +19,8 @@ To create the SfMap control through Visual Studio, drag SfMap from Toolbox a
 
 It generates the following the SfMap control.
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 ### Through Expression Blend
@@ -35,8 +35,8 @@ The SfMap control can also be created and configured by using Expression Blend. 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 ### Through XAML and C#
@@ -49,14 +49,37 @@ Namespace: Syncfusion.UI.Xaml.Maps
 
 You can create the SfMap control programmatically through XAML and C#. In the following code example. 
 
-<table>
-<tr>
-<td>
-[XAML]<Window x:Class="MapApp.MainWindow"         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"        xmlns:local="clr-namespace:MapApp"          xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Maps;assembly=Syncfusion.SfMaps.WPF">    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}" Name="mainGrid">        <syncfusion:SfMap>                     <syncfusion:SfMap.Layers>                <syncfusion:ShapeFileLayer   Uri="MapApp.world1.shp">                                    </syncfusion:ShapeFileLayer>            </syncfusion:SfMap.Layers>        </syncfusion:SfMap>    </Grid></Page></td></tr>
-<tr>
-<td>
-[C#]            SfMap syncMap = new SfMap();            syncMap.EnablePan = true;            ShapeFileLayer layer = new ShapeFileLayer();            layer.Uri = "MapApp.world1.shp";            syncMap.Layers.Add(layer);</td></tr>
-</table>
+
+{% highlight xml %}
+
+
+[XAML]
+<Window x:Class="MapApp.MainWindow"         
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+xmlns:local="clr-namespace:MapApp"          
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        
+xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Maps;assembly=Syncfusion.SfMaps.WPF">    
+<Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}" Name="mainGrid">        
+<syncfusion:SfMap>                     
+<syncfusion:SfMap.Layers>                
+<syncfusion:ShapeFileLayer   Uri="MapApp.world1.shp">                                    
+</syncfusion:ShapeFileLayer>           
+ </syncfusion:SfMap.Layers>        
+</syncfusion:SfMap>    
+</Grid>
+</Page>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]            
+SfMap syncMap = new SfMap();            
+syncMap.EnablePan = true;            
+ShapeFileLayer layer = new ShapeFileLayer();            
+layer.Uri = "MapApp.world1.shp";            
+syncMap.Layers.Add(layer);
+{% endhighlight %}
+
 ## Configure the SfMap Control
 
 ### Read and Load the Shapes
@@ -89,11 +112,11 @@ Maps read the main file and create the map shapes. The associated .dbf file cont
 
 To read the shape file using Maps, the shape file’s main file and .dbf file need to be added as an embedded resource in the application project. Then, the main file’s path has to be given in the Uri file of the shape file layer.
 
-About the Uri property
+#### About the Uri property
 
 Uri is the string type property that retrieves the location of the shape file that is added as an embedded resource. 
 
-Structure of Uri property
+#### Structure of Uri property
 
 The Uri property contains the following information:
 
@@ -104,32 +127,37 @@ Subfolder names
 ShapeFilename.shp
 
 
+{% highlight xml %}
+
 
 [XAML]
 
 <syncfusion:ShapeFileLayer Uri=”MapApp.ShapeFiles.world1.shp”  x:Name="shapeControl">
 
 </syncfusion:ShapeFileLayer>
-
+{% endhighlight %}
 
 
 In the above code sample, MapApp is the namespace, ShapeFile is the subfolder name, and world1.shp is the name of the shape file. 
 
 The above code example results in the following output
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 ### Load Shapefile as Content File Instead of Embedded Resource
 
 This feature enables the control to read a shapefile from an HTTP path, as a content file, or from shapefiles and DBF files as a stream. It can also be used to render map shapes at run time.
 
-From HTTP Path
+#### From HTTP Path
 
 By giving the URL path of the file to the URI property, a shapefile is read. Here, the file is not downloaded. It only reads the content from the web. 
 
-Code Sample
+##### Code Sample
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -145,7 +173,7 @@ Code Sample
 
   </syncfusion:SfMap>
 
-
+{% endhighlight %}
 
 ### Data Binding in Map
 
@@ -178,6 +206,8 @@ ShapeValuePath is a string type property used to define the object bound to the 
 The .dbf file that is included in the main shape file, is required to work with data binding. The .dbf file contains the information about the shapes in the main shape file. Each record in the .dbf file is associated with the each shape in the main file. Shapes in the main file and records in the .dbf file are organized in the same sequence. Therefore, the Nth shape in the main file is associated with Nth record in the .dbf file. A record of the .dbf file can contain the name of the shape or population data or some other statistical data of a geographic shape.
 
 
+{% highlight xml %}
+
 
 [XAML]
 
@@ -200,22 +230,98 @@ The .dbf file that is included in the main shape file, is required to work with 
             </syncfusion:SfMap.Layers>
 
         </syncfusion:SfMap >
+{% endhighlight %}
 
 ### Customize Map Appearance 
 
 You can customize the shape’s color by using ShapeFill, ShapeStroke and ShapeStrokeThickness properties in ShapeSettings.
 
-<table>
-<tr>
-<td>
-public class Country : INotifyPropertyChanged    {        public string NAME { get; set; }        private Visibility itemsvisibility = Visibility.Visible;        public Visibility ItemsVisibility        {            get { return itemsvisibility; }            set { itemsvisibility = value; }        }        private double weather { get; set; }        public double Weather        {            get            {                return weather;            }            set            {                weather = value;            }        }        private double population { get; set; }        public double Population        {            get            {                return population;            }            set            {                population = value;                OnPropertyChanged(new PropertyChangedEventArgs("Population"));            }        }        public string PopulationFormat { get; set; }        public event PropertyChangedEventHandler PropertyChanged;        public void OnPropertyChanged(PropertyChangedEventArgs e)        {            this.PopulationFormat = (String.Format("{0:0,0}", this.Population).Trim('$'));            if (PropertyChanged != null)            {                PropertyChanged(this, e);            }        }    }    public class MapViewModel    {        public ObservableCollection<Country> Countries { get; set; }        public MapViewModel()        {            Countries = new ObservableCollection<Country>();            Countries = GetCountriesAndPopulation();        }        private ObservableCollection<Country> GetCountriesAndPopulation()        {            ObservableCollection<Country> countries = new ObservableCollection<Country>();            countries.Add(new Country() { NAME = "China", Population = 1347350000 });            countries.Add(new Country() { NAME = "United States", Population = 314623000 });            countries.Add(new Country() { NAME = "Australia", Population = 22789701 });            countries.Add(new Country() { NAME = "Russia", Population = 143228300 });            countries.Add(new Country() { NAME = "Egypt", Population = 82724000 });            countries.Add(new Country() { NAME = "South Africa", Population = 50586757 });            return countries;        }    } </td></tr>
-<tr>
-<td>
-[XAML]        <syncfusion:SfMap >            <syncfusion:SfMap.Layers>                <syncfusion:ShapeFileLayer EnableSelection="True" ItemsSource="{Binding Countries}" ShapeIDPath="Country" ShapeIDTableField="NAME" Uri="MapApp.world1.shp">                    <syncfusion:ShapeFileLayer.ShapeSettings>                        <syncfusion:ShapeSetting ShapeStroke="#FFD0D1D7" ShapeStrokeThickness="1" ShapeValuePath="Population" ShapeFill="#9CBF4E" SelectedShapeColor="#BC5353"/>                    </syncfusion:ShapeFileLayer.ShapeSettings>                   </syncfusion:ShapeFileLayer>            </syncfusion:SfMap.Layers>        </syncfusion:SfMap ></td></tr>
-</table>
+{% highlight C# %}
 
+[C#]
+public class Country : INotifyPropertyChanged    {        public string NAME { get; set; }     
+   private Visibility itemsvisibility = Visibility.Visible;        
+   public Visibility ItemsVisibility        
+   {           
+   get { return itemsvisibility; }            
+   set { itemsvisibility = value; }        
+   }        
+   private double weather { get; set; }       
+   public double Weather        
+   {            
+   get            
+   {               
+   return weather;            
+   }           
+   set            
+   {               
+   weather = value;            
+   }       
+   }       
+   private double population { get; set; }       
+   public double Population        
+   {            
+   get            
+   {               
+   return population;            
+   }            
+   set            
+   {                
+   population = value;                
+   OnPropertyChanged(new PropertyChangedEventArgs("Population"));            
+   }        
+   }       
+   public string PopulationFormat { get; set; }       
+   public event PropertyChangedEventHandler PropertyChanged;        
+   public void OnPropertyChanged(PropertyChangedEventArgs e)        
+   {            
+   this.PopulationFormat = (String.Format("{0:0,0}", this.Population).Trim('$'));            
+   if (PropertyChanged != null)            
+   {               
+   PropertyChanged(this, e);            
+   }        
+   }    
+   }    
+   public class MapViewModel    
+   {        
+   public ObservableCollection<Country> Countries { get; set; }        
+   public MapViewModel()        
+   {            
+   Countries = new ObservableCollection<Country>();            
+   Countries = GetCountriesAndPopulation();        
+   }        
+   private ObservableCollection<Country> GetCountriesAndPopulation()        
+   {            
+   ObservableCollection<Country> countries = new ObservableCollection<Country>();            
+   countries.Add(new Country() { NAME = "China", Population = 1347350000 });            
+   countries.Add(new Country() { NAME = "United States", Population = 314623000 });           
+   countries.Add(new Country() { NAME = "Australia", Population = 22789701 });           
+   countries.Add(new Country() { NAME = "Russia", Population = 143228300 });            
+   countries.Add(new Country() { NAME = "Egypt", Population = 82724000 });            
+   countries.Add(new Country() { NAME = "South Africa", Population = 50586757 });           
+   return countries;       
+   }   
+   } 
+{% endhighlight %}
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+ {% highlight xml %}
+
+  
+[XAML]        
+<syncfusion:SfMap >            
+<syncfusion:SfMap.Layers>               
+ <syncfusion:ShapeFileLayer EnableSelection="True" ItemsSource="{Binding Countries}" ShapeIDPath="Country" 
+ ShapeIDTableField="NAME" Uri="MapApp.world1.shp">                    
+ <syncfusion:ShapeFileLayer.ShapeSettings>                        
+ <syncfusion:ShapeSetting ShapeStroke="#FFD0D1D7" ShapeStrokeThickness="1" ShapeValuePath="Population" 
+ ShapeFill="#9CBF4E" SelectedShapeColor="#BC5353"/>                    
+ </syncfusion:ShapeFileLayer.ShapeSettings>                  
+ </syncfusion:ShapeFileLayer>            
+ </syncfusion:SfMap.Layers>        
+ </syncfusion:SfMap >
+{% endhighlight %}
+
+![](Getting-Started_images/Getting-Started_img4.png)
+
 
 

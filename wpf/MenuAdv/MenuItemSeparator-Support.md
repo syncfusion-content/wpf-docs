@@ -11,13 +11,16 @@ documentation: ug
 
 MenuItemSeparator is a line, which is used to separate MenuItemAdv’s. MenuItemSeparator can be included in the items list of MenuItemAdv.  
 
-Use Case Scenarios
+## Use Case Scenarios
 
 MenuAdv helps users to separate MenuItemAdv’s by using MenuItemSeparator. In the case of separating the radio button group of items from other items, separator can be used.
 
-Adding the MenuItemSeparator Support to an Application 
+## Adding the MenuItemSeparator Support to an Application 
 
 MenuItemSeparator can be added to an application, as shown in the following code snippet.
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -65,13 +68,13 @@ IsChecked="False"/>
 
             </shared:MenuAdv>
 
+{% endhighlight %}
+
+![](MenuItemSeparator-Support_images/MenuItemSeparator-Support_img1.png)' | markdownify }}
 
 
-{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Chk&Radio.png](MenuItemSeparator-Support_images/MenuItemSeparator-Support_img1.png)' | markdownify }}
-{:.image }
 
-
-Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

@@ -15,7 +15,9 @@ The topics under this section explain the data binding support for the MenuAdv c
 
 The MenuAdv control also supports binding to objects. The following example shows this.
 
-1. Create a class that act as a model for MenuAdv.
+1.Create a class that act as a model for MenuAdv.
+
+{% highlight C# %}
 
 [C#]
 
@@ -44,12 +46,14 @@ public class Model
     }
 
 
+{% endhighlight %}
 
 
 
 
+2.Create a ViewModel class and initialize the items.
 
-2. Create a ViewModel class and initialize the items.
+{% highlight C# %}
 
 [C#]
 
@@ -157,13 +161,15 @@ public class Model
 
     }
 
+{% endhighlight %}
 
 
 
 
 
+3.Create a ViewModel instance and use it as DataContext for the root window.
+{% highlight xml %}
 
-3. Create a ViewModel instance and use it as DataContext for the root window.
 
 [XAML]
 
@@ -173,9 +179,12 @@ public class Model
 
 </Window.DataContext>
 
+{% endhighlight %}
 
+4.Now configure the ItemsSource and ItemTemplate of MenuAdv.
 
-4. Now configure the ItemsSource and ItemTemplate of MenuAdv.
+{% highlight xml %}
+
 
 [XAML]
 
@@ -200,22 +209,25 @@ public class Model
 
 
         </syncfusion:MenuAdv>
-
+{% endhighlight %}
 
 
 
 
 Implementing the above code will generate the following control.
 
-{{ '![](Data-Binding_images/Data-Binding_img1.png)' | markdownify }}
-{:.image }
+![](Data-Binding_images/Data-Binding_img1.png)
+
 
 
 ## Data-Biding with XML
 
 An XML file can also be used as _ItemsSource_ for the MenuAdv control. The following example illustrates this.
 
-1. Create an XML file with the following details as follows and name it as Data.xml.
+1.Create an XML file with the following details as follows and name it as Data.xml.
+
+{% highlight xml %}
+
 
 [XML]
 
@@ -295,19 +307,24 @@ An XML file can also be used as _ItemsSource_ for the MenuAdv control. The follo
 
 </Categories>
 
+{% endhighlight %}
 
+2.Add XmlDataProvider for the above XML document.
 
-2. Add XmlDataProvider for the above XML document.
+{% highlight xml %}
+
 
 [XAML]
 
 <XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Categories"/> 
+{% endhighlight %}
 
 
 
 
+3.Set ItemsSource property for the MenuAdv.
+{% highlight xml %}
 
-3. Set ItemsSource property for the MenuAdv.
 
 [XAML]
 
@@ -337,7 +354,7 @@ An XML file can also be used as _ItemsSource_ for the MenuAdv control. The follo
 
         </syncfusion:MenuAdv>
 
-
+{% endhighlight %}
 
 
 
@@ -345,7 +362,7 @@ An XML file can also be used as _ItemsSource_ for the MenuAdv control. The follo
 
 This will create the following MenuAdv control.
 
-{{ '![](Data-Binding_images/Data-Binding_img2.png)' | markdownify }}
-{:.image }
+![](Data-Binding_images/Data-Binding_img2.png)
+
 
 

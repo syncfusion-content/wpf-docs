@@ -11,8 +11,8 @@ documentation: ug
 
 ## Structure of the MenuAdv Control
 
-{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Control-Structure.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 ## Creating the MenuAdv Control 
@@ -25,8 +25,8 @@ The following are the steps to create the MenuAdv control using Visual Studio.
 
 1. Drag MenuAdv from the Visual Studio Toolbox and drop it in the designer.
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+    ![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 2. Select the MenuAdv and go to properties.
@@ -34,8 +34,8 @@ The following are the steps to create the MenuAdv control using Visual Studio.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+    ![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 4. Using the Collection Editor, add the GroupBarItems and configure their properties.
@@ -45,39 +45,39 @@ The following are the steps to create the MenuAdv control using Visual Studio.
 The MenuAdv control can also be created and configured using Expression Blend. The following are the steps to do so.
 
 1. Create a WPF project in the Expression Blend and reference the following assemblies.
-1. Syncfusion.Shared.Wpf
-2. Syncfusion.Core
+    1. Syncfusion.Shared.Wpf
+    2. Syncfusion.Core
 2. Search for MenuAdv in the Toolbox.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
-
-
-3. Drag the MenuAdv to the designer. This will generate an empty menu bar. 
-4. To add the MenuItemAdvs to the MenuAdv control, select the MenuAdv and go to Properties area.
-5. Click Items (Collection) under Common Properties.
+	![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
-
-
-6. Once the Collection Editor opens, click Add another item.  The Select Object window will open.
-7. Select MenuItemAdv by typing MenuItemAdv in the search box, and then click OK.
+3.	Drag the MenuAdv to the designer. This will generate an empty menu bar. 
+4. 	To add the MenuItemAdvs to the MenuAdv control, select the MenuAdv and go to Properties area.
+5. 	Click Items (Collection) under Common Properties.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+	![](Getting-Started_images/Getting-Started_img5.png)
 
 
-8. Configure the properties (such as header or icon) of the MenuItemAdv using the properties in the Collection Editor. This will generate the following control.
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+6. 	Once the Collection Editor opens, click Add another item.  The Select Object window will open.
+7. 	Select MenuItemAdv by typing MenuItemAdv in the search box, and then click OK.
+
+
+
+    ![](Getting-Started_images/Getting-Started_img6.png)
+
+
+
+8. 	Configure the properties (such as header or icon) of the MenuItemAdv using the properties in the Collection Editor. This will generate the following control.
+
+	![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 > _Note: You can customize the appearance of the MenuItemAdv using the template-editing feature available in the Expression Blend._
@@ -85,6 +85,9 @@ The MenuAdv control can also be created and configured using Expression Blend. T
 ### Through XAML
 
 The MenuAdv control can also be created through XAML. The following code example illustrates this.
+
+
+{% highlight xml %}
 
 [XAML]
 
@@ -139,22 +142,26 @@ The MenuAdv control can also be created through XAML. The following code example
 </syncfusion:MenuItemAdv>
 
 </syncfusion:MenuAdv>
-
+{% endhighlight %}
 
 
 ### Through C#
 
 To create the MenuAdv control through C#, include the following namespace to the directives list.
 
+{% highlight C# %}
+
 [C#]
 
 using Syncfusion.Windows.Shared;
 
-
+{% endhighlight %}
 
 
 
  Next, create the MenuAdv as follows.
+
+ {% highlight C# %}
 
  [C#]
 
@@ -230,7 +237,7 @@ MenuAdv mAdv = new MenuAdv();
 
    mAdv.Items.Add(product);
 
-
+{% endhighlight %}
 
 
 

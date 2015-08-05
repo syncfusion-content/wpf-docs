@@ -11,13 +11,13 @@ documentation: ug
 
 This Section starts with Assemblies deployment, Subsequent sections that take you through the structure of SfDataGrid and explains how to create Simple application with SfDataGrid, how to apply grouping, sorting and filtering SfDataGrid.
 
-Assemblies Deployment
+## Assemblies Deployment
 
 This topic describes assembly that is required in your WPF application when you want to use SfDataGrid.Certain assemblies are deployed in your application, whereas others that offer additional functionality like exporting is deployed optionally based on your requirements. The assemblies that are added is in same version.  
 
-The following is the list of assemblies.
+### The following is the list of assemblies.
 
-_List of Assemblies_
+#### _List of Assemblies_
 
 <table>
 <tr>
@@ -59,11 +59,10 @@ The following screenshot displays you the elements in SfDataGrid.
 
 
 
-{{ '![2](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
-_Elements of SfDataGrid_
+### _Elements of SfDataGrid_
 
 ## Create a Simple Application with DataGrid
 
@@ -74,11 +73,11 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
-_Syncfusion Control tab_
+
+### _Syncfusion Control tab_
 
 When you drag the SfDataGrid toolbox item to the window, it automatically adds the required references to the current application.
 
@@ -89,6 +88,8 @@ To add the SfDataGrid using code, you can add the following assemblies to the 
 * Syncfusion.Shared.WPF
 3. Now, create a simple data source as shown in the following code example. Add the following code example in a newly created class files and save it as__OrderInfo.cs file.
 
+
+{% highlight C# %}
 
 
 [C#]
@@ -186,11 +187,13 @@ public class OrderInfo
     }
 
 }
-
+{% endhighlight %}
 
 
 4. Add the following code example in a newly created class file and save it as__OrderInfoRepositiory.cs file.
 
+
+{% highlight C# %}
 
 
 [C#]
@@ -248,12 +251,14 @@ public class OrderInfoRepositiory
     }
 
 }
-
+{% endhighlight %}
 
 
 5. You can add Syncfusion schema ([http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.com/wpf)) or namespace (Syncfusion.UI.XAML.Grid) of SfDataGrid in XAML to create SfDataGrid. Here, your sample name space to set ViewModel as data context to Grid or to Window. 
 
 
+
+{% highlight xml %}
 
 [XAML]
 
@@ -267,13 +272,14 @@ public class OrderInfoRepositiory
 
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
-
+{% endhighlight %}
 
 
 
 6. You need to set data context for (Window or Grid) or you can set it using Resource also. You can bind data to DataGrid by using the SfDataGrid.ItemsSource__property. When you set it using data context then you should refer the following code example.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -284,19 +290,20 @@ public class OrderInfoRepositiory
 </Window.DataContext>
 
 
-
+{% endhighlight %}
 
 
 You can bind the data using the following code example.
 
 
+{% highlight xml %}
 
 [XAML]
 
 
 
 <syncfusion:SfDataGrid ColumnSizer="Auto" ItemsSource="{Binding OrderInfoCollection}" />
-
+{% endhighlight %}
 
 
 
@@ -304,6 +311,7 @@ You can bind the data using the following code example.
 To set the data context using Resource, you can refer the following code example.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -315,18 +323,19 @@ To set the data context using Resource, you can refer the following code example
 
 </Window.Resources>
 
-
+{% endhighlight %}
 
 
 
 You can bind the data using the following code example.
 
 
+{% highlight xml %}
 
 [XAML]
 
 <syncfusion:SfDataGrid ColumnSizer="Auto" ItemsSource="{Binding OrderInfoCollection, Source={StaticResource data}}" />
-
+{% endhighlight %}
 
 
 
@@ -336,8 +345,7 @@ You can bind the data using the following code example.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 _Data Grid_
@@ -347,6 +355,7 @@ _Data Grid_
 9. You can also define the columns manually by setting the SfDataGrid.AutoGenerateColumns property to ‘false’_,_ and add the GridColumn object to the SfDataGrid.Columns collection. The following code example illustrates this.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -371,7 +380,7 @@ _Data Grid_
     </syncfusion:SfDataGrid.Columns>
 
 </syncfusion:SfDataGrid>
-
+{% endhighlight %}
 
 
 
@@ -380,17 +389,18 @@ _Data Grid_
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
-_Data Grid_
+
+#### _Data Grid_
 
 
 
 11. SfDataGrid allows you to group its data by dragging a column and drop it in GroupDropArea. To apply grouping with mouse pointer, you can enable ShowGroupDropArea and AllowGrouping.  The following code example illustrates this.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -403,24 +413,25 @@ _Data Grid_
                                      Source={StaticResource data}}"
 
                        ShowGroupDropArea="True" />
-
+{% endhighlight %}
 
 
 12. Execute the application and drag Order ID Column and drop it in GroupDropAreaarea. It displays the following output.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
 
 
-_DataGrid with ShowGroupDropArea and AllowGrouping enabled_
+
+#### _DataGrid with ShowGroupDropArea and AllowGrouping enabled_
 
 
 
 13. SfDataGrid allows you to apply sorting on its data by setting AllowSorting to ‘true. Following code example illustrates this.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -431,24 +442,25 @@ _DataGrid with ShowGroupDropArea and AllowGrouping enabled_
                        ItemsSource="{Binding OrderInfoCollection,                                  
 
                                              Source={StaticResource data}}" />
-
+{% endhighlight %}
 
 
 14. Execute the application and click header cell to sort the data and the following output is displayed.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
-_DataGrid with AllowSorting property set to true_
+
+#### _DataGrid with AllowSorting property set to true_
 
 
 
 15. SfDataGrid provides support for Excel inspired UI for filtering. You can enable this AllowFiltering property to ‘true’. 
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -459,18 +471,17 @@ _DataGrid with AllowSorting property set to true_
                        ItemsSource="{Binding OrderInfoCollection,
 
                                              Source={StaticResource data}}" />
-
+{% endhighlight %}
 
 
 16. Execute the application; you can see that Header loaded with filter toggle button. 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
 
 
-_DataGrid Header loaded with filter toggle button_
+#### _DataGrid Header loaded with filter toggle button_
 
 
 
@@ -478,8 +489,8 @@ _DataGrid Header loaded with filter toggle button_
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
+
 
 
 _Filter pop-up window_
@@ -498,9 +509,10 @@ Master-Detail view also called as Hierarchical or Nested Grid can be used to dis
 
 
 
-Add the following code example in a newly created class file and save it as OrderInfo.cs
+### Add the following code example in a newly created class file and save it as OrderInfo.C#
 
 
+{% highlight C# %}
 
 [C#]
 
@@ -613,12 +625,13 @@ public class OrderInfo
     }
 
 }
-
+{% endhighlight %}
 
 
 The ProductDetails property is a List of ProductInfo type. Here you can find the class information of ProductInfo class. You can add the following code example in a newly created class file and save it as ProductInfo.cs file
 
 
+{% highlight C# %}
 
 [C#]    
 
@@ -656,11 +669,12 @@ public class ProductInfo
 
 }
 
-
+{% endhighlight %}
 
 4. Now create data to bind to SfDataGrid. Add the following code example in a newly created class file and save it as OrderInfoRepositiory.cs file_._
 
 
+{% highlight C# %}
 
 [C#]
 
@@ -789,7 +803,7 @@ public class OrderInfoRepositiory
     }
 
 }
-
+{% endhighlight %}
 
 
 5. Now open XAML page in your application. Add names space for SfDataGrid and create simple application with SfDataGrid.
@@ -797,6 +811,7 @@ public class OrderInfoRepositiory
 7. Create Details-View Grid as in the following code example. There are some limitations for Details-View Grid that is refered using Master-Details View Section.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -844,15 +859,15 @@ public class OrderInfoRepositiory
 
 </Window>
 
-
+{% endhighlight %}
 
 8. Execute the application; Grid is loaded with Master Details Grid. Click the first record’s expander to render the following output.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
 
 
-_Master-Details view DataGrid_
+
+#### _Master-Details view DataGrid_
 

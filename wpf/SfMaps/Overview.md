@@ -20,6 +20,7 @@ The Maps control can be used in following cases:
 3. To visualize the density or availability of resources in an area.
 4. To visualize political information.
 5. To visualize the layout of a building.
+
 ## Key Concepts of Map
 
 
@@ -29,11 +30,11 @@ Tree map-like support provides rich UI for shapes and bubbles. Annotation and Cu
 
 Options like zooming, panning, and map selection extend the interactivity of the map.
 
-{{ '![C:/Users/karthikeyanp/Desktop/UGPics/RangeColor.png](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.png)
 
 
-Structure of Map
+
+## Structure of Map
 
 A map is maintained through layers. The shape file layer is one of the layers that consist of vector shapes, bubbles and data visual items.
 

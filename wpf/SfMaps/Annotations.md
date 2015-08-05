@@ -18,7 +18,7 @@ AnnotationLabel is a “Text” that shows some information in the text format.
 
 AnnotationSymbol is a “VisualObject” that shows a note symbolically.
 
-AnnotationLabel’s appearance is customized by the following properties:
+## AnnotationLabel’s appearance is customized by the following properties:
 
 1. AnnotationLabelForeground: Get or sets the foreground color of the annotation label.
 2. AnnotationLabelFontStyle: Gets or sets the font style of the annotation label.
@@ -26,6 +26,9 @@ AnnotationLabel’s appearance is customized by the following properties:
 4. AnnotationLabelFontFamily: Gets or sets the font family for the annotation label.
 5. AnnotationLabelFontSize: Gets or sets the annotation label font size.
 
+
+
+{% highlight xml %}
 
 
 [XAML]
@@ -86,23 +89,25 @@ AnnotationLabel’s appearance is customized by the following properties:
 
 </syncfusion:SfMap >
 
+{% endhighlight %}
+
+![](Annotations_images/Annotations_img1.png)
 
 
-{{ '![](Annotations_images/Annotations_img1.png)' | markdownify }}
-{:.image }
 
-
-Positioning a MapAnnotation
+## Positioning a MapAnnotation
 
 MapAnnotation can be positioned anywhere on the map based on latitude and longitude. MapAnnotation has two properties called “Latitude” and “Longitude” that are string types used to set co-ordinates of the MapAnnotation in the form of latitude and longitude. 
 
-Customizing the Annotation Template
+### Customizing the Annotation Template
 
 The default appearance of the annotation can be customized by using the AnnotationTemplate property. The annotation template property is available in the ShapeFileLayer.
 
-About the AnnotationTemplate Property
+#### About the AnnotationTemplate Property
 
 AnnotationTemplateis a DataTemplate type, used to customize or override the default template of MapAnnotations.
+
+{% highlight xml %}
 
 [XAML]
 
@@ -171,10 +176,10 @@ AnnotationTemplateis a DataTemplate type, used to customize or override the defa
             </syncfusion:SfMap.Layers>
 
         </syncfusion:SfMap >
+{% endhighlight %}
 
 
+![](Annotations_images/Annotations_img2.png)
 
-{{ '![](Annotations_images/Annotations_img2.png)' | markdownify }}
-{:.image }
 
 
