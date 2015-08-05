@@ -75,7 +75,7 @@ TabControlExt control is created by using either XAML or C# code. The following 
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 

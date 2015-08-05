@@ -16,8 +16,8 @@ _FlowDirection property table_
 <table>
 <tr>
 <td>
-{{ '*Property*' | markdownify }}</td><td>
-{{ '*Description*' | markdownify }}</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 FlowDirection</td><td>
@@ -62,7 +62,7 @@ This is TaskBar that have a TaskBarItem</TextBlock>
 
 
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 

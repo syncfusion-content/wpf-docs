@@ -47,7 +47,7 @@ To place the TabStrip to the "Left" of the TabControlExt, use the below code.
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 
@@ -149,7 +149,7 @@ Here is the code snippet for rotating the text when tab strip is vertically plac
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 

@@ -16,7 +16,7 @@ Tree Navigator items can be populated with the business object collection. Let u
 Create a Model class with the necessary properties. 
 
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
   public class TreeModel : NotificationObject
@@ -80,7 +80,7 @@ Create a Model class with the necessary properties.
 Create a View Model class with the hierarchical items as follows.  
 
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 public class TreeViewModel 

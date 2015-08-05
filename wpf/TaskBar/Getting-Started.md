@@ -48,7 +48,7 @@ To create the TaskBar control through designer, do the following steps:
 
 
 
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+     ![](Getting-Started_images/Getting-Started_img2.jpeg)
 
 
 
@@ -75,7 +75,7 @@ TaskBar control is created by using either XAML or C# code. The following lines 
 </syncfusion:TaskBar>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 

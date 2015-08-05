@@ -33,7 +33,7 @@ The Task Bar Item is added to the Task Bar by using either XAML or C# coding. Us
 {% endhighlight %}
 
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 
@@ -114,7 +114,7 @@ To add text to the TaskBar Item, use the below code
 {% endhighlight %}
 
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 

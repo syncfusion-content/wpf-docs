@@ -71,7 +71,7 @@ Set the orientation using the code given below:
 {% endhighlight %}
 
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 

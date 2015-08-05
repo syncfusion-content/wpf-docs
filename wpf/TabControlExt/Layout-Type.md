@@ -48,7 +48,7 @@ Here is the code snippet to set the layout type as "MultiLine".
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 
@@ -108,7 +108,7 @@ This event is triggered when the TabItemLayout property is changed.
 The following code snippet illustrates handling the TabItemLayoutChanged event.
 
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 

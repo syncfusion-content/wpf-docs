@@ -73,7 +73,7 @@ Specify and customize the group margin.</TextBlock>
 
 
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 
@@ -180,7 +180,7 @@ While setting the orientation of the TaskBar, you may want to change the positio
 The following code snippet illustrates handling the GroupOrientationChanged event.
 
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 

@@ -43,7 +43,7 @@ To set the Tab Item Size mode to "ShrinkToFit", refer the code snippet.
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 

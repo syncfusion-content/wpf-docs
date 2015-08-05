@@ -38,7 +38,7 @@ The following code snippet illustrates how to add images to the tab item header.
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 
@@ -126,7 +126,7 @@ To set the tab item header image alignment as "AboveText", use the below code.
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 
@@ -194,7 +194,7 @@ This event is triggered when the ImageAlignment property is changed.
 The following code snippet illustrates handling the ImageAlignmentChanged event.
 
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 

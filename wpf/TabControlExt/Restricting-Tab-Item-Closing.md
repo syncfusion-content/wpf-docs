@@ -30,7 +30,7 @@ The following code illustrates the same.
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 
