@@ -17,14 +17,14 @@ In the month view, the horizontal and vertical line strokes can be customized by
 
 
 
-Property Table
+ Property Table
 
 <table>
 <tr>
-<td>
-API Name</td><td>
-Data Type</td><td>
-Description</td></tr>
+<th>
+API Name</th><th>
+Data Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 MajorTickStroke</td><td>
@@ -67,7 +67,7 @@ Brush</td><td>
 Used to customize the line stroke of month view.</td></tr>
 </table>
 
-
+{% highlight html %}
  [XAML]
 
 <syncfusion:SfSchedule x:Name="Schedule1" TimeInterval="ThirtyMin"IntervalHeight="40"
@@ -90,7 +90,8 @@ Used to customize the line stroke of month view.</td></tr>
 
                                MinorTickStrokeDashArray="5,5"></syncfusion:SfSchedule>
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -122,11 +123,11 @@ Used to customize the line stroke of month view.</td></tr>
 
             this.grid.Children.Add(schedule);
 
+{% endhighlight  %}
 
 
 
+![](Stroke-Customization_images/Stroke-Customization_img1.png)
 
-{{ '![](Stroke-Customization_images/Stroke-Customization_img1.png)' | markdownify }}
-{:.image }
 
 

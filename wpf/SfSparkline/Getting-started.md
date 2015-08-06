@@ -13,7 +13,7 @@ documentation: ug
 
 Following steps explain how to create sparkline,
 
-Adding the assembly reference:
+### Adding the assembly reference:
 
 * Open the [Add Reference](http://msdn.microsoft.com/en-us/library/wkze6zky(v=vs.80).aspx) window from your project.
 * To Choose our assemblies follow the below step depending upon the developing environment. 
@@ -22,25 +22,28 @@ Adding the assembly reference:
 * Add the following namespace in your XAML page:
 
 
-
+{% highlight html %}
 [XAML]
 
 xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
+{% endhighlight  %}
 
-Initialize the sparkline
+
+### Initialize the sparkline
 
 You need to initialize the sparkline represented by the following class Syncfusion.UI.Xaml.Charts.SfChart,
-
+{% highlight html %}
 [XAML]
 
 <Syncfusion:SfLineSparkline>
 
 </Syncfusion:SfLineSparkline>
+{% endhighlight  %}
 
-Create a Sample Data Source
+### Create a Sample Data Source
 
 Since the above step will produce only an empty sparkline, we need to add some data to the sparkline for plotting. In this step, let’s create a sample data source.
-
+{% highlight c# %}
 [C#]
 
 
@@ -93,16 +96,15 @@ public class UsersViewModel
 
  }
 
-> 
+{% endhighlight  %}
 
-> _Note: Syncfusion sparkline also supports items source as collection of double values and collection inherited from IEnumerable._
+> Note: Syncfusion sparkline also supports items source as collection of double values and collection inherited from IEnumerable.
 
-> 
 
 Binding Data to sparkline
 
 We need to add the above UsersViewModel to the DataContext of the sparkline, bind the data source to the ItemsSource property of the SfLineSparkline, and then map the data using YBindingPath and XBindingPath.
-
+{% highlight html %}
 [XAML]
 
 …
@@ -121,15 +123,14 @@ YBindingPath="NoOfUsers">
 
             </Syncfusion:SfLineSparkline >
 
-> 
+{% endhighlight  %}
 
->   _Note:if we do not map the XBindingPath means sparkline data positioned as indexed._
+>  Note:if we do not map the XBindingPath means sparkline data positioned as indexed.
 
-> 
 
 The following illustrates the result of the above code sample,
 
-{{ '![C:/Users/ApoorvahR/Desktop/1.png](Getting-started_images/Getting-started_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/1.png](Getting-started_images/Getting-started_img1.png)
+
 
 

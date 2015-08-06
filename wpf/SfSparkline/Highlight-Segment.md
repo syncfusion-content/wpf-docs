@@ -10,16 +10,17 @@ documentation: ug
 # Highlight Segment
 
 This feature enable to highlight the column segments on mouse move and this is applicable for column and winloss sparkline.
-
+{% highlight html %}
 [XAML]
 
     <Syncfusion:SfColumnSparkline HighlightSegment="True" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
 
         </Syncfusion:SfColumnSparkline>
+{% endhighlight %}  
 
 Following is the snapshot for highlight segment,
 
-{{ '![C:/Users/ApoorvahR/Desktop/9.png](Highlight-Segment_images/Highlight-Segment_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/9.png](Highlight-Segment_images/Highlight-Segment_img1.png)
+
 
 

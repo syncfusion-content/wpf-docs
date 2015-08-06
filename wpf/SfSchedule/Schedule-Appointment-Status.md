@@ -10,7 +10,7 @@ documentation: ug
 # Schedule Appointment Status
 
 Schedule Appointment status can be set by using the Status Property of the ScheduleAppointment.
-
+{% highlight c# %}
 [C#]
 
 
@@ -22,17 +22,17 @@ schedule.ScheduleType = ScheduleType.Week;
 schedule.Appointments.Add(new ScheduleAppointment() { Status= new ScheduleAppointmentStatus(){ Brush= new SolidColorBrush(Colors.Green), Status="Free"}, StartTime= new DateTime(2013,6,5,5,0,0), EndTime= new DateTime(2013,6,5,5,30,0), Subject="Meet the doc", Location="Hutchison road", AllDay=false });
 
 
+{% endhighlight  %}
+
+
+![](Schedule-Appointment-Status_images/Schedule-Appointment-Status_img1.png)
 
 
 
-{{ '![](Schedule-Appointment-Status_images/Schedule-Appointment-Status_img1.png)' | markdownify }}
-{:.image }
-
-
-AppointmentStatusCollection:
+## AppointmentStatusCollection:
 
 The AppointmentStatusCollection property used to set the status to collection of appointments.
-
+{% highlight c# %}
 [C#]
 
 
@@ -50,17 +50,17 @@ The AppointmentStatusCollection property used to set the status to collection of
            this.grid.Children.Add(schedule);
 
 
+{% endhighlight %}
+
+
+![](Schedule-Appointment-Status_images/Schedule-Appointment-Status_img2.png)
 
 
 
-{{ '![](Schedule-Appointment-Status_images/Schedule-Appointment-Status_img2.png)' | markdownify }}
-{:.image }
-
-
-AppointmentSelectionBrush
+### AppointmentSelectionBrush
 
 The selected appointment can be marked by AppointmentSelectionBrush property.
-
+{% highlight c# %}
 [C#]
 
 
@@ -83,9 +83,9 @@ The selected appointment can be marked by AppointmentSelectionBrush property.
 
             this.grid.Children.Add(schedule);
 
+{% endhighlight  %}
 
+![](Schedule-Appointment-Status_images/Schedule-Appointment-Status_img3.png)
 
-{{ '![](Schedule-Appointment-Status_images/Schedule-Appointment-Status_img3.png)' | markdownify }}
-{:.image }
 
 

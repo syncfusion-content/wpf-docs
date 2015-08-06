@@ -11,7 +11,7 @@ documentation: ug
 
 Essential GridControl supports Serialization. The whole grid can be serialized and deserialized at run-time. 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 Serialization can be implemented for the applications which need to save its data and structure after the application is closed. Serialization supports to save the structure and data of the GridControl to an XML file and it can be loaded at any time.
 
@@ -26,7 +26,7 @@ The following sample application explains the implementation of the Serializatio
 
 In the application, create three buttons. The first button to call the Serialize() method, the second button to make changes to the Grid and the third button is to call the Deserialize() method. The following code snippet explains the implementation of Serialization.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -41,7 +41,7 @@ this.grid.Model.Serialize("Data.xml");
 this.grid.Model.Deserialize("Data.xml");
 
 
-
+{% endhighlight  %}
 
 
 3. Run the application
@@ -74,7 +74,7 @@ The following properties are Serialized in the GridControl.
 * WrapCell
 * WrapCellBehavior
 
-Methods
+## Methods
 
 _Serialization Support Table_
 
@@ -131,7 +131,7 @@ void</th></tr>
 </table>
 
 
-Sample Link
+## Sample Link
 
 1. Refer to the samples in the shipped Sample Browser. 
 2. Go to Essential Studio WPF Sample Browser  Grid  Serialization GridControl Serialization Demo

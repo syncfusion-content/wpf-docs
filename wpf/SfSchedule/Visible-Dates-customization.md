@@ -12,7 +12,7 @@ documentation: ug
 All views in the schedule have their own number of visible dates. The SfSchedule control allows users to view multiple dates in the day and time line views.
 
 If users want to view particular dates in a single view, users can provide a DateTime collection to the ScheduleDateRange property to view the particular dates in the day and time line view types.
-
+{% highlight c# %}
 [C#]
 
 ObservableCollection<DateTime> selectedDates = newObservableCollection<DateTime>();
@@ -29,15 +29,15 @@ ObservableCollection<DateTime> selectedDates = newObservableCollection<DateTime
 
             schedule.ScheduleDateRange= visibleDates;
 
+{% endhighlight %}
+
+![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_32.jpg](Visible-Dates-customization_images/Visible-Dates-customization_img1.jpeg)
 
 
-{{ '![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_32.jpg](Visible-Dates-customization_images/Visible-Dates-customization_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 
+![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_33.jpg](Visible-Dates-customization_images/Visible-Dates-customization_img2.jpeg)
 
-{{ '![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_33.jpg](Visible-Dates-customization_images/Visible-Dates-customization_img2.jpeg)' | markdownify }}
-{:.image }
 
 

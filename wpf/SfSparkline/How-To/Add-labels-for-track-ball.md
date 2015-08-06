@@ -56,7 +56,7 @@ We can add labels for track ball to show the corresponding values. In order to a
 Following is the snapshot for track ball labels,
 
 {{ '![C:/Users/ApoorvahR/Desktop/13.png](Add-labels-for-track-ball_images/Add-labels-for-track-ball_img1.png)' | markdownify }}
-{:.image }
+
 
 
 

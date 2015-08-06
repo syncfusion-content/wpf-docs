@@ -9,14 +9,14 @@ documentation: ug
 
 # Custom Date Format
 
-DayHeaderFormat
+## DayHeaderFormat
 
 The default Header date format of the Day and Week view can be customized by using the HeaderDateFormat property. 
 
 The HeaderDateFormat is a String type, used to customize or override the default format of the Header date format.
 
 The Header background can be changed by HeaderBackground property.
-
+{% highlight html %}
 [XAML]
 
 
@@ -32,7 +32,8 @@ The Header background can be changed by HeaderBackground property.
     </Grid>
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 [C#]
 
 
@@ -49,26 +50,26 @@ The Header background can be changed by HeaderBackground property.
 
 
 
+{% endhighlight  %}
+
+
+
+![](Custom-Date-Format_images/Custom-Date-Format_img1.png)
 
 
 
 
-{{ '![](Custom-Date-Format_images/Custom-Date-Format_img1.png)' | markdownify }}
-{:.image }
+
+![](Custom-Date-Format_images/Custom-Date-Format_img2.png)
 
 
 
 
-{{ '![](Custom-Date-Format_images/Custom-Date-Format_img2.png)' | markdownify }}
-{:.image }
 
-
-
-
-Time tick Format
+## Time tick Format
 
 The default timespan format in Day, Week and Timeline view can be customized by using the MajorTickTimeFormat and MinorTickTimeFormat properties. 
-
+{% highlight html %}
 
 
 [XAML]
@@ -83,9 +84,9 @@ The default timespan format in Day, Week and Timeline view can be customized by 
 
   </Grid>
 
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 
 [C#]
 
@@ -109,18 +110,18 @@ The default timespan format in Day, Week and Timeline view can be customized by 
 
 
 
+{% endhighlight  %}
 
 
 
-
-{{ '![](Custom-Date-Format_images/Custom-Date-Format_img3.png)' | markdownify }}
-{:.image }
+![](Custom-Date-Format_images/Custom-Date-Format_img3.png)
 
 
-Month Date Format
+
+### Month Date Format
 
 The default date format of month view can be customized by using the MonthHeaderDateFormat property.                              
-
+{% highlight html %}
 [XAML]
 
 
@@ -135,7 +136,8 @@ The default date format of month view can be customized by using the MonthHeader
 
   </Grid>
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 
 
@@ -150,11 +152,11 @@ The default date format of month view can be customized by using the MonthHeader
             this.grid.Children.Add(schedule);
 
 
+{% endhighlight  %}
 
 
+![](Custom-Date-Format_images/Custom-Date-Format_img4.png)
 
-{{ '![](Custom-Date-Format_images/Custom-Date-Format_img4.png)' | markdownify }}
-{:.image }
 
 
 

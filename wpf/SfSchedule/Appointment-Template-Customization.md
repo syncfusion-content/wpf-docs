@@ -10,7 +10,7 @@ documentation: ug
 # Appointment Template Customization
 
 The default appearance of the Appointment can be customized by using the AppointmentTemplate property. The AppointmentTemplate is a ControlTemplate type, used to customize or override the default template of the Appointments.
-
+{% highlight c# %}
 [XAML]
 
 <Schedule:SfSchedule>
@@ -53,7 +53,8 @@ The default appearance of the Appointment can be customized by using the Appoint
 
 </Schedule:SfSchedule>  
 
-
+{% endhighlight %}
+{% highlight c# %}
 
 [C#]
 
@@ -72,13 +73,13 @@ The default appearance of the Appointment can be customized by using the Appoint
             });
 
 
+{% endhighlight  %}
 
 
 
 
+![](Appointment-Template-Customization_images/Appointment-Template-Customization_img1.png)
 
-{{ '![](Appointment-Template-Customization_images/Appointment-Template-Customization_img1.png)' | markdownify }}
-{:.image }
 
 
 

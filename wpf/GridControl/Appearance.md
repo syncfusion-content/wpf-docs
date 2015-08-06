@@ -14,6 +14,7 @@ You can customize the appearance of the grid to the cell-level using our Grid pr
 * Cell Styles-This section discusses on various cell styles available with the grid
 * Covered Ranges-This section elaborates on the adding covered ranges to the grid
 * Banner Cells-This section discusses on steps to create banner cells
+
 ## Cell Styles
 
 
@@ -30,7 +31,7 @@ Render Cell Styles
 Prior to display of a cell, the PrepareRenderCell event is raised. This event is not raised from the Model. Instead it is raised from the GridControlBase directly. This has the advantage that if you want multiple grids to display the same Model, individual grids can override the cell contents individually.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -55,7 +56,7 @@ void grid_PrepareRenderCell(object sender, GridPrepareRenderCellEventArgs e)
 
 }
 
-
+{% endhighlight %}
 
 PrepareRenderCell is used to initialize the so called RenderStyles. RenderStyles are of type GridRenderStyleInfo and derive from GridStyleInfo. GridRenderStyleInfo are tied to a GridControlBase instance. The render style provides additional properties to obtain access to the associated GridControl , CellRenderer and the underlying ModelStyle instance from the volatile cells cache described earlier.
 
@@ -87,8 +88,8 @@ The following graphic illustrates the effect of using the GridStyleInfo inherita
 
 
 
-{{ '![](Appearance_images/Appearance_img1.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img1.jpeg)
+
 
 
 ### Style Properties
@@ -102,14 +103,14 @@ Volatile style-cache-Is maintained for styles populated through calls made to th
 Render style-cache-Is maintained for styles needed to draw the grid and are disposed of as soon as the cell scrolls out of view.
 The combination of these two caches makes Essential Grid for WPF highly efficient. This section elaborates on important style properties.
 
-Base Styles
+#### Base Styles
 
 Base Styles, otherwise named as Parent Styles, define the style information for individual cell groups such that all the cells belonging to a group will share the same Base style. On changing the common base style, the dependent cells styles also get updated automatically.
 
 Following code snippet illustrates the effect of various Base styles.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -166,29 +167,26 @@ for (int i = 1; i <= grid.Model.RowCount; i++)
 
 }
 
-
+{% endhighlight  %}
 
 Output
 
 The code above displays the following output:
 
-{{ '![](Appearance_images/Appearance_img2.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img2.jpeg)
 
 
-Background
+
+#### Background
 
 The Background property specifies a background brush for the grid cell. The cell’s background can be painted with either a solid brush or a gradient brush.
 
-> _Note:_ 
+> Note: * Gradient-A gradient brush uses two colors. These colors merge to create a transition or fading effect. * Solid-A solid brush is equipped with only one color.
 
-* _Gradient-A gradient brush uses two colors. These colors merge to create a transition or fading effect._
-* _Solid-A solid brush is equipped with only one color._
-
-Setting Background Brush Type
+#### Setting Background Brush Type
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -217,19 +215,19 @@ this.grid.Model[3, 5].Background = new LinearGradientBrush(Colors.Olive, Colors.
 
 this.grid.Model[3, 6].Background = new LinearGradientBrush(Colors.Gold, Colors.Yellow, 90.0);
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Appearance_images/Appearance_img3.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img3.jpeg)
 
 
-Visual properties
+
+#### Visual properties
 
 The visual aspects of the cell text can be controlled by the following properties.
 
@@ -237,9 +235,9 @@ _Visual properties_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Text</td><td>
@@ -262,7 +260,7 @@ Determines the angle of rotation of the text</td></tr>
 1. Setting Text, Foreground and Font Properties
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -327,23 +325,23 @@ this.grid.Model[8, 5].HorizontalAlignment = HorizontalAlignment.Center;
 
 this.grid.Model[8, 5].CellValue = "Font style is Normal";
 
+{% endhighlight %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Appearance_images/Appearance_img4.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img4.jpeg)
+
 
 
 
 
 2. Setting Cell Orientation
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -391,26 +389,26 @@ this.grid.Model[12, 5].VerticalAlignment = VerticalAlignment.Center;
 
 this.grid.Model.RowHeights[12] = 50;
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Appearance_images/Appearance_img5.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img5.jpeg)
 
 
-Borders
+
+#### Borders
 
 Cell borders can be customized to have different color, thickness and style. It is possible to have different border styles for top, bottom, left and right borders for the same cell.
 
-Setting Borders
+#### Setting Borders
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -496,15 +494,15 @@ this.grid.Model[15, 6].Borders.Top.DashStyle = DashStyles.DashDotDot;
 this.grid.Model[15, 6].Borders.Right.DashStyle = DashStyles.DashDotDot;
 
 
-
-Output
+{% endhighlight  %}
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Appearance_images/Appearance_img6.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img6.jpeg)
+
 
 
 ### Data Formats
@@ -515,9 +513,9 @@ _Data formats_
 
 <table>
 <tr>
-<td>
-Text Formats</td><td>
-Example with Cell Value = Math.PI</td></tr>
+<th>
+Text Formats</th><th>
+Example with Cell Value = Math.PI</th></tr>
 <tr>
 <td>
 0.00</td><td>
@@ -549,9 +547,9 @@ _Format_
 
 <table>
 <tr>
-<td>
-DateTime</td><td>
-Example with Cell Value = DateTime.Now</td></tr>
+<th>
+DateTime</th><th>
+Example with Cell Value = DateTime.Now</th></tr>
 <tr>
 <td>
 d</td><td>
@@ -582,7 +580,7 @@ s</td><td>
 1. Setting text format
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -629,11 +627,11 @@ foreach (string format in new string[]
 
 }
 
-
+{% endhighlight  %}
 
 2. Setting DateTime format
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -683,26 +681,26 @@ foreach (string format in new string[]
 
 }
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
-{{ '![](Appearance_images/Appearance_img7.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img7.jpeg)
 
 
-FormatProvider
+
+#### FormatProvider
 
 The FormatProvider in GridStyleInfo is used to format the display text in the cells. The FormatProvider property supplies an object that provides formatting information for formatting operations. The formatting operations convert the value of a type to its string representation. The FormatProvider property allows the user to control the formatting of a particular cell.
 
-Format using FormatProvider Property
+#### Format using FormatProvider Property
 
 In the Grid control, you can set the FormatProvider property as shown in the following code snippet.
 
 
-
+{% highlight c# %}
 [C#]
 
 this.grid.Model[row, col].CellValue = Math.PI;
@@ -717,7 +715,8 @@ this.grid.Model[row, col].Format = "{0:US}";
 
 this.grid.Model[row, col].FormatProvider = new CustomNumberFormat();
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -737,11 +736,11 @@ Me.grid.Model(row, col).Format = "{0:US}"
 
 Me.grid.Model(row, col).FormatProvider = new CustomNumberFormat()
 
-
+{% endhighlight  %}
 
 The following example illustrates the use of a class that implements the IFormatProvider interface. 
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -854,24 +853,24 @@ public class CustomNumberFormat : IFormatProvider, ICustomFormatter
         }
 
     }
-
+{% endhighlight %}
 
 
 The CustomNumberFormat class converts the double value to string based on the culture specified in the format property.
 
 The output is shown in the following screenshot:
 
-{{ '![](Appearance_images/Appearance_img8.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img8.png)
+
 
 
 ## Covered Ranges
 
 Covered Cells are cells that span over neighboring cells. The combined cells will act as if they are one single cell visually and programmatically. There are different possible options to form a covered range. You can combine the cells in adjacent rows or columns or both.
 
-Creating Covered Range
+### Creating Covered Range
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -927,16 +926,16 @@ cell.Background = Brushes.BlanchedAlmond;
 
 cell.HorizontalAlignment = HorizontalAlignment.Center;
 
+{% endhighlight  %}
 
-
-Output
+### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Appearance_images/Appearance_img9.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img9.jpeg)
+
 
 
 See Also
@@ -947,16 +946,16 @@ QueryCoveredRange event
 
 You can create custom range of cells inside a Grid, which is termed as banner cells. Let us see how to create Banner Cells
 
-Cell Spanned Backgrounds
+### Cell Spanned Backgrounds
 
 Essential Grid lets you span the given background across multiple cells either row-wise, column-wise or both. The information about all the cell spans for a given grid is maintained by the GridModel.CellSpanBackgrounds. Each entry represents an object of CellSpanBackgroundInfo class that defines a cell span. This class exposes properties such as background, border, and more to customize the cell span.
 
 You can also trigger QueryCellSpanBackgrounds event to create and customize cell spans.
 
-Creating Cell Spans
+### Creating Cell Spans
 
 This example creates three cell spans with gradient backgrounds and a fourth cell span with an image background created through the QueryCellSpanBackgrounds event.
-
+{% highlight c# %}
 [C#]
 
 
@@ -1013,14 +1012,14 @@ void grid_QueryCellSpanBackgrounds(object sender, GridQueryCellSpanBackgroundsEv
 
 }
 
+{% endhighlight %}
 
-
-Output
+### Output
 
 The following output is generated using the code above.
 
-{{ '![](Appearance_images/Appearance_img10.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img10.jpeg)
+
 
 
 See Also
@@ -1035,7 +1034,7 @@ To assign the FloatingCell behavior to one particular cell or a certain range of
 
 The FloatingCell behavior can be assigned to one particular cell or a certain range of cells as follows:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1064,27 +1063,27 @@ grid.Model.Options.FloatCellMode = GridFloatCellsMode.OnDemandCalculation;
 grid.Model.Options.FloodCell = false;
 
 
+{% endhighlight  %}
 
 
+![](Appearance_images/Appearance_img11.png)
 
-{{ '![](Appearance_images/Appearance_img11.png)' | markdownify }}
-{:.image }
 
 
 Properties, Methods and Events tables
 
-Properties
+### Properties
 
 _Properties_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 EnableFloatCellFloatCellModeFloodCell</td><td>
@@ -1093,38 +1092,41 @@ Static PropertyStatic PropertyStatic Property</td><td>
 BooleanGridFloatCellsMode (enum type)Boolean</td><td>
 </td></tr>
 </table>
+
 ### Features of Overlapping Cells
 
-#### Overlapping Cells
+### Overlapping Cells
 
 To overlap the cell when it is not in edit mode and calculate according to the flooding and length of the text.
 
-
+{% highlight c# %}
 
 [C#]
 
 
 
 this.grid.Model.Options.FloatCellMode = GridFloatCellsMode.OnDemandCalculation; 
+{% endhighlight  %}
 
-#### Flooding
+### Flooding
 
 To prevent the overlapping of previous cells.
 
 
-
+{% highlight c# %}
 [C#]
 
 this.grid.Model.Options.FloodCell = false;
 
 
+{% endhighlight %}
 
-#### Floating
+### Floating
 
 To enable floating cell behavior by calculating while editing the text.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1132,4 +1134,4 @@ To enable floating cell behavior by calculating while editing the text.
 this.grid.Model.Options.EnableFloatingCell = true; 
 
 
-
+{% endhighlight  %}

@@ -23,72 +23,72 @@ Operations that are done by context menu can be performed using Schedule command
 ## AddNewCommand
 
 Using AddNewCommand of ScheduleCommands, a new appointment can be added in SfSchedule.
-
+{% highlight c# %}
 [C#]
 
 ScheduleCommands.AddNewCommand.Execute(this.Schedule);
 
 
-
+{% endhighlight  %}
 
 
 ## EditCommand
 
 Using EditCommand of ScheduleCommands, an existing appointment of SfSchedule can be modified.
-
+{% highlight c# %}
 [C#]
 
 ScheduleCommands.EditCommand.Execute(this.Schedule);
 
 
 
-
+{% endhighlight  %}
 
 ## DeleteCommand
 
 DeleteCommand can be used to delete an appointment in SfSchedule.
-
+{% highlight c# %}
 [C#]
 
 ScheduleCommands.DeleteCommand.Execute(this.Schedule);
 
 
-
+{% endhighlight  %}
 
 
 ## CopyCommand
 
 Using CopyCommand of ScheduleCommands, a schedule appointment can be copied.
-
+{% highlight c# %}
 [C#]
 
 ScheduleCommands.CopyCommand.Execute(this.Schedule);
 
 
-
+{% endhighlight  %}
 
 
 ## PasteCommand
 
 Using PasteCommand of ScheduleCommands, a copied schedule appointment can be pasted in SfSchedule.
-
+{% highlight c# %}
 [C#]
 
 ScheduleCommands.PasteCommand.Execute(this.Schedule);
 
 
 
-
+{% endhighlight %}
 
 ## DragAndDropCommand
 
 Using DragAndDropCommand of ScheduleCommands, an appointment can be dragged and dropped from one timeslot to another timeslot. Resizing operation can also be performed using this command.
-
+{% highlight c# %}
 [C#]
 
 ScheduleCommands.PasteCommand.Execute(this.Schedule);
 
 
-
+{% endhighlight  %}
 
 

@@ -10,7 +10,7 @@ documentation: ug
 # ContextMenuType 
 
 The collection of MenuItem elements can be organized by ContextMenuType property.
-
+{% highlight html %}
 [XAML]
 
 
@@ -19,10 +19,10 @@ The collection of MenuItem elements can be organized by ContextMenuType property
 
         </Schedule:SfSchedule>
 
+{% endhighlight  %}
 
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -37,14 +37,14 @@ The collection of MenuItem elements can be organized by ContextMenuType property
 
 
 
+{% endhighlight  %}
+
+![](ContextMenuType_images/ContextMenuType_img1.png)
 
 
-{{ '![](ContextMenuType_images/ContextMenuType_img1.png)' | markdownify }}
-{:.image }
 
+![](ContextMenuType_images/ContextMenuType_img2.png)
 
-{{ '![](ContextMenuType_images/ContextMenuType_img2.png)' | markdownify }}
-{:.image }
 
 
 

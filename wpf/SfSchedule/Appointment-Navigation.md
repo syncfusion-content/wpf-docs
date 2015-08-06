@@ -10,7 +10,7 @@ documentation: ug
 # Appointment Navigation
 
 When there is no appointment in the current view, we can navigate to view the previous appointment or next appointment from the current view. This can be enabled or disabled using the property ShowNavigationTap. The default value of ShowNavigationTap property is False.  
-
+{% highlight html %}
 [XAML]
 
 
@@ -20,7 +20,8 @@ When there is no appointment in the current view, we can navigate to view the pr
                           ShowAppointmentNavigationButtons ="True"  /> 
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 
 [C#]
@@ -36,17 +37,17 @@ When there is no appointment in the current view, we can navigate to view the pr
             this.grid.Children.Add(schedule);
 
 
+{% endhighlight  %}
+
+
+![](Appointment-Navigation_images/Appointment-Navigation_img1.png)
 
 
 
-{{ '![](Appointment-Navigation_images/Appointment-Navigation_img1.png)' | markdownify }}
-{:.image }
-
-
-PreviousNavigationButtonTemplate 
+## PreviousNavigationButtonTemplate 
 
 Previous appointment navigation button can be customized by PreviousNavigationButtonTemplate property.
-
+{% highlight c# %}
 [XAML]
 
 
@@ -63,16 +64,16 @@ Previous appointment navigation button can be customized by PreviousNavigationBu
 
         </Schedule:SfSchedule>
 
+{% endhighlight  %}
+
+![](Appointment-Navigation_images/Appointment-Navigation_img2.png)
 
 
-{{ '![](Appointment-Navigation_images/Appointment-Navigation_img2.png)' | markdownify }}
-{:.image }
 
-
-NextNavigationButtonTemplate
+## NextNavigationButtonTemplate
 
 By using the NextNavigationButtonTemplate property the next appointment navigation button can be customized to view the next appointment.
-
+{% highlight html %}
 [XAML]
 
 
@@ -87,12 +88,12 @@ By using the NextNavigationButtonTemplate property the next appointment navigati
 
         </Schedule:SfSchedule>
 
+{% endhighlight  %}
 
 
 
+![](Appointment-Navigation_images/Appointment-Navigation_img3.png)
 
-{{ '![](Appointment-Navigation_images/Appointment-Navigation_img3.png)' | markdownify }}
-{:.image }
 
 
 

@@ -13,8 +13,8 @@ The schedule control allows users to export or import appointments and events as
 
 Similarly, files exported from other schedulers can also be imported into Essential Schedule. The code given below demonstrates how to import and export .ics files.
 
-Exporting in the schedule control 
-
+## Exporting in the schedule control 
+{% highlight c# %}
 [C#]
 
 
@@ -22,7 +22,7 @@ Exporting in the schedule control
 Schedule.ExportICS();
 
 
-
+{% endhighlight  %}
 
 
 When the export function is called, a dialog box opens for selecting the location where the file has to be exported.
@@ -31,14 +31,14 @@ The exported .ics file will be saved in specified location. These exported files
 
 
 
-{{ '![](Import-and-Export_images/Import-and-Export_img1.png)' | markdownify }}
-{:.image }
-
-
-Importing in the schedule control 
+![](Import-and-Export_images/Import-and-Export_img1.png)
 
 
 
+## Importing in the schedule control 
+
+
+{% highlight c# %}
 [C#]
 
 
@@ -47,13 +47,13 @@ Schedule.ImportICS();
 
 
 
-
+{% endhighlight  %}
 
 If the imported calendar has already been given a name, it can be imported into the schedule control by using the method ImportICS, which will open a dialog for browsing to the location, as seen below.
 
 
 
-{{ '![](Import-and-Export_images/Import-and-Export_img2.png)' | markdownify }}
-{:.image }
+![](Import-and-Export_images/Import-and-Export_img2.png)
+
 
 

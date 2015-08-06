@@ -14,19 +14,19 @@ In order to add recurrence appointments, the “Recurrence Enabled” option nee
 
 
 {{ '![](Adding-Recurrence-Appointment_images/Adding-Recurrence-Appointment_img1.png)' | markdownify }}
-{:.image }
+
 
 
 The required recurrence pattern can be then chosen from the available options and then the “Save” button is clicked. Now the main appointment pop-up will appear as shown below with the chosen options,
 
 {{ '![](Adding-Recurrence-Appointment_images/Adding-Recurrence-Appointment_img2.png)' | markdownify }}
-{:.image }
+
 
 
 Click “Done” now and then the recurrence appointment with daily pattern is created for every two days, which will end after 10 occurrences.
 
 {{ '![](Adding-Recurrence-Appointment_images/Adding-Recurrence-Appointment_img3.png)' | markdownify }}
-{:.image }
+
 
 
 The Recurrence option that are chosen in the above cases, are usually stored in a RecurrenceRule field in a string format. Also, the Recurrence field indicates whether the appointments created are of normal or recurrence type. 

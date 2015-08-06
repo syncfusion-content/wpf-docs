@@ -25,7 +25,7 @@ The EssentialGrid package is comprised of following three types of grid controls
 
 Now, take closer look at the characteristics of each of these controls. 
 
-Grid Control
+### Grid Control
 
 This is a general-purpose grid that can be used in any form, either holding its own data or virtually bound to an external data source. It acts as a base grid for the other two types of grids (the GridData and GridTree controls). Most features are shared among the three grid types. 
 
@@ -33,11 +33,11 @@ In the Grid control, each cell acts as a single entity, which is suitable for ap
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
-GridData Control
+
+### GridData Control
 
 The GridData control is designed to be bound with a data source. In the GridData control, each column behaves as a single entity. This grid is more column-centric and can be used to display interrelated tabular data. Unlike the base grid, this grid does not store data values in its data structures; instead, it is connected to an external data source.
 
@@ -45,38 +45,38 @@ For more detailed information about data source connections, refer to the Data B
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
-GridTree Control
+
+### GridTree Control
 
 The GridTree control serves as a multicolumn tree control that is optimized to display thousands of items. This control uses a load-on-demand architecture to quickly generate a tree view. You can toggle the view of the underlying nodes by clicking the plus-minus glyphs of a root node. This control provides complete customization options such as custom level styles, glyphs, node images, and more.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 ## Class Diagram 
 
 The following illustration depicts the Class Diagram for Essential Grid for WPF.
 
-Control Hierarchy
+### Control Hierarchy
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
-
-
-Model Hierarchy
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+### Model Hierarchy
+
+
+
+![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 ## Adding Essential Grid to an Application
@@ -97,24 +97,24 @@ Please follow the steps below to add the Grid control through a designer.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
+
 
 
 4. Drag GridControl from the Toolbox and drop it inside the ScrollViewer.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 5. Once you drag GridControl and drop it in ScrollViewer, the grid control will be added to the designer and its dependent assemblies will be added to the project.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
+
  _Designer after Dropping GridControl_
 
 Programmatically Adding the Grid Control
@@ -130,14 +130,14 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
+
 
 
 3. Name the root Grid as layoutRoot in the application’s XAML page.
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -145,13 +145,13 @@ Instead of adding it through a designer such a Visual Studio, you can add the Gr
  <Grid Name="layoutRoot"/>        
 
 
-
+{% endhighlight %}
 
 
 4. Create ScrollViewer and GridControl in code. 
 5. To add the grid to the view, add GridControl as content of ScrollViewer and then add the ScrollViewer as a child of layoutRoot (Grid).
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -174,16 +174,16 @@ ScrollViewer.Content = gridControl;     
 this.layoutRoot.Children.Add(ScrollViewer);           
 
 
+{% endhighlight  %}
 
 
-
-Populating the Grid control
+#### Populating the Grid control
 
 The Grid control is a cell-based control, so to populate it, RowCount and ColumnCount are mandatory. Once ColumnCount and RowCount are specified, data can be populated by using one of the following methods. 
 
 1. You can populate data by looping through the cells in the Grid control. The following code explains this scenario.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -214,13 +214,13 @@ for (int i = 0; i < 100; i++)
 }
 
 
-
+{% endhighlight  %}
 
 
 2. You can populate data by handling the QueryCellInfo event of gridControl. This will load the data in and on-demand basis, ensuring optimized performance.
 
 
-
+{% highlight c# %}
 [C#]
 
 //Specifying row and column count
@@ -244,14 +244,14 @@ this.gridControl.QueryCellInfo += new Syncfusion.Windows.Controls.Grid.GridQu
         }   
 
 
-
+{% endhighlight  %}
 
 
 3. Now, run the application. The grid will appear as follows. 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img10.png)
+
 
 
