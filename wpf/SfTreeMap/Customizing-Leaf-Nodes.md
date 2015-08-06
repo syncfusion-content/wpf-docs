@@ -64,7 +64,7 @@ You can customize leaf nodes by assigning data template to LeafTemplate of SfTre
 </Grid>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

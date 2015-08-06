@@ -50,7 +50,7 @@ The ItemsSource set for SfTreeMap must be a flat collection of data. The followi
 {% endhighlight %}
 
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 
@@ -332,7 +332,7 @@ The ItemsSource set for TreeMap must be a nested data collection. The following 
 
 
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 
