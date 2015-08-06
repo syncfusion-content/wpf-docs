@@ -58,7 +58,7 @@ To create the Document Container control through designer, drag a Document Conta
 
 ###Programmatically
 
-To create the Document Container programmatically, use the following XAML or {% highlight C# %} code.
+To create the Document Container programmatically, use the following XAML or C# code.
 
 
 

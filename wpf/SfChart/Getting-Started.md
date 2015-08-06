@@ -258,7 +258,7 @@ Legends act as indicators for the chart. They carry some metadata about plotting
 
             </syncfusion:SfChart.Legend>
 
-
+{% endhighlight %}
 
 Now you have created a Chart demonstrating the studies related to Gold demands in World market. The following code examples are for both XAML and CodeBehind.
 
@@ -398,7 +398,7 @@ Some developers prefer code behind as the first approach for development, to cre
 
 1. Open the Add Reference window from your project.
 2. Choose Windows > Extensions >Syncfusion.SfChart.WPF.
-3. Add the following namespace in your {% highlight C# %} file, MainPage.xaml.cs.
+3. Add the following namespace in your C# file, MainPage.xaml.cs.
 
 
 

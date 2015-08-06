@@ -9,7 +9,7 @@ documentation: ug
 
 # Adding GroupBar Item to GroupBar
 
-GroupBar Item is added to the GroupBar using XAML or {% highlight C# %} code. The following code illustrates this. 
+GroupBar Item is added to the GroupBar using XAML or C# code. The following code illustrates this. 
 
 
 

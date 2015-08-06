@@ -78,6 +78,7 @@ HierarchyNavigatorItem</td><td>
 Indicates the item that is currently selected.</td><td>
 </td></tr>
 </table>
+
 ## Methods
 
 Methods table
@@ -133,6 +134,7 @@ bool</td><td>
 object</td><td>
 More Details</td></tr>
 </table>
+
 ## Events
 
 Events table
@@ -254,7 +256,7 @@ The steps to create a HierarchyNavigator control in a WPF application by using E
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img10.png)
+![](Getting-Started_images/Getting-Started_img10.png)
 
 
 

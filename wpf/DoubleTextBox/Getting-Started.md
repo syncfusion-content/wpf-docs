@@ -397,9 +397,9 @@ SelectionChanged</td></tr>
 
 DoubleTextBox can be added to the application by using Visual Studio and Microsoft Expression Blend.
 
-### Creating a DoubleTextBox by using {% highlight C# %}
+### Creating a DoubleTextBox by using C#
 
-The steps to create a DoubleTextBox by using VisualStudio in {% highlight C# %} are as follows:
+The steps to create a DoubleTextBox by using VisualStudio in C# are as follows:
 
 1. Open Visual Studio.
 2. On the File menu, select New -> Project. This opens the New Project Dialog box.

@@ -35,7 +35,7 @@ The following code explains how to add a DropDownButtonAdv control using XAML:
 
 {% endhighlight %}
 
-The DropDownButtonAdv control can be created using {% highlight C# %} as follows:
+The DropDownButtonAdv control can be created using C# as follows:
 
 
 

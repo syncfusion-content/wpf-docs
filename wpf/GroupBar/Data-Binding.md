@@ -163,7 +163,7 @@ An XML file can also be used as the ItemsSource for the GroupBar control. The fo
 
 
 
-{% highlight xml %
+{% highlight xml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
 
@@ -171,7 +171,7 @@ An XML file can also be used as the ItemsSource for the GroupBar control. The fo
 
 
 
-  <Book Name="Programming {% highlight C# %} 4.0" Description="Learn {% highlight C# %} fundamentals, such as variables, flow control, loops, and methods" ImagePath="programming-c-sharp-four.png"/>
+  <Book Name="Programming C# 4.0" Description="Learn C#  fundamentals, such as variables, flow control, loops, and methods" ImagePath="programming-c-sharp-four.png"/>
 
   <Book Name="Programming WPF" Description="A tutorial on XAML, the new HTML-like markup language for declaring Windows UI" ImagePath="programming-wpf.png"/>
 

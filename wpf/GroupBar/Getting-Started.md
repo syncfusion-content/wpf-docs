@@ -125,7 +125,7 @@ You can also customize the appearance of the GroupBar control and its items by u
 
 ### Creatig the Control Programmatically
 
-To create the GroupBar control through code, use the following XAML or {% highlight C# %} code.
+To create the GroupBar control through code, use the following XAML or C# code.
 
 
 
