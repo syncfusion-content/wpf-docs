@@ -74,6 +74,8 @@ To customize a Report Viewer, you have to modify the following control parts.
 
 The following code example illustrates a Report Viewer control template.
 
+{%highlight xml%}
+
 [XAML]
 
 
@@ -939,4 +941,4 @@ The following code example illustrates a Report Viewer control template.
 </Style>
 
 
-
+{%endhighlight%}

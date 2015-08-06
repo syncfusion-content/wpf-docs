@@ -13,76 +13,63 @@ You can create a simple sample through code with the Syncfusion WPF ReportViewer
 
 1. Create a new WPF application in VS2008/VS2010.
 2. To add related references to the created application, right-click on References and select Add Reference.
+   
+   ![](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img1.png)
 
 
 
-{{ '![Description: 5.png](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img1.png)' | markdownify }}
-{:.image }
-
-
-> _Note: The added references appeared under References folder._
+   _Note: The added references appeared under References folder._
 
 
 
-> 
+ 
 
-{{ '![Description: 6.png](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img2.png)' | markdownify }}
-{:.image }
+    ![](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img2.png)
+
 
 
 3. Set Grid name in auto generated XAML of MainWindow.
 
+   ~~~xml
 
+   <Window x:Class="WpfApplication13.MainWindow"
 
-<Window x:Class="WpfApplication13.MainWindow"
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+   Title=" Mail Merge" Height="350" Width="525">
 
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+   <Grid Name="grid1">
 
-        Title=" Mail Merge" Height="350" Width="525">
+   </Grid>
 
-    <Grid Name="grid1">
+   </Window>
 
-    </Grid>
-
-</Window>
-
-
+   ~~~
+   {:.prettyprint}
 
 4. Add Report Viewer in MainWindowgrid.
 
-
-
+   ~~~js
    // ReportViewer control initialization
-
-Syncfusion.Windows.Reports.Viewer.ReportViewer reportViewer1 = new Syncfusion.Windows.Reports.Viewer.ReportViewer();
-
-
-
-// Sets ReportPath to view the Report in ReportViewer.
-
-reportViewer1.ReportPath=@"D:\MailMerge.rdl";
-
-
-
-// Adds ReportViewer in MainWindow grid
-
-this.grid1.Children.Add(reportViewer1);
-
-
-
-this.Loaded += (sender, arg) =>
-
-{
-
-//Renders the Report in ReportViewer.
-
-reportViewer1.RefreshReport();
-
-};
-
-
+   
+   Syncfusion.Windows.Reports.Viewer.ReportViewer reportViewer1 = new Syncfusion.Windows.Reports.Viewer.ReportViewer();
+   // Sets ReportPath to view the Report in ReportViewer.
+   
+   reportViewer1.ReportPath=@"D:\MailMerge.rdl";
+   // Adds ReportViewer in MainWindow grid
+   
+   this.grid1.Children.Add(reportViewer1);
+   
+   this.Loaded += (sender, arg) =>
+   {
+   
+   //Renders the Report in ReportViewer.
+   
+   reportViewer1.RefreshReport();
+   
+   };
+   ~~~
+   {:.prettyprint}
 
 
 
@@ -90,7 +77,7 @@ reportViewer1.RefreshReport();
 
 
 
-{{ '![Description: D:/TrunkReportingStructure/WPF/ReportViewer.WPF/samples/Product Showcase/Mail Merge/Images/mailmerge.png](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img3.png)' | markdownify }}
-{:.image }
+![](Show-RDL-Report-in-Report-Viewer-through-Code_images/Show-RDL-Report-in-Report-Viewer-through-Code_img3.png)
+
 
 
