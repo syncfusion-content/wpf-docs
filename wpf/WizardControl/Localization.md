@@ -18,30 +18,40 @@ Property</td><td>
 Description</td></tr>
 <tr>
 <td>
-HelpTextCancelTextBackTextNextTextFinishText</td><td>
+HelpText<br>CancelText<br>BackText<br>NextText<br>FinishText</td><td>
 Sets the string content for the Wizard control.</td></tr>
 <tr>
 <td colspan = "2">
-![](Localization_images/Localization_img1.png)
-{:.image }
-![](Localization_images/Localization_img2.png)
-{:.image }
-![](Localization_images/Localization_img3.png)
-{:.image }
-![](Localization_images/Localization_img4.png)
-{:.image }
-![](Localization_images/Localization_img5.png)
-{:.image }
-![](Localization_images/Localization_img6.png)
-{:.image }
-{{ '__' | markdownify }}![](Localization_images/Localization_img7.png)
-{:.image }
-![](Localization_images/Localization_img8.png)
-{:.image }
-![](Localization_images/Localization_img9.png)
-{:.image }
-{{ '__' | markdownify }}![](Localization_images/Localization_img10.png)
-{:.image }
+{{ '![](Localization_images/Localization_img1.png)' | markdownify }}
+
+
+{{ '![](Localization_images/Localization_img2.png)' | markdownify }}
+
+
+{{ '![](Localization_images/Localization_img3.png)' | markdownify }}
+
+
+{{ '![](Localization_images/Localization_img4.png)' | markdownify }}
+
+
+{{ '![](Localization_images/Localization_img5.png)' | markdownify }}
+
+
+{{ '![](Localization_images/Localization_img6.png)' | markdownify }}
+
+
+{{ '__' | markdownify }}{{ '![](Localization_images/Localization_img7.png)' | markdownify }}
+
+
+{{ '![](Localization_images/Localization_img8.png)' | markdownify }}
+
+
+{{ '![](Localization_images/Localization_img9.png)' | markdownify }}
+
+
+{{ '__' | markdownify }}{{ '![](Localization_images/Localization_img10.png)' | markdownify }}
+
+
 </td></tr>
 </table>
 

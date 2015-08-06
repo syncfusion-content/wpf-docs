@@ -13,15 +13,35 @@ Table support for the RichTextBoxAdv control has been implemented as in MS Word.
 
 
 
-<table>
-<tr>
-<td colspan = "2">
-[XAML]               <syncfusion:TableAdv><br>                          <syncfusion:TableRowAdv><br>                              <syncfusion:TableCellAdv><br>                                  <syncfusion:ParagraphAdv><br>                                      <syncfusion:SpanAdv Text="Table support"/><br>                                  </syncfusion:ParagraphAdv><br>                              </syncfusion:TableCellAdv><br>                          </syncfusion:TableRowAdv><br>                      </syncfusion:TableAdv></td></tr>
-<tr>
-<td>
-[C#]TableAdv table = new TableAdv();          TableRowAdv row = new TableRowAdv();          TableCellAdv cell = new TableCellAdv();          ParagraphAdv paragraph = new ParagraphAdv();          SpanAdv span = new SpanAdv();          span.Text = "Table support";          paragraph.Inlines.Add(span);          cell.Blocks.Add(paragraph);          row.Cells.Add(cell);          table.Rows.Add(row);</td></tr>
-</table>
+{% highlight xml %}
 
+[XAML]               
+<syncfusion:TableAdv>                          
+<syncfusion:TableRowAdv>                             
+<syncfusion:TableCellAdv>                                 
+ <syncfusion:ParagraphAdv>                                      
+<syncfusion:SpanAdv Text="Table support"/>                                 
+</syncfusion:ParagraphAdv>                              
+</syncfusion:TableCellAdv>                        
+ </syncfusion:TableRowAdv>                      
+</syncfusion:TableAdv>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]
+TableAdv table = new TableAdv();          
+TableRowAdv row = new TableRowAdv();          
+TableCellAdv cell = new TableCellAdv();         
+ParagraphAdv paragraph = new ParagraphAdv();         
+ SpanAdv span = new SpanAdv();          
+ span.Text = "Table support";          
+ paragraph.Inlines.Add(span);          
+ cell.Blocks.Add(paragraph);          
+ row.Cells.Add(cell);          
+ table.Rows.Add(row);
+
+{% endhighlight %}
 
 ## Editing Support
 

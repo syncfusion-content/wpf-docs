@@ -15,8 +15,7 @@ The Syncfusion.RichTextRibbon.WPF DLL is required to add this RichTextRibbon in 
 
 
 
-{{ '![](RichTextRibbon-Support_images/RichTextRibbon-Support_img1.png)' | markdownify }}
-{:.image }
+![](RichTextRibbon-Support_images/RichTextRibbon-Support_img1.png)
 
 
 

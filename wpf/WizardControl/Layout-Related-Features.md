@@ -19,6 +19,9 @@ Use the following code snippet for setting the minimum height for the page heade
 
 
 
+{% highlight xml %}
+
+
 [XAML]
 
 
@@ -29,9 +32,10 @@ Use the following code snippet for setting the minimum height for the page heade
 
 </syncfusion:WizardControl>
 
+{% endhighlight %}
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -48,11 +52,11 @@ wizardControl.Items.Add(wizardPage);
 wizardControl.InteriorPageHeaderMinHeight = 150; 
 
 
+{% endhighlight %}
 
 
+![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)
 
-{{ '![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -66,6 +70,7 @@ Wizard Page Type
 Set the background color of the banner for the Wizard control by using the BannerBackground property. The following code snippet is used to set this property.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -76,10 +81,11 @@ Set the background color of the banner for the Wizard control by using the Banne
     <syncfusion:WizardPage Name="wizardPage" BannerBackground="Navy"/>
 
 </syncfusion:WizardControl>
+{% endhighlight %}
 
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -95,10 +101,9 @@ wizardControl.Items.Add(wizardPage);
 
 wizardPage.BannerBackground = Brushes.Navy;
 
+{% endhighlight %}
 
-
-{{ '![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)' | markdownify }}
-{:.image }
+![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
 
 
 
@@ -118,6 +123,7 @@ Set an image for the banner of the Wizard control using the BannerImage property
 The following code snippet can be used to set the banner image.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -128,8 +134,9 @@ The following code snippet can be used to set the banner image.
     <syncfusion:WizardPage Name="wizardPage" BannerImage="/Image/sync.bmp"/>
 
 </syncfusion:WizardControl>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -144,11 +151,10 @@ WizardPage wizardPage = new WizardPage();
 wizardControl.Items.Add(wizardPage);
 
 wizardPage.BannerImage = new BitmapImage(new Uri("/Image/sync.bmp", UriKind.RelativeOrAbsolute));  
+{% endhighlight %}
 
 
-
-{{ '![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)' | markdownify }}
-{:.image }
+![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)
 
 
 
@@ -163,7 +169,7 @@ You can set the minimum width of the banner image on the 'Exterior' wizard page 
 
 The following code snippet illustrates setting the minimum width for the banner image.
 
-
+{% highlight xml %}
 
 [XAML]
 
@@ -175,9 +181,10 @@ The following code snippet illustrates setting the minimum width for the banner 
 
 </syncfusion:WizardControl>
 
+{% endhighlight %}
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -197,10 +204,10 @@ wizardPage.PageType = WizardPageType.Exterior;
 
 wizardControl.ExteriorPageBannerImageMinWidth = 10;
 
+{% endhighlight %}
 
+![](Layout-Related-Features_images/Layout-Related-Features_img4.jpeg)
 
-{{ '![](Layout-Related-Features_images/Layout-Related-Features_img4.jpeg)' | markdownify }}
-{:.image }
 
 
 

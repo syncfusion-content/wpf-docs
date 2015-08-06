@@ -11,7 +11,7 @@ documentation: ug
 
 As Inline will be the content property of ParagraphAdv, SpanAdv can be added only inside the ParagraphAdv. Every ParagraphAdv can keep _n_ number of inlines inside it. It allows you to display the formatted text using advanced features like font size, font family, strikethrough, and baseline.
 
-Properties
+## Properties
 
 
 
@@ -87,13 +87,33 @@ SpanAdv can be added directly to an application using the following code snippet
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            <syncfusion:DocumentAdv>                <syncfusion:SectionAdv>                    <syncfusion:ParagraphAdv>                        <syncfusion:SpanAdv Text="This is Span text"/>                    </syncfusion:ParagraphAdv>                </syncfusion:SectionAdv>            </syncfusion:DocumentAdv>        </syncfusion:RichTextBoxAdv></td></tr>
-<tr>
-<td>
-[C#]            RichTextBoxAdv richtext = new RichTextBoxAdv();           DocumentAdv document = new DocumentAdv();           SectionAdv section = new SectionAdv();           ParagraphAdv paragraph = new ParagraphAdv();           SpanAdv span = new SpanAdv();           span.Text = "This is span text";           paragraph.Inlines.Add(span);           section.Blocks.Add(paragraph);           document.Sections.Add(section);           richtext.Document = document;</td></tr>
-</table>
+{% highlight xml %}
 
+[XAML]
+<syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            
+<syncfusion:DocumentAdv>                
+<syncfusion:SectionAdv>                   
+ <syncfusion:ParagraphAdv>                       
+ <syncfusion:SpanAdv Text="This is Span text"/>                   
+ </syncfusion:ParagraphAdv>               
+ </syncfusion:SectionAdv>           
+ </syncfusion:DocumentAdv>       
+ </syncfusion:RichTextBoxAdv>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]           
+ RichTextBoxAdv richtext = new RichTextBoxAdv();          
+ DocumentAdv document = new DocumentAdv();           
+ SectionAdv section = new SectionAdv();           
+ ParagraphAdv paragraph = new ParagraphAdv();           
+ SpanAdv span = new SpanAdv();           
+ span.Text = "This is span text";           
+ paragraph.Inlines.Add(span);           
+ section.Blocks.Add(paragraph);           
+ document.Sections.Add(section);           
+ richtext.Document = document;
+
+{% endhighlight %}
 

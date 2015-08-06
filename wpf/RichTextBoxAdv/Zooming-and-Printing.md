@@ -13,8 +13,8 @@ RichTextBoxAdv allows you to zoom in and out on the content of the document. CTR
 
 
 
-{{ '![](Zooming-and-Printing_images/Zooming-and-Printing_img1.png)' | markdownify }}
-{:.image }
+![](Zooming-and-Printing_images/Zooming-and-Printing_img1.png)
+
 
 
 
@@ -24,16 +24,17 @@ The printing feature permits users to print the content of the document using Pr
 We can also use the Print command which will execute the PrintDocument method whenever it is hooked to the command property.
 
 
+{% highlight C# %}
 
 [C#]
 
 __RichTextBox.PrintDocument();
 
+{% endhighlight %}
 
 
 
-
-Properties
+## Properties
 
 
 
@@ -61,7 +62,7 @@ Double</td></tr>
 </table>
 
 
-Methods
+## Methods
 
 
 

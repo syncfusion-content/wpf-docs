@@ -13,13 +13,13 @@ RichTextBoxAdv is a control for formatting text, such as aligning and indenting 
 
 
 
-{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.png)
 
 
 
 
-The features of the RichTextBoxAdv control include:
+
+## The features of the RichTextBoxAdv control include:
 
 1. Clipboard support
 2. Text formatting
@@ -35,7 +35,7 @@ The features of the RichTextBoxAdv control include:
 
 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 This control helps users with rich text formatting such as bold, italic, highlighting, aligning, indenting paragraphs, and so on. It can also be used in forums, blogs, and so on.
 
@@ -45,9 +45,9 @@ This control helps users with rich text formatting such as bold, italic, highlig
 
 
 
-Sample Link
+## Sample Link
 
-The access the samples:
+### The access the samples:
 
 * Select Start > Programs > Syncfusion > Essential Studio xx.x.x.xx > Dashboard.
 * Select Run Locally Installed Samples.

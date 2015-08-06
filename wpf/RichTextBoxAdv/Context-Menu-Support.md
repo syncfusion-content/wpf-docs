@@ -25,7 +25,7 @@ RichTextBoxAdv supports a context menu similar to MS Word. It supports the follo
 
 
 
-{{ '![C:/Users/labuser/Desktop/Rich/contextmenu.png](Context-Menu-Support_images/Context-Menu-Support_img1.png)' | markdownify }}
-{:.image }
+![](Context-Menu-Support_images/Context-Menu-Support_img1.png)
+
 
 
