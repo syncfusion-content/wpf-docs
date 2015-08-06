@@ -82,6 +82,7 @@ Following code example illustrates the initialization of SfChart that is equival
 {% highlight xml %}
 
 <syncfusion:SfChart Header="ChartArea" AreaBackground="Red" AreaBorderBrush="Gray" AreaBorderThickness="5" SideBySideSeriesPlacement="True"  />
+{% endhighlight %}
 
 {% highlight C# %}
 
@@ -351,7 +352,7 @@ The class design for Axis is different for both ChartArea and SfChart. In ChartA
 <syncfusion:ChartAxis  ValueType="DateTime"  />
 
 </syncfusion:ChartArea.PrimaryAxis>
-
+{% endhighlight %} 
 In SfChart, Axis can be an instance of NumericalAxis, DateTimeAxis, CategoryAxis, LogarithmicAxis, TimeSpanAxis or DateTimeCategoryAxis. Class name represents the type of data it can plot. For example, NumericalAxis can plot numeric values and DateTimeAxis can plot DateTime values. Following code example illustrates this,
 
 {% highlight xml %}
@@ -1019,11 +1020,11 @@ lineseries.YAxis = new NumericalAxis() { Minimum = 20, Maximum = 50 };
 lineseries.SortDirection = Direction.Ascending;
 
 
-{% endhighlight %}
+
 
 
 chart.Series.Add(lineseries);
-
+{% endhighlight %}
 The following table illustrates the API comparison for series,
 
 <table>

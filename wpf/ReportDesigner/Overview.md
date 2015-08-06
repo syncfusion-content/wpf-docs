@@ -24,15 +24,15 @@ The important features of the Essential Report Designer for WPF are:
 
 
 
-{{ '![C:/Users/radhas/Desktop/sshot-1.png](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/sshot-1.png](Overview_images/Overview_img1.png)
+
 
 
 It can be used to design data in a variety of interactive formats and place report items such as data regions, text boxes, images, rectangles, and lines in the report. You can also add groups, expressions, parameters, filters, visibility options, and formatting to the report items.
 
 
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-84.png](Overview_images/Overview_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-84.png](Overview_images/Overview_img2.png)
+
 
 

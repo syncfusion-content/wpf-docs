@@ -42,10 +42,10 @@ The EnableRangeAdorner property must be set either in XAML or the code file.
 <table>
 <tr>
 <td>
-{% highlight xml %}  EnableRangeAdorner="True"</td></tr>
+{% highlight xml %}  EnableRangeAdorner="True"{% endhighlight %}</td></tr>
 <tr>
 <td>
-{% highlight C# %}   control.EnableRangeAdorner = true;</td></tr>
+{% highlight C# %}   control.EnableRangeAdorner = true;{% endhighlight %}</td></tr>
 </table>
 
 

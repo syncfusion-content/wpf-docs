@@ -16,14 +16,14 @@ You can insert a TextBox in the Report Designer and drag report items to the Tex
 
 
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-17.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-17.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img1.png)
+
 
 
 1. To add the first value of the data field, drag the data field from the Report Data to the added TextBox.
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-18.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-18.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img2.png)
+
 
 
 ## Apply Styles to the TextBox
@@ -34,8 +34,8 @@ To apply styles to the TextBox:
 
 
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-18.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img3.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-18.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img3.png)
+
 
 
 2. In the TextBox properties dialog, select any of the following:
@@ -47,8 +47,8 @@ To apply styles to the TextBox:
 
 
 
-{{ '![C:/Users/radhas/Desktop/ScreenShot/sshot-19.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img4.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/ScreenShot/sshot-19.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img4.png)
+
 
 
 3. Set the desired values, and then click OK to update the selected values in the TextBox.
@@ -56,35 +56,34 @@ To apply styles to the TextBox:
 
 
 
-{{ '![](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img5.png)' | markdownify }}
-{:.image }
+![](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img5.png)
+
 
 
 5. Set the desired values and click OK. 
 
 
 
-> _Note: When you set a value that starts with the character “=“, then it assigns the default value of that property to the TextBox._
+Note: When you set a value that starts with the character “=“, then it assigns the default value of that property to the TextBox.
+ 
 
-> 
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-19.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img6.png)
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-19.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img6.png)' | markdownify }}
-{:.image }
 
 
 6. To change the properties by using the Properties Grid, click the TextBox. The Properties Grid appears at the right of the Report Designer. By using this, you can set styles to the TextBox as shown in the following screenshot.
 
 
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-20.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img7.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-20.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img7.png)
 
 
-Deleting TextBox
+
+###Deleting TextBox
 
 To delete the TextBox, right click the TextBox to be deleted, and then select Delete.
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-21.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img8.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-21.png](Add-a-TextBox-to-the-Report-Designer_images/Add-a-TextBox-to-the-Report-Designer_img8.png)
+
 
 

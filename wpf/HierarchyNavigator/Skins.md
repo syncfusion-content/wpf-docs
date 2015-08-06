@@ -19,7 +19,7 @@ Add the following DLLs to apply the corresponding theme for Hierarchy Navigator 
 
 1. Create HierarchyNavigator instance either in XAML or code behind, as shown below.
 
-{highlight xml %}
+{% highlight xml %}
 
 
 

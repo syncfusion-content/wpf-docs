@@ -11,15 +11,15 @@ documentation: ug
 
 ## Properties
 
-_Properties_
+Properties
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description </td><td>
-Types </td><td>
-Data Type </td></tr>
+<th>
+Properties</th><th>
+Description </th><th>
+Types </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 ShowRibbon</td><td>
@@ -87,17 +87,18 @@ Gets or sets report server’s forms credential.</td><td>
 Dependency Property</td><td>
 ReportServerFormsCredential</td></tr>
 </table>
+
 ## Methods
 
-_Methods_ 
+Methods_
 
 <table>
 <tr>
-<td>
-Methods            </td><td>
-Description </td><td>
-Parameters </td><td>
-Return Type </td></tr>
+<th>
+Methods            </th><th>
+Description </th><th>
+Parameters </th><th>
+Return Type </th></tr>
 <tr>
 <td>
 NewReport</td><td>
@@ -123,15 +124,16 @@ Makes a RDL report  to save in the corresponding location.</td><td>
 -</td><td>
 Void</td></tr>
 </table>
+
 ## Events
 
-_Events_ 
+Events 
 
 <table>
 <tr>
-<td>
-Events</td><td>
-Description </td></tr>
+<th>
+Events</th><th>
+Description </th></tr>
 <tr>
 <td>
 ReportOpened</td><td>

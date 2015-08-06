@@ -18,7 +18,7 @@ The Refresh button enables the HierarchyNavigatorRefreshButtonClick event to ini
 <table>
 <tr>
 <td>
-{highlight xml %}<locals:HierarchyNavigator HierarchyNavigatorRefreshButtonClick="HierarchyNavigatorRefreshButtonClick" />{% endhighlight %}</td></tr>
+{% highlight xml %}<locals:HierarchyNavigator HierarchyNavigatorRefreshButtonClick="HierarchyNavigatorRefreshButtonClick" />{% endhighlight %}</td></tr>
 <tr>
 <td>
 {% highlight C# %}HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();<br>hierarchyNavigator.HierarchyNavigatorRefreshButtonClick += new EventHandler(HierarchyNavigatorRefreshButtonClick);{% endhighlight %}</td></tr>

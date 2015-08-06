@@ -15,16 +15,16 @@ You can follow these steps to add a Gauge to the Syncfusion Report Designer.
 
 
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-41.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-41.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img1.png)
+
 
 
 2. To add data fields to the Gauge, drag a data field from the Report Data to the radial gauge panel.
 
 
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-42.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-42.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img2.png)
+
 
 
 ## Apply Styles to the Gauge
@@ -35,16 +35,16 @@ The following are the steps to apply styles to the Gauge:
 
 
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-59.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img3.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-59.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img3.png)
+
 
 
 2. In the Gauge Properties dialog, click General and set the desired values to the fields.
 
 
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-60.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img4.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-60.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img4.png)
+
 
 
 3. Click OK.
@@ -52,8 +52,8 @@ The following are the steps to apply styles to the Gauge:
 
 
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-74.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img5.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-74.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img5.png)
+
 
 
 5. In the Scale Properties dialog, select any of the following:
@@ -64,8 +64,8 @@ The following are the steps to apply styles to the Gauge:
 
 
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-75.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img6.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-75.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img6.png)
+
 
 
 6. Click OK.
@@ -73,8 +73,8 @@ The following are the steps to apply styles to the Gauge:
 
 
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-43.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img7.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-43.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img7.png)
+
 
 
 8. In the Pointer Properties dialog, select any of the following:
@@ -83,8 +83,8 @@ The following are the steps to apply styles to the Gauge:
 
 
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-76.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img8.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-76.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img8.png)
+
 
 
 9. Click OK.
@@ -92,8 +92,8 @@ The following are the steps to apply styles to the Gauge:
 
 
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-77.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img9.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-77.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img9.png)
+
 
 
 11. In the Range Properties dialog, select any of the following:
@@ -102,19 +102,19 @@ The following are the steps to apply styles to the Gauge:
 
 
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-78.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img10.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-78.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img10.png)
+
 
 
 12. Click OK.
-> 
-_Note: You can also change the gauge properties via the Properties grid by clicking the gauge. It displays the Properties grid at the right of the Report Designer._
+ 
+Note: You can also change the gauge properties via the Properties grid by clicking the gauge. It displays the Properties grid at the right of the Report Designer.
 
-> 
+ 
 
 After setting the Back Fill and Frame Fill properties with the following values through the Properties grid, the gauge looks like this:
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-61.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img11.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-61.png](Add-a-Gauge-to-the-Report-Designer_images/Add-a-Gauge-to-the-Report-Designer_img11.png)
+
 
 

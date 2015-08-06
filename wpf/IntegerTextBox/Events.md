@@ -18,16 +18,16 @@ ValueChanged – The event occurs when the Value property of the IntegerTextBox 
 <table>
 <tr>
 <td>
-XAML<syncfusion:IntegerTextBox ValueChanged="IntegerTextBox_ValueChanged"/></td></tr>
+{% highlight xml %} <syncfusion:IntegerTextBox ValueChanged="IntegerTextBox_ValueChanged"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C#IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.ValueChanged+=new PropertyChangedCallback(IntegerTextBox_ValueChanged);</td></tr>
+{% highlight C# %} IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.ValueChanged+=new PropertyChangedCallback(IntegerTextBox_ValueChanged);{% endhighlight %}</td></tr>
 </table>
 
 
 You can handle the event as follows:
 
-C#
+{% highlight C# %}
 
 
 
@@ -38,6 +38,7 @@ private void IntegerTextBox_ValueChanged(DependencyObject d, DependencyPropertyC
             //Insert code to do some operations when value of IntegerTextBox changes.
 
         }
+{% endhighlight %}
 
 ## TextChanged
 
@@ -46,16 +47,16 @@ TextChanged – The event occurs when the Value property of the IntegerTextBox i
 <table>
 <tr>
 <td>
-XAML<syncfusion:IntegerTextBox  TextChanged="integerTextBox_TextChanged"/></td></tr>
+{% highlight html %}<syncfusion:IntegerTextBox  TextChanged="integerTextBox_TextChanged"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C#IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.TextChanged+=new TextChangedEventHandler(IntegerTextBox_TextChanged);</td></tr>
+{% highlight C# %}IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.TextChanged+=new TextChangedEventHandler(IntegerTextBox_TextChanged);{% endhighlight %}</td></tr>
 </table>
 
 
 You can handle the TextChanged event as follows:
 
-C#
+{% highlight C# %}
 
 
 
@@ -66,6 +67,7 @@ private void IntegerTextBox_TextChanged(object sender, TextChangedEventArgs e)
             //Insert code to do some operations when Text of IntegerTextBox changes.
 
         }
+{% endhighlight %}
 
 ## CultureChanged
 
@@ -74,16 +76,16 @@ CultureChanged – The event occurs when the Culture property of the IntegerText
 <table>
 <tr>
 <td>
-XAML<syncfusion:IntegerTextBox  CultureChanged="IntegerTextBox_CultureChanged"/></td></tr>
+{% highlight html %}<syncfusion:IntegerTextBox  CultureChanged="IntegerTextBox_CultureChanged"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C#IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.CultureChanged+=new                                                PropertyChangedCallback(IntegerTextBox_CultureChanged);</td></tr>
+{% highlight C# %}IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.CultureChanged+=new                                                PropertyChangedCallback(IntegerTextBox_CultureChanged);{% endhighlight %}</td></tr>
 </table>
 
 
 You can handle the CultureChanged event as follows:
 
-C#
+{% highlight C# %}
 
 
 
@@ -94,6 +96,7 @@ private void IntegerTextBox_CultureChanged(DependencyObject d, DependencyPropert
             //Insert code to do some operations when the Culture property changes.
 
         }
+{% endhighlight %}
 
 ## MaxValueChanged
 
@@ -102,16 +105,16 @@ MaxValueChanged – The event occurs when the MaxValue property of the IntegerTe
 <table>
 <tr>
 <td>
-XAML<syncfusion:IntegerTextBox  MaxValueChanged="IntegerTextBox_MaxValueChanged"/></td></tr>
+{% highlight html %}<syncfusion:IntegerTextBox  MaxValueChanged="IntegerTextBox_MaxValueChanged"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C#IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.MaxValueChanged+=new                           PropertyChangedCallback(IntegerTextBox_MaxValueChanged);</td></tr>
+{% highlight C# %}IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.MaxValueChanged+=new                           PropertyChangedCallback(IntegerTextBox_MaxValueChanged);{% endhighlight %}</td></tr>
 </table>
 
 
 You can handle the MaxValueChanged event as follows:
 
-C#
+{% highlight C# %}
 
 
 
@@ -122,6 +125,7 @@ private void IntegerTextBox_MaxValueChanged(DependencyObject d, DependencyProper
             //Insert code to do some operations when the MaxValue changed
 
         }
+{% endhighlight %}
 
 ## MinValueChanged
 
@@ -130,16 +134,16 @@ MinValueChanged – The event occurs when the MinValue property of the IntegerTe
 <table>
 <tr>
 <td>
-XAML<syncfusion:IntegerTextBox  MinValueChanged="IntegerTextBox_MinValueChanged"/></td></tr>
+{% highlight html %}<syncfusion:IntegerTextBox  MinValueChanged="IntegerTextBox_MinValueChanged"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C#IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.MinValueChanged+=new                            PropertyChangedCallback(IntegerTextBox_MinValueChanged);</td></tr>
+{% highlight C# %}IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.MinValueChanged+=new                            PropertyChangedCallback(IntegerTextBox_MinValueChanged);{% endhighlight %}</td></tr>
 </table>
 
 
 You can handle the MinValueChanged event as follows:
 
-C#
+{% highlight C# %}
 
 
 
@@ -151,7 +155,7 @@ private void IntegerTextBox_MinValueChanged(DependencyObject d, DependencyProper
 
         }
 
-
+{% endhighlight %}
 
 ## SelectionChanged
 
@@ -160,16 +164,16 @@ SelectionChanged – The event occurs when the selection in the textbox is chang
 <table>
 <tr>
 <td>
-XAML<syncfusion:IntegerTextBox  SelectionChanged="IntegerTextBox_SelectionChanged"/></td></tr>
+{% highlight html %}<syncfusion:IntegerTextBox  SelectionChanged="IntegerTextBox_SelectionChanged"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C#IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.SelectionChanged+=new RoutedEventHandler(IntegerTextBox_SelectionChanged);</td></tr>
+{% highlight C# %}IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.SelectionChanged+=new RoutedEventHandler(IntegerTextBox_SelectionChanged);{% endhighlight %}</td></tr>
 </table>
 
 
 You can handle the SelectionChanged event as follows:
 
-C#
+{% highlight C# %}
 
 
 
@@ -182,4 +186,4 @@ private void IntegerTextBox_SelectionChanged(object sender, RoutedEventArgs e)
         }
 
 
-
+{% endhighlight %}

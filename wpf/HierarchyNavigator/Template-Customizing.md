@@ -120,7 +120,7 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 
 
 
-{highlight xml %}
+{% highlight xml %}
 
 
 
@@ -142,7 +142,7 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 
 
 
-{highlight xml %}
+{% highlight xml %}
 
 
 

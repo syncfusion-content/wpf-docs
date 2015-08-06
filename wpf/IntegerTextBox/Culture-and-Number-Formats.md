@@ -16,29 +16,29 @@ IntegerTextBox provides globalization support through the Culture property.
 <table>
 <tr>
 <td>
-XAML<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                            Culture="en-US" Value="1234567"/></td></tr>
+{% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                            Culture="en-US" Value="1234567"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C#Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.Value = 1234567;integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");</td></tr>
+{% highlight C# %} Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.Value = 1234567;integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");{% endhighlight %}</td></tr>
 </table>
 
 
-{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)' | markdownify }}
-{:.image }
+![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
+
 
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                            Culture="bs-Latn" Value="1234567"/></td></tr>
+{% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                            Culture="bs-Latn" Value="1234567"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C#Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.Value = 1234567;integerTextBox.Culture = new System.Globalization.CultureInfo("bs-Latn");</td></tr>
+{% highlight C# %} Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.Value = 1234567;integerTextBox.Culture = new System.Globalization.CultureInfo("bs-Latn");{% endhighlight %}</td></tr>
 </table>
 
 
-{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)' | markdownify }}
-{:.image }
+![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)
+
 
 
 In the first sample culture is set to “en-US” (US Culture) and in the second sample culture is set to “bs-Latn” (Latin Culture). The US culture uses “,” as the NumberGroupSeparator and the Latin culture uses “.” as the NumberGroupSeparator. When you change the Culture property the Value is formatted based on the Culture.
@@ -50,36 +50,36 @@ You can customize the Number Format either by using the NumberFormat property or
 <table>
 <tr>
 <td>
-XAML<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                            Culture="en-US" Value="123456789012345">     <syncfusion:IntegerTextBox.NumberFormat>        <numberformat:NumberFormatInfo NumberGroupSeparator="/"/>    </syncfusion:IntegerTextBox.NumberFormat></syncfusion:IntegerTextBox></td></tr>
+{% highlight xml %}<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                            Culture="en-US" Value="123456789012345">     <syncfusion:IntegerTextBox.NumberFormat>        <numberformat:NumberFormatInfo NumberGroupSeparator="/"/>    </syncfusion:IntegerTextBox.NumberFormat></syncfusion:IntegerTextBox>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C#Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.Value = 1234567;integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");integerTextBox.NumberFormat = new System.Globalization.NumberFormatInfo() {                                   NumberGroupSeparator = "/" };</td></tr>
+{% highlight C# %} Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.Value = 1234567;integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");integerTextBox.NumberFormat = new System.Globalization.NumberFormatInfo() {                                   NumberGroupSeparator = "/" };{% endhighlight %}</td></tr>
 </table>
 
 
-{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)' | markdownify }}
-{:.image }
+![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)
+
 
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"             Culture="en-US" Value="123456789012345" NumberGroupSeparator="/"/></td></tr>
+{% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"             Culture="en-US" Value="123456789012345" NumberGroupSeparator="/"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C#Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.Value = 1234567;integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");integerTextBox.NumberGroupSeparator = "/";</td></tr>
+{% highlight C# %} Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.Value = 1234567;integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");integerTextBox.NumberGroupSeparator = "/";{% endhighlight %}</td></tr>
 </table>
 
 
-{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)' | markdownify }}
-{:.image }
+![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)
+
 
 
 You can also change the NumberGroupSizes by using the NumberGroupSizes property.
 
 Here is a sample for setting the NumberGroupSizes by using the NumberFormat property.
 
-C#
+{% highlight C# %}
 
 
 
@@ -98,14 +98,15 @@ integerTextBox.NumberFormat = new System.Globalization.NumberFormatInfo() {
                               NumberGroupSizes = new int[] { 2, 3, 4 } };
 
 
+{% endhighlight %}
 
-{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)' | markdownify }}
-{:.image }
+![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)
+
 
 
 Here is a sample for setting the NumberGroupSizes by using the NumberGroupSizes property of the integer textbox:
 
-C#
+{% highlight C# %}
 
 
 
@@ -121,9 +122,9 @@ integerTextBox.NumberGroupSeparator = "/";
 
 integerTextBox.NumberGroupSizes = new Int32Collection() { 2, 3, 0 };
 
+{% endhighlight %}
 
+![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img6.png)
 
-{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img6.png)' | markdownify }}
-{:.image }
 
 

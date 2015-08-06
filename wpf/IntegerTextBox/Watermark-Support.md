@@ -11,7 +11,7 @@ documentation: ug
 
 Watermark is the dummy content displayed in the IntegerTextBox when the value is null. The WatermarkText support behavior can be enabled by setting the WatermarkTextIsVisible property to true.
 
-XAML
+{% highlight xml %}
 
 
 
@@ -21,10 +21,10 @@ XAML
 
                            WatermarkOpacity="0.5" UseNullOption="True"/>
 
+{% endhighlight %}
 
+![](Watermark-Support_images/Watermark-Support_img1.png)
 
-{{ '![](Watermark-Support_images/Watermark-Support_img1.png)' | markdownify }}
-{:.image }
 
 
 WatermarkText automatically collapses when the control is in focus. On Lost Focus the WatermarkText comes to the visible state if the Value is null and the WatermarkTextIsVisible is true.
@@ -33,7 +33,7 @@ WatermarkText automatically collapses when the control is in focus. On Lost Focu
 
 You can customize the Visual appearance of the Watermark Text by using the WatermarkTemplate property.
 
-XAML
+{% highlight xml %}
 
 
 
@@ -61,9 +61,9 @@ XAML
 
 </syncfusion:IntegerTextBox>
 
+{% endhighlight %}
 
+![](Watermark-Support_images/Watermark-Support_img2.png)
 
-{{ '![](Watermark-Support_images/Watermark-Support_img2.png)' | markdownify }}
-{:.image }
 
 

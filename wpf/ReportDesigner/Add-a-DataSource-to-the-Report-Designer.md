@@ -15,24 +15,24 @@ This feature allows you to add a DataSource to the Report Designer. It binds the
 
 
 
-{{ '![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig7.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig7.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img1.png)
+
 
 
 2. Enter the DataSource name in the Name field, and then select the needed connection type from the Select connection type drop-down.
 
 
 
-{{ '![](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img2.png)' | markdownify }}
-{:.image }
+![](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img2.png)
+
 
 
 3. Click Build and the Connection Properties dialog opens.
 
 
 
-{{ '![C:/Users/radhas/Desktop/IMG1.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img3.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/IMG1.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img3.png)
+
 
 
 4. Enter the server name in the Server name field and then select or enter a database name in the Select or enter a database name drop-down ComboBox.
@@ -42,21 +42,21 @@ This feature allows you to add a DataSource to the Report Designer. It binds the
 
 
 
-{{ '![C:/Users/radhas/Desktop/IMG2.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img4.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/IMG2.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img4.png)
+
 
 
 6. Click OK. It provides a connection string for the DataSource. 
 
 
 
-{{ '![C:/Users/radhas/Desktop/sshot-1.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img5.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/sshot-1.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img5.png)
+
 
 
 7. Click OK. The DataSource (Adventure) appears in the Report Data panel.
 
-{{ '![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig12.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img6.png)' | markdownify }}
-{:.image }
+![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig12.png](Add-a-DataSource-to-the-Report-Designer_images/Add-a-DataSource-to-the-Report-Designer_img6.png)
+
 
 

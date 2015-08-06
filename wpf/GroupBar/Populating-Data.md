@@ -9,7 +9,7 @@ documentation: ug
 
 # Populating Data
 
-Data can be populated in the GroupBar control thought XAML, {% highlight C# %}, or XML. The GroupBar control also supports binding to objects. The following sections describe how to implement these different forms of data population.
+Data can be populated in the GroupBar control thought XAML, C#, or XML. The GroupBar control also supports binding to objects. The following sections describe how to implement these different forms of data population.
 
 ## Through XAML
 

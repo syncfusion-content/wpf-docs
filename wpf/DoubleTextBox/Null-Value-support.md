@@ -19,7 +19,7 @@ DoubleTextBox accepts null values. To enable the null option you have to set the
 {% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                             UseNullOption="True" NullValue="1"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-{% highlight {% highlight C# %} %} Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new                           Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = 1; {% endhighlight %} </td></tr>
+{% highlight C# %} Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new                           Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = 1; {% endhighlight %} </td></tr>
 </table>
 
 
