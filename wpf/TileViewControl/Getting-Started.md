@@ -13,8 +13,8 @@ documentation: ug
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 
@@ -31,8 +31,8 @@ The following are the steps to create the TileViewControl using Visual Studio.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+     ![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 
@@ -42,13 +42,14 @@ The following are the steps to create the TileViewControl using Visual Studio.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+     ![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 
 
 4.  Using the Collection Editor, add the GroupBarItems and configure their properties.
+
 ### Through Expression Blend
 
 
@@ -57,14 +58,14 @@ The TileViewControl can also be created and configured using Expression Blend. T
 
 
 1. Create a WPF project in Expression Blend and reference the following assemblies.
-1. Syncfusion.Shared.Wpf
-2. Syncfusion.Core
+i. Syncfusion.Shared.Wpf
+ii. Syncfusion.Core
 2. Search for TileViewControl in the Toolbox.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+     ![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 
@@ -73,15 +74,14 @@ The TileViewControl can also be created and configured using Expression Blend. T
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+     ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 4. To add items to the TileViewControl using the Collection Editor, select TileViewControl and go to Properties.
 5. Click Items (Collection) under Common Properties.
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+     ![](Getting-Started_images/Getting-Started_img6.png)
+
 
 
 6. Once the Collection Editor window opens, click Add another item. The Select Object window will open. 
@@ -91,8 +91,8 @@ The TileViewControl can also be created and configured using Expression Blend. T
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+     ![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 
@@ -107,6 +107,7 @@ The TileViewControl can also be created and configured using Expression Blend. T
 
 The TileViewControl can also be created through XAML. The following code example illustrates this.
 
+{% highlight xml %}
 [XAML]
 
 <syncfusion:TileViewControl Name="tileViewControl1" >
@@ -120,7 +121,7 @@ The TileViewControl can also be created through XAML. The following code example
      <syncfusion:TileViewItem Header="Item 4" />
 
  </syncfusion:TileViewControl>
-
+{% endhighlight %}
 
 
 ### Through C#
@@ -128,19 +129,19 @@ The TileViewControl can also be created through XAML. The following code example
 To create the TileViewControl through C#, include the following namespace to the directives list.
 
 
-
+{% highlight c# %}
 [C#]
 
 using Syncfusion.Windows.Shared;
 
-
+{% endhighlight %}
 
 
 
 Next, create the TileViewControl as follows.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -162,7 +163,7 @@ TileViewControl tvControl = new TileViewControl();
        tvControl.Items.Add(tvitem3);
 
        tvControl.Items.Add(tvitem4);
-
+{% endhighlight %}
 
 
 
@@ -171,7 +172,7 @@ This will generate the following TileViewControl.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
+
 
 

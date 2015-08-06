@@ -11,18 +11,18 @@ documentation: ug
 
 The MinimizedItemContent and MaximizedItemContent feature in the TileViewItem enables you to set the different contents in TileViewItem maximized state and TileViewItem minimized state. The content property will be used to set the content for TileViewItem normal state. If you set the MinimizedItemContent, then the value in content property will be displayed in maximized state and vice versa.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 This feature will be very useful when you want to show two different contents in minimized state and maximized state.
 
-Adding MinimizedItemContent and MaximizedItemContent to an Application 
+## Adding MinimizedItemContent and MaximizedItemContent to an Application 
 
 The MinimizedItemContent and MaximizedItemContent can be added to an application by using either XAML or C# code.
 
 The following code example illustrates how to add the MinimizedItemContent and MaximizedItemContent to an application through XAML.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -79,28 +79,28 @@ The following code example illustrates how to add the MinimizedItemContent and M
 
 </syncfusion:TileViewControl>
 
+{% endhighlight %}
+
+
+
+![](MinimizedItemContent-and-MaximizedItemContent_images/MinimizedItemContent-and-MaximizedItemContent_img1.png)
 
 
 
 
-{{ '![](MinimizedItemContent-and-MaximizedItemContent_images/MinimizedItemContent-and-MaximizedItemContent_img1.png)' | markdownify }}
-{:.image }
 
-
-
-
-Properties
+## Properties
 
 _MinimizedItemContent / MaximizedItemContent Properties Table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td><td>
+{{ '**Reference links**' | markdownify }} </td></tr>
 <tr>
 <td>
 MinimizedItemContent</td><td>
@@ -118,7 +118,7 @@ Object</td><td>
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

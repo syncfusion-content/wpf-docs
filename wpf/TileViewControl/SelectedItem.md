@@ -11,14 +11,14 @@ documentation: ug
 
 SelectedItem is a property in the TileViewControl that stores the currently selected TileViewItem in it and it is similar to SelectedItem property in ComboBox. This will help you to return the currently selected TileViewItem. Also it allows only one item to be selected at a time. 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 This feature will be very useful who you want to get the SelectedItem.
 
-Adding SelectedItem to an Application
+## Adding SelectedItem to an Application
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -34,31 +34,31 @@ Adding SelectedItem to an Application
       <syncfusion:TileViewItem x:Name="Tile4" Header="TileViewItem 4" /> 
 
 </syncfusion:TileViewControl>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
 
 this.TileView.SelectedItem = Tile1;
 
+{% endhighlight %}
 
 
 
-
-Properties
+## Properties
 
 _SelectedItem Property Table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td><td>
+{{ '**Reference links**' | markdownify }} </td></tr>
 <tr>
 <td>
 SelectedItem</td><td>
@@ -69,18 +69,18 @@ Object</td><td>
 </table>
 
 
-Events
+## Events
 
 _SelectedItem Event Table_
 
 <table>
 <tr>
 <th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th><th>
-Reference links </th></tr>
+{{ '**Event**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Arguments**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
 <th>
 SelectedItemChanged</th><th>
@@ -91,7 +91,7 @@ This event gets fired when the Selected TileViewItem is changed.</th><th>
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

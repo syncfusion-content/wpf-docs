@@ -11,16 +11,16 @@ documentation: ug
 
 Drag-and-Drop enables you to drag the TileViewItems in TileViewControl in a normal state. Once the TileViewItem is dragged, the other items in the TileViewControl moves to the corresponding positions in accordance to the dragging item. This can be enabled and disabled by using the AllowItemsRepositioning property.
 
-Adding Dragging Items to an Application 
+## Adding Dragging Items to an Application 
 
 The Dragging items can be added to an application by using either XAML or C# code.
 
-Adding through XAML
+## Adding through XAML
 
 The following code example illustrates how to add the Dragging Items to an application through XAML.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -29,38 +29,38 @@ The following code example illustrates how to add the Dragging Items to an appli
 
                             AllowItemRepositioning="True"/>
 
+{% endhighlight %}
 
 
 
-
-Adding through C#
+## Adding through C#
 
 The following code example illustrates how to add the Dragging Items to an application through C#.
 
 
-
+{% highlight c# %}
 [C#]
 
 
 
 tileViewCntrl.AllowItemRepositioning = true;   
 
+{% endhighlight %}
 
 
 
-
-Properties
+## Properties
 
 _MinimizedItemTemplate / MaximizedItemTemplate Properties Table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td><td>
+{{ '**Reference links**' | markdownify }} </td></tr>
 <tr>
 <td>
 AllowItemRepositioning</td><td>
@@ -71,18 +71,18 @@ True</td><td>
 </table>
 
 
-Events
+## Events
 
 _AllowItemRepositioningChanged Table_
 
 <table>
 <tr>
 <th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th><th>
-Reference links </th></tr>
+{{ '**Event**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Arguments**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
 <th>
 AllowItemRepositioningChanged</th><th>
@@ -93,7 +93,7 @@ The event gets fired when the dragging items feature is enabled or disabled.</th
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

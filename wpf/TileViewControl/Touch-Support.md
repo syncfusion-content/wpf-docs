@@ -13,18 +13,18 @@ Pinch support is provided in tile view to enable users to quickly move tile item
 
 
 
-{{ '![C:/Users/ravuthasamyd/Desktop/Tileviewnew.png](Touch-Support_images/Touch-Support_img1.png)' | markdownify }}
-{:.image }
-
-
-{{ '![](Touch-Support_images/Touch-Support_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/ravuthasamyd/Desktop/Tileviewnew.png](Touch-Support_images/Touch-Support_img1.png)
 
 
 
+![](Touch-Support_images/Touch-Support_img2.png)
 
-{{ '![](Touch-Support_images/Touch-Support_img3.png)' | markdownify }}
-{:.image }
+
+
+
+
+![](Touch-Support_images/Touch-Support_img3.png)
+
 
 
 

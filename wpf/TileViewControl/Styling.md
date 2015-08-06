@@ -30,11 +30,11 @@ The TileViewControl has the following built-in styles:
 These styles can be applied to the control using XAML. The following code example illustrates how to apply Office2007Blue style to the TileViewControl.
 
 
-
+{% highlight xml %}
  [XAML]
 
 <syncfusion:TileViewControl         syncfusion:SkinStorage.VisualStyle="Office2010Blue"        />    
-
+{% endhighlight %}
 
 
 
@@ -42,11 +42,11 @@ These styles can be applied to the control using XAML. The following code exampl
 These styles can also be applied to the control using C# as follows.
 
 
-
+{% highlight c# %}
 [C#]
 
 SkinStorage.SetVisualStyle(tileViewInstance, "Office2010Blue");
-
+{% endhighlight %}
 
 
 
@@ -55,56 +55,53 @@ The following illustrations show the TileViewControl that is applied with differ
 
 
 
-{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2007Blue.png](Styling_images/Styling_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2007Blue.png](Styling_images/Styling_img1.png)
 
 
 
 
-{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2007silver.png](Styling_images/Styling_img2.png)' | markdownify }}
-{:.image }
+
+![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2007silver.png](Styling_images/Styling_img2.png)
 
 
 
 
-{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2007Black.png](Styling_images/Styling_img3.png)' | markdownify }}
-{:.image }
+
+![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2007Black.png](Styling_images/Styling_img3.png)
 
 
 
 
-{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2010Blue.png](Styling_images/Styling_img4.png)' | markdownify }}
-{:.image }
+![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2010Blue.png](Styling_images/Styling_img4.png)
 
 
 
 
-{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2010silver.png](Styling_images/Styling_img5.png)' | markdownify }}
-{:.image }
+![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2010silver.png](Styling_images/Styling_img5.png)
 
 
 
 
-{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2010Black.png](Styling_images/Styling_img6.png)' | markdownify }}
-{:.image }
+
+![C:/Users/boopeshkumart/Desktop/TileView_Themes/office2010Black.png](Styling_images/Styling_img6.png)
 
 
 
 
-{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/blend.png](Styling_images/Styling_img7.png)' | markdownify }}
-{:.image }
+![C:/Users/boopeshkumart/Desktop/TileView_Themes/blend.png](Styling_images/Styling_img7.png)
 
 
 
 
-{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/metro.png](Styling_images/Styling_img8.png)' | markdownify }}
-{:.image }
+
+![C:/Users/boopeshkumart/Desktop/TileView_Themes/metro.png](Styling_images/Styling_img8.png)
 
 
 
 
-{{ '![C:/Users/boopeshkumart/Desktop/TileView_Themes/transparent.png](Styling_images/Styling_img9.png)' | markdownify }}
-{:.image }
+
+![C:/Users/boopeshkumart/Desktop/TileView_Themes/transparent.png](Styling_images/Styling_img9.png)
+
 
 
 
@@ -116,10 +113,10 @@ The _ItemContainerStyle_ property of _TileViewControl_ sets the style of TileVie
 1. Create the style for TileViewControl.
 
 
+   ~~~ xml
+     [XAML]
 
-[XAML]
-
-    <Style TargetType="{x:Type syncfusion:TileViewItem}" x:Key="itemStyle">
+     <Style TargetType="{x:Type syncfusion:TileViewItem}" x:Key="itemStyle">
 
             <Setter Property="Header" Value="{Binding XPath=@Name}"/>
 
@@ -155,7 +152,8 @@ The _ItemContainerStyle_ property of _TileViewControl_ sets the style of TileVie
 
         </Style>
 
-
+   ~~~
+   {:.prettyprint}
 
 
 
@@ -164,10 +162,10 @@ The _ItemContainerStyle_ property of _TileViewControl_ sets the style of TileVie
 2. Set the _ItemContainerStyle_ of the _TileViewControl_ as follows.
 
 
+   ~~~ xml
+     [XAML]
 
-[XAML]
-
-<syncfusion:TileViewControl  ItemContainerStyle="{StaticResource itemStyle}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  >
+     <syncfusion:TileViewControl  ItemContainerStyle="{StaticResource itemStyle}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  >
 
 
 
@@ -175,7 +173,8 @@ The _ItemContainerStyle_ property of _TileViewControl_ sets the style of TileVie
 
         </syncfusion:TileViewControl>
 
-
+   ~~~
+   {:.prettyprint}
 
 
 
@@ -183,8 +182,8 @@ This will generate the following TileViewControl.
 
 
 
-{{ '![](Styling_images/Styling_img10.png)' | markdownify }}
-{:.image }
+![](Styling_images/Styling_img10.png)
+
 
 
 
@@ -198,49 +197,51 @@ The _ItemContainerStyleSelector_ property is used to choose the ItemContainerSty
 1. Create _StyleSelector_ in the code.
 
 
+   ~~~ cs
+   
+       [C#]
 
-[C#]
-
-   public class TileViewItemContainerStyleSelector : StyleSelector
-
-    {
-
-
-
-        public override Style SelectStyle(object item, DependencyObject container)
-
-        {
-
-
-
-            Window window = Application.Current.MainWindow;
-
-
-
-            string bookname = (item as System.Xml.XmlElement).GetAttribute("Name").ToString().ToLower();
-
-            if (bookname.Contains("wpf"))
+         public class TileViewItemContainerStyleSelector : StyleSelector
 
             {
 
-                return ((Style)window.Resources["WpfBookStyle"]);
+      
+
+                 public override Style SelectStyle(object item, DependencyObject container)
+
+                {
+
+
+
+                     Window window = Application.Current.MainWindow;
+
+
+
+                     string bookname = (item as System.Xml.XmlElement).GetAttribute("Name").ToString().ToLower();
+
+                     if (bookname.Contains("wpf"))
+
+                    {
+
+                     return ((Style)window.Resources["WpfBookStyle"]);
+
+                    }
+
+                     else
+
+                    {
+
+                     return ((Style)window.Resources["CsBookStyle"]);
+
+                    }
+
+
+
+                }
 
             }
-
-            else
-
-            {
-
-                return ((Style)window.Resources["CsBookStyle"]);
-
-            }
-
-
-
-        }
-
-    }
-
+   ~~~
+   {:.prettyprint}
 
 
 
@@ -248,10 +249,10 @@ The _ItemContainerStyleSelector_ property is used to choose the ItemContainerSty
 2. Create the styles in the Window’s resource.
 
 
+   ~~~ xml
+   [XAML]
 
-[XAML]
-
-<Style TargetType="{x:Type syncfusion:TileViewItem}" x:Key="CsBookStyle">
+        <Style TargetType="{x:Type syncfusion:TileViewItem}" x:Key="CsBookStyle">
 
             <Setter Property="Header" Value="{Binding XPath=@Name}"/>
 
@@ -322,33 +323,36 @@ The _ItemContainerStyleSelector_ property is used to choose the ItemContainerSty
             </Setter>
 
         </Style>
-
+   ~~~
+   {:.prettyprint}
 
 
 3. Define the Style selector in the Window’s resource.
 
 
+   ~~~ xml
+     [XAML]
 
-[XAML]
+     <local:TileViewItemContainerStyleSelector x:Key="tileViewStyleSelector"/>
 
-<local:TileViewItemContainerStyleSelector x:Key="tileViewStyleSelector"/>
-
-
+   ~~~
+   {:.prettyprint}
 
 
 
 4. Set _ItemContainerStyle_ for the TileViewControl.
 
 
+   ~~~ xml
+     [XAML]
 
-[XAML]
-
-<syncfusion:TileViewControl  ItemContainerStyleSelector="{StaticResource tileViewStyleSelector}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  Margin="20" >
+      <syncfusion:TileViewControl  ItemContainerStyleSelector="{StaticResource tileViewStyleSelector}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  Margin="20" >
 
 
 
          </syncfusion:TileViewControl>
-
+   ~~~
+   {:.prettyprint}
 
 
 
@@ -357,8 +361,8 @@ This will generate the following TileViewControl.
 
 
 
-{{ '![](Styling_images/Styling_img11.png)' | markdownify }}
-{:.image }
+![](Styling_images/Styling_img11.png)
+
 
 
 

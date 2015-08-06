@@ -11,11 +11,11 @@ documentation: ug
 
 The TileViewControl includes the Blendability support that allows you to edit the control in Microsoft Expression Blend and apply their own styles for the control in place of predefined styles.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 The feature enables you to set own styles for the control.
 
-Adding Blendability Support to an Application 
+## Adding Blendability Support to an Application 
 
 The following are the step-by-step procedure to edit the TileViewControl in Microsoft Expression Blend.
 
@@ -28,8 +28,8 @@ The following are the step-by-step procedure to edit the TileViewControl in Micr
 
 
 
-{{ '![](Blendability-Support_images/Blendability-Support_img1.png)' | markdownify }}
-{:.image }
+     ![](Blendability-Support_images/Blendability-Support_img1.png)
+
 
 
 
@@ -41,8 +41,8 @@ The following are the step-by-step procedure to edit the TileViewControl in Micr
 
 
 
-{{ '![](Blendability-Support_images/Blendability-Support_img2.png)' | markdownify }}
-{:.image }
+     ![](Blendability-Support_images/Blendability-Support_img2.png)
+
 
 
 
@@ -51,8 +51,8 @@ The following are the step-by-step procedure to edit the TileViewControl in Micr
 
 
 
-{{ '![](Blendability-Support_images/Blendability-Support_img3.png)' | markdownify }}
-{:.image }
+     ![](Blendability-Support_images/Blendability-Support_img3.png)
+
 
 
 
@@ -61,8 +61,8 @@ The following are the step-by-step procedure to edit the TileViewControl in Micr
 
 
 
-{{ '![](Blendability-Support_images/Blendability-Support_img4.png)' | markdownify }}
-{:.image }
+     ![](Blendability-Support_images/Blendability-Support_img4.png)
+
 
 
 

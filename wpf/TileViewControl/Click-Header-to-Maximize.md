@@ -11,18 +11,18 @@ documentation: ug
 
 The TileViewItem moves to maximized state from Normal or minimized state when you click on the header of the TileViewItem. You can enable or disable this feature by using the ClickHeaderToMaximized property in the TileViewControl. If you click on the header of the TileViewItem in maximized state, then no action will take place, the TileViewItem’s state will remain same.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 This feature will be useful when you want to maximize a TileViewItem without clicking the MinMax Button.
 
-Adding Click Header to Maximize to an Application
+## Adding Click Header to Maximize to an Application
 
 Click Header to Maximize can be added to an application by using either XAML or C# code.
 
 The following code example illustrates how to add the Click Header to Maximize to an application.
 
 
-
+{% highlight xml %}
 [XAML]
 
 <syncfusion:TileViewControl x:Name="TileView" Height="600" Width="800" 
@@ -38,29 +38,29 @@ The following code example illustrates how to add the Click Header to Maximize t
       <syncfusion:TileViewItem x:Name="Tile4" Header="TileViewItem 4" /> 
 
 </syncfusion:TileViewControl>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
       TileViewControl Tile = new TileViewControl();
 
       Tile.ClickHeaderToMaximize = true;      
 
+{% endhighlight %}
 
-
-Properties
+## Properties
 
 _ClickHeaderToMaximize Property Table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td><td>
+{{ '**Reference links**' | markdownify }} </td></tr>
 <tr>
 <td>
 ClickHeaderToMaximize</td><td>
@@ -71,7 +71,7 @@ False</td><td>
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 
