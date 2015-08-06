@@ -24,7 +24,7 @@ The features of the UpDown control include:
 
 
 
-Breaking Changes in the UpDown control from Version 8.3 to Version 8.4
+### Breaking Changes in the UpDown control from Version 8.3 to Version 8.4
 
 The event handler and event argument for the ValueChanging event is changed in version 8.4. The changes are provided in the following tabulation:
 
@@ -33,9 +33,9 @@ _Changes in the UpDown control from Version 8.3 to Version 8.4_
 <table>
 <tr>
 <th>
-Event Name</th><th>
-Old Type</th><th>
-New Type</th></tr>
+{{ '**Event Name**' | markdownify }}</th><th>
+{{ '**Old Type**' | markdownify }}</th><th>
+{{ '**New Type**' | markdownify }}</th></tr>
 <tr>
 <th rowspan = "2">
 ValueChanging</th><th>
@@ -62,13 +62,13 @@ The following properties are no longer used and do not make any change in the Up
 
 
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1258.png](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.png)
+
 
 
 _Structure of the UpDown control_
 
-Structure
+### Structure
 
 The following are the elements of the UpDown control:
 
@@ -78,7 +78,7 @@ The following are the elements of the UpDown control:
 
 
 
-_Sample Link_: To access a sample:
+### Sample Link_: To access a sample:
 
 Navigate to Start -> All Programs -> Syncfusion -> Essential Studio -> Dashboard.
 
