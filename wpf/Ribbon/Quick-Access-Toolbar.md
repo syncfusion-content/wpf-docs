@@ -13,8 +13,7 @@ Quick Access Toolbar in the ribbon instance is used to group the most commonly u
 
 
 
-{{ '![](Quick-Access-Toolbar_images/Quick-Access-Toolbar_img1.jpeg)' | markdownify }}
-{:.image }
+![](Quick-Access-Toolbar_images/Quick-Access-Toolbar_img1.jpeg)
 
 
 
@@ -33,23 +32,21 @@ Common application commands like Save, Close, Print, and so on, are executed on 
 </table>
 
 
-Adding items using Quick Access Dialog
+## Adding items using Quick Access Dialog
 
 Commands are added to Quick Access Toolbar using the Quick Access Dialog. Quick Access Dialog is enabled by selecting more commands option in the context menu of QAT. The Quick Access Dialog displays the list of all available commands in the application. You can insert commands in the Quick Access Toolbar by adding the commands to the right pane of the Quick Access Dialog.
 
 
 
-{{ '![](Quick-Access-Toolbar_images/Quick-Access-Toolbar_img2.jpeg)' | markdownify }}
-{:.image }
+![](Quick-Access-Toolbar_images/Quick-Access-Toolbar_img2.jpeg)
 
 
 
-
-See Also 
+## See Also 
 
 Menu Item Synchronization
 
-## Menu Item Synchronization
+# Menu Item Synchronization
 
 Quick Access Toolbar MenuItem synchronized with Ribbon controls defined in RibbonBar, ApplicationMenu and Quick Access Toolbar. This can be achieved using SynchronizedItem property.
 
@@ -68,9 +65,7 @@ The following code sample illustrates how you can synchronize Quick Access Toolb
 [C#]RibbonCommandManager.SetSynchronizedItem(appMenuSave, "Save");RibbonCommandManager.SetSynchronizedItem(qatMenuSave, "Save");</td></tr>
 </table>
 
-
-{{ '![](Quick-Access-Toolbar_images/Quick-Access-Toolbar_img3.jpeg)' | markdownify }}
-{:.image }
+![](Quick-Access-Toolbar_images/Quick-Access-Toolbar_img3.jpeg)
 
 
 

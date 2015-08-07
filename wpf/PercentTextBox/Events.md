@@ -11,7 +11,7 @@ documentation: ug
 
 The PercentTextBox exposes the following events:
 
-## PercentValueChanged
+# PercentValueChanged
 
 PercentValueChanged – The event occurs when the PercentValue property of the PercentTextBox is changed.
 
@@ -27,11 +27,11 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.PercentVa
 
 You can handle the event as follows:
 
-C# 
+ {% highlight c# %}
+ 
+    [C#]
 
-
-
-void PercentTextBox_PercentValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+    void PercentTextBox_PercentValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 
         {
 
@@ -39,7 +39,13 @@ void PercentTextBox_PercentValueChanged(DependencyObject d, DependencyPropertyCh
 
         }
 
-## TextChanged
+ {% endhighlight %}
+
+
+
+
+
+# TextChanged
 
 TextChanged – The event occurs when the PercentValue property of the PercentTextBox is changed.
 
@@ -55,11 +61,10 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.TextChang
 
 You can handle the event as follows:
 
-C# 
-
-
-
-        void PercentTextBox_TextChanged(object sender, TextChangedEventArgs e)
+ {% highlight c# %}
+ 
+    [C#]
+  void PercentTextBox_TextChanged(object sender, TextChangedEventArgs e)
 
         {
 
@@ -67,7 +72,13 @@ C#
 
         }
 
-## CultureChanged
+ {% endhighlight %}
+
+
+
+      
+
+# CultureChanged
 
 CultureChanged – The event occurs when the Culture property of the PercentTextBox is changed.
 
@@ -83,11 +94,11 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.CultureCh
 
 You can handle the event as follows:
 
-C# 
+ {% highlight c# %}
+ 
+    [C#]
 
-
-
-void PercentTextBox_CultureChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+    void PercentTextBox_CultureChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 
         {
 
@@ -95,7 +106,13 @@ void PercentTextBox_CultureChanged(DependencyObject d, DependencyPropertyChanged
 
         }
 
-## MaxValueChanged
+ {% endhighlight %}
+
+
+
+
+
+# MaxValueChanged
 
 MaxValueChanged – The event occurs when the MaxValue property of the PercentTextBox is changed.
 
@@ -111,11 +128,11 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.MaxValueC
 
 You can handle the event as follows:
 
-C# 
+ {% highlight c# %}
+ 
+    [C#]
 
-
-
-void PercentTextBox_MaxValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+    void PercentTextBox_MaxValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 
         {
 
@@ -123,7 +140,13 @@ void PercentTextBox_MaxValueChanged(DependencyObject d, DependencyPropertyChange
 
         }
 
-## MinValueChanged
+ {% endhighlight %}
+
+
+
+
+
+# MinValueChanged
 
 MinValueChanged – The event occurs when the MinValue property of the PercentTextBox is changed.
 
@@ -139,11 +162,11 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.MinValueC
 
 You can handle the event as follows:
 
-C# 
+ {% highlight c# %}
+ 
+    [C#]
 
-
-
-void PercentTextBox_MinValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+    void PercentTextBox_MinValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 
         {
 
@@ -151,7 +174,15 @@ void PercentTextBox_MinValueChanged(DependencyObject d, DependencyPropertyChange
 
         }
 
-## SelectionChanged
+ {% endhighlight %}
+
+C# 
+
+
+
+
+
+# SelectionChanged
 
 SelectionChanged – The event occurs when the selection in the textbox is changed.
 
@@ -167,17 +198,23 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Selection
 
 You can handle the event as follows:
 
-C# 
+ {% highlight c# %}
+ 
+    [C#]
 
-
-
-void PercentTextBox_SelectionChanged(object sender, RoutedEventArgs e)
+   void PercentTextBox_SelectionChanged(object sender, RoutedEventArgs e)
 
         {
 
             //Insert code to do some operations when the Selected Text changed.
 
         }
+
+ {% endhighlight %}
+
+
+
+
 
 
 

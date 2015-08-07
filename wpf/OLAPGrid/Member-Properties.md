@@ -13,13 +13,14 @@ OlapGrid allows binding of Dimension Members along with their properties. Member
 
 Click here for Sample Report with Member Properties
 
-{{ '![](Member-Properties_images/Member-Properties_img1.png)' | markdownify }}
-{:.image }
+![](Member-Properties_images/Member-Properties_img1.png)
 
 
 To display member properties via header tooltip, the following property of OlapGrid should be set to true.
 
-[C#]
+  {% highlight c# %}
+
+    [C#]
 
 
 
@@ -27,11 +28,14 @@ To display member properties via header tooltip, the following property of OlapG
 
 this.OlapGrid1.ShowMemberPropertiesToolTip = true;
 
+    {% endhighlight %}
 
 
 
 
-[VB]
+  {% highlight vbnet %}
+
+  [VB]
 
 
 
@@ -39,15 +43,19 @@ this.OlapGrid1.ShowMemberPropertiesToolTip = true;
 
 Me.OlapGrid1.ShowMemberPropertiesToolTip = True
 
+    {% endhighlight %}
 
 
 
 
-{{ '![](Member-Properties_images/Member-Properties_img2.png)' | markdownify }}
-{:.image }
 
 
-Sample Location
+
+
+![](Member-Properties_images/Member-Properties_img2.png)
+
+
+## Sample Location
 
 A sample demo is available at the following location:
 

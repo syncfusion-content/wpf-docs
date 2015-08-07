@@ -7,7 +7,7 @@ control: OLAP Gauge
 documentation: ug
 ---
 
-## Syncfusion OLAP Architecture
+# Syncfusion OLAP Architecture
 
 Syncfusion's OLAP architecture allows you to build a full life cycle reporting solution for your enterprise. Here are the important pieces of the architecture
 
@@ -17,32 +17,30 @@ Syncfusion's OLAP architecture allows you to build a full life cycle reporting s
 
 Let us see how the Syncfusion OLAP components allow you to build a full life cycle reporting solution for your enterprise.
 
-{{ '![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img1.jpeg)' | markdownify }}
-{:.image }
+![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img1.jpeg)
 
 
-### Class Diagram
+# Class Diagram
 
 
 
-{{ '![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img2.png)' | markdownify }}
-{:.image }
+![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img2.png)
 
 
-### Properties and Methods
+# Properties and Methods
 
-#### Properties
+# Properties
 
 _Property Table_
 
 <table>
 <tr>
 <th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Value It Accepts</th><th>
-Reference Path</th></tr>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Value It Accepts**' | markdownify }}</th><th>
+{{ '**Reference Path**' | markdownify }}</th></tr>
 <tr>
 <td>
 FrameType</td><td>
@@ -114,18 +112,18 @@ OlapDataManager</td><td>
 OlapDataManager</td><td>
 -</td></tr>
 </table>
-#### Methods
+# Methods
 
 _Methods Table_
 
 <table>
 <tr>
 <td>
-Methods</td><td>
-Description</td><td>
-Parameters</td><td>
-Return Type</td><td>
-Reference Links</td></tr>
+{{ '**Methods**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Parameters**' | markdownify }}</td><td>
+{{ '**Return Type**' | markdownify }}</td><td>
+{{ '**Reference Links**' | markdownify }}</td></tr>
 <tr>
 <td>
 GetConnectionString()</td><td>

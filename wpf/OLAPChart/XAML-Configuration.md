@@ -11,19 +11,19 @@ documentation: ug
 
 XAML configuration is an important feature of OlapChart, as it helps the user to configure the control entirely using XAML by eliminating the need code in code behind. 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 If a user wants to perform an entire configuration in XAML, then this feature will help the user to set the Data source, Report and UI properties in a simple and elegant manner by using XAML.
 
-Property
+## Property
 
 _Property Table_
 
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td><td>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
 Type</td><td>
 Data Type</td></tr>
 <tr>
@@ -89,11 +89,13 @@ CalculatedMembers</td></tr>
 </table>
 
 
-Adding report to OLAP Chart
+## Adding report to OLAP Chart
 
 Adding an OLAP report to OLAP Chart control in design time is described in the following code snippet:
 
-[XAML]
+ {% highlight xml %}
+
+    [XAML]
 
 
 
@@ -139,11 +141,15 @@ olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=a
 
 </syncfusion:OlapChart>
 
+ {% endhighlight %}
 
 
 
 
-Sample Link
+
+
+
+## Sample Link
 
 To access a XAML Configuration Demo sample:
 
@@ -154,8 +160,7 @@ To access a XAML Configuration Demo sample:
 
 
 
-{{ '![](XAML-Configuration_images/XAML-Configuration_img1.png)' | markdownify }}
-{:.image }
+![](XAML-Configuration_images/XAML-Configuration_img1.png)
 
 
 _OLAP Chart with SalesReport created using XAML code_

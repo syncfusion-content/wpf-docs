@@ -9,33 +9,31 @@ documentation: ug
 
 # Getting Started
 
-## Control Structure
+# Control Structure
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
-
-
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
-## PercentTextBox Members
+![](Getting-Started_images/Getting-Started_img2.png)
+
+
+# PercentTextBox Members
 
 PercentTextBox exposes the following members:
 
-### Properties
+# Properties
 
 _Property table_
 
 <table>
 <tr>
 <td>
-Name</td><td>
-Type</td><td>
-Value it Accepts</td><td>
-Description</td><td>
-Default Value</td><td>
-Reference Link</td></tr>
+{{ '**Name**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Value it Accepts**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Default Value**' | markdownify }}</td><td>
+{{ '**Reference Link**' | markdownify }}</td></tr>
 <tr>
 <td>
 ApplyNegativeForeground</td><td>
@@ -325,17 +323,17 @@ Gets or sets the ZeroColor property.</td><td>
 </td><td>
 ZeroColor</td></tr>
 </table>
-### Methods
+# Methods
 
 _Methods table_
 
 <table>
 <tr>
 <td>
-Name</td><td>
-Description</td><td>
-Return Type</td><td>
-Overloads</td></tr>
+{{ '**Name**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Return Type**' | markdownify }}</td><td>
+{{ '**Overloads**' | markdownify }}</td></tr>
 <tr>
 <td>
 Copy()</td><td>
@@ -355,18 +353,18 @@ Selects all the content of the Percent text box.</td><td>
 Void</td><td>
 </td></tr>
 </table>
-### Events
+# Events
 
 _Events table_
 
 <table>
 <tr>
 <td>
-Name</td><td>
-Event Type</td><td>
-Event Args Parameter</td><td>
-Description</td><td>
-Reference Link</td></tr>
+{{ '**Name**' | markdownify }}</td><td>
+{{ '**Event Type**' | markdownify }}</td><td>
+{{ '**Event Args Parameter**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Reference Link**' | markdownify }}</td></tr>
 <tr>
 <td>
 PercentValueChanged</td><td>
@@ -410,11 +408,11 @@ RoutedEventArgs</td><td>
 Occurs when the text selection has changed.</td><td>
 SelectionChanged</td></tr>
 </table>
-## Creating a PercentTextBox Control
+# Creating a PercentTextBox Control
 
 PercentTextBox can be added to the application by using Visual Studio and Microsoft Expression Blend.
 
-### Creating a PercentTextBox by using C#
+# Creating a PercentTextBox by using C#
 
 The steps to create a PercentTextBox by using Visual Studio in C# are as follows:
 
@@ -423,30 +421,27 @@ The steps to create a PercentTextBox by using Visual Studio in C# are as follows
 
 
 
-{{ '![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)
 
 
 3. On the Project Dialog window, select WPF Application, in the name field, type the name of the project, and then click OK.
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 4. Add the following reference with the sample project:
 1. Syncfusion.Shared.WPF.dll
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
 
 
 2. Click the C# file, to open the C# file and add the PercentTextBox to the application. 
 
-C#
+{% highlight c# %}
+ 
+    [C#]
 
-
-
-public partial class MainWindow : Window
+    public partial class MainWindow : Window
 
     {
 
@@ -468,23 +463,28 @@ public partial class MainWindow : Window
 
      }
 
+ {% endhighlight %}
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+
+
+
+
+
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
 > _Note:If you do not set any PercentValue to the PercentTextBox then the default value will be as follows:_
 
 > _If the UseNullOption is set to true then, Value of the NullValue property will be the default value. Otherwise Zero will be the default value (based on the MinValue and MaxValue the default value will change)._
 
-See Also
+## See Also
 
 Creating a PercentTextBox by using XAML
 
 Creating a PercentTextBox by using Expression Blend
 
-### Creating a PercentTextBox by using XAML
+# Creating a PercentTextBox by using XAML
 
 The steps to create a PercentTextBox by using Visual Studio in XAML are as follows:
 
@@ -494,17 +494,16 @@ The steps to create a PercentTextBox by using Visual Studio in XAML are as follo
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
 
 
 4. On the Properties window, customize the properties of the CurrencyTextBox.
 
-XAML
+ {% highlight xml %}
 
+    [XAML]
 
-
-<Window x:Class="WpfApp.MainWindow"
+    <Window x:Class="WpfApp.MainWindow"
 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
@@ -522,17 +521,22 @@ XAML
 
 </Window>
 
+ {% endhighlight %}
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
 
 
-See Also
+
+
+
+![](Getting-Started_images/Getting-Started_img8.png)
+
+
+## See Also
 
 Creating a PercentTextBox by using Expression Blend
 
-### Creating a PercentTextBox by using Expression Blend
+# Creating a PercentTextBox by using Expression Blend
 
 The steps to create a PercentTextBox in the application by using Expression Blend are as follows:
 
@@ -541,14 +545,12 @@ The steps to create a PercentTextBox in the application by using Expression Blen
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
 
 
 3. In the Project types panel, select WPF Application and then click OK.
 
-{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img10.png)
 
 
 4. Add the following reference with the sample project:
@@ -558,17 +560,16 @@ The steps to create a PercentTextBox in the application by using Expression Blen
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img11.png)
 
 
 6. Drag the PercentTextBox control to Design View.
 
-{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img12.png)
 
+ {% highlight xml %}
 
-XAML
+    [XAML]
 
 
 
@@ -590,13 +591,16 @@ XAML
 
 </Window>
 
+ {% endhighlight %}
 
 
-{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
-{:.image }
 
 
-See Also
+
+![](Getting-Started_images/Getting-Started_img13.png)
+
+
+## See Also
 
 Creating a PercentTextBox by using XAML
 
@@ -604,7 +608,7 @@ Creating a PercentTextBox by using C#
 
 Blendability
 
-## Setting Value
+# Setting Value
 
 You have to use the PercentValue property to set value for the PercentTextBox.
 
@@ -620,17 +624,16 @@ C# percentTextBox.PercentValue = 100;</td></tr>
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img14.png)
 
 
-See Also
+## See Also
 
 Minimum and Maximum Value
 
 NullValue support
 
-### Setting Minimum and Maximum Value
+# Setting Minimum and Maximum Value
 
 You can set the Minimum and Maximum value by using the MinVal and MaxVal properties of the PercentTextBox.
 
@@ -644,11 +647,10 @@ C# percentTextBox.MinValue = -999.99;percentTextBox.MaxValue = 999.99;</td></tr>
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img15.png)
 
 
-## Setting Watermark
+# Setting Watermark
 
 You can set the Watermark for the PercentTextBox by using the WatermarkText property. To enable Watermark, you have to set the WatermarkTextIsVisible property to true.
 
@@ -664,11 +666,10 @@ C# percentTextBox.UseNullOption = true;percentTextBox.NullValue = null;percentTe
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img16.png)
 
 
-See Also
+## See Also
 
 WatermarkTemplate
 

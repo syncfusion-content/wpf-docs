@@ -11,9 +11,11 @@ documentation: ug
 
 The OlapGrid Data can be exported to Excel, Word and PDF file formats. The OlapGrid data can be exported using the following methods of OlapGrid.
 
-## Excel Export
+# Excel Export
 
-[C#]
+  {% highlight c# %}
+
+    [C#]
 
 
 
@@ -21,11 +23,15 @@ The OlapGrid Data can be exported to Excel, Word and PDF file formats. The OlapG
 
 this.OlapGrid1.ExportToExcel("fileName");
 
+    {% endhighlight %}
 
 
 
 
-[VB]
+
+  {% highlight vbnet %}
+
+   [VB]
 
 
 
@@ -33,17 +39,22 @@ this.OlapGrid1.ExportToExcel("fileName");
 
 Me.OlapGrid1.ExportToExcel("fileName")
 
-
-
-{{ '![Excel Export](Export_images/Export_img1.png)' | markdownify }}
-{:.image }
+    {% endhighlight %}
 
 
 
 
-### Word Export
 
-[C#]
+![Excel Export](Export_images/Export_img1.png)
+
+
+
+
+# Word Export
+
+  {% highlight c# %}
+
+    [C#]
 
 
 
@@ -51,11 +62,15 @@ Me.OlapGrid1.ExportToExcel("fileName")
 
 this.OlapGrid1.ExportToWord("fileName");
 
+    {% endhighlight %}
 
 
 
 
- [VB]
+
+  {% highlight vbnet %}
+
+     [VB]
 
 
 
@@ -63,17 +78,22 @@ this.OlapGrid1.ExportToWord("fileName");
 
 Me.OlapGrid1.ExportToWord("fileName")
 
+    {% endhighlight %}
 
 
 
 
-{{ '![Word Export](Export_images/Export_img2.png)' | markdownify }}
-{:.image }
 
 
-## Pdf Export
 
-[C#]
+![Word Export](Export_images/Export_img2.png)
+
+
+# Pdf Export
+
+  {% highlight c# %}
+
+    [C#]
 
 
 
@@ -81,11 +101,15 @@ Me.OlapGrid1.ExportToWord("fileName")
 
 this.OlapGrid1.ExportToPdf("fileName");
 
+    {% endhighlight %}
 
 
 
 
-[VB]
+
+  {% highlight vbnet %}
+
+    [VB]
 
 
 
@@ -93,44 +117,47 @@ this.OlapGrid1.ExportToPdf("fileName");
 
 Me.OlapGrid1.ExportToPdf("fileName")
 
+    {% endhighlight %}
 
 
 
 
-{{ '![](Export_images/Export_img3.png)' | markdownify }}
-{:.image }
+
+
+
+![](Export_images/Export_img3.png)
 
 
 The Format state of Grid is maintained on exported documents. 
 
 
 
-Sample Location
+## Sample Location
 
 A sample demo is available at the following location:
 
 ..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Exporting\Exporting Grid Demo
 
-## CSV Export
+# CSV Export
 
 OLAP Grid for WPF provides support to export itself to CSV file format. 
 
-Use Case Scenarios 
+## Use Case Scenarios 
 
 You can export the contents of the OLAP Grid to the CSV file format for future references and analysis purposes.
 
-Methods
+## Methods
 
 _Methods_
 
 <table>
 <tr>
 <td>
-Method</td><td>
-Description</td><td>
-Parameters</td><td>
-Type</td><td>
-Return Type</td></tr>
+{{ '**Method**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Parameters**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Return Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 Export(string filename)</td><td>
@@ -148,15 +175,15 @@ void</td></tr>
 </table>
 
 
-Adding CSV Export for OLAP Grid in an application
+## Adding CSV Export for OLAP Grid in an application
 
 The GridCsvExport class provides you support for exporting data from OLAP Grid to a CSV file format. Add the following dll along with the default dll’s in the reference folder: 
 
 * Syncfusion.OlapGridConverter.Wpf
 
+  {% highlight c# %}
 
-
-[C#] 
+    [C#] 
 
 SaveFileDialog saveFileDialog = new SaveFileDialog();
 
@@ -186,9 +213,13 @@ if (saveFileDialog.ShowDialog() == true)
 
 }
 
+    {% endhighlight %}
 
 
-[VB]
+
+  {% highlight vbnet %}
+
+   [VB]
 
 Dim saveFileDialog As New SaveFileDialog()
 
@@ -214,13 +245,16 @@ End If
 
 End If
 
+    {% endhighlight %}
 
 
-{{ '![](Export_images/Export_img4.png)' | markdownify }}
-{:.image }
 
 
-Sample Link
+
+![](Export_images/Export_img4.png)
+
+
+## Sample Link
 
 {Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version    number>\BI\WPF\OlapGrid.Wpf\Samples\Exporting\Exporting Demo
 

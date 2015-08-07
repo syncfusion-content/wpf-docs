@@ -7,7 +7,7 @@ control: OLAP Chart
 documentation: ug
 ---
 
-## Syncfusion OLAP Architecture
+# Syncfusion OLAP Architecture
 
 Syncfusion's OLAP architecture allows you to build a full life cycle Reporting solution for your enterprise. The important pieces of the architecture are as follows:
 
@@ -17,21 +17,19 @@ Syncfusion's OLAP architecture allows you to build a full life cycle Reporting s
 
 Let us see how the Syncfusion OLAP components allow you to build a full life cycle Reporting solution for your enterprise.
 
-{{ '![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img1.png)' | markdownify }}
-{:.image }
+![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img1.png)
 
 
-### Class Structure Diagram
+# Class Structure Diagram
 
-{{ '![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img2.png)' | markdownify }}
-{:.image }
+![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img2.png)
 
 
-#### Properties, Methods, and Events
+# Properties, Methods, and Events
 
-##### Class: OlapChart
+# Class: OlapChart
 
-###### Public Properties
+# Public Properties
 
 _Public Properties table_
 
@@ -105,7 +103,7 @@ Gets or sets the KPI alignment.</td></tr>
 PrimaryAxisLabelVisibility</td><td>
 Gets or sets the primary axis label visibility.</td></tr>
 </table>
-###### Public Methods
+# Public Methods
 
 _Public Methods table_
 
@@ -139,7 +137,7 @@ Sets the chart appearance settings.</td></tr>
 ShowAppearanceDialog</td><td>
 Displays the chart appearance customization dialog. It can be used for customizing the chart appearance properties.</td></tr>
 </table>
-###### Public Events
+# Public Events
 
 _Public Events table_
 
@@ -153,9 +151,9 @@ Occurs before the refresh of the OLAP area.</td></tr>
 AfterRefresh</td><td>
 Occurs after the refresh of the OLAP area.</td></tr>
 </table>
-##### Class: OlapArea
+# Class: OlapArea
 
-###### Public Properties
+# Public Properties
 
 _Public Properties table_
 
@@ -181,7 +179,7 @@ Gets or sets the primary olap axis.</td></tr>
 Series</td><td>
 Gets or sets the read only collection of the series.</td></tr>
 </table>
-###### Public Methods
+# Public Methods
 
 _Public Methods table_
 
@@ -203,7 +201,7 @@ Invoked whenever application code or internal processes call ApplyTemplate().</t
 UpdateKPIValues</td><td>
 Updates the KPI values.</td></tr>
 </table>
-###### Public Events
+# Public Events
 
 _Public Events table_
 
@@ -217,9 +215,9 @@ Occurs before the refresh of the OLAP area.</td></tr>
 AfterRefresh</td><td>
 Occurs after the refresh of the OLAP area.</td></tr>
 </table>
-##### Class: OlapChartAxis
+# Class: OlapChartAxis
 
-###### Public Properties
+# Public Properties
 
 _Public Properties table_
 
@@ -243,7 +241,7 @@ Gets or sets the ShowGroupLineStroke. This is a dependency property.</td></tr>
 </table>
 
 
-See also
+## See also
 
 ChartAxis
 

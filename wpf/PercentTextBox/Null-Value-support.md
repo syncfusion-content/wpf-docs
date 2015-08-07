@@ -23,8 +23,7 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 1
 
 In this sample, the NullValue (NullValue = 1) is set to the Value property of the PercentTextBox because the default value of the PercentValue property is zero.
 
-{{ '![](Null-Value-support_images/Null-Value-support_img1.png)' | markdownify }}
-{:.image }
+![](Null-Value-support_images/Null-Value-support_img1.png)
 
 
 <table>
@@ -39,11 +38,10 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 1
 
 In this sample, the NullValue (NullValue = null) is set to the Value property of the PercentTextBox. (Default value of the PercentValue property is zero).
 
-{{ '![](Null-Value-support_images/Null-Value-support_img2.png)' | markdownify }}
-{:.image }
+![](Null-Value-support_images/Null-Value-support_img2.png)
 
 
-See Also
+## See Also
 
 Binding Support
 

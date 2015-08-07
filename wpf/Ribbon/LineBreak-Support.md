@@ -26,10 +26,7 @@ Following code sample illustrates how to use Hyphen (-) to display the labels in
 [C#]ribbonButton.Label = "Ribbon-Button";splitButton.Label = "Split-Button";dropdownButton.Label = "DropDown-Button";</td></tr>
 </table>
 
-
-{{ '![](LineBreak-Support_images/LineBreak-Support_img1.jpeg)' | markdownify }}
-{:.image }
-
+![](LineBreak-Support_images/LineBreak-Support_img1.jpeg)
 
 
 

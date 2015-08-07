@@ -11,21 +11,21 @@ documentation: ug
 
 Right-to-left support has been provided for the OLAP Grid control for WPF. Users can now display content from right to left by setting the flow direction option in the control. 
 
-Use Case Scenario
+## Use Case Scenario
 
 Some cultures have a written language that reads from right to left. Controls deployed for such cultures should be rendered from right to left. In these cases, we can utilize RTL support of the OLAP Gauge component. 
 
-Properties
+## Properties
 
 _Property Table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 FlowDirection</td><td>
@@ -33,35 +33,50 @@ Gets or sets the flow direction for the OLAP Grid control.</td><td>
 Normal</td><td>
 enum</td></tr>
 </table>
-## Adding RTL support for OLAP Grid in an application 
+# Adding RTL support for OLAP Grid in an application 
 
 To enable RTL support, the FlowDirection property of the OLAP Grid control needs to be set as RightToLeft. The following code sample explains how to set the FlowDirection property. It can be set through XAML or C# code.
 
-[XAML]
+  {% highlight xml %}
+
+   [XAML]
 
 <syncfusion:OlapGrid x:Name="olapGrid" FlowDirection="RightToLeft" ReportName="SalesReport" SharedDataManagerName="localManager" olapshared:DataSource.DataManagerName="localManager">  
 
 
+    {% endhighlight %}
 
-[C#]
+
+  {% highlight c# %}
+
+   [C#]
 
   this.olapGrid.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
+    {% endhighlight %}
 
 
-[VB]
+
+
+
+    {% highlight vbnet %}
+
+    [VB]
 
   Me.olapGrid.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
+    {% endhighlight %}
 
 
-{{ '![](RTL-Support_images/RTL-Support_img1.png)' | markdownify }}
-{:.image }
+
+
+
+![](RTL-Support_images/RTL-Support_img1.png)
 
 
 _RTL support for OLAP Grid_
 
-Sample Link
+## Sample Link
 
 A sample is locally available in the following location:
 

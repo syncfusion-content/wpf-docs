@@ -30,9 +30,7 @@ The following code snippet illustrates how to set keytip for SplitMenuButton Pop
 </table>
 
 
-{{ '![](SplitMenuButton-Popup-KeyTip_images/SplitMenuButton-Popup-KeyTip_img1.jpeg)' | markdownify }}
-{:.image }
-
+![](SplitMenuButton-Popup-KeyTip_images/SplitMenuButton-Popup-KeyTip_img1.jpeg)
 
 
 

@@ -15,15 +15,17 @@ The filter criteria are specified by the OlapGridDataConditionalFormat.Condition
 
 The style for each ConditionalFormat can be specified using OlapGridDataConditionalFormat.CellStyle property which should be of type OlapGridCellStyle.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 Conditional Formatting can be used in Marketing scenarios, where you can easily track the product sales rate of different regions.
 
-Adding Conditional Formatting 
+## Adding Conditional Formatting 
 
 The following code snippets show how to create an OlapGrid and to add Conditional Formats.
 
-[XAML]
+  {% highlight xml %}
+
+    [XAML]
 
 <syncfusion:OlapGrid>
 
@@ -57,11 +59,15 @@ The following code snippets show how to create an OlapGrid and to add Conditiona
 
 </syncfusion:OlapGrid>
 
+    {% endhighlight %}
 
 
 
 
-[C#]
+
+  {% highlight c# %}
+
+    [C#]
 
 OlapGrid olapGrid1 = new OlapGrid();
 
@@ -121,11 +127,15 @@ this.olapgrid1.ConditionalFormats.Add(conditionalFormat);
 
 this.olapgrid1.DataBind();
 
+    {% endhighlight %}
 
 
 
 
-[VB]
+
+  {% highlight vbnet %}
+
+    [VB]
 
 Dim olapGrid1 As OlapGrid = New OlapGrid()
 
@@ -173,15 +183,18 @@ Me.olapgrid1.ConditionalFormats.Add(conditionalFormat)
 
 Me.olapgrid1.DataBind()
 
+    {% endhighlight %}
 
 
 
 
-{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/OlapGridConditionalFormatting.png](Conditional-Formatting_images/Conditional-Formatting_img1.png)' | markdownify }}
-{:.image }
 
 
-Sample Link
+
+![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/OlapGridConditionalFormatting.png](Conditional-Formatting_images/Conditional-Formatting_img1.png)
+
+
+## Sample Link
 
 ..\..\ Syncfusion\BI\WPF\OlapGrid.WPF\Samples\Appearance\Conditional Formatting Demo
 

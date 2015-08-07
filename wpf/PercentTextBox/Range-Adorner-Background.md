@@ -11,27 +11,26 @@ documentation: ug
 
 The RangeAdornerBackground property is used to set the background color of the range adorner. 
 
-{{ '![](Range-Adorner-Background_images/Range-Adorner-Background_img1.png)' | markdownify }}
-{:.image }
+![](Range-Adorner-Background_images/Range-Adorner-Background_img1.png)
 
 
-Properties
+## Properties
 
 _Property table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Data Type </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 RangeAdornerBackground</td><td>
 Sets the background color of the adorner.</td><td>
 Color name</td></tr>
 </table>
-## Adding Range Adorner Background to an Application 
+# Adding Range Adorner Background to an Application 
 
 We have to set the RangeAdornerBackground property either in XAML or the code file.
 

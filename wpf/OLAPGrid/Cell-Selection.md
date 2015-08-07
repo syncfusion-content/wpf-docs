@@ -11,15 +11,17 @@ documentation: ug
 
 OlapGrid for WPF supports excel like cell selection where you can select grid value cells as like in MS-Excel. On cell selection, an event called OlapGridSelectionChanged will be triggered and the OlapGridSelectionChangedEventArgs will return an IEnumerable collection of column, row and value of the corresponding selected cell. The EventArgs will also return the cell range and the selection reason like mousedown, mousemove, mouseup etc.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 Using Cell Selection, you can select cells that can be copied to clipboard or notepad. You can perform custom operation on cell selection and also can bind any control based on the selected cell values.
 
-Adding Cell Selection 
+## Adding Cell Selection 
 
 The following code snippets show how to create an OlapGrid and specify its cell selection.
 
-[XAML]
+  {% highlight xml %}
+
+    [XAML]
 
 <!--Adding OlapGrid and Enabling Cell Selection-->
 
@@ -27,11 +29,15 @@ The following code snippets show how to create an OlapGrid and specify its cell 
 
 </syncfusion:OlapGrid>
 
+    {% endhighlight %}
 
 
 
 
-[C#]
+
+  {% highlight c# %}
+
+    [C#]
 
 OlapGrid OlapGrid1 = new OlapGrid();
 
@@ -55,11 +61,15 @@ this.OlapGrid1.AllowSelection = true;
 
 this.OlapGrid1.DataBind();
 
+    {% endhighlight %}
 
 
 
 
-[VB]
+
+  {% highlight vbnet %}
+
+    [VB]
 
 
 
@@ -85,17 +95,20 @@ Me.OlapGrid1.AllowSelection = True
 
 Me.OlapGrid1.DataBind()
 
+    {% endhighlight %}
+
+
+
 
 
 
 
 The screenshot below illustrates the Cell Selection.
 
-{{ '![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/OlapGrid Cell Selection.png](Cell-Selection_images/Cell-Selection_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/OlapGrid Cell Selection.png](Cell-Selection_images/Cell-Selection_img1.png)
 
 
-Sample Link
+## Sample Link
 
 A sample application that illustrates Cell Selection Chart is distributed along with the Essential OLAP Grid WPF installation and can be found at:  
 

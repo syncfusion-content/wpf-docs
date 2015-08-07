@@ -11,13 +11,13 @@ documentation: ug
 
 Drill position feature enables the user to drill only the current position of a selected member in the OlapReport. This will exclude the drilled data of the selected member in other positions by using MDX query.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 This feature is useful when the objective of analysis is to view the drilled data only in current position of selected member.
 
-Tables for Properties, Methods, and Events
+## Tables for Properties, Methods, and Events
 
-Properties
+### Properties
 
 _Property Table_
 
@@ -37,37 +37,51 @@ Enum</td></tr>
 </table>
 
 
-Sample Link
+## Sample Link
 
 A sample is available in the following locations:
 
-Windows XP
+## Windows XP
 
 ..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapChart.WPF\Samples\Data Relation\Drill Types Demo
 
-Windows 7/Vista
+## Windows 7/Vista
 
 C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\x.x.x.x\BI\WPF\OlapChart.WPF\Samples\Data Relation\Drill Types Demo
 
-## Adding Drill Position to an Application 
+# Adding Drill Position to an Application 
 
 The following code snippet explains the implementation of Drill Position feature in an application:
 
-[CS]
+ {% highlight c# %}
+ 
+   [CS]
 
 
 
 dataManager.CurrentReport.DrillType = DrillType.DrillPosition;
 
+ {% endhighlight %}
 
 
 
 
-[VB]
+ {% highlight vbnet %}
+  
+ [VB]
 
 
 
 dataManager.CurrentReport.DrillType = DrillType.DrillPosition
+
+ {% endhighlight %}
+
+
+
+
+
+
+
 
 
 

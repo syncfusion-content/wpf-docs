@@ -11,21 +11,21 @@ documentation: ug
 
 XAML configuration is one of the important features of OlapGauge, as it helps the user to configure the control entirely using XAML by eliminating the required code in code behind. 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 If the user wants to perform the entire configuration in XAML , then this feature will help the user to set the Data source, Report and UI properties simply and elegantly using XAML.
 
-Properties 
+## Properties 
 
 _Property Table_
 
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 DataSource.ConnectionString</td><td>
@@ -89,11 +89,13 @@ CalculatedMembers</td></tr>
 </table>
 
 
-Adding a Report to OLAP Gauge
+## Adding a Report to OLAP Gauge
 
 Adding an OLAP report to OLAP Gauge control in design time is described in the following code snippet:
 
-[XAML]
+ {% highlight xml %}
+
+    [XAML]
 
 <syncfusion:OlapGauge x:Name="olapChart" 
 
@@ -137,17 +139,20 @@ olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=a
 
 </syncfusion:OlapGauge>
 
+ {% endhighlight %}
 
 
 
 
-{{ '![](XAML-Configuration_images/XAML-Configuration_img1.png)' | markdownify }}
-{:.image }
+
+
+
+![](XAML-Configuration_images/XAML-Configuration_img1.png)
 
 
 _OLAP Gauge with SalesReport created by XAML code_
 
-Sample Link
+## Sample Link
 
 A sample demo is available at the following link:     
 

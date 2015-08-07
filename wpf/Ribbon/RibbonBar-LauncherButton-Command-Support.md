@@ -17,7 +17,7 @@ Ribbon instance now provides command support for RibbonBar LauncherButton. It pr
 
 
 
-Setting RibbonBar LauncherButton Command
+## Setting RibbonBar LauncherButton Command
 
 Command for RibbonBar LauncherButton can be set using LauncherCommand attached property. The following code example illustrates this.
 

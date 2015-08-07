@@ -9,7 +9,7 @@ documentation: ug
 
 # Culture and Number Formats
 
-## Culture
+# Culture
 
 PercentTextBox provides globalization support through the Culture property. 
 
@@ -23,8 +23,7 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 1
 </table>
 
 
-{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)' | markdownify }}
-{:.image }
+![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
 
 
 <table>
@@ -37,13 +36,12 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 1
 </table>
 
 
-{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)' | markdownify }}
-{:.image }
+![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)
 
 
 As you have seen in these samples whenever you change the Culture property the PercentValue is formatted based on the Culture.
 
-## Number Format
+# Number Format
 
 You can customize the Number Format either by using the Number Format property or the PercentGroupSeparator, PercentGroupSizes, PercentDecimalDigits, PercentDecimalSeparator, PercentNegativePattern, PercentPositivePattern, and PercentageSymbol properties.
 
@@ -67,11 +65,10 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 1
 </table>
 
 
-{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)' | markdownify }}
-{:.image }
+![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)
 
 
-### PercentPositivePattern
+# PercentPositivePattern
 
 Gets or sets the format pattern for the positive percent values. In the table displayed below “%” denotes the Percent symbol and n denotes the number.
 
@@ -80,8 +77,8 @@ _PercentPositivePattern table_
 <table>
 <tr>
 <td>
-Value </td><td>
-Associated Pattern </td></tr>
+{{ '**Value**' | markdownify }}</td><td>
+{{ '**Associated Pattern**' | markdownify }}</td></tr>
 <tr>
 <td>
 0</td><td>
@@ -100,22 +97,26 @@ n%</td></tr>
 % n</td></tr>
 </table>
 
+ {% highlight xml %}
 
-XAML
+    [XAML]
 
-
-
+    
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 
 
             PercentValue="1234" PercentPositivePattern="3"/>
 
+ {% endhighlight %}
 
 
-{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)' | markdownify }}
-{:.image }
 
 
-### PercentNegativePattern
+
+
+![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)
+
+
+# PercentNegativePattern
 
 Gets or sets the format pattern for the negative percent values. In the table displayed below “%” denotes the Percent symbol and n denotes the number.
 
@@ -124,8 +125,8 @@ _PercentNegativePattern table_
 <table>
 <tr>
 <td>
-Value </td><td>
-Associated Pattern </td></tr>
+{{ '**Value**' | markdownify }}</td><td>
+{{ '**Associated Pattern**' | markdownify }}</td></tr>
 <tr>
 <td>
 0</td><td>
@@ -176,18 +177,22 @@ n %-</td></tr>
 n- %</td></tr>
 </table>
 
+ {% highlight xml %}
 
-XAML
+    [XAML]
 
-
-
+    
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 
 
             PercentValue="1234" PercentNegativePattern="7"/>
 
+ {% endhighlight %}
 
 
-{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)' | markdownify }}
-{:.image }
+
+
+
+
+![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img5.png)
 
 

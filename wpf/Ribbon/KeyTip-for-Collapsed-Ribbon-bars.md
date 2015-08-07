@@ -15,15 +15,18 @@ To display KeyTip for Collapsed Ribbon Bars
 
 The KeyTips are displayed for the Collapsed RibbonBar.
 
+{% highlight xml %}
 
+    [XAML]
 
-<syncfusion:RibbonBar KeyTipOnCollapsed="FS" Header="Font">
+   <syncfusion:RibbonBar KeyTipOnCollapsed="FS" Header="Font">
 <syncfusion:RibbonButton  />
 
 
 
 </syncfusion:RibbonBar>
 
+ {% endhighlight %}
 
 
 
@@ -32,8 +35,10 @@ The KeyTips are displayed for the Collapsed RibbonBar.
 
 
 
-{{ '![](KeyTip-for-Collapsed-Ribbon-bars_images/KeyTip-for-Collapsed-Ribbon-bars_img1.png)' | markdownify }}
-{:.image }
+
+
+
+![](KeyTip-for-Collapsed-Ribbon-bars_images/KeyTip-for-Collapsed-Ribbon-bars_img1.png)
 
 
 
@@ -42,13 +47,12 @@ The KeyTips are displayed for the Collapsed RibbonBar.
 
 
 
-{{ '![C:/Users/riaj/Desktop/David/keytiponcollapsed.png](KeyTip-for-Collapsed-Ribbon-bars_images/KeyTip-for-Collapsed-Ribbon-bars_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/riaj/Desktop/David/keytiponcollapsed.png](KeyTip-for-Collapsed-Ribbon-bars_images/KeyTip-for-Collapsed-Ribbon-bars_img2.png)
 
 
 
 
-Samples Link
+## Samples Link
 
 To view samples:
 
@@ -57,17 +61,16 @@ To view samples:
 
 
 
-{{ '![](KeyTip-for-Collapsed-Ribbon-bars_images/KeyTip-for-Collapsed-Ribbon-bars_img3.png)' | markdownify }}
-{:.image }
+![](KeyTip-for-Collapsed-Ribbon-bars_images/KeyTip-for-Collapsed-Ribbon-bars_img3.png)
 
 
 
 
 The WPF Sample Browser window is displayed.
 
-Properties, Methods and Events tables
+## Properties, Methods and Events tables
 
-Properties
+### Properties
 
 
 
@@ -76,11 +79,11 @@ _Property table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 KeyTipOnCollapsed</td><td>

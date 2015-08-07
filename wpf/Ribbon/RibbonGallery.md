@@ -13,17 +13,16 @@ Ribbon instance now allows the users to add a Gallery control in both Ribbon, as
 
 
 
-{{ '![](RibbonGallery_images/RibbonGallery_img1.jpeg)' | markdownify }}
-{:.image }
+![](RibbonGallery_images/RibbonGallery_img1.jpeg)
 
 
 
 
-See Also
+## See Also
 
 RibbonGalleryGroup, GalleryFilter
 
-## Visual Modes
+# Visual Modes
 
 RibbonGallery has two visual modes namely Drop-Down and In Ribbon. 
 
@@ -34,9 +33,9 @@ RibbonGallery has two visual modes namely Drop-Down and In Ribbon.
 
 Use the following code snippet to add an InRibbon RibbonGallery control to a Ribbon. 
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 
 
@@ -44,17 +43,20 @@ Use the following code snippet to add an InRibbon RibbonGallery control to a Rib
 
 
 
-{{ '![](RibbonGallery_images/RibbonGallery_img2.jpeg)' | markdownify }}
-{:.image }
+ {% endhighlight %}
+
+
+
+![](RibbonGallery_images/RibbonGallery_img2.jpeg)
 
 
 
 
 The following code snippet is used to add a DropDown RibbonGallery control to a Ribbon.
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 
 
@@ -62,20 +64,22 @@ The following code snippet is used to add a DropDown RibbonGallery control to a 
 
 
 
-{{ '![](RibbonGallery_images/RibbonGallery_img3.jpeg)' | markdownify }}
-{:.image }
+ {% endhighlight %}
+
+
+
+![](RibbonGallery_images/RibbonGallery_img3.jpeg)
 
 
 
 
-## Ribbon Gallery Items
+# Ribbon Gallery Items
 
 Ribbon Gallery Items are the contents of the Ribbon Gallery Group. Ribbon Gallery Items does not restrict the users with the type of content to be added to it. You can add a Ribbon Gallery Item to a Text Box, Combo Box, Image, Button, Chart controls, and so on. 
 
 Use the following code snippet to add a Ribbon Gallery Items.
 
-
-
+{% highlight xml %}
 [XAML]
 
 
@@ -86,17 +90,21 @@ Use the following code snippet to add a Ribbon Gallery Items.
 
 </ribbon:RibbonGalleryItem>
 
+ {% endhighlight %}
 
 
-## Ribbon Gallery Groups
+
+
+
+# Ribbon Gallery Groups
 
 Ribbon Gallery Group is a collection of Ribbon Gallery Items. Ribbon Gallery Groups are used to group the items in the Ribbon Gallery control based on some classifications. 
 
 Use the following code to add a Ribbon Gallery Group to the Ribbon Gallery control.
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 
 
@@ -110,21 +118,25 @@ Use the following code to add a Ribbon Gallery Group to the Ribbon Gallery contr
 
 </ribbon:RibbonGallery.GalleryGroups>
 
+ {% endhighlight %}
 
 
-See Also
+
+
+
+## See Also
 
 RibbonGallery, GalleryFilter
 
-## GalleryFilter
+# GalleryFilter
 
 GalleryGroupFilters is added to the RibbonGallery control, so that only a particular RibbonGalleryGroup is displayed. FilterIndexes property is used to specify the indexes of the filters when selected and the RibbonGalleryGroup should be displayed. 
 
 To specify the GalleryFilters of the RibbonGallery, use the below code
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 
 
@@ -186,31 +198,34 @@ To specify the GalleryFilters of the RibbonGallery, use the below code
 
 </ribbon:RibbonGallery>
 
+ {% endhighlight %}
+
+
+
 
 
 In the above code snippet, FilterIndexes property is set to "0,1". This denotes that the RibbonGalleryGroup should be displayed only when the GalleryFilter's index is 0 or 1.
 
 
 
-{{ '![](RibbonGallery_images/RibbonGallery_img4.jpeg)' | markdownify }}
-{:.image }
+![](RibbonGallery_images/RibbonGallery_img4.jpeg)
 
 
 
 
-See Also
+## See Also
 
 RibbonGallery, RibbonGalleryGroup
 
 
 
-## Adding Custom Menu Items
+# Adding Custom Menu Items
 
 In the expanded Gallery items (in both the Visual Mode), it is possible to add custom menu items to the bottom of the Ribbon Gallery control, using the MenuItem attached logic. The following code snippet will explain in detail.
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 
 
@@ -238,14 +253,17 @@ In the expanded Gallery items (in both the Visual Mode), it is possible to add c
 
 </syncfusion:RibbonGallery>
 
+ {% endhighlight %}
+
+
+
 
 
 This displays the gallery item with three custom Menu items at the bottom of the Gallery control. 
 
 
 
-{{ '![](RibbonGallery_images/RibbonGallery_img5.jpeg)' | markdownify }}
-{:.image }
+![](RibbonGallery_images/RibbonGallery_img5.jpeg)
 
 
 

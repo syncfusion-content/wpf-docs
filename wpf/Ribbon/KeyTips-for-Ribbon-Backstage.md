@@ -11,11 +11,11 @@ documentation: ug
 
 The backstage feature of the Ribbon control provides KeyTip support to display KeyTips when users press the Alt key.
 
-To display KeyTips for Ribbon Backstage
+## To display KeyTips for Ribbon Backstage
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 <syncfusion:Backstage x:Name="RibbonBackStage" syncfusion:Ribbon.KeyTip="B">
 
@@ -35,11 +35,14 @@ To display KeyTips for Ribbon Backstage
 
 </syncfusion:Backstage>
 
+ {% endhighlight %}
 
 
 
 
-{{ '![](KeyTips-for-Ribbon-Backstage_images/KeyTips-for-Ribbon-Backstage_img1.png)' | markdownify }}
-{:.image }
+
+
+
+![](KeyTips-for-Ribbon-Backstage_images/KeyTips-for-Ribbon-Backstage_img1.png)
 
 

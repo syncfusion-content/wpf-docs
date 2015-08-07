@@ -13,14 +13,12 @@ With the new Ribbon instance, you can scroll the Ribbon Tab and Ribbon Bar to an
 
 
 
-{{ '![](Scrolling-Ribbon-Tab-and-Ribbon-Bar_images/Scrolling-Ribbon-Tab-and-Ribbon-Bar_img1.jpeg)' | markdownify }}
-{:.image }
+![](Scrolling-Ribbon-Tab-and-Ribbon-Bar_images/Scrolling-Ribbon-Tab-and-Ribbon-Bar_img1.jpeg)
 
 
 
 
-{{ '![](Scrolling-Ribbon-Tab-and-Ribbon-Bar_images/Scrolling-Ribbon-Tab-and-Ribbon-Bar_img2.jpeg)' | markdownify }}
-{:.image }
+![](Scrolling-Ribbon-Tab-and-Ribbon-Bar_images/Scrolling-Ribbon-Tab-and-Ribbon-Bar_img2.jpeg)
 
 
 

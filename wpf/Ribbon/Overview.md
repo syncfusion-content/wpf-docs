@@ -11,7 +11,7 @@ documentation: ug
 
 Ribbon illustrates the implementation of Office2007 UI, which is a new UI layout designed by Microsoft in its new Office 2007 package. Our product exposes most of the features of the new UI and keeps intact with the WPF architecture. Configuring and designing the layout is very easy through XAML code. RibbonWindow has been implemented for giving a themed Office 2007 UI look and feel for the traditional window. Users can use full functionality of keyboard navigation, Keytips are provided for faster access to items present in the ribbon. Enhanced tooltips helps the users to gel into the application very easily.
 
-Features
+## Features
 
 * Provides a ribbon window that overrides the default window and shows the window in Office 2007 style.
 * Provides full layout like Office 2007 UI.

@@ -9,32 +9,32 @@ documentation: ug
 
 # Getting Started
 
-## Configuring OLAP Grid Control
+# Configuring OLAP Grid Control
 
 This segment explains how to configure an OLAP Grid component in an application. You can also learn how to pass the required data to OLAP Grid and to customize its various options according to your requirements.
 
 In the following example, the OLAP Grid component displays Internet Sales Amount over different fiscal years against various geographical locations. This helps you analyze the summarized data over different fiscal years.
 
-### Through Visual Studio
+# Through Visual Studio
 
 1. Open Visual Studio IDE and from the File menu, select New  Project.
 2. In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application and Click OK.
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 3. Drag and drop OLAP Grid control from Syncfusion BI WPF toolbox onto the Design page. The required Syncfusion assemblies are added automatically to the application.
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
 4. Add name for OLAP Grid in the XAML page to access it from code behind.
 
-[XAML]
+ ~~~ xml
 
-<Window x:Class="WpfApplication.MainWindow1"
+    [XAML]
+
+    <Window x:Class="WpfApplication.MainWindow1"
 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
@@ -46,9 +46,14 @@ In the following example, the OLAP Grid component displays Internet Sales Amount
 
         <syncfusion:OlapGrid Name="olapGrid1" HorizontalAlignment="Left" Margin="248,137,0,0" VerticalAlignment="Top"/>
 
-   </Grid>
+    </Grid>
 
-</Window>
+    </Window>
+	
+  ~~~
+  {:.pretty-print }
+
+    
 
 
 
@@ -56,25 +61,25 @@ In the following example, the OLAP Grid component displays Internet Sales Amount
 1. Syncfusion.Olap.Manager
 2. Syncfusion.Olap.Reports
 
+ ~~~ c#
 
+    [C#]
 
-[C#]
+    using Syncfusion.Olap.Manager;
 
-using Syncfusion.Olap.Manager;
+    using Syncfusion.Olap.Reports;
 
-using Syncfusion.Olap.Reports;
+    public partial class MainWindow : SampleWindow
 
-public partial class MainWindow : SampleWindow
+    {
 
-{
+    private OlapDataManager olapDataManager = null;
 
-   private OlapDataManager olapDataManager = null;
+    private string _connectionSting = "Enter a valid connection string";
 
-   private string _connectionSting = "Enter a valid connection string";
+    public MainWindow()
 
-   public MainWindow()
-
-   {
+    {
 
        //Connection string is passed to OlapDataManager as an argument
 
@@ -92,17 +97,17 @@ public partial class MainWindow : SampleWindow
 
        this.olapGrid1.DataBind();
 
-   }
+    }
 
-   /// <summary>
+    /// <summary>
 
-   /// Defining OlapReport with Dimension and Measure
+    /// Defining OlapReport with Dimension and Measure
 
-   /// </summary>
+    /// </summary>
 
-   private OlapReport CreateOlapReport()
+    private OlapReport CreateOlapReport()
 
-   {
+    {
 
        OlapReport olapReport = new OlapReport();
 
@@ -162,25 +167,30 @@ public partial class MainWindow : SampleWindow
 
     }
 
-}
+    }
+	
+  ~~~
+  {:.pretty-print }
 
+    
 
+ ~~~ vbnet
 
-[VB]
+    [VB]
 
-Imports Syncfusion.Olap.Manager
+    Imports Syncfusion.Olap.Manager
 
-Imports Syncfusion.Olap.Reports
+    Imports Syncfusion.Olap.Reports
 
-Partial Public Class MainWindow 
+    Partial Public Class MainWindow 
 
-           Inherits SampleWindow
+    Inherits SampleWindow
 
-Private olapDataManager As OlapDataManager = Nothing
+    Private olapDataManager As OlapDataManager = Nothing
 
-Private _connectionSting As String = " Enter valid connection string;"
+    Private _connectionSting As String = " Enter valid connection string;"
 
-Private Sub MainWindow() As Public
+    Private Sub MainWindow() As Public
 
         'Connection string is passed to OlapDataManager as an argument
 
@@ -198,7 +208,7 @@ Private Sub MainWindow() As Public
 
         Me.olapGrid1.DataBind()
 
-End Sub
+    End Sub
 
       ''' <summary>
 
@@ -266,31 +276,33 @@ End Sub
 
       End Function
 
-End Class
+      End Class
+	
+ ~~~
+ {:.pretty-print }
+
+    
 
 
 
 6. Run the application.
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
-### Through Expression Blend
+# Through Expression Blend
 
 OLAP Grid control can also be created and configured using Expression Blend as illustrated here.
 
 1. Open Blend for Visual Studio and from the File menu, select New  Project.
 2. In the New Project Dialog box, click WPF item and select WPF Application, then click OK.
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 3. In Projects tab, under Solution Explorer, right-click on the project References and select Add Reference… for adding assembly to an application manually. 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
 
 
 4. Include the following assemblies to the application from the installed location.
@@ -304,17 +316,18 @@ Assembly Location: _<system drive>\Program Files(x86)\Syncfusion\Essential Studi
 
 5. After adding the above assemblies, the OlapGrid control is automatically added in the Assests. Now, find OlapGrid and drag it to the designer window.
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
 
 6. Add name for OLAP Grid in the XAML page for accessing it in code behind.
 
-[XAML]
+ ~~~ xml
 
-<Window
+    [XAML]
+
+    <Window
 
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
@@ -336,7 +349,12 @@ Assembly Location: _<system drive>\Program Files(x86)\Syncfusion\Essential Studi
 
     </Grid>
 
-</Window>
+    </Window>
+	
+ ~~~
+ {:.pretty-print }
+
+    
 
 
 
@@ -344,25 +362,25 @@ Assembly Location: _<system drive>\Program Files(x86)\Syncfusion\Essential Studi
 1. Syncfusion.Olap.Manager
 2. Syncfusion.Olap.Reports
 
+ ~~~ c#
 
+    [C#]
 
-[C#]
+    using Syncfusion.Olap.Manager;
 
-using Syncfusion.Olap.Manager;
+    using Syncfusion.Olap.Reports;
 
-using Syncfusion.Olap.Reports;
+    public partial class MainWindow : SampleWindow
 
-public partial class MainWindow : SampleWindow
+    {
 
-{
+    private OlapDataManager olapDataManager = null;
 
-   private OlapDataManager olapDataManager = null;
+    private string _connectionSting = "Enter a valid connection string";
 
-   private string _connectionSting = "Enter a valid connection string";
+    public MainWindow()
 
-   public MainWindow()
-
-   {
+    {
 
        InitializeComponent();
 
@@ -380,19 +398,19 @@ public partial class MainWindow : SampleWindow
 
        this.olapGrid1.DataBind();
 
-   }
+    }
 
 
 
-   /// <summary>
+    /// <summary>
 
-   /// Defining OlapReport with Dimension and Measure
+    /// Defining OlapReport with Dimension and Measure
 
-   /// </summary>
+    /// </summary>
 
-   private OlapReport CreateOlapReport()
+    private OlapReport CreateOlapReport()
 
-   {
+    {
 
        OlapReport olapReport = new OlapReport();
 
@@ -452,25 +470,30 @@ public partial class MainWindow : SampleWindow
 
     }
 
-}
+    }
+	
+ ~~~
+ {:.pretty-print }
 
+    
 
+ ~~~ vbnet
 
-[VB]
+   [VB]
 
-Imports Syncfusion.Olap.Manager
+    Imports Syncfusion.Olap.Manager
 
-Imports Syncfusion.Olap.Reports
+    Imports Syncfusion.Olap.Reports
 
-Partial Public Class MainWindow 
+    Partial Public Class MainWindow 
 
            Inherits SampleWindow
 
-Private olapDataManager As OlapDataManager = Nothing
+    Private olapDataManager As OlapDataManager = Nothing
 
-Private _connectionSting As String = "Enter a valid connection string"
+    Private _connectionSting As String = "Enter a valid connection string"
 
-Private Sub MainWindow() As Public
+    Private Sub MainWindow() As Public
 
         'Connection string is passed to OlapDataManager as an argument
 
@@ -488,7 +511,7 @@ Private Sub MainWindow() As Public
 
         Me.olapGrid1.DataBind()
 
-End Sub
+    End Sub
 
       ''' <summary>
 
@@ -556,29 +579,31 @@ End Sub
 
       End Function
 
-End Class
+      End Class
+	
+ ~~~
+    {:.pretty-print }
+
+    
 
 
 
 8. Run the application.
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
 
 
-### Through Code-Behind
+# Through Code-Behind
 
 1. Open Visual Studio IDE and from the File menu, select New  Project.
 2. In the New Project Dialog box, click the tree node Windows under Visual C# and select WPF Application and click OK.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
 
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
 
 
 3. Right-click References, under Solution Explorer and select Add Reference.., then add the following Syncfusion assemblies manually to the project from installed location.
@@ -596,21 +621,21 @@ Assembly Location: _<system drive>\Program Files(x86)\Syncfusion\Essential Studi
 2. Syncfusion.Olap.Manager
 3. Syncfusion.Olap.Reports
 
+ ~~~ c#
+
+    [C#]
+
+    using Syncfusion.Windows.Grid.Olap;
+
+    using Syncfusion.Olap.Manager;
+
+    using Syncfusion.Olap.Reports;
 
 
-[C#]
 
-using Syncfusion.Windows.Grid.Olap;
+    namespace WpfApplication1
 
-using Syncfusion.Olap.Manager;
-
-using Syncfusion.Olap.Reports;
-
-
-
-namespace WpfApplication1
-
-{
+    {
 
     public partial class MainWindow : Window
 
@@ -718,21 +743,26 @@ namespace WpfApplication1
 
     }
 
-}
+    }
+	
+ ~~~
+ {:.pretty-print }
+
+    
+
+ ~~~ vbnet
+
+    [VB]
+
+    Imports Syncfusion.Windows.Grid.Olap
+
+    Imports Syncfusion.Olap.Manager
+
+    Imports Syncfusion.Olap.Reports
 
 
 
-[VB]
-
-Imports Syncfusion.Windows.Grid.Olap
-
-Imports Syncfusion.Olap.Manager
-
-Imports Syncfusion.Olap.Reports
-
-
-
-Partial Public Class MainWindow
+    Partial Public Class MainWindow
 
     Inherits Window
 
@@ -834,15 +864,19 @@ Partial Public Class MainWindow
 
 
 
-End Class
+    End Class
+	
+ ~~~
+ {:.pretty-print }
+
+    
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img10.png)
 
 
-### Design-Time Binding
+# Design-Time Binding
 
 Design-time support for OLAP Grid allows you to reduce the time spent on creating and customizing the report. Normally, it takes 10 to 15 minutes for creating a report and in the case of unfamiliar cubes it may extend further, but by using design time support you can create a report in a couple of minutes.
 
@@ -852,21 +886,18 @@ Creating a Basic Report during design-time
 
 1. Drag and drop the control from the toolbox to the Visual Studio Designer surface.
 
-{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img11.png)
 
 
 2. Right-click OLAP Grid available in the designer.
 3. Then, navigate to the Configure data source -> Create/Edit data source… option in the Context Menu.
 
-{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img12.png)
 
 
 Now the Data Source Properties wizard is opened.
 
-{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img13.png)
 
 
 4. From the Data Source Properties wizard select the connection type. 
@@ -875,8 +906,7 @@ Now the Data Source Properties wizard is opened.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img14.png)
 
 
 5. When you want to test the connection, click the Test Connection button, displayed in the bottom left corner of the window.
@@ -888,8 +918,7 @@ Now the Data Source Properties wizard is opened.
 
 7. When the connection is valid, it displays the summary page of the Data Source Properties Wizard.
 
-{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img15.png)
 
 
 8. The MDX query text box in the summary page is empty, when you are creating a query for the first time. When you are editing an already existing query it displays the current query in the text box.
@@ -897,8 +926,7 @@ Now the Data Source Properties wizard is opened.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img16.png)
 
 
 10. When you are editing an existing query it displays the required dimensions in the specific axis of the query designer and the preview of that query is displayed in a Grid control.
@@ -909,8 +937,7 @@ _Note: It does not display any style/formatting applied to the Grid. It displays
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img17.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img17.png)
 
 
 12. Then, click OK, to save the query or click Cancel, to revert the changes made during this session.
@@ -918,13 +945,11 @@ _Note: It does not display any style/formatting applied to the Grid. It displays
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img18.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img18.png)
 
 
 14. Click Finish. Run the application.
 
-{{ '![](Getting-Started_images/Getting-Started_img19.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img19.png)
 
 

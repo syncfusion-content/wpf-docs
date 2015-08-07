@@ -9,7 +9,7 @@ documentation: ug
 
 # Hyperlink Cells
 
-Definition
+## Definition
 
 The OlapGrid allows hyper linking of cells to retrieve a detailed description about a particular cell. The Hyperlink Cells property of OlapGrid generates a separate event for the clicked cell to retrieve a detailed description about that cell that can be retrieved. 
 
@@ -19,11 +19,13 @@ Hyperlink Cell’s property can be applied to the following cells:
 * Row Header and 
 * Value Cell 
 
-Enabling hyperlink cells
+## Enabling hyperlink cells
 
 The Hyperlink cells can be enabled by the following property of OlapGrid such as:
 
-[C#]
+  {% highlight c# %}
+
+    [C#]
 
 
 
@@ -48,10 +50,14 @@ this.OlapGrid1.SummaryColumnStyle.IsHyperlinkCell = true;
 this.OlapGrid1.SummaryRowStyle.IsHyperlinkCell = true;
 
 
+    {% endhighlight %}
 
 
 
-[VB]
+
+  {% highlight vbnet %}
+
+    [VB]
 
 
 
@@ -75,13 +81,19 @@ Me.OlapGrid1.SummaryColumnStyle.IsHyperlinkCell = True
 
 Me.OlapGrid1.SummaryRowStyle.IsHyperlinkCell = True
 
+    {% endhighlight %}
+
+
+
 
 
 
 
 The Hyperlink Click event can be tagged by the following way:
 
-[C#]
+  {% highlight c# %}
+
+    [C#]
 
 
 
@@ -89,11 +101,15 @@ The Hyperlink Click event can be tagged by the following way:
 
 this.OlapGrid1.LinkClick += new Syncfusion.Windows.Grid.Olap.LinkLabelClickEventHander(OlapGrid1_LinkClick);
 
+    {% endhighlight %}
 
 
 
 
-[VB]
+
+  {% highlight vbnet %}
+
+   [VB]
 
 
 
@@ -101,13 +117,19 @@ this.OlapGrid1.LinkClick += new Syncfusion.Windows.Grid.Olap.LinkLabelClickEvent
 
 Me.OlapGrid1.LinkClick += New Syncfusion.Windows.Grid.Olap.LinkLabelClickEventHander(OlapGrid1_LinkClick);
 
+    {% endhighlight %}
+
+
+
 
 
 
 
 The LinkClick event will return the clicked Cell Descriptor.
 
-[C#]
+  {% highlight c# %}
+
+   [C#]
 
 
 
@@ -119,11 +141,15 @@ void OlapGrid1_LinkClick(object sender, Syncfusion.Windows.Grid.Olap.LinkLabelEv
 
 }  
 
+    {% endhighlight %}
 
 
 
 
-[VB]
+
+  {% highlight vbnet %}
+
+   [VB]
 
 
 
@@ -133,23 +159,24 @@ Dim uniqueName As String = e.PivotCellDescriptor.UniqueName
 
 End Sub
 
+    {% endhighlight %}
 
 
 
 
-{{ '![Grid Hyperlink Col](Hyperlink-Cells_images/Hyperlink-Cells_img1.png)' | markdownify }}
-{:.image }
 
 
-{{ '![](Hyperlink-Cells_images/Hyperlink-Cells_img2.png)' | markdownify }}
-{:.image }
+
+![Grid Hyperlink Col](Hyperlink-Cells_images/Hyperlink-Cells_img1.png)
 
 
-{{ '![](Hyperlink-Cells_images/Hyperlink-Cells_img3.png)' | markdownify }}
-{:.image }
+![](Hyperlink-Cells_images/Hyperlink-Cells_img2.png)
 
 
-Sample Location
+![](Hyperlink-Cells_images/Hyperlink-Cells_img3.png)
+
+
+## Sample Location
 
 A sample demo is available at the following location:
 

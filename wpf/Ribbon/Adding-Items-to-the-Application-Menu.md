@@ -11,9 +11,9 @@ documentation: ug
 
 Different menu items are added to an application menu using the MenuItems property of the ApplicationMenu class. The following lines of code should be added under the <ribbon: ApplicationMenu></ribbon:ApplicationMenu> tag to add menu items to an application menu.
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 
 
@@ -31,15 +31,19 @@ Different menu items are added to an application menu using the MenuItems proper
 
 </ribbon:Ribbon.ApplicationMenu>
 
+ {% endhighlight %}
 
 
-Multi-line support for Menu Items
+
+
+
+## Multi-line support for Menu Items
 
 
 
 Ribbon instance now enables the user to add more detailed description to the menu items with the help of multi line support for menu items, thereby making it easy for the users to select proper menu items without any difficulties.
 
-See Also
+## See Also
 
 Adding Application Menu to the Ribbon Window, Adding Application Items to the Application Menu
 

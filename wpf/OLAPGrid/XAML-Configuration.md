@@ -13,22 +13,22 @@ XAML configuration is one of the important features of OlapGrid. It helps you to
 
 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 This feature will help you to set the Data source, Report and UI properties in a simple and elegant manner, when you want to perform the entire configuration in XAML.
 
-Property
+## Property
 
 _Property Table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
- Description</td><td>
-Type</td><td>
-Data  Type</td><td>
-Reference Link</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data  Type**' | markdownify }}</td><td>
+{{ '**Reference Link**' | markdownify }}</td></tr>
 <tr>
 <td>
 DataSource.ConnectionString</td><td>
@@ -102,11 +102,13 @@ CalculatedMembers</td><td>
 </table>
 
 
-Adding report to OLAP Grid
+## Adding report to OLAP Grid
 
 Adding an OLAP report to OLAP Grid control in design time is described in the following code snippet:
 
-[XAML]
+  {% highlight xml %}
+
+   [XAML]
 
 
 
@@ -152,19 +154,21 @@ olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=a
 
 </syncfusion:OlapGrid>
 
+    {% endhighlight %}
 
 
 
 
-{{ '![](XAML-Configuration_images/XAML-Configuration_img1.png)' | markdownify }}
-{:.image }
 
+
+
+![](XAML-Configuration_images/XAML-Configuration_img1.png)
 
 _OLAP Grid with SalesReport created by XAML code_
 
 
 
-Sample Link
+## Sample Link
 
 To access a XAML Configuration Demo sample:
 

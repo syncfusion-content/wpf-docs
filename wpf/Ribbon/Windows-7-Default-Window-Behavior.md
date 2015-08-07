@@ -11,7 +11,7 @@ documentation: ug
 
 Syncfusion’s Tools WPF Ribbon Window has now extended its support to all the default behaviors of Windows 7.
 
-Feature Details
+## Feature Details
 
 This feature allows you to drag the Ribbon Window while in its Maximized state. While dragging the Ribbon Window, it will go to its normal state with respect to the mouse pointer. 
 

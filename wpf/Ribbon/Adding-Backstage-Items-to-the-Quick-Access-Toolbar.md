@@ -9,7 +9,7 @@ documentation: ug
 
 # Adding Backstage Items to the Quick Access Toolbar
 
-Description:
+## Description:
 
 We can add backstage items to the ribbon’ Quick Access Toolbar via the QAT’s More Commands Options. If the BackStageCommandButton is present in the backstage or inside the BackStageTabItem, it will be added to the QAT.
 
@@ -23,16 +23,13 @@ If you want add a backstage item into the QAT, follow the steps below:
 
 
 
-{{ '![](Adding-Backstage-Items-to-the-Quick-Access-Toolbar_images/Adding-Backstage-Items-to-the-Quick-Access-Toolbar_img1.png)' | markdownify }}
-{:.image }
-
+![](Adding-Backstage-Items-to-the-Quick-Access-Toolbar_images/Adding-Backstage-Items-to-the-Quick-Access-Toolbar_img1.png)
 
 * Using the Choose commands from drop-down list, you can filter the backstage tab items.
 
 
 
-{{ '![](Adding-Backstage-Items-to-the-Quick-Access-Toolbar_images/Adding-Backstage-Items-to-the-Quick-Access-Toolbar_img2.png)' | markdownify }}
-{:.image }
+![](Adding-Backstage-Items-to-the-Quick-Access-Toolbar_images/Adding-Backstage-Items-to-the-Quick-Access-Toolbar_img2.png)
 
 
 * Select the item from left-side column and click the Add button. The item will appear in the right-side column.

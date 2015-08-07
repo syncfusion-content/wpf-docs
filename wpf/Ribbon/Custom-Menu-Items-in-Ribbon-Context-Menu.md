@@ -11,9 +11,9 @@ documentation: ug
 
 Ribbon Context Menu now supports display of custom items. You can add custom items in Ribbon Context Menu. Following code sample illustrates how you can add custom items in Ribbon ContextMenu.
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 
 
@@ -31,10 +31,11 @@ Ribbon Context Menu now supports display of custom items. You can add custom ite
 
 </syncfusion:Ribbon>
 
+ {% endhighlight %}
 
 
-{{ '![](Custom-Menu-Items-in-Ribbon-Context-Menu_images/Custom-Menu-Items-in-Ribbon-Context-Menu_img1.jpeg)' | markdownify }}
-{:.image }
+
+![](Custom-Menu-Items-in-Ribbon-Context-Menu_images/Custom-Menu-Items-in-Ribbon-Context-Menu_img1.jpeg)
 
 
 

@@ -11,7 +11,7 @@ documentation: ug
 
 Topics in this section guide you on getting started with the Ribbon control. It also elaborates on various features and supports provided by the control.
 
-## Why to use our Ribbon control
+# Why to use our Ribbon control
 
 Here are some highlights of our Ribbon control.
 
@@ -30,12 +30,11 @@ Here are some highlights of our Ribbon control.
 
 
 
-## Control Structure
+# Control Structure
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -50,8 +49,7 @@ The different components of the control are described below:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -66,22 +64,20 @@ Components of the BackStage view of the control are described below:
 
 BackStage Corner Image - Image placed at the bottom-right corner of the BackStage area
 
-## Creating the Control through Visual Studio
+# Creating the Control through Visual Studio
 
 To create a control using Visual Studio:
 
 Drag and drop the Ribbon control from toolbox to designer. It will generate the Ribbon as shown below:
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
 
 Click on the SmartTag button in the Ribbon. The SmartTag opens as shown below:
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -90,13 +86,12 @@ The smart tag is used to add and configure items to the Ribbon. The Visual Studi
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
 
-## Creating the Control through Expression Blend
+# Creating the Control through Expression Blend
 
 Ribbon control can also be created and configured by using Expression Blend. To create control through the Expression Blend:
 
@@ -111,8 +106,7 @@ Search the Ribbon in the toolbox.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -121,8 +115,7 @@ Drag and drop the Ribbon into the designer. It will create the Ribbon control as
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
@@ -136,8 +129,7 @@ Add the Ribbon Tabs as follows:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
 
 
 
@@ -146,8 +138,7 @@ The Collection Editor window opens:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
 
 
 
@@ -160,22 +151,22 @@ The Collection Editor window opens:
 6. Choose the RibbonTab and add the required RibbonBars
 7. Choose the RibbonBar and add the required controls 
 8. The control will be created.
-## Configuring Ribbon 
+# Configuring Ribbon 
 
 
 The following topics under this section explain the basic steps to create and configure the Ribbon and its elements. 
 
-### Configuring QAT
+# Configuring QAT
 
 This section explains how to create and configure the QAT (Quick Access Toolbar) in Ribbon.
 
-QAT Item
+## QAT Item
 
 QAT Items can be added as follows: 
 
+ {% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 <syncfusion:Ribbon.QuickAccessToolBar>
 
@@ -197,11 +188,15 @@ QAT Items can be added as follows:
 
 </syncfusion:Ribbon.QuickAccessToolBar>
 
+ {% endhighlight %}
 
 
 
 
-More Commands Options
+
+
+
+## More Commands Options
 
 QAT items can also be added through More Commands dialog box. 
 
@@ -211,31 +206,34 @@ QAT items can also be added through More Commands dialog box.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img10.png)
 
 
 
 
 All items added to the Ribbon will be included in More Commands dialog. This can be avoided by using the ShowInMoreCommands attached property available in the Ribbon as shown below:
 
+ {% highlight xml %}
 
-
-[XAML]
+   [XAML]
 
 <syncfusion:RibbonBar Header="Clipboard" 					syncfusion:Ribbon.ShowInMoreCommands="False">
 
+ {% endhighlight %}
 
 
 
 
-QAT Menu Items
+
+
+
+## QAT Menu Items
 
 QAT Menu Items can be added as follows:
 
+ {% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 <syncfusion:Ribbon.QuickAccessToolBar>
 
@@ -265,6 +263,10 @@ QAT Menu Items can be added as follows:
 
 </syncfusion:Ribbon.QuickAccessToolBar>
 
+ {% endhighlight %}
+
+
+
 
 
 
@@ -273,23 +275,21 @@ The QAT Menu Items will be displayed as below. After configuring the QAT, it app
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img11.png)
 
 
 
-
-### Configuring Application Menu
+# Configuring Application Menu
 
 The topics under this section explain how to create and configure Application Menu in Ribbon.
 
-Populating Left Pane Items
+## Populating Left Pane Items
 
 Application Menu’s left pane items can be populated as follows:
 
+ {% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 <syncfusion:Ribbon.ApplicationMenu>
 
@@ -329,17 +329,21 @@ Description="Save a copy of the item to your computer in one of 			the several f
 
 </syncfusion:Ribbon.ApplicationMenu>
 
+ {% endhighlight %}
 
 
 
 
-Populating Bottom Pane Items
+
+
+
+## Populating Bottom Pane Items
 
 Footer items for the Application menu can be added as follows:
 
+ {% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 <syncfusion:ApplicationMenu.ApplicationItems>
 
@@ -347,7 +351,11 @@ Footer items for the Application menu can be added as follows:
 
 
 
-</syncfusion:ApplicationMenu.ApplicationItems>                                   
+</syncfusion:ApplicationMenu.ApplicationItems>  
+
+ {% endhighlight %}
+
+                                 
 
 
 
@@ -359,21 +367,20 @@ The Application Menu appears as shown in the following image:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img12.png)
 
 
-### Configuring the BackStage 
+# Configuring the BackStage 
 
 The topics under this section explain how to create and configure the BackStage in Ribbon.
 
-BackStageCommandButton
+## BackStageCommandButton
 
 The BackStageCommandButton can be added to BackStage as follows: 
 
+ {% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 <syncfusion:Ribbon.BackStage>
 
@@ -395,19 +402,23 @@ The BackStageCommandButton can be added to BackStage as follows:
 
 
 
-</syncfusion:Ribbon.BackStage>                  
+</syncfusion:Ribbon.BackStage>    
+
+ {% endhighlight %}
+
+              
 
 
 
 
 
-BackStageTabItem 
+## BackStageTabItem 
 
 The BackStageTabItem can be added to BackStage as follows.
 
+ {% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 <syncfusion:Ribbon.BackStage>
 
@@ -443,17 +454,21 @@ The BackStageTabItem can be added to BackStage as follows.
 
 
 
-</syncfusion:Ribbon.BackStage>                  
+</syncfusion:Ribbon.BackStage>    
+
+ {% endhighlight %}
+
+              
 
 
 
 
 
-## Data Binding 
+# Data Binding 
 
 The topics under this section explain data binding support of Ribbon with Object binding and XML binding.
 
-### Object Binding
+# Object Binding
 
 Ribbon control supports binding for business objects. 
 
@@ -461,9 +476,9 @@ The following sample illustrates this:
 
 Create a class that acts as a model for RibbonTab. 
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 public class CustomRibbonTab
 
@@ -489,15 +504,19 @@ public class CustomRibbonTab
 
     }
 
+ {% endhighlight %}
+
+
+
 
 
 
 
 Create a class that acts as a model for RibbonBar. 
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 public class CustomRibbonBar
 
@@ -523,15 +542,19 @@ public class CustomRibbonBar
 
     }
 
+ {% endhighlight %}
+
+
+
 
 
 
 
 Create a Class that acts as a model for RibbonItem. 
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 public class CustomRibbonItem
 
@@ -555,15 +578,19 @@ public class CustomRibbonItem
 
     }
 
+ {% endhighlight %}
+
+
+
 
 
 
 
 Iinitialize the Ribbon Items in the ViewModel class as follows:
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 public class ViewModel
 
@@ -687,6 +714,10 @@ public class ViewModel
 
     }
 
+ {% endhighlight %}
+
+
+
 
 
 
@@ -697,9 +728,9 @@ Create an instance of the ViewModel class and set it as DataContext for the Ribb
 
 Set the ItemsSource of the Ribbon , RibbonTab and RibbonBar to the corresponding collection as given in the following code snippet:
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 <syncfusion:RibbonWindow x:Class="RibbonDataBindingDemo.MainWindow"
 
@@ -791,6 +822,10 @@ Set the ItemsSource of the Ribbon , RibbonTab and RibbonBar to the corresponding
 
  </syncfusion:RibbonWindow>
 
+ {% endhighlight %}
+
+
+
 
 
 
@@ -799,27 +834,26 @@ The Ribbon is displayed as shown in the following screenshot:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img13.png)
 
 
-### XML Binding
+# XML Binding
 
 XML file can also be used as ItemsSource for the Ribbon. The following example illustrates this:
 
 1. Create an xml file with the following details and name it as Data.xml.
 
+    ~~~ xml
+
+    [XML]
+
+    <?xml version="1.0" encoding="utf-8" ?>
+
+    <RibbonTabs>
 
 
-[XML]
 
-<?xml version="1.0" encoding="utf-8" ?>
-
-<RibbonTabs>
-
-
-
-  <TabCategory Name="Book Rental">
+    <TabCategory Name="Book Rental">
 
 
 
@@ -849,11 +883,11 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
 
 
 
-  </TabCategory>
+    </TabCategory>
 
 
 
-  <TabCategory Name="Account Settings">
+    <TabCategory Name="Account Settings">
 
 
 
@@ -877,11 +911,16 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
 
 
 
-  </TabCategory>  
+    </TabCategory>  
 
 
 
-</RibbonTabs>
+    </RibbonTabs>
+	
+	~~~
+    {:.pretty-print }
+
+
 
 
 
@@ -889,11 +928,16 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
 
 2. Add the XmlDataProvider for the above XML document as given in the following code snippet:
 
+    ~~~ xml
+
+    [XAML]
+
+    <XmlDataProvider Source="Data/Data.xml" x:Key="xmlSource" XPath="RibbonTabs"/> 
+	
+	~~~
+    {:.pretty-print }
 
 
-[XAML]
-
-<XmlDataProvider Source="Data/Data.xml" x:Key="xmlSource" XPath="RibbonTabs"/> 
 
 
 
@@ -901,11 +945,11 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
 
 3. Set the ItemsSource property for the Ribbon, RibbonTab and RibbonBar as shown in the below code snippet:
 
+    ~~~ xml
 
+    [XAML]
 
-[XAML]
-
-<syncfusion:Ribbon 
+    <syncfusion:Ribbon 
 
      	x:Name="ribbon" 
 
@@ -913,15 +957,15 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
 
 
 
- <syncfusion:Ribbon.ItemContainerStyle>
+    <syncfusion:Ribbon.ItemContainerStyle>
 
 
 
-  <Style TargetType="{x:Type syncfusion:RibbonTab}">
+    <Style TargetType="{x:Type syncfusion:RibbonTab}">
 
 
 
-   <Setter Property="ItemsSource" Value="{Binding XPath=BarCategory}" />
+    <Setter Property="ItemsSource" Value="{Binding XPath=BarCategory}" />
 
 
 
@@ -981,23 +1025,28 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
 
 
 
-   </Setter>
+    </Setter>
 
 
 
-   <Setter Property="Caption" Value="{Binding XPath=@Name}"/>
+    <Setter Property="Caption" Value="{Binding XPath=@Name}"/>
 
 
 
-  </Style>
+    </Style>
 
 
 
- </syncfusion:Ribbon.ItemContainerStyle>
+    </syncfusion:Ribbon.ItemContainerStyle>
 
 
 
-</syncfusion:Ribbon>
+    </syncfusion:Ribbon>
+	
+	~~~
+    {:.pretty-print }
+
+
 
 
 
@@ -1005,21 +1054,20 @@ A Ribbon is created as shown in the following screenshot:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img14.png)
 
 
-## Customizing Data Templates
+# Customizing Data Templates
 
 This section explains how to customize Ribbon and its elements using templates.
 
-### Item Template 
+# Item Template 
 
 It is possible to set the ItemTemplate for the RibborBar to control the display of the data that is bound to the RibbonBar. Since the RibbonBar can contain any UI Elements, the ItemTemplate is used to define the UI Elements to hold the data. 
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
        <Style TargetType="{x:Type syncfusion:RibbonBar}">
 
@@ -1043,21 +1091,25 @@ It is possible to set the ItemTemplate for the RibborBar to control the display 
 
        </Style>
 
+ {% endhighlight %}
 
 
 
 
 
 
-### Item Template Selector
+
+
+
+# Item Template Selector
 
 This feature enables you to use different templates for items depending on specific constraints. The following example illustrates this: 
 
 Create the template selector as shown in the following code snippet:
 
-
-
-[C#]
+{% highlight c# %}
+ 
+   [C#]
 
 public class RibbonItemTemplateSelector : DataTemplateSelector
 
@@ -1099,6 +1151,10 @@ public class RibbonItemTemplateSelector : DataTemplateSelector
 
     }
 
+ {% endhighlight %}
+
+
+
 
 
 
@@ -1109,9 +1165,9 @@ public class RibbonItemTemplateSelector : DataTemplateSelector
 
 Define Data templates in the Window’s resources as follows:
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 <DataTemplate x:Key="SmallButtonTemplate">
 
@@ -1135,17 +1191,24 @@ Define Data templates in the Window’s resources as follows:
 
 </DataTemplate>
 
+ {% endhighlight %}
+
+
+
 
 
 
 
  Create the instance for the template selector in the Window’s resources as follows:
 
-
-
+{% highlight xml %}
 [XAML]
 
 <local:RibbonItemTemplateSelector x:Key="ribbonItemTemplateSelector"/>
+
+ {% endhighlight %}
+
+
 
 
 
@@ -1153,9 +1216,9 @@ Define Data templates in the Window’s resources as follows:
 
 Use this template selector to choose template for the RibbonBar as follows:
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 <syncfusion:Ribbon Name="Ribbon1"                                       		ItemsSource="{Binding CustomRibbonTabs}">
 
@@ -1199,6 +1262,10 @@ Use this template selector to choose template for the RibbonBar as follows:
 
 </syncfusion:Ribbon>
 
+ {% endhighlight %}
+
+
+
 
 
 
@@ -1207,15 +1274,14 @@ A ribbon generates as shown in the following screenshot:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img15.png)
 
 
-## Styling
+# Styling
 
 The topics under this section explain how to customize the Ribbon using styles.
 
-Visual Style
+## Visual Style
 
 Ribbon supports the following built-in Visual Styles:
 
@@ -1234,11 +1300,15 @@ Ribbon supports the following built-in Visual Styles:
 
 Visual Styles can be applied via XAML as follows:
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 syncfusion:SkinStorage.VisualStyle="Office2010Blue"
+
+ {% endhighlight %}
+
+
 
 
 
@@ -1246,11 +1316,15 @@ The VisualStyle attached property available in the SkinStorage class is used to 
 
 The following code snippet shows how to set the visual style in XAML:
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 <syncfusion:RibbonWindow x:Class="BackStageSample.MainWindow"        syncfusion:SkinStorage.VisualStyle="Office2010Blue"        Title="BackStage Demo"  xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />    
+
+
+ {% endhighlight %}
+
 
 
 
@@ -1260,31 +1334,33 @@ Now, the RibbonWindow and the controls inside the RibbonWindow get the Office201
 
 Visual styles can be set using C# as follows:
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 SkinStorage.SetVisualStyle(ribbonWindowInstance, "Office2010Blue");
 
+ {% endhighlight %}
 
 
 
 
-## Class Diagram
+
+
+
+# Class Diagram
 
 The class diagram for Ribbon controls are as follows.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img16.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img16.jpeg)
 
 
 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img17.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img17.jpeg)
 
 

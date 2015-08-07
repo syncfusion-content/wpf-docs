@@ -11,11 +11,10 @@ documentation: ug
 
 Essential OLAP Chart control allows you to efficiently visualize the multidimensional data from the OLAP data source, with the help of a report, which is bound to it.
 
-{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.png)
 
 
-Key Features
+## Key Features
 
 The important features of OLAP Chart controls are as follows:
 
@@ -28,7 +27,7 @@ The important features of OLAP Chart controls are as follows:
 * Provides ToolTip support – Allows you to visualize the data point related values in a form of ToolTip.
 * Provides theme support – Allows you to customize the OlapChart with the 6 in-built business themes. 
 
-User Guide Organization
+## User Guide Organization
 
 The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of the OLAP Chart control. It is organized into the following sections:
 
@@ -36,7 +35,7 @@ The product comes with numerous samples as well as an extensive documentation to
 * Getting Started - This section guides you on getting started with BI application, OLAP Chart control, and so on.
 * Concepts and Features - The features of OLAP Chart control are illustrated with use case scenarios, code examples and screen shots under this section.
 
-Document Conventions
+## Document Conventions
 
 The following conventions will help you to quickly identify the important sections of information while using the content.
 
@@ -45,31 +44,29 @@ _Document Conventions Table_
 <table>
 <tr>
 <td>
-Convention</td><td>
-Icon</td><td>
-Description</td></tr>
+{{ '**Convention**' | markdownify }}</td><td>
+{{ '**Icon**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Note</td><td>
-> {{ '_Note:_' | markdownify }}</td><td>
+{{ '_Note:_' | markdownify }}</td><td>
 Represents important information</td></tr>
 <tr>
 <td>
 Example</td><td>
-Example</td><td>
+{{ '**Example**' | markdownify }}</td><td>
 Represents an example</td></tr>
 <tr>
 <td>
 Tip</td><td>
-![](Overview_images/Overview_img2.jpeg)
-{:.image }
+{{'![](Overview_images/Overview_img2.jpeg)' | markdownify }}
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
-![](Overview_images/Overview_img3.jpeg)
-{:.image }
+{{'![](Overview_images/Overview_img3.jpeg)' | markdownify }}
 </td><td>
 Represents additional information on the topic</td></tr>
 </table>

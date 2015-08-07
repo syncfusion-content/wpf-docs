@@ -11,7 +11,7 @@ documentation: ug
 
 This section deals with the appearance of Ribbon control and contains the following topics:
 
-## Active Color Scheme
+# Active Color Scheme
 
 Essential Tools WPF now provides support to set the active color scheme for the Ribbon control to enhance the appearance of the control. This is achieved by using the ActiveColorScheme attached property of the Ribbon Control.
 
@@ -29,9 +29,9 @@ By default, it is displayed in the Office 2007 Blue color scheme.
 
 The following code example illustrates how to set Blend scheme for the Ribbon control.
 
+{% highlight xml %}
 
-
-[XAML]
+   [XAML]
 
 
 
@@ -61,14 +61,17 @@ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:syncfusion="http://
 
 </syncfusion:RibbonWindow>
 
+ {% endhighlight %}
+
+
+
 
 
 Run the application. The following output is displayed.
 
 
 
-{{ '![](Appearance_images/Appearance_img1.jpeg)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img1.jpeg)
 
 
 
@@ -77,9 +80,9 @@ Setting Custom color scheme for Blend Theme:
 
 You can also set 'custom' active color schemes for the Ribbon control. This enables you to display the Ribbon control in any color of your choice. To set "Red" color as the custom color scheme for the Ribbon control, use the below code
 
-
-
-[C#]
+{% highlight c# %}
+ 
+  [C#]
 
 
 
@@ -87,15 +90,18 @@ You can also set 'custom' active color schemes for the Ribbon control. This enab
 
 Ribbon.SetActiveColorScheme(ribbon, Brushes.Red);
 
-
-
-{{ '![](Appearance_images/Appearance_img2.jpeg)' | markdownify }}
-{:.image }
+ {% endhighlight %}
 
 
 
 
-## Visual Style of Ribbon
+
+![](Appearance_images/Appearance_img2.jpeg)
+
+
+
+
+# Visual Style of Ribbon
 
 Essential Tools WPF now provides support to set the visual style for the Ribbon control to enhance the appearance of the control. This is achieved by using the VisualStyle attached property of the Ribbon Control.
 
@@ -137,8 +143,7 @@ Run the application. The following output is displayed.
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/blend.png](Appearance_images/Appearance_img3.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/ribbon/blend.png](Appearance_images/Appearance_img3.png)
 
 
 
@@ -147,56 +152,47 @@ The following figures illustrate how each built-in visual style appears in the R
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2007blue.png](Appearance_images/Appearance_img4.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2007blue.png](Appearance_images/Appearance_img4.png)
 
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2007black.png](Appearance_images/Appearance_img5.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2007black.png](Appearance_images/Appearance_img5.png)
 
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2007silver.png](Appearance_images/Appearance_img6.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2007silver.png](Appearance_images/Appearance_img6.png)
 
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2010Blue.png](Appearance_images/Appearance_img7.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/ribbon/2010Blue.png](Appearance_images/Appearance_img7.png)
 
 
 
 
-{{ '![](Appearance_images/Appearance_img8.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img8.png)
 
 
 
 
-{{ '![](Appearance_images/Appearance_img9.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img9.png)
 
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/vs2010.png](Appearance_images/Appearance_img10.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/ribbon/vs2010.png](Appearance_images/Appearance_img10.png)
 
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/metro.png](Appearance_images/Appearance_img11.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/ribbon/metro.png](Appearance_images/Appearance_img11.png)
 
 
 
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/ribbon/transparent.png](Appearance_images/Appearance_img12.png)' | markdownify }}
-{:.image }
+![C:/Users/ramalakshmim/Desktop/ugss/ribbon/transparent.png](Appearance_images/Appearance_img12.png)
 
 
 

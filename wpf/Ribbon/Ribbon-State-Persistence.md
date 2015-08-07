@@ -28,24 +28,24 @@ You can persist Ribbon Control states separately as follows:
 
 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 The Ribbon State Persistence feature helps users to load the state of the Ribbon control that existed when the application was closed. State Persistence feature gives a more consistent workflow for an application that is executed for a long time.
 
-Tables for Properties and Methods
+## Tables for Properties and Methods
 
-Properties
+### Properties
 
 
 
 <table>
 <tr>
 <th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Default Value </th></tr>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Default Value**' | markdownify }}</th></tr>
 <tr>
 <td>
 AutoPersist</td><td>
@@ -63,11 +63,11 @@ _PersistElements Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Default Value </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Default Value**' | markdownify }}</td></tr>
 <tr>
 <td>
 PersistElements</td><td>
@@ -82,7 +82,7 @@ You can enable State Persistence in Ribbon control by setting the AutoPersist pr
 
 
 
-Methods
+### Methods
 
 
 
@@ -91,10 +91,10 @@ _SaveRibbonState Table_
 <table>
 <tr>
 <td>
-Method</td><td>
-Description</td><td>
-Parameters</td><td>
-Return Type</td></tr>
+{{ '**Method**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Parameters**' | markdownify }}</td><td>
+{{ '**Return Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 SaveRibbonState()</td><td>
@@ -109,10 +109,10 @@ _LoadRibbonState Table_
 <table>
 <tr>
 <th>
-Method</th><th>
-Description</th><th>
-Parameters</th><th>
-Return Type</th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 LoadRibbonState()</td><td>
@@ -127,10 +127,10 @@ _ResetRibbonState Table_
 <table>
 <tr>
 <td>
-Method</td><td>
-Description</td><td>
-Parameters</td><td>
-Return Type</td></tr>
+{{ '**Method**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Parameters**' | markdownify }}</td><td>
+{{ '**Return Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 ResetRibbonState()</td><td>
@@ -145,10 +145,10 @@ _DeleteRibbonState Table_
 <table>
 <tr>
 <td>
-Method</td><td>
-Description</td><td>
-Parameters</td><td>
-Return Type</td></tr>
+{{ '**Method**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Parameters**' | markdownify }}</td><td>
+{{ '**Return Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 DeleteRibbonState()</td><td>
@@ -158,7 +158,7 @@ It will be delete the saved state of the file from memory.</td><td>
 </table>
 
 
-Sample Link
+## Sample Link
 
 To access a sample:
 
@@ -170,7 +170,7 @@ Click the WPF drop-down list, and then select Run Locally Installed Samples.
 
 In the sample browser, expand Ribbon, and then select Ribbon State Persistence.
 
-## Using State Persistence in Application
+# Using State Persistence in Application
 
 You can persist Ribbon states in the following ways namely: 
 
@@ -182,13 +182,13 @@ Persisting Ribbon States by XML Writer
 
 
 
-### Persisting Ribbon States at Application Exit and Load
+# Persisting Ribbon States at Application Exit and Load
 
 The user can persist the Ribbon States at application exit and load by handling the AutoPersist property. You can customize the persisting states in Ribbon control by handling the AutoPersist property individually in Ribbon, QAT and Ribbon window. The following code snippet shows how to handle the property in Ribbon elements. 
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 <syncfusion:RibbonWindow x:Class="RibbonSample.Window1" x:Name="ribbonwindow"
 
@@ -222,11 +222,15 @@ WindowState="Normal" WindowStyle="SingleBorderWindow"
 
 </syncfusion:RibbonWindow>
 
+ {% endhighlight %}
 
 
 
 
-### Persisting Ribbon States Any Time while Running the Application
+
+
+
+# Persisting Ribbon States Any Time while Running the Application
 
 WPF Ribbon control now supports the persistence of its states any time while running the application. You can save and load the Ribbon states any time by using Ribbon methods. There are two methods to save and load the current Ribbon states. They are:
 
@@ -238,9 +242,9 @@ LoadRibbonState
 
 Before you call the methods, you have to specify the persisting Ribbon elements in PersistElements collection. You can change the collection any time. Save and Load states at runtime are fully based on this collection details. The following code snippet shows how to add Ribbon elements that are required to retain its state.
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 private void ribbonwindow_Loaded(object sender, RoutedEventArgs e)
 
@@ -254,11 +258,15 @@ private void ribbonwindow_Loaded(object sender, RoutedEventArgs e)
 
   }
 
+ {% endhighlight %}
 
 
 
 
-Saving Ribbon States
+
+
+
+## Saving Ribbon States
 
 You can dynamically save and load the current Ribbon state at run time. You can save the current Ribbon State by using the SaveRibbonState method in Ribbon. This method has two overloaded methods for customizing the Save state process as follows:
 
@@ -268,9 +276,9 @@ void SaveRibbonState(IsolatedStorageFile isoStorage, string storeFileName)
 
 In the first method, there are no parameters. It will save the current state of the Ribbon Control to the default Isolated Storage file, which is built in the source.
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
   private void SaveRibbonState_Click(object sender, RoutedEventArgs e)
 
@@ -280,13 +288,17 @@ In the first method, there are no parameters. It will save the current state of 
 
      } 
 
+ {% endhighlight %}
+
+
+
 
 
 You can also store the current Ribbon State in the custom Isolated Storage file by using the second overloaded method.  This method has two arguments namely IsolatedStorageFile and storeFileName. By using these two arguments you can define your own Isolated Storage file for saving the state.
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
   private void SaveRibbonState_Click(object sender, RoutedEventArgs e)
 
@@ -302,11 +314,15 @@ You can also store the current Ribbon State in the custom Isolated Storage file 
 
      }
 
+ {% endhighlight %}
 
 
 
 
-Loading Ribbon States
+
+
+
+## Loading Ribbon States
 
 Load state process is also having the similar procedures of save states. We can load the Ribbon State at any time from the last saved Isolated Storage file. LoadRibbonState method is used to load the Ribbon state from the last saved state. This method has two overloaded methods as follows:
 
@@ -316,9 +332,9 @@ void LoadRibbonState(IsolatedStorageFile isoStorage, string storeFileName)
 
 The first method with no arguments will load the Ribbon State from the last saved state in the default Isolated Storage file, which is stored by the SaveRibbonState method.
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 private void LoadRibbonState_Click(object sender, RoutedEventArgs e)
 
@@ -328,15 +344,19 @@ private void LoadRibbonState_Click(object sender, RoutedEventArgs e)
 
         }
 
+ {% endhighlight %}
+
+
+
 
 
 
 
 The second overloaded method will load the Ribbon State from the given file name in the mentioned Isolated Storage file.
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 private void LoadRibbonState_Click(object sender, RoutedEventArgs e)
 
@@ -352,17 +372,21 @@ private void LoadRibbonState_Click(object sender, RoutedEventArgs e)
 
         }
 
+ {% endhighlight %}
 
 
 
 
-Saving and Loading Many Ribbon States
+
+
+
+## Saving and Loading Many Ribbon States
 
 You can easily maintain many Ribbon control states in the Isolated Storage files. You can save the consecutive or different states of the Ribbon control in different Isolated Storage filesand also  load any saved state from the Isolated Storage files which is in the old state. You can save the different states of the Ribbon control at various times as follows:
 
-
-
-[C#]
+{% highlight c# %}
+ 
+   [C#]
 
 private void SaveLevel1State_Click(object sender, RoutedEventArgs e)
 
@@ -410,15 +434,19 @@ private void SaveLevel3State_Click(object sender, RoutedEventArgs e)
 
     }
 
+ {% endhighlight %}
+
+
+
 
 
 
 
 After saving the different states of the Ribbon Control, you can load the Ribbon state to any of the old states. The following code snippet explains the implementation.
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 private void LoadLevel1State_Click(object sender, RoutedEventArgs e)
 
@@ -466,11 +494,15 @@ private void LoadLevel3State_Click(object sender, RoutedEventArgs e)
 
         }
 
+ {% endhighlight %}
 
 
 
 
-### Persisting Ribbon States by XML Writer 
+
+
+
+# Persisting Ribbon States by XML Writer 
 
 
 
@@ -482,7 +514,7 @@ LoadRibbonState(XmlReader xmlReader)
 
 
 
-Methods
+## Methods
 
 
 
@@ -491,11 +523,11 @@ _Methods Table_
 <table>
 <tr>
 <th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Return Type </th><th>
-Reference links </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <th>
 SaveRibbonState</th><th>
@@ -513,15 +545,15 @@ N/A</th></tr>
 </table>
 
 
-## Utility Methods
+# Utility Methods
 
-Resetting Ribbon States
+## Resetting Ribbon States
 
 You can load the Normal (Initial) Ribbon state at runtime by calling the ResetRibbonState method. This is a parameter less method. This will load the Normal state of the Ribbon control. Resetting the Ribbon state is applicable while AutoPersist is enabled in Ribbon elements. You can customize the resetting state of Ribbon elements by enabling the AutoPersist property.
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 private void ResetState_Click(object sender, RoutedEventArgs e)
 
@@ -531,11 +563,15 @@ private void ResetState_Click(object sender, RoutedEventArgs e)
 
         }
 
+ {% endhighlight %}
 
 
 
 
-Deleting Ribbon States
+
+
+
+## Deleting Ribbon States
 
 You can delete the unused saved Isolated Storage files by using the DeleteRibbonState method. This method has two overloads. They are:
 
@@ -547,9 +583,9 @@ DeleteRibbonState(IsolatedStorageFile isoStorage, string deletefileName)
 
 The first overloaded method will delete the default saved file from the default Isolated Storage file location. The following code snippet shows how to delete the default saved file.
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
   private void DeleteRibbonState_Click(object sender, RoutedEventArgs e)
 
@@ -559,13 +595,17 @@ The first overloaded method will delete the default saved file from the default 
 
      } 
 
+ {% endhighlight %}
+
+
+
 
 
 The second overloaded method is used to delete any file from specified Isolated Storage location. The following code snippet shows how to delete any file from the Isolated Storage location.
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
   private void DeleteRibbonState_Click(object sender, RoutedEventArgs e)
 
@@ -580,6 +620,10 @@ The second overloaded method is used to delete any file from specified Isolated 
        this.MyRibbon.DeleteRibbonState(storage,"RibbonState1.dat");       
 
      }
+
+ {% endhighlight %}
+
+
 
 
 

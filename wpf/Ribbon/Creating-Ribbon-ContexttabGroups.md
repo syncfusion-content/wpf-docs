@@ -11,9 +11,9 @@ documentation: ug
 
 ContextTabGroups are used to group RibbonTabs in the application for easy navigation. Each ContextTabGroup can have a different background, label, and so on, to differentiate with other ContextTabGroups in the Ribbon window. The following code snippet is used to create a ContextTabGroup.
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 
 
@@ -29,9 +29,12 @@ ContextTabGroups are used to group RibbonTabs in the application for easy naviga
 
 </syncfusion:Ribbon>
 
+ {% endhighlight %}
 
 
-{{ '![](Creating-Ribbon-ContexttabGroups_images/Creating-Ribbon-ContexttabGroups_img1.png)' | markdownify }}
-{:.image }
+
+
+
+![](Creating-Ribbon-ContexttabGroups_images/Creating-Ribbon-ContexttabGroups_img1.png)
 
 

@@ -11,19 +11,18 @@ documentation: ug
 
 The Syncfusion Ribbon control supports the Office 2010 UI, which looks and functions like the Microsoft Office 2010 UI. 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 The Syncfusion Ribbon control with the Office 2010 UI helps users to create WPF applications, which look and function like the Microsoft Office 2010 UI.
 
 
 
-{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img1.png)' | markdownify }}
-{:.image }
+![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img1.png)
 
 
 
 
-Sample Link
+## Sample Link
 
 To access a sample:
 
@@ -33,7 +32,7 @@ Click the WPF drop-down list, and then select Run Locally Installed Samples.
 
 In the sample browser, expand the Ribbon treeview item, and then select Ribbon Sample.
 
-## Creating an Application with Office 2010 UI Appearance
+# Creating an Application with Office 2010 UI Appearance
 
 Users can create the appearance of the Office 2010 UI in WPF applications by applying Office 2010 UI themes to the Ribbon control. The Office 2010 UI in the Ribbon control supports the following themes:
 
@@ -55,7 +54,7 @@ The Office 2010 UI themes can be applied to the Ribbon control, as shown in the 
 <td>
 [C#]   public void RibbonWindow_Loaded(object sender, EventArgs e)   {    SkinManager.SetVisualStyle(this.MyRibbon, VisualStyle.Office2010Black);   }</td></tr>
 </table>
-## Appearance
+# Appearance
 
 The Office 2010 UI in the Ribbon control looks like the Microsoft Office 2010 UI. The Office 2010 UI in the Ribbon control has many changes when compared to the Office 2007 UI. The Ribbon control has many new elements added to it and the visual styles for all the elements have been changed to achieve the Office 2010 UI. The following are the main elements of the Office 2010 UI:
 
@@ -70,17 +69,17 @@ The Office 2010 UI in the Ribbon control looks like the Microsoft Office 2010 UI
 
 
 
-Ribbon Window
+## Ribbon Window
 
 The Ribbon window supports the display of content just like Microsoft Office 2010 UI. In the Office 2010 UI, the width of the title bar on the Ribbon window is extended. Also, the Ribbon window can be dragged by clicking anywhere on the title bar.
 
-Application Icon
+## Application Icon
 
 The Application icon is built-in the Ribbon control and is located in the upper-left corner of the control. Users can customize the Application icon by using the Icon property of the Ribbon, as shown in the following code snippet. 
 
-
-
-[C#]   
+{% highlight c# %}
+ 
+    [C#]   
 
 
 
@@ -102,41 +101,42 @@ The Application icon is built-in the Ribbon control and is located in the upper-
 
      </syncfusion:Ribbon>
 
+ {% endhighlight %}
 
 
 
 
-{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img2.png)' | markdownify }}
-{:.image }
+
+
+
+![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img2.png)
 
 
 
 
-Toggle Button
+## Toggle Button
 
 The Toggle button is a new element in the Ribbon control with the Office 2010 UI, which is located in the upper-right corner of the control near the Tab Panel item. The Toggle button is used to change the Ribbon state just like the Microsoft Office 2010 UI. The Toggle button has two states, namely Normal and Hide. The Toggle button will be added to the Ribbon control when the Office 2010 UI themes are applied.
 
 
 
-{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img3.png)' | markdownify }}
-{:.image }
+![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img3.png)
 
 
 
 
-Back Stage Button
+## Back Stage Button
 
 The Back Stage button is a new element in the Ribbon control with the Office 2010 UI. It is just like the Application Menu in the Office 2007 UI. The Back Stage button will be added to the Ribbon control when the Office 2010 UI themes are applied and it can be clicked to open the Back Stage UI.
 
 
 
-{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img4.png)' | markdownify }}
-{:.image }
+![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img4.png)
 
 
 
 
-Back Stage
+## Back Stage
 
 The Back Stage is a new UI in the Office 2010 UI, which displays application commands, such as Save, Save As, Open, and Exit. The Back Stage UI can be opened by clicking the Back Stage button.
 
@@ -153,37 +153,34 @@ The Back Stage Tab item is used to display the content of the tab item just like
 
 
 
-{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img5.png)' | markdownify }}
-{:.image }
+![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img5.png)
 
 
 
 
-QAT
+## QAT
 
 The appearance of the QAT in the Office 2010 UI is different when compared to the Office 2007 UI. In the Office 2010 UI, two separators are added to the QAT when it is displayed above the Ribbon and they will be disabled when the QAT is displayed below the Ribbon. 
 
 
 
-{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img6.png)' | markdownify }}
-{:.image }
+![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img6.png)
 
 
 
 
-{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img7.png)' | markdownify }}
-{:.image }
+![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img7.png)
 
 
 
 
-Button Panel
+## Button Panel
 
 The Button panel in the Office 2010 UI has the SeparatorVisibility property to control the visibility of the separators. You can customize the Button panel by changing the value of the SeparatorVisibility property. By default, the value of the SeparatorVisibility property is “Visible”. The code for the default Button panel is shown in the following code snippet.
 
-
-
-[C#]   
+{% highlight c# %}
+ 
+    [C#]   
 
 
 
@@ -193,21 +190,24 @@ The Button panel in the Office 2010 UI has the SeparatorVisibility property to c
 
 </syncfusion:ButtonPanel>
 
+ {% endhighlight %}
 
 
 
 
-{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img8.png)' | markdownify }}
-{:.image }
+
+
+
+![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img8.png)
 
 
 
 
 The separators in the Button panel can be collapsed, as shown in the following code snippet.
 
-
-
-[C#]   
+{% highlight c# %}
+ 
+    [C#]   
 
 
 
@@ -217,17 +217,20 @@ The separators in the Button panel can be collapsed, as shown in the following c
 
 </syncfusion:ButtonPanel>
 
+ {% endhighlight %}
 
 
 
 
-{{ '![C:/Users/sureshkumarc/Desktop/Office 2010/SL/buttonpanel2.png](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img9.png)' | markdownify }}
-{:.image }
+
+
+
+![C:/Users/sureshkumarc/Desktop/Office 2010/SL/buttonpanel2.png](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img9.png)
 
 
 
 
-Office 2010 UI Themes
+## Office 2010 UI Themes
 
 You can customize the Office 2010 UI in the Ribbon control in a WPF application by using the following themes:
 
@@ -237,20 +240,16 @@ You can customize the Office 2010 UI in the Ribbon control in a WPF application 
 
 
 
-{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img10.png)' | markdownify }}
-{:.image }
+![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img10.png)
 
 
 
 
-{{ '![C:/Users/sureshkumarc/Desktop/New folder/blue.png](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img11.png)' | markdownify }}
-{:.image }
+![C:/Users/sureshkumarc/Desktop/New folder/blue.png](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img11.png)
 
 
 
-
-{{ '![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img12.png)' | markdownify }}
-{:.image }
+![](Office-2010-User-Interface-UI_images/Office-2010-User-Interface-UI_img12.png)
 
 
 

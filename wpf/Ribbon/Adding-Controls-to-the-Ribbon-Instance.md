@@ -11,13 +11,13 @@ documentation: ug
 
 This section illustrates how to add the following controls to the Ribbon instance.
 
-## MenuButton
+# MenuButton
 
 MenuButton control is used in the menu bars to display items. It can have sub menu items. The following code snippets are used to add a MenuButton control to the application. This control when added outside the ribbon instance will not have desired look and feel.
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 
 
@@ -43,15 +43,18 @@ Icon="SampleImages/RestrictPermissions32.png">
 
 </ribbon:MenuButton>
 
-
-
-{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img1.jpeg)' | markdownify }}
-{:.image }
+ {% endhighlight %}
 
 
 
 
-### DropDownMenuItem
+
+![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img1.jpeg)
+
+
+
+
+# DropDownMenuItem
 
 The DropDownButtonAdv control contains the DropDownMenuGroups container. DropDownMenuGroups is nothing but a collection of items, which uses DropDownMenuItem.
 
@@ -59,17 +62,16 @@ The following image gives you an idea of the hierarchy and appearance of the Dro
 
 
 
-{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img2.png)' | markdownify }}
-{:.image }
+![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img2.png)
 
 
 
 
-#### Adding DropDownMenuItem to a WPF project
+# Adding DropDownMenuItem to a WPF project
 
 You have two ways in which you could add the DropDownMenuItem to the WPF project, depending on your requirement. Both require you to add the DropDownMenuGroup to the DropDownButtonAdv.
 
-##### Creating DropDownMenuItem Control for a single item
+# Creating DropDownMenuItem Control for a single item
 
 You can create a DropDownMenuItem control either by using XAML code or C# code. 
 Here is the code you will need to use to create a DropDownMenuItem control for a single item in the DropDownMenuGroup:
@@ -86,7 +88,7 @@ Here is the code you will need to use to create a DropDownMenuItem control for a
 </table>
 
 
-##### Adding DropDownMenuItem to the DropDownMenuGroup 
+# Adding DropDownMenuItem to the DropDownMenuGroup 
 
 DropDownMenuGroup contains one or more items that are defined as DropDownMenuItem Items. 
 
@@ -104,7 +106,7 @@ You will have to use the following code to add a DropDownMenuItem to the DropDow
 </table>
 
 
-##### Adding DropDownMenuGroup to the DropDownButtonAdv Control
+# Adding DropDownMenuGroup to the DropDownButtonAdv Control
 
 In order to add the DropDownMenuGroup to the DropDownButtonAdv control, use the following code:
 
@@ -120,22 +122,22 @@ In order to add the DropDownMenuGroup to the DropDownButtonAdv control, use the 
 </table>
 
 
-#### Properties, Methods and Events tables
+# Properties, Methods and Events tables
 
 
 
-Properties
+## Properties
 
 _Property table:_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Values accepted </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Values accepted**' | markdownify }}</td><td>
+{{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 DropDirection </td><td>
@@ -156,10 +158,9 @@ NA</td></tr>
 This is the code that you will need to use in order to create a DropDownMenuItem on the right of a DropDownAdv control. It uses the DropDirection property:
 
 
+{% highlight xml %}
 
-
-
-[XAML]
+    [XAML]
 
  <!-- Adding DropDirection Proerty in DropDownButtonAdv -->
 
@@ -183,6 +184,11 @@ This is the code that you will need to use in order to create a DropDownMenuItem
 
    </sync:DropDownButtonAdv>
 
+ {% endhighlight %}
+
+
+
+
 
 
 
@@ -190,10 +196,9 @@ This is the code that you will need to use in order to create a DropDownMenuItem
 Here is the code that you will use in order to keep the dropdown menu open. It uses the IsDropDown property:
 
 
+{% highlight xml %}
 
-
-
-[XAML]
+    [XAML]
 
  <!-- Adding IsDropDown Proerty in DropDownButtonAdv -->
 
@@ -217,17 +222,22 @@ Here is the code that you will use in order to keep the dropdown menu open. It u
 
   </sync:DropDownButtonAdv>
 
+ {% endhighlight %}
 
 
-Methods
+
+
+
+
+## Methods
 
 The methods from the ItemsControl base class are applicable for this control.
 
-Events
+## Events
 
 The events from the ItemsControl base class are applicable for this control.
 
-## SplitButton
+# SplitButton
 
 Split Button in the Ribbon instance enables to display a menu when the split button is clicked. This also enables to perform multiple operations by using a button. The Split Button contains a drop arrow, when clicked on it; the menu related to the button is displayed.
 
@@ -243,23 +253,22 @@ Split Button in the Ribbon instance enables to display a menu when the split but
 </table>
 
 
-{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img3.jpeg)' | markdownify }}
-{:.image }
+![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img3.jpeg)
 
 
 
 
-In SplitButton, which is more preferable, RibbonButton or RibbonMenuItem?
+## In SplitButton, which is more preferable, RibbonButton or RibbonMenuItem?
 
 In SplitButton, RibbonButton is more preferable since it has "Toggle" and "IsChecked" options. RibbonMenuItem is more applicable for Application Menus.
 
-## SplitMenuButton
+# SplitMenuButton
 
 SplitMenuButton is similar to MenuButton. It is used to perform multiple operations. Events are raised, when main menubutton is clicked as well as when the sub item in the splitmenubutton is clicked. The following lines of code can be used to add a splitmenubutton control.
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 
 
@@ -283,35 +292,40 @@ SmallIcon="SampleImages/Document32.png"/>
 
 </ribbon:SplitMenuButton>
 
-
-
-{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img4.jpeg)' | markdownify }}
-{:.image }
+ {% endhighlight %}
 
 
 
 
-## SimpleMenuButton
+
+![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img4.jpeg)
+
+
+
+# SimpleMenuButton
 
 The difference between the other menu button and SimpleMenuButton is that it cannot have a sub menu. The following code snippet is used to add a SimpleMenuButton. This control when added outside the ribbon instance will not have the desired appearance.
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 
 
 <ribbon:SimpleMenuButton Label="New" Icon="/SampleImages/Document32.png"/>
 
-
-
-{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img5.jpeg)' | markdownify }}
-{:.image }
+ {% endhighlight %}
 
 
 
 
-## RibbonMenuItem
+
+![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img5.jpeg)
+
+
+
+
+# RibbonMenuItem
 
 RibbonMenuItems are used as entities in menus like ApplicationMenu, Split Button Menu, context menu, and so on. RibbonMenuItems are used to perform operations when selected. The following code snippet is used to add a RibbonMenuItem to the Ribbon.
 
@@ -327,13 +341,12 @@ RibbonMenuItems are used as entities in menus like ApplicationMenu, Split Button
 </table>
 
 
-{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img6.jpeg)' | markdownify }}
-{:.image }
+![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img6.jpeg)
 
 
 
 
-## RibbonTextBox
+# RibbonTextBox
 
 RibbonTextBox control is similar to a normal text box. RibbonTextBox has all the functionalities of an Office2007 UI Text box. This control is added using the following code snippet.
 
@@ -349,13 +362,12 @@ RibbonTextBox control is similar to a normal text box. RibbonTextBox has all the
 </table>
 
 
-{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img7.jpeg)' | markdownify }}
-{:.image }
+![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img7.jpeg)
 
 
 
 
-## RibbonComboBox
+# RibbonComboBox
 
 RibbonComboBox control is used to display the list of items, as drop-down menu in Ribbon instance. You can add any number of items to the RibbonComboBox. The following lines of code can be used to add RibbonComboBox and items to RibbonComboBox respectively.
 
@@ -371,13 +383,12 @@ RibbonComboBox control is used to display the list of items, as drop-down menu i
 </table>
 
 
-{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img8.jpeg)' | markdownify }}
-{:.image }
+![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img8.jpeg)
 
 
 
 
-## RibbonCheckBox
+# RibbonCheckBox
 
 RibbonCheckBox control is similar to a normal check box control. It is used to select or unselect options from the users. RibbonCheckBox is added to the RibbonWindow using the following code.
 
@@ -393,13 +404,12 @@ RibbonCheckBox control is similar to a normal check box control. It is used to s
 </table>
 
 
-{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img9.jpeg)' | markdownify }}
-{:.image }
+![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img9.jpeg)
 
 
 
 
-## RibbonRadioButton
+# RibbonRadioButton
 
 RibbonRadioButton control is used to select options among a group. RibbonRadioButton has similar set of functionalities as in WPF controls. A RibbonRadioButton is added to the application using the following code snippet.
 
@@ -415,13 +425,12 @@ RibbonRadioButton control is used to select options among a group. RibbonRadioBu
 </table>
 
 
-{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img10.jpeg)' | markdownify }}
-{:.image }
+![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img10.jpeg)
 
 
 
 
-## RibbonListBox
+# RibbonListBox
 
 RibbonListBox control is used to display a list of items in a Ribbon instance. You can add any type of content as RibbonListBox items. 
 
@@ -439,19 +448,18 @@ To add this control is to the application, use the following code snippet.
 </table>
 
 
-{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img11.jpeg)' | markdownify }}
-{:.image }
+[](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img11.jpeg)
 
 
 
 
-## RibbonStatusBar
+# RibbonStatusBar
 
 RibbonStatusBar control is added to a RibbonWindow to display the current status of the application. The following code snippet can be used to add a status bar to the RibbonWindow.
 
+{% highlight xml %}
 
-
-[XAML]
+   [XAML]
 
 
 
@@ -465,43 +473,49 @@ RibbonStatusBar control is added to a RibbonWindow to display the current status
 
 </ribbon:RibbonWindow.StatusBar>
 
-
-
-{{ '![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img12.png)' | markdownify }}
-{:.image }
+ {% endhighlight %}
 
 
 
 
-## Ribbon TabPanelItem
+
+![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img12.png)
+
+
+
+
+# Ribbon TabPanelItem
 
 This section elaborates about the supports provided by Ribbon TabPanelItem. The TabPanalItem property is used to set the buttons at the right of the Ribbon Window.
 
-Structure
+## Structure
 
 The _TabPanelItem_ is located at the right corner below the main window close button in the following screen shot.
 
 
 
-{{ '![D:/Documentation/TabPanelItemZoom.png](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img13.png)' | markdownify }}
-{:.image }
+![D:/Documentation/TabPanelItemZoom.png](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img13.png)
 
 
 
 
-Configuring Ribbon TabPanelItem
+## Configuring Ribbon TabPanelItem
 
 This following code snippet explains how to create and configure _TabPanelItem_.
 
+{% highlight xml %}
 
-
-XAML
+    [XAML]
 
 <syncfusion:Ribbon.TabPanelItem>
 
 <syncfusion:RibbonButton SizeForm="ExtraSmall" SmallIcon="help16.png" />
 
 </syncfusion:Ribbon.TabPanelItem>
+
+ {% endhighlight %}
+
+
 
 
 

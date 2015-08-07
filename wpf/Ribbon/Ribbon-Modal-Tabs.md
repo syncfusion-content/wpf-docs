@@ -11,33 +11,31 @@ documentation: ug
 
 Modal Tab in Ribbon Control displays a collection of commands that will be used only in a temporary mode. At this point, the core tabs will be disabled.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 Print Preview is a Modal Tab which displays Print Preview related commands until you close the Modal Tab.
 
 
 
-{{ '![C:/Users/sureshkumarc/Desktop/modal Tabs/ModalTab10.png](Ribbon-Modal-Tabs_images/Ribbon-Modal-Tabs_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/sureshkumarc/Desktop/modal Tabs/ModalTab10.png](Ribbon-Modal-Tabs_images/Ribbon-Modal-Tabs_img1.png)
 
 
 
 
-{{ '![C:/Users/sureshkumarc/Desktop/modal Tabs/Modal Tab2.png](Ribbon-Modal-Tabs_images/Ribbon-Modal-Tabs_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/sureshkumarc/Desktop/modal Tabs/Modal Tab2.png](Ribbon-Modal-Tabs_images/Ribbon-Modal-Tabs_img2.png)
 
 
 
 
-Adding Modal Tabs to an Application 
+## Adding Modal Tabs to an Application 
 
 You can add the Modal Tab in an application by adding Ribbon Tabs in ModalTabCollection property in Ribbon. You can also add all Ribbon Tabs that you want to use as Modal Tab into ModalTabCollection property. 
 
 This is illustrated in the code given below.
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
             <syncfusion:Ribbon.ModalTabCollection >
 
@@ -61,17 +59,21 @@ This is illustrated in the code given below.
 
             </syncfusion:Ribbon.ModalTabCollection>
 
+ {% endhighlight %}
+
+
+
 
 
 
 
 After adding this collection in Ribbon, you can then handle the Modal Tab visibility by using the following methods at any time.
 
-Tables for properties, methods
+## Tables for properties, methods
 
 
 
-Properties
+### Properties
 
 
 
@@ -80,11 +82,11 @@ _ModalTabCollection Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Default Value</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Default Value**' | markdownify }}</td></tr>
 <tr>
 <td>
 ModalTabCollection</td><td>
@@ -95,7 +97,7 @@ Null Collection</td></tr>
 </table>
 
 
-Methods
+### Methods
 
 
 
@@ -104,11 +106,11 @@ _ShowModalTab Table_
 <table>
 <tr>
 <th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Return Type </th><th>
-Reference links </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <th>
 ShowModalTab</th><th>
@@ -124,11 +126,11 @@ _CloseModalTabs Table_
 <table>
 <tr>
 <th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Return Type </th><th>
-Reference links </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <th>
 CloseModalTabs</th><th>
@@ -139,7 +141,7 @@ How to close ModalTabs?</th></tr>
 </table>
 
 
-How to handle Modal Tabs in Ribbon?
+#How to handle Modal Tabs in Ribbon?
 
 You can add Ribbon Tabs that you want to display as Modal Tabs to ModalTabCollection property in the Ribbon Control. The ShowModalTab and CloseModalTabs methods handle Modal Tabs in the Ribbon control. You can display any Modal Tab from the ModalTabCollection property whenever required. 
 
@@ -147,9 +149,9 @@ You can call ShowModalTab method to show the specific Modal Tab in Ribbon. This 
 
 This is illustrated in the code given below.
 
-
-
-[C#]
+{% highlight c# %}
+ 
+   [C#]
 
 
 
@@ -161,6 +163,10 @@ private void ShowModalTabBtn_Click(object sender, RoutedEventArgs e)
 
         }
 
+ {% endhighlight %}
+
+
+
 
 
 
@@ -169,13 +175,10 @@ CloseModalTabs method will close the currently opened Modal Tab in Ribbon contro
 
 This is illustrated in the code given below.
 
-
-
-[C#]
-
-
-
-private void CloseModalTabBtn_Click(object sender, RoutedEventArgs e)
+{% highlight c# %}
+ [C#]
+ 
+    private void CloseModalTabBtn_Click(object sender, RoutedEventArgs e)
 
         {
 
@@ -183,9 +186,17 @@ private void CloseModalTabBtn_Click(object sender, RoutedEventArgs e)
 
         }
 
+ {% endhighlight %}
 
 
-Sample Link
+
+
+
+
+
+
+
+## Sample Link
 
 Tools  Ribbon   Modal Tabs
 

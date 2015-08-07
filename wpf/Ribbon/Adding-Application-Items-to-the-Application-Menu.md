@@ -11,9 +11,9 @@ documentation: ug
 
 Application Items are the items that are displayed in the right pane of the Application menu. Application Items are used to add items like recently used programs, Recent Documents, and so on. The following lines of code are used to add Application Items to the Application Menu.
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 
 
@@ -33,15 +33,18 @@ Application Items are the items that are displayed in the right pane of the Appl
 
 </ribbon:ApplicationMenu.ApplicationItems>
 
-
-
-{{ '![](Adding-Application-Items-to-the-Application-Menu_images/Adding-Application-Items-to-the-Application-Menu_img1.jpeg)' | markdownify }}
-{:.image }
+ {% endhighlight %}
 
 
 
 
-See Also
+
+![](Adding-Application-Items-to-the-Application-Menu_images/Adding-Application-Items-to-the-Application-Menu_img1.jpeg)
+
+
+
+
+## See Also
 
 Adding Application Menu to the Ribbon Window, Adding Items to the Application Menu
 

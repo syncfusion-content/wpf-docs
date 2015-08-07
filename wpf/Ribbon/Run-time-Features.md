@@ -11,7 +11,7 @@ documentation: ug
 
 This section illustrates the following run-time feature of Ribbon control. 
 
-## Setting the ToolTip for the Split Button of the Ribbon Instance
+# Setting the ToolTip for the Split Button of the Ribbon Instance
 
 Ribbon instance now provides support to set the ToolTip for the Split Button. It provides the following ToolTip options.
 
@@ -22,7 +22,7 @@ Ribbon instance now provides support to set the ToolTip for the Split Button. It
 
 
 
-Setting the ToolTip for the Entire Split Button
+## Setting the ToolTip for the Entire Split Button
 
 You can set the tooltip for the entire Split Button by using the ToolTip property of the Split Button. Use the following code for setting the tooltip feature.
 
@@ -38,13 +38,11 @@ You can set the tooltip for the entire Split Button by using the ToolTip propert
 </table>
 
 
-{{ '![](Run-time-Features_images/Run-time-Features_img1.jpeg)' | markdownify }}
-{:.image }
+![](Run-time-Features_images/Run-time-Features_img1.jpeg)
 
 
 
-
-Setting the ToolTip for the Upper and Lower Half of the Split Button
+## Setting the ToolTip for the Upper and Lower Half of the Split Button
 
 You can set the tooltip for the upper and lower half of the Split Button.
 
@@ -62,27 +60,25 @@ The ToolTip property is used to set the tooltip for the upper half of the Split 
 </table>
 
 
-{{ '![](Run-time-Features_images/Run-time-Features_img2.jpeg)' | markdownify }}
-{:.image }
+![](Run-time-Features_images/Run-time-Features_img2.jpeg)
 
 
 
 
-{{ '![](Run-time-Features_images/Run-time-Features_img3.jpeg)' | markdownify }}
-{:.image }
+![](Run-time-Features_images/Run-time-Features_img3.jpeg)
 
 
 
 
-## Options for Inserting Help Text in ScreenTip
+# Options for Inserting Help Text in ScreenTip
 
 Essential Tool WPF is enhanced with HelpText option. Users can add help text in ScreenTip. A line separator separates the Screen tip information from help text. 
 
-> _Note: When no HelpText is set the HelpText area and line separator get automatically hidden._ 
+ _Note: When no HelpText is set the HelpText area and line separator get automatically hidden._ 
 
 
 
-Inserting Help Text in ScreenTip
+## Inserting Help Text in ScreenTip
 
 Insert HelpText in ScreenTip, by using the following code.
 
@@ -98,8 +94,7 @@ Insert HelpText in ScreenTip, by using the following code.
 </table>
 
 
-{{ '![](Run-time-Features_images/Run-time-Features_img4.jpeg)' | markdownify }}
-{:.image }
+![](Run-time-Features_images/Run-time-Features_img4.jpeg)
 
 
 

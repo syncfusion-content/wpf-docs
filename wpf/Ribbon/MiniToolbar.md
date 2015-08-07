@@ -25,8 +25,7 @@ The following lines of code can be used to add a MiniToolbar to a ribbon instanc
 </table>
 
 
-{{ '![](MiniToolbar_images/MiniToolbar_img1.jpeg)' | markdownify }}
-{:.image }
+![](MiniToolbar_images/MiniToolbar_img1.jpeg)
 
 
 

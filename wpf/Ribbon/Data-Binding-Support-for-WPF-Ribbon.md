@@ -20,9 +20,9 @@ Two new properties have been added to the Ribbon Tab control.
 
 The code below demonstrates a business object used for item-source binding.
 
-
-
-  public class CustomRibbonTab
+{% highlight c# %}
+ 
+     public class CustomRibbonTab
 
     {
 
@@ -80,13 +80,17 @@ The code below demonstrates a business object used for item-source binding.
 
     }
 
+ {% endhighlight %}
+
+ 
+
 
 
 Adding items to an observable collection is demonstrated in the code below.
 
-
-
- private void Window1_Loaded(object sender, RoutedEventArgs e)
+{% highlight c# %}
+ 
+    private void Window1_Loaded(object sender, RoutedEventArgs e)
 
         {
 
@@ -188,6 +192,10 @@ Adding items to an observable collection is demonstrated in the code below.
 
         }
 
+ {% endhighlight %}
+
+ 
+
 
 
 
@@ -208,19 +216,18 @@ C#Binding binding = new Binding("SampleList");binding.Source = this;ribbon.SetBi
 
 
 
-{{ '![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img1.jpeg)' | markdownify }}
-{:.image }
+![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img1.jpeg)
 
 
 
 
-Using the Item Template
+## Using the Item Template
 
 The item template can be applied to the ribbon as demonstrated in the following code. 
 
+{% highlight xml %}
 
-
-<sync:Ribbon.ItemTemplate>
+   <sync:Ribbon.ItemTemplate>
 
     <DataTemplate>
 
@@ -230,23 +237,25 @@ The item template can be applied to the ribbon as demonstrated in the following 
 
 </sync:Ribbon.ItemTemplate>
 
+ {% endhighlight %}
 
 
 
 
-{{ '![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 
+![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img2.jpeg)
 
-Using Item Container Style
+
+
+## Using Item Container Style
 
 The above image shows ribbon tabs that are bound with an observable collection. The content template for every ribbon tab can be applied as demonstrated in the following code.
 
+{% highlight xml %}
 
-
-<sync:Ribbon.ItemContainerStyle>
+    <sync:Ribbon.ItemContainerStyle>
 
      <Style TargetType="{x:Type sync:RibbonTab}">
 
@@ -302,25 +311,32 @@ The above image shows ribbon tabs that are bound with an observable collection. 
 
 </sync:Ribbon.ItemContainerStyle>
 
+ {% endhighlight %}
 
 
 
 
-{{ '![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img3.jpeg)' | markdownify }}
-{:.image }
+
+
+
+![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img3.jpeg)
 
 
 
 
-Using Template Selector
+## Using Template Selector
 
 Template Selector can be used so that templates can be applied according to logic set by the user. The following code demonstrates this.
 
+{% highlight xml %}
 
-
-<sync:RibbonWindow.Resources>
+   <sync:RibbonWindow.Resources>
 
         <sample:SampleSelector x:Key="Selector"/>
+
+ {% endhighlight %}
+
+
 
 
 
@@ -330,9 +346,9 @@ Template Selector can be used so that templates can be applied according to logi
 
 Data Template for Home ribbon tab,
 
+{% highlight xml %}
 
-
- <DataTemplate x:Key="Home">
+    <DataTemplate x:Key="Home">
 
             <StackPanel Orientation="Horizontal">
 
@@ -370,13 +386,17 @@ Data Template for Home ribbon tab,
 
         </DataTemplate>
 
+ {% endhighlight %}
+
+ 
+
 
 
 Data Template for Folder Ribbon Tab,
 
+{% highlight xml %}
 
-
-<DataTemplate x:Key="Folder">
+    <DataTemplate x:Key="Folder">
 
             <StackPanel Orientation="Horizontal">
 
@@ -422,15 +442,19 @@ Data Template for Folder Ribbon Tab,
 
     </sync:RibbonWindow.Resources>
 
+ {% endhighlight %}
+
+
+
 
 
 
 
 The following code demonstrates the data template selector logic set by the user.
 
+{% highlight c# %}
 
-
-public class SampleSelector : DataTemplateSelector
+   public class SampleSelector : DataTemplateSelector
 
     {
 
@@ -478,25 +502,28 @@ public class SampleSelector : DataTemplateSelector
 
             </sync:Ribbon.ItemContainerStyle>
 
+ {% endhighlight %}
 
 
 
 
-{{ '![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img4.jpeg)' | markdownify }}
-{:.image }
+
+
+
+![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img4.jpeg)
 
 
 
 
-Adding or Removing Tabs
+## Adding or Removing Tabs
 
 
 
 Users can add or remove items to the item-source-bounded Observable collection so that changes are reflected in ribbon tab items. The following code shows how tab items can be added or removed dynamically when Items Source is used.
 
-
-
-private void Add_Click(object sender, RoutedEventArgs e)
+{% highlight c# %}
+ 
+    private void Add_Click(object sender, RoutedEventArgs e)
 
         {
 
@@ -552,19 +579,22 @@ private void Add_Click(object sender, RoutedEventArgs e)
 
         }
 
+ {% endhighlight %}
 
 
 
 
-Removing a tab Item
+
+
+
+## Removing a tab Item
 
  The following code demonstrates how to remove a tab item.
 
 
-
-
-
-  private void Remove_Click_1(object sender, RoutedEventArgs e)
+{% highlight c# %}
+ 
+      private void Remove_Click_1(object sender, RoutedEventArgs e)
 
         {
 
@@ -580,25 +610,29 @@ Removing a tab Item
 
         }
 
+ {% endhighlight %}
 
 
 
 
 
 
-{{ '![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img5.jpeg)' | markdownify }}
-{:.image }
 
 
 
 
-Removing all tabs
+![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img5.jpeg)
+
+
+
+
+## Removing all tabs
 
 The following code demonstrates removing all tabs.
 
-
-
-private void RemoveAll_Click_2(object sender, RoutedEventArgs e)
+{% highlight c# %}
+ 
+    private void RemoveAll_Click_2(object sender, RoutedEventArgs e)
 
         {
 
@@ -614,14 +648,17 @@ private void RemoveAll_Click_2(object sender, RoutedEventArgs e)
 
         }
 
+ {% endhighlight %}
 
 
 
 
 
 
-{{ '![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img6.jpeg)' | markdownify }}
-{:.image }
+
+
+
+![](Data-Binding-Support-for-WPF-Ribbon_images/Data-Binding-Support-for-WPF-Ribbon_img6.jpeg)
 
 
 

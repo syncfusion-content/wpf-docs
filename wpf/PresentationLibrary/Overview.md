@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Presentation is a native .NET class library that is used by developers to easily create, read, write and convert Microsoft PowerPoint files by using C#, VB.NET and managed C++ code from any of the following .NET platforms – Windows Forms, WPF, ASP.NET and ASP.NET MVC. It is a non-UI component that provides a full-fledged document instance that is easy to access & manipulate the contents without any dependency of Microsoft Office COM libraries & Microsoft Office. It supports only *.PPTX format documents; also it provides support to render the PowerPoint files (*.pptx) as an image and PDF files.
 
-Key Features
+## Key Features
 
 Important features of Essential Presentation are as follows.
 
@@ -26,7 +26,7 @@ Important features of Essential Presentation are as follows.
 
 > _The current version of Essential Presentation is in preview. It does not support some features in MS PowerPoint such as Word Art, Smart Art, Notes slide, editing Master slides, Animations, Transitions, Comment, Header & Footer, Ole Object, creation & editing of Handouts, equations, built-in themes & its variants._ 
 
-## System Requirement
+# System Requirement
 
 _System Requirement_
 
@@ -40,7 +40,7 @@ Supported .NET Frameworks versions</td><td>
 <br>Compatible MS PowerPoint versions</td><td>
 * MS PowerPoint 2007* MS PowerPoint 2010* MS PowerPoint 2013</td></tr>
 </table>
-## Required Assemblies
+# Required Assemblies
 
 
 In order to create and manipulation a Presentation file, the following assemblies are needed.
@@ -77,8 +77,8 @@ _List of Assemblies_
 <table>
 <tr>
 <td>
-Assembly Name</td><td>
-Short Description</td></tr>
+{{ '**Assembly Name**' | markdownify }}</td><td>
+{{ '**Short Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Syncfusion.Presentation.Base</td><td>

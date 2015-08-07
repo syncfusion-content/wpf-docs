@@ -11,9 +11,9 @@ documentation: ug
 
 You can add items to the drop-down menu of the Quick Access Toolbar by using the QATMenuItems property of the the QuickAccessToolbar. The following code example illustrates how to add items to the drop-down menu of the Quick Access Toolbar by using this property.
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 
 
@@ -31,13 +31,17 @@ You can add items to the drop-down menu of the Quick Access Toolbar by using the
 
 </syncfusion:QuickAccessToolBar>
 
+ {% endhighlight %}
+
+
+
 
 
 You can also dynamically add items to the drop-down menu of the Quick Access Toolbar by using the Add method of the the QATMenuItems. The following code example illustrates how to add items to the drop-down menu of the Quick Access Toolbar by using this method.
 
-
-
-[C#]
+{% highlight c# %}
+ 
+    [C#]
 
 
 
@@ -57,15 +61,18 @@ this.ribbon1.QuickAccessToolBar.QATMenuItems.Add(button1);
 
 this.ribbon1.QuickAccessToolBar.QATMenuItems.Add(button2);
 
-
-
-{{ '![](Adding-Items-to-Drop-Down-Menu-of-the-Quick-Access-Toolbar_images/Adding-Items-to-Drop-Down-Menu-of-the-Quick-Access-Toolbar_img1.jpeg)' | markdownify }}
-{:.image }
+ {% endhighlight %}
 
 
 
 
-See Also
+
+![](Adding-Items-to-Drop-Down-Menu-of-the-Quick-Access-Toolbar_images/Adding-Items-to-Drop-Down-Menu-of-the-Quick-Access-Toolbar_img1.jpeg)
+
+
+
+
+## See Also
 
 Quick Access Toolbar
 

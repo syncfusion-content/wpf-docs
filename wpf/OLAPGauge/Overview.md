@@ -11,11 +11,10 @@ documentation: ug
 
 Essential BI OLAP Gauge for WPF is ideal for highlighting business critical Key Performance Indicator (KPI) information in executive dashboards and report cards. Gauges let you present values against goals in a very intuitive manner. Built-in data binding support allows you to easily bind a gauge to a KPI result from your OLAP database. The Gauge control comes with sophisticated customization support, which provides endless possibility for control customization. It renders a value as a pointer against a circular scale. You can also easily build high quality dashboards and process controls.
 
-{{ '![C:/Users/Hari/Pictures/OlapGauge/OLAP Gauge Control.png](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/Hari/Pictures/OlapGauge/OLAP Gauge Control.png](Overview_images/Overview_img1.png)
 
 
-Key Features
+## Key Features
 
 The important features of OLAP Gauge control are listed below:
 
@@ -30,7 +29,7 @@ The important features of OLAP Gauge control are listed below:
 * Supports different themes like Office 2007 Blue, Office 2007 Black, Office 2007 Silver, and so on, to customize the appearance of the gauge 
 * Support to show or hide gauge headers, gauge factors and gauge labels. 
 
-User Guide Organization
+## User Guide Organization
 
 The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of OLAP Gauge control. It is organized into the following sections:
 
@@ -38,7 +37,7 @@ The product comes with numerous samples as well as an extensive documentation to
 * Getting Started - This section guides you on getting started with the BI application, OLAP Gauge control, and so on.
 * Concepts and Features - The features of OLAP Gauge control are illustrated with use case scenarios, code examples and screen shots under this section.
 
-Document Conventions
+## Document Conventions
 
 The following conventions will help you to quickly identify the important sections of information while using the content.
 
@@ -47,14 +46,13 @@ _Conventions Table_
 <table>
 <tr>
 <td>
-Convention</td><td>
-Icon</td><td>
-Description</td></tr>
+{{ '**Convention**' | markdownify }}</td><td>
+{{ '**Icon**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Note</td><td>
-> ![](Overview_images/Overview_img2.jpeg)
-{:.image }
+> {{'![](Overview_images/Overview_img2.jpeg)'| markdownify }}
 {{ '_Note:_' | markdownify }}</td><td>
 Represents important information</td></tr>
 <tr>
@@ -65,14 +63,14 @@ Represents an example</td></tr>
 <tr>
 <td>
 Tip</td><td>
-![C:/Users/Hari/Pictures/OlapClient/Tip.png](Overview_images/Overview_img3.png)
+{{'![C:/Users/Hari/Pictures/OlapClient/Tip.png](Overview_images/Overview_img3.png)'| markdownify }}
 {:.image }
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
-![C:/Users/Hari/Pictures/OlapClient/Information.png](Overview_images/Overview_img4.png)
+{{'![C:/Users/Hari/Pictures/OlapClient/Information.png](Overview_images/Overview_img4.png)'| markdownify }}
 {:.image }
 </td><td>
 Represents additional information on the topic</td></tr>

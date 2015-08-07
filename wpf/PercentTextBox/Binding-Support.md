@@ -13,11 +13,11 @@ Data binding is the process of establishing a connection between the application
 
 The following example shows a simple binding between the PercentValue of the PercentTextBox and another PercentTextBox PercentValue that reflects the typed value:
 
-XAML
+ {% highlight xml %}
 
+    [XAML]
 
-
-<StackPanel>
+   <StackPanel>
 
     <syncfusion:PercentTextBox x:Name="percentTextBox1" Width="150" Margin="10"/>
 
@@ -29,19 +29,24 @@ XAML
 
 </StackPanel>
 
+ {% endhighlight %}
 
 
-{{ '![](Binding-Support_images/Binding-Support_img1.png)' | markdownify }}
-{:.image }
+
+
+
+
+
+![](Binding-Support_images/Binding-Support_img1.png)
 
 
 The Data Context property provides its value to child elements. So you can set the Data Context on a superior layout container and its value is provided to all child elements. This is very useful if you want to build a form that is bound to multiple properties of the same data object. If you don't explicitly define a source of binding, it takes the data context by default.
 
-XAML
+ {% highlight xml %}
 
+    [XAML]
 
-
-<StackPanel DataContext="{StaticResource myCustomer}">
+    <StackPanel DataContext="{StaticResource myCustomer}">
 
     <TextBox Text="{Binding FirstName}"/>
 
@@ -53,15 +58,23 @@ XAML
 
 </StackPanel>
 
+ {% endhighlight %}
+
+
+
+
+
+
+
 
 
 If you want to bind values other than double values, then you need to use the Value Converter. The following example shows a simple binding between the PercentValue of the PercentTextBox and the Textbox text that reflects the typed value:
 
-XAML
+ {% highlight xml %}
 
+    [XAML]
 
-
-<StackPanel>
+   <StackPanel>
 
     <StackPanel.Resources>
 
@@ -79,9 +92,14 @@ XAML
 
 </StackPanel>
 
+ {% endhighlight %}
 
 
-{{ '![](Binding-Support_images/Binding-Support_img2.png)' | markdownify }}
-{:.image }
+
+
+
+
+
+![](Binding-Support_images/Binding-Support_img2.png)
 
 

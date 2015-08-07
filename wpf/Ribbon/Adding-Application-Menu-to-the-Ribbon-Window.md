@@ -11,9 +11,9 @@ documentation: ug
 
 You can add an application menu to the ribbon window. An application menu contains standard commands that are performed in any office applications. This menu is viewed by clicking the button at the top-left corner of the window. You can also customize the image in the application menu button. An application menu is added to a ribbon window by using the ApplicationMenu property of the Ribbon class. The following code snippet is used to add an application menu to a ribbon window.
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 
 
@@ -27,13 +27,17 @@ You can add an application menu to the ribbon window. An application menu contai
 
 </ribbon:Ribbon.ApplicationMenu>
 
+ {% endhighlight %}
+
+
+
 
 
 Image is added to application menu button by using the ApplicationButtonImage property of the ApplicationMenu class. The following code is used to add an image to application menu button.
 
+{% highlight xml %}
 
-
-[XAML]
+    [XAML]
 
 
 
@@ -45,15 +49,18 @@ Image is added to application menu button by using the ApplicationButtonImage pr
 
 </ribbon:Ribbon.ApplicationMenu>
 
-
-
-{{ '![](Adding-Application-Menu-to-the-Ribbon-Window_images/Adding-Application-Menu-to-the-Ribbon-Window_img1.jpeg)' | markdownify }}
-{:.image }
+ {% endhighlight %}
 
 
 
 
-See Also
+
+![](Adding-Application-Menu-to-the-Ribbon-Window_images/Adding-Application-Menu-to-the-Ribbon-Window_img1.jpeg)
+
+
+
+
+## See Also
 
 Adding Items to the Application Menu, Adding Application Items to the Application Menu
 
