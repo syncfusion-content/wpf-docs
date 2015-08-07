@@ -27,13 +27,16 @@ Wizard control is created programmatically by using either XAML or C# code. The 
 
 
 
+{% highlight xml %}
+
 [XAML]
 
 
 
 <syncfusion:WizardControl Name="wizardControl"/>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -44,14 +47,14 @@ Wizard control is created programmatically by using either XAML or C# code. The 
 WizardControl wizardControl = new WizardControl();            
 
 grid.Children.Add(wizardControl); 
-
+{% endhighlight %}
 
 
 > _Note: For creating Wizard control using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed._
 
-> 
+ 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.jpeg)
+
 
 

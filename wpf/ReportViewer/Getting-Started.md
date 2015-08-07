@@ -17,8 +17,8 @@ The section illustrates how to add the Report Viewer to the WPF application. It 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 
@@ -27,75 +27,82 @@ The section illustrates how to add the Report Viewer to the WPF application. It 
 
 
 
-{{ '![Description: 3.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
 
-> _Note: The following code is auto generated in XAML window._
 
-> 
+   _Note: The following code is auto generated in XAML window._
 
-<Window x:Class="WpfApplication6.Window1"    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+   ~~~xml
 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+   <Window x:Class="WpfApplication6.Window1"    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-    Title="Window1" Height="371" Width="559" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+   Title="Window1" Height="371" Width="559" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
-    <Grid>
+   <Grid>
 
-        <syncfusion:ReportViewer Name="reportViewer1" />
+   <syncfusion:ReportViewer Name="reportViewer1" />
 
-    </Grid>
+   </Grid>
 
-</Window> 
+   </Window> 
 
-
+   ~~~
+   {:.prettyprint}
 
 3. Set the ReportPath to load the report in Report Viewer from a local machine.
-                        1. <Window x:Class="WpfApplication6.Window1"    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                        2.     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                        3.     Title="Window1" Height="371" Width="559" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-                        4.     <Grid>
-                        5.         <syncfusion:ReportViewer Name="reportViewer1" ReportPath="D:\ReportTemplate\Invoice.rdl"/>
-                        6.     </Grid>
 
-</Window> 
+   ~~~xml
+	
+   <Window x:Class="WpfApplication6.Window1"    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    
+   Title="Window1" Height="371" Width="559" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+    
+   <Grid>
+    
+   <syncfusion:ReportViewer Name="reportViewer1" ReportPath="D:\ReportTemplate\Invoice.rdl"/>
+   
+   </Grid>
+
+   </Window> 
+   
+   ~~~
+  {:.prettyprint}
+
+4.To render the provided report in Report Viewer, call the RefreshReport method in window or parent control loaded event.
+   
+  ~~~js
+   
+  this.Loaded += (sender, arg) =>
+   
+  {
+   
+  // To Render the Report in ReportViewer.
+   
+  this.reportViewer1.RefreshReport();
+   
+  };
+   
+  ~~~
+  {:.prettyprint}
+   
+5.Run the application. The following output displays.
+
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
-4. To render the provided report in Report Viewer, call the RefreshReport method in window or parent control loaded event.
-
-this.Loaded += (sender, arg) =>
-
-                {
-
-                      // To Render the Report in ReportViewer.
-
-                    this.reportViewer1.RefreshReport();
-
-                };
+6.Click export drop-down button in Report Viewer toolbar and select PDF or XPS as needed. The report is exported into PDF or XPS formats, respectively.
 
 
 
-5. Run the application. The following output displays.
-
-{{ '![Description: C:/Users/lingarajs/AppData/Local/Syncfusion/EssentialStudio/9.4.0.62/Reports/WPF/ReportViewer.WPF/Samples/Product Showcase/Invoice/Images/InvoiceDemo.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
-
-
-6. Click export drop-down button in Report Viewer toolbar and select PDF or XPS as needed. The report is exported into PDF or XPS formats, respectively.
-
-
-
-{{ '![Description: sa.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 The following output is the exported PDF report.
 
-> 
+ 
+![](Getting-Started_images/Getting-Started_img5.png)
 
-{{ '![Description: C:/Users/lingarajs/AppData/Local/Syncfusion/EssentialStudio/9.4.0.62/Reports/WPF/ReportWriter.WPF/Samples/Product Showcase/Invoice/Images/Invoice.png](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
 
 

@@ -11,13 +11,16 @@ documentation: ug
 
 MenuItemAdv allows users to display an image on the left of the control. Icon for MenuItemAdv can be set by providing the image source as a value for the Icon property of the MenuItemAdv class.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 MenuAdv helps users to display an image on the left of the control.
 
-Adding the Icon Support to an Application 
+## Adding the Icon Support to an Application 
 
 The Icon support can be added to an application by using the Icon property of MenuItemAdv, as shown in the following code snippet.
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -62,14 +65,13 @@ The Icon support can be added to an application by using the Icon property of Me
                 <shared:MenuItemAdv Header="Edit"/>
 
 </shared:MenuAdv>
+{% endhighlight %}
 
 
-
-{{ '![](Icon-Support_images/Icon-Support_img1.png)' | markdownify }}
-{:.image }
+![](Icon-Support_images/Icon-Support_img1.png)
 
 
-Properties
+## Properties
 
 The property for the Icon support is described in the following tabulation:
 
@@ -91,7 +93,7 @@ Object(null)</td></tr>
 </table>
 
 
-Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

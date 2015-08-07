@@ -15,7 +15,7 @@ The SfRangeSlider control supports to select range of value using two Thumbs.
 
 When ShowRange property is set to true, two Thumbs are placed in the track. One thumb is used to update the start of the range selection and another thumb is used to update the end of the range selection.  
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -31,7 +31,7 @@ When ShowRange property is set to true, two Thumbs are placed in the track. One 
 
 Gets or sets the start value of the range start.  
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -47,7 +47,7 @@ Gets or sets the start value of the range start.
 
 Gets or sets the end value of the range end.  
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 

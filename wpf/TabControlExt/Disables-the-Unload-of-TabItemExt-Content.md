@@ -34,7 +34,7 @@ XAML
 
 
 
-{% highlight c# %}
+{% highlight  %}
 C#
 
 tabcontrol.IsDisableUnloadTabItemExtContent = true;

@@ -10,6 +10,7 @@ documentation: ug
 # Code Snippet
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -60,6 +61,6 @@ documentation: ug
     </Grid>
 
 </Window>
-
+{% endhighlight %}
 
 

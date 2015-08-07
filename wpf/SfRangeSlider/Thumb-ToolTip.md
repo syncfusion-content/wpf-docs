@@ -22,7 +22,7 @@ The Thumb tooltip displays the current value where the Thumb stands.
 ThumbToolTipPrecision property is used to define the precision of the value displayed in the tooltip.  
 
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -46,7 +46,7 @@ The position of the Thumb tooltip in relation to the Thumb can be controlled by 
 
 Tooltip is placed either below the Thumb in horizontal orientation or right of the Thumb in vertical orientation. 
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -66,7 +66,7 @@ Tooltip is placed either below the Thumb in horizontal orientation or right of t
 Tooltip is placed either above the Thumb in horizontal orientation or left of the Thumb in vertical orientation. 
 
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 

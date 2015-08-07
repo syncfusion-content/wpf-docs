@@ -23,7 +23,7 @@ The rating item will be filled completely based on the value of the Rating contr
 
 In the following example, 1.3 has been set for the value. The rating item has been filled completely for standard precision.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -35,7 +35,7 @@ Precision="Standard/>
 
 {%endhighlight%}
 
-![][C:/Users/ApoorvahR/Desktop/3.png](Precision_images/Precision_img1.png)
+![](Precision_images/Precision_img1.png)
 
 
 
@@ -45,7 +45,7 @@ The rating item will be filled partially based on the value of the Rating contro
 
 In this case, 0.3 has been set for the value. The rating item was filled partially.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -55,7 +55,7 @@ In this case, 0.3 has been set for the value. The rating item was filled partial
 
 {%endhighlight%}
 
-![][C:/Users/ApoorvahR/Desktop/4.png](Precision_images/Precision_img2.png)
+![](Precision_images/Precision_img2.png)
 
 
 
@@ -65,7 +65,7 @@ The rating item will be filled exactly based on the value of the Rating control 
 
 In this case, 1.3 has been set for the Value. Rating item was filled to reflect the exact value.
 
-{%highlight xaml%}
+{%highlight xml%}
 
 [XAML]
 
@@ -77,7 +77,7 @@ Precision="Exact"/>
 
 {%endhighlight%}
 
-![][C:/Users/ApoorvahR/Desktop/5.png](Precision_images/Precision_img3.png)
+![](Precision_images/Precision_img3.png)
 
 
 

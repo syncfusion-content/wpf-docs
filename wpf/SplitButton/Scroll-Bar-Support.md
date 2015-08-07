@@ -14,8 +14,7 @@ The DropDownMenuGroup is shipped with the built-in scrollbar support. It can be 
 Setting ScrollBarVisibility property to Visible:
 
 
-
-[XAML]
+{% highlight xml %}
 
 <shared:SplitButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
@@ -31,9 +30,8 @@ Setting ScrollBarVisibility property to Visible:
 
 </shared:SplitButtonAdv>
 
+{% endhighlight %}
 
 
-{{ '![](Scroll-Bar-Support_images/Scroll-Bar-Support_img1.png)' | markdownify }}
-{:.image }
-
+![](Scroll-Bar-Support_images/Scroll-Bar-Support_img1.png)
 

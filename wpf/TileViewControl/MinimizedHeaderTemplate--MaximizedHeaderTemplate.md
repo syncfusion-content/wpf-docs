@@ -11,18 +11,18 @@ documentation: ug
 
 The MinimizedHeaderTemplate and MaximizedHeaderTemplate feature in the TileViewControl enables you to set the different templates for header in the TileViewItem maximized state and TileViewItem minimized state. The HeaderTemplate property will be used to set the template for header in the TileViewItem Normal state. If you set the MinimizedHeaderTemplate, then the value in HeaderTemplate property will be displayed in maximized state and vice versa.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 This feature will be very useful when you want to show two different DataTemplates for header in minimized state and maximized state.
 
-Adding MinimizedHeaderTemplate / MaximizedHeaderTemplate to an Application 
+## Adding MinimizedHeaderTemplate / MaximizedHeaderTemplate to an Application 
 
 The MinimizedHeaderTemplate and MaximizedHeaderTemplate can be added to an application by either using XAML or C# code.
 
 The following code example illustrates how to add the MinimizedHeaderTemplate and MaximizedHeaderTemplate to an application through XAML.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -84,35 +84,35 @@ The following code example illustrates how to add the MinimizedHeaderTemplate an
      HeaderTemplate="{Binding Source={StaticResource NormalHeader}}">  
 
 </syncfusion:TileViewControl>
+{% endhighlight %}
+
+
+
+
+![](MinimizedHeaderTemplate--MaximizedHeaderTemplate_images/MinimizedHeaderTemplate--MaximizedHeaderTemplate_img1.png)
 
 
 
 
 
-{{ '![](MinimizedHeaderTemplate--MaximizedHeaderTemplate_images/MinimizedHeaderTemplate--MaximizedHeaderTemplate_img1.png)' | markdownify }}
-{:.image }
+![](MinimizedHeaderTemplate--MaximizedHeaderTemplate_images/MinimizedHeaderTemplate--MaximizedHeaderTemplate_img2.png)
 
 
 
 
-{{ '![](MinimizedHeaderTemplate--MaximizedHeaderTemplate_images/MinimizedHeaderTemplate--MaximizedHeaderTemplate_img2.png)' | markdownify }}
-{:.image }
 
-
-
-
-Properties
+## Properties
 
 _MinimizedHeaderTemplate / MaximizedHeaderTemplate Properties Table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td><td>
+{{ '**Reference links**' | markdownify }} </td></tr>
 <tr>
 <td>
 MinimizedHeaderTemplate</td><td>
@@ -130,7 +130,7 @@ DataTemplate</td><td>
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

@@ -50,7 +50,7 @@ Here is the code snippet to set the Tab Scrolling Time.
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 

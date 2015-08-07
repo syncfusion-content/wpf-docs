@@ -30,7 +30,7 @@ XAML
 </syncfusion:TabNavigationControl>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 C#
 
 
@@ -98,7 +98,7 @@ DependencyProperty.Register("MyCollection", typeof(ObservableCollection<TabNavi
 }
 {% endhighlight %}
 
-{% highlight vb %}
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -172,7 +172,7 @@ ItemsSource="{Binding MyCollection}">
 </syncfusion:TabNavigationControl>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 C#
 
 public partial class MainPage : UserControl
@@ -226,7 +226,7 @@ public partial class MainPage : UserControl
 
 
 
-{% highlight vb %}
+{% highlight vbnet %}
 [VB.NET]
 
 

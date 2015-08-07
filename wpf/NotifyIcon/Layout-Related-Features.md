@@ -20,8 +20,8 @@ _Property table_
 <table>
 <tr>
 <td>
-{{ '*Property*' | markdownify }}</td><td>
-{{ '*Description*' | markdownify }}</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 VisualStyle</td><td>
@@ -78,7 +78,7 @@ _NotifyIcon with "Office2007Silver" Visual Style_
 
 _NotifyIcon with "Metro" Visual Style_
 
-![][C:/Users/ramalakshmim/Desktop/ugss/notifyicon.png](Layout-Related-Features_images/Layout-Related-Features_img5.png)
+![](Layout-Related-Features_images/Layout-Related-Features_img5.png)
 
 
 
@@ -88,18 +88,19 @@ _NotifyIcon with "Transparent" Visual Style_
 
 You can set the background and foreground for the BalloonTipHeader by using the HeaderBackground and HeaderForeground properties, respectively. Use the code below to set these properties.
 
-<table>
-<tr>
-<td>
-{%highlight xaml%}
-[XAML]<syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon"  HeaderBackground="Blue" HeaderForeground="Red" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/></td></tr>
+
+{%highlight xml%}
+[XAML]
+<syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify 
+Icon is Available"  BalloonTipTitle="Default NotifyIcon"  HeaderBackground="Blue" HeaderForeground="Red" 
+ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/>
 {%endhighlight%}
-<tr>
-<td>
+
 {%highlight c#%}
-[C#]notifyIcon.HeaderForeground = Brushes.Red;notifyIcon.HeaderBackground = Brushes.Blue;</td></tr>
+[C#]
+notifyIcon.HeaderForeground = Brushes.Red;notifyIcon.HeaderBackground = Brushes.Blue;
 {%endhighlight%}
-</table>
+
 
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img6.jpeg)

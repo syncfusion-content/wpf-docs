@@ -11,18 +11,18 @@ documentation: ug
 
 The CloseButton feature in TileViewItem allows you to hide or delete the TileViewItem based on the CloseMode. If you click on the CloseButton and the CloseMode is set to Hide, then the TileViewItem will move to Hidden State, and when the CloseMode is set to Delete, then the TileViewItem will be removed from the TileViewControl. By default, the visibility of the CloseButton is set to Collapsed. You can also change the style of the CloseButton using CloseButtonStyle property. 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 This feature enables you to close a particular TileViewItem.
 
-Adding CloseButton to an Application 
+## Adding CloseButton to an Application 
 
 The CloseButton feature can be added to an application by using either XAML or C# code.
 
 The following code example illustrates how to add the CloseButton feature to an application through XAML.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -64,7 +64,7 @@ Background="White">
           HeaderBackground="Gray" Margin="2" CornerRadius="3"/>         
 
 </syncfusion:TileViewControl>
-
+{% endhighlight %}
 
 
 
@@ -72,7 +72,7 @@ Background="White">
 The following code example illustrates how to add the CloseButton feature to an application through C#.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -116,29 +116,29 @@ The following code example illustrates how to add the CloseButton feature to an 
       }
 
       this.LayoutRoot.Children.Add(Tile);
+{% endhighlight %}
+
+
+
+
+![](CloseButton-Support_images/CloseButton-Support_img1.png)
 
 
 
 
 
-{{ '![](CloseButton-Support_images/CloseButton-Support_img1.png)' | markdownify }}
-{:.image }
-
-
-
-
-Properties
+## Properties
 
 _Property Table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td><td>
+{{ '**Reference links**' | markdownify }} </td></tr>
 <tr>
 <td>
 CloseButtonVisibility</td><td>
@@ -170,7 +170,7 @@ DependencyProperty</td><td>
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

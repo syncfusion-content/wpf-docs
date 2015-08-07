@@ -13,6 +13,7 @@ documentation: ug
 
 Refer to the following code example to add a Linear Gauge to your application:
 
+{% highlight xml %}
 [XAML]
 
 
@@ -64,11 +65,11 @@ Refer to the following code example to add a Linear Gauge to your application:
 </Grid>
 
 </Window>
+{% endhighlight %}
 
 
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -102,15 +103,15 @@ Refer to the following code example to add a Linear Gauge to your application:
             lineargauge.MainScale = _mainScale;
 
             this.Grid.Children.Add(lineargauge);
-
+{% endhighlight %}
 
 
 
 
 The following screenshot displays the Linear Gauge:
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 ## Create the SfLinearGauge with the Syncfusion Reference Manager
@@ -119,61 +120,65 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 
 1. Create a simple WPF application by using the Visual Studio.
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+     ![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 2. Right_-_click the Project and select the Syncfusion Reference Manager.
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+     ![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 3. The Syncfusion Reference Manager Wizard opens as shown in the following figure.
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+     ![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 4. Search for the SfLinearGauge by using the Search Box and select the SfLinearGauge control.  Click Done to add the selected SfLinearGauge control.
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+     ![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 5. The SfLinearGauge assemblies are automatically added to the Project after clicking OK.
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+     ![](Getting-Started_images/Getting-Started_img6.png)
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+
+     ![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 6. Create a namespace reference to the SfLinearGauge control by using the Syncfusion’s global namespace reference, schemas.syncfusion.com or the SfLinearGauge control’s namespace reference  by using the Syncfusion.UI.Xaml.Gauges available in the Syncfusion.SfLinearGauge.WPF assembly.
 
-[XAML]
+   ~~~ xml
+     [XAML]
 
 
 
-xmlns:LinearGauge="http://schemas.syncfusion.com/wpf" 
+     xmlns:LinearGauge="http://schemas.syncfusion.com/wpf" 
 
-(or)
+     (or)
 
-  xmlns:LinearGauge ="clr-   
+     xmlns:LinearGauge ="clr-   
 
- namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfLinearGauge.WPF"
+     namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfLinearGauge.WPF"
+   ~~~
+   {:.prettyprint}
 
 
 
 7. Add the following code to create a simple SfLinearGauge control.
 
-[XAML]
+   ~~~ xml
+     [XAML]
 
 
 
-<Window x:Class="LinearGauge.MainWindow"
+      <Window x:Class="LinearGauge.MainWindow"
 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
@@ -217,78 +222,82 @@ xmlns:LinearGauge="http://schemas.syncfusion.com/wpf"
 
         </Gauges:SfLinearGauge>
 
-</Grid>
+    </Grid>
 
-</Window>
-
-
-
-
-
-[C#]
+     </Window>
+   
+   ~~~
+   {:.prettyprint}
 
 
 
-using System.Windows;
+   ~~~ cs
+     [C#]
 
-using Syncfusion.UI.Xaml.Gauges;
 
-namespace  LinearGauge
 
-{
+     using System.Windows;
 
-    public partial class MainWindow : Window
+     using Syncfusion.UI.Xaml.Gauges;
+
+     namespace  LinearGauge
 
     {
 
-        public MainWindow()
+         public partial class MainWindow : Window
 
         {
 
-            InitializeComponent();
+             public MainWindow()
 
-           SfLinearGauge lineargauge = new SfLinearGauge();
+            {
 
-            lineargauge.Orientation = Orientation.Horizontal;
+              InitializeComponent();
 
-            LinearScale _mainScale = new LinearScale();
+              SfLinearGauge lineargauge = new SfLinearGauge();
 
-            _mainScale.ScaleDirection = LinearScaleDirection.Forward;
+              lineargauge.Orientation = Orientation.Horizontal;
 
-            _mainScale.ScaleBarStroke = new SolidColorBrush(Colors.Black);
+              LinearScale _mainScale = new LinearScale();
 
-            _mainScale.ScaleBarSize = 20;
+              _mainScale.ScaleDirection = LinearScaleDirection.Forward;
 
-            _mainScale.ScaleBarLength = 350;
+              _mainScale.ScaleBarStroke = new SolidColorBrush(Colors.Black);
 
-            _mainScale.ScaleBarBorderThickness = new Thickness(1);
+              _mainScale.ScaleBarSize = 20;
 
-            _mainScale.Interval = 10;
+              _mainScale.ScaleBarLength = 350;
 
-            _mainScale.Minimum = 0;
+              _mainScale.ScaleBarBorderThickness = new Thickness(1);
 
-            _mainScale.Maximum = 100;
+              _mainScale.Interval = 10;
 
-            _mainScale.Pointers.Add(new LinearPointer(){Value=40,PointerType=LinearPointerType.BarPointer});
+              _mainScale.Minimum = 0;
 
-            _mainScale.Pointers.Add(new LinearPointer(){Value=40,PointerType=LinearPointerType.SymbolPointer});
+              _mainScale.Maximum = 100;
 
-            lineargauge.MainScale = _mainScale;
+              _mainScale.Pointers.Add(new LinearPointer(){Value=40,PointerType=LinearPointerType.BarPointer});
 
-            this.Grid.Children.Add(lineargauge);
+              _mainScale.Pointers.Add(new LinearPointer(){Value=40,PointerType=LinearPointerType.SymbolPointer});
 
-         }
+              lineargauge.MainScale = _mainScale;
+
+              this.Grid.Children.Add(lineargauge);
+
+            }
+
+        }
 
     }
-
-}
+   ~~~
+   {:.prettyprint}
 
 
 
 8. The simple SfLinearGauge control is created as shown in the following figure.
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+     ![](Getting-Started_images/Getting-Started_img8.png)
+
 
 
 > _Note:_ 

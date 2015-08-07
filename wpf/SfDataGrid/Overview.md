@@ -40,26 +40,26 @@ This section explains different Grids that are provided and used in your applica
 * GridTreeControl
 * DataGrid Control
 
-GridControl
+### GridControl
 
 GridControl is designed based on the cell-oriented architecture that does not make any assumptions about the structure of the data and support for Excel-like features. You can use this control when you need to populate the data on demand using virtualization or you can use its internal storage. In GridControl, you cannot directly bind the data source.
 
-GridTreeControl
+### GridTreeControl
 
 The GridTreeControl is a Grid that displays self-referencing lists in a multicolumn tree format. The data is loaded on demand so that large lists are quickly displayed. You can use this control when you want to display data in Grid like Tree.
 
-DataGrid
+### DataGrid
 
 DataGrid is the control that displays data in tabular view. This supports data binding directly. You can use this control when you want to populate data using ObservableCollections, ADO.NET DataTables, LINQ to SQL and ADO.NET. There are two types of DataGrid as follows.
 
 * GridDataControl
 * SfDataGrid
 
-GridDataControl
+#### GridDataControl
 
 GridDataControl is designed based on the cell-oriented architecture of the Windows Forms Grid control that provides more control over cells and supports for Excel-like features. 
 
-SfDataGrid
+#### SfDataGrid
 
 SfDataGrid is designed based on the WPF template-based architecture that provides support to customize the Grid easily and fully supports binding.
 
@@ -67,7 +67,7 @@ Both SfDataGrid and GridDataControl almost have the same set of features. But Sf
 
 Comparatively, the performance of SfDataGrid control is better than the GridDataControl. You can see the list of some of the specific API difference between GridDataControl and SfDataGrid as follows:
 
-_Property Table_
+##### _Property Table_
 
 <table>
 <tr>
@@ -198,7 +198,7 @@ The number of columns is freeze from right.</td></tr>
 </table>
 You can see the list of rich set of features in SfDataGrid over GridDataControl as follows:
 
-_Rich set of features in SfDataGrid over GridDataControl_
+##### _Rich set of features in SfDataGrid over GridDataControl_
 
 <table>
 <tr>

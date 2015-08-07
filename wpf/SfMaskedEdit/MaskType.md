@@ -15,11 +15,11 @@ Each MaskType has different set of mask elements that are combined to form a mas
 2. Regular
 3. Reg-Ex
 
-Simple
+## Simple
 
 Expressions that are generated with very simple mask elements come under this group. This is mainly used for fixed length inputs. For example: Phone number.
 
-Mask elements in this mask type are as follows:
+### Mask elements in this mask type are as follows:
 
 _Simple Mask elements_
 
@@ -111,7 +111,7 @@ Accepts the input for zero or more times.</td></tr>
 </table>
 
 
-RegEx
+## RegEx
 
 Very complex regular expressions come under this category. It accepts input of variable length and allows to use OR expressions.  For example: E-mail_._
 

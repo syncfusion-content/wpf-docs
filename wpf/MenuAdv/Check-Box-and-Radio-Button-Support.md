@@ -11,13 +11,16 @@ documentation: ug
 
 MenuAdv provides a support for selecting several items. MenuItemAdv can be checked by setting the IsCheckable property of the MenuItemAdv to “true”. You can change the icon type (Check Box or Radio Button) by using the CheckIcon property also it can be checked by using the IsChecked property.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 MenuAdv helps users to use MenuItemAdv with the CheckBox or RadioButton support.
 
-Using the Check Box and Radio Button Support in an Application
+## Using the Check Box and Radio Button Support in an Application
 
 If you set the CheckIcon property to RadioButton, then MenuItemAdv’s will be grouped based on the value of the GroupName property and end user can select only one item from the group. Similarly, if you set the CheckIcon property to CheckBox, then MenuItemAdv can be checked and unchecked. The Check Box and Radio Button support can be used in an application, as shown in the following the code snippet.
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -65,13 +68,13 @@ IsChecked="False"/>
 
             </shared:MenuAdv>
 
+{% endhighlight %}
+
+![](Check-Box-and-Radio-Button-Support_images/Check-Box-and-Radio-Button-Support_img1.png)
 
 
-{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Chk&Radio.png](Check-Box-and-Radio-Button-Support_images/Check-Box-and-Radio-Button-Support_img1.png)' | markdownify }}
-{:.image }
 
-
-Properties
+## Properties
 
 The properties for the Check box and Radio button support are described in the following tabulation:   
 
@@ -105,7 +108,7 @@ bool(false)</td></tr>
 </table>
 
 
-Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

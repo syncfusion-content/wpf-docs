@@ -16,7 +16,7 @@ The following code sample shows how to use the ItemsCount property:
 [XAML]
 
 
-{%highlight xaml%}
+{%highlight xml%}
 
 <editors:SfRating ItemsCount="5" Value="2"/>
 
@@ -24,7 +24,7 @@ The following code sample shows how to use the ItemsCount property:
 {%endhighlight%}
 
 
-![][C:/Users/ApoorvahR/Desktop/2.png](Number-of-Items_images/Number-of-Items_img1.png)
+![](Number-of-Items_images/Number-of-Items_img1.png)
 
 
 

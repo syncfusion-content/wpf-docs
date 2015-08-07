@@ -11,7 +11,7 @@ documentation: ug
 
 The CloseMode is an enum which includes values Hidden and Delete, which resides in the TileViewItem. If you click on the CloseButton when the CloseMode is set to be hidden, then the TileViewItem moves to the Hidden state. If the CloseMode is set to Delete, then the TileViewItem will be removed from the TileViewControl. 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 This feature can be used when you want to move the TileViewItems state to Hidden or Delete from the Control.
 
@@ -22,7 +22,7 @@ The CloseMode feature can be added to an application by using either XAML or C# 
 The following code example illustrates how to add the CloseMode feature to an application through XAML.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -64,7 +64,7 @@ Background="White">
           HeaderBackground="Gray" Margin="2" CornerRadius="3"/>         
 
 </syncfusion:TileViewControl>
-
+{% endhighlight %}
 
 
 
@@ -72,7 +72,7 @@ Background="White">
 The following code example illustrates how to add the CloseButton feature to an application through C#.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -116,23 +116,23 @@ The following code example illustrates how to add the CloseButton feature to an 
       }
 
       this.LayoutRoot.Children.Add(Tile);
+{% endhighlight %}
 
 
 
 
-
-Properties
+## Properties
 
 _Property Table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td><td>
+{{ '**Reference links**' | markdownify }} </td></tr>
 <tr>
 <td>
 CloseMode</td><td>
@@ -143,7 +143,7 @@ CloseMode.Hide</td><td>
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

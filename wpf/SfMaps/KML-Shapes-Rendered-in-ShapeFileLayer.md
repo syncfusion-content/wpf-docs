@@ -17,6 +17,9 @@ A KML file can be rendered with the help of the ShapeFileLayer in SfMap. The KML
 
 
 
+{% highlight xml %}
+
+
 [XAML]
 
 
@@ -33,9 +36,9 @@ A KML file can be rendered with the help of the ShapeFileLayer in SfMap. The KML
 
         </syncfusion:SfMap>
 
+{% endhighlight %}
 
+![](KML-Shapes-Rendered-in-ShapeFileLayer_images/KML-Shapes-Rendered-in-ShapeFileLayer_img1.png)
 
-{{ '![](KML-Shapes-Rendered-in-ShapeFileLayer_images/KML-Shapes-Rendered-in-ShapeFileLayer_img1.png)' | markdownify }}
-{:.image }
 
 

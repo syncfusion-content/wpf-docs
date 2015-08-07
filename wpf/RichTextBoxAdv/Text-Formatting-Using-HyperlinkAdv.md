@@ -11,7 +11,7 @@ documentation: ug
 
 HyperlinkAdv can be kept only inside the ParagraphAdv since the content property of ParagraphAdv is Inline. It allows you to display the formatted text using advanced features like NavigationUrl and TargetType. It simply differs by these properties when compared to SpanAdv.
 
-Properties
+## Properties
 
 
 
@@ -91,19 +91,41 @@ Indicates whether the text should be underlined.</td><td>
 Dependency Property</td><td>
 Underline</td></tr>
 </table>
+
 ##  Add HyperlinkAdv to an Application
 
 HyperlinkAdv can be added directly to an application by using the following code snippet:
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            <syncfusion:DocumentAdv>                <syncfusion:SectionAdv>                    <syncfusion:ParagraphAdv>                        <syncfusion:HyperlinkAdv Text="This is Hyperlink text"/>                    </syncfusion:ParagraphAdv>                </syncfusion:SectionAdv>            </syncfusion:DocumentAdv>        </syncfusion:RichTextBoxAdv></td></tr>
-<tr>
-<td>
-[C#]            RichTextBoxAdv richtext = new RichTextBoxAdv();           DocumentAdv document = new DocumentAdv();           SectionAdv section = new SectionAdv();           ParagraphAdv paragraph = new ParagraphAdv();           HyperlinkAdv hyperlink = new HyperlinkAdv();           hyperlink.Text = "This is Hyperlink text";           paragraph.Inlines.Add(hyperlink);           section.Blocks.Add(paragraph);           document.Sections.Add(section);           richtext.Document = document;</td></tr>
-</table>
+{% highlight xml %}
+
+[XAML]
+<syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            
+<syncfusion:DocumentAdv>                
+<syncfusion:SectionAdv>                    
+<syncfusion:ParagraphAdv>                       
+ <syncfusion:HyperlinkAdv Text="This is Hyperlink text"/>                   
+ </syncfusion:ParagraphAdv>               
+  </syncfusion:SectionAdv>           
+ </syncfusion:DocumentAdv>        
+ </syncfusion:RichTextBoxAdv>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]            
+RichTextBoxAdv richtext = new RichTextBoxAdv();          
+ DocumentAdv document = new DocumentAdv();          
+ SectionAdv section = new SectionAdv();          
+ ParagraphAdv paragraph = new ParagraphAdv();         
+ HyperlinkAdv hyperlink = new HyperlinkAdv();         
+ hyperlink.Text = "This is Hyperlink text";          
+ paragraph.Inlines.Add(hyperlink);           
+ section.Blocks.Add(paragraph);           
+ document.Sections.Add(section);           
+ richtext.Document = document;
+{% endhighlight %}
+ 
 
 

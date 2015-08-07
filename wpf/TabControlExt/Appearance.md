@@ -30,12 +30,13 @@ _Property table_
 <table>
 <tr>
 <td>
-{{ '*Property*' | markdownify }}</td><td>
-{{ '*Description*' | markdownify }}</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 VisualStyle</td><td>
-Sets the visual style for the TabControlExt control. The options provided are as follows.* Blend* Office2003* Office2007Blue* Office2007Black* Office2007Silver* ShinyBlue* ShinyRed* SyncOrange* VS2010* Metro* Transparent<br></td></tr>
+Sets the visual style for the TabControlExt control. The options provided are as follows.
+{{ '* Blend* Office2003* Office2007Blue* Office2007Black* Office2007Silver* ShinyBlue* ShinyRed* SyncOrange* VS2010* Metro* Transparent' | markdownify }}<br></td></tr>
 </table>
 
 
@@ -66,7 +67,7 @@ The following code example illustrates how to set the visual style for the TabCo
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 
@@ -208,10 +209,10 @@ _Customization Properties_
 <table>
 <tr>
 <th>
-{{ '*Property*' | markdownify }}</th><th>
-{{ '*Description*' | markdownify }}</th><th>
-{{ '*Type*' | markdownify }}</th><th>
-{{ '*Data Type*' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <th>
 TabItemSelectedBackground</th><th>

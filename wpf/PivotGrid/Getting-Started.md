@@ -11,29 +11,30 @@ documentation: ug
 
 ## Configuring PivotGrid Control
 
-This section encompasses how to configure the PivotGrid component in an application. You can also learn how to pass the required data to PivotGrid and customize its various options according to your requirements.
+This section encompasses how to configure the PivotGrid component in an application. You can also learn how to pass the required data to 
+PivotGrid and customize its various options according to your requirements.
 
-In the following example, PivotGrid component tabulates Amount and Quantity over a period of fiscal years for different products across the different customer geographic locations. 
+In the following example, PivotGrid component tabulates Amount and Quantity over a period of fiscal years for different products across the 
+different customer geographic locations. 
 
 ### Through Visual Studio
 
-1. Open Visual Studio IDE and from the File menu, select New  Project. 
-2. In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application. 
+1.Open Visual Studio IDE and from the File menu, select New  Project. 
+
+2.In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application. 
+
+![](Getting-Started_images/Getting-Started_img1.png)
+
+3.Select WPF Application and click OK.
+
+4.Drag and drop the PivotGridControl from the Syncfusion BI WPF toolbox into the Designpage. Required Syncfusion assemblies are added automatically to the application.
+
+![](Getting-Started_images/Getting-Started_img2.png)
+
+5.Add name to the PivotGridControl to access it through code-behind.
 
 
-
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
-
-
-3. Select WPF Application and click OK.
-4. Drag and drop the PivotGridControl from the Syncfusion BI WPF toolbox into the Designpage. Required Syncfusion assemblies are added automatically to the application.
-
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
-
-
-5. Add name to the PivotGridControl to access it through code-behind.
+{% highlight xml %} 
 
 [XAML]
 
@@ -63,21 +64,20 @@ In the following example, PivotGrid component tabulates Amount and Quantity over
 
 </Window>
 
+{% endhighlight %} 
+
+6.Under Solution Explorer, right-click on the project name and select Add  New Item.
+
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
-6. Under Solution Explorer, right-click on the project name and select Add  New Item.
+7.Add New Item dialog box opens as follows.
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
 
+8.Select Class and create file under the name ProductSales.cs. ItemSource can be instantiated from the ProductSales.cs file. 
 
-7. Add New Item dialog box opens as follows.
-
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
-
-
-8. Select Class and create file under the name ProductSales.cs. ItemSource can be instantiated from the ProductSales.cs file. 
+{% highlight C# %}  
 
 [C#]
 
@@ -173,14 +173,17 @@ public class ProductSales
 
     }
 
+{% endhighlight %} 
 
+9.GetSalesData method is used to get the PivotItems that needs to be populated in the PivotGridControl.
 
-9. GetSalesData method is used to get the PivotItems that needs to be populated in the PivotGridControl.
-10. Binding ItemSource with the PivotGrid control,
+10.Binding ItemSource with the PivotGrid control,
 
-Through XAML
+#### Through XAML
 
 ObjectDataProvider is usedto get the ItemSource object. Binding ItemSource with the PivotGridControl is shown in the following code example.
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -216,11 +219,13 @@ ObjectDataProvider is usedto get the ItemSource object. Binding ItemSource with 
 
 </Window>
 
+{% endhighlight %} 
 
-
-Through Code Behind
+#### Through Code Behind
 
 The PivotGrid in XAML is initialized and binding the ItemSource through code-behind is illustrated in the following code example.
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -248,7 +253,11 @@ The PivotGrid in XAML is initialized and binding the ItemSource through code-beh
 
 </Window>
 
+{% endhighlight %} 
 
+
+
+{% highlight C# %}  
 
 [C#]
 
@@ -262,7 +271,9 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 }
 
+{% endhighlight %} 
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -274,12 +285,15 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
 
+11.You can specify the PivotRows, PivotColumns and PivotComputationInfo that tabulate values in the PivotGrid.
 
-11. You can specify the PivotRows, PivotColumns and PivotComputationInfo that tabulate values in the PivotGrid.
-12. Adding PivotRows is illustrated as follows.
+12.Adding PivotRows is illustrated as follows.
 
-Through XAML
+#### Through XAML
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -329,11 +343,13 @@ Through XAML
 
 </Window>
 
+{% endhighlight %} 
 
-
-Through Code-Behind
+#### Through Code-Behind
 
 The PivotGrid in XAML is initialized and adding the PivotRows through code-behind is illustrated in the following code example.
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -361,7 +377,9 @@ The PivotGrid in XAML is initialized and adding the PivotRows through code-behin
 
 </Window>
 
+{% endhighlight %} 
 
+{% highlight C# %} 
 
 [C#]
 
@@ -379,7 +397,9 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 }
 
+ {% endhighlight %} 
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -397,11 +417,13 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
 
-
-13. Adding the PivotColumns is illustrated in the following code example.
+13.Adding the PivotColumns is illustrated in the following code example.
 
 Through XAML
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -451,11 +473,13 @@ Through XAML
 
 </Window>
 
+{% endhighlight %} 
 
-
-Through Code-Behind
+#### Through Code-Behind
 
 The PivotGrid in XAML is initialized and adding the PivotColumns through code-behind is illustrated in the following code example.
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -483,11 +507,11 @@ The PivotGrid in XAML is initialized and adding the PivotColumns through code-be
 
 </Window>
 
+{% endhighlight %} 
 
+{% highlight C# %} 
 
 [C#]
-
-
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -503,11 +527,12 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 }
 
+ {% endhighlight %} 
+ 
 
+{% highlight vbnet %} 
 
 [VB]
-
-
 
 Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
@@ -521,9 +546,11 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
 
+14.Adding the PivotCalculations is illustrated in the following code example.
 
-14. Adding the PivotCalculations is illustrated in the following code example.
+{% highlight xml %}
 
 [XAML]
 
@@ -573,11 +600,14 @@ End Sub
 
 </Window>
 
+{% endhighlight %} 
 
 
-Through Code-Behind
+#### Through Code-Behind
 
 The PivotGrid in XAML is initialized and adding the PivotCalculations through code-behind is illustrated in the following code example.
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -605,11 +635,11 @@ The PivotGrid in XAML is initialized and adding the PivotCalculations through co
 
 </Window>
 
+{% endhighlight %} 
 
+{% highlight C# %}  
 
 [C#]
-
-
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -625,11 +655,11 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 }
 
+{% endhighlight %} 
 
+{% highlight vbnet %} 
 
 [VB]
-
-
 
 Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
@@ -643,15 +673,13 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
 
+#### To populate PivotGrid with a sample IList data, Through XAML
 
-To populate PivotGrid with a sample IList data, 
-
-Through XAML
+{% highlight xml %} 
 
 [XAML]
-
-
 
 <Window x:Class="WpfApplication1.Window1"
 
@@ -723,7 +751,12 @@ Through XAML
 
 </Window>
 
-Through Code-Behind
+{% endhighlight %} 
+
+
+#### Through Code-Behind
+
+{% highlight C# %}  
 
 [C#]
 
@@ -755,9 +788,11 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 }
 
+{% endhighlight %} 
 
 
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -789,50 +824,56 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
 
 
 
+15.Run the application and the following output is generated.
 
-15. Run the application and the following output is generated.
+![](Getting-Started_images/Getting-Started_img5.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
 
 
 ### Through Expression Blend
 
-1. Open the Start menu and select Blend for Visual Studio 2013.
-2. Click New Project, now the dialog box for New Project appears as follows.
+1.Open the Start menu and select Blend for Visual Studio 2013.
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+2.Click New Project, now the dialog box for New Project appears as follows.
+
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
-3. Select WPF Application and click OK.
-4.  Select the Project tab in the application window.
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+3.Select WPF Application and click OK.
+
+4.Select the Project tab in the application window.
+
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 __
 
-5. Right-click on the References and select Add Referenc, then add the following assemblies into the project from installed location.
-1. Syncfusion.PivotAnalysis.Base
-2. Syncfusion.PivotAnalysis.Wpf
+5.Right-click on the References and select Add Referenc, then add the following assemblies into the project from installed location.
 
-Assembly Location
+   1. Syncfusion.PivotAnalysis.Base
+   2. Syncfusion.PivotAnalysis.Wpf
+
+#### Assembly Location
 
 {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\{Version Number}\precompiledassemblies\{Version Number}
 
-6. After adding the above assemblies, the PivotGridControl is automatically added into Assests.
-7. Now drag the PivotGridControl from toolbox into the Designer page. Required Syncfusion assemblies are added automatically to the application.
+6.After adding the above assemblies, the PivotGridControl is automatically added into Assests.
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+7.Now drag the PivotGridControl from toolbox into the Designer page. Required Syncfusion assemblies are added automatically to the application.
+
+![](Getting-Started_images/Getting-Started_img8.png)
 
 
-8. Add name to the PivotGridControl to access it through code-behind.
+
+8.Add name to the PivotGridControl to access it through code-behind.
+
+{% highlight xml %}  
 
 [XAML]
 
@@ -860,21 +901,24 @@ Assembly Location
 
 </Window>
 
+{% endhighlight %} 
 
 
-9. Under Solution Explorer, right-click on the project name and select Add  New Item.
+9.Under Solution Explorer, right-click on the project name and select Add  New Item.
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
-
-
-10. Add New Item dialog box opens as follows.
-
-{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
 
 
-11. Select Class and create file under the name ProductSales.cs. ItemSource can be instantiated in the ProductSales.cs file. 
+
+10.Add New Item dialog box opens as follows.
+
+![](Getting-Started_images/Getting-Started_img10.png)
+
+
+
+11.Select Class and create file under the name ProductSales.cs. ItemSource can be instantiated in the ProductSales.cs file. 
+
+{% highlight C# %} 
 
 [C#]
 
@@ -970,14 +1014,17 @@ public class ProductSales
 
     }
 
+ {% endhighlight %} 
 
+12.GetSalesData method is used to get the PivotItems that needs to be populated in the PivotGridControl.
 
-12. GetSalesData method is used to get the PivotItems that needs to be populated in the PivotGridControl.
-13. Binding ItemSource with the PivotGrid control,
+13.Binding ItemSource with the PivotGrid control,
 
-Through XAML
+#### Through XAML
 
 ObjectDataProvider is usedto get the ItemSource object. Binding ItemSource with the PivotGridControl is shown in the following code example.
+
+{% highlight xml %}  
 
 [XAML]
 
@@ -1013,11 +1060,13 @@ ObjectDataProvider is usedto get the ItemSource object. Binding ItemSource with 
 
 </Window>
 
+{% endhighlight %}
 
-
-Through Code Behind
+#### Through Code Behind
 
 The PivotGrid in XAML is initialized and binding the ItemSource through code-behind is illustrated in the following code example.
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -1045,7 +1094,9 @@ The PivotGrid in XAML is initialized and binding the ItemSource through code-beh
 
 </Window>
 
+{% endhighlight %} 
 
+{% highlight C# %} 
 
 [C#]
 
@@ -1059,7 +1110,9 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 }
 
+ {% endhighlight %} 
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -1071,12 +1124,15 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
 
+14.You can specify PivotRows, PivotColumns and PivotComputationInfo that tabulate the values in the PivotGrid.
 
-14. You can specify PivotRows, PivotColumns and PivotComputationInfo that tabulate the values in the PivotGrid.
-15. Adding PivotRows is illustrated in the following code example.
+15.Adding PivotRows is illustrated in the following code example.
 
-Through XAML
+#### Through XAML
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -1126,11 +1182,13 @@ Through XAML
 
 </Window>
 
+{% endhighlight %} 
 
-
-Through Code-Behind
+#### Through Code-Behind
 
 The PivotGrid in XAML is initialized and adding the PivotRows through code-behind is illustrated in the following code example.
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -1158,7 +1216,9 @@ The PivotGrid in XAML is initialized and adding the PivotRows through code-behin
 
 </Window>
 
+{% endhighlight %} 
 
+{% highlight C# %}  
 
 [C#]
 
@@ -1176,7 +1236,10 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 }
 
+{% endhighlight %} 
 
+
+{% highlight vbnet %} 
 
 [VB]
 
@@ -1194,11 +1257,14 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
 
 
-16. Adding PivotColumns is illustrated in the following code example.
+16.Adding PivotColumns is illustrated in the following code example.
 
-Through XAML
+#### Through XAML
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -1248,11 +1314,14 @@ Through XAML
 
 </Window>
 
+{% endhighlight %} 
 
 
-Through Code-Behind
+#### Through Code-Behind
 
 The PivotGrid in XAML is initialized and adding the PivotColumns through code-behind is illustrated in the following code example.
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -1280,7 +1349,10 @@ The PivotGrid in XAML is initialized and adding the PivotColumns through code-be
 
 </Window>
 
+{% endhighlight %}  
 
+
+{% highlight C# %} 
 
 [C#]
 
@@ -1300,7 +1372,10 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 }
 
+ {% endhighlight %} 
+ 
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -1318,9 +1393,12 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
 
 
-17. Adding PivotCalculations is illustrated in the following code example.
+17.Adding PivotCalculations is illustrated in the following code example.
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -1370,11 +1448,13 @@ End Sub
 
 </Window>
 
+{% endhighlight %} 
 
-
-Through Code-Behind
+#### Through Code-Behind
 
 The PivotGrid in XAML is initialized and adding the PivotCalculations through code-behind is illustrated in the following code example.
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -1402,7 +1482,10 @@ The PivotGrid in XAML is initialized and adding the PivotCalculations through co
 
 </Window>
 
+{% endhighlight %} 
 
+
+{% highlight C# %}  
 
 [C#]
 
@@ -1422,7 +1505,10 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 }
 
+{% endhighlight %} 
 
+
+{% highlight vbnet %} 
 
 [VB]
 
@@ -1440,11 +1526,13 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
 
+#### To populate PivotGrid with a sample IList data
 
-To populate PivotGrid with a sample IList data
+#### Through XAML
 
-Through XAML
+{% highlight xml %} 
 
 [XAML]
 
@@ -1520,9 +1608,11 @@ Through XAML
 
 </Window>
 
+{% endhighlight %} 
 
+#### Through Code-Behind
 
-Through Code-Behind
+{% highlight C# %}  
 
 [C#]
 
@@ -1554,7 +1644,9 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 }
 
+{% endhighlight %} 
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -1586,29 +1678,34 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
 
 
-18. Run the application and the following output is generated:
+18.Run the application and the following output is generated:
 
-{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img11.png)
+
 
 
 ### Through Code Behind
 
-1. Open Visual Studio IDE and from the File menu, select New  Project. 
-2. In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application. 
+1.Open Visual Studio IDE and from the File menu, select New  Project. 
+
+2.In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application. 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img12.png)
 
 
-3. Select WPF Application and click OK.
-4. Provide a Name to Grid in design page to access it through code-behind.
+
+3.Select WPF Application and click OK.
+
+4.Provide a Name to Grid in design page to access it through code-behind.
 
 
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -1626,30 +1723,35 @@ End Sub
 
 </Window>
 
+{% endhighlight %} 
+
+5.Use the following namespace to create a new PivotGrid control through code-behind.
+
+   1. Syncfusion.Windows.Controls.PivotGrid
 
 
-5. Use the following namespace to create a new PivotGrid control through code-behind.
-1. Syncfusion.Windows.Controls.PivotGrid
+
+![](Getting-Started_images/Getting-Started_img13.png)
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
-{:.image }
+6.Right-click on the References and select Add Referene, then add the following assemblies from the mentioned location.
 
+   1. Syncfusin.Grid.Wpf
+   2. Syncfusion.GridCommon.Wpf
+   3. Syncfusion.Linq.Base
+   4. Syncfusion.PivotAnalysis.Base
+   5. Syncfusion.PivotAnalysis.Wpf
+   6. Syncfusion.Shared.Wpf
 
-6. Right-click on the References and select Add Referene, then add the following assemblies from the mentioned location.
-1. Syncfusin.Grid.Wpf
-2. Syncfusion.GridCommon.Wpf
-3. Syncfusion.Linq.Base
-4. Syncfusion.PivotAnalysis.Base
-5. Syncfusion.PivotAnalysis.Wpf
-6. Syncfusion.Shared.Wpf
-
-Assemblies Location
+   
+#### Assemblies Location
 
 {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\{Version Number}\precompiledassemblies\{Version Number}
 
-7. In Window_Loaded() event, create a new PivotGridControl by using the object created from PivotGridControl class and add this PivotGridControl to the main window by using grid1.Children.Add() method.
+7.In Window_Loaded() event, create a new PivotGridControl by using the object created from PivotGridControl class and add this PivotGridControl to the main window by using grid1.Children.Add() method.
+
+{% highlight C# %} 
 
 [C#]
 
@@ -1663,7 +1765,10 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 }
 
+ {% endhighlight %} 
+ 
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -1677,21 +1782,24 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
 
 
-8. In Solution Explorer, right-click on the project name and select Add New Item.
+8.In Solution Explorer, right-click on the project name and select Add New Item.
 
-{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
-{:.image }
-
-
-9. Add New Item dialog box opens as follows.
-
-{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img14.png)
 
 
-10. Select Class and create file under the name ProductSales.cs. ItemSource can be instantiated from the ProductSales.cs file. 
+
+9.Add New Item dialog box opens as follows.
+
+![](Getting-Started_images/Getting-Started_img15.png)
+
+
+
+10.Select Class and create file under the name ProductSales.cs. ItemSource can be instantiated from the ProductSales.cs file. 
+
+{% highlight C# %} 
 
 [C#]
 
@@ -1787,12 +1895,16 @@ public class ProductSales
 
     }
 
+ {% endhighlight %} 
+ 
+
+11.GetSalesData method is used to get the PivotItems that needs to be populated in the PivotGridControl.
+
+12.Binding ItemSource with PivotGrid control is illustrated in the following code example.
 
 
-11. GetSalesData method is used to get the PivotItems that needs to be populated in the PivotGridControl.
-12. Binding ItemSource with PivotGrid control is illustrated in the following code example.
 
-
+{% highlight C# %} 
 
 [C#]
 
@@ -1808,7 +1920,11 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 }
 
+ {% endhighlight %} 
+ 
+ 
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -1822,12 +1938,15 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
+
+13.You can specify the PivotRows, PivotColumns and PivotComputationInfo that tabulate the values in the PivotGrid.
+
+14.Adding the PivotRows is illustrated in the following code example.
 
 
-13. You can specify the PivotRows, PivotColumns and PivotComputationInfo that tabulate the values in the PivotGrid.
-14. Adding the PivotRows is illustrated in the following code example.
 
-
+{% highlight C# %} 
 
 [C#]
 
@@ -1847,7 +1966,9 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 }
 
+ {% endhighlight %} 
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -1867,9 +1988,12 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
 
 
-15. Adding PivotColumns is illustrated in the following code example.
+15.Adding PivotColumns is illustrated in the following code example.
+
+{% highlight C# %} 
 
 [C#]
 
@@ -1891,7 +2015,10 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 }
 
+{% endhighlight %} 
 
+
+{% highlight vbnet %} 
 
 [VB]
 
@@ -1909,9 +2036,11 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
 
+16.Adding PivotCalculations is illustrated in the following code example.
 
-16. Adding PivotCalculations is illustrated in the following code example.
+{% highlight C# %}  
 
 [C#]
 
@@ -1934,6 +2063,10 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 }
 
 
+{% endhighlight %} 
+
+
+{% highlight vbnet %} 
 
 [VB]
 
@@ -1951,9 +2084,12 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
 
 
 To populate a PivotGrid with the sample IList data
+
+{% highlight C# %}  
 
 [C#]
 
@@ -1987,7 +2123,10 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 }
 
+{% endhighlight %} 
 
+
+{% highlight vbnet %} 
 
 [VB]
 
@@ -2021,13 +2160,13 @@ Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
 End Sub
 
+{% endhighlight %} 
 
 
 
+17.Run the application and the following output is generated. 
 
-17. Run the application and the following output is generated. 
+![](Getting-Started_images/Getting-Started_img16.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
-{:.image }
 
 

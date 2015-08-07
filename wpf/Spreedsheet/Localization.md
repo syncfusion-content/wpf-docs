@@ -15,7 +15,7 @@ Syncfusion Spreadsheet allows you to set custom resource through Resx file. You 
 
 
 
-Adding Localization to an Application 
+### Adding Localization to an Application 
 
 The following are steps to implementation Localization support to an application:
 
@@ -23,26 +23,21 @@ The following are steps to implementation Localization support to an application
 2. Create a folder named Resources in the application. 
 3. Create a resource file (Resx file) and name it as Syncfusion.Spreadsheet.WPF. <your culture info name>.resx 
 
+   Example: Syncfusion.Spreadsheet.WPF.ja.resx.
 
-
-Example: Syncfusion.Spreadsheet.WPF.ja.resx.
-
-_Note: It is mandatory to use this naming convention._
+   _Note: It is mandatory to use this naming convention._
 
 
 
-{{ '![D:/Task Doc/UG/9.3/UI/Spreadsheet/Image/LocalizationWPF/Localization/localization.png](Localization_images/Localization_img1.png)' | markdownify }}
-{:.image }
-
-
+   ![](Localization_images/Localization_img1.png)
 
 
 4. Select the String option in the Resource file. 
 
 
 
-{{ '![D:/Task Doc/UG/9.3/UI/Spreadsheet/Image/LocalizationWPF/Localization/localization1.png](Localization_images/Localization_img2.png)' | markdownify }}
-{:.image }
+   ![](Localization_images/Localization_img2.png)
+
 
 
 5. Resource table will open.
@@ -52,30 +47,38 @@ _Note: It is mandatory to use this naming convention._
 
 
 
-{{ '![](Localization_images/Localization_img3.png)' | markdownify }}
-{:.image }
+   ![](Localization_images/Localization_img3.png)
 
 
-_localizing the application to the Japanese Culture_
+
+   _localizing the application to the Japanese Culture_
 
 
 
 7. Assign the CultureInfo to the application before the InitializeComponent() method is being called. 
 
+   The following code illustrates localizing the application to the Japanese CultureInfo.
+   
+   ~~~ cs
+   
+   [C#] 
+   public MainPage()
+   { 
+   System.Threading.Thread.CurrentThread.CurrentUICulture = new 
+   System.Globalization.CultureInfo("ja-JP"); 
+   InitializeComponent();
+   }
+   ~~~
+   {:.prettyprint}
 
-
-The following code illustrates localizing the application to the Japanese CultureInfo.
-
-
-
-<table>
-<tr>
-<td>
-[C#]public MainPage(){System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ja-JP");InitializeComponent();}</td></tr>
-<tr>
-<td>
- [VB]Public Sub New()System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("ja-JP")InitializeComponent()End Sub</td></tr>
-</table>
+   ~~~vbnet
+   [VB] 
+   Public Sub New()
+   System.Threading.Thread.CurrentThread.CurrentUICulture = New 
+   System.Globalization.CultureInfo("ja-JP")
+   InitializeComponent()End Sub
+   ~~~
+   {:.prettyprint}
 
 
 8. Add Supported Cultures to the Application
@@ -93,16 +96,13 @@ The following are the steps to add Supported Cultures:
 7. Right click the <ProjectName>.csproj and choose Reload <ProjectName>.csproj. Project will be added with specific culture. 
 
 
-
-
-
-{{ '![D:/Task Doc/UG/9.3/UI/Spreadsheet/Image/localization.png](Localization_images/Localization_img4.png)' | markdownify }}
-{:.image }
+   ![](Localization_images/Localization_img4.png)
 
 
 
 
-Sample Link
+
+### Sample Link
 
 A demo of localization is available at the following location:  
 

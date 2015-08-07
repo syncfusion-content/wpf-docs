@@ -11,7 +11,8 @@ documentation: ug
 
 ## PivotItem
 
-A pivot item is an item in a PivotTable field. PivotItem provides the information needed to define a pivot item for either a row or column pivot. It consists of the following fields.
+A pivot item is an item in a PivotTable field. PivotItem provides the information needed to define a pivot item for either a row or column 
+pivot. It consists of the following fields.
 
 _Property Table_
 
@@ -26,7 +27,8 @@ Reference link</th></tr>
 <tr>
 <td>
 Comparer</td><td>
-Gets or sets the IComparer object used for sorting. If this value is null, then sorting will be performed under the assumption that this field is IComparable.</td><td>
+Gets or sets the IComparer object used for sorting. If this value is null, then sorting will be performed under the assumption that this 
+field is IComparable.</td><td>
 IComparer</td><td>
 -</td><td>
 -</td></tr>
@@ -58,12 +60,16 @@ Gets or sets the string you want appended to the pivot item's summary cells.</td
 string</td><td>
 -</td><td>
 -</td></tr>
-</table>
+</table> 
+
+
 ### Defining PivotItem in XAML and Code-Behind
 
 PivotItem can be defined in XAML or in code-behind.
 
-[XAML]
+{% highlight xml %} 
+
+ [XAML]
 
 
 
@@ -79,9 +85,11 @@ PivotItem can be defined in XAML or in code-behind.
 
   </syncfusion:PivotGridControl.PivotRows> 
 
-
+{% endhighlight %}
 
 or
+
+{% highlight C# %}  
 
 [C#]
 
@@ -95,9 +103,11 @@ PivotItem m_PivotItem = new PivotItem() { FieldHeader="Product", FieldMappingNam
 
 this.PivotGridControl1.PivotRows.Add(m_PivotItem);
 
+{% endhighlight %} 
 
 
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -111,11 +121,14 @@ Dim m_PivotItem As PivotItem = New PivotItem() With {.FieldHeader="Product", .Fi
 
 Me.PivotGridControl1.PivotRows.Add(m_PivotItem)
 
+{% endhighlight %} 
 
 
 ### Sorting Using PivotItem
 
 By default, PivotGrid will sort data in ascending order. The sorting order can be changed using the Comparer field of PivotItem.
+
+{% highlight C# %}
 
 [C#]
 
@@ -167,9 +180,11 @@ public class ReverseOrderComparer : IComparer
 
 }
 
+  {% endhighlight %} 
 
 
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -215,11 +230,13 @@ End If
 
 '   #End Region  
 
+{% endhighlight %} 
 
 
 ## PivotComputationInfo
 
-This class holds the information needed for calculations that appear in a PivotGrid. For each calculation, there is an associated PivotComputationInfo object that is added to the PivotCalculations collection. The properties available in PivotComputationInfo are as follows.
+This class holds the information needed for calculations that appear in a PivotGrid. For each calculation, there is an associated 
+PivotComputationInfo object that is added to the PivotCalculations collection. The properties available in PivotComputationInfo are as follows.
 
 _Properties Table_
 
@@ -287,18 +304,22 @@ Used to define how to make the computational objects in Grid visible.</td><td>
 CalculationType</td><td>
 NoCalculationPercentageOfParentTotalPercentageOfGrandTotalPercentageOfColumnTotalPercentageOfRowTotalPercentageOfParentColumnTotalPercentageOfParentRowTotalIndexFormulaPercentageOfDifferenceFromPercentageOfDifferenceFromRunningTotalInPercentageOfRunningTotalInRankLargestToSmallestRankSmallestToLargest</td><td>
 CalculationType</td></tr>
-</table>
+</table> 
+
+
 ### Defining PivotComputationInfo in XAML and Code-Behind
 
 PivotComputationInfo can be defined in XAML as well as in C# or VB code.
 
-Through XAML
+#### Through XAML
 
 1. To define the Pivot Item, you can add the PivotGridControl using the Syncfusion:PivotGridControl class.
 2. Create a new PivotItem using PivotGridControl.PivotComputationInfo class.
 
 
 
+ {% highlight xml %} 
+ 
  [XAML]
 
 <Grid>
@@ -325,7 +346,7 @@ Through XAML
 
 </Grid>
 
-
+{% endhighlight %} 
 
 Through Code Behind
 
@@ -333,6 +354,8 @@ Through Code Behind
 2. Create new PivotItem using the PivotComputationInfo class in PivotGridControl.
 
 
+
+{% highlight C# %}  
 
 [C#]
 
@@ -352,7 +375,10 @@ this.pivotGrid1.PivotCalculations.Add(m_PivotComputationInfo);
 
 }
 
+{% endhighlight %} 
 
+
+{% highlight vbnet %} 
 
 [VB]
 
@@ -369,10 +395,14 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() 
 Me.pivotGrid1.PivotCalculations.Add(m_PivotComputationInfo)
 
 End Sub
+{% endhighlight %} 
+
 
 ### Format String in PivotComputationInfo
 
 The PivotComputationInfo property replaces each format specification in a specified string with the textual equivalent of a corresponding value.
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -384,9 +414,11 @@ The PivotComputationInfo property replaces each format specification in a specif
 
    "Quantity" SummaryType="Count" Format = "0.00"/>
 
+{% endhighlight %} 
 
 
 
+{% highlight C# %} 
 
 [C#]
 
@@ -398,7 +430,9 @@ PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() { Calcu
 
 
 
+ {% endhighlight %} 
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -408,7 +442,7 @@ PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() { Calcu
 
 Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() With {.CalculationName="Total", .FieldName="Quantity", .SummaryType= SummaryType.Count, .Format="0.00"}
 
-
+{% endhighlight %} 
 
 ### Types of format settings
 
@@ -439,24 +473,28 @@ Literal String Specifier</td></tr>
 <td>
 D</td><td>
 Long Date</td></tr>
-</table>
+</table> 
+
+
 ## DisplayOption
 
 DisplayOption behavior is used to display or hide the computation values in PivotEngine based on the option provided. Following are the display options for PivotGrid.
 
-All
+#### All
 
 This option is used to display complete values present in the PivotEngine, in the PivotGrid control.
 
 Setting DisplayOption as “All”
 
-Through XAML
+#### Through XAML
 
 1. First add the PivotGridControl using syncfusion:PivotGridControl class.
 2. Then, create a new PivotItem using PivotGridControl.PivotComputationInfo class.
 3. Finally, set the DisplayOption for PivotCalculations using DisplayOption property.
 
 
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -476,15 +514,17 @@ Through XAML
 
 </Grid>
 
+{% endhighlight %} 
 
-
-Through Code Behind
+#### Through Code Behind
 
 1. First, create a new PivotGridControl using PivotGridControl class in Window_Loaded() event handler.
 2. Then, create a new PivotItem using PivotComputationInfo class in PivotGridControl.
 3. Finally set the DisplayOption property for PivotCalculations as illustrated here.
 
 
+
+{% highlight C# %}  
 
 [C#]
 
@@ -502,7 +542,10 @@ SummaryType = SummaryType.DoubleTotalSum, DisplayOption = DisplayOption.All�
 
 }
 
+{% endhighlight %} 
 
+
+{% highlight vbnet %} 
 
 [VB]
 
@@ -520,21 +563,23 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo()W
 
 End Sub
 
+{% endhighlight %} 
 
 
-{{ '![](Concepts_images/Concepts_img1.png)' | markdownify }}
-{:.image }
+![](Concepts_images/Concepts_img1.png)
+
+
 
 
 _PivotGrid when DisplayOption is set to “All”_
 
-Calculations
+#### Calculations
 
 This option allows the specific PivotComputationInfo to be visible only in the Calculation columns of PivotGrid.
 
-Setting DisplayOption as “Calculations”
+#### Setting DisplayOption as “Calculations”
 
-Through XAML
+#### Through XAML
 
 1. First add the PivotGridControl using syncfusion:PivotGridControl class.
 2. Then create new PivotItem using PivotGridControl.PivotComputationInfo class.
@@ -542,7 +587,9 @@ Through XAML
 
 
 
-[XAML]
+{% highlight xml %} 
+
+ [XAML]
 
 <Grid>
 
@@ -560,15 +607,17 @@ Through XAML
 
 </Grid>
 
+{% endhighlight %}
 
-
-Through Code Behind
+#### Through Code Behind
 
 1. First create a new PivotGridControl using PivotGridControl class in Window_Loaded() event handler.
 2. Then create new PivotItem using PivotComputationInfo class in PivotGridControl.
 3. Finally set the DisplayOption property for PivotCalculations as illustrated here.
 
 
+
+{% highlight C# %}  
 
 [C#]
 
@@ -586,7 +635,10 @@ SummaryType = SummaryType.DoubleTotalSum, DisplayOption = DisplayOption.Calc
 
 }
 
+{% endhighlight %} 
 
+
+{% highlight vbnet %} 
 
 [VB]
 
@@ -604,27 +656,30 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo()W
 
 End Sub
 
+{% endhighlight %} 
 
 
-{{ '![](Concepts_images/Concepts_img2.png)' | markdownify }}
-{:.image }
+![](Concepts_images/Concepts_img2.png)
+
 
 
 _PivotGrid when DisplayOption is set to “Calculations”_
 
-Summary
+#### Summary
 
 This option allows the specific PivotComputationInfo to be visible only in the Summary columns of PivotGrid.
 
 Setting DisplayOption as Summary
 
-Through XAML
+#### Through XAML
 
 1. First add the PivotGridControl using syncfusion:PivotGridControl class.
 2. Then create a new PivotItem using PivotGridControl.PivotComputationInfo class.
 3. Finally set the DisplayOption for PivotCalculations using DisplayOption property.
 
 
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -645,14 +700,18 @@ Through XAML
 </Grid>
 
 
+{% endhighlight %} 
 
-Through Code Behind
+
+#### Through Code Behind
 
 1. First create a new PivotGridControl using PivotGridControl class in Window_Loaded() event handler.
 2. Then create a new PivotItem using PivotComputationInfo class in PivotGridControl.
 3. Finally set the DisplayOption property for PivotCalculations as illustrated here.
 
 
+
+{% highlight C# %}  
 
 [C#]
 
@@ -670,7 +729,10 @@ SummaryType = SummaryType.DoubleTotalSum, DisplayOption = DisplayOption.Summ
 
 }
 
+{% endhighlight %} 
 
+
+{% highlight vbnet %} 
 
 [VB]
 
@@ -688,27 +750,29 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo()W
 
 End Sub
 
+{% endhighlight %} 
 
 
-{{ '![](Concepts_images/Concepts_img3.png)' | markdownify }}
-{:.image }
+![](Concepts_images/Concepts_img3.png)
 
 
 _PivotGrid when DisplayOption is set to “Summary”_
 
-GrandTotals  
+#### GrandTotals  
 
 This option allows the specific PivotComputationInfo to be visible only in the GrandTotal columns of PivotGrid.
 
-Setting DisplayOption as GrandTotals
+#### Setting DisplayOption as GrandTotals
 
-Through XAML
+#### Through XAML
 
 1. First add the PivotGridControl using syncfusion:PivotGridControl class.
 2. Then create a new PivotItem using PivotGridControl.PivotComputationInfo class.
 3. Finally set the DisplayOption for PivotCalculations using DisplayOption property.
 
 
+
+{% highlight xml %}
 
 [XAML]
 
@@ -728,15 +792,18 @@ Through XAML
 
 </Grid>
 
+ {% endhighlight %} 
+ 
 
-
-Through Code Behind
+#### Through Code Behind
 
 1. First create a new PivotGridControl using PivotGridControl class in Window_Loaded() event handler.
 2. Then create new PivotItem using PivotComputationInfo class in PivotGridControl.
 3. Finally set the DisplayOption property for PivotCalculations as illustrated here.
 
 
+
+{% highlight C# %}  
 
 [C#]
 
@@ -754,7 +821,10 @@ SummaryType = SummaryType.DoubleTotalSum, DisplayOption = DisplayOption.Gran
 
 }
 
+{% endhighlight %} 
 
+
+{% highlight vbnet %} 
 
 [VB]
 
@@ -772,27 +842,31 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo()W
 
 End Sub
 
+{% endhighlight %} 
 
 
-{{ '![](Concepts_images/Concepts_img4.png)' | markdownify }}
-{:.image }
+
+![](Concepts_images/Concepts_img4.png)
+
 
 
 _PivotGrid when DisplayOption is set to “GrandTotals”_
 
-None
+#### None
 
 This option does not allow the specific PivotComputationInfo to be visible in any region of PivotGrid. 
 
-Setting DisplayOption as None
+#### Setting DisplayOption as None
 
-Through XAML
+#### Through XAML
 
 1. First add the PivotGridControl using syncfusion:PivotGridControl class.
 2. Then create a new PivotItem using PivotGridControl.PivotComputationInfo class.
 3. Finally set the DisplayOption for PivotCalculations using DisplayOption property.
 
 
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -812,15 +886,18 @@ Through XAML
 
 </Grid>
 
+{% endhighlight %} 
 
 
-Through Code Behind
+#### Through Code Behind
 
 1. First create a new PivotGridControl using PivotGridControl class in Window_Loaded() event handler.
 2. Then create a new PivotItem using PivotComputationInfo class in PivotGridControl.
 3. Finally set the DisplayOption property for PivotCalculations as illustrated here.
 
 
+
+{% highlight C# %}  
 
 [C#]
 
@@ -838,7 +915,9 @@ SummaryType = SummaryType.DoubleTotalSum, DisplayOption = DisplayOption.None
 
 }
 
+{% endhighlight %} 
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -856,13 +935,14 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo()W
 
 End Sub
 
+{% endhighlight %} 
 
 
-{{ '![](Concepts_images/Concepts_img5.png)' | markdownify }}
-{:.image }
-
+![](Concepts_images/Concepts_img5.png)
 
 _PivotGrid when DisplayOption is set to “None”_
+
+
 
 ## CalculationType
 
@@ -940,17 +1020,21 @@ Displays the rank of selected values in a specific field, listing the smallest i
 RankLargestToSmallest</td><td>
 Displays the rank of selected values in a specific field, listing the largest item in the field as 1, and each smaller value with higher rank value</td></tr>
 </table>
+
+
 ### Adding CalculationType in Application
 
 By default, the value of CalculationType is NoCalculation. To change the CalculationType, you can use the following code examples.
 
-Through XAML
+#### Through XAML
 
 1. First you need to add PivotGridControl by using syncfusion:PivotGridControl class.
 2. Then, create new PivotItem by using PivotGridControl.PivotComputationInfo class.
 3. Finally define the CalculationType for PivotCalculation by using CalculationType property.
 
 
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -970,9 +1054,9 @@ Through XAML
 
 </Grid>
 
+{% endhighlight %} 
 
-
-Through Code Behind
+#### Through Code Behind
 
 1. First you need to create a new PivotGridControl by using PivotGridControl class in Window_Loaded() event handler.
 2. Then, create a new PivotItem by using PivotComputationInfo class in PivotGridControl.
@@ -980,6 +1064,8 @@ Through Code Behind
 4. Add PivotCalculation into PivotGridControl.
 
 
+
+{% highlight C# %}   
 
 [C#]
 
@@ -1003,7 +1089,9 @@ this.pivotGrid1.PivotCalculations.Add(m_PivotComputationInfo);
 
 }
 
+{% endhighlight %}
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -1026,12 +1114,16 @@ Me.pivotGrid1.PivotCalculations.Add(m_PivotComputationInfo)
 End Sub
 
 
+{% endhighlight %} 
 
-{{ '![](Concepts_images/Concepts_img6.png)' | markdownify }}
-{:.image }
+
+![](Concepts_images/Concepts_img6.png)
+
 
 
 _PivotValues as PercentageOfParentColumnTotal calculation_
+
+
 
 ## SummaryType
 
@@ -1088,14 +1180,16 @@ Specifies that you are using a custom SummaryBase object to define the calculati
 <td>
 DisplayIfDiscreteValues</td><td>
 Displays the aggregated value in the Pivot Computation column if all the values are aggregated to be same, else the PadString property value is displayed (By default, PadString property is set to “*”).</td></tr>
-</table>
+</table>  
+
+
 ### DisplayIfDiscreteValues Summary Type
 
 DisplayIfDiscreteLevelsEqual is a new summary type that has been added to the PivotComputationInfo class of the Pivot Grid control. This summary type displays the  aggregated value in the Pivot Computation column if all the values are common, else the default value displayed is “*”.
 
 You can also change the default  value to any custom string of your choice by using the PadString property.
 
-Property
+#### Property
 
 _Property Table_
 
@@ -1111,7 +1205,9 @@ You can use this property to specify a custom string in the Pivot Computation co
 </table>
 
 
-Code Sample
+#### Code Sample
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -1119,7 +1215,9 @@ Code Sample
 
 <syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" SummaryType="DisplayIfDiscreteValuesEqual" PadString="***"/>
 
+{% endhighlight %} 
 
+{% highlight C# %}  
 
 [C#]
 
@@ -1131,7 +1229,9 @@ PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() {�
 
 SummaryType = SummaryType.DisplayIfDiscreteValuesEqual, PadString = "***" };
 
+{% endhighlight %} 
 
+{% highlight vbnet %}
 
 [VB]
 
@@ -1142,16 +1242,17 @@ SummaryType = SummaryType.DisplayIfDiscreteValuesEqual, PadString = "***" 
 Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() With {.CalculationName="Amount", .FieldName="Amount", .SummaryType= SummaryType. DisplayIfDiscreteValuesEqual, .PadString = "***" }
 
 
+ {% endhighlight %} 
+ 
+#### Screenshot
 
-Screenshot
+![](Concepts_images/Concepts_img7.png)
 
-{{ '![](Concepts_images/Concepts_img7.png)' | markdownify }}
-{:.image }
 
 
 _DisplayIfDiscreteValues Summary Type Illustrated_
 
-Sample Location
+#### Sample Location
 
 {InstallationDrive}:\Users\{UserName}\AppData\Local\Syncfusion\EssentialStudio\11.1.0.9\Wpf \PivotAnalysis.Wpf\ Summaries\CustomSummaries Demo
 
@@ -1159,11 +1260,11 @@ Sample Location
 
 This feature lets users provide an optional value like 999, 99, or 1000 to represent a discrete value. This will behave like the DisplayIfDiscreteValuesEqual summary type but it will carry a number format instead of characters to represent the aggregate values. The user can assign certain fields to be in a number format instead of the PadString displaying a special character, e.g., 999 instead of ***.
 
-Use Case Scenario
+#### Use Case Scenario
 
 Users can perform calculations using the numeric format assigned to a field when it is exported to Excel. Previously the summary type of “DisplayIfDiscreteValue” was always treated as a string which on exported to excel, user cannot perform any calculations since it had string format assigned for the field.
 
-Property
+#### Property
 
 _Property Table_
 
@@ -1180,12 +1281,16 @@ PadString</td><td>
 Gets or sets the PadString for the discrete value in numeric format to display.</td><td>
 Normal</td><td>
 string</td></tr>
-</table>
-Adding DisplayIfDiscreteValues Summary Type in Numeric Format in an Application 
+</table> 
+
+
+#### Adding DisplayIfDiscreteValues Summary Type in Numeric Format in an Application 
 
 To enable the DisplayIfDiscreteValues summary type in numeric format in an application, we need to set a numerical value to the property PadString. For example, PadString=”999”
 
 The following code sample explains how to set PadString to display the discrete value in a numerical format. It can be set by XAML or C# code.
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -1193,7 +1298,9 @@ The following code sample explains how to set PadString to display the discrete 
 
 <syncfusion:PivotComputationInfo FieldHeader="Amount" FieldName="Amount" Format="C" SummaryType="DisplayIfDiscreteValuesEqual" PadString="999"/>
 
+ {% endhighlight %}
 
+{% highlight C# %}  
 
 [C#]
 
@@ -1205,7 +1312,10 @@ PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() {�
 
 SummaryType = SummaryType.DisplayIfDiscreteValuesEqual, PadString = "999" };
 
+{% endhighlight %} 
 
+
+{% highlight vbnet %} 
 
 [VB]
 
@@ -1215,17 +1325,20 @@ SummaryType = SummaryType.DisplayIfDiscreteValuesEqual, PadString = "999" 
 
 Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() With {.CalculationName="Amount", .FieldName="Amount", .SummaryType= SummaryType. DisplayIfDiscreteValuesEqual, .PadString = "999" }
 
+{% endhighlight %} 
 
 
-{{ '![](Concepts_images/Concepts_img8.png)' | markdownify }}
-{:.image }
+![](Concepts_images/Concepts_img8.png)
+
 
 
 _DisplayIfDiscreteValues Summary Type in Numeric Format_
 
-Sample Location
+#### Sample Location
 
 {Installation Drive}:\Users\{UserName}\AppData\Local\Syncfusion\EssentialStudio\11.4.0.20\Wpf \PivotAnalysis.Wpf\Summaries\CustomSummaries Demo
+
+
 
 ## Filter Expression
 
@@ -1270,10 +1383,14 @@ Name</td><td>
 Gets or sets the name of this FilterExpression.</td><td>
 string</td><td>
 -</td></tr>
-</table>
+</table> 
+
+
 ## Defining Filters
 
 Filters can be added to PivotGrid by the following way:
+
+{% highlight C# %}  
 
 [C#]
 
@@ -1281,7 +1398,9 @@ Filters can be added to PivotGrid by the following way:
 
 this.PivotGridControl1.Filters.Add(new FilterExpression { Expression="Product = Bike" Name="Product Filter" });
 
+ {% endhighlight %}
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -1289,5 +1408,4 @@ this.PivotGridControl1.Filters.Add(new FilterExpression { Expression="Product = 
 
 Me.PivotGridControl1.Filters.Add(New FilterExpression With {.Expression="Product = Bike" .Name="Product Filter" })
 
-
-
+{% endhighlight %} 

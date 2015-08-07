@@ -11,7 +11,7 @@ documentation: ug
 
 In order to insert a UI element in the document, ParagraphAdv provides an inline called UIContainerAdv.
 
-Properties
+## Properties
 
 
 
@@ -56,15 +56,37 @@ Boolean</td></tr>
 UIContainerAdv can be used to add a UI element directly to an application by using the following code snippet: 
 
 
+{% highlight xml %}
 
-<table>
-<tr>
-<td>
-[XAML]      <syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            <syncfusion:DocumentAdv>                <syncfusion:SectionAdv>                    <syncfusion:ParagraphAdv >                        <syncfusion:UIContainerAdv >                            <Button />                        </syncfusion:UIContainerAdv>                    </syncfusion:ParagraphAdv>                </syncfusion:SectionAdv>            </syncfusion:DocumentAdv>        </syncfusion:RichTextBoxAdv></td></tr>
-<tr>
-<td>
-[C#]           RichTextBoxAdv richtext = new RichTextBoxAdv();           DocumentAdv document = new DocumentAdv();           SectionAdv section = new SectionAdv();           ParagraphAdv paragraph = new ParagraphAdv();           UIContainerAdv uicontainer = new UIContainerAdv();           uicontainer.UIElement = new Button();           paragraph.Inlines.Add(uicontainer);           section.Blocks.Add(paragraph);           document.Sections.Add(section);           richtext.Document = document;</td></tr>
-</table>
+
+[XAML]     
+ <syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">           
+ <syncfusion:DocumentAdv>                
+ <syncfusion:SectionAdv>                   
+ <syncfusion:ParagraphAdv >                       
+ <syncfusion:UIContainerAdv >                            
+ <Button />                       
+ </syncfusion:UIContainerAdv>                   
+ </syncfusion:ParagraphAdv>               
+ </syncfusion:SectionAdv>           
+ </syncfusion:DocumentAdv>        
+ </syncfusion:RichTextBoxAdv>
+{% endhighlight %}
+ 
+{% highlight C# %}
+
+[C#]           
+RichTextBoxAdv richtext = new RichTextBoxAdv();           
+DocumentAdv document = new DocumentAdv();           
+SectionAdv section = new SectionAdv();          
+ ParagraphAdv paragraph = new ParagraphAdv();           
+ UIContainerAdv uicontainer = new UIContainerAdv();           
+ uicontainer.UIElement = new Button();           
+ paragraph.Inlines.Add(uicontainer);          
+ section.Blocks.Add(paragraph);           
+ document.Sections.Add(section);          
+ richtext.Document = document;
+{% endhighlight %}
 
 
 ## Limitations

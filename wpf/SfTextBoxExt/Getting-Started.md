@@ -37,7 +37,7 @@ Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syn
 </Page>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 SfTextBoxExt textBox = new SfTextBoxExt();

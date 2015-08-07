@@ -26,7 +26,7 @@ New button feature in TabControlExt is used to display NewTabButton similar to I
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 
@@ -76,7 +76,7 @@ This New button can also displayed at first end using the code below.
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 
@@ -124,7 +124,7 @@ The following code illustrates the same.
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 

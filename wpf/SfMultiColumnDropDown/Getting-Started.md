@@ -37,6 +37,9 @@ Adding SfMultiColumnDropDown to an Application
 
 You can either drag the control from Visual Studio or Expression Blend, or add the control to your project by manually creating it. The following code example illustrates how to create the SfMultiColumnDropDown control.
 
+
+{% highlight xml %}
+
 [XAML]
 
 <Window xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
@@ -44,21 +47,23 @@ You can either drag the control from Visual Studio or Expression Blend, or add t
 <syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"/>
 
 </Window>
+{% endhighlight %}
 
-Populating With Data
+## Populating With Data
 
 Once you have added the SfMultiColumnDropDownControl to your application, you may have to bind the collection of business objects to the control. The following properties enable binding the SfMultiColumnDropDownControl.
 
 * SfMultiColumnDropDownControl.ItemsSource: Gets or sets the data source (IEnumerable) used to generate the content for the SfDataGrid present inside the DropDownPopup. The data source can be of any type ranging from ObservableCollection<T> to DynamicObjects.
 * SfMultiColumnDropDownControl.DisplayMember: Gets or sets the field in the databound source, whose value is displayed in the Editor.
 * SfMultiColumnDropDownControl.ValueMember: Gets or sets the field in the databound source that is used to compute the SelectedValue from the SelectedItem.
+
 ## Control Structure
 
 
 The following screenshot illustrates the structure of the SfMultiColumnDropDown control.
 
-{{ '![B:/Support/2015/April/24/Image/ControlStructure.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 _Visual Structure of SfMultiColumnDropDownControl_
@@ -67,7 +72,8 @@ _Visual Structure of SfMultiColumnDropDownControl_
 
 Refer to the following steps to bind the data in SfMultiColumnDropDownControl
 
-1.  Create a business object class as Data.
+1.Create a business object class as Data.
+{% highlight C# %}
 
 [C#]
 
@@ -147,9 +153,11 @@ public class Data:INotifyPropertyChanged
 
     }
 
+{% endhighlight %}
 
+2.Create a new class as ViewModel. This class contains the property EmpDetails that s ItemsSource for SfMultiColumnDropdownControl.
 
-2. Create a new class as ViewModel. This class contains the property EmpDetails that s ItemsSource for SfMultiColumnDropdownControl.
+{% highlight C# %}
 
 [C#]
 
@@ -222,8 +230,11 @@ private ObservableCollection<Data> employeeDetails;
         }
 
 }
+{% endhighlight %}
+3.Set the ViewModel instance as DataContext to window. Now you can bind the EmpDetails property in ViewModel as ItemsSource to SfMultiColumnDropdownControl.
 
-3. Set the ViewModel instance as DataContext to window. Now you can bind the EmpDetails property in ViewModel as ItemsSource to SfMultiColumnDropdownControl.
+
+{% highlight xml %}
 
 [XAML]
 
@@ -243,23 +254,26 @@ private ObservableCollection<Data> employeeDetails;
 
                                            DisplayMember="Name"
 
-                                           ValueMember="Designation"                                             
-
-                                           >
+                                           ValueMember="Designation" >                                         
+{% endhighlight %}
+                                           
 
 The following screenshot illustrates the output of the above code.
 
-{{ '![B:/Support/2015/April/24/Image/Figure2.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 _SfMuticolumnDropDownControl_
 
-Add SfMultiColumnDropDownControl inside the SfDataGrid
+### Add SfMultiColumnDropDownControl inside the SfDataGrid
 
 SfDataGrid allows you to add the SfMultiColumnDropDownControl inside it as column. SfDataGrid contains column type as GridMultiColumnDropDownList, it loads the SfMulticolumnDropDownControl inside the SfDataGrid. 
 
 The following code example illustrates how to add SfMultiColumnDropDownControl inside the SfDataGrid.
+
+
+{% highlight xml %}
 
 [XAML]
 
@@ -318,11 +332,11 @@ The following code example illustrates how to add SfMultiColumnDropDownControl i
             </syncfusion:SfDataGrid.Columns>
 
         </syncfusion:SfDataGrid>
-
+{% endhighlight %}
 The following screenshot displays the output for MultiColumnControl inside the SfDataGrid.
 
-{{ '![B:/Support/2015/April/24/Image/Figure3.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![B:/Support/2015/April/24/Image/Figure3.png](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 _SfMuticolumnDropDownContorl inside SfDataGrid_

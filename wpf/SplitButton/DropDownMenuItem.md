@@ -9,13 +9,13 @@ documentation: ug
 
 # DropDownMenuItem
 
-Adding Icon to DropDownMenuItem
+## Adding Icon to DropDownMenuItem
 
 The DropDownMenuItem control is the basic MenuItem, which forms the actual item of the DropDownMenuGroup. The icon of the DropDownMenuItem can be added as follows:
 
 
 
-[XAML]
+{% highlight xml %}
 
 <shared:SplitButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
@@ -39,23 +39,19 @@ The DropDownMenuItem control is the basic MenuItem, which forms the actual item 
 
 </shared:SplitButtonAdv>
 
+{% endhighlight %}
+
+![](DropDownMenuItem_images/DropDownMenuItem_img1.png)
 
 
-{{ '![](DropDownMenuItem_images/DropDownMenuItem_img1.png)' | markdownify }}
-{:.image }
-
-
-
-
-Checkable DropDownMenuItem
+## Checkable DropDownMenuItem
 
 The DropDownMenuItem can be checked by setting the IsCheckable property to true. 
 
 The feature can be enabled by using the property IsCheckable:
 
 
-
-[XAML]
+{% highlight xml %}
 
 <shared:SplitButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
@@ -71,11 +67,9 @@ The feature can be enabled by using the property IsCheckable:
 
 </shared:SplitButtonAdv>
 
+{% endhighlight %}
 
-
-{{ '![](DropDownMenuItem_images/DropDownMenuItem_img2.png)' | markdownify }}
-{:.image }
-
+![](DropDownMenuItem_images/DropDownMenuItem_img2.png)
 
 
 

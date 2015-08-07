@@ -64,7 +64,7 @@ Use the following code snippet to expand or collapse the TaskBar.
 </syncfusion:TaskBar>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 

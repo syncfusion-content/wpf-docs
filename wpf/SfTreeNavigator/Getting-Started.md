@@ -34,7 +34,7 @@ The following code sample shows how to create the Tree Navigator from code-behin
 </navigation:SfTreeNavigator>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 SfTreeNavigator sfToolkit = new SfTreeNavigator();

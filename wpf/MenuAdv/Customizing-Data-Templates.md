@@ -15,6 +15,9 @@ Data templates can be customized for items of the MenuAdv control. The next sect
 
 You can customize how a business object is displayed as MenuItemAdv using ItemTemplate of MenuAdv. The MenuAdv displays hierarchical data. HierarchicalDataTemplate is used to define the ItemTemplate. The following code example shows the usage of ItemTemplate.
 
+{% highlight xml %}
+
+
 [XAML]
 
 <syncfusion:MenuAdv ItemsSource="{Binding MenuItems}" >
@@ -46,14 +49,14 @@ You can customize how a business object is displayed as MenuItemAdv using ItemTe
         </syncfusion:MenuAdv>
 
 
-
+{% endhighlight %}
 
 
 
 
 Implementing the above code will generate the following MenuAdv control.
 
-{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)' | markdownify }}
-{:.image }
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
+
 
 

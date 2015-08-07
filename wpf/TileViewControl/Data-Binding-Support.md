@@ -11,14 +11,14 @@ documentation: ug
 
 Data Binding is the process of establishing a connection between the application UI and business logic. To bind the business object collection, ItemSource and ItemTemplate properties are used. You can bind the data object to any control and show them in the TileViewItem.
 
-Adding Data Binding to an Application 
+## Adding Data Binding to an Application 
 
 Data Binding can be added to an application by using either XAML or C# code.
 
 The following code example illustrates how to add the Data Binding to an application through XAML and C#.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -89,12 +89,12 @@ The following code example illustrates how to add the Data Binding to an applica
 
         </syncfusion:TileViewControl>
 
+{% endhighlight %}
 
 
 
 
-
-
+{% highlight c# %}
  [C#]
 
 public ObservableCollection<object> TileViewItemData
@@ -129,17 +129,17 @@ public class Data
 
 }
 
+{% endhighlight %}
+
+
+
+![](Data-Binding-Support_images/Data-Binding-Support_img1.png)
 
 
 
 
-{{ '![](Data-Binding-Support_images/Data-Binding-Support_img1.png)' | markdownify }}
-{:.image }
 
-
-
-
-Sample Link
+## Sample Link
 
 To view samples: 
 

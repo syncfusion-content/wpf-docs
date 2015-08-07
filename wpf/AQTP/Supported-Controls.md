@@ -13,18 +13,18 @@ documentation: ug
 
 This section covers the supported properties and methods in Essential Grid. 
 
-#### Properties 
+## Properties 
 
 _Properties Table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type</td><td>
-Data Type</td><td>
-Reference</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Reference**' | markdownify }}</td></tr>
 <tr>
 <td>
 Int RowCount</td><td>
@@ -40,17 +40,18 @@ N/A</td><td>
 int</td><td>
 N/A</td></tr>
 </table>
-#### Methods
+
+## Methods
 
 _Methods Table_
 
 <table>
 <tr>
 <th>
-Method</th><th>
-Description</th><th>
-Parameters </th><th>
-Return Type </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <th>
 bool SetCurrentCell(int row, int col)</th><th>
@@ -208,21 +209,22 @@ Gets the formatted text as string value based on Row and Column parameters.</th>
 int row, int col</th><th>
 string</th></tr>
 </table>
+
 ### Essential Chart
 
-#### Methods
+### Methods
 
 _Methods Table_
 
 <table>
 <tr>
 <th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Type </th><th>
-Return Type </th><th>
-Reference links </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <th>
 SetScrollPosition</th><th>
@@ -296,20 +298,20 @@ NA</th><th>
 Void</th><th>
 NA</th></tr>
 </table>
+
 ### Essential SfDataGrid
 
-#### Properties
+### Properties
 
 _Properties Table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type</td><td>
-Data Type</td><td>
-Reference</td></tr>
+{{ '**Method**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Parameters**' | markdownify }}</td><td>
+{{ '**Return Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 Int RowCount</td><td>
@@ -325,17 +327,18 @@ N/A</td><td>
 int</td><td>
 N/A</td></tr>
 </table>
-#### Methods
+
+### Methods
 
 _Methods Table_
 
 <table>
 <tr>
 <th>
-Method</th><th>
-Description</th><th>
-Parameters </th><th>
-Return Type </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <th>
 void SetCurrentCell(int row,int col);</th><th>
@@ -373,19 +376,20 @@ To EndEdit the current cell.</th><th>
 NA</th><th>
 void</th></tr>
 </table>
+
 ### Essential SfMultiColumnDropDownControl
 
-#### Methods
+### Methods
 
 _Methods Table_
 
 <table>
 <tr>
 <th>
-Method</th><th>
-Description</th><th>
-Parameters </th><th>
-Return Type </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <th>
 void SetSelectedIndex(int index);</th><th>
@@ -405,19 +409,20 @@ To Close the Popup.</th><th>
 NA</th><th>
 void</th></tr>
 </table>
+
 ### Essential SfDataPager
 
-#### Methods
+### Methods
 
 _Methods Table_
 
 <table>
 <tr>
 <th>
-Method</th><th>
-Description</th><th>
-Parameters </th><th>
-Return Type </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <th>
 void SetCurrentPage(int pageIndex</th><th>

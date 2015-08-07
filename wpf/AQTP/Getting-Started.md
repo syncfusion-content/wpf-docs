@@ -23,22 +23,22 @@ _Note: The QuickTest Professional – Add-in Manager window is displayed._
 
 2. Select the WPF check box under the Add-in header. This ensures that WPF add-in is installed. 
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/Manger.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 3. Click OK. 
 > 
 _Note: The QuickTest Professional – [Start Page] window opens. There are two tabs namely Start Page and Test in the main pane of the window. The content under the Start Page tab is displayed by default._
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 4. Click the New Test icon in the Start Page. 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 5. A new test is created. 
@@ -47,20 +47,20 @@ _Note: You can also create a new test by selecting the Test tab in the main pane
 
 6. Click Record in the toolbar to start the recording. 
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/Reco.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 7. Record and Run Settings dialog box opens.
 
-{{ '![//syncvm2/Temp/Rajadurai/Web.png](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 8. Select the Windows Application tab. The content under the tab is displayed.
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img6.png)
+
 
 
 > _Note: The Record and run only option is selected by default._
@@ -77,15 +77,17 @@ _Note: You can also create a new test by selecting the Test tab in the main pane
 
 > _Note: The Application Details dialog box opens._ 
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/AppDetails.png](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+  ![](Getting-Started_images/Getting-Started_img7.png)
 
 
-11. For Application field, browse and select the path of the application that has to be tested by clicking {{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+
+11. For Application field, browse and select the path of the application that has to be tested by clicking 
+    
+	![](Getting-Started_images/Getting-Started_img8.png)
+
  button.
-12. For Working folder field, browse and select the path of the working folder by clicking {{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+12. For Working folder field, browse and select the path of the working folder by clicking ![](Getting-Started_images/Getting-Started_img9.png)
+
 button.
 13.  Select the Launch application check box, to launch the application immediately after clicking OK. 
 14. Select Include descendant processes check box, to include all the processes that are descendant to the current process. 
@@ -98,16 +100,16 @@ button.
 > 
 _Note: The path of the application and working folder are displayed in the Application details frame as displayed in the following screenshot._
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/selected.png](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
+    ![](Getting-Started_images/Getting-Started_img10.png)
+
 
 
 16. Click OK. 
 > 
 _Note: The recording starts. The application in the given path is opened as displayed in the following screenshot._
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/Record.png](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
-{:.image }
+    ![](Getting-Started_images/Getting-Started_img11.png)
+
 
 
 17. Perform the required valid user-action in the application. 
@@ -118,8 +120,8 @@ _Note:_
 * _Finally, the DLL renders the correct method names of the Syncfusion namespace that are called respective to the user-actions performed._ 
 * _These method names are then recorded and displayed in the screen behind the running application, as illustrated in the following screenshot._ 
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/Record.png](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img12.png)
+
 
 
 This is called high-level recording, as the events are recorded with the method names of the Syncfusion namespace after recognizing the Syncfusion control unlike the low-level recording in which the Syncfusion controls are not recognized by QTP and the events are recorded with default method names. 
@@ -136,8 +138,8 @@ On recording, all your actions performed in the control are just noted with the 
 > 
 _Note: Run dialog box opens. The Results Location tab is selected by default._
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/Run.png](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img13.png)
+
 
 
 In the Results Location tab, two options are provided:
@@ -154,8 +156,8 @@ _Note: Selecting one option renders the other unavailable._
 > 
 _Note: QTP starts the running process; application containing the recorded Syncfusion control is opened and it shows all the recorded events in a continuous flow one-by-one. After it finishes running the test, it displays the Test [Result_Written_Location] - Test Results dialog box, where the results are summarized as illustrated in the following screenshot._
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/TestOutput.png](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img14.png)
+
 
 
 The process of running the test is completed.
@@ -170,24 +172,24 @@ This view is especially provided for the experts in VB Script. In the Expert vie
 
 The following screenshot illustartes adding a script line to the Expert View pane.
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/Editing.png](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img15.png)
+
 
 
 You can run the edited test to check whether the newly added/changed scripts affect the running process, by displaying the changes in the running application.
 
 > _Note: Sometimes the newly added/changed script may have an error causing the whole application to fail. In such a case, the Test Results dialog shows the failure as illustrated in the following screenshot._
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/TestFailed.png](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img16.png)
+
 
 
 ### Editing in Keyword View
 
 The keyword view is meant for people who are not experts in VB scripts. Keyword view contains the controls used, the user-actions or operations performed, values involved in the operation and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as illustrated in the following screenshot.
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/KeywordView Mode.png](Getting-Started_images/Getting-Started_img17.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img17.png)
+
 
 
 For editing the test in Keyword view, you can perform any of the following actions:
@@ -195,16 +197,15 @@ For editing the test in Keyword view, you can perform any of the following actio
 1. Right-click on any of the items listed under the Item header. 
 2. Select the required options from the menu. 
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/Keyword+Rightclick.png](Getting-Started_images/Getting-Started_img18.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img18.png)
+
 
 
 For example, clicking Cut in the menu causes the row representing a user-action to be cut. You can then right-click on any other item and click Paste on the menu displayed. This causes the row to be pasted before the right-clicked item.
 
 > _Note: All the items under the Item header are represented as a drop-down list._
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/HeaderDropdown.png](Getting-Started_images/Getting-Started_img19.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img19.png)
 
 
 You can run the edited test.
@@ -217,8 +218,8 @@ Saving a test is as simple as saving any other document or picture. To save a te
 
 1. Click the Save button in the toolbar. Save Test dialog box opens. 
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/Save.png](Getting-Started_images/Getting-Started_img20.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img20.png)
+
 
 
 2. Select the location, to save the file from the Look in drop-down list. 
@@ -234,8 +235,8 @@ The tests that are saved can be replayed later. For running such tests, refer to
 > 
 _Note: The Open Test dialog box opens with a list of saved tests._
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/Opentest.png](Getting-Started_images/Getting-Started_img21.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img21.png)
+
 
 
 2. Select the required test. 
@@ -247,8 +248,8 @@ _Note: The Open Test dialog box opens with a list of saved tests._
 
 The following image illustrates the generated methods based on recording the process in SyncfusionGridDataControl. 
 
-{{ '![C:/Documents and Settings/arulraja/Desktop/Doc_QTP/ScreenShot/Opened.png](Getting-Started_images/Getting-Started_img22.png)' | markdownify }}
-{:.image }
+  ![](Getting-Started_images/Getting-Started_img22.png)
+
 
 
 4. Click Run in the toolbar to run the test. 

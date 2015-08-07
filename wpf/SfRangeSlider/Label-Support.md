@@ -16,8 +16,8 @@ _Property Table_
 <table>
 <tr>
 <td>
-{{ '*Property*' | markdownify }}</td><td>
-{{ '*Description*' | markdownify }}</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 CustomLabels</td><td>
@@ -75,7 +75,7 @@ set { customCollection = value; }
 
 In the following code example, the CustomCollection property is bound to CustomLabels property in the SfRangeSlider control that populates the custom labels collection.
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -95,7 +95,7 @@ _RangeSlider with CustomLabels_
 
 The default value of ShowCustomLabels is false. When set to true, it displays the custom labels for particular values based on the CustomLabels collection.
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -124,7 +124,7 @@ LabelPlacement property describes the position of the custom labels for particul
 
 The following code example illustrates the usage of the LabelPlacement property. The output is displayed in the corresponding images.
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -138,7 +138,7 @@ The following code example illustrates the usage of the LabelPlacement property.
 
 _LabelPlacement in BottomRight_
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -162,7 +162,7 @@ _LabelPlacement in TopLeft_
 
 The default value of the ShowValueLabels property is false. When set to true, it displays the label for all the ticks based on the ValuePlacement property.
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -189,7 +189,7 @@ The ValuePlacement property describes the position of the labels for all the tic
 
 The following code example illustrates the usage of ValuePlacement property. The output is displayed in the corresponding images.
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -205,7 +205,7 @@ The following code example illustrates the usage of ValuePlacement property. The
 
 _ValuePlacement in Bottom Right_
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -232,7 +232,7 @@ The LabelOrientation property describes the orientation of the labels for both t
 
 The following code example illustrates the usage of LabelOrientation property. The output is displayed in the corresponding images.
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 
@@ -248,7 +248,7 @@ The following code example illustrates the usage of LabelOrientation property. T
 
 _LabelOrientation as Horizontal_
 
-{%highlight xaml#%}
+{%highlight xml%}
 
 [XAML]
 

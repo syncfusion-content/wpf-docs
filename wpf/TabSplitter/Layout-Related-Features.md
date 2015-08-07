@@ -68,7 +68,7 @@ The appearance of the TabSplitter control is customized by using the appearance 
 </syncfusion:TabSplitter>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 

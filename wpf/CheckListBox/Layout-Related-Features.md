@@ -20,17 +20,28 @@ The check box in the CheckListBox Item can be aligned to the left or right side 
 
 To set the CheckBoxAlignment to Right, use the following code.
 
-<table>
-<tr>
-<td>
-{%highlight xaml%}
-[XAML]<!-- Adding CheckListBox with CheckBoxAlignment --><syncfusion:CheckListBox Name="checkListBox" CheckBoxAlignment="Right">    <!-- Adding CheckListBox items -->    <syncfusion:CheckListBoxItem Content="Mexico"/>    <syncfusion:CheckListBoxItem Content="Canada" />    <syncfusion:CheckListBoxItem Content="Bermuda" />    <syncfusion:CheckListBoxItem Content="Belize" />    <syncfusion:CheckListBoxItem Content="Panama" /></syncfusion:CheckListBox></td></tr>
+
+{%highlight xml%}
+[XAML]
+   <!-- Adding CheckListBox with CheckBoxAlignment -->
+   <syncfusion:CheckListBox Name="checkListBox" CheckBoxAlignment="Right"> 
+   
+   <!-- Adding CheckListBox items -->   
+   <syncfusion:CheckListBoxItem Content="Mexico"/> 
+   <syncfusion:CheckListBoxItem Content="Canada" />  
+   <syncfusion:CheckListBoxItem Content="Bermuda" />    
+   <syncfusion:CheckListBoxItem Content="Belize" />   
+   <syncfusion:CheckListBoxItem Content="Panama" />
+   </syncfusion:CheckListBox></td></tr>
+   
 {%endhighlight%}
-<tr>
-<td>
+
 {%highlight c#%}
-[C#]// Align the Check Box.checkListBox.CheckBoxAlignment = CheckBoxAlignment.Right;</td></tr>
-{%endhighlight%}</table>
+[C#]
+// Align the Check Box.
+checkListBox.CheckBoxAlignment = CheckBoxAlignment.Right;
+
+{%endhighlight%}
 
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)
@@ -46,8 +57,8 @@ _Property table_
 <table>
 <tr>
 <td>
-{{ '*Property*' | markdownify }}</td><td>
-{{ '*Description*' | markdownify }}</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 FlowDirection</td><td>
@@ -60,18 +71,28 @@ To set the FlowDirection to RightToLeft, use the below code:
 
 
 
-<table>
-<tr>
-<td>
-{%highlight xaml%}
-[XAML]<!-- Adding CheckListBox with FlowDirection as right  --><syncfusion:CheckListBox Name="checkListBox" FlowDirection="RightToLeft">    <!-- Adding CheckListBox items -->    <syncfusion:CheckListBoxItem Content="Mexico"/>    <syncfusion:CheckListBoxItem Content="Canada" />    <syncfusion:CheckListBoxItem Content="Bermuda" />    <syncfusion:CheckListBoxItem Content="Belize" />    <syncfusion:CheckListBoxItem Content="Panama" /></syncfusion:CheckListBox></td></tr>
+
+{%highlight xml%}
+[XAML]
+   <!-- Adding CheckListBox with FlowDirection as right  -->
+   <syncfusion:CheckListBox Name="checkListBox" FlowDirection="RightToLeft"> 
+   <!-- Adding CheckListBox items --> 
+   <syncfusion:CheckListBoxItem Content="Mexico"/>  
+   <syncfusion:CheckListBoxItem Content="Canada" />  
+   <syncfusion:CheckListBoxItem Content="Bermuda" />  
+   <syncfusion:CheckListBoxItem Content="Belize" />   
+   <syncfusion:CheckListBoxItem Content="Panama" />
+   </syncfusion:CheckListBox>
+   
 {%endhighlight%}
-<tr>
-<td>
+
 {%highlight c#%}
-[C#]// Set FlowDirection property as RightToLeft.checkListBox.FlowDirection = FlowDirection.RightToLeft;  </td></tr>
+[C#]
+// Set FlowDirection property as RightToLeft.
+checkListBox.FlowDirection = FlowDirection.RightToLeft;
+
 {%endhighlight%}
-</table>
+
 
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
@@ -87,8 +108,8 @@ _Property table_
 <table>
 <tr>
 <td>
-{{ '*Property*' | markdownify }}</td><td>
-{{ '*Description*' | markdownify }}</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 VisualStyle</td><td>
@@ -98,18 +119,29 @@ Sets the visual style for the CheckListBox control. The options provided are as 
 
 For setting Blend style, refer the below code snippet.
 
-<table>
-<tr>
-<td>
-{%highlight xaml%}
-[XAML]<!-- Adding CheckListBox with Visual Style as Blend --><syncfusion:CheckListBox Name="checkListBox" syncfusion:SkinStorage.VisualStyle="Blend">    <!-- Adding CheckListBox items -->    <syncfusion:CheckListBoxItem Content="Mexico"/>    <syncfusion:CheckListBoxItem Content="Canada" />    <syncfusion:CheckListBoxItem Content="Bermuda" />    <syncfusion:CheckListBoxItem Content="Belize" />    <syncfusion:CheckListBoxItem Content="Panama" /></syncfusion:CheckListBox></td></tr>
+
+{%highlight xml%}
+[XAML]
+ <!-- Adding CheckListBox with Visual Style as Blend -->
+ <syncfusion:CheckListBox Name="checkListBox" syncfusion:SkinStorage.VisualStyle="Blend">   
+ 
+ <!-- Adding CheckListBox items -->    
+ <syncfusion:CheckListBoxItem Content="Mexico"/>    
+ <syncfusion:CheckListBoxItem Content="Canada" />   
+ <syncfusion:CheckListBoxItem Content="Bermuda" />  
+ <syncfusion:CheckListBoxItem Content="Belize" />    
+ <syncfusion:CheckListBoxItem Content="Panama" />
+ </syncfusion:CheckListBox>
+ 
 {%endhighlight%}
-<tr>
-<td>
+
 {%highlight c#%}
-[C#]// Setting the visual style as Blend.SkinStorage.SetVisualStyle(checkListBox, "Blend"); </td></tr>
+[C#]
+// Setting the visual style as Blend.
+SkinStorage.SetVisualStyle(checkListBox, "Blend"); 
+
 {%endhighlight%}
-</table>
+
 
 
 

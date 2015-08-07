@@ -18,8 +18,7 @@ documentation: ug
 
 
 
-{{ '![Description: Description: C:/Documents and Settings/labuser/My Documents/SL tools correct image.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -28,8 +27,8 @@ documentation: ug
 
 
 
-{{ '![http://help.syncfusion.com/Ug_101/User%20Interface/WPF/Spreadsheet/ImagesExt/image9_9.jpg](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img2.jpeg)
+
 
 
 
@@ -51,8 +50,8 @@ Following are the steps to add the Spreadsheet control to WPF application using 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img3.png) 
+
 
 
 1. Drag SpreadsheetControl to the Designer area.
@@ -60,33 +59,42 @@ Following are the steps to add the Spreadsheet control to WPF application using 
 
 
 
-> _Note: To add the SpreadsheetRibbon control to your application, drag SpreadsheetRibbon to the Designer area and set the Spreadsheet contol as a DataContext as shown the following code._
+   > _Note: To add the SpreadsheetRibbon control to your application, drag SpreadsheetRibbon to the Designer area and set the Spreadsheet contol as a DataContext as shown the following code._
 
+   ~~~ xml
 
+   [XMAL]
 
-[XMAL]
-
-<syncfusion:SpreadsheetRibbon DataContext="{Binding ElementName=spreadsheetControl1}"/>
-
+   <syncfusion:SpreadsheetRibbon DataContext="{Binding ElementName=spreadsheetControl1}"/>
+   ~~~
+   {:.prettyprint}
 
 
 ### Through XAML and C#
 
 You can also add the Spreadsheet control to a WPF application through XAML and C#. The following code example illustrates this. 
 
+{%highlight xml%}
 
 
-<table>
-<tr>
-<td>
-[XMAL]<syncfusion:SpreadsheetControl HorizontalAlignment="Left"  Name="spreadsheetControl1" VerticalAlignment="Top" /></td></tr>
-<tr>
-<td>
- [C#]SpreadsheetControl Spreadsheet1 = new SpreadsheetControl();LayoutRoot.Children.Add(Spreadsheet1);</td></tr>
-<tr>
-<td>
-[VB]Dim Spreadsheet1 As SpreadsheetControl = New SpreadsheetControl()LayoutRoot.Children.Add(Spreadsheet1)</td></tr>
-</table>
+[XMAL]
+
+<syncfusion:SpreadsheetControl HorizontalAlignment="Left"  Name="spreadsheetControl1" VerticalAlignment="Top" />
+
+{%endhighlight%}
+
+{%highlight c#%}
+ [C#]
+ 
+ SpreadsheetControl Spreadsheet1 = new SpreadsheetControl();LayoutRoot.Children.Add(Spreadsheet1);
+{%endhighlight%}
+ 
+ 
+{%highlight vbnet%}
+[VB]
+
+Dim Spreadsheet1 As SpreadsheetControl = New SpreadsheetControl()LayoutRoot.Children.Add(Spreadsheet1)
+{%endhighlight%}
 
 
 ## Loading Excel Files in Spreadsheet Control
@@ -95,14 +103,18 @@ You can open the Excel document in the Spreadsheet control using _ImportFromExce
 
 
 
-<table>
-<tr>
-<td>
-[C#]FileStream stream = new FileStream(@"..\..\Data\DefaultSheet.xlsx", FileMode.Open);spreadsheet.ImportFromExcel(stream);</td></tr>
-<tr>
-<td>
- [VB]Dim stream As FileStream = New FileStream("..\..\Data\DefaultSheet.xlsx", FileMode.Open)spreadsheet.ImportFromExcel(stream)</td></tr>
-</table>
+{%highlight c#%}
+[C#]
+FileStream stream = new FileStream(@"..\..\Data\DefaultSheet.xlsx", FileMode.Open);
+spreadsheet.ImportFromExcel(stream);
+{%endhighlight%}
+
+{%highlight vbnet%}
+ [VB]
+ 
+ Dim stream As FileStream = New FileStream("..\..\Data\DefaultSheet.xlsx", FileMode.Open)spreadsheet.ImportFromExcel(stream)
+
+{%endhighlight%}
 
 
 > 
@@ -111,29 +123,29 @@ You can open the Excel document in the Spreadsheet control using _ImportFromExce
 
 ## Appearance and Structure of the Controls
 
-Structure of the SpreadsheetRibbon Control
+### Structure of the SpreadsheetRibbon Control
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
 
-Structure of the Spreadsheet Control
+
+### Structure of the Spreadsheet Control
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 
 
 ## Architecture
 
-Architecture
+### Architecture
 
 The Spreadsheet control supports ControlTemplate to define its content. By default, its content includes a TabControlExt object that contains number of TabItemExt based on sheet count. The TabItemExt contains a ScrollViewer object that contains a SpreadsheetGrid object.
 
@@ -141,13 +153,13 @@ The following sketch illustrates the Spreadsheet control architecture.
 
 
 
-{{ '![C:/Users/ponrajaa/Desktop/spreadsheet_architecture_2.png](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
 
-Accessing the Underlying Grid control
+
+### Accessing the Underlying Grid control
 
 The Spreadsheet control is a control derived class that has its own properties. You can use Grid control derived property namely ActiveSpreadsheetGrid _to_ get its grid-like behavior. To access the underlying Grid control associated with the Spreadsheet control, you can use the SpreadsheetControl.GridProperties.ActiveSpreadsheetGrid property.
 

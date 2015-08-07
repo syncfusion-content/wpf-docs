@@ -11,13 +11,15 @@ documentation: ug
 
 Points are one of the record type in shape file layer. Points are used to specify the specific point in the map. For example used to specify the capital of countries. Points in the shape file given as latitude and longitude coordinates in the shapes file. Those points should be converted as map points.
 
-Customizing the MapPoint
+## Customizing the MapPoint
 
 The default appearance of the MapPoint can be customized by using the MapPointTemplate property. The MapPointTemplate property is available in the ShapeFileLayer.
 
-About MapPointTemplate Property
+## About MapPointTemplate Property
 
 MapPointTemplate is a DataTemplate type, used to customize or override the default template of MapPoints.
+
+{% highlight xml %}
 
 [XAML]
 
@@ -51,15 +53,17 @@ MapPointTemplate is a DataTemplate type, used to customize or override the defau
 
 </syncfusion:SfMap>                     
 
+{% endhighlight %}
 
-
-MapPointPopup
+## MapPointPopup
 
 MapPointPopup is a popup, displayed when the point is moved on MapPoint. It shows additional information from the object bounded with the MapPoint. You can get the object from dbf file.
 
-MapPointPopupTemplate
+### MapPointPopupTemplate
 
 MapPointPopupTemplate is a DataTemplate used to expose the template for the MapPoint. 
+
+{% highlight xml %}
 
 [XAML]
 
@@ -199,9 +203,8 @@ MapPointPopupTemplate is a DataTemplate used to expose the template for the MapP
 
 </syncfusion:SfMap>
 
+{% endhighlight %}
 
-
-{{ '![](Map-Points_images/Map-Points_img1.png)' | markdownify }}
-{:.image }
+![](Map-Points_images/Map-Points_img1.png)
 
 

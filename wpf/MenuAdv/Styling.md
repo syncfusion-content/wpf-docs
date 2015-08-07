@@ -23,56 +23,48 @@ Styling can be applied to the MenuAdv control. This control supports the followi
 10. Transparent
 
 These styles can be applied to the control using XAML and C#. The following code example shows how to apply Office2007Blue style to the MenuAdv control.
+{% highlight xml %}
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:MenuAdv        syncfusion:SkinStorage.VisualStyle="Office2010Blue"/>    </td></tr>
-<tr>
-<td>
-[C#]SkinStorage.SetVisualStyle(menuAdvinstance, "Office2010Blue");</td></tr>
-</table>
+
+[XAML]
+<syncfusion:MenuAdv        syncfusion:SkinStorage.VisualStyle="Office2010Blue"/>    
+{% endhighlight %}
+{% highlight C# %}
+
+[C#]
+SkinStorage.SetVisualStyle(menuAdvinstance, "Office2010Blue");</td></tr>
+{% endhighlight %}
 
 
 The following illustrations show the MenuAdv control that is applied with different built-in styles.
 
-{{ '![](Styling_images/Styling_img1.png)' | markdownify }}
-{:.image }
+![](Styling_images/Styling_img1.png)
 
 
-{{ '![](Styling_images/Styling_img2.png)' | markdownify }}
-{:.image }
+![](Styling_images/Styling_img2.png)
 
 
-{{ '![](Styling_images/Styling_img3.png)' | markdownify }}
-{:.image }
+![](Styling_images/Styling_img3.png)
 
 
-{{ '![](Styling_images/Styling_img4.png)' | markdownify }}
-{:.image }
+![](Styling_images/Styling_img4.png)
 
 
-{{ '![](Styling_images/Styling_img5.png)' | markdownify }}
-{:.image }
+![](Styling_images/Styling_img5.png)
 
 
-{{ '![](Styling_images/Styling_img6.png)' | markdownify }}
-{:.image }
+![](Styling_images/Styling_img6.png)
 
 
-{{ '![](Styling_images/Styling_img7.png)' | markdownify }}
-{:.image }
+![](Styling_images/Styling_img7.png)
 
 
-{{ '![](Styling_images/Styling_img8.png)' | markdownify }}
-{:.image }
+![](Styling_images/Styling_img8.png)
 
 
-{{ '![](Styling_images/Styling_img9.png)' | markdownify }}
-{:.image }
+![](Styling_images/Styling_img9.png)
 
 
-{{ '![](Styling_images/Styling_img10.png)' | markdownify }}
-{:.image }
+![](Styling_images/Styling_img10.png)
 
 

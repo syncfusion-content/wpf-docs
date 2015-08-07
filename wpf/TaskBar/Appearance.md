@@ -22,12 +22,13 @@ _Property Table_
 <table>
 <tr>
 <td>
-{{ '*Property*' | markdownify }}</td><td>
-{{ '*Description*' | markdownify }}</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 VisualStyle</td><td>
-Sets the visual style for the TaskBar control. The options provided are as follows.BlendOffice2003Office2007BlueOffice2007BlackOffice2007SilverShinyBlueShinyRedSyncOrangeVS2010MetroTransparent</td></tr>
+Sets the visual style for the TaskBar control. The options provided are as follows. 
+{{ '* BlendOffice2003Office2007BlueOffice2007BlackOffice2007SilverShinyBlueShinyRedSyncOrangeVS2010MetroTransparent*' | markdownify }}</td></tr>
 </table>
 
 
@@ -74,7 +75,7 @@ This TaskBar that have a TaskBarItem.
 
 
 
-{% highlight c# %}
+{% highlight  %}
 [C#]
 
 

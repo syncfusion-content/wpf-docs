@@ -11,7 +11,7 @@ documentation: ug
 
 The paragraph alignment and indentation features allow you to define content in paragraphs. They can be added only inside the sections. We can keep _n_ number of paragraphs inside SectionAdv. Each paragraph may contain inline elements such as SpanAdv, HyperlinkAdv, ImageContainerAdv, and UIContainerAdv. 
 
-Properties
+## Properties
 
 
 
@@ -81,13 +81,30 @@ ParagraphAdv can be added directly to an application using the following code sn
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            <syncfusion:DocumentAdv>                <syncfusion:SectionAdv><syncfusion:ParagraphAdv TextAlignment="Center" AfterSpacing=".3" ListType="Bulleted">                    </syncfusion:ParagraphAdv>                </syncfusion:SectionAdv>            </syncfusion:DocumentAdv>        </syncfusion:RichTextBoxAdv></td></tr>
-<tr>
-<td>
-[C#]       RichTextBoxAdv richtext = new RichTextBoxAdv();       DocumentAdv document = new DocumentAdv();       SectionAdv section = new SectionAdv();       ParagraphAdv paragraph = new ParagraphAdv();       paragraph.TextAlignment = TextAlignment.Center;       paragraph.AfterSpacing = .3;       paragraph.ListType = ListType.Bulleted;       section.Blocks.Add(paragraph);       document.Sections.Add(section);       richtext.Document = document;</td></tr>
-</table>
+{% highlight xml %}
 
+[XAML]
+<syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            
+<syncfusion:DocumentAdv>                
+<syncfusion:SectionAdv><syncfusion:ParagraphAdv TextAlignment="Center" AfterSpacing=".3" ListType="Bulleted">                    
+</syncfusion:ParagraphAdv>                </syncfusion:SectionAdv>            
+</syncfusion:DocumentAdv>        
+</syncfusion:RichTextBoxAdv>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]      
+ RichTextBoxAdv richtext = new RichTextBoxAdv();      
+ DocumentAdv document = new DocumentAdv();      
+ SectionAdv section = new SectionAdv();      
+ ParagraphAdv paragraph = new ParagraphAdv();      
+ paragraph.TextAlignment = TextAlignment.Center;     
+ paragraph.AfterSpacing = .3;       
+ paragraph.ListType = ListType.Bulleted;       
+ section.Blocks.Add(paragraph);      
+ document.Sections.Add(section);      
+ richtext.Document = document;
+
+{% endhighlight %}
 

@@ -16,7 +16,7 @@ Data template can be customized for items and headers of the control. This secti
 You can customize how a business object is displayed as Tileview using the _ItemTemplate_ of _TileViewControl_. The following code example shows the usage of _ItemTemplate_.
 
 
-
+{% highlight xml %}
 [XAML]
 
    <syncfusion:TileViewControl ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   >
@@ -59,7 +59,7 @@ You can customize how a business object is displayed as Tileview using the _Item
 
         </syncfusion:TileViewControl>
 
-
+{% endhighlight %}
 
 
 
@@ -69,8 +69,8 @@ Implementing the above code will generate the following TileViewControl.
 
 
 
-{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)' | markdownify }}
-{:.image }
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
+
 
 
 
@@ -82,10 +82,10 @@ Using _ItemTemplateSelector_ feature, you can use different templates for the it
 1. Create a template selector in the code.
 
 
+   ~~~ cs
+     [C#]
 
-[C#]
-
-public class TileViewItemTemplateSelector : DataTemplateSelector
+     public class TileViewItemTemplateSelector : DataTemplateSelector
 
     {
 
@@ -117,7 +117,11 @@ public class TileViewItemTemplateSelector : DataTemplateSelector
 
         }
 
-    }
+     }
+
+
+   ~~~
+   {:.prettyprint}
 
 
 
@@ -126,16 +130,13 @@ public class TileViewItemTemplateSelector : DataTemplateSelector
 
 
 
+2. Define data templates in the Window’s resources.
 
+ 
+   ~~~ xml
+     [XAML]
 
-
-1. Define data templates in the Window’s resources.
-
-
-
-[XAML]
-
-<DataTemplate x:Key="CsBookTemplate">
+     <DataTemplate x:Key="CsBookTemplate">
 
             <Grid Margin="10">
 
@@ -176,30 +177,32 @@ public class TileViewItemTemplateSelector : DataTemplateSelector
             </Grid>
 
         </DataTemplate>
+   ~~~
+   {:.prettyprint}
 
 
 
 
-
-2.  Create the instance for the template selector in the Window’s resources.
-
+3.  Create the instance for the template selector in the Window’s resources.
 
 
-[XAML]
+    ~~~ xml
+     [XAML]
 
-<local:TileViewItemTemplateSelector x:Key="tileViewItemTemplateSelector"/>
-
-
-
-
-
-3. Use this template selector to choose a template for the TileViewControl.
+     <local:TileViewItemTemplateSelector x:Key="tileViewItemTemplateSelector"/>
+    ~~~
+    {:.prettyprint}
 
 
 
-[XAML]
 
-<syncfusion:TileViewControl ItemTemplateSelector="{StaticResource tileViewItemTemplateSelector}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  Margin="20" >
+4. Use this template selector to choose a template for the TileViewControl.
+
+
+   ~~~ xml
+     [XAML]
+
+     <syncfusion:TileViewControl ItemTemplateSelector="{StaticResource tileViewItemTemplateSelector}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  Margin="20" >
 
             <syncfusion:TileViewControl.ItemContainerStyle>
 
@@ -214,7 +217,8 @@ public class TileViewItemTemplateSelector : DataTemplateSelector
 
 
         </syncfusion:TileViewControl>
-
+   ~~~
+   {:.prettyprint}
 
 
 
@@ -223,8 +227,8 @@ This will generate the TileViewControl as follows.
 
 
 
-{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)' | markdownify }}
-{:.image }
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
+
 
 
 
@@ -236,10 +240,10 @@ You can customize the header of the TileViewItem using the _HeaderTemplate_. The
 1. Define _DataTemplate_ for _HeaderTemplate_.
 
 
+   ~~~ xml 
+     [XAML]
 
-[XAML]
-
-<DataTemplate x:Key="headerTemplate">
+     <DataTemplate x:Key="headerTemplate">
 
             <Grid >
 
@@ -258,7 +262,8 @@ You can customize the header of the TileViewItem using the _HeaderTemplate_. The
             </Grid>
 
         </DataTemplate>
-
+   ~~~
+   {:.prettyprint}
 
 
 
@@ -266,10 +271,10 @@ You can customize the header of the TileViewItem using the _HeaderTemplate_. The
 2. Set the _HeaderTemplate_ for the _TileViewControl_ to the above template.
 
 
+   ~~~ xml
+     [XAML]
 
-[XAML]
-
-<syncfusion:TileViewControl  HeaderTemplate="{StaticResource headerTemplate}" ItemTemplate="{StaticResource itemTemplate}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   >
+     <syncfusion:TileViewControl  HeaderTemplate="{StaticResource headerTemplate}" ItemTemplate="{StaticResource itemTemplate}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   >
 
 
 
@@ -277,7 +282,8 @@ You can customize the header of the TileViewItem using the _HeaderTemplate_. The
 
         </syncfusion:TileViewControl>
 
-
+   ~~~
+   {:.prettyprint}
 
 
 
@@ -285,8 +291,8 @@ This will generate the following TileViewControl.
 
 
 
-{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)' | markdownify }}
-{:.image }
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
+
 
 
 

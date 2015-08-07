@@ -11,15 +11,17 @@ documentation: ug
 
 A map can be bound with custom objects. For custom data binding, a .dbf file is not required. In Data Binding, an object is bound to a shape. In custom data binding, an object is bound to a point based on latitude and longitude values. CustomDataSourceis the API exposed in the custom data source. It is an IEnumerable type API. Each item in the CustomDataSource should have latitude and longitude properties with each mentioned name. Stick to to the following rules for custom data binding:
 
-Rule for Specifying the Latitude
+## Rule for Specifying the Latitude
 
 Latitude should specify its decimal value along with the first letter of direction. Since latitude is related to the North and South directions on a map, the values should end with N or S. For example: 10.12245N or 23.4566S.
 
-Rule for Specifying the Longitude
+## Rule for Specifying the Longitude
 
 The rule for longitude is similar to that of the latitude, apart from the directional value. Since longitude is related to the East and West directions on a map, the values should end with E or W. For example:34.345E or 56.345W.
 
 To show the custom data on the map, the CustomDataSourceTemplatemust be specified. CustomDataSourceTemplate is a DataTemplate type API used to expose the template for custom data.
+
+{% highlight C# %}
 
 [C#]
 
@@ -51,7 +53,9 @@ public class Weather
 
     }
 
+{% endhighlight %}
 
+{% highlight C# %}
 
 [C#]
 
@@ -124,7 +128,9 @@ public class ViewModel
 
 
     }
+{% endhighlight %}
 
+{% highlight xml %}
 
 
 [XAML]
@@ -280,10 +286,10 @@ public class ViewModel
             </Syncfusion:SfMap.Layers>
 
    </Syncfusion:SfMap >
+{% endhighlight %}
 
 
+![](Custom-Data-Binding_images/Custom-Data-Binding_img1.png)
 
-{{ '![](Custom-Data-Binding_images/Custom-Data-Binding_img1.png)' | markdownify }}
-{:.image }
 
 

@@ -13,40 +13,119 @@ Commands are a way to bind the UI to the logic that performs the action, which i
 
 The command target is the element on which the command is to be executed with regards to a RoutedCommand and routing of the Executed and CanExecute starts. This can be attained by using the CommandTarget property of MenuItemAdv.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 MenuAdv helps users handle any command that can be routed outside the boundaries of the logical tree and do not require handling logic in code behind.
 
-Using the Command Binding Support in an Application
+## Using the Command Binding Support in an Application
 
 To use the Command Binding support in an application users have to create a DelegateCommand class, which is obtained from the ICommand interface in the ViewModel sample class, which can be used to bind the command in the sample WPF application. The Command can be bound to MenuItemAdv by using the Command property and the target element can be bound to MenuItemAdv by using the CommandTarget property, as shown in the following code snippets.
 
-<table>
-<tr>
-<td>
-[XAML]<shared:MenuAdv x:Name="Menu">                <shared:MenuItemAdv Header="File">                    <shared:MenuItemAdv Header="New">                        <shared:MenuItemAdv.Icon>                            <Image Source="/MenuControlDemo;                                           component/Images/NewIcon.jpg"/>                        </shared:MenuItemAdv.Icon>                    </shared:MenuItemAdv>                    <shared:MenuItemAdv Command="Copy"                              CommandTarget="{Binding ElementName=textbox}">                        <shared:MenuItemAdv.Icon>                            <Image Source="/MenuControlDemo;                                          component/Images/CopyIcon.jpg"/>                        </shared:MenuItemAdv.Icon>                    </shared:MenuItemAdv>                    <shared:MenuItemAdv Command="Cut"                                CommandTarget="{Binding ElementName=textbox}">                        <shared:MenuItemAdv.Icon>                            <Image Source="/MenuControlDemo;                                          component/Images/CutIcon.jpg"/>                        </shared:MenuItemAdv.Icon>                    </shared:MenuItemAdv>                </shared:MenuItemAdv>                <shared:MenuItemAdv Header="Edit"/>                <shared:MenuItemAdv Header="View"/>                <shared:MenuItemAdv Header="Themes">                    <shared:MenuItemAdv IsCheckable="True" Header="Default"  CheckIconType="RadioButton" GroupName="Themes" IsChecked="True" CommandParameter="Default" Command="{Binding ElementName=root, Path=MyCommand}"/>                    <shared:MenuItemAdv IsCheckable="True" Header="Blend"  CheckIconType="RadioButton" GroupName="Themes" IsChecked="False" CommandParameter="Blend" Command="{Binding ElementName=root, Path=MyCommand}"/>                    <shared:MenuItemAdv IsCheckable="True" Header="Vs2010"  CheckIconType="RadioButton" GroupName="Themes" IsChecked="False" CommandParameter="Vs2010" Command="{Binding ElementName=root, Path=MyCommand}"/>                </shared:MenuItemAdv></shared:MenuAdv><TextBox x:Name="textbox"/></td></tr>
-<tr>
-<td>
-[C#]public partial class MainPage : UserControl{        public MainPage()        {            InitializeComponent();        }        private DelegateCommand myCommand;        public DelegateCommand MyCommand        {            get            {                if (myCommand == null)                {                    myCommand = new DelegateCommand(ApplyTheme);                }                return myCommand;            }        }        private void ApplyTheme(object visualStyle)        {            SkinManager.SetVisualStyle(this,             (Syncfusion.Windows.Controls.Theming.VisualStyle)(visualStyle));        }}</td></tr>
-<tr>
-<td>
-[C#]public class DelegateCommand : ICommand    {        public event EventHandler CanExecuteChanged;        readonly Predicate<Object> _canExecute = null;        readonly Action<Object> _executeAction = null;        public DelegateCommand(Action<object> executeAction, Predicate<Object> canExecute)        {            _executeAction = executeAction;            _canExecute = canExecute;        }        public DelegateCommand(Action<object> executeAction)            : this(executeAction, null)        {            _executeAction = executeAction;        }        public void UpdateCanExecute()        {            if (CanExecuteChanged != null)                CanExecuteChanged(this, new EventArgs());        }        public bool CanExecute(object parameter)        {            return _canExecute == null || _canExecute(parameter);        }        public void Execute(object parameter)        {            if (_executeAction != null)                _executeAction(parameter);            UpdateCanExecute();        }    }</td></tr>
-</table>
+{% highlight xml %}
+
+[XAML]
+<shared:MenuAdv x:Name="Menu">               
+ <shared:MenuItemAdv Header="File">           
+ <shared:MenuItemAdv Header="New">                
+ <shared:MenuItemAdv.Icon>                          
+ <Image Source="/MenuControlDemo; component/Images/NewIcon.jpg"/>                     
+ </shared:MenuItemAdv.Icon>                   
+ </shared:MenuItemAdv>                   
+ <shared:MenuItemAdv Command="Copy"     CommandTarget="{Binding ElementName=textbox}">          
+ <shared:MenuItemAdv.Icon>                            
+ <Image Source="/MenuControlDemo; component/Images/CopyIcon.jpg"/>              
+ </shared:MenuItemAdv.Icon>                   
+ </shared:MenuItemAdv>                   
+ <shared:MenuItemAdv Command="Cut"    CommandTarget="{Binding ElementName=textbox}">         
+ <shared:MenuItemAdv.Icon>                            
+ <Image Source="/MenuControlDemo;   component/Images/CutIcon.jpg"/>       
+ </shared:MenuItemAdv.Icon>                  
+ </shared:MenuItemAdv>               
+ </shared:MenuItemAdv>                
+ <shared:MenuItemAdv Header="Edit"/>    
+ <shared:MenuItemAdv Header="View"/>              
+ <shared:MenuItemAdv Header="Themes">                   
+ <shared:MenuItemAdv IsCheckable="True" Header="Default"  CheckIconType="RadioButton" GroupName="Themes" IsChecked="True" CommandParameter="Default" Command="{Binding ElementName=root, Path=MyCommand}"/>               
+ <shared:MenuItemAdv IsCheckable="True" Header="Blend"  CheckIconType="RadioButton" GroupName="Themes" IsChecked="False" CommandParameter="Blend" Command="{Binding ElementName=root, Path=MyCommand}"/>              
+ <shared:MenuItemAdv IsCheckable="True" Header="Vs2010"  CheckIconType="RadioButton" GroupName="Themes" IsChecked="False" CommandParameter="Vs2010" Command="{Binding ElementName=root, Path=MyCommand}"/>        
+ </shared:MenuItemAdv></shared:MenuAdv><TextBox x:Name="textbox"/>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]
+public partial class MainPage : UserControl
+{       
+ public MainPage()       
+ {            
+ InitializeComponent();       
+ }        
+ private DelegateCommand myCommand;       
+ public DelegateCommand MyCommand       
+ {            
+ get            
+ {               
+ if (myCommand == null)               
+ {                    
+ myCommand = new DelegateCommand(ApplyTheme);                
+ }                
+ return myCommand;           
+ }        
+ }        
+ private void ApplyTheme(object visualStyle)        
+ {            
+ SkinManager.SetVisualStyle(this,(Syncfusion.Windows.Controls.Theming.VisualStyle)(visualStyle));      
+ }
+ }
+{% endhighlight %}
+{% highlight C# %}
+
+[C#]
+public class DelegateCommand : ICommand  
+  {       
+  public event EventHandler CanExecuteChanged;       
+  readonly Predicate<Object> _canExecute = null;      
+ readonly Action<Object> _executeAction = null;       
+ public DelegateCommand(Action<object> executeAction, Predicate<Object> canExecute)        
+ {           
+ _executeAction = executeAction;          
+ _canExecute = canExecute;      
+ }        
+ public DelegateCommand(Action<object> executeAction) : this(executeAction, null)    
+ {            
+ _executeAction = executeAction;        
+ }        
+ public void UpdateCanExecute()        
+ {          
+ if (CanExecuteChanged != null)               
+ CanExecuteChanged(this, new EventArgs());    
+ }        
+ public bool CanExecute(object parameter)      
+ {        
+ return _canExecute == null || _canExecute(parameter);     
+ }        public void Execute(object parameter)       
+ {           
+ if (_executeAction != null)         
+ _executeAction(parameter);          
+ UpdateCanExecute();      
+ }   
+ }
+{% endhighlight %}
 
 
-{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Command.png](Command-Binding-and-Command-Target-Support_images/Command-Binding-and-Command-Target-Support_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Command.png](Command-Binding-and-Command-Target-Support_images/Command-Binding-and-Command-Target-Support_img1.png)
 
 
-{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Coomand1.png](Command-Binding-and-Command-Target-Support_images/Command-Binding-and-Command-Target-Support_img2.png)' | markdownify }}
-{:.image }
+
+![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Coomand1.png](Command-Binding-and-Command-Target-Support_images/Command-Binding-and-Command-Target-Support_img2.png)
 
 
-{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-Menu/CmdTarget.png](Command-Binding-and-Command-Target-Support_images/Command-Binding-and-Command-Target-Support_img3.png)' | markdownify }}
-{:.image }
+
+![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-Menu/CmdTarget.png](Command-Binding-and-Command-Target-Support_images/Command-Binding-and-Command-Target-Support_img3.png)
 
 
-Properties
+
+## Properties
 
 The properties for the Command Binding support are described in the following tabulation:
 
@@ -80,7 +159,7 @@ IInputElement(null)</td></tr>
 </table>
 
 
-Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

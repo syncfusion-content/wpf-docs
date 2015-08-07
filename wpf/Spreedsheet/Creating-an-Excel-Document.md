@@ -13,43 +13,55 @@ When you add the Spreadsheet control to the application, it will be loaded with 
 
 To create a new workbook, call the New method. New workbook will be created with three worksheets by default. The following code illustrates this:
 
+{%highlight c#%}
 
+[C#]
 
-<table>
-<tr>
-<td>
-[C#]spreadControl.New();</td></tr>
-<tr>
-<td>
- [VB]spreadControl.New()</td></tr>
-</table>
+spreadControl.New();
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+
+ [VB]
+ 
+ spreadControl.New()
+ 
+{%endhighlight%}
+
 
 
 You can also specify the number of worksheet you want to add in workbook by passing the sheet count to the New method. The following code illustrates this:
 
 
+{%highlight c#%}
 
-<table>
-<tr>
-<td>
-[C#]spreadControl.New(3);</td></tr>
-<tr>
-<td>
- [VB]spreadControl.New(3)</td></tr>
-</table>
+[C#]
+
+spreadControl.New(3);
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+
+ [VB]
+ 
+ spreadControl.New(3)
+
+ {%endhighlight%}
 
 
-Using Command
+### Using Command
 
 You can also use the NewCommand to create the Excel document. By default when you execute the NewCommand it will create the workbook with three worksheets and you can also specify the number of worksheet you want to add in workbook by passing the sheet count as Command parameter. 
 
 The following code illustrates how to bind the NewCommand__to a button: 
 
-
+{%highlight xml%}
 
 [XAML]
 
 <Button Command="{Binding Path=NewCommand}"/>
 
-
+{%endhighlight%}
 
