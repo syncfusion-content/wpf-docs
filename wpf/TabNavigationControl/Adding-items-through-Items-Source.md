@@ -30,7 +30,7 @@ XAML
 </syncfusion:TabNavigationControl>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 C#
 
 
@@ -172,7 +172,7 @@ ItemsSource="{Binding MyCollection}">
 </syncfusion:TabNavigationControl>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 C#
 
 public partial class MainPage : UserControl

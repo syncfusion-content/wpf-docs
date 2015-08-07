@@ -16,7 +16,7 @@ History support in AutoComplete means, reusage of the items which are already us
 Items can be added to the history using the AddToHistory(String str) and AddToHistory(Object obj) methods, only if that items are present in the data source used with the AutoComplete. Also it supports to save the history while closing the application and to load the history while opening the application using the SaveHistory() and LoadHistory() methods. 
 
 The following mentioned code example can be used to attain these functionalities.
-{% highlight cs %}
+{% highlight c# %}
 
 
 [C#]

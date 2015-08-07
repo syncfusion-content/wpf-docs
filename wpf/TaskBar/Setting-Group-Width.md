@@ -64,7 +64,7 @@ The following code snippet illustrates how to set the group width.
 
 
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

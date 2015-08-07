@@ -44,7 +44,7 @@ The following code sample shows how to create the hub tile from code-behind and 
 {% endhighlight %}
 
 
-{% highlight cs %}
+{% highlight c# %}
 
 
 [C#]
@@ -363,7 +363,7 @@ The HubTileService class provides the helper methods to freeze and unfreeze the 
 
 The following code sample can be used to freeze a particular hub tile.
 
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]
 
@@ -372,7 +372,7 @@ HubTileService.Freeze(hubTile);
 
 
 The following code sample can be used to unfreeze a particular hub tile.
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]
 
@@ -381,7 +381,7 @@ HubTileService.UnFreeze(hubTile);
 
 
 The following code sample can be used to freeze a particular group of hub tiles.
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]
 
@@ -390,7 +390,7 @@ HubTileService.Freeze("Group1");
 
 
 The following code sample can be used to unfreeze a particular group of hub tiles.
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]
 

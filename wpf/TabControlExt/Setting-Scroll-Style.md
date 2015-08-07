@@ -57,7 +57,7 @@ The following code snippet illustrates how to set the Tab Scroll style as "Exten
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 
@@ -117,7 +117,7 @@ This event is triggered when the TabScrollStyle property is changed.
 When the TabControlExt has many Tab Items, it is complicated to scroll the Tab Items in the Normal mode. In such cases, the Tab Scroll style is switched to the Extended mode. The following code illustrates how this is done.
 
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

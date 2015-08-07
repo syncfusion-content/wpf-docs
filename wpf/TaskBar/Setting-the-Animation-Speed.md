@@ -64,7 +64,7 @@ Use the following code snippet to set this property.
 
 
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 
@@ -84,7 +84,7 @@ TaskBar.SetSpeed(taskBar, 10);
 This method is used to get the animation speed, which controls the time taken to expand or collapse the TaskBarItems in the TaskBar. It has one argument, which returns the speed value of type, double.
 
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 
@@ -104,7 +104,7 @@ speed = TaskBar.GetSpeed(taskBar);
 This method is used to set the animation speed, which controls the time taken to expand or collapse the TaskBarItems in the TaskBar. It has two arguments. The first argument specifies the object, while the second argument specifies the value of speed of type double.
 
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

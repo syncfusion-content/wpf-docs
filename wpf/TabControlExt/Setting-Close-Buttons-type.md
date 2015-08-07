@@ -48,7 +48,7 @@ The following code snippet illustrates how to set the "Both" Close button mode i
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

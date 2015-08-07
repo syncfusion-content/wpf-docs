@@ -71,11 +71,12 @@ This TaskBar that have a TaskBarItem.
     </syncfusion:TaskBarItem>
 
 </syncfusion:TaskBar>
+
 {% endhighlight %}
 
 
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

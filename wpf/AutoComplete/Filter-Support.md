@@ -30,7 +30,7 @@ If the IsFilter property is set as True, once you enter text in the AutoComplete
 [XAML]<syncfusion:AutoComplete x:Name="AutoComplete1" IsFilter="true"/></td></tr>
 {% endhighlight %}
 
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsFilter = true;</td></tr>
 {% endhighlight %}

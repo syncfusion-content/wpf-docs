@@ -34,7 +34,7 @@ The following code example illustrates how different visual styles can be applie
 <syncfusion:AutoComplete Height="25" Width="200" syncfusion:SkinStorage.VisualStyle="Office2007Blue"/>
 {% endhighlight %}
 
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]
 SkinStorage.SetVisualStyle(autoComplete, "Office2007Blue");

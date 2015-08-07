@@ -69,7 +69,7 @@ This taskbar provides an UI similar to that of Windows XP.</TextBlock>
 {% endhighlight %}
 
 
-{% highlight  %}
+{% highlight c# %}
 
 [C#]
 

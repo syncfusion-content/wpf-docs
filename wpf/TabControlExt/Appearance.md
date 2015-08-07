@@ -67,7 +67,7 @@ The following code example illustrates how to set the visual style for the TabCo
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

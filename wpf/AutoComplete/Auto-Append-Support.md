@@ -27,9 +27,10 @@ If the IsAutoAppend property is set as True, once you enter the text the AutoCom
 
 [XAML]
 <syncfusion:AutoComplete x:Name="AutoComplete1" IsAutoAppend="true"/>
+
 {% endhighlight %}
 
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]
 AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsAutoAppend = true;

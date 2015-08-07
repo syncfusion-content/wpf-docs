@@ -32,7 +32,7 @@ Use the following code snippet to set the color for the Drag Marker.
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

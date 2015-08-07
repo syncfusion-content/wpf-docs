@@ -48,7 +48,7 @@ Here is the code snippet to set the Tab Scroll Button Visibility as "Visible".
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

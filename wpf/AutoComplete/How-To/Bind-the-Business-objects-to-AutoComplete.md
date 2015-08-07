@@ -28,7 +28,7 @@ You can bind the Business objects to the AutoComplete as mentioned below.
 </syncfusion:AutoComplete></td></tr>
 {% endhighlight %}
 
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]
 public class EmployeeList    

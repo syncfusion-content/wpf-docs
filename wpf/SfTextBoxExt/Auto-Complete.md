@@ -20,7 +20,7 @@ For illustration, let us create a textbox, which will populate a list of employe
 The Employee model looks as shown below:
 
 
-{% highlight  %}
+{% highlight c# %}
 [C#] 
 
 
@@ -42,7 +42,7 @@ The Employee model looks as shown below:
 Create a collection attribute,
 
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 
@@ -66,7 +66,7 @@ Create a collection attribute,
 Populate the collection with items,
 
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 
@@ -769,7 +769,7 @@ The control return all possible matches based on the Filter property. Filter is 
 {% endhighlight %}
 
 
-{% highlight  %}
+{% highlight c# %}
 [C#]    
 
 
@@ -806,7 +806,7 @@ The control return all possible matches based on the Filter property. Filter is 
 
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 autoComplete.Filter = MyFilter;

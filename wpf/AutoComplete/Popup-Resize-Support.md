@@ -21,7 +21,7 @@ You can use CanResizePopup property to attain this functionality by setting the 
 <syncfusion:AutoComplete x:Name="AutoComplete1" CanResizePopup ="true" />
 {% endhighlight %}
 
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]
 AutoComplete autoComplete1 = new AutoComplete();

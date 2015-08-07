@@ -66,7 +66,7 @@ To set the group padding, use the below code
 {% endhighlight %}
 
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

@@ -35,7 +35,7 @@ TabSplitter contains one or more pages that are defined as TabSplitter Items. Us
 </syncfusion:TabSplitter>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 
@@ -151,7 +151,7 @@ TabSplitter Items contains a collection of pages. These pages are defined as Pan
 </syncfusion:TabSplitter>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 
@@ -287,7 +287,7 @@ You can split the pages in the TabSplitter Item by using the SplitterPage. The f
 </syncfusion:TabSplitter>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 
@@ -423,7 +423,7 @@ You can collapse or expand the Bottom Panel by using the IsCollapsedBottomPanel 
 
 
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 
@@ -499,7 +499,7 @@ You can set the height of the BottomPanel in TabSplitter using BottomPanelHeight
  </syncfusion:TabSplitter>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

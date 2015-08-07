@@ -57,7 +57,7 @@ Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.Wpf"
 
 
 4. Add Syncfusion.Tools.WPF reference in XAML and C# code as follows.
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]
 
@@ -66,7 +66,7 @@ using Syncfusion.Windows.Tools.Controls;
 
 
 5. Click and open the C# file. Add AutoComplete to the application.
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]
 
@@ -147,7 +147,7 @@ The AutoComplete control provides full Blend support. Here are the step-by-step 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)
+![](Getting-Started_images/Getting-Started_img9.png)
 
 
 
@@ -157,7 +157,7 @@ The AutoComplete control provides full Blend support. Here are the step-by-step 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img10.png)
+![](Getting-Started_images/Getting-Started_img10.png)
 
 
 
@@ -196,7 +196,7 @@ The AutoComplete control provides full Blend support. Here are the step-by-step 
 <syncfusion:AutoComplete x:Name="AutoComplete1" Source="Custom” CustomSource="{StaticResource Src}"/>
 {% endhighlight %}
 
-{% highlight cs %}
+{% highlight c# %}
 
 
 [C#]

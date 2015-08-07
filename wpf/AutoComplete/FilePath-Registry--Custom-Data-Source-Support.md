@@ -52,7 +52,7 @@ AutoComplete can be used with different kinds of Data Sources using the Source p
 {% endhighlight %}
 
 
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]
 AutoComplete autoComplete1 = new AutoComplete();

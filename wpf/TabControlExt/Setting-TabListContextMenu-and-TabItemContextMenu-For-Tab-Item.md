@@ -50,7 +50,7 @@ To enable the Tab Item context menu, use the below code.
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

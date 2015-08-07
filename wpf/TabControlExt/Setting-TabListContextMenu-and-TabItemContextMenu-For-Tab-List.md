@@ -42,7 +42,7 @@ The headers of all the Tab Items are displayed as the menu items of the Tab List
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

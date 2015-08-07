@@ -62,7 +62,7 @@ After adding the above namespace, the ComboBoxAdv can be added to the applicatio
 To add ComboBoxAdv using C#, first include the following namespace in C#.
 
 
-{% highlight cs %}
+{% highlight c# %}
 
 
 [C#]
@@ -76,7 +76,7 @@ using Syncfusion.Windows.Tools.Controls;
 After adding the above namespace, the ComboBoxAdv can be added to the application as shown below:
 
 
-{% highlight cs %}
+{% highlight c# %}
 
 
 [C#]

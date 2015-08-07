@@ -34,7 +34,7 @@ The TabItemExt is added to the TabControlExt by using either XAML or C# coding. 
 [C#]
 
 
-{% highlight  %}
+{% highlight c# %}
 // Creating instance of the TabControlExt control
 
 TabControlExt tabControlExt = new TabControlExt();
@@ -122,7 +122,7 @@ To add content to the TabItemExt, use the below code snippet.
 </syncfusion:TabControlExt>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

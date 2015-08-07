@@ -80,7 +80,7 @@ XAML
 
 
 
-{% highlight  %}
+{% highlight c# %}
 C#
 
 TabNavigationControl tabNavControl = new TabNavigationControl();

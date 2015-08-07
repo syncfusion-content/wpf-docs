@@ -25,7 +25,7 @@ You can use the DisplayMemberPath property to set the value for items that needs
 </syncfusion:AutoComplete>
 {% endhighlight %}
 
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]
 public class EmployeeList

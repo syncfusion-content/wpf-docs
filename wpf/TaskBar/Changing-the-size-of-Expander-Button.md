@@ -56,7 +56,7 @@ To set the size of the Expander button, use the below code
 
 
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

@@ -75,7 +75,7 @@ TaskBar control is created by using either XAML or C# code. The following lines 
 </syncfusion:TaskBar>
 {% endhighlight %}
 
-{% highlight  %}
+{% highlight c# %}
 [C#]
 
 

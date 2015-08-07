@@ -171,7 +171,7 @@ AllowMultiSelect property can be added directly to an application using the foll
 <syncfusion:ComboBoxAdv AllowMultiSelect="True"></syncfusion:ComboBoxAdv></td></tr>
 {% endhighlight %}
 
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]
 ComboBoxAdv comboBox = new ComboBoxAdv();
@@ -221,7 +221,7 @@ DefaultText property can be added directly to an application in the following wa
 <syncfusion:ComboBoxAdv DefaultText="..Choose Items.."></syncfusion:ComboBoxAdv>
 {% endhighlight %}
 
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]
 ComboBoxAdv comboBox = new ComboBoxAdv();       
@@ -269,7 +269,7 @@ Delimiter string customization can be added directly to an application using the
 <syncfusion:ComboBoxAdv SelectedValueDelimiter="#"></syncfusion:ComboBoxAdv>
 {% endhighlight %}
 
-{% highlight cs %}
+{% highlight c# %}
 
 [C#]
 ComboBoxAdv comboBox = new ComboBoxAdv();     

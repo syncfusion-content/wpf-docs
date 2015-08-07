@@ -45,7 +45,7 @@ The StringMode property will be used to attain this functionality by setting its
 <syncfusion:AutoComplete x:Name="AutoComplete3" StringMode="AnyChar"/>
 {% endhighlight %}
 
-{% highlight cs %}
+{% highlight c# %}
 
 
 [C#]
@@ -56,6 +56,7 @@ this.autoComplete2.StringMode = StringMode.IndexBased;
 this.autoComplete2.StringModeIndex = 2;
 AutoComplete autoComplete3 = new AutoComplete();
 this.autoComplete3.StringMode = StringMode.AnyChar;
+
 {% endhighlight %}
 
 

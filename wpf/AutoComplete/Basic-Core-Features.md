@@ -24,7 +24,7 @@ AutoComplete supports basic core features which are listed as follows.
 
 In the SelectionChanged event the SelectedIndex, SelectedItem & SelectedValue properties can be used in the application to get these property values. The properties and events listed can be used in the application as mentioned below.
 
-{% highlight cs %}
+{% highlight c# %}
 
 
 [C#]
