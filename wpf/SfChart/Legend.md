@@ -11,13 +11,13 @@ documentation: ug
 
 Legend contains a list of ChartSeries, TechnicalIndicators, and Trendlines that appear in a chart. The following properties are used to customize the appearance of the ChartLegend.
 
-_Legend List_
+Legend List
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 DockPosition</td><td>
@@ -71,9 +71,10 @@ Gets or sets the double value that represents the legend icon(s) width.</td></tr
 IconHeight</td><td>
 Gets or sets the double value that represents that  legend icon(s) height.</td></tr>
 </table>
+
 The following code example shows how to create a simple legend. For sample data, refer to the data section in the code example of [Line Series](http://help.syncfusion.com/UG/winrt/Documents/lineseries.htm).
 
-[XAML]
+{% highlight xml %}
 
  <syncfusion:SfChart x:Name="ColumnChart">
 
@@ -114,30 +115,31 @@ The following code example shows how to create a simple legend. For sample data,
                          XBindingPath="Category" YBindingPath="Value"/>
 
         </syncfusion:SfChart>  
+{% endhighlight %}
 
 The following screenshot illustrates a chart with a simple legend.
 
-{{ '![C:/Users/ApoorvahR/Desktop/1.png](Legend_images/Legend_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/1.png](Legend_images/Legend_img1.png)
 
 
-Each LegendItem contains the following parts:
 
-Icon- You can set the icon using the LegendIcon property available in each series. You can customize height and width of an icon symbol using the IconWidth and IconHeight properties available in ChartLegend. You can also show or collapse the icon symbol using the IconVisibility property in ChartLegend.
+###Each LegendItem contains the following parts:
 
-Label- You can set the label using the Label property available in each series.
+####Icon- You can set the icon using the LegendIcon property available in each series. You can customize height and width of an icon symbol using the IconWidth and IconHeight properties available in ChartLegend. You can also show or collapse the icon symbol using the IconVisibility property in ChartLegend.
 
-CheckBox- It is used to show or collapse the associated series. By default, the CheckBox is collapsed. You can enable it by setting CheckBoxVisibility property in ChartLegend.
+####Label- You can set the label using the Label property available in each series.
 
-> _Note: Usually, a legend item provides information about a series. However, for series like PieSeries, each legend item provides information about a single data point._
+####CheckBox- It is used to show or collapse the associated series. By default, the CheckBox is collapsed. You can enable it by setting CheckBoxVisibility property in ChartLegend.
 
-Positioning
+Note: Usually, a legend item provides information about a series. However, for series like PieSeries, each legend item provides information about a single data point.
+
+###Positioning
 
 By default, the ChartLegend is positioned at the top of the chart. You can also change the position to left, right, or bottom using the DockPosition property. This can be used to position it at any location relative to the chart. To position the ChartLegend at any location, you need to first set DockPosition to Float and then provide its relative position using the OffsetX and OffsetY properties.
 
 The following code example shows how to create a ChartLegend for a chart.
 
-[XAML]
+{% highlight xml %}
 
         <syncfusion:SfChart.Legend>
 
@@ -146,14 +148,15 @@ The following code example shows how to create a ChartLegend for a chart.
                       CheckBoxVisibility="Visible"/>
 
         </syncfusion:SfChart.Legend>
+{% endhighlight %}
 
-Multiple Legends
+###Multiple Legends
 
 The SfChart control supports showing the legend in multiple panels, to view the legend clearly when multiple areas and greater numbers of chart series are present. Also, you can place the legend inside or outside of the chart area. To have multiple legends in a single chart, an instance for ChartLegendCollection needs to be created.
 
 The following code example shows how to create multiple legends in a single chart. For sample data, please refer to the data section in the code sample of [Line Series.](http://help.syncfusion.com/ug/wpf/)
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfChart Height="500" Width="600" x:Name="LineChart">
 
@@ -228,12 +231,12 @@ The following code example shows how to create multiple legends in a single char
 
 
         </syncfusion:SfChart >
+{% endhighlight %}
 
 
 
 
-
-[C#]
+{% highlight C# %}
 
     public class ChartViewModel
 
@@ -287,15 +290,16 @@ The following code example shows how to create multiple legends in a single char
 
     }
 
+{% endhighlight %}
 
 
 The following screenshot shows a chart with multiple legends.
 
 {{ '![](Legend_images/Legend_img2.png)' | markdownify }}
-{:.image }
 
 
-_Note: You can change the legend visibility from chart series by using VisibilityOnLegend property_.
+
+Note: You can change the legend visibility from chart series by using VisibilityOnLegend property
 
 
 

@@ -13,7 +13,8 @@ Chart data can either be sorted or unsorted. You can turn on the Sorting feature
 
 The following code example explains how to perform the Sorting operation in Chart.
 
-[XAML]
+{% highlight xml %}
+
 
 <syncfusion:LineSeries Label="Series1" IsSortData="True" SortBy="X"                 
 
@@ -26,16 +27,16 @@ The following code example explains how to perform the Sorting operation in Char
             </syncfusion:SfChart>
 
 
+{% endhighlight %}
 
 
+![C:/Users/rachel/Desktop/wpf/sshot-64.png](Sorting_images/Sorting_img1.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-64.png](Sorting_images/Sorting_img1.png)' | markdownify }}
-{:.image }
 
 
 The following code example and screenshot demonstrate Sorting in Ascending order.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -46,8 +47,8 @@ The following code example and screenshot demonstrate Sorting in Ascending order
           XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"/>
 
 </syncfusion:SfChart>
+{% endhighlight %}
+![C:/Users/rachel/Desktop/wpf/sshot-65.png](Sorting_images/Sorting_img2.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-65.png](Sorting_images/Sorting_img2.png)' | markdownify }}
-{:.image }
 
 

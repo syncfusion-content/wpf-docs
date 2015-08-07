@@ -13,20 +13,20 @@ The RangeAdornerBackground property is used to set the background color of the r
 
 
 
-{{ '![](Range-Adorner-Background_images/Range-Adorner-Background_img1.png)' | markdownify }}
-{:.image }
+![](Range-Adorner-Background_images/Range-Adorner-Background_img1.png)
+
 
 
 Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 RangeAdornerBackground</td><td>
@@ -42,10 +42,10 @@ The RangeAdornerBackground property must be set either in XAML or the code file.
 <table>
 <tr>
 <td>
-[XAML]  RangeAdornerBackground="LightGreen"</td></tr>
+{% highlight xml %}  RangeAdornerBackground="LightGreen" {% endhighlight %} </td></tr>
 <tr>
 <td>
-[C#]  control.RangeAdornerBackground = Brushes.LightGreen;</td></tr>
+{% highlight C# %}  control.RangeAdornerBackground = Brushes.LightGreen; {% endhighlight %} </td></tr>
 </table>
 
 

@@ -13,8 +13,8 @@ This section guides you on getting started with the DropDownButtonAdv control. I
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 ## Adding DropDownButtonAdv to an application
@@ -29,26 +29,26 @@ The following code explains how to add a DropDownButtonAdv control using XAML:
 
 
 
- [XAML]
+{% highlight xml %}
 
 <sync:DropDownButtonAdv Label="Hello World"/>
 
-
+{% endhighlight %}
 
 The DropDownButtonAdv control can be created using C# as follows:
 
 
 
- [C#]
+{% highlight C# %}
 
 DropDownButtonAdv button = new DropDownButtonAdv()
 
 button.Label = "Hello World";
 
+{% endhighlight %}
 
+![](Getting-Started_images/Getting-Started_img2.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
 
 
 ### Setting Size Mode
@@ -59,7 +59,7 @@ The size mode of the DropDownButtonAdv can be easily modified using the property
 * Normal
 * Large
 
-Small Mode
+###Small Mode
 
 When the SizeMode is set to Small, the icon of the DropDownButtonAdv control is displayed without the label.
 
@@ -70,18 +70,18 @@ Use the following code snippet to set the SizeMode to Small:
 <table>
 <tr>
 <td>
- [XAML]<sync:DropDownButtonAdv SizeMode="Small" Label="Hello World"/></td></tr>
+{% highlight xml %} <sync:DropDownButtonAdv SizeMode="Small" Label="Hello World"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
- [C#]DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;</td></tr>
+{% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small; {% endhighlight %} </td></tr>
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
-Normal Mode
+
+###Normal Mode
 
 The DropDownButtonAdv control retains the default appearance, when the SizeMode is set to Normal, 
 
@@ -92,18 +92,18 @@ Use the following code snippet to set the SizeMode to Normal:
 <table>
 <tr>
 <td>
- [XAML]<sync:DropDownButtonAdv SizeMode="Normal" Label="Hello World"/></td></tr>
+{% highlight xml %} <sync:DropDownButtonAdv SizeMode="Normal" Label="Hello World"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
- [C#]DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;</td></tr>
+{% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal; {% endhighlight %} </td></tr>
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
-Large Mode
+
+###Large Mode
 
 When the SizeMode is set to Large, the DropDownButtonAdv control is displayed with large icon and provides multiline support.
 
@@ -114,15 +114,15 @@ Use the following code snippet to set the SizeMode to Large:
 <table>
 <tr>
 <td>
- [XAML]<sync:DropDownButtonAdv SizeMode="Large" Label="Hello World"/></td></tr>
+{% highlight xml %} <sync:DropDownButtonAdv SizeMode="Large" Label="Hello World"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
- [C#]DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large;</td></tr>
+{% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large; {% endhighlight %} </td></tr>
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 ### Setting Image
@@ -139,15 +139,15 @@ The SmallIcon property can be set as follows:
 <table>
 <tr>
 <td>
- [XAML]<sync:DropDownButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/></td></tr>
+{% highlight xml %} <sync:DropDownButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
- [C#]DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
+{% highlight C# %}  DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;button.SmallIcon = new BitmapImage(new Uri("employee.png")); {% endhighlight %} </td></tr>
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
+
 
 
 The SmallIcon property can be set even when the SizeMode is Normal:
@@ -157,15 +157,15 @@ The SmallIcon property can be set even when the SizeMode is Normal:
 <table>
 <tr>
 <td>
- [XAML]<sync:DropDownButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/></td></tr>
+{% highlight xml %} <sync:DropDownButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-[C#]DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
+{% highlight C# %}  DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;button.SmallIcon = new BitmapImage(new Uri("employee.png")); {% endhighlight %} </td></tr>
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 The LargeIcon property can be set as follows:
@@ -175,15 +175,15 @@ The LargeIcon property can be set as follows:
 <table>
 <tr>
 <td>
- [XAML]<sync:DropDownButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/></td></tr>
+{% highlight xml %} <sync:DropDownButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
- [C#]DropDownButtonAdv button = new DropDownButtonAdv();button.Label = "Hello World";button.SizeMode = SizeMode.Large;button.LargeIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
+{% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv();button.Label = "Hello World";button.SizeMode = SizeMode.Large;button.LargeIcon = new BitmapImage(new Uri("employee.png")); {% endhighlight %} </td></tr>
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
+
 
 
 ### Adding Items to DropDownButtonAdv
@@ -197,32 +197,32 @@ Adding DropDownMenuItems to DropDownButtonAdv:
 <table>
 <tr>
 <td>
- [XAML]<shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">   <shared:DropDownMenuGroup>       <shared:DropDownMenuItem Header="Menu Item 1"/>       <shared:DropDownMenuItem Header="Menu Item 2"/>       <shared:DropDownMenuItem Header="Menu Item 3"/>   </shared:DropDownMenuGroup></shared:DropDownButtonAdv></td></tr>
+{% highlight xml %} <shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">   <shared:DropDownMenuGroup>       <shared:DropDownMenuItem Header="Menu Item 1"/>       <shared:DropDownMenuItem Header="Menu Item 2"/>       <shared:DropDownMenuItem Header="Menu Item 3"/>   </shared:DropDownMenuGroup></shared:DropDownButtonAdv> {% endhighlight %} </td></tr>
 <tr>
 <td>
- [C#]DropDownButtonAdv button = new DropDownButtonAdv();DropDownMenuGroup menu = new DropDownMenuGroup();DropDownMenuItem menuItem1 = new DropDownMenuItem();DropDownMenuItem menuItem2 = new DropDownMenuItem();DropDownMenuItem menuItem3 = new DropDownMenuItem();menu.Items.Add(menuItem1);menu.Items.Add(menuItem2);menu.Items.Add(menuItem3);button.Content = menu;</td></tr>
+{% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv();DropDownMenuGroup menu = new DropDownMenuGroup();DropDownMenuItem menuItem1 = new DropDownMenuItem();DropDownMenuItem menuItem2 = new DropDownMenuItem();DropDownMenuItem menuItem3 = new DropDownMenuItem();menu.Items.Add(menuItem1);menu.Items.Add(menuItem2);menu.Items.Add(menuItem3);button.Content = menu; {% endhighlight %} </td></tr>
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
+
 
 
 ## DropDownButtonAdv Members
 
 ### Properties
 
-_Property table_
+Property table
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Type</td><td>
-Value it accepts</td><td>
-Description</td><td>
-Default Value</td><td>
-Reference Link</td></tr>
+<th>
+Name</th><th>
+Type</th><th>
+Value it accepts</th><th>
+Description</th><th>
+Default Value</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 Label</td><td>
@@ -264,18 +264,19 @@ Value which represents whether the Label displayed in two line or not.</td><td>
 True</td><td>
 Multiline Support</td></tr>
 </table>
+
 ### Events
 
-_Events table_
+Events table
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Event Type</td><td>
-Event Args Parameter</td><td>
-Description</td><td>
-Reference Link</td></tr>
+<th>
+Name</th><th>
+Event Type</th><th>
+Event Args Parameter</th><th>
+Description</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 DropDownOpened</td><td>

@@ -13,17 +13,17 @@ The steps to add items to the HierarchyNavigator in XAML are as follows:
 
 1. Create a HierarchyNavigator control.
 
-XAML
+{% highlight xml %}
 
 
 
 <syncfusion:HierarchyNavigator x:Name="hierarchyNavigatorcontrol1" VerticalAlignment="Top" Height="30" Width="600">
-
+{% endhighlight %}
 
 
 2. Add the HierarchyNavigatorItem to the HierarchyNavigator control.
 
-XAML
+{% highlight xml %}
 
 
 
@@ -55,11 +55,11 @@ XAML
 
 </syncfusion:HierarchyNavigator>
 
-
+{% endhighlight %}
 
 3. The snippet below demonstrates the steps to add items to a HierarchyNavigator control in code:
 
-C#
+{% highlight C# %}
 
 
 
@@ -113,12 +113,12 @@ hierarchyNavigatorItem1.Items.Add(hierarchyNavigatorItem11);
 
 hierarchyNavigator1.Items.Add(hierarchyNavigatorItem1);
 
-
+{% endhighlight %}
 
 The following figure shows the items added in code displayed on the interface.
 
-{{ '![](Populating-Data_images/Populating-Data_img1.png)' | markdownify }}
-{:.image }
+![](Populating-Data_images/Populating-Data_img1.png)
+
 
 
 ## Data binding
@@ -133,7 +133,7 @@ The steps to bind to a Business Object collection are as follows:
 
 1. Create a class named HierarchyItem.
 
-C#
+{% highlight C# %}
 
 
 
@@ -193,13 +193,13 @@ public class HierarchyItem
 
 }
 
-
+{% endhighlight %}
 
 2. Create a collection for ItemsSource to bind with.
 
 
 
-C#
+{% highlight C# %}
 
 
 
@@ -237,13 +237,13 @@ public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 
 }
 
-
+{% endhighlight %}
 
 3. In XAML, bind the collections to the ItemsSource property of the HierarchyNavigator control.
 
 
 
-XAML
+{% highlight xml %}
 
 
 
@@ -266,13 +266,13 @@ XAML
     </syncfusion:HierarchyNavigator.ItemTemplate>
 
 </syncfusion:HierarchyNavigator> 
-
+{% endhighlight %}
 
 
 The following screenshot shows the items added in code displayed on the interface.
 
-{{ '![](Populating-Data_images/Populating-Data_img2.png)' | markdownify }}
-{:.image }
+![](Populating-Data_images/Populating-Data_img2.png)
+
 
 
 ### Binding XML data
@@ -281,7 +281,7 @@ To bind XML data to a HierarchyNavigator control, convert the XML to a collectio
 
 The XML displayed below is used in this example (attached in the sample project named HierarchyItems.xml).
 
-XML
+{% highlight xml %}
 
 
 
@@ -318,14 +318,14 @@ XML
   </category>
 
 </categories>
-
+{% endhighlight %}
 
 
 The steps to bind XML data to a HierarchyNavigator control are as follows:
 
 1. Create a separate class that represents the node in an XML document. In this example, a class named Category is created.
 
-C#
+{% highlight C# %}
 
 
 
@@ -341,11 +341,11 @@ public class HierarchyItem
 
 }
 
-
+{% endhighlight %}
 
 2. Convert the XML data to a collection, and then bind the collection to the ItemsSource property of HierarchyNavigator.
 
-C#
+{% highlight C# %}
 
 
 
@@ -417,11 +417,11 @@ public partial class MainPage : UserControl
 
 }
 
-
+{% endhighlight %}
 
 3. The code for the HierarchyNavigator is shown below. Declare HierarchicalDataTemplate, because the data is in a hierarchical structure. Refer Template Customizing.
 
-XAML
+{% highlight xml %}
 
 
 
@@ -439,12 +439,12 @@ XAML
 
 </syncfusion:HierarchyNavigator>
 
-
+{% endhighlight %}
 
 The image displayed below shows the output of the above code—items bound to XML data.
 
-{{ '![](Populating-Data_images/Populating-Data_img3.png)' | markdownify }}
-{:.image }
+![](Populating-Data_images/Populating-Data_img3.png)
+
 
 
 ### Binding to WCF Service
@@ -456,8 +456,8 @@ The steps to bind XML data through WCF services are as follows:
 1. Create an XML and a class object. Refer the XML data-binding class and the XML used in the 
 2. The following screenshot shows the items added in code displayed on the interface.
 
-{{ '![](Populating-Data_images/Populating-Data_img4.png)' | markdownify }}
-{:.image }
+![](Populating-Data_images/Populating-Data_img4.png)
+
 
 
 3. Binding XML data section.
@@ -466,7 +466,7 @@ The steps to bind XML data through WCF services are as follows:
 
 
 
-C#
+{% highlight C# %}
 
 
 
@@ -532,11 +532,11 @@ public class Service1
 
 }
 
-
+{% endhighlight %}
 
 To connect WCF services with the sample application, use the code snippets displayed below. Also refer Binding data with WCF Service in the How To section.
 
-C#
+{% highlight C# %}
 
 
 
@@ -619,8 +619,9 @@ namespace WCFServicesInHierarchy
     }
 
 }
+{% endhighlight %}
 
-XAML
+{% highlight xml %}
 
 
 
@@ -649,11 +650,11 @@ x:Name="Window" Title="MainWindow" UseLayoutRounding="True" Width="640" Heig
     </Grid>
 </Window>
 
-
+{% endhighlight %}
 
 The image displayed below shows the output of the above code—items bound to XML data.
 
-{{ '![](Populating-Data_images/Populating-Data_img5.png)' | markdownify }}
-{:.image }
+![](Populating-Data_images/Populating-Data_img5.png)
+
 
 

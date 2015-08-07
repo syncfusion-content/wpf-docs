@@ -18,63 +18,64 @@ The DropDown Direction can be changed using the property DropDirection. The Drop
 * TopLeft
 * TopRight
 
-The default value is BottomLeft.
+###The default value is BottomLeft.
 
 The DropDirection property can be set as follows:
 
-To set BottomLeft DropDirection
+###To set BottomLeft DropDirection
 
 
 
- [XAML]
+{% highlight xml %}
 
 <sync:DropDownButtonAdv  DropDirection="BottomLeft"/>
+{% endhighlight %}
+
+
+![](Drop-Direction_images/Drop-Direction_img1.png)
 
 
 
-{{ '![](Drop-Direction_images/Drop-Direction_img1.png)' | markdownify }}
-{:.image }
-
-
-To set BottomRight Drop Direction
+###To set BottomRight Drop Direction
 
 
 
- [XAML]
+{% highlight xml %}
 
 <sync:DropDownButtonAdv  DropDirection="BottomRight"/>
+{% endhighlight %}
+
+
+![](Drop-Direction_images/Drop-Direction_img2.png)
 
 
 
-{{ '![](Drop-Direction_images/Drop-Direction_img2.png)' | markdownify }}
-{:.image }
-
-
-To set Right Drop Direction
+###To set Right Drop Direction
 
 
 
- [XAML]
+{% highlight xml %}
 
 <sync:DropDownButtonAdv  DropDirection="Right"/>
 
+{% endhighlight %}
 
 
-{{ '![](Drop-Direction_images/Drop-Direction_img3.png)' | markdownify }}
-{:.image }
-
-
-To set Left Drop Direction
+![](Drop-Direction_images/Drop-Direction_img3.png)
 
 
 
- [XAML]
+###To set Left Drop Direction
+
+
+
+{% highlight xml %}
 
 <sync:DropDownButtonAdv  DropDirection="Left"/>
+{% endhighlight %}
 
 
+![](Drop-Direction_images/Drop-Direction_img4.png)
 
-{{ '![](Drop-Direction_images/Drop-Direction_img4.png)' | markdownify }}
-{:.image }
 
 

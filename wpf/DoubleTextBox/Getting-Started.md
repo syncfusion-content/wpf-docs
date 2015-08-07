@@ -13,14 +13,14 @@ documentation: ug
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 ## DoubleTextBox Members
@@ -29,17 +29,17 @@ DoubleTextBox exposes the following members:
 
 ### Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Type</td><td>
-Value it Accepts</td><td>
-Description</td><td>
-Default Value</td><td>
-Reference Link</td></tr>
+<th>
+Name</th><th>
+Type</th><th>
+Value it Accepts</th><th>
+Description</th><th>
+Default Value</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 ApplyNegativeForeground</td><td>
@@ -305,17 +305,18 @@ Gets or sets the ZeroColor property.</td><td>
 Green</td><td>
 ZeroColor</td></tr>
 </table>
+
 ### Methods
 
-_Methods table_
+Methods table
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td><td>
-Return Type</td><td>
-Overloads</td></tr>
+<th>
+Name</th><th>
+Description</th><th>
+Return Type</th><th>
+Overloads</th></tr>
 <tr>
 <td>
 Copy()</td><td>
@@ -335,18 +336,19 @@ Selects all the content of the DoubleTextBox.</td><td>
 Void</td><td>
 </td></tr>
 </table>
+
 ### Events
 
-_Events table_
+Events table
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Event Type</td><td>
-Event Args Parameter</td><td>
-Description</td><td>
-Reference Link</td></tr>
+<th>
+Name</th><th>
+Event Type</th><th>
+Event Args Parameter</th><th>
+Description</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 ValueChanged</td><td>
@@ -390,6 +392,7 @@ RoutedEventArgs</td><td>
 Occurs when the text selection has changed.</td><td>
 SelectionChanged</td></tr>
 </table>
+
 ## Creating a DoubleTextBox Control
 
 DoubleTextBox can be added to the application by using Visual Studio and Microsoft Expression Blend.
@@ -403,8 +406,8 @@ The steps to create a DoubleTextBox by using VisualStudio in C# are as follows:
 
 
 
-{{ '![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 
@@ -413,8 +416,8 @@ The steps to create a DoubleTextBox by using VisualStudio in C# are as follows:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 
@@ -424,17 +427,17 @@ The steps to create a DoubleTextBox by using VisualStudio in C# are as follows:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
 
-5. Click the C# file, to open the C# file and add the DoubleTextBox to the application. 
+
+5. Click the  C#  file, to open the  C# file and add the DoubleTextBox to the application. 
 
 
 
-C#
+{% highlight C# %}
 
 
 
@@ -464,27 +467,27 @@ public partial class MainWindow : Window
 
             }
 
+{% endhighlight %}
+
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
 
+Note:If you do not set any value to the DoubleTextbox then the default value will be as follows:
 
-> _Note:If you do not set any value to the DoubleTextbox then the default value will be as follows:_
+If the UseNullOption is set to true then,
 
-> _If the UseNullOption is set to true then,_
+Value of the NullValue property will be the default value.
 
-> _Value of the NullValue property will be the default value._
+Otherwise
 
-> _Otherwise_ 
+Zero will be the default value (based on the MinValue and MaxValue the default value will change).
 
-> _Zero will be the default value (based on the MinValue and MaxValue the default value will change)._
+See Also
 
-> _See Also_
+####Creating a DoubleTextBox by using XAML
 
-Creating a DoubleTextBox by using XAML
-
-Creating a DoubleTextBox by using Expression Blend
+####Creating a DoubleTextBox by using Expression Blend
 
 ### Creating a DoubleTextBox by using XAML
 
@@ -496,8 +499,8 @@ The steps to create a DoubleTextBox by using Visual Studio in XAML are as follow
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 
@@ -506,7 +509,7 @@ The steps to create a DoubleTextBox by using Visual Studio in XAML are as follow
 
 
 
-XAML
+{% highlight xml %}
 
 
 
@@ -528,17 +531,17 @@ XAML
 
 </Window>
 
+{% endhighlight %}
 
+![](Getting-Started_images/Getting-Started_img8.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
 
 
 See Also
 
-Creating a DoubleTextBox by using C#
+####Creating a DoubleTextBox by using C# 
 
-Creating a DoubleTextBox by using Expression Blend
+####Creating a DoubleTextBox by using Expression Blend
 
 ### Creating a DoubleTextBox by using Expression Blend
 
@@ -549,8 +552,8 @@ The steps to create a DoubleTextBox in the application by using Expression Blend
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
+
 
 
 
@@ -559,8 +562,8 @@ The steps to create a DoubleTextBox in the application by using Expression Blend
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img10.png)
+
 
 
 
@@ -572,8 +575,8 @@ The steps to create a DoubleTextBox in the application by using Expression Blend
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img11.png)
+
 
 
 
@@ -582,13 +585,13 @@ The steps to create a DoubleTextBox in the application by using Expression Blend
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img12.png)
 
 
 
 
-XAML
+
+{% highlight xml %}
 
 
 
@@ -610,17 +613,17 @@ XAML
 
 </Window>
 
+{% endhighlight %}
 
+![](Getting-Started_images/Getting-Started_img13.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
-{:.image }
 
 
 See Also
 
-Creating a DoubleTextBox by using C#
+####Creating a DoubleTextBox by using C# 
 
-Creating a DoubleTextBox by using XAML
+####Creating a DoubleTextBox by using XAML
 
 Blendability
 
@@ -628,29 +631,28 @@ Blendability
 
 You have to use the Value property to set the value for the DoubleTextBox.
 
-> _Note: Do not use the Text property to set the value for the DoubleTextBox. Use only the Value property._
+Note: Do not use the Text property to set the value for the DoubleTextBox. Use only the Value property.
 
-> 
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100"/></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#doubleTextBox.Value = 100;</td></tr>
+{% highlight C# %} doubleTextBox.Value = 100; {% endhighlight %} </td></tr>
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img14.png)
+
 
 
 See Also
 
-Maximum and Minimum Value
+####Maximum and Minimum Value
 
-NullValue Support
+####NullValue Support
 
 ## Setting Minimum and Maximum Value
 
@@ -661,43 +663,42 @@ You can set the Minimum and Maximum value by using the MinVal and MaxVal propert
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100"                           MinValue="-999.99" MaxValue="999.99"/></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100"                           MinValue="-999.99" MaxValue="999.99"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#doubleTextBox.MinValue = -999.99;doubleTextBox.MaxValue = 999.99;</td></tr>
+{% highlight C# %} doubleTextBox.MinValue = -999.99;doubleTextBox.MaxValue = 999.99; {% endhighlight %} </td></tr>
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img15.png)
+
 
 
 See Also
 
-Culture and Number Formats
+####Culture and Number Formats
 
-Binding Support
+####Binding Support
 
 ## Setting Watermark
 
 You can set the Watermark for the DoubleTextBox by using the WatermarkText property. To enable Watermark, you have to set the WatermarkTextIsVisible property to true.
 
-> _Note: WatermarkText is visible only when the value is null._
+Note: WatermarkText is visible only when the value is null.
 
-> 
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100"                            Value="{x:Null}" MinValue="-999" MaxValue="999"                            UseNullOption="True"                            WatermarkText="Type Here" WatermarkTextIsVisible="True"/></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100"                            Value="{x:Null}" MinValue="-999" MaxValue="999"                            UseNullOption="True"                            WatermarkText="Type Here" WatermarkTextIsVisible="True"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = null;doubleTextBox.WatermarkText = "Type Here";doubleTextBox.WatermarkTextIsVisible = true;</td></tr>
+{% highlight C# %} doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = null;doubleTextBox.WatermarkText = "Type Here";doubleTextBox.WatermarkTextIsVisible = true; {% endhighlight %} </td></tr>
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img16.png)
+
 
 
 See Also

@@ -15,7 +15,7 @@ The following example shows a simple binding between the value of the DoubleText
 
 
 
-XAML
+{% highlight xml %}
 
 
 
@@ -29,10 +29,10 @@ XAML
 
 </StackPanel>
 
+{% endhighlight %}
 
+![](Binding-Support_images/Binding-Support_img1.png)
 
-{{ '![](Binding-Support_images/Binding-Support_img1.png)' | markdownify }}
-{:.image }
 
 
 
@@ -41,8 +41,7 @@ The Data Context property provides its value to child elements. So you can set t
 
 
 
-XAML
-
+{% highlight xml %}
 
 
 <StackPanel DataContext="{StaticResource myCustomer}">
@@ -56,14 +55,14 @@ XAML
     <syncfusion:DoubleTextBox Value="{Binding Income}"/>
 
 </StackPanel>
-
+{% endhighlight %}
 
 
 If you want to bind values other than double values, you need to use the Value Converter. The following example shows a simple binding between the value of the DoubleTextBox and the Textbox text that reflects the typed value:
 
 
 
-XAML
+{% highlight xml %}
 
 
 
@@ -87,9 +86,9 @@ XAML
 
 </StackPanel>
 
+{% endhighlight %}
 
+![](Binding-Support_images/Binding-Support_img2.png)
 
-{{ '![](Binding-Support_images/Binding-Support_img2.png)' | markdownify }}
-{:.image }
 
 

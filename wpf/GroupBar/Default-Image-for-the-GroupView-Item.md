@@ -15,7 +15,7 @@ Use the below code snippet to set this property.
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -76,4 +76,4 @@ Use the below code snippet to set this property.
 </syncfusion:GroupBar>
 
 
-
+{% endhighlight %}

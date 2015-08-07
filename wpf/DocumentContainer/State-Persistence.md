@@ -11,13 +11,13 @@ documentation: ug
 
 This topic illustrates loading and saving the dock state in various places. It also gives information about resetting and deleting the states.
 
-Load and Save in Registry
+##Load and Save in Registry
 
 In the Document Container, you can save and load dock states into the Registry using the SaveDockState and LoadDockState methods. Refer to the following code snippet for setting these methods.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -36,14 +36,14 @@ BinaryFormatter formatter1 = new BinaryFormatter();
 DocContainer.LoadDockState(formatter1);
 
 
-
-Load and Save in Isolated Storage
+{% endhighlight %}
+##Load and Save in Isolated Storage
 
 In the Document Container you can Load/Save/Reset the dock state in the Isolated Storage. To Load, Save and Reset, use the following code snippet.
 
 
 
-[C#]
+{% highlight C# %} 
 
 
 
@@ -62,16 +62,16 @@ DocContainer.LoadDockState();
 // Code to Reset:
 
 DocContainer.DeleteInternalIsolatedStorage();
+{% endhighlight %}
 
 
-
-Load and Save in XML
+##Load and Save in XML
 
 You can save and load the data for the Document Container in XML also. To Load and Save data in XML use the following code snippet. This is done by using both Binary Formatter as well as Soap Formatter as follows.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -105,15 +105,15 @@ SoapFormatter formatter1 = new SoapFormatter();
 
 DocContainer.LoadDockState(formatter1, StorageFormat.Xml, @"d:\docum_xml.xml");
 
+{% endhighlight %}
 
-
-Load and Save in Bin
+##Load and Save in Bin
 
 Document Container enables the user to save and load the data in BIN. Refer to the following code snippet for saving or loading data in BIN. This is achieved by using Binary Formatter and Soap Formatter as well.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -147,15 +147,15 @@ SoapFormatter formatter1 = new SoapFormatter();
 
 DocContainer.LoadDockState(formatter1, StorageFormat.Binary, @"d:\docum_bin.bin");
 
+{% endhighlight %}
 
-
-Reset the states in Document Container
+##Reset the states in Document Container
 
 You can easily reset the states in Document Container by using the ResetState method as in the below code snippet.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -167,15 +167,15 @@ DocumentContainer DocContainer = new DocumentContainer();
 
 DocContainer.ResetState();
 
+{% endhighlight %}
 
-
-Delete the State
+##Delete the State
 
 You can delete all the states you have created in the Document Container by using the DeleteDockState property. Refer to the below code example.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -186,4 +186,4 @@ DocContainer.DeleteDockState(@"d:\docum_bin.bin");
 DocContainer.DeleteDockState();
 
 
-
+{% endhighlight %}

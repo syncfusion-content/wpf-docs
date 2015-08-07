@@ -18,15 +18,15 @@ DoubleTextBox provides globalization support through the Culture property.
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                          Culture="en-US" Value="1234567"/></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                          Culture="en-US" Value="1234567"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.Value = 1234567;doubleTextBox.Culture = new CultureInfo("en-US");</td></tr>
+{% highlight C# %} Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.Value = 1234567;doubleTextBox.Culture = new CultureInfo("en-US");{% endhighlight %}</td></tr>
 </table>
 
 
-{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)' | markdownify }}
-{:.image }
+![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
+
 
 
 
@@ -34,15 +34,15 @@ C#Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                          Culture="bs-Latn" Value="1234567"/></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                          Culture="bs-Latn" Value="1234567"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.Value = 1234567;doubleTextBox.Culture = new CultureInfo("bs-Latn");</td></tr>
+{% highlight C# %} Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.Value = 1234567;doubleTextBox.Culture = new CultureInfo("bs-Latn");{% endhighlight %}</td></tr>
 </table>
 
 
-{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)' | markdownify }}
-{:.image }
+![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)
+
 
 
 
@@ -58,15 +58,15 @@ You can customize the Number Format either by using the NumberFormat property or
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="200"                           Value="123456789012345">    <syncfusion:DoubleTextBox.NumberFormat>        <numberformat:NumberFormatInfo NumberGroupSeparator="/" NumberDecimalDigits="4"                                        NumberDecimalSeparator="*"/>    </syncfusion:DoubleTextBox.NumberFormat></syncfusion:DoubleTextBox></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="200"                           Value="123456789012345">    <syncfusion:DoubleTextBox.NumberFormat>        <numberformat:NumberFormatInfo NumberGroupSeparator="/" NumberDecimalDigits="4"                                        NumberDecimalSeparator="*"/>    </syncfusion:DoubleTextBox.NumberFormat></syncfusion:DoubleTextBox> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new                           Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.Value = 1234567;doubleTextBox.NumberFormat = new NumberFormatInfo() { NumberGroupSeparator = "/",                              NumberDecimalDigits = 4, NumberDecimalSeparator = "*" };</td></tr>
+{% highlight C# %} Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new                           Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.Value = 1234567;doubleTextBox.NumberFormat = new NumberFormatInfo() { NumberGroupSeparator = "/",                              NumberDecimalDigits = 4, NumberDecimalSeparator = "*" }; {% endhighlight %} </td></tr>
 </table>
 
 
-{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)' | markdownify }}
-{:.image }
+![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)
+
 
 
 
@@ -74,14 +74,14 @@ C#Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new                   
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="200"                           Value="123456789012345" NumberGroupSeparator="/"                           NumberDecimalDigits="4" NumberDecimalSeparator="*"/></td></tr>
+{% highlight xml %}<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="200"                           Value="123456789012345" NumberGroupSeparator="/"                           NumberDecimalDigits="4" NumberDecimalSeparator="*"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.Value = 1234567;doubleTextBox.NumberGroupSeparator = "/";doubleTextBox.NumberDecimalSeparator = "*";doubleTextBox.NumberDecimalDigits = 4;</td></tr>
+{% highlight C# %} Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.Value = 1234567;doubleTextBox.NumberGroupSeparator = "/";doubleTextBox.NumberDecimalSeparator = "*";doubleTextBox.NumberDecimalDigits = 4; {% endhighlight %} </td></tr>
 </table>
 
 
-{{ '![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)' | markdownify }}
-{:.image }
+![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)
+
 
 

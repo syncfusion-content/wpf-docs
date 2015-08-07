@@ -15,7 +15,7 @@ Setting IsResizable property to true:
 
 
 
- [XAML]
+{% highlight xml %}
 
 <shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
@@ -31,9 +31,9 @@ Setting IsResizable property to true:
 
 </shared:DropDownButtonAdv>
 
+{% endhighlight %}
 
+![](Resizing-Support_images/Resizing-Support_img1.png)
 
-{{ '![](Resizing-Support_images/Resizing-Support_img1.png)' | markdownify }}
-{:.image }
 
 

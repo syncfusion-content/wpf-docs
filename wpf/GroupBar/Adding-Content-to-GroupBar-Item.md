@@ -11,7 +11,7 @@ documentation: ug
 
 You can add content to a GroupBar Item using a Panel or a GroupView control. Any content can be added to the GroupBar Item by adding any control inside the panel. To view the contents of a GroupBar Item in ListView mode, add the GroupView as content in the GroupBar Item.
 
-Adding GroupView to GroupBar Item
+###Adding GroupView to GroupBar Item
 
 GroupView control can be added to the GroupBar Item by using XAML or C# code. Here is the code snippet.
 
@@ -20,22 +20,22 @@ GroupView control can be added to the GroupBar Item by using XAML or C# code. He
 <table>
 <tr>
 <td>
-[XAML]<!-- Adding GroupBar --><syncfusion:GroupBar Height="200" Width="230" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">    <!-- Adding GroupView to GroupBarItem -->    <syncfusion:GroupView Name="groupView"/>  </syncfusion:GroupBarItem></syncfusion:GroupBar></td></tr>
+{% highlight xml %} <!-- Adding GroupBar --><syncfusion:GroupBar Height="200" Width="230" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">    <!-- Adding GroupView to GroupBarItem -->    <syncfusion:GroupView Name="groupView"/>  </syncfusion:GroupBarItem></syncfusion:GroupBar> {% endhighlight %} </td></tr>
 <tr>
 <td>
-[C#]//Creating an instance of GroupBarGroupBar groupBar = new GroupBar();//Creating an instance of GroupBarItemGroupBarItem groupBarItem = new GroupBarItem();//Setting header for groupbar itemgroupBarItem.Header = "GroupBarItem";//Creating an instance of GroupViewGroupView groupView = new GroupView();//Adding GroupView to GroupViewItemgroupBarItem.Content = groupView;//Adding GroupBar item to GroupBargroupBar.Items.Add(groupBarItem);//Adding GroupBar to the windowthis.Content = groupBar;</td></tr>
+{% highlight C# %} //Creating an instance of GroupBarGroupBar groupBar = new GroupBar();//Creating an instance of GroupBarItemGroupBarItem groupBarItem = new GroupBarItem();//Setting header for groupbar itemgroupBarItem.Header = "GroupBarItem";//Creating an instance of GroupViewGroupView groupView = new GroupView();//Adding GroupView to GroupViewItemgroupBarItem.Content = groupView;//Adding GroupBar item to GroupBargroupBar.Items.Add(groupBarItem);//Adding GroupBar to the windowthis.Content = groupBar; {% endhighlight %} </td></tr>
 </table>
 
 
 
 
-{{ '![](Adding-Content-to-GroupBar-Item_images/Adding-Content-to-GroupBar-Item_img1.jpeg)' | markdownify }}
-{:.image }
+![](Adding-Content-to-GroupBar-Item_images/Adding-Content-to-GroupBar-Item_img1.jpeg)
 
 
 
 
-Adding GroupView Item to GroupView
+
+###Adding GroupView Item to GroupView
 
 GroupView Item can be added to a GroupView using XAML or C# code. Here is the code snippet.
 
@@ -44,24 +44,24 @@ GroupView Item can be added to a GroupView using XAML or C# code. Here is the co
 <table>
 <tr>
 <td>
-[XAML]<!-- Adding GroupBar --><syncfusion:GroupBar Height="200" Width="230" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">    <!-- Adding GroupView to GroupBarItem -->    <syncfusion:GroupView Name="groupView">      <!-- Adding GroupViewItem to GroupView -->      <syncfusion:GroupViewItem Name="groupViewItem"                 Text="GroupViewItem"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem></syncfusion:GroupBar></td></tr>
+{% highlight xml %} <!-- Adding GroupBar --><syncfusion:GroupBar Height="200" Width="230" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">    <!-- Adding GroupView to GroupBarItem -->    <syncfusion:GroupView Name="groupView">      <!-- Adding GroupViewItem to GroupView -->      <syncfusion:GroupViewItem Name="groupViewItem"                 Text="GroupViewItem"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem></syncfusion:GroupBar> {% endhighlight %} </td></tr>
 <tr>
 <td>
-[C#]//Creating an instance of GroupBarGroupBar groupBar = new GroupBar();//Creating an instance of GroupBarItemGroupBarItem groupBarItem = new GroupBarItem();//Setting header for groupbar itemgroupBarItem.Header = "GroupBarItem";//Creating an instance of GroupViewGroupView groupView = new GroupView();//Creating an instance of GroupViewItemGroupViewItem groupViewItem = new GroupViewItem();//Adding content to GroupViewItemgroupViewItem.Text = "GroupViewItem";//Adding GroupViewItem to GroupViewgroupView.Items.Add(groupViewItem);//Adding content of GroupBarItem as GroupView;groupBarItem.Content = groupView;//Adding GroupBar item to GroupBargroupBar.Items.Add(groupBarItem);//Adding GroupBar to the windowthis.Content = groupBar;</td></tr>
+{% highlight C# %} //Creating an instance of GroupBarGroupBar groupBar = new GroupBar();//Creating an instance of GroupBarItemGroupBarItem groupBarItem = new GroupBarItem();//Setting header for groupbar itemgroupBarItem.Header = "GroupBarItem";//Creating an instance of GroupViewGroupView groupView = new GroupView();//Creating an instance of GroupViewItemGroupViewItem groupViewItem = new GroupViewItem();//Adding content to GroupViewItemgroupViewItem.Text = "GroupViewItem";//Adding GroupViewItem to GroupViewgroupView.Items.Add(groupViewItem);//Adding content of GroupBarItem as GroupView;groupBarItem.Content = groupView;//Adding GroupBar item to GroupBargroupBar.Items.Add(groupBarItem);//Adding GroupBar to the windowthis.Content = groupBar; {% endhighlight %} </td></tr>
 </table>
 
 
-{{ '![](Adding-Content-to-GroupBar-Item_images/Adding-Content-to-GroupBar-Item_img2.jpeg)' | markdownify }}
-{:.image }
+![](Adding-Content-to-GroupBar-Item_images/Adding-Content-to-GroupBar-Item_img2.jpeg)
 
 
-Adding Panel to GroupBar Item
+
+###Adding Panel to GroupBar Item
 
 You can add content to the GroupBar Item using a Panel as follows. This is achieved using the following code snippet.
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -99,17 +99,18 @@ You can add content to the GroupBar Item using a Panel as follows. This is achie
 
 </syncfusion:GroupBar>
 
+{% endhighlight %}
 
 
-{{ '![](Adding-Content-to-GroupBar-Item_images/Adding-Content-to-GroupBar-Item_img3.jpeg)' | markdownify }}
-{:.image }
-
-
-> _Note: To display the GroupView Item, you must already have a GroupView control in which you are going to add the GroupView Item._ 
+![](Adding-Content-to-GroupBar-Item_images/Adding-Content-to-GroupBar-Item_img3.jpeg)
 
 
 
-Events to handle with GroupBar Item
+Note: To display the GroupView Item, you must already have a GroupView control in which you are going to add the GroupView Item.
+
+
+
+###Events to handle with GroupBar Item
 
 The events of GroupBarItem are GroupBarItemAdded and GroupBarItemRemoved. 
 

@@ -15,7 +15,7 @@ Setting ScrollBarVisibility property to Visible:
 
 
 
-[XAML]
+{% highlight xml %}
 
 <shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
@@ -31,9 +31,9 @@ Setting ScrollBarVisibility property to Visible:
 
 </shared:DropDownButtonAdv>
 
+{% endhighlight %}
 
+![](Scroll-Bar-Support_images/Scroll-Bar-Support_img1.png)
 
-{{ '![](Scroll-Bar-Support_images/Scroll-Bar-Support_img1.png)' | markdownify }}
-{:.image }
 
 

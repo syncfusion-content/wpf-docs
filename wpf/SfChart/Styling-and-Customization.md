@@ -29,36 +29,36 @@ We have some predefined palette such as
 * Elite
 * LightCandy
 * SandyBeach
-> 
-_Note: Elite, SandyBeach and LightCandy palettes are not supported in the bitmap series types._
+
+Note: Elite, SandyBeach and LightCandy palettes are not supported in the bitmap series types.
 
 The Palette brushes defined in the chart are applied to the series, to differentiate each of them. Likewise, series palette brushes are applied for each segment in a particular series.
 
-Applying predefined Palettes for each series
+###Applying predefined Palettes for each series
 
 The following section shows you how to define the various palettes for each series.
 
-Metro Palette
+###Metro Palette
 
 Itis the default palette for SfChart, used to apply a set of predefined brushes to the series, in a predefined order. The following code example illustrates how to set the MetroPalette for the chart.
 
-[XAML]
+{% highlight xml %}
 
 
 
 <syncfusion:SfChart HorizontalAlignment="Center" VerticalAlignment="Center" Height="400"Width="650" Palette="Metro" />
-
+{% endhighlight %}
 The following is the screenshot for the series with multiple palettes.
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_149.jpg](Styling-and-Customization_images/Styling-and-Customization_img1.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_149.jpg](Styling-and-Customization_images/Styling-and-Customization_img1.jpeg)
 
 
-Custom palettes for each series
+
+###Custom palettes for each series
 
 The Custom Palette option enables you to define your own color brushes for the Palette using ColorModel property as given in the following code example.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -100,27 +100,27 @@ The Custom Palette option enables you to define your own color brushes for the
 
 
 
-
+{% endhighlight %}
 
 The following screenshot demonstrates series with CustomPalette.
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_150.jpg](Styling-and-Customization_images/Styling-and-Customization_img2.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_150.jpg](Styling-and-Customization_images/Styling-and-Customization_img2.jpeg)
 
 
-None Palette
+
+###None Palette
 
 This palette sets the transparent color to the series. You can identify the series existence with the help of [legends](http://help.syncfusion.com/ug/wpf/Documents/legend.htm) or [adornments](http://help.syncfusion.com/ug/wpf/Documents/databinding2.htm).
 
-Applying predefined Palette for each segment
+###Applying predefined Palette for each segment
 
 The following section shows you how to define the various palettes for each segment of a series.
 
-Metro Palette
+###Metro Palette
 
 It is the default palette for series also. This palette applies a set of predefined brushes to the segments of a series in a predefined order. The following code example shows you how to set the Metro Palette for the chart series.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -134,25 +134,25 @@ It is the default palette for series also. This palette applies a set of predefi
 
                                      />
 
+{% endhighlight %}
+
+![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_151.jpg](Styling-and-Customization_images/Styling-and-Customization_img3.jpeg)
 
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_151.jpg](Styling-and-Customization_images/Styling-and-Customization_img3.jpeg)' | markdownify }}
-{:.image }
 
-
-None Palette
+###None Palette
 
 It applies the same color to all the segments, as shown in the following screenshot. And the brushes vary for additional series based on that predefined order.
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_152.jpg](Styling-and-Customization_images/Styling-and-Customization_img4.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_152.jpg](Styling-and-Customization_images/Styling-and-Customization_img4.jpeg)
 
 
-Applying Custom Palette for each segment
+
+###Applying Custom Palette for each segment
 
 The Custom Palette option enables you to define your own color brushes for the Palette, using ColorModel as shown in the following code example.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -195,14 +195,14 @@ The Custom Palette option enables you to define your own color brushes for th
         </syncfusion:LineSeries>
 
 
-
+{% endhighlight %}
 
 
 ## Customize Legends
 
 SfChart provides you with the option to customize the legends depending on the application’s requirement.
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfChart.Legend>
 
@@ -264,10 +264,10 @@ SfChart provides you with the option to customize the legends depending on the a
 
     </Grid>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/snaps/17.png](Styling-and-Customization_images/Styling-and-Customization_img5.png)
 
-{{ '![C:/Users/rachel/Desktop/snaps/17.png](Styling-and-Customization_images/Styling-and-Customization_img5.png)' | markdownify }}
-{:.image }
 
 
 ## Customize Series
@@ -294,14 +294,14 @@ In this DataTemplate, the respective Segments come as DataContext. For instance,
 
 The following table illustrates the properties available in the corresponding segment class of the series.
 
-_Properties in the segment class_
+Properties in the segment class
 
 <table>
 <tr>
-<td>
-Series Types</td><td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Series Types</th><th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 LineSeries </td><td>
@@ -348,7 +348,7 @@ Interior - This property gives the fill brush for that particular segment.
 
 The following code example illustrates the use of CustomTemplate property.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -390,21 +390,21 @@ The following code example illustrates the use of CustomTemplate property.
 
 </syncfusion:ScatterSeries>
 
-
+{% endhighlight %}
 
 
 
 The following screenshot represents chart scatter series. By default, that series displays Ellipse symbol. By using the Custom Template feature, it can be changed to arrow shape:
 
-{{ '![C:/Users/sureshs/Desktop/wpf.png](Styling-and-Customization_images/Styling-and-Customization_img6.png)' | markdownify }}
-{:.image }
+![C:/Users/sureshs/Desktop/wpf.png](Styling-and-Customization_images/Styling-and-Customization_img6.png)
+
 
 
 ## Customize Tooltip
 
 SfChart provides the option to define your own template for Tooltip, based on your application’s requirement. The following code example demonstrates the CustomTooltip using the TooltipTemplate property.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -464,11 +464,11 @@ SfChart provides the option to define your own template for Tooltip, based on yo
 
 
 
-
+{% endhighlight %}
 
 The following screenshot illustrates custom Tooltip.
 
-{{ '![C:/Users/rachel/Desktop/snaps/19.png](Styling-and-Customization_images/Styling-and-Customization_img7.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/snaps/19.png](Styling-and-Customization_images/Styling-and-Customization_img7.png)
+
 
 

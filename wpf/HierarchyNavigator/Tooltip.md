@@ -16,14 +16,14 @@ Setting the ShowToolTip Boolean property to true in the HierarchyNavigator contr
 <table>
 <tr>
 <td>
-XAML<syncfusion:HierarchyNavigator ShowToolTip="True" x:Name="hierarchyNavigator1" /></td></tr>
+{% highlight xml %}<syncfusion:HierarchyNavigator ShowToolTip="True" x:Name="hierarchyNavigator1" />{% endhighlight %}</td></tr>
 <tr>
 <td>
-C#HierarchyNavigator hierarchyNavigatorControl1 = new HierarchyNavigator() { Height = 30 };hierarchyNavigatorControl1.ShowToolTip = true;</td></tr>
+{% highlight C# %}HierarchyNavigator hierarchyNavigatorControl1 = new HierarchyNavigator() { Height = 30 };hierarchyNavigatorControl1.ShowToolTip = true;{% endhighlight %}</td></tr>
 </table>
 
 
-{{ '![](Tooltip_images/Tooltip_img1.png)' | markdownify }}
-{:.image }
+![](Tooltip_images/Tooltip_img1.png)
+
 
 

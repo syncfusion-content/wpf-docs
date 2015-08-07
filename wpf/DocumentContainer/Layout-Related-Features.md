@@ -17,13 +17,13 @@ Document Container comes with the support of visual styles, which gives a great 
 
 
 
-_Property table_
+Property table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
@@ -38,48 +38,48 @@ Use the following code to set the skin for the Document Container.
 <table>
 <tr>
 <td>
-[XAML]<!-- Adding document container --><syncfusion:DocumentContainer Name="DocContainer" syncfusion:SkinStorage.VisualStyle="Office2007Blue" Mode="MDI">  …....  …....</syncfusion:DocumentContainer></td></tr>
+{% highlight xml %}<!-- Adding document container --><syncfusion:DocumentContainer Name="DocContainer" syncfusion:SkinStorage.VisualStyle="Office2007Blue" Mode="MDI">  …....  …....</syncfusion:DocumentContainer>{% endhighlight %}</td></tr>
 <tr>
 <td>
-[C#] // Setting the visual style as Office2007Blue SkinStorage.SetVisualStyle(DocContainer, "Office2007Blue");  </td></tr>
+{% highlight C# %} // Setting the visual style as Office2007Blue SkinStorage.SetVisualStyle(DocContainer, "Office2007Blue"); {% endhighlight %} </td></tr>
 </table>
 
 
-{{ '![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)' | markdownify }}
-{:.image }
-
-
-_Document Container with "Office2007Blue" Theme_
+![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)
 
 
 
-{{ '![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)' | markdownify }}
-{:.image }
-
-
-_Document Container with "Blend" Theme_
+Document Container with "Office2007Blue" Theme
 
 
 
-{{ '![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)' | markdownify }}
-{:.image }
-
-
-_Document Container with "Office2003" Theme_
+![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
 
 
 
-{{ '![](Layout-Related-Features_images/Layout-Related-Features_img4.png)' | markdownify }}
-{:.image }
-
-
-_Document Container with "Metro" Theme_
+Document Container with "Blend" Theme
 
 
 
-{{ '![](Layout-Related-Features_images/Layout-Related-Features_img5.png)' | markdownify }}
-{:.image }
+![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)
 
 
-_Document Container with "Transparent" Theme_
+
+Document Container with "Office2003" Theme
+
+
+
+![](Layout-Related-Features_images/Layout-Related-Features_img4.png)
+
+
+
+Document Container with "Metro" Theme
+
+
+
+![](Layout-Related-Features_images/Layout-Related-Features_img5.png)
+
+
+
+Document Container with "Transparent" Theme
 

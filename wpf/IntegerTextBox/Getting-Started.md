@@ -11,12 +11,12 @@ documentation: ug
 
 ## Control Structure
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 ## IntegerTextBox Members
@@ -25,17 +25,17 @@ IntegerTextBox exposes the following members:
 
 ### Properties
 
-_IntegerTextBox property table_
+IntegerTextBox property table
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Type</td><td>
-Value it Accepts</td><td>
-Description</td><td>
-Default Value</td><td>
-Reference Link</td></tr>
+<th>
+Name</th><th>
+Type</th><th>
+Value it Accepts</th><th>
+Description</th><th>
+Default Value</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 ApplyNegativeForeground</td><td>
@@ -285,17 +285,18 @@ Gets or sets the ZeroColor property.</td><td>
 Green</td><td>
 ZeroColor</td></tr>
 </table>
+
 ### Methods
 
-_IntegerTextBox Methods table_
+IntegerTextBox Methods table
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td><td>
-Return Type</td><td>
-Overloads</td></tr>
+<th>
+Name</th><th>
+Description</th><th>
+Return Type</th><th>
+Overloads</th></tr>
 <tr>
 <td>
 Copy()</td><td>
@@ -315,18 +316,19 @@ Selects all the content of the IntegerTextBox.</td><td>
 Void</td><td>
 </td></tr>
 </table>
+
 ### Events
 
-_IntegerTextBox Events table_
+IntegerTextBox Events table
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Event Type</td><td>
-Event Args Parameter</td><td>
-Description</td><td>
-Reference Link</td></tr>
+<th>
+Name</th><th>
+Event Type</th><th>
+Event Args Parameter</th><th>
+Description</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 ValueChanged</td><td>
@@ -381,14 +383,14 @@ The steps to create an IntegerTextBox by using Visual Studio in C# are as follow
 1. Open Visual Studio.
 2. On the File menu, select New -> Project. This opens the New Project Dialog box.
 
-{{ '![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 3. On the Project Dialog window, select WPF Application, in the name field, type the name of the project, and then click OK.
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 4. Add the following reference with the sample project:
@@ -396,13 +398,13 @@ The steps to create an IntegerTextBox by using Visual Studio in C# are as follow
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 5. Click the C# file, to open the C# file and add the IntegerTextBox to the application. 
 
-C#
+{% highlight C# %}
 
 
 
@@ -438,17 +440,17 @@ namespace WpfApp
 
 }
 
+{% endhighlight %}
 
+![](Getting-Started_images/Getting-Started_img6.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
 
 
 See Also
 
 Creating an IntegerTextBox by using XAML
 
-Blendability
+##Blendability
 
 ### Creating an IntegerTextBox by using XAML
 
@@ -460,15 +462,15 @@ The steps to create an IntegerTextBox by using Visual Studio in XAML are as foll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 4. On the Properties window, customize the properties of the IntegerTextBox.
 
 
 
-XAML 
+{% highlight xml %} 
 
 <Window x:Class="WpfApp.MainWindow"
 
@@ -488,19 +490,19 @@ XAML
 
 </Window>
 
+{% endhighlight %}
+
+![](Getting-Started_images/Getting-Started_img8.png)
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
 
+Note:
 
-> _Note:_
-
-* _If you do not set any value to the IntegerTextBox then the default value will be as follows:_
-* _If the UseNullOption is set to true then,_
-* _Value of the NullValue property will be the default value._
-* _Otherwise_ 
-* _Zero will be the default value (based on the MinValue and MaxValue the default value will change)._
+* If you do not set any value to the IntegerTextBox then the default value will be as follows:
+* If the UseNullOption is set to true then,
+* Value of the NullValue property will be the default value.
+* Otherwise
+* Zero will be the default value (based on the MinValue and MaxValue the default value will change).
 
 See Also
 
@@ -517,16 +519,16 @@ The steps to create an IntegerTextBox in the application by using Expression Ble
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
+
 
 
 3. In the Project type’s panel, select WPF Application and then click OK.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img10.png)
+
 
 
 4. Add the following reference with the sample project:
@@ -536,17 +538,17 @@ The steps to create an IntegerTextBox in the application by using Expression Ble
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img11.png)
+
 
 
 7. Drag the IntegerTextBox control to Design View.
 
-{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img12.png)
 
 
-XAML
+
+{% highlight xml %} 
 
 
 
@@ -568,15 +570,15 @@ XAML
 
 </Window>
 
+{% endhighlight %}
 
+![](Getting-Started_images/Getting-Started_img13.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
-{:.image }
 
 
 See Also
 
-Blendability
+###Blendability
 
 Creating an IntegerTextBox by using XAML
 
@@ -584,27 +586,27 @@ Creating an IntegerTextBox by using XAML
 
 You have to use the Value property to set the value for the IntegerTextBox.
 
-> _Note: Do not use the Text property to set the value for the IntegerTextBox. Use only the Value property._
+Note: Do not use the Text property to set the value for the IntegerTextBox. Use only the Value property.
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100" Value="100"/></td></tr>
+{% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100" Value="100"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C#integerTextBox.Value = 100;</td></tr>
+{% highlight C# %} integerTextBox.Value = 100;{% endhighlight %}</td></tr>
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img14.png)
+
 
 
 See Also
 
-Minimum and Maximum Value
+###Minimum and Maximum Value
 
-NullValue Support
+####NullValue Support
 
 ### Setting Minimum and Maximum Value
 
@@ -613,39 +615,39 @@ You can set the Minimum and Maximum value by using the MinVal and MaxVal propert
 <table>
 <tr>
 <td>
-XAML<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100" Value="100" MinValue="-999" MaxValue="999"/></td></tr>
+{% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100" Value="100" MinValue="-999" MaxValue="999"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C#integerTextBox.MinValue = -999;integerTextBox.MaxValue = 999;</td></tr>
+{% highlight C# %} integerTextBox.MinValue = -999;integerTextBox.MaxValue = 999;{% endhighlight %}</td></tr>
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img15.png)
+
 
 
 See Also
 
-Minimum and Maximum Value
+###Minimum and Maximum Value
 
 ## Setting Watermark
 
 You can set the Watermark for the IntegerTextBox by using the WatermarkText property. To enable Watermark, you have to set the WatermarkTextIsVisible property to true.
 
-> _Note: WatermarkText is visible only when the value is null._
+Note: WatermarkText is visible only when the value is null.
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100"                                    Value="{x:Null}"                                   MinValue="-999" MaxValue="999" UseNullOption="True"                                   WatermarkText="Type Here"                                    WatermarkTextIsVisible="True"/></td></tr>
+{% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100"                                    Value="{x:Null}"                                   MinValue="-999" MaxValue="999" UseNullOption="True"                                   WatermarkText="Type Here"                                    WatermarkTextIsVisible="True"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C#integerTextBox.UseNullOption = true;integerTextBox.WatermarkText = "Type Here";integerTextBox.WatermarkTextIsVisible = true;integerTextBox.Value = null;</td></tr>
+{% highlight C# %} integerTextBox.UseNullOption = true;integerTextBox.WatermarkText = "Type Here";integerTextBox.WatermarkTextIsVisible = true;integerTextBox.Value = null;{% endhighlight %}</td></tr>
 </table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img16.png)
+
 
 
 See Also

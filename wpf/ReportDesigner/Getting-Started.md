@@ -15,7 +15,7 @@ You can create a simple application through the Visual Studio Designer with the 
 
 1. Create a new WPF application in VS2008 or VS2010, and then add the following XAML code.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -42,7 +42,7 @@ Title="MainWindow" Height="600" Width="1000" Icon="App.ico">
     <Grid>
 
         <Grid.RowDefinitions>
-
+{% endhighlight %}
 
 
 
@@ -51,15 +51,14 @@ Title="MainWindow" Height="600" Width="1000" Icon="App.ico">
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
-> _Note: The following code is automatically generated in the XAML window._
 
-> 
+Note: The following code is automatically generated in the XAML window.
 
-[XAML]
+
+{% highlight xml %}
 
 
 
@@ -71,29 +70,28 @@ ReportDataVisibility="Visible"
 
 x:Name="ReportDesignerControl" Margin="0,6,0,-6" />
 
-
+{% endhighlight %}
 
 2. Check whether the following highlighted references are added to the References folder.
 
-{{ '![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig4.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
-
-
-> _Note: After building and debugging the application, the appearance of the Report Designer is modified as shown in the following illustration._
+![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig4.png](Getting-Started_images/Getting-Started_img2.png)
 
 
 
-> 
+Note: After building and debugging the application, the appearance of the Report Designer is modified as shown in the following illustration.
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-82.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+
+
+
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-82.png](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 3. To view the Properties grid, click the View tab and select the Properties check box. 
 
 
 
-{{ '![C:/Users/radhas/Desktop/DesignerDocument/sshot-81.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-81.png](Getting-Started_images/Getting-Started_img4.png)
+
 
 

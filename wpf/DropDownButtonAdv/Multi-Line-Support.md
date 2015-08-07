@@ -15,17 +15,17 @@ Multiline support can be enabled by using the following code:
 
 
 
- [XAML]
+{% highlight xml %}
 
 <sync:DropDownButtonAdv SizeMode="Large" IsMultiLine="False"/>
 
+{% endhighlight %}
+
+![](Multi-Line-Support_images/Multi-Line-Support_img1.png)
 
 
-{{ '![](Multi-Line-Support_images/Multi-Line-Support_img1.png)' | markdownify }}
-{:.image }
 
-
-> _Note: This property only applicable for Large Size Mode Buttons._
+Note: This property only applicable for Large Size Mode Buttons.
 
 
 

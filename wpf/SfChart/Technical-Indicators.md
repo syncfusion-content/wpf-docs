@@ -11,15 +11,15 @@ documentation: ug
 
 Technical indicators are the base of technical analysis, used to determine the future of financial, stock or economic trends. Indicators serve three broad functions: to alert, to confirm and to predict actions. Future price levels can be predicted easily with the help of given data and it helps when you want to enter or exit a trade and to be able to make a profit.
 
-Adding Technical Indicators to the Chart
+###Adding Technical Indicators to the Chart
 
 This example shows how to add technical indicators to a Chart Series. To add technical indicators to the chart, do the following.
 
-Adding Indicator
+###Adding Indicator
 
 Create the instance for any technical indicator and add it to the TechnicalIndicators collection. Here for instance, the AccumulationDistributionIndicator is used.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -31,13 +31,13 @@ Create the instance for any technical indicator and add it to the TechnicalIndic
 
 
 
+{% endhighlight %}
 
-
-Binding the data
+###Binding the data
 
 The data necessary for the indicator to do calculations, are given as specified.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -47,13 +47,13 @@ The data necessary for the indicator to do calculations, are given as specified.
 
         </syncfusion:SfChart.TechnicalIndicators>
 
+{% endhighlight %}
 
-
-Specifying the Item Source
+###Specifying the Item Source
 
 Finally, the XBindingPath, YBindingPath and the ItemSource are specified to plot and visualize the chart.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -65,10 +65,10 @@ Finally, the XBindingPath, YBindingPath and the ItemSource are specified to plot
 
 
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/Snapshots/ind1.png](Technical-Indicators_images/Technical-Indicators_img1.png)
 
-{{ '![C:/Users/rachel/Desktop/Snapshots/ind1.png](Technical-Indicators_images/Technical-Indicators_img1.png)' | markdownify }}
-{:.image }
 
 
 ## AverageTrueRangeIndicator
@@ -77,13 +77,13 @@ AverageTrueRange (ATR) is a very useful indicator that measures the overall pric
 
 The following APIs are used in AverageTrueRangeIndicator.
 
-_AverageTrueRangeIndicator_
+AverageTrueRangeIndicator
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Period</td><td>
@@ -93,9 +93,10 @@ Gets or sets the Int value that represents the indicator moving average period.<
 SignalLineColor</td><td>
 Gets or sets the Brush value that represents the indicator signal line color.</td></tr>
 </table>
+
 If you want to apply ATR indicator to a chart, then do the following.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -107,12 +108,12 @@ If you want to apply ATR indicator to a chart, then do the following.
 
 
 
+{% endhighlight %}
 
 
 
+![C:/Users/rachel/Desktop/Snapshots/ind1.png](Technical-Indicators_images/Technical-Indicators_img2.png)
 
-{{ '![C:/Users/rachel/Desktop/Snapshots/ind1.png](Technical-Indicators_images/Technical-Indicators_img2.png)' | markdownify }}
-{:.image }
 
 
 ## SimpleAverageIndicator
@@ -121,13 +122,13 @@ A SimpleAverageIndicator displays average price of a stock over a specific perio
 
 The following APIs are used in SimpleAverageIndicator.
 
-_SimpleAverageIndicator_
+SimpleAverageIndicator
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Period</td><td>
@@ -141,7 +142,7 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 
 If you want to apply SimpleAverageIndicator to a chart, then do the following.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -151,12 +152,12 @@ If you want to apply SimpleAverageIndicator to a chart, then do the following.
 
         </syncfusion:SfChart.TechnicalIndicators>
 
+{% endhighlight %}
 
 
 
+![C:/Users/rachel/Desktop/Snapshots/ind2.png](Technical-Indicators_images/Technical-Indicators_img3.png)
 
-{{ '![C:/Users/rachel/Desktop/Snapshots/ind2.png](Technical-Indicators_images/Technical-Indicators_img3.png)' | markdownify }}
-{:.image }
 
 
 ## RSITechnicalIndicator
@@ -165,13 +166,13 @@ The RelativeStrengthIndex (RSI) is a widely used indicator that indicates overbo
 
 The following APIs are used in RSITechnicalIndicator.
 
-_RSITechnicalIndicator_
+RSITechnicalIndicator
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Period</td><td>
@@ -193,7 +194,7 @@ Gets or sets the Brush value that represents the Indicator Lower Line Color.</td
 
 If you want to apply RSITechnicalIndicator to a chart, then do the following.
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfChart.TechnicalIndicators>
 
@@ -203,12 +204,12 @@ If you want to apply RSITechnicalIndicator to a chart, then do the following.
 
         </syncfusion:SfChart.TechnicalIndicators>
 
+{% endhighlight %}
 
 
 
+![C:/Users/rachel/Desktop/Snapshots/ind3.png](Technical-Indicators_images/Technical-Indicators_img4.png)
 
-{{ '![C:/Users/rachel/Desktop/Snapshots/ind3.png](Technical-Indicators_images/Technical-Indicators_img4.png)' | markdownify }}
-{:.image }
 
 
 ## MomentumTechnicalIndicator
@@ -217,13 +218,13 @@ This indicator compares whether the current closing price is related to the prev
 
 The following APIs are used in MomentumTechnicalIndicator.
 
-_MomentumTechnicalIndicator_
+MomentumTechnicalIndicator
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Period</td><td>
@@ -241,7 +242,7 @@ Gets or sets the Brush value that represents the Indicator Center Line Color.</t
 
 If you want to apply MomentumTechnicalIndicator to a chart, then do the following.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -251,12 +252,12 @@ If you want to apply MomentumTechnicalIndicator to a chart, then do the followin
 
         </syncfusion:SfChart.TechnicalIndicators>
 
+{% endhighlight %}
 
 
 
+![C:/Users/rachel/Desktop/Snapshots/ind4.png](Technical-Indicators_images/Technical-Indicators_img5.png)
 
-{{ '![C:/Users/rachel/Desktop/Snapshots/ind4.png](Technical-Indicators_images/Technical-Indicators_img5.png)' | markdownify }}
-{:.image }
 
 
 ## StochasticTechnicalIndicator
@@ -265,13 +266,13 @@ The StochasticTechnicalIndicator is one of the most common indicators used in te
 
 The following APIs are used in StochasticTechnicalIndicator.
 
-_StochasticTechnicalIndicator_
+StochasticTechnicalIndicator
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Period</td><td>
@@ -301,7 +302,7 @@ Gets or sets the Brush value that represents the lower line color.</td></tr>
 
 If you want to apply StochasticTechnicalIndicator to a chart, then do the following.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -313,10 +314,10 @@ If you want to apply StochasticTechnicalIndicator to a chart, then do the follow
 
 
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/Snapshots/ind5.png](Technical-Indicators_images/Technical-Indicators_img6.png)
 
-{{ '![C:/Users/rachel/Desktop/Snapshots/ind5.png](Technical-Indicators_images/Technical-Indicators_img6.png)' | markdownify }}
-{:.image }
 
 
 ## ExponentialAverageIndicator
@@ -325,13 +326,13 @@ The ExponentialAverageIndicator is similar to SimpleAverageIndicator, except tha
 
 The following APIs are used in ExponentialAverageIndicator.
 
-_ExponentialAverageIndicator_
+ExponentialAverageIndicator
 
 <table>
 <tr>
-<td>
- Property</td><td>
-Definition</td></tr>
+<th>
+ Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Period</td><td>
@@ -343,8 +344,7 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 </table>
 
 
- [XAML]
-
+{% highlight xml %}
 
 
 <syncfusion:SfChart.TechnicalIndicators>
@@ -353,10 +353,10 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 
         </syncfusion:SfChart.TechnicalIndicators>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/Snapshots/ind6.png](Technical-Indicators_images/Technical-Indicators_img7.png)
 
-{{ '![C:/Users/rachel/Desktop/Snapshots/ind6.png](Technical-Indicators_images/Technical-Indicators_img7.png)' | markdownify }}
-{:.image }
 
 
 ## TriangularAverageIndicator
@@ -365,13 +365,13 @@ The TriangularAverageIndicator is a simple, average indicator, that has been ave
 
 The following APIs are used in TriangularAverageIndicator.
 
-_TriangularAverageIndicator_
+TriangularAverageIndicator
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Period</td><td>
@@ -383,7 +383,7 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 </table>
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -393,23 +393,23 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 
         </syncfusion:SfChart.TechnicalIndicators>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/Snapshots/ind7.png](Technical-Indicators_images/Technical-Indicators_img8.png)
 
-{{ '![C:/Users/rachel/Desktop/Snapshots/ind7.png](Technical-Indicators_images/Technical-Indicators_img8.png)' | markdownify }}
-{:.image }
 
 
 ## AccumulationDistributionIndicator
 
 AccumulationDistributionIndicator is used to determine the changes in price and volume. The following APIs are used in AccumulationDistributionIndicator.
 
-_AccumulationDistributionIndicator_
+AccumulationDistributionIndicator
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Period</td><td>
@@ -421,8 +421,7 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
 </table>
 
 
-[XAML]
-
+{% highlight xml %}
 
 
 <syncfusion:SfChart.TechnicalIndicators>
@@ -432,11 +431,11 @@ Gets or sets the Brush value that represents the indicator signal line color.</t
         </syncfusion:SfChart.TechnicalIndicators>
 
 
+{% endhighlight %}
 
 
+![C:/Users/rachel/Desktop/Snapshots/ind8.png](Technical-Indicators_images/Technical-Indicators_img9.png)
 
-{{ '![C:/Users/rachel/Desktop/Snapshots/ind8.png](Technical-Indicators_images/Technical-Indicators_img9.png)' | markdownify }}
-{:.image }
 
 
 ## BollingerBandIndicator
@@ -445,13 +444,13 @@ BollingerBandIndicators are volatile bands placed above and below a simple avera
 
 The following APIs are used in BollingerBandIndicator.
 
-_BollingerBandIndicator_
+BollingerBandIndicator
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Period</td><td>
@@ -471,7 +470,7 @@ Gets or sets the Brush value that represents the color for the Lower Bollinger B
 </table>
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -482,11 +481,11 @@ Gets or sets the Brush value that represents the color for the Lower Bollinger B
         </syncfusion:SfChart.TechnicalIndicators> 
 
 
+{% endhighlight %}
 
 
+![C:/Users/rachel/Desktop/Snapshots/ind9.png](Technical-Indicators_images/Technical-Indicators_img10.png)
 
-{{ '![C:/Users/rachel/Desktop/Snapshots/ind9.png](Technical-Indicators_images/Technical-Indicators_img10.png)' | markdownify }}
-{:.image }
 
 
 ## MACDTechnicalIndicator
@@ -495,13 +494,13 @@ MovingAverageConvergenceDivergence (MACD) technical indicator is one of the simp
 
 The following APIs are used in MACDTechnicalIndicator.
 
-_MACDTechnicalIndicator_
+MACDTechnicalIndicator
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Period</td><td>
@@ -533,7 +532,7 @@ Gets or sets the Brush value that represents the Divergence Line color.</td></tr
 </table>
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -544,10 +543,10 @@ Gets or sets the Brush value that represents the Divergence Line color.</td></tr
         </syncfusion:SfChart.TechnicalIndicators>
 
 
+{% endhighlight %}
 
 
+![C:/Users/rachel/Desktop/Snapshots/ind10.png](Technical-Indicators_images/Technical-Indicators_img11.png)
 
-{{ '![C:/Users/rachel/Desktop/Snapshots/ind10.png](Technical-Indicators_images/Technical-Indicators_img11.png)' | markdownify }}
-{:.image }
 
 

@@ -13,7 +13,7 @@ Trendlines are used to analyze and display the trends in the data graphically. I
 
 The following code examples illustrate how to add Trendlines to the chart.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -23,11 +23,11 @@ The following code examples illustrate how to add Trendlines to the chart.
 
         </syncfusion:LineSeries.Trendlines>
 
-
+{% endhighlight %}
 
 You can set the Polynomial order for the line. Polynomial order calculates order based equation and the order value falls between 2 and 6.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -36,11 +36,11 @@ You can set the Polynomial order for the line. Polynomial order calculates order
     <syncfusion:Trendline IsTrendlineVisible="True"  PolynomialOrder="2" />
 
 </syncfusion:LineSeries.Trendlines>
-
+{% endhighlight %}
 The lines of Trendlines can be customized using properties such as Stroke, StrokeThickness, and StrokeDashedArray.Stroke is used to add color to the line stroke, StrokeThickness is used to specify line thickness and StrokeDashedArray is used to draw dotted lines.
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-85.png](Trendlines_images/Trendlines_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/wpf/sshot-85.png](Trendlines_images/Trendlines_img1.png)
+
 
 
 ## Types of Trendlines
@@ -56,25 +56,25 @@ SfChart supports the following type of Trendlines.
 
 
 
-Linear Trendline is a best-fit straight line that is used with sets of simple linear data. A LinearTrendline shows when something is increasing or decreasing at a steady rate. 
+####Linear Trendline is a best-fit straight line that is used with sets of simple linear data. A LinearTrendline shows when something is increasing or decreasing at a steady rate. 
 
-Exponential
+####Exponential
 
 Exponential Trendline is a curved line that is used when data values rise or fall at constantly increasing rates.
 
-Power
+####Power
 
 Power Trendline is a curved line that is used with sets of data comparing measurements that increase at a specific rate, for example, the acceleration of race car at one second intervals.
 
-Logarithmic
+####Logarithmic
 
 Logarithmic Trendline is a best-fit curved line that is used when the rate of change in the data increases or decreases quickly and then levels out.
 
-Polynomial
+####Polynomial
 
 Polynomial Trendline is a curved line that is used when data fluctuates.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -85,11 +85,11 @@ Polynomial Trendline is a curved line that is used when data fluctuates.
         </syncfusion:LineSeries.Trendlines>
 
 
+{% endhighlight %}
 
 
+![C:/Users/rachel/Desktop/wpf/sshot-86.png](Trendlines_images/Trendlines_img2.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-86.png](Trendlines_images/Trendlines_img2.png)' | markdownify }}
-{:.image }
 
 
 ## Forecasting
@@ -103,7 +103,7 @@ These can be enabled by setting the value for the Forward Forecasting and Backwa
 
 The following code example illustrates how to enable Forecasting in Trendlines.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -113,15 +113,15 @@ The following code example illustrates how to enable Forecasting in Trendlines.
 
 </syncfusion:LineSeries.Trendlines>
 
+{% endhighlight %}
 
 
 
-
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-87.png](Trendlines_images/Trendlines_img3.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/wpf/sshot-87.png](Trendlines_images/Trendlines_img3.png)
 
 
-[XAML]
+
+{% highlight xml %}
 
 
 
@@ -131,9 +131,9 @@ The following code example illustrates how to enable Forecasting in Trendlines.
 
 </syncfusion:LineSeries.Trendlines>
 
+{% endhighlight %}
 
+![C:/Users/rachel/Desktop/wpf/sshot-88.png](Trendlines_images/Trendlines_img4.png)
 
-{{ '![C:/Users/rachel/Desktop/wpf/sshot-88.png](Trendlines_images/Trendlines_img4.png)' | markdownify }}
-{:.image }
 
 

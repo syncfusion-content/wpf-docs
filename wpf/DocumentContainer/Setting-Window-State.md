@@ -19,8 +19,7 @@ To set the MDI window state to "minimized", use the below code snippet. FlowDocu
 
 
 
-[XAML]
-
+{% highlight xml %}
 
 
 <!-- Adding Document Container -->
@@ -37,9 +36,9 @@ To set the MDI window state to "minimized", use the below code snippet. FlowDocu
 
 </syncfusion:DocumentContainer>
 
+{% endhighlight %}
 
+![](Setting-Window-State_images/Setting-Window-State_img1.jpeg)
 
-{{ '![](Setting-Window-State_images/Setting-Window-State_img1.jpeg)' | markdownify }}
-{:.image }
 
 

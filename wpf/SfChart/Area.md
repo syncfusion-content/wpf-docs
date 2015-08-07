@@ -11,13 +11,13 @@ documentation: ug
 
 ChartArea represents the entire chart and all its elements. It’s a virtual rectangular area, that includes all the chart elements like axis, legends, series, etc. 
 
-Multiple Panes
+###Multiple Panes
 
 Creating multiple panes for the chart improves readability of the series. When the chart areas are aligned properly, it proves to be a better comparison for the series. They can be aligned the way you visualized it.
 
 In SfChart, you can split areas into multiple rows and columns using ChartRowDefinition and ChartColumnDefinition like GridRow and Column Definition. The following code example demonstrates how you can create multiple panes in the chart area.
 
- [XAML]
+{% highlight xml %}
 
 <syncfusion:SfChart.RowDefinitions>
 
@@ -60,26 +60,26 @@ In SfChart, you can split areas into multiple rows and columns using ChartRowDef
                 </syncfusion:LineSeries.YAxis>
 
             </syncfusion:LineSeries>
-
+{% endhighlight %}
 
 
 The following is the output for the multiple panes.
 
-{{ '![C:/Users/rachel/Desktop/wpf/1.png](Area_images/Area_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/rachel/Desktop/wpf/1.png](Area_images/Area_img1.png)
 
 
-Chart area customization APIs
+
+###Chart area customization APIs
 
 The chart area can be customized to enrich your application’s look and feel. SfChart provides APIs to customize chart area, based on your requirements. Chart area includes many elements, and each element can be customized using the API that you can learn from the respective sections of those elements. This section explains about the elements and API for common customization of chart area.
 
-_Chart area customization_
+Chart area customization
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 PrimaryAxis</td><td>
@@ -125,7 +125,7 @@ Represents the ChartColorModel for entire chart.</td></tr>
 
 The following code example shows the customization of chart with different chart area properties.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -199,17 +199,17 @@ The following code example shows the customization of chart with different chart
 
             </syncfusion:SfChart>
 
+{% endhighlight %}
+
+![C:/Users/rachel/Desktop/snaps/2.png](Area_images/Area_img2.png)
 
 
-{{ '![C:/Users/rachel/Desktop/snaps/2.png](Area_images/Area_img2.png)' | markdownify }}
-{:.image }
 
-
-SideBySideSeriesPlacement
+###SideBySideSeriesPlacement
 
 It defines the placement pattern of bar type series like Column, Bar, RangeColumn, etc. It is a Boolean property and its default value is True. When you disable this property, all the series overlap as shown in the following image.
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfChart HorizontalAlignment="Center" SideBySideSeriesPlacement="False" VerticalAlignment="Center" Height="600" Width="700" >
 
@@ -223,13 +223,13 @@ It defines the placement pattern of bar type series like Column, Bar, RangeColum
 
 <syncfusion:ColumnSeries Label="2011" ItemsSource="{Binding Demands}" XBindingPath="Demand" YBindingPath="Year2011" SegmentSpacing="0.5" />
 
+{% endhighlight %}
+
+![](Area_images/Area_img3.png)
 
 
-{{ '![](Area_images/Area_img3.png)' | markdownify }}
-{:.image }
 
-
-> _Note: Here Spacing for Series 2 is defined to differentiate both series. Otherwise, both the series of same width_
+Note: Here Spacing for Series 2 is defined to differentiate both series. Otherwise, both the series of same width
 
 
 

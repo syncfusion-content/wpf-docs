@@ -24,6 +24,7 @@ The appearance of the DoubleTextBox control can be customized by using the Visua
 * VS2010
 * Metro
 * Transparent
+
 ## Blendability
 
 
@@ -36,8 +37,8 @@ The steps to edit the DoubleTextBox Template by using Expression Blend are as fo
 
 
 
-{{ '![](Appearance_images/Appearance_img1.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img1.png)
+
 
 
 
@@ -46,8 +47,8 @@ The steps to edit the DoubleTextBox Template by using Expression Blend are as fo
 
 
 
-{{ '![](Appearance_images/Appearance_img2.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img2.png)
+
 
 
 
@@ -58,8 +59,8 @@ Another way to edit the Template is as follows:
 
 
 
-{{ '![](Appearance_images/Appearance_img3.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img3.png)
+
 
 
 
@@ -68,28 +69,28 @@ This will open a dialog (below) where you can give your style a name and define 
 
 
 
-{{ '![](Appearance_images/Appearance_img4.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img4.png)
+
 
 
 
 
 The result of these steps is an XAML, which is placed within your application. This XAML represents the default style for the DoubleTextBox.
 
-
+{% highlight xml %}
 
 <syncfusion:DoubleTextBox Height="25" Width="150" 
 
                           Style="{StaticResource DoubleTextBoxStyle1}"/>   
 
-
+{% endhighlight %}
 
 All template items can now be found in the Objects and Timeline window.
 
 
 
-{{ '![](Appearance_images/Appearance_img5.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img5.png)
+
 
 
 
@@ -98,15 +99,15 @@ Now you can replace the existing Template setter and Triggers with your own crea
 
 
 
-{{ '![](Appearance_images/Appearance_img6.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img6.png)
+
 
 
 
 
 Here is a simple example to customize the UnFocused state of the DoubleTextBox: 
 
-
+{% highlight xml %}
 
 <Trigger Property="IsFocused" Value="False">
 
@@ -114,13 +115,13 @@ Here is a simple example to customize the UnFocused state of the DoubleTextBox:
 
 </Trigger>
 
-
+{% endhighlight %}
 
 When a control lost the Focus, the Background color of the DoubleTextBox will change to LightGray. Similarly you can customize every state and property in Expression Blend.
 
 
 
-{{ '![](Appearance_images/Appearance_img7.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img7.png)
+
 
 

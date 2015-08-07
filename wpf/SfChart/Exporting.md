@@ -22,13 +22,13 @@ You can export the SfChart as image that is useful for many applications. The im
 
 The Save method is used for exporting the chart as Image. The following are the overloading methods.
 
-_Overloading Methods_
+Overloading Methods
 
 <table>
 <tr>
-<td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 Save()</td><td>
@@ -46,7 +46,7 @@ Export the chart image using the stream and its corresponding encoder.</td></tr>
 
 The following code example illustrates the chart exporting feature.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -76,10 +76,9 @@ The following code example illustrates the chart exporting feature.
 
 
 
+{% endhighlight %}
 
-
-[C#]
-
+{% highlight C# %}
 
 
 private void Button_Click(object sender, RoutedEventArgs e)
@@ -93,4 +92,4 @@ private void Button_Click(object sender, RoutedEventArgs e)
 }
 
 
-
+{% endhighlight %}

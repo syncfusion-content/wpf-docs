@@ -9,7 +9,7 @@ documentation: ug
 
 # DropDownMenuItem
 
-Adding Icon to DropDownMenuItem
+###Adding Icon to DropDownMenuItem
 
 The DropDownMenuItem control is a basic MenuItem, which forms the actual items of DropDownMenuGroup. 
 
@@ -17,7 +17,7 @@ The icon of the DropDownMenuItem can be added as follows:
 
 
 
- [XAML]
+{% highlight xml %}
 
 <shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
@@ -41,13 +41,13 @@ The icon of the DropDownMenuItem can be added as follows:
 
 </shared:DropDownButtonAdv>
 
+{% endhighlight %}
+
+![](DropDownMenuItem_images/DropDownMenuItem_img1.png)
 
 
-{{ '![](DropDownMenuItem_images/DropDownMenuItem_img1.png)' | markdownify }}
-{:.image }
 
-
-Checkable DropDownMenuItem
+###Checkable DropDownMenuItem
 
 The DropDownMenuItem can be checked by setting the IsCheckable property to true. 
 
@@ -55,7 +55,7 @@ The feature can be enabled by using the property IsCheckable:
 
 
 
- [XAML]
+{% highlight xml %}
 
 <shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
 
@@ -71,9 +71,9 @@ The feature can be enabled by using the property IsCheckable:
 
 </shared:DropDownButtonAdv>
 
+{% endhighlight %}
 
+![](DropDownMenuItem_images/DropDownMenuItem_img2.png)
 
-{{ '![](DropDownMenuItem_images/DropDownMenuItem_img2.png)' | markdownify }}
-{:.image }
 
 

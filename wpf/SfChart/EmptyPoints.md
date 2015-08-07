@@ -13,7 +13,7 @@ The data collection that is passed to the chart can have NaN, or infinite values
 
 The following code example shows how to handle empty points in a series using sample data.
 
-[XAML]
+{% highlight xml %}
 
      <syncfusion:SfChart>
 
@@ -68,10 +68,10 @@ The following code example shows how to handle empty points in a series using sa
                     EmptyPointValue="Average"/>
 
         </syncfusion:SfChart>
+{% endhighlight %}
 
 
-
-[C#]
+{% highlight C# %}
 
 public class CategoryDataViewModel
 
@@ -237,19 +237,19 @@ public class CategoryDataViewModel
 
         }
 
-
+{% endhighlight %}
 
 The following is a screenshot of a ColumnSeries with empty points.
 
-{{ '![](EmptyPoints_images/EmptyPoints_img1.png)' | markdownify }}
-{:.image }
+![](EmptyPoints_images/EmptyPoints_img1.png)
 
 
-{{ '![](EmptyPoints_images/EmptyPoints_img2.png)' | markdownify }}
-{:.image }
+
+![](EmptyPoints_images/EmptyPoints_img2.png)
 
 
-{{ '![](EmptyPoints_images/EmptyPoints_img3.png)' | markdownify }}
-{:.image }
+
+![](EmptyPoints_images/EmptyPoints_img3.png)
+
 
 

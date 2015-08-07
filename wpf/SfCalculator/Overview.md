@@ -17,8 +17,8 @@ The Calculator control allows us to perform mathematical operations as like in c
 
 ## Key Features
 
-* Value – The Value property retrieves the current value calculated from the calculator.
-* Memory – The Memory property retrieves the value stored in memory.
+* #####Value – The Value property retrieves the current value calculated from the calculator.
+* #####Memory – The Memory property retrieves the value stored in memory.
 
 
 

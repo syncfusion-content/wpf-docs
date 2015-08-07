@@ -16,10 +16,10 @@ DoubleTextBox accepts null values. To enable the null option you have to set the
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                             UseNullOption="True" NullValue="1"/></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                             UseNullOption="True" NullValue="1"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new                           Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = 1;</td></tr>
+{% highlight C# %} Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new                           Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = 1; {% endhighlight %} </td></tr>
 </table>
 
 
@@ -27,8 +27,8 @@ In this sample, the NullValue (NullValue = 1) is set to the Value property of th
 
 
 
-{{ '![](Null-Value-support_images/Null-Value-support_img1.png)' | markdownify }}
-{:.image }
+![](Null-Value-support_images/Null-Value-support_img1.png)
+
 
 
 
@@ -36,10 +36,10 @@ In this sample, the NullValue (NullValue = 1) is set to the Value property of th
 <table>
 <tr>
 <td>
-XAML<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                             UseNullOption="True" NullValue="{x:Null}"/></td></tr>
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                             UseNullOption="True" NullValue="{x:Null}"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-C#Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new                            Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = null;</td></tr>
+{% highlight C# %} Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new                            Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = null; {% endhighlight %} </td></tr>
 </table>
 
 
@@ -47,8 +47,8 @@ In this sample, the NullValue (NullValue = null) is set to the Value property of
 
 
 
-{{ '![](Null-Value-support_images/Null-Value-support_img2.png)' | markdownify }}
-{:.image }
+![](Null-Value-support_images/Null-Value-support_img2.png)
+
 
 
 See Also

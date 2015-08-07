@@ -13,13 +13,13 @@ SfChart allows you to add Striplines to the chart, to provide classification abo
 
 The following APIs are used with the Stripline.
 
-_Stripline_
+Stripline
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Definition</td></tr>
+<th>
+Property</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Start</td><td>
@@ -97,7 +97,7 @@ Represents the stripline for chart axis.</td></tr>
 
 The following example illustrates the Stripline feature of chart.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -143,15 +143,15 @@ The following example illustrates the Stripline feature of chart.
 
         </syncfusion:SfChart>
 
+{% endhighlight %}
 
+![](Striplines_images/Striplines_img1.png)
 
-{{ '![](Striplines_images/Striplines_img1.png)' | markdownify }}
-{:.image }
 
 
 The following example illustrates the Segmented Stripline feature of chart.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -203,9 +203,9 @@ The following example illustrates the Segmented Stripline feature of chart.
 
         </syncfusion:SfChart>
 
+{% endhighlight %}
 
+![](Striplines_images/Striplines_img2.png)
 
-{{ '![](Striplines_images/Striplines_img2.png)' | markdownify }}
-{:.image }
 
 

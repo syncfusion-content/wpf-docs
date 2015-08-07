@@ -13,8 +13,8 @@ This section guides you on getting started with DocumentContainer control. It co
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.jpeg)
+
 
 
 
@@ -38,25 +38,25 @@ The class diagram for Document Container is illustrated below.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 ## Creating Document Container control
 
 There are two possible ways of creating a simple DocumentContainer control. 
 
-Through Designer
+###Through Designer
 
 To create the Document Container control through designer, drag a Document Container control from the toolbox onto the design area.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 
-Programmatically
+
+###Programmatically
 
 To create the Document Container programmatically, use the following XAML or C# code.
 
@@ -65,10 +65,10 @@ To create the Document Container programmatically, use the following XAML or C# 
 <table>
 <tr>
 <td>
-[XAML]<!-- Adding Document Container --><syncfusion:DocumentContainer Name="DocContainer"/></td></tr>
+{% highlight xml %}<!-- Adding Document Container --><syncfusion:DocumentContainer Name="DocContainer"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-[C#]//Creating instance of document containerDocumentContainer DocContainer = new DocumentContainer();//Adding control to the windowthis.Content = DocContainer;</td></tr>
+{% highlight C# %}//Creating instance of document containerDocumentContainer DocContainer = new DocumentContainer();//Adding control to the windowthis.Content = DocContainer;{% endhighlight %}</td></tr>
 </table>
 
 

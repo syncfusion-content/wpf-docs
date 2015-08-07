@@ -17,7 +17,7 @@ Create a GroupBar control in XAML, as seen below.
 
 
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:GroupBar Name="groupBar1">
 
@@ -43,27 +43,27 @@ Create a GroupBar control in XAML, as seen below.
 
 </syncfusion:GroupBar>
 
+{% endhighlight %}
+
+## Through  C#
+
+To create a GroupBar control in  C# , include the following namespace to the directives list.
 
 
-## Through C#
 
-To create a GroupBar control in C#, include the following namespace to the directives list.
-
-
-
-[C#]
+{% highlight C# %}
 
 using Syncfusion.Windows.Tools.Controls;
 
 
-
+{% endhighlight %}
 
 
 Next, create the GroupBar as follows.
 
 
 
-[C#]
+{% highlight C# %}
 
 GroupBar gBar = new GroupBar();
 
@@ -99,7 +99,7 @@ GroupBar gBar = new GroupBar();
 
 
 
-
+{% endhighlight %}
 
 
 
@@ -107,7 +107,7 @@ This will generate the following GroupBar control.
 
 
 
-{{ '![](Populating-Data_images/Populating-Data_img1.png)' | markdownify }}
-{:.image }
+![](Populating-Data_images/Populating-Data_img1.png)
+
 
 

@@ -17,8 +17,8 @@ The GroupBar control implements list-type controls in the user interface, simila
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 ## Why use our Groupbar control?
@@ -41,11 +41,12 @@ Here are some highlights of our Groupbar control.
 
 
 
-Navigation Pane Features
+###Navigation Pane Features
 
 * Resizing the Pop up
 * Expand / Collapsing the Navigation Pane
 * Setting the height of Toolbar
+
 ## Creating GroupBar control
 
 
@@ -59,8 +60,8 @@ The following steps describe how to create the GroupBar control via Visual Studi
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 
@@ -69,8 +70,8 @@ The following steps describe how to create the GroupBar control via Visual Studi
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 
@@ -82,16 +83,16 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 
 
 3. Drag GroupBar to the designer and drop it there. This will generate the control. 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 
@@ -100,8 +101,8 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
+
 
 
 
@@ -110,8 +111,8 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 
@@ -131,16 +132,16 @@ To create the GroupBar control through code, use the following XAML or C# code.
 <table>
 <tr>
 <td>
-[XAML]<!-- Adding GroupBar --><syncfusion:GroupBar Height="300" Width="230" Name="groupBar"/></td></tr>
+{% highlight xml %}<!-- Adding GroupBar --><syncfusion:GroupBar Height="300" Width="230" Name="groupBar"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-[C#]//Creating an instance of GroupBarGroupBar groupBar = new GroupBar();//Setting height for GroupBargroupBar.Height = 300;//Setting width for GroupBargroupBar.Width = 200;//Adding GroupBar to windowthis.Content = groupBar;</td></tr>
+{% highlight C# %}//Creating an instance of GroupBarGroupBar groupBar = new GroupBar();//Setting height for GroupBargroupBar.Height = 300;//Setting width for GroupBargroupBar.Width = 200;//Adding GroupBar to windowthis.Content = groupBar; {% endhighlight %} </td></tr>
 </table>
 ### Itemssource Support/GroupBar Control
 
 Items in a GroupBar can also be added by binding a collection of business object through Itemssource property. The following is an example of the business object, which is used for Itemssource binding. 
 
-
+{% highlight C# %}
 
 public class RegionStatistics
 
@@ -183,10 +184,10 @@ private void Window1_Loaded(object sender, RoutedEventArgs e)
             gri.DataContext = this;
 
         }
+{% endhighlight %}
 
 
-
-Binding Itemssource Property
+###Binding Itemssource Property
 
  Set the Itemssource property, by using the following code.
 
@@ -197,10 +198,10 @@ Binding Itemssource Property
 <table>
 <tr>
 <td>
-[XAML]<sync:GroupBar Name="gBar" ItemsSource="{Binding SampleList}"/></td></tr>
+{% highlight xml %}<sync:GroupBar Name="gBar" ItemsSource="{Binding SampleList}"/> {% endhighlight %} </td></tr>
 <tr>
 <td>
-[C#]Binding bind = new Binding();          bind.Source = this;          bind.Path = new PropertyPath("SampleList");          gBar.SetBinding(GroupBar.ItemssourceProperty, bind);</td></tr>
+{% highlight C# %}Binding bind = new Binding();          bind.Source = this;          bind.Path = new PropertyPath("SampleList");          gBar.SetBinding(GroupBar.ItemssourceProperty, bind); {% endhighlight %} </td></tr>
 </table>
 
 
@@ -208,13 +209,13 @@ Binding Itemssource Property
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.jpeg)
 
 
 
 
-Using ItemTemplate
+
+###Using ItemTemplate
 
 
 
@@ -224,7 +225,7 @@ Apply the ItemTemplate to GroupBar, by using the following code.
 
 
 
-[XAML]       
+{% highlight xml %}       
 
  <sync:GroupBar.ItemTemplate>
 
@@ -237,16 +238,16 @@ Apply the ItemTemplate to GroupBar, by using the following code.
             </sync:GroupBar.ItemTemplate>
 
 
+{% endhighlight %}
+
+
+![](Getting-Started_images/Getting-Started_img9.jpeg)
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img9.jpeg)' | markdownify }}
-{:.image }
 
 
-
-
-Using ItemContainer Style 
+###Using ItemContainer Style 
 
 The above image shows that the GroupBar is bounded with the ObservableCollection SampleList. Write the HeaderTemplate and ContentTemplate for the ItemContainer, by using the following code. 
 
@@ -254,7 +255,7 @@ The Item Container Style should be declared as follows.
 
 
 
-
+{% highlight xml %}
 
 <sync:GroupBar.ItemContainerStyle>
 
@@ -327,26 +328,26 @@ Apply Content Template to Content Template property of the item, by using the fo
 
 
 
+{% endhighlight %}
+
+
+
+
+![](Getting-Started_images/Getting-Started_img10.jpeg)
 
 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img10.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-Using Template Selector
+###Using Template Selector
 
 Template can be applied according to the logic set by the user using Template Selector.
 
 The following code illustrates this.
 
-> _Note:Data Template has been written for North America Statistics data_
+Note:Data Template has been written for North America Statistics data
 
-
+{% highlight xml %}
 
 <DataTemplate x:Key="North">
 
@@ -362,11 +363,11 @@ The following code illustrates this.
 
  </DataTemplate>
 
+{% endhighlight %}
 
+Note: Data Template has been written for South America Statistics data.
 
-> _Note: Data Template has been written for South America Statistics data._
-
-
+{% highlight xml %}
 
 <DataTemplate x:Key="South">
 
@@ -383,12 +384,12 @@ The following code illustrates this.
 </DataTemplate>
 
 
+{% endhighlight %}
 
 
+Note: Data Template has been written for Other Statistics data.
 
-> _Note: Data Template has been written for Other Statistics data._
-
-
+{% highlight xml %}
 
 <DataTemplate x:Key="Other">
 
@@ -404,11 +405,11 @@ The following code illustrates this.
 
 </DataTemplate>
 
+{% endhighlight %}
 
+Note: Following is the data template selector logic set by the user.
 
-> _Note: Following is the data template selector logic set by the user._
-
-
+{% highlight xml %}
 
 /// <summary>
 
@@ -455,12 +456,12 @@ The following code illustrates this.
         }
 
     }
+{% endhighlight %}
 
 
+Note: The ContentTemplate Selector can be applied as follows.
 
-> _Note: The ContentTemplate Selector can be applied as follows._
-
-
+{% highlight xml %}
 
 <sync:GroupBar.ItemContainerStyle>
 
@@ -488,15 +489,15 @@ The following code illustrates this.
 
 </Style>
 
+{% endhighlight %}
+
+![](Getting-Started_images/Getting-Started_img11.jpeg)
 
 
-{{ '![](Getting-Started_images/Getting-Started_img11.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-Events associated with GroupBar ContextMenu
+###Events associated with GroupBar ContextMenu
 
 When Itemssource is in use, Add Tab, Delete Tab, Rename Tab, etc Commands in Context menu cannot be used. To enable this user can use the following event associated with the context menu.
 
@@ -508,7 +509,7 @@ Add a new tab when Itemssource in use, by using the following code.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -531,20 +532,19 @@ private void gBar_ContextMenuItemClick(object sender, GroupBarContextMenuItemEve
  	}
 
 }
+{% endhighlight %}
 
-> 
-
-> _Note: Set the Handled property of GroupBarContextMenuItemEventArgs to true to avoid the in-built logic to execute._
-
+Note: Set the Handled property of GroupBarContextMenuItemEventArgs to true to avoid the in-built logic to execute.
 
 
-{{ '![](Getting-Started_images/Getting-Started_img12.jpeg)' | markdownify }}
-{:.image }
+
+![](Getting-Started_images/Getting-Started_img12.jpeg)
 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img13.jpeg)' | markdownify }}
-{:.image }
+
+![](Getting-Started_images/Getting-Started_img13.jpeg)
+
 
 
