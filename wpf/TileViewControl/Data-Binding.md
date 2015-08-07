@@ -18,7 +18,7 @@ The TileViewControl supports binding to objects. The following code example illu
 1. Create a class that act as a model for TileViewItem.
 
 
-   ~~~ cs
+   ~~~ c#
      [C#]
 
       public class Model
@@ -37,7 +37,7 @@ The TileViewControl supports binding to objects. The following code example illu
 2. Create a ViewModel class and initialize the items as follows:
 
 
-   ~~~ cs
+   ~~~ c#
      [C#]
 
      public class ViewModel

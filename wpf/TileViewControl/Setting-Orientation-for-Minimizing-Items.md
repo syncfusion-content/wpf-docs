@@ -136,12 +136,12 @@ _MinimizedItemsOrientationChanged Table_
 
 <table>
 <tr>
-<td>
-{{ '**Event**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }} </td><td>
-{{ '**Arguments**' | markdownify }} </td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Reference links**' | markdownify }} </td></td>
+<th>
+{{ '**Event**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Arguments**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
 <th>
 MinimizedItemsOrientationChanged</th><th>

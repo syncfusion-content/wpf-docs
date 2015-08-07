@@ -231,7 +231,7 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 
 
 
-   ~~~ cs
+   ~~~ c#
      [C#]
 
 

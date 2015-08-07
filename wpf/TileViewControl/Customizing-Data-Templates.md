@@ -82,7 +82,7 @@ Using _ItemTemplateSelector_ feature, you can use different templates for the it
 1. Create a template selector in the code.
 
 
-   ~~~ cs
+   ~~~ c#
      [C#]
 
      public class TileViewItemTemplateSelector : DataTemplateSelector
