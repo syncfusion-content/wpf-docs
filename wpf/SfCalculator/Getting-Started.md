@@ -14,6 +14,7 @@ documentation: ug
 #####Assembly: Syncfusion.SfInut.WinRT (in Syncfusion.SfInptu.WinRT.dll)
 
 The following code example shows how to create the SfCalculator from XAML and code behind respectively.
+
 {% highlight xml %}
 
 <Page xmlns:Input="using:Syncfusion.UI.Xaml.Controls.Input">
