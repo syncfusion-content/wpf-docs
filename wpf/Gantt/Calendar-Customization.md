@@ -19,24 +19,24 @@ This feature allows you to set your own schedule for the entire project. Using t
 
 Currently Default Start Time and Default End Time will reflect only in the Chart Background Panel. 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 You can use this feature when you want to change the schedule as needed. For example, if April to March is your financial year, you can set this as your fiscal year and schedule the tasks accordingly. 
 
 You can also use this to schedule the works that have different week cycle. For example if your organization follows the week cycle from Wednesday to Tuesday, you can achieve this using calendar Customization feature.
 
-Properties
+## Properties
 
 _Properties_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 WeekBeginsOn</td><td>
@@ -75,14 +75,14 @@ N/A</td></tr>
 </table>
 
 
-Adding Calendar Customization to an Application 
+## Adding Calendar Customization to an Application 
 
 Define the value to weekdays, months, FY Numbering, default start time and default end time as required and assign it to the appropriate APIs in the Gantt.
 
 The following code illustrates adding Calendar Customization to an Application:
 
 
-
+{% highlight html  %}
 [XAML]
 
 
@@ -115,7 +115,8 @@ The following code illustrates adding Calendar Customization to an Application:
 
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -142,18 +143,18 @@ The following code illustrates adding Calendar Customization to an Application:
 Gantt.DefaultEndTime = new GanttTime() { Hour = 6};
 
 
-
+{% endhighlight %}
 The following image shows Customized Calender:
 
 
 
-{{ '![](Calendar-Customization_images/Calendar-Customization_img1.png)' | markdownify }}
-{:.image }
+![](Calendar-Customization_images/Calendar-Customization_img1.png)
+
 
 
 _Customized Calender_
 
-Samples Link
+### Samples Link
 
 To view samples:
 

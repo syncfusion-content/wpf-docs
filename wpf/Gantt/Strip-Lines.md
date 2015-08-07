@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Gantt provides support for adding Strip Lines in the Gantt chart region which will denote an important event in a sequential timeline. By using this feature, you can add the Strip Lines to highlight the important days in your project.  You can add the collection of strip lines through the provided API. 
 
-Strip lines in Essential Gantt support the following features:
+## Strip lines in Essential Gantt support the following features:
 
 * Repeat behavior: Strip lines can be repeatable in the Gantt chart region based on repeat behaviour and repeat interval. The available repeat behaviours are as follows:
 * Year
@@ -37,11 +37,11 @@ _Properties_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 Background</td><td>
@@ -152,17 +152,17 @@ Use Case Scenarios
 * You can mark the important dates and meetings in the scheduled time line.
 * Strip lines help you to avoid missing important events.
 
-Properties
+## Properties
 
 _Properties_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 ShowStripLines</td><td>
@@ -178,15 +178,15 @@ IEnumerable</td></tr>
 </table>
 
 
-Enums
+## Enums
 
 _Enums_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Repeat</td><td>
@@ -198,7 +198,7 @@ This property contains the following values:Regular: This denotes the normal str
 </table>
 
 
-Events
+## Events
 
 _Events_
 
@@ -216,6 +216,7 @@ Whenever a strip line is created, this event will be triggered. The handler of t
 StripLineCreated(object sender, StriplineCreatedEventArgs args)</th><th>
 Event </th></tr>
 </table>
+
 ## Adding Striplines to Application
 
 To add the strip lines to an application:
@@ -227,7 +228,7 @@ To add the strip lines to an application:
 The following code illustrates Creating the collection of StripLineInfo.
 
 
-
+{% highlight c# %}
 [C#]
 
 StripCollection =  new List<StripLineInfo>();
@@ -267,11 +268,11 @@ private List<StripLineInfo> GetStripCollection()
 }
 
 
-
+{% endhighlight  %}
 The following code example illustrates binding the strip line collection to StripLines:
 
 
-
+{% highlight html %}
 [XAML]
 
 <sync:GanttControl x:Name="Gantt"
@@ -306,7 +307,7 @@ The following code example illustrates binding the strip line collection to Stri
 
 </sync:GanttControl>                                                
 
-
+{% endhighlight  %}
 
 Output
 
@@ -314,13 +315,13 @@ The following image shows the Resultant output:
 
 
 
-{{ '![](Strip-Lines_images/Strip-Lines_img1.png)' | markdownify }}
-{:.image }
+![](Strip-Lines_images/Strip-Lines_img1.png)
+
 
 
 _Strip Lines in Gantt Chart_
 
-Sample Link
+## Sample Link
 
 To view samples:
 

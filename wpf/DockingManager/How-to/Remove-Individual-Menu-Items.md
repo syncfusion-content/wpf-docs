@@ -45,7 +45,7 @@ The below code shows how to disable Tabbed menu item using ShowTabbedMenuItem at
 
 
 {{ '![](Remove-Individual-Menu-Items_images/Remove-Individual-Menu-Items_img1.png)' | markdownify }}
-{:.image }
+
 
 
 Similarly you can use other properties to disable corresponding MeniItems.

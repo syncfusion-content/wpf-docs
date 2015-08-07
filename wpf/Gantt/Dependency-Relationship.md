@@ -20,44 +20,44 @@ Finish-to-start—You cannot start a task until the other task is completed.
 
 
 
-{{ '![](Dependency-Relationship_images/Dependency-Relationship_img1.png)' | markdownify }}
-{:.image }
+![](Dependency-Relationship_images/Dependency-Relationship_img1.png)
+
 
 
 Finish-to-finish—You cannot finish a task until the other task is completed.
 
 
 
-{{ '![](Dependency-Relationship_images/Dependency-Relationship_img2.png)' | markdownify }}
-{:.image }
+![](Dependency-Relationship_images/Dependency-Relationship_img2.png)
+
 
 
 Start-to-start—You cannot start a task until the other task is also started.
 
 
 
-{{ '![](Dependency-Relationship_images/Dependency-Relationship_img3.png)' | markdownify }}
-{:.image }
+![](Dependency-Relationship_images/Dependency-Relationship_img3.png)
+
 
 
 Start-to-Finish—You cannot finish a task until another the other task is started.
 
 
 
-{{ '![](Dependency-Relationship_images/Dependency-Relationship_img4.png)' | markdownify }}
-{:.image }
+![](Dependency-Relationship_images/Dependency-Relationship_img4.png)
+
 
 
 _Properties_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 Prodecessor</td><td>
@@ -80,7 +80,7 @@ Specifing the Relationship between Tasks
 The following code illustrates how to add the Dependency Relationship between tasks:
 
 
-
+{% highlight c# %}
 [C#]
 
 GanttItemSource = new ObservableCollection<TaskDetails>();
@@ -156,17 +156,17 @@ return task;
 
 }
 
-
+{% endhighlight  %}
 
 The following image shows the Dependency Relationship:
 
 
 
-{{ '![](Dependency-Relationship_images/Dependency-Relationship_img5.png)' | markdownify }}
-{:.image }
+![](Dependency-Relationship_images/Dependency-Relationship_img5.png)
 
 
-Samples Link
+
+## Samples Link
 
 To view samples: 
 
@@ -175,6 +175,7 @@ To view samples:
 3. Select Gantt.
 4. Expand the Connectors Features item in the Sample Browser.
 5. Choose the Predecessor samples to launch. 
+
 ## Dynamic Predecessors and Resources
 
 
@@ -184,7 +185,7 @@ You can add/remove/update the predecessors and resources of tasks at run time. I
 
 You can edit the predecessor information from the GanttGrid. For resource, you can edit in the underlying source, Gantt will listen to the change in the underlying source and reflect it in both GanttGrid and GanttChart.
 
-Editing Predecessors
+### Editing Predecessors
 
 While creating a new predecessor in Grid, it should be in the following format:
 
@@ -206,25 +207,25 @@ The following are what you should use for different relationships:
 
 If any other data is added, the current editing relationship will be deleted and only the valid predecessors remain for the task.
 
-Editing Resources
+### Editing Resources
 
 As of now, resources cannot be edited in Grid. You can update the resource collection in the underlying source whenever you need. Gantt will listen to the changes in the collection and will update the GanttGrid and GanttChart accordingly.
 
-Use Case Scenario
+### Use Case Scenario
 
 This helps to change the dependency relationships and resources of the tasks dynamically.
 
 
 
-{{ '![](Dependency-Relationship_images/Dependency-Relationship_img6.png)' | markdownify }}
-{:.image }
+![](Dependency-Relationship_images/Dependency-Relationship_img6.png)
+
 
 
 Adding Dynamic Predecessors and Resources to an Application
 
 The dynamic editing of predecessor will be automatically included in the Gantt by default. There is no need to provide any additional data for that. The following codes illustrate this:
 
-
+{% highlight html %}
 
 [XAML] 
 
@@ -263,13 +264,13 @@ The dynamic editing of predecessor will be automatically included in the Gantt b
 
 
 
-
+{% endhighlight  %}
 
 
 The following code will illustrate how to dynamically add resource and predecessor in the underlying collection:
 
 
-
+{% highlight c# %}
 [C#]
 
    // To Add the Dynamic Predecessors
@@ -279,6 +280,6 @@ The following code will illustrate how to dynamically add resource and predecess
    //To Add the Dynamic Resources   this.viewModel.GanttItemSource[0].ChildTask[2].Resource.Add(new Resource { ID = 3, Name = "Resource3" });
 
 
-
+{% endhighlight %}
 
 

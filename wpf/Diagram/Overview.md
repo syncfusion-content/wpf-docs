@@ -11,17 +11,18 @@ documentation: ug
 
 Essential Diagram WPF is an extensible and high-performance diagramming framework for WPF applications. It can be used by the developers who want to develop Microsoft Visio-like interactive graphics and diagramming applications. It stores graphical objects in a node graph and renders those objects on the screen.  
 
-> _A node graph is a structure consisting of nodes connected to each other by lines referred to as edges._
+> A node graph is a structure consisting of nodes connected to each other by lines referred to as edges.
 
 Essential Diagram supports both vector and raster graphics on the drawing surface. 
 
-> _A raster (bitmap) image uses a grid of individual pixels where each pixel can be a different color or shade. Bitmaps are composed of pixels._
+> A raster (bitmap) image uses a grid of individual pixels where each pixel can be a different color or shade. Bitmaps are composed of pixels.
 
 Vector graphics use mathematical relationships between points and the paths connecting them to describe an image. Vector graphics are composed of paths.
 
 Essential Diagram WPF allows you to create interactive diagrams easily.  
 
-Real World Scenarios
+
+## Real World Scenarios
 
 Essential Diagram WPF finds its application in various fields; some of them are listed below.
 
@@ -29,8 +30,8 @@ Essential Diagram WPF finds its application in various fields; some of them are 
 
 
 
-{{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.jpeg)
+
 
 
 
@@ -39,8 +40,8 @@ Essential Diagram WPF finds its application in various fields; some of them are 
 
 
 
-{{ '![](Overview_images/Overview_img2.jpeg)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img2.jpeg)
+
 
 
 
@@ -49,8 +50,8 @@ Essential Diagram WPF finds its application in various fields; some of them are 
 
 
 
-{{ '![](Overview_images/Overview_img3.jpeg)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img3.jpeg)
+
 
 
 
@@ -59,8 +60,8 @@ Essential Diagram WPF finds its application in various fields; some of them are 
 
 
 
-{{ '![](Overview_images/Overview_img4.jpeg)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img4.jpeg)
+
 
 
 _Swim Lane Diagram_
@@ -71,8 +72,8 @@ _Swim Lane Diagram_
 
 
 
-{{ '![](Overview_images/Overview_img5.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img5.png)
+
 
 
 
@@ -81,13 +82,13 @@ _Swim Lane Diagram_
 
 
 
-{{ '![](Overview_images/Overview_img6.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img6.png)
 
 
 
 
-Key Features
+
+## Key Features
 
 
 
@@ -146,7 +147,8 @@ Only Straight and Orthogonal Connector type supports line bridging.
 
 
 
-User Guide Organization
+
+## User Guide Organization
 
 The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of the Essential Diagram for WPF. It is organized into the following sections:
 
@@ -154,7 +156,7 @@ The product comes with numerous samples as well as an extensive documentation to
 * Getting Started-This section guides you on getting started with WPF application, controls etc.
 * Concepts and Features-The features of individual controls are illustrated with use case scenarios, code examples and screen shots under this section.
 
-Document Conventions 
+## Document Conventions 
 
 The conventions below will help you to quickly identify the important sections of information, while using the content:
 
@@ -162,9 +164,9 @@ _Document Conventions_
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-Description of the Icon</td></tr>
+<th>
+Convention</th><th>
+Description of the Icon</th></tr>
 <tr>
 <td>
 Note</td><td>

@@ -25,7 +25,7 @@ Essential Gantt allows you to customize the appearance of the DateTime indicator
 * DynamicTime: DateTime indicator will be positioned at the Gantt control loaded time. The position of the DateTime indicator will change based on the system time change.
 * Absolute: The DateTime indicator will be positioned at a user-defined position.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 1. The DateTime indicator enables you to find the current date or time in a scheduled timeline.
 2. You can customize the DateTime indicator to give a similar look and feel to your product.
@@ -37,11 +37,11 @@ _Properties_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 CurrentDateLine </td><td>
@@ -55,6 +55,7 @@ Get/sets the StickCurrentDateLineTo property of the Gantt control.By default thi
 Dependency Property</td><td>
 EnumNoneTodayDynamic TimeLoaded TimeAbsolute</td></tr>
 </table>
+
 ## Adding the DateTime Indicator to an Application
 
 Adding the DateTime indicator customization will change the appearance and position of the DateTime indicator. By default, the DateTime indicator will appear in the current date. The following steps explain how to add a customized DateTime indicator:
@@ -64,7 +65,7 @@ Adding the DateTime indicator customization will change the appearance and posit
 
 The following code samples illustrate how to customize the DateTime indicator.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -103,9 +104,9 @@ The following code samples illustrate how to customize the DateTime indicator.
         </gantt:GanttControl.TaskAttributeMapping>
 
 </gantt:GanttControl>
+{% endhighlight  %}
 
-
-
+{% highlight c# %}
 [C#]
 
 //StrokeDashArray will change the style of Line
@@ -124,7 +125,7 @@ this.Gantt.vCurrentDateLine.StrokeDashArray = strokeArray;
 
 this.Gantt.CurrentDateLine.StrokeThickness = 1;
 
-
+{% endhighlight  %}
 
 Output
 
@@ -132,8 +133,8 @@ The following image shows the resultant output:
 
 
 
-{{ '![](DateTime-Indicator-Customization_images/DateTime-Indicator-Customization_img1.png)' | markdownify }}
-{:.image }
+![](DateTime-Indicator-Customization_images/DateTime-Indicator-Customization_img1.png)
+
 
 
 _Customized DateTime Indicator_

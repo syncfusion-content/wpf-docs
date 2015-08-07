@@ -66,6 +66,6 @@ In the above code a DrawingImage object is created as a staticresource and assig
 
 
 {{ '![C:/Users/Hemanth/Desktop/Documentation/Images/Icon.png](Set-Header-Icon-for-MDI-Window_images/Set-Header-Icon-for-MDI-Window_img1.png)' | markdownify }}
-{:.image }
+
 
 

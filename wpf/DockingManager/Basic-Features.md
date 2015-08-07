@@ -19,18 +19,16 @@ Dock State is a state which represents the child as Dock Window as shown below:
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.State="Dock"   syncfusion:DockingManager.Header="Dock Window"/></syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetHeader(grid1,"Dock Window");DockingManager.SetState(grid1, DockState.Dock);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.State="Dock"   syncfusion:DockingManager.Header="Dock Window"/></syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]DockingManager.SetHeader(grid1,"Dock Window");DockingManager.SetState(grid1, DockState.Dock);
+{% endhighlight %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/DockingWindow.jpg](Basic-Features_images/Basic-Features_img1.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/DockingWindow.jpg](Basic-Features_images/Basic-Features_img1.jpeg)
+
 
 
 Float State:
@@ -39,18 +37,16 @@ Float State displays the child in FloatWindow as shown below:
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager>   <Grid Name="grid1" syncfusion:DockingManager.State="Float"/></syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetState(grid1, DockState.Float);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager>   <Grid Name="grid1" syncfusion:DockingManager.State="Float"/></syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]DockingManager.SetState(grid1, DockState.Float);
+{% endhighlight  %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/FloatState.jpg](Basic-Features_images/Basic-Features_img2.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/FloatState.jpg](Basic-Features_images/Basic-Features_img2.jpeg)
+
 
 
 Auto Hidden State:
@@ -59,18 +55,16 @@ Auto hidden state hides the children in one of the side panels available with th
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager>   <Grid Name="grid1" syncfusion:DockingManager.State="AutoHidden"/></syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetState(grid1, DockState.AutoHidden);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager>   <Grid Name="grid1" syncfusion:DockingManager.State="AutoHidden"/></syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]DockingManager.SetState(grid1, DockState.AutoHidden);
+{% endhighlight  %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/FloatState.jpg](Basic-Features_images/Basic-Features_img3.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/FloatState.jpg](Basic-Features_images/Basic-Features_img3.jpeg)
+
 
 
 ### Document State Child
@@ -86,36 +80,32 @@ You can create MDI Documents by specifying ContainerMode to MDI as a child state
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="MDI"><Grid Name="grid1" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.Header="MDI"/></syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#] DockingManager manager=new DockingManager();manager.UseDocumentContainer = true;manager.ContainerMode = DocumentContainerMode.MDI;Grid child=new Grid();DockingManager.SetHeader(child, "MDI");DockingManager.SetState(child,DockState.Document);manager.Children.Add(child);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="MDI"><Grid Name="grid1" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.Header="MDI"/></syncfusion:DockingManager>
+{% endhighlight %}
+{% highlight c# %}
+[C#] DockingManager manager=new DockingManager();manager.UseDocumentContainer = true;manager.ContainerMode = DocumentContainerMode.MDI;Grid child=new Grid();DockingManager.SetHeader(child, "MDI");DockingManager.SetState(child,DockState.Document);manager.Children.Add(child);
+{% endhighlight  %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/MDI.jpg](Basic-Features_images/Basic-Features_img4.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/MDI.jpg](Basic-Features_images/Basic-Features_img4.jpeg)
+
 
 
 Similarly you can create a TDI Document by specifying ContainerMode as TDI and child state as document.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="TDI"><Grid Name="grid1" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.Header="TDI"/></syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#] DockingManager manager=new DockingManager();manager.UseDocumentContainer = true;manager.ContainerMode = DocumentContainerMode.TDI;Grid child=new Grid();DockingManager.SetHeader(child, "TDI");DockingManager.SetState(child,DockState.Document);manager.Children.Add(child);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="TDI"><Grid Name="grid1" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.Header="TDI"/></syncfusion:DockingManager>
+{% endhighlight %}
+{% highlight c# %}
+[C#] DockingManager manager=new DockingManager();manager.UseDocumentContainer = true;manager.ContainerMode = DocumentContainerMode.TDI;Grid child=new Grid();DockingManager.SetHeader(child, "TDI");DockingManager.SetState(child,DockState.Document);manager.Children.Add(child);
+{% endhighlight  %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/TDI.jpg](Basic-Features_images/Basic-Features_img5.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/TDI.jpg](Basic-Features_images/Basic-Features_img5.jpeg)
+
 
 
 Refer Also:
@@ -128,18 +118,16 @@ We can achieve the layout that we want using TargetName attached property.  Targ
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.Header="grid1"/><Grid Name="grid2" syncfusion:DockingManager.Header="grid2" syncfusion:DockingManager.TargetNameInDockedMode="grid1" syncfusion:DockingManager.SideInDockedMode="Bottom"/></syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetTargetNameInDockedMode(grid2, "grid1");</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.Header="grid1"/><Grid Name="grid2" syncfusion:DockingManager.Header="grid2" syncfusion:DockingManager.TargetNameInDockedMode="grid1" syncfusion:DockingManager.SideInDockedMode="Bottom"/></syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]DockingManager.SetTargetNameInDockedMode(grid2, "grid1");
+{% endhighlight  %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/TargetNameInDockMode.jpg](Basic-Features_images/Basic-Features_img6.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/TargetNameInDockMode.jpg](Basic-Features_images/Basic-Features_img6.jpeg)
+
 
 
 Refer Also:
@@ -152,84 +140,73 @@ SideInDockMode and SideInFloatMode are used to decide the dock side of child wit
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Left" syncfusion:DockingManager.Header="Dock Left"/></syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetHeader(grid1, "Dock Left");DockingManager.SetSideInDockedMode(grid1, DockSide.Left);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Left" syncfusion:DockingManager.Header="Dock Left"/></syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]DockingManager.SetHeader(grid1, "Dock Left");DockingManager.SetSideInDockedMode(grid1, DockSide.Left);
+{% endhighlight  %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/DockLeft.jpg](Basic-Features_images/Basic-Features_img7.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/DockLeft.jpg](Basic-Features_images/Basic-Features_img7.jpeg)
+
 
 
 The following code represents child in a Dock right position.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager>            <Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.Header="Dock Right"/>        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetHeader(grid1, "Dock Right");DockingManager.SetSideInDockedMode(grid1, DockSide.Right);</td></tr>
-</table>
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/DockRight.jpg](Basic-Features_images/Basic-Features_img8.jpeg)' | markdownify }}
-{:.image }
+{% highlight html %}
+[XAML]<syncfusion:DockingManager>            <Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.Header="Dock Right"/>        </syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]DockingManager.SetHeader(grid1, "Dock Right");DockingManager.SetSideInDockedMode(grid1, DockSide.Right);
+{% endhighlight  %}
+![C:/Users/Hemanth/Desktop/Documentation/Images/DockRight.jpg](Basic-Features_images/Basic-Features_img8.jpeg)
 
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Top"/></syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetHeader(grid1, "Dock Top");DockingManager.SetSideInDockedMode(grid1, DockSide.Top);</td></tr>
-</table>
+
+{% highlight html %}
+[XAML]<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Top"/></syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]DockingManager.SetHeader(grid1, "Dock Top");DockingManager.SetSideInDockedMode(grid1, DockSide.Top);
+{% endhighlight %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/DockTop.jpg](Basic-Features_images/Basic-Features_img9.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/DockTop.jpg](Basic-Features_images/Basic-Features_img9.jpeg)
+
 
 
 The code below shows child position in a Dock bottom.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Dock Bottom"/></syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetHeader(grid1, "Dock Bottom");DockingManager.SetSideInDockedMode(grid1, DockSide.Bottom);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Dock Bottom"/></syncfusion:DockingManager>
+{% endhighlight %}
+{% highlight c# %}
+[C#]DockingManager.SetHeader(grid1, "Dock Bottom");DockingManager.SetSideInDockedMode(grid1, DockSide.Bottom);
+{% endhighlight  %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/DockBottom.jpg](Basic-Features_images/Basic-Features_img10.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/DockBottom.jpg](Basic-Features_images/Basic-Features_img10.jpeg)
 
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.Header="grid1"/><Grid Name="grid2" syncfusion:DockingManager.TargetNameInDockedMode="grid1" syncfusion:DockingManager.Header="grid2" syncfusion:DockingManager.SideInDockedMode="Tabbed" /></syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetTargetNameInDockedMode(grid2, "grid1");DockingManager.SetSideInDockedMode(grid2, DockSide.Tabbed);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.Header="grid1"/><Grid Name="grid2" syncfusion:DockingManager.TargetNameInDockedMode="grid1" syncfusion:DockingManager.Header="grid2" syncfusion:DockingManager.SideInDockedMode="Tabbed" /></syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]DockingManager.SetTargetNameInDockedMode(grid2, "grid1");DockingManager.SetSideInDockedMode(grid2, DockSide.Tabbed);
+{% endhighlight  %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/DockTabbed.jpg](Basic-Features_images/Basic-Features_img11.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/DockTabbed.jpg](Basic-Features_images/Basic-Features_img11.jpeg)
+
 
 
 Refer Also:

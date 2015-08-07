@@ -11,18 +11,18 @@ documentation: ug
 
 Essential Diagram WPF provides the ability to define custom ports for making connections. The ConnectionPort class can be used for defining custom ports on the nodes. Any number of ports can be defined on a node. By default every node has a center port.  
 
-ConnectionPort has the following properties:
+## ConnectionPort has the following properties:
 
 _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 Left</td><td>
@@ -67,12 +67,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 PortVisibility</td><td>
@@ -96,12 +96,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 ConnectionHeadPort</td><td>
@@ -127,6 +127,7 @@ See Also
 * PortVisibility Refer Concepts and Features -> Connection Port -> PortVisibility
 * AllowPortDrag Refer Concepts and Features -> Connection Port -> AllowPortDrag
 * Connections to Port Refer Concepts and Features -> Connection Port -> Connections to Port
+
 ## Create Connection Port on Node
 
 
@@ -135,7 +136,7 @@ To add a port to the node, the port's position has to be specified using the Lef
 The following code shows how to add a connection port to the node.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -166,7 +167,8 @@ node.Ports.Add(port);
 
 diagramModel.Nodes.Add(node);
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -199,34 +201,34 @@ node.Ports.Add(port)
 diagramModel.Nodes.Add(node)
 
 
-
+{% endhighlight  %}
 This adds a port to the node at the location (50,0) with respect to the node.
 
 
 
-{{ '![](Connection-Port_images/Connection-Port_img1.jpeg)' | markdownify }}
-{:.image }
+![](Connection-Port_images/Connection-Port_img1.jpeg)
+
 
 
 _Connection Port_
 
-> _Note: The ports location should always be specified to be within the node's boundary. Therefore the values of the Left and Top property should always be less than the width and height of the node respectively._
+> Note: The ports location should always be specified to be within the node's boundary. Therefore the values of the Left and Top property should always be less than the width and height of the node respectively.
 
 ## Adding Connection Port at Runtime
 
 This feature provides an option to add connection ports at runtime through mouse operations. Similarly, connection ports can be removed from a node through mouse operations. 
 
-Properties
+### Properties
 
 _Connection Port at Runtime_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 AddConnectionPortEnabled</td><td>
@@ -234,13 +236,14 @@ Property used to enable/disable the adding connection port dynamically. </td><td
 SL</td><td>
 boolean</td></tr>
 </table>
+
 ### Adding Connection Ports at Runtime to an Application
 
-Adding a Connection Port at Runtime
+#### Adding a Connection Port at Runtime
 
 To allow connection ports to be added to a node dynamically, set the AddConnectionPortEnabled property of the node to true, then select the node. Hold CTRL+SHIFT and click on the node. The connection port will be added in the position where you clicked on the node.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -250,8 +253,8 @@ Node node = new Node();
 
 node.AddConnectionPortEnabled = true;
 
-
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB]
 
 Dim node As New Node()
@@ -260,13 +263,13 @@ Dim node As New Node()
 
 node.AddConnectionPortEnabled = True
 
-
+{% endhighlight  %}
 
 Deleting a Connection Port at Runtime
 
 A connection port can be deleted from the node dynamically. With the AllowDelete property of a port set to true, hold CTRL+SHIFT and click on the connection port to delete it. The default value of the AllowDelete property is set to true. This can be disabled by setting the AllowDelete property to false.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -276,8 +279,8 @@ Node node = new Node();
 
 (node.Ports[1] as ConnectionPort).AllowDelete = false;
 
-
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB]
 
 Dim node As New Node()
@@ -286,16 +289,16 @@ Dim node As New Node()
 
 TryCast(node.Ports(1), ConnectionPort).AllowDelete = False
 
+{% endhighlight %}
 
-
-> _Note: Removing a port directly from a node’s Ports collection property will not be affected by setting the AllowDelete property of the connection port to false._
+> Note: Removing a port directly from a node’s Ports collection property will not be affected by setting the AllowDelete property of the connection port to false.
 
 ## Create Connection Port on Line Connector
 
 Connection ports for line connectors can be specified by using the Edge property. Multiple ports can be added to the line connectors by using the Ports property.
 
 
-
+{% highlight c# %}
 [C#] 
 
 LineConnector line = new LineConnector();
@@ -320,7 +323,7 @@ line.Ports.Add(port);
 
        diagramModel.Connections.Add(line); 
 
-
+{% endhighlight  %}
 
 ## PortShape
 
@@ -334,12 +337,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 PortShape</td><td>
@@ -353,7 +356,7 @@ No</td></tr>
 The following code shows how a port shape can be selected for the port.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -386,7 +389,8 @@ node.Ports.Add(port);
 
 diagramModel.Nodes.Add(node);
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -420,10 +424,10 @@ node.Ports.Add(port)
 
 diagramModel.Nodes.Add(node)
 
+{% endhighlight  %}
 
+![](Connection-Port_images/Connection-Port_img2.jpeg)
 
-{{ '![](Connection-Port_images/Connection-Port_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 _Port Shapes_
@@ -436,17 +440,17 @@ The PortVisibility property is used to set the visibility of connection ports on
 2. AlwaysHidden
 3. AlwaysVisible
 
-Properties
+### Properties
 
 _Port Visibility_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 PortVisibility</td><td>
@@ -456,21 +460,21 @@ Enum</td></tr>
 </table>
 
 
-Adding PortVisibility to an Application 
+#### Adding PortVisibility to an Application 
 
-MouseOverNode
+#### MouseOverNode
 
 When the PortVisibility property of the node is set to MouseOverNode, the connection port will be visible only on mouse-over of the node. This is the default value of this property.
 
-AlwaysHidden
+#### AlwaysHidden
 
 The connection port will always be hidden, when PortVisibility property of the Node is set to AlwaysHidden.
 
-AlwaysVisible
+#### AlwaysVisible
 
 ConnectionPort will be visible always, when PortVisiblity property of the Node is set to AlwaysVisible.
 
-> _Changes: For versions 10.2 and later, the type of PortVisibility property of nodes has been changed from ‘Visibility’ to ’PortVisibility‘ Enum._
+> Changes: For versions 10.2 and later, the type of PortVisibility property of nodes has been changed from ‘Visibility’ to ’PortVisibility‘ Enum.
 
 
 
@@ -482,12 +486,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 PortStyle</td><td>
@@ -509,7 +513,7 @@ The various properties under the PortStyle property are,
 
 The following code shows how to set some of these properties.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -547,7 +551,8 @@ node.Ports.Add(port);
 
 diagramModel.Nodes.Add(node);
 
-
+{% endhighlight %}
+{% highlight c# %}
 
 [VB]
 
@@ -586,14 +591,14 @@ node.Ports.Add(port)
 diagramModel.Nodes.Add(node)
 
 
+{% endhighlight %}
+![](Connection-Port_images/Connection-Port_img3.jpeg)
 
-{{ '![](Connection-Port_images/Connection-Port_img3.jpeg)' | markdownify }}
-{:.image }
 
 
 _Port Style_
 
-CustomPathStyle
+## CustomPathStyle
 
 The CustomPathStyle property enables you to customize the appearance of ConnectionPort. 
 
@@ -603,12 +608,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 CustomPathStyle </td><td>
@@ -619,13 +624,13 @@ NA</td></tr>
 </table>
 
 
-Adding CustomPathStyle for ConnectionPort to an Application 
+### Adding CustomPathStyle for ConnectionPort to an Application 
 
 Appearance of the ConnectionPort can be customized by applying style for the CustomPathStyle property. Style can be applied for CustomPathStyle as illustrated in the following code:
 
-Through XAML
+### Through XAML
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -651,10 +656,10 @@ Through XAML
 
           </Style>
 
+{% endhighlight  %}
 
+![Description: C:/Users/sundarm/Desktop/connectionport.PNG](Connection-Port_images/Connection-Port_img4.png)
 
-{{ '![Description: C:/Users/sundarm/Desktop/connectionport.PNG](Connection-Port_images/Connection-Port_img4.png)' | markdownify }}
-{:.image }
 
 
 _Custom ConnectionPort using CustomPathStyle_
@@ -667,7 +672,7 @@ It is possible to move the ports on the node to a different location on the node
 
 The following code shows how to set the AllowPortDrag property.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -679,7 +684,8 @@ diagramModel.Nodes.Add(nodeObject);
 
 nodeObject.AllowPortDrag = true;
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -691,7 +697,7 @@ diagramModel.Nodes.Add(nodeObject)
 
 nodeObject.AllowPortDrag = True
 
-
+{% endhighlight %}
 
 ## Connections to Ports
 
@@ -706,7 +712,7 @@ The ConnectionHeadPort and ConnectionTailPort properties can be used to specif
 The following code shows how to connect to the ports.
 
 
-
+{% highlight C# %}
 [C#]
 
 
@@ -805,7 +811,8 @@ diagramModel.Connections.Add(o);
 
 diagramModel.Connections.Add(o1);
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -911,10 +918,10 @@ diagramModel.Connections.Add(o)
 
 diagramModel.Connections.Add(o1)
 
+{% endhighlight  %}
 
+![](Connection-Port_images/Connection-Port_img5.jpeg)
 
-{{ '![](Connection-Port_images/Connection-Port_img5.jpeg)' | markdownify }}
-{:.image }
 
 
 _Connecting to Port_
@@ -941,7 +948,7 @@ Creating Connections between Line Connectors Programmatically
 To make a connection between two lines, use the ConnectionTailPort or ConnectionHeadPort property of LineConnector and set a particular port.
 
 
-
+{% highlight c# %}
 [C#] 
 
 LineConnector line = new LineConnector();
@@ -985,9 +992,9 @@ line1.ConnectionTailPort = port;
 diagramModel.Connections.Add(line1);
 
 
+{% endhighlight %}
 
-
-
+{% highlight vbnet%}
 [VB] 
 
 Dim line As New LineConnector()
@@ -1029,7 +1036,7 @@ line1.ConnectionTailPort = port
 diagramModel.Connections.Add(line1)
 
 
-
+{% endhighlight %}
 
 
 Creating Connections between Line Connectors at Run Time

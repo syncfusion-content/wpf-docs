@@ -17,7 +17,7 @@ Drag providers are those which appear, when you drag a window over another windo
 
 The LeftDragProvider property of the DockingManager is used to apply custom templates to the Left Drag Provider. The following code snippet is used for this purpose.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -43,10 +43,10 @@ The LeftDragProvider property of the DockingManager is used to apply custom temp
 
         </sftools:DockingManager.LeftDragProvider>
 
+{% endhighlight %}
 
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1050555374.jpg](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1050555374.jpg](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 ### Right Drag Provider
@@ -54,7 +54,7 @@ The LeftDragProvider property of the DockingManager is used to apply custom temp
 The Custom control template for right drag provider is applied using the RightDragProvider property of the DockingManager. The following code snippet is used for this purpose.
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -82,16 +82,16 @@ The Custom control template for right drag provider is applied using the RightDr
         </sftools:DockingManager.RightDragProvider>
 
 
+{% endhighlight  %}
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1323091430.jpg](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1323091430.jpg](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 ### Top Drag Provider
 
 Control templates for top drag providers is applied using the TopDragProvider property of the DockingManager. The following code snippet can be used for this purpose.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -115,10 +115,10 @@ Control templates for top drag providers is applied using the TopDragProvider pr
 
         </sftools:DockingManager.TopDragProvider>
 
+{% endhighlight  %}
 
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image350502413.jpg](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg)
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image350502413.jpg](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg)' | markdownify }}
-{:.image }
 
 
 ### Bottom Drag Provider
@@ -126,7 +126,7 @@ Control templates for top drag providers is applied using the TopDragProvider pr
 This Drag provider is the bottom button that appears while dragging a window over another, allowing the window to be docked to the bottom of the parent element. To override the default template, the user can use the BottomDrag providers. To add a BottomDrag Provider, use the following code snippet.
 
 
-
+{% highlight html %}
 [XAML]
 
         <!--Declaring Docking Manager-->
@@ -169,11 +169,11 @@ This Drag provider is the bottom button that appears while dragging a window ove
 
         </syncfusion:DockingManager>
 
-
+{% endhighlight  %}
 
 If CustomDragProvider.png and CustomDragProviderOver.png are in the Images folder of the solution file, then you need to call using the key in the C# Code using the key defined in the template as given below
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -185,7 +185,7 @@ DockingManager = new DockingManager();
 
 DockingManager.BottomDragProvider = (ControlTemplate)FindResource("BottomButtonCustomTemplate");
 
-
+{% endhighlight  %}
 
 ### Center Drag Provider
 
@@ -193,19 +193,18 @@ This drag provider is the center button that appears while dragging a window ove
 
 
 
-<table>
-<tr>
-<td>
-[XAML]        <Window.Resources>            <ControlTemplate x:Key="CenterButtonCustomTemplate" TargetType="{x:Type ContentControl}">                <Grid>                    <Grid.RowDefinitions>                        <RowDefinition Height="30" />                        <RowDefinition Height="30" />                        <RowDefinition Height="30" />                    </Grid.RowDefinitions>                    <Grid.ColumnDefinitions>                        <ColumnDefinition Width="30" />                        <ColumnDefinition Width="30" />                        <ColumnDefinition Width="30" />                    </Grid.ColumnDefinitions>                    <Image Name="TopImg" Grid.Column="1" Grid.Row="0" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Top" Source="Images\CustomDragProvider.png" />                    <Image Name="LeftImg" Grid.Column="0" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Left" Source="Images\CustomDragProvider.png" />                    <Image Name="CenterImg" Grid.Column="1" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Center" Source="Images\CustomDragProvider.png" />                    <Image Name="RightImg" Grid.Column="2" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Right" Source="Images\CustomDragProvider.png" />                    <Image Name="BottomImg" Grid.Column="1" Grid.Row="2" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Bottom" Source="Images\CustomDragProvider.png" />                </Grid>            </ControlTemplate>        </Window.Resources>        <Grid>            <!--Declaring Docking Manager and calling the CenterDrag provider using the Resource look up logic -->            <syncfusion:DockingManager CenterDragProvider="{StaticResource CenterButtonCustomTemplate}">                <!--Children for the Docking Manager-->                <StackPanel syncfusion:DockingManager.Header="Element one"              syncfusion:DockingManager.State="Dock"              syncfusion:DockingManager.SideInDockedMode="Left"/>            </syncfusion:DockingManager>        </Grid> ></td></tr>
-<tr>
-<td>
-[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Applying the template using the Resource look up logic.DockingManager.CenterDragProvider = (ControlTemplate)FindResource("CenterButtonCustomTemplate");</td></tr>
-</table>
+{% highlight html %}
+[XAML]        <Window.Resources>            <ControlTemplate x:Key="CenterButtonCustomTemplate" TargetType="{x:Type ContentControl}">                <Grid>                    <Grid.RowDefinitions>                        <RowDefinition Height="30" />                        <RowDefinition Height="30" />                        <RowDefinition Height="30" />                    </Grid.RowDefinitions>                    <Grid.ColumnDefinitions>                        <ColumnDefinition Width="30" />                        <ColumnDefinition Width="30" />                        <ColumnDefinition Width="30" />                    </Grid.ColumnDefinitions>                    <Image Name="TopImg" Grid.Column="1" Grid.Row="0" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Top" Source="Images\CustomDragProvider.png" />                    <Image Name="LeftImg" Grid.Column="0" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Left" Source="Images\CustomDragProvider.png" />                    <Image Name="CenterImg" Grid.Column="1" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Center" Source="Images\CustomDragProvider.png" />                    <Image Name="RightImg" Grid.Column="2" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Right" Source="Images\CustomDragProvider.png" />                    <Image Name="BottomImg" Grid.Column="1" Grid.Row="2" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Bottom" Source="Images\CustomDragProvider.png" />                </Grid>            </ControlTemplate>        </Window.Resources>        <Grid>            <!--Declaring Docking Manager and calling the CenterDrag provider using the Resource look up logic -->            <syncfusion:DockingManager CenterDragProvider="{StaticResource CenterButtonCustomTemplate}">                <!--Children for the Docking Manager-->                <StackPanel syncfusion:DockingManager.Header="Element one"              syncfusion:DockingManager.State="Dock"              syncfusion:DockingManager.SideInDockedMode="Left"/>            </syncfusion:DockingManager>        </Grid> >
+{% endhighlight  %}
+{% highlight c# %}
+[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Applying the template using the Resource look up logic.DockingManager.CenterDragProvider = (ControlTemplate)FindResource("CenterButtonCustomTemplate");
+{% endhighlight  %}
+
 ## Customizing Auto Hide Button
 
 The Auto hide button in the docked window is customized by using the AwlButtonTemplate property. A control template of TargetType, ToggleButton is created and applied to this property in order to have a customized look and feel for the Auto hide button in the docked window. To apply the AwlButtonTemplate, use the following code:
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -258,15 +257,15 @@ The Auto hide button in the docked window is customized by using the AwlButtonTe
         </syncfusion:DockingManager>
 
 
+{% endhighlight  %}
+
+
+> Note: For adding the Custom AutoHideButton template to the Docking Manager, you must have the DockingManager in which you are going to add the AutoHideButton template, because the AwlButtonTemplate is the attached property.
 
 
 
-> _Note: For adding the Custom AutoHideButton template to the Docking Manager, you must have the DockingManager in which you are going to add the AutoHideButton template, because the AwlButtonTemplate is the attached property._
+![C:/Users/Hemanth/Desktop/Documentation/Images/awlbutton.jpg](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg)
 
-
-
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/awlbutton.jpg](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -276,7 +275,7 @@ The Auto hide button in the docked window is customized by using the AwlButtonTe
 The DockingManager facilitates you to apply an user-defined custom Header Template to give a customized appearance. Using the following code snippet, you can create a sample DataTemplate as a Header Template for the Docking Manager.
 
 
-
+{% highlight html %}
 [XAML]
 
         <sftools:DockingManager.HeaderTemplate>
@@ -295,14 +294,14 @@ The DockingManager facilitates you to apply an user-defined custom Header Templa
 
         </sftools:DockingManager.HeaderTemplate>
 
+{% endhighlight  %}
+
+> Note: For adding the Custom header template to the Docking Manager, you must have the DockingManager in which you are going to add the Header, because the HeaderTemplate is an attached property.
 
 
-> _Note: For adding the Custom header template to the Docking Manager, you must have the DockingManager in which you are going to add the Header, because the HeaderTemplate is an attached property._
 
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1256965732.jpg](Styles-and-Templates_images/Styles-and-Templates_img5.jpeg)
 
-
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1256965732.jpg](Styles-and-Templates_images/Styles-and-Templates_img5.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -313,7 +312,7 @@ The CloseButton Template is used to get or set the control template for the clos
 
 The following code illustrates this: 
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -355,11 +354,11 @@ Stroke="Red" Data="M109,51 L216,142 M215,52 L109,142" HorizontalAlignment="Cente
 
         </Grid>
 
-
+{% endhighlight  %}
 
 To apply the template using the C# code, use the following code snippet.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -371,21 +370,21 @@ DockingManager = new DockingManager();
 
 DockingManager.CloseButtonTemplate = (ControlTemplate)FindResource("closebuttontemplate");
 
+{% endhighlight  %}
+
+> Note: For adding the Custom Close Button template to the DockingManager, you must already have the DockingManager in which you are going to add the Close Button template, because the CloseButtonTemplate is an attached property.
 
 
-> _Note: For adding the Custom Close Button template to the DockingManager, you must already have the DockingManager in which you are going to add the Close Button template, because the CloseButtonTemplate is an attached property._
 
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image240648422.jpg](Styles-and-Templates_images/Styles-and-Templates_img6.jpeg)
 
-
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image240648422.jpg](Styles-and-Templates_images/Styles-and-Templates_img6.jpeg)' | markdownify }}
-{:.image }
 
 
 ## Customizing Menu Button
 
 The Context Menu button in the dock window header can be changed in order to have a customized look and feel for the application. The MenuButtonTemplate property of the DockingManager can be applied with a control template to enhance the button appearance. The following code snippet is used as a sample for applying the Menu Button template.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -415,14 +414,14 @@ The Context Menu button in the dock window header can be changed in order to hav
 
         </sftools:DockingManager.MenuButtonTemplate>
 
+{% endhighlight  %}
+
+> Note: For adding the Custom Menu Button template to the DockingManager, you must already have the DockingManager in which you are going to add the Menu Button template, because MenuButtonTemplate is the attached property.
 
 
-> _Note: For adding the Custom Menu Button template to the DockingManager, you must already have the DockingManager in which you are going to add the Menu Button template, because MenuButtonTemplate is the attached property._
 
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image80401031.jpg](Styles-and-Templates_images/Styles-and-Templates_img7.jpeg)
 
-
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image80401031.jpg](Styles-and-Templates_images/Styles-and-Templates_img7.jpeg)' | markdownify }}
-{:.image }
 
 
 ## Customizing FloatWindow
@@ -431,7 +430,7 @@ You can apply the styles for the float window using the FloatWindowStyle propert
 
 Here is the code snippet for setting this property.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -455,7 +454,7 @@ Here is the code snippet for setting this property.
 
         </syncfusion:DockingManager>
 
-
+{% endhighlight  %}
 
 ## Dock Window Header Style
 
@@ -463,7 +462,7 @@ The DockHeaderStyle is a dependency property which is used to get or set the sty
 
 The following code snippet example clearly explains the usage of using the DockHeaderStyle property.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -485,13 +484,13 @@ The following code snippet example clearly explains the usage of using the DockH
 
 
 
-
+{% endhighlight  %}
 
 ## TabControl and TabItem Styles
 
 The TabControl and TabItem Style is used to customize the tabbed child tabcontrol in the DockingManager.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -511,7 +510,8 @@ The TabControl and TabItem Style is used to customize the tabbed child tabcontro
 
 <Grid Name="grid2" syncfusion:DockingManager.TargetNameInDockedMode="grid1" syncfusion:DockingManager.SideInDockedMode="Tabbed"/> </syncfusion:DockingManager>
 
-
+{% endhighlight  %}
+{% highlight html %}
 
 [XAML]
 
@@ -534,6 +534,7 @@ The TabControl and TabItem Style is used to customize the tabbed child tabcontro
         </syncfusion:DockingManager>
 
 
+{% endhighlight  %}
 
 ## Editing Styles and Templates Using Expression Blend
 
@@ -541,8 +542,8 @@ You can edit the style and template properties that are available in DockingMana
 
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/StartScreen.jpg](Styles-and-Templates_images/Styles-and-Templates_img8.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/StartScreen.jpg](Styles-and-Templates_images/Styles-and-Templates_img8.jpeg)
+
 
 
 1. Select the DockingManager on the Object and timeline pane on the left side.
@@ -552,8 +553,8 @@ Using the option, you can edit the template of the available DockingManager part
 
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/EditTemplate.jpg](Styles-and-Templates_images/Styles-and-Templates_img9.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/EditTemplate.jpg](Styles-and-Templates_images/Styles-and-Templates_img9.jpeg)
+
 
 
 Similarly you can use the Edit Additional Styles to edit the available style properties.
@@ -562,7 +563,7 @@ You can customize the AutoHideButton, Menu Button, and Close Button by editing t
 
 AwlButtonTemplate
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -724,11 +725,11 @@ AwlButtonTemplate
 
 
 
-
+{% endhighlight  %}
 
 MenuButtonTemplate
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -774,11 +775,11 @@ MenuButtonTemplate
 
         </ControlTemplate>
 
-
+{% endhighlight  %}
 
 CloseButtonTemplate
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -837,10 +838,10 @@ CloseButtonTemplate
 </ControlTemplate>
 
 
-
+{% endhighlight  %}
 The following properties have been applied to customize the Dock Header.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -896,10 +897,10 @@ The following properties have been applied to customize the Dock Header.
 
 </syncfusion:DockingManager>
 
+{% endhighlight  %}
 
+![C:/Users/Hemanth/Desktop/Documentation/Images/Templating.jpg](Styles-and-Templates_images/Styles-and-Templates_img10.jpeg)
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/Templating.jpg](Styles-and-Templates_images/Styles-and-Templates_img10.jpeg)' | markdownify }}
-{:.image }
 
 
 

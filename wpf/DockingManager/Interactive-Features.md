@@ -13,14 +13,12 @@ A basic requirement in creating any WPF application that uses our DockingManager
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<!--Adding Docking Manager-->        <syncfusion:DockingManager AutoHideAnimationMode="Fade" Name="DockingManager" Loaded="DockingManager_Loaded">            <!--Adding Children for the Docking Manager control with state as Dock and a side in dock mode as left-->            <StackPanel syncfusion:DockingManager.State="Dock" Name="Element One"              syncfusion:DockingManager.SideInDockedMode="Left"/>            <StackPanel syncfusion:DockingManager.State="Dock" Name="Element Two"              syncfusion:DockingManager.SideInDockedMode="Right"/>        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]//Setting the active window, giving the name of the children element as the parameter for the Activate Window.DockingManager.ActivateWindow("Name of the Window");</td></tr>
-</table>
+{% highlight html %}
+[XAML]<!--Adding Docking Manager-->        <syncfusion:DockingManager AutoHideAnimationMode="Fade" Name="DockingManager" Loaded="DockingManager_Loaded">            <!--Adding Children for the Docking Manager control with state as Dock and a side in dock mode as left-->            <StackPanel syncfusion:DockingManager.State="Dock" Name="Element One"              syncfusion:DockingManager.SideInDockedMode="Left"/>            <StackPanel syncfusion:DockingManager.State="Dock" Name="Element Two"              syncfusion:DockingManager.SideInDockedMode="Right"/>        </syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]//Setting the active window, giving the name of the children element as the parameter for the Activate Window.DockingManager.ActivateWindow("Name of the Window");
+{% endhighlight  %}
 
 
 Event
@@ -29,9 +27,9 @@ _Event table_
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 OnActiveWindowChanged</td><td>
@@ -45,9 +43,9 @@ _Method table_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Description</th></tr>
 <tr>
 <td>
 OnActivateWindow</td><td>
@@ -62,7 +60,7 @@ Sometimes, you need to identify an active window to perform some operations at r
 The following code snippet explains how to retrieve the Active window from the Docking Manager control.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -85,14 +83,14 @@ if (DockingManager1.ActiveWindow != null)
 
 }
 
-
+{% endhighlight  %}
 
 Where, the 'ffelement' returns the active window.
 
 You can also iterate through all the child elements of the DockingManager control, and get the active window to perform the actions, if any. This behavior is demonstrated in the following example on a button click event.
 
 
-
+{% highlight c# %}
 [C#]
 
 // Handles the Click event of the dockingactivewindow control.
@@ -126,18 +124,19 @@ You can also iterate through all the child elements of the DockingManager contro
             };
 
         }
+{% endhighlight  %}
 
 ## Using ActiveWindow Property
 
 ActiveWindow Property is used to Get/Set ActiveWindow for DockingManager
 
-
+{% highlight c# %}
 
 [C#]
 
   DockingManager.ActiveWindow=element1;
 
-
+{% endhighlight %}
 
 Refer Also
 
@@ -195,12 +194,12 @@ This dependency property defines selected header foreground of the float window.
 </table>
 
 
-> _Note: The default value of all the above listed properties is Transparent._ 
+> Note: The default value of all the above listed properties is Transparent. 
 
 Use the below code snippet for applying all the customization related properties of the float windows.
 
 
-
+{% highlight html %}
 [XAML]
 
 <!--Creating the Docking Manager-->
@@ -214,11 +213,11 @@ Use the below code snippet for applying all the customization related properties
         </syncfusion:DockingManager>
 
 
+{% endhighlight  %}
 
 
+![C:/Users/Hemanth/Desktop/Documentation/Images/FloatWindow.jpg](Interactive-Features_images/Interactive-Features_img1.jpeg)
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/FloatWindow.jpg](Interactive-Features_images/Interactive-Features_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 _Customized Float Window_
@@ -244,18 +243,16 @@ The below code snippet is used to set an element border thickness for the Dockin
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager ElementBorderThickness="20">            <StackPanel syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Left"/>        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting the element thickness for the docking managerDockingManager.ElementBorderThickness = new Thickness(20);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager ElementBorderThickness="20">            <StackPanel syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Left"/>        </syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting the element thickness for the docking managerDockingManager.ElementBorderThickness = new Thickness(20);
+{% endhighlight  %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/Thickness1.jpg](Interactive-Features_images/Interactive-Features_img2.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/Thickness1.jpg](Interactive-Features_images/Interactive-Features_img2.jpeg)
+
 
 
 _ElementBorderThickness = "20"_
@@ -268,18 +265,16 @@ Use the following XAML and C# code, for setting the float window border thicknes
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager FloatWindowBorderThickness="20">            <StackPanel syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Left"/>        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting the Float Window Border Thickness for the Docking Manager.DockingManager.FloatWindowBorderThickness = new Thickness(20);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager FloatWindowBorderThickness="20">            <StackPanel syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Left"/>        </syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting the Float Window Border Thickness for the Docking Manager.DockingManager.FloatWindowBorderThickness = new Thickness(20);
+{% endhighlight  %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/Thickness2jpg.jpg](Interactive-Features_images/Interactive-Features_img3.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/Thickness2jpg.jpg](Interactive-Features_images/Interactive-Features_img3.jpeg)
+
 
 
 _FloatWindowBorderThickness = "20"_
@@ -290,18 +285,16 @@ This dependency property defines the border thickness of the side panel, which i
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager SidePanelBorderThickness="20">            <StackPanel syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Left"/>        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting the Side Panel Border Thickness for the Docking Manager.DockingManager.SidePanelBorderThickness = new Thickness(20);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager SidePanelBorderThickness="20">            <StackPanel syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Left"/>        </syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting the Side Panel Border Thickness for the Docking Manager.DockingManager.SidePanelBorderThickness = new Thickness(20);
+{% endhighlight  %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/Thickness3.jpg](Interactive-Features_images/Interactive-Features_img4.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/Thickness3.jpg](Interactive-Features_images/Interactive-Features_img4.jpeg)
+
 
 
 _SidePanelBorderThickness = "20"_
@@ -312,18 +305,16 @@ Here is the code snippet for setting this property.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager SidePanelItemsBorderThickness="20">            <StackPanel syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Left"/>        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting the element thickness for the Docking Manager.DockingManager.SidePanelItemsBorderThickness = new Thickness(20);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager SidePanelItemsBorderThickness="20">            <StackPanel syncfusion:DockingManager.State="Dock" syncfusion:DockingManager.SideInDockedMode="Left"/>        </syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting the element thickness for the Docking Manager.DockingManager.SidePanelItemsBorderThickness = new Thickness(20);
+{% endhighlight  %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/Thickness4.jpg](Interactive-Features_images/Interactive-Features_img5.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/Thickness4.jpg](Interactive-Features_images/Interactive-Features_img5.jpeg)
+
 
 
 _SidePanelItemsBorderThickness = "20"_
@@ -332,43 +323,35 @@ TabPanelBorderThickness - This dependency property defines the border thickness 
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager TabPanelBorderThickness="50">            <StackPanel syncfusion:DockingManager.State="AutoHidden" Name="Element One" syncfusion:DockingManager.SideInDockedMode="Bottom"/>            <StackPanel syncfusion:DockingManager.State="Dock" Name="Element Two" syncfusion:DockingManager.TargetNameInDockedMode="Element One"syncfusion:DockingManager.SideInDockedMode="Tabbed"/>        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting the Tab Panel Border Thickness for the Docking ManagerDockingManager.TabPanelBorderThickness = new Thickness(20);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager TabPanelBorderThickness="50">            <StackPanel syncfusion:DockingManager.State="AutoHidden" Name="Element One" syncfusion:DockingManager.SideInDockedMode="Bottom"/>            <StackPanel syncfusion:DockingManager.State="Dock" Name="Element Two" syncfusion:DockingManager.TargetNameInDockedMode="Element One"syncfusion:DockingManager.SideInDockedMode="Tabbed"/>        </syncfusion:DockingManager>
+{% endhighlight %}
+{% highlight c# %}
+[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting the Tab Panel Border Thickness for the Docking ManagerDockingManager.TabPanelBorderThickness = new Thickness(20);
+{% endhighlight  %}
 
 
 TabItemBorderThickness - This dependency property defines the border thickness of the tab item. The default value is 1. 
 
 
-
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager TabItemBorderThickness="50">            <StackPanel syncfusion:DockingManager.State="AutoHidden" Name="Element One" syncfusion:DockingManager.SideInDockedMode="Bottom"/>            <StackPanel syncfusion:DockingManager.State="Dock" Name="Element Two" syncfusion:DockingManager.TargetNameInDockedMode="Element One"syncfusion:DockingManager.SideInDockedMode="Tabbed"/>        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting the Tab Item Border Thickness for the Docking Manager.DockingManager.TabItemBorderThickness = new Thickness(20);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager TabItemBorderThickness="50">            <StackPanel syncfusion:DockingManager.State="AutoHidden" Name="Element One" syncfusion:DockingManager.SideInDockedMode="Bottom"/>            <StackPanel syncfusion:DockingManager.State="Dock" Name="Element Two" syncfusion:DockingManager.TargetNameInDockedMode="Element One"syncfusion:DockingManager.SideInDockedMode="Tabbed"/>        </syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting the Tab Item Border Thickness for the Docking Manager.DockingManager.TabItemBorderThickness = new Thickness(20);
+{% endhighlight  %}
 
 
 TabItemsBorderThicknessSelected - This dependency property defines border thickness of the selected tab items. The default value of the TabItemsBorderThicknessSelected property is 0.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager TabItemsBorderThicknessSelected="50">            <StackPanel syncfusion:DockingManager.State="Dock" Name="Element One" syncfusion:DockingManager.SideInDockedMode="Left"/>            <StackPanel syncfusion:DockingManager.State="Dock" Name="Element Two" syncfusion:DockingManager.TargetNameInDockedMode="Element One"syncfusion:DockingManager.SideInDockedMode="Tabbed"/>        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting the Tab Items Border Thickness Selected for the Docking Manager.DockingManager.TabItemsBorderThicknessSelected = new Thickness(20);</td></tr>
-</table>
-
+{% highlight html %}
+[XAML]<syncfusion:DockingManager TabItemsBorderThicknessSelected="50">            <StackPanel syncfusion:DockingManager.State="Dock" Name="Element One" syncfusion:DockingManager.SideInDockedMode="Left"/>            <StackPanel syncfusion:DockingManager.State="Dock" Name="Element Two" syncfusion:DockingManager.TargetNameInDockedMode="Element One"syncfusion:DockingManager.SideInDockedMode="Tabbed"/>        </syncfusion:DockingManager>
+{% endhighlight %}
+{% highlight c#  %}
+[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting the Tab Items Border Thickness Selected for the Docking Manager.DockingManager.TabItemsBorderThicknessSelected = new Thickness(20);
+{% endhighlight  %}
 
 HeaderBorderThickness 
 
@@ -376,18 +359,16 @@ HeaderBorderThickness dependency property defines the border thickness of the wi
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager HeaderBorderThickness="20">            <StackPanel syncfusion:DockingManager.State="Dock" Name="Element One" syncfusion:DockingManager.SideInDockedMode="Left"/>        </syncfusion:DockingManager></td></tr>
-<tr>
-<td colspan = "2">
-[C#]//Creating the instance of the Docking ManagerDockingManager = new DockingManager();//Setting the Header Border Thickness for the Docking ManagerDockingManager.HeaderBorderThickness = new Thickness(20);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager HeaderBorderThickness="20">            <StackPanel syncfusion:DockingManager.State="Dock" Name="Element One" syncfusion:DockingManager.SideInDockedMode="Left"/>        </syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]//Creating the instance of the Docking ManagerDockingManager = new DockingManager();//Setting the Header Border Thickness for the Docking ManagerDockingManager.HeaderBorderThickness = new Thickness(20);
+{% endhighlight  %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/Thickness5.jpg](Interactive-Features_images/Interactive-Features_img6.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/Thickness5.jpg](Interactive-Features_images/Interactive-Features_img6.jpeg)
+
 
 
 _HeaderBorderThickness = "20"_                             
@@ -405,80 +386,74 @@ The following code illustrates changing the tab strip placement.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<!-- To set the Tab strip to the Bottom -->        <sftools:DockingManager Name="DocManager1" DockTabAlignment="Bottom"/>        <!-- To set the Tab strip to the Right -->        <sftools:DockingManager Name="DocManager1" DockTabAlignment="Right"/></td></tr>
-<tr>
-<td>
-[C#]//To set the Tab strip to the Bottom.this.DockingManager.DockTabAlignment = Dock.Bottom;//To set the Tab strip to the Right.this.DockingManager.DockTabAlignment = Dock.Right;</td></tr>
-</table>
+{% highlight html %}
+[XAML]<!-- To set the Tab strip to the Bottom -->        <sftools:DockingManager Name="DocManager1" DockTabAlignment="Bottom"/>        <!-- To set the Tab strip to the Right -->        <sftools:DockingManager Name="DocManager1" DockTabAlignment="Right"/>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]//To set the Tab strip to the Bottom.this.DockingManager.DockTabAlignment = Dock.Bottom;//To set the Tab strip to the Right.this.DockingManager.DockTabAlignment = Dock.Right;
+{% endhighlight  %}
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image140068940.jpg](Interactive-Features_images/Interactive-Features_img7.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image140068940.jpg](Interactive-Features_images/Interactive-Features_img7.jpeg)
+
 
 
 _DockTabAlignment = "Bottom"_
 
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1681845622.jpg](Interactive-Features_images/Interactive-Features_img8.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1681845622.jpg](Interactive-Features_images/Interactive-Features_img8.jpeg)
+
 
 
 _DockTabAlignment = "Right"_
 
 ### Sidepanel TabItem Customization
 
-#### SidePanel Header Background
+### SidePanel Header Background
 
 SideTabItemBackground property allows you to set a background color for TabItem’s Header. It is a dependency property, which defines the background color of the element in side panel.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager ElementBorderThickness="20">    <ContentControl syncfusion.DockingManager.Header=”SideTab1”       syncfusion.DockingManager.SideTabItemBackground=”Blue”/></syncfusion:DockingManager> </td></tr>
-<tr>
-<td>
-[C#]//Creates new instance of DockingManger DockingManager manager =new DockingManager();//New instance of content is created.ContentControl content = new ContentControl();//Sets SetSideItemBackground attached propertyDockingManager.SetSideTabItemBackground(content, Brushes.Blue);manager.Children.Add(content);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager ElementBorderThickness="20">    <ContentControl syncfusion.DockingManager.Header=”SideTab1”       syncfusion.DockingManager.SideTabItemBackground=”Blue”/></syncfusion:DockingManager> 
+{% endhighlight  %}
+{% highlight c#  %}
+[C#]//Creates new instance of DockingManger DockingManager manager =new DockingManager();//New instance of content is created.ContentControl content = new ContentControl();//Sets SetSideItemBackground attached propertyDockingManager.SetSideTabItemBackground(content, Brushes.Blue);manager.Children.Add(content);
+{% endhighlight  %}
 
 
 The following screen shot illustrates a TabHeader with background color.
 
 
 
-{{ '![](Interactive-Features_images/Interactive-Features_img9.png)' | markdownify }}
-{:.image }
+![](Interactive-Features_images/Interactive-Features_img9.png)
+
 
 
 _TabHeader with background_
 
-#### SidePanel Header Foreground
+### SidePanel Header Foreground
 
 SideTabItemForeground property allows you to set foreground color for SidePanelTabItem’s Header. It is a dependency property, which defines the foreground color of the element in SidePanel.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager ElementBorderThickness="20">    <ContentControl syncfusion.DockingManager.Header=”SideTab1”       syncfusion.DockingManager.SideTabItemForeground=”Red”/></syncfusion:DockingManager> </td></tr>
-<tr>
-<td colspan = "2">
-[C#]//Creates new instance of DockingManger DockingManager manager =new DockingManager();//New  instance of contentContentControl content = new ContentControl();//setting SetSideItemBackground attached propertyDockingManager.SetSideTabItemBackground(content, Brushes.Red);manager.Children.Add(content);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager ElementBorderThickness="20">    <ContentControl syncfusion.DockingManager.Header=”SideTab1”       syncfusion.DockingManager.SideTabItemForeground=”Red”/></syncfusion:DockingManager> 
+{% endhighlight  %}
+{% highlight c# %}
+[C#]//Creates new instance of DockingManger DockingManager manager =new DockingManager();//New  instance of contentContentControl content = new ContentControl();//setting SetSideItemBackground attached propertyDockingManager.SetSideTabItemBackground(content, Brushes.Red);manager.Children.Add(content);
+{% endhighlight  %}
 
 
 The following screen shot illustrates a TabHeader with foreground color.
 
 
 
-{{ '![](Interactive-Features_images/Interactive-Features_img10.png)' | markdownify }}
-{:.image }
+![](Interactive-Features_images/Interactive-Features_img10.png)
+
 
 
 _TabHeader with foreground_
@@ -497,14 +472,12 @@ For settings, CanDock property, use the following code.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<Grid Name="Properties" sftools:DockingManager.CanDock="True"/></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetCanDock(Properties, true);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<Grid Name="Properties" sftools:DockingManager.CanDock="True"/>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]DockingManager.SetCanDock(Properties, true);
+{% endhighlight  %}
 
 
 Floating a Dock Window
@@ -515,26 +488,24 @@ To enable the CanFloat property of DockingManager, use the following code.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<Grid Name="Properties" sftools:DockingManager.CanFloat="True"/></td></tr>
-<tr>
-<td>
+{% highlight html %}
+[XAML]<Grid Name="Properties" sftools:DockingManager.CanFloat="True"/>
+{% endhighlight  %}
+{% highlight c# %}
 [C#]DockingManager.SetCanFloat(Properties, true);</td></tr>
-</table>
+{% endhighlight  %}
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image803644431.jpg](Interactive-Features_images/Interactive-Features_img11.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image803644431.jpg](Interactive-Features_images/Interactive-Features_img11.jpeg)
+
 
 
 _CanFloat = "False"_
 
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image188242848.jpg](Interactive-Features_images/Interactive-Features_img12.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image188242848.jpg](Interactive-Features_images/Interactive-Features_img12.jpeg)
+
 
 
 _CanFloat = "True"_
@@ -547,26 +518,24 @@ To set this property, refer the following code.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<Grid Name="Properties" sftools:DockingManager.CanClose="True"></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetCanClose(Properties, true);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<Grid Name="Properties" sftools:DockingManager.CanClose="True">
+{% endhighlight %}
+{% highlight c# %}
+[C#]DockingManager.SetCanClose(Properties, true);
+{% endhighlight  %}
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1015755465.jpg](Interactive-Features_images/Interactive-Features_img13.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1015755465.jpg](Interactive-Features_images/Interactive-Features_img13.jpeg)
+
 
 
 _CanClose = "False"_
 
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1824565565.jpg](Interactive-Features_images/Interactive-Features_img14.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1824565565.jpg](Interactive-Features_images/Interactive-Features_img14.jpeg)
+
 
 
 _CanClose = "True"_
@@ -585,26 +554,24 @@ Here is the code snippet for setting the above property.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<!--Declaring Docking Manager AutoHideVisibility to False -->        <syncfusion:DockingManager AutoHideVisibility="False">            <!--Your contents here-->        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]//Creating an instance for Docking Manager.DockingManager = new DockingManager();//Setting AutoHideVisibility to true.DockingManager.AutoHideVisibility = true;</td></tr>
-</table>
+{% highlight html %}
+[XAML]<!--Declaring Docking Manager AutoHideVisibility to False -->        <syncfusion:DockingManager AutoHideVisibility="False">            <!--Your contents here-->        </syncfusion:DockingManager>
+{% endhighlight %}
+{% highlight c# %}
+[C#]//Creating an instance for Docking Manager.DockingManager = new DockingManager();//Setting AutoHideVisibility to true.DockingManager.AutoHideVisibility = true;
+{% endhighlight  %}
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image611161089.jpg](Interactive-Features_images/Interactive-Features_img15.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image611161089.jpg](Interactive-Features_images/Interactive-Features_img15.jpeg)
+
 
 
 _AutoHideVisibility = "False"_
 
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1917721802.jpg](Interactive-Features_images/Interactive-Features_img16.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1917721802.jpg](Interactive-Features_images/Interactive-Features_img16.jpeg)
+
 
 
 _AutoHideVisibility = "True"_
@@ -622,14 +589,12 @@ There are two modes of auto hiding behavior. They are:
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<!--Declaring Docking Manager with AutoHide Active-->        <syncfusion:DockingManager AutoHideTabsMode="AutoHideActive">            <!--Your contents here-->        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting AutoHideGroup for the Docking Manager.DockingManager.AutoHideTabsMode = AutoHideTabsMode.AutoHideGroup;</td></tr>
-</table>
+{% highlight html %}
+[XAML]<!--Declaring Docking Manager with AutoHide Active-->        <syncfusion:DockingManager AutoHideTabsMode="AutoHideActive">            <!--Your contents here-->        </syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Setting AutoHideGroup for the Docking Manager.DockingManager.AutoHideTabsMode = AutoHideTabsMode.AutoHideGroup;
+{% endhighlight  %}
 
 
 Events Handled While Auto hiding
@@ -640,9 +605,9 @@ _Event table_
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoHideAnimationStartEvent</td><td>
@@ -670,14 +635,12 @@ To apply different animation styles to the docking windows, use the following co
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<!--To set the Fade animation mode-->        <sftools:DockingManager Name="DocManager1" AutoHideAnimationMode="Fade"/></td></tr>
-<tr>
-<td>
-[C#]//To set the Fade animation mode.this.DockingManager.AutoHideAnimationMode = AutoHideAnimationMode.Fade;</td></tr>
-</table>
+{% highlight html %}
+[XAML]<!--To set the Fade animation mode-->        <sftools:DockingManager Name="DocManager1" AutoHideAnimationMode="Fade"/>
+{% endhighlight %}
+{% highlight c# %}
+[C#]//To set the Fade animation mode.this.DockingManager.AutoHideAnimationMode = AutoHideAnimationMode.Fade;
+{% endhighlight  %}
 
 
 Animation Duration
@@ -687,7 +650,7 @@ DockingManager enables you to control the duration for animation or the animatio
 The following code sets the AnimationDelay property.
 
 
-
+{% highlight c# %}
 [C#]
 
 //To set Very slow animation delay.
@@ -697,6 +660,7 @@ this.DockingManager.SetAnimationDelay(DocManager1, new Duration(new TimeSpan(300
 //To set Very fast animation delay.
 
 this.DockingManager.SetAnimationDelay(DocManager1, new Duration(new TimeSpan(10000)));
+{% endhighlight  %}
 
 ### Closing Options for Tabbed Windows
 
@@ -704,14 +668,13 @@ To set CloseTabs as CloseActive mode, use the following code:
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<sftools:DockingManager Name="DocManager1" CloseTabs="CloseActive"/></td></tr>
-<tr>
-<td>
-[C#]this.DockingManager.CloseTabs = CloseTabsMode.CloseActive;</td></tr>
-</table>
+{% highlight html %}
+[XAML]<sftools:DockingManager Name="DocManager1" CloseTabs="CloseActive"/>
+{% endhighlight %}
+{% highlight c# %}
+[C#]this.DockingManager.CloseTabs = CloseTabsMode.CloseActive;
+{% endhighlight  %}
+
 ### Enable/Disable Dragging a Window
 
 The DockingManager enables you to restrict an element to be dragged from one side to another. The dragging functionality is disabled for a window by setting the CanDrag property to false.
@@ -720,26 +683,24 @@ The following code is used to enable the CanDrag property.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<Grid Name="Properties" sftools:DockingManager.CanDrag="True"/></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetCanDrag(Properties, true);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<Grid Name="Properties" sftools:DockingManager.CanDrag="True"/>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]DockingManager.SetCanDrag(Properties, true);
+{% endhighlight  %}
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1537050122.jpg](Interactive-Features_images/Interactive-Features_img17.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1537050122.jpg](Interactive-Features_images/Interactive-Features_img17.jpeg)
+
 
 
 _CanDrag = "False"_
 
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image27394988.jpg](Interactive-Features_images/Interactive-Features_img18.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image27394988.jpg](Interactive-Features_images/Interactive-Features_img18.jpeg)
+
 
 
 _CanDrag = "True"_
@@ -759,7 +720,7 @@ The DockTabAlignment property is used as a tab strip placement for all TabbedHos
 
 You can set the DockTabAlignment to Left, Right, Bottom or Top.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -795,10 +756,10 @@ You can set the DockTabAlignment to Left, Right, Bottom or Top.
 
         </syncfusion:DockingManager>
 
+{% endhighlight  %}
 
+![C:/Users/Hemanth/Desktop/Documentation/Images/Host.jpg](Interactive-Features_images/Interactive-Features_img19.jpeg)
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/Host.jpg](Interactive-Features_images/Interactive-Features_img19.jpeg)' | markdownify }}
-{:.image }
 
 
 _DockTabAlignment = "Right"_
@@ -810,7 +771,7 @@ This dependency property will get or set the style used by the TabbedHosts that 
 The user can initialize the style of the docked element host by setting the DockedElementTabbedHostStyle property in XAML as follows.
 
 
-
+{% highlight html %}
 [XAML]
 
 <syncfusion:DockingManager  Name="DockingManager1" ContainerMode="TDI">
@@ -839,6 +800,7 @@ The user can initialize the style of the docked element host by setting the Dock
 
 
 
+{% endhighlight  %}
 
 
 ## Using Drag modes
@@ -859,34 +821,32 @@ The following code snippet is used to change the Drag mode of the DockingManager
 
 
 
-<table>
-<tr>
-<td>
-[XAML]        <!--Setting the Normal Drag Mode-->        <sftools:DockingManager Name="DocManager1" DraggingType="NormalDragging"/>        <!--Setting the Border Drag Mode-->        <sftools:DockingManager Name="DocManager1" DraggingType="BorderDragging"/>        <!--Setting the Shadow Drag Mode-->        <sftools:DockingManager Name="DocManager1" DraggingType="ShadowDragging"/></td></tr>
-<tr>
-<td>
-[C#]//Setting the Normal Drag Mode.this.DockingManager.DraggingType = DraggingType.NormalDragging;//Setting the Border Drag Mode.this.DockingManager.DraggingType = DraggingType.BorderDragging;//Setting the Shadow Drag Mode.this.DockingManager.DraggingType = DraggingType.ShadowDragging;</td></tr>
-</table>
+{% highlight html %}
+[XAML]        <!--Setting the Normal Drag Mode-->        <sftools:DockingManager Name="DocManager1" DraggingType="NormalDragging"/>        <!--Setting the Border Drag Mode-->        <sftools:DockingManager Name="DocManager1" DraggingType="BorderDragging"/>        <!--Setting the Shadow Drag Mode-->        <sftools:DockingManager Name="DocManager1" DraggingType="ShadowDragging"/>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]//Setting the Normal Drag Mode.this.DockingManager.DraggingType = DraggingType.NormalDragging;//Setting the Border Drag Mode.this.DockingManager.DraggingType = DraggingType.BorderDragging;//Setting the Shadow Drag Mode.this.DockingManager.DraggingType = DraggingType.ShadowDragging;
+{% endhighlight  %}
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1191835022.jpg](Interactive-Features_images/Interactive-Features_img20.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1191835022.jpg](Interactive-Features_images/Interactive-Features_img20.jpeg)
+
 
 
 _Normal Drag Mode_
 
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image745951164.jpg](Interactive-Features_images/Interactive-Features_img21.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image745951164.jpg](Interactive-Features_images/Interactive-Features_img21.jpeg)
+
 
 
 _Border Drag Mode_
 
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1136896003.jpg](Interactive-Features_images/Interactive-Features_img22.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1136896003.jpg](Interactive-Features_images/Interactive-Features_img22.jpeg)
+
 
 
 _Shadow Drag Mode_
@@ -898,7 +858,7 @@ _Shadow Drag Mode_
 A dockable window will be associated with a default context menu with default menu items. The DockingManager provides options to add custom context menu for the dockable window. You can set a context menu using the following code snippet. 
 
 
-
+{% highlight html %}
 [XAML]
 
         <syncfusion:DockingManager  Name="DockingManager1">
@@ -927,21 +887,21 @@ A dockable window will be associated with a default context menu with default me
 
         </syncfusion:DockingManager>
 
-
+{% endhighlight %}
 
 The output is as follows.
 
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/ContextMenu.jpg](Interactive-Features_images/Interactive-Features_img23.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/ContextMenu.jpg](Interactive-Features_images/Interactive-Features_img23.jpeg)
+
 
 
 _Custom Context Menu Added to the Docked Window_
 
 The frame work provides some in-built events such as ContextMenuOpening and ContextMenuClosing, which are handled when the context menu opens or  closes.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -955,7 +915,7 @@ DockingManager.ContextMenuOpening += new ContextMenuEventHandler(DockingManager_
 
 DockingManager.ContextMenuClosing += new ContextMenuEventHandler(DockingManager_ContextMenuClosing);
 
-
+{% endhighlight %}
 
 There are some in-built command bindings to handle the actions of the context menu, which will be much handy.
 
@@ -965,7 +925,7 @@ It is a bubbling routed event, which is handled when a context menu item click i
 
 Use the following code snippet below for triggering this event.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -996,7 +956,7 @@ void DockingManager_ContextMenuItemClick(object sender, RoutedEventArgs e)
 }
 
 
-
+{% endhighlight  %}
 
 
 ### Providing Custom Menu Items
@@ -1011,18 +971,16 @@ To add the custom menu item:
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager Name="DockingManager1" >            <syncfusion:DockingManager.CustomMenuItems>                <syncfusion:CustomMenuItemCollection>                    <syncfusion:CustomMenuItem Header="CustomItem" />                </syncfusion:CustomMenuItemCollection>            </syncfusion:DockingManager.CustomMenuItems>            <TextBox syncfusion:DockingManager.SideInDockedMode="Left" syncfusion:DockingManager.State="Dock"/>        </syncfusion:DockingManager>	</td></tr>
-<tr>
-<td>
-[C#]//Creating instance for the Docking Manager.DockingManager = new DockingManager();//Creating instance for custom items collections.CustomMenuItemCollection collection = new CustomMenuItemCollection();//Creating custom menu items.CustomMenuItem customitem = new CustomMenuItem();//Setting the header for the items.customitem.Header = "Custom Item";//Adding the items to the collection.collection.Add(customitem);//Setting the custom menu items.DockingManager.SetCustomMenuItems(DockingManager, collection);</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager Name="DockingManager1" >            <syncfusion:DockingManager.CustomMenuItems>                <syncfusion:CustomMenuItemCollection>                    <syncfusion:CustomMenuItem Header="CustomItem" />                </syncfusion:CustomMenuItemCollection>            </syncfusion:DockingManager.CustomMenuItems>            <TextBox syncfusion:DockingManager.SideInDockedMode="Left" syncfusion:DockingManager.State="Dock"/>        </syncfusion:DockingManager>	
+{% endhighlight  %}
+{% highlight c# %}
+[C#]//Creating instance for the Docking Manager.DockingManager = new DockingManager();//Creating instance for custom items collections.CustomMenuItemCollection collection = new CustomMenuItemCollection();//Creating custom menu items.CustomMenuItem customitem = new CustomMenuItem();//Setting the header for the items.customitem.Header = "Custom Item";//Adding the items to the collection.collection.Add(customitem);//Setting the custom menu items.DockingManager.SetCustomMenuItems(DockingManager, collection);
+{% endhighlight  %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/Customenuitem.jpg](Interactive-Features_images/Interactive-Features_img24.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/Customenuitem.jpg](Interactive-Features_images/Interactive-Features_img24.jpeg)
+
 
 
 _Custom Menu Item added to the Context Menu_                      
@@ -1033,18 +991,16 @@ We can disable the default menu item such as Dockable, Floating, AutoHide and so
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager Name="DockingManager1" CollapseDefaultContextMenuItems="True" >            <syncfusion:DockingManager.CustomMenuItems>                <syncfusion:CustomMenuItemCollection>                    <syncfusion:CustomMenuItem Header="CustomItem" />                </syncfusion:CustomMenuItemCollection>            </syncfusion:DockingManager.CustomMenuItems>            <TextBox syncfusion:DockingManager.SideInDockedMode="Left" syncfusion:DockingManager.State="Dock"/>        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager = new DockingManager();//Creating instance for custom items collections.CustomMenuItemCollection collection = new CustomMenuItemCollection();//Creating custom menu items.CustomMenuItem customitem = new CustomMenuItem();//Setting the header for the items.customitem.Header = "Custom Item";//Adding the items to the collection.collection.Add(customitem);//Setting the custom menu items.DockingManager.SetCustomMenuItems(DockingManager, collection);DockingManager.CollapseDefaultContextMenuItems = true;</td></tr>
-</table>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager Name="DockingManager1" CollapseDefaultContextMenuItems="True" >            <syncfusion:DockingManager.CustomMenuItems>                <syncfusion:CustomMenuItemCollection>                    <syncfusion:CustomMenuItem Header="CustomItem" />                </syncfusion:CustomMenuItemCollection>            </syncfusion:DockingManager.CustomMenuItems>            <TextBox syncfusion:DockingManager.SideInDockedMode="Left" syncfusion:DockingManager.State="Dock"/>        </syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]DockingManager = new DockingManager();//Creating instance for custom items collections.CustomMenuItemCollection collection = new CustomMenuItemCollection();//Creating custom menu items.CustomMenuItem customitem = new CustomMenuItem();//Setting the header for the items.customitem.Header = "Custom Item";//Adding the items to the collection.collection.Add(customitem);//Setting the custom menu items.DockingManager.SetCustomMenuItems(DockingManager, collection);DockingManager.CollapseDefaultContextMenuItems = true;
+{% endhighlight  %}
 
 
-{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/CollapseDefaultMenu.jpg](Interactive-Features_images/Interactive-Features_img25.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/Hemanth/Desktop/Documentation/Images/CollapseDefaultMenu.jpg](Interactive-Features_images/Interactive-Features_img25.jpeg)
+
 
 
 _Collapse Default Menuitems_
@@ -1057,28 +1013,24 @@ The following code illustrates the same:
 
 
 
-<table>
-<tr>
-<td>
-[XAML]        <syncfusion:DockingManager Name="DockingManager" IsContextMenuVisible="False">        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.IsContextMenuVisible= "false";</td></tr>
-</table>
+{% highlight html %}
+[XAML]        <syncfusion:DockingManager Name="DockingManager" IsContextMenuVisible="False">        </syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]DockingManager.IsContextMenuVisible= "false";
+{% endhighlight  %}
 
 
 The default value is set to True.  This property can also be applied to every child inside the DockingManager as shown below:
 
 
 
-<table>
-<tr>
-<td>
-[XAML]        <syncfusion:DockingManager Name= "DockingManager">            <Grid Name="grid1" syncfusion:DockingManager.IsContextMenuVisible="False">                <Grid>        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]       DockingManager.SetIsContextMenuVisible(grid1,false);</td></tr>
-</table>
+{% highlight html %}
+[XAML]        <syncfusion:DockingManager Name= "DockingManager">            <Grid Name="grid1" syncfusion:DockingManager.IsContextMenuVisible="False">                <Grid>        </syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]       DockingManager.SetIsContextMenuVisible(grid1,false);
+{% endhighlight  %}
 
 
 IsContextMenuButtonVisible property is used to control the visibility of the Context Menu Button (available when child Window is in dock state). The display of Context Menu can be disabled by setting IsContextMenuButtonVisible to False.
@@ -1087,22 +1039,20 @@ The following code illustrates the same.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]        <syncfusion:DockingManager Name="DockingManager" IsContextMenuButtonVisible="False">            <Grid/>        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.IsContextMenuButton="False";</td></tr>
-</table>
+{% highlight html %}
+[XAML]        <syncfusion:DockingManager Name="DockingManager" IsContextMenuButtonVisible="False">            <Grid/>        </syncfusion:DockingManager>
+{% endhighlight %}
+{% highlight c# %}
+[C#]DockingManager.IsContextMenuButton="False";
+{% endhighlight  %}
 
 
 The default value is set to True.
 
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image354521017.jpg](Interactive-Features_images/Interactive-Features_img26.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image354521017.jpg](Interactive-Features_images/Interactive-Features_img26.jpeg)
+
 
 
 _IsContextMenuButtonVisible=”False”_
@@ -1113,25 +1063,23 @@ This property can also be applied to every child inside the DockingManager as sh
 
 
 
-<table>
-<tr>
-<td>
-[XAML]        <syncfusion:DockingManager Name="DockingManager">            <Grid Name="grid1" syncfusion:DockingManager.IsContextMenuButtonVisible="False">                <Grid>        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetIsContextMenuButtonVisible(grid1,false);</td></tr>
-</table>
+{% highlight html %}
+[XAML]        <syncfusion:DockingManager Name="DockingManager">            <Grid Name="grid1" syncfusion:DockingManager.IsContextMenuButtonVisible="False">                <Grid>        </syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]DockingManager.SetIsContextMenuButtonVisible(grid1,false);
+{% endhighlight  %}
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1839791936.jpg](Interactive-Features_images/Interactive-Features_img27.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1839791936.jpg](Interactive-Features_images/Interactive-Features_img27.jpeg)
+
 
 
 _IsContextMenuButtonVisible=”True” for Individual Child_                
 
 ### Layout Related Features
 
-#### DesierWidth and DesierHeight in Dock/Float Modes
+### DesierWidth and DesierHeight in Dock/Float Modes
 
 Height and width of the docking window in the docked state is set by using properties like DesiredWidthInDockedMode and DesiredHeightInDockedMode respectively.
 
@@ -1139,14 +1087,12 @@ To set the height and width for the DockingManager elements in the docked state,
 
 
 
-<table>
-<tr>
-<td>
-[XAML]      <!--To set the width and height of the element in Docked Mode-->        <Grid Name="Properties" sftools:DockingManager.DesiredWidthInDockedMode="400" sftools:DockingManager.DesiredHeightInDockedMode="400"/ ></td></tr>
-<tr>
-<td>
-[C#]//To set the width of the element in Docked Mode.this.DockingManager.SetDesiredWidthInDockedMode(Properties, 400);//To set the Height of the element in Docked Mode.this.DockingManager.SetDesiredHeightInDockedMode(Properties, 400);</td></tr>
-</table>
+{% highlight html %}
+[XAML]      <!--To set the width and height of the element in Docked Mode-->        <Grid Name="Properties" sftools:DockingManager.DesiredWidthInDockedMode="400" sftools:DockingManager.DesiredHeightInDockedMode="400"/ >
+{% endhighlight  %}
+{% highlight c# %}
+[C#]//To set the width of the element in Docked Mode.this.DockingManager.SetDesiredWidthInDockedMode(Properties, 400);//To set the Height of the element in Docked Mode.this.DockingManager.SetDesiredHeightInDockedMode(Properties, 400);
+{% endhighlight  %}
 
 
 The Height and Width of the DockingManager elements in the floating state is set using the DesiredWidthInFloatingMode and DesiredHeightInFloatingMode properties, respectively.
@@ -1155,17 +1101,15 @@ Use the following code to set the above properties.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]        <!--To set the width and height of the element in the Docked Mode-->        <Grid Name="Properties" sftools:DockingManager.DesiredWidthInFloatingMode="400" sftools:DockingManager.DesiredHeightInFloatingMode="400"/></td></tr>
-<tr>
-<td>
-[C#]//To set the width of the element in Floating Mode.this.DockingManager.SetDesiredWidthInFloatingMode(Properties, 300);//To set the Height of the element in Floating Mode.this.DockingManager.SetDesiredHeightInFloatingMode(Properties, 200);</td></tr>
-</table>
+{% highlight html %}
+[XAML]        <!--To set the width and height of the element in the Docked Mode-->        <Grid Name="Properties" sftools:DockingManager.DesiredWidthInFloatingMode="400" sftools:DockingManager.DesiredHeightInFloatingMode="400"/>
+{% endhighlight %}
+{% highlight c# %}
+[C#]//To set the width of the element in Floating Mode.this.DockingManager.SetDesiredWidthInFloatingMode(Properties, 300);//To set the Height of the element in Floating Mode.this.DockingManager.SetDesiredHeightInFloatingMode(Properties, 200);
+{% endhighlight  %}
 
 
-#### Hot Tracking the Dock Window
+### Hot Tracking the Dock Window
 
 The docking elements can be highlighted when the mouse is hovered over a Docking window. This feature is enabled using the IsEnableHotTracking property.
 
@@ -1173,22 +1117,21 @@ To enable / disable hot tracking feature in DockingManager, use the following co
 
 
 
-<table>
-<tr>
-<td>
+{% highlight html %}
 [XAML]        <!-- To enable HotTracking in Docking Manager -->        <sftools:DockingManager Name="DocManager1" IsEnableHotTracking="True"/>        <!-- To disable HotTracking in Docking Manager -->        <sftools:DockingManager Name="DocManager1" IsEnableHotTracking="False"/></td></tr>
-<tr>
-<td>
+{% endhighlight  %}
+{% highlight c# %}
 [C#]//To Enable HotTracking in Docking Manager.this.DockingManager.IsEnableHotTracking = true;//To Disable HotTracking in Docking Manager.this.DockingManager.IsEnableHotTracking = false;</td></tr>
-</table>
-#### Using SizetoContentInFloat
+{% endhighlight  %}
+
+### Using SizetoContentInFloat
 
 The Float window can be resized to its child size by setting the sizeToContentInFloat property to True. The Float window will be resized to its child size when dragged from Dock to Float state. 
 
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image393773567.jpg](Interactive-Features_images/Interactive-Features_img28.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image393773567.jpg](Interactive-Features_images/Interactive-Features_img28.jpeg)
+
 
 
 _SizetoContentInFloat=”True”_
@@ -1199,19 +1142,17 @@ The following code illustrates the same.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]        <syncfusion:DockingManager Name="DockingManager" >            <usercontrol1 Name="control1" width=200 height=200 syncfusion:DockingManager. SizeToContentInFloat="true" />        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetSizetoContentInFloat(control1,true);</td></tr>
-</table>
+{% highlight html %}
+[XAML]        <syncfusion:DockingManager Name="DockingManager" >            <usercontrol1 Name="control1" width=200 height=200 syncfusion:DockingManager. SizeToContentInFloat="true" />        </syncfusion:DockingManager>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]DockingManager.SetSizetoContentInFloat(control1,true);
+{% endhighlight  %}
 
 
 When user control is dragged out from Dock state the Float window generated will automatically resize itself to the size of the user control. But when user resizes the Float window and changes it to the Dock state again, it converts it back to the Float state. The Float window returns to its previous size.
 
-#### Customizing Document Tab Control and MDI Document
+### Customizing Document Tab Control and MDI Document
 
 The following three properties allow you to customize the styles of Tab control and MDI document. This feature is integrated with both DockingManager and Document Container. 
 
@@ -1221,11 +1162,11 @@ The following three properties allow you to customize the styles of Tab control 
 
 
 
-#### DocumentTabControlStyle
+### DocumentTabControlStyle
 
 This property allows you to specify the your own customized style for the Tab control in both DockingManager and Document Container. The following code snippet will illustrate this.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -1247,19 +1188,19 @@ This property allows you to specify the your own customized style for the Tab co
 
         </syncfusion:DockingManager>
 
+{% endhighlight  %}
 
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/DocumentTabControlStyle.jpg](Interactive-Features_images/Interactive-Features_img29.jpeg)
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/DocumentTabControlStyle.jpg](Interactive-Features_images/Interactive-Features_img29.jpeg)' | markdownify }}
-{:.image }
 
 
 _DocumentTabControlStyle in TDI mode_
 
-#### DocumentTabItemStyle
+### DocumentTabItemStyle
 
 This property allows you to specify your customized style for tab items inside the Tab control in both DockingManager and Document Container. The following code snippet will illustrate this.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -1277,19 +1218,19 @@ This property allows you to specify your customized style for tab items inside t
 
 </syncfusion:DockingManager>
 
+{% endhighlight  %}
 
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/DocumentTabItemStyle%20in%20TDI%20mode.jpg](Interactive-Features_images/Interactive-Features_img30.jpeg)
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/DocumentTabItemStyle%20in%20TDI%20mode.jpg](Interactive-Features_images/Interactive-Features_img30.jpeg)' | markdownify }}
-{:.image }
 
 
 _DocumentTabItemStyle in TDI mode_
 
-#### DocumentMDIHeaderStyle
+### DocumentMDIHeaderStyle
 
 This property is used to specify the customized style for the MDI window header, in both DockingManager and Document Container. The following code snippet will illustrate this.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -1313,10 +1254,10 @@ This property is used to specify the customized style for the MDI window header,
 
         </syncfusion:DockingManager>
 
+{% endhighlight  %}
 
+![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/DocumentMDIHeaderStyle%20in%20MDI%20mode.jpg](Interactive-Features_images/Interactive-Features_img31.jpeg)
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/DocumentMDIHeaderStyle%20in%20MDI%20mode.jpg](Interactive-Features_images/Interactive-Features_img31.jpeg)' | markdownify }}
-{:.image }
 
 
 _DocumentMDIHeaderStyle in MDI mode_                      

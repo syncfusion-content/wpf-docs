@@ -11,22 +11,22 @@ documentation: ug
 
 Essential Gantt provides support for auto updating hierarchy, in which the Gantt control will listen to the change in child tasks/activities and automatically update them in the parent task/activity accordingly. There is no need to have any custom logics in business objects to update the hierarchy. You can enable or disable this functionality by using the UseAutoUpdateHierarchy property. 
 
-Use Case Scenario
+## Use Case Scenario
 
 1. When using this, no need to have custom logics in the business objects for updating the hierarchy so that codes in a business object class/data structure will be reduced.
 2. This enables you to create the abstract class/data structure for the business objects.
 
-Properties
+## Properties
 
 _Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 UseAutoUpdateHierarchy</td><td>
@@ -34,18 +34,19 @@ Enable or disable the auto update hierarchy support.</td><td>
 Dependency Property</td><td>
 bool</td></tr>
 </table>
+
 ## Using the Auto Update Hierarchy Support in an Application
 
 By default, the UseAutoUpdateHierarchy property is set to true so that this feature will work in all applications by default. If you need to prevent this and want to update the hierarchy by your own logics, then you have to set this property as false.
 
-Default Scenario
+## Default Scenario
 
 To use the auto updating hierarchy support in an application:
 
 1. Create a simple class structure for business objects.
 
 
-
+{% highlight c# %}
 [C#]
 
    public class Task : NotificationObject
@@ -254,14 +255,14 @@ To use the auto updating hierarchy support in an application:
 
     }
 
-
+{% endhighlight %}
 
 
 
 2. Create a collection of business objects to bind them as ItemsSource for the Gantt control.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -432,12 +433,12 @@ Complete = 20d
 
 }
 
-
+{% endhighlight %}
 
 3. Set the collection as ItemsSource of the Gantt control.
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -471,6 +472,7 @@ Complete = 20d
 </gantt:GanttControl>
 
 
+{% endhighlight %}
 
 ## Using Custom Logics in Business Objects
 
@@ -479,7 +481,7 @@ To use your own logics in business objects:
 1. Create a simple class structure for business objects. Add custom calculations on business objects to update the hierarchy when its state changed.
 
 
-
+{% highlight c# %}
 [C#]
 
 public class Task : NotificationObject
@@ -792,11 +794,11 @@ public class Task : NotificationObject
 
     }
 
-
+{% endhighlight  %}
 
 2. Create a collection of business objects to bind it as ItemsSource of the Gantt control.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -958,13 +960,13 @@ Complete = 20d
 
 }
 
-
+{% endhighlight  %}
 
 3. Set the UseAutoUpdateHierarchy property as false to handle the custom calculations on the business objects. Set the collection as ItemsSource of the Gantt control.
-> 
-_Note: If you use the TaskDetails class as your business object, then you should not set the UseAutoUpdateHierarchy property as false._
 
+> Note: If you use the TaskDetails class as your business object, then you should not set the UseAutoUpdateHierarchy property as false.
 
+{% highlight html %}
 
 [XAML]
 
@@ -998,7 +1000,7 @@ _Note: If you use the TaskDetails class as your business object, then you should
 
 </gantt:GanttControl>
 
-
+{% endhighlight  %}
 
 Output:
 
@@ -1006,8 +1008,8 @@ The corresponding output for the code is as follows.
 
 
 
-{{ '![](Auto-Update-Hierarchy_images/Auto-Update-Hierarchy_img1.png)' | markdownify }}
-{:.image }
+![](Auto-Update-Hierarchy_images/Auto-Update-Hierarchy_img1.png)
+
 
 
 _Gantt Control with Auto Updated Hierarchy_

@@ -19,9 +19,9 @@ The variances will be calculated only for the mapped baseline fields. For exampl
 
 You can revert to the default view of the Grid by invoking the corresponding method in Gantt.
 
-> _Note: Variance view will have the read-only Grid. You cannot edit the cells in Gantt Grid, when it is in variance view._
+> Note: Variance view will have the read-only Grid. You cannot edit the cells in Gantt Grid, when it is in variance view.
 
-Use Case Scenario
+## Use Case Scenario
 
 This will help the Project Leads to compare the current progress of the project to the baseline and modify or rework the plan of existing tasks in order to meet deadlines. Organizations can use this to compare the current progress of the project to the initial estimation, analyze the rework of the plan or the budget of the project in to meet deadlines and exact user requirements.
 
@@ -56,7 +56,7 @@ void</th></tr>
 </table>
 
 
-Adding Baseline Table View to an Application
+## Adding Baseline Table View to an Application
 
 To add Baseline Table View to an application:
 
@@ -70,7 +70,7 @@ To add Baseline Table View to an application:
 The following codes illustrate this:
 
 
-
+{% highlight html %}
 [XAML]
 
    <gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
@@ -113,7 +113,8 @@ The following codes illustrate this:
 
             </gantt:GanttControl>
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -128,18 +129,17 @@ The following codes illustrate this:
    this.Gantt.LoadDefaultTableView();
 
 
-
+{% endhighlight  %}
 The following image shows the BaseLine Table View:
 
 
 
-{{ '![C:/Users/thanigaivelan/Desktop/UGImages/IMG_02012012_053236.png](Baseline-Support_images/Baseline-Support_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/thanigaivelan/Desktop/UGImages/IMG_02012012_053236.png](Baseline-Support_images/Baseline-Support_img1.png)
 
 
 _BaseLine Table View_
 
-Samples
+## Samples
 
 To view samples:
 
@@ -148,6 +148,7 @@ To view samples:
 3. Select Gantt.
 4. Expand the Baseline Support item in the Sample Browser.
 5. Choose the Baseline TableView sample to launch.
+
 ## On-Demand Baseline Column Inclusion
 
 
@@ -161,23 +162,23 @@ This helps the Project Lead to store the estimation and will help to schedule th
 
 
 
-{{ '![C:/Users/thanigaivelan/Desktop/UGImages/IMG_02012012_053003.png](Baseline-Support_images/Baseline-Support_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/thanigaivelan/Desktop/UGImages/IMG_02012012_053003.png](Baseline-Support_images/Baseline-Support_img2.png)
+
 
 
 _On-Demand Baseline Column Inclusion_
 
-Properties
+## Properties
 
 _Property_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 ShowAddNewColumn</td><td>
@@ -198,7 +199,7 @@ To add the On-Demand Baseline Column Inclusion to an application you need to ena
 
 The following codes illustrate Adding On-Demand Baseline Column Inclusion to an Application:
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -249,7 +250,8 @@ The following codes illustrate Adding On-Demand Baseline Column Inclusion to an 
             </gantt:GanttControl>
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 [C#]
 
 
@@ -258,9 +260,9 @@ The following codes illustrate Adding On-Demand Baseline Column Inclusion to an 
 
    this.Gantt.ShowAddNewColumn = true;
 
+{% endhighlight  %}
 
-
-Samples Link
+## Samples Link
 
 To view samples:
 
@@ -269,6 +271,7 @@ To view samples:
 3. Select Gantt.
 4. Expand the Baseline Support item in the Sample Browser.
 5. Choose the Baseline Table View sample to launch.
+
 ## Project Statistics
 
 
@@ -302,7 +305,7 @@ ProjectInfo </th></tr>
 </table>
 
 
-Adding Project Statistics to an Application
+### Adding Project Statistics to an Application
 
 To add Project Statistics to an application:
 
@@ -312,7 +315,7 @@ To add Project Statistics to an application:
 
 The following codes illustrate adding Project Statistics to an application:
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -358,7 +361,8 @@ The following codes illustrate adding Project Statistics to an application:
 
             </gantt:GanttControl>
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -372,19 +376,19 @@ The following codes illustrate adding Project Statistics to an application:
 
    projInfo = this.Gantt.GetProjectStatistics();      
 
-
+{% endhighlight  %}
 
 Sample Project Statistic Visual:
 
 
 
-{{ '![C:/Users/labuser/Desktop/a.png](Baseline-Support_images/Baseline-Support_img3.png)' | markdownify }}
-{:.image }
+![C:/Users/labuser/Desktop/a.png](Baseline-Support_images/Baseline-Support_img3.png)
+
 
 
 _Project Statistics_
 
-Samples
+### Samples
 
 To view samples:
 

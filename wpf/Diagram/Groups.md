@@ -21,12 +21,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Parameter</td><td>
-Return Type</td><td>
-Description</td><td>
-Reference Type</td></tr>
+<th>
+Name</th><th>
+Parameter</th><th>
+Return Type</th><th>
+Description</th><th>
+Reference Type</th></tr>
 <tr>
 <td>
 Group.AddChild(INodeGroup)</td><td>
@@ -101,7 +101,7 @@ The Group class enables to group nodes in Essential Diagram WPF. The AddChild me
 The following code example illustrates how to create a group by using code behind.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -175,7 +175,8 @@ public Window1 ()
 }
 
 
-
+{% endhighlight   %}
+{% highlight vbnet %}
 [VB]
 
 
@@ -254,14 +255,14 @@ Public View As DiagramView
 
         End Sub
 
-
+{% endhighlight   %}
 
 The following screenshot illustrates a group of two nodes created by using code behind.
 
 
 
-{{ '![](Groups_images/Groups_img1.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img1.jpeg)
+
 
 
 _Group of Two Nodes_
@@ -274,7 +275,7 @@ The Group command is used to group two or more objects.
 
 The following code example illustrates how to group objects by using the Group command.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -282,7 +283,8 @@ The following code example illustrates how to group objects by using the Group c
 
 DiagramCommandManager.Group.Execute(diagramView.Page, diagramView);
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -290,7 +292,7 @@ DiagramCommandManager.Group.Execute(diagramView.Page, diagramView);
 
 DiagramCommandManager.Group.Execute(diagramView.Page, diagramView)
 
-
+{% endhighlight   %}
 
 The following steps illustrate how to create a group by using the Group command.
 
@@ -298,16 +300,16 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-{{ '![](Groups_images/Groups_img2.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img2.jpeg)
+
 
 
 _Selection of Objects to be Grouped_
 
 
 
-{{ '![](Groups_images/Groups_img3.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img3.jpeg)
+
 
 
 _Selected Objects_
@@ -318,8 +320,8 @@ The new group is indicated by the selection rectangle which is displayed surroun
 
 
 
-{{ '![](Groups_images/Groups_img4.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img4.jpeg)
+
 
 
 _Grouped Objects inside the Selection Rectangle_
@@ -330,13 +332,13 @@ You can also invoke the Group command by using the context menu which is display
 
 
 
-{{ '![](Groups_images/Groups_img5.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img5.jpeg)
+
 
 
 _Grouping By Using the Context Menu_
 
-> _Note: The Group command is enabled only when two or more objects are selected._
+> Note: The Group command is enabled only when two or more objects are selected.
 
 See Also
 
@@ -354,8 +356,8 @@ The following steps illustrate how to select an object which has two groups.
 
 
 
-{{ '![](Groups_images/Groups_img6.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img6.jpeg)
+
 
 
 _Outer Group Selected_
@@ -364,8 +366,8 @@ _Outer Group Selected_
 
 
 
-{{ '![](Groups_images/Groups_img7.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img7.jpeg)
+
 
 
 _Inner Group Selected_
@@ -374,8 +376,8 @@ _Inner Group Selected_
 
 
 
-{{ '![](Groups_images/Groups_img8.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img8.jpeg)
+
 
 
 _Selecting the Child Node Again_
@@ -388,8 +390,8 @@ To edit a group, you have to make sure that the corresponding group is selected.
 
 
 
-{{ '![](Groups_images/Groups_img9.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img9.jpeg)
+
 
 
 _Resizing a Group_
@@ -398,8 +400,8 @@ _Resizing a Group_
 
 
 
-{{ '![](Groups_images/Groups_img10.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img10.jpeg)
+
 
 
 _Resizing a Child Object_
@@ -408,8 +410,8 @@ Once a group is edited, the group's selection rectangle updates its area to fit 
 
 
 
-{{ '![](Groups_images/Groups_img11.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img11.jpeg)
+
 
 
 _Updated Selection Rectangle_
@@ -434,8 +436,8 @@ This will display a red adorner along the group's boundary, indicating that the 
 
 
 
-{{ '![](Groups_images/Groups_img12.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img12.jpeg)
+
 
 
 _Creating Connection to a Group_
@@ -444,8 +446,8 @@ _Creating Connection to a Group_
 
 
 
-{{ '![](Groups_images/Groups_img13.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img13.jpeg)
+
 
 
 _Connection Created to the Group_
@@ -461,8 +463,8 @@ When the mouse pointer is over the center port, a red adorner will be displayed 
 
 
 
-{{ '![](Groups_images/Groups_img14.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img14.jpeg)
+
 
 
 _Creating Connection to a Child Object_
@@ -471,13 +473,13 @@ _Creating Connection to a Child Object_
 
 
 
-{{ '![](Groups_images/Groups_img15.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img15.jpeg)
+
 
 
 _Connection Created to the Child Object_
 
-> _Note: Connections cannot be created between a group and its own children. However child objects belonging to the same group can be connected to each other._
+> Note: Connections cannot be created between a group and its own children. However child objects belonging to the same group can be connected to each other.
 
 See Also
 
@@ -499,7 +501,7 @@ The RemoveChild method is used to remove elements from a group.
 
 For example, the following code illustrates how to remove node n from a group by using code behind.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -574,7 +576,8 @@ public Window1 ()
     g.RemoveChild(n);}
 
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 [VB]
 
 
@@ -655,7 +658,7 @@ Public View As DiagramView
 
         End Sub
 
-
+{% endhighlight  %}
 
 The following screenshot illustrates a group of two nodes created by using code behind.
 
@@ -665,7 +668,7 @@ The Ungroup command is used to ungroup two or more objects.
 
 The following code example illustrates how to ungroup objects by using the Ungroup command.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -673,7 +676,8 @@ The following code example illustrates how to ungroup objects by using the Ungro
 
 DiagramCommandManager.Ungroup.Execute(diagramView.Page, diagramView);
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -681,7 +685,7 @@ DiagramCommandManager.Ungroup.Execute(diagramView.Page, diagramView);
 
 DiagramCommandManager.Ungroup.Execute(diagramView.Page, diagramView)
 
-
+{% endhighlight   %}
 
 The following steps illustrate how to ungroup a group by using the Ungroup command.
 
@@ -689,8 +693,8 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
 
 
 
-{{ '![](Groups_images/Groups_img16.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img16.jpeg)
+
 
 
 _Selecting a Group_
@@ -701,8 +705,8 @@ As soon as the group is ungrouped, the selection rectangle disappears indicating
 
 
 
-{{ '![](Groups_images/Groups_img17.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img17.jpeg)
+
 
 
 _Objects Ungrouped_
@@ -713,13 +717,13 @@ You can also invoke the Ungroup command by using the context menu which is displ
 
 
 
-{{ '![](Groups_images/Groups_img18.jpeg)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img18.jpeg)
+
 
 
 _Ungrouping By Using the Context Menu_
 
-> _Note: The Ungroup command is enabled only when two or more objects are selected._
+> Note: The Ungroup command is enabled only when two or more objects are selected.
 
 > 
 
@@ -740,12 +744,12 @@ _Methods Table_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Parameters </td><td>
-Return Type</td><td>
-Description</td><td>
-Reference Links</td></tr>
+<th>
+Name</th><th>
+Parameters </th><th>
+Return Type</th><th>
+Description</th><th>
+Reference Links</th></tr>
 <tr>
 <td>
 Nodes.Add(Node)</td><td>
@@ -767,7 +771,7 @@ Creating a Layer
 
 The following code example illustrates the creation of a layer with two Nodes and one LineConnector added.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -821,7 +825,8 @@ Lan1.Lines.Add(l1);
 
 Lan1.Background = Brushes.Transparent;
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -881,7 +886,8 @@ Adding the Layer to a Model
 
 The following code example illustrates the addition of a layer to a model.
 
-
+{% endhighlight   %}
+{% highlight c#  %}
 
 [C#]
 
@@ -936,7 +942,8 @@ Lan1.Background = Brushes.Transparent;
 
 diagramModel.Layers.Add(Lan1)
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -993,7 +1000,7 @@ Lan1.Background = Brushes.Transparent
 
 diagramModel.Layers.Add(Lan1)
 
-
+{% endhighlight   %}
 
 ## Hidden or Active Layer
 
@@ -1002,7 +1009,7 @@ Active Layer
 When a new Node or LineConnector is dropped from SymbolPalette into the DiagramPage, it will be added into all the active layers automatically. A layer can be activated or deactivated as shown in following code snippet.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -1058,7 +1065,8 @@ diagramModel.Layers.Add(Lan1);
 
 Lan1.Active = false;
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1115,14 +1123,14 @@ diagramModel.Layers.Add(Lan1)
 
 Lan1.Active = False
 
-
+{% endhighlight   %}
 
 Hiding a Layer
 
 The following code example illustrates hiding a layer. When a layer is hidden all the nodes and connectors belonging to this layer will be hidden.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -1179,7 +1187,8 @@ diagramModel.Layers.Add(Lan1);
 
 Lan1.Visible = false;
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1237,18 +1246,18 @@ diagramModel.Layers.Add(Lan1)
 
 Lan1.Visible = False
 
+{% endhighlight  %}
 
+![](Groups_images/Groups_img19.png)
 
-{{ '![](Groups_images/Groups_img19.png)' | markdownify }}
-{:.image }
 
 
 _Before hiding the layer_
 
 
 
-{{ '![](Groups_images/Groups_img20.png)' | markdownify }}
-{:.image }
+![](Groups_images/Groups_img20.png)
+
 
 
 _After hiding the layer_
