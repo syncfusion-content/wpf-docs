@@ -15,12 +15,12 @@ The spin button’s position in the DomainUpDown control can be changed using Sp
 2. Left
 3. Both
 
-Right
+### Right
 
 Spin buttons will be aligned on the right side of the control.
 
 
-
+{%highlight xml%}
 [XAML]
 
 
@@ -40,24 +40,25 @@ Spin buttons will be aligned on the right side of the control.
  </editors:SfDomainUpDown>
 
 
+{%endhighlight%}
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/3.png](Spin-Button-Alignment_images/Spin-Button-Alignment_img1.png)' | markdownify }}
-{:.image }
+![](Spin-Button-Alignment_images/Spin-Button-Alignment_img1.png)
 
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/8.png](Spin-Button-Alignment_images/Spin-Button-Alignment_img2.png)' | markdownify }}
-{:.image }
+
+![](Spin-Button-Alignment_images/Spin-Button-Alignment_img2.png)
 
 
-Left
+
+### Left
 
 Spin buttons will be aligned on the left side of the control.
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -77,23 +78,24 @@ Spin buttons will be aligned on the left side of the control.
 
 
 
+{%endhighlight%}
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/9.png](Spin-Button-Alignment_images/Spin-Button-Alignment_img3.png)' | markdownify }}
-{:.image }
+![](Spin-Button-Alignment_images/Spin-Button-Alignment_img3.png)
 
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/10.png](Spin-Button-Alignment_images/Spin-Button-Alignment_img4.png)' | markdownify }}
-{:.image }
+
+![](Spin-Button-Alignment_images/Spin-Button-Alignment_img4.png)
 
 
-Both
+
+### Both
 
 The spin button’s decrement button will be aligned on the left side of the control and the increment button is aligned on the right side of the control.
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -114,10 +116,10 @@ The spin button’s decrement button will be aligned on the left side of the con
 </editors:SfDomainUpDown>          
 
 
+{%endhighlight%}
 
 
+![](Spin-Button-Alignment_images/Spin-Button-Alignment_img5.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/11.png](Spin-Button-Alignment_images/Spin-Button-Alignment_img5.png)' | markdownify }}
-{:.image }
 
 

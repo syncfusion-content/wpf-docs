@@ -33,15 +33,15 @@ The various elements of a TabControlExt control is illustrated in the below imag
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.jpeg)
+
 
 
 ## Creating TabControlExt control
 
 There are two possible ways to create a simple TabControlExt control.
 
-Through Designer
+### Through Designer
 
 To create the TabControlExt control through designer, follow the below steps.
 
@@ -52,18 +52,18 @@ To create the TabControlExt control through designer, follow the below steps.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
 
-Programmatically
+
+### Programmatically
 
 TabControlExt control is created by using either XAML or C# code. The following lines of code can be used to create a TabControlExt control.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -73,9 +73,9 @@ TabControlExt control is created by using either XAML or C# code. The following 
 <syncfusion:TabControlExt Name="tabControlExt">
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight  %}
 [C#]
 
 
@@ -95,11 +95,11 @@ StackPanel stackPanel = new StackPanel();
 //Adding control to the stackpanel
 
 stackPanel.Children.Add(tabControlExt); 
+{% endhighlight %}
 
 
+![](Getting-Started_images/Getting-Started_img3.jpeg)
 
-{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
-{:.image }
 
 
 > _Note: To display the TabControlExt using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed._

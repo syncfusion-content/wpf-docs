@@ -9,9 +9,11 @@ documentation: ug
 
 # Appearance and Styling
 
-RatedFill
+### RatedFill
 
 The RatedFill property fills the rated area with the specified solid color in the Rating control.
+
+{%highlight xml%}
 
 [XAML]
 
@@ -31,15 +33,17 @@ The RatedFill property fills the rated area with the specified solid color in th
 
 </editors:SfRating>
 
+{%endhighlight%}
+
+![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/7.png](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)' | markdownify }}
-{:.image }
 
-
-PointerOverFill
+### PointerOverFill
 
 The PointerOverFill property fills the mouse over area with the specified solid color in the Rating control.
+
+{%highlight xml%}
 
 [XAML]
 
@@ -60,14 +64,18 @@ The PointerOverFill property fills the mouse over area with the specified solid 
 </editors:SfRating>
 
 
-
-{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)' | markdownify }}
-{:.image }
+{%endhighlight%}
 
 
-RatedStroke
+![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
+
+
+
+### RatedStroke
 
 RatedStroke sets the stroke for the rated area with the specified solid color in the Rating control.
+
+{%highlight xml%}
 
 [XAML]
 
@@ -88,16 +96,18 @@ RatedStroke sets the stroke for the rated area with the specified solid color in
 </editors:SfRating >
 
 
+{%endhighlight%}
+
+
+![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
 
 
-{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)' | markdownify }}
-{:.image }
-
-
-RatedStrokeThickness
+### RatedStrokeThickness
 
 RatedStrokeThickness sets the stroke thickness for the rated area with the specified value in the Rating control.
+
+{%highlight xml%}
 
 [XAML]
 
@@ -120,14 +130,16 @@ RatedStrokeThickness sets the stroke thickness for the rated area with the speci
 </editors:SfRating>
 
 
+{%endhighlight%}
 
-{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)' | markdownify }}
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 
-PointerOverStroke
+### PointerOverStroke
 
 PointerOverStroke sets the stroke for the mouseover area with the specified solid color in the Rating control.
+
+{%highlight xml%}
 
 [XAML]
 
@@ -148,16 +160,18 @@ PointerOverStroke sets the stroke for the mouseover area with the specified soli
 </editors:SfRating>
 
 
+{%endhighlight%}
+
+
+![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
 
 
-{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)' | markdownify }}
-{:.image }
-
-
-PointerOverStrokeThickness
+### PointerOverStrokeThickness
 
 PointerOverStrokeThickness sets the stroke thickness for the mouseover area with the specified value in the Rating control.
+
+{%highlight xml%}
 
 [XAML]
 
@@ -179,15 +193,17 @@ PointerOverStrokeThickness sets the stroke thickness for the mouseover area with
 
 </editors:SfRating>
 
+{%endhighlight%}
+
+![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)
 
 
-{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img6.png)' | markdownify }}
-{:.image }
 
-
-UnratedFill
+### UnratedFill
 
 The UnratedFill property fills the unrated area with the specified solid color in the RatingControl.
+
+{%highlight xml%}
 
 [XAML]
 
@@ -207,15 +223,18 @@ The UnratedFill property fills the unrated area with the specified solid color i
 
 </editors:SfRating >
 
+{%endhighlight%}
+
+![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)
 
 
-{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img7.png)' | markdownify }}
-{:.image }
 
-
-UnratedStroke
+### UnratedStroke
 
 UnratedStroke sets the stroke for the unrated area with the specified solid color in the Rating control.
+
+{%highlight xml%}
+
 
 [XAML]
 
@@ -235,15 +254,17 @@ UnratedStroke sets the stroke for the unrated area with the specified solid colo
 
 </editors:SfRating >
 
+{%endhighlight%}
+
+![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)
 
 
-{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img8.png)' | markdownify }}
-{:.image }
 
-
-UnratedStrokeThickness
+### UnratedStrokeThickness
 
 UnratedStrokeThickness sets the stroke thickness for the unrated area with the specified value in the Rating control.
+
+{%highlight xml%}
 
 [XAML]
 
@@ -265,19 +286,21 @@ UnratedStrokeThickness sets the stroke thickness for the unrated area with the s
 
 </editors:SfRating >
 
+{%endhighlight%}
 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img9.png)
 
-{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img9.png)' | markdownify }}
-{:.image }
 
 
 > _Note: The above properties are available in RatingItem. To set this property, use the ItemContainerStyle property of Rating._
 
 
 
-Height
+### Height
 
 You can set the Height of each SfRatingItem by using Height property. 
+
+{%highlight xml%}
 
 XAML
 
@@ -297,13 +320,15 @@ XAML
 
                 </syncfusion:SfRating>
 
+{%endhighlight%}
 
+![](Appearance-and-Styling_images/Appearance-and-Styling_img10.png)
 
-{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img10.png)' | markdownify }}
-{:.image }
 
 
 To set same Height for each SfRatingItem, you can use the ItemContainerStyle.
+
+{%highlight xml%}
 
 XAML
 
@@ -322,9 +347,10 @@ XAML
                 </syncfusion:SfRating>
 
 
+{%endhighlight%}
 
-{{ '![](Appearance-and-Styling_images/Appearance-and-Styling_img11.png)' | markdownify }}
-{:.image }
+![](Appearance-and-Styling_images/Appearance-and-Styling_img11.png)
+
 
 
 

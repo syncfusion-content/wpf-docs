@@ -13,11 +13,11 @@ The RangeAdornerBackground property is used to set the background color of the r
 
 
 
-{{ '![](Range-Adorner-Background_images/Range-Adorner-Background_img1.png)' | markdownify }}
-{:.image }
+![](Range-Adorner-Background_images/Range-Adorner-Background_img1.png)
 
 
-_RangeAdornerBackground property table_
+
+## _RangeAdornerBackground property table_
 
 <table>
 <tr>
@@ -31,19 +31,25 @@ RangeAdornerBackground</td><td>
 Sets the background color of the adorner.</td><td>
 Color name</td></tr>
 </table>
+
 ## Adding Range Adorner Background to an Application 
 
 The RangeAdornerBackground property must be set either in XAML or the code file.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]  RangeAdornerBackground="LightGreen"</td></tr>
-<tr>
-<td>
-[C#]  control.RangeAdornerBackground = Brushes.LightGreen;</td></tr>
-</table>
+{% highlight xml %}
 
+[XAML] 
+ RangeAdornerBackground="LightGreen"
+ 
+ {% endhighlight %}
+ 
+ 
+{% highlight C# %}
+
+[C#]  
+control.RangeAdornerBackground = Brushes.LightGreen;
+
+{% endhighlight %}
 

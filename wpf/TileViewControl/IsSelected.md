@@ -11,20 +11,20 @@ documentation: ug
 
 IsSelected is a boolean property in the TileViewItem which is used to select a particular TileViewItem. If the IsSelected property of a TileViewItem is set to True, the set TileViewItems opacity is set to 1 and the remaining TileViewItems opacity will be reduced to show the difference.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 This feature will be very useful when you who want to select a particular TileViewItem.
 
 
 
-Adding IsSelected to an Application 
+## Adding IsSelected to an Application 
 
 IsSelected can be added to an application by using either XAML or C# code.
 
 The following code example illustrates how to add the IsSelected to an application.
 
 
-
+{% highlight xml %}
 [XAML]
 
 <syncfusion:TileViewControl x:Name="TileView" Height="600" Width="800">
@@ -41,10 +41,10 @@ The following code example illustrates how to add the IsSelected to an applicati
 
 </syncfusion:TileViewControl>
 
+{% endhighlight %}
 
 
-
-
+{% highlight c# %}
 [C#]
 
       TileViewControl Tile = new TileViewControl();
@@ -52,23 +52,23 @@ The following code example illustrates how to add the IsSelected to an applicati
       TileViewItem item1 = new TileViewItem();
 
       item1.IsSelected = true;
+{% endhighlight %}
 
 
 
 
-
-Properties
+## Properties
 
 _Property Table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td><td>
+{{ '**Reference links**' | markdownify }} </td></tr>
 <tr>
 <td>
 IsSelected</td><td>
@@ -79,7 +79,7 @@ False</td><td>
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

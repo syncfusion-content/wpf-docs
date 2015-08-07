@@ -14,10 +14,10 @@ _Properties_
 <table>
 <tr>
 <td>
-1. Property </td><td>
-2. Description </td><td>
-3. Type </td><td>
-4. Data Type </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>ReportPath</td><td>
@@ -132,10 +132,11 @@ _Methods_
 <table>
 <tr>
 <th>
-5. Method </th><th>
-6. Description </th><th>
-7. Parameters </th><th>
-8. Return Type </th></tr>
+
+{{ '**Method**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Parameters**' | markdownify }}</td><td>
+{{ '**Return Type**' | markdownify }}</td></tr>
 <tr>
 <th>
 <br>RefreshReport</th><th>
@@ -190,8 +191,8 @@ _Events_
 <table>
 <tr>
 <th>
-9. Event </th><th>
-10. Description </th></tr>
+{{ '**Event**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <th>
 <br>ViewModeChanged</th><th>

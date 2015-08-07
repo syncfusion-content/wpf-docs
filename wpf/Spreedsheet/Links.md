@@ -15,21 +15,21 @@ A hyperlink is a convenient way to navigate from one workbook to another workboo
 
 
 
-Adding hyperlink to Cell
+### Adding hyperlink to Cell
 
 You can add the hyperlink to the spreadsheet cell using the Insert Hyperlink dialog box. You can open the Insert Hyperlink dialog using the HyperlinkCommand_._
 
 
 
-{{ '![](Links_images/Links_img1.png)' | markdownify }}
-{:.image }
+![](Links_images/Links_img1.png)
+
 
 
 
 
 The following code illustrates how to bind the HyperlinkCommand__a button: 
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -40,4 +40,4 @@ The following code illustrates how to bind the HyperlinkCommand__a button:
 </Button>
 
 
-
+{%endhighlight%}

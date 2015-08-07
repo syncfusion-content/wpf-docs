@@ -11,15 +11,15 @@ documentation: ug
 
 Localization is the key feature for providing IT solutions targeted at global users. Essential BI OLAP Client for WPF allows user to localize the control to a specific locale. The following document briefly explains the step by step procedure to localize an OLAP Client for WPF control. 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 Localization helps the user to create an application that targets several cultures.
 
-{{ '![](Localization-Support_images/Localization-Support_img1.png)' | markdownify }}
-{:.image }
+![](Localization-Support_images/Localization-Support_img1.png)
 
 
-Localizing an OLAP Client in an Application
+
+### Localizing an OLAP Client in an Application
 
 The OLAP Client for WPF supports “resx” based localization. The following steps need to be performed, in order to localize the control.
 
@@ -28,11 +28,11 @@ The OLAP Client for WPF supports “resx” based localization. The following st
 * <SupportedCultures> Tag inclusion into the project file
 * Specifying the CurrentUICulture
 
-See Also
+### See Also
 
 Getting Started
 
-Translation
+### Translation
 
 The first step in localization is translating the strings that can be localized to the destination locale. Basically, OlapClient.WPF contains control assemblies such as OlapChart.WPF and OlapGrid.WPF and tools assemblies such as OlapShared.WPF and OlapTools.WPF within it. So, it is mandatory to localize those assemblies as well. The following tables contain the Localization Keys and the Strings to be localized for OlapClient.WPF, OlapChart.WPF, OlapGrid.WPF, OlapShared.WPF and OlapTools.WPF assemblies. Translate the second column in each table, which contains the strings to be localized to the target locale. 
 
@@ -648,7 +648,7 @@ Max number of records to be displayed.</td></tr>
 </table>
 
 
-Resource File and File Name Conventions
+## Resource File and File Name Conventions
 
 After translating the strings that can be localized, perform the following in the application:
 
@@ -667,14 +667,14 @@ After translating the strings that can be localized, perform the following in th
 
 
 
-{{ '![](Localization-Support_images/Localization-Support_img2.png)' | markdownify }}
-{:.image }
+![](Localization-Support_images/Localization-Support_img2.png)
+
 
 
 6. The Add New Item dialog displays.
 
-{{ '![](Localization-Support_images/Localization-Support_img3.png)' | markdownify }}
-{:.image }
+![](Localization-Support_images/Localization-Support_img3.png)
+
 
 
 7. Select Resources File from the list. Name the resource file: Syncfusion.OlapClient.WPF.fr-FR.resx then click Add.
@@ -683,7 +683,7 @@ After translating the strings that can be localized, perform the following in th
 
 > _Note: The resource file name should strictly be in the format  “Syncfusion.OlapClient.WPF.<<Culture Code>>.resx”._
 
-Examples
+## Examples
 
 * Syncfusion.OlapClient.WPF.es.resx
 * Syncfusion.OlapClient.WPF.ja-JP.resx
@@ -701,11 +701,11 @@ Now, the new resource file is included successfully.
 
 8. Copy and paste the translated locale to the resource file created in the earlier step.
 
-{{ '![](Localization-Support_images/Localization-Support_img4.png)' | markdownify }}
-{:.image }
+![](Localization-Support_images/Localization-Support_img4.png)
 
 
-<SupportedCultures> Tag Inclusion into the Project File
+
+## <SupportedCultures> Tag Inclusion into the Project File
 
 In Silverlight, we need to specify the list of supported cultures using the <SupportedCultures> tag in the project file. To specify the supported cultures in a project file, perform the following steps: 
 
@@ -713,20 +713,22 @@ In Silverlight, we need to specify the list of supported cultures using the <Sup
 2. Again, right click the project file and select Edit. Now, the project files will appear in the XML editor in Visual Studio.
 3. Find the tag <SupportedCultures> and then specify the culture code, which is already appended in the resource file name.
 
-Example: <SupportedCultures>fr-FR<SupportedCultures>
+ Example: <SupportedCultures>fr-FR<SupportedCultures>
 
 You can specify multiple cultures as well, by using the (;) semi-colon operator to separate the culture codes.
 
-Example:<SupportedCultures>en-US;fr;fr-FR;ru;ru-RU;</SupportedCultures>
+ Example:<SupportedCultures>en-US;fr;fr-FR;ru;ru-RU;</SupportedCultures>
 
 4. Now, right click the project name and select Reload.
 
 Now, the supported cultures are included in the project file.
 
-Specifying the CurrentUICulture
+## Specifying the CurrentUICulture
 
 Now, you need to specify the CurrentUICulture of the application. We can specify the CurrentUICulture either from Application_Startup in App.XMAL.csor from the constructor on the MainPage (If you are specifying the current culture on the main page, then make sure, this is assigned before calling the InitializeComponent method). The following code snippets describe the two variations.
 
+{% highlight C# %} 
+ 
 [C#]
 
 
@@ -751,11 +753,11 @@ public MainPage()
 
 } 
 
+ {% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}  [VB]
 
 
 
@@ -773,10 +775,13 @@ InitializeComponent()
 
 End Sub
 
-
+{% endhighlight %}
 
 (Or)
 
+
+{% highlight C# %} 
+ 
 [C#]
 
 
@@ -801,11 +806,11 @@ private void Application_Startup(object sender, StartupEventArgs e)
 
 } 
 
+{% endhighlight %}
 
 
 
-
-[VB]
+{% highlight vbnet %}  [VB]
 
 
 
@@ -823,5 +828,5 @@ Me.RootVisual = New MainPage()
 
 End Sub
 
-
+{% endhighlight %}
 

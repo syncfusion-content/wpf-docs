@@ -11,10 +11,11 @@ documentation: ug
 
 The Number formatting controls how a number is displayed in the UpDown control by specifying the culture-specific group separator, decimal separator, and the number of decimal digits to be used. You can format the value of the UpDown control by using the NumberFormatInfo property.
 
-Use of NumberFormatInfo
+### Use of NumberFormatInfo
 
 The NumberFormatInfo can be set for the UpDown control as shown in the following code example.
 
+{%highlight xml%}
  [XAML]
 
 <syncfusion:UpDown HorizontalAlignment="Center" VerticalAlignment="Center" Name="upDown" Height="51"Width="140" Value="5555555">
@@ -33,7 +34,9 @@ The NumberFormatInfo can be set for the UpDown control as shown in the following
 
 
 
+{%endhighlight%}
 
+{%highlight c#%}
 
 [C#]
 
@@ -53,10 +56,10 @@ NumberDecimalSeparator = "*"
 
 };
 
+{%endhighlight%}
 
+![](Number-Formatting_images/Number-Formatting_img1.png)
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1275.png](Number-Formatting_images/Number-Formatting_img1.png)' | markdownify }}
-{:.image }
 
 
 
@@ -68,11 +71,11 @@ _NumberFormatInfo Property_
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td><td>
-Reference Links</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 NumberFormatInfo</td><td>
@@ -88,11 +91,11 @@ _NumberFormatInfo Event_
 <table>
 <tr>
 <th>
-Event</th><th>
-Description</th><th>
-Arguments</th><th>
-Type</th><th>
-Reference Links</th></tr>
+{{ '**Events**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Arguments**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <th>
 NumberFormatInfoChanged</th><th>

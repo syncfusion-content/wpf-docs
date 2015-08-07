@@ -11,7 +11,7 @@ documentation: ug
 
 The RichTextBoxAdv control provides built-in static commands that showcase the features available in RichTextBoxAdv.
 
-Properties
+## Properties
 
 
 

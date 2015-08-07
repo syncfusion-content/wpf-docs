@@ -11,8 +11,7 @@ documentation: ug
 
 The Task Bar Item is added to the Task Bar by using either XAML or C# coding. Use the following code to add a Task Bar Item to the Task Bar control.
 
-
-
+{% highlight xml %}
 [XAML]
 
 
@@ -31,10 +30,10 @@ The Task Bar Item is added to the Task Bar by using either XAML or C# coding. Us
 
 </syncfusion:TaskBar>
 
+{% endhighlight %}
 
 
-
-
+{% highlight  %}
 [C#]
 
 
@@ -66,25 +65,24 @@ taskBar.Items.Add(taskBarItem1);
 //Adding TaskBar as content of window
 
 this.Content = taskBar; 
-
+{% endhighlight %}
 
 
 The following screen shot shows the TaskBar control with TaskBar Item.
 
 
-
-{{ '![](Adding-a-TaskBar-Item-to-the-TaskBar-Control_images/Adding-a-TaskBar-Item-to-the-TaskBar-Control_img1.jpeg)' | markdownify }}
-{:.image }
+![](Adding-a-TaskBar-Item-to-the-TaskBar-Control_images/Adding-a-TaskBar-Item-to-the-TaskBar-Control_img1.jpeg)
 
 
 
 
-Adding Content to TaskBar Item
+
+## Adding Content to TaskBar Item
 
 To add text to the TaskBar Item, use the below code
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -113,10 +111,10 @@ To add text to the TaskBar Item, use the below code
 
 </syncfusion:TaskBar>
 
+{% endhighlight %}
 
 
-
-
+{% highlight  %}
 [C#]
 
 
@@ -166,7 +164,7 @@ taskBar.Items.Add(taskBarItem1);
 //Adding TaskBar as content of window
 
 this.Content = taskBar; 
-
+{% endhighlight %}
 
 
 > _Note: To display the TaskBar Item, you must already have the TaskBar in which you are going to add the TaskBar Item._
@@ -175,8 +173,8 @@ The following screen shot illustrates how text has been added to the TaskBar Ite
 
 
 
-{{ '![](Adding-a-TaskBar-Item-to-the-TaskBar-Control_images/Adding-a-TaskBar-Item-to-the-TaskBar-Control_img2.jpeg)' | markdownify }}
-{:.image }
+![](Adding-a-TaskBar-Item-to-the-TaskBar-Control_images/Adding-a-TaskBar-Item-to-the-TaskBar-Control_img2.jpeg)
+
 
 
 

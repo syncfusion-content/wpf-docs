@@ -7,15 +7,16 @@ control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-## Features
+# Features
 
 This section explains the key properties, behaviors, resizing, and keyboard support assisted by the SfMultiColumnDropDown control. 
 
-### Data Binding
+## Data Binding
 
 In order to display the data in the SfMultiColumnDropDown control, bind the data into the control by using ItemsSource property.
 
 The following code example illustrates how bind the itemsSource to the SfMulticolumnDropDownControl in XAML.
+{% highlight xml %}
 
 [XAML]
 
@@ -38,16 +39,19 @@ The following code example illustrates how bind the itemsSource to the SfMultico
                                            ValueMember="Designation"                                             
 
                                            >
+										   {% endhighlight %}
 
 The following screenshot illustrates the output of the above code.
 
-{{ '![B:/Support/2015/April/24/Image/Figure2.png](Features_images/Features_img1.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img1.png)
 
 
-Binding Collection in CodeBehind
+
+### Binding Collection in CodeBehind
 
 The following code example illustrates how to bind itemsSource to the SfMultiColumnDropDownControl in codebehind.
+
+{% highlight C# %}
 
 [C#] 
 
@@ -82,20 +86,22 @@ new Data(){Name="Maxwell", Designation= "WebDesigner"}, City="CapeTown",Country=
  sfmulticolumn.ValueMember="Designation";
 
 }
-
+{% endhighlight %}
 
 
 The following screenshot illustrates the output for SfMultiColumnDropDownControl.
 
-{{ '![B:/Support/2015/April/24/Image/Figure2.png](Features_images/Features_img2.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img2.png)
 
 
-Complex Property Binding
+
+### Complex Property Binding
 
 SfMultiColumnDropDownControl allows you to bind the Complex property to its column. For example, Data class contains “customerDetails” as Customer class type. It also contains Name and Designation property. The column for the complex property is defined in the format of “Property.Member”.
 
 The following code example illustrate how to bind Complex property in SfMultiColumnDropDownControl,
+
+{% highlight C# %}
 
 [C#]
 
@@ -212,7 +218,10 @@ public class Data:INotifyPropertyChanged
 
 
     }
+{% endhighlight %}
 
+
+{% highlight xml %}
 
 
 [XAML]
@@ -248,14 +257,14 @@ public class Data:INotifyPropertyChanged
      </syncfusion:SfMultiColumnDropDownControl.Columns>
 
 </syncfusion:SfMultiColumnDropDownControl>
-
+{% endhighlight %}
 The following screenshot illustrates the output for Complex property binding in SfMultiColumnDropDownControl.
 
-{{ '![C:/Users/apoorvah.ramanathan/Desktop/1.png](Features_images/Features_img3.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img3.png)
 
 
-### Columns
+
+## Columns
 
 SfMultiColumnDropDownControl enables you to define columns like SfDataGrid. It provides the following properties to achieve it:
 
@@ -268,6 +277,8 @@ SfMultiColumnDropDownControl enables you to define columns like SfDataGrid. It p
 * None: Keeps the columns that are defined in SfDataGrid Columns.
 
 The following code example illustrates the usage of Columns in the SfMultiColumnDropDown control.
+
+{% highlight C# %}
 
 [C#]
 
@@ -308,16 +319,16 @@ The following code example illustrates the usage of Columns in the SfMultiColumn
 </syncfusion:SfMultiColumnDropDownControl.Columns>
 
 </syncfusion:SfMultiColumnDropDownControl>
-
+{% endhighlight %}
 The above code example displays the following output.
 
-{{ '![B:/Support/2015/April/24/Image/Figure2.png](Features_images/Features_img4.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img4.png)
 
 
-### Editing and AutoCompletion
 
-Editor
+## Editing and AutoCompletion
+
+### Editor
 
 You can edit the textbox in the SfMultiColumnDropDownControl. You could make the textbox editable or non –editable in order to prevent typing. SfMulticolumnControl contains the following properties for Editing.
 
@@ -328,13 +339,15 @@ You can edit the textbox in the SfMultiColumnDropDownControl. You could make the
 * IsDropDownOpen - It specifies whether the popup is in open or close state initially. It is a Boolean property and by default it is set to False.
 * Text –Gets or sets the Text to the Editor. It is a string property. It has empty value as default.
 
-Auto Completion of Text
+### Auto Completion of Text
 
 SfMultiColumnDropDownControl provides auto completion support. When you type into the editor, the control returns the relative match for the typed text based on the Display Member.
 
 AllowAutoComplete: This propertyis a Boolean property that represents enables or disables provide suggestion text for auto completion.
 
 As an example of this feature, consider a simple scenario where the SfMultiColumnDropDownControl is bound to an ObservableCollection, with AutoComplete enabled.
+
+{% highlight xml %}
 
 [XAML]
 
@@ -353,20 +366,19 @@ As an example of this feature, consider a simple scenario where the SfMultiColum
                                          ItemsSource="{Binding GridItemSource}"
 
                                          ValueMember="Title" />
-
+{% endhighlight %}
 In the above code example, AutoCompletion is enabled .It gives the matching suggestion from the collection based on the input as illustrated in the following screenshot.
 
-{{ '![B:/Support/2015/April/24/Image/Figure8.png](Features_images/Features_img5.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img5.png)
 
 
 The following screenshot displays the output for AllowAutoCompletion set to False.
 
-{{ '![B:/Support/2015/April/24/Image/Figure9.png](Features_images/Features_img6.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img6.png)
 
 
-### Selection
+
+## Selection
 
 SfMultiColumnControl allows you to select the item from the DropDownGrid. SfMultiColumnDropDownControl exposes the following properties for Selection.
 
@@ -375,6 +387,8 @@ SfMultiColumnControl allows you to select the item from the DropDownGrid. SfMult
 * SelectedValue – This property represents the currently selected value from the SelectedItem based on the DisplayMember value .By default it is set to null.
 
 The following code example illustrates how to set SelectedIndex in SfMultiColumnDropDownControl.
+
+{% highlight C# %}
 
 [C#]
 
@@ -403,11 +417,11 @@ The following code example illustrates how to set SelectedIndex in SfMultiColumn
 
 
 </syncfusion:SfMultiColumnDropDownControl>
-
+{% endhighlight %}
 The following screenshot illustrates the output of the above code.
 
-{{ '![B:/Support/2015/April/24/Image/Figure10.png](Features_images/Features_img7.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img7.png)
+
 
 
 Event
@@ -424,14 +438,19 @@ Description</td></tr>
 SelectionChanged</td><td>
 This event is raised when the Selection is changed.The SelectionChanged event handler receives two arguments, namely Sender and SelectionChangedEventArgs{{ '_,_' | markdownify }} as objects.The SelectionChangedEventArgs object contains the following properties:* SelectedIndex: Gets the selected index of the SfDataGrid in the DropDownPopup.* SelectedItem: Gets the selected item of the SfDataGrid in the DropDownPopup.</td></tr>
 </table>
-#### How To
 
-##### How to Select the Text When SfMultiColumnDropDowncontrol got Focus?
+### How To
+
+#### How to Select the Text When SfMultiColumnDropDowncontrol got Focus?
 
 
 In SfMultiColumnDropDownControl, the TextSelectionOnFocus property automatically selects the text when SfMultiColumnDropDownControl got focus from one control. 
 
 The following code example illustrates how to use TextSelectionOnFocus in SfMultiColumnDropDownControl.
+
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -450,14 +469,14 @@ The following code example illustrates how to use TextSelectionOnFocus in SfMult
                                             ValueMember="Cast">
 
 </syncfusion:SfMultiColumnDropDownControl>
-
+{% endhighlight %}
 The following screenshot displays the SfMultiDropDownControl when setting TextSelectionOnFocus to true.
 
-{{ '![B:/Support/2015/April/24/Image/Figure11.png](Features_images/Features_img8.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img8.png)
 
 
-### Filtering
+
+## Filtering
 
 SfMultiColumnDropDownControl allows you to filter the item that is bound to the ItemsSource of the SfMulticolumnDropDown control. When you type on the Editor, it returns the suggestion for typed text based on the DisplayMember. 
 
@@ -465,6 +484,10 @@ SfMultiColumnDropDownControl allows you to filter the item that is bound to the 
 * AllowCaseSensitiveFiltering: This Boolean property specifies whether the automatic completion of text and filtering are case-sensitive. 
 
 The following code example illustrates how to enable IncrementalFiltering in SfMultiColumnDropDownControl,
+
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -507,18 +530,19 @@ The following code example illustrates how to enable IncrementalFiltering in SfM
 
 
 </syncfusion:SfMultiColumnDropDownControl>
-
+{% endhighlight %}
 In above code example Name property is defined as DisplayMember. Therefore, when you start typing on the Editor, it filters the items that are in the Name Colum. The following screenshot displays the output for IncrementalFiltering.
-
-{{ '![B:/Support/2015/April/24/Image/Figure8.png](Features_images/Features_img9.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img9.png)
 
 
-#### How To
 
-##### How to Search MultipleColumn in SfMultiColumnDropDownControl?
+### How To
+
+#### How to Search MultipleColumn in SfMultiColumnDropDownControl?
 
 By default, SfMultiColumnDropDownControl enables you to filter text based on the Display Member. However, you can override the FilterRecord method to search the MultipleColumn in SfMultiColumnDropDownControl. To achieve this, refer to the following code example.
+
+{% highlight C# %}
 
 [C#]
 
@@ -639,14 +663,14 @@ class CustomMultiColumnControl:SfMultiColumnDropDownControl
     }
 
 }
-
+{% endhighlight %}
 Here, Name is defined as DisplayMember. But it also searches the match case from the City__Column and displays the filtered item as illustrated in the following screenshot.
 
-{{ '![B:/Support/2015/April/24/Image/Figure12.png](Features_images/Features_img10.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img10.png)
 
 
-### Keyboard Support
+
+## Keyboard Support
 
 The following table lists the keyboard shortcuts supported by the MultiColumnDropDown control.
 
@@ -674,11 +698,13 @@ Toggles the Popup to Open or Close state.</td></tr>
 Up ArrowDown Arrow</td><td>
 Changes the selected item when the Popup is open.</td></tr>
 </table>
-### Popup Options
+
+## Popup Options
 
 SfMultiColumnDropDownControl allows you to customize the DropDownPopup appearance by setting Popup Background, BorderBrush and BorderThickness etc.
 
 The following code example illustrates how to customize the DropDownPopup.
+{% highlight xml %}
 
 [XAML]
 
@@ -715,11 +741,11 @@ The following code example illustrates how to customize the DropDownPopup.
 
 
 </syncfusion:SfMultiColumnDropDownControl>
-
+{% endhighlight %}
 The following screenshot displays the output for above code example.
 
-{{ '![B:/Support/2015/April/24/Image/Figure13.png](Features_images/Features_img11.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img11.png)
+
 
 
 SfMultiColumnDropDownControl allows you to resize the DropDownPopup. You can resize the DropDownPopup by using Resize Thumb that shows Right bottom of the DropDownPopup. 
@@ -846,13 +872,15 @@ This event is raised when the Popup is opened.The PopupOpened event handler rece
 PopupOpening</td><td>
 This event is raised before the Popup is opened; the event can be cancelled.The PopupOpening event handler receives two arguments, namely Sender and PopupOpeningEventArgs{{ '_,_'| markdownify }} as objects.The PopupOpeningEventArgs object uses the following property to cancel an event:Cancel: When set to true, the event is cancelled and the Popup is not opened.</td></tr>
 </table>
-#### How To
 
-##### How to keep DropDownPopup StaysOpen always?
+### How To
+
+#### How to keep DropDownPopup StaysOpen always?
 
 You can keep the DropDownPopup of SfMultiColumnDropDownControl open always by using the StaysOpen property. In Loaded event, you can get the “PART_Popup”template from the SfMultiColumnDropDownControl and set the StaysOpen property to true.
 
 The following code example illustrates how to set StaysOpen property for DropDownPopup.
+{% highlight C# %}
 
 [C#]
 
@@ -867,12 +895,13 @@ sfmulticolumn.Loaded += (o, e) =>
     popup.StaysOpen=true;
 
    };
+{% endhighlight %}
 
-### UIAutomation
+## UIAutomation
 
 SfMultiColumnDropDownControl supports the following UIAutomations,
 
-#### Coded UI
+### Coded UI
 
 SfMutliColumnDropDownControl supports CodedUITest automation that enables you to create an automation test with SfMultiColumnDropDownControl elements and record the sequence of actions.
 
@@ -900,8 +929,8 @@ Coded UI Test Builder generates code from recorded session and custom class is i
 </table>
 The following screenshot illustrates the SfMultiColumnDropDownControl properties, when you drag the crosshair to the SfMultiColumnDropDown control.
 
-{{ '![C:/Users/ilanchezhiyan/Desktop/sfmulticolumn.png](Features_images/Features_img12.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img12.png)
+
 
 
 Following are the properties for SfMultiColumnDropDownControl.
@@ -918,15 +947,16 @@ Properties</td></tr>
 SfMultiColumnDropDownControl</td><td>
 * AllowAutoComplete* AllowNullInput* AllowImmediatePopup* AllowIncrementalFiltering* AllowCaseSensitiveFiltering* AllowSpinOnMouseWheel* DisplayMember* IsDropDownOpen* SelectedIndex* ValueMember</td></tr>
 </table>
-#### Quick Test Professional
+
+### Quick Test Professional
 
 
 SfMultiColumnDropDownControl supports for QTP test. You can record the actions performed in the control, by mentioning the corresponding method name with Syncfusion namespace. To know more about QTP test refer to the [link](http://help.syncfusion.com/ug/wpf/Documents/quicktestprofessionalqtp.htm).
 
 The following screenshot illustrates the QTP Test for SfMultiColumnDropDownControl.
 
-{{ '![C:/Users/apoorvah.ramanathan/Desktop/1.png](Features_images/Features_img13.png)' | markdownify }}
-{:.image }
+![](Features_images/Features_img13.png)
+
 
 
 Following are methods for SfMultiColumnDropDownControl.

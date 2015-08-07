@@ -19,7 +19,7 @@ Clipboard support in the RichTextBoxAdv control allows you to cut, copy, and pas
 
 
 
-Methods
+## Methods
 
 
 

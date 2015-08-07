@@ -14,6 +14,7 @@ MapPopup is a hanging window, displayed when the shape is tapped. It shows addit
 MapPopup is displayed only when “MapPopupVisibility” set to true in the shape file layer.
 
 It also customizes the MapPopup template. “MapPopupCustomTemplate” is a DataTemplate type API that is used to expose the custom template for the MapPopup.
+{% highlight xml %}
 
 [XAML]
 
@@ -125,9 +126,8 @@ It also customizes the MapPopup template. “MapPopupCustomTemplate” is a Data
 
         </syncfusion:SfMap >
 
+{% endhighlight %}
+![](MapPopup_images/MapPopup_img1.png)
 
-
-{{ '![](MapPopup_images/MapPopup_img1.png)' | markdownify }}
-{:.image }
 
 

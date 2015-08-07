@@ -9,15 +9,17 @@ documentation: ug
 
 # Scale Settings
 
-Scale
+## Scale
 
 Scale contains three sub elements: Scale (Rim), Ticks, and Labels. 
 
-Main Scale
+## Main Scale
 
 The MainScale contains a scale that integrates labels, tick marks, and a rim to customize the basic look and feel of the circular gauge. It defines the start angle, sweep direction and sweep angle, overall minimum and maximum values, and frequency of labels and tick marks. It can have multiple ranges. A range is a visual element that begins and ends at specified values within a scale. It can have one or more pointers to point out the values in the scale. It also has a GaugeHeader that is used to set a unique header for the Circular Gauge.
 
-Code Example:
+### Code Example:
+
+{% highlight xml %}
 
 [XAML]
 
@@ -78,8 +80,10 @@ Code Example:
     </syncfusion:SfCircularGauge.MainScale>
 
 </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
 
+{% highlight C# %}
 
 [C#]
 
@@ -115,23 +119,25 @@ Code Example:
 
             this.Grid.Children.Add(circularGauge);
 
+{% endhighlight %}
+
+
+
+### Screenshot:
+
+![](Scale-Settings_images/Scale-Settings_img1.png)
 
 
 
 
-Screenshot:
 
-{{ '![](Scale-Settings_images/Scale-Settings_img1.png)' | markdownify }}
-{:.image }
-
-
-
-
-Scale Radius Customization
+## Scale Radius Customization
 
 By using the Radius property, the Scales radius can be set as required.
 
-Code Example:
+### Code Example:
+
+{% highlight xml %}
 
 [XAML]
 
@@ -208,8 +214,10 @@ Code Example:
             </syncfusion:SfCircularGauge.Scales>
 
         </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
 
+{% highlight C# %}
 
 
 
@@ -272,24 +280,26 @@ Code Example:
             circularGauge.Scales.Add(scale1);
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
+
+
+### Screenshot:
+
+![](Scale-Settings_images/Scale-Settings_img2.png)
 
 
 
-Screenshot:
-
-{{ '![](Scale-Settings_images/Scale-Settings_img2.png)' | markdownify }}
-{:.image }
-
-
-Multiple Scale
+## Multiple Scale
 
 It helps to add multiple scales to the same circular gauge and also it helps to customize all the scales in the CircularGauge control. 
 
-Adding Multiple Scales in the Gauge
+### Adding Multiple Scales in the Gauge
 
 To add multiple scales in a Circular Gauge, the CircularScale collection has to be in the Scales.
 
-Code Example:
+#### Code Example:
+
+{% highlight xml %}
 
 [XAML]
 
@@ -368,8 +378,9 @@ Code Example:
             </syncfusion:SfCircularGauge.Scales>
 
 </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -406,22 +417,21 @@ Code Example:
             circularGauge.Scales.Add(scale2);
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
 
 
 
 
+#### Screenshot:
 
-Screenshot:
-
-{{ '![](Scale-Settings_images/Scale-Settings_img3.png)' | markdownify }}
-{:.image }
+![](Scale-Settings_images/Scale-Settings_img3.png)
 
 
 
 
-Screenshot:
+#### Screenshot:
 
-{{ '![](Scale-Settings_images/Scale-Settings_img4.png)' | markdownify }}
-{:.image }
+![](Scale-Settings_images/Scale-Settings_img4.png)
+
 
 

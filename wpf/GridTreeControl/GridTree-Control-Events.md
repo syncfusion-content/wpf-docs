@@ -16,8 +16,8 @@ _GridTree Control Events_
 <table>
 <tr>
 <td>
-GridTree control Event</td><td>
-Description</td></tr>
+{{ '**GridTree control Event**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 ModelLoaded</td><td>

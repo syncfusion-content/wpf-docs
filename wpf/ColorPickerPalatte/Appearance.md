@@ -22,44 +22,44 @@ The appearance of the ColorPickerPalette control can be customized by using the 
 
 
 
-{{ '![](Appearance_images/Appearance_img1.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img1.png)
 
 
 
 
-{{ '![](Appearance_images/Appearance_img2.png)' | markdownify }}
-{:.image }
+
+![](Appearance_images/Appearance_img2.png)
 
 
 
 
-{{ '![](Appearance_images/Appearance_img3.png)' | markdownify }}
-{:.image }
+
+![](Appearance_images/Appearance_img3.png)
 
 
 
 
-{{ '![](Appearance_images/Appearance_img4.png)' | markdownify }}
-{:.image }
+
+![](Appearance_images/Appearance_img4.png)
 
 
 
 
-{{ '![](Appearance_images/Appearance_img5.png)' | markdownify }}
-{:.image }
+
+![](Appearance_images/Appearance_img5.png)
 
 
 
 
-{{ '![](Appearance_images/Appearance_img6.png)' | markdownify }}
-{:.image }
+
+![](Appearance_images/Appearance_img6.png)
 
 
 
 
-{{ '![](Appearance_images/Appearance_img7.png)' | markdownify }}
-{:.image }
+
+![](Appearance_images/Appearance_img7.png)
+
 
 
 

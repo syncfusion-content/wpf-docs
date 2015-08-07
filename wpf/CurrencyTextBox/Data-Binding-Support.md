@@ -15,6 +15,8 @@ The following example shows a simple binding between the value of the CurrencyTe
 
 
 
+{% highlight xml %}
+
 XAML
 
 
@@ -28,15 +30,17 @@ XAML
             Value="{Binding ElementName=currencyTextBox1,Path=Value,Mode=TwoWay}"/>
 
 </StackPanel>
+{% endhighlight %}
 
 
+![](Data-Binding-Support_images/Data-Binding-Support_img1.png)
 
-{{ '![](Data-Binding-Support_images/Data-Binding-Support_img1.png)' | markdownify }}
-{:.image }
 
 
 The Data Context property provides its value to child elements. So you can set the Data Context on a superior layout container and its value is provided to all child elements. This is very useful if you want to build a form that is bound to multiple properties of the same data object. If you don't explicitly define a source of binding, it takes the data context by default.
 
+
+{% highlight xml %}
 
 
 XAML
@@ -54,12 +58,13 @@ XAML
     <syncfusion:CurrencyTextBox Value="{Binding Income}"/>
 
 </StackPanel>
-
+{% endhighlight %}
 
 
 If you want to bind values other than decimal values, then you need to use the Value Converter. The following example shows a simple binding between the value of the CurrencyTextBox and the Textbox text that reflects the typed value:
 
 
+{% highlight xml %}
 
 XAML
 
@@ -85,11 +90,11 @@ XAML
 
 </StackPanel>
 
+{% endhighlight %}
 
 
 
+![](Data-Binding-Support_images/Data-Binding-Support_img2.png)
 
-{{ '![](Data-Binding-Support_images/Data-Binding-Support_img2.png)' | markdownify }}
-{:.image }
 
 

@@ -14,7 +14,7 @@ Tab Scrolling Time is controlled by using the ScrollingTime property. This depen
 Here is the code snippet to set the Tab Scrolling Time.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -48,9 +48,9 @@ Here is the code snippet to set the Tab Scrolling Time.
     </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight  %}
 [C#]
 
 
@@ -94,7 +94,7 @@ tabControlExt.ScrollingTime = 1000;
 // Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt);
-
+{% endhighlight %}
 
 
 See Also

@@ -11,13 +11,16 @@ documentation: ug
 
 InputGestureText is used to set MenuItemAdv to display shortcut keys along with its Header. This support can be utilized by using the InputGestureText property. The value given by using this property will be displayed along with the Header of MenuItemAdv. Also, InputGestureText can be displayed in MenuItemAdv by using the command support. If you set the value of the Command property by using ApplicationCommands the corresponding InputGestureText will be displayed along with its header value automatically.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 MenuAdv helps users to display the shortcut keys along with the MenuItemAdv header.
 
-Adding the InputGestureText Support to an Application 
+## Adding the InputGestureText Support to an Application 
 
 The value assigned by using the InputGestureText property will be displayed in MenuItemAdv along with the Header property value of MenuITemAdv. The InputGestureText support can be added to an application, as shown in the following code snippet.
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -99,13 +102,13 @@ The value assigned by using the InputGestureText property will be displayed in M
 
             </shared:MenuAdv>
 
+{% endhighlight %}
+
+![](InputGestureText-Support_images/InputGestureText-Support_img1.png)
 
 
-{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/InputGesTxt.png](InputGestureText-Support_images/InputGestureText-Support_img1.png)' | markdownify }}
-{:.image }
 
-
-Properties
+## Properties
 
 The property for the InputGestureText support is described in the following tabulation:
 
@@ -127,7 +130,7 @@ String(string.Empty)</td></tr>
 </table>
 
 
-Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

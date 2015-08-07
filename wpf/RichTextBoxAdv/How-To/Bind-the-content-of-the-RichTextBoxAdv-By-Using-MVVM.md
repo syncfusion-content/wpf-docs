@@ -7,7 +7,7 @@ control: RichTextBoxAdv
 documentation: ug
 ---
 
-### Bind the content of the RichTextBoxAdv By Using MVVM
+# Bind the content of the RichTextBoxAdv By Using MVVM
 
 You can bind the content of a RichTextBoxAdv control in XAML (designer) by defining a MVVM extension for the XAMLText or HTMLText property. You cannot update the XAMLText or HTMLText property dynamically by modifying content in the RichTextBoxAdv, but you can update it by accessing the XAMLText or HTMLText property (In Getter method).
 
@@ -15,15 +15,19 @@ You can explicitly update the XAMLText or HTMLText property to view model for co
 
 The following code example illustrates defining MVVM extension for the XAMLText property of the RichTextBoxAdv control.
 
+{% highlight xml %}
+
+
 [XAML]
 
 
 
 <syncfusion:RichTextBoxAdv x:Name="richTextBoxAdv" XAMLText="{Binding DescriptionXaml}" />
 
+{% endhighlight %}
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -161,9 +165,9 @@ DescriptionXaml = "<RichText:DocumentAdv xmlns=\"http://schemas.microsoft.com/wi
 
 }
 
+{% endhighlight %}
 
-
-Sample
+## Sample
 
 To view a sample on binding the XAMLText property of RichTextBoxAdv control by using MVVM framework, see [http://www.syncfusion.com/downloads/support/directtrac/117738/Sample-1166502320.zip](http://www.syncfusion.com/downloads/support/directtrac/117738/Sample-1166502320.zip).
 

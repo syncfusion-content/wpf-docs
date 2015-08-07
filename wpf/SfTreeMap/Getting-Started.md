@@ -17,8 +17,8 @@ TreeMapsare a growing trend in data visualization. It displays hierarchical in
 
 To create the SfTreeMap control through VisualStudio, drag SfTreeMap from Toolbox and drop it to the designer. It will generate the following the SfTreeMap control.
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 ### Through Expression Blend 
@@ -26,7 +26,7 @@ To create the SfTreeMap control through VisualStudio, drag SfTreeMap from Tool
 The SfTreeMap control can also be created and configured using Expression Blend. Follow these steps to do so.
 
 1. Create a WPF project in Expression Blend and reference the following assemblies.
-1. Syncfusion.SfTreeMap.WPF
+i. Syncfusion.SfTreeMap.WPF
 2. Search for SfTreeMap in the Toolbox.
 3. Drag SfTreeMap to the designer. It will generate the SfTreeMap control with one child element.
 
@@ -34,8 +34,7 @@ The SfTreeMap control can also be created and configured using Expression Blend.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
 ### Through Xaml and C#
@@ -44,14 +43,14 @@ You can create the SfTreeMap control programmatically through XAML and C#.
 
 In order to create a TreeMap you can refer to the following assembly and namespace.
 
-Assembly: Syncfusion.SfTreeMap.WPF
+{{ '**Assembly**' | markdownify }}: Syncfusion.SfTreeMap.WPF
 
-Namespace: Syncfusion.UI.Xaml.TreeMap
+{{ '**Namespace**' | markdownify }}: Syncfusion.UI.Xaml.TreeMap
 
 In the following code example, the SfTreeMap control is created. 
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -75,9 +74,9 @@ In the following code example, the SfTreeMap control is created.
     </Grid>
 
 </Window>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -91,17 +90,17 @@ SfTreeMap treemap = new SfTreeMap()
             Width = 300,
 
 };
-
+{% endhighlight %}
 
 
 ## Customizing the TreeMap Control
 
-Populate ItemsSource
+### Populate ItemsSource
 
 The ItemsSource property accepts the collection values as input. For example, you can provide the list of objects as input.
 
 
-
+{% highlight c# %}
 [C#]
 
 public class PopulationViewModel
@@ -169,13 +168,13 @@ public class PopulationViewModel
             public double Population { get; set; }
 
         }
-
+{% endhighlight %}
 
 
 After defining the ItemsSource, set the DataContext of the TreeMap as shown here:
 
 
-
+{% highlight xml %}
 [XAML]
 
     <Grid>
@@ -209,16 +208,16 @@ After defining the ItemsSource, set the DataContext of the TreeMap as shown here
             </syncfusion:SfTreeMap.Levels>
 
     </Grid>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 this.TreeMap.DataContext = new PopulationViewModel();
+{% endhighlight %}
 
 
+![](Getting-Started_images/Getting-Started_img3.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
 
 

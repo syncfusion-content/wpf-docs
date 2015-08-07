@@ -13,12 +13,12 @@ documentation: ug
 
 To show headers in TreeMap, you can set the HeaderHeight property of TreeMapLevel. For customizing default Header appearance, you can specify the HeaderTemplate.
 
-TreeMap with Flat Collection:
+### TreeMap with Flat Collection:
 
 If HeaderTemplate is specified for TreeMapLevel, then the header can be bound by referring Header object to the datatemplate.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -46,19 +46,19 @@ If HeaderTemplate is specified for TreeMapLevel, then the header can be bound by
     </syncfusion:SfTreeMap>
 
 </Grid>
+{% endhighlight %}
+
+
+![](Headers-and-Labels_images/Headers-and-Labels_img1.png)
 
 
 
-{{ '![](Headers-and-Labels_images/Headers-and-Labels_img1.png)' | markdownify }}
-{:.image }
-
-
-TreeMap with Hierarchical Collection:
+### TreeMap with Hierarchical Collection:
 
 For TreeMap with Hierarchical Collection, HeaderPath must be specified. The header can be bound by referring Data.<FieldName> to the datatemplate where FieldName refers to the field of object specified in the particular treemap level.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -84,17 +84,18 @@ For TreeMap with Hierarchical Collection, HeaderPath must be specified. The head
     </syncfusion:SfTreeMap>
 
 </Grid>
+{% endhighlight %}
 
 ## Labels
 
 To show labels in TreeMap, ShowLabels of TreeMapLevel should be enabled to True. For customizing default label appearance, you can specify LabelTemplate.
 
-TreeMap with Flat Collection:
+### TreeMap with Flat Collection:
 
 If LabelTemplate is specified for TreeMapLevel, then the label can be bound by referring Label object to the datatemplate.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -122,21 +123,20 @@ If LabelTemplate is specified for TreeMapLevel, then the label can be bound by r
     </syncfusion:SfTreeMap>
 
 </Grid>
+{% endhighlight %}
 
 
 
 
-
-{{ '![](Headers-and-Labels_images/Headers-and-Labels_img2.png)' | markdownify }}
-{:.image }
+![](Headers-and-Labels_images/Headers-and-Labels_img2.png)
 
 
-TreeMap with Hierarchical Collection:
+### TreeMap with Hierarchical Collection:
 
 For TreeMap with Hierarchical Collection, LabelPath must be specified. The label can be bound by referring Data. <FieldName> to the datatemplate where FieldName refers to the field of object specified in the particular treemap level.
 
 
-
+{% highlight xml %}
 [XAML]
 
 <Grid Background="Black">
@@ -162,6 +162,6 @@ For TreeMap with Hierarchical Collection, LabelPath must be specified. The label
     </syncfusion:SfTreeMap>
 
 </Grid>
-
+{% endhighlight %}
 
 

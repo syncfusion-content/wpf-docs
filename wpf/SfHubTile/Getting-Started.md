@@ -14,6 +14,8 @@ Assembly:  Syncfusion.SfHubTile.WPF (in Syncfusion.SfHubTile.WPF.dll)
 
 The following code sample shows how to create the hub tile from code-behind and XAML, which allows the user to set a title, image and header.
 
+{% highlight xml %}
+
 [XAML]
 
 
@@ -39,36 +41,38 @@ The following code sample shows how to create the hub tile from code-behind and 
     </Grid>
 
 </Page>
+{% endhighlight %}
 
 
-
+{% highlight cs %}
 
 
 [C#]
 
 SfHubTile hubTile = new SfHubTile();
+{% endhighlight %}
+## Tile Types
 
-Tile Types
-
-HubTile
+### HubTile
 
 This control provides notification through various transition effects. 
 
-Key Properties
+#### Key Properties
 
-Title
+##### Title
 
 The title will be displayed at the top of the hub tile.
 
-Header
+##### Header
 
 The header will be displayed at the bottom of the hub tile.
 
-ImageSource
+##### ImageSource
 
 An image will be displayed at the center of the hub tile.
 
 The following code sample shows the usage of the Title, Header and ImageSource properties.
+{% highlight xml %}
 
 [XAML]
 
@@ -103,47 +107,47 @@ ImageSource="NewMail.png"
     </Grid>
 
 </Page>
+{% endhighlight %}
+
+
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/2.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
-
-
-Secondary Content
+### Secondary Content
 
 Secondary content will be animated in the hub tile based on a specified interval.
 
-Hub Tile Transitions
+### Hub Tile Transitions
 
 Hub tile transitions provide the transition effect in hub tile animation. They include the following transitions:
 
 1. Slide
 2. Fade
 
-Slide Transition
+#### Slide Transition
 
 Secondary content will be animated by sliding the tile.
 
-{{ '![C:/Users/ApoorvahR/Desktop/3.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
-Fade__Transition
+#### Fade__Transition
 
 Secondary content will be animated by fading the tile.
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/4.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
-PulsingTile
+
+### PulsingTile
 
 This control resembles the Music and Video hub tiles in Windows Phone. The content will zoom in and out randomly and show a translation movement in the x- and y- axis randomly. 
 
 The following code sample shows how to create a PulsingTile in code-behind and XAML:
+{% highlight xml %}
 
  [XAML]
 
@@ -180,16 +184,18 @@ The following code sample shows how to create a PulsingTile in code-behind and X
     </Grid>
 
 </Page>
+{% endhighlight %}
+
+
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/4.png](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
-
-
-PulseScale
+### PulseScale
 
 The PulseScale property specifies the range of translation in the x- and y-axis while pulsing the content.
+
+{% highlight xml %}
 
 [XAML]
 
@@ -217,13 +223,14 @@ The PulseScale property specifies the range of translation in the x- and y-axis 
 
 </control:SfPulsingTile >
 
+{% endhighlight %}
 
 
 
-
-PulseDuration
+### PulseDuration
 
 The PulseDuration property specifies the interval for the translation done in the pulsing tile.
+{% highlight xml %}
 
 [XAML]
 
@@ -250,12 +257,13 @@ The PulseDuration property specifies the interval for the translation done in th
                        HorizontalAlignment="Center" Height="200" />
 
 </control:SfPulsingTile >
+{% endhighlight %}
 
 
-
-RadiusX
+### RadiusX
 
 The RadiusX property specifies the range of the translation in the pulsing tile along the x-axis.
+{% highlight xml %}
 
 [XAML]
 
@@ -283,13 +291,15 @@ The RadiusX property specifies the range of the translation in the pulsing tile 
 
 </control: SfPulsingTile>
 
+{% endhighlight %}
 
 
 
-
-RadiusY
+### RadiusY
 
 The RadiusY property specifies the range of the translation in the pulsing tile along y-axis.
+
+{% highlight xml %}
 
 [XAML]
 
@@ -316,16 +326,18 @@ The RadiusY property specifies the range of the translation in the pulsing tile 
                        HorizontalAlignment="Center" Height="200" />
 
 </control:SfPulsingTile>
+{% endhighlight %}
 
 
-
-Freezing
+### Freezing
 
 The animation of a hub tile can be frozen.
 
-GroupName
+#### GroupName
 
 Hub tiles can be given specific group name. The group name will be used when we need to freeze the entire group of hub tiles.
+
+{% highlight xml %}
 
 [XAML]
 
@@ -343,47 +355,54 @@ Hub tiles can be given specific group name. The group name will be used when we 
 
                        Background="Red"/>
 
+{% endhighlight %}
 
-
-Hub Tile Service
+#### Hub Tile Service
 
 The HubTileService class provides the helper methods to freeze and unfreeze the animation by passing a HubTile instance or GroupName as an argument.
 
 The following code sample can be used to freeze a particular hub tile.
 
+{% highlight cs %}
+
 [C#]
 
 HubTileService.Freeze(hubTile);
-
+{% endhighlight %}
 
 
 The following code sample can be used to unfreeze a particular hub tile.
+{% highlight cs %}
 
 [C#]
 
 HubTileService.UnFreeze(hubTile);
-
+{% endhighlight %}
 
 
 The following code sample can be used to freeze a particular group of hub tiles.
+{% highlight cs %}
 
 [C#]
 
 HubTileService.Freeze("Group1");
-
+{% endhighlight %}
 
 
 The following code sample can be used to unfreeze a particular group of hub tiles.
+{% highlight cs %}
 
 [C#]
 
 HubTileService.UnFreeze("Group1");
 
+{% endhighlight %}
 
-
-Using IsFrozen property
+#### Using IsFrozen property
 
 Setting the IsFrozen property in a hub tile to true will freeze the animation.
+
+{% highlight xml %}
 
 [XAML]
 
@@ -427,7 +446,7 @@ IsFrozen="True">
 
 </Page>
 
-
+{% endhighlight %}
 
 
 

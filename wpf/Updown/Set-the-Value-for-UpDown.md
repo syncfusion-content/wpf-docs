@@ -11,23 +11,26 @@ documentation: ug
 
 The value for UpDown can be specified by using the Value property.
 
-Use of the Value Property
+### Use of the Value Property
 
 A value can be set for the UpDown control as shown in the following code example.
 
+{%highlight xml%}
  [XAML]
 
 <syncfusion:UpDown Name="upDown" Value="10"/>
 
+{%endhighlight%}
 
 
+{%highlight c#%}
 [C#]
 
 UpDown upDown = new UpDown();
 
 upDown.Value = 10;
 
-
+{%endhighlight%}
 
 Tables for Properties and Events
 
@@ -36,11 +39,11 @@ Tables for Properties and Events
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td><td>
-Reference links</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 Value</td><td>
@@ -54,11 +57,11 @@ _Value Events_
 <table>
 <tr>
 <th>
-Events</th><th>
-Description</th><th>
-Arguments</th><th>
-Type</th><th>
-Reference Link</th></tr>
+{{ '**Events**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Arguments**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <th>
 ValueChanged</th><th>

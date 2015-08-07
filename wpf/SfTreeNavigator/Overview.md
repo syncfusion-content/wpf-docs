@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Overview
 description: overview  
@@ -13,8 +13,7 @@ The tree navigator control provides a unique interface that can expand a tree st
 
 
 
-{{ '![1](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![1](Overview_images/Overview_img1.png)
 
 
 

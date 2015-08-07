@@ -11,7 +11,7 @@ documentation: ug
 
 In order to insert an image in the document, ParagraphAdv provides an inline called ImageContainerAdv. 
 
-Properties
+## Properties
 
 
 
@@ -63,14 +63,36 @@ ImageContainerAdv can be used to add an image directly to an application using t
 
 
 
-<table>
-<tr>
-<td>
-[XAML]  <syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            <syncfusion:DocumentAdv>                <syncfusion:SectionAdv>                    <syncfusion:ParagraphAdv >                        <syncfusion:ImageContainerAdv ImageSource="/RibbonAndRichTextBox;component/OfficeUI/calender.png" Width="100" Height="100" />                    </syncfusion:ParagraphAdv>                </syncfusion:SectionAdv>            </syncfusion:DocumentAdv>        </syncfusion:RichTextBoxAdv></td></tr>
-<tr>
-<td>
-[C#]          RichTextBoxAdv richtext = new RichTextBoxAdv();          DocumentAdv document = new DocumentAdv();          SectionAdv section = new SectionAdv();          ParagraphAdv paragraph = new ParagraphAdv();          ImageContainerAdv imagecontainer = new ImageContainerAdv();          BitmapImage bitmap = new BitmapImage();          bitmap.UriSource = new Uri("/RibbonAndRichTextBox;component/OfficeUI/calender.png");          imagecontainer.ImageSource = bitmap;          paragraph.Inlines.Add(imagecontainer);          section.Blocks.Add(paragraph);          document.Sections.Add(section);          richtext.Document = document;</td></tr>
-</table>
+{% highlight xml %}
+
+[XAML]  
+<syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            
+<syncfusion:DocumentAdv>                
+<syncfusion:SectionAdv>                    
+<syncfusion:ParagraphAdv >                        
+<syncfusion:ImageContainerAdv ImageSource="/RibbonAndRichTextBox;component/OfficeUI/calender.png" Width="100" Height="100"/>                    
+</syncfusion:ParagraphAdv>               
+ </syncfusion:SectionAdv>            
+ </syncfusion:DocumentAdv>        
+ </syncfusion:RichTextBoxAdv>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]          
+RichTextBoxAdv richtext = new RichTextBoxAdv();         
+ DocumentAdv document = new DocumentAdv();        
+ SectionAdv section = new SectionAdv();          
+ ParagraphAdv paragraph = new ParagraphAdv();        
+ ImageContainerAdv imagecontainer = new ImageContainerAdv();       
+ BitmapImage bitmap = new BitmapImage();         
+ bitmap.UriSource = new Uri("/RibbonAndRichTextBox;component/OfficeUI/calender.png");         
+ imagecontainer.ImageSource = bitmap;         
+ paragraph.Inlines.Add(imagecontainer);         
+ section.Blocks.Add(paragraph);          
+ document.Sections.Add(section);         
+ richtext.Document = document;
+{% endhighlight %}
 
 
 ##  Limitations

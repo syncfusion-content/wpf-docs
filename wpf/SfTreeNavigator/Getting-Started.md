@@ -16,7 +16,7 @@ Assembly : Syncfusion.SfTreeNavigator.WPF (in Syncfusion.SfTreeNavigator.WPF.dll
 The following code sample shows how to create the Tree Navigator from code-behind and XAML, 
 
 
-
+{% highlight xml %}
 [XAML]
 
 <navigation:SfTreeNavigator Header="Enterprise Toolkit" >
@@ -32,9 +32,9 @@ The following code sample shows how to create the Tree Navigator from code-behin
    <navigation:SfTreeNavigatorItem Header="Metro Studio"/>
 
 </navigation:SfTreeNavigator>
+{% endhighlight %}
 
-
-
+{% highlight  %}
 [C#]
 
 SfTreeNavigator sfToolkit = new SfTreeNavigator();
@@ -62,7 +62,7 @@ winrt.Items.Add(winrt_tools);
 sfToolkit.Items.Add(winrt);
 
 sfToolkit.Items.Add(metroStudio);
-
+{% endhighlight %}
 
 
 

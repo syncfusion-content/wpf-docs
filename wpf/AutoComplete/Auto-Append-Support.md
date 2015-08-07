@@ -13,29 +13,32 @@ Auto Append is used to guide the complete text by appending the entered text wit
 
 
 
-{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/AutoAppend.png](Auto-Append-Support_images/Auto-Append-Support_img1.png)' | markdownify }}
-{:.image }
+![](Auto-Append-Support_images/Auto-Append-Support_img1.png)
 
 
 
 
-Adding Auto Append Support to an Application 
+
+## Adding Auto Append Support to an Application 
 
 If the IsAutoAppend property is set as True, once you enter the text the AutoComplete guides you to complete text, by appending the entered text with suitable text from the data source. If this property is set as False the matched suitable text will not append with the entered text.
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:AutoComplete x:Name="AutoComplete1" IsAutoAppend="true"/></td></tr>
-<tr>
-<td>
-[C#]AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsAutoAppend = true;</td></tr>
-</table>
+{% highlight xml %}
+
+[XAML]
+<syncfusion:AutoComplete x:Name="AutoComplete1" IsAutoAppend="true"/>
+{% endhighlight %}
+
+{% highlight cs %}
+
+[C#]
+AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsAutoAppend = true;
+{% endhighlight %}
 
 
-Tables for properties, and events
+## Tables for properties, and events
 
-Properties
+### Properties
 
   _Property Table for Auto Append_
 
@@ -57,7 +60,7 @@ bool(true)</td><td>
 </table>
 
 
-Events
+### Events
 
    _Event Table for Auto Append_
 
@@ -79,7 +82,7 @@ DependencyPropertyChangedCallBack </th><th>
 </table>
 
 
-Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
 

@@ -24,7 +24,7 @@ The following Close button modes are supported by the TabControlExt.
 The following code snippet illustrates how to set the "Both" Close button mode in the TabControlExt control.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -46,9 +46,9 @@ The following code snippet illustrates how to set the "Both" Close button mode i
     <syncfusion:TabItemExt Name="tabItemExt2" Header="TabItemExt2"/>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight  %}
 [C#]
 
 
@@ -110,11 +110,11 @@ tabControlExt.CloseButtonType = CloseButtonType.Both;
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt); 
+{% endhighlight %}
 
 
+![](Setting-Close-Buttons-type_images/Setting-Close-Buttons-type_img1.jpeg)
 
-{{ '![](Setting-Close-Buttons-type_images/Setting-Close-Buttons-type_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 

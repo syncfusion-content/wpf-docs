@@ -11,16 +11,16 @@ documentation: ug
 
 The ScrollBar will be visible in the bottom of the TileViewControl, when the width of the Minimized TileViewItem increases and also when MinimizedItemsOrientation of the TileViewControl is set to top or bottom. The ScrollBar will be visible in the right side of the TileViewControl, when the height of the Minimized TileViewItem increases and also when MinimizedItemsOrientation of the TileViewControl is set to right or left. 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 ScrollBar support enables you to see all the minimized TileViewItems, if the total height and width of the minimized TileViewItems increases from the actual control height.
 
-Adding ScrollBar Support to an Application 
+## Adding ScrollBar Support to an Application 
 
 The following code example illustrates how to add the ScrollBar to an application.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -60,33 +60,32 @@ The following code example illustrates how to add the ScrollBar to an applicatio
                HeaderBackground="Gray" Margin="2" CornerRadius="3"/>
 
 </syncfusion:TileViewControl>
+{% endhighlight %}
 
 
-
-{{ '![](ScrollBar-Support_images/ScrollBar-Support_img1.png)' | markdownify }}
-{:.image }
-
-
-
-
-{{ '![](ScrollBar-Support_images/ScrollBar-Support_img2.png)' | markdownify }}
-{:.image }
+![](ScrollBar-Support_images/ScrollBar-Support_img1.png)
 
 
 
 
-Properties
+
+![](ScrollBar-Support_images/ScrollBar-Support_img2.png)
+
+
+
+
+## Properties
 
 _Property Table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td><td>
+{{ '**Reference links**' | markdownify }} </td></tr>
 <tr>
 <td>
 OnMinimizedHeight</td><td>
@@ -104,7 +103,7 @@ DependencyProperty</td><td>
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

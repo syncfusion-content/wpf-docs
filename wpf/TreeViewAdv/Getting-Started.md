@@ -13,10 +13,7 @@ documentation: ug
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
-
-
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 The elements of the control are described below:
@@ -36,35 +33,19 @@ The elements of the control are described below:
 The TreeViewAdv control can be created in Visual Studio (VS). To create the control in VS:
 
 1. Drag and Drop the TreeViewAdv available in the Visual Studio Toolbox as shown in the below screenshot: 
-
-
-
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
-
-
-
-
+   
+   ![](Getting-Started_images/Getting-Started_img2.png)
+   
 2. Select the TreeViewAdv and go to properties.
 3. Click Items property. The Collection Editor window opens as shown in the following screenshot:
-
-
-
-
-
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
-
+   
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 4. Using the Collection Editor, add more TreeViewItemAdvs to the TreeViewAdv. 
 5. Configure the properties (like Header, ImageSource and etc.) of the TreeViewItemAdv using the Collection Editor window.
 6. The TreeViewAdv is created as shown in the following screenshot:
-
-
-
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
-
+   
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -80,9 +61,7 @@ TreeViewAdv can also be created and configured using the Expression Blend. To cr
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
-
+![](Getting-Started_images/Getting-Started_img5.png)
 
 3. Drag and drop the TreeViewAdv into the designer area. It generates an empty TreeViewAdv.
 4. Add the nodes to the TreeViewAdv as follows:
@@ -93,9 +72,7 @@ TreeViewAdv can also be created and configured using the Expression Blend. To cr
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
-
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -103,9 +80,7 @@ The Collection Editor window opens:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
-
+![](Getting-Started_images/Getting-Started_img7.png)
 
 7. Click Add Another Item. The Select Object window opens.
 8. Select the TreeViewItemAdv (type TreeViewItemAdv in the search box) and click OK.
@@ -117,9 +92,7 @@ This generates the TreeViewItemAdvs as follows:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
-
+![](Getting-Started_images/Getting-Started_img8.png)
 
 You can customize the look and feel of the TreeViewItemAdv using the template editing feature available in the Expression Blend.
 
@@ -133,7 +106,7 @@ TreeViewAdv can be created in XAML as follows:
 
 
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:TreeViewAdv>
 
@@ -178,7 +151,7 @@ TreeViewAdv can be created in XAML as follows:
 </syncfusion:TreeViewAdv>
 
 
-
+{% endhighlight %}
 
 
 ### Through C#
@@ -187,19 +160,19 @@ Include the following namespace to the using directives list to create TreeViewA
 
 
 
-[C#]
+{% highlight C# %}
 
 using Syncfusion.Windows.Tools.Controls;
 
 
-
+{% endhighlight %}
 
 
 You can create the TreeViewAdv as follows:
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -262,17 +235,14 @@ treeviewAdv.Items.Add(root2);
 
 
 
-
+{% endhighlight %}
 
 
 This generates the TreeViewAdv as follows:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
-
-
+![](Getting-Started_images/Getting-Started_img9.png)
 
 
 ### Data Binding – Object
@@ -283,7 +253,7 @@ TreeViewAdv supports object binding. The following example illustrates data bind
 
 
 
-[C#]
+{% highlight C# %}
 
 public class Model
 
@@ -316,7 +286,7 @@ public bool IsCheckable { get; set; }
     }
 
 
-
+{% endhighlight %}
 
 
 
@@ -325,7 +295,7 @@ public bool IsCheckable { get; set; }
 
 
 
-[C#]
+{% highlight C# %}
 
 public class ViewModel
 
@@ -397,7 +367,7 @@ public class ViewModel
 
 
 
-
+{% endhighlight %}
 
 
 
@@ -405,7 +375,7 @@ public class ViewModel
 
 
 
-[XAML]
+{% highlight xml %}
 
 <Window.DataContext>
 
@@ -413,13 +383,13 @@ public class ViewModel
 
 </Window.DataContext>
 
-
+{% endhighlight %}
 
 4. Configure the ItemsSource and ItemTemplate of the TreeViewAdv as given below:
 
 
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}">
 
@@ -445,7 +415,7 @@ public class ViewModel
 
 
 
-
+{% endhighlight %}
 
 
 
@@ -453,10 +423,7 @@ The TreeViewAdv will be created as follows:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
-
-
+![](Getting-Started_images/Getting-Started_img10.png)
 
 
 ### DataBiding – XML
@@ -465,7 +432,7 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 
 1. Create the xml file with the following details and name it as Data.xml:
 
-[XAML]
+{% highlight xml %}
 
 <Products>
 
@@ -522,18 +489,18 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 </Products>
 
 
-
+{% endhighlight %}
 
 
 2. Add the XmlDataProvider for the above XML document as follows:
 
 
 
-[XAML]
+{% highlight xml %}
 
 <XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Products"/> 
 
-
+{% endhighlight %}
 
 
 
@@ -541,7 +508,7 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 
 
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:TreeViewAdv	ItemsSource="{Binding Source={StaticResource 			xmlSource}, XPath=Product}" >
 
@@ -570,22 +537,20 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 </syncfusion:TreeViewAdv>
 
 
-
+{% endhighlight %}
 
 
 TreeViewAdv will be created as follows:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
-{:.image }
-
+![](Getting-Started_images/Getting-Started_img11.png)
 
 ### DataBinding – WCF
 
 TreeViewAdv also supports loading the data, retrieved from the WCF service.  LoadOnDemand feature available in the TreeViewAdv helps to load items dynamically by retrieving from the service when expanding the node. 
 
-To bind data using WCF:
+#### To bind data using WCF:
 
 1. Add a Service Reference to a WCF service that returns the required data. 
 
@@ -599,23 +564,22 @@ The required interfaces (IEmployeeService) and classes (Employee ,Product, Suppl
 
 
 
-[C#]
+{% highlight C# %}
 
        private EmployeeServiceClient client; 
 
 
-
+{% endhighlight %}
 
 
 3. Initialize the created client object before you use it. 
 
 
-
-[C#]
+{% highlight C# %}
 
 client = new EmployeeServiceClient();
 
-
+{% endhighlight %}
 
 
 
@@ -623,7 +587,7 @@ client = new EmployeeServiceClient();
 
 
 
-[C#]
+{% highlight C# %}
 
 try
 
@@ -645,7 +609,7 @@ try
 
 
 
-
+{% endhighlight %}
 
 The GetEmployees() method given in the above code snippet returns the list of Employee type objects available in the database.
 
@@ -653,7 +617,7 @@ The GetEmployees() method given in the above code snippet returns the list of Em
 
 
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:TreeViewAdv
 
@@ -733,13 +697,13 @@ The GetEmployees() method given in the above code snippet returns the list of Em
 
 
 
-
+{% endhighlight %}
 
 6. Get the TreeViewItemAdv which loads the data on demand (ie. On expand) using the LoadOnDemo event available in the TreeViewAdv.
 
 
 
-[C#]
+{% highlight C# %}
 
 private TreeViewItemAdv loadingitem;
 
@@ -822,16 +786,14 @@ if (loadingitem != null)
        }
 
 
-
+{% endhighlight %}
 
 
 Retrieve the data from WCF service and load the data to the corresponding TreeViewItemAdv as shown in the following screenshot:
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
-{:.image }
-
+![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img12.png)
 
 
 
@@ -864,23 +826,19 @@ The class diagram for TreeView control is as follows.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img13.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img13.jpeg)
 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
-{:.image }
-
-
+![](Getting-Started_images/Getting-Started_img14.png)
 
 
 ## Creating TreeViewAdv control
 
 There are two possible ways to create a simple TreeViewAdv control.
 
-Through Designer
+### Through Designer
 
 To create the TreeViewAdv control through designer, do the below steps
 
@@ -888,9 +846,7 @@ To create the TreeViewAdv control through designer, do the below steps
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img15.jpeg)' | markdownify }}
-{:.image }
-
+   ![](Getting-Started_images/Getting-Started_img15.jpeg)
 
 
 
@@ -904,8 +860,7 @@ TreeViewAdv control is created by using either XAML or C# code. Use the below co
 
 
 
-[XAML]
-
+{% highlight xml %}
 
 
 <!-- Adding TreeViewAdv -->
@@ -942,9 +897,10 @@ TreeViewAdv control is created by using either XAML or C# code. Use the below co
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -978,17 +934,14 @@ treeViewAdv.Items.Add(treeViewItemAdv);
 
 this.Content = treeViewAdv;
 
-> 
+{% endhighlight %}
 
-> _Note: To display the TreeViewAdv using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed._
+> Note: To display the TreeViewAdv using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed._
 
 The following screen shot shows the TreeViewAdv control.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img16.jpeg)' | markdownify }}
-{:.image }
-
-
+![](Getting-Started_images/Getting-Started_img16.jpeg)
 
 

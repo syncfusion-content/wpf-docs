@@ -13,19 +13,19 @@ The ToolTip is a small hover box with information about the item on which mouse 
 
 For Example: The color can be applied to background or text. The variant color percentage difference details can then be obtained from the base colors.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 You can use ToolTip support to know the color name and its variant details.
 
 
 
-{{ '![](ToolTip-Support_images/ToolTip-Support_img1.png)' | markdownify }}
-{:.image }
+![](ToolTip-Support_images/ToolTip-Support_img1.png)
 
 
 
 
-Sample Link
+
+## Sample Link
 
 To view samples: 
 

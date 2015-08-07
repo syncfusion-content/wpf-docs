@@ -14,6 +14,7 @@ Namespace : Syncfusion.Windows.Controls.Media.
 Assembly     : Syncfusion.SfColorPalette.Wpf (in Syncfusion.SfColorPalette.WPF.dll)
 
 The following code example shows how to create SfColorPalette from XAML and code behind respectively.
+{% highlight xml %}
 
 [XAML]
 
@@ -29,25 +30,25 @@ The following code example shows how to create SfColorPalette from XAML and code
 
 </Page>
 
+{% endhighlight %}
 
 
 
 
-
+{% highlight C# %}
 
 [C#]
 
 SfColorPalette colorPalette = new SfColorPalette();
-
+{% endhighlight %}
 
 
 ## Visual Structure
 
-{{ '![C:/Users/labuser/Desktop/b.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/labuser/Desktop/b.png](Getting-Started_images/Getting-Started_img1.png)
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+
+![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img2.png)
 
 

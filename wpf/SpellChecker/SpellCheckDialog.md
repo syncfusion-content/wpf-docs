@@ -11,7 +11,7 @@ documentation: ug
 
 Spell Checker contains in-built dialog for checking spellings for any input control. SpellChecker will not directly checks spelling for the control. You need to create a wrapper class for that control by implementing the interface ISpellEditor and you need to define all the members given in the interface. Using this interface the SpellChecker will interact with any control.
 
-Methods
+### Methods
 
 
 
@@ -20,9 +20,9 @@ _Methods table_
 <table>
 <tr>
 <td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+{{ '**Method**' | markdownify }}</td><td>
+{{ '**Prototype**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 SpellCheckForEditor</td><td>
@@ -38,9 +38,9 @@ Events
 <table>
 <tr>
 <td>
-Event</td><td>
-Parameters</td><td>
-Description</td></tr>
+{{ '**Event**' | markdownify }}</td><td>
+{{ '**Parameters**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 SpellCheckCompleted</td><td>
@@ -53,7 +53,7 @@ Spell Checking Using ISpellEditor
 
 In the below code snippet, a wrapper class is created for TextBox by implementing ISpellEditor interface.
 
-
+{%highlight c#%}
 
 [C#]
 
@@ -186,12 +186,13 @@ In the below code snippet, a wrapper class is created for TextBox by implementin
         }
 
 
-
+{%endhighlight%}
 
 
 After creating the wrapper class, you need to pass the instance of the ISpellEditor to SpellCheckForEditor method as given in the following code snippet:
 
 
+{%highlight c#%}
 
 [C#]
 
@@ -201,9 +202,9 @@ TextBoxSpellEditor spellEditor = new TextBoxSpellEditor(txtbx);
 
 spellCheck.SpellCheckForEditor(spellEditor);
 
+{%endhighlight%}
 
-
-Sample Link
+### Sample Link
 
 To access the sample link:
 

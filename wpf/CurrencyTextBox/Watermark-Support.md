@@ -12,6 +12,7 @@ documentation: ug
 Watermark is the dummy content displayed in the CurrencyTextBox when the value is null. The WatermarkText support behavior can be enabled by setting the WatermarkTextIsVisible property to true.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -23,10 +24,10 @@ Watermark is the dummy content displayed in the CurrencyTextBox when the value i
 
             WatermarkOpacity="0.5" UseNullOption="True"/>
 
+{% endhighlight %}
 
+![](Watermark-Support_images/Watermark-Support_img1.png)
 
-{{ '![](Watermark-Support_images/Watermark-Support_img1.png)' | markdownify }}
-{:.image }
 
 
 
@@ -38,6 +39,8 @@ WatermarkText automatically collapses when the control is in focus. When the con
 You can customize the Visual appearance of the WatermarkText by using the WatermarkTemplate property.
 
 
+
+{% highlight xml %}
 
 [XAML]
 
@@ -67,9 +70,9 @@ You can customize the Visual appearance of the WatermarkText by using the Waterm
 
 </syncfusion:CurrencyTextBox>
 
+{% endhighlight %}
 
+![](Watermark-Support_images/Watermark-Support_img2.png)
 
-{{ '![](Watermark-Support_images/Watermark-Support_img2.png)' | markdownify }}
-{:.image }
 
 

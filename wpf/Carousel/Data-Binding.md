@@ -11,7 +11,7 @@ documentation: ug
 
 Carousel is a fully data bound control, supports binding to different data sources such as IList Data Source, XML Data Source, Observable Collection Data Source and WCF Services. 
 
-Using Data Binding in an Application
+## Using Data Binding in an Application
 
 To bind a collection to Carousel, use the ItemsSource property. 
 
@@ -19,7 +19,7 @@ You can create Rich Interface Applications by defining DataTemplate to a Carouse
 
 The following code tells about Data Binding and DataTemplate.
 
-
+{% highlight xml %}
 
 <table>
 <tr>
@@ -30,10 +30,9 @@ The following code tells about Data Binding and DataTemplate.
 [C#]carousel.ItemsSource = new ObservableCollection<string>() { "Item1", "Item2", "Item3", "Item4", "Item5", "Item6", "Item7", "Item8", "Item9" };</td></tr>
 </table>
 
+{% endhighlight %}
 
-{{ '![](Data-Binding_images/Data-Binding_img1.png)' | markdownify }}
-{:.image }
-
+![](Data-Binding_images/Data-Binding_img1.png)
 
 
 

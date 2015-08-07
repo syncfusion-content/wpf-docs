@@ -15,7 +15,7 @@ Circular Gauge enables you to see a single numerical value mapped against a rang
 
 
 
-Use Cases
+### Use Cases
 
 1. Circular gauges are used as the speedometer, tachometer, fuel, and temperature gauges in a graphical car dashboard.
 2. Used in analog clocks.
@@ -39,25 +39,25 @@ A Circular Gauge is composed of a MainScale that is an integrated UI part. You c
 
 The Circular Gauge control is a highly customizable with a variety of simple APIs to modify the basic look and feel of the control without having to edit a template. You can position the ranges, ticks, labels and range pointers as needed. You can bind the value of the property that you are measuring to the pointer. The pointer moves to the exact location on the scale that depicts the current value of the bound data. 
 
-Scale
+### Scale
 
 The Circular Gauge scale contains labels, tick marks and a rim to specify the basic look and feel. It defines the start angle, sweep direction and sweep angle, overall minimum and maximum values and the frequency of labels and tick marks.
 
-Ranges
+### Ranges
 
 A range is a visual element that depicts the start and end values of inner divisions within the scale’s range. Each scale is capable of displaying one or more ranges, and each range can depict different zones or regions of same metrics, such as high, low, and average temperatures.  
 
-Pointers
+### Pointers
 
 A pointer is an element that points out a value of the bound property on a scale. A circular scale can have one or more pointers that is used to measure different values. Each pointer has a value property that visually informs you the current value. 
 
-GaugeHeader
+### GaugeHeader
 
 The GaugeHeader is an object that is used to set a unique header for the Circular Gauge. You can add text as well as images as the header in a circular gauge.
 
 ## Circular gauge elements
 
-{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.png)
+
 
 

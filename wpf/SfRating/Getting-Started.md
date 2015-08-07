@@ -9,10 +9,13 @@ documentation: ug
 
 # Getting Started
 
-Namespace:  Syncfusion.Windows.Controls.Input
-Assembly:  Syncfusion.SfInput.WPF (in Syncfusion.SfInput.WPF.dll) 
+ Namespace:  Syncfusion.Windows.Controls.Input
+ Assembly:  Syncfusion.SfInput.WPF (in Syncfusion.SfInput.WPF.dll) 
 
 The following code sample shows how to create the rating from code-behind and XAML:
+
+
+{%highlight xml%}
 
 [XAML]
 
@@ -30,11 +33,15 @@ The following code sample shows how to create the rating from code-behind and XA
 
 </Page>
 
+{%endhighlight%}
 
+
+{%highlight c#%}
 
 [C#]
 
 SfRating rating = new SfRating();
 
+{%endhighlight%}
 
 

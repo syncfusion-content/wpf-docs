@@ -15,7 +15,7 @@ Conditional formatting is a feature by which cell styles will be dynamically for
 
 
 
-Use Case Scenarios 
+### Use Case Scenarios 
 
 This feature enables you to categorize the cell for analysis.  For example, you can format a time sheet, to point out the overtime obtained by an employee. You can also use it to track the best sales employees in the company, by setting a quota that makes a cell range particular.
 
@@ -31,8 +31,8 @@ You can define the condition for formatting the Spreadsheet cells using a condit
 
 
 
-{{ '![](Formatting_images/Formatting_img1.png)' | markdownify }}
-{:.image }
+![](Formatting_images/Formatting_img1.png)
+
 
 
 
@@ -41,8 +41,8 @@ You can define the condition for formatting the Spreadsheet cells using a condit
 
 
 
-{{ '![](Formatting_images/Formatting_img2.png)' | markdownify }}
-{:.image }
+![](Formatting_images/Formatting_img2.png)
+
 
 
 
@@ -51,8 +51,8 @@ You can define the condition for formatting the Spreadsheet cells using a condit
 
 
 
-{{ '![](Formatting_images/Formatting_img3.png)' | markdownify }}
-{:.image }
+![](Formatting_images/Formatting_img3.png)
+
 
 
 
@@ -61,15 +61,15 @@ You can define the condition for formatting the Spreadsheet cells using a condit
 
 
 
-{{ '![](Formatting_images/Formatting_img4.png)' | markdownify }}
-{:.image }
+![](Formatting_images/Formatting_img4.png)
+
 
 
 
 
 The following code illustrates how to bind the ConditionalFormatCommand to a button: 
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -86,9 +86,9 @@ The following code illustrates how to bind the ConditionalFormatCommand to a but
         </Button>
 
 
+{%endhighlight%}
+![](Formatting_images/Formatting_img5.png)
 
-{{ '![](Formatting_images/Formatting_img5.png)' | markdownify }}
-{:.image }
 
 
 
@@ -101,7 +101,7 @@ Number formatting helps you to control the format of the number in Spreadsheet c
 
 You can define the number formatting using the NumberFormattingCommand. Number formatting will be applied to the Spreadsheet cells based on the command parameter. The following code illustrates this:
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -117,10 +117,10 @@ You can define the number formatting using the NumberFormattingCommand. Number f
 
 </Button>
 
+{%endhighlight%}
 
+![](Formatting_images/Formatting_img6.png)
 
-{{ '![](Formatting_images/Formatting_img6.png)' | markdownify }}
-{:.image }
 
 
 
@@ -133,24 +133,24 @@ This feature center aligns the cell value in Spreadsheet, across the range of se
 
 
 
-{{ '![](Formatting_images/Formatting_img7.png)' | markdownify }}
-{:.image }
+![](Formatting_images/Formatting_img7.png)
+
 
 
 
 
 ### Properties, Methods and Events
 
-Methods
+### Methods
 
 <table>
 <tr>
 <th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Type </th><th>
-Return Type </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <th>
 SetCenterAcrossSelection()</th><th>
@@ -165,27 +165,33 @@ void </th></tr>
 
 The following code snippets manually set the center across selection by calling the method: 
 
+{%highlight c#%}
+
+[C#]
+
+SpreadsheetControl.GridProperties.CurrentExcelGridModel.setCenterAcrossSelection();
+
+{%endhighlight%}
+
+{%highlight vbnet%}
 
 
-<table>
-<tr>
-<td>
-[C#]SpreadsheetControl.GridProperties.CurrentExcelGridModel.setCenterAcrossSelection();</td></tr>
-<tr>
-<td>
- [VB]SpreadsheetControl.GridProperties.CurrentExcelGridModel.setCenterAcrossSelection()</td></tr>
-</table>
+ [VB]
+ 
+ SpreadsheetControl.GridProperties.CurrentExcelGridModel.setCenterAcrossSelection()
+
+ {%endhighlight%}
 
 
 The following code snippet manually sets the center across selection by calling the command: 
 
-
+{%highlight xml%}
 
 [XAML]
 
 <Button Content="CentreAcrossSelection" Margin="5" Width="200" Command="{Binding ElementName=spreadSheetControl, Path=CenterAcrossSelectionCommand}"/>
 
-
+{%endhighlight%}
 
 
 
@@ -193,7 +199,7 @@ The output displayed is shown in the following screenshot:
 
 
 
-{{ '![](Formatting_images/Formatting_img8.png)' | markdownify }}
-{:.image }
+![](Formatting_images/Formatting_img8.png)
+
 
 

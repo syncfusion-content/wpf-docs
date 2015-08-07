@@ -20,9 +20,12 @@ AutoComplete supports basic core features which are listed as follows.
 * SelectionChanged.
 * TextChanged.
 
-Using Basic Core Features in an Application
+## Using Basic Core Features in an Application
 
 In the SelectionChanged event the SelectedIndex, SelectedItem & SelectedValue properties can be used in the application to get these property values. The properties and events listed can be used in the application as mentioned below.
+
+{% highlight cs %}
+
 
 [C#]
 
@@ -77,12 +80,12 @@ void autoComplete1_SelectionChanged(object sender,
       + this.autoComplete1.SelectedValue.ToString())
 
 }
+{% endhighlight %}
 
 
+## Tables for Properties, and Events
 
-Tables for Properties, and Events
-
-Properties
+### Properties
 
   _Properties Table for Basic Features_
 
@@ -130,7 +133,7 @@ DependencyProperty</td><td>
 String(null)</td><td>
 </td></tr>
 </table>
-Events
+### Events
 
    _Events Table for Basic Features_
 
@@ -159,7 +162,7 @@ DependencyPropertyChangedCallBack </th><th>
 </table>
 
 
-Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
 

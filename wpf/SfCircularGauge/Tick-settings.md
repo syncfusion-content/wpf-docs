@@ -9,13 +9,15 @@ documentation: ug
 
 # Tick settings
 
-Ticks
+## Ticks
 
 Ticks help you to identify the gauge’s data value by marking the gauge scale in regular increments. The Interval property is used to calculate the tick count for a scale. Like ticks, small ticks are calculated by using the MinorTicksPerInterval property.
 
 A tick’s length, stroke, and stroke thickness are set by the TickLength, TickStroke, and TickStrokeThickness UI properties. Like ticks, small ticks use similar UI properties to set the SmallTickLength, SmallTickStroke, and SmallTickStrokeThickness.
 
-Code Example:
+### Code Example:
+
+{% highlight xml %}
 
 [XAML]
 
@@ -48,8 +50,9 @@ Code Example:
                 </syncfusion:SfCircularGauge.MainScale>
 
              </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -78,16 +81,16 @@ Code Example:
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
+
+
+### Screenshot:
+
+![](Tick-settings_images/Tick-settings_img1.png)
 
 
 
-Screenshot:
-
-{{ '![](Tick-settings_images/Tick-settings_img1.png)' | markdownify }}
-{:.image }
-
-
-Tick Shape Customization
+## Tick Shape Customization
 
 The shape of the Scales Major and Minor ticks can be set by using TickShape property and it’s includes following option.
 
@@ -97,7 +100,9 @@ The shape of the Scales Major and Minor ticks can be set by using TickShape prop
 
 
 
-Code Example:
+### Code Example:
+
+{% highlight xml %}
 
 [XAML]
 
@@ -141,9 +146,10 @@ Code Example:
 
         </syncfusion:SfCircularGauge>
 
+{% endhighlight %}
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -176,20 +182,19 @@ Code Example:
             circularGauge.Scales.Add(scale);
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
 
 
 
 
+### Screenshot:
 
-Screenshot:
-
-{{ '![](Tick-settings_images/Tick-settings_img2.png)' | markdownify }}
-{:.image }
+![](Tick-settings_images/Tick-settings_img2.png)
 
 
 
 
-TickPosition
+## TickPosition
 
 The ticks in the scale can be placed inside the scale, outside the scale, or across the scale by selecting one of the options available in the TickPosition property. These options are:
 
@@ -199,7 +204,9 @@ The ticks in the scale can be placed inside the scale, outside the scale, or acr
 
 
 
-Code Example:
+### Code Example:
+
+{% highlight xml %}
 
 [XAML]
 
@@ -217,9 +224,10 @@ Code Example:
 
             </syncfusion:SfCircularGauge>
 
+{% endhighlight %}
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -236,14 +244,14 @@ Code Example:
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
 
 
 
 
+### Screenshot:
 
-Screenshot:
+![](Tick-settings_images/Tick-settings_img3.png)
 
-{{ '![](Tick-settings_images/Tick-settings_img3.png)' | markdownify }}
-{:.image }
 
 

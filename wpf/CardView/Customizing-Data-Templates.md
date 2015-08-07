@@ -15,7 +15,7 @@ Data templates can be customized for items and headers. This section explains ho
 
 You can customize how a business object is displayed using ItemTemplate of CardViewItem. The following example shows the usage of ItemTemplate.
 
-[XAML]
+{% highlight xml %}
 
   <syncfusion:CardView ItemsSource="{Binding Contacts}" >
 
@@ -64,7 +64,7 @@ You can customize how a business object is displayed using ItemTemplate of CardV
             </syncfusion:CardView>
 
 
-
+{% endhighlight %}
 
 
 
@@ -73,8 +73,7 @@ Implementing the above code generates the following output.
 
 
 
-{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)' | markdownify }}
-{:.image }
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img1.png)
 
 
 
@@ -87,7 +86,7 @@ You can also customize header of the CardViewItem using a header template. This 
 
 
 
-[XAML]
+{% highlight xml %}
 
   <DataTemplate x:Key="headerTemplate">
 
@@ -103,7 +102,7 @@ You can also customize header of the CardViewItem using a header template. This 
 
   </DataTemplate>
 
-
+{% endhighlight %}
 
 
 
@@ -111,7 +110,7 @@ You can also customize header of the CardViewItem using a header template. This 
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 <syncfusion:CardView ItemsSource="{Binding Contacts}" 
@@ -123,13 +122,13 @@ You can also customize header of the CardViewItem using a header template. This 
                                 />
 
 
-
+{% endhighlight %}
 
 
 This generates the following CardView control.
 
-{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)' | markdownify }}
-{:.image }
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
+
 
 
 ## EditItem Template
@@ -140,7 +139,7 @@ You can edit the values loaded in CardViewItem using EditItemTemplate. This is i
 
 
 
-[XAML]
+{% highlight xml %}
 
    <DataTemplate x:Key="contactEditTemplate">
 
@@ -197,14 +196,13 @@ You can edit the values loaded in CardViewItem using EditItemTemplate. This is i
         </DataTemplate>
 
 
-
+{% endhighlight %}
 
 
 2. Set EditItemTemplate for the CardView to the above template.
 
 
-
-[XAML]
+{% highlight xml %}
 
 <syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
 
@@ -217,7 +215,7 @@ You can edit the values loaded in CardViewItem using EditItemTemplate. This is i
                                 />
 
 
-
+{% endhighlight %}
 
 
 
@@ -226,11 +224,11 @@ Implementing the above codes generate the following CardView control.
 
 
 
-{{ '![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)' | markdownify }}
-{:.image }
+![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
 
 
-> _Note: You can edit the values in the CardView control by double-clicking the CardViewItem._
+
+ > Note: You can edit the values in the CardView control by double-clicking the CardViewItem.
 
 
 

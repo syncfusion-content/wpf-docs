@@ -12,7 +12,7 @@ documentation: ug
 You can enable ToolTip for TreeMap by setting ShowToolTip to “True”. For modifying default appearance of ToolTip, ToolTipTemplate can be specified.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -101,7 +101,7 @@ You can enable ToolTip for TreeMap by setting ShowToolTip to “True”. For mod
 
 </syncfusion:SfTreeMap>
 
-
+{% endhighlight %}
 
 
 
@@ -109,7 +109,7 @@ The following screenshot shows a tree map with a tool tip.
 
 
 
-{{ '![](ToolTip-Support_images/ToolTip-Support_img1.png)' | markdownify }}
-{:.image }
+![](ToolTip-Support_images/ToolTip-Support_img1.png)
+
 
 

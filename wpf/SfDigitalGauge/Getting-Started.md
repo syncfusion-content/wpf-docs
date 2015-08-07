@@ -14,6 +14,7 @@ documentation: ug
 The following code example explains how to add a Digital Gauge in your application:
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -34,10 +35,11 @@ The following code example explains how to add a Digital Gauge in your applicati
     </Grid>
 
 </Window>
+{% endhighlight %}
 
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -45,68 +47,68 @@ The following code example explains how to add a Digital Gauge in your applicati
 
             this.Grid.Children.Add(digitalgauge);
 
+{% endhighlight %}
 
 
 
-
-Screenshot:
-
+### Screenshot:
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 ## Creating a SfDigitalGauge with the Syncfusion Reference Manager
 
 Syncfusion Reference Manager is used to add Syncfusion Tools.
 
-To add SfDigitalGauge Control, refer to the following steps:
+### To add SfDigitalGauge Control, refer to the following steps:
 
 1. Create a simple WPF application by using Visual Studio.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 2. Right-Click on the Project and select Syncfusion Reference Manager.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 3. The Syncfusion Reference Manager Wizard is opened as follows.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 4. Search SfDigitalGauge by using Search Box and select SfDigitalGauge Control.  Click done to add selected SfDigitalGauge Control.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 5. The SfDigitalGauge  assemblies are automatically added to the Project after Clicking OK.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 
@@ -115,10 +117,12 @@ To add SfDigitalGauge Control, refer to the following steps:
 
 
 
+{% highlight xml %}
+
 [XAML]
 
 xmlns:syncfusion ="http://schemas.syncfusion.com/wpf" 
-
+{% endhighlight %}
 
 
 
@@ -126,6 +130,7 @@ xmlns:syncfusion ="http://schemas.syncfusion.com/wpf"
 7. Add the following code example to create a simple SfDigitalGauge control.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -146,10 +151,11 @@ xmlns:syncfusion ="http://schemas.syncfusion.com/wpf"
     </Grid>
 
 </Window> 
+{% endhighlight %}
 
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -182,15 +188,15 @@ namespace  DigitalGauge
     }
 
 }
-
+{% endhighlight %}
 
 
 8. The SfDigitalGauge control is created as follows.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
+
 
 
 > _Note:_   

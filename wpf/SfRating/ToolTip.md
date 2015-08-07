@@ -13,13 +13,13 @@ The tooltip will display the value of the Rating control. The tooltip can be ena
 
 [XAML]
 
-
+{%highlight xml%}
 
 <editors:SfRating ItemsCount="5" Value="2" ShowToolTip="True"/>
 
+{%endhighlight%}
 
+![](ToolTip_images/ToolTip_img1.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/6.png](ToolTip_images/ToolTip_img1.png)' | markdownify }}
-{:.image }
 
 

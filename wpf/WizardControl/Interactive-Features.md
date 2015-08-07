@@ -18,6 +18,7 @@ You can add any number of wizard pages to the Wizard control. They are plenty of
 To add a wizard page to the Wizard control, use the below code
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -28,8 +29,9 @@ To add a wizard page to the Wizard control, use the below code
     <syncfusion:WizardPage Name="wizardPage"/>
 
 </syncfusion:WizardControl>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -42,13 +44,13 @@ grid.Children.Add(wizardControl);
 WizardPage wizardPage = new WizardPage();
 
 wizardControl.Items.Add(wizardPage);  
+{% endhighlight %}
 
 
 
 
+![](Interactive-Features_images/Interactive-Features_img1.jpeg)
 
-{{ '![](Interactive-Features_images/Interactive-Features_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -56,6 +58,7 @@ wizardControl.Items.Add(wizardPage);
 To add two wizard pages to the Wizard control, refer the below code
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -68,8 +71,9 @@ To add two wizard pages to the Wizard control, refer the below code
     <syncfusion:WizardPage Name="wizardPage2"/>
 
 </syncfusion:WizardControl>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -86,11 +90,11 @@ WizardPage wizardPage2 = new WizardPage();
 wizardControl.Items.Add(wizardPage1);     
 
 wizardControl.Items.Add(wizardPage2);
+{% endhighlight %}
 
 
+![](Interactive-Features_images/Interactive-Features_img2.jpeg)
 
-{{ '![](Interactive-Features_images/Interactive-Features_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -102,6 +106,7 @@ You can select the wizard page from the wizard control by using the SelectedWiza
 To set this property, use the below code.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -116,8 +121,9 @@ To set this property, use the below code.
     <syncfusion:WizardPage Name="wizardPage3" Title="WizardPage3"/>
 
 </syncfusion:WizardControl>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -150,11 +156,10 @@ wizardControl.Items.Add(wizardPage2);
 wizardControl.Items.Add(wizardPage3);
 
 wizardControl.SelectedWizardPage = wizardPage2; 
+{% endhighlight %}
 
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img3.jpeg)' | markdownify }}
-{:.image }
+![](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
 
 ### Title and Description
@@ -164,6 +169,7 @@ You can set the title and description for the wizard page by using the Title and
 Use the following code snippet to set these properties.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -176,8 +182,9 @@ Use the following code snippet to set these properties.
 Description="This is the first page of wizard" />
 
 </syncfusion:WizardControl>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -196,11 +203,10 @@ wizardPage.Foreground = Brushes.Navy;
 wizardPage.Title = "WizardPage1";
 
 wizardPage.Description = "This is the first page of wizard"
+{% endhighlight %}
 
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img4.jpeg)' | markdownify }}
-{:.image }
+![](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
 
 ### Wizard Page Type
@@ -216,6 +222,7 @@ You can set the type of the wizard page by using the PageType property. There ar
 Use the below code snippet to set the PageType as Blank.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -226,10 +233,11 @@ Use the below code snippet to set the PageType as Blank.
     <syncfusion:WizardPage Name="wizardPage" PageType="Blank"/>
 
 </syncfusion:WizardControl>
+{% endhighlight %}
 
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -245,10 +253,9 @@ wizardControl.Items.Add(wizardPage);
 
 wizardPage.PageType = WizardPageType.Blank;    
 
+{% endhighlight %}
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img5.jpeg)' | markdownify }}
-{:.image }
+![](Interactive-Features_images/Interactive-Features_img5.jpeg)
 
 
 
@@ -256,6 +263,7 @@ wizardPage.PageType = WizardPageType.Blank;
 Use the following code snippet to set the PageType as Interior.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -267,9 +275,10 @@ Use the following code snippet to set the PageType as Interior.
 
 </syncfusion:WizardControl>
 
+{% endhighlight %}
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -284,12 +293,13 @@ WizardPage wizardPage = new WizardPage();
 wizardControl.Items.Add(wizardPage);
 
 wizardPage.PageType = WizardPageType.Interior;  
-
+{% endhighlight %}
 
 
 Use the following code snippet to set the PageType as Exterior.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -300,8 +310,9 @@ Use the following code snippet to set the PageType as Exterior.
     <syncfusion:WizardPage Name="wizardPage" PageType="Exterior"/>
 
 </syncfusion:WizardControl>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -316,16 +327,15 @@ WizardPage wizardPage = new WizardPage();
 wizardControl.Items.Add(wizardPage);
 
 wizardPage.PageType = WizardPageType.Exterior;    
+{% endhighlight %}
+
+
+![](Interactive-Features_images/Interactive-Features_img6.jpeg)
 
 
 
-{{ '![](Interactive-Features_images/Interactive-Features_img6.jpeg)' | markdownify }}
-{:.image }
 
-
-
-
-See Also
+###  See Also
 
 Minimum Width for the Banner Image on the Exterior Wizard Page, Minimum Height for the Interior Wizard Page Header
 
@@ -339,13 +349,14 @@ This topic illustrates the following about Navigation buttons:
 
 
 
-Enabling or Disabling the Navigation Buttons
+#### Enabling or Disabling the Navigation Buttons
 
 You can enable or disable the Back, Cancel, Next and Finish navigation buttons in the wizard control and wizard page. This is done by using the BackEnabled, CancelEnabled, NextEnabled and FinishEnabled properties respectively.
 
 Here is the code snippet.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -358,8 +369,9 @@ NextEnabled="True" CancelEnabled="True">
     <syncfusion:WizardPage Name="wizardPage"/>
 
 </syncfusion:WizardControl>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -381,21 +393,21 @@ wizardControl.FinishEnabled = true;
 
 wizardControl.CancelEnabled = true;  
 
+{% endhighlight %}
+
+![](Interactive-Features_images/Interactive-Features_img7.jpeg)
 
 
-{{ '![](Interactive-Features_images/Interactive-Features_img7.jpeg)' | markdownify }}
-{:.image }
 
 
-
-
-Showing or Hiding the Navigation Buttons
+#### Showing or Hiding the Navigation Buttons
 
 You can show or hide the Back, Cancel, Next, Help and Finish navigation buttons in the wizard control and wizard page. This is done by using the BackVisible, CancelVisible, NextVisible, HelpVisible and FinishVisible properties respectively. 
 
 To set these properties, refer the below code.
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -408,9 +420,10 @@ CancelVisible="True" HelpVisible="True" FinishVisible="False">
     <syncfusion:WizardPage Name="wizardPage"/>
 
 </syncfusion:WizardControl>
+{% endhighlight %}
 
 
-
+{% highlight C# %}
 
 
 [C#]
@@ -435,19 +448,20 @@ wizardControl.NextVisible = true;
 
 wizardControl.HelpVisible = true; 
 
+{% endhighlight %}
+
+![](Interactive-Features_images/Interactive-Features_img8.jpeg)
 
 
-{{ '![](Interactive-Features_images/Interactive-Features_img8.jpeg)' | markdownify }}
-{:.image }
 
 
-
-
-Text for the Navigation Buttons
+#### Text for the Navigation Buttons
 
 You can set custom text for the Back, Next, Finish, Help and Cancel navigation buttons in the Wizard control. This is done by using the BackText, NextText, FinishText, HelpText and CancelText properties as follows. 
 
 
+
+{% highlight xml %}
 
 [XAML]
 
@@ -462,8 +476,9 @@ HelpText="Help" CancelText="Exit" FinishText="Finish" NextText="Next">
 </syncfusion:WizardControl>
 
 
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -487,10 +502,9 @@ wizardControl.HelpText = "Help";
 
 wizardControl.FinishText = "Finish";
 
+{% endhighlight %}
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img9.jpeg)' | markdownify }}
-{:.image }
+![](Interactive-Features_images/Interactive-Features_img9.jpeg)
 
 
 > _Note: You can set custom text for the navigation buttons in the wizard control only. You cannot set custom text for the navigation buttons in the wizard page._
@@ -498,8 +512,7 @@ wizardControl.FinishText = "Finish";
 
 
 
-
-See Also
+ See Also
 
 Next Page and Previous Page Navigation
 
@@ -512,6 +525,7 @@ This section contains the following topics:
 You can set the navigation to the Next and Previous pages by using the NextPage and PreviousPage properties respectively. To set these properties, use the below code.
 
 
+{% highlight C# %}
 
 [C#]
 
@@ -545,7 +559,7 @@ wizardPage1.NextPage = wizardPage3;
 
 wizardPage3.PreviousPage = wizardPage1;  
 
-
+{% endhighlight %}
 
 See Also
 
@@ -558,6 +572,7 @@ You can close the Wizard control window by clicking the Cancel or Finish button 
 To enable these properties, refer the below code
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -569,9 +584,10 @@ To enable these properties, refer the below code
 
 </syncfusion:WizardControl>
 
+{% endhighlight %}
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -588,18 +604,18 @@ wizardControl.Items.Add(wizardPage);
 wizardControl.CloseWindowOnCancel = true;
 
 wizardControl.CloseWindowOnFinish = true; 
-
+{% endhighlight %}
 
 
 ## Event for Next Button in Wizard Control  
 
 The Next Button event has been implemented in Wizard Control in order to do operations such as displaying a message box and making the thread to sleep before navigating to the next page.
 
-Use Case Scenario
+### Use Case Scenario
 
 Users can use this event to do valid code of operations such as displaying a message box and making the thread to sleep before navigating to the next page in Wizard Control.
 
-Events
+### Events
 
 
 
@@ -623,12 +639,15 @@ Routed Event</th><th>
 </table>
 
 
-Adding Next Button Event to an Application 
+### Adding Next Button Event to an Application 
 
 
 
-Use the following code snippet to define the Next Button Event for Wizard control:
+#### Use the following code snippet to define the Next Button Event for Wizard control:
 
+
+
+{% highlight xml %}
 
 
 [XAML]
@@ -663,9 +682,9 @@ CancelVisible="True" FinishVisible="False" HelpVisible="True">
 
                           </syncfusion:WizardControl>
 
+{% endhighlight %}
 
-
-Samples Location
+#### Samples Location
 
 The samples are located in the following location:
 

@@ -18,7 +18,7 @@ In this layout the data is visualized in the form of square-like rectangles with
 The following code illustrates how to set a squarified layout in Treemap.
 
 
-
+{% highlight xml %}
  [XAML]
 
 
@@ -42,13 +42,13 @@ The following code illustrates how to set a squarified layout in Treemap.
         </syncfusion:SfTreeMap>
 
     </Grid>  
-
+{% endhighlight %}
 
 
 The following screenshot illustrates a squarified layout.
 
-{{ '![](TreeMap-Layout_images/TreeMap-Layout_img1.png)' | markdownify }}
-{:.image }
+![](TreeMap-Layout_images/TreeMap-Layout_img1.png)
+
 
 
 ## SliceAndDiceAuto Layout:
@@ -61,7 +61,7 @@ The following code illustrates how to set a slice and dice layout in Treemap.
 
 [XAML]
 
-
+{% highlight xml %}
 
     <Grid Background="Black">
 
@@ -83,7 +83,7 @@ The following code illustrates how to set a slice and dice layout in Treemap.
 
     </Grid>
 
-
+{% endhighlight %}
 
 
 
@@ -99,8 +99,8 @@ The following screenshot illustrates a slice-and-dice layout.
 
 _Slice-and-dice layout_
 
-{{ '![C:/Users/MageshyadavM/Downloads/image250_3.jpg](TreeMap-Layout_images/TreeMap-Layout_img2.jpeg)' | markdownify }}
-{:.image }
+![C:/Users/MageshyadavM/Downloads/image250_3.jpg](TreeMap-Layout_images/TreeMap-Layout_img2.jpeg)
+
 
 
 ## SliceAndDiceHorizontal Layout:
@@ -108,7 +108,7 @@ _Slice-and-dice layout_
 The following code illustrates how to set a slice and dice layout horizontally in TreeMap.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -132,13 +132,13 @@ The following code illustrates how to set a slice and dice layout horizontally i
         </syncfusion:SfTreeMap>
 
     </Grid>
-
+{% endhighlight %}
 
 
 The following screenshot shows a Slice-and-dice TreeMap in horizontal layout.
 
-{{ '![](TreeMap-Layout_images/TreeMap-Layout_img3.png)' | markdownify }}
-{:.image }
+![](TreeMap-Layout_images/TreeMap-Layout_img3.png)
+
 
 
 ## SliceAndDiceVertical Layout:
@@ -146,7 +146,7 @@ The following screenshot shows a Slice-and-dice TreeMap in horizontal layout.
 The following code illustrates how to set a slice and dice layout vertically in TreeMap.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -170,14 +170,14 @@ The following code illustrates how to set a slice and dice layout vertically in 
         </syncfusion:SfTreeMap>
 
     </Grid>
-
+{% endhighlight %}
 
 
 The following screenshot shows a Slice-and-dice TreeMap in vertical layout.
 
 
 
-{{ '![](TreeMap-Layout_images/TreeMap-Layout_img4.png)' | markdownify }}
-{:.image }
+![](TreeMap-Layout_images/TreeMap-Layout_img4.png)
+
 
 

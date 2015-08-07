@@ -14,7 +14,7 @@ You can set the animation speed, which controls the time taken to expand or coll
 Use the following code snippet to set this property.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -60,11 +60,11 @@ Use the following code snippet to set this property.
     </syncfusion:TaskBarItem>
 
 </syncfusion:TaskBar>
+{% endhighlight %}
 
 
 
-
-
+{% highlight  %}
 [C#]
 
 
@@ -72,19 +72,19 @@ Use the following code snippet to set this property.
 // Setting the speed
 
 TaskBar.SetSpeed(taskBar, 10);
+{% endhighlight %}
 
 
 
 
+## Methods handled with Speed Property
 
-Methods handled with Speed Property
-
-GetSpeed
+### GetSpeed
 
 This method is used to get the animation speed, which controls the time taken to expand or collapse the TaskBarItems in the TaskBar. It has one argument, which returns the speed value of type, double.
 
 
-
+{% highlight  %}
 [C#]
 
 
@@ -95,16 +95,16 @@ double speed;
 
 speed = TaskBar.GetSpeed(taskBar);
 
+{% endhighlight %}
 
 
 
-
-SetSpeed
+### SetSpeed
 
 This method is used to set the animation speed, which controls the time taken to expand or collapse the TaskBarItems in the TaskBar. It has two arguments. The first argument specifies the object, while the second argument specifies the value of speed of type double.
 
 
-
+{% highlight  %}
 [C#]
 
 
@@ -113,5 +113,5 @@ This method is used to set the animation speed, which controls the time taken to
 
 TaskBar.SetSpeed(taskBar, 10);
 
-
+{% endhighlight %}
 

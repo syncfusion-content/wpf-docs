@@ -14,7 +14,7 @@ TabItem now allows you cancel the selection of a tab item by setting e.Cancel=tr
 The following code illustrates the same.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -28,9 +28,9 @@ The following code illustrates the same.
             <Grid syncfusion:TabControlExt.Header="Tab3" />
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight  %}
 [C#]
 
 
@@ -48,6 +48,6 @@ private void SelectedItemChangedEvent(object sender,SelectedItemChangedEventArgs
     }      
 
 }
-
+{% endhighlight %}
 
 

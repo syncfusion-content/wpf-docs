@@ -25,8 +25,8 @@ The Data Validation enables you to dynamically validate the data entered in a ce
 
 
 
-{{ '![](Data-Management_images/Data-Management_img1.png)' | markdownify }}
-{:.image }
+![](Data-Management_images/Data-Management_img1.png)
+
 
 
 
@@ -54,11 +54,11 @@ _Event Table_
 <table>
 <tr>
 <th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th><th>
-Reference links </th></tr>
+{{ '**Event**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Arguments**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <th>
 CurrentCellValidating  </th><th>
@@ -75,20 +75,20 @@ You can define the data validation to the Spreadsheet cells using the Data Valid
 
 
 
-{{ '![](Data-Management_images/Data-Management_img2.png)' | markdownify }}
-{:.image }
+![](Data-Management_images/Data-Management_img2.png)
 
 
 
 
-{{ '![](Data-Management_images/Data-Management_img3.png)' | markdownify }}
-{:.image }
+
+![](Data-Management_images/Data-Management_img3.png)
 
 
 
 
-{{ '![](Data-Management_images/Data-Management_img4.png)' | markdownify }}
-{:.image }
+
+![](Data-Management_images/Data-Management_img4.png)
+
 
 
 
@@ -97,8 +97,8 @@ The input message will be displayed as tooltip, when the particular cell is in a
 
 
 
-{{ '![](Data-Management_images/Data-Management_img5.png)' | markdownify }}
-{:.image }
+![](Data-Management_images/Data-Management_img5.png)
+
 
 
 
@@ -107,8 +107,8 @@ The error message will be display only when you enter the value beyond the data 
 
 
 
-{{ '![](Data-Management_images/Data-Management_img6.png)' | markdownify }}
-{:.image }
+![](Data-Management_images/Data-Management_img6.png)
+
 
 
 
@@ -117,7 +117,7 @@ When you click Ok, the cell value will not be committed and when you click Cance
 
 The following code illustrates how to bind the DataValidationCommand to a button:
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -128,6 +128,7 @@ The following code illustrates how to bind the DataValidationCommand to a button
                     </Button>
 
 
+{%endhighlight%}
 
 ## Comments 
 
@@ -135,13 +136,13 @@ Comments provide additional information about a cell such as, what the value rep
 
 
 
-Insert comment
+### Insert comment
 
 You can insert comment to the Spreadsheet cells using the New Comment dialog box. You can open the New Comment dialog box using the InsertCommentCommand_._
 
 The following code illustrates how to bind the InsertCommentCommand__to a button: 
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -151,37 +152,36 @@ The following code illustrates how to bind the InsertCommentCommand__to a button
 
 </Button>
 
+{%endhighlight%}
+
+![](Data-Management_images/Data-Management_img7.png)
 
 
-{{ '![](Data-Management_images/Data-Management_img7.png)' | markdownify }}
-{:.image }
 
 
 
+![](Data-Management_images/Data-Management_img8.png)
 
-{{ '![](Data-Management_images/Data-Management_img8.png)' | markdownify }}
-{:.image }
 
 
 > _Note: You can insert only one comment for a cell. The InsertCommentCommand will open the Edit comment dialog box if the specific cell already has a comment._
 
 
 
-Edit Comment
+### Edit Comment
 
 You can edit the existing comments using the Edit Comment dialog box. You can open the Edit comment dialog using the InsertCommentCommand_._
 
 
+![](Data-Management_images/Data-Management_img9.png)
 
-{{ '![](Data-Management_images/Data-Management_img9.png)' | markdownify }}
-{:.image }
 
 
 
 
 The following code illustrates how to bind the InsertCommentCommand__to a button: 
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -191,15 +191,15 @@ The following code illustrates how to bind the InsertCommentCommand__to a button
 
 </Button>
 
+{%endhighlight%}
 
-
-Delete Comment
+### Delete Comment
 
 You can delete the comment in the spreadsheet cells using the DeleteCommentCommand. When you execute this command it will delete the comment from the selected cells.
 
 The following code illustrates how to bind the DeleteCommentCommand__to a button: 
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -209,7 +209,7 @@ The following code illustrates how to bind the DeleteCommentCommand__to a button
 
 </Button>
 
-
+{%endhighlight%}
 
 ## Import and Export from Data Table
 
@@ -217,32 +217,32 @@ Spreadsheet offers some helper methods that enable you to import and export data
 
 
 
-{{ '![](Data-Management_images/Data-Management_img10.png)' | markdownify }}
-{:.image }
+![](Data-Management_images/Data-Management_img10.png)
 
 
 
 
-Samples Link
+
+### Samples Link
 
 The samples for Importing from data table are located at:
 
-Essential Studio Dashboard > Spreadsheet > Data Management > Import Data Table.
+### Essential Studio Dashboard > Spreadsheet > Data Management > Import Data Table.
 
 Refer to section 2.2 Samples and Location to access the samples location.
 
 
 
-Methods
+### Methods
 
 <table>
 <tr>
 <th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Type </th><th>
-Return Type </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <th>
 ImportFromDataTable </th><th>
@@ -285,25 +285,27 @@ void</th></tr>
 
 The following lines of code are used to import data from DataTable to Spreadsheet control.
 
-
+{%highlight c#%}
 
 [C#]
 
 this.spreadsheetControl.ImportFromDataTable(datatable);
 
+{%endhighlight%}
 
 
+{%highlight vbnet%}
 [VB]
 
 Me.spreadsheetControl.ImportFromDataTable(datatable)
-
+{%endhighlight%}
 
 
 ### Exporting to a Data Table
 
 Similarly, you can to export the Spreadsheet data to a data table by using the ExportDataTable method of Worksheet. The following code demonstrates this:
 
-
+{%highlight c#%}
 
 [C#]
 
@@ -313,7 +315,9 @@ IRange range = sheet.Range["A1:K50"];
 
 DataTable Dt = sheet.ExportDataTable(range, ExcelExportDataTableOptions.ColumnNames);
 
+{%endhighlight%}
 
+{%highlight vbnet%}
 
 [VB]
 
@@ -323,7 +327,7 @@ Dim range As IRange = sheet.Range("A1:K50")
 
 Dim Dt As DataTable = sheet.ExportDataTable(range, ExcelExportDataTableOptions.ColumnNames)
 
-
+{%endhighlight%}
 
 ## Clipboard Support
 
@@ -331,7 +335,7 @@ The Spreadsheet control provides support for clipboard operations. When you copy
 
 
 
-Use Case Scenarios
+### Use Case Scenarios
 
 1. It is easier and faster to copy the data than to rewrite it every time you need it.
 2. Spreadsheet control support Excel-like relative reference copy and paste operations. It also allows you to do clipboard operations like those available in Excel.
@@ -351,13 +355,13 @@ By default, the normal copy and paste option is enabled in the Spreadsheet contr
 
 
 
-{{ '![](Data-Management_images/Data-Management_img11.png)' | markdownify }}
-{:.image }
+![](Data-Management_images/Data-Management_img11.png)
 
 
 
 
-#### Relative reference Copy and paste
+
+## Relative reference Copy and paste
 
 If you copy and paste cells within the Spreadsheet control, then the cell styles will be preserved, and also the formula references will be automatically updated in the pasted cells.
 
@@ -365,27 +369,27 @@ If you are pasting the date in the spreadsheet cells, it will show this small po
 
 
 
-{{ '![C:/Users/ponrajaa/Desktop/document/New Document/Spreadsheet_Images/WPF/Copy1.png](Data-Management_images/Data-Management_img12.png)' | markdownify }}
-{:.image }
+![](Data-Management_images/Data-Management_img12.png)
 
 
 
 
-{{ '![C:/Users/ponrajaa/Desktop/document/New Document/Spreadsheet_Images/WPF/Copy2.png](Data-Management_images/Data-Management_img13.png)' | markdownify }}
-{:.image }
+
+![](Data-Management_images/Data-Management_img13.png)
+
 
 
 ### How to Disable the Relative Reference Copy and Paste
 
 By default, this feature is enabled in the Spreadsheet control. You can disable this copy paste feature by using the following code:
 
-
+{%highlight c#%}
 
 [C#]
 
 spreadsheetControl.GridProperties.ActiveSpreadsheetGrid.Model.GridCopyPaste = null;
 
-
+{%endhighlight%}
 
 ### Events
 
@@ -415,13 +419,13 @@ This event is triggered when some grid data is about to be copied to the clipboa
 
 
 
-Properties
+### Properties
 
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -437,19 +441,19 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-#### ClipboardCanCut
+## ClipboardCanCut
 
 This event is triggered when some grid data is about to be moved to the clipboard. Inside this event handler, you can check for the data and range of cells going to be moved and cancel the operation if you do not want to move the data. It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
 
 
 
-Properties
+### Properties
 
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -465,17 +469,17 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-#### ClipboardCanPaste
+## ClipboardCanPaste
 
 This event is fired when some grid data is about to be pasted from the clipboard. Inside this event handler, you can check for the data and range of cells going to be pasted and cancel the operation if you don’t want to paste the data. It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
 
-Properties
+### Properties
 
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -491,19 +495,19 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-####   ClipboardCopy
+##   ClipboardCopy
 
 This event is fired when some grid data is being copied to the clipboard. Inside this event handler, you can check for the data and range of cells being copied and cancel the operation if you don’t want to copy the data. You can also provide custom formatted data for copying to clipboard. It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
 
 
 
-Properties
+### Properties
 
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -519,21 +523,21 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-#### ClipboardCut
+## ClipboardCut
 
 This event is fired when some grid data is being moved to the clipboard. Inside this event handler, you can check for the data and range of cells being moved and cancel the operation if you don’t want to move the data. You can also provide custom formatted data for moving to clipboard. It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
 
 
 
-Properties
+### Properties
 
 
 
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -549,19 +553,19 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-#### ClipboardPaste
+## ClipboardPaste
 
 This event is fired when some grid data is being pasted from the clipboard. Inside this event handler, you can check for the data and range of cells being pasted and cancel the operation if you don’t want to paste the data. You can also provide custom formatted data for saving into grid cells. It receives an argument of type GridCutCopyPasteEventArgs containing data related to this event. The following are the event argument properties.
 
 
 
-Properties
+### Properties
 
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -583,7 +587,7 @@ By default, when you copy and paste the formula cell, the Spreadsheet control wi
 
 The following code used to copy and paste only the display text.
 
-
+{%highlight c#%}
 
 [C#]
 
@@ -692,4 +696,4 @@ void Model_ClipboardCopy(object sender, GridCutPasteEventArgs e)
 
 
 
-
+{%endhighlight%}

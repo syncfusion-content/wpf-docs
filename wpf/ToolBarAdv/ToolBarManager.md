@@ -17,7 +17,7 @@ The following code illustrates how to place the ToolBarAdv at the top:
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -74,10 +74,10 @@ The following code illustrates how to place the ToolBarAdv at the top:
         </shared:ToolBarManager>
 
 
+{% endhighlight %}
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -128,6 +128,6 @@ ToolBarAdv toolBar = new ToolBarAdv();
             manager.TopToolBarTray = tray;
 
 
-
+{% endhighlight %}
 
 

@@ -14,7 +14,7 @@ The width of the TaskBar is customized by using the GroupWidth property. This is
 The following code snippet illustrates how to set the group width.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -60,11 +60,11 @@ The following code snippet illustrates how to set the group width.
     </syncfusion:TaskBarItem>
 
 </syncfusion:TaskBar>
+{% endhighlight %}
 
 
 
-
-
+{% highlight  %}
 [C#]
 
 
@@ -152,11 +152,11 @@ taskBar.GroupWidth = 150;
 //Adding TaskBar as content of window
 
 this.Content = taskBar; 
+{% endhighlight %}
 
 
+![](Setting-Group-Width_images/Setting-Group-Width_img1.jpeg)
 
-{{ '![](Setting-Group-Width_images/Setting-Group-Width_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 

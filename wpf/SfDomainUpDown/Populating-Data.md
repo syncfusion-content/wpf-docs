@@ -13,7 +13,7 @@ The DomainUpDown control can be populated with a predefined list of items.
 
 For example, in the following code, the DomainUpDown populates a list of employees:
 
-
+{%highlight c#%}
 
 [C#]
 
@@ -33,11 +33,11 @@ public class Employee
 
 
 
-
+{%endhighlight%}
 
 Create a collection attribute:
 
-
+{%highlight c#%}
 
 [C#]
 
@@ -58,12 +58,12 @@ private List<Employee> employees;
      }
 
 
-
+{%endhighlight%}
 
 
 Populate the collection with items:
 
-
+{%highlight c#%}
 
 [C#]
 
@@ -78,14 +78,14 @@ Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
 Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
 
 
+{%endhighlight%}
 
 
-
-ItemsSource
+### ItemsSource
 
 Bind the Employees collection to the ItemsSource property of DomainUpDown:
 
-
+{%highlight c#%}
 
 [C#]
 
@@ -113,15 +113,15 @@ Bind the Employees collection to the ItemsSource property of DomainUpDown:
 
 
 
-
+{%endhighlight%}
 
 > _Note: When the ContentTemplate property of the DomainUpDown control is not set, Items will be displayed as business objects in the control._
 
-ContentTemplate
+### ContentTemplate
 
 ContentTemplate helps the user decorate the content with visual elements. At this point, the control is populated with list of employees, and the Employee model contains two properties: Name and Email. In this example, the control is set to display content based on Name.
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -155,11 +155,10 @@ ContentTemplate helps the user decorate the content with visual elements. At thi
 
 </editors:SfDomainUpDown>
 
+{%endhighlight%}
 
 
 
-
-{{ '![C:/Users/ApoorvahR/Desktop/2.png](Populating-Data_images/Populating-Data_img1.png)' | markdownify }}
-{:.image }
+![](Populating-Data_images/Populating-Data_img1.png)
 
 

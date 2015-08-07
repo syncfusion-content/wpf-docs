@@ -24,65 +24,53 @@ The default value is BottomLeft.
 
 The DropDirection property can be set as follows:
 
-To set BottomLeft DropDirection
+## To set BottomLeft DropDirection
 
 
-
-[XAML]
+{% highlight xml %}
 
 <sync:SplitButtonAdv  DropDirection="BottomLeft"/>
 
+{% endhighlight %}
 
-
-{{ '![](Drop-Direction_images/Drop-Direction_img1.png)' | markdownify }}
-{:.image }
-
-
-
-
-To set BottomRight Drop Direction
+![](Drop-Direction_images/Drop-Direction_img1.png)
 
 
 
-[XAML]
+## To set BottomRight Drop Direction
+
+
+{% highlight xml %}
+
 
 <sync:SplitButtonAdv  DropDirection="BottomRight"/>
 
+{% endhighlight %}
 
-
-{{ '![](Drop-Direction_images/Drop-Direction_img2.png)' | markdownify }}
-{:.image }
-
-
-
-
-To set Right Drop Direction
+![](Drop-Direction_images/Drop-Direction_img2.png)
 
 
 
-[XAML]
+## To set Right Drop Direction
+
+{% highlight xml %}
 
 <sync:SplitButtonAdv  DropDirection="Right"/>
 
+{% endhighlight %}
 
 
-{{ '![](Drop-Direction_images/Drop-Direction_img3.png)' | markdownify }}
-{:.image }
-
-
-
-
-To set Left Drop Direction
+![](Drop-Direction_images/Drop-Direction_img3.png)
 
 
 
-[XAML]
+## To set Left Drop Direction
+
+
+{% highlight xml %}
 
 <sync:SplitButtonAdv  DropDirection="Left"/>
 
+{% endhighlight %}
 
-
-{{ '![](Drop-Direction_images/Drop-Direction_img4.png)' | markdownify }}
-{:.image }
-
-
+![](Drop-Direction_images/Drop-Direction_img4.png)

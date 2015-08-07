@@ -13,6 +13,8 @@ documentation: ug
 
 The following code example explains how to add a Circular Gauge:
 
+{% highlight xml %}
+
 [XAML]
 
 <Window x:Class="SampleCircularGauge.MainWindow"
@@ -88,10 +90,11 @@ The following code example explains how to add a Circular Gauge:
 </syncfusion:SfCircularGauge>    </Grid>
 
 </Window>
+{% endhighlight %}
 
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -124,70 +127,70 @@ The following code example explains how to add a Circular Gauge:
             circularGauge.GaugeHeader = _textBlock;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
 
 
 
 
+### Screenshot:
 
-Screenshot:
+![](Getting-Started_images/Getting-Started_img1.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
 
 
 ## Create a CircularGauge with the Syncfusion Reference Manager
 
 Syncfusion Reference Manager is used to add Syncfusion Tools.
 
-To add SfCircularGauge Control, follow the steps below:
+### To add SfCircularGauge Control, follow the steps below:
 
 1. Create a simple WPF application by using Visual Studio.
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 2. Right-Click on the Project and select Syncfusion Reference Manager.
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 3. The Syncfusion Reference Manager Wizard is opened as follows.
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 4. Search SfCircularGauge by using Search Box and select SfCircularGauge Control.  Click done to add selected SfCircularGauge Control.
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 5. The SfCircularGauge assemblies are automatically added to the Project after Clicking OK
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 6. Create a namespace reference to the SfCircularGauge control by using Syncfusion’s global namespace reference schemas.syncfusion.com or the SfCircularGauge control’s namespace reference by using Syncfusion.UI.Xaml.Gauges available in the Syncfusion.SfCircularGauge.WPF assembly.
 
 
+{% highlight xml %}
 
 [XAML]
 
 xmlns:syncfusion ="http://schemas.syncfusion.com/wpf" 
-
+{% endhighlight %}
 
 
 7. Add the following code example to create a simple SfCircularGauge control.
+{% highlight xml %}
 
 [XAML]
 
@@ -208,9 +211,11 @@ xmlns:syncfusion ="http://schemas.syncfusion.com/wpf"
     </Grid>
 
 </Window>
+{% endhighlight %}
 
 
 
+{% highlight C# %}
 
 
 [C#]
@@ -242,13 +247,14 @@ namespace CircularGauge
     }
 
 }
+{% endhighlight %}
 
 8. The SfCircularGauge control is created as follows.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
+
 
 
 > _Note:_   

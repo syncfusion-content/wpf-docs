@@ -22,7 +22,7 @@ The context menu of the Tab Item has the following menu items.
 To enable the Tab Item context menu, use the below code.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -48,9 +48,9 @@ To enable the Tab Item context menu, use the below code.
     </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight  %}
 [C#]
 
 
@@ -94,26 +94,26 @@ tabControlExt.ShowTabItemContextMenu = true;
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt);
+{% endhighlight %}
+
+
+![](Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-Item_images/Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-Item_img1.jpeg)
 
 
 
-{{ '![](Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-Item_images/Setting-TabListContextMenu-and-TabItemContextMenu-For-Tab-Item_img1.jpeg)' | markdownify }}
-{:.image }
 
 
+## Tab Item Context Menu Events
 
-
-Tab Item Context Menu Events
-
-OnCloseOtherTabs Event
+###  OnCloseOtherTabs Event
 
 This event is handled when the 'Close All But This' menu item in the TabItemContextMenu is clicked.
 
-OnCloseAllTabs Event
+###OnCloseAllTabs Event
 
 This event is handled when the 'Close All' menuitem in TabItemContextMenu is clicked.
 
-OnCloseButtonClick Event
+###  Event
 
 This event is handled when the 'Close' menu item in TabItemContextMenu is clicked.
 

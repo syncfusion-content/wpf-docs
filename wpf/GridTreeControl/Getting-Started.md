@@ -25,7 +25,7 @@ The EssentialGrid package is comprised of following three types of grid controls
 
 Now, take closer look at the characteristics of each of these controls. 
 
-Grid Control
+### Grid Control
 
 This is a general-purpose grid that can be used in any form, either holding its own data or virtually bound to an external data source. It acts as a base grid for the other two types of grids (the GridData and GridTree controls). Most features are shared among the three grid types. 
 
@@ -33,11 +33,11 @@ In the Grid control, each cell acts as a single entity, which is suitable for ap
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
-GridData Control
+
+### GridData Control
 
 The GridData control is designed to be bound with a data source. In the GridData control, each column behaves as a single entity. This grid is more column-centric and can be used to display interrelated tabular data. Unlike the base grid, this grid does not store data values in its data structures; instead, it is connected to an external data source.
 
@@ -45,45 +45,45 @@ For more detailed information about data source connections, refer to the Data B
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
-GridTree Control
+
+### GridTree Control
 
 The GridTree control serves as a multicolumn tree control that is optimized to display thousands of items. This control uses a load-on-demand architecture to quickly generate a tree view. You can toggle the view of the underlying nodes by clicking the plus-minus glyphs of a root node. This control provides complete customization options such as custom level styles, glyphs, node images, and more.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 ## Class Diagram 
 
 The following illustration depicts the Class Diagram for Essential Grid for WPF.
 
-Control Hierarchy
+### Control Hierarchy
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
-Model Hierarchy
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+### Model Hierarchy
+
+![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 ## Adding Essential Grid to an Application
 
 This section serves as a guide on how to deploy EssentialGrid in an application.
 
-### Adding the GridTree Control to a WPF Application
+## Adding the GridTree Control to a WPF Application
 
 This section demonstrates how to add a GridTree control to a WPF application and how to load the grid with a data source. The GridTree control can be added to an application either through a designer or programmatically.
 
-Adding GridTreeControl through a Designer
+### Adding GridTreeControl through a Designer
 
 Please follow the steps below to add the GridTree control through a designer such as Visual Studio.
 
@@ -93,19 +93,19 @@ Please follow the steps below to add the GridTree control through a designer suc
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img6.png)
+
 
 
 4. Once GridTreeControl has been dragged to the designer window, the control will be added to the designer and its dependent DLLs will be added to the project.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
 
-Programmatically Adding GridTree Control
+
+### Programmatically Adding GridTree Control
 
 1. Create a new WPF application.
 2. Add the following Syncfusion assemblies to the project.
@@ -113,30 +113,23 @@ Programmatically Adding GridTree Control
 * Syncfusion.Grid.Wpf.dll
 * Syncfusion.GridCommon.Wpf.dll
 * Syncfusion.Shared.Wpf.dll
-
-
-
-
-
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
-
-
-
+![](Getting-Started_images/Getting-Started_img8.png)
 
 3. Name the root grid as layoutRoot in the application’s XAML page.		
 
-
+~~~xml
 
 [XAML]
 
+
  <Grid Name="layoutRoot"/> 
 
-
+~~~
+{:.prettyprint}
 
 4. Create a new GridTreeControl in code and add it as a child of layoutRoot (Grid). Now GridTreeControl will be added to the view.
 
-
+~~~ cs
 
 [C#]
 
@@ -151,10 +144,11 @@ GridTreeControl treeGrid = new GridTreeControl();
 layoutRoot.Children.Add(treeGrid);
 
 
+~~~
+{:.prettyprint}
 
 
-
-Data Population in the GridTree Control
+### Data Population in the GridTree Control
 
 The previous section explained how to add the GridTree control to an application. This section explains how to populate data in the GridTree control. There are three approaches to populating data:
 
@@ -162,7 +156,7 @@ The previous section explained how to add the GridTree control to an application
 * By self-relational collection binding.
 * Using data-view binding.
 
-The RequestTreeItems Event
+### The RequestTreeItems Event
 
 The GridTree control can populate data on demand by handling the RequestTreeItems event. GridTreeControl will receive the source of root and child nodes through this event handler. This event is triggered when initially loading and expanding nodes.
 
@@ -170,7 +164,7 @@ To populate data using this event, follow these steps:
 
 1. Create a collection of objects to bind with the GridTree control. In this example, a collection of objects containing employee information has been created.
 
-
+~~~ cs
 
 [C#]
 
@@ -321,7 +315,8 @@ public class EmployeesCollection:List<Employee>
     }
 
 
-
+~~~
+{:.prettyprint}
 
 
 2.  The RequestTreeItems event can hook in either XAML or code.
@@ -330,7 +325,7 @@ public class EmployeesCollection:List<Employee>
 
 Hooking RequestTreeItems Event in XAML
 
-
+~~~xml
 
 [XAML] 
 
@@ -348,9 +343,12 @@ Hooking RequestTreeItems Event in XAML
 
 
 
-
+~~~
+{:.prettyprint}
 
 Hooking RequestTreeItems Event in Code
+
+~~~cs
 
 [C#] 
 
@@ -359,12 +357,13 @@ Hooking RequestTreeItems Event in Code
 this.treeGrid.RequestTreeItems+=new GridTreeRequestTreeItemsHandler(treeGrid_RequestTreeItems);
 
 
-
+~~~
+{:.prettyprint}
 
 
 3. Handle the RequestTreeItems event to pass the source to the root and child nodes dynamically.
 
-
+~~~cs
 
 [C#]
 
@@ -424,19 +423,19 @@ private void treeGrid_RequestTreeItems(object sender, GridTreeRequestTreeIte
 
 } 
 
-
+~~~
+{:.prettyprint}
 
 When the application runs, the following output will be generated.
 
 
-
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
 
 
-Samples
 
-To view samples: 
+### Samples
+
+### To view samples: 
 
 1. Select Start > Programs > Syncfusion > Essential Studio x.x.xx > Dashboard.
 2. Click Run Samples for WPF under the User Interface Edition panel.
@@ -450,7 +449,7 @@ A self-relational collection is a collection of objects in which each object has
 
 1. Create a self-relational collection of objects to bind with the GridTree control. In this example, we have created a collection of objects containing employee information.
 
-
+~~~cs
 
 [C#]
 
@@ -647,13 +646,15 @@ A self-relational collection is a collection of objects in which each object has
     }
 
 
-
+~~~
+{:.prettyprint}
 
 
 2. Bind ItemsSource of GridTreeControl and assign ChilPropertyName—these can be set in either XAML or code.
 
 Binding in XAML
 
+~~~ xml
 [XAML]
 
 
@@ -670,9 +671,11 @@ Binding in XAML
 
        ItemsSource="{Binding GTCSource}"/>
 
+~~~
+{:.prettyprint}
 
 
-
+~~~cs
 
 [C#]
 
@@ -722,7 +725,10 @@ public EmployeeDetails GTCSource
 
 Assigning Items’ Source Code 
 
+~~~
+{:.prettyprint}
 
+~~~cs
 
 [C#]
 
@@ -741,18 +747,20 @@ public MainWindow()
 }
 
 
+~~~
+{:.prettyprint}
 
 When the application runs, the following output will be generated.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img10.png)
 
 
-Samples
 
-To view samples: 
+### Samples
+
+### To view samples: 
 
 1. Select Start > Programs > Syncfusion > Essential Studio x.x.xx > Dashboard.
 2. Click Run Samples for WPF under User Interface Edition panel.
@@ -760,7 +768,7 @@ To view samples:
 4. Expand the Data Population Features item in the Sample Browser.
 5. Select Self-Relational Data Binding Demo to launch the sample.
 
-Binding a Data View to the GridTree Control
+### Binding a Data View to the GridTree Control
 
 The following steps explain how to bind a data view from a database to the GridTree control.
 
@@ -771,7 +779,7 @@ The following steps explain how to bind a data view from a database to the GridT
 
 > _Note: Before using this procedure, check that System.data.SqlServerCe.dll has been added to your project._
 
-
+~~~cs
 
 [C#] 
 
@@ -814,7 +822,8 @@ public DataTable GetDataTable()
      return null;
 
 }
-
+~~~
+{:.prettyprint}
 
 
 3. Now bind the data table as an ItemsSource of GridTreeControl in either XAML or code.
@@ -823,7 +832,7 @@ public DataTable GetDataTable()
 
 Binding in XAML
 
-
+~~~xml
 
 [XAML]
 
@@ -841,7 +850,11 @@ Binding in XAML
 
 
 
+~~~
+{:.prettyprint}
 
+
+~~~cs
 
 [C#]
 
@@ -892,12 +905,13 @@ public DataView GTCSource
 }
 
 
-
+~~~
+{:.prettyprint}
 
 
  Assigning the Items’ Source in Code 
 
-
+~~~ cs
 
 [C#]
 
@@ -950,20 +964,21 @@ public DataView GTCSource
 }
 
 
-
+~~~
+{:.prettyprint}
 
 
 When the application runs, the following output will be generated.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img11.png)
 
 
-Sample
 
-To view samples: 
+### Sample
+
+### To view samples: 
 
 1. Select Start > Programs > Syncfusion > Essential Studio x.x.xx > Dashboard.
 2. Click Run Samples for WPF under User Interface Edition panel.

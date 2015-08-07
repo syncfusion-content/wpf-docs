@@ -11,35 +11,37 @@ documentation: ug
 
 You can place tick marks along the track in a uniform manner and you can also customize the position of tick marks can be customized. 
 
-Tick Frequency 
+## Tick Frequency 
 
 The Tick Frequency property is used to define the number of ticks along the track, based on Minimum and Maximum values. 
 
-
+{%highlight xml%}
 
 [XAML]
 
 <editors:SfRangeSlider Width="200"  Minimum="0"  Maximum="100" TickFrequency="20" Value="40" />
 
+{%endhighlight%}
 
+![](Ticks_images/Ticks_img1.png)
 
-{{ '![](Ticks_images/Ticks_img1.png)' | markdownify }}
-{:.image }
 
 
 > _Note: When the SnapsTo property is set to Ticks, the TickFrequency is used to specify the interval between snap points._ 
 
-Step Frequency  
+## Step Frequency  
 
 When the SnapsTo property is set to StepValues, the StepFrequency property is used to specify the interval between snap points. 
 
-
+{%highlight xml%}
 
 [XAML]
 
 <editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0"  Maximum="100" StepFrequency="20" Value="40"/>
 
-Snaps To 
+{%endhighlight%}
+
+## Snaps To 
 
 The SnapsTo property determines whether the SfRangeSlider snaps to steps or ticks. Available options for this property are 
 
@@ -50,7 +52,7 @@ The SnapsTo property determines whether the SfRangeSlider snaps to steps or tick
 
 Default option is StepValues and StepFrequency property is used to specify the interval between snap points in this case. When the SnapsTo property is set to Ticks, the TickFrequency property is used to specify the interval between snap points.  
 
-Tick Placement 
+## Tick Placement 
 
 The TickPlacement property is used to determine where to draw tick marks in relation to the track. Available options for this property are 
 
@@ -64,11 +66,11 @@ The TickPlacement property is used to determine where to draw tick marks in rela
 
 The default option is Inline.  
 
-BottomRight  
+### BottomRight  
 
 Tick marks are placed either below the track in horizontal orientation or right of the track in vertical orientation. 
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -76,77 +78,77 @@ Tick marks are placed either below the track in horizontal orientation or right 
 
 TickFrequency="20" TickPlacement="BottomRight" Value="40"   />
 
+{%endhighlight%}
 
+![](Ticks_images/Ticks_img2.jpeg)
 
-{{ '![](Ticks_images/Ticks_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 > _Note: In Vertical Orientation, this option places the ticks to right side._ 
 
-TopLeft  
+### TopLeft  
 
 Tick marks are placed either above the track in horizontal orientation or left of the track in vertical orientation. 
 
-
+{%highlight xml%}
 
 [XAML]
 
 <editors:SfRangeSlider Width="200"  Minimum="0"   Maximum="100" TickFrequency="20" TickPlacement="TopLeft"  Value="40"   />
 
+{%endhighlight%}
 
+![](Ticks_images/Ticks_img3.jpeg)
 
-{{ '![](Ticks_images/Ticks_img3.jpeg)' | markdownify }}
-{:.image }
 
 
 > _Note: In Vertical Orientation, this option places the ticks to left side._ 
 
-Outside 
+### Outside 
 
 Tick marks are placed on both sides of the track either in horizontal or vertical orientation.  
 
-
+{%highlight xml%}
 
 [XAML]
 
 <editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" TickFrequency="20"  TickPlacement="Outside" Value="40"/>
 
+{%endhighlight%}
+
+![](Ticks_images/Ticks_img4.jpeg)
 
 
-{{ '![](Ticks_images/Ticks_img4.jpeg)' | markdownify }}
-{:.image }
 
-
-Inline 
+### Inline 
 
 Ticks are placed inside the track.  
 
-
+{%highlight xml%}
 
 [XAML]
 
 <editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" TickFrequency="20" TickPlacement="Inline" Value="40" />
 
+{%endhighlight%}
+
+![](Ticks_images/Ticks_img5.jpeg)
 
 
-{{ '![](Ticks_images/Ticks_img5.jpeg)' | markdownify }}
-{:.image }
 
-
-None 
+## None 
 
 No Tick mark appears.  
 
-
+{%highlight xml%}
 
 [XAML]
 
 <editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" TickFrequency="20" TickPlacement="None" Value="40" />
 
+{%endhighlight%}
 
+![](Ticks_images/Ticks_img6.jpeg)
 
-{{ '![](Ticks_images/Ticks_img6.jpeg)' | markdownify }}
-{:.image }
 
 

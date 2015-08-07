@@ -19,7 +19,7 @@ Tab Items are resized by using the TabItemSize property. This property comes wit
 To set the Tab Item Size mode to "ShrinkToFit", refer the code snippet.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -41,9 +41,9 @@ To set the Tab Item Size mode to "ShrinkToFit", refer the code snippet.
     </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight  %}
 [C#]
 
 
@@ -105,11 +105,11 @@ tabControlExt.TabItemSize = TabItemSizeMode.ShrinkToFit;
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt);
+{% endhighlight %}
 
 
+![](Resizing-the-Tab-Item_images/Resizing-the-Tab-Item_img1.jpeg)
 
-{{ '![](Resizing-the-Tab-Item_images/Resizing-the-Tab-Item_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 

@@ -11,23 +11,23 @@ documentation: ug
 
 Theming is the process of applying particular settings to the visual elements of a product. This feature provides the following theming options:
 
-* Office 2010 Blue
-* Office 2010 Black
-* Office 2010 Silver
-* Transparent
-* Office 2007 Blue
-* Office 2007 Black
-* Office 2007 Silver
-* Blend
-* Metro
-* Office 2003
-* Default
+ * Office 2010 Blue
+ * Office 2010 Black
+ * Office 2010 Silver
+ * Transparent
+ * Office 2007 Blue
+ * Office 2007 Black
+ * Office 2007 Silver
+ * Blend
+ * Metro
+ * Office 2003
+ * Default
 
-Use Case Scenarios
+## Use Case Scenarios
 
 This feature enables users to develop a single application and apply different looks as necessary. 
 
-Properties
+## Properties
 
 _Property Table_
 
@@ -47,15 +47,17 @@ OlapClientVisualStyle    </td></tr>
 </table>
 
 
-Sample Link
+## Sample Link
 
-A demo available in the following location:
+A demo available in the following location: <InstalledDrive>:\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OlapClient.WPF\Samples\Appearance\SkinCustomizationDemo
 
-<InstalledDrive>:\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OlapClient.WPF\Samples\Appearance\Skin Customization Demo
 
-## Adding Theming to an Application 
+### Adding Theming to an Application. 
 
-The following code samples demonstrate how theming is added to the OlapClient control.
+
+  The following code samples demonstrate how theming is added to the OlapClient control.
+
+{% highlight xml %} 
 
 [XAML]
 
@@ -65,9 +67,9 @@ The following code samples demonstrate how theming is added to the OlapClient co
 
 
 
+{% endhighlight %}
 
-
-
+{% highlight C# %}  
 
 [C#]
 
@@ -75,6 +77,7 @@ The following code samples demonstrate how theming is added to the OlapClient co
 
        this.olapClient.VisualStyle = OlapClientVisualStyle.Transparent;
 
+{% endhighlight %} 
 
 
 

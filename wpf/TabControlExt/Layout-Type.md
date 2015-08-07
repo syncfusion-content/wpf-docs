@@ -20,7 +20,7 @@ You can set the layout type for the TabControlExt control by using the TabItemLa
 Here is the code snippet to set the layout type as "MultiLine".
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -46,9 +46,9 @@ Here is the code snippet to set the layout type as "MultiLine".
     </syncfusion:TabItemExt>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight  %}
 [C#]
 
 
@@ -92,23 +92,23 @@ tabControlExt.TabItemLayout = TabItemLayoutType.MultiLine;
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt);
+{% endhighlight %}
+
+
+![](Layout-Type_images/Layout-Type_img1.jpeg)
 
 
 
-{{ '![](Layout-Type_images/Layout-Type_img1.jpeg)' | markdownify }}
-{:.image }
 
 
-
-
-TabItemLayoutChanged Event
+## TabItemLayoutChanged Event
 
 This event is triggered when the TabItemLayout property is changed.
 
 The following code snippet illustrates handling the TabItemLayoutChanged event.
 
 
-
+{% highlight  %}
 [C#]
 
 
@@ -136,7 +136,7 @@ tabControlExt.TabScrollButtonVisibility = TabScrollButtonVisibility.Hidden;
 }
 
 }
-
+{% endhighlight %}
 
 
 In the above example, when the TabItemLayoutType property is set to MultiLine, the Tab Scroll button is hidden, as it is no longer needed to view the contents.

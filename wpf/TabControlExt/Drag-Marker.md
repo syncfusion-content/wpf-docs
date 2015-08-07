@@ -14,7 +14,7 @@ You can set the color for the Drag Marker by using the DragMarkerColor property.
 Use the following code snippet to set the color for the Drag Marker.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -30,9 +30,9 @@ Use the following code snippet to set the color for the Drag Marker.
     <syncfusion:TabItemExt Name="tabItemExt1" Header="TabItemExt1"/>
 
 </syncfusion:TabControlExt>
+{% endhighlight %}
 
-
-
+{% highlight  %}
 [C#]
 
 
@@ -76,6 +76,6 @@ tabControlExt.DragMarkerColor = Brushes.Red;
 //Adding control to the StackPanel
 
 stackPanel.Children.Add(tabControlExt); 
-
+{% endhighlight %}
 
 

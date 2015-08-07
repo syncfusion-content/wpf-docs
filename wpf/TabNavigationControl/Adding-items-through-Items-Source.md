@@ -17,10 +17,10 @@ Business object collections can be easily bound to the Tab Navigation control us
 
 
 
-Observable Collection 
+## Observable Collection 
 
 
-
+{% highlight xml %}
 XAML
 
 
@@ -28,9 +28,9 @@ XAML
 <syncfusion:TabNavigationControl TransitionEffect="Slide" ItemsSource="{Binding MyCollection}">
 
 </syncfusion:TabNavigationControl>
+{% endhighlight %}
 
-
-
+{% highlight  %}
 C#
 
 
@@ -96,9 +96,9 @@ public static readonly DependencyProperty MyCollectionProperty =
 DependencyProperty.Register("MyCollection", typeof(ObservableCollection<TabNavigationItem>), typeof(MainPage), new PropertyMetadata(null));
 
 }
+{% endhighlight %}
 
-
-
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -152,15 +152,15 @@ Partial Public Class MainPage
 
 
     End Class
+{% endhighlight %}
 
 
 
 
-
-ILIST Binding
-
+## ILIST Binding
 
 
+{% highlight xml %}
 XAML
 
 
@@ -170,9 +170,9 @@ XAML
 ItemsSource="{Binding MyCollection}">
 
 </syncfusion:TabNavigationControl>
+{% endhighlight %}
 
-
-
+{% highlight  %}
 C#
 
 public partial class MainPage : UserControl
@@ -222,11 +222,11 @@ public partial class MainPage : UserControl
 
 
     }
+{% endhighlight %}
 
 
 
-
-
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -280,21 +280,20 @@ Partial Public Class MainPage
 
 
     End Class
+{% endhighlight %}
 
 
 
 
 
 
-
-XML binding 
+## XML binding 
 
 To bind XML data to a TabNavigation control, convert the XML data to a collection like Observable collection or ILIST collection, and then bind the collection by using the ItemsSource property of the TabNavigation control.
 
 
 
-{{ '![](Adding-items-through-Items-Source_images/Adding-items-through-Items-Source_img1.png)' | markdownify }}
-{:.image }
+![](Adding-items-through-Items-Source_images/Adding-items-through-Items-Source_img1.png)
 
 
 

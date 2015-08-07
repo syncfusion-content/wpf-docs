@@ -13,7 +13,7 @@ Spell Checker can also look into the specified user dictionary for spell checkin
 
 
 
-Methods
+### Methods
 
 
 
@@ -22,9 +22,9 @@ _Methods table_
 <table>
 <tr>
 <td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+{{ '**Method**' | markdownify }}</td><td>
+{{ '**Prototype**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 SetUserDictionary</td><td>
@@ -38,23 +38,24 @@ The UserDictionary will be taken into account only if we pass true to this metho
 </table>
 
 
-Setting User Dictionary  
+### Setting User Dictionary  
 
 Create a SpellChecker instance and set the user dictionary as given in the below code.
 
-
+{%highlight c#%}
 
 [C#]
 
 SpellChecker SpellCheck = new SpellChecker();
 
-SpellCheck. 	SetUserDictionary(“D:\custom”);
+SpellCheck.SetUserDictionary(“D:\custom”);
 
-SpellCheck. 	SetIncludeUserDiction-aryInSuggestions(true);
+SpellCheck.SetIncludeUserDiction-aryInSuggestions(true);
+
+{%endhighlight%}
 
 
-
-Sample Link
+### Sample Link
 
 To access the sample link:
 

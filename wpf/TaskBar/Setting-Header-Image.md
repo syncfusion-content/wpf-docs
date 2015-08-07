@@ -11,6 +11,7 @@ documentation: ug
 
 You can set a custom header image for the TaskBarItem. Use the following code snippet to set an image for the header.
 
+{% highlight xml %}
 [XAML]
 
 
@@ -54,11 +55,11 @@ You can set a custom header image for the TaskBarItem. Use the following code sn
     </syncfusion:TaskBarItem>
 
 </syncfusion:TaskBar>
+{% endhighlight %}
 
 
+![](Setting-Header-Image_images/Setting-Header-Image_img1.jpeg)
 
-{{ '![](Setting-Header-Image_images/Setting-Header-Image_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 

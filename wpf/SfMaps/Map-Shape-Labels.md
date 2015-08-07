@@ -26,6 +26,7 @@ string</td><td>
 Gets or sets the field name in the database (.dbf) file.</td></tr>
 </table>
 
+{% highlight xml %}
 
 [XAML]
 
@@ -45,11 +46,13 @@ Gets or sets the field name in the database (.dbf) file.</td></tr>
 
     </syncfusion:SfMap>  
 
-
+{% endhighlight %}
 
 
 
 The labels can also be customized by modifying the ItemsTemplate of ShapeFileLayer. The labels can be accessed by using DBFData as follows:
+
+{% highlight xml %}
 
 [XAML]
 
@@ -85,12 +88,12 @@ The labels can also be customized by modifying the ItemsTemplate of ShapeFileLay
 
     </syncfusion:SfMap> 
 
+{% endhighlight %}
 
 
 
+![](Map-Shape-Labels_images/Map-Shape-Labels_img1.png)
 
-{{ '![](Map-Shape-Labels_images/Map-Shape-Labels_img1.png)' | markdownify }}
-{:.image }
 
 
 _Map with Labels_

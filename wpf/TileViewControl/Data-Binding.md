@@ -18,28 +18,29 @@ The TileViewControl supports binding to objects. The following code example illu
 1. Create a class that act as a model for TileViewItem.
 
 
+   ~~~ cs
+     [C#]
 
-[C#]
+      public class Model
 
-public class Model
-
-    {
+      {
 
         public string Header { get; set; }
 
         public string Content { get; set; }
 
-    }
+      }
+   ~~~
+   {:.prettyprint}
 
 
-
-1. Create a ViewModel class and initialize the items as follows:
-
+2. Create a ViewModel class and initialize the items as follows:
 
 
-[C#]
+   ~~~ cs
+     [C#]
 
-public class ViewModel
+     public class ViewModel
 
     {
 
@@ -80,32 +81,34 @@ public class ViewModel
         }
 
     }
+   ~~~
+   {:.prettyprint}
 
 
 
 
-
-2. Create a _ViewModel_ instance and use it as _DataContext_ for the root window.
-
+3. Create a _ViewModel_ instance and use it as _DataContext_ for the root window.
 
 
-[XAML]
+   ~~~ xml
+     [XAML]
 
-<Window.DataContext>
+     <Window.DataContext>
 
-   <local:ViewModel/>
+      <local:ViewModel/>
 
-</Window.DataContext>
-
-
-
-3. Configure the _ItemsSource_ and _ItemContainerStyle_ of the TileViewControl.
-
+     </Window.DataContext>
+   ~~~
+   {:.prettyprint}
 
 
-[XAML]
+4. Configure the _ItemsSource_ and _ItemContainerStyle_ of the TileViewControl.
 
-  <syncfusion:TileViewControl ItemsSource="{Binding TileItems}" >
+
+   ~~~ xml
+     [XAML]
+
+     <syncfusion:TileViewControl ItemsSource="{Binding TileItems}" >
 
             <syncfusion:TileViewControl.ItemContainerStyle>
 
@@ -121,7 +124,8 @@ public class ViewModel
 
         </syncfusion:TileViewControl>
 
-
+   ~~~
+   {:.prettyprint}
 
 
 
@@ -129,8 +133,8 @@ This creates the following TileViewControl.
 
 
 
-{{ '![](Data-Binding_images/Data-Binding_img1.png)' | markdownify }}
-{:.image }
+![](Data-Binding_images/Data-Binding_img1.png)
+
 
 
 
@@ -142,54 +146,48 @@ An XML file can also be used as _ItemsSource_ for the TileViewControl. The follo
 1. Create an XML file with the following details and name it as Data.xml.
 
 
+   ~~~ xml
+     [XML]
 
-[XML]
+     <?xml version="1.0" encoding="utf-8" ?>
 
-<?xml version="1.0" encoding="utf-8" ?>
-
-<Books>
-
-
-
-  <Book Name="Programming C# 4.0" Description="Learn C# fundamentals, such as variables, flow control, loops, and methods"/>
-
-  <Book Name="Programming WPF" Description="A tutorial on XAML, the new HTML-like markup language for declaring Windows UI"/>
-
-  <Book Name="Essential WPF" Description="Visuals and media, including 2D, 3D, video, and animation"/>
-
-  <Book Name="WPF Unleashed" Description="Examines the WPF feature areas in incredible depth: controls, layout, resources, data binding, styling, graphics, animation, and more"/>
+     <Books>
 
 
 
+     <Book Name="Programming C# 4.0" Description="Learn C# fundamentals, such as variables, flow control, loops, and methods"/>
 
+     <Book Name="Programming WPF" Description="A tutorial on XAML, the new HTML-like markup language for declaring Windows UI"/>
 
-</Books>
+     <Book Name="Essential WPF" Description="Visuals and media, including 2D, 3D, video, and animation"/>
 
+     <Book Name="WPF Unleashed" Description="Examines the WPF feature areas in incredible depth: controls, layout, resources, data binding, styling, graphics, animation, and more"/>
 
-
-
-
+     </Books>
+   ~~~
+   {:.prettyprint}
 
 
 2. Add _XmlDataProvider_ for the above XML document.
 
 
+   ~~~ xml
+     [XAML]
 
-[XAML]
+     <XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Books"/> 
 
-<XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Books"/> 
-
-
+   ~~~
+   {:.prettyprint}
 
 
 
 3. Set _ItemsSource_ property for the TileViewControl as follows.
 
 
+   ~~~ xml
+     [XAML]
 
-[XAML]
-
-<syncfusion:TileViewControl ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   >
+     <syncfusion:TileViewControl ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   >
 
             <syncfusion:TileViewControl.ItemContainerStyle>
 
@@ -215,8 +213,9 @@ An XML file can also be used as _ItemsSource_ for the TileViewControl. The follo
 
             </syncfusion:TileViewControl.ItemContainerStyle>
 
-</syncfusion:TileViewControl>
-
+     </syncfusion:TileViewControl>
+   ~~~
+   {:.prettyprint}
 
 
 
@@ -225,8 +224,8 @@ This will create the following TileViewControl.
 
 
 
-{{ '![](Data-Binding_images/Data-Binding_img2.png)' | markdownify }}
-{:.image }
+![](Data-Binding_images/Data-Binding_img2.png)
+
 
 
 

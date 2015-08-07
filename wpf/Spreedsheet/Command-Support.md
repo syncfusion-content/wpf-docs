@@ -18,11 +18,11 @@ _Commands Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 BoldCommand</td><td>
@@ -220,12 +220,11 @@ _Parameterized Commands_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Parameter</td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderCommand</td><td>

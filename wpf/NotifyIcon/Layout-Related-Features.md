@@ -20,8 +20,8 @@ _Property table_
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 VisualStyle</td><td>
@@ -31,6 +31,7 @@ Sets the visual style for the NotifyIcon control. The options provided are as fo
 
 The below code can be used to set various visual style.
 
+{%highlight c#%}
 [C#]
 
 
@@ -51,34 +52,34 @@ SkinStorage.VisualStyle(notifyIcon, Blend");
 
 SkinStorage.VisualStyle(notifyIcon, "Office2007Silver");
 
+{%endhighlight%}
 
+![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)
 
-{{ '![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 _NotifyIcon with "Office2007Blue" Visual Style_
 
-{{ '![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)' | markdownify }}
-{:.image }
+![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
+
 
 
 _NotifyIcon with "Blend" Visual Style_
 
-{{ '![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)' | markdownify }}
-{:.image }
+![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)
+
 
 
 _NotifyIcon with "Office2007Silver" Visual Style_
 
-{{ '![](Layout-Related-Features_images/Layout-Related-Features_img4.png)' | markdownify }}
-{:.image }
+![](Layout-Related-Features_images/Layout-Related-Features_img4.png)
+
 
 
 _NotifyIcon with "Metro" Visual Style_
 
-{{ '![C:/Users/ramalakshmim/Desktop/ugss/notifyicon.png](Layout-Related-Features_images/Layout-Related-Features_img5.png)' | markdownify }}
-{:.image }
+![](Layout-Related-Features_images/Layout-Related-Features_img5.png)
+
 
 
 _NotifyIcon with "Transparent" Visual Style_
@@ -87,18 +88,23 @@ _NotifyIcon with "Transparent" Visual Style_
 
 You can set the background and foreground for the BalloonTipHeader by using the HeaderBackground and HeaderForeground properties, respectively. Use the code below to set these properties.
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify Icon is Available"  BalloonTipTitle="Default NotifyIcon"  HeaderBackground="Blue" HeaderForeground="Red" ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/></td></tr>
-<tr>
-<td>
-[C#]notifyIcon.HeaderForeground = Brushes.Red;notifyIcon.HeaderBackground = Brushes.Blue;</td></tr>
-</table>
+
+{%highlight xml%}
+[XAML]
+<syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify 
+Icon is Available"  BalloonTipTitle="Default NotifyIcon"  HeaderBackground="Blue" HeaderForeground="Red" 
+ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/>
+{%endhighlight%}
+
+{%highlight c#%}
+[C#]
+notifyIcon.HeaderForeground = Brushes.Red;notifyIcon.HeaderBackground = Brushes.Blue;
+{%endhighlight%}
 
 
-{{ '![](Layout-Related-Features_images/Layout-Related-Features_img6.jpeg)' | markdownify }}
-{:.image }
+
+![](Layout-Related-Features_images/Layout-Related-Features_img6.jpeg)
+
 
 
 _HeaderForeground = "Red"; HeaderBackground = "Blue"_

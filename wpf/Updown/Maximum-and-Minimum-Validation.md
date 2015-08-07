@@ -17,15 +17,19 @@ On enabling the MaxValueOnExceedMaxDigit property and setting the MaxValidation 
 
 Similarly, on enabling the MinValueOnExceedMinDigit property and setting the MinValidation to the OnKeyPress, the MinValue is assigned to the Value property when the value is lesser than the MinValue. However, when the MinValueOnExceedMinDigit property is disabled, you cannot enter text in the UpDown control should the value be lesser than MinValue.
 
-Use of MaxValidation and MinValidation
+### Use of MaxValidation and MinValidation
 
 The MaxValidation and MinValidation can be set for the UpDown control as shown in the following code.
+
+{%highlight xml%}
 
  [XAML]
 
 <syncfusion:UpDown Name="upDown" MaxValue="100" MinValue="0" MaxValidation="OnLostFocus"MinValidation="OnKeyPress" MaxValueOnExceedMaxDigit="True" MinValueOnExceedMinDigit="True"/>
 
+{%endhighlight%}
 
+{%highlight c#%}
 
 [C#]
 
@@ -43,7 +47,7 @@ upDown.MaxValueOnExceedMaxDigit = true;
 
 upDown.MinValueOnExceedMinDigit = true;
 
-
+{%endhighlight%}
 
 Tables for Properties, and Events
 
@@ -52,11 +56,11 @@ _MaxValidation and MinValidation Properties_
 <table>
 <tr>
 <td>
-Properties</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td><td>
-Reference Links</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 MaxValidation</td><td>
@@ -93,11 +97,11 @@ _MaxValidation and MinValidation event_
 <table>
 <tr>
 <th>
-Events</th><th>
-Description</th><th>
-Arguments</th><th>
-Type</th><th>
-Reference Links</th></tr>
+{{ '**Events**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Arguments**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <th>
 MinValidationChanged</th><th>

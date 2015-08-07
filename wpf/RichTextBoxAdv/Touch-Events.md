@@ -21,7 +21,7 @@ Selection: With the touch manipulation event, we can interpret the multi-touch i
 
 
 
-Properties
+## Properties
 
 
 

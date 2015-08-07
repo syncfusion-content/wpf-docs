@@ -11,19 +11,19 @@ documentation: ug
 
 MenuAdv allows users to scroll through the submenu items so that all the items of the submenu are visible even if the submenu crosses the vertical boundary. The Scroll support can be enabled by setting the IsScrollEnabled property to true. If the IsScrollEnabled property is set to false, users will not be able to scroll through the submenu items and the items that cross the vertical boundary will not be visible.
 
-{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-Menu/scroll1.png](Scroll-Support_images/Scroll-Support_img1.png)' | markdownify }}
-{:.image }
+![](Scroll-Support_images/Scroll-Support_img1.png)}
 
 
-Use Case Scenarios
+
+## Use Case Scenarios
 
 MenuAdv will be very useful in the case of adding more number of items to the single MenuItemAdv and the size of the submenu crosses the vertical boundary.
 
-Using the Scroll Support in an Application
+## Using the Scroll Support in an Application
 
 If the value of the IsScrollEnabled property is set to true, users can scroll through the submenu items by using the TopScrollButton, BottomScrollButton, and  mouse wheel. If the value of the IsScrollEnabled property is set to false, users will not be able to scroll through the submenu items.
 
-Properties
+## Properties
 
 The property for the Scroll support is described in the following tabulation:
 
@@ -45,7 +45,7 @@ bool(true)</td></tr>
 </table>
 
 
-Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

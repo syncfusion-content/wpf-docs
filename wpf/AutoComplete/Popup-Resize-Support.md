@@ -11,21 +11,25 @@ documentation: ug
 
 AutoComplete allows you to resize the drop-down list popup using the CanResizePopup property. If this property is set as True the thumb will be shown in the right bottom corner of the drop-down list which adjusts the height and the width of the popup at runtime. If this property is set as False, the visibility of the thumb will be collapsed and you will not be able to resize the popup at runtime. 
 
-Adding Popup Resizing Support to an Application 
+## Adding Popup Resizing Support to an Application 
 
 You can use CanResizePopup property to attain this functionality by setting the value as True.
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:AutoComplete x:Name="AutoComplete1" CanResizePopup ="true" /></td></tr>
-<tr>
-<td>
-[C#]AutoComplete autoComplete1 = new AutoComplete();autoComplete1. CanResizePopup = true;</td></tr>
-</table>
+{% highlight xml %}
+
+[XAML]
+<syncfusion:AutoComplete x:Name="AutoComplete1" CanResizePopup ="true" />
+{% endhighlight %}
+
+{% highlight cs %}
+
+[C#]
+AutoComplete autoComplete1 = new AutoComplete();
+autoComplete1. CanResizePopup = true;
+{% endhighlight %}
 
 
-Properties
+## Properties
 
   _Properties Table for Popup Resize_
 
@@ -47,7 +51,7 @@ bool</td><td>
 </table>
 
 
-Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
 

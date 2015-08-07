@@ -7,17 +7,21 @@ control: Digital Gauge
 documentation: ug
 ---
 
-## Digital Characters
+# Digital Characters
 
 The Digital Characters in the Digital Gauge can be viewed in different types of segments. The digital characters are set to the Digital Gauge by using the Value property of type string.
 
 
 
+{% highlight xml %}
+
 [XAML]
 
    <syncfusion:SfDigitalGauge Value="GAUGE" />    
+{% endhighlight %}
 
 
+{% highlight C# %}
 
 [C#]
 
@@ -27,27 +31,31 @@ The Digital Characters in the Digital Gauge can be viewed in different types of 
 
             this.Grid.Children.Add(digitalgauge);
 
+{% endhighlight %}
 
 
 
+## Screenshot:
 
-Screenshot:
-
-{{ '![](Digital-Characters_images/Digital-Characters_img1.png)' | markdownify }}
-{:.image }
+![](Digital-Characters_images/Digital-Characters_img1.png)
 
 
-7-Segments
+
+## 7-Segments
 
 The digital characters set with the value property of the Digital Gauge are displayed by default 7-segments. Rather than using the alphabets, these are mainly used to display numbers. The type of segments can be set by using the CharacterType property.
 
 
+{% highlight xml %}
 
 [XAML]
 
 <syncfusion:SfDigitalGauge Value="12345"  CharacterType="SegmentSeven" />
 
+{% endhighlight %}
 
+
+{% highlight C# %}
 
 [C#]
 
@@ -58,30 +66,32 @@ The digital characters set with the value property of the Digital Gauge are disp
             digitalgauge.CharacterType = CharacterType.SegmentSeven;
 
             this.Grid.Children.Add(digitalgauge);
+{% endhighlight %}
+
+
+### Screenshot:
 
 
 
-Screenshot:
-
-
-
-{{ '![](Digital-Characters_images/Digital-Characters_img2.png)' | markdownify }}
-{:.image }
+![](Digital-Characters_images/Digital-Characters_img2.png)
 
 
 
 
-14-Segments
+
+## 14-Segments
 
 The digital characters set with the value property of the Digital Gauge are displayed by 14 segments. It is used to display both alphabets and numbers. 
 
 
+{% highlight xml %}
 
 [XAML]  
 
 <syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentFourteen" />
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -92,30 +102,32 @@ The digital characters set with the value property of the Digital Gauge are disp
             digitalgauge.CharacterType = CharacterType.SegmentFourteen;
 
             this.Grid.Children.Add(digitalgauge);
+{% endhighlight %}
 
 
 
 
-
-Screenshot:
-
+### Screenshot:
 
 
-{{ '![](Digital-Characters_images/Digital-Characters_img3.png)' | markdownify }}
-{:.image }
+
+![](Digital-Characters_images/Digital-Characters_img3.png)
 
 
-16-Segments
+
+## 16-Segments
 
 The digital characters set with the value property of the digital gauge are displayed by 16 segments. It is used to display both alphabets and numbers. 
 
 
+{% highlight xml %}
 
 [XAML]
 
   <syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentSixteen" /> 
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -126,31 +138,33 @@ The digital characters set with the value property of the digital gauge are disp
             digitalgauge.CharacterType = CharacterType.SegmentSixteen;
 
             this.Grid.Children.Add(digitalgauge);
+{% endhighlight %}
 
 
 
 
-
-Screenshot:
-
+### Screenshot:
 
 
-{{ '![](Digital-Characters_images/Digital-Characters_img4.png)' | markdownify }}
-{:.image }
+
+![](Digital-Characters_images/Digital-Characters_img4.png)
 
 
-8*8 Dot Matrix Segments
+
+## 8*8 Dot Matrix Segments
 
 The digital characters set with the value property of the Digital Gauge are displayed by eight cross eight dot matrix segments. It is used to display special characters along with the alphabets and numbers. 
 
 
+{% highlight xml %}
 
 [XAML]
 
 <syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="EightCrossEightDotMatrix" />
+{% endhighlight %}
 
 
-
+{% highlight xml %}
 [XAML]  
 
             SfDigitalGauge digitalgauge = new SfDigitalGauge();
@@ -160,16 +174,16 @@ The digital characters set with the value property of the Digital Gauge are disp
             digitalgauge.CharacterType = CharacterType.EightCrossEightDotMatrix;
 
             this.Grid.Children.Add(digitalgauge);
+{% endhighlight %}
 
 
 
 
-
-Screenshot:
-
+### Screenshot:
 
 
-{{ '![](Digital-Characters_images/Digital-Characters_img5.png)' | markdownify }}
-{:.image }
+
+![](Digital-Characters_images/Digital-Characters_img5.png)
+
 
 

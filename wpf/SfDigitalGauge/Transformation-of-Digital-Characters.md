@@ -7,20 +7,21 @@ control: Digital Gauge
 documentation: ug
 ---
 
-## Transformation of Digital Characters
+# Transformation of Digital Characters
 
 The digital characters in the Digital Gauge can be transformed by setting certain properties. Two kinds of transformations are done by using this property. They are:
 
 * Scaling
 * Skewing
 
-Scaling
+## Scaling
 
 The value of the digital characters is scaled by changing its height and width. It is achieved by setting the CharacterHeight and CharacterWidth property of Digital Gauge.
 
-CharacterHeight
+### CharacterHeight
 
 
+{% highlight xml %}
 
 [XAML]
 
@@ -29,8 +30,9 @@ CharacterHeight
 <syncfusion:SfDigitalGauge Value="SYNCFUSION"  CharacterHeight="70"
 
                                    CharacterType="SegmentFourteen" />
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -43,29 +45,33 @@ CharacterHeight
             digitalgauge.CharacterType = CharacterType.SegmentFourteen;
 
             this.Grid.Children.Add(digitalgauge);
+{% endhighlight %}
 
 
 
 
-
-Screenshot:
-
+#### Screenshot:
 
 
-{{ '![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img1.png)' | markdownify }}
-{:.image }
+
+![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img1.png)
 
 
-CharacterWidth
+
+### CharacterWidth
 
 
+
+{% highlight xml %}
 
 [XAML]
 
 <syncfusion:SfDigitalGauge  Value="SYNCFUSION"  CharacterWidth="60"
 
                                    CharacterType="SegmentFourteen" />
+{% endhighlight %}
 
+{% highlight C# %}
 
 
 [C#]
@@ -79,34 +85,37 @@ CharacterWidth
             digitalgauge.CharacterType = CharacterType.SegmentFourteen;
 
             this.Grid.Children.Add(digitalgauge);
+{% endhighlight %}
 
 
-
-Screenshot:
+#### Screenshot:
 
 
 
 {{ '![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img2.png)' | markdownify }}
-{:.image }
 
 
 
 
-Skewing
+
+## Skewing
 
 The Digital Gauge also performs skew transformation for the digital characters. It can be done on both x-axis and y-axis by using SkewAngleX and SkewAngleY properties respectively.
 
-SkewAngleX
+### SkewAngleX
 
 
+{% highlight xml %}
 
 [XAML]
 
       <syncfusion:SfDigitalGauge  Value="SYNCFUSION"  SkewAngleX="35"
 
                                    CharacterType="SegmentFourteen" />
+{% endhighlight %}
 
 
+{% highlight C# %}
 
 [C#]
 
@@ -119,22 +128,26 @@ SkewAngleX
             digitalgauge.CharacterType = CharacterType.SegmentFourteen;
 
             this.Grid.Children.Add(digitalgauge);
+			
+{% endhighlight %}
 
 
 
-Screenshot:
+#### Screenshot:
 
 
 
-{{ '![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img3.png)' | markdownify }}
-{:.image }
+![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img3.png)
 
 
 
 
-SkewAngleY
+
+### SkewAngleY
 
 
+
+{% highlight xml %}
 
 [XAML]
 
@@ -142,7 +155,10 @@ SkewAngleY
 
                                    CharacterType="SegmentFourteen" />   
 
+{% endhighlight %}
 
+
+{% highlight C# %}
 
 [C#]
 
@@ -155,14 +171,14 @@ SkewAngleY
             digitalgauge.CharacterType = CharacterType.SegmentFourteen;
 
             this.Grid.Children.Add(digitalgauge);
+{% endhighlight %}
+
+
+#### Screenshot:
 
 
 
-Screenshot:
+![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img4.png)
 
-
-
-{{ '![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img4.png)' | markdownify }}
-{:.image }
 
 

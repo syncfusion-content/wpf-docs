@@ -13,16 +13,16 @@ You can change the orientation of the minimized items by setting the MinimizedI
 
 For Example: When the MinimizedOrientation property is set to _Left_, the minimized items are placed on the left side of the maximized item and so on.
 
-Adding Orientation for Minimizing Items to an Application 
+## Adding Orientation for Minimizing Items to an Application 
 
 The orientation for minimizing items can be added to an application by using either XAML or C# code.
 
-Adding through XAML
+## Adding through XAML
 
 The following code example illustrates how to add the Orientation for Minimizing Items to an application through XAML.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -57,16 +57,16 @@ The following code example illustrates how to add the Orientation for Minimizing
 
 </syncfusion:TileViewControl>
 
+{% endhighlight %}
 
 
 
-
-Adding through C#
+## Adding through C#
 
 The following code example illustrates how to add the Orientation for Minimizing Items to an application through C#.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -97,30 +97,29 @@ The following code example illustrates how to add the Orientation for Minimizing
 
    this.LayoutRoot.Children.Add(Tile);
 
+{% endhighlight %}
+
+
+
+
+![](Setting-Orientation-for-Minimizing-Items_images/Setting-Orientation-for-Minimizing-Items_img1.png)
 
 
 
 
 
-
-{{ '![](Setting-Orientation-for-Minimizing-Items_images/Setting-Orientation-for-Minimizing-Items_img1.png)' | markdownify }}
-{:.image }
-
-
-
-
-Properties
+## Properties
 
 _MinimizedItemTemplate / MaximizedItemTemplate Properties Table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td><td>
+{{ '**Reference links**' | markdownify }} </td></tr>
 <tr>
 <td>
 MinimizedItemsOrientation </td><td>
@@ -131,18 +130,18 @@ MinimizedItemsOrientation.Right</td><td>
 </table>
 
 
-Events
+## Events
 
 _MinimizedItemsOrientationChanged Table_
 
 <table>
 <tr>
-<th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th><th>
-Reference links </th></tr>
+<td>
+{{ '**Event**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Arguments**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Reference links**' | markdownify }} </td></td>
 <tr>
 <th>
 MinimizedItemsOrientationChanged</th><th>
@@ -153,7 +152,7 @@ The event gets fired when the minimized items orientation of the TileViewItems i
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

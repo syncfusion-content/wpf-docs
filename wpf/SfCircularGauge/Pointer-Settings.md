@@ -9,19 +9,21 @@ documentation: ug
 
 # Pointer Settings
 
-Pointers
+## Pointers
 
 You can add multiple pointers to the gauge to point at multiple values on the same scale. This is useful for showing a low and a high value at the same time. The value of the pointer is set by using the Value property. There are three types of pointers. You can choose a pointer by using the PointerType property. Movement of the pointer can be animated by enabling the EnableAnimation property.
 
 
 
-Needle Pointer
+## Needle Pointer
 
 A needle pointer contains two parts, the needle and the pointer cap. The needle length is controlled by the NeedleLengthFactor property. The NeedleLengthFactor property’s minimum and maximum bounds are 0 and 1. The needle’s UI is customized by using NeedlePointerStroke and NeedlePointerStrokeThickness properties. You can modify the pointer cap’s size by changing the PointerCapDiameter property. Needle Pointer can be made visible or collapsed by using the NeedlePointerVisibility property.
 
 
 
-Code Example:
+### Code Example:
+
+{% highlight xml %}
 
 [XAML]
 
@@ -58,8 +60,9 @@ Code Example:
    </syncfusion:SfCircularGauge.MainScale>
 
 </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -72,16 +75,16 @@ Code Example:
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
+
+
+### Screenshot:
+
+![](Pointer-Settings_images/Pointer-Settings_img1.png)
 
 
 
-Screenshot:
-
-{{ '![](Pointer-Settings_images/Pointer-Settings_img1.png)' | markdownify }}
-{:.image }
-
-
-NeedlePointer Customization
+## NeedlePointer Customization
 
 NeedlePointer can be customized by using the NeedlePointerType property of Pointer and it is having the following options.
 
@@ -92,7 +95,10 @@ NeedlePointer can be customized by using the NeedlePointerType property of Point
 
 
 
-Code Example:
+### Code Example:
+
+
+{% highlight xml %}
 
 [XAML]
 
@@ -134,9 +140,10 @@ Code Example:
 
         </syncfusion:SfCircularGauge>
 
+{% endhighlight %}
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -172,25 +179,27 @@ Code Example:
 
             this.Grid.Children.Add(circularGauge);
 
+{% endhighlight %}
+
+
+
+### Screenshot:
+
+![](Pointer-Settings_images/Pointer-Settings_img2.png)
 
 
 
 
-Screenshot:
 
-{{ '![](Pointer-Settings_images/Pointer-Settings_img2.png)' | markdownify }}
-{:.image }
-
-
-
-
-Range Pointer
+## Range Pointer
 
 Range Pointer is an accenting line or shaded background range that is placed on a gauge to mark values. The range pointer’s UI is customized by using the RangePointerStroke and RangePointerStrokeThickness properties. RangePointerVisibility property is used to set the visibility of the Range Pointer.
 
 
 
-Code Example:
+### Code Example:
+
+{% highlight xml %}
 
 [XAML]
 
@@ -223,8 +232,9 @@ Code Example:
        </syncfusion:SfCircularGauge.MainScale>
 
    </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -241,24 +251,23 @@ Code Example:
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
 
 
 
 
-
-Screenshot:
+### Screenshot:
 
 <table>
 <tr>
 <td>
-![](Pointer-Settings_images/Pointer-Settings_img3.png)
-{:.image }
+{{ '![](Pointer-Settings_images/Pointer-Settings_img3.png)' | markdownify }}
 </td></tr>
 <tr>
 <td>
 {{ '_Circular Scale with Range Pointer_' | markdownify }}</td></tr>
 </table>
-RangePointerPosition
+## RangePointerPosition
 
 The RangePointer in the scale can be placed inside the scale or outside the scale by selecting one of the options available in the RangePointerPosition property. These options are:
 
@@ -267,8 +276,10 @@ The RangePointer in the scale can be placed inside the scale or outside the scal
 
 
 
-Code Example:
 
+### Code Example:
+
+{% highlight xml %}
 [XAML]
 
             <syncfusion:SfCircularGauge x:Name="gauge">
@@ -295,9 +306,10 @@ Code Example:
 
             </syncfusion:SfCircularGauge>
 
+{% endhighlight %}
 
 
-
+{% highlight C# %}
 
 [C#]
 
@@ -312,27 +324,28 @@ Code Example:
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
 
 
 
 
+### Screenshot:
 
-Screenshot:
-
-{{ '![](Pointer-Settings_images/Pointer-Settings_img4.png)' | markdownify }}
-{:.image }
+![](Pointer-Settings_images/Pointer-Settings_img4.png)
 
 
 
 
-Symbol Pointer 
+## Symbol Pointer 
 
 In a Symbol Pointer, the value is pointed out by a symbol on the scale. You can modify the symbol pointer’s size by changing the SymbolPointerDiameter property. Its stroke is changed by using the SymbolPointerStroke property. The visibility of the Symbol Pointer can be set by using the SymbolPointerVisibility Property.
 
 
 
-Code Example:
 
+### Code Example:
+
+{% highlight xml %}
 [XAML]
 
 
@@ -364,10 +377,10 @@ Code Example:
    </syncfusion:SfCircularGauge.MainScale>
 
 </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
 
-
-
+{% highlight C# %}
 
 [C#]
 
@@ -383,25 +396,28 @@ Code Example:
 
             this.Grid.Children.Add(circularGauge);
 
+{% endhighlight %}
 
 
 
 
-Screenshot:
+### Screenshot:
 
-{{ '![](Pointer-Settings_images/Pointer-Settings_img5.png)' | markdownify }}
-{:.image }
-
+![](Pointer-Settings_images/Pointer-Settings_img5.png)
 
 
 
-Symbol pointer Customization
+
+## Symbol pointer Customization
 
 One advantage to the symbol pointer is its customizability. You can change the height, width, and appearance of the symbol pointer.
 
 Symbol is an enum property that provides symbol options for the symbol pointer that contains several shapes like rectangle, ellipse, and triangle. The SymbolPointerHeight property is used to set the height of the symbol pointer. The value is given as a double value. The SymbolPointerWidth property is used to set the width of the symbol pointer.
 
-Code Example:
+### Code Example:
+
+
+{% highlight xml %}
 
 [XAML]
 
@@ -434,11 +450,12 @@ Code Example:
             </syncfusion:SfCircularGauge.MainScale>
 
         </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
 
 
 
-
+{% highlight C# %}
 
 
 [C#]
@@ -452,26 +469,29 @@ Code Example:
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+{% endhighlight %}
+
+
+
+
+### Screenshot:
+
+![](Pointer-Settings_images/Pointer-Settings_img6.png)
 
 
 
 
 
-Screenshot:
-
-{{ '![](Pointer-Settings_images/Pointer-Settings_img6.png)' | markdownify }}
-{:.image }
-
-
-
-
-Customizing the SymbolPointerTemplate
+## Customizing the SymbolPointerTemplate
 
 The default appearance of the SymbolPointer can be customized by using the SymbolPointerTemplate property. The SymbolPointerTemplate property is applicable only when Symbol type is set as Custom.
 
 The SymbolPointerTemplate is a DataTemplate type, used to customize or override the default template of the SymbolPointer.
 
-Code Example:
+### Code Example:
+
+
+{% highlight xml %}
 
 [XAML]
 
@@ -516,16 +536,14 @@ Code Example:
             </syncfusion:SfCircularGauge.MainScale>
 
         </syncfusion:SfCircularGauge>
+{% endhighlight %}
 
 
 
 
+### Screenshot:
 
-Screenshot:
-
-{{ '![](Pointer-Settings_images/Pointer-Settings_img7.png)' | markdownify }}
-{:.image }
-
+![](Pointer-Settings_images/Pointer-Settings_img7.png)
 
 
 

@@ -11,7 +11,7 @@ documentation: ug
 
 Auto Complete functionality provides suggestions to the user while typing. There are several modes of suggestions. The suggested text can be appended to the original text or it can be displayed in a drop-down list so that user can choose from different options.
 
-Auto Complete Source
+## Auto Complete Source
 
 The TextBoxExt control can be populated with a predefined list of items, which will assist the user while typing. Users can choose one item from the filtered list.
 
@@ -20,7 +20,7 @@ For illustration, let us create a textbox, which will populate a list of employe
 The Employee model looks as shown below:
 
 
-
+{% highlight  %}
 [C#] 
 
 
@@ -36,13 +36,13 @@ The Employee model looks as shown below:
         public string Email { get; set; }
 
     }
-
+{% endhighlight %}
 
 
 Create a collection attribute,
 
 
-
+{% highlight  %}
 [C#]
 
 
@@ -61,12 +61,12 @@ Create a collection attribute,
 
      }
 
-
+{% endhighlight %}
 
 Populate the collection with items,
 
 
-
+{% highlight  %}
 [C#]
 
 
@@ -78,13 +78,13 @@ Employees.Add(new Employee{Name = "Lucas", Email = "lucas@syncfusion.com"});
 Employees.Add(new Employee { Name = "James", Email = "james@syncfusion.com" });
 
 Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
-
+{% endhighlight %}
 
 
 Bind the Employees collection to the AutoCompleteSource property of TextBoxExt.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -96,7 +96,7 @@ Bind the Employees collection to the AutoCompleteSource property of TextBoxExt.
                             Width="400"
 
 AutoCompleteSource="{Binding Employees}" />
-
+{% endhighlight %}
 
 
 At this point, the control is populated with the list of employees. But the Employee model contains two properties Name and Email so we should tell the control, by which property, it has to provide suggestions. In this case, let us make the control to provide suggestions based on Name.
@@ -104,7 +104,7 @@ At this point, the control is populated with the list of employees. But the Empl
 SearchItemPath property specifies the property path by which the filtering has to be done.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -120,14 +120,15 @@ SearchItemPath property specifies the property path by which the filtering has t
                             AutoCompleteMode="Suggest"
 
                             AutoCompleteSource="{Binding Employees}" />
+{% endhighlight %}
+							
+![C:/Users/ApoorvahR/Desktop/4.png](Auto-Complete_images/Auto-Complete_img1.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/4.png](Auto-Complete_images/Auto-Complete_img1.png)' | markdownify }}
-{:.image }
 
 
 > _Note: Default value of AutoCompleteMode property is None. So running the control without specifying this property will not show any suggestions. Detailed information about Auto Complete modes will be provided in next section._
 
-Auto Complete Mode
+## Auto Complete Mode
 
 The suggestions can be displayed in several ways. TextBoxExt supports the following modes of auto complete,
 
@@ -143,12 +144,12 @@ The suggestions can be displayed in several ways. TextBoxExt supports the follow
 
 The default value of AutoCompleteMode is None.
 
-Suggest
+### Suggest
 
 The filtered suggestions are displayed in a drop-down list.  Users can pick an item from the list.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -165,22 +166,22 @@ The filtered suggestions are displayed in a drop-down list.  Users can pick an i
 
                             AutoCompleteSource="{Binding Employees}" />
 
+{% endhighlight %}
 
+![C:/Users/ApoorvahR/Desktop/5.png](Auto-Complete_images/Auto-Complete_img2.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/5.png](Auto-Complete_images/Auto-Complete_img2.png)' | markdownify }}
-{:.image }
 
 
 _Filtered suggestions displayed in drop-down list_
 
 
 
-Append
+### Append
 
 The text will be appended to the first matched item in the suggestions collection without opening the drop-down list.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -197,22 +198,22 @@ AutoCompleteMode="Append"
 
                             AutoCompleteSource="{Binding Employees}" />
 
+{% endhighlight %}
 
+![C:/Users/ApoorvahR/Desktop/6.png](Auto-Complete_images/Auto-Complete_img3.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/6.png](Auto-Complete_images/Auto-Complete_img3.png)' | markdownify }}
-{:.image }
 
 
 _Append mode_
 
 _Note: By default the text will be appended to first matched item. But still user can browse to other items through up and down keys from keyboard._
 
-SuggestAppend
+### SuggestAppend
 
 The text will be appended to the first matched item in the suggestions collection, in addition to opening the drop-down list.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -229,26 +230,26 @@ The text will be appended to the first matched item in the suggestions collectio
 
                             AutoCompleteSource="{Binding Employees}" />
 
+{% endhighlight %}
 
+![C:/Users/ApoorvahR/Desktop/7.png](Auto-Complete_images/Auto-Complete_img4.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/7.png](Auto-Complete_images/Auto-Complete_img4.png)' | markdownify }}
-{:.image }
 
 
 _SuggestAppend mode_
 
 
 
-None
+### None
 
 This option neither appends text nor opens the drop-down list of suggestions. 
 
-AutoComplete Item Template
+## AutoComplete Item Template
 
 The AutoCompleteItemTemplate helps to decorate the suggested item with visual elements. The following code block explains how to add an image to the drop-down list item.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -283,21 +284,21 @@ The AutoCompleteItemTemplate helps to decorate the suggested item with visual el
 
         </editors:SfTextBoxExt>
 
+{% endhighlight %}
 
+![C:/Users/ApoorvahR/Desktop/8.png](Auto-Complete_images/Auto-Complete_img5.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/8.png](Auto-Complete_images/Auto-Complete_img5.png)' | markdownify }}
-{:.image }
 
 
 _Drop down list with image_
 
 
 
-Filtering Customization
+## Filtering Customization
 
 The way that the control filters the suggestions can be customized in several ways.
 
-Suggestion Mode
+## Suggestion Mode
 
 The property SuggestionMode helps to specify how to compare the string. It contains two built-in modes. 
 
@@ -318,12 +319,12 @@ The property SuggestionMode helps to specify how to compare the string. It conta
 
 The default value is StartsWith.
 
-None
+### None
 
 The controls returns the entire collection without filtering when the user types text.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -342,18 +343,19 @@ SuggestionMode="None"
 
                             AutoCompleteSource="{Binding Employees}"/>
 
+{% endhighlight %}
 
+ ![C:/Users/ApoorvahR/Desktop/9.png](Auto-Complete_images/Auto-Complete_img6.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/9.png](Auto-Complete_images/Auto-Complete_img6.png)' | markdownify }}
-{:.image }
 
 
 _None case_
 
- StartsWith
+### StartsWith
 
 The control returns all possible matches which start with the text typed by the user.
 
+{% highlight xml %}
 [XAML]
 
 
@@ -372,20 +374,21 @@ SuggestionMode="StartsWith"
 
                             AutoCompleteSource="{Binding Employees}"/>
 
+{% endhighlight %}
 
+![C:/Users/ApoorvahR/Desktop/10.png](Auto-Complete_images/Auto-Complete_img7.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/10.png](Auto-Complete_images/Auto-Complete_img7.png)' | markdownify }}
-{:.image }
 
 
 _StartsWith case_
 
 
 
-StartsWithCaseSensitive
+### StartsWithCaseSensitive
 
 The control returns all possible matches which start with the text typed by the user which is culture and case sensitive.
 
+{% highlight xml %}
 [XAML]
 
 
@@ -403,21 +406,21 @@ SuggestionMode="StartsWithCaseSensitive"
                             AutoCompleteMode="Suggest"
 
                             AutoCompleteSource="{Binding Employees}"/>
+{% endhighlight %}
+![C:/Users/ApoorvahR/Desktop/11.png](Auto-Complete_images/Auto-Complete_img8.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/11.png](Auto-Complete_images/Auto-Complete_img8.png)' | markdownify }}
-{:.image }
 
 
 _StartsWithCaseSensitive case_
 
 
 
-StartsWithOrdinal
+### StartsWithOrdinal
 
 The control returns all possible matches which start with the text typed by the user based on OrdinalIgnoreCase.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -437,21 +440,20 @@ The control returns all possible matches which start with the text typed by the 
                             AutoCompleteSource="{Binding Employees}"/>
 
 
-
-{{ '![C:/Users/ApoorvahR/Desktop/12.png](Auto-Complete_images/Auto-Complete_img9.png)' | markdownify }}
-{:.image }
+{% endhighlight %}
+![C:/Users/ApoorvahR/Desktop/12.png](Auto-Complete_images/Auto-Complete_img9.png)
 
 
 _StartsWithOrdinal case_
 
 
 
-StartsWithOrdinalCaseSensitive
+### StartsWithOrdinalCaseSensitive
 
 The control returns all possible matches which start with the text typed by the user by Ordinal which is case sensitive.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -470,10 +472,10 @@ SuggestionMode="StartsWithOrdinalCaseSensitive"
 
                             AutoCompleteSource="{Binding Employees}"/>
 
+{% endhighlight %}
 
+![C:/Users/ApoorvahR/Desktop/13.png](Auto-Complete_images/Auto-Complete_img10.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/13.png](Auto-Complete_images/Auto-Complete_img10.png)' | markdownify }}
-{:.image }
 
 
 _StartsWithOrdinalCaseSensitive case_
@@ -481,12 +483,12 @@ _StartsWithOrdinalCaseSensitive case_
 
 
 
-Contains
+### Contains
 
 The control return all possible matches which contains the text typed by the user.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -506,19 +508,20 @@ The control return all possible matches which contains the text typed by the use
                             AutoCompleteSource="{Binding Employees}"/>
 
 
+{% endhighlight %}
+![C:/Users/ApoorvahR/Desktop/14.png](Auto-Complete_images/Auto-Complete_img11.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/14.png](Auto-Complete_images/Auto-Complete_img11.png)' | markdownify }}
-{:.image }
 
 
 _Contains case_
 
 
 
-ContainsCaseSensitive
+### ContainsCaseSensitive
 
 The control return all possible matches which contains the text typed by the user which is culture and case sensitive.
 
+{% highlight xml %}
 [XAML]
 
 
@@ -537,22 +540,21 @@ The control return all possible matches which contains the text typed by the use
 
                             AutoCompleteSource="{Binding Employees}"/>
 
+{% endhighlight %}
 
-
-{{ '![C:/Users/ApoorvahR/Desktop/15.png](Auto-Complete_images/Auto-Complete_img12.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/15.png](Auto-Complete_images/Auto-Complete_img12.png)
 
 
 _ContainsCaseSensitive case_
 
 
 
-ContainsOrdinal
+### ContainsOrdinal
 
 The control return all possible matches which contains the text typed by the user based on OrdinalIgnoreCase.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -571,20 +573,20 @@ The control return all possible matches which contains the text typed by the use
 
                             AutoCompleteSource="{Binding Employees}"/>
 
+{% endhighlight %}
 
+![C:/Users/ApoorvahR/Desktop/16.png](Auto-Complete_images/Auto-Complete_img13.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/16.png](Auto-Complete_images/Auto-Complete_img13.png)' | markdownify }}
-{:.image }
 
 
 _ContainsOrdinal case_
 
 
 
-ContainsOrdinalCaseSensitive
+### ContainsOrdinalCaseSensitive
 
 The control return all possible matches which contains the text typed by the user based on Ordinal which is case sensitive.
-
+{% highlight xml %}
 [XAML]
 
 
@@ -603,22 +605,22 @@ The control return all possible matches which contains the text typed by the use
 
                             AutoCompleteSource="{Binding Employees}"/>
 
+{% endhighlight %}
 
+![C:/Users/ApoorvahR/Desktop/17.png](Auto-Complete_images/Auto-Complete_img14.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/17.png](Auto-Complete_images/Auto-Complete_img14.png)' | markdownify }}
-{:.image }
 
 
 _ContainsOrdinalCaseSensitive_
 
 
 
-Equals
+### Equals
 
 The control return all possible matches which equals the text typed by the user.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -637,18 +639,18 @@ The control return all possible matches which equals the text typed by the user.
 
                             AutoCompleteSource="{Binding Employees}"/>
 
+{% endhighlight %}
 
+![C:/Users/ApoorvahR/Desktop/18.png](Auto-Complete_images/Auto-Complete_img15.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/18.png](Auto-Complete_images/Auto-Complete_img15.png)' | markdownify }}
-{:.image }
 
 
 _Equals case_
 
-EqualsCaseSensitive
+### EqualsCaseSensitive
 
 The control return all possible matches which equals the text typed by the user which is culture and case sensitive.
-
+{% highlight xml %}
 [XAML]
 
 
@@ -668,19 +670,19 @@ The control return all possible matches which equals the text typed by the user 
                             AutoCompleteSource="{Binding Employees}"/>
 
 
+{% endhighlight %}
+![C:/Users/ApoorvahR/Desktop/19.png](Auto-Complete_images/Auto-Complete_img16.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/19.png](Auto-Complete_images/Auto-Complete_img16.png)' | markdownify }}
-{:.image }
 
 
 _EqualsCaseSensitive case_
 
-EqualsOrdinal
+### EqualsOrdinal
 
 The control return all possible matches which equals the text typed by the user based on OrdinalIgnoreCase.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -699,20 +701,19 @@ The control return all possible matches which equals the text typed by the user 
 
                             AutoCompleteSource="{Binding Employees}"/>
 
+{% endhighlight %}
 
-
-{{ '![C:/Users/ApoorvahR/Desktop/20.png](Auto-Complete_images/Auto-Complete_img17.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/20.png](Auto-Complete_images/Auto-Complete_img17.png)
 
 
 _EqualsOrdinal case_
 
-EqualsOrdinalCaseSensitive
+### EqualsOrdinalCaseSensitive
 
 The control return all possible matches which equals the text typed by the user based on Ordinal which is case sensitive.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -731,22 +732,22 @@ The control return all possible matches which equals the text typed by the user 
 
                             AutoCompleteSource="{Binding Employees}"/>
 
+{% endhighlight %}
 
+![C:/Users/ApoorvahR/Desktop/21.png](Auto-Complete_images/Auto-Complete_img18.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/21.png](Auto-Complete_images/Auto-Complete_img18.png)' | markdownify }}
-{:.image }
 
 
 _EqualsOrdinalCaseSensitive case_
 
 
 
-Custom
+### Custom
 
 The control return all possible matches based on the Filter property. Filter is of type SuggestionPredicate. In the MyFilter method, filtration is done by checking whether the collection contains the typed text
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -765,10 +766,10 @@ The control return all possible matches based on the Filter property. Filter is 
 
                             AutoCompleteSource="{Binding Employees}"/>
 
+{% endhighlight %}
 
 
-
-
+{% highlight  %}
 [C#]    
 
 
@@ -803,16 +804,17 @@ The control return all possible matches based on the Filter property. Filter is 
 
         }
 
+{% endhighlight %}
 
-
+{% highlight  %}
 [C#]
 
 autoComplete.Filter = MyFilter;
+{% endhighlight %}
 
 
+![C:/Users/ApoorvahR/Desktop/22.png](Auto-Complete_images/Auto-Complete_img19.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/22.png](Auto-Complete_images/Auto-Complete_img19.png)' | markdownify }}
-{:.image }
 
 
 _Custom case_
@@ -821,12 +823,12 @@ _Note: Append mode always works only with StartsWith behavior. If the typed text
 
 
 
-Ignore Case
+### Ignore Case
 
 This option allows the control to filter suggestions by ignoring the case. The default value is false.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -845,20 +847,21 @@ This option allows the control to filter suggestions by ignoring the case. The d
 
                             AutoCompleteSource="{Binding Employees}"/>
 
+{% endhighlight %}
 
+![C:/Users/ApoorvahR/Desktop/23.png](Auto-Complete_images/Auto-Complete_img20.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/23.png](Auto-Complete_images/Auto-Complete_img20.png)' | markdownify }}
-{:.image }
 
 
 _Ignore Case_
 
 
 
-Minimum Prefix Length
+### Minimum Prefix Length
 
 The MinimumPrefixCharacters property allows the control to filter the typed text based on the number of characters.
 
+{% highlight xml %}
 [XAML]
 
 
@@ -876,21 +879,19 @@ MinimumPrefixCharacters="2"
                             AutoCompleteMode="Suggest"
 
                             AutoCompleteSource="{Binding Employees}"/>
+{% endhighlight %}
 
-
-
-{{ '![C:/Users/ApoorvahR/Desktop/24.png](Auto-Complete_images/Auto-Complete_img21.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/24.png](Auto-Complete_images/Auto-Complete_img21.png)
 
 
 _Minimum Prefix Length case_
 
-Popup Delay
+### Popup Delay
 
 PopupDelay specifies the delay after which the suggestion popup should open. 
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -909,9 +910,9 @@ PopupDelay specifies the delay after which the suggestion popup should open.
 
                             AutoCompleteSource="{Binding Employees}"/>
 
+{% endhighlight %}
 
-
-Positioning the Popup
+### Positioning the Popup
 
 The SuggestionBoxPlacement property defines the position of Popup relative to the control. It contains three built-in options,
 
@@ -921,10 +922,11 @@ The SuggestionBoxPlacement property defines the position of Popup relative to th
 
 The default value is bottom.
 
-Top
+#### Top
 
 The drop-down list will open at top of the control.
 
+{% highlight xml %}
 [XAML]
 
 
@@ -943,20 +945,20 @@ The drop-down list will open at top of the control.
 
                             AutoCompleteSource="{Binding Employees}"/>
 
+{% endhighlight %}
 
+![C:/Users/ApoorvahR/Desktop/25.png](Auto-Complete_images/Auto-Complete_img22.png)
 
-{{ '![C:/Users/ApoorvahR/Desktop/25.png](Auto-Complete_images/Auto-Complete_img22.png)' | markdownify }}
-{:.image }
 
 
 _Drop down list opening at the top_
 
 
 
-Bottom
+#### Bottom
 
 The drop-down list will open at bottom of the control.
-
+{% highlight xml %}
 [XAML]
 
 
@@ -975,20 +977,19 @@ The drop-down list will open at bottom of the control.
 
                             AutoCompleteSource="{Binding Employees}"/>
 
+{% endhighlight %}
 
-
-{{ '![C:/Users/ApoorvahR/Desktop/26.png](Auto-Complete_images/Auto-Complete_img23.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/26.png](Auto-Complete_images/Auto-Complete_img23.png)
 
 
 _Drop down list opening at the bottom_
 
 
 
-None
+#### None
 
 The drop-down list will not open.
-
+{% highlight xml %}
 [XAML]
 
 
@@ -1007,8 +1008,8 @@ SuggestionBoxPlacement="None"
 
                             AutoCompleteSource="{Binding Employees}"/>
 
-{{ '![C:/Users/ApoorvahR/Desktop/27.png](Auto-Complete_images/Auto-Complete_img24.png)' | markdownify }}
-{:.image }
+{% endhighlight %}
+![C:/Users/ApoorvahR/Desktop/27.png](Auto-Complete_images/Auto-Complete_img24.png)
 
 
 _No drop down list_

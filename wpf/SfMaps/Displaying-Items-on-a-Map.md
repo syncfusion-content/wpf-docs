@@ -11,13 +11,16 @@ documentation: ug
 
 Along with bubbles, the ItemsSource data can be visualized with other elements. The ItemsTemplate property is used to define the template for the items that are displayed on the map. By default, the map elements show the values of the object that is defined in the ShapeValuePath of the ShapeFileLayer’s shape setting.
 
-ItemsTemplate
+## ItemsTemplate
 
 ItemsTemplate is a type of DataTemplate that is used to override the default template for map items. “Data” is the property that holds the object for a map item.
 
-Code Sample
+### Code Sample
 
 Implement the Model and ViewModel, as mentioned in the Data Binding topic, and include the following code in the XAML page:
+
+{% highlight xml %}
+
 
 [XAML]
 
@@ -72,10 +75,10 @@ Implement the Model and ViewModel, as mentioned in the Data Binding topic, and i
             </syncfusion:SfMap.Layers>
 
         </syncfusion:SfMap>
+{% endhighlight %}
 
 
+![](Displaying-Items-on-a-Map_images/Displaying-Items-on-a-Map_img1.png)
 
-{{ '![](Displaying-Items-on-a-Map_images/Displaying-Items-on-a-Map_img1.png)' | markdownify }}
-{:.image }
 
 

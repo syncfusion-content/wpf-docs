@@ -17,19 +17,21 @@ To edit the style of the UpDown control in the Expression Blend:
 
 1. Drag the UpDown control to the Design View. The UpDown control appears as shown in the following screenshot.
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1263.jpg](Appearance_images/Appearance_img1.jpeg)' | markdownify }}
-{:.image }
+   ![](Appearance_images/Appearance_img1.jpeg)
+
 
 
 2. Right-click the UpDown control, select Edit Template, and then select Edit a Copy.
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1264.png](Appearance_images/Appearance_img2.png)' | markdownify }}
-{:.image }
+   ![](Appearance_images/Appearance_img2.png)
+
 
 
 After the Edit a Copy option is selected, the style of the UpDown control is generated in the XAML file. You can change the Control Template or some of the brushes of the UpDown control by using the properties exposed by the UpDown control.
 
 In the following code, the BorderBrush color is changed when the IsMouseOver value changes.
+
+{%highlight xml%}
 
  [XAML]
 
@@ -39,10 +41,10 @@ In the following code, the BorderBrush color is changed when the IsMouseOver val
 
 </Trigger>
 
+{%endhighlight%}
 
+![](Appearance_images/Appearance_img3.png)
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1265.png](Appearance_images/Appearance_img3.png)' | markdownify }}
-{:.image }
 
 
 ### Customizing by Using Properties
@@ -57,12 +59,12 @@ You can customize the appearance of the UpDown control by using the properties e
 
 These properties are enabled only when the EnableFocusedColors property is set to true.
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1266.png](Appearance_images/Appearance_img4.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img4.png)
 
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1267.png](Appearance_images/Appearance_img5.png)' | markdownify }}
-{:.image }
+
+![](Appearance_images/Appearance_img5.png)
+
 
 
 
@@ -71,8 +73,8 @@ __
 
 
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1268.png](Appearance_images/Appearance_img6.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img6.png)
+
 
 
 The appearance of the UpDown control can be changed when the value in the UpDown is negative by using the following properties:
@@ -85,24 +87,22 @@ The appearance of the UpDown control can be changed when the value in the UpDown
 
 These properties are enabled only when the EnableNegativeColors property is set to true.
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1269.png](Appearance_images/Appearance_img7.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img7.png)
 
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1270.png](Appearance_images/Appearance_img8.png)' | markdownify }}
-{:.image }
+
+![](Appearance_images/Appearance_img8.png)
 
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1271.png](Appearance_images/Appearance_img9.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img9.png)
+
 
 
 The color of the zero value can be changed by using the ZeroColor property. The ZeroColor property can be enabled by setting the ApplyZeroColor property to true.
 
 
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1272.png](Appearance_images/Appearance_img10.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img10.png)
 
 
 ### Skins

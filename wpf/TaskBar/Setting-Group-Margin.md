@@ -16,7 +16,7 @@ You can also set the value for Left, Right, Bottom and Top group margins.
 Use the below code for setting the group margin.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -66,10 +66,10 @@ This taskbar provides an UI similar to that of Windows XP.</TextBlock>
     </syncfusion:TaskBarItem>
 
 </syncfusion:TaskBar>
+{% endhighlight %}
 
 
-
-
+{% highlight  %}
 
 [C#]
 
@@ -158,13 +158,13 @@ taskBar.GroupMargin = new Thickness(5);
 //Adding TaskBar as content of window
 
 this.Content = taskBar; 
+{% endhighlight %}
 
 
 
 
+![](Setting-Group-Margin_images/Setting-Group-Margin_img1.jpeg)
 
-{{ '![](Setting-Group-Margin_images/Setting-Group-Margin_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 

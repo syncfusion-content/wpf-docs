@@ -15,33 +15,99 @@ You can customize the font setting of Spreadsheet cells using this feature. You 
 
 
 
-Font Settings in Spreadsheet Control
+### Font Settings in Spreadsheet Control
 
 Spreadsheet control provides API support for specifying the font style for the cells text. You can apply various font settings using the _CellStyle_ property. Use the _CurrentExcelRangeStyle_ property, to apply style for the current selected cells. You can also specify the worksheet range for applying style. The following code illustrates this:
 
+{%highlight c#%}
+
+[C#]
+
+//Applying font settings to a worksheet range
+
+spreadControl.ExcelProperties.WorkBook.Worksheets[0]
+
+["A1"].CellStyle.Font.FontName = " Arial Black";
+
+spreadControl.ExcelProperties.WorkBook.Worksheets[0]
+
+["A2"].CellStyle.Font.Size = 15;
+
+spreadControl.ExcelProperties.WorkBook.Worksheets[0]
+
+["A3"].CellStyle.Font.Color = ExcelKnownColors.Blue;
+
+spreadControl.ExcelProperties.WorkBook.Worksheets[0]
+
+["A4"].CellStyle.Font.Bold = true;
+
+spreadControl.ExcelProperties.WorkBook.Worksheets[0]
+
+["A5"].CellStyle.Font.Italic = true;
+
+//Applying font setting to the selected cell 
+
+spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.FontName = "Arial Black";
+
+spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Size = 18;
+
+spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Color = ExcelKnownColors.Red;
+
+spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Bold = true;
+
+spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Italic = true;
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+
+[VB]
+
+' Applying font settings to a worksheet range 
+
+spreadControl.ExcelProperties.WorkBook.Worksheets(0)
+
+("A1").CellStyle.Font.FontName = " Arial Black"
+
+spreadControl.ExcelProperties.WorkBook.Worksheets(0)
+
+("A2").CellStyle.Font.Size = 15spreadControl.ExcelProperties.WorkBook.Worksheets(0)
+
+("A3").CellStyle.Font.Color = ExcelKnownColors.Blue
+
+spreadControl.ExcelProperties.WorkBook.Worksheets(0)
+
+("A4").CellStyle.Font.Bold = True
+
+spreadControl.ExcelProperties.WorkBook.Worksheets(0)
+
+("A5").CellStyle.Font.Italic = True' Applying font setting to the selected cell 
+
+spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.FontName = "Arial Black"
+
+spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Size = 18
+
+spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Color = ExcelKnownColors.Red
+
+spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Bold = True
+
+spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Italic = True
 
 
-<table>
-<tr>
-<td>
-[C#]//Applying font settings to a worksheet rangespreadControl.ExcelProperties.WorkBook.Worksheets[0]["A1"].CellStyle.Font.FontName = " Arial Black";spreadControl.ExcelProperties.WorkBook.Worksheets[0]["A2"].CellStyle.Font.Size = 15;spreadControl.ExcelProperties.WorkBook.Worksheets[0]["A3"].CellStyle.Font.Color = ExcelKnownColors.Blue;spreadControl.ExcelProperties.WorkBook.Worksheets[0]["A4"].CellStyle.Font.Bold = true;spreadControl.ExcelProperties.WorkBook.Worksheets[0]["A5"].CellStyle.Font.Italic = true;//Applying font setting to the selected cell spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.FontName = "Arial Black";spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Size = 18;spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Color = ExcelKnownColors.Red;spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Bold = true;spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Italic = true;</td></tr>
-<tr>
-<td>
-[VB]' Applying font settings to a worksheet range spreadControl.ExcelProperties.WorkBook.Worksheets(0)("A1").CellStyle.Font.FontName = " Arial Black"spreadControl.ExcelProperties.WorkBook.Worksheets(0)("A2").CellStyle.Font.Size = 15spreadControl.ExcelProperties.WorkBook.Worksheets(0)("A3").CellStyle.Font.Color = ExcelKnownColors.BluespreadControl.ExcelProperties.WorkBook.Worksheets(0)("A4").CellStyle.Font.Bold = TruespreadControl.ExcelProperties.WorkBook.Worksheets(0)("A5").CellStyle.Font.Italic = True' Applying font setting to the selected cell spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.FontName = "Arial Black"spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Size = 18spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Color = ExcelKnownColors.RedspreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Bold = TruespreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Italic = True</td></tr>
-</table>
+{%endhighlight%}
 
 
-{{ '![](Appearance_images/Appearance_img1.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img1.png)
 
 
 
 
-Using Command 
+
+### Using Command 
 
 You can set the font family to the spreadsheet cells using the _FontFamilyCommand_. To set the font family, specify the font name as command parameter. The following code illustrates this:
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -51,7 +117,7 @@ You can set the font family to the spreadsheet cells using the _FontFamilyComman
 
 </Button>
 
-
+{%endhighlight%}
 
 ## Merge cells
 
@@ -61,7 +127,7 @@ You can merge/unmerge the group of cell using the MergeCommand. To merge the cel
 
 The following code illustrates how to merge the selected cells in Spreadsheet:
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -71,11 +137,11 @@ The following code illustrates how to merge the selected cells in Spreadsheet:
 
 </Button>
 
-
+{%endhighlight%}
 
 The following code illustrates how to unmerge the selected cells in Spreadsheet:
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -85,10 +151,10 @@ The following code illustrates how to unmerge the selected cells in Spreadsheet:
 
 </Button>
 
+{%endhighlight%}
 
+![](Appearance_images/Appearance_img2.png)
 
-{{ '![](Appearance_images/Appearance_img2.png)' | markdownify }}
-{:.image }
 
 
 
@@ -101,7 +167,7 @@ To add border to an individual cell use the BorderCommand. You can also specify 
 
 The following code illustrates, how to add and remove the cell border in Spreadsheet Control
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -124,11 +190,11 @@ The following code illustrates, how to add and remove the cell border in Spreads
 </Button>
 
 
+{%endhighlight%}
 
 
+![](Appearance_images/Appearance_img3.png)
 
-{{ '![](Appearance_images/Appearance_img3.png)' | markdownify }}
-{:.image }
 
 
 
@@ -149,7 +215,7 @@ To apply the freeze panes, use the FreezePaneCommand. You can pass one of the fo
 
 The following code illustrates this:
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -163,40 +229,40 @@ The following code illustrates this:
 
 </Button>
 
+{%endhighlight%}
 
+![](Appearance_images/Appearance_img4.png)
 
-{{ '![](Appearance_images/Appearance_img4.png)' | markdownify }}
-{:.image }
 
 
 ## Wrap Text Support
 
-### Overview
+## Overview
 
 You can manually wrap text and resize cells when the text or cell value exceeds the column width, by calling the SetWrapText method or WrapTextCommand in Spreadsheet control.
 
-### Use Case Scenario
+## Use Case Scenario
 
 Users can wrap text for a selected range of cells by just calling a method.
 
 
 
-{{ '![](Appearance_images/Appearance_img5.png)' | markdownify }}
-{:.image }
+![](Appearance_images/Appearance_img5.png)
 
 
-### Properties, Methods and Events 
 
-Methods
+## Properties, Methods and Events 
+
+### Methods
 
 <table>
 <tr>
 <th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Type </th><th>
-Return Type </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <th>
 SetWrapText()</th><th>

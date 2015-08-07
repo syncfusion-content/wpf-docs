@@ -11,11 +11,13 @@ documentation: ug
 
 History support in AutoComplete means, reusage of the items which are already used in the AutoComplete textbox. AutoComplete allows you to enable this history support by setting the value of the IsHistory property to True. AutoComplete guides you to select an item from the list of items which are added to the history, by using the drop-down button to open the drop-down list.
 
-Using History Support in an Application 
+## Using History Support in an Application 
 
 Items can be added to the history using the AddToHistory(String str) and AddToHistory(Object obj) methods, only if that items are present in the data source used with the AutoComplete. Also it supports to save the history while closing the application and to load the history while opening the application using the SaveHistory() and LoadHistory() methods. 
 
 The following mentioned code example can be used to attain these functionalities.
+{% highlight cs %}
+
 
 [C#]
 
@@ -58,12 +60,12 @@ private void autoComplete1_SelectionChanged(object sender,
      autoComplete1.SaveHistory();
 
         }
+{% endhighlight %}
 
 
+## Tables for properties, methods, and events
 
-Tables for properties, methods, and events
-
-Properties
+### Properties
 
 _Property Table for History support_
 
@@ -85,7 +87,7 @@ bool(true)</td><td>
 </table>
 
 
-Methods
+### Methods
 
 _MethodsTable for History_
 
@@ -141,7 +143,7 @@ Void</th><th>
 </table>
 
 
-Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
 

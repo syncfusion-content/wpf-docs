@@ -11,18 +11,18 @@ documentation: ug
 
 The MinimizedItemTemplate and MaximizedItemTemplate feature in the TileViewControl enables you to set the different DataTemplate in theTileViewItem maximized state and the TileViewItem minimized state. The ItemTemplate property will be displayed in the TileViewItem normal state. If you set the MinimizedItemTemplate, then the value in the ItemTemplate property will be displayed in the maximized state and vice versa.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 This feature will be very useful when you want to show the two different DataTemplates in minimized state and maximized state.
 
-Adding MinimizedItemTemplate / MaximizedItemTemplate to an Application 
+## Adding MinimizedItemTemplate / MaximizedItemTemplate to an Application 
 
 The MinimizedItemTemplate and MaximizedItemTemplate can be added to an application by using either XAML or C# code.
 
 The following code example illustrates how to add the MinimizedItemTemplate and MaximizedItemTemplate to an application through XAML.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -111,28 +111,28 @@ The following code example illustrates how to add the MinimizedItemTemplate and 
 
      MaximizedItemTemplate="{Binding Source={StaticResource MaxTemplate}}" /> 
 
+{% endhighlight %}
+
+
+
+![](MinimizedItemTemplate-and-MaximizedItemTemplate_images/MinimizedItemTemplate-and-MaximizedItemTemplate_img1.png)
 
 
 
 
-{{ '![](MinimizedItemTemplate-and-MaximizedItemTemplate_images/MinimizedItemTemplate-and-MaximizedItemTemplate_img1.png)' | markdownify }}
-{:.image }
 
-
-
-
-Properties
+## Properties
 
 _MinimizedItemTemplate / MaximizedItemTemplate Properties Table_
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td><td>
+{{ '**Reference links**' | markdownify }} </td></tr>
 <tr>
 <td>
 MinimizedItemTemplate </td><td>
@@ -150,7 +150,7 @@ DataTemplate</td><td>
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

@@ -19,8 +19,7 @@ The TreeviewItem is added to a TreeViewAdv control either by using XAML or Proce
 
 
 
-[XAML]
-
+{% highlight xml %}
 
 
 <!-- Adding TreeViewAdv -->
@@ -35,9 +34,9 @@ The TreeviewItem is added to a TreeViewAdv control either by using XAML or Proce
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -65,9 +64,10 @@ treeViewAdv.Items.Add(treeViewItemAdv);
 
 this.Content = treeViewAdv;
 
+{% endhighlight %}
 
 
-> _Note: To display the TreeViewItem, you must already have a TreeViewAdv in which you are going to add the TreeViewItem._
+> Note: To display the TreeViewItem, you must already have a TreeViewAdv in which you are going to add the TreeViewItem.
 
 ## Allowing Multi Select in TreeViewAdv
 
@@ -77,7 +77,7 @@ The following code example can be used to set this property.
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -115,9 +115,9 @@ The following code example can be used to set this property.
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -125,13 +125,11 @@ The following code example can be used to set this property.
 
 treeViewAdv.AllowMultiSelect = true;
 
+{% endhighlight %}
 
 
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img1.jpeg)' | markdownify }}
-{:.image }
-
+![](Interactive-Features_images/Interactive-Features_img1.jpeg)
 
 
 
@@ -143,7 +141,7 @@ Here are the code snippets to select multiple items in the TreeViewAdv control u
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -159,9 +157,9 @@ Here are the code snippets to select multiple items in the TreeViewAdv control u
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -173,9 +171,9 @@ treeView.AddNodeToSelectedItems(items);
 
 }
 
+{% endhighlight %}
 
-
-See Also
+### See Also
 
 Allowing Multi Select in TreeViewAdv
 
@@ -185,7 +183,7 @@ The following code snippet sets a collection used to generate the content of the
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -241,9 +239,9 @@ The following code snippet sets a collection used to generate the content of the
 
 </Window>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -294,11 +292,10 @@ public class CountryList : INotifyPropertyChanged
 }
 
 
+{% endhighlight %}
 
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img2.jpeg)' | markdownify }}
-{:.image }
+![](Interactive-Features_images/Interactive-Features_img2.jpeg)
 
 
 
@@ -318,8 +315,7 @@ The Expanded state is identified by setting the ExpandedImageSource property and
 
 
 
-[XAML]
-
+{% highlight xml %}
 
 
 <!-- Adding TreeViewAdv With collapse and expand image -->
@@ -356,11 +352,11 @@ The Expanded state is identified by setting the ExpandedImageSource property and
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -374,10 +370,9 @@ treeviewitem1.CollapsedImageSource = new BitmapImage(new Uri("star.png", UriKind
 
 treeviewitem2.ExpandedImageSource = new BitmapImage(new Uri("happy.png", UriKind.Relative));
 
+{% endhighlight %}
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img3.jpeg)' | markdownify }}
-{:.image }
+![](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
 
 
@@ -388,7 +383,7 @@ User can also set the height and width of the node images in a TreeViewAdv contr
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -439,10 +434,10 @@ User can also set the height and width of the node images in a TreeViewAdv contr
 </syncfusion:TreeViewAdv>
 
 
+{% endhighlight %}
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -456,13 +451,11 @@ treeViewItemAdv1.ImageHeight = 25;
 
 treeViewItemAdv1.ImageWidth = 25; 
 
+{% endhighlight %}
 
 
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img4.jpeg)' | markdownify }}
-{:.image }
-
+![](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
 
 
@@ -475,7 +468,7 @@ You can add images to the left and right corner of the header of the TreeViewIte
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -525,11 +518,11 @@ You can add images to the left and right corner of the header of the TreeViewIte
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
 
 
-
-[XAML]
+{% highlight xml %}
 
 
 
@@ -543,11 +536,9 @@ treeViewItemAdv1.LeftImageSource = new BitmapImage(new Uri("happy.png", UriKind.
 
 treeViewItemAdv2.RightImageSource = new BitmapImage(new Uri("star.png", UriKind.Relative));
 
+{% endhighlight %}
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img5.jpeg)' | markdownify }}
-{:.image }
-
+![](Interactive-Features_images/Interactive-Features_img5.jpeg)
 
 
 
@@ -561,7 +552,7 @@ TreeViewAdv has the advanced ability to sort the TreeViewItemAdv items at run ti
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -612,10 +603,10 @@ TreeViewAdv has the advanced ability to sort the TreeViewItemAdv items at run ti
 </syncfusion:TreeViewAdv>
 
 
+{% endhighlight %}
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -623,9 +614,9 @@ TreeViewAdv has the advanced ability to sort the TreeViewItemAdv items at run ti
 
 treeViewAdv.Sorting = SortDirection.Ascending; 
 
+{% endhighlight %}
 
-
-Sorting Field
+### Sorting Field
 
 
 
@@ -633,7 +624,7 @@ Using SortingField property, you can specify a sorting criteria. This is depende
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -684,25 +675,22 @@ Using SortingField property, you can specify a sorting criteria. This is depende
 </syncfusion:TreeViewAdv>
 
 
+{% endhighlight %} 
 
 
 
-[C#]
 
-
+{% highlight C# %}
 
 //Sort the item based on criteria
 
 treeViewAdv.SortingField = "Header";  
 
+{% endhighlight %}
 
 
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img6.jpeg)' | markdownify }}
-{:.image }
-
-
+![](Interactive-Features_images/Interactive-Features_img6.jpeg)
 
 
 ## Setting a TreeViewItem Expanded
@@ -711,7 +699,7 @@ You can expand or collapse the TreeViewAdv by enabling or disabling the IsExpand
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -749,9 +737,9 @@ You can expand or collapse the TreeViewAdv by enabling or disabling the IsExpand
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -759,13 +747,11 @@ You can expand or collapse the TreeViewAdv by enabling or disabling the IsExpand
 
 treeViewItemAdv.IsExpanded = true;
 
+{% endhighlight %}
 
 
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img7.jpeg)' | markdownify }}
-{:.image }
-
+![](Interactive-Features_images/Interactive-Features_img7.jpeg)
 
 
 
@@ -775,7 +761,7 @@ The Expand or Collapse operation in a TreeViewAdv leads to an animated action. T
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -835,14 +821,11 @@ The Expand or Collapse operation in a TreeViewAdv leads to an animated action. T
 
 </Window>
 
+{% endhighlight %}
 
 
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img8.jpeg)' | markdownify }}
-{:.image }
-
-
+![](Interactive-Features_images/Interactive-Features_img8.jpeg)
 
 
 ### Animation Speed
@@ -851,7 +834,7 @@ The speed of animation that is generated while expanding or collapsing the TreeV
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -889,9 +872,9 @@ The speed of animation that is generated while expanding or collapsing the TreeV
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -899,7 +882,7 @@ The speed of animation that is generated while expanding or collapsing the TreeV
 
 treeViewAdv.AnimationSpeed = 2;
 
-
+{% endhighlight %}
 
 ### Animation Type
 
@@ -917,7 +900,7 @@ Use the following code to set this property.
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -955,11 +938,11 @@ Use the following code to set this property.
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -979,6 +962,7 @@ treeViewAdv.AnimationType = AnimationType.Slide;
 
 treeViewAdv.AnimationType = AnimationType.None;
 
+{% endhighlight %}
 
 
 ### Animation Settings
@@ -987,7 +971,7 @@ You can enable animation, while the tree nodes are expanded and collapsed. This 
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -1061,7 +1045,7 @@ You can enable animation, while the tree nodes are expanded and collapsed. This 
 
 </Window>
 
-
+{% endhighlight %}
 
 ## Setting flow directions 
 
@@ -1072,7 +1056,7 @@ The flow direction for the TreeViewAdv is set through the FlowDirection property
 
 
 
- [XAML]
+ {% highlight xml %}
 
 
 
@@ -1122,11 +1106,11 @@ The flow direction for the TreeViewAdv is set through the FlowDirection property
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -1134,11 +1118,9 @@ The flow direction for the TreeViewAdv is set through the FlowDirection property
 
 treeViewAdv.FlowDirection = FlowDirection.LeftToRight;
 
+{% endhighlight %}
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img9.jpeg)' | markdownify }}
-{:.image }
-
+![](Interactive-Features_images/Interactive-Features_img9.jpeg)
 
 
 
@@ -1148,7 +1130,7 @@ TreeViewAdv control now provides support to reorder the columns in the TreeViewA
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -1186,9 +1168,9 @@ TreeViewAdv control now provides support to reorder the columns in the TreeViewA
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -1196,17 +1178,17 @@ TreeViewAdv control now provides support to reorder the columns in the TreeViewA
 
 treeViewAdv.AllowsColumnReorder = true;
 
+{% endhighlight %}
 
+> Note: This property takes effect only when the MultiColumnEnable property is set to True.
 
-> _Note: This property takes effect only when the MultiColumnEnable property is set to True._
-
->  _Selecting a Node_
+>  Selecting a Node
 
 You can show a node to be selected, at runtime, when the TreeViewAdv control is loaded, by setting the IsSelected property of a particular node to _true._ Here is the code snippet to enable this property.
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -1256,9 +1238,9 @@ You can show a node to be selected, at runtime, when the TreeViewAdv control is 
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -1267,13 +1249,10 @@ You can show a node to be selected, at runtime, when the TreeViewAdv control is 
 treeViewItemAdv1.IsSelected = true; 
 
 
+{% endhighlight %}
 
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img10.jpeg)' | markdownify }}
-{:.image }
-
-
+![](Interactive-Features_images/Interactive-Features_img10.jpeg)
 
 
 ## Creating a MultiColumnTreeView
@@ -1282,7 +1261,7 @@ TreeView control can be created with multiple columns by setting the MultiColumn
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -1333,23 +1312,21 @@ TreeView control can be created with multiple columns by setting the MultiColumn
 </syncfusion:TreeViewAdv>
 
 
+{% endhighlight %}
 
 
-
-[C#]
-
+{% highlight C# %}
 
 
 //Enable multiple column enable
 
 treeViewAdv.MultiColumnEnable = true;
 
+{% endhighlight %}
 
 
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img11.jpeg)' | markdownify }}
-{:.image }
+![](Interactive-Features_images/Interactive-Features_img11.jpeg)
 
 
 
@@ -1359,9 +1336,7 @@ treeViewAdv.MultiColumnEnable = true;
 You can set headers for individual columns using the Columns property. All the columns are defined in TreeViewColumnCollections.
 
 
-
-[XAML]
-
+{% highlight xml %}
 
 
 <!-- Adding TreeViewAdv with Enabling multiple column -->
@@ -1434,21 +1409,16 @@ You can set headers for individual columns using the Columns property. All the c
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img12.jpeg)' | markdownify }}
-{:.image }
-
-
+![](Interactive-Features_images/Interactive-Features_img12.jpeg)
 
 
 ### Auto-Resize of Columns in Multicolumn TreeView
 
 The width property of TreeViewColumn has changed from a double type to a GridLength type that can be set to the Auto or * values. When the column width is set as Auto, the desired size or minimum size will be set as the width of the column. When the width is set as *, the remaining space that is available in the window will be set as the width of the column. Similarly, the value can be set as 0.3*, 2*,128*, etc. 
 
-
-
-[XAML]
+{% highlight xml %}
 
   <!-- Adding TreeViewAdv with Enabling multiple column -->
 
@@ -1515,7 +1485,7 @@ DisplayMemberBinding="{Binding Path=Header, RelativeSource={RelativeSource Ances
 </syncfusion:TreeViewAdv>
 
 
-
+{% endhighlight %}
 
 
 ## Dragging TreeView Items
@@ -1526,7 +1496,7 @@ Use the following code to enable this property.
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -1565,9 +1535,10 @@ Use the following code to enable this property.
 </syncfusion:TreeViewAdv>
 
 
+{% endhighlight %}
 
-[C#]
 
+{% highlight C# %}
 
 
 // Enable drag-and-drop operation
@@ -1575,11 +1546,10 @@ Use the following code to enable this property.
 treeViewAdv.AllowDragDrop = true;
 
 
+{% endhighlight %}
 
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img13.jpeg)' | markdownify }}
-{:.image }
+![](Interactive-Features_images/Interactive-Features_img13.jpeg)
 
 
 
@@ -1590,7 +1560,7 @@ You can easily edit the tree node items at runtime, by enabling IsEditable prope
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -1640,11 +1610,11 @@ You can easily edit the tree node items at runtime, by enabling IsEditable prope
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -1653,22 +1623,19 @@ You can easily edit the tree node items at runtime, by enabling IsEditable prope
 treeViewItemAdv1.IsEditable = true;
 
 
+{% endhighlight %}
 
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img14.jpeg)' | markdownify }}
-{:.image }
+![](Interactive-Features_images/Interactive-Features_img14.jpeg)
 
 
-
-
-Setting Node in EditMode
+### Setting Node in EditMode
 
 You can also set a node to be in edit mode when the tree view loads. This is done using the IsInEditMode property. When this property is set to _true_, the particular node will be in edit mode when it loads. 
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -1718,9 +1685,9 @@ You can also set a node to be in edit mode when the tree view loads. This is don
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -1728,13 +1695,9 @@ You can also set a node to be in edit mode when the tree view loads. This is don
 
 treeViewItemAdv1.IsInEditMode = true; 
 
+{% endhighlight %}
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img15.jpeg)' | markdownify }}
-{:.image }
-
-
-
+![](Interactive-Features_images/Interactive-Features_img15.jpeg)
 
 ### Node Editing Event
 
@@ -1747,8 +1710,7 @@ The following events are handled when the tree node is in Edit Mode.
 
 
 
-[C#]
-
+{% highlight C# %}
 
 
 private void TreeViewItemAdv_EditKeyDown(object sender, KeyEventArgs e)
@@ -1783,13 +1745,13 @@ private void TreeViewItemAdv_BeforeItemEdit(object sender, EditModeChangeEventAr
 
 }
 
-
+{% endhighlight %}
 
 ## Support for Binding SelectedItem of TreeViewAdv in Model View ViewModel pattern
 
 A new set of properties namely SelectedTreeItem and SelectedTreeItemObject have been defined to bind SelectedItem value for TreeViewAdv in MVVM pattern.
 
-Use Case Scenario
+### Use Case Scenario
 
 Users can get the SelectedItem using SelectedTreeItem property in order to enable two way binding between SelectedItem property in View and SelectedTreeItem property of TreeViewAdv, without modifying the actual SelectedItem property of TreeViewAdv.
 
@@ -1797,9 +1759,9 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 SelectedTreeItem</td><td>
@@ -1811,13 +1773,13 @@ This can be used to bind the Selected TreeView Item object to a property of MVVM
 </table>
 
 
-Adding SelectedTreeItem Binding in TreeViewAdv Application
+### Adding SelectedTreeItem Binding in TreeViewAdv Application
 
 Use the following code snippet to define the SelectedTreeItem binding in TreeViewAdv.
 
 
 
-[XAML]
+{% highlight xml %}
 
                 <sync:TreeViewAdv  ItemsSource="{Binding ItemsCollection}" SelectedTreeItem="{Binding Path=SelectedItem,Mode=TwoWay}" AllowMultiSelect="False" x:Name="tree" Margin="36,12,121,76" >
 
@@ -1833,13 +1795,13 @@ Use the following code snippet to define the SelectedTreeItem binding in TreeVie
 
         </sync:TreeViewAdv>
 
-
+{% endhighlight %}
 
 
 
 Where, SelectedItem is a property in Views.
 
-Samples Location:
+### Samples Location:
 
 The samples are located in the following location:
 
@@ -1855,7 +1817,7 @@ VirtualizationMode: Sets the virtualization mode for TreeViewItems. If Virtualiz
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -1865,28 +1827,23 @@ VirtualizationMode: Sets the virtualization mode for TreeViewItems. If Virtualiz
 
 </syncfusion:TreeViewAdv>
 
+{% endhighlight %}
 
-
-[C#]
-
-
-Loading Items"/>
-
-
+{% highlight C# %}
 
 TreeViewAdv items = new TreeViewAdv();
 
 items.VirtualizationMode = Syncfusion.Windows.Tools.VirtualizationMode.Normal;
 
 
-
+{% endhighlight %}
 
 
 2. VirtualizationMode is extended:  IVirtualTree interface has to be implemented by the class creating the business object for TreeViewItem.
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -1898,12 +1855,10 @@ items.VirtualizationMode = Syncfusion.Windows.Tools.VirtualizationMode.Normal;
 
 
 
+{% endhighlight %}
 
+{% highlight C# %}
 
-[C#]
-
-
-Loading Items"/>
 
 
 
@@ -1911,7 +1866,7 @@ TreeViewAdv items = new TreeViewAdv();
 
 items.VirtualizationMode = Syncfusion.Windows.Tools.VirtualizationMode.Extended;
 
-
+{% endhighlight %}
 
 
 
@@ -1919,7 +1874,7 @@ items.VirtualizationMode = Syncfusion.Windows.Tools.VirtualizationMode.Extended;
 
 
 
-[C#]
+{% highlight C# %}
 
 
 Loading Items"/>
@@ -2048,15 +2003,15 @@ Loading Items"/>
 
     }
 
-
+{% endhighlight %}
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 VirtualizationMode </td><td>
@@ -2079,7 +2034,7 @@ The LoadOnDemand feature enables users to load items dynamically when a particul
 
 
 
-[XAML]
+{% highlight xml %}
 
         <syncfusion:TreeViewAdv LoadOnDemand="TreeViewAdv_LoadOnDemand">
 
@@ -2090,10 +2045,10 @@ The LoadOnDemand feature enables users to load items dynamically when a particul
         </syncfusion:TreeViewAdv>
 
 
+{% endhighlight %}
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -2149,18 +2104,16 @@ Loading Items"/>
         }
 
 
+{% endhighlight %}
 
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img16.png)' | markdownify }}
-{:.image }
-
+![](Interactive-Features_images/Interactive-Features_img16.png)
 
 2. LoadingHeaderTemplate
 
 
 
-[XAML]
+{% highlight xml %}
 
         <syncfusion:TreeViewAdv LoadOnDemand="TreeViewAdv_LoadOnDemand">
 
@@ -2182,23 +2135,18 @@ Loading Items"/>
 
 
 
+{% endhighlight %}
 
-
-{{ '![](Interactive-Features_images/Interactive-Features_img17.png)' | markdownify }}
-{:.image }
-
-
-__
-
+![](Interactive-Features_images/Interactive-Features_img17.png)
 Properties
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 LoadingHeaderTemplate</td><td>
@@ -2230,32 +2178,32 @@ Description </th><th>
 Arguments </th><th>
 Type </th></tr>
 <tr>
-<th>
-LoadOnDemand </th><th>
-Fired when expanding TreeViewItem which loads item on demand. </th><th>
-Object , EventArgs </th><th>
- Routed Event. </th></tr>
+<td>
+LoadOnDemand </td><td>
+Fired when expanding TreeViewItem which loads item on demand. </td><td>
+Object , EventArgs </td><td>
+ Routed Event. </td></tr>
 </table>
+
+
 ## Transparent Dragging Image
 
 The TreeViewAdv control provides support to change the opacity of an element being dragged. By using the DraggingContainerOpacity property,we can change the opacity value of the dragged element. It is useful to be able to view the content behind the dragged element.
 
 
 
-{{ '![](Interactive-Features_images/Interactive-Features_img18.png)' | markdownify }}
-{:.image }
+![](Interactive-Features_images/Interactive-Features_img18.png)
 
 
 
-
-Properties
+### Properties
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 DraggingContainerOpacity</td><td>
@@ -2264,23 +2212,23 @@ Double</td></tr>
 </table>
 
 
-[XAML]
+{% highlight xml %}
 
       <syncfusion:TreeViewAdv x:Name="TreeView"
 
                                DraggingContainerOpacity="0.4"/>        
 
+{% endhighlight %}
 
 
 
-
-[C#]
+{% highlight xml %}
 
        TreeViewAdv TreeView = new TreeViewAdv();
 
         TreeView.DraggingContainerOpacity = 0.4;
 
-
+{% endhighlight %}
 
 
 

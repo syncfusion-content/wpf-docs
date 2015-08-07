@@ -11,15 +11,17 @@ documentation: ug
 
 The ColorPickerPalette control includes a list of predefined themes. It allows you to set the required themes. Based on the selected themes, combination of selected theme colors will be displayed on the ThemePanel. The default theme if set to “Office” theme. You can also set the visibility of the ThemePanel by using the ThemePanelVisibility Property.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 You can use the Color Themes to have colors based on specific themes.
 
-Adding Color Theme to an Application 
+## Adding Color Theme to an Application 
 
 Color themes can be added to an application by using XAML or C# code.
 
 The following code example illustrates how to add the Color Theme feature to an application through XAML.
+
+{% highlight xml %}
 
 [XAML]
 
@@ -27,11 +29,13 @@ The following code example illustrates how to add the Color Theme feature to an 
 
 <sync:ColorPickerPalette x:Name="ColorPicker" Themes="Apex" />
 
-
+{% endhighlight %}
 
 
 
 The following code example illustrates how to add the Color Theme feature to an application through C#.
+
+{% highlight C# %}
 
 [C#]
 
@@ -41,29 +45,29 @@ ColorPickerPalette colorpicker = new ColorPickerPalette();
 
 colorpicker.Themes = PaletteTheme.Apex;
 
+{% endhighlight %}
+
+
+
+![](Color-Themes_images/Color-Themes_img1.png)
 
 
 
 
-{{ '![](Color-Themes_images/Color-Themes_img1.png)' | markdownify }}
-{:.image }
+
+![](Color-Themes_images/Color-Themes_img2.png)
 
 
 
 
-{{ '![](Color-Themes_images/Color-Themes_img2.png)' | markdownify }}
-{:.image }
+
+![](Color-Themes_images/Color-Themes_img3.png)
 
 
 
 
-{{ '![](Color-Themes_images/Color-Themes_img3.png)' | markdownify }}
-{:.image }
 
-
-
-
-Properties
+## Properties
 
 _Color Theme Properties Table_
 
@@ -85,7 +89,7 @@ PaletteTheme.Office</td><td>
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

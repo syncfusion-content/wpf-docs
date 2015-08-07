@@ -11,16 +11,16 @@ documentation: ug
 
 The size of the minimized TileViewItem can be set by using the MinimizedItemsPercentage property. The size of the minimized items is set in percentage. The percentage set is calculated relative to the total size of the control. 
 
-Adding Minimizing Item size to an Application 
+## Adding Minimizing Item size to an Application 
 
 The minimizing item size can be added to an application by using either XAML or C# code.
 
-Adding through XAML
+## Adding through XAML
 
 The following code example illustrates how to add the minimizing item size to an application through XAML.
 
 
-
+{% highlight xml %}
 [XAML]
 
 <syncfusion:TileViewControl x:Name="TileView1" Background="White" 
@@ -52,17 +52,17 @@ The following code example illustrates how to add the minimizing item size to an
                              HeaderBackground="Gray" CornerRadius="3"/>
 
 </syncfusion:TileViewControl>
+{% endhighlight %}
 
 
 
 
-
-Adding through C#
+## Adding through C#
 
 The following code example illustrates how to add the minimizing item size to an application through C#.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -93,19 +93,19 @@ The following code example illustrates how to add the minimizing item size to an
 
             this.LayoutRoot.Children.Add(Tile);
 
+{% endhighlight %}
 
 
 
 
 
-
-{{ '![](Minimizing-Item-Size_images/Minimizing-Item-Size_img1.png)' | markdownify }}
-{:.image }
+![](Minimizing-Item-Size_images/Minimizing-Item-Size_img1.png)
 
 
 
 
-Properties
+
+## Properties
 
 
 
@@ -114,11 +114,11 @@ _MinimizedItemTemplate / MaximizedItemTemplate Properties Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td><td>
+{{ '**Reference links**' | markdownify }} </td></tr>
 <tr>
 <td>
 MinimizedItemsPercentage</td><td>
@@ -129,18 +129,18 @@ DependencyProperty</td><td>
 </table>
 
 
-Events
+## Events
 
 _MinimizedItemsPercentageChanged Table_
 
 <table>
 <tr>
 <th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th><th>
-Reference links </th></tr>
+{{ '**Event**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Arguments**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
 <th>
 MinimizedItemsPercentageChanged</th><th>
@@ -151,7 +151,7 @@ The event gets fired when the minimized items percentage of theTileViewItems is 
 </table>
 
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

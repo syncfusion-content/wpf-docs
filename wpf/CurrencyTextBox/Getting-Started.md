@@ -13,14 +13,14 @@ documentation: ug
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 ### CurrencyTextBox Members
@@ -321,6 +321,7 @@ Gets or sets the ZeroColor property.</td><td>
 </td><td>
 ZeroColor</td></tr>
 </table>
+
 #### Methods
 
 _CurrencyTextBox methods table_
@@ -408,6 +409,7 @@ RoutedEventArgs</td><td>
 Occurs when the text selection has changed.</td><td>
 SelectionChanged</td></tr>
 </table>
+
 ### Creating a CurrencyTextBox Control
 
 CurrencyTextBox can be added to the application by using Visual Studio and Microsoft Expression Blend.
@@ -421,8 +423,8 @@ The steps to create a CurrencyTextBox by using Visual Studio in C# are as follow
 
 
 
-{{ '![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 
@@ -431,8 +433,8 @@ The steps to create a CurrencyTextBox by using Visual Studio in C# are as follow
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 
@@ -442,14 +444,16 @@ The steps to create a CurrencyTextBox by using Visual Studio in C# are as follow
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 
 
 5. Click the C# file, to open the C# file and add the CurrencyTextBox to the application.
 
+
+{% highlight C# %}
 
 
 [C#]
@@ -482,10 +486,10 @@ public partial class MainWindow : Window
 
      }
 
+{% endhighlight %}
 
+![](Getting-Started_images/Getting-Started_img6.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
 
 
 > _Note:If you do not set any value to the CurrencyTextBox then the default value will be as follows:_
@@ -510,8 +514,8 @@ The steps to create a CurrencyTextBox by using Visual Studio in XAML are as foll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 
@@ -519,6 +523,7 @@ The steps to create a CurrencyTextBox by using Visual Studio in XAML are as foll
 4. On the Properties window, customize the properties of the CurrencyTextBox.
 
 
+{% highlight xml %}
 
 XAML
 
@@ -542,12 +547,12 @@ XAML
 
 </Window>
 
+{% endhighlight %}
 
 
 
+![](Getting-Started_images/Getting-Started_img8.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
 
 
 See Also
@@ -565,8 +570,8 @@ The steps to create a CurrencyTextBox in the application by using Expression Ble
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
+
 
 
 
@@ -575,8 +580,8 @@ The steps to create a CurrencyTextBox in the application by using Expression Ble
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img10.png)
+
 
 
 1. Add the following reference with the sample project:
@@ -589,8 +594,8 @@ Syncfusion.Shared.WPF.dll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img11.png)
+
 
 
 
@@ -599,11 +604,12 @@ Syncfusion.Shared.WPF.dll
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img12.png)
 
 
 
+
+{% highlight xml %}
 
 XAML
 
@@ -626,11 +632,11 @@ XAML
     </Grid>
 
 </Window>
+{% endhighlight %}
 
 
+![](Getting-Started_images/Getting-Started_img13.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
-{:.image }
 
 
 See Also
@@ -647,20 +653,23 @@ You have to use the Value property to set the value for the CurrencyTextBox.
 
 > _Note: Do not use the Text property to set the value for the CurrencyTextBox. Use only the Value property._
 
-> 
-
-<table>
-<tr>
-<td>
-XAML<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25"                             Value="100"/></td></tr>
-<tr>
-<td>
-C#currencyTextBox.Value = 100;</td></tr>
-</table>
 
 
-{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
-{:.image }
+{% highlight xml %}
+
+XAML
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25" Value="100"/>
+{% endhighlight %}
+
+{% highlight C# %}
+
+C#
+currencyTextBox.Value = 100;
+{% endhighlight %}
+
+
+![](Getting-Started_images/Getting-Started_img14.png)
+
 
 
 See Also
@@ -675,18 +684,22 @@ You can set the Minimum and Maximum value by using the MinVal and MaxVal propert
 
 
 
-<table>
-<tr>
-<td>
-XAML<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25" Value="100"                            MinValue="-999.99" MaxValue="999.99"/></td></tr>
-<tr>
-<td>
-C#currencyTextBox.MinValue = -999.99;currencyTextBox.MaxValue = 999.99;</td></tr>
-</table>
+{% highlight xml %}
+
+XAML
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Width="100" Height="25" Value="100"   MinValue="-999.99" MaxValue="999.99"/>
+{% endhighlight %}
+
+{% highlight C# %}
+
+C#
+currencyTextBox.MinValue = -999.99;
+currencyTextBox.MaxValue = 999.99;
+{% endhighlight %}
 
 
-{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img15.png)
+
 
 
 See Also
@@ -701,20 +714,25 @@ You can set the Watermark for the CurrencyTextBox by using the WatermarkText pro
 
 > _Note: WatermarkText is visible only when the value is null._
 
-> 
+{% highlight xml %}
 
-<table>
-<tr>
-<td>
-XAML<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="100"                Value="{x:Null}" MinValue="-999" MaxValue="999"                UseNullOption="True"                WatermarkText="Type Here" WatermarkTextIsVisible="True"/></td></tr>
-<tr>
-<td>
-C#currencyTextBox.UseNullOption = true;currencyTextBox.NullValue = null;currencyTextBox.WatermarkText = "Type Here";currencyTextBox.WatermarkTextIsVisible = true;</td></tr>
-</table>
+XAML
+<syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="100" Value="{x:Null}" MinValue="-999" MaxValue="999" 
+ UseNullOption="True"   WatermarkText="Type Here" WatermarkTextIsVisible="True"/>
+{% endhighlight %}
+
+{% highlight C# %}
+
+C#
+currencyTextBox.UseNullOption = true;
+currencyTextBox.NullValue = null;
+currencyTextBox.WatermarkText = "Type Here";
+currencyTextBox.WatermarkTextIsVisible = true;
+{% endhighlight %}
 
 
-{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img16.png)
+
 
 
 See Also

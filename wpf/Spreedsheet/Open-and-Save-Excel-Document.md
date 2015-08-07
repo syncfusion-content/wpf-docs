@@ -26,81 +26,88 @@ You can open the Excel document using the one of the following override methods:
 
 The following code illustrates how to open Spreadsheet control with file stream:
 
+{%highlight c#%}
+[C#]
+spreadsheet.ImportFromExcel(stream);
+{%endhighlight%}
 
+{%highlight vbnet%}
+ [VB]
+ spreadsheet.ImportFromExcel(stream)
+{%endhighlight%}
 
-<table>
-<tr>
-<td colspan = "2">
-[C#]spreadsheet.ImportFromExcel(stream);</td></tr>
-<tr>
-<td>
- [VB]spreadsheet.ImportFromExcel(stream)</td></tr>
-</table>
 
 
 The following code illustrates how to open Spreadsheet control with file stream and ExcelOpenType:
 
+{%highlight c#%}
+[C#]
+spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelOpenType.Automatic);
+{%endhighlight%}
 
+{%highlight vbnet%}
+[VB]spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelOpenType.Automatic)
+{%endhighlight%}
 
-<table>
-<tr>
-<td>
-[C#]spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelOpenType.Automatic);</td></tr>
-<tr>
-<td>
- [VB]spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelOpenType.Automatic)</td></tr>
-</table>
 
 
 The following code illustrates how to open Spreadsheet control with file stream and Excel Version:
 
 
+{%highlight c#%}
+[C#]
+spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelVersion.Excel2010);
+{%endhighlight%}
 
-<table>
-<tr>
-<td>
-[C#]spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelVersion.Excel2010);</td></tr>
-<tr>
-<td>
- [VB]spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelVersion.Excel2010)</td></tr>
-</table>
+
+{%highlight vbnet%}
+[VB]
+spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelVersion.Excel2010)
+{%endhighlight%}
+
 
 
 The following code illustrates how to open Spreadsheet control with file stream, ExcelOpenType and Excel Version:
 
 
+{%highlight c#%}
 
-<table>
-<tr>
-<td>
-[C#]spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelOpenType.Automatic, Syncfusion.XlsIO.ExcelVersion.Excel2010);</td></tr>
-<tr>
-<td>
- [VB]spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelVersion.Excel2010)</td></tr>
-</table>
+[C#]
+spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelOpenType.Automatic, Syncfusion.XlsIO.ExcelVersion.Excel2010);
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+
+[VB]
+spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelVersion.Excel2010)
 
 
-Using Command 
+{%endhighlight%}
+
+
+
+### Using Command 
 
 You can also open the Excel document by using the ImportFromExcelCommand_._ When you execute the ImportFromExcelCommand it will open the Open dialog box. Using that dialog you can open the Excel document. 
 
 
 
-{{ '![](Open-and-Save-Excel-Document_images/Open-and-Save-Excel-Document_img1.png)' | markdownify }}
-{:.image }
+![](Open-and-Save-Excel-Document_images/Open-and-Save-Excel-Document_img1.png)
+
 
 
 
 
 The following code illustrates how to bind the ImportFromExcelCommand__to a button: 
 
-
+{%highlight xml%}
 
 [XAML]
 
 <Button Command="{Binding Path= ImportFromExcelCommand}"/>
 
-
+{%endhighlight%}
 
 ## Save Excel Documents
 
@@ -108,37 +115,42 @@ To save the current Workbook, call the _SaveAs_ method as given in the following
 
 
 
-<table>
-<tr>
-<td>
-[C#]spreadControl.SaveAs();</td></tr>
-<tr>
-<td>
- [VB]spreadControl.SaveAs()</td></tr>
-</table>
+{%highlight c#%}
+[C#]
+spreadControl.SaveAs();
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+
+[VB]
+spreadControl.SaveAs()
+
+{%endhighlight%}
+
 
 
 Save As dialog box will open. Save the document at the required location.  
 
 
 
-{{ '![](Open-and-Save-Excel-Document_images/Open-and-Save-Excel-Document_img2.png)' | markdownify }}
-{:.image }
+![](Open-and-Save-Excel-Document_images/Open-and-Save-Excel-Document_img2.png)
 
 
 
 
-Using Command
+
+### Using Command
 
 You can save the Excel document using the ExportToExcelCommand_._ When you execute the ExportToExcelCommand_,_ it will open the SaveAs__dialog box. Save the content of the Spreadsheet control as Excel document.
 
 The following code illustrates how to bind the ExportToExcelCommand__to a button: 
 
-
+{%highlight xml%}
 
 [XAML]
 
 <Button Command="{Binding Path= ExportToExcelCommand}"/>
 
-
+{%endhighlight%}
 

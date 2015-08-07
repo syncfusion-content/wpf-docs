@@ -12,7 +12,7 @@ documentation: ug
 You can customize leaf nodes by assigning data template to LeafTemplate of SfTreeMap. 
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -62,9 +62,9 @@ You can customize leaf nodes by assigning data template to LeafTemplate of SfTre
     </syncfusion:SfTreeMap>
 
 </Grid>
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -124,10 +124,10 @@ You can customize leaf nodes by assigning data template to LeafTemplate of SfTre
         public ImageSource GameImgSource { get; set; }
 
     }
+{% endhighlight %}
 
 
+![](Customizing-Leaf-Nodes_images/Customizing-Leaf-Nodes_img1.png)
 
-{{ '![](Customizing-Leaf-Nodes_images/Customizing-Leaf-Nodes_img1.png)' | markdownify }}
-{:.image }
 
 

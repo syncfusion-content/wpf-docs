@@ -13,45 +13,50 @@ The OLAP Client allows the user to store the current session as a stream anywher
 
 The following code describes getting the report as stream:
 
-[C#]
+{% highlight C# %}   
 
+[C#]
 
 
 Stream stream = this.olapClient1.GetReportStream();
 
 
+{% endhighlight %}
 
 
+{% highlight vbnet %} 
 
 [VB]
 
 
-
 Dim stream As Stream = Me.olapClient1.GetReportStream()
 
-
+{% endhighlight %} 
 
 
 
 The following code will illustrate how to load a stream to OLAP Client: 
 
-[C#]
+{% highlight C# %}  
+
+ [C#]
 
 
 
 this.olapClient1.LoadReportStream(reportStream);
 
+{% endhighlight %}
 
 
 
+{% highlight vbnet %} 
 
 [VB]
 
 
-
 Me.olapClient1.LoadReportStream(reportStream)
 
-
+{% endhighlight %} 
 
 
 
@@ -59,7 +64,9 @@ The following sample code describes the storing of the stream in DataBase and re
 
 Storing Report as a Stream to the Data Base:
 
-[C#]
+{% highlight C# %}  
+
+ [C#]
 
 
 
@@ -99,11 +106,13 @@ if (stream!= null)
 
 }
 
+{% endhighlight %}
 
 
 
+{% highlight vbnet %} 
 
-[VB]
+ [VB]
 
 
 
@@ -141,9 +150,11 @@ End If
 
 End If
 
-
+{% endhighlight %}
 
 Loading Report as a stream to OLAP Client. 
+
+{% highlight C# %} 
 
 [C#]
 
@@ -190,8 +201,10 @@ this.olapClient1.LoadReportStream(reportStream);
 con.Close();
 
 
+ {% endhighlight %} 
 
 
+{% highlight vbnet %} 
 
 [VB]
 
@@ -234,12 +247,12 @@ Me.olapClient1.LoadReportStream(reportStream)
 con.Close()
 
 
-
+{% endhighlight %} 
 
 
 
 
 Samples which demonstrate this feature is available in the following sample installation location.
 
-_<Install Location>\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OlapClient.WPF\Samples\OLAP Client\_
+<Install Location>\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OlapClient.WPF\Samples\OLAP Client\
 

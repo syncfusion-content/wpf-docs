@@ -14,8 +14,7 @@ ToolBarAdv can be set to docking, floating or hidden state as required.
 Following code illustrates how to set ToolBarAdv to floating state:
 
 
-
-[XAML]
+{% highlight xml %}
 
 
 
@@ -138,10 +137,9 @@ Following code illustrates how to set ToolBarAdv to floating state:
         </shared:ToolBarManager>
 
 
+{% endhighlight %}
 
-
-
-[C#]
+{% highlight C# %}
 
 ToolBarAdv toolBar = new ToolBarAdv();
 
@@ -151,11 +149,9 @@ ToolBarAdv toolBar = new ToolBarAdv();
 
 
 
+{% endhighlight %}
 
-
-{{ '![](ToolBarAdv-state_images/ToolBarAdv-state_img1.png)' | markdownify }}
-{:.image }
-
+![](ToolBarAdv-state_images/ToolBarAdv-state_img1.png)
 
 
 
@@ -167,15 +163,15 @@ You can change the location of the floating ToolBarAdv using the _FloatingBarLoc
 
 
 
-[XAML]
+{% highlight xml %}
 
 <shared:ToolBarAdv FloatingBarLocation="50,50"></shared:ToolBarAdv>
 
+{% endhighlight %}
 
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -184,6 +180,6 @@ ToolBarAdv toolBar = new ToolBarAdv();
             toolBar.FloatingBarLocation = new Point(50, 50);
 
 
-
+{% endhighlight %}
 
 

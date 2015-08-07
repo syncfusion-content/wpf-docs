@@ -9,6 +9,10 @@ documentation: ug
 
 # KML Shapes Rendered in SubShapeFileLayer
 
+
+{% highlight xml %}
+
+
 [XAML]
 
 
@@ -31,11 +35,11 @@ documentation: ug
 
         </syncfusion:SfMap>
 
+{% endhighlight %}
 
 
 
+![](KML-Shapes-Rendered-in-SubShapeFileLayer_images/KML-Shapes-Rendered-in-SubShapeFileLayer_img1.png)
 
-{{ '![](KML-Shapes-Rendered-in-SubShapeFileLayer_images/KML-Shapes-Rendered-in-SubShapeFileLayer_img1.png)' | markdownify }}
-{:.image }
 
 

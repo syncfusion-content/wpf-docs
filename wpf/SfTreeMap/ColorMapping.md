@@ -24,7 +24,7 @@ TreeMap ColorMapping:
 The leaf nodes of TreeMap can be colored by setting LeafColorMapping of TreeMap.
 
 
-
+{% highlight xml %}
 [XAML]
 
  <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
@@ -47,7 +47,7 @@ The leaf nodes of TreeMap can be colored by setting LeafColorMapping of TreeMap.
 
  </syncfusion:SfTreeMap>
 
-
+{% endhighlight %}
 
 
 
@@ -58,7 +58,7 @@ TreeMapLevel ColorMapping:
 The headers of TreeMap level can also be colored using ColorMapping property of TreeMapLevel. 
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -100,7 +100,7 @@ The headers of TreeMap level can also be colored using ColorMapping property of 
     </syncfusion:SfTreeMap.Levels>
 
  </syncfusion:SfTreeMap>  
-
+{% endhighlight %}
 
 
 ## UniColorMapping
@@ -108,7 +108,7 @@ The headers of TreeMap level can also be colored using ColorMapping property of 
 TreeMap leaf nodes can be colored with the help of Color property specified using UniColorMapping.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -150,15 +150,15 @@ TreeMap leaf nodes can be colored with the help of Color property specified usin
         </syncfusion:SfTreeMap>
 
     </Grid>
+{% endhighlight %}
 
 
 
 
 
 
+![](ColorMapping_images/ColorMapping_img1.png)
 
-{{ '![](ColorMapping_images/ColorMapping_img1.png)' | markdownify }}
-{:.image }
 
 
 ## RangeBrushColorMapping
@@ -166,7 +166,7 @@ TreeMap leaf nodes can be colored with the help of Color property specified usin
 The leaf nodes of TreeMap can be colored based upon the range, such as From and To, and Brush specified using RangeBrush collection of RangeBrushColorMapping.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -207,12 +207,11 @@ The leaf nodes of TreeMap can be colored based upon the range, such as From and 
 
 </syncfusion:SfTreeMap>
 
+{% endhighlight %}
 
 
 
-
-{{ '![](ColorMapping_images/ColorMapping_img2.png)' | markdownify }}
-{:.image }
+![](ColorMapping_images/ColorMapping_img2.png)
 
 
 ## DesaturationColorMapping
@@ -220,7 +219,7 @@ The leaf nodes of TreeMap can be colored based upon the range, such as From and 
 The leaf nodes of TreeMap can be colored based upon the Color specified using DesaturationColorMapping. The RangeMinimum and RangeMaximum must be specified to determine the opacity for each leaf node. The opacity of leaf nodes are in the range of From and To mentioned in DesaturationColorMapping.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -251,12 +250,12 @@ The leaf nodes of TreeMap can be colored based upon the Color specified using De
 
 </syncfusion:SfTreeMap>
 
+{% endhighlight %}
 
 
 
+![](ColorMapping_images/ColorMapping_img3.png)
 
-{{ '![](ColorMapping_images/ColorMapping_img3.png)' | markdownify }}
-{:.image }
 
 
 ## PaletteColorMapping
@@ -264,7 +263,7 @@ The leaf nodes of TreeMap can be colored based upon the Color specified using De
 The leaf nodes are colored by using the brushes mentioned in Colors collection of PaletteColorMapping.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -309,12 +308,12 @@ The leaf nodes are colored by using the brushes mentioned in Colors collection o
 
 </syncfusion:SfTreeMap>
 
+{% endhighlight %}
 
 
 
+![](ColorMapping_images/ColorMapping_img4.png)
 
-{{ '![](ColorMapping_images/ColorMapping_img4.png)' | markdownify }}
-{:.image }
 
 
 ## GroupColorMapping
@@ -322,7 +321,7 @@ The leaf nodes are colored by using the brushes mentioned in Colors collection o
 The leaf nodes are colored by using different ColorMappings available in the TreeMap control. Each group can also be colored with different ColorMappings of TreeMapGroupColorMapping. GroupColorMapping is done based on the GroupID property.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -391,9 +390,9 @@ The leaf nodes are colored by using different ColorMappings available in the Tre
 
 </syncfusion:SfTreeMap>
 
+{% endhighlight %}
 
+![](ColorMapping_images/ColorMapping_img5.png)
 
-{{ '![](ColorMapping_images/ColorMapping_img5.png)' | markdownify }}
-{:.image }
 
 

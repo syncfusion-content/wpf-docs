@@ -22,21 +22,21 @@ Spreadsheet control provides support to protect and unprotect the workbook with 
 
 
 
-Protect workbook
+### Protect workbook
 
 You can protect the workbook using the Protect Structure and Windows dialog box. You can open the Protect Structure and Windows dialog using the ProtectWorkbookCommand_._
 
 
 
-{{ '![](Documents-Settings_images/Documents-Settings_img1.png)' | markdownify }}
-{:.image }
+![](Documents-Settings_images/Documents-Settings_img1.png)
+
 
 
 
 
 The following code illustrates how to bind the ProtectWorkbookCommand__to a button: 
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -46,20 +46,20 @@ The following code illustrates how to bind the ProtectWorkbookCommand__to a butt
 
 </Button>
 
-
+{%endhighlight%}
 
 > _Note: The ProtectWorkbookCommand will open the Unprotect Workbook dialog box if the workbook is already protected._ 
 
 
 
-Unprotect workbook
+### Unprotect workbook
 
 You can unprotect the workbook using the Unprotect Workbook dialog box. You can open the Unprotect Workbook dialog using the ProtectWorkbookCommand_._
 
 
 
-{{ '![](Documents-Settings_images/Documents-Settings_img2.png)' | markdownify }}
-{:.image }
+![](Documents-Settings_images/Documents-Settings_img2.png)
+
 
 
 
@@ -73,55 +73,69 @@ Spreadsheet control supports to protect and unprotect a worksheet. You can set t
 
 
 
-Protect/Unprotect worksheet using method
+### Protect/Unprotect worksheet using method
 
-Protect
+### Protect
 
 To set a worksheet as password protected, pass the sheet name and the password as String to ProtectSheet method. This prevents unwanted changes to the worksheet. 
 
 Following code illustrates this:
 
-<table>
-<tr>
-<td>
-[C#]spreadControl.ProtectSheet("Sheet1", "asd123");</td></tr>
-<tr>
-<td>
-[VB]spreadControl.ProtectSheet("Sheet1", "asd123")</td></tr>
-</table>
+{%highlight c#%}
+
+[C#]
+
+spreadControl.ProtectSheet("Sheet1", "asd123");
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+
+[VB]
+
+spreadControl.ProtectSheet("Sheet1", "asd123")
+
+{%endhighlight%}
 
 
-UnProtect
+
+### UnProtect
 
 To unprotect a worksheet, pass the sheet name and the password as String to the UnProtectSheet method.
 
+{%highlight c#%}
+
+[C#]
+
+spreadControl.UnProtectSheet("Sheet1", "asd123");
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+
+ [VB]
+ 
+ spreadControl.UnProtectSheet("Sheet1", "asd123")
+ 
+{%endhighlight%}
 
 
-<table>
-<tr>
-<td>
-[C#]spreadControl.UnProtectSheet("Sheet1", "asd123");</td></tr>
-<tr>
-<td>
- [VB]spreadControl.UnProtectSheet("Sheet1", "asd123")</td></tr>
-</table>
 
-
-Protect/Unprotect worksheet using Command
+## Protect/Unprotect worksheet using Command
 
 You can protect/unprotect the current worksheet using the Protect Sheet dialog box. You can open the Protect Sheet dialog using the ProtectCurrentSheetCommand_. If the current worksheet is already protected_ Protect Sheet dialog box will unprotect the worksheet after confirming the password.
 
 
 
-{{ '![](Documents-Settings_images/Documents-Settings_img3.png)' | markdownify }}
-{:.image }
+![](Documents-Settings_images/Documents-Settings_img3.png)
+
 
 
 
 
 The following code illustrates how to bind the ProtectCurrentSheetCommand__to a button: 
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -131,7 +145,7 @@ The following code illustrates how to bind the ProtectCurrentSheetCommand__to a 
 
 </Button>
 
-
+{%endhighlight%}
 
 ## Encrypt workbook
 
@@ -144,37 +158,39 @@ Encryption is used to protect the workbook data with password. It converts the d
 
 
 
-Method
+### Method
 
 To encrypt a workbook, pass the password in the EncryptWorkBook method. The following code illustrates this:
 
+{%highlight c#%}
+
+[C#]
+
+spreadControl.EncryptWorkBook("asd123");
+{%endhighlight%}
+
+{%highlight vbnet%}
+ [VB]
+ spreadControl.EncryptWorkBook("asd123")
+ 
+{%endhighlight%}
 
 
-<table>
-<tr>
-<td>
-[C#]spreadControl.EncryptWorkBook("asd123");</td></tr>
-<tr>
-<td>
- [VB]spreadControl.EncryptWorkBook("asd123")</td></tr>
-</table>
-
-
-Encrypt workbook using the Commands 
+## Encrypt workbook using the Commands 
 
 You can also encrypt the workbook using the Encrypt Document dialog box. You can open the Encrypt Document dialog using the EncryptCommand_._
 
 
 
-{{ '![](Documents-Settings_images/Documents-Settings_img4.png)' | markdownify }}
-{:.image }
+![](Documents-Settings_images/Documents-Settings_img4.png)
+
 
 
 
 
 The following code illustrates how to bind the EncryptCommand__to a button: 
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -184,16 +200,15 @@ The following code illustrates how to bind the EncryptCommand__to a button:
 
 </Button>
 
+{%endhighlight%}
 
-
-Open Encrypted Document
+### Open Encrypted Document
 
 When you open encrypted document Password dialog box will open. Enter password to decrypt the data. 
 
 
+![](Documents-Settings_images/Documents-Settings_img5.png)
 
-{{ '![](Documents-Settings_images/Documents-Settings_img5.png)' | markdownify }}
-{:.image }
 
 
 ## Hide and Unhide Worksheet
@@ -207,34 +222,45 @@ This feature enables you to hide/unhide a worksheet. You can achieve this in two
 
 
 
-Hide worksheet using method
+### Hide worksheet using method
 
 To hide a worksheet, pass the sheet name to the HideSheet method:
 
-<table>
-<tr>
-<td>
-[C#]spreadControl.HideSheet("Sheet1");</td></tr>
-<tr>
-<td>
- [VB]spreadControl.HideSheet("Sheet1")</td></tr>
-</table>
+{%highlight c#%}
+[C#]
+
+spreadControl.HideSheet("Sheet1");
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+
+ [VB]
+ 
+ spreadControl.HideSheet("Sheet1")
+ 
+ {%endhighlight%}
 
 
-Unhide worksheet using method
+
+### Unhide worksheet using method
 
 To unhide a worksheet, pass the sheet name to the UnHideSheet method:
 
 
+{%highlight c#%}
+[C#]
 
-<table>
-<tr>
-<td>
-[C#]spreadControl.UnHideSheet("Sheet1");</td></tr>
-<tr>
-<td>
- [VB]spreadControl.UnHideSheet("Sheet1")</td></tr>
-</table>
+spreadControl.UnHideSheet("Sheet1");
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+ [VB]
+ spreadControl.UnHideSheet("Sheet1")
+ 
+ {%endhighlight%}
+
 
 
 Hide worksheet using comment
@@ -243,7 +269,7 @@ You can hide the current worksheet by using the HideCurrentSheetCommand. When yo
 
 The following code illustrates how to bind the HideCurrentSheetCommand__to a button for hide current worksheet:  
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -255,23 +281,23 @@ The following code illustrates how to bind the HideCurrentSheetCommand__to a but
 
 </Button>
 
+{%endhighlight%}
 
-
-Unhide worksheet using command
+### Unhide worksheet using command
 
 You can unhide the worksheet by using the Unhide dialog box. To open the Unhide dialog box, pass the command parameter as false in the HideCurrentSheetCommand.
 
 
 
-{{ '![](Documents-Settings_images/Documents-Settings_img6.png)' | markdownify }}
-{:.image }
+![](Documents-Settings_images/Documents-Settings_img6.png)
+
 
 
 
 
 The following code illustrates how to bind the HideCurrentSheetCommand__to a button for unhide worksheet: 
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -283,7 +309,7 @@ The following code illustrates how to bind the HideCurrentSheetCommand__to a but
 
 </Button>
 
-
+{%endhighlight%}
 
 ##  Add or Remove Worksheet
 
@@ -291,59 +317,75 @@ This feature enables you to add or remove a worksheet from a workbook.
 
 
 
-Add a worksheet using method
+### Add a worksheet using method
 
 To add a worksheet, pass the sheet name to the AddSheet method.
 
 
+{%highlight c#%}
 
-<table>
-<tr>
-<td>
-[C#]spreadControl.AddSheet("Sheet4");</td></tr>
-<tr>
-<td>
- [VB]spreadControl.AddSheet("Sheet4")</td></tr>
-</table>
+[C#]
+
+spreadControl.AddSheet("Sheet4");
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+
+ [VB]
+ 
+ spreadControl.AddSheet("Sheet4")
+ 
+ {%endhighlight%}
+
 
 
 You can also specify the position of the added worksheet by passing the sheet name and position to the AddSheet method. 
 
 
 
-<table>
-<tr>
-<td>
-[C#]spreadControl.AddSheet("Sheet4", 3);</td></tr>
-<tr>
-<td>
- [VB]spreadControl.AddSheet("Sheet4", 3)</td></tr>
-</table>
+{%highlight c#%}
+[C#]
+
+spreadControl.AddSheet("Sheet4", 3);
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+ [VB]
+
+ spreadControl.AddSheet("Sheet4", 3)</td></tr>
+
+ {%endhighlight%}
 
 
-Remove a worksheet using method
+### Remove a worksheet using method
 
 To remove a worksheet, pass the sheet name to the RemoveSheet method. 
 
 
+{%highlight c#%}
+[C#]
 
-<table>
-<tr>
-<td>
-[C#]spreadControl.RemoveSheet("Sheet4");</td></tr>
-<tr>
-<td>
- [VB]spreadControl.RemoveSheet("Sheet4")</td></tr>
-</table>
+spreadControl.RemoveSheet("Sheet4");
+
+{%endhighlight%}
+
+{%highlight vbnet%}
+ [VB]
+ 
+ spreadControl.RemoveSheet("Sheet4")
+ {%endhighlight%}
 
 
-Add a worksheet using command
+
+### Add a worksheet using command
 
 You can add a worksheet by using the InsertSheetCommand. When you execute this command, it will add a new worksheet at the end of the workbook.
 
 The following code illustrates how to bind the InsertSheetCommandto a button:  
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -353,15 +395,15 @@ The following code illustrates how to bind the InsertSheetCommandto a button:
 
 </Button>
 
+{%endhighlight%}
 
-
-Remove a worksheet using Command
+### Remove a worksheet using Command
 
 You can delete current worksheet using the DeleteCurrentSheetCommand. When you execute this command, it will delete the current worksheet.
 
 The following code illustrates how to bind the DeleteCurrentSheetCommand button:
 
-
+{%highlight xml%}
 
 [XAML]
 
@@ -371,33 +413,33 @@ The following code illustrates how to bind the DeleteCurrentSheetCommand button:
 
 </Button>
 
-
+{%endhighlight%}
 
 ## Document Settings Options
 
 Document properties are named values that provide information about the document namely author, manager, title, tags, commands, subject, company and AppName. Values for these properties can be changed.
 
-Use Case Scenario
+### Use Case Scenario
 
 When importing and exporting and the Excel sheet, users can get and set the values of the Excel properties.
 
 
 
-{{ '![](Documents-Settings_images/Documents-Settings_img7.png)' | markdownify }}
-{:.image }
+![](Documents-Settings_images/Documents-Settings_img7.png)
 
 
 
 
-Properties
+
+### Properties
 
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 Author</td><td>
@@ -459,15 +501,28 @@ String</td></tr>
 
 The following code snippets are used to set values in Document properties:
 
+{%highlight c#%}
+[C#]   
+this.spreadSheetControl.ExcelProperties.Author = "Syncfusion";    
+this.spreadSheetControl.ExcelProperties.Manager = "Syncfusion Manager";    
+this.spreadSheetControl.ExcelProperties.Category = "Spreadsheet control";    
+this.spreadSheetControl.ExcelProperties.Comments = "This document  genera ted by spreadsheet control";                 
+this.spreadSheetControl.ExcelProperties.Company = "Syncfusion";    
+this.spreadSheetControl.ExcelProperties.Title = "Spreadsheet control";    
+this.spreadSheetControl.ExcelProperties.Keywords = "Sync";    
+this.spreadSheetControl.ExcelProperties.Subject = "Native Excel generator";    
+this.spreadSheetControl.ExcelProperties.ApplicationName = " Spreadsheet ";
+{%endhighlight%}
 
+{%highlight vbnet%}
+[VB]
+Me.spreadSheetControl.ExcelProperties.Author = "Syncfusion"
+Me.spreadSheetControl.ExcelProperties.Manager = "Syncfusion Manager"
+Me.spreadSheetControl.ExcelProperties.Category = "Spreadsheet control"
+Me.spreadSheetControl.ExcelProperties.Comments = "This document  genera ted by spreadsheet control"
+Me.spreadSheetControl.ExcelProperties.Company = "Syncfusion"
+Me.spreadSheetControl.ExcelProperties.Title = "Spreadsheet control"
+Me.spreadSheetControl.ExcelProperties.Keywords = "Sync"Me.spreadSheetControl.ExcelProperties.Subject = "Native Excel generator"
+Me.spreadSheetControl.ExcelProperties.ApplicationName = "Spreadsheet "
 
-<table>
-<tr>
-<td>
-[C#]    this.spreadSheetControl.ExcelProperties.Author = "Syncfusion";     this.spreadSheetControl.ExcelProperties.Manager = "Syncfusion Manager";    this.spreadSheetControl.ExcelProperties.Category = "Spreadsheet control";    this.spreadSheetControl.ExcelProperties.Comments = "This document  genera ted by spreadsheet control";                 this.spreadSheetControl.ExcelProperties.Company = "Syncfusion";    this.spreadSheetControl.ExcelProperties.Title = "Spreadsheet control";    this.spreadSheetControl.ExcelProperties.Keywords = "Sync";    this.spreadSheetControl.ExcelProperties.Subject = "Native Excel generator";    this.spreadSheetControl.ExcelProperties.ApplicationName = " Spreadsheet ";</td></tr>
-<tr>
-<td>
-[VB]Me.spreadSheetControl.ExcelProperties.Author = "Syncfusion"Me.spreadSheetControl.ExcelProperties.Manager = "Syncfusion Manager"Me.spreadSheetControl.ExcelProperties.Category = "Spreadsheet control"Me.spreadSheetControl.ExcelProperties.Comments = "This document  genera ted by spreadsheet control"Me.spreadSheetControl.ExcelProperties.Company = "Syncfusion"Me.spreadSheetControl.ExcelProperties.Title = "Spreadsheet control"Me.spreadSheetControl.ExcelProperties.Keywords = "Sync"Me.spreadSheetControl.ExcelProperties.Subject = "Native Excel generator"Me.spreadSheetControl.ExcelProperties.ApplicationName = "Spreadsheet "</td></tr>
-</table>
-
-
+{%endhighlight%}

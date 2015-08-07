@@ -16,7 +16,7 @@ This property is used in both TaskBar and TaskBarItems.
 Use the following code snippet to expand or collapse the TaskBar.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -62,9 +62,9 @@ Use the following code snippet to expand or collapse the TaskBar.
     </syncfusion:TaskBarItem>
 
 </syncfusion:TaskBar>
+{% endhighlight %}
 
-
-
+{% highlight  %}
 [C#]
 
 
@@ -72,13 +72,13 @@ Use the following code snippet to expand or collapse the TaskBar.
 // To Collapse the TaskBarItem in TaskBar.
 
 TaskBar.SetIsOpened(taskBar, false);
+{% endhighlight %}
 
 
 
 
+![](Collapsing-the-TaskBar_images/Collapsing-the-TaskBar_img1.jpeg)
 
-{{ '![](Collapsing-the-TaskBar_images/Collapsing-the-TaskBar_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 
