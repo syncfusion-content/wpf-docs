@@ -18,7 +18,7 @@ Essential Gantt will listen to the dynamic inclusion of inline items and refresh
 The following code illustrates how to add inline items dynamically to the underlying collection.
 
 
-
+{% highlight c# %}
 [C#]
 
 //To add dynamic inline items
@@ -35,11 +35,11 @@ The following code illustrates how to add inline items dynamically to the underl
 
  viewModel.GanttItemSource[0].SubItems[0].InLineItems.Add(item);
 
+{% endhighlight  %}
 
 
 
-
-Use Case Scenarios
+## Use Case Scenarios
 
 A resource view is very useful when you need to manage the resources in a project.
 
@@ -61,7 +61,7 @@ To populate a Resource view Gantt in a Custom Numeric Schedule:
 The following code illustrates this.
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -92,12 +92,12 @@ The following code illustrates this.
 
 </gantt:GanttControl>
 
-
+{% endhighlight  %}
 
 The following code is the sample data source of a resource view Gantt in a custom numeric schedule.
 
 
-
+{% highlight c# %}
 [C#]
 
  ObservableCollection<Item> teams = new ObservableCollection<Item>();
@@ -142,14 +142,14 @@ The following code is the sample data source of a resource view Gantt in a custo
 
 
 
-
+{% endhighlight  %}
 
 The following shows the Resultant output:
 
 
 
-{{ '![](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img1.png)' | markdownify }}
-{:.image }
+![](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img1.png)
+
 
 
 Resource View Gantt with a Date-Time Schedule:
@@ -162,7 +162,7 @@ To populate the Resource view Gantt with a date-time schedule:
 The following code sample illustrates this:
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -175,10 +175,10 @@ The following code sample illustrates this:
  </gantt:GanttControl>
 
 
-
+{% endhighlight  %}
 The following is the sample data source for the resource view Gantt:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -200,7 +200,7 @@ The following is the sample data source for the resource view Gantt:
             Person.InLineItems.Add(new Item() { StartDate = new DateTime(2012, 01, 24), FinishDate = new DateTime(2012, 01, 26), Name = "Budget & Plan Spec" });
             teams[0].SubItems.Add(Person);
 
-
+{% endhighlight  %}
 
 Output
 
@@ -208,33 +208,33 @@ The following image shows the resultant output:
 
 
 
-{{ '![](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img2.png)' | markdownify }}
-{:.image }
+![](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img2.png)
 
 
 
 
-Data Structure
+
+## Data Structure
 
 The following is the data structure used to build a Resource view Gantt: 
 
 
 
-{{ '![](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img3.png)' | markdownify }}
-{:.image }
+![](Resource-View-Gantt-Inline-Items_images/Resource-View-Gantt-Inline-Items_img3.png)
+
 
 
 * team holds information about the team. 
 * SubItems of Team will hold the list of Resources in that particular team.
 * InLineItems of each Resource will hold the tasks assigned to the particular resource.
 
-Information Displayed in Gantt
+## Information Displayed in Gantt
 
 Grid Region:The grid will display only the information about the team and its resources (SubItems). It will not display the information about assigned tasks (InLineItems).
 
 Chart Region: The chart will display only the information about the team and the tasks assigned to each resource in the team (InLineItems). It will not display the information about resources (SubItems).
 
-Sample Link
+## Sample Link
 
 To view samples: 
 

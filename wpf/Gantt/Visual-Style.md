@@ -16,18 +16,18 @@ Essential Gantt enables you to customize the appearance of the control. This sup
 * Office2010Silver
 * Metro
 
-Properties
+## Properties
 
 _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td><td>
-Reference links</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
@@ -38,35 +38,35 @@ NA</td></tr>
 </table>
 
 
-Adding VisualStyle to Gantt Control 
+## Adding VisualStyle to Gantt Control 
 
 You can customize the theme using the VisualStyle property.
 
 The following code illustrates how to set the VisualStyle of Gantt control:
 
-
+{% highlight html %}
 
 [XAML]
 
 <Sync:GanttControl x:Name="Gantt" VisualStyle="Office2010Blue"/>
 
 
-
-
+{% endhighlight %}
+{% highlight c# %}
 [C#]
 
 Gantt.VisualStyle = VisualStyle.Office2010Blue;
 
 
-
+{% endhighlight  %}
 
 
 The following shows Office 2010 Blue:
 
 
 
-{{ '![](Visual-Style_images/Visual-Style_img1.png)' | markdownify }}
-{:.image }
+![](Visual-Style_images/Visual-Style_img1.png)
+
 
 
 _Office 2010 Blue_
@@ -75,8 +75,8 @@ The following image shows Office 2010 silver:
 
 
 
-{{ '![](Visual-Style_images/Visual-Style_img2.png)' | markdownify }}
-{:.image }
+![](Visual-Style_images/Visual-Style_img2.png)
+
 
 
 _Office 2010Silver_
@@ -85,8 +85,8 @@ The following image shows Office 2010Silver:
 
 
 
-{{ '![](Visual-Style_images/Visual-Style_img3.png)' | markdownify }}
-{:.image }
+![](Visual-Style_images/Visual-Style_img3.png)
+
 
 
 _Office2010Black_
@@ -95,13 +95,13 @@ The following image shows Office 2010Metro:
 
 
 
-{{ '![](Visual-Style_images/Visual-Style_img4.png)' | markdownify }}
-{:.image }
+![](Visual-Style_images/Visual-Style_img4.png)
+
 
 
 _Metro_
 
-Samples Link
+## Samples Link
 
 To view samples: 
 

@@ -15,12 +15,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it Accept</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it Accept</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 IsLabelEditable</td><td>
@@ -336,12 +336,12 @@ _Methods Table_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Parameters </td><td>
-Return Type</td><td>
-Description</td><td>
-Reference Links</td></tr>
+<th>
+Name</th><th>
+Parameters </th><th>
+Return Type</th><th>
+Description</th><th>
+Reference Links</th></tr>
 <tr>
 <td>
 Ports.Add(ConnectionPort)</td><td>
@@ -375,6 +375,7 @@ Node can be created and added into the DiagramModel in three ways,
 * Through SymbolPalette
 * Through XAML
 * Through Code Behind
+
 ### Adding Through SymbolPalette
 
 
@@ -384,8 +385,8 @@ Steps for adding a node to the diagram using the SymbolPalette.
 
 
 
-{{ '![](Nodes_images/Nodes_img1.jpeg)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img1.jpeg)
+
 
 
 _Item Selected_
@@ -394,8 +395,8 @@ _Item Selected_
 
 
 
-{{ '![](Nodes_images/Nodes_img2.jpeg)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img2.jpeg)
+
 
 
 _Item Dragged_
@@ -404,8 +405,8 @@ _Item Dragged_
 
 
 
-{{ '![](Nodes_images/Nodes_img3.jpeg)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img3.jpeg)
+
 
 
 _Item Dropped_
@@ -415,7 +416,7 @@ _Item Dropped_
 Node can also be added into the model through XAML. The following code shows how it can be done.
 
 
-
+{% highlight html  %}
 [XAML]
 
 
@@ -448,7 +449,7 @@ Node can also be added into the model through XAML. The following code shows how
 
 </syncfusion:DiagramControl>
 
-
+{% endhighlight   %}
 
 Here, a node is created and added into the model.
 
@@ -463,7 +464,7 @@ A Node can be created using one of the three different constructors
 Nodes can be added through the model. The following code shows how it can be done.
 
 
-
+{% highlight c#  %}
 [C#]
 
 Node n = new Node();
@@ -471,7 +472,8 @@ Node n = new Node();
 n.Shape = Shapes.FlowChart_Card;
 
 diagramModel.Nodes.Add(n);
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 
 [VB]
@@ -482,12 +484,12 @@ n.Shape = Shapes.FlowChart_Card
 
 diagramModel.Nodes.Add(n)
 
-
+{% endhighlight  %}
 
 * A node can be created with a new ID. The following code shows how it can be done.
 
 
-
+{% highlight c#  %}
 [C#]
 
 Node n = new Node(Guid.NewGuid());
@@ -496,7 +498,8 @@ n.Shape = Shapes.FlowChart_Card;
 
 diagramModel.Nodes.Add(n);
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -506,12 +509,12 @@ n.Shape = Shapes.FlowChart_Card
 
 diagramModel.Nodes.Add(n)
 
-
+{% endhighlight  %}
 
 * A node can also be created with a new ID and a name. The following code shows how it can be done.
 
 
-
+{% highlight c#  %}
 [C#]
 
 Node n = new Node(Guid.NewGuid(), "First");
@@ -520,7 +523,8 @@ n.Shape = Shapes.FlowChart_Card;
 
 diagramModel.Nodes.Add(n);
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -530,11 +534,11 @@ n.Shape = Shapes.FlowChart_Card
 
 diagramModel.Nodes.Add(n)
 
-
+{% endhighlight   %}
 
 NewGuid() creates a new instance of the Guid class. The string value sets the identifying name of the element. The name provides a reference so that the code-behind, such as event handler code, can refer to a markup element after it is constructed during processing by an XAML processor.
 
-> _Note: If name is not specified for a node, a unique name will be automatically assigned to the node._
+> Note: If name is not specified for a node, a unique name will be automatically assigned to the node.
 
 ## Node Shapes
 
@@ -544,12 +548,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it Accept</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it Accept</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 Shape</td><td>
@@ -565,12 +569,13 @@ Dependency property</td><td>
 Style</td><td>
 No</td></tr>
 </table>
+
 ### Predefined Node Shapes
 
 A node can be assigned with a shape using the Shape property. Several built-in shapes are provided. The user can select from any of the built-in shapes or specify their own custom shape using the CustomPathStyle property, which will be explained later in this user guide.
 
 
-
+{% highlight c#  %}
 [C#]
 
 Node n = new Node();
@@ -579,7 +584,8 @@ n.Shape = Shapes.FlowChart_Card;
 
 diagramModel.Nodes.Add(n);
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -589,7 +595,7 @@ n.Shape = Shapes.FlowChart_Card
 
 diagramModel.Nodes.Add(n)
 
-
+{% endhighlight  %}
 
 The following is a list of built-in shapes.
 
@@ -597,16 +603,16 @@ The following is a list of built-in shapes.
 
 
 
-{{ '![](Nodes_images/Nodes_img4.jpeg)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img4.jpeg)
+
 
 
 _Built-in Shapes_
 
 
 
-{{ '![](Nodes_images/Nodes_img5.jpeg)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img5.jpeg)
+
 
 
 _More Built-In Shapes_
@@ -621,7 +627,7 @@ Style can be applied for CustomPathStyle in two different ways,
 * Through Code Behind
 
 
-
+{% highlight html  %}
 [XAML]
 
 
@@ -644,7 +650,8 @@ Style can be applied for CustomPathStyle in two different ways,
 
 </Style>
 
-
+{% endhighlight   %}
+{% highlight c#  %}
 
 [C#]
 
@@ -664,7 +671,8 @@ diagramModel.Nodes.Add(n);
 
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -683,13 +691,14 @@ n.Shape = Shapes.FlowChart_Card
 diagramModel.Nodes.Add(n)
 
 
+{% endhighlight   %}
 
 ### Custom Shape
 
 You can specify your own custom shapes to be used for the node as follows. First create a style resource that contains your custom shape.
 
 
-
+{% highlight html  %}
 [XAML]
 
 
@@ -702,12 +711,12 @@ You can specify your own custom shapes to be used for the node as follows. First
 
 </Style>
 
-
+{% endhighlight   %}
 
 Now use it for the node; the following code can be used as an example.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -722,7 +731,8 @@ n.CustomPathStyle = s;
 
 diagramModel.Nodes.Add(n);
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -736,10 +746,10 @@ n.CustomPathStyle = s
 
 diagramModel.Nodes.Add(n)
 
+{% endhighlight   %}
 
+![](Nodes_images/Nodes_img6.jpeg)
 
-{{ '![](Nodes_images/Nodes_img6.jpeg)' | markdownify }}
-{:.image }
 
 
 _CustomNode_
@@ -748,18 +758,18 @@ _CustomNode_
 
 Node is used to visually represent any UIElements using Content property. You can host any content inside the node using the Content property. Node supports control template too, by defined template for the nodes, business object can be assigned as Node’s Content and the template will look after how to present the business object. 
 
-> _Note: A Node can have both Content and Shape at the same time, doing so Content will be placed over the Shape._
+> Note: A Node can have both Content and Shape at the same time, doing so Content will be placed over the Shape.
 
 _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it Accept</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it Accept</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 Content</td><td>
@@ -792,7 +802,7 @@ Node’s Content can be specified in two ways,
 * Through Code Behind
 
 
-
+{% highlight html  %}
 [XAML]
 
 
@@ -828,7 +838,8 @@ Node’s Content can be specified in two ways,
 </syncfusion:DiagramControl>
 
 
-
+{% endhighlight   %}
+{% highlight c#  %}
 [C#]
 
 
@@ -845,7 +856,8 @@ n.Content = b;
 
 (n.Content as Button).IsHitTestVisible = true;
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -863,10 +875,10 @@ n.Content = b
 
 TryCast(n.Content, Button).IsHitTestVisible = True
 
+{% endhighlight  %}
 
+![](Nodes_images/Nodes_img7.jpeg)
 
-{{ '![](Nodes_images/Nodes_img7.jpeg)' | markdownify }}
-{:.image }
 
 
 _NodeContent_
@@ -877,7 +889,7 @@ Node can even have a business object and a content template that can be used to 
 
 Assigning business object as Node’s Content:
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -915,7 +927,8 @@ n.Content = new BusinessObject() { BusinessProperty = "BusinessProperty" };
 
 diagramModel.Nodes.Add(n);
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -957,12 +970,12 @@ n.Content = New BusinessObject() With {.BusinessProperty = "BusinessProperty"}
 
 diagramModel.Nodes.Add(n)
 
-
+{% endhighlight  %}
 
 Specify ContentTemplate for node.
 
 
-
+{% highlight c#  %}
 [XAML]
 
 
@@ -1001,10 +1014,10 @@ Specify ContentTemplate for node.
 
 </Style>
 
+{% endhighlight  %}
 
+![](Nodes_images/Nodes_img8.png)
 
-{{ '![](Nodes_images/Nodes_img8.png)' | markdownify }}
-{:.image }
 
 
 _Node’s Content having Business Object with ContentTemplate_
@@ -1017,12 +1030,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it Accept</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it Accept</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 OffsetX</td><td>
@@ -1047,7 +1060,7 @@ No</td></tr>
 </table>
 
 
-> _Note: There are two more properties called LogicalOffsetX and LogicalOffsetY which is used only for internal calculations and they do not support negative values,.So use only OffsetX and OffsetY property._ 
+> Note: There are two more properties called LogicalOffsetX and LogicalOffsetY which is used only for internal calculations and they do not support negative values,.So use only OffsetX and OffsetY property.
 
 
 
@@ -1072,7 +1085,7 @@ Through Code Behind
 Node’s location can be changed using the following code snippet.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -1087,7 +1100,8 @@ n.Shape = Shapes.FlowChart_Card;
 
 diagramModel.Nodes.Add(n);
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1104,13 +1118,13 @@ n.Shape = Shapes.FlowChart_Card
 diagramModel.Nodes.Add(n)
 
 
-
+{% endhighlight  %}
 The node will be placed at the point: 50, 50.
 
-> _Note: To dynamically change the position of the node, specify the offset values and call the InvalidateMeasure() of the DiagramPage as follows:_
+> Note: To dynamically change the position of the node, specify the offset values and call the InvalidateMeasure() of the DiagramPage as follows:
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -1125,7 +1139,8 @@ page = diagramView.Page as DiagramPage;
 
 page.InvalidateMeasure();
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1141,7 +1156,7 @@ page = TryCast(diagramView.Page, DiagramPage)
 
 page.InvalidateMeasure()
 
-
+{% endhighlight  %}
 
 In the above code, nodeobj refers to the instance of the node whose position is to be changed.
 
@@ -1153,7 +1168,7 @@ The default value is True.
 
 The AllowMove property can be set in the following way:
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -1162,7 +1177,8 @@ Node nodeobject = new Node();
 
 nodeobject.AllowMove = false;
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1172,6 +1188,7 @@ Dim nodeobject As New Node()
 nodeobject.AllowMove = False
 
 
+{% endhighlight  %}
 
 ## Node Rotate
 
@@ -1181,12 +1198,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it Accept</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it Accept</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 AllowRotate</td><td>
@@ -1197,7 +1214,7 @@ No</td></tr>
 </table>
 
 
-Rotate Node
+### Rotate Node
 
 The steps to rotate a node are as follows.
 
@@ -1206,15 +1223,15 @@ The steps to rotate a node are as follows.
 
 
 
-{{ '![](Nodes_images/Nodes_img9.jpeg)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img9.jpeg)
+
 
 
 _Node Rotation_
 
 
 
-AllowRotate
+### AllowRotate
 
 The AllowRotate property can be used to enable/disable rotation of the node.
 
@@ -1223,13 +1240,14 @@ Node rotation is enabled when this property is set to ‘True’. Otherwise the 
 The AllowRotate property can be set in the following way.
 
 
-
+{% highlight c#  %}
 [C#]
 
 Node nodeobject = new Node();
 
 nodeobject.AllowRotate = false;
-
+{% endhighlight  %}
+{% highlight vbnet   %}
 
 
 [VB]
@@ -1239,7 +1257,7 @@ Dim nodeobject As New Node()
 nodeobject.AllowRotate = False
 
 
-
+{% endhighlight   %}
 Rotation through Codebehind
 
 Rotate angle property enables the rotation of the selected object with a specified angle. It enables the support to rotate all the selected Nodes.
@@ -1248,12 +1266,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 RotateAngle</td><td>
@@ -1264,12 +1282,12 @@ No</td></tr>
 </table>
 
 
-After Rotating the Node:
+### After Rotating the Node:
 
 
 
-{{ '![C:/Users/ramyathirugnanam/Desktop/Node Rotation.PNG](Nodes_images/Nodes_img10.png)' | markdownify }}
-{:.image }
+![C:/Users/ramyathirugnanam/Desktop/Node Rotation.PNG](Nodes_images/Nodes_img10.png)
+
 
 
 _RotateAngle with 60 degree_
@@ -1278,8 +1296,8 @@ After rotating the Group
 
 
 
-{{ '![](Nodes_images/Nodes_img11.png)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img11.png)
+
 
 
 _RotateAngle with 180 degree_
@@ -1292,12 +1310,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it Accept</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it Accept</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 AllowResize</td><td>
@@ -1306,6 +1324,7 @@ Dependency property</td><td>
 Boolean (true/ false)</td><td>
 No</td></tr>
 </table>
+
 ### Resizing through the Resize handle
 
 Resizing a node affects the node's width and height. To resize a node, follow the steps below. 
@@ -1317,8 +1336,8 @@ Resizing a node affects the node's width and height. To resize a node, follow th
 
 
 
-{{ '![](Nodes_images/Nodes_img12.jpeg)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img12.jpeg)
+
 
 
 _Node Resizing Illustrated_
@@ -1335,7 +1354,7 @@ The default value is ‘True’.
 
 The AllowResize property can be set in the following way.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -1345,7 +1364,8 @@ Node nodeobject = new Node();
 nodeobject.AllowResize = false;
 
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 [VB]
 
 
@@ -1353,6 +1373,7 @@ Dim nodeobject As New Node()
 
 nodeobject.AllowResize = False
 
+{% endhighlight  %}
 
 
 ### Resize Single Node on Multiple Selection
@@ -1362,7 +1383,7 @@ When multiple nodes are selected, then by default on resizing any node in the se
 This property is in DiagramPage and can be set in the following ways.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -1371,7 +1392,8 @@ DiagramPage diagramPage = new DiagramPage();
 
 diagramPage.EnableResizingCurrentNodeOnMultipleSelection = true;
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1381,7 +1403,8 @@ Dim diagramPage As New DiagramPage()
 
 diagramPage.EnableResizingCurrentNodeOnMultipleSelection = True
 
-
+{% endhighlight   %}
+{% highlight html  %}
 
 [XAML]
 
@@ -1423,10 +1446,10 @@ diagramPage.EnableResizingCurrentNodeOnMultipleSelection = True
 
     </syncfusion:DiagramControl>
 
+{% endhighlight  %}
 
+![](Nodes_images/Nodes_img13.jpeg)
 
-{{ '![](Nodes_images/Nodes_img13.jpeg)' | markdownify }}
-{:.image }
 
 
 _Resizing Single Node_
@@ -1439,12 +1462,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it Accept</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it Accept</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 IsLabelEditable</td><td>
@@ -1587,7 +1610,7 @@ Following is list of topics explained subsequently,
 Set a label for the node using the Label property. The default value is an empty string. By default, the label is displayed at the top-center position.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -1604,7 +1627,8 @@ n.Label = "WPF";
 
 diagramModel.Nodes.Add(n);
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1622,10 +1646,10 @@ n.Label = "WPF"
 
 diagramModel.Nodes.Add(n)
 
+{% endhighlight   %}
 
+![](Nodes_images/Nodes_img14.jpeg)
 
-{{ '![](Nodes_images/Nodes_img14.jpeg)' | markdownify }}
-{:.image }
 
 
 _Label_
@@ -1635,7 +1659,7 @@ Label Editing
 A node's label can be edited at run time by setting IsLabelEditable property to True.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -1646,7 +1670,8 @@ n.Shape = Shapes.RoundedRectangle;
 
 n.IsLabelEditable = true;
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1658,7 +1683,7 @@ n.Shape = Shapes.RoundedRectangle
 
 n.IsLabelEditable = True
 
-
+{% endhighlight  %}
 
 A user can specify a label at run time by following the below mentioned steps.
 
@@ -1667,8 +1692,8 @@ A user can specify a label at run time by following the below mentioned steps.
 
 
 
-{{ '![](Nodes_images/Nodes_img15.jpeg)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img15.jpeg)
+
 
 
 _LabelEditor_
@@ -1680,7 +1705,7 @@ Customize the Label of Nodes and Line Connectors Refer Concepts and Features -> 
 Multiline label 
 
 Label text can be displayed in multiple lines using LabelTextWrapping property set to Wrap. If there is no enough space for the text to get displayed over the node in a single line then the text will get wrapped within the node boundaries and will start to display the label in multiple lines.
-
+{% highlight c#  %}
 
 
 [C#]
@@ -1701,7 +1726,8 @@ n.LabelTextWrapping = TextWrapping.Wrap;
 
 n.IsLabelEditable = true;
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1722,9 +1748,9 @@ n.LabelTextWrapping = TextWrapping.Wrap
 n.IsLabelEditable = True
 
 
+{% endhighlight  %}
+![](Nodes_images/Nodes_img16.png)
 
-{{ '![](Nodes_images/Nodes_img16.png)' | markdownify }}
-{:.image }
 
 
 _Multi line label_
@@ -1734,7 +1760,7 @@ Label Visibility
 A label's visibility can be changed using the LabelVisibility property. The default value is visible.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -1747,7 +1773,8 @@ n.Label = "Syncfusion";
 
 n.LabelVisibility = Visibility.Hidden;
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1762,14 +1789,14 @@ n.Label = "Syncfusion"
 n.LabelVisibility = Visibility.Hidden
 
 
-
+{% endhighlight   %}
 
 
 Label Vertical Alignment & Label Horizontal Alignment
 
 Vertical and horizontal alignments of a label is specified using LabelVerticalAlignment and LabelHorizontalAlignment properties. By default, LabelVerticalAlignment is set to Top and LabelHorizontalAlignment is set to Center.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -1785,7 +1812,8 @@ n.LabelHorizontalAlignment = HorizontalAlignment.Center;
 
 n.LabelVerticalAlignment = VerticalAlignment.Center;
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1802,13 +1830,13 @@ n.LabelHorizontalAlignment = HorizontalAlignment.Center
 n.LabelVerticalAlignment = VerticalAlignment.Center
 
 
-
+{% endhighlight  %}
 This will place the label at the center of the node.
 
 
 
-{{ '![](Nodes_images/Nodes_img17.jpeg)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img17.jpeg)
+
 
 
 _LabelAlignment_
@@ -1820,7 +1848,7 @@ LabelAngle
 The user can rotate the label by a specified angle and display it using the below code snippet.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -1838,7 +1866,8 @@ n.LabelVerticalAlignment = VerticalAlignment.Top;
 n.Label = 45;
 
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 [VB]
 
 
@@ -1855,10 +1884,10 @@ n.LabelVerticalAlignment = VerticalAlignment.Top
 
 n.Label = 45
 
+{% endhighlight  %}
 
+![](Nodes_images/Nodes_img18.png)
 
-{{ '![](Nodes_images/Nodes_img18.png)' | markdownify }}
-{:.image }
 
 
 _LabelAngle_
@@ -1867,7 +1896,7 @@ Multiline Label Support for LabelEditor:
 
 Node’s Label can be set as Multiline Label by setting the EnableMultiline property as True. The default Value is False.
 
-
+{% highlight html  %}
 
  [XAML]
 
@@ -1875,8 +1904,8 @@ Node’s Label can be set as Multiline Label by setting the EnableMultiline prop
 
 <syncfusion:Node Shape="FlowChart_Card" Height="100" Width="100" OffsetX="500" OffsetY="500" Name="Node1" EnableMultilineLabel="true”/>
 
-
-
+{% endhighlight   %}
+{% highlight c#  %}
 [C#]
 
 
@@ -1897,7 +1926,8 @@ node1.EnableMultilineLabel = true;
 
 diagramModel.Nodes.Add(node1); 
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1920,9 +1950,9 @@ node1.EnableMultilineLabel = True
 diagramModel.Nodes.Add(node1) 
 
 
+{% endhighlight   %}
+![Description: C:/Users/karthikeyanp/Pictures/images/enablemultilinelabel-node.png](Nodes_images/Nodes_img19.png)
 
-{{ '![Description: C:/Users/karthikeyanp/Pictures/images/enablemultilinelabel-node.png](Nodes_images/Nodes_img19.png)' | markdownify }}
-{:.image }
 
 
 _MultilineLabel for Node_
@@ -1935,12 +1965,12 @@ _Properties Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Value It Accepts</td><td>
-Default Values</td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Value It Accepts</th><th>
+Default Values</th></tr>
 <tr>
 <td>
 IsLabelDragable </td><td>
@@ -1965,26 +1995,26 @@ Set the LabelDisplacement for Node
 Label is aligned within the bounds of Node using LabelHorizontalAlignment and LabelVerticalAlignment property, the LabelDisplacement can be used as to displace the Label from this original position. This value can be positive or negative. 
 
 
-
+{% highlight c#  %}
 [C#]
 
        (node as Node).LabelDisplacement = new Point(100,100);
 
 
 
-
+{% endhighlight  %}
 
 Label Dragging support for Node
 
 The Label can be dragged from the Node at runtime, if this property is set to true. When a label is dragged, it will automatically update the LabelDisplacement value.
 
-
+{% highlight c#  %}
 
 [C#]
 
        (node as Node).IsLabelDragable = true;
 
-
+{% endhighlight   %}
 
 ## Gripper
 
@@ -1994,12 +2024,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 GripperVisibility</td><td>
@@ -2017,12 +2047,12 @@ No</td></tr>
 </table>
 
 
-Gripper Visibility
+### Gripper Visibility
 
 The gripper can be made visible by setting the GripperVisibility property to ‘True’.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -2032,7 +2062,8 @@ n.GripperVisibility = Visibility.Visible;
 
 diagramModel.Nodes.Add(n);
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -2043,22 +2074,22 @@ n.GripperVisibility = Visibility.Visible
 
 diagramModel.Nodes.Add(n)
 
+{% endhighlight  %}
 
+![](Nodes_images/Nodes_img20.jpeg)
 
-{{ '![](Nodes_images/Nodes_img20.jpeg)' | markdownify }}
-{:.image }
 
 
 _Gripper for Nodes_
 
 
 
-Gripper Style
+### Gripper Style
 
 Gripper can be customized using the GripperStyle property of the Node.  However, on overriding the style, it is necessary to specify the Width, Height, HorizontalAlignment, VerticalAlignment and the Margin property to position the Gripper properly.
 
 
-
+{% highlight html  %}
 [XAML]
 
 
@@ -2094,13 +2125,13 @@ Gripper can be customized using the GripperStyle property of the Node.  However,
                 </Setter>
 
 </Style>
-
+{% endhighlight  %}
 
 
 This can be applied to the node in the following way:
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -2112,7 +2143,8 @@ diagramModel.Nodes.Add(node);
 
 
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -2124,9 +2156,10 @@ node.GripperStyle = TryCast(Me.Resources("GripperStyle"), Style)
 diagramModel.Nodes.Add(node)
 
 
+{% endhighlight  %}
 
-{{ '![](Nodes_images/Nodes_img21.jpeg)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img21.jpeg)
+
 
 
 _Customized Gripper_
@@ -2139,12 +2172,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it Accept</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it Accept</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 AllowSelect</td><td>
@@ -2171,16 +2204,16 @@ Node can be selected at run time just by clicking on the node.
 
 
 
-{{ '![](Nodes_images/Nodes_img22.png)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img22.png)
+
 
 
 _Node before selecion_
 
 
 
-{{ '![](Nodes_images/Nodes_img23.png)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img23.png)
+
 
 
 _Node after selecion_
@@ -2191,7 +2224,7 @@ The above two images differentiates the appearance of the node before and after 
 
 Node can also be selected using the IsSelected property of the Node.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -2205,7 +2238,8 @@ n.IsSelected = true;
 diagramModel.Nodes.Add(n);
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 [VB]
 
 
@@ -2218,8 +2252,9 @@ n.IsSelected = True
 diagramModel.Nodes.Add(n)
 
 
+{% endhighlight   %}
 
-Node Multi-Selection
+### Node Multi-Selection
 
 Multiple items on the drawing area can be selected.
 
@@ -2229,10 +2264,9 @@ Multiple selection can be performed by following the below mentioned steps.
 * The drag adorner is displayed when you click anywhere on the page and start dragging the pointer.
 * The rectangle formed with the drag start-point as one of its points, and the point where the mouse button was released as its second point, defines the drag adorner's bounds.
 * Nodes connected to one or more nodes are selected only if one of the connected nodes is also within the drag adorner bounds. The nodes and the connector connecting them act as a single selection.
-> 
 
 
-> _Note: Resizing or moving any one item affects the other items by the same factor. However, rotating affects only the current node._
+> Note: Resizing or moving any one item affects the other items by the same factor. However, rotating affects only the current node.
 
 Items can be deselected by clicking on any part of the drawing area other than the selected items.
 
@@ -2240,15 +2274,15 @@ Items can be deselected by clicking on any part of the drawing area other than t
 
 
 
-{{ '![](Nodes_images/Nodes_img24.jpeg)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img24.jpeg)
+
 
 
 _Multiple Selections_
 
 
 
-AllowSelect
+### AllowSelect
 
 The AllowSelect property can be used to enable/disable the node selection.
 When this property is set to ‘True’, it is possible to select the node. Otherwise the node cannot be selected.
@@ -2257,7 +2291,7 @@ The default value is ‘True’.
 The AllowSelect property can be set in the following way:
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -2265,7 +2299,8 @@ Node nodeobject = new Node();
 
 nodeobject.AllowSelect = false;
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -2275,7 +2310,7 @@ Dim nodeobject As New Node()
 nodeobject.AllowSelect = False
 
 
-
+{% endhighlight  %}
 See Also:
 
 Select Nodes and Connectors Refer Concepts and Features -> General -> Select Nodes and Connectors
@@ -2286,6 +2321,7 @@ As this is a general topic to be share between Node and LineConnector, please re
 
 * Select Node and Connectors Refer Concepts and Features -> General -> Select Node and Connectors
 * Move Node and Connectors Refer Concepts and Features -> General -> Move Node and Connectors
+
 ## Deleting Node Without its Edges 
 
 
@@ -2297,11 +2333,11 @@ _Deleting Nodes_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 DeletingMode </td><td>
@@ -2309,6 +2345,7 @@ Decides whether the node alone has to be deleted or node along with its dependen
 Dependency Property </td><td>
 Enum </td></tr>
 </table>
+
 ### Enabling Deletion of Node Without its Edges
 
 To enable the deletion of node, the DeletingMode property can be set to:
@@ -2324,7 +2361,7 @@ If the DeletingMode property of the node is set to None while trying to delete t
 
 To set the DeletingMode property to None, use the following code.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -2340,7 +2377,8 @@ n1.DeletingMode = DeletingMode.None;
 
 diagrammodel.Nodes.Add(n1);
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -2356,7 +2394,7 @@ n1.DeletingMode = DeletingMode.None
 
 diagramModel.Nodes.Add(n1)
 
-
+{% endhighlight  %}
 
 Setting DeletingMode to DeleteDependentEdges
 
@@ -2364,7 +2402,7 @@ If the DeletingMode property of the node is set to DeleteDependentEdges while tr
 
 To set the DeletingMode property to DeleteDependentEdges, use the following code example.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -2381,8 +2419,8 @@ n.DeletingMode = DeletingMode.DeleteDependentEdges;
 diagrammodel.Nodes.Add(n);
 
 
-
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -2398,7 +2436,7 @@ n1.DeletingMode = DeletingMode.DeleteDependentEdges
 
 diagramModel.Nodes.Add(n1)
 
-
+{% endhighlight  %}
 
 ## Customize the Label, Context Menu for Nodes
 
@@ -2406,6 +2444,7 @@ As this is a general topic to be share between Node and LineConnector, please re
 
 * Customize Label Refer Concepts and Features -> General -> Customize Label
 * Customize ContextMenu Refer Concepts and Features -> General -> Customize ContextMenu
+
 ## Customization of Node Movement
 
 
@@ -2462,14 +2501,15 @@ If the node is once dragged in X-direction, then the node can move only in X-dir
 Hence, the direction is decided at the beginning of each drag.  By default, this property is set to _false_. Use the following code snippet to enable this property. 
 
 
-
+{% highlight c#  %}
 [C#]
 
 DiagramView View1 = new DiagramView();
 
 View1.DirectionBehaviourEnabled = true; 
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -2478,26 +2518,28 @@ Dim view As New DiagramView ()
 View1.DirectionBehaviourEnabled = True
 
 
-
+{% endhighlight  %}
 This property can be disabled by setting it to ‘false’.
 
 
-
+{% highlight c#  %}
 [C#]
 
 DiagramView View1 = new DiagramView();
 
 View1.DirectionBehaviourEnabled = false; 
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
 Dim view As New DiagramView ()
 
 View1.DirectionBehaviourEnabled = False
+{% endhighlight   %}
 
-#### TranslateRailsMode
+### TranslateRailsMode
 
 This property is used to define the node movement through code. This Enum property has three values.
 
@@ -2509,7 +2551,7 @@ By default, this property value is ‘_None’_.
 
 To enable the node movement only on X-axis, use the following code.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -2517,7 +2559,8 @@ DiagramView View1 = new DiagramView();
 
 View1.TranslateRailsMode = TranslateRailsMode.TranslateRailsX;
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -2526,11 +2569,12 @@ Dim view As New DiagramView ()
 View1. TranslateRailsMode = TranslateRailsMode.TranslateRailsX
 
 
+{% endhighlight   %}
 
 To enable the node movement only in Y-axis, use the following code example.
 
 
-
+{% highlight c#  %}
 [C#]
 
 DiagramView View1 = new DiagramView();
@@ -2538,24 +2582,26 @@ DiagramView View1 = new DiagramView();
 View1.TranslateRailsMode = TranslateRailsMode.TranslateRailsY;
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 [VB]
 
 Dim view As New DiagramView ()
 
 View1. TranslateRailsMode = TranslateRailsMode.TranslateRailsY
+{% endhighlight   %}
 
-#### NodeMovementX/NodeMovementY
+### NodeMovementX/NodeMovementY
 
 The node movement can be controlled by the keys. 
 
-NodeMovementX:
+#### NodeMovementX:
 
 The keys that support NodeMovement on X-axis are: “Alt”, “X” and “Z”.
 
 By default, the enum property value is _None_. Pressing and dragging, selected key controls the node movement only in X-axis.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -2564,7 +2610,8 @@ DiagramView View1 = new DiagramView();
 View1.NodeMovementX = NodeMovementX.X;
 
 View1.NodeMovementY = NodeMovementX.Y;
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 [VB] 
@@ -2575,9 +2622,9 @@ View1.NodeMovementX = NodeMovementX.X
 
 View1.NodeMovementY = NodeMovementX.Y
 
+{% endhighlight   %}
 
-
-NodeMovementY:
+#### NodeMovementY:
 
 The key combinations that support the node movement on Y-axis are: 
 
@@ -2589,7 +2636,7 @@ The key combinations that support the node movement on Y-axis are:
 By default, the Enum property value is None. Pressing and dragging, selected Key controls the node movement only X-axis.
 
 
-
+{% highlight c#  %}
 [C#]
 
 DiagramView View1 = new DiagramView();
@@ -2599,7 +2646,8 @@ View1.NodeMovementX = NodeMovementX.X;
 View1.NodeMovementY = NodeMovementX.Y;
 
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB] 
 
 Dim view As New DiagramView ()
@@ -2607,6 +2655,7 @@ Dim view As New DiagramView ()
 View1.NodeMovementX = NodeMovementX.X
 
 View1.NodeMovementY = NodeMovementX.Y
+{% endhighlight   %}
 
 ## Resize Handler Customization
 
@@ -2630,7 +2679,7 @@ Prepare styles with template for each ResizerThumb.
 
 The following code illustrates how to create the style for ResizerThumb 
 
-
+{% highlight html  %}
 
 [XAML]
 
@@ -2692,7 +2741,7 @@ The following code illustrates how to create the style for ResizerThumb
 
 </Style>
 
-
+{% endhighlight   %}
 
 Step2:  Assign the Style to Node
 
@@ -2701,7 +2750,7 @@ Step2:  Assign the Style to Node
 The following code illustrates how to assign the Resize Handler Style to Node
 
 
-
+{% highlight html  %}
 [XAML]
 
 
@@ -2726,13 +2775,13 @@ The following code illustrates how to assign the Resize Handler Style to Node
 
 </Style>
 
-
+{% endhighlight  %}
 
 * Through Code behind[C#]
 
 The following code illustrates how to assign the Resize Handler Style to Node.
 
-
+{% highlight c#  %}
 
 [C#] 
 
@@ -2756,7 +2805,8 @@ n.BottomLeftCornerResizer =this.Resources["BottomLeftCornerResizerThump"] as Sty
 
 n.BottomRightCornerResizer =this.Resources["BottomRightCornerResizerThump"] as Style;
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB] 
 
@@ -2779,7 +2829,7 @@ n.TopRightCornerResizer =TryCast(Me.Resources("TopRightCornerResizerThump"), Sty
 n.BottomLeftCornerResizer =TryCast(Me.Resources("BottomLeftCornerResizerThump"), Style)
 
 n.BottomRightCornerResizer =TryCast(Me.Resources("BottomRightCornerResizerThump"), Style)
-
+{% endhighlight   %}
 
 
 Setting ResizerThumb Template as null
@@ -2789,7 +2839,7 @@ ResizerThumb will not be visible When the ResizerThumb Template value as Null.
 The following code illustrates how to set the ResizerThumb Template to Null.
 
 
-
+{% highlight html  %}
 [XAML]
 
 <Style x:Key="TopResizerThump" TargetType="syncfusion:ResizerThumb"> 
@@ -2800,14 +2850,14 @@ The following code illustrates how to set the ResizerThumb Template to Null.
 
 </Style>
 
-
+{% endhighlight  %}
 
 Following is a sample screenshot of customized resizer that has only four corners. 
 
 
 
-{{ '![](Nodes_images/Nodes_img25.png)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img25.png)
+
 
 
 _Custom Style_
@@ -2820,12 +2870,12 @@ _ResizeHandler Property/ies Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
- Type</td><td>
-Data Type</td><td>
-Reference links</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+ Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 TopResizer</td><td>
@@ -2891,10 +2941,11 @@ To view sample,
 
 1. Open the WPF sample browser from the dashboard. 
 2. Navigate to WPF Diagram -> Editable Diagram->ResizerCustomization Demo
+
 ## Edges, Degree and Neighbors
 
 
-Edges Properties for Node:
+### Edges Properties for Node:
 
 The Edges properties for Node are used to retrieve the collection of incoming and outgoing connections for Node.
 
@@ -2902,11 +2953,11 @@ _Properties Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of Property</td><td>
-Any other dependencies/ sub-properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of Property</th><th>
+Any other dependencies/ sub-properties associated</th></tr>
 <tr>
 <td>
 Edges</td><td>
@@ -2931,7 +2982,7 @@ No</td></tr>
 The Edges, InEdges, and OutEdges properties can be retrieved as follows:
 
 
-
+{% highlight c#  %}
 [C#]
 
   //Getting the Edges of the Node 
@@ -2961,12 +3012,11 @@ Node node = new Node();
 CollectionExt ext = node.OutEdges;
 
 
+{% endhighlight   %}
 
 
 
-
-
-Degree Properties for Node:
+### Degree Properties for Node:
 
 The Degree properties for Node are used to retrieve the count of incoming and outgoing edges for Node. 
 
@@ -2974,12 +3024,12 @@ _Properties Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of Property</td><td>
-Return Type</td><td>
-Any other dependencies/sub-properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of Property</th><th>
+Return Type</th><th>
+Any other dependencies/sub-properties associated</th></tr>
 <tr>
 <td>
 Degree  </td><td>
@@ -3006,7 +3056,7 @@ No</td></tr>
 
 The Degree, InDegree, and OutDegree properties can be retrieved in the following way: 
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -3034,9 +3084,9 @@ int outdegree = node4.OutDegree;
 
 
 
+{% endhighlight   %}
 
-
-Neighbors Properties for Node:
+### Neighbors Properties for Node:
 
 The Neighbors properties for Node are used to retrieve the collection of all of the nodes connected to the specified Node. 
 
@@ -3044,11 +3094,11 @@ _Properties Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of Property</td><td>
-Any other dependencies/sub-properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of Property</th><th>
+Any other dependencies/sub-properties associated</th></tr>
 <tr>
 <td>
 Neighbors </td><td>
@@ -3073,7 +3123,7 @@ No</td></tr>
 The Neighbors, InNeighbors, and OutNeighbors properties can be retrieved as illustrated in the following code: 
 
 
-
+{% highlight c#  %}
 [C#]
 
 //Getting the Neighbors of the Node
@@ -3100,7 +3150,7 @@ Node node = new Node();
 
 CollectionExt ext = node.OutNeighbors;
 
-
+{% endhighlight  %}
 
 ## Node Layout
 
@@ -3108,8 +3158,8 @@ Essential Diagram for WPF provides layout representation for nodes. Numerous nod
 
 
 
-{{ '![](Nodes_images/Nodes_img26.png)' | markdownify }}
-{:.image }
+![](Nodes_images/Nodes_img26.png)
+
 
 
 _Node Layout_
@@ -3120,12 +3170,12 @@ _Properties Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of property</td><td>
-Value it Accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of property</th><th>
+Value it Accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 FirstChild </td><td>

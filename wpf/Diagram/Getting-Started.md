@@ -15,47 +15,47 @@ This section helps you to get started with Essential Diagram and has the followi
 
 The following is a general description about the important classes of Diagram WPF. These classes form the base of the control. 
 
-Diagram Control
+### Diagram Control
 
 The Diagram control is the base class, which contains the view and the model. It receives user input and translates it into actions and commands on the model and view. It also implements SymbolPalette and scrolling, and enables horizontal and vertical scrollbars when the size of the view exceeds the size of the window. 
 Diagram Model
 
 A model represents data for an application and contains the logic for adding, accessing, and manipulating the data. Nodes and connectors are added to the Diagram Control using the Model property. A predefined layout can be applied using the LayoutType property of the DiagramModel, or the position of the nodes can be manually specified.
 
-Diagram View
+### Diagram View
 
 The view obtains data from the model and presents them to the user. It typically manages the overall layout of the data obtained from the model.
 Apart from presenting the data, view also handles navigation between the items, and some aspects of item selection. The views also implements basic user interface features, such as rulers, and drag-and-drop. It handles the events, which occur on the objects, obtained from the model. Command mechanism is also implemented by the view.
 A view can be constructed without a model, but a model must be provided before it can display useful information. Views can also render additional visual information that do not exist inside the model such as bounding boxes and grids. These additional view-specific objects are referred to as decorators, because they provide additional visual aids and window dressing to the view; but they are not actually a part of the model.
 
-Diagram Page
+### Diagram Page
 
 The DiagramPage is just a container to hold the objects(nodes and connectors) added through the model. The DiagramView uses the page to display the diagram objects. As mentioned before, the view implements several basic user interface features like rulers, grids, events and commands. So therefore page is just a container to hold the graphical objects added through the model and the DiagramView uses it to display the objects.
 
-SymbolPalette
+### SymbolPalette
 
 The SymbolPalette control displays node shapes and allows a user to drag and drop symbols onto diagrams. It supports grouping and filtering symbols. It allows users to classify items as groups, so they can be navigated easily. Also, custom shapes can be added to the SymbolPalette.
 
-SymbolPaletteGroup
+### SymbolPaletteGroup
 
 A SymbolPalette group is a collection of SymbolPalette items. It is used to group the items in the SymbolPalette control based on classifications provided. The SymbolPalette group can be added to the SymbolPalette using the SymbolGroups property.
 
-SymbolPaletteFilter
+### SymbolPaletteFilter
 
 A SymbolPalette filter can be added to the SymbolPalette control, using the SymbolFilters property, so that only desired SymbolPalette groups get displayed. 
 
-SymbolPaletteItem
+### SymbolPaletteItem
 
 SymbolPalette items are contained in the SymbolPalette group. A SymbolPalette item does not restrict users to the type of content that can be added to it. A SymbolPalette item can be a text box, combo box, image, button, and so on.
 
-Horizontal / Vertical Ruler
+### Horizontal / Vertical Ruler
 
 Rulers display the coordinates of elements on the diagram page. Negative label values get displayed on the ruler in case the page is panned to the right side. On Zooming, the ruler values get adjusted accordingly, to match with the current Zoom level. At any point, the ruler value always indicates the exact coordinates of the page and its elements. So when the page is zoomed, the interval values get halved or doubled depending upon the zoom level.
 
 
 
-{{ '![C:/Users/jeganr/Desktop/UGDocumentation/diagramWPF/DiagramPageIllustrated.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/jeganr/Desktop/UGDocumentation/diagramWPF/DiagramPageIllustrated.png](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 ## Class Diagram
@@ -64,8 +64,8 @@ The class diagram for Essential Diagram WPF is as follows.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 ## Creating a WPF application
@@ -76,19 +76,20 @@ This section illustrates the step-by-step procedure to create a WPF application.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 2. In the New Project dialog, select WPF Application template, name the project and click OK. 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 3. A new WPF application is created.
+
 ## Creating a Diagram
 
 
@@ -106,7 +107,7 @@ DiagramControl can be created in two ways,
 * Through Code Behind
 
 
-
+{% highlight html %}
 
 
 [XAML]
@@ -127,19 +128,20 @@ xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Di
 
 </Window>
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
 DiagramControl dc = new DiagramControl();
 
-
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB]
 
 Dim dc As New DiagramControl()
 
-
+{% endhighlight %}
 
 This shows a window with empty diagramcontrol.
 
@@ -156,7 +158,7 @@ SymbolPalette can be enabled in two ways,
 * Through Code Behind
 
 
-
+{% highlight html %}
 [XAML]
 
 <Window x:Class="WpfApplication1.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -175,15 +177,16 @@ xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Di
 
 </Window>
 
-
-
+{% endhighlight  %}
+{% highlight c# %}
 [C#]
 
 DiagramControl diagramcontrol = new DiagramControl();
 
 diagramcontrol.IsSymbolPaletteEnabled = true;
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -191,7 +194,7 @@ Dim diagramcontrol As New DiagramControl()
 
 diagramcontrol.IsSymbolPaletteEnabled = True
 
-
+{% endhighlight  %}
 
 Create DiagramModel
 
@@ -204,7 +207,7 @@ DiagramModel can be created and assigned to DiagramControl’s View Property usi
 * Through XAML
 * Through Code Behind
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -233,7 +236,8 @@ xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Di
 </Window>
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 
 [C#]
@@ -248,7 +252,8 @@ dc.Model = model;
 
 diagramgrid.Children.Add(dc);
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -262,7 +267,7 @@ dc.Model = model
 
 diagramgrid.Children.Add(dc)
 
-
+{% endhighlight  %}
 
 Create DiagramView
 
@@ -275,7 +280,7 @@ DiagramView can be created and assigned to DiagramControl’s View Property usin
 * Through XAML
 * Through Code Behind 
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -310,7 +315,8 @@ xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Di
 </Window>
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 
 [C#]
@@ -326,7 +332,8 @@ view.Bounds = new System.Drawing.Thickness(0, 0, 1000, 1000);
 dc.View = view;
 
 diagramgrid.Children.Add(dc);
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 [VB]
@@ -345,19 +352,19 @@ diagramgrid.Children.Add(dc)
 
 
 
-
+{% endhighlight  %}
 
 * This creates a Diagram Control with the SymbolPalette and the drawing area as illustrated in the following image. 
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.jpeg)
 
 
 
 
-> _Note: For orthogonal and Bezier connectors, the connection always happens at the center of the node's edge._
+
+> Note: For orthogonal and Bezier connectors, the connection always happens at the center of the node's edge.
 
 For straight line connectors, the connection happens at the intersection point of the edge and the line connector.
 
@@ -371,29 +378,29 @@ Following are the steps to create Diagram Control through Designer.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
+
 
 
 2. Select Diagram Control from ToolBox.
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 3. Drag the Diagram Control onto the Designer.
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
+
 
 
 4. DiagramControl is added to the Page and also the assembly reference is added to the Project file.
 
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
+
 
 
 Kindly refer to Add Diagram Model to the Diagram Control and Add Diagram View to the Diagram Control to add the model and view to the control.
@@ -402,7 +409,7 @@ Kindly refer to Add Diagram Model to the Diagram Control and Add Diagram View to
 
 A model represents data for an application and contains the logic for adding, accessing, and manipulating the data.
 
-Features
+#### Features
 
 * Nodes and connectors are added to the Diagram Control using the Model property.
 * A predefined layout is applied using the LayoutType property.
@@ -413,7 +420,7 @@ Features
 The following code shows how the Model property can be applied to the Diagram control.
 
 
-
+{% highlight html %}
 [XAML]
 
 <Window x:Class="WpfApplication1.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -445,7 +452,8 @@ xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Di
     </Grid>
 
 </Window>
-
+{% endhighlight %}
+{% highlight c# %}
 
 
 [C#]
@@ -468,7 +476,8 @@ dc.Model = diagramModel;
 
 diagramgrid.Children.Add(dc);
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -490,7 +499,7 @@ dc.Model = diagramModel
 
 diagramgrid.Children.Add(dc)
 
-
+{% endhighlight  %}
 
 This adds a model to the Diagram Control, and defines Bounds Property for DiagramModel
 
@@ -504,7 +513,7 @@ A view can be constructed without a model, but a model must be provided before i
 
 The following code illustrates adding a Diagram View to the Diagram control.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -533,7 +542,8 @@ xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Di
 </Window>
 
 
-
+{% endhighlight %} 
+{% highlight c# %}
 [C#]
 
 
@@ -550,7 +560,8 @@ dc.View = view;
 
 diagramgrid.Children.Add(dc);
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -568,7 +579,7 @@ dc.View = view
 
 diagramgrid.Children.Add(dc)
 
-
+{% endhighlight  %}
 
 ### Manual Layout
 
@@ -577,7 +588,7 @@ The Essential Diagram WPF allows you to manually specify the layout of the page.
 The nodes and the connectors need to be added to the Nodes and Connections collection of DiagramModel respectively. This gives a complete control over the placement of nodes on the page and enables the user to create diagrams as suited for their business needs.
 
 The following code snippet shows how the manual layout may be specified.
-
+{% highlight c# %}
 
 
 [C#]
@@ -718,7 +729,8 @@ diagramModel.Connections.Add(connection);
 
 }
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -855,9 +867,9 @@ connection.TailDecoratorShape = DecoratorShape.Arrow
 diagramModel.Connections.Add(connection)
 
 
+{% endhighlight  %}
+![](Getting-Started_images/Getting-Started_img10.jpeg)
 
-{{ '![](Getting-Started_images/Getting-Started_img10.jpeg)' | markdownify }}
-{:.image }
 
 
 ### Automatic Layout
@@ -873,11 +885,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it accepts</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it accepts</th></tr>
 <tr>
 <td>
 VerticalSpacing</td><td>
@@ -947,19 +959,19 @@ BowtieSubTreePlacement</td></tr>
 </table>
 
 
-Directed-Tree Layout
+#### Directed-Tree Layout
 
 The Directed-Tree Layout automatically arranges nodes in a tree-like structure. This enables you to position nodes in a tree-like fashion without specifying the coordinate location for each node. However, it is necessary to specify a layout root for the tree layout. The Directed-Tree layout will position the nodes based on the layout root.
 
-Hierarchical-Tree Layout
+#### Hierarchical-Tree Layout
 
 The Hierarchical Tree Layout arranges nodes in a tree-like structure, where the nodes in hierarchical layout may have multiple parents. As a result, there is no need to specify the layout root. 
 
-Radial-Tree Layout
+#### Radial-Tree Layout
 
 The Radial-Tree Layout Manager arranges nodes in a circular layout and positions the root-node at the center of the graph and child-nodes in a circular fashion around the root. Sub-trees formed by the branching of the child-node are located radially around the child-node. 
 
-Table Layout
+#### Table Layout
 
 Table layout is a layout manager that arranges the nodes in rows and column basis. The number of nodes in each row and column can be specified and the layout will take place accordingly. 
 
@@ -967,7 +979,7 @@ Table layout is a layout manager that arranges the nodes in rows and column basi
 
 The Directed-Tree layout allows you to arrange the nodes in a tree-like structure. This layout can be applied to any diagram that comprises a directed tree graph with unique root and child nodes. This makes creating diagrams easier because the node position is determined automatically, based on the connections. However, it is necessary to specify a layout root for the tree layout. The Directed-Tree layout will position the nodes based on the layout root.
 
-Orientation
+#### Orientation
 
 The Layout Manager lets you orient the tree in many directions and create sophisticated arrangements. The Orientation property of the Diagram model can be used to specify the tree orientation.
 
@@ -982,11 +994,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th></tr>
 <tr>
 <td>
 VerticalSpacing</td><td>
@@ -1026,12 +1038,12 @@ _Methods Table_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Parameters </td><td>
-Return Type</td><td>
-Description</td><td>
-Reference Links</td></tr>
+<th>
+Name</th><th>
+Parameters </th><th>
+Return Type</th><th>
+Description</th><th>
+Reference Links</th></tr>
 <tr>
 <td>
 RefreshLayout()</td><td>
@@ -1047,7 +1059,7 @@ The following code shows how the automatic layout can be generated.
 1. The LayoutType should be set to DirectedTreeLayout in DiagramModel class.
 
 
-
+{% highlight html  %}
 [XAML]
 
 
@@ -1102,11 +1114,11 @@ The following code shows how the automatic layout can be generated.
 
 </Window>
 
-
+{% endhighlight  %}
 
 2. Then, the nodes are defined and the connections are made.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1214,7 +1226,8 @@ Connect(SLS, CSR2);
 
         }
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1314,10 +1327,10 @@ connection.TailDecoratorShape = DecoratorShape.Arrow
 
 diagramModel.Connections.Add(connection)
 
+{% endhighlight   %}
 
+![](Getting-Started_images/Getting-Started_img11.jpeg)
 
-{{ '![](Getting-Started_images/Getting-Started_img11.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -1330,7 +1343,7 @@ Refresh Layout
 
 When there are changes in content of the page link new nodes and connectors added, the layout has to be refreshed to get the page’s content aligned again to give space for new contents. To refresh the layout please follow the following code snippet.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1339,7 +1352,8 @@ DirectedTreeLayout tree = new DirectedTreeLayout(diagramModel, diagramView);
 tree.RefreshLayout();
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 [VB]
 
 Dim tree As New DirectedTreeLayout(diagramModel, diagramView)
@@ -1347,7 +1361,7 @@ Dim tree As New DirectedTreeLayout(diagramModel, diagramView)
 tree.RefreshLayout()
 
 
-
+{% endhighlight   %}
 Here diagramModel and diagramView is an instance of DiagramModel and DiagramView respectively.
 
 
@@ -1375,11 +1389,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th></tr>
 <tr>
 <td>
 VerticalSpacing</td><td>
@@ -1421,12 +1435,12 @@ _Methods Table_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Parameters </td><td>
-Return Type</td><td>
-Description</td><td>
-Reference Links</td></tr>
+<th>
+Name</th><th>
+Parameters </th><th>
+Return Type</th><th>
+Description</th><th>
+Reference Links</th></tr>
 <tr>
 <td>
 RefreshLayout()</td><td>
@@ -1445,7 +1459,7 @@ The following code example specifies how the Hierarchical-tree layout can be spe
 
 
 
-
+{% highlight html  %}
 
 [XAML]
 
@@ -1495,12 +1509,12 @@ The following code example specifies how the Hierarchical-tree layout can be spe
 
 </Window>
 
-
+{% endhighlight  %}
 
 2. Then the nodes can be added and the connections can be specified as follows:
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1659,7 +1673,8 @@ diagramModel.Connections.Add(connection);
 
     }
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -1813,10 +1828,10 @@ connection.TailDecoratorShape = DecoratorShape.Circle
 
 diagramModel.Connections.Add(connection)
 
+{% endhighlight  %}
 
+![](Getting-Started_images/Getting-Started_img12.jpeg)
 
-{{ '![](Getting-Started_images/Getting-Started_img12.jpeg)' | markdownify }}
-{:.image }
 
 
 Layout Spacing
@@ -1831,7 +1846,7 @@ Refresh Layout
 
 When there are changes in content of the page link new nodes and connectors added, the layout has to be refreshed to get the page’s content aligned again to give space for new contents. To refresh the layout please follow the following code snippet.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -1839,7 +1854,8 @@ HierarchicalTreeLayout tree = new HierarchicalTreeLayout(diagramModel, diagramVi
 
 tree.RefreshLayout();
 
-
+{% endhighlight   %}
+{% highlight c# %}
 
 [VB]
 
@@ -1848,6 +1864,7 @@ Dim tree As New HierarchicalTreeLayout(diagramModel, diagramView)
 tree.RefreshLayout()
 
 
+{% endhighlight   %}
 
 Here diagramModel and diagramView is an instance of DiagramModel and DiagramView respectively.
 
@@ -1869,11 +1886,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it accepts</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it accepts</th></tr>
 <tr>
 <td>
 VerticalSpacing</td><td>
@@ -1915,7 +1932,7 @@ N/A</td></tr>
 
 1. The LayoutType should be set to RadialTreeLayout in DiagramModel class.
 
-
+{% highlight html  %}
 
 [XAML]
 
@@ -1971,11 +1988,11 @@ N/A</td></tr>
 
 </Window>
 
-
+{% endhighlight   %}
 
 2. Then the nodes can be added and the connections can be specified as follows:
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -2073,8 +2090,8 @@ diagramModel.Connections.Add(connection);
 
     }
 
-
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 [VB]
 
 
@@ -2173,10 +2190,10 @@ connection.TailDecoratorShape = DecoratorShape.Circle
 
 diagramModel.Connections.Add(connection)
 
+{% endhighlight   %}
 
+![](Getting-Started_images/Getting-Started_img13.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
-{:.image }
 
 
 Layout Spacing
@@ -2187,7 +2204,7 @@ Refresh Layout
 
 When there are changes in content of the page link new nodes and connectors added, the layout has to be refreshed to get the page’s content aligned again to give space for new contents. To refresh the layout please follow the following code snippet.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -2197,8 +2214,8 @@ RadialTreeLayout tree = new RadialTreeLayout(diagramModel, diagramView);
 
 tree.RefreshLayout();
 
-
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 [VB]
 
 
@@ -2207,7 +2224,7 @@ Dim tree As New RadialTreeLayout(diagramModel, diagramView)
 
 tree.RefreshLayout()
 
-
+{% endhighlight  %}
 
 Here diagramModel and diagramView is an instance of DiagramModel and DiagramView respectively.
 
@@ -2219,11 +2236,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th></tr>
 <tr>
 <td>
 VerticalSpacing</td><td>
@@ -2277,12 +2294,12 @@ _Methods_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Parameters </td><td>
-Return Type</td><td>
-Description</td><td>
-Reference Links</td></tr>
+<th>
+Name</th><th>
+Parameters </th><th>
+Return Type</th><th>
+Description</th><th>
+Reference Links</th></tr>
 <tr>
 <td>
 RefreshLayout()</td><td>
@@ -2305,7 +2322,7 @@ When set to Vertical, the Columncount is automatically calculated based on the n
 
 The Bounds property of the DiagramView class can be used to specify the position of the first node.
 
-
+{% highlight html  %}
 
 [XAML]
 
@@ -2366,7 +2383,8 @@ x:Name="diagramModel">
 </syncfusion:DiagramControl></Window>
 
 
-
+{% endhighlight   %}
+{% highlight c#  %}
 [C#]
 
 
@@ -2391,7 +2409,8 @@ diagramModel.RowCount = 10;
 
 diagramModel.ColumnCount = 3;
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -2417,10 +2436,10 @@ diagramModel.RowCount = 10
 
 diagramModel.ColumnCount = 3
 
+{% endhighlight  %}
 
+![](Getting-Started_images/Getting-Started_img14.jpeg)
 
-{{ '![](Getting-Started_images/Getting-Started_img14.jpeg)' | markdownify }}
-{:.image }
 
 
 Layout Spacing
@@ -2431,7 +2450,7 @@ Refresh Layout
 
 When there are changes in content of the page like new nodes or connectors added, the layout has to be refreshed to get the page’s content aligned again to give space for new contents. To refresh the layout please follow the following code snippet.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -2439,7 +2458,8 @@ TableLayout tree = new TableLayout(diagramModel, diagramView);
 
 tree.RefreshLayout();
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -2447,7 +2467,7 @@ Dim tree As New TableLayout(diagramModel, diagramView)
 
 tree.RefreshLayout()
 
-
+{% endhighlight  %}
 
 Here diagramModel and diagramView is an instance of DiagramModel and DiagramView respectively.
 There are some more customization supported for Table Layout, please refer the links following ‘see also’ topic.
@@ -2472,12 +2492,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type </td><td>
-Data Type</td><td>
-Reference links </td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type </th><th>
+Data Type</th><th>
+Reference links </th></tr>
 <tr>
 <td>
 VerticalSpacing</td><td>
@@ -2520,7 +2540,7 @@ The following code illustrates how to generate the BowTie layout:
 
 1. The LayoutType should be set to BowtieLayout in DiagramModel class.
 
-
+{% highlight html  %}
 
 [XAML]
 
@@ -2544,11 +2564,11 @@ The following code illustrates how to generate the BowTie layout:
 
 
 
-
+{% endhighlight   %}
 
 2. Then, the nodes are defined and the connections are made.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -2692,7 +2712,8 @@ public void createLeftNodes(Node Root, BowtieSubTreePlacement place)
 
         }
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -2828,10 +2849,10 @@ Connect(n4, n5)
 
 Connect(n4, n6)
 
+{% endhighlight  %}
 
+![](Getting-Started_images/Getting-Started_img15.png)
 
-{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
-{:.image }
 
 
 Layout Spacing
@@ -2843,7 +2864,7 @@ Refresh Layout
 When there are changes in the content of the page-- such as adding new nodes and connectors to the layout, the page has to be refreshed to get the content aligned again. Only then it will give space for new contents. Refresh the layout as given in the following code example:
 
 
-
+{% highlight c# %}
 [C#]
 
 BowtieLayout tree = new BowtieLayout (diagramModel, diagramView);
@@ -2851,12 +2872,14 @@ BowtieLayout tree = new BowtieLayout (diagramModel, diagramView);
 tree.RefreshLayout();
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 [VB]
 
 Dim tree As New BowtieLayout (diagramModel, diagramView)
 
 tree.RefreshLayout()
+{% endhighlight  %}
 
 #### Table Layout for Selected Nodes
 
@@ -2875,17 +2898,17 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 OrderedNodes</td><td>
 This property is used to get or set the Collection of Nodes for table layout.</td><td>
 Dependency property</td><td>
-List<IShape></td></tr>
+List&lt;IShape&gt;</td></tr>
 </table>
 
 
@@ -2898,7 +2921,8 @@ To view a sample of this feature:
 2. Click User Interface > WPF. 
 3. Click Run Samples. 
 4. Navigate to Diagram > Automatic Layout > Table Layout.
-##### Adding Table Layout for selected Nodes 
+
+#### Adding Table Layout for selected Nodes 
 
 
 To apply a table layout to the selected nodes, assign the selected nodes to the OrderNodes property of the DiagramModel. You can also assign your own collection of IShape to the _OrderNodes_ property. Then create an instance of the TableLayout and call the RefreshLayout method for this instance.
@@ -2906,7 +2930,7 @@ To apply a table layout to the selected nodes, assign the selected nodes to the 
 The following code illustrates this: 
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -2920,7 +2944,8 @@ The following code illustrates this:
           TableLayout table = new TableLayout(diagramModel, diagramView);
 
           table.RefreshLayout();
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 
 [VB]
@@ -2938,7 +2963,7 @@ Dim table As New TableLayout(diagramModel, diagramView)
 table.RefreshLayout()
 
 
-
+{% endhighlight %}
 
 
 When the code runs, the table layout will be applied to the specified node collection.  
@@ -2947,20 +2972,20 @@ _Note: If the OrderNodes property is set to null, then the table layout will be 
 
 
 
-{{ '![C:/Users/labuser/Desktop/selection.PNG](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
-{:.image }
+![C:/Users/labuser/Desktop/selection.PNG](Getting-Started_images/Getting-Started_img16.png)
+
 
 
 _Table Layout Applied for Specified Nodes_
 
-##### Aligning the Layout on a Specified Location
+#### Aligning the Layout on a Specified Location
 
 To align the ordered nodes in a particular position, call the TableLayout’s RefreshLayout (Point PivotPoint) method and specify the particular point as a parameter. The layout will be positioned in the specified pivot point. 
 
 The following code illustrates this:
 
 
-
+{% highlight c#  %}
 [C#]
 
        // Assigning selected node to the OrderedNodes.
@@ -2971,7 +2996,8 @@ The following code illustrates this:
 
           table.RefreshLayout(300,400);
 
-
+{% endhighlight %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -2982,14 +3008,16 @@ diagramModel.OrderedNodes= diagramView.SelectionList.OfType(Of IShape)().ToList(
 Dim table As New TableLayout(diagramModel, diagramView)
 
 table.RefreshLayout(300,400)
+{% endhighlight   %}
 
-##### Removing Table Layout from the Specific Nodes
+
+#### Removing Table Layout from the Specific Nodes
 
 You can remove the table layout applied to specific nodes. To achieve this set the OrderedNodes property of the DiagramMode to null, and call the RefreshLayout method of the TableLayout. The layout will be applied to the entire diagram. By default the OrderedNodes property is set to null.
 
 The following code illustrates how to remove the layout from the specific nodes:
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -3002,6 +3030,6 @@ The following code illustrates how to remove the layout from the specific nodes:
           table.RefreshLayout(300,400);
 
 
-
+{% endhighlight   %}
 
 

@@ -18,17 +18,17 @@ This feature will get the information from you and will draw the Gantt schedule 
 
 These types are included in the existing ScheduleType enum.
 
-Custom Numeric
+## Custom Numeric
 
 Custom Numeric schedule is used to define your own schedule with any numeric measurement unit other than date time. With this schedule, you can track the progress based on your own measurement and there is no need to depend on Date Time. Two new API’s are added to the Mapping attributes to support this schedule in GanttChart and GanttGrid.
 
-Custom DateTime
+## Custom DateTime
 
 Custom DateTime schedule is used to define your own date time schedule, which can match your current financial calendar. By using schedule type as custom schedule, you can define your schedule on quarterly basis.
 
 In both the custom schedules, Gantt will get the information from the application to render the schedule. Gantt will accept the custom schedule information in the form of a collection of GanttScheduleRowInfo object, and process it to draw the schedule. 
 
-GanttScheduleRowInfo class will have following fields:
+## GanttScheduleRowInfo class will have following fields:
 
 1. PixelsPerUnit—Gets the information of the pixel value equivalent to one unit in custom measurement.
 2. CellsPerUnit—Gets the information of a cell size of preceding row in the schedule based on the immediate next row. In CustomDateTime Schedule, the CellsPerUnit will be used to customize the cell. For example, in quarterly basis month cell, You need to draw a schedule by consolidating three months. For this, you need to define the CellsPerUnit of that corresponding row as 3.
@@ -46,7 +46,7 @@ GanttScheduleRowInfo class will have following fields:
 
 
 
-Use Case Scenario
+## Use Case Scenario
 
 This will be useful when you like to define your own schedules with your own measurements/calendars.
 
@@ -54,27 +54,27 @@ Example 1: The Research organizations may follow different measurements to track
 
 Example 2: A very big construction project many have the time period of many years or months. They need some customized way of date time schedule to track their progress. In this scenario, they can use the CustomDateTime schedule to form the custom schedule like the schedule that has the time scale on quarterly basis to track their progress.
 
-Properties
+## Properties
 
 _Property_ 
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 CustomScheduleSource</td><td>
 Gets/Sets the custom schedule items Source of the Gantt.</td><td>
 DependencyProperty </td><td>
-IList<GanttScheduleRowInfo></td></tr>
+IList&lt;GanttScheduleRowInfo&gt;</td></tr>
 </table>
 
 
-Events
+## Events
 
 _Event_
 
@@ -94,7 +94,7 @@ Routed Event </th></tr>
 </table>
 
 
-GanttScheduleCell Class
+## GanttScheduleCell Class
 
 The properties of the GanttScheduleCell class are as follows:
 
@@ -102,11 +102,11 @@ _Properties_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 CellDate</td><td>
@@ -134,7 +134,7 @@ Object</td></tr>
 </table>
 
 
-Adding Custom Schedule to an Application
+## Adding Custom Schedule to an Application
 
 To Add CustomNumeric Schedule to an application:
 
@@ -143,7 +143,7 @@ To Add CustomNumeric Schedule to an application:
 2. Bind the GanttScheduleRowInfo collection to the CustomScheduleSource property of the Gantt.
 
 The following code illustrates Adding Custom Schedule to an Application:
-
+{% highlight html %}
 [XAML]
 
 
@@ -176,7 +176,8 @@ The following code illustrates Adding Custom Schedule to an Application:
 
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -228,19 +229,19 @@ The following code illustrates Adding Custom Schedule to an Application:
 
    }   
 
-
+{% endhighlight  %}
 
 The following image shows Custom Schedule:
 
 
 
-{{ '![](Custom-Schedule_images/Custom-Schedule_img1.png)' | markdownify }}
-{:.image }
+![](Custom-Schedule_images/Custom-Schedule_img1.png)
+
 
 
 _Custom Schedule_
 
-Samples Link
+## Samples Link
 
 To view samples:
 
@@ -250,7 +251,7 @@ To view samples:
 4. Expand the Custom Schedule item in the Sample Browser.
 5. Choose the Custom Numeric Schedule sample to launch.
 
-Adding CustomDateTime Schedule to an Application
+## Adding CustomDateTime Schedule to an Application
 
 To Add CustomDateTime Schedule to an application:
 
@@ -258,7 +259,7 @@ To Add CustomDateTime Schedule to an application:
 2. Bind the GanttScheduleRowInfo collection to the CustomScheduleSource property of the Gantt.
 
 The following code illustrates this:
-
+{% highlight html %}
 [XAML]
 
 
@@ -305,7 +306,8 @@ The following code illustrates this:
 
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -457,7 +459,7 @@ The following code illustrates this:
 
 
 
-
+{% endhighlight  %}
 
 
 
@@ -465,13 +467,13 @@ The following image shows Custom DateTime Schedule:
 
 
 
-{{ '![C:/Users/thanigaivelan/Desktop/UGImages/custom.png](Custom-Schedule_images/Custom-Schedule_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/thanigaivelan/Desktop/UGImages/custom.png](Custom-Schedule_images/Custom-Schedule_img2.png)
+
 
 
 _Custom DateTime Schedule_
 
-Samples Link
+## Samples Link
 
 To view samples:
 

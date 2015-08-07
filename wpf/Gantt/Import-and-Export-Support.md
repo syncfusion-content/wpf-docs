@@ -15,11 +15,11 @@ _Properties_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 ImportFromXMLCommand</td><td>
@@ -62,12 +62,12 @@ bool</th></tr>
 </table>
 
 
-Import/Export Task Details from/to XML
+## Import/Export Task Details from/to XML
 
 The following code illustrates how to Import and Export Task Details from or to XML.
 
 
-
+{% highlight html %}
 [XAML]
 
 <Sync:GanttControl x:Name="Gantt" />
@@ -85,7 +85,8 @@ The following code illustrates how to Import and Export Task Details from or to 
               Content="Import From XML" />
 </StackPanel>
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -112,15 +113,15 @@ The following code illustrates how to Import and Export Task Details from or to 
         }
 
 
-
+{% endhighlight  %}
 
 
 The following image shows XML Export Import:
 
 
 
-{{ '![](Import-and-Export-Support_images/Import-and-Export-Support_img1.png)' | markdownify }}
-{:.image }
+![](Import-and-Export-Support_images/Import-and-Export-Support_img1.png)
+
 
 
 _XML Export Import_
@@ -131,15 +132,15 @@ The following image shows Importing the exported document in MS Project:
 
 
 
-{{ '![](Import-and-Export-Support_images/Import-and-Export-Support_img2.png)' | markdownify }}
-{:.image }
+![](Import-and-Export-Support_images/Import-and-Export-Support_img2.png)
+
 
 
 _Exported document opened in MS Project_
 
 
 
-Samples Link
+## Samples Link
 
 To view samples: 
 

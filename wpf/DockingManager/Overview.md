@@ -11,7 +11,7 @@ documentation: ug
 
 The DockingManager control implements an architecture that allows child controls to be docked to any part of a window as in Microsoft Visual Studio. You can add the DockingManager control as a child to your windows and add the child elements to this control to dock them. The dock panels containing the child elements can be interactively dragged to any area within the window, with the advanced support of effective visual cues. These windows can also be floated, tabbed, and auto hidden at run time.
 
-Features
+## Features
 
 * DockingManager supports different dock states such as Docking, Floating, AutoHide and Document.
 * Multiple Document Interface (MDI)/Tabbed Document Interface(TDI) windows are available in Docking Manager .
@@ -32,34 +32,34 @@ Features
 * Content Previewer support like Vista in tabbed dock mode.
 * Complete Drag provider customization support is available.
 * Complete serialization support of docking states.
+
 ## Control Structure
 
 
 
 
-{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.png)
 
 
 Visual Tree: 
 
-{{ '![](Overview_images/Overview_img2.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img2.png)
+
 
 
 ## Class Diagram
 
 
 
-{{ '![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/Docking_Class.png](Overview_images/Overview_img3.png)' | markdownify }}
-{:.image }
+
+
 
 
 ## Properties, Methods and Events
 
 ### Properties
 
-#### Dependency Properties
+Dependency Properties
 
 _Dependency properties tables_
 
@@ -415,17 +415,19 @@ bool</td><td>
 </td><td>
 Hosting Windows Form control in DockingManager</td></tr>
 </table>
-#### Attached Properties
+
+
+Attached Properties
 
 _Attached properties table_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td><td>
-Type</td><td>
-Values</td></tr>
+<th>
+Properties</th><th>
+Description</th><th>
+Type</th><th>
+Values</th></tr>
 <tr>
 <td>
 AnimationDelay</td><td>
@@ -639,7 +641,7 @@ Brush</td><td>
 </table>
 
 
-### Methods
+Methods
 
 _Methods table_
 
@@ -745,7 +747,8 @@ SaveDockState(string path)</td><td>
 Saves the DockState in given file path.</td><td>
 State Persistence in DockingManager</td></tr>
 </table>
-### Events
+
+Events
 
 _Events table_
 

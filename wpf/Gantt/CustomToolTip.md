@@ -11,17 +11,17 @@ documentation: ug
 
 Essential Gantt provides tooltip support for the TaskBar. Tooltip is a small pop-up box, which is usually displayed on mouse hover. This is used to display additional information about the elements without increasing the window size. Essential Gantt provides support to add customizable tooltip. You can add text or image to your tooltip as needed. 
 
-Properties
+## Properties
 
 _Property_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 ToolTipTemplate</td><td>
@@ -31,11 +31,11 @@ DataTemplate</td></tr>
 </table>
 
 
-Adding CustomToolTip to Gantt 
+## Adding CustomToolTip to Gantt 
 
 The following code illustrates how to add a custom tooltip to the Gantt control.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -74,20 +74,20 @@ The following code illustrates how to add a custom tooltip to the Gantt control.
 <Sync:GanttControl x:Name="Gantt" ToolTipTemplate="{StaticResource ToolTipTemp}"/>
 
 
-
+{% endhighlight  %}
 
 
 The following image shows Custom ToolTip:
 
 
 
-{{ '![](CustomToolTip_images/CustomToolTip_img1.png)' | markdownify }}
-{:.image }
+![](CustomToolTip_images/CustomToolTip_img1.png)
+
 
 
 _Custom ToolTip Demo_
 
-Samples Link
+## Samples Link
 
 To view samples: 
 

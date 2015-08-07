@@ -13,6 +13,7 @@ Zooming allows you to zoom in and zoom out of the schedule and chart of the Gant
 
 * Built-in zooming 
 * Custom zooming
+
 ## Built-in Zooming
 
 
@@ -21,7 +22,7 @@ Built-in zooming allows you to zoom in and zoom out of the schedule rows. The bu
 * Zoom-in: Zoom-in increases the cell size dynamically. When the cell size exceeds the specified range, it will split the schedule cells. When a cell cannot be split further, a new schedule row with the next time unit is added beneath the last row of the current schedule. The cell split-up and adding a new row inclusion is based on the zoom factor. 
 * Zoom-out: Zoom-out decreases the cell size dynamically. When the cell size is within the specified range, it will merge the schedule cells. When the cells cannot be merged further, the last row of the current schedule is removed. Merging and removing a row is based on the zoom factor.
 
-Adding Built-in Zooming to an Application
+### Adding Built-in Zooming to an Application
 
 To add the built-in zooming:
 
@@ -30,7 +31,7 @@ To add the built-in zooming:
 3. Use a slider or any control to provide the zoom factor dynamically. Bind the Gantt’s zoom factor to that control value.
 
 
-
+{% highlight html %}
 [XAML]
 
 <Slider Minimum="80" Maximum="600" Value="100" x:Name="ZoomSlider" Width="150"/>
@@ -47,7 +48,8 @@ To add the built-in zooming:
 
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -96,16 +98,16 @@ To add the built-in zooming:
 
 
 
-
+{% endhighlight  %}
 The following image shows Built-in Zooming in Gantt:
 
 
 
-{{ '![](Zooming_images/Zooming_img1.png)' | markdownify }}
-{:.image }
+![](Zooming_images/Zooming_img1.png)
 
 
-Samples Link
+
+## Samples Link
 
 To view samples:
 
@@ -121,11 +123,11 @@ To view samples:
 
 In custom zooming, everything is handled at the application level. You can change the schedule row information and cell size dynamically by handling the provided event handler. While the zooming is handled at the application level, built-in zooming will not work. You cannot use built-in zooming and custom zooming together. 
 
-Use Case Scenarios
+### Use Case Scenarios
 
 When you like to view tasks that are scheduled on a month unit in the day/hours unit, you have to restart the application by changing the schedule type to day/hours unit. Zooming allows you to easily zoom in on the day/hours unit by providing the zoom factor without restarting the application.
 
-Adding Custom Zooming to an Application
+### Adding Custom Zooming to an Application
 
 To add custom zooming:
 
@@ -135,7 +137,7 @@ To add custom zooming:
 4. Use any control to provide the zoom factor dynamically. Bind the Gantt’s zoom factor to that control value.
 5. Handle the ZoomChanged event handler in code behind and change the schedule row information in that event handler as illustrated in the following code example:
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -161,7 +163,8 @@ To add custom zooming:
 
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -378,18 +381,18 @@ private void Gantt_ZoomChanged(object sender, ZoomChangedEventArgs args)
 }
 
 
-
+{% endhighlight  %}
 
 
 The following image shows Custom Zooming in Gantt:
 
 
 
-{{ '![](Zooming_images/Zooming_img2.png)' | markdownify }}
-{:.image }
+![](Zooming_images/Zooming_img2.png)
 
 
-Samples Link
+
+## Samples Link
 
 To view samples:
 
@@ -405,11 +408,11 @@ _Properties_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 UseOnDemandSchedule</td><td>

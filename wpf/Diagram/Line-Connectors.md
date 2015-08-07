@@ -13,20 +13,20 @@ Connectors are objects that are used to create a link between two nodes. Each co
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img1.png)' | markdownify }}
-{:.image }
+![](Line-Connectors_images/Line-Connectors_img1.png)
+
 
 
 _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 EnableConnection</td><td>
@@ -46,7 +46,7 @@ No</td></tr>
 IntermediatePoints</td><td>
 Gets or sets the intermediate points.</td><td>
 Dependency property</td><td>
-List<Point></td><td>
+List&lt;Point&gt;></td><td>
 No</td></tr>
 <tr>
 <td>
@@ -263,7 +263,7 @@ double</td><td>
 Ports</td><td>
 Gets or sets connection ports for line connectors.</td><td>
 Dependency  property</td><td>
-ObservableCollection<ConnectionPort>()</td><td>
+ObservableCollection&lt;ConnectionPort&gt;()</td><td>
 No</td></tr>
 <tr>
 <td>
@@ -324,28 +324,29 @@ No</td></tr>
 </table>
 
 
-FirstSegmentLength:
+## FirstSegmentLength:
 
 FirstSegmentLength defines the distance between StartPointPosition and the first IntermediatePoint. This property is applicable only for Orthogonal LineConnector whose end points are connected to ports.
 
-LastSegmentLength:
+## LastSegmentLength:
 
 LastSegmentLength defines the distance between the EndPointPosition and the last IntermediatePoint. This property is applicable only for Orthogonal LineConnector whose end points are connected to ports.
 
-AutoAdjustPoints:
+
+## AutoAdjustPoints:
 
 AutoAdjustPoints enables the Orthogonal LineConnector to adjust the intermediate points (add, remove, or modify intermediate points) depending upon the ports to which it is connected. This property is applicable only for Orthogonal LineConnector whose end points are connected to ports.  
 
 
 
-{{ '![Description: C:/Users/jeganr/Desktop/ug/segment1.png](Line-Connectors_images/Line-Connectors_img2.png)' | markdownify }}
-{:.image }
+![Description: C:/Users/jeganr/Desktop/ug/segment1.png](Line-Connectors_images/Line-Connectors_img2.png)
+
 
 
 The following is a code snippet that connects two Nodes with a LineConnector with FirstSegmentLength and LastSegmentLength.
 
 
-
+{% highlight c#  %}
 [C#] 
 
 
@@ -431,7 +432,8 @@ line.AutoAdjustPoints = true;
 diagramModel.Connections.Add(line); 
 
 
-
+{% endhighlight %}
+{% highlight vbnet  %}
 [VB]
 
 
@@ -514,7 +516,7 @@ line.AutoAdjustPoints = True
 
 diagramModel.Connections.Add(line) 
 
-
+{% endhighlight  %}
 
 See Also
 
@@ -540,12 +542,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 EnableConnection</td><td>
@@ -564,28 +566,28 @@ No</td></tr>
 
 
 
-> _Note: If a node is not hit while making a connection, then no connector gets added._
+> Note: If a node is not hit while making a connection, then no connector gets added.
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img3.jpeg)' | markdownify }}
-{:.image }
+![](Line-Connectors_images/Line-Connectors_img3.jpeg)
+
 
 
 * When you hit any node in the process, you can see an adorner showing what the link will look like if created.
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img4.jpeg)' | markdownify }}
-{:.image }
+![](Line-Connectors_images/Line-Connectors_img4.jpeg)
+
 
 
 * Release the left button over the target node where you want to connect. This acts as the tail node for the connector and hence the link is created.
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img5.jpeg)' | markdownify }}
-{:.image }
+![](Line-Connectors_images/Line-Connectors_img5.jpeg)
+
 
 
 The connector's path geometry is dynamically created based on the start and end points and the connector type.
@@ -596,31 +598,31 @@ It is also possible to drag-and-drop line connectors from the SymbolPalette. Thr
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img6.jpeg)' | markdownify }}
-{:.image }
+![](Line-Connectors_images/Line-Connectors_img6.jpeg)
+
 
 
 2. Then drag the head thumb of the line connector to the desired node to make a connection.
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img7.jpeg)' | markdownify }}
-{:.image }
+![](Line-Connectors_images/Line-Connectors_img7.jpeg)
+
 
 
 3. Similarly drag the tail thumb of the line connector to the desired node. Now, this creates a link between the two nodes.
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img8.jpeg)' | markdownify }}
-{:.image }
+![](Line-Connectors_images/Line-Connectors_img8.jpeg)
+
 
 
 ### Add Connectors through a Model
 
 You can create connections between nodes through a model. The Line Connector class is used to create the connection. We need to specify the head node and the tail node for the connection.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -658,7 +660,8 @@ l1.TailNode = n2;
 
 diagramModel.Connections.Add(l1);
 
-
+{% endhighlight   %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -696,17 +699,17 @@ l1.TailNode = n2
 
 diagramModel.Connections.Add(l1)
 
-
+{% endhighlight   %}
 
 This creates a connection between the two specified nodes.
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img9.jpeg)' | markdownify }}
-{:.image }
+![](Line-Connectors_images/Line-Connectors_img9.jpeg)
 
 
-> _Note: For orthogonal and Bezier connectors, the connection always happens at the center of the node's edge._
+
+> Note: For orthogonal and Bezier connectors, the connection always happens at the center of the node's edge.
 
 For straight line connectors, the connection happens at the intersection point of the edge and the line connector.
 
@@ -716,15 +719,15 @@ This feature provides the ability to drag nodes and connection ports when the En
 
 Properties
 
-_Setting Constraints for EnableConnection Property_
+## Setting Constraints for EnableConnection Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 NodeModePortMode</td><td>
@@ -732,9 +735,10 @@ Allows nodes to be dragged when EnableConnection is enabled.Allows connection po
 DependencyPropertyDependencyProperty</td><td>
 EnumEnum</td></tr>
 </table>
+
 ### Enabling Connection Mode Constraints for Nodes and Connection Ports
 
-#### NodeMode
+### NodeMode
 
 This property is used to define whether the node can be movable when the EnableConnection property of the DiagramView is set to true.
 
@@ -749,7 +753,7 @@ If the NodeMode property of DiagramView is set to Connect, the diagram nodes can
 
 To set this property to Connect, use the following code.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -759,7 +763,8 @@ View1.NodeMode = ConnectionMode.Connect;
 
 
 
-
+{% endhighlight   %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -768,7 +773,7 @@ Dim view1 As New DiagramView()
 View1.NodeMode = ConnectionMode.Connect
 
 
-
+{% endhighlight   %}
 
 
 If the NodeMode property of DiagramView is set to Move, even though the EnableConnection is set to ‘true’ a node can be moved and will not be able to be connected to a line connector.
@@ -776,7 +781,7 @@ If the NodeMode property of DiagramView is set to Move, even though the EnableCo
 To set this property to Move, use the following code.
 
 
-
+{% highlight c#  %}
 [C#]
 
 DiagramView View1 = new DiagramView();
@@ -784,7 +789,8 @@ DiagramView View1 = new DiagramView();
 View1.NodeMode = ConnectionMode.Move;
 
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 [VB]
@@ -793,9 +799,9 @@ Dim view As New DiagramView()
 
 view.NodeMode = ConnectionMode.Move
 
+{% endhighlight   %}
 
-
-#### PortMode
+### PortMode
 
 This property is used to define whether a connection port can be movable when the EnableConnection property of the DiagramView is set to true.
 
@@ -810,7 +816,7 @@ If the PortMode property of the DiagramView is set to Connect, we can create por
 
 To set the PortMode property to Connect, use the following code.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -819,7 +825,8 @@ DiagramView View1 = new DiagramView();
 View1.PortMode = ConnectionMode.Connect;
 
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 [VB]
 
 Dim view As New DiagramView()
@@ -827,7 +834,7 @@ Dim view As New DiagramView()
 view.PortMode = ConnectionMode.Connect
 
 
-
+{% endhighlight   %}
 
 
 If the PortMode property of the DiagramView is set to Move, even though EnableConnection is set to true, a port can be moved yet a port-to-port connection can’t be created. 
@@ -835,7 +842,7 @@ If the PortMode property of the DiagramView is set to Move, even though EnableCo
 To set the PortMode property to Move, use the following code.
 
 
-
+{% highlight c#  %}
 [C#]
 
 DiagramView View1 = new DiagramView();
@@ -843,8 +850,9 @@ DiagramView View1 = new DiagramView();
 View1.PortMode = ConnectionMode.Move;
 
 
+{% endhighlight  %}
 
-
+{% highlight vbnet  %}
 
 [VB]
 
@@ -852,7 +860,7 @@ Dim view1 As New DiagramView()
 
 View1.PortMode = ConnectionMode.Move
 
-
+{% endhighlight   %}
 
 ## Connector Type
 
@@ -862,11 +870,11 @@ _Connector Type_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 ConnectorType</td><td>
@@ -885,7 +893,7 @@ Following types of connectors are supported:
 
 The following code illustrates how to set the connector type:
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -901,7 +909,8 @@ l1.ConnectorType = ConnectorType.Bezier;
 
 diagramModel.Connections.Add(l1);
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -918,11 +927,11 @@ l1.ConnectorType = ConnectorType.Bezier
 diagramModel.Connections.Add(l1)
 
 
+{% endhighlight  %}
 
 
+![Description: C:/Users/jeganr/Desktop/New Images/New Images/ConnectorTypes.png](Line-Connectors_images/Line-Connectors_img10.png)
 
-{{ '![Description: C:/Users/jeganr/Desktop/New Images/New Images/ConnectorTypes.png](Line-Connectors_images/Line-Connectors_img10.png)' | markdownify }}
-{:.image }
 
 
 Arc Line Connector Type
@@ -935,12 +944,12 @@ _Arc Line Connector Customization Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Data Type</td><td>
-Reference Links</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Data Type</th><th>
+Reference Links</th></tr>
 <tr>
 <td>
 ArcHeight</td><td>
@@ -967,7 +976,7 @@ Use the ArcHeight and the ArcDirection__property__of ConnectorBase to customize 
 
 Following code illustrates how to customize the hieght and direction of the Arc:
 
-
+{% highlight c#  %}
 
  [C#]
 
@@ -990,7 +999,8 @@ Following code illustrates how to customize the hieght and direction of the Arc:
           diagramModel1.Connections.Add(l);
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 
 [VB]
@@ -1015,14 +1025,14 @@ diagramModel1.Connections.Add(l)
 
 
 
+{% endhighlight   %}
+
+![Description: C:/Users/jeganr/Desktop/New Images/New Images/ArcHeight.png](Line-Connectors_images/Line-Connectors_img11.png)
 
 
-{{ '![Description: C:/Users/jeganr/Desktop/New Images/New Images/ArcHeight.png](Line-Connectors_images/Line-Connectors_img11.png)' | markdownify }}
-{:.image }
 
+![Description: C:/Users/jeganr/Desktop/New Images/New Images/ArcDirection.png](Line-Connectors_images/Line-Connectors_img12.png)
 
-{{ '![Description: C:/Users/jeganr/Desktop/New Images/New Images/ArcDirection.png](Line-Connectors_images/Line-Connectors_img12.png)' | markdownify }}
-{:.image }
 
 
 ## Polyline
@@ -1033,40 +1043,40 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 IntermediatePoints</td><td>
 Gets or sets the intermediate points.</td><td>
 Dependency property</td><td>
-List<Point></td><td>
+List&lt;Point&gt;</td><td>
 No</td></tr>
 </table>
 
 
-Polylines
+### Polylines
 
 Straight line connectors can be used as poly line by using IntermediatePoints property. This can be achieved at run time by holding Ctrl + Shift and Click on the line, or by simply changing the IntermediatePoints collection. This will reflect in the line connector.
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img13.jpeg)' | markdownify }}
-{:.image }
+![](Line-Connectors_images/Line-Connectors_img13.jpeg)
 
 
-Poly Orthogonal Lines
+
+### Poly Orthogonal Lines
 
 Orthogonal lines can have more than two intermediate points. All these Intermediate points are can be dragged. Unlike straight lines, orthogonal lines maintain their perpendicularity even after the intermediate points are dragged.
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img14.jpeg)' | markdownify }}
-{:.image }
+![](Line-Connectors_images/Line-Connectors_img14.jpeg)
+
 
 
 ### Intermediate Points
@@ -1082,7 +1092,7 @@ Intermediate points can be added in two ways:
 
 Intermediate points can be added at run time by holding Ctrl + Shift and clicking on the line. Intermediate points can be added programmatically. The following code snippet illustrates addition of intermediate lines.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -1101,7 +1111,8 @@ lc.IntermediatePoints.Add(new Point(200,100));
 lc.IntermediatePoints.Add(new Point(200,300));
 
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 [VB]
 
 
@@ -1119,14 +1130,14 @@ lc.IntermediatePoints.Add(New Point(200,100))
 lc.IntermediatePoints.Add(New Point(200,300))
 
 
+{% endhighlight   %}
+
+
+![](Line-Connectors_images/Line-Connectors_img15.jpeg)
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img15.jpeg)' | markdownify }}
-{:.image }
-
-
-> _Note: By default, an orthogonal line connector has two intermediate points. So, newly added intermediate points will need to be added beyond the default intermediate points. If users need to add new intermediate points to the line connector only, they must clear all of the default intermediate points and then add the intermediate points. Otherwise, the newly added intermediate points will be added beyond the default intermediate points._
+> Note: By default, an orthogonal line connector has two intermediate points. So, newly added intermediate points will need to be added beyond the default intermediate points. If users need to add new intermediate points to the line connector only, they must clear all of the default intermediate points and then add the intermediate points. Otherwise, the newly added intermediate points will be added beyond the default intermediate points.
 
 Modifying Intermediate Points
 
@@ -1137,7 +1148,7 @@ Intermediate Points can be modified in two ways:
 
 Intermediate points can be modified at run time by clicking and dragging the vertex of the line connector. Intermediate points can be modified programmatically also. The following code snippet illustrates modification of intermediate lines.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -1157,7 +1168,8 @@ lc.IntermediatePoints.Add(new Point(200,300));
 
 lc.IntermediatePoints[1] = new Point(200,200));
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -1178,9 +1190,9 @@ lc.IntermediatePoints.Add(New Point(200,300))
 lc.IntermediatePoints(1) = New Point(200,200))
 
 
+{% endhighlight  %}
+![](Line-Connectors_images/Line-Connectors_img16.jpeg)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img16.jpeg)' | markdownify }}
-{:.image }
 
 
 Delete Intermediate Points
@@ -1192,7 +1204,7 @@ Intermediate points can be deleted in two ways:
 
 Intermediate points can be deleted by holding Ctrl + Shift and clicking on the vertex that represents intermediate point to be deleted. Intermediate points can be deleted programmatically also. The following code example illustrates deletion of intermediate lines.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -1212,7 +1224,8 @@ lc.IntermediatePoints.Add(new Point(200,300));
 
 lc.IntermediatePoints.RemoveAt(1);
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1232,10 +1245,10 @@ lc.IntermediatePoints.Add(New Point(200,300))
 
 lc.IntermediatePoints.RemoveAt(1)
 
+{% endhighlight   %}
 
+![](Line-Connectors_images/Line-Connectors_img17.jpeg)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img17.jpeg)' | markdownify }}
-{:.image }
 
 
 ### Vertex Template for Intermediate Points
@@ -1246,12 +1259,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 VertexStyle</td><td>
@@ -1261,7 +1274,7 @@ Style</td><td>
 No</td></tr>
 </table>
 
-
+{% highlight html  %}
 [XAML]
 
 
@@ -1317,7 +1330,8 @@ No</td></tr>
     </Window.Resources>
 
 
-
+{% endhighlight  %}
+{% highlight c#  %}
 [C#]
 
 
@@ -1336,7 +1350,8 @@ lc.IntermediatePoints.Add(new Point(200, 300));
 
 lc.VertexStyle = this.Resources["vertexStyle"] as Style;
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1356,10 +1371,10 @@ lc.IntermediatePoints.Add(New Point(200, 300))
 
 lc.VertexStyle = TryCast(Me.Resources("vertexStyle"), Style)
 
+{% endhighlight   %}
 
+![](Line-Connectors_images/Line-Connectors_img18.jpeg)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img18.jpeg)' | markdownify }}
-{:.image }
 
 
 ### Template for End Points
@@ -1370,12 +1385,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 DecoratorAdornerStyle</td><td>
@@ -1385,7 +1400,7 @@ Style</td><td>
 No</td></tr>
 </table>
 
-
+{% highlight html  %}
 [XAML]
 
 
@@ -1424,7 +1439,8 @@ No</td></tr>
 
     </Window.Resources>
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -1445,7 +1461,8 @@ lc.IntermediatePoints.Add(new Point(200, 300));
 lc.DecoratorAdornerStyle = this.Resources["decorator"] as Style;
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 [VB]
 
 
@@ -1465,9 +1482,9 @@ lc.IntermediatePoints.Add(New Point(200, 300))
 lc.DecoratorAdornerStyle = TryCast(Me.Resources("decorator"), Style)
 
 
+{% endhighlight   %}
+![](Line-Connectors_images/Line-Connectors_img19.jpeg)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img19.jpeg)' | markdownify }}
-{:.image }
 
 
 ### Hide Vertex
@@ -1478,12 +1495,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 IsVertexVisible</td><td>
@@ -1493,7 +1510,7 @@ Style</td><td>
 No</td></tr>
 </table>
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -1512,7 +1529,8 @@ lc.IntermediatePoints.Add(new Point(200, 300));
 
 lc.IsVertexVisible = false; 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1532,10 +1550,10 @@ lc.IntermediatePoints.Add(New Point(200, 300))
 
 lc.IsVertexVisible = False
 
+{% endhighlight  %}
 
+![](Line-Connectors_images/Line-Connectors_img20.jpeg)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img20.jpeg)' | markdownify }}
-{:.image }
 
 
 ### Arresting Vertex Drag
@@ -1546,12 +1564,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 IsVertexMovable</td><td>
@@ -1560,7 +1578,7 @@ Dependency property</td><td>
 Boolean (true/ false)</td><td>
 No</td></tr>
 </table>
-
+{% highlight c#  %}
 
 [C#]
 
@@ -1580,7 +1598,8 @@ lc.IntermediatePoints.Add(new Point(200, 300));
 
 lc.IsVertexMovable = false;
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1600,7 +1619,7 @@ lc.IntermediatePoints.Add(New Point(200, 300))
 
 lc.IsVertexMovable = False
 
-
+{% endhighlight  %}
 
 The vertex drag of a line connector is arrested.
 
@@ -1612,12 +1631,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 HeadDecoratorShape</td><td>
@@ -1674,7 +1693,7 @@ Types of decorator shapes
 The following code shows how to set these properties.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -1693,7 +1712,8 @@ l1.TailDecoratorShape = DecoratorShape.Circle;
 
 diagramModel.Connections.Add(l1); 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1713,10 +1733,10 @@ l1.TailDecoratorShape = DecoratorShape.Circle
 
 diagramModel.Connections.Add(l1)
 
+{% endhighlight  %}
 
+![](Line-Connectors_images/Line-Connectors_img21.jpeg)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img21.jpeg)' | markdownify }}
-{:.image }
 
 
 CustomDecoratorShape
@@ -1732,7 +1752,7 @@ CustomDecoratorShape using Style and Setters
 
 HeadDecoratorShape and TailDecoratorShape can be customized by defining a required style for CustomHeadDecoratorStyle, and CustomTailDecoratorStyle respectively. 
 
-
+{% highlight html  %}
 
 [XAML]
 
@@ -1754,7 +1774,8 @@ HeadDecoratorShape and TailDecoratorShape can be customized by defining a requir
 
 </Window.Resources>
 
-
+{% endhighlight  %}
+{% highlight html  %}
 
 [XAML]
 
@@ -1762,8 +1783,8 @@ HeadDecoratorShape and TailDecoratorShape can be customized by defining a requir
 
 <syncfusion:LineConnector ConnectorType="Bezier"  Label="Line1" LabelWidth="50" IsSelected="True" StartPointPosition="100,400" EndPointPosition="100,500" HeadDecoratorShape="Custom" CustomHeadDecoratorStyle="{StaticResource Deco1}"/>
 
-
-
+{% endhighlight   %}
+{% highlight c#  %}
 [C#]
 
 
@@ -1782,7 +1803,8 @@ l1.CustomHeadDecoratorStyle = this.Resources["deco1"] as Style;
 
 diagramModel.Connections.Add(l1); 
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1802,13 +1824,13 @@ l1.CustomHeadDecoratorStyle = TryCast(Me.Resources("Deco1"), Style)
 
 diagramModel.Connections.Add(l1) 
 
+{% endhighlight   %}
+
+![Description: C:/Users/karthikeyanp/Pictures/images/customhead.png](Line-Connectors_images/Line-Connectors_img22.png)
 
 
-{{ '![Description: C:/Users/karthikeyanp/Pictures/images/customhead.png](Line-Connectors_images/Line-Connectors_img22.png)' | markdownify }}
-{:.image }
 
-
-
+{% highlight html  %}
 
 [XAML]
 
@@ -1830,7 +1852,8 @@ diagramModel.Connections.Add(l1)
 
 </Window.Resources>
 
-
+{% endhighlight   %}
+{% highlight html  %}
 
 [XAML]
 
@@ -1838,7 +1861,8 @@ diagramModel.Connections.Add(l1)
 
 <syncfusion:LineConnector ConnectorType="Orthogonal” Name="Line1" LabelWidth="50" IsSelected="True" StartPointPosition="100,400" EndPointPosition="100,500" TailDecoratorShape="Custom" CustomTailDecoratorStyle="{StaticResource Deco1}"/>
 
-
+{% endhighlight   %}
+{% highlight c# %}
 
 [C#] 
 
@@ -1858,7 +1882,8 @@ l1.CustomTailDecoratorStyle = this.Resources["deco1"] as Style;
 
 diagramModel.Connections.Add(l1);
 
-
+{% endhighlight %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -1878,10 +1903,10 @@ l1.TailHeadDecoratorStyle = TryCast(Me.Resources("Deco1"), Style)
 
 diagramModel.Connections.Add(l1) 
 
+{% endhighlight  %}
 
+![Description: C:/Users/karthikeyanp/Pictures/images/customtailDecoratorstyle.png](Line-Connectors_images/Line-Connectors_img23.png)
 
-{{ '![Description: C:/Users/karthikeyanp/Pictures/images/customtailDecoratorstyle.png](Line-Connectors_images/Line-Connectors_img23.png)' | markdownify }}
-{:.image }
 
 
 
@@ -1891,7 +1916,7 @@ CustomDecoratorShape using DecoratorStyle
 HeadDecoratorShape and TailDecoratorShape can be customized by defining a required style for HeadDecoratorStyle and TailDecoratorStyle respectively. 
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -1924,7 +1949,8 @@ line1.EndPointPosition = new Point(200, 200);
 
 diagramModel.Connections.Add(line1); 
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -1957,18 +1983,18 @@ line1.EndPointPosition = New Point(200, 200)
 diagramModel.Connections.Add(line1) 
 
 
+{% endhighlight   %}
 
 
+![Description: C:/Users/karthikeyanp/Pictures/images/headdeco.png](Line-Connectors_images/Line-Connectors_img24.png)
 
-{{ '![Description: C:/Users/karthikeyanp/Pictures/images/headdeco.png](Line-Connectors_images/Line-Connectors_img24.png)' | markdownify }}
-{:.image }
 
 
 
 
 Customizing TailDecoratorShape with TailDecoratorStyle
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -2003,7 +2029,8 @@ line1.EndPointPosition = new Point(100, 100);
 diagramModel.Connections.Add(line1); 
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 [VB]
 
 
@@ -2036,10 +2063,10 @@ line1.EndPointPosition = New Point(100, 100)
 
 diagramModel.Connections.Add(line1) 
 
+{% endhighlight  %}
 
+![Description: C:/Users/karthikeyanp/Pictures/images/taildeco.png](Line-Connectors_images/Line-Connectors_img25.png)
 
-{{ '![Description: C:/Users/karthikeyanp/Pictures/images/taildeco.png](Line-Connectors_images/Line-Connectors_img25.png)' | markdownify }}
-{:.image }
 
 
 ### SegmentDecoratorShape
@@ -2050,12 +2077,12 @@ _SegmentDecorator Shape_
 
 <table>
 <tr>
-<td>
- Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+ Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 Unit</td><td>
@@ -2087,7 +2114,7 @@ No</td></tr>
 </table>
 
 
-#### To set unit property for Segment decorator setting
+### To set unit property for Segment decorator setting
 
 LineUnit property is used to access the following:
 
@@ -2099,7 +2126,7 @@ LineUnit property is used to access the following:
 
 
 Through XAML
-
+{% highlight html  %}
 [XAML]
 
 <syncfusion:LineConnector.SegmentDecoratorSettings>
@@ -2129,7 +2156,8 @@ Through XAML
 </syncfusion:LineConnector.SegmentDecoratorSettings>
 
 
-
+{% endhighlight   %}
+{% highlight c#  %}
 
 
 Through code behind [c#]
@@ -2167,8 +2195,9 @@ Through code behind [c#]
             decoratorsettings.SegmentDecorator = collection;
 
             line.SegmentDecoratorSettings = decoratorsettings;
+{% endhighlight  %}
 
-#### DecoratorShape Customization
+### DecoratorShape Customization
 
 DecoratorStyle
 
@@ -2186,7 +2215,7 @@ The decorator shapes used for the connector can be customized by specifying the 
 
 To set the same Style and Shape for the entire Line segment
 
-
+{% highlight html  %}
 
 [XAML]
 
@@ -2210,7 +2239,8 @@ To set the same Style and Shape for the entire Line segment
 
 
 
-
+{% endhighlight   %}
+{% highlight c#  %}
 
  [C#]
 
@@ -2237,12 +2267,12 @@ To set the same Style and Shape for the entire Line segment
 
 
 
-
+{% endhighlight  %}
 
 
 To set different shapes and styles to the line segment
 
-
+{% highlight html  %}
 
 [XAML]
 
@@ -2262,7 +2292,8 @@ To set different shapes and styles to the line segment
 
 
 
-
+{% endhighlight   %}
+{% highlight c#  %}
 
 
 
@@ -2289,17 +2320,17 @@ To set different shapes and styles to the line segment
             line.SegmentDecoratorSettings = decoratorsettings;
 
 
-
+{% endhighlight   %}
 
 
 Appearance
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img26.png)' | markdownify }}
-{:.image }
+![](Line-Connectors_images/Line-Connectors_img26.png)
 
 
+{% highlight html  %}
 
 
 [XAML]
@@ -2324,15 +2355,15 @@ Appearance
 
 </syncfusion:LineConnector.SegmentDecoratorSettings>
 
+{% endhighlight   %}
 
 
 
-
-{{ '![](Line-Connectors_images/Line-Connectors_img27.png)' | markdownify }}
-{:.image }
+![](Line-Connectors_images/Line-Connectors_img27.png)
 
 
 
+{% highlight html  %}
 
 [XAML]
 
@@ -2356,15 +2387,15 @@ Appearance
 
 </syncfusion:LineConnector.SegmentDecoratorSettings>
 
+{% endhighlight  %}
 
 
 
-
-{{ '![](Line-Connectors_images/Line-Connectors_img28.png)' | markdownify }}
-{:.image }
+![](Line-Connectors_images/Line-Connectors_img28.png)
 
 
 
+{% highlight html  %}
 
 [XAML]
 
@@ -2389,14 +2420,14 @@ Appearance
 </syncfusion:LineConnector.SegmentDecoratorSettings>
 
 
+{% endhighlight  %}
+
+
+![](Line-Connectors_images/Line-Connectors_img29.png)
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img29.png)' | markdownify }}
-{:.image }
-
-
-
+{% highlight html  %}
 
 [XAML]
 
@@ -2421,7 +2452,7 @@ Appearance
 </syncfusion:LineConnector.SegmentDecoratorSettings>
 
 
-
+{% endhighlight  %}
 
 
 ## Customize Line Connectors
@@ -2446,7 +2477,7 @@ A connector can be customized by specifying the values under the LineStyle prope
 As an example, the Stroke property can be applied as follows.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -2464,7 +2495,8 @@ l1.LineStyle.Stroke = Brushes.Red;
 diagramModel.Connections.Add(l1);
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 
 [VB]
@@ -2483,12 +2515,12 @@ l1.LineStyle.Stroke = Brushes.Red
 
 diagramModel.Connections.Add(l1)
 
+{% endhighlight %}
 
 
 
+![](Line-Connectors_images/Line-Connectors_img30.jpeg)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img30.jpeg)' | markdownify }}
-{:.image }
 
 
 CustomPathStyle
@@ -2501,12 +2533,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 CustomPathStyle </td><td>
@@ -2517,14 +2549,15 @@ NA</td></tr>
 </table>
 
 
-Applying Style for CustomPathStyle
+
+#### Applying Style for CustomPathStyle
 
 Appearance of the LineConnector can be customized by applying style for the CustomPathStyle property. Style can be applied for CustomPathStyle as illustrated in the following code:
 
 * Through XAML
 
 
-
+{% highlight html  %}
 [XAML]
 
 <Window.Resources>
@@ -2555,12 +2588,12 @@ Appearance of the LineConnector can be customized by applying style for the Cust
 
          </Style>
 
-
+{% endhighlight  %}
 
 * Through Code-behind
 
 
-
+{% highlight c#  %}
 [C#]
 
 LineConnector l1 = new LineConnector();
@@ -2577,7 +2610,8 @@ l1.CustomPathStyle = this.Resources["Deco1"] as Style;
 
 diagramModel.Connections.Add(l1); 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -2594,14 +2628,14 @@ l1.EndPointPosition = New Point(200, 200)
 l1.CustomPathStyle = TryCast(Me.Resources("Deco1"), Style)
 
 diagramModel.Connections.Add(l1) 
+{% endhighlight   %}
+
+
+![Description: C:/Users/sundarm/Desktop/line.PNG](Line-Connectors_images/Line-Connectors_img31.png)
 
 
 
-{{ '![Description: C:/Users/sundarm/Desktop/line.PNG](Line-Connectors_images/Line-Connectors_img31.png)' | markdownify }}
-{:.image }
-
-
-DecoratorStyle
+#### DecoratorStyle
 
 The decorator shapes used for the connector can be customized by specifying the property values under the DecoratorStyle property. To change the decorator style, the HeadDecoratorStyle and TailDecoratorStyle properties can be used. 
 
@@ -2618,7 +2652,7 @@ The various properties under the DecoratorStyle property are as follows.
 An example of the Stroke property can be applied to the head decorator as follows.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -2637,7 +2671,8 @@ l1.TailDecoratorStyle.Stroke = Brushes.Red;
 
 diagramModel.Connections.Add(l1);
 
-
+{% endhighlight   %}
+{% highlight vbnet   %}
 
 [VB]
 
@@ -2658,9 +2693,9 @@ l1.TailDecoratorStyle.Stroke = Brushes.Red
 diagramModel.Connections.Add(l1)
 
 
+{% endhighlight  %}
+![](Line-Connectors_images/Line-Connectors_img32.jpeg)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img32.jpeg)' | markdownify }}
-{:.image }
 
 
 ### First Segment Orientation 
@@ -2685,12 +2720,12 @@ _PropertyTable_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td><td>
-Reference links</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 FirstSegmentOrientation</td><td>
@@ -2707,7 +2742,7 @@ You can orient the FirstSegment of the Orthogonal LineConnector using the FirstS
 
 The following code illustrates how to set the FirstSegmentOrientation to Auto:
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -2715,17 +2750,17 @@ LineConnector line = new LineConnector();
 
 line.FirstSegmentOrientation = SegmentOrientation.Auto;
 
-
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 [VB]
 
 Dim line As New LineConnector()
 line.FirstSegmentOrientation = SegmentOrientation.Auto
 
+{% endhighlight   %}
 
+![](Line-Connectors_images/Line-Connectors_img33.png)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img33.png)' | markdownify }}
-{:.image }
 
 
 
@@ -2733,31 +2768,31 @@ line.FirstSegmentOrientation = SegmentOrientation.Auto
 The following code illustrates how to set the FirstSegmentOrientation to Horizontal:
 
 
-
+{% highlight c#  %}
 [C#]
 
 LineConnector line = new LineConnector();
 
 line.FirstSegmentOrientation = SegmentOrientation.Horizontal;  
 
-
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 [VB]
 
 Dim line As New LineConnector()
 line.FirstSegmentOrientation = SegmentOrientation.Horizontal
 
+{% endhighlight  %}
 
+![](Line-Connectors_images/Line-Connectors_img34.png)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img34.png)' | markdownify }}
-{:.image }
 
 
 
 
 The following code illustrates how to set the FirstSegmentOrientation to Vertical.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -2765,20 +2800,20 @@ LineConnector line = new LineConnector();
 
 line.FirstSegmentOrientation = SegmentOrientation.Vertical; 
 
-
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 [VB]
 
 Dim line As New LineConnector()
 line.FirstSegmentOrientation = SegmentOrientation.Vertical 
 
+{% endhighlight   %}
+
+![](Line-Connectors_images/Line-Connectors_img35.png)
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img35.png)' | markdownify }}
-{:.image }
 
-
-> _Note: This FirstSegmentOrientation property is only works as expected when the LineConnector satisfies the following things._
+> Note: This FirstSegmentOrientation property is only works as expected when the LineConnector satisfies the following things.
 
 * _LineConnector is connected between Nodes through ConnectionPort._
 * _When there is only one intermediate Point in Orthogonal LineConnector._
@@ -2793,12 +2828,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 IsLabelEditable</td><td>
@@ -2917,7 +2952,7 @@ No</td></tr>
 A connector can be specified with a label, similar to node, using the Label property. The default value is an empty string. By default, the label starts at the center point of the connector.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -2934,8 +2969,8 @@ l1.Label = "Connect";
 
 diagramModel.Connections.Add(l1);
 
-
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 [VB]
 
 
@@ -2952,10 +2987,10 @@ l1.Label = "Connect"
 
 diagramModel.Connections.Add(l1)
 
+{% endhighlight  %}
 
+![](Line-Connectors_images/Line-Connectors_img36.jpeg)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img36.jpeg)' | markdownify }}
-{:.image }
 
 
 Label Template
@@ -2964,7 +2999,7 @@ You can set a custom template for labels. The following code illustrates on how 
 
 Create a DataTemplate and add the resource “text.png” to your application.
 
-
+{% highlight html  %}
 
 [XAML]
 
@@ -2985,11 +3020,11 @@ Create a DataTemplate and add the resource “text.png” to your application.
 </DataTemplate>
 
 
-
+{% endhighlight   %}
 Now, you can apply the template to the connector as follows.
 
 
-
+{% highlight c#  %}
 [C#]
 
 LineConnector l1 = new LineConnector();
@@ -3013,7 +3048,8 @@ l1.LabelTemplate = this.Resources["LabelCustomTemplate"] as DataTemplate ;
 diagramModel.Connections.Add(l1);
 
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
  [VB]
 
 Dim l1 As New LineConnector()
@@ -3037,18 +3073,18 @@ l1.LabelTemplate = CType(Me.Resources("LabelCustomTemplate"), DataTemplate)
 diagramModel.Connections.Add(l1)
 
 
-
+{% endhighlight  %}
 The following screenshot illustrates "Hello" text on an Alice Blue background with an image on the left.
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image29_92.jpg](Line-Connectors_images/Line-Connectors_img37.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/wpf/ImagesExt/image29_92.jpg](Line-Connectors_images/Line-Connectors_img37.jpeg)
+
 
 
 Multi line label 
 
 Label text can be displayed in multiple lines using LabelTextWrapping property set to wrap. If there is no enough space for the text to get displayed within connector in a single line then text will get wrapped within connector boundaries or LabelWidth and starts to display the label in multiple lines.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -3063,7 +3099,8 @@ l.LabelHeight = 110;
 l.LabelTextWrapping = TextWrapping.Wrap;
 
 l.IsLabelEditable = true;
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 
 [VB]
@@ -3080,17 +3117,17 @@ l.LabelTextWrapping = TextWrapping.Wrap
 
 l.IsLabelEditable = True
 
+{% endhighlight  %}
 
+![](Line-Connectors_images/Line-Connectors_img38.png)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img38.png)' | markdownify }}
-{:.image }
 
 
 Label Editing
 
 A connector's label can be edited at run time by setting IsLabelEditable to ‘True’. The following code shows how it can be done.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -3102,8 +3139,8 @@ l1.Shape = Shapes.RoundedRectangle;
 
 l1.IsLabelEditable = true;
 
-
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 [VB]
 
 
@@ -3114,7 +3151,7 @@ l1.Shape = Shapes.RoundedRectangle
 
 l1.IsLabelEditable = True
 
-
+{% endhighlight  %}
 
 You can specify a label at run time by following the below mentioned steps.
 
@@ -3123,15 +3160,15 @@ You can specify a label at run time by following the below mentioned steps.
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img39.jpeg)' | markdownify }}
-{:.image }
+![](Line-Connectors_images/Line-Connectors_img39.jpeg)
+
 
 
 Label Visibility
 
 A label's visibility can be changed using the LabelVisibility property. The default value is visible.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -3141,7 +3178,8 @@ LineConnector l1 = new LineConnector();
 
 l1.LabelVisibility = Visibility.Hidden;
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -3151,7 +3189,7 @@ Dim l1 As New LineConnector()
 
 l1.LabelVisibility = Visibility.Hidden
 
-
+{% endhighlight  %}
 
 The label will not get displayed.
 
@@ -3160,7 +3198,7 @@ Multiline Label Support for LabelEditor:
 LineConnector’s Label can be set as Multiline Label by setting the EnableMultiline property as ‘True’. The default Value is ‘False’.
 
 
-
+{% highlight html  %}
 [XAML]
 
 
@@ -3169,7 +3207,8 @@ LineConnector’s Label can be set as Multiline Label by setting the EnableMulti
 
 />
 
-
+{% endhighlight   %}
+{% highlight c#  %}
 
 [C#]
 
@@ -3188,7 +3227,8 @@ line1.EnableMultilineLabel = true;
 diagramModel.Connections.Add(line1); 
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 [VB]
 
 
@@ -3206,9 +3246,9 @@ line1.EnableMultilineLabel = True
 diagramModel.Connections.Add(line1) 
 
 
+{% endhighlight   %}
+![Description: C:/Users/karthikeyanp/Pictures/images/enablemultilinelabel-lc.png](Line-Connectors_images/Line-Connectors_img40.png)
 
-{{ '![Description: C:/Users/karthikeyanp/Pictures/images/enablemultilinelabel-lc.png](Line-Connectors_images/Line-Connectors_img40.png)' | markdownify }}
-{:.image }
 
 
 Custom Label Support for LineConnector
@@ -3227,13 +3267,13 @@ _Properties Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Value It Accepts</td><td>
-Default Values</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Value It Accepts</th><th>
+Default Values</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 LabelPosition</td><td>
@@ -3268,38 +3308,39 @@ Label Dragging support for LineConnector
 The Label can be dragged from the Line Connector.
 
 
-
+{% highlight c#  %}
 [C#]
 
        (line as LineConnector).CustomLabelPosition = CustomLabelPositions.Drag;
 
 
-
+{% endhighlight   %}
 
 
 Set the LabelPosition for LineConnector
 
 When the values are given the position of the label will be exactly at the point of the specified values.
 
-
+{% highlight c#  %}
 
 [C#]
 
        (line as LineConnector).LabelPosition = new Point(100,100);
 
 
-
+{% endhighlight   %}
 
 
 Set the LabelAngle for LineConnector
 
 The labels rotate when values are given for the lable angle.
-
+{% highlight c#  %}
 [C#]
 
        (line as LineConnector).LabelAngle = 45;
 
 
+{% endhighlight   %}
 
 ### Label Orientation
 
@@ -3315,12 +3356,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td><td>
-Reference links</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 LabelOrientation</td><td>
@@ -3337,7 +3378,7 @@ You can orient the label using the LabelOrientation__property_._ You__can set th
 
 The following code illustrates how to set the LabelOrientation to Auto:
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -3345,8 +3386,8 @@ The following code illustrates how to set the LabelOrientation to Auto:
 
   line.LabelOrientation = Syncfusion.Windows.Diagram.LabelOrientation.Auto;
 
-
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 [VB]
 
 Dim line As New LineConnector()
@@ -3354,51 +3395,52 @@ Dim line As New LineConnector()
 line.LabelOrientation = Syncfusion.Windows.Diagram.LabelOrientation.Auto
 
 
+{% endhighlight %}
+
+
+> Note: When this property is set to Auto, the label will be positioned along the angle of the line drawn.
 
 
 
-> _Note: When this property is set to Auto, the label will be positioned along the angle of the line drawn._
 
+![](Line-Connectors_images/Line-Connectors_img41.png)
 
-
-
-{{ '![](Line-Connectors_images/Line-Connectors_img41.png)' | markdownify }}
-{:.image }
 
 
 The following code illustrates how to set the LabelOrientation to Horizontal:
 
 
-
+{% highlight c#  %}
 [C#]
 
 LineConnector line = new LineConnector();
 
 line.LabelOrientation = Syncfusion.Windows.Diagram.LabelOrientation.Horizontal;
+{% endhighlight   %}
 
-
-
+{% highlight vbnet  %}
 [VB]
 
 LineConnector line = new LineConnector();
 
 line.LabelOrientation = Syncfusion.Windows.Diagram.LabelOrientation.Horizontal;
+{% endhighlight   %}
 
+![](Line-Connectors_images/Line-Connectors_img42.png)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img42.png)' | markdownify }}
-{:.image }
 
 
 The following code illustrates how to set the LabelOrientation to Vertical:
 
 
-
+{% highlight c#  %}
 [C#]
 
 LineConnector line = new LineConnector();
 
 line.LabelOrientation = Syncfusion.Windows.Diagram.LabelOrientation.Vertical; 
-
+{% endhighlight   %}
+{% highlight c#  %}
 
 
 [VB]
@@ -3408,12 +3450,12 @@ Dim line As New LineConnector()
 line.LabelOrientation = Syncfusion.Windows.Diagram.LabelOrientation.Vertical
 
 
+{% endhighlight   %}
+![](Line-Connectors_images/Line-Connectors_img43.png)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img43.png)' | markdownify }}
-{:.image }
 
 
-#### Label Template Alignment
+### Label Template Alignment
 
 You can set an Alignment for the label template. The following code shows how to set the label template’s alignment. Label template supports horizontal alignment.
 
@@ -3423,12 +3465,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of property</td><td>
-Value it Accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of property</th><th>
+Value it Accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 LabelTemplateHorizontalAlignment</td><td>
@@ -3440,7 +3482,7 @@ No</td></tr>
 
 
 The following code illustrates how to set the LabelTemplateHorizontalAlignment to Auto:
-
+{% highlight c#  %}
 [C#]
 
 
@@ -3449,7 +3491,8 @@ LineConnector Line = new DiagramView();
 
 Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlignment.Auto
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -3459,16 +3502,16 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlign
 
 
 
+{% endhighlight %}
 
+![](Line-Connectors_images/Line-Connectors_img44.png)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img44.png)' | markdownify }}
-{:.image }
 
 
 The following code illustrates how to set the LabelTemplateHorizontalAlignment to Left:
 
 
-
+{% highlight c#  %}
 [C#]
 
 LineConnector Line = new DiagramView();
@@ -3476,7 +3519,8 @@ LineConnector Line = new DiagramView();
 Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlignment.Left;
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 
 [VB]
@@ -3487,15 +3531,15 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlign
 
 
 
+{% endhighlight  %}
 
+![](Line-Connectors_images/Line-Connectors_img45.png)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img45.png)' | markdownify }}
-{:.image }
 
 
 The following code illustrates how to set the LabelTemplateHorizontalAlignment to Right:
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -3505,7 +3549,8 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlign
 
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -3513,18 +3558,18 @@ Dim Line As New LineConnector()
 
 Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlignment.Right
 
+{% endhighlight   %}
 
 
 
+![](Line-Connectors_images/Line-Connectors_img46.png)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img46.png)' | markdownify }}
-{:.image }
 
 
 The following code illustrates how to set the LabelTemplateHorizontalAlignment to Stretch:
 
 
-
+{% highlight c#  %}
 [C#]
 
 LineConnector Line = new DiagramView();
@@ -3532,7 +3577,8 @@ LineConnector Line = new DiagramView();
 Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlignment.Stretch;
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 
 [VB]
@@ -3542,14 +3588,14 @@ Dim Line As New LineConnector()
 Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlignment.Stretch
 
 
+{% endhighlight  %}
+
+
+![](Line-Connectors_images/Line-Connectors_img47.png)
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img47.png)' | markdownify }}
-{:.image }
-
-
-#### Label Template Orientation
+### Label Template Orientation
 
 You can set an orientation for the label template. The following property can be used to set the label template alignment.
 
@@ -3559,12 +3605,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of property</td><td>
-Value it Accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of property</th><th>
+Value it Accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 LabelTemplateHorizontalAlignment</td><td>
@@ -3578,7 +3624,7 @@ No</td></tr>
 The following code illustrates how to set the LabelTemplateOrientation to Auto:
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -3588,7 +3634,8 @@ LineConnector Line = new DiagramView();
 Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientation.Auto
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 
 [VB]
@@ -3597,17 +3644,17 @@ Dim Line As New LineConnector()
 
 Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientation.Auto
 
+{% endhighlight  %}
 
 
 
+![](Line-Connectors_images/Line-Connectors_img48.png)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img48.png)' | markdownify }}
-{:.image }
 
 
 The following code illustrates how to set the LabelTemplateOrientation to Horizontal:
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -3619,7 +3666,8 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientatio
 
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -3628,15 +3676,15 @@ Dim Line As New LineConnector()
 Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientation. Horizontal
 
 
+{% endhighlight  %}
+![](Line-Connectors_images/Line-Connectors_img49.png)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img49.png)' | markdownify }}
-{:.image }
 
 
 The following code illustrates how to set the LabelTemplateOrientation to Vertical:
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -3645,20 +3693,20 @@ LineConnector Line = new DiagramView();
 
 Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientation.Vertical;
 
+{% endhighlight   %}
 
 
-
-
+{% highlight vbnet  %}
 [VB]
 
 Dim Line As New LineConnector()
 
 Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientation.Vertical
 
+{% endhighlight   %}
 
+![](Line-Connectors_images/Line-Connectors_img50.png)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img50.png)' | markdownify }}
-{:.image }
 
 
 ## Line Bridging
@@ -3667,12 +3715,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 LineBridgingEnabled</td><td>
@@ -3691,8 +3739,8 @@ Only Straight and Orthogonal Connector type supports line bridging.
 
 
 
-{{ '![](Line-Connectors_images/Line-Connectors_img51.jpeg)' | markdownify }}
-{:.image }
+![](Line-Connectors_images/Line-Connectors_img51.jpeg)
+
 
 
 Enabling Line Bridging for LineConnector
@@ -3702,7 +3750,7 @@ LineBridging for a line connector can be enabled using the LineBridgingEnabled p
 By default this property will be set to ‘False’.
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -3713,7 +3761,8 @@ lc.ConnectorType = ConnectorType.Straight;
 
 lc.LineBridgingEnabled = true;
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -3726,7 +3775,7 @@ lc.ConnectorType = ConnectorType.Straight
 lc.LineBridgingEnabled = True
 
 
-
+{% endhighlight  %}
 
 
 The line bridge is enabled.
@@ -3736,7 +3785,7 @@ Disable LineBridging from DiagramModel
 When LineBridging for DiagramModel is disabled, LineBridging for all the lines will be disabled. You can change this binding by specifying a value for an individual LineConnector. 
 
 
-
+{% highlight c#  %}
 [C#]
 
 
@@ -3746,7 +3795,8 @@ DiagramModel model = new DiagramModel();
 model.LineBridgingEnabled = false;
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 [VB]
 
 
@@ -3755,7 +3805,7 @@ Dim model As New DiagramModel()
 
 model.LineBridgingEnabled = False
 
-
+{% endhighlight  %}
 
 
 
@@ -3768,7 +3818,7 @@ Default arc segment is customized by overriding CreateSegments method.
 Example1: Draw an invisible segment, by setting IsStroked to false.
 
 
-
+{% highlight c#  %}
 [C#]
 
  protected override IEnumerable<PathSegment> CreateSegments(Point start, Point end, double angle)
@@ -3813,15 +3863,15 @@ Example1: Draw an invisible segment, by setting IsStroked to false.
 
 }
 
+{% endhighlight  %}
 
+![C:/Users/saranya/Desktop/style.jpg](Line-Connectors_images/Line-Connectors_img52.jpeg)
 
-{{ '![C:/Users/saranya/Desktop/style.jpg](Line-Connectors_images/Line-Connectors_img52.jpeg)' | markdownify }}
-{:.image }
 
 
 Example2: Draw a rectangular bridge instead of arc.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -3864,11 +3914,11 @@ protected override IEnumerable<PathSegment> CreateSegments(Point start, Point en
     }
 
 }
+{% endhighlight  %}
 
 
+![](Line-Connectors_images/Line-Connectors_img53.png)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img53.png)' | markdownify }}
-{:.image }
 
 
 ### Line Bridging Direction
@@ -3879,10 +3929,10 @@ _Property Table_
 
 <table>
 <tr>
-<td>
- Properties</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+ Properties</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 BridgeDirection</td><td>
@@ -3893,7 +3943,7 @@ EnumBridgeDirection.LeftBridgeDirection.RightBridgeDirection.TopBridgeDirection.
 
 Example 1: Bridge for Horizontal Connector (with BridgeDirection.Top)
 The following code example explains how to enable the Bridging and to set Bridge Direction.
-
+{% highlight c#  %}
 
 [C#]
 
@@ -3902,16 +3952,16 @@ The following code example explains how to enable the Bridging and to set Bridge
 connector.LineBridgingEnabled=true;
 
 diagramview.BridgeDirection=BridgeDirection.Top;
+{% endhighlight  %}
 
 
+![](Line-Connectors_images/Line-Connectors_img54.png)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img54.png)' | markdownify }}
-{:.image }
 
 
 Example 2: Bridge for Vertical Connector (with BridgeDirection.Left)
 
-
+{% highlight c#  %}
 [C#]
 
 // setting Bridge Direction
@@ -3921,17 +3971,17 @@ diagramview.BridgeDirection=BridgeDirection.Left
 
 
 
+{% endhighlight %}
+![](Line-Connectors_images/Line-Connectors_img55.png)
 
-{{ '![](Line-Connectors_images/Line-Connectors_img55.png)' | markdownify }}
-{:.image }
 
 
 ## Line Routing
 
 When a link is drawn between two nodes, by enabling the LineRoutingEnabled property of that link and the diagram view, and if any other node is found in between them, the line will be automatically re-routed around those nodes.
 
-{{ '![C:/Users/prakashs/Desktop/Volume 4/Samples/Silverlight/LineRoutingDemo.png](Line-Connectors_images/Line-Connectors_img56.png)' | markdownify }}
-{:.image }
+![C:/Users/prakashs/Desktop/Volume 4/Samples/Silverlight/LineRoutingDemo.png](Line-Connectors_images/Line-Connectors_img56.png)
+
 
 
 Property
@@ -3940,12 +3990,12 @@ _Line Routing_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type</td><td>
-Datatype</td><td>
-Reference links </td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type</th><th>
+Datatype</th><th>
+Reference links </th></tr>
 <tr>
 <td>
 LineRoutingEnabled</td><td>
@@ -3962,7 +4012,7 @@ Line Routing for a line connector can be disabled using the LineRoutingEnabled p
 
 By default this property will be set to ‘True’.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -3972,7 +4022,8 @@ lc.ConnectorType = ConnectorType.Orthogonal;
 
 lc.LineBridgingEnabled = false;
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -3983,14 +4034,14 @@ lc.ConnectorType = ConnectorType.Orthogonal
 lc.LineBridgingEnabled = False
 
 
-
+{% endhighlight  %}
 The Line Routing is disabled.
 
 Enable LineRouting from DiagramView
 
 When LineRouting for DiagramView is enabled, LineRouting for all the lines will be enabled. You can change this binding by specifying a value for an individual LineConnector. 
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -3998,7 +4049,8 @@ DiagramView view = new DiagramView ();
 
 view.LineRoutingEnabled = true
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -4009,10 +4061,10 @@ view.LineRoutingEnabled = True
 
 
 
-
+{% endhighlight  %}
 The Line Routing is enabled completely.
 
-> _Note: Only Orthogonal Connector type supports Line Routing._
+> Note: Only Orthogonal Connector type supports Line Routing.
 
 Node settings
 
@@ -4024,12 +4076,12 @@ _Node Settings_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type</td><td>
-Datatype</td><td>
-Reference links </td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type</th><th>
+Datatype</th><th>
+Reference links </th></tr>
 <tr>
 <td>
 TreatAsObstacle</td><td>
@@ -4050,11 +4102,11 @@ _Customization of LineRouting_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 RoutingMode</td><td>
@@ -4062,21 +4114,23 @@ Decides when the connectors have to be routed.</td><td>
 Dependency Property</td><td>
 Enum</td></tr>
 </table>
-#### Adding Customization of LineRouting into Application
+
+### Adding Customization of LineRouting into Application
 
 Enabling the LineRouting
 
 To enable LineRouting, use the following code example:
 
 
-
+{% highlight c#  %}
 [C#]
 
 LineConnector line = new LineConnector();
 
 line.LineRoutingEnabled = true;
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 
 [VB]
 
@@ -4084,7 +4138,7 @@ Dim line As New LineConnector()
 
 line.LineRoutingEnabled = True
 
-
+{% endhighlight  %}
 
 RoutingMode 
 
@@ -4099,7 +4153,7 @@ If this property is set to DragEnd, the connectors are routed only when the Diag
 
 To set the RoutingMode property to DragEnd, use the following code example.
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -4108,7 +4162,8 @@ DiagramView View1 = new DiagramView();
 View1.RoutingMode = RoutingMode.DragEnd;
 
 
-
+{% endhighlight  %}
+{% highlight vbnet  %}
 [VB]
 
 Dim view As New DiagramView()
@@ -4116,12 +4171,12 @@ Dim view As New DiagramView()
 view.RoutingMode = RoutingMode.DragEnd
 
 
-
+{% endhighlight  %}
 If this property is set to Immediate, the connectors are routed, while the element in the DiagramPage is dragged.
 
 To set the RoutingMode property to Immediate, use the following the code example:
 
-
+{% highlight c#  %}
 
 [C#]
 
@@ -4130,12 +4185,14 @@ DiagramView View1 = new DiagramView();
 View1.RoutingMode = RoutingMode.Immediate;
 
 
-
+{% endhighlight   %}
+{% highlight vbnet  %}
 [VB]
 
 Dim view As New DiagramView()
 
 view.RoutingMode = RoutingMode.Immediate
+{% endhighlight   %}
 
 ## Select, Move, Delete LineConnector
 
@@ -4144,6 +4201,7 @@ As this is a general topic to be share between Node and LineConnector, please re
 * Select Node and Connectors
 * Move Node and Connectors
 * Delete Command
+
 ## Customize the Label, Context Menu for LineConnector
 
 

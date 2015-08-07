@@ -19,8 +19,8 @@ Gantt control is composed of three controls. They are:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.png)
+
 
 
 ### Gantt Grid
@@ -29,14 +29,15 @@ Gantt Grid is a table view control which displays the scheduled tasks/activities
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.png)
+
 
 
 * Header— Header represents the table header which contains the field name of the task.
 * Parent Task—Parent task represents the summary of the child tasks. This is an activity which will be further splitted into various child tasks.
 * Child Task—Child task reprents an individual task. This contains only the information about the specific task. The Child task is a part of parent task.
 * Expand/Collapse Button—Expand/Collapse button allows you to expand or collapse the particular hierarchy.
+
 ### Gantt Chart
 
 
@@ -44,8 +45,8 @@ Gantt Chart is an items control which provides a graphically representation of t
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 * Node— Node represents an individual or child task.
@@ -53,6 +54,7 @@ Gantt Chart is an items control which provides a graphically representation of t
 * Milestone—Milestone represents the target to be completed in a day.
 * Progress Indicator—Progress indicator represents the persentage of work completed for the task.
 * Connector—Connector represents the dependency relationship between the tasks.
+
 ### Gantt Schedule 
 
 
@@ -60,16 +62,16 @@ Gantt Schedule is a medium to measure the progress in the Gantt control. Using t
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 ## Class Diagram
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 ## Feature Summary
@@ -85,6 +87,7 @@ The following features are available in the Essential Gantt for WPF:
 * Custom Node style
 * VisualStyle
 * XML Import/Export
+
 ## Adding GanttControl to an Application
 
 
@@ -94,6 +97,7 @@ You can create Gantt control in two methods. They are:
 
 * Programatically
 * Through Designer 
+
 ### Programmatically Creating Gantt Control 
 
 
@@ -103,23 +107,23 @@ Adding GanttControl
 
 You can add Gantt control to the application using the following code:
 
-
+{% highlight html %}
 
 [XAML]
 
  <Sync:GanttControl x:Name="Gantt" />
 
 
+{% endhighlight %}
 
-
-
+{% highlight c# %}
 [C#]
 
  //Initializing Gantt
  GanttControl Gantt = new GanttControl();
 
 
-
+{% endhighlight  %}
 
 
 When the code runs, an empty gantt with in-built TaskDetails collection will be displayed.
@@ -128,16 +132,16 @@ Binding Data to GanttControl
 
 Create a collection of tasks and bind it to the newly created GanttControl as given in the following code:
 
-
+{% highlight html %}
 
 [XAML]
 
  <Sync:GanttControl ItemsSource="{Binding GanttItemSource}" x:Name="Gantt" >
 
 
+{% endhighlight  %}
 
-
-
+{% highlight c# %}
 [C#]
 
  //Initializing Gantt
@@ -147,9 +151,9 @@ Create a collection of tasks and bind it to the newly created GanttControl as gi
  Gantt.ItemsSource = model.GanttItemSource;
 
 
+{% endhighlight  %}
 
-
-
+{% highlight c# %}
 [C#]
 
 GanttItemSource = new ObservableCollection<TaskDetails>();
@@ -215,7 +219,7 @@ task[0].Child.Add(new TaskDetails { TaskId = 5, 
 return task;
 
 }
-
+{% endhighlight  %}
 
 ### Adding GanttControl through Designer
 
@@ -225,8 +229,8 @@ The following are the steps to create Gantt control through designer.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
+
 
 
 
@@ -235,8 +239,8 @@ The following are the steps to create Gantt control through designer.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 
@@ -245,8 +249,8 @@ The following are the steps to create Gantt control through designer.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
+
 
 
 
@@ -255,8 +259,8 @@ The following are the steps to create Gantt control through designer.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
+
 
 
 

@@ -11,22 +11,22 @@ documentation: ug
 
 Highlighting tasks allows you to highlight a specific set of tasks in the Gantt chart region. This feature will get the set of tasks as input and highlight those tasks with the specified color in the Gantt chart region. It will accept a linear set of tasks of type IList as input. You can also specify the highlighting brush through the provided API.
 
-Use Case Scenario
+## Use Case Scenario
 
 * When you like to view some specific set of tasks with a different color, you can easily achieve that by providing that set of tasks as input.
 * This feature also helps the user to highlight tasks that are in a critical path of a project.
 
-Properties
+## Properties
 
 _Properties_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 HighlightedItems</td><td>
@@ -51,7 +51,7 @@ To highlight a set of tasks in Gantt chart region:
 2. If required, change the value of the Gantt’s HighlightItemBrush API to change the item highlight color. The default color is red.
 
 
-
+{% highlight html %}
 [XAML]
 
 <sync:GanttControl x:Name="Gantt" 
@@ -62,7 +62,8 @@ To highlight a set of tasks in Gantt chart region:
 
 </sync:GanttControl>
 
-
+{% endhighlight %}
+{% highlight c# %}
 
 [C#]
 
@@ -160,15 +161,15 @@ this.Gantt.HighlightedItems = this.view.HighlightedTasks;
 
 The following image shows the Gantt with Highlighted Tasks:
 
+{% endhighlight  %}
 
+![](Highlighting-Tasks_images/Highlighting-Tasks_img1.png)
 
-{{ '![](Highlighting-Tasks_images/Highlighting-Tasks_img1.png)' | markdownify }}
-{:.image }
 
 
 _Gantt with Highlighted Tasks_
 
-Samples Link
+## Samples Link
 
 To view samples:
 

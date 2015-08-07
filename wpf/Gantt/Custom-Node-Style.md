@@ -17,7 +17,7 @@ Custom node style enables you to design your own style to the nodes that will be
 
 You can apply custom styles for all the three nodes. The basic functionalities of the Gantt nodes like resizing, drag and drop and tooltip are available only when the custom node style has the inbuilt node style’s such as drag and drop the thumb and resizing the thumbs. Otherwise the custom node will work properly, but you cannot access these features of Gantt. 
 
-Use Case Scenarios
+## Use Case Scenarios
 
 You can customize the node to give a similar look and feel of your product. For example if you are from a steel company, then you can add a style that gives steel rod like look and feel to the node. 
 
@@ -33,9 +33,9 @@ _Custom Node Types_
 
 <table>
 <tr>
-<td>
-Node Type</td><td>
-Target Type</td></tr>
+<th>
+Node Type</th><th>
+Target Type</th></tr>
 <tr>
 <td>
 Header Node</td><td>
@@ -54,7 +54,7 @@ MileStone</td></tr>
 The following code illustrates how to define style:
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -363,14 +363,14 @@ The following code illustrates how to define style:
     </Style>
 </ResourceDictionary>
 
-
+{% endhighlight  %}
 
 1. Add the style as a resource to the Gantt control in your application.
 
 The following code illustrates how to add the styles to the application:
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -431,23 +431,23 @@ The following code illustrates how to add the styles to the application:
 
               </sync:GanttControl>
 
+{% endhighlight  %}
 
+![](Custom-Node-Style_images/Custom-Node-Style_img1.png)
 
-{{ '![](Custom-Node-Style_images/Custom-Node-Style_img1.png)' | markdownify }}
-{:.image }
 
 
 _Custom Node Style_
 
 
 
-{{ '![](Custom-Node-Style_images/Custom-Node-Style_img2.png)' | markdownify }}
-{:.image }
+![](Custom-Node-Style_images/Custom-Node-Style_img2.png)
+
 
 
 _Custom Node Style_
 
-Samples Link
+## Samples Link
 
 To view samples: 
 

@@ -13,7 +13,7 @@ documentation: ug
 
 Essential Gantt for WPF includes an inbuilt class called TaskDetails, which is inherited from the IGanttTask interface. A collection of the TaskDetails can be bounded as an ItemsSource for the GanttControl.
 
-Use Case Scenarios
+### Use Case Scenarios
 
 You can easily create the task details collection using the TaskDetails class or by creating a new class by inheriting the IGantt interface.
 
@@ -21,13 +21,14 @@ Binding TaskDetials collection to Gantt Control
 
 The following code illustrates how to bind the Task Detials to the Gantt Control:
 
-
+{% highlight html %}
 
 [XAML]
 
  <Sync:GanttControl ItemsSource="{Binding GanttItemSource}" x:Name="Gantt" >
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -37,7 +38,8 @@ The following code illustrates how to bind the Task Detials to the Gantt Control
  ViewModel model=  new ViewModel();
  Gantt.ItemsSource = model.GanttItemSource;
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -99,19 +101,19 @@ return task;
 
 }
 
-
+{% endhighlight  %}
 
 The following image shows the BindingTask Details:
 
 
 
-{{ '![](Data-Binding_images/Data-Binding_img1.png)' | markdownify }}
-{:.image }
+![](Data-Binding_images/Data-Binding_img1.png)
 
 
 
 
-Samples Link
+
+### Samples Link
 
 To view samples: 
 
@@ -127,13 +129,14 @@ Essential Gantt for WPF allow you to bind any type of IEnumerable source to Gant
 
 The following code illustrate how to map the properties using the TaskAttributeMapping class:
 
-
+{% highlight html %}
 
 [XAML]
  <gantt:TaskAttributeMapping TaskIdMapping="Id"                     TaskNameMapping="Name"                     StartDateMapping="StartDate"                      ChildMapping="ChildTask"                     FinishDateMapping="EndDate"                     DurationMapping="Duration"                     ResourceInfoMapping="Resource"                     ProgressMapping="Complete"                     PredecessorMapping="Predecessor">
  </gantt:TaskAttributeMapping>
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -147,12 +150,12 @@ The following code illustrate how to map the properties using the TaskAttributeM
   attributes.ResourceInfoMapping = "Resource";
   attributes.ProgressMapping = "Predecessor";
 
-
+{% endhighlight  %}
 
 The following code illustrates how to bind the external source to Gantt control:
 
 
-
+{% highlight html %}
 [XAML]
 
 <Sync:GanttControl x:Name="Gantt" ItemsSource="{Binding GanttItemSource}">
@@ -161,7 +164,8 @@ The following code illustrates how to bind the external source to Gantt control:
             </Sync:GanttControl.TaskMapping>
 </Sync:GanttControl>
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -184,7 +188,8 @@ The following code illustrates how to bind the external source to Gantt control:
 
  Gantt.ItemsSource = model.GanttItemSource;
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -248,17 +253,17 @@ return task;
 
 }
 
-
+{% endhighlight  %}
 
 The following image shows the External Property Binding:
 
 
 
-{{ '![](Data-Binding_images/Data-Binding_img2.png)' | markdownify }}
-{:.image }
+![](Data-Binding_images/Data-Binding_img2.png)
 
 
-Samples Link
+
+### Samples Link
 
 To view samples: 
 

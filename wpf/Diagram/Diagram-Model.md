@@ -24,12 +24,12 @@ _Methods Table_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Parameters </td><td>
-Return Type</td><td>
-Description</td><td>
-Reference Links</td></tr>
+<th>
+Name</th><th>
+Parameters </th><th>
+Return Type</th><th>
+Description</th><th>
+Reference Links</th></tr>
 <tr>
 <td>
 Nodes.Add(object)</td><td>
@@ -62,12 +62,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 VerticalSpacing</td><td>
@@ -115,11 +115,11 @@ No</td></tr>
 
 You can set the horizontal and the vertical distance between the nodes in a tree layout using the HorizontalSpacing and VerticalSpacing properties. The spaces between sub-trees are specified using the SpaceBetweenSubTrees property.
 
-> _Note: In case of Table layout, only the HorizontalSpacing and VerticalSpacing properties should be specified._ 
+> Note: In case of Table layout, only the HorizontalSpacing and VerticalSpacing properties should be specified. 
 
 The following code illustrates these settings.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -158,17 +158,15 @@ The following code illustrates these settings.
     </syncfusion:DiagramControl>
 
 
+{% endhighlight  %}
 
 
-
-<table>
-<tr>
-<td>
-[C#]DiagramModel diagramModel = new DiagramModel();diagramModel.VerticalSpacing = 50;diagramModel.HorizontalSpacing = 50;diagramModel.SpaceBetweenSubTrees = 100;</td></tr>
-<tr>
-<td>
-[VB]Dim diagramModel As New DiagramModel()diagramModel.VerticalSpacing = 50diagramModel.HorizontalSpacing = 50diagramModel.SpaceBetweenSubTrees = 100</td></tr>
-</table>
+{% highlight c# %}
+[C#]DiagramModel diagramModel = new DiagramModel();diagramModel.VerticalSpacing = 50;diagramModel.HorizontalSpacing = 50;diagramModel.SpaceBetweenSubTrees = 100;
+{% endhighlight  %}
+{% highlight vbnet %}
+[VB]Dim diagramModel As New DiagramModel()diagramModel.VerticalSpacing = 50diagramModel.HorizontalSpacing = 50diagramModel.SpaceBetweenSubTrees = 100
+{% endhighlight  %}
 
 
 ## Pictorial Representation of Spacing Properties
@@ -185,8 +183,8 @@ Horizontal Spacing refers to the spaces between the edges of the adjacent nodes 
 
 
 
-{{ '![C:/Users/jeganr/AppData/Local/Temp/Rar$DI01.402/HR&vr.png](Diagram-Model_images/Diagram-Model_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/jeganr/AppData/Local/Temp/Rar$DI01.402/HR&vr.png](Diagram-Model_images/Diagram-Model_img1.png)
+
 
 
 _Horizontal and Vertical Spacing Properties_
@@ -197,8 +195,8 @@ SpaceBetweenSubTrees refers to the spaces between adjacent Subtrees.
 
 
 
-{{ '![](Diagram-Model_images/Diagram-Model_img2.png)' | markdownify }}
-{:.image }
+![](Diagram-Model_images/Diagram-Model_img2.png)
+
 
 
 _SpaceBetweenSubTrees property_
@@ -211,12 +209,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 Orientation</td><td>
@@ -239,7 +237,7 @@ The Bounds property of the DiagramView class can be used to specify the position
 The tree orientation can be set using the following code.
 
 
-
+{% highlight html %}
 [XAML]
 
     <!--Diagram Control-->
@@ -273,7 +271,8 @@ The tree orientation can be set using the following code.
 
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 
 [C#]
@@ -284,7 +283,8 @@ DiagramModel diagramModel = new DiagramModel();
 
 diagramModel.Orientation = TreeOrientation.BottomTop;
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -293,13 +293,13 @@ diagramModel.Orientation = TreeOrientation.BottomTop;
 Dim diagramModel As New DiagramModel()
 
 diagramModel.Orientation = TreeOrientation.BottomTop
-
+{% endhighlight  %}
 The tree orientation can be changed dynamically at run time using the following code for corresponding orientation types.
 
 The following code may be specified in a Combobox SelectionChanged event.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -316,7 +316,8 @@ tree.StartNodeArrangement();
 
 (diagramView.Page as DiagramPage).InvalidateArrange();
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -334,36 +335,36 @@ TryCast(diagramView.Page, DiagramPage).InvalidateMeasure()
 
 TryCast(diagramView.Page, DiagramPage).InvalidateArrange()
 
-
+{% endhighlight  %}
 
 The orientations are illustrated below.
 
-{{ '![](Diagram-Model_images/Diagram-Model_img3.jpeg)' | markdownify }}
-{:.image }
+![](Diagram-Model_images/Diagram-Model_img3.jpeg)
+
 
 
 _BottomTop Orientation_
 
 
 
-{{ '![](Diagram-Model_images/Diagram-Model_img4.jpeg)' | markdownify }}
-{:.image }
+![](Diagram-Model_images/Diagram-Model_img4.jpeg)
+
 
 
 _TopBottom Orientation_
 
 
 
-{{ '![](Diagram-Model_images/Diagram-Model_img5.jpeg)' | markdownify }}
-{:.image }
+![](Diagram-Model_images/Diagram-Model_img5.jpeg)
+
 
 
 _LeftRight Orientation_
 
 
 
-{{ '![](Diagram-Model_images/Diagram-Model_img6.jpeg)' | markdownify }}
-{:.image }
+![](Diagram-Model_images/Diagram-Model_img6.jpeg)
+
 
 
 _RightLeft Orientation_
@@ -376,12 +377,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 Connections</td><td>
@@ -401,7 +402,7 @@ No</td></tr>
 
 The following lines of code can be used to clear nodes and connections.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -413,7 +414,8 @@ diagramModel.Nodes.Clear();
 
 diagramModel.Connections.Clear();
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -425,7 +427,7 @@ diagramModel.Nodes.Clear()
 
 diagramModel.Connections.Clear()
 
-
+{% endhighlight  %}
 
 ## Bind Data to Diagram Control
 
@@ -435,12 +437,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 ItemsSource</td><td>
@@ -471,7 +473,7 @@ The ItemsSource property gets the source for the list of nodes to be added to th
 
 The following code illustrates this.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -521,7 +523,8 @@ xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Di
 
 </Window>
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -535,7 +538,8 @@ this[0].RegionalSales.Add(new RegionSale() { Name = "Los Angeles", Revenue = 345
 
 this[0].RegionalSales.Add(new RegionSale() { Name = "San Fransico", Revenue = 8456 });
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -549,14 +553,14 @@ Me(0).RegionalSales.Add(New RegionSale() With {.Name = "Los Angeles", .Revenue =
 
 Me(0).RegionalSales.Add(New RegionSale() With {.Name = "San Fransico", .Revenue = 8456})
 
-
+{% endhighlight  %}
 
  This creates a tree view with CountrySale as the root node and region sales as the child nodes.
 
 
 
-{{ '![](Diagram-Model_images/Diagram-Model_img7.jpeg)' | markdownify }}
-{:.image }
+![](Diagram-Model_images/Diagram-Model_img7.jpeg)
+
 
 
 _Data bound to the Diagram Control_
@@ -569,12 +573,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 EnableCycleDetection</td><td>
@@ -587,12 +591,12 @@ No</td></tr>
 
 To specify a cyclic path is as giving input to the Hierarchical-Tree layout. EnableCycleDetection property must be set to ‘True’. Enabling this property checks for cycles and makes connections accordingly.
 
-> _Note: The EnableCycleDetection property takes effect only for the Hierarchical-Tree layout type of the Diagram Model._
+> Note: The EnableCycleDetection property takes effect only for the Hierarchical-Tree layout type of the Diagram Model.
 
 The following code example illustrates how to set the EnableCycleDetection property.
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -628,10 +632,10 @@ Orientation="TopBottom" >
     </syncfusion:DiagramControl>
 
 
+{% endhighlight  %}
 
 
-
-
+{% highlight c# %}
 
 [C#]
 
@@ -647,7 +651,8 @@ diagramModel.EnableCycleDetection = true;
 
 diagramControl.Model = diagramModel;
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -664,20 +669,20 @@ diagramModel.EnableCycleDetection = True
 diagramControl.Model = diagramModel
 
 
-
+{% endhighlight  %}
 The following screenshot illustrates Cyclic Paths in the Hierarchical-Tree layout.
 
 
 
-{{ '![](Diagram-Model_images/Diagram-Model_img8.jpeg)' | markdownify }}
-{:.image }
+![](Diagram-Model_images/Diagram-Model_img8.jpeg)
+
 
 
 _Cyclic Paths In Hierarchical-Tree Layout_
 
-> _Note: If a cyclic path is specified as input when the EnableCycleDetection property is set to False, then a stack overflow exception is thrown as the loop goes on forever._
+> Note: If a cyclic path is specified as input when the EnableCycleDetection property is set to False, then a stack overflow exception is thrown as the loop goes on forever.
 
-Advantages
+### Advantages
 
 Cyclic paths are very useful to demonstrate work flows which involve repeated processes.
 
@@ -694,12 +699,12 @@ _Expand Mode Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 TableExpandMode</td><td>
@@ -716,7 +721,7 @@ No</td></tr>
 The TableExpandMode can be set in the following way,
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -728,7 +733,8 @@ DiagramModel diagramModel = new DiagramModel();
 dc.Model = diagramModel;
 
 diagramModel.TableExpandMode=TableExpandMode.Horizontal;
-
+{% endhighlight  %}
+{% highlight c# %}
 
 
 [VB]
@@ -743,7 +749,8 @@ dc.Model = diagramModel
 
 diagramModel.TableExpandMode=TableExpandMode.Horizontal
 
-
+{% endhighlight  %}
+{% highlight html %}
 
 [XAML]
 
@@ -785,20 +792,20 @@ diagramModel.TableExpandMode=TableExpandMode.Horizontal
 
     </syncfusion:DiagramControl>
 
+{% endhighlight %}
 
 
 
+![](Diagram-Model_images/Diagram-Model_img9.jpeg)
 
-{{ '![](Diagram-Model_images/Diagram-Model_img9.jpeg)' | markdownify }}
-{:.image }
 
 
 _Table layout with TableExpandMode as Horizontal and ColumnCount as 4_
 
 
 
-{{ '![](Diagram-Model_images/Diagram-Model_img10.jpeg)' | markdownify }}
-{:.image }
+![](Diagram-Model_images/Diagram-Model_img10.jpeg)
+
 
 
 _Table layout with TableExpandMode as Vertical and RowCount as 4_
@@ -811,12 +818,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description </td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 RowCount</td><td>
@@ -836,7 +843,7 @@ No</td></tr>
 
 The RowCount and ColumnCount can be set in the following way:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -852,7 +859,8 @@ diagramModel.RowCount=6;
 
 diagramModel.ColumnCount=5;
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -868,7 +876,8 @@ diagramModel.RowCount=6
 
 diagramModel.ColumnCount=5
 
-
+{% endhighlight  %}
+{% highlight html %}
 
 [XAML]
 
@@ -916,20 +925,20 @@ diagramModel.ColumnCount=5
 
 
 
+{% endhighlight  %}
 
 
 
+![](Diagram-Model_images/Diagram-Model_img11.jpeg)
 
-{{ '![](Diagram-Model_images/Diagram-Model_img11.jpeg)' | markdownify }}
-{:.image }
 
 
 _RowCount specified as 3_
 
 
 
-{{ '![](Diagram-Model_images/Diagram-Model_img12.jpeg)' | markdownify }}
-{:.image }
+![](Diagram-Model_images/Diagram-Model_img12.jpeg)
+
 
 
 _ColumnCount specified as 5_
@@ -942,12 +951,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type of the property</td><td>
-Value it accepts</td><td>
-Any other dependencies/ sub properties associated</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type of the property</th><th>
+Value it accepts</th><th>
+Any other dependencies/ sub properties associated</th></tr>
 <tr>
 <td>
 EnableLayoutWithVariedSizes</td><td>
@@ -961,7 +970,7 @@ No</td></tr>
 The EnableLayoutWithVariedSizes can be set in the following way:
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -975,7 +984,8 @@ dc.Model = diagramModel;
 diagramModel.EnableLayoutWithVariedSizes = true;
 
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB]
 
 
@@ -988,8 +998,8 @@ dc.Model = diagramModel
 
 diagramModel.EnableLayoutWithVariedSizes = True
 
-
-
+{% endhighlight  %}
+{% highlight html %}
 [XAML]
 
 
@@ -1034,18 +1044,18 @@ diagramModel.EnableLayoutWithVariedSizes = True
 
     </syncfusion:DiagramControl>
 
+{% endhighlight  %}
 
+![](Diagram-Model_images/Diagram-Model_img13.jpeg)
 
-{{ '![](Diagram-Model_images/Diagram-Model_img13.jpeg)' | markdownify }}
-{:.image }
 
 
 _EnableLayoutWithVariedSize set to false_
 
 
 
-{{ '![](Diagram-Model_images/Diagram-Model_img14.jpeg)' | markdownify }}
-{:.image }
+![](Diagram-Model_images/Diagram-Model_img14.jpeg)
+
 
 
 _EnableLayoutWithVariedSize set to true_

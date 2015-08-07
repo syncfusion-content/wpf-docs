@@ -24,6 +24,6 @@ This property is used to hide the header of a TDI document when the DocumentTabC
 
 
 {{ '![C:/Users/Hemanth/Desktop/Documentation/Images/HideHeader.jpg](Hide-the-TDI-header-on-a-child_images/Hide-the-TDI-header-on-a-child_img1.jpeg)' | markdownify }}
-{:.image }
+
 
 
