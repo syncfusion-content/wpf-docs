@@ -15,7 +15,7 @@ This section discusses about the real time application called Excel-like UI, whi
 
 Grids can be adopted in many real time applications where the database is of crucial importance. As such applications are widely spread; the grids are indispensably used world-wide.  This section elaborates on some of the real time applications which can use Essential Grid.
 
-Real-time Applications
+### Real-time Applications
 
 Some real time applications which can use Essential Grid are listed below:
 
@@ -28,13 +28,13 @@ Some real time applications which can use Essential Grid are listed below:
 
 Grid can be used in applications with frequent updates, for example stock values in share market. When grid is switched over to virtual mode, it reforms itself as a light weight control that consumes a very little memory and processing power, and provides a very small latency under heavy load. Such virtual grids are typically useful when there is a need to display enormous data very quickly.  
 
-Sample
+### Sample
 
 A sample which demonstrates such an application is available in the following sample installation location:
 
-_...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Performance\Trader Grid Test Demo_
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Performance\Trader Grid Test Demo
 
-> _Note: Refer Performance Optimization section which elaborates on this sample._
+> Note: Refer Performance Optimization section which elaborates on this sample.
 
 2. Excel-like UI Applications
 
@@ -50,7 +50,7 @@ a. Excel-like Current Cell
 
 You can select a current cell in the Grid, similar to the current cell behavior in MS Excel. This feature can be enabled, by setting GridModelOptions.ExcelLikeCurrentCell property to _true_, as follows:  
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -59,14 +59,14 @@ You can select a current cell in the Grid, similar to the current cell behavior 
 grid.Model.Options.ExcelLikeCurrentCell = true;
 
 
+{% endhighlight  %}
+
+
+![](Real-Time-Applications_images/Real-Time-Applications_img1.jpeg)
 
 
 
-{{ '![](Real-Time-Applications_images/Real-Time-Applications_img1.jpeg)' | markdownify }}
-{:.image }
-
-
-> _Note:  If you have selected a current cell within a specified range, and when you move the current cell selection out of this range, the range will be cleared._
+> Note:  If you have selected a current cell within a specified range, and when you move the current cell selection out of this range, the range will be cleared.
 
 
 
@@ -75,26 +75,26 @@ b. Excel-like Selection Frame
 The active selection can be outlined with a selection frame by setting the GridModelOptions.ExcelLikeSelectionFrame property to true, as follows:
 
 
-
+{% highlight c# %}
 [C#]
 
 
 
 grid.Model.Options.ExcelLikeSelectionFrame = true;
 
+{% endhighlight  %}
 
 
 
+![](Real-Time-Applications_images/Real-Time-Applications_img2.jpeg)
 
-{{ '![](Real-Time-Applications_images/Real-Time-Applications_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 c. Formula Cells
 
 As we discussed in the previous chapter, Grid control provides complete support to formula cells. It can be enabled for the grid by setting the format string, FormulaCell to the TableStyle.CellType property, as follows: 
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -103,11 +103,11 @@ As we discussed in the previous chapter, Grid control provides complete support 
 grid.Model.TableStyle.CellType = "FormulaCell";
 
 
+{% endhighlight  %}
 
 
+![](Real-Time-Applications_images/Real-Time-Applications_img3.jpeg)
 
-{{ '![](Real-Time-Applications_images/Real-Time-Applications_img3.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -120,7 +120,7 @@ OnPrepareRenderCell event-This event will be triggered for every cell when they 
 
 The following code illustrates how to handle this event:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -149,11 +149,11 @@ protected override void OnPrepareRenderCell(GridPrepareRenderCellEventArgs e)
     }
 
 }
+{% endhighlight  %}
 
 
+![](Real-Time-Applications_images/Real-Time-Applications_img4.jpeg)
 
-{{ '![](Real-Time-Applications_images/Real-Time-Applications_img4.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -164,21 +164,21 @@ You can create a workbook with multiple sheets similar to excel, using a Tab con
 
 
 
-{{ '![](Real-Time-Applications_images/Real-Time-Applications_img5.jpeg)' | markdownify }}
-{:.image }
-
-
-Complete Sample Output
+![](Real-Time-Applications_images/Real-Time-Applications_img5.jpeg)
 
 
 
-{{ '![](Real-Time-Applications_images/Real-Time-Applications_img6.jpeg)' | markdownify }}
-{:.image }
+### Complete Sample Output
 
 
-> _Note: For the complete code for this example, refer the following browser sample:_ 
 
-> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Excel Like UI Demo_
+![](Real-Time-Applications_images/Real-Time-Applications_img6.jpeg)
+
+
+
+> Note: For the complete code for this example, refer the following browser sample: 
+
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Excel Like UI Demo
 
 
 

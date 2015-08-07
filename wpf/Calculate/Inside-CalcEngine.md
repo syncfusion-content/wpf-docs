@@ -19,11 +19,11 @@ _Hash Table_
 
 <table>
 <tr>
-<td>
-Hash Table</td><td>
-Key</td><td>
-Value</td><td>
-Description</td></tr>
+<th>
+Hash Table</th><th>
+Key</th><th>
+Value</th><th>
+Description</th></tr>
 <tr>
 <td>
 FormulaInfoTable</td><td>
@@ -82,7 +82,7 @@ CalcEngine.Calculate is the method that actually performs calculations. It does 
 
 
 
-> _Note: The value returned is a string holding the computed quantity._
+> Note: The value returned is a string holding the computed quantity.
 
 ## How Things Work
 
@@ -109,7 +109,7 @@ All this dependent tracking is done conditionally depending upon CalcEngine.UseD
 ## Error Messages
 
 The error messages that are displayed by Essential Calculate can be found in this string array in the CalcEngine. After a CalcEngine object has been created, you can change the text of these messages by changing the array values.
-
+{% highlight c# %}
 
 
 [C#]
@@ -180,5 +180,5 @@ public string[] FormulaErrorStrings = new string[]
 
 };
 
-
+{% endhighlight %}
 

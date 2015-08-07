@@ -21,7 +21,7 @@ Schedule provides 4 different types of viewing the calendar,
 Using the property “ScheduleType” of SfSchedule, we can set the above view. Refer to the following code to set the View type of schedule.
 
 Code Example:
-
+{% highlight html %}
 [XAML]
 
 
@@ -46,10 +46,10 @@ Code Example:
 
 </Window>
 
+{% endhighlight  %}
 
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -61,11 +61,11 @@ schedule.ScheduleType = ScheduleType.Month;
 this.grid.Children.Add(schedule);
 
 
+{% endhighlight %}
 
 
+![](Basic-View_images/Basic-View_img1.png)
 
-{{ '![](Basic-View_images/Basic-View_img1.png)' | markdownify }}
-{:.image }
 
 
 _Month View Scheduling_

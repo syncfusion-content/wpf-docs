@@ -9,26 +9,26 @@ documentation: ug
 
 # Non-Working Hours
 
-Enabling Non-Working Hours
+## Enabling Non-Working Hours
 
 The Non-Working hours can be enabled or disabled by using IsHighLightWorkingHours property. The default value of IsHighLightWorkingHours property is false.
 
-Non-Working Days of Week
+## Non-Working Days of Week
 
 The Non-Working Days of the Week can be set using the property NonWorkingDays. The NonWorkingDays is string type, the default value of this property is “Sunday,Saturday”
 
-NonWorkingDateCollection:
+## NonWorkingDateCollection:
 
 NonWorkingDateCollection property allows you to add the Non-Working Days of the week.
 
-Starting Work Hour and Ending Work Hour
+## Starting Work Hour and Ending Work Hour
 
 The starting and ending work hour of a day is set using the WorkStartHour and WorkEndHour properties respectively.
 
-Non-Working Hour Brush
+## Non-Working Hour Brush
 
 The Non-Working hour’s background brush can be customized using the NonWorkingHourBrush property. 
-
+{% highlight html %}
 [XAML]
 
 
@@ -49,7 +49,8 @@ The Non-Working hour’s background brush can be customized using the NonWorking
 
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -72,10 +73,10 @@ The Non-Working hour’s background brush can be customized using the NonWorking
             this.grid.Children.Add(schedule);
 
 
+{% endhighlight  %}
 
 
+![](Non-Working-Hours_images/Non-Working-Hours_img1.png)
 
-{{ '![](Non-Working-Hours_images/Non-Working-Hours_img1.png)' | markdownify }}
-{:.image }
 
 

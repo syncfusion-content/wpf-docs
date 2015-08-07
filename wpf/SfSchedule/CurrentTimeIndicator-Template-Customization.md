@@ -9,10 +9,10 @@ documentation: ug
 
 # CurrentTimeIndicator Template Customization
 
-CurrentTimeIndicatorVisibility :
+## CurrentTimeIndicatorVisibility :
 
 The visibility of current time indicator enabled by using the CurrentTimeIndicatorVisibility property of SfSchedule Control.
-
+{% highlight html %}
 [XAML]
 
 
@@ -26,9 +26,9 @@ The visibility of current time indicator enabled by using the CurrentTimeIndicat
     </Grid>
 
 
+{% endhighlight  %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -42,23 +42,23 @@ The visibility of current time indicator enabled by using the CurrentTimeIndicat
             this.grid.Children.Add(schedule);
 
 
+{% endhighlight  %}
+
+
+![](CurrentTimeIndicator-Template-Customization_images/CurrentTimeIndicator-Template-Customization_img1.png)
 
 
 
-{{ '![](CurrentTimeIndicator-Template-Customization_images/CurrentTimeIndicator-Template-Customization_img1.png)' | markdownify }}
-{:.image }
+
+
+![](CurrentTimeIndicator-Template-Customization_images/CurrentTimeIndicator-Template-Customization_img2.png)
 
 
 
-
-{{ '![](CurrentTimeIndicator-Template-Customization_images/CurrentTimeIndicator-Template-Customization_img2.png)' | markdownify }}
-{:.image }
-
-
-CurrentTimeIndicatorTemplate:
+## CurrentTimeIndicatorTemplate:
 
 The CurrentTimeIndicator can be customized by using the__CurrentTimeIndicatorTemplate of SfScheduleControl.
-
+{% highlight html %}
 [XAML]
 
 
@@ -84,9 +84,9 @@ The CurrentTimeIndicator can be customized by using the__CurrentTimeIndicatorTem
     </Grid>
 
 
+{% endhighlight  %}
 
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -102,11 +102,11 @@ The CurrentTimeIndicator can be customized by using the__CurrentTimeIndicatorTem
             this.grid.Children.Add(schedule);
 
 
+{% endhighlight %}
 
 
+![](CurrentTimeIndicator-Template-Customization_images/CurrentTimeIndicator-Template-Customization_img3.png)
 
-{{ '![](CurrentTimeIndicator-Template-Customization_images/CurrentTimeIndicator-Template-Customization_img3.png)' | markdownify }}
-{:.image }
 
 
 

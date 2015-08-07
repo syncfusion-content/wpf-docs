@@ -11,15 +11,15 @@ documentation: ug
 
 Essential Grid is well known for its optimized performance. This section points out a sample that illustrates how to do high frequency updates in Grid control.
 
-Example 
+## Example 
 
 Let us consider a sample using a FlatDataViewGrid control, which is a regular grid that is bound to a flat data view (flat table, which is not nested and without relations) and is customized to handle refresh updates (refreshing the grid values, which in turn replaces old values with new values). It has a header row with field names and a footer row with summaries. 
 
-Sample Architecture
+## Sample Architecture
 
 Inside SampleGridControl.cs file, you can define various test scenarios. The basic test will load a data table with values and then modify the records inside a timer (timer is used to keep changing the grid values at regular intervals in order to illustrate run time updates) at run time. This will trigger ListChanged event. FlatDataViewGrid control listens to these events and updates the data displayed, by highlighting the cells that were changed, and also updates the resulting summaries.
 
-Sample Features
+## Sample Features
 
 The features of this sample are listed below:
 
@@ -28,7 +28,7 @@ The features of this sample are listed below:
 
 
 
-> _Note: Blinking Behavior-You cud see random values get updated frequently and those changed fields are highlighted by colors. For ex., increase in value is indicated in green color and decrease in value in red color. It also highlights the insertion of new records._
+> Note: Blinking Behavior-You cud see random values get updated frequently and those changed fields are highlighted by colors. For ex., increase in value is indicated in green color and decrease in value in red color. It also highlights the insertion of new records.
 
 
 
@@ -39,13 +39,13 @@ The features of this sample are listed below:
 
 
 
-{{ '![](Performance_images/Performance_img1.jpeg)' | markdownify }}
-{:.image }
+![](Performance_images/Performance_img1.jpeg)
 
 
-> _Note: For complete code for this example, refer the following browser sample:_
 
-> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Performance\Trader Grid Test Demo_
+> Note: For complete code for this example, refer the following browser sample:
+
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Performance\Trader Grid Test Demo
 
 
 

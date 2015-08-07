@@ -13,18 +13,15 @@ DateTimeEdit control accepts null values. NullValue support in the DateTimeEdit 
 
 
 
-<table>
-<tr>
-<td>
-C#</td></tr>
-<tr>
-<td>
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          IsEmptyDateEnabled="True" NullValue="{x:Null}"></td></tr>
-</table>
+{% highlight c# %}
+C#
 
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          IsEmptyDateEnabled="True" NullValue="{x:Null}">
 
-{{ '![](Null-Value-support_images/Null-Value-support_img1.png)' | markdownify }}
-{:.image }
+{% endhighlight %}
+
+![](Null-Value-support_images/Null-Value-support_img1.png)
+
 
 
 
@@ -34,19 +31,14 @@ Here is an example to change the DateTime property by using the NullValue proper
 In the example displayed below when you set null to the DateTime property, then automatically the value of the NullValue property is set to the DateTime property.
 
 
+{% highlight html %}
+XAML
 
-<table>
-<tr>
-<td>
-XAML</td></tr>
-<tr>
-<td>
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          IsEmptyDateEnabled="True" NullValue="07/05/2010"></td></tr>
-</table>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          IsEmptyDateEnabled="True" NullValue="07/05/2010">
+{% endhighlight  %}
 
 
-{{ '![](Null-Value-support_images/Null-Value-support_img2.png)' | markdownify }}
-{:.image }
+![](Null-Value-support_images/Null-Value-support_img2.png)
 
 
 See Also

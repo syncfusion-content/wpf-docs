@@ -10,7 +10,7 @@ documentation: ug
 # All-Day Panel 
 
 The schedule All Day panel visibility can be customized by ShowAllDay and its default value is true.
-
+{% highlight html %}
 [XAML]
 
 
@@ -18,7 +18,8 @@ The schedule All Day panel visibility can be customized by ShowAllDay and its de
     <Schedule:SfSchedule x:Name="schedule" ShowAllDay="False"/>
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 
 [C#]
@@ -30,17 +31,17 @@ The schedule All Day panel visibility can be customized by ShowAllDay and its de
             this.grid.Children.Add(schedule);
 
 
+{% endhighlight  %}
+
+
+![](All-Day-Panel_images/All-Day-Panel_img1.png)
 
 
 
-{{ '![](All-Day-Panel_images/All-Day-Panel_img1.png)' | markdownify }}
-{:.image }
-
-
-Date Navigation:                 
+## Date Navigation:                 
 
 In schedule the date navigation can be done using the MoveToDate method of the schedule.
-
+{% highlight c# %}
 [C#]
 
 
@@ -50,6 +51,6 @@ SfSchedule schedule = new SfSchedule();
 schedule.MoveToDate(new DateTime(2014,1,1 ));
 
 
-
+{% endhighlight  %}
 
 

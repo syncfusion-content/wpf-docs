@@ -17,24 +17,19 @@ When the MaxDateTime is set, if the MinDateTime property is greater than the new
 
 
 
-<table>
-<tr>
-<td>
-XAML</td></tr>
-<tr>
-<td>
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/05/2010" Pattern="LongDate"                          MinDateTime="01/01/2010" MaxDateTime="07/15/2010"/></td></tr>
-<tr>
-<td>
-C#</td></tr>
-<tr>
-<td>
-Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                           Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);dateTimeEdit.MinDateTime = new DateTime(2010, 01, 01);dateTimeEdit.MaxDateTime = new DateTime(2010, 07, 15);dateTimeEdit.Pattern = DateTimePattern.LongDate;this.LayoutRoot.Children.Add(dateTimeEdit);</td></tr>
-</table>
+{% highlight html %}
+XAML
 
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/05/2010" Pattern="LongDate"                          MinDateTime="01/01/2010" MaxDateTime="07/15/2010"/>
+{% endhighlight  %}
+{% highlight c# %}
+C#
 
-{{ '![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img1.png)' | markdownify }}
-{:.image }
+Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                           Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);dateTimeEdit.MinDateTime = new DateTime(2010, 01, 01);dateTimeEdit.MaxDateTime = new DateTime(2010, 07, 15);dateTimeEdit.Pattern = DateTimePattern.LongDate;this.LayoutRoot.Children.Add(dateTimeEdit);
+
+{% endhighlight  %}
+![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img1.png)
+
 
 
 This Calendar also displays the range of dates between the MinDateTime and MaxDateTime.

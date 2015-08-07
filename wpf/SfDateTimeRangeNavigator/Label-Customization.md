@@ -17,15 +17,16 @@ _Property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Intervals</td><td>
 Used to set the Interval type which need to be displayed in the Navigator</td></tr>
 </table>
 
+{% highlight html %}
 
 <syncfusion:SfDateTimeRangeNavigator x:Name="rangepicker" ItemsSource="{Binding power}"  XBindingPath="Date" >
 
@@ -67,21 +68,21 @@ Used to set the Interval type which need to be displayed in the Navigator</td></
 
         </syncfusion:SfDateTimeRangeNavigator>
 
-
+{% endhighlight  %}
 
 Following is the screenshot of showing only Quarter and Month intervals in the Navigator
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/5.png](Label-Customization_images/Label-Customization_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/5.png](Label-Customization_images/Label-Customization_img1.png)
+
 
 
 _Quarter and Month intervals in the Navigator_
 
 
 
-The Interval has the following types 
+## The Interval has the following types 
 
 * Year
 * Quarter
@@ -98,9 +99,9 @@ _List of Intervals_
 
 <table>
 <tr>
-<td>
-Intervals</td><td>
-Examples</td></tr>
+<th>
+Intervals</th><th>
+Examples</th></tr>
 <tr>
 <td>
 HourInterval</td><td>
@@ -128,11 +129,11 @@ YearInterval</td><td>
 </table>
 
 
-Label Style Customization
+## Label Style Customization
 
 Label Style can be customized using the LabelBarStyle property and this can be applied to the HigherLevelBarStyle or LowerLevelBarStyle.
 
-
+{% highlight html %}
 
 <chart:SfDateTimeRangeNavigator.HigherLevelBarStyle>
 
@@ -152,14 +153,14 @@ Label Style can be customized using the LabelBarStyle property and this can be a
 
   </chart:SfDateTimeRangeNavigator.HigherLevelBarStyle>
 
-
+{% endhighlight %}
 
 Following is the screenshot of Label HorizontalAlignment set to left.
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/6.png](Label-Customization_images/Label-Customization_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/6.png](Label-Customization_images/Label-Customization_img2.png)
+
 
 
 _Label HorizontalAlignment set to left_

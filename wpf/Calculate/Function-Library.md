@@ -26,7 +26,7 @@ The above steps have been explained in detail in the following topics:
 ### Step 1-Writing the Method
 
 The method must have the signature specified by the delegate, Syncfusion.Calculate.CalcEngine.LibraryFunction. It accepts a string argument and returns a string value. So here is a minimal implementation. The sample found in \WPF\Calculate.Wpf \Samples\2.0\ DataGridCalculator has code that adds a custom function.
-
+{% highlight c# %}
 [C#]
 
 
@@ -41,7 +41,8 @@ return someString;
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -61,16 +62,16 @@ Return someString
 
 End Function
 
-
+{% endhighlight  %}
 
 This is the only requirement on the method. You are free to use any kind of conventions with respect to passing arguments and within your implementation code. So, args may be a single entry like A1 or 153 or, it may be something more complex like A1:C15. It is up to your implementation code to parse args, use the information passed in, to compute the value and then return this value as a string. If you want your arguments to be standard items like cell references, numbers, other formulas, etc., CalcEngine exposes some parsing tools that you can use to minimize the amount of code you may need to write. But, you are not limited to what CalcEngine exposes, you are free to design and implement any argument conventions you want, as long as your method has the required signature.
 
 Here add a method that accepts an argument list and then returns the minimum value in this list. The list may be individual cell references and cell ranges, or numbers. This sample code uses CalcEngine methods to handle the parsing and retrieving of values from the argument list.
 
-> _Note: List separators can vary depending upon culture. While it is reasonable to use a comma as a separator in en-US, this is not the case with fr-FR where the comma is used as a decimal separator. For this reason, CalcEngine.ParseArgumentSeparator is a static member that holds the list separator that is recognized by the parsing of algorithms in the CalcEngine._
+> Note: List separators can vary depending upon culture. While it is reasonable to use a comma as a separator in en-US, this is not the case with fr-FR where the comma is used as a decimal separator. For this reason, CalcEngine.ParseArgumentSeparator is a static member that holds the list separator that is recognized by the parsing of algorithms in the CalcEngine.
 
 In the following code, CalcEngine.ParseArgumentSeparator is used to split the args into a list. Additionally, the code makes use of two utility methods in the CalcEngine object, GetCellsFromArgs and GetValueFromArg. GetCellsFromArgs accepts a range like A3:C6 and returns a string array of the individual cell references in the range. GetValueFromArg accepts a cell reference, formula, or number and return the numerical value that the cell holds.
-
+{% highlight c# %}
 [C#]
 
 
@@ -189,7 +190,8 @@ public string ComputeMymin(string args)
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -287,11 +289,13 @@ Public Function ComputeMymin(ByVal args As String) As String
 
 End Function
 
+{% endhighlight %}
+
 ### Step 2-Registering the Method with the CalcEngine
 
 The second step for adding your own formula is to register your method with the CalcEngine object. This is done with the AddFunction method. This method accepts the string that is used when you reference the function in a spreadsheet formula, and the second argument is a delegate for which you pass your method. The only requirement here is that the function name should start with an alpha character and should only contain alpha-numeric characters. Additionally, the string cannot be the name of any existing library function.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -300,9 +304,9 @@ The second step for adding your own formula is to register your method with the 
 // Add formula name Mymin to the Library.
 
 this.engine.AddFunction("Mymin", new LibraryFunction(ComputeMymin));
+{% endhighlight %}
 
-
-
+{% highlight vbnet %}
 [VB]
 
 
@@ -311,23 +315,23 @@ this.engine.AddFunction("Mymin", new LibraryFunction(ComputeMymin));
 
 Me.engine.AddFunction("Mymin", AddressOf ComputeMymin)
 
-
+{% endhighlight %}
 
 By convention, within the Essential Calculate library, the C# implementation method for each of the library functions that are shipped with the word "Compute" is named and followed by the name of the library function. The above code confirms to this convention, with the function name being 'Mymin' and the method name being 'ComputeMymin'. Our library functions are public members of the CalcEngine class, so that you can access them directly if it serves your purpose. Additionally, if you own the source code version, you can see implementation details that may be of use to you if you try to implement many custom library methods on your own.
 
-> _Note: Once this is done, you can use your custom method in the same manner as the default library functions._
+> Note: Once this is done, you can use your custom method in the same manner as the default library functions.
 
 ## Remove and Replace Function
 
 This section discusses the Remove and Replace Function available for the CalcEngine.
 
-Remove Function
+### Remove Function
 
 Removing unused functions from the Function Library, reduces the memory usage and speeds up parsing as well. Also, if you are only using a selected few Library functions, you may want to remove the unused ones. This can be done using the methods given below.
 
 * To remove all functions, you can clear the hash table that holds them by using the engine.LibraryFunctions.Clear method.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -337,7 +341,8 @@ Removing unused functions from the Function Library, reduces the memory usage an
 
 engine.LibraryFunctions.Clear();
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -347,13 +352,13 @@ engine.LibraryFunctions.Clear();
 
 engine.LibraryFunctions.Clear()
 
-
+{% endhighlight %}
 
 After clearing all functions, you can add few functions that are used often. To know how to add functions, see Add Function.
 
 * To remove a single function from the Function Library, use the CalcEngine.RemoveFunction method, passing a "function name" as the string that references this function, from a formula.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -364,7 +369,8 @@ After clearing all functions, you can add few functions that are used often. To 
 engine.RemoveFunction("MyMin");
 
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB]
 
 
@@ -373,9 +379,9 @@ engine.RemoveFunction("MyMin");
 
 engine.RemoveFunction("MyMin")
 
+{% endhighlight %}
 
-
-Replace Function
+### Replace Function
 
 To replace a function with another implementation, you must remove the original name, and add the same name again with a different delegate method.
 
@@ -391,9 +397,9 @@ _Logical functions_
 
 <table>
 <tr>
-<td>
-Function Name</td><td>
-Description</td></tr>
+<th>
+Function Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 And</td><td>
@@ -435,6 +441,7 @@ Use this method to nest up to or more than 7 IF conditions.</td></tr>
 Or</td><td>
 Returns TRUE if any of the conditions are TRUE. Otherwise, it returns FALSE.</td></tr>
 </table>
+
 ### Text
 
 This section lists the Text functions included with Essential calculate in the below table.
@@ -443,9 +450,9 @@ _Text functions_
 
 <table>
 <tr>
-<td>
-Function Name</td><td>
-Description</td></tr>
+<th>
+Function Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Concatenate</td><td>
@@ -475,6 +482,7 @@ Returns the length of a string.</td></tr>
 MID</td><td>
 Returns a text segment of a character string.</td></tr>
 </table>
+
 ## Date and Time
 
 This section lists the Date and Time functions included with Essential calculate in the below table.
@@ -483,9 +491,9 @@ _Date and Time functions_
 
 <table>
 <tr>
-<td>
-Function Name</td><td>
-Description</td></tr>
+<th>
+Function Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Date</td><td>
@@ -543,6 +551,7 @@ Returns the weekday from 1 to 7.</td></tr>
 Year</td><td>
 Returns the year from 1900 to 9999.</td></tr>
 </table>
+
 ### LookUps and Information
 
 This section lists the LookUp and Information functions included with Essential calculate in the below table.
@@ -551,9 +560,9 @@ _LookUp and Information functions_
 
 <table>
 <tr>
-<td>
-Function Name</td><td>
-Description</td></tr>
+<th>
+Function Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 HLookUp</td><td>
@@ -571,6 +580,7 @@ Returns True if cell holds an error.</td></tr>
 IsNumber</td><td>
 Returns True if cell holds a number.</td></tr>
 </table>
+
 ## Financial
 
 This section lists the Financial functions included with Essential calculate in the below table.
@@ -579,9 +589,9 @@ _Financial functions_
 
 <table>
 <tr>
-<td>
-Function Name</td><td>
-Description</td></tr>
+<th>
+Function Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Db</td><td>
@@ -647,6 +657,7 @@ Returns sum-of-years depreciation.</td></tr>
 Vdb</td><td>
 Returns the depreciation using double declining balance calculation.</td></tr>
 </table>
+
 ## Math and Trig functions
 
 This section lists the Math and Trig functions included with Essential calculate in the below table.
@@ -655,9 +666,9 @@ _Math and Trig functions_
 
 <table>
 <tr>
-<td>
-Function Name</td><td>
-Description</td></tr>
+<th>
+Function Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Abs</td><td>
@@ -843,11 +854,12 @@ Returns the hyperbolic tangent.</td></tr>
 Trunc</td><td>
 Returns the number without a fractional part.</td></tr>
 </table>
+
 ### Multinomial
 
 The MULTINOMIAL function returns the ratio of the factorial of a sum of values to the product of factorials.
 
-Syntax
+#### Syntax
 
 The syntax of the MULTINOMIAL function is
 
@@ -863,19 +875,20 @@ Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 =MULTINOMIAL(2, 3, 4)</td><td>
 1260</td></tr>
 </table>
+
 ### ISEVEN
 
 The ISEVEN function returns TRUE if given number is an even number, and returns FALSE if the given number is odd.
 
-Syntax:
+#### Syntax:
 
 The syntax of the ISEVEN function is
 
@@ -883,17 +896,17 @@ The syntax of the ISEVEN function is
 
 The given value must be a numeric value. If it is non-integer value, the value is rounded down.
 
-> _Note: If the given value is nonnumeric, the ISEVEN function returns the ‘#VALUE!’ error value._
+> Note: If the given value is nonnumeric, the ISEVEN function returns the ‘#VALUE!’ error value.
 
 
 
-Example:
+#### Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 =ISEVEN(-1) </td><td>
@@ -907,11 +920,12 @@ TRUE</td></tr>
 =ISEVEN(5) </td><td>
 FALSE</td></tr>
 </table>
+
 ### ISODD
 
 The ISODD function returns TRUE if the given number is an odd number, and returns FALSE if the given number is even.
 
-Syntax: 
+#### Syntax: 
 
 The syntax of the ISODD function is
 
@@ -919,17 +933,17 @@ The syntax of the ISODD function is
 
 The given value must be a numeric value. If it is a non-integer value, the value is rounded down.
 
-> _Note: If the given value is nonnumeric, ISODD function returns the ‘#VALUE!’ error value._
+> Note: If the given value is nonnumeric, ISODD function returns the ‘#VALUE!’ error value.
 
 
 
-Example:
+#### Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 =ISODD(-1) </td><td>
@@ -943,11 +957,12 @@ FALSE</td></tr>
 =ISODD(5) </td><td>
 TRUE</td></tr>
 </table>
+
 ### N
 
 The N function converts the given value into a numeric value.
 
-Syntax: 
+#### Syntax: 
 
 The syntax of the N function is
 
@@ -957,13 +972,13 @@ A value is required.
 
 Numeric values are converted as numeric values. A date value is converted as a serial number. The Logic operator TRUE returns a value of 1. The other values are returned as 0.
 
-Example:
+#### Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 =N(7) </td><td>
@@ -981,11 +996,12 @@ RESULT</td></tr>
 =N(TRUE)</td><td>
 1</td></tr>
 </table>
+
 ### NA
 
 The NA function returns the #N/A error. This error message is produced when a formula is unable to find a value that it needs. This error message denotes 'value not available.'
 
-Syntax: 
+#### Syntax: 
 
 The syntax of NA function is
 
@@ -993,25 +1009,26 @@ The syntax of NA function is
 
 The NA function syntax has no arguments.
 
-> _Note: The function doesn’t have any arguments._
+> Note: The function doesn’t have any arguments.
 
-Example:
+#### Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 =NA() </td><td>
 #NA</td></tr>
 </table>
+
 ### ERROR.TYPE
 
 The Error.Type function returns an integer for the given error value that denotes the type of the given error.
 
-Syntax:
+#### Syntax:
 
 The syntax of the ERROR.TYPE function is
 
@@ -1023,9 +1040,9 @@ Here is the return value of function:
 
 <table>
 <tr>
-<td>
-Given Value</td><td>
-Return value of function</td></tr>
+<th>
+Given Value</th><th>
+Return value of function</th></tr>
 <tr>
 <td>
 #NULL!</td><td>
@@ -1065,13 +1082,13 @@ Anything else</td><td>
 </table>
 
 
-Example:
+#### Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 = ERROR.TYPE(#NULL!) </td><td>
@@ -1081,11 +1098,12 @@ RESULT</td></tr>
 = ERROR.TYPE(even)</td><td>
 #NA</td></tr>
 </table>
+
 ### SUBTOTAL
 
 The SUBTOTAL function returns a subtotal in a list. Once the subtotal list is created, you can modify it by editing the SUBTOTAL function.
 
-Syntax:
+#### Syntax:
 
 The syntax of the SUBTOTAL function is
 
@@ -1095,9 +1113,9 @@ A function_Number is required. This specifies which function to use in calculati
 
 <table>
 <tr>
-<td>
-FUNCTION NUMBER</td><td>
-FUNCTION NAME</td></tr>
+<th>
+FUNCTION NUMBER</th><th>
+FUNCTION NAME</th></tr>
 <tr>
 <td>
 1</td><td>
@@ -1145,7 +1163,7 @@ Ref1 The first named range which is used for the subtotal. This value is require
 
 Ref2 This value is optional.
 
-> _Note: If the subtotal function has any nested subtotal functions, then the nested subtotal is ignored for double counting._
+> Note: If the subtotal function has any nested subtotal functions, then the nested subtotal is ignored for double counting.
 
 
 
@@ -1153,7 +1171,7 @@ Ref2 This value is optional.
 
 The MROUND function rounds a given number up or down to the nearest multiple of a given number.
 
-Syntax
+#### Syntax
 
 The syntax of the MROUND function is
 
@@ -1171,13 +1189,13 @@ The number must be is greater than or equal to half the value of multiple.
 
 
 
-Example:
+#### Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 =MROUND(10,2.6)</td><td>
@@ -1191,11 +1209,12 @@ RESULT</td></tr>
 =MROUND(10,-2)</td><td>
 #NUM!</td></tr>
 </table>
+
 ### RANDBETWEEN
 
 The RANDBETWEEN function returns a random number that is between the given ranges. This function returns a new random number each time in recalculation.
 
-Syntax
+#### Syntax
 
 The syntax of the RANDBETWEEN Function is
 
@@ -1211,23 +1230,24 @@ end_num – Required. This is the largest integer.
 
 #VALUE! -	Occurs if any of the given arguments are non-numeric.
 
-Example:
+#### Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 = RANDBETWEEN (10,20)</td><td>
 12. The value is generated randomly between the given values.</td></tr>
 </table>
+
 ### SQRTPI
 
 The SQRTPI function returns the square root of a given number multiplied by π. Here π is the constant math value.
 
-Syntax
+#### Syntax
 
 The syntax of the SQRTPI function is
 
@@ -1241,13 +1261,13 @@ number – Required.
 
 #VALUE! -	Occurs if any of the given arguments are non-numeric.
 
-Example:
+#### Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 = SQRTPI (2)</td><td>
@@ -1257,11 +1277,12 @@ RESULT</td></tr>
 = SQRTPI (-2)</td><td>
 #NUM!</td></tr>
 </table>
+
 ### QUOTIENT
 
 The QUOTIENT function returns the integer portion of a division between two given numbers. The returned value can be a integer value.
 
-Syntax
+#### Syntax
 
 The syntax of the QUOTIENT function is
 
@@ -1271,17 +1292,17 @@ Numerator – Required.
 
 Denominator – Required.
 
-Remarks:
+#### Remarks:
 
 #VALUE! -	 Occurs if any of the given arguments are non-numeric.
 
-Example:
+#### Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 = QUOTIENT (10,3)</td><td>
@@ -1291,11 +1312,12 @@ RESULT</td></tr>
 = QUOTIENT (-20,6)</td><td>
 -3</td></tr>
 </table>
+
 ### FACTDOUBLE
 
 The FACTDOUBLE function returns the double factorial of a given value. The given value must be an integer value.
 
-Syntax
+#### Syntax
 
 The syntax of the FACTDOUBLE function is
 
@@ -1309,13 +1331,13 @@ number – Required.
 
 #VALUE! -	Occurs if any of the given arguments are non-numeric
 
-Example:
+#### Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 = FACTDOUBLE (6)</td><td>
@@ -1325,11 +1347,12 @@ RESULT</td></tr>
 = FACTDOUBLE (-2)</td><td>
 #NUM!</td></tr>
 </table>
+
 ### GCD
 
 The GCD function returns the greatest common divisor of two or more given values. The values must be a numeric value.
 
-Syntax
+#### Syntax
 
 The syntax of the GCD function is
 
@@ -1345,13 +1368,13 @@ If any value is not an integer, then it is rounded down.
 
 #VALUE! -	 Occurs if any of the given arguments are non-numeric.
 
-Example:
+#### Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 = GCD (5,3,2)</td><td>
@@ -1361,11 +1384,12 @@ RESULT</td></tr>
 = GCD (-2)</td><td>
 #NUM!</td></tr>
 </table>
+
 ### LCM
 
 The LCM function returns the least common multiple of two or more given values. The values must be numeric values.
 
-Syntax
+#### Syntax
 
 The syntax of the LCM function is
 
@@ -1381,13 +1405,13 @@ If any value is not an integer, then it is rounded down.
 
 #VALUE! -	 Occurs if any of the given arguments are non-numeric.
 
-Example:
+#### Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 = LCM (5,2)</td><td>
@@ -1397,11 +1421,12 @@ RESULT</td></tr>
 = LCM (-2)</td><td>
 #NUM!</td></tr>
 </table>
+
 ### ROMAN
 
 The ROMAN function converts an Arabic number to a Roman numeral. This function returns a text string depicting the Roman numeral form of the given number.
 
-Syntax
+#### Syntax
 
 The syntax of the ROMAN function is
 
@@ -1415,9 +1440,9 @@ If number is not an integer, then it is rounded down.
 
 <table>
 <tr>
-<td>
-Form</td><td>
-Type</td></tr>
+<th>
+Form</th><th>
+Type</th></tr>
 <tr>
 <td>
 0 or omitted</td><td>
@@ -1441,13 +1466,13 @@ Simplified.</td></tr>
 </table>
 #VALUE! -	Occurs if any of the given values is non-numeric, or for values less than 0 and greater than 3999.
 
-Example:
+#### Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 = ROMAN (499,0)</td><td>
@@ -1461,11 +1486,12 @@ ID</td></tr>
 =ROMAN(-100)</td><td>
 #VALUE!</td></tr>
 </table>
+
 ### IFERROR
 
 The IFERROR function tests if an initial given value (or expression) returns an error, and if so, this function returns a second given argument. Otherwise, the function returns the initial tested value.
 
-Syntax
+#### Syntax
 
 The syntax of the IFERROR function is
 
@@ -1477,13 +1503,13 @@ value_error – Required. This value is returned if the value has an error.
 
 If the value_error is an empty cell, then the function takes the error value as empty string.
 
-Example:
+#### Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 = IFERROR (200/55, “ERROR in DIVISION”)</td><td>
@@ -1493,13 +1519,14 @@ RESULT</td></tr>
 = IFERROR (200/0, “ERROR in DIVISION”)</td><td>
 ERROR in DIVISION</td></tr>
 </table>
+
 ### T
 
 The T function tests whether the given value is text or not. If the given value is text, then it returns the given text. Otherwise, the function returns an empty text string.
 
 
 
-Syntax
+#### Syntax
 
 The syntax of the T function is
 
@@ -1509,13 +1536,13 @@ value – Required. This is a value to be checked.
 
 If the value is not a number or logical value, then the function returns an empty string.
 
-Example:
+#### Example:
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 =T(“SYNCFUSION”)</td><td>
@@ -1529,27 +1556,28 @@ SYNCFUSION</td></tr>
 =T(10)</td><td>
 </td></tr>
 </table>
+
 ### XOR
 
 The XOR function returns the exclusive OR for the given arguments.
 
-Syntax 
+#### Syntax 
 
 XOR (logical_value1, logical_value2,…)
 
 Logical_value1: Required. This can be either TRUE or FALSE, and can be logical values, arrays, or references.
 
-> _Note: If the given arguments do not have the logical values, XOR returns the #VALUE! error value._
+> Note: If the given arguments do not have the logical values, XOR returns the #VALUE! error value.
 
 
 
-Example
+#### Example
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 = XOR( 5>0, 7<9 )</td><td>
@@ -1559,11 +1587,12 @@ FALSE</td></tr>
 =XOR(3>12, 4>6)</td><td>
 TRUE</td></tr>
 </table>
+
 ### IFNA 
 
 The IFNA function returns the value specified if the formula returns the #N/A error value; otherwise, it returns the result of the given formula.
 
-Syntax
+#### Syntax
 
 =IFNA (Formula_value, value_if_na)
 
@@ -1571,13 +1600,13 @@ Formula_value: Required. The argument that is checked for the #N/A error value.
 
 value_if_na: Required. The value returned if the formula evaluates to the #N/A error value.
 
-Example 
+#### Example 
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 =IFNA(“#N/A”,”Incorrect”)</td><td>
@@ -1587,23 +1616,24 @@ Incorrect</td></tr>
 =IFNA(1602,”incorrect”)</td><td>
 1602</td></tr>
 </table>
+
 ### CLEAN
 
 The CLEAN function is used to remove the non-printable characters from the given text, represented by numbers 0 to 31 of the 7-bit ASCII code.
 
-Syntax
+#### Syntax
 
 =Clean(Text)
 
 Text: Required. String or text from which to remove nonprintable characters.
 
-Example  
+#### Example  
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 =Clean(Syncfusion)</td><td>
@@ -1613,23 +1643,24 @@ Syncfusion</td></tr>
 = Clean("Text*")</td><td>
 Text</td></tr>
 </table>
+
 ### ISREF
 
 The ISREF function returns the logical value TRUE if the given value is a reference value; otherwise, the function returns FALSE.
 
-Syntax
+#### Syntax
 
 =ISREF(given_value)
 
 given_value:Required. The value that is to be tested. The value argument can be a blank (empty cell), error, logical value, text, number, or reference value, or a name referring to any of these.
 
-Example
+#### Example
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 =ISREF("Region1")   </td><td>
@@ -1639,11 +1670,12 @@ FALSE</td></tr>
 =ISREF(=ISLOGICAL(TRUE))</td><td>
 TRUE</td></tr>
 </table>
+
 ### AVERAGEIF
 
 The AVERAGEIF function finds the average of values in a given array that satisfy a given criteria, and returns the average value of the corresponding values in a second given array.
 
-Syntax 
+#### Syntax 
 
 =AVERAGEIF(range, criteria, average_range)
 
@@ -1653,7 +1685,7 @@ criteria: The condition to be tested in each of the values of the given range.
 
 average_range: Numeric values to be evaluated against the criteria and averaged.
 
-> _Note_
+> Note
 
 * _If range is blank or a text value, AVERAGEIF returns the #DIV/0! error value._
 * _If a cell in criteria is empty, AVERAGEIF treats it as a 0 value._
@@ -1661,7 +1693,7 @@ average_range: Numeric values to be evaluated against the criteria and averaged.
 
 
 
-Example
+#### Example
 
 Input Table
 
@@ -1713,11 +1745,12 @@ RESULT</td></tr>
 =AVERAGEIF(A2:A5,">250000")</td><td>
 350000</td></tr>
 </table>
+
 ### AVERAGEIFS
 
 The AVERAGEIFS function finds the average of values in a given array that satisfy a set of given criteria.
 
-Syntax
+#### Syntax
 
 = AVERAGEIFS( average_range, criteria_range1, criteria1, [criteria_range2, criteria2], ... )
 
@@ -1727,7 +1760,7 @@ criteria_range1: Array of values to be tested against the given criteria.
 
 criteria1: The condition to be tested on each of the values of the given range.
 
-> _Note_
+> Note
 
 * _If average_range is blank or a text value, AVERAGEIFS returns the #DIV/0! error value._
 * _If a cell in a criteria range is empty, AVERAGEIFS treats it as a 0 value._
@@ -1735,7 +1768,7 @@ criteria1: The condition to be tested on each of the values of the given range.
 
 
 
-Example
+#### Example
 
 Input Table
 
@@ -1789,11 +1822,12 @@ RESULT</td></tr>
 AVERAGEIFS(C2:C5, B2:B5, ">7000", B2:B5, "<10000")</td><td>
 400</td></tr>
 </table>
+
 ### NETWORKDAYS
 
 The NETWORKDAYS function is used to calculate the number of whole work days between two given dates. This includes all weekdays from Monday to Friday, but excludes a supplied list of holidays.
 
-Syntax
+#### Syntax
 
 = NETWORKDAYS( start_date, end_date, [holidays] )
 
@@ -1803,7 +1837,7 @@ end_date: The end of the period to find the working days.
 
 [holidays]:  An optional argument, which specifies an array of dates that are not to be counted as working days.
 
-> _Note: If any argument is not a valid date, NETWORKDAYS returns the #VALUE! error value._
+> Note: If any argument is not a valid date, NETWORKDAYS returns the #VALUE! error value.
 
 
 
@@ -1811,19 +1845,20 @@ Example
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 =NETWORKDAYS(DATE(2012,10,1),DATE(2013,3,1))</td><td>
 110</td></tr>
 </table>
+
 ### SUMIFS
 
 The SUMIFS function sums the values in a given array that satisfy a set of given criteria.
 
-Syntax:
+#### Syntax:
 
 =SUMIFS(sum_range, criteria_range1, criteria1, [criteria_range2, criteria2], …)
 
@@ -1833,11 +1868,11 @@ criteria1: The condition to be tested on each of the values of given range.
 
 sum_range: The range of values to be summed if the associated criteria range meets the specified criteria. 
 
-> _Note: Cells in the sum_range argument that contain TRUE evaluate to 1; cells in sum_range that contain FALSE evaluate to 0 (zero)._
+> Note: Cells in the sum_range argument that contain TRUE evaluate to 1; cells in sum_range that contain FALSE evaluate to 0 (zero).
 
 
 
-Example
+#### Example
 
 Input Table
 
@@ -1891,11 +1926,12 @@ RESULT</td></tr>
 SUMIFS(C2:C5, B2:B5, ">7000", B2:B5, "<10000")</td><td>
 800</td></tr>
 </table>
+
 ### ADDRESS
 
 The ADDRESS function returns the address of a cell in a worksheet given specified row and column numbers.
 
-Syntax 
+#### Syntax 
 
 ADDRESS(row_num, column_num, [abs_num], [a1], [sheet_text])
 
@@ -1907,7 +1943,7 @@ abs_num: Optional. A numeric value that specifies the type of reference to retur
 
 A1: A logical value that specifies the A1 or R1C1 reference style.
 
-Example
+#### Example
 
 <table>
 <tr>
@@ -1923,28 +1959,29 @@ R2C[3].</td></tr>
 =ADDRESS(2,3,1,FALSE,"[Book1]Sync1")</td><td>
 [Book1] Sync1!R2C3</td></tr>
 </table>
+
 ### LOOKUP
 
 The LOOKUP function returns a value either from a one-row or one-column range, or from an array. The LOOKUP function has two syntax forms: vector and array. 
 
 Vector Form: The vector form of LOOKUP looks in a one-row or one-column range for a value, and then returns a value from the same position in a second one-row or one-column range. 
 
-Syntax
+#### Syntax
 
 =LOOKUP(lookup_value, lookup_vector, result_vector)
 
 Array form: The array form of LOOKUP looks in the first row or column of an array for the specified value, and then returns a value from the same position in the last row or column of the array.
 
-Syntax
+#### Syntax
 
 =LOOKUP(lookup_value, array)
 
-> _Note_
+> Note
 
 * _If the LOOKUP function can't find the lookup_value, the function matches the largest value in lookup_vector that is less than or equal to lookup_value._
 * _If lookup_value is smaller than the smallest value in lookup_vector, LOOKUP returns the #N/A error value._
 
-Example
+#### Example
 
 Input Table
 
@@ -2002,11 +2039,12 @@ RESULT</td></tr>
 =LOOKUP("C", {"a","b","c","d";1,2,3,4})  </td><td>
 3</td></tr>
 </table>
+
 ### SEARCH
 
 The SEARCH function returns the location of a substring in a string. This function is NOT case-sensitive.
 
-Syntax 
+#### Syntax 
 
 SEARCH(substring, string, [start_position] )
 
@@ -2016,7 +2054,7 @@ string:Required. The text in which to search for the value of the substring.
 
 start_num: Optional. The starting position for searching in the string.
 
-> _Note_
+> Note
 
 * _If the value of find_text is not found, the #VALUE! error value is returned._
 * _If the start_num argument is omitted, it is assumed to be 1._
@@ -2024,7 +2062,7 @@ start_num: Optional. The starting position for searching in the string.
 
 
 
-Example 
+#### Example 
 
 <table>
 <tr>
@@ -2036,6 +2074,7 @@ RESULT</td></tr>
 =SEARCH("base","database")  </td><td>
 5</td></tr>
 </table>
+
 ## Statistics
 
 This section lists the Statistic functions included with Essential calculate in the below table.
@@ -2044,9 +2083,9 @@ _Statistic functions_
 
 <table>
 <tr>
-<td>
-Function Name</td><td>
-Description</td></tr>
+<th>
+Function Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Avedev</td><td>

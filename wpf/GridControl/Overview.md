@@ -15,7 +15,7 @@ The display system also hosts a powerfull and complete styles architecture. Sett
 
 With this version, our core focus has been on the underlying architecture for displaying cells with virtualized cell editors in a manner that enables good performance characteristics. The core display system also supports several building-block features such as nested grids, virtual modes, and support for a virtually unlimited number of rows and columns.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 EssentialGrid for WPF can be applied to a variety of industries such as finance, banking, software, etc. Some of its important features are:
 
@@ -23,25 +23,25 @@ Excel-Like UI: Essential Grid’s rich feature set allows you to build Excel-lik
 
 
 
-{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.png)
+
 
 
 High Performance - EssentialGrid is a great asset to high-performance applications, as it can display large amounts of real-time data that tends to periodic changes without any performance hits. Below is an illustration of a stock portfolio application using the GridData control.
 
 
 
-{{ '![](Overview_images/Overview_img2.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img2.png)
+
 
 
 File Explorer - Applications that deal with hierarchical data can make use of Essential Grid’s file explorer feature, which allows child items to be displayed on-demand by using the GridTree control.
 
-{{ '![](Overview_images/Overview_img3.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img3.png)
+
 
 
-Key Features
+## Key Features
 
 You will find the following features of EssentialGrid for WPF:
 
@@ -64,7 +64,7 @@ You will find the following features of EssentialGrid for WPF:
 * Drag-Drop Support - Essential Grid lets you drag any column and drop it at any position in the grid. This allows columns to be repositioned as required.
 * Virtual Mode - Essential Grid for WPF supports a virtual mode, which lets you dynamically provide data to the grid from an external data source through an event. This means the grid does not store any data in its internal data structure.
 
-User Guide Organization
+## User Guide Organization
 
 EssentialGrid for WPF comes with numerous samples as well as extensive documentation for your reference. This user guide provides detailed information on features and functionalities. It is organized into the following sections:
 
@@ -72,7 +72,7 @@ EssentialGrid for WPF comes with numerous samples as well as extensive documenta
 * Getting Started – This section guides you on getting started with a WPF application and WPF controls.
 * Concepts and Features –Under this section, the features of individual controls are illustrated with use-case scenarios, code examples, and screen shots.
 
-Document Conventions 
+## Document Conventions 
 
 The conventions below will help you quickly identify important sections of information when using this user guide:
 
@@ -80,9 +80,9 @@ _Document Conventions_
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-Description of the Icon</td></tr>
+<th>
+Convention</th><th>
+Description of the Icon</th></tr>
 <tr>
 <td>
 Note</td><td>
@@ -100,6 +100,7 @@ Represents useful hints that will help you use the controls and features.</td></
 Additional information</td><td>
 Represents additional information on the corresponding topic.</td></tr>
 </table>
+
 ## Feature Summary
 
 This section provides basic information, such as definitions and usage, regarding important features of EssentialGrid.
@@ -108,30 +109,30 @@ This section provides basic information, such as definitions and usage, regardin
 
 The Grid control is a cell-based, data-representation control. It can load millions of rows very quickly and is very easy to customize. The following features are just a sampling of what you can expect from Essential Grid.
 
-Data Population and Virtual Mode
+#### Data Population and Virtual Mode
 
 Because the Grid control is cell based, it doesn’t have any internal data structures, so it cannot store data internally. Data can be populated by either looping through the cells or by a virtual mode, which dynamically provides data to the grid by handling an event. In virtual mode, the Grid control can display millions of rows easily. 
 
-{{ '![](Overview_images/Overview_img4.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img4.png)
 
 
-Data Presentation and Formatting
+
+#### Data Presentation and Formatting
 
 The Grid control supports many cell types to present data. In addition to built-in cell types, any WPF control or any custom control can be placed inside a cell by using a data-template cell.
 
 
 
-{{ '![](Overview_images/Overview_img5.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img5.png)
+
 
 
 The Grid control’s appearance can be customized very easily. Common style properties include options to change background or text color, font, alignment, orientation, border, and wrap text. Various cell formats include date-time, currency, numeric, and text formats, and Excel-like comments are supported.
 
 
 
-{{ '![D:/OS/features/Documentation/Images/VJ.PNG](Overview_images/Overview_img6.png)' | markdownify }}
-{:.image }
+![D:/OS/features/Documentation/Images/VJ.PNG](Overview_images/Overview_img6.png)
+
 
 
 * Excel-Like Behaviors: The Grid control supports most Excel behaviors, including the following:
@@ -152,11 +153,11 @@ The Grid control’s appearance can be customized very easily. Common style prop
 
 
 
-{{ '![](Overview_images/Overview_img7.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img7.png)
 
 
-Excel Compatibility
+
+#### Excel Compatibility
 
 * Import Options: The import feature allows an Excel workbook to be imported into a grid while preserving the workbook’s look and feel. The following items can be imported: entire spreadsheets, formulas, styles, conditional formats, frozen panes, backgrounds, foregrounds, and comments.
 * Export Options: The Grid control provides inherent support for exporting content to Excel files (.xls and .xlsx format) and to .csv files. 

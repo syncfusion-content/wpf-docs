@@ -30,10 +30,10 @@ _Cell Type_
 
 <table>
 <tr>
-<td>
-Cell Type</td><td>
-Cell Type String</td><td>
-Usage</td></tr>
+<th>
+Cell Type</th><th>
+Cell Type String</th><th>
+Usage</th></tr>
 <tr>
 <td>
 Header</td><td>
@@ -67,7 +67,7 @@ To set up desired cell type, the Style.CellType property must be assigned with t
 Displaying a Check Box Control in a cell
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -76,23 +76,23 @@ GridStyleInfo style = gridControl1.Model[2, 2];
 
 style.CellType = "CheckBox";
 
-
+{% endhighlight  %}
 
 Likewise, you can also add other controls from the table above. A sample output is displayed below.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img1.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img1.jpeg)
+
 
 
 _Basic Cell Types_
 
 A check box is created in the grid.
 
-> _Note: For complete code, please refer to the following browser sample:_
+> Note: For complete code, please refer to the following browser sample:
 
-> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Basic Cell Type Demo_
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Basic Cell Type Demo
 
 ### Combo Box Cells
 
@@ -100,7 +100,7 @@ A combo box is a component with a drop-down arrow that users click to display an
 
 This cell type allows you to choose the cell value from a drop-down list. You can customize this list in many ways by setting the appropriate GridStyleInfo property. Some interesting options are Autocomplete, associate a string collection, associate LINQ source etc. You can also use this drop-down like a foreign key– for example, displaying one column in the drop-down while saving the cell value from another column in the data source.
 
-> _Note: A foreign key is a field in a relational table that matches the primary key column of another table. The foreign key can be used to cross-reference tables._
+> Note: A foreign key is a field in a relational table that matches the primary key column of another table. The foreign key can be used to cross-reference tables.
 
 The table below lists various properties that can affect combo box cells.
 
@@ -108,9 +108,9 @@ _GridStyleInfo Property_
 
 <table>
 <tr>
-<td>
-GridStyleInfo Property</td><td>
-Description</td></tr>
+<th>
+GridStyleInfo Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 CellType</td><td>
@@ -140,24 +140,20 @@ String that names the public property from the data source object to be used as 
 
 Before we proceed further the following note provides more information on the drop-down styles:
 
-> _Note:_
-
-* _Editable-Editable combo boxes combine an editable text field and provide users the additional option of typing an item that might or might not be on the list. The item to be typed in the text field need not be case-sensitive._
-* _Autocomplete-Autocomplete combo boxes predict a word or phrase that the user wants to type in the associated text box without the user actually typing it completely._
-* _Exclusive-This is a non-editable combo box where user is allowed to select only the options available from the drop-down list._
+> Note:* Editable-Editable combo boxes combine an editable text field and provide users the additional option of typing an item that might or might not be on the list. The item to be typed in the text field need not be case-sensitive. * _Autocomplete-Autocomplete combo boxes predict a word or phrase that the user wants to type in the associated text box without the user actually typing it completely. * Exclusive-This is a non-editable combo box where user is allowed to select only the options available from the drop-down list.
 
 Combo-boxes can be added to the Grid in two different ways as follows:
 
 1. Using ChoiceList
 2. Using ItemsSource
 
-Using ChoiceList
+#### Using ChoiceList
 
 Let us see how to build different kinds of combo boxes using ChoiceList. This allows you to customize the options to be displayed in a drop-down.
 
 Setting Up an Editable Combo Box 
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -187,16 +183,16 @@ combo1.ChoiceList = list;
 
 combo1.DropDownStyle = GridDropDownStyle.Editable;
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img2.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img2.jpeg)
+
 
 
 _Editable Combo Box using ChoiceList_
@@ -205,7 +201,7 @@ An Editable Combo Box in a Grid is created
 
 Setting Up Autocomplete Combo Box 
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -222,15 +218,16 @@ combo2.ChoiceList = list;
 combo2.DropDownStyle = GridDropDownStyle.AutoComplete;
 
 
+{% endhighlight %}
 
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img3.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img3.jpeg)
+
 
 
 _Autocomplete Combo box using  ChoiceList_
@@ -239,7 +236,7 @@ An Autocomplete Combo Box in a Grid is created
 
 Setting Up Exclusive Combo Box 
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -255,29 +252,29 @@ combo3.ChoiceList = list;
 
 combo3.DropDownStyle = GridDropDownStyle.Exclusive;
 
+{% endhighlight %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img4.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img4.jpeg)
+
 
 
 _Exclusive Combo box using ChoiceList_
 
 An Exclusive Combo Box in a Grid is created.
 
-Using ItemsSource
+#### Using ItemsSource
 
 The combo boxes created using ItemsSource class ensure that the options available in the drop-down list are populated from the data source the combo box is bound to. The user cannot customize the list unlike combo boxes created using ChoiceList class. The combo boxes in the following examples are bound to Northwind Employee table. The values of the FirstName column form the ItemsSource. The FirstName column is used as the display member of the combo box whose value member is EmployeeID.
 
 Setting up editable combo box
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -293,16 +290,16 @@ combo1.ItemsSource = northWind.Employees.Select(emp => emp.FirstName).ToList();
 
 combo1.DropDownStyle = GridDropDownStyle.Editable;
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img5.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img5.jpeg)
+
 
 
 _Editable Combo box using ItemsSource_
@@ -312,7 +309,7 @@ An editable Combo Box in a Grid is created.
 Setting Up an Autocomplete Combo Box
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -331,16 +328,16 @@ combo2.DisplayMember = "FirstName";
 
 combo2.ValueMember = "EmployeeID";
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img6.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img6.jpeg)
+
 
 
 _Autocomplete Combo box using ItemsSource_
@@ -350,7 +347,7 @@ An Autocomplete Combo Box in a Grid is created
 Setting Up an Exclusive Combo Box
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -365,25 +362,25 @@ combo3.ItemsSource = northWind.Employees.Select(emp => emp.FirstName).ToList();
 
 combo3.DropDownStyle = GridDropDownStyle.Exclusive;
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img7.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img7.jpeg)
+
 
 
 _Exclusive Combo box using ItemsSource_
 
 An Exclusive Combo Box in a Grid is created.
 
-> _Note: For complete code, please refer to the following browser sample._
+> Note: For complete code, please refer to the following browser sample.
 
-> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo_
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo
 
 ### Drop-down List Cells
 
@@ -393,7 +390,7 @@ The code snippets below allow the user to construct different List Control Cells
 
 Creating Editable Drop-down List Bound to Linq Source with ‘FirstName’ as its Display Member.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -423,16 +420,16 @@ dropdown1.DisplayMember = "FirstName";
 
 dropdown1.DropDownStyle = GridDropDownStyle.Editable;
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img8.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img8.jpeg)
+
 
 
 _Editable Drop-down List Control_
@@ -442,7 +439,7 @@ An Editable drop-down list is created.
 Autocomplete Drop-down List Bound to Linq source with ‘FirstName’ as its Display Member and ‘EmployeeID’ as its ValueMember.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -473,16 +470,16 @@ dropdown2.ValueMember = "EmployeeID";
 
 dropdown2.DropDownStyle = GridDropDownStyle.AutoComplete;
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img9.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img9.jpeg)
+
 
 
 _Autocomplete Drop-down List Control_
@@ -490,7 +487,7 @@ _Autocomplete Drop-down List Control_
 Exclusive Drop-down List Bound to Linq Source with FirstName as its DisplayMember.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -519,23 +516,23 @@ dropdown3.DisplayMember = "FirstName";
 
 dropdown3.DropDownStyle = GridDropDownStyle.Exclusive;
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img10.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img10.jpeg)
+
 
 
 _Exclusive Drop-down List Control_
 
-> _Note: For complete code, please refer to the following browser sample._
+> Note: For complete code, please refer to the following browser sample.
 
-> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo_
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo
 
 
 
@@ -547,9 +544,9 @@ _Currency Cells_
 
 <table>
 <tr>
-<td>
-GridStyleInfo Property</td><td>
-Description</td></tr>
+<th>
+GridStyleInfo Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cell Type</td><td>
@@ -584,7 +581,7 @@ Number of digits in each group to the left of the decimal.</td></tr>
 Creating a Currency Cell with a Negative Currency Value with ‘.’ as the Decimal Separator. 
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -616,22 +613,23 @@ grid.Model[6, 2].NumberFormat.CurrencyGroupSizes = sizes;
 grid.Model[6, 2].CellValue = -4.0;
 
 
+{% endhighlight  %}
 
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img11.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img11.jpeg)
+
 
 
 _Currency Cell_
 
 Currency Cell with a Negative Currency Value and a Different Negative Pattern
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -664,15 +662,16 @@ grid.Model[10, 2].NumberFormat.CurrencyGroupSizes = sizes;
 grid.Model[10, 2].CellValue = -14.0;
 
 
+{% endhighlight %}
 
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img12.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img12.jpeg)
+
 
 
 _Currency Cell_
@@ -680,7 +679,7 @@ _Currency Cell_
 Currency Cell with a Positive Currency Value with ‘.’ as the Decimal Separator and ‘$’ as Currency Symbol
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -712,22 +711,23 @@ grid.Model[14, 2].NumberFormat.CurrencyGroupSizes = sizes;
 grid.Model[14, 2].CellValue = 36.0;
 
 
+{% endhighlight  %}
 
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img13.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img13.jpeg)
+
 
 
 _Currency Cell with a Positive Value_
 
-> _Note: For complete code, please refer to the following browser sample._
+> Note: For complete code, please refer to the following browser sample.
 
-> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Currency Cell Demo_
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Currency Cell Demo
 
 ### Date Time Cells
 
@@ -737,9 +737,9 @@ _GridStyleInfo Property_
 
 <table>
 <tr>
-<td>
-GridStyleInfo Property</td><td>
-Description</td></tr>
+<th>
+GridStyleInfo Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 CellType</td><td>
@@ -771,9 +771,9 @@ _Date and Time Pattern_
 
 <table>
 <tr>
-<td>
-Date and Time Pattern</td><td>
-Example</td></tr>
+<th>
+Date and Time Pattern</th><th>
+Example</th></tr>
 <tr>
 <td>
 Short Date</td><td>
@@ -820,7 +820,7 @@ Year Month</td><td>
 Setting Date and Time Cells with Different Date Time Patterns.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -856,22 +856,23 @@ grid.Model[11, 1].DateTimeEdit.DateTimePattern = DateTimePattern.YearMonth;
 grid.Model[11, 1].CellValue = DateTime.Now;
 
 
+{% endhighlight  %}
 
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img14.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img14.jpeg)
+
 
 
 _DateTime Cell_
 
-> _Note: For complete code, please refer to the following browser sample._
+> Note: For complete code, please refer to the following browser sample.
 
-> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Date Time Cell Demo_
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Date Time Cell Demo
 
 ### Double Edit Cells
 
@@ -881,9 +882,9 @@ _GridStyleInfo Property_
 
 <table>
 <tr>
-<td>
-GridStyleInfo Property</td><td>
-Description</td></tr>
+<th>
+GridStyleInfo Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cell Type</td><td>
@@ -903,12 +904,12 @@ Number of decimal places</td></tr>
 </table>
 
 
-Example
+#### Example
 
 Setting up four Double Edit cells using different group separators and decimal digits.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -993,23 +994,23 @@ grid.Model[12, 2].NumberFormat.NumberGroupSizes = sizes;
 
 grid.Model[12, 2].CellValue = 12345678.00;.00;
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img15.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img15.jpeg)
+
 
 
 _Double Edit Cell_
 
-> _Note: For complete code, please refer to the following browser sample._
+> Note: For complete code, please refer to the following browser sample.
 
-> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Double Edit Cell Demo_
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Double Edit Cell Demo
 
 
 
@@ -1021,9 +1022,9 @@ _GridStyleInfo Property_
 
 <table>
 <tr>
-<td>
-GridStyleInfo Property</td><td>
-Description</td></tr>
+<th>
+GridStyleInfo Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cell Type</td><td>
@@ -1039,12 +1040,12 @@ Number of digits in each group</td></tr>
 </table>
 
 
-Example
+#### Example
 
 Setting up Three Different Integer Edit Cells. 
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1085,34 +1086,34 @@ grid.Model[10, 2].NumberFormat.NumberGroupSizes = sizes;
 
 grid.Model[10, 2].CellValue = 1000;
 
+{% endhighlight %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img16.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img16.jpeg)
+
 
 
 _Integer Edit_
 
-> _Note: For complete code, please refer to the following browser sample._
+> Note: For complete code, please refer to the following browser sample.
 
-> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Interger Edit Cell Demo_
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Interger Edit Cell Demo
 
 ### Mask Edit Cells
 
 MaskEdit cell type allows you to create specially formatted text cells that confirm to an edit mask that you specify. The Style.MaskEdit.Mask property holds the mask string, which will control the format of the input text being entered. The Mask Edit cells are useful when the user wants to display some formatted text such as Social Security Number (SSN), telephone number etc.
 
-Example
+#### Example
 
 Setting up Mask Edit cells with different mask string.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1151,23 +1152,23 @@ maskStyleInfo2.MaskEdit.Mask = "00/00/0000";
 
 maskStyleInfo2.CellValue = "12012007";";
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img17.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img17.jpeg)
+
 
 
 _Mask Edit Cell_
 
-> _Note: For complete code, please refer to the following browser sample._
+> Note: For complete code, please refer to the following browser sample.
 
-> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Mask Edit Cell Demo_
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Mask Edit Cell Demo
 
 ### Percent Edit Cells
 
@@ -1177,9 +1178,9 @@ _GridStyleInfo Property_
 
 <table>
 <tr>
-<td>
-GridStyleInfo Property</td><td>
-Description</td></tr>
+<th>
+GridStyleInfo Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cell Type</td><td>
@@ -1207,7 +1208,7 @@ Number of digits that appear after the decimal.</td></tr>
 </table>
 
 
-Example
+#### Example
 
 Setting up two Percent Edit cells with different group sizes and decimal digits. 
 
@@ -1216,7 +1217,7 @@ The first cell operates in Percent mode of editing while the second cell follows
 Double mode displays the values in System.Double format and Percent mode adds a percent sign next to the numbers. 
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1273,23 +1274,23 @@ percentStyleInfo2.PercentEditMode = PercentEditMode.DoubleMode;
 
 percentStyleInfo2.CellValue = 91;
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img18.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img18.jpeg)
+
 
 
 _Percent Edit Cell_
 
-> _Note: For complete code, please refer to the following browser sample._
+> Note: For complete code, please refer to the following browser sample.
 
-_...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Percent Edit Cell Demo_
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Percent Edit Cell Demo
 
 ### RichTextBox CellType
 
@@ -1298,7 +1299,7 @@ RichTextBox CellType is used to format the cells, where each character, word or 
 RichTextBox CellType can be defined in the Grid using the following code snippet:
 
 
-
+{% highlight c# %}
  //Cell type as RichText and Cell Value as FlowDocument
 
  this.grid.Model[rowIndex, colIndex].CellType = "RichText";
@@ -1371,12 +1372,12 @@ The Cell Value for RichTextBox must be in FlowDocument as shown below.
 
               this.grid.Model[rowIndex, colIndex].CellValue = _flowDocument;
 
+{% endhighlight  %}
 
 
 
+![C:/Users/kamalakannana/Desktop/IMG_03082011_073458.png](Cell-Types_images/Cell-Types_img19.png)
 
-{{ '![C:/Users/kamalakannana/Desktop/IMG_03082011_073458.png](Cell-Types_images/Cell-Types_img19.png)' | markdownify }}
-{:.image }
 
 
 _RichTextBox CellType_
@@ -1389,9 +1390,9 @@ _GridStyleInfo Property_
 
 <table>
 <tr>
-<td>
-GridStyleInfo Property</td><td>
-Description</td></tr>
+<th>
+GridStyleInfo Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cell Type</td><td>
@@ -1431,11 +1432,11 @@ Background brush; applied only when the cell is in focus</td></tr>
 </table>
 
 
-Example
+#### Example
 
 The code below sets up two different Up and Down controls in grid cells.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1479,41 +1480,41 @@ updownStyleInfo1.UpDownEdit.MinValue = 0;
 
 updownStyleInfo1.CellValue = 10.000;
 
+{% endhighlight %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img20.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img20.jpeg)
+
 
 
 _Up Down Edit_
 
-> _Note: For complete code, please refer to the following browser sample._
+> Note: For complete code, please refer to the following browser sample.
 
-_...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\UpDown Cell Demo_
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\UpDown Cell Demo
 
 ### Nested Grid Cells 
 
 Nested grids are an important component of the basic architecture of Essential Grid. They provide for the easy display of complex user interfaces using a flat grid. They also form the underpinnings for the display of hierarchical and grouped data. You can nest grids inside a row, column or covered range. When you nest a grid inside a covered range you can specify whether the rows or columns derive their state from the parent control. You have multiple independent options for both rows and columns.
 
-API definition
+#### API definition
 
 GridCellNestedGridModel is the class to be used as model class for this cell type. Its constructor accepts two objects of type GridNestedAxisLayout enum, where the first parameter corresponds to row and second parameter corresponds to grid column. This  enum value determines whether to share the row layout or column layout or the rows and columns are independent of parent grid.
 
-Nested Grid inside a Row of Parent Grid
+#### Nested Grid inside a Row of Parent Grid
 
 In this case, the grid will maintain its own row heights. When you resize rows the grid will also notify the parent grid that its total height is changed. While scrolling you can scroll row by row through the nested grid. The nested grid will have no separate scrollbars. They are shared with the parent grid.
 
-Example
+#### Example
 
 The code below implements a nested scroll grid. The GridCellNestedScrollGridModel is the model class to be used.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1571,7 +1572,7 @@ for (int n = 0; n < nestedGrid.RowCount; n++)
 
 }
 
-
+{% endhighlight  %}
 
 Model[40, 2].CellValue = nestedGrid;
 
@@ -1579,14 +1580,14 @@ CoveredCells.Add(new CoveredCellInfo(40, 2, 49, 5));
 
 
 
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img21.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img21.jpeg)
+
 
 
 _Nested Grid_
@@ -1597,14 +1598,14 @@ Nested Grid Inside a Covered Range with its Rows Tied to the Rows of the Parent 
 
 In this case, the grid will have its own unique column widths but the row heights are shared with the parent grid. When scrolling through rows in the nested grid you also scroll the rows in the parent grid to keep them in sync. The nested grid will have no separate scrollbars. They are shared with the parent grid. When you resize rows they will also be resized in the parent grid and vice versa.
 
- Example
+#### Example
 
 The codes below show a grid whose cell contains a nested grid, which again contains a nested grid in its cell, and this second nested grid again contains a nested grid in its cell and thus forming four grids nested within one another.
 
 To specify shared row layout, use Shared option of GridNestedAxisLayout enum in the first parameter.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -2034,17 +2035,17 @@ model.SelectedCells = GridRangeInfo.Empty;
 return model;
 
 }
+{% endhighlight  %}
 
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img22.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img22.jpeg)
+
 
 
 _Nested Grid-Rows tied to the Parent Grid Rows_
@@ -2053,12 +2054,12 @@ Nested Grid Inside a Covered Range with its Columns Tied to the Columns of the P
 
 In this case the grid will have its own unique row height but the column widths are shared with the parent grid. When scrolling through columns in the nested grid you also scroll the columns in the parent grid to keep them in sync. The nested grid will have no scrollbars. They are shared with the parent grid. When you resize columns they will also be resized in parent grid and vice versa.
 
-Example
+#### Example
 
 To specify shared column layout, use Shared option of GridNestedAxisLayout enum in the second parameter.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -2232,15 +2233,16 @@ private GridModel GetNestedGridWithSharedColumnsModel()
 }
 
 
+{% endhighlight  %}
 
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img23.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img23.jpeg)
+
 
 
 _Nested Grid-Columns tied to the Parent Grid Columns_
@@ -2249,12 +2251,12 @@ Nested Grid Inside a Covered Range with its Rows and Columns Independent of Pare
 
 In this case, the nested grid maintains its own row heights and column widths. You can scroll through this grid without scrolling the parent grid. Resizing rows and columns in this grid will also not affect the parent grid.
 
-Example
+#### Example
 
 To make rows and columns independent of parent grid, the GridNestedAxisLayout enum must be set to Normal in both the parameters.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -2327,27 +2329,27 @@ for (int n = 0; n < model.RowCount; n++)
 
 }
 
-
+{% endhighlight  %}
 
 Model[6, 2].CellValue = model;
 
 
 
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img24.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img24.jpeg)
+
 
 
 _Nested Grid-Rows and Columns Independent of Parent Grid_
 
-> _Note: For complete code, please refer to the following browser sample._
+> Note: For complete code, please refer to the following browser sample.
 
-> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Nested Grid Demo_
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Nested Grid Demo
 
 ## Formula Cells
 
@@ -2362,7 +2364,7 @@ You can use FormulaCells for every cell in a grid or for just a few cells. Even 
 To make all cells present in a grid as potential formula cells, you will have to set the CellType of the standard BaseStyle to a FormulaCell using the following code. 
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -2371,8 +2373,8 @@ To make all cells present in a grid as potential formula cells, you will have to
 
 this.gridControl1.BaseStylesMap["Standard"].StyleInfo.CellType = "FormulaCell";
 
-
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -2381,7 +2383,7 @@ this.gridControl1.BaseStylesMap["Standard"].StyleInfo.CellType = "FormulaCell";
 
 Me.GridControl1.BaseStylesMap("Standard"). StyleInfo.CellType = "FormulaCell"
 
-
+{% endhighlight  %}
 
 ### Using the Formula Library
 
@@ -2389,8 +2391,8 @@ Essential Grid's Formula Library contains the mathematical functions that are av
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img25.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img25.jpeg)
+
 
 
 _Sample Formula Library Usage_
@@ -2405,10 +2407,10 @@ _Code Tables_
 
 <table>
 <tr>
-<td>
-Operations</td><td>
-Symbols</td><td>
-Calculation Precedence</td></tr>
+<th>
+Operations</th><th>
+Symbols</th><th>
+Calculation Precedence</th></tr>
 <tr>
 <td>
 Multiplication, Division </td><td>
@@ -2433,9 +2435,9 @@ _Operand_
 
 <table>
 <tr>
-<td>
-Operand</td><td>
-Examples</td></tr>
+<th>
+Operand</th><th>
+Examples</th></tr>
 <tr>
 <td>
 number</td><td>
@@ -2464,7 +2466,7 @@ Here are the steps that are required to add a function to the Function Library.
 1. First, define a method that has this signature.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -2473,8 +2475,8 @@ Here are the steps that are required to add a function to the Function Library.
 
 public string MyLibraryFormulaName(string args)
 
-
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -2483,13 +2485,13 @@ public string MyLibraryFormulaName(string args)
 
 Public Function MyLibraryFormulaName(ByVal args As String) As String
 
-
+{% endhighlight  %}
 
 Here MyLibraryFormulaName must be a name that has not been already used in the Function Library and must include only letters and digits. If you want to replace an existing formula with a formula of the same name, first remove the existing formula before adding the new formula. Use the GridFormulaEngine.RemoveFunction method to remove a formula. 
 
 Then, write an implementation for your method. Here we use code to implement a function that will sum only positive numbers that are passed in as either a range like A1:A5 and/or a list such as A1, A4, A10. The code uses the FormulaEngine helper method to extract these values from the cells. The GetCellsFromArgs method will return an array of cells from a range such as A1:A5, and GetValueFromArg method will take cells such as A3 and return a value such as 123.3. 
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -2625,8 +2627,8 @@ public string ComputeSumPosNums(string args)
 
 }
 
-
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -2735,11 +2737,11 @@ Public Function ComputeSumPosNums(args As String) As String
 
 End Function 
 
-
+{% endhighlight  %}
 
 The last step is to actually add your formula to the library. You should do this after the grid has been created, say in a Form.Load event handler.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -2754,7 +2756,8 @@ GridFormulaCellModel cellModel = this.gridControl1.CellModels["FormulaCell"] as 
 cellModel.Engine.AddFunction("SumPosNums", new GridFormulaEngine.LibraryFunction(ComputeSumPosNums));
 
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -2766,12 +2769,13 @@ Dim cellModel As GridFormulaCellModel = Me.gridControl1.CellModels("FormulaCell"
 ' Add a formula named SumPosNums to the Library.
 
 cellModel.Engine.AddFunction("SumPosNums", New GridFormulaEngine.LibraryFunction(AddressOf ComputeSumPosNums))
+{% endhighlight  %}
 
 ### Function Reference Section
 
 The Syncfusion Grid control supports 370 formulas under various categories including math, statistical, logical, engineering, information, date, time, text, web, financial, lookup, and database functions.
 
-#### Math & Trigonometry functions
+### Math & Trigonometry functions
 
 _Math and trigonometry functions_
 
@@ -3143,6 +3147,7 @@ VAR</td></tr>
 111</td><td>
 VARP</td></tr>
 </table>
+
 The function_num 1-11 includes hidden cell values, and the 101-111 ignores the hidden values.
 
 Ref1: NamedRange or References
@@ -3206,7 +3211,8 @@ TRUNCATE</td><td>
 Truncates a number to an integer by removing the fractional part of the number.</td><td>
 TRUNCATE(number, [num_digits])</td></tr>
 </table>
-#### Statistical functions
+
+### Statistical functions
 
 _Statistical functions_
 
@@ -3772,6 +3778,7 @@ ZTEST</td><td>
 This function has been replaced with the Z.TEST function.This is available for compatibility with older versions.</td><td>
 ZTEST(array,x,[sigma])</td></tr>
 </table>
+
 #### Logical functions
 
 _Logical functions_
@@ -3818,7 +3825,8 @@ TRUE</td><td>
 Returns the logical value TRUE.</td><td>
 TRUE()</td></tr>
 </table>
-#### Engineering functions
+
+### Engineering functions
 
 _Engineering functions_
 
@@ -4091,7 +4099,7 @@ OCT2HEX(number, [places])Number: The octal number you want to convert.Places: Th
 </table>
 
 
-#### Information functions
+### Information functions
 
 _Information functions_
 
@@ -4500,7 +4508,7 @@ European 30/360</td></tr>
 </table>
 
 
-#### Financial functions
+### Financial functions
 
 _Financial functions_
 
@@ -4751,7 +4759,7 @@ XIRR(values, dates, [guess])Values: A series of cash flows that corresponds to a
 </table>
 
 
-#### Lookup & Reference functions
+### Lookup & Reference functions
 
 _Lookup and Reference functions_
 
@@ -4805,15 +4813,15 @@ Behavior</td></tr>
 <tr>
 <td>
 1 or omitted</td><td>
-MATCH finds the largest value that is less than or equal to {{ '_lookup_value_' | markdownify }}. </td></tr>
+MATCH finds the largest value that is less than or equal to {{ '_lookup_value_'| markdownify}} </td></tr>
 <tr>
 <td>
 0</td><td>
-MATCH finds the first value that is exactly equal to {{ '_lookup_value_' | markdownify }}. </td></tr>
+MATCH finds the first value that is exactly equal to {{ '_lookup_value_'| markdownify}} </td></tr>
 <tr>
 <td>
 -1</td><td>
-MATCH finds the smallest value that is greater than or equal to{{ ' '_lookup_value_' | markdownify }}. </td></tr>
+MATCH finds the smallest value that is greater than or equal to{{' _lookup_value_'| markdownify}} </td></tr>
 </table>
 
 
@@ -4856,7 +4864,7 @@ VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])lookup_value: T
 </table>
 
 
-#### Text functions
+### Text functions
 
 _Text functions_
 
@@ -5007,7 +5015,8 @@ VALUE</td><td>
 Converts a text string that represents a number to a number.</td><td>
 VALUE(text)Text: The text enclosed in quotation marks or a reference to a cell containing the text you want to convert.</td></tr>
 </table>
-#### Database functions
+
+### Database functions
 
 _Database functions_
 
@@ -5075,7 +5084,7 @@ DVARP(database, field, criteria)Database: The range of cells that makes up the l
 </table>
 
 
-#### Web functions
+### Web functions
 
 _Web functions_
 
@@ -5101,6 +5110,7 @@ WEBSERVICE</td><td>
 Returns data from a web service on the Internet or Intranet.</td><td>
 WEBSERVICE(url)Url: The URL of the web service.</td></tr>
 </table>
+
 ## Custom Cell Types
 
 Essential Grid allows you to create custom derived controls to use additional cell types. This requires a cellmodel class and a cellrenderer class. The cellmodel class creates the actual cell control while the cellrenderer class handles the UI requirements of the cell control. The custom cell type can be created by  registering the cellmodel to the corresponding grid by naming this cell type. It can be enabled by assigning its name to the style.CellType property.
@@ -5113,13 +5123,13 @@ Examples of custom cell types are discussed in later sections.
 
 This cell displays customized drop-downs in grid cells. To attach a drop-down to a grid cell, you need to derive from GridCellDropDownCellModel and GridCellDropDownCellRenderer classes.
 
-Example
+#### Example
 
 For example, let us create a custom drop-down which lists an image alongside text in each entry and sets the text of the current drop-down selection as the cell value. The cellmodel class just creates the cell type by calling the cellrenderer. The cellrenderer then loads the cell with ImageTextListBoxItem (a custom control having two properties, Image and Text) to show image alongside text. The renderer then overrides the ArrangeUIElement method in order to bind the drop down to the data source, which is a collection of ImageTextListBoxItem and sets its current selection based on current cell value. It triggers the ComboBoxSelectionChanged event to set the new cell value based on the current drop-down selection. 
 
-CellModel class
+#### CellModel class
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -5131,12 +5141,12 @@ public class CustomeDropDownCellModel : GridCellDropDownCellModel<CustomDropDown
 
 }
 
+{% endhighlight  %}
+
+#### CellRenderer Class
 
 
-CellRenderer Class
-
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -5261,11 +5271,11 @@ public class CustomDropDownRenderer : GridCellDropDownCellRenderer<CustomeDropDo
 
 }
 
+{% endhighlight %}
 
+#### Custom Drop-down control
 
-Custom Drop-down control
-
-
+{% highlight c# %}
 
 [C#]
 
@@ -5332,11 +5342,12 @@ public class CustomeDropDown : GridCellDropDownControlBase
 }
 
 
+{% endhighlight  %}
 
-Associate this Cell Type to the Grid
+#### Associate this Cell Type to the Grid
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -5359,23 +5370,23 @@ dropdown1.DisplayMember = "Text";
 
 dropdown1.DropDownStyle = GridDropDownStyle.Editable;
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img26.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img26.jpeg)
+
 
 
 _Custom Drop-down_
 
-> _Note: For complete code, please refer to the following browser sample._
+> Note: For complete code, please refer to the following browser sample.
 
-> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Custom Drop Down Demo_
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Custom Drop Down Demo
 
 
 
@@ -5383,15 +5394,15 @@ _Custom Drop-down_
 
 This cell builds a custom data template that can be used to set enriched styles for associated cells. The DataTemplateCellModel creates the cell type with a Content Control (a WPF control) by calling the renderer. 
 
-> _Note: To create a cell type that hosts a WPF control, you should derive it from GridVirtualizingCellRenderer. The most important method to override is the OnInitializeContent method. It will be called for every UI element created for cells displaying this renderer. You can get access to the cell style from this method._
+> Note: To create a cell type that hosts a WPF control, you should derive it from GridVirtualizingCellRenderer. The most important method to override is the OnInitializeContent method. It will be called for every UI element created for cells displaying this renderer. You can get access to the cell style from this method.
 
 The DataTemplateCellRenderer is derived from GridVirtualizingCellRenderer and overrides OnInitializeContent and sets the Content Control template to Style.CellTemplate value.
 
-Example
+#### Example
 
-CellModel Class
+#### CellModel Class
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -5403,12 +5414,12 @@ public class DataTemplateCellModel : GridCellModel<DataTemplateCellRenderer>
 
 }
 
+{% endhighlight  %}
+
+#### CellRenderer Class
 
 
-CellRenderer Class
-
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -5477,12 +5488,12 @@ public class DataTemplateCellRenderer : GridVirtualizingCellRenderer<ContentCont
 
 }
 
+{% endhighlight %}
+
+#### Data Template Definition
 
 
-Data Template Definition
-
-
-
+{% highlight html %}
 [XAML]
 
 
@@ -5499,11 +5510,11 @@ Data Template Definition
 
         </DataTemplate>
 
+{% endhighlight  %}
 
+#### Setting up the Data Template Cell and assigning the Cell Template
 
-Setting up the Data Template Cell and assigning the Cell Template
-
-
+{% highlight c# %}
 
 [C#]
 
@@ -5537,35 +5548,35 @@ void Model_QueryCellInfo(object sender, Syncfusion.Windows.Controls.Grid.GridQue
 
 }
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Cell-Types_images/Cell-Types_img27.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img27.jpeg)
+
 
 
 _Data Template with Cell Template Assigned_
 
-> _Note: For complete code, please refer to the following browser sample._
+> Note: For complete code, please refer to the following browser sample.
 
-> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Data Template Cell Demo_
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Data Template Cell Demo
 
 ### Rich Text Box Cells
 
 The Rich Text control will allow you to display and edit rich text in grid cells. The control will allow you to modify the rich text through in-place editing.
 
-Example
+#### Example
 
 It can be built by hosting the Rich Text Box control in grid cells. To host this control, the cellrenderer must be derived from GridVirtualizingCellRenderer, whose OnIntializeContent should be overridden to provide the content (as Flow Document) for the rich text box. 
 
-CellModel class
+#### CellModel class
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -5577,12 +5588,12 @@ public class RichTextBoxCellModel : GridCellModel<RichTextBoxCellRenderer>
 
 }
 
+{% endhighlight  %}
+
+#### CellRenderer class
 
 
-CellRenderer class
-
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -5686,9 +5697,10 @@ public class RichTextBoxCellRenderer : GridVirtualizingCellRenderer<RichTextBox>
 }
 
 
+{% endhighlight  %}
 
-Setting up Rich Text Box Cell
-
+#### Setting up Rich Text Box Cell
+{% highlight c# %}
 [C#]
 
 
@@ -5786,13 +5798,14 @@ grid.Model[10, 2].CellValue = myFlowDocument;
 }
 
 
+{% endhighlight %}
 
-Output
+#### Output
 
 The following output is generated using the code above.
 
-{{ '![](Cell-Types_images/Cell-Types_img28.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img28.jpeg)
+
 
 
 _Rich Text Box Cell_
@@ -5801,12 +5814,12 @@ _Rich Text Box Cell_
 
 Grid provides inherent support to host chart controls. This is achieved by using Data Template cells. 
 
-Example
+#### Example
 
 1. Define the Data Template that creates a chart. The template below illustrates the creation of a chart control with a single series and defines its attributes. 
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -5887,12 +5900,12 @@ Example
 
         </DataTemplate >
 
-
+{% endhighlight  %}
 
 Here is the data source definition that is used to define the chart series.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -5944,13 +5957,13 @@ public class MyDataCollection : ObservableCollection<MyData>
     }
 
 }
-
+{% endhighlight  %}
 
 
 2. Bind the above template to the grid cell to form a chart cell.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -5963,14 +5976,14 @@ cell.CellTemplateKey = "DataChart";
 
 grid.Model.RowHeights[2] = 400d;
 
+{% endhighlight  %}
 
-
-Output
+#### Output
 
 The following output is generated using the code above.
 
-{{ '![](Cell-Types_images/Cell-Types_img29.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img29.jpeg)
+
 
 
 _Chart Cell_
@@ -5984,12 +5997,12 @@ Grid provides inherent support to add images into grid cells. There are two poss
 
 
 
-> _Note: If you use both Image and ImageList properties, then the most recent property applied will be considered._
+> Note: If you use both Image and ImageList properties, then the most recent property applied will be considered.
 
 The following code example illustrates how to use these properties.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -6046,12 +6059,12 @@ grid.Model[2, 2].Text = "Software";
 
 grid.Model[2, 2].ImageIndex = 1;
 
-
+{% endhighlight %}
 
 The following output is generated using the code above.
 
-{{ '![](Cell-Types_images/Cell-Types_img30.jpeg)' | markdownify }}
-{:.image }
+![](Cell-Types_images/Cell-Types_img30.jpeg)
+
 
 
 _Text Image Cell_

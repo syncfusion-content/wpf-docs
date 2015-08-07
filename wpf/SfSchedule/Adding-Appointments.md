@@ -19,7 +19,7 @@ There are two ways you can add appointments to the Schedule control: They are:
 ## Using Appointments Property
 
 You can add appointments directly to the Schedule control, by using the following code. 
-
+{% highlight c# %}
 [C#]
 
 
@@ -30,10 +30,10 @@ schedule.ScheduleType = ScheduleType.Week;
 
 schedule.Appointments.Add(new ScheduleAppointment() { StartTime= new DateTime(2013,6,5,5,0,0), EndTime= new DateTime(2013,6,5,5,30,0), Subject="Meet the doc", Location="Hutchison road", AllDay=false });
 
+{% endhighlight  %}
 
+![](Adding-Appointments_images/Adding-Appointments_img1.png)
 
-{{ '![](Adding-Appointments_images/Adding-Appointments_img1.png)' | markdownify }}
-{:.image }
 
 
 ## Using Data Binding Technique
@@ -50,7 +50,7 @@ Schedule supports full data binding to any type of IEnumerable source. Specify t
 
 
 Add appointments by using the ItemsSource property.  
-
+{% highlight html %}
 [XAML]
 
 
@@ -90,7 +90,8 @@ Add appointments by using the ItemsSource property.
 </Window>
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 
 [C#]
@@ -141,10 +142,10 @@ Add appointments by using the ItemsSource property.
 
     }
 
+{% endhighlight  %}
 
+![](Adding-Appointments_images/Adding-Appointments_img2.png)
 
-{{ '![](Adding-Appointments_images/Adding-Appointments_img2.png)' | markdownify }}
-{:.image }
 
 
 

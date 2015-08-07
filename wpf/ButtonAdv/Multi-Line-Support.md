@@ -12,20 +12,18 @@ documentation: ug
 The label displayed on the button can be a line or two, when the property IsMultiLine is set to true. The default value is true.
 
 Multiline support can be enabled by using the following code:
-
+{% highlight html %}
 [XAML]
 
 <sync:ButtonAdv SizeMode="Large" IsMultiLine="False"/>
 
+{% endhighlight %}
+
+![1](Multi-Line-Support_images/Multi-Line-Support_img1.png)
 
 
-{{ '![1](Multi-Line-Support_images/Multi-Line-Support_img1.png)' | markdownify }}
-{:.image }
 
-
-> {{ '![Note](Multi-Line-Support_images/Multi-Line-Support_img2.png)' | markdownify }}
-{:.image }
-_Note: This property is applicable only for Large Size Mode Buttons._
+> Note: This property is applicable only for Large Size Mode Buttons.
 
 
 

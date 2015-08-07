@@ -14,6 +14,6 @@ Initially, we have seen how the appointments are rendered by binding the remote 
 The below image shows the appointment Editor that pops up while Clicking the Add option available in Context Menu.
 
 {{ '![](Appointments-Creation_images/Appointments-Creation_img1.png)' | markdownify }}
-{:.image }
+
 
 

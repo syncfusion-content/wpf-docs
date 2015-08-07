@@ -10,7 +10,7 @@ documentation: ug
 # Reminder
 
 Schedule reminds you the particular appointment in the specified time by setting the EnableReminderTimer property is true.The remainder time can be set using the ReminderTime property of ScheduleAppointment.
-
+{% highlight c# %}
 [C#]
 
 
@@ -70,11 +70,11 @@ Schedule reminds you the particular appointment in the specified time by setting
             this.grid.Children.Add(schedule);
 
 
+{% endhighlight %}
 
 
+![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_24.jpg](Reminder_images/Reminder_img1.jpeg)
 
-{{ '![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_24.jpg](Reminder_images/Reminder_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 

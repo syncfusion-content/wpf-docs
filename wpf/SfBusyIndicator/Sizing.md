@@ -9,15 +9,15 @@ documentation: ug
 
 # Sizing
 
-ViewBoxHeight
+## ViewBoxHeight
 
 The ViewBoxHeight property allows the user to set the height of the ViewBox.
 
-ViewBoxWidth
+## ViewBoxWidth
 
 ViewBoxWidth property allows the user to set the width of the ViewBox.
 
-{{ '![C:/Users/ApoorvahR/Desktop/4.png](Sizing_images/Sizing_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/4.png](Sizing_images/Sizing_img1.png)
+
 
 

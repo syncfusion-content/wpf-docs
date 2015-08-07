@@ -13,22 +13,19 @@ Up or down arrows in the DateTimeEdit control spin the selected parts (month, da
 
 
 
-<table>
-<tr>
-<td>
-XAML</td></tr>
-<tr>
-<td>
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10"                          IsScrollingOnCircle="True"/></td></tr>
-</table>
+{% highlight html %}
+XAML
+
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10"                          IsScrollingOnCircle="True"/>
 
 
+{% endhighlight %}
 After selecting any part in the DateTime value if you press the Up or Down arrows (or Scroll the Mouse Up or Down) then the selected value will automatically change.
 
 
 
-{{ '![](Keyboard-and-Mouse-support_images/Keyboard-and-Mouse-support_img1.png)' | markdownify }}
-{:.image }
+![](Keyboard-and-Mouse-support_images/Keyboard-and-Mouse-support_img1.png)
+
 
 
 See Also

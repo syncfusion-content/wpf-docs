@@ -7,10 +7,10 @@ control: SfBarcode
 documentation: ug
 ---
 
-## Symbology Settings
+# Symbology Settings
 
 Each Barcode symbol can be associated with optional settings that may affect that specific bar code. The code sample below shows the settings of a code39 Barcode.
-
+{% highlight html %}
 [XAML]
 
 <sync:SfBarcode.SymbologySettings>
@@ -19,12 +19,12 @@ Each Barcode symbol can be associated with optional settings that may affect tha
 
 </sync:SfBarcode.SymbologySettings>
 
+{% endhighlight  %}
 
-
-### 1D Barcode settings
+## 1D Barcode settings
 
 The one dimensional barcodes have some of the settings in common, such as BarHeight which modifies the height of the bars and NarrowBarWidth which modifies the width ratio of the wide and narrow bars.
-
+{% highlight html %}
 [XAML]
 
 <sync:SfBarcode.SymbologySettings>
@@ -34,11 +34,11 @@ The one dimensional barcodes have some of the settings in common, such as BarHei
 </sync:SfBarcode.SymbologySettings>
 
 
-
+{% endhighlight  %}
 The one dimensional barcodes also has the error detection settings. The EnableCheckDigit property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message. The check digit can be shown in the barcode or kept hidden by using the ShowCheckDigit property.
 
 The EncodeStartStopSymbols property adds Start and Stop symbols to signal a bar code reader that a bar code has been scanned.
-
+{% highlight html %}
 [XAML]
 
 <sync:SfBarcode.SymbologySettings>
@@ -47,16 +47,16 @@ The EncodeStartStopSymbols property adds Start and Stop symbols to signal a bar 
 
 </sync:SfBarcode.SymbologySettings>
 
+{% endhighlight %}
 
-
-### 2D Barcode Settings
+## 2D Barcode Settings
 
 The two dimensional barcodes have a common XDimension property which modifies the block size of a two dimensional barcode.
 
-DataMatrix Barcode settings
+### DataMatrix Barcode settings
 
 The DataMatrix barcode settings has the properties to modify the encoding and size of the DataMatrix barcode.
-
+{% highlight html %}
 [XAML]
 
 <sync:SfBarcode.SymbologySettings>
@@ -66,8 +66,9 @@ The DataMatrix barcode settings has the properties to modify the encoding and si
 </sync:SfBarcode.SymbologySettings>
 
 
+{% endhighlight  %}
 
-Encoding
+### Encoding
 
 The encoding of the DataMatrix barcode can be modified using the ‘Encoding’ property. The DataMatrixEncoding enumeration has the following four encoding schemes.
 
@@ -76,7 +77,7 @@ The encoding of the DataMatrix barcode can be modified using the ‘Encoding’ 
 * Auto
 * Base256
 
-Size
+### Size
 
 The DataMatrix Barcode settings allow the user to specify the size of the barcode from a set of predefined sizes available in the DataMatrixSize enumeration.
 
@@ -214,10 +215,10 @@ Rectangular matrix with 16 rows and 48 columns.</th></tr>
 </table>
 
 
-QRBarcode settings
+### QRBarcode settings
 
 The QRBarcode settings has properties to modify the version, error correction level and Input mode of the QRBarcode.
-
+{% highlight html %}
 [XAML]
 
 <sync:SfBarcode.SymbologySettings>
@@ -227,14 +228,14 @@ The QRBarcode settings has properties to modify the version, error correction le
 </sync:SfBarcode.SymbologySettings>
 
 
+{% endhighlight  %}
 
 
-
-Version
+## Version
 
 The QR Barcode uses version from 1 to 40.Version 1 measures 21 modules x 21 modules, Version 2 measures 25 modules x 25 modules and so on increasing in steps of 4 modules per side up to Version 40 which measures 177 modules x 177 modules. Each version has its own capacity.  By default the QR Version is Auto, which will automatically set the version according to the input text length.
 
-Error correction level
+## Error correction level
 
 The QR Barcode employs error correction to generate a series of error correction codewords which are added to the data code word sequence in order to enable the symbol to withstand damage without loss of data. There are four user–selectable levels of error correction, as shown in the table, offering the capability of recovery from the following amounts of damage. By default the Error correction level is Low.
 
@@ -262,7 +263,8 @@ Q</th><th>
 H</th><th>
 30</th></tr>
 </table>
-Input mode
+
+## Input mode
 
 There are three modes for the input as defined in the table. Each mode supports the specific set of Input characters. User may select the most suitable input mode. By default the Input mode is Binary Mode.
 

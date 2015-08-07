@@ -19,11 +19,11 @@ Essential Grid WPF provides an in-built support for Excel Importing. This featur
 * Improving Performance—Excel Importing feature supports the virtualization. By using this you can optimize the performance.
 * Run-time Features—Imports the comments from the excel worksheet to GridControl.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 This feature can be used to view the Excel workbook into applications with the same set of styles and to edit the data in run time. You can also view the Excel workbook into web application with the same set of styles and borders.
 
-Sample Link
+## Sample Link
 
 To view samples: 
 
@@ -36,7 +36,7 @@ To view samples:
 
 ## Tables for Properties, Methods, and Events
 
-Methods
+### Methods
 
 _Methods Table_
 
@@ -138,7 +138,8 @@ ConvertExcelRangeToVirtualGrid(GridStyleInfo cell,IWorksheet sheet,IRange excelR
 void</th><th>
 NA</th></tr>
 </table>
-Events
+
+### Events
 
 _Event Table_
 
@@ -158,6 +159,7 @@ ImportHandler(object sender, ImportingCellFromExcelEventArgs e)</th><th>
 NA</th><th>
 NA</th></tr>
 </table>
+
 ##  Adding Excel Importing to an Application 
 
 You can Import the entire Excel Spreadsheet to a GridControl. You can also import the Excel97to2003 and Excel2007to2010 formats
@@ -167,7 +169,7 @@ Importing the single sheet to a GridControl
 In order to import the single sheet to grid control, open the file and pass this file as stream to the ImportFromExcel method as illustrated in the following code snippet:
 
 
-
+{% highlight c# %}
 [C#]
 
 FileStream fileStream = new FileStream(@"..\..\Data\Sample.xlsx", FileMode.Open);
@@ -180,18 +182,18 @@ fileStream.Close();
 
 this.gridControl.Model.ImportFromExcel(new MemoryStream(file));
 
+{% endhighlight  %}
 
 
 
-
-Importing the entire workbook to a GridControl
+### Importing the entire workbook to a GridControl
 
 Open the workbook
 
 To import the entire workbook to a GridControl, initially you have to open the workbook by using the XLSIO library as shown in the following code snippet:
 
 
-
+{% highlight c# %}
 [C#]
 
 FileStream fileStream = new FileStream(@"..\..\Data\Sample.xlsx", FileMode.Open);
@@ -210,15 +212,15 @@ IWorkbook workbook = application.Workbooks.Open(new MemoryStream(file), ExcelOpe
 
 
 
+{% endhighlight  %}
 
-
-Import the workbook into GridModel
+### Import the workbook into GridModel
 
 After opening the workbook, you can import the workbook to GridModel by using the ImportFromExcel method. It will return the model collection; you can use it in your application. It will import all the styles, Conditional Formatting, Data Validation and book marks to model. While using this method it will take some time to import all the styles into models. 
 
 For importing the workbook you can use the following code snippet.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -226,16 +228,16 @@ GridModel[] modelCollection = GridModelImportExtensions.ImportFromExcel(workBook
 
 
 
+{% endhighlight  %}
 
-
-Importing the entire workbook to a virtual GridControl
+### Importing the entire workbook to a virtual GridControl
 
 Open the workbook
 
 To import the entire workbook to a virtual GridControl, initially you have to open the workbook by using the XLSIO library as shown in the following code snippet. 
 
 
-
+{% highlight c# %}
 [C#]
 
 FileStream fileStream = new FileStream(@"..\..\Data\Sample.xlsx", FileMode.Open);
@@ -253,29 +255,29 @@ IApplication application = excelEngine.Excel;
 IWorkbook workbook = application.Workbooks.Open(new MemoryStream(file), ExcelOpenType.Automatic);
 
 
+{% endhighlight  %}
 
 
-
-Import the layout into GridModel
+### Import the layout into GridModel
 
 After that you can import the workbook by using the ImportFromExcelToVirtualGrid method it will return the model collection. GridModel have only the layout styles, to import the other styles and data for cells you have to use the ConvertExcelRangeToVirtualGrid method.
 
 
-
+{% highlight c# %}
 [C#]
 
 GridModel[] modelCollection = GridModelImportExtensions.ImportFromExcelToVirtualGrid(workBook);
 
 
 
+{% endhighlight  %}
 
-
-Import data into GridModel
+### Import data into GridModel
 
 To load the data in grid cells, you have to use the ConvertExcelRangeToVirtualGrid method, this will import the formulas, cellvalue, conditional formats, data validation and the styles from the excel range to grid cells. To import the data into cells you can call the ConvertExcelRangeToVirtualGrid method in Querycellinfo Event as shown in the following code snippet:
 
 
-
+{% highlight c# %}
 [C#]
 
 void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
@@ -315,6 +317,7 @@ gridModel.Data[e.Cell.RowIndex, e.Cell.ColumnIndex] = e.Style.Store;
 }
 
 }
+{% endhighlight  %}
 
 ## How To
 
@@ -323,18 +326,18 @@ gridModel.Data[e.Cell.RowIndex, e.Cell.ColumnIndex] = e.Style.Store;
 You can also change the cell type and other styles while importing the workbook to GridControl, for that you have to pass the delegate handler in the importing method as shown in the following code snippet.
 
 
-
+{% highlight c# %}
 [C#]
 
 this.gridControl.Model.ImportFromExcel(new MemoryStream(file), ImportHandler);
 
 
-
+{% endhighlight  %}
 
 
 Then by using the ImportHandler method you can change the particular Cell Type and styles like background and font styles. When this event was handled, it will not import the data from the excel cell only the user specified data will be applied in the Grid. You can change the cell type as shown in the following code snippet 
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -362,31 +365,31 @@ e.Handled = true;
 
 }
 
-
+{% endhighlight  %}
 
 ### Enable the ExcelLikeFrozen Row and Column in a GridControl
 
 To enable the thick borders to indicate the Excel like freeze panes, you have to set the ExcelLikeFreezePane property as true as show in the following code snippet.
 
-
+{% highlight c# %}
 
 [C#]
 
 grid.Model.Options.ExcelLikeFreezePane = true;
 
-
+{% endhighlight  %}
 
 ### Enable the comment service in GridControl
 
 To enable the comment service you have to set the attached property show comment service as true as shown in the following code snippet.
 
-
+{% highlight c# %}
 
 [C#]
 
 GridCommentService.SetShowComment(grid, true);
 
 
-
+{% endhighlight  %}
 
 

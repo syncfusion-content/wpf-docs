@@ -7,35 +7,35 @@ control: Introduction
 documentation: ug
 ---
 
-## Common Supports
+# Common Supports
 
-### Expression Blend
+## Expression Blend
 
 Most of the Syncfusion controls are enhanced with blend support. The following steps allow the control to design in Visual Studio Expression Blend.
 
 1. Create a WPF project in Expression Blend and refer to the Syncfusion corresponding control’s assemblies. For example, to add Docking Manager control, add its assembly Syncfusion.Tools.Wpf and its dependency assembly Syncfusion.Shared.Wpf
 
-{{ '![C:/Users/labuser/Desktop/blend_images/docking-1_edited.png](Common-Supports_images/Common-Supports_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/labuser/Desktop/blend_images/docking-1_edited.png](Common-Supports_images/Common-Supports_img1.png)
+
 
 
 2. Search for Control in the Toolbox.
 
-{{ '![C:/Users/labuser/Desktop/blend_images/docking_2_Edited.png](Common-Supports_images/Common-Supports_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/labuser/Desktop/blend_images/docking_2_Edited.png](Common-Supports_images/Common-Supports_img2.png)
+
 
 
 3. Drag the control to the designer. It generates the control in designer.
 
-{{ '![C:/Users/labuser/Desktop/blend_images/Docking-3.png](Common-Supports_images/Common-Supports_img3.png)' | markdownify }}
-{:.image }
+![C:/Users/labuser/Desktop/blend_images/Docking-3.png](Common-Supports_images/Common-Supports_img3.png)
 
 
-### Testing
+
+## Testing
 
 The following Syncfusion controls come with built in testing support like [Coded UI](https://msdn.microsoft.com/en-us/magazine/hh875174.aspx) and QTP that enables you to develop enriched automation Test Project for automation to ensure the reliability.
 
-Coded UI
+### Coded UI
 
 * CellGrid
 * DataGrid
@@ -46,7 +46,7 @@ Coded UI
 
 
 
-QTP
+### QTP
 
 * CellGrid
 * DataGrid
@@ -55,11 +55,11 @@ QTP
 
 
 
-### Localization
+## Localization
 
 Localization is the process of making your application multi-lingual, by formatting the content according to cultures. This involves configuring the application for a specific language. Culture is the combination of language and location, for example En-US is the culture for English spoken in United States; En-GB is the culture for English spoken in Great Britain. Syncfusion controls allow you to set custom resource through the Resx file with standard filename as [AssemblyName].[CultureInfo Code].resx, for example Syncfusion.Tools.wpf.fr-FR.resx, Syncfusion.SfSchedule.wpf.fr-FR.resx. And by giving the string values in the resource file for a specific culture and set the culture in the application. The string values should be set to the controls respective resource key.
 
-The followings are the step to localize a control:
+### The followings are the step to localize a control:
 
 * Add Resources file for the different cultures.
 * Assign the value to each culture using key
@@ -75,20 +75,20 @@ To localize WPF controls, the resource file needs to be created as per following
 
 
 
-{{ '![](Common-Supports_images/Common-Supports_img4.png)' | markdownify }}
-{:.image }
+![](Common-Supports_images/Common-Supports_img4.png)
 
 
 
 
-> _Note: In case, the Shared dll controls is used in the application, then create another resource file in name Syncfusion.Shared.Wpf<your culture info name>.resx For example, Syncfusion.Shared.Wpf.fr-FR.resx and the naming convention needs to be followed mandatorily._
+
+> Note: In case, the Shared dll controls is used in the application, then create another resource file in name Syncfusion.Shared.Wpf<your culture info name>.resx For example, Syncfusion.Shared.Wpf.fr-FR.resx and the naming convention needs to be followed mandatorily.
 
 
 
 The following screenshot explains the addition of a Resource file to the application.
 
-{{ '![](Common-Supports_images/Common-Supports_img5.png)' | markdownify }}
-{:.image }
+![](Common-Supports_images/Common-Supports_img5.png)
+
 
 
 How to assign values in Resources file?
@@ -100,26 +100,26 @@ To assign Values in Resource, the resource file need to be updated as per the fo
 
 
 
-{{ '![](Common-Supports_images/Common-Supports_img6.png)' | markdownify }}
-{:.image }
+![](Common-Supports_images/Common-Supports_img6.png)
+
 
 
 3. Similarly add all need key (Name) for required assembly for example (Syncfusion.Tools.Wpf.dll). And the following screenshot displays the String property names for Tools.WPF controls with French values.
 
-{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image252_12.jpg](Common-Supports_images/Common-Supports_img7.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/wpf/ImagesExt/image252_12.jpg](Common-Supports_images/Common-Supports_img7.jpeg)
 
 
 
 
-> _Note: The default resource file for applicable assemblies can be downloaded by table provided at the end of this page._
+
+> Note: The default resource file for applicable assemblies can be downloaded by table provided at the end of this page.
 
 
 
 How to assign UI Culture to the application?
 
 Mention the culture to be referred while initializing the application, so that you can refer to the appropriate value provided in resource file. The following code illustrates the implementation of culture information settings.
-
+{% highlight c# %}
 public MainWindow()
 
  {
@@ -133,8 +133,8 @@ public MainWindow()
 
 
   }
-
-Localization Resource file
+{% endhighlight  %}
+### Localization Resource file
 
 Following table represents available Resource file to the Assemblies and it can be downloaded.
 

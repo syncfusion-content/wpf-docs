@@ -15,9 +15,9 @@ _List of controls_
 
 <table>
 <tr>
-<td>
-Category</td><td>
-Controls</td></tr>
+<th>
+Category</th><th>
+Controls</th></tr>
 <tr>
 <td>
 GRIDS</td><td>

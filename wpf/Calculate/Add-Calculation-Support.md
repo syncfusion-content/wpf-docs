@@ -25,19 +25,20 @@ Manual calculations requires you to explicitly request Essential Calculate to co
 
 * ParseAndCompute-This method accepts a formula string, parse it, and then return the computed value of the parsed formula. You can also directly invoke computation methods for any of the library functions of Essential Calculate through the CalcEngine class.
 * Indexer method by using Variables
-#### ParseAndCalculate Method
+
+### ParseAndCalculate Method
 
 
 If you have an algebraic expression that just contains constants and function library methods, the most straight forward way of using Essential Calculate is to invoke its ParseAndCalculate method. Using CalcQuickBase makes this very simple. Consider, for example, the below form with a text box and a button on it. When you click the button, the computed value of the formula is displayed in the text box.
 
-{{ '![](Add-Calculation-Support_images/Add-Calculation-Support_img1.png)' | markdownify }}
-{:.image }
+![](Add-Calculation-Support_images/Add-Calculation-Support_img1.png)
+
 
 
 
 
 The code that provides this functionality is very straight-forward. Add a reference to Syncfusion.Calculate in your project. Then instantiate a CalcQuickBase object, and invoke its ParseAndCalculate method from the button handler. Now you can type a formula in the text box and click the button to get the computed value. The following code illustrates this.
-
+{% highlight c# %}
 [C#]
 
 
@@ -69,7 +70,8 @@ private void button1_Click(object sender, EventArgs e)
       this.label3.Text = s;
 
 }
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 [VB]
@@ -109,14 +111,15 @@ Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
 End Sub 
 
 
+{% endhighlight %}
 
 In this discussion, it is assumed that the formulas involved contain only constants and library references. On the other hand, you can use the ParseAndCompute method to explicitly parse and calculate formulas that use variables as well. But, before you do that, you need to know how to register variables and assign values to them.
 
-#### Indexer Method using Variables
+### Indexer Method using Variables
 
 In this section, you can learn how to use variable names within formulas to represent particular values. A variable name must begin with an alphabetical character and can contain only letters and digits. It is not case-sensitive. To register a string as a variable name and set its value is a single step operation, you must simply index the CalcQuickBase object with the name and assign the value to it.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -127,7 +130,8 @@ this.calculator["base"] = 3;
 this.calculator["height"] = 2.5;
 
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 [VB]
 
 
@@ -136,10 +140,10 @@ Me.calculator("base") = 3
 
 Me.calculator("height") = 2.5
 
+{% endhighlight %}
 
+![](Add-Calculation-Support_images/Add-Calculation-Support_img2.jpeg)
 
-{{ '![](Add-Calculation-Support_images/Add-Calculation-Support_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 
@@ -157,7 +161,7 @@ The preceding formula takes the value represented by the base and multiplies it 
 
 As a convention, if you want a variable to actually hold a string that is a formula and be treated as a formula, so that it is parsed and computed through the indexing code, then begin that string with a special character, the CalcQuickBase.FormulaCharacter (CalcEngine.FormulaCharacter). The default value of this character is "=". If you invoke the ParseAndCompute directly, any string you pass is treated as a formula, whether or not it begins with FormulaCharacter.
 
-##### The FormulaInfo Class 
+### The FormulaInfo Class 
 
 The collection that CalcQuickBase maintains in order to hold information on variables, is a collection of FormulaInfo objects. The FormulaInfo class has the following public properties.
 
@@ -177,7 +181,7 @@ You can access the underlying Calculate.Engine object through the public read-on
 
 Essential Calculate enables you to monitor value changes, and then automatically recomputes formulas that depend upon the changed values. There is an additional overhead associated with automatic calculations that enables you to determine "when" you want to use this feature.
 
-#### Using Explicit Events
+### Using Explicit Events
 
 By default, CalcQuickBase does not try to track any dependencies among the variables you set. Thus, if you have a formula like
 
@@ -185,8 +189,8 @@ By default, CalcQuickBase does not try to track any dependencies among the varia
 
  In practice, some additional work needs to be done. When a variable is auto-changed, nothing actually happens until you try to use it. For example, assume that you have a series of text boxes on a form with some of the text boxes holding numerical values and some text boxes holding formulas that reference these values through variables that you have registered with a CalcQuickBase object.
 
-{{ '![](Add-Calculation-Support_images/Add-Calculation-Support_img3.png)' | markdownify }}
-{:.image }
+![](Add-Calculation-Support_images/Add-Calculation-Support_img3.png)
+
 
 
 In the above screenshot, Text Box C is set to a formula that references the values from Text Box A and Text Box B. So, once the value in Text Box A or Text Box B changes, the value in Text Box C should also change.
@@ -195,7 +199,7 @@ In order to get this to work, two things must be done. First, when the variable 
 
 The following code illustrates the above process.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -336,10 +340,10 @@ private void textBoxA_Leave(object sender, EventArgs e)
         }
 
 }
-
+{% endhighlight  %}
 // ..... same for textBoxB_Leave, textBoxC_Leave, textBoxD_Leave
 
-
+{% highlight vbnet %}
 
 [VB]
 
@@ -473,7 +477,7 @@ Private Sub textBoxA_Leave(ByVal sender As Object, ByVal e As EventArgs)
 
 End Sub 
 
-
+{% endhighlight %}
 
 The following is an explanation of the numbered steps given in the preceding Form_Load.
 
@@ -486,13 +490,13 @@ The following is an explanation of the numbered steps given in the preceding For
 7. This step forces the recalculation of all variables registered with the CalcQuickBase object. This has to be done after the AutoCalc property has been set to True, so that the dependencies between variables can be monitored. The reason to postpone setting AutoCalc until after the initial registration of the variables, is to avoid problems that might occur because of CalcQuickBase trying to set up dependency chains even before all the variables have been registered. Initializing the variables, turning on AutoCalc, and then calling RefreshAllCalculations, avoids this potential problem.
 8. This is the event handler that moves a freshly computed variable into the text box that it is related to.
 9. These four event handlers signal when the user leaves a modified text box. At that point, the CalcQuickBase object is updated to reflect the new value that has been entered by the user.
-#### Using RegisterControlArray
+### Using RegisterControlArray
 
 
 Using explicit events to manage the auto-calculation in CalcQuickBase used with controls on a form is straight-forward enough but, does require subscribing to multiple events and writing code in the handlers. CalcQuickBase.RegisterControlArray handles all this work for you and streamlines adding calculation support to a form or UserControl. There are two assumptions on the controls to which you want to bind the calculations. The first assumption is that the control is either a text box or a combo box. (To support other controls, you have to derive CalcQuickBase and override RegisterControl). The second assumption is that the variable name that you want to use to represent the control value in formulas is Control.Name.
 
 Here is the code that does exactly the same work as our previous example by using explicit events to support auto-calculation. Notice that all the event handling has been removed. There are only three steps that are related to adding the calculation support, which includes instantiating the CalcQuickBase object, and calling the RegisterControlArray and RefreshAllCalculations methods.
-
+{% highlight c# %}
 [C#]
 
 
@@ -560,7 +564,8 @@ private void Form1_Load(object sender, System.EventArgs e)
         this.calculator.RefreshAllCalculations();
 
 }
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 [VB]
@@ -608,7 +613,7 @@ Me.calculator.RegisterControlArray(New Control() {Me.textBoxA, Me.textBoxB, Me.t
 Me.calculator.RefreshAllCalculations()
 
 
-
+{% endhighlight  %}
 The following is an explanation of the numbered steps in the preceding Form_Load.
 
 1. Ensures that variable names are set as desired.
@@ -621,16 +626,15 @@ _Methods_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
-![Public method](Add-Calculation-Support_images/Add-Calculation-Support_img4.jpeg)
-{:.image }
 ResetKeys()</td><td>
 Clears the keys used by the Calculate engine</td></tr>
 </table>
+
 ### Summary
 
 CalcQuickBase is the simplest way to add calculation support to your code. You can create an instance of it, and then just start by using it through either its ParseAndCompute method, or by indexing it with a variable name. You can use CalcQuickBase either in manual calculation mode or in an automatic calculation mode. Automatic calculations require you to either handle certain events or use the RegisterControlArray method for WPF text box and combo box controls.
@@ -653,7 +657,7 @@ ICalcData has three methods and one event. This interface allows the CalcEngine 
 There are two conventions that are honored by Essential Calculate. While processing strings that are used as data values, any string beginning with "=" is treated as a formula that is to be parsed and evaluated. You can change the "=" to some other character by setting this static (Shared in VB) member, CalcEngine.FormulaCharacter. If you call Parse routines directly from code, the FormulaCharacter is optional.
 
 The second convention involves zero-based and one-based indexing. It should be noted that a lot of data sources use zero-based indexing to access values, but in CalcEngine one-based indexing is used to mimic Excel. This leads to possible indexing conflicts. To keep things consistent and to make sure that it is clear what should be used, Essential Calculate expects any indexes (rows / column integer values) to be one-based. This means that you may have to tweak the indexes that are passed through the ICalcData methods and event arguments to make them consistent with any zero-based data sources that you might be using. One such example is the DataGrid discussed in this section. You can see the index-based adjustments in the following code samples.
-
+{% highlight c# %}
 [C#]
 
 
@@ -763,7 +767,8 @@ public class CalcDataGrid : DataGrid, Syncfusion.Calculate.ICalcData
         public event ValueChangedEventHandler ValueChanged;
 
 }
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
 [VB]
@@ -868,7 +873,7 @@ Public Event ValueChanged As ValueChangedEventHandler Implements ICalcData.Value
 
 End Class 
 
-
+{% endhighlight %}
 
 The following is an explanation of the preceding code.
 

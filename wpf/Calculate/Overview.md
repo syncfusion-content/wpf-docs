@@ -15,11 +15,11 @@ The range of calculations include simple algebraic expressions such as (1.2^3-1)
 
 Essential Calculate allows you to add extensive calculation support to your business objects. It enables to easily setup forms that have calculation dependencies among various controls.
 
-{{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.jpeg)
 
 
-Key Features
+
+## Key Features
 
 Important features of Essential Calculate are listed as follows.
 
@@ -29,7 +29,7 @@ Important features of Essential Calculate are listed as follows.
 * It can be used in conjunction with Essential XlsIO, to fully load, manipulate and compute Excel spreadsheets without depending on Excel.
 * Essential Calculate does not depend upon Microsoft Excel and thus enables you to perform calculations independent of Excel.
 
-User Guide Organization
+## User Guide Organization
 
 The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of Essential Calculate. It is organized into the following sections:
 
@@ -41,7 +41,7 @@ The product comes with numerous samples as well as an extensive documentation to
 
 
 
-Document Conventions
+## Document Conventions
 
 The following conventions help you quickly identify the important sections of information while using the content.
 
@@ -49,9 +49,9 @@ _Document Conventions_
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-Description</td></tr>
+<th>
+Convention</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>

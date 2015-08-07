@@ -13,23 +13,23 @@ Localization is the process of customizing the user interface based on a culture
 
 Localization is the key feature that provides solutions to global customers with the help of localized resource files provided by the control. The SfSchedule control supports localization, and you can create a resource file for any culture to be applied in the schedule.
 
-Use Cases
+## Use Cases
 
 Localization makes your application multilingual by formatting content according to the culture. This involves configuring the application for specific languages. The SfSchedule control allows you to set custom resources through .resx files. You can simply provide the string values in a resource file for a specific culture and set it in your application. The given string values will be set accordingly in the SfSchedule control. The appointment windows, message boxes, and other alert windows will be displayed with text in the local language (culture). If the application is deployed in Japanese culture, then the SfSchedule control will display its contents in French language.
-
+{% highlight c# %}
 [C#]
 
 ApplicationLanguages.PrimaryLanguageOverride = "fr-fr";
 
+{% endhighlight  %}
+
+![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_31.jpg](Loclization_images/Loclization_img1.jpeg)
 
 
-{{ '![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_31.jpg](Loclization_images/Loclization_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 
-
-Advantages of Localization
+## Advantages of Localization
 
 The SfSchedule control can be embedded in applications deployed in any culture (e.g., en-US is the culture for English spoken in United States; en-GB is the culture for English spoken in United Kingdom or Great Britain) to provide details and information in the native language of the users.
 

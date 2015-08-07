@@ -7,13 +7,13 @@ control: Introduction
 documentation: ug
 ---
 
-## System Requirement
+# System Requirement
 
 This section describes the system requirements to use Syncfusion WPFControls for development.
 
-Framework
+## Framework
 
-Following frameworks are supported:
+### Following frameworks are supported:
 
 * Microsoft .NET Framework 3.5
 * Microsoft .NET Framework 4.0
@@ -22,9 +22,9 @@ Following frameworks are supported:
 
 
 
-IDE
+## IDE
 
-Following IDEs can be used for development:
+### Following IDEs can be used for development:
 
 * Microsoft Visual Studio 2008
 * Microsoft Visual Studio 2010

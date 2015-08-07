@@ -21,25 +21,25 @@ The core features of the DateTimeEdit are as follows:
 * Provides keyboard and mouse support.
 * Provides Watermark support.
 * Provides maximum and minimum value support.
+
 ## Control Structure
 
 
 
-
-{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.png)
 
 
 
 
-{{ '![](Overview_images/Overview_img2.png)' | markdownify }}
-{:.image }
+
+![](Overview_images/Overview_img2.png)
 
 
 
 
-{{ '![](Overview_images/Overview_img3.png)' | markdownify }}
-{:.image }
+
+![](Overview_images/Overview_img3.png)
+
 
 
 ### DateTimeEdit Members
@@ -52,13 +52,13 @@ _DateTimeEdit Members table_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Type</td><td>
-Value it Accepts</td><td>
-Description</td><td>
-Default Value</td><td>
-Reference Link</td></tr>
+<th>
+Name</th><th>
+Type</th><th>
+Value it Accepts</th><th>
+Description</th><th>
+Default Value</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 CustomPattern</td><td>
@@ -236,6 +236,7 @@ Gets or sets the Maximum value for the DateTimeEdit control.</td><td>
 23:59:59.9999999, December 31, 9999, exactly one 100-nanosecond tick before 00:00:00, January 1, 10000</td><td>
 MaxDateTime</td></tr>
 </table>
+
 #### Events
 
 _DateTimeEdit members Events table_

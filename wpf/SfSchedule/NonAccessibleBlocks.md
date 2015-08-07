@@ -10,7 +10,7 @@ documentation: ug
 # NonAccessibleBlocks 
 
  For a particular Starting and Ending time the block could not be accessed by setting the NonAccessibleBlocks property.
-
+{% highlight html %}
 [XAML]
 
               <Schedule:SfSchedule ScheduleType="Week"  IntervalHeight="30">
@@ -27,7 +27,8 @@ documentation: ug
 
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -40,21 +41,21 @@ documentation: ug
             this.grid.Children.Add(schedule);  
 
 
+{% endhighlight  %}
+
+
+![](NonAccessibleBlocks_images/NonAccessibleBlocks_img1.png)
 
 
 
-{{ '![](NonAccessibleBlocks_images/NonAccessibleBlocks_img1.png)' | markdownify }}
-{:.image }
 
 
-
-
-NonAccessibleBlockTemplate :
+## NonAccessibleBlockTemplate :
 
 The  NonAccessibleBlockTemplate can be customized by NonAccessibleBlockTemplate property.
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -82,8 +83,8 @@ The  NonAccessibleBlockTemplate can be customized by NonAccessibleBlockTemplate 
     </Grid>
 
 
-
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -97,10 +98,10 @@ The  NonAccessibleBlockTemplate can be customized by NonAccessibleBlockTemplate 
 
 
 
+{% endhighlight  %}
 
+![](NonAccessibleBlocks_images/NonAccessibleBlocks_img2.png)
 
-{{ '![](NonAccessibleBlocks_images/NonAccessibleBlocks_img2.png)' | markdownify }}
-{:.image }
 
 
 

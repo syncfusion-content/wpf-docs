@@ -12,7 +12,7 @@ documentation: ug
 The Schedule control allows you to define resources that can be assigned to appointments. Resources let you associate additional information with your appointments. The schedule can group appointments based on the resources associated with them. For example, you can create appointments for different doctors.
 
 Appointments will be grouped based on the resource associated with them only when both the Resource and ScheduleResourceTypeCollection properties are set, and also when the Value set for a Resource matches with any types specified in the ScheduleResourceTypeCollection property.
-
+{% highlight html %}
 [XAML] 
 
 
@@ -35,7 +35,8 @@ Appointments will be grouped based on the resource associated with them only whe
 
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#] 
 
@@ -56,27 +57,27 @@ ScheduleAppointment app = new ScheduleAppointment() { StartTime = currentdate
             Schedule1.Appointments.Add(app1);
 
 
+{% endhighlight  %}
 
 
-
-{{ '![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_28.jpg](Resources_images/Resources_img1.jpeg)' | markdownify }}
-{:.image }
-
-
-
-
-
-
-{{ '![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_29.jpg](Resources_images/Resources_img2.jpeg)' | markdownify }}
-{:.image }
+![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_28.jpg](Resources_images/Resources_img1.jpeg)
 
 
 
 
 
 
-{{ '![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_30.jpg](Resources_images/Resources_img3.jpeg)' | markdownify }}
-{:.image }
+
+![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_29.jpg](Resources_images/Resources_img2.jpeg)
+
+
+
+
+
+
+
+![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_30.jpg](Resources_images/Resources_img3.jpeg)
+
 
 
 
@@ -86,7 +87,7 @@ ScheduleAppointment app = new ScheduleAppointment() { StartTime = currentdate
 _Let's_ see the steps to _add Resources in your schedule._
 
 _The first step is set the ResourceTypesCollection in schedule_ 
-
+{% highlight html %}
 [XAML]
 
      <schedule:SfSchedule  Resource="Doctors" >
@@ -97,10 +98,10 @@ _The first step is set the ResourceTypesCollection in schedule_
 
 
 
-
+{% endhighlight  %}
 
 After this, we need to create a ResourceTypeCollection, to assign the ResourceType:
-
+{% highlight html %}
 [XAML]
 
       <schedule:SfSchedule Resource="Doctors"  >
@@ -117,14 +118,14 @@ After this, we need to create a ResourceTypeCollection, to assign the Resource
 
         </schedule:SfSchedule>
 
-
+{% endhighlight  %}
 
 
 
 ## Adding ResourceType to a ResourceTypeCollection
 
 After Creating the ResourceTypeCollection add the ResourecType, here we create the example for ResourceType as Doctors.
-
+{% highlight html %}
 [XAML]
 
       <schedule:SfSchedule  Resource="Doctors" >
@@ -142,13 +143,13 @@ After Creating the ResourceTypeCollection add the ResourecType, here we create t
         </schedule:SfSchedule>
 
 
-
+{% endhighlight  %}
 
 
 ## Adding a Resource to a ResourceType 
 
 The next step is create and assign Resources to ResourceType.
-
+{% highlight html  %}
 [XAML]
 
     <schedule:SfSchedule  Resource="Doctors" >
@@ -168,13 +169,13 @@ The next step is create and assign Resources to ResourceType.
         </schedule:SfSchedule>
 
 
-
+{% endhighlight  %}
 
 
 ## Creating appointments by specifying the resource
 
 You can add an appointments to group of added resources.
-
+{% highlight html %}
 [XAML]
 
 
@@ -196,11 +197,12 @@ ScheduleAppointment app = new ScheduleAppointment() { StartTime = currentdate
 
 
 
+{% endhighlight  %}
 
 ## Adding Resources in code behind
 
 Refer to the following code to add a Resources in the code behind
-
+{% highlight c# %}
 [C#]
 
           SfSchedule schedule = new SfSchedule();
@@ -222,7 +224,7 @@ Refer to the following code to add a Resources in the code behind
             this.grid.Children.Add(schedule);
 
 
-
+{% endhighlight %}
 
 
 ## Subresource Support
@@ -235,16 +237,16 @@ DayHeaderOrder property is used to set the order by which resources have to be d
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 SubResourceType</td><td>
 Gets or sets the ResourceType value which is a subresource type of its parent Resource type.</td></tr>
 </table>
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -288,7 +290,8 @@ Gets or sets the ResourceType value which is a subresource type of its parent Re
         </schedule:SfSchedule>
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 
 [C#]
@@ -322,11 +325,11 @@ Gets or sets the ResourceType value which is a subresource type of its parent Re
             this.grid.Children.Add(schedule);
 
 
+{% endhighlight  %}
 
 
+![](Resources_images/Resources_img4.png)
 
-{{ '![](Resources_images/Resources_img4.png)' | markdownify }}
-{:.image }
 
 
 
@@ -339,21 +342,22 @@ This support can be enabled by using property “DayViewColumnCount” in SfSc
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 DayViewColumnCount</td><td>
 int</td><td>
 Gets or sets a value to specify the number of resources that need to be shown in the view.</td></tr>
 </table>
-Example:
+
+### Example:
 
 In the following code example, “DayViewColumnCount” is “two”, so the Schedule displays two resources in the view. This count is maintained while scrolling to view the other resources.
 
-
+{% highlight html %}
 
 [XAML]
 
@@ -387,7 +391,8 @@ In the following code example, “DayViewColumnCount” is “two”, so the Sch
 
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -416,20 +421,17 @@ In the following code example, “DayViewColumnCount” is “two”, so the Sch
             schedule.Resource = "Doctors";
 
             this.grid.Children.Add(schedule); 
+{% endhighlight  %}
 
 The following screenshot shows a view with default value of DayViewColumnCount property set to “Zero”.
 
-<table>
-<tr>
-<td>
+
 ![](Resources_images/Resources_img5.png)
-{:.image }
-The following screenshot shows a view with default value of DayViewColumnCount property set to “Two”.</td></tr>
-<tr>
-<td>
+
+The following screenshot shows a view with default value of DayViewColumnCount property set to “Two”.
+
 ![](Resources_images/Resources_img6.png)
-{:.image }
-</td></tr>
-</table>
+
+
 
 

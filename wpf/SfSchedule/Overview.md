@@ -15,7 +15,7 @@ SfSchedule is used to provide Outlook-like scheduling. The SfSchedule control al
 
 
 
-Use Cases
+### Use Cases
 
 1. Schedule control can be used for public-service employees such as police officers, firefighters and health-care workers — anyone who works an unusual but predictable schedule.
 2. In families if a spouse/partner works a shift schedule, then we have entirely different rotation appear on the calendar with family members. This will help us to organize family activities such as vacations and day-care.
@@ -35,14 +35,14 @@ Use Cases
 
 The Appointments Editor to be used to create or edit various types of appointments with a specific time or location or using "All Day Events" without a specific time or location on your schedule. Appointment Editor can customize several feature of appointment such as applying reminder and adding recurrence to an appointment. It’s also simple to reschedule the added appointments by editing the Star Time and End Time of appointments.
 
-{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.png)
 
 
 
 
-{{ '![](Overview_images/Overview_img2.png)' | markdownify }}
-{:.image }
+
+![](Overview_images/Overview_img2.png)
+
 
 
 

@@ -12,7 +12,7 @@ documentation: ug
 ## Line Sparkline
 
 Line sparkline rendered using polyline and the following code is used to create line sparkline,
-
+{% highlight html %}
 [XAML]
 
 …
@@ -31,34 +31,34 @@ YBindingPath="NoOfUsers">
 
             </Syncfusion:SfLineSparkline >
 
-
+{% endhighlight  %}
 
 The following illustrates the result of the above code sample,
 
-{{ '![C:/Users/ApoorvahR/Desktop/1.png](Sparkline-Types_images/Sparkline-Types_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/1.png](Sparkline-Types_images/Sparkline-Types_img1.png)
+
 
 
 ## Column Sparkline
 
 Column sparkline used to visualize the raw data as a rectangle and following code is used to create column sparkline,
-
+{% highlight html %}
 [XAML]
 
    <Syncfusion:SfColumnSparkline ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
 
         </Syncfusion:SfColumnSparkline>
-
+{% endhighlight  %}
 Following is the snapshot for Column Sparkline,
 
-{{ '![C:/Users/ApoorvahR/Desktop/2.png](Sparkline-Types_images/Sparkline-Types_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/2.png](Sparkline-Types_images/Sparkline-Types_img2.png)
+
 
 
 ## Area sparkline
 
 Following code is used to create area sparkline and all the line sparkline features are applicable for area sparkline,
-
+{% highlight html %}
 [XAML]
 
   <Syncfusion:SfAreaSparkline 
@@ -66,17 +66,17 @@ Following code is used to create area sparkline and all the line sparkline featu
  ItemsSource="{Binding UsersList}"  YBindingPath="NoOfUsers">
 
   </Syncfusion:SfAreaSparkline >
-
+{% endhighlight  %}
 Following is the snapshot for area sparkline,
 
-{{ '![C:/Users/ApoorvahR/Desktop/3.png](Sparkline-Types_images/Sparkline-Types_img3.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/3.png](Sparkline-Types_images/Sparkline-Types_img3.png)
+
 
 
 ## WinLoss Sparkline
 
 WinLoss sparkline render as a column segment and it show the positive, negative and neutral values.
-
+{% highlight html %}
 [XAML]
 
 …
@@ -91,8 +91,8 @@ WinLoss sparkline render as a column segment and it show the positive, negative 
 
         </Syncfusion:SfWinLossSparkline>
 
-
-
+{% endhighlight %}
+{% highlight c# %}
 [C#]
 
 public class MatchDetailsModel
@@ -134,11 +134,11 @@ public class MatchDetailsModel
         public ObservableCollection<MatchDetailsModel> Match { get; set; }
 
     }
-
+{% endhighlight  %}
 Execute the above code to render the following output.
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/4.png](Sparkline-Types_images/Sparkline-Types_img4.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/4.png](Sparkline-Types_images/Sparkline-Types_img4.png)
+
 
 

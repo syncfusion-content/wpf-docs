@@ -13,11 +13,11 @@ Essential Grid for WPF provides an in-built support for printing and print previ
 
 The GridPrintDialog class plays a vital role in the implementation of printing support. It is built based on Microsoft PrintDialog class that will handle the internal operations for GridPrintDialog. The GridPrintDialog class defines the designer for the Print dialog and exposes a number of properties and APIs to handle the UI requirements and define the interaction logic for the Print Dialog. The users can use these properties to configure the Print and Print Preview options.
 
-Example
+## Example
 
 Enabling the printing feature is like invoking an API – ShowPrintDialog() on the instances of the grid.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -26,32 +26,33 @@ Enabling the printing feature is like invoking an API – ShowPrintDialog() on t
 this.grid.ShowPrintDialog();
 
 
+{% endhighlight  %}
 
-Output
+## Output
 
-{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img1.jpeg)' | markdownify }}
-{:.image }
+![](Print-and-Print-Preview_images/Print-and-Print-Preview_img1.jpeg)
+
 
 
 ## Print Dialog Options
 
 The Print Dialog provides numerous options to configure the output.
 
-Print Button
+### Print Button
 
 Clicking the Print button allows the user to send the grid content to the printer for printing.
 
 
 
-{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img2.jpeg)' | markdownify }}
-{:.image }
+![](Print-and-Print-Preview_images/Print-and-Print-Preview_img2.jpeg)
 
 
-Page Size Drop-down
+
+### Page Size Drop-down
 
 This drop down lists out various available paper sizes for printing. For example: ISOA4, ISOA1, ISOA3etc. Selecting the required paper size allows the user to print the grid data in the paper of same size.
 
-> _Note: The paper sizes are also marked in the following way:_
+> Note: The paper sizes are also marked in the following way:
 
 * _Extra-Extra increases the space in addition to the predefined size of the paper, for example- A3._
 * _Rotated -The output is rotated by a defined angle for the selected page size._
@@ -62,11 +63,11 @@ For more information, check the following link: [http://msdn.microsoft.com/en-us
 
 
 
-{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img3.jpeg)' | markdownify }}
-{:.image }
+![](Print-and-Print-Preview_images/Print-and-Print-Preview_img3.jpeg)
 
 
-Color Drop-down
+
+### Color Drop-down
 
 The options in this drop-down allow you select the color for the data to be printed. Following are the options provided:
 
@@ -77,44 +78,44 @@ The options in this drop-down allow you select the color for the data to be prin
 
 
 
-{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img4.jpeg)' | markdownify }}
-{:.image }
+![](Print-and-Print-Preview_images/Print-and-Print-Preview_img4.jpeg)
 
 
-Zoom Drop-down
+
+### Zoom Drop-down
 
 The options in this drop-down allow you select the required percentage magnification for viewing the grid data to be printed. Selecting the required option allows you to magnify the preview to various preset zoom levels like 50%, 100%, 200% and 400%. 
 
 
 
-{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img5.jpeg)' | markdownify }}
-{:.image }
+![](Print-and-Print-Preview_images/Print-and-Print-Preview_img5.jpeg)
 
 
-Navigation Options
+
+### Navigation Options
 
 The Print dialog provides four navigational buttons to navigate the grid preview:
 
-{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img6.jpeg)' | markdownify }}
-{:.image }
+![](Print-and-Print-Preview_images/Print-and-Print-Preview_img6.jpeg)
+
 -This button allows you to move to the first page 
 
 
 
-{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img7.jpeg)' | markdownify }}
-{:.image }
+![](Print-and-Print-Preview_images/Print-and-Print-Preview_img7.jpeg)
+
 -This button allows you to move to the last page 
 
 
 
-{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img8.jpeg)' | markdownify }}
-{:.image }
+![](Print-and-Print-Preview_images/Print-and-Print-Preview_img8.jpeg)
+
 -This button allows you to move to the previous page 
 
 
 
-{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img9.jpeg)' | markdownify }}
-{:.image }
+![](Print-and-Print-Preview_images/Print-and-Print-Preview_img9.jpeg)
+
 -This button allows you to move to the next page 
 
 
@@ -123,8 +124,8 @@ The following image shows the next button highlighted for an example.
 
 
 
-{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img10.jpeg)' | markdownify }}
-{:.image }
+![](Print-and-Print-Preview_images/Print-and-Print-Preview_img10.jpeg)
+
 
 
 ## Printing Header and Footer
@@ -138,7 +139,7 @@ Headers and Footers can be added to the document to be printed.
 
 
 
-
+{% highlight html %}
 [XAML]
 
 
@@ -173,13 +174,13 @@ Headers and Footers can be added to the document to be printed.
 
                         </syncfusion:GridControl.PrintFooterTemplate>
 
+{% endhighlight  %}
 
-
-Output
+### Output
 
 The following image is the output of the code above. 
 
-{{ '![](Print-and-Print-Preview_images/Print-and-Print-Preview_img11.jpeg)' | markdownify }}
-{:.image }
+![](Print-and-Print-Preview_images/Print-and-Print-Preview_img11.jpeg)
+
 
 

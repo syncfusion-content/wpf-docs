@@ -10,7 +10,7 @@ documentation: ug
 # Track ball
 
 This is used to indicate the value point on mouse move and this feature applicable for line and area sparkline.
-
+{% highlight html %}
 [XAML]
 
   <Syncfusion:SfLineSparkline 
@@ -22,10 +22,10 @@ This is used to indicate the value point on mouse move and this feature applicab
                 YBindingPath="NoOfUsers">
 
   </Syncfusion:SfLineSparkline >
-
+{% endhighlight %}
 Following is the snapshot for track ball,
 
-{{ '![C:/Users/ApoorvahR/Desktop/6.png](Track-ball_images/Track-ball_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/6.png](Track-ball_images/Track-ball_img1.png)
+
 
 

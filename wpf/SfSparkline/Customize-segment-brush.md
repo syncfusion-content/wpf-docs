@@ -10,7 +10,7 @@ documentation: ug
 # Customize segment brush
 
 We can able to customize the first, last, negative, high and low point brushes as like markers in area and line sparkline.
-
+{% highlight html %}
 [XAML]
 
 <Syncfusion:SfColumnSparkline ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
@@ -22,10 +22,11 @@ We can able to customize the first, last, negative, high and low point brushes a
             </Syncfusion:SfColumnSparkline.SegmentTemplateSelector>
 
         </Syncfusion:SfColumnSparkline>
+{% endhighlight  %}
 
 Following is the snapshot for customize segment,
 
-{{ '![C:/Users/ApoorvahR/Desktop/10.png](Customize-segment-brush_images/Customize-segment-brush_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/10.png](Customize-segment-brush_images/Customize-segment-brush_img1.png)
+
 
 

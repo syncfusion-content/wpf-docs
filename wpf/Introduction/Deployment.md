@@ -7,9 +7,9 @@ control: Introduction
 documentation: ug
 ---
 
-## Deployment
+# Deployment
 
-### Control Dependencies
+## Control Dependencies
 
 The following table illustrates the Control’s assembly and its dependencies.
 
@@ -17,10 +17,10 @@ _List of Control’s assembly and its dependencies_
 
 <table>
 <tr>
-<td>
-Controls</td><td>
-Assembly</td><td>
-Dependencies</td></tr>
+<th>
+Controls</th><th>
+Assembly</th><th>
+Dependencies</th></tr>
 <tr>
 <td>
 SfDataGrid </td><td>
@@ -427,23 +427,23 @@ PivotGrid</td><td>
 Syncfusion.PivotAnalysis.WPF</td><td>
 Syncfusion.Grid.WPFSyncfusion.GridCommon.WPFSyncfusion.Shared.WPFSyncfusion.PivotAnalysis.BaseSyncfusion.Linq.BaseSyncfusion.Core</td></tr>
 </table>
-### ClickOnce Deployment
+## ClickOnce Deployment
 
 While processing [ClickOnce](https://msdn.microsoft.com/en-us/library/ms996413.aspx) deployment for publishing an applications with Syncfusion WPF component, change the Publish Status option of the Syncfusion Assemblies as “Include”.
 
-{{ '![](Deployment_images/Deployment_img1.png)' | markdownify }}
-{:.image }
+![](Deployment_images/Deployment_img1.png)
+
 
 
 _Selecting Application Files for changing the status_
 
-{{ '![](Deployment_images/Deployment_img2.png)' | markdownify }}
-{:.image }
+![](Deployment_images/Deployment_img2.png)
+
 
 
 _Publish Status option changed as Include_
 
-ClickOnce signing process
+### ClickOnce signing process
 
 Before publishing a ClickOnce application, sign to ensure whether its fully trusted, so that you can authenticate the information. The following steps are used for signing a ClickOnce application.
 
@@ -454,30 +454,30 @@ Signing ClickOnce involves two steps,
 
 
 
-Signing the manifest
+### Signing the manifest
 
 Navigate to project properties and select Signing tab. In the tab check “Sign the ClickOnce manifests” and select “Select From File” option and sign the application with the attached .pfx file.
 
-{{ '![](Deployment_images/Deployment_img3.png)' | markdownify }}
-{:.image }
+![](Deployment_images/Deployment_img3.png)
+
 
 
  _ClickOnce signing_
 
 In the Publish tab, click “Options” and in the publish options dialog check “Use application manifest for trust information” under Manifest as in the following screenshot.
 
-{{ '![](Deployment_images/Deployment_img4.png)' | markdownify }}
-{:.image }
+![](Deployment_images/Deployment_img4.png)
+
 
 
 _Publish options dialog box_
 
-> _Note: Before publishing, install the attached certificate in your machine and also follow step 2. Follow the following steps for installing certificate in your machine._
+> Note: Before publishing, install the attached certificate in your machine and also follow step 2. Follow the following steps for installing certificate in your machine.
 
 1. _Press Windows + R and type “certmgr.msc” and press enter that opens certificate manager._
 2. _Right click the “Trusted Root certification Authorities” and navigate to All Tasks -> Import. Now import the_ .pfx _to “Trusted Root certification Authorities”. It displays a warning for first time. Press Yes to continue the importing._
 
-Signing exe
+### Signing exe
 
 The above process signs only deployment manifest. To sign the application executable, refer to the following steps.
 
@@ -485,7 +485,7 @@ You can sign the application executable by using the Post-build command and use 
 
 "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Bin\signtool.exe" sign /f "$(ProjectDir)syncfusion.pfx" /p Coolcomp299 /v "$(ProjectDir)obj\x86\$(ConfigurationName)\DataGridSampleBrowser.exe"
 
-> _Note: Now,sign the exe inside obj folder and Syncfusion.pfx file placed inside Project directory._
+> Note: Now,sign the exe inside obj folder and Syncfusion.pfx file placed inside Project directory.
 
 
 

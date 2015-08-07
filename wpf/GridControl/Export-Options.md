@@ -16,6 +16,7 @@ The GridExcelConverter class provides support for exporting data from a Grid con
 * Syncfusion.XlsIO.Base
 * Syncfusion.XlsIO.WPF  
 * Syncfusion.GridConverter.Wpf
+
 ### Features
 
 
@@ -24,7 +25,7 @@ There are three options for exporting a Grid control:
 * Converting the entire content of a grid
 * Converting a selected content of the grid
 * Pass the Excel Engine
-#### Entire Content
+### Entire Content
 
 
 You can convert the entire content of a GridData control to an Excel Spreadsheet. You can also avail the option for specifying the version of the Excel file using the ExcelVersion enum. The version can be one of the following: 
@@ -35,7 +36,7 @@ You can convert the entire content of a GridData control to an Excel Spreadsheet
 The following code illustrates the conversion of the entire Grid content to an Excel Spreadsheet:
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -50,30 +51,30 @@ gridControl.Model.ExportToExcel(@"Sample.xls", ExcelVersion.Excel97to2003);
 
 gridControl.Model.ExportToExcel(@"Sample.xlsx", ExcelVersion.Excel2007);
 
+{% endhighlight  %}
+
+![](Export-Options_images/Export-Options_img1.jpeg)
 
 
-{{ '![](Export-Options_images/Export-Options_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 
+![](Export-Options_images/Export-Options_img2.jpeg)
 
-{{ '![](Export-Options_images/Export-Options_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 The images above show how the entire content of the Grid control is exported to an Excel spreadsheet.
 
-#### Selected Content
+### Selected Content
 
 You can convert a selected content of the grid to the specified range in an Excel spreadsheet. It will be very useful, when you have some data like picture, chart, etc., in your spreadsheet and you want to fill a particular range, for example-the remaining part of the spreadsheet using the Grid cell data. 
 
-Use-Case Scenario
+#### Use-Case Scenario
 
 Consider that you have a chart in a spreadsheet in the range [A1:I19] and you wish to populate a part of the Spreadsheet starting from E21, with the selected cell data of Grid control. You can use the following code, to achieve the scenario above mentioned:
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -131,27 +132,27 @@ GridRangeInfo range = rangeList[0];
 gridControl.Model.ExportToExcel(range, mySheet, excelRange, @"Sample2.xls", ExcelVersion.Excel97to2003);
 
 
+{% endhighlight %}
+
+
+![](Export-Options_images/Export-Options_img3.jpeg)
 
 
 
-{{ '![](Export-Options_images/Export-Options_img3.jpeg)' | markdownify }}
-{:.image }
 
 
+![](Export-Options_images/Export-Options_img4.jpeg)
 
-
-{{ '![](Export-Options_images/Export-Options_img4.jpeg)' | markdownify }}
-{:.image }
 
 
 The above images shows how a part of the Grid control is exported to a specific range on an Excel Spreadsheet. 
 
-#### Using the Excel Engine (XlsIO)
+### Using the Excel Engine (XlsIO)
 
 You can also pass the Excel Engine with the worksheet number, as illustrated by the code below:
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -166,23 +167,23 @@ IWorksheet  mySheet = myWorkbook.Worksheets[0];
 
 gridControl.Model.ExportToExcel(range, excelEngine, 0, mySheet.Range[5,5], @"Sample.xlsx", ExcelVersion.Excel2007);
 
+{% endhighlight  %}
+
+
+
+![](Export-Options_images/Export-Options_img5.jpeg)
 
 
 
 
-{{ '![](Export-Options_images/Export-Options_img5.jpeg)' | markdownify }}
-{:.image }
+
+![](Export-Options_images/Export-Options_img6.jpeg)
 
 
 
+> Note: For more details, refer the following browser sample:
 
-{{ '![](Export-Options_images/Export-Options_img6.jpeg)' | markdownify }}
-{:.image }
-
-
-> _Note: For more details, refer the following browser sample:_
-
-> _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\ExcelExport\GridControl Excel Export Demo_
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\ExcelExport\GridControl Excel Export Demo
 
 ## Exporting to CSV
 
@@ -196,25 +197,26 @@ To enable exporting, the following .dll files must be added along with the defau
 
 
 
-Export Options
+### Export Options
 
 There are two options for exporting a grid control:
 
 1. Export Whole Grid – which exports an entire grid to CSV format.
 2. Export Selected Range – which exports only a selected range to CSV format.
 
-Export Whole Grid 
+### Export Whole Grid 
 
 You can convert the entire content of a grid control to a CSV file by using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 this.gc.Model.ExportToCSV("Sample.csv");
 
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB]
 
 
@@ -222,28 +224,29 @@ this.gc.Model.ExportToCSV("Sample.csv");
 Me.gc.Model.ExportToCSV("Sample.csv")
 
 
+{% endhighlight  %}
 
 When the code runs, the following output displays.
 
 
 
-{{ '![](Export-Options_images/Export-Options_img7.jpeg)' | markdownify }}
-{:.image }
+![](Export-Options_images/Export-Options_img7.jpeg)
+
 
 
 When you are ready to export the entire grid, click Export Whole Grid; the grid content will then be converted to CSV format. 
 
 
 
-{{ '![](Export-Options_images/Export-Options_img8.jpeg)' | markdownify }}
-{:.image }
+![](Export-Options_images/Export-Options_img8.jpeg)
 
 
-Export Selected Range
+
+### Export Selected Range
 
 You can convert selected grid content to CSV format by using the following code:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -261,8 +264,8 @@ GridRangeInfoList rangeList = gc.Model.SelectedRanges;
 
 }
 
-
-
+{% endhighlight  %}
+{% highlight vbnet %}
 [VB]
 
 
@@ -277,19 +280,19 @@ gc.Model.ExportToCSV(range, "Sample.csv")
 
 End If
 
-
+{% endhighlight  %}
 
 When the code runs, the following output displays.
 
 
 
-{{ '![](Export-Options_images/Export-Options_img9.jpeg)' | markdownify }}
-{:.image }
+![](Export-Options_images/Export-Options_img9.jpeg)
+
 
 
 To export a selection, highlight the portion of the grid you want to export, and then click Export Selected Range; the selected grid content will then be exported to a CSV file.
 
-{{ '![](Export-Options_images/Export-Options_img10.jpeg)' | markdownify }}
-{:.image }
+![](Export-Options_images/Export-Options_img10.jpeg)
+
 
 

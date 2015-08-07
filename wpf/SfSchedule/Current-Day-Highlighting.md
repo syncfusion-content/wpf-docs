@@ -10,7 +10,7 @@ documentation: ug
 # Current Day Highlighting
 
 The current day highlighting brush in all view can be customized by CurrentDateBackground property.
-
+{% highlight html %}
 [XAML]
 
         <Schedule:SfSchedule x:Name="schedule" ScheduleType="Week"
@@ -19,7 +19,8 @@ The current day highlighting brush in all view can be customized by CurrentDateB
 
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -34,11 +35,11 @@ The current day highlighting brush in all view can be customized by CurrentDateB
             this.grid.Children.Add(schedule);
 
 
+{% endhighlight  %}
 
 
+![](Current-Day-Highlighting_images/Current-Day-Highlighting_img1.png)
 
-{{ '![](Current-Day-Highlighting_images/Current-Day-Highlighting_img1.png)' | markdownify }}
-{:.image }
 
 
 

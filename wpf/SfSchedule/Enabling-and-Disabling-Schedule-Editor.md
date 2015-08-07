@@ -10,7 +10,7 @@ documentation: ug
 # Enabling and Disabling Schedule Editor
 
 The Editor can be disabled or enabled using the property AllowEditing and its default value is True.
-
+{% highlight html %}
 [XAML]
 
 
@@ -19,7 +19,8 @@ The Editor can be disabled or enabled using the property AllowEditing and its de
 
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -32,14 +33,15 @@ The Editor can be disabled or enabled using the property AllowEditing and its de
               schedule.AllowEditing = false;
 
               this.grid.Children.Add(schedule);
+{% endhighlight  %}
 
-{{ '![](Enabling-and-Disabling-Schedule-Editor_images/Enabling-and-Disabling-Schedule-Editor_img1.png)' | markdownify }}
-{:.image }
-
-
+![](Enabling-and-Disabling-Schedule-Editor_images/Enabling-and-Disabling-Schedule-Editor_img1.png)
 
 
-{{ '![](Enabling-and-Disabling-Schedule-Editor_images/Enabling-and-Disabling-Schedule-Editor_img2.png)' | markdownify }}
-{:.image }
+
+
+
+![](Enabling-and-Disabling-Schedule-Editor_images/Enabling-and-Disabling-Schedule-Editor_img2.png)
+
 
 

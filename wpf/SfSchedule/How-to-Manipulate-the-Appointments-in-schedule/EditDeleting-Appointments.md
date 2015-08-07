@@ -14,6 +14,6 @@ The user can also edit or delete the appointments within the schedule control by
 
 
 {{ '![](EditDeleting-Appointments_images/EditDeleting-Appointments_img1.png)' | markdownify }}
-{:.image }
+
 
 

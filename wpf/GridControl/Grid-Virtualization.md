@@ -13,17 +13,18 @@ This section covers the below grid virtualization topics:
 
 * Virtual Mode-This section discusses how grid works in a virtual mode
 * Virtual Cells-This section discusses about virtual cells in a grid when under virtual mode
+
 ## Virtual Mode
 
 
 Essential Grid for WPF supports virtual mode, which lets you dynamically provide data to the grid by handling an event, QueryCellInfo. This means that the grid does not store any data in its internal data structures. A virtual grid can display millions of rows as easily as it displays a dozen. The grid also exposes a second event, CommitCellInfo that lets you save the changes made in the UI, to the external data source.
 
-Example
+### Example
 
 In this example, the Grid Control displays 99,000,000 x 1,000,000 cells (i.e., 99 million rows and 1 million columns). It is also possible to resize millions of rows instantly without any performance hits. The data is loaded only on demand through the QueryCellInfo event and the changes are saved back to the data source by the CommitCellInfo event.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -117,18 +118,19 @@ void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 }
 
 
+{% endhighlight  %}
 
-Output
+### Output
 
-{{ '![](Grid-Virtualization_images/Grid-Virtualization_img1.png)' | markdownify }}
-{:.image }
+![](Grid-Virtualization_images/Grid-Virtualization_img1.png)
+
 
 
 ## Virtual Cells
 
 The Grid control supports virtual cell architecture where the cell contents are drawn statically until a live cell is required. For example, when you move the mouse over the grid, the cells under the mouse pointer needs to handle mouse inputs. Dynamically, the static cells are turned into live cells that can handle those mouse interactions, as required. These live cells stay in scope until they are no longer needed (which is usually when they are scrolled off the screen). Using static drawing for cells, and thus minimizing the need for large numbers of live cells, provides an optimal way to display large data sources very quickly.
 
-Example
+### Example
 
 The given cell model and the renderer hosts a virtual cell editor inside the grid cell and this cell type is used or activated only when you move your mouse over any grid cell. By default, a grid cell displays a text that is set in OnRender overridden method. When you move the mouse over this cell, it will become a live UIElement editor and not render the cell anymore. This cell is now a virtual cell that will display the cell value stored in the internal cell structure, say, “Edit Me”.
 
@@ -139,7 +141,7 @@ Placing a UIElement as soon as a cell becomes visible is a time consuming proces
 This mechanism will be enabled only if you set SupportsRenderOptimization property to true in the constructor.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -326,12 +328,12 @@ public class VirtualizedCellRenderer : GridVirtualizingCellRenderer<TextBox>
 
 }
 
-
+{% endhighlight  %}
 
 Here is the code to bind the above virtual cell to the grid:
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -342,9 +344,9 @@ grid.Model.TableStyle.CellType = "VirtualizedCell";
 
 grid.Model.TableStyle.CellValue = "Edit Me!";
 
+{% endhighlight  %}
 
+![](Grid-Virtualization_images/Grid-Virtualization_img2.jpeg)
 
-{{ '![](Grid-Virtualization_images/Grid-Virtualization_img2.jpeg)' | markdownify }}
-{:.image }
 
 

@@ -13,46 +13,37 @@ DateTimeEdit control provides globalization support through the Culture propert
 
 
 
-<table>
-<tr>
-<td>
-[XAML]</td></tr>
-<tr>
-<td>
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="LongDate" CultureInfo="en-US"/></td></tr>
-<tr>
-<td>
-[C#]</td></tr>
-<tr>
-<td>
-Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                           Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);dateTimeEdit.Pattern = DateTimePattern.LongDate;dateTimeEdit.CultureInfo = new CultureInfo("en-US");</td></tr>
-</table>
+{% highlight html %}
+[XAML]
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="LongDate" CultureInfo="en-US"/>
+{% endhighlight  %}
+{% highlight c# %}
+[C#]
+
+Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                           Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);dateTimeEdit.Pattern = DateTimePattern.LongDate;dateTimeEdit.CultureInfo = new CultureInfo("en-US");
 
 
-{{ '![](Culture-Support_images/Culture-Support_img1.png)' | markdownify }}
-{:.image }
+{% endhighlight  %}
+![](Culture-Support_images/Culture-Support_img1.png)
 
 
 
 
-<table>
-<tr>
-<td>
-[XAML]</td></tr>
-<tr>
-<td>
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="LongDate" CultureInfo="fr-FR"/></td></tr>
-<tr>
-<td>
-[C#]</td></tr>
-<tr>
-<td>
-Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                           Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);dateTimeEdit.Pattern = DateTimePattern.LongDate;dateTimeEdit.CultureInfo = new CultureInfo("fr-FR");</td></tr>
-</table>
 
 
-{{ '![](Culture-Support_images/Culture-Support_img2.png)' | markdownify }}
-{:.image }
+[XAML]
+{% highlight html %}
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="LongDate" CultureInfo="fr-FR"/>
+{% endhighlight %}
+{% highlight c# %}
+[C#]
+
+Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                           Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);dateTimeEdit.Pattern = DateTimePattern.LongDate;dateTimeEdit.CultureInfo = new CultureInfo("fr-FR");
+
+{% endhighlight  %}
+
+![](Culture-Support_images/Culture-Support_img2.png)
+
 
 
 

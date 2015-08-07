@@ -31,24 +31,21 @@ The pattern is set by using the Pattern property. The following code snippet ill
 
 
 
-<table>
-<tr>
-<td>
-XAML</td></tr>
-<tr>
-<td>
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="ShortDate"></syncfusion:DateTimeEdit></td></tr>
-<tr>
-<td>
-C#</td></tr>
-<tr>
-<td>
-Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                    Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);//Setting predefined patterndateTimeEdit.Pattern = DateTimePattern.ShortDate;</td></tr>
-</table>
+{% highlight html %}
+XAML
+
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="ShortDate"></syncfusion:DateTimeEdit>
+{% endhighlight  %}
+{% highlight c# %}
+C#
 
 
-{{ '![](DateTime-Patterns_images/DateTime-Patterns_img1.png)' | markdownify }}
-{:.image }
+Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                    Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);//Setting predefined patterndateTimeEdit.Pattern = DateTimePattern.ShortDate;
+{% endhighlight  %}
+
+
+![](DateTime-Patterns_images/DateTime-Patterns_img1.png)
+
 
 
 ## Custom Pattern
@@ -56,28 +53,23 @@ Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                    Syn
 You can also set the custom pattern for displaying the date in the DateTimeEdit control by using the CustomPattern property.
 
 
+{% highlight html %}
 
-<table>
-<tr>
-<td>
-XAML</td></tr>
-<tr>
-<td>
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="CustomPattern"                          CustomPattern="MM/dd/yy hh:mm:ss"></syncfusion:DateTimeEdit></td></tr>
-<tr>
-<td>
-C#</td></tr>
-<tr>
-<td>
-Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);dateTimeEdit.Pattern = DateTimePattern.CustomPattern;//Setting Custom PatterndateTimeEdit.CustomPattern = "MM/dd/yy hh:mm:ss";this.LayoutRoot.Children.Add(dateTimeEdit);</td></tr>
-</table>
+XAML
+
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="CustomPattern"                          CustomPattern="MM/dd/yy hh:mm:ss"></syncfusion:DateTimeEdit>
+{% endhighlight %}
+{% highlight c# %}
+C#
+
+Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);dateTimeEdit.Pattern = DateTimePattern.CustomPattern;//Setting Custom PatterndateTimeEdit.CustomPattern = "MM/dd/yy hh:mm:ss";this.LayoutRoot.Children.Add(dateTimeEdit);
+{% endhighlight %}
 
 
-{{ '![](DateTime-Patterns_images/DateTime-Patterns_img2.png)' | markdownify }}
-{:.image }
+![](DateTime-Patterns_images/DateTime-Patterns_img2.png)
 
 
-> _Note: CustomPattern support can be enabled by setting the Pattern property to the DateTimePattern.CustomPattern._
 
-> 
+> Note: CustomPattern support can be enabled by setting the Pattern property to the DateTimePattern.CustomPattern.
+
 

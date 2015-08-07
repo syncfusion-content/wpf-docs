@@ -12,7 +12,7 @@ documentation: ug
 To hide non-working hours in the schedule, the ShowNonWorkingHours property in the schedule must be set as false. The working hours specified using the WorkStartHour and WorkEndHour properties are simply shown in the schedule without showing non-working hours.
 
 
-
+{% highlight html %}
 [XAML]
 
          <syncfusion:SfSchedule x:Name="schedule" Background="White"
@@ -26,7 +26,8 @@ To hide non-working hours in the schedule, the ShowNonWorkingHours property in
         </syncfusion:SfSchedule>      
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 
 [C#]
@@ -42,9 +43,10 @@ To hide non-working hours in the schedule, the ShowNonWorkingHours property in
             schedule.ShowNonWorkingHours=false;
 
              this.grid.Children.Add(schedule);
+{% endhighlight  %}
 
-{{ '![](Hiding-Non-Working-Hours_images/Hiding-Non-Working-Hours_img1.png)' | markdownify }}
-{:.image }
+![](Hiding-Non-Working-Hours_images/Hiding-Non-Working-Hours_img1.png)
+
 
 
 

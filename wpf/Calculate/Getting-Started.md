@@ -15,20 +15,20 @@ This section covers information on the following topics.
 
 The following illustration shows the Class Diagram for Essential Calculate.
 
-{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img1.jpeg)
+
 
 
 ## Create Platform Application
 
 This section illustrates the step-by-step procedure to create the following platform applications.
 
-WPF Application
+### WPF Application
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog box, select WPF Application template, name the project and click OK. 
 
-{{ '![](Getting-Started_images/Getting-Started_img2.jpeg)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img2.jpeg)
+
 
 
 A new WPF application is created.
@@ -61,13 +61,13 @@ The following steps guide you to deploy Essential Calculate:
 
 
 
-> _Note: There is no toolbox support for Calculate in WPF application._
+> Note: There is no toolbox support for Calculate in WPF application.
 
 
 
 3. Then create a CalculateEngine. The CalcQuickBase class is used to create a CalculateEngine.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -77,7 +77,8 @@ The following steps guide you to deploy Essential Calculate:
 
 CalcQuickBase cq = new CalcQuickBase();
 
-
+{% endhighlight  %}
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -89,12 +90,12 @@ Dim cq As CalcQuickBase
 
 cq = New CalcQuickBase()
 
-
+{% endhighlight %}
 
 4. Use the ParseAndCompute method to perform calculations by using the CalculateEngine.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -105,8 +106,8 @@ string formula = "if(20>10,\"BIG\",\"Small\")";
 
 string value = cq.ParseAndCompute(formula);
 
-
-
+{% endhighlight %}
+{% highlight vbnet %}
 [VB.NET]
 
 
@@ -117,14 +118,14 @@ Dim formula As String = "if(20>10,""BIG"",""Small"")"
 
 Dim value As String = cq.ParseAndCompute(formula)
 
-
+{% endhighlight %}
 
 5. You can alsomodify the default behavior of the CalculateEngine by using the Engine property. 
 
-Example 
+### Example 
 
 The default format of appending quotation marks to the concatenated string can be eliminated by using the following code.
-
+{% highlight c# %}
 [C#]
 
 
@@ -133,7 +134,8 @@ The default format of appending quotation marks to the concatenated string can b
 
 cq.Engine.UseNoAmpersandQuotes = true;
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB.NET]
 
@@ -143,9 +145,9 @@ cq.Engine.UseNoAmpersandQuotes = true;
 
 cq.Engine.UseNoAmpersandQuotes = True
 
+{% endhighlight  %}
 
-
-> _Note: Engine is a class that is defined as a "property" in Essential Calculate._
+> Note: Engine is a class that is defined as a "property" in Essential Calculate.
 
 Essential Calculate is now deployed in your WPF application.
 
@@ -167,15 +169,15 @@ The features of Essential Calculate are as follows.
 
 This section shows you how easy it is to get started using Essential Calculate. It gives you a basic introduction to the concepts you need to know before getting started with the product and some tips and ideas on how to use Essential Calculate in your projects.
 
-Console Application Using CalcQuickBase
+### Console Application Using CalcQuickBase
 
 In this section, you can learn how to use the CalcQuickBase object to perform arbitrary calculations from a Console Application. This shows you the minimal steps that are required to use Essential Calculate to add calculation support to an application. This quick application lets you type algebraic expressions using a Console.ReadLine and display the calculated results using a Console.WriteLine.
 
-WPF Application Using CalcQuickBase
+### WPF Application Using CalcQuickBase
 
 In this section, you can create a WPF Application that uses a CalcQuickBase object that handles arbitrary variables in its calculations.
 
-Adding Calculation Support to an Arbitrary Array with an ICalcData Interface
+### Adding Calculation Support to an Arbitrary Array with an ICalcData Interface
 
 This section demonstrates how to add calculation support to an arbitrary array of doubles by adding an additional row and column to hold summary information.
 
@@ -193,15 +195,15 @@ The step-by-step procedure to create a simple console application is as follows:
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
+
 
 
 
 
 2. In the Main method, add the code to create a CalcQuickBase object. Also add the code to loop through the process of retrieving a string and using CalcQuickBase.ParseAndCompute to perform the calculation that is represented by the string. Given below is the code that handles these tasks.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -266,7 +268,8 @@ namespace CalcQuickBaseTutorial
         }
 
 }
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 [VB.NET]
@@ -325,14 +328,14 @@ Namespace CalcQuickBaseTutorial
 
 End Namespace 
 
-
+{% endhighlight  %}
 
 3. Once the code is entered, run the application by pressing F5. Then enter an expression such as 1+2 and press Enter. Enter additional algebraic combinations of constants and named functions from the Function Library like Sin, Cos, Sum and Pi. Press Enter without entering anything to terminate the program. Below is a typical display of this.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
+
 
 
 ### WPF Application Using Variables and CalcQuickBase
@@ -345,8 +348,8 @@ In this section, you can learn how to create a WPF Application that allows you t
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
+
 
 
 
@@ -355,8 +358,8 @@ In this section, you can learn how to create a WPF Application that allows you t
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img6.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img6.png)
+
 
 
 
@@ -364,7 +367,7 @@ In this section, you can learn how to create a WPF Application that allows you t
 3. Double-click the form in the designer to add a Form.Load event handler. Add the code which, is shown below to the project.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -434,7 +437,8 @@ private void button2_Click(object sender, EventArgs e)
         }
 
 }
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 
 [VB]
@@ -513,14 +517,14 @@ Private Sub button2_Click(ByVal sender As Object, ByVal e As EventArgs)
 
 End Sub 
 
-
+{% endhighlight  %}
 
 4. Run the sample by pressing F5. Then in the Name text box, enter Rate and in the Value text box, enter .07. Now press the Register button. Similarly, enter Amount in the Name text box, 15000 in the Value text box followed by pressing the Register button.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img7.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img7.png)
+
 
 
 
@@ -541,8 +545,8 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img8.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img8.png)
+
 
 
 2. As you drop the controls on the form, accept the default names so that you can copy and paste the code snippets later in this lesson. 
@@ -551,8 +555,8 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img9.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img9.png)
+
 
 
 You now have your basic form. Before leaving this form in the designer, double click both buttons to add the button handler code stubs to your Form1 code. You can add the code to these stubs later.
@@ -561,8 +565,8 @@ In order to add arbitrary calculation support to an object, that object must imp
 
 The first step is to add the class. To do so, right-click your project in the Solution Explorer window, select Add, and select Add Class.
 
-{{ '![](Getting-Started_images/Getting-Started_img10.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img10.png)
+
 
 
 
@@ -571,8 +575,8 @@ The first step is to add the class. To do so, right-click your project in the So
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img11.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img11.png)
+
 
 
 
@@ -580,7 +584,7 @@ The first step is to add the class. To do so, right-click your project in the So
 6. After adding the class, Visual Studio displays the class implementation file whose contents are shown below. In the next few steps, you must add the code to this class to create the functionality you need.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -619,7 +623,8 @@ namespace Calculate_ICalcData
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -653,12 +658,12 @@ Namespace Calculate_ICalcData
 
 End Namespace
 
-
+{% endhighlight %}
 
 7. You need to add fields to hold the double array, the extra row and extra column. Additionally, you can add fields to hold the row and column counts for convenience. Here is the code.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -731,7 +736,8 @@ namespace Calculate_ICalcData
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -797,13 +803,13 @@ Public Class ArrayCalcData
 
 End Class
 
-
+{% endhighlight %}
 
 8. Here you are making a constructor that accepts a double array as an argument. In the constructor code, you must save the reference that is to be the passed in a double array, initialize two RowCount and ColCount fields and allocate the two additional arrays that are needed to hold the added sums you want. 
 
 If you notice, you are actually populating these added arrays with formula strings such as "=Sum(A5:D5)". While using Essential Calculate with an ICalcData interface, Essential Calculate uses Excel-like notation to refer to the cells in a rectangular collection. A1 is the first cell in the first row, B1 is second cell in the first row, and so on. So, "=Sum(A5:D5)" sums columns 1 through 4 in row 5. The method RangeInfo.GetAlphaLabel used in the code, converts a numerical value like 1, 2, or 3, into the proper column letter A, B, or C.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -865,7 +871,8 @@ public ArrayCalcData(double[,] dValues)
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -933,7 +940,7 @@ End Sub
 
 
 
-
+{% endhighlight %}
 
 
 
@@ -941,16 +948,16 @@ End Sub
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img12.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img12.png)
+
 
 
 Using Visual Studio 2003 with C#, add a colon after the class name in the class declaration and type ICalcData. Pressing the tab key adds the method stubs. Given below is a picture showing this technique.
 
 If you are using VB.NET, then you can add the ICalcData stubs using the drop-down lists at the top of the edit window in Visual Studio. In the left drop-down, select the ICalcData interface as shown below.
 
-{{ '![](Getting-Started_images/Getting-Started_img13.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img13.png)
+
 
 
 
@@ -959,8 +966,8 @@ Then, in the right drop-down, click each of the four items listed to add the pro
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img14.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img14.png)
+
 
 
 
@@ -968,7 +975,7 @@ Then, in the right drop-down, click each of the four items listed to add the pro
 After doing these steps, you can see these methods in the class code. (In the C# code, the region may be collapsed.)
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1007,7 +1014,8 @@ public void WireParentObject()
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -1041,11 +1049,11 @@ Syncfusion.Calculate.ValueChangedEventArgs) Implements _
 
                         Syncfusion.Calculate.ICalcData.ValueChanged
 
-
+{% endhighlight  %}
 
 10. GetValueRowCol should return the value for a given row and column index. The indexes are one-based by convention. Here is the code that you must use. If the last column is requested, the value in the colSums array is returned. If the last row is requested, the value in the rowSums array is returned. Otherwise, the value in the double array is returned.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1093,7 +1101,8 @@ public object GetValueRowCol(int row, int col)
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -1143,13 +1152,13 @@ Public Function GetValueRowCol(ByVal row As Integer, ByVal col As Integer) _
 
 End Function 
 
-
+{% endhighlight %}
 
 11. SetValueRowCol is used to set the value at a specified row and column index. You can also use it to raise the ValueChanged event. The CalcEngine listens to this event to trigger calculations as values are entered initially and later modified. It is this event that brings calculation support into the object. 
 
 Here is the code you must use. The code is the reverse process of the GetValueRowCol method. At the end of the method, the ValueChanged event is raised.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1209,7 +1218,8 @@ public void SetValueRowCol(object value, int row, int col)
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -1273,14 +1283,14 @@ public void SetValueRowCol(object value, int row, int col)
 
 End Sub 
 
-
+{% endhighlight %}
 
 12. You have to add an indexer definition to the class for two reasons: it is a straight-forward way to force the user to go though the GetValueRowCol and SetValueRowCol methods, allowing the CalcEngine to monitor these changes. It also makes your ArrayCalcData class look like an array.
 
 
 
 Here is the code you must use. It is just a Get and Set implementation that goes through the ICalcData interface methods.
-
+{% highlight c# %}
 [C#]
 
 
@@ -1311,7 +1321,8 @@ public object this[int row, int col]
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -1349,7 +1360,7 @@ Default Public Property Item(ByVal row As Integer, ByVal col As Integer) As Obje
 
 End Property
 
-
+{% endhighlight %}
 
 13. Generate Data button handler creates a random double array and populate it with random double values. It also creates an instance of an ArrayCalcData class to wrap the double array that it creates. It then creates a CalcEngine object that uses this ArrayCalcData object as its datasource. The ShowObject method just displays the values from your ArrayCalcData object in the multiline text box that you added to the form. 
 
@@ -1360,7 +1371,7 @@ The engine.UseDependencies property tells the CalcEngine that you want it to tra
 Here is the code.+--+       
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1475,7 +1486,8 @@ private void ShowObject()
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -1607,14 +1619,14 @@ Private Sub ShowObject()
 
 End Sub 
 
-
+{% endhighlight  %}
 
 Here is a typical display that you might see if you run the application at this point. Recall that the data is random so you may see fewer or more rows and columns. The column on the right is the sum of the columns that precedes it in the same row. The row at the bottom is the sum of the columns above it. You can click the Generate Data button several times to see different data.
 
 
 
-{{ '![](Getting-Started_images/Getting-Started_img15.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img15.png)
+
 
 
 
@@ -1622,7 +1634,7 @@ Here is a typical display that you might see if you run the application at this 
 14. The Set button allows you to set a particular value in the displayed data so you can see the effect of changing this value on the calculations in the last row and last column. Recall that your data store is mimicking an array of doubles, so it indexes from zero even though the ICalcData interface expects one-based indexing. The implementation code takes this into account. 
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1665,7 +1677,8 @@ private void button2_Click(object sender, System.EventArgs e)
 
 }
 
-
+{% endhighlight %}
+{% highlight vbnet %}
 
 [VB]
 
@@ -1714,12 +1727,12 @@ Private Sub button2_Click(ByVal sender As Object, ByVal e As System.EventArgs) _
 ' Button2_Click
 
 End Sub 
-
+{% endhighlight %}
 Here is the code you must use. It allows you to specify the row, column and value. Note there is no error checking code shown here, so enter only values that make sense for the displayed data.
 
 On the previous screen, if you click the Set button, it places 123 in cell 0,0. Notice the calculations update automatically to reflect the new value.
 
-{{ '![](Getting-Started_images/Getting-Started_img16.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img16.png)
+
 
 

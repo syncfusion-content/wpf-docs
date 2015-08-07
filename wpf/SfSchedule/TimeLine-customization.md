@@ -11,14 +11,14 @@ documentation: ug
 
 Timeline elements of Day, Week and TimeLine view can be customized by using the following properties.
 
-Time Interval
+## Time Interval
 
 Time interval can be customized using the TimeInterval property. The default interval is One hour.
 
-TimeMode :
+## TimeMode :
 
 SfSchedule Time format can be changed by using the TimeMode property.
-
+{% highlight html %}
   [XAML]
 
 
@@ -32,7 +32,8 @@ SfSchedule Time format can be changed by using the TimeMode property.
     </Grid>
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 
 [C#]
@@ -48,28 +49,29 @@ SfSchedule Time format can be changed by using the TimeMode property.
             this.grid.Children.Add(schedule);
 
 
+{% endhighlight  %}
 
-{{ '![](TimeLine-customization_images/TimeLine-customization_img1.png)' | markdownify }}
-{:.image }
-
-
-
-
-{{ '![](TimeLine-customization_images/TimeLine-customization_img2.png)' | markdownify }}
-{:.image }
+![](TimeLine-customization_images/TimeLine-customization_img1.png)
 
 
 
 
-Major and Minor Tick Visibility
+
+![](TimeLine-customization_images/TimeLine-customization_img2.png)
+
+
+
+
+
+## Major and Minor Tick Visibility
 
 The major and minor tick visibility can be customized by MajorTickVisibility and MinorTickVisibility.
 
-Major and Minor Tick brush
+## Major and Minor Tick brush
 
 The major and minor tick brush can be customized using HourStroke and MinuteStroke properties.
 
-Interval Height
+## Interval Height
 
 The height between the intervals can be set using IntervalHeight property and its default value is 40.
 

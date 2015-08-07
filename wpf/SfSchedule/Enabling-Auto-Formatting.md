@@ -10,7 +10,7 @@ documentation: ug
 # Enabling Auto Formatting
 
 When reducing the size of the schedule in week and month views, headers may be only partially shown. To avoid incompletely displayed headers, automatic formatting can be enabled by setting the EnableAutoFormat property of the SfSchedule control as true.
-
+{% highlight html %}
 [XAML]
 
         <syncfusion:SfSchedule x:Name="schedule" Background="White"
@@ -25,7 +25,8 @@ When reducing the size of the schedule in week and month views, headers may be o
 
 
 
-
+{% endhighlight  %}
+{% highlight c# %}
 
 [C#]
 
@@ -43,32 +44,32 @@ When reducing the size of the schedule in week and month views, headers may be o
 
             this.grid.Children.Add(schedule);
 
+{% endhighlight  %}
+
+
+
+![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img1.png)
+
+
+
+![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img2.png)
+
+
+
+![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img3.png)
 
 
 
 
-{{ '![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img1.png)' | markdownify }}
-{:.image }
 
+![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img4.png)
 
-__{{ '![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img2.png)' | markdownify }}
-{:.image }
-
-
-{{ '![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img3.png)' | markdownify }}
-{:.image }
-
-
-
-
-{{ '![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img4.png)' | markdownify }}
-{:.image }
 
 
 
 
 In the time line view, the width of the hours can be automatically adjusted by enabling EnableAutoFormat. To automatically adjust the width of the hours, IntervalHeight should not be specified with a particular value. If IntervalHeight is specified for the SfSchedule control, then the width of the hours in the time line view will be sized with the specified IntervalHeight.
-
+{% highlight html %}
  [XAML]
 
         <syncfusion:SfSchedule x:Name="schedule" Background="White"
@@ -84,26 +85,21 @@ In the time line view, the width of the hours can be automatically adjusted by e
         </syncfusion:SfSchedule>
 
 
+{% endhighlight  %}
 
 
-
-<table>
-<tr>
-<td>
-[C#]            SfSchedule schedule = new SfSchedule();            schedule.Background = new SolidColorBrush(Colors.White);            schedule.Height = 400;            schedule.Width = 500;            schedule.MajorTickTimeFormat = "hh- mm- ss tt";            schedule.EnableAutoFormat = true;            schedule.ScheduleType = ScheduleType.TimeLine;            this.grid.Children.Add(schedule);</td></tr>
-<tr>
-<td>
-</td></tr>
-</table>
+{% highlight c# %}
+[C#]            SfSchedule schedule = new SfSchedule();            schedule.Background = new SolidColorBrush(Colors.White);            schedule.Height = 400;            schedule.Width = 500;            schedule.MajorTickTimeFormat = "hh- mm- ss tt";            schedule.EnableAutoFormat = true;            schedule.ScheduleType = ScheduleType.TimeLine;            this.grid.Children.Add(schedule);
+{% endhighlight %}
 
 
-{{ '![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img5.png)' | markdownify }}
-{:.image }
+![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img5.png)
+
 
 
 
 
 {{ '![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img6.png)' | markdownify }}
-{:.image }
+
 
 

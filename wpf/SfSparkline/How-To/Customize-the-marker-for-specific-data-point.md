@@ -56,6 +56,6 @@ We can customize the marker for specific data point with custom template for Lin
 Following is the snapshot for custom marker position,
 
 {{ '![C:/Users/ApoorvahR/Desktop/12.png](Customize-the-marker-for-specific-data-point_images/Customize-the-marker-for-specific-data-point_img1.png)' | markdownify }}
-{:.image }
+
 
 

@@ -10,7 +10,7 @@ documentation: ug
 # Focused and Non-Focused Month Brush
 
 In Schedule month view, date of the current selected month and date of previous/next months can be differentiated using the FocusedMonth and NonFocusedMonth properties respectively.
-
+{% highlight html %}
 [XAML]
 
 
@@ -19,9 +19,9 @@ In Schedule month view, date of the current selected month and date of previous/
 
                           NonFocusedMonth="WhiteSmoke" ScheduleType="Month" />
 
+{% endhighlight  %}
 
-
-
+{% highlight c# %}
 
 [C#]
 
@@ -38,11 +38,11 @@ In Schedule month view, date of the current selected month and date of previous/
             this.grid.Children.Add(schedule);
 
 
+{% endhighlight  %}
 
 
+![](Focused-and-Non-Focused-Month-Brush_images/Focused-and-Non-Focused-Month-Brush_img1.png)
 
-{{ '![](Focused-and-Non-Focused-Month-Brush_images/Focused-and-Non-Focused-Month-Brush_img1.png)' | markdownify }}
-{:.image }
 
 
 

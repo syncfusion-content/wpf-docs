@@ -15,11 +15,11 @@ documentation: ug
 
 In this group all the properties are used to design the recurrence pattern. There are four different types of recurrences: They are: 
 
-Daily:
+### Daily:
 
 Set “IsDailyEveryNDays” property as true to apply recurrence in specific day interval and proved the day interval using the “DailyNDays” property. Or set “IsDailyEveryNDays” property to false to apply recurrence for all weekdays.
 
-Weekly:
+### Weekly:
 
 Provide week intervals using “WeeklyEveryNWeeks” property and use the below property to apply recurrence in the selected weekdays.
 
@@ -33,11 +33,11 @@ Provide week intervals using “WeeklyEveryNWeeks” property and use the below 
 
 
 
-Monthly:
+### Monthly:
 
 Provide month intervals using “MonthlyEveryNMonths” property and set “IsMonthlySpecific” property as true to apply recurrence for the particular month day which can be chosen by “MonthlySpecificMonthDay” property. Set “IsMonthlySpecific” property as false to apply recurrence in particular week and weekday (ex: Monday of forth week) in specific month interval using “MonthlyNthWeek” and “MonthlyWeekDay” properties.
 
-Yearly:
+### Yearly:
 
 Provide year intervals using “YearlyEveryNYears” property and set “IsYearlySpecific” property as true to apply recurrence in particular date and month in specific year interval. Or set “IsYearlySpecific” property as false to apply recurrence in particular week and weekday and month (ex: Monday of forth week of June) in specific year interval.
 
@@ -59,15 +59,12 @@ RRuleGenerator method is used to create RRule which is available in the Schedule
 
 Recurrence can be applied by using RRuleGenerator method.
 
-<table>
-<tr>
-<td>
-[C#]            // Daily Recursive Appointment            ScheduleAppointment SchApp = new ScheduleAppointment();            SchApp.Subject = "Team Meeting";            SchApp.Notes = "Daily Recurrence";            SchApp.Location = "Meeting Hall 1";            SchApp.StartTime = currentdate;            SchApp.EndTime = currentdate.AddHours(4);            SchApp.AppointmentBackground = new SolidColorBrush((Color.FromArgb(0xFF, 0xD8, 0x00, 0x73)));            // Setting Recurrence Properties            RecurrenceProperties RecProp = new RecurrenceProperties();            RecProp.RecurrenceType = RecurrenceType.Daily;            RecProp.IsDailyEveryNDays = true;            RecProp.DailyNDays = 2;            RecProp.IsRangeRecurrenceCount = true;            RecProp.IsRangeNoEndDate = false;            RecProp.IsRangeEndDate = false;            RecProp.RangeRecurrenceCount = 100;            // Generating RRule using ScheduleHelper            SchApp.RecurrenceRule = ScheduleHelper.RRuleGenerator(RecProp, SchApp.StartTime, SchApp.EndTime);            SchApp.IsRecursive = true;            AppCollection.Add(SchApp);            Schedule.Appointments = AppCollection;</td></tr>
-<tr>
-<td>
+{% highlight c# %}
+[C#]            // Daily Recursive Appointment            ScheduleAppointment SchApp = new ScheduleAppointment();            SchApp.Subject = "Team Meeting";            SchApp.Notes = "Daily Recurrence";            SchApp.Location = "Meeting Hall 1";            SchApp.StartTime = currentdate;            SchApp.EndTime = currentdate.AddHours(4);            SchApp.AppointmentBackground = new SolidColorBrush((Color.FromArgb(0xFF, 0xD8, 0x00, 0x73)));            // Setting Recurrence Properties            RecurrenceProperties RecProp = new RecurrenceProperties();            RecProp.RecurrenceType = RecurrenceType.Daily;            RecProp.IsDailyEveryNDays = true;            RecProp.DailyNDays = 2;            RecProp.IsRangeRecurrenceCount = true;            RecProp.IsRangeNoEndDate = false;            RecProp.IsRangeEndDate = false;            RecProp.RangeRecurrenceCount = 100;            // Generating RRule using ScheduleHelper            SchApp.RecurrenceRule = ScheduleHelper.RRuleGenerator(RecProp, SchApp.StartTime, SchApp.EndTime);            SchApp.IsRecursive = true;            AppCollection.Add(SchApp);            Schedule.Appointments = AppCollection;
+{% endhighlight %}
+
 ![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_25.jpg](Recurrence_images/Recurrence_img1.jpeg)
-{:.image }
-</td></tr>
-</table>
+
+
 
 

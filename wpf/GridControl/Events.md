@@ -21,9 +21,9 @@ _Properties_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cell</td><td>
@@ -42,12 +42,12 @@ These events are essential to operate the grid in virtual mode, where:
 
 The QueryCellInfo is used to completely customize the grid cells. The code  below sets up a Virtual Grid by applying these events and also paints alternate rows using QueryCellInfo event. The QueryCellInfo event is raised for each cell that requires redrawing.
 
-Example
+### Example
 
 These events can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -56,11 +56,11 @@ this.grid.QueryCellInfo += new GridQueryCellInfoEventHandler(grid_QueryCellInfo)
 
 this.grid.CommitCellInfo += new GridCommitCellInfoEventHandler(grid_CommitCellInfo);
 
+{% endhighlight  %}
 
+### Event Handlers 
 
-Event Handlers 
-
-
+{% highlight c# %}
 
 [C#]
 
@@ -134,22 +134,22 @@ void grid_CommitCellInfo(object sender, GridCommitCellInfoEventArgs e)
 
 }
 
+{% endhighlight  %}
 
-
-Output
+### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Events_images/Events_img1.jpeg)' | markdownify }}
-{:.image }
+![](Events_images/Events_img1.jpeg)
+
 
 
 _QueryCellInfo and CommitCellInfo_
 
 ## QueryBaseStyles
-
+{% highlight c# %}
 [C#]
 
 
@@ -186,7 +186,7 @@ void grid_QueryBaseStyles(object sender, GridQueryBaseStylesEventArgs e)
 
 }
 
-
+{% endhighlight  %}
 
 This event is used to provide base styles for desired grid cells. It receives an argument of type GridQueryBaseStylesEventArgs that contains the following parameters.
 
@@ -194,9 +194,9 @@ _Properties_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 BaseStyles</td><td>
@@ -212,11 +212,11 @@ Gives cell style information.</td></tr>
 </table>
 
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -224,16 +224,16 @@ This event can be triggered using the following code:
 
 this.grid.QueryBaseStyles += new GridQueryBaseStylesEventHandler(grid_QueryBaseStyles);
 
+{% endhighlight  %}
 
+### Event Handler
 
-Event Handler
-
-Output
+### Output
 
 The following output is generated using the code above.
 
-{{ '![](Events_images/Events_img2.jpeg)' | markdownify }}
-{:.image }
+![](Events_images/Events_img2.jpeg)
+
 
 
 _QueryBaseStyles_
@@ -246,9 +246,9 @@ _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 CellRowColumnIndex</td><td>
@@ -260,11 +260,11 @@ Defines the covered range for the cell.</td></tr>
 </table>
 
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -272,12 +272,12 @@ This event can be triggered using the following code:
 
 grid.QueryCoveredRange += new GridQueryBaseStylesEventArgs (grid_QueryCoveredRange);
 
+{% endhighlight  %}
+
+### Event Handler
 
 
-Event Handler
-
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -305,15 +305,15 @@ void grid_QueryCoveredRange(object sender, GridQueryBaseStylesEventArgs e)
     }
 
 }
+{% endhighlight  %}
 
 
-
-Output
+### Output
 
 The following output is generated using the code above.
 
-{{ '![](Events_images/Events_img3.jpeg)' | markdownify }}
-{:.image }
+![](Events_images/Events_img3.jpeg)
+
 
 
 _QueryCoveredRange_
@@ -326,9 +326,9 @@ _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 CellRowColumnIndex</td><td>
@@ -340,24 +340,24 @@ Defines the covered range for the cell.</td></tr>
 </table>
 
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
 
 grid.QueryCellSpanBackgrounds += new GridQueryCellSpanBackgroundsEventHandler (grid_QueryCellSpanBackgrounds);
 
+{% endhighlight  %}
+
+### Event Handler
 
 
-Event Handler
-
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -384,14 +384,14 @@ void grid_QueryCellSpanBackgrounds(object sender, GridQueryCellSpanBackgroundsEv
 
 }
 
+{% endhighlight  %}
 
-
-Output
+### Output
 
 The following output is generated using the code above.
 
-{{ '![](Events_images/Events_img4.jpeg)' | markdownify }}
-{:.image }
+![](Events_images/Events_img4.jpeg)
+
 
 
 _QueryCellSpanBackgrounds_
@@ -406,9 +406,9 @@ _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AllowResize</td><td>
@@ -438,9 +438,9 @@ _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AllowResize</td><td>
@@ -464,11 +464,11 @@ Indicates the point at which the mouse hits the column before resizing.</td></tr
 </table>
 
 
-Example
+### Example
 
 These events can be invoked as follows:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -478,12 +478,12 @@ grid.ResizingRows += new GridResizingRowsEventHandler(grid_ResizingRows);
 
 grid.ResizingColumns += new GridResizingColumnsEventHandler(grid_ResizingColumns);
 
+{% endhighlight  %}
+
+### Event Handlers:
 
 
-Event Handlers:
-
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -513,6 +513,7 @@ if (args.Columns.Left == 3)
 args.AllowResize = false;
 
 }
+{% endhighlight  %}
 
 ## GridResizingRowsEventArgs
 
@@ -522,9 +523,9 @@ _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AllowResize</td><td>
@@ -546,6 +547,7 @@ Specifies the row height.</td></tr>
 Point </td><td>
 Indicates the point at which the mouse hits the row before resizing.</td></tr>
 </table>
+
 ## GridResizingColumnsEventArgs
 
 The following table provides information on the properties of the event:
@@ -554,9 +556,9 @@ _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AllowResize</td><td>
@@ -580,11 +582,11 @@ Indicates the point at which the mouse hits the column before resizing.</td></tr
 </table>
 
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -594,12 +596,12 @@ grid.ResizingRows += new GridResizingRowsEventHandler(grid_ResizingRows);
 
 grid.ResizingColumns += new GridResizingColumnsEventHandler (grid_ResizingColumns);
 
+{% endhighlight  %}
+
+### Event Handlers
 
 
-Event Handlers
-
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -629,6 +631,7 @@ void grid_ResizingColumns(object sender, GridResizingColumnsEventArgs args)
     args.AllowResize = false;
 
 }
+{% endhighlight %}
 
 ## RowsInserted and ColumnsInserted
 
@@ -638,9 +641,9 @@ _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Count</td><td>
@@ -652,11 +655,11 @@ The row or column index where the cells should be inserted before.</td></tr>
 </table>
 
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -666,11 +669,11 @@ grid.Model.RowsInserted += new GridRangeInsertedEventHandler (Model_RowsInserted
 
 grid.Model.ColumnsInserted += new GridRangeInsertedEventHandler (Model_ColumnsInserted);
 
+{% endhighlight  %}
 
+### Event Handlers
 
-Event Handlers
-
-
+{% highlight c# %}
 
 [C#]
 
@@ -694,7 +697,7 @@ void Model_RowsInserted(object sender, GridRangeInsertedEventArgs e)
 
 }
 
-
+{% endhighlight  %}
 
 ## RowsMoved and ColumnsMoved
 
@@ -704,9 +707,9 @@ _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Count</td><td>
@@ -722,11 +725,11 @@ The index of the first row or column that was removed.</td></tr>
 </table>
 
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -735,12 +738,12 @@ This event can be triggered using the following code:
 grid.Model.RowsMoved += new GridRangeMovedEventHandler(Model_RowsMoved);
 
 grid.Model.ColumnsMoved += new GridRangeMovedEventHandler (Model_ColumnsMoved);
+{% endhighlight  %}
 
 
+### Event Handlers
 
-Event Handlers
-
-
+{% highlight c# %}
 
 [C#]
 
@@ -765,7 +768,7 @@ void Model_ColumnsMoved(object sender, GridRangeMovedEventArgs e)
 }
 
 
-
+{% endhighlight  %}
 ## RowsRemoved and ColumnsRemoved
 
 These events are triggered when a range of rows or columns are removed from the grid. Their event handlers receive an argument of type GridRangeRemovedEventArgs containing data related to these events. Following are the event argument properties that provides information about the rows or columns removal.
@@ -774,9 +777,9 @@ _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Count</td><td>
@@ -788,12 +791,12 @@ The index of the first row or column that was removed.</td></tr>
 </table>
 
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -803,11 +806,12 @@ grid.Model.RowsRemoved += new GridRangeRemovedEventHandler (Model_RowsRemoved);
 grid.Model.ColumnsRemoved += new GridRangeRemovedEventHandler (Model_ColumnsRemoved);
 
 
+{% endhighlight  %}
 
-Event Handlers
+### Event Handlers
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -829,6 +833,7 @@ void Model_ColumnsRemoved(object sender, GridRangeRemovedEventArgs e)
     Console.WriteLine(e.RemoveAt + 1 - e.Count + " column(s) are removed from position " + e.RemoveAt);
 
 }
+{% endhighlight  %}
 
 ## ClipboardCanCopy
 
@@ -845,9 +850,9 @@ _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -863,11 +868,11 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -875,13 +880,13 @@ This event can be triggered using the following code:
 
 gridControl.Model.ClipboardCanCopy += new GridCutPasteEventHandler(Model_ClipboardCanCopy);
 
+{% endhighlight  %}
 
-
-Event Handler
+### Event Handler
 
 The following event handler prevents the data in row 2 from getting copied.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -900,6 +905,7 @@ void Model_ClipboardCanCopy(object sender, GridCutPasteEventArgs e)
     }
 
 }
+{% endhighlight  %}
 
 ## ClipboardCanCut
 
@@ -909,9 +915,9 @@ _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -927,12 +933,12 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -940,13 +946,13 @@ This event can be triggered using the following code:
 gridControl.Model.ClipboardCanCut += new GridCutPasteEventHandler(Model_ClipboardCanCut);
 
 
-
+{% endhighlight  %}
 Event Handler
 
 The following event handler prevents the data in row 2 from getting cut.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -964,6 +970,7 @@ void Model_ClipboardCanCut(object sender, GridCutPasteEventArgs e)
     }
 
 }
+{% endhighlight  %}
 
 ## ClipboardCanPaste
 
@@ -973,9 +980,9 @@ _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -991,11 +998,11 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1004,12 +1011,13 @@ This event can be triggered using the following code:
 gridControl.Model.ClipboardCanPaste += new GridCutPasteEventHandler(Model_ClipboardCanPaste);
 
 
+{% endhighlight  %}
 
-Event Handler
+### Event Handler
 
 The following event handler prevents the data in row 2 from getting pasted.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1028,6 +1036,7 @@ void Model_ClipboardCanPaste(object sender, GridCutPasteEventArgs e)
     }
 
 }
+{% endhighlight  %}
 
 ## ClipboardCopy
 
@@ -1037,9 +1046,9 @@ _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -1055,11 +1064,11 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1067,14 +1076,14 @@ This event can be triggered using the following code:
 
 gridControl.Model.ClipboardCopy += new GridCutPasteEventHandler(Model_ClipboardCopy);
 
+{% endhighlight %}
 
-
-Event Handler
+### Event Handler
 
 The following event handler sets up new data for clipboard copy.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1096,6 +1105,7 @@ void Model_ClipboardCopy(object sender, GridCutPasteEventArgs e)
     }
 
 }
+{% endhighlight  %}
 
 ## ClipboardCut
 
@@ -1105,9 +1115,9 @@ _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -1123,25 +1133,25 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
 
 gridControl.Model.ClipboardCut += new GridCutPasteEventHandler(Model_ClipboardCut);
 
+{% endhighlight %}
 
-
-Event Handler
+### Event Handler
 
 The following event handler sets up new data for clipboard cut operation.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1164,6 +1174,7 @@ void Model_ClipboardCut(object sender, GridCutPasteEventArgs e)
     }
 
 }
+{% endhighlight  %}
 
 ## ClipboardPaste
 
@@ -1173,9 +1184,9 @@ _Property_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -1191,26 +1202,26 @@ When true, indicates that the event has been handled and no further processing o
 </table>
 
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
 
 gridControl.Model.ClipboardPaste += new GridCutPasteEventHandler(Model_ClipboardPaste);
 
+{% endhighlight  %}
 
-
-Event Handler
+### Event Handler
 
 The following event handler sets up new data for clipboard paste.
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1232,30 +1243,31 @@ void Model_ClipboardPaste(object sender, GridCutPasteEventArgs e)
     }
 
 }
+{% endhighlight  %}
 
 ## CellButtonClick
 
 This event is triggered when a cell button is clicked. It receives an argument of type GridCellButtonClickEventArgs, which helps display the row and column indices of the cell whose button is clicked. For example: If the cell button clicked is placed in the second row and second column, the display message will be- ”Button clicked at cell [2,2]”.
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
 
 grid.CellButtonClick += new GridCellButtonClickEventHandler(grid_CellButtonClick);
 
+{% endhighlight  %}
 
-
-Event Handler
+### Event Handler
 
 The following event handler sets up new data for clipboard paste.
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1269,16 +1281,16 @@ void grid_CellButtonClick(object sender, GridCellButtonClickEventArgs e)
 
 }
 
+{% endhighlight  %}
 
-
-Output
+### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Events_images/Events_img5.jpeg)' | markdownify }}
-{:.image }
+![](Events_images/Events_img5.jpeg)
+
 
 
 _CellButtonClick_
@@ -1287,11 +1299,11 @@ _CellButtonClick_
 
 This event is triggered when a cell is clicked. It receives an argument of type GridCellClickEventArgs  which helps display the row and column indices of the cell that is clicked with its click count. For example: If the cell clicked is placed in the third row and second column and clicked once, the display message will be- ”Cell [3,2] is clicked 1 times”.
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1300,11 +1312,12 @@ This event can be triggered using the following code:
 grid.CellClick += new GridCellClickEventHandler(grid_CellClick);
 
 
+{% endhighlight  %}
 
-Event Handler
+### Event Handler
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1317,23 +1330,23 @@ void grid_CellClick(object sender, GridCellClickEventArgs e)
 
 }
 
+{% endhighlight  %}
 
-
-Output
+### Output
 
 The following output is generated using the code above.
 
 
 
-{{ '![](Events_images/Events_img6.jpeg)' | markdownify }}
-{:.image }
+![](Events_images/Events_img6.jpeg)
+
 
 
 _CellClick_
 
 ## Cell Mouse Events
 
-The following are the cell mouse events:
+### The following are the cell mouse events:
 
 * CellMouseDown-Occurs when a mouse button is pressed in a grid cell with the click count.
 * CellMouseUP–Occurs when a mouse button is released in a grid cell with the click count.
@@ -1342,12 +1355,12 @@ The following are the cell mouse events:
 
 These events receive an argument of type GridCellMouseControllerEventArgs that provides information related to mouse events including the click position.
 
-Example
+### Example
 
 These events can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1361,10 +1374,11 @@ grid.CellMouseMove += new GridCellMouseControllerEventHandler(grid_CellMouseMove
 grid.CellMouseUp += new GridCellMouseControllerEventHandler(grid_CellMouseUp);
 
 
+{% endhighlight  %}
 
-Event Handlers
+### Event Handlers
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1412,38 +1426,38 @@ void grid_CellMouseDown(object sender, GridCellMouseControllerEventArgs args)
 
 }
 
+{% endhighlight %}
 
-
-Output
+### Output
 
 The following outputs are generated using the code above.
 
-{{ '![](Events_images/Events_img7.jpeg)' | markdownify }}
-{:.image }
+![](Events_images/Events_img7.jpeg)
+
 
 
 _MouseUp_
 
 
 
-{{ '![](Events_images/Events_img8.jpeg)' | markdownify }}
-{:.image }
+![](Events_images/Events_img8.jpeg)
+
 
 
 _MouseMove_
 
 
 
-{{ '![](Events_images/Events_img9.jpeg)' | markdownify }}
-{:.image }
+![](Events_images/Events_img9.jpeg)
+
 
 
 _MouseHover_
 
 
 
-{{ '![](Events_images/Events_img10.jpeg)' | markdownify }}
-{:.image }
+![](Events_images/Events_img10.jpeg)
+
 
 
 _MouseDown_
@@ -1452,24 +1466,24 @@ _MouseDown_
 
 When you click a grid cell at run time, it becomes the CurrentCell (activated/designated as CurrentCell). This event is fired while activating this cell. It occurs before the grid activates the specified cell as current cell. It receives an argument of type GridCurrentCellActivatingEventArgs that let you specify – ActivateCurrentCellOptions for the given cell.
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
 
 grid.CurrentCellActivating += new GridCurrentCellActivatingEventHandler(grid_CurrentCellActivating);
 
+{% endhighlight  %}
+
+### Event Handler
 
 
-Event Handler
-
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -1481,17 +1495,18 @@ void grid_CurrentCellActivating(object sender, GridCurrentCellActivatingEventArg
     args.ActivateOptions.SetCurrentCellOptions = GridSetCurrentCellOptions.ScrollInView;
 
 }
+{% endhighlight %}
 
 ## CurrentCellActivated
 
 It occurs after the grid activates the specified cell as current cell. It receives an argument of type SyncfusionRoutedEventArgs that provides the cell co-ordinates, hence the location of the cell.
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1499,11 +1514,12 @@ This event can be triggered using the following code:
 grid.CurrentCellActivated += new GridRoutedEventHandler(grid_CurrentCellActivated);
 
 
+{% endhighlight  %}
 
-Event Handler
+### Event Handler
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1515,29 +1531,30 @@ void grid_CurrentCellActivated(object sender, SyncfusionRoutedEventArgs args)
     MessageBox.Show("CurrentCell is " + grid.CurrentCell.RowIndex + ", " + grid.CurrentCell.ColumnIndex);
 
 }
+{% endhighlight %}
 
 ## CurrentCellDeactivating	
 
 It occurs before the grid deactivates the specified cell as current cell. It receives an argument of type SyncfusionCancelRoutedEventArgs that let you cancel this event. When you click a second cell, it first deactivates the first(current) cell and then designates the second cell as current cell.
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
 
 grid.CurrentCellDeactivating += new GridCancelRoutedEventHandler(grid_CurrentCellDeactivating);
 
+{% endhighlight  %}
+
+### Event Handler
 
 
-Event Handler
-
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -1549,17 +1566,18 @@ void grid_CurrentCellDeactivating(object sender, SyncfusionCancelRoutedEventArgs
     args.Cancel = true;
 
 }
+{% endhighlight  %}
 
 ## CurrentCellDeactivated
 
 It occurs after the grid activates the specified cell as current cell. It receives an argument of type GridCurrentCellDeactivatedEventArgs that gives the cell co-ordinates.
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1567,10 +1585,11 @@ This event can be triggered using the following code:
 grid.CurrentCellDeactivated += new GridCurrentCellDeactivatedEventHandler(grid_CurrentCellDeactivated);
 
 
+{% endhighlight  %}
 
-Event Handler
+### Event Handler
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1583,17 +1602,18 @@ void grid_CurrentCellDeactivated(object sender, GridCurrentCellDeactivatedEventA
     MessageBox.Show("Cell deactivated:" + args.CellRowColumnIndex.RowIndex + ", " + args.CellRowColumnIndex.ColumnIndex);
 
 }
+{% endhighlight  %}
 
 ## CurrentCellStartEditing
 
 It occurs before the current cell switches into editing mode (when the cell is double-clicked). It receives an argument of type SyncfusionCancelRoutedEventArgs that provides an option to cancel this event.
 
- Example
+### Example
 
 This event can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1601,10 +1621,11 @@ This event can be triggered using the following code:
 grid.CurrentCellStartEditing += new GridCancelRoutedEventHandler(grid_CurrentCellStartEditing);
 
 
+{% endhighlight %}
 
-Event Handler
+### Event Handler
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1617,29 +1638,30 @@ void grid_CurrentCellStartEditing(object sender, SyncfusionCancelRoutedEventArgs
     args.Cancel = true;
 
 }
+{% endhighlight  %}
 
 ## CurrentCellEditingComplete
 
 It occurs when the grid completes the editing mode for active current cell. [After editing the cell, when you click to next cell or when you click any other form control or when you press escape, the cell editing mode gets stopped. This event is fired at that time.]
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
 
 grid.CurrentCellEditingComplete += new GridRoutedEventHandler(grid_CurrentCellEditingComplete);
+{% endhighlight  %}
 
 
-
-Event Handler
-
+### Event Handler
 
 
+{% highlight c# %}
 [C#]
 
 
@@ -1652,17 +1674,17 @@ void grid_CurrentCellEditingComplete(object sender, SyncfusionRoutedEventArgs ar
 
 }
 
+{% endhighlight %}
 
-
-CurrentCellValidating
+### CurrentCellValidating
 
 It occurs when the grid validates the contents of active current cell. It receives an argument of type SyncfusionCancelRoutedEventArgs that provides an option to cancel this event.[After editing completes, the text you entered will be checked for validity before getting applied to the cell. You can place your validation code here and if the text is invalid, you can cancel the operation by setting args.Cancel to true, which in turn will ignore the new text and will keep the old text. This event is fired during the validation operation.
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1671,12 +1693,12 @@ This event can be triggered using the following code:
 grid.CurrentCellValidating += new GridCancelRoutedEventHandler(grid_CurrentCellValidating);
 
 
+{% endhighlight  %}
 
 
+### Event Handler
 
-Event Handler
-
-
+{% highlight c# %}
 
 [C#]
 
@@ -1689,17 +1711,18 @@ void grid_CurrentCellValidating(object sender, SyncfusionCancelRoutedEventArgs a
     args.Cancel = true;
 
 }
+{% endhighlight  %}
 
 ## CurrentCellValidated
 
 It occurs when the grid has successfully validated the contents of active current cell.
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1708,12 +1731,12 @@ grid.CurrentCellValidated += new GridRoutedEventHandler(grid_CurrentCellValidate
 
 
 
+{% endhighlight  %}
+
+### Event Handler
 
 
-Event Handler
-
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -1725,17 +1748,18 @@ void grid_CurrentCellValidated(object sender, SyncfusionRoutedEventArgs args)
     Console.WriteLine(grid.CurrentCell.ToString());
 
 }
+{% endhighlight  %}
 
 ## CurrentCellChanging
 
 It occurs when the user wants to modify the contents of current cell. It receives an argument of type SyncfusionCancelRoutedEventArgs that provides an option to cancel this event.
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
 
-
+{% highlight c# %}
 [C#]
 
 
@@ -1744,12 +1768,12 @@ grid.CurrentCellChanging += new GridCancelRoutedEventHandler(grid_CurrentCellCha
 
 
 
+{% endhighlight  %}
+
+### Event Handler
 
 
-Event Handler
-
-
-
+{% highlight c# %}
 [C#]
 
 
@@ -1761,16 +1785,17 @@ void grid_CurrentCellChanging(object sender, SyncfusionCancelRoutedEventArgs arg
     args.Cancel = true;
 
 }
+{% endhighlight  %}
 
 ## CurrentCellChanged
 
 It occurs when the user changes the contents of active current cell.
 
-Example
+### Example
 
 This event can be triggered using the following code:
 
-
+{% highlight c# %}
 
 [C#]
 
@@ -1780,11 +1805,11 @@ grid.CurrentCellChanged += new GridRoutedEventHandler(grid_CurrentCellChanged);
 
 
 
+{% endhighlight  %}
 
+### Event Handler
 
-Event Handler
-
-
+{% highlight c# %}
 
  [C#]
 
@@ -1799,4 +1824,4 @@ void grid_CurrentCellChanged(object sender, SyncfusionRoutedEventArgs args)
 }
 
 
-
+{% endhighlight  %}

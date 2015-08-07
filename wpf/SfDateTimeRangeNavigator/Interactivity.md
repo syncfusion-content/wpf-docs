@@ -17,9 +17,9 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ZoomPosition</td><td>
@@ -59,10 +59,10 @@ _Event Table_
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Parameters</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Parameters</th><th>
+Description</th></tr>
 <tr>
 <td>
 ValueChanged</td><td>
@@ -70,7 +70,7 @@ ValueChanged(Object sender, EventArgs e)</td><td>
 This event is triggered when the position of the scrollbar changed</td></tr>
 </table>
 
-
+{% highlight html %}
 [XAML]
 
 <chart:SfChart x:Name="financialChart">            
@@ -106,11 +106,11 @@ This event is triggered when the position of the scrollbar changed</td></tr>
 </chart:SfDateTimeRangeNavigator>
 
 
-
+{% endhighlight  %}
 The following is the screenshot of SfDateTimeRangeNavigator selecting one Quarter of data.
 
-{{ '![C:/Users/ApoorvahR/Desktop/3.png](Interactivity_images/Interactivity_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/3.png](Interactivity_images/Interactivity_img1.png)
+
 
 
 _SfDateTimeRangeNavigator selecting  one Quarter of data_
@@ -119,8 +119,8 @@ The following is the screenshot of SfDateTimeRangeNavigator after zooming into w
 
 
 
-{{ '![C:/Users/ApoorvahR/Desktop/4.png](Interactivity_images/Interactivity_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/ApoorvahR/Desktop/4.png](Interactivity_images/Interactivity_img2.png)
+
 
 
 _SfDateTimeRangeNavigator after zooming into weeks of data from 6 months of data_
