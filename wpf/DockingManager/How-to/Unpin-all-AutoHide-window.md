@@ -7,19 +7,22 @@ control: DockingManager
 documentation: ug
 ---
 
-### Unpin all AutoHide window
+## Unpin all AutoHide window
 
 You can Unpin all AutoHidden windows by using the method UnPinAutoHide().This can be shown below:
 
 
+{% highlight xml %}
+  <syncfusion:DockingManager Name="DockingManager"> 
+  <Grid syncfusion:DockingManager.State="AutoHidden"/> 
+  <Grid syncfusion:DockingManager.State="AutoHidden"/> 
+  <Grid syncfusion:DockingManager.State="AutoHidden"/> 
+  <Grid syncfusion:DockingManager.State="AutoHidden"/> 
+  </syncfusion:DockingManager>
+{% endhighlight %}
 
-<table>
-<tr>
-<td>
-[XAML]  <syncfusion:DockingManager Name="DockingManager">            <Grid syncfusion:DockingManager.State="AutoHidden"/>            <Grid syncfusion:DockingManager.State="AutoHidden"/>            <Grid syncfusion:DockingManager.State="AutoHidden"/>            <Grid syncfusion:DockingManager.State="AutoHidden"/>  </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager. UnPinAllAutoHide();  </td></tr>
-</table>
+{% highlight c# %}
+DockingManager. UnPinAllAutoHide();  
+{% endhighlight %}
 
 

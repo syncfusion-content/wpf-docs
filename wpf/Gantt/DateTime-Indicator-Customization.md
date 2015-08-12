@@ -30,6 +30,7 @@ Essential Gantt allows you to customize the appearance of the DateTime indicator
 1. The DateTime indicator enables you to find the current date or time in a scheduled timeline.
 2. You can customize the DateTime indicator to give a similar look and feel to your product.
 3. You can change the style of DateTime indicator to differentiate the DateTime indicator from other vertical lines.
+
 ## Properties
 
 
@@ -65,7 +66,7 @@ Adding the DateTime indicator customization will change the appearance and posit
 
 The following code samples illustrate how to customize the DateTime indicator.
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 

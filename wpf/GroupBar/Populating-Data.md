@@ -65,37 +65,37 @@ Next, create the GroupBar as follows.
 
 {% highlight C# %}
 
-GroupBar gBar = new GroupBar();
+		GroupBar gBar = new GroupBar();
 
 
 
-            GroupBarItem gBarItem1 = new GroupBarItem() { HeaderText ="NewGroupBarItem1", 					IsSelected = true };
+		GroupBarItem gBarItem1 = new GroupBarItem() { HeaderText ="NewGroupBarItem1", 					IsSelected = true };
 
 
 
-            GroupView gView = new GroupView();
+		GroupView gView = new GroupView();
 
-            GroupViewItem gViewItem = new GroupViewItem() { Text="New GroupViewItem"};
+		GroupViewItem gViewItem = new GroupViewItem() { Text="New GroupViewItem"};
 
-            gView.Items.Add(gViewItem);
-
-
-
-            gBarItem1.Content = gView;
+		gView.Items.Add(gViewItem);
 
 
 
-            GroupBarItem gBarItem2 = new GroupBarItem() { HeaderText="NewGroupBarItem2"};
-
-            GroupBarItem gBarItem3 = new GroupBarItem() { HeaderText="NewGroupBarItem3"};
+		gBarItem1.Content = gView;
 
 
 
-            gBar.Items.Add(gBarItem1);
+		GroupBarItem gBarItem2 = new GroupBarItem() { HeaderText="NewGroupBarItem2"};
 
-            gBar.Items.Add(gBarItem2);
+		GroupBarItem gBarItem3 = new GroupBarItem() { HeaderText="NewGroupBarItem3"};
 
-            gBar.Items.Add(gBarItem3);
+
+
+		gBar.Items.Add(gBarItem1);
+
+		gBar.Items.Add(gBarItem2);
+
+		gBar.Items.Add(gBarItem3);
 
 
 

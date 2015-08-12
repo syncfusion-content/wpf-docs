@@ -11,8 +11,6 @@ documentation: ug
 
 The IsBusy property in the BusyIndicator control is used to determine whether an animation needs to be executed or not.
 {% highlight html %}
-[XAML]
-
 
 
 <Grid Background="CornflowerBlue">
@@ -23,7 +21,6 @@ The IsBusy property in the BusyIndicator control is used to determine whether an
 
 {% endhighlight %}
 {% highlight c# %}
-[C#]
 
 
 

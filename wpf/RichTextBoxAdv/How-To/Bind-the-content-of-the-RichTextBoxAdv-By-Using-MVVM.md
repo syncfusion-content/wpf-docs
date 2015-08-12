@@ -17,11 +17,6 @@ The following code example illustrates defining MVVM extension for the XAMLText 
 
 {% highlight xml %}
 
-
-[XAML]
-
-
-
 <syncfusion:RichTextBoxAdv x:Name="richTextBoxAdv" XAMLText="{Binding DescriptionXaml}" />
 
 {% endhighlight %}
@@ -29,145 +24,141 @@ The following code example illustrates defining MVVM extension for the XAMLText 
 
 {% highlight C# %}
 
-[C#]
+		/// <summary>
 
+		/// Handles the LayoutUpdated event of the richTextBoxAdv control.
 
+		/// </summary>
 
-/// <summary>
+		/// <param name="sender">The source of the event.</param>
 
-/// Handles the LayoutUpdated event of the richTextBoxAdv control.
+		/// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
 
-/// </summary>
+		void richTextBoxAdv_LayoutUpdated(object sender, EventArgs e)
 
-/// <param name="sender">The source of the event.</param>
+		{
 
-/// <param name="e">The <see cref="EventArgs"/> instance containing the event data.</param>
+			if ((this.DataContext as ViewModel).XamlContent != richTextBoxAdv.XAMLText)
 
-void richTextBoxAdv_LayoutUpdated(object sender, EventArgs e)
+				//Updates the XAMLText for changes made in RichTextBoxAdv to ViewModel.
 
-{
+				(this.DataContext as ViewModel).XamlContent = richTextBoxAdv.XAMLText;
 
-    if ((this.DataContext as ViewModel).XamlContent != richTextBoxAdv.XAMLText)
+		}
 
-        //Updates the XAMLText for changes made in RichTextBoxAdv to ViewModel.
+		/// <summary>
 
-        (this.DataContext as ViewModel).XamlContent = richTextBoxAdv.XAMLText;
+		/// Sample View Model class
 
-}
+		/// </summary>
 
-/// <summary>
+		public class ViewModel : INotifyPropertyChanged
 
-/// Sample View Model class
+		{
 
-/// </summary>
+			private String descriptionXaml;
 
-public class ViewModel : INotifyPropertyChanged
+			/// <summary>
 
-{
+			/// Initializes a new instance of the <see cref="ViewModel"/> class.
 
-    private String descriptionXaml;
+			/// </summary>
 
-    /// <summary>
+			public ViewModel()
 
-    /// Initializes a new instance of the <see cref="ViewModel"/> class.
+			{
 
-    /// </summary>
+			  // Sample description xaml.
 
-    public ViewModel()
+		DescriptionXaml = "<RichText:DocumentAdv xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\" xmlns:RichText=\"clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.RichTextBoxAdv.Silverlight\" >\r\n<RichText:SectionAdv><RichText:ParagraphAdv ListType=\"None\" TextAlignment=\"Left\" LeftIndent=\"0\" RightIndent=\"0\" BeforeSpacing=\"0\" AfterSpacing=\"13\" >\r\n<RichText:SpanAdv Text=\"RichTextBoxAdv is a control using which you can format the text, align and indent the paragraph, and display the content in pages or web layout mode.\" FontStyle=\"Normal\" Baseline=\"Normal\" HighlightColor=\"#00000000\" Foreground=\"#FF000000\" FontSize=\"12\" FontFamily=\"Segoe UI\" FontWeight=\"Normal\" >\r\n</RichText:SpanAdv>\r\n</RichText:ParagraphAdv>\r\n</RichText:SectionAdv></RichText:DocumentAdv>";
 
-    {
+			}
 
-      // Sample description xaml.
+			/// <summary>
 
-DescriptionXaml = "<RichText:DocumentAdv xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\" xmlns:RichText=\"clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.RichTextBoxAdv.Silverlight\" >\r\n<RichText:SectionAdv><RichText:ParagraphAdv ListType=\"None\" TextAlignment=\"Left\" LeftIndent=\"0\" RightIndent=\"0\" BeforeSpacing=\"0\" AfterSpacing=\"13\" >\r\n<RichText:SpanAdv Text=\"RichTextBoxAdv is a control using which you can format the text, align and indent the paragraph, and display the content in pages or web layout mode.\" FontStyle=\"Normal\" Baseline=\"Normal\" HighlightColor=\"#00000000\" Foreground=\"#FF000000\" FontSize=\"12\" FontFamily=\"Segoe UI\" FontWeight=\"Normal\" >\r\n</RichText:SpanAdv>\r\n</RichText:ParagraphAdv>\r\n</RichText:SectionAdv></RichText:DocumentAdv>";
+			/// Gets or sets the description xaml.
 
-    }
+			/// </summary>
 
-    /// <summary>
+			/// <value>
 
-    /// Gets or sets the description xaml.
+			/// The description xaml.
 
-    /// </summary>
+			/// </value>
 
-    /// <value>
+			public String DescriptionXaml
 
-    /// The description xaml.
+			{
 
-    /// </value>
+				get
 
-    public String DescriptionXaml
+				{
 
-    {
+					return descriptionXaml;
 
-        get
+				}
 
-        {
+				set
 
-            return descriptionXaml;
+				{
 
-        }
+					descriptionXaml = value;
 
-        set
+					if (PropertyChanged != null)
 
-        {
+						PropertyChanged(this, new PropertyChangedEventArgs("DescriptionXaml"));
 
-            descriptionXaml = value;
+				}
 
-            if (PropertyChanged != null)
+			}
 
-                PropertyChanged(this, new PropertyChangedEventArgs("DescriptionXaml"));
+			/// <summary>
 
-        }
+			/// Gets or sets the content of the xaml.
 
-    }
+			/// </summary>
 
-    /// <summary>
+			/// <value>
 
-    /// Gets or sets the content of the xaml.
+			/// The content of the xaml.
 
-    /// </summary>
+			/// </value>
 
-    /// <value>
+			internal String XamlContent
 
-    /// The content of the xaml.
+			{
 
-    /// </value>
+				get
 
-    internal String XamlContent
+				{
 
-    {
+					return descriptionXaml;
 
-        get
+				}
 
-        {
+				set
 
-            return descriptionXaml;
+				{
 
-        }
+					descriptionXaml = value;
 
-        set
+				}
 
-        {
+			}
 
-            descriptionXaml = value;
+			/// <summary>
 
-        }
+			/// Occurs when a property value changes.
 
-    }
+			/// </summary>
 
-    /// <summary>
+			public event PropertyChangedEventHandler PropertyChanged;
 
-    /// Occurs when a property value changes.
-
-    /// </summary>
-
-    public event PropertyChangedEventHandler PropertyChanged;
-
-}
+		}
 
 {% endhighlight %}
 
-## Sample
+#### Sample
 
 To view a sample on binding the XAMLText property of RichTextBoxAdv control by using MVVM framework, see [http://www.syncfusion.com/downloads/support/directtrac/117738/Sample-1166502320.zip](http://www.syncfusion.com/downloads/support/directtrac/117738/Sample-1166502320.zip).
 

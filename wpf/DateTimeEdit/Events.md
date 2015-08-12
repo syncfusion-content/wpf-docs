@@ -17,7 +17,7 @@ This event occurs when the DateTime property of the DateTimeEdit control is chan
 
 
 
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 <syncfusion:DateTimeEdit Width="150" DateTimeChanged="DateTimeEdit_DateTimeChanged"/>
@@ -40,7 +40,7 @@ This event occurs when the MinDateTime property of the DateTimeEdit control is c
 
 
 
-{% highlight html %}
+{% highlight xml %}
 XAML
 
 <syncfusion:DateTimeEdit Width="150" MinDateTimeChanged="DateTimeEdit_MinDateTimeChanged"/>
@@ -62,7 +62,7 @@ private void DateTimeEdit_MinDateTimeChanged(DependencyObject d, DependencyPrope
 This event occurs when the MaxDateTime property of the DateTimeEdit control is changed.
 
 
-{% highlight html %}
+{% highlight xml %}
 
 XAML
 
@@ -86,7 +86,7 @@ This event occurs when the Pattern property of the DateTimeEdit control is chang
 
 
 
-{% highlight html %}
+{% highlight xml %}
 XAML
 
 <syncfusion:DateTimeEdit Width="150" PatternChanged="DateTimeEdit_PatternChanged"/>
@@ -109,7 +109,7 @@ This event occurs when the Calendar popup is open.
 
 
 
-{% highlight html %}
+{% highlight xml %}
 XAML
 
 <syncfusion:DateTimeEdit Height="25" Width="150" EnableClassicStyle="True" CalendarPopupOpened="DateTimeEdit_CalendarPopupOpened"/>

@@ -21,11 +21,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 FlowDirection</td><td>
@@ -33,57 +33,38 @@ Gets or sets the flow direction for the OLAP Gauge control. </td><td>
 Normal</td><td>
 enum</td></tr>
 </table>
-# Adding RTL support for OLAP Gauge in an application 
+
+## Adding RTL support for OLAP Gauge in an application 
 
 To enable RTL support, the FlowDirection property of the OLAP Gauge control needs to be set as RightToLeft. The following code sample explains how to set the FlowDirection property. It can be set through XAML or C# code.
-
-{% highlight xml %}
-
-   [XAML]
+{% highlight html %}
+[XAML]
 
 <syncfusion:OlapGauge x:Name="olapGauge" FlowDirection="RightToLeft" Grid.Column="0" HorizontalAlignment="Stretch" ReportName="SalesReport" olapshared:DataSource.ConnectionString="{Binding OlapConnectionString}">
+{% endhighlight %}
+{% highlight c# %}
 
 
- {% endhighlight %}
-
-
-
- {% highlight c# %}
- 
-   [C#]
+[C#]
 
 this.olapGauge.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
- {% endhighlight %}
+{% endhighlight  %}
+{% highlight vbnet %}
 
-
-
-
- {% highlight vbnet %}
-  
-    [VB]
+[VB]
 
 Me.olapGauge.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
- {% endhighlight %}
-
-
-
-
-
-
-
-
-
-
-
+{% endhighlight  %}
 
 ![](RTL-Support_images/RTL-Support_img1.jpeg)
 
 
+
 _RTL support for OLAP Gauge_
 
-## Sample Link
+### Sample Link
 
 A sample is available locally in the following location:
 

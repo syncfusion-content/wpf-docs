@@ -11,11 +11,15 @@ documentation: ug
 
 DateTimeFormat property defines the Format to display the date value in the DateTimeEdit control. Using this property you can customize the Standard datetime formats such as the YearMonthPattern, ShortTimePattern, ShortDatePattern, MonthDayPattern, LongTimePattern, LongDatePattern, and FullDateTimePattern. 
 
-{% highlight html %}
+{% highlight xml %}
 
 XAML
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="ShortDate">    <syncfusion:DateTimeEdit.DateTimeFormat>        <global:DateTimeFormatInfo ShortDatePattern="MM/dd/yy hh:mm:ss"/>    </syncfusion:DateTimeEdit.DateTimeFormat></syncfusion:DateTimeEdit>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" DateTime="07/15/2010" Pattern="ShortDate"> 
+   <syncfusion:DateTimeEdit.DateTimeFormat>
+		<global:DateTimeFormatInfo ShortDatePattern="MM/dd/yy hh:mm:ss"/>
+   </syncfusion:DateTimeEdit.DateTimeFormat>
+</syncfusion:DateTimeEdit>
 {% endhighlight  %}
 {% highlight c# %}
 C#

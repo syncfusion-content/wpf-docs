@@ -37,7 +37,7 @@ i. Syncfusion.SfTreeMap.WPF
 ![](Getting-Started_images/Getting-Started_img2.png)
 
 
-### Through Xaml and C#
+###Through Xaml and C#
 
 You can create the SfTreeMap control programmatically through XAML and C#.
 

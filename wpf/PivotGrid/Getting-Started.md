@@ -675,7 +675,9 @@ End Sub
 
 {% endhighlight %} 
 
-#### To populate PivotGrid with a sample IList data, Through XAML
+#### To populate PivotGrid with a sample IList data, 
+
+Through XAML
 
 {% highlight xml %} 
 
@@ -851,8 +853,6 @@ End Sub
 ![](Getting-Started_images/Getting-Started_img7.png)
 
 
-
-__
 
 5.Right-click on the References and select Add Referenc, then add the following assemblies into the project from installed location.
 
@@ -1727,7 +1727,7 @@ End Sub
 
 5.Use the following namespace to create a new PivotGrid control through code-behind.
 
-   1. Syncfusion.Windows.Controls.PivotGrid
+  i. Syncfusion.Windows.Controls.PivotGrid
 
 
 
@@ -1737,12 +1737,12 @@ End Sub
 
 6.Right-click on the References and select Add Referene, then add the following assemblies from the mentioned location.
 
-   1. Syncfusin.Grid.Wpf
-   2. Syncfusion.GridCommon.Wpf
-   3. Syncfusion.Linq.Base
-   4. Syncfusion.PivotAnalysis.Base
-   5. Syncfusion.PivotAnalysis.Wpf
-   6. Syncfusion.Shared.Wpf
+  i. Syncfusin.Grid.Wpf
+  ii. Syncfusion.GridCommon.Wpf
+  iii. Syncfusion.Linq.Base
+  iv. Syncfusion.PivotAnalysis.Base
+  v. Syncfusion.PivotAnalysis.Wpf
+  vi. Syncfusion.Shared.Wpf
 
    
 #### Assemblies Location

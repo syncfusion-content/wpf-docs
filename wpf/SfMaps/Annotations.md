@@ -176,7 +176,8 @@ AnnotationTemplateis a DataTemplate type, used to customize or override the defa
             </syncfusion:SfMap.Layers>
 
         </syncfusion:SfMap >
-{% endhighlight %}
+
+		{% endhighlight %}
 
 
 ![](Annotations_images/Annotations_img2.png)

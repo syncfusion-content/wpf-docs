@@ -125,7 +125,8 @@ SubShapeFileLayers is the collection of SubShapeFileLayer. SubShapeFileLayer is 
  </syncfusion:ShapeFileLayer>           
  </syncfusion:SfMap.Layers>      
  </syncfusion:SfMap></td></tr>
-{% endhighlight %}
+
+ {% endhighlight %}
 
 
  

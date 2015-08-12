@@ -17,7 +17,7 @@ Drag providers are those which appear, when you drag a window over another windo
 
 The LeftDragProvider property of the DockingManager is used to apply custom templates to the Left Drag Provider. The following code snippet is used for this purpose.
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -54,7 +54,7 @@ The LeftDragProvider property of the DockingManager is used to apply custom temp
 The Custom control template for right drag provider is applied using the RightDragProvider property of the DockingManager. The following code snippet is used for this purpose.
 
 
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 
@@ -91,7 +91,7 @@ The Custom control template for right drag provider is applied using the RightDr
 
 Control templates for top drag providers is applied using the TopDragProvider property of the DockingManager. The following code snippet can be used for this purpose.
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -126,7 +126,7 @@ Control templates for top drag providers is applied using the TopDragProvider pr
 This Drag provider is the bottom button that appears while dragging a window over another, allowing the window to be docked to the bottom of the parent element. To override the default template, the user can use the BottomDrag providers. To add a BottomDrag Provider, use the following code snippet.
 
 
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
         <!--Declaring Docking Manager-->
@@ -193,8 +193,29 @@ This drag provider is the center button that appears while dragging a window ove
 
 
 
-{% highlight html %}
-[XAML]        <Window.Resources>            <ControlTemplate x:Key="CenterButtonCustomTemplate" TargetType="{x:Type ContentControl}">                <Grid>                    <Grid.RowDefinitions>                        <RowDefinition Height="30" />                        <RowDefinition Height="30" />                        <RowDefinition Height="30" />                    </Grid.RowDefinitions>                    <Grid.ColumnDefinitions>                        <ColumnDefinition Width="30" />                        <ColumnDefinition Width="30" />                        <ColumnDefinition Width="30" />                    </Grid.ColumnDefinitions>                    <Image Name="TopImg" Grid.Column="1" Grid.Row="0" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Top" Source="Images\CustomDragProvider.png" />                    <Image Name="LeftImg" Grid.Column="0" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Left" Source="Images\CustomDragProvider.png" />                    <Image Name="CenterImg" Grid.Column="1" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Center" Source="Images\CustomDragProvider.png" />                    <Image Name="RightImg" Grid.Column="2" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Right" Source="Images\CustomDragProvider.png" />                    <Image Name="BottomImg" Grid.Column="1" Grid.Row="2" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Bottom" Source="Images\CustomDragProvider.png" />                </Grid>            </ControlTemplate>        </Window.Resources>        <Grid>            <!--Declaring Docking Manager and calling the CenterDrag provider using the Resource look up logic -->            <syncfusion:DockingManager CenterDragProvider="{StaticResource CenterButtonCustomTemplate}">                <!--Children for the Docking Manager-->                <StackPanel syncfusion:DockingManager.Header="Element one"              syncfusion:DockingManager.State="Dock"              syncfusion:DockingManager.SideInDockedMode="Left"/>            </syncfusion:DockingManager>        </Grid> >
+{% highlight xml %}
+<Window.Resources>     
+       <ControlTemplate x:Key="CenterButtonCustomTemplate" TargetType="{x:Type ContentControl}">
+	   <Grid>                    <Grid.RowDefinitions>         
+	   <RowDefinition Height="30" />               
+	   <RowDefinition Height="30" />              
+	   <RowDefinition Height="30" />              
+	   </Grid.RowDefinitions>             
+       <Grid.ColumnDefinitions>            
+	   <ColumnDefinition Width="30" />     
+	   <ColumnDefinition Width="30" />                      
+	   <ColumnDefinition Width="30" />                    
+	   </Grid.ColumnDefinitions>               
+	   <Image Name="TopImg" Grid.Column="1" Grid.Row="0" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Top" Source="Images\CustomDragProvider.png" />
+	   <Image Name="LeftImg" Grid.Column="0" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Left" Source="Images\CustomDragProvider.png" /> 
+	   <Image Name="CenterImg" Grid.Column="1" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Center" Source="Images\CustomDragProvider.png" />                    <Image Name="RightImg" Grid.Column="2" Grid.Row="1" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Right" Source="Images\CustomDragProvider.png" /> 
+	   <Image Name="BottomImg" Grid.Column="1" Grid.Row="2" Width="27" Height="27" syncfusion:DockPreviewManagerVS2005.ProviderAction="Bottom" Source="Images\CustomDragProvider.png" /> 
+	   </Grid>   
+	   </ControlTemplat>  
+	   </Window.Resources> 
+       <Grid>     
+       <!--Declaring Docking Manager and calling the CenterDrag provider using the Resource look up logic -->    
+	   <syncfusion:DockingManager CenterDragProvider="{StaticResource CenterButtonCustomTemplate}">                <!--Children for the Docking Manager-->                <StackPanel syncfusion:DockingManager.Header="Element one"              syncfusion:DockingManager.State="Dock"              syncfusion:DockingManager.SideInDockedMode="Left"/>            </syncfusion:DockingManager>        </Grid> >
 {% endhighlight  %}
 {% highlight c# %}
 [C#]//Creating the instance of the Docking Manager.DockingManager = new DockingManager();//Applying the template using the Resource look up logic.DockingManager.CenterDragProvider = (ControlTemplate)FindResource("CenterButtonCustomTemplate");
@@ -204,7 +225,7 @@ This drag provider is the center button that appears while dragging a window ove
 
 The Auto hide button in the docked window is customized by using the AwlButtonTemplate property. A control template of TargetType, ToggleButton is created and applied to this property in order to have a customized look and feel for the Auto hide button in the docked window. To apply the AwlButtonTemplate, use the following code:
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -264,7 +285,7 @@ The Auto hide button in the docked window is customized by using the AwlButtonTe
 
 
 
-![C:/Users/Hemanth/Desktop/Documentation/Images/awlbutton.jpg](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg)
+![](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg)
 
 
 
@@ -275,7 +296,7 @@ The Auto hide button in the docked window is customized by using the AwlButtonTe
 The DockingManager facilitates you to apply an user-defined custom Header Template to give a customized appearance. Using the following code snippet, you can create a sample DataTemplate as a Header Template for the Docking Manager.
 
 
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
         <sftools:DockingManager.HeaderTemplate>
@@ -312,7 +333,7 @@ The CloseButton Template is used to get or set the control template for the clos
 
 The following code illustrates this: 
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -384,7 +405,7 @@ DockingManager.CloseButtonTemplate = (ControlTemplate)FindResource("closebuttont
 
 The Context Menu button in the dock window header can be changed in order to have a customized look and feel for the application. The MenuButtonTemplate property of the DockingManager can be applied with a control template to enhance the button appearance. The following code snippet is used as a sample for applying the Menu Button template.
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -430,7 +451,7 @@ You can apply the styles for the float window using the FloatWindowStyle propert
 
 Here is the code snippet for setting this property.
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -462,7 +483,7 @@ The DockHeaderStyle is a dependency property which is used to get or set the sty
 
 The following code snippet example clearly explains the usage of using the DockHeaderStyle property.
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -490,7 +511,7 @@ The following code snippet example clearly explains the usage of using the DockH
 
 The TabControl and TabItem Style is used to customize the tabbed child tabcontrol in the DockingManager.
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -511,7 +532,7 @@ The TabControl and TabItem Style is used to customize the tabbed child tabcontro
 <Grid Name="grid2" syncfusion:DockingManager.TargetNameInDockedMode="grid1" syncfusion:DockingManager.SideInDockedMode="Tabbed"/> </syncfusion:DockingManager>
 
 {% endhighlight  %}
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -563,7 +584,7 @@ You can customize the AutoHideButton, Menu Button, and Close Button by editing t
 
 AwlButtonTemplate
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -729,7 +750,7 @@ AwlButtonTemplate
 
 MenuButtonTemplate
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -779,7 +800,7 @@ MenuButtonTemplate
 
 CloseButtonTemplate
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -841,7 +862,7 @@ CloseButtonTemplate
 {% endhighlight  %}
 The following properties have been applied to customize the Dock Header.
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -899,7 +920,7 @@ The following properties have been applied to customize the Dock Header.
 
 {% endhighlight  %}
 
-![C:/Users/Hemanth/Desktop/Documentation/Images/Templating.jpg](Styles-and-Templates_images/Styles-and-Templates_img10.jpeg)
+![](Styles-and-Templates_images/Styles-and-Templates_img10.jpeg)
 
 
 

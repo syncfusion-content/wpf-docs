@@ -20,14 +20,21 @@ In the CalendarEdit control, the direction of month navigation is horizontal by 
 
 For setting the MonthChangeDirection property, use the following code.
 
-<table>
-<tr>
-<td>
-[XAML]<!-- Adding calendar with month change direction as vertical --><syncfusion:CalendarEdit Name="calendarEdit" MonthChangeDirection="Vertical"/></td></tr>
-<tr>
-<td>
-[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Month change direction as verticalcalendarEdit.MonthChangeDirection = AnimationDirection.Vertical;//Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
-</table>
+
+{% highlight xml %}
+
+<!-- Adding calendar with month change direction as vertical -->
+<syncfusion:CalendarEdit Name="calendarEdit" MonthChangeDirection="Vertical"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
+//Month change direction as verticalcalendarEdit.MonthChangeDirection = AnimationDirection.Vertical;
+//Adding CalendarEdit as window contentthis.Content = calendarEdit;
+
+{% endhighlight %}
+
 ## Animation
 
 This section describes the following:
@@ -43,14 +50,21 @@ You can set the animation time for changing the mode of the CalendarEdit control
 
 To set this property, use the following code.
 
-<table>
-<tr>
-<td>
-[XAML]<!-- Adding calendar with change mode time --><syncfusion:CalendarEdit Name="calendarEdit" ChangeModeTime="10"/></td></tr>
-<tr>
-<td>
-[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting calendar mode changing animation timecalendarEdit.ChangeModeTime = 10;//Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
-</table>
+{% highlight xml %}
+
+<!-- Adding calendar with change mode time -->
+<syncfusion:CalendarEdit Name="calendarEdit" ChangeModeTime="10"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
+//Setting calendar mode changing animation timecalendarEdit.ChangeModeTime = 10;
+//Adding CalendarEdit as window contentthis.Content = calendarEdit;
+
+{% endhighlight %}
+
 
 
 Animation Time for Month Navigation
@@ -59,21 +73,28 @@ The time taken to navigate from one month to another month can be controlled usi
 
 To set this property, use the following code.
 
-<table>
-<tr>
-<td>
-[XAML]<!-- Adding calendar with Frame moving time as 500 --><syncfusion:CalendarEdit Name="calendarEdit" FrameMovingTime="500"/></td></tr>
-<tr>
-<td>
-[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting the frame moving timecalendarEdit.FrameMovingTime = 500;//Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
-</table>
+
+{% highlight xml %}
+<!-- Adding calendar with Frame moving time as 500 -->
+<syncfusion:CalendarEdit Name="calendarEdit" FrameMovingTime="500"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
+//Setting the frame moving timecalendarEdit.FrameMovingTime = 500;
+//Adding CalendarEdit as window contentthis.Content = calendarEdit;
+
+{% endhighlight %}
+
 
 
 ## ToolTip
 
 You can set tooltip for specific days in the CalendarEdit control, using the SetToolTip method. The following code example illustrates tooltip setting for the current system date. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -117,7 +138,7 @@ a.Year = DateTime.Now.Year;
 
 calendarEdit.SetToolTip(a, toolTip); 
 
-
+{% endhighlight %}
 
 ## Scrolling to the Selected Date
 
@@ -125,13 +146,18 @@ CalendarEdit control enables you to navigate to a particular date in the Calenda
 
 Here is the code example for setting this property.
 
-<table>
-<tr>
-<td>
-[XAML]<!-- Adding calendar with scroll to date as true --><syncfusion:CalendarEdit Name="calendarEdit" ScrollToDateEnabled="True"/></td></tr>
-<tr>
-<td>
-[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Enable scroll to datecalendarEdit.ScrollToDateEnabled = true; //Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
-</table>
+{% highlight xml %}
+<!-- Adding calendar with scroll to date as true -->
+<syncfusion:CalendarEdit Name="calendarEdit" ScrollToDateEnabled="True"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
+//Enable scroll to datecalendarEdit.ScrollToDateEnabled = true;
+//Adding CalendarEdit as window contentthis.Content = calendarEdit;
+
+{% endhighlight %}
+
 
 

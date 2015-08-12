@@ -21,13 +21,13 @@ The color of the barcode can be customized by modifying the DarkBarBrush and Lig
 
 The DarkBarBrush represents the color of the dark bar (Black color usually) and the LightBarBrush represents the color of the gap between two adjacent black bars (White color usually).
 
-{{ '![](Barcode-Customization_images/Barcode-Customization_img1.png)' | markdownify }}
+![](Barcode-Customization_images/Barcode-Customization_img1.png)
 
 
 
 
 
-{{ '![](Barcode-Customization_images/Barcode-Customization_img2.png)' | markdownify }}
+![](Barcode-Customization_images/Barcode-Customization_img2.png)
 
 
 

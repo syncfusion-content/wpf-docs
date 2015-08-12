@@ -56,7 +56,9 @@ SfChart supports the following type of Trendlines.
 
 
 
-####Linear Trendline is a best-fit straight line that is used with sets of simple linear data. A LinearTrendline shows when something is increasing or decreasing at a steady rate. 
+#### Linear 
+
+Linear Trendline is a best-fit straight line that is used with sets of simple linear data. A LinearTrendline shows when something is increasing or decreasing at a steady rate. 
 
 ####Exponential
 

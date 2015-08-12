@@ -13,8 +13,6 @@ The direction of increasing value can be changed using IsDirectionReversed prope
 
 {%highlight xml%}
 
-[XAML]
-
 <editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" Value="10" IsDirectionReversed="True"  />
 
 {%endhighlight%}

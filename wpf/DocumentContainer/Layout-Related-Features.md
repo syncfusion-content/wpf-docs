@@ -34,14 +34,17 @@ Sets the visual style for the DocumentContainer. The options provided are as fol
 Use the following code to set the skin for the Document Container.
 
 
-
-<table>
-<tr>
-<td>
-{% highlight xml %}<!-- Adding document container --><syncfusion:DocumentContainer Name="DocContainer" syncfusion:SkinStorage.VisualStyle="Office2007Blue" Mode="MDI">  …....  …....</syncfusion:DocumentContainer>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight C# %} // Setting the visual style as Office2007Blue SkinStorage.SetVisualStyle(DocContainer, "Office2007Blue"); {% endhighlight %} </td></tr>
+{% highlight xml %}
+<!-- Adding document container -->
+<syncfusion:DocumentContainer Name="DocContainer" syncfusion:SkinStorage.VisualStyle="Office2007Blue" Mode="MDI"> 
+ …....
+ …....
+ </syncfusion:DocumentContainer>
+{% endhighlight %}
+{% highlight C# %}
+ // Setting the visual style as Office2007Blue 
+ SkinStorage.SetVisualStyle(DocContainer, "Office2007Blue");
+ {% endhighlight %} 
 </table>
 
 

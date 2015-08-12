@@ -19,7 +19,7 @@ The following screen shot illustrates the GridTree control architecture.
 
 
 
-### Accessing the Underlying Grid control
+## Accessing the Underlying Grid control
 
 The GridTree control is a ContentControl derived class. To get its grid-like behavior, the GridTree control has a Grid control derived property named InternalGrid. InternalGrid is a GridTreeControlImpl class, which is derived from the Grid control. The GridTreeControlImpl is a virtual Grid control, which uses the virtual events to bind to the GridTreeControl.Nodes collection. So, to access the underlying Grid control associated with the GridTree control, you can use the GridTreeControl.InternalGrid property. 
 

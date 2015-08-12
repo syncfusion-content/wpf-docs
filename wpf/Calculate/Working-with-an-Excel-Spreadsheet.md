@@ -79,7 +79,7 @@ Limitation-You cannot perform actual computations on the contents of the XLS fil
 
 A sample which illustrates the usage of Essential XlsIO with Essential Calculate is available in the following sample installation location:
 
-_<Install Location>\WPF\Calculate.Wpf\Samples\2.0\Xls File Using CalcEngine Demo\cs_ 
+_&lt;Install Location&gt;\WPF\Calculate.Wpf\Samples\2.0\Xls File Using CalcEngine Demo\cs_ 
 
 In this sample, the following two classes are used: 
 

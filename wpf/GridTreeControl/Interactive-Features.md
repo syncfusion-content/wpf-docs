@@ -14,6 +14,7 @@ This section elaborates on the following run time interactive features:
 * Selection
 * Sorting
 * Column Sizing
+
 ## Selection Support
 
 
@@ -33,9 +34,6 @@ GridTree control does not use the selection support inherited from the Grid cont
 The following code example illustrates cell range selections in the Grid Tree.
 
 {%highlight c#%}
-
-[C#]
-
 
 
 foreach (GridTreeNode node in treeGrid.SelectedNodes)
@@ -66,11 +64,11 @@ _Properties Table_
 
 <table>
 <tr>
-<td
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description </th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 AllowSort</td><td>
@@ -100,16 +98,16 @@ Boolean </td></tr>
 
 ### Methods
 
-_Methods Table_
+#### _Methods Table_
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Parameter Description**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Parameter Description</th><th>
+Return Type</th></tr>
 <tr>
 <th>
 SortTree</th><th>
@@ -124,7 +122,6 @@ The sorting can be enabled by using the AllowSort property. The following code e
 
 {%highlight c#%}
 
-[C#]
 
 this.treeGrid.AllowSort = true;
 
@@ -132,7 +129,6 @@ this.treeGrid.AllowSort = true;
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -154,7 +150,7 @@ The GridTree control supports the following sorting options:
 * Tri-state Sorting 
 * Custom Sorting
 
-### Multicolumn Sorting
+#### Multicolumn Sorting
 
 The GridTree control provides support to perform multicolumn sorting by holding down the Ctrl key and clicking the left mouse button.
 
@@ -162,14 +158,12 @@ The multicolumn sorting can be enabled by using the EnableMultiColumnSorting pro
 
 
 {%highlight c#%}
-[C#]
 
 this.treeGrid.EnableMultiColumnSorting = true;
 
 {%endhighlight%}
 
 {%highlight xml%}
-[XAML]
 
 
 
@@ -195,7 +189,7 @@ The following screenshot shows the GridTree control enabled with multicolumn sor
 
 _Multicolumn Sorting in GridTree Control_
 
-### Tri-state Sorting
+#### Tri-state Sorting
 
 The GridTree control also supports the tri-state sorting. There are three states in this sorting:
 
@@ -207,7 +201,6 @@ This sorting can be enabled by using the EnableTriStateSorting property. The no 
 
 
 {%highlight c#%}
-[C#]
 
 this.treeGrid.EnableTriStateSorting = true;
 
@@ -215,7 +208,6 @@ this.treeGrid.EnableTriStateSorting = true;
 
 
 {%highlight xml%}
-[XAML]
 
 
 
@@ -236,7 +228,7 @@ ExpandStateAtStartUp="RootNodesExpanded"
 
 {%endhighlight%}
 
-### Custom Sorting
+#### Custom Sorting
 
 The GridTree control also features the custom sorting. The following additional members of GridTreeControlImpl allow you to access sort information and provide support for the custom sorting. 
 
@@ -244,12 +236,13 @@ The GridTree control also features the custom sorting. The following additional 
 * public IComparer<GridTreeNode> SortComparer—allows to perform the custom sorting. The default implementation assumes the underlying node items implement the IComparable technique and uses that implementation for the sorting comparisons within the columns. If your objects are not sortable using this technique, then you need to provide a sort comparer that properly sorts the grid nodes items based on the sort property values.
 * public string SortProperty—it is a string that holds the column name to be sorted. You can specify a sort direction by appending a space followed by either ASC or DESC. In addition, you can specify the multicolumn sorting by passing several columns separated by commas. For example, "Price ASC, Weight DESC", which will indicate to sort the Price column in ascending order, and then sort the Weight column in descending order.
 * public List<SortState> SortStates—it is a list of sort states for the columns currently sorted in the GridTree control. The SortState class contains information regarding the direction and the property sorted, and it exposes static helper methods, which takes care of the changes between SortStates and SortProperty.
+
 ## Column Sizing
 
 
 The GridTree control supports autosizing its columns such that the display of the tree occupies the entire width of the client area available in the Grid Tree. The sizing is done by columns occupying certain percentages of the available space. To implement this feature, the Grid Tree must be free to size with its parent.
 
-> _Note: You cannot set the Width or HorizontalAlignment properties of the Grid Tree when this feature has been enabled._
+> Note: You cannot set the Width or HorizontalAlignment properties of the Grid Tree when this feature has been enabled.
 
 You can enable this feature in two ways. 
 
@@ -261,7 +254,7 @@ The following code example illustrates these settings.
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -294,6 +287,7 @@ The PercentSizingBehavior property provides the following options to size the co
 * SizeUntouchedColumns–This option will autosize the columns which have the PercentWidth property set, as long as the user does not explicitly change the width of this column through the UI. If the user changes the column size, the column width will not be changed as the Grid Tree is sized.
 * NoSizingIfAnyTouched–If the user sets the size of any column through the UI, all autosizing stops and the column size will not be changed as the Grid Tree is sized.
 * SizeAlwaysPercent–This option will not allow the user to size any column. The columns will always use the percentage sizing to determine their size as the Grid Tree is sized. 
+
 ## Update Mode
 
 
@@ -309,17 +303,17 @@ RowCachedMode—Update the values to the underlying collection when the focus is
 
 UpdateMode is mainly used to control the value updates to the bound collection.
 
-Properties
+### Properties
 
-_Properties_
+#### _Properties_
 
 <table>
 <tr>
 <td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+Property</td><td>
+Description</td><td>
+Type</td><td>
+Data Type</td></tr>
 <tr>
 <td>
 UpdateMode</td><td>
@@ -327,13 +321,13 @@ Defines the behavior when updating data to the underlying collection while editi
 Dependency </td><td>
 UpdateMode</td></tr>
 </table>
+
 ### Adding UpdateMode to an Application 
 
 The following code snippet explains how to set UpdateMode in XAML.
 
 {%highlight xml%}
 
-[XAML]
 
 <syncfusion:GridTreeControl 
 
@@ -355,7 +349,6 @@ The following code sample shows how to set UpdateMode in C#.
 
 
 {%highlight c#%}
-[C#]
 
 this.treeGrid.UpdateMode = UpdateMode.LostFocus;
 
@@ -378,8 +371,6 @@ In addition to the GridTreeControl.VisualStyle property, there is a GridTreeCont
 The following code example illustrates how to apply LevelStyles to the Grid Tree.
 
 {%highlight c#%}
-
-[C#]
 
 
 
@@ -427,7 +418,6 @@ The following code example illustrates how to set this property for a column in 
 
 {%highlight c#%}
 
-[C#]
 
 
 
@@ -458,8 +448,6 @@ To specify the style for a particular cell, you need to handle the QueryCellInfo
 Here is the code for coloring a particular cell.
 
 {%highlight c#%}
-
-[C#]
 
 
 
@@ -535,19 +523,19 @@ _Cell Style_
 
 Thus, the background of a grid cell can be customized.
 
-> _Note: Level styles are the lowest in precedence, followed by column styles, and then followed by cell -specific styles set in QueryCellInfo._
+> Note: Level styles are the lowest in precedence, followed by column styles, and then followed by cell -specific styles set in QueryCellInfo.
 
 ### Customizing the ExpandCell
 
 The GridTreeControl.InternalGrid has a ExpandGlyphType property that enables you to customize the appearance of the Expand cell. It also has a GridTreeControl.InternalGrid.SetExpandBrushesAndPen method that is used to provide the brushes used to draw the expand glyphs. The ExpandGlyph property has the following settings.
 
-_GridTree control Property_
+#### _GridTree control Property_
 
 <table>
 <tr>
-<td>
-{{ '**GridTree control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+GridTree control Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Triangle</td><td>
@@ -576,8 +564,6 @@ Here are some sample code snippets indicating how you can subscribe to the requi
 PathGeometry Class-Represents a complex shape that may be composed of arcs, curves, ellipses, lines, and rectangles. 
 
 {%highlight c#%}
-
-[C#]
 
 
 
@@ -663,15 +649,13 @@ void renderer_GlyphDrawing(object sender, GridTreeGlyphDrawingEventArgs args)
  
  {%endhighlight%}
 
-#### Node Images
+### Node Images
 
 You can display an image next to the expand glyph in the expand cell of the Grid Tree by setting the GridTreeControl.SupportNodeImages property to true. When this property is set to true, the Grid Tree will raise the RequestNodeImage event that allows you to provide an image for a given node. The EventArgs will provide you with the GridTreeNode object, and then the image can be set using the NodeImage property based on the given tree node. 
 
 The following code example illustrates how to handle the RequestNodeImage event.
 
 {%highlight c#%}
-
-[C#]
 
 
 
@@ -693,25 +677,25 @@ Here is a screen shot that shows custom glyphs and node images.
 
 _Custom Glyphs and Node Images_
 
-## Blendability
+### Blendability
 
 The GridTree control supports setting its styles through XAML and Microsoft Expression Blend.  
 
-### Use Case Scenarios
+#### Use Case Scenarios
 
 This feature allows the GridTree control to be customized through Microsoft Expression Blend 3 or 4.
 
-## Properties
+### Properties
 
-_Properties_
+#### _Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 StyleManager </td><td>
@@ -720,7 +704,7 @@ Dependency</td><td>
 GridTreeStyleManager</td></tr>
 </table>
 
-## Sample Link
+### Sample Link
 
 The Blend Styling demo in the sample browser is purely customized in XAML through the GridTreeStyleManager class. To access the Blend Styling demo:
 
@@ -730,7 +714,7 @@ The Blend Styling demo in the sample browser is purely customized in XAML throug
 4. Select GridTree control. 
 5. In the Styles menu item, select the Blend Styling demo.
 
-## Adding Styles to an Application 
+### Adding Styles to an Application 
 
 
 The appearance of the GridTree control can be customized using Microsoft Expression Blend 3 or 4®. This can be achieved through the StyleManager property of type GridTreeStyleManager. The properties required to customize the appearance are defined in the GridTreeStyleManager class. 
@@ -758,17 +742,17 @@ GridTreeStyleManager properties are organized under different groups, each repre
 
 _GridTreeStyleManager Properties_
 
-### Cell Appearance
+#### Cell Appearance
 
 In the cell group, cells can be customized by specifying their margins, borders, etc. The following table shows the properties defined in this group.
 
-_Properties_
+#### _Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 CellBackgroundBrush</td><td>
@@ -806,11 +790,11 @@ _Before Cell Appearance Applied_
 
 _After Cell Appearance Applied_
 
-XAML Code
+#### XAML Code
 
 {%highlight xml%}
 
-[XAML]
+
 
 <sf:GridTreeStyleManager.CellAppearance>
 
@@ -878,19 +862,19 @@ XAML Code
 
 _Cell Appearance Applied to GridTree Control_
 
-### Expander Appearance
+#### Expander Appearance
 
 In the expander appearance group, the properties required to customize expand and collapse 
 
 buttons are included. The following table shows the properties defined in this group.
 
-_Properties_
+#### _Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ExpanderBackground</td><td>
@@ -940,11 +924,11 @@ _Before Expander Appearance Applied_
 
 _After Expander Appearance Applied_
 
-XAML Code
+#### XAML Code
 
 {%highlight xml%}
 
-[XAML]
+
 
     <sf:GridTreeStyleManager.ExpanderAppearance>
 
@@ -1000,7 +984,7 @@ XAML Code
 
 _Expander Appearance Applied to the GridTree Control_
 
-### Header Appearance
+#### Header Appearance
 
 In the header appearance options, properties required to customize the header are defined. 
 
@@ -1010,9 +994,9 @@ _Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HeaderBackgroundBrush</td><td>
@@ -1070,7 +1054,6 @@ XAML Code
 
 {%highlight xml%}
 
-[XAML]
 
     <sf:GridTreeStyleManager.HeaderAppearance>
 
@@ -1162,9 +1145,9 @@ _Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 CurrentCellBorderBrush</td><td>
@@ -1230,7 +1213,6 @@ XAML Code
 
 {%highlight xml%}
 
-[XAML]
 
    <sf:GridTreeStyleManager.RowAppearance>
 
@@ -1286,6 +1268,7 @@ The following options in the GridTree control can be serialized and deserialized
 * Visual Styles
 * Editing Options
 * Resizing Options
+
 ### Use Case Scenarios
 
 
@@ -1296,16 +1279,16 @@ Serialization is used to retain the application state when the application is cl
 
 
 
-_Methods_
+#### _Methods_
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Type</th><th>
+Return Type</th></tr>
 <tr>
 <th>
 Serialize</th><th>
@@ -1361,7 +1344,7 @@ The Serialization Demo sample in the sample browser illustrates the GridTree con
 Adding Serialization/Deserialization to an Application 
 
 
-### Serializing 
+#### Serializing 
 
 There are three methods of serialization/deserialization available in the GridTree control.
 
@@ -1369,39 +1352,36 @@ There are three methods of serialization/deserialization available in the GridTr
 * XML file
 * XML stream
 
-### API Usage
+#### API Usage
 
-### Serializing as an XML String
+##### Serializing as an XML String
 
 The following code illustrates how to serialize the GridTree control as an XML string. 
 
 {%highlight c#%}
 
-[C#]
 
 string result=this.treeGrid.InternalGrid.SerializeAsString();
 
 {%endhighlight%}
 
-### Serializing as an XML File
+##### Serializing as an XML File
 
 The following code illustrates how to serialize the GridTree control as an XML file. 
 
 {%highlight c#%}
 
-[C#]
 
 this.treeGrid.InternalGrid.Serialize("newChanges.xml");
 
 {%endhighlight%}
 
-### Serializing as an XML Stream
+#### Serializing as an XML Stream
 
 The following code illustrates how to serialize the GridTree control as an XML stream. 
 
 {%highlight c#%}
 
-[C#]
 
 TextWriter sw=new StreamWriter("newChanges.xml");
 
@@ -1419,13 +1399,12 @@ There are three methods to deserializing forms:
 
 ### API Usage
 
-### Deserialize from XML String
+#### Deserialize from XML String
 
 The following code illustrates how to deserialize from an XML string_._ 
 
 {%highlight c#%}
 
-[C#]
 
  //the result should be an XML string saved during the serialization process.
 
@@ -1441,7 +1420,6 @@ The following code illustrates how to deserialize an XML file.
 
 {%highlight c#%}
 
-[C#]
 
 //newChanges.xml file should be the XML file saved during the serialization 
 
@@ -1453,13 +1431,12 @@ this.treeGrid.InternalGrid.Deserialize("newChanges.xml");
 {%endhighlight%}
 
 
-### Deserialize from XML Stream
+#### Deserialize from XML Stream
 
 The following code illustrates how to deserialize an XML stream.
 
 {%highlight c#%}
 
-[C#]
 
 //newChanges.txt file should be the text file saved during the serialization
 

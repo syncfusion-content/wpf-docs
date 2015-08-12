@@ -61,7 +61,7 @@ To populate a Resource view Gantt in a Custom Numeric Schedule:
 The following code illustrates this.
 
 
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 
@@ -162,14 +162,14 @@ To populate the Resource view Gantt with a date-time schedule:
 The following code sample illustrates this:
 
 
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 
 
  <gantt:GanttControl Grid.Row="1" x:Name="Gantt">
                 <gantt:GanttControl.TaskAttributeMapping>
-                    <gantt:TaskAttributeMapping                                             TaskNameMapping="Name"                                            StartDateMapping="StartDate"                                             ChildMapping="SubItems"                                            FinishDateMapping="FinishDate"                                            InLineTaskMapping="InLineItems">
+                    <gantt:TaskAttributeMapping   TaskNameMapping="Name"  StartDateMapping="StartDate"  ChildMapping="SubItems"                                            FinishDateMapping="FinishDate"                                            InLineTaskMapping="InLineItems">
                     </gantt:TaskAttributeMapping>
                 </gantt:GanttControl.TaskAttributeMapping>
  </gantt:GanttControl>
@@ -228,20 +228,20 @@ The following is the data structure used to build a Resource view Gantt:
 * SubItems of Team will hold the list of Resources in that particular team.
 * InLineItems of each Resource will hold the tasks assigned to the particular resource.
 
-## Information Displayed in Gantt
+#### Information Displayed in Gantt
 
 Grid Region:The grid will display only the information about the team and its resources (SubItems). It will not display the information about assigned tasks (InLineItems).
 
 Chart Region: The chart will display only the information about the team and the tasks assigned to each resource in the team (InLineItems). It will not display the information about resources (SubItems).
 
-## Sample Link
+#### Sample Link
 
 To view samples: 
 
 1. Open Syncfusion Dashboard.
 2. Select User Interface>WPF.
 3. Click Run Samples.
-1. Navigate to Gantt>Data Binding Item>Resource View Gantt sample.
+4. Navigate to Gantt>Data Binding Item>Resource View Gantt sample.
 
 
 

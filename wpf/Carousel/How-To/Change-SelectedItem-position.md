@@ -7,7 +7,7 @@ control: Carousel
 documentation: ug
 ---
 
-### Change SelectedItem position
+## Change SelectedItem position
 
 Using TopItemPosition property, you can change the position of SelectedItem in a given path.
 
@@ -36,7 +36,7 @@ Double</td><td>
 In the following example, TopItemPosition is set to 0.0. So the SelectedItem is displayed at the beginning of the Path.
 
 
-
+{% highlight xml %}
 [XAML]
 
 
@@ -47,7 +47,7 @@ In the following example, TopItemPosition is set to 0.0. So the SelectedItem is 
     </syncfusion:Carousel.Path>
     <syncfusion:Carousel.OpacityFractions>
         <syncfusion:PathFractionCollection>
-            <!--Fraction represents the position in Path-                Value represents the Opacity of Carousel item in a particular point-->
+            <!--Fraction represents the position in Path-Value represents the Opacity of Carousel item in a particular point-->
             <syncfusion:FractionValue Fraction="0" Value="1"/>
             <syncfusion:FractionValue Fraction="1" Value="0.5"/>
         </syncfusion:PathFractionCollection>
@@ -76,11 +76,10 @@ In the following example, TopItemPosition is set to 0.0. So the SelectedItem is 
     </syncfusion:Carousel.ItemTemplate>
 </syncfusion:Carousel>
 
+{% endhighlight %}
 
 
 
-
-{{ '![](Change-SelectedItem-position_images/Change-SelectedItem-position_img1.png)' | markdownify }}
-{:.image }
+![](Change-SelectedItem-position_images/Change-SelectedItem-position_img1.png)
 
 

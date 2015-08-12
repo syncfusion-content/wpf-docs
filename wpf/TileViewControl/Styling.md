@@ -197,7 +197,7 @@ The _ItemContainerStyleSelector_ property is used to choose the ItemContainerSty
 1. Create _StyleSelector_ in the code.
 
 
-   ~~~ c#
+   ~~~ cs
    
        [C#]
 

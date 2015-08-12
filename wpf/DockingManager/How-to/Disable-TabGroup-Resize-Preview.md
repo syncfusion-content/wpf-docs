@@ -7,20 +7,22 @@ control: DockingManager
 documentation: ug
 ---
 
-### Disable TabGroup Resize Preview
+## Disable TabGroup Resize Preview
 
 TabGroup preview can be enabled or disabled by using the IsTabPreviewEnabled property. The default value of the TabGroup preview is true. The usage of this property is shown below.
 
 
+{% highlight xml %}
+<syncfusion:DockingManager Name="dockingmanager" IsTabPreviewEnabled="False" UseDocumentContainer="True">
+            <Grid syncfusion:DockingManager.Header="tab1" syncfusion:DockingManager.State="Document"/>
+            <Grid syncfusion:DockingManager.Header="tab2" syncfusion:DockingManager.State="Document"/>
+			</syncfusion:DockingManager>
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager Name="dockingmanager" IsTabPreviewEnabled="False" UseDocumentContainer="True">            <Grid syncfusion:DockingManager.Header="tab1" syncfusion:DockingManager.State="Document"/>            <Grid syncfusion:DockingManager.Header="tab2" syncfusion:DockingManager.State="Document"/>        </syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]dockingmanager.IsTabPreviewEnabled = false;</td></tr>
-</table>
+{% endhighlight %}
+			
+{% highlight c# %}
+dockingmanager.IsTabPreviewEnabled = false;
+{% endhighlight %}
 
 
 The above code disables the TabGroup preview, which is created by dragging and dropping the tabitems.

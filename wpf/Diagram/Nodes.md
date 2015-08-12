@@ -2547,86 +2547,94 @@ This property is used to define the node movement through code. This Enum proper
 2. TranslateRailsY
 3. None 
 
-By default, this property value is ‘_None’_.
+   By default, this property value is ‘_None’_.
 
-To enable the node movement only on X-axis, use the following code.
+   To enable the node movement only on X-axis, use the following code.
 
-{% highlight c#  %}
+   ~~~ cs
 
-[C#]
+	[C#]
 
-DiagramView View1 = new DiagramView();
+		DiagramView View1 = new DiagramView();
 
-View1.TranslateRailsMode = TranslateRailsMode.TranslateRailsX;
+		View1.TranslateRailsMode = TranslateRailsMode.TranslateRailsX;
 
-{% endhighlight   %}
-{% highlight vbnet  %}
+   ~~~
+   {:.prettyprint }
+   
+   ~~~ vbnet
 
-[VB]
+	[VB]
 
-Dim view As New DiagramView ()
+		Dim view As New DiagramView ()
 
-View1. TranslateRailsMode = TranslateRailsMode.TranslateRailsX
-
-
-{% endhighlight   %}
-
-To enable the node movement only in Y-axis, use the following code example.
+		View1. TranslateRailsMode = TranslateRailsMode.TranslateRailsX
 
 
-{% highlight c#  %}
-[C#]
+   ~~~
+   {:.prettyprint }
 
-DiagramView View1 = new DiagramView();
+   To enable the node movement only in Y-axis, use the following code example.
 
-View1.TranslateRailsMode = TranslateRailsMode.TranslateRailsY;
+   ~~~ cs
+	
+	[C#]
 
+		DiagramView View1 = new DiagramView();
 
-{% endhighlight  %}
-{% highlight vbnet  %}
-[VB]
-
-Dim view As New DiagramView ()
-
-View1. TranslateRailsMode = TranslateRailsMode.TranslateRailsY
-{% endhighlight   %}
-
-### NodeMovementX/NodeMovementY
-
-The node movement can be controlled by the keys. 
-
-#### NodeMovementX:
-
-The keys that support NodeMovement on X-axis are: “Alt”, “X” and “Z”.
-
-By default, the enum property value is _None_. Pressing and dragging, selected key controls the node movement only in X-axis.
-
-{% highlight c#  %}
-
-[C#]
-
-DiagramView View1 = new DiagramView();
-
-View1.NodeMovementX = NodeMovementX.X;
-
-View1.NodeMovementY = NodeMovementX.Y;
-{% endhighlight   %}
-{% highlight vbnet  %}
+		View1.TranslateRailsMode = TranslateRailsMode.TranslateRailsY;
 
 
-[VB] 
+   ~~~
+   {:.prettyprint }
+   
+   ~~~ vbnet
+   
+	[VB]
 
-Dim view As New DiagramView ()
+		Dim view As New DiagramView ()
 
-View1.NodeMovementX = NodeMovementX.X
+		View1. TranslateRailsMode = TranslateRailsMode.TranslateRailsY
+		
+   ~~~
+   {:.prettyprint }
 
-View1.NodeMovementY = NodeMovementX.Y
+   ### NodeMovementX/NodeMovementY
 
-{% endhighlight   %}
+   The node movement can be controlled by the keys. 
 
-#### NodeMovementY:
+   #### NodeMovementX:
 
-The key combinations that support the node movement on Y-axis are: 
+   The keys that support NodeMovement on X-axis are: “Alt”, “X” and “Z”.
+
+   By default, the enum property value is _None_. Pressing and dragging, selected key controls the node movement only in X-axis.
+
+   ~~~ cs
+
+		DiagramView View1 = new DiagramView();
+
+		View1.NodeMovementX = NodeMovementX.X;
+
+		View1.NodeMovementY = NodeMovementX.Y;
+		
+   ~~~
+   {:.prettyprint }
+   
+   ~~~ vbnet
+
+
+		Dim view As New DiagramView ()
+
+		View1.NodeMovementX = NodeMovementX.X
+
+		View1.NodeMovementY = NodeMovementX.Y
+
+   ~~~
+   {:.prettyprint }
+
+   #### NodeMovementY:
+
+   The key combinations that support the node movement on Y-axis are: 
 
 4. Alt+Y 
 5. Alt+Z  
@@ -2829,6 +2837,7 @@ n.TopRightCornerResizer =TryCast(Me.Resources("TopRightCornerResizerThump"), Sty
 n.BottomLeftCornerResizer =TryCast(Me.Resources("BottomLeftCornerResizerThump"), Style)
 
 n.BottomRightCornerResizer =TryCast(Me.Resources("BottomRightCornerResizerThump"), Style)
+
 {% endhighlight   %}
 
 

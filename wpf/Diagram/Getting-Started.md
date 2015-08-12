@@ -76,7 +76,7 @@ This section illustrates the step-by-step procedure to create a WPF application.
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -84,7 +84,7 @@ This section illustrates the step-by-step procedure to create a WPF application.
 
 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png) 
 
 
 
@@ -107,7 +107,7 @@ DiagramControl can be created in two ways,
 * Through Code Behind
 
 
-{% highlight html %}
+{% highlight xml %}
 
 
 [XAML]
@@ -158,7 +158,7 @@ SymbolPalette can be enabled in two ways,
 * Through Code Behind
 
 
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 <Window x:Class="WpfApplication1.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -207,7 +207,7 @@ DiagramModel can be created and assigned to DiagramControl’s View Property usi
 * Through XAML
 * Through Code Behind
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -280,7 +280,7 @@ DiagramView can be created and assigned to DiagramControl’s View Property usin
 * Through XAML
 * Through Code Behind 
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -378,28 +378,28 @@ Following are the steps to create Diagram Control through Designer.
 
 
 
-![](Getting-Started_images/Getting-Started_img6.png)
+   ![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
 2. Select Diagram Control from ToolBox.
 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
 3. Drag the Diagram Control onto the Designer.
 
 
-![](Getting-Started_images/Getting-Started_img8.png)
+   ![](Getting-Started_images/Getting-Started_img8.png)
 
 
 
 4. DiagramControl is added to the Page and also the assembly reference is added to the Project file.
 
 
-![](Getting-Started_images/Getting-Started_img9.png)
+   ![](Getting-Started_images/Getting-Started_img9.png)
 
 
 
@@ -420,7 +420,7 @@ A model represents data for an application and contains the logic for adding, ac
 The following code shows how the Model property can be applied to the Diagram control.
 
 
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 <Window x:Class="WpfApplication1.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -513,7 +513,7 @@ A view can be constructed without a model, but a model must be provided before i
 
 The following code illustrates adding a Diagram View to the Diagram control.
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -1059,275 +1059,279 @@ The following code shows how the automatic layout can be generated.
 1. The LayoutType should be set to DirectedTreeLayout in DiagramModel class.
 
 
-{% highlight html  %}
-[XAML]
+   ~~~ xml
 
 
 
-<Window x:Class="RadialTreeLayout_2008.Window1"
+		<Window x:Class="RadialTreeLayout_2008.Window1"
 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-    Title="Radial Tree Layout Demo" WindowState="Normal"
+			Title="Radial Tree Layout Demo" WindowState="Normal"
 
-    WindowStartupLocation="CenterScreen" Name="mainwindow"
+			WindowStartupLocation="CenterScreen" Name="mainwindow"
 
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" Icon="App.ico"
+			xmlns:syncfusion="http://schemas.syncfusion.com/wpf" Icon="App.ico"
 
-    FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
+			FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
 
-    <!--Diagram Control-->
+			<!--Diagram Control-->
 
-    <syncfusion:DiagramControl  Name="diagramControl">
-
-
-
-        <!-- Model to add nodes and connections-->
-
-        <syncfusion:DiagramControl.Model>
-
-             <syncfusion:DiagramModel LayoutType="DirectedTreeLayout" Orientation="TopBottom" 
-
-                                        x:Name="diagramModel">
-
-             </syncfusion:DiagramModel>
-
-        </syncfusion:DiagramControl.Model>
+			<syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        <!--View to display nodes and connections added through model.-->
+				<!-- Model to add nodes and connections-->
 
-        <syncfusion:DiagramControl.View>
+				<syncfusion:DiagramControl.Model>
 
-            <syncfusion:DiagramView Name="diagramView">
+					 <syncfusion:DiagramModel LayoutType="DirectedTreeLayout" Orientation="TopBottom" 
 
-            </syncfusion:DiagramView>
+		                                        x:Name="diagramModel">
 
-        </syncfusion:DiagramControl.View>
+		             </syncfusion:DiagramModel>
 
-    </syncfusion:DiagramControl>
+				</syncfusion:DiagramControl.Model>
 
 
 
-</Window>
+				<!--View to display nodes and connections added through model.-->
 
-{% endhighlight  %}
+				<syncfusion:DiagramControl.View>
+
+					<syncfusion:DiagramView Name="diagramView">
+
+					</syncfusion:DiagramView>
+
+				</syncfusion:DiagramControl.View>
+
+			</syncfusion:DiagramControl>
+
+
+
+		</Window>
+
+   ~~~
+   {:.prettyprint }
 
 2. Then, the nodes are defined and the connections are made.
 
-{% highlight c# %}
+   ~~~ cs
 
-[C#]
+		[C#]
 
 
 
-Style s = (Style)this.Resources["{x:Type sfdiagram:Node}"];
+		Style s = (Style)this.Resources["{x:Type sfdiagram:Node}"];
 
 
 
-Node CEO = CreateNode("CEO", "CEO of the company", "Steve-CEO", s);
+		Node CEO = CreateNode("CEO", "CEO of the company", "Steve-CEO", s);
 
-Node SLS = CreateNode("ManagerSLS", "Tom-ManagerSLS", "Sales Manager of the company ", s);
+		Node SLS = CreateNode("ManagerSLS", "Tom-ManagerSLS", "Sales Manager of the company ", s);
 
-Node Marketing = CreateNode("ManagerMarketing", "Mary-MKT Manager", "Marketing Manager of the company", s);
+		Node Marketing = CreateNode("ManagerMarketing", "Mary-MKT Manager", "Marketing Manager of the company", s);
 
-Node DEV = CreateNode("ManagerDEV", "Jim-Manager DEV", "Development Manager of the company", s);
+		Node DEV = CreateNode("ManagerDEV", "Jim-Manager DEV", "Development Manager of the company", s);
 
-Node CSR1 = Node DEV = CreateNode("CSR1", "Kevin-CSR", "CSR  of the company", s);
+		Node CSR1 = Node DEV = CreateNode("CSR1", "Kevin-CSR", "CSR  of the company", s);
 
-Node CSR2 = Node DEV = CreateNode("CSR2", "Peter-CSR", "CSR  of the company", s);
+		Node CSR2 = Node DEV = CreateNode("CSR2", "Peter-CSR", "CSR  of the company", s);
 
 
 
-//The layout happens with respect to the layout root.
+		//The layout happens with respect to the layout root.
 
-diagramModel.LayoutRoot = CEO;
+		diagramModel.LayoutRoot = CEO;
 
 
 
-//Add the nodes to the model.
+		//Add the nodes to the model.
 
-diagramModel.Nodes.Add(CEO);
+		diagramModel.Nodes.Add(CEO);
 
-diagramModel.Nodes.Add(Marketing);
+		diagramModel.Nodes.Add(Marketing);
 
-diagramModel.Nodes.Add(SLS);
+		diagramModel.Nodes.Add(SLS);
 
-diagramModel.Nodes.Add(DEV);
+		diagramModel.Nodes.Add(DEV);
 
-diagramModel.Nodes.Add(CSR1);
+		diagramModel.Nodes.Add(CSR1);
 
-diagramModel.Nodes.Add(CSR2);
+		diagramModel.Nodes.Add(CSR2);
 
 
 
-//Creating the Connections between the nodes.
+		//Creating the Connections between the nodes.
 
-Connect(CEO, Marketing);
+		Connect(CEO, Marketing);
 
-Connect(CEO, SLS);
+		Connect(CEO, SLS);
 
-Connect(CEO, DEV);
+		Connect(CEO, DEV);
 
-Connect(SLS, CSR1);
+		Connect(SLS, CSR1);
 
-Connect(SLS, CSR2);
+		Connect(SLS, CSR2);
 
 
 
-        Node CreateNode(string Name, string Label, string ToolTip, Style s)
+				Node CreateNode(string Name, string Label, string ToolTip, Style s)
 
-        {
+				{
 
-            Node NewNode = new Node(Guid.NewGuid(), Name);
+					Node NewNode = new Node(Guid.NewGuid(), Name);
 
-            NewNode.Label = Label;
+					NewNode.Label = Label;
 
-            NewNode.ToolTip = ToolTip;
+					NewNode.ToolTip = ToolTip;
 
-            NewNode.CustomPathStyle = s;
+					NewNode.CustomPathStyle = s;
 
-            return NewNode;
+					return NewNode;
 
-        }
+				}
 
 
 
 
 
-        //Creating connection and adding to the model.
+		        //Creating connection and adding to the model.
 
-        void Connect(Node HeadNode, Node TailNode)
+		        void Connect(Node HeadNode, Node TailNode)
 
-        {
+		        {
 
-            LineConnector connection = new LineConnector();
+		            LineConnector connection = new LineConnector();
 
-            connection.ConnectorType = ConnectorType.Orthogonal;
+		            connection.ConnectorType = ConnectorType.Orthogonal;
 
-            // Specify the TailNode node
+		            // Specify the TailNode node
 
-            connection.TailNode = TailNode;
+		            connection.TailNode = TailNode;
 
-            //Specifying the Head Node
+		            //Specifying the Head Node
 
-            connection.HeadNode = HeadNode;
+		            connection.HeadNode = HeadNode;
 
-            connection.TailDecoratorShape = DecoratorShape.Arrow;
+		            connection.TailDecoratorShape = DecoratorShape.Arrow;
 
 
 
-            //Adding to the Diagram Model
+		            //Adding to the Diagram Model
 
-            diagramModel.Connections.Add(connection);
+		            diagramModel.Connections.Add(connection);
 
-        }
+		        }
 
-{% endhighlight   %}
-{% highlight vbnet  %}
+   ~~~
+   {:.prettyprint }
 
-[VB]
+   ~~~ vbnet
 
+		[VB]
 
 
-Private s As Style = CType(Me.Resources("{x:Type sfdiagram:Node}"), Style)
 
+		Private s As Style = CType(Me.Resources("{x:Type sfdiagram:Node}"), Style)
 
 
-Private CEO As Node = CreateNode("CEO", "CEO of the company", "Steve-CEO", s)
 
-Private SLS As Node = CreateNode("ManagerSLS", "Tom-ManagerSLS", "Sales Manager of the company ", s)
+		Private CEO As Node = CreateNode("CEO", "CEO of the company", "Steve-CEO", s)
 
-Private Marketing As Node = CreateNode("ManagerMarketing", "Mary-MKT Manager", "Marketing Manager of the company", s)
+		Private SLS As Node = CreateNode("ManagerSLS", "Tom-ManagerSLS", "Sales Manager of the company ", s)
 
-Private DEV As Node = CreateNode("ManagerDEV", "Jim-Manager DEV", "Development Manager of the company", s)
+		Private Marketing As Node = CreateNode("ManagerMarketing", "Mary-MKT Manager", "Marketing Manager of the company", s)
 
-Private CSR1 As Node = Node DEV = CreateNode("CSR1", "Kevin-CSR", "CSR  of the company", s)
+		Private DEV As Node = CreateNode("ManagerDEV", "Jim-Manager DEV", "Development Manager of the company", s)
 
-Private CSR2 As Node = Node DEV = CreateNode("CSR2", "Peter-CSR", "CSR  of the company", s)
+		Private CSR1 As Node = Node DEV = CreateNode("CSR1", "Kevin-CSR", "CSR  of the company", s)
 
+		Private CSR2 As Node = Node DEV = CreateNode("CSR2", "Peter-CSR", "CSR  of the company", s)
 
 
-'The layout happens with respect to the layout root.
 
-diagramModel.LayoutRoot = CEO
+		'The layout happens with respect to the layout root.
 
+		diagramModel.LayoutRoot = CEO
 
 
-'Add the nodes to the model.
 
-diagramModel.Nodes.Add(CEO)
+		'Add the nodes to the model.
 
-diagramModel.Nodes.Add(Marketing)
+		diagramModel.Nodes.Add(CEO)
 
-diagramModel.Nodes.Add(SLS)
+		diagramModel.Nodes.Add(Marketing)
 
-diagramModel.Nodes.Add(DEV)
+		diagramModel.Nodes.Add(SLS)
 
-diagramModel.Nodes.Add(CSR1)
+		diagramModel.Nodes.Add(DEV)
 
-diagramModel.Nodes.Add(CSR2)
+		diagramModel.Nodes.Add(CSR1)
 
+		diagramModel.Nodes.Add(CSR2)
 
 
-'Creating the Connections between the nodes.
 
-Connect(CEO, Marketing)
+		'Creating the Connections between the nodes.
 
-Connect(CEO, SLS)
+		Connect(CEO, Marketing)
 
-Connect(CEO, DEV)
+		Connect(CEO, SLS)
 
-Connect(SLS, CSR1)
+		Connect(CEO, DEV)
 
-Connect(SLS, CSR2)
+		Connect(SLS, CSR1)
 
+		Connect(SLS, CSR2)
 
 
-Node CreateNode(String Name, String Label, String ToolTip, Style s)
 
-Dim NewNode As New Node(Guid.NewGuid(), Name)
+		Node CreateNode(String Name, String Label, String ToolTip, Style s)
 
-NewNode.Label = Label
+		Dim NewNode As New Node(Guid.NewGuid(), Name)
 
-NewNode.ToolTip = ToolTip
+		NewNode.Label = Label
 
-NewNode.CustomPathStyle = s
+		NewNode.ToolTip = ToolTip
 
-Return NewNode
+		NewNode.CustomPathStyle = s
 
+		Return NewNode
 
 
 
 
-'Creating connection and adding to the model.
 
-void Connect(Node HeadNode, Node TailNode)
+		'Creating connection and adding to the model.
 
-Dim connection As New LineConnector()
+		void Connect(Node HeadNode, Node TailNode)
 
-connection.ConnectorType = ConnectorType.Orthogonal
+		Dim connection As New LineConnector()
 
-'Specify the TailNode node
+		connection.ConnectorType = ConnectorType.Orthogonal
 
-connection.TailNode = TailNode
+		'Specify the TailNode node
 
-'Specifying the Head Node
+		connection.TailNode = TailNode
 
-connection.HeadNode = HeadNode
+		'Specifying the Head Node
 
-connection.TailDecoratorShape = DecoratorShape.Arrow
+		connection.HeadNode = HeadNode
 
+		connection.TailDecoratorShape = DecoratorShape.Arrow
 
 
-'Adding to the Diagram Model
 
-diagramModel.Connections.Add(connection)
+		'Adding to the Diagram Model
 
-{% endhighlight   %}
+		diagramModel.Connections.Add(connection)
+
+   ~~~
+   {:.prettyprint }
+
 
 ![](Getting-Started_images/Getting-Started_img11.jpeg)
 
@@ -1459,57 +1463,59 @@ The following code example specifies how the Hierarchical-tree layout can be spe
 
 
 
-{% highlight html  %}
+   ~~~ xml
 
-[XAML]
-
-
-
-<Window x:Class="RadialTreeLayout_2008.Window1"
-
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    Title="Radial Tree Layout Demo" WindowState="Normal"
-
-    WindowStartupLocation="CenterScreen" Name="mainwindow"
-
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" Icon="App.ico"
-
-    FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
+		[XAML]
 
 
 
-<!--Diagram Control-->       
+		<Window x:Class="RadialTreeLayout_2008.Window1"
 
-<syncfusion:DiagramControl  Name="diagramControl">           
+			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-<!-- Model to add nodes and connections-->            <syncfusion:DiagramControl.Model>               
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-<syncfusion:DiagramModel  LayoutType="HierarchicalTreeLayout" Orientation="TopBottom"   x:Name="diagramModel">               </syncfusion:DiagramModel>           
+			Title="Radial Tree Layout Demo" WindowState="Normal"
 
-</syncfusion:DiagramControl.Model>   
+			WindowStartupLocation="CenterScreen" Name="mainwindow"
+
+			xmlns:syncfusion="http://schemas.syncfusion.com/wpf" Icon="App.ico"
+
+			FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
 
 
 
-<!--View to display nodes and connections added through model.-->            
+		<!--Diagram Control-->       
 
-<syncfusion:DiagramControl.View>              
+		<syncfusion:DiagramControl  Name="diagramControl">           
 
-  <syncfusion:DiagramView Bounds="0,0,700,750"  
+		<!-- Model to add nodes and connections-->            <syncfusion:DiagramControl.Model>               
 
-  Background="White"   Name="diagramView"   >                    
+		<syncfusion:DiagramModel  LayoutType="HierarchicalTreeLayout" Orientation="TopBottom"   x:Name="diagramModel">               </syncfusion:DiagramModel>           
 
-  </syncfusion:DiagramView>           
+		</syncfusion:DiagramControl.Model>   
 
- </syncfusion:DiagramControl.View>       
 
-</syncfusion:DiagramControl>
 
-</Window>
+		<!--View to display nodes and connections added through model.-->            
 
-{% endhighlight  %}
+		<syncfusion:DiagramControl.View>              
+
+		  <syncfusion:DiagramView Bounds="0,0,700,750"  
+
+		  Background="White"   Name="diagramView"   >                    
+
+		  </syncfusion:DiagramView>           
+
+		 </syncfusion:DiagramControl.View>       
+
+		</syncfusion:DiagramControl>
+
+		</Window>
+
+   ~~~
+   {:.prettyprint }
+
 
 2. Then the nodes can be added and the connections can be specified as follows:
 
@@ -1932,265 +1938,261 @@ N/A</td></tr>
 
 1. The LayoutType should be set to RadialTreeLayout in DiagramModel class.
 
-{% highlight html  %}
-
-[XAML]
+   ~~~ xml
 
 
+		 <Window x:Class="RadialTreeLayout_2008.Window1"
 
- <Window x:Class="RadialTreeLayout_2008.Window1"
+			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			Title="Radial Tree Layout Demo" WindowState="Normal"
 
-    Title="Radial Tree Layout Demo" WindowState="Normal"
+			WindowStartupLocation="CenterScreen" Name="mainwindow"
 
-    WindowStartupLocation="CenterScreen" Name="mainwindow"
+			xmlns:syncfusion="http://schemas.syncfusion.com/wpf" Icon="App.ico"
 
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" Icon="App.ico"
-
-    FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
+			FontWeight="Bold" xmlns:local="clr-namespace:RadialTreeLayout_2008" Height="1000" Width="900">
 
 
 
-    <!--Diagram Control-->
+			<!--Diagram Control-->
 
-    <syncfusion:DiagramControl  Name="diagramControl">
-
-
-
-        <!-- Model to add nodes and connections-->
-
-        <syncfusion:DiagramControl.Model>
-
-            <syncfusion:DiagramModel x:Name="diagramModel" LayoutType="RadialTreeLayout">
-
-            </syncfusion:DiagramModel>
-
-        </syncfusion:DiagramControl.Model>
+			<syncfusion:DiagramControl  Name="diagramControl">
 
 
 
-        <!--View to display nodes and connections added through model.-->
+				<!-- Model to add nodes and connections-->
 
-        <syncfusion:DiagramControl.View>
+				<syncfusion:DiagramControl.Model>
 
-            <syncfusion:DiagramView Name="diagramView">
+					<syncfusion:DiagramModel x:Name="diagramModel" LayoutType="RadialTreeLayout">
 
-            </syncfusion:DiagramView>
+					</syncfusion:DiagramModel>
 
-        </syncfusion:DiagramControl.View>
-
-    </syncfusion:DiagramControl>
+				</syncfusion:DiagramControl.Model>
 
 
 
-</Window>
+				<!--View to display nodes and connections added through model.-->
 
-{% endhighlight   %}
+				<syncfusion:DiagramControl.View>
+
+					<syncfusion:DiagramView Name="diagramView">
+
+					</syncfusion:DiagramView>
+
+				</syncfusion:DiagramControl.View>
+
+			</syncfusion:DiagramControl>
+
+
+
+		</Window>
+
+   ~~~
+   {:.prettyprint }
 
 2. Then the nodes can be added and the connections can be specified as follows:
 
-{% highlight c#  %}
+   ~~~ cs
 
-[C#]
 
+		//Define Spacings.
 
+		diagramModel.HorizontalSpacing = 10;
 
-//Define Spacings.
+		diagramModel.VerticalSpacing = 30;
 
-diagramModel.HorizontalSpacing = 10;
 
-diagramModel.VerticalSpacing = 30;
 
+		Node n1 = new Node(Guid.NewGuid(), "n1");
 
+		n1.Level = 0;
 
-Node n1 = new Node(Guid.NewGuid(), "n1");
+		Node n2 = new Node(Guid.NewGuid(), "n2");
 
-n1.Level = 0;
+		n2.Level = 1;
 
-Node n2 = new Node(Guid.NewGuid(), "n2");
+		Node n3 = new Node(Guid.NewGuid(), "n3");
 
-n2.Level = 1;
+		n3.Level = 1;
 
-Node n3 = new Node(Guid.NewGuid(), "n3");
+		Node n4 = new Node(Guid.NewGuid(), "n4");
 
-n3.Level = 1;
+		n4.Level = 1;
 
-Node n4 = new Node(Guid.NewGuid(), "n4");
+		Node n5 = new Node(Guid.NewGuid(), "n5");
 
-n4.Level = 1;
+		n5.Level = 1;
 
-Node n5 = new Node(Guid.NewGuid(), "n5");
+		Node n6 = new Node(Guid.NewGuid(), "n6");
 
-n5.Level = 1;
+		n6.Level = 1;
 
-Node n6 = new Node(Guid.NewGuid(), "n6");
 
-n6.Level = 1;
 
+		//Adding nodes to the diagram Model.                            
 
+		diagramModel.Nodes.Add(n1);  
 
-//Adding nodes to the diagram Model.                            
+		diagramModel.Nodes.Add(n2);
 
-diagramModel.Nodes.Add(n1);  
+		diagramModel.Nodes.Add(n3);
 
-diagramModel.Nodes.Add(n2);
+		diagramModel.Nodes.Add(n4);
 
-diagramModel.Nodes.Add(n3);
+		diagramModel.Nodes.Add(n5);
 
-diagramModel.Nodes.Add(n4);
+		diagramModel.Nodes.Add(n6); 
 
-diagramModel.Nodes.Add(n5);
 
-diagramModel.Nodes.Add(n6); 
 
+		//Creating conections between nodes.  
 
+		Connect(n1, n2);
 
-//Creating conections between nodes.  
+		Connect(n1, n3);
 
-Connect(n1, n2);
+		Connect(n1, n4);  
 
-Connect(n1, n3);
+		Connect(n1, n5);  
 
-Connect(n1, n4);  
+		Connect(n1, n6);
 
-Connect(n1, n5);  
+		diagramModel.LayoutRoot = n1;
 
-Connect(n1, n6);
+		   //Creating connection and adding to the model. 
 
-diagramModel.LayoutRoot = n1;
+			void Connect(Node HeadNode, Node TailNode)    
 
-   //Creating connection and adding to the model. 
+			{        
 
-    void Connect(Node HeadNode, Node TailNode)    
+			LineConnector connection = new LineConnector(); 
 
-    {        
+			connection.ConnectorType = ConnectorType.Straight;  
 
-    LineConnector connection = new LineConnector(); 
+			// Specify the TailNode node.          
 
-    connection.ConnectorType = ConnectorType.Straight;  
+			connection.TailNode = TailNode;       
 
-    // Specify the TailNode node.          
+			//Specifying the Head Node.   
 
- 	connection.TailNode = TailNode;       
+			connection.HeadNode = HeadNode;
 
-    //Specifying the Head Node.   
+			connection.TailDecoratorShape = DecoratorShape.Circle;    
 
-    connection.HeadNode = HeadNode;
+		//Adding to the Diagram Model.                 
 
-    connection.TailDecoratorShape = DecoratorShape.Circle;    
+		diagramModel.Connections.Add(connection);  
 
-//Adding to the Diagram Model.                 
 
-diagramModel.Connections.Add(connection);  
 
+			}
 
 
-    }
+   ~~~
+   {:.prettyprint }
 
-{% endhighlight   %}
-{% highlight vbnet  %}
-[VB]
+   ~~~ vbnet
 
+		'Define Spacings.
 
+		diagramModel.HorizontalSpacing = 10
 
-'Define Spacings.
+		diagramModel.VerticalSpacing = 30
 
-diagramModel.HorizontalSpacing = 10
 
-diagramModel.VerticalSpacing = 30
 
+		Dim n1 As New Node(Guid.NewGuid(), "n1")
 
+		n1.Level = 0
 
-Dim n1 As New Node(Guid.NewGuid(), "n1")
+		Dim n2 As New Node(Guid.NewGuid(), "n2")
 
-n1.Level = 0
+		n2.Level = 1
 
-Dim n2 As New Node(Guid.NewGuid(), "n2")
+		Dim n3 As New Node(Guid.NewGuid(), "n3")
 
-n2.Level = 1
+		n3.Level = 1
 
-Dim n3 As New Node(Guid.NewGuid(), "n3")
+		Dim n4 As New Node(Guid.NewGuid(), "n4")
 
-n3.Level = 1
+		n4.Level = 1
 
-Dim n4 As New Node(Guid.NewGuid(), "n4")
+		Dim n5 As New Node(Guid.NewGuid(), "n5")
 
-n4.Level = 1
+		n5.Level = 1
 
-Dim n5 As New Node(Guid.NewGuid(), "n5")
+		Dim n6 As New Node(Guid.NewGuid(), "n6")
 
-n5.Level = 1
+		n6.Level = 1
 
-Dim n6 As New Node(Guid.NewGuid(), "n6")
 
-n6.Level = 1
 
+		'Adding nodes to the diagram Model.                            
 
+		diagramModel.Nodes.Add(n1)
 
-'Adding nodes to the diagram Model.                            
+		diagramModel.Nodes.Add(n2)
 
-diagramModel.Nodes.Add(n1)
+		diagramModel.Nodes.Add(n3)
 
-diagramModel.Nodes.Add(n2)
+		diagramModel.Nodes.Add(n4)
 
-diagramModel.Nodes.Add(n3)
+		diagramModel.Nodes.Add(n5)
 
-diagramModel.Nodes.Add(n4)
+		diagramModel.Nodes.Add(n6)
 
-diagramModel.Nodes.Add(n5)
 
-diagramModel.Nodes.Add(n6)
 
+		'Creating conections between nodes.  
 
+		Connect(n1, n2)
 
-'Creating conections between nodes.  
+		Connect(n1, n3)
 
-Connect(n1, n2)
+		Connect(n1, n4)
 
-Connect(n1, n3)
+		Connect(n1, n5)
 
-Connect(n1, n4)
+		Connect(n1, n6)
 
-Connect(n1, n5)
+		diagramModel.LayoutRoot = n1
 
-Connect(n1, n6)
 
-diagramModel.LayoutRoot = n1
 
+		'Creating connection and adding to the model. 
 
+		void Connect(Node HeadNode, Node TailNode)
 
-'Creating connection and adding to the model. 
+		Dim connection As New LineConnector()
 
-void Connect(Node HeadNode, Node TailNode)
+		connection.ConnectorType = ConnectorType.Straight
 
-Dim connection As New LineConnector()
 
-connection.ConnectorType = ConnectorType.Straight
 
+		'Specify the TailNode node.          
 
+		connection.TailNode = TailNode
 
-'Specify the TailNode node.          
 
-connection.TailNode = TailNode
 
+		'Specifying the Head Node.   
 
+		connection.HeadNode = HeadNode
 
-'Specifying the Head Node.   
+		connection.TailDecoratorShape = DecoratorShape.Circle
 
-connection.HeadNode = HeadNode
 
-connection.TailDecoratorShape = DecoratorShape.Circle
 
+		'Adding to the Diagram Model.                 
 
+		diagramModel.Connections.Add(connection)
 
-'Adding to the Diagram Model.                 
-
-diagramModel.Connections.Add(connection)
-
-{% endhighlight   %}
+   ~~~
+   {:.prettyprint }
 
 ![](Getting-Started_images/Getting-Started_img13.png)
 
@@ -2540,37 +2542,34 @@ The following code illustrates how to generate the BowTie layout:
 
 1. The LayoutType should be set to BowtieLayout in DiagramModel class.
 
-{% highlight html  %}
+   ~~~ xml
 
-[XAML]
+		   <!--Diagram Control-->       
 
-           <!--Diagram Control-->       
+		<syncfusion:DiagramControl  Name="diagramControl" Grid.Row="1">            
 
-        <syncfusion:DiagramControl  Name="diagramControl" Grid.Row="1">            
+			<syncfusion:DiagramControl.Model>
 
-            <syncfusion:DiagramControl.Model>
+				<syncfusion:DiagramModel x:Name="diagramModel" LayoutType="BowtieLayout"/>
 
-                <syncfusion:DiagramModel x:Name="diagramModel" LayoutType="BowtieLayout"/>
+			</syncfusion:DiagramControl.Model>            
 
-            </syncfusion:DiagramControl.Model>            
+			<syncfusion:DiagramControl.View>
 
-            <syncfusion:DiagramControl.View>
+				<syncfusion:DiagramView Name="diagramView" Bounds="0, 0, 1400, 700"/>
 
-                <syncfusion:DiagramView Name="diagramView" Bounds="0, 0, 1400, 700"/>
+			</syncfusion:DiagramControl.View>
 
-            </syncfusion:DiagramControl.View>
-
-        </syncfusion:DiagramControl>
+		</syncfusion:DiagramControl>
 
 
 
-{% endhighlight   %}
+   ~~~
+   {:.prettyprint }
 
 2. Then, the nodes are defined and the connections are made.
 
-{% highlight c#  %}
-
-[C#]
+   ~~~ cs
 
             //Tree spacing properties.
 
@@ -2612,7 +2611,7 @@ The following code illustrates how to generate the BowTie layout:
 
 
 
-public void createLeftNodes(Node Root, BowtieSubTreePlacement place)
+		public void createLeftNodes(Node Root, BowtieSubTreePlacement place)
 
         {
 
@@ -2670,7 +2669,7 @@ public void createLeftNodes(Node Root, BowtieSubTreePlacement place)
 
 
 
-//Defines the nodes. 
+		//Defines the nodes. 
 
         public void createRightNodes(Node Root, BowtieSubTreePlacement place)
 
@@ -2712,144 +2711,140 @@ public void createLeftNodes(Node Root, BowtieSubTreePlacement place)
 
         }
 
-{% endhighlight   %}
-{% highlight vbnet  %}
+   ~~~
+   {:.prettyprint }
 
-[VB]
+   ~~~ vbnet
 
-          			'Tree spacing properties.
 
-diagramModel.VerticalSpacing = 35
 
-diagramModel.HorizontalSpacing = 30
+		'Tree spacing properties.
 
-diagramModel.SpaceBetweenSubTrees = 150
+		diagramModel.VerticalSpacing = 35
 
+		diagramModel.HorizontalSpacing = 30
 
+		diagramModel.SpaceBetweenSubTrees = 150
 
-'Defines the nodes and adds it to the model.
 
-Dim Root As Node = AddNode("R", "Systems" & Constants.vbLf & "Security", Brushes.Red, Brushes.Black, 4, Shapes.Ellipse)
 
-Me.diagramModel.LayoutRoot = Root
+		'Defines the nodes and adds it to the model.
 
-diagramModel.LayoutType = LayoutType.BowtieLayout
+		Dim Root As Node = AddNode("R", "Systems" & Constants.vbLf & "Security", Brushes.Red, Brushes.Black, 4, Shapes.Ellipse)
 
+		Me.diagramModel.LayoutRoot = Root
 
+		diagramModel.LayoutType = LayoutType.BowtieLayout
 
-'creating the Left Side Tree
 
-createLeftNodes(Root, BowtieSubTreePlacement.Left)
 
+		'creating the Left Side Tree
 
+		createLeftNodes(Root, BowtieSubTreePlacement.Left)
 
-'creating the Right Tree
 
-createRightNodes(Root, BowtieSubTreePlacement.Right)
 
+		'creating the Right Tree
 
+		createRightNodes(Root, BowtieSubTreePlacement.Right)
 
-'setting the Root Node
 
-Me.diagramModel.LayoutRoot = Root
+		'setting the Root Node
 
+		Me.diagramModel.LayoutRoot = Root
 
 
+		public void createLeftNodes(Node Root, BowtieSubTreePlacement place)
 
+		Defines nodes.
 
-public void createLeftNodes(Node Root, BowtieSubTreePlacement place)
+		Dim n1 As Node = AddNode("n1", "Hacking", Brushes.Blue, Brushes.Black, 1, Shapes.Ellipse)
 
-Defines nodes.
+		Dim n2 As Node = AddNode("n2", "Firewall", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle)
 
-Dim n1 As Node = AddNode("n1", "Hacking", Brushes.Blue, Brushes.Black, 1, Shapes.Ellipse)
+		Dim n3 As Node = AddNode("n3", "Identification", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle)
 
-Dim n2 As Node = AddNode("n2", "Firewall", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle)
+		Dim n4 As Node = AddNode("n4", "Authorization", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle)
 
-Dim n3 As Node = AddNode("n3", "Identification", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle)
 
-Dim n4 As Node = AddNode("n4", "Authorization", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle)
 
+		Dim n5 As Node = AddNode("n5", "Theft" & Constants.vbLf & "of" & Constants.vbLf & "Information", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse)
 
+		Dim n6 As Node = AddNode("n6", "Firewall", Brushes.Yellow, Brushes.Black, 3, Shapes.RoundedRectangle)
 
-Dim n5 As Node = AddNode("n5", "Theft" & Constants.vbLf & "of" & Constants.vbLf & "Information", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse)
+		Dim n7 As Node = AddNode("n7", "Network Access", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle)
 
-Dim n6 As Node = AddNode("n6", "Firewall", Brushes.Yellow, Brushes.Black, 3, Shapes.RoundedRectangle)
+		Dim n8 As Node = AddNode("n8", "Data Access", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle)
 
-Dim n7 As Node = AddNode("n7", "Network Access", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle)
 
-Dim n8 As Node = AddNode("n8", "Data Access", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle)
 
+		DiagramControl.SetBowtieSubTreePlacement(n4, place)
 
+		DiagramControl.SetBowtieSubTreePlacement(n8, place)
 
-DiagramControl.SetBowtieSubTreePlacement(n4, place)
 
-DiagramControl.SetBowtieSubTreePlacement(n8, place)
 
+		'Creating connections between the nodes
 
+		Connect(n1, n2)
 
-'Creating connections between the nodes
+		Connect(n2, n3)
 
-Connect(n1, n2)
+		Connect(n3, n4)
 
-Connect(n2, n3)
+		Connect(n4, Root)
 
-Connect(n3, n4)
 
-Connect(n4, Root)
 
+		Connect(n5, n6)
 
+		Connect(n6, n7)
 
-Connect(n5, n6)
+		Connect(n7, n8)
 
-Connect(n6, n7)
+		Connect(n8, Root)
 
-Connect(n7, n8)
 
-Connect(n8, Root)
+		'Defines the nodes. 
 
+		public void createRightNodes(Node Root, BowtieSubTreePlacement place)
 
+					'Defining the nodes.            
 
+		Dim n1 As Node = AddNode("n1", "Account Limits", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle)
 
+		Dim n2 As Node = AddNode("n2", "Challenge", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle)
 
-'Defines the nodes. 
+		Dim n3 As Node = AddNode("n3", "Detection & Prosecution", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle)
 
-public void createRightNodes(Node Root, BowtieSubTreePlacement place)
+		Dim n4 As Node = AddNode("n4", "Recovery", Brushes.Yellow, Brushes.Black, 3, Shapes.RoundedRectangle)
 
-			'Defining the nodes.            
+		Dim n5 As Node = AddNode("n5", "Restitution" & Constants.vbLf & "to" & Constants.vbLf & "Customer", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse)
 
-Dim n1 As Node = AddNode("n1", "Account Limits", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle)
+		Dim n6 As Node = AddNode("n6", "Cost to Bank", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse)
 
-Dim n2 As Node = AddNode("n2", "Challenge", Brushes.Yellow, Brushes.Black, 1, Shapes.RoundedRectangle)
 
-Dim n3 As Node = AddNode("n3", "Detection & Prosecution", Brushes.Yellow, Brushes.Black, 2, Shapes.RoundedRectangle)
 
-Dim n4 As Node = AddNode("n4", "Recovery", Brushes.Yellow, Brushes.Black, 3, Shapes.RoundedRectangle)
+		DiagramControl.SetBowtieSubTreePlacement(n1, place)
 
-Dim n5 As Node = AddNode("n5", "Restitution" & Constants.vbLf & "to" & Constants.vbLf & "Customer", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse)
 
-Dim n6 As Node = AddNode("n6", "Cost to Bank", Brushes.Blue, Brushes.Black, 3, Shapes.Ellipse)
 
+		'Creating connections between the nodes.
 
+		Connect(Root, n1)
 
-DiagramControl.SetBowtieSubTreePlacement(n1, place)
+		Connect(n1, n2)
 
+		Connect(n2, n3)
 
+		Connect(n3, n4)
 
-'Creating connections between the nodes.
+		Connect(n4, n5)
 
-Connect(Root, n1)
+		Connect(n4, n6)
 
-Connect(n1, n2)
-
-Connect(n2, n3)
-
-Connect(n3, n4)
-
-Connect(n4, n5)
-
-Connect(n4, n6)
-
-{% endhighlight  %}
+   ~~~
+   {:.prettyprint }
 
 ![](Getting-Started_images/Getting-Started_img15.png)
 

@@ -16,6 +16,7 @@ The features of the ComboBoxAdv control are listed below:
 * AllowMultiSelect—ComboBoxAdv allows multiple selection
 * DefaultText—ComboBoxAdv displays a string when none of the items is selected 
 * SelectedValueDelimiter—It allows customizing the delimiter string displayed between selected items
+
 ## Adding ComboBoxAdv to an Application
 
 

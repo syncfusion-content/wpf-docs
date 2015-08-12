@@ -23,15 +23,20 @@ The following code illustrates this.
 
 
 
-<table>
-<tr>
-<td>
-[XAML]   <syncfusion:Ribbon Name="MyRibbon" IsAutoSizeFormEnabled="True"></syncfusion:Ribbon></td></tr>
-<tr>
-<td>
-[C#]  Ribbon MyRibbon = new Ribbon();MyRibbon.IsAutoSizeFormEnabled = true;</td></tr>
-</table>
+{% highlight xml %}
 
+[XAML]   
+<syncfusion:Ribbon Name="MyRibbon" IsAutoSizeFormEnabled="True">
+</syncfusion:Ribbon>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]  
+Ribbon MyRibbon = new Ribbon();
+MyRibbon.IsAutoSizeFormEnabled = true;
+
+{% endhighlight %}
 
 Ribbon items automatically changed its size form when window resized.
 
@@ -58,7 +63,7 @@ Large size form buttons changed to small size form buttons when resized.
 ![](Dynamic-Resizing-of-Ribbon-Controls_images/Dynamic-Resizing-of-Ribbon-Controls_img3.jpeg)
 
 
- _Note: Size form changed on further resizing of window._
+Note: Size form changed on further resizing of window.
 
 
 

@@ -147,12 +147,12 @@ Double</td></tr>
 </table>
 
 
-Use Case Scenarios
+### Use Case Scenarios
 
 * You can mark the important dates and meetings in the scheduled time line.
 * Strip lines help you to avoid missing important events.
 
-## Properties
+#### Properties
 
 _Properties_
 
@@ -178,7 +178,7 @@ IEnumerable</td></tr>
 </table>
 
 
-## Enums
+#### Enums
 
 _Enums_
 
@@ -198,7 +198,7 @@ This property contains the following values:Regular: This denotes the normal str
 </table>
 
 
-## Events
+#### Events
 
 _Events_
 
@@ -210,11 +210,11 @@ Description</th><th>
 Arguments</th><th>
 Type</th></tr>
 <tr>
-<th>
-StripLineCreated </th><th>
-Whenever a strip line is created, this event will be triggered. The handler of the event will have the newly created strip line (StripLineInfo) in the argument.By handling this event, you can customize the appearance of the strip line.</th><th>
-StripLineCreated(object sender, StriplineCreatedEventArgs args)</th><th>
-Event </th></tr>
+<td>
+StripLineCreated </td><td>
+Whenever a strip line is created, this event will be triggered. The handler of the event will have the newly created strip line (StripLineInfo) in the argument.By handling this event, you can customize the appearance of the strip line.</td><td>
+StripLineCreated(object sender, StriplineCreatedEventArgs args)</td><td>
+Event </td></tr>
 </table>
 
 ## Adding Striplines to Application
@@ -272,7 +272,7 @@ private List<StripLineInfo> GetStripCollection()
 The following code example illustrates binding the strip line collection to StripLines:
 
 
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 <sync:GanttControl x:Name="Gantt"
@@ -321,7 +321,7 @@ The following image shows the Resultant output:
 
 _Strip Lines in Gantt Chart_
 
-## Sample Link
+#### Sample Link
 
 To view samples:
 

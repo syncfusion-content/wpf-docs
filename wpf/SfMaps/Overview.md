@@ -40,8 +40,8 @@ A map is maintained through layers. The shape file layer is one of the layers th
 
 <table>
 <tr>
-<td>
-Map</td></tr>
+<th>
+Map</th></tr>
 <tr>
 <td>
 </td></tr>

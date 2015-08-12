@@ -406,7 +406,7 @@ The steps to create a DoubleTextBox by using VisualStudio in C# are as follows:
 
 
 
-![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)
+   ![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -416,7 +416,7 @@ The steps to create a DoubleTextBox by using VisualStudio in C# are as follows:
 
 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -427,7 +427,7 @@ The steps to create a DoubleTextBox by using VisualStudio in C# are as follows:
 
 
 
-![](Getting-Started_images/Getting-Started_img5.png)
+   ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -485,9 +485,9 @@ Zero will be the default value (based on the MinValue and MaxValue the default v
 
 See Also
 
-####Creating a DoubleTextBox by using XAML
+Creating a DoubleTextBox by using XAML
 
-####Creating a DoubleTextBox by using Expression Blend
+Creating a DoubleTextBox by using Expression Blend
 
 ### Creating a DoubleTextBox by using XAML
 
@@ -499,7 +499,7 @@ The steps to create a DoubleTextBox by using Visual Studio in XAML are as follow
 
 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
@@ -539,9 +539,9 @@ The steps to create a DoubleTextBox by using Visual Studio in XAML are as follow
 
 See Also
 
-####Creating a DoubleTextBox by using C# 
+Creating a DoubleTextBox by using C# 
 
-####Creating a DoubleTextBox by using Expression Blend
+Creating a DoubleTextBox by using Expression Blend
 
 ### Creating a DoubleTextBox by using Expression Blend
 
@@ -552,7 +552,7 @@ The steps to create a DoubleTextBox in the application by using Expression Blend
 
 
 
-![](Getting-Started_images/Getting-Started_img9.png)
+   ![](Getting-Started_images/Getting-Started_img9.png)
 
 
 
@@ -560,12 +560,7 @@ The steps to create a DoubleTextBox in the application by using Expression Blend
 
 3. In the Project types panel, select WPF Application and then click OK.
 
-
-
-![](Getting-Started_images/Getting-Started_img10.png)
-
-
-
+   ![](Getting-Started_images/Getting-Started_img10.png)
 
 
 4. Add the following reference with the sample project:
@@ -575,7 +570,7 @@ The steps to create a DoubleTextBox in the application by using Expression Blend
 
 
 
-![](Getting-Started_images/Getting-Started_img11.png)
+   ![](Getting-Started_images/Getting-Started_img11.png)
 
 
 
@@ -583,9 +578,7 @@ The steps to create a DoubleTextBox in the application by using Expression Blend
 
 8. Drag the DoubleTextBox control to Design View.
 
-
-
-![](Getting-Started_images/Getting-Started_img12.png)
+   ![](Getting-Started_images/Getting-Started_img12.png)
 
 
 
@@ -621,9 +614,9 @@ The steps to create a DoubleTextBox in the application by using Expression Blend
 
 See Also
 
-####Creating a DoubleTextBox by using C# 
+Creating a DoubleTextBox by using C# 
 
-####Creating a DoubleTextBox by using XAML
+Creating a DoubleTextBox by using XAML
 
 Blendability
 
@@ -634,15 +627,12 @@ You have to use the Value property to set the value for the DoubleTextBox.
 Note: Do not use the Text property to set the value for the DoubleTextBox. Use only the Value property.
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100"/> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %} doubleTextBox.Value = 100; {% endhighlight %} </td></tr>
-</table>
-
+{% highlight xml %} 
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100"/>
+ {% endhighlight %} 
+{% highlight C# %} 
+doubleTextBox.Value = 100;
+ {% endhighlight %} 
 
 ![](Getting-Started_images/Getting-Started_img14.png)
 
@@ -650,23 +640,22 @@ Note: Do not use the Text property to set the value for the DoubleTextBox. Use o
 
 See Also
 
-####Maximum and Minimum Value
+Maximum and Minimum Value
 
-####NullValue Support
+NullValue Support
 
 ## Setting Minimum and Maximum Value
 
 You can set the Minimum and Maximum value by using the MinVal and MaxVal properties of the DoubleTextBox.
 
 
-
-<table>
-<tr>
-<td>
-{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100"                           MinValue="-999.99" MaxValue="999.99"/> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %} doubleTextBox.MinValue = -999.99;doubleTextBox.MaxValue = 999.99; {% endhighlight %} </td></tr>
+{% highlight xml %} 
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100"  MinValue="-999.99" MaxValue="999.99"/>
+ {% endhighlight %} 
+{% highlight C# %} 
+doubleTextBox.MinValue = -999.99;
+doubleTextBox.MaxValue = 999.99;
+ {% endhighlight %} </td></tr>
 </table>
 
 
@@ -676,9 +665,9 @@ You can set the Minimum and Maximum value by using the MinVal and MaxVal propert
 
 See Also
 
-####Culture and Number Formats
+Culture and Number Formats
 
-####Binding Support
+Binding Support
 
 ## Setting Watermark
 
@@ -687,14 +676,15 @@ You can set the Watermark for the DoubleTextBox by using the WatermarkText prope
 Note: WatermarkText is visible only when the value is null.
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100"                            Value="{x:Null}" MinValue="-999" MaxValue="999"                            UseNullOption="True"                            WatermarkText="Type Here" WatermarkTextIsVisible="True"/> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %} doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = null;doubleTextBox.WatermarkText = "Type Here";doubleTextBox.WatermarkTextIsVisible = true; {% endhighlight %} </td></tr>
-</table>
+{% highlight xml %}
+ <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="{x:Null}" MinValue="-999" MaxValue="999" UseNullOption="True"  WatermarkText="Type Here" WatermarkTextIsVisible="True"/> 
+ {% endhighlight %} 
+{% highlight C# %} 
+doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = null;
+doubleTextBox.WatermarkText = "Type Here";
+doubleTextBox.WatermarkTextIsVisible = true;
+ {% endhighlight %} 
+
 
 
 ![](Getting-Started_images/Getting-Started_img16.png)

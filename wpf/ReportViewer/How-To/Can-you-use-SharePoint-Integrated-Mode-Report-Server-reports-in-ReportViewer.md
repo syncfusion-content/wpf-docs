@@ -7,9 +7,12 @@ control: Report Viewer
 documentation: ug
 ---
 
-### Can you use SharePoint Integrated Mode Report Server reports in ReportViewer?
+## Can you use SharePoint Integrated Mode Report Server reports in ReportViewer?
 
 Yes, Syncfusion Report Viewer supports viewing and exporting SharePoint Integrated Mode Reporting Service reports. 
+
+
+{% highlight js %}
 
 this.reportViewer1.ReportLoaded += (sen, arg) =>
 
@@ -46,6 +49,10 @@ this.reportViewer1.ReportLoaded += (sen, arg) =>
           this.reportViewer1.ReportServerUrl = @' http://ServerName/ReportServer';
 
           this.reportViewer1.RefreshReport();
+
+{% endhighlight %}
+
+
 
 
 

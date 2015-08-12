@@ -149,7 +149,7 @@ PropertyChangedCallback</td></tr>
 
 ##  Samples Link
 
-      To view samples:
+To view samples:
 
 
 

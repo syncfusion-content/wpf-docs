@@ -13,9 +13,12 @@ The button controls can be modified by using the Expression Blend.
 
 To modify the button control:
 
+{% highlight text %}
+
 * Open Sample in the Expression Blend. 
 * Right click the button control and choose Edit Template option as below:
 
+{% endhighlight %}
 
 
   ![](Blendability_images/Blendability_img1.png)
@@ -39,7 +42,7 @@ To modify the button control:
 
 
 
-![](Blendability_images/Blendability_img4.png)
+  ![](Blendability_images/Blendability_img4.png)
 
 
 

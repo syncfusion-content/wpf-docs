@@ -30,7 +30,6 @@ The following code example explains how to use the Source and PagedSource proper
 
 {% highlight html %}
 
-[XAML]
 
 <Window.DataContext>
 
@@ -68,6 +67,7 @@ The following code example explains how to use the Source and PagedSource proper
 
 </Grid>
 {% endhighlight  %}
+
 The following screenshot displays the output of the above code.
 
 #### PageIndex
@@ -102,7 +102,7 @@ PageIndexChanged</td><td>
 Event is triggered after the current page index is changed.</td></tr>
 </table>
 
-#### How to bind the PageCollection to the other controls?
+##### How to bind the PageCollection to the other controls?
 
 SfDataPager automatically wraps the collection in PagedCollectionView and exposes to the PagedSource property. You can pass the PagedSource property to any ItemsControl’s ItemsSource property. Here, the PagesSource property is binded to the ListBox.
 
@@ -110,7 +110,7 @@ The following code explains how to use Source and PagedSource property in ListBo
 
 
 {% highlight html %}
-[XAML]
+
 
 <Window.DataContext>
 
@@ -175,16 +175,15 @@ The following steps help you to achieve an onDemand loading with the SfDataPager
 2. Set the PageCount value for the SfDataPager control.
 
 
-{% highlight html %}
-[XAML]
+   ~~~	html
 
-<Window.DataContext>
+		<Window.DataContext>
 
-<local:ViewModel/>
+		<local:ViewModel/>
 
-</Window.DataContext>
+		</Window.DataContext>
 
-<Grid>
+		<Grid>
 
         <Grid.RowDefinitions>
 
@@ -194,7 +193,7 @@ The following steps help you to achieve an onDemand loading with the SfDataPager
 
         </Grid.RowDefinitions>
 
-<syncfusion:SfDataGrid x:Name="dataGrid"
+		<syncfusion:SfDataGrid x:Name="dataGrid"
 
                          AllowResizingColumns="True"
 
@@ -204,7 +203,7 @@ The following steps help you to achieve an onDemand loading with the SfDataPager
 
 
 
-<datapager:SfDataPager x:Name="sfDataPager" 
+		<datapager:SfDataPager x:Name="sfDataPager" 
 
                          OnDemandLoading="OnDemandDataLoading" 
 
@@ -214,20 +213,22 @@ The following steps help you to achieve an onDemand loading with the SfDataPager
 
                          UseOnDemandPaging="True" />
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 3. Wire up the OnDemandLoading event of SfDataPager.
-{% highlight c# %}
-[C#]
+   
+   ~~~ cs
+   
+		private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs  args)
 
-private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs  args)
+		{           sfDataPager.LoadDynamicItems(args.StartIndex,source.Skip(args.StartIndex).Take(args.PageSize));
 
-{           sfDataPager.LoadDynamicItems(args.StartIndex,source.Skip(args.StartIndex).Take(args.PageSize));
+		}
 
-}
+   ~~~
+  {:.prettyprint}
 
-
-{% endhighlight %}
 The following screenshot displays the output for OnDemandPaging,
 
 ![C:/Users/giftline.jebamani/Desktop/a.png](Features_images/Features_img3.png)
@@ -239,8 +240,9 @@ The following screenshot displays the output for OnDemandPaging,
 SfDataPager splits the data into separate pages based on the PageSize. In order to specify the size of the page, you can use the PageSize property. By defaults, it is set to 0 and all the data is displayed in a single page.
 
 The following code example explains how to use PageSize property in SfDataPager.
+
 {% highlight html %}
-[XAML]
+
 
 <Window.DataContext>
 
@@ -282,13 +284,13 @@ The following screenshot displays the output for PageSize set as 5.
 
 
 
-#### How To
+##### How To
 
-#### How to change the PageSize in Runtime
+##### How to change the PageSize in Runtime
 
 In general, the size of the page is defined in the PageSize property. In some cases, you may want to change it during the run time. The following code example explains how to change the size of the page during runtime for a ComboBox.
 {% highlight html %}
-[XAML]
+
 
 <Window.DataContext>
 
@@ -406,8 +408,9 @@ It does not display the AutoEllipsisButton.</td></tr>
 > Note: By Default AutoEllipsisMode is set to None.
 
 The following code example explains how to change the AutoEllipsisbuttontext.
+
 {% highlight html %}
-[XAML]
+
 
 <Window.DataContext>
 
@@ -469,7 +472,7 @@ The following code example explains how to apply the AccentBackground and Accent
 
 
 {% highlight html %}
-[XAML]
+
 
 <Window.DataContext>
 
@@ -509,7 +512,7 @@ The following code example explains how to use NumericButtonStyle in SfDataPager
 
 
 {% highlight html %}
-[XAML]
+
 
 <Window.DataContext>
 
@@ -665,7 +668,7 @@ Arranges all the Navigation Buttons and Numeric Buttons Vertically.{{'![B:/Suppo
 </table>
 
 
-### PageNavigation
+## PageNavigation
 
 SfDataPager allows you to move from the current Page to various Pages.For example, when you want to move the CurrentPage to the last page directly, you can use the method MoveToLastPage() . When this method is called, the current page moves to the last page. 
 
@@ -705,9 +708,9 @@ This method moves the current page index to the corresponding page index that is
 </table>
 
 
-#### How To
+### How To
 
-#### How to Interact with User before Page Changes
+### How to Interact with User before Page Changes
 
 When you are working with Paging, you may be in Edit mode or in CurrentPage. In this case, you can stop navigating the Paging by using the PageIndexChanging event before changing the page.
 
@@ -715,7 +718,6 @@ The following example displays the MessageBox before the PageChanging,
 
 {% highlight html %}
 
-[XAML]
 
 <Window.DataContext>
 
@@ -754,7 +756,7 @@ The following example displays the MessageBox before the PageChanging,
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
+
 
 void sfDataPager_PageIndexChanging(object sender, PageIndexChangingEventArgs args)
 
@@ -774,13 +776,15 @@ void sfDataPager_PageIndexChanging(object sender, PageIndexChangingEventArgs arg
 
 
 {% endhighlight %}
-### UIAutomation
+
+## UIAutomation
 
 SfDataPager supports the following UIAutomation,
 
 * CodedUI
 * Quick Test Proffessional
-#### CodedUI
+
+### CodedUI
 
 
 SfDataPager supports CodedUITest automation that helps you to create an automation test with SfDataPager elements and record the sequence of actions.
@@ -858,11 +862,11 @@ Description</th><th>
 Parameters </th><th>
 Return Type </th></tr>
 <tr>
-<th>
-void SetCurrentPage(int pageIndex</th><th>
-To set the current page in SfDataPager</th><th>
- Int pageIndex</th><th>
-Void</th></tr>
+<td>
+void SetCurrentPage(int pageIndex</td><td>
+To set the current page in SfDataPager</td><td>
+ Int pageIndex</td><td>
+Void</td></tr>
 </table>
 
 

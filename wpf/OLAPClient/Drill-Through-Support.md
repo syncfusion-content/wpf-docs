@@ -17,11 +17,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-DataType</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+DataType</th></tr>
 <tr>
 <td>
 EnableDrillThrough</td><td>

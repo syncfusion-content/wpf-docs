@@ -51,7 +51,7 @@ To highlight a set of tasks in Gantt chart region:
 2. If required, change the value of the Gantt’s HighlightItemBrush API to change the item highlight color. The default color is red.
 
 
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 <sync:GanttControl x:Name="Gantt" 

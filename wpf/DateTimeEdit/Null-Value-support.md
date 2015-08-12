@@ -16,7 +16,7 @@ DateTimeEdit control accepts null values. NullValue support in the DateTimeEdit 
 {% highlight c# %}
 C#
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          IsEmptyDateEnabled="True" NullValue="{x:Null}">
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"  IsEmptyDateEnabled="True" NullValue="{x:Null}">
 
 {% endhighlight %}
 
@@ -31,10 +31,10 @@ Here is an example to change the DateTime property by using the NullValue proper
 In the example displayed below when you set null to the DateTime property, then automatically the value of the NullValue property is set to the DateTime property.
 
 
-{% highlight html %}
+{% highlight xml %}
 XAML
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          IsEmptyDateEnabled="True" NullValue="07/05/2010">
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"  IsEmptyDateEnabled="True" NullValue="07/05/2010">
 {% endhighlight  %}
 
 

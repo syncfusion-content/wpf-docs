@@ -31,8 +31,8 @@ The following lists the key features of DataGrid control.
 * Printing	- Interactive support to print the displayed data.
 * Exporting - Interactive support to export the DataGrid to excel and PDF
 * Styles and Templates - Extensive support to customize every control inside the DataGrid.
-## Choose between Different Grids 
 
+## Choose between Different Grids
 
 This section explains different Grids that are provided and used in your application. The following are the different Grid controls to display data with unmatched performance.
 
@@ -67,14 +67,14 @@ Both SfDataGrid and GridDataControl almost have the same set of features. But Sf
 
 Comparatively, the performance of SfDataGrid control is better than the GridDataControl. You can see the list of some of the specific API difference between GridDataControl and SfDataGrid as follows:
 
-##### _Property Table_
+_Property Table_
 
 <table>
 <tr>
-<td>
-GridDataControl</td><td>
-SfDataGrid</td><td>
-Description</td></tr>
+<th>
+GridDataControl</th><th>
+SfDataGrid</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoPopulateColumns</td><td>
@@ -198,13 +198,13 @@ The number of columns is freeze from right.</td></tr>
 </table>
 You can see the list of rich set of features in SfDataGrid over GridDataControl as follows:
 
-##### _Rich set of features in SfDataGrid over GridDataControl_
+_Rich set of features in SfDataGrid over GridDataControl_
 
 <table>
 <tr>
-<td>
-Feature</td><td>
-Description</td></tr>
+<th>
+Feature</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoRowHeight</td><td>

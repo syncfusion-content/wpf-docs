@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Overview
 description: overview  
@@ -18,7 +18,7 @@ The tree navigator control provides a unique interface that can expand a tree st
 
 
 
-Key Features
+## Key Features
 
 * Items Source – Any business object collection can be bound to control. 
 * Hierarchical Data Template – Business objects displayed in the hierarchy can be customized with single template. 

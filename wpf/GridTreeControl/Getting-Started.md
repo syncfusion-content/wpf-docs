@@ -79,11 +79,11 @@ The following illustration depicts the Class Diagram for Essential Grid for WPF.
 
 This section serves as a guide on how to deploy EssentialGrid in an application.
 
-## Adding the GridTree Control to a WPF Application
+### Adding the GridTree Control to a WPF Application
 
 This section demonstrates how to add a GridTree control to a WPF application and how to load the grid with a data source. The GridTree control can be added to an application either through a designer or programmatically.
 
-### Adding GridTreeControl through a Designer
+#### Adding GridTreeControl through a Designer
 
 Please follow the steps below to add the GridTree control through a designer such as Visual Studio.
 
@@ -117,35 +117,33 @@ Please follow the steps below to add the GridTree control through a designer suc
 
 3. Name the root grid as layoutRoot in the application’s XAML page.		
 
-~~~xml
-
-[XAML]
+   ~~~ xml
 
 
- <Grid Name="layoutRoot"/> 
 
-~~~
-{:.prettyprint}
+
+ 		<Grid Name="layoutRoot"/> 
+
+   ~~~
+   {:.prettyprint}
 
 4. Create a new GridTreeControl in code and add it as a child of layoutRoot (Grid). Now GridTreeControl will be added to the view.
 
-~~~ cs
-
-[C#]
+   ~~~ cs
 
 
 
-//GridTreeControl defined here
+		//GridTreeControl defined here
 
-GridTreeControl treeGrid = new GridTreeControl();
+		GridTreeControl treeGrid = new GridTreeControl();
 
-//To bring the GridTreeControl to the view, GridTreeControl should be added to the children of layoutRoot.
+		//To bring the GridTreeControl to the view, GridTreeControl should be added to the children of layoutRoot.
 
-layoutRoot.Children.Add(treeGrid);
+		layoutRoot.Children.Add(treeGrid);
 
 
-~~~
-{:.prettyprint}
+  ~~~
+  {:.prettyprint}
 
 
 ### Data Population in the GridTree Control
@@ -166,11 +164,10 @@ To populate data using this event, follow these steps:
 
 ~~~ cs
 
-[C#]
 
 
 
-public class EmployeesCollection:List<Employee>
+	public class EmployeesCollection:List<Employee>
 
     {
 
@@ -312,88 +309,86 @@ public class EmployeesCollection:List<Employee>
 
         }       
 
-    }
+    	}
 
 
-~~~
-{:.prettyprint}
+   ~~~
+   {:.prettyprint}
 
 
-2.  The RequestTreeItems event can hook in either XAML or code.
-
-
-
-Hooking RequestTreeItems Event in XAML
-
-~~~xml
-
-[XAML] 
+2. The RequestTreeItems event can hook in either XAML or code.
 
 
 
-<syncfusion:GridTreeControl Name="treeGrid" 
+   ### Hooking RequestTreeItems Event in XAML
 
-   RequestTreeItems="treeGrid_RequestTreeItems" 
+   ~~~ xml
 
-   EnableNodeSelection="False"  
-
-   AutoPopulateColumns="True"  
-
-   PercentSizingBehavior="SizeUntouchedColumns" >  
+ 
 
 
 
-~~~
-{:.prettyprint}
+		<syncfusion:GridTreeControl Name="treeGrid" 
 
-Hooking RequestTreeItems Event in Code
+		RequestTreeItems="treeGrid_RequestTreeItems" 
 
-~~~cs
+		EnableNodeSelection="False"  
 
-[C#] 
+		AutoPopulateColumns="True"  
 
-
-
-this.treeGrid.RequestTreeItems+=new GridTreeRequestTreeItemsHandler(treeGrid_RequestTreeItems);
+		PercentSizingBehavior="SizeUntouchedColumns" >  
 
 
-~~~
-{:.prettyprint}
+
+   ~~~
+   {:.prettyprint}
+
+   Hooking RequestTreeItems Event in Code
+
+   ~~~ cs
+
+
+
+
+		this.treeGrid.RequestTreeItems+=new GridTreeRequestTreeItemsHandler(treeGrid_RequestTreeItems);
+
+
+    ~~~
+   {:.prettyprint}
 
 
 3. Handle the RequestTreeItems event to pass the source to the root and child nodes dynamically.
 
-~~~cs
-
-[C#]
+   ~~~ cs
 
 
 
-EmployeesCollection employees;
 
-public MainWindow()
+		EmployeesCollection employees;
 
-{
+		public MainWindow()
 
-  InitializeComponent();         
+		{
 
-  this.gridTreeControl1.RequestTreeItems += new Syncfusion.Windows.Controls.Grid.GridTreeRequestTreeItemsHandler(treeGrid_RequestTreeItems);
+  		InitializeComponent();         
 
-  employees = new EmployeesCollection();          
+  		this.gridTreeControl1.RequestTreeItems += new Syncfusion.Windows.Controls.Grid.GridTreeRequestTreeItemsHandler(treeGrid_RequestTreeItems);
 
-}
+  		employees = new EmployeesCollection();          
+
+		}
 
 
 
-private void treeGrid_RequestTreeItems(object sender, GridTreeRequestTreeItemsEventArgs args)
+		private void treeGrid_RequestTreeItems(object sender, GridTreeRequestTreeItemsEventArgs args)
 
-{
+		{
 
-    //When ParentItem is null, you need to set args.ChildList to be the root items
+    	//When ParentItem is null, you need to set args.ChildList to be the root items
 
-    if (args.ParentItem == null)
+   		 if (args.ParentItem == null)
 
-    {
+    		{
 
         //Get the root list-get all employees who have no boss 
 
@@ -401,11 +396,11 @@ private void treeGrid_RequestTreeItems(object sender, GridTreeRequestTreeIte
 
         args.ChildList = employees.Where(x => x.ReportsTo == -1);
 
-    }
+    		}
 
-    else //If ParentItem not null, then set args.ChildList to the child items for the given ParentItem.
+    	else //If ParentItem not null, then set args.ChildList to the child items for the given ParentItem.
 
-    {   //Get the children of the parent object
+    	{   //Get the children of the parent object
 
         Employee emp = args.ParentItem as Employee;
 
@@ -419,12 +414,12 @@ private void treeGrid_RequestTreeItems(object sender, GridTreeRequestTreeIte
 
         }
 
-    }
+    	}
 
-} 
+		} 
 
-~~~
-{:.prettyprint}
+   ~~~
+   {:.prettyprint}
 
 When the application runs, the following output will be generated.
 
@@ -443,23 +438,21 @@ When the application runs, the following output will be generated.
 4. Expand the Data Population Features item in the Sample Browser.
 5. Select On-Demand Loading Demo to launch the sample.
 
-Binding a Self-Relational Collection to the GridTree Control
+### Binding a Self-Relational Collection to the GridTree Control
 
 A self-relational collection is a collection of objects in which each object has a hierarchy within. Each object will act as a parent and hold its children in an attribute. Each child acts as the next-level parent and holds children in an attribute, and so on. In this example, both child and parent will be of the same type (data type/object type). Specifying the child attribute name in ChildPropertyName of GridTreeControl will automatically fetch the hierarchy and populate it.
 
 1. Create a self-relational collection of objects to bind with the GridTree control. In this example, we have created a collection of objects containing employee information.
 
-~~~cs
-
-[C#]
+   ~~~ cs
 
 
 
- //This code is used to create a list collection of hierarchical data
+ 		//This code is used to create a list collection of hierarchical data
 
- public class EmployeeDetails : List<Employee>
+ 		public class EmployeeDetails : List<Employee>
 
-    {
+    	{
 
         public EmployeeDetails()
 
@@ -469,7 +462,7 @@ A self-relational collection is a collection of objects in which each object has
 
 
 
- //The child list is the ChildCollection of the node
+		//The child list is the ChildCollection of the node
 
             List<Employee> childList = new List<Employee>();
 
@@ -507,11 +500,11 @@ A self-relational collection is a collection of objects in which each object has
 
         }
 
-    }
+    	}
 
-    public class Employee
+    	public class Employee
 
-    {
+    	{
 
 
 
@@ -643,118 +636,119 @@ A self-relational collection is a collection of objects in which each object has
 
         } 
 
-    }
+    	}
 
 
-~~~
-{:.prettyprint}
+   ~~~
+   {:.prettyprint}
 
 
 2. Bind ItemsSource of GridTreeControl and assign ChilPropertyName—these can be set in either XAML or code.
 
-Binding in XAML
+   ### Binding in XAML
 
-~~~ xml
-[XAML]
-
-
-
-<syncfusion:GridTreeControl 
-
-       Name="treeGrid" 
-
-       AutoPopulateColumns="True" 
-
-       ExpandStateAtStartUp="AllNodesExpanded" 
-
-       ChildPropertyName="Child" 
-
-       ItemsSource="{Binding GTCSource}"/>
-
-~~~
-{:.prettyprint}
-
-
-~~~cs
-
-[C#]
+   ~~~ xml
 
 
 
-public MainWindow()
 
-{
+		<syncfusion:GridTreeControl 
 
-   InitializeComponent();   
+		Name="treeGrid" 
 
-   this.DataContext = this;
+		AutoPopulateColumns="True" 
 
-   _gtcSource = new EmployeeDetails();
+		ExpandStateAtStartUp="AllNodesExpanded" 
 
-}
+		ChildPropertyName="Child" 
+
+		ItemsSource="{Binding GTCSource}"/>
+
+   ~~~
+   {:.prettyprint}
+
+
+   ~~~ cs
 
 
 
- //This property is set as ItemsSource of GridTreeControl
 
-private EmployeeDetails _gtcSource;
 
-public EmployeeDetails GTCSource
+		public MainWindow()
 
-{
+		{
 
-   get
+   		InitializeComponent();   
 
-   {
+		this.DataContext = this;
 
-       return _gtcSource;
+		_gtcSource = new EmployeeDetails();
 
-   }
+		}
 
-   set
 
-   {
+
+		//This property is set as ItemsSource of GridTreeControl
+
+		private EmployeeDetails _gtcSource;
+
+		public EmployeeDetails GTCSource
+
+		{
+
+   		get
+
+   		{
+
+      	 return _gtcSource;
+
+   		}
+
+   		set
+
+   		{
 
         _gtcSource = value;
 
-   }
+   		}
 
-}
-
-
-
-Assigning Items’ Source Code 
-
-~~~
-{:.prettyprint}
-
-~~~cs
-
-[C#]
+		}
 
 
+   ~~~
+   {:.prettyprint}
+   
+   ### Assigning Items’ Source Code 
 
-public MainWindow()
+  
 
-{
-
-    InitializeComponent();    
-
-    //ItemsSource set to GridTreeControl
-
-    this.treeGrid.ItemsSource = new EmployeeDetails();
-
-}
-
-
-~~~
-{:.prettyprint}
-
-When the application runs, the following output will be generated.
+   ~~~ cs
 
 
 
-![](Getting-Started_images/Getting-Started_img10.png)
+
+
+		public MainWindow()
+
+		{
+
+    	InitializeComponent();    
+
+		//ItemsSource set to GridTreeControl
+
+   		 this.treeGrid.ItemsSource = new EmployeeDetails();
+
+		}
+
+
+   ~~~
+   {:.prettyprint}
+
+   When the application runs, the following output will be generated.
+
+
+
+   ![](Getting-Started_images/Getting-Started_img10.png)
 
 
 
@@ -777,27 +771,27 @@ The following steps explain how to bind a data view from a database to the GridT
 
 
 
-> _Note: Before using this procedure, check that System.data.SqlServerCe.dll has been added to your project._
+   > Note: Before using this procedure, check that System.data.SqlServerCe.dll has been added to your project.
 
-~~~cs
+   ~~~ cs
 
-[C#] 
 
-// Connect to a data table
 
-public DataTable GetDataTable()
+		// Connect to a data table
 
-{
+		public DataTable GetDataTable()
 
-   DataSet ds = new DataSet();            
+		{
 
-   if (!LayoutControl.IsInDesignMode)
+   		DataSet ds = new DataSet();            
 
-   {
+   		if (!LayoutControl.IsInDesignMode)
 
-     using (SqlCeConnection con = new SqlCeConnection(connectionString))
+   		{
 
-     {
+     	using (SqlCeConnection con = new SqlCeConnection(connectionString))
+
+     	{
 
         con.Open();
 
@@ -805,40 +799,40 @@ public DataTable GetDataTable()
 
          sda.Fill(ds, "Employee");
 
-     }  
+     	}	  
 
-//The following line is used to create the hierarchical relations
+		//The following line is used to create the hierarchical relations
 
-     ds.Relations.Add(new DataRelation("Employee_Relation", ds.Tables["Employee"].Columns["Employee ID"], ds.Tables["Employee"].Columns["Reports To"],false));
+     	ds.Relations.Add(new DataRelation("Employee_Relation", ds.Tables["Employee"].Columns["Employee ID"], ds.Tables["Employee"].Columns["Reports To"],false));
 
-   }
+   		}
 
-   if (ds.Tables.Count > 0)
+   		if (ds.Tables.Count > 0)
 
-     return ds.Tables[0];
+     	return ds.Tables[0];
 
-   else
+  		 else
 
-     return null;
+     	return null;
 
-}
-~~~
-{:.prettyprint}
+		}
+   ~~~
+   {:.prettyprint}
 
 
 3. Now bind the data table as an ItemsSource of GridTreeControl in either XAML or code.
 
 
 
-Binding in XAML
+   ### Binding in XAML
 
-~~~xml
-
-[XAML]
+   ~~~ xml
 
 
 
-<syncfusion:GridTreeControl Name="treeGrid" 
+
+
+		<syncfusion:GridTreeControl Name="treeGrid" 
 
                             AutoPopulateColumns="True"
 
@@ -850,129 +844,128 @@ Binding in XAML
 
 
 
-~~~
-{:.prettyprint}
+   ~~~
+   {:.prettyprint}
 
 
-~~~cs
-
-[C#]
-
-
-
-public MainWindow()
-
-{
-
-   InitializeComponent();           
-
-   this.DataContext = this;
-
-   dataTable = GetDataTable();
-
-}
+   ~~~ cs
 
 
 
-DataTable dataTable;
 
-public DataView GTCSource
 
-{
+		public MainWindow()
 
-   get
+		{
 
-   {
+   		InitializeComponent();           
 
-     if (dataTable == null)
+  		 this.DataContext = this;
+
+   		dataTable = GetDataTable();
+
+		}
+
+
+
+		DataTable dataTable;
+
+		public DataView GTCSource
+
+		{
+
+   		get
+
+   		{
+
+     	if (dataTable == null)
+
+       	return null;
+
+
+
+     	DataView dataView = new DataView(dataTable);
+
+		//RowFilter is applied to form the hierarchy
+
+     	dataView.RowFilter = "[Reports To] Is NULL";
+
+
+
+     	return dataView;            
+
+   		}
+
+		}
+
+
+   ~~~
+   {:.prettyprint}
+
+
+   ### Assigning the Items’ Source in Code 
+
+   ~~~ cs
+
+
+
+
+		public MainWindow()
+
+		{
+
+   	 	InitializeComponent();
+
+		//Relation name set as ChildPropertyName
+
+		this.treeGrid.ChildPropertyName = "Employee_Relation";
+
+		dataTable = GetDataTable();    
+
+		//ItemsSource set to GridTreeControl
+
+    	this.treeGrid.ItemsSource = GTCSource;
+
+		}
+
+
+
+		DataTable dataTable;
+
+		public DataView GTCSource
+
+		{
+
+  		 get
+
+   		{
+
+     	if (dataTable == null)
 
        return null;
 
+     	DataView dataView = new DataView(dataTable);
 
+     	dataView.RowFilter = "[Reports To] Is NULL";
 
-     DataView dataView = new DataView(dataTable);
-
-     //RowFilter is applied to form the hierarchy
-
-     dataView.RowFilter = "[Reports To] Is NULL";
-
-
-
-     return dataView;            
-
-   }
-
-}
-
-
-~~~
-{:.prettyprint}
-
-
- Assigning the Items’ Source in Code 
-
-~~~ cs
-
-[C#]
+     	return dataView;
 
 
 
-public MainWindow()
+     	}
 
-{
+		}
 
-    InitializeComponent();
 
-    //Relation name set as ChildPropertyName
+   ~~~
+   {:.prettyprint}
 
-    this.treeGrid.ChildPropertyName = "Employee_Relation";
 
-    dataTable = GetDataTable();    
-
-    //ItemsSource set to GridTreeControl
-
-    this.treeGrid.ItemsSource = GTCSource;
-
-}
+   When the application runs, the following output will be generated.
 
 
 
-DataTable dataTable;
-
-public DataView GTCSource
-
-{
-
-   get
-
-   {
-
-     if (dataTable == null)
-
-       return null;
-
-     DataView dataView = new DataView(dataTable);
-
-     dataView.RowFilter = "[Reports To] Is NULL";
-
-     return dataView;
-
-
-
-     }
-
-}
-
-
-~~~
-{:.prettyprint}
-
-
-When the application runs, the following output will be generated.
-
-
-
-![](Getting-Started_images/Getting-Started_img11.png)
+   ![](Getting-Started_images/Getting-Started_img11.png)
 
 
 

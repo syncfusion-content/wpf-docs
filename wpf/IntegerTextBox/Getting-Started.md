@@ -372,6 +372,7 @@ RoutedEventArgs</td><td>
 Occurs when the text selection has changed.</td><td>
 SelectionChanged</td></tr>
 </table>
+
 ## Creating an IntegerTextBox Control
 
 IntegerTextBox can be added to the application by using Visual Studio and Microsoft Expression Blend.
@@ -383,22 +384,22 @@ The steps to create an IntegerTextBox by using Visual Studio in C# are as follow
 1. Open Visual Studio.
 2. On the File menu, select New -> Project. This opens the New Project Dialog box.
 
-![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
 3. On the Project Dialog window, select WPF Application, in the name field, type the name of the project, and then click OK.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
 4. Add the following reference with the sample project:
-1. Syncfusion.Shared.WPF.dll
+	1. Syncfusion.Shared.WPF.dll
 
 
 
-![](Getting-Started_images/Getting-Started_img5.png)
+   ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -450,7 +451,7 @@ See Also
 
 Creating an IntegerTextBox by using XAML
 
-##Blendability
+## Blendability
 
 ### Creating an IntegerTextBox by using XAML
 
@@ -462,7 +463,7 @@ The steps to create an IntegerTextBox by using Visual Studio in XAML are as foll
 
 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
@@ -496,13 +497,13 @@ The steps to create an IntegerTextBox by using Visual Studio in XAML are as foll
 
 
 
-Note:
-
-* If you do not set any value to the IntegerTextBox then the default value will be as follows:
-* If the UseNullOption is set to true then,
-* Value of the NullValue property will be the default value.
-* Otherwise
-* Zero will be the default value (based on the MinValue and MaxValue the default value will change).
+> Note:
+>
+> * If you do not set any value to the IntegerTextBox then the default value will be as follows:
+> * If the UseNullOption is set to true then,
+> * Value of the NullValue property will be the default value.
+> * Otherwise
+> * Zero will be the default value (based on the MinValue and MaxValue the default value will change).
 
 See Also
 
@@ -519,7 +520,7 @@ The steps to create an IntegerTextBox in the application by using Expression Ble
 
 
 
-![](Getting-Started_images/Getting-Started_img9.png)
+   ![](Getting-Started_images/Getting-Started_img9.png)
 
 
 
@@ -527,7 +528,7 @@ The steps to create an IntegerTextBox in the application by using Expression Ble
 
 
 
-![](Getting-Started_images/Getting-Started_img10.png)
+   ![](Getting-Started_images/Getting-Started_img10.png)
 
 
 
@@ -538,13 +539,13 @@ The steps to create an IntegerTextBox in the application by using Expression Ble
 
 
 
-![](Getting-Started_images/Getting-Started_img11.png)
+   ![](Getting-Started_images/Getting-Started_img11.png)
 
 
 
 7. Drag the IntegerTextBox control to Design View.
 
-![](Getting-Started_images/Getting-Started_img12.png)
+   ![](Getting-Started_images/Getting-Started_img12.png)
 
 
 
@@ -578,7 +579,7 @@ The steps to create an IntegerTextBox in the application by using Expression Ble
 
 See Also
 
-###Blendability
+### Blendability
 
 Creating an IntegerTextBox by using XAML
 
@@ -588,14 +589,13 @@ You have to use the Value property to set the value for the IntegerTextBox.
 
 Note: Do not use the Text property to set the value for the IntegerTextBox. Use only the Value property.
 
-<table>
-<tr>
-<td>
-{% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100" Value="100"/>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight C# %} integerTextBox.Value = 100;{% endhighlight %}</td></tr>
-</table>
+
+{% highlight xml %}
+ <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100" Value="100"/>
+ {% endhighlight %}
+{% highlight C# %} 
+integerTextBox.Value = 100;
+{% endhighlight %}
 
 
 ![](Getting-Started_images/Getting-Started_img14.png)
@@ -604,22 +604,21 @@ Note: Do not use the Text property to set the value for the IntegerTextBox. Use 
 
 See Also
 
-###Minimum and Maximum Value
+### Minimum and Maximum Value
 
-####NullValue Support
+#### NullValue Support
 
 ### Setting Minimum and Maximum Value
 
 You can set the Minimum and Maximum value by using the MinVal and MaxVal properties of the IntegerTextBox.
 
-<table>
-<tr>
-<td>
-{% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100" Value="100" MinValue="-999" MaxValue="999"/>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight C# %} integerTextBox.MinValue = -999;integerTextBox.MaxValue = 999;{% endhighlight %}</td></tr>
-</table>
+
+{% highlight xml %} 
+ <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100" Value="100" MinValue="-999" MaxValue="999"/>
+ {% endhighlight %}
+{% highlight C# %}
+ integerTextBox.MinValue = -999;integerTextBox.MaxValue = 999;
+ {% endhighlight %}
 
 
 ![](Getting-Started_images/Getting-Started_img15.png)
@@ -636,15 +635,15 @@ You can set the Watermark for the IntegerTextBox by using the WatermarkText prop
 
 Note: WatermarkText is visible only when the value is null.
 
-<table>
-<tr>
-<td>
-{% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100"                                    Value="{x:Null}"                                   MinValue="-999" MaxValue="999" UseNullOption="True"                                   WatermarkText="Type Here"                                    WatermarkTextIsVisible="True"/>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight C# %} integerTextBox.UseNullOption = true;integerTextBox.WatermarkText = "Type Here";integerTextBox.WatermarkTextIsVisible = true;integerTextBox.Value = null;{% endhighlight %}</td></tr>
-</table>
-
+{% highlight xml %} 
+<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100" Value="{x:Null}" MinValue="-999" MaxValue="999" UseNullOption="True" WatermarkText="Type Here"   WatermarkTextIsVisible="True"/>
+{% endhighlight %}
+{% highlight C# %}
+integerTextBox.UseNullOption = true;
+integerTextBox.WatermarkText = "Type Here";
+integerTextBox.WatermarkTextIsVisible = true;integerTextBox.Value = null;
+{% endhighlight %}
+ 
 
 ![](Getting-Started_images/Getting-Started_img16.png)
 

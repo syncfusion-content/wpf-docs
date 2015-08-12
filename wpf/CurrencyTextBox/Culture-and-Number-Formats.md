@@ -123,7 +123,7 @@ currencyTextBox.CurrencySymbol = "$";
 
 Gets or sets the format pattern for the positive currency values. In the table displayed below “$” denotes the Currency symbol and n denotes the number.
 
-#### _CurrencyPositivePattern table_
+ _CurrencyPositivePattern table_
 
 <table>
 <tr>
@@ -168,7 +168,7 @@ XAML
 
 Gets or sets the format pattern for the negative currency values. In the table displayed below “$” denotes the Currency symbol and n denotes the number.
 
-#### _CurrencyNegativePattern table_
+_CurrencyNegativePattern table_
 
 <table>
 <tr>

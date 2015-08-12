@@ -28,8 +28,8 @@ To create the DockingManager control through Visual Studio, drag DockingManager 
 The DockingManager control can also be created and configured using Expression Blend. Follow these steps to do so.
 
 1. Create a WPF project in Expression Blend and reference the following assemblies.
-* Syncfusion.Tools.Wpf
-* Syncfusion.Shared.Wpf
+	* Syncfusion.Tools.Wpf
+	* Syncfusion.Shared.Wpf
 2. Search for DockingManager in the Toolbox.
 3. Drag DockingManager to the designer. It will generate the Docking Manager control with one child element.
 
@@ -45,11 +45,16 @@ You can create the DockingManager control programmatically through XAML and C#. 
 
 
 
-{% highlight html %}
-[XAML]<syncfusion:DockingManager DockFill="True" Height="300" HorizontalAlignment="Left"                                              Margin="146,122,0,0" Name="dockingManager1" VerticalAlignment="Top" Width="300">         <Grid syncfusion:DockingManager.Header="Dock Window 1" /></syncfusion:DockingManager>
+{% highlight xml %}
+<syncfusion:DockingManager DockFill="True" Height="300" HorizontalAlignment="Left"  Margin="146,122,0,0" Name="dockingManager1" VerticalAlignment="Top" Width="300"> 
+        <Grid syncfusion:DockingManager.Header="Dock Window 1" />
+</syncfusion:DockingManager>
 {% endhighlight  %}
 {% highlight c# %}
-[C#]           DockingManager dockingManager1 = new DockingManager()                 {                     DockFill=true,                    Height = 300,                    Width = 300,                     HorizontalAlignment = HorizontalAlignment.Left,                    VerticalAlignment = VerticalAlignment.Top                };            Grid grd = new Grid();            DockingManager.SetHeader(grd, "Dock Window 1");            dockingManager1.Children.Add(grd);
+DockingManager dockingManager1 = new DockingManager(){ DockFill=true, Height = 300, Width = 300, HorizontalAlignment = HorizontalAlignment.Left, VerticalAlignment = VerticalAlignment.Top }; 
+           Grid grd = new Grid();
+		   DockingManager.SetHeader(grd, "Dock Window 1");
+		   dockingManager1.Children.Add(grd);
 {% endhighlight  %}
 
 
@@ -63,8 +68,10 @@ You can customize the header of the child window in the DockingManager control u
 
 
 
-{% highlight html %}
-[XAML]<syncfusion:DockingManager DockFill="True" Name="dockingManager1" ">            <Grid syncfusion:DockingManager.Header="New Item"/></syncfusion:DockingManager>
+{% highlight xml %}
+<syncfusion:DockingManager DockFill="True" Name="dockingManager1" ">
+            <Grid syncfusion:DockingManager.Header="New Item"/>
+</syncfusion:DockingManager>
 {% endhighlight  %}
 {% highlight c# %}
 [C#] DockingManager.SetHeader(grd, "New Item");
@@ -89,15 +96,25 @@ The child elements of the DockingManager control can be customized in five diffe
 * Auto Hidden
 * Hidden
 
-The__State property of DockingManager is used to set the states for the child elements of the DockingManager control. The following code example illustrates how to set the states for the child elements.
+The State property of DockingManager is used to set the states for the child elements of the DockingManager control. The following code example illustrates how to set the states for the child elements.
 
 
 
-{% highlight html %}
-[XAML]  <syncfusion:DockingManager x:Name="dockingManager1" UseDocumentContainer="True"><ContentControl syncfusion:DockingManager.Header="Tool Box"                syncfusion:DockingManager.State="Dock"/>            <ContentControl syncfusion:DockingManager.Header="Solution Explorer"                             syncfusion:DockingManager.State="Document"/>            <ContentControl syncfusion:DockingManager.Header="Properties"                            syncfusion:DockingManager.State="AutoHidden" />            <ContentControl syncfusion:DockingManager.Header="Output"                                      syncfusion:DockingManager.State="Float" />            <ContentControl syncfusion:DockingManager.Header="Error"                             syncfusion:DockingManager.State="Hidden" />  </syncfusion:DockingManager>
+{% highlight xml %}
+<syncfusion:DockingManager x:Name="dockingManager1" UseDocumentContainer="True">
+	 <ContentControl syncfusion:DockingManager.Header="Tool Box" syncfusion:DockingManager.State="Dock"/>
+	 <ContentControl syncfusion:DockingManager.Header="Solution Explorer" syncfusion:DockingManager.State="Document"/>
+	 <ContentControl syncfusion:DockingManager.Header="Properties" syncfusion:DockingManager.State="AutoHidden" />
+	 <ContentControl syncfusion:DockingManager.Header="Output" syncfusion:DockingManager.State="Float" />
+	 <ContentControl syncfusion:DockingManager.Header="Error"  syncfusion:DockingManager.State="Hidden" /> 
+</syncfusion:DockingManager>
 {% endhighlight %}
 {% highlight c# %}
-[C#]            DockingManager.SetState(ctrl, DockState.Dock);            DockingManager.SetState(ctrl1, DockState.Document);            DockingManager.SetState(ctrl2, DockState.Float);            DockingManager.SetState(ctrl3, DockState.AutoHidden);            DockingManager.SetState(ctrl4, DockState.Hidden);
+	   DockingManager.SetState(ctrl, DockState.Dock); 
+	   DockingManager.SetState(ctrl1, DockState.Document);
+	   DockingManager.SetState(ctrl2, DockState.Float);
+	   DockingManager.SetState(ctrl3, DockState.AutoHidden);
+	   DockingManager.SetState(ctrl4, DockState.Hidden);
 {% endhighlight  %}
 
 
@@ -127,11 +144,19 @@ The following code example illustrates how to locate the control in different po
 
 
 
-{% highlight html %}
-[XAML]<syncfusion:DockingManager x:Name="dockingManager1" >           <ContentControl syncfusion:DockingManager.Header="Tool Box"                            syncfusion:DockingManager.SideInDockedMode="Left"/>           <ContentControl syncfusion:DockingManager.Header="Solution Explorer"                            syncfusion:DockingManager.SideInDockedMode="Bottom"/>           <ContentControl syncfusion:DockingManager.Header="Properties"                            syncfusion:DockingManager.SideInDockedMode="Right" />           <ContentControl syncfusion:DockingManager.Header="Output"                            syncfusion:DockingManager.SideInDockedMode="Top" /></syncfusion:DockingManager>
+{% highlight xml %}
+<syncfusion:DockingManager x:Name="dockingManager1" >
+           <ContentControl syncfusion:DockingManager.Header="Tool Box"  syncfusion:DockingManager.SideInDockedMode="Left"/>
+           <ContentControl syncfusion:DockingManager.Header="Solution Explorer"  syncfusion:DockingManager.SideInDockedMode="Bottom"/> 
+		   <ContentControl syncfusion:DockingManager.Header="Properties" syncfusion:DockingManager.SideInDockedMode="Right" />
+           <ContentControl syncfusion:DockingManager.Header="Output" syncfusion:DockingManager.SideInDockedMode="Top" />
+		   </syncfusion:DockingManager>
 {% endhighlight  %}
 {% highlight c# %}
-[C#]            DockingManager.SetSideInDockedMode(ctrl, DockSide.Left);            DockingManager.SetSideInDockedMode(ctrl1, DockSide.Right);            DockingManager.SetSideInDockedMode(ctrl2, DockSide.Bottom);            DockingManager.SetSideInDockedMode(ctrl3, DockSide.Top);
+   DockingManager.SetSideInDockedMode(ctrl, DockSide.Left); 
+   DockingManager.SetSideInDockedMode(ctrl1, DockSide.Right);
+   DockingManager.SetSideInDockedMode(ctrl2, DockSide.Bottom);  
+   DockingManager.SetSideInDockedMode(ctrl3, DockSide.Top);
 {% endhighlight  %}
 
 
@@ -164,11 +189,26 @@ These styles can be applied to the Docking Manager through XAML and C#. The Visu
 
 
 
-{% highlight html %}
-[XAML]  <syncfusion:DockingManager UseDocumentContainer="True"                                                                      syncfusion:SkinStorage.VisualStyle="VS2010">            <ContentControl syncfusion:DockingManager.Header="ToolBox"                             syncfusion:DockingManager.SideInDockedMode="Left"/>            <ContentControl syncfusion:DockingManager.Header="Document"                             syncfusion:DockingManager.State="Document" />  </syncfusion:DockingManager>
+{% highlight xml %}
+<syncfusion:DockingManager UseDocumentContainer="True"  syncfusion:SkinStorage.VisualStyle="VS2010">
+            <ContentControl syncfusion:DockingManager.Header="ToolBox" syncfusion:DockingManager.SideInDockedMode="Left"/> 
+			<ContentControl syncfusion:DockingManager.Header="Document" syncfusion:DockingManager.State="Document" />
+			</syncfusion:DockingManager>
 {% endhighlight  %}
 {% highlight c#  %}
-[C#]            DockingManager dockingManager1 = new DockingManager();             dockingManager1.UseDocumentContainer = true;            ContentControl ctrl1 = new ContentControl();            DockingManager.SetHeader(ctrl1, "Tool box");            DockingManager.SetSideInDockedMode(ctrl1, DockSide.Left);            dockingManager1.Children.Add(ctrl1);            ContentControl ctrl3 = new ContentControl();            DockingManager.SetHeader(ctrl3, "Document");            DockingManager.SetState(ctrl3, DockState.Document);            dockingManager1.Children.Add(ctrl3);            SkinStorage.SetVisualStyle(dockingManager1, "VS2010");
+
+    DockingManager dockingManager1 = new DockingManager();
+	dockingManager1.UseDocumentContainer = true; 
+	ContentControl ctrl1 = new ContentControl(); 
+	DockingManager.SetHeader(ctrl1, "Tool box");
+	DockingManager.SetSideInDockedMode(ctrl1, DockSide.Left); 
+	dockingManager1.Children.Add(ctrl1);
+	ContentControl ctrl3 = new ContentControl(); 
+	DockingManager.SetHeader(ctrl3, "Document"); 
+	DockingManager.SetState(ctrl3, DockState.Document); 
+	dockingManager1.Children.Add(ctrl3);
+	SkinStorage.SetVisualStyle(dockingManager1, "VS2010");
+	
 {% endhighlight  %}
 
 

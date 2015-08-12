@@ -15,7 +15,7 @@ OlapPager user control is included and bounded with the same OlapDataManager obj
 
 When you process large CellSet, it is splitted into several number of segments and each segment is assigned and rendered in a separate page. You can navigate back and forth in all possible way by utilizing the GUI options in OlapPager. You can also change the page size at runtime by using PageSetting window.
 
-# Adding OlapPager in Application
+## Adding OlapPager in Application
 
 1. Include the following Syncfusion assembly from the installed location.
 1. Syncfusion.OlapShared.Wpf
@@ -23,20 +23,18 @@ When you process large CellSet, it is splitted into several number of segments a
 Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudio\<version number>\precompiledassemblies\<version number>\
 
 2. Add the namespace and OlapPager in XAML page as follows.
+{% highlight xml %}
+[XAML]
 
-  ~~~ xml
+<Window       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-    [XAML]
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-    <Window       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:pager="clr-namespace:Syncfusion.Windows.Shared.Olap;assembly=Syncfusion.OlapShared.WPF"
 
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-    xmlns:pager="clr-namespace:Syncfusion.Windows.Shared.Olap;assembly=Syncfusion.OlapShared.WPF"
-
-    x:Class="SampleApplication.MainWindow"
+x:Class="SampleApplication.MainWindow"
 
         Title="MainWindow" Height="350" Width="525">
 
@@ -64,32 +62,25 @@ Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudi
 
     </Grid>
 
-    </Window>
-	
-  ~~~
-  {:.pretty-print }
+</Window>
 
-    
-
-
+{% endhighlight  %}
 
 3. Enable paging in OlapReport.
+{% highlight c# %}
+[C#]
 
-  ~~~ c#
+using Syncfusion.Olap.Manager;
 
-    [C#]
+using Syncfusion.Olap.Reports;
 
-    using Syncfusion.Olap.Manager;
+namespace SampleApplication
 
-    using Syncfusion.Olap.Reports;
+{
 
-    namespace SampleApplication
+public partial class MainWindow : SampleWindow
 
-    {
-
-    public partial class MainWindow : SampleWindow
-
-    {
+  {
 
      private string _connectionString;
 
@@ -173,120 +164,111 @@ Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudi
 
      }
 
-    }
+  }
 
-    } 
-	
-	~~~
-    {:.pretty-print }
-
-       
+}    
 
 
 
-  ~~~ vbnet
+{% endhighlight  %}
+{% highlight vbnet %}
 
-    [VB]
+[VB]
 
-    Imports Syncfusion.Olap.Manager
+Imports Syncfusion.Olap.Manager
 
-    Imports Syncfusion.Olap.Reports
+Imports Syncfusion.Olap.Reports
 
-    Namespace SampleApplication
+Namespace SampleApplication
 
-    Partial Public Class MainWindow
+Partial Public Class MainWindow
 
-    Inherits SampleWindow
+Inherits SampleWindow
 
-    Private _connectionString As String
+Private _connectionString As String
 
-    Private _olapDataManager As OlapDataManager
-
-
-
-    Public Sub New()
-
-    InitializeComponent()
-
-    _connectionString = "Enter a valid connection string"
-
-    'Created connection string is passed to OlapDataManager as argument
-
-    _olapDataManager = New OlapDataManager(_connectionString)
-
-    'Created OlapReport is set as a current report to OlapDataManager
-
-    _olapDataManager.SetCurrentReport(SimpleDimensions())
-
-    'Finally OlapGrid control gets the data from the created OlapDataManager
-
-    Me.olapGrid.OlapDataManager = _olapDataManager
-
-    Me.olapGrid.DataBind()
-
-    End Sub
+Private _olapDataManager As OlapDataManager
 
 
 
-    Private Function SimpleDimensions() As OlapReport
+Public Sub New()
 
-    Dim olapReport As New OlapReport()
+InitializeComponent()
 
-    olapReport.CurrentCubeName = "Adventure Works"
+_connectionString = "Enter a valid connection string"
 
-    olapReport.EnablePaging = True
+'Created connection string is passed to OlapDataManager as argument
+
+_olapDataManager = New OlapDataManager(_connectionString)
+
+'Created OlapReport is set as a current report to OlapDataManager
+
+_olapDataManager.SetCurrentReport(SimpleDimensions())
+
+'Finally OlapGrid control gets the data from the created OlapDataManager
+
+Me.olapGrid.OlapDataManager = _olapDataManager
+
+Me.olapGrid.DataBind()
+
+End Sub
+
+
+
+Private Function SimpleDimensions() As OlapReport
+
+Dim olapReport As New OlapReport()
+
+olapReport.CurrentCubeName = "Adventure Works"
+
+olapReport.EnablePaging = True
 
          olapReport.PagerOptions.CategorialPageSize = 10
 
           olapReport.PagerOptions.SeriesPageSize = 10
 
-    Dim dimensionElement As New DimensionElement() With {.Name = "Customer", .HierarchyName = "Customer"}
+Dim dimensionElement As New DimensionElement() With {.Name = "Customer", .HierarchyName = "Customer"}
 
-    dimensionElement.AddLevel("Customer Geography", "Country")
+dimensionElement.AddLevel("Customer Geography", "Country")
 
-    olapReport.CategoricalElements.Add(dimensionElement)
-
-
-
-    Dim measureElements As New MeasureElements()
-
-    measureElements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
-
-    olapReport.SeriesElements.Add(measureElements)
+olapReport.CategoricalElements.Add(dimensionElement)
 
 
 
-    dimensionElement = New DimensionElement() With {.Name = "Geography", .HierarchyName = "Geography"}
+Dim measureElements As New MeasureElements()
 
-    dimensionElement.AddLevel("Geography", "Country")
+measureElements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
 
-    olapReport.CategoricalElements.Add(dimensionElement)
-
-
-
-    dimensionElement = New DimensionElement() With {.Name = "Date"}
-
-    dimensionElement.AddLevel("Fiscal", "Fiscal Year")
-
-    olapReport.SeriesElements.Add(dimensionElement)
+olapReport.SeriesElements.Add(measureElements)
 
 
 
-    Return olapReport
+dimensionElement = New DimensionElement() With {.Name = "Geography", .HierarchyName = "Geography"}
 
-    End Function
+dimensionElement.AddLevel("Geography", "Country")
 
-    End Class
-
-    End Namespace
-	
-	~~~
-    {:.pretty-print }
-
-    
+olapReport.CategoricalElements.Add(dimensionElement)
 
 
 
+dimensionElement = New DimensionElement() With {.Name = "Date"}
+
+dimensionElement.AddLevel("Fiscal", "Fiscal Year")
+
+olapReport.SeriesElements.Add(dimensionElement)
+
+
+
+Return olapReport
+
+End Function
+
+End Class
+
+End Namespace
+
+
+{% endhighlight  %}
 
 
 
@@ -294,10 +276,12 @@ Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudi
 ![](Paging_images/Paging_img1.png)
 
 
+
 ![](Paging_images/Paging_img2.png)
 
 
-## Sample Link
+
+### Sample Link
 
 Refer to the following location for sample.:
 

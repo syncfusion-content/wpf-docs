@@ -7,11 +7,11 @@ control: UpDown Control
 documentation: ug
 ---
 
-## Appearance
+# Appearance
 
 You can customize the appearance of the UpDown control by editing its style in the Expression Blend or by using the properties exposed by the UpDown control.
 
-### Blendability 
+## Blendability 
 
 To edit the style of the UpDown control in the Expression Blend:
 
@@ -47,7 +47,7 @@ In the following code, the BorderBrush color is changed when the IsMouseOver val
 
 
 
-### Customizing by Using Properties
+## Customizing by Using Properties
 
 You can customize the appearance of the UpDown control by using the properties exposed by the control. The appearance of the UpDown control can be changed when the following properties are used:
 
@@ -105,7 +105,7 @@ The color of the zero value can be changed by using the ZeroColor property. The 
 ![](Appearance_images/Appearance_img10.png)
 
 
-### Skins
+## Skins
 
 The appearance of the UpDown control can be customized by using the VisualStyle property. The following are the built-in skins for the UpDown control:
 

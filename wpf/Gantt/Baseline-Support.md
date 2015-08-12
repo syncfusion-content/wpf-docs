@@ -40,19 +40,19 @@ Parameters </th><th>
 Type </th><th>
 Return Type </th></tr>
 <tr>
-<th>
-LoadVarianceTableView</th><th>
-This method is used to load the Variance view of the Gantt.</th><th>
-LoadVarianceTableView()</th><th>
-N/A</th><th>
-void </th></tr>
+<td>
+LoadVarianceTableView</td><td>
+This method is used to load the Variance view of the Gantt.</td><td>
+LoadVarianceTableView()</td><td>
+N/A</td><td>
+void </td></tr>
 <tr>
-<th>
-LoadDefaultTableView</th><th>
-This method is used to load the Default (Editing) view of the Gantt.</th><th>
-LoadDefaultTableView()</th><th>
-N/A</th><th>
-void</th></tr>
+<td>
+LoadDefaultTableView</td><td>
+This method is used to load the Default (Editing) view of the Gantt.</td><td>
+LoadDefaultTableView()</td><td>
+N/A</td><td>
+void</td></tr>
 </table>
 
 
@@ -70,7 +70,7 @@ To add Baseline Table View to an application:
 The following codes illustrate this:
 
 
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
    <gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
@@ -134,7 +134,7 @@ The following image shows the BaseLine Table View:
 
 
 
-![C:/Users/thanigaivelan/Desktop/UGImages/IMG_02012012_053236.png](Baseline-Support_images/Baseline-Support_img1.png)
+![](Baseline-Support_images/Baseline-Support_img1.png)
 
 
 _BaseLine Table View_
@@ -162,7 +162,7 @@ This helps the Project Lead to store the estimation and will help to schedule th
 
 
 
-![C:/Users/thanigaivelan/Desktop/UGImages/IMG_02012012_053003.png](Baseline-Support_images/Baseline-Support_img2.png)
+![](Baseline-Support_images/Baseline-Support_img2.png)
 
 
 
@@ -199,7 +199,7 @@ To add the On-Demand Baseline Column Inclusion to an application you need to ena
 
 The following codes illustrate Adding On-Demand Baseline Column Inclusion to an Application:
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -296,12 +296,12 @@ Parameters </th><th>
 Type </th><th>
 Return Type </th></tr>
 <tr>
-<th>
-GetProjectStatistics</th><th>
-This method is used to get the current statistics information about the project</th><th>
-GetProjectStatistics()</th><th>
-N/A</th><th>
-ProjectInfo </th></tr>
+<td>
+GetProjectStatistics</td><td>
+This method is used to get the current statistics information about the project</td><td>
+GetProjectStatistics()</td><td>
+N/A</td><td>
+ProjectInfo </td></tr>
 </table>
 
 
@@ -315,7 +315,7 @@ To add Project Statistics to an application:
 
 The following codes illustrate adding Project Statistics to an application:
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -382,7 +382,7 @@ Sample Project Statistic Visual:
 
 
 
-![C:/Users/labuser/Desktop/a.png](Baseline-Support_images/Baseline-Support_img3.png)
+![](Baseline-Support_images/Baseline-Support_img3.png)
 
 
 

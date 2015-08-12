@@ -16,11 +16,4 @@ The Radial Slider provides an optimized interface for selecting a numeric value.
 * Customization – Can customize outer rim, inner rim, labels, ticks, and pointer. 
 * Content – Can place content inside the inner rim. 
 
-
-
-
-
 ![C:/Users/ApoorvahR/Desktop/1.png](Overview_images/Overview_img1.png) 
-
-
-

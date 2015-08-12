@@ -59,7 +59,7 @@ Following are the steps to add the Spreadsheet control to WPF application using 
 
 
 
-   > _Note: To add the SpreadsheetRibbon control to your application, drag SpreadsheetRibbon to the Designer area and set the Spreadsheet contol as a DataContext as shown the following code._
+   Note: To add the SpreadsheetRibbon control to your application, drag SpreadsheetRibbon to the Designer area and set the Spreadsheet contol as a DataContext as shown the following code.
 
    ~~~ xml
 
@@ -117,9 +117,9 @@ spreadsheet.ImportFromExcel(stream);
 {%endhighlight%}
 
 
-> 
+ 
 
-> _Note: You can also open the Excel document using ImportFromExcelCommand. When you execute the ImportFromExcelCommand it will display the Open dialog box. Using this Open dialog, you can open the Excel document in the Spreadsheet control._
+ Note: You can also open the Excel document using ImportFromExcelCommand. When you execute the ImportFromExcelCommand it will display the Open dialog box. Using this Open dialog, you can open the Excel document in the Spreadsheet control.
 
 ## Appearance and Structure of the Controls
 

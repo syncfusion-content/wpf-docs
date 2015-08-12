@@ -11,11 +11,11 @@ documentation: ug
 
 In order to insert an image in the document, ParagraphAdv provides an inline called ImageContainerAdv. 
 
-## Properties
+### Properties
 
 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -65,7 +65,6 @@ ImageContainerAdv can be used to add an image directly to an application using t
 
 {% highlight xml %}
 
-[XAML]  
 <syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            
 <syncfusion:DocumentAdv>                
 <syncfusion:SectionAdv>                    
@@ -75,11 +74,11 @@ ImageContainerAdv can be used to add an image directly to an application using t
  </syncfusion:SectionAdv>            
  </syncfusion:DocumentAdv>        
  </syncfusion:RichTextBoxAdv>
+ 
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]          
 RichTextBoxAdv richtext = new RichTextBoxAdv();         
  DocumentAdv document = new DocumentAdv();        
  SectionAdv section = new SectionAdv();          
@@ -92,6 +91,7 @@ RichTextBoxAdv richtext = new RichTextBoxAdv();
  section.Blocks.Add(paragraph);          
  document.Sections.Add(section);         
  richtext.Document = document;
+ 
 {% endhighlight %}
 
 
@@ -100,6 +100,7 @@ RichTextBoxAdv richtext = new RichTextBoxAdv();
 Inserting an image has the following limitations:
 
 1. It does not have a separate context menu.
+
 2. It does not deal with brightness, reflection, or glow effects of the image.
 
 

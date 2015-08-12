@@ -15,7 +15,7 @@ DateTimeRangeNavigator control provides ToolTip support for Sliders. Sliders are
 
 The following properties are used to customize the ToolTip Settings for the DateTimeRangeNavigator control.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -40,10 +40,7 @@ RightToolTipTemplate</td><td>
 Sets the data template for the right tooltip.</td></tr>
 </table>
 
-{% highlight html %}
-[XAML]
-
-
+{% highlight xml %}
 
 <chart:SfDateTimeRangeNavigator x:Name="RangeNavigator" 
 
@@ -69,11 +66,7 @@ ShowToolTip="true" ToolTipLabelFormat ="MMM/dd/yyyy">
 
 
 {% endhighlight %}
+
 ![](ToolTip-Support_images/ToolTip-Support_img1.png)
 
-
-
 _DateTimeRangeNavigator with tooltip_
-
-
-

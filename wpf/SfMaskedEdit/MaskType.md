@@ -21,13 +21,13 @@ Expressions that are generated with very simple mask elements come under this gr
 
 ### Mask elements in this mask type are as follows:
 
-_Simple Mask elements_
+Simple Mask elements
 
 <table>
 <tr>
-<td>
-Elements</td><td>
-Description</td></tr>
+<th>
+Elements</th><th>
+Description</th></tr>
 <tr>
 <td>
 0</td><td>
@@ -65,17 +65,18 @@ Shift down. Converts all the characters that follow to lowercase.</td></tr>
 ></td><td>
 Shift up. Converts all the characters that follow to uppercase.</td></tr>
 </table>
-Regular
+
+## Regular
 
 Expressions that are generated with slightly complex mask elements are under this group, preferable for variable length inputs and input in range. For example: Hexadecimal values [0-9A-C].
 
-_Regular Mask elements_
+Regular Mask elements
 
 <table>
 <tr>
-<td>
-Elements</td><td>
-Description</td></tr>
+<th>
+Elements</th><th>
+Description</th></tr>
 <tr>
 <td>
 \w</td><td>
@@ -115,13 +116,13 @@ Accepts the input for zero or more times.</td></tr>
 
 Very complex regular expressions come under this category. It accepts input of variable length and allows to use OR expressions.  For example: E-mail_._
 
-_ReEx Mask elements_
+ReEx Mask elements
 
 <table>
 <tr>
-<td>
-Elements</td><td>
-Description</td></tr>
+<th>
+Elements</th><th>
+Description</th></tr>
 <tr>
 <td>
 abc|def</td><td>

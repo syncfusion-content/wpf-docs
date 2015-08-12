@@ -28,14 +28,30 @@ You can set the tooltip for the entire Split Button by using the ToolTip propert
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:SplitButton Label="Paste" SizeForm="Large" ><syncfusion:SplitButton.ToolTip><syncfusion:ScreenTip Description="Split Button Tooltip" VerticalOffset="32"><TextBlock Text="I am a Tool Tip" /></syncfusion:ScreenTip></syncfusion:SplitButton.ToolTip></syncfusion:SplitButton></td></tr>
-<tr>
-<td>
-[C#]ScreenTip screentip = new ScreenTip();TextBlock text = new TextBlock();text.Text = "I am a Tool Tip";screentip.Content = text;splitbutton.ToolTip = screentip; splitbutton = new SplitButton();splitbutton.Label = "Split 1";SplitButton splitbutton 1= new SplitButton();splitbutton1.Label = "Split 2";</td></tr>
-</table>
+{% highlight xml %}
+
+[XAML]
+<syncfusion:SplitButton Label="Paste" SizeForm="Large" >
+<syncfusion:SplitButton.ToolTip><syncfusion:ScreenTip Description="Split Button Tooltip" VerticalOffset="32">
+<TextBlock Text="I am a Tool Tip" />
+</syncfusion:ScreenTip>
+</syncfusion:SplitButton.ToolTip>
+</syncfusion:SplitButton>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]
+ScreenTip screentip = new ScreenTip();
+TextBlock text = new TextBlock();
+text.Text = "I am a Tool Tip";
+screentip.Content = text;
+splitbutton.ToolTip = screentip;
+ splitbutton = new SplitButton();
+ splitbutton.Label = "Split 1";
+ SplitButton splitbutton 1= new SplitButton();
+ splitbutton1.Label = "Split 2";
+{% endhighlight %}
 
 
 ![](Run-time-Features_images/Run-time-Features_img1.jpeg)
@@ -50,14 +66,52 @@ The ToolTip property is used to set the tooltip for the upper half of the Split 
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:SplitButton Label="Paste" SizeForm="Large" ><syncfusion:SplitButton.ToolTip><syncfusion:ScreenTip Description="Split Button Tooltip" VerticalOffset="32"><TextBlock Text="Top Tool Tip" /></syncfusion:ScreenTip></syncfusion:SplitButton.ToolTip><syncfusion:SplitButton.ToggleButtonToolTip><syncfusion:ScreenTip Description="Toggle Button Tooltip" VerticalOffset="29"><TextBlock Text="Bottom Tool Tip" /></syncfusion:ScreenTip></syncfusion:SplitButton.ToggleButtonToolTip></syncfusion:SplitButton></td></tr>
-<tr>
-<td>
-[C#]ScreenTip screentip = new ScreenTip();TextBlock text = new TextBlock();text.Text = "Top Tool Tip";screentip.Content = text;// Setting the tooltip for the upper half of the split button.splitbutton.ToolTip = screentip;ScreenTip screentip1 = new ScreenTip();TextBlock text1 = new TextBlock();text1.Text = "Bottom Tool Tip";screentip1.Content = text;// Setting the tooltip for the drop-down in the lower half of the split button.splitbutton.ToggleButtonToolTip = screentip1; screentip = new ScreenTip();TextBlock text = new TextBlock();text.Text = "I am a Tool Tip";screentip.Content = text;splitbutton.ToolTip = screentip; splitbutton = new SplitButton();splitbutton.Label = "Split 1";SplitButton splitbutton 1= new SplitButton();splitbutton1.Label = "Split 2";</td></tr>
-</table>
+
+{% highlight xml %}
+
+
+[XAML]
+<syncfusion:SplitButton Label="Paste" SizeForm="Large" >
+<syncfusion:SplitButton.ToolTip>
+<syncfusion:ScreenTip Description="Split Button Tooltip" VerticalOffset="32">
+<TextBlock Text="Top Tool Tip" />
+</syncfusion:ScreenTip>
+</syncfusion:SplitButton.ToolTip>
+<syncfusion:SplitButton.ToggleButtonToolTip>
+<syncfusion:ScreenTip Description="Toggle Button Tooltip" VerticalOffset="29">
+<TextBlock Text="Bottom Tool Tip" />
+</syncfusion:ScreenTip>
+</syncfusion:SplitButton.ToggleButtonToolTip>
+</syncfusion:SplitButton>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]
+ScreenTip screentip = new ScreenTip();
+TextBlock text = new TextBlock();
+text.Text = "Top Tool Tip";
+screentip.Content = text;
+
+// Setting the tooltip for the upper half of the split button.
+splitbutton.ToolTip = screentip;
+ScreenTip screentip1 = new ScreenTip();
+TextBlock text1 = new TextBlock();
+text1.Text = "Bottom Tool Tip";
+screentip1.Content = text;
+
+// Setting the tooltip for the drop-down in the lower half of the split button.
+splitbutton.ToggleButtonToolTip = screentip1; 
+screentip = new ScreenTip();
+TextBlock text = new TextBlock();
+text.Text = "I am a Tool Tip";
+screentip.Content = text;
+splitbutton.ToolTip = screentip;
+ splitbutton = new SplitButton();
+ splitbutton.Label = "Split 1";
+ SplitButton splitbutton 1= new SplitButton();
+ splitbutton1.Label = "Split 2";
+{% endhighlight %}
 
 
 ![](Run-time-Features_images/Run-time-Features_img2.jpeg)
@@ -74,7 +128,7 @@ The ToolTip property is used to set the tooltip for the upper half of the Split 
 
 Essential Tool WPF is enhanced with HelpText option. Users can add help text in ScreenTip. A line separator separates the Screen tip information from help text. 
 
- _Note: When no HelpText is set the HelpText area and line separator get automatically hidden._ 
+Note: When no HelpText is set the HelpText area and line separator get automatically hidden.
 
 
 
@@ -84,14 +138,21 @@ Insert HelpText in ScreenTip, by using the following code.
 
 
 
-<table>
-<tr>
-<td>
-[Xaml] <syncfusion:ScreenTip Name="screenTip" HelpText="Help Text" Description="Insert Chart" ImageSource="{StaticResource Shapes}">    <TextBlock Width="150" TextWrapping="Wrap" Text="Insert a Chart illustration" /></syncfusion:ScreenTip></td></tr>
-<tr>
-<td colspan = "2">
-[C#]screenTip.HelpText = "Display Help Text";</td></tr>
-</table>
+
+{% highlight xml %}
+
+
+[Xaml]
+ <syncfusion:ScreenTip Name="screenTip" HelpText="Help Text" Description="Insert Chart" ImageSource="{StaticResource Shapes}">  
+ <TextBlock Width="150" TextWrapping="Wrap" Text="Insert a Chart illustration" />
+ </syncfusion:ScreenTip>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]
+screenTip.HelpText = "Display Help Text";
+{% endhighlight %}
 
 
 ![](Run-time-Features_images/Run-time-Features_img4.jpeg)

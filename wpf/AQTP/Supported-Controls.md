@@ -7,24 +7,24 @@ control: QTP
 documentation: ug
 ---
 
-## Supported Controls
+# Supported Controls
 
-### Essential Grid
+## Essential Grid
 
 This section covers the supported properties and methods in Essential Grid. 
 
-## Properties 
+### Properties 
 
 _Properties Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference**' | markdownify }}</th></tr>
 <tr>
 <td>
 Int RowCount</td><td>
@@ -41,7 +41,7 @@ int</td><td>
 N/A</td></tr>
 </table>
 
-## Methods
+### Methods
 
 _Methods Table_
 
@@ -53,164 +53,165 @@ _Methods Table_
 {{ '**Parameters**' | markdownify }}</th><th>
 {{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
-<th>
-bool SetCurrentCell(int row, int col)</th><th>
-Sets the CurrentCell based on Row and Column parameters.</th><th>
- int row, int col</th><th>
-bool </th></tr>
+<td>
+bool SetCurrentCell(int row, int col)</td><td>
+Sets the CurrentCell based on Row and Column parameters.</td><td>
+ int row, int col</td><td>
+bool </td></tr>
 <tr>
-<th>
-bool SetChkBoxCell(int row, int col, bool val)</th><th>
-Sets the CheckBoxCell value by using Row, Column and Value parameters.</th><th>
-int row, int col, bool val</th><th>
-bool</th></tr>
+<td>
+bool SetChkBoxCell(int row, int col, bool val)</td><td>
+Sets the CheckBoxCell value by using Row, Column and Value parameters.</td><td>
+int row, int col, bool val</td><td>
+bool</td></tr>
 <tr>
-<th>
-bool IsFormulaCell(int row, int col)</th><th>
-Finds whether the cell is a formula cell.</th><th>
-int row, int col</th><th>
-bool</th></tr>
+<td>
+bool IsFormulaCell(int row, int col)</td><td>
+Finds whether the cell is a formula cell.</td><td>
+int row, int col</td><td>
+bool</td></tr>
 <tr>
-<th>
-int GetSelectedRowIndex()</th><th>
-Gets the selected row from Grid.</th><th>
-NA</th><th>
-int</th></tr>
+<td>
+int GetSelectedRowIndex()</td><td>
+Gets the selected row from Grid.</td><td>
+NA</td><td>
+int</td></tr>
 <tr>
-<th>
-int GetSelectedColIndex()</th><th>
-Gets the selected Column from Grid.</th><th>
-NA</th><th>
-int</th></tr>
+<td>
+int GetSelectedColIndex()</td><td>
+Gets the selected Column from Grid.</td><td>
+NA</td><td>
+int</td></tr>
 <tr>
-<th>
-void SetCellData(int row, int col, string val)</th><th>
-Sets the cell data by using Row, Column and Value parameters.</th><th>
-int row, int col, string val</th><th>
-void</th></tr>
+<td>
+void SetCellData(int row, int col, string val)</td><td>
+Sets the cell data by using Row, Column and Value parameters.</td><td>
+int row, int col, string val</td><td>
+void</td></tr>
 <tr>
-<th>
-void InsertColumns(int col, int count)</th><th>
-Inserts the column by using Count and Target parameters.</th><th>
-int col, int count</th><th>
-void</th></tr>
+<td>
+void InsertColumns(int col, int count)</td><td>
+Inserts the column by using Count and Target parameters.</td><td>
+int col, int count</td><td>
+void</td></tr>
 <tr>
-<th>
-void InsertRows(int row, int count)</th><th>
-Inserts the row by using Count and Target parameters.</th><th>
-int row, int count</th><th>
-void</th></tr>
+<td>
+void InsertRows(int row, int count)</td><td>
+Inserts the row by using Count and Target parameters.</td><td>
+int row, int count</td><td>
+void</td></tr>
 <tr>
-<th>
-void RemoveColumns(int col, int count)</th><th>
-Removes the columns by using Row parameter.</th><th>
-int col, int count</th><th>
-void</th></tr>
+<td>
+void RemoveColumns(int col, int count)</td><td>
+Removes the columns by using Row parameter.</td><td>
+int col, int count</td><td>
+void</td></tr>
 <tr>
-<th>
-void RemoveRows(int row, int count)</th><th>
-Removes the Rows by using Row parameter.</th><th>
-int row, int count</th><th>
-void</th></tr>
+<td>
+void RemoveRows(int row, int count)</td><td>
+Removes the Rows by using Row parameter.</td><td>
+int row, int count</td><td>
+void</td></tr>
 <tr>
-<th>
-void MoveRows(int removeAtRowIndex, int count, int insertAtRowIndex)</th><th>
-Moves the row by using From and Target parameters.</th><th>
-int removeAtRowIndex, int count, int insertAtRowIndex</th><th>
-void</th></tr>
+<td>
+void MoveRows(int removeAtRowIndex, int count, int insertAtRowIndex)</td><td>
+Moves the row by using From and Target parameters.</td><td>
+int removeAtRowIndex, int count, int insertAtRowIndex</td><td>
+void</td></tr>
 <tr>
-<th>
-void MoveColumns(int removeAtColIndex, int count, int insertAtColIndex)</th><th>
-Moves the column by using From and Target parameters.</th><th>
-int removeAtColIndex, int count, int insertAtColIndex</th><th>
-void</th></tr>
+<td>
+void MoveColumns(int removeAtColIndex, int count, int insertAtColIndex)</td><td>
+Moves the column by using From and Target parameters.</td><td>
+int removeAtColIndex, int count, int insertAtColIndex</td><td>
+void</td></tr>
 <tr>
-<th>
-void CellClick(int row, int col)</th><th>
-Performs a click action to the cell by using row and column parameters.</th><th>
-int row, int col</th><th>
-void</th></tr>
+<td>
+void Cel
+lClick(int row, int col)</td><td>
+Performs a click action to the cell by using row and column parameters.</td><td>
+int row, int col</td><td>
+void</td></tr>
 <tr>
-<th>
-void ResizeColumns(int fromColumn, int to, int width)</th><th>
-Resizes the column by using column parameter.</th><th>
-int fromColumn, int to, int width</th><th>
-void</th></tr>
+<td>
+void ResizeColumns(int fromColumn, int to, int width)</td><td>
+Resizes the column by using column parameter.</td><td>
+int fromColumn, int to, int width</td><td>
+void</td></tr>
 <tr>
-<th>
-void ResizeRows(int fromRow, int to, int height)</th><th>
-Resizes the row by using row parameter.</th><th>
-int fromRow, int to, int height</th><th>
-void</th></tr>
+<td>
+void ResizeRows(int fromRow, int to, int height)</td><td>
+Resizes the row by using row parameter.</td><td>
+int fromRow, int to, int height</td><td>
+void</td></tr>
 <tr>
-<th>
-void SetScrollPosition( int vScrollPosition,  int hScrollPosition)</th><th>
-Sets the scroll position based on vScrollPosition and hScrollPosition parameters.</th><th>
-int vScrollPosition,  int hScrollPosition</th><th>
-void</th></tr>
+<td>
+void SetScrollPosition( int vScrollPosition,  int hScrollPosition)</td><td>
+Sets the scroll position based on vScrollPosition and hScrollPosition parameters.</td><td>
+int vScrollPosition,  int hScrollPosition</td><td>
+void</td></tr>
 <tr>
-<th>
-void SelectRange(int topRow, int leftCol, int bottomRow, int rightCol)</th><th>
-SelectRange by using Top,Left,Right and Bottom parameters.</th><th>
-int topRow, int leftCol, int bottomRow, int rightCol</th><th>
-void</th></tr>
+<td>
+void SelectRange(int topRow, int leftCol, int bottomRow, int rightCol)</td><td>
+SelectRange by using Top,Left,Right and Bottom parameters.</td><td>
+int topRow, int leftCol, int bottomRow, int rightCol</td><td>
+void</td></tr>
 <tr>
-<th>
-void ScrollInToView(int row, int col)</th><th>
-Scrolls the cell into view, based on Row and Column parameters.</th><th>
-int row, int col</th><th>
-void</th></tr>
+<td>
+void ScrollInToView(int row, int col)</td><td>
+Scrolls the cell into view, based on Row and Column parameters.</td><td>
+int row, int col</td><td>
+void</td></tr>
 <tr>
-<th>
-void HideRows(int fromRow, int to)</th><th>
-Hides rows based on Row parameter.</th><th>
-int fromRow, int to</th><th>
-void</th></tr>
+<td>
+void HideRows(int fromRow, int to)</td><td>
+Hides rows based on Row parameter.</td><td>
+int fromRow, int to</td><td>
+void</td></tr>
 <tr>
-<th>
-void HideCols(int fromCol, int to)</th><th>
-Hides columns based on Column parameter.</th><th>
-int fromCol, int to</th><th>
-void</th></tr>
+<td>
+void HideCols(int fromCol, int to)</td><td>
+Hides columns based on Column parameter.</td><td>
+int fromCol, int to</td><td>
+void</td></tr>
 <tr>
-<th>
-void ShowHiddenRows(int fromRow, int to)</th><th>
-Shows the hidden Rows in Grid.</th><th>
-int fromRow, int to</th><th>
-void</th></tr>
+<td>
+void ShowHiddenRows(int fromRow, int to)</td><td>
+Shows the hidden Rows in Grid.</td><td>
+int fromRow, int to</td><td>
+void</td></tr>
 <tr>
-<th>
-void ShowHiddenCols(int fromCol, int to)</th><th>
-Shows the hidden Columns in Grid.</th><th>
-int fromCol, int to</th><th>
-void</th></tr>
+<td>
+void ShowHiddenCols(int fromCol, int to)</td><td>
+Shows the hidden Columns in Grid.</td><td>
+int fromCol, int to</td><td>
+void</td></tr>
 <tr>
-<th>
-string GetCellType(int row, int col)</th><th>
-Gets the CellType as a string value based on Row and Column parameters.</th><th>
-int row, int col</th><th>
-string</th></tr>
+<td>
+string GetCellType(int row, int col)</td><td>
+Gets the CellType as a string value based on Row and Column parameters.</td><td>
+int row, int col</td><td>
+string</td></tr>
 <tr>
-<th>
-string GetCellBackground(int row, int col)</th><th>
-Gets the background color as string value based on Row and Column parameter.</th><th>
-int row, int col</th><th>
-string</th></tr>
+<td>
+string GetCellBackground(int row, int col)</td><td>
+Gets the background color as string value based on Row and Column parameter.</td><td>
+int row, int col</td><td>
+string</td></tr>
 <tr>
-<th>
-string GetCellForeground(int row, int col)</th><th>
-Gets the foreground color as string value, based on Row and Column parameters.</th><th>
-int row, int col</th><th>
-string</th></tr>
+<td>
+string GetCellForeground(int row, int col)</td><td>
+Gets the foreground color as string value, based on Row and Column parameters.</td><td>
+int row, int col</td><td>
+string</td></tr>
 <tr>
-<th>
-string GetFromattedText(int row, int col)</th><th>
-Gets the formatted text as string value based on Row and Column parameters.</th><th>
-int row, int col</th><th>
-string</th></tr>
+<td>
+string GetFromattedText(int row, int col)</td><td>
+Gets the formatted text as string value based on Row and Column parameters.</td><td>
+int row, int col</td><td>
+string</td></tr>
 </table>
 
-### Essential Chart
+## Essential Chart
 
 ### Methods
 
@@ -226,80 +227,80 @@ _Methods Table_
 {{ '**Return Type**' | markdownify }}</th><th>
 {{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
-<th>
-SetScrollPosition</th><th>
-To record the scrolling of Chart Area.</th><th>
-(int area, int axis, double zoomposition) </th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+SetScrollPosition</td><td>
+To record the scrolling of Chart Area.</td><td>
+(int area, int axis, double zoomposition) </td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-ChartSegmentDragging</th><th>
-Denotes the Segment that is dragged.</th><th>
-(int series, int segment)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+ChartSegmentDragging</td><td>
+Denotes the Segment that is dragged.</td><td>
+(int series, int segment)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-ChartZoomedIn</th><th>
-To record the Zoom in of Chart Area.</th><th>
-(int areaindex, double xzoomFactor, double yzoomFactor)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+ChartZoomedIn</td><td>
+To record the Zoom in of Chart Area.</td><td>
+(int areaindex, double xzoomFactor, double yzoomFactor)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-ChartZoomedOut</th><th>
-To record the zoom out Chart Area.</th><th>
-(int areaindex, double xzoomFactor, double yzoomFactor)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+ChartZoomedOut</td><td>
+To record the zoom out Chart Area.</td><td>
+(int areaindex, double xzoomFactor, double yzoomFactor)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-ChartZoomReset</th><th>
-To record the Chart Area reset.</th><th>
-(int areaindex, double xzoomFactor, double yzoomFactor)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+ChartZoomReset</td><td>
+To record the Chart Area reset.</td><td>
+(int areaindex, double xzoomFactor, double yzoomFactor)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-ChartPanning</th><th>
-To record the panning of Chart Area.</th><th>
-(int area, double zoomXPosition, double zoomYPosition)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+ChartPanning</td><td>
+To record the panning of Chart Area.</td><td>
+(int area, double zoomXPosition, double zoomYPosition)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-LegendLocationChanged</th><th>
-To record the change in location of Legend.</th><th>
-(double dockX, double dockY)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+LegendLocationChanged</td><td>
+To record the change in location of Legend.</td><td>
+(double dockX, double dockY)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-ContextMenuOpening</th><th>
-To record the ContextMenu support.</th><th>
-(double isOpen)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+ContextMenuOpening</td><td>
+To record the ContextMenu support.</td><td>
+(double isOpen)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-InteractiveCursorLocationChanged</th><th>
-To record the Interactive Cursor.</th><th>
-(double offsetX, double offsetY, int areaindex)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+InteractiveCursorLocationChanged</td><td>
+To record the Interactive Cursor.</td><td>
+(double offsetX, double offsetY, int areaindex)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 </table>
 
-### Essential SfDataGrid
+## Essential SfDataGrid
 
 ### Properties
 
@@ -307,11 +308,11 @@ _Properties Table_
 
 <table>
 <tr>
-<td>
-{{ '**Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td><td>
-{{ '**Return Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 Int RowCount</td><td>
@@ -340,44 +341,44 @@ _Methods Table_
 {{ '**Parameters**' | markdownify }}</th><th>
 {{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
-<th>
-void SetCurrentCell(int row,int col);</th><th>
-To Set the CurrentCell.</th><th>
- int row, int col</th><th>
-void</th></tr>
+<td>
+void SetCurrentCell(int row,int col);</td><td>
+To Set the CurrentCell.</td><td>
+ int row, int col</td><td>
+void</td></tr>
 <tr>
-<th>
-void GroupColumn(strin columnName);</th><th>
-To Group the Column.</th><th>
-String columnName</th><th>
-void</th></tr>
+<td>
+void GroupColumn(strin columnName);</td><td>
+To Group the Column.</td><td>
+String columnName</td><td>
+void</td></tr>
 <tr>
-<th>
-void UnGroupColumn(string columnName);</th><th>
-To Un Group the column.</th><th>
-String columnName</th><th>
-void</th></tr>
+<td>
+void UnGroupColumn(string columnName);</td><td>
+To Un Group the column.</td><td>
+String columnName</td><td>
+void</td></tr>
 <tr>
-<th>
-void SortColumn(string columnName,string state);</th><th>
-To Sort the column.</th><th>
-string columnName,string state</th><th>
-Void</th></tr>
+<td>
+void SortColumn(string columnName,string state);</td><td>
+To Sort the column.</td><td>
+string columnName,string state</td><td>
+Void</td></tr>
 <tr>
-<th>
-void BeginEdit(int row,int col);</th><th>
-To Enter the Edit mode for particular cell.</th><th>
-int row,int col</th><th>
-Void</th></tr>
+<td>
+void BeginEdit(int row,int col);</td><td>
+To Enter the Edit mode for particular cell.</td><td>
+int row,int col</td><td>
+Void</td></tr>
 <tr>
-<th>
-void EndEdit();</th><th>
-To EndEdit the current cell.</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+void EndEdit();</td><td>
+To EndEdit the current cell.</td><td>
+NA</td><td>
+void</td></tr>
 </table>
 
-### Essential SfMultiColumnDropDownControl
+## Essential SfMultiColumnDropDownControl
 
 ### Methods
 
@@ -391,26 +392,26 @@ _Methods Table_
 {{ '**Parameters**' | markdownify }}</th><th>
 {{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
-<th>
-void SetSelectedIndex(int index);</th><th>
-To set the SelectedIndex from the Popup.</th><th>
- Int index</th><th>
-void</th></tr>
+<td>
+void SetSelectedIndex(int index);</td><td>
+To set the SelectedIndex from the Popup.</td><td>
+ Int index</td><td>
+void</td></tr>
 <tr>
-<th>
-void ShowPopup();</th><th>
-To open the Popup.</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+void ShowPopup();</td><td>
+To open the Popup.</td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-void HidePopup();</th><th>
-To Close the Popup.</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+void HidePopup();</td><td>
+To Close the Popup.</td><td>
+NA</td><td>
+void</td></tr>
 </table>
 
-### Essential SfDataPager
+## Essential SfDataPager
 
 ### Methods
 
@@ -424,11 +425,11 @@ _Methods Table_
 {{ '**Parameters**' | markdownify }}</th><th>
 {{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
-<th>
-void SetCurrentPage(int pageIndex</th><th>
-To set the current page in SfDataPager.</th><th>
- Int pageIndex</th><th>
-void</th></tr>
+<td>
+void SetCurrentPage(int pageIndex</td><td>
+To set the current page in SfDataPager.</td><td>
+ Int pageIndex</td><td>
+void</td></tr>
 </table>
 
 

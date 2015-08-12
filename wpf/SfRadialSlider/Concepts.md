@@ -14,8 +14,7 @@ documentation: ug
 Gets or sets the minimum possible value. (Inherited from [RangeBase](http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.primitives.rangebase.aspx)). 
 
 
-{% highlight html %}
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider
 
@@ -30,8 +29,7 @@ Gets or sets the minimum possible value. (Inherited from [RangeBase](http://msdn
 Gets or sets the maximum possible value. (Inherited from [RangeBase](http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.primitives.rangebase.aspx)).
 
 
-{% highlight html %}
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider
 
@@ -46,9 +44,8 @@ Gets or sets the maximum possible value. (Inherited from [RangeBase](http://msdn
 
 Gets or sets the value of the Radial Slider. (Inherited from [RangeBase](http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.primitives.rangebase.aspx)). 
 
+{% highlight xml %}
 
-{% highlight html %}
-[XAML]
 
 <syncfusion:SfRadialSlider
 
@@ -59,8 +56,6 @@ Gets or sets the value of the Radial Slider. (Inherited from [RangeBase](http://
 {% endhighlight  %}
 
 The value can be changed by dragging the pointer along the circular track. 
-
-
 
 ![C:/Users/ApoorvahR/Desktop/3.png](Concepts_images/Concepts_img1.png)
 
@@ -75,8 +70,7 @@ Ticks are placed along the round track in a uniform manner. The position of tick
 The Tick Frequency property is used to define the number of ticks along the track, based on Minimum and Maximumn values.
 
 
-{% highlight html %}
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider Minimum="0" Maximum="100"  
 
@@ -99,8 +93,7 @@ Labels are the numerical representation of the ticks starting from Minimum to Ma
 The SmallChange property (Inherited from [RangeBase](http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.controls.primitives.rangebase.aspx)) can be used to control the smallest possible range of value to be selected in Radial Slider.  For example, if SmallChange is set to 5, then it is only possible to select values that are multiples of 5. 
 
 
-{% highlight html %}
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider
 
@@ -120,8 +113,7 @@ The IntermediateValue property can be used to get the values while dragging the 
 The Content property can be used to place any content inside the Inner Rim. 
 
 
-{% highlight html %}
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider x:Name="rSlider1">
 
@@ -141,8 +133,7 @@ The Content property can be used to place any content inside the Inner Rim.
 The ContentTemplate property can be used to customize the content of the Radial Slider. 
 
 
-{% highlight html %}
-[XAML]
+{% highlight xml %}
 
   <syncfusion:SfRadialSlider
 
@@ -176,9 +167,7 @@ The StartAngle property can be used to set the starting position for generating 
 
 The EndAngle property can be used to set the ending position for the ticks in the circular track. 
 
-{% highlight html %}
-
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider  StartAngle="180" EndAngle="360" />
 
@@ -210,9 +199,7 @@ InnerRimStrokeThickness property can be used to set the thickness of the Inner R
 
 InnerRimFill property can be used the set the fill color of the Inner Rim. 
 
-{% highlight html %}
-
-[XAML]
+{% highlight xml %}
 
   <syncfusion:SfRadialSlider
 
@@ -250,9 +237,7 @@ OuterRimStrokeThickness property can be used to set the thickness of the Outer R
 
 Background property can be used to fill the Outer Rim.
 
-{% highlight html %}
-
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider
 
@@ -279,8 +264,7 @@ Ticks displayed along the circular path can be customized using the following pr
 Ticks can be customized using the TickTemplate property. 
 
 
-{% highlight html %}
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider>
 
@@ -307,10 +291,7 @@ Ticks can be customized using the TickTemplate property.
 #### Tick Radius Factor
 
 TickRadiusFactor property decides the radius of the ticks from the total radius available to render the Radial Slider. 
-{% highlight html %}
-
-
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider  TickRadiusFactor="0.75"  />
 
@@ -327,8 +308,7 @@ TickRadiusFactor property decides the radius of the ticks from the total radius 
 Visibility of ticks can be controlled by TickVisibility property. 
 
 
-{% highlight html %}
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider TickVisibility="Collapsed" />
 
@@ -348,9 +328,7 @@ Labels displayed along the circular path in the Radial slider can be customized 
 
 The LabelTemplate property can be used to customize the label object. 
 
-{% highlight html %}
-
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider>
 
@@ -379,8 +357,7 @@ The LabelTemplate property can be used to customize the label object.
 LabelRadiusFactor property decides the radius of the labels from the total radius available to render the Radial Slider. 
 
 
-{% highlight html %}
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider LabelRadiusFactor="0.7" />
 
@@ -398,9 +375,7 @@ LabelRadiusFactor property decides the radius of the labels from the total radiu
 
 Visibility of ticks can be controlled by LabelVisibility property. 
 
-{% highlight html %}
-
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider  LabelVisibility="Collapsed" />
 
@@ -420,9 +395,7 @@ The Pointer that is used for the select the value by dragging in circular track 
 
 The PointerRadiusFactor property decides the radius of the Pointer from the total radius available to render the Radial Slider. 
 
-{% highlight html %}
-
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider PointerRadiusFactor="0.5" />
 
@@ -439,8 +412,7 @@ The PointerRadiusFactor property decides the radius of the Pointer from the tota
 Style of the Pointer can be customized using the PointerStyle property. 
 
 
-{% highlight html %}
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider>
 
@@ -481,10 +453,8 @@ Style of the Pointer can be customized using the PointerStyle property.
 #### Preview Pointer Style
 
 The Preview Pointer that appears when hovering over the Radial Slider can be customized using the PreviewPointerStyle property. 
-{% highlight html %}
 
-
-[XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider
 
@@ -523,10 +493,3 @@ The Preview Pointer that appears when hovering over the Radial Slider can be cus
 
 
 ![C:/Users/ApoorvahR/Desktop/17.png](Concepts_images/Concepts_img16.png) 
-
-
-
-
-
-
-

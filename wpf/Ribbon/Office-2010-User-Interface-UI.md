@@ -45,15 +45,29 @@ Users can create the appearance of the Office 2010 UI in WPF applications by app
 The Office 2010 UI themes can be applied to the Ribbon control, as shown in the following code snippets.
 
 
+{% highlight xml %}
 
-<table>
-<tr>
-<td>
-[XAML]       <syncfusion:Ribbon shared:SkinManager.VisualStyle="Office2010Black"                                                       Name="MyRibbon">                       <syncfusion:RibbonTab Caption="Tab1">                <syncfusion:RibbonBar Header="Ribbon Bar1"/>                <syncfusion:RibbonBar Header="Ribbon Bar1"/>                <syncfusion:RibbonBar Header="Ribbon Bar1"/>            </syncfusion:RibbonTab>     </syncfusion:Ribbon></td></tr>
-<tr>
-<td>
-[C#]   public void RibbonWindow_Loaded(object sender, EventArgs e)   {    SkinManager.SetVisualStyle(this.MyRibbon, VisualStyle.Office2010Black);   }</td></tr>
-</table>
+[XAML]       
+<syncfusion:Ribbon shared:SkinManager.VisualStyle="Office2010Black"      Name="MyRibbon">                      
+ <syncfusion:RibbonTab Caption="Tab1">               
+ <syncfusion:RibbonBar Header="Ribbon Bar1"/>           
+ <syncfusion:RibbonBar Header="Ribbon Bar1"/>              
+ <syncfusion:RibbonBar Header="Ribbon Bar1"/>           
+ </syncfusion:RibbonTab>     
+ </syncfusion:Ribbon>
+{% endhighlight %}
+
+
+ {% highlight C# %}
+
+
+[C#]   
+public void RibbonWindow_Loaded(object sender, EventArgs e)  
+ {    
+ SkinManager.SetVisualStyle(this.MyRibbon, VisualStyle.Office2010Black);  
+ }
+{% endhighlight %}
+
 # Appearance
 
 The Office 2010 UI in the Ribbon control looks like the Microsoft Office 2010 UI. The Office 2010 UI in the Ribbon control has many changes when compared to the Office 2007 UI. The Ribbon control has many new elements added to it and the visual styles for all the elements have been changed to achieve the Office 2010 UI. The following are the main elements of the Office 2010 UI:

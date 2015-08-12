@@ -15,12 +15,10 @@ Range is a visual element that begins and ends at specified values within a scal
 
 
 
-### Code Example:
+#### Code Example:
 
 
 {% highlight xml %}
-
-[XAML]
 
 <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -49,10 +47,6 @@ Range is a visual element that begins and ends at specified values within a scal
 {% highlight C# %}
 
 
-[C#]
-
-
-
             SfCircularGauge circularGauge = new SfCircularGauge();
 
             CircularScale _mainscale = new CircularScale();
@@ -65,11 +59,14 @@ Range is a visual element that begins and ends at specified values within a scal
 
             circularGauge.MainScale = _mainscale;
 
- {% endhighlight %}           this.Grid.Children.Add(circularGauge);
+          this.Grid.Children.Add(circularGauge);
+		  
+		  
+ {% endhighlight %} 
 
 
 
-###Screenshot:
+#### Screenshot:
 
 ![](Range-Settings_images/Range-Settings_img1.png)
 
@@ -81,12 +78,9 @@ Range is a visual element that begins and ends at specified values within a scal
 
 Range start and end width can be customized by using the StartWidth and EndWidth property of range.
 
-### Code Example:
+#### Code Example:
 
 {% highlight xml %}
-
-[XAML]
-
 
 
 <syncfusion:SfCircularGauge x:Name="gauge">
@@ -106,14 +100,12 @@ Range start and end width can be customized by using the StartWidth and EndWidth
             </syncfusion:SfCircularGauge.Scales>
 
         </syncfusion:SfCircularGauge>
+		
 {% endhighlight %}
 
 
 
 {% highlight C# %}
-
-
-[C#]
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -138,10 +130,11 @@ Range start and end width can be customized by using the StartWidth and EndWidth
             circularGauge.Scales.Add(scale);
 
             this.Grid.Children.Add(circularGauge);
+			
 {% endhighlight %}
 
 
-### Screenshot:
+#### Screenshot:
 
 ![](Range-Settings_images/Range-Settings_img2.png)
 
@@ -151,7 +144,7 @@ Range start and end width can be customized by using the StartWidth and EndWidth
 
 You can bind the range’s stroke to the tick lines and labels within its range by setting the BindRangeStrokeToLabels and BindRangeStrokeToTicks properties to true.
 
-### Code Example:
+#### Code Example:
 
 {% highlight xml %}
 
@@ -180,11 +173,11 @@ You can bind the range’s stroke to the tick lines and labels within its range 
                 </syncfusion:SfCircularGauge.MainScale>
 
             </syncfusion:SfCircularGauge>
+			
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -203,12 +196,13 @@ You can bind the range’s stroke to the tick lines and labels within its range 
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+			
 {% endhighlight %}
 
 
 
 
-### Screenshot:
+#### Screenshot:
 
 ![](Range-Settings_images/Range-Settings_img3.png)
 
@@ -223,11 +217,9 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 
 
-### Code Example:
+#### Code Example:
 
 {% highlight xml %}
-
-[XAML]
 
             <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -250,14 +242,11 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
                 </syncfusion:SfCircularGauge.MainScale>
 
             </syncfusion:SfCircularGauge>
+			
 {% endhighlight %}
 
 
 {% highlight C# %}
-
-[C#]
-
-
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -274,10 +263,11 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+			
 {% endhighlight %}
 
 
-### Screenshot:
+#### Screenshot:
 
 ![](Range-Settings_images/Range-Settings_img4.png)
 

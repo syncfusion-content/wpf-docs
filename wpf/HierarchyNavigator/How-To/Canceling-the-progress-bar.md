@@ -7,31 +7,32 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-### Canceling the progress bar
+# Canceling the progress bar
 
 There are two methods to cancel a progress bar:
 
 1. Calling the CancelProgressBar method in HierarchyNavigator.
 
-C#
+   ~~~ cs
 
 
+		HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
 
-HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
+		hierarchyNavigator.CancelProgressBar();
 
-hierarchyNavigator.CancelProgressBar();
-
-
+   ~~~
+   {:.prettyprint }
 
 2. Passing an argument in the method to cancel the progress bar for a specified time span. The image below specifies a time span of 1000 ms.
 
-C#
+   ~~~ cs
 
 
 
-HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
+		HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
 
-hierarchyNavigator.OnCancelProgressBar(new TimeSpan(0, 0, 0, 0, 1000));
+		hierarchyNavigator.OnCancelProgressBar(new TimeSpan(0, 0, 0, 0, 1000));
 
 
-
+   ~~~
+   {:.prettyprint }

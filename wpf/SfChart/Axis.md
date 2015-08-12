@@ -480,7 +480,7 @@ Gets or sets the double value that represents the logarithmic base value of the 
 
 {% endhighlight %}
 
-Note: Logarithmic Axis does not support zero or negative values._
+ Note: Logarithmic Axis does not support zero or negative values._
 
 The following screenshot illustrates the SfChart with LogarithmicAxis.
 

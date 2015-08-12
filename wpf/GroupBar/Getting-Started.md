@@ -60,7 +60,7 @@ The following steps describe how to create the GroupBar control via Visual Studi
 
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -70,7 +70,7 @@ The following steps describe how to create the GroupBar control via Visual Studi
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -83,7 +83,7 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -91,7 +91,7 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 3. Drag GroupBar to the designer and drop it there. This will generate the control. 
 
-![](Getting-Started_images/Getting-Started_img5.png)
+   ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -101,7 +101,7 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 
 
-![](Getting-Started_images/Getting-Started_img6.png)
+   ![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -111,7 +111,7 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
@@ -128,15 +128,18 @@ You can also customize the appearance of the GroupBar control and its items by u
 To create the GroupBar control through code, use the following XAML or C# code.
 
 
-
-<table>
-<tr>
-<td>
-{% highlight xml %}<!-- Adding GroupBar --><syncfusion:GroupBar Height="300" Width="230" Name="groupBar"/> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %}//Creating an instance of GroupBarGroupBar groupBar = new GroupBar();//Setting height for GroupBargroupBar.Height = 300;//Setting width for GroupBargroupBar.Width = 200;//Adding GroupBar to windowthis.Content = groupBar; {% endhighlight %} </td></tr>
-</table>
+{% highlight xml %}
+<!-- Adding GroupBar -->
+<syncfusion:GroupBar Height="300" Width="230" Name="groupBar"/>
+ {% endhighlight %} 
+ 
+{% highlight C# %}
+//Creating an instance of GroupBarGroupBar groupBar = new GroupBar();
+//Setting height for GroupBargroupBar.Height = 300;
+//Setting width for GroupBargroupBar.Width = 200;
+//Adding GroupBar to windowthis.Content = groupBar;
+ {% endhighlight %} 
+ 
 ### Itemssource Support/GroupBar Control
 
 Items in a GroupBar can also be added by binding a collection of business object through Itemssource property. The following is an example of the business object, which is used for Itemssource binding. 
@@ -147,11 +150,11 @@ public class RegionStatistics
 
 {
 
-public string Population{get; set;}
+	public string Population{get; set;}
 
-public string Name{get; set;}
+	public string Name{get; set;}
 
-public string Location{get; set;}
+	public string Location{get; set;}
 
 }
 
@@ -167,23 +170,23 @@ Add items to the ObservableCollection, by using the following code.
 
 private void Window1_Loaded(object sender, RoutedEventArgs e)
 
-        {
+{
 
-            SampleList = new ObservableCollection<RegionStatistics>();
+	SampleList = new ObservableCollection<RegionStatistics>();
 
-            SampleList.Add(new RegionStatistics() { Name = "Mexico", Population = "107,449,525", Location="North America" });
+	SampleList.Add(new RegionStatistics() { Name = "Mexico", Population = "107,449,525", Location="North America" });
 
-            SampleList.Add(new RegionStatistics() { Name = "Canada", Population = "33,098,932", Location = "North America" });
+	SampleList.Add(new RegionStatistics() { Name = "Canada", Population = "33,098,932", Location = "North America" });
 
-            SampleList.Add(new RegionStatistics() { Name = "United States", Population = "304,228,357", Location = "North America" });
+	SampleList.Add(new RegionStatistics() { Name = "United States", Population = "304,228,357", Location = "North America" });
 
-            SampleList.Add(new RegionStatistics() { Name = "Costa Rica", Population = "04,075,261", Location = "Central America" });
+	SampleList.Add(new RegionStatistics() { Name = "Costa Rica", Population = "04,075,261", Location = "Central America" });
 
-            SampleList.Add(new RegionStatistics() { Name = "Brazil", Population = "188,078,287", Location = "South America" });
+	SampleList.Add(new RegionStatistics() { Name = "Brazil", Population = "188,078,287", Location = "South America" });
 
-            gri.DataContext = this;
+	gri.DataContext = this;
 
-        }
+}
 {% endhighlight %}
 
 
@@ -192,32 +195,22 @@ private void Window1_Loaded(object sender, RoutedEventArgs e)
  Set the Itemssource property, by using the following code.
 
 
-
-
-
-<table>
-<tr>
-<td>
-{% highlight xml %}<sync:GroupBar Name="gBar" ItemsSource="{Binding SampleList}"/> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %}Binding bind = new Binding();          bind.Source = this;          bind.Path = new PropertyPath("SampleList");          gBar.SetBinding(GroupBar.ItemssourceProperty, bind); {% endhighlight %} </td></tr>
-</table>
-
-
-
-
+{% highlight xml %}
+<sync:GroupBar Name="gBar" ItemsSource="{Binding SampleList}"/>
+ {% endhighlight %} 
+ 
+{% highlight C# %}
+Binding bind = new Binding();
+bind.Source = this;
+bind.Path = new PropertyPath("SampleList");
+gBar.SetBinding(GroupBar.ItemssourceProperty, bind); 
+{% endhighlight %} 
 
 
 ![](Getting-Started_images/Getting-Started_img8.jpeg)
 
 
-
-
-
 ###Using ItemTemplate
-
-
 
 Apply the ItemTemplate to GroupBar, by using the following code. 
 
@@ -243,17 +236,11 @@ Apply the ItemTemplate to GroupBar, by using the following code.
 
 ![](Getting-Started_images/Getting-Started_img9.jpeg)
 
-
-
-
-
 ###Using ItemContainer Style 
 
 The above image shows that the GroupBar is bounded with the ObservableCollection SampleList. Write the HeaderTemplate and ContentTemplate for the ItemContainer, by using the following code. 
 
 The Item Container Style should be declared as follows.
-
-
 
 {% highlight xml %}
 
@@ -262,13 +249,9 @@ The Item Container Style should be declared as follows.
 <Style TargetType="{x:Type sync:GroupBarItem}">
 
 
-
 </Style>
 
 </sync:GroupBar.ItemContainerStyle>
-
-
-
 
 
 Apply Header Template to the Header Template property of the Item, by using the following code.
@@ -387,7 +370,7 @@ Note: Data Template has been written for South America Statistics data.
 {% endhighlight %}
 
 
-Note: Data Template has been written for Other Statistics data.
+> Note: Data Template has been written for Other Statistics data.
 
 {% highlight xml %}
 

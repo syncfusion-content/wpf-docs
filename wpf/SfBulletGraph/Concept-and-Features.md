@@ -13,7 +13,7 @@ documentation: ug
 
 The view of the Bullet Graph is changed by setting the Orientation property. Quantitative scale contains two major components: ticks and labels. The length of the quantitative scale is customized by using the QuantitativeScaleLength property. The direction of the quantitative scale is personalized by making use of the FlowDirection property it’s either Forward or Backward.
 {% highlight html %}
-[XAML]
+
 
   <syncfusion:SfBulletGraph Orientation="Vertical"   FlowDirection="Forward"
 
@@ -57,7 +57,6 @@ The view of the Bullet Graph is changed by setting the Orientation property. Qua
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
 
 
 
@@ -101,7 +100,7 @@ The view of the Bullet Graph is changed by setting the Orientation property. Qua
 
 The Caption for a Bullet Graph is used to specify a unique label describing the value represented. 
 {% highlight html %}
-[XAML]
+
 
          <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -131,7 +130,7 @@ The Caption for a Bullet Graph is used to specify a unique label describing the 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -179,7 +178,7 @@ The Caption for a Bullet Graph is used to specify a unique label describing the 
 
 
 
-## Caption Position
+### Caption Position
 
 The caption in the Bullet Graph can be placed in the start or end of the quantitative scale by choosing from one of the two options available in the CaptionPosition property. They are:
 
@@ -189,7 +188,7 @@ The caption in the Bullet Graph can be placed in the start or end of the quantit
 ### Code Example
 
 {% highlight html %}
-[XAML]
+
 
     <syncfusion:SfBulletGraph Orientation="Horizontal" FlowDirection="Forward" Minimum="0" Maximum="10" Interval="2"  
 
@@ -213,8 +212,6 @@ The caption in the Bullet Graph can be placed in the start or end of the quantit
 
 {% endhighlight  %}
 {% highlight c# %}
-
-[C#]
 
 
 
@@ -266,7 +263,7 @@ The value of the featured measure of the Bullet Graph is set by the FeaturedMeas
 
 ### Code Example:
 {% highlight html %}
-[XAML]
+
 
     <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward" 
 
@@ -290,7 +287,7 @@ The value of the featured measure of the Bullet Graph is set by the FeaturedMeas
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -343,8 +340,8 @@ Comparative measure is less visually dominant than the featured measure. It is a
 The value of the comparative measure is set by using the ComparativeMeasure property. By setting the ComparativeMeasureSymbolStroke property, the stroke of the comparative measure symbol is customized. The thickness of the comparative measure symbol is modified by using ComparativeMeasureSymbolStrokeThickness.
 
 ### Code Example:
+
 {% highlight html %}
-[XAML]
 
         <syncfusion:SfBulletGraph Orientation="Horizontal"  FlowDirection="Forward"
 
@@ -364,7 +361,6 @@ The value of the comparative measure is set by using the ComparativeMeasure prop
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
 
 
 
@@ -412,7 +408,7 @@ The width of the ranges can be customized by setting the QualitativeRangesSize p
 
 ### Code Example:
 {% highlight html %}
-[XAML]
+
 
         <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -452,7 +448,6 @@ The width of the ranges can be customized by setting the QualitativeRangesSize p
 
 {% endhighlight %}
 {% highlight c# %}
-[C#]
 
 
 
@@ -488,15 +483,14 @@ The width of the ranges can be customized by setting the QualitativeRangesSize p
 
 
 
-## Binding RangeStroke to Ticks and Labels:
+### Binding RangeStroke to Ticks and Labels:
 
 By setting BindWithRangeStrokeToLabels, the stroke of the labels is set related to the stroke of the specified ranges. Similarly, by setting BindWithRangeStrokeToTicks, the stroke of the ticks is set related to the stroke of the specified ranges.
 
 ### Code Example:
-{% highlight html %}
-[XAML]
 
-        <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
+{% highlight html %}
+      <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
                                   QualitativeRangesSize="30" 
 
@@ -538,7 +532,6 @@ By setting BindWithRangeStrokeToLabels, the stroke of the labels is set related 
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
 
 
 
@@ -593,7 +586,7 @@ The stroke of the major and minor ticks is customized by setting the MajorTickSt
 
 ### Code Example:
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -616,7 +609,7 @@ The stroke of the major and minor ticks is customized by setting the MajorTickSt
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
   SfBulletGraph bulletgraph = new SfBulletGraph();
 
@@ -669,7 +662,7 @@ They are:
 ### Code Example:
 
 {% highlight html %}
-[XAML]
+
 
         <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -693,7 +686,7 @@ They are:
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -752,7 +745,7 @@ The label’s offset is changed by using the LabelOffset property. The foregroun
 ### Code Example:
 
 {% highlight html %}
-[XAML]
+
 
         <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -768,7 +761,6 @@ The label’s offset is changed by using the LabelOffset property. The foregroun
 
 {% endhighlight %}
 {% highlight c# %}
-[C#]
 
 
 
@@ -818,7 +810,7 @@ The labels in the scale can be placed above or below the qualitative ranges by c
 ### Code Example:
 
 {% highlight html %}
-[XAML]
+
 
         <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -835,9 +827,9 @@ The labels in the scale can be placed above or below the qualitative ranges by c
         </syncfusion:SfBulletGraph>
 
 {% endhighlight  %}
+
 {% highlight html %}
 
-[C#]
 
 SfBulletGraph bulletgraph = new SfBulletGraph();
 
@@ -881,14 +873,13 @@ The SfBulletGraph tooltip is displayed only when the ShowToolTip property is
 
 
 
-## FeaturedMeasureToolTipTemplate
+### FeaturedMeasureToolTipTemplate
 
 You can display the value of FeaturedMeasure of SfBulletGraph in ToolTip that is used to view the FeaturedMeasure value .The FeaturedMeasureToolTipTemplate is DataTemplate type.
 
 ### Code Example:
 
 {% highlight html %}
-[XAML]
 
                            <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -966,14 +957,14 @@ You can display the value of FeaturedMeasure of SfBulletGraph in ToolTip tha
 
 
 
-## ComparativeMeasureToolTipTemplate
+### ComparativeMeasureToolTipTemplate
 
 You can display the value of ComparativeMeasure of SfBulletGraph in ToolTip that is used to view the ComparativeMeasure value. The ComparativeMeasureToolTipTemplate is DataTemplate type.
 
 ### Code Example:
 
 {% highlight html %}
-[XAML]
+
 
                            <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -1055,14 +1046,14 @@ You can display the value of ComparativeMeasure of SfBulletGraph in ToolTip 
 
 
 
-## QualitativeRangeToolTipTemplate
+### QualitativeRangeToolTipTemplate
 
 You can display the value of QualitativeRange of SfBulletGraph in ToolTip that is used to view the Start and End value of QualitativeRange. The QualitativeRangeToolTipTemplate is DataTemplate type.
 
 ### Code Example:
 
 {% highlight html %}
-[XAML]
+
 
                            <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 

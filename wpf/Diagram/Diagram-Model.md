@@ -119,7 +119,7 @@ You can set the horizontal and the vertical distance between the nodes in a tree
 
 The following code illustrates these settings.
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -237,7 +237,7 @@ The Bounds property of the DiagramView class can be used to specify the position
 The tree orientation can be set using the following code.
 
 
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
     <!--Diagram Control-->
@@ -473,7 +473,7 @@ The ItemsSource property gets the source for the list of nodes to be added to th
 
 The following code illustrates this.
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -596,7 +596,7 @@ To specify a cyclic path is as giving input to the Hierarchical-Tree layout. Ena
 The following code example illustrates how to set the EnableCycleDetection property.
 
 
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 
@@ -750,7 +750,7 @@ dc.Model = diagramModel
 diagramModel.TableExpandMode=TableExpandMode.Horizontal
 
 {% endhighlight  %}
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -877,7 +877,7 @@ diagramModel.RowCount=6
 diagramModel.ColumnCount=5
 
 {% endhighlight  %}
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -999,7 +999,7 @@ dc.Model = diagramModel
 diagramModel.EnableLayoutWithVariedSizes = True
 
 {% endhighlight  %}
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 

@@ -33,11 +33,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 VisualStyle </td><td>

@@ -843,81 +843,81 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
 
 1. Create an xml file with the following details and name it as Data.xml.
 
-    ~~~ xml
+   ~~~ xml
 
-    [XML]
+		[XML]
 
-    <?xml version="1.0" encoding="utf-8" ?>
+		<?xml version="1.0" encoding="utf-8" ?>
 
-    <RibbonTabs>
-
-
-
-    <TabCategory Name="Book Rental">
+		<RibbonTabs>
 
 
 
-    <BarCategory Name="Rental">
-
-      <Command Name="Add to Bookshelf"/>
-
-      <Command Name="My BookShelf"/>
-
-      <Command Name="Popular Books"/>
-
-      <Command Name="Latest Additions"/>
-
-      <Command Name="Price Winning Books"/>
-
-    </BarCategory>
+		<TabCategory Name="Book Rental">
 
 
 
-    <BarCategory Name="How it works">
+		<BarCategory Name="Rental">
 
-      <Command Name="Request a book"/>
+		  <Command Name="Add to Bookshelf"/>
 
-      <Command Name="Receive"/>
+		  <Command Name="My BookShelf"/>
 
-    </BarCategory>
+		  <Command Name="Popular Books"/>
 
+		  <Command Name="Latest Additions"/>
 
+		  <Command Name="Price Winning Books"/>
 
-    </TabCategory>
-
-
-
-    <TabCategory Name="Account Settings">
+		</BarCategory>
 
 
 
-    <BarCategory Name="My Account">
+		<BarCategory Name="How it works">
 
-      <Command Name="Sign in"/>
+		  <Command Name="Request a book"/>
 
-      <Command Name="Deactivate"/>
+		  <Command Name="Receive"/>
 
-    </BarCategory>
-
-
-
-    <BarCategory Name="Security">
-
-      <Command Name="Enable Secure surfing"/>
-
-      <Command Name="Change Password"/>
-
-    </BarCategory>
+		</BarCategory>
 
 
 
-    </TabCategory>  
+		</TabCategory>
 
 
 
-    </RibbonTabs>
-	
-	~~~
+		<TabCategory Name="Account Settings">
+
+
+
+		<BarCategory Name="My Account">
+
+		  <Command Name="Sign in"/>
+
+		  <Command Name="Deactivate"/>
+
+		</BarCategory>
+
+
+
+		<BarCategory Name="Security">
+
+		  <Command Name="Enable Secure surfing"/>
+
+		  <Command Name="Change Password"/>
+
+		</BarCategory>
+
+
+
+		</TabCategory>  
+
+
+
+		</RibbonTabs>
+		
+   ~~~
     {:.pretty-print }
 
 
@@ -928,13 +928,13 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
 
 2. Add the XmlDataProvider for the above XML document as given in the following code snippet:
 
-    ~~~ xml
+   ~~~ xml
 
-    [XAML]
+		[XAML]
 
-    <XmlDataProvider Source="Data/Data.xml" x:Key="xmlSource" XPath="RibbonTabs"/> 
-	
-	~~~
+		<XmlDataProvider Source="Data/Data.xml" x:Key="xmlSource" XPath="RibbonTabs"/> 
+		
+   ~~~
     {:.pretty-print }
 
 
@@ -945,105 +945,105 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
 
 3. Set the ItemsSource property for the Ribbon, RibbonTab and RibbonBar as shown in the below code snippet:
 
-    ~~~ xml
+   ~~~ xml
 
-    [XAML]
+		[XAML]
 
-    <syncfusion:Ribbon 
+		<syncfusion:Ribbon 
 
-     	x:Name="ribbon" 
+			x:Name="ribbon" 
 
-     	ItemsSource="{Binding Source={StaticResource xmlSource}, 			            	XPath=TabCategory}">
+			ItemsSource="{Binding Source={StaticResource xmlSource}, 			            	XPath=TabCategory}">
 
 
 
-    <syncfusion:Ribbon.ItemContainerStyle>
+		<syncfusion:Ribbon.ItemContainerStyle>
 
 
 
-    <Style TargetType="{x:Type syncfusion:RibbonTab}">
+		<Style TargetType="{x:Type syncfusion:RibbonTab}">
 
 
 
-    <Setter Property="ItemsSource" Value="{Binding XPath=BarCategory}" />
+		<Setter Property="ItemsSource" Value="{Binding XPath=BarCategory}" />
 
 
 
-    <Setter Property="ItemContainerStyle">
+		<Setter Property="ItemContainerStyle">
 
 
 
-     <Setter.Value>
+		 <Setter.Value>
 
 
 
-       <Style TargetType="{x:Type syncfusion:RibbonBar}">                                
+		   <Style TargetType="{x:Type syncfusion:RibbonBar}">                                
 
 
 
-         <Setter Property="ItemsSource" Value="{Binding XPath=Command}"/>                               
+			 <Setter Property="ItemsSource" Value="{Binding XPath=Command}"/>                               
 
 
 
-           <Setter Property="ItemTemplate">
+			   <Setter Property="ItemTemplate">
 
 
 
-             <Setter.Value>
+				 <Setter.Value>
 
 
 
-                 <DataTemplate>
+					 <DataTemplate>
 
 
 
-                  <syncfusion:RibbonButton Label="{Binding XPath=@Name}"/>                                            
+					  <syncfusion:RibbonButton Label="{Binding XPath=@Name}"/>                                            
 
 
 
-                 </DataTemplate>
+					 </DataTemplate>
 
 
 
-             </Setter.Value>
+				 </Setter.Value>
 
 
 
-           </Setter>
+			   </Setter>
 
 
 
-        <Setter Property="Header" Value="{Binding XPath=@Name}"/>
+			<Setter Property="Header" Value="{Binding XPath=@Name}"/>
 
 
 
-      </Style>
+		  </Style>
 
 
 
-    </Setter.Value>
+		</Setter.Value>
 
 
 
-    </Setter>
+		</Setter>
 
 
 
-    <Setter Property="Caption" Value="{Binding XPath=@Name}"/>
+		<Setter Property="Caption" Value="{Binding XPath=@Name}"/>
 
 
 
-    </Style>
+		</Style>
 
 
 
-    </syncfusion:Ribbon.ItemContainerStyle>
+		</syncfusion:Ribbon.ItemContainerStyle>
 
 
 
-    </syncfusion:Ribbon>
+		</syncfusion:Ribbon>
 	
-	~~~
+   ~~~
     {:.pretty-print }
 
 

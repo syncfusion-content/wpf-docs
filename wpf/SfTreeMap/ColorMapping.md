@@ -19,7 +19,7 @@ ColorMapping is categorized into four different types such as,
 
 
 
-TreeMap ColorMapping:
+## TreeMap ColorMapping:
 
 The leaf nodes of TreeMap can be colored by setting LeafColorMapping of TreeMap.
 
@@ -53,7 +53,7 @@ The leaf nodes of TreeMap can be colored by setting LeafColorMapping of TreeMap.
 
 
 
-TreeMapLevel ColorMapping:
+## TreeMapLevel ColorMapping:
 
 The headers of TreeMap level can also be colored using ColorMapping property of TreeMapLevel. 
 

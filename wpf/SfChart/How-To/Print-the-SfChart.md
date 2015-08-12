@@ -7,15 +7,16 @@ control: SfChart
 documentation: ug
 ---
 
-### Print the SfChart
+# Print the SfChart
 
 To print the SfChart, call the Print method.
 
 The following code sample can be used to print the SfChart:
+{% highlight C# %}
 
 [C#]
 
   chart.Print();   
 
-
+{% endhighlight %}
 

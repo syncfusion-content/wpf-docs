@@ -20,7 +20,7 @@ AutoComplete supports basic core features which are listed as follows.
 * SelectionChanged.
 * TextChanged.
 
-## Using Basic Core Features in an Application
+### Using Basic Core Features in an Application
 
 In the SelectionChanged event the SelectedIndex, SelectedItem & SelectedValue properties can be used in the application to get these property values. The properties and events listed can be used in the application as mentioned below.
 
@@ -83,20 +83,20 @@ void autoComplete1_SelectionChanged(object sender,
 {% endhighlight %}
 
 
-## Tables for Properties, and Events
+### Tables for Properties, and Events
 
-### Properties
+#### Properties
 
   _Properties Table for Basic Features_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 SelectedIndex</td><td>
@@ -133,6 +133,7 @@ DependencyProperty</td><td>
 String(null)</td><td>
 </td></tr>
 </table>
+
 ### Events
 
    _Events Table for Basic Features_
@@ -146,23 +147,23 @@ Arguments </th><th>
 Type </th><th>
 Reference links </th></tr>
 <tr>
-<th>
-SelectionChanged</th><th>
-When the value of SelectedItem property is changed this event will be triggered.It cannot be cancelled.</th><th>
-Object,SelectionChangedEventArgs</th><th>
-SelectionChangedEventHandler </th><th>
-</th></tr>
+<td>
+SelectionChanged</td><td>
+When the value of SelectedItem property is changed this event will be triggered.It cannot be cancelled.</td><td>
+Object,SelectionChangedEventArgs</td><td>
+SelectionChangedEventHandler </td><td>
+</td></tr>
 <tr>
-<th>
-TextChanged</th><th>
-When the value of the Text property is changed this event will be triggered.It cannot be cancelled.</th><th>
-DependencyObject,DependencyPropertyChangedEventArgs</th><th>
-DependencyPropertyChangedCallBack </th><th>
-</th></tr>
+<td>
+TextChanged</td><td>
+When the value of the Text property is changed this event will be triggered.It cannot be cancelled.</td><td>
+DependencyObject,DependencyPropertyChangedEventArgs</td><td>
+DependencyPropertyChangedCallBack </td><td>
+</td></tr>
 </table>
 
 
-## Sample Link
+#### Sample Link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
 

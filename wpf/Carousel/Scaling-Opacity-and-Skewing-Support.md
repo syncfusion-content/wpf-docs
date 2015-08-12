@@ -26,7 +26,7 @@ The following code illustrates the usage of these properties.
     </syncfusion:Carousel.Path>
     <syncfusion:Carousel.OpacityFractions>
         <syncfusion:PathFractionCollection>
-            <!--Fraction represents the position in Path-                Value represents the Opacity of Carousel item in a particular point-->
+            <!--Fraction represents the position in Path-Value represents the Opacity of Carousel item in a particular point-->
             <syncfusion:FractionValue Fraction="0" Value="1"/>
             <syncfusion:FractionValue Fraction="1" Value="0.5"/>
         </syncfusion:PathFractionCollection>

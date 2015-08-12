@@ -18,6 +18,7 @@ Here are some highlights about our ColorPicker control.
 * The selected color is visualized in a tooltip for the benefit of the users
 * ColorPicker is used in two modes—RGB and HSV
 * Support for picking colors using eyedropper. Drag the eyedropper to anywhere in your application to pick the color of a specific location or even a point
+
 ## Create ColorPicker control
 
 
@@ -31,7 +32,7 @@ To create a ColorPicker control through designer, follow the below steps.
 
 
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+   ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 
@@ -75,7 +76,7 @@ To create the ColorEdit control through designer, follow the below steps.
 
 
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+   ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 
 

@@ -51,7 +51,7 @@ The following code example explains how to add a Digital Gauge in your applicati
 
 
 
-### Screenshot:
+#### Screenshot:
 
 
 
@@ -69,7 +69,7 @@ Syncfusion Reference Manager is used to add Syncfusion Tools.
 
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -77,7 +77,7 @@ Syncfusion Reference Manager is used to add Syncfusion Tools.
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -85,7 +85,7 @@ Syncfusion Reference Manager is used to add Syncfusion Tools.
 
 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -93,7 +93,7 @@ Syncfusion Reference Manager is used to add Syncfusion Tools.
 
 
 
-![](Getting-Started_images/Getting-Started_img5.png)
+   ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -101,13 +101,13 @@ Syncfusion Reference Manager is used to add Syncfusion Tools.
 
 
 
-![](Getting-Started_images/Getting-Started_img6.png)
+   ![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
@@ -117,12 +117,12 @@ Syncfusion Reference Manager is used to add Syncfusion Tools.
 
 
 
-{% highlight xml %}
+   ~~~ xml
 
-[XAML]
+		xmlns:syncfusion ="http://schemas.syncfusion.com/wpf" 
 
-xmlns:syncfusion ="http://schemas.syncfusion.com/wpf" 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }	
 
 
 
@@ -130,65 +130,68 @@ xmlns:syncfusion ="http://schemas.syncfusion.com/wpf"
 7. Add the following code example to create a simple SfDigitalGauge control.
 
 
-{% highlight xml %}
-
-[XAML]
-
-<Window x:Class="SfDigitalGauge.MainWindow"
-
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-        Title="MainWindow" Height="350" Width="525">
-
-    <Grid Name="Grid">
-
-        <syncfusion:SfDigitalGauge></syncfusion:SfDigitalGauge>  
-
-    </Grid>
-
-</Window> 
-{% endhighlight %}
+   ~~~ xml
 
 
+		<Window x:Class="SfDigitalGauge.MainWindow"
 
-{% highlight C# %}
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-[C#]
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-using System.Windows;
+				xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-using Syncfusion.UI.Xaml.Gauges;
+				Title="MainWindow" Height="350" Width="525">
 
-namespace  DigitalGauge
+			<Grid Name="Grid">
 
-{
+				<syncfusion:SfDigitalGauge></syncfusion:SfDigitalGauge>  
 
-    public partial class MainWindow : Window
+			</Grid>
 
-    {
+		</Window> 
 
-        public MainWindow()
-
-        {
-
-            InitializeComponent();
-
-            SfDigitalGauge digitalgauge = new SfDigitalGauge();
-
-            this.Grid.Children.Add(digitalgauge);
+   ~~~
+   {:.prettyprint }
 
 
 
-         }
+   ~~~ cs
 
-    }
 
-}
-{% endhighlight %}
+		using System.Windows;
+
+		using Syncfusion.UI.Xaml.Gauges;
+
+		namespace  DigitalGauge
+
+		{
+
+			public partial class MainWindow : Window
+
+			{
+
+				public MainWindow()
+
+				{
+
+					InitializeComponent();
+
+					SfDigitalGauge digitalgauge = new SfDigitalGauge();
+
+					this.Grid.Children.Add(digitalgauge);
+
+
+
+				 }
+
+			}
+
+		}
+
+		
+   ~~~
+   {:.prettyprint }
 
 
 8. The SfDigitalGauge control is created as follows.
@@ -199,11 +202,10 @@ namespace  DigitalGauge
 
 
 
-> _Note:_   
-
-> _1.   The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version._
-
-> _2.   The Syncfusion Reference Manager is used only in Visual Studio 2010, 2012, and 2013._
+> Note:
+>
+> 1.   The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version.
+> 2.   The Syncfusion Reference Manager is used only in Visual Studio 2010, 2012, and 2013.
 
 
 

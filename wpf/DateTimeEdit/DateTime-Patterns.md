@@ -31,10 +31,11 @@ The pattern is set by using the Pattern property. The following code snippet ill
 
 
 
-{% highlight html %}
+{% highlight xml %}
 XAML
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="ShortDate"></syncfusion:DateTimeEdit>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"  DateTime="07/15/2010" Pattern="ShortDate">
+</syncfusion:DateTimeEdit>
 {% endhighlight  %}
 {% highlight c# %}
 C#
@@ -53,11 +54,12 @@ Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                    Syn
 You can also set the custom pattern for displaying the date in the DateTimeEdit control by using the CustomPattern property.
 
 
-{% highlight html %}
+{% highlight xml %}
 
 XAML
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="CustomPattern"                          CustomPattern="MM/dd/yy hh:mm:ss"></syncfusion:DateTimeEdit>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"  DateTime="07/15/2010" Pattern="CustomPattern"  CustomPattern="MM/dd/yy hh:mm:ss">
+</syncfusion:DateTimeEdit>
 {% endhighlight %}
 {% highlight c# %}
 C#

@@ -12,14 +12,17 @@ documentation: ug
 ShowTabItemContextMenu is the property that is used to disable the showing of Context Menu when right-clicked on the document tab. Simlarly, ShowTabListContextMenu is used to disable the showing of Context Menu list when clicked on the tabcontrol menu toggle button. The usages are given below:
 
 
-
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager Name="DockingManager" ShowTabItemContextMenu="False" ShowTabListContextMenu="False" UseDocumentContainer="True" ContainerMode="TDI">        <Grid Name="grid1" syncfusion:DockingManager.State="Document"/>        <Grid Name="grid2" syncfusion:DockingManager.State="Document"/></syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]//Disables the tabitem context menu.DockingManager.ShowTabItemContextMenu = false;//Disables the tablist context menu.DockingManager.ShowTabListContextMenu = false;</td></tr>
-</table>
+{% highlight xml %}
+<syncfusion:DockingManager Name="DockingManager" ShowTabItemContextMenu="False" ShowTabListContextMenu="False" UseDocumentContainer="True" ContainerMode="TDI">
+        <Grid Name="grid1" syncfusion:DockingManager.State="Document"/>
+        <Grid Name="grid2" syncfusion:DockingManager.State="Document"/>
+		</syncfusion:DockingManager>
+{% endhighlight %}
+{% highlight c# %}
+//Disables the tabitem context menu.
+DockingManager.ShowTabItemContextMenu = false;
+//Disables the tablist context menu.
+DockingManager.ShowTabListContextMenu = false;
+{% endhighlight %}
 
 

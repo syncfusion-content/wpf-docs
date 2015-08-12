@@ -14,23 +14,23 @@ The GridTree control’s columns are divided into two types. They are:
 * Bound Column
 * Unbound Column
 
-### Bound Column
+## Bound Column
 
 A bound column displays information from a bound data source, which is specified by GridTreeControl.ItemSource, or by handling the RequestTreeItems event. You can typically add one bound column to the grid for every data column you want to display.
 
-### Unbound Column
+## Unbound Column
 
 An unbound column does not obtain data from the ItemSource or from the RequestTreeItems event. Instead, you can provide data for unbound columns by creating expressions using the GridTreeUnboundColumn.Expression property, or by creating formatsusing the GridTreeUnboundColumn.Format property, or by handling the QueryUnboundColumnValue event.
 
-> _Note: In Unbound columns, you can have the features that are available in the bound columns such as cell type, sorting, and customization._ 
+> Note: In Unbound columns, you can have the features that are available in the bound columns such as cell type, sorting, and customization.
 
 ## Bound Columns
 
 A bound column displays information from a data source which is specified by the GridTreeControl.ItemSource or by handling the RequestTreeItems event. You can typically add one bound column to the grid for every data column you want to display.
 
-## Tables for Properties, Methods, and Events
+### Tables for Properties, Methods, and Events
 
-## Properties
+### Properties
 
 _Properties_
 
@@ -56,13 +56,13 @@ Boolean</td></tr>
 </table>
 
 
-### AutoPopulateColumns
+#### AutoPopulateColumns
 
 In the GridTree control, you can populate the columns automatically by setting the AutoPopulateColumns property to True.
 
 {%highlight xml%}
 
-[XAML]
+
 
 <syncfusion:GridTreeControl Name="treeGrid" AutoPopulateColumns="True">
 
@@ -71,7 +71,7 @@ In the GridTree control, you can populate the columns automatically by setting t
 
 {%highlight c#%}
 
-[C#]
+
 
 treeGrid.AutoPopulateColumns = true;
 
@@ -124,7 +124,6 @@ Hyperlink</td></tr>
 
 {%highlight xml%}
 
-[XAML]
 
 <syncfusion:GridTreeControl Name="treeGrid"
 
@@ -135,14 +134,14 @@ Hyperlink</td></tr>
 
 {%highlight c#%}
 
-[C#]
+
 
 treeGrid.AutoGenerateColumnsInfo = true;
 
 {%endhighlight%}
 
 
-#### Events
+### Events
 
 _Events_
 
@@ -166,7 +165,7 @@ In the below code snippet, VisibleColumn properties are customized based on the 
 
 {%highlight c#%}
 
-[C#]
+
 
 treeGrid.QueryVisibleColumnInfo += (treeGrid_QueryVisibleColumnInfo);
 
@@ -196,7 +195,7 @@ if (Args.VisibleColumn.MappingName == "EmpID")
 
 {%endhighlight%}
 
-## VisibleColumn Properties
+### VisibleColumn Properties
 
 The following are the list of properties that are available for all visible columns.
 
@@ -278,7 +277,7 @@ To know more about the GridStyleInfo and StyleInfo properties please refer the f
 
 [http://help.syncfusion.com/ug/wpf/grid/default.htm#!documents/cellstyles.htm](http://help.syncfusion.com/ug/wpf/grid/default.htm)
 
-## Cell Types
+### Cell Types
 
 In GridTree control you can define the cell type for each column by using the property “CellType”. When you leave a column without defining the cell type then that column’s cell type is considered as “Static” cell type. The list of cell types that are available in the GridTree control are as follows.
 
@@ -291,7 +290,7 @@ In GridTree control you can define the cell type for each column by using the pr
 > <br>{{ '_Note: It is not possible to change the cell type for the first column of the GridTree control._' | markdownify }}</td></tr>
 </table>
 
-## Static
+### Static
 
 The Static cell type allows you to only to display the values in the cells and not to edit the cells. When you want to display a read only content then you can choose the static cell types. 
 
@@ -299,7 +298,6 @@ The following is an example of how to define such a column.
 
 {%highlight xml%}
 
-[XAML]
 
 <syncfusion:GridTreeColumn Width="150" MappingName="Address">
 
@@ -316,7 +314,7 @@ The following is an example of how to define such a column.
 
 {%highlight c#%}
 
-[C#]
+
 
 treeGrid.Columns.Add(new GridTreeColumn("Address")
 
@@ -334,17 +332,16 @@ treeGrid.Columns.Add(new GridTreeColumn("Address")
 
 _GridTree Static CellType_
 
-## TextBlock
+### TextBlock
 
 The TextBlock cell type allows you to display the values in the cells and also to edit the cells. When you need to display a read only content then you can choose TextBlock cell type.
 
-> _Note: The difference between the Static and TextBlock cell type is that the Static cell type draws the cell but the TextBlock cell type loads the cell with TextBlock._
+> Note: The difference between the Static and TextBlock cell type is that the Static cell type draws the cell but the TextBlock cell type loads the cell with TextBlock.
+
 
 The following is an example of how to define such a column.
-
 {%highlight xml%}
 
-[XAML]
 
 <syncfusion:GridTreeColumn Width="130" MappingName="FirstName">
 
@@ -361,7 +358,7 @@ The following is an example of how to define such a column.
 
 {%highlight c#%}
 
-[C#]
+
 
 this.treeGrid.Columns.Add(new GridTreeColumn()
 
@@ -392,7 +389,7 @@ The following screenshot shows a simple demo of this cell type.
 
 _GridTree TextBlock Cell type_
 
-## TextBox
+### TextBox
 
 The TextBox cell type allows you to display the cell values in text boxes. Each cell loads a text box and its Text property is bound with the cell value.
 
@@ -400,7 +397,7 @@ The following code snippet explains how to define such a column.
 
 {%highlight xml%}
 
-[XAML]
+
 
 <syncfusion:GridTreeColumn Width="130" MappingName="FirstName">
 
@@ -416,7 +413,7 @@ The following code snippet explains how to define such a column.
 
 {%highlight c#%}
 
-[C#]
+
 
 this.treeGrid.Columns.Add(new GridTreeColumn()
 
@@ -446,7 +443,7 @@ The following screenshot shows a simple demo of TextBox cell type.
 
 _GridTree TextBox Cell Type_
 
-## RichText
+### RichText
 
 The RichText cell types provide more advanced formatting features than the TextBox and TextBlock cell types. You can apply character and paragraph formatting to the text in the RichText cell type. A RichText cell type allows you to display string in a paragraph or in other formats and also the cell value should be a FlowDocument object.
 
@@ -454,7 +451,6 @@ The following is an example of how to define such a column.
 
 {%highlight xml%}
 
-[XAML]
 
 <syncfusion:GridDataVisibleColumn Width="32"
 
@@ -476,7 +472,7 @@ The following is an example of how to define such a column.
 
 {%highlight c#%}
 
-[C#]
+
 
 treeGrid.Columns.Add(new GridTreeColumn("Document")
 
@@ -540,13 +536,13 @@ emp.Document = doc;
 
 _GridTree RichText Cell Type_
 
-## ExpanderCell
+### ExpanderCell
 
 In the GridTree control by default, the ExpanderCell type is present at the first column. This column helps you to expand the parent node and navigate into the child nodes. In general, ExpanderCell contains a glyph to expand/collapse the parent nodes.
 
 The following are the list of glyphs in the GridTree control.
 
-Glyph Types
+#### Glyph Types
 
 The glyph present in the ExpanderCell can be changed and customized. By default, it is has the following types of glyph.
 
@@ -574,7 +570,7 @@ The following code snippet shows how to load the image in ExpanderCell.
 
 {%highlight c#%}
 
-[C#]
+
 
 private void treeGrid_RequestNodeImage(object sender, GridTreeRequestNodeImageEventArgs args)
 
@@ -593,7 +589,7 @@ private void treeGrid_RequestNodeImage(object sender, GridTreeRequestNodeImageEv
 
 _GridTree ExpanderCell with Image_
 
-## DataTemplate
+### DataTemplate
 
 In the GridTree control, DataTemplate cell type allows you to replace the visual appearance of a cell. You can load any controls into a cell and display the CellBoundValue or custom values. This provides an exensible way to display the cells. The DataContext of a DataTemplate is same as that of the GridTree control.
 
@@ -653,7 +649,7 @@ The following example code shows a simple DataTemplate.
 
 {%highlight xml%}
 
-[XAML]
+
 
 <Window.Resources>
 
@@ -693,7 +689,6 @@ The following example code shows a simple DataTemplate.
 
 {%highlight c#%}
 
-[C#]
 
 treeGrid.Columns.Add(new GridTreeColumn("Weight")
 
@@ -726,7 +721,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Weight")
 
 _GridTree DataTemplate CellType_
 
-## ComboBox
+### ComboBox
 
 The ComboBox cell type allows you to select an item either by typing the text into the combo box, or by selecting it from the list. A ComboBox cell type is appropriate when there is a list of suggested choices, and a list box is appropriate when you want to limit the input to what is on the list. 
 
@@ -788,7 +783,7 @@ The following is an example of how to define such a column.
 
 {%highlight xml%}
 
-[XAML]
+
 
 <syncfusion:GridTreeColumn HeaderText="Department"
 
@@ -815,7 +810,6 @@ The following is an example of how to define such a column.
 
 {%highlight c#%}
 
-[C#]
 
 GridTreeColumn coll = treeGrid.Columns[3];
 
@@ -846,7 +840,7 @@ We can change the combo box drop-down list style by using the GridDropDownStyle 
 
 _Combo Box Cell Type_
 
-#### DropDownList
+### DropDownList
 
 This cell type serves the same purpose as the ComboBox control. The difference is that it associates a multicolumn drop-down to the owner cell. The other common features like DropDownStyle, ItemsSource, DisplayMember and ValueMember are applicable to this cell too.
 
@@ -918,7 +912,6 @@ The following is an example of how to define such a column.
 
 {%highlight xml%}
 
-[XAML]
 
 <syncfusion:GridTreeColumn Width="130"
 
@@ -954,7 +947,6 @@ The following is an example of how to define such a column.
 {%endhighlight%}
 
 {%highlight c#%}
-[C#]
 
 this.treeGrid.Columns.Add(new GridTreeColumn()
 
@@ -1001,7 +993,7 @@ The following screenshot shows a simple demo of the DropDownList cell type.
 
 _GridTree Control DropDownList Cell Type_
 
-## CheckBox
+### CheckBox
 
 The CheckBox cell type allows you to choose Boolean options. There are three options that the user can enter into the cell: true, false and null value. The cell value is bound with the IsChecked property of the CheckBox. 
 
@@ -1025,7 +1017,6 @@ The following code shows how to define such a column.
 
 {%highlight xml%}
 
-[XAML]
 
 <syncfusion:GridTreeColumn MappingName="IsMajor">
 
@@ -1042,7 +1033,6 @@ The following code shows how to define such a column.
 {%highlight c#%}
 
 
-[C#]
 
 this.treeGrid.Columns.Add(new GridTreeColumn("IsMajor")
 
@@ -1072,7 +1062,7 @@ The following screenshot shows a simple demo of CheckBox cell type.
 
 _GridTree Control CheckBox Cell Type_
 
-## CurrencyEdit
+### CurrencyEdit
 
 The CurrencyEdit cell type allows you to represent monetary values to maintain accuracy in calculations. It strips the currency sign in the cell and attempt to parse only the number from the input. Also, by using the GridCurrencyEditStyleInfo class we can customize the CurrencyEdit properties and appearance. Use the GridStyleInfo properties given below to customize these cells. 
 
@@ -1138,7 +1128,6 @@ The following code snippet explains how to define a CurrencyEdit column.
 
 {%highlight xml%}
 
-[XAML]
 
 <syncfusion:GridTreeColumn Width="130" MappingName="Salary">
 
@@ -1155,7 +1144,6 @@ The following code snippet explains how to define a CurrencyEdit column.
 
 {%highlight c#%}
 
-[C#]
 
 treeGrid.Columns.Add(new GridTreeColumn("Salary")
 
@@ -1174,7 +1162,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Salary")
 
 _GridTree Control CurrencyEdit Cell Type_
 
-## IntegerEdit
+### IntegerEdit
 
 The IntegerEdit cell type is a specialized cell type that restricts the data entry to integer values. The following table contains the style properties specific to this cell type.
 
@@ -1225,7 +1213,6 @@ The following code demonstrates how to define an IntegerEdit column.
 {%highlight xml%}
 
 
-[XAML]
 
 <syncfusion:GridTreeColumn HeaderText="ID" MappingName="Employee ID">
 
@@ -1242,7 +1229,6 @@ The following code demonstrates how to define an IntegerEdit column.
 
 {%highlight c#%}
 
-[C#]
 
 treeGrid.Columns.Add(new GridTreeColumn("Employee ID")
 
@@ -1262,7 +1248,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Employee ID")
 
 _GridTree Control IntegerEdit Cell Type_
 
-## DoubleEdit
+### DoubleEdit
 
 The DoubleEdit cell type allows you to enter only values that are _double_ into the cell. Thus it can be used to display System.Double type values. Also, by using the GridDoubleEditStyleInfo class you can customize the DoubleEdit properties and appearance. The style properties that affect this cell are given below. 
 
@@ -1320,7 +1306,6 @@ The following code sample demonstrates how to define a DoubleEdit column.
 
 {%highlight xml%}
 
-[XAML]
 
 <syncfusion:GridTreeColumn MappingName="Salary" HeaderText="Amount">
 
@@ -1337,7 +1322,7 @@ The following code sample demonstrates how to define a DoubleEdit column.
 
 {%highlight c#%}
 
-[C#]
+
 
 treeGrid.Columns.Add(new GridTreeColumn("Salary")
 
@@ -1421,7 +1406,6 @@ The following code sample demonstrates how to define a PercentEdit column.
 
 
 {%highlight xml%}
-[XAML]
 
 <syncfusion:GridTreeColumn MappingName="Hike">
 
@@ -1445,7 +1429,6 @@ The following code sample demonstrates how to define a PercentEdit column.
 {%endhighlight%}
 
 {%highlight c#%}
-[C#]
 
 GridTreeColumn percentColumn = new GridTreeColumn("Hike")
 
@@ -1481,11 +1464,11 @@ treeGrid.Columns.Add(percentColumn);
 
 _GridTree Control PercentEdit Cell Type_
 
-## DateTimeEdit
+### DateTimeEdit
 
 The DateTimeEdit cells incorporate the DateTimeEdit controls in the grid cells that will help you interactively set a date and time value. The style properties in the following table are applicable to this cell type.
 
-DateTime Edit Cell Properties
+#### DateTime Edit Cell Properties
 
 _Properties_
 
@@ -1553,9 +1536,9 @@ Applying a color to  this property sets as background of RepeatButton.</td></tr>
 </table>
 
 
-### DateTime Patterns for DateTime Edit Cells
+#### DateTime Patterns for DateTime Edit Cells
 
-_DateTime Patterns_
+##### _DateTime Patterns_
 
 <table>
 <tr>
@@ -1609,7 +1592,7 @@ The following code sample demonstrates how to define a column with DateTime Edit
 
 {%highlight xml%}
 
-[XAML]
+
 
 <syncfusion:GridTreeColumn HeaderText="DOB" MappingName="Birth Date">
 
@@ -1625,7 +1608,7 @@ The following code sample demonstrates how to define a column with DateTime Edit
 
 {%highlight c#%}
 
-[C#]
+
 
 treeGrid.Columns.Add(new GridTreeColumn("Birth Date")
 
@@ -1645,7 +1628,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Birth Date")
 
 _DateTime Edit Cell Type_
 
-## MaskEdit
+### MaskEdit
 
 The MaskEdit cell type allows you to create specially formatted text cells that confirm to an edit mask that you specify. The Style.MaskEdit.Mask property holds the mask string, which controls the format of the input text. The MaskEdit cells are useful when the user wants to display some formatted text such as a social security number, telephone number, etc.
 
@@ -1685,7 +1668,7 @@ The following code sample demonstrates how to define a MaskEdit column.
 
 {%highlight xml%}
 
-[XAML]
+
 
 <syncfusion:GridTreeColumn MappingName="LastName">
 
@@ -1701,7 +1684,6 @@ The following code sample demonstrates how to define a MaskEdit column.
 
 {%highlight c#%}
 
-[C#]
 
 treeGrid.Columns.Add(new GridTreeColumn("LastName")
 
@@ -1721,7 +1703,7 @@ treeGrid.Columns.Add(new GridTreeColumn("LastName")
 
 _MaskEdit Cell Type_
 
-## UpDownEdit
+### UpDownEdit
 
 The UpDownEdit cell type hosts an UpDownEdit control which contains a pair of arrow buttons that increases or decreases the cell value. The style properties applicable to this cell type are provided in the following table. 
 
@@ -1769,7 +1751,6 @@ The following sample demonstrates how to define a column with UpDownEdit cells.
 
 {%highlight xml%}
 
-[XAML]
 
 <syncfusion:GridTreeColumn MappingName="Rating">
 
@@ -1785,7 +1766,6 @@ The following sample demonstrates how to define a column with UpDownEdit cells.
 
 
 {%highlight c#%}
-[C#]
 
 GridTreeColumn updownColumn = new GridTreeColumn("Rating")
 
@@ -1819,7 +1799,7 @@ treeGrid.Columns.Add(updownColumn);
 
 _UpDownEdit Cell Type_
 
-## TimeSpanEdit
+### TimeSpanEdit
 
 The TimeSpanEdit cell type is used to display time value in the Day:Hour:Min:Sec format and also in custom format. The fields can be incremented and decremented by using the up and down arrow keys.
 
@@ -1851,7 +1831,7 @@ The following code sample demonstrates how to define a column with TimeSpanEdit 
 
 {%highlight xml%}
 
-[XAML]
+
 
 <syncfusion:GridTreeColumn HeaderText="Time Avail" MappingName="Time">
 
@@ -1867,7 +1847,6 @@ The following code sample demonstrates how to define a column with TimeSpanEdit 
 
 {%highlight c#%}
 
-[C#]
 
 treeGrid.Columns.Add(new GridTreeColumn("Time")
 
@@ -1887,7 +1866,7 @@ treeGrid.Columns.Add(new GridTreeColumn("Time")
 
 _TimeSpanEdit Cell Type_
 
-## ImageCell
+### ImageCell
 
 The ImageCell type is used to load images inside the graphic cells. To load the graphic image cell in the GridTree control, you have to set the CellType as ImageCell and the CellValue as BitmapImage.
 
@@ -1927,7 +1906,6 @@ The following code sample demonstrates how to define a column with Image cells.
 
 {%highlight xml%}
 
-[XAML]
 
 <syncfusion:GridTreeColumn MappingName="Image" HeaderText="Progress">
 
@@ -1944,7 +1922,7 @@ The following code sample demonstrates how to define a column with Image cells.
 {%highlight c#%}
 
 
-[C#]
+
 
 treeGrid.Columns.Add(new GridTreeColumn("Image")
 
@@ -1964,13 +1942,13 @@ treeGrid.Columns.Add(new GridTreeColumn("Image")
 
 _Image Cell Type_
 
-## Hyperlink 
+### Hyperlink 
 
 This cell type allows you to perform an operation when click on the cell like navigation from your application to a site or a window.
 
 The following are the list of events that are available for this cell type.
 
-_Events_
+#### _Events_
 
 <table>
 <tr>
@@ -1990,7 +1968,7 @@ The following code shows how to define such a column.
 
 {%highlight xml%}
 
-[XAML]
+
 
 <syncfusion:GridTreeColumn HeaderText="Department" MappingName="Department">
 
@@ -2008,7 +1986,7 @@ The following code shows how to define such a column.
 
 {%highlight c#%}
 
-[C#]
+
 
 this.treeGrid.Columns.Add(new GridTreeColumn("Department")
 
@@ -2035,13 +2013,13 @@ The following screenshot shows a simple demo of Hyperlink cell.
 
 _GridTree Control Hyperlink Cell Type_
 
-## Button
+### Button
 
 The Button cell type allows you to load Button control in each cell of the GridTree control. To load a Button in the GridTree control cell, choose Button cell type. You can perform button click action as in the Button control.
 
 The following table shows the events that are available for this cell type.
 
-_Events_
+#### _Events_
 
 <table>
 <tr>
@@ -2061,7 +2039,6 @@ The following code snippet shows a simple demo of Button cell type.
 
 {%highlight xml%}
 
-[XAML]
 
 <syncfusion:GridTreeColumn HeaderText="Department" MappingName="Department">
 
@@ -2078,7 +2055,7 @@ The following code snippet shows a simple demo of Button cell type.
 
 {%highlight c#%}
 
-[C#]
+
 
 this.treeGrid.Columns.Add(new GridTreeColumn("Department")
 
@@ -2120,7 +2097,7 @@ Also, you can utilize the features that are available in the bound columns, such
 
 ### Properties
 
-_Properties_
+#### _Properties_
 
 <table>
 <tr>
@@ -2140,7 +2117,7 @@ String</td></tr>
 
 ### Methods
 
-_Methods_
+#### _Methods_
 
 <table>
 <tr>
@@ -2160,7 +2137,7 @@ Object</td></tr>
 
 ### Events
 
-_Events_
+#### _Events_
 
 <table>
 <tr>
@@ -2185,7 +2162,7 @@ The following code helps you to display the custom values in the unbound columns
 
 {%highlight c#%}
 
-[C#]
+
 
 treeGrid.InternalGrid.QueryUnboundColumnValue += new GridTreeQueryUnboundColumnEventHandler(InternalGrid_QueryUnboundColumnValue);
 
@@ -2201,7 +2178,7 @@ void InternalGrid_QueryUnboundColumnValue(object sender, GridTreeUnboundColum
 {%endhighlight%}
 When the user handles this event and applies cell value then the values calculated by Expression or Format is not displayed in the unbound column.
 
-## Format
+### Format
 
 A Format is a string that contains a format to display data of a column in a specified unbound column, as formatted.
 
@@ -2216,7 +2193,7 @@ The following code snippet shows a simple usage of Format.
 
 {%highlight xml%}
 
-[XAML]
+
 
 <syncfusion:GridTreeUnboundColumn Format="'{Cost:c}'"
 
@@ -2250,7 +2227,7 @@ The following code snippet shows a simple usage of Format.
 
 {%highlight c#%}
 
-[C#]
+
 
 treeGrid.Columns.Add(new GridTreeUnboundColumn() { 
 
@@ -2273,7 +2250,7 @@ treeGrid.Columns.Add(new GridTreeUnboundColumn() { 
 
 _Using Formats in the GridTree Control_
 
-## Expression
+### Expression
 
 An Expression is a string contains formula to calculate values to display in the unbound columns. 
 
@@ -2281,7 +2258,7 @@ This property is used to set an expression formula for the unbound column, based
 
 The following table lists the operators that are supported with example for each.
 
-_Operators_
+#### _Operators_
 
 <table>
 <tr>
@@ -2403,7 +2380,6 @@ The following code snippet shows a simple way to use expressions.
 
 {%highlight c#%}
 
-[C#]
 
 treeGrid.Columns.Add(new GridTreeUnboundColumn() { MappingName = "GrandTotal", 
 

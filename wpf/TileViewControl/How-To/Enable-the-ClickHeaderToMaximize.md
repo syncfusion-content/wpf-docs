@@ -7,19 +7,19 @@ control: TileView Control
 documentation: ug
 ---
 
-### Enable the ClickHeaderToMaximize
+# Enable the ClickHeaderToMaximize
 
 You can enable the ClickHeaderToMaximize feature by using the ClickHeaderToMaximize property through C# as below. Refer to the detailed sample
 
 
-
+{% highlight C# %}
 [C#]
 
       TileViewControl item1 = new TileViewControl();
 
       item1.ClickHeaderToMaximize = true;
 
-
+{% endhighlight %}
 
 
 

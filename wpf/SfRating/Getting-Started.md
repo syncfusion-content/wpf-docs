@@ -17,13 +17,7 @@ The following code sample shows how to create the rating from code-behind and XA
 
 {%highlight xml%}
 
-[XAML]
-
-
-
 <Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf">
-
-
 
     <Grid>
 
@@ -37,8 +31,6 @@ The following code sample shows how to create the rating from code-behind and XA
 
 
 {%highlight c#%}
-
-[C#]
 
 SfRating rating = new SfRating();
 

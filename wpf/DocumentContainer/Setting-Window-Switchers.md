@@ -22,15 +22,22 @@ Currently five modes of window switchers are supported. They are as follows.
 To set the Quick Tab Mode for the window switchers, use the following code.
 
 
-
-<table>
-<tr>
-<td>
-{% highlight xml %}<!-- Adding Document Container --><syncfusion:DocumentContainer Name="DocContainer" SwitchMode="QuickTabs" Mode="MDI">  …....  …....</syncfusion:DocumentContainer>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight C# %}//Creating instance of Document ContainerDocumentContainer DocContainer = new DocumentContainer();//Set mode as MDIDocContainer.Mode = DocumentContainerMode.MDI;//Set switch modeDocContainer.SwitchMode = SwitchMode.QuickTabs;  ….......….......//Adding control to the windowthis.Content = DocContainer;{% endhighlight %}</td></tr>
-</table>
+{% highlight xml %}
+<!-- Adding Document Container -->
+<syncfusion:DocumentContainer Name="DocContainer" SwitchMode="QuickTabs" Mode="MDI">
+  ….... 
+  …....
+  </syncfusion:DocumentContainer>
+  {% endhighlight %}
+{% highlight C# %}
+//Creating instance of Document Container
+DocumentContainer DocContainer = new DocumentContainer();
+//Set mode as MDIDocContainer.Mode = DocumentContainerMode.MDI;
+//Set switch modeDocContainer.SwitchMode = SwitchMode.QuickTabs;
+  ….......
+  ….......
+  //Adding control to the windowthis.Content = DocContainer;
+  {% endhighlight %}
 
 
 ![](Setting-Window-Switchers_images/Setting-Window-Switchers_img1.jpeg)

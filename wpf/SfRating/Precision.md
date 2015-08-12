@@ -25,10 +25,6 @@ In the following example, 1.3 has been set for the value. The rating item has be
 
 {%highlight xml%}
 
-[XAML]
-
-
-
 <editors:SfRating ItemsCount="5" Value="1.3" 
 
 Precision="Standard/>
@@ -47,10 +43,6 @@ In this case, 0.3 has been set for the value. The rating item was filled partial
 
 {%highlight xml%}
 
-[XAML]
-
-
-
 <editors:SfRating ItemsCount="5" Value="1.3" Precision="Half"/>
 
 {%endhighlight%}
@@ -66,10 +58,6 @@ The rating item will be filled exactly based on the value of the Rating control 
 In this case, 1.3 has been set for the Value. Rating item was filled to reflect the exact value.
 
 {%highlight xml%}
-
-[XAML]
-
-
 
 <editors:SfRating ItemsCount="5" Value="1.3" 
 

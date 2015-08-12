@@ -163,7 +163,7 @@ Follow the steps to add Carousel in an application by using Blend.
 
 3. Add the following Reference with the sample project.
 
-Syncfusion.Shared.Wpf.dll
+	Syncfusion.Shared.Wpf.dll
 
 4. On the Window menu, select Assets. This opens the Assets Library dialog box.
 5. In the Search box, type Carousel. This displays the search results.

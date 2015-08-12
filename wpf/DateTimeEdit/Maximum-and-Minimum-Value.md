@@ -17,15 +17,20 @@ When the MaxDateTime is set, if the MinDateTime property is greater than the new
 
 
 
-{% highlight html %}
+{% highlight xml %}
 XAML
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/05/2010" Pattern="LongDate"                          MinDateTime="01/01/2010" MaxDateTime="07/15/2010"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"  DateTime="07/05/2010" Pattern="LongDate"  MinDateTime="01/01/2010" MaxDateTime="07/15/2010"/>
 {% endhighlight  %}
 {% highlight c# %}
 C#
 
-Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                           Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);dateTimeEdit.MinDateTime = new DateTime(2010, 01, 01);dateTimeEdit.MaxDateTime = new DateTime(2010, 07, 15);dateTimeEdit.Pattern = DateTimePattern.LongDate;this.LayoutRoot.Children.Add(dateTimeEdit);
+Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();
+dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;
+dateTimeEdit.DateTime = new DateTime(2010, 07, 05);
+dateTimeEdit.MinDateTime = new DateTime(2010, 01, 01);
+dateTimeEdit.MaxDateTime = new DateTime(2010, 07, 15);
+dateTimeEdit.Pattern = DateTimePattern.LongDate;this.LayoutRoot.Children.Add(dateTimeEdit);
 
 {% endhighlight  %}
 ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img1.png)

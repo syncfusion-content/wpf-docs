@@ -19,6 +19,7 @@ Here are some highlights about our CheckListBox control.
 * You can align the check box to the right, or left side of the CheckListBox Item
 * Drag items between list boxes
 * Built-in Visual Styles and Themes support
+
 ## Create CheckListBox control
 
 
@@ -27,7 +28,6 @@ You can create a CheckListBox control either by using XAML code or C# code. To c
 
 {%highlight xml%}
 
-[XAML]
     <!-- Adding CheckListBox -->
     <syncfusion:CheckListBox Name="checkListBox">
     <!-- Adding CheckListBox items -->    
@@ -43,7 +43,7 @@ You can create a CheckListBox control either by using XAML code or C# code. To c
 
 {%highlight c#%}
 
-[C#]
+
 // Creating an instance of CheckListBox
    CheckListBox checkListBox = new CheckListBox();
 // Creating an instance of CheckListBoxItem

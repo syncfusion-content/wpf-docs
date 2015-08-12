@@ -86,10 +86,10 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 From </td><td>
@@ -146,7 +146,7 @@ When the under-bound value is under any of the given sorted range or above the s
 
 AutoFillColor must be set to false to enable the range color mapping.
 
-> _Note: The shape’s under-bound object value must have numeric property and should be mentioned in ShapeValuePath to work on this. The color between the given ranges is applied only to the shapes that have a proper under-bound values. The color for other shapes is the ShapeFill’s color._
+ _Note: The shape’s under-bound object value must have numeric property and should be mentioned in ShapeValuePath to work on this. The color between the given ranges is applied only to the shapes that have a proper under-bound values. The color for other shapes is the ShapeFill’s color._
 
 
 {% highlight xml %}
@@ -301,7 +301,8 @@ MapColorPalette contains a property named “FillBrush”. This property sets th
             </syncfusion:SfMap.Layers>
 
         </syncfusion:SfMap >
-{% endhighlight %}
+
+		{% endhighlight %}
 
 
 ![](Shapes-Color-Customization_images/Shapes-Color-Customization_img4.png)

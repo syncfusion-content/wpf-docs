@@ -35,7 +35,7 @@ The Digital Characters in the Digital Gauge can be viewed in different types of 
 
 
 
-## Screenshot:
+#### Screenshot:
 
 ![](Digital-Characters_images/Digital-Characters_img1.png)
 
@@ -69,7 +69,7 @@ The digital characters set with the value property of the Digital Gauge are disp
 {% endhighlight %}
 
 
-### Screenshot:
+#### Screenshot:
 
 
 
@@ -107,7 +107,7 @@ The digital characters set with the value property of the Digital Gauge are disp
 
 
 
-### Screenshot:
+#### Screenshot:
 
 
 
@@ -142,8 +142,7 @@ The digital characters set with the value property of the digital gauge are disp
 
 
 
-
-### Screenshot:
+#### Screenshot:
 
 
 
@@ -179,7 +178,7 @@ The digital characters set with the value property of the Digital Gauge are disp
 
 
 
-### Screenshot:
+#### Screenshot:
 
 
 

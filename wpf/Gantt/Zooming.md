@@ -31,7 +31,7 @@ To add the built-in zooming:
 3. Use a slider or any control to provide the zoom factor dynamically. Bind the Gantt’s zoom factor to that control value.
 
 
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 <Slider Minimum="80" Maximum="600" Value="100" x:Name="ZoomSlider" Width="150"/>
@@ -107,7 +107,7 @@ The following image shows Built-in Zooming in Gantt:
 
 
 
-## Samples Link
+#### Samples Link
 
 To view samples:
 
@@ -137,7 +137,7 @@ To add custom zooming:
 4. Use any control to provide the zoom factor dynamically. Bind the Gantt’s zoom factor to that control value.
 5. Handle the ZoomChanged event handler in code behind and change the schedule row information in that event handler as illustrated in the following code example:
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -392,7 +392,7 @@ The following image shows Custom Zooming in Gantt:
 
 
 
-## Samples Link
+#### Samples Link
 
 To view samples:
 
@@ -401,6 +401,7 @@ To view samples:
 3. Select Gantt.
 4. Expand the Interactive Features item in the Sample Browser.
 5. Choose the Custom Zooming to launch the sample.
+
 ## Tables for Zooming Properties and Events
 
 
@@ -450,11 +451,11 @@ Description </th><th>
 Arguments </th><th>
 Type </th></tr>
 <tr>
-<th>
-ZoomChanged</th><th>
-Event triggers when the zoom factor is changed. This can be handled in application level.</th><th>
-ZoomChangedEventArgs</th><th>
-Simpleevent </th></tr>
+<td>
+ZoomChanged</td><td>
+Event triggers when the zoom factor is changed. This can be handled in application level.</td><td>
+ZoomChangedEventArgs</td><td>
+Simpleevent </td></tr>
 </table>
 
 

@@ -21,11 +21,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 DataSource.ConnectionString</td><td>
@@ -142,9 +142,6 @@ olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=a
 </syncfusion:OlapChart>
 
  {% endhighlight %}
-
-
-
 
 
 

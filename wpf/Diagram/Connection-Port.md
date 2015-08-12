@@ -440,7 +440,7 @@ The PortVisibility property is used to set the visibility of connection ports on
 2. AlwaysHidden
 3. AlwaysVisible
 
-### Properties
+#### Properties
 
 _Port Visibility_
 
@@ -630,7 +630,7 @@ Appearance of the ConnectionPort can be customized by applying style for the Cus
 
 ### Through XAML
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 

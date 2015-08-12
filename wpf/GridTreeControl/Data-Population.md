@@ -13,7 +13,7 @@ The primary requirement of the data displayed in the GridTree control is that th
 
 {%highlight c#%}
 
-[C#]
+
 
 
 
@@ -73,7 +73,6 @@ The following code example illustrates how to set these properties for the GridT
 
 {%highlight xml%}
 
-[XAML]
 
 <sf:GridTreeControl Name="treeGrid" RequestTreeItems="treeGrid_RequestTreeItems" >
 

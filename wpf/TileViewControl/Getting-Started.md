@@ -101,7 +101,7 @@ ii. Syncfusion.Core
 
 
 
-> _Note: You can customize the appearance of the TileViewControl and its Item using the template-editing feature available in the Expression Blend._
+   Note: You can customize the appearance of the TileViewControl and its Item using the template-editing feature available in the Expression Blend.
 
 ### Through XAML
 

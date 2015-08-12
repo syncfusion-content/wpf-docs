@@ -21,8 +21,6 @@ The MainScale contains a scale that integrates labels, tick marks, and a rim to 
 
 {% highlight xml %}
 
-[XAML]
-
        <syncfusion:SfCircularGauge x:Name="gauge" GaugeHeaderPosition="300,600" >
 
 
@@ -80,14 +78,11 @@ The MainScale contains a scale that integrates labels, tick marks, and a rim to 
     </syncfusion:SfCircularGauge.MainScale>
 
 </syncfusion:SfCircularGauge>
+
 {% endhighlight %}
 
 
 {% highlight C# %}
-
-[C#]
-
-
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -123,7 +118,7 @@ The MainScale contains a scale that integrates labels, tick marks, and a rim to 
 
 
 
-### Screenshot:
+#### Screenshot:
 
 ![](Scale-Settings_images/Scale-Settings_img1.png)
 
@@ -135,15 +130,9 @@ The MainScale contains a scale that integrates labels, tick marks, and a rim to 
 
 By using the Radius property, the Scales radius can be set as required.
 
-### Code Example:
+#### Code Example:
 
 {% highlight xml %}
-
-[XAML]
-
-
-
-
 
         <syncfusion:SfCircularGauge  x:Name="gauge">
 
@@ -219,12 +208,6 @@ By using the Radius property, the Scales radius can be set as required.
 
 {% highlight C# %}
 
-
-
-[C#]
-
-
-
             SfCircularGauge circularGauge = new SfCircularGauge();
 
             CircularScale scale = new CircularScale();
@@ -280,10 +263,11 @@ By using the Radius property, the Scales radius can be set as required.
             circularGauge.Scales.Add(scale1);
 
             this.Grid.Children.Add(circularGauge);
+			
 {% endhighlight %}
 
 
-### Screenshot:
+#### Screenshot:
 
 ![](Scale-Settings_images/Scale-Settings_img2.png)
 
@@ -300,8 +284,6 @@ To add multiple scales in a Circular Gauge, the CircularScale collection has to 
 #### Code Example:
 
 {% highlight xml %}
-
-[XAML]
 
     <syncfusion:SfCircularGauge SpacingMargin="0.7">
 
@@ -378,11 +360,10 @@ To add multiple scales in a Circular Gauge, the CircularScale collection has to 
             </syncfusion:SfCircularGauge.Scales>
 
 </syncfusion:SfCircularGauge>
+
 {% endhighlight %}
 
 {% highlight C# %}
-
-[C#]
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -417,6 +398,7 @@ To add multiple scales in a Circular Gauge, the CircularScale collection has to 
             circularGauge.Scales.Add(scale2);
 
             this.Grid.Children.Add(circularGauge);
+			
 {% endhighlight %}
 
 

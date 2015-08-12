@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance 
 
-# Setting VisualStyle for PercentTextBox
+## Setting VisualStyle for PercentTextBox
 
 The appearance of the ParcentTextBox control can be customized by using the VisualStyle property. The following are the various built-in visual styles for PaercentTextBox control.
 
@@ -24,7 +24,8 @@ The appearance of the ParcentTextBox control can be customized by using the Visu
 * VS2010
 * Metro
 * Transparent
-# Blendability
+
+## Blendability
 
 
 You can edit the PercentTextBox Template to give a nice look and feel by using Expression Blend.
@@ -34,15 +35,15 @@ The steps to edit the PercentTextBox Template by using Expression Blend are as f
 1. Create a simple WPF application in Expression Blend.
 2. Drag and drop the PercentTextBox into the application from the Assets tab.
 
-![](Appearance_images/Appearance_img1.png)
+   ![](Appearance_images/Appearance_img1.png)
 
 
 3. After creating the PercentTextBox, select the PercentTextBox and navigate to Object -> Edit Style -> Edit a Copy, to edit the Template of the PercentTextBox.
 
-![](Appearance_images/Appearance_img2.png)
+   ![](Appearance_images/Appearance_img2.png)
 
 
-Another way to edit the Template is as follows:
+   Another way to edit the Template is as follows:
 
 4. In Object and Timeline, right-click the PercentTextBox control and select the Edit Template option, as displayed below.
 

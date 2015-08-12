@@ -17,7 +17,7 @@ On enabling the MaxValueOnExceedMaxDigit property and setting the MaxValidation 
 
 Similarly, on enabling the MinValueOnExceedMinDigit property and setting the MinValidation to the OnKeyPress, the MinValue is assigned to the Value property when the value is lesser than the MinValue. However, when the MinValueOnExceedMinDigit property is disabled, you cannot enter text in the UpDown control should the value be lesser than MinValue.
 
-### Use of MaxValidation and MinValidation
+## Use of MaxValidation and MinValidation
 
 The MaxValidation and MinValidation can be set for the UpDown control as shown in the following code.
 
@@ -49,9 +49,9 @@ upDown.MinValueOnExceedMinDigit = true;
 
 {%endhighlight%}
 
-Tables for Properties, and Events
+### Tables for Properties, and Events
 
-_MaxValidation and MinValidation Properties_
+#### _MaxValidation and MinValidation Properties_
 
 <table>
 <tr>
@@ -92,7 +92,7 @@ Not applicable</td></tr>
 </table>
 
 
-_MaxValidation and MinValidation event_
+#### _MaxValidation and MinValidation event_
 
 <table>
 <tr>

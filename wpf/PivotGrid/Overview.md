@@ -44,13 +44,13 @@ _Document conventions table_
 <table>
 <tr>
 <td>
-Convention</td><td>
-Icon</td><td>
-Description</td></tr>
+{{ '**Convention**' | markdownify }}</td><td>
+{{ '**Icon**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Note</td><td>
-> {{ '_Note:_' | markdownify }}</td><td>
+{{ '_Note:_' | markdownify }}</td><td>
 Represents important information.</td></tr>
 <tr>
 <td>

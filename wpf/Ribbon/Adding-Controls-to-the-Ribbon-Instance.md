@@ -78,14 +78,22 @@ Here is the code you will need to use to create a DropDownMenuItem control for a
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<!-- Adding DropDownMenuItem --><sync:DropDownMenuItem Header="Item 1"></sync:DropDownMenuItem></td></tr>
-<tr>
-<td>
-[C#]// Creating an instance of TabSplitterDropDownMenuItem drop = new DropDownMenuItem(); // Adding DropDownMenuItem to DropDownMenuGroup DropDownMenuGroup dgrp = new DropDownMenuGroup();dgrp.Items.Add(drop);</td></tr>
-</table>
+{% highlight xml %}
+
+[XAML]
+<!-- Adding DropDownMenuItem --><sync:DropDownMenuItem Header="Item 1">
+</sync:DropDownMenuItem>
+{% endhighlight %}
+
+{% highlight C# %}
+[C#]
+// Creating an instance of TabSplitter
+DropDownMenuItem drop = new DropDownMenuItem(); 
+
+// Adding DropDownMenuItem to DropDownMenuGroup 
+DropDownMenuGroup dgrp = new DropDownMenuGroup();
+dgrp.Items.Add(drop);
+{% endhighlight %}
 
 
 # Adding DropDownMenuItem to the DropDownMenuGroup 
@@ -96,31 +104,90 @@ You will have to use the following code to add a DropDownMenuItem to the DropDow
 
 
 
-<table>
-<tr>
-<td>
-[XAML] <!-- Adding DropDownMenuItem -->  <sync:DropDownMenuGroup Width="150">            <sync:DropDownMenuItem Header="Items">            <sync:DropDownMenuItem Header="Item 1"></sync:DropDownMenuItem>            <sync:DropDownMenuItem Header="Item 2"></sync:DropDownMenuItem>            <sync:DropDownMenuItem Header="Item 3"></sync:DropDownMenuItem>            <sync:DropDownMenuItem Header="Item 4"></sync:DropDownMenuItem>            </sync:DropDownMenuItem>  </sync:DropDownMenuGroup></td></tr>
-<tr>
-<td>
-[C#]// Creating an instance of DropDownMenuItemDropDownMenuItem drop = new DropDownMenuItem();// Adding DropDownMenuItem inside DropDownMenuItemdrop.Items.Add(new DropDownMenuItem());drop.Items.Add(new DropDownMenuItem());drop.Items.Add(new DropDownMenuItem());drop.Items.Add(new DropDownMenuItem());// Adding DropDownMenuItem inside DropDownMenuGroupDropDownMenuGroup dgrp = new DropDownMenuGroup();dgrp.Items.Add(drop);</td></tr>
-</table>
+{% highlight xml %}
 
+
+[XAML] 
+<!-- Adding DropDownMenuItem --> 
+ <sync:DropDownMenuGroup Width="150">           
+ <sync:DropDownMenuItem Header="Items">            
+ <sync:DropDownMenuItem Header="Item 1">
+ </sync:DropDownMenuItem>            
+ <sync:DropDownMenuItem Header="Item 2">
+ </sync:DropDownMenuItem>            
+ <sync:DropDownMenuItem Header="Item 3">
+ </sync:DropDownMenuItem>            
+ <sync:DropDownMenuItem Header="Item 4">
+ </sync:DropDownMenuItem>            
+ </sync:DropDownMenuItem>  
+ </sync:DropDownMenuGroup>
+
+ {% endhighlight %}
+ 
+{% highlight C# %}
+
+[C#]
+// Creating an instance of DropDownMenuItem
+DropDownMenuItem drop = new DropDownMenuItem();
+
+// Adding DropDownMenuItem inside DropDownMenuItem
+drop.Items.Add(new DropDownMenuItem());
+drop.Items.Add(new DropDownMenuItem());
+drop.Items.Add(new DropDownMenuItem());
+drop.Items.Add(new DropDownMenuItem());
+
+// Adding DropDownMenuItem inside DropDownMenuGroup
+DropDownMenuGroup dgrp = new DropDownMenuGroup();
+dgrp.Items.Add(drop);
+
+{% endhighlight %}
 
 # Adding DropDownMenuGroup to the DropDownButtonAdv Control
 
 In order to add the DropDownMenuGroup to the DropDownButtonAdv control, use the following code:
 
 
+{% highlight xml %}
 
-<table>
-<tr>
-<td>
-[XAML] <!-- Adding DropDownMenuGroup in DropDownButtonAdv -->   <sync:DropDownButtonAdv Label="ItemsCollection" Width="150"    IsMultiLine="True">            <sync:DropDownMenuGroup Width="150">            <sync:DropDownMenuItem Header="Items">            <sync:DropDownMenuItem Header="Item 1"></sync:DropDownMenuItem>            <sync:DropDownMenuItem Header="Item 2"></sync:DropDownMenuItem>            <sync:DropDownMenuItem Header="Item 3"></sync:DropDownMenuItem>            <sync:DropDownMenuItem Header="Item 4"></sync:DropDownMenuItem>            </sync:DropDownMenuItem>            </sync:DropDownMenuGroup>   </sync:DropDownButtonAdv></td></tr>
-<tr>
-<td>
-[C#]// Creating an instance of DropDownMenuItemDropDownMenuItem drop = new DropDownMenuItem();// Adding DropDownMenuItem inside DropDownMenuItemdrop.Items.Add(new DropDownMenuItem());drop.Items.Add(new DropDownMenuItem());drop.Items.Add(new DropDownMenuItem());drop.Items.Add(new DropDownMenuItem());// Adding DropDownMenuItem inside DropDownMenuGroupDropDownMenuGroup dgrp = new DropDownMenuGroup();dgrp.Items.Add(drop);// Adding DropDownGroup inside DropDownButtonAdvDropDownButtonAdv dbtn = new DropDownButtonAdv();dbtn.Content = dbtn;</td></tr>
-</table>
+[XAML] 
+<!-- Adding DropDownMenuGroup in DropDownButtonAdv -->   
+<sync:DropDownButtonAdv Label="ItemsCollection" Width="150"    IsMultiLine="True">            
+<sync:DropDownMenuGroup Width="150">            
+<sync:DropDownMenuItem Header="Items">            
+<sync:DropDownMenuItem Header="Item 1">
+</sync:DropDownMenuItem>            
+<sync:DropDownMenuItem Header="Item 2">
+</sync:DropDownMenuItem>            
+<sync:DropDownMenuItem Header="Item 3">
+</sync:DropDownMenuItem>            
+<sync:DropDownMenuItem Header="Item 4">
+</sync:DropDownMenuItem>            
+</sync:DropDownMenuItem>            
+</sync:DropDownMenuGroup>   
+</sync:DropDownButtonAdv>
+{% endhighlight %}
 
+{% highlight C# %}
+
+[C#]
+// Creating an instance of DropDownMenuItem
+DropDownMenuItem drop = new DropDownMenuItem();
+
+// Adding DropDownMenuItem inside DropDownMenuItem
+drop.Items.Add(new DropDownMenuItem());
+drop.Items.Add(new DropDownMenuItem());
+drop.Items.Add(new DropDownMenuItem());
+drop.Items.Add(new DropDownMenuItem());
+
+// Adding DropDownMenuItem inside DropDownMenuGroup
+DropDownMenuGroup dgrp = new DropDownMenuGroup();
+dgrp.Items.Add(drop);
+
+// Adding DropDownGroup inside DropDownButtonAdv
+DropDownButtonAdv dbtn = new DropDownButtonAdv();
+dbtn.Content = dbtn;
+
+{% endhighlight %}
 
 # Properties, Methods and Events tables
 
@@ -243,15 +310,20 @@ Split Button in the Ribbon instance enables to display a menu when the split but
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<ribbon:SplitButton Label=" Split1 " Command="sample:SampleCommands.CustomCommand" SizeForm="Small"  HitTestArea="ImageOnly"   SmallIcon="SampleImages/TextHighlight.png" /><ribbon:SplitButton Label=" Split2 " Command="sample:SampleCommands.CustomCommand" SizeForm="Small" SmallIcon="SampleImages/TextHighlight.png" /></td></tr>
-<tr>
-<td>
-[C#]SplitButton splitbutton = new SplitButton();splitbutton.Label = "Split 1";SplitButton splitbutton 1= new SplitButton();splitbutton1.Label = "Split 2";</td></tr>
-</table>
+{% highlight xml %}
 
+[XAML]
+<ribbon:SplitButton Label=" Split1 " Command="sample:SampleCommands.CustomCommand" SizeForm="Small"  HitTestArea="ImageOnly"   SmallIcon="SampleImages/TextHighlight.png" /><ribbon:SplitButton Label=" Split2 " Command="sample:SampleCommands.CustomCommand" SizeForm="Small" SmallIcon="SampleImages/TextHighlight.png" />
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]
+SplitButton splitbutton = new SplitButton();
+splitbutton.Label = "Split 1";
+SplitButton splitbutton 1= new SplitButton();
+splitbutton1.Label = "Split 2";
+{% endhighlight %}
 
 ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img3.jpeg)
 
@@ -331,14 +403,23 @@ RibbonMenuItems are used as entities in menus like ApplicationMenu, Split Button
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<ribbon:RibbonMenuItem  Header="Paste" IsCheckable="True" Command="ApplicationCommands.Paste"><ribbon:RibbonMenuItem.Icon><Image Source="SampleImages/Paste16.png"/></ribbon:RibbonMenuItem.Icon></ribbon:RibbonMenuItem></td></tr>
-<tr>
-<td>
-[C#]RibbonMenuItem menuitem = new RibbonMenuItem();menuitem.Header = "Paste";menuitem.Icon = new BitmapImage(new Uri("/Images/Paste16.Png", UriKind.Relative));</td></tr>
-</table>
+{% highlight xml %}
+
+[XAML]
+<ribbon:RibbonMenuItem  Header="Paste" IsCheckable="True" Command="ApplicationCommands.Paste">
+<ribbon:RibbonMenuItem.Icon>
+<Image Source="SampleImages/Paste16.png"/>
+</ribbon:RibbonMenuItem.Icon>
+</ribbon:RibbonMenuItem>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]
+RibbonMenuItem menuitem = new RibbonMenuItem();
+menuitem.Header = "Paste";
+menuitem.Icon = new BitmapImage(new Uri("/Images/Paste16.Png", UriKind.Relative));
+{% endhighlight %}
 
 
 ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img6.jpeg)
@@ -352,14 +433,18 @@ RibbonTextBox control is similar to a normal text box. RibbonTextBox has all the
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<ribbon:RibbonTextBox> Ribbon Text Box </ribbon:RibbonTextBox></td></tr>
-<tr>
-<td>
-[C#]RibbonTextBox textbox = new RibbonTextBox();textbox.Text = "Ribbon textbox";</td></tr>
-</table>
+{% highlight xml %}
+
+[XAML]
+<ribbon:RibbonTextBox> Ribbon Text Box </ribbon:RibbonTextBox>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]
+RibbonTextBox textbox = new RibbonTextBox();
+textbox.Text = "Ribbon textbox";
+{% endhighlight %}
 
 
 ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img7.jpeg)
@@ -372,16 +457,32 @@ RibbonTextBox control is similar to a normal text box. RibbonTextBox has all the
 RibbonComboBox control is used to display the list of items, as drop-down menu in Ribbon instance. You can add any number of items to the RibbonComboBox. The following lines of code can be used to add RibbonComboBox and items to RibbonComboBox respectively.
 
 
+{% highlight xml %}
 
-<table>
-<tr>
-<td>
-[XAML]<ribbon:RibbonComboBox Width="100" IsEditable="True" ><ComboBoxItem>Arial</ComboBoxItem><ComboBoxItem>Tahoma</ComboBoxItem><ComboBoxItem>Verdana</ComboBoxItem></ribbon:RibbonComboBox></td></tr>
-<tr>
-<td>
-[C#]RibbonComboBox combo = new RibbonComboBox();ComboBoxItem item1 = new ComboBoxItem();item1.Content = "Arial";combo.Items.Add(item1);ComboBoxItem item2 = new ComboBoxItem();item2.Content = "Tahoma";combo.Items.Add(item2);ComboBoxItem item3 = new ComboBoxItem();item3.Content = "Verdana";combo.Items.Add(item3);</td></tr>
-</table>
 
+[XAML]
+<ribbon:RibbonComboBox Width="100" IsEditable="True" >
+<ComboBoxItem>Arial</ComboBoxItem>
+<ComboBoxItem>Tahoma</ComboBoxItem>
+<ComboBoxItem>Verdana</ComboBoxItem>
+</ribbon:RibbonComboBox>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]
+RibbonComboBox combo = new RibbonComboBox();
+ComboBoxItem item1 = new ComboBoxItem();
+item1.Content = "Arial";
+combo.Items.Add(item1);
+ComboBoxItem item2 = new ComboBoxItem();
+item2.Content = "Tahoma";
+combo.Items.Add(item2);
+ComboBoxItem item3 = new ComboBoxItem();
+item3.Content = "Verdana";
+combo.Items.Add(item3);
+
+{% endhighlight %}
 
 ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img8.jpeg)
 
@@ -394,14 +495,22 @@ RibbonCheckBox control is similar to a normal check box control. It is used to s
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<ribbon:RibbonCheckBox Content="Check box" ></ribbon:RibbonCheckBox></td></tr>
-<tr>
-<td>
-[C#]RibbonCheckBox checkbox = new RibbonCheckBox();checkbox.Content = "Check box";</td></tr>
-</table>
+
+{% highlight xml %}
+
+
+[XAML]
+<ribbon:RibbonCheckBox Content="Check box" >
+</ribbon:RibbonCheckBox>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]
+RibbonCheckBox checkbox = new RibbonCheckBox();
+checkbox.Content = "Check box";
+{% endhighlight %}
+
 
 
 ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img9.jpeg)
@@ -415,14 +524,19 @@ RibbonRadioButton control is used to select options among a group. RibbonRadioBu
 
 
 
-<table>
-<tr>
-<td>
-[XAML]<ribbon:RibbonRadioButton Content="Radio button 1" ></ribbon:RibbonRadioButton></td></tr>
-<tr>
-<td>
-[C#]RibbonRadioButton radiobutton = new RibbonRadioButton();radiobutton.Content = "Radio Button 1";</td></tr>
-</table>
+{% highlight xml %}
+
+[XAML]
+<ribbon:RibbonRadioButton Content="Radio button 1" >
+</ribbon:RibbonRadioButton></td></tr>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]
+RibbonRadioButton radiobutton = new RibbonRadioButton();
+radiobutton.Content = "Radio Button 1";</td></tr>
+{% endhighlight %}
 
 
 ![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img10.jpeg)
@@ -437,18 +551,29 @@ RibbonListBox control is used to display a list of items in a Ribbon instance. Y
 To add this control is to the application, use the following code snippet. 
 
 
-
-<table>
-<tr>
-<td>
-[XAML]<ribbon:RibbonListBox Width="128" Height="36"><ComboBoxItem><StackPanel Orientation="Horizontal"><Image Source="SampleImages/SchemeBlue.png"/><Image Source="SampleImages/SchemeSilver.png"/><Image Source="SampleImages/SchemeBlack.png"/></StackPanel></ComboBoxItem></ribbon:RibbonListBox></td></tr>
-<tr>
-<td>
-[C#]RibbonListBox listbox = new RibbonListBox();ComboBoxItem item = new ComboBoxItem();item.Content = "Item1";listbox.Items.Add(item);</td></tr>
-</table>
+{% highlight xml %}
 
 
-[](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img11.jpeg)
+[XAML]
+<ribbon:RibbonListBox Width="128" Height="36">
+<ComboBoxItem><StackPanel Orientation="Horizontal">
+<Image Source="SampleImages/SchemeBlue.png"/>
+<Image Source="SampleImages/SchemeSilver.png"/>
+<Image Source="SampleImages/SchemeBlack.png"/>
+</StackPanel></ComboBoxItem>
+</ribbon:RibbonListBox>
+{% endhighlight %}
+
+{% highlight C# %}
+
+[C#]
+RibbonListBox listbox = new RibbonListBox();
+ComboBoxItem item = new ComboBoxItem();
+item.Content = "Item1";listbox.Items.Add(item);
+{% endhighlight %}
+
+
+![](Adding-Controls-to-the-Ribbon-Instance_images/Adding-Controls-to-the-Ribbon-Instance_img11.jpeg)
 
 
 

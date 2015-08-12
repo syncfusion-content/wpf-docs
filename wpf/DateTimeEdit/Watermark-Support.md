@@ -13,7 +13,7 @@ Watermark is the dummy content displayed in the DateTimeEdit control when the Da
 
 
 
-{% highlight html %}
+{% highlight xml %}
 XAML
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10"                             NullValue="{x:Null}" IsEmptyDateEnabled="True"                             NoneDateText="No date is selected"/>

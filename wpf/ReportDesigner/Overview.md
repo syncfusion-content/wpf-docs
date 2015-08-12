@@ -9,7 +9,8 @@ documentation: ug
 
 ##  Overview
 
-The Essential Report Designer helps you design and easily organize the data from a database. With the Report Designer, you can quickly build the needed reports and display the data in both tabular and visualization formats.
+The Essential Report Designer helps you design and easily organize the data from a database. With the Report Designer, you can 
+quickly build the needed reports and display the data in both tabular and visualization formats.
 
 The important features of the Essential Report Designer for WPF are:
 

@@ -24,23 +24,34 @@ Important features of Essential Presentation are as follows.
 
 
 
-> _The current version of Essential Presentation is in preview. It does not support some features in MS PowerPoint such as Word Art, Smart Art, Notes slide, editing Master slides, Animations, Transitions, Comment, Header & Footer, Ole Object, creation & editing of Handouts, equations, built-in themes & its variants._ 
+ _The current version of Essential Presentation is in preview. It does not support some features in MS PowerPoint such as Word Art, Smart Art, Notes slide, editing Master slides, Animations, Transitions, Comment, Header & Footer, Ole Object, creation & editing of Handouts, equations, built-in themes & its variants._ 
 
-# System Requirement
+## System Requirement
 
-_System Requirement_
+System Requirement
 
 <table>
+<ul>
 <tr>
 <td>
 Supported .NET Frameworks versions</td><td>
-* .NET 2.0* .NET 3.5* .NET 4.0* .NET 4.5 * .NET 4.5.1</td></tr>
+<li>.NET 2.0</li>
+<li>.NET 3.5</li>
+<li>.NET 4.0</li>
+<li>.NET 4.5 </li>
+<li>.NET 4.5.1</li>
+</td></tr>
 <tr>
 <td>
-<br>Compatible MS PowerPoint versions</td><td>
-* MS PowerPoint 2007* MS PowerPoint 2010* MS PowerPoint 2013</td></tr>
+<br>Compatible MS PowerPoint versions</br></td><td>
+<li>MS PowerPoint 2007</li>
+<li>MS PowerPoint 2010</li>
+<li>MS PowerPoint 2013</li>
+</td></tr>
+</ul>
 </table>
-# Required Assemblies
+
+## Required Assemblies
 
 
 In order to create and manipulation a Presentation file, the following assemblies are needed.
@@ -72,13 +83,13 @@ For converting a Presentation file into PDF, the following assemblies need to be
 * Syncfusion.Pdf.Base
 * Syncfusion.PresentationToPDFConverter.Base
 
-_List of Assemblies_
+List of Assemblies
 
 <table>
 <tr>
-<td>
-{{ '**Assembly Name**' | markdownify }}</td><td>
-{{ '**Short Description**' | markdownify }}</td></tr>
+<th>
+Assembly Name</th><th>
+Short Description</th></tr>
 <tr>
 <td>
 Syncfusion.Presentation.Base</td><td>
@@ -116,5 +127,3 @@ Supporting assembly for Syncfusion.OfficeChartToImageConverter.WPF</td></tr>
 Syncfusion.Shared.WPF</td><td>
 Supporting assembly for Syncfusion.OfficeChartToImageConverter.WPF</td></tr>
 </table>
-
-

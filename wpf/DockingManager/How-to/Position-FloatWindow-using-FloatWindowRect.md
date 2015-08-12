@@ -11,15 +11,13 @@ documentation: ug
 
 FloatWindowRect is used to specify the Rect bounds for the float child that is displayed in FloatWindow.
 
-
-
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager Name="DockingManager"><Grid Name="grid1" syncfusion:DockingManager.State="Float" syncfusion:DockingManager.FloatingWindowRect="0,0,200,200"/></syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetFloatingWindowRect(grid1, new Rect(0, 0, 200, 200));</td></tr>
-</table>
+{% highlight xml %}
+<syncfusion:DockingManager Name="DockingManager">
+<Grid Name="grid1" syncfusion:DockingManager.State="Float" syncfusion:DockingManager.FloatingWindowRect="0,0,200,200"/>
+</syncfusion:DockingManager>
+{% endhighlight %}
+{% highlight c# %}
+DockingManager.SetFloatingWindowRect(grid1, new Rect(0, 0, 200, 200));
+{% endhighlight %}
 
 

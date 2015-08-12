@@ -13,27 +13,24 @@ documentation: ug
 
 PercentTextBox provides globalization support through the Culture property. 
 
-<table>
-<tr>
-<td>
-XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                          Culture="en-US" PercentValue="1234567"/></td></tr>
-<tr>
-<td>
+{% highlight xml %}
+XAML
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" Culture="en-US" PercentValue="1234567"/>
+ {% endhighlight %}
+{% highlight c# %}
 C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.Culture = new CultureInfo("en-US");</td></tr>
-</table>
+ {% endhighlight %}
 
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
 
 
-<table>
-<tr>
-<td>
+{% highlight xml %}
 XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                          Culture="bs-Latn" PercentValue="1234567"/></td></tr>
-<tr>
-<td>
+ {% endhighlight %}
+{% highlight c# %}
 C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.Culture = new CultureInfo("bs-Latn");</td></tr>
-</table>
+ {% endhighlight %}
 
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)
@@ -45,24 +42,34 @@ As you have seen in these samples whenever you change the Culture property the P
 
 You can customize the Number Format either by using the Number Format property or the PercentGroupSeparator, PercentGroupSizes, PercentDecimalDigits, PercentDecimalSeparator, PercentNegativePattern, PercentPositivePattern, and PercentageSymbol properties.
 
-<table>
-<tr>
-<td>
-XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"             PercentValue="1234567">    <syncfusion:PercentTextBox.NumberFormat>        <numberformat:NumberFormatInfo PercentGroupSeparator="/"        PercentDecimalDigits="4" PercentDecimalSeparator="*"         PercentSymbol="%"/>    </syncfusion:PercentTextBox.NumberFormat></syncfusion:PercentTextBox></td></tr>
-<tr>
-<td>
-C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.NumberFormat = new NumberFormatInfo(){    PercentGroupSeparator = "/",    PercentDecimalDigits = 4,    PercentDecimalSeparator = "*",    PercentSymbol = "%"};</td></tr>
-</table>
+{% highlight xml %}
+XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" PercentValue="1234567">
+    <syncfusion:PercentTextBox.NumberFormat> 
+	<numberformat:NumberFormatInfo PercentGroupSeparator="/" PercentDecimalDigits="4" PercentDecimalSeparator="*"  PercentSymbol="%"/>
+    </syncfusion:PercentTextBox.NumberFormat>
+</syncfusion:PercentTextBox></td></tr>
+ {% endhighlight %}
+ {% highlight c# %}
+C# 
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.Width = 150;
+percentTextBox.Height = 25;
+percentTextBox.PercentValue = 1234567;
+percentTextBox.NumberFormat = new NumberFormatInfo(){
+    PercentGroupSeparator = "/", 
+	PercentDecimalDigits = 4, 
+	PercentDecimalSeparator = "*",
+    PercentSymbol = "%"};
+ {% endhighlight %}
 
 
-<table>
-<tr>
-<td>
-XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                            PercentValue="1234567"                            PercentageSymbol="%" PercentDecimalDigits="4"                           PercentDecimalSeparator="*" PercentGroupSeparator="/"/></td></tr>
-<tr>
-<td>
+{% highlight xml %}
+XAML
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"  PercentValue="1234567"  PercentageSymbol="%" PercentDecimalDigits="4"                           PercentDecimalSeparator="*" PercentGroupSeparator="/"/></td></tr>
+ {% endhighlight %}
+ {% highlight c# %}
 C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.PercentageSymbol = "%";percentTextBox.PercentDecimalDigits = 4;percentTextBox.PercentDecimalSeparator = "/";percentTextBox.PercentGroupSeparator = "*";</td></tr>
-</table>
+ {% endhighlight %}
 
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)

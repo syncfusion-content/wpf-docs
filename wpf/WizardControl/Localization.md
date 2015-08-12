@@ -13,43 +13,42 @@ Localization involves configuring the application for a specific language. Cultu
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
-HelpText<br>CancelText<br>BackText<br>NextText<br>FinishText</td><td>
+HelpText<br>CancelText</br>BackText<br>NextText<br>FinishText</td><td>
 Sets the string content for the Wizard control.</td></tr>
 <tr>
 <td colspan = "2">
 {{ '![](Localization_images/Localization_img1.png)' | markdownify }}
 
+{{ '![](Localization_images/Localization_img2.png)' | markdownify }} </td></tr>
 
-{{ '![](Localization_images/Localization_img2.png)' | markdownify }}
+<tr>
+<td colspan = "2">
+{{ '![](Localization_images/Localization_img3.png)' | markdownify }} 
 
+{{ '![](Localization_images/Localization_img4.png)' | markdownify }} </td></tr>
 
-{{ '![](Localization_images/Localization_img3.png)' | markdownify }}
+<tr>
+<td colspan = "2">
+{{ '![](Localization_images/Localization_img5.png)' | markdownify }} 
 
+{{ '![](Localization_images/Localization_img6.png)' | markdownify }} </td></tr>
 
-{{ '![](Localization_images/Localization_img4.png)' | markdownify }}
+<tr>
+<td colspan = "2">
+{{ '![](Localization_images/Localization_img7.png)' | markdownify }} 
 
+{{ '![](Localization_images/Localization_img8.png)' | markdownify }} </td></tr>
 
-{{ '![](Localization_images/Localization_img5.png)' | markdownify }}
+<tr>
+<td colspan = "2">
+{{ '![](Localization_images/Localization_img9.png)' | markdownify }} 
 
-
-{{ '![](Localization_images/Localization_img6.png)' | markdownify }}
-
-
-{{ '__' | markdownify }}{{ '![](Localization_images/Localization_img7.png)' | markdownify }}
-
-
-{{ '![](Localization_images/Localization_img8.png)' | markdownify }}
-
-
-{{ '![](Localization_images/Localization_img9.png)' | markdownify }}
-
-
-{{ '__' | markdownify }}{{ '![](Localization_images/Localization_img10.png)' | markdownify }}
+{{ '![](Localization_images/Localization_img10.png)' | markdownify }} </td></tr>
 
 
 </td></tr>

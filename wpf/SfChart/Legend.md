@@ -123,15 +123,15 @@ The following screenshot illustrates a chart with a simple legend.
 
 
 
-###Each LegendItem contains the following parts:
+### Each LegendItem contains the following parts:
 
-####Icon- You can set the icon using the LegendIcon property available in each series. You can customize height and width of an icon symbol using the IconWidth and IconHeight properties available in ChartLegend. You can also show or collapse the icon symbol using the IconVisibility property in ChartLegend.
+Icon- You can set the icon using the LegendIcon property available in each series. You can customize height and width of an icon symbol using the IconWidth and IconHeight properties available in ChartLegend. You can also show or collapse the icon symbol using the IconVisibility property in ChartLegend.
 
-####Label- You can set the label using the Label property available in each series.
+Label- You can set the label using the Label property available in each series.
 
-####CheckBox- It is used to show or collapse the associated series. By default, the CheckBox is collapsed. You can enable it by setting CheckBoxVisibility property in ChartLegend.
+CheckBox- It is used to show or collapse the associated series. By default, the CheckBox is collapsed. You can enable it by setting CheckBoxVisibility property in ChartLegend.
 
-Note: Usually, a legend item provides information about a series. However, for series like PieSeries, each legend item provides information about a single data point.
+ Note: Usually, a legend item provides information about a series. However, for series like PieSeries, each legend item provides information about a single data point.
 
 ###Positioning
 
@@ -295,11 +295,10 @@ The following code example shows how to create multiple legends in a single char
 
 The following screenshot shows a chart with multiple legends.
 
-{{ '![](Legend_images/Legend_img2.png)' | markdownify }}
+![](Legend_images/Legend_img2.png)
 
 
-
-Note: You can change the legend visibility from chart series by using VisibilityOnLegend property
+ Note: You can change the legend visibility from chart series by using VisibilityOnLegend property
 
 
 

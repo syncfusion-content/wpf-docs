@@ -10,7 +10,7 @@ documentation: ug
 # Symbology Settings
 
 Each Barcode symbol can be associated with optional settings that may affect that specific bar code. The code sample below shows the settings of a code39 Barcode.
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 <sync:SfBarcode.SymbologySettings>
@@ -24,7 +24,7 @@ Each Barcode symbol can be associated with optional settings that may affect tha
 ## 1D Barcode settings
 
 The one dimensional barcodes have some of the settings in common, such as BarHeight which modifies the height of the bars and NarrowBarWidth which modifies the width ratio of the wide and narrow bars.
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 <sync:SfBarcode.SymbologySettings>
@@ -38,7 +38,7 @@ The one dimensional barcodes have some of the settings in common, such as BarHei
 The one dimensional barcodes also has the error detection settings. The EnableCheckDigit property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message. The check digit can be shown in the barcode or kept hidden by using the ShowCheckDigit property.
 
 The EncodeStartStopSymbols property adds Start and Stop symbols to signal a bar code reader that a bar code has been scanned.
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 <sync:SfBarcode.SymbologySettings>
@@ -56,7 +56,7 @@ The two dimensional barcodes have a common XDimension property which modifies th
 ### DataMatrix Barcode settings
 
 The DataMatrix barcode settings has the properties to modify the encoding and size of the DataMatrix barcode.
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 <sync:SfBarcode.SymbologySettings>
@@ -89,129 +89,129 @@ _Data Matrix size Table_
 Data Matrix Size</th><th>
 Description</th></tr>
 <tr>
-<th>
-Auto</th><th>
-Size is chosen based on the input data</th></tr>
+<td>
+Auto</td><td>
+Size is chosen based on the input data</td></tr>
 <tr>
-<th>
-Size10x10</th><th>
-Square matrix with 10 rows and 10 columns.</th></tr>
+<td>
+Size10x10</td><td>
+Square matrix with 10 rows and 10 columns.</td></tr>
 <tr>
-<th>
-Size12x12</th><th>
-Square matrix with 12 rows and 12 columns.</th></tr>
+<td>
+Size12x12</td><td>
+Square matrix with 12 rows and 12 columns.</td></tr>
 <tr>
-<th>
-Size14x14</th><th>
-Square matrix with 14 rows and 14 columns.</th></tr>
+<td>
+Size14x14</td><td>
+Square matrix with 14 rows and 14 columns.</td></tr>
 <tr>
-<th>
-Size16x16</th><th>
-Square matrix with 16 rows and 16 columns.</th></tr>
+<td>
+Size16x16</td><td>
+Square matrix with 16 rows and 16 columns.</td></tr>
 <tr>
-<th>
-Size18x18</th><th>
-Square matrix with 18 rows and 18 columns.</th></tr>
+<td>
+Size18x18</td><td>
+Square matrix with 18 rows and 18 columns.</td></tr>
 <tr>
-<th>
-Size20x20</th><th>
-Square matrix with 20 rows and 20 columns.</th></tr>
+<td>
+Size20x20</td><td>
+Square matrix with 20 rows and 20 columns.</td></tr>
 <tr>
-<th>
-Size22x22</th><th>
-Square matrix with 22 rows and 22 columns.</th></tr>
+<td>
+Size22x22</td><td>
+Square matrix with 22 rows and 22 columns.</td></tr>
 <tr>
-<th>
-Size24x24</th><th>
-Square matrix with 24 rows and 24 columns.</th></tr>
+<td>
+Size24x24</td><td>
+Square matrix with 24 rows and 24 columns.</td></tr>
 <tr>
-<th>
-Size26x26</th><th>
-Square matrix with 26 rows and 26 columns.</th></tr>
+<td>
+Size26x26</td><td>
+Square matrix with 26 rows and 26 columns.</td></tr>
 <tr>
-<th>
-Size32x32</th><th>
-Square matrix with 32 rows and 32 columns.</th></tr>
+<td>
+Size32x32</td><td>
+Square matrix with 32 rows and 32 columns.</td></tr>
 <tr>
-<th>
-Size36x36</th><th>
-Square matrix with 36 rows and 36 columns.</th></tr>
+<td>
+Size36x36</td><td>
+Square matrix with 36 rows and 36 columns.</td></tr>
 <tr>
-<th>
-Size40x40</th><th>
-Square matrix with 40 rows and 40 columns.</th></tr>
+<td>
+Size40x40</td><td>
+Square matrix with 40 rows and 40 columns.</td></tr>
 <tr>
-<th>
-Size44x44</th><th>
-Square matrix with 44 rows and 44 columns.</th></tr>
+<td>
+Size44x44</td><td>
+Square matrix with 44 rows and 44 columns.</td></tr>
 <tr>
-<th>
-Size48x48</th><th>
-Square matrix with 48 rows and 48 columns.</th></tr>
+<td>
+Size48x48</td><td>
+Square matrix with 48 rows and 48 columns.</td></tr>
 <tr>
-<th>
-Size52x52</th><th>
-Square matrix with 52 rows and 52 columns.</th></tr>
+<td>
+Size52x52</td><td>
+Square matrix with 52 rows and 52 columns.</td></tr>
 <tr>
-<th>
-Size64x64</th><th>
-Square matrix with 64 rows and 64 columns.</th></tr>
+<td>
+Size64x64</td><td>
+Square matrix with 64 rows and 64 columns.</td></tr>
 <tr>
-<th>
-Size72x72</th><th>
-Square matrix with 72 rows and 72 columns.</th></tr>
+<td>
+Size72x72</td><td>
+Square matrix with 72 rows and 72 columns.</td></tr>
 <tr>
-<th>
-Size80x80</th><th>
-Square matrix with 80 rows and 80 columns.</th></tr>
+<td>
+Size80x80</td><td>
+Square matrix with 80 rows and 80 columns.</td></tr>
 <tr>
-<th>
-Size88x88</th><th>
-Square matrix with 88 rows and 88 columns.</th></tr>
+<td>
+Size88x88</td><td>
+Square matrix with 88 rows and 88 columns.</td></tr>
 <tr>
-<th>
-Size96x96</th><th>
-Square matrix with 96 rows and 96 columns.</th></tr>
+<td>
+Size96x96</td><td>
+Square matrix with 96 rows and 96 columns.</td></tr>
 <tr>
-<th>
-Size104x104</th><th>
-Square matrix with 104 rows and 104 columns.</th></tr>
+<td>
+Size104x104</td><td>
+Square matrix with 104 rows and 104 columns.</td></tr>
 <tr>
-<th>
-Size120x120</th><th>
-Square matrix with 120 rows and 120 columns.</th></tr>
+<td>
+Size120x120</td><td>
+Square matrix with 120 rows and 120 columns.</td></tr>
 <tr>
-<th>
-Size132x132</th><th>
-Square matrix with 132 rows and 132 columns.</th></tr>
+<td>
+Size132x132</td><td>
+Square matrix with 132 rows and 132 columns.</td></tr>
 <tr>
-<th>
-Size144x144</th><th>
-Square matrix with 144 rows and 144 columns.</th></tr>
+<td>
+Size144x144</td><td>
+Square matrix with 144 rows and 144 columns.</td></tr>
 <tr>
-<th>
-Size8x18</th><th>
-Rectangular matrix with 8 rows and 18 columns.</th></tr>
+<td>
+Size8x18</td><td>
+Rectangular matrix with 8 rows and 18 columns.</td></tr>
 <tr>
-<th>
-Size8x32</th><th>
-Rectangular matrix with 8 rows and 32 columns.</th></tr>
+<td>
+Size8x32</td><td>
+Rectangular matrix with 8 rows and 32 columns.</td></tr>
 <tr>
-<th>
-Size12x26</th><th>
-Rectangular matrix with 12 rows and 26 columns.</th></tr>
+<td>
+Size12x26</td><td>
+Rectangular matrix with 12 rows and 26 columns.</td></tr>
 <tr>
-<th>
-Size12x36</th><th>
-Rectangular matrix with 12 rows and 36 columns.</th></tr>
+<td>
+Size12x36</td><td>
+Rectangular matrix with 12 rows and 36 columns.</td></tr>
 <tr>
-<th>
-Size16x36</th><th>
-Rectangular matrix with 16 rows and 36 columns.</th></tr>
+<td>
+Size16x36</td><td>
+Rectangular matrix with 16 rows and 36 columns.</td></tr>
 <tr>
-<th>
-Size16x48</th><th>
-Rectangular matrix with 16 rows and 48 columns.</th></tr>
+<td>
+Size16x48</td><td>
+Rectangular matrix with 16 rows and 48 columns.</td></tr>
 </table>
 
 
@@ -247,21 +247,21 @@ _Error Correction Level Table_
 Error Correction Level</th><th>
 Recovery Capacity % (approx.)</th></tr>
 <tr>
-<th>
-L</th><th>
-7</th></tr>
+<td>
+L</td><td>
+7</td></tr>
 <tr>
-<th>
-M</th><th>
-15</th></tr>
+<td>
+M</td><td>
+15</td></tr>
 <tr>
-<th>
-Q</th><th>
-25</th></tr>
+<td>
+Q</td><td>
+25</td></tr>
 <tr>
-<th>
-H</th><th>
-30</th></tr>
+<td>
+H</td><td>
+30</td></tr>
 </table>
 
 ## Input mode
@@ -276,17 +276,17 @@ _Input Mode Table_
 Input Mode</th><th>
 Possible characters</th></tr>
 <tr>
-<th>
-Numeric Mode</th><th>
-0,1,2,3,4,5,6,7,8,9</th></tr>
+<td>
+Numeric Mode</td><td>
+0,1,2,3,4,5,6,7,8,9</td></tr>
 <tr>
-<th>
-Alphanumeric Mode</th><th>
-0–9, A–Z (upper-case only), space, $, %, *, +, -,., /, :</th></tr>
+<td>
+Alphanumeric Mode</td><td>
+0–9, A–Z (upper-case only), space, $, %, *, +, -,., /, :</td></tr>
 <tr>
-<th>
-Binary Mode</th><th>
-Shift JIS characters</th></tr>
+<td>
+Binary Mode</td><td>
+Shift JIS characters</td></tr>
 </table>
 
 

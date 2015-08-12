@@ -73,7 +73,7 @@ Create a Model class with the necessary properties.
 {% endhighlight %}
 
 
-> _Note: NotificationObject is a class which implements INotifyPropertyChanged interface._
+Note: NotificationObject is a class which implements INotifyPropertyChanged interface.
 
 
 
@@ -223,13 +223,12 @@ This will populate the Tree Navigator as follows.
 
 
 
-![3](Populating-Items_images/Populating-Items_img2.png)
+![](Populating-Items_images/Populating-Items_img2.png)
 
 
 
 
-
-> _Note: HierarchicalDataTemplate available in Syncfusion.SfShared.WPF dll under the Syncfusion.Windows.Primitives namespace_
+Note: HierarchicalDataTemplate available in Syncfusion.SfShared.WPF dll under the Syncfusion.Windows.Primitives namespace
 
 
 

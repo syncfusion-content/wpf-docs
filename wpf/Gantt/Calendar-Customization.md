@@ -82,7 +82,7 @@ Define the value to weekdays, months, FY Numbering, default start time and defau
 The following code illustrates adding Calendar Customization to an Application:
 
 
-{% highlight html  %}
+{% highlight xml  %}
 [XAML]
 
 

@@ -15,18 +15,24 @@ This section contains the following topics:
 
 You can explicitly set the date for the CalendarEdit control, using the Date property. This dependency property sets the date explicitly to the CalendarEdit control. It returns the current date of the CalendarEdit control.
 
-<table>
-<tr>
-<td>
-[XAML]<!-- Adding calendar with date as 12/12/2009 --><syncfusion:CalendarEdit Name="calendarEdit" Date="12/12/2009"/></td></tr>
-<tr>
-<td>
-[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Sets the DatecalendarEdit.Date = DateTime.Now.Date;  //Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
-</table>
+
+{% highlight xml %}
+
+<!-- Adding calendar with date as 12/12/2009 -->
+<syncfusion:CalendarEdit Name="calendarEdit" Date="12/12/2009"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
+//Sets the DatecalendarEdit.Date = DateTime.Now.Date;  //Adding CalendarEdit as window contentthis.Content = calendarEdit;
+
+{% endhighlight %}
 
 
-{{ '![](Working-with-Calendar_images/Working-with-Calendar_img1.jpeg)' | markdownify }}
-{:.image }
+![](Working-with-Calendar_images/Working-with-Calendar_img1.jpeg)
+
 
 
 ## Settings the Days
@@ -35,18 +41,24 @@ It is possible to hide the days of the next month and the previous month in the 
 
 For setting these properties, use the following code.
 
-<table>
-<tr>
-<td>
-[XAML]<!-- Adding calendar with next month day and previous month day Set to false --><syncfusion:CalendarEdit Name="calendarEdit" ShowNextMonthDays="False" ShowPreviousMonthDays="False"/></td></tr>
-<tr>
-<td>
-[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Hide the next month dayscalendarEdit.ShowNextMonthDays = false;//Hide the previous month dayscalendarEdit.ShowPreviousMonthDays = false; //Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
-</table>
+{% highlight xml %}
+
+<!-- Adding calendar with next month day and previous month day Set to false -->
+<syncfusion:CalendarEdit Name="calendarEdit" ShowNextMonthDays="False" ShowPreviousMonthDays="False"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
+//Hide the next month dayscalendarEdit.ShowNextMonthDays = false;
+//Hide the previous month dayscalendarEdit.ShowPreviousMonthDays = false;
+ //Adding CalendarEdit as window contentthis.Content = calendarEdit;
+ 
+ {% endhighlight %}
 
 
-{{ '![](Working-with-Calendar_images/Working-with-Calendar_img2.jpeg)' | markdownify }}
-{:.image }
+![](Working-with-Calendar_images/Working-with-Calendar_img2.jpeg)
+
 
 
 ## Today Row
@@ -55,36 +67,51 @@ To know the details of current date in a CalendarEdit control, you need to enabl
 
 For setting this property, use the following code example.
 
-<table>
-<tr>
-<td>
-[XAML]<!-- Adding Calendar with today row --><syncfusion:CalendarEdit Name="calendarEdit" TodayRowIsVisible="True"/></td></tr>
-<tr>
-<td>
-[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Enable the today rowcalendarEdit.TodayRowIsVisible = true; //Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
+
+{% highlight xml %}
+
+<!-- Adding Calendar with today row -->
+<syncfusion:CalendarEdit Name="calendarEdit" TodayRowIsVisible="True"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
+//Enable the today rowcalendarEdit.TodayRowIsVisible = true; 
+//Adding CalendarEdit as window contentthis.Content = calendarEdit;
+
+{% endhighlight %}
 </table>
 
 
-{{ '![](Working-with-Calendar_images/Working-with-Calendar_img3.jpeg)' | markdownify }}
-{:.image }
+![](Working-with-Calendar_images/Working-with-Calendar_img3.jpeg)
+
 
 
 ## Week Number
 
 Enhance the usability of the CalendarEdit control, by showing week numbers near the left margin. To show week numbers, set IsShowWeekNumbers property to true as follows.
 
-<table>
-<tr>
-<td>
-[XAML]<!-- Adding calendar with week numbers --><syncfusion:CalendarEdit Name="calendarEdit" IsShowWeekNumbers="True"/></td></tr>
-<tr>
-<td>
-[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Show week numberscalendarEdit.IsShowWeekNumbers = true;//Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
-</table>
+
+{% highlight xml %}
+
+<!-- Adding calendar with week numbers -->
+<syncfusion:CalendarEdit Name="calendarEdit" IsShowWeekNumbers="True"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
+//Show week numberscalendarEdit.IsShowWeekNumbers = true;
+//Adding CalendarEdit as window contentthis.Content = calendarEdit;
+
+{% endhighlight %}
 
 
-{{ '![](Working-with-Calendar_images/Working-with-Calendar_img4.jpeg)' | markdownify }}
-{:.image }
+![](Working-with-Calendar_images/Working-with-Calendar_img4.jpeg)
+
 
 
 
@@ -95,20 +122,27 @@ It is now possible to edit weekly date in CalendarEdit control. This is achieved
 
 The following code example illustrates this.
 
-<table>
-<tr>
-<td>
-[XAML]<!--Calendar Edit--><syncfusion:CalendarEdit Name="calendar"                                           IsShowWeekNumbersGrid="{Binding ElementName = 		        		cbShowWeekNumbersGrid, Path=IsChecked, Mode=TwoWay}/><CheckBox Name="cbShowWeekNumbersGrid" IsChecked="False" IsEnabled="False">Show Week Numbers Grid</CheckBox></td></tr>
-<tr>
-<td>
-[C#]//Binding IsShowWeekNumbersGrid property to CheckBoxBinding b = new Binding();b.Source = calendar;b.Mode = BindingMode.TwoWay;b.Path = new PropertyPath("IsShowWeekNumbersGrid");             BindingOperations.SetBinding(cbShowWeekNumbersGrid, CheckBox.IsCheckedProperty, b);</td></tr>
-</table>
+
+{% highlight xml %}
+<!--Calendar Edit-->
+<syncfusion:CalendarEdit Name="calendar"  IsShowWeekNumbersGrid="{Binding ElementName = cbShowWeekNumbersGrid, Path=IsChecked, Mode=TwoWay}/>
+<CheckBox Name="cbShowWeekNumbersGrid" IsChecked="False" IsEnabled="False">Show Week Numbers Grid</CheckBox>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//Binding IsShowWeekNumbersGrid property to CheckBoxBinding b = new Binding();
+b.Source = calendar;b.Mode = BindingMode.TwoWay;b.Path = new PropertyPath("IsShowWeekNumbersGrid");
+BindingOperations.SetBinding(cbShowWeekNumbersGrid, CheckBox.IsCheckedProperty, b);
+
+{% endhighlight %}
 
 
 Run the code. The output is as follows:
 
-{{ '![](Working-with-Calendar_images/Working-with-Calendar_img5.jpeg)' | markdownify }}
-{:.image }
+![](Working-with-Calendar_images/Working-with-Calendar_img5.jpeg)
+
 
 
 
@@ -119,20 +153,27 @@ You can set the color for the border brush, background and foreground for the ce
 
 The following code example illustrates this.
 
-<table>
-<tr>
-<td>
-[XAML]<!--Calendar Edit with Week Number Default Properties--><syncfusion:CalendarEdit          WeekNumberBackground="DodgerBlue"           WeekNumberBorderBrush="Cyan"           WeekNumberForeground="White"           WeekNumberBorderThickness="1"           WeekNumberCornerRadius="2"/></td></tr>
-<tr>
-<td>
-[C#]//Calendar Edit with Week Number Default PropertiesCalendarEdit calendar = new CalendarEdit();calendar.WeekNumberBorderBrush = Brushes.Cyan;calendar.WeekNumberCornerRadius = new CornerRadius(2);calendar.WeekNumberBorderThickness = new Thickness(1);calendar.WeekNumberBackground = Brushes.DodgerBlue;calendar.WeekNumberForeground = Brushes.White;</td></tr>
-</table>
+{% highlight xml %}
+
+<!--Calendar Edit with Week Number Default Properties-->
+<syncfusion:CalendarEdit  WeekNumberBackground="DodgerBlue" WeekNumberBorderBrush="Cyan" WeekNumberForeground="White" WeekNumberBorderThickness="1" WeekNumberCornerRadius="2"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//Calendar Edit with Week Number Default PropertiesCalendarEdit calendar = new CalendarEdit();
+calendar.WeekNumberBorderBrush = Brushes.Cyan;calendar.WeekNumberCornerRadius = new CornerRadius(2);
+calendar.WeekNumberBorderThickness = new Thickness(1);calendar.WeekNumberBackground = Brushes.DodgerBlue;
+calendar.WeekNumberForeground = Brushes.White;
+
+{% endhighlight %}
 
 
 Run the code. The output is as follows:
 
-{{ '![](Working-with-Calendar_images/Working-with-Calendar_img6.jpeg)' | markdownify }}
-{:.image }
+![](Working-with-Calendar_images/Working-with-Calendar_img6.jpeg)
+
 
 
 
@@ -143,20 +184,27 @@ You can set the border brush, background and foreground color for the required c
 
 The following code example illustrates this.
 
-<table>
-<tr>
-<td>
-[XAML]<!--Calendar Edit with Week Number Selection Properties--><syncfusion:CalendarEdit          WeekNumberSelectionBackground="AntiqueWhite"           WeekNumberSelectionBorderBrush="Blue"           WeekNumberSelectionForeground="Brown"           WeekNumberSelectionBorderThickness="2"           WeekNumberSelectionBorderCornerRadius="2"/></td></tr>
-<tr>
-<td>
-[C#]//  Calendar Edit with Week Number Selection PropertiesCalendarEdit calendar = new CalendarEdit();calendar.WeekNumberSelectionBorderBrush = Brushes.Blue;calendar.WeekNumberSelectionBorderCornerRadius = new CornerRadius(2);calendar.WeekNumberSelectionBorderThickness = new Thickness(2);calendar.WeekNumberSelectionBackground = Brushes.AntiqueWhite;calendar.WeekNumberSelectionForeground = Brushes.Brown;</td></tr>
-</table>
+{% highlight xml %}
+
+<!--Calendar Edit with Week Number Selection Properties-->
+<syncfusion:CalendarEdit WeekNumberSelectionBackground="AntiqueWhite" WeekNumberSelectionBorderBrush="Blue" WeekNumberSelectionForeground="Brown" WeekNumberSelectionBorderThickness="2" WeekNumberSelectionBorderCornerRadius="2"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//  Calendar Edit with Week Number Selection PropertiesCalendarEdit calendar = new CalendarEdit();
+calendar.WeekNumberSelectionBorderBrush = Brushes.Blue;calendar.WeekNumberSelectionBorderCornerRadius = new CornerRadius(2);
+calendar.WeekNumberSelectionBorderThickness = new Thickness(2);
+calendar.WeekNumberSelectionBackground = Brushes.AntiqueWhite;calendar.WeekNumberSelectionForeground = Brushes.Brown;
+
+{% endhighlight %}
 
 
 Run the code. The output is as follows:
 
-{{ '![](Working-with-Calendar_images/Working-with-Calendar_img7.jpeg)' | markdownify }}
-{:.image }
+![](Working-with-Calendar_images/Working-with-Calendar_img7.jpeg)
+
 
 
 
@@ -167,20 +215,25 @@ You can set the border brush, background and foreground color for the cell focus
 
 The following code example illustrates this.
 
-<table>
-<tr>
-<td>
-[XAML]<!--Calendar Edit with Week Number Mouse Over Properties--><syncfusion:CalendarEdit          WeekNumberHoverBackground="Gold"           WeekNumberHoverBorderBrush="DarkOrange"           WeekNumberHoverForeground="Indigo" /></td></tr>
-<tr>
-<td>
-[C#]//  Calendar Edit with Week Number Mouse Over PropertiesCalendarEdit calendar = new CalendarEdit();calendar.WeekNumberHoverBorderBrush = Brushes.DarkOrange;calendar.WeekNumberHoverBackground = Brushes.Gold;calendar.WeekNumberHoverForeground = Brushes.Indigo;</td></tr>
-</table>
 
+{% highlight xml %}
+
+<!--Calendar Edit with Week Number Mouse Over Properties-->
+<syncfusion:CalendarEdit WeekNumberHoverBackground="Gold"  WeekNumberHoverBorderBrush="DarkOrange" WeekNumberHoverForeground="Indigo" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//  Calendar Edit with Week Number Mouse Over PropertiesCalendarEdit calendar = new CalendarEdit();
+calendar.WeekNumberHoverBorderBrush = Brushes.DarkOrange;calendar.WeekNumberHoverBackground = Brushes.Gold;calendar.WeekNumberHoverForeground = Brushes.Indigo;
+
+{% endhighlight %}
 
 Run the code. The output is as follows:
 
-{{ '![](Working-with-Calendar_images/Working-with-Calendar_img8.jpeg)' | markdownify }}
-{:.image }
+![](Working-with-Calendar_images/Working-with-Calendar_img8.jpeg)
+
 
 
 ## Customizing the Display of Minimum and Maximum Dates
@@ -193,25 +246,30 @@ Minimum dates and Maximum dates display in CalendarEdit can be customized with t
 
 The following code example illustrates how to set the MinMaxHidden property to the control programmatically.
 
-<table>
-<tr>
-<td>
-[XAML]<!-- CalendarEdit with MinMaxHidden has false --><syncfusion:CalendarEdit Height ="250" Width ="250" Name="calendar" MinMaxHidden="False" MinDate="11/30/2009" MaxDate="1/4/2010"/></td></tr>
-<tr>
-<td>
-[C#]//Create an instance of CalendarEditCalendarEdit calendarEdit = new CalendarEdit();//CalendarEdit with MinMaxHidden as falsecalendarEdit.MinMaxHidden = false;</td></tr>
-</table>
+{% highlight xml %}
+<!-- CalendarEdit with MinMaxHidden has false -->
+<syncfusion:CalendarEdit Height ="250" Width ="250" Name="calendar" MinMaxHidden="False" MinDate="11/30/2009" MaxDate="1/4/2010"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//Create an instance of CalendarEditCalendarEdit calendarEdit = new CalendarEdit();
+//CalendarEdit with MinMaxHidden as falsecalendarEdit.MinMaxHidden = false;
+
+{% endhighlight %}
+
 
 
 Run the code. The output is as follows:
 
-{{ '![](Working-with-Calendar_images/Working-with-Calendar_img9.jpeg)' | markdownify }}
-{:.image }
+![](Working-with-Calendar_images/Working-with-Calendar_img9.jpeg)
 
 
 
 
-{{ '![](Working-with-Calendar_images/Working-with-Calendar_img10.jpeg)' | markdownify }}
-{:.image }
+
+![](Working-with-Calendar_images/Working-with-Calendar_img10.jpeg)
+
 
 

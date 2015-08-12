@@ -55,43 +55,44 @@ Using ItemTemplateSelector, you can use different templates for items depending 
 
 
 
-{% highlight C# %}
+   ~~~ cs
 
-public class GroupBarItemTemplateSelector : DataTemplateSelector
+		public class GroupBarItemTemplateSelector : DataTemplateSelector
 
-    {
+			{
 
-        public override DataTemplate SelectTemplate(object item, DependencyObject container)
+				public override DataTemplate SelectTemplate(object item, DependencyObject container)
 
-        {
+				{
 
-            Window window = Application.Current.MainWindow;
+					Window window = Application.Current.MainWindow;
 
-            string bookname = (item as System.Xml.XmlElement).GetAttribute("Name").ToString().ToLower();
+					string bookname = (item as System.Xml.XmlElement).GetAttribute("Name").ToString().ToLower();
 
-            if (bookname.Contains("wpf"))
+					if (bookname.Contains("wpf"))
 
-            {
+					{
 
-                return ((DataTemplate)window.Resources["WpfBookTemplate"]);
+						return ((DataTemplate)window.Resources["WpfBookTemplate"]);
 
-            }
+					}
 
-            else
+					else
 
-            {
+					{
 
-                return ((DataTemplate)window.Resources["CsBookTemplate"]);
+						return ((DataTemplate)window.Resources["CsBookTemplate"]);
 
-            }
+					}
 
 
 
-        }
+				}
 
-    }
+			}
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
 
@@ -99,53 +100,52 @@ public class GroupBarItemTemplateSelector : DataTemplateSelector
 
 
 
-{% highlight xml %}
+   ~~~ xml
 
-<DataTemplate x:Key="WpfBookTemplate">
+		<DataTemplate x:Key="WpfBookTemplate">
 
-            <Grid>
+					<Grid>
 
-                <Grid.ColumnDefinitions>
+						<Grid.ColumnDefinitions>
 
-                    <ColumnDefinition Width="25" />
+							<ColumnDefinition Width="25" />
 
-                    <ColumnDefinition Width="*" />
+							<ColumnDefinition Width="*" />
 
-                </Grid.ColumnDefinitions>
+						</Grid.ColumnDefinitions>
 
-                <Image Source="wpf.png"/>
+						<Image Source="wpf.png"/>
 
-                <TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
+						<TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 
-            </Grid>
+					</Grid>
 
-        </DataTemplate>
-
-
-
-        <DataTemplate x:Key="CsBookTemplate">
-
-            <Grid>
-
-                <Grid.ColumnDefinitions>
-
-                    <ColumnDefinition Width="25" />
-
-                    <ColumnDefinition Width="*" />
-
-                </Grid.ColumnDefinitions>
-
-                <Image Source="images.jpg"/>
-
-                <TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
-
-            </Grid>
-
-        </DataTemplate>
+				</DataTemplate>
 
 
 
-{% endhighlight %}
+				<DataTemplate x:Key="CsBookTemplate">
+
+					<Grid>
+
+						<Grid.ColumnDefinitions>
+
+							<ColumnDefinition Width="25" />
+
+							<ColumnDefinition Width="*" />
+
+						</Grid.ColumnDefinitions>
+
+						<Image Source="images.jpg"/>
+
+						<TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
+
+					</Grid>
+
+				</DataTemplate>
+
+   ~~~
+   {:.prettyprint }
 
 
 
@@ -153,11 +153,12 @@ public class GroupBarItemTemplateSelector : DataTemplateSelector
 
 
 
-{% highlight xml %}
+   ~~~ xml
 
-<local:GroupBarItemTemplateSelector x:Key="groupBarItemTemplateSelector"/>
+		<local:GroupBarItemTemplateSelector x:Key="groupBarItemTemplateSelector"/>
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
 
@@ -165,7 +166,7 @@ public class GroupBarItemTemplateSelector : DataTemplateSelector
 
 
 
-{% highlight xml %}
+   ~~~ xml
 
    <syncfusion:GroupBar Name="groupBar1"  Margin="20" AllowCollapse="True" VisualMode="StackMode" ItemTemplateSelector="{StaticResource groupBarItemTemplateSelector}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  >
 
@@ -175,7 +176,8 @@ public class GroupBarItemTemplateSelector : DataTemplateSelector
 
 
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 This will generate the following GroupBar control.
 
@@ -193,23 +195,24 @@ You can customize the header of a GroupViewItem by using a header template. This
 
 
 
-{% highlight xml %}
+   ~~~xml
 
-  <DataTemplate x:Key="headerTemplate">
+		  <DataTemplate x:Key="headerTemplate">
 
-            <Grid>
+					<Grid>
 
-                <Border Background="Gray">
+						<Border Background="Gray">
 
-                <TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="White" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
+						<TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="White" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 
-                </Border>
+						</Border>
 
-            </Grid>
+					</Grid>
 
-  </DataTemplate>
+		  </DataTemplate>
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
 
@@ -217,27 +220,28 @@ You can customize the header of a GroupViewItem by using a header template. This
 
 
 
-{% highlight xml %}
+   ~~~ xml
 
-<syncfusion:GroupBar Name="groupBar1"  Margin="20"  VisualMode="StackMode" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}">
+		<syncfusion:GroupBar Name="groupBar1"  Margin="20"  VisualMode="StackMode" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}">
 
-            <syncfusion:GroupBar.ItemContainerStyle>
+					<syncfusion:GroupBar.ItemContainerStyle>
 
-                <Style TargetType="{x:Type syncfusion:GroupBarItem}">
+						<Style TargetType="{x:Type syncfusion:GroupBarItem}">
 
-                    <Setter Property="HeaderTemplate" Value="{StaticResource headerTemplate}" />                                      
+							<Setter Property="HeaderTemplate" Value="{StaticResource headerTemplate}" />                                      
 
-                </Style>
+						</Style>
 
-            </syncfusion:GroupBar.ItemContainerStyle>
-
-
-
-        </syncfusion:GroupBar>
+					</syncfusion:GroupBar.ItemContainerStyle>
 
 
 
-{% endhighlight %}
+				</syncfusion:GroupBar>
+
+   ~~~
+   {:.prettyprint }
+
+
 
 The code above applies HeaderTemplate to the GroupBar, so the headers of the group-bar items will contains a text box with a white foreground. 
 
@@ -249,56 +253,58 @@ You can customize the content of GroupViewItem by using ContentTemplate. This is
 
 
 
-{% highlight xml %}
+   ~~~ xml
 
-  <DataTemplate x:Key="contentTemplate">
+	  <DataTemplate x:Key="contentTemplate">
 
-            <Grid >
+				<Grid >
 
-                <Grid.ColumnDefinitions>
+					<Grid.ColumnDefinitions>
 
-                    <ColumnDefinition Width="4*"/>
+						<ColumnDefinition Width="4*"/>
 
-                    <ColumnDefinition Width="6*"/>
+						<ColumnDefinition Width="6*"/>
 
-                </Grid.ColumnDefinitions>
+					</Grid.ColumnDefinitions>
 
-                <Image Source="{Binding XPath=@ImagePath}"/>
+					<Image Source="{Binding XPath=@ImagePath}"/>
 
-                <TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Grid.Column="1"/>
+					<TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Grid.Column="1"/>
 
-            </Grid>
+				</Grid>
 
-  </DataTemplate>
+	  </DataTemplate>
 
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
 2. Set ContentTemplate for GroupBarItem to the above template.
 
 
 
-{% highlight xml %}
+   ~~~ xml
 
-<syncfusion:GroupBar Name="groupBar1"  Margin="20"  VisualMode="StackMode" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}">
+		<syncfusion:GroupBar Name="groupBar1"  Margin="20"  VisualMode="StackMode" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}">
 
-            <syncfusion:GroupBar.ItemContainerStyle>
+					<syncfusion:GroupBar.ItemContainerStyle>
 
-                <Style TargetType="{x:Type syncfusion:GroupBarItem}">
+						<Style TargetType="{x:Type syncfusion:GroupBarItem}">
 
-                    <Setter Property="HeaderTemplate" Value="{StaticResource headerTemplate}" />  
+							<Setter Property="HeaderTemplate" Value="{StaticResource headerTemplate}" />  
 
-                    <Setter Property="ContentTemplate" Value="{StaticResource contentTemplate}"/>
+							<Setter Property="ContentTemplate" Value="{StaticResource contentTemplate}"/>
 
-                </Style>
+						</Style>
 
-            </syncfusion:GroupBar.ItemContainerStyle>
+					</syncfusion:GroupBar.ItemContainerStyle>
 
-        </syncfusion:GroupBar>
+				</syncfusion:GroupBar>
 
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
 This will populate the GroupBar control.
@@ -315,107 +321,108 @@ With HeaderTemplateSelector, you can use different templates for the GroupBarIte
 
 1. Create the template selector in code.
 
+   ~~~ cs
 
+		public class GroupBarItemHeaderTemplateSelector : DataTemplateSelector
 
-{% highlight C# %}
+			{
 
-public class GroupBarItemHeaderTemplateSelector : DataTemplateSelector
+				public override DataTemplate SelectTemplate(object item, DependencyObject container)
 
-    {
+				{
 
-        public override DataTemplate SelectTemplate(object item, DependencyObject container)
+					Window window = Application.Current.MainWindow;
 
-        {
+					string bookname = (item as System.Xml.XmlElement).GetAttribute("Name").ToString().ToLower();
 
-            Window window = Application.Current.MainWindow;
+					if (bookname.Contains("wpf"))
 
-            string bookname = (item as System.Xml.XmlElement).GetAttribute("Name").ToString().ToLower();
+					{
 
-            if (bookname.Contains("wpf"))
+						return ((DataTemplate)window.Resources["WpfBookHeaderTemplate"]);
 
-            {
+					}
 
-                return ((DataTemplate)window.Resources["WpfBookHeaderTemplate"]);
+					else
 
-            }
+					{
 
-            else
+						return ((DataTemplate)window.Resources["CsBookHeaderTemplate"]);
 
-            {
-
-                return ((DataTemplate)window.Resources["CsBookHeaderTemplate"]);
-
-            }
+					}
 
 
 
-        }
+				}
 
-    }
+			}
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 2. Define the data templates in the Window’s resources.
 
 
 
-{% highlight xml %}
+   ~~~ xml
 
-   <DataTemplate x:Key="WpfBookHeaderTemplate">
+		   <DataTemplate x:Key="WpfBookHeaderTemplate">
 
-            <Grid>
+					<Grid>
 
-                <Grid.ColumnDefinitions>
+						<Grid.ColumnDefinitions>
 
-                    <ColumnDefinition Width="25" />
+							<ColumnDefinition Width="25" />
 
-                    <ColumnDefinition Width="*" />
+							<ColumnDefinition Width="*" />
 
-                </Grid.ColumnDefinitions>
+						</Grid.ColumnDefinitions>
 
-                <Image Source="wpficon.png"/>
+						<Image Source="wpficon.png"/>
 
-                <TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
+						<TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 
-            </Grid>
+					</Grid>
 
-        </DataTemplate>
-
-
-
-        <DataTemplate x:Key="CsBookHeaderTemplate">
-
-            <Grid>
-
-                <Grid.ColumnDefinitions>
-
-                    <ColumnDefinition Width="25" />
-
-                    <ColumnDefinition Width="*" />
-
-                </Grid.ColumnDefinitions>
-
-                <Image Source="csicon.png"/>
-
-                <TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Blue" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
-
-            </Grid>
-
-        </DataTemplate>
+				</DataTemplate>
 
 
-{% endhighlight %}
+
+				<DataTemplate x:Key="CsBookHeaderTemplate">
+
+					<Grid>
+
+						<Grid.ColumnDefinitions>
+
+							<ColumnDefinition Width="25" />
+
+							<ColumnDefinition Width="*" />
+
+						</Grid.ColumnDefinitions>
+
+						<Image Source="csicon.png"/>
+
+						<TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Blue" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
+
+					</Grid>
+
+				</DataTemplate>
+
+
+   ~~~
+   {:.prettyprint }
 
 
 3. Create an instance for the template selector in the Window’s resources.
 
 
 
-{% highlight xml %}
+   ~~~ xml
 
-  <local:GroupBarItemHeaderTemplateSelector x:Key="groupBarItemHeaderTemplateSelector"/>
+		<local:GroupBarItemHeaderTemplateSelector x:Key="groupBarItemHeaderTemplateSelector"/>
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
 
@@ -428,52 +435,52 @@ With ContentTemplateSelector, you can use different templates for GroupBarItem�
 1. Create the template selector in the code as follows.
 
 
+   ~~~ cs
 
-{% highlight C# %}
+		public class GroupBarItemContentTemplateSelector : DataTemplateSelector
 
-public class GroupBarItemContentTemplateSelector : DataTemplateSelector
+			{
 
-    {
+				public override DataTemplate SelectTemplate(object item, DependencyObject container)
 
-        public override DataTemplate SelectTemplate(object item, DependencyObject container)
+				{
 
-        {
+					Window window = Application.Current.MainWindow;
 
-            Window window = Application.Current.MainWindow;
+					string bookname = (item as System.Xml.XmlElement).GetAttribute("Name").ToString().ToLower();
 
-            string bookname = (item as System.Xml.XmlElement).GetAttribute("Name").ToString().ToLower();
+					if (bookname.Contains("wpf"))
 
-            if (bookname.Contains("wpf"))
+					{
 
-            {
+						return ((DataTemplate)window.Resources["WpfBookContentTemplate"]);
 
-                return ((DataTemplate)window.Resources["WpfBookContentTemplate"]);
+					}
 
-            }
+					else
 
-            else
+					{
 
-            {
+						return ((DataTemplate)window.Resources["CsBookContentTemplate"]);
 
-                return ((DataTemplate)window.Resources["CsBookContentTemplate"]);
-
-            }
-
+					}
 
 
-        }
 
-    }
+				}
+
+			}
 
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
 2. Define the data templates in the Window’s resources.
 
 
 
-{% highlight xml %}
+   ~~~ xml
 
           <DataTemplate x:Key="CsBookHeaderTemplate">
 
@@ -518,18 +525,18 @@ public class GroupBarItemContentTemplateSelector : DataTemplateSelector
                 </DataTemplate>
 
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
 3. Create an instance of the template selector in the Window’s resources.
 
+   ~~~ xml
 
+		<local:GroupBarItemContentTemplateSelector x:Key="groupBarItemContentTemplateSelector"/>
 
-{% highlight xml %}
-
-  <local:GroupBarItemContentTemplateSelector x:Key="groupBarItemContentTemplateSelector"/>
-
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
 
@@ -537,7 +544,7 @@ public class GroupBarItemContentTemplateSelector : DataTemplateSelector
 
 
 
-{% highlight xml %}
+   ~~~ xml
 
        <syncfusion:GroupBar Name="groupBar1"  AllowCollapse="True" VisualMode="StackMode" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   >
 
@@ -558,7 +565,8 @@ public class GroupBarItemContentTemplateSelector : DataTemplateSelector
         </syncfusion:GroupBar>
 
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 
 This will populate the GroupBar control.

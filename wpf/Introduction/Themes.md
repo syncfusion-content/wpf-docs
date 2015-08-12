@@ -42,42 +42,46 @@ Setting VisualStyle in XAML
 The following code example explains how to set the VisualStyle property in XAML.
 
 1. Add the following namespace in the sample.
-{% highlight html %}
- [XAML]
+   
+   ~~~ xml
+ 
+		xmlns:yncfusion=”http://schemas.syncfusion.com/wpf”
 
-xmlns:yncfusion=”http://schemas.syncfusion.com/wpf”
-
-{% endhighlight %}
-
+   ~~~
+   {:.prettyprint }
 2. Set the VisualStyle property for the control as illustrated in the following code example. 
-{% highlight html %}
- [XAML]
 
-<Syncfusion:CalendarEdit syncfusion:SkinStorage.VisualStyle=”Blend”></Syncfusion:CalendarEdit>  
+   ~~~ xml
 
-{% endhighlight  %}
+		<Syncfusion:CalendarEdit syncfusion:SkinStorage.VisualStyle=”Blend”></Syncfusion:CalendarEdit>  
 
-### Setting VisualStyle in C#
+   ~~~
+   {:.prettyprint }
 
-You can also set the VisualStyle property in C# by using the SetVisualStyle.
+   ### Setting VisualStyle in C#
 
-The following code example explains how to set the VisualStyle property in C#.
+   You can also set the VisualStyle property in C# by using the SetVisualStyle.
+
+   The following code example explains how to set the VisualStyle property in C#.
 
 3. Name the control by using the Name attribute.
-{% highlight html %}
- [XAML]
 
-<Syncfusion:CalendarEdit Name=”calendar”></Syncfusion:CalendarEdit> 
+   ~~~ xml
 
-{% endhighlight  %}
+
+		<Syncfusion:CalendarEdit Name=”calendar”></Syncfusion:CalendarEdit> 
+
+   ~~~
+   {:.prettyprint }
 
 4. Add the following line in code behind file.
-{% highlight c# %}
-[C#]
+   
+   ~~~ cs
 
-SkinStorage.SetVisualStyle(calendar, “Blend”);
+		SkinStorage.SetVisualStyle(calendar, “Blend”);
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 The output is displayed as follows.
 
@@ -118,42 +122,48 @@ SolidColorBrush</td><td>
 The following code example explains how to set the ActiveColorScheme property in XAML.
 
 1. Add the following namespace in the sample.
-{% highlight html %}
-[XAML]
+ 
+   ~~~ xml
 
-xmlns:Syncfusion=http://schemas.syncfusion.com/wpf
+		xmlns:Syncfusion=http://schemas.syncfusion.com/wpf
 
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
+   
 2. Set the ActiveColorScheme property for the control as illustrated in the following code example.
-{% highlight html %}
-[XAML]
 
-<yncfusion:CalendarEdit Name=”calendar” yncfusion:SkinManager.ActiveColorScheme=”Red”></yncfusion:CalendarEdit> 
+   ~~~ xml
 
-{% endhighlight  %}
+		<syncfusion:CalendarEdit Name=”calendar” syncfusion:SkinManager.ActiveColorScheme=”Red”></syncfusion:CalendarEdit> 
 
-#### Setting ActiveColorScheme property in C#
+   ~~~
+   {:.prettyprint }
 
-You can also set the custom color for the WPF controls in C# by using _SetActiveColorScheme._
+   #### Setting ActiveColorScheme property in C#
 
-The following code example explains how to set the ActiveColorScheme property in C#.
+   You can also set the custom color for the WPF controls in C# by using _SetActiveColorScheme._
 
-3.  Name the control by using the Name attribute.
-{% highlight html %}
-[XAML]
+   The following code example explains how to set the ActiveColorScheme property in C#.
 
-<yncfusion:CalendarEdit Name=”calendar”></yncfusion:CalendarEdit> 
+3. Name the control by using the Name attribute.
 
-{% endhighlight  %}
+   ~~~ xml
+   
+
+		<syncfusion:CalendarEdit Name=”calendar”></syncfusion:CalendarEdit> 
+
+   ~~~
+   {:.prettyprint }
 
 4. Add the following line in code behind file.
-{% highlight c# %}
-[C#]
+ 
+   ~~~ cs
 
-SkinManager.SetActiveColorScheme(calendar, Brushes.Red);
+		SkinManager.SetActiveColorScheme(calendar, Brushes.Red);
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 The output is displayed as follows.
 
@@ -186,11 +196,11 @@ You can customize the following brushes in Metro Theme.
 {% highlight html %}
 [XAML]
 
-<yncfusion:ChromelessWindow x:Class=”WpfApplication18.MainWindow”       
+<syncfusion:ChromelessWindow x:Class=”WpfApplication18.MainWindow”       
 
-        Title=”Window1” Height=”350” Width=”525” xmlns:yncfusion=”http://schemas.syncfusion.com/wpf” yncfusion:SkinStorage.VisualStyle=”Metro” yncfusion:SkinStorage.MetroBackgroundBrush=”Green”>
+        Title=”Window1” Height=”350” Width=”525” xmlns:syncfusion=”http://schemas.syncfusion.com/wpf” syncfusion:SkinStorage.VisualStyle=”Metro” syncfusion:SkinStorage.MetroBackgroundBrush=”Green”>
 
-</yncfusion:ChromelessWindow>
+</syncfusion:ChromelessWindow>
 
 {% endhighlight %}
 

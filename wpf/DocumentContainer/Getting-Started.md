@@ -16,9 +16,6 @@ This section guides you on getting started with DocumentContainer control. It co
 ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
-
-
-
 This help section will demonstrate all the important properties of the DocumentContainer that will help the end-user to know about all the available features.
 
 ## Why use DocumentContainer control?
@@ -31,6 +28,7 @@ Here are some highlights about our Document Container control.
 * State persistence; the Document Container is used to load and save data in IS, BIN, and XML
 * A large set of properties, methods, and events are available for easy customization
 * Keyboard Support - Re-sizing and moving the Document Container using the keyboard
+
 ## Class Diagram
 
 
@@ -46,7 +44,7 @@ The class diagram for Document Container is illustrated below.
 
 There are two possible ways of creating a simple DocumentContainer control. 
 
-###Through Designer
+### Through Designer
 
 To create the Document Container control through designer, drag a Document Container control from the toolbox onto the design area.
 
@@ -56,19 +54,19 @@ To create the Document Container control through designer, drag a Document Conta
 
 
 
-###Programmatically
+### Programmatically
 
 To create the Document Container programmatically, use the following XAML or C# code.
 
 
+{% highlight xml %}
+<!-- Adding Document Container -->
+<syncfusion:DocumentContainer Name="DocContainer"/>
+{% endhighlight %}
 
-<table>
-<tr>
-<td>
-{% highlight xml %}<!-- Adding Document Container --><syncfusion:DocumentContainer Name="DocContainer"/>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight C# %}//Creating instance of document containerDocumentContainer DocContainer = new DocumentContainer();//Adding control to the windowthis.Content = DocContainer;{% endhighlight %}</td></tr>
-</table>
+{% highlight C# %}
+//Creating instance of document containerDocumentContainer DocContainer = new DocumentContainer();
+//Adding control to the windowthis.Content = DocContainer;
+{% endhighlight %}
 
 

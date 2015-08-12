@@ -15,9 +15,7 @@ Assembly: Syncfusion.SfRadialMenu.WPF (in Syncfusion.SfRadialMenu.WPF.dll)
 
 The following code sample shows how to create the Radial Slider from code-behind and XAML, 
 
-{% highlight html %}
-
- [XAML]
+{% highlight xml %}
 
 <syncfusion:SfRadialSlider
 
@@ -28,9 +26,8 @@ The following code sample shows how to create the Radial Slider from code-behind
             />
 
 {% endhighlight  %}
-{% highlight c# %}
 
-[C#]
+{% highlight c# %}
 
 SfRadialSlider sfRadialSlider = new SfRadialSlider() {Minimum = 0, Maximum = 100};
 

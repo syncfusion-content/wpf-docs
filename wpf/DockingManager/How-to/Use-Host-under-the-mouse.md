@@ -7,15 +7,15 @@ control: DockingManager
 documentation: ug
 ---
 
-### Use Host under the mouse
+## Use Host under the mouse
 
 HostUnderMouse is the property, which is used to get the DockedElementTabHost that was under the dragged host. This can be used to update the relevant properties of Element Host while dragging the Float child.
 
 
 
-[C#]
+{% highlight c# %}
 
 DockedElementTabbedHost host = DockingManager.HostUnderMouse;
 
-
+{% endhighlight %}
 

@@ -12,28 +12,31 @@ documentation: ug
 By default, TDI items in DockingManager and DocumentContainer are can be dragged. The IsTDIDragDropEnabled property is available to disable the dragging and dropping of TDI items, as demonstrated in the following code:
 
 
+{% highlight xml %} 
+       <syncfusion:DockingManager Name="dockingmanager1" UseDocumentContainer="True" IsTDIDragDropEnabled="False">
+	   <Grid syncfusion:DockingManager.Header="Tab1" syncfusion:DockingManager.State="Document"/> 
+	   <Grid syncfusion:DockingManager.Header="Tab2" syncfusion:DockingManager.State="Document"/>  
+	   </syncfusion:DockingManager>
+{% endhighlight %}
 
-<table>
-<tr>
-<td>
-{% highlight xml %}        <syncfusion:DockingManager Name="dockingmanager1" UseDocumentContainer="True" IsTDIDragDropEnabled="False">            <Grid syncfusion:DockingManager.Header="Tab1" syncfusion:DockingManager.State="Document"/>            <Grid syncfusion:DockingManager.Header="Tab2" syncfusion:DockingManager.State="Document"/>        </syncfusion:DockingManager>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight C# %} dockingmanager1.IsTDIDragDropEnabled=false;{% endhighlight %}</td></tr>
-</table>
+{% highlight C# %} 
+dockingmanager1.IsTDIDragDropEnabled=false;
+{% endhighlight %}
+
 
 
 This property is also applicable to DocumentContainer, as shown in the following code.
 
 
+{% highlight xml %} 
+       <syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" IsTDIDragDropEnabled="False" > 
+	   <Grid syncfusion:DockingManager.Header="Tab1" syncfusion:DockingManager.State="Document"/> 
+	   <Grid syncfusion:DockingManager.Header="Tab2" syncfusion:DockingManager.State="Document"/> 
+       </syncfusion:DocumentContainer>
+{% endhighlight %}
 
-<table>
-<tr>
-<td>
-{% highlight xml %}        <syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" IsTDIDragDropEnabled="False" >            <Grid syncfusion:DockingManager.Header="Tab1" syncfusion:DockingManager.State="Document"/>            <Grid syncfusion:DockingManager.Header="Tab2" syncfusion:DockingManager.State="Document"/>        </syncfusion:DocumentContainer>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight C# %}documentcontainer1.IsTDIDragDropEnabled=false;{% endhighlight %}</td></tr>
-</table>
+{% highlight C# %}
+documentcontainer1.IsTDIDragDropEnabled=false;
+{% endhighlight %}
 
 

@@ -243,7 +243,7 @@ To Add SfBulletGraph Control, follow the steps:
    ~~~
    {:.prettyprint}
 
-   ~~~ c#
+   ~~~ cs
 
 
 

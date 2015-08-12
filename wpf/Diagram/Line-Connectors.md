@@ -598,7 +598,7 @@ It is also possible to drag-and-drop line connectors from the SymbolPalette. Thr
 
 
 
-![](Line-Connectors_images/Line-Connectors_img6.jpeg)
+   ![](Line-Connectors_images/Line-Connectors_img6.jpeg)
 
 
 
@@ -606,7 +606,7 @@ It is also possible to drag-and-drop line connectors from the SymbolPalette. Thr
 
 
 
-![](Line-Connectors_images/Line-Connectors_img7.jpeg)
+   ![](Line-Connectors_images/Line-Connectors_img7.jpeg)
 
 
 
@@ -614,7 +614,7 @@ It is also possible to drag-and-drop line connectors from the SymbolPalette. Thr
 
 
 
-![](Line-Connectors_images/Line-Connectors_img8.jpeg)
+   ![](Line-Connectors_images/Line-Connectors_img8.jpeg)
 
 
 
@@ -719,7 +719,7 @@ This feature provides the ability to drag nodes and connection ports when the En
 
 Properties
 
-## Setting Constraints for EnableConnection Property_
+## Setting Constraints for EnableConnection Property
 
 <table>
 <tr>
@@ -969,7 +969,7 @@ NA </td></tr>
 
 Customizing Arc Line Connector type
 
-Use the ArcHeight and the ArcDirection__property__of ConnectorBase to customize the hieght and direction of the Arc. 
+Use the ArcHeight and the ArcDirection _property_ of ConnectorBase to customize the hieght and direction of the Arc. 
 
 * ArcHeight – Gets or Sets the height of the Arc.
 * ArcDirection – Gets or Sets the direction of the Arc
@@ -2815,8 +2815,8 @@ line.FirstSegmentOrientation = SegmentOrientation.Vertical
 
 > Note: This FirstSegmentOrientation property is only works as expected when the LineConnector satisfies the following things.
 
-* _LineConnector is connected between Nodes through ConnectionPort._
-* _When there is only one intermediate Point in Orthogonal LineConnector._
+* LineConnector is connected between Nodes through ConnectionPort.
+* When there is only one intermediate Point in Orthogonal LineConnector.
 
 
 

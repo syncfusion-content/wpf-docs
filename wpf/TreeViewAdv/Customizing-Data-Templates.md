@@ -49,44 +49,45 @@ The following example illustrates this:
 1. Create the template selector as shown in the following code snippet:
 
 
+   ~~~ cs
+	
 
-{% highlight C# %}
+		public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 
-public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
+			{
 
-    {
+		 public override DataTemplate SelectTemplate(object item, 			DependencyObject container)
 
- public override DataTemplate SelectTemplate(object item, 			DependencyObject container)
+				{
 
-        {
-
-            Window window = Application.Current.MainWindow;
-
-
-
-            if (((Model)item).IsCheckable)
-
-            {
-
-                return ((DataTemplate)window.Resources["CheckableTemplate"]);
-
-            }
-
-            else 
-
-            {
-
-                return ((DataTemplate)window.Resources["NormalTemplate"]);
-
-            }     
-
-}
-
-    }
+					Window window = Application.Current.MainWindow;
 
 
 
-{% endhighlight %}
+					if (((Model)item).IsCheckable)
+
+					{
+
+						return ((DataTemplate)window.Resources["CheckableTemplate"]);
+
+					}
+
+					else 
+
+					{
+
+						return ((DataTemplate)window.Resources["NormalTemplate"]);
+
+					}     
+
+		}
+
+			}
+
+   ~~~
+   {:.prettyprint}
+
+
 
 
 
@@ -94,57 +95,58 @@ public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 
 
 
-{% highlight xml %}
+   ~~~ xml
 
-<HierarchicalDataTemplate ItemsSource="{Binding SubItems}" 		x:Key="CheckableTemplate">
-
-
-
-     <CheckBox Content="{Binding Header}" />
+		<HierarchicalDataTemplate ItemsSource="{Binding SubItems}" 		x:Key="CheckableTemplate">
 
 
 
-</HierarchicalDataTemplate>
+			 <CheckBox Content="{Binding Header}" />
 
 
 
-<HierarchicalDataTemplate ItemsSource="{Binding SubItems}" 						x:Key="NormalTemplate">
+		</HierarchicalDataTemplate>
 
 
 
-    <TextBlock Text="{Binding Header}" />
+		<HierarchicalDataTemplate ItemsSource="{Binding SubItems}" 						x:Key="NormalTemplate">
 
 
 
-</HierarchicalDataTemplate>
-
-{% endhighlight %}
+			<TextBlock Text="{Binding Header}" />
 
 
 
-3.  Create the instance for the template selector in the Window’s resources as follows:
+		</HierarchicalDataTemplate>
+
+   ~~~
+   {:.prettyprint}
 
 
 
-{% highlight xml %}
+3. Create the instance for the template selector in the Window’s resources as follows:
 
-<local:TreeViewAdvItemTemplateSelector x:Key="treeViewItemTemplateSelector"/>
+   ~~~ xml
+
+		<local:TreeViewAdvItemTemplateSelector x:Key="treeViewItemTemplateSelector"/>
 
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 
 4. Use the template selector to choose the template for the TreeViewAdv as follows:
 
 
 
-{% highlight xml %}
+   ~~~ xml
 
-<syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}" 		ItemTemplateSelector="{StaticResource treeViewItemTemplateSelector}">           
+		<syncfusion:TreeViewAdv ItemsSource="{Binding TreeItems}" 		ItemTemplateSelector="{StaticResource treeViewItemTemplateSelector}">           
 
-</syncfusion:TreeViewAdv>
+		</syncfusion:TreeViewAdv>
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 The TreeVewAdv generates as shown in the following screenshot:
 
@@ -159,35 +161,32 @@ The user can modify the template while editing the TreeViewItemAdv. The followin
 
 1. Create the DataTemplate instance for the EditTemplate as follows: 
 
+   ~~~ xml
 
-
-{% highlight xml %}
-
-<DataTemplate x:Key="EditTemplate">
-
-
-
-      <TextBox Text="{Binding Header}" FontStyle="Italic" 				FontWeight="Bold" />
+		<DataTemplate x:Key="EditTemplate">
 
 
 
-</DataTemplate>
+			  <TextBox Text="{Binding Header}" FontStyle="Italic" 				FontWeight="Bold" />
 
 
-{% endhighlight %}
+
+		</DataTemplate>
+
+   ~~~
+   {:.prettyprint}
 
 
 2. Set the EditedItemTemplate for the TreeViewAdv to the above template as follows:
 
+   ~~~ xml
 
-{% highlight xml %}
+	<syncfusion:TreeViewAdv EditedItemTemplate="{StaticResource EditTemplate}" ItemsSource="{Binding TreeItems}" >
 
-<syncfusion:TreeViewAdv EditedItemTemplate="{StaticResource EditTemplate}" ItemsSource="{Binding TreeItems}" >
+	</syncfusion:TreeViewAdv>
 
-</syncfusion:TreeViewAdv>
-
-
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 
 While editing the TreeViewItemAdv appears as shown in the following screen shot:
@@ -207,95 +206,91 @@ The following example explains how to choose the template at runtime:
 
 1. Create the template selector as given in the following code snippet:
 
+   ~~~ cs
 
+		public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 
-{% highlight C# %}
+		  {
 
-public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
+		  public override DataTemplate SelectTemplate(object item, 					DependencyObject container)
 
-  {
+			{
 
-  public override DataTemplate SelectTemplate(object item, 					DependencyObject container)
-
-    {
-
-      Window window = Application.Current.MainWindow;
+			  Window window = Application.Current.MainWindow;
 
 
 
-      if (((Model)item).IsCheckable)
+			  if (((Model)item).IsCheckable)
 
-            {
+					{
 
-      	return ((DataTemplate)window.Resources["CheckableEditTemplate"]);
+				return ((DataTemplate)window.Resources["CheckableEditTemplate"]);
 
-            }
+					}
 
-            else
+					else
 
-            {
+					{
 
-             return ((DataTemplate)window.Resources["NormalEditTemplate"]);
+					 return ((DataTemplate)window.Resources["NormalEditTemplate"]);
 
-            }
+					}
 
-        }
+				}
 
-    }
+			}
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 
 
 2. Define the Data templates in the Window’s resources as follows:
 
+   ~~~ xml
 
+		<DataTemplate  x:Key="CheckableEditTemplate">
 
-{% highlight xml %}
+		  <TextBox Text="{Binding Header}" FontStyle="Italic" 		FontWeight="Bold" Foreground="Blue"/>
 
-<DataTemplate  x:Key="CheckableEditTemplate">
-
-  <TextBox Text="{Binding Header}" FontStyle="Italic" 		FontWeight="Bold" Foreground="Blue"/>
-
-</DataTemplate>
-
-
-
-<DataTemplate  x:Key="NormalEditTemplate">
-
-     <TextBox Text="{Binding Header}" FontStyle="Italic" FontWeight="Bold" 	Foreground="Green"/>
-
-</DataTemplate>
-
-{% endhighlight %}
+		</DataTemplate>
 
 
 
-3.  Create the instance for the template selector in the Window’s resources as follows:
+		<DataTemplate  x:Key="NormalEditTemplate">
+
+			 <TextBox Text="{Binding Header}" FontStyle="Italic" FontWeight="Bold" 	Foreground="Green"/>
+
+		</DataTemplate>
+   ~~~
+   {:.prettyprint}
 
 
 
-{% highlight xml %}
+3. Create the instance for the template selector in the Window’s resources as follows:
 
-<local:TreeViewAdvEditTemplateSelector x:Key="treeViewAdvEditTemplateSelector"/>
 
-{% endhighlight %}
+
+   ~~~ xml
+		<local:TreeViewAdvEditTemplateSelector x:Key="treeViewAdvEditTemplateSelector"/>
+
+   ~~~
+   {:.prettyprint}
 
 
 
 4. Use the template selector to choose the template for the TreeViewAdv as follows:
 
+   ~~~ xml
 
+		<syncfusion:TreeViewAdv 
 
-{% highlight xml %}
+		EditedItemTemplateSelector="{StaticResource treeViewAdvEditTemplateSelector}"
 
-<syncfusion:TreeViewAdv 
+		ItemsSource="{Binding TreeItems}" />           
 
-EditedItemTemplateSelector="{StaticResource treeViewAdvEditTemplateSelector}"
-
-ItemsSource="{Binding TreeItems}" />           
-
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 
 The TreeViewAdv generates as shown in the following screenshot:
 

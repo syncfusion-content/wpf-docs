@@ -11,7 +11,7 @@ documentation: ug
 
 Data Binding is the process of establishing a connection between the application UI and business logic. Data Binding can be unidirectional (Source -> target or target -> Source) or bidirectional (Source <-> target). You can bind the data to the AutoComplete through the CustomSource property. While binding the CustomSource to the AutoComplete, you must set the value of the DisplayMemberPath and the SelectedValuePath properties.
 
-## Adding Data Binding to an Application 
+### Adding Data Binding to an Application 
 
 You can use the DisplayMemberPath property to set the value for items that needs to be displayed in the drop-down list. Also you can use the SelectedValuePath property which can be used to set the value of the SelectedValue property. The below code snippet will be used to bind the Data Source to the AutoComplete.
 
@@ -62,9 +62,9 @@ public class EmployeeListCollection : ObservableCollection<EmployeeList>
 
 
 
-## Tables for properties, and events
+### Tables for properties, and events
 
-### Properties
+#### Properties
 
    _Property Table for Data Binding_
 
@@ -86,7 +86,7 @@ Sytem.Collections.IEnumerable</td><td>
 </table>
 
 
-### Events
+#### Events
 
 _Events Table for Data Binding_
 
@@ -99,21 +99,22 @@ Arguments </th><th>
 Type </th><th>
 Reference links </th></tr>
 <tr>
-<th>
-SelectedValuePathChanged</th><th>
- When the SelectedValuePath property value is changed, this event will be triggered.It cannot be cancelled.</th><th>
-DependencyObject,DependencyPropertyChangedEventArgs</th><th>
-DependencyPropertyChangedCallBack </th><th>
-</th></tr>
+<td>
+SelectedValuePathChanged</td><td>
+ When the SelectedValuePath property value is changed, this event will be triggered.It cannot be cancelled.</td><td>
+DependencyObject,DependencyPropertyChangedEventArgs</td><td>
+DependencyPropertyChangedCallBack </td><td>
+</td></tr>
 <tr>
-<th>
-CustomSourceChanged</th><th>
- When the CustomSource property value is changed, this event will be triggered.It cannot be cancelled.</th><th>
-DependencyObject,DependencyPropertyChangedEventArgs</th><th>
-DependencyPropertyChangedCallBack </th><th>
-</th></tr>
+<td>
+CustomSourceChanged</td><td>
+ When the CustomSource property value is changed, this event will be triggered.It cannot be cancelled.</td><td>
+DependencyObject,DependencyPropertyChangedEventArgs</td><td>
+DependencyPropertyChangedCallBack </td><td>
+</td></tr>
 </table>
-## Sample Link
+
+#### Sample Link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
 

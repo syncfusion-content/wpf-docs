@@ -21,7 +21,7 @@ Binding TaskDetials collection to Gantt Control
 
 The following code illustrates how to bind the Task Detials to the Gantt Control:
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -129,10 +129,10 @@ Essential Gantt for WPF allow you to bind any type of IEnumerable source to Gant
 
 The following code illustrate how to map the properties using the TaskAttributeMapping class:
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
- <gantt:TaskAttributeMapping TaskIdMapping="Id"                     TaskNameMapping="Name"                     StartDateMapping="StartDate"                      ChildMapping="ChildTask"                     FinishDateMapping="EndDate"                     DurationMapping="Duration"                     ResourceInfoMapping="Resource"                     ProgressMapping="Complete"                     PredecessorMapping="Predecessor">
+ <gantt:TaskAttributeMapping TaskIdMapping="Id" TaskNameMapping="Name"  StartDateMapping="StartDate" ChildMapping="ChildTask"  FinishDateMapping="EndDate"  DurationMapping="Duration"  ResourceInfoMapping="Resource"   ProgressMapping="Complete"  PredecessorMapping="Predecessor">
  </gantt:TaskAttributeMapping>
 
 {% endhighlight  %}
@@ -155,12 +155,12 @@ The following code illustrate how to map the properties using the TaskAttributeM
 The following code illustrates how to bind the external source to Gantt control:
 
 
-{% highlight html %}
+{% highlight xml %}
 [XAML]
 
 <Sync:GanttControl x:Name="Gantt" ItemsSource="{Binding GanttItemSource}">
       <Sync:GanttControl.TaskMapping>
-           <Sync:TaskCollectionMapping TaskIdMapping="Id"                                       TaskNameMapping="Name"                                       StartDateMapping="SDate"                                       FinishDateMapping="EDate"                                       ResourceNameMapping="ResName"                                       ChildMapping="ChildTask"                                       PredecessorMapping="Predecessor"                                       ProgressMapping="Complete" />
+           <Sync:TaskCollectionMapping TaskIdMapping="Id" TaskNameMapping="Name"   StartDateMapping="SDate"  FinishDateMapping="EDate"  ResourceNameMapping="ResName"   ChildMapping="ChildTask"  PredecessorMapping="Predecessor"  ProgressMapping="Complete" />
             </Sync:GanttControl.TaskMapping>
 </Sync:GanttControl>
 

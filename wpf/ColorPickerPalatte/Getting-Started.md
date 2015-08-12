@@ -25,6 +25,7 @@ The various elements of the ColorPickerPalette are illustrated in the following 
 * The Recently User Colors stores the Colors that are recently selected.
 * The More Colors Option provides wide range of color in addition to colors in the palette.
 * The Theme Variant Colors represents the Theme colors with variant.
+
 ## Add ColorPickerPalette to an Application
 
 
@@ -74,7 +75,7 @@ To add a ColorPickerPalette control to an application through Microsoft Expressi
 
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+	![](Getting-Started_images/Getting-Started_img2.png)
 
 
 

@@ -33,19 +33,13 @@ RangeAdornerBackground</td><td>
 Sets the background color of the adorner.</td><td>
 Color name</td></tr>
 </table>
+
 ## Adding Range Adorner Background to an Application 
 
 The RangeAdornerBackground property must be set either in XAML or the code file.
 
 
-
-<table>
-<tr>
-<td>
-{% highlight xml %}  RangeAdornerBackground="LightGreen" {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %}  control.RangeAdornerBackground = Brushes.LightGreen; {% endhighlight %} </td></tr>
-</table>
+{% highlight xml %}  RangeAdornerBackground="LightGreen" {% endhighlight %}
+{% highlight C# %}  control.RangeAdornerBackground = Brushes.LightGreen; {% endhighlight %} 
 
 

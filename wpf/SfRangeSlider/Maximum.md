@@ -13,8 +13,6 @@ Gets or sets the maximum possible value of the range. (Inherited from [RangeBase
 
 {%highlight xml%}
 
-[XAML]
-
 <editors:SfRangeSlider Width="500"  Minimum="0" Maximum="100"  />
 
 

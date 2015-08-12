@@ -243,9 +243,9 @@ _Properties Table_
 <table>
 <tr>
 <td>
-Property Name</td><td>
-Description</td><td>
-Type</td><td>
+{{ '**Property Name**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
 Value it Accepts</td><td>
 Reference link</td></tr>
 <tr>
@@ -451,8 +451,8 @@ _Formats Table_
 <table>
 <tr>
 <td>
-Format</td><td>
-Description</td></tr>
+{{ '**Format**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 0.00</td><td>
@@ -484,7 +484,7 @@ DisplayOption behavior is used to display or hide the computation values in Pivo
 
 This option is used to display complete values present in the PivotEngine, in the PivotGrid control.
 
-Setting DisplayOption as “All”
+#### Setting DisplayOption as “All”
 
 #### Through XAML
 
@@ -669,7 +669,7 @@ _PivotGrid when DisplayOption is set to “Calculations”_
 
 This option allows the specific PivotComputationInfo to be visible only in the Summary columns of PivotGrid.
 
-Setting DisplayOption as Summary
+#### Setting DisplayOption as Summary
 
 #### Through XAML
 
@@ -953,8 +953,8 @@ _CalculationType table_
 <table>
 <tr>
 <td>
-CalculationType</td><td>
-Description</td></tr>
+{{ '**CalculationType**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 NoCalculation</td><td>
@@ -1134,8 +1134,8 @@ _Summar types table_
 <table>
 <tr>
 <td>
-Type</td><td>
-Description</td></tr>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 DoubleTotalSum</td><td>
@@ -1196,8 +1196,8 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 PadString</td><td>
@@ -1271,10 +1271,10 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 PadString</td><td>
@@ -1349,10 +1349,10 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property Name</td><td>
-Description</td><td>
-Type</td><td>
-Value it Accepts</td></tr>
+{{ '**Property Name**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Value it Accepts**' | markdownify }}</td></tr>
 <tr>
 <td>
 CaseSensitive</td><td>

@@ -18,7 +18,7 @@ Filter support is used to filter the matched list of items from the linked sourc
 
 
 
-## Adding Filter Support to an Application 
+### Adding Filter Support to an Application 
 
 If the IsFilter property is set as True, once you enter text in the AutoComplete textbox, the matched list of items will be displayed in the drop-down list. If this property is set as False the matched list of items will not be displayed in the drop-down list, instead all the items will be displayed.
 
@@ -36,20 +36,20 @@ If the IsFilter property is set as True, once you enter text in the AutoComplete
 {% endhighlight %}
 
 
-## Tables for properties, methods, and events
+### Tables for properties, methods, and events
 
-### Properties
+#### Properties
 
   _Property Table for Filter_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 IsFilter</td><td>
@@ -60,7 +60,7 @@ bool(true)</td><td>
 </table>
 
 
-### Events
+#### Events
 
   _Event Table for Filter_
 
@@ -73,16 +73,16 @@ Arguments </th><th>
 Type </th><th colspan = "2">
 Reference links </th></tr>
 <tr>
-<th>
-IsFilterChanged</th><th>
- When the value of IsFilter is changed, this event will be triggered.It cannot be cancelled.</th><th>
-DependencyObject,DependencyPropertyChangedEventArgs</th><th colspan = "2">
-DependencyPropertyChangedCallBack </th><th>
-</th></tr>
+<td>
+IsFilterChanged</td><td>
+ When the value of IsFilter is changed, this event will be triggered.It cannot be cancelled.</td><td>
+DependencyObject,DependencyPropertyChangedEventArgs</td><td colspan = "2">
+DependencyPropertyChangedCallBack </td><td>
+</td></tr>
 </table>
 
 
-## Sample Link
+#### Sample Link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
 

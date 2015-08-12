@@ -167,7 +167,7 @@ this.Content = taskBar;
 {% endhighlight %}
 
 
-> _Note: To display the TaskBar Item, you must already have the TaskBar in which you are going to add the TaskBar Item._
+Note: To display the TaskBar Item, you must already have the TaskBar in which you are going to add the TaskBar Item.
 
 The following screen shot illustrates how text has been added to the TaskBar Item.
 

@@ -25,6 +25,7 @@ There are three options for exporting a Grid control:
 * Converting the entire content of a grid
 * Converting a selected content of the grid
 * Pass the Excel Engine
+
 ### Entire Content
 
 
@@ -181,9 +182,9 @@ gridControl.Model.ExportToExcel(range, excelEngine, 0, mySheet.Range[5,5], @"Sam
 
 
 
-> Note: For more details, refer the following browser sample:
+ Note: For more details, refer the following browser sample:
 
-> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\ExcelExport\GridControl Excel Export Demo
+ ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\ExcelExport\GridControl Excel Export Demo
 
 ## Exporting to CSV
 

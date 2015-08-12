@@ -11,7 +11,7 @@ documentation: ug
 
 The AnimationTypes property for the SfBusyIndicator allows the user to set one of the animations from the built-in animations as the busy indicator.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -23,7 +23,7 @@ The AnimationTypes property for the SfBusyIndicator allows the user to set one o
 {% endhighlight  %}
 
 {% highlight c# %}
-[C#]
+
 
 SfBusyIndicator busyIndicator = new SfBusyIndicator();
 

@@ -11,7 +11,7 @@ documentation: ug
 
 The UpDown control provides globalization support by enabling you to change the culture of the control by using the Culture property.
 
-### Use of Culture
+## Use of Culture
 
 Culture can be set to en-US for the UpDown control as shown in the following code example. The U.S. culture uses “.” as the NumberGroupSeparator.
 

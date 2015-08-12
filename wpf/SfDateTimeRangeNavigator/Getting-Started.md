@@ -31,15 +31,17 @@ The following steps explain how to create a SfDateTimeRangeNavigator.
 ### Adding the assembly reference
 
 1. Open the Add Reference window from your project.
+
 2. To Choose our assemblies follow the below step depending upon the developing environment. 
-* If using VS 2012 choose Assemblies > Extensions > Syncfusion.SfChart.WPF.dll 
-* If using VS 2010 choose .Net>Syncfusion.SfChart.WPF.dll
 
-   3.  Add the following namespace in your XAML page:
+	* If using VS 2012 choose Assemblies > Extensions > Syncfusion.SfChart.WPF.dll 
+	* If using VS 2010 choose .Net>Syncfusion.SfChart.WPF.dll
+
+3.  Add the following namespace in your XAML page:
 
 
-{% highlight html %}
-[XAML]
+{% highlight xml %}
+
 
 xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
 
@@ -47,13 +49,11 @@ xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
 
 ### Initialize the SfDateTimeRangeNavigator
 
-{% highlight html %}
-
-[XAML]
+{% highlight xml %}
 
 <Syncfusion:SfDateTimeRangeNavigator>
 
-</Syncfusion:SfDateTimeRangeNavigator >
+</Syncfusion:SfDateTimeRangeNavigator>
 
 
 {% endhighlight  %}
@@ -63,9 +63,7 @@ xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
 
 Since the above step will produce an empty SfDateTimeRangeNavigator without any labels, we need to set the ItemsSource and XBindingPath for the SfDateTimeRangeNavigator. The ItemsSource must implement the IEnumerable interface. 
 
-{% highlight html %}
-
-[XAML]
+{% highlight xml %}
 
 <Syncfusion:SfDateTimeRangeNavigator ItemsSource="{Binding ItemsSource}" XBindingPath="Date"  >
 
@@ -77,7 +75,7 @@ Since the above step will produce an empty SfDateTimeRangeNavigator without any 
 
 Next Add Content which needs to be displayed inside a SfDateTimeRangeNavigator.
 
-_Property table_
+Property table
 
 <table>
 <tr>
@@ -98,9 +96,7 @@ Content</td><td>
 To add any UI content inside a SfDateTimeRangeNavigator</td></tr>
 </table>
 
-{% highlight html %}
-
-[XAML]
+{% highlight xml %}
 
 <Syncfusion:SfDateTimeRangeNavigator ItemsSource="{Binding ItemsSource}" XBindingPath="Date"  >
 
@@ -157,16 +153,13 @@ This section demonstrates how to create an application using SfDateTimeRangeNavi
 ### Add assembly reference
 
 1. Open the Add Reference window from your project.
-2. Choose Windows > Extensions >Syncfusion.SfChart.WPF.
+2. Choose Windows > Extensions >Syncfusion.SfChart.WPF.
 3. Add the following namespace in your C# file, say MainPage.xaml.cs.
 
 
 {% highlight c# %}
-[C#]
 
 using Syncfusion.UI.Xaml.Charts;
-
-
 
 {% endhighlight %}
 
@@ -174,21 +167,13 @@ Initialize the Range Navigator
 
 {% highlight c# %}
 
-[C#]
-
 SfDateTimeRangNavigator rangenavigator = new SfDateTimeRangNavigator ();
-
-
 
 {% endhighlight  %}
 
-Create a Sample Data Source
+#### Create a Sample Data Source
 
 {% highlight c# %}
-
-[C#]
-
-
 
 public class ItemsSource
 
@@ -247,7 +232,6 @@ Define the ItemsSource for the Range Navigator as shown in the following code ex
 > Note: You can set any IEnumerable collection as an ItemsSource.
 
 {% highlight c# %}
-[C#]
 
 //Intialize the SfDateTimeRangNavigator
 
@@ -267,15 +251,11 @@ Add the content that needs to be displayed inside SfDateTimeRangeNavigator using
 
 {% highlight c# %}
 
-[C#]
-
 //Intialize the SfChart
 
 SfChart chart = new SfChart();
 
 LineSeries series = new LineSeries();
-
-
 
 series.ItemsSource = ItemsSource;
 
@@ -283,15 +263,9 @@ series.XBindingPath = "Date";
 
 series.YBindingPath = "NoOfUsers";
 
-
-
 var content = chart.Series.add(series);
 
-
-
 //Add content to navigator
-
-
 
 rangenavigator.Content = content;
 
@@ -301,13 +275,6 @@ rangenavigator.Content = content;
 
 The following output is displayed as a result of the above code example.
 
-
-
 ![C:/Users/sureshs/Desktop/navigatorwpf3.png](Getting-Started_images/Getting-Started_img3.png)
 
-
-
 > Note:The SelectedData property of SfDateTimeRangeNavigator returns the collection that represents the data between selected ranges in the Navigator.
-
-
-

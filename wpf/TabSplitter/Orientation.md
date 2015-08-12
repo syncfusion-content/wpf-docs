@@ -20,9 +20,6 @@ Set the orientation using the code given below:
 
 
 {% highlight xml %}
-[XAML]
-
-
 
 <!-- Adding TabSplitter -->
 
@@ -72,7 +69,7 @@ Set the orientation using the code given below:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 

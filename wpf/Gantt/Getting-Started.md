@@ -107,7 +107,7 @@ Adding GanttControl
 
 You can add Gantt control to the application using the following code:
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -132,7 +132,7 @@ Binding Data to GanttControl
 
 Create a collection of tasks and bind it to the newly created GanttControl as given in the following code:
 
-{% highlight html %}
+{% highlight xml %}
 
 [XAML]
 
@@ -229,7 +229,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-![](Getting-Started_images/Getting-Started_img6.png)
+   ![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -239,7 +239,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
@@ -249,7 +249,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-![](Getting-Started_images/Getting-Started_img8.png)
+   ![](Getting-Started_images/Getting-Started_img8.png)
 
 
 
@@ -259,7 +259,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-![](Getting-Started_images/Getting-Started_img9.png)
+   ![](Getting-Started_images/Getting-Started_img9.png)
 
 
 

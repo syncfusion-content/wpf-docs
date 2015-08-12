@@ -115,18 +115,18 @@ _Properties Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td><td>
+{{ '**Reference links**' | markdownify }} </td></tr>
 <tr>
 <td>
 ShowDisplayFieldsOnly</td><td>
 Gets or sets the value incdicating to show only the fields that are used in PivotGrid </td><td>
 Dependency</td><td>
 Boolean</td><td>
-- </td></tr>
+</td></tr>
 </table>
 
 

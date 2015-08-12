@@ -11,9 +11,9 @@ documentation: ug
 
 This section helps you get started with the SfChart control.
 
-##Visual Structure
+Visual Structure
 
-###Create a simple Chart from XAML
+Create a simple Chart from XAML
 
 Create a simple Chart from Code Behind 
 
@@ -26,11 +26,11 @@ The following image helps you understand various elements in SfChart, when you u
 
 A chart is composed of various elements such as ChartSeries, ChartLegend, ChartAxis, ChartAdornment, grid lines and headers. 
 
-* ####Chart Header - Represents the title of the chart.
-* ####ChartSeries - Represents the type of chart to be drawn in the chart area.
-* ####ChartLegend - Displays brief information about the ChartSeries plotted in the chart area.
-* ####ChartAdornment - Displays information about the data points in ChartSeries.
-* ####ChartAxis - Displays a linear scale of values with definite intervals between them.
+* Chart Header - Represents the title of the chart.
+* ChartSeries - Represents the type of chart to be drawn in the chart area.
+* ChartLegend - Displays brief information about the ChartSeries plotted in the chart area.
+* ChartAdornment - Displays information about the data points in ChartSeries.
+* ChartAxis - Displays a linear scale of values with definite intervals between them.
 
 ## Create a simple chart from XAML
 
@@ -48,7 +48,7 @@ This session demonstrates how to create a chart using SfChart control from XAML.
 xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
 
 {% endhighlight %}
-Note: Adding the extension Syncfusion.SfChart.WPF, adds all the Syncfusion WPF controls.You can also add the SfChart reference alone from the following location. C:\Program Files (x86)\Syncfusion\Essential Studio\<version>\Assemblies\(3.5/4.0/4.5.1)<Visual Studio Version>
+ Note: Adding the extension Syncfusion.SfChart.WPF, adds all the Syncfusion WPF controls.You can also add the SfChart reference alone from the following location. C:\Program Files (x86)\Syncfusion\Essential Studio\<version>\Assemblies\(3.5/4.0/4.5.1)<Visual Studio Version>
 
 
 ###Initialize the Chart 
@@ -219,7 +219,7 @@ The following code example illustrates how to add Primary (horizontal) and Secon
 
 
 
-Note: SfChart supports default axes (primary and secondary axis will be generated automatically), which will create the primary and secondary axis based on the data binded with chart. 
+ Note: SfChart supports default axes (primary and secondary axis will be generated automatically), which will create the primary and secondary axis based on the data binded with chart. 
 
 ###Add ChartSeries to Chart
 
@@ -228,23 +228,29 @@ To begin plotting data, choose from a wide variety of graphical representations 
 Tip: The graph selection depends on user scenario and the nature of the data. For example, consider a case where you are developing a chart to visualize the number of online users on a website for any given 30-minute interval during the day. In this scenario, since the data plotted is of high density and also based on two independent variables, choosing the line graph series would provide proper visualization.
  
 
-<table>
-<tr>
-<th>
-<syncfusion:ColumnSeries Label="2010"                                 ItemsSource="{Binding Demands}"                                XBindingPath="Demand"                                YBindingPath="Year2010"                                />            <syncfusion:ColumnSeries Label="2011"                                 ItemsSource="{Binding Demands}"                                XBindingPath="Demand"                                YBindingPath="Year2011"/></td></tr>
-<tr>
-<th>
-{{ 'Note: Syncfusion Chart also supports rendering combination of multiple series.' | markdownify }}</td></tr>
-</table>
+{% highlight xml %}
+
+<syncfusion:ColumnSeries Label="2010"  
+ItemsSource="{Binding Demands}"    
+XBindingPath="Demand"   
+ YBindingPath="Year2010   />       
+     <syncfusion:ColumnSeries Label="2011"   
+	 ItemsSource="{Binding Demands}"                              
+	 XBindingPath="Demand"                                
+	 
+	 YBindingPath="Year2011"/>
+{% endhighlight %}
+Note: Syncfusion Chart also supports rendering combination of multiple series.
+
 After you have added the series, you can add ItemSource, XBindingPath and YBindingPath APIs, to populate your data to the chart. 
 
-####ItemsSource- It is a collection property, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to.
+ItemsSource- It is a collection property, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to.
 
-####XBindingPath_-_ It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
+XBindingPath_-_ It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
 
-####YBindingPath_-_ It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
+YBindingPath_-_ It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
 
-####Label- This property gives names for the series, mapped by the Legend.
+Label- This property gives names for the series, mapped by the Legend.
 
 ###Add Legends to Chart
 
@@ -419,7 +425,7 @@ Imports Syncfusion.UI.Xaml.Charts
 
  
 
-Note: Adding the extension Syncfusion.SfChart.WPF, will add all the Syncfusion WPF controls. Also you can add the SfChart reference alone from the below location.
+ Note: Adding the extension Syncfusion.SfChart.WPF, will add all the Syncfusion WPF controls. Also you can add the SfChart reference alone from the below location.
 
 C:\Program Files (x86)\Syncfusion\Essential Studio\<version>\Assemblies\(3.5/4.0/4.5.1)<Visual Studio Version>
 
@@ -527,7 +533,7 @@ chart.SecondaryAxis = secondaryNumericalAxis
 
 
 
-Note: SfChart supports default axes, that is the primary and secondary axis are generated automatically, that create the primary and secondary axis based on the data binded with chart.
+ Note: SfChart supports default axes, that is the primary and secondary axis are generated automatically, that create the primary and secondary axis based on the data binded with chart.
 
 ###Add ChartSeries to Chart
 
@@ -610,18 +616,17 @@ chart.Series.Add(series1)
 
 chart.Series.Add(series2)
 {% endhighlight %} 
-
-Note: Syncfusion Chart also supports rendering combination of multiple series.
+ Note: Syncfusion Chart also supports rendering combination of multiple series.
 
 After you add the series, you can add ItemSource, XBindingPath and YBindingPath APIs, to populate your data to the chart. 
 
-####ItemsSource – It is a collection property, like other collection controls like ListBox, ComboBox, that you can bind your underlying collection to.
+ItemsSource – It is a collection property, like other collection controls like ListBox, ComboBox, that you can bind your underlying collection to.
 
-####XBindingPath__– It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
+XBindingPath__– It is a string property, used to map properties that need to be bound to the Primary Axis (or XAxis). It is like a value member path in ListBox.
 
-####YBindingPath__– It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
+YBindingPath__– It is a string property, used to map properties that need to be bound to the Secondary Axis (Or YAxis). It is like a value member path in ListBox.
 
-####Label – This property gives names for the series, mapped by the Legend.
+Label – This property gives names for the series, mapped by the Legend.
 
 ###Add Legends to Chart
 

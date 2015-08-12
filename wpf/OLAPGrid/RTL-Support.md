@@ -21,11 +21,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 FlowDirection</td><td>
@@ -33,54 +33,42 @@ Gets or sets the flow direction for the OLAP Grid control.</td><td>
 Normal</td><td>
 enum</td></tr>
 </table>
-# Adding RTL support for OLAP Grid in an application 
+
+## Adding RTL support for OLAP Grid in an application 
 
 To enable RTL support, the FlowDirection property of the OLAP Grid control needs to be set as RightToLeft. The following code sample explains how to set the FlowDirection property. It can be set through XAML or C# code.
-
-  {% highlight xml %}
-
-   [XAML]
+{% highlight xml %}
+[XAML]
 
 <syncfusion:OlapGrid x:Name="olapGrid" FlowDirection="RightToLeft" ReportName="SalesReport" SharedDataManagerName="localManager" olapshared:DataSource.DataManagerName="localManager">  
 
 
-    {% endhighlight %}
-
-
-  {% highlight c# %}
-
-   [C#]
+{% endhighlight  %}
+{% highlight c# %}
+[C#]
 
   this.olapGrid.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
-    {% endhighlight %}
 
-
-
-
-
-    {% highlight vbnet %}
-
-    [VB]
+{% endhighlight  %}
+{% highlight vbnet %}
+[VB]
 
   Me.olapGrid.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
-    {% endhighlight %}
-
-
-
-
+{% endhighlight  %}
 
 ![](RTL-Support_images/RTL-Support_img1.png)
 
 
+
 _RTL support for OLAP Grid_
 
-## Sample Link
+### Sample Link
 
 A sample is locally available in the following location:
 
-SystemDrive
+### SystemDrive
 
 \Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\OlapGrid.WPF\Localization\LocalizationDemo
 

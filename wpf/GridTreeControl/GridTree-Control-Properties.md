@@ -11,7 +11,7 @@ documentation: ug
 
 The GridTree control has the following properties that allow you to control much of the behavior available within the control. Here is a list of these properties along with some discussion of each. 
 
-_GridTree Control Property_
+## _GridTree Control Property_
 
 <table>
 <tr>

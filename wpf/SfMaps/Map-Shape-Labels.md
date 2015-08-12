@@ -15,10 +15,10 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 LabelPath</td><td>

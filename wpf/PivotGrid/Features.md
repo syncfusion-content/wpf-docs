@@ -182,11 +182,11 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property Name</td><td>
-Description</td><td>
-Type</td><td>
-Value it Accepts</td><td>
-Reference link</td></tr>
+{{ '**Property Name**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Value it Accepts**' | markdownify }}</td><td>
+{{ '**Reference link**' | markdownify }}</td></tr>
 <tr>
 <td>
 Background</td><td>
@@ -497,11 +497,11 @@ _Properties Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 AllowRunTimeGroupByField</td><td>
@@ -1525,11 +1525,11 @@ _Methods_
 <table>
 <tr>
 <td>
-Method</td><td>
-Description</td><td>
-Parameters</td><td>
-Type</td><td>
-Return Type</td></tr>
+{{ '**Method**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Parameters**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Return Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 Export(string filename)</td><td>
@@ -1732,11 +1732,11 @@ PivotGridControl Table
 
 <table>
     <tr>
-        <td>Property</td>
-		<td>Description</td>
-		<td>Type</td>
-		<td>Data Type</td>
-		<td>Reference links </td>
+        <td>{{ '**Property**' | markdownify }}</td>
+		<td>{{ '**Description**' | markdownify }}</td>
+		<td>{{ '**Type**' | markdownify }}</td>
+		<td>{{ '**Data Type**' | markdownify }}</td>
+		<td>{{ '**Reference links**' | markdownify }}</td>
 	</tr>
 	
     <tr>
@@ -1760,11 +1760,11 @@ GroupingBar Table
 
 <table>
 	<tr>
-		<th>Property </th>
-		<th>Description </th>
-		<th>Type </th>
-		<th>Data Type </th>
-		<th>Reference links </th>
+		<th>{{ '**Property**' | markdownify }}</th>
+		<th>{{ '**Description**' | markdownify }}</th>
+		<th>{{ '**Type**' | markdownify }}</th>
+		<th>{{ '**Data Type**' | markdownify }}</th>
+		<th>{{ '**Reference links**' | markdownify }}</th>
 	</tr>
 	<tr>
 		<td>FieldList</td>
@@ -1843,10 +1843,10 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 AllowRowHeaderAreaAutoSizing</td><td>
@@ -1924,8 +1924,8 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property Name</td><td>
-Type</td></tr>
+{{ '**Property Name**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 AllowResizeColumns</td><td>
@@ -2090,23 +2090,23 @@ _Methods Table_
 <table>
 <tr>
 <td>
-Method</td><td>
-Description</td><td>
-Parameters</td><td>
-Type</td><td>
-Return Type</td></tr>
+{{ '**Method**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Parameters**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Return Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 Serialize()</td><td>
 Serializes the PivotGrid into XML file format using the save file dialog</td><td>
--</td><td>
+</td><td>
 void</td><td>
 void</td></tr>
 <tr>
 <td>
 Deserialize()</td><td>
 Deserializes the PivotGrid from the saved XML file using the open file dialog</td><td>
--</td><td>
+</td><td>
 void</td><td>
 void</td></tr>
 <tr>
@@ -2150,11 +2150,11 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 AllowRemove </td><td>
@@ -2197,11 +2197,11 @@ A demo of this feature is available in the following location:
 
 #### Windows 7/Vista
 
-_SystemDrive:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\PivotAnalysis.Wpf\Samples\Grouping Bar\Grouping Bar Demo_
+SystemDrive:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\PivotAnalysis.Wpf\Samples\Grouping Bar\Grouping Bar Demo_
 
 #### Windows XP
 
-_SystemDrive:\Syncfusion\EssentialStudio\<version_number>\ BI\WPF\PivotAnalysis.Wpf\Samples\Grouping Bar\Grouping Bar Demo_ 
+SystemDrive:\Syncfusion\EssentialStudio\<version_number>\ BI\WPF\PivotAnalysis.Wpf\Samples\Grouping Bar\Grouping Bar Demo_ 
 
 
 ## Runtime Custom Summary Type setting
@@ -2225,11 +2225,11 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 CustomSummaryBaseCollection</td><td>
@@ -2258,11 +2258,11 @@ To add the feature to an application:
 
 4.Set the created object to PivotSchemaDesigner object’s  CustomSummaryBaseCollection property. 
 
-Hence this property is an ObservableCollection type of SummaryBase that enable the user to add more than one class object. Each object is considered as a unique Custom SummaryBase. 
+  Hence this property is an ObservableCollection type of SummaryBase that enable the user to add more than one class object. Each object is considered as a unique Custom SummaryBase. 
 
 5. Using the CustomSummaryBaseCollection, set the summary for the respective columns by its Summary property.  
-> 
-_Note: Ensure to set the SummaryType as Custom, otherwise the default type Count will be assigned._ 
+ 
+Note: Ensure to set the SummaryType as Custom, otherwise the default type Count will be assigned._ 
 
 To set Custom Summary at runtime:
 
@@ -2341,18 +2341,18 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 StatePersistenceEnabled</td><td>
 Gets or sets a value indicating whether to maintain/show collapsed cells when pivot schema getting changed</td><td>
 Dependency </td><td>
 Boolean</td><td>
--</td></tr>
+</td></tr>
 </table>
 
 
@@ -2408,10 +2408,10 @@ _Properties_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Value it Accepts</td><td>
-Data Type </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Value it Accepts**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 ShowSubTotals</td><td>
@@ -2440,16 +2440,16 @@ _Methods_
 <table>
 <tr>
 <th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Type </th><th>
-Return Type </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <th>
 SubTotalsRendering</th><th>
 Handles rendering of cells(showing or hiding the cells) by calculating the cell range values in the Pivot Engine based on the ShowSubTotals property value in the control</th><th>
-- </th><th>
+</th><th>
 Server Side </th><th>
 Void </th></tr>
 <tr>
@@ -2588,9 +2588,9 @@ End Sub
 
 
 
-To hide sub-totals for rows:
+#### To hide sub-totals for rows:
 
-In XAML,
+#### In XAML,
 
 To hide sub-totals, set the ShowRowSubTotals property as False as illustrated here.
 
@@ -2610,7 +2610,7 @@ ShowRowSubTotals="False" ItemSource="{Binding Source={StaticResource data}}" >
 
 {% endhighlight %} 
 
-Through Code Behind
+#### Through Code Behind
 
 To hide sub-totals for rows, set the ShowRowSubTotals property as False in the MainWindow() constructor.
 
@@ -2665,11 +2665,11 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 ResizePivotGridToFit </td><td>
@@ -2801,11 +2801,11 @@ _Properties Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 SortDirection</td><td>
@@ -2829,12 +2829,12 @@ _Method Table_
 
 <table>
 <tr>
-   <th>Method </th>
-   <th>Description </th>
-   <th>Parameters </th>
-   <th>Type </th>
-   <th>Return Type </th>
-   <th>Reference links </th>
+   <th>{{ '**Method**' | markdownify }}</th>
+   <th>{{ '**Description**' | markdownify }}</th>
+   <th>{{ '**Parameters**' | markdownify }}</th>
+   <th>{{ '**Type**' | markdownify }}</th>
+   <th>{{ '**Return Type**' | markdownify }}</th>
+   <th>{{ '**Reference links**' | markdownify }}</th>
 </tr>
 <tr>
     <th>SortByCalculation</th>
@@ -2854,8 +2854,8 @@ _Enum Table_
 <table>
 <tr>
 <td>
-Name</td><td>
-Options</td></tr>
+{{ '**Name**' | markdownify }}</td><td>
+{{ '**Options**' | markdownify }}</td></tr>
 <tr>
 <td>
 PivotSortOption</td><td>
@@ -2940,11 +2940,11 @@ _Properties Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 DimensionName</td><td>
@@ -2976,12 +2976,12 @@ _Methods Table_
 <table>
 <tr>
 <th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Type </th><th>
-Return Type </th><th>
-Reference links </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <th>
 AddFilter</th><th>
@@ -3049,10 +3049,10 @@ _Properties Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 TooltipEnabled</td><td>
@@ -3287,10 +3287,10 @@ _Properties Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 EnableValueEditing</td><td>
@@ -3330,10 +3330,10 @@ _Event Table_
 <table>
 <tr>
 <th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th></tr>
+{{ '**Event**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Arguments**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th></tr>
 <tr>
 <th>
 ChangeValue</th><th>
@@ -3545,10 +3545,10 @@ _Properties Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 EnableContextMenu</td><td>
@@ -3564,11 +3564,11 @@ _Methods Table_
 <table>
 <tr>
 <th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Type </th><th>
-Return Type </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <th>
 ExpandRow(string)  </th><th>
@@ -3634,10 +3634,10 @@ _Event Table_
 <table>
 <tr>
 <th>
-Event </th><th>
-Description </th><th>
-Arguments </th><th>
-Type </th></tr>
+ {{ '**Event**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Arguments**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th></tr>
 <tr>
 <th>
 ExpandCollapse</th><th>
@@ -3814,11 +3814,11 @@ _Properties Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td><td>
+{{ '**Reference links**' | markdownify }} </td></tr>
 <tr>
 <td>
 CalculationType</td><td>
@@ -3905,10 +3905,10 @@ _Method Table_
 <table>
 <tr>
 <th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Return Type </th></tr>
+ {{ '**Method**' | markdownify }}</th><th>
+ {{ '**Description**' | markdownify }}</th><th>
+ {{ '**Parameters**' | markdownify }}</th><th>
+ {{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <th>
 GetRawItemFor </th><th>
@@ -3994,10 +3994,10 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td></tr>
 <tr>
 <td>
 VisualStyle </td><td>
@@ -4051,18 +4051,18 @@ _Properties Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+ {{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }} </td><td>
+ {{ '**Type**' | markdownify }}</td><td>
+ {{ '**Data Type**' | markdownify }}</td><td>
+ {{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 UseIndexedEngine</td><td>
 Gets or sets whether an optimized algorithm that relies on indexing the raw data should be used to compute the pivot information.</td><td>
 CLR</td><td>
 Boolean</td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 EnableOnDemandCalculations</td><td>
@@ -4335,9 +4335,9 @@ _Methods Table_
 <table>
 <tr>
 <td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+{{ '**Method**' | markdownify }}</td><td>
+{{ '**Prototype**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 ApplySavedValueFilter</td><td>
@@ -4385,8 +4385,8 @@ _Properties Table_
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 AllowFilter</td><td>
@@ -4408,9 +4408,9 @@ _Events Table_
 <table>
 <tr>
 <td>
-Event</td><td>
-Parameters</td><td>
-Description</td></tr>
+{{ '**Event**' | markdownify }}</td><td>
+{{ '**Parameters**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 FilterActionCompleted</td><td>
@@ -4660,10 +4660,10 @@ _Properties Table_
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 ShowPivotValueChooser</td><td>
@@ -4764,8 +4764,8 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 LoadInBackground</td><td>
@@ -4869,25 +4869,25 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+ {{ '**Property**' | markdownify }}</td><td>
+ {{ '**Description**' | markdownify }}</td><td>
+ {{ '**Type**' | markdownify }}</td><td>
+ {{ '**Data Type**' | markdownify }}</td><td>
+ {{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 ShowSubTotal</td><td>
 Shows or hides the subtotal of the particular pivot item.</td><td>
 Dependency </td><td>
 Boolean </td><td>
--</td></tr>
+</td></tr>
 <tr>
 <td>
 ShowExpanderForSinglePivot</td><td>
 Shows or hides expander of the  item which has single row after its subtotals hidden</td><td>
 General</td><td>
 Boolean</td><td>
--</td></tr>
+</td></tr>
 </table>
 
 
@@ -5024,10 +5024,10 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }} </td><td>
+{{ '**Type**' | markdownify }} </td><td>
+{{ '**Data Type**' | markdownify }} </td></tr>
 <tr>
 <td>
 FlowDirection</td><td>
@@ -5090,10 +5090,10 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Data Type </td><td>
-Default Value</td></tr>
+ {{ '**Property**' | markdownify }}</td><td>
+ {{ '**Description**' | markdownify }}</td><td>
+ {{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Default Value**' | markdownify }}</td></tr>
 <tr>
 <td>
 GridLayout </td><td>
@@ -5164,11 +5164,11 @@ _Property Table_
 <table>
 <tr>
 <td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td><td>
+{{ '**Reference links**' | markdownify }}</td></tr>
 <tr>
 <td>
 PrintHeader </td><td>
@@ -5192,12 +5192,12 @@ _Methods Table_
 <table>
 <tr>
 <th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Type </th><th>
-Return Type </th><th>
-Reference links </th></tr>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <th>
 ShowPrintPreview</th><th>
@@ -5364,16 +5364,16 @@ _Properties_
 <table>
 <tr>
 <td>
-Property</td><td>
-Description</td><td>
-Parameters</td><td>
-    Type</td><td>
-Return Type</td></tr>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Parameters**' | markdownify }}</td><td>
+    {{ '**Type**' | markdownify }}</td><td>
+{{ '**Return Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 EnableSelectionWithHeaders</td><td>
 Used to enable the selection behavior.</td><td>
--</td><td>
+</td><td>
 bool</td><td>
 bool</td></tr>
 </table>

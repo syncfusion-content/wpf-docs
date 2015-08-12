@@ -20,13 +20,13 @@ You can customize the appearance of the grid to the cell-level using our Grid pr
 
 The EssentialGrid's cell style architecture plays an integral role in almost every aspect of Essential Grid. The display system hosts a powerful and complete Styles architecture. Settings can be specified at the cell level or at higher levels using parent styles that are referred to as Base Styles. Base Styles can affect a groups of cells. Cell level settings override any higher-level settings and enable easy customization to cell level. With this initial version, Syncfusion's core focus has been on the underlying architecture for displaying cells with virtualized cell editors to enable good performance characteristics.
 
-Following are the two cell styles available:
+### Following are the two cell styles available:
 
-Volatile Cell Styles
+#### Volatile Cell Styles
 
 QueryCellInfo will be raised the first time you access the contents of a cell with a call to Grid.Model[rowIndex, columnIndex] or when the grid calls this indexer internally before painting cells. The indexer returns an object of type GridStyleInfo. After querying the cell contents they remain cached in a volatile cache that holds weak references to the cell styles. This ensures that this data is available for reuse when needed. At the same time it does not stand in the way of the garbage collector if memory needs to be freed. Once a style gets garbage collected it will be removed from the volatile cache. You can manually force QueryCellInfo to be called again when you call GridControl.InvalidateCell(cell) or GridModel.VolatileCellStyles.Clear(cell). 
 
-Render Cell Styles
+#### Render Cell Styles
 
 Prior to display of a cell, the PrepareRenderCell event is raised. This event is not raised from the Model. Instead it is raised from the GridControlBase directly. This has the advantage that if you want multiple grids to display the same Model, individual grids can override the cell contents individually.
 
@@ -181,7 +181,7 @@ The code above displays the following output:
 
 The Background property specifies a background brush for the grid cell. The cell’s background can be painted with either a solid brush or a gradient brush.
 
-> Note: * Gradient-A gradient brush uses two colors. These colors merge to create a transition or fading effect. * Solid-A solid brush is equipped with only one color.
+Note: * Gradient-A gradient brush uses two colors. These colors merge to create a transition or fading effect. * Solid-A solid brush is equipped with only one color.
 
 #### Setting Background Brush Type
 
@@ -259,81 +259,81 @@ Determines the angle of rotation of the text</td></tr>
 
 1. Setting Text, Foreground and Font Properties
 
-
-{% highlight c# %}
-[C#]
-
-
-
-//Setting text, foreground and fonts
-
-this.grid.Model[6, 1].Font.FontSize = 10;
-
-this.grid.Model[6, 1].Text = "The quick brown fox jumps over the lazy dog";
-
-this.grid.Model[6, 1].Foreground = Brushes.Gray;
+   ~~~ cs
+		[C#]
 
 
 
-this.grid.Model[7, 1].Font.FontSize = 12;
+		//Setting text, foreground and fonts
 
-this.grid.Model[7, 1].Text = "The quick brown fox jumps over the lazy dog";
+		this.grid.Model[6, 1].Font.FontSize = 10;
 
-this.grid.Model[7, 1].Foreground = Brushes.Red;
+		this.grid.Model[6, 1].Text = "The quick brown fox jumps over the lazy dog";
 
-
-
-this.grid.Model[8, 1].Font.FontSize = 14;
-
-this.grid.Model[8, 1].Text = "The quick brown fox jumps over the lazy dog";
-
-this.grid.Model[8, 1].Foreground = Brushes.Blue;
+		this.grid.Model[6, 1].Foreground = Brushes.Gray;
 
 
 
-this.grid.Model[9, 1].Font.FontSize = 16;
+		this.grid.Model[7, 1].Font.FontSize = 12;
 
-this.grid.RowHeights[9] = 30d;
+		this.grid.Model[7, 1].Text = "The quick brown fox jumps over the lazy dog";
 
-this.grid.Model[9, 1].Text = "The quick brown fox jumps over the lazy dog";
-
-this.grid.Model[9, 1].Foreground = Brushes.Green;
+		this.grid.Model[7, 1].Foreground = Brushes.Red;
 
 
 
-//Setting font weights
+		this.grid.Model[8, 1].Font.FontSize = 14;
 
-this.grid.Model[6, 5].Font.FontWeight = FontWeights.Bold;
+		this.grid.Model[8, 1].Text = "The quick brown fox jumps over the lazy dog";
 
-this.grid.Model[6, 5].HorizontalAlignment = HorizontalAlignment.Center;
-
-this.grid.Model[6, 5].CellValue = "Font weight is Bold";
+		this.grid.Model[8, 1].Foreground = Brushes.Blue;
 
 
 
-this.grid.Model[7, 5].Font.FontStyle  = FontStyles.Italic;
+		this.grid.Model[9, 1].Font.FontSize = 16;
 
-this.grid.Model[7, 5].HorizontalAlignment = HorizontalAlignment.Center;
+		this.grid.RowHeights[9] = 30d;
 
-this.grid.Model[7, 5].CellValue = "Font style is Itlaic";
+		this.grid.Model[9, 1].Text = "The quick brown fox jumps over the lazy dog";
 
-
-
-this.grid.Model[8, 5].Font.FontStyle = FontStyles.Normal;
-
-this.grid.Model[8, 5].HorizontalAlignment = HorizontalAlignment.Center;
-
-this.grid.Model[8, 5].CellValue = "Font style is Normal";
-
-{% endhighlight %}
-
-#### Output
-
-The following output is generated using the code above.
+		this.grid.Model[9, 1].Foreground = Brushes.Green;
 
 
 
-![](Appearance_images/Appearance_img4.jpeg)
+		//Setting font weights
+
+		this.grid.Model[6, 5].Font.FontWeight = FontWeights.Bold;
+
+		this.grid.Model[6, 5].HorizontalAlignment = HorizontalAlignment.Center;
+
+		this.grid.Model[6, 5].CellValue = "Font weight is Bold";
+
+
+
+		this.grid.Model[7, 5].Font.FontStyle  = FontStyles.Italic;
+
+		this.grid.Model[7, 5].HorizontalAlignment = HorizontalAlignment.Center;
+
+		this.grid.Model[7, 5].CellValue = "Font style is Itlaic";
+
+
+
+		this.grid.Model[8, 5].Font.FontStyle = FontStyles.Normal;
+
+		this.grid.Model[8, 5].HorizontalAlignment = HorizontalAlignment.Center;
+
+		this.grid.Model[8, 5].CellValue = "Font style is Normal";
+
+   ~~~
+    {:.prettyprint}
+
+   #### Output
+
+   The following output is generated using the code above.
+
+
+
+	![](Appearance_images/Appearance_img4.jpeg)
 
 
 
@@ -341,63 +341,64 @@ The following output is generated using the code above.
 
 2. Setting Cell Orientation
 
-{% highlight c# %}
+   ~~~ cs
 
-[C#]
+		[C#]
 
 
 
-this.grid.Model[12, 1].Font.Orientation = 45;
+		this.grid.Model[12, 1].Font.Orientation = 45;
 
-this.grid.Model[12, 1].CellValue = "Angle 45";
+		this.grid.Model[12, 1].CellValue = "Angle 45";
 
-this.grid.Model[12, 1].HorizontalAlignment = HorizontalAlignment.Center;
+		this.grid.Model[12, 1].HorizontalAlignment = HorizontalAlignment.Center;
 
-this.grid.Model[12, 1].VerticalAlignment = VerticalAlignment.Center;
+		this.grid.Model[12, 1].VerticalAlignment = VerticalAlignment.Center;
 
-this.grid.Model[12, 2].Font.Orientation = 90;
+		this.grid.Model[12, 2].Font.Orientation = 90;
 
-this.grid.Model[12, 2].CellValue = "Angle 90";
+		this.grid.Model[12, 2].CellValue = "Angle 90";
 
-this.grid.Model[12, 2].HorizontalAlignment = HorizontalAlignment.Center;
+		this.grid.Model[12, 2].HorizontalAlignment = HorizontalAlignment.Center;
 
-this.grid.Model[12, 2].VerticalAlignment = VerticalAlignment.Center;
+		this.grid.Model[12, 2].VerticalAlignment = VerticalAlignment.Center;
 
-this.grid.Model[12, 3].Font.Orientation = 180;
+		this.grid.Model[12, 3].Font.Orientation = 180;
 
-this.grid.Model[12, 3].CellValue = "Angle 180";
+		this.grid.Model[12, 3].CellValue = "Angle 180";
 
-this.grid.Model[12, 3].HorizontalAlignment = HorizontalAlignment.Center;
+		this.grid.Model[12, 3].HorizontalAlignment = HorizontalAlignment.Center;
 
-this.grid.Model[12, 3].VerticalAlignment = VerticalAlignment.Center;
+		this.grid.Model[12, 3].VerticalAlignment = VerticalAlignment.Center;
 
-this.grid.Model[12, 4].Font.Orientation = 270;
+		this.grid.Model[12, 4].Font.Orientation = 270;
 
-this.grid.Model[12, 4].CellValue = "Angle 270";
+		this.grid.Model[12, 4].CellValue = "Angle 270";
 
-this.grid.Model[12, 4].HorizontalAlignment = HorizontalAlignment.Center;
+		this.grid.Model[12, 4].HorizontalAlignment = HorizontalAlignment.Center;
 
-this.grid.Model[12, 4].VerticalAlignment = VerticalAlignment.Center;
+		this.grid.Model[12, 4].VerticalAlignment = VerticalAlignment.Center;
 
-this.grid.Model[12, 5].Font.Orientation = 320;
+		this.grid.Model[12, 5].Font.Orientation = 320;
 
-this.grid.Model[12, 5].CellValue = "Angle 320";
+		this.grid.Model[12, 5].CellValue = "Angle 320";
 
-this.grid.Model[12, 5].HorizontalAlignment = HorizontalAlignment.Center;
+		this.grid.Model[12, 5].HorizontalAlignment = HorizontalAlignment.Center;
 
-this.grid.Model[12, 5].VerticalAlignment = VerticalAlignment.Center;
+		this.grid.Model[12, 5].VerticalAlignment = VerticalAlignment.Center;
 
-this.grid.Model.RowHeights[12] = 50;
+		this.grid.Model.RowHeights[12] = 50;
 
-{% endhighlight  %}
+   ~~~
+    {:.prettyprint}
 
 #### Output
 
-The following output is generated using the code above.
+	The following output is generated using the code above.
 
 
 
-![](Appearance_images/Appearance_img5.jpeg)
+	![](Appearance_images/Appearance_img5.jpeg)
 
 
 
@@ -580,114 +581,116 @@ s</td><td>
 1. Setting text format
 
 
-{% highlight c# %}
-[C#]
+   ~~~ cs
+		[C#]
 
 
 
-//Setting Text formats            
+		//Setting Text formats            
 
-int rowIndex = 3;
+		int rowIndex = 3;
 
-int colIndex = 1;
+		int colIndex = 1;
 
-GridModel model =  this.grid.Model; 
+		GridModel model =  this.grid.Model; 
 
-foreach (string format in new string[] 
+		foreach (string format in new string[] 
 
-{
+		{
 
 
 
-"0.00",
+		"0.00",
 
-"C",
+		"C",
 
-"0.00;(0.00)",
+		"0.00;(0.00)",
 
-"###0.##%",
+		"###0.##%",
 
-"#0.#E+00",
+		"#0.#E+00",
 
-"10:##,##0.#"
+		"10:##,##0.#"
 
-})
+		})
 
-{
+		{
 
-    model[rowIndex - 1, colIndex].Text = format;
+			model[rowIndex - 1, colIndex].Text = format;
 
-    model[rowIndex  , colIndex].Format = format;
+			model[rowIndex  , colIndex].Format = format;
 
-    model[rowIndex , colIndex].CellValue = Math.PI;
+			model[rowIndex , colIndex].CellValue = Math.PI;
 
-    model[rowIndex , colIndex].CellValueType = typeof(double);
+			model[rowIndex , colIndex].CellValueType = typeof(double);
 
-    rowIndex += 3;
+			rowIndex += 3;
 
-}
+		}
 
-{% endhighlight  %}
+   ~~~
+   {:.prettyprint}
 
 2. Setting DateTime format
 
-{% highlight c# %}
+   ~~~ cs
 
-[C#]
-
-
-
-//Setting DateTime formats            
-
-rowIndex = 2;
-
-colIndex = 3;
+		[C#]
 
 
 
-foreach (string format in new string[] 
+		//Setting DateTime formats            
 
-    {
+		rowIndex = 2;
+
+		colIndex = 3;
 
 
 
-        "d",
+		foreach (string format in new string[] 
 
-        "D",
+			{
 
-        "f",
 
-        "dddd, dd MMMM yyyy",
 
-        "t",
+				"d",
 
-        "s"
+				"D",
 
-    })
+				"f",
 
-{
+				"dddd, dd MMMM yyyy",
 
-    model[rowIndex - 1, colIndex].Text = format;
+				"t",
 
-    grid.Model.ColumnWidths[colIndex] = 150d;
+				"s"
 
-    model[rowIndex, colIndex].Format = format;
+			})
 
-    model[rowIndex, colIndex].CellValue = DateTime.Now;
+		{
 
-    model[rowIndex, colIndex].CellValueType = typeof(DateTime);
+			model[rowIndex - 1, colIndex].Text = format;
 
-    rowIndex += 3;
+			grid.Model.ColumnWidths[colIndex] = 150d;
 
-}
+			model[rowIndex, colIndex].Format = format;
 
-{% endhighlight  %}
+			model[rowIndex, colIndex].CellValue = DateTime.Now;
+
+			model[rowIndex, colIndex].CellValueType = typeof(DateTime);
+
+			rowIndex += 3;
+
+		}
+
+   ~~~
+   {:.prettyprint}
 
 #### Output
 
-The following output is generated using the code above.
+ The following output is generated using the code above.
 
-![](Appearance_images/Appearance_img7.jpeg)
+ ![](Appearance_images/Appearance_img7.jpeg)
 
 
 

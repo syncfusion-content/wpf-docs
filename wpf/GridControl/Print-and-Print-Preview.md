@@ -52,7 +52,7 @@ Clicking the Print button allows the user to send the grid content to the printe
 
 This drop down lists out various available paper sizes for printing. For example: ISOA4, ISOA1, ISOA3etc. Selecting the required paper size allows the user to print the grid data in the paper of same size.
 
-> Note: The paper sizes are also marked in the following way:
+ Note: The paper sizes are also marked in the following way:
 
 * _Extra-Extra increases the space in addition to the predefined size of the paper, for example- A3._
 * _Rotated -The output is rotated by a defined angle for the selected page size._

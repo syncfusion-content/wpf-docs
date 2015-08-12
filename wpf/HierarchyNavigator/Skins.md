@@ -19,27 +19,28 @@ Add the following DLLs to apply the corresponding theme for Hierarchy Navigator 
 
 1. Create HierarchyNavigator instance either in XAML or code behind, as shown below.
 
-{% highlight xml %}
+   ~~~ xml
 
 
 
-<syncfusion:HierarchyNavigator x:Name="hierarchyNavigator"/>
-{% endhighlight %}
+		<syncfusion:HierarchyNavigator x:Name="hierarchyNavigator"/>
+
+   ~~~
+   {:.prettyprint }
 
 
-Or
+	 Or
 
-{% highlight C# %}
+   ~~~ cs
 
+		HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
 
-
-HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
-
-{% endhighlight %}
+   ~~~
+   {:.prettyprint }
 
 2. Apply Visual Style as shown below in code behind by calling the static method in SkinStorage class in Syncfusion.Shared.WPF.
 
-Window7
+#### Window7
 
 {% highlight C# %}
 
@@ -53,7 +54,7 @@ SkinStorage.SetVisualStyle(this, "Default");
 
 
 
-Office2007Blue 
+#### Office2007Blue 
 
 {% highlight C# %}
 
@@ -67,7 +68,7 @@ SkinStorage.SetVisualStyle(this, "Office2007Blue");
 
 
 
-Office2007Black
+#### Office2007Black
 
 {% highlight C# %}
 
@@ -81,7 +82,7 @@ SkinStorage.SetVisualStyle(this, "Office2007Black");
 
 
 
-Office2007Silver
+#### Office2007Silver
 
 {% highlight C# %}
 
@@ -95,7 +96,7 @@ SkinStorage.SetVisualStyle(this, "Office2007Silver");
 
 
 
-Expression Blend
+#### Expression Blend
 
 {% highlight C# %}
 
@@ -108,7 +109,7 @@ SkinStorage.SetVisualStyle(this, "Blend");
 
 
 
-Metro Theme
+#### Metro Theme
 
 {% highlight C# %}
 
@@ -120,9 +121,9 @@ SkinStorage.SetVisualStyle(this, “Metro");
 
 
 
-Transparent Theme
+#### Transparent Theme
 
-[{% highlight C# %}]
+{% highlight C# %}
 
 SkinStorage.SetVisualStyle(this, “Transparent");
 

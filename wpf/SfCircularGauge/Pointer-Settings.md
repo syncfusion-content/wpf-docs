@@ -21,11 +21,9 @@ A needle pointer contains two parts, the needle and the pointer cap. The needle 
 
 
 
-### Code Example:
+#### Code Example:
 
 {% highlight xml %}
-
-[XAML]
 
 <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -60,11 +58,10 @@ A needle pointer contains two parts, the needle and the pointer cap. The needle 
    </syncfusion:SfCircularGauge.MainScale>
 
 </syncfusion:SfCircularGauge>
+
 {% endhighlight %}
 
 {% highlight C# %}
-
-[C#]
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -75,10 +72,11 @@ A needle pointer contains two parts, the needle and the pointer cap. The needle 
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+			
 {% endhighlight %}
 
 
-### Screenshot:
+#### Screenshot:
 
 ![](Pointer-Settings_images/Pointer-Settings_img1.png)
 
@@ -99,10 +97,6 @@ NeedlePointer can be customized by using the NeedlePointerType property of Point
 
 
 {% highlight xml %}
-
-[XAML]
-
-
 
 <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -145,9 +139,7 @@ NeedlePointer can be customized by using the NeedlePointerType property of Point
 
 {% highlight C# %}
 
-[C#]
-
-            SfCircularGauge circularGauge = new SfCircularGauge();
+           SfCircularGauge circularGauge = new SfCircularGauge();
 
             CircularScale scale = new CircularScale();
 
@@ -183,7 +175,7 @@ NeedlePointer can be customized by using the NeedlePointerType property of Point
 
 
 
-### Screenshot:
+#### Screenshot:
 
 ![](Pointer-Settings_images/Pointer-Settings_img2.png)
 
@@ -197,11 +189,9 @@ Range Pointer is an accenting line or shaded background range that is placed on 
 
 
 
-### Code Example:
+#### Code Example:
 
 {% highlight xml %}
-
-[XAML]
 
    <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -232,15 +222,10 @@ Range Pointer is an accenting line or shaded background range that is placed on 
        </syncfusion:SfCircularGauge.MainScale>
 
    </syncfusion:SfCircularGauge>
+   
 {% endhighlight %}
 
 {% highlight C# %}
-
-[C#]
-
-
-
-
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -256,7 +241,7 @@ Range Pointer is an accenting line or shaded background range that is placed on 
 
 
 
-### Screenshot:
+#### Screenshot:
 
 <table>
 <tr>
@@ -267,6 +252,7 @@ Range Pointer is an accenting line or shaded background range that is placed on 
 <td>
 {{ '_Circular Scale with Range Pointer_' | markdownify }}</td></tr>
 </table>
+
 ## RangePointerPosition
 
 The RangePointer in the scale can be placed inside the scale or outside the scale by selecting one of the options available in the RangePointerPosition property. These options are:
@@ -277,10 +263,9 @@ The RangePointer in the scale can be placed inside the scale or outside the scal
 
 
 
-### Code Example:
+#### Code Example:
 
 {% highlight xml %}
-[XAML]
 
             <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -311,8 +296,6 @@ The RangePointer in the scale can be placed inside the scale or outside the scal
 
 {% highlight C# %}
 
-[C#]
-
       SfCircularGauge circularGauge = new SfCircularGauge();
 
             CircularScale _mainscale = new CircularScale();
@@ -324,12 +307,13 @@ The RangePointer in the scale can be placed inside the scale or outside the scal
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+			
 {% endhighlight %}
 
 
 
 
-### Screenshot:
+#### Screenshot:
 
 ![](Pointer-Settings_images/Pointer-Settings_img4.png)
 
@@ -343,12 +327,9 @@ In a Symbol Pointer, the value is pointed out by a symbol on the scale. You can 
 
 
 
-### Code Example:
+#### Code Example:
 
 {% highlight xml %}
-[XAML]
-
-
 
 <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -377,14 +358,11 @@ In a Symbol Pointer, the value is pointed out by a symbol on the scale. You can 
    </syncfusion:SfCircularGauge.MainScale>
 
 </syncfusion:SfCircularGauge>
+
 {% endhighlight %}
 
 
 {% highlight C# %}
-
-[C#]
-
-
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -401,7 +379,7 @@ In a Symbol Pointer, the value is pointed out by a symbol on the scale. You can 
 
 
 
-### Screenshot:
+#### Screenshot:
 
 ![](Pointer-Settings_images/Pointer-Settings_img5.png)
 
@@ -414,14 +392,10 @@ One advantage to the symbol pointer is its customizability. You can change the h
 
 Symbol is an enum property that provides symbol options for the symbol pointer that contains several shapes like rectangle, ellipse, and triangle. The SymbolPointerHeight property is used to set the height of the symbol pointer. The value is given as a double value. The SymbolPointerWidth property is used to set the width of the symbol pointer.
 
-### Code Example:
+#### Code Example:
 
 
 {% highlight xml %}
-
-[XAML]
-
-
 
         <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -450,6 +424,7 @@ Symbol is an enum property that provides symbol options for the symbol pointer t
             </syncfusion:SfCircularGauge.MainScale>
 
         </syncfusion:SfCircularGauge>
+		
 {% endhighlight %}
 
 
@@ -457,10 +432,7 @@ Symbol is an enum property that provides symbol options for the symbol pointer t
 
 {% highlight C# %}
 
-
-[C#]
-
-            SfCircularGauge circularGauge = new SfCircularGauge();
+           SfCircularGauge circularGauge = new SfCircularGauge();
 
             CircularScale _mainscale = new CircularScale();
 
@@ -469,12 +441,13 @@ Symbol is an enum property that provides symbol options for the symbol pointer t
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+			
 {% endhighlight %}
 
 
 
 
-### Screenshot:
+#### Screenshot:
 
 ![](Pointer-Settings_images/Pointer-Settings_img6.png)
 
@@ -488,14 +461,10 @@ The default appearance of the SymbolPointer can be customized by using the Symbo
 
 The SymbolPointerTemplate is a DataTemplate type, used to customize or override the default template of the SymbolPointer.
 
-### Code Example:
+#### Code Example:
 
 
 {% highlight xml %}
-
-[XAML]
-
-
 
       <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -536,14 +505,12 @@ The SymbolPointerTemplate is a DataTemplate type, used to customize or override 
             </syncfusion:SfCircularGauge.MainScale>
 
         </syncfusion:SfCircularGauge>
+		
 {% endhighlight %}
 
 
 
 
-### Screenshot:
+#### Screenshot:
 
 ![](Pointer-Settings_images/Pointer-Settings_img7.png)
-
-
-

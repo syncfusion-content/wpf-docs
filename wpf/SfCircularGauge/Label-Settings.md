@@ -17,10 +17,6 @@ Scale labels associate a numeric value with major scale tick marks. The label s
 
 {% highlight xml %}
 
-[XAML]
-
-
-
              <syncfusion:SfCircularGauge x:Name="gauge">
 
                 <syncfusion:SfCircularGauge.MainScale>
@@ -38,8 +34,6 @@ Scale labels associate a numeric value with major scale tick marks. The label s
 
 {% highlight C# %}
 
-[C#]
-
             SfCircularGauge circularGauge = new SfCircularGauge();
 
             CircularScale _mainscale = new CircularScale();
@@ -51,20 +45,16 @@ Scale labels associate a numeric value with major scale tick marks. The label s
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+			
 {% endhighlight %}
 
 
 ![](Label-Settings_images/Label-Settings_img1.png)
 
 
-
-
-
 ## Smart Labels
 
 Smart labels allow you to change the numeric scale type of the labels displayed in a gauge scale. They also help you to customize labels by adding prefixes or suffixes to the scale labels.
-
-
 
 ### Enable/Disable Smart Labels
 
@@ -88,10 +78,6 @@ The NumericScaleType property allows you to set the type of label. The following
 
 {% highlight xml %}
 
-[XAML]
-
-
-
  <syncfusion:SfCircularGauge >
 
     <syncfusion:SfCircularGauge.MainScale>
@@ -107,11 +93,10 @@ The NumericScaleType property allows you to set the type of label. The following
     </syncfusion:SfCircularGauge.MainScale>
 
  </syncfusion:SfCircularGauge>
+ 
 {% endhighlight %}
 
 {% highlight C# %}
-
-[C#]
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -136,28 +121,27 @@ The NumericScaleType property allows you to set the type of label. The following
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+			
 {% endhighlight %}
 
 
 
 
-### Screenshot:
+#### Screenshot:
+
 ![](Label-Settings_images/Label-Settings_img2.png)
 
 
 
 
 
-#### _Enable  SmartLabels-‘False’’_
+#### _Enable  SmartLabels-‘False’_
 
 ## Number of Fraction Digits
 
 The NoOfFractionalDigits property is used to set the number of fractional digits to be displayed in the scale labels.
+
 {% highlight xml %}
-
-[XAML]
-
-
 
  <syncfusion:SfCircularGauge >
 
@@ -176,12 +160,10 @@ The NoOfFractionalDigits property is used to set the number of fractional digits
     </syncfusion:SfCircularGauge.MainScale>
 
  </syncfusion:SfCircularGauge>
+ 
 {% endhighlight %}
 
 {% highlight C# %}
-
-
-[C#]
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -208,12 +190,10 @@ The NoOfFractionalDigits property is used to set the number of fractional digits
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+			
 {% endhighlight %}
 
-
-
-
-### Screenshot:
+#### Screenshot:
 
 ![](Label-Settings_images/Label-Settings_img3.png)
 
@@ -222,10 +202,8 @@ The NoOfFractionalDigits property is used to set the number of fractional digits
 ## Label Postfix
 
 This property allows you to set the postfix values to the scale labels. The label postfixes are visible even if the EnableSmartLabels property is set to false. 
+
 {% highlight xml %}
-
-[XAML]
-
 
 
  <syncfusion:SfCircularGauge >
@@ -245,12 +223,11 @@ This property allows you to set the postfix values to the scale labels. The labe
     </syncfusion:SfCircularGauge.MainScale>
 
  </syncfusion:SfCircularGauge>
+ 
 {% endhighlight %}
 
 {% highlight C# %}
 
-
-[C#]
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -273,6 +250,7 @@ This property allows you to set the postfix values to the scale labels. The labe
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+			
 {% endhighlight %}
 
 
@@ -280,7 +258,7 @@ This property allows you to set the postfix values to the scale labels. The labe
 
 
 
-### Screenshot:
+#### Screenshot:
 
 ![](Label-Settings_images/Label-Settings_img4.png)
 
@@ -294,10 +272,6 @@ This property allows you to set the prefix values for the scale labels. The labe
 
 
 {% highlight xml %}
-
-[XAML]
-
-
 
  <syncfusion:SfCircularGauge >
 
@@ -316,11 +290,10 @@ This property allows you to set the prefix values for the scale labels. The labe
     </syncfusion:SfCircularGauge.MainScale>
 
  </syncfusion:SfCircularGauge>
+ 
 {% endhighlight %}
 
 {% highlight C# %}
-
-[C#]
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -350,7 +323,7 @@ This property allows you to set the prefix values for the scale labels. The labe
 
 
 
-### Screenshot:
+#### Screenshot:
 
 ![](Label-Settings_images/Label-Settings_img5.png)
 
@@ -365,11 +338,11 @@ The Labels in the scale can be placed inside the scale or outside the scale by s
 1. Inside (Default)
 2. Outside
 
-### Code Example
+#### Code Example
 
 {% highlight xml %}
 
-[XAML]
+
 
             <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -390,8 +363,6 @@ The Labels in the scale can be placed inside the scale or outside the scale by s
 
 {% highlight C# %}
 
-[C#]
-
             SfCircularGauge circularGauge = new SfCircularGauge();
 
             CircularScale _mainscale = new CircularScale();
@@ -401,14 +372,12 @@ The Labels in the scale can be placed inside the scale or outside the scale by s
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+			
 {% endhighlight %}
 
 
 
 
-### Screenshot:
+#### Screenshot:
 
 ![](Label-Settings_images/Label-Settings_img6.png)
-
-
-

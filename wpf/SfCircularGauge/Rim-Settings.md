@@ -15,11 +15,9 @@ Scale determines the structure of the Circular Gauge by using the circular rim. 
 
 The StartValue and EndValue properties determine the overall range of the circular rim. The rim’s stroke and stroke thickness can be set by using the RimStroke and RimStrokeThickness properties.
 
-### Code Example:
+#### Code Example:
 
 {% highlight xml %}
-
-[XAML]
 
              <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -54,8 +52,6 @@ The StartValue and EndValue properties determine the overall range of the circul
 
 {% highlight C# %}
 
-[C#]
-
             SfCircularGauge circularGauge = new SfCircularGauge();
 
             CircularScale _mainscale = new CircularScale();
@@ -77,12 +73,13 @@ The StartValue and EndValue properties determine the overall range of the circul
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
+			
 {% endhighlight %}
 
 
 
 
-### Screenshot:
+#### Screenshot:
 
 
 

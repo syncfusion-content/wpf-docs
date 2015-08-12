@@ -76,10 +76,6 @@ The following code example illustrates a Report Viewer control template.
 
 {%highlight xml%}
 
-[XAML]
-
-
-
 <Style TargetType="local:ReportViewer">
 
         <Setter Property="Template">

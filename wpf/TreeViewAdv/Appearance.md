@@ -564,10 +564,11 @@ TreeViewAdv provides support to set the text color of the items that are dragged
 
 
 
+{% highlight C# %}
 // Set Fake Item foreground
 
 treeViewAdv.FakeItemForeground = Brushes.Magenta;
-
+{% endhighlight %}
 
 
 ![](Appearance_images/Appearance_img12.jpeg)

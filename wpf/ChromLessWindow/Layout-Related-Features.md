@@ -19,10 +19,14 @@ To set this property, use the below code.
 
 
 {% highlight html %}
-[XAML]<shared:ChromelessWindow x:Class="TestChromeless.Window1"xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"Title="ChromelessWindowTestSample"  Height="300" Width="300" ResizeBorderThickness="1" shared:SkinStorage.VisualStyle="Default"  CornerRadius= "8"></ shared:ChromelessWindow>
+
+[XAML]
+<shared:ChromelessWindow x:Class="TestChromeless.Window1"xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"Title="ChromelessWindowTestSample"  Height="300" Width="300" ResizeBorderThickness="1" shared:SkinStorage.VisualStyle="Default"  CornerRadius= "8">
+</ shared:ChromelessWindow>
 {% endhighlight %}
 {% highlight c# %}
-[C#]CornerRadius = new CornerRadius(8);
+[C#]
+CornerRadius = new CornerRadius(8);
 {% endhighlight  %}
 
 
@@ -69,10 +73,16 @@ Example
 To set _Office2007Blue_ Visual Style, use the following code.
 
 {% highlight html %}
-[XAML]<shared:ChromelessWindow x:Class="TestChromeless.Window1"xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"Title="ChromelessWindowTestSample"  Height="300" Width="300" shared:SkinStorage.VisualStyle="Office2007Blue" ></shared:ChromelessWindow>
+[XAML]
+<shared:ChromelessWindow x:Class="TestChromeless.Window1"xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"Title="ChromelessWindowTestSample"  Height="300" Width="300" shared:SkinStorage.VisualStyle="Office2007Blue" >
+</shared:ChromelessWindow>
 {% endhighlight  %}
+
 {% highlight c# %}
-[C#]SkinStorage.SetVisualStyle(this, "Office2007Blue");
+
+[C#]
+SkinStorage.SetVisualStyle(this, "Office2007Blue");
+
 {% endhighlight  %}
 
 
@@ -82,10 +92,15 @@ To set _MixedGreen_ Visual Style, use the following code.
 
 
 {% highlight html %}
-[XAML]<shared:ChromelessWindow x:Class="TestChromeless.Window1"xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"Title="ChromelessWindowTestSample"  Height="300" Width="300" shared:SkinStorage.VisualStyle="MixedGreen" ></shared:ChromelessWindow>
+[XAML]
+<shared:ChromelessWindow x:Class="TestChromeless.Window1"xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"Title="ChromelessWindowTestSample"  Height="300" Width="300" shared:SkinStorage.VisualStyle="MixedGreen" >
+</shared:ChromelessWindow>
 {% endhighlight  %}
 {% highlight c# %}
-[C#]SkinStorage.SetVisualStyle(this, "MixedGreen");
+
+[C#]
+SkinStorage.SetVisualStyle(this, "MixedGreen");
+
 {% endhighlight  %}
 
 
@@ -99,10 +114,17 @@ ChromelessWindow enables the user to create custom TitleBars with custom backgro
 Here is the code snippet for setting the TitleBarBackground property.
 
 {% highlight html %}
-[XAML]<shared:ChromelessWindow x:Class="TestChromeless.Window1"xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"Title="ChromelessWindowTestSample"  Height="300" Width="300" shared:SkinStorage.VisualStyle="Default"                 	TitleBarBackground="Green" ></ shared:ChromelessWindow></td></tr>
+[XAML]
+<shared:ChromelessWindow x:Class="TestChromeless.Window1"xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"Title="ChromelessWindowTestSample"  Height="300" Width="300" shared:SkinStorage.VisualStyle="Default"                 	TitleBarBackground="Green" >
+</ shared:ChromelessWindow></td></tr>
 {% endhighlight %}
+
 {% highlight c# %}
-[C#]SkinStorage.SetVisualStyle(this, "Default");this.TitleBarBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("Green"));
+
+[C#]
+SkinStorage.SetVisualStyle(this, "Default");
+this.TitleBarBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("Green"));
+
 {% endhighlight  %}
 
 
@@ -127,10 +149,16 @@ ChromelessWindow enables the user to create resizable windows. It provides a Res
 To set the ResizeBorderBrush property, use the below code
 
 {% highlight html %}
-[XAML]<shared:ChromelessWindow x:Class="TestChromeless.Window1"xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"xmlns:shared="http://schemas.syncfusion.com/wpf"Title="ChromelessWindowTestSample" Height="300" Width="300" ResizeBorderBrush="Maroon" ></shared:ChromelessWindow>
+[XAML]
+<shared:ChromelessWindow x:Class="TestChromeless.Window1"xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"xmlns:shared="http://schemas.syncfusion.com/wpf"Title="ChromelessWindowTestSample" Height="300" Width="300" ResizeBorderBrush="Maroon" >
+</shared:ChromelessWindow>
 {% endhighlight  %}
+
 {% highlight c# %}
-[C#]this.ResizeBorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("Maroon"));
+
+[C#]
+this.ResizeBorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("Maroon"));
+
 {% endhighlight %}
 
 
@@ -148,10 +176,13 @@ ChromelessWindow provides a ResizeBorderThickness property, which is used to set
 To set this property, use the following code.
 
 {% highlight html %}
-[XAML]<shared:ChromelessWindow x:Class="TestChromeless.Window1"xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"Title="ChromelessWindowTestSample"  Height="300" Width="300" ResizeBorderThickness="8" ></ shared:ChromelessWindow>
+[XAML]
+<shared:ChromelessWindow x:Class="TestChromeless.Window1"xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"Title="ChromelessWindowTestSample"  Height="300" Width="300" ResizeBorderThickness="8" >
+</ shared:ChromelessWindow>
 {% endhighlight %}
 {% highlight c# %}
-[C#]this.ResizeBorderThickness = new Thickness(8);
+[C#]
+this.ResizeBorderThickness = new Thickness(8);
 {% endhighlight %}
 
 
@@ -166,10 +197,13 @@ To set this property, use the following code.
 You can customize the ChromelessWindow only when its Visual Style is set to "Default". All the properties are applied and tested on this Default style. The default Visual Style is set by using the following code.
 
 {% highlight html %}
-[XAML]<shared:ChromelessWindow x:Class="TestChromeless.Window1"xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"Title="ChromelessWindowTestSample" Height="300" Width="300"shared:SkinStorage.VisualStyle="Default" TitleBarBackground="White" ResizeBorderBrush="Black" ResizeBorderThickness="6" CornerRadius="6"></shared:ChromelessWindow>
+[XAML]
+<shared:ChromelessWindow x:Class="TestChromeless.Window1"xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"Title="ChromelessWindowTestSample" Height="300" Width="300"shared:SkinStorage.VisualStyle="Default" TitleBarBackground="White" ResizeBorderBrush="Black" ResizeBorderThickness="6" CornerRadius="6">
+</shared:ChromelessWindow>
 {% endhighlight %}
 {% highlight c# %}
-[C#]SkinStorage.SetVisualStyle(this, "Default");this.ResizeBorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("Black"));this.ResizeBorderThickness =new Thickness(6);this.TitleBarBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("White"));CornerRadius = new CornerRadius(6);
+[C#]
+SkinStorage.SetVisualStyle(this, "Default");this.ResizeBorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("Black"));this.ResizeBorderThickness =new Thickness(6);this.TitleBarBackground = new SolidColorBrush((Color)ColorConverter.ConvertFromString("White"));CornerRadius = new CornerRadius(6);
 
 {% endhighlight  %}
 

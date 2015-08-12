@@ -17,7 +17,7 @@ You can set the style of a day cell, using the DayCellsStyle property.
 
 To set this property, use the following code.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -57,17 +57,17 @@ To set this property, use the following code.
 
 </Window>
 
+{% endhighlight %}
 
+![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)
 
-{{ '![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)' | markdownify }}
-{:.image }
 
 
 ## Day Name Cells Style
 
 You can set the style of the day name cell, using the DayNameCellsStyle property. Use the following code example to set this property.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -103,17 +103,17 @@ You can set the style of the day name cell, using the DayNameCellsStyle property
 
 </Window>
 
+{% endhighlight %}
 
+![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)
 
-{{ '![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)' | markdownify }}
-{:.image }
 
 
 ## Data Template for Day Cell
 
 You can create a data template for the day cell, using the DayCellsDataTemplate property. This dependency property sets the day cell data template using the following code example.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -159,19 +159,19 @@ You can create a data template for the day cell, using the DayCellsDataTemplate 
 
 </Window>
 
+{% endhighlight %}
 
 
 
+![](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg)
 
-{{ '![](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg)' | markdownify }}
-{:.image }
 
 
 ## Data Template for Day Name Cell
 
 You can create a data template for the day name cell, using the DayNameCellsDataTemplate property. This dependency property sets the day name cell data template using the following code example.
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -217,9 +217,9 @@ You can create a data template for the day name cell, using the DayNameCellsData
 
 </Window>
 
+{% endhighlight %}
 
+![](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg)
 
-{{ '![](Styles-and-Templates_images/Styles-and-Templates_img4.jpeg)' | markdownify }}
-{:.image }
 
 

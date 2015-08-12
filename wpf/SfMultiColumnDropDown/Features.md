@@ -18,8 +18,6 @@ In order to display the data in the SfMultiColumnDropDown control, bind the data
 The following code example illustrates how bind the itemsSource to the SfMulticolumnDropDownControl in XAML.
 {% highlight xml %}
 
-[XAML]
-
 
 
 <Window.DataContext>
@@ -53,7 +51,6 @@ The following code example illustrates how to bind itemsSource to the SfMultiCol
 
 {% highlight C# %}
 
-[C#] 
 
 public MainWindow()
 
@@ -103,7 +100,7 @@ The following code example illustrate how to bind Complex property in SfMultiCol
 
 {% highlight C# %}
 
-[C#]
+
 
 public class Data:INotifyPropertyChanged
 
@@ -224,7 +221,6 @@ public class Data:INotifyPropertyChanged
 {% highlight xml %}
 
 
-[XAML]
 
 <syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"
 
@@ -280,7 +276,6 @@ The following code example illustrates the usage of Columns in the SfMultiColumn
 
 {% highlight C# %}
 
-[C#]
 
 
 
@@ -349,7 +344,7 @@ As an example of this feature, consider a simple scenario where the SfMultiColum
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window.DataContext>
 
@@ -390,7 +385,7 @@ The following code example illustrates how to set SelectedIndex in SfMultiColumn
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -424,15 +419,15 @@ The following screenshot illustrates the output of the above code.
 
 
 
-Event
+### Event
 
 _Event Table_
 
 <table>
 <tr>
-<td>
-EventName</td><td>
-Description</td></tr>
+<th>
+EventName</th><th>
+Description</th></tr>
 <tr>
 <td>
 SelectionChanged</td><td>
@@ -452,7 +447,7 @@ The following code example illustrates how to use TextSelectionOnFocus in SfMult
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfMultiColumnDropDownControl x:Name="MultiColumnControl"                                          
 
@@ -489,7 +484,6 @@ The following code example illustrates how to enable IncrementalFiltering in SfM
 {% highlight xml %}
 
 
-[XAML]
 
 
 
@@ -543,8 +537,6 @@ In above code example Name property is defined as DisplayMember. Therefore, when
 By default, SfMultiColumnDropDownControl enables you to filter text based on the Display Member. However, you can override the FilterRecord method to search the MultipleColumn in SfMultiColumnDropDownControl. To achieve this, refer to the following code example.
 
 {% highlight C# %}
-
-[C#]
 
 
 
@@ -678,9 +670,9 @@ _List of Keyboard Shortcut_
 
 <table>
 <tr>
-<td>
-Keyboard Shortcut</td><td>
-Description</td></tr>
+<th>
+Keyboard Shortcut</th><th>
+Description</th></tr>
 <tr>
 <td>
 Enter</td><td>
@@ -706,7 +698,6 @@ SfMultiColumnDropDownControl allows you to customize the DropDownPopup appearanc
 The following code example illustrates how to customize the DropDownPopup.
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -756,11 +747,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 ActualPopupHeight</td><td>
@@ -852,9 +843,9 @@ _Events Table_
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 PopupClosed</td><td>
@@ -882,7 +873,7 @@ You can keep the DropDownPopup of SfMultiColumnDropDownControl open always by us
 The following code example illustrates how to set StaysOpen property for DropDownPopup.
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -939,9 +930,9 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-UI Element</td><td>
-Properties</td></tr>
+<th>
+UI Element</th><th>
+Properties</th></tr>
 <tr>
 <td>
 SfMultiColumnDropDownControl</td><td>
