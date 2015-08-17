@@ -21,7 +21,7 @@ Business object collections can be easily bound to the Tab Navigation control us
 
 
 {% highlight xml %}
-
+XAML
 
 
 
@@ -31,6 +31,7 @@ Business object collections can be easily bound to the Tab Navigation control us
 {% endhighlight %}
 
 {% highlight c# %}
+C#
 
 
 
@@ -98,6 +99,7 @@ DependencyProperty.Register("MyCollection", typeof(ObservableCollection<TabNavi
 {% endhighlight %}
 
 {% highlight vbnet %}
+[VB.NET]
 
 
 
@@ -159,7 +161,7 @@ Partial Public Class MainPage
 
 
 {% highlight xml %}
-
+XAML
 
 
 
@@ -171,6 +173,7 @@ ItemsSource="{Binding MyCollection}">
 {% endhighlight %}
 
 {% highlight c# %}
+C#
 
 public partial class MainPage : UserControl
 
@@ -224,6 +227,7 @@ public partial class MainPage : UserControl
 
 
 {% highlight vbnet %}
+[VB.NET]
 
 
 

@@ -16,20 +16,23 @@ Clipboard support in the RichTextBoxAdv control allows you to cut, copy, and pas
 3. Paste—Pastes the copied text into RichTextBoxAdv.
 
 
-### Methods
 
 
 
-Methods table
+## Methods
+
+
+
+_Methods table_
 
 <table>
 <tr>
-<th>
-Method</th><th>
-Description</th><th>
-Parameters</th><th>
-Type</th><th>
-Return Type</th></tr>
+<td>
+Method</td><td>
+Description</td><td>
+Parameters</td><td>
+Type</td><td>
+Return Type</td></tr>
 <tr>
 <td>
 Cut()</td><td>

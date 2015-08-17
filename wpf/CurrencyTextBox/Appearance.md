@@ -23,7 +23,6 @@ The appearance of the CurrencyTextBox control can be customized by using the Vis
 * SyncOrange
 * VS2010
 * Transparent
-
 ## Blendability
 
 
@@ -36,7 +35,7 @@ You can edit the CurrencyTextBox Template to give a nice look and feel by using 
 
 
 
-    ![](Appearance_images/Appearance_img1.png)
+![](Appearance_images/Appearance_img1.png)
 
 
 
@@ -46,13 +45,13 @@ You can edit the CurrencyTextBox Template to give a nice look and feel by using 
 
 
 
-    ![](Appearance_images/Appearance_img2.png)
+![](Appearance_images/Appearance_img2.png)
 
 
 
 
 
-   ### Another way to edit the Template is as follows:
+### Another way to edit the Template is as follows:
 
 4. In Object and Timeline, right click the CurrencyTextBox control and select the Edit Template option, as displayed below. 
 5. This will open a dialog (below) where you can give your style a name and define exactly where you’d like to store it.
@@ -67,11 +66,11 @@ You can edit the CurrencyTextBox Template to give a nice look and feel by using 
 
 The result of these steps is an XAML, which is placed within your application. This XAML represents the default style for the CurrencyTextBox.
 
-{% highlight xml %}
+
 
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Style="{StaticResource CurrencyTextBoxStyle1}"/>
 
-{% endhighlight %}
+
 
 All template items can now be found in the Objects and Timeline window.
 
@@ -99,7 +98,6 @@ Here is a simple example to customize the UnFocused state of the CurrencyTextBox
     <Setter Property="Background" TargetName="Border" Value="LightGray"/>
 
 </Trigger>
-
 {% endhighlight %}
 
 

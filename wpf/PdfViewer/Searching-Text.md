@@ -1,0 +1,51 @@
+---
+layout: post
+title: Searching-Text 
+description: searching text 
+platform: wpf
+control: PDF Viewer
+documentation: ug
+---
+
+### Searching Text
+
+Essential PDF Viewer allows you to search and highlight the text in the PDF document. The search box appears when Ctrl+F is pressed and searches the text in the PDF document as displayed in the following screenshot.
+
+{{ '![C:/Users/Suresh/Desktop/UG Pravin/TextSearchWPF.png](Concept-and-Features_images/Concept-and-Features_img2.png)' | markdownify }}
+{:.image }
+
+
+The PDF Viewer control also supports searching text in the PDF document with the help of the following API. The FindText method returns true when the text given is found in the document. The dictionary contains the page index and the list of rectangular coordinates of the text found in that page. The following code example illustrates how text search can be achieved in the PDF Viewer control.
+
+[C#]
+
+bool IsMatchFound;
+
+pdfViewerControl1.Load("../../Data/Barcode.pdf");
+
+
+
+//Get the occurrences of the target text and location.
+
+Dictionary<int, List<RectangleF>> 
+
+          textSearch = new Dictionary<int, List<RectangleF>>();
+
+IsMatchFound = pdfViewerControl1.FindText("targetText", out textSearch);
+
+
+
+[VB.NET]
+
+Dim IsMatchFound As Boolean
+
+pdfViewerControl1.Load("../../Data/Barcode.pdf")
+
+
+
+'Get the occurrences of the target text and location.
+
+Dim textSearch As New Dictionary(Of Integer, List(Of RectangleF))()
+
+IsMatchFound = pdfViewerControl1.FindText("targetText", textSearch)
+

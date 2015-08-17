@@ -21,7 +21,6 @@ The main functionality of the OLAP Grid is as follows:
 ![Figure 1.OLAP Grid Control](Overview_images/Overview_img1.png)
 
 
-
 ## Key Features
 
 The important features of OLAP Grid controls are listed below:
@@ -47,14 +46,14 @@ _Convention Table_
 
 <table>
 <tr>
-<th>
-Convention</th><th>
-Icon</th><th>
-Description</th></tr>
+<td>
+Convention</td><td>
+Icon</td><td>
+Description</td></tr>
 <tr>
 <td>
 Note</td><td>
-{{'![](Overview_images/Overview_img2.jpeg)'|markdownify}}
+{{'![](Overview_images/Overview_img2.jpeg)'| markdownify }}
 Note:</td><td>
 Represents important information</td></tr>
 <tr>
@@ -65,13 +64,13 @@ Represents an example</td></tr>
 <tr>
 <td>
 Tip</td><td>
-{{'![Tip](Overview_images/Overview_img3.png)'|markdownify}}
+{{'![Tip](Overview_images/Overview_img3.png)'| markdownify }}
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
-{{'![Information](Overview_images/Overview_img4.png)'|markdownify}}
+{{'![Information](Overview_images/Overview_img4.png)'| markdownify }}
 </td><td>
 Represents additional information on the topic</td></tr>
 </table>

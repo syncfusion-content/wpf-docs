@@ -60,33 +60,7 @@ RRuleGenerator method is used to create RRule which is available in the Schedule
 Recurrence can be applied by using RRuleGenerator method.
 
 {% highlight c# %}
-[C#]            
-// Daily Recursive Appointment           
- ScheduleAppointment SchApp = new ScheduleAppointment();            
- SchApp.Subject = "Team Meeting";           
- SchApp.Notes = "Daily Recurrence";           
- SchApp.Location = "Meeting Hall 1";          
- SchApp.StartTime = currentdate;            
- SchApp.EndTime = currentdate.AddHours(4);     
- SchApp.AppointmentBackground = new SolidColorBrush((Color.FromArgb(0xFF, 0xD8, 0x00, 0x73)));          
-
- // Setting Recurrence Properties           
- RecurrenceProperties RecProp = new RecurrenceProperties();            
- 
- RecProp.RecurrenceType = RecurrenceType.Daily;           
- RecProp.IsDailyEveryNDays = true;           
-
- RecProp.DailyNDays = 2;           
- RecProp.IsRangeRecurrenceCount = true;           
- RecProp.IsRangeNoEndDate = false;          
- RecProp.IsRangeEndDate = false;           
- RecProp.RangeRecurrenceCount = 100;        
-
- // Generating RRule using ScheduleHelper          
- SchApp.RecurrenceRule = ScheduleHelper.RRuleGenerator(RecProp, SchApp.StartTime, SchApp.EndTime);            
- SchApp.IsRecursive = true;            
- AppCollection.Add(SchApp);            
- Schedule.Appointments = AppCollection;
+[C#]            // Daily Recursive Appointment            ScheduleAppointment SchApp = new ScheduleAppointment();            SchApp.Subject = "Team Meeting";            SchApp.Notes = "Daily Recurrence";            SchApp.Location = "Meeting Hall 1";            SchApp.StartTime = currentdate;            SchApp.EndTime = currentdate.AddHours(4);            SchApp.AppointmentBackground = new SolidColorBrush((Color.FromArgb(0xFF, 0xD8, 0x00, 0x73)));            // Setting Recurrence Properties            RecurrenceProperties RecProp = new RecurrenceProperties();            RecProp.RecurrenceType = RecurrenceType.Daily;            RecProp.IsDailyEveryNDays = true;            RecProp.DailyNDays = 2;            RecProp.IsRangeRecurrenceCount = true;            RecProp.IsRangeNoEndDate = false;            RecProp.IsRangeEndDate = false;            RecProp.RangeRecurrenceCount = 100;            // Generating RRule using ScheduleHelper            SchApp.RecurrenceRule = ScheduleHelper.RRuleGenerator(RecProp, SchApp.StartTime, SchApp.EndTime);            SchApp.IsRecursive = true;            AppCollection.Add(SchApp);            Schedule.Appointments = AppCollection;
 {% endhighlight %}
 
 ![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_25.jpg](Recurrence_images/Recurrence_img1.jpeg)

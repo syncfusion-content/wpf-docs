@@ -1,12 +1,11 @@
 ---
 layout: post
 title: Range-Settings 
-description: Range Settings 
+description: range settings 
 platform: wpf
 control: Bullet Graph 
 documentation: ug
 ---
-
 
 # Range Settings 
 
@@ -14,14 +13,13 @@ Ranges for a Bullet Graph are a collection of qualitative ranges. A qualitative 
 
 
 
-## Customizing Range:
+### Customizing Range:
 
 The width of the ranges can be customized by setting the QualitativeRangesSize property. By changing RangeStroke of the qualitative range, the stroke of the range can be personalized. By setting the RangeOpacity of the qualitative range, the opacity of the range is modified.
 
-## Code Example:
-
+### Code Example:
 {% highlight html %}
-
+[XAML]
 
         <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -60,8 +58,8 @@ The width of the ranges can be customized by setting the QualitativeRangesSize p
         </syncfusion:SfBulletGraph>
 
 {% endhighlight %}
-
 {% highlight c# %}
+[C#]
 
 
 
@@ -101,10 +99,11 @@ The width of the ranges can be customized by setting the QualitativeRangesSize p
 
 By setting BindWithRangeStrokeToLabels, the stroke of the labels is set related to the stroke of the specified ranges. Similarly, by setting BindWithRangeStrokeToTicks, the stroke of the ticks is set related to the stroke of the specified ranges.
 
-## Code Example:
-
+### Code Example:
 {% highlight html %}
-      <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
+[XAML]
+
+        <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
                                   QualitativeRangesSize="30" 
 
@@ -145,8 +144,8 @@ By setting BindWithRangeStrokeToLabels, the stroke of the labels is set related 
         </syncfusion:SfBulletGraph>
 
 {% endhighlight  %}
-
 {% highlight c# %}
+[C#]
 
 
 
@@ -181,5 +180,14 @@ By setting BindWithRangeStrokeToLabels, the stroke of the labels is set related 
 
 
 ![C:/Users/Giftline/Desktop/New folder/6.jpg](Concept-and-Features_images/Concept-and-Features_img8.png)
+
+
+
+
+
+
+
+
+
 
 

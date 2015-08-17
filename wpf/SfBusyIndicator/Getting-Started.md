@@ -15,7 +15,7 @@ Assembly: Syncfusion.SfBusyIndicator.WPF (in Syncfusion.SfBusyIndicator.WPF.dll)
 
 The following code example shows how to create the SfBusyIndicator from XAML and code behind respectively.
 {% highlight html %}
-
+[XAML]
 
 
 
@@ -32,7 +32,7 @@ The following code example shows how to create the SfBusyIndicator from XAML and
 {% endhighlight  %}
 {% highlight c# %}
 
-
+[C#]
 
 SfBusyIndicator busyIndicator = new SfBusyIndicator();
 

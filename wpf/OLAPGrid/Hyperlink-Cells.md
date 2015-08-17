@@ -22,8 +22,10 @@ Hyperlink Cell’s property can be applied to the following cells:
 ## Enabling hyperlink cells
 
 The Hyperlink cells can be enabled by the following property of OlapGrid such as:
-{% highlight c# %}
-[C#]
+
+  {% highlight c# %}
+
+    [C#]
 
 
 
@@ -46,12 +48,16 @@ this.OlapGrid1.SummaryColumnStyle.IsHyperlinkCell = true;
 // To Enable Hyperlink for Summary Row
 
 this.OlapGrid1.SummaryRowStyle.IsHyperlinkCell = true;
-{% endhighlight  %}
-{% highlight vbnet %}
+
+
+    {% endhighlight %}
 
 
 
-[VB]
+
+  {% highlight vbnet %}
+
+    [VB]
 
 
 
@@ -75,13 +81,19 @@ Me.OlapGrid1.SummaryColumnStyle.IsHyperlinkCell = True
 
 Me.OlapGrid1.SummaryRowStyle.IsHyperlinkCell = True
 
+    {% endhighlight %}
 
-{% endhighlight  %}
+
+
+
+
 
 
 The Hyperlink Click event can be tagged by the following way:
-{% highlight c# %}
-[C#]
+
+  {% highlight c# %}
+
+    [C#]
 
 
 
@@ -89,12 +101,15 @@ The Hyperlink Click event can be tagged by the following way:
 
 this.OlapGrid1.LinkClick += new Syncfusion.Windows.Grid.Olap.LinkLabelClickEventHander(OlapGrid1_LinkClick);
 
-
-{% endhighlight  %}
-{% highlight vbnet %}
+    {% endhighlight %}
 
 
-[VB]
+
+
+
+  {% highlight vbnet %}
+
+   [VB]
 
 
 
@@ -102,13 +117,19 @@ this.OlapGrid1.LinkClick += new Syncfusion.Windows.Grid.Olap.LinkLabelClickEvent
 
 Me.OlapGrid1.LinkClick += New Syncfusion.Windows.Grid.Olap.LinkLabelClickEventHander(OlapGrid1_LinkClick);
 
+    {% endhighlight %}
 
 
-{% endhighlight  %}
+
+
+
+
 
 The LinkClick event will return the clicked Cell Descriptor.
-{% highlight c# %}
-[C#]
+
+  {% highlight c# %}
+
+   [C#]
 
 
 
@@ -120,12 +141,15 @@ void OlapGrid1_LinkClick(object sender, Syncfusion.Windows.Grid.Olap.LinkLabelEv
 
 }  
 
+    {% endhighlight %}
 
 
-{% endhighlight  %}
-{% highlight vbnet %}
 
-[VB]
+
+
+  {% highlight vbnet %}
+
+   [VB]
 
 
 
@@ -135,23 +159,24 @@ Dim uniqueName As String = e.PivotCellDescriptor.UniqueName
 
 End Sub
 
-
-{% endhighlight  %}
-
-
-![Grid Hyperlink Col](Hyperlink-Cells_images/Hyperlink-Cells_img1.png)' | markdownify }}
+    {% endhighlight %}
 
 
 
-![](Hyperlink-Cells_images/Hyperlink-Cells_img2.png)' | markdownify }}
 
 
 
-{{ '![](Hyperlink-Cells_images/Hyperlink-Cells_img3.png)' | markdownify }}
+
+![Grid Hyperlink Col](Hyperlink-Cells_images/Hyperlink-Cells_img1.png)
 
 
+![](Hyperlink-Cells_images/Hyperlink-Cells_img2.png)
 
-### Sample Location
+
+![](Hyperlink-Cells_images/Hyperlink-Cells_img3.png)
+
+
+## Sample Location
 
 A sample demo is available at the following location:
 

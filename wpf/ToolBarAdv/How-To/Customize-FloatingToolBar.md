@@ -7,7 +7,7 @@ control: ToolBarAdv
 documentation: ug
 ---
 
-# Customize FloatingToolBar
+### Customize FloatingToolBar
 
 FloatingToolBar style can be customized by setting the _FloatingToolBarStyle_ property in ToolBarManager.
 

@@ -32,7 +32,7 @@ The steps to add a chart header are as follows:
 
 1. In general, ChartSeries contains the ChartArea instance, which can be used to customize the OlapArea. The following code snippet describes how to add a chart header to an OlapChart:
 
-  {% highlight c# %}
+  ~~~ c#
 
     [C#]
 
@@ -40,13 +40,14 @@ The steps to add a chart header are as follows:
 
     this.olapchart1.Series[0].Area.Header = "Simple report";
 	
- {% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
  
 
 
 
-  {% highlight vbnet %}
+  ~~~ vbnet
 
     [VB]
 
@@ -54,15 +55,16 @@ The steps to add a chart header are as follows:
 
     Me.olapchart1.Series(0).Area.Header = "Simple report"
 	
-  {% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
     
 
 
 
+> __
 
-
- _Note: The series will be available only after the data is bound to the control. In other words, you can access the series property of the OlapChart only after the call to DataBind() is made._
+> _Note: The series will be available only after the data is bound to the control. In other words, you can access the series property of the OlapChart only after the call to DataBind() is made._
 
 See also
 
@@ -95,7 +97,7 @@ These properties are explained in the following topics:
 
 OlapArea allows you to customize the border properties. The following code snippets explain how these properties can be customized:
 
-## BorderBrush
+# BorderBrush
 
  {% highlight c# %}
  
@@ -128,7 +130,7 @@ this.olapchart1.Series[0].Area.BorderBrush = Brushes.Black;
 
 
 
-## BorderThickness
+# BorderThickness
 
  {% highlight c# %}
  
@@ -163,7 +165,7 @@ this.olapchart1.Series[0].Area.BorderBrush = Brushes.Black;
 
 
 
-## CornerRadius
+# CornerRadius
 
  {% highlight c# %}
  
@@ -207,7 +209,6 @@ this.olapchart1.Series[0].Area.BorderBrush = Brushes.Black;
 
 OlapArea allows you to customize the background properties in an easy manner. The following code snippets explain how to customize the OlapArea with various background properties:
 
-## Background
  {% highlight c# %}
  
    [C#]
@@ -231,6 +232,7 @@ OlapArea allows you to customize the background properties in an easy manner. Th
 
  {% endhighlight %}
 
+# Background
 
 
 
@@ -242,8 +244,7 @@ OlapArea allows you to customize the background properties in an easy manner. Th
 
 
 
-
-## GridBackground
+# GridBackground
 
  {% highlight c# %}
  
@@ -287,7 +288,7 @@ OlapArea allows you to customize the background properties in an easy manner. Th
 
 Typically, the primary axis and the secondary axis font settings will override the font properties applied to their content in the OlapArea. To set the font properties such as Foreground, FontFamily, FontSize, and FontWeight consider using the font properties available in the primary and the secondary axis.
 
-## FontStyle
+# FontStyle
 
  {% highlight c# %}
  
@@ -336,11 +337,11 @@ _Chart Types table_
 
 <table>
 <tr>
-<th>
-{{ '**Chart Type**' | markdownify }}</th><th>
-{{ '**Series Stroke**' | markdownify }}</th><th>
-{{ '**Series Stroke Thickness**' | markdownify }}</th><th>
-{{ '**Series Interior**' | markdownify }}</th></tr>
+<td>
+{{ '**Chart Type**' | markdownify }}</td><td>
+{{ '**Series Stroke**' | markdownify }}</td><td>
+{{ '**Series Stroke Thickness**' | markdownify }}</td><td>
+{{ '**Series Interior**' | markdownify }}</td></tr>
 <tr>
 <td>
 {{ '**Column/Bar/Area**' | markdownify }}</td><td>
@@ -360,8 +361,7 @@ Affects the border color of the series.</td><td>
 Affects the border thickness of the series.</td><td>
 No effect</td></tr>
 </table>
-
-##See also
+## See also
 
 Series, ChartAdornmentInfo
 
@@ -513,9 +513,10 @@ Me.olapchart1.Series(0).StrokeThickness = 4
 
 
 
- 
 
- _Note: The behaviour of the series border will vary for different chart types. The following illustration describes them in detail._
+> 
+
+> _Note: The behaviour of the series border will vary for different chart types. The following illustration describes them in detail._
 
 The series border is applied for the first series of a Column chart by using the StrokeThickness property. Notice that the first series element is surrounded with the applied border.
 
@@ -555,7 +556,7 @@ The following data template will be used to customize the series:
                           Height="{Binding ElementName=myCanvas, 
 
                           Path=ActualHeight}" >
-                        <Border Name="ColumnRect"                          VerticalAlignment="Bottom"                          Width="{Binding Width}" Height="{Binding Height}"                        CornerRadius="8,8,0,0" Background="{Binding Interior}">
+                        <Border Name="ColumnRect"                           VerticalAlignment="Bottom"                           Width="{Binding Width}" Height="{Binding Height}"                          CornerRadius="8,8,0,0" Background="{Binding Interior}">
                         </Border>
                     </Grid>
                 </Canvas>
@@ -712,11 +713,11 @@ _Properties Table_
 
 <table>
 <tr>
-<th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description **' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }} </th></tr>
+<td>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description **' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }} </td></tr>
 <tr>
 <td>
 SeriesAnimateOption</td><td>
@@ -742,7 +743,6 @@ Gets or sets the animation duration for each series.</td><td>
 Dependency</td><td>
 TimeSpan</td></tr>
 </table>
-
 ## Sample Link
 
 The samples can be found in the following location:
@@ -954,9 +954,9 @@ Me.olapChart.Series(0).Area.SecondaryAxis.SetValue(
 
 
 
- 
+> 
 
- _Note: For bar type charts, such as Bar, Stacking bar, and Stacking100 Bar you can disable the horizontal grid lines by using the ShowGridLinesProperty of the PrimaryAxis._
+> _Note: For bar type charts, such as Bar, Stacking bar, and Stacking100 Bar you can disable the horizontal grid lines by using the ShowGridLinesProperty of the PrimaryAxis._
 
 # How to disable vertical grid lines?
 
@@ -996,9 +996,9 @@ Me.olapChart.Series(0).Area.PrimaryAxis.SetValue(
 
 
 
- 
+> 
 
- _Note: For bar type charts, such as Bar, Stacking bar, and Stacking100 Bar you can disable the vertical grid lines by using the ShowGridLinesProperty of the SecondaryAxis._
+> _Note: For bar type charts, such as Bar, Stacking bar, and Stacking100 Bar you can disable the vertical grid lines by using the ShowGridLinesProperty of the SecondaryAxis._
 
 # How to display % in secondary axis?
 
@@ -1455,9 +1455,9 @@ Me.olapChart.Legend.ColumnsCount = 2
 
 
 
- 
+> 
 
- _Note: The RowsCount and the ColumnsCount is used to create the rows and the columns in the Grid layout control, which is used to place the legends. If you give extra row or column count than the legend availability then it will display empty spaces to fill the structure of the grid. The following illustration explains this in detail._
+> _Note: The RowsCount and the ColumnsCount is used to create the rows and the columns in the Grid layout control, which is used to place the legends. If you give extra row or column count than the legend availability then it will display empty spaces to fill the structure of the grid. The following illustration explains this in detail._
 
 The following chart has only one legend, but we have set RowsCount = 2 and ColumnsCount = 2. Therefore, the resultant legend will appear as follows: 
 
@@ -2432,9 +2432,10 @@ Dim olapChart As OlapChart = New OlapChart()
 olapChart.ChartType = ChartTypes.Pie
 
  {% endhighlight %}
- 
 
- _Note: Pie chart should not be used for Comparison analysis of large data points, because it is harder for people to estimate angles rather than distance._
+> 
+
+> _Note: Pie chart should not be used for Comparison analysis of large data points, because it is harder for people to estimate angles rather than distance._
 
 A sample, which demonstrates the Pie chart, can be found in the following installation location:
 
@@ -2469,7 +2470,6 @@ The available palettes in the OlapChart control are as follows:      
 * Palette7
 * Palette8 
 * Custom
-
 # How to apply a built-in chart palette to an OlapChart?
 
 
@@ -2836,11 +2836,11 @@ The following image shows an OlapChart with expanders disabled:
 ![](Core-Features_images/Core-Features_img37.png)
 
 
- _Note: Since this property interacts with the OlapDataManager you need to assign this property before the call to DataBind() or DataBind() method in the OlapChart and should be invoked after changing this property to see this in effect._
+> _Note: Since this property interacts with the OlapDataManager you need to assign this property before the call to DataBind() or DataBind() method in the OlapChart and should be invoked after changing this property to see this in effect._
 
 # KPI
 
-## Definition
+# Definition
 
 Key Performance Indicator (KPI) is a collection of calculations that are associated with a measure group in a cube that are used to evaluate business success. Typically, these calculations are a combination of Multidimensional Expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how Grid applications should display the results of the KPI's calculations.
 
@@ -3026,15 +3026,15 @@ The KPI Elements can be defined in the OlapReport in the following way:
 
 # Data Source
 
-## Definition
+# Definition
 
 Olap Grid controls use ADO-MD, which is Microsoft's data access technology of choice for retrieving data from OLAP servers. While ADO-MD was built primarily to retrieve OLAP data from SQL Server Analysis Services (Microsoft's OLAP Server), ADO MD's adherence to industry standards like XML/A, now allows you to access any OLAP server (SAP, SAS, Hyperion, etc.) through ADO MD. Therefore, it provides you the ability to visualize by using the Syncfusion OLAP control, OLAP data from many of the data sources including Microsoft's SSAS.
 
-## Binding to OLAP Data
+# Binding to OLAP Data
 
 OlapData can be bound to the OlapGrid with the help of the OlapDataManager. The OlapDataManager requires the OlapReport, which contains the Dimension and the Measure Elements.
 
-## Relational Data Support
+# Relational Data Support
 
 OlapGrid control supports binding of Relational Data Source like DataTable or IList for data analysis. It organizes the data into a cross-tabulated form based on the parameters defined in the OlapData Manager. It sorts and sums independently of the original data layout in the grid.
 
@@ -3097,9 +3097,9 @@ _Property table_
 
 <table>
 <tr>
-<th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+<td>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 ChartType</td><td>
@@ -3122,9 +3122,9 @@ _Methods table_
 
 <table>
 <tr>
-<th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+<td>
+{{ '**Method**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 ChartDockPanel.SetDock</td><td>
@@ -3207,9 +3207,9 @@ _Property Table_
 
 <table>
 <tr>
-<th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+<td>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 BorderThickness</td><td>
@@ -3340,9 +3340,9 @@ _Property Table_
 
 <table>
 <tr>
-<th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+<td>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 PrimaryAxis.LabelFontFamily</td><td>
@@ -3400,9 +3400,9 @@ _Property Table_
 
 <table>
 <tr>
-<th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+<td>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 PrimaryAxis.LabelFontFamily</td><td>
@@ -3500,11 +3500,11 @@ _Property Table_
 
 <table>
 <tr>
-<th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-Type </th><th>
-Data Type </th></tr>
+<td>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+Type </td><td>
+Data Type </td></tr>
 <tr>
 <td>
 VisualStyle </td><td>
@@ -3563,9 +3563,9 @@ _Property Table_
 
 <table>
 <tr>
-<th>
-{{ '**Properties**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+<td>
+{{ '**Properties**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 ZoomInButtonVisibility</td><td>
@@ -3708,9 +3708,9 @@ _Methods Table_
 
 <table>
 <tr>
-<th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+<td>
+{{ '**Method**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 ExportIntoNewDoc(string filename)</td><td>
@@ -3849,11 +3849,11 @@ _Property Table_
 
 <table>
 <tr>
-<th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }}</th><th>
-Type </th><th>
-Data Type </th></tr>
+<td>
+{{ '**Property**' | markdownify }} </td><td>
+{{ '**Description**' | markdownify }}</td><td>
+Type </td><td>
+Data Type </td></tr>
 <tr>
 <td>
 FlowDirection</td><td>

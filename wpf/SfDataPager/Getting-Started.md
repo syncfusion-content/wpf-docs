@@ -69,104 +69,106 @@ The following steps help you to use the SfDataPager in an application:
 
 
 
-   ![C:/Users/ilanchezhiyan/Desktop/drag.png](Getting-Started_images/Getting-Started_img2.png)
+![C:/Users/ilanchezhiyan/Desktop/drag.png](Getting-Started_images/Getting-Started_img2.png)
 
 
 
 3. When you drag the SfDataPager to the window, it automatically adds the required references to the current application.To add the SfDataPager using code, you can add the following assemblies to the project.
-   1. Syncfusion.Data.WPF
-   2. Syncfusion.SfGrid.WPF
+1. Syncfusion.Data.WPF
+2. Syncfusion.SfGrid.WPF
 4. You can either drag the control from Visual Studio or Expression Blend, or add the control to your project manually. You need to add the namespace to make use of SfDataPager in your application.
 
-   ~~~ xml
+{% highlight html %}
 
-		Window xmlns:datapager="http://schemas.syncfusion.com/wpf">
+[XAML]
 
-		<Grid>
+<Window xmlns:datapager="http://schemas.syncfusion.com/wpf">
 
-		<datapager:SfDataPager x:Name="sfDataPager"/>
+ <Grid>
+
+      <datapager:SfDataPager x:Name="sfDataPager"/>
 
 
 
-		</Grid>
+  </Grid>
 
-		</Window>
+</Window>
 
-   ~~~
-   {:.prettyprint%}
+{% endhighlight %}
 
 5. Create Business object class named as OrderInfo
+{% highlight c# %}
+[C#]
 
-   ~~~ cs
-		public class OrderInfo
+public class OrderInfo
 
-		{
+{
 
-		int orderID;
+    int orderID;
 
-		string customerId;
+    string customerId;
 
-		string country;
+    string country;
 
-		string customerName;
+    string customerName;
 
-		string shippingCity;
+    string shippingCity;
 
-		public int OrderID
+    public int OrderID
 
-		{
+    {
 
           get {   return orderID;  }
 
           set {   orderID = value; }
 
-		}
+    }
 
-		public string CustomerID
+    public string CustomerID
 
-		{
+    {
 
           get {  return customerId; }
 
           set {  customerId = value; }
 
-		}
+    }
 
-		public string CustomerName
+    public string CustomerName
 
-		{
+    {
 
           get {  return customerName; }
 
           set {  customerName = value;}
 
-		}
+    }
 
-		public string Country
+    public string Country
 
-		{
+    {
 
           get { return country; }
 
           set  {  country = value; }
 
-		}
+    }
 
-		public string ShipCity
+    public string ShipCity
 
-		{
+    {
 
          get {  return shippingCity; }
 
          set {  shippingCity = value; }
 
-		}
+    }
 
-		public OrderInfo(int orderId, string customerName, string country, string     
+    public OrderInfo(int orderId, string customerName, string country, string     
 
-		customerId,string shipCity)
+    customerId,string shipCity)
 
-		{
+    {
 
          this.OrderID = orderId;
 
@@ -178,83 +180,83 @@ The following steps help you to use the SfDataPager in an application:
 
          this.ShipCity = shipCity;
 
-		}
+    }
 
-		}
+}
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight  %}
 
 6. Add the following code in ViewModel class
+{% highlight c# %}
+[C#]
 
-   ~~~ cs
-		public class ViewModel
+public class ViewModel
 
-		{
+{
 
-		ObservableCollection<OrderInfo> orderCollection;
+    ObservableCollection<OrderInfo> orderCollection;
 
-		public ObservableCollection<OrderInfo> OrderInfoCollection
+    public ObservableCollection<OrderInfo> OrderInfoCollection
 
-		{
+    {
 
-			get { return orderCollection; }
+        get { return orderCollection; }
 
-			set { orderCollection = value; }
+        set { orderCollection = value; }
 
-		}
+    }
 
-		public ViewModel()
+    public ViewModel()
 
-		{
+    {
 
-			orderCollection = new ObservableCollection<OrderInfo>();
+        orderCollection = new ObservableCollection<OrderInfo>();
 
-			this.GenerateOrders();
+        this.GenerateOrders();
 
-		}
+    }
 
-		private void GenerateOrders()
+    private void GenerateOrders()
 
-		{
+    {
 
-			orderCollection.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
+        orderCollection.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
 
-			orderCollection.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "México D.F."));
+        orderCollection.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "México D.F."));
 
-			orderCollection.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "México D.F."));
+        orderCollection.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "México D.F."));
 
-			orderCollection.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
+        orderCollection.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
 
-			orderCollection.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Luleå"));
+        orderCollection.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Luleå"));
 
-			orderCollection.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+        orderCollection.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
 
-			orderCollection.Add(new OrderInfo(1007, "Frédérique Citeaux", "France", "BLONP", "Strasbourg"));
+        orderCollection.Add(new OrderInfo(1007, "Frédérique Citeaux", "France", "BLONP", "Strasbourg"));
 
-			orderCollection.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
+        orderCollection.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
 
-			orderCollection.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
+        orderCollection.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
 
-			orderCollection.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
+        orderCollection.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
 
-			}
+    }
 
-		}
+}
 
-   ~~~
-   {:.prettyprint}
-   
+{% endhighlight  %}
+
 7. Set the ViewModel instance as DataContext to window. Now, you can bind the data collection to the SfDataPagerSource property.
+{% highlight html %}
+[XAML]
 
-   ~~~ xml
-		<Window.DataContext>
+<Window.DataContext>
 
-		<local:ViewModel/>
+  <local:ViewModel/>
 
-		</Window.DataContext>
+</Window.DataContext>
 
-        <Grid> 
+<Grid> 
 
          <datapager:SfDataPager x:Name="sfDataPager" 
 
@@ -268,21 +270,21 @@ The following steps help you to use the SfDataPager in an application:
 
                                 Source="{Binding OrderInfoCollection}" />
 
-            </Grid>
+</Grid>
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight  %}
 
 8. Then bind the PagedSource property of the SfDataPager control into the SfDataGridItemsSource property.
+{% highlight html %}
+[XAML]
 
-   ~~~ xml
-		<Window.DataContext>
+<Window.DataContext>
 
-		<local:Viewmodel/>
+  <local:Viewmodel/>
 
-		</Window.DataContext>
+</Window.DataContext>
 
-		<Grid>
+<Grid>
 
         <Grid.RowDefinitions>
 
@@ -308,11 +310,10 @@ The following steps help you to use the SfDataPager in an application:
 
                                 Source="{Binding OrdersDetails}" />
 
-		</Grid>
+</Grid>
 
-   ~~~
-   {:.prettyprint}
-	
+{% endhighlight  %}
+
 The following screenshot displays the output for Implementation of the SfDataPager in the SfDataGrid Control.
 
 

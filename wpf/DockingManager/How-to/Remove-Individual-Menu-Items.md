@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-## Remove Individual Menu Items
+### Remove Individual Menu Items
 
 We can remove individual MenuItem in ContextMenu using the following properties.  The removal can be done by right clicking on it.
 
@@ -34,17 +34,17 @@ The below code shows how to disable Tabbed menu item using ShowTabbedMenuItem at
 
 
 
-{% highlight xml %}
-<syncfusion:DockingManager>
-     <Grid Name="grid1" syncfusion:DockingManager.ShowTabbedMenuItem="False"/> 
-</syncfusion:DockingManager>
-{% endhighlight %}
-{% highlight c# %}
-DockingManager.SetShowTabbedMenuItem(grid1, false);
+<table>
+<tr>
+<td>
+[XAML]<syncfusion:DockingManager>     <Grid Name="grid1" syncfusion:DockingManager.ShowTabbedMenuItem="False"/>  </syncfusion:DockingManager></td></tr>
+<tr>
+<td>
+[C#]DockingManager.SetShowTabbedMenuItem(grid1, false);</td></tr>
+</table>
 
-{% endhighlight %}
 
-![](Remove-Individual-Menu-Items_images/Remove-Individual-Menu-Items_img1.png)
+{{ '![](Remove-Individual-Menu-Items_images/Remove-Individual-Menu-Items_img1.png)' | markdownify }}
 
 
 

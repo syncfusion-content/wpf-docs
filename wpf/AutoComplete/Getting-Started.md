@@ -9,27 +9,29 @@ documentation: ug
 
 # Getting Started
 
-### Structure of the AutoComplete Control
+## Structure of the AutoComplete Control
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
-### Add AutoComplete to an Application
+## Add AutoComplete to an Application
 
 Following are the step-by-step instructions to add an AutoComplete control in a WPF application. The AutoComplete control can be created by using either C#, XAML code. It can also be created using Blend.
 
-#### Creating AutoComplete using C#
+### Creating AutoComplete using C#
 
 1. Open Visual Studio, On the File menu click New -> Project. This opens the New Project Dialog box.
 
-   ![](Getting-Started_images/Getting-Started_img2.png)
+
+
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
 2. In the Project Dialog window, select WPF application and, in the Name field type the name of the project. Click OK.
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -37,62 +39,65 @@ Following are the step-by-step instructions to add an AutoComplete control in a 
 
 3. Go to Solution Explorer. Right-click References folder and click Add Reference. Add the Syncfusion.Tools.WPF.dll assembly to the project References folder.
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
 
-   ~~~ xml
-		xmlns:syncfusion="clr-namespace:
 
-		Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.Wpf"
+![](Getting-Started_images/Getting-Started_img4.png)
 
-   ~~~
-   {:.prettyprint }	
+
+
+
+{% highlight xml %}
+
+[XAML]
+
+xmlns:syncfusion="clr-namespace:
+
+Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.Wpf"
+{% endhighlight %}
 
 
 4. Add Syncfusion.Tools.WPF reference in XAML and C# code as follows.
-   
-   ~~~ cs
+{% highlight c# %}
 
+[C#]
 
-		using Syncfusion.Windows.Tools.Controls;
+using Syncfusion.Windows.Tools.Controls;
+{% endhighlight %}
 
-   ~~~
-   {:.prettyprint }
 
 5. Click and open the C# file. Add AutoComplete to the application.
+{% highlight c# %}
 
-   ~~~ cs
+[C#]
 
+AutoComplete AutoComplete1 = new AutoComplete();
 
-		AutoComplete AutoComplete1 = new AutoComplete();
+List<String> ProductSource = new List<String>();
 
-		List<String> ProductSource = new List<String>();
+customSource.Add("WPF");
 
-		customSource.Add("WPF");
+customSource.Add("Chart");
 
-		customSource.Add("Chart");
+customSource.Add("GridView");
 
-		customSource.Add("GridView");
+customSource.Add("WF");
 
-		customSource.Add("WF");
+customSource.Add("Xlsio");
 
-		customSource.Add("Xlsio");
+customSource.Add("Business Intelligence");
 
-		customSource.Add("Business Intelligence");
+customSource.Add("Tools");
 
-		customSource.Add("Tools");
+customSource.Add("Silverlight");
 
-		customSource.Add("Silverlight");
+customSource.Add("Schedule");
 
-		customSource.Add("Schedule");
+customSource.Add("Mvc");
 
-		customSource.Add("Mvc");
+customSource.Add("Pdf");
 
-		customSource.Add("Pdf");
-
-		this.AutoComplete1.CustomSource = ProductSource;
-
-   ~~~
-   {:.prettyprint }	
+this.AutoComplete1.CustomSource = ProductSource;
+{% endhighlight %}
 
 
 ![](Getting-Started_images/Getting-Started_img5.png)
@@ -105,7 +110,9 @@ Following are the steps to create the AutoComplete by using VisualStudio in XAML
 
 1. Create a new WPF application in Visual Studio. In Visual Studio Toolbox, click SyncfusionWPF Toolbox tab and select AutoComplete.
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+
+
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -113,7 +120,7 @@ Following are the steps to create the AutoComplete by using VisualStudio in XAML
 
 2. Drag-and-drop the AutoComplete to Design View, to add AutoComplete to the application.
 
-   ![](Getting-Started_images/Getting-Started_img7.png)
+![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
@@ -128,7 +135,6 @@ Following are the steps to create the AutoComplete by using VisualStudio in XAML
 
 <syncfusion:AutoComplete x:Name="AutoComplete1" Source="Custom” CustomSource="{StaticResource Src}"/>
 {% endhighlight %}
-
 ![](Getting-Started_images/Getting-Started_img8.png)
 
 
@@ -141,7 +147,7 @@ The AutoComplete control provides full Blend support. Here are the step-by-step 
 
 
 
-   ![](Getting-Started_images/Getting-Started_img9.png)
+![](Getting-Started_images/Getting-Started_img9.png)
 
 
 
@@ -151,7 +157,7 @@ The AutoComplete control provides full Blend support. Here are the step-by-step 
 
 
 
-   ![](Getting-Started_images/Getting-Started_img10.png)
+![](Getting-Started_images/Getting-Started_img10.png)
 
 
 
@@ -163,13 +169,13 @@ The AutoComplete control provides full Blend support. Here are the step-by-step 
 
 
 
-   ![](Getting-Started_images/Getting-Started_img11.png)
+![](Getting-Started_images/Getting-Started_img11.png)
 
 
 
 5. Drag the AutoComplete control to the Design View.
 
-   ![](Getting-Started_images/Getting-Started_img12.png)
+![](Getting-Started_images/Getting-Started_img12.png)
 
 
 
@@ -177,7 +183,7 @@ The AutoComplete control provides full Blend support. Here are the step-by-step 
 
 6. You can now customize the properties of the AutoComplete in the Properties Window.
 
-   ![](Getting-Started_images/Getting-Started_img13.png)
+![](Getting-Started_images/Getting-Started_img13.png)
 
 
 

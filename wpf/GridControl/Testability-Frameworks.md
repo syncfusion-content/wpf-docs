@@ -40,16 +40,17 @@ Each cell in the grid is considered as an Automation Element, which in itself ha
 
 
 
-### Following are the different set of identifiers that can be obtained for each Grid Cell Element:
+Following are the different set of identifiers that can be obtained for each Grid Cell Element:
 
-* GridItemPattern
-* ValuePattern
-* SelectionItemPattern
-* ScrollItemPattern
-
-> _Note: With NUnit or any other test frameworks, using TestApi from codeplex.com makes it quite easy to write unit tests. We are not recommending/fixing any issues with TestApi, it is an open source library from Microsoft._
-
-### Using UI Automation Patterns
+<table>
+<tr>
+<td>
+* GridItemPattern* ValuePattern* SelectionItemPattern* ScrollItemPattern</td></tr>
+<tr>
+<td>
+> <br>{{'_Note: With NUnit or any other test frameworks, using TestApi from codeplex.com makes it quite easy to write unit tests. We are not recommending/fixing any issues with TestApi, it is an open source library from Microsoft._'| markdownify}}</td></tr>
+</table>
+Using UI Automation Patterns
 
 Let us walkthrough the following sample application that demonstrates the usage of UI Automation using a Console application.
 
@@ -63,7 +64,7 @@ The following set of instructions illustrates the same.
 
 
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img3.png)
+![](Testability-Frameworks_images/Testability-Frameworks_img3.png)
 
 
 
@@ -71,61 +72,60 @@ The following set of instructions illustrates the same.
 
 2. Create a console project as shown below.
 
-   ~~~ xml
-		[XAML]
+
+{% highlight html %}
+[XAML]
 
 
 
-		<Grid>
+<Grid>
 
-			<ScrollViewer CanContentScroll="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+    <ScrollViewer CanContentScroll="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
 
-				<syncfusion:GridControl x:Name="grid" />
+        <syncfusion:GridControl x:Name="grid" />
 
-			</ScrollViewer>
+    </ScrollViewer>
 
-		</Grid>
+</Grid>
 
-   ~~~
-   {:.prettyprint}
-   ~~~ CS
+{% endhighlight  %}
+{% highlight c# %}
 
-	[C#]
-
+[C#]
 
 
-	private void InitGrid()
 
-		{
+private void InitGrid()
 
-			var model = this.grid.Model;
+{
 
-			model.RowCount = 10;
+    var model = this.grid.Model;
 
-			model.ColumnCount = 10;
+    model.RowCount = 10;
 
-			model.QueryCellInfo += (s, e) =>
+    model.ColumnCount = 10;
 
-			{
+    model.QueryCellInfo += (s, e) =>
 
-				e.Style.CellValue = string.Format("Cell {0} / {1}", e.Cell.RowIndex, e.Cell.ColumnIndex);
+    {
 
-			};
+        e.Style.CellValue = string.Format("Cell {0} / {1}", e.Cell.RowIndex, e.Cell.ColumnIndex);
 
-		}
+    };
 
-   ~~~
-   {:.prettyprint}
+}
+
+{% endhighlight  %}
 
 3. Enter the path where the output of the Window sample has to be saved, in the Output path field.
 
 
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img4.png)
+![](Testability-Frameworks_images/Testability-Frameworks_img4.png)
 
 
 
- Note: Mention the output path as the Console application's bin\Debug directory.
+> Note: Mention the output path as the Console application's bin\Debug directory.
 
 The following sample code uses TestApi assemblies.
 
@@ -167,11 +167,11 @@ private static AutomationElement GetGridAut(out AutomatedApplication app)
 
 {% endhighlight  %}
 
- Note: We have added minimal set of Linq-to-UIAutomation classes that would translate the LINQ query for searching the AutomationElement from the root hierarchy. With Linq-To-UIAutomation library, only First method is supported now.
+> Note: We have added minimal set of Linq-to-UIAutomation classes that would translate the LINQ query for searching the AutomationElement from the root hierarchy. With Linq-To-UIAutomation library, only First method is supported now.
 
 The Grid Automation element is obtained.
 
-### Obtaining the Automation Pattern
+Obtaining the Automation Pattern
 
 Once you get the actual Grid's Automation Element, you can then make use of different Patterns supported by the control. The following code example illustrates the same.
 
@@ -253,91 +253,94 @@ Initial steps before creating the Coded UI Test project:
 
 1. Syncfusion.VisualStudio.TestTools.UITest.GridExtensions.dll contains implementation to easily change an existing application to the test application that the plugin would require. Add a reference to this assembly.
 2. Open App.xaml.
-    Note: The following code appears.
-   ~~~ xml
-
-		[XAML]
-
-		<Application x:Class="WpfApplication3.App"
-
-			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-			StartupUri="Window1.xaml">
-
-			<Application.Resources>
 
 
 
-			</Application.Resources>
+> Note: The following code appears.
+{% highlight html %}
 
-		</Application>
-   ~~~
-   {:.prettyprint}
+[XAML]
+
+<Application x:Class="WpfApplication3.App"
+
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+    StartupUri="Window1.xaml">
+
+    <Application.Resources>
+
+
+
+    </Application.Resources>
+
+</Application>
+
+{% endhighlight  %}
 
 3. Change Application to Syncfusion:GridControlTestApplication as follows.
-   
-   ~~~ xml
-		[XAML]
-
-		<syncfusion:GridControlTestApplication x:Class="WpfApplication3.App"
-
-			xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-			xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-			xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-			StartupUri="Window1.xaml">
-
-			<syncfusion:GridControlTestApplication.Resources>
 
 
+{% highlight html %}
+[XAML]
 
-			</syncfusion:GridControlTestApplication.Resources>
+<syncfusion:GridControlTestApplication x:Class="WpfApplication3.App"
 
-		</syncfusion:GridControlTestApplication>
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-   ~~~
-   {:.pretty}
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+    StartupUri="Window1.xaml">
+
+    <syncfusion:GridControlTestApplication.Resources>
+
+
+
+    </syncfusion:GridControlTestApplication.Resources>
+
+</syncfusion:GridControlTestApplication>
+
+{% endhighlight  %}
 
 
 
 4. For the code behind file (App.xaml.cs), make sure to inherit from GridControlTestApplication.
 
-   ~~~ xml
-	 namespace WpfApplication3
 
-	 {
+{% highlight html %}
+namespace WpfApplication3
 
-		/// <summary>
+{
 
-		/// Interaction logic for App.xaml
+    /// <summary>
 
-		/// </summary>
+    /// Interaction logic for App.xaml
 
-		public partial class App : GridControlTestApplication
+    /// </summary>
 
-		{
+    public partial class App : GridControlTestApplication
 
-		}
+    {
 
-	 }
-   ~~~
-   {:.prettyprint}
+    }
+
+}
+{% endhighlight  %}
 
 
 5. Build the application to make it ready for testing.
-	Note: The GridControlTestApplication works only with a single Grid instance in the window. For multiple instances the IGridInteropService interface has to be implemented.
+> Note: The GridControlTestApplication works only with a single Grid instance in the window. For multiple instances the IGridInteropService interface has to be implemented.
 
-### Creating Unit Tests with VS2010
+Creating Unit Tests with VS2010
 
 1. Create a new Test Project in VS2010,
 
 
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img6.jpeg)
+![](Testability-Frameworks_images/Testability-Frameworks_img6.jpeg)
 
 
 
@@ -347,13 +350,13 @@ Initial steps before creating the Coded UI Test project:
 
 
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img7.jpeg)
+![](Testability-Frameworks_images/Testability-Frameworks_img7.jpeg)
 
 
 
 3. Add a TestMethod called HelloWorld_Test.
 
-   The following code illustrates this.
+The following code illustrates this.
 
 
 
@@ -370,9 +373,9 @@ Initial steps before creating the Coded UI Test project:
 
 
 4. Build and run the Grid application that you configured.
-   * Right-click on the TestMethod body and then select as below,
+* Right-click on the TestMethod body and then select as below,
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img8.jpeg)
+![](Testability-Frameworks_images/Testability-Frameworks_img8.jpeg)
 
 
 
@@ -382,13 +385,13 @@ Initial steps before creating the Coded UI Test project:
 
 
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img9.jpeg)
+![](Testability-Frameworks_images/Testability-Frameworks_img9.jpeg)
 
 
 
 
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img10.jpeg)
+![](Testability-Frameworks_images/Testability-Frameworks_img10.jpeg)
 
 
 
@@ -398,7 +401,7 @@ Initial steps before creating the Coded UI Test project:
 
 
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img11.jpeg)
+![](Testability-Frameworks_images/Testability-Frameworks_img11.jpeg)
 
 
 
@@ -407,20 +410,20 @@ Initial steps before creating the Coded UI Test project:
 
 
 
-    Note: The assert window is displayed as below.
+> Note: The assert window is displayed as below.
 
 
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img12.jpeg)
+![](Testability-Frameworks_images/Testability-Frameworks_img12.jpeg)
 
 
 
-9.  Add asserts to the properties displayed in the assert window and generate the assert method.
+9. Add asserts to the properties displayed in the assert window and generate the assert method.
 10. Close the Coded UI Test builder. 
 
 
 
-    Note: Coded UI Unit Test is created.
+> Note: Coded UI Unit Test is created.
 
 The following code generates automatically. 
 
@@ -442,26 +445,26 @@ The following code generates automatically.
 {% endhighlight  %}
 
 
-### Testing the Application with Generated Coded UI Test
+Testing the Application with Generated Coded UI Test
 
 1. Build and run the Grid WPF application.
 2. Build the test project and run the Unit tests using VS 2010.
 
 
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img13.jpeg)
+![](Testability-Frameworks_images/Testability-Frameworks_img13.jpeg)
 
 
 
 3. Run the test HelloWorld_Test.
-   * This will automatically focus the running Grid application and perform automated testing.
-   >  Note: The sample test procedure mentioned above requires the sample to be run individually, in normal automated testing, this would be included in the TestInitialize method to start the application.
+* This will automatically focus the running Grid application and perform automated testing.
+>  Note: The sample test procedure mentioned above requires the sample to be run individually, in normal automated testing, this would be included in the TestInitialize method to start the application.
 
 
 
 
-   ![](Testability-Frameworks_images/Testability-Frameworks_img14.jpeg)
+![](Testability-Frameworks_images/Testability-Frameworks_img14.jpeg)
 
 
-    _Test Result_
+_Test Result_
 

@@ -17,22 +17,15 @@ Document Container supports two important modes which are listed below.
 To set the Document Container in TDI mode, use the following code snippet.
 
 
-{% highlight xml %}
-<!-- Adding Document Container -->
-<syncfusion:DocumentContainer Name="DocContainer" Mode="TDI">
-…...
-.…....</syncfusion:DocumentContainer>
-{% endhighlight %}
 
-{% highlight C# %}
-//Creating instance of Document Containe
-rDocumentContainer DocContainer = new DocumentContainer();
-//Set mode as TDI
-DocContainer.Mode = DocumentContainerMode.TDI;
-….......….......
-//Adding control to window
-this.Content = DocContainer;
-{% endhighlight %}
+<table>
+<tr>
+<td>
+{% highlight xml %}<!-- Adding Document Container --><syncfusion:DocumentContainer Name="DocContainer" Mode="TDI">…....…....</syncfusion:DocumentContainer>{% endhighlight %}</td></tr>
+<tr>
+<td>
+{% highlight C# %}//Creating instance of Document ContainerDocumentContainer DocContainer = new DocumentContainer();//Set mode as TDIDocContainer.Mode = DocumentContainerMode.TDI;….......….......//Adding control to windowthis.Content = DocContainer;{% endhighlight %}</td></tr>
+</table>
 
 
 The following is the screen shot of a document container, which is in TDI mode.
@@ -48,23 +41,15 @@ The following is the screen shot of a document container, which is in TDI mode.
 To set the Document Container in MDI mode, use the following code snippet.
 
 
-{% highlight xml %}
-<!-- Adding Document Container -->
-<syncfusion:DocumentContainer Name="DocContainer" Mode="MDI">
-  ….... 
-  …....
-  </syncfusion:DocumentContainer>
-  {% endhighlight %}
-  
-{% highlight C# %} 
-//Creating instance of Document Container
-DocumentContainer DocContainer = new DocumentContainer();
-//Set mode as MDIDocContainer.Mode = DocumentContainerMode.MDI;
-….......
-….......
-//Adding control to window
-this.Content = DocContainer;
-{% endhighlight %}
+
+<table>
+<tr>
+<td>
+{% highlight xml %}<!-- Adding Document Container --><syncfusion:DocumentContainer Name="DocContainer" Mode="MDI">  …....  …....</syncfusion:DocumentContainer>{% endhighlight %}</td></tr>
+<tr>
+<td>
+{% highlight C# %} //Creating instance of Document ContainerDocumentContainer DocContainer = new DocumentContainer();//Set mode as MDIDocContainer.Mode = DocumentContainerMode.MDI;….......….......//Adding control to windowthis.Content = DocContainer;{% endhighlight %}</td></tr>
+</table>
 
 
 The following screen shot shows the document container in MDI mode.

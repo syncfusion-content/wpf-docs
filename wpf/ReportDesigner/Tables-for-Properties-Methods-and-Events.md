@@ -55,7 +55,7 @@ Boolean</td></tr>
 Assemblies</td><td>
 Gets or sets a value to indicate an assembly name to generate a RDLC report.</td><td>
 Dependency Property</td><td>
-List[Assembly]</td></tr>
+List<Assembly></td></tr>
 <tr>
 <td>
 ShowProperties</td><td>
@@ -90,7 +90,7 @@ ReportServerFormsCredential</td></tr>
 
 ## Methods
 
-Methods
+Methods_
 
 <table>
 <tr>

@@ -17,7 +17,7 @@ documentation: ug
 
 
 
-> Note: Support for Skins is provided only in Silverlight and not in WPF.
+> _Note: Support for Skins is provided only in Silverlight and not in WPF._
 
 ## Adding Tab Navigation Control to an Application 
 
@@ -25,7 +25,7 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 1. Open a VS2010 project. The Syncfusion controls are listed in the toolbox.
 
-   ![](Getting-Started_images/Getting-Started_img2.png)
+     ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -35,7 +35,7 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+     ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -44,7 +44,7 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
+     ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -54,7 +54,7 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 
 
-   ![](Getting-Started_images/Getting-Started_img5.png)
+     ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 5. Add Items to the control manually or through Items Source property.
@@ -64,7 +64,10 @@ To add Tab navigation control to a Visual Studio.NET project:
 
 
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+     ![](Getting-Started_images/Getting-Started_img6.png)
+
+
+
 
 
 To enable transition effects, items should be added to the control. The following sections explain the methods through which you can add items.
@@ -171,7 +174,7 @@ To view samples:
 1. Click Start-->All Programs-->Syncfusion-->Essential Studio <version number> -->Dashboard.
 2. The Essential Studio Enterprise Edition window is displayed. 
      
-   ![](Getting-Started_images/Getting-Started_img7.png)
+	 ![](Getting-Started_images/Getting-Started_img7.png)
 
 The User Interface edition panel is displayed by default. 
 
@@ -181,7 +184,7 @@ The User Interface edition panel is displayed by default.
      3. Run Online XBAP Samples – View the online XBAP samples  for WPF
      4. Explore Samples-Locate the  WPF samples on the disk
 
-        ![](Getting-Started_images/Getting-Started_img8.png)
+         ![](Getting-Started_images/Getting-Started_img8.png)
 
 
 
@@ -189,7 +192,7 @@ The User Interface edition panel is displayed by default.
 
 2. Click Run Locally Installed Samples. The WPF Sample Browser displays.
 
-   ![](Getting-Started_images/Getting-Started_img9.png)
+     ![](Getting-Started_images/Getting-Started_img9.png)
 
 
 

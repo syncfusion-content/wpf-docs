@@ -17,9 +17,9 @@ _List of assemblies_
 
 <table>
 <tr>
-<th>
-Demanded Assemblies</th><th>
-Description</th></tr>
+<td>
+Demanded Assemblies</td><td>
+Description</td></tr>
 <tr>
 <td>
 Syncfusion.Data.WPF</td><td>
@@ -40,6 +40,7 @@ You can either drag the control from Visual Studio or Expression Blend, or add t
 
 {% highlight xml %}
 
+[XAML]
 
 <Window xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
@@ -72,10 +73,9 @@ _Visual Structure of SfMultiColumnDropDownControl_
 Refer to the following steps to bind the data in SfMultiColumnDropDownControl
 
 1.Create a business object class as Data.
-
 {% highlight C# %}
 
-
+[C#]
 
 public class Data:INotifyPropertyChanged
 
@@ -159,6 +159,7 @@ public class Data:INotifyPropertyChanged
 
 {% highlight C# %}
 
+[C#]
 
 
 
@@ -230,12 +231,12 @@ private ObservableCollection<Data> employeeDetails;
 
 }
 {% endhighlight %}
-
 3.Set the ViewModel instance as DataContext to window. Now you can bind the EmpDetails property in ViewModel as ItemsSource to SfMultiColumnDropdownControl.
 
 
 {% highlight xml %}
 
+[XAML]
 
 
 
@@ -273,6 +274,8 @@ The following code example illustrates how to add SfMultiColumnDropDownControl i
 
 
 {% highlight xml %}
+
+[XAML]
 
 
 

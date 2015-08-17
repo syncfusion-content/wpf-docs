@@ -25,7 +25,7 @@ The following are steps to implementation Localization support to an application
 
    Example: Syncfusion.Spreadsheet.WPF.ja.resx.
 
-   Note: It is mandatory to use this naming convention.
+   _Note: It is mandatory to use this naming convention._
 
 
 

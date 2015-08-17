@@ -11,19 +11,19 @@ documentation: ug
 
 As Inline will be the content property of ParagraphAdv, SpanAdv can be added only inside the ParagraphAdv. Every ParagraphAdv can keep _n_ number of inlines inside it. It allows you to display the formatted text using advanced features like font size, font family, strikethrough, and baseline.
 
-### Properties
+## Properties
 
 
 
-Property Table
+_Property Table_
 
 <table>
 <tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
+<td>
+Property</td><td>
+Description</td><td>
+Type</td><td>
+Data Type</td></tr>
 <tr>
 <td>
 Text </td><td>
@@ -89,6 +89,7 @@ SpanAdv can be added directly to an application using the following code snippet
 
 {% highlight xml %}
 
+[XAML]
 <syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            
 <syncfusion:DocumentAdv>                
 <syncfusion:SectionAdv>                   
@@ -98,11 +99,11 @@ SpanAdv can be added directly to an application using the following code snippet
  </syncfusion:SectionAdv>           
  </syncfusion:DocumentAdv>       
  </syncfusion:RichTextBoxAdv>
- 
 {% endhighlight %}
 
 {% highlight C# %}
 
+[C#]           
  RichTextBoxAdv richtext = new RichTextBoxAdv();          
  DocumentAdv document = new DocumentAdv();           
  SectionAdv section = new SectionAdv();           

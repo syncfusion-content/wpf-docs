@@ -13,11 +13,11 @@ Localization is the translation of application resources into localized versions
 
 <table>
 <tr>
-<th>
-Property</th><th>
-Description</th><th>
-(en-US)</th><th>
-(fr-FR)</th></tr>
+<td>
+Property</td><td>
+Description</td><td>
+(en-US)</td><td>
+(fr-FR)</td></tr>
 <tr>
 <td>
 AccessTodayText</td><td>

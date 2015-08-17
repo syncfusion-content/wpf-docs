@@ -23,7 +23,6 @@ You can validate the MinValue in two ways:
 
 * OnKeyPress – MinValue of the CurrencyTextBox is validated on the key press.
 * OnLostFocus – MinValue of the CurrencyTextBox is validated on the lost focus only.
-
 ## MaxValidation
 
 
@@ -31,19 +30,18 @@ You can validate the MaxValue in two ways:
 
 * OnKeyPress – MaxValue of the CurrencyTextBox is validated on the key press.
 * OnLostFocus – MaxValue of the CurrencyTextBox is validated on the lost focus only.
-
 ## MinValueOnExceedMinDigit
 
 
 If this property is set to true, then when you enter a value less than the MinValue then it will automatically assign the MinValue to the Value property. Otherwise it will not allow the key press.
 
-> Note: This will be enabled only when MinValidation is set to OnKeyPress.
+> _Note: This will be enabled only when MinValidation is set to OnKeyPress._
 
 ## MaxValueOnExceedMaxDigit
 
 If this property is set to true, then when you enter a value greater than the MaxValue then it will automatically assign the MaxValue to the Value property. Otherwise it will not allow the key press.
 
-> Note: This will be enabled only when the MaxValidation is set to OnKeyPress.
+> ![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img1.png)_Note: This will be enabled only when the MaxValidation is set to OnKeyPress._
 
 
 
@@ -83,7 +81,7 @@ MaxValidation is set to OnLostFocus, so the MaxValidation will be performed only
 
 
 
-![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img3.png) 
+![](Maximum-and-Minimum-Value_images/Maximum-and-Minimum-Value_img3.png)
 
 
 MinValidation is set to OnKeyPress, so you cannot enter a value less than the MinValue. If you try to enter a value less than the MinValue, then the MinValue will be set to the Value property if the MinValueOnExceedMinDigit is set to true, otherwise it will not allow the key press.

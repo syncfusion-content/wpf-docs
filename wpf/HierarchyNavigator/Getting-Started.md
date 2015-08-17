@@ -201,14 +201,14 @@ The steps to create a HierarchyNavigator control in a WPF application by using V
 
 1. Create a new WPF application in Visual Studio. 
 2. In the Visual Studio Toolbox, click the SyncfusionWPF Toolbox tab, and select HierarchyNavigator.
- 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
 3. Drag the HierarchyNavigator to Design View, to add the HierarchyNavigator control.
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -224,13 +224,13 @@ The steps to create a HierarchyNavigator control in a WPF application by using E
 1. Open the Expression Blend application.
 2. On the File menu, click New Project. This opens the New Project dialog box.
 
-   ![C:/Users/apoorvah.ramanathan/Desktop/1.png](Getting-Started_images/Getting-Started_img5.png)
+![C:/Users/apoorvah.ramanathan/Desktop/1.png](Getting-Started_images/Getting-Started_img5.png)
 
 
 
 3. In the Name field, type the name of the project, and then click OK.
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -240,58 +240,58 @@ The steps to create a HierarchyNavigator control in a WPF application by using E
 5. On the Window menu, select Assets. This opens the Assets Library dialog box.
 6. In the search box, type HierarchyNavigator, and then press ENTER. This displays the search results.
 
-   ![](Getting-Started_images/Getting-Started_img7.png)
+![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
 7. Drag the HierarchyNavigator control to Design View.
 
-   ![](Getting-Started_images/Getting-Started_img8.png)
+![](Getting-Started_images/Getting-Started_img8.png)
 
 
 
 8. Select the HierarchyNavigator control from the Objects and Timeline Pane and navigate to Miscellaneous, located in the Properties pane; click the button next to the Items collection. This will display the Object Collection Editor dialog box.
 
-   ![](Getting-Started_images/Getting-Started_img9.png)
+![](Getting-Started_images/Getting-Started_img9.png)
 
 
 
-   ![](Getting-Started_images/Getting-Started_img10.png)
+![](Getting-Started_images/Getting-Started_img10.png)
 
 
 
-   The HierarchyNavigator Collection Editor contains the Items and the Properties pane. The Items pane contains a list of items that can be added to the HierarchyNavigator control.
+The HierarchyNavigator Collection Editor contains the Items and the Properties pane. The Items pane contains a list of items that can be added to the HierarchyNavigator control.
 
-   ![](Getting-Started_images/Getting-Started_img11.png)
+![](Getting-Started_images/Getting-Started_img11.png)
 
 
 
 9. Click the Add another item button, to add an item in the Items pane, and then in the Properties pane add content and items for the selected item.
 
-   ![](Getting-Started_images/Getting-Started_img12.png)
+![](Getting-Started_images/Getting-Started_img12.png)
 
 
 
 10. To add items in a hierarchical data format, in the Properties pane, find the Items field and add items to the next level.
 
-    ![](Getting-Started_images/Getting-Started_img13.png)
+![](Getting-Started_images/Getting-Started_img13.png)
 
 
 
-   The items will then be displayed in XAML, as shown in the following figure:
+The items will then be displayed in XAML, as shown in the following figure:
 
-   ![](Getting-Started_images/Getting-Started_img14.png)
+![](Getting-Started_images/Getting-Started_img14.png)
 
 
 
-### Editing a HierarchyNavigator Template in Expression Blend
+###Editing a HierarchyNavigator Template in Expression Blend
 
 You can edit a HierarchyNavigator control after it is added. The steps to edit a HierarchyNavigator control in Expression Blend are as follows:
 
 1. Select the HierarchyNavigator control.
 2. On the Object menu, select Edit Style, and then select Edit a Copy. This opens the Create Style Resource dialog box.
 
-   ![](Getting-Started_images/Getting-Started_img15.png)
+![](Getting-Started_images/Getting-Started_img15.png)
 
 
 
@@ -301,7 +301,7 @@ You can edit a HierarchyNavigator control after it is added. The steps to edit a
 4. In the Define in section, select This document, and then select the user control.
 5. Click the OK button, to create a default style for the HierarchyNavigator control so that each part can be customized. Refer Customizing templates with Expression Blend.
 
-   ![](Getting-Started_images/Getting-Started_img16.png)
+![](Getting-Started_images/Getting-Started_img16.png)
 
 
 

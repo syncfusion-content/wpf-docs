@@ -14,20 +14,14 @@ It is now possible to display the RibbonButton Label in multiple lines. It provi
 Setting RibbonButton label in multiple lines:
 
 
-{% highlight xml %}
 
+<table>
+<tr>
+<td>
+[XAML] <!--RibbonButton with IsMultiLine set to true-->        <syncfusion:RibbonButton Name="ribbonButton"  IsMultiLine="True" Label="Ribbon Button Label \nwill be displayed in \nmultiple lines"/></td></tr>
+<tr>
+<td>
+[C#]//RibbonButton with IsMultiline set to trueribbonButton.IsMultiLine = true;ribbonButton.Label = "Ribbon Button Label \nwill be displayed in \nmultiple lines";</td></tr>
+</table>
 
-[XAML] 
-<!--RibbonButton with IsMultiLine set to true-->        
-<syncfusion:RibbonButton Name="ribbonButton"  IsMultiLine="True" Label="Ribbon Button Label \nwill be displayed in \nmultiple lines"/>
-{% endhighlight %}
-
-{% highlight C# %}
-
-[C#]
-//RibbonButton with IsMultiline set to true
-ribbonButton.IsMultiLine = true;
-ribbonButton.Label = "Ribbon Button Label \nwill be displayed in \nmultiple lines";
-
-{% endhighlight %}
 

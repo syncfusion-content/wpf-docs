@@ -82,42 +82,42 @@ Using _ItemTemplateSelector_ feature, you can use different templates for the it
 1. Create a template selector in the code.
 
 
-   ~~~ cs
-		 [C#]
+   ~~~ c#
+     [C#]
 
-		 public class TileViewItemTemplateSelector : DataTemplateSelector
+     public class TileViewItemTemplateSelector : DataTemplateSelector
 
-		{
+    {
 
-			public override DataTemplate SelectTemplate(object item, DependencyObject container)
+        public override DataTemplate SelectTemplate(object item, DependencyObject container)
 
-			{
+        {
 
-				Window window = Application.Current.MainWindow;
+            Window window = Application.Current.MainWindow;
 
-				string bookname = (item as System.Xml.XmlElement).GetAttribute("Name").ToString().ToLower();
+            string bookname = (item as System.Xml.XmlElement).GetAttribute("Name").ToString().ToLower();
 
-				if (bookname.Contains("wpf"))
+            if (bookname.Contains("wpf"))
 
-				{
+            {
 
-					return ((DataTemplate)window.Resources["WpfBookTemplate"]);
+                return ((DataTemplate)window.Resources["WpfBookTemplate"]);
 
-				}
+            }
 
-				else 
+            else 
 
-				{
+            {
 
-					return ((DataTemplate)window.Resources["CsBookTemplate"]);
+                return ((DataTemplate)window.Resources["CsBookTemplate"]);
 
-				}
+            }
 
 
 
-			}
+        }
 
-		 }
+     }
 
 
    ~~~

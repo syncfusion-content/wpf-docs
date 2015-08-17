@@ -33,7 +33,7 @@ Tree Navigator now displayed as shown below.
 
 
 
-![](Header-Template_images/Header-Template_img1.png)
+![4](Header-Template_images/Header-Template_img1.png)
 
 
 

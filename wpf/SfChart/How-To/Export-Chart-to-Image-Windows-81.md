@@ -7,11 +7,11 @@ control: SfChart
 documentation: ug
 ---
 
-# Export Chart to Image (Windows 8.1)
+### Export Chart to Image (Windows 8.1)
 
 The export chart to image feature in the SfChart control enables the user to export the image of the chart in different image file formats. 
 
-## Supported Formats
+Supported Formats
 
 * JPG or JPEG
 * JPG-XR
@@ -22,7 +22,7 @@ The export chart to image feature in the SfChart control enables the user to exp
 
 
 
-## Method Table
+Method Table
 
 <table>
 <tr>
@@ -47,7 +47,6 @@ Save(IRandomAccessStream stream, Guid bitmapEncoderID)</td><td>
 Export the chart image using the stream and its corresponding encoder.</td></tr>
 </table>
 
-{% highlight C# %}
 
 [C#]
 
@@ -88,5 +87,6 @@ var memoryStream = new InMemoryRandomAccessStream();
                 chart.Save(stream, BitmapEncoder.BmpEncoderId);
 
             }    
-{% endhighlight %}
+
+
 

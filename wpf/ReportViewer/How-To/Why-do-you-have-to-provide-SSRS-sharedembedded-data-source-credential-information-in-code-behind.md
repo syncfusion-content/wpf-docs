@@ -7,14 +7,11 @@ control: Report Viewer
 documentation: ug
 ---
 
-## Why do you have to provide SSRS shared/embedded data source credential information in code behind? 
+### Why do you have to provide SSRS shared/embedded data source credential information in code behind? 
 
 RDL reports have limitations for retrieving a password from the SQL Reporting Service (SSRS) for security reasons. Therefore, the credential information is provided when the data source credential is saved in the Reporting Server for shared or embedded data sources. 
 
 The following code provides SSRS shared/embedded data source credential information.
-
-
-{% highlight c# %}
 
 void reportViewerControl_ReportLoaded(object sender, EventArgs e)
 
@@ -44,4 +41,5 @@ this.reportViewerControl.SetDataSourceCredentials (credentials);
 
 }
 
-{% endhighlight %}
+
+

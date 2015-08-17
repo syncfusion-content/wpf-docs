@@ -58,7 +58,7 @@ False</td></tr>
 
 
 
-#### _PersistElements Table_
+_PersistElements Table_
 
 <table>
 <tr>
@@ -73,7 +73,7 @@ False</td></tr>
 PersistElements</td><td>
 This property has a collection of Ribbon elements, which are used to persist states at runtime.</td><td>
 CLR</td><td>
-ObservableCollection&lt;RibbonElements&gt; </td><td>
+ObservableCollection<RibbonElements></td><td>
 Null </td></tr>
 </table>
 
@@ -81,11 +81,12 @@ Null </td></tr>
 You can enable State Persistence in Ribbon control by setting the AutoPersist property to “True”. You can customize the State Persistence in Ribbon, Quick Access Tool Bar and Ribbon Window elements by using the AutoPersist property.
 
 
+
 ### Methods
 
 
 
-#### _SaveRibbonState Table_
+_SaveRibbonState Table_
 
 <table>
 <tr>
@@ -103,7 +104,7 @@ void</td></tr>
 </table>
 
 
-#### _LoadRibbonState Table_
+_LoadRibbonState Table_
 
 <table>
 <tr>
@@ -121,7 +122,7 @@ void</td></tr>
 </table>
 
 
-#### _ResetRibbonState Table_
+_ResetRibbonState Table_
 
 <table>
 <tr>
@@ -139,7 +140,7 @@ No Params</td><td>
 </table>
 
 
-#### _DeleteRibbonState Table_
+_DeleteRibbonState Table_
 
 <table>
 <tr>
@@ -517,7 +518,7 @@ LoadRibbonState(XmlReader xmlReader)
 
 
 
-#### _Methods Table_
+_Methods Table_
 
 <table>
 <tr>

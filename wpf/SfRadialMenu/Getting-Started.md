@@ -18,6 +18,10 @@ The following code sample shows how to create the RadialMenu from code-behind an
 
 {%highlight xml%}
 
+[XAML]
+
+
+
 <Page xmlns:navigation="clr-namespace:Syncfusion.Windows.Controls.Navigation;assembly=Syncfusion.SfRadialMenu.Wpf"> 
 
      <Grid>
@@ -42,7 +46,11 @@ The following code sample shows how to create the RadialMenu from code-behind an
 {%endhighlight%}
 
 
-{%highlight c# %}
+{%highlight c#%}
+
+[C#]
+
+
 
 SfRadialMenu radialMenu = new SfRadialMenu(); 
 
@@ -58,4 +66,7 @@ radialMenu.Items.Add(copy);
 
 radialMenu.Items.Add(paste); 
 
+
 {%endhighlight%}
+
+

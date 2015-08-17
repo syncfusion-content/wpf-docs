@@ -7,13 +7,13 @@ control: DockingManager
 documentation: ug
 ---
 
-## Set Header Icon for MDI Window
+### Set Header Icon for MDI Window
 
 The Icon property is used to specify the icon for Document children. Consider the following code:
 
 
 
-{% highlight xml %}
+[XAML]
 
 <Window.Resources>
 
@@ -59,13 +59,13 @@ The Icon property is used to specify the icon for Document children. Consider th
 
    </Grid>
 
-{% endhighlight %}
+
 
 In the above code a DrawingImage object is created as a staticresource and assigned to the Icon property of DockingManager. The MDIWindow with the icon on left top corner will be displayed. 
 
 
 
-![](Set-Header-Icon-for-MDI-Window_images/Set-Header-Icon-for-MDI-Window_img1.png)
+{{ '![C:/Users/Hemanth/Desktop/Documentation/Images/Icon.png](Set-Header-Icon-for-MDI-Window_images/Set-Header-Icon-for-MDI-Window_img1.png)' | markdownify }}
 
 
 

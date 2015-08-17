@@ -41,11 +41,11 @@ C#
 
 private void CurrencyTextBox_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 
-{
+        {
 
-	//Insert code to do some operations when value of CurrencyTextBox changes.
+            //Insert code to do some operations when value of CurrencyTextBox changes.
 
-}
+        }
 {% endhighlight %}
 
 ## TextChanged
@@ -78,11 +78,11 @@ C#
 
 private void CurrencyTextBox_TextChanged(object sender, TextChangedEventArgs e)
 
-{
+        {
 
-	//Insert code to do some operations when Text of CurrencyTextBox changes.
+            //Insert code to do some operations when Text of CurrencyTextBox changes.
 
-}
+        }
 
 {% endhighlight %}
 
@@ -117,11 +117,11 @@ C#
 
 private void CurrencyTextBox_CultureChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 
-{
+        {
 
-	//Insert code to do some operations when the Culture property changes.
+            //Insert code to do some operations when the Culture property changes.
 
-}
+        }
 {% endhighlight %}
 
 ## MaxValueChanged
@@ -154,11 +154,11 @@ C#
 
 private void CurrencyTextBox_MaxValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 
-{
+        {
 
-	//Insert code to do some operations when the MaxValue changed
+            //Insert code to do some operations when the MaxValue changed
 
-}
+        }
 {% endhighlight %}
 
 ## MinValueChanged
@@ -193,11 +193,11 @@ C#
 
 private void CurrencyTextBox_MinValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 
-{
+        {
 
-	//Insert code to do some operations when the MinValue changed
+            //Insert code to do some operations when the MinValue changed
 
-}
+        }
 {% endhighlight %}
 	
 
@@ -234,11 +234,11 @@ C#
 
 private void CurrencyTextBox_SelectionChanged(object sender, RoutedEventArgs e)
 
-{
+        {
 
-	//Insert code to do some operations when the Selected Text changed.
+            //Insert code to do some operations when the Selected Text changed.
 
-}
+        }
 {% endhighlight %}
 
 

@@ -41,13 +41,13 @@ The following is a list of the operators which are supported by Essential Calcul
 
 <        Less Than 
 
-&gt;        Greater Than
+>        Greater Than
 
 =         Equal To
 
 <=       Less Than Or Equal
 
-&gt;=       Greater Than Or Equal
+>=       Greater Than Or Equal
 
 <>       Not Equal
 

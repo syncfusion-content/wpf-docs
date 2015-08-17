@@ -15,26 +15,19 @@ This section illustrates the Layout-related features of CalendarEdit control. Th
 
 CalendarEdit control provides the HeaderBackground and HeaderForeground properties to customize the appearance of the header background and foreground. Use the following code examples to set the above properties.
 
-{% highlight xml %}
+<table>
+<tr>
+<td>
+[XAML]<!-- Adding calendar with header background and foreground --><syncfusion:CalendarEdit Name="calendarEdit" HeaderBackground="SaddleBrown" HeaderForeground="Bisque"/></td></tr>
+<tr>
+<td>
+[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting Header BackgroundcalendarEdit.HeaderBackground = Brushes.SaddleBrown;//Setting Header foregroundcalendarEdit.HeaderForeground = Brushes.Bisque;  //Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
+</table>
 
 
-<!-- Adding calendar with header background and foreground -->
-<syncfusion:CalendarEdit Name="calendarEdit" HeaderBackground="SaddleBrown" HeaderForeground="Bisque"/>
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)' | markdownify }}
+{:.image }
 
-{% endhighlight %}
-
-{% highlight c# %}
-
-
-//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
-//Setting Header BackgroundcalendarEdit.HeaderBackground = Brushes.SaddleBrown;
-//Setting Header foregroundcalendarEdit.HeaderForeground = Brushes.Bisque;
-//Adding CalendarEdit as window contentthis.Content = calendarEdit;
-  
-{% endhighlight %}
-
-
-![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)
 
 ## Selection Border Color
 
@@ -42,24 +35,20 @@ Whenever a selection is made in the Calendar, the selected day grid can be assoc
 
 To set the SelectionBorderBrush property, use the following code.
 
-{% highlight xml %}
-
-<!-- Adding calendar with selection border brush -->
-<syncfusion:CalendarEdit Name="calendarEdit" SelectionBorderBrush="Aqua"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
-//Setting the brush for the Selection day gridcalendarEdit.SelectionBorderBrush = Brushes.Aqua; 
-   //Adding CalendarEdit as window contentthis.Content = calendarEdit;
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+[XAML]<!-- Adding calendar with selection border brush --><syncfusion:CalendarEdit Name="calendarEdit" SelectionBorderBrush="Aqua"/></td></tr>
+<tr>
+<td>
+[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting the brush for the Selection day gridcalendarEdit.SelectionBorderBrush = Brushes.Aqua;    //Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
+</table>
 
 
 
-![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
 
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)' | markdownify }}
+{:.image }
 
 
 
@@ -68,24 +57,18 @@ To set the SelectionBorderBrush property, use the following code.
 
 You can set the corner radius for the selection border by using the SelectionBorderCornerRadius property. This is dependency property sets the value for the corner radius as follows.
 
-
-{% highlight xml %}
-
-<!-- Adding calendar with selection border corner radius -->
-<syncfusion:CalendarEdit Name="calendarEdit" SelectionBorderCornerRadius="0"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
-//Setting corner radius for selection bordercalendarEdit.SelectionBorderCornerRadius = new CornerRadius(0); 
-//Adding CalendarEdit as window contentthis.Content = calendarEdit; 
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+[XAML]<!-- Adding calendar with selection border corner radius --><syncfusion:CalendarEdit Name="calendarEdit" SelectionBorderCornerRadius="0"/></td></tr>
+<tr>
+<td>
+[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting corner radius for selection bordercalendarEdit.SelectionBorderCornerRadius = new CornerRadius(0); //Adding CalendarEdit as window contentthis.Content = calendarEdit; </td></tr>
+</table>
 
 
-![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)
-
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)' | markdownify }}
+{:.image }
 
 
 ## CalendarEdit
@@ -98,19 +81,17 @@ This property is used to set the foreground color of the dates that are all sele
 
 This is mainly used to differentiate the SelectedDates from other dates.
 
-{% highlight xml %}
-
-<syncfusion:CalendarEdit Name="calendarEdit1" SelectionForeground="Red"/>
-
-{% endhighlight %}
-
-{% highlight xml %}
-
-calendarEdit1.SelectionForeground = new SolidColorBrush(Colors.Red);
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+[XAML]<syncfusion:CalendarEdit Name="calendarEdit1" SelectionForeground="Red"/></td></tr>
+<tr>
+<td>
+[C#]calendarEdit1.SelectionForeground = new SolidColorBrush(Colors.Red);</td></tr>
+</table>
 
 
-![](Layout-Related-Features_images/Layout-Related-Features_img4.png)
+{{ '![](Layout-Related-Features_images/Layout-Related-Features_img4.png)' | markdownify }}
+{:.image }
 
 

@@ -13,28 +13,28 @@ documentation: ug
 
 IntegerTextBox provides globalization support through the Culture property. 
 
-{% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150" Culture="en-US" Value="1234567"/>
-{% endhighlight %}
-
-{% highlight C# %} 
-Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();
-integerTextBox.Width = 150;integerTextBox.Height = 25;
-integerTextBox.Value = 1234567;
-integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");
-{% endhighlight %}
+<table>
+<tr>
+<td>
+{% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                            Culture="en-US" Value="1234567"/>{% endhighlight %}</td></tr>
+<tr>
+<td>
+{% highlight C# %} Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.Value = 1234567;integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");{% endhighlight %}</td></tr>
+</table>
 
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img1.png)
 
 
-{% highlight xml %} 
-<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150" Culture="bs-Latn" Value="1234567"/>
-{% endhighlight %}
-{% highlight C# %} 
-Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();
-integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.Value = 1234567;
-integerTextBox.Culture = new System.Globalization.CultureInfo("bs-Latn");
-{% endhighlight %}
+
+<table>
+<tr>
+<td>
+{% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                            Culture="bs-Latn" Value="1234567"/>{% endhighlight %}</td></tr>
+<tr>
+<td>
+{% highlight C# %} Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.Value = 1234567;integerTextBox.Culture = new System.Globalization.CultureInfo("bs-Latn");{% endhighlight %}</td></tr>
+</table>
 
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img2.png)
@@ -47,33 +47,28 @@ In the first sample culture is set to “en-US” (US Culture) and in the second
 
 You can customize the Number Format either by using the NumberFormat property or the NumberGroupSeparator and the NumberGroupSizes property.
 
-{% highlight xml %}
-<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150" Culture="en-US" Value="123456789012345">
-     <syncfusion:IntegerTextBox.NumberFormat>      
-	 <numberformat:NumberFormatInfo NumberGroupSeparator="/"/> 
-	 </syncfusion:IntegerTextBox.NumberFormat>
-</syncfusion:IntegerTextBox>
-{% endhighlight %}
-{% highlight C# %} 
-Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();
-integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.Value = 1234567;
-integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");
-integerTextBox.NumberFormat = new System.Globalization.NumberFormatInfo() {NumberGroupSeparator = "/" };
-{% endhighlight %}
+<table>
+<tr>
+<td>
+{% highlight xml %}<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                            Culture="en-US" Value="123456789012345">     <syncfusion:IntegerTextBox.NumberFormat>        <numberformat:NumberFormatInfo NumberGroupSeparator="/"/>    </syncfusion:IntegerTextBox.NumberFormat></syncfusion:IntegerTextBox>{% endhighlight %}</td></tr>
+<tr>
+<td>
+{% highlight C# %} Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.Value = 1234567;integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");integerTextBox.NumberFormat = new System.Globalization.NumberFormatInfo() {                                   NumberGroupSeparator = "/" };{% endhighlight %}</td></tr>
+</table>
 
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img3.png)
 
 
-{% highlight xml %} 
-<syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150" Culture="en-US" Value="123456789012345" NumberGroupSeparator="/"/>
-{% endhighlight %}
-{% highlight C# %}
- Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();
- integerTextBox.Width = 150;integerTextBox.Height = 25;
- integerTextBox.Value = 1234567;integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");
- integerTextBox.NumberGroupSeparator = "/";
- {% endhighlight %}
+
+<table>
+<tr>
+<td>
+{% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"             Culture="en-US" Value="123456789012345" NumberGroupSeparator="/"/>{% endhighlight %}</td></tr>
+<tr>
+<td>
+{% highlight C# %} Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.Value = 1234567;integerTextBox.Culture = new System.Globalization.CultureInfo("en-US");integerTextBox.NumberGroupSeparator = "/";{% endhighlight %}</td></tr>
+</table>
 
 
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)

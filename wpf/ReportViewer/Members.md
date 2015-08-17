@@ -9,15 +9,15 @@ documentation: ug
 
 # Members
 
-Properties
+_Properties_ 
 
 <table>
 <tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
+<td>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 <br>ReportPath</td><td>
@@ -127,84 +127,84 @@ Gets or sets a value that indicates whether the parameter block  control is vis
 Dependency Property</td><td>
 Boolean</td></tr>
 </table>
-
-Methods 
-
-<table>
-<tr>
-<th>
-Method</th><th>
-Description</th><th>
-Parameters</th><th>
-Return Type</th></tr>
-<tr>
-<td>
-<br>RefreshReport</br></td><td>
-Causes the local report to be rendered with new data.</td><td>
- -</td><td>
-Void</td></tr>
-<tr>
-<td>
-GetParameters</td><td>
-Get the necessary parameters for the report</td><td>
--</td><td>
-ReportParameterInfoCollection</td></tr>
-<tr>
-<td>
-GetTotalPage</td><td>
-Gets the total pages of the report</td><td>
--</td><td>
-Void</td></tr>
-<tr>
-<td>
-GetDataSetNames</td><td>
-Get the dataset names from the local report</td><td>
--</td><td>
-IList&lt;string&gt;</td></tr>
-<tr>
-<td>
-LoadReport</td><td>
-Loads the Local report for processing</td><td>
-Stream</td><td>
-void</td></tr>
-<tr>
-<td>
-Print</td><td>
-Displays the Print dialog box.</td><td>
--</td><td>
-Void</td></tr>
-<tr>
-<td>
-ShowNormalView</td><td>
-Displays the Normal view of the Report</td><td>
--</td><td>
-Void</td></tr>
-<tr>
-<td>
-SetParameters</td><td>
-Set the necessary parameters for the report</td><td>
-ReportParameter[]</td><td>
-void</td></tr>
-</table>
-
-
-Events
+_Methods_ 
 
 <table>
 <tr>
 <th>
-Event</th><th>
-Description</th></tr>
+
+{{ '**Method**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Parameters**' | markdownify }}</td><td>
+{{ '**Return Type**' | markdownify }}</td></tr>
 <tr>
-<td>
-<br>ViewModeChanged</td><td>
-The event is triggered when the view is changed to normal and print view</td></tr>
+<th>
+<br>RefreshReport</th><th>
+Causes the local report to be rendered with new data.</th><th>
+ -</th><th>
+Void</th></tr>
 <tr>
-<td>
-ViewButtonClick</td><td>
-The event is triggered when the view button is clicked</td></tr>
+<th>
+GetParameters</th><th>
+Get the necessary parameters for the report</th><th>
+-</th><th>
+ReportParameterInfoCollection</th></tr>
 <tr>
-<td>
-SubreportProcessing</td><td>
-The event is triggered when the report is RDLC and contains with sub report.</td></tr>
+<th>
+GetTotalPage</th><th>
+Gets the total pages of the report</th><th>
+-</th><th>
+Void</th></tr>
+<tr>
+<th>
+GetDataSetNames</th><th>
+Get the dataset names from the local report</th><th>
+-</th><th>
+IList<string></th></tr>
+<tr>
+<th>
+LoadReport</th><th>
+Loads the Local report for processing</th><th>
+Stream</th><th>
+void</th></tr>
+<tr>
+<th>
+Print</th><th>
+Displays the Print dialog box.</th><th>
+-</th><th>
+Void</th></tr>
+<tr>
+<th>
+ShowNormalView</th><th>
+Displays the Normal view of the Report</th><th>
+-</th><th>
+Void</th></tr>
+<tr>
+<th>
+SetParameters</th><th>
+Set the necessary parameters for the report</th><th>
+ReportParameter[]</th><th>
+void</th></tr>
 </table>
+_Events_ 
+
+<table>
+<tr>
+<th>
+{{ '**Event**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
+<tr>
+<th>
+<br>ViewModeChanged</th><th>
+The event is triggered when the view is changed to normal and print view</th></tr>
+<tr>
+<th>
+ViewButtonClick</th><th>
+The event is triggered when the view button is clicked</th></tr>
+<tr>
+<th>
+SubreportProcessing</th><th>
+The event is triggered when the report is RDLC and contains with sub report.</th></tr>
+</table>
+
+

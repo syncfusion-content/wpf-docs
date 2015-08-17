@@ -136,43 +136,43 @@ SkinStorage.SetVisualStyle(tabControlExt, "Office2007Blue");
 
 
 
-![](Appearance_images/Appearance_img2.png)
+![C:/Users/ramalakshmim/Desktop/ugss/tab/7blue.png](Appearance_images/Appearance_img2.png)
 
 
 
 
 
-![](Appearance_images/Appearance_img3.png)
+![C:/Users/ramalakshmim/Desktop/ugss/tab/7black.png](Appearance_images/Appearance_img3.png)
 
 
 
 
 
-![](Appearance_images/Appearance_img4.png)
+![C:/Users/ramalakshmim/Desktop/ugss/tab/7silver.png](Appearance_images/Appearance_img4.png)
 
 
 
 
 
-![](Appearance_images/Appearance_img5.png)
+![C:/Users/ramalakshmim/Desktop/ugss/tab/10blue.png](Appearance_images/Appearance_img5.png)
 
 
 
 
 
-![](Appearance_images/Appearance_img6.png)
+![C:/Users/ramalakshmim/Desktop/ugss/tab/10black.png](Appearance_images/Appearance_img6.png)
 
 
 
 
 
-![](Appearance_images/Appearance_img7.png)
+![C:/Users/ramalakshmim/Desktop/ugss/tab/10silver.png](Appearance_images/Appearance_img7.png)
 
 
 
 
 
-![](Appearance_images/Appearance_img8.png)
+![C:/Users/ramalakshmim/Desktop/ugss/tab/vs2010.png](Appearance_images/Appearance_img8.png)
 
 
 

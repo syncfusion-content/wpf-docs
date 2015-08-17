@@ -64,7 +64,6 @@ logical1, logical2, ... are multiple conditions you want to test for True or Fal
 * The arguments must evaluate to logical values (True or False).
 * If an argument does not evaluate to True or False, those values are ignored. 
 * There must be at least one value in the argument list.
-
 ## ASIN
 
 
@@ -120,7 +119,6 @@ Remarks
 
 * A positive result represents a counterclockwise angle from the x-axis; a negative result represents a clockwise angle. 
 * ATAN2(a,b) equals ATAN(b/a), except that a can equal 0 in ATAN2.
-
 ## ATANH
 
 
@@ -178,7 +176,6 @@ number1, number2, ... are numeric arguments for which you want the average.
 
 * The arguments must either be numbers or names, arrays or references that contain numbers. 
 * When an array or reference argument contains text, logical values or empty cells, those values are ignored; however, cells with a zero value are included.
-
 ## AVERAGEA
 
 
@@ -197,7 +194,6 @@ value1, value2, ... are cells, ranges of cells, or values for which you want the
 * The arguments must be numbers, names, arrays, or references. 
 * Array or reference arguments that contain text evaluate as 0 (zero). If the calculation should not include text values in the average, then use the AVERAGE function. 
 * Arguments that contain True evaluate as 1; arguments that contain False evaluate as 0 (zero).
-
 ## AVG
 
 
@@ -214,7 +210,6 @@ number1, number2, ... are numeric arguments for which you want the average.
 ### Remarks
 
 * This method is the same as AVERAGE and is included for compatibility purposes.
-
 ## BINOMDIST
 
 
@@ -295,7 +290,6 @@ Char(number)
 where,
 
 * number is the numeric value to retrieve the character.
-
 ## CHIDIST
 
 
@@ -392,7 +386,6 @@ where,
 
 * index is to specify the index from where you want to retrive the value.
 * valuearray is the array of value from where you want to take the value.
-
 ## Column
 
 
@@ -405,7 +398,6 @@ Column(range)
 where,
 
 * range is to provide the column in range.
-
 ## COMBIN
 
 
@@ -1278,13 +1270,13 @@ Type </th><th>
 Return Type </th><th>
 Reference links </th></tr>
 <tr>
-<td>
-Growth() </td><td>
-Calculates the Growth for an array of cells.</td><td>
-Known y’s, Known x’s, new_x's</td><td>
-Method </td><td>
-String </td><td>
-N/A </td></tr>
+<th>
+Growth() </th><th>
+Calculates the Growth for an array of cells.</th><th>
+Known y’s, Known x’s, new_x's</th><th>
+Method </th><th>
+String </th><th>
+N/A </th></tr>
 </table>
 
 The following is the formula to calculate Growth for an array of cells in a column:
@@ -1369,7 +1361,6 @@ where,
 * numberofsample is the size of the sample.
 * population is the number of successes in the population.
 * numberofpopulation is the population size.
-
 ## HYPEGEOMDIST
 
 
@@ -2577,7 +2568,6 @@ type is the number 0 or 1 and indicates when payments are due. When type equals:
 ### Remarks
 
 * Make sure that you are consistent about the units you use for specifying rate and nper. If you make monthly payments on a four-year loan at 12 percent annual interest, use 12%/12 for rate and 4*12 for nper. If you make annual payments on the same loan, use 12% for rate and 4 for nper.
-
 ## PROB
 
 
@@ -2719,7 +2709,6 @@ order is a number specifying how to rank numbers.
 ### Remark
 
 * RANK gives duplicate numbers of the same rank. However, the presence of duplicate numbers affect the ranks of subsequent numbers.
-
 ## RATE
 
 

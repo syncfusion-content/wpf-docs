@@ -15,27 +15,20 @@ By setting the AllowSelection property to true, you can enable user selection in
 
 For setting the AllowSelection property, use the following code.
 
-
-{% highlight xml %}
-
-<!-- Adding calendar with allow selection of a date -->
-<syncfusion:CalendarEdit Name="calendarEdit" AllowSelection="True"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
-//Allow selection of a datecalendarEdit.AllowSelection = true;
-//Adding calendarEdit as window contentthis.Content = calendarEdit;
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+[XAML]<!-- Adding calendar with allow selection of a date --><syncfusion:CalendarEdit Name="calendarEdit" AllowSelection="True"/></td></tr>
+<tr>
+<td>
+[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Allow selection of a datecalendarEdit.AllowSelection = true;//Adding calendarEdit as window contentthis.Content = calendarEdit;</td></tr>
+</table>
 
 
 
 
-![](Selecting-the-Date-and-Year-at-Run-Time_images/Selecting-the-Date-and-Year-at-Run-Time_img1.jpeg)
-
+{{ '![](Selecting-the-Date-and-Year-at-Run-Time_images/Selecting-the-Date-and-Year-at-Run-Time_img1.jpeg)' | markdownify }}
+{:.image }
 
 
 
@@ -46,24 +39,18 @@ By setting the IsAllowYearSelection property to _true_, you can edit the year at
 
 To set the IsAllowYearSelection property, use the following code.
 
-
-{% highlight xml %}
-<!-- Setting IsAllowYearSelection property-->
-<syncfusion:CalendarEdit Name="calendarEdit" IsAllowYearSelection="True"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
-//Allow selection of yearcalendarEdit.IsAllowYearSelection = true;
-//Adding CalendarEdit as window contentthis.Content = calendarEdit;
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+[XAML]<!-- Setting IsAllowYearSelection property--><syncfusion:CalendarEdit Name="calendarEdit" IsAllowYearSelection="True"/></td></tr>
+<tr>
+<td>
+[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Allow selection of yearcalendarEdit.IsAllowYearSelection = true;//Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
+</table>
 
 
-
-![](Selecting-the-Date-and-Year-at-Run-Time_images/Selecting-the-Date-and-Year-at-Run-Time_img2.jpeg)
-
+{{ '![](Selecting-the-Date-and-Year-at-Run-Time_images/Selecting-the-Date-and-Year-at-Run-Time_img2.jpeg)' | markdownify }}
+{:.image }
 
 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tooltip-Setting
-description: Tooltip Setting
+description: tooltip setting
 platform: wpf
 control: Bullet Graph 
 documentation: ug
@@ -21,9 +21,10 @@ The SfBulletGraph tooltip is displayed only when the ShowToolTip property is
 
 You can display the value of FeaturedMeasure of SfBulletGraph in ToolTip that is used to view the FeaturedMeasure value .The FeaturedMeasureToolTipTemplate is DataTemplate type.
 
-## Code Example:
+### Code Example:
 
 {% highlight html %}
+[XAML]
 
                            <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -105,10 +106,10 @@ You can display the value of FeaturedMeasure of SfBulletGraph in ToolTip tha
 
 You can display the value of ComparativeMeasure of SfBulletGraph in ToolTip that is used to view the ComparativeMeasure value. The ComparativeMeasureToolTipTemplate is DataTemplate type.
 
-## Code Example:
+### Code Example:
 
 {% highlight html %}
-
+[XAML]
 
                            <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -194,10 +195,10 @@ You can display the value of ComparativeMeasure of SfBulletGraph in ToolTip 
 
 You can display the value of QualitativeRange of SfBulletGraph in ToolTip that is used to view the Start and End value of QualitativeRange. The QualitativeRangeToolTipTemplate is DataTemplate type.
 
-## Code Example:
+### Code Example:
 
 {% highlight html %}
-
+[XAML]
 
                            <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 

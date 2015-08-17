@@ -15,19 +15,19 @@ Most of the Syncfusion controls are enhanced with blend support. The following s
 
 1. Create a WPF project in Expression Blend and refer to the Syncfusion corresponding control’s assemblies. For example, to add Docking Manager control, add its assembly Syncfusion.Tools.Wpf and its dependency assembly Syncfusion.Shared.Wpf
 
-   ![C:/Users/labuser/Desktop/blend_images/docking-1_edited.png](Common-Supports_images/Common-Supports_img1.png)
+![C:/Users/labuser/Desktop/blend_images/docking-1_edited.png](Common-Supports_images/Common-Supports_img1.png)
 
 
 
 2. Search for Control in the Toolbox.
 
-   ![C:/Users/labuser/Desktop/blend_images/docking_2_Edited.png](Common-Supports_images/Common-Supports_img2.png)
+![C:/Users/labuser/Desktop/blend_images/docking_2_Edited.png](Common-Supports_images/Common-Supports_img2.png)
 
 
 
 3. Drag the control to the designer. It generates the control in designer.
 
-   ![C:/Users/labuser/Desktop/blend_images/Docking-3.png](Common-Supports_images/Common-Supports_img3.png)
+![C:/Users/labuser/Desktop/blend_images/Docking-3.png](Common-Supports_images/Common-Supports_img3.png)
 
 
 
@@ -100,7 +100,7 @@ To assign Values in Resource, the resource file need to be updated as per the fo
 
 
 
-   ![](Common-Supports_images/Common-Supports_img6.png)
+![](Common-Supports_images/Common-Supports_img6.png)
 
 
 
@@ -119,7 +119,6 @@ To assign Values in Resource, the resource file need to be updated as per the fo
 How to assign UI Culture to the application?
 
 Mention the culture to be referred while initializing the application, so that you can refer to the appropriate value provided in resource file. The following code illustrates the implementation of culture information settings.
-
 {% highlight c# %}
 public MainWindow()
 
@@ -135,7 +134,6 @@ public MainWindow()
 
   }
 {% endhighlight  %}
-
 ### Localization Resource file
 
 Following table represents available Resource file to the Assemblies and it can be downloaded.

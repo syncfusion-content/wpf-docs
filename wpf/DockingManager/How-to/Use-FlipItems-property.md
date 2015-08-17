@@ -7,15 +7,15 @@ control: DockingManager
 documentation: ug
 ---
 
-## Use FlipItems property
+### Use FlipItems property
 
 Returns the collection of children from DockingManager, without duplication of elements.
 
 
 
-{% highlight c# %}
+[C#]
 
 List<FrameworkElement> list = DockingManager.FlipItems;
 
-{% endhighlight %}
+
 

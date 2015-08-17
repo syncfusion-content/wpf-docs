@@ -13,8 +13,7 @@ Grid can be formatted by the following way:
 
 * By Grid Style Dialog
 * By Configuring the properties of Cell Style
-
-## Grid Style Dialog
+# Grid Style Dialog
 
 
 The Grid Style Dialog is used to format the cells of OlapGrid. Styling can be applied to Column Header, Row Header, Summary cell and value cell. The following properties of Header and Summary cells can be formatted:
@@ -36,10 +35,11 @@ The following were the properties of Value cells that can be formatted:
 ![Grid Style Dialog](Grid-Styling_images/Grid-Styling_img1.png)
 
 
-
 The following code snippet will launch the Grid style dialog:
-{% highlight c# %}
-[C#]
+
+  {% highlight c# %}
+
+   [C#]
 
 
 
@@ -47,22 +47,29 @@ The following code snippet will launch the Grid style dialog:
 
 this.OlapGrid1.ShowStyleDialog();
 
-
-{% endhighlight %}
-{% highlight vbnet %}
+    {% endhighlight %}
 
 
-[VB]
+
+
+
+  {% highlight vbnet %}
+
+    [VB]
 
 
 
 ' To Display Style Dialog
 
 Me.OlapGrid1.ShowStyleDialog()
-{% endhighlight  %}
+
+    {% endhighlight %}
 
 
-## Configuring the properties of Cell Style
+
+
+
+# Configuring the properties of Cell Style
 
 The following properties of Grid cell can be customized, so that the grid appears in a custom style rather than the default one:
 
@@ -70,12 +77,12 @@ _Property Table_
 
 <table>
 <tr>
-<th>
-Property Name</th><th>
-Description</th><th>
-Type</th><th>
-Value it Accepts</th><th>
-Reference Links</th></tr>
+<td>
+{{ '**Property Name**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Value it Accepts**' | markdownify }}</td><td>
+{{ '**Reference Links**' | markdownify }}</td></tr>
 <tr>
 <td>
 Background</td><td>
@@ -122,9 +129,9 @@ The Column, Row, Summary and Value cells of Grid can be formatted independently 
 * SummaryRowStyle
 * ValueCellsStyle
 
-{% highlight c# %}
+  {% highlight c# %}
 
-[C#]
+    [C#]
 
 
 
@@ -140,11 +147,15 @@ The Column, Row, Summary and Value cells of Grid can be formatted independently 
 
             this.OlapGrid1.SummaryColumnStyle.Background = new SolidColorBrush(Color.FromRgb(206, 225, 248)); 
 
+    {% endhighlight %}
 
-{% endhighlight %}
 
-{% highlight vbnet  %}
-[VB]
+
+
+
+  {% highlight vbnet %}
+
+    [VB]
 
 
 
@@ -160,11 +171,17 @@ Me.OlapGrid1.RowHeaderCellStyle.Background = New SolidColorBrush(Color.FromRgb(1
 
 Me.OlapGrid1.SummaryColumnStyle.Background = New SolidColorBrush(Color.FromRgb(206, 225, 248))
 
+    {% endhighlight %}
 
-{% endhighlight  %}
+
+
+
+
 The Value cell text alignment can be changed using the following property of OlapGrid,
-{% highlight c# %}
-[C#]
+
+  {% highlight c# %}
+
+    [C#]
 
 
 
@@ -172,11 +189,15 @@ The Value cell text alignment can be changed using the following property of Ola
 
 this.OlapGrid1.ValueCellTextAlignment = HorizontalAlignment.Center;
 
+    {% endhighlight %}
 
 
-{% endhighlight %}
 
-### Sample Location
+
+
+
+
+## Sample Location
 
 A sample demo is available at the following location:
 

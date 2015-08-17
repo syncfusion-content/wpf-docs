@@ -27,17 +27,17 @@ Let us see how the Syncfusion OLAP components allow you to build a full life cyc
 
 # Properties, Methods, and Events
 
-## Class: OlapChart
+# Class: OlapChart
 
-## Public Properties
+# Public Properties
 
 _Public Properties table_
 
 <table>
 <tr>
-<th>
-DesignerSettings</th><th>
-Gets or sets the designer settings that can be used for creating the XAML report during the design-time.</th></tr>
+<td>
+DesignerSettings</td><td>
+Gets or sets the designer settings that can be used for creating the XAML report during the design-time.</td></tr>
 <tr>
 <td>
 ChartAppearance</td><td>
@@ -103,16 +103,15 @@ Gets or sets the KPI alignment.</td></tr>
 PrimaryAxisLabelVisibility</td><td>
 Gets or sets the primary axis label visibility.</td></tr>
 </table>
-
-## Public Methods
+# Public Methods
 
 _Public Methods table_
 
 <table>
 <tr>
-<th>
-DataBind</th><th>
-Binds the data.</th></tr>
+<td>
+DataBind</td><td>
+Binds the data.</td></tr>
 <tr>
 <td>
 ExportintoNewDoc</td><td>
@@ -138,33 +137,31 @@ Sets the chart appearance settings.</td></tr>
 ShowAppearanceDialog</td><td>
 Displays the chart appearance customization dialog. It can be used for customizing the chart appearance properties.</td></tr>
 </table>
-
-## Public Events
+# Public Events
 
 _Public Events table_
 
 <table>
 <tr>
-<th>
-BeforeRefresh</th><th>
-Occurs before the refresh of the OLAP area.</th></tr>
+<td>
+BeforeRefresh</td><td>
+Occurs before the refresh of the OLAP area.</td></tr>
 <tr>
 <td>
 AfterRefresh</td><td>
 Occurs after the refresh of the OLAP area.</td></tr>
 </table>
+# Class: OlapArea
 
-## Class: OlapArea
-
-## Public Properties
+# Public Properties
 
 _Public Properties table_
 
 <table>
 <tr>
-<th>
-ChartType</th><th>
-Gets or sets the ChartType.</th></tr>
+<td>
+ChartType</td><td>
+Gets or sets the ChartType.</td></tr>
 <tr>
 <td>
 OlapDataManager</td><td>
@@ -182,16 +179,15 @@ Gets or sets the primary olap axis.</td></tr>
 Series</td><td>
 Gets or sets the read only collection of the series.</td></tr>
 </table>
-
-## Public Methods
+# Public Methods
 
 _Public Methods table_
 
 <table>
 <tr>
-<th>
-DataBind</th><th>
-Binds the data.</th></tr>
+<td>
+DataBind</td><td>
+Binds the data.</td></tr>
 <tr>
 <td>
 IsToolTipSupported</td><td>
@@ -205,33 +201,31 @@ Invoked whenever application code or internal processes call ApplyTemplate().</t
 UpdateKPIValues</td><td>
 Updates the KPI values.</td></tr>
 </table>
-
-## Public Events
+# Public Events
 
 _Public Events table_
 
 <table>
 <tr>
-<th>
-BeforeRefresh</th><th>
-Occurs before the refresh of the OLAP area.</th></tr>
+<td>
+BeforeRefresh</td><td>
+Occurs before the refresh of the OLAP area.</td></tr>
 <tr>
 <td>
 AfterRefresh</td><td>
 Occurs after the refresh of the OLAP area.</td></tr>
 </table>
+# Class: OlapChartAxis
 
-## Class: OlapChartAxis
-
-## Public Properties
+# Public Properties
 
 _Public Properties table_
 
 <table>
 <tr>
-<th>
-Area</th><th>
-Gets the parent area for the axis.</th></tr>
+<td>
+Area</td><td>
+Gets the parent area for the axis.</td></tr>
 <tr>
 <td>
 GroupLineStroke</td><td>

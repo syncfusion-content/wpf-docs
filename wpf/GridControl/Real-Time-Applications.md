@@ -24,19 +24,19 @@ Some real time applications which can use Essential Grid are listed below:
 
 
 
-#### 1. Applications with High Frequency Updates 
+1. Applications with High Frequency Updates 
 
-   Grid can be used in applications with frequent updates, for example stock values in share market. When grid is switched over to virtual mode, it reforms itself as a light weight control that consumes a very little memory and processing power, and provides a very small latency under heavy load. Such virtual grids are typically useful when there is a need to display enormous data very quickly.  
+Grid can be used in applications with frequent updates, for example stock values in share market. When grid is switched over to virtual mode, it reforms itself as a light weight control that consumes a very little memory and processing power, and provides a very small latency under heavy load. Such virtual grids are typically useful when there is a need to display enormous data very quickly.  
 
 ### Sample
 
-   A sample which demonstrates such an application is available in the following sample installation location:
+A sample which demonstrates such an application is available in the following sample installation location:
 
-    ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Performance\Trader Grid Test Demo
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Performance\Trader Grid Test Demo
 
-    Note: Refer Performance Optimization section which elaborates on this sample.
+> Note: Refer Performance Optimization section which elaborates on this sample.
 
-#### 2. Excel-like UI Applications
+2. Excel-like UI Applications
 
 Another important application is Excel like UI that simulates MS Excel 2007 and gives an appearance that resembles excel. This application exhibits the following excel characteristics:
 
@@ -46,7 +46,7 @@ Another important application is Excel like UI that simulates MS Excel 2007 and 
 * Markup Headers
 * Workbook of sheets
 
-#### a. Excel-like Current Cell
+a. Excel-like Current Cell
 
 You can select a current cell in the Grid, similar to the current cell behavior in MS Excel. This feature can be enabled, by setting GridModelOptions.ExcelLikeCurrentCell property to _true_, as follows:  
 
@@ -66,11 +66,11 @@ grid.Model.Options.ExcelLikeCurrentCell = true;
 
 
 
- Note:  If you have selected a current cell within a specified range, and when you move the current cell selection out of this range, the range will be cleared.
+> Note:  If you have selected a current cell within a specified range, and when you move the current cell selection out of this range, the range will be cleared.
 
 
 
-#### b. Excel-like Selection Frame
+b. Excel-like Selection Frame
 
 The active selection can be outlined with a selection frame by setting the GridModelOptions.ExcelLikeSelectionFrame property to true, as follows:
 
@@ -90,7 +90,7 @@ grid.Model.Options.ExcelLikeSelectionFrame = true;
 
 
 
-#### c. Formula Cells
+c. Formula Cells
 
 As we discussed in the previous chapter, Grid control provides complete support to formula cells. It can be enabled for the grid by setting the format string, FormulaCell to the TableStyle.CellType property, as follows: 
 
@@ -112,7 +112,7 @@ grid.Model.TableStyle.CellType = "FormulaCell";
 
 
 
-#### d. Markup Headers
+d. Markup Headers
 
 In Excel, whenever a selection is made, the headers of those rows and columns which are involved in the selection will be highlighted. You can get a similar behavior in the Grid using the OnPrepareRenderCell event.  
 
@@ -158,7 +158,7 @@ protected override void OnPrepareRenderCell(GridPrepareRenderCellEventArgs e)
 
 
 
-#### e. Workbook of Sheets
+e. Workbook of Sheets
 
 You can create a workbook with multiple sheets similar to excel, using a Tab control, where individual tab represents a worksheet embedded within a Grid control.
 
@@ -176,9 +176,9 @@ You can create a workbook with multiple sheets similar to excel, using a Tab con
 
 
 
- Note: For the complete code for this example, refer the following browser sample: 
+> Note: For the complete code for this example, refer the following browser sample: 
 
- ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Excel Like UI Demo
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Excel Like UI Demo
 
 
 

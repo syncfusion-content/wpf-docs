@@ -66,7 +66,7 @@ VerticalOffset</td><td>
 This is an attached property that gets or sets the tooltip offset position in accordance with the VerticalAlignment property.</td></tr>
 </table> 
 
- Note : By default, the ToolTip is disabled. It must be enabled inorder to use it. Also, if you require an easy animation for the ToolTip, the EnableAnimation property must be set to True.
+Note : By default, the ToolTip is disabled. It must be enabled inorder to use it. Also, if you require an easy animation for the ToolTip, the EnableAnimation property must be set to True.
 
 The following code example can be added to enable and customize the ToolTip feature.
 
@@ -601,7 +601,6 @@ Occurs when selection changing is started in area.</td></tr>
 SelectionChanged</td><td>
 Occurs when selection changed is completed in area.</td></tr>
 </table>
-
 ### Segment selection
 
 Segment selection is used to highlight the particular data point in series.
@@ -628,7 +627,6 @@ Gets or sets brush value that indicates the selection color of selected segment.
 EnableSegmentSelection</td><td>
 Gets or sets bool value that enable or disable the segment selection.</td></tr>
 </table>
-
 #### SegmentSelectionBrush
 
 This property is used to define the custom brush for the selected segment. You can use the following code example to set SegmentSelectionBrush to the series.
@@ -864,7 +862,6 @@ Occurs when series or segment is no longer selected by the mouse.</td></tr>
 SegmentEnter</td><td>
 Occurs when the input device enters the segment.</td></tr>
 </table>
-
 ## Segment Drag and Drop
 
 This feature allows you to drag the data points along y-axis. The following series types support this feature.
@@ -1070,7 +1067,7 @@ The following screenshots illustrate the SfChart with scrollbar enabled.
 
 SfChart provides data point selection for adornments and the HighlightOnSelection property allows you to select the segment with the corresponding segment adornment. 
 
- Note: This property works only when you have enabled the selection for the series, by adding the above behavior.
+Note: This property works only when you have enabled the selection for the series, by adding the above behavior.
 
 All the series having Selection support, support the Adornment property.
 

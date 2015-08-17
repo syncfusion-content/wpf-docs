@@ -16,7 +16,7 @@ Essential Gantt enables you to customize the appearance of the control. This sup
 * Office2010Silver
 * Metro
 
-#### Properties
+## Properties
 
 _Property_
 
@@ -101,7 +101,7 @@ The following image shows Office 2010Metro:
 
 _Metro_
 
-#### Samples Link
+## Samples Link
 
 To view samples: 
 

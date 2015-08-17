@@ -867,9 +867,9 @@ The syntax of the MULTINOMIAL function is
 
 
 
-&#35;NUM!	-	Occurs if any of the supplied arguments are less than 0.
+#NUM!	-	Occurs if any of the supplied arguments are less than 0.
 
-&#35;VALUE! -	Occurs if any of the supplied arguments are non-numeric.
+#VALUE! -	Occurs if any of the supplied arguments are non-numeric.
 
 Example:
 
@@ -896,7 +896,7 @@ The syntax of the ISEVEN function is
 
 The given value must be a numeric value. If it is non-integer value, the value is rounded down.
 
-> Note: If the given value is nonnumeric, the ISEVEN function returns the ‘&#35;VALUE!’ error value.
+> Note: If the given value is nonnumeric, the ISEVEN function returns the ‘#VALUE!’ error value.
 
 
 
@@ -933,7 +933,7 @@ The syntax of the ISODD function is
 
 The given value must be a numeric value. If it is a non-integer value, the value is rounded down.
 
-> Note: If the given value is nonnumeric, ISODD function returns the ‘&#35;VALUE!’ error value.
+> Note: If the given value is nonnumeric, ISODD function returns the ‘#VALUE!’ error value.
 
 
 
@@ -1053,7 +1053,7 @@ Return value of function</th></tr>
 2</td></tr>
 <tr>
 <td>
-&#35;VALUE!</td><td>
+#VALUE!</td><td>
 3</td></tr>
 <tr>
 <td>
@@ -1065,7 +1065,7 @@ Return value of function</th></tr>
 5</td></tr>
 <tr>
 <td>
-&#35;NUM!</td><td>
+#NUM!</td><td>
 6</td></tr>
 <tr>
 <td>
@@ -1183,9 +1183,9 @@ Multiple – This value is required.
 
 The number must be is greater than or equal to half the value of multiple.
 
-&#35;NUM! -	Occurs if the number and multiple have different signs.
+#NUM! -	Occurs if the number and multiple have different signs.
 
-&#35;VALUE! -	Occurs if any of the given arguments are non-numeric.
+#VALUE! -	Occurs if any of the given arguments are non-numeric.
 
 
 
@@ -1207,7 +1207,7 @@ RESULT</th></tr>
 <tr>
 <td>
 =MROUND(10,-2)</td><td>
-&#35;NUM!</td></tr>
+#NUM!</td></tr>
 </table>
 
 ### RANDBETWEEN
@@ -1226,9 +1226,9 @@ end_num – Required. This is the largest integer.
 
 
 
-&#35;NUM! -	Occurs if the end_num value is larger than start_num value.
+#NUM! -	Occurs if the end_num value is larger than start_num value.
 
-&#35;VALUE! -	Occurs if any of the given arguments are non-numeric.
+#VALUE! -	Occurs if any of the given arguments are non-numeric.
 
 #### Example:
 
@@ -1257,9 +1257,9 @@ number – Required.
 
 
 
-&#35;NUM! -	If the number is less than zero (0).
+#NUM! -	If the number is less than zero (0).
 
-&#35;VALUE! -	Occurs if any of the given arguments are non-numeric.
+#VALUE! -	Occurs if any of the given arguments are non-numeric.
 
 #### Example:
 
@@ -1275,7 +1275,7 @@ RESULT</th></tr>
 <tr>
 <td>
 = SQRTPI (-2)</td><td>
-&#35;NUM!</td></tr>
+#NUM!</td></tr>
 </table>
 
 ### QUOTIENT
@@ -1294,7 +1294,7 @@ Denominator – Required.
 
 #### Remarks:
 
-&#35;VALUE! -	 Occurs if any of the given arguments are non-numeric.
+#VALUE! -	 Occurs if any of the given arguments are non-numeric.
 
 #### Example:
 
@@ -1327,9 +1327,9 @@ number – Required.
 
 
 
-&#35;NUM! -	If the number is less than zero (0).
+#NUM! -	If the number is less than zero (0).
 
-&#35;VALUE! -	Occurs if any of the given arguments are non-numeric
+#VALUE! -	Occurs if any of the given arguments are non-numeric
 
 #### Example:
 
@@ -1345,7 +1345,7 @@ RESULT</th></tr>
 <tr>
 <td>
 = FACTDOUBLE (-2)</td><td>
-&#35;NUM!</td></tr>
+#NUM!</td></tr>
 </table>
 
 ### GCD
@@ -1364,9 +1364,9 @@ If any value is not an integer, then it is rounded down.
 
 
 
-&#35;NUM!	 -	 If the number is less than zero (0).
+#NUM!	 -	 If the number is less than zero (0).
 
-&#35;VALUE! -	 Occurs if any of the given arguments are non-numeric.
+#VALUE! -	 Occurs if any of the given arguments are non-numeric.
 
 #### Example:
 
@@ -1382,7 +1382,7 @@ RESULT</th></tr>
 <tr>
 <td>
 = GCD (-2)</td><td>
-&#35;NUM!</td></tr>
+#NUM!</td></tr>
 </table>
 
 ### LCM
@@ -1401,9 +1401,9 @@ If any value is not an integer, then it is rounded down.
 
 
 
-&#35;NUM!	 -	 If the number is less than zero (0).
+#NUM!	 -	 If the number is less than zero (0).
 
-&#35;VALUE! -	 Occurs if any of the given arguments are non-numeric.
+#VALUE! -	 Occurs if any of the given arguments are non-numeric.
 
 #### Example:
 
@@ -1419,7 +1419,7 @@ RESULT</th></tr>
 <tr>
 <td>
 = LCM (-2)</td><td>
-&#35;NUM!</td></tr>
+#NUM!</td></tr>
 </table>
 
 ### ROMAN
@@ -1464,8 +1464,7 @@ More concise. See example below.</td></tr>
 4</td><td>
 Simplified.</td></tr>
 </table>
-
-&#35;VALUE! -	Occurs if any of the given values is non-numeric, or for values less than 0 and greater than 3999.
+#VALUE! -	Occurs if any of the given values is non-numeric, or for values less than 0 and greater than 3999.
 
 #### Example:
 
@@ -1485,7 +1484,7 @@ ID</td></tr>
 <tr>
 <td>
 =ROMAN(-100)</td><td>
-&#35;VALUE!</td></tr>
+#VALUE!</td></tr>
 </table>
 
 ### IFERROR
@@ -1568,7 +1567,7 @@ XOR (logical_value1, logical_value2,…)
 
 Logical_value1: Required. This can be either TRUE or FALSE, and can be logical values, arrays, or references.
 
-> Note: If the given arguments do not have the logical values, XOR returns the &#35;VALUE! error value.
+> Note: If the given arguments do not have the logical values, XOR returns the #VALUE! error value.
 
 
 
@@ -1687,10 +1686,10 @@ criteria: The condition to be tested in each of the values of the given range.
 average_range: Numeric values to be evaluated against the criteria and averaged.
 
 > Note
->
-> * If range is blank or a text value, AVERAGEIF returns the #DIV/0! error value.
-> * If a cell in criteria is empty, AVERAGEIF treats it as a 0 value.
-> * If no cells in the range meet the criteria, AVERAGEIF returns the #DIV/0! error value.
+
+* _If range is blank or a text value, AVERAGEIF returns the #DIV/0! error value._
+* _If a cell in criteria is empty, AVERAGEIF treats it as a 0 value._
+* _If no cells in the range meet the criteria, AVERAGEIF returns the #DIV/0! error value._
 
 
 
@@ -1762,10 +1761,10 @@ criteria_range1: Array of values to be tested against the given criteria.
 criteria1: The condition to be tested on each of the values of the given range.
 
 > Note
->
-> * If average_range is blank or a text value, AVERAGEIFS returns the #DIV/0! error value.
-> * If a cell in a criteria range is empty, AVERAGEIFS treats it as a 0 value.
-> * If cells in average_range cannot be translated into numbers, AVERAGEIFS returns the #DIV/0! error value.
+
+* _If average_range is blank or a text value, AVERAGEIFS returns the #DIV/0! error value._
+* _If a cell in a criteria range is empty, AVERAGEIFS treats it as a 0 value._
+* _If cells in average_range cannot be translated into numbers, AVERAGEIFS returns the #DIV/0! error value._
 
 
 
@@ -1838,11 +1837,11 @@ end_date: The end of the period to find the working days.
 
 [holidays]:  An optional argument, which specifies an array of dates that are not to be counted as working days.
 
-> Note: If any argument is not a valid date, NETWORKDAYS returns the &#35;VALUE! error value.
+> Note: If any argument is not a valid date, NETWORKDAYS returns the #VALUE! error value.
 
 
 
-#### Example  
+Example  
 
 <table>
 <tr>
@@ -1978,9 +1977,9 @@ Array form: The array form of LOOKUP looks in the first row or column of an arra
 =LOOKUP(lookup_value, array)
 
 > Note
->
-> * If the LOOKUP function can't find the lookup_value, the function matches the largest value in lookup_vector that is less than or equal to lookup_value.
-> * If lookup_value is smaller than the smallest value in lookup_vector, LOOKUP returns the #N/A error value.
+
+* _If the LOOKUP function can't find the lookup_value, the function matches the largest value in lookup_vector that is less than or equal to lookup_value._
+* _If lookup_value is smaller than the smallest value in lookup_vector, LOOKUP returns the #N/A error value._
 
 #### Example
 
@@ -2056,10 +2055,10 @@ string:Required. The text in which to search for the value of the substring.
 start_num: Optional. The starting position for searching in the string.
 
 > Note
->
-> * If the value of find_text is not found, the &#35;VALUE! error value is returned.
-> * If the start_num argument is omitted, it is assumed to be 1.
-> * If start_num is not greater than 0, or is greater than the length of the string argument, the &#35;VALUE! error value is returned.
+
+* _If the value of find_text is not found, the #VALUE! error value is returned._
+* _If the start_num argument is omitted, it is assumed to be 1._
+* _If start_num is not greater than 0, or is greater than the length of the string argument, the #VALUE! error value is returned._
 
 
 

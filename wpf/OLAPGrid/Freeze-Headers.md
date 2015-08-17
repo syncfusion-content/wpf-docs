@@ -10,8 +10,10 @@ documentation: ug
 # Freeze Headers
 
 OlapGrid for WPF provides built-in support to freeze the Column and Row Headers. This is achieved by setting the FreezeHeaders property of OlapGrid to true. This feature also enables scrolling through the value cells.
-{% highlight c# %}
-[C#]
+
+  {% highlight c# %}
+
+    [C#]
 
 
 
@@ -19,12 +21,15 @@ OlapGrid for WPF provides built-in support to freeze the Column and Row Headers.
 
 this.OlapGrid1.FreezeHeaders = true;
 
-
-{% endhighlight  %}
-{% highlight vbnet %}
+    {% endhighlight %}
 
 
-[VB]
+
+
+
+  {% highlight vbnet %}
+
+    [VB]
 
 
 
@@ -32,15 +37,18 @@ this.OlapGrid1.FreezeHeaders = true;
 
 Me.OlapGrid1.FreezeHeaders = True
 
+    {% endhighlight %}
 
-{% endhighlight  %}
+
+
+
+
 
 
 ![](Freeze-Headers_images/Freeze-Headers_img1.png)
 
 
-
-### Sample Location
+## Sample Location
 
 A sample demo is available at the following location:
 

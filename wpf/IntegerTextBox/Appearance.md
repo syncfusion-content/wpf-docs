@@ -35,21 +35,23 @@ The steps to edit the IntegerTextBox Template by using Expression Blend are as f
 1. Create a simple WPF application in Expression Blend.
 2. Drag and drop the IntegerTextBox into the application from the Assets tab.
 
-   ![](Appearance_images/Appearance_img1.png)
+
+
+![](Appearance_images/Appearance_img1.png)
 
 
 
 3. After creating the IntegerTextBox, select the IntegerTextBox and navigate to Object > Edit Style > Edit a Copy, to edit the Template of the IntegerTextBox.
 
-   ![](Appearance_images/Appearance_img2.png)
+![](Appearance_images/Appearance_img2.png)
 
 
 
-   Another way to edit the Template is as follows:
+Another way to edit the Template is as follows:
 
 4. In Object and Timeline, right-click the IntegerTextBox control and select the Edit Template option, as displayed below. 
 
-   ![](Appearance_images/Appearance_img3.png)
+![](Appearance_images/Appearance_img3.png)
 
 
 
@@ -61,12 +63,11 @@ This will open a dialog (below) where you can give your style a name and define 
 
 The result of these steps is an XAML, which is placed within your application. This XAML represents the default style for the Integer Textbox.
 
-{% highlight xml %}
 <syncfusion:IntegerTextBox Width="150" Height="25" VerticalAlignment="Top" 
 
                            Style="{StaticResource IntegerTextBoxStyle1}"/>
 
-{% endhighlight %}
+
 
 All template items can now be found in the Objects and Timeline window.
 
@@ -82,15 +83,13 @@ Now you can replace the existing Template setter and Triggers with your own crea
 
 Here is a simple example to customize the UnFocused state of the IntegerTextBox: 
 
-{% highlight xml %}
-
 <Trigger Property="IsFocused" Value="False">
 
     <Setter Property="Background" TargetName="Border" Value="LightGray"/>
 
 </Trigger>
 
-{% endhighlight %}
+
 
 When a control lost the Focus, the Background color of the IntegerTextBox will change to LightGray. Similarly, you can customize every state and property in Expression Blend.
 

@@ -17,6 +17,8 @@ When ShowRange property is set to true, two Thumbs are placed in the track. One 
 
 {%highlight xml%}
 
+[XAML]
+
 <editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" ShowRange="True" RangeStart="40" RangeEnd="70"/>
 
 {%endhighlight%}
@@ -31,6 +33,8 @@ Gets or sets the start value of the range start.
 
 {%highlight xml%}
 
+[XAML]
+
 <editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="10" ShowRange="True" RangeStart="10" RangeEnd="70"/>
 
 {%endhighlight%}
@@ -44,6 +48,8 @@ Gets or sets the start value of the range start.
 Gets or sets the end value of the range end.  
 
 {%highlight xml%}
+
+[XAML]
 
 <editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" ShowRange="True" RangeStart="30" RangeEnd="90"  />
 

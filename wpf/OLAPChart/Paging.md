@@ -24,7 +24,7 @@ Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudi
 
 2. Add the respective namespace and OlapPager in XAML as follows.
 
-  {% highlight xml %}
+  ~~~ xaml
 
     [XAML]
 
@@ -66,7 +66,8 @@ Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudi
 
     </Window> 
 	
-  {% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
    
 
@@ -76,7 +77,7 @@ Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudi
 
 3. Enable paging in OlapReport.
 
-  {% highlight c# %}
+  ~~~ c#
 
       [C#]
 
@@ -178,13 +179,14 @@ Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudi
 
     }   
 	
- {% endhighlight %}
+  ~~~
+  {:.pretty-print }
 
          
 
 
 
-  {% highlight vbnet %}
+  ~~~ vbnet
 
     [VB]
 
@@ -280,7 +282,8 @@ Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudi
 
     End Namespace
 	
-	{% endhighlight %}
+	~~~
+    {:.pretty-print }
 
 
 

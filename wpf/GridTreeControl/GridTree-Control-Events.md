@@ -11,7 +11,7 @@ documentation: ug
 
 Here is the list of events exposed in GridTree control. Additionally, you have access to all the GridControl events exposed on the GridTreeControl.InternalGrid.
 
-## _GridTree Control Events_
+_GridTree Control Events_
 
 <table>
 <tr>
@@ -41,7 +41,7 @@ This is a notification event that is handled once a node has been expanded by th
 </table>
 
 
-> Note: Additionally, you have access to all the Grid control events exposed on the GridTreeControl.InternalGrid.
+> _Note: Additionally, you have access to all the Grid control events exposed on the GridTreeControl.InternalGrid._
 
 
 

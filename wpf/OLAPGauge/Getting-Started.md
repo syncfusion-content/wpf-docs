@@ -9,11 +9,11 @@ documentation: ug
 
 # Getting Started
 
-## Configuring OLAP Gauge control
+# Configuring OLAP Gauge control
 
 This section explains on how to configure an OLAP Gauge component in an application. You can also learn how to pass the required data to OLAP Gauge and to customize its various options according to your requirements.
 
-### Through Visual Studio
+# Through Visual Studio
 
 1. Open Visual Studio IDE and from the File menu, select New  Project.
 2. In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application.
@@ -22,20 +22,20 @@ This section explains on how to configure an OLAP Gauge component in an applicat
 ![](Getting-Started_images/Getting-Started_img1.png)
 
 
-
 4. From the Visual Studio Toolbox, drag and drop the OlapGauge under Syncfusion BI WPF tag. It automatically add the required assemblies.
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
 
-
 5. Add a name to OlapGauge for accessing it through code-behind as shown in the following code example.
-{% highlight xml %}
-[XAML]
+
+  ~~~ xml
+
+    [XAML]
 
 
 
-<Window
+    <Window
 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
@@ -51,29 +51,34 @@ This section explains on how to configure an OLAP Gauge component in an applicat
 
     </Grid>
 
-</Window>
+    </Window>
+	
+  ~~~
+  {:.pretty-print }
+
+    
 
 
-{% endhighlight  %}
+
 
 
 6. Include the following namespaces in the code-behind for handling OlapReport and OlapDataManger.
 1. Syncfusion.Olap.Reports
 2. Syncfusion.Olap.Manager
 
-{% highlight c# %}
+  ~~~ c#
 
-[C#]
+    [C#]
 
 
 
-using Syncfusion.Olap.Manager;
+    using Syncfusion.Olap.Manager;
 
-using Syncfusion.Olap.Reports;
+    using Syncfusion.Olap.Reports;
 
-namespace SampleApplication
+    namespace SampleApplication
 
-{
+   {
 
     public partial class MainWindow : SampleWindow
 
@@ -181,46 +186,50 @@ namespace SampleApplication
 
     }
 
-}
+    }
+	
+  ~~~
+  {:.pretty-print }
 
-{% endhighlight  %}
-{% highlight vbnet %}
+    
 
-[VB]
+  ~~~ vbnet
 
-Imports Syncfusion.Olap.Manager
+    [VB]
 
-Imports Syncfusion.Olap.Reports
+    Imports Syncfusion.Olap.Manager
 
-Namespace SampleApplication
+    Imports Syncfusion.Olap.Reports
 
-Partial Public Class MainWindow Inherits SampleWindow
+    Namespace SampleApplication
 
-Private _connectionString As String
+    Partial Public Class MainWindow Inherits SampleWindow
 
-Private _olapDataManager As OlapDataManager
+    Private _connectionString As String
+
+    Private _olapDataManager As OlapDataManager
 
 
 
-Public Sub New()
+    Public Sub New()
 
-InitializeComponent()
+    InitializeComponent()
 
-_connectionString = "Enter a valid connection string"
+    _connectionString = "Enter a valid connection string"
 
-' Connection string is passed to OlapDataManager as an argument
+    ' Connection string is passed to OlapDataManager as an argument
 
-_olapDataManager = New OlapDataManager(_connectionString)
+    _olapDataManager = New OlapDataManager(_connectionString)
 
-' A default OlapReport is set to OlapDataManager
+    ' A default OlapReport is set to OlapDataManager
 
-_olapDataManager.SetCurrentReport(CreateOlapReport())
+    _olapDataManager.SetCurrentReport(CreateOlapReport())
 
 		' Finally OlapGauge gets the information from the OlapDataManager 
 
-Me.olapGauge.OlapDataManager = _olapDataManager
+    Me.olapGauge.OlapDataManager = _olapDataManager
 
-Me.olapGauge.DataBind()
+    Me.olapGauge.DataBind()
 
       End Sub
 
@@ -292,11 +301,16 @@ Me.olapGauge.DataBind()
 
       End Function
 
-End Class
+      End Class
 
-End Namespace
+      End Namespace
+	
+  ~~~
+  {:.pretty-print }
 
-{% endhighlight %}
+    
+
+
 
 
 
@@ -305,8 +319,7 @@ End Namespace
 ![](Getting-Started_images/Getting-Started_img3.png)
 
 
-
-### Through Expression Blend
+# Through Expression Blend
 
 OLAP Gauge control can also be created and configured by using Expression Blend as follows.
 
@@ -315,20 +328,18 @@ OLAP Gauge control can also be created and configured by using Expression Blend 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
 
-
 2. Select Project tab in the application window. 
 
 ![](Getting-Started_images/Getting-Started_img5.png)
-
 
 
 3. Right-click on References and select Add Reference, then add the following assemblies into the project from installed location.
 1. Syncfusion.Olap.Base
 2. Syncfusion.OlapGauge.WPF
 
-#### Assemblies Location:
+## Assemblies Location:
 
-&lt;SystemDrive&gt;:\ProgramFiles(x86)\Syncfusion\EssentialStudio\<version>\precompiledassemblies\<version>\<Framework>\
+<SystemDrive>:\ProgramFiles(x86)\Syncfusion\EssentialStudio\<version>\precompiledassemblies\<version>\<Framework>\
 
 4. After adding the above assemblies, OlapGauge control is automatically added in the Assests.
 5. Now, find OlapGauge and drag it to the designer window. 
@@ -336,14 +347,15 @@ OLAP Gauge control can also be created and configured by using Expression Blend 
 ![](Getting-Started_images/Getting-Started_img6.png)
 
 
-
 6. Add a name to OlapGauge for accessing it through code-behind as shown in the following code example.
-{% highlight xml %}
-[XAML]
+
+  ~~~ xml
+
+    [XAML]
 
 
 
-<Window
+    <Window
 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
@@ -359,33 +371,38 @@ OLAP Gauge control can also be created and configured by using Expression Blend 
 
     </Grid>
 
-</Window>
+    </Window>
+	
+  ~~~
+  {:.pretty-print }
+
+    
 
 
-{% endhighlight  %}
+
 
 
 7. Include the following namespaces in the code-behind for using OlapReport and OlapDataManger in the application.
 1. Syncfusion.Olap.Reports
 2. Syncfusion.Olap.Manager
 
+  ~~~ c#
 
-{% highlight c# %}
-[C#]
+    [C#]
 
 
 
-using Syncfusion.Olap.Manager;
+    using Syncfusion.Olap.Manager;
 
-using Syncfusion.Olap.Reports;
+    using Syncfusion.Olap.Reports;
 
-namespace SampleApplication
+    namespace SampleApplication
 
-{
+    {
 
-public partial class MainWindow : SampleWindow
+    public partial class MainWindow : SampleWindow
 
-{
+    {
 
         private string _connectionString;
 
@@ -489,48 +506,52 @@ public partial class MainWindow : SampleWindow
 
     }
 
-}
+    }
+	
+  ~~~
+  {:.pretty-print }
 
+    
 
-{% endhighlight  %}
-{% highlight vbnet %}
-[VB]
+  ~~~ vbnet
 
-
-
-Imports Syncfusion.Olap.Manager
-
-Imports Syncfusion.Olap.Reports
-
-Namespace SampleApplication
-
-Partial Public Class MainWindow Inherits SampleWindow
-
-Private _connectionString As String
-
-Private _olapDataManager As OlapDataManager
+    [VB]
 
 
 
-Public Sub New()
+    Imports Syncfusion.Olap.Manager
 
-InitializeComponent()
+    Imports Syncfusion.Olap.Reports
 
-_connectionString = "Enter a valid connection string"
+    Namespace SampleApplication
 
-' Connection string is passed to OlapDataManager as an argument
+    Partial Public Class MainWindow Inherits SampleWindow
 
-_olapDataManager = New OlapDataManager(_connectionString)
+    Private _connectionString As String
 
-' A default OlapReport is set to OlapDataManager
+    Private _olapDataManager As OlapDataManager
 
-_olapDataManager.SetCurrentReport(CreateOlapReport())
 
-' Finally OlapGauge gets the information from the OlapDataManager		Me.olapGauge.OlapDataManager = _olapDataManager
 
-Me.olapGauge.DataBind()
+    Public Sub New()
 
-End Sub
+    InitializeComponent()
+
+    _connectionString = "Enter a valid connection string"
+
+    ' Connection string is passed to OlapDataManager as an argument
+
+    _olapDataManager = New OlapDataManager(_connectionString)
+
+    ' A default OlapReport is set to OlapDataManager
+
+    _olapDataManager.SetCurrentReport(CreateOlapReport())
+
+    ' Finally OlapGauge gets the information from the OlapDataManager		Me.olapGauge.OlapDataManager = _olapDataManager
+
+    Me.olapGauge.DataBind()
+
+    End Sub
 
 
 
@@ -600,13 +621,18 @@ End Sub
 
       End Function
 
-End Class
+      End Class
 
-End Namespace
+      End Namespace
+	
+  ~~~
+  {:.pretty-print }
+
+    
 
 
 
-{% endhighlight %}
+
 
 8. Run the application
 
@@ -615,8 +641,7 @@ End Namespace
 ![](Getting-Started_images/Getting-Started_img7.png)
 
 
-
-### Through Code-Behind
+# Through Code-Behind
 
 1. Open Visual Studio IDE and from the File menu, select New  Project.
 2. In the New Project Dialog box, click the tree node Windows under Visual C# and select WPF Application. 
@@ -627,9 +652,7 @@ End Namespace
 ![](Getting-Started_images/Getting-Started_img8.png)
 
 
-
 ![](Getting-Started_images/Getting-Started_img9.png)
-
 
 
 4. Right-Click on References and select Add Reference, then add the following Syncfusion assemblies manually to the project from installed location.
@@ -640,36 +663,36 @@ End Namespace
 5. Syncfusion.OlapShared.WPF
 6. Syncfusion.Shared.WPF
 
-#### Assemblies Location
+## Assemblies Location
 
-&lt;SystemDrive&gt;:\ProgramFiles(x86)\Syncfusion\EssentialStudio\<version>\precompiledassemblies\<version>\<Framework>\
+<SystemDrive>:\ProgramFiles(x86)\Syncfusion\EssentialStudio\<version>\precompiledassemblies\<version>\<Framework>\
 
 5. Include the following namespaces in code-behind for using OlapGauge, OlapReport and OlapDataManger in the program.
 1. Syncfusion.Olap.Reports
 2. Syncfusion.Olap.Manager
 3. Syncfusion.Windows.Gauge.Olap
 
+  ~~~ c#
 
-{% highlight c# %}
-[C#]
-
-
-
-using Syncfusion.Olap.Manager;
-
-using Syncfusion.Olap.Reports;
-
-using Syncfusion.Windows.Gauge.Olap;
+    [C#]
 
 
 
-namespace SampleApplication
+    using Syncfusion.Olap.Manager;
 
-{
+    using Syncfusion.Olap.Reports;
 
-public partial class MainWindow : SampleWindow
+    using Syncfusion.Windows.Gauge.Olap;
 
-{
+
+
+    namespace SampleApplication
+
+    {
+
+    public partial class MainWindow : SampleWindow
+
+    {
 
         private string _connectionString;
 
@@ -777,56 +800,60 @@ public partial class MainWindow : SampleWindow
 
     }
 
-}       
+    } 
+	
+  ~~~
+  {:.pretty-print }
 
-{% endhighlight  %}
-{% highlight vbnet %}
+          
 
-[VB]
+  ~~~ vbnet
 
-
-
-Imports Syncfusion.Olap.Manager
-
-Imports Syncfusion.Olap.Reports
-
-Imports Syncfusion.Windows.Gauge.Olap
+    [VB]
 
 
 
-Namespace SampleApplication
+    Imports Syncfusion.Olap.Manager
 
-Partial Public Class MainWindowInherits SampleWindow
+    Imports Syncfusion.Olap.Reports
 
-Private _connectionString As String
-
-Private _olapDataManager As OlapDataManager
+    Imports Syncfusion.Windows.Gauge.Olap
 
 
 
-Public Sub New()
+    Namespace SampleApplication
 
-InitializeComponent()
+    Partial Public Class MainWindowInherits SampleWindow
 
-Dim olapGauge As New OlapGauge()
+    Private _connectionString As String
 
-_connectionString = "Enter a valid connection string"
+    Private _olapDataManager As OlapDataManager
 
-' Connection string is passed to OlapDataManager as an argument
 
-_olapDataManager = New OlapDataManager(_connectionString)
 
-' A default OlapReport is set to OlapDataManager
+    Public Sub New()
 
-_olapDataManager.SetCurrentReport(CreateOlapReport())
+    InitializeComponent()
 
-' Finally OlapGauge gets the information from the OlapDataManager		Me.olapGauge.OlapDataManager = _olapDataManager
+    Dim olapGauge As New OlapGauge()
 
-Me.olapGauge.DataBind()
+    _connectionString = "Enter a valid connection string"
 
-Me.AddChild(olapGauge)
+    ' Connection string is passed to OlapDataManager as an argument
 
-End Sub
+    _olapDataManager = New OlapDataManager(_connectionString)
+
+    ' A default OlapReport is set to OlapDataManager
+
+    _olapDataManager.SetCurrentReport(CreateOlapReport())
+
+    ' Finally OlapGauge gets the information from the OlapDataManager		Me.olapGauge.OlapDataManager = _olapDataManager
+
+    Me.olapGauge.DataBind()
+
+    Me.AddChild(olapGauge)
+
+    End Sub
 
 
 
@@ -896,17 +923,21 @@ End Sub
 
        End Function
 
-End Class
+       End Class
 
-End Namespace
+       End Namespace
+	
+  ~~~
+  {:.pretty-print }
+
+    
 
 
-{% endhighlight  %}
+
 
 
 6. Run the application.                                      
 
 ![](Getting-Started_images/Getting-Started_img10.png)
-
 
 

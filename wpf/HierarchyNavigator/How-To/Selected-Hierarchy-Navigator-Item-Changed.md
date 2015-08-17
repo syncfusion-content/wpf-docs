@@ -7,38 +7,32 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Selected Hierarchy Navigator Item Changed
+### Selected Hierarchy Navigator Item Changed
 
 Users can handle selected item changed by using the methods Command (ICommand) property or HierarchyNavigatorSelectedItemChanged event in Hierarchy Navigator control.
 
-{% highlight xml %}
-XAML
-<syncfusion:HierarchyNavigator HierarchyNavigatorSelectedItemChanged="HierarchyNavigatorSelectedItemChanged" />
+<table>
+<tr>
+<td>
+XAML<syncfusion:HierarchyNavigator HierarchyNavigatorSelectedItemChanged="HierarchyNavigatorSelectedItemChanged" /></td></tr>
+<tr>
+<td>
+C#HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();<br>hierarchyNavigator.HierarchyNavigatorSelectedItemChanged += new HierarchyNavigatorSelectedItemChangedEventHandler(HierarchyNavigatorSelectedItemChanged);</td></tr>
+<tr>
+<td>
+C#private void HierarchyNavigatorSelectedItemChanged(object sender, HierarchyNavigatorSelectedItemChangedEventArgs e){<br>     //Occurs when Selected Item Changed}</td></tr>
+</table>
 
-{% endhighlight %}
-
-{% highlight c# %}
-C#
-HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
-hierarchyNavigator.HierarchyNavigatorSelectedItemChanged += new HierarchyNavigatorSelectedItemChangedEventHandler(HierarchyNavigatorSelectedItemChanged);
-
-{% endhighlight %}
-
-{% highlight c# %}
-C#private void HierarchyNavigatorSelectedItemChanged(object sender, HierarchyNavigatorSelectedItemChangedEventArgs e)
-{
-     //Occurs when Selected Item Changed
-}
-
-{% endhighlight %}
 
 Passing the argument “HierarchyNavigator item” in a method called SelectNavigationItem can change the selected item.
 
-{% highlight c# %}
+C#
+
+
 
 HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
 
 hierarchyNavigator.SelectNavigationItem(hierarchyitem);
 
-{% endhighlight %}
+
 

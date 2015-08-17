@@ -90,9 +90,9 @@ _Basic Cell Types_
 
 A check box is created in the grid.
 
-Note: For complete code, please refer to the following browser sample:
+> Note: For complete code, please refer to the following browser sample:
 
-...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Basic Cell Type Demo
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Basic Cell Type Demo
 
 ### Combo Box Cells
 
@@ -100,7 +100,7 @@ A combo box is a component with a drop-down arrow that users click to display an
 
 This cell type allows you to choose the cell value from a drop-down list. You can customize this list in many ways by setting the appropriate GridStyleInfo property. Some interesting options are Autocomplete, associate a string collection, associate LINQ source etc. You can also use this drop-down like a foreign key– for example, displaying one column in the drop-down while saving the cell value from another column in the data source.
 
-Note: A foreign key is a field in a relational table that matches the primary key column of another table. The foreign key can be used to cross-reference tables.
+> Note: A foreign key is a field in a relational table that matches the primary key column of another table. The foreign key can be used to cross-reference tables.
 
 The table below lists various properties that can affect combo box cells.
 
@@ -140,7 +140,7 @@ String that names the public property from the data source object to be used as 
 
 Before we proceed further the following note provides more information on the drop-down styles:
 
-Note:* Editable-Editable combo boxes combine an editable text field and provide users the additional option of typing an item that might or might not be on the list. The item to be typed in the text field need not be case-sensitive. * _Autocomplete-Autocomplete combo boxes predict a word or phrase that the user wants to type in the associated text box without the user actually typing it completely. * Exclusive-This is a non-editable combo box where user is allowed to select only the options available from the drop-down list.
+> Note:* Editable-Editable combo boxes combine an editable text field and provide users the additional option of typing an item that might or might not be on the list. The item to be typed in the text field need not be case-sensitive. * _Autocomplete-Autocomplete combo boxes predict a word or phrase that the user wants to type in the associated text box without the user actually typing it completely. * Exclusive-This is a non-editable combo box where user is allowed to select only the options available from the drop-down list.
 
 Combo-boxes can be added to the Grid in two different ways as follows:
 
@@ -378,9 +378,9 @@ _Exclusive Combo box using ItemsSource_
 
 An Exclusive Combo Box in a Grid is created.
 
-Note: For complete code, please refer to the following browser sample.
+> Note: For complete code, please refer to the following browser sample.
 
-...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo
 
 ### Drop-down List Cells
 
@@ -530,9 +530,9 @@ The following output is generated using the code above.
 
 _Exclusive Drop-down List Control_
 
- Note: For complete code, please refer to the following browser sample.
+> Note: For complete code, please refer to the following browser sample.
 
- ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Combo Box Cell Demo
 
 
 
@@ -725,9 +725,9 @@ The following output is generated using the code above.
 
 _Currency Cell with a Positive Value_
 
- Note: For complete code, please refer to the following browser sample.
+> Note: For complete code, please refer to the following browser sample.
 
- ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Currency Cell Demo
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Currency Cell Demo
 
 ### Date Time Cells
 
@@ -870,9 +870,9 @@ The following output is generated using the code above.
 
 _DateTime Cell_
 
- Note: For complete code, please refer to the following browser sample.
+> Note: For complete code, please refer to the following browser sample.
 
- ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Date Time Cell Demo
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Date Time Cell Demo
 
 ### Double Edit Cells
 
@@ -1008,9 +1008,9 @@ The following output is generated using the code above.
 
 _Double Edit Cell_
 
- Note: For complete code, please refer to the following browser sample.
+> Note: For complete code, please refer to the following browser sample.
 
- ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Double Edit Cell Demo
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Double Edit Cell Demo
 
 
 
@@ -1100,9 +1100,9 @@ The following output is generated using the code above.
 
 _Integer Edit_
 
- Note: For complete code, please refer to the following browser sample.
+> Note: For complete code, please refer to the following browser sample.
 
- ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Interger Edit Cell Demo
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Interger Edit Cell Demo
 
 ### Mask Edit Cells
 
@@ -1166,9 +1166,9 @@ The following output is generated using the code above.
 
 _Mask Edit Cell_
 
- Note: For complete code, please refer to the following browser sample.
+> Note: For complete code, please refer to the following browser sample.
 
- ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Mask Edit Cell Demo
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Mask Edit Cell Demo
 
 ### Percent Edit Cells
 
@@ -1288,9 +1288,9 @@ The following output is generated using the code above.
 
 _Percent Edit Cell_
 
- Note: For complete code, please refer to the following browser sample.
+> Note: For complete code, please refer to the following browser sample.
 
- ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Percent Edit Cell Demo
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Percent Edit Cell Demo
 
 ### RichTextBox CellType
 
@@ -1494,9 +1494,9 @@ The following output is generated using the code above.
 
 _Up Down Edit_
 
- Note: For complete code, please refer to the following browser sample.
+> Note: For complete code, please refer to the following browser sample.
 
- ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\UpDown Cell Demo
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\UpDown Cell Demo
 
 ### Nested Grid Cells 
 
@@ -2347,9 +2347,9 @@ The following output is generated using the code above.
 
 _Nested Grid-Rows and Columns Independent of Parent Grid_
 
- Note: For complete code, please refer to the following browser sample.
+> Note: For complete code, please refer to the following browser sample.
 
- ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Nested Grid Demo
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Nested Grid Demo
 
 ## Formula Cells
 
@@ -5384,9 +5384,9 @@ The following output is generated using the code above.
 
 _Custom Drop-down_
 
- Note: For complete code, please refer to the following browser sample.
+> Note: For complete code, please refer to the following browser sample.
 
- ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Custom Drop Down Demo
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Custom Drop Down Demo
 
 
 
@@ -5394,7 +5394,7 @@ _Custom Drop-down_
 
 This cell builds a custom data template that can be used to set enriched styles for associated cells. The DataTemplateCellModel creates the cell type with a Content Control (a WPF control) by calling the renderer. 
 
- Note: To create a cell type that hosts a WPF control, you should derive it from GridVirtualizingCellRenderer. The most important method to override is the OnInitializeContent method. It will be called for every UI element created for cells displaying this renderer. You can get access to the cell style from this method.
+> Note: To create a cell type that hosts a WPF control, you should derive it from GridVirtualizingCellRenderer. The most important method to override is the OnInitializeContent method. It will be called for every UI element created for cells displaying this renderer. You can get access to the cell style from this method.
 
 The DataTemplateCellRenderer is derived from GridVirtualizingCellRenderer and overrides OnInitializeContent and sets the Content Control template to Style.CellTemplate value.
 
@@ -5562,9 +5562,9 @@ The following output is generated using the code above.
 
 _Data Template with Cell Template Assigned_
 
- Note: For complete code, please refer to the following browser sample.
+> Note: For complete code, please refer to the following browser sample.
 
- ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Data Template Cell Demo
+> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Cell Types\Data Template Cell Demo
 
 ### Rich Text Box Cells
 
@@ -5997,7 +5997,7 @@ Grid provides inherent support to add images into grid cells. There are two poss
 
 
 
- Note: If you use both Image and ImageList properties, then the most recent property applied will be considered.
+> Note: If you use both Image and ImageList properties, then the most recent property applied will be considered.
 
 The following code example illustrates how to use these properties.
 

@@ -25,7 +25,7 @@ You can bind the Business objects to the AutoComplete as mentioned below.
 <syncfusion:AutoComplete.CustomSource> 
 <local:EmployeeListCollection/>  
 </syncfusion:AutoComplete.CustomSource>
-</syncfusion:AutoComplete>
+</syncfusion:AutoComplete></td></tr>
 {% endhighlight %}
 
 {% highlight c# %}

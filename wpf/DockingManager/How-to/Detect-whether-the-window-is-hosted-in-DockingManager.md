@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-## Detect whether the window is hosted in DockingManager
+### Detect whether the window is hosted in DockingManager
 
 There two ways to detect whether a FrameworkElement is hosted in DockingManager or not. They are:  
 
@@ -18,7 +18,7 @@ The two ways are shown below:
 
 
 
-{% highlight c# %}
+[C#]
 
 //Getting DockingManager Instance.
 
@@ -30,5 +30,5 @@ DockingManager manager=DockingManager.GetDockingManager(element1);
 
 DockingManager.Children.Contains(element1);
 
-{% endhighlight %}
+
 

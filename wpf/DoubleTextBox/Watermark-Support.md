@@ -12,9 +12,15 @@ documentation: ug
 Watermark is the dummy content displayed in the DoubleTextBox when the value is null. The WatermarkText support behavior can be enabled by setting the WatermarkTextIsVisible property to true.
 
 
-{% highlight xml %}
- <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25" WatermarkText="Type Here" WatermarkTextIsVisible="True"  WatermarkOpacity="0.5" UseNullOption="True"/> 
-{% endhighlight %} 
+
+<table>
+<tr>
+<td>
+{% highlight xml %} XAML {% endhighlight %} </td></tr>
+<tr>
+<td>
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25"                            WatermarkText="Type Here" WatermarkTextIsVisible="True"                            WatermarkOpacity="0.5" UseNullOption="True"/> {% endhighlight %} </td></tr>
+</table>
 
 
 ![](Watermark-Support_images/Watermark-Support_img1.png)

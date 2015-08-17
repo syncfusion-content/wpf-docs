@@ -23,12 +23,12 @@ _Property Table_
 
 <table>
 <tr>
-<th>
-Property </th><th>
- Description</th><th>
-Type</th><th>
-Data  Type</th><th>
-Reference Link</th></tr>
+<td>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data  Type**' | markdownify }}</td><td>
+{{ '**Reference Link**' | markdownify }}</td></tr>
 <tr>
 <td>
 DataSource.ConnectionString</td><td>
@@ -105,8 +105,10 @@ CalculatedMembers</td><td>
 ## Adding report to OLAP Grid
 
 Adding an OLAP report to OLAP Grid control in design time is described in the following code snippet:
-{% highlight xml %}
-[XAML]
+
+  {% highlight xml %}
+
+   [XAML]
 
 
 
@@ -152,13 +154,15 @@ olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=a
 
 </syncfusion:OlapGrid>
 
+    {% endhighlight %}
 
-{% endhighlight  %}
+
+
+
+
 
 
 ![](XAML-Configuration_images/XAML-Configuration_img1.png)
-
-
 
 _OLAP Grid with SalesReport created by XAML code_
 

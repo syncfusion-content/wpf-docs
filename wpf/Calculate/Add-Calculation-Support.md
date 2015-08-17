@@ -340,10 +340,8 @@ private void textBoxA_Leave(object sender, EventArgs e)
         }
 
 }
-// ..... same for textBoxB_Leave, textBoxC_Leave, textBoxD_Leave
-
 {% endhighlight  %}
-
+// ..... same for textBoxB_Leave, textBoxC_Leave, textBoxD_Leave
 
 {% highlight vbnet %}
 
@@ -492,7 +490,6 @@ The following is an explanation of the numbered steps given in the preceding For
 7. This step forces the recalculation of all variables registered with the CalcQuickBase object. This has to be done after the AutoCalc property has been set to True, so that the dependencies between variables can be monitored. The reason to postpone setting AutoCalc until after the initial registration of the variables, is to avoid problems that might occur because of CalcQuickBase trying to set up dependency chains even before all the variables have been registered. Initializing the variables, turning on AutoCalc, and then calling RefreshAllCalculations, avoids this potential problem.
 8. This is the event handler that moves a freshly computed variable into the text box that it is related to.
 9. These four event handlers signal when the user leaves a modified text box. At that point, the CalcQuickBase object is updated to reflect the new value that has been entered by the user.
-
 ### Using RegisterControlArray
 
 

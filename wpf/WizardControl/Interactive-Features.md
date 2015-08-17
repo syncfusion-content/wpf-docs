@@ -20,6 +20,10 @@ To add a wizard page to the Wizard control, use the below code
 
 {% highlight xml %}
 
+[XAML]
+
+
+
 <syncfusion:WizardControl Name="wizardControl">
 
     <syncfusion:WizardPage Name="wizardPage"/>
@@ -27,7 +31,11 @@ To add a wizard page to the Wizard control, use the below code
 </syncfusion:WizardControl>
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
+
+[C#]
+
+
 
 WizardControl wizardControl = new WizardControl();
 
@@ -35,8 +43,7 @@ grid.Children.Add(wizardControl);
 
 WizardPage wizardPage = new WizardPage();
 
-wizardControl.Items.Add(wizardPage); 
- 
+wizardControl.Items.Add(wizardPage);  
 {% endhighlight %}
 
 
@@ -53,6 +60,10 @@ To add two wizard pages to the Wizard control, refer the below code
 
 {% highlight xml %}
 
+[XAML]
+
+
+
 <syncfusion:WizardControl Name="wizardControl">
 
     <syncfusion:WizardPage Name="wizardPage1"/>
@@ -60,10 +71,13 @@ To add two wizard pages to the Wizard control, refer the below code
     <syncfusion:WizardPage Name="wizardPage2"/>
 
 </syncfusion:WizardControl>
-
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
+
+[C#]
+
+
 
 WizardControl wizardControl = new WizardControl();
 
@@ -76,11 +90,13 @@ WizardPage wizardPage2 = new WizardPage();
 wizardControl.Items.Add(wizardPage1);     
 
 wizardControl.Items.Add(wizardPage2);
-
 {% endhighlight %}
 
 
 ![](Interactive-Features_images/Interactive-Features_img2.jpeg)
+
+
+
 
 
 ## Wizard Page
@@ -92,6 +108,10 @@ To set this property, use the below code.
 
 {% highlight xml %}
 
+[XAML]
+
+
+
 <syncfusion:WizardControl Name="wizardControl" SelectedWizardPage="wizardPage2" Foreground="SlateBlue">
 
     <syncfusion:WizardPage Name="wizardPage1" Title="WizardPage1"/>
@@ -101,10 +121,13 @@ To set this property, use the below code.
     <syncfusion:WizardPage Name="wizardPage3" Title="WizardPage3"/>
 
 </syncfusion:WizardControl>
-
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
+
+[C#]
+
+
 
 // "grid" is the name of grid control
 
@@ -133,7 +156,6 @@ wizardControl.Items.Add(wizardPage2);
 wizardControl.Items.Add(wizardPage3);
 
 wizardControl.SelectedWizardPage = wizardPage2; 
-
 {% endhighlight %}
 
 
@@ -149,6 +171,10 @@ Use the following code snippet to set these properties.
 
 {% highlight xml %}
 
+[XAML]
+
+
+
 <syncfusion:WizardControl Name="wizardControl">
 
     <syncfusion:WizardPage Name="wizardPage" Foreground="Navy" Title="WizardPage1"
@@ -156,10 +182,13 @@ Use the following code snippet to set these properties.
 Description="This is the first page of wizard" />
 
 </syncfusion:WizardControl>
-
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
+
+[C#]
+
+
 
 WizardControl wizardControl = new WizardControl();
 
@@ -174,7 +203,6 @@ wizardPage.Foreground = Brushes.Navy;
 wizardPage.Title = "WizardPage1";
 
 wizardPage.Description = "This is the first page of wizard"
-
 {% endhighlight %}
 
 
@@ -196,17 +224,24 @@ Use the below code snippet to set the PageType as Blank.
 
 {% highlight xml %}
 
+[XAML]
+
+
+
 <syncfusion:WizardControl Name="wizardControl">
 
     <syncfusion:WizardPage Name="wizardPage" PageType="Blank"/>
 
 </syncfusion:WizardControl>
-
 {% endhighlight %}
 
 
 
-{% highlight c# %}
+{% highlight C# %}
+
+[C#]
+
+
 
 WizardControl wizardControl = new WizardControl();
 
@@ -230,6 +265,10 @@ Use the following code snippet to set the PageType as Interior.
 
 {% highlight xml %}
 
+[XAML]
+
+
+
 <syncfusion:WizardControl Name="wizardControl">
 
     <syncfusion:WizardPage Name="wizardPage" PageType="Interior"/>
@@ -239,7 +278,10 @@ Use the following code snippet to set the PageType as Interior.
 {% endhighlight %}
 
 
-{% highlight c# %}
+{% highlight C# %}
+
+[C#]
+
 
 
 WizardControl wizardControl = new WizardControl();
@@ -251,7 +293,6 @@ WizardPage wizardPage = new WizardPage();
 wizardControl.Items.Add(wizardPage);
 
 wizardPage.PageType = WizardPageType.Interior;  
-
 {% endhighlight %}
 
 
@@ -260,15 +301,22 @@ Use the following code snippet to set the PageType as Exterior.
 
 {% highlight xml %}
 
+[XAML]
+
+
+
 <syncfusion:WizardControl Name="wizardControl">
 
     <syncfusion:WizardPage Name="wizardPage" PageType="Exterior"/>
 
 </syncfusion:WizardControl>
-
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
+
+[C#]
+
+
 
 WizardControl wizardControl = new WizardControl();
 
@@ -278,8 +326,7 @@ WizardPage wizardPage = new WizardPage();
 
 wizardControl.Items.Add(wizardPage);
 
-wizardPage.PageType = WizardPageType.Exterior;   
-
+wizardPage.PageType = WizardPageType.Exterior;    
 {% endhighlight %}
 
 
@@ -288,7 +335,7 @@ wizardPage.PageType = WizardPageType.Exterior;
 
 
 
-####  See Also
+###  See Also
 
 Minimum Width for the Banner Image on the Exterior Wizard Page, Minimum Height for the Interior Wizard Page Header
 
@@ -311,6 +358,10 @@ Here is the code snippet.
 
 {% highlight xml %}
 
+[XAML]
+
+
+
 <syncfusion:WizardControl Name="wizardControl" BackEnabled="True" FinishEnabled="True"
 
 NextEnabled="True" CancelEnabled="True">
@@ -318,10 +369,13 @@ NextEnabled="True" CancelEnabled="True">
     <syncfusion:WizardPage Name="wizardPage"/>
 
 </syncfusion:WizardControl>
-
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
+
+[C#]
+
+
 
 WizardControl wizardControl = new WizardControl();
 
@@ -355,6 +409,10 @@ To set these properties, refer the below code.
 
 {% highlight xml %}
 
+[XAML]
+
+
+
 <syncfusion:WizardControl Name="wizardControl" BackVisible="False" NextVisible="True" 
 
 CancelVisible="True" HelpVisible="True" FinishVisible="False">
@@ -362,11 +420,15 @@ CancelVisible="True" HelpVisible="True" FinishVisible="False">
     <syncfusion:WizardPage Name="wizardPage"/>
 
 </syncfusion:WizardControl>
-
 {% endhighlight %}
 
 
-{% highlight c# %}
+{% highlight C# %}
+
+
+[C#]
+
+
 
 WizardControl wizardControl = new WizardControl();
 
@@ -401,6 +463,10 @@ You can set custom text for the Back, Next, Finish, Help and Cancel navigation b
 
 {% highlight xml %}
 
+[XAML]
+
+
+
 <syncfusion:WizardControl Name="wizardControl" BackText="Previous" 
 
 HelpText="Help" CancelText="Exit" FinishText="Finish" NextText="Next">
@@ -412,7 +478,11 @@ HelpText="Help" CancelText="Exit" FinishText="Finish" NextText="Next">
 
 {% endhighlight %}
 
-{% highlight c# %}
+{% highlight C# %}
+
+[C#]
+
+
 
 WizardControl wizardControl = new WizardControl();
 
@@ -437,12 +507,12 @@ wizardControl.FinishText = "Finish";
 ![](Interactive-Features_images/Interactive-Features_img9.jpeg)
 
 
-> Note: You can set custom text for the navigation buttons in the wizard control only. You cannot set custom text for the navigation buttons in the wizard page.
+> _Note: You can set custom text for the navigation buttons in the wizard control only. You cannot set custom text for the navigation buttons in the wizard page._
 
 
 
 
-#### See Also
+ See Also
 
 Next Page and Previous Page Navigation
 
@@ -455,7 +525,11 @@ This section contains the following topics:
 You can set the navigation to the Next and Previous pages by using the NextPage and PreviousPage properties respectively. To set these properties, use the below code.
 
 
-{% highlight c# %}
+{% highlight C# %}
+
+[C#]
+
+
 
 WizardControl wizardControl = new WizardControl();
 
@@ -487,7 +561,7 @@ wizardPage3.PreviousPage = wizardPage1;
 
 {% endhighlight %}
 
-#### See Also
+See Also
 
 Navigation Buttons
 
@@ -500,6 +574,10 @@ To enable these properties, refer the below code
 
 {% highlight xml %}
 
+[XAML]
+
+
+
 <syncfusion:WizardControl Name="wizardControl" CloseWindowOnCancel="True" CloseWindowOnFinish="True">
 
     <syncfusion:WizardPage Name="wizardPage"/>
@@ -509,7 +587,11 @@ To enable these properties, refer the below code
 {% endhighlight %}
 
 
-{% highlight c# %}
+{% highlight C# %}
+
+[C#]
+
+
 
 WizardControl wizardControl = new WizardControl();
 
@@ -522,7 +604,6 @@ wizardControl.Items.Add(wizardPage);
 wizardControl.CloseWindowOnCancel = true;
 
 wizardControl.CloseWindowOnFinish = true; 
-
 {% endhighlight %}
 
 
@@ -534,11 +615,11 @@ The Next Button event has been implemented in Wizard Control in order to do oper
 
 Users can use this event to do valid code of operations such as displaying a message box and making the thread to sleep before navigating to the next page in Wizard Control.
 
-#### Events
+### Events
 
 
 
-Next Event Table
+_Next Event Table_
 
 <table>
 <tr>
@@ -549,12 +630,12 @@ Arguments </th><th>
 Type </th><th>
 Reference links </th></tr>
 <tr>
-<td>
-Next</td><td>
-The Next button is clicked in Wizard Control</td><td>
--</td><td>
-Routed Event</td><td>
--</td></tr>
+<th>
+Next</th><th>
+The Next button is clicked in Wizard Control</th><th>
+-</th><th>
+Routed Event</th><th>
+-</th></tr>
 </table>
 
 
@@ -569,6 +650,7 @@ Routed Event</td><td>
 {% highlight xml %}
 
 
+[XAML]
 
 		<syncfusion:WizardControl Name="wizardControl" 
 

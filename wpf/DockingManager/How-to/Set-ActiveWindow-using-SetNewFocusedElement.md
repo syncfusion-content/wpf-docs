@@ -13,9 +13,9 @@ This method is used to activate the new child as an active window and the focus 
 
 
 
-{% highlight c# %}
+[C#]
 
 DockingManager.SetNewFocusedElement(element);
 
-{% endhighlight %}
+
 

@@ -249,13 +249,13 @@ The following code demonstrates how to add ImageAnnotation to chart control.
 
 ShapeAnnotation allows you to add annotations in the form of shapes such as rectangles, ellipses and lines at the specific area of interest, in the chart area. 
 
-EllipseAnnotation- Used to draw a circle or an ellipse over the chart area.
+####EllipseAnnotation- Used to draw a circle or an ellipse over the chart area.
 
-RectangleAnnotation- Used to draw a rectangle over the chart area.
+####RectangleAnnotation- Used to draw a rectangle over the chart area.
 
-VerticalLineAnnotation- Used to draw a vertical line across the chart area.
+####VerticalLineAnnotation- Used to draw a vertical line across the chart area.
 
-HorizontalLineAnnotation- Used to add a horizontal line across the chart area.
+####HorizontalLineAnnotation- Used to add a horizontal line across the chart area.
 
 The following APIs are used to customize ShapeAnnotations.
 

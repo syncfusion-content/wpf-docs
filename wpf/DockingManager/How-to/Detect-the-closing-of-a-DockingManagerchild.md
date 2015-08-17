@@ -13,17 +13,13 @@ DockStateChanged and CloseButtonClick are the two events, which can be used to d
 
 
 
-{% highlight xml %}
-<syncfusion:DockingManager DockStateChanged="DockingManager_DockStateChanged">
-<Grid/></syncfusion:DockingManager>
-{% endhighlight %}
-{% highlight c# %}
-private void DockingManager_DockStateChanged(FrameworkElement sender,DockStateEventArgs e)
-{
-     if (e.NewState == DockState.Hidden)
-     {
-		//TODO:your code here to handle the closed state. 
-	 }
-}
+<table>
+<tr>
+<td>
+[XAML]<syncfusion:DockingManager DockStateChanged="DockingManager_DockStateChanged"><Grid/></syncfusion:DockingManager></td></tr>
+<tr>
+<td>
+[C#]private void DockingManager_DockStateChanged(FrameworkElement sender,DockStateEventArgs e){     if (e.NewState == DockState.Hidden)     {        //TODO:your code here to handle the closed state.     }}        </td></tr>
+</table>
 
-{% endhighlight %}
+

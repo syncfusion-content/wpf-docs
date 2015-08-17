@@ -13,7 +13,7 @@ SfDateTimeRangeNavigator provides interactive features such as zooming, panning.
 
 The ZoomPosition and ZoomFactor of the chart axis can be bind with the SfDateTimeRangeNavigator.
 
-Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -55,7 +55,7 @@ Used to get the End value of the Selected range of the Navigator</td></tr>
 </table>
 
 
-Event Table
+_Event Table_
 
 <table>
 <tr>
@@ -70,7 +70,8 @@ ValueChanged(Object sender, EventArgs e)</td><td>
 This event is triggered when the position of the scrollbar changed</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight html %}
+[XAML]
 
 <chart:SfChart x:Name="financialChart">            
 
@@ -106,7 +107,6 @@ This event is triggered when the position of the scrollbar changed</td></tr>
 
 
 {% endhighlight  %}
-
 The following is the screenshot of SfDateTimeRangeNavigator selecting one Quarter of data.
 
 ![C:/Users/ApoorvahR/Desktop/3.png](Interactivity_images/Interactivity_img1.png)

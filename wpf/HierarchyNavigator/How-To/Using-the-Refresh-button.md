@@ -7,34 +7,24 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-## Using the Refresh button
+### Using the Refresh button
 
 The Refresh button is on the right side of the HierarchyNavigator control. Clicking the Refresh button will initiate the HierarchyNavigatorRefreshButtonClick event.
 
-![](Using-the-Refresh-button_images/Using-the-Refresh-button_img1.png)
+{{ '![](Using-the-Refresh-button_images/Using-the-Refresh-button_img1.png)' | markdownify }}
 
 
-{% highlight xml %}
 
-XAML
-<syncfusion:HierarchyNavigator HierarchyNavigatorRefreshButtonClick="HierarchyNavigatorRefreshButtonClick" />
+<table>
+<tr>
+<td>
+XAML<syncfusion:HierarchyNavigator HierarchyNavigatorRefreshButtonClick="HierarchyNavigatorRefreshButtonClick" /></td></tr>
+<tr>
+<td>
+C#HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();<br>hierarchyNavigator.HierarchyNavigatorRefreshButtonClick += new EventHandler(HierarchyNavigatorRefreshButtonClick);</td></tr>
+<tr>
+<td>
+C#private void HierarchyNavigatorRefreshButtonClick(object sender, EventArgs e)<br>{<br>     //Occurs when Refresh Button Click<br>}</td></tr>
+</table>
 
-{% endhighlight %}
-
-{% highlight c# %}
-
-C#
-HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
-hierarchyNavigator.HierarchyNavigatorRefreshButtonClick += new EventHandler(HierarchyNavigatorRefreshButtonClick);
-
-{% endhighlight %}
-
-{% highlight c# %}
-C#
-private void HierarchyNavigatorRefreshButtonClick(object sender, EventArgs e) 
-{
-   //Occurs when Refresh Button Click
-}
-
-{% endhighlight %}
 

@@ -126,7 +126,7 @@ SearchItemPath property specifies the property path by which the filtering has t
 
 
 
-Note: Default value of AutoCompleteMode property is None. So running the control without specifying this property will not show any suggestions. Detailed information about Auto Complete modes will be provided in next section.
+> _Note: Default value of AutoCompleteMode property is None. So running the control without specifying this property will not show any suggestions. Detailed information about Auto Complete modes will be provided in next section._
 
 ## Auto Complete Mode
 
@@ -206,7 +206,7 @@ AutoCompleteMode="Append"
 
 _Append mode_
 
-Note: By default the text will be appended to first matched item. But still user can browse to other items through up and down keys from keyboard.
+_Note: By default the text will be appended to first matched item. But still user can browse to other items through up and down keys from keyboard._
 
 ### SuggestAppend
 
@@ -819,7 +819,7 @@ autoComplete.Filter = MyFilter;
 
 _Custom case_
 
-Note: Append mode always works only with StartsWith behavior. If the typed text is not the same as the start text of any items, it will not append anything even when the auto complete mode is set to Append or SuggestAppend.
+_Note: Append mode always works only with StartsWith behavior. If the typed text is not the same as the start text of any items, it will not append anything even when the auto complete mode is set to Append or SuggestAppend._
 
 
 

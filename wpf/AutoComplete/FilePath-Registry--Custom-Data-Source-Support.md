@@ -35,7 +35,7 @@ When the value of the Source property is set as Custom, the AutoComplete loads t
 
 
 
-### Adding Data Source Support to an Application
+## Adding Data Source Support to an Application
 
 AutoComplete can be used with different kinds of Data Sources using the Source property. This support can be added to the application as mentioned in the following code example.
 
@@ -77,20 +77,20 @@ this.autoComplete3.CustomSource = products;
 
 
 
-### Tables for properties, methods, and events
+## Tables for properties, methods, and events
 
-#### Properties
+### Properties
 
   _Property Table for Data Source Support_
 
 <table>
 <tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
+<td>
+Property </td><td>
+Description </td><td>
+Type </td><td>
+Data Type </td><td>
+Reference links </td></tr>
 <tr>
 <td>
 Source</td><td>
@@ -101,7 +101,7 @@ SourceMode(enum)</td><td>
 </table>
 
 
-#### Events
+### Events
 
   _Event Table for Data Source Support_
 
@@ -114,16 +114,16 @@ Arguments </th><th>
 Type </th><th>
 Reference links </th></tr>
 <tr>
-<td>
-SourceChanged</td><td>
- When the Source property value is changed this event will be triggered.It cannot be cancelled.</td><td>
-DependencyObject,DependencyPropertyChangedEventArgs</td><td>
-DependencyPropertyChangedCallBack </td><td>
-</td></tr>
+<th>
+SourceChanged</th><th>
+ When the Source property value is changed this event will be triggered.It cannot be cancelled.</th><th>
+DependencyObject,DependencyPropertyChangedEventArgs</th><th>
+DependencyPropertyChangedCallBack </th><th>
+</th></tr>
 </table>
 
 
-#### Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
 

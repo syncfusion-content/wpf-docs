@@ -26,9 +26,9 @@ Sets the string for the context menu item in DocumentContainer.</td></tr>
 <td colspan = "6">
 {{ '![](Localization_images/Localization_img1.png)' | markdownify}}
 
-{{ '![](Localization_images/Localization_img2.png)' | markdownify}}
+{{ '![C:/Users/Sugapriyam/Desktop/LocalizationUG_Doc Image/LocalizationUG_Doc Image/36.png](Localization_images/Localization_img2.png)' | markdownify}}
 
-{{ '_ContextMenu(en-US) ContextMenu(fr-FR)_' | markdownify }}</td></tr>
+{{ '_ContextMenu(en-US)                                                      ContextMenu(fr-FR)_' | markdownify }}</td></tr>
 <tr>
 <td colspan = "4">
 MoveToNextTabGroup </td><td colspan = "2">

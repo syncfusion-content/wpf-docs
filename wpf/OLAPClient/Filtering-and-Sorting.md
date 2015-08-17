@@ -24,15 +24,15 @@ Row Filter will check each and every column of a row against the filter conditio
 
 ### Options in Filter Dialog
 
-#### Empty Results:
+Empty Results:
 
 Filter Empty column/Rows – By this option the user can filter the appearance of empty rows/column in the result set.
 
-#### Filter 1 and Filter 2:
+Filter 1 and Filter 2:
 
 In Client filtering option, the user can apply two filter expressions to a report at a same time.
 
-#### Fields that form filter expression:
+Fields that form filter expression:
 
 * Condition – The user can choose any one condition that he wants to appear in the filter     expression.
 * Filter On – The user can choose any one measure element form the list, on which the user wishes to apply the filter.
@@ -123,11 +123,11 @@ Me.olapClient1.ShowRowFilterDialog();
 
 The Sorting tab in the Filter and Sorting dialog box of OLAP Client provides options to sort the results by columns (series) or rows (categories). This dialog is invoked through the Sorting toolbar item.
 
-### Column Sorting
+Column Sorting
 
 Column sorting will sort the columns in the result set, based on the column total of each column.
 
-### Row Sorting
+Row Sorting
 
 Row sorting will sort the rows in the result set, based on the row total of each row.
 

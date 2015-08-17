@@ -11,7 +11,7 @@ documentation: ug
 
 TabControlExt is similar to the dividers in a notebook or the labels in a file cabinet. By using TabControlExt, an application can define multiple pages for the same area of a window. TabControlExt contains the TabItemExt which is used to define Tab Items for the TabControlAdv. Clicking on a Tab Item Header, will display the data corresponding to that particular Tab Item.
 
-## Features
+Features
 
 * Support to position the Tab Strip to the Left, Right, Top or Bottom of the TabControlExt.
 * Ability to customize the display mode of the Close button.

@@ -10,12 +10,15 @@ documentation: ug
 # Getting Started
 
 Namespace: Syncfusion.Windows.Controls.Notification
-
 Assembly:  Syncfusion.SfHubTile.WPF (in Syncfusion.SfHubTile.WPF.dll) 
 
 The following code sample shows how to create the hub tile from code-behind and XAML, which allows the user to set a title, image and header.
 
 {% highlight xml %}
+
+[XAML]
+
+
 
 <Page xmlns:control="clr-namespace:Syncfusion.Windows.Controls.Notification;assembly=Syncfusion.SfHubTile.Wpf"">
 
@@ -38,17 +41,16 @@ The following code sample shows how to create the hub tile from code-behind and 
     </Grid>
 
 </Page>
-
 {% endhighlight %}
 
 
 {% highlight c# %}
 
 
+[C#]
+
 SfHubTile hubTile = new SfHubTile();
-
 {% endhighlight %}
-
 ## Tile Types
 
 ### HubTile
@@ -57,21 +59,24 @@ This control provides notification through various transition effects.
 
 #### Key Properties
 
-#### Title
+##### Title
 
 The title will be displayed at the top of the hub tile.
 
-#### Header
+##### Header
 
 The header will be displayed at the bottom of the hub tile.
 
-#### ImageSource
+##### ImageSource
 
 An image will be displayed at the center of the hub tile.
 
 The following code sample shows the usage of the Title, Header and ImageSource properties.
-
 {% highlight xml %}
+
+[XAML]
+
+
 
 <Page xmlns:control="clr-namespace:Syncfusion.Windows.Controls.Notification;assembly=Syncfusion.SfHubTile.Wpf"">
 
@@ -102,8 +107,8 @@ ImageSource="NewMail.png"
     </Grid>
 
 </Page>
-
 {% endhighlight %}
+
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
@@ -127,7 +132,7 @@ Secondary content will be animated by sliding the tile.
 ![](Getting-Started_images/Getting-Started_img2.png)
 
 
-#### Fade Transition
+#### Fade__Transition
 
 Secondary content will be animated by fading the tile.
 
@@ -142,8 +147,11 @@ Secondary content will be animated by fading the tile.
 This control resembles the Music and Video hub tiles in Windows Phone. The content will zoom in and out randomly and show a translation movement in the x- and y- axis randomly. 
 
 The following code sample shows how to create a PulsingTile in code-behind and XAML:
-
 {% highlight xml %}
+
+ [XAML]
+
+
 
 <Page xmlns:control="clr-namespace:Syncfusion.Windows.Controls.Notification;assembly=Syncfusion.SfHubTile.Wpf"">
 
@@ -189,6 +197,10 @@ The PulseScale property specifies the range of translation in the x- and y-axis 
 
 {% highlight xml %}
 
+[XAML]
+
+
+
 <control:SfPulsingTile x:Name="pulsingTile"  
 
                             Width="200"
@@ -218,8 +230,11 @@ The PulseScale property specifies the range of translation in the x- and y-axis 
 ### PulseDuration
 
 The PulseDuration property specifies the interval for the translation done in the pulsing tile.
-
 {% highlight xml %}
+
+[XAML]
+
+
 
 <control:SfPulsingTile x:Name="pulsingTile"  
 
@@ -242,7 +257,6 @@ The PulseDuration property specifies the interval for the translation done in th
                        HorizontalAlignment="Center" Height="200" />
 
 </control:SfPulsingTile >
-
 {% endhighlight %}
 
 
@@ -250,6 +264,10 @@ The PulseDuration property specifies the interval for the translation done in th
 
 The RadiusX property specifies the range of the translation in the pulsing tile along the x-axis.
 {% highlight xml %}
+
+[XAML]
+
+
 
 <control:SfPulsingTile x:Name="pulsingTile"  
 
@@ -282,6 +300,10 @@ The RadiusX property specifies the range of the translation in the pulsing tile 
 The RadiusY property specifies the range of the translation in the pulsing tile along y-axis.
 
 {% highlight xml %}
+
+[XAML]
+
+
 
 <control:SfPulsingTile x:Name="pulsingTile"  
 
@@ -317,6 +339,10 @@ Hub tiles can be given specific group name. The group name will be used when we 
 
 {% highlight xml %}
 
+[XAML]
+
+
+
 <control:SfHubTile HorizontalAlignment="Center"
 
                               VerticalAlignment="Center"
@@ -339,31 +365,34 @@ The following code sample can be used to freeze a particular hub tile.
 
 {% highlight c# %}
 
+[C#]
 
 HubTileService.Freeze(hubTile);
-
 {% endhighlight %}
 
 
 The following code sample can be used to unfreeze a particular hub tile.
-
 {% highlight c# %}
 
-HubTileService.UnFreeze(hubTile);
+[C#]
 
+HubTileService.UnFreeze(hubTile);
 {% endhighlight %}
 
 
 The following code sample can be used to freeze a particular group of hub tiles.
 {% highlight c# %}
 
-HubTileService.Freeze("Group1");
+[C#]
 
+HubTileService.Freeze("Group1");
 {% endhighlight %}
 
 
 The following code sample can be used to unfreeze a particular group of hub tiles.
 {% highlight c# %}
+
+[C#]
 
 HubTileService.UnFreeze("Group1");
 
@@ -374,6 +403,10 @@ HubTileService.UnFreeze("Group1");
 Setting the IsFrozen property in a hub tile to true will freeze the animation.
 
 {% highlight xml %}
+
+[XAML]
+
+
 
 <Page xmlns:control="clr-namespace:Syncfusion.Windows.Controls.Notification;assembly=Syncfusion.SfHubTile.Wpf""
 
@@ -414,3 +447,6 @@ IsFrozen="True">
 </Page>
 
 {% endhighlight %}
+
+
+

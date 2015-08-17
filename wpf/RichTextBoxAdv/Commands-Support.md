@@ -11,19 +11,19 @@ documentation: ug
 
 The RichTextBoxAdv control provides built-in static commands that showcase the features available in RichTextBoxAdv.
 
-### Properties
+## Properties
 
 
 
-Property Table
+_Property Table_
 
 <table>
 <tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
+<td>
+Property</td><td>
+Description</td><td>
+Type</td><td>
+Data Type</td></tr>
 <tr>
 <td>
 AfterSpacing</td><td>

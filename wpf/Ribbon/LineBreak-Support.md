@@ -17,21 +17,14 @@ Following code sample illustrates how to use Hyphen (-) to display the labels in
 
 
 
-
-{% highlight xml %}
-
-[XAML]
-<syncfusion:RibbonButton Name="ribbonButton" Label="Ribbon-Button" >
-</syncfusion:RibbonButton><syncfusion:SplitButton Name="splitButton" Label="Split-Button" >
-</syncfusion:SplitButton><syncfusion:DropDownButton  Name="dropdownButton" Label="DropDown-Button" >
-</syncfusion:DropDownButton>
-{% endhighlight %}
-
-{% highlight C# %}
-
-[C#]
-ribbonButton.Label = "Ribbon-Button";splitButton.Label = "Split-Button";dropdownButton.Label = "DropDown-Button";
-{% endhighlight %}
+<table>
+<tr>
+<td>
+[XAML]<syncfusion:RibbonButton Name="ribbonButton" Label="Ribbon-Button" ></syncfusion:RibbonButton><syncfusion:SplitButton Name="splitButton" Label="Split-Button" ></syncfusion:SplitButton><syncfusion:DropDownButton  Name="dropdownButton" Label="DropDown-Button" ></syncfusion:DropDownButton></td></tr>
+<tr>
+<td>
+[C#]ribbonButton.Label = "Ribbon-Button";splitButton.Label = "Split-Button";dropdownButton.Label = "DropDown-Button";</td></tr>
+</table>
 
 ![](LineBreak-Support_images/LineBreak-Support_img1.jpeg)
 

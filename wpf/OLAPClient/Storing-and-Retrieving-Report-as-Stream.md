@@ -62,7 +62,7 @@ Me.olapClient1.LoadReportStream(reportStream)
 
 The following sample code describes the storing of the stream in DataBase and retrieving the report as stream from the Data Base and loading the Stream to OLAP Client.
 
-## Storing Report as a Stream to the Data Base:
+Storing Report as a Stream to the Data Base:
 
 {% highlight C# %}  
 

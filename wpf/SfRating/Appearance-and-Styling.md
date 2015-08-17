@@ -9,11 +9,15 @@ documentation: ug
 
 # Appearance and Styling
 
-## RatedFill
+### RatedFill
 
 The RatedFill property fills the rated area with the specified solid color in the Rating control.
 
 {%highlight xml%}
+
+[XAML]
+
+
 
 <editors:SfRating ItemsCount="5" Value="2">
 
@@ -35,11 +39,15 @@ The RatedFill property fills the rated area with the specified solid color in th
 
 
 
-## PointerOverFill
+### PointerOverFill
 
 The PointerOverFill property fills the mouse over area with the specified solid color in the Rating control.
 
 {%highlight xml%}
+
+[XAML]
+
+
 
 <editors:SfRating ItemsCount="5" Value="2">
 
@@ -63,11 +71,15 @@ The PointerOverFill property fills the mouse over area with the specified solid 
 
 
 
-## RatedStroke
+### RatedStroke
 
 RatedStroke sets the stroke for the rated area with the specified solid color in the Rating control.
 
 {%highlight xml%}
+
+[XAML]
+
+
 
 <editors:SfRating ItemsCount="5" Value="2">
 
@@ -91,11 +103,15 @@ RatedStroke sets the stroke for the rated area with the specified solid color in
 
 
 
-## RatedStrokeThickness
+### RatedStrokeThickness
 
 RatedStrokeThickness sets the stroke thickness for the rated area with the specified value in the Rating control.
 
 {%highlight xml%}
+
+[XAML]
+
+
 
 <editors:SfRating ItemsCount="5" Value="2">
 
@@ -119,11 +135,15 @@ RatedStrokeThickness sets the stroke thickness for the rated area with the speci
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img4.png)
 
 
-## PointerOverStroke
+### PointerOverStroke
 
 PointerOverStroke sets the stroke for the mouseover area with the specified solid color in the Rating control.
 
 {%highlight xml%}
+
+[XAML]
+
+
 
 <editors:SfRating ItemsCount="5" Value="2">
 
@@ -147,11 +167,15 @@ PointerOverStroke sets the stroke for the mouseover area with the specified soli
 
 
 
-## PointerOverStrokeThickness
+### PointerOverStrokeThickness
 
 PointerOverStrokeThickness sets the stroke thickness for the mouseover area with the specified value in the Rating control.
 
 {%highlight xml%}
+
+[XAML]
+
+
 
 <editors:SfRating ItemsCount="5" Value="2">
 
@@ -175,11 +199,14 @@ PointerOverStrokeThickness sets the stroke thickness for the mouseover area with
 
 
 
-## UnratedFill
+### UnratedFill
 
 The UnratedFill property fills the unrated area with the specified solid color in the RatingControl.
 
 {%highlight xml%}
+
+[XAML]
+
 
 
 <editors:SfRating ItemsCount="5" Value="2">
@@ -202,11 +229,16 @@ The UnratedFill property fills the unrated area with the specified solid color i
 
 
 
-## UnratedStroke
+### UnratedStroke
 
 UnratedStroke sets the stroke for the unrated area with the specified solid color in the Rating control.
 
 {%highlight xml%}
+
+
+[XAML]
+
+
 
 <editors:SfRating ItemsCount="5" Value="2">
 
@@ -228,11 +260,15 @@ UnratedStroke sets the stroke for the unrated area with the specified solid colo
 
 
 
-## UnratedStrokeThickness
+### UnratedStrokeThickness
 
 UnratedStrokeThickness sets the stroke thickness for the unrated area with the specified value in the Rating control.
 
 {%highlight xml%}
+
+[XAML]
+
+
 
 <editors:SfRating ItemsCount="5" Value="2">
 
@@ -256,13 +292,17 @@ UnratedStrokeThickness sets the stroke thickness for the unrated area with the s
 
 
 
-> Note: The above properties are available in RatingItem. To set this property, use the ItemContainerStyle property of Rating.
+> _Note: The above properties are available in RatingItem. To set this property, use the ItemContainerStyle property of Rating._
 
-## Height
+
+
+### Height
 
 You can set the Height of each SfRatingItem by using Height property. 
 
 {%highlight xml%}
+
+XAML
 
 <syncfusion:SfRating Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" 
 
@@ -290,6 +330,8 @@ To set same Height for each SfRatingItem, you can use the ItemContainerStyle.
 
 {%highlight xml%}
 
+XAML
+
 <syncfusion:SfRating Height="50" Width="300" ItemsCount="10" Value="4">
 
 <syncfusion:SfRating.ItemContainerStyle>
@@ -308,3 +350,8 @@ To set same Height for each SfRatingItem, you can use the ItemContainerStyle.
 {%endhighlight%}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img11.png)
+
+
+
+
+

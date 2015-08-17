@@ -16,7 +16,7 @@ The steps to add items to the HierarchyNavigator control through code are as fol
 
 
 
-{% highlight c# %}
+C#
 
 
 
@@ -70,11 +70,11 @@ hierarchyNavigatorItem1.Items.Add(hierarchyNavigatorItem11);
 
 hierarchyNavigator1.Items.Add(hierarchyNavigatorItem1);
 
-{% endhighlight %}
+
 
 Or
 
-{% highlight xml %}
+XAML
 
 
 
@@ -107,4 +107,4 @@ Or
 </syncfusion:HierarchyNavigator>
 
 
-{% endhighlight %}
+

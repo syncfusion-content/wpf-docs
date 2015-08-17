@@ -67,7 +67,7 @@ this.Content = treeViewAdv;
 {% endhighlight %}
 
 
- Note: To display the TreeViewItem, you must already have a TreeViewAdv in which you are going to add the TreeViewItem.
+> Note: To display the TreeViewItem, you must already have a TreeViewAdv in which you are going to add the TreeViewItem.
 
 ## Allowing Multi Select in TreeViewAdv
 
@@ -1180,9 +1180,9 @@ treeViewAdv.AllowsColumnReorder = true;
 
 {% endhighlight %}
 
- Note: This property takes effect only when the MultiColumnEnable property is set to True.
+> Note: This property takes effect only when the MultiColumnEnable property is set to True.
 
-###  Selecting a Node
+>  Selecting a Node
 
 You can show a node to be selected, at runtime, when the TreeViewAdv control is loaded, by setting the IsSelected property of a particular node to _true._ Here is the code snippet to enable this property.
 
@@ -1815,54 +1815,58 @@ VirtualizationMode: Sets the virtualization mode for TreeViewItems. If Virtualiz
 
 1. VirtualizationMode is Normal: Virtualization is processed internally (without IVirtualTree).
 
-   ~~~ xml
+
+
+{% highlight xml %}
 
 
 
-		<syncfusion:TreeViewAdv IsVirtualizing="True"  VirtualizationMode="Normal">
+<syncfusion:TreeViewAdv IsVirtualizing="True"  VirtualizationMode="Normal">
 
 
 
-		</syncfusion:TreeViewAdv>
-   ~~~
-   {:.prettyprint}
+</syncfusion:TreeViewAdv>
 
-   ~~~ cs
+{% endhighlight %}
 
-		TreeViewAdv items = new TreeViewAdv();
+{% highlight C# %}
 
-		items.VirtualizationMode = Syncfusion.Windows.Tools.VirtualizationMode.Normal;
+TreeViewAdv items = new TreeViewAdv();
 
-   ~~~
-   {:.prettyprint}
+items.VirtualizationMode = Syncfusion.Windows.Tools.VirtualizationMode.Normal;
+
+
+{% endhighlight %}
 
 
 2. VirtualizationMode is extended:  IVirtualTree interface has to be implemented by the class creating the business object for TreeViewItem.
 
-   ~~~ xml
+
+
+{% highlight xml %}
 
 
 
-		<syncfusion:TreeViewAdv IsVirtualizing="True" VirtualizationMode="Extended">
+<syncfusion:TreeViewAdv IsVirtualizing="True" VirtualizationMode="Extended">
 
 
 
-		</syncfusion:TreeViewAdv>
-
-
-   ~~~
-   {:.prettyprint}
-
-   ~~~ cs
+</syncfusion:TreeViewAdv>
 
 
 
+{% endhighlight %}
 
-		TreeViewAdv items = new TreeViewAdv();
+{% highlight C# %}
 
-		items.VirtualizationMode = Syncfusion.Windows.Tools.VirtualizationMode.Extended;
-   ~~~
-   {:.prettyprint}
+
+
+
+TreeViewAdv items = new TreeViewAdv();
+
+items.VirtualizationMode = Syncfusion.Windows.Tools.VirtualizationMode.Extended;
+
+{% endhighlight %}
 
 
 
@@ -1870,68 +1874,68 @@ VirtualizationMode: Sets the virtualization mode for TreeViewItems. If Virtualiz
 
 
 
-   ~~~ cs
+{% highlight C# %}
 
 
-		
+Loading Items"/>
 
 
 
-		  public class Model : INotifyPropertyChanged, IVirtualTree
+  public class Model : INotifyPropertyChanged, IVirtualTree
 
-			{
+    {
 
-				 public ObservableCollection<Model> Models
+         public ObservableCollection<Model> Models
 
-				{
+        {
 
-					get
+            get
 
-					{
+            {
 
-						return models;
+                return models;
 
-					}
+            }
 
 
 
-					set
+            set
 
-					{
+            {
 
-						models = value;
+                models = value;
 
-					}
+            }
 
-				}
+        }
 
 
 
-				#region IVirtualTree Members
+        #region IVirtualTree Members
 
-				// To get or set the items Count
+        // To get or set the items Count
 
-				public int ItemsCount
+        public int ItemsCount
 
-				{
+        {
 
-					get
+            get
 
-					{
+            {
 
-						return itemsCount;
+                return itemsCount;
 
-					}
+            }
 
-					set
+            set
 
-					{
+            {
 
-						itemsCount = value;
+                itemsCount = value;
 
-					}
+            }
 
-				}
+        }
 
 
 
@@ -1939,29 +1943,29 @@ VirtualizationMode: Sets the virtualization mode for TreeViewItems. If Virtualiz
 
 
 
-				 //To get or set Parent
+         //To get or set Parent
 
-				public IVirtualTree Parent
+        public IVirtualTree Parent
 
-				{
+        {
 
-					get
+            get
 
-					{
+            {
 
-						return parent;
+                return parent;
 
-					}
+            }
 
-					set
+            set
 
-					{
+            {
 
-						parent = value;
+                parent = value;
 
-					}
+            }
 
-				}
+        }
 
 
 
@@ -1971,36 +1975,35 @@ VirtualizationMode: Sets the virtualization mode for TreeViewItems. If Virtualiz
 
 
 
-				//To get or set IsExpanded Value
+        //To get or set IsExpanded Value
 
-				public bool IsExpanded
+        public bool IsExpanded
 
-				{
+        {
 
-					get
+            get
 
-					{
+            {
 
-						return isExpanded;
+                return isExpanded;
 
-					}
+            }
 
-					set
+            set
 
-					{
+            {
 
-						isExpanded = value;
+                isExpanded = value;
 
-					}
+            }
 
-				}
+        }
 
-			   #endregion
+       #endregion
 
-			}
+    }
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight %}
 
 <table>
 <tr>
@@ -2023,93 +2026,94 @@ Enum </td></tr>
 The LoadOnDemand feature enables users to load items dynamically when a particular TreeViewItem is expanded. Hence the items are loaded on demand and reduce the loading time.
 
 1. To load items on demand:
-	* LoadOnDemand event is used to load the sub-items when a particular item is expanded.
-	* LoadingHeader is used to display the text while sub-items are being loaded.
-	* IsLoadOnDemand value has to be set to True if the item is to be loaded on demand.
-
-
-
-
-   ~~~ xml
-
-				<syncfusion:TreeViewAdv LoadOnDemand="TreeViewAdv_LoadOnDemand">
-
-					<syncfusion:TreeViewItemAdv IsLoadOnDemand="True"
-
-		 LoadingHeader="Loading Sub Items..."/>
-
-				</syncfusion:TreeViewAdv>
-   ~~~
-   {:.prettyprint}
-
-
-   ~~~ cs
-
-
-
-		   public MainWindow()
-
-			{
-
-			   TreeViewItemAdv treeViewItem = new TreeViewItemAdv();
-
-
-
-			   treeViewItem.LoadingHeader = "Loading Sub Items...";
-
-
-
-			   treeViewItem.IsLoadOnDemand = true;
-
-
-
-			   treeViewAdv.LoadOnDemand+=new LoadOnDemandEventHandler(treeViewAdv_LoadOnDemand);
-
-			}
+* LoadOnDemand event is used to load the sub-items when a particular item is expanded.
+* LoadingHeader is used to display the text while sub-items are being loaded.
+* IsLoadOnDemand value has to be set to True if the item is to be loaded on demand.
 
 
 
 
 
+{% highlight xml %}
+
+        <syncfusion:TreeViewAdv LoadOnDemand="TreeViewAdv_LoadOnDemand">
+
+            <syncfusion:TreeViewItemAdv IsLoadOnDemand="True"
+
+ LoadingHeader="Loading Sub Items..."/>
+
+        </syncfusion:TreeViewAdv>
+
+
+{% endhighlight %}
+
+
+{% highlight C# %}
 
 
 
-	  private void TreeViewAdv_LoadOnDemand(object sender, Syncfusion.Windows.Tools.Controls.LoadonDemandEventArgs args)
+       public MainWindow()
 
-			{
+        {
 
-				this.treeItem = args.TreeViewItem as TreeViewItemAdv;
-
-
-
-				Model model = treeItem.Header as Model;
-
-				model.Items = new ObservableCollection<Model>();
-
-				for (int i = 0; i <= 10; i++)
-
-				{
-
-					model.Items.Add(new Model() { Header = "Sub Item " + i.ToString() });
-
-				}
-
-				treeItem.IsLoadOnDemand = false;
-
-			}
+           TreeViewItemAdv treeViewItem = new TreeViewItemAdv();
 
 
-   ~~~
-   {:.prettyprint}
+
+           treeViewItem.LoadingHeader = "Loading Sub Items...";
 
 
-	![](Interactive-Features_images/Interactive-Features_img16.png)
+
+           treeViewItem.IsLoadOnDemand = true;
+
+
+
+           treeViewAdv.LoadOnDemand+=new LoadOnDemandEventHandler(treeViewAdv_LoadOnDemand);
+
+        }
+
+
+
+
+Loading Items"/>
+
+
+
+  private void TreeViewAdv_LoadOnDemand(object sender, Syncfusion.Windows.Tools.Controls.LoadonDemandEventArgs args)
+
+        {
+
+            this.treeItem = args.TreeViewItem as TreeViewItemAdv;
+
+
+
+            Model model = treeItem.Header as Model;
+
+            model.Items = new ObservableCollection<Model>();
+
+            for (int i = 0; i <= 10; i++)
+
+            {
+
+                model.Items.Add(new Model() { Header = "Sub Item " + i.ToString() });
+
+            }
+
+            treeItem.IsLoadOnDemand = false;
+
+        }
+
+
+{% endhighlight %}
+
+
+![](Interactive-Features_images/Interactive-Features_img16.png)
 
 2. LoadingHeaderTemplate
 
 
 
-   ~~~ xml
+{% highlight xml %}
 
         <syncfusion:TreeViewAdv LoadOnDemand="TreeViewAdv_LoadOnDemand">
 
@@ -2129,13 +2133,12 @@ The LoadOnDemand feature enables users to load items dynamically when a particul
 
         </syncfusion:TreeViewAdv>
 
-   ~~~
-   {:.prettyprint}
 
-     
-	 ![](Interactive-Features_images/Interactive-Features_img17.png)
 
-### Properties
+{% endhighlight %}
+
+![](Interactive-Features_images/Interactive-Features_img17.png)
+Properties
 
 <table>
 <tr>
@@ -2165,7 +2168,7 @@ Bool</td></tr>
 </table>
 
 
-### Events
+Events
 
 <table>
 <tr>

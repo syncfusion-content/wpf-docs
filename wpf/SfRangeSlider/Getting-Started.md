@@ -9,15 +9,16 @@ documentation: ug
 
 # Getting Started 
 
-Namespace:  Syncfusion.Windows.Controls.Input
-
-Assembly:  Syncfusion.SfInput.WPF (in Syncfusion.SfInput.WPF.dll) 
+ Namespace:  Syncfusion.Windows.Controls.Input
+ Assembly:  Syncfusion.SfInput.WPF (in Syncfusion.SfInput.WPF.dll) 
 
 Dependent assembly: Syncfusion.SfShared.WPF.dll
 
 The following code sample illustrates how to create the SfRangeSlider from code-behind and XAML.
 
-{% highlight xml %}
+{%highlight xml%}
+
+[XAML]
 
 <Window xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"> 
 
@@ -32,9 +33,11 @@ The following code sample illustrates how to create the SfRangeSlider from code-
 {%endhighlight%}
 
 
-{% highlight c# %}
+{%highlight c#%}
+[C#]
 
 SfRangeSlider rangeSlider = new SfRangeSlider();
+
 
 {%endhighlight%}
 

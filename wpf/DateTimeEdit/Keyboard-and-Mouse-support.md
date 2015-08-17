@@ -13,10 +13,10 @@ Up or down arrows in the DateTimeEdit control spin the selected parts (month, da
 
 
 
-{% highlight xml %}
+{% highlight html %}
 XAML
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" IsScrollingOnCircle="True"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10"                          IsScrollingOnCircle="True"/>
 
 
 {% endhighlight %}

@@ -15,198 +15,194 @@ The steps to listen to the command binding are as follows:
 
 1. Create a DelegateCommand class inherited from ICommand, which will be used in the ViewModel sample class.
 
-   ~~~ cs
+{% highlight C# %}
 
 
 
-		public class DelegateCommand : ICommand
+public class DelegateCommand : ICommand
 
-		{
+{
 
-			private Predicate<object> _canExecute;
+    private Predicate<object> _canExecute;
 
-			private Action<object> _method;
+    private Action<object> _method;
 
-			public event EventHandler CanExecuteChanged;
-
-
-
-			public DelegateCommand(Action<object> method)
-
-				: this(method, null)
-
-			{
-
-				_method = method;
-
-			}
+    public event EventHandler CanExecuteChanged;
 
 
 
-			public DelegateCommand(Action<object> method, Predicate<object> canExecute)
+    public DelegateCommand(Action<object> method)
 
-			{
+        : this(method, null)
 
-				_method = method;
+    {
 
-				_canExecute = canExecute;
+        _method = method;
 
-			}
-
-
-
-			public bool CanExecute(object parameter)
-
-			{
-
-				if (_canExecute == null)
-
-				{
-
-					return true;
-
-				}
+    }
 
 
 
-				return _canExecute(parameter);
+    public DelegateCommand(Action<object> method, Predicate<object> canExecute)
 
-			}
+    {
+
+        _method = method;
+
+        _canExecute = canExecute;
+
+    }
 
 
 
-			public void Execute(object parameter)
+    public bool CanExecute(object parameter)
 
-			{
+    {
 
-				_method.Invoke(parameter);
+        if (_canExecute == null)
 
-			}
+        {
 
-		}
-		
-		
-   ~~~
-   {:.prettyprint }
+            return true;
+
+        }
+
+
+
+        return _canExecute(parameter);
+
+    }
+
+
+
+    public void Execute(object parameter)
+
+    {
+
+        _method.Invoke(parameter);
+
+    }
+
+}
+{% endhighlight %}
 
 
 2. Create the ViewModel sample class, to bind the command in the sample WPF application.
 
-   ~~~ cs
+{% highlight C# %}
 
 
 
-		public class ViewModel : INotifyPropertyChanged
+public class ViewModel : INotifyPropertyChanged
 
-			{
+    {
 
-				public event PropertyChangedEventHandler PropertyChanged;
-
-
-
-				private DelegateCommand _myCommand1;
+        public event PropertyChangedEventHandler PropertyChanged;
 
 
 
-				private string _lastCommand = "Syncfusion";
+        private DelegateCommand _myCommand1;
 
 
 
-				public string LastCommand
-
-				{
-
-					get
-
-					{
-
-						return _lastCommand;
-
-					}
-
-					private set
-
-					{
-
-						_lastCommand = value;
-
-						PropertyChanged(this, new PropertyChangedEventArgs("LastCommand"));
-
-					}
-
-				}
+        private string _lastCommand = "Syncfusion";
 
 
 
-				public DelegateCommand SelectedItemCommand
+        public string LastCommand
 
-				{
+        {
 
-					get
+            get
 
-					{
+            {
 
-						if (_myCommand1 == null)
+                return _lastCommand;
 
-							_myCommand1 = new DelegateCommand(MyCommand1Method);
+            }
+
+            private set
+
+            {
+
+                _lastCommand = value;
+
+                PropertyChanged(this, new PropertyChangedEventArgs("LastCommand"));
+
+            }
+
+        }
 
 
 
-						return _myCommand1;
+        public DelegateCommand SelectedItemCommand
 
-					}
+        {
 
-				}
+            get
+
+            {
+
+                if (_myCommand1 == null)
+
+                    _myCommand1 = new DelegateCommand(MyCommand1Method);
 
 
 
-				private void MyCommand1Method(object parameter)
+                return _myCommand1;
 
-				{
+            }
 
-					if(parameter as Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem != null)
+        }
 
-						LastCommand = (parameter as Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem).Content.ToString();
 
-				}
 
-			}
+        private void MyCommand1Method(object parameter)
 
-   ~~~
-   {:.prettyprint }
+        {
 
+            if(parameter as Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem != null)
+
+                LastCommand = (parameter as Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem).Content.ToString();
+
+        }
+
+    }
+
+{% endhighlight %}
 
 1. Bind the command in the HierarchyNavigator control.
 2. To do this, create a new instance of the ViewModel sample class and set DataContext for the parent StackPanel. This will reflect changes in the children. Whenever the selected item changes, the TextBox Text value will change.
 
-   ~~~ xml
+
+
+{% highlight xml %}
 
 
 
-		<StackPanel Name="CommandBindingStackPanel">
+<StackPanel Name="CommandBindingStackPanel">
 
-			<StackPanel.DataContext>
+    <StackPanel.DataContext>
 
-				<local:ViewModel />
+        <local:ViewModel />
 
-			</StackPanel.DataContext>
+    </StackPanel.DataContext>
 
-			<syncfusion:HierarchyNavigator Name="hierarchyNavigator1" 
+    <syncfusion:HierarchyNavigator Name="hierarchyNavigator1" 
 
-							 VerticalAlignment="Center" 
+                     VerticalAlignment="Center" 
 
-							 Command="{Binding SelectedItemCommand}"
+                     Command="{Binding SelectedItemCommand}"
 
-							 Items="{StaticResource NavigationSampleData}" />
+                     Items="{StaticResource NavigationSampleData}" />
 
-			<TextBlock Text="Selected Item" VerticalAlignment="Center" FontWeight="Bold" />
+    <TextBlock Text="Selected Item" VerticalAlignment="Center" FontWeight="Bold" />
 
-			<TextBox Text="{Binding LastCommand}" Height="50" IsReadOnly="True" Margin="2" />
+    <TextBox Text="{Binding LastCommand}" Height="50" IsReadOnly="True" Margin="2" />
 
-		</StackPanel>
+</StackPanel>
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
 
 

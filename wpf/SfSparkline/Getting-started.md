@@ -98,7 +98,7 @@ public class UsersViewModel
 
 {% endhighlight  %}
 
- Note: Syncfusion sparkline also supports items source as collection of double values and collection inherited from IEnumerable.
+> Note: Syncfusion sparkline also supports items source as collection of double values and collection inherited from IEnumerable.
 
 
 Binding Data to sparkline
@@ -125,7 +125,7 @@ YBindingPath="NoOfUsers">
 
 {% endhighlight  %}
 
-  Note:if we do not map the XBindingPath means sparkline data positioned as indexed.
+>  Note:if we do not map the XBindingPath means sparkline data positioned as indexed.
 
 
 The following illustrates the result of the above code sample,

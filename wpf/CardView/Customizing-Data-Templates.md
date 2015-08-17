@@ -86,24 +86,23 @@ You can also customize header of the CardViewItem using a header template. This 
 
 
 
-   ~~~ xml
+{% highlight xml %}
 
-		  <DataTemplate x:Key="headerTemplate">
+  <DataTemplate x:Key="headerTemplate">
 
-					<Grid>
+            <Grid>
 
-						<Border Background="Gray">
+                <Border Background="Gray">
 
-						<TextBlock Text="{Binding Path=Name}" Margin="5" Foreground="White" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
+                <TextBlock Text="{Binding Path=Name}" Margin="5" Foreground="White" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 
-						</Border>
+                </Border>
 
-					</Grid>
+            </Grid>
 
-		  </DataTemplate>
+  </DataTemplate>
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
 
 
@@ -111,20 +110,19 @@ You can also customize header of the CardViewItem using a header template. This 
 
 
 
-   ~~~ xml
+{% highlight xml %}
 
 
-		<syncfusion:CardView ItemsSource="{Binding Contacts}" 
+<syncfusion:CardView ItemsSource="{Binding Contacts}" 
 
-										 ItemTemplate="{StaticResource contactTemplate}" 
+                                 ItemTemplate="{StaticResource contactTemplate}" 
 
-										 HeaderTemplate="{StaticResource headerTemplate}"
+                                 HeaderTemplate="{StaticResource headerTemplate}"
 
-										/>
+                                />
 
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
 
 This generates the following CardView control.
@@ -141,7 +139,7 @@ You can edit the values loaded in CardViewItem using EditItemTemplate. This is i
 
 
 
-   ~~~ xml
+{% highlight xml %}
 
    <DataTemplate x:Key="contactEditTemplate">
 
@@ -198,28 +196,26 @@ You can edit the values loaded in CardViewItem using EditItemTemplate. This is i
         </DataTemplate>
 
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
 
 2. Set EditItemTemplate for the CardView to the above template.
 
 
-   ~~~ xml
+{% highlight xml %}
 
-		<syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
+<syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
 
-										 ItemTemplate="{StaticResource contactTemplate}" 
+                                 ItemTemplate="{StaticResource contactTemplate}" 
 
-										 EditItemTemplate="{StaticResource contactEditTemplate}"
+                                 EditItemTemplate="{StaticResource contactEditTemplate}"
 
-										 HeaderTemplate="{StaticResource headerTemplate}"
+                                 HeaderTemplate="{StaticResource headerTemplate}"
 
-										/>
+                                />
 
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
 
 

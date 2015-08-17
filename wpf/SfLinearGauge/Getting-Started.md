@@ -14,6 +14,9 @@ documentation: ug
 Refer to the following code example to add a Linear Gauge to your application:
 
 {% highlight xml %}
+[XAML]
+
+
 
 <Window x:Class="LinearGauge.MainWindow"
 
@@ -62,12 +65,14 @@ Refer to the following code example to add a Linear Gauge to your application:
 </Grid>
 
 </Window>
-
 {% endhighlight %}
 
 
 
 {% highlight c# %}
+[C#]
+
+
 
            SfLinearGauge lineargauge = new SfLinearGauge();
 
@@ -98,12 +103,16 @@ Refer to the following code example to add a Linear Gauge to your application:
             lineargauge.MainScale = _mainScale;
 
             this.Grid.Children.Add(lineargauge);
-			
 {% endhighlight %}
+
+
+
 
 The following screenshot displays the Linear Gauge:
 
 ![](Getting-Started_images/Getting-Started_img1.png)
+
+
 
 ## Create the SfLinearGauge with the Syncfusion Reference Manager
 
@@ -111,41 +120,44 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 
 1. Create a simple WPF application by using the Visual Studio.
 
-   ![](Getting-Started_images/Getting-Started_img2.png)
+     ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
 2. Right_-_click the Project and select the Syncfusion Reference Manager.
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+     ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
 3. The Syncfusion Reference Manager Wizard opens as shown in the following figure.
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
+     ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
 4. Search for the SfLinearGauge by using the Search Box and select the SfLinearGauge control.  Click Done to add the selected SfLinearGauge control.
 
-   ![](Getting-Started_images/Getting-Started_img5.png)
+     ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
 5. The SfLinearGauge assemblies are automatically added to the Project after clicking OK.
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+     ![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
-   ![](Getting-Started_images/Getting-Started_img7.png)
+     ![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
 6. Create a namespace reference to the SfLinearGauge control by using the Syncfusion’s global namespace reference, schemas.syncfusion.com or the SfLinearGauge control’s namespace reference  by using the Syncfusion.UI.Xaml.Gauges available in the Syncfusion.SfLinearGauge.WPF assembly.
 
-   ~~~ xml  
+   ~~~ xml
+     [XAML]
+
+
 
      xmlns:LinearGauge="http://schemas.syncfusion.com/wpf" 
 
@@ -154,7 +166,6 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
      xmlns:LinearGauge ="clr-   
 
      namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfLinearGauge.WPF"
-	 
    ~~~
    {:.prettyprint}
 
@@ -163,6 +174,9 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 7. Add the following code to create a simple SfLinearGauge control.
 
    ~~~ xml
+     [XAML]
+
+
 
       <Window x:Class="LinearGauge.MainWindow"
 
@@ -174,7 +188,7 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 
         Title="MainWindow" Height="350" Width="525">
 
-		<Grid Name="Grid">
+    <Grid Name="Grid">
 
         <Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal">
 
@@ -208,28 +222,31 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 
         </Gauges:SfLinearGauge>
 
-		</Grid>
+    </Grid>
 
-		</Window>
+     </Window>
    
    ~~~
    {:.prettyprint}
 
 
 
-   ~~~ cs
+   ~~~ c#
+     [C#]
 
-		using System.Windows;
 
-		using Syncfusion.UI.Xaml.Gauges;
 
-		namespace  LinearGauge
+     using System.Windows;
 
-		{
+     using Syncfusion.UI.Xaml.Gauges;
+
+     namespace  LinearGauge
+
+    {
 
          public partial class MainWindow : Window
 
-				{
+        {
 
              public MainWindow()
 
@@ -269,10 +286,9 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 
             }
 
-			}
+        }
 
-		}
-		
+    }
    ~~~
    {:.prettyprint}
 
@@ -280,9 +296,15 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 
 8. The simple SfLinearGauge control is created as shown in the following figure.
 
-   ![](Getting-Started_images/Getting-Started_img8.png)
-   
-   > Note: 
-   >
-   > The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version.
-   > The Syncfusion Reference Manager can be used only in the Visual Studio 2010, 2012, and 2013.
+     ![](Getting-Started_images/Getting-Started_img8.png)
+
+
+
+> _Note:_ 
+
+> _The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version._
+
+> _The Syncfusion Reference Manager can be used only in the Visual Studio 2010, 2012, and 2013._
+
+
+

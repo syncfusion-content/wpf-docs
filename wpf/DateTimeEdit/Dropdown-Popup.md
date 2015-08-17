@@ -28,10 +28,10 @@ You can display the Dropdown Popup by checking the DropDown Button. The visibili
 
 
 
-{% highlight xml %}
+{% highlight html %}
 XAML
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"  IsCalendarEnabled="False" IsWatchEnabled="True"  IsEmptyDateEnabled="True"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"                         IsCalendarEnabled="False" IsWatchEnabled="True"                          IsEmptyDateEnabled="True"/>
 
 {% endhighlight %}
 
@@ -41,10 +41,10 @@ XAML
 
 
 
-{% highlight xml %}
+{% highlight html %}
 XAML
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"  IsCalendarEnabled="True" IsWatchEnabled="False"  IsEmptyDateEnabled="True"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"                         IsCalendarEnabled="True" IsWatchEnabled="False"                          IsEmptyDateEnabled="True"/>
 
 {% endhighlight  %}
 
@@ -54,9 +54,9 @@ XAML
 
 
 
-{% highlight xml %}
+{% highlight html %}
 XAML
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"  IsCalendarEnabled="True" IsWatchEnabled="True"  IsEmptyDateEnabled="False"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"                          IsCalendarEnabled="True" IsWatchEnabled="True"                          IsEmptyDateEnabled="False"/>
 {% endhighlight %}
 
 
@@ -65,10 +65,10 @@ XAML
 
 
 
-{% highlight xml %}
+{% highlight html %}
 XAML
 
-<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" EnableClassicStyle="False" IsEmptyDateEnabled="True" DateTime="07/05/2010" Pattern="LongDate"/>
+<syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" EnableClassicStyle="False" IsEmptyDateEnabled="True"                         DateTime="07/05/2010" Pattern="LongDate"/>
 
 {% endhighlight  %}
 

@@ -17,23 +17,18 @@ By default, the day names are displayed in an abbreviated form in the CalendarEd
 
 To set this property, use the following code:
 
-{% highlight xml %}
+<table>
+<tr>
+<td>
+[XAML]<!-- Adding calendar with day name expanded--><syncfusion:CalendarEdit Name="calendarEdit" Width="400" IsDayNamesAbbreviated="False"/></td></tr>
+<tr>
+<td>
+[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Disable the DayNameAbbreviatedcalendarEdit.IsDayNamesAbbreviated = false; //Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
+</table>
 
-<!-- Adding calendar with day name expanded-->
-<syncfusion:CalendarEdit Name="calendarEdit" Width="400" IsDayNamesAbbreviated="False"/>
 
-{% endhighlight %}
-
-
-
-{% highlight c# %}
-//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
-//Disable the DayNameAbbreviatedcalendarEdit.IsDayNamesAbbreviated = false; 
-//Adding CalendarEdit as window contentthis.Content = calendarEdit;
-
-{% endhighlight %}
-
-![](Abbreviating-Names_images/Abbreviating-Names_img1.jpeg)
+{{ '![](Abbreviating-Names_images/Abbreviating-Names_img1.jpeg)' | markdownify }}
+{:.image }
 
 
 
@@ -44,23 +39,17 @@ By default, the MonthNames are displayed in an expanded form in the CalendarEdit
 
 To set the IsMonthNamesAbbreviated property, use the following code.
 
-{% highlight xml %}
-
-<!-- Adding calendar with month name been abbreviated -->
-<syncfusion:CalendarEdit Name="calendarEdit" IsMonthNameAbbreviated="True"/>
-
-{% endhighlight %}
-
-
-{% highlight c# %}
-
-//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
-//Disable the DayNameAbbreviatedcalendarEdit.IsMonthNameAbbreviated = true;
-//Adding CalendarEdit as window contentthis.Content = calendarEdit;
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+[XAML]<!-- Adding calendar with month name been abbreviated --><syncfusion:CalendarEdit Name="calendarEdit" IsMonthNameAbbreviated="True"/></td></tr>
+<tr>
+<td>
+[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Disable the DayNameAbbreviatedcalendarEdit.IsMonthNameAbbreviated = true;//Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
+</table>
 
 
-![](Abbreviating-Names_images/Abbreviating-Names_img2.jpeg)
+{{ '![](Abbreviating-Names_images/Abbreviating-Names_img2.jpeg)' | markdownify }}
+{:.image }
 
 

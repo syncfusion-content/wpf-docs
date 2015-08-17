@@ -18,19 +18,13 @@ You can set the selection range mode for CalendarEdit control in two different w
 
 For setting the selection range mode, use the following code.
 
-
-{% highlight xml %}
-
-<!-- Adding CalendarEdit with selection range mode -->
-<syncfusion:CalendarEdit Name="calendarEdit" SelectionRangeMode="WholeColumn"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
-//Sets selection range mode as whole columncalendarEdit.SelectionRangeMode = SelectionRangeMode.WholeColumn;  
-//Adding CalendarEdit as window contentthis.Content = calendarEdit;
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+[XAML]<!-- Adding CalendarEdit with selection range mode --><syncfusion:CalendarEdit Name="calendarEdit" SelectionRangeMode="WholeColumn"/></td></tr>
+<tr>
+<td>
+[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Sets selection range mode as whole columncalendarEdit.SelectionRangeMode = SelectionRangeMode.WholeColumn;  //Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
+</table>
 
 

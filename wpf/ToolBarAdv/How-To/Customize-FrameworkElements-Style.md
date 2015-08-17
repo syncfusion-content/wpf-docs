@@ -7,14 +7,13 @@ control: ToolBarAdv
 documentation: ug
 ---
 
-# Customize FrameworkElement’s Style
+### Customize FrameworkElement’s Style
 
 In ToolBarAdv, style for FrameworkElement will be picked from a ResourceDictionary assigned in the _ControlsResourceDictionary_ property.
 
 Following code snippet shows the resource dictionary containing FrameworkElement’s style assigned for ToolBarAdv:
 
 
-{% highlight xml %}
 
 [XAML]
 
@@ -22,10 +21,10 @@ Following code snippet shows the resource dictionary containing FrameworkElement
 
 <shared:ToolBarAdv ControlsResourceDictionary="ControlsResource.xaml"></shared:ToolBarAdv>
 
-{% endhighlight %}
 
 
-{% highlight C# %}
+
+
 [C#]
 
 ToolBarAdv toolBar = new ToolBarAdv();
@@ -37,7 +36,7 @@ ToolBarAdv toolBar = new ToolBarAdv();
                 Source=new Uri("ControlsResouce.xaml", UriKind.RelativeOrAbsolute)
 
             }
-{% endhighlight %}
+
 
 
                 * 

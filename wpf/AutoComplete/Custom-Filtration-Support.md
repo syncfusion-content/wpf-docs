@@ -33,7 +33,7 @@ When the value of the StringMode property is set as AnyChar, the AutoComplete se
 
 
 
-### Using Custom Filtration Support in an Application 
+## Using Custom Filtration Support in an Application 
 
 The StringMode property will be used to attain this functionality by setting its value as StartChar or IndexBased or AnyChar.
 
@@ -60,18 +60,18 @@ this.autoComplete3.StringMode = StringMode.AnyChar;
 {% endhighlight %}
 
 
-#### Properties
+### Properties
 
    _Property Table for Filter_
 
 <table>
 <tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
+<td>
+Property </td><td>
+Description </td><td>
+Type </td><td>
+Data Type </td><td>
+Reference links </td></tr>
 <tr>
 <td>
 StringMode</td><td>
@@ -82,7 +82,7 @@ StringMode(enum)</td><td>
 </table>
 
 
-#### Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
 

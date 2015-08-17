@@ -300,19 +300,19 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-   ![](Groups_images/Groups_img2.jpeg)
+![](Groups_images/Groups_img2.jpeg)
 
 
 
-   _Selection of Objects to be Grouped_
+_Selection of Objects to be Grouped_
 
 
 
-   ![](Groups_images/Groups_img3.jpeg)
+![](Groups_images/Groups_img3.jpeg)
 
 
 
-   _Selected Objects_
+_Selected Objects_
 
 2. Invoke the Group command. This creates a group.
 
@@ -356,31 +356,31 @@ The following steps illustrate how to select an object which has two groups.
 
 
 
-   ![](Groups_images/Groups_img6.jpeg)
+![](Groups_images/Groups_img6.jpeg)
 
 
 
-   _Outer Group Selected_
+_Outer Group Selected_
 
 2. Click again to select the inner group of which it is a part of.
 
 
 
-   ![](Groups_images/Groups_img7.jpeg)
+![](Groups_images/Groups_img7.jpeg)
 
 
 
-   _Inner Group Selected_
+_Inner Group Selected_
 
 3. Finally, click again to select the child itself after all its groups have been traversed.
 
 
 
-   ![](Groups_images/Groups_img8.jpeg)
+![](Groups_images/Groups_img8.jpeg)
 
 
 
-   _Selecting the Child Node Again_
+_Selecting the Child Node Again_
 
 ## Edit Group
 
@@ -420,7 +420,6 @@ See Also
 
 * Node Resize Refer Concepts and Features -> Nodes -> Node Resize
 * Node Rotate Refer Concepts and Features -> Nodes -> Node Rotate
-
 ## Connecting Groups
 
 
@@ -433,15 +432,15 @@ The following steps illustrate how to create connections to a group.
 1. Press the left mouse button while the mouse pointer is over any of the child objects of the group.
 2. While the left mouse button is pressed, drag one end of the line connector to any of the group's children.
 
-   This will display a red adorner along the group's boundary, indicating that the connection is to be made to that particular group.
+This will display a red adorner along the group's boundary, indicating that the connection is to be made to that particular group.
 
 
 
-   ![](Groups_images/Groups_img12.jpeg)
+![](Groups_images/Groups_img12.jpeg)
 
 
 
-   _Creating Connection to a Group_
+_Creating Connection to a Group_
 
 3. Release the mouse button at that point to connect to the group's boundary.
 
@@ -460,15 +459,15 @@ The following steps illustrate how to create connections to individual objects i
 1. Press the left mouse button while the mouse pointer is over the node to which the connection is to be made.
 2. While the left mouse button is pressed, drag the line connector to the center port of that particular node.
 
-   When the mouse pointer is over the center port, a red adorner will be displayed along the node's boundary, indicating that the connection is to be made to that particular node.
+When the mouse pointer is over the center port, a red adorner will be displayed along the node's boundary, indicating that the connection is to be made to that particular node.
 
 
 
-   ![](Groups_images/Groups_img14.jpeg)
+![](Groups_images/Groups_img14.jpeg)
 
 
 
-   _Creating Connection to a Child Object_
+_Creating Connection to a Child Object_
 
 3. Release the mouse button at that point to connect to the node's boundary.
 
@@ -694,11 +693,11 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
 
 
 
-   ![](Groups_images/Groups_img16.jpeg)
+![](Groups_images/Groups_img16.jpeg)
 
 
 
-   _Selecting a Group_
+_Selecting a Group_
 
 2. Invoke the Ungroup command. This ungroups the nodes.
 
@@ -726,6 +725,7 @@ _Ungrouping By Using the Context Menu_
 
 > Note: The Ungroup command is enabled only when two or more objects are selected.
 
+> 
 
 ## Layers
 

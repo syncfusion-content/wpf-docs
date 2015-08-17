@@ -89,15 +89,7 @@ In the time line view, the width of the hours can be automatically adjusted by e
 
 
 {% highlight c# %}
-[C#]           
- SfSchedule schedule = new SfSchedule();           
- schedule.Background = new SolidColorBrush(Colors.White);            
- schedule.Height = 400;            
- schedule.Width = 500;            
- schedule.MajorTickTimeFormat = "hh- mm- ss tt";          
- schedule.EnableAutoFormat = true;            
- schedule.ScheduleType = ScheduleType.TimeLine;            
- this.grid.Children.Add(schedule);
+[C#]            SfSchedule schedule = new SfSchedule();            schedule.Background = new SolidColorBrush(Colors.White);            schedule.Height = 400;            schedule.Width = 500;            schedule.MajorTickTimeFormat = "hh- mm- ss tt";            schedule.EnableAutoFormat = true;            schedule.ScheduleType = ScheduleType.TimeLine;            this.grid.Children.Add(schedule);
 {% endhighlight %}
 
 
@@ -107,7 +99,7 @@ In the time line view, the width of the hours can be automatically adjusted by e
 
 
 
-![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img6.png)
+{{ '![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img6.png)' | markdownify }}
 
 
 

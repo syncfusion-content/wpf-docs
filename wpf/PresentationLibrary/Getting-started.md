@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains you the basic information on how to get started with creating or editing Microsoft PowerPoint files with few lines of code by using Essential Presentation APIs.
 
-## Creating a new Presentation from scratch with basic elements
+# Creating a new Presentation from scratch with basic elements
 
 An entire PowerPoint file is represented with an instance of IPresentation interface of Essential Presentation. IPresentation is the root element in Essential Presentation DOM (document object model). Each Presentation consists of collection of slides. By using this DOM, you can add, edit and remove content from the document by iterating elements.
 
@@ -25,6 +25,8 @@ Initially, you can learn how to create a slide as follows.
 Create an instance of IPresentationinterface as follows. Instance of IPresentation represents the root element of Presentation that in turn contains the collections of slides.
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Creates a new instance of PowerPoint Presentation
 
@@ -39,6 +41,8 @@ IPresentation presentation = Presentation.Create();
 Presentation has a property named Slides to represent the slide collections. Create an instance of an ISlide in the presentation by using the Add method of slide collection and during the creation of slide, you can specify the layout design as parameter. 
 
  {% highlight c# %}
+ 
+    [C#]
 
 //presentation.Slides represents the collection of slides in PowerPoint presentation
 
@@ -57,6 +61,8 @@ ISlide firstSlide = presentation.Slides.Add(SlideLayoutType.Blank);
 Each slide contains a collection of shapes. All the contents are added in slide as a shape or within a shape. You can add the textual contents in a slide with the help of textbox shape. The following code example explains how to add a textbox within the slide. You need to specify the left position, top position, width & height (in points) as parameters. 
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Add a textbox shape in a slide by specifying its position & size
 
@@ -75,6 +81,8 @@ titleShape.TextBody.VerticalAlignment = VerticalAlignmentType.Bottom;
 All the contents of textbox or shape is added with in its body that represents a property named TextBody. Then add a paragraph into the textbox shape as follows. Here, the horizontal alignment of paragraph is set to center. By default it is left aligned.
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Add a paragraph in the body of the shape
 
@@ -93,6 +101,8 @@ paragraph.HorizontalAlignment = HorizontalAlignmentType.Center;
 A paragraph can contain more than one text part. TextPart holds textual contents in the paragraph and is like span tag in html. Here, text part is added with the text “Hello Presentation” and set its formatting such as bold and font size.
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Add a textPart in the paragraph
 
@@ -116,6 +126,8 @@ Refer to the following screenshot.
 Now, add another textbox shape in the shape. Further, within the textbox shape, add two paragraphs as follows.
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Add another textbox shape 
 
@@ -174,6 +186,8 @@ Add three textbox shape in the slide. A textbox shape to hold the title “Bulle
 The following code example explains how to add a new slide into the PowerPoint presentation.
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Add the second slide into the presentation 
 
@@ -188,6 +202,8 @@ ISlide secondSlide = presentation.Slides.Add(SlideLayoutType.Blank);
 Add a new textbox at the top of the slide in order to set the title content for the slide. Further add a new paragraph within the newly created shape and add a text part with the text “Bulleted & Numbered List” as follows.
 
  {% highlight c# %}
+ 
+   [C#]
 
 //Add the textbox to add title of the slide
 
@@ -224,6 +240,8 @@ textPart.Font.FontName = "Calibri";
 After setting the title content of the slide, then create two textboxes, one at the left hand side and other at the right hand side of the slide.
 
  {% highlight c# %}
+ 
+    [C#]
 
 // adding a textbox to hold the bulleted list 
 
@@ -241,13 +259,13 @@ IShape rightShape = secondSlide.AddTextBox(485, 140, 410, 250);
 
 The ListFormat property of the paragraph represents all the list information. Some of the important properties are explained in the following table.
 
-Property Table
+_Property Table_
 
 <table>
 <tr>
-<th>
-Property Name</th><th>
-Short Description</th></tr>
+<td>
+{{ '**Property Name**' | markdownify }}</td><td>
+{{ '**Short Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Type</td><td>
@@ -284,6 +302,8 @@ Here, a new paragraph is added and the ListFormat property is accessed. In order
 Finally set the hanging indent of the paragraph with the property FirstLineIndent. There is no separate property for hanging indent and first line indent. If the value is positive, then the first line indent is applied, if the value is negative, then the hanging indent is applied.
 
  {% highlight c# %}
+ 
+    [C#]
 
 // adding a new paragraph with the text in the left hand side textbox. 
 
@@ -322,6 +342,8 @@ paragraph.FirstLineIndent = -20;
 Now you can create a new paragraph with bulleted list and set its list level as 2 by using the property IndentLevelNumber as follows.
 
  {% highlight c# %}
+ 
+    [C#]
 
 // adding another paragraph with the text in the left hand side textbox.  
 
@@ -365,6 +387,8 @@ Refer to the following screenshot.
 Here, add two new paragraph with the bulleted list. One with list level 2 and other with list level 1.
 
  {% highlight c# %}
+ 
+    [C#]
 
 // adding another paragraph with the text in the left hand side textbox.  
 
@@ -438,6 +462,8 @@ On saving the presentation, the second slide with the list is as follows.
 This section explains how to create numbered list. 
 
  {% highlight c# %}
+ 
+    [C#]
 
 paragraph = rightShape.TextBody.AddParagraph("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
 
@@ -466,6 +492,8 @@ paragraph.FirstLineIndent = -20;
 
 
  {% highlight c# %}
+ 
+    [C#]
 
 paragraph = rightShape.TextBody.AddParagraph("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.");
 
@@ -537,6 +565,8 @@ On saving the presentation, the slide looks like the following screenshot.
 This section explains how to insert a picture into a slide. Create a new slide with the title “Inserting Image…”
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Add the third slide into the presentation 
 
@@ -571,6 +601,8 @@ textPart.Font.FontName = "Calibri";
 Image can be added into the slide with the help of AddPicture method of shape collection. When the image is added, you can specify the image stream, position & size as parameters to this method. The following code example explains how to insert two images into the third slide.
 
  {% highlight c# %}
+ 
+   [C#]
 
 //Add the third slide into the presentation 
 
@@ -598,6 +630,8 @@ After adding the images into the slide, the slide looks like the following scree
 Finally, you can save the presentation by using Save method as follows. In order to release the resources utilized by presentation instance, make sure that the presentation gets closed finally.
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Add the third slide into the presentation 
 
@@ -609,13 +643,15 @@ presentation.Close();
 
 
 
-## Creating a Chart in Presentation from scratch 
+# Creating a Chart in Presentation from scratch 
 
 Charts can convey much more than numbers and makes it easier to understand the meaning behind the numbers. A Slide can have more than 1 chart. You can access the chart present in the slide through the property ISlide.Charts that represents the collection of chart in the slide. The chart collection provides a method named AddChart to include a chart in the slide. In order to create a chart, you need the data to be represents as chart, serie and category information. The chart data is preserved within Presentation as an excel file (embedded). Filling the chart data values is like filling an excel sheet.
 
 Create a new presentation with one slide as follows.
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Create an instance of the IPresentation  
 
@@ -634,6 +670,8 @@ ISlide slide = presentation.Slides.Add(SlideLayoutType.Blank);
 The chart is represented by IOfficeChart interface in the Essential Presentation. Now, in the next step add a new chart into the slide.
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Add a new chart in the slide by specifying its position & size as parameters.
 
@@ -648,6 +686,8 @@ IOfficeChart chart = slide.Charts.AddChart(100, 150, 800, 350);
 Chart title and its formatting is set by using ChartTitle property of IOfficeChart and ChartTitleArea property of IOfficeChart respectively. 
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Add a new chart in the slide by specifying its position & size as parameters.
 
@@ -663,9 +703,11 @@ chart.ChartTitleArea.Bold = true;
 
 The chart type is specified with the help of ChartType property of IOfficeChart interface. 
 
-> Note: 3D charts are not supported in image & PDF conversion.
+> _Note: 3D charts are not supported in image & PDF conversion._
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Specify the chart type 
 
@@ -680,6 +722,8 @@ chart.ChartType = OfficeChartType.Column_Clustered;
 All the chart data is preserved in the PowerPoint presentation as an embedded excel sheet. The data is filled by having an excel sheet in mind. The chart data is added into the presentation by using ChartData property of IOfficeChart. This ChartData provides APIs for setting the value. 
 
  {% highlight c# %}
+ 
+    [C#]
 
 //SetValue method takes 3 parameters – RowIndex, columnIndex & data
 
@@ -759,6 +803,8 @@ After filling these data, the embedded excel sheet looks like the following scre
 Once the chart data is added, you need to specify the Chart serie and category for chart creation. IOfficeChartSerie interface represents the chart serie and Collection of chart serie that is accessed by the Series property of IOfficeChart interface. The following code example creates three series and set its data range.
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Create a new chart serie with the name “2013”
 
@@ -793,6 +839,8 @@ Serie2015.Values = chart.ChartData[2, 4, 7, 4];
 Then set the primary category axis’s data range as follows.
 
  {% highlight c# %}
+ 
+    [C#]
 
 //setting the data range of the category axis
 
@@ -807,6 +855,8 @@ chart.PrimaryCategoryAxis.CategoryLabels = chart.ChartData[2, 1, 7, 1];
 Finally, save the presentation by using the Save method as follows. In order to release the resources utilized by presentation instance, make sure that the presentation is closed finally.
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Add the third slide into the presentation 
 
@@ -825,7 +875,7 @@ Now the chart added in the slide looks like chart in the following screenshot.
 ![](Getting-started_images/Getting-started_img10.png)
 
 
-## Converting PowerPoint Presentation into PDF document
+# Converting PowerPoint Presentation into PDF document
 
 For converting a Presentation file or a slide into PDF, the following assemblies need to be referenced.
 
@@ -841,13 +891,13 @@ For converting a Presentation file or a slide into PDF, the following assemblies
 
 PresentationToPdfConverter class is responsible for converting an entire Presentation or a slide into PDF. You can pass the instance of Presentation or slide to the Convert method of PresentationToPdfConverter class and this method returns an instance of PDF document. 
 
-Method Table
+_Method Table_
 
 <table>
 <tr>
-<th>
-Method Name</th><th>
-Short Description</th></tr>
+<td>
+{{ '**Method Name**' | markdownify }}</td><td>
+{{ '**Short Description**' | markdownify }}</td></tr>
 <tr>
 <td>
 Convert(ISlide slide)</td><td>
@@ -871,6 +921,8 @@ PresentationToPdfConverterSettings is used to customize the conversion of Presen
 Instance of ChartToImageConverter class is mandatory to convert the charts present in the presentation to PDF. ChartToImageConverter class resides within Syncfusion.OfficeChartToImageConverter.WPF assembly.  When ChartToImageConverter property of Presentation is not registered with ChartToImageConverter instance as follows, then the charts are not exported to PDF file.
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Open/load a PowerPoint presentation file
 
@@ -891,6 +943,8 @@ presentation.ChartToImageConverter = new ChartToImageConverter();
 The following code example converts the entire presentation into PDF document. It is mandatory to close the instance of PdfDocument and Presentation in order to release the resources occupied. 
 
  {% highlight c# %}
+ 
+   [C#]
 
 //Open/load a PowerPoint presentation file
 
@@ -942,7 +996,7 @@ presentation.Close();
 
 
 
-## Converting Slide into Image
+# Converting Slide into Image
 
 For converting a Presentation or a Slide to Image, the following assemblies need to be referenced.
 
@@ -956,13 +1010,13 @@ For converting a Presentation or a Slide to Image, the following assemblies need
 
 A slide can be converted to image by using the ConvertToImage method of ISlide interface
 
-Method Table_
+_Method Table_
 
 <table>
 <tr>
-<th>
-Method Name</th><th>
-Short description</th></tr>
+<td>
+{{ '**Method Name**' | markdownify }}</td><td>
+{{ '**Short description**' | markdownify }}</td></tr>
 <tr>
 <td>
 ConvertToImage(Syncfusion.Drawing.ImageType imageType)</td><td>
@@ -977,6 +1031,8 @@ Converts the current slide into image and returns the image as stream.</td></tr>
 Instance of ChartToImageConverter class is mandatory to convert the charts present in the presentation to image. ChartToImageConverter class resides within Syncfusion.OfficeChartToImageConverter.WPF assembly.  If ChartToImageConverter property of Presentation is not registered with ChartToImageConverter instance as follows, then the charts are not appeared in image, it is skipped.
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Open/load a PowerPoint presentation file
 
@@ -997,6 +1053,8 @@ presentation.ChartToImageConverter = new ChartToImageConverter();
 The following code example converts the first slide of the PowerPoint presentation into image and save it as a file.
 
  {% highlight c# %}
+ 
+    [C#]
 
 //Open/load a PowerPoint presentation file
 
@@ -1033,3 +1091,10 @@ image.Save("slide1.png");
 presentation.Close();
 
  {% endhighlight %}
+
+
+
+
+
+
+

@@ -26,25 +26,27 @@ We can also use the Print command which will execute the PrintDocument method wh
 
 {% highlight C# %}
 
-RichTextBox.PrintDocument();
+[C#]
+
+__RichTextBox.PrintDocument();
 
 {% endhighlight %}
 
 
 
-### Properties
+## Properties
 
 
 
-Property Table
+_Property Table_
 
 <table>
 <tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
+<td>
+Property</td><td>
+Description</td><td>
+Type</td><td>
+Data Type</td></tr>
 <tr>
 <td>
 IsZoomEnabled</td><td>
@@ -64,16 +66,16 @@ Double</td></tr>
 
 
 
-Property Table
+_Property Table_
 
 <table>
 <tr>
-<th>
-Method</th><th>
-Description</th><th>
-Parameters</th><th>
-Type</th><th>
-Return Type</th></tr>
+<td>
+Method</td><td>
+Description</td><td>
+Parameters</td><td>
+Type</td><td>
+Return Type</td></tr>
 <tr>
 <td>
 ResetZooming()</td><td>

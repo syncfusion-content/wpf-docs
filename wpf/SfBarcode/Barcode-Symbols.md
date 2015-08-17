@@ -118,7 +118,7 @@ The last seven characters of Code Sets A and B (character values 96 - 102) and t
 
 
 The following code example shows how to create a code39 barcode from XAML:
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 <sync:SfBarcode x:Name="barcode" Text="http://www.syncfusion.com" Symbology="Code39">
@@ -157,7 +157,7 @@ DataMatrix bar codes are widely used in printed media such as labels and letters
 
 
 The symbol can be chosen using the dependency property Symbology. Here is the equivalent code sample:
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 <sync:SfBarcode x:Name="barcode" Text="http://www.syncfusion.com" Symbology="QRBarcode">

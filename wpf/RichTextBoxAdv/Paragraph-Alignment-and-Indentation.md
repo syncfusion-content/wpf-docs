@@ -11,19 +11,19 @@ documentation: ug
 
 The paragraph alignment and indentation features allow you to define content in paragraphs. They can be added only inside the sections. We can keep _n_ number of paragraphs inside SectionAdv. Each paragraph may contain inline elements such as SpanAdv, HyperlinkAdv, ImageContainerAdv, and UIContainerAdv. 
 
-### Properties
+## Properties
 
 
 
-Property Table
+_Property Table_
 
 <table>
 <tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
+<td>
+Property</td><td>
+Description</td><td>
+Type</td><td>
+Data Type</td></tr>
 <tr>
 <td>
 TextAlignment</td><td>
@@ -83,17 +83,18 @@ ParagraphAdv can be added directly to an application using the following code sn
 
 {% highlight xml %}
 
-	<syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            
-	<syncfusion:DocumentAdv>                
-	<syncfusion:SectionAdv><syncfusion:ParagraphAdv TextAlignment="Center" AfterSpacing=".3" ListType="Bulleted">                    
-	</syncfusion:ParagraphAdv>                </syncfusion:SectionAdv>            
-	</syncfusion:DocumentAdv>        
-	</syncfusion:RichTextBoxAdv>
-
+[XAML]
+<syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            
+<syncfusion:DocumentAdv>                
+<syncfusion:SectionAdv><syncfusion:ParagraphAdv TextAlignment="Center" AfterSpacing=".3" ListType="Bulleted">                    
+</syncfusion:ParagraphAdv>                </syncfusion:SectionAdv>            
+</syncfusion:DocumentAdv>        
+</syncfusion:RichTextBoxAdv>
 {% endhighlight %}
 
 {% highlight C# %}
 
+[C#]      
  RichTextBoxAdv richtext = new RichTextBoxAdv();      
  DocumentAdv document = new DocumentAdv();      
  SectionAdv section = new SectionAdv();      

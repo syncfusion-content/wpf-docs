@@ -12,6 +12,10 @@ documentation: ug
 
 {% highlight xml %}
 
+[XAML]
+
+
+
         <Window x:Class="Testing.MainWindow"
 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"

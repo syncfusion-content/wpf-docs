@@ -50,6 +50,11 @@ Visual Tree:
 ## Class Diagram
 
 
+
+
+
+
+
 ## Properties, Methods and Events
 
 ### Properties
@@ -183,18 +188,14 @@ Dock Window Header Style</td></tr>
 DockTabAlignment</td><td>
 Gets/Sets the DockTabAlignment, which specifies the position of the tabbed child tabcontrol (top,bottom,left,right)</td><td>
 Dock</td><td>
-<ul>
-<li> Bottom</li>
-<li> Top </li><li>Left</li><li>Right</li></ul></td><td>
+* Bottom* Top* Left* Right<br></td><td>
 Tab Strip Placement</td></tr>
 <tr>
 <td>
 DraggingType</td><td>
 Gets/Sets the DraggingType, which specifies the type of Dragging of Float child (BorderDragging,NormalDragging,ShadowDragging) .</td><td>
 DraggingType</td><td>
-<ul><li> BorderDragging</li>
-<li> NormalDragging</li>
-<li> ShadowDragging</li></ul> </td><td>
+* BorderDragging* NormalDragging* ShadowDragging<br></td><td>
 Using Drag modes</td></tr>
 <tr>
 <td>
@@ -214,7 +215,7 @@ EndDockHeaderHeight</td></tr>
 <td>
 FlipItems</td><td>
 Gets the Collection of DockingManager children without duplication of elements.</td><td>
-List&lt;FrameworkElement&gt;</td><td>
+List<FrameworkElement></td><td>
 </td><td>
 How to use FlipItems property</td></tr>
 <tr>
@@ -438,31 +439,31 @@ Duration</td><td>
 CanAutoHide</td><td>
 Specifies whether the child element can be hidden automatically or not.</td><td>
 bool</td><td>
-<ul><li> True</li><li>False</li></ul></td></tr>
+* True* False<br></td></tr>
 <tr>
 <td>
 CanDock</td><td>
 Specifies whether the child element can be docked or not.</td><td>
 bool</td><td>
-<ul> <li>True </li><li> False</li><ul></td></tr>
+* True* False<br></td></tr>
 <tr>
 <td>
 CanClose</td><td>
 Specifies whether the child element can be closed or not.</td><td>
 bool</td><td>
-<ul> <li>True </li><li> False</li><ul><br></td></tr>
+* True* False<br></td></tr>
 <tr>
 <td>
 CanDrag</td><td>
 Specifies whether the child can be dragged from Dock to Float state.</td><td>
 bool</td><td>
-<ul> <li>True </li><li> False</li><ul><br></td></tr>
+* True* False<br></td></tr>
 <tr>
 <td>
 CanFloat</td><td>
 Specifies whether the child element is Floatable or not.</td><td>
 bool</td><td>
-<ul> <li>True </li><li> False</li><ul><br></td></tr>
+* True* False<br></td></tr>
 <tr>
 <td>
 CustomMenuItems</td><td>
@@ -486,7 +487,7 @@ double</td><td>
 DockAbility</td><td>
 Specifies the dockability of the child element, while docking it in the internal DockedElementTabbedHost. Refer to {{ '[Dockability](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31088dockabilityofchild.htm)' | markdownify }} for more information.</td><td>
 DockAbility</td><td>
-<ul><li> {{ '_All_' | markdownify }}</li><li> {{ '_Bottom_' | markdownify }}</li><li> {{ '_Horizontal_' | markdownify }}</li><li> {{ '_Left_' | markdownify }}</li><li> {{ '_None_' | markdownify }}</li><li> {{ '_Right_' | markdownify }}</li><li> {{ '_Tabbed_' | markdownify }}</li><li> {{ '_Top_' | markdownify }}</li></ul> Vertical<br></td></tr>
+* {{ '_All_' | markdownify }}* {{ '_Bottom_' | markdownify }}* {{ '_Horizontal_' | markdownify }}* {{ '_Left_' | markdownify }}* {{ '_None_' | markdownify }}* {{ '_Right_' | markdownify }}* {{ '_Tabbed_' | markdownify }}* {{ '_Top_' | markdownify }}* Vertical<br></td></tr>
 <tr>
 <td>
 DockHeaderPresenter</td><td>
@@ -504,7 +505,7 @@ DockingManager</td><td>
 DockFill</td><td>
 Specifies whether child can be filled in the remaining client area of {{ '[DockingManager](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F31095detectwhetherthewindowishostedindockingmanager.htm)' | markdownify }}.</td><td>
 bool</td><td>
-<ul> <li>True </li><li> False</li><ul><br></td></tr>
+* True* False<br></td></tr>
 <tr>
 <td>
 DocumentMDIHeaderStyle</td><td>
@@ -570,37 +571,37 @@ Brush</td><td>
 IsContextMenuButtonVisible</td><td>
 Specifies the visibility of the Contextmenu button for the individual children of DockingManager.</td><td>
 bool</td><td>
-<ul> <li>True </li><li> False</li><ul><br></td></tr>
+* True* False<br></td></tr>
 <tr>
 <td>
 IsContextMenuVisible</td><td>
 Specifies the visibility of the ContextMenu for the individual children of DockingManager.</td><td>
 bool</td><td>
-<ul> <li>True </li><li> False</li><ul><br></td></tr>
+* True* False<br></td></tr>
 <tr>
 <td>
 IsRollupFloatWindow</td><td>
 Specifies the {{ '[rollup behavior](http://help.syncfusion.com/ug_91/User%20Interface/WPF/Tools/default.htm?turl=Documents%2F310813rollingthefloatwindowup.htm)' | markdownify }} for individual Float child in DockingManager.</td><td>
 bool</td><td>
-<ul> <li>True </li><li> False</li><ul><br></td></tr>
+* True* False<br></td></tr>
 <tr>
 <td>
 NoHeader</td><td>
 Specifies whether to display the headers of Docked children or not.</td><td>
 bool</td><td>
-<ul> <li>True </li><li> False</li><ul><br></td></tr>
+* True* False<br></td></tr>
 <tr>
 <td>
 SideInDockedMode</td><td>
 Specifies the DockSide while the child is in Docked State with respect to the parent.</td><td>
 DockSide</td><td>
-<ul><li> Top</li><li> Left</li> Right</li><li> Bottom</li><li>Tabbed</li></ul> </td></tr>
+* Top* Left* Right* Bottom* Tabbed <br></td></tr>
 <tr>
 <td>
 SideInFloatMode</td><td>
 Specifies the DockSide while the child is in Float State with respect to the parent.</td><td>
 DockSide</td><td>
-<ul><li> Top</li><li> Left</li> Right</li><li> Bottom</li><li>Tabbed</li></ul> <br></td></tr>
+* Top* Left* Right* Bottom* Tabbed <br></td></tr>
 <tr>
 <td>
 TargetNameInDockMode</td><td>
@@ -618,13 +619,13 @@ string</td><td>
 SizetoContentInFloat</td><td>
 Specifies whether the FloatWindow needs to be sized to its child content.</td><td>
 bool</td><td>
-<ul> <li>True </li><li> False</li><ul><br></td></tr>
+* True* False<br></td></tr>
 <tr>
 <td>
 State</td><td>
 Specifies the state of children of the DockingManager.</td><td>
 DockState</td><td>
-<ul><li>Dock</li><li>Float</li><li>Document</li><li></li>AutoHidden<li></li>Hidden</li></ul></td></tr>
+* Dock* Float* Document* AutoHidden* Hidden <br></td></tr>
 <tr>
 <td>
 SideTabItemBackground</td><td>

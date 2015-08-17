@@ -22,8 +22,10 @@ Conditional Formatting can be used in Marketing scenarios, where you can easily 
 ## Adding Conditional Formatting 
 
 The following code snippets show how to create an OlapGrid and to add Conditional Formats.
-{% highlight html %}
-[XAML]
+
+  {% highlight xml %}
+
+    [XAML]
 
 <syncfusion:OlapGrid>
 
@@ -57,12 +59,15 @@ The following code snippets show how to create an OlapGrid and to add Conditiona
 
 </syncfusion:OlapGrid>
 
-{% endhighlight %}
-{% highlight c# %}
+    {% endhighlight %}
 
 
 
-[C#]
+
+
+  {% highlight c# %}
+
+    [C#]
 
 OlapGrid olapGrid1 = new OlapGrid();
 
@@ -122,12 +127,15 @@ this.olapgrid1.ConditionalFormats.Add(conditionalFormat);
 
 this.olapgrid1.DataBind();
 
-
-{% endhighlight %}
-{% highlight vbnet %}
+    {% endhighlight %}
 
 
-[VB]
+
+
+
+  {% highlight vbnet %}
+
+    [VB]
 
 Dim olapGrid1 As OlapGrid = New OlapGrid()
 
@@ -175,15 +183,18 @@ Me.olapgrid1.ConditionalFormats.Add(conditionalFormat)
 
 Me.olapgrid1.DataBind()
 
+    {% endhighlight %}
 
 
-{% endhighlight  %}
+
+
+
+
 
 ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/OlapGridConditionalFormatting.png](Conditional-Formatting_images/Conditional-Formatting_img1.png)
 
 
-
-### Sample Link
+## Sample Link
 
 ..\..\ Syncfusion\BI\WPF\OlapGrid.WPF\Samples\Appearance\Conditional Formatting Demo
 

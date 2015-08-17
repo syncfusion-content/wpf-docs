@@ -13,7 +13,7 @@ Essential OLAP Client control lets you efficiently browse and analyze the multid
 Dimensions, Measures and KPIs that are available in the data source, and lets you to slice and dice the cube. You can also create the report from 
 the data source using OLAP Client and store it for later use. It also previews the report in the Grid and Chart while creating.
 
-## OLAP Client is composed of following components:
+OLAP Client is composed of following components:
 
 * Cube Selector: Comprises multiple cubes obtained from data source.
 * Cube dimension browser: Tree-View structure that comprises dimensions and measures belonging to the current cube into independent logical groups.
@@ -60,14 +60,14 @@ _Conventions Table_
 
 <table>
 <tr>
-<th>
-Convention</th><th>
-Icon</th><th>
-Description</th></tr>
+<td>
+Convention</td><td>
+Icon</td><td>
+Description</td></tr>
 <tr>
 <td>
 Note</td><td>
-{{ '_Note:_' | markdownify }}</td><td>
+> {{ '_Note:_' | markdownify }}</td><td>
 Represents important information</td></tr>
 <tr>
 <td>

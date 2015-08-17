@@ -22,9 +22,9 @@ CloseTooltip</td><td>
 Sets the string for the ToolTip of Close button in the ChromelessWindow.</td></tr>
 <tr>
 <td colspan = "2">
-{{'![](Localization_images/Localization_img1.png)'| markdownify}}
+{{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/59.png](Localization_images/Localization_img1.png)'| markdownify}}
 
-{{'![](Localization_images/Localization_img2.png)'| markdownify}}
+{{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/60.png](Localization_images/Localization_img2.png)'| markdownify}}
 
 </td></tr>
 <tr>

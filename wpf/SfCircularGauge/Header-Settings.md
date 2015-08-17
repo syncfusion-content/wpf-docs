@@ -32,9 +32,10 @@ The GaugeHeader is an object that can be used to set a unique header for the Cir
 
 This property places the header in a Circular Gauge. The value for GaugeHeaderPosition is specified in point type. By default, it is placed at (0, 0).
 
-#### Code Example:
-
+##### Code Example:
 {% highlight xml %}
+
+[XAML]
 
         <syncfusion:SfCircularGauge GaugeHeaderPosition="300,600" >
 
@@ -49,10 +50,11 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
             </syncfusion:SfCircularGauge.GaugeHeader>
 
         </syncfusion:SfCircularGauge> 
-		
 {% endhighlight %}
 
 {% highlight C# %}
+
+[C#]
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -63,13 +65,12 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
             circularGauge.GaugeHeader = _textBlock;
 
             this.Grid.Children.Add(circularGauge);
-			
 {% endhighlight %}
 
 
 
 
-#### Screenshot:
+###### Screenshot:
 
 ![](Header-Settings_images/Header-Settings_img1.png)
 
@@ -81,6 +82,9 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
 
 
 {% highlight xml %}
+
+[XAML]
+
 
 
 <syncfusion:SfCircularGauge  GaugeHeader="Fual Availability"  
@@ -126,10 +130,11 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
 </syncfusion:SfCircularGauge.MainScale>
 
         </syncfusion:SfCircularGauge>
-		
 {% endhighlight %}
 
 {% highlight C# %}
+
+[C#]
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -166,11 +171,10 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
-			
 {% endhighlight %}
 
 
-#### Screenshot:
+##### Screenshot:
 
 ![](Header-Settings_images/Header-Settings_img2.png)
 
@@ -179,6 +183,10 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
 #### Gauge Header as UI Element
 
 {% highlight xml %}
+
+[XAML]
+
+
 
 <syncfusion:SfCircularGauge GaugeHeaderPosition="300,600">
 
@@ -207,14 +215,13 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
 </syncfusion:SfCircularGauge.GaugeHeader>
 
    </syncfusion:SfCircularGauge>
-   
 {% endhighlight %}
 
 
 
 {% highlight C# %}
 
-
+[C#]
 
            SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -254,6 +261,11 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
 
 
 
-#### Screenshot:
+##### Screenshot:
 
 ![](Header-Settings_images/Header-Settings_img3.png)
+
+
+
+
+

@@ -184,7 +184,7 @@ NodeCollection</td><td>
 No</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight html %}
 
 
 [XAML]
@@ -282,7 +282,7 @@ Horizontal and Vertical ruler can be initialized for DiagramView in two ways:
 
 
 
-{% highlight xml %}
+{% highlight html %}
 
 [XAML]
 
@@ -450,7 +450,7 @@ _Ruler Terminology_
 The following code shows how the properties can be set.
 
 
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -536,7 +536,7 @@ Bounds can be specified in two ways,
 * Through Code Behind
 
 
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -696,7 +696,7 @@ The DiagramPage can be created for DiagramView in following two ways,
 * Through Code Behind
 
 
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -810,7 +810,7 @@ This property is in DiagramView and can be set in the following ways.
 * Through Code Behind
 
 
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -990,7 +990,7 @@ You can enable fit-to-page to bring the whole diagram within the viewport, eithe
 To enable this feature, set the EnableFitToPage property of the diagram view to True. The following code illustrates this: 
 
 
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 <Syncfusion:DiagramControl Grid.Row="1" Name="diagramControl"  >
@@ -1051,7 +1051,7 @@ You can execute a fit-to-page command to bring the whole diagram within the view
 The following code illustrates how to bring the whole diagram into the viewport using a command: 
 
 
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
  <Button Command="FitToPage" CommandTarget="{Binding ElementName=diagramView}"CommandParameter="{Binding ElementName=diagramPage}">
@@ -1272,7 +1272,7 @@ PageMargin can be set to diagram page by using DiagramView’s PageMargin proper
 * Through Code behind
 
 
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 <syncfusion:DiagramControl Name="diagramControl" IsSymbolPaletteEnabled="True">
@@ -1377,7 +1377,7 @@ The property is in DiagramView and can be set in the following methods.
 
 The following code illustrates how to set EnableVirtualization property through XAML.
 
-{% highlight xml %}
+{% highlight html %}
 
 [XAML]
 
@@ -1530,7 +1530,7 @@ No</td></tr>
 The measurement units property can be specified in the following way.
 
 
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -2001,7 +2001,7 @@ The horizontal and vertical grid lines can be enabled or disabled using the Show
 The following code can be used to set these properties.
 
 
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -2129,7 +2129,7 @@ No</td></tr>
 
 The following code can be used to set these properties.
 
-{% highlight xml %}
+{% highlight html %}
 
 [XAML]
 
@@ -2327,7 +2327,7 @@ The Snap to Grid feature for nodes and connectors can be enabled by setting Diag
 
 In the following code example, diagramView is an instance of DiagramView.
 
-{% highlight xml %}
+{% highlight html %}
 
 [XAML]
 
@@ -2376,7 +2376,7 @@ By default, the SnapOffsetX and SnapOffsetY values are set to 25 pixels. However
 In the following code example, diagramView is an instance of DiagramView.
 
 
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 <syncfusion:DiagramView  x:Name="diagramView" SnapOffsetX ="50" SnapOffsetY ="50">
@@ -2423,35 +2423,33 @@ Type </th><th>
 Data Type </th><th>
 Reference links </th></tr>
 <tr>
-<td>
-SnapOffsetX</td><td>
-Snaps to the horizontal offset value.</td><td>
-Dependency property</td><td>
-double</td><td>
-Not applicable </td></tr>
+<th>
+SnapOffsetX</th><th>
+Snaps to the horizontal offset value.</th><th>
+Dependency property</th><th>
+double</th><th>
+Not applicable </th></tr>
 <tr>
-<td>
-SnapOffsetY</td><td>
-Snaps to the vertical offset value.</td><td>
-Dependency property</td><td>
-double</td><td>
-Not applicable</td></tr>
+<th>
+SnapOffsetY</th><th>
+Snaps to the vertical offset value.</th><th>
+Dependency property</th><th>
+double</th><th>
+Not applicable</th></tr>
 <tr>
-<td>
-SnapToHorizontalGrid</td><td>
-Enables or disables snap to horizontal grid.</td><td>
-Dependency property</td><td>
-bool, true/false</td><td>
- Not applicable</td></tr>
+<th>
+SnapToHorizontalGrid</th><th>
+Enables or disables snap to horizontal grid.</th><th>
+Dependency property</th><th>
+bool, true/false</th><th>
+ Not applicable</th></tr>
 <tr>
-<td>
-SnapToVerticalGrid</td><td>
-Enables or disables
-
- snap to vertical grid.</td><td>
-Dependency property</td><td>
-bool, true/false</td><td>
- Not applicable</td></tr>
+<th>
+SnapToVerticalGrid</th><th>
+Enables or disables snap to vertical grid.</th><th>
+Dependency property</th><th>
+bool, true/false</th><th>
+ Not applicable</th></tr>
 </table>
 
 
@@ -2785,32 +2783,26 @@ The diagram page elements will be zoomed out each time the button is clicked.
 Steps to zooming using the mouse wheel
 
 1. Ensure the IsZoomEnabled property is set to True. By default it is set to true.
-   
-   ~~~ cs
-   
-	[C#]
+{% highlight c# %}
+[C#]
 
 
 
-		DiagramView diagramView = new DiagramView();
+DiagramView diagramView = new DiagramView();
 
-		diagramView.IsZoomEnabled = true;
+diagramView.IsZoomEnabled = true;
 
-   ~~~
-   {:.prettyprint }
-   
-   ~~~ vbnet
-   
-   [VB]
+{% endhighlight  %}
+{% highlight vbnet %}
+[VB]
 
 
 
-	Dim diagramView As New DiagramView()
+Dim diagramView As New DiagramView()
 
-	diagramView.IsZoomEnabled = True
+diagramView.IsZoomEnabled = True
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight  %}
 
 2. Now while the CTRL key is pressed, roll the mouse wheel up to zoom in or down to zoom out.
 
@@ -2827,7 +2819,7 @@ _Zooming the Diagram Control_
 Essential Diagram WPF allows you to set the factor by which you can zoom in or out. This factor can be specified using the ZoomFactor property. The default value is 0.2.
 
 The following code can be used to set the ZoomFactor property.
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -2999,7 +2991,7 @@ Clipboard commands allows you to cut or copy the selected objects in the page to
 ### Cut Command
 
 Cut the selected objects from the page into the Clipboard.
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -3023,7 +3015,7 @@ Cut the selected objects from the page into the Clipboard.
 Copy Command
 
 Copies the selected objects from the page into the Clipboard.
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -3047,7 +3039,7 @@ Copies the selected objects from the page into the Clipboard.
 ### Paste Command
 
 Paste the contents of the valid clipboard into the page.
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -3060,7 +3052,7 @@ Paste the contents of the valid clipboard into the page.
 
 {% endhighlight  %}
 
-{% highlight xml %}
+{% highlight html %}
 [C#]ApplicationCommands.Paste.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight c# %}
@@ -3077,7 +3069,7 @@ Using Shotcut Keys
 ### Disable Clipboard Commands
 
 Each clipboard command can be disabled as shown in the following code example.
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -3200,7 +3192,7 @@ _Send To Back_
 
 Increases the z-index value of the selected object by 1.
 
-{% highlight xml %}
+{% highlight html %}
 [C#]DiagramCommandManager.MoveForward.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
@@ -3265,7 +3257,7 @@ This property is in DiagramView and can be set in the following ways.
 * Through Code Behind
 
 The following code illustrates how to set the ZorderMode as Index:
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -3331,7 +3323,7 @@ diagramview.ZOrderMode = ZOrderModes.Index;
 
 
 The following code illustrates how to set the ZOrderMode as Visual:
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -3404,13 +3396,11 @@ The following alignment commands are used to align objects.
 
 The AlignLeft command aligns all selected objects along the left corner of the reference object.
 
-{% highlight c# %}
-[C#]
-DiagramCommandManager.AlignLeft.Execute(diagramView.Page, diagramView);
+{% highlight html %}
+[C#]DiagramCommandManager.AlignLeft.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
-DiagramCommandManager.AlignLeft.Execute(diagramView.Page, diagramView)
+[VB]DiagramCommandManager.AlignLeft.Execute(diagramView.Page, diagramView)
 
 {% endhighlight  %}
 
@@ -3429,12 +3419,10 @@ The AlignCenter command aligns all selected objects to the center. This command 
 
 
 {% highlight c# %}
-[C#]
-DiagramCommandManager.AlignCenter.Execute(diagramView.Page, diagramView);
+[C#]DiagramCommandManager.AlignCenter.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
-DiagramCommandManager.AlignCenter.Execute(diagramView.Page, diagramView)
+[VB]DiagramCommandManager.AlignCenter.Execute(diagramView.Page, diagramView)
 
 {% endhighlight  %}
 
@@ -3453,13 +3441,11 @@ _AlignCenter command applied to Diagram Objects_
 The AlignRight command aligns all selected objects along the right corner of the reference object.
 
 {% highlight c# %}
-[C#]
-DiagramCommandManager.AlignRight.Execute(diagramView.Page, diagramView);
+[C#]DiagramCommandManager.AlignRight.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
-DiagramCommandManager.AlignRight.Execute(diagramView.Page, diagramView)
+[VB]DiagramCommandManager.AlignRight.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
@@ -3479,12 +3465,10 @@ _AlignRight command applied to Diagram Objects_
 The AlignTop command aligns all selected objects along the top surface of the reference object.
 
 {% highlight c# %}
-[C#]
-DiagramCommandManager.AlignTop.Execute(diagramView.Page, diagramView);
+[C#]DiagramCommandManager.AlignTop.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
-DiagramCommandManager.AlignTop.Execute(diagramView.Page, diagramView)
+[VB]DiagramCommandManager.AlignTop.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
@@ -3501,12 +3485,10 @@ _AlignTop command applied to Diagram Objects_
 The AlignMiddle command aligns all selected objects at the center. This command center-aligns selected objects with respect to the vertical axis, i.e., by changing the y-coordinate of the object. 
 
 {% highlight c# %}
-[C#]
-DiagramCommandManager.AlignMiddle.Execute(diagramView.Page, diagramView);
+[C#]DiagramCommandManager.AlignMiddle.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
-DiagramCommandManager.AlignMiddle.Execute(diagramView.Page, diagramView)
+[VB]DiagramCommandManager.AlignMiddle.Execute(diagramView.Page, diagramView)
 {% endhighlight %}
 
 
@@ -3523,12 +3505,10 @@ _AlignMiddle command applied to Diagram Objects_
 The AlignBottom command aligns all selected objects along the bottom surface of the reference object.
 
 {% highlight c# %}
-[C#]
-DiagramCommandManager.AlignBottom.Execute(diagramView.Page, diagramView);
+[C#]DiagramCommandManager.AlignBottom.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]
-DiagramCommandManager.AlignBottom.Execute(diagramView.Page, diagramView)
+[VB]DiagramCommandManager.AlignBottom.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
@@ -3555,12 +3535,10 @@ The following spacing commands are used to space objects.
 The SpaceAcross command spaces selected objects with equal horizontal distance between them.
 
 {% highlight c# %}
-[C#]
-DiagramCommandManager.SpaceAcross.Execute(diagramView.Page, diagramView);
+[C#]DiagramCommandManager.SpaceAcross.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]
-DiagramCommandManager.SpaceAcross.Execute(diagramView.Page, diagramView)
+[VB]DiagramCommandManager.SpaceAcross.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
@@ -3580,12 +3558,10 @@ _SpaceAcross command applied to Diagram Objects_
 The SpaceDown command spaces selected objects with equal vertical distance between them.
 
 {% highlight c# %}
-[C#]
-DiagramCommandManager.SpaceDown.Execute(diagramView.Page, diagramView);
+[C#]DiagramCommandManager.SpaceDown.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]
-DiagramCommandManager.SpaceDown.Execute(diagramView.Page, diagramView)
+[VB]DiagramCommandManager.SpaceDown.Execute(diagramView.Page, diagramView)
 {% endhighlight %}
 
 
@@ -3612,7 +3588,7 @@ The following steps illustrate how to delete a node or connector.
 
 
 
-> Note: When a node is deleted, all the connectors connected to that node are also deleted. Deleting a connector leads to the deletion of that particular connector only.
+_Note: When a node is deleted, all the connectors connected to that node are also deleted. Deleting a connector leads to the deletion of that particular connector only._
 
 The following code example illustrates how to invoke the Delete command.
 {% highlight c# %}
@@ -3655,7 +3631,7 @@ The SameHeight command resizes selected objects to the height of the first objec
 
 _SameHeight command applied to Diagram Objects_ 
 
-> Note: The width of the selected object remains the same.
+_Note: The width of the selected object remains the same._
 
 ### Width Customization
 
@@ -3675,7 +3651,7 @@ The SameWidth command resizes selected objects to the width of the first object 
 
 _SameWidth command applied to Diagram Objects_
 
-> Note: The height of the selected object remains the same.
+_Note: The height of the selected object remains the same._
 
 ### Height and Width Customization
 
@@ -3698,7 +3674,7 @@ The SameSize command resizes selected objects to the height and width of the fir
 
 _SameSize command applied to Diagram Objects_
 
-> Note: The connector gets spaced only when the head node and the tail node of the connector is Null.
+_Note: The connector gets spaced only when the head node and the tail node of the connector is Null._
 
 ## Undo and Redo Command
 
@@ -3707,24 +3683,20 @@ Undo command reverses the last action performed. For example: Some of the basic 
 Undo Command can be specified in the following way.
 
 {% highlight c# %}
-[C#]
-DiagramCommandManager.Undo.Execute(diagramView.Page, diagramView);
+[C#]DiagramCommandManager.Undo.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]
-DiagramCommandManager.Undo.Execute(diagramView.Page, diagramView)
+[VB]DiagramCommandManager.Undo.Execute(diagramView.Page, diagramView)
 {% endhighlight %}
 
 
 Redo Command can be specified in the following way.
 
 {% highlight c# %}
-[C#]
-DiagramCommandManager.Redo.Execute(diagramView.Page, diagramView);
+[C#]DiagramCommandManager.Redo.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
-DiagramCommandManager.Redo.Execute(diagramView.Page, diagramView)
+[VB]DiagramCommandManager.Redo.Execute(diagramView.Page, diagramView)
 {% endhighlight %}
 
 
@@ -3753,7 +3725,7 @@ No</td></tr>
 
 
 The following code example shows how to disable Undo Redo operation.
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -3890,19 +3862,19 @@ Parameters </th><th>
 Return Type </th><th>
 Reference links </th></tr>
 <tr>
-<td>
-Print</td><td>
-Prints the diagram page using Print Dialog Box and Print Preview</td><td>
-void</td><td>
-void </td><td>
-No</td></tr>
+<th>
+Print</th><th>
+Prints the diagram page using Print Dialog Box and Print Preview</th><th>
+void</th><th>
+void </th><th>
+No</th></tr>
 <tr>
-<td>
-Print</td><td>
-Prints the diagram page without using Print Dialog Box and Print Preview</td><td>
-PrintParameters</td><td>
-void </td><td>
-No</td></tr>
+<th>
+Print</th><th>
+Prints the diagram page without using Print Dialog Box and Print Preview</th><th>
+PrintParameters</th><th>
+void </th><th>
+No</th></tr>
 </table>
 
 
@@ -4132,9 +4104,9 @@ To enable DrawingTools set EnableDrawingTools property to true. Shapes and line 
 
 * Through XAML.
 
-_The following code illustrates how to enable the DrawingTools_.
+__The following code illustrates how to enable the DrawingTools.
 
-{% highlight xml %}
+{% highlight html %}
 
 [XAML]
 
@@ -4191,9 +4163,9 @@ diagramView.EnableDrawingTools = True
 {% endhighlight %}
 
 
-> Note:
->
-> When the EnableDrawingToolsis set to True, it has to be disabled manually, i.e. it cannot be disabled automatically. This will facilitate drawing shapes or lines continually until EnableDrawingTools is set to false manually.
+_Note:_
+
+_When the EnableDrawingToolsis set to True, it has to be disabled manually, i.e. it cannot be disabled automatically. This will facilitate drawing shapes or lines continually until EnableDrawingTools is set to false manually._
 
 _ObjectDrawn Event_
 
@@ -4220,7 +4192,7 @@ Drawing Object--Get the object that is drawn (node or line connector). Drawing T
 The following code illustrates this feature.
 
 In XAML
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
   <syncfusion:DiagramControl.View>
@@ -4285,7 +4257,7 @@ This property is in DiagramView and can be set in the following ways:
 * Through code behind
 
 The following code illustrates how to set the DrawingMode as Default:
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -4357,7 +4329,7 @@ diagramview.ZOrderMode = DrawingMode.Default;
 _DrawingMode is Default_
 
 The following code illustrates how to set the DrawingMode as Default:
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -4436,7 +4408,7 @@ The DrawingTool selection in Diagram View can be set in two methods:
 * Through XAML.      
 
 The following code illustrates how to select a DrawingTool.
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -4543,12 +4515,12 @@ Bezier Line – After Drawing
 
 _Bezier Line(Line Connector)_
 
-> Note:
->
-> * The drawn shape will be converted into a Node.
-> * The drawn line will be converted into a LineConnector.
-> * You can continually draw the selected shape.
-> * Lines cannot be drawn continually.
+_Note:_
+
+* _The drawn shape will be converted into a Node._
+* _The drawn line will be converted into a LineConnector._
+* _You can continually draw the selected shape._
+* _Lines cannot be drawn continually._ 
 
 Steps for drawing a Polygon and Polyline Drawing:
 
@@ -4611,7 +4583,7 @@ Style </td></tr>
 The preview style for line connectors can be defined either through XAML or code behind.
 
 To define a preview style, see the following code. This code sample is for setting the preview of the line connector as dashed.
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -4964,7 +4936,7 @@ NA</td></tr>
 To enable SizeToContent support, set the SizeToContent property of DiagramView to true. To disable, set this to false. Default value is true. 
 
 Following code illustrates how to enable SizeToContent support:
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -5015,7 +4987,7 @@ diagramView.SizeToContent = True
 You can define the Diagram Page area. Use the BoundaryConstraintsArea__property of DiagramView to define Diagram Page area. 
 
 Following code illustrates how to define Diagram Page area:
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -5061,7 +5033,7 @@ diagramView.BoundaryConstraintsArea = New Rect(100, 100, 850, 1195)
 You can restrict the diagram element moving out of a specified area. Use the BoundaryConstraintsEnabled property of DiagramView for this purpose.   
 
 Following code illustrates how to restrict diagram element moving out of specific area:
-{% highlight xml %}
+{% highlight html %}
 [XAML]   
 
 
@@ -5116,7 +5088,7 @@ Following properties enables to customize the appearance of the diagram page:
 To customize the background, use the PageBackground__of DiagramView. Default value is White.
 
 Following code illustrated how to customize the background:
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -5157,13 +5129,12 @@ Dim diagramView As New DiagramView()
 
 diagramView.PageBackground = New SolidColorBrush(Colors.Gray)
 {% endhighlight %}
-
 ### Customizing the Off Page’s Background 
 
 To customize the background of the Off Page, use the OffPageBackground__property of DiagramView. Default value is White. 
 
 Following code illustrates how to customize the background of the Off Page:
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -5203,13 +5174,12 @@ Dim diagramView As New DiagramView()
 
 diagramView.OffPageBackground = New SolidColorBrush(Colors.White)
 {% endhighlight  %}
-
 ### Customizing page effect
 
-To customize the page effect, use the PageEffect property of DiagramView. 
+To customize the page effect, use the PageEffect__property of DiagramView. 
 
 Following code illustrates how to customize the page effect:
-{% highlight xml %}
+{% highlight html %}
 [XAML]
 
 
@@ -5299,14 +5269,14 @@ Dragging operation can be performed by
 2. Start dragging the element to the desired location.
 3. Take the finger off from the screen after it is reached to the desired location.
 
-   This dragging gesture is used to perform the following operation. 
+This dragging gesture is used to perform the following operation. 
 
-   ### Drag and Drop from the SymbolPalette
+### Drag and Drop from the SymbolPalette
 
 4. Touch the SymbolPaletteItem for Drag and Drop.
 5. Drag the SymbolPaletteItem and Drop onto DiagramView by touching the finger in DiagramView.
 
-   ### Dragging the Node and LineConnector on DiagramView
+### Dragging the Node and LineConnector on DiagramView
 
 6. Touch the Node or Lineconnector for Dragging.
 7. The selected item can be moved around using your finger.
@@ -5390,44 +5360,45 @@ Using Overview Control in Diagram Control
 
 Follow the steps below to use the Overview control for DiagramControl:
 
-1. Create an instance of DiagramControl.
-    
-   ~~~ xml
+4. Create an instance of DiagramControl.
+{% highlight html %}
+[XAML]
 
 
-		<!-- Diagram Control -->
 
-		        <syncfusion:DiagramControl Name="diagramControl" IsSymbolPaletteEnabled="True">
+<!-- Diagram Control -->
 
-		            <syncfusion:DiagramControl.Model>
+        <syncfusion:DiagramControl Name="diagramControl" IsSymbolPaletteEnabled="True">
 
-		                <syncfusion:DiagramModel x:Name="diagramModel"/>
+            <syncfusion:DiagramControl.Model>
 
-		            </syncfusion:DiagramControl.Model>
+                <syncfusion:DiagramModel x:Name="diagramModel"/>
 
-		            <syncfusion:DiagramControl.View>
+            </syncfusion:DiagramControl.Model>
 
-		                <syncfusion:DiagramView Name="diagramView"/>
+            <syncfusion:DiagramControl.View>
 
-		            </syncfusion:DiagramControl.View>
+                <syncfusion:DiagramView Name="diagramView"/>
 
-		        </syncfusion:DiagramControl>
+            </syncfusion:DiagramControl.View>
 
-   ~~~
-   {:.prettyprint }
+        </syncfusion:DiagramControl>
 
-2. Create an instance of Overview and set the OverviewSourceAncestor property to DiagramControl.
+{% endhighlight %}
 
-   ~~~ xml
+5. Create an instance of Overview and set the OverviewSourceAncestor property to DiagramControl.
+{% highlight html %}
+[XAML]
 
-		<!-- Overview Control -->
 
-		        <shared:Overview Grid.Column="1" OverviewSourceAncestor="{Binding ElementName=diagramView}"/>
 
-		    </Grid>
+<!-- Overview Control -->
 
-   ~~~
-   {:.prettyprint }
+        <shared:Overview Grid.Column="1" OverviewSourceAncestor="{Binding ElementName=diagramView}"/>
+
+    </Grid>
+
+{% endhighlight %}
 
 ![C:/Users/labuser/Desktop/ttt.PNG](Diagram-View_images/Diagram-View_img50.png)
 
@@ -5454,17 +5425,16 @@ Parameters</th><th>
 Type</th><th>
 Return Type</th></tr>
 <tr>
-<td>
-BringIntoCenter</td><td>
-Used to bring the element into the center of the page. </td><td>
-BringIntoCenter(Object pageElement)This method only accepts Node, LineConnector, or Rect type objects.</td><td>
-WPF</td><td>
-Void</td></tr>
+<th>
+BringIntoCenter</th><th>
+Used to bring the element into the center of the page. </th><th>
+BringIntoCenter(Object pageElement)This method only accepts Node, LineConnector, or Rect type objects.</th><th>
+WPF</th><th>
+Void</th></tr>
 </table>
-
 ### Adding BringIntoCenter to an Application 
-
 {% highlight c# %}
+[C#]
 
 DiagramView diagramView=new DiagramView();
 
@@ -5473,9 +5443,9 @@ DiagramView diagramView=new DiagramView();
 diagramView.BringIntoCenter(node);
 
 {% endhighlight %}
-
 {% highlight vbnet %}
 
+[VB]
 
 Dim diagramView As New DiagramView()
 
@@ -5504,16 +5474,18 @@ Parameters</th><th>
 Return Type</th></tr>
 <tr>
 <th>
-BringIntoViewPort</td><td>
-brings the element into the Viewport of the page.</td><td>
-Bring Into ViewPort(Object pageElement)This method accepts the Node and LineConnector type objects.</td><td>
-Void</td></tr>
+BringIntoViewPort</th><th>
+brings the element into the Viewport of the page.</th><th>
+Bring Into ViewPort(Object pageElement)This method accepts the Node and LineConnector type objects.</th><th>
+Void</th></tr>
 </table>
 
 ### Adding BringIntoViewPort to an Application
 
 The BringIntoViewPort method of the DiagramView class is used to bring the object into the Viewport. This method accepts only the parameters of type Node, LineConnector, or Rect.
 {% highlight c# %}
+[C#]
+
 
 
 DiagramView diagramview = new DiagramView();
@@ -5524,6 +5496,8 @@ diagramview.BringIntoViewPort(node);
 
 {% endhighlight %}
 {% highlight vbnet %}
+
+[VB]
 
 Dim diagramview As New DiagramView()
 
@@ -5566,7 +5540,10 @@ This property is available in DiagramView and can be set in the following ways:
 * Through code behind
 
 The following code illustrates how to set the ItemSelectionMode as Single:
-{% highlight xml %}
+{% highlight html %}
+[XAML]
+
+
 
     <!--Diagram Control-->
 
@@ -5597,16 +5574,25 @@ The following code illustrates how to set the ItemSelectionMode as Single:
     </syncfusion:DiagramControl>
 
 
+
 {% endhighlight  %}
 {% highlight c# %}
+
+[C#]
+
 
 
 DiagramView diagramView = new DiagramView();
 
 diagramview.ItemSelectionMode = ItemSelectionMode.Single;
 
+
 {% endhighlight %}
 {% highlight vbnet %}
+
+
+[VB]
+
 
 
 Dim diagramView As New DiagramView()
@@ -5622,7 +5608,9 @@ diagramview.ItemSelectionMode = ItemSelectionMode.Single;
 _ItemSelectionMode is Single_
 
 The following code illustrates how to set the ItemSelectionMode as Multiple:
-{% highlight xml %}
+{% highlight html %}
+[XAML]
+
 
 
     <!--Diagram Control-->
@@ -5662,13 +5650,22 @@ The following code illustrates how to set the ItemSelectionMode as Multiple:
 {% highlight c# %}
 
 
+[C#]
+
+
 
 DiagramView diagramView = new DiagramView();
 
 diagramview.ItemSelectionMode = ItemSelectionMode.Multiple;
 
+
 {% endhighlight  %}
 {% highlight vbnet %}
+
+
+[VB]
+
+
 
 Dim diagramView As New DiagramView()
 
@@ -5683,4625 +5680,4 @@ diagramview.ItemSelectionMode = ItemSelectionMode.Multiple;
 
 
 _ItemSelectionMode is Multiple_
-
-## Context View
-
-A context view is a small view of an entire diagram with a new arrangement, where the small view and the arrangement are based on a particular view of the selected node. It provides three views:
-
-* Successors view—shows all child nodes of the selected node.
-* Predecessors view—displays all parent nodes of the selected node.
-* Neighborhood view—displays the immediate child and parent nodes of the selected node.
-
-### Tables for Properties and Methods
-
-#### Properties
-
-_Properties Table_
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th></tr>
-<tr>
-<td>
-ContextViewMode</td><td>
-This property is used to get or set the context view mode of the context view manager.</td><td>
-Dependency property</td><td>
-ContextViewMode </td></tr>
-<tr>
-<td>
-Layout </td><td>
-This property is used to manage layout information of the context view manager.</td><td>
-CLR property</td><td>
-ILayout</td></tr>
-<tr>
-<td>
-SourceControl</td><td>
-This property is used to get a Diagram control to be a source of the context view manager.</td><td>
-CLR property</td><td>
-DiagramControl</td></tr>
-<tr>
-<td>
-TargetControl</td><td>
-This property is used to get a Diagram control to be a target of the context view manager.</td><td>
-CLR property</td><td>
-DiagramControl</td></tr>
-</table>
-
-
-Methods
-
-_Methods Table_
-
-<table>
-<tr>
-<th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Type </th></tr>
-<tr>
-<td>
-public ContextViewManager(DiagramControl source, DiagramControl target)</td><td>
-Constructor of the context view manager.</td><td>
-source—a Diagram control in which selection changes will be monitored.target—a Diagram control to which a new diagram will be created based on the selected node and the context view chosen.</td><td>
-In WPF </td	></tr>
-<tr>
-<td>
-RefreshLayout</td><td>
-This method is used to update the layout. It will be called automatically and can also be forced to be updated.</td><td>
-NA</td><td>
-In WPF</td></tr>
-</table>
-
-### Adding ContextViewManager to an Application
-
-ContextViewManager is a class that helps to communicate between a source diagram and a target diagram.
-
-* Source—it is a Diagram control in which selection changes will be monitored.
-* Target—it is a Diagram control to which a new diagram will be created based on the selected node and the context view chosen.  
-
-Steps to create ContextViewManager
-
-1. Create a Diagram control to be used as a target to show the context view of another Diagram control.
-   
-   ~~~ xml
-   
-		[XAML]
-
-		<syncfusion:DiagramControl  Height="235" Width="250"  Name="targetDiagramControl">
-
-		<syncfusion:DiagramControl.Model>
-
-		<syncfusion:DiagramModel x:Name="targetDiagramModel"/>
-
-		</syncfusion:DiagramControl.Model>
-
-		<syncfusion:DiagramControl.View>
-
-		<syncfusion:DiagramView EnableFitToPage="True" Name="targetDiagramView"/>
-
-		</syncfusion:DiagramControl.View>
-
-		</syncfusion:DiagramControl>
-
-
-   ~~~
-   {:.prettyprint }
-
-
-2. Create another Diagram control to be used as a source.
-3. Create a ContextViewManager instance to synchronize the source and target diagrams.
-
-   ~~~ cs
-
-   		// Create ContextViewManager to attach the source and target diagrams.
-
-		ContextViewManager ContextView = new ContextViewManager(source, target);
-
-		//Set ContextViewMode as Predecessors.
-
-			   ContextView.ContextViewMode =ContextViewMode.Predecessors;
-
-		// Create a layout for ContextView.
-
-		DirectedTreeLayout layout = new DirectedTreeLayout(diagramModel,diagramView);
-
-		diagramModel.HorizontalSpacing = 10;
-
-		diagramModel.VerticalSpacing = 80;
-
-		diagramModel.SpaceBetweenSubTrees = 10;
-
-		// Set the layout of the ContextView.
-
-		ContextView.Layout = layout;
-
-   ~~~
-   {:.prettyprint }
-
-
-   ~~~ vbnet
-
-  		' Create ContextViewManager to attach source and target diagrams.
-
-		Dim ContextView As New ContextViewManager(source, target)
-
-		'Set ContextViewMode as Predecessors.
-
-		ContextView.ContextViewMode =ContextViewMode.Predecessors
-
-		' Create a layout for ContextView.
-
-		Dim layout As New DirectedTreeLayout(diagramModel,diagramView)
-
-		diagramModel.HorizontalSpacing = 10
-
-		diagramModel.VerticalSpacing = 80
-
-		diagramModel.SpaceBetweenSubTrees = 10
-
-		' Set the layout of the ContextView.
-
-		ContextView.Layout = layout
-
-   ~~~
-   {:.prettyprint }
-
-## Creating Different Views in the ContextViewManager
-
-ContextViewManager can be used to choose any one of the three different views. The nodes and connection will be created based on the view chosen.
-
-1. Predecessors View: The predecessors view is used to display all hierarchical parent nodes of the selected node in a layout manner. 
-2. Successors View: The successor view displays all the hierarchical child nodes of the selected node.
-3. Neighborhood View: This view will be used to show immediate child and parent nodes of the selected node.
-
-The following code example explains how to choose the predecessors view
-
-{% highlight vbnet %}
-
-‘Create ContextViewManager to attach source and target diagrams.
-
-Dim ContextView As New ContextViewManager(source, target)
-
-'Set ContextViewMode as Predecessors.
-
-ContextView.ContextViewMode =ContextViewMode.Predecessors
-
-{% endhighlight  %}
-
-![](Diagram-View_images/Diagram-View_img53.png)
-
-
-
-_Context View_
-
-> Note: By default, the context view manager will show the neighborhood view.
-
-## SymbolPalette
-
-The SymbolPalette control displays node shapes and allows you to drag and drop symbols onto diagrams. It supports grouping and filtering symbols. It allows you to classify items as groups so they can be navigated easily. Also, custom shapes can be added to the SymbolPalette.
-
-
-
-Methods for SymbolGroups in SymbolPalette
-
-_Methods Table_
-
-<table>
-<tr>
-<th>
-Name</th><th>
-Parameters</th><th>
-Return Type</th><th>
-Description</th><th>
-Reference Links</th></tr>
-<tr>
-<td>
-Add(SymbolPaletteGroup)</td><td>
-SymbolPaletteGroup</td><td>
-Void</td><td>
-Adds the SymbolPaletteGroup to the SymbolPalette.</td><td>
-Symbol Groups</td></tr>
-<tr>
-<td>
-Remove(SymbolPaletteGroup)</td><td>
-SymbolPaletteGroup</td><td>
-Void</td><td>
-Removes the SymbolPaletteGroup from SymbolPalette.</td><td>
-Symbol Groups</td></tr>
-<tr>
-<td>
-RemoveAt(int)</td><td>
-Int</td><td>
-Void</td><td>
-Removes the SymbolPaletteGroup from SymbolPalette at the given index.</td><td>
-Symbol Groups</td></tr>
-<tr>
-<td>
-Clear()</td><td>
-Null</td><td>
-Void</td><td>
-Clears all the SymbolPaletteGroups from the SymbolPalette.</td><td>
-Symbol Groups</td></tr>
-</table>
-
-
-Methods for SymbolFilters in SymbolPalette
-
-_Methods Table_
-
-<table>
-<tr>
-<th>
-Name</th><th>
-Parameters</th><th>
-Return Type</th><th>
-Description</th><th>
-Reference Links</th></tr>
-<tr>
-<td>
-Add(SymbolPaletteFilter)</td><td>
-SymbolPaletteFilter</td><td>
-Void</td><td>
-Adds the SymbolPaletteFilter to the SymbolPalette.</td><td>
-Symbol Filters</td></tr>
-<tr>
-<td>
-Remove(SymbolPaletteFilter)</td><td>
-SymbolPaletteFilter </td><td>
-Void</td><td>
-Removes the SymbolPaletteFilter from SymbolPalette.</td><td>
-Symbol Filters</td></tr>
-<tr>
-<td>
-RemoveAt(int)</td><td>
-Int</td><td>
-Void</td><td>
-Removes the SymbolPaletteFilter from SymbolPalette at the given index.</td><td>
-Symbol Filters_Symbol_Groups</td></tr>
-<tr>
-<td>
-Clear()</td><td>
-Null</td><td>
-Void</td><td>
-Clears all the SymbolPaletteFilter from the SymbolPalette.</td><td>
-Symbol Filters</td></tr>
-</table>
-
-### Enable/Disable SymbolPalette
-
-The SymbolPalette can be displayed by setting the IsSymbolPaletteEnabled property to True. By default, this property is disabled.
-
-The following code can be used to enable the SymbolPalette.
-
-{% highlight xml %}
-[XAML]
-
-
-
-<Window x:Class="WpfApplication1.Window1" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="EssentialDiagramWPF" Height="400" Width="600"
-
-xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Diagram.WPF" xmlns:local="clr-namespace:WpfApplication1">
-
-    <Grid Name="diagramgrid">
-
-        <sfdiagram:DiagramControl IsSymbolPaletteEnabled="True">
-
-        </sfdiagram:DiagramControl>
-
-    </Grid>
-
-</Window>
-
-{% endhighlight %}
-{% highlight c# %}
-
-DiagramControl diagramcontrol = new DiagramControl();
-
-diagramcontrol.IsSymbolPaletteEnabled = true;
-
-{% endhighlight %}
-{% highlight vbnet %}
-
-
-Dim diagramcontrol As New DiagramControl()
-
-diagramcontrol.IsSymbolPaletteEnabled = True
-
-{% endhighlight %}
-
-![](Diagram-View_images/Diagram-View_img54.jpeg)
-
-
-
-_SymbolPalette_
-
-### Preview for Symbol Palette Item
-
-Essential Diagram for WPF provides preview support for Symbol Palette. When you drag an item from Symbol Palette to Diagram View, Preview of the dragged item will be displayed. You can enable or disable the preview support. You can also customize the preview.  
-
-
-
-#### Use Case Scenario
-
-This feature displays a preview of the item you drag from Symbol Palette, thus enables you to identify the item you are dragging from the symbol palette to Diagram view.
-
-Properties
-
-_Property Table_
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-ShowPreview</td><td>
-Gets or sets a value indicating whether preview is enabled.The default value is true.</td><td>
-Dependency property</td><td>
-Boolean </td><td>
-NA</td></tr>
-<tr>
-<td>
-PreviewBrush</td><td>
-Gets or sets a value for preview content.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-NA</td></tr>
-</table>
-
-
-#### Enabling Preview Support
-
-To enable preview for the dragged item from Symbol Palette, set the ShowPreview property of SymbolPalette to true. To disable preview set this to false. By default this is set to true.  
-
-Following code example illustrates how to enable preview support:  
-{% highlight c# %}
-
-      DiagramControl diagramControl1 = new DiagramControl();
-
-diagramControl1.SymbolPalette.ShowPreview = true;
-
-
-{% endhighlight %}
-{% highlight vbnet %}
-
-       Dim diagramControl1 As New DiagramControl()
-
-      diagramControl1.SymbolPalette.ShowPreview = true
-
-{% endhighlight %}
-
-![Description: C:/Users/jeganr/Desktop/New Images/New Images/Preview.png](Diagram-View_images/Diagram-View_img55.png)
-
-
-
-_Preview of Dragged Item_
-
-Change the preview content using PreviewBrush
-
-You can customize the preview content using the PreviewBrush property of SymbolPaletteItem. Following code example illustrates how to customize preview content: 
-{% highlight c# %}
-
-       DiagramControl diagramControl1 = new DiagramControl();
-
-      (diagramControl1.SymbolPalette.SymbolGroups[0].Items[0] as    SymbolPaletteItem).PreviewBrush = Brushes.CornflowerBlue;
-
-
-
-{% endhighlight %}
-{% highlight vbnet %}
-
-       Dim diagramControl1 As New DiagramControl()
-
-TryCast(diagramControl1.SymbolPalette.SymbolGroups(0).Items(0),  SymbolPaletteItem).PreviewBrush = Brushes.CornflowerBlue
-
-
-{% endhighlight  %}
-
-
-![Description: C:/Users/jeganr/Desktop/New Images/New Images/PreviewBrush.png](Diagram-View_images/Diagram-View_img56.png)
-
-
-
-_Customized Preview Content_
-
-### Symbol Filters
-
-A SymbolPalette filter can be added to the SymbolPalette control, using the SymbolFilters property, so that only desired SymbolPalette groups get displayed. The SetFilterIndexes property is used to specify the index value of the filters for which the group is to be displayed. The filter names are specified integer values, with the first filter index starting from 0. Based on the filter indexes specified for that particular group, the visibility of the group is controlled. So the group gets displayed only when any of the specified filter names are selected.
-
-The following lines of code can be used to specify the SymbolPalette filter of the SymbolPalette Group.
-
-{% highlight c# %}
-
-SymbolPaletteFilter sfilter = new SymbolPaletteFilter();
-
-sfilter.Label = "Custom";
-
-dc.SymbolPalette.SymbolFilters.Add(sfilter);
-
-SymbolPaletteGroup group = new SymbolPaletteGroup();
-
-group.Label = "Custom";
-
-SymbolPalette.SetFilterIndexes(group, new Int32Collection(new int[] { 0, 6 }));
-
-dc.SymbolPalette.SymbolGroups.Add(s);
-
-{% endhighlight %}
-{% highlight vbnet %}
-
-
-Dim sfilter As New SymbolPaletteFilter()
-
-sfilter.Label = "Custom"
-
-dc.SymbolPalette.SymbolFilters.Add(sfilter)
-
-Dim group As New SymbolPaletteGroup()
-
-group.Label = "Custom"
-
-SymbolPalette.SetFilterIndexes(group, New Int32Collection(New Integer() { 0, 6 }))
-
-dc.SymbolPalette.SymbolGroups.Add(s)
-
-
-{% endhighlight %}
-This adds a new empty group named "Custom" and creates a filter for it.
-
-![](Diagram-View_images/Diagram-View_img57.jpeg)
-
-
-
-_SymbolPalette Filter_
-
-The SetFilterIndexes property specifies the index value for the group as 0,4 which implies that this group should be displayed when the filter index is 0 ("All") or 4 ("Custom").
-
-Remove SymbolPaletteFilters
-
-Like SymbolPaletteGroups, the SymbolPaletteFilters are also indexed from 0. The index 0 refers to the filter All. The index 1 refers to the filter Shapes and so on. The following table lists the filters with their index numbers.
-
-_File Extention_
-
-<table>
-<tr>
-<th>
-Filter name</th><th>
-Index</th></tr>
-<tr>
-<td>
-All</td><td>
-0</td></tr>
-<tr>
-<td>
-Shapes</td><td>
-1</td></tr>
-<tr>
-<td>
-Connectors</td><td>
-2</td></tr>
-<tr>
-<td>
-Flowchart</td><td>
-3</td></tr>
-<tr>
-<td>
-Custom Shapes</td><td>
-4</td></tr>
-<tr>
-<td>
-Electrical Shapes</td><td>
-5</td></tr>
-</table>
-
-
-a) Removing filters and groups named Shapes, Custom Shapes and Electrical Shapes
-
-Use the following code to remove the filters and groups named Shapes, Custom Shapes and Electrical Shapes:
-{% highlight c# %}
-
-DiagramControl diagramControl = new DiagramControl();
-
-diagramControl.SymbolPalette.SymbolGroups.Remove(diagramControl.SymbolPalette.SymbolGroups[4]);
-
-diagramControl.SymbolPalette.SymbolGroups.Remove(diagramControl.SymbolPalette.SymbolGroups[3]);
-
-diagramControl.SymbolPalette.SymbolGroups.Remove(diagramControl.SymbolPalette.SymbolGroups[0]);
-
-
-
-diagramControl.SymbolPalette.SymbolFilters.Remove(diagramControl.SymbolPalette.SymbolFilters[5]);
-
-diagramControl.SymbolPalette.SymbolFilters.Remove(diagramControl.SymbolPalette.SymbolFilters[4]);
-
-diagramControl.SymbolPalette.SymbolFilters.Remove(diagramControl.SymbolPalette.SymbolFilters[1]);
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-Dim diagramControl As New DiagramControl()
-
-diagramControl.SymbolPalette.SymbolGroups.Remove(diagramControl.SymbolPalette.SymbolGroups(4))
-
-diagramControl.SymbolPalette.SymbolGroups.Remove(diagramControl.SymbolPalette.SymbolGroups(3))
-
-diagramControl.SymbolPalette.SymbolGroups.Remove(diagramControl.SymbolPalette.SymbolGroups(0))
-
-
-
-diagramControl.SymbolPalette.SymbolFilters.Remove(diagramControl.SymbolPalette.SymbolFilters(5))
-
-diagramControl.SymbolPalette.SymbolFilters.Remove(diagramControl.SymbolPalette.SymbolFilters(4))
-
-diagramControl.SymbolPalette.SymbolFilters.Remove(diagramControl.SymbolPalette.SymbolFilters(1))
-
-{% endhighlight  %}
-
-Run the application. The following output is displayed and the groups and filters are removed.
-
-
-
-![](Diagram-View_images/Diagram-View_img58.jpeg)
-
-
-
-_Palette with Groups and Filters removed_
-
-### Symbol Groups
-
-A SymbolPalettegroup is a collection of SymbolPalette items. It is used to group the items in the SymbolPalette control based on classifications provided. The SymbolPalette group can be added to the SymbolPalette using the SymbolGroups property.  The filter index for the new groups should always start from 6 as the first five indices are predefined for the existing groups.
-
-Use the following code to add a group to SymbolPalette:
-{% highlight c# %}
-[C#]
-
-SymbolPaletteGroup s = new SymbolPaletteGroup();
-
-s.Label = "Custom";
-
-SymbolPalette.SetFilterIndexes(s, new Int32Collection(new int[] { 0, 6 }));
-
-diagramControl.SymbolPalette.SymbolGroups.Add(s);
-
-
-{% endhighlight %}
-{% highlight vbnet %}
-
-
-Dim s As New SymbolPaletteGroup()
-
-s.Label = "Custom"
-
-SymbolPalette.SetFilterIndexes(s, New Int32Collection(New Integer() { 0, 6 }))
-
-diagramControl.SymbolPalette.SymbolGroups.Add(s)
-
-
-{% endhighlight %}
-
-
-Run the application. A new empty group named Custom is added to the SymbolPalette.
-
-Remove SymbolPaletteGroups
-
-The SymbolPaletteGroups are indexed from 0. Therefore, the group with name Shapes is indexed as 0, the group with name Connectors is indexed as 1 and so on. The groups can be removed using their corresponding index values. The following table lists the groups with their index numbers.
-
-_Symbol Palette Groups index value_
-
-<table>
-<tr>
-<th>
-Group Name</th><th>
-Index</th></tr>
-<tr>
-<td>
-Shapes</td><td>
-0</td></tr>
-<tr>
-<td>
-Connectors</td><td>
-1</td></tr>
-<tr>
-<td>
-Flowchart</td><td>
-2</td></tr>
-<tr>
-<td>
-Custom Shapes</td><td>
-3</td></tr>
-<tr>
-<td>
-Electrical Shapes</td><td>
-4</td></tr>
-</table>
-
-
-a) Removing filter and group named Electrical Shapes and refreshing the Filters
-
-Use the following code to remove the filter and group named Electrical Shapes:
-{% highlight c# %}
-
-DiagramControl diagramControl = new DiagramControl();
-
-diagramControl.SymbolPalette.SymbolGroups.Remove(diagramControl.SymbolPalette.SymbolGroups[4]);
-
-
-
-diagramControl.SymbolPalette.SymbolFilters.Remove(diagramControl.SymbolPalette.SymbolFilters[5]);
-
-
-
-//Refreshing the filters
-
-foreach (SymbolPaletteGroup group in diagramControl.SymbolPalette.SymbolGroups)
-
-            {
-
-                Int32Collection indices = SymbolPalette.GetFilterIndexes(group);
-
-                if (indices.Contains(5))
-
-                {
-
-                    indices.Remove(5);
-
-                    SymbolPalette.SetFilterIndexes(group, indices);
-
-
-
-                }
-
-                if (indices.Contains(6))
-
-                {
-
-                    indices.Remove(6);
-
-                    indices.Add(5);
-
-
-
-                    SymbolPalette.SetFilterIndexes(group, indices);
-
-                }
-
-
-
-            }
-
-
-{% endhighlight  %}
-
-{% highlight vbnet %}
-
-
-Dim diagramControl As New DiagramControl()
-
-diagramControl.SymbolPalette.SymbolGroups.Remove(diagramControl.SymbolPalette.SymbolGroups(4))
-
-
-
-diagramControl.SymbolPalette.SymbolFilters.Remove(diagramControl.SymbolPalette.SymbolFilters(5))
-
-
-
-'Refreshing the filters
-
-For Each group As SymbolPaletteGroup In diagramControl.SymbolPalette.SymbolGroups
-
-        Dim indices As Int32Collection = SymbolPalette.GetFilterIndexes(Group)
-
-If indices.Contains(5) Then
-
-indices.Remove(5)
-
-SymbolPalette.SetFilterIndexes(group, indices)
-
-End If
-
-
-
-If indices.Contains(6) Then
-
-indices.Remove(6)
-
-indices.Add(5)
-
-SymbolPalette.SetFilterIndexes(group, indices)
-
-End If
-
-Next group
-
-{% endhighlight %}
-
-Run the application. The following output is displayed and the groups and filters are removed.
-
-
-
-![](Diagram-View_images/Diagram-View_img59.png)
-
-
-
-_Palette with Groups and Filters removed_
-
-> Note: Whenever a filter is removed the group containing the next filter index must be decremented by one to get the proper output as mentioned in the above code snippet.
-
-b) Removing all the groups from the palette
-
-To remove all the groups from the palette, the Clear method can be used. The following code illustrates the usage of Clear method.
-{% highlight c# %}
-[C#]
-
-
-
-DiagramControl diagramControl = new DiagramControl();
-
-diagramControl.SymbolPalette.SymbolGroups.Clear();
-
-
-{% endhighlight %}
-{% highlight vbnet %}
-[VB]
-
-
-
-Dim diagramControl As New DiagramControl()
-
-diagramControl.SymbolPalette.SymbolGroups.Clear()
-
-{% endhighlight %}
-
-Run the application. All the groups are removed from the SymbolPalette.
-
-### Symbol Designer
-
-Symbol Designer application allows you to create new palettes with symbols, and also modify the existing palettes. You can use these palettes in your applications, and also in the Diagram Builder. 
-
-
-
-Software Path
-
-..\..\Syncfusion\Essential Studio\<Version Number>\utilities\Diagram WPF\Symbol Designer
-
-(or)
-
-Start Menu > All Programs > Syncfusion > Utilities > Diagram > WPF > Symbol Designer
-
-
-
-Creating SymbolPaletteItem
-
-To create your own custom symbols in the symbol designer, follow the procedure given below:
-
-1. Open the Symbol Designer tool which is available in the software path given above.
-2. If you want to create a new symbol, select New option in the File menu. Type a name for the palette as shown in the below sample and click OK.
-
-   ![](Diagram-View_images/Diagram-View_img60.png)
-
-
-
-   _New Symbol PaletteItem Dialog Box_
-
-3. A new symbol palette is created with the given name after which, you can design your own symbol.
-
-   ![](Diagram-View_images/Diagram-View_img61.png)
-
-
-
-   _Flow Diagram Symbol Palette_
-
-4. Draw the desired shapes using drawing tool in the work area.
-
-   ![](Diagram-View_images/Diagram-View_img62.png)
-
-
-
-    _Symbol_
-
-    The Shape of the SymbolPaletteItem can be customized further using format tab in Symbol Designer: 
-
-	* Background
-	* Outline
-	* Dash array
-	* Shadow
-	* Softedges
-	* Glow visual effect
-
-	The node label can also be customized.
-
-	![](Diagram-View_images/Diagram-View_img63.png)
-
-
-
-   _Format tab_
-
-5. After creating required symbols, we have to save this symbol into the symbol palette. Go to the File menu and click Save. A Save SymbolPaletteGroup dialog will appear as in the following screen shot.
-
-   ![](Diagram-View_images/Diagram-View_img64.png)
-
-
-
-   _Save SymbolPalette Group Dialog_
-
-6. Give a relevant file name for the palette and click Save. As the PaletteGroup is saved, preview of the symbol will be shown in Symbol Palette.
-
-   ![](Diagram-View_images/Diagram-View_img65.png)
-
-
-
-   _Symbol Palette With New Symbol_
-
-7. Repeat the steps 3 to 7 for creating more symbols.
-
-   ![](Diagram-View_images/Diagram-View_img66.png)
-
-
-
-   _Symbol pallet with PART_Triangle_
-
-   ![](Diagram-View_images/Diagram-View_img67.png)
-
-
-
-
-
-   ![](Diagram-View_images/Diagram-View_img68.png)
-
-
-
-   _Different Symbols_
-
-8. If you create symbols using more than one shape, you need to group all the shapes into a single symbol using the Group option in Symbol Designer.
-9. Finally, Save the NewSymbol Group. Now the above symbols will be available in the SymbolPaletteGroup. The saved SymbolPaletteGroup can be loaded back later.
-
-### SymbolPalette Item
-
-SymbolPaletteitems are contained in the SymbolPalette group. A SymbolPalette item does not restrict users to the type of content that can be added to it. A SymbolPalette item can be a text box, combo box, image, button, and so on.
-
-The Name property of the SymbolPaletteItem can be used to refer to the custom item being added in the NodeDrop event. The name of the SymbolPaletteItem becomes the name of the node.
-
-The following code example can be used to add a SymbolPalette item that has an image as its content. 
-{% highlight c# %}
-[C#]
-
-
-
-SymbolPaletteGroup group = new SymbolPaletteGroup();
-
-group.Label = "Custom";
-
-SymbolPalette.SetFilterIndexes(group, new Int32Collection(new int[] { 0, 6 }));
-
-dc.SymbolPalette.SymbolGroups.Add(group);
-
-SymbolPaletteItem item = new SymbolPaletteItem();
-
-Image i = new Image();
-
-BitmapImage bi3 = new BitmapImage();
-
-bi3.BeginInit();
-
-bi3.UriSource = new Uri("Custom.png", UriKind.RelativeOrAbsolute);
-
-bi3.EndInit();
-
-i.Stretch = Stretch.Fill;
-
-i.Source = bi3;
-
-item.Content = i;
-
-group.Items.Add(item);
-
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-
-[VB]
-
-
-
-Dim group As New SymbolPaletteGroup()
-
-group.Label = "Custom"
-
-SymbolPalette.SetFilterIndexes(group, New Int32Collection(New Integer() { 0, 6 }))
-
-dc.SymbolPalette.SymbolGroups.Add(group)
-
-Dim item As New SymbolPaletteItem()
-
-Dim i As New Image()
-
-Dim bi3 As New BitmapImage()
-
-bi3.BeginInit()
-
-bi3.UriSource = New Uri("Custom.png", UriKind.RelativeOrAbsolute)
-
-bi3.EndInit()
-
-i.Stretch = Stretch.Fill
-
-i.Source = bi3
-
-item.Content = i
-
-group.Items.Add(item)
-
-
-{% endhighlight  %}
-
-
-This adds the image content to the newly created SymbolPaletteitem that belongs to the SymbolPalettegroup named "Custom".
-
-![](Diagram-View_images/Diagram-View_img69.jpeg)
-
-
-
-_Custom Group and Item_
-
-#### Create SymbolPaletteItem
-
-You can create SymbolPaletteItem in two methods. They are:
-
-* Using Symbol Designer
-* Using Microsoft Expression Blend 4
-
- Using Symbol Design 
-
-To create SymbolPaletteItem using Symbol Designer, refer to the Symbol Designer section. 
-
-Using Microsoft Expression Blend 4
-
-Essential Diagram provides an add-on for creating SymbolPaletteItem’s content. You can also export the created content as SymbolPaletteItem using this add on.  The exported content can be imported into the diagram control for later.
-
-To enable this you need to add the Syncfusion.Diagram.SymbolExporter.dll in the Extension folder.
-
-When Micorsoft Expression Blend is installed before installing Essential Studio, the exporter assembly will automatically be placed in the Extensions folder. 
-
-When Microsoft Expression Blend is installed after installing Essential Studio, then you need to run the SyncfusionExpressionBlendAddin exe, to place assembly in the correct location.
-
-The SyncfusionExpressionBlendAddin exe is available in the following location:
-
-[$Essential Studio]\[$Current Version]\Utilities\Diagram\WPF
-
-Or you can also place the assembly manually in the following location:
-
-_{$Microsoft Expression]\Blend 4\Extensions_
-
-_Note: currently exporter support is available only for the Blend 4  stable release(4.0.20525.0) and Blend 4 service packs 1 (version 4.0.20901.0)._
-
-To Create SymbolPaletteItem Content  
-
-1. Create a symbol that has to be exported.
-2. Select the element that has to be exported as a SymbolPaletteItem.
-3. The Name property has to be provided for the element that has to be exported as the symbol content.
-4. The selected SymbolPalette content will be exported as a XAML file using the add-on.
-5. The exported XAML file can be imported in the DiagramControl as SymbolPaletteItem.
-
-   The following are the steps to create a SymbolPaletteItem and import symbols from Blend:
-
-6. Create a WPF application.
-
-
-
-   ![](Diagram-View_images/Diagram-View_img70.png)
-
-
-
-   _New Project_
-
-7. Design the content as required.
-
-   ![](Diagram-View_images/Diagram-View_img71.png)
-
-
-
-   _Design Content_
-
-8. Select the part of the element, which you want to export as symbol content. You can also select this from the Object and Timeline. 
-
-   > Note: The selected part will act as the parent element, name the element as desired.
-
-9. Specify the Name property for parent element.
-
-   > Note: This name property is required for serialization. So this property cannot be set to null.
-
-10. Click Window option in the blend menu.11. Select the Syncfusion Symbol Exporter add-on. 12. A popup window will be displayed. You can dock this within the blend as shown in following screenshot:</td></tr>
-
-
-    ![](Diagram-View_images/Diagram-View_img72.png)
-
-    _Syncfusion Symbol Exporter_
-
-    ![Description: C:/Users/sundarm/Desktop/obj.PNG](Diagram-View_images/Diagram-View_img73.png)
-
-
-
-    _Object and Timeline Window_
-
-13. Click Export.
-14. The Save SymbolPaletteItem dialog opens.
-15. Name the file and save this as XAML file in the desired location.
-
-    ![](Diagram-View_images/Diagram-View_img74.png)
-
-
-
-    _Save Dialog Box_
-
-16. The selected part will be exported as the SymbolPalleteItem content.
-
-The exported file can be imported in SymbolPalette. To import symbols from XAML file, refer to the SymbolPaletteSerialization. 
-
-####  Define Node, Port, Group definitions in SymbolPalette
-
-The following steps demonstrate how to specify a Node or Node with Ports in SymbolPaletteItem:
-
-1. To add more than one port, a node is created.
-2. Then several ports are added to it.
-3. Create a SymbolPaletteItem and add the node as content for the SymbolPaletteItem.
-
-At runtime, Nodes that are added in SymbolPalette can be dragged and dropped on the page. All the ports, and their properties will be cloned and a new copy of the node will be created.
-
-![C:/Users/riaj/Desktop/Ports.PNG](Diagram-View_images/Diagram-View_img75.png)
-
-
-
-_Node with several Ports_
-
-
-
-To create a new Node
-{% highlight c# %}
-Node node = new Node();
-
-            node.Width = 100;
-
-            node.Height = 100;
-
-            node.OffsetX = 200;
-
-            node.OffsetY = 200;
-
-            node.Background = new SolidColorBrush(Colors.Aqua);
-
-            AddMorePorts(node);
-
-
-
-
-
-To add more Ports
-
-private void AddMorePorts(Node node)
-
-        {
-
-            Left=10;
-
-            Top=10;
-
-            for (int i = 0; i < 4; i++)
-
-            {
-
-                ConnectionPort port = new ConnectionPort();
-
-                port.Left = Left;
-
-                port.Top = Top;
-
-                port.Node = node;
-
-                node.Ports.Add(port);
-
-                Left += 10;
-
-                Top += 10;
-
-            }
-
-        }
-
-
-
-{% endhighlight %}
-
-Creating Groups and SymbolPaletteItems
-{% highlight c# %}
-[C#]
-
-
-
-SymbolPaletteGroup group = new SymbolPaletteGroup();
-
-group.Label = "Custom";
-
-SymbolPalette.SetFilterIndexes(group, new List<int>()[] { 0, 6 }));
-
-dc.SymbolPalette.SymbolGroups.Add(group);
-
-SymbolPaletteItem item = new SymbolPaletteItem(); 
-
-// Node added as SymbolPaletteItem's Content
-
-item.Content = node ;
-
-group.Items.Add(item);
-
-
-{% endhighlight  %}
-
-
-Define Group definition in SymbolPalette
-
-The groups can be given as SymbolPaletteItem’s content. At runtime, they can be Dragged and Dropped to create a clone of the group and its children will be added on the page.
-
-
-
-![](Diagram-View_images/Diagram-View_img76.png)
-
-
-
-_To Drag and Drop Groups_
-
-To create new Node and Groups
-{% highlight c# %}
-[C#]
-
-
-
-public DiagramControl Control;
-
-public DiagramModel Model;
-
-public DiagramView View;
-
-public Window1 ()
-
-{
-
-    Control = new DiagramControl ();
-
-    Model = new DiagramModel ();
-
-    View = new DiagramView ();
-
-    Control.View = View;
-
-    Control.Model = Model;
-
-    View.Bounds = new Thickness(0, 0, 1000, 1000);
-
-
-
-    Node n = new Node(Guid.NewGuid(), "Start");
-
-    n.Shape = Shapes.FlowChart_Card;
-
-    n.Level = 1;
-
-    n.OffsetX = 150;
-
-    n.OffsetY = 25;
-
-    n.Width = 150;
-
-    n.Height = 75;
-
-    Node n1 = new Node(Guid.NewGuid(), "End");
-
-    n1.Shape = Shapes.RoundedRectangle;
-
-    n1.Level = 1;
-
-    n1.OffsetX = 350;
-
-    n1.OffsetY = 325;
-
-    n1.Width = 100;
-
-    n1.Height = 75;
-
-    Model.Nodes.Add(n);
-
-    Model.Nodes.Add(n1);
-
-
-
-    Group g = new Group(Guid.NewGuid(), "group1");
-
-    g.AddChild(n);
-
-    g.AddChild(n1);
-
-    Model.Nodes.Add(g);
-
-}
-
-{% endhighlight %}
-
-To create new SymbolPalette Group and Item
-{% highlight c# %}
-[C#]
-
-
-
-SymbolPaletteGroup group = new SymbolPaletteGroup();
-
-group.Label = "Custom";
-
-SymbolPalette.SetFilterIndexes(group, new List<int> ()[] { 0, 6 }));
-
-dc.SymbolPalette.SymbolGroups.Add(group);
-
-SymbolPaletteItem item = new SymbolPaletteItem(); 
-
-// Group added as SymbolPaletteItem's Content
-
-item.Content = g ;
-
-group.Items.Add(item);
-
-
-{% endhighlight %}
-
-
-Adding Through SymbolPalette
-
-## Customize the SymbolPalette
-
-The appearance of the SymbolPalette can be customized to suit any application. Several properties have been provided in the SymbolPalette class to enable its customization.
-
-The following properties can be used to customize the SymbolPalette in your application.
-
-_Property Table_
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type of the property</th><th>
-Value it accepts</th><th>
-Any other dependencies/ sub properties associated</th></tr>
-<tr>
-<td>
-Background</td><td>
-Specifies the background color of the SymbolPalette.The default color is Beige.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-BorderThickness</td><td>
-Gets or sets the border thickness of the SymbolPalette.The default value is 1.</td><td>
-Dependency property</td><td>
-Thickness</td><td>
-No</td></tr>
-<tr>
-<td>
-BorderBrush</td><td>
-Specifies the border color of the SymbolPalette.The default color is Brown.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-SymbolPaletteGroupBackground</td><td>
-Specifies the background color of the SymbolPalette Group.The default color is Bisque.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-SymbolPaletteGroupForeground</td><td>
-Specifies the foreground color of the SymbolPalette Group.The default color is SaddleBrown_._</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-SymbolPaletteGroupBorderBrush</td><td>
-Specifies the border color of the SymbolPalette Group.The default color is Chocolate_._</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-ItemBorderThickness</td><td>
-Gets or sets the border thickness of the SymbolPalette Item.The default value is 1.</td><td>
-Dependency property</td><td>
-Thickness</td><td>
-No</td></tr>
-<tr>
-<td>
-ItemCornerRadius</td><td>
-Gets or sets the corner radius of the SymbolPalette Item.The default value is 2.</td><td>
-Dependency property</td><td>
-CornerRadius</td><td>
-No</td></tr>
-<tr>
-<td>
-ItemMouseOverBorderBrush</td><td>
-Specifies the border color of the SymbolPalette Item over which the mouse pointer rests.The default value is Orange.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-ItemCheckedBorderBrush</td><td>
-Specifies the border color of the SymbolPalette Item that is selected.The default value is Red.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-ItemCheckedMouseOverBorderBrush</td><td>
-Specifies the border color of the selected SymbolPalette Item over which the mouse pointer rests.The default value is Green.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-FilterSelectorBackground</td><td>
-Specifies the background color of the SymbolPalette Filter.The default value is Chocolate.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-FilterSelectorForeground</td><td>
-Specifies the foreground color of the SymbolPalette Filter.The default value is DarkSlateGray.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-FilterSelectorBorderThickness</td><td>
-Gets or sets the border thickness of the SymbolPalette Filter.The default value is (0,0,0,1).</td><td>
-Dependency property</td><td>
-Thickness</td><td>
-No</td></tr>
-<tr>
-<td>
-FilterSelectorMouseOverForeground</td><td>
-Specifies the foreground color of the SymbolPalette Filter over which the mouse pointer rests.The default value is OldLace.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-FilterSelectorBorderBrush</td><td>
-specifies the border color of the SymbolPalette FilterThe default value is Chocolate.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-PopUpBackground</td><td>
-Specifies the background color of the SymbolPalette Pop-up.The default value is WhiteSmoke.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-PopUpForeground</td><td>
-Specifies the foreground color of the SymbolPalette Pop-up.The default value is DarkSlateGray.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-PopUpBorderThickness</td><td>
-Gets or sets the border thickness of the SymbolPalette Pop-upThe default value is (0,1,1,1).</td><td>
-Dependency property</td><td>
-Thickness</td><td>
-No</td></tr>
-<tr>
-<td>
-PopUpMouseOverBrush</td><td>
-Specifies the background color of the SymbolPalette pop-up Item over which the mouse pointer rests.The default value is LightSalmon.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-PopUpBorderBrush</td><td>
-Specifies the border color of the SymbolPalette pop-up.The default value is Chocolate.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-PopUpLeftColumnBackground</td><td>
-Specifies the background color of the Check Box Column in the SymbolPalette pop-up.The default value is LightGray.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-CheckerBackground</td><td>
-Specifies the the background color of the Check Boxes in the SymbolPalette pop-up.The default value is Bisque.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-CheckerBorderBrush</td><td>
-Specifies the the border color of the Check Boxes in the SymbolPalette pop-up.The default value is DarkSlateGray_._</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-CheckerTickBrush</td><td>
-Specifies the Tick color of the selected Check Box in the SymbolPalette pop-up.The default value is DarkSlateGray_._</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-</table>
-
-
-The following code example illustrates how to set some of the SymbolPalette properties.
-{% highlight c# %}
-[C#]
-
-
-
-DiagramControl diagramControl = new DiagramControl(); diagramControl.SymbolPalette.BorderThickness = new Thickness(2);
-
-diagramControl.SymbolPalette.BorderBrush = Brushes.MidnightBlue;
-
-diagramControl.SymbolPalette.Background = Brushes.Blue; diagramControl.SymbolPalette.SymbolPaletteGroupBackground = Brushes.DarkBlue; diagramControl.SymbolPalette.SymbolPaletteGroupForeground = Brushes.White;
-
-diagramControl.SymbolPalette.SymbolPaletteGroupBorderBrush = Brushes.SlateBlue;
-
-diagramControl.SymbolPalette.FilterSelectorBackground = Brushes.SkyBlue; diagramControl.SymbolPalette.FilterSelectorForeground = Brushes.White;
-
-diagramControl.SymbolPalette.FilterSelectorBorderBrush = Brushes.Blue; diagramControl.SymbolPalette.FilterSelectorBorderThickness = new Thickness(0);
-
-diagramControl.SymbolPalette.CheckerTickBrush = Brushes.White;
-
-diagramControl.SymbolPalette.CheckerBorderBrush = Brushes.MidnightBlue;
-
-diagramControl.SymbolPalette.CheckerBackground = Brushes.LightBlue; diagramControl.SymbolPalette.PopUpItemMouseOverBrush = Brushes.CornflowerBlue;
-
-diagramControl.SymbolPalette.PopUpBorderBrush = Brushes.MidnightBlue;
-
-diagramControl.SymbolPalette.ItemBorderThickness = new Thickness(2);
-
-{% endhighlight %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-Dim diagramControl As New DiagramControl()
-
-diagramControl.SymbolPalette.BorderThickness = New Thickness(2)
-
-diagramControl.SymbolPalette.BorderBrush = Brushes.MidnightBlue
-
-diagramControl.SymbolPalette.Background = Brushes.Blue
-
-diagramControl.SymbolPalette.SymbolPaletteGroupBackground = Brushes.DarkBlue
-
-diagramControl.SymbolPalette.SymbolPaletteGroupForeground = Brushes.White
-
-diagramControl.SymbolPalette.SymbolPaletteGroupBorderBrush = Brushes.SlateBlue
-
-diagramControl.SymbolPalette.FilterSelectorBackground = Brushes.SkyBlue
-
-diagramControl.SymbolPalette.FilterSelectorForeground = Brushes.White
-
-diagramControl.SymbolPalette.FilterSelectorBorderBrush = Brushes.Blue
-
-diagramControl.SymbolPalette.FilterSelectorBorderThickness = New Thickness(0)
-
-diagramControl.SymbolPalette.CheckerTickBrush = Brushes.White
-
-diagramControl.SymbolPalette.CheckerBorderBrush = Brushes.MidnightBlue
-
-diagramControl.SymbolPalette.CheckerBackground = Brushes.LightBlue
-
-diagramControl.SymbolPalette.PopUpItemMouseOverBrush = Brushes.CornflowerBlue
-
-diagramControl.SymbolPalette.PopUpBorderBrush = Brushes.MidnightBlue
-
-diagramControl.SymbolPalette.ItemBorderThickness = New Thickness(2)
-
-
-{% endhighlight  %}
-The following screenshot illustrates the various customization options that are available for the SymbolPalette Item, Group and Filter Selector.
-
-
-
-![](Diagram-View_images/Diagram-View_img77.jpeg)
-
-
-
-_SymbolPalette Item, Group and Filter Selector Customization Properties_
-
-The following screenshot illustrates the various customization options available for the SymbolPalette PopUp.
-
-
-
-![](Diagram-View_images/Diagram-View_img78.jpeg)
-
-
-
-_SymbolPalette PopUp Customization Properties_
-
-### Customize the SymbolPaletteItem
-
-This feature improves the performance of SymbolPaletteItem dragging, by avoiding serialization and deserialization of the item.
-
-Methods
-
-_Methos Table_
-
-<table>
-<tr>
-<th>
-Method</th><th>
-Description</th><th>
-Parameters</th><th>
-Return Type</th></tr>
-<tr>
-<td>
-CloneContent</td><td>
-This method assigns the customized and serialized content to the symbol palette item, while performing drag and drop.</td><td>
-No parameters </td><td>
-object </td></tr>
-</table>
-
-### Adding this Feature to an Application
-
-Creating Custom SymbolPaletteItem
-
-The content for the custom SymbolPaletteItem is assigned by overriding the CloneContent method.
-{% highlight c# %}
-[C#]
-
-                 public class customItem : SymbolPaletteItem
-
-        {
-
-            public customItem()
-
-            { }
-
-
-
-            public override object CloneContent()
-
-            {
-
-                return new Button() { Height = 50, Width = 50, Content = "Custom" };
-
-            }
-
-        }
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-[VB]
-
-Public Class customItem
-
-Inherits SymbolPaletteItem
-
-Public Sub New()
-
-End Sub
-
-
-
-Public Overrides Function CloneContent() As Object
-
-
-
-            Dim button As New Button()
-
-            button.Content = "asas"
-
-            button.Width = 50
-
-            button.Height = 50
-
-            Return button
-
-End Function
-
-End Class
-
-{% endhighlight  %}
-
-Adding CustomItem to SymbolPalette
-
-To add CustomItem to SymbolPalette, use the code example given below:
-{% highlight c# %}
-[C#]
-
-customItem custom = new customItem();
-
-custom.Content = "asd";
-
-(diagramControl.SymbolPalette.SymbolGroups[0] as SymbolPaletteGroup).Items.Add(custom);
-
-{% endhighlight %}
-{% highlight vbnet %}
-
-[VB]
-
-Dim custom As New customItem()
-
-custom.Content = "asd"
-
-TryCast(customs.SymbolGroups(0), SymbolPaletteGroup).Items.Add(custom)
-
-
-{% endhighlight  %}
-When you drag and drop the custom SymbolPaletteItem, the content that is assigned in the CloneContent method is applied to the content of the dropped item.
-
-Thereby, the performance of dragging the SymbolpaletteItem is improved by 40%. If the default base method is returned in the CloneContent method, the default content is dragged and dropped.
-
-## SymbolPalette Serialization
-
-Serialization is the process of saving and retrieving the SymbolPalette groups and items. Essential DiagramWPF supports saving the SymbolPalette as an XAML file. This load and save feature allows you to save the SymbolPalette for future use. You can continue working on their page by loading the appropriate XAML file.
-
-SymbolPaletteSerialization feature provides an option to save and load the SymbolPalette, SymbolPalette groups, elements and items in diagram control. So any item can be customised and imported onto the SymbolPalette.
-
-* User can easily Save/Load the SymbolPalette
-*  User can Save/Load the SymbolPaletteGroup
-*  User can Save/Load the SymbolPaletteItem
-
-
-
-Methods 
-
-_Methods Table_
-
-<table>
-<tr>
-<th>
-Method </th><th>
-Description </th><th>
-Parameters </th><th>
-Return Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-SaveSymbolPalette</td><td>
-Displays the save dialog box to save the entire SymbolPallete(including all SymbolPalette groups) into XAML file.</td><td>
-NA </td><td>
-Void</td><td>
-NA </td></tr>
-<tr>
-<td>
-LoadSymbolPalette</td><td>
-The existing SymbolPallete groups will be cleared and new groups will be added from selected Xaml file.</td><td>
-NA </td><td>
-Void</td><td>
-NA </td></tr>
-<tr>
-<td>
-SaveSymbolPaletteGroup</td><td>
-Saves the Symbol Palette Group into Xaml file using the given  SymbolPaletteGroup parameter. </td><td>
-SymbolPaletteGroup </td><td>
-Void</td><td>
-NA </td></tr>
-<tr>
-<td>
-LoadSymbolPaletteGroup</td><td>
-Displays the Load Dialogue Box to load the Symbol Palette Group from the selected Xaml file.</td><td>
-NA </td><td>
-Void</td><td>
-NA </td></tr>
-<tr>
-<td>
-SaveSymbolPaletteItem</td><td>
-Saves the Symbol Palette Item into Xaml file using the given SymbolPaletteItem parameter.</td><td>
-SymbolPaletteItem </td><td>
-Void</td><td>
-NA </td></tr>
-<tr>
-<td>
-LoadSymbolPaletteItem</td><td>
-Loads the SymbolPalette Item from the Xaml file. The Items are loaded in any given Symbol Palette Group using the SymbolPaletteGroup parameter. </td><td>
-SymbolPaletteGroup </td><td>
-Void</td><td>
-NA </td></tr>
-</table>
-
-## Bind to ItemSource
-
-The symbol palette supports binding with business objects. A symbol group will be created and added to the symbol palette depending upon the business objects and template provided. The symbol group itself supports binding with business objects. Symbol palette items will be created and added to it depending upon the business objects and template.
-
-### Properties
-
-_Properties Table_
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th><th>
-Reference links</th></tr>
-<tr>
-<td>
-ItemGenerateMode</td><td>
-Specifies the ItemGenerateMode for symbol palette. Default is Manual. </td><td>
-Dependency property</td><td>
-ItemGenerateMode.ItemsSourceItemGenerateMode.Manual </td><td>
-No</td></tr>
-<tr>
-<td>
-ItemsSource</td><td>
-Gets or sets the source for the list of the items, the containers about to represent.</td><td>
-DependencyProperty</td><td>
-IEnumerable</td><td>
-No</td></tr>
-</table>
-
-
-ItemSource property gets the source for the list of Symbol groups to be added to symbol palette.
-
-The following code samples illustrate this.
-{% highlight xml %}
-[XAML]
-
-
-
-<Window.Resources>
-
-        <Style TargetType="syncfusion:SymbolPaletteGroup">
-
-        <Setter Property="Label" Value="{Binding Label}"></Setter>
-
-            <Setter Property="syncfusion:SymbolPalette.FilterIndexes" Value="{Binding Filter}">
-
-        </Setter>
-
-        <Setter Property="ItemTemplate">
-
-            <Setter.Value>
-
-                <DataTemplate>
-
-                        <syncfusion:SymbolPaletteItem Height="50" Width="50"  Content="{Binding Content}">
-
-                    </syncfusion:SymbolPaletteItem>
-
-                </DataTemplate>
-
-            </Setter.Value>
-
-        </Setter>
-
-        </Style>
-
-</Window.Resources>
-
-{% endhighlight  %}
-{% highlight c# %}
-
-[C#]
-
-
-
-symbol = diagramControl.SymbolPalette;
-
-// Set the ItemGenerateMode property value to ItemsSource
-
-symbol.ItemGenerateMode = ItemGenerateMode.ItemsSource;
-
-//Clear the default filter item from the SymbolFilter collections.
-
-symbol.SymbolFilters.Clear();
-
-//Clear default items added in SymbolGroups
-
-symbol.SymbolGroups.Clear();
-
-//Then assign ItemsSource for the SymbolPalette
-
-symbol.ItemsSource = CreatingBusinessObjForSymbolPalette();
-
-//ItemsSource for SymbolPalette
-
-private System.Collections.IEnumerable CreatingBusinessObjForSymbolPalette()
-
-{
-
-ObservableCollection<SymbGroup> grp = new ObservableCollection<SymbGroup>();
-
-grp.Add(new SymbGroup() { Label = "Label1", Filter = new Int32Collection(new int[] { 0, 1 }) });
-
-grp.Add(new SymbGroup() { Label = "Label2", Filter = new Int32Collection(new int[] { 0, 2 }) });
-
-return grp;
-
-}
-
-
-
-//ItemsSource for SymbolPaletteGroup assigned when group collection changed.
-
-void SymbolGroups_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-
-{
-
-if (e.NewItems != null)
-
-{
-
-ObservableCollection<SymbolItem> symbolItemCollection = new
-
-ObservableCollection<SymbolItem>();
-
-symbolItemCollection.Add(new SymbolItem() { Content = "Item1" });
-
-symbolItemCollection.Add(new SymbolItem() { Content = "Item2" });
-
-
-
-(e.NewItems[0] as SymbolPaletteGroup).ItemsSource = symbolItemCollection;
-
-}
-
-}
-
-
-
-//Business object for symbol group and symbol palette item.
-
-public class SymbGroup
-
-{
-
-public String Label { get; set; }
-
-public Int32Collection Filter { get; set; }
-
-}
-
-public class SymbolItem
-
-{
-
-public string Content { get; set; }
-
-}
-
-
-
-{% endhighlight  %}
-
-![](Diagram-View_images/Diagram-View_img79.png)
-
-
-
-_Symbol palette ItemSource_
-
-> Note: Symbol groups are not allowed to be added manually when ItemSource is used.
-
-## Serialization
-
-Serialization is the process of saving and retrieving the Essential Diagram file. Essential Diagram WPF supports saving the diagram page as an XAML file. The page and all its properties get saved. On loading, the page gets loaded in the current view with all its nodes and connections. This load and save feature allows you to save their diagram page for future use. You can continue working on their page by loading the appropriate XAML file.
-
-_Methods Table_
-
-<table>
-<tr>
-<th>
-Name</th><th>
-Parameters</th><th>
-Return Type</th><th>
-Description</th><th>
-Reference Links</th></tr>
-<tr>
-<td>
-Save()</td><td>
-Null</td><td>
-Void</td><td>
-Displays the Save Dialogue Box to save the DiagramPage into XAML file.</td><td>
-Save Diagram Page</td></tr>
-<tr>
-<td>
-Save(string)</td><td>
-String</td><td>
-Void</td><td>
-Saves the DiagramPage into  XAML file whose file name is specified.</td><td>
-Save Diagram Page</td></tr>
-<tr>
-<td>
-Save(Stream)</td><td>
-System.IO.Stream </td><td>
-Void</td><td>
-Saves the DiagramPage into memory stream.</td><td>
-Save Diagram Page</td></tr>
-<tr>
-<td>
-Load()</td><td>
-Null</td><td>
-Void</td><td>
-Displays the Load Dialogue Box to load the DiagramPage from selected XAML file.</td><td>
-Load Diagram Page</td></tr>
-<tr>
-<td>
-Load(string)</td><td>
-String</td><td>
-Void</td><td>
-Loads the DiagramPage from the file name mentioned.</td><td>
-Load Diagram Page</td></tr>
-<tr>
-<td>
-Load(Stream)</td><td>
-System.IO.Stream</td><td>
-Void</td><td>
-Loads the DiagramPage from the memory stream.</td><td>
-Load Diagram Page</td></tr>
-</table>
-
-
- This process is explained in the following topic:
-
-### Save Diagram Page
-
-Save operation can be done in three ways,
-
-* Using the Save Dialog Box.
-* File name with full path.
-* Using Memory Stream
-
-Using the Save Dialog Box
-
-To save the page, the following code can be used.
-{% highlight c# %}
-[C#]
-
-
-
-DiagramControl dc = new DiagramControl();
-
-dc.Save();
-
-
-{% endhighlight  %}
-{% highlight vbnet %}
-[VB]
-
-
-
-Dim dc As New DiagramControl()
-
-dc.Save()
-
-
-{% endhighlight  %}
-The Save Dialog box will appear. Select the 'Save as Type' as XAML and select the location at which the file is to be saved and click the save button in the dialog box after specifying a name for the file.
-
-![](Diagram-View_images/Diagram-View_img80.jpeg)
-
-
-
-_Save Dialog Box_
-
-File name with path
-
-You can also specify the name of the file directly in the Save method.
-{% highlight c# %}
-[C#]
-
-
-
-DiagramControl dc = new DiagramControl();
-
-dc.Save(@"C:\TestPage.xaml");
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-Dim dc As New DiagramControl()
-
-dc.Save("C:\TestPage.xaml")
-
-{% endhighlight %}
-
-_Note: Essential Diagram WPF does not support serializing bindings and bitmap Images._
-
-Saving to a stream
-
-You can also save to a stream. 
-
-The following code example shows how it can be done.
-{% highlight c# %}
-[C#]
-
-
-
-DiagramControl dc = new DiagramControl();
-
-System.IO.MemoryStream stream = new System.IO.MemoryStream();
-
-dc.Save(stream as System.IO.Stream);
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-Dim dc As New DiagramControl()
-
-Dim stream As New System.IO.MemoryStream()
-
-dc.Save(TryCast(stream, System.IO.Stream))
-{% endhighlight  %}
-
-### Loading the Diagram Page
-
-Load operation can be done in three ways,
-
-* Using the Load Dialog Box.
-* File name with full path.
-* Using Memory Stream
-
-Load using the Load Dialog Box
-
-To load the page, the following code can be used.
-{% highlight c# %}
-[C#]
-
-
-
-DiagramControl dc = new DiagramControl();
-
-dc.Load();
-
-{% endhighlight %}
-{% highlight vbnet %}
-[VB]
-
-
-
-Dim dc As New DiagramControl()
-
-dc.Load()
-
-
-{% endhighlight  %}
-The Load Dialog box will appear. Select the 'Files of Type' as XAML and specify the path of the file to be loaded and click the Open button in the dialog box. The selected page gets loaded in the current view and the page is ready to be edited.
-
-![](Diagram-View_images/Diagram-View_img81.jpeg)
-
-
-
-_Load Dialog Box_
-
-File name with path
-
-You can also specify the name of the file directly in the Load method.
-{% highlight c# %}
-[C#]
-
-
-
-DiagramControl dc = new DiagramControl();
-
-dc.Load(@"C:\TestPage.xaml");
-
-{% endhighlight %}
-{% highlight vbnet %}
-[VB]
-
-
-
-Dim dc As New DiagramControl()
-
-dc.Load("C:\TestPage.xaml")
-
-{% endhighlight %}
-
-_Note: Essential Diagram WPF does not support serializing bindings and bitmap Images._
-
-Loading from a stream
-
-You can also load from a stream. 
-
-To load from the stream use the following code snippet.
-{% highlight c# %}
-[C#]
-
-
-
-stream.Position = 0;
-
-dc.Load(stream as System.IO.Stream);
-
-{% endhighlight %}
-{% highlight vbnet %}
-[VB]
-
-
-
-stream.Position = 0
-
-dc.Load(TryCast(stream, System.IO.Stream))
-
-{% endhighlight %}
-
-_Note: While loading from memory stream please make sure the stream’s Position property is set to 0._
-
-## Localization
-
-Localization is the process of providing controls in different cultures to help users to easily set their own culture.
-
-Use Case Scenarios
-
-Localization is the process of customizing the User Interface (UI) in a language and culture specific to a particular country or region to display regional data. Localization is the key feature that provides solutions to global customers with the help of localized resource files provided by controls.
-
-![](Diagram-View_images/Diagram-View_img82.png)
-
-
-
-_Localization Sample in Japanese Language_
-
-Localizing the Application
-
-Adding Resource Files
-
-To localize the Syncfusion Diagram WPF control, you need to create a resource file for each culture. The following steps should be performed when localizing strings for your culture:
-
-1. Add the resource (.resx) files in the Resources folder for different cultures. The .resx files for the different cultures or invariant cultures should be placed in the Resources folder of your project.
-2. Name the resource files according to the formats specified, namely AssemblyName.CultureName.resx and AssemblyName.resx for the invariant cultures. Here, AssemblyName is the Syncfusion WPF control assembly name and CultureName is the culture code of the resource file that you want to show in the UI. If your conversion is only for the invariant culture, then the .resx file does not require a culture suffix.
-
-Examples
-
-Syncfusion.Diagram.Wpf.ja.resx - A Japanese resource file for the Syncfusion.Diagram.Wpf assembly.
-
-Syncfusion.Diagram.Wpf.resx - An invariant culture resource file for the Syncfusion.Diagram.Wpf assembly. 
-
-Assigning the Current UI Culture to the Application
-
-By default, the current culture is set to “en-US”. You can check the current culture from “System.Threading.Thread.CurrentThread.CurrentUICulture”. CurrentUICulture can be changed, as shown in the following code snippets. 
-
-In the following example, CurrentUICulture is set before IntializeComponent in the StartUp page (MainPage.xaml.cs).
-{% highlight c# %}
-[C#]
-
-public MainPage()
-
-{
-
-    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ja");
-
-    InitializeComponent();
-
-}
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-'INSTANT VB WARNING: The following constructor is declared outside of its associated class:
-
-'ORIGINAL LINE: public MainPage()
-
- Public Sub New()
-
-   System.Threading.Thread.CurrentThread.CurrentUICulture = New                       System.Globalization.CultureInfo("ja")
-
-   InitializeComponent()
-
-End Sub
-
-{% endhighlight  %}
-
-Else, CurrentUICulture is set in the Application_Startup event in the App.xaml.cs file, as shown in the following example.
-{% highlight c# %}
-[C#]
-
-private void Application_Startup(object sender, StartupEventArgs e)
-
-{
-
-    System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ja");
-
-    this.RootVisual = new MainPage();
-
-}
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-[VB]
-
-Private Sub Application_Startup(ByVal sender As Object, ByVal e As StartupEventArgs)
-
-System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("ja")
-
-Me.RootVisual = New MainPage()
-
-End Sub
-
-
-
-{% endhighlight %}
-
-![](Diagram-View_images/Diagram-View_img83.png)
-
-
-
-_Localization Sample in Japanese Language_
-
-Specifying the Directory Location of the Resource File
-
-By default, the resource file for a specific culture is obtained from the Resources directory. However, the location of the resource file can be changed by using DiagramControl’s LocalizationPath property, as shown in the following code snippet.
-{% highlight c# %}
-[C#]
-
-// The location of the localized resource file is stored in the \Resources\Controls directory.
-
-diagramControl.LocalizationPath = "Resources.Controls";
-
-
-{% endhighlight %}
-{% highlight vbnet %}
-[VB]
-
-'The location of the localized resource file is stored in the \Resources\Controls directory.
-
-diagramControl.LocalizationPath = "Resources.Controls"
-
-{% endhighlight %}
-
-![](Diagram-View_images/Diagram-View_img84.png)
-
-
-
-_Customized LocalizationPath_
-
-Example
-{% highlight c# %}
-[C#]
-
-// The location of the localized resource file is stored in the \Resources\X\Y\Z directory.
-
-diagramControl.LocalizationPath = "Resources.X.Y.Z";
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-[VB]
-
-'The location of the localized resource file is stored in the \Resources\X\Y\Z directory.
-
-diagramControl.LocalizationPath = "Resources.X.Y.Z"
-
-{% endhighlight  %}
-
-![](Diagram-View_images/Diagram-View_img85.png)
-
-
-
-_Customized LocalizationPath_
-
-_Note: LocalizationPath for the resource file should be specified before DiagramControl’s Template is applied._ 
-
-Properties
-
-The property of the Localization feature is described in the following tabulation:
-
-_Property Table_
-
-<table>
-<tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th><th>
-Reference links </th></tr>
-<tr>
-<td>
-LocalizationPath</td><td>
-Indicates the directory in which the resource files are located. </td><td>
-CLR</td><td>
-string </td><td>
-Not applicable </td></tr>
-</table>
-
-
-### Sample Link
-
-To view a sample
-
-1. Open the Diagram Sample Browser from the dashboard. (Refer to the Samples and Location chapter.)
-2. Navigate to Editable Diagram -> Localization Demo.
-
-## Event Mechanism
-
-This section describes several events triggered and handled while using Essential Diagram WPF in the following topic:
-
-Events for Nodes and Connections
-
-Diagram control has several events which respond to several actions performed on nodes and connections.
-
-The various events and their descriptions are explained in the following table.
-
-_Events Table_
-
-<table>
-<tr>
-<th>
-Event</th><th>
-Description</th><th>
-Arguments</th></tr>
-<tr>
-<td>
-NodeClick</td><td>
-Raised when the node is clicked.<br>Event cannot be cancelled.</td><td>
-Node – Node on which event is raised.</td></tr>
-<tr>
-<td>
-NodeDoubleClick</td><td>
-Raised when the node is clicked twice in succession.<br>Event cannot be cancelled.</td><td>
-Node – Node on which event is raised.</td></tr>
-<tr>
-<td>
-NodeStartLabelEdit</td><td>
-Raised when the label editing on the node is started.<br>Event cannot be cancelled.</td><td>
-NewLabelValue – The new label value.OldLabelValue – the old label value.Node - Node on which event is raised.</td></tr>
-<tr>
-<td>
-NodeLabelChanged</td><td>
-Raised when the node's label value is changed.<br>Event cannot be cancelled.</td><td>
-NewLabelValue – The new label value.OldLabelValue – the old label value.Node - Node on which event is raised.</td></tr>
-<tr>
-<td>
-NodeDragStart</td><td>
-Raised when the node is dragged.<br>Event cannot be cancelled.</td><td>
-Node – Node on which event is raised.</td></tr>
-<tr>
-<td>
-NodeDragEnd</td><td>
-Raised when the drag operation on node is complete.Event cannot be cancelled.</td><td>
-Node – Node on which event is raised.</td></tr>
-<tr>
-<td>
-NodeResizing</td><td>
-Raised when the resize operation is being performed.<br>Event cannot be cancelled.</td><td>
-Node – Node on which event is raised.</td></tr>
-<tr>
-<td>
-NodeResized</td><td>
-Raised after the node is resized.<br>Event cannot be cancelled.</td><td>
-Node – Node on which event is raised.</td></tr>
-<tr>
-<td>
-NodeRotationChanging</td><td>
-Raised when the node is being rotated.<br>Event cannot be cancelled.</td><td>
-Node – Node on which event is raised.</td></tr>
-<tr>
-<td>
-NodeRotationChanged</td><td>
-Raised after the node is rotated.<br>Event cannot be cancelled.</td><td>
-Node – Node on which event is raised.</td></tr>
-<tr>
-<td>
-ConnectorDoubleClick</td><td>
-Raised when the Connector is clicked twice in succession.<br>Event cannot be cancelled.</td><td>
-Connector – Connector on which the event is raised.Head Node – Head Node of the connector.Tail Node – Tail Node of the connector.</td></tr>
-<tr>
-<td>
-ConnectorStartLabelEdit</td><td>
-Raised when the label editing on the Connector is started.<br>Event cannot be cancelled.</td><td>
-Connector – Connector on which the event is raised.Head Node – Head Node of the connector.Tail Node – Tail Node of the connector.OldLabelValue – the old label value.</td></tr>
-<tr>
-<td>
-ConnectorLabelChanged</td><td>
-Raised when the connector's label value is changed.<br>Event cannot be cancelled.</td><td>
-Connector – Connector on which the event is raised.Head Node – Head Node of the connector.Tail Node – Tail Node of the connector.OldLabelValue – the old label value.NewLabelValue – The new label value.</td></tr>
-<tr>
-<td>
-ConnectorDragStart</td><td>
-Raised when either ends of the connector is dragged.<br>Event cannot be cancelled.</td><td>
-Connector – Connector on which the event is raised.FixedNodeEnd – Node on which the connection is fixed.MovableNodeEnd – The old Node on which the Connector was connected.</td></tr>
-<tr>
-<td>
-ConnectorDragEnd</td><td>
-Raised when the drag operation is complete.<br>Event cannot be cancelled.</td><td>
-Connector – Connector on which the event is raised.FixedNodeEnd – Node on which the connection is fixed.HitNodeEnd – The new node on which the Connector is getting connected.</td></tr>
-<tr>
-<td>
-NodeDrop</td><td>
-Raised when a shape from the SymbolPalette is dropped on the page.<br>Event cannot be cancelled.</td><td>
-DroppedNode – The new node just dropped from SymbolPalette.SymbolPaletteItemName – The name of the SymbolPalette item, which is dropped on the page.</td></tr>
-<tr>
-<td>
-HeadNodeChanged</td><td>
-Raised when the headnode of the connector is changed<br>Event cannot be cancelled.</td><td>
-Connector – The connector whose HeadNode is changed.PreviousNode – The old Node on which the HeadNode of the Connector was connector.CurrentNode - The new Node on which the HeadNode of the Connector is connector.</td></tr>
-<tr>
-<td>
-TailNodeChanged</td><td>
-Raised when the tailnode of the connector is changed.<br>Event cannot be cancelled.</td><td>
-Connector – The connector whose HeadNode is changed.PreviousNode – The old Node on which the TailNode of the Connector was connector.CurrentNode - The new Node on which the TailNode of the Connector is connector.</td></tr>
-<tr>
-<td>
-ConnectorDrop</td><td>
-Raised when the connector is dropped on the page.<br>Event cannot be cancelled.</td><td>
-DroppedConnector – Connector on which the event is raised.</td></tr>
-<tr>
-<td>
-BeforeConnectionCreate</td><td>
-Raised when a new connection is being made.<br>Event cannot be cancelled.</td><td>
-Connector – The connector whose HeadNode is changed.</td></tr>
-<tr>
-<td>
-AfterConnectionCreate</td><td>
-Raised after the connection has been made.<br>Event cannot be cancelled.</td><td>
-Connector – Connector on which the event is raised.FixedNodeEnd – Node on which the connection is fixed.HitNodeEnd – The new node on which the Connector is getting connected.</td></tr>
-<tr>
-<td>
-NodeSelected</td><td>
-Raised when a node is selected.<br>Event cannot be cancelled.</td><td>
-Node – Node on which event is raised.</td></tr>
-<tr>
-<td>
-NodeUnSelected</td><td>
-Raised when a node is not selected.<br>Event cannot be cancelled.</td><td>
-Node – Node on which event is raised.</td></tr>
-<tr>
-<td>
-NodeDeleting</td><td>
-Raised before a node is deleted from the model.<br>Event cannot be cancelled.</td><td>
-DeletedNode – Node which is going to get deleted.</td></tr>
-<tr>
-<td>
-NodeDeleted</td><td>
-Raised when a node is deleted from the model.<br>Event cannot be cancelled.</td><td>
-DeletedNode – Node which is deleted.</td></tr>
-<tr>
-<td>
-ConnectorDeleting</td><td>
-Raised before a line connector is deleted from the model.<br>Event cannot be cancelled.</td><td>
-DeletedLineConnector – LineConnector which is getting deleted.</td></tr>
-<tr>
-<td>
-ConnectorDeleted</td><td>
-Raised when a line connector is deleted from the model.<br>Event cannot be cancelled.</td><td>
-DeletedLineConnector – LineConnector which is deleted.</td></tr>
-<tr>
-<td>
-PreviewNodeDrop</td><td>
-Raised before a node is dropped on the page.<br>Event cannot be cancelled.</td><td>
-Node – Node on which event is raised.</td></tr>
-<tr>
-<td>
-PreviewConnectorDrop</td><td>
-Raised before a line connector is dropped on the page.<br>Event cannot be cancelled.</td><td>
-Connector – Connector on which the event is raised.</td></tr>
-<tr>
-<td>
-NodeMoved(event is fired before nudge operation is completed)</td><td>
-Raised when the nudge operation on node is completed.<br>Event cannot be cancelled.</td><td>
-Node – Node on which event is raised.oldOffset – The old offset value before nudge operation.newOffset – The new offset value after performing nudge operation.</td></tr>
-</table>
-
-
-The events can be specified using DiagramView object as follows.
-
-* For instance, NodeClick event can be specified in the following way.
-
-{% highlight xml %}
-[XAML]
-
-
-
-<sfdiagram:DiagramView Name="diagramView" NodeClick="diagramView_NodeClick">
-
-</sfdiagram:DiagramView> 
-
-
-{% endhighlight  %}
-{% highlight c# %}
-
-diagramView.NodeClick += new NodeEventHandler(diagramView_NodeClick);
-{% endhighlight  %}
-
-{% highlight vbnet %}
-
-AddHandler diagramView.NodeClick, AddressOf diagramView_NodeClick
-
-{% endhighlight %}
-
-* And then the event handler can be specified in the code behind as follows.
-{% highlight c# %}
-
-//Event Handler
-
-void diagramView_NodeClick(object sender, NodeRoutedEventArgs evtArgs)
-
-{
-
-//user specified code
-
-}
-
-{% endhighlight %}
-{% highlight vbnet %}
-
-
-'Event Handler
-
-Private Sub diagramView_NodeClick(ByVal sender As Object, ByVal evtArgs As NodeRoutedEventArgs)
-
-     'user specified code
-
-End Sub
-
-{% endhighlight %}
-
-* As another example, the ConnectorDoubleClick event can be specified in the following way.
-{% highlight xml %}
-
-<sfdiagram:DiagramView Name="diagramView" ConnectorDoubleClick="diagramView_ConnectorDoubleClick">
-
-</sfdiagram:DiagramView>
-
-{% endhighlight %}
-{% highlight c# %}
-
-
-diagramView.ConnectorDoubleClick += new ConnChangedEventHandler(diagramView_ConnectorDoubleClick);
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-
-AddHandler diagramView.ConnectorDoubleClick, AddressOf diagramView_ConnectorDoubleClick
-
-{% endhighlight %}
-
-And then the event handler can be specified in the code behind as follows.
-{% highlight c# %}
-
-// Event Handler
-
-void diagramView_ConnectorDoubleClick(object sender, ConnRoutedEventArgs evtArgs)
-
-{
-
-// user specified code
-
-}
-
-{% endhighlight %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-'Event Handler
-
-Private Sub diagramView_ConnectorDoubleClick(ByVal sender As Object, ByVal evtArgs As ConnRoutedEventArgs)
-
-     'user specified code
-
-End Sub
-
-{% endhighlight  %}
-
-* NodeMoved and NodeDrop events
-{% highlight c# %}
-
-diagramView.NodeMoved += new NodeNudgeEventHandler(diagramView_NodeMoved);
-
-void diagramView_NodeMoved(object sender, NodeNudgeEventArgs evtArgs)
-
-{
-
-}
-
-
-
-diagramView.NodeDrop += new NodeNudgeEventHandler(diagramView_LineMoved);
-
-void diagramView_NodeDrop(object sender, NodeNudgeEventArgs evtArgs)
-
-{
-
-}
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-
-Private diagramView.NodeMoved += New NodeNudgeEventHandler(AddressOf diagramView_NodeMoved)
-
-Private Sub diagramView_NodeMoved(ByVal sender As Object, ByVal evtArgs As NodeNudgeEventArgs)
-
-End Sub
-
-
-
-Private diagramView.NodeDrop += New NodeNudgeEventHandler(AddressOf diagramView_LineMoved)
-
-Private Sub diagramView_NodeDrop(ByVal sender As Object, ByVal evtArgs As NodeNudgeEventArgs)
-
-End Sub
-{% endhighlight  %}
-
-## General
-
-This section illustrates the general features pertaining to both Node and LineConnector.
-
-### Select Nodes and Connectors
-
-The corresponding node or connector is selected by moving the mouse pointer to the desired node or connector and by clicking the left mouse button. This is indicated by an adorner being displayed. It also displays a RotateThumb on the top left corner of the node.
-
-* Items on the drawing area are selected automatically if they fall within the bounds of the drag adorner.
-* The drag adorner is displayed when you click anywhere on the page and start dragging the mouse pointer.
-* A rectangle formed with a drag start-point as one of its points, and the point where the mouse button is released as its second point, defines the drag adorner's bounds.
-
-
-
-![](Diagram-View_images/Diagram-View_img86.jpeg)
-
-
-
-_Node Selection_
-
-### Move Nodes and Connectors
-
-Click and drag the desired node for moving nodes from one position to another.. Connections can also be moved to other nodes and a new node will start acting as the head node or the tail node depending on where the connector was moved from.
-
-To move the connector, follow these steps.
-
-* Click on the connector to be moved.
-* An adorner will be displayed on the head and the tail decorators which indicatesthe selection of the connector.
-* Now click and drag the desired decorator shape and drop it on the node to which you want to connect.
-
-
-
-![](Diagram-View_images/Diagram-View_img87.jpeg)
-
-
-
-_Moving Connector_
-
-As seen, the connector will then be removed from the old node and added to the node that is currently hit.
-
-### Customize the Label of Nodes and Line Connectors
-
-The labels of the nodes and connectors are equipped with Multiline support i.e. you can specify the labels to span multiple lines by setting the LabelTextWrapping property to wrap the text and by specifying the width of the label. Also, several other customization properties have been added for the labels. These are listed below: 
-
-_Property Table_
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type of the property</th><th>
-Value it accepts</th><th>
-Any other dependencies/ sub properties associated</th></tr>
-<tr>
-<td>
-LabelTextTrimming</td><td>
-Gets or sets the text trimming style. Default value is CharacterEllipsis.</td><td>
-Dependency property</td><td>
-TextTrimming.CharacterEllipsisTextTrimming.NoneTextTrimming.WordEllipsis</td><td>
-No</td></tr>
-<tr>
-<td>
-LabelForeground</td><td>
-Gets or sets the foreground of the label. Default value is Black.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-LabelBakground</td><td>
-Gets or sets the background of the label. Default value is White.</td><td>
-Dependency property</td><td>
-Brush</td><td>
-No</td></tr>
-<tr>
-<td>
-LabelFontStyle</td><td>
-Gets or sets the background of the label. Default value is White.</td><td>
-Dependency property</td><td>
-FontStyles.ObliqueFontStyles.ItalicFontStyles.Normal</td><td>
-No</td></tr>
-<tr>
-<td>
-LabelFontFamily</td><td>
-Gets or sets the font family of the label. Default value is Arial.</td><td>
-Dependency property</td><td>
-FontFamily</td><td>
-No</td></tr>
-<tr>
-<td>
-LabelTextAlignment</td><td>
-Gets or sets the text alignment of the label. Default value is Center.</td><td>
-Dependency property</td><td>
-TextAlignment.RightTextAlignment.LeftTextAlignment.CenterTextAlignment.Justify</td><td>
-No</td></tr>
-<tr>
-<td>
-LabelFontSize</td><td>
-Gets or sets the font size of the label. Default value is 11.</td><td>
-Dependency property</td><td>
-Double</td><td>
-No</td></tr>
-<tr>
-<td>
-LabelFontWeight</td><td>
-Gets or sets the font weight of the label. Default value is SemiBold.</td><td>
-Dependency property</td><td>
-FontWeights</td><td>
-No</td></tr>
-<tr>
-<td>
-LabelTextWrapping</td><td>
-Gets or sets the text wrapping of the label. Default value is NoWrap.</td><td>
-Dependency property</td><td>
-TextWrapping.NoWrapTextWrapping.WrapTextWrapping.WrapWithOverflow</td><td>
-No</td></tr>
-<tr>
-<td>
-LabelWidth</td><td>
-Gets or sets the width of the label. Default value is node’s width.</td><td>
-Dependency property</td><td>
-Double</td><td>
-No</td></tr>
-</table>
-
-
-The following code exampleillustrates the implementation of the properties mentioned in the table above.
-{% highlight c# %}
-
-Node node1 = new Node(Guid.NewGuid(), "Register");
-
-            node1.Shape = Shapes.RoundedSquare;
-
-            node1.Width = 150;
-
-            node1.Height = 50;
-
-            node1.OffsetX = 250;
-
-            node1.OffsetY = 100;
-
-            node1.Label = "This is a Multiline Label ";
-
-            node1.LabelWidth = 70;
-
-            node1.LabelTextWrapping = TextWrapping.Wrap;
-
-            node1.LabelForeground = Brushes.IndianRed;
-
-            node1.LabelFontSize = 14;
-
-            node1.LabelFontStyle = FontStyles.Italic;
-
-            node1.LabelBackground = Brushes.Beige;
-
-
-
-Node node2 = new Node(Guid.NewGuid(), "ClientAccountInfo");
-
-            node2.Shape = Shapes.FlowChart_Card;
-
-            node2.Width = 150;
-
-            node2.Height = 50;
-
-            node2.OffsetX = 450;
-
-            node2.OffsetY = 100;
-
-            node2.LabelWidth = 75;
-
-            node2.LabelTextWrapping = TextWrapping.Wrap;
-
-            node2.LabelForeground = Brushes.White;
-
-            node2.LabelFontSize = 16;
-
-            node2.LabelBackground = Brushes.Gray;
-
-            node2.LabelTextAlignment = TextAlignment.Left;
-
-            node2.Label = "Here text is aligned to Left";
-
-
-
-LineConnector line = new LineConnector();
-
-            line.ConnectorType = ConnectorType.Straight;
-
-            line.TailNode = node1;
-
-            line.HeadNode = node2;
-
-            line.HeadDecoratorShape = DecoratorShape.None;
-
-            line.Label = "This is a Multiline Label for Connectors";
-
-            line.LabelWidth = 84;
-
-            line.LabelTextWrapping = TextWrapping.Wrap;
-
-            line.LabelForeground = Brushes.Green;
-
-            line.LabelFontSize = 12;
-
-            line.LabelFontStyle = FontStyles.Normal;
-
-            line.LabelBackground = Brushes.Yellow;
-
-{% endhighlight %}
-{% highlight vbnet %}
-
- 
-Dim node1 As New Node(Guid.NewGuid(), "Register")
-
-node1.Shape = Shapes.RoundedSquare
-
-node1.Width = 150
-
-node1.Height = 50
-
-node1.OffsetX = 250
-
-node1.OffsetY = 100
-
-node1.Label = "This is a Multiline Label "
-
-node1.LabelWidth = 70
-
-node1.LabelTextWrapping = TextWrapping.Wrap
-
-node1.LabelForeground = Brushes.IndianRed
-
-node1.LabelFontSize = 14
-
-node1.LabelFontStyle = FontStyles.Italic
-
-node1.LabelBackground = Brushes.Beige
-
-
-
-Dim node2 As New Node(Guid.NewGuid(), "ClientAccountInfo")
-
-node2.Shape = Shapes.FlowChart_Card
-
-node2.Width = 150
-
-node2.Height = 50
-
-node2.OffsetX = 450
-
-node2.OffsetY = 100
-
-node2.LabelWidth = 75
-
-node2.LabelTextWrapping = TextWrapping.Wrap
-
-node2.LabelForeground = Brushes.White
-
-node2.LabelFontSize = 16
-
-node2.LabelBackground = Brushes.Gray
-
-node2.LabelTextAlignment = TextAlignment.Left
-
-node2.Label = "Here text is aligned to Left"
-
-
-
-Dim line As New LineConnector()
-
-line.ConnectorType = ConnectorType.Straight
-
-line.TailNode = node1
-
-line.HeadNode = node2
-
-line.HeadDecoratorShape = DecoratorShape.None
-
-line.Label = "This is a Multiline Label for Connectors"
-
-line.LabelWidth = 84
-
-line.LabelTextWrapping = TextWrapping.Wrap
-
-line.LabelForeground = Brushes.Green
-
-line.LabelFontSize = 12
-
-line.LabelFontStyle = FontStyles.Normal
-
-line.LabelBackground = Brushes.Yellow
-
-
-{% endhighlight %}
-The following output is generated using the code snippets above:
-
-![](Diagram-View_images/Diagram-View_img88.jpeg)
-
-
-
-_Customized Multiline Label_
-
-### Customize the Context Menu of Nodes and Line Connectors
-
-Essential Diagram for WPF provides support for the display of context menus for nodes and connectors on right-clicking the node or connector. The context menu contains the default commands, Z-order BringToFront, SendToBack, MoveForward, SendBackward, Grouping (Group and Ungroup), and Delete. The context menu can be customized so that you can add some custom options to the context menu. This can be done using the ContextMenu property of the nodes and the line connectors.
-
-The following code example illustrates addition of custom options to the context menu.
-{% highlight c# %}
-[C#]
-
-
-
-Node node1 = new Node(Guid.NewGuid(), "Register");
-
-            node1.Shape = Shapes.RoundedSquare;
-
-            node1.Width = 150;
-
-            node1.Height = 50;
-
-            node1.OffsetX = 250;
-
-            node1.OffsetY = 100;
-
-
-
-ContextMenu menu = new ContextMenu();
-
-            MenuItem item1 = new MenuItem();
-
-            item1.Header = "Custom Option1";
-
-            MenuItem item2 = new MenuItem();
-
-            item2.Header = "Custom Option2";
-
-            MenuItem item3 = new MenuItem();
-
-            item3.Header = "Custom Option3";
-
-            menu.Items.Add(item1);
-
-            menu.Items.Add(item2);
-
-            menu.Items.Add(item3);
-
-            node1.ContextMenu = menu;
-
-{% endhighlight %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-Dim node1 As New Node(Guid.NewGuid(), "Register")
-
-node1.Shape = Shapes.RoundedSquare
-
-node1.Width = 150
-
-node1.Height = 50
-
-node1.OffsetX = 250
-
-node1.OffsetY = 100
-
-
-
-Dim menu As New ContextMenu()
-
-Dim item1 As New MenuItem()
-
-item1.Header = "Custom Option1"
-
-Dim item2 As New MenuItem()
-
-item2.Header = "Custom Option2"
-
-Dim item3 As New MenuItem()
-
-item3.Header = "Custom Option3"
-
-menu.Items.Add(item1)
-
-menu.Items.Add(item2)
-
-menu.Items.Add(item3)
-
-node1.ContextMenu = menu
-
-
-{% endhighlight  %}
-Similarly we can set it for the connectors as follows:
-{% highlight c# %}
-[C#]
-
-
-
-LineConnector line = new LineConnector();
-
-line.ContextMenu = menu;
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-Dim line As New LineConnector()
-
-line.ContextMenu = menu
-
-
-{% endhighlight  %}
-![](Diagram-View_images/Diagram-View_img89.jpeg)
-
-
-
-_Custom Context Menu_
-
-The context menu can also be specified for all the nodes on the page using the NodeContextMenu property. Similarly to specify custom context menu for all the lines on the page, the LineConnectorContextMenu property of DiagramView can be used as follows:
-{% highlight c# %}
-[C#]
-
-
-
-ContextMenu menu1 = new ContextMenu();
-
-            MenuItem item11 = new MenuItem();
-
-            item11.Header = "Custom Option11";
-
-            MenuItem item21 = new MenuItem();
-
-            item21.Header = "Custom Option21";
-
-            MenuItem item31 = new MenuItem();
-
-            item31.Header = "Custom Option31";
-
-            menu1.Items.Add(item11);
-
-            menu1.Items.Add(item21);
-
-            menu1.Items.Add(item31);
-
-            diagramView.NodeContextMenu = menu1;
-
-diagramView.LineConnectorContextMenu = menu1;
-
-{% endhighlight  %}
-{% highlight vbnet %}
-[VB]
-
-
-
-Dim menu1 As New ContextMenu()
-
-Dim item11 As New MenuItem()
-
-item11.Header = "Custom Option11"
-
-Dim item21 As New MenuItem()
-
-item21.Header = "Custom Option21"
-
-Dim item31 As New MenuItem()
-
-item31.Header = "Custom Option31"
-
-menu1.Items.Add(item11)
-
-menu1.Items.Add(item21)
-
-menu1.Items.Add(item31)
-
-diagramView.NodeContextMenu = menu1
-
-diagramView.LineConnectorContextMenu = menu1
-
-{% endhighlight %}
-
-_Note: If any node’s context menu is assigned using the ContextMenu property of that node, then it will take precedence over the DiagramView’s NodeContextMenu property. The same applies to Line Connectors._
-
-## Behaviour Changes
-
-The following are the changes made from version 10.1.0.44: 
-
-* The Bounds property of DiagramView will not have any effect and instead a new LayoutBounds property has been implemented with Horizontal and Vertical alignment of Diagram within rectangular bounds.
-* Hereafter RefreshLayout has to be used to update the layout instead of calling StartNodeArrangement and PrepareActivity methods.
-
-## Frequently Asked Questions
-
-This section comprises an assembled list of questions and answers to provide expert solutions on product and its usage. It contains the following:
-
-Common—Answers common questions that arises in minds of fresh users of Essential Diagram WPF.
-
-Advanced—Answers questions that are in an advanced level, meant for experts.
-
-### Common
-
-This section answers the following common question that arises in the minds of fresh users of Essential Diagram WPF. 
-
-#### Refresh the Tree Layout while Binding Dynamic Data to the Diagram
-
-Essential Diagram for WPF provides support to bind dynamic data to the diagram.. But once the new data is assigned, the tree needs to be refreshed. This can be done using the RefreshLayout method. 
-
-The following code can be used to refresh the layout:
-{% highlight c# %}
-[C#]
-
-
-
-diagramModel.ItemsSource = dataobj;
-
-DirectedTreeLayout tree = new DirectedTreeLayout(diagramModel, diagramView);
-
-tree.RefreshLayout();
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-diagramModel.ItemsSource = dataobj
-
-Dim tree As New DirectedTreeLayout(DiagramModel, DiagramView)
-
-tree.RefreshLayout()
-
-{% endhighlight %}
-
-In case the hierarchical layout is being used, then the following code can be used:
-
-{% highlight c# %}
-
-[C#]
-
-
-
-diagramModel.ItemsSource = dataobj;
-
-HierarchicalTreeLayout tree = new HierarchicalTreeLayout(diagramModel, diagramView);
-
-tree.RefreshLayout();
-
-{% endhighlight %}
-{% highlight vbnet %}
-[VB]
-
-
-
-diagramModel.ItemsSource = dataobj
-
-Dim tree As New HierarchicalTreeLayout(DiagramModel, DiagramView)
-
-tree.RefreshLayout()
-
-{% endhighlight %}
-
-So once data has been assigned, call the RefreshLayout() method of the corresponding tree-layout.
-
-#### Host an UIElement as Node’s Content
-
-You can host any content inside the node using the Content property.
-{% highlight c# %}
-[C#]
-
-
-
-Node n = new Node();
-
-n.Shape = Shapes.FlowChart_Card;
-
-Button b = new Button();
-
-b.Content = "Click ME!";
-
-n.Content = b;
-
-(n.Content as Button).IsHitTestVisible = true;
-
-
-
-{% endhighlight  %}
-{% highlight vbnet %}
-[VB]
-
-
-
-Dim n As New Node()
-
-n.Shape = Shapes.FlowChart_Card
-
-Dim b As New Button()
-
-b.Content = "Click ME!"
-
-n.Content = b
-
-TryCast(n.Content, Button).IsHitTestVisible = True
-
-{% endhighlight %}
-
-![](Diagram-View_images/Diagram-View_img90.jpeg)
-
-
-
-_NodeContent_
-
-Here, Button is a UIElement. Similarly any UIElement can be hosted as Node’s Content.
-
-### Customize Node’s Shape
-
-Users can specify their own custom shapes to be used for the node as follows. First create a style resource that contains your custom shape.
-{% highlight xml %}
-[XAML]
-
-
-
-<Style TargetType="{x:Type Path}" x:Key="myNode">
-
-    <Setter Property="Data" Value="M200,239L200,200 240,239 280,202 320,238 281,279 240,244 198,279z"></Setter>
-
-    <Setter Property="Fill" Value="MidnightBlue" />
-
-</Style>
-
-{% endhighlight  %}
-
-Now use it for the node; the following code can be used as an example.
-{% highlight c# %}
-[C#]
-
-
-
-Style s = (Style)this.Resources["myNode"];
-
-Node n = new Node();
-
-n.Shape = Shapes.CustomPath;
-
-n.CustomPathStyle = s;
-
-diagramModel.Nodes.Add(n);
-
-{% endhighlight %}
-{% highlight vbnet %}
-
-[VB]
-
-Dim s As Style = CType(Me.Resources("myNode"), Style)
-
-Dim n As New Node()
-
-n.Shape = Shapes.CustomPath
-
-n.CustomPathStyle = s
-
-diagramModel.Nodes.Add(n)
-
-{% endhighlight  %}
-
-![](Diagram-View_images/Diagram-View_img91.jpeg)
-
-
-
-_CustomNode_
-
-### Apply Style with Triggers for all the Nodes
-
-You can specify style with triggers which is applied to all the Nodes as shown in the following code snippet.
-{% highlight xml %}
-[XAML]
-
-
-
-            <Style TargetType="{x:Type syncfusion:Node}" x:Key="{x:Type syncfusion:Node}">
-
-                <Setter Property="LabelHorizontalAlignment" Value="Center"/>
-
-                <Setter Property="LabelVerticalAlignment" Value="Center"/>
-
-                <Setter Property="Foreground" Value="Black"/>
-
-                <Setter Property="FontWeight" Value="Bold"/>
-
-                <Style.Triggers>
-
-                    <Trigger Property="Level"  Value="0">
-
-                        <Setter Property="CustomPathStyle">
-
-                            <Setter.Value>
-
-                                <Style TargetType="{x:Type Path}">
-
-                                    <Setter Property="Fill" Value="LightGray" />
-
-                                </Style>
-
-                            </Setter.Value>
-
-                        </Setter>
-
-                    </Trigger>
-
-                    <Trigger Property="Level"  Value="2">
-
-                        <Setter Property="CustomPathStyle">
-
-                            <Setter.Value>
-
-                                <Style TargetType="{x:Type Path}">
-
-                                    <Setter Property="Fill" Value="LightBlue" />
-
-                                </Style>
-
-                            </Setter.Value>
-
-                        </Setter>
-
-                    </Trigger>
-
-                </Style.Triggers>
-
-            </Style>
-{% endhighlight  %}
-
-#### Restrict Port Connections
-
-Using the events provided for LineConnectors we can restrict making connections to ports by checking the desired condition in the event handler. 
-
-Let us consider a case where we want to restrict making connections to the port based on the color of the ports, say connections should only happen when the ports are of same color.
-
-There are two scenarios that we need to take care of:
-
-Scenario 1
-
-In case a new connection is being created by dragging from one port to another, The 
-AfterConnectionCreate event can be used. This event fires soon after a new connection is created.
-
-The following is the code example for restricting connections between ports and allowing connecting ports of the same color:
-{% highlight c# %}
-[C#]
-
-
-
-// Declare the event.
-
-diagramView.AfterConnectionCreate += new ConnDragEndChangedEventHandler(diagramView_AfterConnectionCreate);
-
-
-
-// Handle the event.
-
-void diagramView_AfterConnectionCreate(object sender, ConnDragEndRoutedEventArgs evtArgs)
-
-{
-
-LineConnector line = evtArgs.Connector;
-
-if (line.ConnectionTailPort != null && line.ConnectionHeadPort != null && line.ConnectionTailPort.PortStyle.Fill == line.ConnectionHeadPort.PortStyle.Fill)
-
-{
-
-// Do nothing.
-
-}
-
-else
-
-{
-
-// Remove the connection.
-
-diagramModel.Connections.Remove(evtArgs.Connector);
-
-}
-
-}
-
-{% endhighlight  %}
-{% highlight vbnet %}
-[VB]
-
-
-
-'Declare the event.
-
-Private diagramView.AfterConnectionCreate += New ConnDragEndChangedEventHandler(AddressOf diagramView_AfterConnectionCreate)
-
-
-
-'Handle the event.
-
-Private Sub diagramView_AfterConnectionCreate(ByVal sender As Object, ByVal evtArgs As ConnDragEndRoutedEventArgs)
-
-   Dim line As LineConnector = evtArgs.Connector
-
-   If line.ConnectionTailPort IsNot Nothing AndAlso line.ConnectionHeadPort IsNot Nothing       AndAlso line.ConnectionTailPort.PortStyle.Fill = line.ConnectionHeadPort.PortStyle.Fill    Then
-
-     'Do nothing.
-
-   Else
-
-     'Remove the connection.
-
-      diagramModel.Connections.Remove(evtArgs.Connector)
-
-   End If
-
-End Sub
-
-
-{% endhighlight  %}
-Scenario 2
-
-In case an already existing connection is been dragged to connect to other ports, then the 
-ConnectorDragStart and ConnectorDragEnd events can be used to restrict connections.
-As the name implies, the ConnectorDragStart event fires when either ends of the connector is dragged.
-The ConnectorDragEnd fires soon after the drag operation is complete.
-The following is the code example for restricting connections between ports and allow only red ports to connect.
-{% highlight c# %}
-[C#]
-
-
-
-// Declare the event.
-
-diagramView.ConnectorDragStart += new ConnDragChangedEventHandler(diagramView_ConnectorDragStart);
-
-
-
-// To store the previous port to which the line was connected to.
-
-ConnectionPort oldport;
-
-
-
-// Handle the event.
-
-void diagramView_ConnectorDragStart(object sender, ConnDragRoutedEventArgs evtArgs)
-
-{
-
-LineConnector line = evtArgs.Connector;
-
-if (evtArgs.FixedNodeEnd == line.TailNode)
-
-oldport = line.ConnectionHeadPort;
-
-else
-
-oldport = line.ConnectionTailPort;
-
-}
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-'Declare the event.
-
-Private diagramView.ConnectorDragStart += New ConnDragChangedEventHandler(AddressOf diagramView_ConnectorDragStart)
-
-
-
-        'To store the previous port to which the line was connected to.
-
-        Private oldport As ConnectionPort
-
-
-
-        'Handle the event.
-
-Private Sub diagramView_ConnectorDragStart(ByVal sender As Object, ByVal evtArgs As ConnDragRoutedEventArgs)
-
-        Dim line As LineConnector = evtArgs.Connector
-
-        If evtArgs.FixedNodeEnd = line.TailNode Then
-
-            oldport = line.ConnectionHeadPort
-
-        Else
-
-            oldport = line.ConnectionTailPort
-
-        End If
-
-End Sub
-
-{% endhighlight %}
-
-Now once you have stored the oldport, you can check for the condition in ConnectorDragEnd event as follows.
-{% highlight c# %}
-[C#]
-
-
-
-// Declare the event.
-
-diagramView.ConnectorDragEnd += new ConnDragEndChangedEventHandler(diagramView_ConnectorDragEnd);
-
-
-
-// Handle the event.
-
-void diagramView_ConnectorDragEnd(object sender, ConnDragEndRoutedEventArgs evtArgs)
-
-{
-
-LineConnector line = evtArgs.Connector;
-
-if (line.ConnectionTailPort != null && line.ConnectionHeadPort != null &&     line.ConnectionTailPort.PortStyle.Fill ==  line.ConnectionHeadPort.PortStyle.Fill)
-
-{
-
-// Do nothing.
-
-}
-
-else
-
-{
-
-// Check to which end the old port has to be restored.
-
-if (evtArgs.HitNodeEnd == line.HeadNode && oldport != null)
-
-{
-
-evtArgs.Connector.ConnectionHeadPort = oldport;
-
-evtArgs.Connector.HeadNode = oldport.Node;
-
-}
-
-else
-
-{
-
-evtArgs.Connector.ConnectionTailPort = oldport;
-
-evtArgs.Connector.TailNode = oldport.Node;
-
-}
-
-}
-
-}
-
-{% endhighlight %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-'Declare the event.
-
-Private diagramView.ConnectorDragEnd += New ConnDragEndChangedEventHandler(AddressOf diagramView_ConnectorDragEnd)
-
-
-
-        'Handle the event.
-
-        Private Sub diagramView_ConnectorDragEnd(ByVal sender As Object, ByVal evtArgs As ConnDragEndRoutedEventArgs)
-
-            Dim line As LineConnector = evtArgs.Connector
-
-            If line.ConnectionTailPort IsNot Nothing AndAlso line.ConnectionHeadPort IsNot Nothing AndAlso line.ConnectionTailPort.PortStyle.Fill = line.ConnectionHeadPort.PortStyle.Fill Then
-
-                'Do nothing.
-
-            Else
-
-                'Check to which end the old port has to be restored.
-
-                If evtArgs.HitNodeEnd = line.HeadNode AndAlso oldport IsNot Nothing Then
-
-                    evtArgs.Connector.ConnectionHeadPort = oldport
-
-                    evtArgs.Connector.HeadNode = oldport.Node
-
-                Else
-
-                    evtArgs.Connector.ConnectionTailPort = oldport
-
-                    evtArgs.Connector.TailNode = oldport.Node
-
-                End If
-
-            End If
-
-        End Sub
-
-
-{% endhighlight  %}
-### Hide Resizer or Rotator’s Visibility of a Node
-
-Gripper or Rotator Visibility can be hidden using the following code example.
-{% highlight c# %}
-[C#]
-
-
-
-node.Loaded += new RoutedEventHandler(node_Loaded);
-
-//Hide the Node's Resizer and Rotator in the Node's loaded event.
-
-        void node_Loaded(object sender, RoutedEventArgs e)
-
-        {
-
-            Node node = sender as Node;
-
-            //node.Template will be null if it's template is not applied.
-
-            if (node != null && node.Template != null)
-
-            {
-
-                //To hide the Resizer.
-
-                (node.Template.FindName("PART_Resizer", node) as Control).Template = null;
-
-                //To hide the Rotator.
-
-                (node.Template.FindName("PART_Rotator", node) as Control).Template = null;
-
-            }
-
-        }
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-  Private node.Loaded += New RoutedEventHandler(AddressOf node_Loaded)
-
-  'Hide the Node's Resizer and Rotator in the Node's loaded event.
-
-   Private Sub node_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-
-      Dim node As Node = TryCast(sender, Node)
-
-      'node.Template will be null if it's template is not applied.
-
-      If node IsNot Nothing AndAlso node.Template IsNot Nothing Then
-
-        'To hide the Resizer.
-
-        TryCast(node.Template.FindName("PART_Resizer", node), Control).Template = Nothing
-
-        'To hide the Rotator.
-
-        TryCast(node.Template.FindName("PART_Rotator", node), Control).Template = Nothing
-
-      End If
-
-    End Sub
-
-{% endhighlight %}
-
-_Note: Node’s Template will be available only after its template is applied, so if you try to do these operations before it will not give an expected result._
-
-#### Hide the Default Center Port of a Node
-
-Each node will have a default center port visibility of this port can be hidden using the following statement.
-{% highlight c# %}
-[C#]
-
-
-
-node.Loaded += new RoutedEventHandler(node_Loaded);
-
-        //Hide the Node's center port in the Node's loaded event.
-
-        void node_Loaded(object sender, RoutedEventArgs e)
-
-        {
-
-            Node node = sender as Node;
-
-            if (node.Ports.Count > 0)
-
-            {
-
-                node.Ports[0].Visibility = Visibility.Hidden;
-
-            }
-
-        }
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-       Private node.Loaded += New RoutedEventHandler(AddressOf node_Loaded)
-
-        'Hide the Node's center port in the Node's loaded event.
-
-        Private Sub node_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-
-            Dim node As Node = TryCast(sender, Node)
-
-            If node.Ports.Count > 0 Then
-
-                node.Ports(0).Visibility = Visibility.Hidden
-
-            End If
-
-        End Sub
-
-{% endhighlight  %}
-
-_Note: node.Ports[0] refers to the center port. This default center port will be available only after the Node’s Template is applied. So you have to change the Visibility accordingly._
-
-#### Programmatically Rotate a Node and Keep the Label Horizontal after Rotating
-
-Node can be programmatically rotated and the Label can be kept horizontal after rotation using the following code example.
-{% highlight c# %}
-[C#]
-
-
-
-Node NewClient = new Node();
-
-NewClient.Shape = Shapes.FlowChart_Card;
-
-diagramModel.Nodes.Add(NewClient);
-
-
-
-double angle = 90;
-
-NewClient.RenderTransform = new RotateTransform(angle);
-
-NewClient.Label = "90 deg rotation";
-
-NewClient.RenderTransformOrigin = new System.Windows.Point(0.5, 0.5);
-
-NewClient.LabelAngle = 360 - angle;
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-
-
-[VB]
-
-
-
-Dim NewClient As New Node()
-
-NewClient.Shape = Shapes.FlowChart_Card
-
-diagramModel.Nodes.Add(NewClient)
-
-
-
-Dim angle As Double = 90
-
-NewClient.RenderTransform = New RotateTransform(angle)
-
-NewClient.Label = "90 deg rotation"
-
-NewClient.RenderTransformOrigin = New System.Windows.Point(0.5, 0.5)
-
-NewClient.LabelAngle = 360 - angle
-
-
-{% endhighlight  %}
-Here diagramModel is an instance of DiagramModel.
-
-#### Identify the Shapes Dropped on the Page from the Palette
-
-The SymbolPaletteItemName property can be used to identify the item dropped on the page in the NodeDrop event. This is particularly useful when you have to identify the item which is dropped and performs an operation on the node before it is added to the View. The Name property of the SymbolPaletteItem can be set while adding the item to the palette and thenby using SymbolPaletteItemName property in the eventargs of NodeDrop.A reference to the corresponding SymbolPaletteItem can be obtained.
-{% highlight c# %}
-[C#]
-
-
-
-SymbolPaletteItem ss = new SymbolPaletteItem();
-
-Label l = new Label();
-
-l.Content = "Label";
-
-ss.Content = l;
-
-ss.Name = "MyItem";
-
-{% endhighlight %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-Dim ss As New SymbolPaletteItem()
-
-Dim l As New Label()
-
-l.Content = "Label"
-
-ss.Content = l
-
-ss.Name = "MyItem"
-
-{% endhighlight %}
-
-The NodeDrop event can be declared:
-{% highlight c# %}
-[C#]
-
-
-
-// Declare the event.
-
-diagramView.NodeDrop += new NodeDroppedEventHandler(diagramView_NodeDrop);
-
-// Handle the event.
-
-void diagramView_NodeDrop(object sender, NodeDroppedRoutedEventArgs evtArgs)
-
-{
-
-if(evtArgs.SymbolPaletteItemName=="MyItem")
-
-{
-
-// User-specified code.
-
-}}
-
-{% endhighlight %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-'Declare the event.
-
-Private diagramView.NodeDrop += New NodeDroppedEventHandler(AddressOf diagramView_NodeDrop)
-
-
-
-        'Handle the event.
-
-        Private Sub diagramView_NodeDrop(ByVal sender As Object, ByVal evtArgs As NodeDroppedRoutedEventArgs)
-
-            If evtArgs.SymbolPaletteItemName = "MyItem" Then
-
-                'User-specified code.
-
-            End If
-
-        End Sub
-{% endhighlight %}
-
-#### Hide ContextMenu for all Nodes and Connections
-
-ContextMenu for all Nodes and LineConnectors can be hidden using the following code snippet.
-{% highlight c# %}
-[C#]
-
-
-diagramView.NodeContextMenu = new ContextMenu { Visibility = Visibility.Collapsed };
-
-diagramView.LineConnectorContextMenu = new ContextMenu { Visibility = Visibility.Collapsed };
-
-
-{% endhighlight %}
-
-{% highlight vbnet %}
-[VB]
-
-
-diagramView.NodeContextMenu = New ContextMenu With {.Visibility = Visibility.Collapsed}
-
-diagramView.LineConnectorContextMenu = New ContextMenu With {.Visibility = Visibility.Collapsed}
-
-{% endhighlight  %}
-
-Where, diagramView is an instance of DiagramView
-
-#### How can the nudge operation be stopped?
-
-The nudge operation can be stopped by handling the DiagramControl’s PreviewKeyDown event, as shown in the code example displayed below.
-{% highlight c# %}
-[C#]
-
-        //Register the PreviewKeyDown event.
-
-        diagramControl.PreviewKeyDown += new KeyEventHandler(MainWindow_PreviewKeyDown);
-
-        //Handle the PreviewKeyDown event for the arrow keys.
-
-        void MainWindow_PreviewKeyDown(object sender, KeyEventArgs e)
-
-        {
-
-            if (e.Key == Key.Up || e.Key == Key.Down || e.Key == Key.Right || e.Key == Key.Left)
-
-            {
-
-                e.Handled = true;
-
-            }
-
-        }
-{% endhighlight  %}
-{% highlight vbnet %}
-
-
-[VB]
-
-'Register the PreviewKeyDown event.
-
-Private diagramControl.PreviewKeyDown += New KeyEventHandler(AddressOf MainWindow_PreviewKeyDown)
-
-        'Handle the PreviewKeyDown event for the arrow keys.
-
-        Private Sub MainWindow_PreviewKeyDown(ByVal sender As Object, ByVal e As KeyEventArgs)
-
-            If e.Key = Key.Up OrElse e.Key = Key.Down OrElse e.Key = Key.Right OrElse e.Key = Key.Left Then
-
-                e.Handled = True
-
-            End If
-
-        End Sub
-{% endhighlight  %}
-
-####  How can MultipleTrigger be applied for a Node?
-
-MultiTrigger enables you to set the property values or start actions based on a collection of conditions. A condition is met when the element’s property value matches the specified value. This comparison is performed by a reference equality check. The following example shows how to use MultipleTrigger.
-{% highlight xml %}
-[XAML]
-
-    <Style.Triggers>
-
-        <MultiTrigger>
-
-            <MultiTrigger.Conditions>
-
-                <Condition Property="IsSelected" Value="True"/>
-
-                <Condition Property="Tag" Value="True"/>
-
-            </MultiTrigger.Conditions>
-
-            <Setter Property="Effect">
-
-                <Setter.Value>
-
-                    <DropShadowEffect Color="Gray" BlurRadius="5" Direction="325" ShadowDepth="5"/>
-
-                </Setter.Value>
-
-            </Setter>
-
-        </MultiTrigger>
-
-    </Style.Triggers>
-
-{% endhighlight %}
-
-If a Node has the above Trigger set in its Style, then the Node will have a DropShadowEffect when both the IsSelected property and the Tag property are set to True.
-
-###  Advanced
-
-This section answers the following questions that are in an advanced level, meant for experts.
-
-#### Animate the Dodes in the Diagram
-
-You can perform many kinds of animations on nodes by using the double animation. Rotation and Translation are some of the basic operations performed on the nodes. You can use double animation to perform these operations on the node in a specific pattern.
-
-To rotate a node, the following code can be used.
-{% highlight c# %}
-[C#]
-
-
-
-DoubleAnimation nodeanimation = new DoubleAnimation();
-
-nodeanimation.From = 0;
-
-nodeanimation.To = 360;
-
-nodeanimation.Duration = new Duration(new TimeSpan(0, 0, 0, 0, 500));
-
-nodeanimation.RepeatBehavior = new RepeatBehavior(15);
-
-
-
-RotateTransform rt = new RotateTransform();
-
-nodeObj.RenderTransform = rt;
-
-nodeObj.RenderTransformOrigin = new Point(.5, .5);
-
-rt.BeginAnimation(RotateTransform.AngleProperty, nodeanimation);
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-Dim nodeanimation As New DoubleAnimation()
-
-nodeanimation.From = 0
-
-nodeanimation.To = 360
-
-nodeanimation.Duration = New Duration(New TimeSpan(0, 0, 0, 0, 500))
-
-nodeanimation.RepeatBehavior = New RepeatBehavior(15)
-
-
-
-Dim rt As New RotateTransform()
-
-nodeObj.RenderTransform = rt
-
-nodeObj.RenderTransformOrigin = New Point(.5,.5)
-
-rt.BeginAnimation(RotateTransform.AngleProperty, nodeanimation)
-
-
-{% endhighlight  %}
-To translate a node with respect to the x-axis, the TranslateTransform can be applied.
-
-
-{% highlight c# %}
-[C#]
-
-
-
-DoubleAnimation nodeanimation = new DoubleAnimation();
-
-nodeanimation.From = 500;
-
-nodeanimation.To = 0;
-
-nodeanimation.Duration = new Duration(new TimeSpan(0, 0, 0, 0, 500));
-
-nodeanimation.RepeatBehavior = new RepeatBehavior(1);
-
-{% endhighlight  %}
-{% highlight  vbnet %}
-
-[VB]
-
-
-
-Dim nodeanimation As New DoubleAnimation()
-
-nodeanimation.From = 500
-
-nodeanimation.To = 0
-
-nodeanimation.Duration = New Duration(New TimeSpan(0, 0, 0, 0, 500))
-
-nodeanimation.RepeatBehavior = New RepeatBehavior(1)
-{% endhighlight  %}
-
-
-Once you have created the double animation, you can then apply it to the node which we want to translate in the following way.
-
-{% highlight c# %}
-
-[C#]
-
-
-
-DoubleAnimation nodeanimation = new DoubleAnimation();
-
-nodeanimation.From = 500;
-
-nodeanimation.To = 0;
-
-nodeanimation.Duration = new Duration(new TimeSpan(0, 0, 0, 0, 500));
-
-nodeanimation.RepeatBehavior = new RepeatBehavior(1);
-
-
-
-TranslateTransform rt = new TranslateTransform();
-
-nodeObj.RenderTransform = rt;
-
-rt.BeginAnimation(TranslateTransform.XProperty, nodeanimation);
-
-
-{% endhighlight  %}
-{% highlight vbnet %}
-[VB]
-
-
-
-Dim nodeanimation As New DoubleAnimation()
-
-nodeanimation.From = 500
-
-nodeanimation.To = 0
-
-nodeanimation.Duration = New Duration(New TimeSpan(0, 0, 0, 0, 500))
-
-nodeanimation.RepeatBehavior = New RepeatBehavior(1)
-
-
-
-Dim rt As New TranslateTransform()
-
-nodeObj.RenderTransform = rt
-
-rt.BeginAnimation(TranslateTransform.XProperty, nodeanimation)
-{% endhighlight  %}
-
-#### Print DiagramPage in Uniform Print Mode Using Framework Print Dialog
-
-DiagramPage can also be printed using Framework PrintDialog instead of using syncfusion DiagramControlPrintPreview Dialog, as shown in the following code example.
-
-{% highlight c# %}
-
-[C#]
-
-     //Create Framwork Print Dialog.
-
-            PrintDialog PrintDialog = new PrintDialog();
-
-            //Open Print Dialog.
-
-            Nullable<Boolean> printClicked = PrintDialog.ShowDialog();
-
-
-
-            //If Print is clicked.
-
-            if (printClicked == true)
-
-            {
-
-                //Print the Diagram Page.
-
-                //Get Printer Capabilities.
-
-                PrintCapabilities printCapabilities = PrintDialog.PrintQueue.GetPrintCapabilities(PrintDialog.PrintTicket);
-
-                Size pageAreaSize = new Size(printCapabilities.PageImageableArea.ExtentWidth, printCapabilities.PageImageableArea.ExtentHeight);
-
-
-
-                //Visual Brush for the DiagramPage to be printed.
-
-                VisualBrush VisualBrush = new VisualBrush(diagramView.Page);
-
-                VisualBrush.Stretch = Stretch.Uniform;
-
-                VisualBrush.ViewboxUnits = BrushMappingMode.Absolute;
-
-                VisualBrush.Viewbox = new Rect(0, 0, diagramView.Page.ActualWidth, diagramView.Page.ActualHeight);
-
-
-
-                //Rectangle to contain the VisualBrush. 
-
-                Rectangle rect = new Rectangle();
-
-                rect.Fill = VisualBrush;
-
-                rect.Arrange(new Rect(new Point(0, 0), pageAreaSize));
-
-                SetViewport(VisualBrush, new Size(diagramView.Page.ActualWidth, diagramView.Page.ActualHeight));
-
-
-
-                //Print the Page.
-
-                XpsDocumentWriter writer = PrintQueue.CreateXpsDocumentWriter(PrintDialog.PrintQueue);
-
-                writer.Write(rect, PrintDialog.PrintTicket);
-
-            }
-
-
-
-        //Paint the brush to fit uniformly.
-
-        private void SetViewport(VisualBrush brush, Size size)
-
-        {
-
-            double coefficientHeight = size.Height / brush.Viewbox.Height;
-
-            double coefficientWidth = size.Width / brush.Viewbox.Width;
-
-
-
-            if (coefficientHeight < coefficientWidth)
-
-            {
-
-                double width = coefficientHeight * brush.Viewbox.Width / size.Width;
-
-                double x = (1 - width) / 2;
-
-                brush.Viewport = new Rect(new Point(x, 0), new Size(width, 1));
-
-            }
-
-            else if (coefficientHeight > coefficientWidth)
-
-            {
-
-                double height = coefficientWidth * brush.Viewbox.Height / size.Height;
-
-                double y = (1 - height) / 2;
-
-                brush.Viewport = new Rect(new Point(0, y), new Size(1, height));
-
-            }
-
-        }
-
-
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-     'Create Framwork Print Dialog.
-
-        Dim PrintDialog As New PrintDialog()
-
-        'Open Print Dialog.
-
-        Dim printClicked As Nullable(Of Boolean) = PrintDialog.ShowDialog()
-
-
-
-        'If Print is clicked.
-
-If printClicked.GetValueOrDefault() = True Then
-
-        'Print the Diagram Page.
-
-        'Get Printer Capabilities.
-
-        Dim printCapabilities As PrintCapabilities = PrintDialog.PrintQueue.GetPrintCapabilities(PrintDialog.PrintTicket)
-
-        Dim pageAreaSize As New Size(PrintCapabilities.PageImageableArea.ExtentWidth, PrintCapabilities.PageImageableArea.ExtentHeight)
-
-
-
-        'Visual Brush for the DiagramPage to be printed.
-
-        Dim VisualBrush As New VisualBrush(DiagramView.Page)
-
-VisualBrush.Stretch = Stretch.Uniform
-
-VisualBrush.ViewboxUnits = BrushMappingMode.Absolute
-
-VisualBrush.Viewbox = New Rect(0, 0, diagramView.Page.ActualWidth, diagramView.Page.ActualHeight)
-
-
-
-        'Rectangle to contain the VisualBrush. 
-
-        Dim rect As New Rectangle()
-
-rect.Fill = VisualBrush
-
-rect.Arrange(New Rect(New Point(0, 0), pageAreaSize))
-
-SetViewport(VisualBrush, New Size(diagramView.Page.ActualWidth, diagramView.Page.ActualHeight))
-
-
-
-        'Print the Page.
-
-        Dim writer As XpsDocumentWriter = PrintQueue.CreateXpsDocumentWriter(PrintDialog.PrintQueue)
-
-writer.Write(rect, PrintDialog.PrintTicket)
-
-End If
-
-
-
-        'Paint the brush to fit uniformly.
-
-private void SetViewport(VisualBrush brush, Size size)
-
-        Dim coefficientHeight As Double = Size.Height / Brush.Viewbox.Height
-
-        Dim coefficientWidth As Double = Size.Width / Brush.Viewbox.Width
-
-
-
-If coefficientHeight < coefficientWidth Then
-
-        Dim width As Double = coefficientHeight * Brush.Viewbox.Width / Size.Width
-
-        Dim x As Double = (1 - Width) / 2
-
-brush.Viewport = New Rect(New Point(x, 0), New Size(width, 1))
-
-ElseIf coefficientHeight > coefficientWidth Then
-
-        Dim height As Double = coefficientWidth * Brush.Viewbox.Height / Size.Height
-
-        Dim y As Double = (1 - Height) / 2
-
-brush.Viewport = New Rect(New Point(0, y), New Size(1, height))
-
-End If
-{% endhighlight  %}
-
-#### Save the Current Zoom Settings and Load the Settings Back
-
-Zoom settings can be saved into variables and this saved settings can be applied back again using the following code example.
-{% highlight c# %}
-[C#]
-
-            //Save current zoom setting.
-
-            double SavedZoomFactor = diagramView.ZoomFactor;
-
-            double SavedCurrentZoom = (double) diagramView.GetValue(DiagramView.CurrentZoomProperty);
-
-
-
-
-
-            //Load the saved zoom settings.
-
-            //Reset the current zoom
-
-            ZoomCommands.Reset.Execute(diagramView.Page, diagramView);
-
-            //Set the zoom factor temporarily to the stored CurrentZoomProperty 
-
-            diagramView.ZoomFactor = SavedCurrentZoom - 1;
-
-            //Now if a zoom operation is performed, we will get the stored zoom setting.
-
-            ZoomCommands.ZoomIn.Execute(diagramView.Page, diagramView);
-
-            //Change the Zoom factor to the required value.
-
-            diagramView.ZoomFactor = SavedZoomFactorr;
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-[VB]
-
-
-
-'Save current zoom setting.
-
-        Dim SavedZoomFactor As Double = DiagramView.ZoomFactor
-
-        Dim SavedCurrentZoom As Double = CDbl(DiagramView.GetValue(DiagramView.CurrentZoomProperty))
-
-
-
-        'Load the saved zoom settings.
-
-        'Reset the current zoom
-
-ZoomCommands.Reset.Execute(diagramView.Page, diagramView)
-
-        'Set the zoom factor temporarily to the stored CurrentZoomProperty 
-
-diagramView.ZoomFactor = SavedCurrentZoom - 1
-
-        'Now if a zoom operation is performed, we will get the stored zoom setting.
-
-ZoomCommands.ZoomIn.Execute(diagramView.Page, diagramView)
-
-        'Change the Zoom factor to the required value.
-
-diagramView.ZoomFactor = SavedZoomFactorr
-{% endhighlight  %}
-
-#### Label Alignment
-
-You are provided with a lot more alignment options to customize Label of Node and Connector.
-
-_Label Alignment_
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Property Type</th><th>
-Accepted Value</th><th>
-Any other dependencies/ sub-properties associated</th></tr>
-<tr>
-<td>
-LabelHorizontalTextAllignment</td><td>
-Specifies the Horizontal Text alignment of the Label. </td><td>
-Dependency property</td><td>
-HorizontalAlignment.CenterHorizontalAlignment.LeftHorizontalAlignment.RightHorizontalAlignment.Stretch;</td><td>
-No</td></tr>
-<tr>
-<td>
-LabelVerticalTextAllignment</td><td>
-Specifies the Vertical Text alignment of the Label.</td><td>
-Dependency property</td><td>
-VerticalAlignment.Center;VerticalAlignment.Top;VerticalAlignment.Bottom;VerticalAlignment.Stretch;</td><td>
-No</td></tr>
-</table>
-
-
-The following code snippet depicts the behavior of LabelHorizontalTextAllignment and LabelVerticalTextAllignment.
-{% highlight c# %}
-[C#]
-
-Node node = new Node();
-
-node.Label = "LabelText";
-
-node.Shape = Shapes.FlowChart_Decision;
-
-node.LabelHorizontalTextAlignment = HorizontalAlignment.Right;
-
-node.LabelVerticalTextAlignment = VerticalAlignment.Top;
-
-
-{% endhighlight %}
-![C:/Users/saranya/Desktop/text.jpg](Diagram-View_images/Diagram-View_img92.jpeg)
-
-
-
-_LabelAllignment_
-
-####  Label Resizer
-
-You are provided with support for Label Selection and Resizing at runtime. This feature can be enabled by using IsEnableLabelSelection property in DiagramView. By enabling this property you are able to resize, drag and rotate the LabelEditor like Nodes. The default value is “False”.
-
-_Label Resizer_
-
-<table>
-<tr>
-<th>
-Property</th><th>
-Description</th><th>
-Property Type</th><th>
-Accepted Value</th><th>
-Any other dependencies/ sub-properties associated</th></tr>
-<tr>
-<td>
-IsEnableLabelSelection</td><td>
-Gets or sets a value indicating whether to select the node or not. The default value is “False”.</td><td>
-Dependency property</td><td>
-Boolean (True/False)</td><td>
-No</td></tr>
-</table>
-
-
-The following code example is used to enable LabelEditor for Nodes.
-{% highlight c# %}
-[C#]
-
-DiagramView view = new DiagramView();
-
-view.IsEnableLabelSelection = true;
-
-Node node = new Node();
-
-node.LabelWidth = 100;
-
-node.LabelHeight = 100;
-
-node.Label = "LabelEditor";
-
-{% endhighlight  %}
-
-![C:/Users/saranya/Desktop/ls.jpg](Diagram-View_images/Diagram-View_img93.jpeg)
-
-
-
-_LableEditor for Node_
-
-The following code example is used to enable LabelEditor for Connectors.
-{% highlight c# %}
-[C#]
-
-DiagramView view = new DiagramView();
-
-view.IsEnableLabelSelection = true;
-
-LineConnector conn = new LineConnector();
-
-conn.LabelWidth = 100;
-
-conn.LabelHeight = 100;
-
-conn.Label = "LabelEditor";
-{% endhighlight %}
-
-
-![](Diagram-View_images/Diagram-View_img94.jpeg)
-
-
-
-_LabelEditor for Connector_
-
-
-
-
 

@@ -7,11 +7,9 @@ control: Sparkline
 documentation: ug
 ---
 
-# Add labels for track ball
+### Add labels for track ball
 
 We can add labels for track ball to show the corresponding values. In order to add labels for the trackball, you need to subscribe the event OnSparklineMouseMove and you can get the following data’s from event argument.
-
-{% highlight xml %}
 
 [XAML]
 
@@ -24,9 +22,8 @@ We can add labels for track ball to show the corresponding values. In order to a
             <Syncfusion:SfLineSparkline ShowTrackBall="True" OnSparklineMouseMove="SfLineSparkline_OnSparklineMouseMove" x:Name="sparkline" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
 
             </Syncfusion:SfLineSparkline>
-{% endhighlight %}
 
-{% highlight C# %}
+
 
 [C#]
 
@@ -55,10 +52,10 @@ We can add labels for track ball to show the corresponding values. In order to a
             info.Arrange(new Rect(args.Coordinate.X,args.Coordinate.Y,info.ActualWidth,info.ActualHeight));
 
         }
-{% endhighlight %}
+
 Following is the snapshot for track ball labels,
 
-![C:/Users/ApoorvahR/Desktop/13.png](Add-labels-for-track-ball_images/Add-labels-for-track-ball_img1.png)
+{{ '![C:/Users/ApoorvahR/Desktop/13.png](Add-labels-for-track-ball_images/Add-labels-for-track-ball_img1.png)' | markdownify }}
 
 
 

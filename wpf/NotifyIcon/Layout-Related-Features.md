@@ -32,6 +32,7 @@ Sets the visual style for the NotifyIcon control. The options provided are as fo
 The below code can be used to set various visual style.
 
 {%highlight c#%}
+[C#]
 
 
 
@@ -89,14 +90,14 @@ You can set the background and foreground for the BalloonTipHeader by using the 
 
 
 {%highlight xml%}
-
+[XAML]
 <syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify 
 Icon is Available"  BalloonTipTitle="Default NotifyIcon"  HeaderBackground="Blue" HeaderForeground="Red" 
 ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/>
 {%endhighlight%}
 
 {%highlight c#%}
-
+[C#]
 notifyIcon.HeaderForeground = Brushes.Red;notifyIcon.HeaderBackground = Brushes.Blue;
 {%endhighlight%}
 

@@ -15,7 +15,7 @@ Here is the code for setting this property.
 
 
 {%highlight xml%}
-
+[XAML]
    <!-- Adding CheckListBox -->
    <syncfusion:CheckListBox Name="checkListBox" IsCheckOnFirstClick="True"> 
    
@@ -29,8 +29,8 @@ Here is the code for setting this property.
    
 {%endhighlight%}
 
-{% highlight c# %}
-
+{%highlight c#%}
+[C#]
 // Enable the IsCheckOnFirstClick property.
 checkListBox.IsCheckOnFirstClick = true;  </td></tr>
 

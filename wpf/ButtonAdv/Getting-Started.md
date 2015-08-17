@@ -24,8 +24,7 @@ _Control Structure_
 The ButtonAdv control is available in the following assembly:
 
 *  Syncfusion.Shared.WPF
-
-### Setting Label
+## Setting Label
 
 
 The following code explains how to declare the ButtonAdv control using XAML.
@@ -51,7 +50,7 @@ button.Label = "Hello World";
 
 
 
-### Set Size Mode
+## Set Size Mode
 
 The size mode of the ButtonAdv control can be easily modified by using the property SizeMode. The SizeMode property contains the following values:
 
@@ -59,7 +58,7 @@ The size mode of the ButtonAdv control can be easily modified by using the prope
 * Normal
 * Large
 
-#### Small Mode
+## Small Mode
 
 When the SizeMode is set to Small, the icon of the ButtonAdv control is displayed without the label.
 
@@ -79,7 +78,7 @@ Use the following code example to set the SizeMode to Small:
 
 
 
-#### Normal Mode
+## Normal Mode
 
 The ButtonAdv control retains the default appearance, when the SizeMode is set to Normal.
 
@@ -97,7 +96,7 @@ Use the following code example to set the SizeMode to Normal:
 
 
 
-#### Large Mode
+## Large Mode
 
 When the SizeMode is set to Large, the ButtonAdv control is displayed with large icon and provides multiline support.
 
@@ -115,7 +114,7 @@ Use the following code example to set the SizeMode to Large:
 
 
 
-### Setting Image
+## Setting Image
 
 The image displayed on the control can be set using the following two properties:
 
@@ -169,7 +168,7 @@ The LargeIcon property can be set as follows:
 
 
 
-### Set Icon Width and Height
+## Set Icon Width and Height
 
 The Iconsize can be set using the following two properties:
 
@@ -200,7 +199,7 @@ The IconWidth and IconHeight can be set as follows:
 
 ## ButtonAdv Members
 
-### Properties
+Properties
 
 _Properties table_
 
@@ -304,7 +303,7 @@ IconSize</td></tr>
 </table>
 
 
-### Events
+Events
 
 _Events table_
 

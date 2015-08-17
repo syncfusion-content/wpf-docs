@@ -23,7 +23,6 @@ Here are some highlights about our CalendarEdit control.
 * You can select more than one "Date" value at a time
 * Display area of Calendar control is limited using abbreviated days and months
 * A ToolTip can be set to the required date, or by row and column
-
 ## Elaborate Structure of the Control
 
 
@@ -31,14 +30,15 @@ The various elements of CalendarEdit control are illustrated in the following im
 
 
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+{{ '![](Getting-Started_images/Getting-Started_img1.jpeg)' | markdownify }}
+{:.image }
 
 
 ## Create CalendarEdit Control
 
 There are two possible ways to create a simple CalendarEdit control.
 
-#### Through Designer
+Through Designer
 
 To create the CalendarEdit control through designer, follow the steps:
 
@@ -47,31 +47,27 @@ To create the CalendarEdit control through designer, follow the steps:
 
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+{{ '![](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
+{:.image }
 
 
 
 
-#### Programmatically
+Programmatically
 
 To create the CalendarEdit control through code, use the following XAML or C# code.
 
-{% highlight xml %}
-
-<!-- Adding CalendarEdit control -->
-<syncfusion:CalendarEdit Name="calendarEdit"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
-//Adding CalendarEdit as window contentthis.Content = calendarEdit;
-
-{% endhighlight %}
+<table>
+<tr>
+<td>
+[XAML]<!-- Adding CalendarEdit control --><syncfusion:CalendarEdit Name="calendarEdit"/></td></tr>
+<tr>
+<td>
+[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
+</table>
 
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
-
+{{ '![](Getting-Started_images/Getting-Started_img3.jpeg)' | markdownify }}
+{:.image }
 
 

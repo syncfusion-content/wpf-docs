@@ -7,12 +7,11 @@ control: UpDown Control
 documentation: ug
 ---
 
-# Change the alignment of the text in the UpDown control
+### Change the alignment of the text in the UpDown control
 
 You can change the alignment of the text in the UpDown control by using the TextAlignment property. The following code can be used to set the TextAlignment for the UpDown control. 
 
 The TextAlignment can set to the left in the UpDown control as shown in the following code example.
-{% highlight xml %}
 
  [XAML]
 
@@ -21,26 +20,23 @@ The TextAlignment can set to the left in the UpDown control as shown in the foll
 >
  </ syncfusion:UpDown> 
 
-{% endhighlight %}
 
-{% highlight C# %}
 
 [C#]
 
 UpDown upDown = new UpDown();
 
 upDown.TextAlignment = TextAlignment.Left;
-{% endhighlight %}
 
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1276.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img1.png)
 
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1276.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img1.png)' | markdownify }}
+{:.image }
 
 
 
 
 The TextAlignment can be set to the right in the UpDown control as shown in the following code example.
-{% highlight xml %}
 
  [XAML]
 
@@ -48,63 +44,58 @@ The TextAlignment can be set to the right in the UpDown control as shown in the 
 
 >
  </ syncfusion:UpDown> 
-{% endhighlight %}
 
-{% highlight C# %}
+
 
 [C#]
 
 UpDown upDown = new UpDown();
 
 upDown.TextAlignment = TextAlignment.Right;
-{% endhighlight %}
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1277.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img2.png)
 
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1277.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img2.png)' | markdownify }}
+{:.image }
 
 
 The TextAlignment can be set to the center in the UpDown control as shown in the following code example.
-
-{% highlight xml %}
 
  [XAML]
 
 <syncfusion:UpDown Name="upDown" TextAlignment="Center"> 
 </ syncfusion:UpDown> 
 
-{% endhighlight %}
-{% highlight C# %}
+
+
 [C#]
 
 UpDown upDown = new UpDown();
 
 upDown.TextAlignment = TextAlignment.Center;
-{% endhighlight %}
 
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1278.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img3.png)
 
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1278.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img3.png)' | markdownify }}
+{:.image }
 
 
 The TextAlignment can be set to Justify in the UpDown control as shown in the following code example.
-
-{% highlight xml %}
 
  [XAML]
 
 <syncfusion:UpDown Name="upDown" TextAlignment=" Justify "> 
 </ syncfusion:UpDown>
-{% endhighlight %}
 
-{% highlight C# %}
+
+
 [C#]
 
 UpDown upDown = new UpDown();
 
 upDown.TextAlignment = TextAlignment.Justify;
-{% endhighlight %}
 
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1276.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img4.png)
 
+{{ '![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1276.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img4.png)' | markdownify }}
+{:.image }
 
 

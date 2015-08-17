@@ -16,19 +16,19 @@ The text in the MaskedEdit is formatted by any one of the following formatting p
 3. IncludeLiterals
 4. IncludePromptAndLiterals
 
-### ExcludePromptAndLiterals
+## ExcludePromptAndLiterals
 
 Value contains only the typed characters, the prompt characters and literals are excluded.
 
-### IncludePrompt
+## IncludePrompt
 
 Value contains the typed characters and prompt characters, literals are excluded.
 
-### IncludeLiterals
+## IncludeLiterals
 
 Value contains the typed characters and literals, prompt characters are excluded.
 
-### IncludePromptAndLiterals
+## IncludePromptAndLiterals
 
 Value contains typed characters, prompt characters and literals.
 

@@ -7,15 +7,15 @@ control: DockingManager
 documentation: ug
 ---
 
-## Using of IsDragging
+### Using of IsDragging
 
 IsDragging property is used to find whether dragging takes place or not.
 
 
 
-{% highlight c# %}
+[C#]
 
 bool dragging = DockingManager.IsDragging;
 
-{% endhighlight %}
+
 

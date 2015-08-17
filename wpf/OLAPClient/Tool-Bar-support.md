@@ -273,10 +273,10 @@ _List of options in the_ _OLAP Grid Tool Bar_
 
 <table>
 <tr>
-<th>
-Icon</th><th>
-Name</th><th>
-Description</th></tr>
+<td>
+Icon</td><td>
+Name</td><td>
+Description</td></tr>
 <tr>
 <td>
 {{ '![](Tool-Bar-support_images/Tool-Bar-support_img28.png)' | markdownify }}
@@ -358,11 +358,11 @@ _Properties_
 
 <table>
 <tr>
-<th>
-Property</th><th>
-Description</th><th>
-Type</th><th>
-Data Type</th></tr>
+<td>
+Property</td><td>
+Description</td><td>
+Type</td><td>
+Data Type</td></tr>
 <tr>
 <td>
 ShowConnectOptionButton</td><td>

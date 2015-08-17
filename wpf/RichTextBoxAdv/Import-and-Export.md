@@ -19,15 +19,14 @@ The HTML import feature allows the user to import an .html file into the RichTex
 
 {% highlight C# %}
 
+[C#]     
  DocumentAdv doucment = HTMLImporting.ConvertToDocumentAdv(stream);  
  DocumentAdv document = HTMLImporting.ConvertToDocumentAdv(htmlstring);
- 
 {% endhighlight %}
 
 {% highlight C# %}
-
+[C#]       
 string html = HTMLExporting.ConvertToHtml(RichTextBox.Document, stream);
-
 {% endhighlight %}
 
 
@@ -35,16 +34,16 @@ string html = HTMLExporting.ConvertToHtml(RichTextBox.Document, stream);
 
 
 
-Methods Table
+_Methods Table_
 
 <table>
 <tr>
-<th>
-Method</th><th>
-Description</th><th>
-Parameters</th><th>
-Type</th><th>
-Return Type</th></tr>
+<td>
+Method</td><td>
+Description</td><td>
+Parameters</td><td>
+Type</td><td>
+Return Type</td></tr>
 <tr>
 <td>
 ConvertToDocumentAdv()</td><td>
@@ -77,7 +76,7 @@ This feature allows you to open and save the Word Doc and Docx format (.doc, .do
 
 The following assembly references are required to use this feature and its namespace.
 
-#### WPF 3.5 and 4.0 framework:
+### WPF 3.5 and 4.0 framework:
 
 * Assembly: Syncfusion.RichTextDocIOParser.Wpf
 * Dependent Assemblies: Syncfusion.Compression.Base, Syncfusion.Core, Syncfusion.DocIO.ClientProfile, Syncfusion.RichTextBoxAdv.Wpf, and Syncfusion.Shared.Wpf
@@ -85,7 +84,7 @@ The following assembly references are required to use this feature and its names
 
 
 
-#### WPF 4.5 and 4.5.1 framework:
+### WPF 4.5 and 4.5.1 framework:
 
 * Assembly: Syncfusion.RichTextDocIOParser. Wpf
 * Dependent Assemblies: Syncfusion.Compression.Base, Syncfusion.Core, Syncfusion.DocIO.Base, Syncfusion.RichTextBoxAdv.Wpf, and Syncfusion.Shared.Wpf
@@ -93,7 +92,7 @@ The following assembly references are required to use this feature and its names
 
 
 
-#### Silverlight platform:
+### Silverlight platform:
 
 * Assembly: Syncfusion.RichTextDocIOParser.Silverlight
 * Dependent Assemblies: Syncfusion.Compression.Silverlight, Syncfusion.DocIO.Silverlight, Syncfusion.RichTextBoxAdv.Silverlight, and Syncfusion.Shared.Silverlight
@@ -101,19 +100,19 @@ The following assembly references are required to use this feature and its names
 
 
 
-#### Doc and Docx Import
+### Doc and Docx Import
 
 You can convert the Word document stream to RichTextBoxAdv document by invoking the ConvertToDocumentAdv method from the extension class DocxImporting. 
 
-ConvertToDocumentAdv Method
+_ConvertToDocumentAdv Method_
 
 <table>
 <tr>
-<th>
-Method</th><th>
-Return Type</th><th>
-Parameters</th><th>
-Description</th></tr>
+<td>
+Method</td><td>
+Return Type</td><td>
+Parameters</td><td>
+Description</td></tr>
 <tr>
 <td>
 ConvertToDocumentAdv</td><td>
@@ -124,6 +123,10 @@ Converts the Word document stream to DocumentAdv instance.</td></tr>
 </table>
 
 {% highlight C# %}
+
+[C#]
+
+
 
 //Initializes the new RichTextBoxAdv control.
 
@@ -140,6 +143,7 @@ richTextBoxAdv.Document = DocxImporting.ConvertToDocumentAdv(documentStream, ".d
 {% endhighlight %}
 
 {% highlight vbnet %}
+[VB]
 
 'Initializes the new RichTextBoxAdv control.
 
@@ -159,15 +163,15 @@ richTextBoxAdv.Document = DocxImporting.ConvertToDocumentAdv(documentStream, ".d
 
 You can convert the RichTextBoxAdv document to Word document stream by invoking the ConvertToDocument method from the extension class DocxExporting. 
 
-ConvertToDocument Method
+_ConvertToDocument Method_
 
 <table>
 <tr>
-<th>
-Method</th><th>
-Return Type</th><th>
-Parameters</th><th>
-Description</th></tr>
+<td>
+Method</td><td>
+Return Type</td><td>
+Parameters</td><td>
+Description</td></tr>
 <tr>
 <td>
 ConvertToDocument</td><td>
@@ -177,6 +181,10 @@ Converts the DocumentAdv instance to Word document stream.</td></tr>
 </table>
 
 {% highlight C# %}
+
+[C#]
+
+
 
 //Saves the RichTextBoxAdv document to Word Doc format document stream.
 
@@ -189,6 +197,9 @@ DocxExporting.ConvertToDocument(richTextBoxAdv.Document, documentStream, ".docx"
 {% endhighlight %}
 
 {% highlight vbnet %}
+[VB]
+
+
 
 'Saves the RichTextBoxAdv document to Word Doc format document stream.
 
@@ -197,31 +208,33 @@ DocxExporting.ConvertToDocument(richTextBoxAdv.Document, documentStream, ".doc")
 'Saves the RichTextBoxAdv document to Word Docx format document stream.
 
 DocxExporting.ConvertToDocument(richTextBoxAdv.Document, documentStream, ".docx")
-
 {% endhighlight %}
 
-###  Limitations
+####  Limitations
 
 The .doc import/export and .docx import/export features have the following limitations:
 
 1. Hyperlinks do not work for tables of contents.
-
 ##  XAML Import/Export
 
 
 The XAML import feature allows users to import a .xaml file into the RichTextBoxAdv. It renders the XAML elements as XamlReader and displays the text in the format of RichTextBoxAdv’s content model. The XAML export feature actually exposes the RichTextBoxAdv’s document as a .xaml file. The following methods clearly show this use case.
-
 {% highlight C# %}
+
+[C#]
 
 RichTextBox.Document=XAMLImporting.ConvertToDocumentAdv(xamlStream)
-
 {% endhighlight %}
 
 {% highlight C# %}
 
-string xaml = XAMLExporting.ConvertToXAML(RichTextBox.Document, xamlstream);
+[C#]
 
+string xaml = XAMLExporting.ConvertToXAML(RichTextBox.Document, xamlstream);
 {% endhighlight %}
+
+
+
 
 Methods
 
@@ -231,12 +244,12 @@ _Methods table_
 
 <table>
 <tr>
-<th>
-Method</th><th>
-Description</th><th>
-Parameters</th><th>
-Type</th><th>
-Return Type</th></tr>
+<td>
+Method</td><td>
+Description</td><td>
+Parameters</td><td>
+Type</td><td>
+Return Type</td></tr>
 <tr>
 <td>
 ConvertToDocumentAdv()</td><td>
@@ -261,29 +274,35 @@ The text import feature allows the user to import a .txt file into the RichTextB
 
 {% highlight C# %}
 
-RichTextBox.Document = TextImporting.ConvertToDocumentAdv(textstream);
+[C#]
 
+RichTextBox.Document = TextImporting.ConvertToDocumentAdv(textstream);
 {% endhighlight %}
 
 {% highlight C# %}
 
-string txtstring= TextExporting.ConvertToText(RichTextBox.Document, textStream);
+[C#]
 
+string txtstring= TextExporting.ConvertToText(RichTextBox.Document, textStream);
 {% endhighlight %}
 
 
+
+
 Methods
+
+
 
 _Methods table_
 
 <table>
 <tr>
-<th>
-Method</th><th>
-Description</th><th>
-Parameters</th><th>
-Type</th><th>
-Return Type</th></tr>
+<td>
+Method</td><td>
+Description</td><td>
+Parameters</td><td>
+Type</td><td>
+Return Type</td></tr>
 <tr>
 <td>
 ConvertToDocumentAdv()</td><td>

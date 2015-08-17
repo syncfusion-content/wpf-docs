@@ -15,9 +15,11 @@ Ticks help you to identify the gauge’s data value by marking the gauge scale 
 
 A tick’s length, stroke, and stroke thickness are set by the TickLength, TickStroke, and TickStrokeThickness UI properties. Like ticks, small ticks use similar UI properties to set the SmallTickLength, SmallTickStroke, and SmallTickStrokeThickness.
 
-#### Code Example:
+### Code Example:
 
 {% highlight xml %}
+
+[XAML]
 
              <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -48,10 +50,13 @@ A tick’s length, stroke, and stroke thickness are set by the TickLength, TickS
                 </syncfusion:SfCircularGauge.MainScale>
 
              </syncfusion:SfCircularGauge>
-			 
 {% endhighlight %}
 
 {% highlight C# %}
+
+[C#]
+
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -76,11 +81,10 @@ A tick’s length, stroke, and stroke thickness are set by the TickLength, TickS
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
-			
 {% endhighlight %}
 
 
-#### Screenshot:
+### Screenshot:
 
 ![](Tick-settings_images/Tick-settings_img1.png)
 
@@ -96,9 +100,13 @@ The shape of the Scales Major and Minor ticks can be set by using TickShape prop
 
 
 
-#### Code Example:
+### Code Example:
 
 {% highlight xml %}
+
+[XAML]
+
+
 
 <syncfusion:SfCircularGauge  x:Name="gauge">
 
@@ -143,6 +151,8 @@ The shape of the Scales Major and Minor ticks can be set by using TickShape prop
 
 {% highlight C# %}
 
+[C#]
+
            SfCircularGauge circularGauge = new SfCircularGauge();
 
             CircularScale scale = new CircularScale();
@@ -172,14 +182,12 @@ The shape of the Scales Major and Minor ticks can be set by using TickShape prop
             circularGauge.Scales.Add(scale);
 
             this.Grid.Children.Add(circularGauge);
-			
-			
 {% endhighlight %}
 
 
 
 
-#### Screenshot:
+### Screenshot:
 
 ![](Tick-settings_images/Tick-settings_img2.png)
 
@@ -196,9 +204,11 @@ The ticks in the scale can be placed inside the scale, outside the scale, or acr
 
 
 
-#### Code Example:
+### Code Example:
 
 {% highlight xml %}
+
+[XAML]
 
             <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -219,6 +229,8 @@ The ticks in the scale can be placed inside the scale, outside the scale, or acr
 
 {% highlight C# %}
 
+[C#]
+
             SfCircularGauge circularGauge = new SfCircularGauge();
 
             CircularScale _mainscale = new CircularScale();
@@ -232,13 +244,12 @@ The ticks in the scale can be placed inside the scale, outside the scale, or acr
             circularGauge.MainScale = _mainscale;
 
             this.Grid.Children.Add(circularGauge);
-			
 {% endhighlight %}
 
 
 
 
-#### Screenshot:
+### Screenshot:
 
 ![](Tick-settings_images/Tick-settings_img3.png)
 

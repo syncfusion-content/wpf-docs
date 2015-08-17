@@ -13,7 +13,7 @@ The SfDateTimeRangeNavigator helps the user to visualize large data in a simplif
 
 User can also set the Interval which they think suitable for their data, this can be done by using Interval Property as in below code snippet. 
 
-Property table
+_Property table_
 
 <table>
 <tr>
@@ -26,7 +26,7 @@ Intervals</td><td>
 Used to set the Interval type which need to be displayed in the Navigator</td></tr>
 </table>
 
-{% highlight xml %}
+{% highlight html %}
 
 <syncfusion:SfDateTimeRangeNavigator x:Name="rangepicker" ItemsSource="{Binding power}"  XBindingPath="Date" >
 
@@ -95,7 +95,7 @@ _Quarter and Month intervals in the Navigator_
 
 The auto timespan format simplifies the visual representation of data while zooming in with the below formats.
 
-List of Intervals
+_List of Intervals_
 
 <table>
 <tr>
@@ -133,7 +133,7 @@ YearInterval</td><td>
 
 Label Style can be customized using the LabelBarStyle property and this can be applied to the HigherLevelBarStyle or LowerLevelBarStyle.
 
-{% highlight xml %}
+{% highlight html %}
 
 <chart:SfDateTimeRangeNavigator.HigherLevelBarStyle>
 

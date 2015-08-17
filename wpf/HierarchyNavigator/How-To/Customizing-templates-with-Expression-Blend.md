@@ -7,37 +7,37 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-# Customizing templates with Expression Blend
+### Customizing templates with Expression Blend
 
 The steps to customize templates by using Expression Blend are as follows:
 
 1. Create a new application in Expression Blend. Refer Creating a HierarchyNavigator control by using Expression Blend.
 
-   The following are the default resources, which are used for HierarchyNavigator control that can be changed in Expression Blend.
+The following are the default resources, which are used for HierarchyNavigator control that can be changed in Expression Blend.
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img1.png)
+{{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img1.png)' | markdownify }}
 
 
 
 2. Right-click the HierarchyNavigator control and select Edit, then select Style, and type a name.
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img2.png)
+{{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img2.png)' | markdownify }}
 
 
 
 3. Right-click the HierarchyNavigatorItemsControl and select Edit, then select Template, and then select Edit a Copy, to edit the Refresh button, the History button, or the overall content. Additional styles (templates) can be used to edit a template available in the HierarchyNavigatorItemsControl class.
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img3.png)
+{{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img3.png)' | markdownify }}
 
 
 
 4. Right-click the Part_HierarchyNavigatorItemsControl and select Edit, and then select Additional Templates. A list of additional styles to edit will be displayed. Figure 40 displays the style names.
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img4.png)
+{{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img4.png)' | markdownify }}
 
 
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img5.png) 
+{{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img5.png)' | markdownify }}
 
 
 
@@ -46,13 +46,13 @@ The steps to customize templates by using Expression Blend are as follows:
 
 
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img6.png) 
+{{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img6.png)' | markdownify }}
 
 
 
 7. Click the Visual State name, to edit the storyboard.
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img7.png) 
+{{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img7.png)' | markdownify }}
 
 
 
@@ -64,55 +64,34 @@ The steps to customize sample styles are as follows:
 2. Add items. Refer Adding items to the HierarchyNavigator control.
 
 
-   ~~~ xml
-   
-		xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.Silverlight"
-   
-   ~~~
-   {:.prettyprint }
 
-   ~~~ xml
-   
-		<syncfusion:HierarchyNavigator x:Name="hierarchyNavigator1" Width="500" VerticalAlignment="Center" Style="{DynamicResource HierarchyNavigatorStyle1}">
-				  <syncfusion:HierarchyNavigator.Items>
-				  <syncfusion:HierarchyNavigatorItem Content="Syncfusion">
-				  <syncfusion:HierarchyNavigatorItem.Items>
-				  <syncfusion:HierarchyNavigatorItem Content="Silverlight">
-				  <syncfusion:HierarchyNavigatorItem.Items>
-				  <syncfusion:HierarchyNavigatorItem Content="Tools"/>
-				  <syncfusion:HierarchyNavigatorItem Content="Grid"/>
-				  <syncfusion:HierarchyNavigatorItem Content="Chart"/>
-				  <syncfusion:HierarchyNavigatorItem Content="Gauge"/>
-				  <syncfusion:HierarchyNavigatorItem Content="Edit"/>
-				  <syncfusion:HierarchyNavigatorItem Content="Schedule"/>
-				  </syncfusion:HierarchyNavigatorItem.Items>
-				  </syncfusion:HierarchyNavigatorItem>
-				  <syncfusion:HierarchyNavigatorItem Content="WPF"/>
-				  </syncfusion:HierarchyNavigatorItem.Items> 
-				  </syncfusion:HierarchyNavigatorItem> 
-				  </syncfusion:HierarchyNavigator.Items>
-				  </syncfusion:HierarchyNavigator>
+<table>
+<tr>
+<td>
+XAMLxmlns:syncfusion="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.Silverlight"</td></tr>
+<tr>
+<td>
+XAML<syncfusion:HierarchyNavigator x:Name="hierarchyNavigator1" Width="500" VerticalAlignment="Center" Style="{DynamicResource HierarchyNavigatorStyle1}">  <syncfusion:HierarchyNavigator.Items>     <syncfusion:HierarchyNavigatorItem Content="Syncfusion"><syncfusion:HierarchyNavigatorItem.Items><syncfusion:HierarchyNavigatorItem Content="Silverlight"><syncfusion:HierarchyNavigatorItem.Items><syncfusion:HierarchyNavigatorItem Content="Tools"/><syncfusion:HierarchyNavigatorItem Content="Grid"/><syncfusion:HierarchyNavigatorItem Content="Chart"/><syncfusion:HierarchyNavigatorItem Content="Gauge"/><syncfusion:HierarchyNavigatorItem Content="Edit"/><syncfusion:HierarchyNavigatorItem Content="Schedule"/></syncfusion:HierarchyNavigatorItem.Items>            </syncfusion:HierarchyNavigatorItem><syncfusion:HierarchyNavigatorItem Content="WPF"/>     </syncfusion:HierarchyNavigatorItem.Items>   </syncfusion:HierarchyNavigatorItem>   </syncfusion:HierarchyNavigator.Items></syncfusion:HierarchyNavigator></td></tr>
+</table>
 
-   ~~~
-   {:.prettyprint }
 
-   ItemContainerStyle has been changed for the HierarchyNavigator control.
+ItemContainerStyle has been changed for the HierarchyNavigator control.
 
-   To steps to edit the styles are as follows:
+To steps to edit the styles are as follows:
 
 3. Right-click the HierarchyNavigator control and select Edit Template, then select Edit Copy and type specify the style name for the HierarchyNavigator control. Then, edit the template as you require. 
 
-   The following XAML is used for the HierarchyNavigator control’s main style. 
+The following XAML is used for the HierarchyNavigator control’s main style. 
 
 4. Right-click the PART_HierarchyNavigatorItemsControl and select Edit Additional Templates, then select Edit Generated Item Container (ItemContainerStyle), and select Edit a Copy, to edit the item-container style.
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img8.png) 
+{{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img8.png)' | markdownify }}
 
 
 
 5. In the Create Style Resource dialog box, type the style name.
 
-   ![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img9.png) 
+{{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img9.png)' | markdownify }}
 
 
 
@@ -120,7 +99,7 @@ The steps to customize sample styles are as follows:
 
 The XAML displayed below is used to customize the item-container style.
 
-{% highlight xml %}
+XAML
 
 
 
@@ -525,15 +504,15 @@ The XAML displayed below is used to customize the item-container style.
 </Setter>
 </Style>
 
-{% endhighlight %}
+
 
 Each part of a template can be edited. In the output for the above style, as shown in Figure 47 the background has been changed to a gradient and the down arrow has been changed to a square.
 
-![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img10.png)
+{{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img10.png)' | markdownify }}
 
 
 
-![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img11.png)
+{{ '![](Customizing-templates-with-Expression-Blend_images/Customizing-templates-with-Expression-Blend_img11.png)' | markdownify }}
 
 
 

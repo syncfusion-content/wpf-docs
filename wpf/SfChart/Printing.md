@@ -11,7 +11,7 @@ documentation: ug
 
 SfChart supports printing that enables you to print the chart. This support works in Windows 8.1 but not in Windows 8.
 
-## Printing
+Printing
 
 <table>
 <tr>

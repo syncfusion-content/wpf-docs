@@ -17,7 +17,7 @@ The appearance of the TabSplitter control is customized by using the appearance 
 
 
 {% highlight xml %}
-
+[XAML]
 
 
 
@@ -69,7 +69,7 @@ The appearance of the TabSplitter control is customized by using the appearance 
 {% endhighlight %}
 
 {% highlight c# %}
-
+[C#]
 
 
 

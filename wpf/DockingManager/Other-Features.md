@@ -15,13 +15,11 @@ There are two ways to display the Drag provider in DockingManager. One is to dis
 
 
 
-{% highlight xml %}
-<syncfusion:DockingManager Name="DockingManager"  UseAdornerDragProvider="True">
-<Grid/>
-</syncfusion:DockingManager>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager Name="DockingManager"  UseAdornerDragProvider="True"><Grid/></syncfusion:DockingManager>
 {% endhighlight %}
 {% highlight c# %}
-DockingManager.UseAdornerDragProvider = true;
+[C#]DockingManager.UseAdornerDragProvider = true;
 {% endhighlight  %}
 
 
@@ -29,13 +27,11 @@ Simlarly, Float child can be displayed in two ways.  One is using the popup and 
 
 
 
-{% highlight xml %}
-syncfusion:DockingManager Name="DockingManager" UseAdornerFloatWindow="True"> 
- <Grid/>
-</syncfusion:DockingManager>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager Name="DockingManager" UseAdornerFloatWindow="True">  <Grid/></syncfusion:DockingManager>
 {% endhighlight %}
 {% highlight c# %}
-DockingManager.UseAdornerFloatWindow = true;
+[C#]DockingManager.UseAdornerFloatWindow = true;
 {% endhighlight %}
 
 
@@ -44,26 +40,11 @@ DockingManager.UseAdornerFloatWindow = true;
 The ActiveWindowChanged event is raised whenever the ActiveWindow property of DockingManager is changed. This event is used whenever you need to track the change in ActiveChild and do some content changes to the child. The following example demonstrates the changing of the Child header, based on the ActiveWindow.
 
 
-{% highlight xml %}
-<syncfusion:DockingManager Name="DockingManager" ActiveWindowChanged="DockingManager_ActiveWindowChanged">
-            <Grid/><Grid/>
-</syncfusion:DockingManager>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager Name="DockingManager" ActiveWindowChanged="DockingManager_ActiveWindowChanged">            <Grid/>            <Grid/></syncfusion:DockingManager>
 {% endhighlight  %}
 {% highlight c# %}
-//Changing the ActiveWindow Header based on activewindow changeprivate
- void DockingManager_ActiveWindowChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
- {  
-	if (e.NewValue != null) 
-    {     
-		FrameworkElement element = e.NewValue as FrameworkElement;
-		DockingManager.SetHeader(element, "Active");
-	}   
-	if (e.OldValue != null)
-	{  
-		FrameworkElement element = e.OldValue as FrameworkElement;
-		DockingManager.SetHeader(element, ""); 
-	}
-}    
+[C#]//Changing the ActiveWindow Header based on activewindow changeprivate void DockingManager_ActiveWindowChanged(DependencyObject d, DependencyPropertyChangedEventArgs e){     if (e.NewValue != null)     {       FrameworkElement element = e.NewValue as FrameworkElement;       DockingManager.SetHeader(element, "Active");     }     if (e.OldValue != null)     {       FrameworkElement element = e.OldValue as FrameworkElement;       DockingManager.SetHeader(element, "");     }}    
 {% endhighlight  %}
 
 
@@ -77,17 +58,15 @@ CanAutoHide property is used to enable and disable the Autohidden state of child
 
 
 
-{% highlight xml %}
-<syncfusion:DockingManager Name="DockingManager">
-<Grid Name="grid1" syncfusion:DockingManager.CanAutoHide="False"/>
-</syncfusion:DockingManager>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager Name="DockingManager">  <Grid Name="grid1" syncfusion:DockingManager.CanAutoHide="False"/></syncfusion:DockingManager>
 {% endhighlight  %}
 {% highlight c# %}
-DockingManager.SetCanAutoHide(grid1, false);
+[C#]DockingManager.SetCanAutoHide(grid1, false);
 {% endhighlight  %}
 
 
-![](Other-Features_images/Other-Features_img1.jpeg)
+![C:/Users/Hemanth/Desktop/Documentation/Images/CanAutoHiddenflase.jpg](Other-Features_images/Other-Features_img1.jpeg)
 
 
 
@@ -96,13 +75,11 @@ DockingManager.SetCanAutoHide(grid1, false);
 By default, whenever you move your mouse over the AutoHidden tab, the autohide animation will start. You can disable this behavior by setting the IsAutoHideAnimationOnMouseOver=true so that when you move the mouse over the autohide tab it does not start the Autohide animation.  But it will make you click the autohide tab to start autohide animation.
 
 
-{% highlight xml %}
-<syncfusion:DockingManager Name="DockingManager" IsAnimationEnabledOnMouseOver="True" >
-<Grid/>
-</syncfusion:DockingManager>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager Name="DockingManager" IsAnimationEnabledOnMouseOver="True" >   <Grid/></syncfusion:DockingManager>
 {% endhighlight  %}
 {% highlight c# %}
-DockingManager.IsAnimationEnabledOnMouseOver = true;
+[C#]DockingManager.IsAnimationEnabledOnMouseOver = true;
 {% endhighlight  %}
 
 
@@ -112,13 +89,11 @@ You can control the animation speed of autohide by using the AnimationDelay prop
 
 
 
-{% highlight xml %}
-<syncfusion:DockingManager Name="DockingManager" IsAnimationEnabledOnMouseOver="True" > 
- <Grid syncfusion:DockingManager.AnimationDelay="100"/>
- </syncfusion:DockingManager>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager Name="DockingManager" IsAnimationEnabledOnMouseOver="True" >  <Grid syncfusion:DockingManager.AnimationDelay="100"/></syncfusion:DockingManager>
 {% endhighlight  %}
 {% highlight c# %}
-Duration dur = new Duration(new TimeSpan(100));DockingManager.SetAnimationDelay(element, dur);
+[C#]Duration dur = new Duration(new TimeSpan(100));DockingManager.SetAnimationDelay(element, dur);
 {% endhighlight  %}
 
 ## Events for ContextMenu and BeforeOpen
@@ -127,16 +102,11 @@ BeforeContextMenuOpen – When the user right clicks on the header of the Docked
 
 
 
-{% highlight xml %}
-<syncfusion:DockingManager Name="DockingManager"  BeforeContextMenuOpen="DockingManager_BeforeContextMenuOpen">
-    <Grid/>
-</syncfusion:DockingManager>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager Name="DockingManager"  BeforeContextMenuOpen="DockingManager_BeforeContextMenuOpen">    <Grid/></syncfusion:DockingManager>
 {% endhighlight %}
 {% highlight c# %}
-private void DockingManager_BeforeContextMenuOpen(object sender, RoutedEventArgs e)
-{    
-	//TODO:your code here.
-}
+[C#]private void DockingManager_BeforeContextMenuOpen(object sender, RoutedEventArgs e){    //TODO:your code here.}
 {% endhighlight %}
 
 ## DockAbility of Child
@@ -145,7 +115,7 @@ DockAbility is the property, which is used to decide whether which child can be 
 
 {% highlight c# %}
 
-
+[C#]
 
 DockAbility ability=DockAbility.None;
 
@@ -157,7 +127,7 @@ DockingManager.SetDockAbility(grid1, ability);
 
 {% endhighlight  %}
 
-![](Other-Features_images/Other-Features_img2.jpeg)
+![C:/Users/Hemanth/Desktop/Documentation/Images/DockAbility.jpg](Other-Features_images/Other-Features_img2.jpeg)
 
 
 
@@ -167,7 +137,7 @@ Get/Set HostSize() method has direct control over the size of the DockedElementT
 
 
 {% highlight c# %}
-
+[C#]
 
 //To get DockedElementTabbedHost Container for Dock State.
 
@@ -185,7 +155,7 @@ Now you can set the size of the host as follows:
 
 {% highlight c# %}
 
-
+[C#]
 
 //To get DockedElementTabbedHost Container for Dock State.
 
@@ -208,19 +178,15 @@ NoHeader is the attached property, which is used to hide the header of the Docke
 
 
 
-{% highlight xml %}
-<syncfusion:DockingManager Name="DockingManager"> 
-  <Grid Name="grid1"  syncfusion:DockingManager.NoHeader="True"> 
-  <TextBlock Text="Content with Noheader"/>
-  </Grid>
-</syncfusion:DockingManager>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager Name="DockingManager">   <Grid Name="grid1"  syncfusion:DockingManager.NoHeader="True">       <TextBlock Text="Content with Noheader"/>   </Grid></syncfusion:DockingManager>
 {% endhighlight %}
 {% highlight c# %}
-DockingManager.SetNoHeader(grid1, true);
+[C#]DockingManager.SetNoHeader(grid1, true);
 {% endhighlight  %}
 
 
-![](Other-Features_images/Other-Features_img3.jpeg)
+![C:/Users/Hemanth/Desktop/Documentation/Images/NoHeader.jpg](Other-Features_images/Other-Features_img3.jpeg)
 
 
 
@@ -229,6 +195,8 @@ DockingManager.SetNoHeader(grid1, true);
 IsInMDIMaximizedState property indicates whether any of the MDI children is in a maximized state.
 
 {% highlight c# %}
+
+[C#]
 
 bool mdimax = DockingManager.IsInMDIMaximizedState;
 {% endhighlight %}
@@ -247,28 +215,29 @@ Cascade layout just cascades the window one by one as shown below:
 
 
 {% highlight c# %}
+[C#]
 
 DockingManager.SetMDILayout(MDILayout.Cascade);
 
 {% endhighlight %}
 
-![](Other-Features_images/Other-Features_img4.jpeg)
+![C:/Users/Hemanth/Desktop/Documentation/Images/cascade.jpg](Other-Features_images/Other-Features_img4.jpeg)
 
 
 
-#### Horizontal:
+Horizontal:
 
 This layout arranges the MDI windows in a horizontal manner as shown below:
 
 
 {% highlight c# %}
-
+[C#]
 
 DockingManager.SetMDILayout(MDILayout.Horizontal);
 
 {% endhighlight  %}
 
-![](Other-Features_images/Other-Features_img5.jpeg)
+![C:/Users/Hemanth/Desktop/Documentation/Images/horizontal.jpg](Other-Features_images/Other-Features_img5.jpeg)
 
 
 
@@ -284,7 +253,7 @@ DockingManager.SetMDILayout(MDILayout.Vertical);
 
 {% endhighlight  %}
 
-![](Other-Features_images/Other-Features_img6.jpeg)
+![C:/Users/Hemanth/Desktop/Documentation/Images/vertical.jpg](Other-Features_images/Other-Features_img6.jpeg)
 
 
 
@@ -294,15 +263,15 @@ IsRollupFloatWindow property is used to enable the Rollup feature of Float windo
 
 
 
-{% highlight xml %}
-<syncfusion:DockingManager Name="DockingManager"><Grid Name="grid1" syncfusion:DockingManager.State="Float" syncfusion:DockingManager.IsRollupFloatWindow="True"/></syncfusion:DockingManager>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager Name="DockingManager"><Grid Name="grid1" syncfusion:DockingManager.State="Float" syncfusion:DockingManager.IsRollupFloatWindow="True"/></syncfusion:DockingManager>
 {% endhighlight  %}
 {% highlight c# %}
-DockingManager.SetIsRollupFloatWindow(grid1, true);
+[C#]DockingManager.SetIsRollupFloatWindow(grid1, true);
 {% endhighlight  %}
 
 
-![](Other-Features_images/Other-Features_img7.jpeg)
+![C:/Users/Hemanth/Desktop/Documentation/Images/Rollup.jpg](Other-Features_images/Other-Features_img7.jpeg)
 
 
 
@@ -310,11 +279,11 @@ This can also be applied to all the children of DockingManager as follows:
 
 
 
-{% highlight xml %}
-<syncfusion:DockingManager Name="DockingManager" IsRollupFloatWindow="True">   <Grid Name="grid1" syncfusion:DockingManager.State="Float"/>   <Grid Name="grid2" syncfusion:DockingManager.State="Float"/></syncfusion:DockingManager>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager Name="DockingManager" IsRollupFloatWindow="True">   <Grid Name="grid1" syncfusion:DockingManager.State="Float"/>   <Grid Name="grid2" syncfusion:DockingManager.State="Float"/></syncfusion:DockingManager>
 {% endhighlight  %}
 {% highlight c# %}
-DockingManager.IsRollupFloatWindow = true;
+[C#]DockingManager.IsRollupFloatWindow = true;
 {% endhighlight  %}
 
 
@@ -332,7 +301,7 @@ Immediate Mode:
 
 
 
-![](Other-Features_images/Other-Features_img8.jpeg)
+![C:/Users/Hemanth/Desktop/Documentation/Images/Immediate.jpg](Other-Features_images/Other-Features_img8.jpeg)
 
 
 
@@ -340,7 +309,7 @@ List Mode:
 
 
 
-![](Other-Features_images/Other-Features_img9.jpeg)
+![C:/Users/Hemanth/Desktop/Documentation/Images/List.jpg](Other-Features_images/Other-Features_img9.jpeg)
 
 
 
@@ -348,7 +317,7 @@ QuickTabs:
 
 
 
-![](Other-Features_images/Other-Features_img10.jpeg)
+![C:/Users/Hemanth/Desktop/Documentation/Images/QuickTabs.jpg](Other-Features_images/Other-Features_img10.jpeg)
 
 
 
@@ -356,7 +325,7 @@ Vista Flip:
 
 
 
-![](Other-Features_images/Other-Features_img11.jpeg)
+![C:/Users/Hemanth/Desktop/Documentation/Images/VistaFlip.jpg](Other-Features_images/Other-Features_img11.jpeg)
 
 
 
@@ -364,7 +333,7 @@ VS2005:
 
 
 
-![](Other-Features_images/Other-Features_img12.jpeg)
+![C:/Users/Hemanth/Desktop/Documentation/Images/VS2005.jpg](Other-Features_images/Other-Features_img12.jpeg)
 
 
 
@@ -409,18 +378,11 @@ The property in Docking Manager and can be set in the following ways:
 
 
 
-{% highlight xml %}
-<syncfusion:DockingManager UseDocumentContainer="True" Grid.RowSpan="2"   IsVS2010DraggingEnabled="True">
-       <StackPanel syncfusion:DockingManager.Header="Tabbed Window 1" syncfusion:DockingManager.State="Document"/>
-	   <ContentControl syncfusion:DockingManager.Header="Tabbed Window 2" syncfusion:DockingManager.State="Document"/> 
-	   <ContentControl syncfusion:DockingManager.Header="Tabbed Window 3" syncfusion:DockingManager.State="Document"/> 
-	   <ContentControl syncfusion:DockingManager.Header="Tabbed Window 4" syncfusion:DockingManager.State="Document"/> 
-	   <ContentControl syncfusion:DockingManager.Header="Tabbed Window 5" syncfusion:DockingManager.State="Document"/>
-</syncfusion:DockingManager>
+{% highlight html %}
+   [XAML]        <syncfusion:DockingManager UseDocumentContainer="True" Grid.RowSpan="2"   IsVS2010DraggingEnabled="True">            <StackPanel syncfusion:DockingManager.Header="Tabbed Window 1" syncfusion:DockingManager.State="Document"/>            <ContentControl syncfusion:DockingManager.Header="Tabbed Window 2" syncfusion:DockingManager.State="Document"/>            <ContentControl syncfusion:DockingManager.Header="Tabbed Window 3" syncfusion:DockingManager.State="Document"/>            <ContentControl syncfusion:DockingManager.Header="Tabbed Window 4" syncfusion:DockingManager.State="Document"/>            <ContentControl syncfusion:DockingManager.Header="Tabbed Window 5" syncfusion:DockingManager.State="Document"/>        </syncfusion:DockingManager>
 {% endhighlight  %}
 {% highlight c# %}
-DockingManager dockingManager = new DockingManager(); 
-           dockingManager.IsVS2010DraggingEnabled = true;
+[C#]             DockingManager dockingManager = new DockingManager();            dockingManager.IsVS2010DraggingEnabled = true;
 {% endhighlight  %}
 
 ## Support to Enable or Disable Resize in Docked and Float Windows
@@ -482,7 +444,7 @@ Dependency Attached </td><td>
 Bool</td></tr>
 </table>
 
-#### Sample Link
+### Sample Link
 
 SystemDrive\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<Version_number>\ WPF\Tools.WPF\Samples\3.5\WindowsSamples\Docking Manager\Docking Demo
 
@@ -503,29 +465,11 @@ The following code snippet shows how to set values for the CanResize properties:
 
 
 
-{% highlight xml %}
-<syncfusion:DockingManager x:Name="dockingManager">
-<!-- Product Showcase Window -->
-<ListBox BorderThickness="0" Name="Parent1" syncfusion:DockingManager.Header="Product Showcase" syncfusion:DockingManager.CanResizeInDockedState="false" syncfusion:DockingManager.CanResizeInFloatState ="false" >
-</ListBox>
-<!-- Docking Manager Window-->
-<ListBox BorderThickness="0" syncfusion:DockingManager.TargetNameInDockedMode="Parent1"syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Docking Manager"syncfusion:DockingManager.CanResizeHeightInDockedState="false" syncfusion:DockingManager.CanResizeHeightInFloatState ="false"  >
-</ListBox>
-<!-- Ribbon Window-->
-<ListBox BorderThickness="0" Name="Parent2"syncfusion:DockingManager.TargetNameInDockedMode="Parent1"syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.Header="Ribbon" >
-</ListBox>
-<!-- TreeView Window-->
-<ListBox BorderThickness="0" syncfusion:DockingManager.TargetNameInDockedMode="Parent2"syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.Header="TreeView" syncfusion:DockingManager.CanResizeWidthInDockedState="false" syncfusion:DockingManager.CanResizeWidthInFloatState ="false" >
-</ListBox>
-</syncfusion:DockingManager > 
+{% highlight html %}
+[XAML]<syncfusion:DockingManager x:Name="dockingManager"><!-- Product Showcase Window --><ListBox BorderThickness="0" Name="Parent1" syncfusion:DockingManager.Header="Product Showcase" syncfusion:DockingManager.CanResizeInDockedState="false" syncfusion:DockingManager.CanResizeInFloatState ="false" ></ListBox><!-- Docking Manager Window--><ListBox BorderThickness="0" syncfusion:DockingManager.TargetNameInDockedMode="Parent1"syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Docking Manager"syncfusion:DockingManager.CanResizeHeightInDockedState="false" syncfusion:DockingManager.CanResizeHeightInFloatState ="false"  ></ListBox><!-- Ribbon Window--><ListBox BorderThickness="0" Name="Parent2"syncfusion:DockingManager.TargetNameInDockedMode="Parent1"syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.Header="Ribbon" ></ListBox><!-- TreeView Window--><ListBox BorderThickness="0" syncfusion:DockingManager.TargetNameInDockedMode="Parent2"syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.Header="TreeView" syncfusion:DockingManager.CanResizeWidthInDockedState="false" syncfusion:DockingManager.CanResizeWidthInFloatState ="false" ></ListBox></syncfusion:DockingManager > 
 {% endhighlight  %}
 {% highlight c# %}
-DockingManager.SetCanResizeInDockedState(Parent1, false);
-DockingManager.SetCanResizeInFloatState(Parent1, false);
-DockingManager.SetCanResizeHeightInDockedState(Parent2, false);
-DockingManager.SetCanResizeWidthInDockedState(Parent2, false);
-DockingManager.SetCanResizeHeightInFloatState(Parent2, false);
-DockingManager.SetCanResizeWidthInFloatState(Parent2, false);
+[C#]DockingManager.SetCanResizeInDockedState(Parent1, false);DockingManager.SetCanResizeInFloatState(Parent1, false);DockingManager.SetCanResizeHeightInDockedState(Parent2, false);DockingManager.SetCanResizeWidthInDockedState(Parent2, false);DockingManager.SetCanResizeHeightInFloatState(Parent2, false);DockingManager.SetCanResizeWidthInFloatState(Parent2, false);
 {% endhighlight  %}
 ## Support to Enable or Disable Fixed Size for Docked Windows
 
@@ -568,7 +512,7 @@ Dependency Attached </td><td>
 Bool</td></tr>
 </table>
 
-#### Sample Link
+### Sample Link
 
 SystemDrive\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<Version_number>\ WPF\Tools.WPF\Samples\3.5\WindowsSamples\Docking Manager\Docking Demo
 
@@ -586,24 +530,11 @@ The following code snippet shows how to set values for the FixedSize properties:
 
 
 
-{% highlight xml %}
-<syncfusion:DockingManager x:Name="dockingManager">
-<!-- Product Showcase Window -->
-<ListBox BorderThickness="0" Name="Parent1" syncfusion:DockingManager.Header="Product Showcase" syncfusion:DockingManager.CanResizeInDockedState="false" syncfusion:DockingManager.IsFixedSize ="true" >
-</ListBox>
-<!-- Docking Manager Window-->
-<ListBox BorderThickness="0" syncfusion:DockingManager.TargetNameInDockedMode="Parent1"syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Docking Manager"syncfusion:DockingManager.CanResizeHeightInDockedState="false" syncfusion:DockingManager.IsFixedHeight ="true"  >
-</ListBox><!-- Ribbon Window-->
-<ListBox BorderThickness="0" Name="Parent2"syncfusion:DockingManager.TargetNameInDockedMode="Parent1"syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.Header="Ribbon" syncfusion:DockingManager.CanResizeWidthInDockedState="false" syncfusion:DockingManager.IsFixedWidth ="true" >
-</ListBox>
-</syncfusion:DockingManager > 
+{% highlight html %}
+[XAML]<syncfusion:DockingManager x:Name="dockingManager"><!-- Product Showcase Window --><ListBox BorderThickness="0" Name="Parent1" syncfusion:DockingManager.Header="Product Showcase" syncfusion:DockingManager.CanResizeInDockedState="false" syncfusion:DockingManager.IsFixedSize ="true" ></ListBox><!-- Docking Manager Window--><ListBox BorderThickness="0" syncfusion:DockingManager.TargetNameInDockedMode="Parent1"syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Docking Manager"syncfusion:DockingManager.CanResizeHeightInDockedState="false" syncfusion:DockingManager.IsFixedHeight ="true"  ></ListBox><!-- Ribbon Window--><ListBox BorderThickness="0" Name="Parent2"syncfusion:DockingManager.TargetNameInDockedMode="Parent1"syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.Header="Ribbon" syncfusion:DockingManager.CanResizeWidthInDockedState="false" syncfusion:DockingManager.IsFixedWidth ="true" ></ListBox></syncfusion:DockingManager > 
 {% endhighlight  %}
 {% highlight c# %}
-DockingManager dockingmanager = new DockingManager();
-dockingmanager.MaximizeButtonEnabled = true;
-dockingmanager.MaximizeButtonMode = VisibilityMode.Disable;
-Grid grid = new Grid();DockingManager.SetCanMaximize(grid, false);
-dockingmanager.Children.Add(grid);
+[C#]DockingManager dockingmanager = new DockingManager();dockingmanager.MaximizeButtonEnabled = true;dockingmanager.MaximizeButtonMode = VisibilityMode.Disable;Grid grid = new Grid();DockingManager.SetCanMaximize(grid, false);dockingmanager.Children.Add(grid);
 {% endhighlight  %}
 
 ## Support to manage Maximize Button Visibiliity in Docking Windows
@@ -635,7 +566,7 @@ Dependency property </td><td>
 MaximizeButtonMode</td></tr>
 </table>
 
-#### Sample Link
+### Sample Link
 
 N/A
 
@@ -649,22 +580,16 @@ The following code snippet shows how to set values for the MaximizeButtonMode pr
 
 
 
-{% highlight xml %}
-<syncfusion:DockingManager MaximizeButtonEnabled="True" MaximizeButtonMode="Disable" > 
-  <Grid syncfusion:DockingManager.CanMaximize="True" />
-</syncfusion:DockingManager></td></tr>
+{% highlight html %}
+[XAML]<syncfusion:DockingManager MaximizeButtonEnabled="True" MaximizeButtonMode="Disable" >   <Grid syncfusion:DockingManager.CanMaximize="True" /></syncfusion:DockingManager></td></tr>
 {% endhighlight  %}
 {% highlight c# %}
-DockingManager dockingmanager = new DockingManager();
-dockingmanager.MaximizeButtonEnabled = true;
-dockingmanager.MaximizeButtonMode = VisibilityMode.Disable;Grid grid = new Grid();
-DockingManager.SetCanMaximize(grid, false);
-dockingmanager.Children.Add(grid);
+[C#]DockingManager dockingmanager = new DockingManager();dockingmanager.MaximizeButtonEnabled = true;dockingmanager.MaximizeButtonMode = VisibilityMode.Disable;Grid grid = new Grid();DockingManager.SetCanMaximize(grid, false);dockingmanager.Children.Add(grid);</td></tr>
 {% endhighlight  %}
 
 ## Native Float Window
 
-#### UseNativeFloatWindow
+### UseNativeFloatWindow
 
 The UseNativeFloatWindow property is used to enable or disable the native float window which inherits the window architecture. By disabling this propety, you can use the existing float window.
 
@@ -695,9 +620,9 @@ By enabling the UseNativeFloatWindow property, you can use the native float wind
 
 
 {% highlight c# %}
-dockingmanager.UseNativeFloatWindow = true;
+ [C#]dockingmanager.UseNativeFloatWindow = true;
 {% endhighlight  %}
-{% highlight xml %}
+{% highlight html %}
 [XAML]<Syncfusion:DockingManager x:Name="dockingmanager" UseNativeFloatWindow="True" >    <ContentControl Syncfusion:DockingManager.Header="Item1"/></Syncfusion:DockingManager></td></tr>
 {% endhighlight %}
 
@@ -739,10 +664,8 @@ By enabling the CanFloatMaximize property, the native float window can be maximi
 {% highlight c# %}
  [C#]DockingManager.SetCanFloatMaximize(Item1, true);</td></tr>
 {% endhighlight  %}
-{% highlight xml %}
-<Syncfusion:DockingManager x:Name="dockingmanager" UseNativeFloatWindow="True" >
-            <ContentControl x:Name="Item1" Syncfusion:DockingManager.Header="Item1" Syncfusion:DockingManager.CanFloatMaximize="True"/>
-			</Syncfusion:DockingManager>
+{% highlight html %}
+[XAML]<Syncfusion:DockingManager x:Name="dockingmanager" UseNativeFloatWindow="True" >            <ContentControl x:Name="Item1" Syncfusion:DockingManager.Header="Item1" Syncfusion:DockingManager.CanFloatMaximize="True"/></Syncfusion:DockingManager></td></tr>
 {% endhighlight  %}
 
 
@@ -773,30 +696,30 @@ Parameters</th><th>
 Type</th><th>
 Return Type</th></tr>
 <tr>
-<td>
-CreateHorizontalTabGroup</td><td>
-Enables users to add a horizontal document tab group.</td><td>
-(UIElement TabGroupElement) </td><td>
-NA</td><td>
-void</td></tr>
+<th>
+CreateHorizontalTabGroup</th><th>
+Enables users to add a horizontal document tab group.</th><th>
+(UIElement TabGroupElement) </th><th>
+NA</th><th>
+void</th></tr>
 <tr>
-<td>
-CreateVerticalTabGroup</td><td>
-Enables users to add a vertical document tab group.</td><td>
-(UIElement TabGroupElement) </td><td>
-NA</td><td>
-void</td></tr>
+<th>
+CreateVerticalTabGroup</th><th>
+Enables users to add a vertical document tab group.</th><th>
+(UIElement TabGroupElement) </th><th>
+NA</th><th>
+void</th></tr>
 <tr>
-<td>
-AddElementToTabGroup</td><td>
-Enables users to add an element to an existing tab group.</td><td>
-(DocumentTabControl TargetTabGroup, UIElement ElementToAdd)</td><td>
-NA</td><td>
-void</td></tr>
+<th>
+AddElementToTabGroup</th><th>
+Enables users to add an element to an existing tab group.</th><th>
+(DocumentTabControl TargetTabGroup, UIElement ElementToAdd)</th><th>
+NA</th><th>
+void</th></tr>
 </table>
 
 
-#### Events
+Events
 
 _Events table_
 
@@ -808,17 +731,17 @@ Description</th><th>
 Arguments</th><th>
 Type</th></tr>
 <tr>
-<td>
-TabGroupCreated</td><td>
-The TabGroupCreated event occurs after a new tab group is created.</td><td>
-CurrentTabGroup,PreviousTabGroup,Orientation,TargetItem</td><td>
-TabGroupEventArgs</td></tr>
+<th>
+TabGroupCreated</th><th>
+The TabGroupCreated event occurs after a new tab group is created.</th><th>
+CurrentTabGroup,PreviousTabGroup,Orientation,TargetItem</th><th>
+TabGroupEventArgs</th></tr>
 <tr>
-<td>
-MoveToOtherTabGroup</td><td>
-The MoveToOtherTabGroup event occurs after an element is added or moved into existing tab group.</td><td>
-CurrentTabGroup,PreviousTabGroup,Orientation,TargetItem</td><td>
-TabGroupEventArgs</td></tr>
+<th>
+MoveToOtherTabGroup</th><th>
+The MoveToOtherTabGroup event occurs after an element is added or moved into existing tab group.</th><th>
+CurrentTabGroup,PreviousTabGroup,Orientation,TargetItem</th><th>
+TabGroupEventArgs</th></tr>
 </table>
 
 ### Adding a Document Tab Group to an Application 

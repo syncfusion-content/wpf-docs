@@ -27,9 +27,11 @@ This section illustrates the step-by-step procedure to create the following plat
 
 1. Open Microsoft Visual Studio. Go to File menu and click New Project. In the New Project dialog box, select WPF Application template, name the project and click OK. 
 
-   ![](Getting-Started_images/Getting-Started_img2.jpeg)
+![](Getting-Started_images/Getting-Started_img2.jpeg)
 
-   A new WPF application is created.
+
+
+A new WPF application is created.
 
 2. Open the main form of the application in the designer.
 3. Add the Syncfusion controls to your VS.NET toolbox if you haven't done so already [This is done automatically when you install Essential Studio].
@@ -52,83 +54,80 @@ Deploying Essential Calculate in a WPF Application
 The following steps guide you to deploy Essential Calculate:
 
 1. Go to Solution Explorer of the application you have created-> right-click Reference folder and then click Add References. 
-2. Add the below mentioned assemblies as references in the application:	
-	1. Syncfusion.Core.dll
-	2. Syncfusion.Compression.Base.dll
-	3. Syncfusion.Calculate.Base.dll
+2. Add the below mentioned assemblies as references in the application:
+1. Syncfusion.Core.dll
+2. Syncfusion.Compression.Base.dll
+3. Syncfusion.Calculate.Base.dll
 
 
 
-   > Note: There is no toolbox support for Calculate in WPF application.
+> Note: There is no toolbox support for Calculate in WPF application.
 
 
 
 3. Then create a CalculateEngine. The CalcQuickBase class is used to create a CalculateEngine.
 
-   ~~~ cs
+{% highlight c# %}
+
+[C#]
 
 
-		// Create a new CalculateQuickBase. This object represents the CalculateEngine.
 
-		CalcQuickBase cq = new CalcQuickBase();
+// Create a new CalculateQuickBase. This object represents the CalculateEngine.
 
-   ~~~
-   {:.prettyprint }
-   
-   ~~~ vbnet
+CalcQuickBase cq = new CalcQuickBase();
 
-		[VB.NET]
+{% endhighlight  %}
+{% highlight vbnet %}
 
-		' Create a new CalculateQuickBase. This object represents the CalculateEngine.
+[VB.NET]
 
-		Dim cq As CalcQuickBase
 
-		cq = New CalcQuickBase()
-		
-   ~~~
-   {:.prettyprint }
 
+' Create a new CalculateQuickBase. This object represents the CalculateEngine.
+
+Dim cq As CalcQuickBase
+
+cq = New CalcQuickBase()
+
+{% endhighlight %}
 
 4. Use the ParseAndCompute method to perform calculations by using the CalculateEngine.
 
-   ~~~ cs
-		[C#]
+
+{% highlight c# %}
+[C#]
 
 
 
-		// Perform calculations by using Essential Calculate.
+// Perform calculations by using Essential Calculate.
 
-		string formula = "if(20>10,\"BIG\",\"Small\")";
+string formula = "if(20>10,\"BIG\",\"Small\")";
 
-		string value = cq.ParseAndCompute(formula);
+string value = cq.ParseAndCompute(formula);
 
-   ~~~
-   {:.prettyprint }
-   
-   ~~~ vbnet
-   
-		[VB.NET]
+{% endhighlight %}
+{% highlight vbnet %}
+[VB.NET]
 
 
 
-		' Perform calculations by using Essential Calculate.
+' Perform calculations by using Essential Calculate.
 
-		Dim formula As String = "if(20>10,""BIG"",""Small"")"
+Dim formula As String = "if(20>10,""BIG"",""Small"")"
 
-		Dim value As String = cq.ParseAndCompute(formula)
+Dim value As String = cq.ParseAndCompute(formula)
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
 5. You can alsomodify the default behavior of the CalculateEngine by using the Engine property. 
 
 ### Example 
 
 The default format of appending quotation marks to the concatenated string can be eliminated by using the following code.
-
 {% highlight c# %}
 [C#]
-	
+
 
 
 // Strings concatenated by using the ampersand operator is returned without quotation marks.
@@ -165,7 +164,6 @@ The features of Essential Calculate are as follows.
 * Essential Calculate can be used in manual mode or automatic mode.
 * The manual mode works when you explicitly request for a value. At that point, the calculation is done from scratch to obtain the computed value. So, if your formula depends on several other values in the form, and when you request the computed value, the other values are retrieved and used to compute the requested formula.
 * In automatic mode, Essential Calculate maintains a dependency list. Hence, when a value is changed, any formula that depends on it, is recalculated at that particular point. When you request for a formula value, the formula value is not computed from scratch; instead it is retrieved from where Essential Calculate stores computed values.
-
 ## Quick Start
 
 
@@ -197,7 +195,7 @@ The step-by-step procedure to create a simple console application is as follows:
 
 
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -205,142 +203,138 @@ The step-by-step procedure to create a simple console application is as follows:
 
 2. In the Main method, add the code to create a CalcQuickBase object. Also add the code to loop through the process of retrieving a string and using CalcQuickBase.ParseAndCompute to perform the calculation that is represented by the string. Given below is the code that handles these tasks.
 
-   ~~~ cs
+{% highlight c# %}
 
-		[C#]
+[C#]
 
 
 
-		using System;
+using System;
 
-		using Syncfusion.Calculate;
+using Syncfusion.Calculate;
 
 
 
-		namespace CalcQuickBaseTutorial
+namespace CalcQuickBaseTutorial
 
-		{
+{
 
-				/// <summary>
+        /// <summary>
 
-				/// Summary description for Class1.
+        /// Summary description for Class1.
 
-				/// </summary>
+        /// </summary>
 
-				class Class1
+        class Class1
 
-				{
+        {
 
-						/// <summary>
+                /// <summary>
 
-						/// The main entry point for the application.
+                /// The main entry point for the application.
 
-						/// </summary>
+                /// </summary>
 
-						[STAThread]
+                [STAThread]
 
-						static void Main(string[] args)
+                static void Main(string[] args)
 
-						{
+                {
 
-								CalcQuickBase cq = new CalcQuickBase();
+                        CalcQuickBase cq = new CalcQuickBase();
 
 
 
-								string s;
+                        string s;
 
-								while( (s = Console.ReadLine()) != "" )
+                        while( (s = Console.ReadLine()) != "" )
 
-								{
+                        {
 
-										string val = cq.ParseAndCompute(s);
+                                string val = cq.ParseAndCompute(s);
 
-										Console.WriteLine("value= " + val);
+                                Console.WriteLine("value= " + val);
 
 
 
-										// Blank line
+                                // Blank line
 
-										Console.WriteLine(""); 
+                                Console.WriteLine(""); 
 
-								}
+                        }
 
-						}
+                }
 
-				}
+        }
 
-		}
- 
-   ~~~
-   {:.prettyprint }
- 
-   ~~~ vbnet
+}
+{% endhighlight %}
+{% highlight vbnet %}
 
 
-		[VB.NET]
+[VB.NET]
 
 
 
-		Imports System
+Imports System
 
-		Imports Syncfusion.Calculate
+Imports Syncfusion.Calculate
 
 
 
-		Namespace CalcQuickBaseTutorial
+Namespace CalcQuickBaseTutorial
 
-			Class Class1
+    Class Class1
 
 
 
-				Public Overloads Shared Sub Main()
+        Public Overloads Shared Sub Main()
 
-					Dim cq As New CalcQuickBase
+            Dim cq As New CalcQuickBase
 
-					Dim s As String = Console.ReadLine()
+            Dim s As String = Console.ReadLine()
 
-					Do While s <> ""
+            Do While s <> ""
 
-						Dim val As String = cq.ParseAndCompute(s)
+                Dim val As String = cq.ParseAndCompute(s)
 
-						Console.WriteLine(("value= " + val))
+                Console.WriteLine(("value= " + val))
 
-						Console.WriteLine("") 
+                Console.WriteLine("") 
 
 
 
-						' Blank line
+                ' Blank line
 
-						s = Console.ReadLine()
+                s = Console.ReadLine()
 
-					Loop
+            Loop
 
 
 
-				' Main 
+        ' Main 
 
-				End Sub 
+        End Sub 
 
 
 
-			' Class1
+    ' Class1
 
-			End Class 
+    End Class 
 
 
 
-		' CalcQuickBaseTutorial
+' CalcQuickBaseTutorial
 
-		End Namespace 
+End Namespace 
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight  %}
 
 3. Once the code is entered, run the application by pressing F5. Then enter an expression such as 1+2 and press Enter. Enter additional algebraic combinations of constants and named functions from the Function Library like Sin, Cos, Sum and Pi. Press Enter without entering anything to terminate the program. Below is a typical display of this.
 
 
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -350,11 +344,11 @@ In this section, you can learn how to create a WPF Application that allows you t
 
 #### WPF CalcQuickBase
 
-1. In Visual Studio, use File -> New -> Project to create a new WPF Application. Right-click the References in Solution Explorer and add a reference to Syncfusion.Calculate.Base.
+1. In Visual Studio, use File | New | Project to create a new WPF Application. Right-click the References in Solution Explorer and add a reference to Syncfusion.Calculate.Base.
 
 
 
-   ![](Getting-Started_images/Getting-Started_img5.png)
+![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -364,7 +358,7 @@ In this section, you can learn how to create a WPF Application that allows you t
 
 
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -373,165 +367,163 @@ In this section, you can learn how to create a WPF Application that allows you t
 3. Double-click the form in the designer to add a Form.Load event handler. Add the code which, is shown below to the project.
 
 
-   ~~~ cs
-   
-		[C#]
+{% highlight c# %}
+[C#]
 
-		using Syncfusion.Calculate;
 
 
+using Syncfusion.Calculate;
 
-		//...
 
 
+//...
 
-		private CalcQuickBase cq;
 
-		private void Form1_Load(object sender, System.EventArgs e)
 
-		{
+private CalcQuickBase cq;
 
-				cq = new CalcQuickBase();
+private void Form1_Load(object sender, System.EventArgs e)
 
+{
 
+        cq = new CalcQuickBase();
 
-				this.button1.Click += new EventHandler(button1_Click);
 
-				this.button2.Click += new EventHandler(button2_Click);
 
-		}
+        this.button1.Click += new EventHandler(button1_Click);
 
-		private void button1_Click(object sender, EventArgs e)
+        this.button2.Click += new EventHandler(button2_Click);
 
-		{
+}
 
-				// Compute
+private void button1_Click(object sender, EventArgs e)
 
-				this.label3.Text = 
+{
 
-										this.cq.ParseAndCompute(this.textBox1.Text);
+        // Compute
 
-		}
+        this.label3.Text = 
 
-		private void button2_Click(object sender, EventArgs e)
+                                this.cq.ParseAndCompute(this.textBox1.Text);
 
-		{
+}
 
-				// Register name.
+private void button2_Click(object sender, EventArgs e)
 
-				string key = this.textBox2.Text;
+{
 
-				if(key.Length > 0)
+        // Register name.
 
-				{
+        string key = this.textBox2.Text;
 
-					   // The value.
+        if(key.Length > 0)
 
-						this.cq[key] = this.textBox3.Text; 
+        {
 
+               // The value.
 
+                this.cq[key] = this.textBox3.Text; 
 
-						// Just display it in the list box.
 
-						this.listBox1.Items.Add(string.Format("[{0}] = {1}", 
 
-								key, this.textBox3.Text));
+                // Just display it in the list box.
 
+                this.listBox1.Items.Add(string.Format("[{0}] = {1}", 
 
+                        key, this.textBox3.Text));
 
-				}
 
-		}
 
-   
-   ~~~
-   {:.prettyprint }
+        }
 
+}
+{% endhighlight %}
+{% highlight vbnet %}
 
-   ~~~ vbnet
 
+[VB]
 
 
-		Imports Syncfusion.Calculate
 
+Imports Syncfusion.Calculate
 
 
-		'...
 
-		Dim cq As CalcQuickBase
+'...
 
-		Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
+Dim cq As CalcQuickBase
 
-			cq = New CalcQuickBase
+Private Sub Form1_Load(ByVal sender As Object, ByVal e As System.EventArgs)
 
+    cq = New CalcQuickBase
 
 
-			AddHandler Me.button1.Click, AddressOf button1_Click
 
-			AddHandler Me.button2.Click, AddressOf button2_Click
+    AddHandler Me.button1.Click, AddressOf button1_Click
 
+    AddHandler Me.button2.Click, AddressOf button2_Click
 
 
-		' Form1_Load
 
-		End Sub 
+' Form1_Load
 
+End Sub 
 
 
-		Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
 
+Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
 
 
-			' Compute
 
-			Me.label3.Text = Me.cq.ParseAndCompute(Me.textBox1.Text)
+    ' Compute
 
+    Me.label3.Text = Me.cq.ParseAndCompute(Me.textBox1.Text)
 
 
-		' Button1_Click
 
-		End Sub 
+' Button1_Click
 
+End Sub 
 
 
-		Private Sub button2_Click(ByVal sender As Object, ByVal e As EventArgs)
 
+Private Sub button2_Click(ByVal sender As Object, ByVal e As EventArgs)
 
 
-			' Register name.
 
-			Dim key As String = Me.textBox2.Text
+    ' Register name.
 
-			If key.Length > 0 Then
+    Dim key As String = Me.textBox2.Text
 
+    If key.Length > 0 Then
 
 
-				' The value.
 
-				Me.cq(key) = Me.textBox3.Text 
+        ' The value.
 
+        Me.cq(key) = Me.textBox3.Text 
 
 
-				' Just display it in the list box.
 
-				Me.listBox1.Items.Add(String.Format("[{0}] = {1}", key, Me.textBox3.Text))
+        ' Just display it in the list box.
 
-			End If
+        Me.listBox1.Items.Add(String.Format("[{0}] = {1}", key, Me.textBox3.Text))
 
+    End If
 
 
-		' Button2_Click
 
-		End Sub 
+' Button2_Click
 
-   ~~~
-   {:.prettyprint }
+End Sub 
+
+{% endhighlight  %}
 
 4. Run the sample by pressing F5. Then in the Name text box, enter Rate and in the Value text box, enter .07. Now press the Register button. Similarly, enter Amount in the Name text box, 15000 in the Value text box followed by pressing the Register button.
 
 
 
-   ![](Getting-Started_images/Getting-Started_img7.png)
+![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
@@ -549,11 +541,11 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
 #### ICalcData
 
-1. In Visual Studio, use File -> New -> Project to create a new WPF Application. Right-click the References in Solution Explorer and add a reference to Syncfusion.Calculate.Base.
+1. In Visual Studio, use File | New | Project to create a new WPF Application. Right-click the References in Solution Explorer and add a reference to Syncfusion.Calculate.Base.
 
 
 
-    ![](Getting-Started_images/Getting-Started_img8.png)
+![](Getting-Started_images/Getting-Started_img8.png)
 
 
 
@@ -563,17 +555,17 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
 
 
-   ![](Getting-Started_images/Getting-Started_img9.png)
+![](Getting-Started_images/Getting-Started_img9.png)
 
 
 
-   You now have your basic form. Before leaving this form in the designer, double click both buttons to add the button handler code stubs to your Form1 code. You can add the code to these stubs later.
+You now have your basic form. Before leaving this form in the designer, double click both buttons to add the button handler code stubs to your Form1 code. You can add the code to these stubs later.
 
-   In order to add arbitrary calculation support to an object, that object must implement the ICalcData interface. In this sample, you may want to add calculation support to a double array. To do so, you must create a wrapper class that accepts a double object in its constructor and then returns these double values in its indexer. In addition you can extend the wrapper class by adding an additional row that holds the sum of the column values in the double array and by adding an addition column that holds the sum of the row values in the double array.
+In order to add arbitrary calculation support to an object, that object must implement the ICalcData interface. In this sample, you may want to add calculation support to a double array. To do so, you must create a wrapper class that accepts a double object in its constructor and then returns these double values in its indexer. In addition you can extend the wrapper class by adding an additional row that holds the sum of the column values in the double array and by adding an addition column that holds the sum of the row values in the double array.
 
-	rst step is to add the class. To do so, right-click your project in the Solution Explorer window, select Add, and select Add Class.
+The first step is to add the class. To do so, right-click your project in the Solution Explorer window, select Add, and select Add Class.
 
-	![](Getting-Started_images/Getting-Started_img10.png)
+![](Getting-Started_images/Getting-Started_img10.png)
 
 
 
@@ -583,7 +575,7 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
 
 
-   ![](Getting-Started_images/Getting-Started_img11.png)
+![](Getting-Started_images/Getting-Started_img11.png)
 
 
 
@@ -592,372 +584,363 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 6. After adding the class, Visual Studio displays the class implementation file whose contents are shown below. In the next few steps, you must add the code to this class to create the functionality you need.
 
 
-   ~~~ cs
-		[C#]
+{% highlight c# %}
+[C#]
 
 
 
-		using System;
+using System;
 
 
 
-		namespace Calculate_ICalcData
+namespace Calculate_ICalcData
 
-		{
+{
 
-				/// <summary>
+        /// <summary>
 
-				/// Summary description for ArrayCalcData.
+        /// Summary description for ArrayCalcData.
 
-				/// </summary>
+        /// </summary>
 
-				public class ArrayCalcData
+        public class ArrayCalcData
 
-				{
+        {
 
-						public ArrayCalcData()
+                public ArrayCalcData()
 
-						{
+                {
 
-								//
+                        //
 
-								// TODO: Add constructor logic here.
+                        // TODO: Add constructor logic here.
 
-								//
+                        //
 
-						}
+                }
 
-				}
+        }
 
-		}
+}
 
-   ~~~
-   {:.prettyprint }
-   
-   ~~~ vbnet
+{% endhighlight %}
+{% highlight vbnet %}
 
-		[VB]
+[VB]
 
 
 
-		Imports System 
+Imports System 
 
 
 
-		Namespace Calculate_ICalcData 
+Namespace Calculate_ICalcData 
 
-				''' <summary> 
+        ''' <summary> 
 
-				''' Summary description for ArrayCalcData. 
+        ''' Summary description for ArrayCalcData. 
 
-				''' </summary> 
+        ''' </summary> 
 
-				Public Class ArrayCalcData
+        Public Class ArrayCalcData
 
-					Public Sub New()
+            Public Sub New()
 
-						' 
+                ' 
 
-						' TODO: Add constructor logic here. 
+                ' TODO: Add constructor logic here. 
 
-						' 
+                ' 
 
-					End Sub
+            End Sub
 
-				End Class
+        End Class
 
-			  End Namespace
+End Namespace
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
 7. You need to add fields to hold the double array, the extra row and extra column. Additionally, you can add fields to hold the row and column counts for convenience. Here is the code.
 
 
-   ~~~ cs
-   
-	 [C#]
+{% highlight c# %}
+[C#]
 
 
 
-		using System;
+using System;
 
-		using Syncfusion.Calculate;
+using Syncfusion.Calculate;
 
 
 
-		namespace Calculate_ICalcData
+namespace Calculate_ICalcData
 
-		{
+{
 
-				public class ArrayCalcData 
+        public class ArrayCalcData 
 
-				{
+        {
 
-						/// <summary>
+                /// <summary>
 
-						/// Original double array.
+                /// Original double array.
 
-						/// </summary>
+                /// </summary>
 
-						private double[,] dValues;
+                private double[,] dValues;
 
 
 
-						/// <summary>
+                /// <summary>
 
-						/// Vector holding the sum of the rows.
+                /// Vector holding the sum of the rows.
 
-						/// </summary>
+                /// </summary>
 
-						/// <remarks>
+                /// <remarks>
 
-						/// Serves as the last column.
+                /// Serves as the last column.
 
-						/// </remarks>
+                /// </remarks>
 
-						private object[] rowSums;
+                private object[] rowSums;
 
 
 
-						/// <summary>
+                /// <summary>
 
-						/// Vector holding the sum of the columns.
+                /// Vector holding the sum of the columns.
 
-						/// </summary>
+                /// </summary>
 
-						/// <remarks>
+                /// <remarks>
 
-						/// Serves as the last row.
+                /// Serves as the last row.
 
-						/// </remarks>
+                /// </remarks>
 
-						private object[] colSums;
+                private object[] colSums;
 
 
 
-						int rowCount;
+                int rowCount;
 
-						int colCount;
+                int colCount;
 
 
 
-						//...
+                //...
 
-				}
+        }
 
-		}
+}
 
-   ~~~
-   {:.prettyprint }
-   
-   ~~~ vbnet
+{% endhighlight %}
+{% highlight vbnet %}
 
-		[VB]
+[VB]
 
 
 
-		Imports System 
+Imports System 
 
-		Imports Syncfusion.Calculate
+Imports Syncfusion.Calculate
 
 
 
-		Public Class ArrayCalcData
+Public Class ArrayCalcData
 
 
 
-			'/ <summary>
+    '/ <summary>
 
-			'/ Original double array.
+    '/ Original double array.
 
-			'/ </summary>
+    '/ </summary>
 
-			Private dValues(,) As Double
+    Private dValues(,) As Double
 
 
 
-			'/ <summary>
+    '/ <summary>
 
-			'/ Vector holding the sum of the rows.
+    '/ Vector holding the sum of the rows.
 
-			'/ </summary>
+    '/ </summary>
 
-			'/ <remarks>
+    '/ <remarks>
 
-			'/ Serves as the last column.
+    '/ Serves as the last column.
 
-			'/ </remarks>
+    '/ </remarks>
 
-			Private rowSums() As Object
+    Private rowSums() As Object
 
 
 
-			'/ <summary>
+    '/ <summary>
 
-			'/ Vector holding the sum of the columns.
+    '/ Vector holding the sum of the columns.
 
-			'/ </summary>
+    '/ </summary>
 
-			'/ <remarks>
+    '/ <remarks>
 
-			'/ Serves as the last row.
+    '/ Serves as the last row.
 
-			'/ </remarks>
+    '/ </remarks>
 
-			Private colSums() As Object
+    Private colSums() As Object
 
 
 
-			Dim rowCount As Integer
+    Dim rowCount As Integer
 
-			Dim colCount As Integer
+    Dim colCount As Integer
 
 
 
-		End Class
-   ~~~
-   {:.prettyprint }
+End Class
+
+{% endhighlight %}
 
 8. Here you are making a constructor that accepts a double array as an argument. In the constructor code, you must save the reference that is to be the passed in a double array, initialize two RowCount and ColCount fields and allocate the two additional arrays that are needed to hold the added sums you want. 
 
-   If you notice, you are actually populating these added arrays with formula strings such as "=Sum(A5:D5)". While using Essential Calculate with an ICalcData interface, Essential Calculate uses Excel-like notation to refer to the cells in a rectangular collection. A1 is the first cell in the first row, B1 is second cell in the first row, and so on. So, "=Sum(A5:D5)" sums columns 1 through 4 in row 5. The method RangeInfo.GetAlphaLabel used in the code, converts a numerical value like 1, 2, or 3, into the proper column letter A, B, or C.
+If you notice, you are actually populating these added arrays with formula strings such as "=Sum(A5:D5)". While using Essential Calculate with an ICalcData interface, Essential Calculate uses Excel-like notation to refer to the cells in a rectangular collection. A1 is the first cell in the first row, B1 is second cell in the first row, and so on. So, "=Sum(A5:D5)" sums columns 1 through 4 in row 5. The method RangeInfo.GetAlphaLabel used in the code, converts a numerical value like 1, 2, or 3, into the proper column letter A, B, or C.
 
-   ~~~ cs
+{% highlight c# %}
 
-		[C#]
+[C#]
 
 
 
-		/// <summary>
+/// <summary>
 
-		/// Wraps the double array with an extra row and column that holds calculated sums.
+/// Wraps the double array with an extra row and column that holds calculated sums.
 
-		/// </summary>
+/// </summary>
 
-		/// <param name="dValues"></param>
+/// <param name="dValues"></param>
 
-		public ArrayCalcData(double[,] dValues)
+public ArrayCalcData(double[,] dValues)
 
-		{
+{
 
-				this.dValues = dValues;
+        this.dValues = dValues;
 
-				rowCount = dValues.GetLength(0);
+        rowCount = dValues.GetLength(0);
 
-				colCount = dValues.GetLength(1);
+        colCount = dValues.GetLength(1);
 
-				rowSums = new object[rowCount + 1];
+        rowSums = new object[rowCount + 1];
 
-				colSums = new object[colCount + 1];
+        colSums = new object[colCount + 1];
 
 
 
-				// Initializes the formulas for the row sums.
+        // Initializes the formulas for the row sums.
 
-				// eg. "=Sum(A5:D5)"  to sum row 5
+        // eg. "=Sum(A5:D5)"  to sum row 5
 
-				for(int row = 0; row <= rowCount; ++row)
+        for(int row = 0; row <= rowCount; ++row)
 
-				{
+        {
 
-						rowSums[row] = string.Format("=Sum(A{1}:{0}{1})", 
+                rowSums[row] = string.Format("=Sum(A{1}:{0}{1})", 
 
-								RangeInfo.GetAlphaLabel(colCount), row + 1);
+                        RangeInfo.GetAlphaLabel(colCount), row + 1);
 
-				}
+        }
 
 
 
-				// Initializes the formulas for the column sums.
+        // Initializes the formulas for the column sums.
 
-				// eg. "=Sum(B1:B5)"  to sum column 2
+        // eg. "=Sum(B1:B5)"  to sum column 2
 
-				for(int col = 0; col <= colCount; ++col)
+        for(int col = 0; col <= colCount; ++col)
 
-				{
+        {
 
-						colSums[col] = string.Format("=Sum({0}1:{0}{1})", 
+                colSums[col] = string.Format("=Sum({0}1:{0}{1})", 
 
-								RangeInfo.GetAlphaLabel(col + 1), rowCount);
+                        RangeInfo.GetAlphaLabel(col + 1), rowCount);
 
-				}
+        }
 
-		}
+}
 
-   ~~~
-   {:.prettyprint }
-   
-   ~~~ vbnet
+{% endhighlight %}
+{% highlight vbnet %}
 
-		[VB]
+[VB]
 
 
 
-		'/ <summary>
+'/ <summary>
 
-		'/ Wraps the double array with an extra row and column that holds calculated sums.
+'/ Wraps the double array with an extra row and column that holds calculated sums.
 
-		'/ </summary>
+'/ </summary>
 
-		'/ <param name="dValues"></param>
+'/ <param name="dValues"></param>
 
-		Public Sub New(ByVal dValues(,) As Double)
+Public Sub New(ByVal dValues(,) As Double)
 
-				Me.dValues = dValues
+        Me.dValues = dValues
 
-				rowCount = dValues.GetLength(0)
+        rowCount = dValues.GetLength(0)
 
-				colCount = dValues.GetLength(1)
+        colCount = dValues.GetLength(1)
 
-				rowSums = New Object(rowCount + 1) {}
+        rowSums = New Object(rowCount + 1) {}
 
-				colSums = New Object(colCount + 1) {}
+        colSums = New Object(colCount + 1) {}
 
 
 
-				' Initializes the formulas for the row sums.
+        ' Initializes the formulas for the row sums.
 
-				' eg. "=Sum(A5:D5)"  to sum row 5
+        ' eg. "=Sum(A5:D5)"  to sum row 5
 
-					  Dim row As Integer
+              Dim row As Integer
 
-				 Dim row As Integer
+         Dim row As Integer
 
-				For row = 0 To rowCount - 1
+        For row = 0 To rowCount - 1
 
-					rowSums(row) = String.Format("=Sum(A{1}:{0}{1})", _ 
+            rowSums(row) = String.Format("=Sum(A{1}:{0}{1})", _ 
 
-								RangeInfo.GetAlphaLabel(colCount - 1), row + 1)
+                        RangeInfo.GetAlphaLabel(colCount - 1), row + 1)
 
-				Next
+        Next
 
 
 
-				' Initializes the formulas for the column sums.
+        ' Initializes the formulas for the column sums.
 
-				' eg. "=Sum(B1:B5)"  to sum column 2
+        ' eg. "=Sum(B1:B5)"  to sum column 2
 
-				Dim col As Integer
+        Dim col As Integer
 
-				For col = 0 To colCount - 1
+        For col = 0 To colCount - 1
 
-					colSums(col) = String.Format("=Sum({0}1:{0}{1})", _ 
+            colSums(col) = String.Format("=Sum({0}1:{0}{1})", _ 
 
-						 RangeInfo.GetAlphaLabel((col + 1)), rowCount - 1)
+                 RangeInfo.GetAlphaLabel((col + 1)), rowCount - 1)
 
-				Next
+        Next
 
 
 
-		' New
+' New
 
-		End Sub 
+End Sub 
 
 
 
-   ~~~
-   {:.prettyprint }
+{% endhighlight %}
 
 
 
@@ -965,698 +948,684 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 
 
 
-	![](Getting-Started_images/Getting-Started_img12.png)
+![](Getting-Started_images/Getting-Started_img12.png)
 
 
 
-	Using Visual Studio 2003 with C#, add a colon after the class name in the class declaration and type ICalcData. Pressing the tab key adds the method stubs. Given below is a picture showing this technique.
+Using Visual Studio 2003 with C#, add a colon after the class name in the class declaration and type ICalcData. Pressing the tab key adds the method stubs. Given below is a picture showing this technique.
 
-	If you are using VB.NET, then you can add the ICalcData stubs using the drop-down lists at the top of the edit window in Visual Studio. In the left drop-down, select the ICalcData interface as shown below.
+If you are using VB.NET, then you can add the ICalcData stubs using the drop-down lists at the top of the edit window in Visual Studio. In the left drop-down, select the ICalcData interface as shown below.
 
-	![](Getting-Started_images/Getting-Started_img13.png)
-
-
-
-
-
-	Then, in the right drop-down, click each of the four items listed to add the proper code stubs.
-
-
-
-	![](Getting-Started_images/Getting-Started_img14.png)
+![](Getting-Started_images/Getting-Started_img13.png)
 
 
 
 
 
-	After doing these steps, you can see these methods in the class code. (In the C# code, the region may be collapsed.)
-
-
-   ~~~ cs
-   
-		[C#]
-
-		public object GetValueRowCol(int row, int col)
-
-		{
-
-				// TODO:  Add ArrayCalcData1.GetValueRowCol implementation.
-
-				return null;
-
-		}
+Then, in the right drop-down, click each of the four items listed to add the proper code stubs.
 
 
 
-		public void SetValueRowCol(object value, int row, int col)
-
-		{
-
-				// TODO:  Add ArrayCalcData1.SetValueRowCol implementation.
-
-		}
+![](Getting-Started_images/Getting-Started_img14.png)
 
 
 
-		public event Syncfusion.Calculate.ValueChangedEventHandler ValueChanged;
+
+
+After doing these steps, you can see these methods in the class code. (In the C# code, the region may be collapsed.)
+
+
+{% highlight c# %}
+[C#]
 
 
 
-		public void WireParentObject()
+public object GetValueRowCol(int row, int col)
 
-		{
+{
 
-			 // TODO:  Add ArrayCalcData1.WireParentObject implementation.   
+        // TODO:  Add ArrayCalcData1.GetValueRowCol implementation.
 
-		}
+        return null;
 
-   ~~~
-   {:.prettyprint }
-   
-   ~~~ vbnet
-
-		[VB]
+}
 
 
 
-		Public Function GetValueRowCol(ByVal row As Integer, ByVal col As Integer) _
+public void SetValueRowCol(object value, int row, int col)
 
-						As Object Implements Syncfusion.Calculate.ICalcData.GetValueRowCol
+{
 
-		End Function
+        // TODO:  Add ArrayCalcData1.SetValueRowCol implementation.
 
-
-
-		Public Sub SetValueRowCol(ByVal value As Object, ByVal row As Integer, ByVal _
-
-						col As Integer) Implements Syncfusion.Calculate.ICalcData.SetValueRowCol
-
-		End Sub
+}
 
 
 
-		Public Sub WireParentObject() Implements Syncfusion.Calculate.ICalcData.WireParentObject
-
-		End Sub
+public event Syncfusion.Calculate.ValueChangedEventHandler ValueChanged;
 
 
 
-		Public Event ValueChanged(ByVal sender As Object, ByVal e As _
+public void WireParentObject()
 
-		Syncfusion.Calculate.ValueChangedEventArgs) Implements _ 
+{
 
-								Syncfusion.Calculate.ICalcData.ValueChanged
+     // TODO:  Add ArrayCalcData1.WireParentObject implementation.   
 
-   ~~~
-   {:.prettyprint }
+}
+
+{% endhighlight %}
+{% highlight vbnet %}
+
+[VB]
+
+
+
+Public Function GetValueRowCol(ByVal row As Integer, ByVal col As Integer) _
+
+                As Object Implements Syncfusion.Calculate.ICalcData.GetValueRowCol
+
+End Function
+
+
+
+Public Sub SetValueRowCol(ByVal value As Object, ByVal row As Integer, ByVal _
+
+                col As Integer) Implements Syncfusion.Calculate.ICalcData.SetValueRowCol
+
+End Sub
+
+
+
+Public Sub WireParentObject() Implements Syncfusion.Calculate.ICalcData.WireParentObject
+
+End Sub
+
+
+
+Public Event ValueChanged(ByVal sender As Object, ByVal e As _
+
+Syncfusion.Calculate.ValueChangedEventArgs) Implements _ 
+
+                        Syncfusion.Calculate.ICalcData.ValueChanged
+
+{% endhighlight  %}
 
 10. GetValueRowCol should return the value for a given row and column index. The indexes are one-based by convention. Here is the code that you must use. If the last column is requested, the value in the colSums array is returned. If the last row is requested, the value in the rowSums array is returned. Otherwise, the value in the double array is returned.
 
-    ~~~ cs
+{% highlight c# %}
 
-		[C#]
-
-
-
-		/// <summary>
-
-		/// Gets the value into either the double array or column vector or row vector.
-
-		/// </summary>
-
-		/// <param name="row">One-based row index.</param>
-
-		/// <param name="col">One-based column index.</param>
-
-		/// <returns>The value.</returns>
-
-		/// <remarks> By convention, ICalcData uses one-based indexes.</remarks>
-
-		public object GetValueRowCol(int row, int col)
-
-		{
-
-				if(row-1 == rowCount)
-
-				{
-
-						return colSums[col-1];
-
-				}
-
-				else if(col-1 == colCount)
-
-				{
-
-						return rowSums[row-1];
+[C#]
 
 
 
-				}
+/// <summary>
 
-				else
+/// Gets the value into either the double array or column vector or row vector.
 
-						return this.dValues[row-1, col-1];
+/// </summary>
 
-		}
+/// <param name="row">One-based row index.</param>
 
-    ~~~
-    {:.prettyprint }
-		
-    ~~~ vbnet
+/// <param name="col">One-based column index.</param>
 
-		[VB]
+/// <returns>The value.</returns>
 
+/// <remarks> By convention, ICalcData uses one-based indexes.</remarks>
 
+public object GetValueRowCol(int row, int col)
 
-		'/ <summary>
+{
 
-		'/ Gets the value into either the double array or column vector or row vector.
+        if(row-1 == rowCount)
 
-		'/ </summary>
+        {
 
-		'/ <param name="row">One-based row index.</param>
+                return colSums[col-1];
 
-		'/ <param name="col">One-based column index.</param>
+        }
 
-		'/ <returns>The value.</returns>
+        else if(col-1 == colCount)
 
-		'/ <remarks> By convention, ICalcData uses one-based indexes.</remarks>
+        {
 
-		Public Function GetValueRowCol(ByVal row As Integer, ByVal col As Integer) _
-
-					   As Object Implements Syncfusion.Calculate.ICalcData.GetValueRowCol
-
-				If row = rowCount Then
-
-					Return colSums((col - 1))
-
-				Else
-
-					If col = colCount Then
-
-						Return rowSums((row - 1))
+                return rowSums[row-1];
 
 
 
-					Else
+        }
 
-						Return Me.dValues(row - 1, col - 1)
+        else
 
-					End If
+                return this.dValues[row-1, col-1];
 
-				End If
+}
+
+{% endhighlight %}
+{% highlight vbnet %}
+
+[VB]
 
 
 
-		' GetValueRowCol
+'/ <summary>
 
-		End Function 
+'/ Gets the value into either the double array or column vector or row vector.
 
-    ~~~
-    {:.prettyprint }
+'/ </summary>
+
+'/ <param name="row">One-based row index.</param>
+
+'/ <param name="col">One-based column index.</param>
+
+'/ <returns>The value.</returns>
+
+'/ <remarks> By convention, ICalcData uses one-based indexes.</remarks>
+
+Public Function GetValueRowCol(ByVal row As Integer, ByVal col As Integer) _
+
+               As Object Implements Syncfusion.Calculate.ICalcData.GetValueRowCol
+
+        If row = rowCount Then
+
+            Return colSums((col - 1))
+
+        Else
+
+            If col = colCount Then
+
+                Return rowSums((row - 1))
+
+
+
+            Else
+
+                Return Me.dValues(row - 1, col - 1)
+
+            End If
+
+        End If
+
+
+
+' GetValueRowCol
+
+End Function 
+
+{% endhighlight %}
 
 11. SetValueRowCol is used to set the value at a specified row and column index. You can also use it to raise the ValueChanged event. The CalcEngine listens to this event to trigger calculations as values are entered initially and later modified. It is this event that brings calculation support into the object. 
 
-	 Here is the code you must use. The code is the reverse process of the GetValueRowCol method. At the end of the method, the ValueChanged event is raised.
+Here is the code you must use. The code is the reverse process of the GetValueRowCol method. At the end of the method, the ValueChanged event is raised.
 
-    ~~~ cs
+{% highlight c# %}
 
-		[C#]
+[C#]
 
 
 
-		/// <summary>
+/// <summary>
 
-		/// Sets the value into either the double array or column vector or row vector.
+/// Sets the value into either the double array or column vector or row vector.
 
-		/// </summary>
+/// </summary>
 
-		/// <param name="row">One-based row index.</param>
+/// <param name="row">One-based row index.</param>
 
-		/// <param name="col">One-based column index.</param>
+/// <param name="col">One-based column index.</param>
 
-		/// <param name="value">The value to be set.</param>
+/// <param name="value">The value to be set.</param>
 
-		/// <remarks> This setter raises the ICalcData.ValueChanged event which, 
+/// <remarks> This setter raises the ICalcData.ValueChanged event which, 
 
-		/// is listened to by the CalcEngine to manage the calculations.
+/// is listened to by the CalcEngine to manage the calculations.
 
-		/// 
+/// 
 
-		/// By convention, ICalcData uses one-based indexes.
+/// By convention, ICalcData uses one-based indexes.
 
-		/// </remarks>
+/// </remarks>
 
-		public void SetValueRowCol(object value, int row, int col)
+public void SetValueRowCol(object value, int row, int col)
 
-		{
+{
 
-				if(row-1 == rowCount)
+        if(row-1 == rowCount)
 
-				{
+        {
 
-						colSums[col-1] = value;
+                colSums[col-1] = value;
 
-				}
+        }
 
-				else if(col-1 == colCount)
+        else if(col-1 == colCount)
 
-				{
+        {
 
-						rowSums[row-1] = value;
+                rowSums[row-1] = value;
 
-				}
+        }
 
-				else
+        else
 
-						this.dValues[row-1, col-1] = double.Parse(value.ToString());
+                this.dValues[row-1, col-1] = double.Parse(value.ToString());
 
 
 
-				ValueChangedEventArgs e1 = new ValueChangedEventArgs(row, col, value.ToString());
+        ValueChangedEventArgs e1 = new ValueChangedEventArgs(row, col, value.ToString());
 
-				ValueChanged(this, e1);
+        ValueChanged(this, e1);
 
-		}
+}
 
-    ~~~
-    {:.prettyprint }
-		
-    ~~~ vbnet
+{% endhighlight %}
+{% highlight vbnet %}
 
-		[VB]
+[VB]
 
 
 
-		'/ <summary>
+'/ <summary>
 
-			'/ Sets the value into either the double array or column vector or row vector.
+    '/ Sets the value into either the double array or column vector or row vector.
 
-			'/ </summary>
+    '/ </summary>
 
-			'/ <param name="row">One-based row index.</param>
+    '/ <param name="row">One-based row index.</param>
 
-			'/ <param name="col">One-based column index.</param>
+    '/ <param name="col">One-based column index.</param>
 
-			'/ <param name="value">The value to be set.</param>
+    '/ <param name="value">The value to be set.</param>
 
-			'/ <remarks> This setter raises the ICalcData.ValueChanged event which, 
+    '/ <remarks> This setter raises the ICalcData.ValueChanged event which, 
 
-			'/ is listened to by the CalcEngine to manage the calculations.
+    '/ is listened to by the CalcEngine to manage the calculations.
 
-			'/ 
+    '/ 
 
-			'/ By convention, ICalcData uses one-based indexes.
+    '/ By convention, ICalcData uses one-based indexes.
 
-			'/ </remarks>
+    '/ </remarks>
 
-			Public Sub SetValueRowCol(ByVal value As Object, ByVal row As Integer, _
+    Public Sub SetValueRowCol(ByVal value As Object, ByVal row As Integer, _
 
-								   ByVal col As Integer) Implements                _ 
+                           ByVal col As Integer) Implements                _ 
 
-								   Syncfusion.Calculate.ICalcData.SetValueRowCol
+                           Syncfusion.Calculate.ICalcData.SetValueRowCol
 
 
 
-				If row = rowCount Then
+        If row = rowCount Then
 
-					colSums(col - 1) = value
+            colSums(col - 1) = value
 
-				Else
+        Else
 
-					If col = colCount Then
+            If col = colCount Then
 
-						rowSums(row - 1) = value
+                rowSums(row - 1) = value
 
-					Else
+            Else
 
-						Me.dValues(row - 1, col - 1) = Double.Parse(value.ToString())
+                Me.dValues(row - 1, col - 1) = Double.Parse(value.ToString())
 
-					End If
+            End If
 
-				End If
+        End If
 
-				Dim e1 As New ValueChangedEventArgs(row, col, value.ToString())
+        Dim e1 As New ValueChangedEventArgs(row, col, value.ToString())
 
-				RaiseEvent ValueChanged(Me, e1)
+        RaiseEvent ValueChanged(Me, e1)
 
 
 
-		' SetValueRowCol
+' SetValueRowCol
 
-		End Sub 
+End Sub 
 
-    ~~~
-    {:.prettyprint }
+{% endhighlight %}
 
 12. You have to add an indexer definition to the class for two reasons: it is a straight-forward way to force the user to go though the GetValueRowCol and SetValueRowCol methods, allowing the CalcEngine to monitor these changes. It also makes your ArrayCalcData class look like an array.
 
-    Here is the code you must use. It is just a Get and Set implementation that goes through the ICalcData interface methods.
-
-	
-	~~~ cs
-
-	[C#]
 
 
-
-		/// <summary>
-
-		/// Gets / sets the value of this ArrayCalcData object.
-
-		/// </summary>
-
-		/// <remarks>
-
-		/// Since this class wraps a double array, the indexing is zero-based but,
-
-		/// the ICalcData methods requires one-based indexing by convention. So, 
-
-		/// one is added to the indexes when the ICalcData methods are called.
-
-		/// </remarks>
-
-		public object this[int row, int col]
-
-		{
-
-				get{return GetValueRowCol(row + 1, col + 1);}
-
-				set{SetValueRowCol(value, row + 1, col + 1);}
-
-		}
-   
-    ~~~
-    {:.prettyprint }
-
-    ~~~ vbnet
+Here is the code you must use. It is just a Get and Set implementation that goes through the ICalcData interface methods.
+{% highlight c# %}
+[C#]
 
 
 
-		'/ <summary>
+/// <summary>
 
-		'/ Gets / sets the value of this ArrayCalcData object.
+/// Gets / sets the value of this ArrayCalcData object.
 
-		'/ </summary>
+/// </summary>
 
-		'/ <remarks>
+/// <remarks>
 
-		'/ Since this class wraps a double array, the indexing is zero-based but, 
+/// Since this class wraps a double array, the indexing is zero-based but,
 
-		'/ the ICalcData methods requires one-based indexing by convention. So, 
+/// the ICalcData methods requires one-based indexing by convention. So, 
 
-		'/ one is added to the indexes when the ICalcData methods are called.
+/// one is added to the indexes when the ICalcData methods are called.
 
-		'/ </remarks>
+/// </remarks>
 
-		Default Public Property Item(ByVal row As Integer, ByVal col As Integer) As Object
+public object this[int row, int col]
 
-				Get
+{
 
-					Return GetValueRowCol(row + 1, col + 1)
+        get{return GetValueRowCol(row + 1, col + 1);}
 
-				End Get
+        set{SetValueRowCol(value, row + 1, col + 1);}
 
-				Set(ByVal Value As Object)
+}
 
-					SetValueRowCol(Value, row + 1, col + 1)
+{% endhighlight %}
+{% highlight vbnet %}
 
-				End Set
+[VB]
 
-		End Property
 
-    ~~~
-    {:.prettyprint }
+
+'/ <summary>
+
+'/ Gets / sets the value of this ArrayCalcData object.
+
+'/ </summary>
+
+'/ <remarks>
+
+'/ Since this class wraps a double array, the indexing is zero-based but, 
+
+'/ the ICalcData methods requires one-based indexing by convention. So, 
+
+'/ one is added to the indexes when the ICalcData methods are called.
+
+'/ </remarks>
+
+Default Public Property Item(ByVal row As Integer, ByVal col As Integer) As Object
+
+        Get
+
+            Return GetValueRowCol(row + 1, col + 1)
+
+        End Get
+
+        Set(ByVal Value As Object)
+
+            SetValueRowCol(Value, row + 1, col + 1)
+
+        End Set
+
+End Property
+
+{% endhighlight %}
 
 13. Generate Data button handler creates a random double array and populate it with random double values. It also creates an instance of an ArrayCalcData class to wrap the double array that it creates. It then creates a CalcEngine object that uses this ArrayCalcData object as its datasource. The ShowObject method just displays the values from your ArrayCalcData object in the multiline text box that you added to the form. 
 
 
 
-	The engine.UseDependencies property tells the CalcEngine that you want it to track dependencies so the value automatically recalculates when dependent values change. The engine.RecalculateRange call allows the CalcEngine to traverse all the data and set up the necessary dependencies to do the calculations.
+The engine.UseDependencies property tells the CalcEngine that you want it to track dependencies so the value automatically recalculates when dependent values change. The engine.RecalculateRange call allows the CalcEngine to traverse all the data and set up the necessary dependencies to do the calculations.
 
-	Here is the code.+--+       
+Here is the code.+--+       
 
 
-    ~~~ cs
-	
-		[C#]
+{% highlight c# %}
+[C#]
 
 
 
-		using Syncfusion.Calculate;
+using Syncfusion.Calculate;
 
 
 
-		//. . . 
+//. . . 
 
 
 
-		private Random r = new Random();
+private Random r = new Random();
 
-		private ArrayCalcData data;
+private ArrayCalcData data;
 
-		int nRows;
+int nRows;
 
-		int nCols;
+int nCols;
 
 
 
-		/// <summary>
+/// <summary>
 
-		/// Populates the double array.
+/// Populates the double array.
 
-		/// </summary>
+/// </summary>
 
-		/// <param name="sender"></param>
+/// <param name="sender"></param>
 
-		/// <param name="e"></param>
+/// <param name="e"></param>
 
-		private void button1_Click(object sender, System.EventArgs e)
+private void button1_Click(object sender, System.EventArgs e)
 
-		{
+{
 
-				// Creates some sample data.
+        // Creates some sample data.
 
-				this.nRows = r.Next(10) + 2;
+        this.nRows = r.Next(10) + 2;
 
-				this.nCols = r.Next(3) + 1;
+        this.nCols = r.Next(3) + 1;
 
-				double[,] a = new double[nRows,nCols];
+        double[,] a = new double[nRows,nCols];
 
-				for(int row = 0; row < nRows; ++ row)
+        for(int row = 0; row < nRows; ++ row)
 
-						for(int col = 0; col < nCols; ++col)
+                for(int col = 0; col < nCols; ++col)
 
-								a[row, col] = ((double)r.Next(100)) / 10;
+                        a[row, col] = ((double)r.Next(100)) / 10;
 
 
 
-				// Creates an ArrayCalcData object and passes it in this array.
+        // Creates an ArrayCalcData object and passes it in this array.
 
-				this.data = new ArrayCalcData(a);
+        this.data = new ArrayCalcData(a);
 
 
 
-				// Creates a CalcEngine object using this ArrayCalcData object.
+        // Creates a CalcEngine object using this ArrayCalcData object.
 
-				CalcEngine engine = new CalcEngine(this.data);
+        CalcEngine engine = new CalcEngine(this.data);
 
 
 
-				// Turns on dependency tracking so that values set with the Set button take effect immediately.
+        // Turns on dependency tracking so that values set with the Set button take effect immediately.
 
-				engine.UseDependencies = true;
+        engine.UseDependencies = true;
 
 
 
-				// Calls RecalculateRange so any formulas in the data can be initially computed.
+        // Calls RecalculateRange so any formulas in the data can be initially computed.
 
-				engine.RecalculateRange(RangeInfo.Cells(1, 1, nRows + 1, nCols + 1), data); 
+        engine.RecalculateRange(RangeInfo.Cells(1, 1, nRows + 1, nCols + 1), data); 
 
 
 
-				ShowObject();
+        ShowObject();
 
-		}
+}
 
 
 
-		/// <summary>
+/// <summary>
 
-		/// Displays the ArrayCalcData values in a text box.
+/// Displays the ArrayCalcData values in a text box.
 
-		/// </summary>
+/// </summary>
 
-		private void ShowObject()
+private void ShowObject()
 
-		{
+{
 
-				this.textBox1.Text = "";
+        this.textBox1.Text = "";
 
-				for(int i = 0; i <= this.nRows; ++i)
+        for(int i = 0; i <= this.nRows; ++i)
 
-				{
+        {
 
-						for(int j = 0; j <= this.nCols; ++j)
+                for(int j = 0; j <= this.nCols; ++j)
 
-						{
+                {
 
-								this.textBox1.Text += this.data[i, j].ToString() + "\t";
+                        this.textBox1.Text += this.data[i, j].ToString() + "\t";
 
 
 
-						}
+                }
 
-						this.textBox1.Text += "\r\n";
+                this.textBox1.Text += "\r\n";
 
-				}
+        }
 
-		}
+}
 
-    ~~~
-    {:.prettyprint }
-		
-    ~~~ vbnet
+{% endhighlight %}
+{% highlight vbnet %}
 
-		[VB]
+[VB]
 
 
 
-		Imports Syncfusion.Calculate
+Imports Syncfusion.Calculate
 
 
 
-		'...
+'...
 
 
 
-		Private r As New Random
+Private r As New Random
 
-		Private data As ArrayCalcData
+Private data As ArrayCalcData
 
-		Dim nRows As Integer
+Dim nRows As Integer
 
-		Dim nCols As Integer
+Dim nCols As Integer
 
 
 
-		'/ <summary>
+'/ <summary>
 
-		'/ Populates the double array.
+'/ Populates the double array.
 
-		'/ </summary>
+'/ </summary>
 
-		'/ <param name="sender"></param>
+'/ <param name="sender"></param>
 
-		'/ <param name="e"></param>
+'/ <param name="e"></param>
 
-		Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) _
+Private Sub button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) _
 
-													  Handles Button1.Click
+                                              Handles Button1.Click
 
-				' Creates some sample data.
+        ' Creates some sample data.
 
-				Me.nRows = r.Next(10) + 2
+        Me.nRows = r.Next(10) + 2
 
-				Me.nCols = r.Next(3) + 1
+        Me.nCols = r.Next(3) + 1
 
-				Dim a(nRows, nCols) As Double
+        Dim a(nRows, nCols) As Double
 
-				Dim row As Integer
+        Dim row As Integer
 
-				For row = 0 To nRows - 1
+        For row = 0 To nRows - 1
 
-					Dim col As Integer
+            Dim col As Integer
 
-					For col = 0 To nCols - 1
+            For col = 0 To nCols - 1
 
-						a(row, col) = CDbl(r.Next(100)) / 10
+                a(row, col) = CDbl(r.Next(100)) / 10
 
-					Next
+            Next
 
-				Next
+        Next
 
 
 
-				'Creates an ArrayCalcData object and passes it in this array.
+        'Creates an ArrayCalcData object and passes it in this array.
 
-				Me.data = New ArrayCalcData(a)
+        Me.data = New ArrayCalcData(a)
 
 
 
-				' Creates a CalcEngine object using this ArrayCalcData object.
+        ' Creates a CalcEngine object using this ArrayCalcData object.
 
-				Dim engine As New CalcEngine(Me.data)
+        Dim engine As New CalcEngine(Me.data)
 
 
 
-				' Turns on dependency tracking so that values set with the Set button take effect immediately.
+        ' Turns on dependency tracking so that values set with the Set button take effect immediately.
 
-				engine.UseDependencies = True
+        engine.UseDependencies = True
 
 
 
-				' Calls the RecalculateRange so any formulas in the data can be initially computed.
+        ' Calls the RecalculateRange so any formulas in the data can be initially computed.
 
-				engine.RecalculateRange(RangeInfo.Cells(1, 1, nRows + 1, nCols + 1), data)
+        engine.RecalculateRange(RangeInfo.Cells(1, 1, nRows + 1, nCols + 1), data)
 
 
 
-				ShowObject()
+        ShowObject()
 
 
 
-		' Button1_Click
+' Button1_Click
 
-		End Sub 
+End Sub 
 
 
 
 
 
-		'/ <summary>
+'/ <summary>
 
-		'/ Displays the ArrayCalcData values in a text box.
+'/ Displays the ArrayCalcData values in a text box.
 
-		'/ </summary>
+'/ </summary>
 
-		Private Sub ShowObject()
+Private Sub ShowObject()
 
-				Me.TextBox1.Text = ""
+        Me.TextBox1.Text = ""
 
-				Dim i As Integer
+        Dim i As Integer
 
-				For i = 0 To Me.nRows
+        For i = 0 To Me.nRows
 
-					Dim j As Integer
+            Dim j As Integer
 
 
 
-					For j = 0 To Me.nCols
+            For j = 0 To Me.nCols
 
-						Me.TextBox1.Text += Me.data(i, j).ToString() + ControlChars.Tab
+                Me.TextBox1.Text += Me.data(i, j).ToString() + ControlChars.Tab
 
-					Next
+            Next
 
-					Me.TextBox1.Text += ControlChars.Cr + ControlChars.Lf
+            Me.TextBox1.Text += ControlChars.Cr + ControlChars.Lf
 
-				Next
+        Next
 
 
 
-		' ShowObject
+' ShowObject
 
-		End Sub 
+End Sub 
 
-    ~~~
-    {:.prettyprint }
+{% endhighlight  %}
 
-	 Here is a typical display that you might see if you run the application at this point. Recall that the data is random so you may see fewer or more rows and columns. The column on the right is the sum of the columns that precedes it in the same row. The row at the bottom is the sum of the columns above it. You can click the Generate Data button several times to see different data.
+Here is a typical display that you might see if you run the application at this point. Recall that the data is random so you may see fewer or more rows and columns. The column on the right is the sum of the columns that precedes it in the same row. The row at the bottom is the sum of the columns above it. You can click the Generate Data button several times to see different data.
 
 
 
-	 ![](Getting-Started_images/Getting-Started_img15.png)
+![](Getting-Started_images/Getting-Started_img15.png)
 
 
 
@@ -1665,106 +1634,100 @@ For rectangular business objects, implementing an ICalcData interface lets you u
 14. The Set button allows you to set a particular value in the displayed data so you can see the effect of changing this value on the calculations in the last row and last column. Recall that your data store is mimicking an array of doubles, so it indexes from zero even though the ICalcData interface expects one-based indexing. The implementation code takes this into account. 
 
 
-    ~~~ cs
-	
-		[C#]
+{% highlight c# %}
+[C#]
 
 
 
-		/// <summary>
+/// <summary>
 
-		/// Populates a single entry in the ArrayCalcData object.
+/// Populates a single entry in the ArrayCalcData object.
 
-		/// </summary>
+/// </summary>
 
-		/// <param name="sender"></param>
+/// <param name="sender"></param>
 
-		/// <param name="e"></param>
+/// <param name="e"></param>
 
-		private void button2_Click(object sender, System.EventArgs e)
+private void button2_Click(object sender, System.EventArgs e)
 
-		{
+{
 
-				if (this.nRows == 0)
+        if (this.nRows == 0)
 
-				{
+        {
 
-						MessageBox.Show("Generate data first.");
+                MessageBox.Show("Generate data first.");
 
-						return;
+                return;
 
-				}
+        }
 
-				int row = int.Parse(this.textBox2.Text);
+        int row = int.Parse(this.textBox2.Text);
 
-				int col = int.Parse(this.textBox3.Text);
+        int col = int.Parse(this.textBox3.Text);
 
-				string val = this.textBox4.Text;
+        string val = this.textBox4.Text;
 
-				this.data[row, col] = val;
-
-
-
-				ShowObject();
-
-		}
-
-    ~~~
-    {:.prettyprint }
-		
-    ~~~ vbnet
-
-		[VB]
+        this.data[row, col] = val;
 
 
 
-		'/ <summary>
+        ShowObject();
 
-		'/ Populates a single entry in the ArrayCalcData object.
+}
 
-		'/ </summary>
+{% endhighlight %}
+{% highlight vbnet %}
 
-		'/ <param name="sender"></param>
-
-		'/ <param name="e"></param>
-
-		Private Sub button2_Click(ByVal sender As Object, ByVal e As System.EventArgs) _
-
-														   Handles Button2.Click
-
-				If Me.nRows = 0 Then
-
-					MessageBox.Show("Generate data first.")
-
-					Return
-
-				End If
+[VB]
 
 
 
-				Dim row As Integer = Integer.Parse(Me.textBox2.Text)
+'/ <summary>
 
-				Dim col As Integer = Integer.Parse(Me.textBox3.Text)
+'/ Populates a single entry in the ArrayCalcData object.
 
-				Dim val As String = Me.textBox4.Text
+'/ </summary>
+
+'/ <param name="sender"></param>
+
+'/ <param name="e"></param>
+
+Private Sub button2_Click(ByVal sender As Object, ByVal e As System.EventArgs) _
+
+                                                   Handles Button2.Click
+
+        If Me.nRows = 0 Then
+
+            MessageBox.Show("Generate data first.")
+
+            Return
+
+        End If
 
 
 
-				Me.data(row, col) = val
+        Dim row As Integer = Integer.Parse(Me.textBox2.Text)
+
+        Dim col As Integer = Integer.Parse(Me.textBox3.Text)
+
+        Dim val As String = Me.textBox4.Text
 
 
 
-				ShowObject()
+        Me.data(row, col) = val
 
 
 
-		' Button2_Click
+        ShowObject()
 
-		End Sub 
 
-	~~~
-    {:.prettyprint }
-		
+
+' Button2_Click
+
+End Sub 
+{% endhighlight %}
 Here is the code you must use. It allows you to specify the row, column and value. Note there is no error checking code shown here, so enter only values that make sense for the displayed data.
 
 On the previous screen, if you click the Set button, it places 123 in cell 0,0. Notice the calculations update automatically to reflect the new value.

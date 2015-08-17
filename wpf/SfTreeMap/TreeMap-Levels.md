@@ -20,7 +20,7 @@ The levels of TreeMap can be categorized into two types such as,
 
 TreeMapFlatLevel is used to define levels for flat data collection. 
 
-### ItemsSource:
+ItemsSource:
 
 The ItemsSource set for SfTreeMap must be a flat collection of data. The following code shows how to bind a flat collection as ItemsSource to a TreeMap.
 
@@ -115,7 +115,7 @@ PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Coun
 {% endhighlight %}
 
 
-### GroupPath:
+GroupPath:
 
 You must specify the GroupPath for each and every flat level of TreeMap. It is a path to a field on the source object, which serves as the “Group” for the levels specified. Based upon the GroupPath, the data is grouped in the TreeMap. If GroupPath is not specified, then the items are not grouped, and it is shown in the order, in which they are specified in the ItemsSource.
 
@@ -165,7 +165,7 @@ You must specify the GroupPath for each and every flat level of TreeMap. It is a
 
 
 
-### GroupGap: 
+GroupGap: 
 
 You can specify GroupGap for separating the items of every flat level and it is used to differentiate the levels mentioned for TreeMap.
 
@@ -608,9 +608,9 @@ You must specify ChildPath for each and every hierarchical level of TreeMap. It 
 
 
 
+![C:/Users/ApoorvahR/Desktop/Note.png](TreeMap-Levels_images/TreeMap-Levels_img1.png)
 
-
-Note: The specified field must be a collection of sub class (object) specified in the nested data collection.
+_Note: The specified field must be a collection of sub class (object) specified in the nested data collection._
 
 
 

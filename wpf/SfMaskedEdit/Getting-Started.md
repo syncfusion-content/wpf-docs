@@ -31,6 +31,8 @@ The following code example shows how to create the SfMaskedEdit from XAML.
 
 {% highlight xml %}
 
+[XAML]
+
 <syncfusion:SfMaskedEdit HorizontalAlignment="Left" Margin="103,143,0,0" TextWrapping="Wrap" Text="SfMaskedEdit" VerticalAlignment="Top" Width="255" Height="46"/>
 
 {% endhighlight %}
@@ -45,10 +47,11 @@ To create a MaskedEdit control, use the following code.
 
 {% highlight C# %}
 
+[C#]
+
    SfMaskedEdit maskededit = new SfMaskedEdit() { Text = "SfMaskedEdit", Width = 150, Height = 50 };
 
     this.Content = maskededit;
-	
 {% endhighlight %}
 
 ![](Getting-Started_images/Getting-Started_img3.jpeg)
@@ -60,10 +63,8 @@ To create a MaskedEdit control, use the following code.
 The SfMaskedEdit control can also be created and configured by using the ExpressionBlend. The following steps display this.
 
 1. Create a WPF project in the Expression Blend and add the reference to the following assemblies.
-   
    1. Syncfusion.SfInput.WPF
    2. Syncfusion.SfShared.WPF
-   
 2. Search for the SfMaskedEdit in the toolbox.
 
 
@@ -74,10 +75,13 @@ The SfMaskedEdit control can also be created and configured by using the Express
 
 3. Now drag and drop the SfMaskedEdit into the designer. It generates the SfMaskedEdit. Then configure the properties of the SfMaskedEdit control by using the properties area.
 
-   ![](Getting-Started_images/Getting-Started_img5.jpeg)
+![](Getting-Started_images/Getting-Started_img5.jpeg)
 
 
 
-   This generates the SfMaskedEdit as follows:
+This generates the SfMaskedEdit as follows:
 
-   ![](Getting-Started_images/Getting-Started_img6.jpeg)
+![](Getting-Started_images/Getting-Started_img6.jpeg)
+
+
+

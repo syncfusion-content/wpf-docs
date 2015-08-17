@@ -62,7 +62,7 @@ Now you can edit each part in the template and can create custom look and feel f
                             </Grid.RowDefinitions>
                             <Border x:Name="border" BorderBrush="#FF333333" RenderTransformOrigin="0.5,0.5" CornerRadius="4" Padding="4">
 
-                                <ContentPresenter Content="{TemplateBinding Content}" 							ContentTemplate="{TemplateBinding ContentTemplate}" />
+                                <ContentPresenter Content="{TemplateBinding Content}" 							ContentTemplate="{TemplateBinding ContentTemplate}" />
                             </Border>
 
                             <Border BorderThickness="2" Grid.Row="1" Height="100" VerticalAlignment="Top" HorizontalAlignment="Stretch" CornerRadius="5">

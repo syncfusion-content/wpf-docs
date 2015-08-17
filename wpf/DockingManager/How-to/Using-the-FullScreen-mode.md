@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-## Using the FullScreen mode
+### Using the FullScreen mode
 
 The FullScreen Mode is used to display the control in full screen. This will be effective while you use TDI Modes. The TabPanel will be hidden and visible on mouse roll-over. For this, you have TDIFullScreenMode property. This property is of type FullScreen mode which has following values.
 
@@ -24,20 +24,14 @@ ControlMode:
 In this mode, fullscreen will be disabled and only the Tab panel will be hidden and visible only on mouse roll-over.
 
 
-{% highlight xml %}
-<!-- To use Control Mode-->
-<syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="ControlMode"/>
-<!-- None disables this feature--><syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="None"/>
-<!-- To use Window Mode--><syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="WindowMode"/>
-{% endhighlight %}
 
-{% highlight c# %}
-//Disables this feature.
-DockingManager.TDIFullScreenMode = FullScreenMode.None;
-//To use controlMode.
-DockingManager.TDIFullScreenMode = FullScreenMode.ControlMode;
-//To use Window Mode.
-DockingManager.TDIFullScreenMode = FullScreenMode.WindowMode;
-{% endhighlight %}
+<table>
+<tr>
+<td>
+[XAML]<!-- To use Control Mode--><syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="ControlMode"/><!-- None disables this feature--><syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="None"/><!-- To use Window Mode--><syncfusion:DockingManager UseDocumentContainer="True" TDIFullScreenMode="WindowMode"/></td></tr>
+<tr>
+<td>
+[C#]//Disables this feature.DockingManager.TDIFullScreenMode = FullScreenMode.None;//To use controlMode.DockingManager.TDIFullScreenMode = FullScreenMode.ControlMode;//To use Window Mode.DockingManager.TDIFullScreenMode = FullScreenMode.WindowMode;</td></tr>
+</table>
 
 

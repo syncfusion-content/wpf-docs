@@ -15,6 +15,7 @@ Table support for the RichTextBoxAdv control has been implemented as in MS Word.
 
 {% highlight xml %}
 
+[XAML]               
 <syncfusion:TableAdv>                          
 <syncfusion:TableRowAdv>                             
 <syncfusion:TableCellAdv>                                 
@@ -24,11 +25,11 @@ Table support for the RichTextBoxAdv control has been implemented as in MS Word.
 </syncfusion:TableCellAdv>                        
  </syncfusion:TableRowAdv>                      
 </syncfusion:TableAdv>
-
 {% endhighlight %}
 
 {% highlight C# %}
 
+[C#]
 TableAdv table = new TableAdv();          
 TableRowAdv row = new TableRowAdv();          
 TableCellAdv cell = new TableCellAdv();         

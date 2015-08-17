@@ -60,7 +60,7 @@ In this sample, the NullValue (NullValue = null) is set to the Value property of
 
 
 
-![](Null-Value-support_images/Null-Value-support_img2.png)
+{{ '![](Null-Value-support_images/Null-Value-support_img2.png)' | markdownify }}
 
 
 

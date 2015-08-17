@@ -13,9 +13,9 @@ EndDockHeaderHeight is the property that is used to retrieve the AutoHidden Wind
 
 
 
-{% highlight c# %}
+[C#]
 
 double height = DockingManager.EndDockHeaderHeight;
 
-{% endhighlight %}
+
 

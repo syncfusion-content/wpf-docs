@@ -34,7 +34,7 @@ Refer to the following code to creating a Bullet Graph with all its basic proper
 ### Code example
 
 {% highlight html %}
-
+[XAML]
 
 <Window x:Class="SfBulletGraph.MainWindow"
 
@@ -90,7 +90,7 @@ Refer to the following code to creating a Bullet Graph with all its basic proper
 
 {% endhighlight %}
 {% highlight c# %}
-
+[C#]
 
          SfBulletGraph bulletgraph = new SfBulletGraph();
 
@@ -140,55 +140,55 @@ To Add SfBulletGraph Control, follow the steps:
 
 1. Create a simple WPF application by using Visual Studio.
 
-   ![](Getting-Started_images/Getting-Started_img2.png)
+![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
 2. Right-Click on the Project and select SyncfusionReferenceManager.
 
-   ![](Getting-Started_images/Getting-Started_img3.png)
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
 3. The Syncfusion Reference Manager Wizard opens as follows.
 
-   ![](Getting-Started_images/Getting-Started_img4.png)
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
 4. Search SfBulletGraph by using SearchBox and select SfBulletGraph Control.  Click done to add the selected SfBulletGraph Control.
 
-   ![](Getting-Started_images/Getting-Started_img5.png)
+![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
 5. The SfBulletGraph assemblies is automatically added to the Project after Clicking OK.
 
-   ![](Getting-Started_images/Getting-Started_img6.png)
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
-   ![](Getting-Started_images/Getting-Started_img7.png)
+![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
 6. Create a namespace reference to the SfBulletGraph control by using Syncfusion’s global namespace reference schemas.syncfusion.com or the SfBulletGraph control’s namespace reference by using Syncfusion.UI.Xaml.BulletGraph available in the Syncfusion.SfBulletGraph.WPF assembly.
- 
-   ~~~ xml
+{% highlight html %}
+[XAML]
 
-		xmlns:bulletgraph="http://schemas.syncfusion.com/wpf" 
+  xmlns:bulletgraph="http://schemas.syncfusion.com/wpf" 
 
-		(or)
+(or)
 
-		xmlns:bulletgraph ="clr-    namespace:Syncfusion.UI.Xaml.BulletGraph;assembly=Syncfusion.SfBulletGraph. WPF"
+  xmlns:bulletgraph ="clr-    namespace:Syncfusion.UI.Xaml.BulletGraph;assembly=Syncfusion.SfBulletGraph. WPF"
 
-   ~~~
+{% endhighlight  %}
 
 7. Add the following code to create a simple SfBulletGraph control.
+{% highlight html %}
+[XAML]
 
-   ~~~ xml
-
-       <Window x:Class="SfBulletGraph.MainWindow"
+<Window x:Class="SfBulletGraph.MainWindow"
 
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
@@ -198,7 +198,7 @@ To Add SfBulletGraph Control, follow the steps:
 
         Title="MainWindow" Height="350" Width="525">
 
-        <Grid x:Name="LayoutRoot">
+    <Grid x:Name="LayoutRoot">
 
         <syncfusion:SfBulletGraph Orientation="Horizontal" LabelStroke="Black" MajorTickStroke="Black" TickPosition="Below" LabelPosition="Below"  FeaturedMeasure="4.5" ComparativeMeasure="7" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -236,28 +236,26 @@ To Add SfBulletGraph Control, follow the steps:
 
             </syncfusion:SfBulletGraph>
 
-         </Grid>
+    </Grid>
 
-        </Window>
+</Window>
 
-   ~~~
-   {:.prettyprint}
+{% endhighlight  %}
+{% highlight c# %}
 
-   ~~~ cs
+[C#]
 
+using System.Windows;
 
+using Syncfusion.UI.Xaml.BulletGraph;
 
-	   using System.Windows;
+namespace BulletGraph
 
-       using Syncfusion.UI.Xaml.BulletGraph;
+{
 
-       namespace BulletGraph
+    public partial class MainWindow : Window
 
-       {
-
-       public partial class MainWindow : Window
-
-      {
+    {
 
         public MainWindow()
 
@@ -297,17 +295,15 @@ To Add SfBulletGraph Control, follow the steps:
 
             this.Grid.Children.Add(bulletgraph);        
 
-           }
+}
 
 
 
-               }
+ }
 
-            }
+}
+{% endhighlight %}
 
-			
-    ~~~
-	{:.prettyprint}
 
 8.  The simple SfBulletGraph control is created as follows.
 

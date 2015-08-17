@@ -30,7 +30,7 @@ The following types of series support Animation.
 
 The following APIs are used to customize the Animation.
 
-## Customization API for Animation
+Customization API for Animation
 
 <table>
 <tr>

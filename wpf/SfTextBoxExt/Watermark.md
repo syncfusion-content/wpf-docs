@@ -31,11 +31,11 @@ Watermark property allows the users to specify some information, when the text i
 {% endhighlight %}
 
 
-![](Watermark_images/Watermark_img1.png)
+![C:/Users/ApoorvahR/Desktop/2.png](Watermark_images/Watermark_img1.png)
 
- Note: The Watermark property is of the object type so any framework elements can be hosted as Watermark content. Below example shows how to host an image and text as Watermark content.
+> _Note: The Watermark property is of the object type so any framework elements can be hosted as Watermark content. Below example shows how to host an image and text as Watermark content._
 
- 
+> 
 
 {% highlight xml %}
 [XAML]
@@ -64,7 +64,7 @@ Watermark property allows the users to specify some information, when the text i
 {% endhighlight %}
 
 
-![](Watermark_images/Watermark_img2.png)
+![C:/Users/ApoorvahR/Desktop/3.png](Watermark_images/Watermark_img2.png)
 
 
 

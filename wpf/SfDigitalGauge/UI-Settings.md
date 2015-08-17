@@ -44,7 +44,7 @@ The distance between the characters can be set by using the CharacterSpacing p
 {% endhighlight %}
 
 
-#### Screenshot:
+### Screenshot:
 
 
 
@@ -82,7 +82,7 @@ The Stroke of the character can be changed by using CharacterStroke property.
 
 {% endhighlight %}
 
-#### Screenshot:
+### Screenshot:
 
 
 
@@ -129,7 +129,7 @@ By using SegmentThickness property, you can adjust the thickness of the segmen
 
 
 
-#### Screenshot:
+### Screenshot:
 
 
 
@@ -171,7 +171,7 @@ The Characters are aligned by using EnableRTLFormat property. The default value 
 
 
 
-#### Screenshot:
+### Screenshot:
 
 
 
@@ -214,7 +214,7 @@ DimmedBrush property is used to apply brushes to the dimmed segment. This prope
 
 
 
-#### Screenshot:
+### Screenshot:
 
 
 
@@ -257,7 +257,7 @@ DimmedBrushOpacity property is used to set the opacity of the brushes to the dim
 
 
 
-#### Screenshot:
+### Screenshot:
 
 
 

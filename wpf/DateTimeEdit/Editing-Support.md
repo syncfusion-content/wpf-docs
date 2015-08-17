@@ -13,15 +13,11 @@ It is possible to type and select date values in the empty DateTimeEdit text box
 
 
 
-{% highlight xml %}
-[XAML]<syncfusion:DateTimeEdit Name="myDateTimeEdit" Pattern="ShortDate" DateTime="null" CanEdit="True">
-</syncfusion:DateTimeEdit>
+{% highlight html %}
+[XAML]<syncfusion:DateTimeEdit Name="myDateTimeEdit" Pattern="ShortDate" DateTime="null" CanEdit="True"></syncfusion:DateTimeEdit>
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
-DateTimeEdit myDateTimeEdit = new DateTimeEdit();
-myDateTimeEdit.Pattern = DateTimePattern.ShortDate;
-myDateTimeEdit.CanEdit = true;myDateTimeEdit.DateTime = null;
+[C#]DateTimeEdit myDateTimeEdit = new DateTimeEdit();myDateTimeEdit.Pattern = DateTimePattern.ShortDate;myDateTimeEdit.CanEdit = true;myDateTimeEdit.DateTime = null;
 {% endhighlight  %}
 
 

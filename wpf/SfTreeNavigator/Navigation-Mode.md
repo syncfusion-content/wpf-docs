@@ -68,7 +68,7 @@ In this navigation mode, header of each level from the root to current level sta
 ![](Navigation-Mode_images/Navigation-Mode_img2.png)
 
 
-Note: Header of the Extended mode can be styled using TreeNavigatorHeaderItem available in the same namespace.
+> _Note: Header of the Extended mode can be styled using TreeNavigatorHeaderItem available in the same namespace._
 
 
 

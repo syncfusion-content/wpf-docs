@@ -9,11 +9,11 @@ documentation: ug
 
 # ComboBoxAdv 
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 If multiple choices are allowed for the user, then the ComboBoxAdv is useful to display those multiple choices.  Instead of displaying all the choices initially, the choices displayed with in the dropdown whenever the user click on the ComboBoxAdv control.
 
-### Structure of the ComboBoxAdv Control
+## Structure of the ComboBoxAdv Control
 
 The following screenshot displays the ComboBoxAdv.
 
@@ -22,9 +22,10 @@ The following screenshot displays the ComboBoxAdv.
 ![](ComboBoxAdv_images/ComboBoxAdv_img1.png)
 
 
- ComboBoxItemAdv: It can be added inside the ComboBoxAdv control. It is originally derived from the ComboBoxItem.
 
-#### Sample link
+## ComboBoxItemAdv: It can be added inside the ComboBoxAdv control. It is originally derived from the ComboBoxItem.
+
+## Sample link
 
 To view samples:
 
@@ -32,7 +33,6 @@ To view samples:
 2. Select Run Locally Installed Samples in WPF Combo box.
 3. Now move the mouse to the ComboBoxAdv menu in the Sample Browser.
 4. Choose ComboBoxAdv demo.
-
 ## Adding ComboBoxAdv to an Application
 
 
@@ -40,7 +40,6 @@ The ComboBoxAdv control can be added to an application by using the following ap
 
 * Microsoft Visual Studio
 * Microsoft Expression Blend
-
 ### Creating the ComboBoxAdv Control in Visual Studio
 
 
@@ -51,7 +50,7 @@ To create an ComboBoxAdv instance in Visual Studio:
 
 
 
-   ![](ComboBoxAdv_images/ComboBoxAdv_img2.png)
+![](ComboBoxAdv_images/ComboBoxAdv_img2.png)
 
 
 
@@ -61,7 +60,7 @@ To create an ComboBoxAdv instance in Visual Studio:
 
 
 
-   ![](ComboBoxAdv_images/ComboBoxAdv_img3.png)
+![](ComboBoxAdv_images/ComboBoxAdv_img3.png)
 
 
 
@@ -71,7 +70,7 @@ To create an ComboBoxAdv instance in Visual Studio:
 
 
 
-   ![](ComboBoxAdv_images/ComboBoxAdv_img4.png)
+![](ComboBoxAdv_images/ComboBoxAdv_img4.png)
 
 
 
@@ -84,7 +83,7 @@ To create ComboBoxAdv instance in Expression Blend:
 
 
 
-   ![](ComboBoxAdv_images/ComboBoxAdv_img5.png)
+![](ComboBoxAdv_images/ComboBoxAdv_img5.png)
 
 
 
@@ -93,7 +92,7 @@ To create ComboBoxAdv instance in Expression Blend:
 
 
 
-   ![](ComboBoxAdv_images/ComboBoxAdv_img6.png)
+![](ComboBoxAdv_images/ComboBoxAdv_img6.png)
 
 
 
@@ -113,7 +112,6 @@ You can customize the appearance of the ComboBoxAdv control by editing the style
 
 * Edit style in Expression Blend 
 * Customizing by using properties
-
 ### Blendability
 
 
@@ -122,7 +120,7 @@ You can edit the style of ComboBoxAdv by using Expression Blend. To edit the Com
 1. Drag the ComboBoxAdv control to the Design view. The ComboBoxAdv control will appear as shown in the screen shot displayed below.
 2. Right-click the ComboBoxAdv control, select Edit Template, and then select Edit a Copy.
 
-   ![](ComboBoxAdv_images/ComboBoxAdv_img8.png)
+![](ComboBoxAdv_images/ComboBoxAdv_img8.png)
 
 
 
@@ -156,7 +154,7 @@ NA</td></tr>
 SelectedItems</td><td>
 It contains the selected items value</td><td>
 Dependency Property</td><td>
-ObservableCollection&lt;object&gt;</td><td>
+ObservableCollection<object></td><td>
 NA</td></tr>
 </table>
 
@@ -170,8 +168,7 @@ AllowMultiSelect property can be added directly to an application using the foll
 
 
 [XAML]
-<syncfusion:ComboBoxAdv AllowMultiSelect="True">
-</syncfusion:ComboBoxAdv>
+<syncfusion:ComboBoxAdv AllowMultiSelect="True"></syncfusion:ComboBoxAdv></td></tr>
 {% endhighlight %}
 
 {% highlight c# %}

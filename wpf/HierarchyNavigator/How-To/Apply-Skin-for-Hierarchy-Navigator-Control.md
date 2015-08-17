@@ -13,34 +13,33 @@ Add the following DLLs to apply corresponding theme for the Hierarchy Navigator 
 
 1. Create a HierarchyNavigator instance either in XAML or code behind.
 
-   ~~~ xml
+XAML
 
 
 
-		<syncfusion:HierarchyNavigator x:Name="hierarchyNavigator"/>
-
-   ~~~
-   {:.prettyprint }
-
-    Or
-
-   ~~~ cs
+<syncfusion:HierarchyNavigator x:Name="hierarchyNavigator"/>
 
 
 
-		HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
+Or
 
-   ~~~
-   {:.prettyprint }
+C#
+
+
+
+HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
+
+
 
 2. Apply Visual Style in code behind by calling the static method SetVisualStyle in SkinStorage class in Syncfusion.Shared.WPF. Here, Control name and Visual Style has to be passed in that static method arguments. The following image shows an example of Windows 7 (Default):
 
-   ~~~ cs
+C#
 
-		SkinStorage.SetVisualStyle(this, "Default");
 
-   ~~~
-   {:.prettyprint }
+
+SkinStorage.SetVisualStyle(this, "Default");
+
+
 
 
 

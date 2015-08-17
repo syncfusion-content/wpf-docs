@@ -7,7 +7,7 @@ control: ToolBarAdv
 documentation: ug
 ---
 
-# Restrict Docking of ToolBarAdv for a specific position
+### Restrict Docking of ToolBarAdv for a specific position
 
 You can restrict docking of ToolBarAdv by setting the following properties. Each will restrict docking at corresponding positions in ToolBarManager.
 
@@ -18,10 +18,9 @@ You can restrict docking of ToolBarAdv by setting the following properties. Each
 
 
 
-## Following code restricts docking at the top:
+Following code restricts docking at the top:
 
 
-{% highlight xml %}
 
 [XAML]
 
@@ -29,16 +28,16 @@ You can restrict docking of ToolBarAdv by setting the following properties. Each
 
                                ></shared:ToolBarManager>
 
-{% endhighlight %}
 
 
-{% highlight C# %}
+
+
 [C#]
 
 ToolBarManager toolBarManager = new ToolBarManager();
 
             toolBarManager.CanDockAtTop = false;
 
-{% endhighlight %}
+
 
                 * 

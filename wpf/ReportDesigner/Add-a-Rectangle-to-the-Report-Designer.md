@@ -9,40 +9,47 @@ documentation: ug
 
 # Add a Rectangle to the Report Designer
 
-To add a rectangle to the Syncfusion Report Designer, select Rectangle from the Insert tab and drag it to the Report Designer. 
-A rectangle appears on the Report Designer.
+To add a rectangle to the Syncfusion Report Designer, select Rectangle from the Insert tab and drag it to the Report Designer. A rectangle appears on the Report Designer.
 
-![](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img1.png)
-
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-33.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img1.png)
 
 
-## Applying Styles to the Rectangle
+
+##Applying Styles to the Rectangle
 
 To apply styles to the rectangle:
 
-1.Right click the added rectangle and click Rectangle Properties. It displays the Control Properties Dialog.
+1. Right click the added rectangle and click Rectangle Properties. It displays the Control Properties Dialog.
 
-![](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img2.png)
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-53.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img2.png)
 
 
 
-2.Select Style to set the style, color, and width of the rectangle border.
+2. Select Style to set the style, color, and width of the rectangle border.
+3. To set the background color of the rectangle, select Fill.
+4. Click OK.
 
-3.To set the background color of the rectangle, select Fill.
 
-4.Click OK.
 
 Note: You can also apply styles to the rectangle through the Properties grid. To open this grid, click the added rectangle.
 
+
+
 The following illustration shows the rectangle styled by the properties grid.
 
-![](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img3.png)
 
-### Adding Report Items to the Rectangle
+
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-34.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img3.png)
+
+
+
+###Adding Report Items to the Rectangle
 
 To add report items such as text boxes, lines, and images, to the rectangle, drag the selected report items to the rectangle.
 
-![](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img4.png)
+
+
+![C:/Users/radhas/Desktop/DesignerDocument/sshot-35.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img4.png)
 
 
 

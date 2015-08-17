@@ -19,7 +19,7 @@ Auto Append is used to guide the complete text by appending the entered text wit
 
 
 
-### Adding Auto Append Support to an Application 
+## Adding Auto Append Support to an Application 
 
 If the IsAutoAppend property is set as True, once you enter the text the AutoComplete guides you to complete text, by appending the entered text with suitable text from the data source. If this property is set as False the matched suitable text will not append with the entered text.
 
@@ -37,9 +37,9 @@ AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsAutoAppend 
 {% endhighlight %}
 
 
-### Tables for properties, and events
+## Tables for properties, and events
 
-#### Properties
+### Properties
 
   _Property Table for Auto Append_
 
@@ -61,7 +61,7 @@ bool(true)</td><td>
 </table>
 
 
-#### Events
+### Events
 
    _Event Table for Auto Append_
 
@@ -74,16 +74,16 @@ Arguments </th><th>
 Type </th><th colspan = "2">
 Reference links </th></tr>
 <tr>
-<td>
-IsAutoAppendChanged</td><td>
- When the value of IsAutoAppend changed this event will be triggered.It cannot be cancelled.</td><td>
+<th>
+IsAutoAppendChanged</th><th>
+ When the value of IsAutoAppend changed this event will be triggered.It cannot be cancelled.</th><th>
 DependencyObject,DependencyPropertyChangedEventArgs</th><th colspan = "2">
-DependencyPropertyChangedCallBack </td><td>
-</td></tr>
+DependencyPropertyChangedCallBack </th><th>
+</th></tr>
 </table>
 
 
-#### Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
 

@@ -7,7 +7,7 @@ control: Radial Menu
 documentation: ug
 ---
 
-# Appearance and Styling 
+## Appearance and Styling 
 
 ## Radius 
 
@@ -15,6 +15,8 @@ RadiusX and RadiusY properties in the Radial Menu can be used to define the X an
 
 
 {%highlight xml%}
+
+[XAML]
 
 <navigation:SfRadialMenu RadiusX="150" RadiusY="150" />
 
@@ -26,11 +28,17 @@ CenterRimRadiusFactor property can be used to define the radius of the center ri
 
 {%highlight xml%}
 
+[XAML]
+
+
+
 <navigation:SfRadialMenu   CenterRimRadiusFactor="0.3" IsOpen="True" />
 
 {%endhighlight%}
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img1.png)
+
+
 
 ## RimBackground
 
@@ -38,13 +46,21 @@ RimBackground property used to fill the outer rim (outer circle).
 
 {%highlight xml%}
 
-<navigation:SfRadialMenu IsOpen="True" RimBackground="Green" />
+[XAML]
 
 {%endhighlight%}
 
+<navigation:SfRadialMenu IsOpen="True" RimBackground="Green" />
+
+
+
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img2.png)
 
+
+
 _RadialMenu outer ring flled with color_
+
+
 
 ## RimActiveBrush
 
@@ -52,9 +68,16 @@ RimActiveBrush property used to fill the expander rim and this expander rim only
 
 {%highlight xml%}
 
+[XAML]
+
+
+
 <navigation:SfRadialMenu RimActiveBrush="Red" RimBackground="Green" IsOpen="True" />
 
+
 {%endhighlight%}
+
+
 
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img3.png)
 
@@ -65,6 +88,10 @@ RimActiveBrush property used to fill the expander rim and this expander rim only
 The RimHoverBrush property can be used to fill the expander rim while the pointer is hovering over it. 
 
 {%highlight xml%}
+
+[XAML]
+
+
 
 <navigation:SfRadialMenu RimActiveBrush="Red" RimBackground="Green"   RimHoverBrush="Blue" IsOpen="True" />
 
@@ -82,6 +109,10 @@ RimRadiusFactor property of Radial Menu can be used to set the radius of the ite
 
 {%highlight xml%}
 
+[XAML]
+
+
+
 <navigation:SfRadialMenu RimActiveBrush="Red" RimRadiusFactor="0.7" RimBackground="Green"   RimHoverBrush="Blue" IsOpen="True" />
 
 {%endhighlight%}
@@ -89,11 +120,16 @@ RimRadiusFactor property of Radial Menu can be used to set the radius of the ite
 ![](Appearance-and-Styling_images/Appearance-and-Styling_img5.png)
 
 
+
 ## Navigation Button Style
 
 The navigation button displayed in the center of radial menu can be styled using NaviationButtonStyle property. 
 
 {%highlight xml%}
+
+[XAML]
+
+
 
 <syncfusion:SfRadialMenu NavigationButtonStyle="{StaticResource NavigationButtonStyle}"
 
@@ -106,6 +142,10 @@ IsOpen="True" />
 Each SfRadialMenuItem can be set with a different background color on mouse over by using the MenuMouseOverBackgroundColor property. Before that, the ShowMouseOverStyle property should be set to true.
 
 {%highlight xml%}
+
+[XAML]
+
+
 
 <navigation:SfRadialMenu IsOpen="True">
   <navigation:SfRadialMenuItem Header="Bold" MenuMouseOverBackgroundColor="Pink" ShowMouseOverStyle="true">

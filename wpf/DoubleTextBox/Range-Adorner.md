@@ -17,9 +17,9 @@ The EnableRangeAdorner property is used to show the adorner range based on the m
 
 
 
-#### Properties
+Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -33,17 +33,19 @@ EnableRangeAdorner </td><td>
 The Adorner range will displayed based on the value.</td><td>
 bool </td></tr>
 </table>
-
 ## Adding Range Adorner to an Application 
 
 The EnableRangeAdorner property must be set either in XAML or the code file.
 
 
-{% highlight xml %}
- EnableRangeAdorner="True"
-{% endhighlight %}
-{% highlight C# %}
- control.EnableRangeAdorner = true;
-{% endhighlight %}
+
+<table>
+<tr>
+<td>
+{% highlight xml %}  EnableRangeAdorner="True"{% endhighlight %}</td></tr>
+<tr>
+<td>
+{% highlight C# %}   control.EnableRangeAdorner = true;{% endhighlight %}</td></tr>
+</table>
 
 

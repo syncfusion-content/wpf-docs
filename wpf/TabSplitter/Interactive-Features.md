@@ -16,7 +16,7 @@ This section illustrates the following interactive features of TabSplitter contr
 TabSplitter contains one or more pages that are defined as TabSplitter Items. Use the following code to add a TabSplitter Item to the TabSplitter control.
 
 {% highlight xml %}
-
+[XAML]
 
  <!-- Adding TabSplitter -->
 
@@ -36,7 +36,7 @@ TabSplitter contains one or more pages that are defined as TabSplitter Items. Us
 {% endhighlight %}
 
 {% highlight c# %}
-
+[C#]
 
 
 
@@ -85,14 +85,14 @@ TabSplitter Items contains a collection of pages. These pages are defined as Pan
  There are two types of panel Items:
 
 * TopPanelItems: consists of collection of pages that are placed at the top panel of the TabSplitter
-* BottomPanelItems: consists of collection of pages that are placed at the bottom panel of the TabSplitter
+* BottomPanelItems: consists of collection of pages that are placed at the bottom panel of the TabSplitter
 
 
 
  The following code example can be used to add Panel Items to the TabSplitter Item:
 
 {% highlight xml %}
-
+[XAML]
 
 
 
@@ -152,7 +152,7 @@ TabSplitter Items contains a collection of pages. These pages are defined as Pan
 {% endhighlight %}
 
 {% highlight c# %}
-
+[C#]
 
 
 
@@ -228,7 +228,7 @@ You can split the pages in the TabSplitter Item by using the SplitterPage. The f
 
 
 {% highlight xml %}
-
+[XAML]
 
 
 
@@ -288,7 +288,7 @@ You can split the pages in the TabSplitter Item by using the SplitterPage. The f
 {% endhighlight %}
 
 {% highlight c# %}
-
+[C#]
 
 
 
@@ -364,6 +364,7 @@ You can collapse or expand the Bottom Panel by using the IsCollapsedBottomPanel 
 
 
 {% highlight xml %}
+[XAML]
 
 
 
@@ -423,7 +424,7 @@ You can collapse or expand the Bottom Panel by using the IsCollapsedBottomPanel 
 
 
 {% highlight c# %}
-
+[C#]
 
 
 
@@ -447,6 +448,7 @@ You can set the height of the BottomPanel in TabSplitter using BottomPanelHeight
 
 
 {% highlight xml %}
+[XAML]
 
 
 
@@ -498,6 +500,7 @@ You can set the height of the BottomPanel in TabSplitter using BottomPanelHeight
 {% endhighlight %}
 
 {% highlight c# %}
+[C#]
 
 
 

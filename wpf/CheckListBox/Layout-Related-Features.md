@@ -22,7 +22,7 @@ To set the CheckBoxAlignment to Right, use the following code.
 
 
 {%highlight xml%}
-
+[XAML]
    <!-- Adding CheckListBox with CheckBoxAlignment -->
    <syncfusion:CheckListBox Name="checkListBox" CheckBoxAlignment="Right"> 
    
@@ -37,7 +37,7 @@ To set the CheckBoxAlignment to Right, use the following code.
 {%endhighlight%}
 
 {%highlight c#%}
-
+[C#]
 // Align the Check Box.
 checkListBox.CheckBoxAlignment = CheckBoxAlignment.Right;
 
@@ -73,7 +73,7 @@ To set the FlowDirection to RightToLeft, use the below code:
 
 
 {%highlight xml%}
-
+[XAML]
    <!-- Adding CheckListBox with FlowDirection as right  -->
    <syncfusion:CheckListBox Name="checkListBox" FlowDirection="RightToLeft"> 
    <!-- Adding CheckListBox items --> 
@@ -87,7 +87,7 @@ To set the FlowDirection to RightToLeft, use the below code:
 {%endhighlight%}
 
 {%highlight c#%}
-
+[C#]
 // Set FlowDirection property as RightToLeft.
 checkListBox.FlowDirection = FlowDirection.RightToLeft;
 
@@ -121,7 +121,7 @@ For setting Blend style, refer the below code snippet.
 
 
 {%highlight xml%}
-
+[XAML]
  <!-- Adding CheckListBox with Visual Style as Blend -->
  <syncfusion:CheckListBox Name="checkListBox" syncfusion:SkinStorage.VisualStyle="Blend">   
  
@@ -136,7 +136,7 @@ For setting Blend style, refer the below code snippet.
 {%endhighlight%}
 
 {%highlight c#%}
-
+[C#]
 // Setting the visual style as Blend.
 SkinStorage.SetVisualStyle(checkListBox, "Blend"); 
 

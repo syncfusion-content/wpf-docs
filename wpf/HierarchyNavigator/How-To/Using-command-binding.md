@@ -7,9 +7,9 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-## Using command binding
+### Using command binding
 
 The HierarchyNavigator control allows command binding for selected items.
 
-
+[See also]
 

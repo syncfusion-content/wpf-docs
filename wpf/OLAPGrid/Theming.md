@@ -33,11 +33,11 @@ _Property Table_
 
 <table>
 <tr>
-<th>
-Property </th><th>
-Description </th><th>
-Type </th><th>
-Data Type </th></tr>
+<td>
+{{ '**Property**' | markdownify }}</td><td>
+{{ '**Description**' | markdownify }}</td><td>
+{{ '**Type**' | markdownify }}</td><td>
+{{ '**Data Type**' | markdownify }}</td></tr>
 <tr>
 <td>
 VisualStyle </td><td>
@@ -47,37 +47,45 @@ OlapGridVisualStyle</td></tr>
 </table>
 
 
-### Sample Link
+## Sample Link
 
 A sample demo available in the following link,
 
-&lt;InstalledDrive&gt;:\Users\sabapathyk\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OlapGrid.WPF\Samples\Appearance\Skin Customization Demo
+<InstalledDrive>:\Users\sabapathyk\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OlapGrid.WPF\Samples\Appearance\Skin Customization Demo
 
-
-## Adding Theming to an Application 
+# Adding Theming to an Application 
 
 The following code sample demonstrates how to add theming to the OlapGrid control.
-{% highlight html %}
-[XAML]
+
+  {% highlight xml %}
+
+   [XAML]
 
 
 
       <syncfusion:OlapGrid  x:Name="olapGrid" VisualStyle="Transparent"/>
 
-
-
-{% endhighlight  %}
-{% highlight c# %}
+    {% endhighlight %}
 
 
 
-[C#]
+
+
+  {% highlight c# %}
+
+   [C#]
 
 
 
        this.olapGrid.VisualStyle = OlapGridVisualStyle.Transparent;
 
-{% endhighlight %}
+    {% endhighlight %}
+
+
+
+
+
+
 
 
 

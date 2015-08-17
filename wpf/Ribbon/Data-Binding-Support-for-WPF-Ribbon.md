@@ -204,21 +204,14 @@ Binding the items source property is demonstrated in the code below.
 
 
 
-{% highlight xml %}
-
-
-XAML
-<sync:Ribbon ItemsSource="{Binding SampleList}" Name="ribbon">
-</sync:Ribbon>
-{% endhighlight %}
-
-{% highlight C# %}
-
-C#
-Binding binding = new Binding("SampleList");
-binding.Source = this;
-ribbon.SetBinding(Ribbon.ItemsSourceProperty, binding);
-{% endhighlight %}
+<table>
+<tr>
+<td>
+XAML<sync:Ribbon ItemsSource="{Binding SampleList}" Name="ribbon"></sync:Ribbon></td></tr>
+<tr>
+<td>
+C#Binding binding = new Binding("SampleList");binding.Source = this;ribbon.SetBinding(Ribbon.ItemsSourceProperty, binding);</td></tr>
+</table>
 
 
 

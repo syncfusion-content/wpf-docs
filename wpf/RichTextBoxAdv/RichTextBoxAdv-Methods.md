@@ -11,16 +11,16 @@ documentation: ug
 
 
 
-Methods Table
+_Methods Table_
 
 <table>
 <tr>
-<th>
-Method</th><th>
-Description</th><th>
-Parameters</th><th>
-Type</th><th>
-Return Type</th></tr>
+<td>
+Method</td><td>
+Description</td><td>
+Parameters</td><td>
+Type</td><td>
+Return Type</td></tr>
 <tr>
 <td>
 Copy</td><td>

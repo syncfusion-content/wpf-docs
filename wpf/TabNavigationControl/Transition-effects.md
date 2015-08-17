@@ -15,7 +15,7 @@ Transition Effect property is used to set the effect for the Tab navigation cont
 
 
 ~~~ xml
-
+XAML
 
 
 
@@ -37,7 +37,7 @@ Transition Effect property is used to set the effect for the Tab navigation cont
 
 
 ~~~ xml
-
+XAML
 
 
 
@@ -58,7 +58,7 @@ Transition Effect property is used to set the effect for the Tab navigation cont
 
 
 ~~~xml
-
+XAML
 
 
 
@@ -79,7 +79,7 @@ Transition Effect property is used to set the effect for the Tab navigation cont
 
 
 ~~~ xml
-
+XAML
 
 
 
@@ -100,7 +100,7 @@ Transition Effect property is used to set the effect for the Tab navigation cont
 
 
 ~~~ xml
-
+XAML
 
 
 
@@ -121,7 +121,7 @@ Transition Effect property is used to set the effect for the Tab navigation cont
 
 
 ~~~ xml
-
+XAML
 
 
 
@@ -142,7 +142,7 @@ Transition Effect property is used to set the effect for the Tab navigation cont
 
 
 ~~~ xml
-
+XAML
 
 
 

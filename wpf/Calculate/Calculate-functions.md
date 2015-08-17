@@ -26,9 +26,9 @@ DOLLARDE( arg1, arg2) where:
 
 #### Remarks:
 
-&#35;NUM! - Occurs if the fraction is less than 0.
+#NUM! - Occurs if the fraction is less than 0.
 
-&#35;DIV/0! - Occurs if the fraction is equal to 0.
+#DIV/0! - Occurs if the fraction is equal to 0.
 
 #### Example:
 
@@ -51,11 +51,11 @@ DOLLARFR (decNum, arg2) where:
 
 #### Remarks:
 
-&#35;NUM! - Occurs if the fraction is less than 0.
+#NUM! - Occurs if the fraction is less than 0.
 
-&#35;DIV/0! - Occurs if the fraction is 0.
+#DIV/0! - Occurs if the fraction is 0.
 
-#### Example:
+Example:
 
 ![](Calculate-functions_images/Calculate-functions_img2.png)
 
@@ -115,7 +115,7 @@ FVSCHEDULE(arg1,arg2) where:
 
 #### Remarks:
 
-&#35;VALUE! – occurs any other than numbers or blank cells.
+#VALUE! – occurs any other than numbers or blank cells.
 
 Example:
 
@@ -160,9 +160,9 @@ INTRATE(SettlementDate,MaturityDate, investment, amount, basis ) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if settlementdate is greater than or equal to maturitydate, investment and amount is less than or equal to zero.
+#NUM! - occurs if settlementdate is greater than or equal to maturitydate, investment and amount is less than or equal to zero.
 
-&#35;VALUE! - occurs if settlementdate and maturitydate less than or equal to zero.
+#VALUE! - occurs if settlementdate and maturitydate less than or equal to zero.
 
 Example:
 
@@ -189,7 +189,7 @@ CUMIPMT(rate, np,pv,startPeriod, endPeriod, pp) where,
 
 #### Remarks:
 
-&#35;NUM! - occurs if rate,np or pv is less than or equals zero, if startPeriod or endPeriod is less than one, if startPeriod is greater than endPeriod and pp is any number other than 0 or 1.
+#NUM! - occurs if rate,np or pv is less than or equals zero, if startPeriod or endPeriod is less than one, if startPeriod is greater than endPeriod and pp is any number other than 0 or 1.
 
 #### Example:
 
@@ -216,7 +216,7 @@ CUMPRINC(rate, np, pv, startPeriod, endPeriod, pp) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if rate, np or pv is less than or equals zero, if startPeriod or endPeriod is less than one, if startPeriod is greater than endPeriod and pp is any number other than 0 or 1.
+#NUM! - occurs if rate, np or pv is less than or equals zero, if startPeriod or endPeriod is less than one, if startPeriod is greater than endPeriod and pp is any number other than 0 or 1.
 
 #### Example:
 
@@ -246,7 +246,7 @@ ACCRINT(IssueDate,FirstIntrestDate,settlementDate,rate,parvalue,frequency,basis)
 
 #VALUE - returns only if FirstInterest or settlementDate is invalid. 
 
-&#35;NUM! -  returns if rate ≤ 0, if par ≤ 0, if frequency is any number other than 1, 2, or 4, if basis < 0 or if basis > 4 and if issue ≥ settlement.
+#NUM! -  returns if rate ≤ 0, if par ≤ 0, if frequency is any number other than 1, 2, or 4, if basis < 0 or if basis > 4 and if issue ≥ settlement.
 
 #### Example:
 
@@ -272,7 +272,7 @@ RECEIVED(Settlementdate,MaturityDate,investment,discount,basis) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if settlement ≥ maturity and if investment and discount is ≤ 0.
+#NUM! - occurs if settlement ≥ maturity and if investment and discount is ≤ 0.
 
 #### Example:
 
@@ -516,9 +516,9 @@ SEC(number) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if the number is outside of its constraints.
+#NUM! - occurs if the number is outside of its constraints.
 
-&#35;VALUE! - occurs if number is a non-numeric value.
+#VALUE! - occurs if number is a non-numeric value.
 
 #### Example:
 
@@ -538,9 +538,9 @@ SECH(number) where:
 
 #### REMARKS:
 
-&#35;NUM! - occurs if the number is outside of its constraints.
+#NUM! - occurs if the number is outside of its constraints.
 
-&#35;VALUE! - occurs if the number is a non-numeric value.
+#VALUE! - occurs if the number is a non-numeric value.
 
 #### Example:
 
@@ -558,9 +558,9 @@ COT(number) where:
 
 * number - angle radians to get the cotangent value.
 
- &#35;NUM! - occurs if the number is out of range.
+ #NUM! - occurs if the number is out of range.
 
-&#35;VALUE! - occurs if the number is a non-numeric value.
+#VALUE! - occurs if the number is a non-numeric value.
 
 #### Example:
 
@@ -580,9 +580,9 @@ COTH(number) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if the number is outside of its constraints.
+#NUM! - occurs if the number is outside of its constraints.
 
-&#35;VALUE! - occurs if the number is a non-numeric value.
+#VALUE! - occurs if the number is a non-numeric value.
 
 #### Example:
 
@@ -604,9 +604,9 @@ CSC(number) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if the number is outside of its constraints.
+#NUM! - occurs if the number is outside of its constraints.
 
-&#35;VALUE! - occurs if the number is a non-numeric value.
+#VALUE! - occurs if the number is a non-numeric value.
 
 #### Example:
 
@@ -626,9 +626,9 @@ CSCH(number) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if the number is outside of its constraints.
+#NUM! - occurs if the number is outside of its constraints.
 
-&#35;VALUE! - occurs if the number is a non-numeric value.
+#VALUE! - occurs if the number is a non-numeric value.
 
 #### Example:
 
@@ -650,7 +650,7 @@ ACOT(number) or DEGREES ACOT(number) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if the number is a non-numeric value.
+#VALUE! - occurs if the number is a non-numeric value.
 
 The returned angle is given in radians in the range of 0 (zero) to pi.
 
@@ -672,9 +672,9 @@ ACOTH(number) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if number is less than one.
+#NUM! - occurs if number is less than one.
 
-&#35;VALUE! - occurs if absolute value of number is less than one.
+#VALUE! - occurs if absolute value of number is less than one.
 
 #### Example:
 
@@ -789,9 +789,9 @@ COMBINA(number1, number2) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if either value is out of range.
+#NUM! - occurs if either value is out of range.
 
-&#35;VALUE! - occurs if either value is non-numeric.
+#VALUE! - occurs if either value is non-numeric.
 
 #### Example:
 
@@ -811,9 +811,9 @@ ARABIC( romannumeral ) where
 
 #### Remarks:
 
-&#35;VALUE! - occurs if text is not a valid value.
+#VALUE! - occurs if text is not a valid value.
 
-&#35;VALUE! - occurs if text is not a valid Roman numeral.
+#VALUE! - occurs if text is not a valid Roman numeral.
 
 Value zero occurs if an empty string is given as an input.
 
@@ -839,9 +839,9 @@ BASE(number,radix [Minlength]) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if Number, Radix, or Minlength are outside the minimum or maximum constraints.
+#NUM! - occurs if Number, Radix, or Minlength are outside the minimum or maximum constraints.
 
-&#35;VALUE! - occurs if Number is a non-numeric value.
+#VALUE! - occurs if Number is a non-numeric value.
 
 #### Example:
 
@@ -882,7 +882,7 @@ DECIMAL(text, radix) where:
 
 #### Remarks:
 
-&#35;NUM! or &#35;VALUE! - occurs if text or radix is outside the constraints.
+#NUM! or #VALUE! - occurs if text or radix is outside the constraints.
 
 #### Example:
 
@@ -902,7 +902,7 @@ MDETERM(array) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if any cell in the array is empty or has text in it and if the array does not have an equal number of rows and columns.
+#VALUE! - occurs if any cell in the array is empty or has text in it and if the array does not have an equal number of rows and columns.
 
 #### Example:
 
@@ -922,7 +922,7 @@ MINVERSE(array) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs when any cell in the array is empty or has text in it and if the array does not have an equal number of rows and columns.
+#VALUE! - occurs when any cell in the array is empty or has text in it and if the array does not have an equal number of rows and columns.
 
 #### Example:
 
@@ -942,7 +942,7 @@ MMULT(M1,M2) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if any cell in the array is empty or contains text in it and if the array does not have an equal number of rows and columns.
+#VALUE! - occurs if any cell in the array is empty or contains text in it and if the array does not have an equal number of rows and columns.
 
 #### Example:
 
@@ -962,7 +962,7 @@ MUNIT(dimension) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if the dimension is a value that is equal to or smaller than zero.
+#VALUE! - occurs if the dimension is a value that is equal to or smaller than zero.
 
 #### Example:
 
@@ -988,11 +988,11 @@ CONFIDENCE.T(alpha,stdev,size) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if any argument is non-numeric.
+#VALUE! - occurs if any argument is non-numeric.
 
-&#35;NUM! - occurs if alpha  and stdev is less than or equal to zero or if alpha is greater than or equal to zero.
+#NUM! - occurs if alpha  and stdev is less than or equal to zero or if alpha is greater than or equal to zero.
 
-&#35;DIV/0! - occurs if the size is equal to one.
+#DIV/0! - occurs if the size is equal to one.
 
 #### Example:
 
@@ -1011,13 +1011,13 @@ SKEW.P(number 1, [number 2],…) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if arguments do not have a valid value.
+#NUM! - occurs if arguments do not have a valid value.
 
-&#35;VALUE! - occurs if arguments do not have valid data types.
+#VALUE! - occurs if arguments do not have valid data types.
 
-&#35;DIV/0! - occurs if there are fewer than three data points, or the sample standard deviation is zero.
+#DIV/0! - occurs if there are fewer than three data points, or the sample standard deviation is zero.
 
-### Example:
+3### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img46.png)
 
@@ -1057,9 +1057,9 @@ COVARIANCE.S(array1,array2) where:
 
 #### Remarks:
 
-&#35;N/A - occurs when values are different number of data points.
+#N/A - occurs when values are different number of data points.
 
-&#35;DIV/0! - occurs if either array1 or array2 is empty or contain only one data point each.
+#DIV/0! - occurs if either array1 or array2 is empty or contain only one data point each.
 
 #### Example:
 
@@ -1082,9 +1082,9 @@ PERCENTILE.EXC(array, k) where:
 
 ####  Remarks:
 
-&#35;NUM! - occurs if k is equal to or less than zero, if k is equal to or greater than 1and if the array is empty.
+#NUM! - occurs if k is equal to or less than zero, if k is equal to or greater than 1and if the array is empty.
 
-&#35;VALUE! - occurs if k is non-numeric.
+#VALUE! - occurs if k is non-numeric.
 
 #### Example:
 
@@ -1107,9 +1107,9 @@ PERCENTILE.INC(array,k) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if k is equal to or less than zero, if k is equal to or greater than 1and if the array is empty.
+#NUM! - occurs if k is equal to or less than zero, if k is equal to or greater than 1and if the array is empty.
 
-&#35;VALUE! - occurs if k is non-numeric.
+#VALUE! - occurs if k is non-numeric.
 
 #### Example:
 
@@ -1131,11 +1131,11 @@ PERCENTRANK.EXC(array, x ) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if this argument is empty.
+#NUM! - occurs if this argument is empty.
 
-&#35;NUM! - occurs if the argument is less than one.
+#NUM! - occurs if the argument is less than one.
 
-#### Example:
+Example:
 
 ![](Calculate-functions_images/Calculate-functions_img51.png)
 
@@ -1208,9 +1208,9 @@ PERMUTATIONA(number, number-chosen) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if numeric arguments use data types that are non-numeric.
+#VALUE! - occurs if numeric arguments use data types that are non-numeric.
 
-&#35;NUM! - occurs if numeric arguments are values that are not valid.
+#NUM! - occurs if numeric arguments are values that are not valid.
 
 #### Example:
 
@@ -1235,9 +1235,9 @@ NORM.DIST(x,mean,stdev,cumulative) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if mean or stdev is non-numeric.
+#VALUE! - occurs if mean or stdev is non-numeric.
 
-&#35;NUM! - occurs if stdev is equal to or less than zero.
+#NUM! - occurs if stdev is equal to or less than zero.
 
 #### Example:
 
@@ -1260,9 +1260,9 @@ NORMINV(probability, mean, stdev), where:
 
 #### Remarks:
 
-&#35;NUM! - if probability or stdev is equal to or less than zero, equal to or greater than 1.
+#NUM! - if probability or stdev is equal to or less than zero, equal to or greater than 1.
 
-&#35;VALUE! - if probability or mean or stdev is non-numeric.
+#VALUE! - if probability or mean or stdev is non-numeric.
 
 Example:
 
@@ -1322,9 +1322,9 @@ WEIBULL.DIST(x,alpha,beta,cumulative) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs when x is less than zero and if alpha or beta is equal to or less than zero.
+#NUM! - occurs when x is less than zero and if alpha or beta is equal to or less than zero.
 
-&#35;VALUE! - occurs if beta is non-numeric.
+#VALUE! - occurs if beta is non-numeric.
 
 #### Example:
 
@@ -1348,9 +1348,9 @@ EXPON.DIST(x,y,cumulative) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if x is less than zero and if y is equal to or less than zero. 
+#NUM! - occurs if x is less than zero and if y is equal to or less than zero. 
 
-&#35;VALUE! - occurs if x or y is non-numeric.
+#VALUE! - occurs if x or y is non-numeric.
 
 Example:
 
@@ -1375,9 +1375,9 @@ GAMMA.DIST(x,y,z,cumulative) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if x is less than zero, if z  is equal to or less than zero and occurs if alpha is equal to or less than zero. 
+#NUM! - occurs if x is less than zero, if z  is equal to or less than zero and occurs if alpha is equal to or less than zero. 
 
-&#35;VALUE! - occurs if x or y or z is non-numeric.
+#VALUE! - occurs if x or y or z is non-numeric.
 
 Example:
 
@@ -1402,9 +1402,9 @@ GAMMA.INV(x,y,z,cumulative) where
 
 #### Remarks:
 
-&#35;NUM! - occurs if x is less than zero, if z  is equal to or less than zero and occurs if alpha is equal to or less than zero. 
+#NUM! - occurs if x is less than zero, if z  is equal to or less than zero and occurs if alpha is equal to or less than zero. 
 
-&#35;VALUE! - occurs if x or y or z is non-numeric
+#VALUE! - occurs if x or y or z is non-numeric
 
 #### Example:
 
@@ -1424,9 +1424,9 @@ GAMMALN.PRECISE( x ) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if x is less than zero.
+#NUM! - occurs if x is less than zero.
 
-&#35;VALUE! - occurs if x is non-numeric.
+#VALUE! - occurs if x is non-numeric.
 
 #### Example:
 
@@ -1450,9 +1450,9 @@ F.INV(probability,degFreedom1,degFreedom2) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if probability is equal to or less than zero and if probability is equal to or greater than one.
+#NUM! - occurs if probability is equal to or less than zero and if probability is equal to or greater than one.
 
-&#35;VALUE! - occurs if probability or degFreedom1 or degFreedom2 is non-numeric.
+#VALUE! - occurs if probability or degFreedom1 or degFreedom2 is non-numeric.
 
 #### Example:
 
@@ -1475,9 +1475,9 @@ F.INV.RT(probability,degFreedom1,degFreedom2) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if probability is equal to or less than zero and if probability is equal to or greater than one.
+#NUM! - occurs if probability is equal to or less than zero and if probability is equal to or greater than one.
 
-&#35;VALUE! - occurs if probability or degFreedom1 or degFreedom2 is non-numeric.
+#VALUE! - occurs if probability or degFreedom1 or degFreedom2 is non-numeric.
 
 #### Example:
 
@@ -1501,9 +1501,9 @@ BINOM.INV(trial number,sp,value) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if trial number is less than zero, if sp and value is less than zero or greater one.
+#NUM! - occurs if trial number is less than zero, if sp and value is less than zero or greater one.
 
-&#35;VALUE! - occurs if trials, sp and value are non-numeric.
+#VALUE! - occurs if trials, sp and value are non-numeric.
 
 #### Example:
 
@@ -1529,17 +1529,17 @@ HYPGEOM.DIST(S_sample,size,S- population,ps,cumulative) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if any argument is non-numeric.
+#VALUE! - occurs if any argument is non-numeric.
 
-&#35;NUM! - occurs if S_sample < 0 or S_sample is greater than the lesser of size or S- population.
+#NUM! - occurs if S_sample < 0 or S_sample is greater than the lesser of size or S- population.
 
-&#35;NUM! - occurs if S_sample is less than 0.
+#NUM! - occurs if S_sample is less than 0.
 
-&#35;NUM! - occurs if size ≤ 0 or size > ps.
+#NUM! - occurs if size ≤ 0 or size > ps.
 
-&#35;NUM! - occurs if S- population ≤ 0 or S- population > ps.
+#NUM! - occurs if S- population ≤ 0 or S- population > ps.
 
-&#35;NUM! - occurs if ps ≤ 0.
+#NUM! - occurs if ps ≤ 0.
 
 #### Example:
 
@@ -1564,9 +1564,9 @@ LOGNORM.DIST(x,mean,stdev,cumulative) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if any argument is non-numeric.
+#VALUE! - occurs if any argument is non-numeric.
 
-&#35;NUM! - occurs if x ≤ 0 or if stdev ≤ 0.
+#NUM! - occurs if x ≤ 0 or if stdev ≤ 0.
 
 #### Example:
 
@@ -1590,9 +1590,9 @@ LOGNORM.INV(probability, mean, stdev) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if any argument is non-numeric.
+#VALUE! - occurs if any argument is non-numeric.
 
-&#35;NUM! - occurs if probability <= 0 or probability >= 1 and if Stdev<=0.
+#NUM! - occurs if probability <= 0 or probability >= 1 and if Stdev<=0.
 
 #### Example:
 
@@ -1616,11 +1616,11 @@ CONFIDENCE.NORM(alpha,stdev,size) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if any argument is non-numeric.
+#VALUE! - occurs if any argument is non-numeric.
 
-&#35;NUM! - occurs if alpha and stdev is less than or equal to zero or if alpha is greater than or equal to zero.
+#NUM! - occurs if alpha and stdev is less than or equal to zero or if alpha is greater than or equal to zero.
 
-&#35;DIV/0! - occurs if the size is equal to one.
+#DIV/0! - occurs if the size is equal to one.
 
 Example:
 
@@ -1644,9 +1644,9 @@ CHISQ.DIST(x,degFreedom,cumulative) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if any argument is non-numeric.
+#VALUE! - occurs if any argument is non-numeric.
 
-&#35;NUM! - occurs if x is negative and if f degFreedom < 1 or degFreedom > 10^10.
+#NUM! - occurs if x is negative and if f degFreedom < 1 or degFreedom > 10^10.
 
 #### Example:
 
@@ -1669,11 +1669,11 @@ CHISQ.DIST.RT(x,degFreedom) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if either argument is non-numeric.
+#VALUE! - occurs if either argument is non-numeric.
 
-&#35;VALUE! - occurs if any argument is non-numeric.
+#VALUE! - occurs if any argument is non-numeric.
 
-&#35;NUM! - occurs occurs if f degFreedom < 1 or degFreedom > 10^10.
+#NUM! - occurs occurs if f degFreedom < 1 or degFreedom > 10^10.
 
 #### Example:
 
@@ -1698,9 +1698,9 @@ F.DIST(x,degFreedom1,degFreedom2,cumulative) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if any argument is non-numeric.
+#VALUE! - occurs if any argument is non-numeric.
 
-&#35;NUM! - occurs if x is negative, if degFreedom1< 1 and if degFreedom1< 1
+#NUM! - occurs if x is negative, if degFreedom1< 1 and if degFreedom1< 1
 
 #### Example:
 
@@ -1724,9 +1724,9 @@ F.DIST.RT(x, degFreedom1, degFreedom2) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if any argument is non-numeric.
+#VALUE! - occurs if any argument is non-numeric.
 
-&#35;NUM! - occurs if x is negative, if degFreedom1< 1 and  if degFreedom2< 1
+#NUM! - occurs if x is negative, if degFreedom1< 1 and  if degFreedom2< 1
 
 Example:
 
@@ -1746,7 +1746,7 @@ MODE.MULT(number1) where:
 
 #### Remarks:
 
-&#35;N/A - occurs if the data set contains no duplicate data points.
+#N/A - occurs if the data set contains no duplicate data points.
 
 Example:
 
@@ -1788,9 +1788,9 @@ CHISQ.INV(probability,degFreedom) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if probability is is less than zero, if probability is greater than 1 and degFreedom is less than 1.
+#NUM! - occurs if probability is is less than zero, if probability is greater than 1 and degFreedom is less than 1.
 
-&#35;VALUE! - occurs if probability or degFreedom is non-numeric.
+#VALUE! - occurs if probability or degFreedom is non-numeric.
 
 Example:
 
@@ -1813,9 +1813,9 @@ CHISQ.INV.RT(probability, degFreedom) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if probability is is less than zero, if probability is greater than 1 and if degFreedom is less than 1.
+#NUM! - occurs if probability is is less than zero, if probability is greater than 1 and if degFreedom is less than 1.
 
-&#35;VALUE! - occurs if probability or degFreedom is non-numeric. 
+#VALUE! - occurs if probability or degFreedom is non-numeric. 
 
 Example:
 
@@ -1840,9 +1840,9 @@ BINOM.DIST (trial number,sp,value, cumulative) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if trial number is less than zero, if sp and value is less than zero or greater one.
+#NUM! - occurs if trial number is less than zero, if sp and value is less than zero or greater one.
 
-&#35;VALUE! - occurs if trials, sp and value are non-numeric.
+#VALUE! - occurs if trials, sp and value are non-numeric.
 
 #### Example:
 
@@ -1882,7 +1882,7 @@ QUARTILE.EXC(array, quart) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if the array is empty or if quart ≤ 0 or if quart ≥ 4.
+#NUM! - occurs if the array is empty or if quart ≤ 0 or if quart ≥ 4.
 
 #### Example:
 
@@ -1903,7 +1903,7 @@ QUARTILE.INC(array,quart) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if the array is empty or if quart ≤ 0 or if quart ≥ 4.
+#NUM! - occurs if the array is empty or if quart ≤ 0 or if quart ≥ 4.
 
 #### Example:
 
@@ -1946,9 +1946,9 @@ POISSON.DIST(x,mean,cumulative) where
 
 #### Remarks:
 
-&#35;VALUE! - occurs if x is not an integer.
+#VALUE! - occurs if x is not an integer.
 
-&#35;NUM! - occurs if x or mean is non-numeric and s if x < 0.
+#NUM! - occurs if x or mean is non-numeric and s if x < 0.
 
 #### Example:
 
@@ -2010,7 +2010,7 @@ CHIDIST(x, degFreedom) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs when the  x is negative or degFreedom argument is invalid.
+#NUM! - occurs when the  x is negative or degFreedom argument is invalid.
 
 #### Example:
 
@@ -2035,9 +2035,9 @@ DEC2BIN(num,places) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
+#NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
 
-&#35;VALUE! - occurs when number or places is non-numeric, if DEC2BIN requires more than the number of characters specified in places.
+#VALUE! - occurs when number or places is non-numeric, if DEC2BIN requires more than the number of characters specified in places.
 
 #### Example:
 
@@ -2060,9 +2060,9 @@ DEC2OCT(num, places) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
+#NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
 
-&#35;VALUE! - occurs if number or places is non-numeric, if DEC2OCT requires more than the number of characters specified in places.
+#VALUE! - occurs if number or places is non-numeric, if DEC2OCT requires more than the number of characters specified in places.
 
 #### Example:
 
@@ -2083,9 +2083,9 @@ DEC2HEX(num, places ) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
+#NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
 
-&#35;VALUE! - occurs if number or places is non-numeric, if DEC2HEX requires more than the number of characters specified in places.
+#VALUE! - occurs if number or places is non-numeric, if DEC2HEX requires more than the number of characters specified in places.
 
 #### Example:
 
@@ -2105,7 +2105,7 @@ BIN2DEC(num) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if number is not a valid binary number, or if number contains more than 10 characters.
+#NUM! - occurs if number is not a valid binary number, or if number contains more than 10 characters.
 
 #### Example:
 
@@ -2147,9 +2147,9 @@ BIN2HEX(num places) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if number is not a valid binary number, if if places is negative.
+#NUM! - occurs if number is not a valid binary number, if if places is negative.
 
-&#35;VALUE! - occurs if places is non-numeric.
+#VALUE! - occurs if places is non-numeric.
 
 #### Example:
 
@@ -2172,9 +2172,9 @@ HEX2BIN(num, places ) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if number is not a valid binary number, if if places is negative.
+#NUM! - occurs if number is not a valid binary number, if if places is negative.
 
-&#35;VALUE! - occurs if places is non-numeric.
+#VALUE! - occurs if places is non-numeric.
 
 #### Example:
 
@@ -2197,9 +2197,9 @@ HEX2OCT(num, places) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if number is not a valid hexadecimal number and if if places is negative.
+#NUM! - occurs if number is not a valid hexadecimal number and if if places is negative.
 
-&#35;VALUE! - occurs if places is non-numeric.
+#VALUE! - occurs if places is non-numeric.
 
 #### Example:
 
@@ -2219,7 +2219,7 @@ HEX2DEC(num) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if number is not a valid hexadecimal number.
+#NUM! - occurs if number is not a valid hexadecimal number.
 
 #### Example:
 
@@ -2242,9 +2242,9 @@ OCT2BIN(nuM, places ) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if number is not a valid octal number and if if places is negative.
+#NUM! - occurs if number is not a valid octal number and if if places is negative.
 
-&#35;VALUE! - occurs if places is non-numeric.
+#VALUE! - occurs if places is non-numeric.
 
 #### Example:
 
@@ -2267,9 +2267,9 @@ OCT2HEX(num, places) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if number is not a valid octal number and if if places is negative.
+#NUM! - occurs if number is not a valid octal number and if if places is negative.
 
-&#35;VALUE! - occurs if places is non-numeric.
+#VALUE! - occurs if places is non-numeric.
 
 #### Example:
 
@@ -2289,7 +2289,7 @@ OCT2DEC(number) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if number is not a valid octal number.
+#NUM! - occurs if number is not a valid octal number.
 
 #### Example:
 
@@ -2309,7 +2309,7 @@ IMABS(inum) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if inumber is not in the form a + bi  or a + bj.
+#NUM! - occurs if inumber is not in the form a + bi  or a + bj.
 
 #### Example:
 
@@ -2329,7 +2329,7 @@ IMAGINARY(inum) where:
 
 Remarks:
 
-&#35;NUM! - occurs if inumber is not in the form a + bi  or a + bj.
+#NUM! - occurs if inumber is not in the form a + bi  or a + bj.
 
 #### Example:
 
@@ -2349,7 +2349,7 @@ IMREAL(inum) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if inumber is not in the form a + bi  or a + bj.
+#NUM! - occurs if inumber is not in the form a + bi  or a + bj.
 
 #### Example:
 
@@ -2373,7 +2373,7 @@ COMPLEX(num,inum, suffix ) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if num or inum is non-numeric, if suffix is neither "i" nor "j".
+#VALUE! - occurs if num or inum is non-numeric, if suffix is neither "i" nor "j".
 
 #### Example:
 
@@ -2529,9 +2529,9 @@ IMCSC(inum) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if inumber is a value that is not in the a+bi or a+bj text format.  
+#NUM! - occurs if inumber is a value that is not in the a+bi or a+bj text format.  
 
-&#35;VALUE! - occurs if inumber is a logical value.
+#VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
@@ -2567,9 +2567,9 @@ IMSEC(inum) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if inumber is a value that is not in the a + bi  or a + bj text format.
+#NUM! - occurs if inumber is a value that is not in the a + bi  or a + bj text format.
 
-&#35;VALUE! - occurs if inumber is a logical value.
+#VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
@@ -2589,9 +2589,9 @@ IMTAN(inum) where
 
 #### Remarks:
 
-&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-&#35;VALUE! - occurs if inumber is a logical value.
+#VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
@@ -2611,9 +2611,9 @@ IMCOT(inum) where
 
 #### Remarks:
 
-&#35;NUM! - occurs if inum is a value that is not in a + bi or a + bj text format.
+#NUM! - occurs if inum is a value that is not in a + bi or a + bj text format.
 
-&#35;VALUE! - occurs if inumber is a logical value.
+#VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
@@ -2633,9 +2633,9 @@ IMSINH(inum) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-&#35;VALUE! - occurs if inumber is a logical value.
+#VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
@@ -2655,9 +2655,9 @@ IMCSCH(inum) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-&#35;VALUE! - occurs if inumber is a logical value.
+#VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
@@ -2677,9 +2677,9 @@ IMCOSH(inum) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-&#35;VALUE! - occurs if inumber is a logical value.
+#VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
@@ -2699,9 +2699,9 @@ IMSECH(inum) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-&#35;VALUE! - occurs if inumber is a logical value.
+#VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
@@ -2721,9 +2721,9 @@ IMTANH(inum) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-&#35;VALUE! - occurs if inumber is a logical value.
+#VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
@@ -2743,9 +2743,9 @@ IMCOTH(inum) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if inumber is a value that is not in the a + bi  or a + bj text format.
+#NUM! - occurs if inumber is a value that is not in the a + bi  or a + bj text format.
 
-&#35;VALUE! - occurs if inumber is a logical value.
+#VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
@@ -2765,7 +2765,7 @@ IMLOG10(inum) where:
 
 #### Remarks: 
 
-&#35;NUM! - occurs if inumber is not in the complex format
+#NUM! - occurs if inumber is not in the complex format
 
 #### Example:
 
@@ -2785,7 +2785,7 @@ IMLOG2(inum) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if inumber is not in the complex format.
+#NUM! - occurs if inumber is not in the complex format.
 
 #### Example:
 
@@ -2805,7 +2805,7 @@ IMLN(inum) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if inumber is not in the complex format
+#NUM! - occurs if inumber is not in the complex format
 
 #### Example:
 
@@ -2825,7 +2825,7 @@ IMEXP(inum) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if inumber is not in the complex format
+#NUM! - occurs if inumber is not in the complex format
 
 #### Example:
 
@@ -2848,9 +2848,9 @@ IMPOWER(inum,num) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if inumber is not in the complex format
+#NUM! - occurs if inumber is not in the complex format
 
-&#35;VALUE! - occurs if number is non-numeric.
+#VALUE! - occurs if number is non-numeric.
 
 #### Example:
 
@@ -2873,7 +2873,7 @@ GESTEP(num, step ) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if any argument is non-numeric.
+#VALUE! - occurs if any argument is non-numeric.
 
 #### Example:
 
@@ -2912,9 +2912,9 @@ BITAND(num1,num2) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+#NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
 
-&#35;VALUE! - occurs if num1 or num2 is a non-numeric value.
+#VALUE! - occurs if num1 or num2 is a non-numeric value.
 
 #### Example:
 
@@ -2934,9 +2934,9 @@ BITOR(num1, num2) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+#NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
 
-&#35;VALUE! - occurs if num1 or num2 is a non-numeric value.
+#VALUE! - occurs if num1 or num2 is a non-numeric value.
 
 #### Example:
 
@@ -2956,9 +2956,9 @@ BITXOR(num1,num2b) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+#NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
 
-&#35;VALUE! - occurs if num1 or num2 is a non-numeric value.
+#VALUE! - occurs if num1 or num2 is a non-numeric value.
 
 #### Example:
 
@@ -2981,9 +2981,9 @@ BITLSHIFT(num1,num2) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+#NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
 
-&#35;VALUE! - occurs if num1 or num2 is a non-numeric value.
+#VALUE! - occurs if num1 or num2 is a non-numeric value.
 
 #### Example:
 
@@ -3006,9 +3006,9 @@ BITRSHIFT(num1,num2) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+#NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
 
-&#35;VALUE! - occurs if num1 or num2 is a non-numeric value.
+#VALUE! - occurs if num1 or num2 is a non-numeric value.
 
 #### Example:
 
@@ -3031,9 +3031,9 @@ ERF(lowerLimit, upperLimit ) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if lowerLimit or upperLimit  is non-numeric.
+#VALUE! - occurs if lowerLimit or upperLimit  is non-numeric.
 
-&#35;NUM! - occurs if lowerLimit  or upperLimit  is negative.
+#NUM! - occurs if lowerLimit  or upperLimit  is negative.
 
 #### Example:
 
@@ -3053,7 +3053,7 @@ ERF.PRECISE(a) where:
 
 #### Remarks:
 
-&#35;VALUE! - a is non-numeric
+#VALUE! - a is non-numeric
 
 #### Example:
 
@@ -3076,9 +3076,9 @@ BESSELI(a,n) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if a or n is non-numeric
+#VALUE! - occurs if a or n is non-numeric
 
-&#35;NUM! - occurs if n < 0
+#NUM! - occurs if n < 0
 
 #### Example:
 
@@ -3101,9 +3101,9 @@ BESSELJ(a,n) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if a or n is non-numeric
+#VALUE! - occurs if a or n is non-numeric
 
-&#35;NUM! - occurs if n < 0
+#NUM! - occurs if n < 0
 
 #### Example:
 
@@ -3126,9 +3126,9 @@ BESSELY(a,n) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if a or n is non-numeric
+#VALUE! - occurs if a or n is non-numeric
 
-&#35;NUM! - occurs if n < 0
+#NUM! - occurs if n < 0
 
 #### Example:
 
@@ -3151,9 +3151,9 @@ BESSELK(x,n) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if a or n is non-numeric
+#VALUE! - occurs if a or n is non-numeric
 
-&#35;NUM! - occurs if n < 0
+#NUM! - occurs if n < 0
 
 #### Example:
 
@@ -3179,9 +3179,9 @@ CONVERT(num,fromUnit,toUnit) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if the input data types are incorrect.
+#VALUE! - occurs if the input data types are incorrect.
 
-&#35;N/A - occurs if the unit does not exist or are in different groups.
+#N/A - occurs if the unit does not exist or are in different groups.
 
 #### Example:
 
@@ -3222,7 +3222,7 @@ FILTERXML(xml, xpath) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if xml is not valid or  if xml contains a namespace with a prefix that is not valid.
+#VALUE! - occurs if xml is not valid or  if xml contains a namespace with a prefix that is not valid.
 
 #### Example:
 
@@ -3242,7 +3242,7 @@ WEBSERVICE(url) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if url is unable to return the data, if url result in a string that is not valid and if url is a string that contains more than the 2048 characters.
+#VALUE! - occurs if url is unable to return the data, if url result in a string that is not valid and if url is a string that contains more than the 2048 characters.
 
 #### Example:
 
@@ -3300,7 +3300,7 @@ FINDB(text1,text2, num) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if text1 does not appear in text2 and if num is not greater than zero.
+#VALUE! - occurs if text1 does not appear in text2 and if num is not greater than zero.
 
 #### Example:
 
@@ -3389,7 +3389,7 @@ NUMBERVALUE(text) where,
 
 #### Remarks:
 
-&#35;VALUE! - occurs if any of the arguments are not valid.
+#VALUE! - occurs if any of the arguments are not valid.
 
 #### Example:
 
@@ -3513,7 +3513,7 @@ SEARCHB(findText,withinText, startNum ) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if find Text is not found.
+#VALUE! - occurs if find Text is not found.
 
 #### Example: 
 
@@ -3533,9 +3533,9 @@ UNICHAR(num) where:
 
 #### Remarks:
 
-&#35;N/A - occurs if data types are not valid.
+#N/A - occurs if data types are not valid.
 
-&#35;VALUE! - occurs if num fall outside the allowable range, if number is zero.
+#VALUE! - occurs if num fall outside the allowable range, if number is zero.
 
 #### Example:
 
@@ -3555,7 +3555,7 @@ UNICODE(text) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if data types is not valid.
+#VALUE! - occurs if data types is not valid.
 
 #### Example:
 
@@ -3658,9 +3658,9 @@ SHEET(value) where:
 
 #### Remarks:
 
-&#35;REF! - occurs if value argument is not a valid value.
+#REF! - occurs if value argument is not a valid value.
 
-&#35;NA - occurs if value argument is a sheet name that is not valid.
+#NA - occurs if value argument is a sheet name that is not valid.
 
 #### Example:
 
@@ -3682,11 +3682,11 @@ SHEETS(reference) where:
 
 #### Remarks:
 
-&#35;REF! - occurs if reference is not a valid value.
+#REF! - occurs if reference is not a valid value.
 
 #### Example:
 
-![](Calculate-functions_images/Calculate-functions_img167.png)
+![C:/Users/ApoorvahR/Desktop/8.7.png](Calculate-functions_images/Calculate-functions_img167.png)
 
 
 
@@ -3702,7 +3702,7 @@ TRANSPOSE( array ) where:
 
 #### Example:
 
-![](Calculate-functions_images/Calculate-functions_img168.png)
+![C:/Users/ApoorvahR/Desktop/93.png](Calculate-functions_images/Calculate-functions_img168.png)
 
 
 
@@ -3718,21 +3718,21 @@ FORMULATEXT(reference) where:
 
 #### Remarks:
 
-&#35;N/A - occurs if the reference argument is to another workbook that is not open.
+#N/A - occurs if the reference argument is to another workbook that is not open.
 
-&#35;N/A - occurs if the reference argument is to a range containing more than one cell.
+#N/A - occurs if the reference argument is to a range containing more than one cell.
 
-&#35;N/A - occurs if the cell used as the reference argument does not contain a formula.
+#N/A - occurs if the cell used as the reference argument does not contain a formula.
 
-&#35;N/A - occurs if the formula in the cell is longer than 8192 characters.
+#N/A - occurs if the formula in the cell is longer than 8192 characters.
 
-&#35;N/A - occurs if the formula can't be displayed in the worksheet.
+#N/A - occurs if the formula can't be displayed in the worksheet.
 
-&#35;N/A - occurs if an external workbook that contains the formula which is not open.
+#N/A - occurs if an external workbook that contains the formula which is not open.
 
 #### Example:
 
-![](Calculate-functions_images/Calculate-functions_img169.png)
+![C:/Users/ApoorvahR/Desktop/8.9.png](Calculate-functions_images/Calculate-functions_img169.png)
 
 
 
@@ -3769,7 +3769,7 @@ The INFO function returns a text string containing information about the current
 
 #### Example:
 
-![](Calculate-functions_images/Calculate-functions_img171.png)
+![C:/Users/ApoorvahR/Desktop/85.png](Calculate-functions_images/Calculate-functions_img171.png)
 
 
 
@@ -3787,7 +3787,7 @@ TYPE( value ) where:
 
 
 
-![](Calculate-functions_images/Calculate-functions_img172.png)
+![C:/Users/ApoorvahR/Desktop/86.png](Calculate-functions_images/Calculate-functions_img172.png)
 
 
 
@@ -3803,7 +3803,7 @@ ISFORMULA(reference) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if reference is not a valid data type.
+#VALUE! - occurs if reference is not a valid data type.
 
 #### Example:
 
@@ -3830,13 +3830,13 @@ EDATE( startDate, Months ) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if the supplied startDate is not a valid date.
+#VALUE! - occurs if the supplied startDate is not a valid date.
 
-&#35;VALUE! - occurs if the supplied Months argument is non-numeric.
+#VALUE! - occurs if the supplied Months argument is non-numeric.
 
 #### Example:
 
-![](Calculate-functions_images/Calculate-functions_img174.png)
+![C:/Users/ApoorvahR/Desktop/10.1.png](Calculate-functions_images/Calculate-functions_img174.png)
 
 
 
@@ -3855,15 +3855,15 @@ EOMONTH(startDate, Months) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if either any of the supplied arguments are not numeric values. 
+#VALUE! - occurs if either any of the supplied arguments are not numeric values. 
 
-&#35;NUM! - occurs if the supplied startDate is not a valid date.
+#NUM! - occurs if the supplied startDate is not a valid date.
 
-&#35;NUM! - occurs if the supplied startDate plus the value of the months argument is not a valid date.
+#NUM! - occurs if the supplied startDate plus the value of the months argument is not a valid date.
 
 #### Example:
 
-![](Calculate-functions_images/Calculate-functions_img175.png)
+![C:/Users/ApoorvahR/Desktop/10.2.png](Calculate-functions_images/Calculate-functions_img175.png)
 
 
 
@@ -3882,11 +3882,11 @@ NETWORKDAYS.INTL(startDate, endDate) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if the supplied startDate, endDate are not valid dates. 
+#VALUE! - occurs if the supplied startDate, endDate are not valid dates. 
 
 #### Example:
 
-![](Calculate-functions_images/Calculate-functions_img176.png)
+![C:/Users/ApoorvahR/Desktop/10.3.png](Calculate-functions_images/Calculate-functions_img176.png)
 
 
 
@@ -3905,15 +3905,15 @@ WEEKNUM( serialNum, [returnType] ) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if the supplied serialNum cannot be recognized as a numeric value or a date. 
+#VALUE! - occurs if the supplied serialNum cannot be recognized as a numeric value or a date. 
 
-&#35;NUM! - occurs if the supplied [returnType] argument is not one of the above listed permitted values. 
+#NUM! - occurs if the supplied [returnType] argument is not one of the above listed permitted values. 
 
-&#35;NUM! - occurs if the supplied serialNum argument is numeric but is out of range for the current date base. 
+#NUM! - occurs if the supplied serialNum argument is numeric but is out of range for the current date base. 
 
 #### Example:
 
-![](Calculate-functions_images/Calculate-functions_img177.png)
+![C:/Users/ApoorvahR/Desktop/87.png](Calculate-functions_images/Calculate-functions_img177.png)
 
 
 
@@ -3934,13 +3934,13 @@ WORKDAY.INTL( startDate, days, [weekend], [holidays] ) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if the supplied startDate plus the supplied days argument results in an invalid date.
+#NUM! - occurs if the supplied startDate plus the supplied days argument results in an invalid date.
 
-&#35;NUM! - occurs if the supplied [weekend] argument is invalid (see above explanation of this argument).
+#NUM! - occurs if the supplied [weekend] argument is invalid (see above explanation of this argument).
 
-&#35;VALUE! - occurs if the supplied startDate  or any of the values in the supplied [holidays] array are not valid dates.
+#VALUE! - occurs if the supplied startDate  or any of the values in the supplied [holidays] array are not valid dates.
 
-&#35;VALUE! - occurs if the supplied days argument is non-numeric.
+#VALUE! - occurs if the supplied days argument is non-numeric.
 
 #### Example:
 
@@ -3964,9 +3964,9 @@ YEARFRAC( startDate, endDate, [basis] ) where:
 
 #### Remarks:
 
-&#35;VALUE! - occurs if the startDate or endDate arguments are not valid dates. 
+#VALUE! - occurs if the startDate or endDate arguments are not valid dates. 
 
-&#35;NUM! - occurs if the value of the supplied [basis] argument is less than 0 or greater than 4. 
+#NUM! - occurs if the value of the supplied [basis] argument is less than 0 or greater than 4. 
 
 #### Example:
 
@@ -3990,9 +3990,9 @@ WORKDAY(startDate, Days, [holidays] ) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if the supplied startDate plus the supplied days argument results in an invalid date. 
+#NUM! - occurs if the supplied startDate plus the supplied days argument results in an invalid date. 
 
-&#35;VALUE! - occurs if the supplied startDate or any of the values in the supplied [holidays] array are not valid dates, if the supplied days argument is non-numeric.
+#VALUE! - occurs if the supplied startDate or any of the values in the supplied [holidays] array are not valid dates, if the supplied days argument is non-numeric.
 
 #### Example:
 
@@ -4012,9 +4012,9 @@ ISOWEEKNUM( DateTime) where:
 
 #### Remarks:
 
-&#35;NUM! - occurs if the date argument is not a valid number.
+#NUM! - occurs if the date argument is not a valid number.
 
-&#35;VALUE! - occurs if the date argument is not a valid date type.
+#VALUE! - occurs if the date argument is not a valid date type.
 
 #### Example:
 

@@ -13,7 +13,7 @@ documentation: ug
 
 You can create a simple application through the Visual Studio Designer with the Syncfusion WPF Report Designer control by using the following steps.
 
-1.Create a new WPF application in VS2008 or VS2010, and then add the following XAML code.
+1. Create a new WPF application in VS2008 or VS2010, and then add the following XAML code.
 
 {% highlight xml %}
 
@@ -23,8 +23,7 @@ You can create a simple application through the Visual Studio Designer with the 
 
 x:Class="Report_Designer_Utility_2008.MainWindow"        
 
-xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.WPF"    
-xmlns:Reporting="clr-namespace:Syncfusion.Windows.Reports.Designer;assembly=Syncfusion.ReportDesigner.WPF"       
+xmlns:syncfusion="clr-namespace:Syncfusion.Windows.Tools.Controls;assembly=Syncfusion.Tools.WPF"        xmlns:Reporting="clr-namespace:Syncfusion.Windows.Reports.Designer;assembly=Syncfusion.ReportDesigner.WPF"       
 
 WindowStartupLocation="CenterScreen" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
@@ -48,7 +47,7 @@ Title="MainWindow" Height="600" Width="1000" Icon="App.ico">
 
 
 
-2.Drag the Report Designer control from the Toolbox to the Report Designer window. The Report Designer window is modified.
+2. Drag the Report Designer control from the Toolbox to the Report Designer window. The Report Designer window is modified.
 
 
 
@@ -73,7 +72,7 @@ x:Name="ReportDesignerControl" Margin="0,6,0,-6" />
 
 {% endhighlight %}
 
-2.Check whether the following highlighted references are added to the References folder.
+2. Check whether the following highlighted references are added to the References folder.
 
 ![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig4.png](Getting-Started_images/Getting-Started_img2.png)
 
@@ -88,7 +87,7 @@ Note: After building and debugging the application, the appearance of the Report
 
 
 
-3.To view the Properties grid, click the View tab and select the Properties check box. 
+3. To view the Properties grid, click the View tab and select the Properties check box. 
 
 
 

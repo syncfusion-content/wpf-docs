@@ -11,9 +11,8 @@ documentation: ug
 
 The RDLC reports can be created by using the ReportDesigner control and an available list of business objects. The following steps demonstrate how to view an RDLC report in the Report Designer.
 
-1.Create a new WPF application in the Visual Studio and add the necessary ReportDesigner references to the application.
-
-2.Set the following properties to design the RDLC report.
+1. Create a new WPF application in the Visual Studio and add the necessary ReportDesigner references to the application.
+2. Set the following properties to design the RDLC report.
 
 {% highlight C# %}
 
@@ -23,7 +22,7 @@ this.ReportDesignerControl.Assemblies = new List<Assembly>();            this.Re
 
 {% endhighlight %}
 
-3.Here is a code sample of available business objects with their executing assemblies.
+3. Here is a code sample of available business objects with their executing assemblies.
 
 {% highlight C# %}
 
@@ -75,29 +74,43 @@ public class DataSource
 
 {% endhighlight %}
 
-4.Right click the Dataset folder to add a data set to the report. 
+4. Right click the Dataset folder to add a data set to the report. 
 
-![](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img1.png)
 
-5.Select a namespace that contains the business object.
 
-![](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img2.png)
+![C:/Users/arshiazeba/AppData/Local/Microsoft/Windows/Temporary Internet Files/Content.Word/Fig86.png](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img1.png)
 
-6.Select a business object type to design the report by using fields.
 
-![](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img3.png)
 
-7.Drag and drop the fields from the data set in the necessary report items.
+5. Select a namespace that contains the business object.
 
-8.Click Run to preview the report in the designer. You have to provide a DataSet value to preview the report.
 
-9.Select the collection of business objects by selecitng the necessary method in the provided assembly.
 
-![](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img4.png)
+![C:/Users/anandakumars/Desktop/1.PNG](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img2.png)
 
-10.The output is displayed as shown in the following figure.
 
-![](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img5.png)
+
+6. Select a business object type to design the report by using fields.
+
+
+
+![C:/Users/anandakumars/Desktop/2.PNG](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img3.png)
+
+
+
+7. Drag and drop the fields from the data set in the necessary report items.
+8. Click Run to preview the report in the designer. You have to provide a DataSet value to preview the report.
+9. Select the collection of business objects by selecitng the necessary method in the provided assembly.
+
+![C:/Users/anandakumars/Desktop/FRImages/21.png](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img4.png)
+
+
+
+10. The output is displayed as shown in the following figure.
+
+
+
+![C:/Users/anandakumars/Desktop/3.PNG](Create-RDLC-Reports-in-the-Report-Designer_images/Create-RDLC-Reports-in-the-Report-Designer_img5.png)
 
 
 

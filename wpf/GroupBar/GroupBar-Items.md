@@ -18,41 +18,16 @@ You can enable or disable the dragging of items using the DraggingItemInProgress
 Use the below code snippet to set this property.
 
 
-{% highlight xml %}
-<!-- Adding GroupBar -->
-<syncfusion:GroupBar Height="200" DraggingItemInProgress="True" Width="230" Name="groupBar"> 
- 
- <!-- Adding GroupBarItem --> 
- <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem"> 
 
- <!-- Adding content for GroupBar item using panel -->  
- <StackPanel Orientation="Vertical"> 
- <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>
- <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton> 
- <RadioButton Margin="4,2,2,2">Vertical</RadioButton>
- <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>    
- <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>   
- <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton> 
- </StackPanel> 
- </syncfusion:GroupBarItem> 
-
- <!-- Adding GroupBarItem -->
- <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">
-
- <!-- Adding content for GroupBar item using GroupView -->   
- <syncfusion:GroupView Name="groupView" IsListViewMode="True">  
- <syncfusion:GroupViewItem Text="List View"/>   
- <syncfusion:GroupViewItem Text="Show ContextMenu"/>  
- <syncfusion:GroupViewItem Text="Show ToolTip"/>  
- </syncfusion:GroupView>
- </syncfusion:GroupBarItem>
- </syncfusion:GroupBar> 
- {% endhighlight %}
-
- {% highlight C# %}
- //Setting the items in progress while dragging
- groupBar.DraggingItemInProgress = true;
- {% endhighlight %}
+<table>
+<tr>
+<td>
+{% highlight xml %}<!-- Adding GroupBar --><syncfusion:GroupBar Height="200" DraggingItemInProgress="True" Width="230" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">    <!-- Adding content for GroupBar item using panel -->    <StackPanel Orientation="Vertical">      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>      <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>      <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>    </StackPanel>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView Name="groupView" IsListViewMode="True">      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem></syncfusion:GroupBar> {% endhighlight %}
+</td></tr>
+<tr>
+<td>
+{% highlight C# %} //Setting the items in progress while dragginggroupBar.DraggingItemInProgress = true; {% endhighlight %} </td></tr>
+</table>
 
 
 See Also
@@ -68,41 +43,14 @@ You can customize the cursor type of GroupBar item using the GroupBarItemCursorT
 
 Use the below code snippet to set this property.
 
-
-{% highlight xml %}
-<!-- Adding GroupBar -->
-<syncfusion:GroupBar Height="200" GroupBarItemCursorType="Hand"  Width="230" Name="groupBar"> 
-
- <!-- Adding GroupBarItem -->  
- <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">  
-
- <!-- Adding content for GroupBar item using panel --> 
- <StackPanel Orientation="Vertical">  
- <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/> 
- <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>   
- <RadioButton Margin="4,2,2,2">Vertical</RadioButton>   
- <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>    
- <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>    
- <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>
- </StackPanel>  
- </syncfusion:GroupBarItem> 
-
- <!-- Adding GroupBarItem --> 
- <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General"> 
-
- <!-- Adding content for GroupBar item using GroupView -->   
- <syncfusion:GroupView Name="groupView" IsListViewMode="True">   
- <syncfusion:GroupViewItem Text="List View"/>   
- <syncfusion:GroupViewItem Text="Show ContextMenu"/> 
- <syncfusion:GroupViewItem Text="Show ToolTip"/> 
- </syncfusion:GroupView>  </syncfusion:GroupBarItem>
- </syncfusion:GroupBar>
- {% endhighlight %} 
- 
-{% highlight C# %}
-//Setting the cursor type for GroupBar item
-groupBar.GroupBarItemCursorType = ItemCursorType.Hand;
- {% endhighlight %} 
+<table>
+<tr>
+<td>
+{% highlight xml %}<!-- Adding GroupBar --><syncfusion:GroupBar Height="200" GroupBarItemCursorType="Hand"  Width="230" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">    <!-- Adding content for GroupBar item using panel -->    <StackPanel Orientation="Vertical">      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>      <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>      <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>    </StackPanel>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView Name="groupView" IsListViewMode="True">      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>          </syncfusion:GroupBar> {% endhighlight %} </td></tr>
+<tr>
+<td>
+{% highlight C# %}//Setting the cursor type for GroupBar itemgroupBar.GroupBarItemCursorType = ItemCursorType.Hand; {% endhighlight %} </td></tr>
+</table>
 
 
 See Also
@@ -116,40 +64,15 @@ You can also set the length of the content in GroupBar item. This is done using 
 Use the below code snippet to set this property.
 
 
-{% highlight xml %}
-<!-- Adding GroupBar -->
-<syncfusion:GroupBar Height="200" Width="230" ItemContentLength="100" Name="groupBar"> 
 
- <!-- Adding GroupBarItem --> 
- <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem" IsSelected="True"> 
-
- <!-- Adding content for GroupBar item using panel -->  
- <StackPanel Orientation="Vertical">   
- <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>  
- <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>  
- <RadioButton Margin="4,2,2,2">Vertical</RadioButton>  
- <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>  
- <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>  
- <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>   
- </StackPanel>
- </syncfusion:GroupBarItem> 
-
- <!-- Adding GroupBarItem --> 
- <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General"> 
-
- <!-- Adding content for GroupBar item using GroupView --> 
- <syncfusion:GroupView Name="groupView" IsListViewMode="True"> 
- <syncfusion:GroupViewItem Text="List View"/>  
- <syncfusion:GroupViewItem Text="Show ContextMenu"/>   
- <syncfusion:GroupViewItem Text="Show ToolTip"/>   
- </syncfusion:GroupView> 
- </syncfusion:GroupBarItem>
- </syncfusion:GroupBar>
- {% endhighlight %}
- 
-{% highlight C# %}
-//Set the length of the contentgroupBar.ItemContentLength = 100;
-{% endhighlight %}
+<table>
+<tr>
+<td>
+{% highlight xml %}<!-- Adding GroupBar --><syncfusion:GroupBar Height="200" Width="230" ItemContentLength="100" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem" IsSelected="True">    <!-- Adding content for GroupBar item using panel -->    <StackPanel Orientation="Vertical">      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>      <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>      <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>    </StackPanel>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView Name="groupView" IsListViewMode="True">      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem></syncfusion:GroupBar>{% endhighlight %}</td></tr>
+<tr>
+<td>
+{% highlight C# %}//Set the length of the contentgroupBar.ItemContentLength = 100;{% endhighlight %}</td></tr>
+</table>
 
 
 See Also
@@ -190,29 +113,14 @@ The following code examples illustrate how to set this property.
 
 
 
-{% highlight xml %}
-<syncfusion:GroupBarItem HeaderText="Mailbox" GroupBarItemCornerRadius="20" ShowInGroupBar="True">
-{% endhighlight %}
-
-{% highlight C# %}
-// Creating an instance of GroupBar.
-GroupBar groupBar = new GroupBar();
-
-// Creating an instance of GroupBar Item.
-GroupBarItem groupBarItem = new GroupBarItem();
-
-// Setting Header Text for GroupBar Item.
-groupBarItem.HeaderText = "Mailbox";
-
-// Setting Corner Radius For GroupBar Item.
-groupBarItem.GroupBarItemCornerRadius = new CornerRadius(20d);
-
-// Setting ShowInGroupBar propety for GroupBar Item.
-groupBarItem.ShowInGroupBar = true;
-
-// Adding GroupBar Item to GroupBar.
-groupBar.Items.Add(groupBarItem);
-{% endhighlight %}
+<table>
+<tr>
+<td>
+{% highlight xml %}<syncfusion:GroupBarItem HeaderText="Mailbox" GroupBarItemCornerRadius="20" ShowInGroupBar="True">{% endhighlight %}</td></tr>
+<tr>
+<td>
+{% highlight C# %}// Creating an instance of GroupBar.GroupBar groupBar = new GroupBar();// Creating an instance of GroupBar Item.GroupBarItem groupBarItem = new GroupBarItem();// Setting Header Text for GroupBar Item.groupBarItem.HeaderText = "Mailbox";// Setting Corner Radius For GroupBar Item.groupBarItem.GroupBarItemCornerRadius = new CornerRadius(20d);// Setting ShowInGroupBar propety for GroupBar Item.groupBarItem.ShowInGroupBar = true;// Adding GroupBar Item to GroupBar.groupBar.Items.Add(groupBarItem);{% endhighlight %}</td></tr>
+</table>
 
 
 Run the code. The following output is displayed.

@@ -11,11 +11,11 @@ documentation: ug
 
 HyperlinkAdv can be kept only inside the ParagraphAdv since the content property of ParagraphAdv is Inline. It allows you to display the formatted text using advanced features like NavigationUrl and TargetType. It simply differs by these properties when compared to SpanAdv.
 
-### Properties
+## Properties
 
 
 
-Property Table
+_Property Table_
 
 <table>
 <tr>
@@ -100,6 +100,7 @@ HyperlinkAdv can be added directly to an application by using the following code
 
 {% highlight xml %}
 
+[XAML]
 <syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            
 <syncfusion:DocumentAdv>                
 <syncfusion:SectionAdv>                    
@@ -109,11 +110,11 @@ HyperlinkAdv can be added directly to an application by using the following code
   </syncfusion:SectionAdv>           
  </syncfusion:DocumentAdv>        
  </syncfusion:RichTextBoxAdv>
- 
 {% endhighlight %}
 
 {% highlight C# %}
 
+[C#]            
 RichTextBoxAdv richtext = new RichTextBoxAdv();          
  DocumentAdv document = new DocumentAdv();          
  SectionAdv section = new SectionAdv();          
@@ -124,7 +125,6 @@ RichTextBoxAdv richtext = new RichTextBoxAdv();
  section.Blocks.Add(paragraph);           
  document.Sections.Add(section);           
  richtext.Document = document;
- 
 {% endhighlight %}
  
 
