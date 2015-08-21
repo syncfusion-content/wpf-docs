@@ -187,7 +187,7 @@ No</td></tr>
 {% highlight html %}
 
 
-[XAML]
+
 
 
 
@@ -217,7 +217,7 @@ xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Di
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -236,7 +236,7 @@ diagramgrid.Children.Add(dc);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -284,7 +284,7 @@ Horizontal and Vertical ruler can be initialized for DiagramView in two ways:
 
 {% highlight html %}
 
-[XAML]
+
 
 
 
@@ -330,7 +330,7 @@ Horizontal and Vertical ruler can be initialized for DiagramView in two ways:
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -343,7 +343,7 @@ diagramView.VerticalRuler as VerticalRuler();
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -451,7 +451,7 @@ The following code shows how the properties can be set.
 
 
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -473,7 +473,7 @@ The following code shows how the properties can be set.
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -486,7 +486,7 @@ DiagramView diagramView = new DiagramView();
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -537,7 +537,7 @@ Bounds can be specified in two ways,
 
 
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -568,7 +568,7 @@ xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Di
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -587,7 +587,7 @@ diagramgrid.Children.Add(dc);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -635,7 +635,7 @@ Steps for panning a page
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -645,7 +645,7 @@ diagramView.IsPanEnabled = true;
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -697,7 +697,7 @@ The DiagramPage can be created for DiagramView in following two ways,
 
 
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -742,7 +742,7 @@ xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Di
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -761,7 +761,7 @@ dc.View = view;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -811,7 +811,7 @@ This property is in DiagramView and can be set in the following ways.
 
 
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -851,7 +851,7 @@ This property is in DiagramView and can be set in the following ways.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -862,7 +862,7 @@ diagramView.IsPageEditable = true;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -902,7 +902,7 @@ Clearing the selection list on right-click can be enabled using the ClearingSele
 
 
 {% highlight c# %}
-[C#]
+
 
           DiagramView diagramView = new DiagramView();
 
@@ -915,7 +915,7 @@ Clearing the selection list on right-click can be enabled using the ClearingSele
 {% highlight vbnet %}
 
 
-[VB]   
+   
 
                Dim diagramView As New DiagramView()
 
@@ -991,7 +991,7 @@ To enable this feature, set the EnableFitToPage property of the diagram view to 
 
 
 {% highlight html %}
-[XAML]
+
 
 <Syncfusion:DiagramControl Grid.Row="1" Name="diagramControl"  >
 
@@ -1018,7 +1018,7 @@ To enable this feature, set the EnableFitToPage property of the diagram view to 
 {% highlight c# %}
 
 
-[C#]
+
 
 // Enable FitToPage of the DiagramView
 
@@ -1052,7 +1052,7 @@ The following code illustrates how to bring the whole diagram into the viewport 
 
 
 {% highlight html %}
-[XAML]
+
 
  <Button Command="FitToPage" CommandTarget="{Binding ElementName=diagramView}"CommandParameter="{Binding ElementName=diagramPage}">
 
@@ -1063,7 +1063,7 @@ The following code illustrates how to bring the whole diagram into the viewport 
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#] 
+ 
 
 DiagramCommandManager.FitToPage.Execute.(diagramView.Page, diagramView);
 
@@ -1120,7 +1120,7 @@ The following code illustrates this:
 
 {% highlight c# %}
 
-[C#]
+
 
        // Assigning selected node to the OrderedNodes property.
 
@@ -1137,7 +1137,7 @@ The following code illustrates this:
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 
@@ -1177,7 +1177,7 @@ The following code illustrates this:
 
 
 {% highlight c# %}
-[C#]
+
 
        // Assigning selected node to the OrderedNodes.
 
@@ -1192,7 +1192,7 @@ The following code illustrates this:
 {% highlight vbnet %}
 
 
-[VB]
+
 
 ‘Assigning selected node to the OrderedNodes.
 
@@ -1212,7 +1212,7 @@ The following code illustrates how to remove the layout from the specific nodes:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1227,7 +1227,7 @@ The following code illustrates how to remove the layout from the specific nodes:
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
  ’Set null value to the OrderedNodes property.
 
@@ -1273,7 +1273,7 @@ PageMargin can be set to diagram page by using DiagramView’s PageMargin proper
 
 
 {% highlight html %}
-[XAML]
+
 
 <syncfusion:DiagramControl Name="diagramControl" IsSymbolPaletteEnabled="True">
 
@@ -1298,7 +1298,7 @@ PageMargin can be set to diagram page by using DiagramView’s PageMargin proper
 {% highlight c# %}
 
 
-[C#]
+
 
 DiagramView diagramView = new DiagramView();
 
@@ -1307,7 +1307,7 @@ diagramView.PageMargin = new Thickness(10, 20, 10, 20);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 Dim diagramView As New DiagramView()
 
@@ -1379,7 +1379,7 @@ The following code illustrates how to set EnableVirtualization property through 
 
 {% highlight html %}
 
-[XAML]
+
 
 <!---DiagramControl--->         
 
@@ -1409,7 +1409,7 @@ The following code illustrates how to set EnableVirtualization property through 
 
 {% highlight c# %}
 
-[C#]
+
 
 DiagramView diagramView = new DiagramView();
 
@@ -1418,7 +1418,7 @@ diagramView.EnableVirtualization = true;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 Dim diagramView As New DiagramView()
 
@@ -1433,7 +1433,7 @@ EnableCaching decides whether the element should be in loaded state or unloaded 
 {% endhighlight %}
 {% highlight c# %}
 
-[C#]
+
 
 DiagramView diagramView = new DiagramView();
 
@@ -1442,7 +1442,7 @@ diagramView.EnableCaching = true;
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 Dim diagramView As New DiagramView()
 
@@ -1458,7 +1458,7 @@ The AllowVirtualization property can be set as given in the following code.
 
 
 {% highlight c# %}
-[C#]
+
 
 //Node Virtualization
 
@@ -1477,7 +1477,7 @@ LineConnectorObject.AllowVirtualization = true;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 'Node Virtualization
 
@@ -1531,7 +1531,7 @@ The measurement units property can be specified in the following way.
 
 
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -1564,7 +1564,7 @@ The measurement units property can be specified in the following way.
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1578,7 +1578,7 @@ DiagramView view = new DiagramView();
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -1596,7 +1596,7 @@ Once the Measurement unit is specified, all the values must be specified with re
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1621,7 +1621,7 @@ diagramModel.Nodes.Add(n1);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -1692,7 +1692,7 @@ DateTime unit support enables the ruler to display the position of diagram conte
 
 
 {% highlight c# %}
-[C#]
+
 
 DiagramView diagramView = new DiagramView();
 
@@ -1705,7 +1705,7 @@ diagramView.DateTimeSettings = new DateTimeSettings(new TimeSpan(1, 0, 0, 0, 0),
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 Dim diagramView As New DiagramView()
 
@@ -1731,7 +1731,7 @@ RulerInterval represents the interval (distance) between two major stroke lines 
 
 {% highlight c# %}
 
-[C#]
+
 
 DiagramView diagramView = new DiagramView();
 
@@ -1753,7 +1753,7 @@ By default, the DateTimeSettings property is set to false. A node’s DateTime-r
 
 {% highlight c# %}
 
-[C#]
+
 
 DiagramView diagramView = new DiagramView();
 
@@ -1771,7 +1771,7 @@ The available standard date and time format strings are explained in the followi
 
 
 {% highlight c# %}
-[C#]
+
 
 DiagramView diagramView = new DiagramView();
 
@@ -1788,7 +1788,7 @@ The origin (0,0) of the diagram page can be represented as a DateTime value by u
 
 {% highlight c# %}
 
-[C#]
+
 
    DiagramView diagramView = new DiagramView();
 
@@ -1808,7 +1808,7 @@ The ShowDateTime property of the ruler is used to display the DateTime values (b
 
 {% highlight c# %}
 
-[C#] 
+ 
 
 DiagramView diagramView = new DiagramView();   
 
@@ -1837,7 +1837,7 @@ Positioning of the node in the diagram page can be accessed using DateTime value
 
 {% highlight c# %}
 
-[C#] 
+ 
 
                  Node node = new Node();
 
@@ -1853,7 +1853,7 @@ The size of the node can be accessed using DateTime values instead of double val
 
 
 {% highlight c# %}
-[C#] 
+ 
 
                  Node node = new Node();
 
@@ -1912,7 +1912,7 @@ This code example demonstrates how to create the position and size of the node u
 
 
 {% highlight c# %}
-[C#] 
+ 
 
 Node n = new Node()  {Shape = Shapes.Star };
 
@@ -1935,7 +1935,7 @@ This code example demonstrates how to create the start point position and end po
 
 {% highlight c# %}
 
-[C#] 
+ 
 
 LineConnector line = new LineConnector();
 
@@ -2002,7 +2002,7 @@ The following code can be used to set these properties.
 
 
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -2041,7 +2041,7 @@ xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Di
 
 {% endhighlight %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -2064,7 +2064,7 @@ diagramgrid.Children.Add(dc);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -2131,7 +2131,7 @@ The following code can be used to set these properties.
 
 {% highlight html %}
 
-[XAML]
+
 
 
 
@@ -2176,7 +2176,7 @@ xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Di
 {% endhighlight %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -2200,7 +2200,7 @@ diagramgrid.Children.Add(dc);
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -2236,7 +2236,7 @@ The following code illustrates how to customize GridLineStyle:
 
 
 {% highlight c# %}
-[C#]
+
 
           Pen pen = new Pen(Brushes.Gray, 1)
 
@@ -2277,7 +2277,7 @@ The following code illustrates how to customize GridLineStyle:
 {% highlight vbnet  %}
 
 
-[VB]
+
 
 Dim pen As New Pen(Brushes.Gray, 1) With {.DashCap = PenLineCap.Triangle, .DashStyle = New DashStyle(New Double() { 2, 8 }, 1), .Brush = New SolidColorBrush(Colors.MidnightBlue)}
 
@@ -2329,7 +2329,7 @@ In the following code example, diagramView is an instance of DiagramView.
 
 {% highlight html %}
 
-[XAML]
+
 
 <syncfusion:DiagramView  x:Name="diagramView" SnapToHorizontalGrid="True" SnapToVerticalGrid="True" >
 
@@ -2338,7 +2338,7 @@ In the following code example, diagramView is an instance of DiagramView.
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
+
 
 // Enable snap to vertical grid.
 
@@ -2351,7 +2351,7 @@ diagramView.SnapToHorizontalGrid = True;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 'Enable snap to vertical grid.
 
@@ -2377,7 +2377,7 @@ In the following code example, diagramView is an instance of DiagramView.
 
 
 {% highlight html %}
-[XAML]
+
 
 <syncfusion:DiagramView  x:Name="diagramView" SnapOffsetX ="50" SnapOffsetY ="50">
 
@@ -2386,7 +2386,7 @@ In the following code example, diagramView is an instance of DiagramView.
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 diagramView.SnapOffsetX = 50;
 
@@ -2395,7 +2395,7 @@ diagramView.SnapOffsetY = 50;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 diagramView.SnapOffsetX = 50
 
@@ -2423,33 +2423,33 @@ Type </th><th>
 Data Type </th><th>
 Reference links </th></tr>
 <tr>
-<th>
-SnapOffsetX</th><th>
-Snaps to the horizontal offset value.</th><th>
-Dependency property</th><th>
-double</th><th>
-Not applicable </th></tr>
+<td>
+SnapOffsetX</td><td>
+Snaps to the horizontal offset value.</td><td>
+Dependency property</td><td>
+double</td><td>
+Not applicable </td></tr>
 <tr>
-<th>
-SnapOffsetY</th><th>
-Snaps to the vertical offset value.</th><th>
-Dependency property</th><th>
-double</th><th>
-Not applicable</th></tr>
+<td>
+SnapOffsetY</td><td>
+Snaps to the vertical offset value.</td><td>
+Dependency property</td><td>
+double</td><td>
+Not applicable</td></tr>
 <tr>
-<th>
-SnapToHorizontalGrid</th><th>
-Enables or disables snap to horizontal grid.</th><th>
-Dependency property</th><th>
-bool, true/false</th><th>
- Not applicable</th></tr>
+<td>
+SnapToHorizontalGrid</td><td>
+Enables or disables snap to horizontal grid.</td><td>
+Dependency property</td><td>
+bool, true/false</td><td>
+ Not applicable</td></tr>
 <tr>
-<th>
-SnapToVerticalGrid</th><th>
-Enables or disables snap to vertical grid.</th><th>
-Dependency property</th><th>
-bool, true/false</th><th>
- Not applicable</th></tr>
+<td>
+SnapToVerticalGrid</td><td>
+Enables or disables snap to vertical grid.</td><td>
+Dependency property</td><td>
+bool, true/false</td><td>
+ Not applicable</td></tr>
 </table>
 
 
@@ -2537,7 +2537,7 @@ To enable the snap-to-node feature, create an instance for the SnapSettings clas
 
 
 {% highlight c# %}
-[C#]
+
 
 DiagramView diagramView = new DiagramView();
 
@@ -2570,7 +2570,7 @@ The appearance of the drawing guidelines can be customized using the SnapLinePen
 
 
 {% highlight c# %}
-[C#]
+
 
 DiagramView diagramView = new DiagramView();
 
@@ -2606,7 +2606,7 @@ By default, all the properties of the SnapSettings class are set to true. To dis
 
 
 {% highlight c# %}
-[C#]
+
 
 DiagramView diagramView = new DiagramView();
 
@@ -2656,7 +2656,7 @@ To enable this feature, create an instance for the SnapSettings class of Diagram
 
 {% highlight c# %}
 
-[C#]
+
 
 DiagramView diagramView = new DiagramView(); 
 
@@ -2674,7 +2674,7 @@ To disable this feature, set the EnableSnapPort property of the SnapSettings cla
 
 {% highlight c# %}
 
-[C#]
+
 
 DiagramView diagramView = new DiagramView();
 
@@ -2728,7 +2728,7 @@ Steps to zooming using the zoom commands
 
 The following code can be added to a Button's click event to facilitate zooming in.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -2739,7 +2739,7 @@ ZoomCommands.ZoomIn.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -2757,7 +2757,7 @@ The diagram page elements will be zoomed in each time the button is clicked.
 
 The following code can be added to a button's click event to facilitate zooming out.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -2768,7 +2768,7 @@ ZoomCommands.ZoomOut.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -2784,7 +2784,7 @@ Steps to zooming using the mouse wheel
 
 1. Ensure the IsZoomEnabled property is set to True. By default it is set to true.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -2794,7 +2794,7 @@ diagramView.IsZoomEnabled = true;
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -2806,7 +2806,7 @@ diagramView.IsZoomEnabled = True
 
 2. Now while the CTRL key is pressed, roll the mouse wheel up to zoom in or down to zoom out.
 
-_Note: All other operations can be performed on page elements while IsZoomEnabled is set to True._
+> Note: All other operations can be performed on page elements while IsZoomEnabled is set to True.
 
 ![](Diagram-View_images/Diagram-View_img18.jpeg)
 
@@ -2820,7 +2820,7 @@ Essential Diagram WPF allows you to set the factor by which you can zoom in or o
 
 The following code can be used to set the ZoomFactor property.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -2851,7 +2851,7 @@ xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Di
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -2862,7 +2862,7 @@ diagramView.ZoomFactor = 0.5;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -2881,7 +2881,7 @@ Using Nudge Commands
 
 Moves the selected object to the top by 1 pixel.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -2890,7 +2890,7 @@ DiagramCommandManager.NudgeUp.Execute(diagramView.Page, diagramView);
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 
@@ -2903,10 +2903,10 @@ DiagramCommandManager.NudgeUp.Execute(diagramView.Page, diagramView)
 Moves the selected object to the bottom by 1 pixel.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.NudgeDown.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.NudgeDown.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.NudgeDown.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.NudgeDown.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
@@ -2915,10 +2915,10 @@ Moves the selected object to the bottom by 1 pixel.
 Moves the selected object to the left by 1 pixel.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.NudgeLeft.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.NudgeLeft.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.NudgeLeft.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.NudgeLeft.Execute(diagramView.Page, diagramView)
 {% endhighlight %}
 
 
@@ -2927,10 +2927,10 @@ Moves the selected object to the left by 1 pixel.
 Moves the selected object to the right by 1 pixel.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.NudgeRight.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.NudgeRight.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.NudgeRight.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.NudgeRight.Execute(diagramView.Page, diagramView)
 
 {% endhighlight %}
 
@@ -2992,7 +2992,7 @@ Clipboard commands allows you to cut or copy the selected objects in the page to
 
 Cut the selected objects from the page into the Clipboard.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -3005,10 +3005,10 @@ Cut the selected objects from the page into the Clipboard.
 {% endhighlight  %}
 
 {% highlight c# %}
-[C#]ApplicationCommands.Cut.Execute(diagramView.Page, diagramView);
+ApplicationCommands.Cut.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]ApplicationCommands.Cut.Execute(diagramView.Page, diagramView)</td></tr>
+ApplicationCommands.Cut.Execute(diagramView.Page, diagramView)</td></tr>
 
 {% endhighlight  %}
 
@@ -3016,7 +3016,7 @@ Copy Command
 
 Copies the selected objects from the page into the Clipboard.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -3028,10 +3028,10 @@ Copies the selected objects from the page into the Clipboard.
 {% endhighlight  %}
 
 {% highlight c# %}
-[C#]ApplicationCommands.Copy.Execute(diagramView.Page, diagramView);
+ApplicationCommands.Copy.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]ApplicationCommands.Copy.Execute(diagramView.Page, diagramView)
+ApplicationCommands.Copy.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
@@ -3040,7 +3040,7 @@ Copies the selected objects from the page into the Clipboard.
 
 Paste the contents of the valid clipboard into the page.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -3053,10 +3053,10 @@ Paste the contents of the valid clipboard into the page.
 {% endhighlight  %}
 
 {% highlight html %}
-[C#]ApplicationCommands.Paste.Execute(diagramView.Page, diagramView);
+ApplicationCommands.Paste.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight c# %}
-[VB]ApplicationCommands.Paste.Execute(diagramView.Page, diagramView)
+ApplicationCommands.Paste.Execute(diagramView.Page, diagramView)
 
 {% endhighlight %}
 
@@ -3070,7 +3070,7 @@ Using Shotcut Keys
 
 Each clipboard command can be disabled as shown in the following code example.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -3119,7 +3119,7 @@ Each clipboard command can be disabled as shown in the following code example.
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -3134,7 +3134,7 @@ diagramView.IsPasteEnabled = false;
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 
@@ -3157,10 +3157,10 @@ The commands are listed as follows.
 Moves the selected object over other objects by increasing the z-index to maximum value.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.BringToFront.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.BringToFront.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.BringToFront.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.BringToFront.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
@@ -3175,10 +3175,10 @@ _Bring To Front_
 Moves the selected object behind all other objects by setting the z-index to 0.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.SendToBack.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.SendToBack.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet  %}
-[VB]DiagramCommandManager.SendToBack.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.SendToBack.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
@@ -3193,10 +3193,10 @@ _Send To Back_
 Increases the z-index value of the selected object by 1.
 
 {% highlight html %}
-[C#]DiagramCommandManager.MoveForward.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.MoveForward.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.MoveForward.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.MoveForward.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
@@ -3211,11 +3211,11 @@ _Figure165: Move Forward_
 Decreases the z-index value of the selected object by 1.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.SendBackward.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.SendBackward.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]DiagramCommandManager.SendBackward.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.SendBackward.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
@@ -3258,7 +3258,7 @@ This property is in DiagramView and can be set in the following ways.
 
 The following code illustrates how to set the ZorderMode as Index:
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -3297,7 +3297,7 @@ The following code illustrates how to set the ZorderMode as Index:
 
 
 
-[C#]
+
 
 
 
@@ -3310,7 +3310,7 @@ diagramview.ZOrderMode = ZOrderModes.Index;
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 
@@ -3324,7 +3324,7 @@ diagramview.ZOrderMode = ZOrderModes.Index;
 
 The following code illustrates how to set the ZOrderMode as Visual:
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -3363,7 +3363,7 @@ The following code illustrates how to set the ZOrderMode as Visual:
 
 
 
-[C#]
+
 
 
 
@@ -3376,7 +3376,7 @@ diagramview.ZOrderMode = ZOrderModes.Visual;
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 
@@ -3397,10 +3397,10 @@ The following alignment commands are used to align objects.
 The AlignLeft command aligns all selected objects along the left corner of the reference object.
 
 {% highlight html %}
-[C#]DiagramCommandManager.AlignLeft.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.AlignLeft.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.AlignLeft.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.AlignLeft.Execute(diagramView.Page, diagramView)
 
 {% endhighlight  %}
 
@@ -3419,10 +3419,10 @@ The AlignCenter command aligns all selected objects to the center. This command 
 
 
 {% highlight c# %}
-[C#]DiagramCommandManager.AlignCenter.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.AlignCenter.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.AlignCenter.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.AlignCenter.Execute(diagramView.Page, diagramView)
 
 {% endhighlight  %}
 
@@ -3441,11 +3441,11 @@ _AlignCenter command applied to Diagram Objects_
 The AlignRight command aligns all selected objects along the right corner of the reference object.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.AlignRight.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.AlignRight.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]DiagramCommandManager.AlignRight.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.AlignRight.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
@@ -3465,10 +3465,10 @@ _AlignRight command applied to Diagram Objects_
 The AlignTop command aligns all selected objects along the top surface of the reference object.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.AlignTop.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.AlignTop.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.AlignTop.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.AlignTop.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
@@ -3485,10 +3485,10 @@ _AlignTop command applied to Diagram Objects_
 The AlignMiddle command aligns all selected objects at the center. This command center-aligns selected objects with respect to the vertical axis, i.e., by changing the y-coordinate of the object. 
 
 {% highlight c# %}
-[C#]DiagramCommandManager.AlignMiddle.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.AlignMiddle.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.AlignMiddle.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.AlignMiddle.Execute(diagramView.Page, diagramView)
 {% endhighlight %}
 
 
@@ -3505,10 +3505,10 @@ _AlignMiddle command applied to Diagram Objects_
 The AlignBottom command aligns all selected objects along the bottom surface of the reference object.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.AlignBottom.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.AlignBottom.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.AlignBottom.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.AlignBottom.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
@@ -3520,7 +3520,7 @@ The following screenshot illustrates how the last two nodes are aligned to the b
 
 _AlignBottom command applied to Diagram Objects_
 
-_Note: The connector gets aligned only when the head node and the tail node of the connector is Null._
+> Note: The connector gets aligned only when the head node and the tail node of the connector is Null.
 
 Alignment commands are useful for ordering the layout of the objects on a page and provide a professional appearance to the diagram.
 
@@ -3535,10 +3535,10 @@ The following spacing commands are used to space objects.
 The SpaceAcross command spaces selected objects with equal horizontal distance between them.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.SpaceAcross.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.SpaceAcross.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.SpaceAcross.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.SpaceAcross.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
@@ -3558,10 +3558,10 @@ _SpaceAcross command applied to Diagram Objects_
 The SpaceDown command spaces selected objects with equal vertical distance between them.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.SpaceDown.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.SpaceDown.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.SpaceDown.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.SpaceDown.Execute(diagramView.Page, diagramView)
 {% endhighlight %}
 
 
@@ -3575,7 +3575,7 @@ The following screenshot illustrates vertically spaced objects.
 
 _SpaceDown command applied to Diagram Objects_
 
-_Note: The connector gets spaced only when the head node and the tail node of the connector is Null._
+> Note: The connector gets spaced only when the head node and the tail node of the connector is Null.
 
 ## Delete Command
 
@@ -3588,11 +3588,11 @@ The following steps illustrate how to delete a node or connector.
 
 
 
-_Note: When a node is deleted, all the connectors connected to that node are also deleted. Deleting a connector leads to the deletion of that particular connector only._
+> Note: When a node is deleted, all the connectors connected to that node are also deleted. Deleting a connector leads to the deletion of that particular connector only.
 
 The following code example illustrates how to invoke the Delete command.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -3601,7 +3601,7 @@ DiagramCommandManager.Delete.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -3618,10 +3618,10 @@ The following sizing commands are used to resize objects.
 The SameHeight command resizes selected objects to the height of the first object in the selection list.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.SameHeight.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.SameHeight.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.SameHeight.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.SameHeight.Execute(diagramView.Page, diagramView)
 {% endhighlight %}
 
 
@@ -3631,17 +3631,17 @@ The SameHeight command resizes selected objects to the height of the first objec
 
 _SameHeight command applied to Diagram Objects_ 
 
-_Note: The width of the selected object remains the same._
+> Note: The width of the selected object remains the same.
 
 ### Width Customization
 
 The SameWidth command resizes selected objects to the width of the first object in the selection list.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.SameWidth.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.SameWidth.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.SameWidth.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.SameWidth.Execute(diagramView.Page, diagramView)
 
 {% endhighlight %}
 
@@ -3651,17 +3651,17 @@ The SameWidth command resizes selected objects to the width of the first object 
 
 _SameWidth command applied to Diagram Objects_
 
-_Note: The height of the selected object remains the same._
+> Note: The height of the selected object remains the same.
 
 ### Height and Width Customization
 
 The SameSize command resizes selected objects to the height and width of the first object in the selection list.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.SameSize.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.SameSize.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.SameSize.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.SameSize.Execute(diagramView.Page, diagramView)
 {% endhighlight  %}
 
 
@@ -3674,7 +3674,7 @@ The SameSize command resizes selected objects to the height and width of the fir
 
 _SameSize command applied to Diagram Objects_
 
-_Note: The connector gets spaced only when the head node and the tail node of the connector is Null._
+> Note: The connector gets spaced only when the head node and the tail node of the connector is Null.
 
 ## Undo and Redo Command
 
@@ -3683,20 +3683,20 @@ Undo command reverses the last action performed. For example: Some of the basic 
 Undo Command can be specified in the following way.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.Undo.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.Undo.Execute(diagramView.Page, diagramView);
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.Undo.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.Undo.Execute(diagramView.Page, diagramView)
 {% endhighlight %}
 
 
 Redo Command can be specified in the following way.
 
 {% highlight c# %}
-[C#]DiagramCommandManager.Redo.Execute(diagramView.Page, diagramView);
+DiagramCommandManager.Redo.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]DiagramCommandManager.Redo.Execute(diagramView.Page, diagramView)
+DiagramCommandManager.Redo.Execute(diagramView.Page, diagramView)
 {% endhighlight %}
 
 
@@ -3726,7 +3726,7 @@ No</td></tr>
 
 The following code example shows how to disable Undo Redo operation.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -3757,7 +3757,7 @@ The following code example shows how to disable Undo Redo operation.
 {% highlight c# %}
 
 
-[C#]
+
 
 
 
@@ -3768,7 +3768,7 @@ diagramView.UndoRedoEnabled = false;
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -3783,7 +3783,7 @@ diagramView.UndoRedoEnabled = False
 
 The following code example illustrates how to clear Undo Redo stack.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -3794,7 +3794,7 @@ diagramView.ClearUndoRedoStack();
 
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -3898,7 +3898,7 @@ Diagram can be printed though PrintPreview using following code snippet:
 
 * Through Code behind. 
 {% highlight c# %}
-[C#]
+
 
        DiagramView diagramView = new DiagramView();
 
@@ -3907,7 +3907,7 @@ diagramView.Print();
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
        Dim diagramView As New DiagramView()
 
@@ -3933,7 +3933,7 @@ Diagram can be printed without using PrintDialog or PrintPreview, and by sending
 
 Print without dialog box
 {% highlight c# %}
-[C#]
+
 
        DiagramView diagramView = new DiagramView();
 
@@ -3950,7 +3950,7 @@ diagramView.Print(p);
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
        Dim diagramView As New DiagramView()
 
@@ -3998,7 +3998,7 @@ NA</td></tr>
 
 You can print the diagram shapes with the applied effects using the _CustomEffect_ property. The following code illustrates this:
 {% highlight c# %}
-[C#]
+
 
 DropShadowEffect effect = new DropShadowEffect();
 
@@ -4018,7 +4018,7 @@ DropShadowEffect effect = new DropShadowEffect();
 {% highlight vbnet %}
 
 
-[VB]
+
 
 Dim effect As New DropShadowEffect()
 
@@ -4108,7 +4108,7 @@ __The following code illustrates how to enable the DrawingTools.
 
 {% highlight html %}
 
-[XAML]
+
 
 
 
@@ -4136,11 +4136,11 @@ __The following code illustrates how to enable the DrawingTools.
 {% endhighlight  %}
 
 
-* Through Code behind[C#]
+* Through Code behind
 
 The following code illustrates how to enable the DrawingTools.
 {% highlight c# %}
-[C#]
+
 
        DiagramView diagramView = new DiagramView();
 
@@ -4151,7 +4151,7 @@ The following code illustrates how to enable the DrawingTools.
 
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -4163,11 +4163,7 @@ diagramView.EnableDrawingTools = True
 {% endhighlight %}
 
 
-_Note:_
-
-_When the EnableDrawingToolsis set to True, it has to be disabled manually, i.e. it cannot be disabled automatically. This will facilitate drawing shapes or lines continually until EnableDrawingTools is set to false manually._
-
-_ObjectDrawn Event_
+>Note: When the EnableDrawingToolsis set to True, it has to be disabled manually, i.e. it cannot be disabled automatically. This will facilitate drawing shapes or lines continually until EnableDrawingTools is set to false manually. ObjectDrawn Event
 
 The ObjectDrawn event will be raised when the node or line connector is drawn using the EnableConnection/Drawing Tools property of the diagram view. This event is used to identify the source of the drawing object. 
 
@@ -4193,7 +4189,7 @@ The following code illustrates this feature.
 
 In XAML
 {% highlight html %}
-[XAML]
+
 
   <syncfusion:DiagramControl.View>
 
@@ -4211,7 +4207,7 @@ In XAML
 
 In C#
 {% highlight c# %}
-[C#]
+
 
 diagramView.ObjectDrawn += new Syncfusion.Windows.Diagram.DrawingToolEventHandler(diagramView_ObjectDrawn);
 
@@ -4258,7 +4254,7 @@ This property is in DiagramView and can be set in the following ways:
 
 The following code illustrates how to set the DrawingMode as Default:
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -4297,7 +4293,7 @@ The following code illustrates how to set the DrawingMode as Default:
 {% highlight c# %}
 
 
-[C#]
+
 
 
 
@@ -4310,7 +4306,7 @@ diagramview.ZOrderMode = DrawingMode.Default;
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -4330,7 +4326,7 @@ _DrawingMode is Default_
 
 The following code illustrates how to set the DrawingMode as Default:
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -4369,7 +4365,7 @@ The following code illustrates how to set the DrawingMode as Default:
 {% highlight c# %}
 
 
-[C#]
+
 
 
 
@@ -4381,7 +4377,7 @@ diagramview.ZOrderMode = DrawingMode.Continous;
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -4409,7 +4405,7 @@ The DrawingTool selection in Diagram View can be set in two methods:
 
 The following code illustrates how to select a DrawingTool.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -4441,11 +4437,11 @@ The following code illustrates how to select a DrawingTool.
 {% endhighlight %}
 
 
-* Through Code behind[C#]
+* Through Code behind
 
 The following code illustrates how to select a DrawingTool. 
 {% highlight c# %}
-[C#]
+
 
        DiagramView diagramView = new DiagramView();
 
@@ -4454,7 +4450,7 @@ The following code illustrates how to select a DrawingTool.
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
        Dim diagramView As New DiagramView()
 
@@ -4475,7 +4471,7 @@ diagramView.DrawingTool = DrawingTools.Rectangle
 
 
 
-_Note: These steps are common for all shapes and lines drawing, except Polygon and Polyline._
+> Note: These steps are common for all shapes and lines drawing, except Polygon and Polyline.
 
 #### Shape Drawing
 
@@ -4515,12 +4511,7 @@ Bezier Line – After Drawing
 
 _Bezier Line(Line Connector)_
 
-_Note:_
-
-* _The drawn shape will be converted into a Node._
-* _The drawn line will be converted into a LineConnector._
-* _You can continually draw the selected shape._
-* _Lines cannot be drawn continually._ 
+> Note:* The drawn shape will be converted into a Node. * The drawn line will be converted into a LineConnector. * You can continually draw the selected shape. * Lines cannot be drawn continually.
 
 Steps for drawing a Polygon and Polyline Drawing:
 
@@ -4584,7 +4575,7 @@ The preview style for line connectors can be defined either through XAML or code
 
 To define a preview style, see the following code. This code sample is for setting the preview of the line connector as dashed.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -4602,7 +4593,7 @@ To define a preview style, see the following code. This code sample is for setti
 
 To apply the preview style to a line connector, it has to be assigned to the CustomPathStyle property of DiagramView.
 {% highlight c# %}
-[C#]
+
 
 DiagramView View1 = new DiagramView();
 
@@ -4613,7 +4604,7 @@ View1.CustomPathStyle = this.Resources["MyStyle"] as Style;
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 Dim view1 As New DiagramView()
 
@@ -4667,7 +4658,7 @@ The following code illustrates how to export the Page as an image file.
 
 Page can be exported into any streams such as FileStream and MemoryStream.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -4703,7 +4694,7 @@ Filename with Path
 
 You can also export Page as an image file with directory path and file name. 
 {% highlight c# %}
-[C#]
+
 
 diagramview.Save(@"D:\ Diagram.jpeg");
 
@@ -4742,7 +4733,7 @@ You can also save to a stream.
 
 The following code illustrates how to save the Page.
 {% highlight c# %}
-[C#]
+
 
 System.IO.FileStream filestream = new System.IO.FileStream("Diagram.xps", System.IO.FileMode.Create);
 
@@ -4754,7 +4745,7 @@ Stream with Rect
 
 You can also save to a stream with specified size of the save area.
 {% highlight c# %}
-[C#]
+
 
 System.IO.FileStream filestream = new System.IO.FileStream("(@"D:\Diagram.xps",System.IO.FileMode.Create);
 
@@ -4854,7 +4845,7 @@ BestFit</td><td>
 
 The following code sample demonstrates how to use the imagesize and ImageStretch options.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -4864,7 +4855,7 @@ diagramView.Save(@"E:\Fig3.jpg", new Size(500, 500), ImageStretch.Shrink);
 
 {% endhighlight %}
 
-_Note: By default, when exporting a diagram that is huge in size (for example, 30,000 × 2,000), an ‘Out of memory’ exception is raised. By shrinking the diagram to a smaller size, the memory occupied will be less, so the exception will not be raised._
+> Note: By default, when exporting a diagram that is huge in size (for example, 30,000 × 2,000), an ‘Out of memory’ exception is raised. By shrinking the diagram to a smaller size, the memory occupied will be less, so the exception will not be raised.
 
 ## Export to Clipboard
 
@@ -4872,7 +4863,7 @@ Content of the Page can be copied onto the clipboard as an image, and can be pas
 
 The following Code illustrates how to export the Page content into clipboard.
 {% highlight c# %}
-[C#]
+
 
 diagramview.CopyToClipboard();
 
@@ -4937,7 +4928,7 @@ To enable SizeToContent support, set the SizeToContent property of DiagramView t
 
 Following code illustrates how to enable SizeToContent support:
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -4960,7 +4951,7 @@ Following code illustrates how to enable SizeToContent support:
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -4973,7 +4964,7 @@ diagramView.SizeToContent = true;
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 
@@ -4988,7 +4979,7 @@ You can define the Diagram Page area. Use the BoundaryConstraintsArea__property 
 
 Following code illustrates how to define Diagram Page area:
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -5011,7 +5002,7 @@ Following code illustrates how to define Diagram Page area:
 {% endhighlight %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -5022,7 +5013,7 @@ DiagramView diagramView = new DiagramView();
 
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]
+
 
 Dim diagramView As New DiagramView()
 
@@ -5034,7 +5025,7 @@ You can restrict the diagram element moving out of a specified area. Use the Bou
 
 Following code illustrates how to restrict diagram element moving out of specific area:
 {% highlight html %}
-[XAML]   
+   
 
 
 
@@ -5056,7 +5047,7 @@ Following code illustrates how to restrict diagram element moving out of specifi
 
 {% endhighlight %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -5067,7 +5058,7 @@ diagramView.BoundaryConstraintsEnabled = true;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -5089,7 +5080,7 @@ To customize the background, use the PageBackground__of DiagramView. Default val
 
 Following code illustrated how to customize the background:
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -5112,7 +5103,7 @@ Following code illustrated how to customize the background:
 {% endhighlight %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -5123,7 +5114,7 @@ Following code illustrated how to customize the background:
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 Dim diagramView As New DiagramView()
 
@@ -5135,7 +5126,7 @@ To customize the background of the Off Page, use the OffPageBackground__property
 
 Following code illustrates how to customize the background of the Off Page:
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -5158,7 +5149,7 @@ Following code illustrates how to customize the background of the Off Page:
 {% endhighlight %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -5168,7 +5159,7 @@ Following code illustrates how to customize the background of the Off Page:
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 Dim diagramView As New DiagramView()
 
@@ -5180,7 +5171,7 @@ To customize the page effect, use the PageEffect__property of DiagramView.
 
 Following code illustrates how to customize the page effect:
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -5211,7 +5202,7 @@ Following code illustrates how to customize the page effect:
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
             DropShadowEffect drop = new DropShadowEffect();
 
@@ -5228,7 +5219,7 @@ Following code illustrates how to customize the page effect:
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -5362,7 +5353,7 @@ Follow the steps below to use the Overview control for DiagramControl:
 
 4. Create an instance of DiagramControl.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -5388,7 +5379,7 @@ Follow the steps below to use the Overview control for DiagramControl:
 
 5. Create an instance of Overview and set the OverviewSourceAncestor property to DiagramControl.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -5425,16 +5416,18 @@ Parameters</th><th>
 Type</th><th>
 Return Type</th></tr>
 <tr>
-<th>
-BringIntoCenter</th><th>
-Used to bring the element into the center of the page. </th><th>
-BringIntoCenter(Object pageElement)This method only accepts Node, LineConnector, or Rect type objects.</th><th>
-WPF</th><th>
-Void</th></tr>
+<td>
+BringIntoCenter</td><td>
+Used to bring the element into the center of the page. </td><td>
+BringIntoCenter(Object pageElement)This method only accepts Node, LineConnector, or Rect type objects.</td><td>
+WPF</td><td>
+Void</td></tr>
 </table>
+
 ### Adding BringIntoCenter to an Application 
+
 {% highlight c# %}
-[C#]
+
 
 DiagramView diagramView=new DiagramView();
 
@@ -5445,7 +5438,7 @@ diagramView.BringIntoCenter(node);
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 Dim diagramView As New DiagramView()
 
@@ -5473,18 +5466,18 @@ Description</th><th>
 Parameters</th><th>
 Return Type</th></tr>
 <tr>
-<th>
-BringIntoViewPort</th><th>
-brings the element into the Viewport of the page.</th><th>
-Bring Into ViewPort(Object pageElement)This method accepts the Node and LineConnector type objects.</th><th>
-Void</th></tr>
+<td>
+BringIntoViewPort</td><td>
+brings the element into the Viewport of the page.</td><td>
+Bring Into ViewPort(Object pageElement)This method accepts the Node and LineConnector type objects.</td><td>
+Void</td></tr>
 </table>
 
 ### Adding BringIntoViewPort to an Application
 
 The BringIntoViewPort method of the DiagramView class is used to bring the object into the Viewport. This method accepts only the parameters of type Node, LineConnector, or Rect.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -5497,7 +5490,7 @@ diagramview.BringIntoViewPort(node);
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 Dim diagramview As New DiagramView()
 
@@ -5541,7 +5534,7 @@ This property is available in DiagramView and can be set in the following ways:
 
 The following code illustrates how to set the ItemSelectionMode as Single:
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -5578,7 +5571,7 @@ The following code illustrates how to set the ItemSelectionMode as Single:
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -5591,7 +5584,7 @@ diagramview.ItemSelectionMode = ItemSelectionMode.Single;
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 
@@ -5609,7 +5602,7 @@ _ItemSelectionMode is Single_
 
 The following code illustrates how to set the ItemSelectionMode as Multiple:
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -5650,7 +5643,7 @@ The following code illustrates how to set the ItemSelectionMode as Multiple:
 {% highlight c# %}
 
 
-[C#]
+
 
 
 
@@ -5663,7 +5656,7 @@ diagramview.ItemSelectionMode = ItemSelectionMode.Multiple;
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 

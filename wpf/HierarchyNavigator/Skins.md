@@ -122,7 +122,7 @@ SkinStorage.SetVisualStyle(this, “Metro");
 
 Transparent Theme
 
-[{% highlight C# %}]
+{% highlight C# %}
 
 SkinStorage.SetVisualStyle(this, “Transparent");
 

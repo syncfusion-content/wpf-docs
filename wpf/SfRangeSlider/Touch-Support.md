@@ -26,7 +26,6 @@ The following code example and screenshot illustrates the above.
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -46,7 +45,6 @@ The following code example and screenshot illustrates the above.
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -67,7 +65,6 @@ The following code example and screenshot illustrates the above.
 {%highlight xml%}
 
 
-[XAML]
 
 
 
@@ -87,7 +84,6 @@ The following code example and screenshot illustrates the above.
 
 {%highlight xml%}
 
-[XAML]
 
 
 

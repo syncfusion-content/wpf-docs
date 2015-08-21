@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-## Conditional Formatting
+# Conditional Formatting
 
 Conditional formatting is the process of applying customized styles to any object based on specified conditions. Conditional Formatting for
 PivotGrid WPF allows you to format Grid cells based on specified conditions. This can be achieved by defining PivotGridDataConditionalFormat 
@@ -19,21 +19,19 @@ specified by using the PivotGridControl.ConditionalFormats property, which is an
 
 The criteria for filtering the cells are specified by using the PivotGridDataConditionalFormat.Conditions property, which is a collection of PivotGridDataCondition objects. The Style for each ConditionalFormat can be specified by using the PivotGridDataConditionalFormat.CellStyle property, which should be of type PivotGridCellStyle.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 Conditional Formatting can be used in Marketing software to help users easily trace the product sales rate for different regions. 
 
 ![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid CF.png](Features_images/Features_img10.png)
 
 
-
-#### Adding Conditional Formatting
+### Adding Conditional Formatting
 
 Conditional Formatting can be added to code behind and XAML, as shown in the following code snippets. 
 
 {% highlight xml %} 
 
-[XAML]
 
   <!--Specifying PivotRows.-->
 
@@ -121,7 +119,6 @@ Conditional Formatting can be added to code behind and XAML, as shown in the fol
 
 {% highlight C# %} 
 
-[C#]
 
 // Specifying PivotGridDataConditionalFormat.
 
@@ -191,7 +188,6 @@ this.PivotGrid1.ConditionalFormats.Add(conditionalFormat2);
 
 {% highlight vbnet %}  
 
-[VB]
 
 ' Specifying PivotGridDataConditionalFormat.
 

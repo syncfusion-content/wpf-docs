@@ -20,15 +20,15 @@ Using CustomEditorCollection property user can add custom editors to PropertyGri
 <table>
 <tr>
 <td>
-[XAML]    &lt;Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"&gt;<br>        &lt;Button Height="25" Width="100" VerticalAlignment="Top" x:Name="Btn"/&gt;<br>        &lt;syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50" Width="500" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center"/&gt;<br>    &lt;/Grid&gt;</td></tr>
+{% highlight xml %} <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"><br>        <Button Height="25" Width="100" VerticalAlignment="Top" x:Name="Btn"/><br>        <syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50" Width="500" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center"/><br>    </Grid>{% endhighlight %}</td></tr>
 <tr>
 <td>
-[C#]    /// &lt;summary&gt;<br>    /// Interaction logic for MainWindow.xaml.<br>    /// &lt;/summary&gt;<br>    public partial class MainWindow : Window<br>    {<br>        /// &lt;summary&gt;<br>        /// Initializes a new instance of the &lt;see cref="MainWindow"/&gt; class.<br>        /// &lt;/summary&gt;<br>        public MainWindow()<br>        {<br>            InitializeComponent();<br>            // Creating CustomEditor for Background.<br>            CustomEditor editor = new CustomEditor();<br>            editor.Properties.Add("Background");<br>            editor.Editor = new ColorEditEditor();<br>            this.propertyGrid.CustomEditorCollection.Add(editor);<br>        }<br>    }<br><br>    public class ColorEditEditor : ITypeEditor<br>    {<br>        public void Attach(PropertyViewItem property, PropertyItem info)<br>        {<br>            if (info.CanWrite)<br>            {<br>                var binding = new Binding("Value")<br>                {<br>                    Mode = BindingMode.TwoWay,<br>                    Source = info,<br>                    ValidatesOnExceptions = true,<br>                    ValidatesOnDataErrors = true<br>                };<br>                BindingOperations.SetBinding(colorEdit, ColorEdit.BrushProperty, binding);<br>            }<br>            else<br>            {<br>                var binding = new Binding("Value")<br>                {<br>                    Mode = BindingMode.OneWayToSource,<br>                    Source = info,<br>                    ValidatesOnExceptions = true,<br>                    ValidatesOnDataErrors = true<br>                };<br>                BindingOperations.SetBinding(colorEdit, ColorEdit.BrushProperty, binding);<br>            }<br>        }<br><br>        public ColorEdit colorEdit;<br>        public object Create(System.Reflection.PropertyInfo PropertyInfo)<br>        {<br>            colorEdit = new ColorEdit();<br>            return colorEdit;<br>        }<br><br>        public void Detach(PropertyViewItem property)<br>        {<br>            throw new NotImplementedException();<br>        }<br>    }</td></tr>
+{% highlight c# %}/// <summary><br>    /// Interaction logic for MainWindow.xaml.<br>    /// </summary><br>    public partial class MainWindow : Window<br>    {<br>        /// <summary><br>        /// Initializes a new instance of the <see cref="MainWindow"/> class.<br>        /// </summary><br>        public MainWindow()<br>        {<br>            InitializeComponent();<br>            // Creating CustomEditor for Background.<br>            CustomEditor editor = new CustomEditor();<br>            editor.Properties.Add("Background");<br>            editor.Editor = new ColorEditEditor();<br>            this.propertyGrid.CustomEditorCollection.Add(editor);<br>        }<br>    }<br><br>    public class ColorEditEditor : ITypeEditor<br>    {<br>        public void Attach(PropertyViewItem property, PropertyItem info)<br>        {<br>            if (info.CanWrite)<br>            {<br>                var binding = new Binding("Value")<br>                {<br>                    Mode = BindingMode.TwoWay,<br>                    Source = info,<br>                    ValidatesOnExceptions = true,<br>                    ValidatesOnDataErrors = true<br>                };<br>                BindingOperations.SetBinding(colorEdit, ColorEdit.BrushProperty, binding);<br>            }<br>            else<br>            {<br>                var binding = new Binding("Value")<br>                {<br>                    Mode = BindingMode.OneWayToSource,<br>                    Source = info,<br>                    ValidatesOnExceptions = true,<br>                    ValidatesOnDataErrors = true<br>                };<br>                BindingOperations.SetBinding(colorEdit, ColorEdit.BrushProperty, binding);<br>            }<br>        }<br><br>        public ColorEdit colorEdit;<br>        public object Create(System.Reflection.PropertyInfo PropertyInfo)<br>        {<br>            colorEdit = new ColorEdit();<br>            return colorEdit;<br>        }<br><br>        public void Detach(PropertyViewItem property)<br>        {<br>            throw new NotImplementedException();<br>        }<br>    }{% endhighlight %}</td></tr>
 </table>
 
 
 ![](CustomEditor-support_images/CustomEditor-support_img1.png)
-{:.image }
+
 
 
 
@@ -37,16 +37,16 @@ Properties
 
 
 
-_CustomEditor Table_
+CustomEditor Table
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 CustomEditorCollection</td><td>

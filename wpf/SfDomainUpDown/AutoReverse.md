@@ -14,7 +14,7 @@ Incrementing the value starts from the maximum value once it has reached the min
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 

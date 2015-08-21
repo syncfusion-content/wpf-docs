@@ -15,7 +15,7 @@ The following code example explains how to add a Circular Gauge:
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window x:Class="SampleCircularGauge.MainWindow"
 
@@ -96,7 +96,7 @@ The following code example explains how to add a Circular Gauge:
 
 {% highlight C# %}
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -146,23 +146,23 @@ Syncfusion Reference Manager is used to add Syncfusion Tools.
 
 1. Create a simple WPF application by using Visual Studio.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
 2. Right-Click on the Project and select Syncfusion Reference Manager.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 3. The Syncfusion Reference Manager Wizard is opened as follows.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 4. Search SfCircularGauge by using Search Box and select SfCircularGauge Control.  Click done to add selected SfCircularGauge Control.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+   ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -170,97 +170,88 @@ Syncfusion Reference Manager is used to add Syncfusion Tools.
 
 
 
-![](Getting-Started_images/Getting-Started_img6.png)
+   ![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
 6. Create a namespace reference to the SfCircularGauge control by using Syncfusion’s global namespace reference schemas.syncfusion.com or the SfCircularGauge control’s namespace reference by using Syncfusion.UI.Xaml.Gauges available in the Syncfusion.SfCircularGauge.WPF assembly.
 
 
-{% highlight xml %}
 
-[XAML]
 
-xmlns:syncfusion ="http://schemas.syncfusion.com/wpf" 
-{% endhighlight %}
+      xmlns:syncfusion ="http://schemas.syncfusion.com/wpf" 
+
 
 
 7. Add the following code example to create a simple SfCircularGauge control.
-{% highlight xml %}
 
-[XAML]
 
-<Window x:Class="SampleCircularGauge.MainWindow"
+			<Window x:Class="SampleCircularGauge.MainWindow"
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+					xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-        Title="MainWindow" Height="350" Width="525">
+					Title="MainWindow" Height="350" Width="525">
 
-    <Grid Name="Grid" Background="Black">
+				<Grid Name="Grid" Background="Black">
 
-        <syncfusion:SfCircularGauge></syncfusion:SfCircularGauge>
+					<syncfusion:SfCircularGauge></syncfusion:SfCircularGauge>
 
-    </Grid>
+				</Grid>
 
-</Window>
-{% endhighlight %}
+			</Window>
 
 
 
-{% highlight C# %}
 
 
-[C#]
 
-using System.Windows;
 
-using Syncfusion.UI.Xaml.Gauges;
+			using System.Windows;
 
-namespace CircularGauge
+			using Syncfusion.UI.Xaml.Gauges;
 
-{
+			namespace CircularGauge
 
-    public partial class MainWindow : Window
+			{
 
-    {
+				public partial class MainWindow : Window
 
-        public MainWindow()
+				{
 
-        {
+					public MainWindow()
 
-            InitializeComponent();
+					{
 
-            SfCircularGauge circulargauge = new SfCircularGauge();
+						InitializeComponent();
 
-            this.Grid.Children.Add(circulargauge); 
+						SfCircularGauge circulargauge = new SfCircularGauge();
 
-         }
+						this.Grid.Children.Add(circulargauge); 
 
-    }
+					 }
 
-}
-{% endhighlight %}
+				}
+
+			}
+
 
 8. The SfCircularGauge control is created as follows.
 
 
 
-![](Getting-Started_images/Getting-Started_img8.png)
+   ![](Getting-Started_images/Getting-Started_img8.png)
 
 
 
-> _Note:_   
+   > Note:  1. The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version. 2. The Syncfusion Reference Manager is used only in Visual Studio 2010, 2012, and 2013.
 
-1. _The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version._
-2. _The Syncfusion Reference Manager is used only in Visual Studio 2010, 2012, and 2013._
-
-
+   {:.prettyprint}
 

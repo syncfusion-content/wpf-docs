@@ -11,7 +11,6 @@ documentation: ug
 
 This is used to indicate the value point on mouse move and this feature applicable for line and area sparkline.
 {% highlight html %}
-[XAML]
 
   <Syncfusion:SfLineSparkline 
 

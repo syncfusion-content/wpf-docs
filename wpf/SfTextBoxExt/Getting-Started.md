@@ -16,7 +16,6 @@ The following code sample shows how to create the TextBoxExt from code-behind an
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -38,7 +37,6 @@ Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syn
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfTextBoxExt textBox = new SfTextBoxExt();
 {% endhighlight %}

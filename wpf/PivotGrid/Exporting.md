@@ -8,13 +8,13 @@ documentation: ug
 ---
 
 
-## Exporting
+# Exporting
 
-### PDF Export
+## PDF Export
 
 PivotGrid for WPF can be exported as a PDF file using Essential PDF. . The user can export the contents of the PivotGrid to the PDF document for future archival, references and analysis purposes.
 
-#### Call Export method
+### Call Export method
 
 The GridPdfExport class provides support for exporting data from a PivotGrid to a PDF document for verification. The following dlls should be added, along with the default dlls in the reference folder: 
 
@@ -22,7 +22,6 @@ The GridPdfExport class provides support for exporting data from a PivotGrid to 
 
 {% highlight C# %}  
 
-[C#]
 
 
 //// Export to PDF.
@@ -53,8 +52,6 @@ if (savedialog.ShowDialog() == true)
 
 {% highlight vbnet %} 
 
-[VB]
-
 ' Export to PDF.
 
 Dim savedialog As SaveFileDialog = New SaveFileDialog()
@@ -84,11 +81,11 @@ End If
 
 
 
-### Excel Export
+## Excel Export
 
 PivotGrid for WPF can be exported as an XLS file using Essential XlsIO. The user can export the contents of the PivotGrid to the Excel document for future archival, references and analysis purposes.
 
-#### Call Export method
+### Call Export method
 
 The GridExcelExport class provides support for exporting data from a PivotGrid to an Excel spreadsheet for verification and/or computation. The following dlls should be added, along with the default dlls in the reference folder: 
 
@@ -96,7 +93,6 @@ The GridExcelExport class provides support for exporting data from a PivotGrid t
 
 {% highlight C# %}  
 
-[C#]
 
 //// Export to Excel.
 
@@ -125,7 +121,6 @@ if (savedialog.ShowDialog() == true)
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Export to Excel.
 
@@ -156,11 +151,11 @@ End If
 
 
 
-### Word Export
+## Word Export
 
 PivotGrid for WPF can be exported as a Word document using Essential DocIO. The user can export the contents of the PivotGrid to the Word document for future archival, references and analysis purposes.
 
-#### Call Export method
+### Call Export method
 
 The GridWordExport class provides support for exporting data from a PivotGrid to a Word document for verification. The following dlls should be added, along with the default dlls in the reference folder: 
 
@@ -169,7 +164,6 @@ The GridWordExport class provides support for exporting data from a PivotGrid to
  
 {% highlight C# %}  
 
-[C#]
 
 //// Export to Word Document.
 
@@ -200,7 +194,6 @@ if (savedialog.ShowDialog() == true)
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Export to Word Document.
 
@@ -230,24 +223,24 @@ End If
 
 
 
-### CSV Export
+## CSV Export
 
 PivotGridControl for WPF provides support to export itself to CSV file format. 
 
-### Use Case Scenarios 
+## Use Case Scenarios 
 
 You can export the contents of the PivotGridControl to the CSV file format for future references and analysis purposes.
 
-_Methods_
+Methods
 
 <table>
 <tr>
-<td>
-{{ '**Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Return Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 Export(string filename)</td><td>
@@ -264,7 +257,7 @@ pivotGridControl as PivotGridControl, filename as string</td><td>
 void</td></tr>
 </table> 
 
-### Adding CSV Export for PivotGridControl in an application
+## Adding CSV Export for PivotGridControl in an application
 
 The GridCsvExport class provides support for exporting data from PivotGridControl to a CSV file format. You are required to add the following dll along with the default dll’s in the reference folder: 
 
@@ -273,7 +266,6 @@ The GridCsvExport class provides support for exporting data from PivotGridContro
 
 {% highlight C# %}  
 
-[C#] 
 
 SaveFileDialog saveFileDialog = new SaveFileDialog();
 

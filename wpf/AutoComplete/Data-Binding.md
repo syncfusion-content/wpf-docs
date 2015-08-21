@@ -17,7 +17,7 @@ You can use the DisplayMemberPath property to set the value for items that needs
 
 {% highlight xml %}
 
-[XAML]
+
 <syncfusion:AutoComplete x:Name="AutoComplete2" Source="Custom” DisplayMemberPath="FirstName" SelectedValuePath="LastName">     
 <syncfusion:AutoComplete.CustomSource>            
 <local:EmployeeList/>     
@@ -27,7 +27,7 @@ You can use the DisplayMemberPath property to set the value for items that needs
 
 {% highlight c# %}
 
-[C#]
+
 public class EmployeeList
 {    
 public int EmployeeID { get; set; }    
@@ -58,7 +58,7 @@ public class EmployeeListCollection : ObservableCollection<EmployeeList>
 
 ![](Data-Binding_images/Data-Binding_img1.png)
 
-
+_AutoComplete Bound with Data Source_
 
 
 
@@ -70,12 +70,12 @@ public class EmployeeListCollection : ObservableCollection<EmployeeList>
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 CustomSource</td><td>
@@ -99,20 +99,21 @@ Arguments </th><th>
 Type </th><th>
 Reference links </th></tr>
 <tr>
-<th>
-SelectedValuePathChanged</th><th>
- When the SelectedValuePath property value is changed, this event will be triggered.It cannot be cancelled.</th><th>
-DependencyObject,DependencyPropertyChangedEventArgs</th><th>
-DependencyPropertyChangedCallBack </th><th>
-</th></tr>
+<td>
+SelectedValuePathChanged</td><td>
+ When the SelectedValuePath property value is changed, this event will be triggered.It cannot be cancelled.</td><td>
+DependencyObject,DependencyPropertyChangedEventArgs</td><td>
+DependencyPropertyChangedCallBack </td><td>
+</td></tr>
 <tr>
-<th>
-CustomSourceChanged</th><th>
- When the CustomSource property value is changed, this event will be triggered.It cannot be cancelled.</th><th>
-DependencyObject,DependencyPropertyChangedEventArgs</th><th>
-DependencyPropertyChangedCallBack </th><th>
+<td>
+CustomSourceChanged</td><td>
+ When the CustomSource property value is changed, this event will be triggered.It cannot be cancelled.</td><td>
+DependencyObject,DependencyPropertyChangedEventArgs</td><td>
+DependencyPropertyChangedCallBack </td><th>
 </th></tr>
 </table>
+
 ## Sample Link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo

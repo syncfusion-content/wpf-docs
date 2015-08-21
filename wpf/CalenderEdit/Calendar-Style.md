@@ -15,23 +15,23 @@ _Property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 CalendarStyle</td><td>
 Sets the calendar style for the CalendarEdit control. The options provided are as follows.StandardVista</td></tr>
 </table>
+
 Use the following code example to set this property.
 
-<table>
-<tr>
-<td>
-[XAML]<!-- Adding calendar with calendar style as standard --><syncfusion:CalendarEdit Name="calendarEdit" CalendarStyle="Standard"/></td></tr>
-<tr>
-<td>
-[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting calendar style as standardcalendarEdit.CalendarStyle = CalendarStyle.Standard;//Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
-</table>
+{% highlight xml %}
+<!-- Adding calendar with calendar style as standard -->
+<syncfusion:CalendarEdit Name="calendarEdit" CalendarStyle="Standard"/>
+{% endhighlight %}
+{% highlight c# %}
+//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting calendar style as standardcalendarEdit.CalendarStyle = CalendarStyle.Standard;//Adding CalendarEdit as window contentthis.Content = calendarEdit;
+{% endhighlight  %}
 
 

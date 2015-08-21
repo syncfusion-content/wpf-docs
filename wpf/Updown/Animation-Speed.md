@@ -17,7 +17,6 @@ The AnimationSpeed can be set for the UpDown control as shown in the following c
 
 {%highlight xml%}
 
-[XAML]
 
 <syncfusion:UpDown Name="upDown" AnimationSpeed="30"/>
 
@@ -25,7 +24,6 @@ The AnimationSpeed can be set for the UpDown control as shown in the following c
 
 
 {%highlight c#%}
-[C#]
 
 UpDown upDown = new UpDown();
 
@@ -33,18 +31,18 @@ upDown. AnimationSpeed = 30;
 
 {%endhighlight%}
 
-Properties__
+Properties
 
-_AnimationSpeed Property_
+AnimationSpeed Property
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 AnimationSpeed</td><td>

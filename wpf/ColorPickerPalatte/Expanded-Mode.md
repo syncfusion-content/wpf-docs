@@ -26,13 +26,13 @@ The following code example illustrates how to add the Expanded Mode to an applic
 {% highlight xml %}
 
 
-[XAML]
+
 <sync:ColorPickerPalette IsExpanded="True"/>
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]     
+    
  ColorPickerPalette colorpicker = new ColorPickerPalette();     
  colorpicker.IsExpanded = true;
 {% endhighlight %}
@@ -50,12 +50,12 @@ The following code example illustrates how to add the Expanded Mode to an applic
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 IsExpanded</td><td>

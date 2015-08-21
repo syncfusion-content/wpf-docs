@@ -9,7 +9,7 @@ documentation: ug
 
 # Data Source
 
-# Binding to OLAP Data
+## Binding to OLAP Data
 
 OlapData can be bound to OlapGrid with the help of OlapDataManager. OlapDataManager requires OlapReport which contains Dimension and Measure elements. 
 
@@ -30,12 +30,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data  Type**' | markdownify }}</td><td>
-{{ '**Reference Link**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data  Type**' | markdownify }}</th><th>
+{{ '**Reference Link**' | markdownify }}</th></tr>
 <tr>
 <td>
 DataSource.ConnectionString</td><td>
@@ -107,13 +107,14 @@ Dependency Property</td><td>
 CalculatedMembers</td><td>
 -</td></tr>
 </table>
-# Adding report to OLAP Grid
+
+## Adding report to OLAP Grid
 
 Adding an OLAP report to OLAP Grid control in design time is described in the following code snippet:
 
 {% highlight xml %}
 
-    [XAML]
+    
 
 <syncfusion:OlapGrid x:Name="olapGrid" 
 

@@ -41,13 +41,13 @@ The following is a list of the operators which are supported by Essential Calcul
 
 <        Less Than 
 
->        Greater Than
+&#35;        Greater Than
 
 =         Equal To
 
 <=       Less Than Or Equal
 
->=       Greater Than Or Equal
+&#35;=       Greater Than Or Equal
 
 <>       Not Equal
 
@@ -77,7 +77,7 @@ Logical operations return specific values: True or False. If you need specific n
 
 If you are using a CalcQuickBase object to add calculation support to your business object, then you must use strings as indexers on the CalcQuickBase instance to get and set values. These strings are referred to as the value's Name. If you need to use a Name in a formula, then you should enclose the string within brackets, [ ]. In step three of the code below, four names A, B, C, and D are registered. Notice that the formula entered in step two uses the values from A and B by enclosing these names in brackets.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -112,7 +112,7 @@ calculator("D") = this.textBoxD.Text;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 

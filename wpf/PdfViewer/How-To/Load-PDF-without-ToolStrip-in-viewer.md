@@ -7,29 +7,29 @@ control: PDF Viewer
 documentation: ug
 ---
 
-### Load PDF without ToolStrip in viewer
+# Load PDF without ToolStrip in viewer
 
 In order to view PDF without the toolstrip, make use of PdfDocumentView control instead of PdfViewerControl. Other features and options are similar to PdfViewerControl.
 
-[C#]
+{% highlight c# %}
 
 PdfDocumentView pdfDocumentView1 = new PdfDocumentView();
 
 pdfDocumentView1.Load(@"Template.pdf");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 Dim pdfDocumentView1 As New PdfDocumentView()
 
 pdfDocumentView1.Load("Template.pdf")
 
-
+{% endhighlight %}
 
 The following screenshot illustrates the PDF document in PdfDocumentView.
 
-{{ '![](Load-PDF-without-ToolStrip-in-viewer_images/Load-PDF-without-ToolStrip-in-viewer_img1.png)' | markdownify }}
-{:.image }
+![](Load-PDF-without-ToolStrip-in-viewer_images/Load-PDF-without-ToolStrip-in-viewer_img1.png)
+
 
 

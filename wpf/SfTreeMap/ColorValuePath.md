@@ -13,7 +13,6 @@ The ColorValuePath ofSfTreeMap is a path to a field on the source object, which 
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -35,7 +34,7 @@ The ColorValuePath ofSfTreeMap is a path to a field on the source object, which 
 
 
 
-> _Note: The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection._
+> Note: The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection.
 
 
 

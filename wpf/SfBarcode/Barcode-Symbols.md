@@ -38,6 +38,7 @@ Code 39 Extended is an extended version of Code 39 that supports the ASCII chara
 
 ![](Barcode-Symbols_images/Barcode-Symbols_img1.png)
 
+_Code 39 bar code encoding "SYNCFUSION"_
 
 
 ### Code 11
@@ -47,7 +48,7 @@ Code 11 is used primarily for labeling telecommunications equipment. The charact
 
 ![](Barcode-Symbols_images/Barcode-Symbols_img2.png)
 
-
+_Code 11 bar code encoding "01234567"_
 
 ### Codabar
 
@@ -60,7 +61,7 @@ Codabar uses the characters, A, B, C and D, only as start and stop characters. I
 
 ![](Barcode-Symbols_images/Barcode-Symbols_img3.png)
 
-
+_Codabar bar code encoding "01234567"_
 
 ### Code 32
 
@@ -74,7 +75,7 @@ Code32 is mainly used for coding pharmaceuticals, cosmetics and dietetics. It ha
 
 ![](Barcode-Symbols_images/Barcode-Symbols_img4.png)
 
-
+_Code 32 Barcode_
 
 ### Code 93
 
@@ -87,7 +88,7 @@ The asterisk (*) is not a true encode character, but is the start and stop symbo
 
 ![](Barcode-Symbols_images/Barcode-Symbols_img5.png)
 
-
+_Code 93 bar code encoding "SYNCFUSION"_
 
 
 
@@ -113,13 +114,13 @@ The last seven characters of Code Sets A and B (character values 96 - 102) and t
 
 ![](Barcode-Symbols_images/Barcode-Symbols_img6.png)
 
-
+_Code 128 A & B bar codes encoding "SYNCFUSION" and 128 C encoding "01234567"_
 
 
 
 The following code example shows how to create a code39 barcode from XAML:
 {% highlight html %}
-[XAML]
+
 
 <sync:SfBarcode x:Name="barcode" Text="http://www.syncfusion.com" Symbology="Code39">
 
@@ -141,7 +142,7 @@ QR bar code is a two dimensional barcode which is of popular use in automotive i
 ![](Barcode-Symbols_images/Barcode-Symbols_img7.png)
 
 
-
+_QR bar code encoding the URL "http://www.syncfusion.com"_
 
 
 ### Data Matrix
@@ -154,11 +155,11 @@ DataMatrix bar codes are widely used in printed media such as labels and letters
 
 ![](Barcode-Symbols_images/Barcode-Symbols_img8.png)
 
-
+_Data Matrix bar code encoding "SYNCFUSION"_
 
 The symbol can be chosen using the dependency property Symbology. Here is the equivalent code sample:
 {% highlight html %}
-[XAML]
+
 
 <sync:SfBarcode x:Name="barcode" Text="http://www.syncfusion.com" Symbology="QRBarcode">
 

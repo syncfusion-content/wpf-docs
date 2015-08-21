@@ -278,6 +278,7 @@ significance is the multiple to which you want to round.
 
 * Both values must be numeric. 
 * Regardless of the sign of a number, a value is rounded up when adjusted away from zero. If the number is an exact multiple of significance, no rounding occurs.
+
 ## Char
 
 
@@ -290,6 +291,7 @@ Char(number)
 where,
 
 * number is the numeric value to retrieve the character.
+
 ## CHIDIST
 
 
@@ -1270,18 +1272,18 @@ Type </th><th>
 Return Type </th><th>
 Reference links </th></tr>
 <tr>
-<th>
-Growth() </th><th>
-Calculates the Growth for an array of cells.</th><th>
-Known y’s, Known x’s, new_x's</th><th>
-Method </th><th>
-String </th><th>
-N/A </th></tr>
+<td>
+Growth() </td><td>
+Calculates the Growth for an array of cells.</td><td>
+Known y’s, Known x’s, new_x's</td><td>
+Method </td><td>
+String </td><td>
+N/A </td></tr>
 </table>
 
 The following is the formula to calculate Growth for an array of cells in a column:
 
-[Syntax]
+### Syntax
 
 =GROWTH(known_y's, [known_x's], [new_x's], 
 
@@ -1291,7 +1293,7 @@ Known_x's: An optional set of x-values that you may already know in the relation
 
 New_x's: New x-values for which you want GROWTH to return corresponding y-values.
 
-[Code]
+### Code
 
 =Growth(B2:B7,A2:A7,C6:C7) 
 
@@ -1793,19 +1795,19 @@ Type </th><th>
 Return Type </th><th>
 Reference links </th></tr>
 <tr>
-<th>
-Logest() </th><th>
-Calculates Logest for an array of cells.</th><th>
-known_y's, known_x's, const, stats</th><th>
-Method</th><th>
-String </th><th>
-N/A </th></tr>
+<td>
+Logest() </td><td>
+Calculates Logest for an array of cells.</td><td>
+known_y's, known_x's, const, stats</td><td>
+Method</td><td>
+String </td><td>
+N/A </td></tr>
 </table>
 
 
 The following is the formula to calculate Logest for an array of cells in a column:
 
-[Syntax]
+### Syntax
 
 =LOGEST(known_y's, [known_x's], [const], [stats])
 
@@ -1817,7 +1819,7 @@ Const  :  A logical value specifying whether to force the constant b to equal 1.
 
 Stats  : A logical value specifying whether to return additional regression statistics.
 
-[Code]
+### Code
 
 = Logest(B2:B7,A2:A7,TRUE,FALSE)
 
@@ -2322,6 +2324,7 @@ number is the value to be rounded off.
 ### Remarks
 
 * Regardless of the sign of a number, a value is rounded up when adjusted away from zero. If the number is an odd integer, no rounding occurs.
+
 ## Offset
 
 
@@ -2338,6 +2341,7 @@ where,
 * columns is the number of columns you want to apply as the offset to the range. This can be either a positive or a negative number.
 * height is the number of rows that you want the returned range to be.
 * width is the number of columns that you want the returned range to be.
+
 ## OR
 
 
@@ -2354,6 +2358,7 @@ logical1, logical2, ... are conditions you want to test that can be either True
 ### Remarks
 
 * The arguments must evaluate to logical values such as True or False or in arrays or references that contain logical values.
+
 ## PEARSON
 
 
@@ -2472,6 +2477,7 @@ type is the number 0 (zero) or 1 and indicates when payments are due. If type eq
 
 * The payment returned by PMT includes principal and interest but no taxes, reserve payments or fees sometimes associated with loans. 
 * Make sure that you are consistent about the units you use for specifying rate and nper. If you make monthly payments on a four-year loan at an annual interest rate of 12 percent, use 12%/12 for rate and 4*12 for nper. If you make annual payments on the same loan, use 12 percent for rate and 4 for nper. 
+
 ## POISSON
 
 
@@ -2523,6 +2529,7 @@ where,
 
 * number is the base number. It can be any real number.
 * power is the exponent to which, the base number is raised.
+
 ## POWER
 
 
@@ -2709,6 +2716,7 @@ order is a number specifying how to rank numbers.
 ### Remark
 
 * RANK gives duplicate numbers of the same rank. However, the presence of duplicate numbers affect the ranks of subsequent numbers.
+
 ## RATE
 
 
@@ -2754,6 +2762,7 @@ num_chars specifies the number of characters you want RIGHT to extract.
 * Num_chars must be greater than or equal to zero. 
 * When num_chars is greater than the length of text, RIGHT returns all the text. 
 * When num_chars is omitted, it is assumed to be 1.
+
 ## ROUND
 
 
@@ -2774,6 +2783,7 @@ num_digits specifies the number of digits you want to round off.
 * When num_digits > 0, then number is rounded off to the specified number of decimal places. 
 * When num_digits = 0, then number is rounded off to the nearest integer. 
 * When num_digits  < 0, then number is rounded off to the left of the decimal point.
+
 ## ROUNDDOWN
 
 
@@ -2792,6 +2802,7 @@ Num_digits is the number of digits to which you want to round a number.
 ### Remark
 
 * ROUNDDOWN behaves like ROUND, except that it always rounds a number down.
+
 ## ROUNDUP
 
 
@@ -2810,6 +2821,7 @@ num_digits is the number of digits to which you want to round a number.
 ### Remarks
 
 * ROUNDUP behaves like ROUND, except that it always rounds a number up.
+
 ## RSQ
 
 
@@ -2854,6 +2866,7 @@ serial_number is the time that contains the seconds you want to find.
 ### Remarks
 
 * Time values are a portion of a date value and are represented by a decimal number (for example, 12:00 PM is represented as 0.5 because it is half of a day).
+
 ## SIGN
 
 
@@ -2911,6 +2924,7 @@ SinH(value)
 where,
 
 * value is to get the sine of the specific value.
+
 ## SKEW
 
 
@@ -3005,6 +3019,7 @@ number is the number for which you want the square root.
 ### Remarks
 
 * Number must be >= 0.
+
 ## STANDARDIZE
 
 
@@ -3274,6 +3289,7 @@ where,
 * range is the range of cells you want to apply the criteria against.
 * criteria is used to determine the cells that are added.
 * sum_range are the cells to sum.
+
 ## SUMPRODUCT
 
 
@@ -3291,6 +3307,7 @@ array1, array2, array3, ... are 2 to 30 arrays whose components you want to mul
 
 * The array arguments must have the same dimensions. 
 * SUMPRODUCT treats array entries that are not numeric as if they were zeros.
+
 ## SUMSQ
 
 
@@ -3485,6 +3502,7 @@ TODAY( )
 ### Remarks
 
 * Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900. 
+
 ## Trim
 
 
@@ -3497,6 +3515,7 @@ Trim( text )
 where,
 
 * text is the text value for which you want to remove the leading and the trailing spaces.
+
 ## TRIMMEAN
 
 
@@ -3516,6 +3535,7 @@ percent is the fractional number of data points to exclude from the calculation
 
 * Percent must be >= 0 and <= 1.
 * TRIMMEAN rounds off the number of excluded data points down to the nearest multiple of 2. If percent = 0.1, 10 percent of 30 data points equals 3 points. For symmetry, TRIMMEAN excludes a single value from the top and bottom of the data set.
+
 ## True
 
 
@@ -3528,6 +3548,7 @@ True(stringvalue)
 where,
 
 * stringvalue is toprovide an empty string.
+
 ## TRUNC
 
 
@@ -3546,6 +3567,7 @@ num_digits is a number specifying the precision of the truncation. The default 
 ### Remarks
 
 * TRUNC and INT are similar in that both return integers. TRUNC removes the fractional part of the number. INT rounds numbers down to the nearest integer based on the value of the fractional part of the number. INT and TRUNC are different only when using negative numbers: TRUNC(-4.3) returns -4 but, INT(-4.3) returns -5 because -5 is the lower number.
+
 ## Upper
 
 
@@ -3558,6 +3580,7 @@ Upper( text )
 where,
 
 * text is the string you want to convert to uppercase.
+
 ## Value
 
 
@@ -3570,6 +3593,7 @@ Value(range)
 where,
 
 * range is the string that contains the date or a number.
+
 ## Var
 
 
@@ -3606,6 +3630,7 @@ VarP(listofvalues)
 where,
 
 * listofvalues provides the range or values that contain the population.
+
 ## VARPA
 
 
@@ -3691,6 +3716,7 @@ range_lookup is a logical value that specifies whether you want VLOOKUP to find
 ### Remarks
 
 * When VLOOKUP can't find a lookup_value and the range_lookup is True, it uses the largest value that is less than or equal to the lookup_value.
+
 ## WEEKDAY
 
 
@@ -3754,6 +3780,7 @@ where,
 * cashflow is the range of cash flow.
 * datelist is the list of corresponding date serial number values.
 * value is an initial guess at the return value.
+
 ## YEAR
 
 
@@ -3770,6 +3797,7 @@ serial_number is the date of the year you want to find. Dates should be entered
 ### Remarks
 
 * Dates are stored as sequential serial numbers so that they can be used in calculations. By default, January 1, 1900 is serial number 1 and January 1, 2008 is serial number 39448 because it is 39,448 days after January 1, 1900.
+
 ## ZTEST
 
 

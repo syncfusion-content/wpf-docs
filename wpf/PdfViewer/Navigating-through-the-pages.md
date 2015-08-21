@@ -7,21 +7,22 @@ control: PDF Viewer
 documentation: ug
 ---
 
-### Navigating through the pages
+# Navigating through the pages
 
 PDF Viewer allows you to navigate through the pages of the PDF document. The following code example illustrates the navigation to page 2 of the PDF document.
 
-[C#]
+{% highlight C# %}
 
 //Navigate to page 2
 
 pdfviewer1.GotoPage(2);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Navigate to page 2
 
 pdfviewer1.GotoPage(2)
 
+{% endhighlight %}

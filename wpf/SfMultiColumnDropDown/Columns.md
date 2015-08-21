@@ -7,7 +7,7 @@ control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-## Columns
+# Columns
 
 SfMultiColumnDropDownControl enables you to define columns like SfDataGrid. It provides the following properties to achieve it:
 
@@ -23,7 +23,7 @@ The following code example illustrates the usage of Columns in the SfMultiColumn
 
 {% highlight C# %}
 
-[C#]
+
 
 
 

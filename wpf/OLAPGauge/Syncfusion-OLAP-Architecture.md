@@ -20,16 +20,16 @@ Let us see how the Syncfusion OLAP components allow you to build a full life cyc
 ![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img1.jpeg)
 
 
-# Class Diagram
+## Class Diagram
 
 
 
 ![](Syncfusion-OLAP-Architecture_images/Syncfusion-OLAP-Architecture_img2.png)
 
 
-# Properties and Methods
+### Properties and Methods
 
-# Properties
+Properties
 
 _Property Table_
 
@@ -112,18 +112,19 @@ OlapDataManager</td><td>
 OlapDataManager</td><td>
 -</td></tr>
 </table>
-# Methods
+
+ Methods
 
 _Methods Table_
 
 <table>
 <tr>
-<td>
-{{ '**Methods**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td><td>
-{{ '**Return Type**' | markdownify }}</td><td>
-{{ '**Reference Links**' | markdownify }}</td></tr>
+<th>
+{{ '**Methods**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th><th>
+{{ '**Reference Links**' | markdownify }}</th></tr>
 <tr>
 <td>
 GetConnectionString()</td><td>

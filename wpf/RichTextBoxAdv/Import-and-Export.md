@@ -19,13 +19,13 @@ The HTML import feature allows the user to import an .html file into the RichTex
 
 {% highlight C# %}
 
-[C#]     
+     
  DocumentAdv doucment = HTMLImporting.ConvertToDocumentAdv(stream);  
  DocumentAdv document = HTMLImporting.ConvertToDocumentAdv(htmlstring);
 {% endhighlight %}
 
 {% highlight C# %}
-[C#]       
+      
 string html = HTMLExporting.ConvertToHtml(RichTextBox.Document, stream);
 {% endhighlight %}
 
@@ -34,16 +34,16 @@ string html = HTMLExporting.ConvertToHtml(RichTextBox.Document, stream);
 
 
 
-_Methods Table_
+Methods Table
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td><td>
-Parameters</td><td>
-Type</td><td>
-Return Type</td></tr>
+<th>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Type</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 ConvertToDocumentAdv()</td><td>
@@ -104,15 +104,15 @@ The following assembly references are required to use this feature and its names
 
 You can convert the Word document stream to RichTextBoxAdv document by invoking the ConvertToDocumentAdv method from the extension class DocxImporting. 
 
-_ConvertToDocumentAdv Method_
+ConvertToDocumentAdv Method
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Return Type</td><td>
-Parameters</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Return Type</th><th>
+Parameters</th><th>
+Description</th></tr>
 <tr>
 <td>
 ConvertToDocumentAdv</td><td>
@@ -124,7 +124,7 @@ Converts the Word document stream to DocumentAdv instance.</td></tr>
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -143,7 +143,7 @@ richTextBoxAdv.Document = DocxImporting.ConvertToDocumentAdv(documentStream, ".d
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB]
+
 
 'Initializes the new RichTextBoxAdv control.
 
@@ -163,15 +163,15 @@ richTextBoxAdv.Document = DocxImporting.ConvertToDocumentAdv(documentStream, ".d
 
 You can convert the RichTextBoxAdv document to Word document stream by invoking the ConvertToDocument method from the extension class DocxExporting. 
 
-_ConvertToDocument Method_
+ConvertToDocument Method
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Return Type</td><td>
-Parameters</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Return Type</th><th>
+Parameters</th><th>
+Description</th></tr>
 <tr>
 <td>
 ConvertToDocument</td><td>
@@ -182,7 +182,7 @@ Converts the DocumentAdv instance to Word document stream.</td></tr>
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -197,7 +197,7 @@ DocxExporting.ConvertToDocument(richTextBoxAdv.Document, documentStream, ".docx"
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -221,14 +221,14 @@ The .doc import/export and .docx import/export features have the following limit
 The XAML import feature allows users to import a .xaml file into the RichTextBoxAdv. It renders the XAML elements as XamlReader and displays the text in the format of RichTextBoxAdv’s content model. The XAML export feature actually exposes the RichTextBoxAdv’s document as a .xaml file. The following methods clearly show this use case.
 {% highlight C# %}
 
-[C#]
+
 
 RichTextBox.Document=XAMLImporting.ConvertToDocumentAdv(xamlStream)
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]
+
 
 string xaml = XAMLExporting.ConvertToXAML(RichTextBox.Document, xamlstream);
 {% endhighlight %}
@@ -240,16 +240,16 @@ Methods
 
 
 
-_Methods table_
+Methods table
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td><td>
-Parameters</td><td>
-Type</td><td>
-Return Type</td></tr>
+<th>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Type</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 ConvertToDocumentAdv()</td><td>
@@ -274,14 +274,14 @@ The text import feature allows the user to import a .txt file into the RichTextB
 
 {% highlight C# %}
 
-[C#]
+
 
 RichTextBox.Document = TextImporting.ConvertToDocumentAdv(textstream);
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]
+
 
 string txtstring= TextExporting.ConvertToText(RichTextBox.Document, textStream);
 {% endhighlight %}
@@ -293,16 +293,16 @@ Methods
 
 
 
-_Methods table_
+Methods table
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td><td>
-Parameters</td><td>
-Type</td><td>
-Return Type</td></tr>
+<th>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Type</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 ConvertToDocumentAdv()</td><td>

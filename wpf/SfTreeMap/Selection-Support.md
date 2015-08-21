@@ -13,7 +13,6 @@ While selecting a leaf node, you can highlight it by setting HighlightOnSelectio
 
 
 {% highlight xml %}
-[XAML]
 
 <syncfusion:SfTreeMap Name="TreeMap" ItemsSource="{Binding PopulationDetails}" 
 
@@ -45,7 +44,6 @@ GroupSelection support is also provided under selection support where the whole 
 
 
 {% highlight xml %}
-[XAML]
 
 
 

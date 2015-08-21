@@ -86,11 +86,11 @@ Description </th><th>
 Arguments </th><th>
 Type </th></tr>
 <tr>
-<th>
-ScheduleCellCreated </th><th>
-Event will be triggered whenever a schedule cell is created. The handler of the event will have the newly created cell (GanttScheduleCell) in the argument.By handling this event, you can customize the appearance of the cell. </th><th>
-ScheduleCellCreated (object sender, ScheduleCellCreatedEventArgs args)</th><th>
-Routed Event </th></tr>
+<td>
+ScheduleCellCreated </td><td>
+Event will be triggered whenever a schedule cell is created. tde handler of tde event will have tde newly created cell (GanttScheduleCell) in tde argument.By handling tdis event, you can customize tde appearance of tde cell. </td><td>
+ScheduleCellCreated (object sender, ScheduleCellCreatedEventArgs args)</td><td>
+Routed Event </td></tr>
 </table>
 
 
@@ -144,7 +144,7 @@ To Add CustomNumeric Schedule to an application:
 
 The following code illustrates Adding Custom Schedule to an Application:
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -179,7 +179,7 @@ The following code illustrates Adding Custom Schedule to an Application:
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -260,7 +260,7 @@ To Add CustomDateTime Schedule to an application:
 
 The following code illustrates this:
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -309,7 +309,7 @@ The following code illustrates this:
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 
 

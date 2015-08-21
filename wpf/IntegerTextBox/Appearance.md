@@ -37,23 +37,23 @@ The steps to edit the IntegerTextBox Template by using Expression Blend are as f
 
 
 
-![](Appearance_images/Appearance_img1.png)
+   ![](Appearance_images/Appearance_img1.png)
 
 
 
 3. After creating the IntegerTextBox, select the IntegerTextBox and navigate to Object > Edit Style > Edit a Copy, to edit the Template of the IntegerTextBox.
 
-![](Appearance_images/Appearance_img2.png)
+   ![](Appearance_images/Appearance_img2.png)
 
 
 
-Another way to edit the Template is as follows:
+   Another way to edit the Template is as follows:
 
 4. In Object and Timeline, right-click the IntegerTextBox control and select the Edit Template option, as displayed below. 
 
-![](Appearance_images/Appearance_img3.png)
+   ![](Appearance_images/Appearance_img3.png)
 
-
+   {:.prettyprint}
 
 This will open a dialog (below) where you can give your style a name and define exactly where you’d like to store it.
 

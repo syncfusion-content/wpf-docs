@@ -11,23 +11,26 @@ documentation: ug
 
 This topic illustrates how to add and remove items from Document Container control.
 
-###Adding items
+## Adding items
 
 Document Container allows the user to add new elements to its container(such as button, text block), using Items.Add method. Use the following code snippet, for calling this method.
 
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %}<syncfusion:DocumentContainer Name="DocContainer"><Button ></Button></syncfusion:DocumentContainer>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight C# %}Button a = new Button();DocContainer.Items.Add(a);{% endhighlight %}</td></tr>
-</table>
+
+{% highlight xml %}
+<syncfusion:DocumentContainer Name="DocContainer">
+<Button ></Button></syncfusion:DocumentContainer>
+{% endhighlight %}
+
+{% highlight C# %}
+Button a = new Button();
+DocContainer.Items.Add(a);
+{% endhighlight %}
 
 
-###Remove item
+
+## Remove item
 
 You can remove all the items in the Document Container using Items.Clear method. To remove all the items in the Document Container, use the following code snippet.
 

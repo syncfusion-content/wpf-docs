@@ -19,7 +19,7 @@ The following code illustrates how to add inline items dynamically to the underl
 
 
 {% highlight c# %}
-[C#]
+
 
 //To add dynamic inline items
 
@@ -62,7 +62,7 @@ The following code illustrates this.
 
 
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -98,7 +98,7 @@ The following code is the sample data source of a resource view Gantt in a custo
 
 
 {% highlight c# %}
-[C#]
+
 
  ObservableCollection<Item> teams = new ObservableCollection<Item>();
 
@@ -163,7 +163,7 @@ The following code sample illustrates this:
 
 
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -180,7 +180,7 @@ The following is the sample data source for the resource view Gantt:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 

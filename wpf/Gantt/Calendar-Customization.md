@@ -83,7 +83,7 @@ The following code illustrates adding Calendar Customization to an Application:
 
 
 {% highlight html  %}
-[XAML]
+
 
 
 
@@ -118,7 +118,7 @@ The following code illustrates adding Calendar Customization to an Application:
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 
 

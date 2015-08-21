@@ -11,14 +11,14 @@ documentation: ug
 
 Labels for map shapes can be displayed by using the LabelPath of ShapeFileLayer. The value of LabelPath must be a field name specified in the .dbf file corresponding to the shapefile. 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 LabelPath</td><td>
@@ -28,7 +28,7 @@ Gets or sets the field name in the database (.dbf) file.</td></tr>
 
 {% highlight xml %}
 
-[XAML]
+
 
     <syncfusion:SfMap>
 
@@ -54,7 +54,7 @@ The labels can also be customized by modifying the ItemsTemplate of ShapeFileLay
 
 {% highlight xml %}
 
-[XAML]
+
 
      <syncfusion:SfMap>
 
@@ -96,5 +96,5 @@ The labels can also be customized by modifying the ItemsTemplate of ShapeFileLay
 
 
 
-_Map with Labels_
+Map with Labels
 

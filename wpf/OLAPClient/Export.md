@@ -94,10 +94,10 @@ _Export menus in OlapGrid Toolbar_
 
 <table>
 <tr>
-<td>
-Icon</td><td>
-Name</td><td>
-Description</td></tr>
+<th>
+Icon</th><th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td> 
 {{ '![](Export_images/Export_img7.png)' | markdownify }}
@@ -138,12 +138,12 @@ _Methods_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Description</td><td>
-Parameters</td><td>
-    Type</td><td>
-Return Type</td></tr>
+<th>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+    Type</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 Export(string filename)</td><td>
@@ -170,7 +170,7 @@ along with the default dll’s in the reference folder:
 
 
 
-{% highlight C# %}   [C#] 
+{% highlight C# %}    
 
 SaveFileDialog saveFileDialog = new SaveFileDialog();
 
@@ -204,7 +204,7 @@ if (saveFileDialog.ShowDialog() == true)
 
  
  
-{% highlight vbnet %}  [VB]
+{% highlight vbnet %}  
 
 Dim saveFileDialog As New SaveFileDialog()
 

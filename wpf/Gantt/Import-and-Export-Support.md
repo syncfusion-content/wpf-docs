@@ -46,19 +46,19 @@ Parameters </th><th>
 Type </th><th>
 Return Type </th></tr>
 <tr>
-<th>
-ExportToXML()</th><th>
-Responsible for exporting the GanttControl to MSProject XML File.</th><th>
--</th><th>
--</th><th>
-bool</th></tr>
+<td>
+ExportToXML()</td><td>
+Responsible for exporting tde GanttControl to MSProject XML File.</td><td>
+-</td><td>
+-</td><td>
+bool</td></tr>
 <tr>
-<th>
-ImportFromXML()</th><th>
-Reponsible for importing the data from MS Project XML file to GanttControl.</th><th>
--</th><th>
--</th><th>
-bool</th></tr>
+<td>
+ImportFromXML()</td><td>
+Reponsible for importing tde data from MS Project XML file to GanttControl.</td><td>
+-</td><td>
+-</td><td>
+bool</td></tr>
 </table>
 
 
@@ -68,7 +68,7 @@ The following code illustrates how to Import and Export Task Details from or to 
 
 
 {% highlight html %}
-[XAML]
+
 
 <Sync:GanttControl x:Name="Gantt" />
 
@@ -88,7 +88,7 @@ The following code illustrates how to Import and Export Task Details from or to 
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
        private void SaveButton_Click(object sender, System.Windows.RoutedEventArgs e)
         {

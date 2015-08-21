@@ -30,24 +30,24 @@ To create the CardView control through Visual Studio, drag the CardView from the
 The CardView control can also be created and configured using Expression Blend. The following are the steps to do so.
 
 1. Create a WPF project in Expression Blend and reference the following assemblies.
-1. Syncfusion.Shared.Wpf
-2. Syncfusion.Tools.Wpf
-3. Syncfusion.Core
+   1. Syncfusion.Shared.Wpf
+   2. Syncfusion.Tools.Wpf
+   3. Syncfusion.Core
 2. Search for CardView in the Toolbox.
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 3. Drag the CardView to the designer. This generates the following CardView control.
 
-![](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 4. To add the items to the CardView by using the CollectionEditor, select the CardView and go to Properties area, and then click Items (Collection) under Common Properties.
 
-![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img5.png)
+   ![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -56,7 +56,7 @@ The CardView control can also be created and configured using Expression Blend. 
 
 
 
-![](Getting-Started_images/Getting-Started_img6.png)
+   ![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -65,8 +65,9 @@ The CardView control can also be created and configured using Expression Blend. 
 
 
 
-> Note: You can also customize the appearance of CardView control and its items using the template editing feature available in the Expression Blend.
-
+   > Note: You can also customize the appearance of CardView control and its items using the template editing feature available in the Expression Blend.
+   {:.prettyprint}
+   
 ### Through XAML
 
 To create the CardView control through XAML, add the following namespace to the directives list.

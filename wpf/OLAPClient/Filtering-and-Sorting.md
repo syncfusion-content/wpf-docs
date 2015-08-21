@@ -24,15 +24,15 @@ Row Filter will check each and every column of a row against the filter conditio
 
 ### Options in Filter Dialog
 
-Empty Results:
+#### Empty Results:
 
 Filter Empty column/Rows – By this option the user can filter the appearance of empty rows/column in the result set.
 
-Filter 1 and Filter 2:
+#### Filter 1 and Filter 2:
 
 In Client filtering option, the user can apply two filter expressions to a report at a same time.
 
-Fields that form filter expression:
+#### Fields that form filter expression:
 
 * Condition – The user can choose any one condition that he wants to appear in the filter     expression.
 * Filter On – The user can choose any one measure element form the list, on which the user wishes to apply the filter.
@@ -43,23 +43,23 @@ Fields that form filter expression:
 
 1. We can apply filter using the filter dialog window. By clicking the column filter or row filter button in the OLAP client toolbar the appropriate filter dialog window will be displayed.
 
-![](Filtering-and-Sorting_images/Filtering-and-Sorting_img1.png)
+   ![](Filtering-and-Sorting_images/Filtering-and-Sorting_img1.png)
 
 
 
-![](Filtering-and-Sorting_images/Filtering-and-Sorting_img2.png)
+   ![](Filtering-and-Sorting_images/Filtering-and-Sorting_img2.png)
 
 
 
 2. Then by checking the Filter 1 check box, we can apply the first filter condition to the current report.
 
-![](Filtering-and-Sorting_images/Filtering-and-Sorting_img3.png)
+   ![](Filtering-and-Sorting_images/Filtering-and-Sorting_img3.png)
 
 
 
 3. From the condition combo box we can choose the condition we want to include in the filter expression.
 
-![](Filtering-and-Sorting_images/Filtering-and-Sorting_img4.png)
+   ![](Filtering-and-Sorting_images/Filtering-and-Sorting_img4.png)
 
 
 
@@ -68,13 +68,14 @@ Fields that form filter expression:
 
 
 
-![](Filtering-and-Sorting_images/Filtering-and-Sorting_img5.png)
+   ![](Filtering-and-Sorting_images/Filtering-and-Sorting_img5.png)
 
 
 
 4. Finally by entering the Conditional value and clicking the update button the filter will get reflected in the result set.
 5. In the same way we can apply the Row Filter.
-
+   {:.prettyprint}
+   
 ### ShowColumnFilterDialog
 
 
@@ -82,7 +83,7 @@ By invoking this method the column filter Dialog will be displayed. Using the co
 
 {% highlight C# %}   
 
-{% highlight C# %}  {% endhighlight %} [C#]
+{% highlight C# %}  {% endhighlight %} 
 
 this.olapClient1.ShowColumnFilterDialog();
 
@@ -92,7 +93,7 @@ this.olapClient1.ShowColumnFilterDialog();
 
 {% highlight vbnet %} 
 
- [VB]
+ 
 
 Me.olapClient1.ShowColumnFilterDialog()
 
@@ -105,7 +106,7 @@ By invoking this method the row filter Dialog will be displayed. Using the row f
 
 {% highlight C# %}  
 
- {% highlight C# %}  {% endhighlight %} [C#]
+ {% highlight C# %}  {% endhighlight %} 
 
 this.olapClient1.ShowRowFilterDialog();
 
@@ -113,7 +114,7 @@ this.olapClient1.ShowRowFilterDialog();
 
 {% highlight vbnet %}  
 
-[VB]
+
 
 Me.olapClient1.ShowRowFilterDialog(); 
 
@@ -123,11 +124,11 @@ Me.olapClient1.ShowRowFilterDialog();
 
 The Sorting tab in the Filter and Sorting dialog box of OLAP Client provides options to sort the results by columns (series) or rows (categories). This dialog is invoked through the Sorting toolbar item.
 
-Column Sorting
+### Column Sorting
 
 Column sorting will sort the columns in the result set, based on the column total of each column.
 
-Row Sorting
+### Row Sorting
 
 Row sorting will sort the rows in the result set, based on the row total of each row.
 
@@ -172,7 +173,7 @@ By invoking this method the column sorting Dialog will be displayed. Using the c
 
 {% highlight C# %} 
 
-{% highlight C# %}  {% endhighlight %} [C#]
+{% highlight C# %}  {% endhighlight %} 
 
 this.olapClient1.ShowColumnSortingDialog();
 
@@ -180,7 +181,7 @@ this.olapClient1.ShowColumnSortingDialog();
 
 {% highlight vbnet %}  
 
-[VB]
+
 
 Me.olapClient1.ShowColumnSortingDialog();
 
@@ -192,7 +193,7 @@ By invoking this method the row sorting Dialog will be displayed. Using the row 
 
 {% highlight C# %}   
 
-{% highlight C# %}  {% endhighlight %} [C#]
+{% highlight C# %}  {% endhighlight %} 
 
 this.olapClient1.ShowRowSortingDialog(); 
 
@@ -201,19 +202,19 @@ this.olapClient1.ShowRowSortingDialog();
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Me.olapClient1.ShowRowSortingDialog(); 
 
 {% endhighlight %} 
 
-### ShowFilterSortButtons
+## ShowFilterSortButtons
 
 Users can toggle the visibility of the Filter and Sorting buttons in the OlapClientToolBar by using this property. This property will accept a Boolean value (true/false) and based on this input the visibility will be set. 
 
 {% highlight C# %}  
 
-{% highlight C# %}  {% endhighlight %} [C#]
+{% highlight C# %}  {% endhighlight %} 
 
 {% endhighlight %} 
 
@@ -225,7 +226,7 @@ this.olapClient1.ShowFilterSortButtons = false;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Me.olapClient1.ShowFilterSortButtons = False
 

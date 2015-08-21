@@ -19,7 +19,7 @@ The Corner Radius describes the degree to which corners are rounded. This proper
 
  {% highlight xml %}
 
-    [XAML]
+  
 
     <syncfusion:PercentTextBox x:Name="percentTextBox" PercentValue="123" Height="25" Width="150" CornerRadius="4"/>
 
@@ -38,11 +38,11 @@ The Corner Radius describes the degree to which corners are rounded. This proper
 
 The Foreground of the PercentTextBox can be customized based on the Value property. When Negative a value is assigned to the PercentValue property, then automatically the NegativeForeground value gets assigned to Foreground property.
 
-> _Note: The NegativeForeground in the PercentTextBox can be enabled by setting the ApplyNegativeForeground property to true._
+> Note: The NegativeForeground in the PercentTextBox can be enabled by setting the ApplyNegativeForeground property to true.
 
  {% highlight xml %}
 
-    [XAML]
+   
 
     <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 
 
@@ -65,11 +65,11 @@ The Foreground of the PercentTextBox can be customized based on the Value proper
 
 The Foreground of the PercentTextBox can be customized based on the PercentValue property. When zero is assigned as a value to the PercentValue property, then automatically the ZeroColor is set to the Foreground property.
 
-> _Note: The ZeroColor in the PercentTextBox can be enabled by setting the ApplyZeroColor property to true._
+> Note: The ZeroColor in the PercentTextBox can be enabled by setting the ApplyZeroColor property to true.
 
  {% highlight xml %}
 
-    [XAML]
+    
 
     <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 
 

@@ -19,7 +19,7 @@ The value of the featured measure of the Bullet Graph is set by the FeaturedMeas
 
 ### Code Example:
 {% highlight html %}
-[XAML]
+
 
     <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward" 
 
@@ -43,7 +43,7 @@ The value of the featured measure of the Bullet Graph is set by the FeaturedMeas
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -97,7 +97,7 @@ The value of the comparative measure is set by using the ComparativeMeasure prop
 
 ### Code Example:
 {% highlight html %}
-[XAML]
+
 
         <syncfusion:SfBulletGraph Orientation="Horizontal"  FlowDirection="Forward"
 
@@ -117,7 +117,7 @@ The value of the comparative measure is set by using the ComparativeMeasure prop
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
+
 
 
 

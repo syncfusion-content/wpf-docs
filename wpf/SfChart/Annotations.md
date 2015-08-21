@@ -13,7 +13,7 @@ SfChart supports Annotations. It allows you to mark the specific area of interes
 
 The following APIs are used to define and customize Annotation.
 
-Annotations
+## Annotations
 
 <table>
 <tr>
@@ -69,7 +69,7 @@ Events
 
 The following events are supported by Annotation.
 
-Annotation Events
+## Annotation Events
 
 <table>
 <tr>
@@ -134,7 +134,7 @@ Occurs when the mouse pointer leaves the bounds of the annotation.</td></tr>
 
 TextAnnotations are used to add simple text in specific points over the chart area. You can customize the TextAnnotation using properties like FontFamily, FontSize.
 
-Rotate the TextAnnotation
+### Rotate the TextAnnotation
 
 The Angle property is used to get or set the angle for rotating the Annotation. 
 
@@ -154,9 +154,9 @@ The following code example and screenshot demonstrate the usage of TextAnnotatio
 
 
 
-##API
+## API
 
-Text Annotation API
+### Text Annotation API
 
 <table>
 <tr>
@@ -169,7 +169,7 @@ EnableEditing</td><td>
 Gets or sets a value to enable the editing support for annotation.</td></tr>
 </table>
 
-###Editing the text in Annotation 
+### Editing the text in Annotation 
 
 SfChart provides you with an editing option for the text in any annotations. The following code example and screenshot demonstrate how to edit the text in Annotations.
 
@@ -183,13 +183,13 @@ SfChart provides you with an editing option for the text in any annotations. The
 
 {% endhighlight %}
 
-###Before Editing
+### Before Editing
 
 ![C:/Users/sureshs/Desktop/sshot-2.png](Annotations_images/Annotations_img2.png)
 
 
 
-###OnEditMode:
+### OnEditMode:
 
 ![C:/Users/sureshs/Desktop/sshot-3.png](Annotations_images/Annotations_img3.png)
 
@@ -199,7 +199,7 @@ SfChart provides you with an editing option for the text in any annotations. The
 
 SfChart provides support to add images as Annotation over the chart area, using the class ImageAnnotation. The following APIs are used in ImageAnnotation.
 
-ImageAnnotation
+### ImageAnnotation
 
 <table>
 <tr>
@@ -249,17 +249,17 @@ The following code demonstrates how to add ImageAnnotation to chart control.
 
 ShapeAnnotation allows you to add annotations in the form of shapes such as rectangles, ellipses and lines at the specific area of interest, in the chart area. 
 
-####EllipseAnnotation- Used to draw a circle or an ellipse over the chart area.
+#### EllipseAnnotation- Used to draw a circle or an ellipse over the chart area.
 
-####RectangleAnnotation- Used to draw a rectangle over the chart area.
+#### RectangleAnnotation- Used to draw a rectangle over the chart area.
 
-####VerticalLineAnnotation- Used to draw a vertical line across the chart area.
+#### VerticalLineAnnotation- Used to draw a vertical line across the chart area.
 
-####HorizontalLineAnnotation- Used to add a horizontal line across the chart area.
+#### HorizontalLineAnnotation- Used to add a horizontal line across the chart area.
 
 The following APIs are used to customize ShapeAnnotations.
 
-ShapeAnnotation
+### ShapeAnnotation
 
 <table>
 <tr>
@@ -311,13 +311,13 @@ The following code example demonstrates the usage of RectangleAnnotation.
 
 
 
-##LineAnnotations
+## LineAnnotations
 
 LineAnnotations displays line at specific points. The points where the line is displayed are determined by the X1, X2, Y1, Y2 properties. 
 
 The following APIs are used to customize LineAnnotation.
 
-LineAnnotation
+### LineAnnotation
 
 <table>
 <tr>

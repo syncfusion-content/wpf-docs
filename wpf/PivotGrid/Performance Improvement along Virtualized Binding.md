@@ -7,26 +7,26 @@ control: PivotGrid
 documentation: ug
 ---
 
-## Performance Improvement along Virtualized Binding
+# Performance Improvement along Virtualized Binding
 
 This feature provides high performance for a large set of records. This feature also helps load the data in the PivotGrid control on demand.
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 Users can view the output in a few seconds for a large number of records that have been bound with the PivotGrid control. 
 
-#### Properties
+### Properties
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
- {{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }} </td><td>
- {{ '**Type**' | markdownify }}</td><td>
- {{ '**Data Type**' | markdownify }}</td><td>
- {{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+ {{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }} </th><th>
+ {{ '**Type**' | markdownify }}</th><th>
+ {{ '**Data Type**' | markdownify }}</th><th>
+ {{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 UseIndexedEngine</td><td>
@@ -44,7 +44,7 @@ Boolean</td><td>
 </table>
 
 
-#### Sample Link
+### Sample Link
 
 To launch the sample for this feature:
 
@@ -65,7 +65,6 @@ The following code sample explains how to achieve on-demand loading support in P
 
 {% highlight C# %}  
 
-[C#]
 
 DateTime _startIndex = DateTime.Now;
 

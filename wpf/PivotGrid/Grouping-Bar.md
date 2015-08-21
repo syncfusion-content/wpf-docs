@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-## Grouping Bar
+# Grouping Bar
 
 The PivotGrid Grouping Bar enables the drag and drop feature of fields between different areas like column, row, value and filter. By using the Grouping Bar, you can add, rearrange, or remove fields to show data in a PivotGrid exactly the way they want. It consists of the following:
 
@@ -35,7 +35,6 @@ By default, Grouping Bar is enabled. It can be disabled by setting ShowGroupingB
 
 {% highlight xml %} 
 
-[XAML]
 
 <syncfusion:PivotGrid>
 
@@ -75,7 +74,6 @@ By default, Grouping Bar is enabled. It can be disabled by setting ShowGroupingB
 
 {% highlight C# %}  
 
- [C#]
 
 // Instantiating PivotGridControl.
 
@@ -103,7 +101,6 @@ pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Instantiating PivotGridControl.
 
@@ -143,7 +140,6 @@ Filtering of data displays only a subset of data that meets criteria specified b
 
 {% highlight C# %}  
 
-[C#]
 
 // Disabling Filtering.
 
@@ -155,7 +151,6 @@ pivotGridControl1.GroupingBar.AllowFiltering = false;
 
 {% highlight vbnet %} 
 
-[VB]
 
 // Disabling Filtering.
 
@@ -179,7 +174,6 @@ The following image illustrates the Sort indicator with Sort types.
 
 {% highlight C# %} 
 
-[C#]
 
 // Disabling Sorting.
 
@@ -189,7 +183,6 @@ pivotGridControl1.GroupingBar.AllowSorting = false;
 
 {% highlight vbnet %} 
 
-[VB]
 // Disabling Sorting.
 
 pivotGridControl1.GroupingBar.AllowSorting = False 
@@ -220,16 +213,16 @@ The following screenshot shows disabled grouping:
 
 #### Properties
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 AllowRunTimeGroupByField</td><td>
@@ -261,7 +254,6 @@ The following code snippets, explains the implementation of the disable grouping
 
 {% highlight xml %} 
 
-[XAML]
 
 /// Adding Pivot Columns
 
@@ -302,7 +294,6 @@ The following code snippets, explains the implementation of the disable grouping
 
 {% highlight C# %}  
 
-[C#]
 
 /// Adding Pivot Columns
 
@@ -331,7 +322,6 @@ this.pivotGrid1.ShowDisabledGroupBackground = true;
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Adding Pivot Columns
 

@@ -11,7 +11,6 @@ documentation: ug
 
 We can able to customize the first, last, negative, high and low point brushes as like markers in area and line sparkline.
 {% highlight html %}
-[XAML]
 
 <Syncfusion:SfColumnSparkline ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
 

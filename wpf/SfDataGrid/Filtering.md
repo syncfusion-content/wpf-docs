@@ -11,13 +11,14 @@ documentation: ug
 
 This section explains you about Filtering and how to filter records programmatically or using UI. Different approaches to filter records in both the methods, properties, methods and events that participate in filtering are discussed in this section.
 
-### Overview
+## Overview
 
 The SfDataGrid control allows you to filter data based on your own criteria. Filtering helps to view certain subset of the ItemsSource collection that meets a given Filtering criteria. Filtering is done in two ways:
 
 * Advanced Filtering
 * Programmatic Filtering
-#### Advanced Filtering 
+
+## Advanced Filtering 
 
 
 This section explains you how to apply Filtering on records using UI. UI Filtering is one way of Filtering the data in a Grid. This allows you to easily filter data from multiple columns with enriched UI interactions that resembles the filter drop-down lists in Excel. 
@@ -54,7 +55,7 @@ To access UI Filtering, you can enable it. UI Filtering is enabled or disabled b
 
 {% highlight xml %}
 
-[XAML] 
+ 
 
 
 
@@ -199,15 +200,15 @@ You can achieve it using code behind also. By simply setting AllowFiltering to�
 
 {% highlight C# %}
 
-[C#]
+
 
 syncgrid.AllowFiltering = true;
 {% endhighlight %}
 
 
-> _Note: A column’s AllowFiltering is given more priority than the SfDataGrid control._
+> Note: A column’s AllowFiltering is given more priority than the SfDataGrid control.
 
-### Filter Mode
+#### Filter Mode
 
 In UI Based Filtering, it has different modes to filter records. This section explains you different modes in GridFilterControl. FilterMode property allows you to specify the filter options for GridFilterControl. The filter modes are
 
@@ -222,7 +223,7 @@ The following code example shows how to disable the advanced filtering option.
 
 {% highlight xml %}
 
-[XAML] 
+ 
 
 
 
@@ -278,7 +279,7 @@ The following filter types are available for Text Filters.
 
 
 
-> _Note: When CanGenerateUniqueItems is set to ‘True’, the FilterValue combobox is not editable. Therefore, BeginsWith, EndsWith and Contains are unavailable. These options are available only when CanGenerateUniqueItems is set to ‘False’. So, when you use DataTable as items Source, AdVanceFiltering does not support CaseSensitive._
+> Note: When CanGenerateUniqueItems is set to ‘True’, the FilterValue combobox is not editable. Therefore, BeginsWith, EndsWith and Contains are unavailable. These options are available only when CanGenerateUniqueItems is set to ‘False’. So, when you use DataTable as items Source, AdVanceFiltering does not support CaseSensitive.
 
 When integer, double, short, decimal, byte or long, Nullable and unsigned types are bound to the GridColumn then Number Filters are loaded in the AdvancedFilterControl.
 
@@ -310,7 +311,7 @@ The following filter types are available for Date Filters.
 
 By setting the FilterBehavior as StringTyped, you can load the Text Filters to the particular column. When you set the FilterBehavior to StronglyTyped, then filter type is automatically detected based on underlying data type.
 
-> _Note: Null and NotNull options are available only when AllowBlankFilter is set to ‘True’_
+> Note: Null and NotNull options are available only when AllowBlankFilter is set to ‘True’
 
 ### Blank Filters
 
@@ -319,7 +320,7 @@ AllowBlankFilters propertyallows you to enable or disable the visibility of null
 
 {% highlight xml %}
 
-[XAML] 
+ 
 
 
 
@@ -354,7 +355,7 @@ ImmediateUpdateColumnFilter enables or disables the immediate update of the colu
 
 {% highlight xml %}
 
-[XAML] 
+ 
 
 
 
@@ -411,7 +412,7 @@ The following code example illustrates to hook event.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -467,10 +468,10 @@ _GridFilterControl property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 AscendingSortString</td><td>
@@ -532,7 +533,7 @@ It is customized using the properties provided in the GridFilterControl. The fol
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -594,7 +595,7 @@ The following code example shows how to set the CanGenerateUniqueItems property.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -613,16 +614,16 @@ The following code example shows how to set the CanGenerateUniqueItems property.
 
 _DataGrid with CanGenerateUniqueItems property_
 
-> _Note: You can bind written style to FilterPopupStyle where you need to apply style. It’s in SfDataGrid and also in each column._
+> Note: You can bind written style to FilterPopupStyle where you need to apply style. It’s in SfDataGrid and also in each column.
 
-### Programmatic Filtering
+## Programmatic Filtering
 
 This section explains you how to perform filtering on data programmatically. Programmatic Filtering allows you to set a predicate that performs the filtering functionality. The SfDataGrid control allows you to filter programmatically in two ways:
 
 * Through Column Filter
 * Through View Predicate
 
-#### Column Filtering
+### Column Filtering
 
 Column-level Filtering is achieved by adding filter predicates to the Grid Column. FilterPredicates is the property used to add the predicates to the column. The collection change of FilterPredicates applies the filter to the SfDataGrid control.
 
@@ -632,10 +633,10 @@ _FilterPredicate Property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Descriptions</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Descriptions</th></tr>
 <tr>
 <td>
 FilterBehavior</td><td>
@@ -664,12 +665,12 @@ Determines the relations of multiple predicates and whether they are applied wit
 </table>
 
 
-#### Filter Behavior
+### Filter Behavior
 
 * StringTyped: Records are filtered without considering the type and it takes all the types as string.
 * StronglyTyped: Records are filtered according to the underlying type.
 
-#### Filter Type
+### Filter Type
 
 * Contains: Checks the records that contain the filter value.
 * EndsWith: Checks the records that end with the filter value.
@@ -682,19 +683,19 @@ Determines the relations of multiple predicates and whether they are applied wit
 * StartsWith: Checks the records that start with the filter value.
 * Between: Checks the records that have values between the filter values.
 
-#### Predicate Type
+### Predicate Type
 
 * AND: Applies AND operator between the predicates.
 * OR: Applies OR operator between the predicates. 
 
-##### Examples
+#### Examples
 
 The following code example illustrates how the EmployeeId column is filtered for an employee with an employee ID as ‘4’. 
 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -727,7 +728,7 @@ As an example of multi-column filtering, the following code example illustrates 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -756,7 +757,7 @@ The following screenshot displays the list of male employees with title as Marke
 
 _DataGrid with filtered details of Employees_
 
-#### Clear Filtering
+### Clear Filtering
 
 The SfDataGrid control allows you to clear the Filter by clearing the filter predicates. This is achieved by invoking any one of the following methods:
 
@@ -775,7 +776,7 @@ SfDataGrid provides support to achieve view filtering by setting the SfDataGrid.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -840,7 +841,7 @@ The following code example demonstrates view-level filtering.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -872,9 +873,9 @@ _DataGrid with filtered records that contain the word “son”_
 
 > _Note: View.Filter is not applied when itemssource is DataTable._
 
-### How To
+## How To
 
-#### How to change look and feel of FilterIcon when Filter is applied
+### How to change look and feel of FilterIcon when Filter is applied
 
 You can edit the FilterToggleButton style in blend. You can see Filtered and UnFiltered VisualStates in it. You can change PathFillColor for FilterToggleButton. 
 
@@ -896,7 +897,7 @@ You can add the following code example within Filtered Layer.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -917,7 +918,7 @@ Add the following code example within UnFiltered Layer.
 
 {% highlight xml %}
 
-[XAML]
+
 
 <ColorAnimation Duration="0:0:0:1"
 
@@ -936,7 +937,7 @@ Now bind this PathFillColor to PART_FilterToggleButtonIndicator.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -952,14 +953,14 @@ Now bind this PathFillColor to PART_FilterToggleButtonIndicator.
 
 When you apply above style to FilterToggleButton, FilterIcon changes from Default to Gray and to Red when filtering is applied. When you clear it, it changes from Red to Gray and to default style.
 
-#### How to improve filter Popup opening time
+### How to improve filter Popup opening time
 
 You can improve the filter pop-up opening time by setting CanGenerateUniqueItems property value to ‘False’. A textbox is loaded instead of AdvancedFilterComboBox that allows you to manually enter text for filtering. This increases GridFilterControl’s loading performance.
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -978,7 +979,7 @@ By setting the FilterMode property as CheckboxFilter in GridFilterControl style,
 
 {% highlight xml %}
 
-[XAML] 
+ 
 
 
 
@@ -990,14 +991,14 @@ By setting the FilterMode property as CheckboxFilter in GridFilterControl style,
 {% endhighlight %}
 
 
-#### Apply filtering for particular column in code behind?
+### Apply filtering for particular column in code behind?
 
 You can apply filtering for a particular column by setting filter predicates for a particular column. The EmployeeId column needs to be filtered for the employee whose employee ID is 4. This is illustrated in the following code example.
 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -1015,7 +1016,7 @@ PredicateType = PredicateType.Or });
 
 {% endhighlight %}
 
-#### How to Load the Text Filters for the column having Number or Date value as underlying type
+### How to Load the Text Filters for the column having Number or Date value as underlying type
 
 When you use the Text Filters for the column that has number or date value as underlying type, you can set FilterBehavior property of the Grid Column as StringTyped. This loads the Text Filters instead of Number or Date Filters.
 
@@ -1023,7 +1024,7 @@ When you use the Text Filters for the column that has number or date value as un
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -1038,7 +1039,7 @@ You can achieve this by using FilterItemsPopulating (in Event topic you can find
 
 {% highlight C# %}
 
-[C#]
+
 
 syncgrid.FilterItemsPopulating += syncgrid_FilterItemsPopulating;
 
@@ -1060,14 +1061,14 @@ void syncgrid_FilterItemsPopulating(object sender, GridFilterItemsPopulatingEven
 {% endhighlight %}
 
 
-#### How to get the Filtered records list
+### How to get the Filtered records list
 
 You can get Filtered records from the view of SfDataGrid using FilterChanged event. SfDataGrid has view property that returns the collection. When filter is applied, the filtered records are available in this view. You need to wire this event. The following code example illustrates you how to get the filtered records.
 
 
 {% highlight C# %}
 
-[C#]
+
 
 // To Hook Event
 

@@ -13,7 +13,8 @@ Grid can be formatted by the following way:
 
 * By Grid Style Dialog
 * By Configuring the properties of Cell Style
-# Grid Style Dialog
+
+## Grid Style Dialog
 
 
 The Grid Style Dialog is used to format the cells of OlapGrid. Styling can be applied to Column Header, Row Header, Summary cell and value cell. The following properties of Header and Summary cells can be formatted:
@@ -39,7 +40,7 @@ The following code snippet will launch the Grid style dialog:
 
   {% highlight c# %}
 
-   [C#]
+   
 
 
 
@@ -55,7 +56,7 @@ this.OlapGrid1.ShowStyleDialog();
 
   {% highlight vbnet %}
 
-    [VB]
+    
 
 
 
@@ -69,7 +70,7 @@ Me.OlapGrid1.ShowStyleDialog()
 
 
 
-# Configuring the properties of Cell Style
+## Configuring the properties of Cell Style
 
 The following properties of Grid cell can be customized, so that the grid appears in a custom style rather than the default one:
 
@@ -77,12 +78,12 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property Name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Value it Accepts**' | markdownify }}</td><td>
-{{ '**Reference Links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property Name**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Value it Accepts**' | markdownify }}</th><th>
+{{ '**Reference Links**' | markdownify }}</th></tr>
 <tr>
 <td>
 Background</td><td>
@@ -131,7 +132,7 @@ The Column, Row, Summary and Value cells of Grid can be formatted independently 
 
   {% highlight c# %}
 
-    [C#]
+    
 
 
 
@@ -155,7 +156,7 @@ The Column, Row, Summary and Value cells of Grid can be formatted independently 
 
   {% highlight vbnet %}
 
-    [VB]
+    
 
 
 
@@ -181,7 +182,7 @@ The Value cell text alignment can be changed using the following property of Ola
 
   {% highlight c# %}
 
-    [C#]
+    
 
 
 
@@ -197,7 +198,7 @@ this.OlapGrid1.ValueCellTextAlignment = HorizontalAlignment.Center;
 
 
 
-## Sample Location
+### Sample Location
 
 A sample demo is available at the following location:
 

@@ -20,7 +20,7 @@ To display member properties via header tooltip, the following property of OlapG
 
   {% highlight c# %}
 
-    [C#]
+    
 
 
 
@@ -35,7 +35,7 @@ this.OlapGrid1.ShowMemberPropertiesToolTip = true;
 
   {% highlight vbnet %}
 
-  [VB]
+  
 
 
 

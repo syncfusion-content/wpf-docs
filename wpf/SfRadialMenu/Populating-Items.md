@@ -7,9 +7,9 @@ control: Radial Menu
 documentation: ug
 ---
 
-## Populating Items 
+# Populating Items 
 
-### Items Source  
+## Items Source  
 
 Radial menu items can be populated with the business object collection. Let us create a RadialMenu which will show the list of Application commands.   
 
@@ -17,7 +17,7 @@ The Application command model look likes below.
 
 {%highlight c#%}
 
-[C#]  
+
 
 
 
@@ -44,7 +44,6 @@ Create the Application command collection as follows.
 
 {%highlight c#%}
 
-[C#]
 
 
 
@@ -71,7 +70,7 @@ Populate the Application command collection as follows.
 
 {%highlight c#%}
 
-[C#]
+
 
 
 
@@ -89,7 +88,7 @@ Bind the Application command collection to the ItemsSource property of the Radia
 
 {%highlight xml%}
 
-[XAML]
+
 
 <navigation:SfRadialMenu IsOpen="True" ItemsSource="{Binding Options}"/>
 
@@ -113,7 +112,7 @@ DisplayMemberPath property of the Radial Menu used to define which business mode
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -130,7 +129,7 @@ DisplayMemberPath="Name"
 
 
 
-_Displaying member path_
+Displaying member path
 
 ## Command Path
 
@@ -138,7 +137,7 @@ CommandPath property of the Radial Menu can be used to bind the command in the b
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -155,7 +154,7 @@ ItemTemplate property of the RadialMenu can be used to customize the header part
 
 {%highlight xml%}
 
-[XAML]   
+ 
 
 
 

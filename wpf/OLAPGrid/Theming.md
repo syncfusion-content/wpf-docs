@@ -27,17 +27,17 @@ Theming is the process of applying particular settings to the visual elements of
 
 This feature enables users to develop a single application and apply different looks as necessary. 
 
-## Properties
+ Properties
 
 _Property Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 VisualStyle </td><td>
@@ -53,13 +53,13 @@ A sample demo available in the following link,
 
 <InstalledDrive>:\Users\sabapathyk\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OlapGrid.WPF\Samples\Appearance\Skin Customization Demo
 
-# Adding Theming to an Application 
+## Adding Theming to an Application 
 
 The following code sample demonstrates how to add theming to the OlapGrid control.
 
   {% highlight xml %}
 
-   [XAML]
+   
 
 
 
@@ -73,7 +73,7 @@ The following code sample demonstrates how to add theming to the OlapGrid contro
 
   {% highlight c# %}
 
-   [C#]
+   
 
 
 

@@ -13,7 +13,6 @@ You can customize leaf nodes by assigning data template to LeafTemplate of SfTre
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -65,7 +64,6 @@ You can customize leaf nodes by assigning data template to LeafTemplate of SfTre
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 

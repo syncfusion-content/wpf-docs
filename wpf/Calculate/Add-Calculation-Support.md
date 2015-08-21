@@ -33,13 +33,13 @@ If you have an algebraic expression that just contains constants and function li
 
 ![](Add-Calculation-Support_images/Add-Calculation-Support_img1.png)
 
-
+_Simple Expression_
 
 
 
 The code that provides this functionality is very straight-forward. Add a reference to Syncfusion.Calculate in your project. Then instantiate a CalcQuickBase object, and invoke its ParseAndCalculate method from the button handler. Now you can type a formula in the text box and click the button to get the computed value. The following code illustrates this.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -74,7 +74,7 @@ private void button1_Click(object sender, EventArgs e)
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 
@@ -121,7 +121,7 @@ In this section, you can learn how to use variable names within formulas to repr
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -132,7 +132,7 @@ this.calculator["height"] = 2.5;
 
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -145,7 +145,7 @@ Me.calculator("height") = 2.5
 ![](Add-Calculation-Support_images/Add-Calculation-Support_img2.jpeg)
 
 
-
+_Simple Variables_
 
 
 When a name is used as an indexer on the CalcQuickBase object, the object checks a collection of variables that it maintains. 
@@ -191,7 +191,7 @@ By default, CalcQuickBase does not try to track any dependencies among the varia
 
 ![](Add-Calculation-Support_images/Add-Calculation-Support_img3.png)
 
-
+_AutoCalc_
 
 In the above screenshot, Text Box C is set to a formula that references the values from Text Box A and Text Box B. So, once the value in Text Box A or Text Box B changes, the value in Text Box C should also change.
 
@@ -201,7 +201,7 @@ The following code illustrates the above process.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -345,7 +345,7 @@ private void textBoxA_Leave(object sender, EventArgs e)
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -497,7 +497,7 @@ Using explicit events to manage the auto-calculation in CalcQuickBase used with 
 
 Here is the code that does exactly the same work as our previous example by using explicit events to support auto-calculation. Notice that all the event handling has been removed. There are only three steps that are related to adding the calculation support, which includes instantiating the CalcQuickBase object, and calling the RegisterControlArray and RefreshAllCalculations methods.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -568,7 +568,7 @@ private void Form1_Load(object sender, System.EventArgs e)
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 
@@ -658,7 +658,7 @@ There are two conventions that are honored by Essential Calculate. While process
 
 The second convention involves zero-based and one-based indexing. It should be noted that a lot of data sources use zero-based indexing to access values, but in CalcEngine one-based indexing is used to mimic Excel. This leads to possible indexing conflicts. To keep things consistent and to make sure that it is clear what should be used, Essential Calculate expects any indexes (rows / column integer values) to be one-based. This means that you may have to tweak the indexes that are passed through the ICalcData methods and event arguments to make them consistent with any zero-based data sources that you might be using. One such example is the DataGrid discussed in this section. You can see the index-based adjustments in the following code samples.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -771,7 +771,7 @@ public class CalcDataGrid : DataGrid, Syncfusion.Calculate.ICalcData
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 

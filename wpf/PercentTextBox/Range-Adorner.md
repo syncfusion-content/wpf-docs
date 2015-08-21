@@ -16,31 +16,32 @@ The EnableRangeAdorner property is used to show the adorner range based on the m
 
 ## Properties
 
-_Property table_
+Property table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 EnableRangeAdorner </td><td>
 The Adorner range will displayed based on the value.</td><td>
 bool </td></tr>
 </table>
-# Adding Range Adorner to an Application 
+
+## Adding Range Adorner to an Application 
 
 We have to set the EnableRangeAdorner property, either in XAML or the code file.
 
 <table>
 <tr>
 <td>
-[XAML]  EnableRangeAdorner="True"</td></tr>
+{% highlight xml %} EnableRangeAdorner="True"{% endhighlight %}</td></tr>
 <tr>
 <td>
-[C#]   control.EnableRangeAdorner = true;</td></tr>
+{% highlight c# %}control.EnableRangeAdorner = true;{% endhighlight %}</td></tr>
 </table>
 
 

@@ -18,7 +18,8 @@ The following were the four different kinds of layouts supported by OlapGrid:
 * Excel like Layout with Member properties
 * Normal Top Summary and
 * No Summaries
-# Normal Layout
+
+## Normal Layout
 
 
 Normal Layout is the default layout of OlapGrid in which the summary cells are positioned at the bottom of each parent member and the child member appears adjacent to it.
@@ -27,7 +28,7 @@ Normal Layout is the default layout of OlapGrid in which the summary cells are p
 
   {% highlight c# %}
 
-    [C#]
+    
 
 
 
@@ -43,7 +44,7 @@ this.OlapGrid1.Layout = GridLayout.Normal;
 
   {% highlight vbnet %}
 
-    [VB]
+    
 
 
 
@@ -57,7 +58,7 @@ Me.OlapGrid1.Layout = GridLayout.Normal
 
 
 
-# Excel-like Layout
+## Excel-like Layout
 
 In the Excel-like layout, the summary cells are positioned at the bottom and the child members appear below the parent member with some indent space.
 
@@ -65,7 +66,7 @@ In the Excel-like layout, the summary cells are positioned at the bottom and the
 
   {% highlight c# %}
 
-    [C#]
+    
 
 
 
@@ -80,7 +81,7 @@ this.OlapGrid1.Layout = GridLayout.ExceLikeLayout;
 
   {% highlight vbnet %}
 
-    [VB]
+    
 
 
 
@@ -95,7 +96,7 @@ Me.OlapGrid1.Layout = GridLayout.ExceLikeLayout
 
 
 
-# Excel-like Layout with Member properties
+## Excel-like Layout with Member properties
 
 This kind of layout is used to display member properties along with dimension members. The properties appear adjacent to each member.
 
@@ -103,7 +104,7 @@ This kind of layout is used to display member properties along with dimension me
 
   {% highlight c# %}
 
-    [C#]
+    
 
 
 
@@ -119,7 +120,7 @@ this.OlapGrid1.Layout = GridLayout.ExcelLikeLayoutWithMemberProperties;
 
   {% highlight vbnet %}
 
-    [VB]
+    
 
 
 
@@ -133,7 +134,7 @@ Me.OlapGrid1.Layout = GridLayout.ExcelLikeLayoutWithMemberProperties
 
 
 
-# Normal Top Summary Layout
+## Normal Top Summary Layout
 
 In Normal Top Summary layout, the summary cells are positioned at the top of each parent member and the child member appears adjacent to it.
 
@@ -141,7 +142,7 @@ In Normal Top Summary layout, the summary cells are positioned at the top of eac
 
   {% highlight c# %}
 
-    [C#]
+    
 
 
 
@@ -157,7 +158,7 @@ this.OlapGrid1.Layout = GridLayout.NormalTopSummary;
 
   {% highlight vbnet %}
 
-    [VB]
+    
 
 
 
@@ -171,7 +172,7 @@ Me.OlapGrid1.Layout = GridLayout.NormalTopSummary
 
 
 
-# No Summaries Layout
+## No Summaries Layout
 
 In this kind of layout, the summary cells were made hidden and the child member appears adjacent to the parent member.
 
@@ -179,7 +180,7 @@ In this kind of layout, the summary cells were made hidden and the child member 
 
   {% highlight c# %}
 
-    [C#]
+    
 
 
 
@@ -195,7 +196,7 @@ this.OlapGrid1.Layout = GridLayout.NoSummaries;
 
   {% highlight vbnet %}
 
-    [VB]
+    
 
 
 
@@ -211,7 +212,7 @@ Me.OlapGrid1.Layout = GridLayout.NoSummaries
 
 
 
-## Sample Location
+### Sample Location
 
 A sample demo is available at the following location:
 

@@ -11,7 +11,6 @@ documentation: ug
 
 When reducing the size of the schedule in week and month views, headers may be only partially shown. To avoid incompletely displayed headers, automatic formatting can be enabled by setting the EnableAutoFormat property of the SfSchedule control as true.
 {% highlight html %}
-[XAML]
 
         <syncfusion:SfSchedule x:Name="schedule" Background="White"
 
@@ -28,7 +27,6 @@ When reducing the size of the schedule in week and month views, headers may be o
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
 
             SfSchedule schedule = new SfSchedule();
 
@@ -70,7 +68,6 @@ When reducing the size of the schedule in week and month views, headers may be o
 
 In the time line view, the width of the hours can be automatically adjusted by enabling EnableAutoFormat. To automatically adjust the width of the hours, IntervalHeight should not be specified with a particular value. If IntervalHeight is specified for the SfSchedule control, then the width of the hours in the time line view will be sized with the specified IntervalHeight.
 {% highlight html %}
- [XAML]
 
         <syncfusion:SfSchedule x:Name="schedule" Background="White"
 
@@ -89,7 +86,7 @@ In the time line view, the width of the hours can be automatically adjusted by e
 
 
 {% highlight c# %}
-[C#]            SfSchedule schedule = new SfSchedule();            schedule.Background = new SolidColorBrush(Colors.White);            schedule.Height = 400;            schedule.Width = 500;            schedule.MajorTickTimeFormat = "hh- mm- ss tt";            schedule.EnableAutoFormat = true;            schedule.ScheduleType = ScheduleType.TimeLine;            this.grid.Children.Add(schedule);
+SfSchedule schedule = new SfSchedule();            schedule.Background = new SolidColorBrush(Colors.White);            schedule.Height = 400;            schedule.Width = 500;            schedule.MajorTickTimeFormat = "hh- mm- ss tt";            schedule.EnableAutoFormat = true;            schedule.ScheduleType = ScheduleType.TimeLine;            this.grid.Children.Add(schedule);
 {% endhighlight %}
 
 
@@ -99,7 +96,7 @@ In the time line view, the width of the hours can be automatically adjusted by e
 
 
 
-{{ '![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img6.png)' | markdownify }}
+![](Enabling-Auto-Formatting_images/Enabling-Auto-Formatting_img6.png)
 
 
 

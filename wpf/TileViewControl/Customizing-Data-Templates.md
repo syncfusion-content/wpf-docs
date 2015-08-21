@@ -17,7 +17,6 @@ You can customize how a business object is displayed as Tileview using the _Item
 
 
 {% highlight xml %}
-[XAML]
 
    <syncfusion:TileViewControl ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   >
 
@@ -82,8 +81,8 @@ Using _ItemTemplateSelector_ feature, you can use different templates for the it
 1. Create a template selector in the code.
 
 
-   ~~~ c#
-     [C#]
+   ~~~ cs
+     
 
      public class TileViewItemTemplateSelector : DataTemplateSelector
 
@@ -134,7 +133,7 @@ Using _ItemTemplateSelector_ feature, you can use different templates for the it
 
  
    ~~~ xml
-     [XAML]
+     
 
      <DataTemplate x:Key="CsBookTemplate">
 
@@ -187,7 +186,7 @@ Using _ItemTemplateSelector_ feature, you can use different templates for the it
 
 
     ~~~ xml
-     [XAML]
+     
 
      <local:TileViewItemTemplateSelector x:Key="tileViewItemTemplateSelector"/>
     ~~~
@@ -200,7 +199,7 @@ Using _ItemTemplateSelector_ feature, you can use different templates for the it
 
 
    ~~~ xml
-     [XAML]
+     
 
      <syncfusion:TileViewControl ItemTemplateSelector="{StaticResource tileViewItemTemplateSelector}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  Margin="20" >
 
@@ -241,7 +240,7 @@ You can customize the header of the TileViewItem using the _HeaderTemplate_. The
 
 
    ~~~ xml 
-     [XAML]
+     
 
      <DataTemplate x:Key="headerTemplate">
 
@@ -272,7 +271,7 @@ You can customize the header of the TileViewItem using the _HeaderTemplate_. The
 
 
    ~~~ xml
-     [XAML]
+     
 
      <syncfusion:TileViewControl  HeaderTemplate="{StaticResource headerTemplate}" ItemTemplate="{StaticResource itemTemplate}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   >
 

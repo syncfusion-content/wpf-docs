@@ -18,7 +18,6 @@ The following code sample illustrates how to create the SfRangeSlider from code-
 
 {%highlight xml%}
 
-[XAML]
 
 <Window xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"> 
 
@@ -34,7 +33,7 @@ The following code sample illustrates how to create the SfRangeSlider from code-
 
 
 {%highlight c#%}
-[C#]
+
 
 SfRangeSlider rangeSlider = new SfRangeSlider();
 

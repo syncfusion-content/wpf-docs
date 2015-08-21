@@ -23,7 +23,6 @@ Following steps explain how to create sparkline,
 
 
 {% highlight html %}
-[XAML]
 
 xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
 {% endhighlight  %}
@@ -33,7 +32,6 @@ xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
 
 You need to initialize the sparkline represented by the following class Syncfusion.UI.Xaml.Charts.SfChart,
 {% highlight html %}
-[XAML]
 
 <Syncfusion:SfLineSparkline>
 
@@ -44,7 +42,6 @@ You need to initialize the sparkline represented by the following class Syncfusi
 
 Since the above step will produce only an empty sparkline, we need to add some data to the sparkline for plotting. In this step, let’s create a sample data source.
 {% highlight c# %}
-[C#]
 
 
 
@@ -105,9 +102,9 @@ Binding Data to sparkline
 
 We need to add the above UsersViewModel to the DataContext of the sparkline, bind the data source to the ItemsSource property of the SfLineSparkline, and then map the data using YBindingPath and XBindingPath.
 {% highlight html %}
-[XAML]
 
-…
+
+
 
             <Grid.DataContext>
 

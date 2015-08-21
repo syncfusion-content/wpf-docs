@@ -16,7 +16,7 @@ SfDataGrid supports the following types of UI Automation,
 1. Coded UI
 2. Quick Test Professional
 
-### Coded UI Test
+## Coded UI Test
 
 
 Automated tests that drive your application through its user interface (UI) are known as Coded UI Tests (CUITs). These tests include functional testing of the UI controls. SfDataGrid supports CUITs Coded UI automation that helps you create automated tests for inner elements and records the sequence of actions. While dragging the crosshair that is shown in CodedUITestBuilder, on UI elements, it shows the properties of the respective UI elements and you can also add assertion for each of the properties.
@@ -46,7 +46,7 @@ Level – 3</th><th>
 Coded UI Test Builder generates code from recorded session and custom class is implemented to access custom properties, so the generated code is simplified.</th></tr>
 </table>
 
-#### Requirements and Configuration
+### Requirements and Configuration
 
 Coded UI provides support only in Visual Studio Ultimate and Visual Studio Premium. For more information about the platforms and configurations that are supported by coded UI tests, refer this [link](https://msdn.microsoft.com/en-us/library/dd380742.aspx).
 
@@ -63,125 +63,125 @@ For Visual Studio 2012: C:\Program Files (x86)\Common Files\Microsoft Shared\VST
 
 For Visual Studio 2013: C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\12.0\UITestExtensionPackages
 
-> _Note: Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll need to be installed in GAC location. Please refer the MSDN link for_ [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) _installation._
+> Note: Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll need to be installed in GAC location. Please refer the MSDN link for_ [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) _installation.
 
-#### Getting Started
+### Getting Started
 
 This topic shows you how to create a CodedUITest project and test the SfDataGrid application. 
 
-1.Create a new WPF application or open an existing WPF application with SfDataGrid and enable Coded UI Test in SfDataGrid. To enable CUITs, you need to set AutomationPeerHelper.EnableCodedUI__as True and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid__namespace as shown in the following code example,
+1. Create a new WPF application or open an existing WPF application with SfDataGrid and enable Coded UI Test in SfDataGrid. To enable CUITs, you need to set AutomationPeerHelper.EnableCodedUI__as True and access the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid__namespace as shown in the following code example,
 
 
-{% highlight C# %}
 
-[C#]
 
-using Syncfusion.UI.Xaml.Grid;
 
-public MainWindow()
+			using Syncfusion.UI.Xaml.Grid;
 
-{
+			public MainWindow()
 
- InitializeComponent();
+			{
 
- AutomationPeerHelper.EnableCodedUI = true;
+			 InitializeComponent();
 
-}
-{% endhighlight %}
+			 AutomationPeerHelper.EnableCodedUI = true;
 
+			}
 
-2.Build the application and launch the .exe file from the bin folder.          
-3.Create a Coded UI Test Project as shown in the following screenshot.               
 
 
+2. Build the application and launch the .exe file from the bin folder.          
+3. Create a Coded UI Test Project as shown in the following screenshot.               
 
- ![](Features_images/Features_img223.png)
 
 
+   ![](Features_images/Features_img223.png)
 
-_Add New Project_
 
-4.After you create a new Coded UI project, a CUIT file is added automatically and the Generate Code dialog box appears. In this, choose Record actions, edit UI map or add assertions.
 
- ![](Features_images/Features_img224.png)
+   _Add New Project_
 
+4. After you create a new Coded UI project, a CUIT file is added automatically and the Generate Code dialog box appears. In this, choose Record actions, edit UI map or add assertions.
 
+   ![](Features_images/Features_img224.png)
 
- _Generate Code for Coded UI Test_
 
-5.Now the Coded UI project Visual Studio gets minimized and CodedUITestBuilder appears in the bottom right corner of your window. You can record the actions by clicking Start Recording in CodedUITestBuilder.
 
+   _Generate Code for Coded UI Test_
 
+5. Now the Coded UI project Visual Studio gets minimized and CodedUITestBuilder appears in the bottom right corner of your window. You can record the actions by clicking Start Recording in CodedUITestBuilder.
 
-  ![](Features_images/Features_img225.png)
 
 
+   ![](Features_images/Features_img225.png)
 
-  _CodedUITestBuilder_
 
-6.You can also open the CodedUITestBuilder from existing Coded UI project by right clicking on the CodedUITestMethod1 in CUIT file and clicking the Generate Code For Coded UI Test as shown in the following screenshot. You can see the same CodedUITestBuilder in the bottom right corner of the window.
 
- ![](Features_images/Features_img226.png)
+   _CodedUITestBuilder_
 
+6. You can also open the CodedUITestBuilder from existing Coded UI project by right clicking on the CodedUITestMethod1 in CUIT file and clicking the Generate Code For Coded UI Test as shown in the following screenshot. You can see the same CodedUITestBuilder in the bottom right corner of the window.
 
+   ![](Features_images/Features_img226.png)
 
- _CodedUITestMethod_
 
-7.Now you can drag the Crosshairs on to the UI elements of your WPF SfDataGrid application and it shows the available properties of the inner UI elements in SfDataGrid.
-8.You can record the actions made on UI elements by clicking Record button on the CodedUITest builder. For example you can record the action of changing the cell value in SfDataGrid. Click the Pause button to finish the record.
 
+   _CodedUITestMethod_
 
+7. Now you can drag the Crosshairs on to the UI elements of your WPF SfDataGrid application and it shows the available properties of the inner UI elements in SfDataGrid.
+8. You can record the actions made on UI elements by clicking Record button on the CodedUITest builder. For example you can record the action of changing the cell value in SfDataGrid. Click the Pause button to finish the record.
 
- ![](Features_images/Features_img227.png)
 
 
+   ![](Features_images/Features_img227.png)
 
- _CodedUITest_
 
-9.Once the record is completed, click the GenerateCode icon in CodedUITestBuilder for generate a test method. Then close the CodedUITestBuilder and you can see the generated code for cell value changed action as follows.
 
+   _CodedUITest_
 
-{% highlight C# %}
-[C#]
+9. Once the record is completed, click the GenerateCode icon in CodedUITestBuilder for generate a test method. Then close the CodedUITestBuilder and you can see the generated code for cell value changed action as follows.
 
-public void RecordedMethod1()
 
-  {
 
-     #region Variable Declarations
 
-     WpfText uIMEREPText = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom4.UIMEREPText;
 
-     WpfEdit uIGridCellEdit = this.UIWpfWindow.UISfDataGridCustom.UIGridCellEdit;
+			public void RecordedMethod1()
 
-     WpfSfGridCell uIGridCellCustom11 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom11;
+			  {
 
-     WpfSfGridCell uIGridCellCustom12 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom12;
+				 #region Variable Declarations
 
-      #endregion
+				 WpfText uIMEREPText = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom4.UIMEREPText;
 
- }
+				 WpfEdit uIGridCellEdit = this.UIWpfWindow.UISfDataGridCustom.UIGridCellEdit;
 
-{% endhighlight %}
+				 WpfSfGridCell uIGridCellCustom11 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom11;
 
+				 WpfSfGridCell uIGridCellCustom12 = this.UIWpfWindow.UISfDataGridCustom.UIGridCellCustom12;
 
-10.You can also create an assertion to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for control (Cell) is now listed in the Assertion dialog box. You can add assertion by clicking the Generate Code button in CodedUITestBuilder.
+				  #endregion
 
-![](Features_images/Features_img228.png)
+			 }
 
 
 
-_Assertion window_
 
-11.After all tests and assertion are created, right-click on the Test method and click Run Tests to run the test as follows.
+10. You can also create an assertion to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for control (Cell) is now listed in the Assertion dialog box. You can add assertion by clicking the Generate Code button in CodedUITestBuilder.
 
-![](Features_images/Features_img229.png)
+    ![](Features_images/Features_img228.png)
 
 
 
-_Run Test_
+    _Assertion window_
 
-#### Tables for Properties 
+11. After all tests and assertion are created, right-click on the Test method and click Run Tests to run the test as follows.
+
+    ![](Features_images/Features_img229.png)
+
+
+
+    _Run Test_
+	{:.prettyprint}
+
+### Tables for Properties 
 
 The following properties are for each of the UI elements in SfDataGrid.
 
@@ -278,16 +278,16 @@ SfDataPager</th><th>
 AccentBackgroundAccentForegroundAutoEllipsisModeAutoEllipsisTextDisplayModeEnableGridPagingNumericButtonCountOrientationPageCountPageSizeUseOnDemandPaging</th></tr>
 </table>
 
-#### How To
+### How To
 
-##### How to Enable CodedUI Test in SfDataGrid
+### How to Enable CodedUI Test in SfDataGrid
 
 To enable CodedUI Test in SfDataGrid, set AutomationPeerHelper.EnableCodedUI__to True. You can use the AutomationPeerHelper class from Syncfusion.UI.Xaml.Grid__namespace.
 
 
 {% highlight C# %}
 
-[C#]
+
 
 using Syncfusion.UI.Xaml.Grid;
 
@@ -312,11 +312,11 @@ Syncfusion provides Essential QTP that contains custom libraries, that help reco
 
 SfDataPager and SfMultiColumnDropDownControl supports QTP Test automation.
 
-> _Note: It also support for UFT (QTP latest version)._
+> Note: It also support for UFT (QTP latest version).
 
-#### Installation and Configuration
+### Installation and Configuration
 
-##### For UFT Installation
+### For UFT Installation
 
 While installing the UFT, make sure that the WPF Add-in is installed. Otherwise, install it.
 
@@ -326,13 +326,13 @@ While installing the UFT, make sure that the WPF Add-in is installed. Otherwise,
 
 _UFT - WPF Add in_
 
-##### Essential Syncfusion QTP Installation
+### Essential Syncfusion QTP Installation
 
 The following procedure illustrates how to install Essential Test Studio:
 
 Double-click the Syncfusion Essential Test Studio__Setup file. 
 
-> _Note: Setup - Syncfusion Essential QuickTest Professional dialog box opens._
+> Note: Setup - Syncfusion Essential QuickTest Professional dialog box opens.
 
 ![](Features_images/Features_img231.png)
 
@@ -354,7 +354,7 @@ Enter the User Name, Organization and Unlock Key in the corresponding text boxes
 
 Click Next. 
 
-> _Note: The unlock key is validated._
+> Note: The unlock key is validated.
 
 Select the installation folder dialog box opens. 
 
@@ -368,7 +368,7 @@ _Select the installation folder_
 
 To install in the default location, click Next. 
 
-> _Note: You can also browse to choose a location by clicking Browse._
+> Note: You can also browse to choose a location by clicking Browse.
 
 Installation type dialog box opens.
 
@@ -391,7 +391,7 @@ _Ready to install screen_
 
 Click Install to continue with the installation.
 
-#### Configuration:
+### Configuration:
 
 After installing the Syncfusion Essential Test Studio, you need to ensure that Syncfusion.CNG and SyncfusionTestObjetcs.XML files are located inthe following location. 
 
@@ -406,17 +406,17 @@ When your system does not contain Syncfusion.CNG , SyncfusionTestObjetcs.XML and
 
 * C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\
  
->_Note: By Default QTP supports higher Framework version installed in your machine. When you want to make use of SfDataGrid in a lower framework version, you need to copy and paste the SfGridQTP.WPF DLL in preferred locations._ 
+>Note: By Default QTP supports higher Framework version installed in your machine. When you want to make use of SfDataGrid in a lower framework version, you need to copy and paste the SfGridQTP.WPF DLL in preferred locations.
 
-> _DLL Copy Location: C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\_
+>DLL Copy Location: C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\
 
-> _DLL Paste Location: C:\Program Files\HP\QuickTestProfessional\data\Extensibility\WPF\Syncfusion_
+>DLL Paste Location: C:\Program Files\HP\QuickTestProfessional\data\Extensibility\WPF\Syncfusion
 
  
 
 
 
-#### Getting Started
+### Getting Started
 
 Essential Quick Test Professional lets you test applications with different Syncfusion controls and allows playback of scripts. 
 
@@ -428,14 +428,14 @@ The following is a list of chapters containing information that guide you throug
 4. Saving a Test
 5. Running the Saved Test
 
-##### Creating and Recording a Test
+### Creating and Recording a Test
 
 
-###### To create a new test:
+#### To create a new test:
 
-1.Open QTP by double-clicking the QuickTest Professional icon. 
+1. Open QTP by double-clicking the QuickTest Professional icon. 
  
->_Note: The QuickTest Professional – Add-in Manager window is displayed._
+   > Note: The QuickTest Professional – Add-in Manager window is displayed.
 
 
 
@@ -443,134 +443,133 @@ The following is a list of chapters containing information that guide you throug
 
 
 
- ![](Features_images/Features_img236.png)
+   ![](Features_images/Features_img236.png)
 
 
 
- _QuickTest Professional - Add-In Manager_
+   _QuickTest Professional - Add-In Manager_
 
-3.Click OK. 
+3. Click OK. 
  
-> _Note: The QuickTest Professional – [Start Page] window opens. There are two tabs namely Start Page and Test in the main pane of the window. The content under the Start Page tab is displayed by default._
+   > Note: The QuickTest Professional – [Start Page] window opens. There are two tabs namely Start Page and Test in the main pane of the window. The content under the Start Page tab is displayed by default.
 
 
 
-  ![](Features_images/Features_img237.png)
+   ![](Features_images/Features_img237.png)
 
 
 
-  _Quick Test Professional – [Start Page]_
+   _Quick Test Professional – [Start Page]_
 
-4.Click the New Test icon in the Start Page. 
-
-
-
-  ![](Features_images/Features_img238.jpeg)
+4. Click the New Test icon in the Start Page. 
 
 
 
-  _Quick Test Professional – [Start Page] showing New Test icon_
-
-5.A new test is created. 
-> 
-_Note: You can also create a new test by selecting the Test tab in the main pane of the window or Test sub-menu under the New menu in the menu bar._
+   ![](Features_images/Features_img238.jpeg)
 
 
 
-6.Click Record in the toolbar to start the recording. 
+   _Quick Test Professional – [Start Page] showing New Test icon_
+
+5. A new test is created. 
+   > Note: You can also create a new test by selecting the Test tab in the main pane of the window or Test sub-menu under the New menu in the menu bar.
 
 
 
- ![](Features_images/Features_img239.png)
+6. Click Record in the toolbar to start the recording. 
 
 
 
-_Quick Test Professional – [Test] Window showing Record tool_
-
->_Note: Record and Run Settings dialog box opens._
-
- ![](Features_images/Features_img240.png)
-
-  _Record and Run Settings-Web tab_
-
-7.Select the Windows Application tab. 
-
->_Note: The content under the tab is displayed._
-
- ![](Features_images/Features_img241.png)
+   ![](Features_images/Features_img239.png)
 
 
 
-_Record and Run Settings-Windows Applications_
+   _Quick Test Professional – [Test] Window showing Record tool_
 
->_Note: The Record and run only option is selected by default._
+   >Note: Record and Run Settings dialog box opens.
 
+   ![](Features_images/Features_img240.png)
 
+   _Record and Run Settings-Web tab_
 
-8.Select the following checkbox to ensure that only the applications opened by QuickTest and added applications are tested.
-* Applications opened by Quick Test
-* Applications opened via the Desktop (by the Window shell)
-* Applications specified below
-9.To add an application for testing, click the + button in the Application details.
+7. Select the Windows Application tab. 
 
+   >_Note: The content under the tab is displayed._
 
-
-
-
-> _Note:The Application Details dialog box opens._
+   ![](Features_images/Features_img241.png)
 
 
 
- ![](Features_images/Features_img242.png)
-
-
-
-  _Application Details_
-
-10.For Application field, browse and select the path of the application that has to be tested by clicking ![](Features_images/Features_img243.png)
-
- button.
-11.For working folder field, browse and select the path of the working folder by clicking ![](Features_images/Features_img244.png)
-button.
-12.Select the Launch application check box, to launch the application immediately after clicking OK. 
-13.Select Include descendant processes check box, to include all the processes that are descendant to the current process. 
-
-
-
-> _Note:Both Launch application and Include descendant processes check boxes are selected by default_
-
-
-
-14.Click OK. 
+   _Record and Run Settings-Windows Applications_
  
-> _Note: The path of the application and working folder are displayed in the Application details frame as shown in the following screenshot._
+   >_Note: The Record and run only option is selected by default._
 
 
 
- ![](Features_images/Features_img245.png)
+8. Select the following checkbox to ensure that only the applications opened by QuickTest and added applications are tested.
+   * Applications opened by Quick Test
+   * Applications opened via the Desktop (by the Window shell)
+   * Applications specified below
+9. To add an application for testing, click the + button in the Application details.
 
 
-_Record and Run Settings with application location._
 
-15.Click OK. 
+
+
+   > _Note:The Application Details dialog box opens._
+
+
+
+   ![](Features_images/Features_img242.png)
+
+
+
+   _Application Details_
+
+10. For Application field, browse and select the path of the application that has to be tested by clicking ![](Features_images/Features_img243.png)
+
+    button.
+11. For working folder field, browse and select the path of the working folder by clicking ![](Features_images/Features_img244.png)
+    button.
+12. Select the Launch application check box, to launch the application immediately after clicking OK. 
+13. Select Include descendant processes check box, to include all the processes that are descendant to the current process. 
+
+
+
+    > Note:Both Launch application and Include descendant processes check boxes are selected by default
+
+
+
+14. Click OK. 
  
->_Note: The recording starts. The application in the given path is opened as shown in the following screenshot._
+    > Note: The path of the application and working folder are displayed in the Application details frame as shown in the following screenshot.
 
 
 
- ![](Features_images/Features_img246.png)
+    ![](Features_images/Features_img245.png)
+
+
+    _Record and Run Settings with application location._
+
+15. Click OK. 
+ 
+    >Note: The recording starts. The application in the given path is opened as shown in the following screenshot.
 
 
 
-_Application using SfDataGrid Recording_
+    ![](Features_images/Features_img246.png)
 
-##### Running a Test
+
+
+    _Application using SfDataGrid Recording_
+	{:.prettyprint}
+
+### Running a Test
 
 On recording, all the user actions performed in the control are just noted with the corresponding method names of the Syncfusion namespace. The errors can be checked while running a test. To run a test: 
 
 1. Click Run in the toolbar. 
-> 
-_Note: Run dialog box opens. The Results Location tab is selected by default._
+>  Note: Run dialog box opens. The Results Location tab is selected by default.
 
 
 
@@ -580,11 +579,11 @@ _Note: Run dialog box opens. The Results Location tab is selected by default._
 
 _Run dialog_
 
-##### Editing a Test
+### Editing a Test
 
 The editing of a test can be done either in the Keyword view or in the Expert view. You can switch between these views by selecting the required tab at the bottom left of the QTP screen. 
 
-###### Editing in Expert View
+### Editing in Expert View
 
 This view is especially provided for the experts in VB Script. In the Expert view, the VB scripts are generated while recording. You can also manually write scripts to the existing scripts in this view. So, this view can be used as a tool for managing the testing process in a more controlled manner. You can add scripts to trigger events manually. 
 
@@ -596,7 +595,7 @@ The following image shows adding a script line to the Expert View pane.
 
 _Edit in Expert view_
 
-##### Editing in Keyboard View
+### Editing in Keyboard View
 
 The keyword view is meant for people with no expertise in VB scripts. Keyword view contains the controls used, the user-actions or operations performed, values involved in the operation and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown in the following screenshot:
 
@@ -606,7 +605,7 @@ The keyword view is meant for people with no expertise in VB scripts. Keyword vi
 
 _Edit in Keyword view_
 
-##### Saving a Test
+### Saving a Test
 
 Saving a test is as simple as saving any other document or picture. To save a test:
 
@@ -623,14 +622,13 @@ _Save Test Dialog_
 4.Click Save.                                           
 5.The test is saved.                                                                         
 
-##### Running the Saved Test
+### Running the Saved Test
 
 
 The tests that have been saved can be replayed later. For running such tests:
 
 1. Click Open on the toolbar. 
-> 
-_Note: The Open Test dialog box opens with a list of saved tests._
+> Note: The Open Test dialog box opens with a list of saved tests.
 
 
 
@@ -645,9 +643,9 @@ _Note: The Open Test dialog box opens with a list of saved tests._
 
 
 
-> _Note: The saved test is opened with its name and the complete path as the name of the window. By default, Expert View of the Test is opened._
+> Note: The saved test is opened with its name and the complete path as the name of the window. By default, Expert View of the Test is opened.
 
-#### Tables for Properties and Methods
+### Tables for Properties and Methods
 
 _SfDataGrid_
 

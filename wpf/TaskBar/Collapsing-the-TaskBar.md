@@ -17,7 +17,6 @@ Use the following code snippet to expand or collapse the TaskBar.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -65,7 +64,6 @@ Use the following code snippet to expand or collapse the TaskBar.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 

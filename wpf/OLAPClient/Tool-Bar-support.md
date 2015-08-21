@@ -358,11 +358,11 @@ _Properties_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 ShowConnectOptionButton</td><td>
@@ -478,7 +478,7 @@ Adding/Removing OLAP Client toolbar options in an application
 
 {% highlight C# %}  
 
- [C#]
+
 
 //Disable the Connection Option from current view of the OLAP Client Toolbar.
 
@@ -496,7 +496,7 @@ this.olapClient1.OlapClientToolBar.ShowConnectOptionButton = false;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 
 

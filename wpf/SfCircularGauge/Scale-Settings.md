@@ -21,7 +21,7 @@ The MainScale contains a scale that integrates labels, tick marks, and a rim to 
 
 {% highlight xml %}
 
-[XAML]
+
 
        <syncfusion:SfCircularGauge x:Name="gauge" GaugeHeaderPosition="300,600" >
 
@@ -85,7 +85,7 @@ The MainScale contains a scale that integrates labels, tick marks, and a rim to 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -139,7 +139,7 @@ By using the Radius property, the Scales radius can be set as required.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -221,7 +221,7 @@ By using the Radius property, the Scales radius can be set as required.
 
 
 
-[C#]
+
 
 
 
@@ -293,7 +293,7 @@ By using the Radius property, the Scales radius can be set as required.
 
 It helps to add multiple scales to the same circular gauge and also it helps to customize all the scales in the CircularGauge control. 
 
-### Adding Multiple Scales in the Gauge
+## Adding Multiple Scales in the Gauge
 
 To add multiple scales in a Circular Gauge, the CircularScale collection has to be in the Scales.
 
@@ -301,7 +301,7 @@ To add multiple scales in a Circular Gauge, the CircularScale collection has to 
 
 {% highlight xml %}
 
-[XAML]
+
 
     <syncfusion:SfCircularGauge SpacingMargin="0.7">
 
@@ -382,7 +382,7 @@ To add multiple scales in a Circular Gauge, the CircularScale collection has to 
 
 {% highlight C# %}
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -422,14 +422,14 @@ To add multiple scales in a Circular Gauge, the CircularScale collection has to 
 
 
 
-#### Screenshot:
+### Screenshot:
 
 ![](Scale-Settings_images/Scale-Settings_img3.png)
 
 
 
 
-#### Screenshot:
+### Screenshot:
 
 ![](Scale-Settings_images/Scale-Settings_img4.png)
 

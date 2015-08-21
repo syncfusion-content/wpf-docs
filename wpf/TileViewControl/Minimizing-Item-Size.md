@@ -21,7 +21,6 @@ The following code example illustrates how to add the minimizing item size to an
 
 
 {% highlight xml %}
-[XAML]
 
 <syncfusion:TileViewControl x:Name="TileView1" Background="White" 
 
@@ -63,7 +62,6 @@ The following code example illustrates how to add the minimizing item size to an
 
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -113,12 +111,12 @@ _MinimizedItemTemplate / MaximizedItemTemplate Properties Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }} </td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Data Type**' | markdownify }} </td><td>
-{{ '**Reference links**' | markdownify }} </td></tr>
+<th>
+{{ '**Property**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Data Type**' | markdownify }} </th><th>
+{{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
 <td>
 MinimizedItemsPercentage</td><td>
@@ -142,12 +140,12 @@ _MinimizedItemsPercentageChanged Table_
 {{ '**Type**' | markdownify }} </th><th>
 {{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
-<th>
-MinimizedItemsPercentageChanged</th><th>
-The event gets fired when the minimized items percentage of theTileViewItems is changed.</th><th>
-</th><th>
-</th><th>
-</th></tr>
+<td>
+MinimizedItemsPercentageChanged</td><td>
+The event gets fired when the minimized items percentage of theTileViewItems is changed.</td><td>
+</td><td>
+</td><td>
+</td></tr>
 </table>
 
 

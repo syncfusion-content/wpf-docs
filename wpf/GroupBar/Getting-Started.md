@@ -41,7 +41,7 @@ Here are some highlights of our Groupbar control.
 
 
 
-###Navigation Pane Features
+### Navigation Pane Features
 
 * Resizing the Pop up
 * Expand / Collapsing the Navigation Pane
@@ -60,7 +60,7 @@ The following steps describe how to create the GroupBar control via Visual Studi
 
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -70,10 +70,10 @@ The following steps describe how to create the GroupBar control via Visual Studi
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 
-
+   {:.prettyprint}
 
 
 Using the Collection Editor, add the GroupBarItems and configure their properties.The GroupBar control can also be created and configured using Microsoft Expression Blend. Follow these steps to do so. 
@@ -83,7 +83,7 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -91,7 +91,7 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 3. Drag GroupBar to the designer and drop it there. This will generate the control. 
 
-![](Getting-Started_images/Getting-Started_img5.png)
+   ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -101,7 +101,7 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 
 
-![](Getting-Started_images/Getting-Started_img6.png)
+   ![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -111,7 +111,7 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
@@ -119,24 +119,20 @@ Using the Collection Editor, add the GroupBarItems and configure their propertie
 
 6. Figure 8: Collection Editor for GroupBar in Expression BlendGroupBarItem using the properties in the Collection Editor.
 
-
+   {:.prettyprint}
 
 You can also customize the appearance of the GroupBar control and its items by using the template-editing feature available in Expression Blend.
 
-### Creatig the Control Programmatically
+## Creatig the Control Programmatically
 
 To create the GroupBar control through code, use the following XAML or C# code.
 
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %}<!-- Adding GroupBar --><syncfusion:GroupBar Height="300" Width="230" Name="groupBar"/> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %}//Creating an instance of GroupBarGroupBar groupBar = new GroupBar();//Setting height for GroupBargroupBar.Height = 300;//Setting width for GroupBargroupBar.Width = 200;//Adding GroupBar to windowthis.Content = groupBar; {% endhighlight %} </td></tr>
-</table>
+{% highlight xml %}<!-- Adding GroupBar --><syncfusion:GroupBar Height="300" Width="230" Name="groupBar"/> {% endhighlight %} 
+
+{% highlight C# %}//Creating an instance of GroupBarGroupBar groupBar = new GroupBar();//Setting height for GroupBargroupBar.Height = 300;//Setting width for GroupBargroupBar.Width = 200;//Adding GroupBar to windowthis.Content = groupBar; {% endhighlight %} 
+
 ### Itemssource Support/GroupBar Control
 
 Items in a GroupBar can also be added by binding a collection of business object through Itemssource property. The following is an example of the business object, which is used for Itemssource binding. 
@@ -187,22 +183,16 @@ private void Window1_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 
 
-###Binding Itemssource Property
+### Binding Itemssource Property
 
  Set the Itemssource property, by using the following code.
 
 
 
 
+{% highlight xml %}<sync:GroupBar Name="gBar" ItemsSource="{Binding SampleList}"/> {% endhighlight %} 
+{% highlight C# %}Binding bind = new Binding();          bind.Source = this;          bind.Path = new PropertyPath("SampleList");          gBar.SetBinding(GroupBar.ItemssourceProperty, bind); {% endhighlight %} 
 
-<table>
-<tr>
-<td>
-{% highlight xml %}<sync:GroupBar Name="gBar" ItemsSource="{Binding SampleList}"/> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %}Binding bind = new Binding();          bind.Source = this;          bind.Path = new PropertyPath("SampleList");          gBar.SetBinding(GroupBar.ItemssourceProperty, bind); {% endhighlight %} </td></tr>
-</table>
 
 
 
@@ -215,7 +205,7 @@ private void Window1_Loaded(object sender, RoutedEventArgs e)
 
 
 
-###Using ItemTemplate
+### Using ItemTemplate
 
 
 
@@ -247,7 +237,7 @@ Apply the ItemTemplate to GroupBar, by using the following code.
 
 
 
-###Using ItemContainer Style 
+### Using ItemContainer Style 
 
 The above image shows that the GroupBar is bounded with the ObservableCollection SampleList. Write the HeaderTemplate and ContentTemplate for the ItemContainer, by using the following code. 
 
@@ -339,13 +329,13 @@ Apply Content Template to Content Template property of the item, by using the fo
 
 
 
-###Using Template Selector
+### Using Template Selector
 
 Template can be applied according to the logic set by the user using Template Selector.
 
 The following code illustrates this.
 
-Note:Data Template has been written for North America Statistics data
+> Note:Data Template has been written for North America Statistics data
 
 {% highlight xml %}
 
@@ -365,7 +355,7 @@ Note:Data Template has been written for North America Statistics data
 
 {% endhighlight %}
 
-Note: Data Template has been written for South America Statistics data.
+> Note: Data Template has been written for South America Statistics data.
 
 {% highlight xml %}
 
@@ -387,7 +377,7 @@ Note: Data Template has been written for South America Statistics data.
 {% endhighlight %}
 
 
-Note: Data Template has been written for Other Statistics data.
+> Note: Data Template has been written for Other Statistics data.
 
 {% highlight xml %}
 
@@ -407,7 +397,7 @@ Note: Data Template has been written for Other Statistics data.
 
 {% endhighlight %}
 
-Note: Following is the data template selector logic set by the user.
+> Note: Following is the data template selector logic set by the user.
 
 {% highlight xml %}
 
@@ -459,7 +449,7 @@ Note: Following is the data template selector logic set by the user.
 {% endhighlight %}
 
 
-Note: The ContentTemplate Selector can be applied as follows.
+> Note: The ContentTemplate Selector can be applied as follows.
 
 {% highlight xml %}
 
@@ -497,7 +487,7 @@ Note: The ContentTemplate Selector can be applied as follows.
 
 
 
-###Events associated with GroupBar ContextMenu
+### Events associated with GroupBar ContextMenu
 
 When Itemssource is in use, Add Tab, Delete Tab, Rename Tab, etc Commands in Context menu cannot be used. To enable this user can use the following event associated with the context menu.
 
@@ -534,7 +524,7 @@ private void gBar_ContextMenuItemClick(object sender, GroupBarContextMenuItemEve
 }
 {% endhighlight %}
 
-Note: Set the Handled property of GroupBarContextMenuItemEventArgs to true to avoid the in-built logic to execute.
+> Note: Set the Handled property of GroupBarContextMenuItemEventArgs to true to avoid the in-built logic to execute.
 
 
 

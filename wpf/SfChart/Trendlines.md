@@ -56,21 +56,21 @@ SfChart supports the following type of Trendlines.
 
 
 
-####Linear Trendline is a best-fit straight line that is used with sets of simple linear data. A LinearTrendline shows when something is increasing or decreasing at a steady rate. 
+### Linear Trendline is a best-fit straight line that is used with sets of simple linear data. A LinearTrendline shows when something is increasing or decreasing at a steady rate. 
 
-####Exponential
+### Exponential
 
 Exponential Trendline is a curved line that is used when data values rise or fall at constantly increasing rates.
 
-####Power
+### Power
 
 Power Trendline is a curved line that is used with sets of data comparing measurements that increase at a specific rate, for example, the acceleration of race car at one second intervals.
 
-####Logarithmic
+### Logarithmic
 
 Logarithmic Trendline is a best-fit curved line that is used when the rate of change in the data increases or decreases quickly and then levels out.
 
-####Polynomial
+### Polynomial
 
 Polynomial Trendline is a curved line that is used when data fluctuates.
 

@@ -43,10 +43,10 @@ _Document Conventions Table_
 
 <table>
 <tr>
-<td>
-{{ '**Convention**' | markdownify }}</td><td>
-{{ '**Icon**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Convention**' | markdownify }}</th><th>
+{{ '**Icon**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 Note</td><td>
@@ -55,7 +55,7 @@ Represents important information</td></tr>
 <tr>
 <td>
 Example</td><td>
-{{ '**Example**' | markdownify }}</td><td>
+{{ 'Example' | markdownify }}</td><td>
 Represents an example</td></tr>
 <tr>
 <td>

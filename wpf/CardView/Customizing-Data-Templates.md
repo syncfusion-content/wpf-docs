@@ -86,23 +86,21 @@ You can also customize header of the CardViewItem using a header template. This 
 
 
 
-{% highlight xml %}
+		  <DataTemplate x:Key="headerTemplate">
 
-  <DataTemplate x:Key="headerTemplate">
+					<Grid>
 
-            <Grid>
+						<Border Background="Gray">
 
-                <Border Background="Gray">
+						<TextBlock Text="{Binding Path=Name}" Margin="5" Foreground="White" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 
-                <TextBlock Text="{Binding Path=Name}" Margin="5" Foreground="White" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
+						</Border>
 
-                </Border>
+					</Grid>
 
-            </Grid>
+		  </DataTemplate>
 
-  </DataTemplate>
 
-{% endhighlight %}
 
 
 
@@ -110,26 +108,26 @@ You can also customize header of the CardViewItem using a header template. This 
 
 
 
-{% highlight xml %}
 
 
-<syncfusion:CardView ItemsSource="{Binding Contacts}" 
 
-                                 ItemTemplate="{StaticResource contactTemplate}" 
+			<syncfusion:CardView ItemsSource="{Binding Contacts}" 
 
-                                 HeaderTemplate="{StaticResource headerTemplate}"
+											 ItemTemplate="{StaticResource contactTemplate}" 
 
-                                />
+											 HeaderTemplate="{StaticResource headerTemplate}"
 
-
-{% endhighlight %}
+											/>
 
 
-This generates the following CardView control.
-
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
 
 
+
+   This generates the following CardView control.
+
+   ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img2.png)
+
+   {:.prettyprint}
 
 ## EditItem Template
 
@@ -139,96 +137,94 @@ You can edit the values loaded in CardViewItem using EditItemTemplate. This is i
 
 
 
-{% highlight xml %}
 
-   <DataTemplate x:Key="contactEditTemplate">
+		   <DataTemplate x:Key="contactEditTemplate">
 
-            <ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectedIndex="0" ToolTip="{Binding Path=Validation.HasError, ElementName=txt}">
+					<ListBox ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectedIndex="0" ToolTip="{Binding Path=Validation.HasError, ElementName=txt}">
 
-                <ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
+						<ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
 
-                    <Grid >
+							<Grid >
 
-                        <Grid.ColumnDefinitions>
+								<Grid.ColumnDefinitions>
 
-                            <ColumnDefinition Width="75"/>
+									<ColumnDefinition Width="75"/>
 
-                            <ColumnDefinition />
+									<ColumnDefinition />
 
-                        </Grid.ColumnDefinitions>
+								</Grid.ColumnDefinitions>
 
-                        <TextBlock Text="Name:"/>
+								<TextBlock Text="Name:"/>
 
-                        <TextBox Grid.Column="1"   x:Name="txt" HorizontalAlignment="Stretch" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+								<TextBox Grid.Column="1"   x:Name="txt" HorizontalAlignment="Stretch" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
 
-                    </Grid>
+							</Grid>
 
-                </ListBoxItem>
-
+						</ListBoxItem>
 
 
-                <ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
 
-                    <Grid >
+						<ListBoxItem HorizontalContentAlignment="Stretch" Padding="1">
 
-                        <Grid.ColumnDefinitions>
+							<Grid >
 
-                            <ColumnDefinition Width="75"/>
+								<Grid.ColumnDefinitions>
 
-                            <ColumnDefinition Width="*"/>
+									<ColumnDefinition Width="75"/>
 
-                        </Grid.ColumnDefinitions>
+									<ColumnDefinition Width="*"/>
 
-                        <TextBlock Text="Age:"/>
+								</Grid.ColumnDefinitions>
 
-                        <TextBox  Grid.Column="1"  Text="{Binding Age, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
+								<TextBlock Text="Age:"/>
 
-                    </Grid>
+								<TextBox  Grid.Column="1"  Text="{Binding Age, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" />
 
-                </ListBoxItem>
+							</Grid>
 
+						</ListBoxItem>
 
 
 
 
-            </ListBox>
 
-        </DataTemplate>
+					</ListBox>
+
+				</DataTemplate>
 
 
-{% endhighlight %}
+
 
 
 2. Set EditItemTemplate for the CardView to the above template.
 
 
-{% highlight xml %}
 
-<syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
+			<syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
 
-                                 ItemTemplate="{StaticResource contactTemplate}" 
+											 ItemTemplate="{StaticResource contactTemplate}" 
 
-                                 EditItemTemplate="{StaticResource contactEditTemplate}"
+											 EditItemTemplate="{StaticResource contactEditTemplate}"
 
-                                 HeaderTemplate="{StaticResource headerTemplate}"
+											 HeaderTemplate="{StaticResource headerTemplate}"
 
-                                />
-
-
-{% endhighlight %}
+											/>
 
 
 
 
-Implementing the above codes generate the following CardView control. 
 
 
 
-![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
+   Implementing the above codes generate the following CardView control. 
 
 
 
- > Note: You can edit the values in the CardView control by double-clicking the CardViewItem.
+   ![](Customizing-Data-Templates_images/Customizing-Data-Templates_img3.png)
 
 
+
+   > Note: You can edit the values in the CardView control by double-clicking the CardViewItem.
+
+   {:.prettyprint}
 

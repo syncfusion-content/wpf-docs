@@ -11,7 +11,6 @@ documentation: ug
 
 Range band feature used to highlight the particular mentioned range along Y axis.
 {% highlight html %}
-[XAML]
 
   <Syncfusion:SfLineSparkline 
 

@@ -7,13 +7,13 @@ control: PivotGrid
 documentation: ug
 ---
 
-## Header Cell Context Menu
+# Header Cell Context Menu
 
-### Programmatic and UI level support for expand collapse operation
+## Programmatic and UI level support for expand collapse operation
 
 Expand/collapse operations can be done at both the UI and programmatic level. The context menu will be shown while right-clicking on the expander cell. Its skin will change with respect to the grid’s background color, and it is localizable too. Expand/collapse operations can be handled at the row level and column level individually. The header cell’s UniqueText will be shown as a ToolTip for each context menu item.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 Enabling UI-level expand/collapse operations will allow the end user to expand and collapse the particular cell and entire row or column individually. Programmatically, they can expand/collapse any number of rows or columns.
 
@@ -21,19 +21,19 @@ Enabling UI-level expand/collapse operations will allow the end user to expand a
 
 
 
-### Tables for Properties, Methods, and Events
+## Tables for Properties, Methods, and Events
 
-### Properties
+## Properties
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 EnableContextMenu</td><td>
@@ -44,7 +44,7 @@ Boolean </td></tr>
 
 ### Methods
 
-_Methods Table_
+Methods Table
 
 <table>
 <tr>
@@ -55,66 +55,67 @@ _Methods Table_
 {{ '**Type**' | markdownify }}</th><th>
 {{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
-<th>
-ExpandRow(string)  </th><th>
-Expands the group for the given row UniqueText.</th><th>
-string </th><th>
-NA </th><th>
-void </th></tr>
+<td>
+ExpandRow(string)  </td><td>
+Expands the group for the given row UniqueText.</td><td>
+string </td><td>
+NA </td><td>
+void </td></tr>
 <tr>
-<th>
-ExpandColumn (string)  </th><th>
-Expands the group for the given column UniqueText.</th><th>
-string</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+ExpandColumn (string)  </td><td>
+Expands the group for the given column UniqueText.</td><td>
+string</td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-CollapseRow(string)  </th><th>
-Collapse the group for the given row UniqueText.</th><th>
-string</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+CollapseRow(string)  </td><td>
+Collapse the group for the given row UniqueText.</td><td>
+string</td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-CollapseColumn (string)  </th><th>
-Collapse the group for the given column UniqueText.</th><th>
-string</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+CollapseColumn (string)  </td><td>
+Collapse the group for the given column UniqueText.</td><td>
+string</td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-ExpandRow(List[string])  </th><th>
-Expands the group for the given list of row UniqueText.</th><th>
-List(string)</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+ExpandRow(List[string])  </td><td>
+Expands the group for the given list of row UniqueText.</td><td>
+List(string)</td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-ExpandColumn (List[string])  </th><th>
-Expands the group for the given list of column UniqueText.</th><th>
-List(string)</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+ExpandColumn (List[string])  </td><td>
+Expands the group for the given list of column UniqueText.</td><td>
+List(string)</td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-CollapseRow(List[string])  </th><th>
-Collapse the group for the given list of row UniqueText.</th><th>
-List(string)</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+Col
+lapseRow(List[string])  </td><td>
+Collapse the group for the given list of row UniqueText.</td><td>
+List(string)</td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-CollapseColumn (List[string])  </th><th>
-Collapse the group for the given list of column UniqueText.</th><th>
-List(string)</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+CollapseColumn (List[string])  </td><td>
+Collapse the group for the given list of column UniqueText.</td><td>
+List(string)</td><td>
+NA</td><td>
+void</td></tr>
 </table> 
 
 ### Events
 
-_Event Table_
+Event Table
 
 <table>
 <tr>
@@ -124,11 +125,11 @@ _Event Table_
 {{ '**Arguments**' | markdownify }} </th><th>
 {{ '**Type**' | markdownify }} </th></tr>
 <tr>
-<th>
-ExpandCollapse</th><th>
-Provides enabling/disabling option for expand/collapse for a specific group (using UniqueText).</th><th>
-NA </th><th>
-Event</th></tr>
+<td>
+ExpandCollapse</td><td>
+Provides enabling/disabling option for expand/collapse for a specific group (using UniqueText).</td><td>
+NA </td><td>
+Event</td></tr>
 </table>
 
 
@@ -148,7 +149,6 @@ The property usage is illustrated in the code given below.
 
 {% highlight C# %}  
 
-[C#]
 
 // To Enable Context Menu for Column Header.
 
@@ -162,7 +162,6 @@ this.PivotGrid1.RowHeaderCellStyle.EnableContextMenu = true;
 
 {% highlight vbnet %} 
 
-[VB]
 
 // To Enable Context Menu for Column Header.
 
@@ -186,7 +185,6 @@ To perform the expand/collapse operations programmatically, you can make use of 
 
 {% highlight C# %}   
 
-[C#]
 
 /// Expands the Bike from row       
 
@@ -224,7 +222,6 @@ this.pivotGrid1.ExpandColumn(new List<string> { "Canada", "France" });
 
 {% highlight vbnet %}  
 
-[VB]
 
 /// Expands the Bike from row       
 

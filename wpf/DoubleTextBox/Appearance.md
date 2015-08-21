@@ -37,7 +37,7 @@ The steps to edit the DoubleTextBox Template by using Expression Blend are as fo
 
 
 
-![](Appearance_images/Appearance_img1.png)
+   ![](Appearance_images/Appearance_img1.png)
 
 
 
@@ -47,32 +47,32 @@ The steps to edit the DoubleTextBox Template by using Expression Blend are as fo
 
 
 
-![](Appearance_images/Appearance_img2.png)
+   ![](Appearance_images/Appearance_img2.png)
 
 
 
 
 
-Another way to edit the Template is as follows:
+   Another way to edit the Template is as follows:
 
 4. In Object and Timeline, right-click the DoubleTextBox control and select the Edit Template option, as displayed below.
 
 
 
-![](Appearance_images/Appearance_img3.png)
+   ![](Appearance_images/Appearance_img3.png)
 
 
 
 
 
-This will open a dialog (below) where you can give your style a name and define exactly where you’d like to store it.
+   This will open a dialog (below) where you can give your style a name and define exactly where you’d like to store it.
 
 
 
-![](Appearance_images/Appearance_img4.png)
+   ![](Appearance_images/Appearance_img4.png)
 
 
-
+   {:.prettyprint}
 
 
 The result of these steps is an XAML, which is placed within your application. This XAML represents the default style for the DoubleTextBox.

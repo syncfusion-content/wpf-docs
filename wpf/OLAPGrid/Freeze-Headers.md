@@ -13,7 +13,7 @@ OlapGrid for WPF provides built-in support to freeze the Column and Row Headers.
 
   {% highlight c# %}
 
-    [C#]
+    
 
 
 
@@ -29,7 +29,7 @@ this.OlapGrid1.FreezeHeaders = true;
 
   {% highlight vbnet %}
 
-    [VB]
+    
 
 
 

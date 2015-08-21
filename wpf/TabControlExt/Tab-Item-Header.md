@@ -19,7 +19,6 @@ The following code snippet illustrates how to add images to the tab item header.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -39,7 +38,6 @@ The following code snippet illustrates how to add images to the tab item header.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -107,7 +105,6 @@ To set the tab item header image alignment as "AboveText", use the below code.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -127,7 +124,6 @@ To set the tab item header image alignment as "AboveText", use the below code.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -195,7 +191,6 @@ The following code snippet illustrates handling the ImageAlignmentChanged event.
 
 
 {% highlight c# %}
-[C#]
 
 
 

@@ -50,93 +50,93 @@ Type </th><th>
 Return Type </th><th>
 Reference links </th></tr>
 <tr>
-<th>
-ImportFromExcel</th><th>
-This method is used to import the first sheet from the stream.</th><th>
-ImportFromExcel(Stream fileStream)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+ImportFromExcel</td><td>
+tdis metdod is used to import tde first sheet from tde stream.</td><td>
+ImportFromExcel(Stream fileStream)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-ImportFromExcel</th><th>
-This method is used to import the first sheet from the stream. With the importing event handler.</th><th>
-ImportFromExcel(Stream fileStream, GridCellImportFromExcelHandler importHandler)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+ImportFromExcel</td><td>
+tdis metdod is used to import tde first sheet from tde stream. Witd tde importing event handler.</td><td>
+ImportFromExcel(Stream fileStream, GridCellImportFromExcelHandler importdandler)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-ImportFromExcel</th><th>
-This method is used to import the first sheet from the specified Excel file.</th><th>
-ImportFromExcel(string filename)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+ImportFromExcel</td><td>
+tdis metdod is used to import tde first sheet from tde specified Excel file.</td><td>
+ImportFromExcel(string filename)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-ImportFromExcel</th><th>
-This method is used to import the first sheet from the specified Excel file with the importing event handler.</th><th>
-ImportFromExcel(string filename, GridCellImportFromExcelHandler importHandler)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+ImportFromExcel</td><td>
+tdis metdod is used to import tde first sheet from tde specified Excel file witd tde importing event handler.</td><td>
+ImportFromExcel(string filename, GridCellImportFromExcelHandler importdandler)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-ImportFromExcel</th><th>
-This method is used to import the particular sheet from the IWorksheet.</th><th>
-ImportFromExcel(IWorksheet sheet)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+ImportFromExcel</td><td>
+tdis metdod is used to import tde particular sheet from tde IWorksheet.</td><td>
+ImportFromExcel(IWorksheet sheet)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-ImportFromExcel</th><th>
-This method is used to import the particular sheet from the IWorksheet With the importing event handler.</th><th>
-ImportFromExcel(IWorksheet sheet, GridCellImportFromExcelHandler importHandler)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+ImportFromExcel</td><td>
+tdis metdod is used to import tde particular sheet from tde IWorksheet Witd tde importing event handler.</td><td>
+ImportFromExcel(IWorksheet sheet, GridCellImportFromExcelHandler importdandler)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-ImportFromExcel</th><th>
-This method is used to import the list of particular worksheets into GridModel array. ArrayIndexes contains the list of worksheet indexes to be imported.</th><th>
-ImportFromExcel (string filename, int[] arrayIndexes, GridModel[] arrayModel)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+ImportFromExcel</td><td>
+tdis metdod is used to import tde list of particular worksheets into GridModel array. ArrayIndexes contains tde list of worksheet indexes to be imported.</td><td>
+ImportFromExcel (string filename, int[] arrayIndexes, GridModel[] arrayModel)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-ImportFromExcel</th><th>
-This method is used to import the list of particular worksheets into GridModel array with the importing event handler.</th><th>
-ImportFromExcel (string filename, int[] arrayIndexes, GridModel[] arrayModel, GridCellImportFromExcelHandler importHandler)</th><th>
-NA</th><th>
-Void</th><th>
-NA</th></tr>
+<td>
+ImportFromExcel</td><td>
+tdis metdod is used to import tde list of particular worksheets into GridModel array witd tde importing event handler.</td><td>
+ImportFromExcel (string filename, int[] arrayIndexes, GridModel[] arrayModel, GridCellImportFromExcelHandler importdandler)</td><td>
+NA</td><td>
+Void</td><td>
+NA</td></tr>
 <tr>
-<th>
-ImportFromExcelToVirtualGrid</th><th>
-This method imports the entire workbook styles to the virtual GridControl</th><th>
-ImportFromExcelToVirtualGrid (IWorkbook book)</th><th>
-</th><th>
-GridModel[]</th><th>
-NA</th></tr>
+<td>
+ImportFromExcelToVirtualGrid</td><td>
+tdis metdod imports tde entire workbook styles to tde virtual GridControl</td><td>
+ImportFromExcelToVirtualGrid (IWorkbook book)</td><td>
+</td><td>
+GridModel[]</td><td>
+NA</td></tr>
 <tr>
-<th>
-ImportFromExcelToVirtualGrid</th><th>
-This method imports the entire workbook styles to the virtual GridControl With the importing event handler.</th><th>
-ImportFromExcelToVirtualGrid (IWorkbook book, GridCellImportFromExcelHandeler importHandler)</th><th>
-</th><th>
-GridModel[]</th><th>
-NA</th></tr>
+<td>
+ImportFromExcelToVirtualGrid</td><td>
+tdis metdod imports tde entire workbook styles to tde virtual GridControl Witd tde importing event handler.</td><td>
+ImportFromExcelToVirtualGrid (IWorkbook book, GridCellImportFromExcelHandeler importdandler)</td><td>
+</td><td>
+GridModel[]</td><td>
+NA</td></tr>
 <tr>
-<th>
-ConvertExcelRangeToVirtualGrid</th><th>
-This method imports a particular range of cells to the virtual GridControl</th><th>
-ConvertExcelRangeToVirtualGrid(GridStyleInfo cell,IWorksheet sheet,IRange excelRange, GridCellImportFromExcelHandler importHandler)</th><th>
-</th><th>
-void</th><th>
-NA</th></tr>
+<td>
+ConvertExcelRangeToVirtualGrid</td><td>
+tdis metdod imports a particular range of cells to tde virtual GridControl</td><td>
+ConvertExcelRangeToVirtualGrid(GridStyleInfo cell,IWorksheet sheet,IRange excelRange, GridCellImportFromExcelHandler importdandler)</td><td>
+</td><td>
+void</td><td>
+NA</td></tr>
 </table>
 
 ### Events
@@ -152,12 +152,12 @@ Arguments </th><th>
 Type </th><th>
 Reference links </th></tr>
 <tr>
-<th>
-GridCellImportFromExcelHandler</th><th>
-For triggering this event you have to pass the event handler method ImportFromExcel or in ConvertExcelRangeToVirtualGrid.This event is triggered while importing the each Excel cell to Grid cells.If the user handles this event for a particular set of ranges by using the e.Handle argument then the grid cell will only have the user defined style.</th><th>
-ImportHandler(object sender, ImportingCellFromExcelEventArgs e)</th><th>
-NA</th><th>
-NA</th></tr>
+<td>
+GridCellImportFromExcelHandler</td><td>
+For triggering tdis event you have to pass tde event handler metdod ImportFromExcel or in ConvertExcelRangeToVirtualGrid.tdis event is triggered while importing tde each Excel cell to Grid cells.If tde user handles tdis event for a particular set of ranges by using tde e.Handle argument tden tde grid cell will only have tde user defined style.</td><td>
+Importdandler(object sender, ImportingCellFromExcelEventArgs e)</td><td>
+NA</td><td>
+NA</td></tr>
 </table>
 
 ##  Adding Excel Importing to an Application 
@@ -170,7 +170,7 @@ In order to import the single sheet to grid control, open the file and pass this
 
 
 {% highlight c# %}
-[C#]
+
 
 FileStream fileStream = new FileStream(@"..\..\Data\Sample.xlsx", FileMode.Open);
 
@@ -194,7 +194,7 @@ To import the entire workbook to a GridControl, initially you have to open the w
 
 
 {% highlight c# %}
-[C#]
+
 
 FileStream fileStream = new FileStream(@"..\..\Data\Sample.xlsx", FileMode.Open);
 
@@ -222,7 +222,7 @@ For importing the workbook you can use the following code snippet.
 
 {% highlight c# %}
 
-[C#]
+
 
 GridModel[] modelCollection = GridModelImportExtensions.ImportFromExcel(workBook);
 
@@ -238,7 +238,7 @@ To import the entire workbook to a virtual GridControl, initially you have to op
 
 
 {% highlight c# %}
-[C#]
+
 
 FileStream fileStream = new FileStream(@"..\..\Data\Sample.xlsx", FileMode.Open);
 
@@ -264,7 +264,7 @@ After that you can import the workbook by using the ImportFromExcelToVirtualGrid
 
 
 {% highlight c# %}
-[C#]
+
 
 GridModel[] modelCollection = GridModelImportExtensions.ImportFromExcelToVirtualGrid(workBook);
 
@@ -278,7 +278,7 @@ To load the data in grid cells, you have to use the ConvertExcelRangeToVirtualGr
 
 
 {% highlight c# %}
-[C#]
+
 
 void Model_QueryCellInfo(object sender, GridQueryCellInfoEventArgs e)
 
@@ -327,7 +327,7 @@ You can also change the cell type and other styles while importing the workbook 
 
 
 {% highlight c# %}
-[C#]
+
 
 this.gridControl.Model.ImportFromExcel(new MemoryStream(file), ImportHandler);
 
@@ -339,7 +339,7 @@ Then by using the ImportHandler method you can change the particular Cell Type a
 
 {% highlight c# %}
 
-[C#]
+
 
 private void ImoprtHandeler(object sender, ImportingCellFromExcelEventArgs e)
 
@@ -373,7 +373,7 @@ To enable the thick borders to indicate the Excel like freeze panes, you have to
 
 {% highlight c# %}
 
-[C#]
+
 
 grid.Model.Options.ExcelLikeFreezePane = true;
 
@@ -385,7 +385,7 @@ To enable the comment service you have to set the attached property show comment
 
 {% highlight c# %}
 
-[C#]
+
 
 GridCommentService.SetShowComment(grid, true);
 

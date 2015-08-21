@@ -24,7 +24,7 @@ The following code example illustrates how to add the MoreColor Option to an App
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -40,7 +40,7 @@ The following code example illustrates how to add the MoreColor Option to an App
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -70,12 +70,12 @@ colorpicker.MoreColorOptionVisibility = System.Visibility.Visible;
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 MoreColorOptionVisibility</td><td>

@@ -13,7 +13,7 @@ The RDL report generated using the Report Designer can be exported as an Excel d
 
 
 
-[C#]
+{% highlight C# %}
 
 //Instantiate the report writer with the parameter "ReportPath" and 
 
@@ -22,10 +22,10 @@ ReportDataSource Collection
 ReportWriter reportWriter = new ReportWriter(reportPath, dataSources);
 
 reportWriter.Save("Sample.xls", WriterFormat.Excel);
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 'Instantiate the report writer with the parameter "ReportPath" and 
 
@@ -35,5 +35,5 @@ Dim reportWriter As New ReportWriter (reportPath, dataSources)
 
 reportWriter.Save("Sample.xls", WriterFormat.Excel);
 
-
+{% endhighlight %}
 

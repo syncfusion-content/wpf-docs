@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains you about management of data. The operations like insert, delete and modifying data are explained here. SfDataGrid not only displays recordsin tabular view but has an interactive support to manage data also. 
 
-### Overview
+## Overview
 
 DataGrid control handles data updating with the help of INotifyPropertyChanged interface. By default, DataGrid does not update the sorting order, filtering, grouping and summaries.
 
@@ -23,9 +23,9 @@ _LiveDataUpdationMode property table_
 
 <table>
 <tr>
-<td>
-LiveDataUpdationMode</td><td>
-Description</td></tr>
+<th>
+LiveDataUpdationMode</th><th>
+Description</th></tr>
 <tr>
 <td>
 Default</td><td>
@@ -55,7 +55,7 @@ When you need an instant update that happened on DataSource to view, SfDataGrid 
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -92,15 +92,15 @@ When you set LiveDataUpdateMode as AllowDataShapping, it gets updated and arrang
 
 _LiveDataUpdateMode set as AllowDataShapping_
 
-### AddNewRow
+## AddNewRow
 
 This topic provides the description for AddNewRow feature in the DataGrid control that enables you to add new data rows in the DataGrid using the UI.
 
-#### Overview 
+### Overview 
 
 AddNewRow enables adding rows to enter new records in the DataGrid control. The new row is displayed, above, or below the rows in the DataGrid control. You can specify the AddNewRow position by using DataGrid’sSfDataGrid.AddNewRowPosition property.When using AddNewRow, DataModel has one ParameterlessConstructor (DefaultContructor).
 
-#### Adding AddNewRow to the DataGrid control
+### Adding AddNewRow to the DataGrid control
 
 The following code example illustrates how to add AddNewRow to an application:
 
@@ -108,7 +108,7 @@ The following code example illustrates how to add AddNewRow to an application:
 {% highlight xml %}
 
 
-[XAML]
+
 
    <syncfusion:SfDataGrid x:Name="datagrid"
 
@@ -122,7 +122,7 @@ The following code example illustrates how to add AddNewRow to an application:
 
 
 
-#### User Interface
+### User Interface
 
 
 
@@ -137,9 +137,9 @@ _AddNewRow property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AddNewRowPosition</td><td>
@@ -149,32 +149,33 @@ This is the Enum property that helps to get or set the AddNewRow position in Dat
 </td></tr>
 </table>
 
-> _Note: By default AddNewRowPosition is set as “None”._
+> Note: By default AddNewRowPosition is set as “None”.
 The following table describes you the event that participates in AddNewRow.
 
 _AddNewRow Event Table_
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Parameters</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Parameters</th><th>
+Description</th></tr>
 <tr>
 <td>
 AddNewRowIntiating</td><td>
 NewObject</td><td>
 This event is triggered when you start editing in AddNewRow.NewObject – This contains the newly created object that helps to set the default value when you start editing in AddNewRow.>  </td></tr>
 </table>
-> _Note: NewObject is the read-only property._
 
-#### Behavior
+> Note: NewObject is the read-only property.
+
+### Behavior
 
 1. New data is added when AddNewRow is no longer in focus and the data is valid.
 2. You can cancel the new row by pressing ESC twice.
 3. By default, new data is added in last. When LiveUpdateMode is set as AllowDataShapping, new data is added based on the sorted data position
 
-#### Limitations
+### Limitations
 
 1. AddNewRow only exists for master grid in the Master-Details view.
 
@@ -186,7 +187,7 @@ The following code example illustrates how to use AddNewRowInitiating event.
 {% highlight xml %}
 
 
-[XAML]
+
 
 AddNewRowInitiating="SfDataGrid_AddNewRowInitiating"
 
@@ -195,7 +196,7 @@ AddNewRowInitiating="SfDataGrid_AddNewRowInitiating"
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -212,11 +213,11 @@ void sfdatagrid_AddNewRowInitiating(object sender, Syncfusion.UI.Xaml.Grid.AddNe
 }
 {% endhighlight %}
 
-### Deleting
+## Deleting
 
 This section explains you how to delete the records, properties and an event that participates in deleting process. 
 
-####  Overview
+###  Overview
 
 SfDataGrid has built-in support for deleting records. You can delete a selected row by pressing the Delete key when SfDataGrid.AllowDeleting is set to ‘True’. When multiple records are to be removed from the Grid, you can select multiple records from the SfDataGrid and press Delete.
 
@@ -224,7 +225,7 @@ SfDataGrid has built-in support for deleting records. You can delete a selected 
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -243,7 +244,7 @@ Deleting rows triggers the following events in SfDataGrid before and after recor
 * SfDataGrid.RecordDeleting: Occurs before the records are removed from the collection. This event is cancelled.
 * SfDataGrid.RecordDeleted: Occurs after the records are removed from the collection.
 
-#### RecordDeleting Event
+### RecordDeleting Event
 
 This event occurs after you press Delete but before the records are removed from the collection. The RecordDeleting event handler receives two arguments namely sender that handles SfDataGrid and RecordDeletingEventArgs as objects.
 
@@ -253,7 +254,7 @@ The RecordDeletingEventArgs has the following properties:
 * OriginalSender: Gets the original sender from where the event is raised.
 * Items: Gets or sets the items to be removed from the source collection.
 
-#### RecordDeleted Event:
+### RecordDeleted Event:
 
 This event occurs after the selected rows are removed from the SfDataGrid. The RecordDeleted event handler receives two arguments namely sender that handles the SfDataGrid and RecordDeletedEventArgs as objects.
 
@@ -267,7 +268,7 @@ The following code example illustrates how to use this event.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -292,7 +293,7 @@ You can delete record using Remove() or RemoveAt (int index) in underlying colle
 
 {% highlight C# %}
 
-[C#]
+
 
 private void Delete_Click(object sender, RoutedEventArgs e)
 
@@ -312,9 +313,9 @@ private void Delete_Click(object sender, RoutedEventArgs e)
 
 Current item is currently selected record (that has selection border). When you want to use first method, you can select record and delete operation. 
 
-### How To
+## How To
 
-#### How to change the AddNewRow watermark text
+### How to change the AddNewRow watermark text
 
 DataGrid control enables you to change the AddNewRowwatermarktext by changing the Localization settings. By changing the AddNewRowText value in the Resource settings, you can change the AddNewRowwatermarktext.
 
@@ -350,11 +351,11 @@ _DataGrid with changed AddNewRow watermark text_
 
 
 
-> _Note: The resource file is hosted in Resources folder and sholud have name with Syncfusion.SfGrid.WPF.resx. Otherwise your changes are not taken into consideration._
+> Note: The resource file is hosted in Resources folder and sholud have name with Syncfusion.SfGrid.WPF.resx. Otherwise your changes are not taken into consideration.
 
 
 
-#### How to customize the AddNewRow watermark text wrapper
+### How to customize the AddNewRow watermark text wrapper
 
 Customize the appearance of the AddNewRowwatermarktext by editing the AddNewRowControl style. The following code example illustrates how to apply a custom background and foreground for the AddNewRowwatermark wrapper:
 
@@ -362,7 +363,7 @@ Customize the appearance of the AddNewRowwatermarktext by editing the AddNewRowC
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -480,14 +481,14 @@ You can add above code example to App.Xaml or in Windows.Resources. The followin
 
 _DataGrid with customized AddNewRow watermark text wrapper_
 
-#### How to validate AddNewRow
+### How to validate AddNewRow
 
 SfDataGrid control provides extensive support to use validation with AddNewRow. To validate the data in AddNewRow, you can use the Attributevalidation, Data validation using INotifyDataErrorInfo, or Custom validation using the RowValidating event. The following code example illustrates custom row validation with AddNewRow:
 
 
 {% highlight C# %}
 
-[C#]
+
 
 void OnRowValidating(object sender, RowValidatingEventArgs args)
 
@@ -524,16 +525,16 @@ The following screenshot illustrate the output.
 
 _Custom row validation with AddNewRow_
 
-> _Note: DataGrid adds the new data to the data source only when the data is valid._
+> Note: DataGrid adds the new data to the data source only when the data is valid.
 
-#### How to handle AddNewRow for complex properties 
+### How to handle AddNewRow for complex properties 
 
 When you start editing in AddNewRow, the DataGrid control creates an instance for a data object. When the data object contains complex properties, they do not initiate with the data object. Therefore, you need to initiate the complex property externally; otherwise the edited value is not committed in the cell. This requirement is achieved by using the AddNewRowInitiating event. The following code example illustrates this:
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
 
@@ -572,7 +573,7 @@ ItemsSource="{Binding Path=OrdersDetails}">
 
 {% highlight C# %}
 
-[C#]
+
 
 private void OnAddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs args)
 
@@ -585,14 +586,14 @@ data.EmployeeDetails = new Employees();
 }
 {% endhighlight %}
 
-#### How to Initialize the AddNewRow with Default Values
+### How to Initialize the AddNewRow with Default Values
 
 This topic explains you how to initialize the default values. You can achieve this requirement using AddNewRowInitiating event. 
 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -632,14 +633,14 @@ private void SfDataGrid_AddNewRowInitiating(object sender, Syncfusion.UI.Xaml.Gr
 
 When you click AddNewRow button, row is loaded with this data.
 
-#### Handle selection after items are removed from the grid
+### Handle selection after items are removed from the grid
 
 This article shows how to select a specified row after deleting. By default, when you delete a record from the Grid, the selection maintains the same position it is in. However, this behavior is overridden by handling the RecordDeleted Event. The following code example illustrates this:
 
 
 {% highlight C# %}
 
-[C#]
+
 
 sfDataGrid.RecordDeleted += OnRecordDeleted;
 
@@ -657,7 +658,7 @@ private void OnRecordDeleted(object sender, RecordDeletedEventArgs args)
 
 The previous code example resets the selection after every deletion.
 
-#### Remove specific records from the SfDataGrid control when you select multiple records and press the Delete key
+### Remove specific records from the SfDataGrid control when you select multiple records and press the Delete key
 
 This section explains you how to remove specific records from SfDataGrid when you select multiple records from the Grid and press Delete.
 
@@ -666,7 +667,7 @@ The RecordDeletingEventArgs argument in the RecordDeleting event holds the Items
 
 {% highlight C# %}
 
-[C#]
+
 
 sfDataGrid.RecordDeleting += OnRecordDeleting;
 

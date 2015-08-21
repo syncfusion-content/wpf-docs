@@ -11,11 +11,11 @@ documentation: ug
 
 This section explains you how to Export the SfDatagrid to Excel and PDF file.
 
-### Overview
+## Overview
 
 SfDataGrid control provides support to Export data to Excel and PDF. It also provides support for Grouping, Filtering, Sorting, Paging and Details View when Exporting.
 
-### Export to Excel
+## Export to Excel
 
 SfDataGrid control provides support to Export data to Excel and returns an ExcelEngine that contains the exported workbook.
 
@@ -29,7 +29,7 @@ You can Export SfDatagrid to Excel by using the following extension methods pres
 * ExportCollectionToExcel
 * ExportToExcel
 
-#### ExportToExcel
+### ExportToExcel
 
 
 The ExportToExcel method has the following overloads.
@@ -38,10 +38,10 @@ _Method Table_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Overload</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Overload</th><th>
+Description</th></tr>
 <tr>
 <td>
 ExportToExcel</td><td>
@@ -60,7 +60,7 @@ You can Export data to Excel by using the ExportToExcel method by passing ExcelE
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -153,10 +153,10 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
 DefaultValue</td></tr>
 <tr>
 <td>
@@ -226,7 +226,7 @@ Delegate handler customizes the exporting of Details View.</td><td>
   -</td></tr>
 </table>
 
-#### ExportCollectionToExcel
+### ExportCollectionToExcel
 
 The ExportCollectionToExcel method has the following overloads.
 
@@ -234,10 +234,10 @@ _Method Table_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Overload</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Overload</th><th>
+Description</th></tr>
 <tr>
 <td>
 ExportCollectionToExcel</td><td>
@@ -261,7 +261,7 @@ The following code example illustrates how to export data to Excel by using the 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -312,7 +312,7 @@ if (sfd.ShowDialog() == true)
 }
 {% endhighlight %}
 
-#### Delegate Event Handlers
+### Delegate Event Handlers
 
 ExportToExcel and ExportCollectionToExcel provide the following delegate handlers to customize the exporting behavior.
 
@@ -322,7 +322,7 @@ ExportToExcel and ExportCollectionToExcel provide the following delegate handler
 
 
 
-##### GridExcelExportingHandler
+#### GridExcelExportingHandler
 
 This delegate handler allows you to customize the styles for Headers, Table Summary, Group Summary and Caption Summary rows. It includes the GridExcelExportingEventArgs event data class that contains the following properties.
 
@@ -330,10 +330,10 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 CellType(ReadOnly property)</td><td>
@@ -367,7 +367,7 @@ The following code example illustrates how to apply cell styles based on the cel
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -455,7 +455,7 @@ _Exported excel sheet_
 
 
 
-##### GridCellExcelExportingHandler
+#### GridCellExcelExportingHandler
 
 A delegate handler handles or customizes a cell in Excel. It occurs for every exported cell. It includes the GridCellExcelExportingEventArgs event data class that contains the following properties.
 
@@ -463,10 +463,10 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 CellType(ReadOnly property)</td><td>
@@ -515,7 +515,7 @@ The following code example illustrates how to customize the font based on some c
 
 {% highlight C# %}
 
-[C#]
+
 
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
 
@@ -565,7 +565,7 @@ The following screenshot displays the Exported excel sheet,
 
 _Exported excel sheet_
 
-##### GridChildExportingEventHandler
+#### GridChildExportingEventHandler
 
 This handler allows you to skip the exporting of DetailsView Grid columns or the whole DetailsView Grid. It includes the GridChildExportingEventArgs event data class that contains the following properties.
 
@@ -573,10 +573,10 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 Relational Column</td><td>
@@ -610,7 +610,7 @@ The following code example illustrates how to skip the exporting of Details View
 
 {% highlight C# %}
 
-[C#]
+
 
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
 
@@ -656,7 +656,7 @@ The following screenshot displays the exported excel sheet,
 
 _Exported excel sheet_
 
-### Export to PDF
+## Export to PDF
 
 SfDataGrid control provides support to Export its content into a PDF file. You can export Grouping, Sorting, Filtering, Paging, Summaries and Details view into PDF. 
 
@@ -671,10 +671,10 @@ _Method Table_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 ExportToPdf</td><td>
@@ -706,11 +706,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 AutoColumnWidth</td><td>
@@ -821,7 +821,7 @@ The following code example illustrates you how to export SfDataGrid into PDF by 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -888,7 +888,7 @@ The following screenshot displays the exported Pdf file.
 
 _Exported Pdf file_
 
-#### Delegate and Events
+### Delegate and Events
 
 Export to Pdf provides the following delegate handler to customize the exporting behavior.
 
@@ -896,7 +896,8 @@ Export to Pdf provides the following delegate handler to customize the exporting
 * GridCellPdfExportingEventhandler
 * ChildGridPdfExportingEventhandler
 * PdfHeaderFooterEventHandler
-##### GridPdfExportingEventhandler
+
+#### GridPdfExportingEventhandler
 
 
 This delegate handler allows you to customize the styles for Header, Records, Table Summary, Group Summary and Caption Summary rows. It is invoked for each row types. It includes the GridPdfExportingEventArgs class that contains the following properties.
@@ -905,10 +906,10 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 CellType</td><td>
@@ -937,7 +938,7 @@ The following code example illustrates how to apply cell styles based on the cel
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -1009,10 +1010,10 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 CellType</td><td>
@@ -1066,7 +1067,7 @@ The following code example illustrates how to customize the particular PDFGridCe
 
 {% highlight C# %}
 
-[C#]
+
 
 var options = new PdfExportingOptions();
 
@@ -1124,7 +1125,7 @@ The following screenshot displays the exported PDF file.
 
 _Exported PDF file_
 
-##### ChildGridPdfExportingEventhandler
+#### ChildGridPdfExportingEventhandler
 
 This handler allows you to skip or customize the exporting of DetailsViewGrid. It is invoked for each details view while exporting. It includes the ChildGridPdfExportingEventArgs that includes the following properties.
 
@@ -1132,10 +1133,10 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 RelationalColumn</td><td>
@@ -1169,7 +1170,7 @@ The following code example illustrates how to skip and customize the exporting o
 
 {% highlight C# %}
 
-[C#]
+
 
 var options = new PdfExportingOptions();
 
@@ -1223,7 +1224,7 @@ The following screenshot displays the exported PDF file.
 
 _Exported PDF file_
 
-##### PdfHeaderFooterEventhandler
+### PdfHeaderFooterEventhandler
 
 This handler allows you to add the Header and Footer to each page of exported PDF file. It is invoked only once while exporting SfDataGrid into PdfDocument using ExportToPdf method and it is not invoked while using ExportToPdfGrid method. It includes the PdfHeaderFooterEventArgs that contains the following properties.
 
@@ -1231,10 +1232,10 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 PdfPage</td><td>
@@ -1253,7 +1254,7 @@ The following code example illustrates how to add Header and Footer into the PDF
 
 {% highlight C# %}
 
-[C#]
+
 
 var options = new PdfExportingOptions();
 
@@ -1299,9 +1300,9 @@ The following screenshot displays you the exported PDF file.
 
 _Exported PDF file_
 
-#### How To
+## How To
 
-##### How to embedded fonts in PDF export
+### How to embedded fonts in PDF export
 
 This feature provides support to embed your own fonts into exported Pdf file.You can create a new font from the font file and you can set that font into the Pdf by using the delegate handlers.
 
@@ -1310,7 +1311,7 @@ The following code example illustrates how to create font from the font file and
 
 {% highlight C# %}
 
-[C#]
+
 
 static void GridPDFExportingEventhandler(object sender, GridPdfExportingEventArgs e)
 
@@ -1337,7 +1338,7 @@ static void GridPDFExportingEventhandler(object sender, GridPdfExportingEventArg
 }
 {% endhighlight %}
 
-##### How to change PDF page orientation
+### How to change PDF page orientation
 
 You can change the page orientation of Pdf while exporting. The default page orientation is Portrait.
 
@@ -1348,7 +1349,7 @@ The following code example illustrates how to change page orientation to Landsca
 
 {% highlight C# %}
 
-[C#]
+
 
 var options = new PdfExportingOptions();
 

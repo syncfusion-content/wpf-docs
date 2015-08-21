@@ -15,7 +15,7 @@ The following code describes getting the report as stream:
 
 {% highlight C# %}   
 
-[C#]
+
 
 
 Stream stream = this.olapClient1.GetReportStream();
@@ -26,7 +26,7 @@ Stream stream = this.olapClient1.GetReportStream();
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 
 Dim stream As Stream = Me.olapClient1.GetReportStream()
@@ -39,7 +39,7 @@ The following code will illustrate how to load a stream to OLAP Client:
 
 {% highlight C# %}  
 
- [C#]
+
 
 
 
@@ -51,7 +51,7 @@ this.olapClient1.LoadReportStream(reportStream);
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 
 Me.olapClient1.LoadReportStream(reportStream)
@@ -66,7 +66,7 @@ Storing Report as a Stream to the Data Base:
 
 {% highlight C# %}  
 
- [C#]
+ 
 
 
 
@@ -112,7 +112,7 @@ if (stream!= null)
 
 {% highlight vbnet %} 
 
- [VB]
+ 
 
 
 
@@ -156,7 +156,7 @@ Loading Report as a stream to OLAP Client.
 
 {% highlight C# %} 
 
-[C#]
+
 
 
 
@@ -206,7 +206,7 @@ con.Close();
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 
 

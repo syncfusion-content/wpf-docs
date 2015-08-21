@@ -15,14 +15,14 @@ CurrencyTextBox accepts null values. To enable the null option you have to set t
 
 {% highlight xml %}
 
-[XAML]
+
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" UseNullOption="True" NullValue="100"/>
 {% endhighlight %}
 
 {% highlight C# %}
 
 
-[C#]Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new  Syncfusion.Windows.Shared.CurrencyTextBox();
+Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new  Syncfusion.Windows.Shared.CurrencyTextBox();
 currencyTextBox.Width = 100;
 currencyTextBox.Height = 25;
 currencyTextBox.UseNullOption = true;
@@ -42,13 +42,13 @@ In this sample, the NullValue (NullValue = 1) is set to the Value property of th
 {% highlight xml %}
 
 
-[XAML]
+
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" UseNullOption="True" NullValue="{x:Null}"/>
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new   Syncfusion.Windows.Shared.CurrencyTextBox();
+Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new   Syncfusion.Windows.Shared.CurrencyTextBox();
 currencyTextBox.Width = 100;
 currencyTextBox.Height = 25;
 currencyTextBox.UseNullOption = true;
@@ -60,7 +60,7 @@ In this sample, the NullValue (NullValue = null) is set to the Value property of
 
 
 
-{{ '![](Null-Value-support_images/Null-Value-support_img2.png)' | markdownify }}
+![](Null-Value-support_images/Null-Value-support_img2.png)
 
 
 

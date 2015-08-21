@@ -27,8 +27,7 @@ Content compression involves following:
 Advantages of Content compression
 
 * Reduces a text file upto 50 percent of its original size.
-> 
-_Note: Compression is performed by a program that uses a formula or algorithm, which determines how to compress or decompress the data. This algorithm is one of the critical factors that determines compression quality and is elaborated below._ 
+>  Note: Compression is performed by a program that uses a formula or algorithm, which determines how to compress or decompress the data. This algorithm is one of the critical factors that determines compression quality and is elaborated below. 
 
 Controlling the Compression Levels 
 
@@ -77,7 +76,7 @@ You can verify the compliance of a PDF file by using the Preflight tool. Using t
 
 The following code example illustrates you on how to create PDF/A-1b compliant output:
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -112,10 +111,10 @@ g.DrawString("Hello world!", font, brush, new PointF(20, 20));
 document.Save("Output.pdf");
 
 document.Close();
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -150,6 +149,7 @@ g.DrawString("Hello world!", font, brush, New PointF(20, 20))
 document.Save("Output.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ## PDF/X-1a
 
@@ -162,7 +162,7 @@ PDF/X-1a also eliminates the most common errors in file preparation. Sending the
 
 The following code example illustrates how to create PDF/A-1b compliant output:
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -197,10 +197,10 @@ g.DrawString("Hello world!", font, brush, new PointF(20, 20));
 document.Save("Output.pdf");
 
 document.Close();
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -236,5 +236,5 @@ document.Save("Output.pdf")
 
 document.Close()
 
-
+{% endhighlight %}
 

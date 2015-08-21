@@ -48,7 +48,7 @@ These events can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -62,7 +62,7 @@ this.grid.CommitCellInfo += new GridCommitCellInfoEventHandler(grid_CommitCellIn
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -150,7 +150,7 @@ _QueryCellInfo and CommitCellInfo_
 
 ## QueryBaseStyles
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -218,7 +218,7 @@ This event can be triggered using the following code:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -266,7 +266,7 @@ This event can be triggered using the following code:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -278,7 +278,7 @@ grid.QueryCoveredRange += new GridQueryBaseStylesEventArgs (grid_QueryCoveredRan
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -346,7 +346,7 @@ This event can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -358,7 +358,7 @@ grid.QueryCellSpanBackgrounds += new GridQueryCellSpanBackgroundsEventHandler (g
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -470,7 +470,7 @@ These events can be invoked as follows:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -484,7 +484,7 @@ grid.ResizingColumns += new GridResizingColumnsEventHandler(grid_ResizingColumns
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -588,7 +588,7 @@ This event can be triggered using the following code:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -602,7 +602,7 @@ grid.ResizingColumns += new GridResizingColumnsEventHandler (grid_ResizingColumn
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -661,7 +661,7 @@ This event can be triggered using the following code:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -675,7 +675,7 @@ grid.Model.ColumnsInserted += new GridRangeInsertedEventHandler (Model_ColumnsIn
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -731,7 +731,7 @@ This event can be triggered using the following code:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -745,7 +745,7 @@ grid.Model.ColumnsMoved += new GridRangeMovedEventHandler (Model_ColumnsMoved);
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -797,7 +797,7 @@ This event can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -812,7 +812,7 @@ grid.Model.ColumnsRemoved += new GridRangeRemovedEventHandler (Model_ColumnsRemo
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -874,7 +874,7 @@ This event can be triggered using the following code:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -888,7 +888,7 @@ The following event handler prevents the data in row 2 from getting copied.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -939,7 +939,7 @@ This event can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -953,7 +953,7 @@ The following event handler prevents the data in row 2 from getting cut.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1004,7 +1004,7 @@ This event can be triggered using the following code:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1019,7 +1019,7 @@ The following event handler prevents the data in row 2 from getting pasted.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1070,7 +1070,7 @@ This event can be triggered using the following code:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1084,7 +1084,7 @@ The following event handler sets up new data for clipboard copy.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1139,7 +1139,7 @@ This event can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1153,7 +1153,7 @@ The following event handler sets up new data for clipboard cut operation.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1208,7 +1208,7 @@ This event can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1222,7 +1222,7 @@ The following event handler sets up new data for clipboard paste.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1255,7 +1255,7 @@ This event can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1269,7 +1269,7 @@ The following event handler sets up new data for clipboard paste.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1305,7 +1305,7 @@ This event can be triggered using the following code:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1318,7 +1318,7 @@ grid.CellClick += new GridCellClickEventHandler(grid_CellClick);
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1361,7 +1361,7 @@ These events can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1380,7 +1380,7 @@ grid.CellMouseUp += new GridCellMouseControllerEventHandler(grid_CellMouseUp);
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1472,7 +1472,7 @@ This event can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1484,7 +1484,7 @@ grid.CurrentCellActivating += new GridCurrentCellActivatingEventHandler(grid_Cur
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1507,7 +1507,7 @@ This event can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1520,7 +1520,7 @@ grid.CurrentCellActivated += new GridRoutedEventHandler(grid_CurrentCellActivate
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1543,7 +1543,7 @@ This event can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1555,7 +1555,7 @@ grid.CurrentCellDeactivating += new GridCancelRoutedEventHandler(grid_CurrentCel
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1578,7 +1578,7 @@ This event can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1591,7 +1591,7 @@ grid.CurrentCellDeactivated += new GridCurrentCellDeactivatedEventHandler(grid_C
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1614,7 +1614,7 @@ This event can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1627,7 +1627,7 @@ grid.CurrentCellStartEditing += new GridCancelRoutedEventHandler(grid_CurrentCel
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1650,7 +1650,7 @@ This event can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1662,7 +1662,7 @@ grid.CurrentCellEditingComplete += new GridRoutedEventHandler(grid_CurrentCellEd
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1686,7 +1686,7 @@ This event can be triggered using the following code:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1700,7 +1700,7 @@ grid.CurrentCellValidating += new GridCancelRoutedEventHandler(grid_CurrentCellV
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1723,7 +1723,7 @@ This event can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1737,7 +1737,7 @@ grid.CurrentCellValidated += new GridRoutedEventHandler(grid_CurrentCellValidate
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1760,7 +1760,7 @@ This event can be triggered using the following code:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1774,7 +1774,7 @@ grid.CurrentCellChanging += new GridCancelRoutedEventHandler(grid_CurrentCellCha
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1797,7 +1797,7 @@ This event can be triggered using the following code:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1811,7 +1811,7 @@ grid.CurrentCellChanged += new GridRoutedEventHandler(grid_CurrentCellChanged);
 
 {% highlight c# %}
 
- [C#]
+ 
 
 
 

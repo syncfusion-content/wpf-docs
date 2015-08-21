@@ -81,7 +81,7 @@ The following code illustrates how to add the Dependency Relationship between ta
 
 
 {% highlight c# %}
-[C#]
+
 
 GanttItemSource = new ObservableCollection<TaskDetails>();
 
@@ -227,7 +227,7 @@ The dynamic editing of predecessor will be automatically included in the Gantt b
 
 {% highlight html %}
 
-[XAML] 
+ 
 
    <gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
 
@@ -271,7 +271,7 @@ The following code will illustrate how to dynamically add resource and predecess
 
 
 {% highlight c# %}
-[C#]
+
 
    // To Add the Dynamic Predecessors
 

@@ -13,7 +13,6 @@ documentation: ug
 
 The visibility of current time indicator enabled by using the CurrentTimeIndicatorVisibility property of SfSchedule Control.
 {% highlight html %}
-[XAML]
 
 
 
@@ -29,7 +28,6 @@ The visibility of current time indicator enabled by using the CurrentTimeIndicat
 {% endhighlight  %}
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -59,7 +57,6 @@ The visibility of current time indicator enabled by using the CurrentTimeIndicat
 
 The CurrentTimeIndicator can be customized by using the__CurrentTimeIndicatorTemplate of SfScheduleControl.
 {% highlight html %}
-[XAML]
 
 
 
@@ -87,7 +84,6 @@ The CurrentTimeIndicator can be customized by using the__CurrentTimeIndicatorTem
 {% endhighlight  %}
 
 {% highlight c# %}
-[C#]
 
 
 

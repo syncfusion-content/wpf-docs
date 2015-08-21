@@ -25,7 +25,7 @@ The following are the steps to create the MenuAdv control using Visual Studio.
 
 1. Drag MenuAdv from the Visual Studio Toolbox and drop it in the designer.
 
-    ![](Getting-Started_images/Getting-Started_img2.png)
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -34,11 +34,14 @@ The following are the steps to create the MenuAdv control using Visual Studio.
 
 
 
-    ![](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
 4. Using the Collection Editor, add the GroupBarItems and configure their properties.
+
+   {:.prettyprint}
+
 ### Through Expression Blend
 
 
@@ -50,8 +53,7 @@ The MenuAdv control can also be created and configured using Expression Blend. T
 2. Search for MenuAdv in the Toolbox.
 
 
-
-	![](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -60,8 +62,7 @@ The MenuAdv control can also be created and configured using Expression Blend. T
 5. 	Click Items (Collection) under Common Properties.
 
 
-
-	![](Getting-Started_images/Getting-Started_img5.png)
+   ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -78,9 +79,9 @@ The MenuAdv control can also be created and configured using Expression Blend. T
 
 	![](Getting-Started_images/Getting-Started_img7.png)
 
+   {:.prettyprint}
 
-
-> _Note: You can customize the appearance of the MenuItemAdv using the template-editing feature available in the Expression Blend._
+>  Note: You can customize the appearance of the MenuItemAdv using the template-editing feature available in the Expression Blend.
 
 ### Through XAML
 
@@ -89,7 +90,7 @@ The MenuAdv control can also be created through XAML. The following code example
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:MenuAdv>
 
@@ -151,7 +152,7 @@ To create the MenuAdv control through C#, include the following namespace to the
 
 {% highlight C# %}
 
-[C#]
+
 
 using Syncfusion.Windows.Shared;
 
@@ -163,7 +164,7 @@ using Syncfusion.Windows.Shared;
 
  {% highlight C# %}
 
- [C#]
+ 
 
 MenuAdv mAdv = new MenuAdv();
 

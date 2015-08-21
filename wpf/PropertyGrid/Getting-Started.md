@@ -31,13 +31,13 @@ To create the PropertyGrid control:
 
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img1.png)
-{:.image }
+
 
 
 
 
 ![](Getting-Started_images/Getting-Started_img2.png)
-{:.image }
+
 
 
 
@@ -58,7 +58,7 @@ The PropertyGrid control can also be created and configured using Microsoft Expr
 
 
 ![](Getting-Started_images/Getting-Started_img3.png)
-{:.image }
+
 
 
 
@@ -68,7 +68,7 @@ The PropertyGrid control can also be created and configured using Microsoft Expr
 
 
 ![](Getting-Started_images/Getting-Started_img4.png)
-{:.image }
+
 
 
 
@@ -87,25 +87,25 @@ The following code snippet shows how to create the PropertyGrid control in XAML.
 
 
 
-[XAML]
+{% highlight xml %}
 
-&lt;syncfusion:PropertyGrid  Name="propertyGrid1" Height="500" Width="300" &gt;
-
-
-
-   &lt;syncfusion:PropertyGrid.SelectedObject&gt;
-
-       &lt;Button/&gt;
-
-   &lt;/syncfusion:PropertyGrid.SelectedObject&gt;
+<syncfusion:PropertyGrid  Name="propertyGrid1" Height="500" Width="300" >
 
 
 
-&lt;/syncfusion:PropertyGrid&gt;
+   <syncfusion:PropertyGrid.SelectedObject>
+
+       <Button/>
+
+   </syncfusion:PropertyGrid.SelectedObject>
 
 
 
+</syncfusion:PropertyGrid>
 
+
+
+{% endhighlight %}
 
 
 
@@ -116,7 +116,7 @@ This will create the property as shown in the following screenshot:
 
 
 ![](Getting-Started_images/Getting-Started_img5.png)
-{:.image }
+
 
 
 ### Through C#
@@ -127,26 +127,26 @@ To create the PropertyGrid control:
 
 
 
-[C#]
+{% highlight c# %}
 
 using Syncfusion.Windows.PropertyGrid;
 
 
-
+{% endhighlight %}
 
 
 2. Create the PropertyGrid as follows:
 
 
 
-[C#]
+{% highlight c# %}
 
 PropertyGrid pGrid = new PropertyGrid();
 
             pGrid.SelectedObject = new Button();
 
 
-
+{% endhighlight %}
 
 
 ### Custom Object
@@ -157,7 +157,7 @@ You can edit the custom object properties using the PropertyGrid. The following 
 
 
 
-[C#]
+{% highlight c# %}
 
 [TypeConverter(typeof(ExpandableObjects))]
 
@@ -356,21 +356,21 @@ You can edit the custom object properties using the PropertyGrid. The following 
     }
 
 
-
+{% endhighlight %}
 
 
 2. Set the SelectedObject of the property to the instance of the class Person.
 
 
 
-[C#]
+{% highlight c# %}
 
 PropertyGrid pGrid = new PropertyGrid();
 
             pGrid.SelectedObject = new Person();
 
 
-
+{% endhighlight %}
 
 
 3. The PropertyGrid will be generated as shown in the following screenshot.
@@ -378,7 +378,7 @@ PropertyGrid pGrid = new PropertyGrid();
 
 
 ![](Getting-Started_images/Getting-Started_img6.png)
-{:.image }
+
 
 
 ### Custom Editor
@@ -389,7 +389,7 @@ The PropertyGrid also provides custom editor support. The following example show
 
 
 
-[C#]
+{% highlight c# %}
 
 public class UpDownEditor : ITypeEditor
 
@@ -510,7 +510,7 @@ public class UpDownEditor : ITypeEditor
 
 
 
-
+{% endhighlight %}
 
 
 The UpDownEditor given in the above code snippet is used to edit the double values. Since the UpDown control has features like scroll buttons to increase the value, it makes it easier to edit the property values of type double. 
@@ -519,24 +519,24 @@ The UpDownEditor given in the above code snippet is used to edit the double valu
 
 
 
-[C#]
+{% highlight c# %}
 
 CustomEditor upDownEditor = new CustomEditor() { HasPropertyType = true, 			PropertyType = typeof(double), Editor = new UpDownEditor() };
 
 
-
+{% endhighlight %}
 
 
 3. Add this custom editor instance to the CustomEditorCollection property of the PropertyGrid as follows:
 
 
 
-[C#]
+{% highlight c# %}
 
 pgridInstance.CustomEditorCollection.Add(brusheditor);            
 
 
-
+{% endhighlight %}
 
 
 The PropertyGrid displays the UpDownEditor as shown in the following screenshot for the double type values.
@@ -544,7 +544,7 @@ The PropertyGrid displays the UpDownEditor as shown in the following screenshot 
 
 
 ![](Getting-Started_images/Getting-Started_img7.png)
-{:.image }
+
 
 
 ## Visual Styles
@@ -565,7 +565,7 @@ The visual style can be applied in XAML as follows:
 
 
 
- [XAML]
+{% highlight xml %}
 
 <syncfusion:PropertyGrid
 
@@ -573,7 +573,7 @@ syncfusion:SkinStorage.VisualStyle="Office2010Blue"        />
 
 
 
-
+{% endhighlight %}
 
 The PropertyGrid control gets the Office2010Blue look.
 
@@ -581,18 +581,18 @@ The visual styles can be applied in C# as follows:
 
 
 
-[C#]
+{% highlight c# %}
 
 SkinStorage.SetVisualStyle(propertyGridInstance, "Office2010Blue");
 
-
+{% endhighlight %}
 
 ## Structure of the PropertyGrid Control
 
 
 
 ![](Getting-Started_images/Getting-Started_img8.png)
-{:.image }
+
 
 
 
@@ -617,7 +617,7 @@ Following are the steps to add the PropertyGrid control by using VisualStudio in
 
 
 ![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img9.png)
-{:.image }
+
 
 
 2. On the Project Dialog window, select WPF Application, in the Name field, type the name of the project, and then click OK.
@@ -631,7 +631,7 @@ Following are the steps to add the PropertyGrid control by using VisualStudio in
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -646,11 +646,11 @@ propertyGrid.SelectedObject = new Button();
 LayoutRoot.Children.Add(propertyGrid);
 
 
-
+{% endhighlight %}
 
 
 ![](Getting-Started_images/Getting-Started_img10.png)
-{:.image }
+
 
 
 
@@ -668,22 +668,22 @@ Following are the steps to add the PropertyGrid control by using Visual Studio i
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
-&lt;Window x:Class="PropertyGridSample.MainWindow"        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        Title="MainWindow" Height="350" Width="525"        xmlns:syncfusion="clr-namespace:Syncfusion.Windows.PropertyGrid;assembly=Syncfusion.PropertyGrid.Wpf"&gt;
-    &lt;Grid x:Name="LayoutRoot"&gt;
-        &lt;syncfusion:PropertyGrid Margin="109,32,117,47" SelectedObject="{Binding ElementName=LayoutRoot}" BorderBrush="Gray" BorderThickness="2"/&gt;        
-    &lt;/Grid&gt;
-&lt;/Window&gt;
+<Window x:Class="PropertyGridSample.MainWindow"       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        Title="MainWindow" Height="350" Width="525"        xmlns:syncfusion="clr-namespace:Syncfusion.Windows.PropertyGrid;assembly=Syncfusion.PropertyGrid.Wpf">
+    <Grid x:Name="LayoutRoot">
+        <syncfusion:PropertyGrid Margin="109,32,117,47" SelectedObject="{Binding ElementName=LayoutRoot}" BorderBrush="Gray" BorderThickness="2"/>        
+    </Grid>
+</Window>
 
 
-
+{% endhighlight %}
 
 
 ![](Getting-Started_images/Getting-Started_img11.png)
-{:.image }
+
 
 
 ### Adding through Blend
@@ -697,7 +697,7 @@ Following are the steps to add the PropertyGrid control by using Blend.
 
 
 ![](Getting-Started_images/Getting-Started_img12.png)
-{:.image }
+
 
 
 
@@ -707,7 +707,7 @@ Following are the steps to add the PropertyGrid control by using Blend.
 
 
 ![](Getting-Started_images/Getting-Started_img13.png)
-{:.image }
+
 
 
 3. Add the following Reference with the sample project.
@@ -723,7 +723,7 @@ Following are the steps to add the PropertyGrid control by using Blend.
 
 
 ![](Getting-Started_images/Getting-Started_img14.png)
-{:.image }
+
 
 
 

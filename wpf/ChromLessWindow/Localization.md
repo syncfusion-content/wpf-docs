@@ -21,9 +21,10 @@ Description</th></tr>
 CloseTooltip</td><td>
 Sets the string for the ToolTip of Close button in the ChromelessWindow.</td></tr>
 <tr>
-<td colspan = "2">
+<td colspan = "1">
 {{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/59.png](Localization_images/Localization_img1.png)'| markdownify}}
-
+</td>
+<td>
 {{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/60.png](Localization_images/Localization_img2.png)'| markdownify}}
 
 </td></tr>
@@ -32,9 +33,10 @@ Sets the string for the ToolTip of Close button in the ChromelessWindow.</td></
 MaximizeTooltip</td><td>
 Sets the string for the ToolTip of Maximize button in the ChromelessWindow.</td></tr>
 <tr>
-<td colspan = "2">
+<td colspan = "1">
 {{'![](Localization_images/Localization_img3.png)'| markdownify}}
-
+</td>
+<td>
 {{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/62.png](Localization_images/Localization_img4.png)'| markdownify}}
 
 </td></tr>
@@ -43,9 +45,10 @@ Sets the string for the ToolTip of Maximize button in the ChromelessWindow.</td>
 MinimizeTooltip</td><td>
 Sets the string for the ToolTip of Minimize button in the ChromelessWindow.</td></tr>
 <tr>
-<td colspan = "2">
+<td colspan = "1">
 {{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/63.png](Localization_images/Localization_img5.png)'| markdownify}}
-
+</td>
+<td>
 {{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/64.png](Localization_images/Localization_img6.png)'| markdownify}}
 
 </td></tr>
@@ -54,9 +57,10 @@ Sets the string for the ToolTip of Minimize button in the ChromelessWindow.</td>
 RestoreTooltip</td><td>
 Sets the string for the ToolTip of Restore button in the ChromelessWindow.</td></tr>
 <tr>
-<td colspan = "2">
+<td colspan = "1">
 {{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/65.png](Localization_images/Localization_img7.png)'| markdownify}}
-
+</td>
+<td>
 {{'![C:/Users/Sugapriyam/Desktop/local/LocalizationUG_Doc Image/LocalizationUG_Doc Image/66.png](Localization_images/Localization_img8.png)'| markdownify}}
 
 </td></tr>

@@ -24,17 +24,17 @@ Important features of Essential Presentation are as follows.
 
 
 
-> _The current version of Essential Presentation is in preview. It does not support some features in MS PowerPoint such as Word Art, Smart Art, Notes slide, editing Master slides, Animations, Transitions, Comment, Header & Footer, Ole Object, creation & editing of Handouts, equations, built-in themes & its variants._ 
+> The current version of Essential Presentation is in preview. It does not support some features in MS PowerPoint such as Word Art, Smart Art, Notes slide, editing Master slides, Animations, Transitions, Comment, Header & Footer, Ole Object, creation & editing of Handouts, equations, built-in themes & its variants.
 
 # System Requirement
 
-_System Requirement_
+System Requirement
 
 <table>
 <tr>
-<td>
-Supported .NET Frameworks versions</td><td>
-* .NET 2.0* .NET 3.5* .NET 4.0* .NET 4.5 * .NET 4.5.1</td></tr>
+<th>
+Supported .NET Frameworks versions</th><th>
+* .NET 2.0* .NET 3.5* .NET 4.0* .NET 4.5 * .NET 4.5.1</th></tr>
 <tr>
 <td>
 <br>Compatible MS PowerPoint versions</td><td>
@@ -72,13 +72,13 @@ For converting a Presentation file into PDF, the following assemblies need to be
 * Syncfusion.Pdf.Base
 * Syncfusion.PresentationToPDFConverter.Base
 
-_List of Assemblies_
+List of Assemblies
 
 <table>
 <tr>
-<td>
-{{ '**Assembly Name**' | markdownify }}</td><td>
-{{ '**Short Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Assembly Name**' | markdownify }}</th><th>
+{{ '**Short Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 Syncfusion.Presentation.Base</td><td>

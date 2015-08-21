@@ -23,7 +23,7 @@ Position of the tooltip displayed relative to the Radial Menu can be customized 
 
 {%highlight xml%}
 
-[XAML]
+
 
 <navigation:SfRadialMenuItem  ToolTip="Bold" ToolTipPlacement="Top"  />
 

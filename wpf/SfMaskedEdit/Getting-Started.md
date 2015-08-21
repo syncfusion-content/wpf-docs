@@ -31,7 +31,7 @@ The following code example shows how to create the SfMaskedEdit from XAML.
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfMaskedEdit HorizontalAlignment="Left" Margin="103,143,0,0" TextWrapping="Wrap" Text="SfMaskedEdit" VerticalAlignment="Top" Width="255" Height="46"/>
 
@@ -47,7 +47,7 @@ To create a MaskedEdit control, use the following code.
 
 {% highlight C# %}
 
-[C#]
+
 
    SfMaskedEdit maskededit = new SfMaskedEdit() { Text = "SfMaskedEdit", Width = 150, Height = 50 };
 

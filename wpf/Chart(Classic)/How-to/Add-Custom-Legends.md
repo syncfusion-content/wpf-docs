@@ -7,13 +7,13 @@ control: Chart (Classic)
 documentation: ug
 ---
 
-### Add Custom Legends
+## Add Custom Legends
 
 It's easy to replace existing, default, legend items with custom items in Chart or Chart Area legends.
 
 Remember to clear the existing default entries, before adding new custom items. Otherwise, this results in exceptions. The following lines of code can be used to add items to chart legend.
+{% highlight c# %}
 
-[C#]
 
 
 
@@ -29,10 +29,9 @@ legend.Items.Add("Legend 3");
 
 Chart1.Legends.Add(legend);
 
+{% endhighlight %}
 
-
-{{ '![](Add-Custom-Legends_images/Add-Custom-Legends_img1.jpeg)' | markdownify }}
-{:.image }
+![](Add-Custom-Legends_images/Add-Custom-Legends_img1.jpeg)
 
 
 See Also

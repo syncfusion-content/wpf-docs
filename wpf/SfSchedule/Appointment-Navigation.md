@@ -11,7 +11,6 @@ documentation: ug
 
 When there is no appointment in the current view, we can navigate to view the previous appointment or next appointment from the current view. This can be enabled or disabled using the property ShowNavigationTap. The default value of ShowNavigationTap property is False.  
 {% highlight html %}
-[XAML]
 
 
 
@@ -24,7 +23,6 @@ When there is no appointment in the current view, we can navigate to view the pr
 {% highlight c# %}
 
 
-[C#]
 
 
 
@@ -48,7 +46,6 @@ When there is no appointment in the current view, we can navigate to view the pr
 
 Previous appointment navigation button can be customized by PreviousNavigationButtonTemplate property.
 {% highlight c# %}
-[XAML]
 
 
 
@@ -74,7 +71,6 @@ Previous appointment navigation button can be customized by PreviousNavigationBu
 
 By using the NextNavigationButtonTemplate property the next appointment navigation button can be customized to view the next appointment.
 {% highlight html %}
-[XAML]
 
 
 

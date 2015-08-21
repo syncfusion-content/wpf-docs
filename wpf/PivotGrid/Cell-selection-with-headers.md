@@ -11,16 +11,16 @@ documentation: ug
 
 PivotGrid control provides cell selection feature that is used to select values along the row and column headers according to their covered ranges.
 
-_Properties_
+Properties
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td><td>
-    {{ '**Type**' | markdownify }}</td><td>
-{{ '**Return Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+    {{ '**Type**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 EnableSelectionWithHeaders</td><td>
@@ -37,15 +37,12 @@ property either in XAML or C#.
 
 {% highlight xml %}  
 
-[XAML]
 
 <syncfusion:PivotGridControl Margin="5" Grid.Row="0" x:Name="pivotGrid1" ShowGroupingBar="False" ItemSource="{Binding ProductSalesData}" AllowSelectionWithHeaders="True">
 
 {% endhighlight %}
 
 {% highlight C# %}  
-
-[C#]
 
 this.pivotGrid1.AllowSelectionWithHeaders = true;
 
@@ -57,13 +54,13 @@ It is used to select the header cells along with the value cells while selecting
 
 
 
-_Selecting the sub-columns along with headers_
+Selecting the sub-columns along with headers
 
 ![D:/Capture16.PNG](Features_images/Features_img68.png)
 
 
 
-_Selecting the entire row along with headers_
+Selecting the entire row along with headers
 
 ### Sample Link
 

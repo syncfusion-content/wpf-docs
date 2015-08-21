@@ -13,7 +13,7 @@ To hide non-working hours in the schedule, the ShowNonWorkingHours property in
 
 
 {% highlight html %}
-[XAML]
+
 
          <syncfusion:SfSchedule x:Name="schedule" Background="White"
 
@@ -30,7 +30,7 @@ To hide non-working hours in the schedule, the ShowNonWorkingHours property in
 {% highlight c# %}
 
 
-[C#]
+
 
             SfSchedule schedule = new SfSchedule();
 

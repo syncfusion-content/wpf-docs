@@ -11,13 +11,13 @@ documentation: ug
 
 The PivotGrid control provides support for loading data in a unique UI thread. That is, the PivotGrid control can perform long running operations asynchronously on a background thread so that users can access other UI controls while the grid is loading. It also loads asynchronously for every layout change operation, such as filtering, sorting, drag and drop, manipulating the field list, or changing the Pivot Schema Designer. This can be achieved by setting the LoadInBackground property to true.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 LoadInBackground</td><td>
@@ -29,7 +29,6 @@ This property enables the PivotGrid control to perform loading operations asynch
 
 {% highlight C# %}   
 
-[C#]
 
          // Loading asynchronously on a background thread.
 
@@ -41,7 +40,6 @@ This property enables the PivotGrid control to perform loading operations asynch
 
 {% highlight vbnet %} 
 
-[VB]
 
          ’ Loading asynchronously on a background thread.
 
@@ -55,13 +53,13 @@ This property enables the PivotGrid control to perform loading operations asynch
 
 
 
-_PivotGrid Control Loading Asynchronously_
+PivotGrid Control Loading Asynchronously
 
 ![](Features_images/Features_img53.png)
 
 
 
-_PivotGrid after Loading_
+PivotGrid after Loading
 
 #### Sample Link
 

@@ -18,11 +18,11 @@ The DropDown Direction can be changed using the property DropDirection. The Drop
 * TopLeft
 * TopRight
 
-###The default value is BottomLeft.
+## The default value is BottomLeft.
 
 The DropDirection property can be set as follows:
 
-###To set BottomLeft DropDirection
+## To set BottomLeft DropDirection
 
 
 
@@ -36,7 +36,7 @@ The DropDirection property can be set as follows:
 
 
 
-###To set BottomRight Drop Direction
+## To set BottomRight Drop Direction
 
 
 
@@ -50,7 +50,7 @@ The DropDirection property can be set as follows:
 
 
 
-###To set Right Drop Direction
+## To set Right Drop Direction
 
 
 
@@ -65,7 +65,7 @@ The DropDirection property can be set as follows:
 
 
 
-###To set Left Drop Direction
+## To set Left Drop Direction
 
 
 

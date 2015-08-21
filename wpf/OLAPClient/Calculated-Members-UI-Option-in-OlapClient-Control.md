@@ -25,17 +25,17 @@ This feature can be used to add one or more measures that will be derived from t
 For example, users can define the discount on a measure called Order Quantity (and its unique name is [Measures].[Order Quantity]), by 
 expressing the calculated measure “[Measures].[Order Quantity] + (0.1 * [Measures].[Order Quantity])”.
 
-## Properties
+Properties
 
 _Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 IsCalculatedMembersEnabled</td><td>
@@ -63,7 +63,7 @@ The following code sample explains how to enable or disable the Calculated Membe
 
 {% highlight C# %}  
 
-[C#]
+
 
 ////Enable the Calculated Members in current view of the OlapClient.
 
@@ -80,7 +80,7 @@ this.olapClient1.IsCalculatedMembersEnabled = true; 
 
 {% highlight vbnet %}
 
-[VB]
+
 
 'Enable the Calculated Members in current view of the OlapClient.
 
@@ -96,7 +96,7 @@ Me.olapClient1.IsCalculatedMembersEnabled = True 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 

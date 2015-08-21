@@ -7,24 +7,24 @@ control: PivotGrid
 documentation: ug
 ---
 
-## Filtering on Pivot Columns
+# Filtering on Pivot Columns
 
-### Filtering support for Calculation Columns
+## Filtering support for Calculation Columns
 
 Pivot Grid allows you to restrict the display of records by using a mechanism called Filters. A filter enables you to extract a subset of records that meet certain filter criteria. Filters can be applied to one or more columns.
 
-#### Methods
+### Methods
 
 The following methods are used to perform filtering on Pivot Columns.
 
-_Methods Table_
+Methods Table
 
 <table>
 <tr>
-<td>
-{{ '**Method**' | markdownify }}</td><td>
-{{ '**Prototype**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Prototype**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 ApplySavedValueFilter</td><td>
@@ -67,13 +67,13 @@ This method will recompute all summaries, ignoring any summary row whose�
 
 The following properties are used to perform filtering on Pivot Columns.
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 AllowFilter</td><td>
@@ -90,14 +90,14 @@ Specifies whether the PivotGridControl is used to pivot only rows, or both 
 
 The following event is used to perform filtering on Pivot Columns.
 
-_Events Table_
+Events Table
 
 <table>
 <tr>
-<td>
-{{ '**Event**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Event**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 FilterActionCompleted</td><td>
@@ -110,7 +110,6 @@ The following code sample illustrates how to use the ApplySavedValueFilter metho
 
 {% highlight C# %}  
 
-[C#]
 
 
 
@@ -126,7 +125,6 @@ The following code sample illustrates how to use the AllowFilter property.
 
 {% highlight C# %} 
 
-[C#]
 
 
 
@@ -148,7 +146,7 @@ pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo(){FieldName =
 
 
 
-_Filtering on Pivot Columns_
+Filtering on Pivot Columns
 
 #### Sample Link
 

@@ -27,12 +27,12 @@ You can open the Excel document using the one of the following override methods:
 The following code illustrates how to open Spreadsheet control with file stream:
 
 {%highlight c#%}
-[C#]
+
 spreadsheet.ImportFromExcel(stream);
 {%endhighlight%}
 
 {%highlight vbnet%}
- [VB]
+
  spreadsheet.ImportFromExcel(stream)
 {%endhighlight%}
 
@@ -41,12 +41,12 @@ spreadsheet.ImportFromExcel(stream);
 The following code illustrates how to open Spreadsheet control with file stream and ExcelOpenType:
 
 {%highlight c#%}
-[C#]
+
 spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelOpenType.Automatic);
 {%endhighlight%}
 
 {%highlight vbnet%}
-[VB]spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelOpenType.Automatic)
+spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelOpenType.Automatic)
 {%endhighlight%}
 
 
@@ -55,13 +55,13 @@ The following code illustrates how to open Spreadsheet control with file stream 
 
 
 {%highlight c#%}
-[C#]
+
 spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelVersion.Excel2010);
 {%endhighlight%}
 
 
 {%highlight vbnet%}
-[VB]
+
 spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelVersion.Excel2010)
 {%endhighlight%}
 
@@ -72,14 +72,14 @@ The following code illustrates how to open Spreadsheet control with file stream,
 
 {%highlight c#%}
 
-[C#]
+
 spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelOpenType.Automatic, Syncfusion.XlsIO.ExcelVersion.Excel2010);
 
 {%endhighlight%}
 
 {%highlight vbnet%}
 
-[VB]
+
 spreadsheet.ImportFromExcel(stream, Syncfusion.XlsIO.ExcelVersion.Excel2010)
 
 
@@ -103,7 +103,7 @@ The following code illustrates how to bind the ImportFromExcelCommand__to a butt
 
 {%highlight xml%}
 
-[XAML]
+
 
 <Button Command="{Binding Path= ImportFromExcelCommand}"/>
 
@@ -116,14 +116,14 @@ To save the current Workbook, call the _SaveAs_ method as given in the following
 
 
 {%highlight c#%}
-[C#]
+
 spreadControl.SaveAs();
 
 {%endhighlight%}
 
 {%highlight vbnet%}
 
-[VB]
+
 spreadControl.SaveAs()
 
 {%endhighlight%}
@@ -148,7 +148,7 @@ The following code illustrates how to bind the ExportToExcelCommand__to a button
 
 {%highlight xml%}
 
-[XAML]
+
 
 <Button Command="{Binding Path= ExportToExcelCommand}"/>
 

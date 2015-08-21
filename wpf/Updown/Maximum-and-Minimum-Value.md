@@ -16,14 +16,12 @@ The MaxValue is the maximum value that can be set for the UpDown control and Min
 The MaxValue and MinValue can be set for the UpDown control as shown in the following code example.
 
 {%highlight xml%}
-[XAML]
 
 <syncfusion:UpDown Name="upDown" MaxValue="100" MinValue="0"/>
 
 {%endhighlight%}
 
 {%highlight c#%}
-[C#]
 
 UpDown upDown = new UpDown();
 
@@ -35,16 +33,16 @@ upDown.MinValue = 0;
 
 Tables for Properties, and Events
 
-_MaxValue and MinValue properties_
+MaxValue and MinValue properties
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 MaxValue</td><td>
@@ -60,7 +58,8 @@ DependencyProperty</td><td>
 double</td><td>
 Not applicable.</td></tr>
 </table>
-_MaxValue and MinValue Events_
+
+MaxValue and MinValue Events
 
 <table>
 <tr>
@@ -71,19 +70,19 @@ _MaxValue and MinValue Events_
 {{ '**Type**' | markdownify }}</th><th>
 {{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
-<th>
-MaxValueChanged</th><th>
-Occurs when the MaxValue is changed.</th><th>
-DependencyObject andDependencyPropertyChangedEventArgs.</th><th>
-PropertyChangedCallback</th><th>
-Not applicable.</th></tr>
+<td>
+MaxValueChanged</td><td>
+Occurs when the MaxValue is changed.</td><td>
+DependencyObject andDependencyPropertyChangedEventArgs.</td><td>
+PropertyChangedCallback</td><td>
+Not applicable.</td></tr>
 <tr>
-<th>
-MinValueChanged</th><th>
-Occurs when the MinValue is changed.</th><th>
-DependencyObject andDependencyPropertyChangedEventArgs. </th><th>
-PropertyChangedCallback</th><th>
-Not applicable.</th></tr>
+<td>
+MinValueChanged</td><td>
+Occurs when the MinValue is changed.</td><td>
+DependencyObject andDependencyPropertyChangedEventArgs. </td><td>
+PropertyChangedCallback</td><td>
+Not applicable.</td></tr>
 </table>
 
 

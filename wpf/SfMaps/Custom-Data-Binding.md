@@ -23,7 +23,7 @@ To show the custom data on the map, the CustomDataSourceTemplatemust be specifie
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -57,7 +57,7 @@ public class Weather
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -133,7 +133,7 @@ public class ViewModel
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 

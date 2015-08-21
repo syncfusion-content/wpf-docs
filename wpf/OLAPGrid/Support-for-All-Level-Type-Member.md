@@ -11,18 +11,18 @@ documentation: ug
 
 This feature enables you to display the “All” level type member across the rows and columns in the OlapGrid. This member behaves as parent to other members in its hierarchy by controlling their visibility through expander. 
 
-## Properties
+ Properties
 
 _Property Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 ShowLevelTypeAll </td><td>
@@ -39,7 +39,7 @@ To display the “All” level type member, set the _ShowLevelTypeAll_ property 
 
   {% highlight c# %}
 
-    [C#]
+    
 
 OlapDataManager DataManager = new OlapDataManager() { ShowLevelTypeAll = true};
 
@@ -51,7 +51,7 @@ OlapDataManager DataManager = new OlapDataManager() { ShowLevelTypeAll = true};
 
   {% highlight vbnet %}
 
-    [VB]
+    
 
 
 

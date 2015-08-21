@@ -13,7 +13,7 @@ The Schedule control allows you to define resources that can be assigned to appo
 
 Appointments will be grouped based on the resource associated with them only when both the Resource and ScheduleResourceTypeCollection properties are set, and also when the Value set for a Resource matches with any types specified in the ScheduleResourceTypeCollection property.
 {% highlight html %}
-[XAML] 
+
 
 
 
@@ -38,7 +38,7 @@ Appointments will be grouped based on the resource associated with them only whe
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#] 
+
 
 
 
@@ -84,11 +84,11 @@ ScheduleAppointment app = new ScheduleAppointment() { StartTime = currentdate
 
 ## Creating ResourceTypesCollection for Schedule
 
-_Let's_ see the steps to _add Resources in your schedule._
+Let's see the steps to _add Resources in your schedule.
 
-_The first step is set the ResourceTypesCollection in schedule_ 
+The first step is set the ResourceTypesCollection in schedule_
+
 {% highlight html %}
-[XAML]
 
      <schedule:SfSchedule  Resource="Doctors" >
 
@@ -102,7 +102,7 @@ _The first step is set the ResourceTypesCollection in schedule_
 
 After this, we need to create a ResourceTypeCollection, to assign the ResourceType:
 {% highlight html %}
-[XAML]
+
 
       <schedule:SfSchedule Resource="Doctors"  >
 
@@ -126,7 +126,7 @@ After this, we need to create a ResourceTypeCollection, to assign the Resource
 
 After Creating the ResourceTypeCollection add the ResourecType, here we create the example for ResourceType as Doctors.
 {% highlight html %}
-[XAML]
+
 
       <schedule:SfSchedule  Resource="Doctors" >
 
@@ -150,7 +150,7 @@ After Creating the ResourceTypeCollection add the ResourecType, here we create t
 
 The next step is create and assign Resources to ResourceType.
 {% highlight html  %}
-[XAML]
+
 
     <schedule:SfSchedule  Resource="Doctors" >
 
@@ -176,7 +176,7 @@ The next step is create and assign Resources to ResourceType.
 
 You can add an appointments to group of added resources.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -203,7 +203,7 @@ ScheduleAppointment app = new ScheduleAppointment() { StartTime = currentdate
 
 Refer to the following code to add a Resources in the code behind
 {% highlight c# %}
-[C#]
+
 
           SfSchedule schedule = new SfSchedule();
 
@@ -247,7 +247,7 @@ Gets or sets the ResourceType value which is a subresource type of its parent Re
 </table>
 
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -294,7 +294,7 @@ Gets or sets the ResourceType value which is a subresource type of its parent Re
 {% highlight c# %}
 
 
-[C#]
+
 
             SfSchedule schedule = new SfSchedule();
 
@@ -359,7 +359,7 @@ In the following code example, “DayViewColumnCount” is “two”, so the Sch
 
 {% highlight html %}
 
-[XAML]
+
 
 
 
@@ -394,7 +394,7 @@ In the following code example, “DayViewColumnCount” is “two”, so the Sch
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
             SfSchedule schedule = new SfSchedule();
 

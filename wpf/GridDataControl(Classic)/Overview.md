@@ -15,29 +15,29 @@ The display system also hosts a powerful and complete styles architecture. Setti
 
 With this version, our core focus has been on the underlying architecture for displaying cells with virtualized cell editors in a manner that enables good performance characteristics. The core display system also supports several building-block features such as nested grids, virtual modes, and support for a virtually unlimited number of rows and columns.
 
-Use Case Scenarios
+## Use Case Scenarios
 
 EssentialGrid for WPF can be applied to a variety of industries such as finance, banking, software, etc. Some of its important features are:
 
 Excel-Like UI: Essential Grid’s rich feature set allows you to build Excel-like UI applications. 
 
-{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.png)
+
 
 
 High Performance - EssentialGrid is a great asset to high-performance applications, as it can display large amounts of real-time data that tends to periodic changes without any performance hits. Following is an illustration of a stock portfolio application using the GridData control.
 
-{{ '![](Overview_images/Overview_img2.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img2.png)
+
 
 
 File Explorer - Applications that deal with hierarchical data can make use of Essential Grid’s file explorer feature, which allows child items to be displayed on-demand by using the GridTree control.
 
-{{ '![](Overview_images/Overview_img3.png)' | markdownify }}
-{:.image }
-
+![](Overview_images/Overview_img3.png)
 
-Key Features
+
+
+## Key Features
 
 You can find the following features of EssentialGrid for WPF:
 
@@ -62,7 +62,7 @@ You can find the following features of EssentialGrid for WPF:
 
 
 
-User Guide Organization
+## User Guide Organization
 
 EssentialGrid for WPF comes with numerous samples as well as extensive documentation for your reference. This user guide provides detailed information on features and functionalities. It is organized into the following sections:
 
@@ -73,7 +73,7 @@ EssentialGrid for WPF comes with numerous samples as well as extensive documenta
 
 
 
-Document Conventions 
+## Document Conventions 
 
 The conventions below help you quickly identify important sections of information when using this user guide:
 
@@ -81,9 +81,9 @@ _Document Conventions_
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-Description</td></tr>
+<th>
+Convention</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>
@@ -101,15 +101,16 @@ Represents useful hints that help you use the controls and features.</td></tr>
 Additional information</td><td>
 Represents additional information on the corresponding topic.</td></tr>
 </table>
+
 ## Feature Summary
 
 This section provides basic information, such as definitions and usage, regarding important features of EssentialGrid.
 
-### GridData Control 
+## GridData Control 
 
 The GridData control is a data-bound control that supports editing, sorting, and grouping. The main features of the GridData control are explained in the following list.
 
-Working with Data: 
+### Working with Data: 
 
 The GridData control supports all popular data sources including the following: 
 
@@ -131,11 +132,11 @@ The GridData control supports all popular data sources including the following:
 
 Complex objects can bind with the GridData control and the GridData control can display related information through hierarchies. The master-detail relationship can be represented through nested grids, which can be expanded and collapsed as required. Multilevel nesting is also supported.
 
-{{ '![](Overview_images/Overview_img4.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img4.png)
 
 
-Data Presentation
+
+## Data Presentation
 
 Cell Types - Several built-in cell types can be used to display and edit any underlying data type. The cell types include the following:
 
@@ -157,19 +158,19 @@ Cell Types - Several built-in cell types can be used to display and edit any und
 
 
 
-{{ '![](Overview_images/Overview_img5.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img5.png)
 
 
-Interactive Features
+
+## Interactive Features
 
 The GridData control contains a number of features for managing data effectively, including grouping, sorting, and Excel-like filteringwith filter bars and advanced filtering. You can choose a column with the ColumnChooser feature, and column-related options such as dragging, sorting, grouping, and resizing can be enabled or disabled dynamically by using a separate dialog called ColumnOptions. Other specialized interactive features include stackedheaders, context menus, ToolTips, and paging.
 
-Visual Styles and Expression Blend
+## Visual Styles and Expression Blend
 
 The GridData control has a rich selection of over 14 built-in styles that provide an attractive look and feel for the grid. The GridData control also allows you to customize all aspects of grid appearance by using Microsoft Expression Blend. 
 
-{{ '![C:/Users/vijaysankars/Desktop/1.PNG](Overview_images/Overview_img6.png)' | markdownify }}
-{:.image }
+![C:/Users/vijaysankars/Desktop/1.PNG](Overview_images/Overview_img6.png)
+
 
 

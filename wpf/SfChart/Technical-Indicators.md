@@ -11,11 +11,11 @@ documentation: ug
 
 Technical indicators are the base of technical analysis, used to determine the future of financial, stock or economic trends. Indicators serve three broad functions: to alert, to confirm and to predict actions. Future price levels can be predicted easily with the help of given data and it helps when you want to enter or exit a trade and to be able to make a profit.
 
-###Adding Technical Indicators to the Chart
+## Adding Technical Indicators to the Chart
 
 This example shows how to add technical indicators to a Chart Series. To add technical indicators to the chart, do the following.
 
-###Adding Indicator
+## Adding Indicator
 
 Create the instance for any technical indicator and add it to the TechnicalIndicators collection. Here for instance, the AccumulationDistributionIndicator is used.
 
@@ -33,7 +33,7 @@ Create the instance for any technical indicator and add it to the TechnicalIndic
 
 {% endhighlight %}
 
-###Binding the data
+## Binding the data
 
 The data necessary for the indicator to do calculations, are given as specified.
 
@@ -49,7 +49,7 @@ The data necessary for the indicator to do calculations, are given as specified.
 
 {% endhighlight %}
 
-###Specifying the Item Source
+## Specifying the Item Source
 
 Finally, the XBindingPath, YBindingPath and the ItemSource are specified to plot and visualize the chart.
 

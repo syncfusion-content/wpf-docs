@@ -17,7 +17,6 @@ The Tick Frequency property is used to define the number of ticks along the trac
 
 
 {% highlight html %}
-[XAML]
 
 <syncfusion:SfRadialSlider Minimum="0" Maximum="100"  
 

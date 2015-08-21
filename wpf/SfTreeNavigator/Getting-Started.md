@@ -17,7 +17,6 @@ The following code sample shows how to create the Tree Navigator from code-behin
 
 
 {% highlight xml %}
-[XAML]
 
 <navigation:SfTreeNavigator Header="Enterprise Toolkit" >
 
@@ -35,7 +34,6 @@ The following code sample shows how to create the Tree Navigator from code-behin
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 SfTreeNavigator sfToolkit = new SfTreeNavigator();
 

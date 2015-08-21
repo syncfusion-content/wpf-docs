@@ -25,14 +25,14 @@ This property specifies whether Brush is of type Solid or Gradient. The followin
 
 {% highlight xml %}
 
-[XAML]
+
 <Syncfusion:ColorPicker x:Name="colorPicker"  BrushMode="Solid"   ></  Syncfusion: ColorPicker >
 <Syncfusion: ColorPicker x:Name="colorPicker"  BrushMode="Gradient"   ></  Syncfusion: ColorPicker >
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]
+
 ColorPicker colorPicker = new ColorPicker ();
 colorPicker.BrushMode =  BrushModes.Solid;
 colorPicker.BrushMode =  BrushModes.Gradient;
@@ -61,14 +61,14 @@ The following code examples illustrate this:
 
 {% highlight xml %}
 
-[XAML]
+
 <Syncfusion: ColorPicker x:Name="colorPicker"  EnableSolidToGradientSwitch="true"   ></  Syncfusion: ColorPicker >
 <Syncfusion:ColorEdit x:Name="colorPicker"  EnableSolidToGradientSwitch="false"   ></  Syncfusion: ColorEdit >
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]
+
 ColorPicker colorPicker = new ColorPicker ();
 colorPicker.EnableSolidToGradientSwitch =  true;
 colorPicker.EnableSolidToGradientSwitch =  false;
@@ -97,14 +97,14 @@ The following code example illustrate this:
 
 {% highlight xml %}
 
-[XAML]
+
 <Syncfusion:ColorPicker x:Name="colorPicker"  IsGradientEditorEnabled="true"   ></  Syncfusion: ColorPicker >
 <Syncfusion: ColorPicker x:Name="colorPicker"  IsGradientEditorEnabled="false"   ></  Syncfusion: ColorPicker >
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]
+
 ColorPicker colorPicker = new ColorPicker ();
 colorPicker.IsGradientEditorEnabled =  true;
 colorPicker. IsGradientEditorEnabled =  false;
@@ -129,7 +129,7 @@ The property specifies whether GradientEditor should be displayed as a Popup or 
 
 {% highlight xml %}
 
-[XAML]
+
 <Syncfusion:ColorPicker x:Name="colorPicker"    GradientPropertyEditorMode="Popup" ></ Syncfusion: ColorPicker >
 <Syncfusion: ColorPicker x:Name="colorPicker"  GradientPropertyEditorMode="Extended"  ></Syncfusion: ColorPicker >
 {% endhighlight %}
@@ -137,7 +137,7 @@ The property specifies whether GradientEditor should be displayed as a Popup or 
 {% highlight C# %}
 
 
-[C#]
+
 ColorPicker colorPicker = new ColorPicker ();
 colorPicker.GradientPropertyEditorMode =  GradientPropertyEditorMode.Popup;
 colorPicker. GradientPropertyEditorMode =  GradientPropertyEditorMode.Extended;
@@ -154,14 +154,14 @@ The following code example illustrate this:
 
 {% highlight xml %}
 
-[XAML]
+
 <syncfusion:ColorPicker IsAlphaVisible="True"></syncfusion:ColorPicker> 
  <syncfusion:ColorPicker IsAlphaVisible="false"></syncfusion:ColorPicker>
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]
+
 ColorPicker colorPicker = new ColorPicker();
 colorPicker.IsAlphaVisible = true;
 colorPicker.IsAlphaVisible = false;

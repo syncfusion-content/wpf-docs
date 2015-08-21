@@ -17,7 +17,7 @@ Essential Calculate allows you to add extensive calculation support to your busi
 
 ![](Overview_images/Overview_img1.jpeg)
 
-
+_Essential Calculate_
 
 ## Key Features
 

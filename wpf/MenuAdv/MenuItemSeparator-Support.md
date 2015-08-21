@@ -22,7 +22,7 @@ MenuItemSeparator can be added to an application, as shown in the following code
 {% highlight xml %}
 
 
-[XAML]
+
 
 <shared:MenuAdv x:Name="Menu" Margin="10">
 

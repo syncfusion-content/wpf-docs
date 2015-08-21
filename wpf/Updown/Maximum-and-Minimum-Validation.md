@@ -23,7 +23,6 @@ The MaxValidation and MinValidation can be set for the UpDown control as shown i
 
 {%highlight xml%}
 
- [XAML]
 
 <syncfusion:UpDown Name="upDown" MaxValue="100" MinValue="0" MaxValidation="OnLostFocus"MinValidation="OnKeyPress" MaxValueOnExceedMaxDigit="True" MinValueOnExceedMinDigit="True"/>
 
@@ -31,7 +30,6 @@ The MaxValidation and MinValidation can be set for the UpDown control as shown i
 
 {%highlight c#%}
 
-[C#]
 
 UpDown upDown = new UpDown();
 
@@ -51,16 +49,16 @@ upDown.MinValueOnExceedMinDigit = true;
 
 Tables for Properties, and Events
 
-_MaxValidation and MinValidation Properties_
+MaxValidation and MinValidation Properties
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 MaxValidation</td><td>
@@ -92,7 +90,7 @@ Not applicable</td></tr>
 </table>
 
 
-_MaxValidation and MinValidation event_
+MaxValidation and MinValidation event
 
 <table>
 <tr>
@@ -103,19 +101,19 @@ _MaxValidation and MinValidation event_
 {{ '**Type**' | markdownify }}</th><th>
 {{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
-<th>
-MinValidationChanged</th><th>
-Occurs when the MinValidation is changed.</th><th>
-DependencyObject andDependencyPropertyChangedEventArgs.</th><th>
-PropertyChangedCallback</th><th>
-Not applicable.</th></tr>
+<td>
+MinValidationChanged</td><td>
+Occurs when the MinValidation is changed.</td><td>
+DependencyObject andDependencyPropertyChangedEventArgs.</td><td>
+PropertyChangedCallback</td><td>
+Not applicable.</td></tr>
 <tr>
-<th>
-MaxValidationChanged</th><th>
-Occurs when the MaxValidation is changed.</th><th>
-DependencyObject andDependencyPropertyChangedEventArgs.</th><th>
-PropertyChangedCallback</th><th>
-Not applicable.</th></tr>
+<td>
+MaxValidationChanged</td><td>
+Occurs when the MaxValidation is changed.</td><td>
+DependencyObject andDependencyPropertyChangedEventArgs.</td><td>
+PropertyChangedCallback</td><th>
+Not applicable.</td></tr>
 </table>
 
 

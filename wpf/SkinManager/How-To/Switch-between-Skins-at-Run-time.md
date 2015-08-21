@@ -7,7 +7,7 @@ control: SkinManager
 documentation: ug
 ---
 
-### Switch between Skins at Run-time
+# Switch between Skins at Run-time
 
 Themes can be dynamically switched.
 
@@ -17,16 +17,16 @@ You can use the Syncfusion Skin Picker Control to switch between the skins. Just
 
 
 
-[XAML]
+{% highlight xml %}
 
-&lt;syncfusion:SkinPicker Height="60"/&gt;
+<syncfusion:SkinPicker Height="60"/>
 
 
-
+{% endhighlight %}
 
 
 ![](Switch-between-Skins-at-Run-time_images/Switch-between-Skins-at-Run-time_img1.png)
-{:.image }
+
 
 
 
@@ -39,32 +39,32 @@ Below is the code snippet to explain how to switch between the skins at run-time
 
 
 
-[XAML]
+{% highlight xml %}
 
-&lt;Grid Name="grid"&gt;        
+<Grid Name="grid">        
 
-        &lt;Grid.ColumnDefinitions&gt;
+        <Grid.ColumnDefinitions>
 
-            &lt;ColumnDefinition Width="*"/&gt;
+            <ColumnDefinition Width="*"/>
 
-            &lt;ColumnDefinition Width="*"/&gt;
+            <ColumnDefinition Width="*"/>
 
-        &lt;/Grid.ColumnDefinitions&gt;
+        </Grid.ColumnDefinitions>
 
-        &lt;ComboBox Name="themecombobox" Grid.Column="0" SelectionChanged="ComboBox_SelectionChanged" Width="150" Height="30"&gt;
+        <ComboBox Name="themecombobox" Grid.Column="0" SelectionChanged="ComboBox_SelectionChanged" Width="150" Height="30">
 
-            &lt;ComboBoxItem&gt; Blend &lt;/ComboBoxItem&gt;
+            <ComboBoxItem> Blend </ComboBoxItem>
 
-            &lt;ComboBoxItem&gt; ShinyBlue &lt;/ComboBoxItem&gt;
+            <ComboBoxItem> ShinyBlue </ComboBoxItem>
 
-        &lt;/ComboBox&gt;
+        </ComboBox>
 
-        &lt;syncfusion:CalendarEdit Name="calendar" Grid.Column="1"&gt;&lt;/syncfusion:CalendarEdit&gt;        
+        <syncfusion:CalendarEdit Name="calendar" Grid.Column="1"></syncfusion:CalendarEdit>        
 
-&lt;/Grid&gt;
+</Grid>
 
 
-
+{% endhighlight %}
 
 
 On ComboBox SelectionChanged event, particular VisualStyle should be set to the control. 
@@ -73,7 +73,7 @@ The following code snippet explains how to set the switch between the skins.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -100,7 +100,7 @@ Private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs 
         }
 
 
-
+{% endhighlight %}
 
 
 The output is displayed as shown below.
@@ -108,6 +108,6 @@ The output is displayed as shown below.
 
 
 ![](Switch-between-Skins-at-Run-time_images/Switch-between-Skins-at-Run-time_img2.png)
-{:.image }
+
 
 

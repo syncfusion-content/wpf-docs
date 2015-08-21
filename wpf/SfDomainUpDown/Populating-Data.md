@@ -15,7 +15,7 @@ For example, in the following code, the DomainUpDown populates a list of employe
 
 {%highlight c#%}
 
-[C#]
+
 
 
 
@@ -39,7 +39,7 @@ Create a collection attribute:
 
 {%highlight c#%}
 
-[C#]
+
 
 
 
@@ -65,7 +65,7 @@ Populate the collection with items:
 
 {%highlight c#%}
 
-[C#]
+
 
 
 
@@ -81,13 +81,13 @@ Employees.Add(new Employee { Name = "Jacob", Email = "jacob@syncfusion.com" });
 {%endhighlight%}
 
 
-### ItemsSource
+## ItemsSource
 
 Bind the Employees collection to the ItemsSource property of DomainUpDown:
 
 {%highlight c#%}
 
-[C#]
+
 
 
 
@@ -115,15 +115,15 @@ Bind the Employees collection to the ItemsSource property of DomainUpDown:
 
 {%endhighlight%}
 
-> _Note: When the ContentTemplate property of the DomainUpDown control is not set, Items will be displayed as business objects in the control._
+> Note: When the ContentTemplate property of the DomainUpDown control is not set, Items will be displayed as business objects in the control.
 
-### ContentTemplate
+## ContentTemplate
 
 ContentTemplate helps the user decorate the content with visual elements. At this point, the control is populated with list of employees, and the Employee model contains two properties: Name and Email. In this example, the control is set to display content based on Name.
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 

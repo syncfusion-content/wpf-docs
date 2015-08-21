@@ -15,7 +15,6 @@ Here is the code snippet to set the Tab Scrolling Time.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -51,7 +50,6 @@ Here is the code snippet to set the Tab Scrolling Time.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 

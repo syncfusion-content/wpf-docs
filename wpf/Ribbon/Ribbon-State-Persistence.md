@@ -58,16 +58,16 @@ False</td></tr>
 
 
 
-_PersistElements Table_
+PersistElements Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Default Value**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Default Value**' | markdownify }}</th></tr>
 <tr>
 <td>
 PersistElements</td><td>
@@ -86,15 +86,15 @@ You can enable State Persistence in Ribbon control by setting the AutoPersist pr
 
 
 
-_SaveRibbonState Table_
+SaveRibbonState Table
 
 <table>
 <tr>
-<td>
-{{ '**Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td><td>
-{{ '**Return Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 SaveRibbonState()</td><td>
@@ -104,7 +104,7 @@ void</td></tr>
 </table>
 
 
-_LoadRibbonState Table_
+LoadRibbonState Table
 
 <table>
 <tr>
@@ -122,15 +122,15 @@ void</td></tr>
 </table>
 
 
-_ResetRibbonState Table_
+ResetRibbonState Table
 
 <table>
 <tr>
-<td>
-{{ '**Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td><td>
-{{ '**Return Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 ResetRibbonState()</td><td>
@@ -140,15 +140,15 @@ No Params</td><td>
 </table>
 
 
-_DeleteRibbonState Table_
+DeleteRibbonState Table
 
 <table>
 <tr>
-<td>
-{{ '**Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td><td>
-{{ '**Return Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 DeleteRibbonState()</td><td>
@@ -188,7 +188,7 @@ The user can persist the Ribbon States at application exit and load by handling 
 
 {% highlight c# %}
  
-    [C#]
+    
 
 <syncfusion:RibbonWindow x:Class="RibbonSample.Window1" x:Name="ribbonwindow"
 
@@ -244,7 +244,7 @@ Before you call the methods, you have to specify the persisting Ribbon elements 
 
 {% highlight c# %}
  
-    [C#]
+   
 
 private void ribbonwindow_Loaded(object sender, RoutedEventArgs e)
 
@@ -278,7 +278,7 @@ In the first method, there are no parameters. It will save the current state of 
 
 {% highlight c# %}
  
-    [C#]
+    
 
   private void SaveRibbonState_Click(object sender, RoutedEventArgs e)
 
@@ -298,7 +298,7 @@ You can also store the current Ribbon State in the custom Isolated Storage file 
 
 {% highlight c# %}
  
-    [C#]
+   
 
   private void SaveRibbonState_Click(object sender, RoutedEventArgs e)
 
@@ -334,7 +334,7 @@ The first method with no arguments will load the Ribbon State from the last save
 
 {% highlight c# %}
  
-    [C#]
+    
 
 private void LoadRibbonState_Click(object sender, RoutedEventArgs e)
 
@@ -356,7 +356,7 @@ The second overloaded method will load the Ribbon State from the given file name
 
 {% highlight c# %}
  
-    [C#]
+   
 
 private void LoadRibbonState_Click(object sender, RoutedEventArgs e)
 
@@ -386,7 +386,7 @@ You can easily maintain many Ribbon control states in the Isolated Storage files
 
 {% highlight c# %}
  
-   [C#]
+   
 
 private void SaveLevel1State_Click(object sender, RoutedEventArgs e)
 
@@ -446,7 +446,7 @@ After saving the different states of the Ribbon Control, you can load the Ribbon
 
 {% highlight c# %}
  
-    [C#]
+    
 
 private void LoadLevel1State_Click(object sender, RoutedEventArgs e)
 
@@ -518,7 +518,7 @@ LoadRibbonState(XmlReader xmlReader)
 
 
 
-_Methods Table_
+Methods Table
 
 <table>
 <tr>
@@ -529,19 +529,19 @@ _Methods Table_
 {{ '**Return Type**' | markdownify }}</th><th>
 {{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
-<th>
-SaveRibbonState</th><th>
-It saves the ribbon state to the xml file given in the parameter. </th><th>
-XmlWriter</th><th>
-N/A</th><th>
-N/A </th></tr>
+<td>
+SaveRibbonState</td><td>
+It saves the ribbon state to the xml file given in the parameter. </td><td>
+XmlWriter</td><td>
+N/A</td><td>
+N/A </td></tr>
 <tr>
-<th>
-LoadRibbonState</th><th>
-It loads the ribbon state from the xml file given in the parameter.</th><th>
-XmlReader</th><th>
-N/A</th><th>
-N/A</th></tr>
+<td>
+LoadRibbonState</td><td>
+It loads the ribbon state from the xml file given in the parameter.</td><td>
+XmlReader</td><td>
+N/A</td><td>
+N/A</td></tr>
 </table>
 
 
@@ -553,7 +553,7 @@ You can load the Normal (Initial) Ribbon state at runtime by calling the ResetRi
 
 {% highlight c# %}
  
-    [C#]
+   
 
 private void ResetState_Click(object sender, RoutedEventArgs e)
 
@@ -585,7 +585,7 @@ The first overloaded method will delete the default saved file from the default 
 
 {% highlight c# %}
  
-    [C#]
+   
 
   private void DeleteRibbonState_Click(object sender, RoutedEventArgs e)
 
@@ -605,7 +605,7 @@ The second overloaded method is used to delete any file from specified Isolated 
 
 {% highlight c# %}
  
-    [C#]
+  
 
   private void DeleteRibbonState_Click(object sender, RoutedEventArgs e)
 

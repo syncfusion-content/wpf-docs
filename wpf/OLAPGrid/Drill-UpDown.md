@@ -21,7 +21,7 @@ The expanders can be made hidden by setting the ShowExpanders property of OlapRe
 
   {% highlight c# %}
 
-    [C#]
+    
 
 
 
@@ -35,7 +35,7 @@ this.OlapGrid1.OlapDataManager.CurrentReport.ShowExpanders = false;
 
   {% highlight vbnet %}
 
-    [VB]
+    
 
 
 

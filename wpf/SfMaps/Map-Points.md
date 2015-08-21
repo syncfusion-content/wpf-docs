@@ -21,7 +21,7 @@ MapPointTemplate is a DataTemplate type, used to customize or override the defau
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfMap>
 
@@ -65,7 +65,7 @@ MapPointPopupTemplate is a DataTemplate used to expose the template for the MapP
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfMap >
 

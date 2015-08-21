@@ -406,7 +406,7 @@ The steps to create a DoubleTextBox by using VisualStudio in C# are as follows:
 
 
 
-![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)
+   ![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -416,18 +416,18 @@ The steps to create a DoubleTextBox by using VisualStudio in C# are as follows:
 
 
 
-![](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
 
 
 4. Add the following reference with the sample project:
-1. Syncfusion.Shared.WPF.dll
+   1. Syncfusion.Shared.WPF.dll
 
 
 
-![](Getting-Started_images/Getting-Started_img5.png)
+   ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -437,43 +437,41 @@ The steps to create a DoubleTextBox by using VisualStudio in C# are as follows:
 
 
 
-{% highlight C# %}
+
+
+			public partial class MainWindow : Window
+
+				{
+
+					public MainWindow()
+
+					{
+
+						InitializeComponent();
+
+						//Adding DoubleTextBox to Application
+
+						Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new
+
+									  Syncfusion.Windows.Shared.DoubleTextBox();
+
+						doubleTextBox.Height = 25;
+
+						doubleTextBox.Width = 100;
+
+						this.LayoutRoot.Children.Add(doubleTextBox);
+
+					}
+
+						}
 
 
 
-public partial class MainWindow : Window
+   ![](Getting-Started_images/Getting-Started_img6.png)
 
-    {
+   {:.prettyprint}
 
-        public MainWindow()
-
-        {
-
-            InitializeComponent();
-
-            //Adding DoubleTextBox to Application
-
-            Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new
-
-                          Syncfusion.Windows.Shared.DoubleTextBox();
-
-            doubleTextBox.Height = 25;
-
-            doubleTextBox.Width = 100;
-
-            this.LayoutRoot.Children.Add(doubleTextBox);
-
-        }
-
-            }
-
-{% endhighlight %}
-
-![](Getting-Started_images/Getting-Started_img6.png)
-
-
-
-Note:If you do not set any value to the DoubleTextbox then the default value will be as follows:
+> Note:If you do not set any value to the DoubleTextbox then the default value will be as follows:
 
 If the UseNullOption is set to true then,
 
@@ -499,7 +497,7 @@ The steps to create a DoubleTextBox by using Visual Studio in XAML are as follow
 
 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
@@ -509,33 +507,31 @@ The steps to create a DoubleTextBox by using Visual Studio in XAML are as follow
 
 
 
-{% highlight xml %}
 
 
 
-<Window x:Class="WpfApp.MainWindow"
+			<Window x:Class="WpfApp.MainWindow"
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        Title="DoubleTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-
-
-    <Grid x:Name="LayoutRoot">
-
-        <syncfusion:DoubleTextBox Height="23" HorizontalAlignment="Left" Margin="110,114,0,0" Name="doubleTextBox1" VerticalAlignment="Top" Width="120" />
-
-    </Grid>
-
-</Window>
-
-{% endhighlight %}
-
-![](Getting-Started_images/Getting-Started_img8.png)
+					Title="DoubleTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
 
+
+				<Grid x:Name="LayoutRoot">
+
+					<syncfusion:DoubleTextBox Height="23" HorizontalAlignment="Left" Margin="110,114,0,0" Name="doubleTextBox1" VerticalAlignment="Top" Width="120" />
+
+				</Grid>
+
+			</Window>
+
+
+   ![](Getting-Started_images/Getting-Started_img8.png)
+
+   {:.prettyprint}
 
 See Also
 
@@ -552,7 +548,7 @@ The steps to create a DoubleTextBox in the application by using Expression Blend
 
 
 
-![](Getting-Started_images/Getting-Started_img9.png)
+   ![](Getting-Started_images/Getting-Started_img9.png)
 
 
 
@@ -562,7 +558,7 @@ The steps to create a DoubleTextBox in the application by using Expression Blend
 
 
 
-![](Getting-Started_images/Getting-Started_img10.png)
+   ![](Getting-Started_images/Getting-Started_img10.png)
 
 
 
@@ -575,7 +571,7 @@ The steps to create a DoubleTextBox in the application by using Expression Blend
 
 
 
-![](Getting-Started_images/Getting-Started_img11.png)
+   ![](Getting-Started_images/Getting-Started_img11.png)
 
 
 
@@ -585,39 +581,37 @@ The steps to create a DoubleTextBox in the application by using Expression Blend
 
 
 
-![](Getting-Started_images/Getting-Started_img12.png)
+   ![](Getting-Started_images/Getting-Started_img12.png)
 
 
 
 
 
-{% highlight xml %}
+
+
+			<Window x:Class="WpfApp.MainWindow"
+
+					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+					Title="DoubleTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
 
 
-<Window x:Class="WpfApp.MainWindow"
+				<Grid x:Name="LayoutRoot">
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+					<syncfusion:DoubleTextBox Height="23" HorizontalAlignment="Left" Margin="110,114,0,0" Name="doubleTextBox1" VerticalAlignment="Top" Width="120" />
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				</Grid>
 
-        Title="DoubleTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-
-
-    <Grid x:Name="LayoutRoot">
-
-        <syncfusion:DoubleTextBox Height="23" HorizontalAlignment="Left" Margin="110,114,0,0" Name="doubleTextBox1" VerticalAlignment="Top" Width="120" />
-
-    </Grid>
-
-</Window>
-
-{% endhighlight %}
-
-![](Getting-Started_images/Getting-Started_img13.png)
+			</Window>
 
 
+
+   ![](Getting-Started_images/Getting-Started_img13.png)
+
+   {:.prettyprint}
 
 See Also
 
@@ -631,17 +625,13 @@ Blendability
 
 You have to use the Value property to set the value for the DoubleTextBox.
 
-Note: Do not use the Text property to set the value for the DoubleTextBox. Use only the Value property.
+> Note: Do not use the Text property to set the value for the DoubleTextBox. Use only the Value property.
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100"/> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %} doubleTextBox.Value = 100; {% endhighlight %} </td></tr>
-</table>
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100"/> {% endhighlight %} 
+
+{% highlight C# %} doubleTextBox.Value = 100; {% endhighlight %} 
+
 
 
 ![](Getting-Started_images/Getting-Started_img14.png)
@@ -684,17 +674,13 @@ See Also
 
 You can set the Watermark for the DoubleTextBox by using the WatermarkText property. To enable Watermark, you have to set the WatermarkTextIsVisible property to true.
 
-Note: WatermarkText is visible only when the value is null.
+> Note: WatermarkText is visible only when the value is null.
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100"                            Value="{x:Null}" MinValue="-999" MaxValue="999"                            UseNullOption="True"                            WatermarkText="Type Here" WatermarkTextIsVisible="True"/> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %} doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = null;doubleTextBox.WatermarkText = "Type Here";doubleTextBox.WatermarkTextIsVisible = true; {% endhighlight %} </td></tr>
-</table>
+
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100"                            Value="{x:Null}" MinValue="-999" MaxValue="999"                            UseNullOption="True"                            WatermarkText="Type Here" WatermarkTextIsVisible="True"/> {% endhighlight %} 
+
+{% highlight C# %} doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = null;doubleTextBox.WatermarkText = "Type Here";doubleTextBox.WatermarkTextIsVisible = true; {% endhighlight %} 
 
 
 ![](Getting-Started_images/Getting-Started_img16.png)

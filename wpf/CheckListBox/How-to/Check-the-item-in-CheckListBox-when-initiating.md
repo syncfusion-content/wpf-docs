@@ -7,13 +7,12 @@ control: CheckListBox
 documentation: ug
 ---
 
-### Check the item in CheckListBox when initiating? 
+## Check the item in CheckListBox when initiating? 
 
-To check the items when initiating the CheckListBox control, use the IsSelected property of ItemContainerStyle_._ The following code illustrates this:__
-
-[XAML]
+To check the items when initiating the CheckListBox control, use the IsSelected property of ItemContainerStyle_._ The following code illustrates this:
 
 
+{% highlight xml %}
 
 <syncfusion:CheckListBox.ItemContainerStyle>
 
@@ -25,5 +24,5 @@ To check the items when initiating the CheckListBox control, use the IsSelected 
 
 </syncfusion:CheckListBox.ItemContainerStyle>
 
-
+{% endhighlight  %}
 

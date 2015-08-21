@@ -11,15 +11,15 @@ documentation: ug
 
 This class encapsulates the information needed to define a filter. It contains the following properties.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property Name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Value it Accepts**' | markdownify }}</td></tr>
+<th>
+{{ '**Property Name**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Value it Accepts**' | markdownify }}</th></tr>
 <tr>
 <td>
 CaseSensitive</td><td>

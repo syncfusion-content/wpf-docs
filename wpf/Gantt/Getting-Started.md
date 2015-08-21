@@ -109,7 +109,7 @@ You can add Gantt control to the application using the following code:
 
 {% highlight html %}
 
-[XAML]
+
 
  <Sync:GanttControl x:Name="Gantt" />
 
@@ -117,7 +117,7 @@ You can add Gantt control to the application using the following code:
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
+
 
  //Initializing Gantt
  GanttControl Gantt = new GanttControl();
@@ -134,7 +134,7 @@ Create a collection of tasks and bind it to the newly created GanttControl as gi
 
 {% highlight html %}
 
-[XAML]
+
 
  <Sync:GanttControl ItemsSource="{Binding GanttItemSource}" x:Name="Gantt" >
 
@@ -142,7 +142,7 @@ Create a collection of tasks and bind it to the newly created GanttControl as gi
 {% endhighlight  %}
 
 {% highlight c# %}
-[C#]
+
 
  //Initializing Gantt
  GanttControl Gantt = new GanttControl();
@@ -154,7 +154,7 @@ Create a collection of tasks and bind it to the newly created GanttControl as gi
 {% endhighlight  %}
 
 {% highlight c# %}
-[C#]
+
 
 GanttItemSource = new ObservableCollection<TaskDetails>();
 
@@ -229,7 +229,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-![](Getting-Started_images/Getting-Started_img6.png)
+   ![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -239,7 +239,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
@@ -249,7 +249,7 @@ The following are the steps to create Gantt control through designer.
 
 
 
-![](Getting-Started_images/Getting-Started_img8.png)
+   ![](Getting-Started_images/Getting-Started_img8.png)
 
 
 
@@ -259,10 +259,11 @@ The following are the steps to create Gantt control through designer.
 
 
 
-![](Getting-Started_images/Getting-Started_img9.png)
+   ![](Getting-Started_images/Getting-Started_img9.png)
 
 
 
 
 
 5. Now you can customize the properties of Gantt control in the Properties Window.
+   {:.prettyprint}

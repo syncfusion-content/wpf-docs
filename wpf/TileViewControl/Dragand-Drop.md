@@ -55,12 +55,12 @@ _MinimizedItemTemplate / MaximizedItemTemplate Properties Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }} </td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Data Type**' | markdownify }} </td><td>
-{{ '**Reference links**' | markdownify }} </td></tr>
+<th>
+{{ '**Property**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Data Type**' | markdownify }} </th><th>
+{{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
 <td>
 AllowItemRepositioning</td><td>
@@ -84,12 +84,12 @@ _AllowItemRepositioningChanged Table_
 {{ '**Type**' | markdownify }} </th><th>
 {{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
-<th>
-AllowItemRepositioningChanged</th><th>
-The event gets fired when the dragging items feature is enabled or disabled.</th><th>
-</th><th>
-</th><th>
-</th></tr>
+<td>
+AllowItemRepositioningChanged</td><td>
+The event gets fired when the dragging items feature is enabled or disabled.</td><td>
+</td><td>
+</td><td>
+</td></tr>
 </table>
 
 

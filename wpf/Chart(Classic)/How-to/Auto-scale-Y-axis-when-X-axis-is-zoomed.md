@@ -7,7 +7,7 @@ control: Chart (Classic)
 documentation: ug
 ---
 
-### Auto scale Y axis when X axis is zoomed
+## Auto scale Y axis when X axis is zoomed
 
  The auto scale of y-axis when the x-axis is zoomed can be achieved by the following steps:
 
@@ -20,9 +20,9 @@ documentation: ug
 
 The following code example must be given under the VisibleRangeChanged event.
 
+{% highlight c# %}
 
 
-[C#]
 void chartControl1_VisibleRangeChanged(object sender, EventArgs e)
 
         {
@@ -119,9 +119,10 @@ void chartControl1_VisibleRangeChanged(object sender, EventArgs e)
 
         } 	
 
+{% endhighlight  %}
+{% highlight vbnet %}
 
 
-[VB]
 
 Private Sub chartControl1_VisibleRangeChanged(ByVal sender As Object, ByVal e As EventArgs)
 
@@ -208,6 +209,6 @@ min = If(yvalues(0) < min, yvalues(0), min)
 Next rec
 
 End Sub
-
+{% endhighlight  %}
 
 

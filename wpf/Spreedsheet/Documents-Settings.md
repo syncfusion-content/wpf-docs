@@ -38,7 +38,6 @@ The following code illustrates how to bind the ProtectWorkbookCommand__to a butt
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -48,7 +47,7 @@ The following code illustrates how to bind the ProtectWorkbookCommand__to a butt
 
 {%endhighlight%}
 
-> _Note: The ProtectWorkbookCommand will open the Unprotect Workbook dialog box if the workbook is already protected._ 
+> Note: The ProtectWorkbookCommand will open the Unprotect Workbook dialog box if the workbook is already protected._
 
 
 
@@ -83,7 +82,6 @@ Following code illustrates this:
 
 {%highlight c#%}
 
-[C#]
 
 spreadControl.ProtectSheet("Sheet1", "asd123");
 
@@ -91,7 +89,6 @@ spreadControl.ProtectSheet("Sheet1", "asd123");
 
 {%highlight vbnet%}
 
-[VB]
 
 spreadControl.ProtectSheet("Sheet1", "asd123")
 
@@ -105,7 +102,6 @@ To unprotect a worksheet, pass the sheet name and the password as String to the 
 
 {%highlight c#%}
 
-[C#]
 
 spreadControl.UnProtectSheet("Sheet1", "asd123");
 
@@ -113,7 +109,6 @@ spreadControl.UnProtectSheet("Sheet1", "asd123");
 
 {%highlight vbnet%}
 
- [VB]
  
  spreadControl.UnProtectSheet("Sheet1", "asd123")
  
@@ -137,7 +132,6 @@ The following code illustrates how to bind the ProtectCurrentSheetCommand__to a 
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -164,13 +158,12 @@ To encrypt a workbook, pass the password in the EncryptWorkBook method. The foll
 
 {%highlight c#%}
 
-[C#]
 
 spreadControl.EncryptWorkBook("asd123");
 {%endhighlight%}
 
 {%highlight vbnet%}
- [VB]
+
  spreadControl.EncryptWorkBook("asd123")
  
 {%endhighlight%}
@@ -192,7 +185,6 @@ The following code illustrates how to bind the EncryptCommand__to a button:
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -227,7 +219,7 @@ This feature enables you to hide/unhide a worksheet. You can achieve this in two
 To hide a worksheet, pass the sheet name to the HideSheet method:
 
 {%highlight c#%}
-[C#]
+
 
 spreadControl.HideSheet("Sheet1");
 
@@ -235,7 +227,6 @@ spreadControl.HideSheet("Sheet1");
 
 {%highlight vbnet%}
 
- [VB]
  
  spreadControl.HideSheet("Sheet1")
  
@@ -249,21 +240,20 @@ To unhide a worksheet, pass the sheet name to the UnHideSheet method:
 
 
 {%highlight c#%}
-[C#]
 
 spreadControl.UnHideSheet("Sheet1");
 
 {%endhighlight%}
 
 {%highlight vbnet%}
- [VB]
+
  spreadControl.UnHideSheet("Sheet1")
  
  {%endhighlight%}
 
 
 
-Hide worksheet using comment
+###Hide worksheet using comment
 
 You can hide the current worksheet by using the HideCurrentSheetCommand. When you execute this command based on the command parameter it will hide or unhide the worksheet. 
 
@@ -271,7 +261,6 @@ The following code illustrates how to bind the HideCurrentSheetCommand__to a but
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -299,7 +288,6 @@ The following code illustrates how to bind the HideCurrentSheetCommand__to a but
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -324,7 +312,6 @@ To add a worksheet, pass the sheet name to the AddSheet method.
 
 {%highlight c#%}
 
-[C#]
 
 spreadControl.AddSheet("Sheet4");
 
@@ -332,7 +319,6 @@ spreadControl.AddSheet("Sheet4");
 
 {%highlight vbnet%}
 
- [VB]
  
  spreadControl.AddSheet("Sheet4")
  
@@ -345,14 +331,12 @@ You can also specify the position of the added worksheet by passing the sheet na
 
 
 {%highlight c#%}
-[C#]
 
 spreadControl.AddSheet("Sheet4", 3);
 
 {%endhighlight%}
 
 {%highlight vbnet%}
- [VB]
 
  spreadControl.AddSheet("Sheet4", 3)</td></tr>
 
@@ -365,14 +349,12 @@ To remove a worksheet, pass the sheet name to the RemoveSheet method.
 
 
 {%highlight c#%}
-[C#]
 
 spreadControl.RemoveSheet("Sheet4");
 
 {%endhighlight%}
 
 {%highlight vbnet%}
- [VB]
  
  spreadControl.RemoveSheet("Sheet4")
  {%endhighlight%}
@@ -387,7 +369,6 @@ The following code illustrates how to bind the InsertSheetCommandto a button:
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -405,7 +386,6 @@ The following code illustrates how to bind the DeleteCurrentSheetCommand button:
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -435,11 +415,11 @@ When importing and exporting and the Excel sheet, users can get and set the valu
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 Author</td><td>
@@ -501,8 +481,7 @@ String</td></tr>
 
 The following code snippets are used to set values in Document properties:
 
-{%highlight c#%}
-[C#]   
+{%highlight c#%}  
 this.spreadSheetControl.ExcelProperties.Author = "Syncfusion";    
 this.spreadSheetControl.ExcelProperties.Manager = "Syncfusion Manager";    
 this.spreadSheetControl.ExcelProperties.Category = "Spreadsheet control";    
@@ -515,7 +494,7 @@ this.spreadSheetControl.ExcelProperties.ApplicationName = " Spreadsheet ";
 {%endhighlight%}
 
 {%highlight vbnet%}
-[VB]
+
 Me.spreadSheetControl.ExcelProperties.Author = "Syncfusion"
 Me.spreadSheetControl.ExcelProperties.Manager = "Syncfusion Manager"
 Me.spreadSheetControl.ExcelProperties.Category = "Spreadsheet control"

@@ -22,7 +22,6 @@ Use the following code snippet for setting the minimum height for the page heade
 {% highlight xml %}
 
 
-[XAML]
 
 
 
@@ -37,7 +36,6 @@ Use the following code snippet for setting the minimum height for the page heade
 
 {% highlight C# %}
 
-[C#]
 
 
 
@@ -72,7 +70,6 @@ Set the background color of the banner for the Wizard control by using the Banne
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -87,7 +84,6 @@ Set the background color of the banner for the Wizard control by using the Banne
 
 {% highlight C# %}
 
-[C#]
 
 
 
@@ -116,7 +112,7 @@ Banner Image
 
 Set an image for the banner of the Wizard control using the BannerImage property.
 
-> _Note: You can set the banner image either on the interior or exterior wizard page based on the wizard page type._
+> Note: You can set the banner image either on the interior or exterior wizard page based on the wizard page type.
 
 
 
@@ -125,7 +121,6 @@ The following code snippet can be used to set the banner image.
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -138,7 +133,6 @@ The following code snippet can be used to set the banner image.
 
 {% highlight C# %}
 
-[C#]
 
 
 
@@ -171,7 +165,6 @@ The following code snippet illustrates setting the minimum width for the banner 
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -186,7 +179,6 @@ The following code snippet illustrates setting the minimum width for the banner 
 
 {% highlight C# %}
 
-[C#]
 
 
 

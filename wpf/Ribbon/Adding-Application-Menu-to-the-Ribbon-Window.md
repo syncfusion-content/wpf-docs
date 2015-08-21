@@ -13,7 +13,6 @@ You can add an application menu to the ribbon window. An application menu contai
 
 {% highlight xml %}
 
-    [XAML]
 
 
 
@@ -37,7 +36,6 @@ Image is added to application menu button by using the ApplicationButtonImage pr
 
 {% highlight xml %}
 
-    [XAML]
 
 
 

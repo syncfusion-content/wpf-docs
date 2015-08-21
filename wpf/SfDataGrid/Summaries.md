@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains you how to show concise information about Grouped Data from DataGrid data in rows or columns. 
 
-### Overview
+## Overview
 
 SfDataGrid control allows you to display summaries for each Group or Table. You can derive additional information from your data like Sum, Average, Maximum, Minimum and Count using summaries. DataGrid control supports three types of summaries.
 
@@ -21,7 +21,7 @@ SfDataGrid control allows you to display summaries for each Group or Table. You 
 
 These summary values are computed for Groups using GridSummaryRow and GridSummaryColumn that implements ISummaryRow and ISummaryColumn interface.
 
-### GridSummaryRow
+## GridSummaryRow
 
 All the summaries are represented by GridSummaryRow that contains the following important properties.
 
@@ -29,11 +29,11 @@ _GridSummaryRow property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 GridSummaryRow.ShowSummaryInRow</td><td>
@@ -63,7 +63,7 @@ Null</td></tr>
 
 DataGrid control enables you to display more than one summary (i.e. GroupSummary and TableSummary) by defining more than one GridSummaryRows. Group summaries are stored in SfDataGrid.GroupSummaryRows collection and Table summaries are stored in SfDataGrid.TableSummaryRows collection.
 
-### GridSummaryColumn
+## GridSummaryColumn
 
 GridSummaryColumn is the object of GridSummaryRow.SummaryColumns collection that contains the following important properties:
 
@@ -101,7 +101,7 @@ The following code example illustrates this.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -242,7 +242,7 @@ _Column wise Summary values_
 
 In the above screenshot, summary values are showed at the bottom of corresponding column that are mapped to the GridSummaryColumn.
 
-> _Note: Summary values are displayed based on the GridSummaryColumn.Format value, when the summaries are displayed in column wise._
+> Note: Summary values are displayed based on the GridSummaryColumn.Format value, when the summaries are displayed in column wise.
 
 ### Show the summaries in row
 
@@ -251,7 +251,7 @@ When you declare the summaries as default,DataGrid shows the values in the row. 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -386,16 +386,16 @@ In the above screenshot, summary values are showed in row because GridSummaryRow
 
 When the summary values are showed in row, summary values are displayed in the format that is defined in GridSummaryRow.Title.
 
-> _Note: Default value of GridSummaryRow.ShowSummaryInRow is true._
+> Note: Default value of GridSummaryRow.ShowSummaryInRow is true.
 
-### Group Summaries
+## Group Summaries
 
 This section explains you about GroupSummaries and how to display it. The Group Summary is associated with every group in DataGrid control. DataGrid control provides support to add multiple group summaries, i.e., you can have more than one summary row for every group. The following code example illustrates how to set the group summary for DataGrid control.
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -445,7 +445,7 @@ To show the Group Summaries in column basis you can set the GridSummaryRow.ShowS
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -491,14 +491,14 @@ The following screenshot displays the output of the above code.
 
 _DataGrid with Group Summaries in column basis_
 
-### Table Summaries
+## Table Summaries
 
 This section explains you about TableSummary and how to display it. The TableSummary is associated with the entire Grid table. DataGrid also provides the support to show the multiple table summary rows.
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -543,7 +543,7 @@ TableSummary has another dependency property Position that displays Table Summar
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -621,14 +621,14 @@ The following screenshot displays the output of the above code.
 
 _Table Summary at the top of the Grid_
 
-### Caption Summaries
+## Caption Summaries
 
 DataGrid provides built-in support for caption summaries, where the summary values are displayed in the group caption summary cells. You can have only one caption summary row for Group. SfDataGrid.CaptionSummaryRow__property customizes the caption summary.
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -666,7 +666,7 @@ The following screenshot displays the caption summary.
 
 _DataGrid with Caption Summary_
 
-### Custom Summaries
+## Custom Summaries
 
 CustomSummaries feature enables you to implement your own aggregate functions. You can achieve CustomSummaries by implementing the ISummaryAggregate interface to define the custom logic, and associating this custom logic to the GridSummaryColumn.CustomAggregate property. The ISummaryAggregate interface helps to build user-defined logic for summary calculation.
 
@@ -688,7 +688,7 @@ The following code example illustrates how to set the Customaggregate to calcula
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -790,7 +790,7 @@ return ret;
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -818,11 +818,11 @@ return ret;
 {% endhighlight %}
 
 
-> _Note: When you use Title for GridSummaryRow; you need to concentrate on name of GridSummaryColumn. The name that you used in GridSummaryColumn and Title should match._
+> Note: When you use Title for GridSummaryRow; you need to concentrate on name of GridSummaryColumn. The name that you used in GridSummaryColumn and Title should match.
 
-### How To
+## How To
 
-#### How to format Caption summary row using GroupCaptionText?
+### How to format Caption summary row using GroupCaptionText?
 
 The DataGrid enables you to customize the GroupCaption text format. By default, GroupCaption text is displayed in “{ColumnName}: {Key} - {ItemsCount} Items”__format.
 
@@ -836,7 +836,7 @@ The following code example displays only group key and items count in Caption su
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 

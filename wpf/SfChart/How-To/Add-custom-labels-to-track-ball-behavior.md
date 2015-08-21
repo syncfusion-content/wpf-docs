@@ -7,15 +7,15 @@ control: SfChart
 documentation: ug
 ---
 
-### Add custom labels to track ball behavior
+## Add custom labels to track ball behavior
 
 In the ChartTrackBallBehavior, each data point will have a label aligned vertically and horizontally using the LabelVerticalAlignment and LabelHorizontalAlignment properties by default. However, you can also add custom labels to the ChartTrackBallBehavior.
 
 In order to add a custom label, you need to write a class derived from ChartTrackBallBehavior. You need to override GenerateLabels method, which will be called whenever new labels are going to be generated, and add the labels using AddLabel method. The following code sample demonstrates this:
 
-[C#]
 
 
+{% highlight c# %}
 
 public class CustomTrackBallBehavior: ChartTrackBallBehavior
 
@@ -88,4 +88,4 @@ public class CustomTrackBallBehavior: ChartTrackBallBehavior
         public string Value2 { get; set; } }
 
 
-
+{% endhighlight  %}

@@ -25,7 +25,7 @@ The Hyperlink cells can be enabled by the following property of OlapGrid such as
 
   {% highlight c# %}
 
-    [C#]
+    
 
 
 
@@ -57,7 +57,7 @@ this.OlapGrid1.SummaryRowStyle.IsHyperlinkCell = true;
 
   {% highlight vbnet %}
 
-    [VB]
+    
 
 
 
@@ -93,7 +93,7 @@ The Hyperlink Click event can be tagged by the following way:
 
   {% highlight c# %}
 
-    [C#]
+    
 
 
 
@@ -109,7 +109,7 @@ this.OlapGrid1.LinkClick += new Syncfusion.Windows.Grid.Olap.LinkLabelClickEvent
 
   {% highlight vbnet %}
 
-   [VB]
+   
 
 
 
@@ -129,7 +129,7 @@ The LinkClick event will return the clicked Cell Descriptor.
 
   {% highlight c# %}
 
-   [C#]
+   
 
 
 
@@ -149,7 +149,7 @@ void OlapGrid1_LinkClick(object sender, Syncfusion.Windows.Grid.Olap.LinkLabelEv
 
   {% highlight vbnet %}
 
-   [VB]
+   
 
 
 

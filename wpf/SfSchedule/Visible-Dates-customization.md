@@ -13,7 +13,7 @@ All views in the schedule have their own number of visible dates. The SfSchedule
 
 If users want to view particular dates in a single view, users can provide a DateTime collection to the ScheduleDateRange property to view the particular dates in the day and time line view types.
 {% highlight c# %}
-[C#]
+
 
 ObservableCollection<DateTime> selectedDates = newObservableCollection<DateTime>();
 

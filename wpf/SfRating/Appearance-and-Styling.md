@@ -15,7 +15,7 @@ The RatedFill property fills the rated area with the specified solid color in th
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -45,7 +45,7 @@ The PointerOverFill property fills the mouse over area with the specified solid 
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -77,7 +77,7 @@ RatedStroke sets the stroke for the rated area with the specified solid color in
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -109,7 +109,7 @@ RatedStrokeThickness sets the stroke thickness for the rated area with the speci
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -141,7 +141,7 @@ PointerOverStroke sets the stroke for the mouseover area with the specified soli
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -173,7 +173,7 @@ PointerOverStrokeThickness sets the stroke thickness for the mouseover area with
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -205,7 +205,7 @@ The UnratedFill property fills the unrated area with the specified solid color i
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -236,7 +236,7 @@ UnratedStroke sets the stroke for the unrated area with the specified solid colo
 {%highlight xml%}
 
 
-[XAML]
+
 
 
 
@@ -266,7 +266,7 @@ UnratedStrokeThickness sets the stroke thickness for the unrated area with the s
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -292,7 +292,7 @@ UnratedStrokeThickness sets the stroke thickness for the unrated area with the s
 
 
 
-> _Note: The above properties are available in RatingItem. To set this property, use the ItemContainerStyle property of Rating._
+> Note: The above properties are available in RatingItem. To set this property, use the ItemContainerStyle property of Rating.
 
 
 
@@ -302,7 +302,7 @@ You can set the Height of each SfRatingItem by using Height property.
 
 {%highlight xml%}
 
-XAML
+
 
 <syncfusion:SfRating Height="50" VerticalAlignment="Center" HorizontalAlignment="Center" 
 
@@ -330,7 +330,7 @@ To set same Height for each SfRatingItem, you can use the ItemContainerStyle.
 
 {%highlight xml%}
 
-XAML
+
 
 <syncfusion:SfRating Height="50" Width="300" ItemsCount="10" Value="4">
 

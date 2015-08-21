@@ -15,7 +15,6 @@ Use the following code snippet to set the color for the Drag Marker.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -33,7 +32,6 @@ Use the following code snippet to set the color for the Drag Marker.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 

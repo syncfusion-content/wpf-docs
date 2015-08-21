@@ -19,7 +19,7 @@ The OLAP Gauge control for WPF provides value information when the mouse pointer
 
  {% highlight c# %}
  
-    [C#]
+    
 
 
 
@@ -32,7 +32,7 @@ this.olapGauge1.ShowPointersTooltip = true;
 
  {% highlight vbnet %}
   
-    [VB]
+    
 
 
 
@@ -59,7 +59,7 @@ The OLAP Gauge control for WPF provides goal information when the mouse pointer 
 
  {% highlight c# %}
  
-    [C#]
+    
 
 
 
@@ -72,7 +72,7 @@ this.olapGauge1.ShowMarkersTooltip = true;
 
  {% highlight vbnet %}
   
-    [VB]
+    
 
 
 

@@ -18,7 +18,7 @@ You can customize how a business object is displayed as MenuItemAdv using ItemTe
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:MenuAdv ItemsSource="{Binding MenuItems}" >
 

@@ -24,7 +24,7 @@ You can display the value of FeaturedMeasure of SfBulletGraph in ToolTip tha
 ### Code Example:
 
 {% highlight html %}
-[XAML]
+
 
                            <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -100,7 +100,7 @@ You can display the value of FeaturedMeasure of SfBulletGraph in ToolTip tha
 
 ![http://help.syncfusion.com/ug/wpf/ImagesExt/image279_20.jpg](Concept-and-Features_images/Concept-and-Features_img13.jpeg)
 
-
+_SfBulletGraph with FeaturedMeasure ToolTip_
 
 ## ComparativeMeasureToolTipTemplate
 
@@ -109,7 +109,7 @@ You can display the value of ComparativeMeasure of SfBulletGraph in ToolTip 
 ### Code Example:
 
 {% highlight html %}
-[XAML]
+
 
                            <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -185,9 +185,9 @@ You can display the value of ComparativeMeasure of SfBulletGraph in ToolTip 
 {% endhighlight  %}
 
 
-![undefined](Concept-and-Features_images/Concept-and-Features_img14.jpeg)
+![](Concept-and-Features_images/Concept-and-Features_img14.jpeg)
 
-
+_SfBulletGraph with ComparativeMeasure ToolTip_
 
 
 
@@ -198,7 +198,7 @@ You can display the value of QualitativeRange of SfBulletGraph in ToolTip th
 ### Code Example:
 
 {% highlight html %}
-[XAML]
+
 
                            <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -289,6 +289,6 @@ You can display the value of QualitativeRange of SfBulletGraph in ToolTip th
 ![http://help.syncfusion.com/ug/wpf/ImagesExt/image279_22.jpg](Concept-and-Features_images/Concept-and-Features_img15.jpeg)
 
 
-
+_SfBulletGraph with QualitativeRange ToolTip_
 
 

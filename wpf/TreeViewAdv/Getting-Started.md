@@ -57,6 +57,7 @@ TreeViewAdv can also be created and configured using the Expression Blend. To cr
 1. Syncfusoon.Tools.Wpf
 2. Syncfusion.Shared.Wpf
 3. Syncfusion.Core
+
 2. Search for the TreeViewAdv in the toolbox
 
 
@@ -249,7 +250,7 @@ This generates the TreeViewAdv as follows:
 
 TreeViewAdv supports object binding. The following example illustrates data binding:
 
-1. Create a class that acts as a model for TreeViewAdv as given in the following code snippet:
+1.Create a class that acts as a model for TreeViewAdv as given in the following code snippet:
 
 
 
@@ -291,7 +292,7 @@ public bool IsCheckable { get; set; }
 
 
 
-2. Create a ViewModel class and initialize the items as given in the following code snippet:
+2.Create a ViewModel class and initialize the items as given in the following code snippet:
 
 
 
@@ -371,7 +372,7 @@ public class ViewModel
 
 
 
-3. Create a ViewModel instance and use it as DataContext for the Root Window as given in the following code snippet:
+3.Create a ViewModel instance and use it as DataContext for the Root Window as given in the following code snippet:
 
 
 
@@ -385,7 +386,7 @@ public class ViewModel
 
 {% endhighlight %}
 
-4. Configure the ItemsSource and ItemTemplate of the TreeViewAdv as given below:
+4.Configure the ItemsSource and ItemTemplate of the TreeViewAdv as given below:
 
 
 
@@ -430,7 +431,7 @@ The TreeViewAdv will be created as follows:
 
 XML file can also be used as ItemsSource for the TreeViewAdv. The following example illustrates this:
 
-1. Create the xml file with the following details and name it as Data.xml:
+1.Create the xml file with the following details and name it as Data.xml:
 
 {% highlight xml %}
 
@@ -492,7 +493,7 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 {% endhighlight %}
 
 
-2. Add the XmlDataProvider for the above XML document as follows:
+2.Add the XmlDataProvider for the above XML document as follows:
 
 
 
@@ -504,7 +505,7 @@ XML file can also be used as ItemsSource for the TreeViewAdv. The following exam
 
 
 
-3. Set the ItemsSource property for the TreeViewAdv as follows:
+3.Set the ItemsSource property for the TreeViewAdv as follows:
 
 
 
@@ -552,7 +553,7 @@ TreeViewAdv also supports loading the data, retrieved from the WCF service.  Loa
 
 #### To bind data using WCF:
 
-1. Add a Service Reference to a WCF service that returns the required data. 
+1.Add a Service Reference to a WCF service that returns the required data. 
 
 For example, add the service reference to the following service:
 
@@ -560,7 +561,7 @@ For example, add the service reference to the following service:
 
 The required interfaces (IEmployeeService) and classes (Employee ,Product, Supplier) related to the service is created automatically.
 
-2. Create a Service Client object for that WCF service as given in the following code snippet:
+2.Create a Service Client object for that WCF service as given in the following code snippet:
 
 
 
@@ -572,7 +573,7 @@ The required interfaces (IEmployeeService) and classes (Employee ,Product, Suppl
 {% endhighlight %}
 
 
-3. Initialize the created client object before you use it. 
+3.Initialize the created client object before you use it. 
 
 
 {% highlight C# %}
@@ -583,7 +584,7 @@ client = new EmployeeServiceClient();
 
 
 
-4. Set the DataContext of the Window that holds the TreeViewAdv to the data retrieved from the service as follows:
+4.Set the DataContext of the Window that holds the TreeViewAdv to the data retrieved from the service as follows:
 
 
 
@@ -613,7 +614,7 @@ try
 
 The GetEmployees() method given in the above code snippet returns the list of Employee type objects available in the database.
 
-5. Set the ItemContainerStyle for the TreeViewAdv as follows:
+5.Set the ItemContainerStyle for the TreeViewAdv as follows:
 
 
 
@@ -699,7 +700,7 @@ The GetEmployees() method given in the above code snippet returns the list of Em
 
 {% endhighlight %}
 
-6. Get the TreeViewItemAdv which loads the data on demand (ie. On expand) using the LoadOnDemo event available in the TreeViewAdv.
+6.Get the TreeViewItemAdv which loads the data on demand (ie. On expand) using the LoadOnDemo event available in the TreeViewAdv.
 
 
 
@@ -842,7 +843,7 @@ There are two possible ways to create a simple TreeViewAdv control.
 
 To create the TreeViewAdv control through designer, do the below steps
 
-1. Drag the TreeViewAdv control from the toolbox onto your WPF application.
+1.Drag the TreeViewAdv control from the toolbox onto your WPF application.
 
 
 
@@ -850,7 +851,7 @@ To create the TreeViewAdv control through designer, do the below steps
 
 
 
-2. Set the properties for the TreeViewAdv control by using the Smart Tag feature.
+2.Set the properties for the TreeViewAdv control by using the Smart Tag feature.
 
 
 

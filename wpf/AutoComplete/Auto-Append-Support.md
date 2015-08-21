@@ -15,7 +15,7 @@ Auto Append is used to guide the complete text by appending the entered text wit
 
 ![](Auto-Append-Support_images/Auto-Append-Support_img1.png)
 
-
+_Auto Append_
 
 
 
@@ -25,14 +25,14 @@ If the IsAutoAppend property is set as True, once you enter the text the AutoCom
 
 {% highlight xml %}
 
-[XAML]
+
 <syncfusion:AutoComplete x:Name="AutoComplete1" IsAutoAppend="true"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-[C#]
+
 AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsAutoAppend = true;
 {% endhighlight %}
 
@@ -45,12 +45,12 @@ AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsAutoAppend 
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 IsAutoAppend</td><td>
@@ -74,12 +74,12 @@ Arguments </th><th>
 Type </th><th colspan = "2">
 Reference links </th></tr>
 <tr>
-<th>
-IsAutoAppendChanged</th><th>
- When the value of IsAutoAppend changed this event will be triggered.It cannot be cancelled.</th><th>
-DependencyObject,DependencyPropertyChangedEventArgs</th><th colspan = "2">
-DependencyPropertyChangedCallBack </th><th>
-</th></tr>
+<td>
+IsAutoAppendChanged</td><td>
+ When the value of IsAutoAppend changed this event will be triggered.It cannot be cancelled.</td><td>
+DependencyObject,DependencyPropertyChangedEventArgs</td><td colspan = "2">
+DependencyPropertyChangedCallBack </td><td>
+</td></tr>
 </table>
 
 

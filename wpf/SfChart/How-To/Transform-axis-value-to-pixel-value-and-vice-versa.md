@@ -7,7 +7,7 @@ control: SfChart
 documentation: ug
 ---
 
-### Transform axis value to pixel value and vice versa
+## Transform axis value to pixel value and vice versa
 
 SfChart offers two utility methods for converting your data points into pixel values (device coordinates).
 
@@ -15,8 +15,7 @@ SfChart offers two utility methods for converting your data points into pixel va
 * PointToValue(ChartAxis axis, Point point)
 
 
-
-[C#]
+{% highlight c# %}
 
 private void LineChart_MouseMove(object sender, MouseEventArgs e)
 
@@ -57,4 +56,4 @@ private void LineChart_MouseMove(object sender, MouseEventArgs e)
         }
 
 
-
+{% endhighlight  %}

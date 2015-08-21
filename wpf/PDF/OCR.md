@@ -20,13 +20,13 @@ Use Case Scenarios
 
 Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Settings</td><td>
@@ -64,9 +64,10 @@ Gets or sets the black-list values. Blacklist of characters not to recognize.</t
 WhiteList</td><td>
 Gets or sets the white-list values. Whitelist of characters to recognize.</td></tr>
 </table>
+
 Methods
 
-_Method Table_
+Method Table
 
 <table>
 <tr>
@@ -74,9 +75,9 @@ _Method Table_
 Method</th><th>
 Description</th></tr>
 <tr>
-<th>
-PerformOCR</th><th>
-Performs OCR on images in the loaded PDF document.</th></tr>
+<td>
+PerformOCR</td><td>
+Performs OCR on images in the loaded PDF document.</td></tr>
 </table>
 ## Deploying OCR 
 
@@ -114,7 +115,7 @@ To perform OCR on PDF using OCR processor, first you need to create an OCRProces
 
 The following code example illustrates how to perform OCR for a complete PDF document.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -145,10 +146,10 @@ lDoc.Save("Sample.pdf");
 lDoc.Close(true);
 
 }
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -175,6 +176,7 @@ lDoc.Save("Sample.pdf")
 lDoc.Close(True)
 
 End Using
+{% endhighlight %}
 
 ## Perform OCR for a Specific Region of PDF Document
 
@@ -182,7 +184,7 @@ Essential PDF OCR processor allows you to process the part of the PDF document.
 
 The following code example explains you how to perform OCR for a specific region of the PDF document.
 
-[C#]
+{% highlight c# %}
 
 //Initializes OCR processor by providing tesseract binaries (SyncfusionTesseract.dll and liblept168.dll)to the OCR processor overload.
 
@@ -226,9 +228,9 @@ lDoc.Close(true);
 
 }
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -270,9 +272,9 @@ lDoc.Save("Sample.pdf")
 
 lDoc.Close(True)
 
-> 
+{% endhighlight %}
 
-> _Note: The Tesseract binaries, namely SyncfusionTessaract.dll, liblept168.dll, and language pack (tessdata), will be available in the following location._
+> Note: The Tesseract binaries, namely SyncfusionTessaract.dll, liblept168.dll, and language pack (tessdata), will be available in the following location.
 
 <<Installation Location>>\Syncfusion\Essential Studio\<<Version Number>>\OCRProcessor
 

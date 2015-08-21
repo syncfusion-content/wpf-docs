@@ -14,7 +14,6 @@ In order to display the data in the SfMultiColumnDropDown control, bind the data
 The following code example illustrates how bind the itemsSource to the SfMulticolumnDropDownControl in XAML.
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -48,8 +47,7 @@ The following screenshot illustrates the output of the above code.
 The following code example illustrates how to bind itemsSource to the SfMultiColumnDropDownControl in codebehind.
 
 {% highlight C# %}
-
-[C#] 
+ 
 
 public MainWindow()
 
@@ -99,7 +97,7 @@ The following code example illustrate how to bind Complex property in SfMultiCol
 
 {% highlight C# %}
 
-[C#]
+
 
 public class Data:INotifyPropertyChanged
 
@@ -220,7 +218,7 @@ public class Data:INotifyPropertyChanged
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"
 

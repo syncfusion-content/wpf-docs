@@ -23,14 +23,14 @@ The following code illustrates how to bind the Task Detials to the Gantt Control
 
 {% highlight html %}
 
-[XAML]
+
 
  <Sync:GanttControl ItemsSource="{Binding GanttItemSource}" x:Name="Gantt" >
 
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
  //Initializing Gantt
  GanttControl Gantt = new GanttControl();
@@ -41,7 +41,7 @@ The following code illustrates how to bind the Task Detials to the Gantt Control
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 GanttItemSource = new ObservableCollection<TaskDetails>();
 
@@ -131,14 +131,14 @@ The following code illustrate how to map the properties using the TaskAttributeM
 
 {% highlight html %}
 
-[XAML]
+
  <gantt:TaskAttributeMapping TaskIdMapping="Id"                     TaskNameMapping="Name"                     StartDateMapping="StartDate"                      ChildMapping="ChildTask"                     FinishDateMapping="EndDate"                     DurationMapping="Duration"                     ResourceInfoMapping="Resource"                     ProgressMapping="Complete"                     PredecessorMapping="Predecessor">
  </gantt:TaskAttributeMapping>
 
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
   TaskAttributeMapping attributes = new TaskAttributeMapping();
   attributes.TaskIdMapping = "Id";
@@ -156,7 +156,7 @@ The following code illustrates how to bind the external source to Gantt control:
 
 
 {% highlight html %}
-[XAML]
+
 
 <Sync:GanttControl x:Name="Gantt" ItemsSource="{Binding GanttItemSource}">
       <Sync:GanttControl.TaskMapping>
@@ -167,7 +167,7 @@ The following code illustrates how to bind the external source to Gantt control:
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
  //Initializing Gantt
  GanttControl Gantt = new GanttControl();
@@ -191,7 +191,7 @@ The following code illustrates how to bind the external source to Gantt control:
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 GanttItemSource = new ObservableCollection<Task>();
 

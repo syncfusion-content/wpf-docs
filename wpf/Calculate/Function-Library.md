@@ -27,7 +27,7 @@ The above steps have been explained in detail in the following topics:
 
 The method must have the signature specified by the delegate, Syncfusion.Calculate.CalcEngine.LibraryFunction. It accepts a string argument and returns a string value. So here is a minimal implementation. The sample found in \WPF\Calculate.Wpf \Samples\2.0\ DataGridCalculator has code that adds a custom function.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -44,7 +44,7 @@ return someString;
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -72,7 +72,7 @@ Here add a method that accepts an argument list and then returns the minimum val
 
 In the following code, CalcEngine.ParseArgumentSeparator is used to split the args into a list. Additionally, the code makes use of two utility methods in the CalcEngine object, GetCellsFromArgs and GetValueFromArg. GetCellsFromArgs accepts a range like A3:C6 and returns a string array of the individual cell references in the range. GetValueFromArg accepts a cell reference, formula, or number and return the numerical value that the cell holds.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -193,7 +193,7 @@ public string ComputeMymin(string args)
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -297,7 +297,7 @@ The second step for adding your own formula is to register your method with the 
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -307,7 +307,7 @@ this.engine.AddFunction("Mymin", new LibraryFunction(ComputeMymin));
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -333,7 +333,7 @@ Removing unused functions from the Function Library, reduces the memory usage an
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -344,7 +344,7 @@ engine.LibraryFunctions.Clear();
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -360,7 +360,7 @@ After clearing all functions, you can add few functions that are used often. To 
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -371,7 +371,7 @@ engine.RemoveFunction("MyMin");
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -865,11 +865,9 @@ The syntax of the MULTINOMIAL function is
 
 =MULTINOMIAL(number1, (number2), …)
 
+&#35;NUM!	-	Occurs if any of the supplied arguments are less than 0.
 
-
-#NUM!	-	Occurs if any of the supplied arguments are less than 0.
-
-#VALUE! -	Occurs if any of the supplied arguments are non-numeric.
+&#35;VALUE! -	Occurs if any of the supplied arguments are non-numeric.
 
 Example:
 
@@ -896,7 +894,7 @@ The syntax of the ISEVEN function is
 
 The given value must be a numeric value. If it is non-integer value, the value is rounded down.
 
-> Note: If the given value is nonnumeric, the ISEVEN function returns the ‘#VALUE!’ error value.
+> Note: If the given value is nonnumeric, the ISEVEN function returns the ‘&#35;VALUE!’ error value.
 
 
 
@@ -933,7 +931,7 @@ The syntax of the ISODD function is
 
 The given value must be a numeric value. If it is a non-integer value, the value is rounded down.
 
-> Note: If the given value is nonnumeric, ISODD function returns the ‘#VALUE!’ error value.
+> Note: If the given value is nonnumeric, ISODD function returns the ‘&#35;VALUE!’ error value.
 
 
 
@@ -1053,7 +1051,7 @@ Return value of function</th></tr>
 2</td></tr>
 <tr>
 <td>
-#VALUE!</td><td>
+&#35;VALUE!</td><td>
 3</td></tr>
 <tr>
 <td>
@@ -1065,7 +1063,7 @@ Return value of function</th></tr>
 5</td></tr>
 <tr>
 <td>
-#NUM!</td><td>
+&#35;NUM!</td><td>
 6</td></tr>
 <tr>
 <td>
@@ -1183,9 +1181,9 @@ Multiple – This value is required.
 
 The number must be is greater than or equal to half the value of multiple.
 
-#NUM! -	Occurs if the number and multiple have different signs.
+&#35;NUM! -	Occurs if the number and multiple have different signs.
 
-#VALUE! -	Occurs if any of the given arguments are non-numeric.
+&#35;VALUE! -	Occurs if any of the given arguments are non-numeric.
 
 
 
@@ -1207,7 +1205,7 @@ RESULT</th></tr>
 <tr>
 <td>
 =MROUND(10,-2)</td><td>
-#NUM!</td></tr>
+&#35;NUM!</td></tr>
 </table>
 
 ### RANDBETWEEN
@@ -1226,9 +1224,9 @@ end_num – Required. This is the largest integer.
 
 
 
-#NUM! -	Occurs if the end_num value is larger than start_num value.
+&#35;NUM! -	Occurs if the end_num value is larger than start_num value.
 
-#VALUE! -	Occurs if any of the given arguments are non-numeric.
+&#35;VALUE! -	Occurs if any of the given arguments are non-numeric.
 
 #### Example:
 
@@ -1257,9 +1255,9 @@ number – Required.
 
 
 
-#NUM! -	If the number is less than zero (0).
+&#35;NUM! -	If the number is less than zero (0).
 
-#VALUE! -	Occurs if any of the given arguments are non-numeric.
+&#35;VALUE! -	Occurs if any of the given arguments are non-numeric.
 
 #### Example:
 
@@ -1275,7 +1273,7 @@ RESULT</th></tr>
 <tr>
 <td>
 = SQRTPI (-2)</td><td>
-#NUM!</td></tr>
+&#35;NUM!</td></tr>
 </table>
 
 ### QUOTIENT
@@ -1294,7 +1292,7 @@ Denominator – Required.
 
 #### Remarks:
 
-#VALUE! -	 Occurs if any of the given arguments are non-numeric.
+&#35;VALUE! -	 Occurs if any of the given arguments are non-numeric.
 
 #### Example:
 
@@ -1327,9 +1325,9 @@ number – Required.
 
 
 
-#NUM! -	If the number is less than zero (0).
+&#35;NUM! -	If the number is less than zero (0).
 
-#VALUE! -	Occurs if any of the given arguments are non-numeric
+&#35;VALUE! -	Occurs if any of the given arguments are non-numeric
 
 #### Example:
 
@@ -1345,7 +1343,7 @@ RESULT</th></tr>
 <tr>
 <td>
 = FACTDOUBLE (-2)</td><td>
-#NUM!</td></tr>
+&#35;NUM!</td></tr>
 </table>
 
 ### GCD
@@ -1364,9 +1362,9 @@ If any value is not an integer, then it is rounded down.
 
 
 
-#NUM!	 -	 If the number is less than zero (0).
+&#35;NUM!	 -	 If the number is less than zero (0).
 
-#VALUE! -	 Occurs if any of the given arguments are non-numeric.
+&#35;VALUE! -	 Occurs if any of the given arguments are non-numeric.
 
 #### Example:
 
@@ -1382,7 +1380,7 @@ RESULT</th></tr>
 <tr>
 <td>
 = GCD (-2)</td><td>
-#NUM!</td></tr>
+&#35;NUM!</td></tr>
 </table>
 
 ### LCM
@@ -1401,9 +1399,9 @@ If any value is not an integer, then it is rounded down.
 
 
 
-#NUM!	 -	 If the number is less than zero (0).
+&#35;NUM!	 -	 If the number is less than zero (0).
 
-#VALUE! -	 Occurs if any of the given arguments are non-numeric.
+&#35;VALUE! -	 Occurs if any of the given arguments are non-numeric.
 
 #### Example:
 
@@ -1419,7 +1417,7 @@ RESULT</th></tr>
 <tr>
 <td>
 = LCM (-2)</td><td>
-#NUM!</td></tr>
+&#35;NUM!</td></tr>
 </table>
 
 ### ROMAN
@@ -1464,7 +1462,7 @@ More concise. See example below.</td></tr>
 4</td><td>
 Simplified.</td></tr>
 </table>
-#VALUE! -	Occurs if any of the given values is non-numeric, or for values less than 0 and greater than 3999.
+&#35;VALUE! -	Occurs if any of the given values is non-numeric, or for values less than 0 and greater than 3999.
 
 #### Example:
 
@@ -1484,7 +1482,7 @@ ID</td></tr>
 <tr>
 <td>
 =ROMAN(-100)</td><td>
-#VALUE!</td></tr>
+&#35;VALUE!</td></tr>
 </table>
 
 ### IFERROR
@@ -1567,7 +1565,7 @@ XOR (logical_value1, logical_value2,…)
 
 Logical_value1: Required. This can be either TRUE or FALSE, and can be logical values, arrays, or references.
 
-> Note: If the given arguments do not have the logical values, XOR returns the #VALUE! error value.
+> Note: If the given arguments do not have the logical values, XOR returns the &#35;VALUE! error value.
 
 
 
@@ -1685,11 +1683,7 @@ criteria: The condition to be tested in each of the values of the given range.
 
 average_range: Numeric values to be evaluated against the criteria and averaged.
 
-> Note
-
-* _If range is blank or a text value, AVERAGEIF returns the #DIV/0! error value._
-* _If a cell in criteria is empty, AVERAGEIF treats it as a 0 value._
-* _If no cells in the range meet the criteria, AVERAGEIF returns the #DIV/0! error value._
+> Note * If range is blank or a text value, AVERAGEIF returns the #DIV/0! error value. * If a cell in criteria is empty, AVERAGEIF treats it as a 0 value. * If no cells in the range meet the criteria, AVERAGEIF returns the #DIV/0! error value.
 
 
 
@@ -1700,9 +1694,9 @@ Input Table
 <table>
 <tr>
 <td>
-</td><td>
-A</td><td>
-B</td></tr>
+</td><th>
+A</th><th>
+B</th></tr>
 <tr>
 <td>
 1</td><td>
@@ -1733,9 +1727,9 @@ Tax</td></tr>
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 =AVERAGEIF(B2:B5,"<7000")</td><td>
@@ -1760,11 +1754,7 @@ criteria_range1: Array of values to be tested against the given criteria.
 
 criteria1: The condition to be tested on each of the values of the given range.
 
-> Note
-
-* _If average_range is blank or a text value, AVERAGEIFS returns the #DIV/0! error value._
-* _If a cell in a criteria range is empty, AVERAGEIFS treats it as a 0 value._
-* _If cells in average_range cannot be translated into numbers, AVERAGEIFS returns the #DIV/0! error value._
+> Note * If average_range is blank or a text value, AVERAGEIFS returns the #DIV/0! error value. * If a cell in a criteria range is empty, AVERAGEIFS treats it as a 0 value. * If cells in average_range cannot be translated into numbers, AVERAGEIFS returns the #DIV/0! error value.
 
 
 
@@ -1775,10 +1765,10 @@ Input Table
 <table>
 <tr>
 <td>
-</td><td>
-A</td><td>
-B</td><td>
-C</td></tr>
+</td><th>
+A</th><th>
+B</th><th>
+C</th></tr>
 <tr>
 <td>
 1</td><td>
@@ -1814,9 +1804,9 @@ other</td></tr>
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 AVERAGEIFS(C2:C5, B2:B5, ">7000", B2:B5, "<10000")</td><td>
@@ -1837,7 +1827,7 @@ end_date: The end of the period to find the working days.
 
 [holidays]:  An optional argument, which specifies an array of dates that are not to be counted as working days.
 
-> Note: If any argument is not a valid date, NETWORKDAYS returns the #VALUE! error value.
+> Note: If any argument is not a valid date, NETWORKDAYS returns the &#35;VALUE! error value.
 
 
 
@@ -1879,10 +1869,10 @@ Input Table
 <table>
 <tr>
 <td>
-</td><td>
-A</td><td>
-B</td><td>
-C</td></tr>
+</td><th>
+A</th><th>
+B</th><th>
+C</th></tr>
 <tr>
 <td>
 1</td><td>
@@ -1918,9 +1908,9 @@ other</td></tr>
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 SUMIFS(C2:C5, B2:B5, ">7000", B2:B5, "<10000")</td><td>
@@ -1947,9 +1937,9 @@ A1: A logical value that specifies the A1 or R1C1 reference style.
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 =ADDRESS(2,3,2,FALSE)</td><td>
@@ -1976,10 +1966,7 @@ Array form: The array form of LOOKUP looks in the first row or column of an arra
 
 =LOOKUP(lookup_value, array)
 
-> Note
-
-* _If the LOOKUP function can't find the lookup_value, the function matches the largest value in lookup_vector that is less than or equal to lookup_value._
-* _If lookup_value is smaller than the smallest value in lookup_vector, LOOKUP returns the #N/A error value._
+> Note * If the LOOKUP function can't find the lookup_value, the function matches the largest value in lookup_vector that is less than or equal to lookup_value. * If lookup_value is smaller than the smallest value in lookup_vector, LOOKUP returns the #N/A error value.
 
 #### Example
 
@@ -1987,11 +1974,11 @@ Input Table
 
 <table>
 <tr>
-<td>
-</td><td>
-A</td><td>
-B</td><td>
-C</td></tr>
+<th>
+</th><th>
+A</th><th>
+B</th><th>
+C</th></tr>
 <tr>
 <td>
 1</td><td>
@@ -2027,9 +2014,9 @@ other</td></tr>
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 =LOOKUP(6000,B2:B5,C2:C5)</td><td>
@@ -2054,11 +2041,7 @@ string:Required. The text in which to search for the value of the substring.
 
 start_num: Optional. The starting position for searching in the string.
 
-> Note
-
-* _If the value of find_text is not found, the #VALUE! error value is returned._
-* _If the start_num argument is omitted, it is assumed to be 1._
-* _If start_num is not greater than 0, or is greater than the length of the string argument, the #VALUE! error value is returned._
+> Note * If the value of find_text is not found, the &#35;VALUE! error value is returned. * If the start_num argument is omitted, it is assumed to be 1. * If start_num is not greater than 0, or is greater than the length of the string argument, the &#35;VALUE! error value is returned.
 
 
 
@@ -2066,9 +2049,9 @@ start_num: Optional. The starting position for searching in the string.
 
 <table>
 <tr>
-<td>
-FORMULA</td><td>
-RESULT</td></tr>
+<th>
+FORMULA</th><th>
+RESULT</th></tr>
 <tr>
 <td>
 =SEARCH("base","database")  </td><td>

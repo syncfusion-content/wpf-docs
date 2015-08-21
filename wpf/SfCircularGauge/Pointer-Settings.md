@@ -25,7 +25,7 @@ A needle pointer contains two parts, the needle and the pointer cap. The needle 
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -64,7 +64,7 @@ A needle pointer contains two parts, the needle and the pointer cap. The needle 
 
 {% highlight C# %}
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -100,7 +100,7 @@ NeedlePointer can be customized by using the NeedlePointerType property of Point
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -145,7 +145,7 @@ NeedlePointer can be customized by using the NeedlePointerType property of Point
 
 {% highlight C# %}
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -201,7 +201,7 @@ Range Pointer is an accenting line or shaded background range that is placed on 
 
 {% highlight xml %}
 
-[XAML]
+
 
    <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -236,7 +236,7 @@ Range Pointer is an accenting line or shaded background range that is placed on 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -258,15 +258,11 @@ Range Pointer is an accenting line or shaded background range that is placed on 
 
 ### Screenshot:
 
-<table>
-<tr>
-<td>
-{{ '![](Pointer-Settings_images/Pointer-Settings_img3.png)' | markdownify }}
-</td></tr>
-<tr>
-<td>
-{{ '_Circular Scale with Range Pointer_' | markdownify }}</td></tr>
-</table>
+![](Pointer-Settings_images/Pointer-Settings_img3.png)
+
+_Circular Scale with Range Pointer_
+
+
 ## RangePointerPosition
 
 The RangePointer in the scale can be placed inside the scale or outside the scale by selecting one of the options available in the RangePointerPosition property. These options are:
@@ -280,7 +276,7 @@ The RangePointer in the scale can be placed inside the scale or outside the scal
 ### Code Example:
 
 {% highlight xml %}
-[XAML]
+
 
             <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -311,7 +307,7 @@ The RangePointer in the scale can be placed inside the scale or outside the scal
 
 {% highlight C# %}
 
-[C#]
+
 
       SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -346,7 +342,7 @@ In a Symbol Pointer, the value is pointed out by a symbol on the scale. You can 
 ### Code Example:
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -382,7 +378,7 @@ In a Symbol Pointer, the value is pointed out by a symbol on the scale. You can 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -419,7 +415,7 @@ Symbol is an enum property that provides symbol options for the symbol pointer t
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -458,7 +454,7 @@ Symbol is an enum property that provides symbol options for the symbol pointer t
 {% highlight C# %}
 
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -493,7 +489,7 @@ The SymbolPointerTemplate is a DataTemplate type, used to customize or override 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 

@@ -14,14 +14,10 @@ To create tab groups programmatically in DocumentContainer, two methods are used
 CreateHorizontalTabGroup() and CreateVerticalTabGroup(). Their usages are given below.
 
 
+{% highlight xml %}
+<syncfusion:DocumentContainer  Name="documentcontainer1" Mode="TDI">            <Grid Name="grid1"/>            <Grid Name="grid2"/>        </syncfusion:DocumentContainer>{% endhighlight %}
 
-<table>
-<tr>
-<td>
-{% highlight xml %}<syncfusion:DocumentContainer  Name="documentcontainer1" Mode="TDI">            <Grid Name="grid1"/>            <Grid Name="grid2"/>        </syncfusion:DocumentContainer>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight C# %}//To create horizontal tab groupdocumentcontainer1.CreateHorizontalTabGroup(grid1);//To create vertical tab group  documentcontainer1.CreateVerticalTabGroup(grid1);{% endhighlight %}</td></tr>
-</table>
+{% highlight C# %}//To create horizontal tab groupdocumentcontainer1.CreateHorizontalTabGroup(grid1);//To create vertical tab group  documentcontainer1.CreateVerticalTabGroup(grid1);{% endhighlight %}
+
 
 

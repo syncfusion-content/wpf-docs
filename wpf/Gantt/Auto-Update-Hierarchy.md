@@ -46,433 +46,429 @@ To use the auto updating hierarchy support in an application:
 1. Create a simple class structure for business objects.
 
 
-{% highlight c# %}
-[C#]
 
-   public class Task : NotificationObject
 
-    {
+			   public class Task : NotificationObject
 
-        public Task()
+				{
 
-        {
+					public Task()
 
-            ChildTask = new ObservableCollection<Task>();
+					{
 
-        }
+						ChildTask = new ObservableCollection<Task>();
 
+					}
 
 
-        //No need to do the calculation for end date when the duration is changed
 
-        public TimeSpan Duration
+					//No need to do the calculation for end date when the duration is changed
 
-        {
+					public TimeSpan Duration
 
-            get
+					{
 
-            {
+						get
 
-                return duration;
+						{
 
-            }
+							return duration;
 
+						}
 
 
-            set
 
-            {
+						set
 
-                duration = value;
+						{
 
-                RaisePropertyChanged("Duration");
+							duration = value;
 
-            }
+							RaisePropertyChanged("Duration");
 
-        }
+						}
 
+					}
 
 
-        //No need to do the calculation for duration when the end date is changed.
 
-        public DateTime EndDate
+					//No need to do the calculation for duration when the end date is changed.
 
-        {
+					public DateTime EndDate
 
-            get 
+					{
 
-            { 
+						get 
 
-                return endDate; 
+						{ 
 
-            }
+							return endDate; 
 
-            set
+						}
 
-            {
+						set
 
-                endDate = value;
+						{
 
-                RaisePropertyChanged("EndDate");
+							endDate = value;
 
-            }
+							RaisePropertyChanged("EndDate");
 
-        }
+						}
 
+					}
 
 
-        //No need to do the calculation for duration when the starting date is changed
 
-        public DateTime StDate
+					//No need to do the calculation for duration when the starting date is changed
 
-        {
+					public DateTime StDate
 
-            get
+					{
 
-            {
+						get
 
-                return stDate;
+						{
 
-            }
+							return stDate;
 
-            set
+						}
 
-            {
+						set
 
-                stDate = value;
+						{
 
-                RaisePropertyChanged("StDate");
+							stDate = value;
 
-            }
+							RaisePropertyChanged("StDate");
 
-        }
+						}
 
+					}
 
 
-//No need to hook the collection based on the changes made in child nodes to listen and refresh the parent nodes.
 
-        public ObservableCollection<Task> ChildTask
+			//No need to hook the collection based on the changes made in child nodes to listen and refresh the parent nodes.
 
-        {
+					public ObservableCollection<Task> ChildTask
 
-            get
+					{
 
-            {
+						get
 
-                return childTask;
+						{
 
-            }
+							return childTask;
 
-            set
+						}
 
-            {
+						set
 
-                childTask = value;
+						{
 
-                RaisePropertyChanged("ChildTask");
+							childTask = value;
 
-            }
+							RaisePropertyChanged("ChildTask");
 
-        }
+						}
 
+					}
 
 
-        public string Name
 
-        {
+					public string Name
 
-            get 
+					{
 
-            { 
+						get 
 
-                return name; 
+						{ 
 
-            }
+							return name; 
 
-            set
+						}
 
-            {
+						set
 
-                name = value;
+						{
 
-                RaisePropertyChanged("Name");
+							name = value;
 
-            }
+							RaisePropertyChanged("Name");
 
-        }
+						}
 
+					}
 
 
-        public int Id
 
-        {
+					public int Id
 
-            get 
+					{
 
-            { 
+						get 
 
-                return id; 
+						{ 
 
-            }
+							return id; 
 
-            set
+						}
 
-            {
+						set
 
-                id = value;
+						{
 
-                RaisePropertyChanged("Id");
+							id = value;
 
-            }
+							RaisePropertyChanged("Id");
 
-        }
+						}
 
+					}
 
 
-        public double Complete
 
-        {
+					public double Complete
 
-            get
+					{
 
-            {
+						get
 
-                return Math.Round(complete, 2);
+						{
 
-            }
+							return Math.Round(complete, 2);
 
-            set
+						}
 
-            {
+						set
 
-                complete = value;
+						{
 
-                RaisePropertyChanged("Complete");
+							complete = value;
 
-            }
+							RaisePropertyChanged("Complete");
 
-        }
+						}
 
-    }
+					}
 
-{% endhighlight %}
+				}
+
+
 
 
 
 2. Create a collection of business objects to bind them as ItemsSource for the Gantt control.
 
 
-{% highlight c# %}
-[C#]
 
 
 
-TaskDetails = new ObservableCollection<Task>();
 
-TaskDetails = GetData();
+				TaskDetails = new ObservableCollection<Task>();
 
+				TaskDetails = GetData();
 
 
-ObservableCollection<Task> GetData()
 
-{
+				ObservableCollection<Task> GetData()
 
-ObservableCollection<Task>data = new ObservableCollection<Task>();
+				{
 
-data.Add(new Task() 
+				ObservableCollection<Task>data = new ObservableCollection<Task>();
 
-{ 
+				data.Add(new Task() 
 
-Id = 1, 
+				{ 
 
-Name = "Analysis/Planning", 
+				Id = 1, 
 
-StDate = new DateTime(2012, 7, 3), 
+				Name = "Analysis/Planning", 
 
-EndDate = new DateTime(2012, 8, 14), 
+				StDate = new DateTime(2012, 7, 3), 
 
-Complete = 40d 
+				EndDate = new DateTime(2012, 8, 14), 
 
-});
+				Complete = 40d 
 
+				});
 
 
-data[0].ChildTask.Add((new Task() 
 
-{ 
+				data[0].ChildTask.Add((new Task() 
 
- Id = 2,
+				{ 
 
- Name = "Identify Components to be Localized", 
+				 Id = 2,
 
- StDate = new DateTime(2012, 7, 3),
+				 Name = "Identify Components to be Localized", 
 
- EndDate = new DateTime(2012, 7, 5),
+				 StDate = new DateTime(2012, 7, 3),
 
- Complete = 20d 
+				 EndDate = new DateTime(2012, 7, 5),
 
-}));
+				 Complete = 20d 
 
+				}));
 
 
-data[0].ChildTask.Add((new Task()
 
-{ 
+				data[0].ChildTask.Add((new Task()
 
- Id = 3,
+				{ 
 
- Name = "Ensure file localizability",
+				 Id = 3,
 
- StDate = new DateTime(2012, 7, 6),
+				 Name = "Ensure file localizability",
 
- EndDate = new DateTime(2012, 7, 7),
+				 StDate = new DateTime(2012, 7, 6),
 
- Complete = 20d
+				 EndDate = new DateTime(2012, 7, 7),
 
-}));
+				 Complete = 20d
 
+				}));
 
 
-data.Add(new Task() 
 
-{ 
+				data.Add(new Task() 
 
- Id = 8,
+				{ 
 
- Name = "Production",
+				 Id = 8,
 
- StDate = new DateTime(2012, 7, 3),
+				 Name = "Production",
 
- EndDate = new DateTime(2012, 7, 14), 
+				 StDate = new DateTime(2012, 7, 3),
 
- Complete = 40d 
+				 EndDate = new DateTime(2012, 7, 14), 
 
-});
+				 Complete = 40d 
 
-        data[1].ChildTask.Add((new Task() 
+				});
 
-        { 
+						data[1].ChildTask.Add((new Task() 
 
-Id = 9, 
+						{ 
 
-Name = "Software Components",
+				Id = 9, 
 
-StDate = new DateTime(2012, 7, 3),
+				Name = "Software Components",
 
-EndDate = new DateTime(2012, 7, 5), 
+				StDate = new DateTime(2012, 7, 3),
 
-Complete = 20d,
+				EndDate = new DateTime(2012, 7, 5), 
 
- }));
+				Complete = 20d,
 
-data[1].ChildTask.Add((new Task()
+				 }));
 
- { 
+				data[1].ChildTask.Add((new Task()
 
- Id = 10,
+				 { 
 
- Name = "Localization Component - User Interface",
+				 Id = 10,
 
- StDate = new DateTime(2012, 7, 6), 
+				 Name = "Localization Component - User Interface",
 
- EndDate = new DateTime(2012, 7, 7), 
+				 StDate = new DateTime(2012, 7, 6), 
 
- Complete = 20d
+				 EndDate = new DateTime(2012, 7, 7), 
 
- }));
+				 Complete = 20d
 
+				 }));
 
 
-data.Add(new Task()
 
-{
+				data.Add(new Task()
 
- Id = 13, 
+				{
 
- Name = "Quality Assurance", 
+				 Id = 13, 
 
- StDate = new DateTime(2012, 7, 3), 
+				 Name = "Quality Assurance", 
 
- EndDate = new DateTime(2012, 7, 12),
+				 StDate = new DateTime(2012, 7, 3), 
 
- Complete = 40d,
+				 EndDate = new DateTime(2012, 7, 12),
 
-});
+				 Complete = 40d,
 
-data[2].ChildTask.Add((new Task() 
+				});
 
-{ 
+				data[2].ChildTask.Add((new Task() 
 
- Id = 14,
+				{ 
 
- Name = "Review project information", 
+				 Id = 14,
 
- StDate = new DateTime(2012, 7, 3),
+				 Name = "Review project information", 
 
- EndDate = new DateTime(2012, 7, 15), 
+				 StDate = new DateTime(2012, 7, 3),
 
- Complete = 20d
+				 EndDate = new DateTime(2012, 7, 15), 
 
-}));
+				 Complete = 20d
 
-data[2].ChildTask.Add((new Task() 
+				}));
 
-{ 
+				data[2].ChildTask.Add((new Task() 
 
-Id = 15, 
+				{ 
 
-Name = "Localization Component", 
+				Id = 15, 
 
-StDate = new DateTime(2012, 7, 6), 
+				Name = "Localization Component", 
 
-EndDate = new DateTime(2012, 7, 8), 
+				StDate = new DateTime(2012, 7, 6), 
 
-Complete = 20d 
+				EndDate = new DateTime(2012, 7, 8), 
 
-}));
+				Complete = 20d 
 
-}
+				}));
 
-{% endhighlight %}
+				}
+
+
 
 3. Set the collection as ItemsSource of the Gantt control.
 
 
-{% highlight html %}
-[XAML]
 
 
 
-<gantt:GanttControl x:Name="Gantt"
+				<gantt:GanttControl x:Name="Gantt"
 
-                    Grid.Row="1"
+									Grid.Row="1"
 
-                    UseAutoUpdateHierarchy="True"
+									UseAutoUpdateHierarchy="True"
 
-                    ItemsSource="{Binding TaskDetails}"
+									ItemsSource="{Binding TaskDetails}"
 
-                    >
+									>
 
-                <gantt:GanttControl.TaskAttributeMapping>
+								<gantt:GanttControl.TaskAttributeMapping>
 
-                    <gantt:TaskAttributeMapping TaskIdMapping="Id"
+									<gantt:TaskAttributeMapping TaskIdMapping="Id"
 
-                                                TaskNameMapping="Name"
+																TaskNameMapping="Name"
 
-                                                StartDateMapping="StDate" 
+																StartDateMapping="StDate" 
 
-                                                ChildMapping="ChildTask"
+																ChildMapping="ChildTask"
 
-                                                FinishDateMapping="EndDate"
+																FinishDateMapping="EndDate"
 
-                                                DurationMapping="Duration"/>
+																DurationMapping="Duration"/>
 
-                </gantt:GanttControl.TaskAttributeMapping>
+								</gantt:GanttControl.TaskAttributeMapping>
 
-</gantt:GanttControl>
+				</gantt:GanttControl>
 
 
-{% endhighlight %}
+   {:.prettyprint}
 
 ## Using Custom Logics in Business Objects
 
@@ -481,526 +477,520 @@ To use your own logics in business objects:
 1. Create a simple class structure for business objects. Add custom calculations on business objects to update the hierarchy when its state changed.
 
 
-{% highlight c# %}
-[C#]
 
-public class Task : NotificationObject
 
-    {
+				public class Task : NotificationObject
 
-        public Task()
+					{
 
-        {
+						public Task()
 
-            ChildTask = new ObservableCollection<Task>();
+						{
 
-        }
+							ChildTask = new ObservableCollection<Task>();
 
-        public TimeSpan Duration
+						}
 
-        {
+						public TimeSpan Duration
 
-            get
+						{
 
-            {
+							get
 
-                if (childTask != null && childTask.Count >= 1)
+							{
 
-                {
+								if (childTask != null && childTask.Count >= 1)
 
-                    var sum = new TimeSpan(0, 0, 0, 0);
+								{
 
-                    sum = childTask.Aggregate(sum, (current, task) => current + task.Duration);
+									var sum = new TimeSpan(0, 0, 0, 0);
 
-                    return sum;
+									sum = childTask.Aggregate(sum, (current, task) => current + task.Duration);
 
-                }
+									return sum;
 
-                /// The difference between the end date and starting date is calculated exactly.
+								}
 
-                duration = endDate.Subtract(stDate);
+								/// The difference between the end date and starting date is calculated exactly.
 
-                return duration;
+								duration = endDate.Subtract(stDate);
 
-            }
+								return duration;
 
-            set
+							}
 
-            {
+							set
 
-                if (childTask != null && childTask.Count >= 1)
+							{
 
-                {
+								if (childTask != null && childTask.Count >= 1)
 
-                    var sum = new TimeSpan(0, 0, 0, 0);
+								{
 
-                    sum = childTask.Aggregate(sum, (current, task) => current + task.Duration);
+									var sum = new TimeSpan(0, 0, 0, 0);
 
-                    duration = sum;
+									sum = childTask.Aggregate(sum, (current, task) => current + task.Duration);
 
-                    return;
+									duration = sum;
 
-                }
+									return;
 
-                duration = value;
+								}
 
-                /// The end date is calculated to make the change in end date based on duration. The duration is interlinked with the starting date and end date, so it will affect the both based on the changes.
+								duration = value;
 
-                EndDate = stDate.AddDays(Double.Parse(duration.TotalDays.ToString()));
+								/// The end date is calculated to make the change in end date based on duration. The duration is interlinked with the starting date and end date, so it will affect the both based on the changes.
 
-            }
+								EndDate = stDate.AddDays(Double.Parse(duration.TotalDays.ToString()));
 
-        }
+							}
 
-        public DateTime EndDate
+						}
 
-        {
+						public DateTime EndDate
 
-            get { return endDate; }
+						{
 
-            set
+							get { return endDate; }
 
-            {
+							set
 
-                if (childTask != null && childTask.Count >= 1)
+							{
 
-                {
+								if (childTask != null && childTask.Count >= 1)
 
-                    /// If this task is a parent task, then it should have the maximum end time to compare the date with maximum date of its child tasks.
+								{
 
-                    if (value >= childTask.Max(s => s.EndDate) && endDate != value)
+									/// If this task is a parent task, then it should have the maximum end time to compare the date with maximum date of its child tasks.
 
-                        endDate = value;
+									if (value >= childTask.Max(s => s.EndDate) && endDate != value)
 
-                }
+										endDate = value;
 
-                else
+								}
 
-                    endDate = value;
+								else
 
-                RaisePropertyChanged("EndDate");
+									endDate = value;
 
-                /// The changed duration is invoked to notify the change in duration based on the new end date.
+								RaisePropertyChanged("EndDate");
 
-                RaisePropertyChanged("Duration");
+								/// The changed duration is invoked to notify the change in duration based on the new end date.
 
-            }
+								RaisePropertyChanged("Duration");
 
-        }
+							}
 
-        public DateTime StDate
+						}
 
-        {
+						public DateTime StDate
 
-            get
+						{
 
-            {
+							get
 
-                return stDate;
+							{
 
-            }
+								return stDate;
 
-            set
+							}
 
-            {
+							set
 
-                /// If this task is a parent task, then it should have the minimum starting time to compare the date with minimum date of its child tasks.
+							{
 
+								/// If this task is a parent task, then it should have the minimum starting time to compare the date with minimum date of its child tasks.
 
 
-                if (childTask != null && childTask.Count >= 1)
 
-                {
+								if (childTask != null && childTask.Count >= 1)
 
-                    if (value <= childTask.Min(s => s.stDate) && stDate != value)
+								{
 
-                        stDate = value;
+									if (value <= childTask.Min(s => s.stDate) && stDate != value)
 
-                }
+										stDate = value;
 
-                else
+								}
 
-                    stDate = value;
+								else
 
-                RaisePropertyChanged("StDate");
+									stDate = value;
 
+								RaisePropertyChanged("StDate");
 
 
-                /// The changed duration is invoked to notify the change in duration based on the new start date.
 
-                RaisePropertyChanged("Duration");
+								/// The changed duration is invoked to notify the change in duration based on the new start date.
 
-            }
+								RaisePropertyChanged("Duration");
 
-        }
+							}
 
-        public string Name
+						}
 
-        {
+						public string Name
 
-            get { return name; }
+						{
 
-            set
+							get { return name; }
 
-            {
+							set
 
-                name = value;
+							{
 
-                RaisePropertyChanged("Name");
+								name = value;
 
-            }
+								RaisePropertyChanged("Name");
 
-        }
+							}
 
-        public int Id
+						}
 
-        {
+						public int Id
 
-            get { return id; }
+						{
 
-            set
+							get { return id; }
 
-            {
+							set
 
-                id = value;
+							{
 
-                RaisePropertyChanged("Id");
+								id = value;
 
-            }
+								RaisePropertyChanged("Id");
 
-        }
+							}
 
-        public ObservableCollection<Task> ChildTask
+						}
 
-        {
+						public ObservableCollection<Task> ChildTask
 
-            get
+						{
 
-            {
+							get
 
-                if (childTask == null)
+							{
 
-                {
+								if (childTask == null)
 
-                    childTask = new ObservableCollection<Task>();
+								{
 
-                    /// The changed collection of child tasks is hooked to listen and refresh the parent node based on the changes made in child nodes.
+									childTask = new ObservableCollection<Task>();
 
-                    childTask.CollectionChanged += ChildNodesCollectionChanged;
+									/// The changed collection of child tasks is hooked to listen and refresh the parent node based on the changes made in child nodes.
 
-                }
+									childTask.CollectionChanged += ChildNodesCollectionChanged;
 
-                return childTask;
+								}
 
-            }
+								return childTask;
 
-            set
+							}
 
-            {
+							set
 
-                childTask = value;
+							{
 
-                ///The changed collection of child tasks is hooked to listen and refresh the parent node based on the changes made in child nodes.
+								childTask = value;
 
-                childTask.CollectionChanged += ChildNodesCollectionChanged;
+								///The changed collection of child tasks is hooked to listen and refresh the parent node based on the changes made in child nodes.
 
-                if (value.Count > 0)
+								childTask.CollectionChanged += ChildNodesCollectionChanged;
 
-                {
+								if (value.Count > 0)
 
-                    childTask.ToList().ForEach(n =>
+								{
 
-                    {
+									childTask.ToList().ForEach(n =>
 
-                        /// To listen the changes made in child tasks.
+									{
 
-                        n.PropertyChanged += ChildNodePropertyChanged;
+										/// To listen the changes made in child tasks.
 
+										n.PropertyChanged += ChildNodePropertyChanged;
 
 
-                    });
 
-                    UpdateData();
+									});
 
-                }
+									UpdateData();
 
-                RaisePropertyChanged("ChildTask");
+								}
 
-            }
+								RaisePropertyChanged("ChildTask");
 
-        }
+							}
 
-        void ChildNodePropertyChanged(object sender, PropertyChangedEventArgs e)
+						}
 
-        {
+						void ChildNodePropertyChanged(object sender, PropertyChangedEventArgs e)
 
-            if (e.PropertyName != null)
+						{
 
-                if (e.PropertyName == "StDate" || e.PropertyName == "EndDate" || e.PropertyName == "Complete")
+							if (e.PropertyName != null)
 
-                {
+								if (e.PropertyName == "StDate" || e.PropertyName == "EndDate" || e.PropertyName == "Complete")
 
-                    UpdateData();
+								{
 
-                }
+									UpdateData();
 
-        }
+								}
 
-        private void UpdateData()
+						}
 
-        {
+						private void UpdateData()
 
-            /// Update the starting date and end date based on the changes made in the date of child tasks.
+						{
 
-            StDate = childTask.Select(c => c.StDate).Min();
+							/// Update the starting date and end date based on the changes made in the date of child tasks.
 
-            EndDate = childTask.Select(c => c.EndDate).Max();
+							StDate = childTask.Select(c => c.StDate).Min();
 
-            Complete = (childTask.Aggregate(0d, (cur, task) => cur + task.Complete)) / childTask.Count;
+							EndDate = childTask.Select(c => c.EndDate).Max();
 
-        }
+							Complete = (childTask.Aggregate(0d, (cur, task) => cur + task.Complete)) / childTask.Count;
 
-        public void ChildNodesCollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+						}
 
-        {
+						public void ChildNodesCollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
 
-            if (e.Action == NotifyCollectionChangedAction.Add)
+						{
 
-            {
+							if (e.Action == NotifyCollectionChangedAction.Add)
 
-                foreach (Task node in e.NewItems)
+							{
 
-                {
+								foreach (Task node in e.NewItems)
 
-                    node.PropertyChanged += ChildNodePropertyChanged;
+								{
 
-                }
+									node.PropertyChanged += ChildNodePropertyChanged;
 
-            }
+								}
 
-            else
+							}
 
-            {
+							else
 
-                foreach (Task node in e.OldItems)
+							{
 
-                    node.PropertyChanged -= ChildNodePropertyChanged;
+								foreach (Task node in e.OldItems)
 
-            }
+									node.PropertyChanged -= ChildNodePropertyChanged;
 
-            UpdateData();
+							}
 
-        }
+							UpdateData();
 
-    }
+						}
 
-{% endhighlight  %}
+					}
+
+
 
 2. Create a collection of business objects to bind it as ItemsSource of the Gantt control.
 
-{% highlight c# %}
 
-[C#]
 
 
 
-TaskDetails = new ObservableCollection<Task>();
+				TaskDetails = new ObservableCollection<Task>();
 
-TaskDetails = GetData();
+				TaskDetails = GetData();
 
-ObservableCollection<Task> GetData()
+				ObservableCollection<Task> GetData()
 
-{
+				{
 
-ObservableCollection<Task>data = new ObservableCollection<Task>();
+				ObservableCollection<Task>data = new ObservableCollection<Task>();
 
-data.Add(new Task() 
+				data.Add(new Task() 
 
-{ 
+				{ 
 
-Id = 1, 
+				Id = 1, 
 
-Name = "Analysis/Planning", 
+				Name = "Analysis/Planning", 
 
-StDate = new DateTime(2012, 7, 3), 
+				StDate = new DateTime(2012, 7, 3), 
 
-EndDate = new DateTime(2012, 8, 14), 
+				EndDate = new DateTime(2012, 8, 14), 
 
-Complete = 40d 
+				Complete = 40d 
 
-});
+				});
 
-data[0].ChildTask.Add((new Task() 
+				data[0].ChildTask.Add((new Task() 
 
-{ 
+				{ 
 
- Id = 2,
+				 Id = 2,
 
- Name = "Identify Components to be Localized", 
+				 Name = "Identify Components to be Localized", 
 
- StDate = new DateTime(2012, 7, 3),
+				 StDate = new DateTime(2012, 7, 3),
 
- EndDate = new DateTime(2012, 7, 5),
+				 EndDate = new DateTime(2012, 7, 5),
 
- Complete = 20d 
+				 Complete = 20d 
 
-}));
+				}));
 
-data[0].ChildTask.Add((new Task()
+				data[0].ChildTask.Add((new Task()
 
-{ 
+				{ 
 
- Id = 3,
+				 Id = 3,
 
- Name = "Ensure file localizability",
+				 Name = "Ensure file localizability",
 
- StDate = new DateTime(2012, 7, 6),
+				 StDate = new DateTime(2012, 7, 6),
 
- EndDate = new DateTime(2012, 7, 7),
+				 EndDate = new DateTime(2012, 7, 7),
 
- Complete = 20d
+				 Complete = 20d
 
-}));
+				}));
 
-data.Add(new Task() 
+				data.Add(new Task() 
 
-{ 
+				{ 
 
- Id = 8,
+				 Id = 8,
 
- Name = "Production",
+				 Name = "Production",
 
- StDate = new DateTime(2012, 7, 3),
+				 StDate = new DateTime(2012, 7, 3),
 
- EndDate = new DateTime(2012, 7, 14), 
+				 EndDate = new DateTime(2012, 7, 14), 
 
- Complete = 40d 
+				 Complete = 40d 
 
-});
+				});
 
-        data[1].ChildTask.Add((new Task() 
+						data[1].ChildTask.Add((new Task() 
 
-        { 
+						{ 
 
-Id = 9, 
+				Id = 9, 
 
-Name = "Software Components",
+				Name = "Software Components",
 
-StDate = new DateTime(2012, 7, 3),
+				StDate = new DateTime(2012, 7, 3),
 
-EndDate = new DateTime(2012, 7, 5), 
+				EndDate = new DateTime(2012, 7, 5), 
 
-Complete = 20d,
+				Complete = 20d,
 
- }));
+				 }));
 
-data[1].ChildTask.Add((new Task()
+				data[1].ChildTask.Add((new Task()
 
- { 
+				 { 
 
- Id = 10,
+				 Id = 10,
 
- Name = "Localization Component - User Interface",
+				 Name = "Localization Component - User Interface",
 
- StDate = new DateTime(2012, 7, 6), 
+				 StDate = new DateTime(2012, 7, 6), 
 
- EndDate = new DateTime(2012, 7, 7), 
+				 EndDate = new DateTime(2012, 7, 7), 
 
- Complete = 20d
+				 Complete = 20d
 
- }));
+				 }));
 
-data.Add(new Task()
+				data.Add(new Task()
 
-{
+				{
 
- Id = 13, 
+				 Id = 13, 
 
- Name = "Quality Assurance", 
+				 Name = "Quality Assurance", 
 
- StDate = new DateTime(2012, 7, 3), 
+				 StDate = new DateTime(2012, 7, 3), 
 
- EndDate = new DateTime(2012, 7, 12),
+				 EndDate = new DateTime(2012, 7, 12),
 
- Complete = 40d,
+				 Complete = 40d,
 
-});
+				});
 
-data[2].ChildTask.Add((new Task() 
+				data[2].ChildTask.Add((new Task() 
 
-{ 
+				{ 
 
- Id = 14,
+				 Id = 14,
 
- Name = "Review project information", 
+				 Name = "Review project information", 
 
- StDate = new DateTime(2012, 7, 3),
+				 StDate = new DateTime(2012, 7, 3),
 
- EndDate = new DateTime(2012, 7, 15), 
+				 EndDate = new DateTime(2012, 7, 15), 
 
- Complete = 20d
+				 Complete = 20d
 
-}));
+				}));
 
-data[2].ChildTask.Add((new Task() 
+				data[2].ChildTask.Add((new Task() 
 
-{ 
+				{ 
 
-Id = 15, 
+				Id = 15, 
 
-Name = "Localization Component", 
+				Name = "Localization Component", 
 
-StDate = new DateTime(2012, 7, 6), 
+				StDate = new DateTime(2012, 7, 6), 
 
-EndDate = new DateTime(2012, 7, 8), 
+				EndDate = new DateTime(2012, 7, 8), 
 
-Complete = 20d 
+				Complete = 20d 
 
-}));
+				}));
 
-}
+				}
 
-{% endhighlight  %}
+
 
 3. Set the UseAutoUpdateHierarchy property as false to handle the custom calculations on the business objects. Set the collection as ItemsSource of the Gantt control.
 
-> Note: If you use the TaskDetails class as your business object, then you should not set the UseAutoUpdateHierarchy property as false.
-
-{% highlight html %}
-
-[XAML]
+   > Note: If you use the TaskDetails class as your business object, then you should not set the UseAutoUpdateHierarchy property as false.
 
 
 
-<gantt:GanttControl x:Name="Gantt"
 
-                    Grid.Row="1"
+			<gantt:GanttControl x:Name="Gantt"
 
-                    UseAutoUpdateHierarchy="False"
+								Grid.Row="1"
 
-                    ItemsSource="{Binding TaskDetails}"
+								UseAutoUpdateHierarchy="False"
 
-                    >
+								ItemsSource="{Binding TaskDetails}"
 
-                <gantt:GanttControl.TaskAttributeMapping>
+								>
 
-                    <gantt:TaskAttributeMapping TaskIdMapping="Id"
+							<gantt:GanttControl.TaskAttributeMapping>
 
-                                                TaskNameMapping="Name"
+								<gantt:TaskAttributeMapping TaskIdMapping="Id"
 
-                                                StartDateMapping="StDate" 
+															TaskNameMapping="Name"
 
-                                                ChildMapping="ChildTask"
+															StartDateMapping="StDate" 
 
-                                                FinishDateMapping="EndDate"
+															ChildMapping="ChildTask"
 
-                                                DurationMapping="Duration"/>
+															FinishDateMapping="EndDate"
 
-                </gantt:GanttControl.TaskAttributeMapping>
+															DurationMapping="Duration"/>
 
-</gantt:GanttControl>
+							</gantt:GanttControl.TaskAttributeMapping>
 
-{% endhighlight  %}
+                            </gantt:GanttControl>
+
+   {:.prettyprint}
 
 Output:
 

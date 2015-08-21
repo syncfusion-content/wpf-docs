@@ -36,7 +36,7 @@ The following code example illustrates how to add the ColorPickerPalette control
 
 {% highlight xml %}
 
-[XAML]
+
 
    <syncfusion:ColorPickerPalette x:Name="ColorPicker"/>
 
@@ -50,7 +50,7 @@ The following code example illustrates how to add the ColorPickerPalette control
 
 {% highlight C# %}
 
-[C#]
+
 
             ColorPickerPalette colorpicker = new ColorPickerPalette();
 
@@ -74,7 +74,7 @@ To add a ColorPickerPalette control to an application through Microsoft Expressi
 
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -84,7 +84,9 @@ To add a ColorPickerPalette control to an application through Microsoft Expressi
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
+   
+   {:.prettyprint}
 
 
 

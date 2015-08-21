@@ -13,15 +13,15 @@ documentation: ug
 
 Follow the below steps to add ToolBarAdv Control to WPF Application:
 
-1. Create a new WPF project.
-2. ToolBarAdv Control will be listed in the Tool Box.
+1.Create a new WPF project.
+2.ToolBarAdv Control will be listed in the Tool Box.
 
    ![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
 
-3. Drag and drop the control to the designer.
+3.Drag and drop the control to the designer.
 
 
 
@@ -37,7 +37,7 @@ Follow the below steps to add ToolBarAdv Control to WPF Application:
 {% endhighlight %}
 
 
-4. ToolBarAdv Control is added.
+4.ToolBarAdv Control is added.
 
 ## Appearance and Structure of the Control
 
@@ -59,7 +59,7 @@ Follow the below steps to add ToolBarAdv Control to WPF Application:
 
 
 
-_Properties of ToolBarAdv_
+Properties of ToolBarAdv
 
 <table>
 <tr>
@@ -163,7 +163,7 @@ NA </td></tr>
 </table>
 
 
-_ToolBarTrayAdv_
+ToolBarTrayAdv
 
 <table>
 <tr>
@@ -197,7 +197,7 @@ NA</td></tr>
 </table>
 
 
-_ToolBarManager_
+ToolBarManager
 
 <table>
 <tr>

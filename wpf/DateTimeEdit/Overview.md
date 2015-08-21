@@ -243,12 +243,12 @@ _DateTimeEdit members Events table_
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Event Type</td><td>
-Event Args Parameter</td><td>
-Description</td><td>
-Reference Link</td></tr>
+<th>
+Name</th><th>
+Event Type</th><th>
+Event Args Parameter</th><th>
+Description</th><th>
+Reference Link</th></tr>
 <tr>
 <td>
 DateTimeChanged</td><td>

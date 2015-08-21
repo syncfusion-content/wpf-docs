@@ -14,10 +14,10 @@ PercentTextBox accepts null values. To enable the null option you have to set th
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                            UseNullOption="True" NullValue="1"/></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                            UseNullOption="True" NullValue="1"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.UseNullOption = true;percentTextBox.NullValue = 1;</td></tr>
+{% highlight c# %} PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.UseNullOption = true;percentTextBox.NullValue = 1;{% endhighlight %}</td></tr>
 </table>
 
 
@@ -29,10 +29,10 @@ In this sample, the NullValue (NullValue = 1) is set to the Value property of th
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                            UseNullOption="True" NullValue="{x:Null}"/></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                            UseNullOption="True" NullValue="{x:Null}"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.UseNullOption = true;percentTextBox.NullValue = null;</td></tr>
+{% highlight c# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.UseNullOption = true;percentTextBox.NullValue = null;{% endhighlight %}</td></tr>
 </table>
 
 

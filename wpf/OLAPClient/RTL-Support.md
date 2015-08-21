@@ -12,21 +12,21 @@ documentation: ug
 Right-to-left support has been provided for the OLAP Client control for WPF. Users can now display content from right to left by setting 
 the flow direction option in the control. 
 
-### Use Case Scenario
+## Use Case Scenario
 
 Some cultures have a written language that reads from right to left. Controls deployed for such cultures should be rendered from right to left. In these cases, we can utilize RTL support of the OLAP Client component. 
 
-### Properties
+Properties
 
 _Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 FlowDirection</td><td>
@@ -40,7 +40,7 @@ Enum</td></tr>
 To enable RTL support, the FlowDirection property of the OLAP Client control needs to be set as RightToLeft. The following code sample explains how to set the FlowDirection property. It can be set through XAML or C# code.
 {% highlight xml %} 
 
-[XAML]
+
 
 <syncfusion:OlapClient x:Name="olapClient1" FlowDirection="RightToLeft" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"                                       OlapDataManager="{Binding ClientDataManager}" />
 
@@ -49,7 +49,6 @@ To enable RTL support, the FlowDirection property of the OLAP Client control nee
 
 {% highlight C# %} 
 
-[C#]
 
   this.olapClient1.FlowDirection = System.Windows.FlowDirection.RightToLeft;
   
@@ -57,7 +56,7 @@ To enable RTL support, the FlowDirection property of the OLAP Client control nee
 
 {% highlight vbnet %} 
 
-[VB]
+
 
   Me.olapClient1.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 

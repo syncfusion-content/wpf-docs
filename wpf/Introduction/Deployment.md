@@ -427,21 +427,21 @@ PivotGrid</td><td>
 Syncfusion.PivotAnalysis.WPF</td><td>
 Syncfusion.Grid.WPFSyncfusion.GridCommon.WPFSyncfusion.Shared.WPFSyncfusion.PivotAnalysis.BaseSyncfusion.Linq.BaseSyncfusion.Core</td></tr>
 </table>
+
 ## ClickOnce Deployment
 
 While processing [ClickOnce](https://msdn.microsoft.com/en-us/library/ms996413.aspx) deployment for publishing an applications with Syncfusion WPF component, change the Publish Status option of the Syncfusion Assemblies as “Include”.
 
 ![](Deployment_images/Deployment_img1.png)
 
-
-
 _Selecting Application Files for changing the status_
+
+
 
 ![](Deployment_images/Deployment_img2.png)
 
-
-
 _Publish Status option changed as Include_
+
 
 ### ClickOnce signing process
 
@@ -460,15 +460,11 @@ Navigate to project properties and select Signing tab. In the tab check “Sign 
 
 ![](Deployment_images/Deployment_img3.png)
 
-
-
  _ClickOnce signing_
 
 In the Publish tab, click “Options” and in the publish options dialog check “Use application manifest for trust information” under Manifest as in the following screenshot.
 
 ![](Deployment_images/Deployment_img4.png)
-
-
 
 _Publish options dialog box_
 

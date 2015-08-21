@@ -13,14 +13,11 @@ Watermark is the dummy content displayed in the DoubleTextBox when the value is 
 
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %} XAML {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25"                            WatermarkText="Type Here" WatermarkTextIsVisible="True"                            WatermarkOpacity="0.5" UseNullOption="True"/> {% endhighlight %} </td></tr>
-</table>
+
+{% highlight xml %} XAML {% endhighlight %} 
+
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Width="150" Height="25"                            WatermarkText="Type Here" WatermarkTextIsVisible="True"                            WatermarkOpacity="0.5" UseNullOption="True"/> {% endhighlight %} 
+
 
 
 ![](Watermark-Support_images/Watermark-Support_img1.png)

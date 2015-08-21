@@ -17,7 +17,7 @@ ChromelessWindow enables you to write your own templates for the TitleBar. The T
 
 The following code snippet illustrates how to set the TitleBarTemplate property.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -39,7 +39,7 @@ TitleBarTemplate="{StaticResource TemplateKey}">
 
 For example, use the following code for a TitleBarTemplate.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -73,7 +73,7 @@ ChromelessWindow enables you to write your own templates for the Minimize button
 
 The following code snippet illustrates how to set the MinimizeButtonTemplate property.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -95,7 +95,7 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  MinimizeButtonTemp
 
 For example, use the following code for a MinimizeButtonTemplate.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -121,7 +121,7 @@ ChromelessWindow enables you to write your own templates for the Maximize button
 
 The following code snippet illustrates how to set the MaximizeButtonTemplate property.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -143,7 +143,7 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  MaximizeButtonTemp
 
 For example, use the following code for a MaximizeButtonTemplate.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -169,7 +169,7 @@ ChromelessWindow enables you to write your own template for the Restore button i
 
 To set the RestoreButtonTemplate property, use the below code
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -189,7 +189,7 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  RestoreButtonTempl
 
 For example, use the following code for a RestoreButtonTemplate.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -215,7 +215,7 @@ ChromelessWindow enables you to write your own templates for the Close button in
 
 To set the CloseButtonTemplate property, use the following code.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -235,7 +235,7 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  CloseButtonTemplat
 {% endhighlight  %}
 For example, use the following code for a CloseButtonTemplate.
 {% highlight html %}
-[XAML]
+
 
 
 

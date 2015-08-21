@@ -22,7 +22,7 @@ If you set the CheckIcon property to RadioButton, then MenuItemAdv’s will be g
 {% highlight xml %}
 
 
-[XAML]
+
 
 <shared:MenuAdv x:Name="Menu" Margin="10">
 
@@ -82,11 +82,11 @@ _Properties Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 IsCheckable</td><td>

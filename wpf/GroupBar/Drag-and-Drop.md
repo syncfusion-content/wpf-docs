@@ -9,7 +9,7 @@ documentation: ug
 
 # Drag and Drop
 
-###Details
+## Details
 
 Property: DragItemVisibility set to True
 

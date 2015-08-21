@@ -18,7 +18,6 @@ The following code sample shows how to create the RadialMenu from code-behind an
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -48,7 +47,6 @@ The following code sample shows how to create the RadialMenu from code-behind an
 
 {%highlight c#%}
 
-[C#]
 
 
 

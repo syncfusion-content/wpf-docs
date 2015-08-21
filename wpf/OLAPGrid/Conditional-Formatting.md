@@ -25,7 +25,7 @@ The following code snippets show how to create an OlapGrid and to add Conditiona
 
   {% highlight xml %}
 
-    [XAML]
+    
 
 <syncfusion:OlapGrid>
 
@@ -67,7 +67,7 @@ The following code snippets show how to create an OlapGrid and to add Conditiona
 
   {% highlight c# %}
 
-    [C#]
+    
 
 OlapGrid olapGrid1 = new OlapGrid();
 
@@ -135,7 +135,7 @@ this.olapgrid1.DataBind();
 
   {% highlight vbnet %}
 
-    [VB]
+    
 
 Dim olapGrid1 As OlapGrid = New OlapGrid()
 

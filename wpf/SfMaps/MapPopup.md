@@ -16,7 +16,7 @@ MapPopup is displayed only when “MapPopupVisibility” set to true in the shap
 It also customizes the MapPopup template. “MapPopupCustomTemplate” is a DataTemplate type API that is used to expose the custom template for the MapPopup.
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfMap >
 

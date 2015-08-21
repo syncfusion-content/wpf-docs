@@ -14,22 +14,26 @@ documentation: ug
 Most of the Syncfusion controls are enhanced with blend support. The following steps allow the control to design in Visual Studio Expression Blend.
 
 1. Create a WPF project in Expression Blend and refer to the Syncfusion corresponding control’s assemblies. For example, to add Docking Manager control, add its assembly Syncfusion.Tools.Wpf and its dependency assembly Syncfusion.Shared.Wpf
+  
+   
+   ![C:/Users/labuser/Desktop/blend_images/docking-1_edited.png](Common-Supports_images/Common-Supports_img1.png)
 
-![C:/Users/labuser/Desktop/blend_images/docking-1_edited.png](Common-Supports_images/Common-Supports_img1.png)
-
-
+  
 
 2. Search for Control in the Toolbox.
 
-![C:/Users/labuser/Desktop/blend_images/docking_2_Edited.png](Common-Supports_images/Common-Supports_img2.png)
+  
+   ![C:/Users/labuser/Desktop/blend_images/docking_2_Edited.png](Common-Supports_images/Common-Supports_img2.png)
 
-
+  
 
 3. Drag the control to the designer. It generates the control in designer.
+   
 
-![C:/Users/labuser/Desktop/blend_images/Docking-3.png](Common-Supports_images/Common-Supports_img3.png)
+   ![C:/Users/labuser/Desktop/blend_images/Docking-3.png](Common-Supports_images/Common-Supports_img3.png)
 
-
+  
+   {:.prettyprint}
 
 ## Testing
 
@@ -100,15 +104,15 @@ To assign Values in Resource, the resource file need to be updated as per the fo
 
 
 
-![](Common-Supports_images/Common-Supports_img6.png)
+   ![](Common-Supports_images/Common-Supports_img6.png)
 
 
 
 3. Similarly add all need key (Name) for required assembly for example (Syncfusion.Tools.Wpf.dll). And the following screenshot displays the String property names for Tools.WPF controls with French values.
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image252_12.jpg](Common-Supports_images/Common-Supports_img7.jpeg)
+   ![http://help.syncfusion.com/ug/wpf/ImagesExt/image252_12.jpg](Common-Supports_images/Common-Supports_img7.jpeg)
 
-
+   {:.prettyprint}
 
 
 

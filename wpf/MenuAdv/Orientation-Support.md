@@ -34,7 +34,7 @@ Users can add the Orientation support to MenuAdv used in the application as ment
 {% highlight xml %}
 
 
-[XAML]
+
 
 <shared:MenuAdv x:Name="Menu"  Orientation="Horizontal”/>
 
@@ -86,11 +86,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 Orientation</td><td>
@@ -119,7 +119,7 @@ When the ExpandMode property is set to ExpandOnClick, you can open the submenu o
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -175,11 +175,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 ExpandMode</td><td>

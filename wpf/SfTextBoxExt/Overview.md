@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Overview
 description: overview
@@ -18,7 +18,7 @@ TextBoxExt is an extended version of TextBox control. Most of the functionality 
 
 
 
-Key Features
+###Key Features
 
 * Auto Complete mode – The control provides suggestions to end users based on a predefined collection while typing.
 * Watermark – The control will prompt the user with some information, when it is not in focus and contains an empty string.

@@ -19,25 +19,25 @@ ValueChanged – The event occurs when the Value property of the CurrencyTextBox
 
 {% highlight xml %}
 
-XAML
+
 <syncfusion:CurrencyTextBox ValueChanged="CurrencyTextBox_ValueChanged"/>
 
 {% endhighlight %}
 
 {% highlight xml %}
-C#
+
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();
 currencyTextBox.ValueChanged+=new PropertyChangedCallback(CurrencyTextBox_ValueChanged);
 
 {% endhighlight %}
 
 
-### You can handle the event as follows:
+You can handle the event as follows:
 
 
 {% highlight C# %}
 
-C#
+
 
 private void CurrencyTextBox_ValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 
@@ -56,23 +56,23 @@ TextChanged – The event occurs when the Value property of the CurrencyTextBox 
 
 {% highlight xml %}
 
-XAML
+
 <syncfusion:CurrencyTextBox TextChanged="CurrencyTextBox_TextChanged"/>
 {% endhighlight %}
 
 {% highlight C# %}
 
-C#
+
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();
 currencyTextBox.TextChanged += new TextChangedEventHandler(CurrencyTextBox_TextChanged);
 {% endhighlight %}
 
-### You can handle the event as follows:
+You can handle the event as follows:
 
 
 {% highlight C# %}
 
-C#
+
 
 
 
@@ -95,13 +95,13 @@ CultureChanged – The event occurs when the Culture property of the CurrencyTex
 
 {% highlight xml %}
 
-XAML
+
 <syncfusion:CurrencyTextBox CultureChanged="CurrencyTextBox_CultureChanged"/>
 {% endhighlight %}
 
 {% highlight C# %}
 
-C#
+
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();currencyTextBox.CultureChanged+=new    PropertyChangedCallback(CurrencyTextBox_CultureChanged);
 {% endhighlight %}
 
@@ -111,7 +111,7 @@ CurrencyTextBox currencyTextBox = new CurrencyTextBox();currencyTextBox.CultureC
 
 {% highlight C# %}
 
-C#
+
 
 
 
@@ -132,23 +132,23 @@ MaxValueChanged – The event occurs when the MaxValue property of the CurrencyT
 
 {% highlight xml %}
 
-XAML
+
 <syncfusion:CurrencyTextBox MaxValueChanged="CurrencyTextBox_MaxValueChanged"/>
 {% endhighlight %}
 
 {% highlight C# %}
 
-C#
+
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();currencyTextBox.MaxValueChanged+=new  PropertyChangedCallback(CurrencyTextBox_MaxValueChanged);
 {% endhighlight %}
 
 
-### You can handle the event as follows:
+You can handle the event as follows:
 
 
 {% highlight C# %}
 
-C#
+
 
 
 
@@ -170,13 +170,13 @@ MinValueChanged – The event occurs when the MinValue property of the CurrencyT
 
 {% highlight xml %}
 
-XAML
+
 <syncfusion:CurrencyTextBox MinValueChanged="CurrencyTextBox_MinValueChanged"/>
 {% endhighlight %}
 
 {% highlight C# %}
 
-C#
+
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();
 currencyTextBox.MinValueChanged+=new  PropertyChangedCallback(CurrencyTextBox_MinValueChanged);
 
@@ -187,7 +187,7 @@ currencyTextBox.MinValueChanged+=new  PropertyChangedCallback(CurrencyTextBox_Mi
 
 {% highlight C# %}
 
-C#
+
 
 
 
@@ -209,26 +209,26 @@ SelectionChanged – The event occurs when the selection in the textbox is chang
 
 {% highlight xml %}
 
-XAML
+
 <syncfusion:CurrencyTextBox SelectionChanged="CurrencyTextBox_SelectionChanged"/>
 {% endhighlight %}
 
 {% highlight C# %}
 
 
-C#
+
 CurrencyTextBox currencyTextBox = new CurrencyTextBox();
 currencyTextBox.SelectionChanged+=new RoutedEventHandler(CurrencyTextBox_SelectionChanged);
 
 {% endhighlight %}
 
-### You can handle the event as follows:
+You can handle the event as follows:
 
 
 {% highlight C# %}
 
 
-C#
+
 
 
 

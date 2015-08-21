@@ -11,13 +11,13 @@ documentation: ug
 
 This section enables you to understand the basics of the OlapChart.
 
-# Configuring OLAP Chart control
+## Configuring OLAP Chart control
 
 This section encompasses on how to configure an OLAP Chart component in an application. You can also learn how to pass the required data to OLAP Chart and to customize its various options according to your requirements.
 
 In the following example, the OLAP Chart component displays the Internet Sales Amount over different fiscal years against various geographical locations. This enables you to analyze the summarized data over different fiscal years.
 
-# Through Visual Studio
+## Through Visual Studio
 
 1. Open Visual Studio IDE and from the File menu, select New  Project.
 2. In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application. 
@@ -35,9 +35,7 @@ In the following example, the OLAP Chart component displays the Internet Sales A
 
 5. Add a name to OlapChart for accessing it through code-behind as illustrated in the following code example.
 
-   ~~~ xml
-
-        [XAML]
+  
    
             <Window
 
@@ -57,8 +55,7 @@ In the following example, the OLAP Chart component displays the Internet Sales A
 
             </Window>
 	
-   ~~~
-   {:.pretty-print }
+  
 
 
 
@@ -77,7 +74,7 @@ In the following example, the OLAP Chart component displays the Internet Sales A
 
    ~~~ cs
 
-        [C#]
+        
 
 
 
@@ -192,13 +189,11 @@ In the following example, the OLAP Chart component displays the Internet Sales A
             }  
 	
    ~~~
-   {:.pretty-print }
-
+   {:.prettyprint }
          
 
-   ~~~ vbnet
 
-        [VB]
+        
 
 
 
@@ -300,8 +295,7 @@ In the following example, the OLAP Chart component displays the Internet Sales A
 
             End Namespace
 	
-   ~~~
-   {:.pretty-print }
+  
 
 
 
@@ -312,9 +306,9 @@ In the following example, the OLAP Chart component displays the Internet Sales A
 7. Run the application
 
    ![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img3.png)
+   {:.prettyprint}
 
-
-# Through Expression Blend
+## Through Expression Blend
 
 You can also create and configure OLAP Chart by using Expression Blend as illustrated in the following steps.
 
@@ -338,305 +332,289 @@ You can also create and configure OLAP Chart by using Expression Blend as illust
 
    ## Assemblies Location
 
-      &lt;SystemDrive/&gt;:\Program Files (x86)\Syncfusion\EssentialStudio\&lt;version/&gt;\precompiledassemblies\&lt;version/&gt;\&lt;Framework/&gt;\
+      <SystemDrive/>:\Program Files (x86)\Syncfusion\EssentialStudio\<version/>\precompiledassemblies\<version/>\<Framework/>\
 
 4. After adding the above assemblies, OlapChat control is automatically added in the Assests.
 5. Now, find the OlapChart and drag it to the designer window. 
 
 
 
-![](Getting-Started_images/Getting-Started_img6.png)
+   ![](Getting-Started_images/Getting-Started_img6.png)
 
 
 6. Add a name to OlapChart for accessing it through code-behind as illustrated in the following code example.
 
-  ~~~ xaml
-
-    [XAML]
 
 
+    
 
-    <Window
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			<Window
 
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="SampleApplication.MainWindow"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        Title="MainWindow" Height="350" Width="525">
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-    <Grid>
+				xmlns:syncfusion="http://schemas.syncfusion.com/wpf" x:Class="SampleApplication.MainWindow"
 
-        <syncfusion:OlapChart x:Name="olapChart" HorizontalAlignment="Left" VerticalAlignment="Top" Height="319" Width="517"/>
+				Title="MainWindow" Height="350" Width="525">
 
-    </Grid>
+			<Grid>
 
-   </Window>
+				<syncfusion:OlapChart x:Name="olapChart" HorizontalAlignment="Left" VerticalAlignment="Top" Height="319" Width="517"/>
+
+			</Grid>
+
+		   </Window>
 	
-  ~~~
-  {:.pretty-print }
-
-
-
-
-
-
+  
 
 7. Include the following namespaces in the code-behind for using OlapReport and OlapDataManger in the application.
 1. Syncfusion.Olap.Reports
 2. Syncfusion.Olap.Manager
 
-  ~~~ c#
 
-    [C#]
+   ~~~ cs
 
+			using Syncfusion.Olap.Manager;
 
+			using Syncfusion.Olap.Reports;
 
-    using Syncfusion.Olap.Manager;
+			namespace SampleApplication
 
-    using Syncfusion.Olap.Reports;
+			{
 
-    namespace SampleApplication
+			public partial class MainWindow : SampleWindow
 
-    {
+			{
 
-    public partial class MainWindow : SampleWindow
+				private string _connectionString;
 
-    {
+				private OlapDataManager _olapDataManager;
 
-        private string _connectionString;
 
-        private OlapDataManager _olapDataManager;
 
+				public MainWindow()
 
+				{  
 
-        public MainWindow()
+					InitializeComponent();
 
-        {  
+					_connectionString = " Enter a valid connection string ";
 
-            InitializeComponent();
+					//Connection string is passed to OlapDataManager as an argument
 
-            _connectionString = " Enter a valid connection string ";
+					_olapDataManager = new OlapDataManager(_connectionString);
 
-            //Connection string is passed to OlapDataManager as an argument
+					//A default OlapReport is set to OlapDataManager
 
-            _olapDataManager = new OlapDataManager(_connectionString);
+					_olapDataManager.SetCurrentReport(CreateOlapReport());
 
-            //A default OlapReport is set to OlapDataManager
+					// Finally OlapChart gets the information from the OlapDataManager
 
-            _olapDataManager.SetCurrentReport(CreateOlapReport());
+					this.olapChart.OlapDataManager = _olapDataManager;
 
-            // Finally OlapChart gets the information from the OlapDataManager
+					this.olapChart.DataBind();
 
-            this.olapChart.OlapDataManager = _olapDataManager;
+				}
 
-            this.olapChart.DataBind();
 
-        }
 
+				/// <summary>
 
+				/// Defining OlapReport with Dimension and Measure
 
-        /// <summary>
+				/// </summary>
 
-        /// Defining OlapReport with Dimension and Measure
+				private OlapReport CreateOlapReport()
 
-        /// </summary>
+				{
 
-        private OlapReport CreateOlapReport()
+					OlapReport olapReport = new OlapReport();
 
-        {
+					// Setting the Cube name
 
-            OlapReport olapReport = new OlapReport();
+					olapReport.CurrentCubeName = "Adventure Works";
 
-            // Setting the Cube name
 
-            olapReport.CurrentCubeName = "Adventure Works";
 
+					DimensionElement dimensionElementColumn = new DimensionElement();
 
+					// Specifying the name of the Dimension
 
-            DimensionElement dimensionElementColumn = new DimensionElement();
+					dimensionElementColumn.Name = "Customer";
 
-            // Specifying the name of the Dimension
+					// Specifying the Hierarchy and Level name
 
-            dimensionElementColumn.Name = "Customer";
+					dimensionElementColumn.AddLevel("Customer Geography", "Country");
 
-            // Specifying the Hierarchy and Level name
 
-            dimensionElementColumn.AddLevel("Customer Geography", "Country");
 
+					MeasureElements measureElementColumn = new MeasureElements();
 
+					//Specifying the Measure name
 
-            MeasureElements measureElementColumn = new MeasureElements();
+					measureElementColumn.Elements.Add(new MeasureElement { Name = "Internet Sales Amount" });
 
-            //Specifying the Measure name
 
-            measureElementColumn.Elements.Add(new MeasureElement { Name = "Internet Sales Amount" });
 
+					DimensionElement dimensionElementRow = new DimensionElement();
 
+					// Specifying the name of the Dimension
 
-            DimensionElement dimensionElementRow = new DimensionElement();
+					dimensionElementRow.Name = "Date";
 
-            // Specifying the name of the Dimension
+					// Specifying the Hierarchy and Level name
 
-            dimensionElementRow.Name = "Date";
+					dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
 
-            // Specifying the Hierarchy and Level name
 
-            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
 
+					///Adding Dimension in column axis
 
+					olapReport.CategoricalElements.Add(dimensionElementColumn);
 
-            ///Adding Dimension in column axis
+					///Adding Measure in column axis
 
-            olapReport.CategoricalElements.Add(dimensionElementColumn);
+					olapReport.CategoricalElements.Add(measureElementColumn);
 
-            ///Adding Measure in column axis
+					///Adding Dimension in row axis
 
-            olapReport.CategoricalElements.Add(measureElementColumn);
+					olapReport.SeriesElements.Add(dimensionElementRow);
 
-            ///Adding Dimension in row axis
 
-            olapReport.SeriesElements.Add(dimensionElementRow);
 
+					return olapReport;
 
+				}
 
-            return olapReport;
+			}
 
-        }
-
-    }
-
-    }
+			}
 	
-  ~~~
-  {:.pretty-print }
+   ~~~
+   {:.prettyprint }
 
 
 
+    
 
 
-  ~~~ vbnet
 
-    [VB]
+			Imports Syncfusion.Olap.Manager
 
+			Imports Syncfusion.Olap.Reports
 
+			Partial Public Class MainWindow Inherits SampleWindow
 
-    Imports Syncfusion.Olap.Manager
+			Private _connectionString As String
 
-    Imports Syncfusion.Olap.Reports
+			Private _olapDataManager As OlapDataManager
 
-    Partial Public Class MainWindow Inherits SampleWindow
 
-    Private _connectionString As String
 
-    Private _olapDataManager As OlapDataManager
+			Public Sub New()
 
+			InitializeComponent()
 
+			_connectionString = " Enter a valid connection string "
 
-    Public Sub New()
+			' Connection string is passed to OlapDataManager as an argument
 
-    InitializeComponent()
+			_olapDataManager = New OlapDataManager(_connectionString)
 
-    _connectionString = " Enter a valid connection string "
+			' A default OlapReport is set to OlapDataManager
 
-    ' Connection string is passed to OlapDataManager as an argument
+			_olapDataManager.SetCurrentReport(CreateOlapReport())
 
-    _olapDataManager = New OlapDataManager(_connectionString)
+			' Finally OlapChart gets the information from the OlapDataManager		Me.olapChart.OlapDataManager = _olapDataManager
 
-    ' A default OlapReport is set to OlapDataManager
+			Me.olapChart.DataBind()
 
-    _olapDataManager.SetCurrentReport(CreateOlapReport())
+			End Sub
 
-    ' Finally OlapChart gets the information from the OlapDataManager		Me.olapChart.OlapDataManager = _olapDataManager
 
-    Me.olapChart.DataBind()
 
-    End Sub
+			  ''' <summary>
 
+			  ''' Defining OlapReport with Dimension and Measure
 
+			  ''' </summary>
 
-      ''' <summary>
+			  Private Function CreateOlapReport() As OlapReport
 
-      ''' Defining OlapReport with Dimension and Measure
+		            Dim olapReport As OlapReport = New OlapReport()
 
-      ''' </summary>
+		            ' Setting the Cube name
 
-      Private Function CreateOlapReport() As OlapReport
+		            olapReport.CurrentCubeName = "Adventure Works"
 
-            Dim olapReport As OlapReport = New OlapReport()
 
-            ' Setting the Cube name
 
-            olapReport.CurrentCubeName = "Adventure Works"
+		            Dim dimensionElementColumn As DimensionElement = New DimensionElement()
 
+		            ' Specifying the name of the Dimension
 
+		            dimensionElementColumn.Name = "Customer"
 
-            Dim dimensionElementColumn As DimensionElement = New DimensionElement()
+		            ' Specifying the Hierarchy and Level name
 
-            ' Specifying the name of the Dimension
+		            dimensionElementColumn.AddLevel("Customer Geography", "Country")
 
-            dimensionElementColumn.Name = "Customer"
 
-            ' Specifying the Hierarchy and Level name
 
-            dimensionElementColumn.AddLevel("Customer Geography", "Country")
+		            Dim measureElementColumn As MeasureElements = New MeasureElements()
 
+		            ' Specifying the Measure name
 
+		            measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
 
-            Dim measureElementColumn As MeasureElements = New MeasureElements()
 
-            ' Specifying the Measure name
 
-            measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
+		            Dim dimensionElementRow As DimensionElement = New DimensionElement()
 
+		            ' Specifying the name of the Dimension
 
+		            dimensionElementRow.Name = "Date"
 
-            Dim dimensionElementRow As DimensionElement = New DimensionElement()
+		            ' Specifying the Hierarchy and Level name
 
-            ' Specifying the name of the Dimension
+		            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
 
-            dimensionElementRow.Name = "Date"
 
-            ' Specifying the Hierarchy and Level name
 
-            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
+		            ''' Adding Dimension in column axis
 
+		            olapReport.CategoricalElements.Add(dimensionElementColumn)
 
+		            ''' Adding Measure in column axis
 
-            ''' Adding Dimension in column axis
+		            olapReport.CategoricalElements.Add(measureElementColumn)
 
-            olapReport.CategoricalElements.Add(dimensionElementColumn)
+		            ''' Adding Dimension in row axis
 
-            ''' Adding Measure in column axis
+		            olapReport.SeriesElements.Add(dimensionElementRow)
 
-            olapReport.CategoricalElements.Add(measureElementColumn)
 
-            ''' Adding Dimension in row axis
 
-            olapReport.SeriesElements.Add(dimensionElementRow)
+		            Return olapReport
 
+			  End Function
 
+			  End Class
 
-            Return olapReport
-
-      End Function
-
-      End Class
-
-      End Namespace
+			  End Namespace
 	
-  ~~~
-  {:.pretty-print }
-
 
 
 
 
 8. Run the application
 
-![](Getting-Started_images/Getting-Started_img7.png)
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
+   {:.prettyprint}
 
 # Through Code-Behind
 
@@ -644,286 +622,282 @@ You can also create and configure OLAP Chart by using Expression Blend as illust
 2. In the New Project Dialog box, click the tree node Windows under Visual C# and select WPF Application. 
 3. Type a name for the application and click OK. Here, name of the application is “SampleApplication”.
 
-![](Getting-Started_images/Getting-Started_img8.png)
+   ![](Getting-Started_images/Getting-Started_img8.png)
 
 
-![](Getting-Started_images/Getting-Started_img9.png)
+   ![](Getting-Started_images/Getting-Started_img9.png)
 
 
 4. Right-click on References and select Add Reference.., then add the following Syncfusion assemblies manually to the project from installed location.
-1. Syncfusion.Chart.WPF
-2. Syncfusion.Core
-3. Syncfusion.Olap.Base
-4. Syncfusion.OlapChart.WPF
-5. Syncfusion OlapChartConverter.WPF
-6. Syncfusion.OlapShared.WPF
-7. Syncfusion.Shared.WPF
-8. Syncfusion.Tools.WPF
+   1. Syncfusion.Chart.WPF
+   2. Syncfusion.Core
+   3. Syncfusion.Olap.Base
+   4. Syncfusion.OlapChart.WPF
+   5. Syncfusion OlapChartConverter.WPF
+   6. Syncfusion.OlapShared.WPF
+   7. Syncfusion.Shared.WPF
+   8. Syncfusion.Tools.WPF
 
+   {:.prettyprint}
+
+   
 ## Assemblies Location
 
-<SystemDrive>:\Program Files (x86)\Syncfusion\EssentialStudio\<version>\precompiledassemblies\<version>\<Framework>\
+&lt;SystemDrive&gt;:\Program Files (x86)\Syncfusion\EssentialStudio\<version>\precompiledassemblies\<version>\<Framework>\
 
-5. Include the following namespaces in code-behind to use OlapChart, OlapReport and OlapDataManger in the program.
+1. Include the following namespaces in code-behind to use OlapChart, OlapReport and OlapDataManger in the program.
 1. Syncfusion.Olap.Reports
 2. Syncfusion.Olap.Manager
 3. Syncfusion.Windows.Chart.Olap;
 
-  ~~~ c#
+   ~~~ cs
 
-    [C#]
+    
+				using Syncfusion.Olap.Manager;
 
+				using Syncfusion.Olap.Reports;
 
+				using Syncfusion.Windows.Chart.Olap;
 
-    using Syncfusion.Olap.Manager;
 
-    using Syncfusion.Olap.Reports;
 
-    using Syncfusion.Windows.Chart.Olap;
+				namespace SampleApplication
 
+				{
 
+				public partial class MainWindow : SampleWindow
 
-    namespace SampleApplication
+				{
 
-    {
+					private string _connectionString;
 
-    public partial class MainWindow : SampleWindow
+					private OlapDataManager _olapDataManager;
 
-    {
 
-        private string _connectionString;
 
-        private OlapDataManager _olapDataManager;
+					public MainWindow()
 
+					{  
 
+						InitializeComponent();
 
-        public MainWindow()
+						OlapChart olapChart = new OlapChart();
 
-        {  
+						_connectionString = " Enter a valid connection string ";
 
-            InitializeComponent();
+						//Connection string is passed to OlapDataManager as an argument
 
-            OlapChart olapChart = new OlapChart();
+						_olapDataManager = new OlapDataManager(_connectionString);
 
-            _connectionString = " Enter a valid connection string ";
+						//A default OlapReport is set to OlapDataManager
 
-            //Connection string is passed to OlapDataManager as an argument
+						_olapDataManager.SetCurrentReport(CreateOlapReport());
 
-            _olapDataManager = new OlapDataManager(_connectionString);
+						// Finally OlapChart gets the information from the OlapDataManager
 
-            //A default OlapReport is set to OlapDataManager
+						this.olapChart.OlapDataManager = _olapDataManager;
 
-            _olapDataManager.SetCurrentReport(CreateOlapReport());
+						this.olapChart.DataBind();
 
-            // Finally OlapChart gets the information from the OlapDataManager
+						this.AddChild(olapChart);
 
-            this.olapChart.OlapDataManager = _olapDataManager;
+					}
 
-            this.olapChart.DataBind();
 
-            this.AddChild(olapChart);
 
-        }
+					/// <summary>
 
+					/// Defining OlapReport with Dimension and Measure
 
+					/// </summary>
 
-        /// <summary>
+					private OlapReport CreateOlapReport()
 
-        /// Defining OlapReport with Dimension and Measure
+					{
 
-        /// </summary>
+						OlapReport olapReport = new OlapReport();
 
-        private OlapReport CreateOlapReport()
+						// Setting the Cube name
 
-        {
+						olapReport.CurrentCubeName = "Adventure Works";
 
-            OlapReport olapReport = new OlapReport();
 
-            // Setting the Cube name
 
-            olapReport.CurrentCubeName = "Adventure Works";
+						DimensionElement dimensionElementColumn = new DimensionElement();
 
+						// Specifying the name of the Dimension
 
+						dimensionElementColumn.Name = "Customer";
 
-            DimensionElement dimensionElementColumn = new DimensionElement();
+						// Specifying the Hierarchy and Level name
 
-            // Specifying the name of the Dimension
+						dimensionElementColumn.AddLevel("Customer Geography", "Country");
 
-            dimensionElementColumn.Name = "Customer";
 
-            // Specifying the Hierarchy and Level name
 
-            dimensionElementColumn.AddLevel("Customer Geography", "Country");
+						MeasureElements measureElementColumn = new MeasureElements();
 
+						//Specifying the Measure name
 
+						measureElementColumn.Elements.Add(new MeasureElement { Name = "Internet Sales Amount" });
 
-            MeasureElements measureElementColumn = new MeasureElements();
 
-            //Specifying the Measure name
 
-            measureElementColumn.Elements.Add(new MeasureElement { Name = "Internet Sales Amount" });
+						DimensionElement dimensionElementRow = new DimensionElement();
 
+						// Specifying the name of the Dimension
 
+						dimensionElementRow.Name = "Date";
 
-            DimensionElement dimensionElementRow = new DimensionElement();
+						// Specifying the Hierarchy and Level name
 
-            // Specifying the name of the Dimension
+						dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
 
-            dimensionElementRow.Name = "Date";
 
-            // Specifying the Hierarchy and Level name
 
-            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
+						///Adding Dimension in column axis
 
+						olapReport.CategoricalElements.Add(dimensionElementColumn);
 
+						///Adding Measure in column axis
 
-            ///Adding Dimension in column axis
+						olapReport.CategoricalElements.Add(measureElementColumn);
 
-            olapReport.CategoricalElements.Add(dimensionElementColumn);
+						///Adding Dimension in row axis
 
-            ///Adding Measure in column axis
+						olapReport.SeriesElements.Add(dimensionElementRow);
 
-            olapReport.CategoricalElements.Add(measureElementColumn);
 
-            ///Adding Dimension in row axis
 
-            olapReport.SeriesElements.Add(dimensionElementRow);
+						return olapReport;
 
+					}
 
+				}
 
-            return olapReport;
+				}
+				
+   ~~~
+   {:.prettyprint}
 
-        }
 
-    }
 
-    }
+    
+
+
+
+			Imports Syncfusion.Olap.Manager
+
+			Imports Syncfusion.Olap.Reports         
+
+			Imports Syncfusion.Windows.Chart.Olap
+
+			Namespace SampleApplication
+
+			Partial Public Class MainWindow Inherits SampleWindow
+
+			Private _connectionString As String
+
+			Private _olapDataManager As OlapDataManager
+
+
+
+			Public Sub New()
+
+			InitializeComponent()
+
+			Dim olapChart As New OlapChart()
+
+			_connectionString = " Enter a valid connection string "
+
+			' Connection string is passed to OlapDataManager as an argument
+
+			_olapDataManager = New OlapDataManager(_connectionString)
+
+			' A default OlapReport is set to OlapDataManager
+
+			_olapDataManager.SetCurrentReport(CreateOlapReport())
+
+			' Finally OlapChart gets the information from the OlapDataManager		Me.olapChart.OlapDataManager = _olapDataManager
+
+			Me.olapChart.DataBind()
+
+			Me.AddChild(olapChart)
+
+			End Sub
+
+
+
+			  ''' <summary>
+
+			  ''' Defining OlapReport with Dimension and Measure
+
+			  ''' </summary>
+
+			  Private Function CreateOlapReport() As OlapReport
+
+		            Dim olapReport As OlapReport = New OlapReport()
+
+		            ' Setting the Cube name
+
+		            olapReport.CurrentCubeName = "Adventure Works"
+
+
+
+		            Dim dimensionElementColumn As DimensionElement = New DimensionElement()
+
+		            ' Specifying the name of the Dimension
+
+		            dimensionElementColumn.Name = "Customer"
+
+		            ' Specifying the Hierarchy and Level name
+
+		            dimensionElementColumn.AddLevel("Customer Geography", "Country")
+
+
+
+		            Dim measureElementColumn As MeasureElements = New MeasureElements()
+
+		            ' Specifying the Measure name
+
+		            measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
+
+
+
+		            Dim dimensionElementRow As DimensionElement = New DimensionElement()
+
+		            ' Specifying the name of the Dimension
+
+		            dimensionElementRow.Name = "Date"
+
+		            ' Specifying the Hierarchy and Level name
+
+		            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
+
+
+
+		            ''' Adding Dimension in column axis
+
+		            olapReport.CategoricalElements.Add(dimensionElementColumn)
+
+		            ''' Adding Measure in column axis
+
+		            olapReport.CategoricalElements.Add(measureElementColumn)
+
+		            ''' Adding Dimension in row axis
+
+		            olapReport.SeriesElements.Add(dimensionElementRow)
+
+
+
+		            Return olapReport
+
+			  End Function
+
+			  End Class
+
+			  End Namespace
 	
-  ~~~
-  {:.pretty-print }
-
-
-
-  ~~~ vbnet
-
-    [VB]
-
-
-
-    Imports Syncfusion.Olap.Manager
-
-    Imports Syncfusion.Olap.Reports         
-
-    Imports Syncfusion.Windows.Chart.Olap
-
-    Namespace SampleApplication
-
-    Partial Public Class MainWindow Inherits SampleWindow
-
-    Private _connectionString As String
-
-    Private _olapDataManager As OlapDataManager
-
-
-
-    Public Sub New()
-
-    InitializeComponent()
-
-    Dim olapChart As New OlapChart()
-
-    _connectionString = " Enter a valid connection string "
-
-    ' Connection string is passed to OlapDataManager as an argument
-
-	_olapDataManager = New OlapDataManager(_connectionString)
-
-    ' A default OlapReport is set to OlapDataManager
-
-    _olapDataManager.SetCurrentReport(CreateOlapReport())
-
-    ' Finally OlapChart gets the information from the OlapDataManager		Me.olapChart.OlapDataManager = _olapDataManager
-
-    Me.olapChart.DataBind()
-
-    Me.AddChild(olapChart)
-
-    End Sub
-
-
-
-      ''' <summary>
-
-      ''' Defining OlapReport with Dimension and Measure
-
-      ''' </summary>
-
-      Private Function CreateOlapReport() As OlapReport
-
-            Dim olapReport As OlapReport = New OlapReport()
-
-            ' Setting the Cube name
-
-            olapReport.CurrentCubeName = "Adventure Works"
-
-
-
-            Dim dimensionElementColumn As DimensionElement = New DimensionElement()
-
-            ' Specifying the name of the Dimension
-
-            dimensionElementColumn.Name = "Customer"
-
-            ' Specifying the Hierarchy and Level name
-
-            dimensionElementColumn.AddLevel("Customer Geography", "Country")
-
-
-
-            Dim measureElementColumn As MeasureElements = New MeasureElements()
-
-            ' Specifying the Measure name
-
-            measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
-
-
-
-            Dim dimensionElementRow As DimensionElement = New DimensionElement()
-
-            ' Specifying the name of the Dimension
-
-            dimensionElementRow.Name = "Date"
-
-            ' Specifying the Hierarchy and Level name
-
-            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
-
-
-
-            ''' Adding Dimension in column axis
-
-            olapReport.CategoricalElements.Add(dimensionElementColumn)
-
-            ''' Adding Measure in column axis
-
-            olapReport.CategoricalElements.Add(measureElementColumn)
-
-            ''' Adding Dimension in row axis
-
-            olapReport.SeriesElements.Add(dimensionElementRow)
-
-
-
-            Return olapReport
-
-      End Function
-
-      End Class
-
-      End Namespace
-	
-  ~~~
-  {:.pretty-print }
 
 
 
@@ -931,10 +905,11 @@ You can also create and configure OLAP Chart by using Expression Blend as illust
 
 6. Run the application.
 
-![](Getting-Started_images/Getting-Started_img10.png)
+   ![](Getting-Started_images/Getting-Started_img10.png)
 
-
-# Design-Time Binding
+   {:.prettyprint}
+   
+## Design-Time Binding
 
 Design-time support for OLAP Chart allows you to reduce the time spent on creating and customizing the report. Normally, it takes 10 to 15 minutes for creating a report and in the case of unfamiliar cubes it may extend further, but by using design time support you can create a report in a couple of minutes.
 
@@ -944,18 +919,18 @@ The following steps explain how to create a report during design-time
 
 1. Drag and drop the control from the toolbox to the Visual Studio designer surface.
 
-![](Getting-Started_images/Getting-Started_img11.png)
+   ![](Getting-Started_images/Getting-Started_img11.png)
 
 
 2. Right-click OlapChart available in designer.
 3. Then, navigate to the Configure data source -> Create/Edit data source… option in the context menu.
 
-![](Getting-Started_images/Getting-Started_img12.png)
+   ![](Getting-Started_images/Getting-Started_img12.png)
 
 
 4. Now, the Data Source Properties wizard opens.
 
-![](Getting-Started_images/Getting-Started_img13.png)
+   ![](Getting-Started_images/Getting-Started_img13.png)
 
 
 5. From the Data Source Properties wizard select the connection type. 
@@ -964,7 +939,7 @@ The following steps explain how to create a report during design-time
 
 
 
-![](Getting-Started_images/Getting-Started_img14.png)
+   ![](Getting-Started_images/Getting-Started_img14.png)
 
 
 8. When you want to test the connection, click the Test Connection button that is displayed on the bottom left corner of the window.
@@ -972,11 +947,11 @@ The following steps explain how to create a report during design-time
 
 
 
-> _Note: The Next button is enabled only when any one of the connection option is filled properly._
+   >  Note: The Next button is enabled only when any one of the connection option is filled properly.
 
 10. When the connection is valid. It displays the summary page of the Data Source Properties Wizard.
 
-![](Getting-Started_images/Getting-Started_img15.png)
+    ![](Getting-Started_images/Getting-Started_img15.png)
 
 
 11. When you create a query for the first time, the MDX query text box in the summary page is empty. When you edit an already existing query, it displays the current query in the text box.
@@ -984,26 +959,25 @@ The following steps explain how to create a report during design-time
 
 
 
-![](Getting-Started_images/Getting-Started_img16.png)
+    ![](Getting-Started_images/Getting-Started_img16.png)
 
 
 13. When you edit an existing query, it displays the required dimensions in the specific axis of the query designer and the preview of that query is displayed in a Chart control.
-> 
-_Note: It does not display any style/formatting applied to the chart. It only displays the result of the query._
+    > Note: It does not display any style/formatting applied to the chart. It only displays the result of the query.
 
 14. Drag and drop dimensions, to frame a new query. 
 
-![](Getting-Started_images/Getting-Started_img17.png)
+    ![](Getting-Started_images/Getting-Started_img17.png)
 
 
 15. Then, click OK, to save the query or click Cancel, to revert the changes made during this session.
 16. The summary page of the Data Source Properties displays the resultant MDX query. 
 
-![](Getting-Started_images/Getting-Started_img18.png)
+    ![](Getting-Started_images/Getting-Started_img18.png)
 
 
 17. Click Finish. Run the application.
 
-![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img19.png)
-
+    ![C:/Users/ApoorvahR/Desktop/1.png](Getting-Started_images/Getting-Started_img19.png)
+    {:.prettyprint}
 

@@ -15,13 +15,13 @@ The spin button’s position in the DomainUpDown control can be changed using Sp
 2. Left
 3. Both
 
-### Right
+## Right
 
 Spin buttons will be aligned on the right side of the control.
 
 
 {%highlight xml%}
-[XAML]
+
 
 
 
@@ -54,13 +54,13 @@ Spin buttons will be aligned on the right side of the control.
 
 
 
-### Left
+## Left
 
 Spin buttons will be aligned on the left side of the control.
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -91,13 +91,13 @@ Spin buttons will be aligned on the left side of the control.
 
 
 
-### Both
+## Both
 
 The spin button’s decrement button will be aligned on the left side of the control and the increment button is aligned on the right side of the control.
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 

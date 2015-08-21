@@ -17,14 +17,14 @@ The RangeAdornerBackground property is used to set the background color of the r
 
 
 
-## _RangeAdornerBackground property table_
+_RangeAdornerBackground property table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 RangeAdornerBackground</td><td>
@@ -40,15 +40,14 @@ The RangeAdornerBackground property must be set either in XAML or the code file.
 
 {% highlight xml %}
 
-[XAML] 
+
  RangeAdornerBackground="LightGreen"
  
  {% endhighlight %}
  
  
 {% highlight C# %}
-
-[C#]  
+ 
 control.RangeAdornerBackground = Brushes.LightGreen;
 
 {% endhighlight %}

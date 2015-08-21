@@ -7,11 +7,11 @@ control: PivotGrid
 documentation: ug
 ---
 
-## GetRawItemFor Method 
+# GetRawItemFor Method 
 
 The GetRawItemFor method is used to obtain the list of raw items for value cell, total cell or grand total cell in PivotGrid. This method has been implemented in the PivotEngine which can be used independently from the PivotGrid control. 
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 The user can utilize this method when they want to know the raw item from which the Pivot Cell’s value is obtained and also they can get the raw items of the summary cells.
 
@@ -22,7 +22,7 @@ The user can utilize this method when they want to know the raw item from which 
 Methods
 
 
-_Method Table_
+Method Table
 
 <table>
 <tr>
@@ -32,11 +32,11 @@ _Method Table_
  {{ '**Parameters**' | markdownify }}</th><th>
  {{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
-<th>
-GetRawItemFor </th><th>
-This method allows you to get the raw item of the selected cell (Value cell or Summary cell). </th><th>
-int row, int column</th><th>
-List(object)</th></tr>
+<td>
+GetRawItemFor </td><td>
+This method allows you to get the raw item of the selected cell (Value cell or Summary cell). </td><td>
+int row, int column</td><td>
+List(object)</td></tr>
 </table>
 
 

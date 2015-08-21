@@ -17,7 +17,7 @@ documentation: ug
 
 
 
-> _Note: Support for Skins is provided only in Silverlight and not in WPF._
+> Note: Support for Skins is provided only in Silverlight and not in WPF.
 
 ## Adding Tab Navigation Control to an Application 
 
@@ -80,7 +80,7 @@ To enable transition effects, items should be added to the control. The followin
 
 
 
-_Property table_
+Property table
 
 <table>
 <tr>
@@ -121,15 +121,15 @@ TransitionEffects (Enum)</td><td>
 
 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Properties**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type Of Property**' | markdownify }}</td><td>
-{{ '**Acceptable Value**' | markdownify }}</td></tr>
+<th>
+{{ '**Properties**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type Of Property**' | markdownify }}</th><th>
+{{ '**Acceptable Value**' | markdownify }}</th></tr>
 <tr>
 <td>
 Header</td><td>
@@ -149,13 +149,13 @@ Object</td><td>
 
 
 
-_Event Table_
+Event Table
 
 <table>
 <tr>
-<td>
-{{ '**Name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Name**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 SelectionChanging</td><td>

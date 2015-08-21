@@ -15,7 +15,7 @@ The backstage feature of the Ribbon control provides KeyTip support to display K
 
 {% highlight xml %}
 
-    [XAML]
+   
 
 <syncfusion:Backstage x:Name="RibbonBackStage" syncfusion:Ribbon.KeyTip="B">
 

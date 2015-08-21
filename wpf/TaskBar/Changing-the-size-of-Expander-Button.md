@@ -15,7 +15,6 @@ To set the size of the Expander button, use the below code
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -57,7 +56,6 @@ To set the size of the Expander button, use the below code
 
 
 {% highlight c# %}
-[C#]
 
 
 

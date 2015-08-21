@@ -25,13 +25,13 @@ The appearance of the TabControlExt control is customized by using the VisualSty
 
 
 
-_Property table_
+Property table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
@@ -44,7 +44,6 @@ The following code example illustrates how to set the visual style for the TabCo
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -68,7 +67,6 @@ The following code example illustrates how to set the visual style for the TabCo
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -204,7 +202,7 @@ The style of the TabControlExt control can be customized by the customization pr
 
 
 
-_Customization Properties_
+Customization Properties
 
 <table>
 <tr>
@@ -214,41 +212,41 @@ Description</th><th>
 Type</th><th>
 Data Type</th></tr>
 <tr>
-<th>
-TabItemSelectedBackground</th><th>
-Used to set the background color of the selected tab item.</th><th>
-Dependency property</th><th>
-Brush</th></tr>
+<td>
+TabItemSelectedBackground</td><td>
+Used to set the background color of the selected tab item.</td><td>
+Dependency property</td><td>
+Brush</td></tr>
 <tr>
-<th>
-TabItemSelectedBorderBrush</th><th>
-Used to set the border color of the selected tab item.</th><th>
-Dependency property</th><th>
-Brush</th></tr>
+<td>
+TabItemSelectedBorderBrush</td><td>
+Used to set the border color of the selected tab item.</td><td>
+Dependency property</td><td>
+Brush</td></tr>
 <tr>
-<th>
-TabItemSelectedForeground</th><th>
-Used to set the foreground color of the selected tab item.</th><th>
-Dependency property</th><th>
-Brush</th></tr>
+<td>
+TabItemSelectedForeground</td><td>
+Used to set the foreground color of the selected tab item.</td><td>
+Dependency property</td><td>
+Brush</td></tr>
 <tr>
-<th>
-TabItemHoverBackground</th><th>
-Used to set the background color of the tab item in Hover state.</th><th>
-Dependency property</th><th>
-Brush</th></tr>
+<td>
+TabItemHoverBackground</td><td>
+Used to set the background color of the tab item in Hover state.</td><td>
+Dependency property</td><td>
+Brush</td></tr>
 <tr>
-<th>
-TabItemHoverBorderBrush</th><th>
-Used to set the border color of the tab item in Hover state.</th><th>
-Dependency property</th><th>
-Brush</th></tr>
+<td>
+TabItemHoverBorderBrush</td><td>
+Used to set the border color of the tab item in Hover state.</td><td>
+Dependency property</td><td>
+Brush</td></tr>
 <tr>
-<th>
-TabItemHoverForeground</th><th>
-Used to set the foreground color of the tab item in Hover state.</th><th>
-Dependency property</th><th>
-Brush</th></tr>
+<td>
+TabItemHoverForeground</td><td>
+Used to set the foreground color of the tab item in Hover state.</td><td>
+Dependency property</td><td>
+Brush</td></tr>
 </table>
 
 
@@ -256,7 +254,6 @@ The following code example shows how to use the customization properties in the 
 
 
 {% highlight xml %}
-[XAML]
 
 <sync:TabControlExt TabItemSelectedBackground="Gold" Height="100" Margin="100"
 

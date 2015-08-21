@@ -12,7 +12,7 @@ documentation: ug
 
 Databinding is the master feature of SfDataPager. SfDataPager is bound to an external data source to display the data. 
 
-### Source and PagedSource
+## Source and PagedSource
 
 SfDataPager exposes the Source property, where you can pass your collection of data for Paging. SfDataPager automatically wrap the collection in the PagedCollectionView and exposes to the PagedSource property. You can pass the PagedSource property to any ItemsControl’s ItemsSource property.
 
@@ -20,7 +20,7 @@ The following code example explains how to use the Source and PagedSource proper
 
 {% highlight html %}
 
-[XAML]
+
 
 <Window.DataContext>
 
@@ -60,7 +60,7 @@ The following code example explains how to use the Source and PagedSource proper
 {% endhighlight  %}
 The following screenshot displays the output of the above code.
 
-#### PageIndex
+### PageIndex
 
 
 
@@ -72,7 +72,7 @@ The following screenshot displays the output of the above code.
 
 SfDataPager exposes the PageIndex property. It contains the index of the currently selected page.You can use this property to set or get the current page of the SfDataPager. 
 
-#### Events
+Events
 
 <table>
 <tr>
@@ -92,7 +92,7 @@ PageIndexChanged</td><td>
 Event is triggered after the current page index is changed.</td></tr>
 </table>
 
-#### How to bind the PageCollection to the other controls?
+### How to bind the PageCollection to the other controls?
 
 SfDataPager automatically wraps the collection in PagedCollectionView and exposes to the PagedSource property. You can pass the PagedSource property to any ItemsControl’s ItemsSource property. Here, the PagesSource property is binded to the ListBox.
 
@@ -100,7 +100,7 @@ The following code explains how to use Source and PagedSource property in ListBo
 
 
 {% highlight html %}
-[XAML]
+
 
 <Window.DataContext>
 
@@ -142,7 +142,7 @@ The following screenshot displays the output for ListView binded with PagedColle
 
 
 
-#### On DemandPaging
+## On DemandPaging
 
 In normal paging, the entire data collection is initially loaded into the SfDataPager control. However, the SfDataPager control allows you to load the data for the current page dynamically. To enable on demand paging, set UseOnDemandPaging to true.__
 
@@ -166,7 +166,7 @@ The following steps help you to achieve an onDemand loading with the SfDataPager
 
 
 {% highlight html %}
-[XAML]
+
 
 <Window.DataContext>
 
@@ -208,7 +208,7 @@ The following steps help you to achieve an onDemand loading with the SfDataPager
 
 3. Wire up the OnDemandLoading event of SfDataPager.
 {% highlight c# %}
-[C#]
+
 
 private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs  args)
 
@@ -224,13 +224,13 @@ The following screenshot displays the output for OnDemandPaging,
 
 
 
-#### Page Size
+## Page Size
 
 SfDataPager splits the data into separate pages based on the PageSize. In order to specify the size of the page, you can use the PageSize property. By defaults, it is set to 0 and all the data is displayed in a single page.
 
 The following code example explains how to use PageSize property in SfDataPager.
 {% highlight html %}
-[XAML]
+
 
 <Window.DataContext>
 
@@ -272,13 +272,13 @@ The following screenshot displays the output for PageSize set as 5.
 
 
 
-#### How To
+## How To
 
-#### How to change the PageSize in Runtime
+### How to change the PageSize in Runtime
 
 In general, the size of the page is defined in the PageSize property. In some cases, you may want to change it during the run time. The following code example explains how to change the size of the page during runtime for a ComboBox.
 {% highlight html %}
-[XAML]
+
 
 <Window.DataContext>
 

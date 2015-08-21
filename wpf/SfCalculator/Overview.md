@@ -13,6 +13,7 @@ The Calculator control allows us to perform mathematical operations as like in c
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Overview_images/Overview_img1.png)
 
+_Calculator_
 
 
 ## Key Features

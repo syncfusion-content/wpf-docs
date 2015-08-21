@@ -13,9 +13,9 @@ AutoComplete supports two kinds of Selection Mode namely Single and Multiple. Yo
 
 When the SelectionMode property is set as Single, only one item can be selected at a time. The following image illustrates the Single selection mode.
 
-{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/SingleSelection.png](Selection-Mode-Support_images/Selection-Mode-Support_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/SingleSelection.png](Selection-Mode-Support_images/Selection-Mode-Support_img1.png)
 
+_SelectionMode-Single_
 
 
 
@@ -23,9 +23,9 @@ When the SelectionMode is set as Multiple, you can select multiple items by usin
 
 The following image illustrates the Multiple selection mode.
 
-{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/MultipleSelection.png](Selection-Mode-Support_images/Selection-Mode-Support_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/MultipleSelection.png](Selection-Mode-Support_images/Selection-Mode-Support_img2.png)
 
+_SelectionMode—Multiple_
 
 
 
@@ -33,40 +33,37 @@ When the SelectionMode is set as Extended, you can select multiple items at a ti
 
 The following image illustrates the Multiple selection mode.
 
-{{ '![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/ExtendedSelection.png](Selection-Mode-Support_images/Selection-Mode-Support_img3.png)' | markdownify }}
-{:.image }
+![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/WPF-AC/ExtendedSelection.png](Selection-Mode-Support_images/Selection-Mode-Support_img3.png)
 
-
+_SelectionMode—Extended_
 
 
 Adding Single, Multiple & Extended Selection Support to an Application 
 
 The Selectionmode property is used to attain these functionalities by setting its value as Single or Multiple or Extended. By default its value is Single. The following code snippet is used to set the SelectionMode property. 
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:AutoComplete x:Name="AutoComplete2" SelectionMode="Multiple"/></td></tr>
-<tr>
-<td>
-[C#]AutoComplete autoComplete1 = new AutoComplete();this.autoComplete2.SelectionMode = SelectionMode.Multiple;</td></tr>
-</table>
+{% highlight xml %}
+<syncfusion:AutoComplete x:Name="AutoComplete2" SelectionMode="Multiple"/>
+{% endhighlight %}
+{% highlight c# %}
+AutoComplete autoComplete1 = new AutoComplete();this.autoComplete2.SelectionMode = SelectionMode.Multiple;
+{% endhighlight %}
 
 
-Tables for properties, and events
+## Tables for properties, and events
 
-Property
+### Property
 
   _Property Table for Selection Mode_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 SelectionMode</td><td>
@@ -77,7 +74,7 @@ SelectionMode(Single)</td><td>
 </table>
 
 
-Events
+### Events
 
   _Event Table for Selection Mode_
 
@@ -90,16 +87,16 @@ Arguments </th><th>
 Type </th><th>
 Reference links </th></tr>
 <tr>
-<th>
-SelectionModeChanged</th><th>
- When the SelectionMode property value is changed, this event will be triggered.It cannot be cancelled.</th><th>
-DependencyObject,DependencyPropertyChangedEventArgs</th><th>
-DependencyPropertyChangedCallBack </th><th>
-</th></tr>
+<td>
+SelectionModeChanged</td><td>
+ When the SelectionMode property value is changed, this event will be triggered.It cannot be cancelled.</td><td>
+DependencyObject,DependencyPropertyChangedEventArgs</td><td>
+DependencyPropertyChangedCallBack </td><td>
+</td></tr>
 </table>
 
 
-Sample Link
+## Sample Link
 
 WPF Sample Browser-> Tools -> Editors -> AutoComplete Demo
 

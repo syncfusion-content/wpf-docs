@@ -21,7 +21,7 @@ The following code snippets show how to create an OlapGrid and specify its cell 
 
   {% highlight xml %}
 
-    [XAML]
+    
 
 <!--Adding OlapGrid and Enabling Cell Selection-->
 
@@ -37,7 +37,7 @@ The following code snippets show how to create an OlapGrid and specify its cell 
 
   {% highlight c# %}
 
-    [C#]
+    
 
 OlapGrid OlapGrid1 = new OlapGrid();
 
@@ -69,7 +69,7 @@ this.OlapGrid1.DataBind();
 
   {% highlight vbnet %}
 
-    [VB]
+    
 
 
 

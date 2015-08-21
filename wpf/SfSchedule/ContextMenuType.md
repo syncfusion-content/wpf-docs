@@ -11,7 +11,6 @@ documentation: ug
 
 The collection of MenuItem elements can be organized by ContextMenuType property.
 {% highlight html %}
-[XAML]
 
 
 
@@ -23,7 +22,6 @@ The collection of MenuItem elements can be organized by ContextMenuType property
 
 
 {% highlight c# %}
-[C#]
 
 
 

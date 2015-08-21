@@ -27,7 +27,7 @@ You can create a CheckListBox control either by using XAML code or C# code. To c
 
 {%highlight xml%}
 
-[XAML]
+
     <!-- Adding CheckListBox -->
     <syncfusion:CheckListBox Name="checkListBox">
     <!-- Adding CheckListBox items -->    
@@ -43,7 +43,7 @@ You can create a CheckListBox control either by using XAML code or C# code. To c
 
 {%highlight c#%}
 
-[C#]
+
 // Creating an instance of CheckListBox
    CheckListBox checkListBox = new CheckListBox();
 // Creating an instance of CheckListBoxItem

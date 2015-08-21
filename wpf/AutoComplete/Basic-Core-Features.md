@@ -27,7 +27,7 @@ In the SelectionChanged event the SelectedIndex, SelectedItem & SelectedValue pr
 {% highlight c# %}
 
 
-[C#]
+
 
 List<String> Products = new List<String>();
 
@@ -91,12 +91,12 @@ void autoComplete1_SelectionChanged(object sender,
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 SelectedIndex</td><td>
@@ -133,6 +133,7 @@ DependencyProperty</td><td>
 String(null)</td><td>
 </td></tr>
 </table>
+
 ### Events
 
    _Events Table for Basic Features_
@@ -146,19 +147,19 @@ Arguments </th><th>
 Type </th><th>
 Reference links </th></tr>
 <tr>
-<th>
-SelectionChanged</th><th>
-When the value of SelectedItem property is changed this event will be triggered.It cannot be cancelled.</th><th>
-Object,SelectionChangedEventArgs</th><th>
-SelectionChangedEventHandler </th><th>
-</th></tr>
+<td>
+SelectionChanged</td><td>
+When the value of SelectedItem property is changed this event will be triggered.It cannot be cancelled.</td><td>
+Object,SelectionChangedEventArgs</td><td>
+SelectionChangedEventHandler </td><td>
+</td></tr>
 <tr>
-<th>
-TextChanged</th><th>
-When the value of the Text property is changed this event will be triggered.It cannot be cancelled.</th><th>
-DependencyObject,DependencyPropertyChangedEventArgs</th><th>
-DependencyPropertyChangedCallBack </th><th>
-</th></tr>
+<td>
+TextChanged</td><td>
+When the value of the Text property is changed this event will be triggered.It cannot be cancelled.</td><td>
+DependencyObject,DependencyPropertyChangedEventArgs</td><td>
+DependencyPropertyChangedCallBack </td><td>
+</td></tr>
 </table>
 
 

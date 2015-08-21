@@ -33,7 +33,6 @@ In the following code, the BorderBrush color is changed when the IsMouseOver val
 
 {%highlight xml%}
 
- [XAML]
 
 <Trigger Property="IsMouseOver" Value="True">
 
@@ -69,7 +68,6 @@ These properties are enabled only when the EnableFocusedColors property is set 
 
 
 
-__
 
 
 

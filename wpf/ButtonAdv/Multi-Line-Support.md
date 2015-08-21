@@ -13,15 +13,15 @@ The label displayed on the button can be a line or two, when the property IsMult
 
 Multiline support can be enabled by using the following code:
 {% highlight html %}
-[XAML]
+
 
 <sync:ButtonAdv SizeMode="Large" IsMultiLine="False"/>
 
 {% endhighlight %}
 
-![1](Multi-Line-Support_images/Multi-Line-Support_img1.png)
+![](Multi-Line-Support_images/Multi-Line-Support_img1.png)
 
-
+_ButtonAdv control without MultiLine_
 
 > Note: This property is applicable only for Large Size Mode Buttons.
 

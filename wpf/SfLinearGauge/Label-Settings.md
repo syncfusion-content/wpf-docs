@@ -17,7 +17,7 @@ Labels of the linear scale provide a numeric value to the major ticks that are s
 The foreground of the label is customized by setting the LabelStroke of the linear scale. By making use of the LabelSize property, the font size of the labels is personalized. The labels can be positioned away from the ticks by using the LabelOffset property.
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -39,7 +39,7 @@ The foreground of the label is customized by setting the LabelStroke of the line
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
+
 
             SfLinearGauge lineargauge = new SfLinearGauge();
 
@@ -80,7 +80,7 @@ The labels in the scale can be placed above or below the linear scale by choosin
 
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -110,7 +110,7 @@ The labels in the scale can be placed above or below the linear scale by choosin
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
+
 
 
 

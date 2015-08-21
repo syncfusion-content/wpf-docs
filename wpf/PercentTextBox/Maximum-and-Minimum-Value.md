@@ -41,15 +41,15 @@ If this property is set to true, then when you enter a value less than the MinVa
 
 If this property is set to true, then when you enter a value greater than the MaxValue then it will automatically assign the MaxValue to the PercentValue property. Otherwise it will not allow the key press.
 
-> _Note: This will be enabled only when the MaxValidation is set to OnKeyPress._
+> Note: This will be enabled only when the MaxValidation is set to OnKeyPress.
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                             MinValue="-999" MaxValue="999"                             MinValidation="OnKeyPress" MaxValidation="OnLostFocus"                            MinValueOnExceedMinDigit="True"                             MaxValueOnExceedMaxDigit="True"/></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                             MinValue="-999" MaxValue="999"                             MinValidation="OnKeyPress" MaxValidation="OnLostFocus"                            MinValueOnExceedMinDigit="True"                             MaxValueOnExceedMaxDigit="True"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.MinValue = -999.99;percentTextBox.MaxValue = 999.99;percentTextBox.MinValidation = MinValidation.OnKeyPress;percentTextBox.MaxValidation = MaxValidation.OnLostFocus;percentTextBox.MinValueOnExceedMinDigit = true;percentTextBox.MaxValueOnExceedMaxDigit = true;</td></tr>
+{% highlight c# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.MinValue = -999.99;percentTextBox.MaxValue = 999.99;percentTextBox.MinValidation = MinValidation.OnKeyPress;percentTextBox.MaxValidation = MaxValidation.OnLostFocus;percentTextBox.MinValueOnExceedMinDigit = true;percentTextBox.MaxValueOnExceedMaxDigit = true;{% endhighlight %}</td></tr>
 </table>
 
 

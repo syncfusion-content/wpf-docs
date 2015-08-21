@@ -19,142 +19,133 @@ The steps to create a HierarchicalDataTemplate are as follows:
 
 1. Create a Business Object with its collections.
 
-{% highlight C# %}
+
+
+			public class HierarchyItem
+
+			{
+
+				public string ContentString { get; set; }
+
+				public HierarchyItem(string content, params HierarchyItem[] myItems)
+
+				{
+
+					this.ContentString = content;
 
 
 
-public class HierarchyItem
+					itemsObservableCollection = new ObservableCollection<HierarchyItem>();
 
-{
+					foreach (var item in myItems)
 
-    public string ContentString { get; set; }
+					{
 
-    public HierarchyItem(string content, params HierarchyItem[] myItems)
+						itemsObservableCollection.Add(item);
 
-    {
+					}
 
-        this.ContentString = content;
+					Items = itemsObservableCollection;
 
-
-
-        itemsObservableCollection = new ObservableCollection<HierarchyItem>();
-
-        foreach (var item in myItems)
-
-        {
-
-            itemsObservableCollection.Add(item);
-
-        }
-
-        Items = itemsObservableCollection;
-
-    }
+				}
 
 
 
-    private ObservableCollection<HierarchyItem> itemsObservableCollection;
+				private ObservableCollection<HierarchyItem> itemsObservableCollection;
 
-    public ObservableCollection<HierarchyItem> Items
+				public ObservableCollection<HierarchyItem> Items
 
-    {
+				{
 
-        get { return itemsObservableCollection; }
+					get { return itemsObservableCollection; }
 
-        set
+					set
 
-        {
+					{
 
-            if (itemsObservableCollection != value)
+						if (itemsObservableCollection != value)
 
-            {
+						{
 
-                itemsObservableCollection = value;
+							itemsObservableCollection = value;
 
-            }
+						}
 
-        }
+					}
 
-    }
+				}
 
-}
+			}
 
 
 
-public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
+			public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 
-{
+			{
 
-    public HierarchicalItemsSource()
+				public HierarchicalItemsSource()
 
-    {
+				{
 
-        this.Add(new HierarchyItem("Syncfusion",
+					this.Add(new HierarchyItem("Syncfusion",
 
-                        new HierarchyItem("User Interface",
+									new HierarchyItem("User Interface",
 
-                            new HierarchyItem("Silverlight"),
+										new HierarchyItem("Silverlight"),
 
-                            new HierarchyItem("WPF"),
+										new HierarchyItem("WPF"),
 
-                            new HierarchyItem("MVC")),
+										new HierarchyItem("MVC")),
 
-                        new HierarchyItem("Reporting Edition",
+									new HierarchyItem("Reporting Edition",
 
-                            new HierarchyItem("IO"),
+										new HierarchyItem("IO"),
 
-                            new HierarchyItem("PDF generator"),
+										new HierarchyItem("PDF generator"),
 
-                            new HierarchyItem("WPF")
+										new HierarchyItem("WPF")
 
-                        )));
+									)));
 
-    }
+				}
 
-}
+			}
 
-{% endhighlight %}
+
 
 2. Add HierarchicalDataTemplate. 
 3. Add a template and ItemsSource to bind the object collections.
 
 
 
-{% highlight xml %}
+			<Window.Resources>
+
+				 <local:HierarchicalItemsSource x:Key="hierarchicalItemsSource"/>
+
+				 <HierarchicalDataTemplate x:Key="myHierarchicalTemplate" ItemsSource="{Binding Items}">
+
+						<TextBlock Text="{Binding ContentString}" Margin="2,0" />
+
+				 </HierarchicalDataTemplate>
+
+			</Window.Resources>
 
 
-
-<Window.Resources>
-
-     <local:HierarchicalItemsSource x:Key="hierarchicalItemsSource"/>
-
-     <HierarchicalDataTemplate x:Key="myHierarchicalTemplate" ItemsSource="{Binding Items}">
-
-            <TextBlock Text="{Binding ContentString}" Margin="2,0" />
-
-     </HierarchicalDataTemplate>
-
-</Window.Resources>
-
-{% endhighlight %}
 
 4. Add hierarchicalItemsSource with the HierarchyNavigator control ItemsSource property.
 
 
 
-{% highlight xml %}
+
+			<syncfusion:HierarchyNavigator Name="hierarchyNavigator1" 
+
+					   ItemTemplate="{StaticResource myHierarchicalTemplate}"                
+
+					   ItemsSource="{StaticResource hierarchicalItemsSource}"/>
 
 
 
-<syncfusion:HierarchyNavigator Name="hierarchyNavigator1" 
-
-           ItemTemplate="{StaticResource myHierarchicalTemplate}"                
-
-           ItemsSource="{StaticResource hierarchicalItemsSource}"/>
-
-{% endhighlight %}
-
-![](Template-Customizing_images/Template-Customizing_img1.png)
+   ![](Template-Customizing_images/Template-Customizing_img1.png)
 
 
-
+   {:.prettyprint}

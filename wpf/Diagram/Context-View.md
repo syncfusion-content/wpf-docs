@@ -14,9 +14,10 @@ A context view is a small view of an entire diagram with a new arrangement, wher
 * Successors view—shows all child nodes of the selected node.
 * Predecessors view—displays all parent nodes of the selected node.
 * Neighborhood view—displays the immediate child and parent nodes of the selected node.
-### Tables for Properties and Methods
 
-#### Properties
+## Tables for Properties and Methods
+
+ Properties
 
 _Properties Table_
 
@@ -66,20 +67,20 @@ Description </th><th>
 Parameters </th><th>
 Type </th></tr>
 <tr>
-<th>
-public ContextViewManager(DiagramControl source, DiagramControl target)</th><th>
-Constructor of the context view manager.</th><th>
-source—a Diagram control in which selection changes will be monitored.target—a Diagram control to which a new diagram will be created based on the selected node and the context view chosen.</th><th>
-In WPF </th></tr>
+<td>
+public ContextViewManager(DiagramControl source, DiagramControl target)</td><td>
+Constructor of the context view manager.</td><td>
+source—a Diagram control in which selection changes will be monitored.target—a Diagram control to which a new diagram will be created based on the selected node and the context view chosen.</td><td>
+In WPF </td></tr>
 <tr>
-<th>
-RefreshLayout</th><th>
-This method is used to update the layout. It will be called automatically and can also be forced to be updated.</th><th>
-NA</th><th>
-In WPF</th></tr>
+<td>
+RefreshLayout</td><td>
+This method is used to update the layout. It will be called automatically and can also be forced to be updated.</td><td>
+NA</td><td>
+In WPF</td></tr>
 </table>
 
-### Adding ContextViewManager to an Application
+## Adding ContextViewManager to an Application
 
 ContextViewManager is a class that helps to communicate between a source diagram and a target diagram.
 
@@ -89,90 +90,83 @@ ContextViewManager is a class that helps to communicate between a source diagram
 Steps to create ContextViewManager
 
 1. Create a Diagram control to be used as a target to show the context view of another Diagram control.
-{% highlight html %}
-[XAML]
-
-<syncfusion:DiagramControl  Height="235" Width="250"  Name="targetDiagramControl">
-
-<syncfusion:DiagramControl.Model>
-
-<syncfusion:DiagramModel x:Name="targetDiagramModel"/>
-
-</syncfusion:DiagramControl.Model>
-
-<syncfusion:DiagramControl.View>
-
-<syncfusion:DiagramView EnableFitToPage="True" Name="targetDiagramView"/>
-
-</syncfusion:DiagramControl.View>
-
-</syncfusion:DiagramControl>
 
 
-{% endhighlight  %}
+			<syncfusion:DiagramControl  Height="235" Width="250"  Name="targetDiagramControl">
+
+			<syncfusion:DiagramControl.Model>
+
+			<syncfusion:DiagramModel x:Name="targetDiagramModel"/>
+
+			</syncfusion:DiagramControl.Model>
+
+			<syncfusion:DiagramControl.View>
+
+			<syncfusion:DiagramView EnableFitToPage="True" Name="targetDiagramView"/>
+
+			</syncfusion:DiagramControl.View>
+
+			</syncfusion:DiagramControl>
+
+
+
 
 
 2. Create another Diagram control to be used as a source.
 3. Create a ContextViewManager instance to synchronize the source and target diagrams.
 
-{% highlight c# %}
-
-[C#]
 
 
 
-// Create ContextViewManager to attach the source and target diagrams.
+			// Create ContextViewManager to attach the source and target diagrams.
 
-ContextViewManager ContextView = new ContextViewManager(source, target);
+			ContextViewManager ContextView = new ContextViewManager(source, target);
 
-//Set ContextViewMode as Predecessors.
+			//Set ContextViewMode as Predecessors.
 
-       ContextView.ContextViewMode =ContextViewMode.Predecessors;
+				   ContextView.ContextViewMode =ContextViewMode.Predecessors;
 
-// Create a layout for ContextView.
+			// Create a layout for ContextView.
 
-DirectedTreeLayout layout = new DirectedTreeLayout(diagramModel,diagramView);
+			DirectedTreeLayout layout = new DirectedTreeLayout(diagramModel,diagramView);
 
-diagramModel.HorizontalSpacing = 10;
+			diagramModel.HorizontalSpacing = 10;
 
-diagramModel.VerticalSpacing = 80;
+			diagramModel.VerticalSpacing = 80;
 
-diagramModel.SpaceBetweenSubTrees = 10;
+			diagramModel.SpaceBetweenSubTrees = 10;
 
-// Set the layout of the ContextView.
+			// Set the layout of the ContextView.
 
-ContextView.Layout = layout;
-
-
-
-{% endhighlight  %}
-{% highlight vbnet %}
-
-[VB]
+			ContextView.Layout = layout;
 
 
 
-' Create ContextViewManager to attach source and target diagrams.
 
-Dim ContextView As New ContextViewManager(source, target)
 
-'Set ContextViewMode as Predecessors.
 
-ContextView.ContextViewMode =ContextViewMode.Predecessors
 
-' Create a layout for ContextView.
+			' Create ContextViewManager to attach source and target diagrams.
 
-Dim layout As New DirectedTreeLayout(diagramModel,diagramView)
+			Dim ContextView As New ContextViewManager(source, target)
 
-diagramModel.HorizontalSpacing = 10
+			'Set ContextViewMode as Predecessors.
 
-diagramModel.VerticalSpacing = 80
+			ContextView.ContextViewMode =ContextViewMode.Predecessors
 
-diagramModel.SpaceBetweenSubTrees = 10
+			' Create a layout for ContextView.
 
-' Set the layout of the ContextView.
+			Dim layout As New DirectedTreeLayout(diagramModel,diagramView)
 
-ContextView.Layout = layout
+			diagramModel.HorizontalSpacing = 10
 
-{% endhighlight %}
+			diagramModel.VerticalSpacing = 80
 
+			diagramModel.SpaceBetweenSubTrees = 10
+
+			' Set the layout of the ContextView.
+
+			ContextView.Layout = layout
+
+
+   {:.prettyprint}

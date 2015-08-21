@@ -13,7 +13,6 @@ The SmallChange property (Inherited from [RangeBase](http://msdn.microsoft.com/e
 
 
 {% highlight html %}
-[XAML]
 
 <syncfusion:SfRadialSlider
 

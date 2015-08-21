@@ -16,7 +16,7 @@ The following code sample shows how to create the DomainUpDown from code-behind 
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -43,7 +43,7 @@ The following code sample shows how to create the DomainUpDown from code-behind 
 
 {%highlight c#%}
 
-[C#]
+
 
 SfDomainUpDown domainUpDown = new SfDomainUpDown();
 

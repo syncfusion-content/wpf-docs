@@ -20,7 +20,7 @@ Create the PropertyGrid control using Blend. After creating the PropertyGrid con
 
 
 ![](Appearance_images/Appearance_img1.png)
-{:.image }
+
 
 
 
@@ -30,7 +30,7 @@ This will open a dialog (below) where you can give a name of your own style and 
 
 
 ![](Appearance_images/Appearance_img2.png)
-{:.image }
+
 
 
 
@@ -40,7 +40,7 @@ What’s produced through the set of steps is quite a bit of XAML which is place
 
 
 ![](Appearance_images/Appearance_img3.png)
-{:.image }
+
 
 
 
@@ -61,35 +61,35 @@ Using LineColor, you can set the background for category heading while grouping.
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
-&lt;syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50"                            Width="350" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center"                          VerticalAlignment="Stretch" LineColor="Red" CategoryForeground="Black"&gt;
-&lt;/syncfusion:PropertyGrid&gt;
+<syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50"                            Width="350" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center"                          VerticalAlignment="Stretch" LineColor="Red" CategoryForeground="Black">
+</syncfusion:PropertyGrid>
 
 
-
+{% endhighlight %}
 
 
 ![](Appearance_images/Appearance_img4.png)
-{:.image }
+
 
 
 
 
 Properties
 
-_Grouping and SortingTable_
+Grouping and SortingTable
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 ViewBackground</td><td>

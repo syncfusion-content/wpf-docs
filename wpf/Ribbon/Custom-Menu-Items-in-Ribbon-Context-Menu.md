@@ -13,7 +13,7 @@ Ribbon Context Menu now supports display of custom items. You can add custom ite
 
 {% highlight xml %}
 
-    [XAML]
+    
 
 
 

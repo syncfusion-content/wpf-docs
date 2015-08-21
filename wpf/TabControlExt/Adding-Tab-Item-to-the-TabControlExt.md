@@ -13,7 +13,6 @@ The TabItemExt is added to the TabControlExt by using either XAML or C# coding. 
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -31,7 +30,6 @@ The TabItemExt is added to the TabControlExt by using either XAML or C# coding. 
 {% endhighlight %}
 
 
-[C#]
 
 
 {% highlight c# %}
@@ -71,7 +69,7 @@ stackPanel.Children.Add(tabControlExt);
 
 {% endhighlight%}
 
-![](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img1.jpeg)}
+![](Adding-Tab-Item-to-the-TabControlExt_images/Adding-Tab-Item-to-the-TabControlExt_img1.jpeg)
 
 
 
@@ -83,7 +81,6 @@ To add content to the TabItemExt, use the below code snippet.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -123,7 +120,6 @@ To add content to the TabItemExt, use the below code snippet.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -221,7 +217,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-> _Note: To display the TabItemExt, you must already have the TabControlExt in which you are going to add the TabItemExt._
+> Note: To display the TabItemExt, you must already have the TabControlExt in which you are going to add the TabItemExt.
 
 
 

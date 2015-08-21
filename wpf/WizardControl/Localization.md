@@ -13,9 +13,9 @@ Localization involves configuring the application for a specific language. Cultu
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 HelpText<br>CancelText<br>BackText<br>NextText<br>FinishText</td><td>

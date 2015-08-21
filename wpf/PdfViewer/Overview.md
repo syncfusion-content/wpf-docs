@@ -17,45 +17,47 @@ Use Case Scenario
 
 You can embed the PDF viewer within the .NET application using this feature. The PDF Viewer can also be used as a stand-alone application.
 
-{{ '![C:/Users/Suresh/Desktop/WPF UG/Figure 1 PDF Viewer.png](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/Suresh/Desktop/WPF UG/Figure 1 PDF Viewer.png](Overview_images/Overview_img1.png)
+
 
 
 ## Prerequisites and Compatibility
 
 This section covers the requirements that are mandatory for using Syncfusion Essential Pdf Viewer. It also lists operating systems and browsers that are compatible with the product.
 
-_Prerequisites_
+Prerequisites
 
 <table>
 <tr>
-<td>
-Development Environments</td><td>
-.NET Framework versions</td></tr>
+<th>
+Development Environments</th><th>
+.NET Framework versions</th></tr>
 <tr>
 <td>
 Visual Studio 2013 (Ultimate, Premium, Professional and Express)Visual Studio 2012 (Ultimate, Premium, Professional and Express)Visual Studio 2010 (Ultimate, Premium, Professional and Express)Visual Studio 2008 (Team System, Professional, Standard & Express)Visual Studio 2005 (Professional, Standard & Express)Microsoft Expression Blend</td><td>
 .NET Framework version 4.5.1.NET Framework version 4.5.NET Framework version 4.0.NET Framework version 3.5 with Service Pack 1.NET Framework version 2.0</td></tr>
 </table>
-_Compatibility_
+
+Compatibility
 
 <table>
 <tr>
-<td>
-Operating Systems</td></tr>
+<th>
+Operating Systems</th></tr>
 <tr>
 <td>
 Windows Server 2008 (32 bit and 64 bit)Windows Vista (32 bit and 64 bit)Windows XPWindows 2003Windows 7Windows 8Windows 8.1</td></tr>
 </table>
+
 ## Documentation
 
-_Details_
+Details
 
 <table>
 <tr>
-<td>
-Type of Documentation</td><td>
-Location</td></tr>
+<th>
+Type of Documentation</th><th>
+Location</th></tr>
 <tr>
 <td>
 Readme</td><td>

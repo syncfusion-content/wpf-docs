@@ -36,7 +36,7 @@ Getting Started
 
 The first step in localization is translating the strings that can be localized to the destination locale. Basically, OlapClient.WPF contains control assemblies such as OlapChart.WPF and OlapGrid.WPF and tools assemblies such as OlapShared.WPF and OlapTools.WPF within it. So, it is mandatory to localize those assemblies as well. The following tables contain the Localization Keys and the Strings to be localized for OlapClient.WPF, OlapChart.WPF, OlapGrid.WPF, OlapShared.WPF and OlapTools.WPF assemblies. Translate the second column in each table, which contains the strings to be localized to the target locale. 
 
-> _Note: Localization Key field should be same for the all locales. Do not translate it._
+> Note: Localization Key field should be same for the all locales. Do not translate it.
 
 _Localization Strings Table for OlapClient.WPF_
 
@@ -658,7 +658,7 @@ After translating the strings that can be localized, perform the following in th
 
 
 
-> _Note: The folder name should strictly be Resources._
+   > Note: The folder name should strictly be Resources.
 
 
 
@@ -667,13 +667,13 @@ After translating the strings that can be localized, perform the following in th
 
 
 
-![](Localization-Support_images/Localization-Support_img2.png)
+   ![](Localization-Support_images/Localization-Support_img2.png)
 
 
 
 6. The Add New Item dialog displays.
 
-![](Localization-Support_images/Localization-Support_img3.png)
+   ![](Localization-Support_images/Localization-Support_img3.png)
 
 
 
@@ -681,29 +681,29 @@ After translating the strings that can be localized, perform the following in th
 
 
 
-> _Note: The resource file name should strictly be in the format  “Syncfusion.OlapClient.WPF.<<Culture Code>>.resx”._
+   > Note: The resource file name should strictly be in the format  “Syncfusion.OlapClient.WPF.<<Culture Code>>.resx”.
 
-## Examples
+   ## Examples
 
-* Syncfusion.OlapClient.WPF.es.resx
-* Syncfusion.OlapClient.WPF.ja-JP.resx
-* Syncfusion.OlapClient.WPF.it-IT.resx
+   * Syncfusion.OlapClient.WPF.es.resx
+   * Syncfusion.OlapClient.WPF.ja-JP.resx
+   * Syncfusion.OlapClient.WPF.it-IT.resx
 
-Similarly, for OlapChart.WPF assembly, add one more new resource file. Name the resource file Syncfusion.OlapChart.WPF.fr-FR.resx.
+   Similarly, for OlapChart.WPF assembly, add one more new resource file. Name the resource file Syncfusion.OlapChart.WPF.fr-FR.resx.
 
-For OlapGrid.WPF assembly, add one more new resource file. Name the resource file Syncfusion.OlapGrid.WPF.fr-FR.resx.
+   For OlapGrid.WPF assembly, add one more new resource file. Name the resource file Syncfusion.OlapGrid.WPF.fr-FR.resx.
 
-For OlapShared.WPF assembly, add one more new resource file. Name the resource file Syncfusion.OlapShared.WPF.fr-FR.resx.
+   For OlapShared.WPF assembly, add one more new resource file. Name the resource file Syncfusion.OlapShared.WPF.fr-FR.resx.
 
-For OlapTools.WPF assembly, add one more new resource file. Name the resource file Syncfusion.OlapTools.WPF.fr-FR.resx.
+   For OlapTools.WPF assembly, add one more new resource file. Name the resource file Syncfusion.OlapTools.WPF.fr-FR.resx.
 
-Now, the new resource file is included successfully.
+   Now, the new resource file is included successfully.
 
 8. Copy and paste the translated locale to the resource file created in the earlier step.
 
-![](Localization-Support_images/Localization-Support_img4.png)
+   ![](Localization-Support_images/Localization-Support_img4.png)
 
-
+   {:.prettyprint}
 
 ## <SupportedCultures> Tag Inclusion into the Project File
 
@@ -713,14 +713,15 @@ In Silverlight, we need to specify the list of supported cultures using the <Sup
 2. Again, right click the project file and select Edit. Now, the project files will appear in the XML editor in Visual Studio.
 3. Find the tag <SupportedCultures> and then specify the culture code, which is already appended in the resource file name.
 
- Example: <SupportedCultures>fr-FR<SupportedCultures>
+   Example: <SupportedCultures>fr-FR<SupportedCultures>
 
-You can specify multiple cultures as well, by using the (;) semi-colon operator to separate the culture codes.
+   You can specify multiple cultures as well, by using the (;) semi-colon operator to separate the culture codes.
 
- Example:<SupportedCultures>en-US;fr;fr-FR;ru;ru-RU;</SupportedCultures>
+   Example:<SupportedCultures>en-US;fr;fr-FR;ru;ru-RU;</SupportedCultures>
 
 4. Now, right click the project name and select Reload.
 
+   {:.prettyprint}
 Now, the supported cultures are included in the project file.
 
 ## Specifying the CurrentUICulture
@@ -729,7 +730,7 @@ Now, you need to specify the CurrentUICulture of the application. We can specify
 
 {% highlight C# %} 
  
-[C#]
+
 
 
 
@@ -757,7 +758,7 @@ public MainPage()
 
 
 
-{% highlight vbnet %}  [VB]
+{% highlight vbnet %}  
 
 
 
@@ -782,7 +783,7 @@ End Sub
 
 {% highlight C# %} 
  
-[C#]
+
 
 
 
@@ -810,7 +811,7 @@ private void Application_Startup(object sender, StartupEventArgs e)
 
 
 
-{% highlight vbnet %}  [VB]
+{% highlight vbnet %}  
 
 
 

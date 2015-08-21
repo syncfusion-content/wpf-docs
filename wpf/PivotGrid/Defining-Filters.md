@@ -13,7 +13,6 @@ Filters can be added to PivotGrid by the following way:
 
 {% highlight C# %}  
 
-[C#]
 
 // Adding filters with filter expressions
 
@@ -23,7 +22,6 @@ this.PivotGridControl1.Filters.Add(new FilterExpression { Expression="Product = 
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Adding filters with filter expressions
 

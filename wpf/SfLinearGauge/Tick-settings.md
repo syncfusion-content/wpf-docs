@@ -16,7 +16,7 @@ Ticks are of two types: major and minor. These ticks are arranged with respect t
 By setting the MajorTickStroke and MinorTickStroke, the stroke of the major ticks and minor ticks are personalized. With the help of the MajorTickStrokeThickness and MinorTickStrokeThickness, the stroke thickness of the major and minor ticks is customized. The size of the major ticks and minor ticks can be modified by using the MajorTickSize and MinorTickSize properties.
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -44,7 +44,7 @@ By setting the MajorTickStroke and MinorTickStroke, the stroke of the major tick
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -98,7 +98,7 @@ The ticks in the scale can be placed above, below, or in between the scale by ch
 
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -124,7 +124,7 @@ The ticks in the scale can be placed above, below, or in between the scale by ch
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
+
 
 
 

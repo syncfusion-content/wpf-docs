@@ -9,11 +9,11 @@ documentation: ug
 
 # Key Performance Indicator (KPI)
 
-# Definition
+## Definition
 
 KPI is a collection of calculations that are associated with a measure group in a cube that are used to evaluate business success. Typically, these calculations are a combination of Multidimensional Expressions (MDX) or calculated members. KPIs also have additional metadata that provides information about how Grid applications should display the results of KPI's calculations.
 
-# KPI Indicators
+## KPI Indicators
 
 The following are the different types of Indicators:
 

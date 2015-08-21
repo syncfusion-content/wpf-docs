@@ -37,7 +37,7 @@ The following code illustrates how to add a custom tooltip to the Gantt control.
 
 {% highlight html %}
 
-[XAML]
+
 
  <DataTemplate x:Key="ToolTipTemp">
             <Grid>

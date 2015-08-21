@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains you about editing on data, events and properties that participates in editing. DataGrid is intended for both displaying and modifying the data from the data source. 
 
-### Overview
+## Overview
 
 When you set AllowEditing to ‘True’, you can edit the current cell in the DataGrid. In Edit Mode, you can commit the changes by pressing the Enter or Tab key, or by just clicking outside the current cell.  You can also revert back to its original value by pressing the ESC key.
 
@@ -20,7 +20,7 @@ When you set AllowEditing to ‘True’, you can edit the current cell in the Da
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -41,7 +41,7 @@ When you set AllowEditing to ‘True’, you can edit the current cell in the Da
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -56,7 +56,7 @@ sfdatagrid.AllowEditing = true;
 
 _DataGrid with AllowEditing set to ‘True’_
 
-> _Note: It is mandatory to set the NavigationMode to Cell to enable current cell navigation and editing in the DataGrid control._
+> Note: It is mandatory to set the NavigationMode to Cell to enable current cell navigation and editing in the DataGrid control.
 
 You are also allowed to control the behavior when the current cell is allowed to enter into Edit Mode by using the EditTriggers property. EditTriggers include the following two modes:
 
@@ -65,7 +65,7 @@ You are also allowed to control the behavior when the current cell is allowed to
 
 
 
-> _Note: You can switch between Edit Mode and View Mode by pressing the F2 key._
+> Note: You can switch between Edit Mode and View Mode by pressing the F2 key.
 
 The DataGrid control also provides the following properties in Grid Columns to support editing.
 
@@ -73,9 +73,9 @@ _Editing property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
+<th>
+Property</th><th>
+Type</th><th>
 Description</td><td>
 Default Value</td></tr>
 <tr>
@@ -99,7 +99,7 @@ When SfDataGrid.AllowFocus is set to ‘false’, neither the current cell nor t
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -160,7 +160,7 @@ _DataGrid with AllowFocus property set to ‘false’_
 
 When you select OrderID column’s cell, it is not selected or edited. Since AllowFocus is set to ‘false’.
 
-### EditorSelectionBehavior
+## EditorSelectionBehavior
 
 EditorSelectionBehavior is dependency property that is used to set selection for EditElement. It decides whether to select all content from UIElement or to move cursor to last position. Available values are
 
@@ -173,7 +173,7 @@ The following code example illustrates the selection behavior while editing.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -214,7 +214,7 @@ Methods available under Editing are dependent on the current cell. DataGrid offe
 
 The edit events exist to support editing process. The following table provides the List of Events in regard to DataGrid for Editing. They occur when the current cell in the DataGrid is about to be edited or is being edited by you.
 
-#### CurrentCellActivating Event
+### CurrentCellActivating Event
 
 This event occurs when the current cell is activated in the DataGrid. The CurrentCellActivating event handler receives two arguments, namely sender that handles SfDataGrid and CurrentCellActivatingEventArgs as objects. The CurrentCellActivatingEventArgs object contains the following properties:
 
@@ -223,7 +223,7 @@ This event occurs when the current cell is activated in the DataGrid. The Curren
 * PreviousRowColumnIndex: Gets the value of PreviousRowColumnIndex.
 * ActivationTrigger: Gets the value of the current cell that is activated.
 
-#### CurrentCellActivated Event
+### CurrentCellActivated Event
 
 This event occurs when the current cell is activated. The event handler receives two arguments, namely sender that handles SfDataGrid and CurrentCellActivatedEventArgs as objects. The CurrentCellActivatedEventArgs object contains the following properties:
 
@@ -231,7 +231,7 @@ This event occurs when the current cell is activated. The event handler receives
 * PreviousRowColumnIndex: Gets the value of the PreviousRowColumnIndex.
 * ActivationTrigger: Gets the value of the current cell that is activated.
 
-#### CurrentCellBeginEdit Event
+### CurrentCellBeginEdit Event
 
 This Event occurs when the current cell enters into Edit Mode. The Event Handler receives the two arguments namely sender that handles SfDataGrid and CurrentCellBeginEditEventArgs as objects. The CurrentCellBeginEditEventArgs object contains the following properties:
 
@@ -239,13 +239,13 @@ This Event occurs when the current cell enters into Edit Mode. The Event Handler
 * RowColumnIndex: Gets the current row column index of the DataGrid.
 * Column: Gets the Grid Column of the DataGrid.
 
-#### CurrentCellEndEdit Event
+### CurrentCellEndEdit Event
 
 This event occurs when the current cell exits the Edit Mode. The event handler receives two arguments, namely sender that handles SfDataGrid and CurrentCellEndEditEventArgs as objects. A CurrentCellEndEditEventArgs object contains the following properties:
 
 RowColumnIndex: Gets the value for the current row column index.
 
-#### CurrentCellValueChanged Event
+### CurrentCellValueChanged Event
 
 This event occurs whenever a value changes in GridColumns that supports editing such as GridTextColumn, GridNumericColumn, GridCurrencyColumn, GridPercentColumn, GridCheckBoxColumn, GridDateTimeColumn, GridTimeSpanColumn, GridMaskColumn, and so on. The event handler receives two arguments namely sender that handles SfDataGrid and CurrentCellValueChangedEventArgs as objects.
 
@@ -253,7 +253,7 @@ This event occurs whenever a value changes in GridColumns that supports editing 
 
 RowColumnIndex: Gets the value of the current RowColumnIndex.
 
-#### CurrentCellDropDownSelectionChanged Event
+### CurrentCellDropDownSelectionChanged Event
 
 This event occurs whenever a selected item is changed in DropDownColumns such as GridMultiColumnDropDownList and GridComboBoxColumn. The event handler receives two arguments namely sender that handles SfDataGrid and CurrentCellDropDownSelectionChangedEventArgs as objects.
 
@@ -268,7 +268,7 @@ The following code example illustrates about this event.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -288,7 +288,7 @@ void sfdatagrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArg
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -327,7 +327,7 @@ The data that you edit in loaded EditElement is the bound value from the ValueBi
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -370,7 +370,7 @@ You can update the edited values, like Default, PropertyChanged, LostFocus and E
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -414,7 +414,7 @@ The same way, you can achieve it for Editing with Grouping and Editing with Filt
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -430,7 +430,7 @@ The same way, you can achieve it for Editing with Grouping and Editing with Filt
 
 {% endhighlight %}
 
-### IEditableObject support
+## IEditableObject support
 
 SfDataGrid supports to revert changes when you press Esc key at row level by implementing IEditableObject interface. The BeginEdit method stores the actual values before start edit. When you press Esc key, CancelEdit is called and it stores the old values to the corresponding filed. EndEdit method is called to commit the values.
 
@@ -439,7 +439,7 @@ For more information about IEditableObject you can [ClickHere](http://msdn.micro
 
 {% highlight C# %}
 
-[C#]
+
 
 public class NotificationObject : INotifyPropertyChanged
 
@@ -618,9 +618,9 @@ public class Employee : NotificationObject, IEditableObject
 }
 {% endhighlight %}
 
-### How To
+## How To
 
-#### How to Programmatically Edit the Cell?
+### How to Programmatically Edit the Cell?
 
 SfDataGrid allows you to edit the cell programmatically by calling BeginEdit() method. Initially you can set CurrentCell’s row and column index where you can make use of public structure of RowColumnIndex. 
 
@@ -631,7 +631,7 @@ The following code example illustrates that.
 
 {% highlight C# %}
 
-[C#]
+
 
 sfdatagrid.Loaded += sfdatagrid_Loaded;
 
@@ -662,7 +662,7 @@ The same way, you can call EndEdit () method to stop edting a cell.
 
 {% highlight C# %}
 
-[C#]
+
 
 void sfdatagrid_Loaded(object sender, RoutedEventArgs e)
 
@@ -686,7 +686,7 @@ void sfdatagrid_Loaded(object sender, RoutedEventArgs e)
 
 Both methods need current cell to starts or ends editing on cell.   
 
-#### Cancel Editing in Cells
+### Cancel Editing in Cells
 
 In some cases, you may not want a particular cell to enter into Edit mode. To achieve this, you have to cancel the CurrentCellBeginEdit event to cancel cell editing.  
 
@@ -695,7 +695,7 @@ Consider a example where you do not want the cell (2, 2) to enter into Edit mode
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -710,7 +710,7 @@ ItemsSource="{Binding ProductDetails}"/>
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -730,7 +730,7 @@ args.Cancel = true;
 
 
 
-##### Update Changes made in a DataGrid Column to other Columns
+### Update Changes made in a DataGrid Column to other Columns
 
 The changes made in a cell can also be reflected in other Grid cells. This special-case scenario is handled by using the EndEdit event. In the EndEdit event, the RowColumnIndex of the edited cell is used to compute values for other items in the GridColumns.
 
@@ -739,7 +739,7 @@ In this scenario, consider the properties for discount and price from the data s
 
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -759,7 +759,7 @@ In this scenario, consider the properties for discount and price from the data s
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -789,7 +789,7 @@ record.Price = record.Price - record.Discount;
 
 {% endhighlight %}
 
-#### How to change FontSize for Edit element?
+### How to change FontSize for Edit element?
 
 This topic explains you how to change the FontSize for EditElement. TextBlock is loaded in non-edit mode and TextBox is loaded in edit mode as content to the GridCell.
 
@@ -798,7 +798,7 @@ You can achieve this by applying style directly to TextBox. By defining correspo
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 

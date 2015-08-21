@@ -11,13 +11,13 @@ documentation: ug
 
 CalculationType is an enumerator defined in the PivotComputationInfo class that is used to specify the type of the calculation. The following table lists the various calculation types that are used for performing calculations:
 
-_CalculationType table_
+CalculationType table
 
 <table>
 <tr>
-<td>
-{{ '**CalculationType**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**CalculationType**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 NoCalculation</td><td>
@@ -99,7 +99,6 @@ By default, the value of CalculationType is NoCalculation. To change the Calcula
 
 {% highlight xml %} 
 
-[XAML]
 
 <Grid>
 
@@ -130,7 +129,6 @@ By default, the value of CalculationType is NoCalculation. To change the Calcula
 
 {% highlight C# %}   
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -156,7 +154,6 @@ this.pivotGrid1.PivotCalculations.Add(m_PivotComputationInfo);
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -184,4 +181,4 @@ End Sub
 
 
 
-_PivotValues as PercentageOfParentColumnTotal calculation_
+PivotValues as PercentageOfParentColumnTotal calculation

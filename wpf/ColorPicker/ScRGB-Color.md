@@ -13,14 +13,14 @@ Using the IsScRGBColor property, user can set the value indicating whether this 
 
 {% highlight xml %}
 
-[XAML]
+
 <!-- Adding ColorEdit -->
 <syncfusion:ColorEdit IsScRGBColor="True" Margin="20" Name="colorEdit"/>
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]
+
 //Creating an instance of color edit
 ColorEdit colorEdit = new ColorEdit();
 

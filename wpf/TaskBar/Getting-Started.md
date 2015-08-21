@@ -64,7 +64,6 @@ TaskBar control is created by using either XAML or C# code. The following lines 
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -76,7 +75,6 @@ TaskBar control is created by using either XAML or C# code. The following lines 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -92,9 +90,8 @@ this.Content = taskBar;
 {% endhighlight %}
 
 
-> _Note: To display the TaskBar by using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed._
+> Note: To display the TaskBar by using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed.
 
-> 
 
 The following screen shot shows the TaskBar control.
 

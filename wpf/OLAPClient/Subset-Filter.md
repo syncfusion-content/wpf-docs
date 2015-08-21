@@ -25,7 +25,7 @@ this value it sets the visibility of SubSetFilters.
 
 {% highlight C# %}  
 
-[C#]
+
 
 this.olapClient1.ShowSubsetFilters = false;
 
@@ -34,7 +34,7 @@ this.olapClient1.ShowSubsetFilters = false;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Me.olapClient1.ShowSubsetFilters = False
 

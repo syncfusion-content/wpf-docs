@@ -7,15 +7,15 @@ control: DockingManager
 documentation: ug
 ---
 
-### Retrieve the AutoHidden Window height
+## Retrieve the AutoHidden Window height
 
 EndDockHeaderHeight is the property that is used to retrieve the AutoHidden Window height.
 
+{% highlight html %}
 
 
-[C#]
 
 double height = DockingManager.EndDockHeaderHeight;
 
-
+{% endhighlight %}
 

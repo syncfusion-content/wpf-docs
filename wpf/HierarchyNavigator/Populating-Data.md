@@ -13,113 +13,111 @@ The steps to add items to the HierarchyNavigator in XAML are as follows:
 
 1. Create a HierarchyNavigator control.
 
-{% highlight xml %}
 
 
-
-<syncfusion:HierarchyNavigator x:Name="hierarchyNavigatorcontrol1" VerticalAlignment="Top" Height="30" Width="600">
-{% endhighlight %}
+			<syncfusion:HierarchyNavigator x:Name="hierarchyNavigatorcontrol1" 
+			VerticalAlignment="Top" Height="30" Width="600">
 
 
 2. Add the HierarchyNavigatorItem to the HierarchyNavigator control.
 
-{% highlight xml %}
 
 
 
-<syncfusion:HierarchyNavigator x:Name="hierarchyNavigatorcontrol1"   VerticalAlignment="Top" Height="30" Width="600">
 
-    <syncfusion:HierarchyNavigator.Items>
+				<syncfusion:HierarchyNavigator x:Name="hierarchyNavigatorcontrol1"   VerticalAlignment="Top" Height="30" Width="600">
 
-        <syncfusion:HierarchyNavigatorItem Content="Syncfusion">
+					<syncfusion:HierarchyNavigator.Items>
 
-            <syncfusion:HierarchyNavigatorItem.Items>
+						<syncfusion:HierarchyNavigatorItem Content="Syncfusion">
 
-                <syncfusion:HierarchyNavigatorItem Content="User Interface"/>
+							<syncfusion:HierarchyNavigatorItem.Items>
 
-                <syncfusion:HierarchyNavigatorItem Content="Silverlight">
+								<syncfusion:HierarchyNavigatorItem Content="User Interface"/>
 
-                    <syncfusion:HierarchyNavigatorItem.Items>
+								<syncfusion:HierarchyNavigatorItem Content="Silverlight">
 
-                        <syncfusion:HierarchyNavigatorItem Content="Tools"/>
+									<syncfusion:HierarchyNavigatorItem.Items>
 
-                    </syncfusion:HierarchyNavigatorItem.Items>
+										<syncfusion:HierarchyNavigatorItem Content="Tools"/>
 
-                </syncfusion:HierarchyNavigatorItem>
+									</syncfusion:HierarchyNavigatorItem.Items>
 
-            </syncfusion:HierarchyNavigatorItem.Items>
+								</syncfusion:HierarchyNavigatorItem>
 
-        </syncfusion:HierarchyNavigatorItem>
+							</syncfusion:HierarchyNavigatorItem.Items>
 
-    </syncfusion:HierarchyNavigator.Items>
+						</syncfusion:HierarchyNavigatorItem>
 
-</syncfusion:HierarchyNavigator>
+					</syncfusion:HierarchyNavigator.Items>
 
-{% endhighlight %}
+				</syncfusion:HierarchyNavigator>
+
+
 
 3. The snippet below demonstrates the steps to add items to a HierarchyNavigator control in code:
 
-{% highlight C# %}
 
 
 
-HierarchyNavigator hierarchyNavigator1 = new HierarchyNavigator() { Height = 30 };
+
+			HierarchyNavigator hierarchyNavigator1 = new HierarchyNavigator() { Height = 30 };
 
 
 
-HierarchyNavigatorItem hierarchyNavigatorItem1 = new HierarchyNavigatorItem();
+			HierarchyNavigatorItem hierarchyNavigatorItem1 = new HierarchyNavigatorItem();
 
-hierarchyNavigatorItem1.Content = "Syncfusion";
-
-
-
-HierarchyNavigatorItem hierarchyNavigatorItem11 = new HierarchyNavigatorItem();
-
-hierarchyNavigatorItem11.Content = "User Interface";
+			hierarchyNavigatorItem1.Content = "Syncfusion";
 
 
 
-HierarchyNavigatorItem hierarchyNavigatorItem111 = new HierarchyNavigatorItem();
+			HierarchyNavigatorItem hierarchyNavigatorItem11 = new HierarchyNavigatorItem();
 
-hierarchyNavigatorItem111.Content = "Silverlight";
-
-HierarchyNavigatorItem hierarchyNavigatorItem112 = new HierarchyNavigatorItem();
-
-hierarchyNavigatorItem112.Content = "WPF";
-
-HierarchyNavigatorItem hierarchyNavigatorItem113 = new HierarchyNavigatorItem();
-
-hierarchyNavigatorItem113.Content = "ASP .Net";
-
-HierarchyNavigatorItem hierarchyNavigatorItem114 = new HierarchyNavigatorItem();
-
-hierarchyNavigatorItem114.Content = "MVC";
+			hierarchyNavigatorItem11.Content = "User Interface";
 
 
 
-hierarchyNavigatorItem11.Items.Add(hierarchyNavigatorItem111);
+			HierarchyNavigatorItem hierarchyNavigatorItem111 = new HierarchyNavigatorItem();
 
-hierarchyNavigatorItem11.Items.Add(hierarchyNavigatorItem112);
+			hierarchyNavigatorItem111.Content = "Silverlight";
 
-hierarchyNavigatorItem11.Items.Add(hierarchyNavigatorItem113);
+			HierarchyNavigatorItem hierarchyNavigatorItem112 = new HierarchyNavigatorItem();
 
-hierarchyNavigatorItem11.Items.Add(hierarchyNavigatorItem114);
+			hierarchyNavigatorItem112.Content = "WPF";
 
+			HierarchyNavigatorItem hierarchyNavigatorItem113 = new HierarchyNavigatorItem();
 
+			hierarchyNavigatorItem113.Content = "ASP .Net";
 
-hierarchyNavigatorItem1.Items.Add(hierarchyNavigatorItem11);
+			HierarchyNavigatorItem hierarchyNavigatorItem114 = new HierarchyNavigatorItem();
 
-
-
-hierarchyNavigator1.Items.Add(hierarchyNavigatorItem1);
-
-{% endhighlight %}
-
-The following figure shows the items added in code displayed on the interface.
-
-![](Populating-Data_images/Populating-Data_img1.png)
+			hierarchyNavigatorItem114.Content = "MVC";
 
 
+
+			hierarchyNavigatorItem11.Items.Add(hierarchyNavigatorItem111);
+
+			hierarchyNavigatorItem11.Items.Add(hierarchyNavigatorItem112);
+
+			hierarchyNavigatorItem11.Items.Add(hierarchyNavigatorItem113);
+
+			hierarchyNavigatorItem11.Items.Add(hierarchyNavigatorItem114);
+
+
+
+			hierarchyNavigatorItem1.Items.Add(hierarchyNavigatorItem11);
+
+
+
+			hierarchyNavigator1.Items.Add(hierarchyNavigatorItem1);
+
+
+
+   The following figure shows the items added in code displayed on the interface.
+
+   ![](Populating-Data_images/Populating-Data_img1.png)
+
+   {:.prettyprint}
 
 ## Data binding
 
@@ -133,147 +131,147 @@ The steps to bind to a Business Object collection are as follows:
 
 1. Create a class named HierarchyItem.
 
-{% highlight C# %}
 
 
 
-public class HierarchyItem
+			public class HierarchyItem
 
-{
+			{
 
-    public string ContentString { get; set; }
+				public string ContentString { get; set; }
 
-    public HierarchyItem(string content, params HierarchyItem[] myItems)
+				public HierarchyItem(string content, params HierarchyItem[] myItems)
 
-    {
+				{
 
-        this.ContentString = content;
-
-
-
-        itemsObservableCollection = new ObservableCollection<HierarchyItem>();
-
-        foreach (var item in myItems)
-
-        {
-
-            itemsObservableCollection.Add(item);
-
-        }
-
-        HierarchyItems = itemsObservableCollection;
-
-    }
+					this.ContentString = content;
 
 
 
-    private ObservableCollection<HierarchyItem> itemsObservableCollection;
+					itemsObservableCollection = new ObservableCollection<HierarchyItem>();
 
-    public ObservableCollection<HierarchyItem> HierarchyItems
+					foreach (var item in myItems)
 
-    {
+					{
 
-        get { return itemsObservableCollection; }
+						itemsObservableCollection.Add(item);
 
-        set
+					}
 
-        {
+					HierarchyItems = itemsObservableCollection;
 
-            if (itemsObservableCollection != value)
+				}
 
-            {
 
-                itemsObservableCollection = value;
 
-            }
+				private ObservableCollection<HierarchyItem> itemsObservableCollection;
 
-        }
+				public ObservableCollection<HierarchyItem> HierarchyItems
 
-    }
+				{
 
-}
+					get { return itemsObservableCollection; }
 
-{% endhighlight %}
+					set
+
+					{
+
+						if (itemsObservableCollection != value)
+
+						{
+
+							itemsObservableCollection = value;
+
+						}
+
+					}
+
+				}
+
+			}
+
+
 
 2. Create a collection for ItemsSource to bind with.
 
 
 
-{% highlight C# %}
 
 
 
-public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 
-{
+			public class HierarchicalItemsSource : ObservableCollection<HierarchyItem>
 
-    public HierarchicalItemsSource()
+			{
 
-    {
+				public HierarchicalItemsSource()
 
-        this.Add(new HierarchyItem("Syncfusion",
+				{
 
-                        new HierarchyItem("User Interface",
+					this.Add(new HierarchyItem("Syncfusion",
 
-                            new HierarchyItem("Silverlight"),
+									new HierarchyItem("User Interface",
 
-                            new HierarchyItem("WPF"),
+										new HierarchyItem("Silverlight"),
 
-                            new HierarchyItem("ASP .Net"),
+										new HierarchyItem("WPF"),
 
-                            new HierarchyItem("MVC")),
+										new HierarchyItem("ASP .Net"),
 
-                        new HierarchyItem("Reporting Edition",
+										new HierarchyItem("MVC")),
 
-                            new HierarchyItem("IO"),
+									new HierarchyItem("Reporting Edition",
 
-                            new HierarchyItem("PDF generator"),
+										new HierarchyItem("IO"),
 
-                            new HierarchyItem("WPF")
+										new HierarchyItem("PDF generator"),
 
-                        )));
+										new HierarchyItem("WPF")
 
-    }
+									)));
 
-}
+				}
 
-{% endhighlight %}
+			}
+
+
 
 3. In XAML, bind the collections to the ItemsSource property of the HierarchyNavigator control.
 
 
 
-{% highlight xml %}
 
 
 
-<syncfusion:HierarchyNavigator Name="hierarchyNavigator2">
 
-    <syncfusion:HierarchyNavigator.ItemsSource>
+			<syncfusion:HierarchyNavigator Name="hierarchyNavigator2">
 
-        <local:HierarchicalItemsSource />
+				<syncfusion:HierarchyNavigator.ItemsSource>
 
-    </syncfusion:HierarchyNavigator.ItemsSource>
+					<local:HierarchicalItemsSource />
 
-    <syncfusion:HierarchyNavigator.ItemTemplate>
+				</syncfusion:HierarchyNavigator.ItemsSource>
 
-        <HierarchicalDataTemplate ItemsSource="{Binding HierarchyItems}">
+				<syncfusion:HierarchyNavigator.ItemTemplate>
 
-            <TextBlock Text="{Binding ContentString}" Margin="2,0" />
+					<HierarchicalDataTemplate ItemsSource="{Binding HierarchyItems}">
 
-        </HierarchicalDataTemplate>
+						<TextBlock Text="{Binding ContentString}" Margin="2,0" />
 
-    </syncfusion:HierarchyNavigator.ItemTemplate>
+					</HierarchicalDataTemplate>
 
-</syncfusion:HierarchyNavigator> 
-{% endhighlight %}
+				</syncfusion:HierarchyNavigator.ItemTemplate>
 
-
-The following screenshot shows the items added in code displayed on the interface.
-
-![](Populating-Data_images/Populating-Data_img2.png)
+			</syncfusion:HierarchyNavigator> 
 
 
+
+   The following screenshot shows the items added in code displayed on the interface.
+
+   ![](Populating-Data_images/Populating-Data_img2.png)
+
+   {:.prettyprint}
+   
 
 ### Binding XML data
 
@@ -325,127 +323,127 @@ The steps to bind XML data to a HierarchyNavigator control are as follows:
 
 1. Create a separate class that represents the node in an XML document. In this example, a class named Category is created.
 
-{% highlight C# %}
 
 
 
-public class HierarchyItem
 
-{
+			public class HierarchyItem
 
-        public string ContentStr { get; set; }
+			{
 
-        ObservableCollection<HierarchyItem> hierarchyItems = new  ObservableCollection<HierarchyItem>();
+					public string ContentStr { get; set; }
 
-        public ObservableCollection<HierarchyItem> HierarchyItems { get { return hierarchyItems; } set { hierarchyItems = value; } }
+					ObservableCollection<HierarchyItem> hierarchyItems = new  ObservableCollection<HierarchyItem>();
 
-}
+					public ObservableCollection<HierarchyItem> HierarchyItems { get { return hierarchyItems; } set { hierarchyItems = value; } }
 
-{% endhighlight %}
+			}
+
+
 
 2. Convert the XML data to a collection, and then bind the collection to the ItemsSource property of HierarchyNavigator.
 
-{% highlight C# %}
 
 
 
-public partial class MainPage : UserControl
 
-{
+			public partial class MainPage : UserControl
 
-    public MainPage()
+			{
 
-    {
+				public MainPage()
 
-        InitializeComponent();
+				{
 
-        CreateXMLDataItemsSource();
+					InitializeComponent();
 
-    }
+					CreateXMLDataItemsSource();
 
-
-
-    private void CreateXMLDataItemsSource()
-
-    {
-
-        ObservableCollection<HierarchyItem> categories = new ObservableCollection<HierarchyItem>();
-
-        XDocument XMLItemSource = XDocument.Load("/HierarchyItems.xml");
-
-        categories = this.GetCategories(XMLItemSource.Element("categories"));
-
-        hierarchyNavigator1.ItemsSource = categories;
-
-    }
+				}
 
 
 
-    private ObservableCollection<HierarchyItem> GetCategories(XElement element)
+				private void CreateXMLDataItemsSource()
 
-    {
+				{
 
-        var item = from category in element.Elements("category")
+					ObservableCollection<HierarchyItem> categories = new ObservableCollection<HierarchyItem>();
 
-                   select category;
+					XDocument XMLItemSource = XDocument.Load("/HierarchyItems.xml");
 
+					categories = this.GetCategories(XMLItemSource.Element("categories"));
 
+					hierarchyNavigator1.ItemsSource = categories;
 
-        var itemsObservableCollection = new ObservableCollection<HierarchyItem>();
-
-
-
-        foreach (var itm in item)
-
-        {
-
-            var subitm = new HierarchyItem();
-
-            subitm.ContentStr = itm.Attribute("name").Value;
-
-            subitm.HierarchyItems = this.GetCategories(itm);
-
-            itemsObservableCollection.Add(subitm);
-
-        }
+				}
 
 
 
-        return itemsObservableCollection;
+				private ObservableCollection<HierarchyItem> GetCategories(XElement element)
 
-    }
+				{
 
-}
+					var item = from category in element.Elements("category")
 
-{% endhighlight %}
+							   select category;
+
+
+
+					var itemsObservableCollection = new ObservableCollection<HierarchyItem>();
+
+
+
+					foreach (var itm in item)
+
+					{
+
+						var subitm = new HierarchyItem();
+
+						subitm.ContentStr = itm.Attribute("name").Value;
+
+						subitm.HierarchyItems = this.GetCategories(itm);
+
+						itemsObservableCollection.Add(subitm);
+
+					}
+
+
+
+					return itemsObservableCollection;
+
+				}
+
+			}
+
+
 
 3. The code for the HierarchyNavigator is shown below. Declare HierarchicalDataTemplate, because the data is in a hierarchical structure. Refer Template Customizing.
 
-{% highlight xml %}
 
 
 
-<syncfusion:HierarchyNavigator VerticalAlignment="Center" Name="hierarchyNavigator1" Height="30">
 
-    <syncfusion:HierarchyNavigator.ItemTemplate>
+			<syncfusion:HierarchyNavigator VerticalAlignment="Center" Name="hierarchyNavigator1" Height="30">
 
-        <HierarchicalDataTemplate ItemsSource="{Binding HierarchyItems}">
+				<syncfusion:HierarchyNavigator.ItemTemplate>
 
-            <TextBlock Margin="10,0,0,0" Text="{Binding ContentStr}" Grid.Column="0"/>
+					<HierarchicalDataTemplate ItemsSource="{Binding HierarchyItems}">
 
-        </HierarchicalDataTemplate>
+						<TextBlock Margin="10,0,0,0" Text="{Binding ContentStr}" Grid.Column="0"/>
 
-    </syncfusion:HierarchyNavigator.ItemTemplate>
+					</HierarchicalDataTemplate>
 
-</syncfusion:HierarchyNavigator>
+				</syncfusion:HierarchyNavigator.ItemTemplate>
 
-{% endhighlight %}
-
-The image displayed below shows the output of the above code—items bound to XML data.
-
-![](Populating-Data_images/Populating-Data_img3.png)
+			</syncfusion:HierarchyNavigator>
 
 
+
+   The image displayed below shows the output of the above code—items bound to XML data.
+
+   ![](Populating-Data_images/Populating-Data_img3.png)
+
+   {:.prettyprint}
 
 ### Binding to WCF Service
 
@@ -456,7 +454,7 @@ The steps to bind XML data through WCF services are as follows:
 1. Create an XML and a class object. Refer the XML data-binding class and the XML used in the 
 2. The following screenshot shows the items added in code displayed on the interface.
 
-![](Populating-Data_images/Populating-Data_img4.png)
+   ![](Populating-Data_images/Populating-Data_img4.png)
 
 
 
@@ -466,195 +464,192 @@ The steps to bind XML data through WCF services are as follows:
 
 
 
-{% highlight C# %}
 
+			[ServiceContract(Namespace = "")]
 
+			[AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
 
-[ServiceContract(Namespace = "")]
+			public class Service1
 
-[AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+			{
 
-public class Service1
+				[OperationContract]
 
-{
+				public ObservableCollection<HierarchyItem> CreateXMLDataItems()
 
-    [OperationContract]
+				{
 
-    public ObservableCollection<HierarchyItem> CreateXMLDataItems()
+					ObservableCollection<HierarchyItem> categories = new ObservableCollection<HierarchyItem>();
 
-    {
+					XDocument XMLItemSource = XDocument.Load("YourXMLLocation/HierarchyItems.xml");
 
-        ObservableCollection<HierarchyItem> categories = new ObservableCollection<HierarchyItem>();
+					categories = this.GetCategories(XMLItemSource.Element("categories"));
 
-        XDocument XMLItemSource = XDocument.Load("YourXMLLocation/HierarchyItems.xml");
+					return categories;
 
-        categories = this.GetCategories(XMLItemSource.Element("categories"));
+				}
 
-        return categories;
 
-    }
 
+				private ObservableCollection<HierarchyItem> GetCategories(XElement element)
 
+				{
 
-    private ObservableCollection<HierarchyItem> GetCategories(XElement element)
+					var item = from category in element.Elements("category")
 
-    {
+							   select category;
 
-        var item = from category in element.Elements("category")
 
-                   select category;
 
+					var itemsObservableCollection = new ObservableCollection<HierarchyItem>();
 
 
-        var itemsObservableCollection = new ObservableCollection<HierarchyItem>();
 
+					foreach (var itm in item)
 
+					{
 
-        foreach (var itm in item)
+						var subitm = new HierarchyItem();
 
-        {
+						subitm.ContentStr = itm.Attribute("name").Value;
 
-            var subitm = new HierarchyItem();
+						subitm.HierarchyItems = this.GetCategories(itm);
 
-            subitm.ContentStr = itm.Attribute("name").Value;
+						itemsObservableCollection.Add(subitm);
 
-            subitm.HierarchyItems = this.GetCategories(itm);
+					}
 
-            itemsObservableCollection.Add(subitm);
 
-        }
 
+					return itemsObservableCollection;
 
+				}
 
-        return itemsObservableCollection;
+			}
 
-    }
 
-}
 
-{% endhighlight %}
+   To connect WCF services with the sample application, use the code snippets displayed below. Also refer Binding data with WCF Service in the How To section.
 
-To connect WCF services with the sample application, use the code snippets displayed below. Also refer Binding data with WCF Service in the How To section.
 
-{% highlight C# %}
 
 
 
-namespace WCFServicesInHierarchy
+			namespace WCFServicesInHierarchy
 
-{
+			{
 
-    public partial class MainPage : UserControl
+				public partial class MainPage : UserControl
 
-    {
+				{
 
-        public MainPage()
+					public MainPage()
 
-        {
+					{
 
-            InitializeComponent();
+						InitializeComponent();
 
-        }
+					}
 
-    }
+				}
 
 
 
-    public class CustomSource
+				public class CustomSource
 
-    {
+				{
 
-        public CustomSource()
+					public CustomSource()
 
-        {
+					{
 
-            //This loads WCF Service
+						//This loads WCF Service
 
-            Service1Client client = new Service1Client();
+						Service1Client client = new Service1Client();
 
-            client.CreateXMLDataItemsCompleted += new EventHandler<CreateXMLDataItemsCompletedEventArgs>(client_CreateXMLDataItemsCompleted);
+						client.CreateXMLDataItemsCompleted += new EventHandler<CreateXMLDataItemsCompletedEventArgs>(client_CreateXMLDataItemsCompleted);
 
-            client.CreateXMLDataItemsAsync();
+						client.CreateXMLDataItemsAsync();
 
 
 
-            this.Categories = new ObservableCollection<HierarchyItem>();
+						this.Categories = new ObservableCollection<HierarchyItem>();
 
-        }
+					}
 
 
 
-        private void client_CreateXMLDataItemsCompleted(object sender, CreateXMLDataItemsCompletedEventArgs e)
+					private void client_CreateXMLDataItemsCompleted(object sender, CreateXMLDataItemsCompletedEventArgs e)
 
-        {
+					{
 
-            if (e.Error == null && e.Result != null)
+						if (e.Error == null && e.Result != null)
 
-            {
+						{
 
-                foreach (HierarchyItem c in e.Result)
+							foreach (HierarchyItem c in e.Result)
 
-                {
+							{
 
-                    this.Categories.Add(c);
+								this.Categories.Add(c);
 
-                }
+							}
 
-            }
+						}
 
-        }
+					}
 
 
 
-        public ObservableCollection<HierarchyItem> Categories
+					public ObservableCollection<HierarchyItem> Categories
 
-        {
+					{
 
-            get;
+						get;
 
-            set;
+						set;
 
-        }
+					}
 
-    }
+				}
 
-}
-{% endhighlight %}
+			}
 
-{% highlight xml %}
 
 
 
-<Window
-     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-     xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-     xmlns:local="clr-namespace:WCFServicesInHierarchy" 
-     x:Class="WCFServicesInHierarchy.MainWindow"
-x:Name="Window" Title="MainWindow" UseLayoutRounding="True" Width="640" Height="480">
-    <Window.DataContext>
-        <local:CustomSource/>
-    </Window.DataContext>
 
-    <Grid x:Name="LayoutRoot">
-        <syncfusion:HierarchyNavigator Name="hierarchyNavigator1" VerticalAlignment="Center" ItemsSource="{Binding Categories}">
-            <syncfusion:HierarchyNavigator.ItemTemplate>
-                <HierarchicalDataTemplate ItemsSource="{Binding HierarchyItems}">
-                    <Border>
-                        <TextBlock Text="{Binding ContentStr}" Margin="2,0"/>
-                    </Border>
-                </HierarchicalDataTemplate>
-            </syncfusion:HierarchyNavigator.ItemTemplate>
-        </syncfusion:HierarchyNavigator>
-    </Grid>
-</Window>
+			<Window
+				 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-{% endhighlight %}
+				 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+			     xmlns:local="clr-namespace:WCFServicesInHierarchy" 
+				 x:Class="WCFServicesInHierarchy.MainWindow"
+			x:Name="Window" Title="MainWindow" UseLayoutRounding="True" Width="640" Height="480">
+			    <Window.DataContext>
+			        <local:CustomSource/>
+			    </Window.DataContext>
 
-The image displayed below shows the output of the above code—items bound to XML data.
+			    <Grid x:Name="LayoutRoot">
+			        <syncfusion:HierarchyNavigator Name="hierarchyNavigator1" VerticalAlignment="Center" ItemsSource="{Binding Categories}">
+			            <syncfusion:HierarchyNavigator.ItemTemplate>
+			                <HierarchicalDataTemplate ItemsSource="{Binding HierarchyItems}">
+			                    <Border>
+			                        <TextBlock Text="{Binding ContentStr}" Margin="2,0"/>
+			                    </Border>
+			                </HierarchicalDataTemplate>
+			            </syncfusion:HierarchyNavigator.ItemTemplate>
+			        </syncfusion:HierarchyNavigator>
+			    </Grid>
+			</Window>
 
-![](Populating-Data_images/Populating-Data_img5.png)
 
 
+   The image displayed below shows the output of the above code—items bound to XML data.
+
+   ![](Populating-Data_images/Populating-Data_img5.png)
+
+   {:.prettyprint}
 

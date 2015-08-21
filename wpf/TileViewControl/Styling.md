@@ -31,7 +31,6 @@ These styles can be applied to the control using XAML. The following code exampl
 
 
 {% highlight xml %}
- [XAML]
 
 <syncfusion:TileViewControl         syncfusion:SkinStorage.VisualStyle="Office2010Blue"        />    
 {% endhighlight %}
@@ -43,7 +42,6 @@ These styles can also be applied to the control using C# as follows.
 
 
 {% highlight c# %}
-[C#]
 
 SkinStorage.SetVisualStyle(tileViewInstance, "Office2010Blue");
 {% endhighlight %}
@@ -114,7 +112,7 @@ The _ItemContainerStyle_ property of _TileViewControl_ sets the style of TileVie
 
 
    ~~~ xml
-     [XAML]
+     
 
      <Style TargetType="{x:Type syncfusion:TileViewItem}" x:Key="itemStyle">
 
@@ -163,7 +161,7 @@ The _ItemContainerStyle_ property of _TileViewControl_ sets the style of TileVie
 
 
    ~~~ xml
-     [XAML]
+     
 
      <syncfusion:TileViewControl  ItemContainerStyle="{StaticResource itemStyle}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  >
 
@@ -197,9 +195,9 @@ The _ItemContainerStyleSelector_ property is used to choose the ItemContainerSty
 1. Create _StyleSelector_ in the code.
 
 
-   ~~~ c#
+   ~~~ cs
    
-       [C#]
+       
 
          public class TileViewItemContainerStyleSelector : StyleSelector
 
@@ -250,7 +248,7 @@ The _ItemContainerStyleSelector_ property is used to choose the ItemContainerSty
 
 
    ~~~ xml
-   [XAML]
+   
 
         <Style TargetType="{x:Type syncfusion:TileViewItem}" x:Key="CsBookStyle">
 
@@ -331,7 +329,7 @@ The _ItemContainerStyleSelector_ property is used to choose the ItemContainerSty
 
 
    ~~~ xml
-     [XAML]
+    
 
      <local:TileViewItemContainerStyleSelector x:Key="tileViewStyleSelector"/>
 
@@ -344,7 +342,7 @@ The _ItemContainerStyleSelector_ property is used to choose the ItemContainerSty
 
 
    ~~~ xml
-     [XAML]
+     
 
       <syncfusion:TileViewControl  ItemContainerStyleSelector="{StaticResource tileViewStyleSelector}" ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  Margin="20" >
 

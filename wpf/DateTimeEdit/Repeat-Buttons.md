@@ -13,7 +13,7 @@ Repeat Buttons are used to spin the selected part (month, day, year, hour, secon
 
 
 {% highlight html %}
-XAML
+
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10"                          IsVisibleRepeatButton="True"                          UpRepeatButtonMargin="1" DownRepeatButtonMargin="1"/>
 {% endhighlight  %}

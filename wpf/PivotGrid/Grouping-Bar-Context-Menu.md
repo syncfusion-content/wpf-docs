@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-## Grouping Bar Context Menu
+# Grouping Bar Context Menu
 
 
 The Grouping bar context menu consists of the following menu items:
@@ -26,15 +26,15 @@ The following are the menu items present in the context menu of Grouping bar ite
 4. Move to End - Moves the current item to the last position
 3. Show Field List - Launches the PivotGrid Field List
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 This feature is useful for applications related to Stock Market where the data will change from time to time and users can refresh the grid using the context menu.
 
-#### Adding Grouping Bar Context Menu
+### Adding Grouping Bar Context Menu
 
 ![Description: C:/Syncfusion/BI/WPF/PivotAnalysis.Wpf/Samples/Grouping Bar/Context Menu Demo/Images/ContextMenu.png](Features_images/Features_img20.png)
 
-#### Sample Link
+### Sample Link
 
 To access a Conditional Formatting sample:
 

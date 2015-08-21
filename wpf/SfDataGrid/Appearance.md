@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance
 
-### Freeze Panes
+## Freeze Panes
 
 
 This section explains you how to set Freeze panes in SfDataGrid. SfDataGrid provides support to Freeze rows and columns at the top and also at the bottom similar to Excel Freeze panes. To enable Freeze panes in SfDataGrid you have to use the following properties.
@@ -18,9 +18,9 @@ _Properties Table_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 FrozenRowsCount</td><td>
@@ -40,7 +40,7 @@ Gets or Sets the count of frozen columns in right side of the DataGrid</td></tr>
 </table>
 
 
-#### __Limitations:
+## Limitations:
 
 1. FreezePanes is not supported in DetailsViewGrid.
 2. FrozenRows is disabled when AllowFrozenGroupHeaders is set to True.
@@ -53,7 +53,7 @@ The following code example illustrates how to use FreezePanes support in SfDataG
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -84,11 +84,6 @@ The following screenshot displays the SfDataGrid with Freeze Panes support.
 ![WPF](Features_images/Features_img173.png)
 
 
-
 _DataGrid with Freeze panes_
 
-> _Note:_ 
-
-* _While grouping, the FrozenColumnCount denotes only the actual DataColumns instead of any indent columns. So that the Indent columns automatically froze when initializing the FrozenColumnCount._
-* _Header and TableSummary rows that are frozen by default works regardless of the FrozenRowsCount and FooterRowsCount properties._
-* _The count should be less than the number of rows or columns in view._
+> Note:  * While grouping, the FrozenColumnCount denotes only the actual DataColumns instead of any indent columns. So that the Indent columns automatically froze when initializing the FrozenColumnCount. * Header and TableSummary rows that are frozen by default works regardless of the FrozenRowsCount and FooterRowsCount properties. * The count should be less than the number of rows or columns in view.

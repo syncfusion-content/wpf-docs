@@ -12,7 +12,7 @@ documentation: ug
 
 WPF Styling and Templating refer to a suite of features (styles and templates) that allow developers and designers to create visually compelling effects and consistent appearance for their products.
 
-#### Overview
+## Overview
 
 This section elaborates the information about changing the visual appearance of the DataGrid and its elements. In addition, you can edit the structure of DataGrid and its elements using Blend and visual studio that helps you to customize their appearance. This section includes the following topics:
 
@@ -27,7 +27,7 @@ This section elaborates the information about changing the visual appearance of 
 * Conditional Formatting for Cells
 * Alternating Row Style
 
-#### Visual Elements
+## Visual Elements
 
 
 The following screenshot displays the elements present in the DataGrid.
@@ -55,12 +55,13 @@ A DataGrid comprises of the following elements:
 * GroupSummaryRowContro l - Container for collection of GridGroupSummaryCell.
 * GroupDropArea - Shows grouped columns in the DataGrid   control.
 * GroupDropAreaItem - Represents the grouped columns in GroupDropArea.
-### Blend Style Editing
+
+## Blend Style Editing
 
 
 DataGrid allows you to edit the styles of DataGrid and its elements in Expression blend, as your requirement.
 
-#### Edit DataGrid Style in Expression Blend
+### Edit DataGrid Style in Expression Blend
 
 The section explains you how to edit a SfDataGrid style in ExpressionBlend. To Edit the control style in ExpressionBlend follow the steps,
 
@@ -111,7 +112,7 @@ _Creating empty style for SfDataGrid_
 
 Click OK, Expression Blend generates the style of the SfDatagrid control in the Resource section. The properties available for the style are loaded in the ‘Properties’ pane and you can modify its default values. You can also edit the generated XAML in the XAML view or in VisualStudio.
 
-#### Edit DataGrid Elements in Expression Blend
+### Edit DataGrid Elements in Expression Blend
 
 You can also edit the Datagrid elements in ExpressionBlend. To edit the SfDatagrid elements in ExpressionBlend follow the steps,
 
@@ -175,18 +176,19 @@ You can also edit the style of the following Datagrid elements in Expression Ble
 * RowStyle
 * TableSummaryCellStyle
 * TableSummaryRowStyle.
-### Visual Style Editing
+
+## Visual Style Editing
 
 
 DataGrid allows you to edit the styles of DataGrid and its elements in Visual studio as your requirement.
 
-> _Note: Visual Style Editing option is availble in Visual Studio 2012 and higher versions only._
+> Note: Visual Style Editing option is availble in Visual Studio 2012 and higher versions only.
 
 
 
 
 
-#### Edit DataGrid in Visual Studio Design View.
+### Edit DataGrid in Visual Studio Design View.
 
 This section explains you how to edit a SfDataGrid style in VisualStudioDesingView. To Edit the control style in Visual studio follow the steps.
 
@@ -223,7 +225,7 @@ _Creating empty style for SfDataGrid_
 
 Click OK, Visual Studio generates the style of DataGrid in the Resource section.The style of the DataGrid control is loaded in the XAML.  You can also edit the generated XAML in the XAML view.
 
-#### Edit DataGrid Elements in VisualStudio Desing View
+### Edit DataGrid Elements in VisualStudio Desing View
 
 This section explains you how to edit a SfDataGrid elements style in VisualStudioDesingView. To Edit the DataGrid element style in Visual Studio follow the steps,
 
@@ -277,7 +279,7 @@ You can also edit the style of the following DataGrid elements in Visual Studio.
 * TableSummaryCellStyle
 * TableSummaryRowStyle.
 
-### Styling Cells
+## Styling Cells
 
 
 DataGrid control offers the following properties to apply custom styling for cells.
@@ -286,11 +288,11 @@ _Styling cells property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Target Element Type</td><td>
-DataContext</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Target Element Type</th><th>
+DataContext</th></tr>
 <tr>
 <td>
 SfDataGrid.CellStyle,GridColumn.CellStyle</td><td>
@@ -324,7 +326,7 @@ Null</td></tr>
 </table>
 
 
-#### SfDataGrid.CellStyle
+### SfDataGrid.CellStyle
 
 DataGrid displays all the column values in cells. GridCell is base type for all the cells in the Grid.  These cells are styled by creating appropriate style for the cells and setting that to SfDataGrid.CellStyle property.
 
@@ -334,7 +336,7 @@ The following code example illustrates applying styles for cells.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -370,9 +372,9 @@ The following code example illustrates applying styles for cells.
 
 
 
-> _Note: DataGrid control also allows you to apply the style for the cells in the particular column by using GridColumn.CellStyle property._
+> Note: DataGrid control also allows you to apply the style for the cells in the particular column by using GridColumn.CellStyle property.
 
-#### SfDataGrid.CaptionSummaryCellStyle
+### SfDataGrid.CaptionSummaryCellStyle
 
 Group caption row displays the data i.e. Group caption text and caption summary values in GridCaptionSummaryCell. You can apply custom style for GridCaptionSummaryCell using this property.
 
@@ -382,7 +384,7 @@ The following code example illustrates this.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -414,7 +416,7 @@ The following code example illustrates this.
 {% endhighlight %}
 
 
-#### SfDataGrid.GroupSummaryCellStyle
+### SfDataGrid.GroupSummaryCellStyle
 
 GroupSummary row displays all the summary values in GroupSummaryCells. You can apply the style for GroupSummaryCell using this property. The following code example illustrates this.
 
@@ -422,7 +424,7 @@ GroupSummary row displays all the summary values in GroupSummaryCells. You can a
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -454,7 +456,7 @@ GroupSummary row displays all the summary values in GroupSummaryCells. You can a
 
 
 
-#### SfDataGrid.TableSummaryCellStyle
+### SfDataGrid.TableSummaryCellStyle
 
 All the table summary values are displayed in GridTableSummaryCell. DataGrid enables you to apply style for GridTableSummaryCell using this property. The following code example illustrates this.
 
@@ -462,7 +464,7 @@ All the table summary values are displayed in GridTableSummaryCell. DataGrid ena
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -492,7 +494,7 @@ ItemsSource="{Binding OrdersDetails}" />
 {% endhighlight %}
 
 
-#### SfDataGrid.HeaderStyle
+### SfDataGrid.HeaderStyle
 
 DataGrid displays the column header in GridHeaderCellControl that displays the column header text and shows the sorting icon when you sort the column. By using this property, you can apply style for GridHeaderCellControl. The following code example illustrates this.
 
@@ -500,7 +502,7 @@ DataGrid displays the column header in GridHeaderCellControl that displays the c
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -544,7 +546,7 @@ DataGrid displays the column header in GridHeaderCellControl that displays the c
 {% endhighlight %}
 
 
-### Styling Rows
+## Styling Rows
 
 The DataGrid control offers the following properties for Styling the different type of rows in Grid
 
@@ -552,11 +554,11 @@ _Styling Rows property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Target Element</td><td>
-Data Context</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Target Element</th><th>
+Data Context</th></tr>
 <tr>
 <td>
 SfDataGrid.RowStyle</td><td>
@@ -590,7 +592,7 @@ SummaryRecordEntry</td></tr>
 </table>
 
 
-#### SfDataGrid.RowStyle
+### SfDataGrid.RowStyle
 
 All the rows in the DataGrid are of VirtualizingCellsControl type that contains the RowData as data context. SfDataGrid.RowStyle property helps to apply styles for the row.
 
@@ -600,7 +602,7 @@ The following code example illustrates how to set the row style for DataGrid.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -626,7 +628,7 @@ The following code example illustrates how to set the row style for DataGrid.
 {% endhighlight %}
 
 
-#### SfDataGrid.AlternatingRowStyle
+### SfDataGrid.AlternatingRowStyle
 
 The property helps you to apply style for alternate row in SfDataGrid. It is the type of VirtualizingCellsControl that contains the RowData as data context. SfDataGrid.AlternatingRowStyle property helps to apply styles for the alternate row.
 
@@ -636,7 +638,7 @@ The following code example illustrates how to set the alternate row style for Da
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -662,7 +664,7 @@ The following code example illustrates how to set the alternate row style for Da
 
 {% endhighlight %}
 
-#### SfDataGrid.CaptionSummaryRowStyle
+### SfDataGrid.CaptionSummaryRowStyle
 
 This property helps to apply styling for Group caption row (refer the visual elements figure). Group caption row is a type of CaptionSummaryRowControl that inherits from VirtualizingCellsControl containing the Group data as DataContext. 
 
@@ -672,7 +674,7 @@ The following code example illustrates applying styles for Group caption row.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -706,7 +708,7 @@ The following code example illustrates applying styles for Group caption row.
 
 
 
-#### SfDataGrid.GroupSummaryRowStyle
+### SfDataGrid.GroupSummaryRowStyle
 
 Group summary is displayed at the bottom of all groups when you add GridSummaryRow object to SfDataGrid.GroupSummaryRows collection. You can apply style to them by editing the GroupSummaryRowControl style.
 
@@ -716,7 +718,7 @@ The following code example illustrates styling of Group Summary rows.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -750,7 +752,7 @@ TargetType="syncfusion:GroupSummaryRowControl">
 
 {% endhighlight %}
 
-#### SfDataGrid.TableSummaryRowStyle
+### SfDataGrid.TableSummaryRowStyle
 
 DataGrid displays all the Table summary values in TableSummaryRow. By default, table summary row is present at the bottom of DataGrid. TableSummaryRow is of a type TableSummaryRowControl. You can apply styling for TableSummaryRowControl by creating custom style and setting that style to SfDataGrid.TableSummaryRowStyle property.
 
@@ -760,7 +762,7 @@ The following code example displays the styling of TableSummaryRow.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -796,13 +798,13 @@ TargetType="syncfusion:TableSummaryRowControl">
 
 
 
-### Style Selectors
+## Style Selectors
 
 DataGrid provides extensive support for StyleSelectors that helps to apply custom style for cells and rows. To know more about the StyleSelectors you can check the following MSDN link: [http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector.aspx](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector.aspx).
 
 > _Note: By default, Silverlight does not support StyleSelectors hence DataGrid too._
 
-#### Cell Style Selectors
+### Cell Style Selectors
 
 DataGrid control offers following StyleSelector properties to set the style for cells.
 
@@ -810,10 +812,10 @@ _Cell StyleSelector property table_
 
 <table>
 <tr>
-<td rowspan = "2">
-Property</td><td rowspan = "2">
-Description</td><td colspan = "2">
-Parameters</td></tr>
+<th rowspan = "2">
+Property</th><th rowspan = "2">
+Description</th><th colspan = "2">
+Parameters</th></tr>
 <tr>
 <td>
 Item</td><td>
@@ -845,7 +847,7 @@ GridTableSummaryCell</td></tr>
 </table>
 
 
-#### Row Style Selectors
+### Row Style Selectors
 
 DataGrid also offers following StyleSelector properties for applying styles to rows. 
 
@@ -853,10 +855,10 @@ _Row StyleSelector property table_
 
 <table>
 <tr>
-<td rowspan = "2">
-Property</td><td rowspan = "2">
-Description</td><td colspan = "2">
-Parameters</td></tr>
+<th rowspan = "2">
+Property</th><th rowspan = "2">
+Description</th><th colspan = "2">
+Parameters</th></tr>
 <tr>
 <td>
 Item</td><td>
@@ -894,7 +896,7 @@ TableSummaryRowControl</td></tr>
 </table>
 
 
-#### Example
+### Example
 
 In the following example, you can set the different row background for DataGrid by using SfDataGrid.RowStyleSelector property.
 
@@ -902,7 +904,7 @@ In the following example, you can set the different row background for DataGrid 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -929,7 +931,7 @@ In the following example, you can set the different row background for DataGrid 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -966,7 +968,7 @@ return base.SelectStyle (item, container);
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -995,9 +997,9 @@ The following screenshot displays the output.
 
 _Customized rows with background_
 
-### Header Template
+## Header Template
 
-#### GridColumn.HeaderTemplate
+### GridColumn.HeaderTemplate
 
 DataGrid provides the extensive support to apply template for column header. By using the following property, you can template the particular column header.
 
@@ -1005,10 +1007,10 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td><td>
-Data Context</td></tr>
+<th>
+Property Name</th><th>
+Description</th><th>
+Data Context</th></tr>
 <tr>
 <td>
 GridColumn.HeaderTemplate</td><td>
@@ -1022,7 +1024,7 @@ The following code example illustrates how to use HeaderTemplate in DataGrid Col
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -1086,17 +1088,17 @@ HeaderTemplate="{StaticResource headerTemplate}" />
 
 
 
-> _Note: DataGrid control also provides the support to apply DataTemplateSelector for a particular column using GridTemplateColumn.CelltemplateSelector property. For more information about this, you can refer_ ColumnType _topic._
+> Note: DataGrid control also provides the support to apply DataTemplateSelector for a particular column using GridTemplateColumn.CelltemplateSelector property. For more information about this, you can refer_ ColumnType _topic.
 
 
 
-### Template Selectors
+## Template Selectors
 
 DataGrid provides extensive support for DataTemplateSelectors that helps to apply custom style for cells and rows, based on a custom condition. To know more about the DataTemplateSelectors, you can check the following MSDN link:
 
 [http://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx](http://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx).
 
-> _Note: By default, Silverlight does not support TemplateSelectors hence DataGrid too._
+> Note: By default, Silverlight does not support TemplateSelectors hence DataGrid too.
 
 
 
@@ -1106,10 +1108,10 @@ _DataTemplateSelector property table_
 
 <table>
 <tr>
-<td rowspan = "2">
-Property</td><td rowspan = "2">
-Description</td><td colspan = "2">
-Parameters</td></tr>
+<th rowspan = "2">
+Property</th><th rowspan = "2">
+Description</th><th colspan = "2">
+Parameters</th></tr>
 <tr>
 <td>
 Item</td><td>
@@ -1129,14 +1131,14 @@ GridCell</td></tr>
 </table>
 
 
-#### SfDataGrid.CellTemplateSelector
+### SfDataGrid.CellTemplateSelector
 
 By using this property, you can apply custom templates for cells based on a custom condition. It applies for all template column defined in DataGrid. The following code example illustrates applying template selector for DataGrid Template column.
 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -1170,7 +1172,7 @@ class GridCellTemplateSelector : DataTemplateSelector
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -1218,14 +1220,14 @@ The following screenshot displays the output.
 
 _Template selector for DataGrid Template column_
 
-#### GridColumn.CellTemplateSelector
+###h GridColumn.CellTemplateSelector
 
 By using this property, you can apply custom templates for cells based on a custom condition. The following code example illustrates applying template selector for DataGrid Template column.
 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -1261,7 +1263,7 @@ return base.SelectTemplate(item, container);
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -1317,7 +1319,7 @@ The following screenshot displays the output.
 
 _Template selector for Grid Template column_
 
-### Conditional Formatting for Cells
+## Conditional Formatting for Cells
 
 DataGrid allows you to format the styles of cells and rows based on certain conditions. This is achieved by defining styling and template properties of DataGrid. To know more about styling and template properties you can refer the following topics:
 
@@ -1326,9 +1328,9 @@ DataGrid allows you to format the styles of cells and rows based on certain cond
 * Style Selectors
 * Template Selectors
 
-#### Applying Conditional Formatting to Cells
+### Applying Conditional Formatting to Cells
 
-##### Example
+### Example
 
 In this example you can see how to apply styles, based on conditions for cells in “Change” column using CellTemplate. When the change value is less than zero, then Red color foreground is applied to that cell, else Green color Foreground is applied.
 
@@ -1337,44 +1339,44 @@ Following steps illustrate how to apply conditional formatting to the Cells in G
 1. Create a converter and specify the criteria to apply conditional formatting to the cells.
 
 
-{% highlight C# %}
-
-[C#]
 
 
 
-//Color Converters
 
-public class ForegroundColorConverter : IValueConverter
 
-{
 
-public object Convert(object value, Type targetType, object parameter, string language)
+   //Color Converters
 
-{
+				public class ForegroundColorConverter : IValueConverter
 
-var data = value as double?;
+				{
 
-if (data != null && data > 0)
+				public object Convert(object value, Type targetType, object parameter, string language)
 
-return new SolidColorBrush(Colors.Green);
+				{
 
-else
+				var data = value as double?;
 
-return new SolidColorBrush(Colors.Red);
+				if (data != null && data > 0)
 
-}
+				return new SolidColorBrush(Colors.Green);
 
-public object ConvertBack(object value, Type targetType, object parameter, string language)
+				else
 
-{
+				return new SolidColorBrush(Colors.Red);
 
-throw new NotImplementedException();
+				}
 
-}
+				public object ConvertBack(object value, Type targetType, object parameter, string language)
 
-}
-{% endhighlight %}
+				{
+
+				throw new NotImplementedException();
+
+				}
+
+				}
+
 
 
 
@@ -1383,73 +1385,74 @@ throw new NotImplementedException();
 
 
 
-{% highlight xml %}
-
-[XAML]
 
 
 
-</Window.Resources>
-
-<local:ForegroundColorConverter x:Key="changeForegroundConverter"/> 
-
-</Window.Resources>
 
 
 
-<syncfusion:SfDataGrid x:Name="datagrid" 
+			</Window.Resources>
 
-                         AutoGenerateColumns="False" 
+			<local:ForegroundColorConverter x:Key="changeForegroundConverter"/> 
 
-                         ItemsSource="{Binding Stocks}">
-
-<syncfusion:SfDataGrid.Columns>
-
-<syncfusion:GridTextColumn MappingName="Symbol" />
-
-<syncfusion:GridTemplateColumn MappingName="Account" />
-
-<syncfusion:GridTextColumn MappingName="LastTrade" />
-
-<syncfusion:GridTemplateColumn MappingName="Change">
-
-<syncfusion:GridTemplateColumn.CellTemplate>
-
-<DataTemplate>
-
-<TextBlock x:Name="changeValue" HorizontalAlignment="Center" FontSize="24" FontWeight="Light" Foreground="{Binding Change, Converter={StaticResource changeForegroundConverter}}"                                                                          Text="{Binding Change}" />
-
-</DataTemplate>
-
-</syncfusion:GridTemplateColumn.CellTemplate>
-
-</syncfusion:GridTemplateColumn>
-
-<syncfusion:GridTextColumn MappingName="PreviousClose" />
-
-<syncfusion:GridTextColumn MappingName="Open" />
-
-</syncfusion:SfDataGrid.Columns>
-
-</syncfusion:SfDataGrid>
-
-{% endhighlight %}
+			</Window.Resources>
 
 
 
-The following screenshot displays the output.
+			<syncfusion:SfDataGrid x:Name="datagrid" 
+
+									 AutoGenerateColumns="False" 
+
+									 ItemsSource="{Binding Stocks}">
+
+			<syncfusion:SfDataGrid.Columns>
+
+			<syncfusion:GridTextColumn MappingName="Symbol" />
+
+			<syncfusion:GridTemplateColumn MappingName="Account" />
+
+			<syncfusion:GridTextColumn MappingName="LastTrade" />
+
+			<syncfusion:GridTemplateColumn MappingName="Change">
+
+			<syncfusion:GridTemplateColumn.CellTemplate>
+
+			<DataTemplate>
+
+			<TextBlock x:Name="changeValue" HorizontalAlignment="Center" FontSize="24" FontWeight="Light" Foreground="{Binding Change, Converter={StaticResource changeForegroundConverter}}"                                                                          Text="{Binding Change}" />
+
+			</DataTemplate>
+
+			</syncfusion:GridTemplateColumn.CellTemplate>
+
+			</syncfusion:GridTemplateColumn>
+
+			<syncfusion:GridTextColumn MappingName="PreviousClose" />
+
+			<syncfusion:GridTextColumn MappingName="Open" />
+
+			</syncfusion:SfDataGrid.Columns>
+
+			</syncfusion:SfDataGrid>
+
+			
 
 
 
-![](Features_images/Features_img163.png)
+   The following screenshot displays the output.
 
 
 
-_Conditional formatting to the Cells in Grid_
+   ![](Features_images/Features_img163.png)
 
-#### Applying Conditional Formatting for Rows
 
-##### Example
+
+   _Conditional formatting to the Cells in Grid_
+   {:.prettyprint}
+   
+### Applying Conditional Formatting for Rows
+
+### Example
 
 In this example, you can see how to apply style, based on conditions for rows using SfDataGrid.RowStyleSelector. When the “Change” column value is less than zero, then Red color foreground is applied to that Row, else Green color foreground is applied.
 
@@ -1458,95 +1461,95 @@ Following steps illustrate how to apply conditional formatting to the Rows in Gr
 1. Create a StyleSelector and specify the criteria to apply conditional formatting to the rows.
 
 
-{% highlight C# %}
-
-[C#]
 
 
 
-public class CustomRowStyleSelector : StyleSelector
-
-{
-
-public override Style SelectStyle(object item, DependencyObject container)
-
-{
-
-var row = item as DataRowBase;
-
-var data = row.RowData as StockData;
-
-if (data != null)
-
-{
-
-if(data.Change<0)
-
-return App.Current.Resources["redRowStyle"] as Style;
-
-else
-
-return App.Current.Resources["greenRowStyle"] as Style;
-
-}
-
-return base.SelectStyle (item, container);
-
-}
-
-}
 
 
-{% endhighlight %}
+
+			public class CustomRowStyleSelector : StyleSelector
+
+			{
+
+			public override Style SelectStyle(object item, DependencyObject container)
+
+			{
+
+			var row = item as DataRowBase;
+
+			var data = row.RowData as StockData;
+
+			if (data != null)
+
+			{
+
+			if(data.Change<0)
+
+			return App.Current.Resources["redRowStyle"] as Style;
+
+			else
+
+			return App.Current.Resources["greenRowStyle"] as Style;
+
+			}
+
+			return base.SelectStyle (item, container);
+
+			}
+
+			}
+
+
+
 
 
 2. Assign that custom StyleSelector object to SfDataGrid.RowStyleSelector property. The following code example illustrates this.
 
 
-{% highlight xml %}
-
-[XAML]
-
-
-
-</Window.Resources>
-
-<local:CustomRowStyleSelector x:Key="rowStyleSelector "/> 
-
-</Window.Resources>
-
-
-
-<syncfusion:SfDataGrid x:Name="datagrid" 
-
-                         AutoGenerateColumns="True"
-
-                         ColumnSizer="Star" 
-
-                         RowStyleSelector="{StaticResource rowStyleSelector}"
-
-                ItemsSource="{Binding Stocks}" />
-{% endhighlight %}
 
 
 
 
 
-The following screenshot displays the output.
+
+			</Window.Resources>
+
+			<local:CustomRowStyleSelector x:Key="rowStyleSelector "/> 
+
+			</Window.Resources>
 
 
 
-![](Features_images/Features_img164.png)
+			<syncfusion:SfDataGrid x:Name="datagrid" 
+
+									 AutoGenerateColumns="True"
+
+									 ColumnSizer="Star" 
+
+									 RowStyleSelector="{StaticResource rowStyleSelector}"
+
+							ItemsSource="{Binding Stocks}" />
 
 
 
-_Conditional formatting to the Rows in Grid_
-
-> _Note: StyleSelectors & TemplateSelectors are not supported by Silverlight_
 
 
 
-### Alternating Row Style
+   The following screenshot displays the output.
+
+
+
+   ![](Features_images/Features_img164.png)
+
+
+
+   _Conditional formatting to the Rows in Grid_
+
+   > Note: StyleSelectors & TemplateSelectors are not supported by Silverlight
+
+   {:.prettyprint}
+
+## Alternating Row Style
 
 You can set the Alternative RowStyle in DataGrid by using SfDataGrid.AlternatingRowStyle__property. 
 
@@ -1558,7 +1561,7 @@ The following code example illustrates how to use AlternatingRowStyle in DataGri
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 

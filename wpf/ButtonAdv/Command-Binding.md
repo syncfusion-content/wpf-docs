@@ -14,7 +14,7 @@ The ButtonAdv control supports Commanding. The Command and Command Parameter pro
 The Command can be binded as follows:
 
 {% highlight html %}
-[XAML]
+
 
 <sync:ButtonAdv SizeMode="Normal" Command="{Binding CustomCommand}" CommandParameter="CUSTOM"/>
 

@@ -15,7 +15,7 @@ When the value of the StringMode property is set as StartChar, AutoComplete begi
 
 ![](Custom-Filtration-Support_images/Custom-Filtration-Support_img1.png)
 
-
+_StringMode—StartChar_
 
 
 
@@ -23,7 +23,7 @@ When the value of the StringMode property is set as IndexBased, starting index v
 
 ![](Custom-Filtration-Support_images/Custom-Filtration-Support_img2.png)
 
-
+_StringMode—IndexBased_
 
 
 
@@ -31,6 +31,7 @@ When the value of the StringMode property is set as AnyChar, the AutoComplete se
 
 ![](Custom-Filtration-Support_images/Custom-Filtration-Support_img3.png)
 
+_StringMode—AnyChar_
 
 
 ## Using Custom Filtration Support in an Application 
@@ -39,7 +40,7 @@ The StringMode property will be used to attain this functionality by setting its
 
 {% highlight xml %}
 
-[XAML]
+
 <syncfusion:AutoComplete x:Name="AutoComplete1" StringMode="StartChar"/>
 <syncfusion:AutoComplete x:Name="AutoComplete2" StringMode="IndexBased"/>
 <syncfusion:AutoComplete x:Name="AutoComplete3" StringMode="AnyChar"/>
@@ -48,7 +49,7 @@ The StringMode property will be used to attain this functionality by setting its
 {% highlight c# %}
 
 
-[C#]
+
 AutoComplete autoComplete1 = new AutoComplete();
 this.autoComplete1.StringMode = StringMode.StartChar;
 AutoComplete autoComplete2 = new AutoComplete();
@@ -66,12 +67,12 @@ this.autoComplete3.StringMode = StringMode.AnyChar;
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 StringMode</td><td>

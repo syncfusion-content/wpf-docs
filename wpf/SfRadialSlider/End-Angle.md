@@ -13,7 +13,6 @@ The EndAngle property can be used to set the ending position for the ticks in th
 
 {% highlight html %}
 
-[XAML]
 
 <syncfusion:SfRadialSlider  StartAngle="180" EndAngle="360" />
 

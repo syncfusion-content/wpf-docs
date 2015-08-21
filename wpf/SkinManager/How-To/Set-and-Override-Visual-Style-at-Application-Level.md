@@ -7,7 +7,7 @@ control: SkinManager
 documentation: ug
 ---
 
-### Set and Override Visual Style at Application Level
+# Set and Override Visual Style at Application Level
 
 The Visual Styles can also be defined at application level. The VisualStyle property cannot be set at the application level. You have to merge the appropriate Resource Dictionary on Application resources which will cause all the controls to pick up the particular style.
 
@@ -15,7 +15,7 @@ The following code snippet explains how to override the Syncfusion Blend Style f
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -29,35 +29,35 @@ The following code snippet explains how to override the Syncfusion Blend Style f
 
 
 
-        &lt;Application.Resources&gt;
+        <Application.Resources>
 
-            &lt;ResourceDictionary&gt;
+            <ResourceDictionary>
 
-                &lt;ResourceDictionary.MergedDictionaries&gt;
+                <ResourceDictionary.MergedDictionaries>
 
-                    &lt;ResourceDictionary Source="/Syncfusion.Tools.WPF;component/Framework/Ribbon/Themes/BlendStyle.xaml"/&gt;
+                    <ResourceDictionary Source="/Syncfusion.Tools.WPF;component/Framework/Ribbon/Themes/BlendStyle.xaml"/>
 
-                &lt;/ResourceDictionary.MergedDictionaries&gt;
+                </ResourceDictionary.MergedDictionaries>
 
-                &lt;Style TargetType="syncfusion:Ribbon" BasedOn="{StaticResource BlendRibbonStyle}"&gt;
+                <Style TargetType="syncfusion:Ribbon" BasedOn="{StaticResource BlendRibbonStyle}">
 
-                    &lt;Setter Property="FontSize" Value="19"/&gt;
+                    <Setter Property="FontSize" Value="19"/>
 
-                &lt;/Style&gt;
+                </Style>
 
-            &lt;/ResourceDictionary&gt;
+            </ResourceDictionary>
 
-        &lt;/Application.Resources&gt;
+        </Application.Resources>
 
-&lt;/Application&gt;
+</Application>
 
-
+{% endhighlight %}
 
 The output is displayed as shown below.
 
 
 
 ![](Set-and-Override-Visual-Style-at-Application-Level_images/Set-and-Override-Visual-Style-at-Application-Level_img1.png)
-{:.image }
+
 
 

@@ -17,7 +17,6 @@ The following code sample shows how to create the Radial Slider from code-behind
 
 {% highlight html %}
 
- [XAML]
 
 <syncfusion:SfRadialSlider
 
@@ -30,7 +29,6 @@ The following code sample shows how to create the Radial Slider from code-behind
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
 
 SfRadialSlider sfRadialSlider = new SfRadialSlider() {Minimum = 0, Maximum = 100};
 

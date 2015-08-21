@@ -39,7 +39,7 @@ These setting works only when “AutoFillColor” is set as false.
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -82,14 +82,14 @@ ShapeFill is set based on the under-bound values of the shape. This provides a t
 
 Range color mapping is one of the features used to differentiate the shape’s fill based on its under-bound value and color ranges. Range color mapping contains the following properties:
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 From </td><td>
@@ -114,7 +114,7 @@ The fill color of a particular bubble fill is determined by its under-bound valu
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:ShapeSetting ShapeFill="#E5E5E5" ShapeStroke="#C1C1C1" ShapeStrokeThickness="0.5" ShapeValuePath="Population">
 
@@ -146,13 +146,13 @@ When the under-bound value is under any of the given sorted range or above the s
 
 AutoFillColor must be set to false to enable the range color mapping.
 
-> _Note: The shape’s under-bound object value must have numeric property and should be mentioned in ShapeValuePath to work on this. The color between the given ranges is applied only to the shapes that have a proper under-bound values. The color for other shapes is the ShapeFill’s color._
+> Note: The shape’s under-bound object value must have numeric property and should be mentioned in ShapeValuePath to work on this. The color between the given ranges is applied only to the shapes that have a proper under-bound values. The color for other shapes is the ShapeFill’s color.
 
 
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfMap>
 
@@ -210,7 +210,7 @@ ColorPalette has to be set in the ShapeSetting’s ColorPalette property. ColorP
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -260,7 +260,6 @@ MapColorPalette contains a property named “FillBrush”. This property sets th
 {% highlight xml %}
 
 
-[XAML]
 
 
 
@@ -301,7 +300,8 @@ MapColorPalette contains a property named “FillBrush”. This property sets th
             </syncfusion:SfMap.Layers>
 
         </syncfusion:SfMap >
-{% endhighlight %}
+
+		{% endhighlight %}
 
 
 ![](Shapes-Color-Customization_images/Shapes-Color-Customization_img4.png)

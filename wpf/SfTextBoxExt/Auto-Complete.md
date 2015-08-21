@@ -21,7 +21,6 @@ The Employee model looks as shown below:
 
 
 {% highlight c# %}
-[C#] 
 
 
 
@@ -43,7 +42,6 @@ Create a collection attribute,
 
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -67,7 +65,6 @@ Populate the collection with items,
 
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -85,7 +82,6 @@ Bind the Employees collection to the AutoCompleteSource property of TextBoxExt.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -105,7 +101,6 @@ SearchItemPath property specifies the property path by which the filtering has t
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -126,7 +121,7 @@ SearchItemPath property specifies the property path by which the filtering has t
 
 
 
-> _Note: Default value of AutoCompleteMode property is None. So running the control without specifying this property will not show any suggestions. Detailed information about Auto Complete modes will be provided in next section._
+> Note: Default value of AutoCompleteMode property is None. So running the control without specifying this property will not show any suggestions. Detailed information about Auto Complete modes will be provided in next section.
 
 ## Auto Complete Mode
 
@@ -150,7 +145,7 @@ The filtered suggestions are displayed in a drop-down list.  Users can pick an i
 
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -172,7 +167,7 @@ The filtered suggestions are displayed in a drop-down list.  Users can pick an i
 
 
 
-_Filtered suggestions displayed in drop-down list_
+Filtered suggestions displayed in drop-down list
 
 
 
@@ -182,7 +177,6 @@ The text will be appended to the first matched item in the suggestions collectio
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -204,9 +198,9 @@ AutoCompleteMode="Append"
 
 
 
-_Append mode_
+Append mode
 
-_Note: By default the text will be appended to first matched item. But still user can browse to other items through up and down keys from keyboard._
+Note: By default the text will be appended to first matched item. But still user can browse to other items through up and down keys from keyboard.
 
 ### SuggestAppend
 
@@ -214,7 +208,7 @@ The text will be appended to the first matched item in the suggestions collectio
 
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -236,7 +230,7 @@ The text will be appended to the first matched item in the suggestions collectio
 
 
 
-_SuggestAppend mode_
+SuggestAppend mode
 
 
 
@@ -250,7 +244,6 @@ The AutoCompleteItemTemplate helps to decorate the suggested item with visual el
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -290,7 +283,7 @@ The AutoCompleteItemTemplate helps to decorate the suggested item with visual el
 
 
 
-_Drop down list with image_
+Drop down list with image
 
 
 
@@ -325,7 +318,6 @@ The controls returns the entire collection without filtering when the user types
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -349,14 +341,14 @@ SuggestionMode="None"
 
 
 
-_None case_
+None case
 
 ### StartsWith
 
 The control returns all possible matches which start with the text typed by the user.
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -380,7 +372,7 @@ SuggestionMode="StartsWith"
 
 
 
-_StartsWith case_
+StartsWith case
 
 
 
@@ -389,7 +381,6 @@ _StartsWith case_
 The control returns all possible matches which start with the text typed by the user which is culture and case sensitive.
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -411,7 +402,7 @@ SuggestionMode="StartsWithCaseSensitive"
 
 
 
-_StartsWithCaseSensitive case_
+StartsWithCaseSensitive case
 
 
 
@@ -421,7 +412,6 @@ The control returns all possible matches which start with the text typed by the 
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -444,7 +434,7 @@ The control returns all possible matches which start with the text typed by the 
 ![C:/Users/ApoorvahR/Desktop/12.png](Auto-Complete_images/Auto-Complete_img9.png)
 
 
-_StartsWithOrdinal case_
+StartsWithOrdinal case
 
 
 
@@ -454,7 +444,6 @@ The control returns all possible matches which start with the text typed by the 
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -478,7 +467,7 @@ SuggestionMode="StartsWithOrdinalCaseSensitive"
 
 
 
-_StartsWithOrdinalCaseSensitive case_
+StartsWithOrdinalCaseSensitive case
 
 
 
@@ -489,7 +478,6 @@ The control return all possible matches which contains the text typed by the use
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -513,7 +501,7 @@ The control return all possible matches which contains the text typed by the use
 
 
 
-_Contains case_
+Contains case
 
 
 
@@ -522,7 +510,6 @@ _Contains case_
 The control return all possible matches which contains the text typed by the user which is culture and case sensitive.
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -545,7 +532,7 @@ The control return all possible matches which contains the text typed by the use
 ![C:/Users/ApoorvahR/Desktop/15.png](Auto-Complete_images/Auto-Complete_img12.png)
 
 
-_ContainsCaseSensitive case_
+ContainsCaseSensitive case
 
 
 
@@ -555,7 +542,6 @@ The control return all possible matches which contains the text typed by the use
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -579,7 +565,7 @@ The control return all possible matches which contains the text typed by the use
 
 
 
-_ContainsOrdinal case_
+ContainsOrdinal case
 
 
 
@@ -587,7 +573,6 @@ _ContainsOrdinal case_
 
 The control return all possible matches which contains the text typed by the user based on Ordinal which is case sensitive.
 {% highlight xml %}
-[XAML]
 
 
 
@@ -611,7 +596,7 @@ The control return all possible matches which contains the text typed by the use
 
 
 
-_ContainsOrdinalCaseSensitive_
+ContainsOrdinalCaseSensitive
 
 
 
@@ -621,7 +606,6 @@ The control return all possible matches which equals the text typed by the user.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -645,13 +629,12 @@ The control return all possible matches which equals the text typed by the user.
 
 
 
-_Equals case_
+Equals case
 
 ### EqualsCaseSensitive
 
 The control return all possible matches which equals the text typed by the user which is culture and case sensitive.
 {% highlight xml %}
-[XAML]
 
 
 
@@ -675,7 +658,7 @@ The control return all possible matches which equals the text typed by the user 
 
 
 
-_EqualsCaseSensitive case_
+EqualsCaseSensitive case
 
 ### EqualsOrdinal
 
@@ -683,7 +666,6 @@ The control return all possible matches which equals the text typed by the user 
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -706,7 +688,7 @@ The control return all possible matches which equals the text typed by the user 
 ![C:/Users/ApoorvahR/Desktop/20.png](Auto-Complete_images/Auto-Complete_img17.png)
 
 
-_EqualsOrdinal case_
+EqualsOrdinal case
 
 ### EqualsOrdinalCaseSensitive
 
@@ -714,7 +696,6 @@ The control return all possible matches which equals the text typed by the user 
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -738,7 +719,7 @@ The control return all possible matches which equals the text typed by the user 
 
 
 
-_EqualsOrdinalCaseSensitive case_
+EqualsOrdinalCaseSensitive case
 
 
 
@@ -748,7 +729,6 @@ The control return all possible matches based on the Filter property. Filter is 
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -769,8 +749,7 @@ The control return all possible matches based on the Filter property. Filter is 
 {% endhighlight %}
 
 
-{% highlight c# %}
-[C#]    
+{% highlight c# %}    
 
 
 
@@ -807,7 +786,6 @@ The control return all possible matches based on the Filter property. Filter is 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 autoComplete.Filter = MyFilter;
 {% endhighlight %}
@@ -817,9 +795,9 @@ autoComplete.Filter = MyFilter;
 
 
 
-_Custom case_
+Custom case
 
-_Note: Append mode always works only with StartsWith behavior. If the typed text is not the same as the start text of any items, it will not append anything even when the auto complete mode is set to Append or SuggestAppend._
+> Note: Append mode always works only with StartsWith behavior. If the typed text is not the same as the start text of any items, it will not append anything even when the auto complete mode is set to Append or SuggestAppend.
 
 
 
@@ -829,7 +807,7 @@ This option allows the control to filter suggestions by ignoring the case. The d
 
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -853,7 +831,7 @@ This option allows the control to filter suggestions by ignoring the case. The d
 
 
 
-_Ignore Case_
+Ignore Case
 
 
 
@@ -862,7 +840,6 @@ _Ignore Case_
 The MinimumPrefixCharacters property allows the control to filter the typed text based on the number of characters.
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -884,7 +861,7 @@ MinimumPrefixCharacters="2"
 ![C:/Users/ApoorvahR/Desktop/24.png](Auto-Complete_images/Auto-Complete_img21.png)
 
 
-_Minimum Prefix Length case_
+Minimum Prefix Length case
 
 ### Popup Delay
 
@@ -892,7 +869,6 @@ PopupDelay specifies the delay after which the suggestion popup should open.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -927,7 +903,6 @@ The default value is bottom.
 The drop-down list will open at top of the control.
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -951,7 +926,7 @@ The drop-down list will open at top of the control.
 
 
 
-_Drop down list opening at the top_
+Drop down list opening at the top
 
 
 
@@ -959,7 +934,6 @@ _Drop down list opening at the top_
 
 The drop-down list will open at bottom of the control.
 {% highlight xml %}
-[XAML]
 
 
 
@@ -982,7 +956,7 @@ The drop-down list will open at bottom of the control.
 ![C:/Users/ApoorvahR/Desktop/26.png](Auto-Complete_images/Auto-Complete_img23.png)
 
 
-_Drop down list opening at the bottom_
+Drop down list opening at the bottom
 
 
 
@@ -990,7 +964,6 @@ _Drop down list opening at the bottom_
 
 The drop-down list will not open.
 {% highlight xml %}
-[XAML]
 
 
 
@@ -1012,7 +985,6 @@ SuggestionBoxPlacement="None"
 ![C:/Users/ApoorvahR/Desktop/27.png](Auto-Complete_images/Auto-Complete_img24.png)
 
 
-_No drop down list_
-
+No drop down list
 
 

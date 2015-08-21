@@ -41,7 +41,7 @@ Sets the data template for the right tooltip.</td></tr>
 </table>
 
 {% highlight html %}
-[XAML]
+
 
 
 

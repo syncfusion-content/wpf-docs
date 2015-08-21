@@ -53,7 +53,7 @@ You can create the SfMap control programmatically through XAML and C#. In the fo
 {% highlight xml %}
 
 
-[XAML]
+
 <Window x:Class="MapApp.MainWindow"         
 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
 xmlns:local="clr-namespace:MapApp"          
@@ -72,7 +72,7 @@ xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Maps;assembly=Syncfusion.SfMa
 
 {% highlight C# %}
 
-[C#]            
+            
 SfMap syncMap = new SfMap();            
 syncMap.EnablePan = true;            
 ShapeFileLayer layer = new ShapeFileLayer();            
@@ -130,7 +130,7 @@ ShapeFilename.shp
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:ShapeFileLayer Uri=”MapApp.ShapeFiles.world1.shp”  x:Name="shapeControl">
 
@@ -159,7 +159,7 @@ By giving the URL path of the file to the URI property, a shapefile is read. Her
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfMap>
 
@@ -209,7 +209,7 @@ The .dbf file that is included in the main shape file, is required to work with 
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -238,7 +238,7 @@ You can customize the shape’s color by using ShapeFill, ShapeStroke and Sh
 
 {% highlight C# %}
 
-[C#]
+
 public class Country : INotifyPropertyChanged    {        public string NAME { get; set; }     
    private Visibility itemsvisibility = Visibility.Visible;        
    public Visibility ItemsVisibility        
@@ -307,7 +307,7 @@ public class Country : INotifyPropertyChanged    {        public string NAME { g
  {% highlight xml %}
 
   
-[XAML]        
+       
 <syncfusion:SfMap >            
 <syncfusion:SfMap.Layers>               
  <syncfusion:ShapeFileLayer EnableSelection="True" ItemsSource="{Binding Countries}" ShapeIDPath="Country" 

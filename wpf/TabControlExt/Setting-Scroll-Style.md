@@ -22,8 +22,6 @@ The following code snippet illustrates how to set the Tab Scroll style as "Exten
 
 
 {% highlight xml %}
-[XAML]
-
 
 
 <!-- Adding TabControlExt -->
@@ -58,7 +56,6 @@ The following code snippet illustrates how to set the Tab Scroll style as "Exten
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -118,7 +115,6 @@ When the TabControlExt has many Tab Items, it is complicated to scroll the Tab I
 
 
 {% highlight c# %}
-[C#]
 
 
 

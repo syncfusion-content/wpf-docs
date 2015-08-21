@@ -21,7 +21,6 @@ Here is the code snippet to set the Tab Scroll Button Visibility as "Visible".
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -49,7 +48,6 @@ Here is the code snippet to set the Tab Scroll Button Visibility as "Visible".
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 

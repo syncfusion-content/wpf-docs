@@ -18,6 +18,7 @@ This section elaborates the possible ways to perform the find and replacement op
 * TextBodyPart
 * Find
 * Replace
+
 ## TextSelection
 
 
@@ -34,15 +35,16 @@ _Public Constructor_
 
 <table>
 <tr>
-<td>
-Constructor Name</td><td>
-Description</td></tr>
+<th>
+Constructor Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 TextSelection.TextSelection(paragraph, startCharPos, endCharPos)</td><td>
 Initializes a new instance of the TextSelection class.</td></tr>
 </table>
-Parameter Description
+
+## Parameter Description
 
 * paragraph: Specifies the paragraph that contains text to be selected.
 * startCharPos: Specifies the starting position of text selection in a paragraph.
@@ -52,17 +54,19 @@ The following code example illustrates how to instantiate a TextSelection class.
 
 
 
-[C#]
+{% highlight  c# %}
 
 
 
 TextSelection selection = new TextSelection(paragraph, 0, 10);
 
+{% endhighlight   %}
+{% highlight  vbnet %}
 
 
-[VB.NET]
 
 Dim selection As New TextSelection(paragraph, 0, 10)
+{% endhighlight  %}
 
 Public Properties
 
@@ -70,9 +74,9 @@ _Public Properties_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description</td></tr>
+<th>
+Property Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Count</td><td>
@@ -88,9 +92,9 @@ _Public Methods_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Description</td></tr>
+<th>
+Method Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 GetAsOneRange</td><td>
@@ -110,27 +114,29 @@ Gets the System.String at the specified index.  </td></tr>
 </table>
 
 
-> _Note: TextSelection and GetAsOneRange should not be used for text replacement._
+> Note: TextSelection and GetAsOneRange should not be used for text replacement.
 
 The following code example illustrates how to use the TextSelection class with the Find Method. Refer to the Find section to know more about Find method.
 
 
 
-[C#]
+{% highlight  c# %}
 
 TextSelection rangesHolder1 = document.Find( "The PlaceHolder1", false, false );
 
+{% endhighlight   %}
+{% highlight  vbnet %}
 
 
-[VB.NET]
 
 Dim rangesHolder1 As TextSelection = document.Find("The PlaceHolder1", False, False)
+{% endhighlight  %}
 
 ## TextBodyPart
 
 TextBodyPart class contains the collection of body items (it means that TextBodyPart can contain paragraphs, tables, and even sections). These text body parts are the members used to construct a word document. TextBodyPart is usually used with the Bookmark Navigator.
 
-> _Note: TextBodyPart contains the copy of objects from the documents (paragraphs, tables, sections, and so on). So, if you modify the content of the TextBodyPart, it will not affect the objects inside the document._
+> Note: TextBodyPart contains the copy of objects from the documents (paragraphs, tables, sections, and so on). So, if you modify the content of the TextBodyPart, it will not affect the objects inside the document.
 
 
 
@@ -140,9 +146,9 @@ _Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructors </td><td>
-Description</td></tr>
+<th>
+Constructors </th><th>
+Description</th></tr>
 <tr>
 <td>
 TextBodyPart.TextBodyPart ()</td><td>
@@ -160,29 +166,32 @@ Initializes a new instance of the TextBodyPart class with respect to TextSelecti
 TextBodyPart.TextBodyPart (WordDocument)</td><td>
 Initializes a new instance of the TextBodyPart class with respect to WordDocument class. Refer to the section WordDocument to know more about this.</td></tr>
 </table>
+
 Public Properties
 
 _Public Properties_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description</td></tr>
+<th>
+Property </th><th>
+Description</th></tr>
 <tr>
 <td>
 BodyItems</td><td>
 Gets the body items.  </td></tr>
 </table>
-## Public Methods
+
+
+Public Methods
 
 _Public Methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 Clear</td><td>
@@ -213,8 +222,7 @@ Closes the TextBodyPart instance.</td></tr>
 The following code example illustrates how to use the TextBodyPart class with the BookmarksNavigator.
 
 
-
-[C#]
+{% highlight  c# %}
 
 WordDocument doc = new WordDocument( "sample.doc" );
 
@@ -224,10 +232,10 @@ bn.MoveToBookmark("bookmark1");
 
 TextBodyPart bodyPart = bn.GetBookmarkContent();
 
+{% endhighlight   %}
 
 
-[VB.NET]
-
+{% highlight  vbnet %}
 Dim doc As WordDocument = New WordDocument("sample.doc")
 
 Dim bn As BookmarksNavigator = New BookmarksNavigator(doc)
@@ -235,6 +243,7 @@ Dim bn As BookmarksNavigator = New BookmarksNavigator(doc)
 bn.MoveToBookmark("bookmark1")
 
 Dim bodyPart As TextBodyPart = bn.GetBookmarkContent()
+{% endhighlight   %}
 
 ## TextBodySelection
 
@@ -254,7 +263,8 @@ Text-NEED TO COPY
 </td><td>
 </td></tr>
 </table>
- Another text-THIS TEXT 
+
+### Another text-THIS TEXT 
 
 Now, you may want to copy the text "NEED TO COPY", Table and "THIS TEXT" and paste in another location.
 
@@ -278,19 +288,20 @@ The following code example shows how to select particular items from the above t
 
 
 
-[C#]
+{% highlight  c# %}
 
 TextBodySelection bodySelection = new TextBodySelection( body, 0, 2, 1, 1 );
 
+{% endhighlight   %}
+{% highlight  vbnet %}
 
 
-[VB.NET]
 
 Dim bodySelection As New TextBodySelection(body, 0, 2, 1, 1)
 
+{% endhighlight   %}
 
-
-Parameter Description
+### Parameter Description
 
 * body: Denotes the text body.
 * 0: Denotes the paragraph starting index.
@@ -304,9 +315,9 @@ _Public Constructors_
 
 <table>
 <tr>
-<td>
-Constructors </td><td>
-Description</td></tr>
+<th>
+Constructors </th><th>
+Description</th></tr>
 <tr>
 <td>
 TextBodySelection.TextBodySelection (ITextBody, int, int, int, int)</td><td>
@@ -324,9 +335,9 @@ _Public Properties_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 ItemEndIndex</td><td>
@@ -354,8 +365,8 @@ You can utilize the Copy and Paste methods of TextBodyPart of the TextBody
 
 
 
-[C#]
 
+{% highlight  c# %}
 
 
 //Creates TextBodySelection and selects the items of interest.
@@ -377,8 +388,9 @@ replacePart.Copy(textSel);
 replacePart.PasteAt(txtbdy,itemIndex);
 
 
+{% endhighlight   %}
+{% highlight  vbnet %}
 
-[VB.NET]
 
 
 
@@ -399,6 +411,7 @@ replacePart.Copy(textSel)
 'Pastes the copied text at the end of the text body.
 
 replacePart.PasteAt(txtbdy, itemIndex)
+{% endhighlight   %}
 
 ## Find
 
@@ -411,14 +424,14 @@ Find option is a common feature in most applications. Essential DocIO provides t
 * FindSingleLine
 * FindNextSingleLine
 
-Find and FindAll Methods
+### Find and FindAll Methods
 
 Find method is used to find an entry with a specified text of regular expression in the Word document and it has two overloads:
 
 * document.Find(RegularExpression.Regex pattern): Finds text based on the given regex pattern.
 * document.Find(string givenString, bool wholeWord, bool caseSensitive): Finds given string that matches the case and whole word. Please refer to the following parameters description.
 
-Parameter Description
+### Parameter Description
 
 * givenString: Text to find.
 * caseSensitive: If this option is set to _true_, only strings that match the case of the whole word will be returned.
@@ -426,16 +439,17 @@ Parameter Description
 
 
 
-[C#]
+{% highlight  c# %}
 
 TextSelection rangesHolder1 = document.Find( "The PlaceHolder1", false, false );
+{% endhighlight   %}
+{% highlight  vbnet %}
 
 
 
-[VB.NET]
 
 Dim rangesHolder1 As TextSelection = document.Find("The PlaceHolder1", False, False)
-
+{% endhighlight   %}
 
 
 FindAll method also finds the given string in a Word document, but the difference is that it returns all possible occurrences of the given string:
@@ -445,26 +459,27 @@ FindAll method also finds the given string in a Word document, but the differenc
 
 
 
-[C#]
 
+{% highlight  c# %}
 TextSelection[] rangesHolder1 = document.FindAll( "The PlaceHolder1", false, false );
+{% endhighlight   %}
+{% highlight  vbnet %}
 
 
 
-[VB.NET]
 
 Dim rangesHolder1 As TextSelection() = document.Find("The PlaceHolder1", False, False)
+{% endhighlight   %}
 
 
-
-FindNext Method
+### FindNext Method
 
 You can find a particular string from a paragraph region or table by using the FindNext method. It has two overloads.
 
 * document.FindNext(TextBodyItem startBodyItem, RegularExpression.Regex pattern): Finds the next entry based on the given regex pattern from the start text body item.
 * Document.FindNext(TextBodyItem startBodyItem, string givenString, bool caseSensitive, bool wholeWord): Finds the next occurrence of the given string that matches the case and whole word.
 
-Parameter Description
+### Parameter Description
 
 * givenString: Text to find.
 * caseSensitive: If this option is set to _true_, only strings that match the case of the whole word will be returned.
@@ -474,7 +489,7 @@ The following code example illustrates the usage of the FindNext method.
 
 
 
-[C#]
+{% highlight  c# %}
 
 //Finds and replaces a particular table.
 
@@ -501,8 +516,9 @@ WTextRange range1 = sel1.GetAsOneRange();
 range1.Text = "New Text";
 
 
+{% endhighlight   %}
+{% highlight  vbnet %}
 
-[VB.NET]
 
 
 
@@ -528,15 +544,15 @@ Dim range1 As WTextRange = sel1.GetAsOneRange()
 
 range1.Text = "New Text"
 
+{% endhighlight   %}
 
-
-ResetFindNext Method
+### ResetFindNext Method
 
 This method simply resets the FindNext method. The following code example illustrates this.
 
 
+{% highlight  c# %}
 
-[C#]
 
 
 
@@ -544,13 +560,13 @@ document.ResetFindNext();
 
 
 
-[VB.NET]
+
 
 document.ResetFindNext()
 
+{% endhighlight   %}
 
-
-FindSingleLine and FindNextSingleLine Methods
+### FindSingleLine and FindNextSingleLine Methods
 
 FindSingleLine method is used to find an entry in a document with a specified text of regular expression, including the newline or carriage return. This works in the same way as the SingleLine mode of .NET Regex. Note that the Find method will find the text only in a single paragraph without any newlines or carriage return considerations.
 
@@ -558,9 +574,9 @@ _Public Methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 FindSingleLine(Regex)</td><td>
@@ -578,9 +594,9 @@ _Public Methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 FindNextSingleLine(TextBodyItem, Regex)</td><td>
@@ -596,7 +612,7 @@ The following code example illustrates how to find a string in the SingleLine mo
 
 
 
-[C#]
+{% highlight  c# %}
 
 WordDocument doc = new WordDocument("Sample.doc");
 
@@ -616,8 +632,9 @@ TextSelection[] sel = doc.FindNextSingleLine(table as TextBodyItem, expr);
 
 
 
-[VB.NET]
 
+{% endhighlight   %}
+{% highlight  vbnet %}
 
 
 Dim doc As New WordDocument("Sample.doc")
@@ -635,6 +652,7 @@ Dim expr As New Regex(search, RegexOptions.Singleline)
 Dim tab As WTable = TryCast(doc.Sections(0).Tables(0), WTable)
 
 Dim sel As TextSelection() = doc.FindNextSingleLine(TryCast(tab, TextBodyItem), expr)
+{% endhighlight  %}
 
 ## Replace
 
@@ -643,7 +661,7 @@ This feature provides support to replace a particular string with another string
 * Replace
 * ReplaceSingleLine
 
-Replace Method
+### Replace Method
 
 Replace method provides support to replace text in the Word document. The following are the possible input parameters of the Replace method:
 
@@ -668,13 +686,13 @@ The following are the overloads of the Replace method:
 
 
 
-[C#]
+
 
 
 
 Example 1:
 
-
+{% highlight  c# %}
 
 //This sample replaces the specified regular expression with a Picture.
 
@@ -695,12 +713,12 @@ para.Items.Add( pict );
 textBodyPart.BodyItems.Insert( 0, para );
 
 doc.Replace( new Regex( "A" ), textBodyPart );
-
+{% endhighlight   %}
 
 
 Example 2:
 
-
+{% highlight  c# %}
 
 WordDocument docSource1 = new WordDocument();
 
@@ -736,12 +754,12 @@ docTemplate.Replace( new Regex( "PlaceHolder2" ), rangesHolder2 );
 
 
 
-[VB.NET]
 
+{% endhighlight   %}
 
 
 Example 1:
-
+{% highlight  vbnet %}
 
 
 'This sample replaces the specified regular expression with a Picture.
@@ -764,11 +782,12 @@ textBodyPart.BodyItems.Insert(0, para)
 
 doc.Replace(New Regex("A"), textBodyPart) 
 
+{% endhighlight   %}
 
 
 Example 2:
 
-
+{% highlight  vbnet %}
 
 Dim docSource1 As WordDocument = New WordDocument()
 
@@ -798,25 +817,25 @@ docTemplate.Replace(New Regex("PlaceHolder1"), rangesHolder1)
 
 docTemplate.Replace(New Regex("PlaceHolder2"), rangesHolder2)
 
-
+{% endhighlight   %}
 
 If you want to replace the first occurrence of a particular text alone, which appears more than once, you must set doc.ReplaceFirst property to _true_.
 
 
 
-[C#]
+{% highlight  c# %}
 
 doc.ReplaceFirst = true;
 
 
 
-[VB.NET]
+
 
  doc.ReplaceFirst = true;
 
+{% endhighlight   %}
 
-
-ReplaceSingleLine Method
+### ReplaceSingleLine Method
 
 It is also possible to replace a string with .NET Regex SingleLine mode by using the ReplaceSingleLine method of DocIO. You can find the specified text of regular expression including the newline or carriage return and replace it with the given text.
 
@@ -826,9 +845,9 @@ _Public Methods_
 
 <table>
 <tr>
-<td>
-Methods</td><td>
-Description</td></tr>
+<th>
+Methods</th><th>
+Description</th></tr>
 <tr>
 <td>
 ReplaceSingleLine(Regex, TextBodyPart)</td><td>
@@ -860,7 +879,7 @@ The following code example illustrates the SingleLine mode replacement.
 
 
 
-[C#]
+{% highlight  c# %}
 
  WordDocument doc = new WordDocument("sample.doc");
 
@@ -877,9 +896,9 @@ Regex expr = new Regex(search, RegexOptions.Singleline);
 doc.ReplaceSingleLine(expr, "test");
 
 
+{% endhighlight   %}
 
-[VB.NET]
-
+{% highlight  vbnet %}
 
 
 Dim doc As New WordDocument("sample.doc")
@@ -896,5 +915,5 @@ Dim expr As New Regex(search, RegexOptions.Singleline)
 
 doc.ReplaceSingleLine(expr, "test")
 
-
+{% endhighlight   %}
 

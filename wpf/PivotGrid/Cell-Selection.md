@@ -23,7 +23,6 @@ The following code snippets show how to create a PivotGrid and to specify Cell S
 
 {% highlight xml %} 
 
-[XAML]
 
 <!--Adding PivotGrid and Enabling Cell Selection-->
 
@@ -66,7 +65,6 @@ The following code snippets show how to create a PivotGrid and to specify Cell S
 
 {% highlight C# %}  
 
-[C#]
 
 // Instantiating PivotGridControl.
 
@@ -100,7 +98,6 @@ this.pivotGridControl1.AllowSelection = false;
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 

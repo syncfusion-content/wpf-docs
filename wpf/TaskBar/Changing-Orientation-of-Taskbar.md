@@ -20,7 +20,6 @@ Use the below code snippet to set the orientation.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -74,7 +73,6 @@ Specify and customize the group margin.</TextBlock>
 
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -181,7 +179,6 @@ The following code snippet illustrates handling the GroupOrientationChanged even
 
 
 {% highlight c# %}
-[C#]
 
 
 

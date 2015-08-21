@@ -9,14 +9,14 @@ documentation: ug
 
 # Scale Tick Mark Settings
 
-### Quantitative scale is displayed with two types of ticks: 
+## Quantitative scale is displayed with two types of ticks: 
 
 * Major ticks, the primary scale indicators.
 * Minor ticks, the secondary scale indicators that fall in between the major ticks.
 
 
 
-### Customizing Ticks:
+## Customizing Ticks:
 
 The stroke of the major and minor ticks is customized by setting the MajorTickStroke and MinorTickStroke properties. The size can be modified by using the MajorTickSize and MinorTickSize properties. By setting MajorTickStrokeThickness and MinorTickStrokeThickness, the stroke’s thickness is customized.
 
@@ -24,7 +24,7 @@ The stroke of the major and minor ticks is customized by setting the MajorTickSt
 
 ### Code Example:
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -47,7 +47,7 @@ The stroke of the major and minor ticks is customized by setting the MajorTickSt
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
   SfBulletGraph bulletgraph = new SfBulletGraph();
 
@@ -84,10 +84,10 @@ The stroke of the major and minor ticks is customized by setting the MajorTickSt
 ![C:/Users/Giftline/Desktop/New folder/7.jpg](Concept-and-Features_images/Concept-and-Features_img9.png)
 
 
+_Customizing Ticks in a Bullet Graph_
 
 
-
-### TickPosition:
+## TickPosition:
 
 The ticks in the scale can be placed above or below the ranges of the quantitative scale by choosing the options available in the TickPosition property. 
 
@@ -100,7 +100,7 @@ They are:
 ### Code Example:
 
 {% highlight html %}
-[XAML]
+
 
         <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -124,7 +124,7 @@ They are:
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -167,3 +167,5 @@ They are:
 
 
 ![](Concept-and-Features_images/Concept-and-Features_img10.png)
+
+_Customizing Tick Position of Bullet Graph_

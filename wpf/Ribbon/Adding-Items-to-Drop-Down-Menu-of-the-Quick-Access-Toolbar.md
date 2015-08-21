@@ -13,7 +13,7 @@ You can add items to the drop-down menu of the Quick Access Toolbar by using the
 
 {% highlight xml %}
 
-    [XAML]
+    
 
 
 
@@ -41,7 +41,7 @@ You can also dynamically add items to the drop-down menu of the Quick Access Too
 
 {% highlight c# %}
  
-    [C#]
+    
 
 
 

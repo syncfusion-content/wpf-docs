@@ -13,14 +13,10 @@ DoubleTextBox accepts null values. To enable the null option you have to set the
 
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                             UseNullOption="True" NullValue="1"/> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %} Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new                           Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = 1; {% endhighlight %} </td></tr>
-</table>
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                             UseNullOption="True" NullValue="1"/> {% endhighlight %} 
+
+{% highlight C# %} Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new                           Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = 1; {% endhighlight %} 
+
 
 
 In this sample, the NullValue (NullValue = 1) is set to the Value property of the DoubleTextBox because the default value of the Value property is null.
@@ -33,14 +29,10 @@ In this sample, the NullValue (NullValue = 1) is set to the Value property of th
 
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                             UseNullOption="True" NullValue="{x:Null}"/> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %} Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new                            Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = null; {% endhighlight %} </td></tr>
-</table>
+{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="150"                             UseNullOption="True" NullValue="{x:Null}"/> {% endhighlight %} 
+
+{% highlight C# %} Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new                            Syncfusion.Windows.Shared.DoubleTextBox();doubleTextBox.Width = 150;doubleTextBox.Height = 25;doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = null; {% endhighlight %} 
+
 
 
 In this sample, the NullValue (NullValue = null) is set to the Value property of the DoubleTextBox. (Default value of the Value property is null).

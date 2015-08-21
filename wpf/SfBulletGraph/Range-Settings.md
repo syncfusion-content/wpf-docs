@@ -19,7 +19,7 @@ The width of the ranges can be customized by setting the QualitativeRangesSize p
 
 ### Code Example:
 {% highlight html %}
-[XAML]
+
 
         <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -59,7 +59,7 @@ The width of the ranges can be customized by setting the QualitativeRangesSize p
 
 {% endhighlight %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -93,7 +93,7 @@ The width of the ranges can be customized by setting the QualitativeRangesSize p
 
 ![C:/Users/Giftline/Desktop/New folder/5.jpg](Concept-and-Features_images/Concept-and-Features_img7.png)
 
-
+_Customizing Ranges of Bullet Graph_
 
 ## Binding RangeStroke to Ticks and Labels:
 
@@ -101,7 +101,7 @@ By setting BindWithRangeStrokeToLabels, the stroke of the labels is set related 
 
 ### Code Example:
 {% highlight html %}
-[XAML]
+
 
         <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -145,7 +145,7 @@ By setting BindWithRangeStrokeToLabels, the stroke of the labels is set related 
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -182,7 +182,7 @@ By setting BindWithRangeStrokeToLabels, the stroke of the labels is set related 
 ![C:/Users/Giftline/Desktop/New folder/6.jpg](Concept-and-Features_images/Concept-and-Features_img8.png)
 
 
-
+_Applying Range Stroke to Ticks and Labels_
 
 
 

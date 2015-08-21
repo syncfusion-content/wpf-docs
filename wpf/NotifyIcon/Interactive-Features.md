@@ -24,7 +24,7 @@ The following code snippet is used to set this property.
 
 {%highlight xml%}
 
-[XAML]
+
 <!--BalloonTipHeaderVisibility="Visible" -->
 <syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify 
 Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipHeaderVisibility="Visible" 
@@ -38,7 +38,7 @@ ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/>
 {%endhighlight%}
 
 {%highlight c#%}
-[C#]
+
 //BalloonTipHeaderVisibility="Visible"
 notifyIcon.BalloonTipHeaderVisibility = Visibility.Visible;
 //BalloonTipHeaderVisibility="Collapsed"
@@ -62,7 +62,7 @@ BalloonTipText property is used to set the text that should be displayed in the 
 
 
 {%highlight xml%}
-[XAML]
+
 
 <syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Virus Scan has been 
 completed" BalloonTipTitle="AntiVirus Software" ShowBalloonTipTime="1000" 
@@ -72,7 +72,7 @@ HideBalloonTipTime="1000"/>
 
 {%highlight c#%}
 
-[C#]
+
 notifyIcon.BalloonTipText = "Virus Scan has been completed";
 notifyIcon.BalloonTipTitle = "AntiVirus Software";
 {%endhighlight%}
@@ -99,7 +99,7 @@ The following code snippet is used to set this property.
 
 
 {%highlight xml%}
-[XAML]
+
 <!-- BalloonTipIcon="Warning" -->
 <syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify 
 Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipIcon="Warning" 
@@ -108,7 +108,7 @@ ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/>
 {%endhighlight%}
 
 {%highlight c#%}
-[C#]
+
 //BalloonTipIcon="Warning"
 notifyIcon.BalloonTipIcon = BalloonTipIcon.Warning;
 {%endhighlight%}
@@ -140,7 +140,7 @@ The following code snippet is used to set these properties.
 
 
 {%highlight xml%}
-[XAML]
+
 <!-- For Fade -->
 <syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify 
 Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipAnimationEffect="Fade"  
@@ -154,7 +154,7 @@ ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/>
 {%endhighlight%}
 
 {%highlight c#%}
-[C#]
+
 NotifyIcon notifyIcon = new NotifyIcon();
 notifyIcon.BalloonTipText = "Custom Notify Icon is Available";
 notifyIcon.BalloonTipTitle = "Default NotifyIcon";
@@ -176,7 +176,7 @@ The position where the NotifyIcon is to be displayed is specified using the prop
 
 
 {%highlight xml%}
-[XAML]
+
 <syncfusion:NotifyIcon Name="notifyIcon" BalloonTipLocation="500,500" BalloonTipText="Custom Notify 
 Icon is Available"BalloonTipTitle="Default NotifyIcon" 
 ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/>
@@ -184,7 +184,7 @@ ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/>
 {%endhighlight%}
 
 {%highlight c#%}
-[C#]
+
 defaults.BalloonTipLocation = new Point(500, 500);
 
 {%endhighlight%}
@@ -201,7 +201,7 @@ The shape for the NotifyIcon is set by using the BalloonTipShape property. The f
 
 
 {%highlight xml%}
-[XAML]
+
 <!-- Rectangle Shape -->
 <syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify 
 Icon is Available"  BalloonTipTitle="Default NotifyIcon" BalloonTipShape="Rectangle"
@@ -220,7 +220,7 @@ ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/>
 {%endhighlight%}
 
 {%highlight c#%}
-[C#]
+
 // Rectangle Shape
 notifyIcon.BalloonTipShape = BalloonTipShapes.Rectangle;
 //RoundedRectangle Shape

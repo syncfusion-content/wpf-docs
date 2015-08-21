@@ -11,14 +11,14 @@ documentation: ug
 
 This section explains you how to add Columns, ways to create Column, different types of Column, and Column’s features like Column Sizer, Hiding, Freezing, Resizing Columns, and Drag and Drop support.
 
-### Add Columns
+## Add Columns
 
 The DataGrid control allows you to add Columns in two ways:
 
 * Automatically generate the Columns based on the underlying collection.
 * Manually define the columns in XAML or C#.
 
-### Automatically Generate Columns
+## Automatically Generate Columns
 
 The following is a list of properties associated with generating columns.
 
@@ -33,11 +33,11 @@ SfDataGrid.AutoGenerateColumnsMode: It decides a way to create columns when Auto
 
 The DataGrid control by default creates columns for every public property automatically based on the underlying collection that bounds to the DataGrid using ItemsSource property. In this case, AutoGenerateColumns property value is set to ‘true’ and AutoGenerateColumnsMode property value is AutoGenerateColumnsMode.Reset.
 
-> _Note: When you change items source for SfDataGrid during run time, then the columns are generated on the basis of option set for AutoGenerateColumns Mode._
+> Note: When you change items source for SfDataGrid during run time, then the columns are generated on the basis of option set for AutoGenerateColumns Mode.
 
 The following is the event that is associated with AutoGeneratingColumns.
 
-### AutoGeneratingColumn Event
+## AutoGeneratingColumn Event
 
 This event rises when the AutoGenerateColumns property values is set to ‘true’. This event receives two arguments namely sender that handles SfDataGrid and AutoGeneratingColumnArgs as objects.
 
@@ -48,18 +48,18 @@ The AutoGeneratingColumnArgs object contains the following property:
 
 You can use this event where you want to manipulate columns (apply filtering, sorting, grouping, editing, header text) when AutoGenerateColumns is set to ‘true’.
 
-### DataAnnotation with AutoGenerateColumns
+## DataAnnotation with AutoGenerateColumns
 
 SfDataGrid supports DataAnnotations for customizing columns, when AutoGenerateColumns set to ‘true’. When [DisplayAttribute](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute(v=vs.110).aspx), [DataTypeAttribute](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.datatypeattribute(v=vs.110).aspx), [EditableAttribute](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.editableattribute.aspx) and [BindableAttribute](http://msdn.microsoft.com/en-us/library/system.componentmodel.bindableattribute.aspx) are specified in model class, columns are generated based on the mentioned attributes that supports DataAnnotation of SfDataGrid.
 
-> _Note: When AutoGenerateColumns property value is set to ‘false’, you can ignore mentioned DataAnnotaions attributes._  
+> Note: When AutoGenerateColumns property value is set to ‘false’, you can ignore mentioned DataAnnotaions attributes. 
 
 The following example illustrates this scenario. For data collection use OrderInfoRepositiory.cs, file.
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -81,7 +81,7 @@ In the following code example Display keyword mentions different attributes to c
 {% highlight C# %}
 
 
-[C#]
+
 
 public class OrderInfo
 
@@ -198,12 +198,11 @@ The following screenshot renders you the output.
 ![](Features_images/Features_img40.png)
 
 
-
 _DataGrid with Filter in Country column_
 
 You can see that in Country column it has Filtering enabled in its header.Since AutoGenerateFilter is set to ‘true’, ShipCity have order -2 that displays before CustomerID. When AutoGenerateField is set to ‘false’, OrderID column is not displayed.
 
-### Manually Generate Columns
+## Manually Generate Columns
 
 As mentioned in the second case, the DataGrid control enables you to define columns you want to display in the Grid. You can define the columns by adding a column to the SfDataGrid.Columns collection. The case where you want only the columns manually defined in view, you can set AutoGenerateColumns property value to ‘false’. There are different GridColumns available in SfDataGrid. You can select any column as follows – GridTextColumn, GridNumericColumn, GridCurrencyColumn, GridPercentColumn, GridMaskColumn, GridTimeSpanColumn, etc.  Each column has its own property to show its uniqueness in view and edit mode.
 
@@ -212,7 +211,7 @@ The following code example defines manually to create columns using XAML.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -249,7 +248,7 @@ The following code example defines manually create columns through C#.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -273,21 +272,21 @@ void sfdatagrid_Loaded(object sender, RoutedEventArgs e)
 
 
 
-> _Note: The case where you want to display column in both ways: you can use SfDataGrid.AutoGenerateColumnsMode. to define columns collection and remaining from items Source._
+> Note: The case where you want to display column in both ways: you can use SfDataGrid.AutoGenerateColumnsMode. to define columns collection and remaining from items Source.
 
-### Column Properties
+## Column Properties
 
 GridColumn is the base column type of all the columns in the DataGrid. The most important GridColumn properties are listed in the following table:
 
-#### _GridColumn property table_
+ _GridColumn property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 GridColumn.ActualWidth</td><td>
@@ -471,19 +470,19 @@ Double.NaN</td></tr>
 </table>
 
 
-> _Note: GridTextColumnBase is the abstract class that is derived from GridColumn. GridTextColumn, GridMaskColumn and GridTimeSpanColumn are derived from GridTextColumnBase. GridEditorColumn is another abstract column that is derived from GridColumn. GridNumericColumn, GridCurrencyColumn, GridDateTimeColumn and GridPercentColumn are derived from GridEditorColumn._
+> Note: GridTextColumnBase is the abstract class that is derived from GridColumn. GridTextColumn, GridMaskColumn and GridTimeSpanColumn are derived from GridTextColumnBase. GridEditorColumn is another abstract column that is derived from GridColumn. GridNumericColumn, GridCurrencyColumn, GridDateTimeColumn and GridPercentColumn are derived from GridEditorColumn.
 
 The following provides the list of properties that supports the columns having GridTextColumnBase as Base Class.
 
-#### _GridTextColumnBase property table_
+_GridTextColumnBase property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 GridTextColumnBase.TextTrimming</td><td>
@@ -503,21 +502,22 @@ TextDecorations</td><td>
 The property that customizes the text.</td><td>
 new TextDecorationCollection()</td></tr>
 </table>
-### CellTemplate
+
+## CellTemplate
 
 CellTemplate support is used to customize columns in display mode that present cells with DataTemplate. You can load standard controls or customized control in display mode to all columns like template column. In edit mode GridColumn loads it default editor.
 
-#### Properties
+Properties
 
-##### _CellTemplate Properties_
+_CellTemplate Properties_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 CellTemplate</td><td>
@@ -544,7 +544,7 @@ The following code example illustrates that how to set CellTemplate in Numeric C
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -588,8 +588,7 @@ The above XAML code renders the following output.
 ![](Features_images/Features_img41.png)
 
 
-
-### _Cell Template_
+_Cell Template_
 
 When you use CellTemplate for all columns, you can define DataTemplate at once and can bind to different columns with the underlying data to the DataTemplate regardless of MappingName. The property that allows to reuse the DataTemplate to any number of columns with DataTemplate key is SetCellBoundValue. When you enable SetCellBoundValue, it sets the DataContextHelper as DataContext to CellTemplate. DataContextHelper contains the following properties,
 
@@ -604,7 +603,7 @@ The following code example illustrates on how to use the above property.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -676,7 +675,7 @@ Create required templates with static keys.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -705,7 +704,7 @@ Define the templates based on values to be applied in TemplateSelector. The foll
 {% highlight C# %}
 
 
-[C#]
+
 
 
 
@@ -817,7 +816,7 @@ DataContextHelper is the helper class that contains Record and value property to
 
 
 
-[XAML]
+
 
 
 
@@ -855,16 +854,16 @@ The above code renders the following output.
 
  _CellTemplateSelector_
 
-##### Limitation
+### Limitation
 
 1. When you load Editor directly to CellTemplate (Textbox – MS, DoubleTextBox, PercentTextBox, and CurrencyTextBox - Syncfusion) in Template Column without Edit Template the grid cell cannot change to edit mode. You can just edit a value with loaded editor. 
 2. GridImageColumn, GridCheckBoxColumn and GridHyperLinkColumn does not contain CellTemplate support. You can check [here](http://help.syncfusion.com/ug/wpf/default.htm) for more reference.
 
-### Column types
+## Column types
 
 Each column has its own functionalities as the columns name implies. You can use any column based on your requirements. The following statements describes you the purpose column.
 
-#### _List of Columns table_
+_List of Columns table_
 
 <table>
 <tr>
@@ -925,7 +924,7 @@ GridMultiColumnDropdownList</td><td>
 When you want load multi columns within a drop down you can use this column.</td></tr>
 </table>
 
-#### GridTextColumn
+### GridTextColumn
 
 GridTextColumn is derived from GridTextColumnBase that is derived from GridColumn and hence it inherits all the properties of GridColumn.  GridTextColumn displays and allows editing of text data.  Each of the cells in GridTextColumn displays text according to the Mapping Name it is binded. 
 
@@ -939,7 +938,6 @@ The following code example creates GridTextColumn.
 {% highlight xml %}
 
 
-[XAML]
 
 
 
@@ -950,7 +948,7 @@ The following code example creates GridTextColumn.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -960,7 +958,7 @@ sfdatagrid.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
 
 
 
-##### Data Formatting in GridTextColumn
+### Data Formatting in GridTextColumn
 
 To format the value displayed in the GridColumn, you can use StringFormat Property in the DisplayBinding when you want the value to be formatted in View Mode and you can use ValueBinding to set the Edit mode binding.
 
@@ -969,7 +967,7 @@ The following code example shows you how to declare a GridTextColumn in XAML.
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfDataGrid.Columns>
 
@@ -1010,7 +1008,7 @@ You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fb
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -1022,19 +1020,19 @@ StringFormat='{}{0:P}'}"      <!--  To Format as Percent  -->
 
 {% endhighlight %}
 
-#### GridNumericColumn
+### GridNumericColumn
 
 GridNumericColumn is derived from GridEditorColumn that is derived from GridTextColumn, inheriting its properties and has few additional properties. GridNumericColumn loads DoubleTextBox for editing. In addition to the GridColumn’s properties, GridNumericColumn supports the following list of properties:
 
-#####  _GridNumericColumn property table_
+ _GridNumericColumn property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 AllowScrollingOnCircle</td><td>
@@ -1109,7 +1107,7 @@ The following code example illustrates how to use GridNumericColumn.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:GridNumericColumn AllowScrollingOnCircle="False"
 
@@ -1128,7 +1126,7 @@ The following code example illustrates how to use GridNumericColumn.
 
 {% highlight C#%}
 
-[C#]
+
 
 sfdatagrid.Columns.Add(new GridNumericColumn() { 
 
@@ -1158,19 +1156,19 @@ The following screenshot illustrates the output.
 
 _DataGrid with GridNumericColumn_
 
-#### GridCurrencyColumn
+### GridCurrencyColumn
 
 GridCurrencyColumn is derived from GridEditorColumn that is derived from GridTextColumn, inheriting its properties and has few additional properties. GridCurrencyColumn loads CurrencyTextBox for editing. In addition to the GridColumn’s properties, GridCurrencyColumn supports the following list of properties:
 
-##### _GridCurrencyColumn property table_
+ _GridCurrencyColumn property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 AllowScrollingOnCircle</td><td>
@@ -1258,7 +1256,7 @@ The following code example illustrates how to use GridCurrencyColumn.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:GridCurrencyColumn AllowScrollingOnCircle="False"
 
@@ -1277,7 +1275,7 @@ The following code example illustrates how to use GridCurrencyColumn.
 {% highlight C# %}
 
 
-[C#]
+
 
 sfdatagrid.Columns.Add(new GridCurrencyColumn(){
 
@@ -1303,19 +1301,19 @@ The following screenshot illustrates the output.
 
 _DataGrid with GridCurrencyColumn_
 
-#### GridPercentColumn
+### GridPercentColumn
 
 GridPercentColumn is derived from GridEditorColumn that is derived from GridTextColumn, inheriting its properties and has few additional properties. GridPercentColumn loads PercentTextBox for editing. In addition to the GridColumn’s properties, GridPercentColumn supports the following list of properties:
 
-##### _GridPercentColumn property table_
+_GridPercentColumn property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 AllowScrollingOnCircle</td><td>
@@ -1409,7 +1407,7 @@ The following code example illustrates how to use GridPercentColumn.
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:GridPercentColumn HeaderText="Discount"
 
@@ -1427,7 +1425,7 @@ The following code example illustrates how to use GridPercentColumn.
 {% highlight C#%}
 
 
-[C#]
+
 
 sfdatagrid.Columns.Add(new GridPercentColumn(){
 
@@ -1454,19 +1452,19 @@ The following screenshot illustrates the output.
 
 _DataGrid with GridPercentColumn_
 
-#### GridMaskColumn
+### GridMaskColumn
 
 GridMaskColumn is derived from GridTextColumnBase that is derived from GridColumn, inheriting its properties and has some additional properties. GridMaskColumn uses MaskTextBox for editing. GridMaskColumn supports the following list of properties:
 
-#####  _GridMaskColumn property table_
+  _GridMaskColumn property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 SelectTextOnFocus</td><td>
@@ -1518,7 +1516,7 @@ String.Empty</td></tr>
 </table>
 
 
-> _Note: Mask definition is mandatory to use Date separator, Time Separator, Prompt Char and Decimal Separator._
+> Note: Mask definition is mandatory to use Date separator, Time Separator, Prompt Char and Decimal Separator.
 
 The following code example illustrates how to use GridMaskColumn.
 
@@ -1526,7 +1524,7 @@ The following code example illustrates how to use GridMaskColumn.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:GridMaskColumn HeaderText="Contact Number"
 
@@ -1543,7 +1541,7 @@ The following code example illustrates how to use GridMaskColumn.
 
 {% highlight C#%}
 
-[C#]
+
 
 sfdatagrid.Columns.Add(new GridMaskColumn(){
 
@@ -1567,19 +1565,19 @@ The following screenshot illustrates the output.
 
 _DataGrid with GridMaskColumn_
 
-#### GridTimeSpanColumn
+### GridTimeSpanColumn
 
 GridTimeSpanColumn is derived from GridTextColumnBase that is derived from GridColumn, inheriting its properties and has some additional properties. GridTimeSpanColumn uses TimeSpanEdit for editing. GridTimeSpanColumn supports the following list of properties:
 
-##### _GridTimeSpanColumn property table_
+ _GridTimeSpanColumn property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 AllowNull</td><td>
@@ -1625,7 +1623,7 @@ The following code example illustrates how to use GridTimeSpanColumn.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:GridTimeSpanColumn AllowNull="True"
 
@@ -1640,7 +1638,7 @@ The following code example illustrates how to use GridTimeSpanColumn.
 
 {% highlight C#%}
 
-[C#]
+
 
 sfdatagrid.Columns.Add(new GridTimeSpanColumn() { 
 
@@ -1664,19 +1662,19 @@ The following screenshot illustrates the output.
 
 _DataGrid with GridTimeSpanColumn_
 
-#### GridDateTimeColumn
+### GridDateTimeColumn
 
 GridDateTimeColumn derives from GridTextColumnBase that derives from GridColumn inheriting its properties and includes other properties as follows. GridDateTimeColumn uses DateTimeEdit for editing. GridDateTimeColumn supports the following list of properties:
 
-##### _GridDateTimeColumn property table_
+ _GridDateTimeColumn property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 AllowScrollingOnCircle</td><td>
@@ -1770,14 +1768,14 @@ False</td></tr>
 </table>
 
 
-> _Note: NullValue is displayed when AllowNullValue is set to ‘true’. NullValue takes higher priority than NullText._
+> Note: NullValue is displayed when AllowNullValue is set to ‘true’. NullValue takes higher priority than NullText.
 
 The following code example illustrates how to use GridDateTimeColumn.
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:GridDateTimeColumn AllowScrollingOnCircle="True"
 
@@ -1794,7 +1792,7 @@ The following code example illustrates how to use GridDateTimeColumn.
 
 {% highlight C#%}
 
-[C#]
+
 
 sfdatagrid.Columns.Add(new GridDateTimeColumn() { 
 
@@ -1822,21 +1820,21 @@ The following screenshot illustrates the output.
 
 _DataGrid with GridDateTimeColumn_
 
-#### GridComboBoxColumnn
+### GridComboBoxColumnn
 
 GridComboBoxColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn. GridComboBoxColumn provides combobox for editing cell values and it displays a set of predefined values that is set to ItemSource in dropdown list.
 
-##### To use GridComboBoxColumn, you can refer the following:
+To use GridComboBoxColumn, you can refer the following:
 
  _GridComboBoxColumn property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 SelectedValuePath</td><td>
@@ -1876,12 +1874,12 @@ Null</td></tr>
 </table>
 
 
-##### The following code example displays how to use GridComboBoxColumn.
+The following code example displays how to use GridComboBoxColumn.
 
 
 {% highlight xml %}
 
- [XAML]
+ 
 
 <syncfusion:SfDataGrid.Columns>
 
@@ -1905,7 +1903,7 @@ Null</td></tr>
 
 {% highlight C#%}
 
-[C#]
+
 
 sfdatagrid.Columns.Add(new GridComboBoxColumn() { 
 
@@ -1932,7 +1930,7 @@ The following code example shows how to use ItemTemplate in GridComboBoxcolumn.
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -1970,27 +1968,28 @@ The event associated with this column is CurrentCellDropDownSelectionChanged Eve
 
 This event occurs whenever a selected item is changed in Drop Down column such as GridComboBoxColumn. The event handler receives two arguments namely sender that handles SfDataGrid and CurrentCellDropDownSelectionChangedEventArgs as objects.
 
-##### The CurrentCellDropDownSelectionChangedEventArgs object contains the following properties:
+The CurrentCellDropDownSelectionChangedEventArgs object contains the following properties:
 
 * RowColumnIndex: Gets the value of the current RowColumnIndex.
 * SelectedIndex: Gets the selected index from the Drop Down control.
 * SelectedItem: Gets the selected item from the Drop Down control.
-#### GridCheckBoxColumn
+
+### GridCheckBoxColumn
 
 
 GridCheckBoxColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn too.  GridCheckBoxColumn does not load Display element and Edit element individually. It just loads Checkbox in that column to make value changes in it. You can change the underlying data source that toggles the values shown in checkbox.
 
-##### The following provides the list of all properties that supports GridCheckBoxColumn:
+The following provides the list of all properties that supports GridCheckBoxColumn:
 
  _GridCheckBoxColumn property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 IsThreeState</td><td>
@@ -2019,7 +2018,7 @@ The following code example shows how to use GridCheckBoxColumn.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid.Columns>
 
@@ -2041,7 +2040,7 @@ The following code example shows how to use GridCheckBoxColumn.
 
 {% highlight C#%}
 
-[C#]
+
 
 
 
@@ -2061,25 +2060,25 @@ The above XAML Code has resulted in following Output:
 
 _DataGrid with GridCheckBoxColumn_
 
-> _Note: Due to its behavior (Directly loading CheckBox), it does not fire events of CurrentCellValidating and CurrentCellValidated. You can use CurrentCellValueChanged Event._
+> Note: Due to its behavior (Directly loading CheckBox), it does not fire events of CurrentCellValidating and CurrentCellValidated. You can use CurrentCellValueChanged Event.
 
  
 
-#### GridImageColumn
+### GridImageColumn
 
 GridImageColumn is derived from GridColumn, and hence it inherits all the properties of GridColumn too. GridImageColumn displays read-only images for the columns.
 
-##### The following provides the list of all properties that supports GridImageColumn:
+The following provides the list of all properties that supports GridImageColumn:
 
-###### _GridImageColumn property table_
+_GridImageColumn property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 Stretch</td><td>
@@ -2113,7 +2112,7 @@ The following code example shows how to use GridImageColumn.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid.Columns>
 
@@ -2145,21 +2144,21 @@ The above XAML Code has resulted in the following output:
 
 _DataGrid with GridImageColumn_
 
-#### GridHyperlinkColumn
+### GridHyperlinkColumn
 
 GridHyperlinkColumn is derived from GridColumn, inheriting its properties and its content represented by using the Hyperlink Button. The bound value is represented as a Hyperlink and automatically displayed as a link.
 
-##### The following provides the list of all properties that supports GridHyperlinkColumn:
+ The following provides the list of all properties that supports GridHyperlinkColumn:
 
  _GridHyperlinkColumn property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 HorizontalAlignment</td><td>
@@ -2181,7 +2180,7 @@ The following code example illustrates how to use GridHyperlinkColumn.
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -2198,7 +2197,7 @@ The following code example illustrates how to use GridHyperlinkColumn.
 
 {% highlight C#%}
 
-[C#]
+
 
 
 
@@ -2224,7 +2223,7 @@ _DataGrid with GridHyperlinkColumn_
 
 GridHyperlinkcolumn also hosts the CurrentCellRequestNavigate event to facilitate the navigation for the Hyperlink Column. The event rose whenever you try to navigate the Hyperlink. The event handler receives two arguments namely sender that handles SfDataGrid and CurrentCellRequestNavigateEventArgs as objects.
 
-##### The CurrentCellRequestNavigateEventArgs object contains the following properties:
+The CurrentCellRequestNavigateEventArgs object contains the following properties:
 
 * RowColumnIndex: Gets the value for CurrentRowColumnIndex.
 * NavigateText: Gets the bounded value from ValueMember or Mapping Name for the Hyperlink Button in the GridColumn.
@@ -2233,23 +2232,23 @@ GridHyperlinkcolumn also hosts the CurrentCellRequestNavigate event to facilitat
 
 
 
-> _Note: The value that is bounded to the DisplayBinding property displays the value. The value that is bounded to the ValueBinding property is the NavigateText. When ValueBinding value that bounds to the MappingName is not specified, it becomes the NavigateText._
+> Note: The value that is bounded to the DisplayBinding property displays the value. The value that is bounded to the ValueBinding property is the NavigateText. When ValueBinding value that bounds to the MappingName is not specified, it becomes the NavigateText.
 
-#### GridTemplateColumn
+### GridTemplateColumn
 
 DataGrid supports vast number of celltypes.When you require to extend the functionality of GridColumns with your own editor; it is achieved by creating CellTemplate and EditTemplate of GridTemplateColumn.
 
-##### The following provides the list of all properties that supports GridTemplateColumn.
+The following provides the list of all properties that supports GridTemplateColumn.
 
  _GridTemplateColumn property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 EditTemplate</td><td>
@@ -2277,7 +2276,7 @@ Null</td></tr>
 </table>
 
 
-> _Note: By default, Silverlight does not support TemplateSelectors hence DataGrid too._
+> Note: By default, Silverlight does not support TemplateSelectors hence DataGrid too.
 
 The following code example shows templating for GridTemplateColumn. Underlying record will be the DataContext for the CellTemplate and EditTemplate.
 
@@ -2286,7 +2285,7 @@ The following code example shows templating for GridTemplateColumn. Underlying r
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:GridTemplateColumn MappingName="CustomerID">
 
@@ -2350,7 +2349,7 @@ CellTemplateSelector and EditTemplateSelector provide a way to select DataTempla
 {% highlight xml %}
 
 
-[XAML]
+
 
 <DataTemplate x:Key="cellTemplate">
 
@@ -2391,7 +2390,7 @@ CellTemplateSelector and EditTemplateSelector provide a way to select DataTempla
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -2449,7 +2448,7 @@ return Application.Current.Resources["femaleEditTemplate"] as DataTemplate;
 {% highlight xml %}
 
 
-[XAML]
+
 
 // APPLYING CELLTEMPLATESELECTOR AND EDITTEMPLATESELECTOR
 
@@ -2501,7 +2500,7 @@ GridTemplateColumn provides the list of [attached property](http://msdn.microsof
 * VisualContainer.WantsMouseInput
 * FocusManagerHelper.FocusedElement
 
-##### WantsKeyInput
+### WantsKeyInput
 
 The attached property allows the controls loaded in CellTemplate to handle key navigation within it or by Grid.
 
@@ -2510,7 +2509,7 @@ The following code example explains you about WantsKeyInput.
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:GridTemplateColumn HeaderText="ProductName"
 
@@ -2536,9 +2535,9 @@ The following code example explains you about WantsKeyInput.
 
 
 
-> _Note: Enter and Tab keys are always handled by Grid only. When you set it to’ false’, you cannot navigate using keys within a loaded control._
+> Note: Enter and Tab keys are always handled by Grid only. When you set it to’ false’, you cannot navigate using keys within a loaded control.
 
-##### WantsMouseInput
+### WantsMouseInput
 
 The attached property allows the controls loaded in CellTemplate to handle mouse interaction within it or by Grid.
 
@@ -2547,7 +2546,7 @@ The following code example explains you about WantsMouseInput.
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:GridTemplateColumn HeaderText="ProductName" MappingName="ProductName">
 
@@ -2571,7 +2570,7 @@ The following code example explains you about WantsMouseInput.
 
 
 
-##### FocusedElement
+#### FocusedElement
 
 The attached property FocusedElement gives the Focus to particular element inside DataTemplate. 
 
@@ -2580,7 +2579,7 @@ The following code example shows, how to set the FocusedElement inside DataTempl
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:GridTemplateColumn HeaderText="Order ID" MappingName="OrderID">
 
@@ -2626,14 +2625,14 @@ The following code example shows, how to set the FocusedElement inside DataTempl
 
 
 
-> _Note: Other than the above attached properties supported, you can set focused element by using FocuseManager.FocusedElement attached property which comes in WPF frameowkr itself. This can be used only for EditTemplate and can’t be used inside CellTemplate._
+> Note: Other than the above attached properties supported, you can set focused element by using FocuseManager.FocusedElement attached property which comes in WPF frameowkr itself. This can be used only for EditTemplate and can’t be used inside CellTemplate.
 
 The following XAML code example displays you how to set focus directly to editor.
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -2683,7 +2682,7 @@ The following XAML code example displays you how to set focus directly to editor
 
 
 
-##### Creating template columns based on MappingName
+#### Creating template columns based on MappingName
 
 When you use template column, you can define template for each column and set binding to the underlying data in template regardless of MappingName. In some use cases, you may need to bind template columns based on MappingName and also use same data template for all template columns.This is achieved by changing the Renderer for Template columns as as displayed in the following code example.
 
@@ -2692,7 +2691,7 @@ The following code example explains you how to remove from Renderer collectionin
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -2718,7 +2717,7 @@ Then your XAML code is as follows.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -2738,7 +2737,7 @@ Then your XAML code is as follows.
 {% endhighlight %}
 
 
-#### Unbound Columns
+### Unbound Columns
 
 SfDataGrid supports the addition of extra columns to the Data Source columns. These additional columns are called as unbound columns, as they do not belong to the Data Source. These unbound fields are used when you want to add additional or custom information to each record.
 
@@ -2753,9 +2752,9 @@ _List of Arithmetic operators_
 
 <table>
 <tr>
-<td>
-Operations</td><td>
-Operators</td></tr>
+<th>
+Operations</th><th>
+Operators</th></tr>
 <tr>
 <td>
 Add</td><td>
@@ -2805,9 +2804,9 @@ _List of Logical operators_
 
 <table>
 <tr>
-<td>
-Operations</td><td>
-Operators</td></tr>
+<th>
+Operations</th><th>
+Operators</th></tr>
 <tr>
 <td>
 AND</td><td>
@@ -2823,14 +2822,14 @@ NOT</td><td>
 </table>
 
 
-> _Note: It is mandatory to specify the GridColumn.MappingName to the UnBoundColumn, but it should not match with any existing fields in the data source._
+> Note: It is mandatory to specify the GridColumn.MappingName to the UnBoundColumn, but it should not match with any existing fields in the data source.
 
 The following code example shows how to use unboundcolumns in the DataGrid control.
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -2890,7 +2889,7 @@ The following screenshot shows the output.
 
  _DataGrid with Unbound columns_
 
-##### Events
+### Events
 
 An unboundcolumn provides the QueryUnboundColumnValue event that is raised when the UnboundColumn is initialized and updated. The event includes two arguments, namely sender that handles SfDataGrid and GridUnBoundColumnEventArgs as Objects.
 
@@ -2906,7 +2905,7 @@ GridUnBoundColumn provides a special property that bounds a value when given Exp
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -2942,9 +2941,9 @@ _DataGrid with GridUnBoundColumn_
 
 In above case, when you set CaseSenstive property value to ‘true’, then you can not get quantity column value after that hyphen. 
 
-> _Note: UnBound Column’s Expression does not work with DataTable, since DataTable itself provides support for Expression._
+> Note: UnBound Column’s Expression does not work with DataTable, since DataTable itself provides support for Expression.
 
-#### GridMultiColumnDropDownList
+### GridMultiColumnDropDownList
 
 GridMultiColumnDropDownList is derived from GridColumn, inheriting its properties and has few additional properties. GridMultiColumnDropDownList loads SfMultiColumnDropDownControl for editing. In addition to the GridColumn’s properties, GridMultiColumnDropDownList supports the following list of properties:
 
@@ -2952,11 +2951,11 @@ _GridMultiColumnDropDownList property table_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property Name</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 DisplayMember</td><td>
@@ -3043,7 +3042,7 @@ The following code example illustrates how to use GridMultiColumnDropDownList.
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:GridMultiColumnDropDownList AutoGenerateColumns="False"
 
@@ -3091,13 +3090,13 @@ The event associated with this column is CurrentCellDropDownSelectionChanged Eve
 
 This event occurs whenever a selected item is changed in DropDown column such as GridMultiColumnDrpDownList. The event handler receives two arguments namely sender that handles SfDataGrid and CurrentCellDropDownSelectionChangedEventArgs as objects.
 
-> _Note: To set null value in view, the underlying type needs to be Nullable. Only then it accepts Null value._
+> Note: To set null value in view, the underlying type needs to be Nullable. Only then it accepts Null value.
 
 
 
 The CurrentCellDropDownSelectionChangedEventArgs object contains the following properties:
 
-##### Column Sizing
+### Column Sizing
 
 ColumnSizer property allows you to specify the column width based on the data present in the cell. You can set the ColumnsSizer property like SfDataGrid.ColumnSizer. This section explains you different options to set width of each Column and how to customize the GridColumnSizer. Following are the lists of options available to set width of the Columns.
 
@@ -3107,7 +3106,7 @@ ColumnSizer property allows you to specify the column width based on the data pr
 
 
 
-> _Note: To set null value in view, the underlying type needs to be Nullable. Only then it accepts Null value._
+> Note: To set null value in view, the underlying type needs to be Nullable. Only then it accepts Null value.
 
 
 
@@ -3120,31 +3119,31 @@ ColumnSizer property allows you to specify the column width based on the data pr
 * None
 
 
-##### GridLengthUnitType.Auto
+#### GridLengthUnitType.Auto
 
 In Auto type, column’s width of the DataGrid control is adjusted with respect to the cell and header content, i.e., each column's header length and cell content length are considered.
 
-##### GridLengthUnitType.AutoWithLastColumnFill
+#### GridLengthUnitType.AutoWithLastColumnFill
 
 In AutoWithLastColumnFill type, the column width of the DataGrid control is adjusted with respect to cell and header content. The last column's width fills the unoccupied space in the parent framework element.
 
-##### GridLengthUnitType.SizeToCells
+#### GridLengthUnitType.SizeToCells
 
 In SizeToCells type, the column width in the DataGrid control is adjusted with respect to cell content.
 
-##### GridLengthUnitType.SizeToHeader
+#### GridLengthUnitType.SizeToHeader
 
 In SizeToHeader type, column’s width of the DataGrid control is adjusted with respect to header content.
 
-##### GridLengthUnitType.Star
+#### GridLengthUnitType.Star
 
 In Star type, the control content occupies total space in the parent, and column’s width is divided equally based on the total space. It’s not required to specify the width for every Grid Column. 
 
-##### GridLengthUnitType.None
+#### GridLengthUnitType.None
 
 No Column sizing is applied when the SfDataGrid.ColumnSizer is set to ‘None’. Columns are arranged in the default Column width.
 
-##### Properties
+#### Properties
 
 SfDataGrid.ColumnSizer: This property applies the Column sizing for all the columns in the DataGrid control. By default the SfDataGrid.ColumnSizer is set to GridControlLengthUnitType_._None.
 
@@ -3158,7 +3157,7 @@ The DataGrid control also allows you to set the column sizing for a particular c
 
 
 
-> _Note: DataGrid control applies column sizing based on Width, MinimumWidth and MaximumWidth properties._
+> Note: DataGrid control applies column sizing based on Width, MinimumWidth and MaximumWidth properties.
 
 
 
@@ -3175,14 +3174,14 @@ The DataGrid control also allows you to set the column sizing for a particular c
 
 
 
-> '_Note: When you resize the columns and the Columns sizer is in ‘Star’ or ‘AutoWithLastFill’ mode, it remains its behavior._
+> Note: When you resize the columns and the Columns sizer is in ‘Star’ or ‘AutoWithLastFill’ mode, it remains its behavior.
 
 The following code example illustrates you how to set the ColumnSizing option for DataGrid control.
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -3197,7 +3196,7 @@ The following code example illustrates you how to set the ColumnSizing option fo
 {% highlight C# %}
 
 
-[C#]
+
 
 
 
@@ -3217,7 +3216,7 @@ The following screenshot illustrates the output.
 
 _DataGrid with Column Sizing_
 
-#### Customize column sizer using GridColumnSizer
+### Customize column sizer using GridColumnSizer
 
 GridColumnSizer is the public class that handles the operations to set grid column's width based on column sizer and column width. Following are the list of properties and methods to be considered when you calculate column width.
 
@@ -3225,9 +3224,9 @@ _GridColumnSizer methods table_
 
 <table>
 <tr>
-<td>
-Method </td><td>
-Description</td></tr>
+<th>
+Method </th><th>
+Description</th></tr>
 <tr>
 <td>
 internal protected virtual double CalculateAutoFitWidth(GridColumn column, bool isAuto = false)</td><td>
@@ -3314,7 +3313,7 @@ Used to cacluate the row height based on the content that located in the grid ce
 <table>
 <tr>
 <td>
-> {{ '_Note: The above methods are useful when you create custom GridColumnSizer for SfDataGrid._' | markdownify }}</td></tr>
+> {{ 'Note: The above methods are useful when you create custom GridColumnSizer for SfDataGrid.' | markdownify }}</td></tr>
 <tr>
 <td>
 </td></tr>
@@ -3379,14 +3378,14 @@ null</td></tr>
 </table>
 
 
-##### Overriding and handling GridColumnSizer
+#### Overriding and handling GridColumnSizer
 
 The following code example illustrates to override methods and how to handle operations in GridColumnSizer. The extended class GridColumnSizerExt is new GridColumnSizer and you can assign it to existing GridColumnSizer.
 
 
 {% highlight C# %}
 
-[C#]
+
 
 // Assign custom GridColumnSizer to datagrid GridColumnSizer
 
@@ -3455,7 +3454,7 @@ public class dColumnSizerExt : GridColumnSizer
 }
 {% endhighlight %}
 
-### Hiding Columns
+## Hiding Columns
 
 The DataGrid control provides support to hide a particular Column in XAML or C# by setting the GridColumn.IsHidden property to ‘true’.
 
@@ -3464,7 +3463,7 @@ The following code example shows how to hide the Columns in XAML.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -3497,7 +3496,7 @@ The following code example shows how to hide the Columns in XAML.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -3505,13 +3504,13 @@ The following code example shows how to hide the Columns in XAML.
 {% endhighlight %}
 
 
-> _Note: Hidden columns are not considered when applying column sizing._
+> Note: Hidden columns are not considered when applying column sizing.
 
-### Resizing Columns
+## Resizing Columns
 
 This section explains you how to resize the Columns and how to handle event that arises when resizing columns.
 
-#### Overview
+### Overview
 
 DataGrid allows you to resize the Column at Execute time. By default, resizing the columns is disabled in Grid.
 
@@ -3572,7 +3571,7 @@ The following code example illustrates how to cancel the ResizingColumn.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -3599,7 +3598,7 @@ You need to wire ResizingColumns event for SfDataGrid. You can refer the followi
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -3623,13 +3622,13 @@ void sfdatagrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 {% endhighlight %}
 
 
-> _Note: Resizing is restricted based on GridColumn.MinimumWidth and GridColumn.MaximumWidth.You can resize the columns to the Header and Cell text by double-clicking the header gridlines._
+> Note: Resizing is restricted based on GridColumn.MinimumWidth and GridColumn.MaximumWidth.You can resize the columns to the Header and Cell text by double-clicking the header gridlines.
 
-### Reordering Columns
+## Reordering Columns
 
 This section explains you about Reordering of Columns and how to handle event that participates in Reordering Columns.
 
-#### Overview
+### Overview
 
 The DataGrid control provides the drag-and-drop functionality to rearrange the Columns at Execute time. You can drag a particular column and drop the column where you need it. By default, the drag-and-drop functionality is disabled in the DataGrid control. 
 
@@ -3664,20 +3663,20 @@ QueryColumnDraggingReason has following enum values.
 
 When you want to disable dragging for a particular column you can use this event and cancel the dragging of column.
 
-#### Drag and Drop Customization
+### Drag and Drop Customization
 
 By default, Column drag-and-drop operations are handled by GridColumnDragDropController class. You can achieve drag-and-drop customization by overriding the methods in GridColumnDragDropController class.
 
-##### Virtual methods in GridColumnDragDropController class:
+#### Virtual methods in GridColumnDragDropController class:
 
 _Virtual methods in GridColumnDragDropController class table_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 CanShowPopup</td><td>
@@ -3731,7 +3730,7 @@ We have added the Textbox inside the column when it is dragging and also we have
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -3804,7 +3803,7 @@ The following code example explains you how to remove column when it’s dropped
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -3854,7 +3853,7 @@ public Rect GetControlRect(FrameworkElement control)
 
 {% endhighlight %}
 
-### Frozen Columns
+## Frozen Columns
 
 The DataGrid control provides extensive support to freeze the columns in horizontal scrolling. To freeze the column, you have to set the number of columns by using the SfDataGrid.FrozenColumnCount property. 
 
@@ -3863,7 +3862,7 @@ The following code example illustrates freezing two columns.
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -3878,7 +3877,7 @@ The following code example illustrates freezing two columns.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -3897,13 +3896,13 @@ The following screenshot illustrates the output.
 
 _DataGrid with two Frozen columns_
 
-> _Note: In the above screenshot, the OrderID and CustomerID columns are frozen. When you group the columns, indent column (while group you can see that another column is created with grouped expander) is also frozen._
+> Note: In the above screenshot, the OrderID and CustomerID columns are frozen. When you group the columns, indent column (while group you can see that another column is created with grouped expander) is also frozen.
 
-#### Limitation
+### Limitation
 
 FrozenColumnCount should be lesser than number of Colums that can be displayed in View.
 
-##### For example:
+### For example:
 
 Your defined columns count is Eight. You can set Frozen Column count as Four.
 
@@ -3913,11 +3912,11 @@ When your window displays only 4 columns, then you cannot scroll it to view othe
 
 DataGrid allows you to have additional unbound header rows, known as Stacked Header Rows that span across Grid Columns. You can group two or more columns under each of the Stacked Header.
 
-#### Overview
+### Overview
 
 Stacked Header Row for the given DataGrid is loaded under Stacked Header Rows Collection.  This collection has definitions for Stacked Header Row that contains StackedColumns controlling the behavior and appearance of the Stacked Header.  A Stacked Header Row is viewed as a set of Stacked Columns where each StackedColumn contains a number of Child Columns. When the Child Columns in the Stacked Header is dragged and dropped to another area of columns, the Child Column isolates itself with its own Stacked Header in the dropped position.
 
-> _Note: Stacked Header does not participate in grouping, filtering, sorting and dragging. However, the Child Columns are allowed to group, sort or apply filter._
+> Note: Stacked Header does not participate in grouping, filtering, sorting and dragging. However, the Child Columns are allowed to group, sort or apply filter.
 
 StackedColumn provides the following properties for implementing StackedHeaders.
 
@@ -3929,7 +3928,7 @@ The following code example illustrates how to create StackedHeaders.
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfDataGrid.StackedHeaderRows>
 
@@ -3971,9 +3970,9 @@ The following screenshot displays the output for the above XAML code.
 
 _DataGrid with Stacked Headers_
 
-### How To
+## How To
 
-#### How to wrap text in Column header
+### How to wrap text in Column header
 
 When you have header text that has more length then you need to set it in a multiline. You can achieve this by using HeaderTemplate in Grid Column.
 
@@ -3982,7 +3981,7 @@ The following code example illustrates this.
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:GridTextColumn DisplayBinding="{Binding Path=OrderID}">
 
@@ -4012,20 +4011,20 @@ The following screenshot illustrates the output.
 
 _DataGrid with wrapped Header text_
 
-> _Note: You need to set HeaderRowHeight in SfDataGrid to differentiate TextWrap in columnHeader._
+> Note: You need to set HeaderRowHeight in SfDataGrid to differentiate TextWrap in columnHeader.
 
-> _SfDataGrid.HeaderRowHeight = “100”;_
+> SfDataGrid.HeaderRowHeight = “100”;
 
-#### How to skip AutoGenerate column for particular property
+### How to skip AutoGenerate column for particular property
 
 When you set AutoGenerateColumns to ‘true’, columns are generated based on [attributes](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations(v=vs.110).aspx) specified in the Model. You can achieve this in following ways.
 
-##### Using DisplayAttribute
+#### Using DisplayAttribute
 
 
 {% highlight C# %}
 
-[C#]
+
 
 [Display(AutoGenerateField= false,Description="This filed is not created")]
 
@@ -4043,12 +4042,12 @@ public int OrderID
 
 AutoGenerateField disabled in Display attribute does not create the column.
 
-##### Using BindableAttribute
+#### Using BindableAttribute
 
 
 {% highlight C# %}
 
-[C#]
+
 
 [Bindable(false)]
 
@@ -4066,12 +4065,12 @@ public string CustomerName
 
 The property for which you have disabled Bindable, that property is added to columns collection.
 
-##### Using AutoGeneratingColumns Event.
+#### Using AutoGeneratingColumns Event.
 
 
 {% highlight C# %}
 
-[C#]
+
 
 void sfdatagrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingColumnArgs e)
 
@@ -4084,14 +4083,14 @@ void sfdatagrid_AutoGeneratingColumn(object sender, Syncfusion.UI.Xaml.Grid.Auto
 }
 {% endhighlight %}
 
-#### How to override existing Cell types?
+### How to override existing Cell types?
 
 In SfDataGrid each column has associated renderers that are added in DataGrid.CellRenderers collection. You can remove and add it back by your customized renderer. The following code example explains you how to override existing renderer. Render is respnisble for all key navigation and other interaction to associated column.
 
 
 {% highlight C# %}
 
-[C#]
+
 
 public class GrdiCellTextBoxRendererExt: GridCellTextBoxRenderer
 
@@ -4114,7 +4113,7 @@ You can derive the required renderer and you can customize using override method
 
 {% highlight C# %}
 
-[C#]
+
 
 public MainWindow()
 
@@ -4136,10 +4135,10 @@ _List of renderers for columns in DataGrid_
 
 <table>
 <tr>
-<td>
-Column</td><td>
-Renderer Name</td><td>
-Renderer</td></tr>
+<th>
+Column</th><th>
+Renderer Name</th><th>
+Renderer</th></tr>
 <tr>
 <td>
 GridTextColumn</td><td>
@@ -4187,14 +4186,14 @@ Hyperlink </td><td>
 GridCellHyperLinkRenderer</td></tr>
 </table>
 
-#### How to enable Tooltips for Cell and Headers?
+### How to enable Tooltips for Cell and Headers?
 
 SfDataGrid provides support to apply Tooltip for Cell and Headers. You can achieve this by using the properties ToolTipTemplate for Cells and HeaderToolTipTemplate for HeaderCells in GridColumn. The following code example illustrates this.
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:GridTextColumn DisplayBinding="{Binding Path=CustomerID}" MappingName="CustomerID">
 
@@ -4241,7 +4240,7 @@ The following screenshot displays the output of Tooltip applied in Cells.
 
 _DataGrid with Tooltip applied in cells_
 
-#### How to disable drag and drop between Frozen columns and Non-Frozen columns
+### How to disable drag and drop between Frozen columns and Non-Frozen columns
 
 You can wire QueryColumnDragging event for DataGrid. Its aruguments have reason property that helps you to perform any actions while draging and dropping. It has From and To property that shows you where the dragging column is present.   
 
@@ -4252,7 +4251,7 @@ ResolveToStartColumnIndex () is the method that returns the index of first colum
 
 {% highlight C# %}
 
-[C#]
+
 
 this.datagrid.QueryColumnDragging += datagrid_QueryColumnDragging;
 
@@ -4281,7 +4280,7 @@ void datagrid_QueryColumnDragging(object sender, Syncfusion.UI.Xaml.Grid.QueryCo
 }
 {% endhighlight %}
 
-#### How to bind Column properties from ViewModel
+### How to bind Column properties from ViewModel
 
 1.Create New Project in Visual Studio.   
 2.Create ItemsSouce as mentioned in GettingStarted and populate items.      
@@ -4290,7 +4289,7 @@ void datagrid_QueryColumnDragging(object sender, Syncfusion.UI.Xaml.Grid.QueryCo
 
 {% highlight C# %}
 
-[C#]
+
 
 private bool allowFiltering = true;
 
@@ -4313,7 +4312,7 @@ public bool AllowFiltering
 {% highlight xml %}
 
 
-[XAML]
+
 
 <Window x:Class="SimpleApplication.MainWindow"
 
@@ -4383,7 +4382,7 @@ public bool AllowFiltering
 
 To use RelativeSource way to bind, you can set DataContext. OrderID column AllowFiltering property value is binded using relative source. CustomerName column gets AllowFiltering value from StaticResource.
 
-#### How to bind ComboBoxColumn ItemsSource from ViewModel
+### How to bind ComboBoxColumn ItemsSource from ViewModel
  
 1. Create New Project in VisualStudio.                             
 2. Create ItemsSource as explained in GettingStarted.                              
@@ -4394,7 +4393,7 @@ To use RelativeSource way to bind, you can set DataContext. OrderID column Allow
 
 {% highlight C# %}
 
-[C#]
+
 
 public class ViewModel
 
@@ -4486,7 +4485,7 @@ The following code example shows you how to Bind ComboItems to ComboBoxColumn.
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window x:Class="SimpleApplication.MainWindow"
 
@@ -4546,14 +4545,14 @@ The following screenshot displays the output.
 
 _Binded ComboItems to ComboBoxColumn_
 
-#### How to style Hyperlink Column
+### How to style Hyperlink Column
 
 SfDataGrid has Hyperlink Column that directly loads Hyperlink control as its UIElement. You can directly set style for Hyperlink control with its TargetType as Hyperlink. Then the style is applied to GridHyperlinkColumn. The following code example illustrates how to set style HyperlinkColumn.
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window x:Class="SimpleApplication.MainWindow"
 
@@ -4625,14 +4624,14 @@ The following screenshot displays the output.
 
 _Customized Hyperlink Column_
 
-#### How to load Button inside DataTemplate and bind command from ViewModel
+### How to load Button inside DataTemplate and bind command from ViewModel
 
 SfDataGrid provides support to GridTemplateColumn that loads any control within it using DataTemplate property. You can add button control inside DataTemplate of GridTemplateColumn. The following code example illustrates how to load Button inside DataTemplate and bind command from ViewModel. 
 
 
 {% highlight C# %}
 
-[C#]
+
 
 public class BaseCommand : ICommand
 
@@ -4753,7 +4752,7 @@ In ViewModel, you can write command for Button.
 
 {% highlight C# %}
 
-[C#]
+
 
 public class ViewModel
 
@@ -4811,7 +4810,7 @@ Bind command to button inside the DataTemplate.
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window x:Class="SimpleApplication.MainWindow"
 
@@ -4905,25 +4904,25 @@ The following screenshot displays the output of the above code.
 
 _Loaded Button inside DataTemplate and binded command from ViewModel_
 
-#### Difference between Displaybinding , ValueBinding and MappingName properties
+### Difference between Displaybinding , ValueBinding and MappingName properties
 
-##### DisplayBinding
+#### DisplayBinding
 
 Denotes the binding to DataModel while loading (In Non-Edit mode).
 
-##### ValueBinding
+#### ValueBinding
 
 Denotes the binding to DataModel for Edit element.
 
-##### MappingName
+#### MappingName
 
 MappingName property denotes the property that present in underlying DataModel that needs to bound to the Column. When seting MappingName, then DisplayBinding and ValueBinding will be created to the underlying DataModel based on MappingName. 
 
 By default, data manipulation operations like Sorting, Grouping, Filtering and etc will be based MappingName and the values will be reflected using reflection from DataModel. Setting UseBindingValue property to true, will enable the advanced features like sorting, grouping, filtering and etc will reflects the values based in ValueBinding which enables you to bind more complex binding paths. 
 
-> _Note: Set UseBindingValue only when you are binding more complex property paths or when standard reflection can’t reflect the data from Data model._
+> Note: Set UseBindingValue only when you are binding more complex property paths or when standard reflection can’t reflect the data from Data model.
 
-#### Build a DataGrid with Multiple Data Sources
+### Build a DataGrid with Multiple Data Sources
 
 DataGrid does not support binding to more than one Data Source out of the box. By utilizing unbound columns in the DataGrid, you can incorporate items from multiple Data Sources in the same DataGrid.  This is achieved by handling the QueryUnboundColumnValue event.
 
@@ -4935,7 +4934,7 @@ The following code example shows the process of building a DataGrid with multipl
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -4966,7 +4965,7 @@ Now, you can handle the QueryUnboundColumnValue event to construct its value bas
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -5008,14 +5007,14 @@ The source results in the following output.
 
 _Builded DataGrid with Multiple Data Sources_
 
-#### How to bind png image to Image Column
+### How to bind png image to Image Column
 
 SfDataGrid has GridImageColumn. You can directly bind BitmapImages, since GridImageColumn loads Image as its UIElement. However, when you have path or only the name of the image then you cannot bind that image directly to the GridImageColumn. In such cases, you can use converter in ValueBinding. The following code example illustrates how to bind png image to Image Column. 
 
 
 {% highlight C# %}
 
-[C#]
+
 
 class StringToImageConverter : IValueConverter
 
@@ -5053,7 +5052,7 @@ You can bind converter to GridImageColumn.
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:GridImageColumn HeaderText="Movie"
 
@@ -5065,11 +5064,11 @@ You can bind converter to GridImageColumn.
 
 {% endhighlight %}
 
-#### Define Hyperlink Column that redirects to an URI whose values are not bound to a Column
+### Define Hyperlink Column that redirects to an URI whose values are not bound to a Column
 
 When URI or URL is very long, and you can find it hard to bind the URL to the GridHyperlinkColumn, or you may want to hide the RequestURI from the View. In both cases, you can implement any of the following two approaches to define the GridHyperlinkColumn. 
 
-##### Method 1
+#### Method 1
 
 DisplayBinding and ValueBinding in GridColumns of SfDataGrid are used in this case. You can set the DisplayBinding to the value you want to display in view, and bind the ValueBinding to the URI where you want the control to navigate.
 
@@ -5079,7 +5078,7 @@ The following code example illustrates this.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -5105,7 +5104,7 @@ The following screenshot displays the output.
 
 _Hyperlink Column redirected to an URI whose values are not bound to a Column using DisplayBinding and ValueBinding_
 
-##### Method 2
+#### Method 2
 
 Hyperlink Column provides the CellRequestNavigate event that is raised whenever you try to navigate using the Hyperlink control in GridHyperlinkColumn. This event is used to set the sender’s (Hyperlink Button) NavigateURI dynamically at Execute time.
 
@@ -5114,7 +5113,7 @@ The following code example illustrates how to handle the CellRequestNavigate eve
 
 {% highlight C# %}
 
-[C#]
+
 
 void sfDataGrid_CurrentCellRequestNavigate(object sender, CurrentCellRequestNavigateEventArgs args)
 
@@ -5144,16 +5143,16 @@ The following screenshot illustrates the output.
 
 _Hyperlink Column redirected to an URI whose values are not bound to a Column using CellRequestNavigate event_
 
-#### How to create custom column?
+### How to create custom column?
 
-##### CustomColumn support
+#### CustomColumn support
 
 SfDataGrid allows you to create your own column other than SfDataGrid predefined [column collection](http://help.syncfusion.com/ug/wpf/default.htm). You can decide column’s key board interaction, the events you want to hook and validation from renderer creation. This section explains you on how to create custom column. Custom column can be created by overriding predefined renderers with [renderer replacement](http://help.syncfusion.com/ug/wpf/default.htm) or can be adding new custom renderer to renderer collection. There are two steps to create custom column.
 
 * Creating custom Renderer for column
 * Creating custom column
 
-###### Creating custom Renderer for column
+#### Creating custom Renderer for column
 
 You can create custom renderer by deriving from GridVirtualizingCellRenderer<D, E>. It contains generic parameters Where ‘D’ denotes the type display control and ‘E’ denotes the type of edit control. You can load your custom control as display or edit control or you can also load standard controls (TextBlock, Text Box, Combo Box…) and you can customize it in your way. You can also override the existing renderers and you can create customized one. There are some list of existing [renderers](http://help.syncfusion.com/ug/wpf/default.htm) available in SfDataGrid.
 
@@ -5162,7 +5161,7 @@ The following code example illustrates on how to create custom renderer to load 
 
 {% highlight C# %}
 
-[C#]
+
 
 /// <summary>
 
@@ -5192,11 +5191,11 @@ _List of properties_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 IsEditable</td><td>
@@ -5315,7 +5314,7 @@ You can define the default behavior by the properties with constructor of derive
 
 {% highlight C# %}
 
-[C#]
+
 
 //Renderer Creation.
 
@@ -5342,7 +5341,7 @@ The following code example illustrates you on how to create display and edit ele
 
 {% highlight C# %}
 
-[C#]
+
 
 class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
@@ -5389,7 +5388,7 @@ The following code example explains you how to initialize properties binding for
 {% highlight C# %}
 
 
-[C#]
+
 
 
 
@@ -5496,7 +5495,7 @@ The following code example explains you on how to initialize properties binding 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -5601,7 +5600,7 @@ The following code example illustrates that how can you make use of OnEditElemen
 
 {% highlight C# %}
 
-[C#]
+
 
 class DatePickerRenderer : GridVirtualizingCellRenderer<TextBlock,DatePicker>
 
@@ -5658,7 +5657,7 @@ The following code example illustrates you on how the key board interaction can 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -5737,7 +5736,7 @@ The following code examples illustrates the custom renderer with converter.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -6198,7 +6197,7 @@ Add your custom renderer to DataGrid renderer collection as in the following cod
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -6208,7 +6207,7 @@ _dataGrid.CellRenderers.Add("DatePickerRenderer", new DatePickerRenderer());
 {% endhighlight %}
 
 
-#####  Column Creation
+###  Column Creation
 
 Create a class that derives from GridColumn. Set cell type for a custom column in derived class constructor. 
 
@@ -6217,7 +6216,7 @@ The following code example explains you on how to create Custom Column.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -6266,7 +6265,7 @@ Finally, add your custom column to SfDataGrid with the following code example in
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -6312,21 +6311,21 @@ _Custom Column in Display Mode_
 
 _Custom Column in Edit mode_
 
-#### How to change FilterIconWidth and SortIconWidth when you calculate column width based on SizeToHeader column sizer
+### How to change FilterIconWidth and SortIconWidth when you calculate column width based on SizeToHeader column sizer
 
 By default, column width is calculated based on the fixed FontSize, FilterIconWidth,and SortIconWidth. When you change FilterIconWidth and Sort icon width, it does not consider the changed width when you calculate column width. Therefore, the column width is not fit based on SizeToHeader column sizer. You can use the following code example to calculate the column width based on the new FilterIconWidth and SortIconWidth values.
 
 
 {% highlight C# %}
 
-[C#]
+
 
 dataGrid.GridColumnSizer.FilterIconWidth = 20;
 
 dataGrid.GridColumnSizer.SortIconWidth = 20;
 {% endhighlight %}
 
-#### How to customize star width calculation 
+### How to customize star width calculation 
 
 When column sizer is Star, the control content occupies total space in the parent, and column’s width is divided equally based on the total space by default. When you want to customize the star width calculation as in grid panel, you can use custom GridColumnSizer.
 
@@ -6338,7 +6337,7 @@ The following code example illustrates how to customize star width calculation.
 {% highlight xml %}
 
 
-[XAML] 
+ 
 
 <syncfusion:SfDataGrid Name="dataGrid" AllowSorting="True"
 
@@ -6376,7 +6375,7 @@ The following code example illustrates how to customize star width calculation.
 
 {% highlight C# %}
 
-[C#] 
+ 
 
 // Assign custom GridColumnSizer to datagrid GridColumnSizer
 
@@ -6514,14 +6513,14 @@ The following screenshot illustrates the output image after applying star column
 
 _DataGrid with customized star column sizer_
 
-#### How to apply column sizer after resizing the columns?
+### How to apply column sizer after resizing the columns?
 
 When you resize the particular column, the width is set for that column. After resizing the column, when you apply column sizer, column width is not set based on column sizer. It maintains the previous width only. You can overcome this scenario by resetting the width of the columns before changing the ColumnSizer as in the following code example.
 
 
 {% highlight C# %}
 
-[C#] 
+ 
 
      foreach (var column in dataGrid.Columns)
 
@@ -6535,14 +6534,15 @@ When you resize the particular column, the width is set for that column. After r
 
      dataGrid.ColumnSizer = GridLengthUnitType.SizeToCells;
 {% endhighlight %}
-#### How to customize column width calculation for particular column?
+
+### How to customize column width calculation for particular column?
 
 By default, column width is calculated based on the fixed FontSize, FontFamily and Margin. When any column is customized with different FontSize and FontFamily, it is not considered when you calculate column width. Therefore, the column width is not fit based on the header and cell value even though column sizer is Auto. You can overcome this scenario by overriding GetTextBlock method in GridColumnSizer as illustrated in the following code example.
 
 
 {% highlight C# %}
 
-[C#] 
+ 
 
 // Assign custom GridColumnSizer to datagrid GridColumnSizer
 
@@ -6601,7 +6601,7 @@ public class CustomColumnSizer : GridColumnSizer
 }
 {% endhighlight %}
 
-#### How to change column width based on the cell value at run time?
+### How to change column width based on the cell value at run time?
 
 When grid column sizer is SizeToCells, the column width is adjusted with respect to cell content.
 
@@ -6610,7 +6610,7 @@ But after editing the cell value, column width is not adjusted based on new cell
 
 {% highlight C# %}
 
-[C#] 
+ 
 
 this.dataGrid.Loaded += dataGrid_Loaded;
 

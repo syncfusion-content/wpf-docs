@@ -7,7 +7,7 @@ control: Chart (Classic)
 documentation: ug
 ---
 
-### Export SfChart as Image
+## Export SfChart as Image
 
 In order to export the SfChart control as an image, the Save method needs to be called. Two overload methods are available to export the SfChart:
 
@@ -17,14 +17,14 @@ In order to export the SfChart control as an image, the Save method needs to be 
 
 
 The following code examples can be used to export the SfChart as an image:
+{% highlight c# %}
 
-[C#]
 
 chart.Save("my.gif");
 
 
 
- [C#]
+ 
 
             SaveFileDialog sfd = new SaveFileDialog();
 
@@ -45,4 +45,4 @@ chart.Save("my.gif");
             }
 
 
-
+{% endhighlight  %}

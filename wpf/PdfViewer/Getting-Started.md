@@ -15,13 +15,13 @@ Assemblies Deployment
 
 This topic explains about the assembly that is required in your WPF application when you want to use PdfViewerControl. The following is the list of assemblies.
 
-_Assemblies Table_
+Assemblies Table
 
 <table>
 <tr>
-<td>
-Required Assemblies</td><td>
-Description</td></tr>
+<th>
+Required Assemblies</th><th>
+Description</th></tr>
 <tr>
 <td>
 Syncfusion.Compression.Base</td><td>
@@ -53,15 +53,15 @@ Supported features include:
 
 Supported and non-supported elements of Essential PDF Viewer for Windows Forms, WPF and ASP.NET MVC are listed in the following table.
 
-_Supported and non-supported elements_
+Supported and non-supported elements
 
 <table>
 <tr>
-<td>
-Features</td><td>
-Windows</td><td>
-WPF</td><td>
-ASP.NET MVC</td></tr>
+<th>
+Features</th><th>
+Windows</th><th>
+WPF</th><th>
+ASP.NET MVC</th></tr>
 <tr>
 <td>
 Text</td><td>
@@ -385,19 +385,19 @@ No</td></tr>
 
 The following screenshot is a pictorial representation of PDF Viewer. 
 
-{{ '![C:/Users/Suresh/Desktop/WPF UG/StructureOfPDFViewer_edited.png](Getting-Started_images/Getting-Started_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/Suresh/Desktop/WPF UG/StructureOfPDFViewer_edited.png](Getting-Started_images/Getting-Started_img1.png)
 
 
-_Structure of PDF Viewer_
+
+Structure of PDF Viewer
 
 ToolStrip
 
-{{ '![C:/Users/Suresh/Desktop/WPF UG/StructureOfToolStrip_edited.png](Getting-Started_images/Getting-Started_img2.png)' | markdownify }}
-{:.image }
+![C:/Users/Suresh/Desktop/WPF UG/StructureOfToolStrip_edited.png](Getting-Started_images/Getting-Started_img2.png)
 
 
-_Structure of ToolStrip_
+
+Structure of ToolStrip
 
 1. File Open Dialog
 2. Save File Dialog
@@ -420,11 +420,11 @@ Following steps demonstrate how to create a simple application with Essential Pd
 1. Create new WPF application in Visual Studio.
 2. Open the Visual Studio tool box. Navigate to “Syncfusion WPF Toolbox” tab, and drag the PdfViewerControl toolbox item to the Designer window. 
 
-{{ '![](Getting-Started_images/Getting-Started_img3.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img3.png)
 
 
-_PDF Viewer control in toolbox_
+
+PDF Viewer control in toolbox
 
 When you drag the PdfViewerControl toolbox item to the window, it automatically adds the required references to the current application.
 
@@ -438,7 +438,7 @@ When you drag the PdfViewerControl toolbox item to the window, it automaticall
 
 
 
-[XAML]
+{% highlight xml %}
 
 <Window
 
@@ -452,22 +452,22 @@ When you drag the PdfViewerControl toolbox item to the window, it automaticall
 
         Title="MainWindow" Height="350" Width="525">
 
-
+{% endhighlight %}
 
 5. Add the following code in XAML
 
-[XAML]
+{% highlight xml %}
 
 <syncfusion:PdfViewerControl Name="pdfViewerControl1"/>
 
 
-
+{% endhighlight %}
 6. PdfViewerControl’s ItemSource property allows you to bind PDF documents in XAML. The ItemsSource property accepts a stream input that can be bound to the viewer during initialization.
 1. Create a simple class that loads a PDF report and provides the stream as a property that can bound to the Viewer as illustrated in the following code example. Save the class file as PdfReport.cs
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -540,12 +540,12 @@ When you drag the PdfViewerControl toolbox item to the window, it automaticall
       }
 
 
-
+{% endhighlight %}
 
 
 2. In order to bind the DocumentStream property of the PdfReport class, set the DataContext for the Window. To add the DataContext in XAML, use the following code example.
+{% highlight xml %}
 
-[XAML]
 
     <Window.DataContext>
 
@@ -553,15 +553,15 @@ When you drag the PdfViewerControl toolbox item to the window, it automaticall
 
     </Window.DataContext>
 
-
+{% endhighlight %}
 
 3. Once the DataContext has been set, the ItemSource dependency property can be set by using the following code example in XAML.
 
-[XAML]
+{% highlight xml %}
 
 <Syncfusion:PdfViewerControl ItemSource="{Binding DocumentStream}"/>
 
-
+{% endhighlight %}
 
 7. Alternatively, the Open button from the toolbar can also be used to load documents at runtime.
 ## Customize PDF Viewer by using PdfDocumentView
@@ -571,26 +571,27 @@ In addition to the PdfViewerControl, Syncfusion also provides PdfDocumentView co
 
 1. Drag the PdfDocumentView control from the toolbox and drop it into the application’s window. Name the control as documentViewer.
 
-{{ '![](Getting-Started_images/Getting-Started_img4.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
-_Toolbox showing the PdfDocumentView control_
+
+Toolbox showing the PdfDocumentView control
 
 2. The PdfDocumentView control has the rendering area where the pages are displayed in a virtualized scroll viewer.
 3. The following XAML code illustrtaes how the PdfDocumentView control is added to the application.
 
 
 
-[XAML]
+{% highlight xml %}
 
 <Syncfusion:PdfDocumentView Name="documentViewer"/>
+{% endhighlight %}
 
 Loading a document
 
 To load a document in the PdfDocumentView control, add a button to your application by dragging the Button control available in the toolbox. Name the button as openBtn. In the click event of the button, add the following C# code.
 
-[C#
+{% highlight C# %}
 
 
 
@@ -622,11 +623,11 @@ To load a document in the PdfDocumentView control, add a button to your applicat
 
         }
 
-
+{% endhighlight %}
 
 The following table displays the set of APIs available for loading and unloading PDF documents.
 
-_Method Table_
+Method Table
 
 <table>
 <tr>
@@ -637,25 +638,25 @@ Parameters </th><th>
 Type </th><th>
 Return Type </th></tr>
 <tr>
-<th>
-Load</th><th>
-This method is used to load the PDF to the viewer.</th><th>
-Overloads: (string filePath) (string filePath, string password)(PdfLoadedDocument doc)(Stream file)</th><th>
-N/A </th><th>
-Void </th></tr>
+<td>
+Load</td><td>
+This method is used to load the PDF to the viewer.</td><td>
+Overloads: (string filePath) (string filePath, string password)(PdfLoadedDocument doc)(Stream file)</td><td>
+N/A </td><td>
+Void </td></tr>
 <tr>
-<th>
-Unload</th><th>
-Unloads the loaded PDF.</th><th>
--</th><th>
-N/A</th><th>
-Void</th></tr>
+<td>
+Unload</td><td>
+Unloads the loaded PDF.</td><td>
+-</td><td>
+N/A</td><td>
+Void</td></tr>
 </table>
 Page Navigation
 
 In addition to the virtualized page view in a scroll viewer, PdfDocumentView control also provides GoToPage and GoToPageAtIndex methods for page navigation. To add page navigation buttons to your application, add two buttons that helps in navigation for next and previous pages. Name them as gotoNextPageBtn and gotoPrevPageBtn respectively. In the click event of the buttons, add the following code.
 
-[C#
+{% highlight C# %}
 
 
 
@@ -694,14 +695,14 @@ In addition to the virtualized page view in a scroll viewer, PdfDocumentView con
 
 
         }
-
+{% endhighlight %}
 
 
 Maginifcation Operations
 
 The PdfDocumentView control also provides various magnification operations through ZoomMode, and ZoomPercentage properties. To add magnifying buttons to the application, add two buttons and name them as fitPageBtn and fitWidthBtn. In the click event of the buttons, add the following C# code.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -724,14 +725,14 @@ The PdfDocumentView control also provides various magnification operations throu
             documentViewer.ZoomMode = Syncfusion.Windows.PdfViewer.ZoomMode.FitWidth;
 
         }
-
+{% endhighlight %}
 
 
 Printing a Document
 
 The PdfDocumentView control also provides the Print APIs, to print the PDF documents programmatically using the PdfDocumentView control, add the following C# code to the click event of your print button.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -754,14 +755,14 @@ The PdfDocumentView control also provides the Print APIs, to print the PDF docum
 
 
         }
-
+{% endhighlight %}
 
 
 The following screenshot illustrates the completely customized PDF Viewer created by using the PdfDocumentView control
 
-{{ '![](Getting-Started_images/Getting-Started_img5.png)' | markdownify }}
-{:.image }
+![](Getting-Started_images/Getting-Started_img5.png)
 
 
-_A customized PDF Viewer using PdfDocumentView control_
+
+A customized PDF Viewer using PdfDocumentView control
 

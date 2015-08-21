@@ -25,7 +25,7 @@ ZoomIn command—zooms in the map.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfMap x:Name="Map">
 
@@ -50,7 +50,7 @@ ZoomOut Command--zooms out the map.
 {% highlight xml %}
 
 
-[XAML]
+
 
        <syncfusion:SfMap x:Name="Map">
 
@@ -74,7 +74,7 @@ Pan Command is used to navigate on the Map control. The direction of the navigat
 
 {% highlight xml %}
 
-[XAML]
+
 
       <syncfusion:SfMap x:Name="Map">
 
@@ -109,7 +109,7 @@ The ZoomReset command resets the ZoomLevel value of the Map control.
 {% highlight xml %}
 
 
-[XAML]
+
 
           <syncfusion:SfMap x:Name="Map" >
 
@@ -135,7 +135,7 @@ The PanReset command resets the map at its initial position; it resets the pan v
 {% highlight xml %}
 
 
-[XAML]
+
 
         <syncfusion:SfMap x:Name="Map" >
 

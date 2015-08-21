@@ -11,7 +11,6 @@ documentation: ug
 
 In Schedule month view, date of the current selected month and date of previous/next months can be differentiated using the FocusedMonth and NonFocusedMonth properties respectively.
 {% highlight html %}
-[XAML]
 
 
 
@@ -23,7 +22,6 @@ In Schedule month view, date of the current selected month and date of previous/
 
 {% highlight c# %}
 
-[C#]
 
 
 

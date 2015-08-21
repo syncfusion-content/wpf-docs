@@ -417,7 +417,7 @@ Node can also be added into the model through XAML. The following code shows how
 
 
 {% highlight html  %}
-[XAML]
+
 
 
 
@@ -465,7 +465,7 @@ Nodes can be added through the model. The following code shows how it can be don
 
 
 {% highlight c#  %}
-[C#]
+
 
 Node n = new Node();
 
@@ -476,7 +476,7 @@ diagramModel.Nodes.Add(n);
 {% highlight vbnet  %}
 
 
-[VB]
+
 
 Dim n As New Node()
 
@@ -490,7 +490,7 @@ diagramModel.Nodes.Add(n)
 
 
 {% highlight c#  %}
-[C#]
+
 
 Node n = new Node(Guid.NewGuid());
 
@@ -501,7 +501,7 @@ diagramModel.Nodes.Add(n);
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim n As New Node(Guid.NewGuid())
 
@@ -515,7 +515,7 @@ diagramModel.Nodes.Add(n)
 
 
 {% highlight c#  %}
-[C#]
+
 
 Node n = new Node(Guid.NewGuid(), "First");
 
@@ -526,7 +526,7 @@ diagramModel.Nodes.Add(n);
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim n As New Node(Guid.NewGuid(), "First")
 
@@ -576,7 +576,7 @@ A node can be assigned with a shape using the Shape property. Several built-in s
 
 
 {% highlight c#  %}
-[C#]
+
 
 Node n = new Node();
 
@@ -587,7 +587,7 @@ diagramModel.Nodes.Add(n);
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim n As New Node()
 
@@ -628,7 +628,7 @@ Style can be applied for CustomPathStyle in two different ways,
 
 
 {% highlight html  %}
-[XAML]
+
 
 
 
@@ -653,7 +653,7 @@ Style can be applied for CustomPathStyle in two different ways,
 {% endhighlight   %}
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -674,7 +674,7 @@ diagramModel.Nodes.Add(n);
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -699,7 +699,7 @@ You can specify your own custom shapes to be used for the node as follows. First
 
 
 {% highlight html  %}
-[XAML]
+
 
 
 
@@ -717,7 +717,7 @@ Now use it for the node; the following code can be used as an example.
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -734,7 +734,7 @@ diagramModel.Nodes.Add(n);
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim s As Style = CType(Me.Resources("myNode"), Style)
 
@@ -803,7 +803,7 @@ Node’s Content can be specified in two ways,
 
 
 {% highlight html  %}
-[XAML]
+
 
 
 
@@ -840,7 +840,7 @@ Node’s Content can be specified in two ways,
 
 {% endhighlight   %}
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -859,7 +859,7 @@ n.Content = b;
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -891,7 +891,7 @@ Assigning business object as Node’s Content:
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -930,7 +930,7 @@ diagramModel.Nodes.Add(n);
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -976,7 +976,7 @@ Specify ContentTemplate for node.
 
 
 {% highlight c#  %}
-[XAML]
+
 
 
 
@@ -1086,7 +1086,7 @@ Node’s location can be changed using the following code snippet.
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -1103,7 +1103,7 @@ diagramModel.Nodes.Add(n);
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1125,7 +1125,7 @@ The node will be placed at the point: 50, 50.
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -1142,7 +1142,7 @@ page.InvalidateMeasure();
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1170,7 +1170,7 @@ The AllowMove property can be set in the following way:
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 Node nodeobject = new Node();
@@ -1180,7 +1180,7 @@ nodeobject.AllowMove = false;
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 Dim nodeobject As New Node()
@@ -1241,7 +1241,7 @@ The AllowRotate property can be set in the following way.
 
 
 {% highlight c#  %}
-[C#]
+
 
 Node nodeobject = new Node();
 
@@ -1250,7 +1250,7 @@ nodeobject.AllowRotate = false;
 {% highlight vbnet   %}
 
 
-[VB]
+
 
 Dim nodeobject As New Node()
 
@@ -1356,7 +1356,7 @@ The AllowResize property can be set in the following way.
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 Node nodeobject = new Node();
@@ -1366,7 +1366,7 @@ nodeobject.AllowResize = false;
 
 {% endhighlight   %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 Dim nodeobject As New Node()
@@ -1384,7 +1384,7 @@ This property is in DiagramPage and can be set in the following ways.
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -1395,7 +1395,7 @@ diagramPage.EnableResizingCurrentNodeOnMultipleSelection = true;
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1406,7 +1406,7 @@ diagramPage.EnableResizingCurrentNodeOnMultipleSelection = True
 {% endhighlight   %}
 {% highlight html  %}
 
-[XAML]
+
 
 
 
@@ -1611,7 +1611,7 @@ Set a label for the node using the Label property. The default value is an empty
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -1630,7 +1630,7 @@ diagramModel.Nodes.Add(n);
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1660,7 +1660,7 @@ A node's label can be edited at run time by setting IsLabelEditable property to 
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -1673,7 +1673,7 @@ n.IsLabelEditable = true;
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1708,7 +1708,7 @@ Label text can be displayed in multiple lines using LabelTextWrapping property s
 {% highlight c#  %}
 
 
-[C#]
+
 
 
 
@@ -1729,7 +1729,7 @@ n.IsLabelEditable = true;
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1761,7 +1761,7 @@ A label's visibility can be changed using the LabelVisibility property. The defa
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -1776,7 +1776,7 @@ n.LabelVisibility = Visibility.Hidden;
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1798,7 +1798,7 @@ Vertical and horizontal alignments of a label is specified using LabelVerticalAl
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -1815,7 +1815,7 @@ n.LabelVerticalAlignment = VerticalAlignment.Center;
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1849,7 +1849,7 @@ The user can rotate the label by a specified angle and display it using the belo
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -1868,7 +1868,7 @@ n.Label = 45;
 
 {% endhighlight   %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 
@@ -1898,7 +1898,7 @@ Node’s Label can be set as Multiline Label by setting the EnableMultiline prop
 
 {% highlight html  %}
 
- [XAML]
+ 
 
 
 
@@ -1906,7 +1906,7 @@ Node’s Label can be set as Multiline Label by setting the EnableMultiline prop
 
 {% endhighlight   %}
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -1929,7 +1929,7 @@ diagramModel.Nodes.Add(node1);
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1996,7 +1996,7 @@ Label is aligned within the bounds of Node using LabelHorizontalAlignment and La
 
 
 {% highlight c#  %}
-[C#]
+
 
        (node as Node).LabelDisplacement = new Point(100,100);
 
@@ -2010,7 +2010,7 @@ The Label can be dragged from the Node at runtime, if this property is set to tr
 
 {% highlight c#  %}
 
-[C#]
+
 
        (node as Node).IsLabelDragable = true;
 
@@ -2053,7 +2053,7 @@ The gripper can be made visible by setting the GripperVisibility property to ‘
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 Node n = new Node();
@@ -2065,7 +2065,7 @@ diagramModel.Nodes.Add(n);
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 Dim n As New Node()
@@ -2090,7 +2090,7 @@ Gripper can be customized using the GripperStyle property of the Node.  However,
 
 
 {% highlight html  %}
-[XAML]
+
 
 
 
@@ -2132,7 +2132,7 @@ This can be applied to the node in the following way:
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 Node node = new Node();
@@ -2146,7 +2146,7 @@ diagramModel.Nodes.Add(node);
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 Dim node As New Node()
@@ -2226,7 +2226,7 @@ Node can also be selected using the IsSelected property of the Node.
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 Node n = new Node();
@@ -2240,7 +2240,7 @@ diagramModel.Nodes.Add(n);
 
 {% endhighlight  %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 Dim n As New Node()
@@ -2292,7 +2292,7 @@ The AllowSelect property can be set in the following way:
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 Node nodeobject = new Node();
@@ -2302,7 +2302,7 @@ nodeobject.AllowSelect = false;
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 Dim nodeobject As New Node()
@@ -2363,7 +2363,7 @@ To set the DeletingMode property to None, use the following code.
 
 {% highlight c#  %}
 
-[C#]
+
 
 Node n1 = new Node();
 
@@ -2380,7 +2380,7 @@ diagrammodel.Nodes.Add(n1);
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim n1 As New Node()
 
@@ -2404,7 +2404,7 @@ To set the DeletingMode property to DeleteDependentEdges, use the following code
 
 {% highlight c#  %}
 
-[C#]
+
 
 Node n = new Node();
 
@@ -2422,7 +2422,7 @@ diagrammodel.Nodes.Add(n);
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim n1 As New Node()
 
@@ -2502,7 +2502,7 @@ Hence, the direction is decided at the beginning of each drag.  By default, this
 
 
 {% highlight c#  %}
-[C#]
+
 
 DiagramView View1 = new DiagramView();
 
@@ -2511,7 +2511,7 @@ View1.DirectionBehaviourEnabled = true;
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim view As New DiagramView ()
 
@@ -2523,7 +2523,7 @@ This property can be disabled by setting it to ‘false’.
 
 
 {% highlight c#  %}
-[C#]
+
 
 DiagramView View1 = new DiagramView();
 
@@ -2532,7 +2532,7 @@ View1.DirectionBehaviourEnabled = false;
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim view As New DiagramView ()
 
@@ -2553,7 +2553,7 @@ To enable the node movement only on X-axis, use the following code.
 
 {% highlight c#  %}
 
-[C#]
+
 
 DiagramView View1 = new DiagramView();
 
@@ -2562,7 +2562,7 @@ View1.TranslateRailsMode = TranslateRailsMode.TranslateRailsX;
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim view As New DiagramView ()
 
@@ -2575,7 +2575,7 @@ To enable the node movement only in Y-axis, use the following code example.
 
 
 {% highlight c#  %}
-[C#]
+
 
 DiagramView View1 = new DiagramView();
 
@@ -2584,7 +2584,7 @@ View1.TranslateRailsMode = TranslateRailsMode.TranslateRailsY;
 
 {% endhighlight  %}
 {% highlight vbnet  %}
-[VB]
+
 
 Dim view As New DiagramView ()
 
@@ -2603,7 +2603,7 @@ By default, the enum property value is _None_. Pressing and dragging, selected k
 
 {% highlight c#  %}
 
-[C#]
+
 
 DiagramView View1 = new DiagramView();
 
@@ -2614,7 +2614,7 @@ View1.NodeMovementY = NodeMovementX.Y;
 {% highlight vbnet  %}
 
 
-[VB] 
+ 
 
 Dim view As New DiagramView ()
 
@@ -2637,7 +2637,7 @@ By default, the Enum property value is None. Pressing and dragging, selected Key
 
 
 {% highlight c#  %}
-[C#]
+
 
 DiagramView View1 = new DiagramView();
 
@@ -2648,7 +2648,7 @@ View1.NodeMovementY = NodeMovementX.Y;
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB] 
+ 
 
 Dim view As New DiagramView ()
 
@@ -2681,7 +2681,7 @@ The following code illustrates how to create the style for ResizerThumb
 
 {% highlight html  %}
 
-[XAML]
+
 
 
 
@@ -2751,7 +2751,7 @@ The following code illustrates how to assign the Resize Handler Style to Node
 
 
 {% highlight html  %}
-[XAML]
+
 
 
 
@@ -2777,13 +2777,13 @@ The following code illustrates how to assign the Resize Handler Style to Node
 
 {% endhighlight  %}
 
-* Through Code behind[C#]
+* Through Code behind
 
 The following code illustrates how to assign the Resize Handler Style to Node.
 
 {% highlight c#  %}
 
-[C#] 
+ 
 
 
 
@@ -2808,7 +2808,7 @@ n.BottomRightCornerResizer =this.Resources["BottomRightCornerResizerThump"] as S
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB] 
+ 
 
 
 
@@ -2840,7 +2840,7 @@ The following code illustrates how to set the ResizerThumb Template to Null.
 
 
 {% highlight html  %}
-[XAML]
+
 
 <Style x:Key="TopResizerThump" TargetType="syncfusion:ResizerThumb"> 
 
@@ -2983,7 +2983,7 @@ The Edges, InEdges, and OutEdges properties can be retrieved as follows:
 
 
 {% highlight c#  %}
-[C#]
+
 
   //Getting the Edges of the Node 
 
@@ -3058,7 +3058,7 @@ The Degree, InDegree, and OutDegree properties can be retrieved in the following
 
 {% highlight c#  %}
 
-[C#]
+
 
 //Getting the Degree of the Node
 
@@ -3124,7 +3124,7 @@ The Neighbors, InNeighbors, and OutNeighbors properties can be retrieved as illu
 
 
 {% highlight c#  %}
-[C#]
+
 
 //Getting the Neighbors of the Node
 

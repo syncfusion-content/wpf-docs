@@ -11,7 +11,7 @@ documentation: ug
 
 Schedule reminds you the particular appointment in the specified time by setting the EnableReminderTimer property is true.The remainder time can be set using the ReminderTime property of ScheduleAppointment.
 {% highlight c# %}
-[C#]
+
 
 
 

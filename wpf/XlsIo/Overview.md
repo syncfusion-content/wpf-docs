@@ -29,8 +29,8 @@ XlsIO can read and write Excel files that are compatible with Excel 97 to Excel 
 
 The following image shows a sample worksheet.
 
-{{ '![](Overview_images/Overview_img1.png)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.png)
+
 
 
 Use Case Scenario

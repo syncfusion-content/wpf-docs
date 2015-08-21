@@ -13,8 +13,6 @@ The Icon property of the RadialMenu is used to customize the icon displayed in t
 
 {%highlight xml%}
 
-[XAML]
-
 
 
 <navigation:SfRadialMenu IsOpen="True" >

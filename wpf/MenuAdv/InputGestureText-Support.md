@@ -22,7 +22,7 @@ The value assigned by using the InputGestureText property will be displayed in M
 {% highlight xml %}
 
 
-[XAML]
+
 
 <shared:MenuAdv x:Name="Menu" Margin="10">
 
@@ -116,11 +116,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 InputGestureText</td><td>

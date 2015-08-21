@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-## PivotSchemaDesigner for WPF
+# PivotSchemaDesigner for WPF
 
 PivotSchemaDesigner for WPF can be support in PivotGrid samples so that PivotGrid can be presented like an ExcelPivotTable. It enables drag 
 and drop feature of fields between different areas like Column, row, value and filter. By using the PivotTable Field List, you can add, 
@@ -23,13 +23,13 @@ consisting of the following items:
 
 
 
-### Fields Section
+## Fields Section
 
 The Fields section consists of the list of fields present in the PivotGrid including Row, Column, and Summary elements. A field will be added 
 to the PivotGrid if it is checked, or it will be removed from the PivotGrid if it is unchecked. By default, fields will be added to the row 
 label if checked, and added to the column label by simply dragging the field and dropping it onto the column label area.
 
-### Layout Section
+## Layout Section
 
 The layout section is used to rearrange and reposition the fields in a PivotGrid. It has the following areas:
 
@@ -39,7 +39,7 @@ The layout section is used to rearrange and reposition the fields in a PivotGrid
 * Values
 
 
-### Report Filter
+## Report Filter
 
 
 Report filter is used to filter the entire report based on the selected item in the report filter. The Report filter pop-up window can be 
@@ -49,36 +49,35 @@ launched by clicking on the expander icon available in the right corner of each 
 
 
 
-### Column Label
+## Column Label
 
 The column label is used to display fields as columns at the top of a report. A column lower in position is nested within another column 
 immediately above it in the PivotGrid.
 
-### Row Label
+## Row Label
 
 The row label is used to display fields as rows at the top of a report. A row lower in position is nested within another row immediately above 
 it in the PivotGrid.
 
-### Values
+## Values
 
 Values are used to display summary values.
 
 
-### Pivot Computation Information Window
+## Pivot Computation Information Window
 
 The Pivot Computation Information window is used to change or edit value format and summary type.
 
 ![](PivotSchemaDesigner-for-WPF_images/PivotSchemaDesigner-for-WPF_img3.png)
 
 
-
-### Binding PivotTableDesigner to PivotGrid
+## Binding PivotTableDesigner to PivotGrid
 
 The PivotTableDesigner can be bound to PivotGrid with the help of the PivotControl property of PivotTableDesigner.
 
 {% highlight xml %} 
 
-[XAML]
+
 
 <!--PivotTable designer--> 
 
@@ -110,16 +109,16 @@ The following screen shot shows a PivotSchemaDesigner control with all items and
 
 #### Properties
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }} </td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Data Type**' | markdownify }} </td><td>
-{{ '**Reference links**' | markdownify }} </td></tr>
+<th>
+{{ '**Property**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Data Type**' | markdownify }} </th><th>
+{{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
 <td>
 ShowDisplayFieldsOnly</td><td>
@@ -139,8 +138,6 @@ SystemDrive\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<Version_
 ### Sample IList Data
 
 {% highlight C# %}  
-
-[C#]
 
 public class ProductSales
 
@@ -259,7 +256,6 @@ public class ProductSales
 
 {% highlight vbnet %} 
 
-[VB]
 
 Public Class ProductSales
 

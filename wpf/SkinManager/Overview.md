@@ -11,7 +11,7 @@ documentation: ug
 
 The Skin Manager Framework provides a convenient way to give the appealing appearance to the WPF controls as well as the Syncfusion controls.
 
-Feature Summary
+###Feature Summary
 
 * 9 Built-In skins support for the Syncfusion controls as well as the Microsoft controls.
 * Applying Custom color for the WPF controls by setting the Single property.
@@ -27,16 +27,16 @@ Skins can be applied to the control by setting the VisualStyle property defined 
 
 
 
-_Visual Style Property_
+Visual Style Property
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td><td>
-Reference links</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
@@ -47,7 +47,7 @@ Setting VisualStyle in XAMLSetting VisualStyle in C#</td></tr>
 </table>
 
 
-Setting VisualStyle in XAML
+##Setting VisualStyle in XAML
 
 The following code snippet explains how to set the VisualStyle property in XAML.
 
@@ -55,25 +55,19 @@ The following code snippet explains how to set the VisualStyle property in XAML.
 
 
 
-[XAML]
-
-xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-
-
+         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
 
 2. Set the VisualStyle property for the control as shown below. 
 
 
 
-[XAML]
+		   <syncfusion:CalendarEdit syncfusion:SkinStorage.VisualStyle="Blend">
+		   </syncfusion:CalendarEdit>  
 
-&lt;syncfusion:CalendarEdit syncfusion:SkinStorage.VisualStyle="Blend"&gt;&lt;/syncfusion:CalendarEdit&gt;  
+   {:.prettyprint}
 
-
-
-Setting VisualStyle in C#
+## Setting VisualStyle in C#
 
 You can also set the VisualStyle property in C# using SetVisualStyle.
 
@@ -85,9 +79,10 @@ The following code snippet explains how to set the VisualStyle property in C#.
 
 
 
-[XAML]
 
-&lt;syncfusion:CalendarEdit Name="calendar"&gt;&lt;/syncfusion:CalendarEdit&gt; 
+
+          <syncfusion:CalendarEdit Name="calendar">
+		  </syncfusion:CalendarEdit> 
 
 
 
@@ -95,21 +90,21 @@ The following code snippet explains how to set the VisualStyle property in C#.
 
 
 
-[C#]
-
-SkinStorage.SetVisualStyle(calendar, "Blend");
 
 
+          SkinStorage.SetVisualStyle(calendar, "Blend");
+
+   {:.prettyprint}
 
 The output is displayed as shown below.
 
 
 
 ![](Overview_images/Overview_img1.png)
-{:.image }
 
 
-_Calendar with Blend Style_
+
+Calendar with Blend Style
 
 ## Active Color Scheme
 
@@ -117,16 +112,16 @@ You can set the custom color for the WPF controls by using the ActiveColorScheme
 
 
 
-_ActiveColorScheme Property_
+ActiveColorScheme Property
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td><td>
-Reference links</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 ActiveColorScheme  </td><td>
@@ -137,7 +132,7 @@ Setting ActiveColorScheme property in XAMLSetting ActiveColorScheme property in 
 </table>
 
 
-Setting ActiveColorScheme property in XAML
+##Setting ActiveColorScheme property in XAML
 
 The following code snippet explains how to set the ActiveColorScheme property in XAML.
 
@@ -145,9 +140,9 @@ The following code snippet explains how to set the ActiveColorScheme property in
 
 
 
-[XAML]
 
-xmlns:syncfusion=http://schemas.syncfusion.com/wpf
+
+            xmlns:syncfusion=http://schemas.syncfusion.com/wpf
 
 
 
@@ -157,13 +152,15 @@ xmlns:syncfusion=http://schemas.syncfusion.com/wpf
 
 
 
-[XAML]
-
-&lt;syncfusion:CalendarEdit Name="calendar" syncfusion:SkinManager.ActiveColorScheme="Red"&gt;&lt;/syncfusion:CalendarEdit&gt; 
 
 
+          <syncfusion:CalendarEdit Name="calendar" syncfusion:SkinManager.ActiveColorScheme="Red">
+		  </syncfusion:CalendarEdit> 
 
-Setting ActiveColorScheme property in C#
+
+   {:.prettyprint}
+   
+## Setting ActiveColorScheme property in C#
 
 You can set the custom color for the WPF controls in C# using _SetActiveColorScheme._
 
@@ -175,9 +172,10 @@ The following code snippet explains how to set the ActiveColorScheme property in
 
 
 
-[XAML]
 
-&lt;syncfusion:CalendarEdit Name="calendar"&gt;&lt;/syncfusion:CalendarEdit&gt; 
+
+				<syncfusion:CalendarEdit Name="calendar">
+				</syncfusion:CalendarEdit> 
 
 
 
@@ -187,23 +185,23 @@ The following code snippet explains how to set the ActiveColorScheme property in
 
 
 
-[C#]
-
-SkinManager.SetActiveColorScheme(calendar, Brushes.Red);
 
 
+             SkinManager.SetActiveColorScheme(calendar, Brushes.Red);
 
 
 
 
 
-The output is displayed as shown below.
-
-![](Overview_images/Overview_img2.png)
-{:.image }
 
 
-_Calendar with Custom Color_
+   The output is displayed as shown below.
+
+   ![](Overview_images/Overview_img2.png)
+
+   {:.prettyprint}
+
+Calendar with Custom Color
 
 ## Metro Theme Customization
 
@@ -223,11 +221,11 @@ The following are the brushes that can be customized in Metro Theme.
 
 
 
-Setting MetroBackgroundBrush property in XAML
+##Setting MetroBackgroundBrush property in XAML
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -235,35 +233,35 @@ Setting MetroBackgroundBrush property in XAML
 
         Title="Window1" Height="350" Width="525" xmlns:syncfusion="http://schemas.syncfusion.com/wpf" syncfusion:SkinStorage.VisualStyle="Metro" syncfusion:SkinStorage.MetroBackgroundBrush="Green">
 
-&lt;/syncfusion:ChromelessWindow&gt;
+</syncfusion:ChromelessWindow>
+
+{% endhighlight %}
 
 
 
-
-
-Setting MetroBackgroundBrush property in C#
+##Setting MetroBackgroundBrush property in C#
 
 
 
-[C#]
+{% highlight c# %}
 
 SkinStorage.SetMetroBrush(this, Brushes.Green);
 
-
+{% endhighlight %}
 
 
 
 ![](Overview_images/Overview_img3.png)
-{:.image }
 
 
-_Metro Customization Demo_
+
+Metro Customization Demo
 
 ## ResourceDictionary Path for Syncfusion Themes
 
 Resouce Dictionary path for Syncfusion themes are tabulated below:
 
-Replace “&lt; CurrentVsiualStyle&gt;“  with the  required  Visualstyle name 
+Replace “< CurrentVsiualStyle>“  with the  required  Visualstyle name 
 
 Ex:
 
@@ -271,179 +269,179 @@ To merge the Office2010Blue Theming Dictionary for MicrosoftControls  into the a
 
 
 
-[XAML]
+{% highlight xml %}
 
-&lt;ResourceDictionary&gt;
+<ResourceDictionary>
 
-&lt;ResourceDictionary.MergedDictionaries&gt;
+<ResourceDictionary.MergedDictionaries>
 
-&lt;ResourceDictionary  Source="/Syncfusion.Shared.WPF;Component/SkinManager/                Office2010BlueStyle.xaml"/&gt;
+<ResourceDictionary  Source="/Syncfusion.Shared.WPF;Component/SkinManager/                Office2010BlueStyle.xaml"/>
 
-&lt;/ResourceDictionary.MergedDictionaries&gt;
+</ResourceDictionary.MergedDictionaries>
 
-&lt;/ResourceDictionary&gt;
+</ResourceDictionary>
 
+{% endhighlight %}
 
-
-_Controls table_
+Controls table
 
 <table>
 <tr>
-<td>
-Control Name</td><td>
-Theming Resource Dictionary Path</td></tr>
+<th>
+Control Name</th><th>
+Theming Resource Dictionary Path</th></tr>
 <tr>
 <td>
 MSControls</td><td>
-/Syncfusion.Shared.WPF;component/SkinManager/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/SkinManager/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 AutoComplete</td><td>
-/Syncfusion.Tools.WPF;component/Controls/AutoComplete/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/AutoComplete/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 Busy Indicator</td><td>
-/Syncfusion.Shared.WPF;component/Controls/BusyIndicator/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/BusyIndicator/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 ButtonAdv</td><td>
-/Syncfusion.Shared.WPF;component/Controls/ButtonControls/Button/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/ButtonControls/Button/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 DropDownButtonAdv</td><td>
-/Syncfusion.Shared.WPF;component/Controls/ButtonControls/DropDownButton/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/ButtonControls/DropDownButton/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 SplitButtonAdv</td><td>
-/Syncfusion.Shared.WPF;component/Controls/ButtonControls/SplitButton/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/ButtonControls/SplitButton/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 Calendar</td><td>
-/Syncfusion.Shared.WPF;component/Controls/Calendar/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/Calendar/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 CardView</td><td>
-/Syncfusion.Tools.WPF;component/Controls/CardView/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/CardView/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 Clock</td><td>
-/Syncfusion.Shared.WPF;component/Controls/Clock/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/Clock/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 CheckListBox</td><td>
-/Syncfusion.Tools.WPF;component/Controls/CheckListBox/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/CheckListBox/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 ColorPicker</td><td>
-/Syncfusion.Shared.WPF;component/Controls/ColorPicker/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/ColorPicker/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 ColorPickerPalette</td><td>
-/Syncfusion.Shared.WPF;component/Controls/ColorPickerPalette/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/ColorPickerPalette/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 ComboBoxAdv</td><td>
-/Syncfusion.Shared.WPF;component/Controls/ComboBoxAdv/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/ComboBoxAdv/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 ChromelessWindow</td><td>
-/Syncfusion.Shared.WPF;component/Controls/ChromeliessWindow/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/ChromeliessWindow/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 DateTimeEdit</td><td>
-/Syncfusion.Shared.WPF;component/Controls/DateTimeEdit/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/DateTimeEdit/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 DockingManager</td><td>
-/Syncfusion.Tools.WPF;component/Framework/DockingManager/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Framework/DockingManager/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 DocumentContainer</td><td>
-/Syncfusion.Tools.WPF;component/Framework/DocumentContainer/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Framework/DocumentContainer/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 Editors(for All TextBoxControls)</td><td>
-/Syncfusion.Shared.WPF;component/Controls/Editors/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/Editors/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 FontListBox</td><td>
-/Syncfusion.Tools.WPF;component/Controls/FontListBox/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/FontListBox/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 FontListComboBox</td><td>
-/Syncfusion.Tools.WPF;component/Controls/FontComboBox/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/FontComboBox/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 Gallery</td><td>
-/Syncfusion.Tools.WPF;component/Controls/Gallery/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/Gallery/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 GroupBar</td><td>
-/Syncfusion.Tools.WPF;component/Controls/GroupBar/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/GroupBar/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 HierarchyNaviagator</td><td>
-/Syncfusion.Tools.WPF;component/Controls/HierarchyNavigator/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/HierarchyNavigator/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 MenuAdv</td><td>
-/Syncfusion.Shared.WPF;component/Controls/MenuAdv/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/MenuAdv/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 NotifyIcon</td><td>
-/Syncfusion.Tools.WPF;component/Controls/NotifyIcon/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/NotifyIcon/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 PinnableListBox</td><td>
-/Syncfusion.Shared.WPF;component/Controls/PinnableListBox/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/PinnableListBox/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 RangeSlider</td><td>
-/Syncfusion.Tools.WPF;component/Controls/RangeSlider/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/RangeSlider/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 Ribbon</td><td>
-/Syncfusion.Tools.WPF;component/Framework/Ribbon/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Framework/Ribbon/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 TabControlExt</td><td>
-/Syncfusion.Tools.WPF;component/Controls/TabControlExt/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/TabControlExt/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 TabNavigationControl</td><td>
-/Syncfusion.Tools.WPF;component/Controls/TabNavigationControl/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/TabNavigationControl/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 TabSplitter</td><td>
-/Syncfusion.Tools.WPF;component/Controls/TabSplitter/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/TabSplitter/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 TaskBar</td><td>
-/Syncfusion.Tools.WPF;component/Controls/TaskBar/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/TaskBar/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 TileView</td><td>
-/Syncfusion.Shared.WPF;component/Controls/TileView/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/TileView/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 TimeSpanEdit</td><td>
-/Syncfusion.Shared.WPF;component/Controls/TimeSpanEdit/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/TimeSpanEdit/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 ToolBarAdv</td><td>
-/Syncfusion.Shared.WPF;component/Controls/ToolBarAdv/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/ToolBarAdv/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 TreeViewAdv</td><td>
-/Syncfusion.Tools.WPF;component/Controls/TreeViewAdv/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/TreeViewAdv/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 UpDown</td><td>
-/Syncfusion.Shared.WPF;component/Controls/Updown/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Shared.WPF;component/Controls/Updown/Themes/<CurrentVisualStyle>.xaml</td></tr>
 <tr>
 <td>
 WizardControl</td><td>
-/Syncfusion.Tools.WPF;component/Controls/WizardControl/Themes/&lt;CurrentVisualStyle&gt;.xaml</td></tr>
+/Syncfusion.Tools.WPF;component/Controls/WizardControl/Themes/<CurrentVisualStyle>.xaml</td></tr>
 </table>
 
 

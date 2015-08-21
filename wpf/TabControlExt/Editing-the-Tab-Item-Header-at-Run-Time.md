@@ -13,7 +13,6 @@ You can edit the header of the Tab Item at run time by enabling the EnableLabelE
 
 
 {% highlight xml %}
-[XAML]
 
 
 

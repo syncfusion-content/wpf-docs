@@ -11,7 +11,7 @@ documentation: ug
 
 3D charts are used to view two-dimensional data in a three-dimensional view, and can be rotated in all 3 dimensions to get the best possible view of the data.
 
-##Key features
+## Key features
 
 * Eight types of chart series.
 * Perspective view.
@@ -21,6 +21,7 @@ documentation: ug
 * Dynamic update.
 * Dynamic rotation.
 * Selection support.
+
 ## Creating 3D Charts
 
 
@@ -29,46 +30,45 @@ The following steps explain how to create 3D charts.
 1. Open the Add Reference window from your project.
 2. Choose Windows > Extensions > Syncfusion controls for WinRT XAML.
 3. Add the following namespace in your XAML page:
+  
+       xmlns:Syncfusion="using:Syncfusion.UI.Xaml.Charts"
+  
+   
 
-
-
-{% highlight xml %}
-
-xmlns:Syncfusion="using:Syncfusion.UI.Xaml.Charts"
-
-{% endhighlight %}
 
 4. Initialize the chart represented by the following class, Syncfusion.UI.Xaml.Charts.SfChart3D:
 
-{% highlight xml %}
 
-<Syncfusion:SfChart3D>
 
-</Syncfusion:SfChart3D>
-{% endhighlight %}
+		<Syncfusion:SfChart3D>
+
+		</Syncfusion:SfChart3D>
+
 
 
 5. Next, declare the primary axis and secondary axis:
 
-{% highlight xml %}
 
-<Syncfusion:SfChart3D>
 
- <Syncfusion:SfChart3D.PrimaryAxis>
+		<Syncfusion:SfChart3D>
 
-       <Syncfusion:CategoryAxis3D/>
+		 <Syncfusion:SfChart3D.PrimaryAxis>
 
-  </Syncfusion:SfChart3D.PrimaryAxis>
+		       <Syncfusion:CategoryAxis3D/>
 
-  <Syncfusion:SfChart3D.SecondaryAxis>
+		  </Syncfusion:SfChart3D.PrimaryAxis>
 
-       < Syncfusion:NumericalAxis3D/>
+		  <Syncfusion:SfChart3D.SecondaryAxis>
 
-  </Syncfusion:SfChart3D.SecondaryAxis>
+		       < Syncfusion:NumericalAxis3D/>
 
-</Syncfusion:SfChart3D >
-{% endhighlight %}
-###Add Chart Series to Chart
+		  </Syncfusion:SfChart3D.SecondaryAxis>
+
+		</Syncfusion:SfChart3D >
+		
+   {:.prettyprint}		
+
+### Add Chart Series to Chart
 
 To begin with plotting data choose from a wide variety of graphical representations available in the Chart library (e.g., 3DColumn series, 3D PieSeries). The graph selected will depend on the scenario of the user and the nature of the data.
 
@@ -94,7 +94,7 @@ To begin with plotting data choose from a wide variety of graphical representati
 
 {% endhighlight %}
 
-###Create a Sample Data Source
+### Create a Sample Data Source
 
 Since the above step will produce only an empty column 3D chart, plotting data must be added to the chart. This step illustrates how to create a sample data source. The data source must implement the IEnumerable interface.
 
@@ -153,7 +153,7 @@ public class UsersViewModel
  }
 {% endhighlight %}
 
-###Binding Data to ChartSeries
+### Binding Data to ChartSeries
 
 Add the above UsersViewModel to the DataContext of the chart, bind the data source to the ItemsSource property of the 3D column series, and then map the data using XBindingPath and YBindingPath properties.
 
@@ -299,7 +299,7 @@ A Boolean property to show or hide the labels</td></tr>
 
 ## Series
 
-###Series Types
+### Series Types
 
 * Column
 * Bar
@@ -312,7 +312,7 @@ A Boolean property to show or hide the labels</td></tr>
 
 
 
-###Create a simple chart series
+### Create a simple chart series
 
 The following code can be used to create a simple doughnut series:
 
@@ -450,7 +450,8 @@ The following code example illustrates how to enable the dynamic rotation:
 
 <Syncfusion:SfChart3D EnableRotation="True" x:Name="Chart" Height="500" Width="600">
 {% endhighlight %}
-##SegmentSelection
+ 
+## SegmentSelection
 
 To enable segment selection in a 3D chart, set the SegmentSelectionBrush property in chart series.
 
@@ -522,7 +523,7 @@ The following screenshot illustrates the result of the above code example.
 
 
 
-##SeriesSelection
+## SeriesSelection
 
 Series selection support is used to highlight the series programmatically or by user interaction. Also you can get a series SelectedIndex, PreviousSelectedIndex value in SelectionChanged event arguments. 
 
@@ -586,7 +587,7 @@ The following screenshot is an example of a SfChart3D with series selection.
 
 
 
-##Dynamic explode
+## Dynamic explode
 
 This feature allows users to explode a particular segment in a circular series. This can also be achieved by setting the ExplodeIndex property. 
 

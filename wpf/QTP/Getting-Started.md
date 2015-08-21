@@ -18,8 +18,7 @@ The following is a list of chapters containing information that steps you throug
 To create a new test
 
 1. Open QTP by double-clicking the QuickTest Professional icon. 
-> 
-_Note: The QuickTest Professional – Add-in Manager window is displayed._ 
+>  Note: The QuickTest Professional – Add-in Manager window is displayed.
 
 2. Select the WPF check box under the Add-in header. This ensures that WPF add-in is installed. 
 
@@ -28,8 +27,7 @@ _Note: The QuickTest Professional – Add-in Manager window is displayed._
 
 
 3. Click OK. 
-> 
-_Note: The QuickTest Professional – [Start Page] window opens. There are two tabs namely Start Page and Test in the main pane of the window. The content under the Start Page tab is displayed by default._
+>  Note: The QuickTest Professional – [Start Page] window opens. There are two tabs namely Start Page and Test in the main pane of the window. The content under the Start Page tab is displayed by default.
 
    ![](Getting-Started_images/Getting-Started_img2.png)
 
@@ -42,8 +40,7 @@ _Note: The QuickTest Professional – [Start Page] window opens. There are two t
 
 
 5. A new test is created. 
-> 
-_Note: You can also create a new test by selecting the Test tab in the main pane of the window or Test sub-menu under the New menu in the menu bar._
+  Note: You can also create a new test by selecting the Test tab in the main pane of the window or Test sub-menu under the New menu in the menu bar.
 
 6. Click Record in the toolbar to start the recording. 
 
@@ -75,7 +72,7 @@ _Note: You can also create a new test by selecting the Test tab in the main pane
 
 
 
-> _Note: The Application Details dialog box opens._ 
+> Note: The Application Details dialog box opens.
 
   ![](Getting-Started_images/Getting-Started_img7.png)
 
@@ -94,31 +91,29 @@ button.
 
 
 
-> _Note: Both Launch application and Include descendant processes check boxes are selected by default._ 
+> Note: Both Launch application and Include descendant processes check boxes are selected by default.
 
 15. Click OK. 
-> 
-_Note: The path of the application and working folder are displayed in the Application details frame as displayed in the following screenshot._
+>  Note: The path of the application and working folder are displayed in the Application details frame as displayed in the following screenshot.
 
     ![](Getting-Started_images/Getting-Started_img10.png)
 
 
 
 16. Click OK. 
-> 
-_Note: The recording starts. The application in the given path is opened as displayed in the following screenshot._
+>  Note: The recording starts. The application in the given path is opened as displayed in the following screenshot.
 
     ![](Getting-Started_images/Getting-Started_img11.png)
 
 
 
 17. Perform the required valid user-action in the application. 
-> 
-_Note:_
 
-* _Whenever the user performs any action involving the Syncfusion control used in the application, the Syncfusion.cfg file maps the control to the corresponding DLL._ 
-* _Finally, the DLL renders the correct method names of the Syncfusion namespace that are called respective to the user-actions performed._ 
-* _These method names are then recorded and displayed in the screen behind the running application, as illustrated in the following screenshot._ 
+> Note:
+
+* Whenever the user performs any action involving the Syncfusion control used in the application, the Syncfusion.cfg file maps the control to the corresponding DLL.
+* Finally, the DLL renders the correct method names of the Syncfusion namespace that are called respective to the user-actions performed. 
+* these method names are then recorded and displayed in the screen behind the running application, as illustrated in the following screenshot.
 
    ![](Getting-Started_images/Getting-Started_img12.png)
 
@@ -135,8 +130,7 @@ The process of creating and recording the test is completed.
 On recording, all your actions performed in the control are just noted with the corresponding method names of the Syncfusion namespace. The errors can be checked while running a test. To run a test, refer to the following steps. 
 
 1. Click Run in the toolbar. 
-> 
-_Note: Run dialog box opens. The Results Location tab is selected by default._
+>  Note: Run dialog box opens. The Results Location tab is selected by default.
 
    ![](Getting-Started_images/Getting-Started_img13.png)
 
@@ -149,12 +143,10 @@ New run results folder - Allows the results of the test to be written to the sel
 Temporary run results folder (overwrites any existing temporary results) - Allows the results to get stored in a temporary location. 
 
 2. Select the required option. 
-> 
-_Note: Selecting one option renders the other unavailable._
+>  Note: Selecting one option renders the other unavailable.
 
 3. Browse and select the required location.
-> 
-_Note: QTP starts the running process; application containing the recorded Syncfusion control is opened and it shows all the recorded events in a continuous flow one-by-one. After it finishes running the test, it displays the Test [Result_Written_Location] - Test Results dialog box, where the results are summarized as illustrated in the following screenshot._
+> Note: QTP starts the running process; application containing the recorded Syncfusion control is opened and it shows all the recorded events in a continuous flow one-by-one. After it finishes running the test, it displays the Test [Result_Written_Location] - Test Results dialog box, where the results are summarized as illustrated in the following screenshot.
 
    ![](Getting-Started_images/Getting-Started_img14.png)
 
@@ -178,7 +170,7 @@ The following screenshot illustartes adding a script line to the Expert View pan
 
 You can run the edited test to check whether the newly added/changed scripts affect the running process, by displaying the changes in the running application.
 
-> _Note: Sometimes the newly added/changed script may have an error causing the whole application to fail. In such a case, the Test Results dialog shows the failure as illustrated in the following screenshot._
+> Note: Sometimes the newly added/changed script may have an error causing the whole application to fail. In such a case, the Test Results dialog shows the failure as illustrated in the following screenshot.
 
 ![](Getting-Started_images/Getting-Started_img16.png)
 
@@ -203,7 +195,7 @@ For editing the test in Keyword view, you can perform any of the following actio
 
 For example, clicking Cut in the menu causes the row representing a user-action to be cut. You can then right-click on any other item and click Paste on the menu displayed. This causes the row to be pasted before the right-clicked item.
 
-> _Note: All the items under the Item header are represented as a drop-down list._
+> Note: All the items under the Item header are represented as a drop-down list.
 
 ![](Getting-Started_images/Getting-Started_img19.png)
 
@@ -232,8 +224,7 @@ Saving a test is as simple as saving any other document or picture. To save a te
 The tests that are saved can be replayed later. For running such tests, refer to the following steps.
 
 1. Click Open on the toolbar. 
-> 
-_Note: The Open Test dialog box opens with a list of saved tests._
+>  Note: The Open Test dialog box opens with a list of saved tests.
 
 ![](Getting-Started_images/Getting-Started_img21.png)
 
@@ -244,7 +235,7 @@ _Note: The Open Test dialog box opens with a list of saved tests._
 
 
 
-> _Note: The saved test is opened with its name and the complete path as the name of the window. By default, the Expert View of the Test is opened._
+> Note: The saved test is opened with its name and the complete path as the name of the window. By default, the Expert View of the Test is opened.
 
 The following image illustrates the generated methods based on recording the process in SyncfusionGridDataControl. 
 

@@ -11,7 +11,7 @@ documentation: ug
 
 SfDataGrid control allows you to print the data displayed in the DataGrid. The Print Manager__of SfDataGrid is designed to support different orientations, sizes, margins, etc.  You can change print settings using the PrintSettings property of SfDataGrid. The following section covers all different API sets, print preview options and methods in printing feature.
 
-### Overview
+## Overview
 
 EssentialDataGrid for WPF provides in-built support for print and print preview.You can enable the printing features inSfDataGrid control. You can print SfDataGrid control in two ways – 
 
@@ -24,10 +24,10 @@ _Methods table_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 SfDataGrid.ShowPrintPreview()</td><td>
@@ -45,11 +45,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property Name</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 SfDataGrid.PrintSettings.AllowColumnWidthFitToPrintPage</td><td>
@@ -137,7 +137,7 @@ The following code example shows you how to use Printing feature in SfDataGrid w
 {% highlight xml %}
 
 
-[XAML]
+
 
 <Window.DataContext>
 
@@ -159,7 +159,7 @@ The following code example shows you how to use Printing feature in SfDataGrid w
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -204,7 +204,7 @@ The following screenshot displays the SfDataGrid in print preview mode.
 
 _SfDataGrid in print preview mode_
 
-### Custom Printing
+## Custom Printing
 
 The default SfDataGrid.ShowPrintPreview() provides you the multiple options in printing. It also provides the flexibility to write CustomPrintManager.  The descendant of Custom Print Manager is derived from GridPrintManager based on the required level of customization method that is overridden.  
 
@@ -214,10 +214,10 @@ _Method Table_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 GridPrintManager.InitializeProperties()</td><td>
@@ -286,7 +286,7 @@ The following code example shows you how a CustomPrintManager is developed using
 
 {% highlight C# %}
 
-[C#]
+
 
     internal class CustomPrintManager : GridPrintManager
 
@@ -458,7 +458,7 @@ When Custom Print Manager is created, you can assign it to PrintManagerBase to l
 
 {% highlight C# %}
 
-[C#]
+
 
 var window = new PreviewWindow();
 
@@ -478,9 +478,9 @@ The following screenshot displays you how SfDataGrid is printed.
 
 _SfDataGrid in print mode_
 
-### How to
+## How to
 
-#### How to set Header and Footer in Printable Page
+### How to set Header and Footer in Printable Page
 
 DataGrid allows you to set the Header and Footer in Printable page. You can set the Header and Footer by using PrintPageHeaderTemplate and PrintPageFooterTemplate properties. 
 
@@ -489,7 +489,7 @@ The following code example illustrates how to set Header and Footer in Printable
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window.Resources>
 
@@ -510,7 +510,7 @@ The following code example illustrates how to set Header and Footer in Printable
 
 {% highlight C# %}
 
-[C#]
+
 
 private void ShowPrintPreview(object sender, RoutedEventArgs e)
 

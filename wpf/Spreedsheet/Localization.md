@@ -25,7 +25,7 @@ The following are steps to implementation Localization support to an application
 
    Example: Syncfusion.Spreadsheet.WPF.ja.resx.
 
-   _Note: It is mandatory to use this naming convention._
+   > Note: It is mandatory to use this naming convention.
 
 
 
@@ -51,7 +51,7 @@ The following are steps to implementation Localization support to an application
 
 
 
-   _localizing the application to the Japanese Culture_
+   localizing the application to the Japanese Culture
 
 
 
@@ -61,7 +61,7 @@ The following are steps to implementation Localization support to an application
    
    ~~~ cs
    
-   [C#] 
+    
    public MainPage()
    { 
    System.Threading.Thread.CurrentThread.CurrentUICulture = new 
@@ -72,7 +72,7 @@ The following are steps to implementation Localization support to an application
    {:.prettyprint}
 
    ~~~vbnet
-   [VB] 
+    
    Public Sub New()
    System.Threading.Thread.CurrentThread.CurrentUICulture = New 
    System.Globalization.CultureInfo("ja-JP")
@@ -106,7 +106,7 @@ The following are the steps to add Supported Cultures:
 
 A demo of localization is available at the following location:  
 
-Essential Studio WPF Sample Browser  Spreadsheet  Localization Localization Demo..
+Essential Studio WPF Sample Browser  Spreadsheet  Localization Localization Demo..
 
 
 

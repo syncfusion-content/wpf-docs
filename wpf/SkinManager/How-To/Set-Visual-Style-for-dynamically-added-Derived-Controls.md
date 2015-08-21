@@ -7,7 +7,7 @@ control: SkinManager
 documentation: ug
 ---
 
-### Set Visual Style for dynamically added Derived Controls
+# Set Visual Style for dynamically added Derived Controls
 
 Normally, a control added to an application will dynamically pick up the existing style using the Skin Manager. But when an user control derived from the existing control is added to an application, a style based on the Base class should be defined in the application. 
 
@@ -15,7 +15,7 @@ The following code snippet explains the scenario where an user control of Button
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -27,13 +27,13 @@ The following code snippet explains the scenario where an user control of Button
 
          Height="300" Width="300" xmlns:theme="http://schemas.syncfusion.com/wpf" theme:SkinStorage.VisualStyle="Blend">  
 
-&lt;/Button&gt;
+</Button>
 
 
+{% endhighlight %}
 
 
-
-[C#]
+{% highlight C# %}
 
 
 
@@ -52,47 +52,46 @@ public partial class TestButton : Button
     }
 
 
-
+{% endhighlight %}
 
 
 Styles based on the button style should be defined in the application as follows. You have to merge the corresponding Resource Dictionary when overriding the style in the application.
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
-&lt;Application.Resources&gt;
+<Application.Resources>
 
-        &lt;ResourceDictionary&gt;
+        <ResourceDictionary>
 
-            &lt;ResourceDictionary.MergedDictionaries&gt;
+            <ResourceDictionary.MergedDictionaries>
 
-                &lt;ResourceDictionary Source="/Syncfusion.Shared.WPF;component/SkinManager/BlendStyle.xaml"/&gt;
+                <ResourceDictionary Source="/Syncfusion.Shared.WPF;component/SkinManager/BlendStyle.xaml"/>
 
-            &lt;/ResourceDictionary.MergedDictionaries&gt;        
+            </ResourceDictionary.MergedDictionaries>        
 
-        &lt;Style TargetType="local:TestButton" BasedOn="{StaticResource BlendButtonStyle}"&gt;
+        <Style TargetType="local:TestButton" BasedOn="{StaticResource BlendButtonStyle}">
 
-            &lt;Setter Property="Background" Value="GoldenRod"/&gt;
+            <Setter Property="Background" Value="GoldenRod"/>
 
-        &lt;/Style&gt;
+        </Style>
 
-        &lt;/ResourceDictionary&gt;
+        </ResourceDictionary>
 
-    &lt;/Application.Resources&gt;
+    </Application.Resources>
 
 
-
+{% endhighlight %}
 
 
 The output is displayed as shown below.
 
 
-
 ![](Set-Visual-Style-for-dynamically-added-Derived-Controls_images/Set-Visual-Style-for-dynamically-added-Derived-Controls_img1.png)
-{:.image }
+
 
 
 

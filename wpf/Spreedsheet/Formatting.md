@@ -71,7 +71,6 @@ The following code illustrates how to bind the ConditionalFormatCommand to a but
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -87,6 +86,7 @@ The following code illustrates how to bind the ConditionalFormatCommand to a but
 
 
 {%endhighlight%}
+
 ![](Formatting_images/Formatting_img5.png)
 
 
@@ -103,7 +103,6 @@ You can define the number formatting using the NumberFormattingCommand. Number f
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -152,12 +151,12 @@ This feature center aligns the cell value in Spreadsheet, across the range of se
 {{ '**Type**' | markdownify }}</th><th>
 {{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
-<th>
-SetCenterAcrossSelection()</th><th>
-This method sets the Center Across Selection on the selected cells. It should be explicitly called to set Centre Across Selection.</th><th>
-setCenterAcrossSelection() </th><th>
-null</th><th>
-void </th></tr>
+<td>
+SetCenterAcrossSelection()</td><td>
+This method sets the Center Across Selection on the selected cells. It should be explicitly called to set Centre Across Selection.</td><td>
+setCenterAcrossSelection() </td><td>
+null</td><td>
+void </td></tr>
 </table>
 
 
@@ -167,7 +166,6 @@ The following code snippets manually set the center across selection by calling 
 
 {%highlight c#%}
 
-[C#]
 
 SpreadsheetControl.GridProperties.CurrentExcelGridModel.setCenterAcrossSelection();
 
@@ -176,7 +174,6 @@ SpreadsheetControl.GridProperties.CurrentExcelGridModel.setCenterAcrossSelection
 {%highlight vbnet%}
 
 
- [VB]
  
  SpreadsheetControl.GridProperties.CurrentExcelGridModel.setCenterAcrossSelection()
 
@@ -187,7 +184,6 @@ The following code snippet manually sets the center across selection by calling 
 
 {%highlight xml%}
 
-[XAML]
 
 <Button Content="CentreAcrossSelection" Margin="5" Width="200" Command="{Binding ElementName=spreadSheetControl, Path=CenterAcrossSelectionCommand}"/>
 

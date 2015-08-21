@@ -11,7 +11,7 @@ documentation: ug
 
 The view of the Bullet Graph is changed by setting the Orientation property. Quantitative scale contains two major components: ticks and labels. The length of the quantitative scale is customized by using the QuantitativeScaleLength property. The direction of the quantitative scale is personalized by making use of the FlowDirection property it’s either Forward or Backward.
 {% highlight html %}
-[XAML]
+
 
   <syncfusion:SfBulletGraph Orientation="Vertical"   FlowDirection="Forward"
 
@@ -55,7 +55,7 @@ The view of the Bullet Graph is changed by setting the Orientation property. Qua
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -87,11 +87,12 @@ The view of the Bullet Graph is changed by setting the Orientation property. Qua
 
 ![](Concept-and-Features_images/Concept-and-Features_img1.png)
 
+_SfBulletGraph with Vertical Orientation_
 
 
 ![](Concept-and-Features_images/Concept-and-Features_img2.png)
 
-
+_SfBulletGraph with Horizontal Orientation_
 
 
 

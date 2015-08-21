@@ -64,7 +64,6 @@ TabControlExt control is created by using either XAML or C# code. The following 
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -76,7 +75,6 @@ TabControlExt control is created by using either XAML or C# code. The following 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -102,7 +100,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-> _Note: To display the TabControlExt using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed._
+> Note: To display the TabControlExt using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed.
 
 
 

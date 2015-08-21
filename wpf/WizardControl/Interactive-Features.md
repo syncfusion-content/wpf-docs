@@ -20,7 +20,6 @@ To add a wizard page to the Wizard control, use the below code
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -32,8 +31,6 @@ To add a wizard page to the Wizard control, use the below code
 {% endhighlight %}
 
 {% highlight C# %}
-
-[C#]
 
 
 
@@ -60,7 +57,6 @@ To add two wizard pages to the Wizard control, refer the below code
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -75,7 +71,6 @@ To add two wizard pages to the Wizard control, refer the below code
 
 {% highlight C# %}
 
-[C#]
 
 
 
@@ -108,7 +103,6 @@ To set this property, use the below code.
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -125,7 +119,6 @@ To set this property, use the below code.
 
 {% highlight C# %}
 
-[C#]
 
 
 
@@ -171,7 +164,6 @@ Use the following code snippet to set these properties.
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -186,7 +178,6 @@ Description="This is the first page of wizard" />
 
 {% highlight C# %}
 
-[C#]
 
 
 
@@ -224,7 +215,6 @@ Use the below code snippet to set the PageType as Blank.
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -239,7 +229,6 @@ Use the below code snippet to set the PageType as Blank.
 
 {% highlight C# %}
 
-[C#]
 
 
 
@@ -265,7 +254,6 @@ Use the following code snippet to set the PageType as Interior.
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -280,7 +268,6 @@ Use the following code snippet to set the PageType as Interior.
 
 {% highlight C# %}
 
-[C#]
 
 
 
@@ -301,7 +288,6 @@ Use the following code snippet to set the PageType as Exterior.
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -314,7 +300,6 @@ Use the following code snippet to set the PageType as Exterior.
 
 {% highlight C# %}
 
-[C#]
 
 
 
@@ -358,7 +343,6 @@ Here is the code snippet.
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -373,7 +357,6 @@ NextEnabled="True" CancelEnabled="True">
 
 {% highlight C# %}
 
-[C#]
 
 
 
@@ -409,7 +392,6 @@ To set these properties, refer the below code.
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -426,7 +408,6 @@ CancelVisible="True" HelpVisible="True" FinishVisible="False">
 {% highlight C# %}
 
 
-[C#]
 
 
 
@@ -463,7 +444,6 @@ You can set custom text for the Back, Next, Finish, Help and Cancel navigation b
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -480,7 +460,6 @@ HelpText="Help" CancelText="Exit" FinishText="Finish" NextText="Next">
 
 {% highlight C# %}
 
-[C#]
 
 
 
@@ -507,7 +486,7 @@ wizardControl.FinishText = "Finish";
 ![](Interactive-Features_images/Interactive-Features_img9.jpeg)
 
 
-> _Note: You can set custom text for the navigation buttons in the wizard control only. You cannot set custom text for the navigation buttons in the wizard page._
+> Note: You can set custom text for the navigation buttons in the wizard control only. You cannot set custom text for the navigation buttons in the wizard page.
 
 
 
@@ -527,7 +506,6 @@ You can set the navigation to the Next and Previous pages by using the NextPage 
 
 {% highlight C# %}
 
-[C#]
 
 
 
@@ -574,7 +552,6 @@ To enable these properties, refer the below code
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -589,7 +566,6 @@ To enable these properties, refer the below code
 
 {% highlight C# %}
 
-[C#]
 
 
 
@@ -650,7 +626,6 @@ Routed Event</th><th>
 {% highlight xml %}
 
 
-[XAML]
 
 		<syncfusion:WizardControl Name="wizardControl" 
 

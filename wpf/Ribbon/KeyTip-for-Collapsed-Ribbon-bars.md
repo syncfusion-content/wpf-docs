@@ -17,7 +17,7 @@ The KeyTips are displayed for the Collapsed RibbonBar.
 
 {% highlight xml %}
 
-    [XAML]
+    
 
    <syncfusion:RibbonBar KeyTipOnCollapsed="FS" Header="Font">
 <syncfusion:RibbonButton  />
@@ -74,16 +74,16 @@ The WPF Sample Browser window is displayed.
 
 
 
-_Property table_
+Property table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 KeyTipOnCollapsed</td><td>

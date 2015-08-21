@@ -11,22 +11,26 @@ documentation: ug
 
 CalendarEdit control allows you to select multiple dates, by setting the AllowMultiplySelection property to true. The following code example illustrates this.
 
-<table>
-<tr>
-<td>
-[XAML]<!-- Adding CalendarEdit with multiple selection feature--><syncfusion:CalendarEdit Name="calendarEdit" AllowMultiplySelection="True"/></td></tr>
-<tr>
-<td>
-[C#]//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Allow multiple selection of datecalendarEdit.AllowMultiplySelection = true; //Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
-</table>
+{% highlight xml %}
+<!-- Adding CalendarEdit with multiple selection feature-->
+<syncfusion:CalendarEdit Name="calendarEdit" AllowMultiplySelection="True"/>
+{% endhighlight  %}
+{% highlight c# %}
+//Creating an instance of CalendarEdit control
+CalendarEdit calendarEdit = new CalendarEdit();
+//Allow multiple selection of date
+calendarEdit.AllowMultiplySelection = true; 
+//Adding CalendarEdit as window content
+this.Content = calendarEdit;
+{% endhighlight  %}
 
 
 
 
-{{ '![](Selecting-Multiple-Dates_images/Selecting-Multiple-Dates_img1.jpeg)' | markdownify }}
-{:.image }
+![](Selecting-Multiple-Dates_images/Selecting-Multiple-Dates_img1.jpeg)
 
 
+_AllowMultiplySelection = "True"_
 
 
 See Also

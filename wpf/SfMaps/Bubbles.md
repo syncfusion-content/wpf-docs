@@ -15,14 +15,14 @@ Bubbles are included when data binding is set as mentioned above and the BubbleM
 
 The following properties are available in BubbleMarkerSetting:
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 AutoFillColor</td><td>
@@ -78,7 +78,7 @@ To add bubbles to a map, the bubble marker setting has to be added to the shape 
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -120,20 +120,20 @@ To add bubbles to a map, the bubble marker setting has to be added to the shape 
 
 
 
-_Adding Bubbles_
+Adding Bubbles
 
 ## Customizing Bubble Symbol
 
 The shape of the bubble symbol can be modified by using built-in symbols like circle, rectangle, diamond, triangle, trapezoid, star, pentagon, and pushpin that are available in the BubbleType enum property. Also, bubbles can be customized by setting the CustomTemplate of the BubbleMarkerSetting.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 BubbleType</td><td>
@@ -149,7 +149,7 @@ Gets or sets the template to customize the bubble.> {{ '_Note: BubbleType should
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -221,20 +221,20 @@ Gets or sets the template to customize the bubble.> {{ '_Note: BubbleType should
 
 
 
-_Bubble with Star Symbol_
+Bubble with Star Symbol
 
 ## Range Color Mapping
 
 Range color mapping is one of the features used to differentiate the bubble fill, based on its under-bound value and color ranges. It contains the following properties:
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 From & To</td><td>
@@ -252,7 +252,7 @@ The fill color of a particular bubble fill can be determined by its under-bound 
 
 {% highlight xml %}
 
-[XAML]
+
 
               <syncfusion:BubbleMarkerSetting AutoFillColor="False" MaxSize="100" MinSize="50" ColorValuePath="Population"                                                        ValuePath="Population" BubbleType="Star">
 
@@ -290,7 +290,7 @@ Create the “Model” and the “ViewModel” as mentioned in the Data Binding 
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfMap >
 
@@ -342,5 +342,5 @@ Create the “Model” and the “ViewModel” as mentioned in the Data Binding 
 
 
 
-_RangeColorMapping for Bubbles_
+RangeColorMapping for Bubbles
 

@@ -11,7 +11,7 @@ documentation: ug
 
 TreeMaps are ideal for visualizing large amounts of data. The visualization space is split up into rectangles that are sized and colored based on the quantitative variables. The levels in the hierarchy of the tree map are visualized as rectangles containing other rectangles.
 
-Use Cases
+###Use Cases
 
 Tree maps are used to represent large or complex data sets in various applications such as,
 

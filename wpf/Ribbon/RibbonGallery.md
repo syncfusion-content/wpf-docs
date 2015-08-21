@@ -35,7 +35,7 @@ Use the following code snippet to add an InRibbon RibbonGallery control to a Rib
 
 {% highlight xml %}
 
-    [XAML]
+    
 
 
 
@@ -56,7 +56,7 @@ The following code snippet is used to add a DropDown RibbonGallery control to a 
 
 {% highlight xml %}
 
-    [XAML]
+    
 
 
 
@@ -80,7 +80,7 @@ Ribbon Gallery Items are the contents of the Ribbon Gallery Group. Ribbon Galler
 Use the following code snippet to add a Ribbon Gallery Items.
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -104,7 +104,7 @@ Use the following code to add a Ribbon Gallery Group to the Ribbon Gallery contr
 
 {% highlight xml %}
 
-    [XAML]
+    
 
 
 
@@ -136,7 +136,7 @@ To specify the GalleryFilters of the RibbonGallery, use the below code
 
 {% highlight xml %}
 
-    [XAML]
+    
 
 
 
@@ -225,7 +225,7 @@ In the expanded Gallery items (in both the Visual Mode), it is possible to add c
 
 {% highlight xml %}
 
-    [XAML]
+    
 
 
 

@@ -14,6 +14,7 @@ This section elaborates on the following run time interactive features:
 * Selection
 * Sorting
 * Column Sizing
+
 ## Selection Support
 
 
@@ -34,7 +35,7 @@ The following code example illustrates cell range selections in the Grid Tree.
 
 {%highlight c#%}
 
-[C#]
+
 
 
 
@@ -66,11 +67,11 @@ _Properties Table_
 
 <table>
 <tr>
-<td
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 AllowSort</td><td>
@@ -111,12 +112,12 @@ _Methods Table_
 {{ '**Parameter Description**' | markdownify }}</th><th>
 {{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
-<th>
-SortTree</th><th>
-Used to sort a particular column.</th><th>
-Overloads: 1) (string colName, ListSortDirection dir) 2) (string colName, ListSortDirection dir, bool clearSort) </th><th>
-ColName—name of the column to be sorted.dir—describes the direction of the sort (ascending or descending).clearSort—checks whether any existing sort should be clear before the new sort is applied.</th><th>
-Void</th></tr>
+<td>
+SortTree</td><td>
+Used to sort a particular column.</td><td>
+Overloads: 1) (string colName, ListSortDirection dir) 2) (string colName, ListSortDirection dir, bool clearSort) </td><td>
+ColName—name of the column to be sorted.dir—describes the direction of the sort (ascending or descending).clearSort—checks whether any existing sort should be clear before the new sort is applied.</td><td>
+Void</td></tr>
 </table>
 
 
@@ -124,7 +125,7 @@ The sorting can be enabled by using the AllowSort property. The following code e
 
 {%highlight c#%}
 
-[C#]
+
 
 this.treeGrid.AllowSort = true;
 
@@ -132,7 +133,7 @@ this.treeGrid.AllowSort = true;
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -162,14 +163,14 @@ The multicolumn sorting can be enabled by using the EnableMultiColumnSorting pro
 
 
 {%highlight c#%}
-[C#]
+
 
 this.treeGrid.EnableMultiColumnSorting = true;
 
 {%endhighlight%}
 
 {%highlight xml%}
-[XAML]
+
 
 
 
@@ -207,7 +208,7 @@ This sorting can be enabled by using the EnableTriStateSorting property. The no 
 
 
 {%highlight c#%}
-[C#]
+
 
 this.treeGrid.EnableTriStateSorting = true;
 
@@ -215,7 +216,7 @@ this.treeGrid.EnableTriStateSorting = true;
 
 
 {%highlight xml%}
-[XAML]
+
 
 
 
@@ -244,12 +245,13 @@ The GridTree control also features the custom sorting. The following additional 
 * public IComparer<GridTreeNode> SortComparer—allows to perform the custom sorting. The default implementation assumes the underlying node items implement the IComparable technique and uses that implementation for the sorting comparisons within the columns. If your objects are not sortable using this technique, then you need to provide a sort comparer that properly sorts the grid nodes items based on the sort property values.
 * public string SortProperty—it is a string that holds the column name to be sorted. You can specify a sort direction by appending a space followed by either ASC or DESC. In addition, you can specify the multicolumn sorting by passing several columns separated by commas. For example, "Price ASC, Weight DESC", which will indicate to sort the Price column in ascending order, and then sort the Weight column in descending order.
 * public List<SortState> SortStates—it is a list of sort states for the columns currently sorted in the GridTree control. The SortState class contains information regarding the direction and the property sorted, and it exposes static helper methods, which takes care of the changes between SortStates and SortProperty.
+
 ## Column Sizing
 
 
 The GridTree control supports autosizing its columns such that the display of the tree occupies the entire width of the client area available in the Grid Tree. The sizing is done by columns occupying certain percentages of the available space. To implement this feature, the Grid Tree must be free to size with its parent.
 
-> _Note: You cannot set the Width or HorizontalAlignment properties of the Grid Tree when this feature has been enabled._
+> Note: You cannot set the Width or HorizontalAlignment properties of the Grid Tree when this feature has been enabled.
 
 You can enable this feature in two ways. 
 
@@ -261,7 +263,7 @@ The following code example illustrates these settings.
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -294,6 +296,7 @@ The PercentSizingBehavior property provides the following options to size the co
 * SizeUntouchedColumns–This option will autosize the columns which have the PercentWidth property set, as long as the user does not explicitly change the width of this column through the UI. If the user changes the column size, the column width will not be changed as the Grid Tree is sized.
 * NoSizingIfAnyTouched–If the user sets the size of any column through the UI, all autosizing stops and the column size will not be changed as the Grid Tree is sized.
 * SizeAlwaysPercent–This option will not allow the user to size any column. The columns will always use the percentage sizing to determine their size as the Grid Tree is sized. 
+
 ## Update Mode
 
 
@@ -315,11 +318,11 @@ _Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 UpdateMode</td><td>
@@ -327,13 +330,14 @@ Defines the behavior when updating data to the underlying collection while editi
 Dependency </td><td>
 UpdateMode</td></tr>
 </table>
+
 ### Adding UpdateMode to an Application 
 
 The following code snippet explains how to set UpdateMode in XAML.
 
 {%highlight xml%}
 
-[XAML]
+
 
 <syncfusion:GridTreeControl 
 
@@ -355,7 +359,7 @@ The following code sample shows how to set UpdateMode in C#.
 
 
 {%highlight c#%}
-[C#]
+
 
 this.treeGrid.UpdateMode = UpdateMode.LostFocus;
 
@@ -379,7 +383,7 @@ The following code example illustrates how to apply LevelStyles to the Grid Tree
 
 {%highlight c#%}
 
-[C#]
+
 
 
 
@@ -427,7 +431,7 @@ The following code example illustrates how to set this property for a column in 
 
 {%highlight c#%}
 
-[C#]
+
 
 
 
@@ -459,7 +463,7 @@ Here is the code for coloring a particular cell.
 
 {%highlight c#%}
 
-[C#]
+
 
 
 
@@ -535,7 +539,7 @@ _Cell Style_
 
 Thus, the background of a grid cell can be customized.
 
-> _Note: Level styles are the lowest in precedence, followed by column styles, and then followed by cell -specific styles set in QueryCellInfo._
+> Note: Level styles are the lowest in precedence, followed by column styles, and then followed by cell -specific styles set in QueryCellInfo.
 
 ### Customizing the ExpandCell
 
@@ -545,9 +549,9 @@ _GridTree control Property_
 
 <table>
 <tr>
-<td>
-{{ '**GridTree control Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**GridTree control Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 Triangle</td><td>
@@ -577,7 +581,7 @@ PathGeometry Class-Represents a complex shape that may be composed of arcs, curv
 
 {%highlight c#%}
 
-[C#]
+
 
 
 
@@ -671,7 +675,7 @@ The following code example illustrates how to handle the RequestNodeImage event.
 
 {%highlight c#%}
 
-[C#]
+
 
 
 
@@ -707,11 +711,11 @@ _Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 StyleManager </td><td>
@@ -766,9 +770,9 @@ _Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 CellBackgroundBrush</td><td>
@@ -810,7 +814,7 @@ XAML Code
 
 {%highlight xml%}
 
-[XAML]
+
 
 <sf:GridTreeStyleManager.CellAppearance>
 
@@ -888,9 +892,9 @@ _Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 ExpanderBackground</td><td>
@@ -944,7 +948,7 @@ XAML Code
 
 {%highlight xml%}
 
-[XAML]
+
 
     <sf:GridTreeStyleManager.ExpanderAppearance>
 
@@ -1010,9 +1014,9 @@ _Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 HeaderBackgroundBrush</td><td>
@@ -1070,7 +1074,7 @@ XAML Code
 
 {%highlight xml%}
 
-[XAML]
+
 
     <sf:GridTreeStyleManager.HeaderAppearance>
 
@@ -1162,9 +1166,9 @@ _Properties_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 CurrentCellBorderBrush</td><td>
@@ -1230,7 +1234,7 @@ XAML Code
 
 {%highlight xml%}
 
-[XAML]
+
 
    <sf:GridTreeStyleManager.RowAppearance>
 
@@ -1377,7 +1381,7 @@ The following code illustrates how to serialize the GridTree control as an XML s
 
 {%highlight c#%}
 
-[C#]
+
 
 string result=this.treeGrid.InternalGrid.SerializeAsString();
 
@@ -1389,7 +1393,7 @@ The following code illustrates how to serialize the GridTree control as an XML f
 
 {%highlight c#%}
 
-[C#]
+
 
 this.treeGrid.InternalGrid.Serialize("newChanges.xml");
 
@@ -1401,7 +1405,7 @@ The following code illustrates how to serialize the GridTree control as an XML s
 
 {%highlight c#%}
 
-[C#]
+
 
 TextWriter sw=new StreamWriter("newChanges.xml");
 
@@ -1425,7 +1429,7 @@ The following code illustrates how to deserialize from an XML string_._
 
 {%highlight c#%}
 
-[C#]
+
 
  //the result should be an XML string saved during the serialization process.
 
@@ -1441,7 +1445,7 @@ The following code illustrates how to deserialize an XML file.
 
 {%highlight c#%}
 
-[C#]
+
 
 //newChanges.xml file should be the XML file saved during the serialization 
 
@@ -1459,7 +1463,7 @@ The following code illustrates how to deserialize an XML stream.
 
 {%highlight c#%}
 
-[C#]
+
 
 //newChanges.txt file should be the text file saved during the serialization
 

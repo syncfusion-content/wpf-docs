@@ -14,13 +14,13 @@ ColorPicker and ColorEdit controls can be displayed in two different modes. They
 To set the ColorSelection Mode as "HSV" for ColorEdit control, use the below code.
 
 {% highlight xml %}
-[XAML]
+
 <!-- Adding ColorEdit -->
 <syncfusion:ColorEdit  Margin="20" VisualizationStyle="HSV" Name="colorEdit"/><
 {% endhighlight %}
 
 {% highlight C# %}
-[C#]
+
 //Creating an instance of color edit
 ColorEdit colorEdit = new ColorEdit();
 
@@ -44,7 +44,7 @@ To set the ColorSelection Mode as "HSV" for ColorPicker control, use the below c
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -77,7 +77,7 @@ this.Content = colorPicker;
 To set the ColorSelection Mode as "RGB" for ColorEdit control, use the below code.
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -109,7 +109,7 @@ this.Content = colorEdit;
 To set the ColorSelection Mode as "RGB" for ColorPicker control, use the below code.
 
 {% highlight C# %}
-[C#]
+
 
 
 

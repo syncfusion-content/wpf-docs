@@ -17,7 +17,7 @@ ContextViewManager can be used to choose any one of the three different views. T
 
 The following code example explains how to choose the predecessors view
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -37,5 +37,5 @@ ContextView.ContextViewMode =ContextViewMode.Predecessors
 
 _Context View_
 
-_Note: By default, the context view manager will show the neighborhood view._
+> Note: By default, the context view manager will show the neighborhood view.
 

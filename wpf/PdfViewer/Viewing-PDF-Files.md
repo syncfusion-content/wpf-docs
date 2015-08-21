@@ -7,11 +7,11 @@ control: PDF Viewer
 documentation: ug
 ---
 
-### Viewing PDF Files 
+# Viewing PDF Files 
 
 A PDF can be loaded into the PDF Viewer either through the File Open dialog available in the toolbar or through the Load method. It also requests passwords to open encrypted documents.
 
-[C#]
+{% highlight c# %}
 
 //Initialize PDF Viewer.
 
@@ -23,9 +23,9 @@ PdfViewerControl pdfViewer1 = new PdfViewerControl();
 
 pdfViewer1.Load("Template.pdf");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Initialize PDF Viewer.
 
@@ -37,11 +37,11 @@ Private pdfViewer1 As New PdfViewerControl()
 
 pdfViewer1.Load("Template.pdf")
 
-
+{% endhighlight %}
 
 You can load an encrypted document by using the overload in the Load method.
 
-[C#]
+{% highlight c# %}
 
 //Initialize PDF Viewer.
 
@@ -52,10 +52,10 @@ PdfViewerControl pdfViewer1 = new PdfViewerControl();
 //Load the PDF.
 
 pdfViewer1.Load("Template.pdf", "password");
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Initialize PDF Viewer.
 
@@ -67,11 +67,11 @@ Private pdfViewer1 As New PdfViewerControl()
 
 pdfViewer1.Load("Template.pdf", "password")
 
-
+{% endhighlight %}
 
 You can also load the PDF document by setting its path to the ItemSource property
 
-[C#]
+{% highlight c# %}
 
 //Initialize PDF Viewer.
 
@@ -82,10 +82,10 @@ PdfViewerControl pdfViewer1 = new PdfViewerControl();
 //Load the PDF.
 
 pdfViewer1. ItemSource="Template.pdf";
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Initialize PDF Viewer.
 
@@ -97,3 +97,4 @@ Private pdfViewer1 As New PdfViewerControl()
 
 pdfViewer1. ItemSource = "Template.pdf"
 
+{% endhighlight %}

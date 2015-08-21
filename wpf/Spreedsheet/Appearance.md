@@ -21,7 +21,6 @@ Spreadsheet control provides API support for specifying the font style for the c
 
 {%highlight c#%}
 
-[C#]
 
 //Applying font settings to a worksheet range
 
@@ -61,7 +60,6 @@ spreadControl.ExcelProperties.CurrentExcelRangeStyle.CellStyle.Font.Italic = tru
 
 {%highlight vbnet%}
 
-[VB]
 
 ' Applying font settings to a worksheet range 
 
@@ -109,7 +107,6 @@ You can set the font family to the spreadsheet cells using the _FontFamilyComman
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -129,7 +126,6 @@ The following code illustrates how to merge the selected cells in Spreadsheet:
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -143,7 +139,6 @@ The following code illustrates how to unmerge the selected cells in Spreadsheet:
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -169,7 +164,6 @@ The following code illustrates, how to add and remove the cell border in Spreads
 
 {%highlight xml%}
 
-[XAML]
 
 <!--To draw the Bottom Border-->
 
@@ -217,7 +211,6 @@ The following code illustrates this:
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -264,12 +257,12 @@ Users can wrap text for a selected range of cells by just calling a method.
 {{ '**Type**' | markdownify }}</th><th>
 {{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
-<th>
-SetWrapText()</th><th>
-This Method is called to set wrapText on selected cells.This method is called when we manually invoke the method or when we call wrapText command.This method changes the float cell to WrapText cell and calls the method AutoSizeToFit().</th><th>
-Overloads: nil </th><th>
-Nil</th><th>
-void</th></tr>
+<td>
+SetWrapText()</td><td>
+This Method is called to set wrapText on selected cells.This method is called when we manually invoke the method or when we call wrapText command.This method changes the float cell to WrapText cell and calls the method AutoSizeToFit().</td><td>
+Overloads: nil </td><td>
+Nil</td><td>
+void</td></tr>
 </table>
 
 

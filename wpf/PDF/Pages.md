@@ -36,7 +36,7 @@ Some of the page sizes supported is as follows:
 
 The following code sample illustrate the various page settings.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -76,9 +76,9 @@ document.Save("Output.pdf");
 
 document.Close(true);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -117,6 +117,7 @@ document.Save("Output.pdf")
 'Closes the document.
 
 document.Close(True)
+{% endhighlight %}
 
 ## Add a Page
 
@@ -124,7 +125,7 @@ Add method of the PdfPage Collection class allows you to add an empty page in a 
 
 The following code sample explains you on how to add a page in a PDF file. The Add() method of the PdfPageCollection class adds the page at the end.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -156,9 +157,9 @@ graphics.DrawString("Hello world!", font, brush, new PointF(20, 20));
 
 document.Save("Sample.pdf");
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -190,13 +191,13 @@ graphics.DrawString("Hello world!", font, brush,new PointF(20,20)) 
 
 document.Save("Sample.pdf")
 
-
+{% endhighlight %}
 
 You can add new pages to an existing document in the front, middle, or at the end.
 
 The following code sample illustrates how to insert a new page by specifying the index.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -226,9 +227,9 @@ loadedDocument.Save("Output.pdf");
 
 loadedDocument.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -257,6 +258,7 @@ graphics.DrawString("Page 2", font, PdfBrushes.Black, PointF.Empty)
 loadedDocument.Save("Output.pdf")
 
 loadedDocument.Close()
+{% endhighlight %}
 
 Removing a page
 
@@ -267,7 +269,7 @@ You can also remove pages from an existing PDF document by using following metho
 
 The following code sample illustrates how to remove an existing page from the PDF document.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -288,10 +290,10 @@ loadedDocument.Save("Output.pdf");
 //Closes the document.
 
 loadedDocument.Close(true);
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -312,12 +314,13 @@ loadedDocument.Save("Sample.pdf")
 'Closes the document.
 
 loadedDocument.Close(True)
+{% endhighlight %}
 
 ## Import pages
 
 Essential PDF allows you to import a page or import a range of pages from one document to the other. The following code sample illustrates how to import a page to the existing document.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -347,9 +350,9 @@ loadedDocument.Close();
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -379,11 +382,11 @@ loadedDocument.Close()
 
 document.Close()
 
-
+{% endhighlight %}
 
 The following code sample illustrates how to import a page to the existing document using ImportPagemethod.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -409,9 +412,9 @@ loadedDocument.Close();
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -436,7 +439,7 @@ document.Save("Output.pdf")
 loadedDocument.Close()
 
 document.Close()
-
+{% endhighlight %}
 
 
 Implementation Note
@@ -452,17 +455,17 @@ Restrictions
 
 
 
-> _Note: To import the document asynchronously for Windows Store apps, refer the_ [Asynchronous Support](http://help.syncfusion.com/ug/windows%20forms/pdf/documents/asynchronoussupport.htm) _section._
+> Note: To import the document asynchronously for Windows Store apps, refer the_ [Asynchronous Support](http://help.syncfusion.com/ug/windows%20forms/pdf/documents/asynchronoussupport.htm) _section.
 
 ## TextElement
 
 ### Drawing Text
 
-PDF provides higher-level facilities that permit an application to describe, select, and render glyphs conveniently and efficiently.  Drawing Text in a PDF document is made simpler and similar to .NET GDI API. This section demonstrates you on how a string is drawn in a PDF page by using Essential PDF.
+PDF provides higher-level facilities that permit an application to describe, select, and render glyphs conveniently and efficiently.  Drawing Text in a PDF document is made simpler and similar to .NET GDI API. This section demonstrates you on how a string is drawn in a PDF page by using Essential PDF.
 
 The DrawString method draws the text string at the specified location with the selected Brush and Font.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -494,9 +497,9 @@ graphics.DrawString("Hello world!", font, brush, new PointF(20, 20));
 
 doc.Save("Sample.pdf");
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -528,5 +531,5 @@ graphics.DrawString("Hello world!", font, brush,new PointF(20,20))
 
 doc.Save("Sample.pdf")
 
-
+{% endhighlight %}
 

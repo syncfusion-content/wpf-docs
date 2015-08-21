@@ -7,7 +7,7 @@ control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-## Filtering
+# Filtering
 
 SfMultiColumnDropDownControl allows you to filter the item that is bound to the ItemsSource of the SfMulticolumnDropDown control. When you type on the Editor, it returns the suggestion for typed text based on the DisplayMember. 
 
@@ -20,7 +20,7 @@ The following code example illustrates how to enable IncrementalFiltering in SfM
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -75,7 +75,7 @@ By default, SfMultiColumnDropDownControl enables you to filter text based on the
 
 {% highlight C# %}
 
-[C#]
+
 
 
 

@@ -17,7 +17,7 @@ Charts can convey much more than numbers and makes it easier to see the meaning 
 
 Essential XlsIO has APIs for creating an embedded chart. The IChartShape interface represents the embedded chart's in-memory, and this object can be used to format and modify the chart settings for chart area, plot area, and chart title area, with gradient, texture, patterns and pictures. A chart in XlsIO can be created either through the Data Range of the chart or by adding series one by one. The following code example illustrates how to create a chart through the Data Range.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -80,10 +80,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -146,6 +146,7 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 ## Supported Chart Types 
 
@@ -225,12 +226,13 @@ The following Chart types are supported in XlsIO.
 * Surface_Contour
 * Surface_NoColor_3D
 * Surface_NoColor_Contour
+
 ## Chart Appearance Settings 
 
 
 The appearance of a chart can be modified according to the convenience and usage. These appearance includes, Chart Area, Chart Title, Plot Area, Borders, Axis Settings, DataLabel settings, etc.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -401,10 +403,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -577,12 +579,13 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 ## Chart Data Settings 
 
 IChartFrameFormat can be used to change the format of the chart. IChartSeries is used to format the series. XlsIO provides options to enable/disable Legends and Data Tables by using the HasLegend and HasDataTable properties. You can also resize and position the embedded chart in a worksheet.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -707,10 +710,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -833,12 +836,13 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 ## Applying 3D Formats
 
 Essential XlsIO allows you to modify side wall, back wall, and floor settings of a 3-D chart. The following code example explains how to apply these settings to a 3-D chart.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1051,10 +1055,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1265,12 +1269,13 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 ## Creating Custom Charts 
 
 Custom charts can be created at runtime by using XlsIO. A chart is composed of data series. Each data series in XlsIO is represented by a series object, whereas series collection object serves as a collection of Series objects.When creating a custom chart, there is freedom to use different types of charts for different data series. The following code example demonstrates how to create custom charts. In this example, use a column chart for the first data series and a line chart for the second series. The result is to add a column chart combined with a line chart to the worksheet.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1387,10 +1392,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1518,21 +1523,21 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
+![](Working-with-Charts_images/Working-with-Charts_img1.png)
 
-{{ '![](Working-with-Charts_images/Working-with-Charts_img1.png)' | markdownify }}
-{:.image }
 
 
 ## Positioning Charts and Chart Elements
 
 Charts and Chart elements such as chart title, legend, and plot area can be positioned easily as needed. To avoid spacing problems caused by the large charts, lengthy chart titles, plot area, or legends, you can change the position of these elements. 
 
-Positioning Chart
+##Positioning Chart
 
 Chart created in a worksheet by using IChartShape interface can be positioned by row and column based. The following code example illustrates how to position a chart in a worksheet.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1600,9 +1605,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1670,13 +1675,13 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-Positioning Chart Elements
+###Positioning Chart Elements
 
 The following code example illustrates how to position the chart elements.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -1812,10 +1817,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1966,16 +1971,17 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 ## Resizing Charts and Chart Elements
 
 Charts and Chart elements such as chart title, legend, and plot area can be resized easily as needed. You can specify the exact position of the chart and chart elements as required.
 
-Resizing Chart
+###Resizing Chart
 
 Chart created in a worksheet by using IChart interface can be resized by height and width. The following code example illustrates how to resize a chart in a worksheet.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2076,10 +2082,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -2195,13 +2201,13 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-Resizing Chart Elements
+##Resizing Chart Elements
 
 The following code example illustrate how to resize the chart elements.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2313,9 +2319,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -2432,18 +2438,19 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 ## Using Sparklines 
 
 In MS Excel, the Sparklines can be inserted by selecting any of the sparklines type from the Insert tab. 
 
-{{ '![](Working-with-Charts_images/Working-with-Charts_img2.png)' | markdownify }}
-{:.image }
+![](Working-with-Charts_images/Working-with-Charts_img2.png)
+
 
 
 MS Excel allows you to select the range of data for the Sparklines creation. It also allows you to choose where the sparklines can be placed. The Sparklines appear once you select the data range and the location range. Now, you can customize the apperance of Sparklines in terms of color, style, etc. A group of Sparkline tools are available on the ribbon to change the high point, low point, color, edit the sparkline data, etc.
 
-Sparkline Creation by Using XlsIO
+###Sparkline Creation by Using XlsIO
 
 XlsIO provides support for creation of Sparklines by using simple APIs. 
 
@@ -2454,7 +2461,7 @@ XlsIO provides support for creation of Sparklines by using simple APIs.
 
 The following code example illustrates how to create Sparklines by using XlsIO.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2527,10 +2534,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -2603,22 +2610,22 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 
-
-Sparklines Options by XlsIO
+##Sparklines Options by XlsIO
 
 MS Excel provides various options through Sparklines tool ribbon in order to customize the appearance of the Sparklines.
 
-{{ '![](Working-with-Charts_images/Working-with-Charts_img3.png)' | markdownify }}
-{:.image }
+![](Working-with-Charts_images/Working-with-Charts_img3.png)
 
 
-Type
+
+###Type
 
 In MS Excel, click Design and then Type in order to customize the Sparkline type for the current Sparklines. XlsIO provides an equivalent API to perform this with simple properties as follows.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2689,9 +2696,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -2762,15 +2769,15 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-Show
+###Show
 
 In MS Excel, click Design and then Show in order to customize the view of the Sparklines with high point, low point, first point, last point, negative point, markers. XlsIO provides an equivalent API to perform this with simple properties as follows.
 
 Known Limitation: The Markers can be applied only for the line sparkline type_._
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2860,9 +2867,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -2950,13 +2957,13 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-Sparkline Color
+###Sparkline Color
 
 The appearance of the Sparklines can be customized by applying colors.  Click Design and then select Style. Choose the Sparkline color option in order to customize the Sparklines. XlsIO provides an equivalent API to perform this with simple property as follows.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -3035,10 +3042,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -3116,13 +3123,13 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-Marker Color
+###Marker Color
 
 The apperance of points in the sparklines can be customized by applying colors to it. Click Design and then select Style. Choose the Marker Color option to customize the appearance of points in the Sparklines. XlsIO provides an equivalent API to perform this with simple properties as follows.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -3199,9 +3206,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -3286,14 +3293,14 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 
-
-Edit Group Data and Location
+##Edit Group Data and Location
 
 MS Excel provides an option to edit the location and group data of exsisting Sparklines where you can assign a new location or group data for an exsisting sparklines. XlsIO provides an equivalent API to perform this funtionality.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -3352,10 +3359,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dipose();         
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -3416,14 +3423,14 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 
-
-Line Weight
+##Line Weight
 
 MS Excel provides an exclusive option to customize the Line Weight of the Line Sparkline type. XlsIO provides an API to perform this functionality.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -3500,9 +3507,9 @@ workbook.Close();
 
 this.Close();         
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -3576,21 +3583,21 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 Known Limitation: The Line weight can be applied only for the line sparkline type_._
 
-Hidden and Empty Cell Settings
+###Hidden and Empty Cell Settings
 
 Normally,  in a sparkline group data there is a possibility of an empty cell or a hidden cell. MS Excel 2010 provides a dialog box to apply settings on hidden and empty cells.
 
-{{ '![](Working-with-Charts_images/Working-with-Charts_img4.png)' | markdownify }}
-{:.image }
+![](Working-with-Charts_images/Working-with-Charts_img4.png)
+
 
 
 XlsIO provides a simple API to implement the above functionality.This is illustrated in the following code example.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -3667,9 +3674,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -3747,13 +3754,13 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-Display Axis
+###Display Axis
 
 MS Excel provides an option to display the axis for the sparklines types.This is illustrated in the following code example.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -3827,10 +3834,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -3910,13 +3917,13 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-Plot Right to Left
+###Plot Right to Left
 
 The plotting of Sparklines is done from left to right, by default. There is an option available in the Sparkline tools to customize the plotting nature from right to left. XlsIO provides a simple API to perform this functionality.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -3991,9 +3998,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -4072,14 +4079,14 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 
-
-Clear
+###Clear
 
 XlsIO provides an API to clear the selected Sparklines within the sparkline groups and also the selected sparklinegroup within the excel spreadsheet.This is illustrated in the following code example.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -4164,10 +4171,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -4253,5 +4260,5 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains you how to use Paging in SfDataGrid and you can see the types of Paging and available properties and methods in Paging.
 
-### Overview:
+## Overview:
 
 The DataGrid control provides interactive support to manipulate the data using the SfDataPager control. It provides many features. Therefore, you can easily manage the DataPaging.To learn more about the SfDataPager control, you can [click here](http://help.syncfusion.com/ug/wpf/sfdatagrid/documents/datapagercontrol.htm).
 
@@ -21,7 +21,7 @@ NormalPaging:__NormalPaging loads the entire data collection to the DataPager.
 
 OnDemandPaging:__OnDemandPaging loads the data to current page dynamically in DataPager.
 
-#### Normal Paging:
+## Normal Paging:
 
 You can page the data in DataGrid using SfDataPager control. You can refer the following steps to enable Paging in DataGrid control.
 
@@ -34,7 +34,7 @@ The following code example illustrates using DataPager with the SfDataGrid contr
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -86,7 +86,7 @@ The following screenshot displays the output.
 
 _DataPager with the SfDataGrid control_
 
-#### OnDemandPaging:
+## OnDemandPaging:
 
 In normal Paging, data collection is entirely loaded initially to the DataPager. However, SfDataPager allows you to load the data for the current page item dynamically in OnDemandPaging. To enable OnDemandPaging, you can set UseOnDemandPaging to ‘true’ in SfDataPager control.
 
@@ -99,14 +99,14 @@ The OnDemandLoading event is triggered when the pager moves to the corresponding
 
 
 
-> _Note: In OnDemand paging, you cannot assign a value for the Source property in SfDataPager._
+> Note: In OnDemand paging, you cannot assign a value for the Source property in SfDataPager.
 
 The following code example illustrates defining DataPager for OnDemandPaging:
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -161,7 +161,7 @@ The following code example illustrates how to load data for the DataPager contro
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -192,7 +192,7 @@ The following code example illustrates how to use ResetCache method,
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -206,9 +206,9 @@ private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs  args)
 {% endhighlight %}
 
 
-### How to
+## How to
 
-#### Export All Pages to Excel
+### Export All Pages to Excel
 
 DataGrid allows you to export to Excel when Paging is enabled. PagedSource exports only the first page by default. By setting ExcelExportOptions.ExportAllPages to true, you can export all pages to Excel.
 
@@ -219,7 +219,7 @@ The following code example illustrates how to use pageoptions in DataGrid.
 
 {% highlight C# %}
 
-[C#]
+
 
  //Setting the Exporting Options by craeting a instance for ExcelExportingOptions.
 
@@ -235,7 +235,7 @@ var excelEngine = dataGrid.ExportToExcel(dataGrid.View, exportingOptions);
 
 
 
-#### Export Pages to Different sheets
+### Export Pages to Different sheets
 
 Datagrid allows you to export PagedSource to different sheets or to single sheet by using ExportPageOptions with two different modes as follows,
 
@@ -248,7 +248,7 @@ The following code example illustratse how to use ExportPageOptions in DataGrid.
 
 {% highlight C# %}
 
-[C#]
+
 
  //Setting the Exporting Options by craeting a instance for ExcelExportingOptions.
 

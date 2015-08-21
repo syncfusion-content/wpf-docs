@@ -43,13 +43,13 @@ This section covers the requirements that are mandatory for installing Essential
 
 The prerequisites are tabulated in the following table.
 
-_Prerequisites Table_
+Prerequisites Table
 
 <table>
 <tr>
-<td>
-Testing Environments</td><td>
-QuickTest Professional of version 9.5 and aboveQuickTest Professional .NET add-in </td></tr>
+<th>
+Testing Environments</th><th>
+QuickTest Professional of version 9.5 and aboveQuickTest Professional .NET add-in </th></tr>
 <tr>
 <td>
 .NET Framework </td><td>
@@ -64,13 +64,13 @@ Essential Studio (User Interface edition – WPF) of the same version as the Ess
 
 Essential QuickTest Professional is compatible with the following operating systems.
 
-_Compatibility Table_
+Compatibility Table
 
 <table>
 <tr>
-<td>
-Operating Systems</td><td>
-Microsoft Windows XPMicrosoft Windows VistaMicrosoft Windows 7Microsoft Windows 8.1</td></tr>
+<th>
+Operating Systems</th><th>
+Microsoft Windows XPMicrosoft Windows VistaMicrosoft Windows 7Microsoft Windows 8.1</th></tr>
 </table>
 
 

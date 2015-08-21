@@ -11,7 +11,7 @@ documentation: ug
 
 Essential Diagram WPF provides the ability to define custom ports for making connections. The ConnectionPort class can be used for defining custom ports on the nodes. Any number of ports can be defined on a node. By default every node has a center port.  
 
-## ConnectionPort has the following properties:
+ConnectionPort has the following properties:
 
 _Property Table_
 
@@ -137,7 +137,7 @@ The following code shows how to add a connection port to the node.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -170,7 +170,7 @@ diagramModel.Nodes.Add(node);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -218,7 +218,7 @@ _Connection Port_
 
 This feature provides an option to add connection ports at runtime through mouse operations. Similarly, connection ports can be removed from a node through mouse operations. 
 
-### Properties
+Properties
 
 _Connection Port at Runtime_
 
@@ -245,7 +245,7 @@ To allow connection ports to be added to a node dynamically, set the AddConnecti
 
 {% highlight c# %}
 
-[C#]
+
 
 Node node = new Node();
 
@@ -255,7 +255,7 @@ node.AddConnectionPortEnabled = true;
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 Dim node As New Node()
 
@@ -265,13 +265,13 @@ node.AddConnectionPortEnabled = True
 
 {% endhighlight  %}
 
-Deleting a Connection Port at Runtime
+#### Deleting a Connection Port at Runtime
 
 A connection port can be deleted from the node dynamically. With the AllowDelete property of a port set to true, hold CTRL+SHIFT and click on the connection port to delete it. The default value of the AllowDelete property is set to true. This can be disabled by setting the AllowDelete property to false.
 
 {% highlight c# %}
 
-[C#]
+
 
 Node node = new Node();
 
@@ -281,7 +281,7 @@ Node node = new Node();
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 Dim node As New Node()
 
@@ -299,7 +299,7 @@ Connection ports for line connectors can be specified by using the Edge property
 
 
 {% highlight c# %}
-[C#] 
+ 
 
 LineConnector line = new LineConnector();
 
@@ -357,7 +357,7 @@ The following code shows how a port shape can be selected for the port.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -392,7 +392,7 @@ diagramModel.Nodes.Add(node);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -440,7 +440,7 @@ The PortVisibility property is used to set the visibility of connection ports on
 2. AlwaysHidden
 3. AlwaysVisible
 
-### Properties
+Properties
 
 _Port Visibility_
 
@@ -460,17 +460,17 @@ Enum</td></tr>
 </table>
 
 
-#### Adding PortVisibility to an Application 
+### Adding PortVisibility to an Application 
 
-#### MouseOverNode
+### MouseOverNode
 
 When the PortVisibility property of the node is set to MouseOverNode, the connection port will be visible only on mouse-over of the node. This is the default value of this property.
 
-#### AlwaysHidden
+### AlwaysHidden
 
 The connection port will always be hidden, when PortVisibility property of the Node is set to AlwaysHidden.
 
-#### AlwaysVisible
+### AlwaysVisible
 
 ConnectionPort will be visible always, when PortVisiblity property of the Node is set to AlwaysVisible.
 
@@ -515,7 +515,7 @@ The following code shows how to set some of these properties.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -554,7 +554,7 @@ diagramModel.Nodes.Add(node);
 {% endhighlight %}
 {% highlight c# %}
 
-[VB]
+
 
 
 
@@ -632,7 +632,7 @@ Appearance of the ConnectionPort can be customized by applying style for the Cus
 
 {% highlight html %}
 
-[XAML]
+
 
          <Style TargetType="{x:Type syncfusion:ConnectionPort}">
 
@@ -674,7 +674,7 @@ The following code shows how to set the AllowPortDrag property.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -687,7 +687,7 @@ nodeObject.AllowPortDrag = true;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -713,7 +713,7 @@ The following code shows how to connect to the ports.
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -814,7 +814,7 @@ diagramModel.Connections.Add(o1);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -949,7 +949,7 @@ To make a connection between two lines, use the ConnectionTailPort or Connection
 
 
 {% highlight c# %}
-[C#] 
+ 
 
 LineConnector line = new LineConnector();
 
@@ -995,7 +995,7 @@ diagramModel.Connections.Add(line1);
 {% endhighlight %}
 
 {% highlight vbnet%}
-[VB] 
+ 
 
 Dim line As New LineConnector()
 

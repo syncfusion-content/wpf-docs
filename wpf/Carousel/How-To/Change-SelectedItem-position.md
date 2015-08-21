@@ -7,7 +7,7 @@ control: Carousel
 documentation: ug
 ---
 
-### Change SelectedItem position
+## Change SelectedItem position
 
 Using TopItemPosition property, you can change the position of SelectedItem in a given path.
 
@@ -17,12 +17,12 @@ Using TopItemPosition property, you can change the position of SelectedItem in a
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 TopItemPosition</td><td>
@@ -37,7 +37,7 @@ In the following example, TopItemPosition is set to 0.0. So the SelectedItem is 
 
 
 
-[XAML]
+{% highlight html %}
 
 
 
@@ -77,10 +77,10 @@ In the following example, TopItemPosition is set to 0.0. So the SelectedItem is 
 </syncfusion:Carousel>
 
 
+{% endhighlight %}
 
 
+![](Change-SelectedItem-position_images/Change-SelectedItem-position_img1.png)
 
-{{ '![](Change-SelectedItem-position_images/Change-SelectedItem-position_img1.png)' | markdownify }}
-{:.image }
 
 

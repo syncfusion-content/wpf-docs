@@ -68,7 +68,7 @@ Used to customize the line stroke of month view.</td></tr>
 </table>
 
 {% highlight html %}
- [XAML]
+
 
 <syncfusion:SfSchedule x:Name="Schedule1" TimeInterval="ThirtyMin"IntervalHeight="40"
 
@@ -93,7 +93,7 @@ Used to customize the line stroke of month view.</td></tr>
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 
 

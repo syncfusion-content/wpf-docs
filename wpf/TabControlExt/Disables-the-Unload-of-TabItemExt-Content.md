@@ -13,7 +13,6 @@ While switching the TabItems in TabControl the content of previously selected it
 
 
 {% highlight xml %}
-XAML
 
 <syncfusion:TabControlExt Name="tabcontrol" IsDisableUnloadTabItemExtContent="True">
 
@@ -35,7 +34,6 @@ XAML
 
 
 {% highlight c# %}
-C#
 
 tabcontrol.IsDisableUnloadTabItemExtContent = true;
 {% endhighlight %}

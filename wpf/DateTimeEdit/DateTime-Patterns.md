@@ -32,12 +32,12 @@ The pattern is set by using the Pattern property. The following code snippet ill
 
 
 {% highlight html %}
-XAML
+
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="ShortDate"></syncfusion:DateTimeEdit>
 {% endhighlight  %}
 {% highlight c# %}
-C#
+
 
 
 Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                    Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);//Setting predefined patterndateTimeEdit.Pattern = DateTimePattern.ShortDate;
@@ -55,12 +55,12 @@ You can also set the custom pattern for displaying the date in the DateTimeEdit 
 
 {% highlight html %}
 
-XAML
+
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/15/2010" Pattern="CustomPattern"                          CustomPattern="MM/dd/yy hh:mm:ss"></syncfusion:DateTimeEdit>
 {% endhighlight %}
 {% highlight c# %}
-C#
+
 
 Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);dateTimeEdit.Pattern = DateTimePattern.CustomPattern;//Setting Custom PatterndateTimeEdit.CustomPattern = "MM/dd/yy hh:mm:ss";this.LayoutRoot.Children.Add(dateTimeEdit);
 {% endhighlight %}

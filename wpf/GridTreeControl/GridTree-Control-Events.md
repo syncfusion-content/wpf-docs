@@ -15,9 +15,9 @@ _GridTree Control Events_
 
 <table>
 <tr>
-<td>
-{{ '**GridTree control Event**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**GridTree control Event**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 ModelLoaded</td><td>
@@ -41,7 +41,7 @@ This is a notification event that is handled once a node has been expanded by th
 </table>
 
 
-> _Note: Additionally, you have access to all the Grid control events exposed on the GridTreeControl.InternalGrid._
+> Note: Additionally, you have access to all the Grid control events exposed on the GridTreeControl.InternalGrid.
 
 
 

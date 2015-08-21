@@ -68,7 +68,7 @@ Displaying a Check Box Control in a cell
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -155,7 +155,7 @@ Setting Up an Editable Combo Box
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -203,7 +203,7 @@ Setting Up Autocomplete Combo Box
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -238,7 +238,7 @@ Setting Up Exclusive Combo Box
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -276,7 +276,7 @@ Setting up editable combo box
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -310,7 +310,7 @@ Setting Up an Autocomplete Combo Box
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -348,7 +348,7 @@ Setting Up an Exclusive Combo Box
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -392,7 +392,7 @@ Creating Editable Drop-down List Bound to Linq Source with ‘FirstName’ as it
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -440,7 +440,7 @@ Autocomplete Drop-down List Bound to Linq source with ‘FirstName’ as its Dis
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -488,7 +488,7 @@ Exclusive Drop-down List Bound to Linq Source with FirstName as its DisplayMembe
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -582,7 +582,7 @@ Creating a Currency Cell with a Negative Currency Value with ‘.’ as the Deci
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -631,7 +631,7 @@ Currency Cell with a Negative Currency Value and a Different Negative Pattern
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -680,7 +680,7 @@ Currency Cell with a Positive Currency Value with ‘.’ as the Decimal Separat
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -821,7 +821,7 @@ Setting Date and Time Cells with Different Date Time Patterns.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -910,7 +910,7 @@ Setting up four Double Edit cells using different group separators and decimal d
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1046,7 +1046,7 @@ Setting up Three Different Integer Edit Cells.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1114,7 +1114,7 @@ Setting up Mask Edit cells with different mask string.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1218,7 +1218,7 @@ Double mode displays the values in System.Double format and Percent mode adds a 
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1438,7 +1438,7 @@ The code below sets up two different Up and Down controls in grid cells.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1516,7 +1516,7 @@ The code below implements a nested scroll grid. The GridCellNestedScrollGridMode
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1606,7 +1606,7 @@ To specify shared row layout, use Shared option of GridNestedAxisLayout enum in 
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -2060,7 +2060,7 @@ To specify shared column layout, use Shared option of GridNestedAxisLayout enum 
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -2257,7 +2257,7 @@ To make rows and columns independent of parent grid, the GridNestedAxisLayout en
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -2365,7 +2365,7 @@ To make all cells present in a grid as potential formula cells, you will have to
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -2375,7 +2375,7 @@ this.gridControl1.BaseStylesMap["Standard"].StyleInfo.CellType = "FormulaCell";
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2467,7 +2467,7 @@ Here are the steps that are required to add a function to the Function Library.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -2477,7 +2477,7 @@ public string MyLibraryFormulaName(string args)
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2493,7 +2493,7 @@ Then, write an implementation for your method. Here we use code to implement a f
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -2629,7 +2629,7 @@ public string ComputeSumPosNums(string args)
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2743,7 +2743,7 @@ The last step is to actually add your formula to the library. You should do this
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -2758,7 +2758,7 @@ cellModel.Engine.AddFunction("SumPosNums", new GridFormulaEngine.LibraryFunction
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -5131,7 +5131,7 @@ For example, let us create a custom drop-down which lists an image alongside tex
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -5147,7 +5147,7 @@ public class CustomeDropDownCellModel : GridCellDropDownCellModel<CustomDropDown
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -5277,7 +5277,7 @@ public class CustomDropDownRenderer : GridCellDropDownCellRenderer<CustomeDropDo
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -5348,7 +5348,7 @@ public class CustomeDropDown : GridCellDropDownControlBase
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -5404,7 +5404,7 @@ The DataTemplateCellRenderer is derived from GridVirtualizingCellRenderer and ov
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -5420,7 +5420,7 @@ public class DataTemplateCellModel : GridCellModel<DataTemplateCellRenderer>
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -5494,7 +5494,6 @@ public class DataTemplateCellRenderer : GridVirtualizingCellRenderer<ContentCont
 
 
 {% highlight html %}
-[XAML]
 
 
 
@@ -5516,7 +5515,7 @@ public class DataTemplateCellRenderer : GridVirtualizingCellRenderer<ContentCont
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -5578,7 +5577,7 @@ It can be built by hosting the Rich Text Box control in grid cells. To host this
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -5594,7 +5593,7 @@ public class RichTextBoxCellModel : GridCellModel<RichTextBoxCellRenderer>
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -5701,7 +5700,7 @@ public class RichTextBoxCellRenderer : GridVirtualizingCellRenderer<RichTextBox>
 
 #### Setting up Rich Text Box Cell
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -5820,7 +5819,6 @@ Grid provides inherent support to host chart controls. This is achieved by using
 
 
 {% highlight html %}
-[XAML]
 
 
 
@@ -5906,7 +5904,7 @@ Here is the data source definition that is used to define the chart series.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -5964,7 +5962,7 @@ public class MyDataCollection : ObservableCollection<MyData>
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -6003,7 +6001,7 @@ The following code example illustrates how to use these properties.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 

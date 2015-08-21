@@ -13,7 +13,7 @@ Filter support is used to filter the matched list of items from the linked sourc
 
 ![](Filter-Support_images/Filter-Support_img1.png)
 
-
+_Filter Support_
 
 
 
@@ -27,12 +27,12 @@ If the IsFilter property is set as True, once you enter text in the AutoComplete
 
 {% highlight xml %}
 
-[XAML]<syncfusion:AutoComplete x:Name="AutoComplete1" IsFilter="true"/></td></tr>
+<syncfusion:AutoComplete x:Name="AutoComplete1" IsFilter="true"/></td></tr>
 {% endhighlight %}
 
 {% highlight c# %}
 
-[C#]AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsFilter = true;</td></tr>
+AutoComplete autoComplete1 = new AutoComplete();this.autoComplete1.IsFilter = true;</td></tr>
 {% endhighlight %}
 
 
@@ -44,12 +44,12 @@ If the IsFilter property is set as True, once you enter text in the AutoComplete
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 IsFilter</td><td>
@@ -73,12 +73,12 @@ Arguments </th><th>
 Type </th><th colspan = "2">
 Reference links </th></tr>
 <tr>
-<th>
-IsFilterChanged</th><th>
- When the value of IsFilter is changed, this event will be triggered.It cannot be cancelled.</th><th>
-DependencyObject,DependencyPropertyChangedEventArgs</th><th colspan = "2">
-DependencyPropertyChangedCallBack </th><th>
-</th></tr>
+<td>
+IsFilterChanged</td><td>
+ When the value of IsFilter is changed, this event will be triggered.It cannot be cancelled.</td><td>
+DependencyObject,DependencyPropertyChangedEventArgs</td><td colspan = "2">
+DependencyPropertyChangedCallBack </td><td>
+</td></tr>
 </table>
 
 

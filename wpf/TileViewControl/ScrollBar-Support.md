@@ -21,7 +21,6 @@ The following code example illustrates how to add the ScrollBar to an applicatio
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -76,16 +75,16 @@ The following code example illustrates how to add the ScrollBar to an applicatio
 
 ## Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }} </td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Data Type**' | markdownify }} </td><td>
-{{ '**Reference links**' | markdownify }} </td></tr>
+<th>
+{{ '**Property**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Data Type**' | markdownify }} </th><th>
+{{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
 <td>
 OnMinimizedHeight</td><td>

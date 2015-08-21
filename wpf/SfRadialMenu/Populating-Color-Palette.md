@@ -13,7 +13,7 @@ Color Palette can be formed in Radial Menu with the Radial Color Items.
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 

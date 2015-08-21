@@ -13,7 +13,6 @@ You can set the selected page by using the IsSelectedPage property. If this prop
 
 
 {% highlight xml %}
-[XAML]
 
  <!-- Adding TabSplitter -->
 
@@ -63,7 +62,6 @@ You can set the selected page by using the IsSelectedPage property. If this prop
 {% endhighlight %}
 
 {% highlight c# %}
- [C#]
 
 
 

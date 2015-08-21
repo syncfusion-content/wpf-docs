@@ -13,7 +13,7 @@ Watermark is the dummy content displayed in the PercentTextBox when the value is
 
  {% highlight xml %}
 
-    [XAML]
+    
 
     <syncfusion:PercentTextBox x:Name="percentTextBox" Width="150" Height="25" 
 
@@ -40,7 +40,7 @@ You can customize the Visual appearance of the WatermarkText by using the Waterm
 
  {% highlight xml %}
 
-    [XAML]
+   
 
     <syncfusion:PercentTextBox x:Name="percentTextBox" Width="150" Height="25" 
 

@@ -29,7 +29,6 @@ Wizard control is created programmatically by using either XAML or C# code. The 
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -38,7 +37,6 @@ Wizard control is created programmatically by using either XAML or C# code. The 
 
 {% highlight C# %}
 
-[C#]
 
 
 
@@ -50,7 +48,7 @@ grid.Children.Add(wizardControl);
 {% endhighlight %}
 
 
-> _Note: For creating Wizard control using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed._
+> Note: For creating Wizard control using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed.
 
  
 

@@ -14,7 +14,7 @@ documentation: ug
 A pivot item is an item in a PivotTable field. PivotItem provides the information needed to define a pivot item for either a row or column 
 pivot. It consists of the following fields.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -69,7 +69,6 @@ PivotItem can be defined in XAML or in code-behind.
 
 {% highlight xml %} 
 
- [XAML]
 
 
 
@@ -91,7 +90,6 @@ or
 
 {% highlight C# %}  
 
-[C#]
 
 
 
@@ -109,7 +107,6 @@ this.PivotGridControl1.PivotRows.Add(m_PivotItem);
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -130,7 +127,6 @@ By default, PivotGrid will sort data in ascending order. The sorting order can b
 
 {% highlight C# %}
 
-[C#]
 
 // Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparer
 
@@ -186,7 +182,6 @@ public class ReverseOrderComparer : IComparer
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparer
 
@@ -238,16 +233,16 @@ End If
 This class holds the information needed for calculations that appear in a PivotGrid. For each calculation, there is an associated 
 PivotComputationInfo object that is added to the PivotCalculations collection. The properties available in PivotComputationInfo are as follows.
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property Name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-Value it Accepts</td><td>
-Reference link</td></tr>
+<th>
+{{ '**Property Name**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+Value it Accepts</th><th>
+Reference link</th></tr>
 <tr>
 <td>
 CalculationName</td><td>
@@ -320,7 +315,6 @@ PivotComputationInfo can be defined in XAML as well as in C# or VB code.
 
  {% highlight xml %} 
  
- [XAML]
 
 <Grid>
 
@@ -357,7 +351,6 @@ Through Code Behind
 
 {% highlight C# %}  
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -380,7 +373,6 @@ this.pivotGrid1.PivotCalculations.Add(m_PivotComputationInfo);
 
 {% highlight vbnet %} 
 
-[VB]
 
 Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
@@ -404,7 +396,6 @@ The PivotComputationInfo property replaces each format specification in a specif
 
 {% highlight xml %} 
 
-[XAML]
 
 
 
@@ -420,7 +411,6 @@ The PivotComputationInfo property replaces each format specification in a specif
 
 {% highlight C# %} 
 
-[C#]
 
 
 
@@ -434,7 +424,6 @@ PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() { Calcu
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -446,13 +435,13 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() 
 
 ### Types of format settings
 
-_Formats Table_
+Formats Table
 
 <table>
 <tr>
-<td>
-{{ '**Format**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Format**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 0.00</td><td>
@@ -496,7 +485,6 @@ This option is used to display complete values present in the PivotEngine, in th
 
 {% highlight xml %} 
 
-[XAML]
 
 <Grid>
 
@@ -526,7 +514,6 @@ This option is used to display complete values present in the PivotEngine, in th
 
 {% highlight C# %}  
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -547,7 +534,6 @@ SummaryType = SummaryType.DoubleTotalSum, DisplayOption = DisplayOption.All�
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -571,7 +557,7 @@ End Sub
 
 
 
-_PivotGrid when DisplayOption is set to “All”_
+PivotGrid when DisplayOption is set to “All”
 
 #### Calculations
 
@@ -589,7 +575,6 @@ This option allows the specific PivotComputationInfo to be visible only in the C
 
 {% highlight xml %} 
 
- [XAML]
 
 <Grid>
 
@@ -619,7 +604,6 @@ This option allows the specific PivotComputationInfo to be visible only in the C
 
 {% highlight C# %}  
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -640,7 +624,6 @@ SummaryType = SummaryType.DoubleTotalSum, DisplayOption = DisplayOption.Calc
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -663,7 +646,7 @@ End Sub
 
 
 
-_PivotGrid when DisplayOption is set to “Calculations”_
+PivotGrid when DisplayOption is set to “Calculations”
 
 #### Summary
 
@@ -681,7 +664,6 @@ This option allows the specific PivotComputationInfo to be visible only in the S
 
 {% highlight xml %} 
 
-[XAML]
 
 <Grid>
 
@@ -713,7 +695,6 @@ This option allows the specific PivotComputationInfo to be visible only in the S
 
 {% highlight C# %}  
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -733,8 +714,6 @@ SummaryType = SummaryType.DoubleTotalSum, DisplayOption = DisplayOption.Summ
 
 
 {% highlight vbnet %} 
-
-[VB]
 
 
 
@@ -756,7 +735,7 @@ End Sub
 ![](Concepts_images/Concepts_img3.png)
 
 
-_PivotGrid when DisplayOption is set to “Summary”_
+PivotGrid when DisplayOption is set to “Summary”
 
 #### GrandTotals  
 
@@ -774,7 +753,6 @@ This option allows the specific PivotComputationInfo to be visible only in the G
 
 {% highlight xml %}
 
-[XAML]
 
 <Grid>
 
@@ -805,7 +783,6 @@ This option allows the specific PivotComputationInfo to be visible only in the G
 
 {% highlight C# %}  
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -826,7 +803,6 @@ SummaryType = SummaryType.DoubleTotalSum, DisplayOption = DisplayOption.Gran
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -850,7 +826,7 @@ End Sub
 
 
 
-_PivotGrid when DisplayOption is set to “GrandTotals”_
+PivotGrid when DisplayOption is set to “GrandTotals”
 
 #### None
 
@@ -868,7 +844,6 @@ This option does not allow the specific PivotComputationInfo to be visible in an
 
 {% highlight xml %} 
 
-[XAML]
 
 <Grid>
 
@@ -899,7 +874,6 @@ This option does not allow the specific PivotComputationInfo to be visible in an
 
 {% highlight C# %}  
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -919,7 +893,6 @@ SummaryType = SummaryType.DoubleTotalSum, DisplayOption = DisplayOption.None
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -940,7 +913,7 @@ End Sub
 
 ![](Concepts_images/Concepts_img5.png)
 
-_PivotGrid when DisplayOption is set to “None”_
+PivotGrid when DisplayOption is set to “None”
 
 
 
@@ -948,13 +921,13 @@ _PivotGrid when DisplayOption is set to “None”_
 
 CalculationType is an enumerator defined in the PivotComputationInfo class that is used to specify the type of the calculation. The following table lists the various calculation types that are used for performing calculations:
 
-_CalculationType table_
+CalculationType table
 
 <table>
 <tr>
-<td>
-{{ '**CalculationType**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**CalculationType**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 NoCalculation</td><td>
@@ -1036,7 +1009,6 @@ By default, the value of CalculationType is NoCalculation. To change the Calcula
 
 {% highlight xml %} 
 
-[XAML]
 
 <Grid>
 
@@ -1067,7 +1039,6 @@ By default, the value of CalculationType is NoCalculation. To change the Calcula
 
 {% highlight C# %}   
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -1093,7 +1064,6 @@ this.pivotGrid1.PivotCalculations.Add(m_PivotComputationInfo);
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -1121,7 +1091,7 @@ End Sub
 
 
 
-_PivotValues as PercentageOfParentColumnTotal calculation_
+PivotValues as PercentageOfParentColumnTotal calculation
 
 
 
@@ -1129,13 +1099,13 @@ _PivotValues as PercentageOfParentColumnTotal calculation_
 
 SummaryType is an enumerator defined in the PivotComputationInfo class that is used to specify the type of the summary. The following table lists the various summary types that are used for performing calculations:
 
-_Summar types table_
+Summar types table
 
 <table>
 <tr>
-<td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 DoubleTotalSum</td><td>
@@ -1191,13 +1161,13 @@ You can also change the default  value to any custom string of your choice by us
 
 #### Property
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 PadString</td><td>
@@ -1209,7 +1179,6 @@ You can use this property to specify a custom string in the Pivot Computation co
 
 {% highlight xml %} 
 
-[XAML]
 
 
 
@@ -1219,7 +1188,6 @@ You can use this property to specify a custom string in the Pivot Computation co
 
 {% highlight C# %}  
 
-[C#]
 
 
 
@@ -1233,7 +1201,6 @@ SummaryType = SummaryType.DisplayIfDiscreteValuesEqual, PadString = "***" 
 
 {% highlight vbnet %}
 
-[VB]
 
 
 
@@ -1250,7 +1217,7 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() 
 
 
 
-_DisplayIfDiscreteValues Summary Type Illustrated_
+DisplayIfDiscreteValues Summary Type Illustrated
 
 #### Sample Location
 
@@ -1266,15 +1233,15 @@ Users can perform calculations using the numeric format assigned to a field when
 
 #### Property
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 PadString</td><td>
@@ -1292,7 +1259,6 @@ The following code sample explains how to set PadString to display the discrete 
 
 {% highlight xml %} 
 
-[XAML]
 
 
 
@@ -1302,7 +1268,6 @@ The following code sample explains how to set PadString to display the discrete 
 
 {% highlight C# %}  
 
-[C#]
 
 
 
@@ -1317,7 +1282,6 @@ SummaryType = SummaryType.DisplayIfDiscreteValuesEqual, PadString = "999" 
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -1332,7 +1296,7 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() 
 
 
 
-_DisplayIfDiscreteValues Summary Type in Numeric Format_
+DisplayIfDiscreteValues Summary Type in Numeric Format
 
 #### Sample Location
 
@@ -1344,15 +1308,15 @@ _DisplayIfDiscreteValues Summary Type in Numeric Format_
 
 This class encapsulates the information needed to define a filter. It contains the following properties.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property Name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Value it Accepts**' | markdownify }}</td></tr>
+<th>
+{{ '**Property Name**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Value it Accepts**' | markdownify }}</th></tr>
 <tr>
 <td>
 CaseSensitive</td><td>
@@ -1392,7 +1356,6 @@ Filters can be added to PivotGrid by the following way:
 
 {% highlight C# %}  
 
-[C#]
 
 // Adding filters with filter expressions
 
@@ -1402,7 +1365,6 @@ this.PivotGridControl1.Filters.Add(new FilterExpression { Expression="Product = 
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Adding filters with filter expressions
 

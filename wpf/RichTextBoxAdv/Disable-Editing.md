@@ -15,15 +15,15 @@ You can disable editing in RichTextBoxAdv by enabling the property called IsRead
 
 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 IsReadOnly</td><td>

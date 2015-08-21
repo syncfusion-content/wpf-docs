@@ -15,354 +15,340 @@ The topics under this section explain the data binding support for the MenuAdv c
 
 The MenuAdv control also supports binding to objects. The following example shows this.
 
-1.Create a class that act as a model for MenuAdv.
+1. Create a class that act as a model for MenuAdv.
 
-{% highlight C# %}
 
-[C#]
 
-public class Model
+			public class Model
 
-    {
+				{
 
-        public Model()
+					public Model()
 
-        {
+					{
 
-            SubItems = new ObservableCollection<Model>();
+						SubItems = new ObservableCollection<Model>();
 
-        }
+					}
 
 
 
-        public string Header { get; set; }
+					public string Header { get; set; }
 
 
 
-        public ObservableCollection<Model> SubItems { get; set; }
+					public ObservableCollection<Model> SubItems { get; set; }
 
 
 
-    }
+				}
 
 
-{% endhighlight %}
 
 
 
 
-2.Create a ViewModel class and initialize the items.
+2. Create a ViewModel class and initialize the items.
 
-{% highlight C# %}
 
-[C#]
 
-  public class ViewModel
+			  public class ViewModel
 
-    {
+				{
 
-        public ViewModel()
+					public ViewModel()
 
-        {
+					{
 
-            MenuItems = new ObservableCollection<Model>();
+						MenuItems = new ObservableCollection<Model>();
 
-            PopulateData();
+						PopulateData();
 
-        }
+					}
 
 
 
-        public ObservableCollection<Model> MenuItems { get; set; }
+					public ObservableCollection<Model> MenuItems { get; set; }
 
 
 
-        private void PopulateData()
+					private void PopulateData()
 
-        {
+					{
 
-            Model product = new Model() { Header = "Products" };
+						Model product = new Model() { Header = "Products" };
 
-            PopulateSubSubItems(product);
+						PopulateSubSubItems(product);
 
-            MenuItems.Add(product);            
+						MenuItems.Add(product);            
 
-        }
+					}
 
 
 
-        private void PopulateSubSubItems(Model product)
+					private void PopulateSubSubItems(Model product)
 
-        {
+					{
 
-            Model bi = new Model() { Header = "Business Intelligence" };
+						Model bi = new Model() { Header = "Business Intelligence" };
 
 
 
-            Model ui = new Model() { Header = "User Interface" };
+						Model ui = new Model() { Header = "User Interface" };
 
 
 
-            Model wpf = new Model() { Header = "WPF" };
+						Model wpf = new Model() { Header = "WPF" };
 
 
 
-            Model tools = new Model() { Header = "Tools" };
+						Model tools = new Model() { Header = "Tools" };
 
-            Model chart = new Model() { Header = "Chart" };
+						Model chart = new Model() { Header = "Chart" };
 
-            Model grid = new Model() { Header = "Grid" };
+						Model grid = new Model() { Header = "Grid" };
 
-            Model diagram = new Model() { Header = "Diagram" };
+						Model diagram = new Model() { Header = "Diagram" };
 
-            Model gauge = new Model() { Header = "Gauge" };
+						Model gauge = new Model() { Header = "Gauge" };
 
-            Model schedule = new Model() { Header = "Schedule" };
+						Model schedule = new Model() { Header = "Schedule" };
 
-            Model edit = new Model() { Header = "Edit" };
+						Model edit = new Model() { Header = "Edit" };
 
 
 
-            wpf.SubItems.Add(tools);
+						wpf.SubItems.Add(tools);
 
-            wpf.SubItems.Add(chart);
+						wpf.SubItems.Add(chart);
 
-            wpf.SubItems.Add(grid);
+						wpf.SubItems.Add(grid);
 
-            wpf.SubItems.Add(diagram);
+						wpf.SubItems.Add(diagram);
 
-            wpf.SubItems.Add(gauge);
+						wpf.SubItems.Add(gauge);
 
-            wpf.SubItems.Add(schedule);
+						wpf.SubItems.Add(schedule);
 
-            wpf.SubItems.Add(edit);
+						wpf.SubItems.Add(edit);
 
 
 
-            Model sl = new Model() { Header = "Silverlight" };
+						Model sl = new Model() { Header = "Silverlight" };
 
-            ui.SubItems.Add(wpf);
+						ui.SubItems.Add(wpf);
 
-            ui.SubItems.Add(sl);
+						ui.SubItems.Add(sl);
 
 
 
-            Model reporting = new Model() { Header = "Reporting" };
+						Model reporting = new Model() { Header = "Reporting" };
 
-            product.SubItems.Add(bi);
+						product.SubItems.Add(bi);
 
-            product.SubItems.Add(ui);
+						product.SubItems.Add(ui);
 
-            product.SubItems.Add(reporting);
+						product.SubItems.Add(reporting);
 
 
 
-        }
+					}
 
-    }
+				}
 
-{% endhighlight %}
 
 
 
 
 
-3.Create a ViewModel instance and use it as DataContext for the root window.
-{% highlight xml %}
+3. Create a ViewModel instance and use it as DataContext for the root window.
 
 
-[XAML]
 
-<Window.DataContext>
 
-   <local:ViewModel/>
+			<Window.DataContext>
 
-</Window.DataContext>
+			   <local:ViewModel/>
 
-{% endhighlight %}
+			</Window.DataContext>
 
-4.Now configure the ItemsSource and ItemTemplate of MenuAdv.
 
-{% highlight xml %}
 
+4. Now configure the ItemsSource and ItemTemplate of MenuAdv.
 
-[XAML]
 
-<syncfusion:MenuAdv ItemsSource="{Binding MenuItems}">
 
 
+			<syncfusion:MenuAdv ItemsSource="{Binding MenuItems}">
 
-            <syncfusion:MenuAdv.ItemTemplate>
 
 
+						<syncfusion:MenuAdv.ItemTemplate>
 
-                <HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
 
-                    <TextBlock Text="{Binding Header}" />
 
-                </HierarchicalDataTemplate>
+							<HierarchicalDataTemplate ItemsSource="{Binding SubItems}">
 
+								<TextBlock Text="{Binding Header}" />
 
+							</HierarchicalDataTemplate>
 
-            </syncfusion:MenuAdv.ItemTemplate>
 
 
+						</syncfusion:MenuAdv.ItemTemplate>
 
-        </syncfusion:MenuAdv>
-{% endhighlight %}
 
 
+					</syncfusion:MenuAdv>
 
 
-Implementing the above code will generate the following control.
 
-![](Data-Binding_images/Data-Binding_img1.png)
 
 
+   Implementing the above code will generate the following control.
+
+   ![](Data-Binding_images/Data-Binding_img1.png)
+
+   {:.prettyprint}
 
 ## Data-Biding with XML
 
 An XML file can also be used as _ItemsSource_ for the MenuAdv control. The following example illustrates this.
 
-1.Create an XML file with the following details as follows and name it as Data.xml.
+1. Create an XML file with the following details as follows and name it as Data.xml.
 
-{% highlight xml %}
 
 
-[XML]
 
-<Categories>
 
+			<Categories>
 
 
-  <Root Name="Products" >
 
+			  <Root Name="Products" >
 
 
-    <SubItem Name="User Interface" >
 
-      <SubItem Name="ASP .NET"/>
+				<SubItem Name="User Interface" >
 
-      <SubItem Name="ASP .NET MVC"/>
+				  <SubItem Name="ASP .NET"/>
 
-      <SubItem Name="WPF">
+				  <SubItem Name="ASP .NET MVC"/>
 
-        <SubItem Name="Tools"/>
+				  <SubItem Name="WPF">
 
-        <SubItem Name="Chart"/>
+					<SubItem Name="Tools"/>
 
-        <SubItem Name="Grid"/>
+					<SubItem Name="Chart"/>
 
-        <SubItem Name="Diagram"/>
+					<SubItem Name="Grid"/>
 
-        <SubItem Name="Gauge"/>
+					<SubItem Name="Diagram"/>
 
-        <SubItem Name="Schedule"/>
+					<SubItem Name="Gauge"/>
 
-        <SubItem Name="Edit"/>
+					<SubItem Name="Schedule"/>
 
-      </SubItem>
+					<SubItem Name="Edit"/>
 
+				  </SubItem>
 
 
-      <SubItem Name="Silverlight"/>
 
-      <SubItem Name="Mobile MVC"/>
+				  <SubItem Name="Silverlight"/>
 
-      <SubItem Name="Windows Phone"/>
+				  <SubItem Name="Mobile MVC"/>
 
-      <SubItem Name="Windows Forms"/>
+				  <SubItem Name="Windows Phone"/>
 
-    </SubItem>
+				  <SubItem Name="Windows Forms"/>
 
+				</SubItem>
 
 
-    <SubItem Name="Business Intelligence">
 
-      <SubItem Name="WPF"/>
+				<SubItem Name="Business Intelligence">
 
-      <SubItem Name="ASP.NET"/>
+				  <SubItem Name="WPF"/>
 
-      <SubItem Name="ASP.NET MVC"/>
+				  <SubItem Name="ASP.NET"/>
 
-      <SubItem Name="Silverlight"/>
+				  <SubItem Name="ASP.NET MVC"/>
 
-    </SubItem>
+				  <SubItem Name="Silverlight"/>
 
+				</SubItem>
 
 
-    <SubItem Name="Reporting">
 
-      <SubItem Name="WPF"/>
+				<SubItem Name="Reporting">
 
-      <SubItem Name="Windows Forms"/>
+				  <SubItem Name="WPF"/>
 
-    </SubItem>   
+				  <SubItem Name="Windows Forms"/>
 
+				</SubItem>   
 
 
-  </Root>
 
+			  </Root>
 
 
-</Categories>
 
-{% endhighlight %}
+			</Categories>
 
-2.Add XmlDataProvider for the above XML document.
 
-{% highlight xml %}
 
+2. Add XmlDataProvider for the above XML document.
 
-[XAML]
 
-<XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Categories"/> 
-{% endhighlight %}
 
 
 
+			<XmlDataProvider Source="Data.xml" 
+			x:Key="xmlSource" XPath="Categories"/> 
 
-3.Set ItemsSource property for the MenuAdv.
-{% highlight xml %}
 
 
-[XAML]
 
-  <syncfusion:MenuAdv	ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Root}" >
 
+3. Set ItemsSource property for the MenuAdv.
 
 
-       <syncfusion:MenuAdv.ItemTemplate>
 
+			  <syncfusion:MenuAdv	ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Root}" >
 
 
-            <HierarchicalDataTemplate ItemsSource="{Binding 			XPath=SubItem}">
 
+				   <syncfusion:MenuAdv.ItemTemplate>
 
 
-                    <TextBlock Text="{Binding XPath=@Name}" />
 
+						<HierarchicalDataTemplate ItemsSource="{Binding 			XPath=SubItem}">
 
 
-                </HierarchicalDataTemplate>
 
+								<TextBlock Text="{Binding XPath=@Name}" />
 
 
-            </syncfusion:MenuAdv.ItemTemplate>
 
+							</HierarchicalDataTemplate>
 
 
-        </syncfusion:MenuAdv>
 
-{% endhighlight %}
+						</syncfusion:MenuAdv.ItemTemplate>
 
 
 
+					</syncfusion:MenuAdv>
 
 
-This will create the following MenuAdv control.
 
-![](Data-Binding_images/Data-Binding_img2.png)
 
 
+   This will create the following MenuAdv control.
+
+   ![](Data-Binding_images/Data-Binding_img2.png)
+
+   {:.prettyprint}
 

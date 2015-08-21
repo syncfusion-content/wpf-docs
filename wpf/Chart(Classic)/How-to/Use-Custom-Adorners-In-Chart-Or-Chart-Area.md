@@ -7,11 +7,11 @@ control: Chart (Classic)
 documentation: ug
 ---
 
-### Use Custom Adorners In Chart Or Chart Area
+## Use Custom Adorners In Chart Or Chart Area
 
 Custom Adorners can be added to the Chart or ChartArea to add any custom UI elements over the Chart or ChartArea. The following code example illustrates adding and removing adorners to a ChartArea.
+{% highlight xml %}
 
-[XAML]
 
 
 
@@ -32,8 +32,9 @@ Custom Adorners can be added to the Chart or ChartArea to add any custom UI elem
 </sfchart:Chart>
 
 
+{% endhighlight  %}
+{% highlight c# %}
 
-[C#]
 
 
 
@@ -134,10 +135,10 @@ internal class CustomAdorner : Adorner
     }
 
 }
+{% endhighlight  %}
 
 
+![](Use-Custom-Adorners-In-Chart-Or-Chart-Area_images/Use-Custom-Adorners-In-Chart-Or-Chart-Area_img1.jpeg)
 
-{{ '![](Use-Custom-Adorners-In-Chart-Or-Chart-Area_images/Use-Custom-Adorners-In-Chart-Or-Chart-Area_img1.jpeg)' | markdownify }}
-{:.image }
 
 

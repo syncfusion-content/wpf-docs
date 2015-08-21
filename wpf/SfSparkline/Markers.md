@@ -11,7 +11,6 @@ documentation: ug
 
 Markers are used to indicate the value point for line and area series, and we can customize with different template.
 {% highlight html %}
-[XAML]
 
   <Syncfusion:SfLineSparkline 
 

@@ -24,7 +24,6 @@ ThumbToolTipPrecision property is used to define the precision of the value disp
 
 {%highlight xml%}
 
-[XAML]
 
 <editors:SfRangeSlider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" Value="50" ThumbToolTipPrecision="2"/>
 
@@ -48,7 +47,6 @@ Tooltip is placed either below the Thumb in horizontal orientation or right of t
 
 {%highlight xml%}
 
-[XAML]
 
 <editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" Value="50" ThumbToolTipPlacement="BottonRight" />
 
@@ -59,7 +57,7 @@ Tooltip is placed either below the Thumb in horizontal orientation or right of t
 
 
 
-> _Note: This option displays the tooltip to right in vertical orientation._  
+> Note: This option displays the tooltip to right in vertical orientation.
 
 ### TopLeft 
 
@@ -68,7 +66,6 @@ Tooltip is placed either above the Thumb in horizontal orientation or left of th
 
 {%highlight xml%}
 
-[XAML]
 
 <editors:SfRangeSlider Width="200" Minimum="0" Maximum="100" Value="50" ThumbToolTipPlacement="TopLeft" />
 
@@ -78,7 +75,7 @@ Tooltip is placed either above the Thumb in horizontal orientation or left of th
 
 
 
-> _Note: This option displays the tooltip to left in vertical orientation._  
+> Note: This option displays the tooltip to left in vertical orientation.
 
 ### None 
 

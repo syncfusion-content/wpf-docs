@@ -9,13 +9,13 @@ documentation: ug
 
 # Appearance
 
-# How to set gauge radius?
+## How to set gauge radius?
 
 The OLAP Gauge control provides support to adjust its radius. This is achieved by assigning a proper value to the radius property of OLAP Gauge.
 
 {% highlight c# %}
  
-   [C#]
+   
 
 
 
@@ -30,7 +30,7 @@ this.olapGauge1.DataBind();
 
  {% highlight vbnet %}
   
-    [VB]
+    
 
 
 
@@ -57,7 +57,7 @@ A sample demo is available at the following location:
 
 ..\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OlapGauge.WPF\Samples\Gauge Customization\Customization Demo\
 
-# Explain the built-in frame types available for gauge control
+## Explain the built-in frame types available for gauge control
 
 OLAP Gauge supports built-in frame types to provide effective rim styles. The FrameType property is used to set the frame type for the Gauge control.
 
@@ -76,7 +76,7 @@ The following code example illustrates how to set the frame type for the OLAP Ga
 
 {% highlight c# %}
  
-    [C#]
+    
 
 
 
@@ -89,7 +89,7 @@ this.olapGauge1.FrameType = GaugeFrameType.CircularWithInnerLeftGradient;
 
  {% highlight vbnet %}
   
-    [VB]
+    
 
 
 
@@ -135,7 +135,7 @@ A sample demo is available at the following location:
 
 ..\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OlapGauge.WPF\Samples\Gauge Customization\Customization Demo\
 
-# Explain the skin types that are available for Gauge control
+## Explain the skin types that are available for Gauge control
 
 The OLAP Gauge control allows you to present your data using different built-in-skins. These skins allow you to theme and style the look and feel of the control in various rich color schemes. You can use Skin Manager Framework to apply a wide range of skins to the Essential OLAP Gauge. These skins have been designed to suit the needs of a wide range of audience. The following are the types of skins available:
 
@@ -178,7 +178,7 @@ To set the visual style for the controls, use the code given below.
 
  {% highlight xml %}
 
-    [XAML]
+    
 
 
 
@@ -192,7 +192,7 @@ To set the visual style for the controls, use the code given below.
 
  {% highlight c# %}
  
-    [C#]
+    
 
 
 
@@ -207,7 +207,7 @@ SkinStorage.SetVisualStyle(olapGauge1, "Office2007Blue");
 
  {% highlight vbnet %}
   
-    [VB]
+    
 
 
 

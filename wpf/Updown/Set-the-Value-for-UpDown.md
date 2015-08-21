@@ -16,7 +16,6 @@ The value for UpDown can be specified by using the Value property.
 A value can be set for the UpDown control as shown in the following code example.
 
 {%highlight xml%}
- [XAML]
 
 <syncfusion:UpDown Name="upDown" Value="10"/>
 
@@ -24,7 +23,6 @@ A value can be set for the UpDown control as shown in the following code example
 
 
 {%highlight c#%}
-[C#]
 
 UpDown upDown = new UpDown();
 
@@ -38,12 +36,12 @@ Tables for Properties and Events
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 Value</td><td>
@@ -63,19 +61,19 @@ _Value Events_
 {{ '**Type**' | markdownify }}</th><th>
 {{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
-<th>
-ValueChanged</th><th>
-Occurs when the value in the text box changes.</th><th>
-DependencyObject andDependencyPropertyChangedEventArgs.</th><th>
-PropertyChangedCallback</th><th>
-Not applicable.</th></tr>
+<td>
+ValueChanged</td><td>
+Occurs when the value in the text box changes.</td><td>
+DependencyObject andDependencyPropertyChangedEventArgs.</td><td>
+PropertyChangedCallback</td><td>
+Not applicable.</td></tr>
 <tr>
-<th>
-ValueChanging</th><th>
-Occurs when the value in the text box is about to change.</th><th>
-Object andValueChangingEventArgs.</th><th>
-ValueChangingEventHandler</th><th>
-Not applicable.</th></tr>
+<td>
+ValueChanging</td><td>
+Occurs when the value in the text box is about to change.</td><td>
+Object andValueChangingEventArgs.</td><td>
+ValueChangingEventHandler</td><td>
+Not applicable.</td></tr>
 </table>
 
 

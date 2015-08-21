@@ -18,8 +18,8 @@ The TileViewControl supports binding to objects. The following code example illu
 1. Create a class that act as a model for TileViewItem.
 
 
-   ~~~ c#
-     [C#]
+   ~~~ cs
+     
 
       public class Model
 
@@ -37,8 +37,8 @@ The TileViewControl supports binding to objects. The following code example illu
 2. Create a ViewModel class and initialize the items as follows:
 
 
-   ~~~ c#
-     [C#]
+   ~~~ cs
+     
 
      public class ViewModel
 
@@ -91,7 +91,7 @@ The TileViewControl supports binding to objects. The following code example illu
 
 
    ~~~ xml
-     [XAML]
+     
 
      <Window.DataContext>
 
@@ -106,7 +106,7 @@ The TileViewControl supports binding to objects. The following code example illu
 
 
    ~~~ xml
-     [XAML]
+     
 
      <syncfusion:TileViewControl ItemsSource="{Binding TileItems}" >
 
@@ -147,7 +147,7 @@ An XML file can also be used as _ItemsSource_ for the TileViewControl. The follo
 
 
    ~~~ xml
-     [XML]
+     
 
      <?xml version="1.0" encoding="utf-8" ?>
 
@@ -172,7 +172,7 @@ An XML file can also be used as _ItemsSource_ for the TileViewControl. The follo
 
 
    ~~~ xml
-     [XAML]
+     
 
      <XmlDataProvider Source="Data.xml" x:Key="xmlSource" XPath="Books"/> 
 
@@ -185,7 +185,7 @@ An XML file can also be used as _ItemsSource_ for the TileViewControl. The follo
 
 
    ~~~ xml
-     [XAML]
+     
 
      <syncfusion:TileViewControl ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"   >
 

@@ -7,7 +7,7 @@ control: SkinManager
 documentation: ug
 ---
 
-### Touch UI 
+# Touch UI 
 
 The touch support allows users to interact with some Syncfusion WPF controls with finger gestures on touchscreen devices.
 
@@ -24,15 +24,15 @@ The following controls have touch styles implemented:
 
 
 
-#### How To Apply Touch Styles
+## How To Apply Touch Styles
 
 Touch styles can be applied to a control by setting the EnableTouch property defined in the SkinStorage class to True. This property can be set in either XAML or C#.
 
-##### Setting the EnableTouch Property in XAML
+### Setting the EnableTouch Property in XAML
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
@@ -40,38 +40,38 @@ Touch styles can be applied to a control by setting the EnableTouch property def
 
          syncfusion:SkinStorage.EnableTouch="True" >
 
-&lt;/syncfusion:IntegerTextBox &gt;
+</syncfusion:IntegerTextBox >
+
+{% endhighlight %}
+
+##  Setting the EnableTouch Property in C#
 
 
 
-#####  Setting the EnableTouch Property in C#
-
-
-
-[C#]
+{% highlight C# %}
 
 SkinStorage.SetEnableTouch(this, true);
 
 
+{% endhighlight %}
 
 
-
-#### Controls with Touch UI
+## Controls with Touch UI
 
 
 
 ![C:/Users/ramalakshmim/Desktop/New folder/New folder/screenshot008.png](Touch-UI_images/Touch-UI_img1.png)
-{:.image }
+
 
 
 
 
 ![C:/Users/ramalakshmim/Desktop/New folder/New folder/Tree-touch.png](Touch-UI_images/Touch-UI_img2.png)
-{:.image }
+
 
 
 ![C:/Users/ramalakshmim/Desktop/New folder/New folder/Menu-touch.png](Touch-UI_images/Touch-UI_img3.png)
-{:.image }
+
 
 
 

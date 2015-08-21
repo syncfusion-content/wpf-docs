@@ -11,7 +11,7 @@ documentation: ug
 
 This section illustrates the general features pertaining to both Node and LineConnector.
 
-### Select Nodes and Connectors
+## Select Nodes and Connectors
 
 The corresponding node or connector is selected by moving the mouse pointer to the desired node or connector and by clicking the left mouse button. This is indicated by an adorner being displayed. It also displays a RotateThumb on the top left corner of the node.
 
@@ -27,7 +27,7 @@ The corresponding node or connector is selected by moving the mouse pointer to t
 
 _Node Selection_
 
-### Move Nodes and Connectors
+## Move Nodes and Connectors
 
 Click and drag the desired node for moving nodes from one position to another.. Connections can also be moved to other nodes and a new node will start acting as the head node or the tail node depending on where the connector was moved from.
 
@@ -47,7 +47,7 @@ _Moving Connector_
 
 As seen, the connector will then be removed from the old node and added to the node that is currently hit.
 
-### Customize the Label of Nodes and Line Connectors
+## Customize the Label of Nodes and Line Connectors
 
 The labels of the nodes and connectors are equipped with Multiline support i.e. you can specify the labels to span multiple lines by setting the LabelTextWrapping property to wrap the text and by specifying the width of the label. Also, several other customization properties have been added for the labels. These are listed below: 
 
@@ -136,7 +136,7 @@ No</td></tr>
 
 The following code exampleillustrates the implementation of the properties mentioned in the table above.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -223,7 +223,7 @@ LineConnector line = new LineConnector();
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -323,7 +323,7 @@ Essential Diagram for WPF provides support for the display of context menus for 
 
 The following code example illustrates addition of custom options to the context menu.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -366,7 +366,7 @@ ContextMenu menu = new ContextMenu();
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -410,7 +410,7 @@ node1.ContextMenu = menu
 {% endhighlight  %}
 Similarly we can set it for the connectors as follows:
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -421,7 +421,7 @@ line.ContextMenu = menu;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -439,7 +439,7 @@ _Custom Context Menu_
 
 The context menu can also be specified for all the nodes on the page using the NodeContextMenu property. Similarly to specify custom context menu for all the lines on the page, the LineConnectorContextMenu property of DiagramView can be used as follows:
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -469,7 +469,7 @@ diagramView.LineConnectorContextMenu = menu1;
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -499,5 +499,5 @@ diagramView.LineConnectorContextMenu = menu1
 
 {% endhighlight %}
 
-_Note: If any node’s context menu is assigned using the ContextMenu property of that node, then it will take precedence over the DiagramView’s NodeContextMenu property. The same applies to Line Connectors._
+> Note: If any node’s context menu is assigned using the ContextMenu property of that node, then it will take precedence over the DiagramView’s NodeContextMenu property. The same applies to Line Connectors.
 

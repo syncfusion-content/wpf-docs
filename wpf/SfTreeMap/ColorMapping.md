@@ -19,13 +19,12 @@ ColorMapping is categorized into four different types such as,
 
 
 
-TreeMap ColorMapping:
+##TreeMap ColorMapping:
 
 The leaf nodes of TreeMap can be colored by setting LeafColorMapping of TreeMap.
 
 
 {% highlight xml %}
-[XAML]
 
  <syncfusion:SfTreeMap ItemsSource="{Binding PopulationDetails}" 
 
@@ -53,13 +52,12 @@ The leaf nodes of TreeMap can be colored by setting LeafColorMapping of TreeMap.
 
 
 
-TreeMapLevel ColorMapping:
+##TreeMapLevel ColorMapping:
 
 The headers of TreeMap level can also be colored using ColorMapping property of TreeMapLevel. 
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -109,8 +107,6 @@ TreeMap leaf nodes can be colored with the help of Color property specified usin
 
 
 {% highlight xml %}
-[XAML]
-
 
 
     <Grid Background="Black">
@@ -167,7 +163,7 @@ The leaf nodes of TreeMap can be colored based upon the range, such as From and 
 
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -220,7 +216,7 @@ The leaf nodes of TreeMap can be colored based upon the Color specified using De
 
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -264,7 +260,7 @@ The leaf nodes are colored by using the brushes mentioned in Colors collection o
 
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -322,7 +318,7 @@ The leaf nodes are colored by using different ColorMappings available in the Tre
 
 
 {% highlight xml %}
-[XAML]
+
 
 
 

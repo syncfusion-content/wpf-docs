@@ -15,14 +15,14 @@ TreeMap enables drill down to expose the hierarchy by clicking on a treemap node
 
 Treemap items can be drilled down by enabling the property EnableDrillDown to ‘_true’_. The hierarchy of treemap levels can be shown by clicking on treemap items. The previous level can be drilled up by clicking on drill down header. DrilldDown header can be customized with the help of DrillDownHeaderTemplate property.
 
-_Drill D__own Properties_
+Drill Down Properties
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 EnableDrillDown</td><td>
@@ -48,7 +48,6 @@ Gets or sets a color for highlighting tree map item while drill down.</td></tr>
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -112,8 +111,7 @@ The following screenshot illustrates a TreeMap with drill down support.
 
 
 
-_TreeMap with drill down support_
-
+TreeMap with drill down support
 
 
 

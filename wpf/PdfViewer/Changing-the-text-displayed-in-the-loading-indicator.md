@@ -7,25 +7,25 @@ control: PDF Viewer
 documentation: ug
 ---
 
-### Changing the text displayed in the loading indicator
+# Changing the text displayed in the loading indicator
 
 PDF Viewer allows you to change the text displayed in the loading indicator. The following code example illustrates the same.
 
-[C#]
+{% highlight C# %}
 
 // Changing the text displayed in the loading indicator
 
 pdfviewer1. LoadingIndicator.LoadingMessage = "Document loading";
+{% endhighlight %}
 
 
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Changing the text displayed in the loading indicator
 
 pdfviewer1.LoadingIndicator.LoadingMessage = "Document loading"
 
-
+{% endhighlight %}
 

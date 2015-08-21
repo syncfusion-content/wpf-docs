@@ -28,7 +28,6 @@ Multiple shapes in the map can be selected when “EnableMultiSelection” of Sh
 
 {% highlight xml %}
 
-[XAML]
 
 
 

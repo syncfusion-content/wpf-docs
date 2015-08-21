@@ -15,15 +15,15 @@ Localization is the process of making the application multi-lingual by formattin
 
 The Essential Tools WPF controls can be localized according to the native language. It helps you to use the Tools controls more effectively.
 
- _Note: For all the properties, ‘Type’ is ‘static’ and ‘Data Type’ is ‘string’._
+> Note: For all the properties, ‘Type’ is ‘static’ and ‘Data Type’ is ‘string’.
 
 
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 AddItemRemoveItem </td><td>

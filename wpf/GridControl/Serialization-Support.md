@@ -28,7 +28,7 @@ In the application, create three buttons. The first button to call the Serialize
 
 {% highlight c# %}
 
-[C#]
+
 
 // To Serialize the GridControl.
 
@@ -87,47 +87,47 @@ Parameters </th><th>
 Type </th><th>
 Return Type </th></tr>
 <tr>
-<th>
-Serialize()</th><th>
-A virtual method called to Serialize the GridControl. It stores the settings in an xml file named as specified in its parameter.</th><th>
-string  fileName</th><th>
-public</th><th>
-void</th></tr>
+<td>
+Serialize()</td><td>
+A virtual metdod called to Serialize tde GridControl. It stores tde settings in an xml file named as specified in its parameter.</td><td>
+string  fileName</td><td>
+public</td><td>
+void</td></tr>
 <tr>
-<th>
-Deserialize()</th><th>
-A virtual method called to Deserialize the GridControl. It restores the settings in an xml file named as specified in its parameter.</th><th>
-string  fileName</th><th>
-public</th><th>
-void</th></tr>
+<td>
+Deserialize()</td><td>
+A virtual metdod called to Deserialize tde GridControl. It restores tde settings in an xml file named as specified in its parameter.</td><td>
+string  fileName</td><td>
+public</td><td>
+void</td></tr>
 <tr>
-<th>
-SerializeToStream()</th><th>
-Serializes the Grid to Stream.</th><th>
-TextWriter textWriter</th><th>
-public </th><th>
-void</th></tr>
+<td>
+SerializeToStream()</td><td>
+Serializes tde Grid to Stream.</td><td>
+TextWriter textWriter</td><td>
+public </td><td>
+void</td></tr>
 <tr>
-<th>
-SerializeAsString()</th><th>
-Serializes the Grid as String.</th><th>
-NA</th><th>
-public</th><th>
-string </th></tr>
+<td>
+SerializeAsString()</td><td>
+Serializes tde Grid as String.</td><td>
+NA</td><td>
+public</td><td>
+string </td></tr>
 <tr>
-<th>
-DeserializeFromStream</th><th>
-Deserializes from the given TextReader.</th><th>
-TextReader textReader</th><th>
-public</th><th>
-void</th></tr>
+<td>
+DeserializeFromStream</td><td>
+Deserializes from tde given TextReader.</td><td>
+TextReader textReader</td><td>
+public</td><td>
+void</td></tr>
 <tr>
-<th>
-DeserializeFromString</th><th>
-Deserializes from the given String content.</th><th>
-string content</th><th>
-public</th><th>
-void</th></tr>
+<td>
+DeserializeFromString</td><td>
+Deserializes from tde given String content.</td><td>
+string content</td><td>
+public</td><td>
+void</td></tr>
 </table>
 
 

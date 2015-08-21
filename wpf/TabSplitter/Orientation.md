@@ -20,7 +20,6 @@ Set the orientation using the code given below:
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -72,7 +71,6 @@ Set the orientation using the code given below:
 
 
 {% highlight c# %}
-[C#]
 
 
 

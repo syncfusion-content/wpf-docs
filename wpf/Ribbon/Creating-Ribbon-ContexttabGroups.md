@@ -13,7 +13,7 @@ ContextTabGroups are used to group RibbonTabs in the application for easy naviga
 
 {% highlight xml %}
 
-    [XAML]
+    
 
 
 

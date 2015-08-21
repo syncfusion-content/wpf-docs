@@ -22,7 +22,7 @@ The data source can be bound to MenuItemAdv by using the ItemsSource property. W
 {% highlight xml %}
 
 
-[XAML]
+
 <shared:MenuAdv x:Name="Menu">               
  <shared:MenuItemAdv Header="File"/>               
  <shared:MenuItemAdv Header="Edit"/>                
@@ -55,7 +55,7 @@ The data source can be bound to MenuItemAdv by using the ItemsSource property. W
 
 {% highlight C# %}
 
-[C#]
+
 public class MenuList
 {       
  public int MenuID { get; set; }       

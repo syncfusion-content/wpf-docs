@@ -15,7 +15,7 @@ In order to insert an image in the document, ParagraphAdv provides an inline cal
 
 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -65,7 +65,7 @@ ImageContainerAdv can be used to add an image directly to an application using t
 
 {% highlight xml %}
 
-[XAML]  
+ 
 <syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            
 <syncfusion:DocumentAdv>                
 <syncfusion:SectionAdv>                    
@@ -79,7 +79,7 @@ ImageContainerAdv can be used to add an image directly to an application using t
 
 {% highlight C# %}
 
-[C#]          
+          
 RichTextBoxAdv richtext = new RichTextBoxAdv();         
  DocumentAdv document = new DocumentAdv();        
  SectionAdv section = new SectionAdv();          

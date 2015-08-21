@@ -14,7 +14,7 @@ Watermark is the dummy content displayed in the CurrencyTextBox when the value i
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -42,7 +42,7 @@ You can customize the Visual appearance of the WatermarkText by using the Waterm
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 

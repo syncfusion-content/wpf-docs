@@ -9,7 +9,7 @@ documentation: ug
 
 # DropDownMenuItem
 
-###Adding Icon to DropDownMenuItem
+## Adding Icon to DropDownMenuItem
 
 The DropDownMenuItem control is a basic MenuItem, which forms the actual items of DropDownMenuGroup. 
 
@@ -47,7 +47,7 @@ The icon of the DropDownMenuItem can be added as follows:
 
 
 
-###Checkable DropDownMenuItem
+## Checkable DropDownMenuItem
 
 The DropDownMenuItem can be checked by setting the IsCheckable property to true. 
 

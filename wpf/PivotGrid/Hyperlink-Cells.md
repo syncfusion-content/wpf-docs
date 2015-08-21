@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-## Hyperlink Cells
+# Hyperlink Cells
 
 The PivotGrid for WPF allows Hyperlinking of cells to retrieve a detailed description about a particular cell. The Hyperlink Cells property of PivotGrid generates a separate event called HyperLinkCellClick for the clicked cell and the HyperLinkCellClickEventArgs will return the clicked PivotCellInfo.
 
@@ -20,11 +20,11 @@ Hyperlink Cell’s property can be applied to the following cells:
 * Summary Cell
 * Value Cell
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 You can Hyperlink cells and can perform some custom operation on a Cell click. While doing so, you can get the complete information of the Cell like its Type, Range etc.
 
-#### Enabling Hyperlink Cells
+### Enabling Hyperlink Cells
 
 You can enable a cell present in the Grid as a Hyperlink by setting the IsHyperlinkCell property of that cell style to True.
 
@@ -33,8 +33,6 @@ Example: To make a column header cell as a hyperlink, set PivotGrid.ColumnHeader
 The property usage is illustrated in the code given below.
 
 {% highlight C# %} 
-
-[C#]
 
 // Instantiating PivotGridControl.
 
@@ -79,7 +77,6 @@ this.PivotGrid1.ValueCellStyle.IsHyperlinkCell = true;
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Instantiating PivotGridControl.
 

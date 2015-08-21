@@ -16,6 +16,7 @@ The features of the ComboBoxAdv control are listed below:
 * AllowMultiSelect—ComboBoxAdv allows multiple selection
 * DefaultText—ComboBoxAdv displays a string when none of the items is selected 
 * SelectedValueDelimiter—It allows customizing the delimiter string displayed between selected items
+
 ## Adding ComboBoxAdv to an Application
 
 
@@ -32,7 +33,7 @@ To add ComboBoxAdv using XAML, first include the following namespace in the XAML
 {% highlight xml %}
 
 
-[XAML]
+
 
 xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
@@ -45,7 +46,7 @@ After adding the above namespace, the ComboBoxAdv can be added to the applicatio
 
 {% highlight xml %}
 
-[XAML]
+
 
     <syncfusion:ComboBoxAdv x:Name="comboBoxAdv1" AllowMultiSelect="True" 		DefaultText="Choose Items" ItemsSource="{Binding Countries}"                                	DisplayMemberPath="Name"  SelectedValuePath="Code"
 
@@ -65,7 +66,7 @@ To add ComboBoxAdv using C#, first include the following namespace in C#.
 {% highlight c# %}
 
 
-[C#]
+
 
 using Syncfusion.Windows.Tools.Controls;
 
@@ -79,7 +80,7 @@ After adding the above namespace, the ComboBoxAdv can be added to the applicatio
 {% highlight c# %}
 
 
-[C#]
+
 
     ComboBoxAdv comboBoxAdv = new ComboBoxAdv { AllowMultiSelect = true, 	SelectedValueDelimiter = " - ", DefaultText = " Choose Itmes ", 	ItemsSource = Countries, DisplayMemberPath="Name", 	SelectedValuePath="Code" };
 

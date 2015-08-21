@@ -18,7 +18,7 @@ The following code example illustrates the binding of the OLAP Client control to
 
 {% highlight C# %}  
 
-[C#]
+
 
 OlapDataManager olapDataManager = new OlapDataManager("Data  source=localhost; Initial Catalog=Adventure Works DW");
 
@@ -31,7 +31,7 @@ this.olapClient1.DataBind();
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 
 Dim olapDataManager As OlapDataManager = New OlapDataManager("Data source=localhost; Initial Catalog=Adventure Works DW")
@@ -49,7 +49,7 @@ The following code example illustrates how to bind the OLAP Client control to an
 
 {% highlight C# %}  
 
-[C#]
+
 
 
 OlapDataManager olapDataManager = new OlapDataManager("Datasource=AdventureWorks.cub; Provider=msolap;");
@@ -62,7 +62,7 @@ this.olapClient1.DataBind();
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 
 

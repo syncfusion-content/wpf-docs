@@ -21,65 +21,65 @@ In the below example, FontWeightButton and FontListBox are the custom controls.
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
-&lt;syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50"                            Width="350" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center"&gt;
-    &lt;syncfusion:PropertyGrid.CategoryEditors&gt;
-        &lt;syncfusion:CategoryEditor Category="MyFonts"&gt;
-            &lt;syncfusion:CategoryEditor.Properties&gt;
-                &lt;syncfusion:CategoryEditorProperty Name="FontSize"/&gt;
-                &lt;syncfusion:CategoryEditorProperty Name="FontFamily"/&gt;
-                &lt;syncfusion:CategoryEditorProperty Name="FontStyle"/&gt;
-                &lt;syncfusion:CategoryEditorProperty Name="FontWeight"/&gt;
-            &lt;/syncfusion:CategoryEditor.Properties&gt;
-            &lt;syncfusion:CategoryEditor.EditorTemplate&gt;
-                &lt;DataTemplate&gt;
-                    &lt;Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Gray" BorderThickness="1" Margin="10" Background="LightGray" CornerRadius="5"&gt;
-                        &lt;Grid&gt;
-                            &lt;Grid.ColumnDefinitions&gt;
-                                &lt;ColumnDefinition Width="5*"/&gt;
-                                &lt;ColumnDefinition Width="5*"/&gt;
-                            &lt;/Grid.ColumnDefinitions&gt;
-                            &lt;Grid.RowDefinitions&gt;
-                                &lt;RowDefinition Height="Auto"/&gt;
-                                &lt;RowDefinition Height="Auto"/&gt;
-                            &lt;/Grid.RowDefinitions&gt;
-                            &lt;local:FontListBox SelectedValue="{Binding Path=CategoryValueProperties[FontFamily].Value,Mode=TwoWay}" Grid.Row="0" Grid.Column="0" Margin="5"/&gt;
-                            &lt;shared:IntegerTextBox Value="{Binding Path=CategoryValueProperties[FontSize].Value,Mode=TwoWay}" Grid.Row="0" Grid.Column="1" Margin="5"/&gt;
-                            &lt;local:FontWeightButton SelectedValue="{Binding Path=CategoryValueProperties[FontWeight].Value,Mode=TwoWay}" Grid.Row="1" Grid.Column="0" Margin="5" PropType="FontWeight"/&gt;
-                            &lt;local:FontWeightButton SelectedValue="{Binding Path=CategoryValueProperties[FontStyle].Value,Mode=TwoWay}" Grid.Row="1" Grid.Column="1" Margin="5" PropType="FontStyle"/&gt;
-                        &lt;/Grid&gt;
-                    &lt;/Border&gt;
-                &lt;/DataTemplate&gt;
-            &lt;/syncfusion:CategoryEditor.EditorTemplate&gt;
-        &lt;/syncfusion:CategoryEditor&gt;
-    &lt;/syncfusion:PropertyGrid.CategoryEditors&gt;
-&lt;/syncfusion:PropertyGrid&gt;
+<syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50"                            Width="350" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <syncfusion:PropertyGrid.CategoryEditors>
+        <syncfusion:CategoryEditor Category="MyFonts">
+            <syncfusion:CategoryEditor.Properties>
+                <syncfusion:CategoryEditorProperty Name="FontSize"/>
+                <syncfusion:CategoryEditorProperty Name="FontFamily"/>
+                <syncfusion:CategoryEditorProperty Name="FontStyle"/>
+                <syncfusion:CategoryEditorProperty Name="FontWeight"/>
+            </syncfusion:CategoryEditor.Properties>
+            <syncfusion:CategoryEditor.EditorTemplate>
+                <DataTemplate>
+                    <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="Gray" BorderThickness="1" Margin="10" Background="LightGray" CornerRadius="5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5*"/>
+                                <ColumnDefinition Width="5*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <local:FontListBox SelectedValue="{Binding Path=CategoryValueProperties[FontFamily].Value,Mode=TwoWay}" Grid.Row="0" Grid.Column="0" Margin="5"/>
+                            <shared:IntegerTextBox Value="{Binding Path=CategoryValueProperties[FontSize].Value,Mode=TwoWay}" Grid.Row="0" Grid.Column="1" Margin="5"/>
+                            <local:FontWeightButton SelectedValue="{Binding Path=CategoryValueProperties[FontWeight].Value,Mode=TwoWay}" Grid.Row="1" Grid.Column="0" Margin="5" PropType="FontWeight"/>
+                            <local:FontWeightButton SelectedValue="{Binding Path=CategoryValueProperties[FontStyle].Value,Mode=TwoWay}" Grid.Row="1" Grid.Column="1" Margin="5" PropType="FontStyle"/>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </syncfusion:CategoryEditor.EditorTemplate>
+        </syncfusion:CategoryEditor>
+    </syncfusion:PropertyGrid.CategoryEditors>
+</syncfusion:PropertyGrid>
 
 
-
+{% endhighlight %}
 
 
 ![](CategoryEditor-support_images/CategoryEditor-support_img1.png)
-{:.image }
+
 
 
 
 
 Properties
 
-_CategoryEditor Table_
+CategoryEditor Table
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 CategoryEditors</td><td>

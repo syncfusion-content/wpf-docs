@@ -20,7 +20,7 @@ A KML file can be rendered with the help of the ShapeFileLayer in SfMap. The KML
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 

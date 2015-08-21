@@ -20,7 +20,7 @@ Range is a visual element that begins and ends at specified values within a scal
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -49,7 +49,7 @@ Range is a visual element that begins and ends at specified values within a scal
 {% highlight C# %}
 
 
-[C#]
+
 
 
 
@@ -85,7 +85,7 @@ Range start and end width can be customized by using the StartWidth and EndWidth
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -113,7 +113,7 @@ Range start and end width can be customized by using the StartWidth and EndWidth
 {% highlight C# %}
 
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -155,7 +155,6 @@ You can bind the range’s stroke to the tick lines and labels within its range 
 
 {% highlight xml %}
 
-[XAML]
 
             <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -184,7 +183,7 @@ You can bind the range’s stroke to the tick lines and labels within its range 
 
 {% highlight C# %}
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -227,7 +226,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 {% highlight xml %}
 
-[XAML]
+
 
             <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -255,7 +254,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 

@@ -22,17 +22,17 @@ The EssentialGrid's cell style architecture plays an integral role in almost eve
 
 Following are the two cell styles available:
 
-Volatile Cell Styles
+### Volatile Cell Styles
 
 QueryCellInfo will be raised the first time you access the contents of a cell with a call to Grid.Model[rowIndex, columnIndex] or when the grid calls this indexer internally before painting cells. The indexer returns an object of type GridStyleInfo. After querying the cell contents they remain cached in a volatile cache that holds weak references to the cell styles. This ensures that this data is available for reuse when needed. At the same time it does not stand in the way of the garbage collector if memory needs to be freed. Once a style gets garbage collected it will be removed from the volatile cache. You can manually force QueryCellInfo to be called again when you call GridControl.InvalidateCell(cell) or GridModel.VolatileCellStyles.Clear(cell). 
 
-Render Cell Styles
+### Render Cell Styles
 
 Prior to display of a cell, the PrepareRenderCell event is raised. This event is not raised from the Model. Instead it is raised from the GridControlBase directly. This has the advantage that if you want multiple grids to display the same Model, individual grids can override the cell contents individually.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -111,7 +111,7 @@ Following code snippet illustrates the effect of various Base styles.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -187,7 +187,7 @@ The Background property specifies a background brush for the grid cell. The cell
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -260,80 +260,80 @@ Determines the angle of rotation of the text</td></tr>
 1. Setting Text, Foreground and Font Properties
 
 
-{% highlight c# %}
-[C#]
+  
 
 
 
-//Setting text, foreground and fonts
 
-this.grid.Model[6, 1].Font.FontSize = 10;
+			//Setting text, foreground and fonts
 
-this.grid.Model[6, 1].Text = "The quick brown fox jumps over the lazy dog";
+			this.grid.Model[6, 1].Font.FontSize = 10;
 
-this.grid.Model[6, 1].Foreground = Brushes.Gray;
+			this.grid.Model[6, 1].Text = "The quick brown fox jumps over the lazy dog";
 
-
-
-this.grid.Model[7, 1].Font.FontSize = 12;
-
-this.grid.Model[7, 1].Text = "The quick brown fox jumps over the lazy dog";
-
-this.grid.Model[7, 1].Foreground = Brushes.Red;
+			this.grid.Model[6, 1].Foreground = Brushes.Gray;
 
 
 
-this.grid.Model[8, 1].Font.FontSize = 14;
+			this.grid.Model[7, 1].Font.FontSize = 12;
 
-this.grid.Model[8, 1].Text = "The quick brown fox jumps over the lazy dog";
+			this.grid.Model[7, 1].Text = "The quick brown fox jumps over the lazy dog";
 
-this.grid.Model[8, 1].Foreground = Brushes.Blue;
-
-
-
-this.grid.Model[9, 1].Font.FontSize = 16;
-
-this.grid.RowHeights[9] = 30d;
-
-this.grid.Model[9, 1].Text = "The quick brown fox jumps over the lazy dog";
-
-this.grid.Model[9, 1].Foreground = Brushes.Green;
+			this.grid.Model[7, 1].Foreground = Brushes.Red;
 
 
 
-//Setting font weights
+			this.grid.Model[8, 1].Font.FontSize = 14;
 
-this.grid.Model[6, 5].Font.FontWeight = FontWeights.Bold;
+			this.grid.Model[8, 1].Text = "The quick brown fox jumps over the lazy dog";
 
-this.grid.Model[6, 5].HorizontalAlignment = HorizontalAlignment.Center;
-
-this.grid.Model[6, 5].CellValue = "Font weight is Bold";
+			this.grid.Model[8, 1].Foreground = Brushes.Blue;
 
 
 
-this.grid.Model[7, 5].Font.FontStyle  = FontStyles.Italic;
+			this.grid.Model[9, 1].Font.FontSize = 16;
 
-this.grid.Model[7, 5].HorizontalAlignment = HorizontalAlignment.Center;
+			this.grid.RowHeights[9] = 30d;
 
-this.grid.Model[7, 5].CellValue = "Font style is Itlaic";
+			this.grid.Model[9, 1].Text = "The quick brown fox jumps over the lazy dog";
 
-
-
-this.grid.Model[8, 5].Font.FontStyle = FontStyles.Normal;
-
-this.grid.Model[8, 5].HorizontalAlignment = HorizontalAlignment.Center;
-
-this.grid.Model[8, 5].CellValue = "Font style is Normal";
-
-{% endhighlight %}
-
-#### Output
-
-The following output is generated using the code above.
+			this.grid.Model[9, 1].Foreground = Brushes.Green;
 
 
 
-![](Appearance_images/Appearance_img4.jpeg)
+			//Setting font weights
+
+			this.grid.Model[6, 5].Font.FontWeight = FontWeights.Bold;
+
+			this.grid.Model[6, 5].HorizontalAlignment = HorizontalAlignment.Center;
+
+			this.grid.Model[6, 5].CellValue = "Font weight is Bold";
+
+
+
+			this.grid.Model[7, 5].Font.FontStyle  = FontStyles.Italic;
+
+			this.grid.Model[7, 5].HorizontalAlignment = HorizontalAlignment.Center;
+
+			this.grid.Model[7, 5].CellValue = "Font style is Itlaic";
+
+
+
+			this.grid.Model[8, 5].Font.FontStyle = FontStyles.Normal;
+
+			this.grid.Model[8, 5].HorizontalAlignment = HorizontalAlignment.Center;
+
+			this.grid.Model[8, 5].CellValue = "Font style is Normal";
+
+
+
+   #### Output
+
+   The following output is generated using the code above.
+
+
+
+   ![](Appearance_images/Appearance_img4.jpeg)
 
 
 
@@ -341,169 +341,169 @@ The following output is generated using the code above.
 
 2. Setting Cell Orientation
 
-{% highlight c# %}
 
-[C#]
 
 
 
-this.grid.Model[12, 1].Font.Orientation = 45;
 
-this.grid.Model[12, 1].CellValue = "Angle 45";
 
-this.grid.Model[12, 1].HorizontalAlignment = HorizontalAlignment.Center;
+			this.grid.Model[12, 1].Font.Orientation = 45;
 
-this.grid.Model[12, 1].VerticalAlignment = VerticalAlignment.Center;
+			this.grid.Model[12, 1].CellValue = "Angle 45";
 
-this.grid.Model[12, 2].Font.Orientation = 90;
+			this.grid.Model[12, 1].HorizontalAlignment = HorizontalAlignment.Center;
 
-this.grid.Model[12, 2].CellValue = "Angle 90";
+			this.grid.Model[12, 1].VerticalAlignment = VerticalAlignment.Center;
 
-this.grid.Model[12, 2].HorizontalAlignment = HorizontalAlignment.Center;
+			this.grid.Model[12, 2].Font.Orientation = 90;
 
-this.grid.Model[12, 2].VerticalAlignment = VerticalAlignment.Center;
+			this.grid.Model[12, 2].CellValue = "Angle 90";
 
-this.grid.Model[12, 3].Font.Orientation = 180;
+			this.grid.Model[12, 2].HorizontalAlignment = HorizontalAlignment.Center;
 
-this.grid.Model[12, 3].CellValue = "Angle 180";
+			this.grid.Model[12, 2].VerticalAlignment = VerticalAlignment.Center;
 
-this.grid.Model[12, 3].HorizontalAlignment = HorizontalAlignment.Center;
+			this.grid.Model[12, 3].Font.Orientation = 180;
 
-this.grid.Model[12, 3].VerticalAlignment = VerticalAlignment.Center;
+			this.grid.Model[12, 3].CellValue = "Angle 180";
 
-this.grid.Model[12, 4].Font.Orientation = 270;
+			this.grid.Model[12, 3].HorizontalAlignment = HorizontalAlignment.Center;
 
-this.grid.Model[12, 4].CellValue = "Angle 270";
+			this.grid.Model[12, 3].VerticalAlignment = VerticalAlignment.Center;
 
-this.grid.Model[12, 4].HorizontalAlignment = HorizontalAlignment.Center;
+			this.grid.Model[12, 4].Font.Orientation = 270;
 
-this.grid.Model[12, 4].VerticalAlignment = VerticalAlignment.Center;
+			this.grid.Model[12, 4].CellValue = "Angle 270";
 
-this.grid.Model[12, 5].Font.Orientation = 320;
+			this.grid.Model[12, 4].HorizontalAlignment = HorizontalAlignment.Center;
 
-this.grid.Model[12, 5].CellValue = "Angle 320";
+			this.grid.Model[12, 4].VerticalAlignment = VerticalAlignment.Center;
 
-this.grid.Model[12, 5].HorizontalAlignment = HorizontalAlignment.Center;
+			this.grid.Model[12, 5].Font.Orientation = 320;
 
-this.grid.Model[12, 5].VerticalAlignment = VerticalAlignment.Center;
+			this.grid.Model[12, 5].CellValue = "Angle 320";
 
-this.grid.Model.RowHeights[12] = 50;
+			this.grid.Model[12, 5].HorizontalAlignment = HorizontalAlignment.Center;
 
-{% endhighlight  %}
+			this.grid.Model[12, 5].VerticalAlignment = VerticalAlignment.Center;
 
-#### Output
+			this.grid.Model.RowHeights[12] = 50;
 
-The following output is generated using the code above.
 
 
+   #### Output
 
-![](Appearance_images/Appearance_img5.jpeg)
+   The following output is generated using the code above.
 
 
 
-#### Borders
+   ![](Appearance_images/Appearance_img5.jpeg)
 
-Cell borders can be customized to have different color, thickness and style. It is possible to have different border styles for top, bottom, left and right borders for the same cell.
 
-#### Setting Borders
 
+   #### Borders
 
-{% highlight c# %}
-[C#]
+   Cell borders can be customized to have different color, thickness and style. It is possible to have different border styles for top, bottom, left and right borders for the same cell.
 
+   #### Setting Borders
 
 
-this.grid.Model[15, 1].Borders.Bottom = new Pen(Brushes.Blue, 1);
 
-this.grid.Model[15, 1].Borders.Top = new Pen(Brushes.Red, 1);
 
-this.grid.Model[15, 1].Borders.Right = new Pen(Brushes.Purple,3);
 
-this.grid.Model[15, 1].Borders.Left = new Pen(Brushes.RoyalBlue,1);
 
 
+			this.grid.Model[15, 1].Borders.Bottom = new Pen(Brushes.Blue, 1);
 
-this.grid.Model[15, 2].Borders.Bottom = new Pen(Brushes.Turquoise, 1);
+			this.grid.Model[15, 1].Borders.Top = new Pen(Brushes.Red, 1);
 
-this.grid.Model[15, 2].Borders.Bottom.Thickness = 5;
+			this.grid.Model[15, 1].Borders.Right = new Pen(Brushes.Purple,3);
 
-this.grid.Model[15, 2].Borders.Top = new Pen(Brushes.LawnGreen, 1);
+			this.grid.Model[15, 1].Borders.Left = new Pen(Brushes.RoyalBlue,1);
 
-this.grid.Model[15, 2].Borders.Top.DashCap = PenLineCap.Round;
 
-this.grid.Model[15, 2].Borders.Top.Thickness = 5;
 
-this.grid.Model[15, 2].Borders.Right = new Pen(Brushes.SteelBlue, 3);
+			this.grid.Model[15, 2].Borders.Bottom = new Pen(Brushes.Turquoise, 1);
 
-this.grid.Model[15, 2].Borders.Right.Thickness = 5;
+			this.grid.Model[15, 2].Borders.Bottom.Thickness = 5;
 
+			this.grid.Model[15, 2].Borders.Top = new Pen(Brushes.LawnGreen, 1);
 
+			this.grid.Model[15, 2].Borders.Top.DashCap = PenLineCap.Round;
 
-this.grid.Model[15, 3].Borders.Bottom = new Pen(Brushes.IndianRed, 2);
+			this.grid.Model[15, 2].Borders.Top.Thickness = 5;
 
-this.grid.Model[15, 3].Borders.Bottom.DashStyle = DashStyles.DashDot;
+			this.grid.Model[15, 2].Borders.Right = new Pen(Brushes.SteelBlue, 3);
 
-this.grid.Model[15, 3].Borders.Top = new Pen(Brushes.Indigo, 2);
+			this.grid.Model[15, 2].Borders.Right.Thickness = 5;
 
-this.grid.Model[15, 3].Borders.Top.DashStyle = DashStyles.DashDot;
 
-this.grid.Model[15, 3].Borders.Right = new Pen(Brushes.Gray, 3);
 
-this.grid.Model[15, 3].Borders.Right.DashStyle = DashStyles.DashDot;
+			this.grid.Model[15, 3].Borders.Bottom = new Pen(Brushes.IndianRed, 2);
 
+			this.grid.Model[15, 3].Borders.Bottom.DashStyle = DashStyles.DashDot;
 
+			this.grid.Model[15, 3].Borders.Top = new Pen(Brushes.Indigo, 2);
 
-this.grid.Model[15, 4].Borders.Bottom = new Pen(Brushes.HotPink, 2);
+			this.grid.Model[15, 3].Borders.Top.DashStyle = DashStyles.DashDot;
 
-this.grid.Model[15, 4].Borders.Top = new Pen(Brushes.DeepSkyBlue, 2);
+			this.grid.Model[15, 3].Borders.Right = new Pen(Brushes.Gray, 3);
 
-this.grid.Model[15, 4].Borders.Right = new Pen(Brushes.Magenta, 3);
+			this.grid.Model[15, 3].Borders.Right.DashStyle = DashStyles.DashDot;
 
-this.grid.Model[15, 4].Borders.Bottom.DashStyle = DashStyles.Dash;
 
-this.grid.Model[15, 4].Borders.Top.DashStyle = DashStyles.Dash;
 
-this.grid.Model[15, 4].Borders.Right.DashStyle = DashStyles.Dash;
+			this.grid.Model[15, 4].Borders.Bottom = new Pen(Brushes.HotPink, 2);
 
+			this.grid.Model[15, 4].Borders.Top = new Pen(Brushes.DeepSkyBlue, 2);
 
+			this.grid.Model[15, 4].Borders.Right = new Pen(Brushes.Magenta, 3);
 
-this.grid.Model[15, 5].Borders.Bottom = new Pen(Brushes.Maroon, 2);
+			this.grid.Model[15, 4].Borders.Bottom.DashStyle = DashStyles.Dash;
 
-this.grid.Model[15, 5].Borders.Top = new Pen(Brushes.Olive, 2);
+			this.grid.Model[15, 4].Borders.Top.DashStyle = DashStyles.Dash;
 
-this.grid.Model[15, 5].Borders.Right = new Pen(Brushes.CadetBlue, 2);
+			this.grid.Model[15, 4].Borders.Right.DashStyle = DashStyles.Dash;
 
-this.grid.Model[15, 5].Borders.Bottom.DashStyle = DashStyles.Dot;
 
-this.grid.Model[15, 5].Borders.Top.DashStyle = DashStyles.Dot;
 
-this.grid.Model[15, 5].Borders.Right.DashStyle = DashStyles.Dot;
+			this.grid.Model[15, 5].Borders.Bottom = new Pen(Brushes.Maroon, 2);
 
+			this.grid.Model[15, 5].Borders.Top = new Pen(Brushes.Olive, 2);
 
+			this.grid.Model[15, 5].Borders.Right = new Pen(Brushes.CadetBlue, 2);
 
-this.grid.Model[15, 6].Borders.Bottom = new Pen(Brushes.Chocolate, 4);
+			this.grid.Model[15, 5].Borders.Bottom.DashStyle = DashStyles.Dot;
 
-this.grid.Model[15, 6].Borders.Top = new Pen(Brushes.Crimson, 4);
+			this.grid.Model[15, 5].Borders.Top.DashStyle = DashStyles.Dot;
 
-this.grid.Model[15, 6].Borders.Right = new Pen(Brushes.DarkGoldenrod, 4);
+			this.grid.Model[15, 5].Borders.Right.DashStyle = DashStyles.Dot;
 
-this.grid.Model[15, 6].Borders.Bottom.DashStyle = DashStyles.DashDotDot;
 
-this.grid.Model[15, 6].Borders.Top.DashStyle = DashStyles.DashDotDot;
 
-this.grid.Model[15, 6].Borders.Right.DashStyle = DashStyles.DashDotDot;
+			this.grid.Model[15, 6].Borders.Bottom = new Pen(Brushes.Chocolate, 4);
 
+			this.grid.Model[15, 6].Borders.Top = new Pen(Brushes.Crimson, 4);
 
-{% endhighlight  %}
-#### Output
+			this.grid.Model[15, 6].Borders.Right = new Pen(Brushes.DarkGoldenrod, 4);
 
-The following output is generated using the code above.
+			this.grid.Model[15, 6].Borders.Bottom.DashStyle = DashStyles.DashDotDot;
 
+			this.grid.Model[15, 6].Borders.Top.DashStyle = DashStyles.DashDotDot;
 
+			this.grid.Model[15, 6].Borders.Right.DashStyle = DashStyles.DashDotDot;
 
-![](Appearance_images/Appearance_img6.jpeg)
 
 
+   #### Output
+
+   The following output is generated using the code above.
+
+
+
+   ![](Appearance_images/Appearance_img6.jpeg)
+
+   {:.prettyprint}
 
 ### Data Formats
 
@@ -580,108 +580,107 @@ s</td><td>
 1. Setting text format
 
 
-{% highlight c# %}
-[C#]
 
 
 
-//Setting Text formats            
-
-int rowIndex = 3;
-
-int colIndex = 1;
-
-GridModel model =  this.grid.Model; 
-
-foreach (string format in new string[] 
-
-{
 
 
+			//Setting Text formats            
 
-"0.00",
+			int rowIndex = 3;
 
-"C",
+			int colIndex = 1;
 
-"0.00;(0.00)",
+			GridModel model =  this.grid.Model; 
 
-"###0.##%",
+			foreach (string format in new string[] 
 
-"#0.#E+00",
+			{
 
-"10:##,##0.#"
 
-})
 
-{
+			"0.00",
 
-    model[rowIndex - 1, colIndex].Text = format;
+			"C",
 
-    model[rowIndex  , colIndex].Format = format;
+			"0.00;(0.00)",
 
-    model[rowIndex , colIndex].CellValue = Math.PI;
+			"###0.##%",
 
-    model[rowIndex , colIndex].CellValueType = typeof(double);
+			"#0.#E+00",
 
-    rowIndex += 3;
+			"10:##,##0.#"
 
-}
+			})
 
-{% endhighlight  %}
+			{
+
+				model[rowIndex - 1, colIndex].Text = format;
+
+				model[rowIndex  , colIndex].Format = format;
+
+				model[rowIndex , colIndex].CellValue = Math.PI;
+
+				model[rowIndex , colIndex].CellValueType = typeof(double);
+
+				rowIndex += 3;
+
+			}
+
+
 
 2. Setting DateTime format
 
-{% highlight c# %}
-
-[C#]
 
 
 
-//Setting DateTime formats            
-
-rowIndex = 2;
-
-colIndex = 3;
 
 
+			//Setting DateTime formats            
 
-foreach (string format in new string[] 
+			rowIndex = 2;
 
-    {
+			colIndex = 3;
 
 
 
-        "d",
+			foreach (string format in new string[] 
 
-        "D",
+				{
 
-        "f",
 
-        "dddd, dd MMMM yyyy",
 
-        "t",
+					"d",
 
-        "s"
+					"D",
 
-    })
+					"f",
 
-{
+					"dddd, dd MMMM yyyy",
 
-    model[rowIndex - 1, colIndex].Text = format;
+					"t",
 
-    grid.Model.ColumnWidths[colIndex] = 150d;
+					"s"
 
-    model[rowIndex, colIndex].Format = format;
+				})
 
-    model[rowIndex, colIndex].CellValue = DateTime.Now;
+			{
 
-    model[rowIndex, colIndex].CellValueType = typeof(DateTime);
+				model[rowIndex - 1, colIndex].Text = format;
 
-    rowIndex += 3;
+				grid.Model.ColumnWidths[colIndex] = 150d;
 
-}
+				model[rowIndex, colIndex].Format = format;
 
-{% endhighlight  %}
+				model[rowIndex, colIndex].CellValue = DateTime.Now;
+
+				model[rowIndex, colIndex].CellValueType = typeof(DateTime);
+
+				rowIndex += 3;
+
+			}
+
+   {:.prettyprint}
 
 #### Output
 
@@ -701,7 +700,7 @@ In the Grid control, you can set the FormatProvider property as shown in the fol
 
 
 {% highlight c# %}
-[C#]
+
 
 this.grid.Model[row, col].CellValue = Math.PI;
 
@@ -718,7 +717,7 @@ this.grid.Model[row, col].FormatProvider = new CustomNumberFormat();
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -742,7 +741,7 @@ The following example illustrates the use of a class that implements the IFormat
 
 {% highlight c# %}
 
-[C#]
+
 
 public class CustomNumberFormat : IFormatProvider, ICustomFormatter
 
@@ -872,7 +871,7 @@ Covered Cells are cells that span over neighboring cells. The combined cells wil
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -956,7 +955,7 @@ You can also trigger QueryCellSpanBackgrounds event to create and customize cell
 
 This example creates three cell spans with gradient backgrounds and a fourth cell span with an image background created through the QueryCellSpanBackgrounds event.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1036,7 +1035,7 @@ The FloatingCell behavior can be assigned to one particular cell or a certain ra
 
 {% highlight c# %}
 
-[C#]
+
 
 //Provided as CellStyle
 
@@ -1101,7 +1100,7 @@ To overlap the cell when it is not in edit mode and calculate according to the f
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1114,7 +1113,7 @@ To prevent the overlapping of previous cells.
 
 
 {% highlight c# %}
-[C#]
+
 
 this.grid.Model.Options.FloodCell = false;
 
@@ -1127,7 +1126,7 @@ To enable floating cell behavior by calculating while editing the text.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 

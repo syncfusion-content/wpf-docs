@@ -7,11 +7,11 @@ control: PDF Viewer
 documentation: ug
 ---
 
-### Saving the PDF document
+# Saving the PDF document
 
 PDF Viewer also allows you to save the PDF document that is being displayed in the PDF Viewer. The following code example illustrates the same.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -25,9 +25,9 @@ PdfLoadedDocument lDoc = pdfviewer1.LoadedDocument;
 
 lDoc.Save("Sample.pdf");
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 'Acquire the document loaded into the PDF Viewer
 
@@ -39,3 +39,4 @@ Dim lDoc As PdfLoadedDocument = pdfviewer1.LoadedDocument
 
 lDoc.Save("Sample.pdf")
 
+{% endhighlight %}

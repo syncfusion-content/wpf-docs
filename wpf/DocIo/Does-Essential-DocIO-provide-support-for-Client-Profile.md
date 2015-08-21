@@ -7,7 +7,7 @@ control: DocIO
 documentation: ug
 ---
 
-### Does Essential DocIO provide support for Client Profile?
+# Does Essential DocIO provide support for Client Profile?
 
 Yes, Essential DocIO provides support for Client profile. In order to use Essential DocIO in an application targeted at the Client profile, you must include the following assemblies:
 

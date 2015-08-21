@@ -39,14 +39,14 @@ on the features and functionalities of the PivotGrid control. It is organized in
 
 The following conventions will help you quickly identify the important sections of information while using the content.
 
-_Document conventions table_
+Document conventions table
 
 <table>
 <tr>
-<td>
-{{ '**Convention**' | markdownify }}</td><td>
-{{ '**Icon**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Convention**' | markdownify }}</th><th>
+{{ '**Icon**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 Note</td><td>

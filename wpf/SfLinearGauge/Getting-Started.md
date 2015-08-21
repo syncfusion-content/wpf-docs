@@ -14,7 +14,7 @@ documentation: ug
 Refer to the following code example to add a Linear Gauge to your application:
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -70,7 +70,7 @@ Refer to the following code example to add a Linear Gauge to your application:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -124,7 +124,7 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 
 
 
-2. Right_-_click the Project and select the Syncfusion Reference Manager.
+2. Right click the Project and select the Syncfusion Reference Manager.
 
      ![](Getting-Started_images/Getting-Started_img3.png)
 
@@ -154,157 +154,150 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 
 6. Create a namespace reference to the SfLinearGauge control by using the Syncfusion’s global namespace reference, schemas.syncfusion.com or the SfLinearGauge control’s namespace reference  by using the Syncfusion.UI.Xaml.Gauges available in the Syncfusion.SfLinearGauge.WPF assembly.
 
-   ~~~ xml
-     [XAML]
+  
+     
+			 xmlns:LinearGauge="http://schemas.syncfusion.com/wpf" 
 
+			 (or)
 
+			 xmlns:LinearGauge ="clr-   
 
-     xmlns:LinearGauge="http://schemas.syncfusion.com/wpf" 
-
-     (or)
-
-     xmlns:LinearGauge ="clr-   
-
-     namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfLinearGauge.WPF"
-   ~~~
-   {:.prettyprint}
+			 namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfLinearGauge.WPF"
+  
 
 
 
 7. Add the following code to create a simple SfLinearGauge control.
 
    ~~~ xml
-     [XAML]
+     
 
 
 
-      <Window x:Class="LinearGauge.MainWindow"
+			  <Window x:Class="LinearGauge.MainWindow"
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-         xmlns:Gauges="http://schemas.syncfusion.com/wpf"
+				 xmlns:Gauges="http://schemas.syncfusion.com/wpf"
 
-        Title="MainWindow" Height="350" Width="525">
+				Title="MainWindow" Height="350" Width="525">
 
-    <Grid Name="Grid">
+			<Grid Name="Grid">
 
-        <Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal">
+				<Gauges:SfLinearGauge Name="linearGauge" Orientation="Horizontal">
 
-            <Gauges:SfLinearGauge.MainScale>
+					<Gauges:SfLinearGauge.MainScale>
 
-                <Gauges:LinearScale ScaleDirection="Forward"
+						<Gauges:LinearScale ScaleDirection="Forward"
 
-                                    ScaleBarStroke="Black" 
+											ScaleBarStroke="Black" 
 
-                                    ScaleBarSize="20" 
+											ScaleBarSize="20" 
 
-                                    ScaleBarLength="350"
+											ScaleBarLength="350"
 
-                                    ScaleBarBorderThickness="1"
+											ScaleBarBorderThickness="1"
 
-                                         Interval="10"
+												 Interval="10"
 
-                                    Minimum="0" Maximum="100">
+											Minimum="0" Maximum="100">
 
-                    <Gauges:LinearScale.Pointers>
+							<Gauges:LinearScale.Pointers>
 
-                        <Gauges:LinearPointer Value="40" PointerType="BarPointer" />
+								<Gauges:LinearPointer Value="40" PointerType="BarPointer" />
 
-                        <Gauges:LinearPointer Value="40" PointerType="SymbolPointer"/>
+								<Gauges:LinearPointer Value="40" PointerType="SymbolPointer"/>
 
-                    </Gauges:LinearScale.Pointers>
+							</Gauges:LinearScale.Pointers>
 
-                </Gauges:LinearScale>
+						</Gauges:LinearScale>
 
-            </Gauges:SfLinearGauge.MainScale>
+					</Gauges:SfLinearGauge.MainScale>
 
-        </Gauges:SfLinearGauge>
+				</Gauges:SfLinearGauge>
 
-    </Grid>
+			</Grid>
 
-     </Window>
+			 </Window>
    
    ~~~
    {:.prettyprint}
 
 
 
-   ~~~ c#
-     [C#]
+ 
+    
+			 using System.Windows;
 
+			 using Syncfusion.UI.Xaml.Gauges;
 
+			 namespace  LinearGauge
 
-     using System.Windows;
+			{
 
-     using Syncfusion.UI.Xaml.Gauges;
+				 public partial class MainWindow : Window
 
-     namespace  LinearGauge
+				{
 
-    {
+					 public MainWindow()
 
-         public partial class MainWindow : Window
+					{
 
-        {
+					  InitializeComponent();
 
-             public MainWindow()
+					  SfLinearGauge lineargauge = new SfLinearGauge();
 
-            {
+					  lineargauge.Orientation = Orientation.Horizontal;
 
-              InitializeComponent();
+					  LinearScale _mainScale = new LinearScale();
 
-              SfLinearGauge lineargauge = new SfLinearGauge();
+					  _mainScale.ScaleDirection = LinearScaleDirection.Forward;
 
-              lineargauge.Orientation = Orientation.Horizontal;
+					  _mainScale.ScaleBarStroke = new SolidColorBrush(Colors.Black);
 
-              LinearScale _mainScale = new LinearScale();
+					  _mainScale.ScaleBarSize = 20;
 
-              _mainScale.ScaleDirection = LinearScaleDirection.Forward;
+					  _mainScale.ScaleBarLength = 350;
 
-              _mainScale.ScaleBarStroke = new SolidColorBrush(Colors.Black);
+					  _mainScale.ScaleBarBorderThickness = new Thickness(1);
 
-              _mainScale.ScaleBarSize = 20;
+					  _mainScale.Interval = 10;
 
-              _mainScale.ScaleBarLength = 350;
+					  _mainScale.Minimum = 0;
 
-              _mainScale.ScaleBarBorderThickness = new Thickness(1);
+					  _mainScale.Maximum = 100;
 
-              _mainScale.Interval = 10;
+					  _mainScale.Pointers.Add(new LinearPointer(){Value=40,PointerType=LinearPointerType.BarPointer});
 
-              _mainScale.Minimum = 0;
+					  _mainScale.Pointers.Add(new LinearPointer(){Value=40,PointerType=LinearPointerType.SymbolPointer});
 
-              _mainScale.Maximum = 100;
+					  lineargauge.MainScale = _mainScale;
 
-              _mainScale.Pointers.Add(new LinearPointer(){Value=40,PointerType=LinearPointerType.BarPointer});
+					  this.Grid.Children.Add(lineargauge);
 
-              _mainScale.Pointers.Add(new LinearPointer(){Value=40,PointerType=LinearPointerType.SymbolPointer});
+					}
 
-              lineargauge.MainScale = _mainScale;
+				}
 
-              this.Grid.Children.Add(lineargauge);
-
-            }
-
-        }
-
-    }
-   ~~~
-   {:.prettyprint}
+			}
+  
 
 
 
 8. The simple SfLinearGauge control is created as shown in the following figure.
 
-     ![](Getting-Started_images/Getting-Started_img8.png)
+   ![](Getting-Started_images/Getting-Started_img8.png)
 
 
+   {:.prettyprint}
+   
+> Note: 
 
-> _Note:_ 
+> The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version.
 
-> _The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version._
-
-> _The Syncfusion Reference Manager can be used only in the Visual Studio 2010, 2012, and 2013._
+> The Syncfusion Reference Manager can be used only in the Visual Studio 2010, 2012, and 2013.
 
 
 

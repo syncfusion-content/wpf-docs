@@ -32,7 +32,7 @@ To add the built-in zooming:
 
 
 {% highlight html %}
-[XAML]
+
 
 <Slider Minimum="80" Maximum="600" Value="100" x:Name="ZoomSlider" Width="150"/>
 
@@ -51,7 +51,7 @@ To add the built-in zooming:
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
             /// Defining the Slider
 
@@ -139,7 +139,7 @@ To add custom zooming:
 
 {% highlight html %}
 
-[XAML]
+
 
 <ComboBox x:Name="ZoomBox" 
 
@@ -166,7 +166,7 @@ To add custom zooming:
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 /// APIs in View Model.
 
@@ -450,11 +450,11 @@ Description </th><th>
 Arguments </th><th>
 Type </th></tr>
 <tr>
-<th>
-ZoomChanged</th><th>
-Event triggers when the zoom factor is changed. This can be handled in application level.</th><th>
-ZoomChangedEventArgs</th><th>
-Simpleevent </th></tr>
+<td>
+ZoomChanged</td><td>
+Event triggers when the zoom factor is changed. This can be handled in application level.</td><td>
+ZoomChangedEventArgs</td><td>
+Simpleevent </td></tr>
 </table>
 
 

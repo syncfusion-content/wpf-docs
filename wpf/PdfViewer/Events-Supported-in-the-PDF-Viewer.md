@@ -7,11 +7,11 @@ control: PDF Viewer
 documentation: ug
 ---
 
-### Events Supported in the PDF Viewer
+# Events Supported in the PDF Viewer
 
 The Essential PDF viewer for WPF also provides several events that enables you to design/modify the existing behavior according to your requirement. The following table lists out the events available in the PDF viewer and their functionalities.
 
-_Events Table_
+Events Table
 
 <table>
 <tr>
@@ -21,29 +21,29 @@ Description </th><th>
 Arguments </th><th>
 Type </th></tr>
 <tr>
-<th>
-DocumentLoaded</th><th>
-This event is triggered after the PDF is successfully loaded.</th><th>
-N/A</th><th>
-N/A</th></tr>
+<td>
+DocumentLoaded</td><td>
+This event is triggered after the PDF is successfully loaded.</td><td>
+N/A</td><td>
+N/A</td></tr>
 <tr>
-<th>
-HyperLinkMouseHover</th><th>
-This event is triggered when the mouse pointer is placed over the URL.</th><th>
-N/A</th><th>
-N/A</th></tr>
+<td>
+HyperLinkMouseHover</td><td>
+This event is triggered when the mouse pointer is placed over the URL.</td><td>
+N/A</td><td>
+N/A</td></tr>
 <tr>
-<th>
-HyperLinkMouseClicked</th><th>
-This event is triggered when the URL in the PDF document is clicked.</th><th>
-N/A</th><th>
-N/A</th></tr>
+<td>
+HyperLinkMouseClicked</td><td>
+This event is triggered when the URL in the PDF document is clicked.</td><td>
+N/A</td><td>
+N/A</td></tr>
 </table>
 
 
 In spite of the above event the following events are supported in the PdfDocumentView control.
 
-_Event Table_
+Event Table
 
 <table>
 <tr>
@@ -53,23 +53,23 @@ Description </th><th>
 Arguments </th><th>
 Type </th></tr>
 <tr>
-<th>
-NavigationButtonStatesChanged</th><th>
-This event is triggered when there is a change in the states of the navigation buttons</th><th>
-N/A</th><th>
-N/A</th></tr>
+<td>
+NavigationButtonStatesChanged</td><td>
+This event is triggered when there is a change in the states of the navigation buttons</td><td>
+N/A</td><td>
+N/A</td></tr>
 <tr>
-<th>
-CurrentPageChanged</th><th>
-This event is triggered when there is a change in the index of the page being displayed</th><th>
-N/A</th><th>
-N/A</th></tr>
+<td>
+CurrentPageChanged</td><td>
+This event is triggered when there is a change in the index of the page being displayed</td><td>
+N/A</td><td>
+N/A</td></tr>
 <tr>
-<th>
-ZoomChanged</th><th>
-This event is triggered when there is change in the current zoom factor. </th><th>
-N/A</th><th>
-N/A</th></tr>
+<td>
+ZoomChanged</td><td>
+This event is triggered when there is change in the current zoom factor. </td><td>
+N/A</td><td>
+N/A</td></tr>
 </table>
 
 

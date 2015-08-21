@@ -13,7 +13,7 @@ The primary requirement of the data displayed in the GridTree control is that th
 
 {%highlight c#%}
 
-[C#]
+
 
 
 
@@ -61,7 +61,7 @@ private void treeGrid_RequestTreeItems(object sender, GridTreeRequestTreeItemsEv
 
 The only requirement on ChildList returned by the RequestTreeItems is that it should be an IEnumerable list of typed objects that share a single type.
 
-Order and Visibility of Columns in the GridTree Control
+## Order and Visibility of Columns in the GridTree Control
 
 The default behavior of the GridTree control is to display all simple, public properties exposed in the items provided through the RequestTreeItems event (Here, properties indicate Data Source properties, which are represented as columns in the Grid control. For eg, in Customers table, CustomerID, CompanyName, etc. are termed as properties). To control the visibility and the order of the columns that appear in the Grid Tree, you can use the GridTreeControl.Columns collection of GridTreeColumn object. The order of the GridTreeColumn objects in the Columns collection determines the display order of the columns in the Grid Tree.  
 
@@ -73,7 +73,7 @@ The following code example illustrates how to set these properties for the GridT
 
 {%highlight xml%}
 
-[XAML]
+
 
 <sf:GridTreeControl Name="treeGrid" RequestTreeItems="treeGrid_RequestTreeItems" >
 

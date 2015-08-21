@@ -7,7 +7,7 @@ control: SkinManager
 documentation: ug
 ---
 
-### Switch between Overridden Styles
+# Switch between Overridden Styles
 
 Switching between the overridden styles should be done manually. The overridden styles should be merged into the Resource Dictionary. 
 
@@ -17,22 +17,22 @@ The following steps explain how to switch between the overridden styles.
 
 
 
-[XAML]
+{% highlight xml %}
 
-&lt;ResourceDictionary&gt;
+<ResourceDictionary>
 
-            &lt;ResourceDictionary.MergedDictionaries&gt;
+            <ResourceDictionary.MergedDictionaries>
 
-                &lt;ResourceDictionary Source="/Syncfusion.Shared.WPF;Component/Controls/Calendar/themes/ShinyRedStyle.xaml"/&gt;
+                <ResourceDictionary Source="/Syncfusion.Shared.WPF;Component/Controls/Calendar/themes/ShinyRedStyle.xaml"/>
 
-                &lt;ResourceDictionary Source="/Syncfusion.Shared.WPF;Component/Controls/Calendar/themes/BlendStyle.xaml"/&gt;
+                <ResourceDictionary Source="/Syncfusion.Shared.WPF;Component/Controls/Calendar/themes/BlendStyle.xaml"/>
 
-            &lt;/ResourceDictionary.MergedDictionaries&gt;
+            </ResourceDictionary.MergedDictionaries>
 
-        &lt;/ResourceDictionary&gt;
+        </ResourceDictionary>
 
 
-
+{% endhighlight %}
 
 
 2. Define the new styles using the BasedOn property. 
@@ -43,47 +43,47 @@ The following code snippet explains how to override the Syncfusion style for the
 
 
 
-[XAML]
+{% highlight xml %}
 
-&lt;Grid Name="grid"&gt;
+<Grid Name="grid">
 
-        &lt;Grid.Resources&gt;
+        <Grid.Resources>
 
-            &lt;Style x:Key="ShinyRedStyle" TargetType="syncfusion:CalendarEdit" BasedOn="{StaticResource ShinyRedCalendarEditStyle}" &gt;
+            <Style x:Key="ShinyRedStyle" TargetType="syncfusion:CalendarEdit" BasedOn="{StaticResource ShinyRedCalendarEditStyle}" >
 
-                &lt;Setter Property="Background" Value="PaleGoldenRod"/&gt;
+                <Setter Property="Background" Value="PaleGoldenRod"/>
 
-            &lt;/Style&gt;
+            </Style>
 
-            &lt;Style x:Key="BlendStyle" TargetType="syncfusion:CalendarEdit" BasedOn="{StaticResource BlendCalendarEditStyle}" &gt;
+            <Style x:Key="BlendStyle" TargetType="syncfusion:CalendarEdit" BasedOn="{StaticResource BlendCalendarEditStyle}" >
 
-                &lt;Setter Property=" Background" Value="Green"/&gt;
+                <Setter Property=" Background" Value="Green"/>
 
-            &lt;/Style&gt;
+            </Style>
 
-        &lt;/Grid.Resources&gt;
+        </Grid.Resources>
 
-        &lt;Grid.ColumnDefinitions&gt;
+        <Grid.ColumnDefinitions>
 
-            &lt;ColumnDefinition Width="*"/&gt;
+            <ColumnDefinition Width="*"/>
 
-            &lt;ColumnDefinition Width="*"/&gt;
+            <ColumnDefinition Width="*"/>
 
-        &lt;/Grid.ColumnDefinitions&gt;
+        </Grid.ColumnDefinitions>
 
-        &lt;ComboBox Name="themecombobox" Grid.Column="0" SelectionChanged="ComboBox_SelectionChanged"&gt;
+        <ComboBox Name="themecombobox" Grid.Column="0" SelectionChanged="ComboBox_SelectionChanged">
 
             <ComboBoxItem>ShinyRed</ComboBoxItem>
 
             <ComboBoxItem>Blend</ComboBoxItem>
 
-        &lt;/ComboBox&gt;
+        </ComboBox>
 
-        &lt;syncfusion:CalendarEdit Name="calendar" Grid.Column="1"&gt;&lt;/syncfusion:CalendarEdit&gt;        
+        <syncfusion:CalendarEdit Name="calendar" Grid.Column="1"></syncfusion:CalendarEdit>        
 
-&lt;/Grid&gt;
+</Grid>
 
-
+{% endhighlight %}
 
 3. On ComboBox SelectionChanged event, particular overridden style should be set to the control depending on the current visual style. 
 
@@ -93,7 +93,7 @@ The following code snippet explains how to set the overridden styles to the cont
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -130,13 +130,13 @@ Private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs 
         }
 
 
-
+{% endhighlight %}
 
 
 The output is displayed as shown below.
 
 ![](Switch-between-Overridden-Styles_images/Switch-between-Overridden-Styles_img1.png)
-{:.image }
+
 
 
 

@@ -13,7 +13,6 @@ Tab Navigation control is based on Items control. Therefore, items can be added 
 
 
 {% highlight xml %}
-XAML
 
   <syncfusion:TabNavigationControl TransitionEffect="Slide" >
 
@@ -81,7 +80,6 @@ XAML
 
 
 {% highlight c# %}
-C#
 
 TabNavigationControl tabNavControl = new TabNavigationControl();
 
@@ -131,7 +129,6 @@ TabNavigationControl tabNavControl = new TabNavigationControl();
 
 
 {% highlight vbnet %}
-[VB.NET]
 
 
 

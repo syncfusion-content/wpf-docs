@@ -19,27 +19,27 @@ To add a line to the Report Designer, select Line from the Insert tab and drag i
 
 To apply styles to the line:
 
-1. Right click the added line and select the Line Properties.
+1.Right click the added line and select the Line Properties.
 
 
 
-![C:/Users/radhas/Desktop/DesignerDocument/sshot-29.png](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img2.png)
+   ![C:/Users/radhas/Desktop/DesignerDocument/sshot-29.png](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img2.png)
 
 
 
-2. In the Control Properties Dialog, select Style to set the width, background color, and style of the line.
+2.In the Control Properties Dialog, select Style to set the width, background color, and style of the line.
 
 
 
-![C:/Users/radhas/Desktop/Image/sshot-29.png](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img3.png)
+  ![C:/Users/radhas/Desktop/Image/sshot-29.png](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img3.png)
 
 
 
-3. Click OK and it displays the line with applied styles.
+3.Click OK and it displays the line with applied styles.
 
 
 
-![](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img4.png)
+  ![](Add-a-Line-to-the-Report-Designer_images/Add-a-Line-to-the-Report-Designer_img4.png)
 
 
 

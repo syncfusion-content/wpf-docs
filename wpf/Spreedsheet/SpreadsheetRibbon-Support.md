@@ -23,7 +23,6 @@ The following XAML code will be automatically added to the XAML viewer. You can 
 
 {%highlight xml%}
 
-[XAML]
 
 
 

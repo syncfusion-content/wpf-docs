@@ -9,19 +9,19 @@ documentation: ug
 
 # Helpers
 
-### IndexResolver
+## IndexResolver
 
 SfDataGrid has GridIndexResolver static class present in Syncfusion.UI.Xaml.Grid namespace that has some extension methods used to Resolve from row or column index to record or visible column index and vice versa. 
 
-#### Example: You can find the record index from row index using ResolveToRecordIndex method.
+## Example: You can find the record index from row index using ResolveToRecordIndex method.
 
 _Proptotype Table_
 
 <table>
 <tr>
-<td>
-ProtoType</td><td>
-Description</td></tr>
+<th>
+ProtoType</th><th>
+Description</th></tr>
 <tr>
 <td>
 ResolveToRecordIndex(int rowIndex)</td><td>
@@ -93,7 +93,7 @@ Decides whether the given row index is HeaderTableSummaryRow or not.</td></tr>
 </table>
 
 
-### Dispose
+## Dispose
 
 The method is associated with relinquishes memory and clears all references associated with SfDataGrid. When you call this method, it releases all the reference for SfDataGrid. So the memory it is occupying using the DataGrid is reclaimed. You have to call SfDataGrid.Dispose method to release the memory.
 

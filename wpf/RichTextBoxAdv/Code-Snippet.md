@@ -12,7 +12,7 @@ documentation: ug
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 

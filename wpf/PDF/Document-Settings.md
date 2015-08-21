@@ -26,7 +26,7 @@ The following are the list of attributes available under PdfDocumentInformation 
 
  The following code example illustrates how to read the document information.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -45,10 +45,10 @@ Console.WriteLine(document.DocumentInformation.Keywords);
 Console.WriteLine(document.DocumentInformation.Creator);
 
 Console.WriteLine(document.DocumentInformation.Producer);
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -67,14 +67,13 @@ Console.WriteLine(document.DocumentInformation.Keywords)
 Console.WriteLine(document.DocumentInformation.Creator)
 
 Console.WriteLine(document.DocumentInformation.Producer)
+{% endhighlight %}
 
-> 
-
-> _Note: You can write the document information with the newly created document._
+> Note: You can write the document information with the newly created document.
 
 The following code example illustrates how to write the document information.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -120,9 +119,9 @@ document.Save("Output.pdf");
 
 document.Close(true);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -168,27 +167,27 @@ document.Save("Output.pdf")
 
 document.Close(True)
 
-
+{% endhighlight %}
 
 The Document settings help in storing information about the document. It can also control the way they are displayed when they are open in the viewer.
 
-{{ '![C:/Users/george/Desktop/UGScreenShots/DocumentInformation.png](Document-Settings_images/Document-Settings_img1.png)' | markdownify }}
-{:.image }
+![C:/Users/george/Desktop/UGScreenShots/DocumentInformation.png](Document-Settings_images/Document-Settings_img1.png)
 
 
-> _Note: You cannot overwrite the existing metadata information._
+
+> Note: You cannot overwrite the existing metadata information.
 
 ## Viewer Preference
 
 A PDF file can control the way the document is presented on the screen when it is opened in the viewer. Essential PDF allows you to set these preferences using the PdfViewerPreferences class. You can perform the following customizations of the viewer when the document is open.
 
-_List of customizations_
+List of customizations
 
 <table>
 <tr>
-<td>
-HideToolbar  </td><td>
-A flag specifying whether to hide the viewer application's toolbar when the document is active.</td></tr>
+<th>
+HideToolbar  </th><th>
+A flag specifying whether to hide the viewer application's toolbar when the document is active.</th></tr>
 <tr>
 <td>
 HideMenubar </td><td>
@@ -225,7 +224,7 @@ An option to be selected when a print dialog is displayed for this document* App
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -277,9 +276,9 @@ document.Save("Sample.pdf");
 
 document.Close(true);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -330,8 +329,9 @@ document.Save("Sample.pdf")
 'Closes the document.
 
 document.Close(True)
+{% endhighlight %}
 
-{{ '![](Document-Settings_images/Document-Settings_img2.png)' | markdownify }}
-{:.image }
+![](Document-Settings_images/Document-Settings_img2.png)
+
 
 

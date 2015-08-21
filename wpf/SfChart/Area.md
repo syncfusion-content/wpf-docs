@@ -11,7 +11,7 @@ documentation: ug
 
 ChartArea represents the entire chart and all its elements. It’s a virtual rectangular area, that includes all the chart elements like axis, legends, series, etc. 
 
-###Multiple Panes
+## Multiple Panes
 
 Creating multiple panes for the chart improves readability of the series. When the chart areas are aligned properly, it proves to be a better comparison for the series. They can be aligned the way you visualized it.
 
@@ -69,11 +69,11 @@ The following is the output for the multiple panes.
 
 
 
-###Chart area customization APIs
+## Chart area customization APIs
 
 The chart area can be customized to enrich your application’s look and feel. SfChart provides APIs to customize chart area, based on your requirements. Chart area includes many elements, and each element can be customized using the API that you can learn from the respective sections of those elements. This section explains about the elements and API for common customization of chart area.
 
-Chart area customization
+### Chart area customization
 
 <table>
 <tr>
@@ -205,7 +205,7 @@ The following code example shows the customization of chart with different chart
 
 
 
-###SideBySideSeriesPlacement
+## SideBySideSeriesPlacement
 
 It defines the placement pattern of bar type series like Column, Bar, RangeColumn, etc. It is a Boolean property and its default value is True. When you disable this property, all the series overlap as shown in the following image.
 
@@ -229,7 +229,7 @@ It defines the placement pattern of bar type series like Column, Bar, RangeColum
 
 
 
-Note: Here Spacing for Series 2 is defined to differentiate both series. Otherwise, both the series of same width
+> Note: Here Spacing for Series 2 is defined to differentiate both series. Otherwise, both the series of same width
 
 
 

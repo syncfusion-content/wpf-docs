@@ -28,7 +28,7 @@ The grid model has RowCount and ColumnCount properties. These can be set to chan
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -50,7 +50,7 @@ The grid model also stores information on row heights and column widths. Its Col
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -84,7 +84,7 @@ You can also specify the DefaultLineSize setting on ColumnWidths and RowHeights 
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -110,7 +110,7 @@ The following code illustrates the usage of SetHidden method:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -148,7 +148,7 @@ It is possible to fix any number of rows and columns so that they are still visi
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -170,7 +170,7 @@ The following code illustrates the usage of FooterRows, FooterColumns and Footer
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -198,7 +198,7 @@ The following code illustrates the usage of HeaderRows, HeaderColumns and Header
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -236,7 +236,7 @@ This feature is turned on by default. To disable column or row resizing, you nee
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -269,7 +269,7 @@ The following code illustrates the usage of InsertColumns and InsertRows methods
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -316,7 +316,7 @@ The following code illustrates the usage of MoveColumns and MoveRows methods:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -349,7 +349,7 @@ The following code illustrates the usage of RemoveColumns and RemoveRows methods
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -384,7 +384,7 @@ The following code illustrates the usage of ResizeRowsToFit and ResizeColumnsToF
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -416,7 +416,7 @@ Essential Grid for WPF provides support for drag-and-drop functionality. This fe
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -457,7 +457,7 @@ Here are the sample code snippets that define certain copy paste behaviors.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -512,7 +512,7 @@ This property specifies a delimiter for the text to be pasted. It can be used wh
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -540,7 +540,7 @@ The following code illustrates the CopyTextToBuffer method:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -562,7 +562,7 @@ The values returned by the CopyTextToBuffer method is passed as parameter to the
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -593,7 +593,7 @@ For instance, let us consider performing the copy and paste operations in HTML f
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -839,7 +839,7 @@ The next step is to attach the above custom copy and paste operations to the gri
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -960,7 +960,7 @@ Here is an example code snippet that sets the selection mode for selecting multi
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1006,7 +1006,7 @@ Below code provides alpha blended selection:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1040,7 +1040,7 @@ Below code lets you set the background of the selection:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1060,7 +1060,7 @@ Below code lets you set the foreground of the selection:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1092,7 +1092,7 @@ It allows you to select only one item (record). Say, you have selected a record.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1115,7 +1115,7 @@ The following code is used to set this mode:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1146,7 +1146,7 @@ The following code is used to set this mode:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1228,7 +1228,6 @@ The following code illustrates how to set the Width property of GridDataVisible
 
 {% highlight html %}
 
-[XAML]
 
 
 
@@ -1273,7 +1272,7 @@ Define the Width, by using the following code.
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
+
 
 Width = new GridDataControlLength(value, GridControlLengthUnitType.Star); 
 
@@ -1437,7 +1436,7 @@ The following code snippet explains the implementation of the HiddenBorderBrush 
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1450,7 +1449,7 @@ this.gridControl.Model.HiddenBorderThikness = 3;
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 
@@ -1470,7 +1469,7 @@ The following code snippet explains the implementation of the SetHidden() method
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1493,7 +1492,7 @@ this.gridControl.RowHeights.SetHidden(3, 4, false);
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 
@@ -1651,7 +1650,7 @@ The CommandStack property of the GridControl class will return a reference to th
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1698,7 +1697,7 @@ this.grid.Model.CommandStack.Clear();
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -1751,7 +1750,7 @@ A call to BeginTrans will mark the start of a series of actions that are to be t
 
 
 {% highlight c# %}
-[C#]
+
 
 // Begin the transaction. 
 
@@ -1772,7 +1771,7 @@ this.grid.Model.CommandStack.Rollback();
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 'Begin the transaction.
 
@@ -1810,7 +1809,7 @@ The following code snippet demonstrates how to implement support for current cel
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1865,7 +1864,7 @@ void grid_CurrentCellActivated(object sender, SyncfusionRoutedEventArgs args)
 {% highlight vbnet %}
 
 
- [VB]
+ 
 
 
 
@@ -1980,47 +1979,47 @@ Description </th><th>
 Parameters </th><th>
 Return Type </th></tr>
 <tr>
-<th>
-BeginTrans</th><th>
-Combines several subsequent commands into one transaction.</th><th>
-BeginTrans(string Name)</th><th>
-void</th></tr>
+<td>
+BeginTrans</td><td>
+Combines several subsequent commands into one transaction.</td><td>
+BeginTrans(string Name)</td><td>
+void</td></tr>
 <tr>
-<th>
-Clear</th><th>
-Clear both the undo and redo stacks.</th><th>
-Clear()</th><th>
-void</th></tr>
+<td>
+Clear</td><td>
+Clear botd tde undo and redo stacks.</td><td>
+Clear()</td><td>
+void</td></tr>
 <tr>
-<th>
-CommitTrans</th><th>
-Ends a transaction that was started with a previous BeginTrans call.</th><th>
-CommitTrans()</th><th>
-void</th></tr>
+<td>
+CommitTrans</td><td>
+Ends a transaction tdat was started witd a previous BeginTrans call.</td><td>
+CommitTrans()</td><td>
+void</td></tr>
 <tr>
-<th>
-Push</th><th>
-Pushes a command onto the undo stack.</th><th>
-Push(SyncfusionCommand cmd)Push(SyncfusionCommand cmd, SyncfusionCommand selectionStateCommand)</th><th>
-void</th></tr>
+<td>
+Push</td><td>
+Pushes a command onto tde undo stack.</td><td>
+Push(SyncfusionCommand cmd)Push(SyncfusionCommand cmd, SyncfusionCommand selectionStateCommand)</td><td>
+void</td></tr>
 <tr>
-<th>
-Redo</th><th>
-Execute the latest command from the redo stack.</th><th>
-Redo()</th><th>
-void</th></tr>
+<td>
+Redo</td><td>
+Execute tde latest command from tde redo stack.</td><td>
+Redo()</td><td>
+void</td></tr>
 <tr>
-<th>
-Rollback</th><th>
-Rolls back a transaction in progress that was started with a previous BeginTrans call.</th><th>
-Rollback()</th><th>
-void</th></tr>
+<td>
+Rollback</td><td>
+Rolls back a transaction in progress tdat was started witd a previous BeginTrans call.</td><td>
+Rollback()</td><td>
+void</td></tr>
 <tr>
-<th>
-Undo</th><th>
-Execute the latest command from the undo stack.</th><th>
-Undo()</th><th>
-void</th></tr>
+<td>
+Undo</td><td>
+Execute tde latest command from tde undo stack.</td><td>
+Undo()</td><td>
+void</td></tr>
 </table>
 
 
@@ -2044,7 +2043,7 @@ You can get the GraphicStyleInfo object from the GraphicModel class by passing t
 
 
 {% highlight c# %}
-[C#]
+
 
 GraphicStyleInfo style = this.grid.Model.GraphicModel[Row, Column];
 
@@ -2138,7 +2137,7 @@ The image cell type is used to load images inside graphic cells. To load the gra
 
 
 {% highlight c# %}
-[C#]
+
 
 var style = this.grid.Model.GraphicModel[cellspan.RowIndex, cellspan.ColumnIndex];
 
@@ -2160,7 +2159,7 @@ The RichTextBox cell type is used to load a rich text box inside graphic cells. 
 
 
 {% highlight c# %}
-[C#]
+
 
 FlowDocument _flowDocument = new FlowDocument();
 
@@ -2218,7 +2217,7 @@ The following code can be used to register the chart cell type in the graphic mo
 
 
 {% highlight c# %}
-[C#]
+
 
 this.grid.Model.GraphicModel.CellModels.Add("Chart", new GraphicChartCellModel());
 
@@ -2240,47 +2239,47 @@ Description </th><th>
 Parameters </th><th>
 Return Type </th></tr>
 <tr>
-<th>
-CreateUIElement</th><th>
-Create the UI element that needs to be loaded inside the graphic cell.</th><th>
-CreateUIElement(GraphicStyleInfo cellInfo)</th><th>
-Generic</th></tr>
+<td>
+CreateUIElement</td><td>
+Create tde UI element tdat needs to be loaded inside tde graphic cell.</td><td>
+CreateUIElement(GraphicStyleInfo cellInfo)</td><td>
+Generic</td></tr>
 <tr>
-<th>
-OnArrange</th><th>
-Arrange the graphic cell in a particular rectangle.</th><th>
-OnArrange(UIElement uiElement, Rect rect, GraphicStyleInfo style)</th><th>
-void</th></tr>
+<td>
+OnArrange</td><td>
+Arrange tde graphic cell in a particular rectangle.</td><td>
+OnArrange(UIElement uiElement, Rect rect, GraphicStyleInfo style)</td><td>
+void</td></tr>
 <tr>
-<th>
-OnInitializeContent</th><th>
-Initialize the properties from style info to the UI element.</th><th>
-OnInitializeContent(T element, GraphicStyleInfo style)</th><th>
-void</th></tr>
+<td>
+OnInitializeContent</td><td>
+Initialize tde properties from style info to tde UI element.</td><td>
+OnInitializeContent(T element, GraphicStyleInfo style)</td><td>
+void</td></tr>
 <tr>
-<th>
-ShouldTryToHandlePreviewKeyDown</th><th>
-Handles KeyDown.</th><th>
-ShouldTryToHandlePreviewKeyDown(KeyEventArgs e)</th><th>
-bool</th></tr>
+<td>
+ShouldTryToHandlePreviewKeyDown</td><td>
+Handles KeyDown.</td><td>
+ShouldTryToHandlePreviewKeyDown(KeyEventArgs e)</td><td>
+bool</td></tr>
 <tr>
-<th>
-UnloadUIElements</th><th>
-When the control unloads, this method is executed.</th><th>
-UnloadUIElements(int index, T uiElement)</th><th>
-void</th></tr>
+<td>
+UnloadUIElements</td><td>
+When tde control unloads, tdis metdod is executed.</td><td>
+UnloadUIElements(int index, T uiElement)</td><td>
+void</td></tr>
 <tr>
-<th>
-UnWireEvents</th><th>
-Unwire the wired events from the graphic cell control.</th><th>
-UnWireEvents(T element)</th><th>
-void</th></tr>
+<td>
+UnWireEvents</td><td>
+Unwire tde wired events from tde graphic cell control.</td><td>
+UnWireEvents(T element)</td><td>
+void</td></tr>
 <tr>
-<th>
-WireEvents</th><th>
-Wire the events in graphic cell.</th><th>
-WireEvents(T element)</th><th>
-void</th></tr>
+<td>
+WireEvents</td><td>
+Wire tde events in graphic cell.</td><td>
+WireEvents(T element)</td><td>
+void</td></tr>
 </table>
 
 ### Custom Graphic Chart Cell Renderer
@@ -2291,7 +2290,7 @@ This cell displays a chart control over the grid cells as seen in Microsoft Exce
 
 
 {% highlight c# %}
-[C#]
+
 
 public class GraphicChartCellModel:GraphicCellModel<GraphicChartCellRenderer>
 
@@ -2313,7 +2312,7 @@ public class GraphicChartCellModel:GraphicCellModel<GraphicChartCellRenderer>
 
 
 {% highlight c# %}
-[C#]
+
 
 public class GraphicChartCellRenderer : GraphicCellRendererBase<Chart>
 
@@ -2371,7 +2370,7 @@ The ChartExtensions class is used to create the Chart control (Syncfusion.Window
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -2740,7 +2739,7 @@ The following code sample demonstrates adding GraphicCell to the Grid control th
 
 {% highlight c# %}
 
-[C#]
+
 
 GraphicCellSpanInfo cellspan = new GraphicCellSpanInfo(rowIndex, colIndex, 300, 300);
 
@@ -2760,7 +2759,7 @@ After adding the graphic cell to GraphicModel you can see the empty cell over th
 
 {% highlight c# %}
 
-[C#]
+
 
 var style = this.grid.Model.GraphicModel[cellspan.RowIndex, cellspan.ColumnIndex];
 

@@ -7,7 +7,7 @@ control: PropertyGrid
 documentation: ug
 ---
 
-### Hide properties in PropertyGrid
+# Hide properties in PropertyGrid
 
 You can hide the group of properties using HidePropertiesCollection property. You have to add the property names, which must be collapsed into HidePropertiesCollection.
 
@@ -16,10 +16,10 @@ You can hide the group of properties using HidePropertiesCollection property. Yo
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50"                    Width="350" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center"                     VerticalAlignment="Stretch" LineColor="Red" CategoryForeground="Black"&gt;<br>&lt;/syncfusion:PropertyGrid&gt;</td></tr>
+{% highlight xml %}<syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50"                   Width="350" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center"                    VerticalAlignment="Stretch" LineColor="Red" CategoryForeground="Black"><br></syncfusion:PropertyGrid>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C#]this.propertyGrid.HidePropertiesCollection.Add("ActualWidth");<br>this.propertyGrid.HidePropertiesCollection.Add("ActualHeight");</td></tr>
+{% highlight c# %}this.propertyGrid.HidePropertiesCollection.Add("ActualWidth");<br>this.propertyGrid.HidePropertiesCollection.Add("ActualHeight");{% endhighlight %}</td></tr>
 </table>
 
 

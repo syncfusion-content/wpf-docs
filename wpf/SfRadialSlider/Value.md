@@ -13,7 +13,6 @@ Gets or sets the value of the Radial Slider. (Inherited from [RangeBase](http://
 
 
 {% highlight html %}
-[XAML]
 
 <syncfusion:SfRadialSlider
 

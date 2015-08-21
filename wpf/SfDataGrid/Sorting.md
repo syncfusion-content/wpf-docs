@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains you about Sorting on DataGrid data. Different properties and events that participate in Sorting are discussed in this section.
 
-### Overview
+## Overview
 
 DataGrid control allows you to sort the table data against one or more columns. The number of columns by which the data sorted is unlimited. When sorting is applied, the Grid rearranges the data to match with the current sort criteria ascending or descending order.
 
@@ -21,11 +21,11 @@ _Sorting property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 SfDataGrid.AllowSorting</td><td>
@@ -59,9 +59,9 @@ True</td></tr>
 </table>
 
 
-> _Note: When SfDataGrid.AllowSorting property is set to’ true’, GridColumn.AllowSorting property gets more priorities to sort the columns._
+> Note: When SfDataGrid.AllowSorting property is set to’ true’, GridColumn.AllowSorting property gets more priorities to sort the columns.
 
-### Apply Sorting
+## Apply Sorting
 
 There is a couple of ways to apply sorting to the DataGrid.
 
@@ -76,7 +76,7 @@ The following code example illustrates this.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -101,7 +101,7 @@ The following code example illustrates this.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -123,7 +123,7 @@ The following screenshot displays the output.
 
 _Sorted DataGrid_
 
-### Events
+## Events
 
 The DataGrid provides you the following Events for the sorting functionality:
 
@@ -135,7 +135,7 @@ The following code example explains you how to hook those events.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -160,7 +160,7 @@ The following code example explains you how to hook those events.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -188,7 +188,7 @@ void sfdatagrid_SortColumnsChanging(object sender, GridSortColumnsChangingEventA
 
 
 
-###  Tristate Sorting
+##  Tristate Sorting
 
 By default DataGrid allows you to sort the column in ascending and descending order only. SfDataGrid.AllowTristateSorting allows you to sort the column in the following three orders:
 
@@ -202,7 +202,7 @@ The following code example illustrates that.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -224,7 +224,7 @@ The following code example illustrates that.
 {% endhighlight %}
 
 
-### Multi Column Sorting
+## Multi Column Sorting
 
 DataGrid control allows you to sort the multiple columns. To apply sorting for multiple columns, you can click the desired column headers by pressing the CTRL key.
 
@@ -242,9 +242,9 @@ _DataGrid with Multi Column Sorting_
 
 In the above screenshot, “OrderID” column is sorted first in the descending order. After you sort the “_Name of Customer_”, the sorting of column in any direction happens against OrderID column and previous sorting is maintained.amu.
 
-> _Note: When you add columns to SortColumnDescription, SortColumnChanging event is not raised._
+> Note: When you add columns to SortColumnDescription, SortColumnChanging event is not raised.
 
-#### Sort Numbers
+## Sort Numbers
 
 SfDataGrid.ShowSortNumbers__property enables the visibility of sorting order of the column at the top right corner of Column HeaderCell.
 
@@ -254,7 +254,7 @@ The following code example illustrates that.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -286,11 +286,11 @@ _DataGrid with Sorted Numbers_
 
  In the above screenshot DataGrid shows the sort order numbers in column header. OrderId column is sorted first in ascending order. Then you can apply multi sort to Name of Customer and ShipCountry column. Now the DataGrid shows sort numbers in column header, based on column sorting order.
 
-### Custom Sorting
+## Custom Sorting
 
 Custom Sorting feature enables you to implement custom sorting criteria. For each column, you can apply different sorting criteria.  To perform the custom sorting you have to add SortComparer object to SfDataGrid.SortComparersCollection.
 
-#### A SortComparer object__has the following properties:
+### A SortComparer object__has the following properties:
 
 * PropertyName: Gets or sets the column Mapping Name that applies custom sorting.
 * Comparer: Gets or sets the custom comparer. CustomComparer implements the IComparer and ISortDirection interfaces.
@@ -301,7 +301,7 @@ In the below example, the column is sorted based on string.Length by using custo
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -368,7 +368,7 @@ The following code example illustrates the Custom Comparer.
 
 {% highlight C# %}
 
-[C#]  
+  
 
 
 
@@ -440,7 +440,7 @@ _DataGrid with Custom Sorting_
 
 In the preceding screenshot, Name of Customer column is sorted based on string.Length value.
 
-### Sort groups based on summary
+## Sort groups based on summary
 
 When you group data by any column, the records are grouped by identical values of the particular column. By default, each grouped record sorted by column’s key value as shown in the following screenshot.
 
@@ -464,7 +464,7 @@ The following code example illustrates how to create a GroupComparer class that 
 
 {% highlight C# %}
 
-[C#]
+
 
 public class SummaryGroupComparer : IComparer<Group>, ISortDirection
 
@@ -502,7 +502,7 @@ Group Comparer class is assigned to _S_ummaryGroupComparer property of DataGrid.
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window.Resources>
 

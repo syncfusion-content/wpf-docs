@@ -22,7 +22,7 @@ Implement the Model and ViewModel, as mentioned in the Data Binding topic, and i
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfMap>
 

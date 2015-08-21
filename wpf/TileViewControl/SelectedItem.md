@@ -19,7 +19,6 @@ This feature will be very useful who you want to get the SelectedItem.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -37,7 +36,6 @@ This feature will be very useful who you want to get the SelectedItem.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -49,16 +47,16 @@ this.TileView.SelectedItem = Tile1;
 
 ## Properties
 
-_SelectedItem Property Table_
+SelectedItem Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }} </td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Data Type**' | markdownify }} </td><td>
-{{ '**Reference links**' | markdownify }} </td></tr>
+<th>
+{{ '**Property**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Data Type**' | markdownify }} </th><th>
+{{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
 <td>
 SelectedItem</td><td>
@@ -71,7 +69,7 @@ Object</td><td>
 
 ## Events
 
-_SelectedItem Event Table_
+SelectedItem Event Table
 
 <table>
 <tr>
@@ -82,12 +80,12 @@ _SelectedItem Event Table_
 {{ '**Type**' | markdownify }} </th><th>
 {{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
-<th>
-SelectedItemChanged</th><th>
-This event gets fired when the Selected TileViewItem is changed.</th><th>
-</th><th>
-</th><th>
-</th></tr>
+<td>
+SelectedItemChanged</td><td>
+This event gets fired when the Selected TileViewItem is changed.</td><td>
+</td><td>
+</td><td>
+</td></tr>
 </table>
 
 

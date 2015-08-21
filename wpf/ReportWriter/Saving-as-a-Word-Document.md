@@ -13,7 +13,7 @@ The RDL report generated using the Report Designer can also be exported as a Wor
 
 
 
-[C#]
+{% highlight C# %}
 
 // Instantiate the report writer with the parameter "ReportPath" and 
 
@@ -23,9 +23,9 @@ ReportWriter reportWriter = new ReportWriter(reportPath, dataSources);
 
 reportWriter.Save("Sample.doc", WriterFormat.WORD);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 'Instantiate the report writer with the parameter "ReportPath" and 
 
@@ -36,4 +36,4 @@ Dim reportWriter As New ReportWriter (reportPath, dataSources)
 reportWriter.Save("Sample.doc", WriterFormat.WORD);
 
 
-
+{% endhighlight %}

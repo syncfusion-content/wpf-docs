@@ -347,7 +347,7 @@ The following is a code snippet that connects two Nodes with a LineConnector wit
 
 
 {% highlight c#  %}
-[C#] 
+ 
 
 
 
@@ -434,7 +434,7 @@ diagramModel.Connections.Add(line);
 
 {% endhighlight %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 
@@ -598,7 +598,7 @@ It is also possible to drag-and-drop line connectors from the SymbolPalette. Thr
 
 
 
-![](Line-Connectors_images/Line-Connectors_img6.jpeg)
+   ![](Line-Connectors_images/Line-Connectors_img6.jpeg)
 
 
 
@@ -606,7 +606,7 @@ It is also possible to drag-and-drop line connectors from the SymbolPalette. Thr
 
 
 
-![](Line-Connectors_images/Line-Connectors_img7.jpeg)
+   ![](Line-Connectors_images/Line-Connectors_img7.jpeg)
 
 
 
@@ -614,9 +614,9 @@ It is also possible to drag-and-drop line connectors from the SymbolPalette. Thr
 
 
 
-![](Line-Connectors_images/Line-Connectors_img8.jpeg)
+   ![](Line-Connectors_images/Line-Connectors_img8.jpeg)
 
-
+   {:.prettyprint}
 
 ### Add Connectors through a Model
 
@@ -624,7 +624,7 @@ You can create connections between nodes through a model. The Line Connector cla
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -663,7 +663,7 @@ diagramModel.Connections.Add(l1);
 {% endhighlight   %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -755,7 +755,7 @@ To set this property to Connect, use the following code.
 
 {% highlight c#  %}
 
-[C#]
+
 
 DiagramView View1 = new DiagramView();
 
@@ -766,7 +766,7 @@ View1.NodeMode = ConnectionMode.Connect;
 {% endhighlight   %}
 {% highlight vbnet %}
 
-[VB]
+
 
 Dim view1 As New DiagramView()
 
@@ -782,7 +782,7 @@ To set this property to Move, use the following code.
 
 
 {% highlight c#  %}
-[C#]
+
 
 DiagramView View1 = new DiagramView();
 
@@ -793,7 +793,7 @@ View1.NodeMode = ConnectionMode.Move;
 {% highlight vbnet  %}
 
 
-[VB]
+
 
 Dim view As New DiagramView()
 
@@ -818,7 +818,7 @@ To set the PortMode property to Connect, use the following code.
 
 {% highlight c#  %}
 
-[C#]
+
 
 DiagramView View1 = new DiagramView();
 
@@ -827,7 +827,7 @@ View1.PortMode = ConnectionMode.Connect;
 
 {% endhighlight   %}
 {% highlight vbnet  %}
-[VB]
+
 
 Dim view As New DiagramView()
 
@@ -843,7 +843,7 @@ To set the PortMode property to Move, use the following code.
 
 
 {% highlight c#  %}
-[C#]
+
 
 DiagramView View1 = new DiagramView();
 
@@ -854,7 +854,7 @@ View1.PortMode = ConnectionMode.Move;
 
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim view1 As New DiagramView()
 
@@ -895,7 +895,7 @@ The following code illustrates how to set the connector type:
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -912,7 +912,7 @@ diagramModel.Connections.Add(l1);
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -978,7 +978,7 @@ Following code illustrates how to customize the hieght and direction of the Arc:
 
 {% highlight c#  %}
 
- [C#]
+ 
 
            LineConnector l = new LineConnector();
 
@@ -1003,7 +1003,7 @@ Following code illustrates how to customize the hieght and direction of the Arc:
 {% highlight vbnet  %}
 
 
-[VB]
+
 
           Dim l As New LineConnector()
 
@@ -1094,7 +1094,7 @@ Intermediate points can be added at run time by holding Ctrl + Shift and clickin
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -1113,7 +1113,7 @@ lc.IntermediatePoints.Add(new Point(200,300));
 
 {% endhighlight   %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 
@@ -1150,7 +1150,7 @@ Intermediate points can be modified at run time by clicking and dragging the ver
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -1171,7 +1171,7 @@ lc.IntermediatePoints[1] = new Point(200,200));
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -1206,7 +1206,7 @@ Intermediate points can be deleted by holding Ctrl + Shift and clicking on the v
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -1227,7 +1227,7 @@ lc.IntermediatePoints.RemoveAt(1);
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1275,7 +1275,7 @@ No</td></tr>
 </table>
 
 {% highlight html  %}
-[XAML]
+
 
 
 
@@ -1332,7 +1332,7 @@ No</td></tr>
 
 {% endhighlight  %}
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -1353,7 +1353,7 @@ lc.VertexStyle = this.Resources["vertexStyle"] as Style;
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1401,7 +1401,7 @@ No</td></tr>
 </table>
 
 {% highlight html  %}
-[XAML]
+
 
 
 
@@ -1442,7 +1442,7 @@ No</td></tr>
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1463,7 +1463,7 @@ lc.DecoratorAdornerStyle = this.Resources["decorator"] as Style;
 
 {% endhighlight  %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 
@@ -1511,7 +1511,7 @@ No</td></tr>
 </table>
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -1532,7 +1532,7 @@ lc.IsVertexVisible = false;
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1580,7 +1580,7 @@ No</td></tr>
 </table>
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -1601,7 +1601,7 @@ lc.IsVertexMovable = false;
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1694,7 +1694,7 @@ The following code shows how to set these properties.
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -1715,7 +1715,7 @@ diagramModel.Connections.Add(l1);
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1754,7 +1754,7 @@ HeadDecoratorShape and TailDecoratorShape can be customized by defining a requir
 
 {% highlight html  %}
 
-[XAML]
+
 
 
 
@@ -1777,7 +1777,7 @@ HeadDecoratorShape and TailDecoratorShape can be customized by defining a requir
 {% endhighlight  %}
 {% highlight html  %}
 
-[XAML]
+
 
 
 
@@ -1785,7 +1785,7 @@ HeadDecoratorShape and TailDecoratorShape can be customized by defining a requir
 
 {% endhighlight   %}
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -1806,7 +1806,7 @@ diagramModel.Connections.Add(l1);
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1832,7 +1832,7 @@ diagramModel.Connections.Add(l1)
 
 {% highlight html  %}
 
-[XAML]
+
 
 
 
@@ -1855,7 +1855,7 @@ diagramModel.Connections.Add(l1)
 {% endhighlight   %}
 {% highlight html  %}
 
-[XAML]
+
 
 
 
@@ -1864,7 +1864,7 @@ diagramModel.Connections.Add(l1)
 {% endhighlight   %}
 {% highlight c# %}
 
-[C#] 
+ 
 
 
 
@@ -1885,7 +1885,7 @@ diagramModel.Connections.Add(l1);
 {% endhighlight %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -1917,7 +1917,7 @@ HeadDecoratorShape and TailDecoratorShape can be customized by defining a requir
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -1952,7 +1952,7 @@ diagramModel.Connections.Add(line1);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -1996,7 +1996,7 @@ Customizing TailDecoratorShape with TailDecoratorStyle
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -2031,7 +2031,7 @@ diagramModel.Connections.Add(line1);
 
 {% endhighlight  %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 
@@ -2127,7 +2127,7 @@ LineUnit property is used to access the following:
 
 Through XAML
 {% highlight html  %}
-[XAML]
+
 
 <syncfusion:LineConnector.SegmentDecoratorSettings>
 
@@ -2160,11 +2160,11 @@ Through XAML
 {% highlight c#  %}
 
 
-Through code behind [c#]
+Through code behind 
 
 
 
-[C#]
+
 
            SegmentDecorator decorator1=new SegmentDecorator ();
 
@@ -2217,7 +2217,7 @@ To set the same Style and Shape for the entire Line segment
 
 {% highlight html  %}
 
-[XAML]
+
 
   <syncfusion:SegmentDecoratorSettings.CustomDecoratorStyle>
 
@@ -2242,7 +2242,7 @@ To set the same Style and Shape for the entire Line segment
 {% endhighlight   %}
 {% highlight c#  %}
 
- [C#]
+ 
 
        Style decoratorstyle = new System.Windows.Style();
 
@@ -2274,7 +2274,7 @@ To set different shapes and styles to the line segment
 
 {% highlight html  %}
 
-[XAML]
+
 
 <syncfusion:SegmentDecoratorSettings.SegmentDecorator>
 
@@ -2297,7 +2297,7 @@ To set different shapes and styles to the line segment
 
 
 
-[C#]
+
 
        Style decoratorstyle = new System.Windows.Style();
 
@@ -2333,7 +2333,7 @@ Appearance
 {% highlight html  %}
 
 
-[XAML]
+
 
 <syncfusion:LineConnector.SegmentDecoratorSettings>
 
@@ -2365,7 +2365,7 @@ Appearance
 
 {% highlight html  %}
 
-[XAML]
+
 
 <syncfusion:LineConnector.SegmentDecoratorSettings>
 
@@ -2397,7 +2397,7 @@ Appearance
 
 {% highlight html  %}
 
-[XAML]
+
 
 <syncfusion:LineConnector.SegmentDecoratorSettings>
 
@@ -2429,7 +2429,7 @@ Appearance
 
 {% highlight html  %}
 
-[XAML]
+
 
 <syncfusion:LineConnector.SegmentDecoratorSettings>
 
@@ -2478,7 +2478,7 @@ As an example, the Stroke property can be applied as follows.
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -2499,7 +2499,7 @@ diagramModel.Connections.Add(l1);
 {% highlight vbnet  %}
 
 
-[VB]
+
 
 
 
@@ -2558,7 +2558,7 @@ Appearance of the LineConnector can be customized by applying style for the Cust
 
 
 {% highlight html  %}
-[XAML]
+
 
 <Window.Resources>
 
@@ -2594,7 +2594,7 @@ Appearance of the LineConnector can be customized by applying style for the Cust
 
 
 {% highlight c#  %}
-[C#]
+
 
 LineConnector l1 = new LineConnector();
 
@@ -2613,7 +2613,7 @@ diagramModel.Connections.Add(l1);
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim l1 As New LineConnector()
 
@@ -2653,7 +2653,7 @@ An example of the Stroke property can be applied to the head decorator as follow
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -2674,7 +2674,7 @@ diagramModel.Connections.Add(l1);
 {% endhighlight   %}
 {% highlight vbnet   %}
 
-[VB]
+
 
 
 
@@ -2744,7 +2744,7 @@ The following code illustrates how to set the FirstSegmentOrientation to Auto:
 
 {% highlight c#  %}
 
-[C#]
+
 
 LineConnector line = new LineConnector();
 
@@ -2752,7 +2752,7 @@ line.FirstSegmentOrientation = SegmentOrientation.Auto;
 
 {% endhighlight  %}
 {% highlight vbnet  %}
-[VB]
+
 
 Dim line As New LineConnector()
 line.FirstSegmentOrientation = SegmentOrientation.Auto
@@ -2769,7 +2769,7 @@ The following code illustrates how to set the FirstSegmentOrientation to Horizon
 
 
 {% highlight c#  %}
-[C#]
+
 
 LineConnector line = new LineConnector();
 
@@ -2777,7 +2777,7 @@ line.FirstSegmentOrientation = SegmentOrientation.Horizontal;
 
 {% endhighlight   %}
 {% highlight vbnet  %}
-[VB]
+
 
 Dim line As New LineConnector()
 line.FirstSegmentOrientation = SegmentOrientation.Horizontal
@@ -2794,7 +2794,7 @@ The following code illustrates how to set the FirstSegmentOrientation to Vertica
 
 {% highlight c#  %}
 
-[C#]
+
 
 LineConnector line = new LineConnector();
 
@@ -2802,7 +2802,7 @@ line.FirstSegmentOrientation = SegmentOrientation.Vertical;
 
 {% endhighlight   %}
 {% highlight vbnet  %}
-[VB]
+
 
 Dim line As New LineConnector()
 line.FirstSegmentOrientation = SegmentOrientation.Vertical 
@@ -2953,7 +2953,7 @@ A connector can be specified with a label, similar to node, using the Label prop
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -2971,7 +2971,7 @@ diagramModel.Connections.Add(l1);
 
 {% endhighlight  %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 
@@ -3001,7 +3001,7 @@ Create a DataTemplate and add the resource “text.png” to your application.
 
 {% highlight html  %}
 
-[XAML]
+
 
 <DataTemplate x:Key="LabelCustomTemplate">
 
@@ -3025,7 +3025,7 @@ Now, you can apply the template to the connector as follows.
 
 
 {% highlight c#  %}
-[C#]
+
 
 LineConnector l1 = new LineConnector();
 
@@ -3050,7 +3050,7 @@ diagramModel.Connections.Add(l1);
 
 {% endhighlight   %}
 {% highlight vbnet  %}
- [VB]
+ 
 
 Dim l1 As New LineConnector()
 
@@ -3086,7 +3086,7 @@ Label text can be displayed in multiple lines using LabelTextWrapping property s
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -3103,7 +3103,7 @@ l.IsLabelEditable = true;
 {% highlight vbnet  %}
 
 
-[VB]
+
 
 
 
@@ -3129,7 +3129,7 @@ A connector's label can be edited at run time by setting IsLabelEditable to ‘T
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -3141,7 +3141,7 @@ l1.IsLabelEditable = true;
 
 {% endhighlight   %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 
@@ -3170,7 +3170,7 @@ A label's visibility can be changed using the LabelVisibility property. The defa
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -3181,7 +3181,7 @@ l1.LabelVisibility = Visibility.Hidden;
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -3199,7 +3199,7 @@ LineConnector’s Label can be set as Multiline Label by setting the EnableMulti
 
 
 {% highlight html  %}
-[XAML]
+
 
 
 
@@ -3210,7 +3210,7 @@ LineConnector’s Label can be set as Multiline Label by setting the EnableMulti
 {% endhighlight   %}
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -3229,7 +3229,7 @@ diagramModel.Connections.Add(line1);
 
 {% endhighlight  %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 
@@ -3309,7 +3309,7 @@ The Label can be dragged from the Line Connector.
 
 
 {% highlight c#  %}
-[C#]
+
 
        (line as LineConnector).CustomLabelPosition = CustomLabelPositions.Drag;
 
@@ -3323,7 +3323,7 @@ When the values are given the position of the label will be exactly at the point
 
 {% highlight c#  %}
 
-[C#]
+
 
        (line as LineConnector).LabelPosition = new Point(100,100);
 
@@ -3335,7 +3335,7 @@ Set the LabelAngle for LineConnector
 
 The labels rotate when values are given for the lable angle.
 {% highlight c#  %}
-[C#]
+
 
        (line as LineConnector).LabelAngle = 45;
 
@@ -3380,7 +3380,7 @@ The following code illustrates how to set the LabelOrientation to Auto:
 
 {% highlight c#  %}
 
-[C#]
+
 
   LineConnector line = new LineConnector();
 
@@ -3388,7 +3388,7 @@ The following code illustrates how to set the LabelOrientation to Auto:
 
 {% endhighlight  %}
 {% highlight vbnet  %}
-[VB]
+
 
 Dim line As New LineConnector()
 
@@ -3411,7 +3411,7 @@ The following code illustrates how to set the LabelOrientation to Horizontal:
 
 
 {% highlight c#  %}
-[C#]
+
 
 LineConnector line = new LineConnector();
 
@@ -3419,7 +3419,7 @@ line.LabelOrientation = Syncfusion.Windows.Diagram.LabelOrientation.Horizontal;
 {% endhighlight   %}
 
 {% highlight vbnet  %}
-[VB]
+
 
 LineConnector line = new LineConnector();
 
@@ -3434,7 +3434,7 @@ The following code illustrates how to set the LabelOrientation to Vertical:
 
 
 {% highlight c#  %}
-[C#]
+
 
 LineConnector line = new LineConnector();
 
@@ -3443,7 +3443,7 @@ line.LabelOrientation = Syncfusion.Windows.Diagram.LabelOrientation.Vertical;
 {% highlight c#  %}
 
 
-[VB]
+
 
 Dim line As New LineConnector()
 
@@ -3483,7 +3483,7 @@ No</td></tr>
 
 The following code illustrates how to set the LabelTemplateHorizontalAlignment to Auto:
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -3494,7 +3494,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlign
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim Line As New LineConnector()
 
@@ -3512,7 +3512,7 @@ The following code illustrates how to set the LabelTemplateHorizontalAlignment t
 
 
 {% highlight c#  %}
-[C#]
+
 
 LineConnector Line = new DiagramView();
 
@@ -3523,7 +3523,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlign
 {% highlight vbnet  %}
 
 
-[VB]
+
 
 Dim Line As New LineConnector()
 
@@ -3541,7 +3541,7 @@ The following code illustrates how to set the LabelTemplateHorizontalAlignment t
 
 {% highlight c#  %}
 
-[C#]
+
 
 LineConnector Line = new DiagramView();
 
@@ -3552,7 +3552,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlign
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim Line As New LineConnector()
 
@@ -3570,7 +3570,7 @@ The following code illustrates how to set the LabelTemplateHorizontalAlignment t
 
 
 {% highlight c#  %}
-[C#]
+
 
 LineConnector Line = new DiagramView();
 
@@ -3581,7 +3581,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.HorizontalAlign
 {% highlight vbnet  %}
 
 
-[VB]
+
 
 Dim Line As New LineConnector()
 
@@ -3625,7 +3625,7 @@ The following code illustrates how to set the LabelTemplateOrientation to Auto:
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -3638,7 +3638,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientatio
 {% highlight vbnet  %}
 
 
-[VB]
+
 
 Dim Line As New LineConnector()
 
@@ -3656,7 +3656,7 @@ The following code illustrates how to set the LabelTemplateOrientation to Horizo
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -3669,7 +3669,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientatio
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim Line As New LineConnector()
 
@@ -3685,7 +3685,7 @@ The following code illustrates how to set the LabelTemplateOrientation to Vertic
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -3697,7 +3697,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientatio
 
 
 {% highlight vbnet  %}
-[VB]
+
 
 Dim Line As New LineConnector()
 
@@ -3751,7 +3751,7 @@ By default this property will be set to ‘False’.
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -3764,7 +3764,7 @@ lc.LineBridgingEnabled = true;
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -3786,7 +3786,7 @@ When LineBridging for DiagramModel is disabled, LineBridging for all the lines w
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -3797,7 +3797,7 @@ model.LineBridgingEnabled = false;
 
 {% endhighlight  %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 
@@ -3819,7 +3819,7 @@ Example1: Draw an invisible segment, by setting IsStroked to false.
 
 
 {% highlight c#  %}
-[C#]
+
 
  protected override IEnumerable<PathSegment> CreateSegments(Point start, Point end, double angle)
 
@@ -3873,7 +3873,7 @@ Example2: Draw a rectangular bridge instead of arc.
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -3945,7 +3945,7 @@ Example 1: Bridge for Horizontal Connector (with BridgeDirection.Top)
 The following code example explains how to enable the Bridging and to set Bridge Direction.
 {% highlight c#  %}
 
-[C#]
+
 
 //Initializing Bridging and setting Bridge Direction
 
@@ -3962,7 +3962,7 @@ diagramview.BridgeDirection=BridgeDirection.Top;
 Example 2: Bridge for Vertical Connector (with BridgeDirection.Left)
 
 {% highlight c#  %}
-[C#]
+
 
 // setting Bridge Direction
 
@@ -4014,7 +4014,7 @@ By default this property will be set to ‘True’.
 
 {% highlight c#  %}
 
-[C#]
+
 
 LineConnector lc = new LineConnector();
 
@@ -4025,7 +4025,7 @@ lc.LineBridgingEnabled = false;
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim lc As New LineConnector()
 
@@ -4043,7 +4043,7 @@ When LineRouting for DiagramView is enabled, LineRouting for all the lines will 
 
 {% highlight c#  %}
 
-[C#]
+
 
 DiagramView view = new DiagramView ();
 
@@ -4052,7 +4052,7 @@ view.LineRoutingEnabled = true
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim view As New DiagramView ()
 
@@ -4123,7 +4123,7 @@ To enable LineRouting, use the following code example:
 
 
 {% highlight c#  %}
-[C#]
+
 
 LineConnector line = new LineConnector();
 
@@ -4132,7 +4132,7 @@ line.LineRoutingEnabled = true;
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 Dim line As New LineConnector()
 
@@ -4155,7 +4155,7 @@ To set the RoutingMode property to DragEnd, use the following code example.
 
 {% highlight c#  %}
 
-[C#]
+
 
 DiagramView View1 = new DiagramView();
 
@@ -4164,7 +4164,7 @@ View1.RoutingMode = RoutingMode.DragEnd;
 
 {% endhighlight  %}
 {% highlight vbnet  %}
-[VB]
+
 
 Dim view As New DiagramView()
 
@@ -4178,7 +4178,7 @@ To set the RoutingMode property to Immediate, use the following the code example
 
 {% highlight c#  %}
 
-[C#]
+
 
 DiagramView View1 = new DiagramView();
 
@@ -4187,7 +4187,7 @@ View1.RoutingMode = RoutingMode.Immediate;
 
 {% endhighlight   %}
 {% highlight vbnet  %}
-[VB]
+
 
 Dim view As New DiagramView()
 

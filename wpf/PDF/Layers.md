@@ -15,7 +15,7 @@ Layers are collection of graphics and when the viewer application is used, you c
 
 PdfPageLayer is used to create unlimited levels of layers and sub-layers in a parent-child relationship in the PdfDocument. The layers are stored by the PdfPageLayerCollection of a particular PdfPage. This collection contains layers for that particular page only, and every page has its own PdfPageLayerCollection. In order to add a layer to a particular page, you need to add it to the PdfPageLayerCollection of that page using Add method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -111,9 +111,9 @@ graphics.DrawArc(pen, 0, 0, 50, 50, -60, 60);
 
 document.Save("Sample.pdf");
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -208,6 +208,7 @@ graphics.DrawArc(pen, 0, 0, 50, 50, -60, 60)
 'Saves to disk.
 
 document.Save("Sample.pdf")
+{% endhighlight %}
 
 ## Modifying PDF Layer in the Loaded PDF document
 
@@ -215,7 +216,7 @@ You can remove the layers from an exsisting document by loading the layer from t
 
 PdfLoadedPage contain its own PdfPageLayerCollection. You can remove the layer by its name using Remove method.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -237,9 +238,9 @@ coll.Remove("Layer 1");
 
 document.Save("Sample.pdf");
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -262,6 +263,7 @@ coll.Remove("Layer 1")
 'Save to disk
 
 document.Save("Sample.pdf")
+{% endhighlight %}
 
 ## Toggle the visibility of the layer
 
@@ -273,7 +275,7 @@ You can toggle the visibility of the PdfLayer when printing the PDF document usi
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -317,9 +319,9 @@ graphics.DrawArc(pen, 0, 0, 50, 50, 360, 360);
 
 document.Save("Sample.pdf");
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -363,5 +365,5 @@ graphics.DrawArc(pen, 0, 0, 50, 50, 360, 360)
 
 document.Save("Sample.pdf")
 
-
+{% endhighlight %}
 

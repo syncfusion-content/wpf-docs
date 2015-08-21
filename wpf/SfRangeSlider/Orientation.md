@@ -27,7 +27,6 @@ The following code sample illustrates how to set Vertical Orientation to SfRange
 
 {%highlight xml%}
 
-[XAML]
 
 <editors:SfRangeSlider Height="200" HorizontalAlignment="Center" Minimum="0" Maximum="100" Value="50" Orientation="Vertical"  />
 

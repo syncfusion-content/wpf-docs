@@ -15,9 +15,9 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 CustomLabels</td><td>
@@ -43,13 +43,14 @@ This property specifies the position of the label for all of the ticks.</td></tr
 LabelOrientation</td><td>
 LabelOrientation specifies the orientation of the labels as either horizontal or vertical.</td></tr>
 </table>
+
 ## CustomLabels
 
 CustomLabels is an observable collection of items that contains the Label and Value properties. Create an observable collection of items by specifying the custom labels for corresponding values as illustrated in the following code example.
 
 {%highlight c#%}
 
-[C#]
+
 
 
 
@@ -77,7 +78,6 @@ In the following code example, the CustomCollection property is bound to CustomL
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -89,7 +89,7 @@ In the following code example, the CustomCollection property is bound to CustomL
 
 
 
-_RangeSlider with CustomLabels_
+RangeSlider with CustomLabels
 
 ## ShowCustomLabels
 
@@ -97,7 +97,7 @@ The default value of ShowCustomLabels is false. When set to true, it displays th
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -111,7 +111,7 @@ The default value of ShowCustomLabels is false. When set to true, it displays th
 
 
 
-_RangeSlider with ShowCustomLabels_
+RangeSlider with ShowCustomLabels
 
 ## LabelPlacement
 
@@ -126,7 +126,6 @@ The following code example illustrates the usage of the LabelPlacement property.
 
 {%highlight xml%}
 
-[XAML]
 
 <editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowCustomLabels="True" CustomLabels="{Binding CustomCollection}" LabelPlacement="BottomRight"/>
 
@@ -136,11 +135,11 @@ The following code example illustrates the usage of the LabelPlacement property.
 
 
 
-_LabelPlacement in BottomRight_
+LabelPlacement in BottomRight
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -156,7 +155,7 @@ CustomLabels="{Binding CustomCollection}" LabelPlacement="TopLeft"/>
 
 
 
-_LabelPlacement in TopLeft_
+LabelPlacement in TopLeft
 
 ## ShowValueLabels
 
@@ -164,7 +163,7 @@ The default value of the ShowValueLabels property is false. When set to true, it
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -176,7 +175,7 @@ The default value of the ShowValueLabels property is false. When set to true, it
 
 
 
-_ShowValueLabels property_
+ShowValueLabels property
 
 ## ValuePlacement
 
@@ -191,7 +190,7 @@ The following code example illustrates the usage of ValuePlacement property. The
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -203,11 +202,11 @@ The following code example illustrates the usage of ValuePlacement property. The
 
 
 
-_ValuePlacement in Bottom Right_
+ValuePlacement in Bottom Right
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -219,7 +218,7 @@ _ValuePlacement in Bottom Right_
 
 
 
-_ValuePlacement in TopLeft_
+ValuePlacement in TopLeft
 
 ## LabelOrientation
 
@@ -234,7 +233,7 @@ The following code example illustrates the usage of LabelOrientation property. T
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -246,11 +245,11 @@ The following code example illustrates the usage of LabelOrientation property. T
 
 
 
-_LabelOrientation as Horizontal_
+LabelOrientation as Horizontal
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 <editors:SfRangeSlider Width="200" Minimum="100" Maximum="200" TickFrequency="20" TickPlacement="Outside" ShowValueLabels="True" LabelOrientation="Vertical"/>
@@ -262,5 +261,5 @@ _LabelOrientation as Horizontal_
 
 
 
-_LabelOrientation as Vertical_
+LabelOrientation as Vertical
 

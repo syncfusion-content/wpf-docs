@@ -33,11 +33,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 VisualStyle </td><td>
@@ -52,14 +52,14 @@ OlapClientVisualStyle    </td></tr>
 A demo available in the following location: <InstalledDrive>:\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\OlapClient.WPF\Samples\Appearance\SkinCustomizationDemo
 
 
-### Adding Theming to an Application. 
+## Adding Theming to an Application. 
 
 
   The following code samples demonstrate how theming is added to the OlapClient control.
 
 {% highlight xml %} 
 
-[XAML]
+
 
 
 
@@ -71,7 +71,7 @@ A demo available in the following location: <InstalledDrive>:\AppData\Local\Sync
 
 {% highlight C# %}  
 
-[C#]
+
 
 
 

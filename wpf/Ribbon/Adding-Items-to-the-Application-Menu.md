@@ -13,7 +13,8 @@ Different menu items are added to an application menu using the MenuItems proper
 
 {% highlight xml %}
 
-    [XAML]
+
+
 
 
 

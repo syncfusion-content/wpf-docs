@@ -37,14 +37,14 @@ _Changes in the UpDown control from Version 8.3 to Version 8.4_
 {{ '**Old Type**' | markdownify }}</th><th>
 {{ '**New Type**' | markdownify }}</th></tr>
 <tr>
-<th rowspan = "2">
-ValueChanging</th><th>
-PropertyChangedCallback</th><th>
-ValueChangingEventHandler</th></tr>
+<td rowspan = "2">
+ValueChanging</td><td>
+PropertyChangedCallback</td><td>
+ValueChangingEventHandler</td></tr>
 <tr>
-<th>
-DependencyPropertyChangedEventArgs</th><th>
-ValueChangingEventArgs</th></tr>
+<td>
+DependencyPropertyChangedEventArgs</td><td>
+ValueChangingEventArgs</td></tr>
 </table>
 
 
@@ -78,7 +78,7 @@ The following are the elements of the UpDown control:
 
 
 
-### Sample Link_: To access a sample:
+### Sample Link: To access a sample:
 
 Navigate to Start -> All Programs -> Syncfusion -> Essential Studio -> Dashboard.
 

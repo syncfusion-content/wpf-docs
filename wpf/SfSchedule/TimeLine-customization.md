@@ -19,7 +19,7 @@ Time interval can be customized using the TimeInterval property. The default int
 
 SfSchedule Time format can be changed by using the TimeMode property.
 {% highlight html %}
-  [XAML]
+  
 
 
 
@@ -36,7 +36,7 @@ SfSchedule Time format can be changed by using the TimeMode property.
 {% highlight c# %}
 
 
-[C#]
+
 
 
 

@@ -15,15 +15,15 @@ The paragraph alignment and indentation features allow you to define content in 
 
 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 TextAlignment</td><td>
@@ -83,7 +83,6 @@ ParagraphAdv can be added directly to an application using the following code sn
 
 {% highlight xml %}
 
-[XAML]
 <syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            
 <syncfusion:DocumentAdv>                
 <syncfusion:SectionAdv><syncfusion:ParagraphAdv TextAlignment="Center" AfterSpacing=".3" ListType="Bulleted">                    
@@ -94,7 +93,7 @@ ParagraphAdv can be added directly to an application using the following code sn
 
 {% highlight C# %}
 
-[C#]      
+     
  RichTextBoxAdv richtext = new RichTextBoxAdv();      
  DocumentAdv document = new DocumentAdv();      
  SectionAdv section = new SectionAdv();      

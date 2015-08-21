@@ -7,13 +7,13 @@ control: PDF Viewer
 documentation: ug
 ---
 
-### Exporting PDF
+# Exporting PDF
 
-#### Exporting PDFs as Raster Images
+## Exporting PDFs as Raster Images
 
 Essential PDF Viewer allows selected pages to be exported as raster images. Exporting can be done using the ExportAsImage method. This option helps to convert a PDF into an image.
 
-[C#]
+{% highlight C# %}
 
 Bitmap img = pdfViewer1.ExportAsImage(0);
 
@@ -23,9 +23,9 @@ Bitmap img = pdfViewer1.ExportAsImage(0);
 
 img.Save("Sample.png", ImageFormat.Png);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 Dim img As Bitmap = pdfViewer1.ExportAsImage(0)
 
@@ -35,25 +35,26 @@ Dim img As Bitmap = pdfViewer1.ExportAsImage(0)
 
 img.Save("Sample.png", ImageFormat.Png)
 
-
+{% endhighlight %}
 
 You can also specify the page range instead of converting each page.
 
-[C#]
+{% highlight C# %}
 
 Bitmap[] img = pdfViewer1.ExportAsImage(0, 3);
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 Dim img() As Bitmap = pdfViewer1.ExportAsImage(0, 3)
+{% endhighlight %}
 
-#### Exporting PDFs as Vector Images
+### Exporting PDFs as Vector Images
 
 Exporting PDFs as vector images can be done using the ExportAsMetafile method. The following code sample demonstrates how a PDF document can be exported as a metafile.
 
-[C#]
+{% highlight C# %}
 
 Metafile img = pdfViewer1.ExportAsMetafile(0);
 
@@ -63,9 +64,9 @@ Metafile img = pdfViewer1.ExportAsMetafile(0);
 
 img.Save("Sample.emf", ImageFormat.Emf);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 Dim img As Metafile = pdfViewer1.ExportAsMetafile(0)
 
@@ -75,17 +76,18 @@ Dim img As Metafile = pdfViewer1.ExportAsMetafile(0)
 
 img.Save("Sample.emf", ImageFormat.Emf)
 
-
+{% endhighlight %}
 
 You can also specify the page range instead of converting each page individually.
 
-[C#]
+{% highlight C# %}
 
 Metafile[] img = pdfViewer1.ExportAsMetafile(0, 3);
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 Dim img() As Metafile = pdfViewer1.ExportAsMetafile(0, 3)
 
+{% endhighlight %}

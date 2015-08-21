@@ -19,15 +19,17 @@ To add a rectangle to the Syncfusion Report Designer, select Rectangle from the 
 
 To apply styles to the rectangle:
 
-1. Right click the added rectangle and click Rectangle Properties. It displays the Control Properties Dialog.
+1.Right click the added rectangle and click Rectangle Properties. It displays the Control Properties Dialog.
 
-![C:/Users/radhas/Desktop/DesignerDocument/sshot-53.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img2.png)
+  ![C:/Users/radhas/Desktop/DesignerDocument/sshot-53.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img2.png)
 
 
 
-2. Select Style to set the style, color, and width of the rectangle border.
-3. To set the background color of the rectangle, select Fill.
-4. Click OK.
+2.Select Style to set the style, color, and width of the rectangle border.
+
+3.To set the background color of the rectangle, select Fill.
+
+4.Click OK.
 
 
 
@@ -39,7 +41,7 @@ The following illustration shows the rectangle styled by the properties grid.
 
 
 
-![C:/Users/radhas/Desktop/DesignerDocument/sshot-34.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img3.png)
+   ![C:/Users/radhas/Desktop/DesignerDocument/sshot-34.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img3.png)
 
 
 
@@ -49,7 +51,7 @@ To add report items such as text boxes, lines, and images, to the rectangle, dra
 
 
 
-![C:/Users/radhas/Desktop/DesignerDocument/sshot-35.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img4.png)
+   ![C:/Users/radhas/Desktop/DesignerDocument/sshot-35.png](Add-a-Rectangle-to-the-Report-Designer_images/Add-a-Rectangle-to-the-Report-Designer_img4.png)
 
 
 

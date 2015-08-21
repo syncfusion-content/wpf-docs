@@ -25,14 +25,14 @@ The EnableExtendedScrolling property must be set either in XAML or the code file
 
 {% highlight xml %}
 
-[XAML]
+
   EnableExtendedScrolling ="True"
   
 {% endhighlight %}
   
 
 {% highlight C# %}
-[C#]  
+ 
 control.EnableExtendedScrolling = true;
 {% endhighlight %}
 

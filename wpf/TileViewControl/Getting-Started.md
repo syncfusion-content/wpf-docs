@@ -101,14 +101,13 @@ ii. Syncfusion.Core
 
 
 
-> _Note: You can customize the appearance of the TileViewControl and its Item using the template-editing feature available in the Expression Blend._
+> Note: You can customize the appearance of the TileViewControl and its Item using the template-editing feature available in the Expression Blend.
 
 ### Through XAML
 
 The TileViewControl can also be created through XAML. The following code example illustrates this.
 
 {% highlight xml %}
-[XAML]
 
 <syncfusion:TileViewControl Name="tileViewControl1" >
 
@@ -130,7 +129,6 @@ To create the TileViewControl through C#, include the following namespace to the
 
 
 {% highlight c# %}
-[C#]
 
 using Syncfusion.Windows.Shared;
 
@@ -142,7 +140,6 @@ Next, create the TileViewControl as follows.
 
 
 {% highlight c# %}
-[C#]
 
 
 

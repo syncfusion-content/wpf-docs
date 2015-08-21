@@ -33,6 +33,7 @@ To view samples:
 2. Select Run Locally Installed Samples in WPF Combo box.
 3. Now move the mouse to the ComboBoxAdv menu in the Sample Browser.
 4. Choose ComboBoxAdv demo.
+
 ## Adding ComboBoxAdv to an Application
 
 
@@ -40,6 +41,7 @@ The ComboBoxAdv control can be added to an application by using the following ap
 
 * Microsoft Visual Studio
 * Microsoft Expression Blend
+
 ### Creating the ComboBoxAdv Control in Visual Studio
 
 
@@ -50,7 +52,7 @@ To create an ComboBoxAdv instance in Visual Studio:
 
 
 
-![](ComboBoxAdv_images/ComboBoxAdv_img2.png)
+   ![](ComboBoxAdv_images/ComboBoxAdv_img2.png)
 
 
 
@@ -60,7 +62,7 @@ To create an ComboBoxAdv instance in Visual Studio:
 
 
 
-![](ComboBoxAdv_images/ComboBoxAdv_img3.png)
+   ![](ComboBoxAdv_images/ComboBoxAdv_img3.png)
 
 
 
@@ -70,7 +72,8 @@ To create an ComboBoxAdv instance in Visual Studio:
 
 
 
-![](ComboBoxAdv_images/ComboBoxAdv_img4.png)
+   ![](ComboBoxAdv_images/ComboBoxAdv_img4.png)
+   {:.prettyprint}
 
 
 
@@ -83,7 +86,7 @@ To create ComboBoxAdv instance in Expression Blend:
 
 
 
-![](ComboBoxAdv_images/ComboBoxAdv_img5.png)
+   ![](ComboBoxAdv_images/ComboBoxAdv_img5.png)
 
 
 
@@ -92,7 +95,7 @@ To create ComboBoxAdv instance in Expression Blend:
 
 
 
-![](ComboBoxAdv_images/ComboBoxAdv_img6.png)
+   ![](ComboBoxAdv_images/ComboBoxAdv_img6.png)
 
 
 
@@ -102,7 +105,8 @@ To create ComboBoxAdv instance in Expression Blend:
 
 
 
-![](ComboBoxAdv_images/ComboBoxAdv_img7.png)
+   ![](ComboBoxAdv_images/ComboBoxAdv_img7.png)
+   {:.prettyprint}
 
 
 
@@ -112,6 +116,7 @@ You can customize the appearance of the ComboBoxAdv control by editing the style
 
 * Edit style in Expression Blend 
 * Customizing by using properties
+
 ### Blendability
 
 
@@ -136,12 +141,12 @@ _Properties Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td><td>
-Reference links</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 AllowMultiSelect</td><td>
@@ -154,7 +159,7 @@ NA</td></tr>
 SelectedItems</td><td>
 It contains the selected items value</td><td>
 Dependency Property</td><td>
-ObservableCollection<object></td><td>
+ObservableCollection&lt;object&gt;</td><td>
 NA</td></tr>
 </table>
 
@@ -167,13 +172,13 @@ AllowMultiSelect property can be added directly to an application using the foll
 {% highlight xml %}
 
 
-[XAML]
+
 <syncfusion:ComboBoxAdv AllowMultiSelect="True"></syncfusion:ComboBoxAdv></td></tr>
 {% endhighlight %}
 
 {% highlight c# %}
 
-[C#]
+
 ComboBoxAdv comboBox = new ComboBoxAdv();
 comboBox.AllowMultiSelect = true;
 {% endhighlight %}
@@ -193,12 +198,12 @@ It displays the default text in the ComboBoxAdv when none of the items is select
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td><td>
-Reference links</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 DefaultText </td><td>
@@ -217,13 +222,13 @@ DefaultText property can be added directly to an application in the following wa
 
 {% highlight xml %}
 
-[XAML]
+
 <syncfusion:ComboBoxAdv DefaultText="..Choose Items.."></syncfusion:ComboBoxAdv>
 {% endhighlight %}
 
 {% highlight c# %}
 
-[C#]
+
 ComboBoxAdv comboBox = new ComboBoxAdv();       
 comboBox.DefaultText = "..Choose Items..";
 {% endhighlight %}
@@ -237,7 +242,7 @@ comboBox.DefaultText = "..Choose Items..";
 
 A delimiter string in a ComboBoxAdv is “A string that can be displayed between the selected items in the ComboBoxAdv”. We can customize this string by using the property called “SelectedValueDelimiter” in the ComboBoxAdv.
 
-#### _Properties Table_
+_Properties Table_
 
 <table>
 <tr>
@@ -257,7 +262,7 @@ NA</td></tr>
 </table>
 
 
-#### Adding Delimiter String Customization to an Application 
+### Adding Delimiter String Customization to an Application 
 
 Delimiter string customization can be added directly to an application using the following code snippet: 
 
@@ -265,13 +270,13 @@ Delimiter string customization can be added directly to an application using the
 
 {% highlight xml %}
 
-[XAML]
+
 <syncfusion:ComboBoxAdv SelectedValueDelimiter="#"></syncfusion:ComboBoxAdv>
 {% endhighlight %}
 
 {% highlight c# %}
 
-[C#]
+
 ComboBoxAdv comboBox = new ComboBoxAdv();     
 comboBox.SelectedValueDelimiter = "#";
 

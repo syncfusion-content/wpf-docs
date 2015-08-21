@@ -7,19 +7,20 @@ control: PDF Viewer
 documentation: ug
 ---
 
-### Get page count
+# Get page count
 
 The number of pages as viewed in the PDF Viewer can be found by using the PageCount property.
 
-[C#]
+{% highlight c# %}
 
 int count = pdfViewer1.PageCount;
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 Dim count As Integer = pdfViewer1.PageCount
 
 
 
+{% endhighlight %}

@@ -11,17 +11,17 @@ documentation: ug
 
 The PercentTextBox exposes the following events:
 
-# PercentValueChanged
+## PercentValueChanged
 
 PercentValueChanged – The event occurs when the PercentValue property of the PercentTextBox is changed.
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox ValueChanged="PercentTextBox_PercentValueChanged"/></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox ValueChanged="PercentTextBox_PercentValueChanged"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.PercentValueChanged+=new PropertyChangedCallback(PercentTextBox_PercentValueChanged);</td></tr>
+{% highlight c# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.PercentValueChanged+=new PropertyChangedCallback(PercentTextBox_PercentValueChanged);{% endhighlight %}</td></tr>
 </table>
 
 
@@ -29,7 +29,7 @@ You can handle the event as follows:
 
  {% highlight c# %}
  
-    [C#]
+  
 
     void PercentTextBox_PercentValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 
@@ -45,17 +45,17 @@ You can handle the event as follows:
 
 
 
-# TextChanged
+## TextChanged
 
 TextChanged – The event occurs when the PercentValue property of the PercentTextBox is changed.
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox TextChanged="PercentTextBox_TextChanged"/></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox TextChanged="PercentTextBox_TextChanged"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.TextChanged += new TextChangedEventHandler(PercentTextBox_TextChanged);</td></tr>
+{% highlight c# %} PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.TextChanged += new TextChangedEventHandler(PercentTextBox_TextChanged);{% endhighlight %}</td></tr>
 </table>
 
 
@@ -63,7 +63,7 @@ You can handle the event as follows:
 
  {% highlight c# %}
  
-    [C#]
+    
   void PercentTextBox_TextChanged(object sender, TextChangedEventArgs e)
 
         {
@@ -78,17 +78,17 @@ You can handle the event as follows:
 
       
 
-# CultureChanged
+## CultureChanged
 
 CultureChanged – The event occurs when the Culture property of the PercentTextBox is changed.
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox CultureChanged="PercentTextBox_CultureChanged"/></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox CultureChanged="PercentTextBox_CultureChanged"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.CultureChanged+=new                            PropertyChangedCallback(PercentTextBox_CultureChanged);</td></tr>
+{% highlight c# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.CultureChanged+=new                            PropertyChangedCallback(PercentTextBox_CultureChanged);{% endhighlight %}</td></tr>
 </table>
 
 
@@ -96,7 +96,7 @@ You can handle the event as follows:
 
  {% highlight c# %}
  
-    [C#]
+
 
     void PercentTextBox_CultureChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 
@@ -112,17 +112,17 @@ You can handle the event as follows:
 
 
 
-# MaxValueChanged
+## MaxValueChanged
 
 MaxValueChanged – The event occurs when the MaxValue property of the PercentTextBox is changed.
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox MaxValueChanged="PercentTextBox_MaxValueChanged"/></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox MaxValueChanged="PercentTextBox_MaxValueChanged"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.MaxValueChanged+=new                     PropertyChangedCallback(PercentTextBox_MaxValueChanged);</td></tr>
+{% highlight c# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.MaxValueChanged+=new                     PropertyChangedCallback(PercentTextBox_MaxValueChanged);{% endhighlight %}</td></tr>
 </table>
 
 
@@ -130,7 +130,7 @@ You can handle the event as follows:
 
  {% highlight c# %}
  
-    [C#]
+    
 
     void PercentTextBox_MaxValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 
@@ -146,17 +146,17 @@ You can handle the event as follows:
 
 
 
-# MinValueChanged
+## MinValueChanged
 
 MinValueChanged – The event occurs when the MinValue property of the PercentTextBox is changed.
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox MinValueChanged="PercentTextBox_MinValueChanged"/></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox MinValueChanged="PercentTextBox_MinValueChanged"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.MinValueChanged+=new                      PropertyChangedCallback(PercentTextBox_MinValueChanged);</td></tr>
+{% highlight c# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.MinValueChanged+=new                      PropertyChangedCallback(PercentTextBox_MinValueChanged);{% endhighlight %}</td></tr>
 </table>
 
 
@@ -164,7 +164,7 @@ You can handle the event as follows:
 
  {% highlight c# %}
  
-    [C#]
+
 
     void PercentTextBox_MinValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
 
@@ -176,23 +176,23 @@ You can handle the event as follows:
 
  {% endhighlight %}
 
-C# 
 
 
 
 
 
-# SelectionChanged
+
+## SelectionChanged
 
 SelectionChanged – The event occurs when the selection in the textbox is changed.
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox SelectionChanged="PercentTextBox_SelectionChanged"/></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox SelectionChanged="PercentTextBox_SelectionChanged"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.SelectionChanged+=new                         RoutedEventHandler(PercentTextBox_SelectionChanged);</td></tr>
+{% highlight c# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.SelectionChanged+=new                         RoutedEventHandler(PercentTextBox_SelectionChanged);{% endhighlight %}</td></tr>
 </table>
 
 
@@ -200,7 +200,7 @@ You can handle the event as follows:
 
  {% highlight c# %}
  
-    [C#]
+   
 
    void PercentTextBox_SelectionChanged(object sender, RoutedEventArgs e)
 

@@ -76,7 +76,6 @@ The following code example illustrates a Report Viewer control template.
 
 {%highlight xml%}
 
-[XAML]
 
 
 

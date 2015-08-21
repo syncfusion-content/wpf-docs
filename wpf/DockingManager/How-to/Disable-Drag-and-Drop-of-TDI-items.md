@@ -7,19 +7,15 @@ control: DockingManager
 documentation: ug
 ---
 
-### Disable Drag and Drop of TDI items  
+## Disable Drag and Drop of TDI items  
 
 IsTDIDragDropEnabled property is used to disable the drag and drop of TDI items in DockingManager. The usage is follows: 
 
 
+{% highlight html %}
+<syncfusion:DockingManager Name="DockingManager" ContainerMode="TDI"IsTDIDragDropEnabled="False">   <Grid Name="grid1" syncfusion:DockingManager.State="Document"/>   <Grid Name="grid2" syncfusion:DockingManager.State="Document"/></syncfusion:DockingManager>
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager Name="DockingManager" ContainerMode="TDI"IsTDIDragDropEnabled="False">   <Grid Name="grid1" syncfusion:DockingManager.State="Document"/>   <Grid Name="grid2" syncfusion:DockingManager.State="Document"/></syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.IsTDIDragDropEnabled = false;</td></tr>
-</table>
+DockingManager.IsTDIDragDropEnabled = false;
 
 
+{% endhighlight  %}

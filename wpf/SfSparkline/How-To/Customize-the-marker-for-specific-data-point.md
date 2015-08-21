@@ -11,7 +11,7 @@ documentation: ug
 
 We can customize the marker for specific data point with custom template for LineSparkline and AreaSparkline, in order to customize the marker we need to inherite the MarkerTemplateSelector class and override the SelectTemplate method.
 
-[XAML]
+{% highlight xml %}
 
    <Syncfusion:SfLineSparkline x:Name="sparkline" MarkerVisibility="Visible" ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
 
@@ -22,10 +22,10 @@ We can customize the marker for specific data point with custom template for Lin
             </Syncfusion:SfLineSparkline.MarkerTemplateSelector>
 
         </Syncfusion:SfLineSparkline>
+{% endhighlight %}
 
 
-
-[C#]
+{% highlight C# %}
 
      public class CustomMarkersTemplateSelector : MarkerTemplateSelector
 
@@ -52,10 +52,11 @@ We can customize the marker for specific data point with custom template for Lin
         }
 
     }
+{% endhighlight %}
 
 Following is the snapshot for custom marker position,
 
-{{ '![C:/Users/ApoorvahR/Desktop/12.png](Customize-the-marker-for-specific-data-point_images/Customize-the-marker-for-specific-data-point_img1.png)' | markdownify }}
+![C:/Users/ApoorvahR/Desktop/12.png](Customize-the-marker-for-specific-data-point_images/Customize-the-marker-for-specific-data-point_img1.png)
 
 
 

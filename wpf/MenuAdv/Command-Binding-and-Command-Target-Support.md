@@ -23,7 +23,7 @@ To use the Command Binding support in an application users have to create a Dele
 
 {% highlight xml %}
 
-[XAML]
+
 <shared:MenuAdv x:Name="Menu">               
  <shared:MenuItemAdv Header="File">           
  <shared:MenuItemAdv Header="New">                
@@ -53,7 +53,7 @@ To use the Command Binding support in an application users have to create a Dele
 
 {% highlight C# %}
 
-[C#]
+
 public partial class MainPage : UserControl
 {       
  public MainPage()       
@@ -80,7 +80,7 @@ public partial class MainPage : UserControl
 {% endhighlight %}
 {% highlight C# %}
 
-[C#]
+
 public class DelegateCommand : ICommand  
   {       
   public event EventHandler CanExecuteChanged;       
@@ -133,11 +133,11 @@ _Properties Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 Command</td><td>

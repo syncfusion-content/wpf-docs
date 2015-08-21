@@ -53,49 +53,49 @@ The ItemContainerStyle property of CardView is used to set the styles for CardVi
 
 1. Create a style for CardViewItem.
 
-{% highlight xml %}
 
-<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="contactStyle">
 
-            <Setter Property="Header" Value="{Binding Name}"/>
+			<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="contactStyle">
 
-            <Setter Property="Foreground" Value="Green"/>
+						<Setter Property="Header" Value="{Binding Name}"/>
 
-            <Setter Property="FontWeight" Value="Bold"/>
+						<Setter Property="Foreground" Value="Green"/>
 
-            <Setter Property="FontSize" Value="16"/>
+						<Setter Property="FontWeight" Value="Bold"/>
 
-        </Style>
+						<Setter Property="FontSize" Value="16"/>
 
-{% endhighlight %}
+					</Style>
+
+
 
 
 
 2. Set the ItemContainerStyle of CardView.
+   
 
-{% highlight xml %}
 
-<syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
+			<syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
 
-                                 ItemTemplate="{StaticResource contactTemplate}"
+											 ItemTemplate="{StaticResource contactTemplate}"
 
-                                 EditItemTemplate="{StaticResource contactEditTemplate}"
+											 EditItemTemplate="{StaticResource contactEditTemplate}"
 
-                                 ItemContainerStyle="{StaticResource contactStyle}"
+											 ItemContainerStyle="{StaticResource contactStyle}"
 
-                                                                />
-{% endhighlight %}
-
+																			/>
 
 
 
 
 
-This generates the following CardView control.
+   {:.prettyprint}
+
+    This generates the following CardView control.
 
 
 
-![](Styling_images/Styling_img1.png)
+    ![](Styling_images/Styling_img1.png)
 
 
 
@@ -108,36 +108,35 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 
 
-{% highlight xml %}
 
-<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="ageStyle1">
+			<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="ageStyle1">
 
-            <Setter Property="Header" Value="{Binding Name}"/>
+						<Setter Property="Header" Value="{Binding Name}"/>
 
-            <Setter Property="Foreground" Value="Green"/>
+						<Setter Property="Foreground" Value="Green"/>
 
-            <Setter Property="FontWeight" Value="Bold"/>
+						<Setter Property="FontWeight" Value="Bold"/>
 
-            <Setter Property="FontSize" Value="16"/>
+						<Setter Property="FontSize" Value="16"/>
 
-        </Style>
-
+					</Style>
 
 
-        <Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="ageStyle2">
 
-            <Setter Property="Header" Value="{Binding Name}"/>
+					<Style TargetType="{x:Type syncfusion:CardViewItem}" x:Key="ageStyle2">
 
-            <Setter Property="Foreground" Value="Blue"/>
+						<Setter Property="Header" Value="{Binding Name}"/>
 
-            <Setter Property="FontWeight" Value="Bold"/>
+						<Setter Property="Foreground" Value="Blue"/>
 
-            <Setter Property="FontSize" Value="16"/>
+						<Setter Property="FontWeight" Value="Bold"/>
 
-        </Style>
+						<Setter Property="FontSize" Value="16"/>
+
+					</Style>
 
 
-{% endhighlight %}
+
 
 
 
@@ -150,49 +149,47 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 
 
-{% highlight C# %}
+						public class CardViewItemContainerStyleSelector : StyleSelector
 
-    public class CardViewItemContainerStyleSelector : StyleSelector
-
-    {
+						{
 
 
 
-        public override Style SelectStyle(object item, DependencyObject container)
+							public override Style SelectStyle(object item, DependencyObject container)
 
-        {
-
-
-
-            Window window = Application.Current.MainWindow;
+							{
 
 
 
-            int age = (item as Contact).Age;
-
-            if (age > 18)
-
-            {
-
-                return ((Style)window.Resources["ageStyle1"]);
-
-            }
-
-            else
-
-            {
-
-                return ((Style)window.Resources["ageStyle2"]);
-
-            }
+								Window window = Application.Current.MainWindow;
 
 
 
-        }
+								int age = (item as Contact).Age;
 
-    }
+								if (age > 18)
 
-{% endhighlight %}
+								{
+
+									return ((Style)window.Resources["ageStyle1"]);
+
+								}
+
+								else
+
+								{
+
+									return ((Style)window.Resources["ageStyle2"]);
+
+								}
+
+
+
+							}
+
+						}
+
+
 
 
 
@@ -206,11 +203,11 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 
 
-{% highlight xml %}
+
 
         <local:CardViewItemContainerStyleSelector x:Key="cardViewItemContainerStyleSelector"/>
 
-{% endhighlight %}
+
 
 
 
@@ -218,9 +215,9 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 
 
-{% highlight xml %}
 
-   <syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
+
+         <syncfusion:CardView ItemsSource="{Binding Contacts}" CanEdit="True" 
 
                                  ItemTemplate="{StaticResource contactTemplate}"
 
@@ -233,16 +230,13 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
                                                                 />
 
 
-{% endhighlight %}
 
 
+   {:.prettyprint}
 
+    This generates the following CardView control.
 
-
-
-This generates the following CardView control.
-
-![](Styling_images/Styling_img2.png)
+    ![](Styling_images/Styling_img2.png)
 
 
 

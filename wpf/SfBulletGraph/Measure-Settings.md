@@ -88,7 +88,7 @@ SfBulletGraph bulletgraph = new SfBulletGraph();
 
 ![C:/Users/Giftline/Desktop/New folder/3.jpg](Concept-and-Features_images/Concept-and-Features_img5.png)
 
-
+_Customizing featured measure of Bullet Graph_
 
 ### Comparative Measure:
 
@@ -153,4 +153,4 @@ SfBulletGraph bulletgraph = new SfBulletGraph();
 
 ![C:/Users/Giftline/Desktop/New folder/4.jpg](Concept-and-Features_images/Concept-and-Features_img6.png)
 
-
+_Customizing Comparative Measure of Bullet Graph_

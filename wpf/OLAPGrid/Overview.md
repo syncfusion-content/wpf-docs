@@ -46,10 +46,10 @@ _Convention Table_
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-Icon</td><td>
-Description</td></tr>
+<th>
+Convention</th><th>
+Icon</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>

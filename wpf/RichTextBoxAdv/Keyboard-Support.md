@@ -13,7 +13,7 @@ RichTextBoxAdv provides some shortcut keys for ease of use. The following table 
 
 
 
-_Keyboard shortcuts table_
+Keyboard shortcuts table
 
 <table>
 <tr>

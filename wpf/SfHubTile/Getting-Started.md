@@ -16,7 +16,7 @@ The following code sample shows how to create the hub tile from code-behind and 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -47,34 +47,35 @@ The following code sample shows how to create the hub tile from code-behind and 
 {% highlight c# %}
 
 
-[C#]
+
 
 SfHubTile hubTile = new SfHubTile();
 {% endhighlight %}
+
 ## Tile Types
 
-### HubTile
+## HubTile
 
 This control provides notification through various transition effects. 
 
-#### Key Properties
+## Key Properties
 
-##### Title
+## Title
 
 The title will be displayed at the top of the hub tile.
 
-##### Header
+## Header
 
 The header will be displayed at the bottom of the hub tile.
 
-##### ImageSource
+## ImageSource
 
 An image will be displayed at the center of the hub tile.
 
 The following code sample shows the usage of the Title, Header and ImageSource properties.
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -114,25 +115,25 @@ ImageSource="NewMail.png"
 
 
 
-### Secondary Content
+## Secondary Content
 
 Secondary content will be animated in the hub tile based on a specified interval.
 
-### Hub Tile Transitions
+## Hub Tile Transitions
 
 Hub tile transitions provide the transition effect in hub tile animation. They include the following transitions:
 
 1. Slide
 2. Fade
 
-#### Slide Transition
+## Slide Transition
 
 Secondary content will be animated by sliding the tile.
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
 
-#### Fade__Transition
+## Fade__Transition
 
 Secondary content will be animated by fading the tile.
 
@@ -142,14 +143,14 @@ Secondary content will be animated by fading the tile.
 
 
 
-### PulsingTile
+## PulsingTile
 
 This control resembles the Music and Video hub tiles in Windows Phone. The content will zoom in and out randomly and show a translation movement in the x- and y- axis randomly. 
 
 The following code sample shows how to create a PulsingTile in code-behind and XAML:
 {% highlight xml %}
 
- [XAML]
+ 
 
 
 
@@ -191,13 +192,13 @@ The following code sample shows how to create a PulsingTile in code-behind and X
 
 
 
-### PulseScale
+## PulseScale
 
 The PulseScale property specifies the range of translation in the x- and y-axis while pulsing the content.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -227,12 +228,12 @@ The PulseScale property specifies the range of translation in the x- and y-axis 
 
 
 
-### PulseDuration
+## PulseDuration
 
 The PulseDuration property specifies the interval for the translation done in the pulsing tile.
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -260,12 +261,12 @@ The PulseDuration property specifies the interval for the translation done in th
 {% endhighlight %}
 
 
-### RadiusX
+## RadiusX
 
 The RadiusX property specifies the range of the translation in the pulsing tile along the x-axis.
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -295,13 +296,13 @@ The RadiusX property specifies the range of the translation in the pulsing tile 
 
 
 
-### RadiusY
+## RadiusY
 
 The RadiusY property specifies the range of the translation in the pulsing tile along y-axis.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -329,17 +330,17 @@ The RadiusY property specifies the range of the translation in the pulsing tile 
 {% endhighlight %}
 
 
-### Freezing
+## Freezing
 
 The animation of a hub tile can be frozen.
 
-#### GroupName
+### GroupName
 
 Hub tiles can be given specific group name. The group name will be used when we need to freeze the entire group of hub tiles.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -357,7 +358,7 @@ Hub tiles can be given specific group name. The group name will be used when we 
 
 {% endhighlight %}
 
-#### Hub Tile Service
+## Hub Tile Service
 
 The HubTileService class provides the helper methods to freeze and unfreeze the animation by passing a HubTile instance or GroupName as an argument.
 
@@ -365,7 +366,7 @@ The following code sample can be used to freeze a particular hub tile.
 
 {% highlight c# %}
 
-[C#]
+
 
 HubTileService.Freeze(hubTile);
 {% endhighlight %}
@@ -374,7 +375,7 @@ HubTileService.Freeze(hubTile);
 The following code sample can be used to unfreeze a particular hub tile.
 {% highlight c# %}
 
-[C#]
+
 
 HubTileService.UnFreeze(hubTile);
 {% endhighlight %}
@@ -383,7 +384,7 @@ HubTileService.UnFreeze(hubTile);
 The following code sample can be used to freeze a particular group of hub tiles.
 {% highlight c# %}
 
-[C#]
+
 
 HubTileService.Freeze("Group1");
 {% endhighlight %}
@@ -392,7 +393,7 @@ HubTileService.Freeze("Group1");
 The following code sample can be used to unfreeze a particular group of hub tiles.
 {% highlight c# %}
 
-[C#]
+
 
 HubTileService.UnFreeze("Group1");
 
@@ -404,7 +405,7 @@ Setting the IsFrozen property in a hub tile to true will freeze the animation.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 

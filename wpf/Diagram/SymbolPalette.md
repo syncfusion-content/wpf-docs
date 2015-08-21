@@ -97,13 +97,14 @@ Void</td><td>
 Clears all the SymbolPaletteFilter from the SymbolPalette.</td><td>
 Symbol Filters</td></tr>
 </table>
+
 ### Enable/Disable SymbolPalette
 
 The SymbolPalette can be displayed by setting the IsSymbolPaletteEnabled property to True. By default, this property is disabled.
 
 The following code can be used to enable the SymbolPalette.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -126,7 +127,7 @@ xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Di
 {% endhighlight %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -137,7 +138,7 @@ diagramcontrol.IsSymbolPaletteEnabled = true;
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -198,7 +199,7 @@ To enable preview for the dragged item from Symbol Palette, set the ShowPreview 
 
 Following code example illustrates how to enable preview support:  
 {% highlight c# %}
-[C#]
+
 
       DiagramControl diagramControl1 = new DiagramControl();
 
@@ -208,7 +209,7 @@ diagramControl1.SymbolPalette.ShowPreview = true;
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
        Dim diagramControl1 As New DiagramControl()
 
@@ -226,7 +227,7 @@ Change the preview content using PreviewBrush
 
 You can customize the preview content using the PreviewBrush property of SymbolPaletteItem. Following code example illustrates how to customize preview content: 
 {% highlight c# %}
-[C#]
+
 
        DiagramControl diagramControl1 = new DiagramControl();
 
@@ -237,7 +238,7 @@ You can customize the preview content using the PreviewBrush property of SymbolP
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
        Dim diagramControl1 As New DiagramControl()
 
@@ -259,7 +260,7 @@ A SymbolPalette filter can be added to the SymbolPalette control, using the Symb
 
 The following lines of code can be used to specify the SymbolPalette filter of the SymbolPalette Group.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -280,7 +281,7 @@ dc.SymbolPalette.SymbolGroups.Add(s);
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -352,7 +353,7 @@ a) Removing filters and groups named Shapes, Custom Shapes and Electrical Shapes
 
 Use the following code to remove the filters and groups named Shapes, Custom Shapes and Electrical Shapes:
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -377,7 +378,7 @@ diagramControl.SymbolPalette.SymbolFilters.Remove(diagramControl.SymbolPalette.S
 
 
 
-[VB]
+
 
 
 
@@ -415,7 +416,7 @@ A SymbolPalettegroup is a collection of SymbolPalette items. It is used to group
 
 Use the following code to add a group to SymbolPalette:
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -432,7 +433,7 @@ diagramControl.SymbolPalette.SymbolGroups.Add(s);
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 
@@ -488,7 +489,7 @@ a) Removing filter and group named Electrical Shapes and refreshing the Filters
 
 Use the following code to remove the filter and group named Electrical Shapes:
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -545,7 +546,7 @@ foreach (SymbolPaletteGroup group in diagramControl.SymbolPalette.SymbolGroups)
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 
@@ -599,13 +600,13 @@ Run the application. The following output is displayed and the groups and filter
 
 _Palette with Groups and Filters removed_
 
-_Note: Whenever a filter is removed the group containing the next filter index must be decremented by one to get the proper output as mentioned in the above code snippet._
+> Note: Whenever a filter is removed the group containing the next filter index must be decremented by one to get the proper output as mentioned in the above code snippet.
 
 b) Removing all the groups from the palette
 
 To remove all the groups from the palette, the Clear method can be used. The following code illustrates the usage of Clear method.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -616,7 +617,7 @@ diagramControl.SymbolPalette.SymbolGroups.Clear();
 
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -651,84 +652,85 @@ To create your own custom symbols in the symbol designer, follow the procedure g
 1. Open the Symbol Designer tool which is available in the software path given above.
 2. If you want to create a new symbol, select New option in the File menu. Type a name for the palette as shown in the below sample and click OK.
 
-![C:/Users/sundarm/Desktop/1.PNG](Diagram-View_images/Diagram-View_img60.png)
+   ![C:/Users/sundarm/Desktop/1.PNG](Diagram-View_images/Diagram-View_img60.png)
 
 
 
-_New Symbol PaletteItem Dialog Box_
+   _New Symbol PaletteItem Dialog Box_
 
 3. A new symbol palette is created with the given name after which, you can design your own symbol.
 
-![C:/Users/sundarm/Desktop/2nd.PNG](Diagram-View_images/Diagram-View_img61.png)
+   ![C:/Users/sundarm/Desktop/2nd.PNG](Diagram-View_images/Diagram-View_img61.png)
 
 
 
-_Flow Diagram Symbol Palette_
+   _Flow Diagram Symbol Palette_
 
 4. Draw the desired shapes using drawing tool in the work area.
 
-![C:/Users/sundarm/Desktop/new3rd.PNG](Diagram-View_images/Diagram-View_img62.png)
+   ![C:/Users/sundarm/Desktop/new3rd.PNG](Diagram-View_images/Diagram-View_img62.png)
 
 
 
-_Symbol_
+   _Symbol_
 
-The Shape of the SymbolPaletteItem can be customized further using format tab in Symbol Designer: 
+   The Shape of the SymbolPaletteItem can be customized further using format tab in Symbol Designer: 
 
-* Background
-* Outline
-* Dash array
-* Shadow
-* Softedges
-* Glow visual effect
+   * Background
+   * Outline
+   * Dash array
+   * Shadow
+   * Softedges
+   * Glow visual effect
 
-The node label can also be customized.
+   The node label can also be customized.
 
-![C:/Users/jeganr/Desktop/I/format.PNG](Diagram-View_images/Diagram-View_img63.png)
+   ![C:/Users/jeganr/Desktop/I/format.PNG](Diagram-View_images/Diagram-View_img63.png)
 
 
 
-_Format tab_
+   _Format tab_
 
 5. After creating required symbols, we have to save this symbol into the symbol palette. Go to the File menu and click Save. A Save SymbolPaletteGroup dialog will appear as in the following screen shot.
 
-![](Diagram-View_images/Diagram-View_img64.png)
+   ![](Diagram-View_images/Diagram-View_img64.png)
 
 
 
-_Save SymbolPalette Group Dialog_
+   _Save SymbolPalette Group Dialog_
 
 6. Give a relevant file name for the palette and click Save. As the PaletteGroup is saved, preview of the symbol will be shown in Symbol Palette.
 
-![C:/Users/sundarm/Desktop/8yh.PNG](Diagram-View_images/Diagram-View_img65.png)
+   ![C:/Users/sundarm/Desktop/8yh.PNG](Diagram-View_images/Diagram-View_img65.png)
 
 
 
-_Symbol Palette With New Symbol_
+   _Symbol Palette With New Symbol_
 
 7. Repeat the steps 3 to 7 for creating more symbols.
 
-![C:/Users/jeganr/Desktop/I/mutlipletag3.PNG](Diagram-View_images/Diagram-View_img66.png)
+   ![C:/Users/jeganr/Desktop/I/mutlipletag3.PNG](Diagram-View_images/Diagram-View_img66.png)
 
 
 
-_Symbol pallet with PART_Triangle_
+   _Symbol pallet with PART_Triangle_
 
-![C:/Users/jeganr/Desktop/I/mutlipletag.PNG](Diagram-View_images/Diagram-View_img67.png)
-
-
+   ![C:/Users/jeganr/Desktop/I/mutlipletag.PNG](Diagram-View_images/Diagram-View_img67.png)
 
 
 
-![C:/Users/jeganr/Desktop/I/mutlipletag2.PNG](Diagram-View_images/Diagram-View_img68.png)
+
+
+   ![C:/Users/jeganr/Desktop/I/mutlipletag2.PNG](Diagram-View_images/Diagram-View_img68.png)
 
 
 
-_Different Symbols_
+   _Different Symbols_
 
 8. If you create symbols using more than one shape, you need to group all the shapes into a single symbol using the Group option in Symbol Designer.
 9. Finally, Save the NewSymbol Group. Now the above symbols will be available in the SymbolPaletteGroup. The saved SymbolPaletteGroup can be loaded back later.
-
+   {:.prettyprint}
+   
 ### SymbolPalette Item
 
 SymbolPaletteitems are contained in the SymbolPalette group. A SymbolPalette item does not restrict users to the type of content that can be added to it. A SymbolPalette item can be a text box, combo box, image, button, and so on.
@@ -737,7 +739,7 @@ The Name property of the SymbolPaletteItem can be used to refer to the custom it
 
 The following code example can be used to add a SymbolPalette item that has an image as its content. 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -774,7 +776,7 @@ group.Items.Add(item);
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 
@@ -847,7 +849,7 @@ Or you can also place the assembly manually in the following location:
 
 _{$Microsoft Expression]\Blend 4\Extensions_
 
-_Note: currently exporter support is available only for the Blend 4  stable release(4.0.20525.0) and Blend 4 service packs 1 (version 4.0.20901.0)._
+> Note: currently exporter support is available only for the Blend 4  stable release(4.0.20525.0) and Blend 4 service packs 1 (version 4.0.20901.0).
 
 To Create SymbolPaletteItem Content  
 
@@ -857,66 +859,67 @@ To Create SymbolPaletteItem Content
 4. The selected SymbolPalette content will be exported as a XAML file using the add-on.
 5. The exported XAML file can be imported in the DiagramControl as SymbolPaletteItem.
 
-The following are the steps to create a SymbolPaletteItem and import symbols from Blend:
+   The following are the steps to create a SymbolPaletteItem and import symbols from Blend:
 
 6. Create a WPF application.
 
 
 
-![](Diagram-View_images/Diagram-View_img70.png)
+   ![](Diagram-View_images/Diagram-View_img70.png)
 
 
 
-_New Project_
+   _New Project_
 
 7. Design the content as required.
 
-![Description: C:/Users/sundarm/Desktop/IMG_10102011_045130.png](Diagram-View_images/Diagram-View_img71.png)
+   ![Description: C:/Users/sundarm/Desktop/IMG_10102011_045130.png](Diagram-View_images/Diagram-View_img71.png)
 
 
 
-_Design Content_
+   _Design Content_
 
 8. Select the part of the element, which you want to export as symbol content. You can also select this from the Object and Timeline. 
 
-_Note: The selected part will act as the parent element, name the element as desired._
+   > Note: The selected part will act as the parent element, name the element as desired.
 
 9. Specify the Name property for parent element.
-<table>
-<tr>
-<td>
-<br>_Note: This name property is required for serialization. So this property cannot be set to null._</td></tr>
-<tr>
-<td>
+   <table>
+   <tr>
+   <td>
+   <br> Note: This name property is required for serialization. So this property cannot be set to null.</td></tr>
+   <tr>
+   <td>
 10. Click Window option in the blend menu.11. Select the Syncfusion Symbol Exporter add-on. 12. A popup window will be displayed. You can dock this within the blend as shown in following screenshot:</td></tr>
-</table>
+    </table>
 
-![Description: C:/Users/jeganr/Desktop/I/newname.PNG](Diagram-View_images/Diagram-View_img72.png)
-
-
-
-_Syncfusion Symbol Exporter_
-
-![Description: C:/Users/sundarm/Desktop/obj.PNG](Diagram-View_images/Diagram-View_img73.png)
+    ![Description: C:/Users/jeganr/Desktop/I/newname.PNG](Diagram-View_images/Diagram-View_img72.png)
 
 
 
-_Object and Timeline Window_
+    _Syncfusion Symbol Exporter_
+ 
+    ![Description: C:/Users/sundarm/Desktop/obj.PNG](Diagram-View_images/Diagram-View_img73.png)
+
+
+
+    _Object and Timeline Window_
 
 13. Click Export.
 14. The Save SymbolPaletteItem dialog opens.
 15. Name the file and save this as XAML file in the desired location.
 
-![](Diagram-View_images/Diagram-View_img74.png)
+    ![](Diagram-View_images/Diagram-View_img74.png)
 
 
 
-_Save Dialog Box_
+    _Save Dialog Box_
 
 16. The selected part will be exported as the SymbolPalleteItem content.
 
-The exported file can be imported in SymbolPalette. To import symbols from XAML file, refer to the SymbolPaletteSerialization. 
-
+    The exported file can be imported in SymbolPalette. To import symbols from XAML file, refer to the SymbolPaletteSerialization. 
+    {:.prettyprint}
+	
 ####  Define Node, Port, Group definitions in SymbolPalette
 
 The following steps demonstrate how to specify a Node or Node with Ports in SymbolPaletteItem:
@@ -993,7 +996,7 @@ private void AddMorePorts(Node node)
 
 Creating Groups and SymbolPaletteItems
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1031,7 +1034,7 @@ _To Drag and Drop Groups_
 
 To create new Node and Groups
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1107,7 +1110,7 @@ public Window1 ()
 
 To create new SymbolPalette Group and Item
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1329,7 +1332,7 @@ No</td></tr>
 
 The following code example illustrates how to set some of the SymbolPalette properties.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -1358,7 +1361,7 @@ diagramControl.SymbolPalette.ItemBorderThickness = new Thickness(2);
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -1434,11 +1437,11 @@ Description</th><th>
 Parameters</th><th>
 Return Type</th></tr>
 <tr>
-<th>
-CloneContent</th><th>
-This method assigns the customized and serialized content to the symbol palette item, while performing drag and drop.</th><th>
-No parameters </th><th>
-object </th></tr>
+<td>
+CloneContent</td><td>
+This method assigns the customized and serialized content to the symbol palette item, while performing drag and drop.</td><td>
+No parameters </td><td>
+object </td></tr>
 </table>
 
 ### Adding this Feature to an Application
@@ -1447,7 +1450,7 @@ Creating Custom SymbolPaletteItem
 
 The content for the custom SymbolPaletteItem is assigned by overriding the CloneContent method.
 {% highlight c# %}
-[C#]
+
 
                  public class customItem : SymbolPaletteItem
 
@@ -1472,7 +1475,7 @@ The content for the custom SymbolPaletteItem is assigned by overriding the Clone
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 Public Class customItem
 
@@ -1508,7 +1511,7 @@ Adding CustomItem to SymbolPalette
 
 To add CustomItem to SymbolPalette, use the code example given below:
 {% highlight c# %}
-[C#]
+
 
 customItem custom = new customItem();
 
@@ -1519,7 +1522,7 @@ custom.Content = "asd";
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 Dim custom As New customItem()
 
@@ -1600,6 +1603,7 @@ SymbolPaletteGroup </td><td>
 Void</td><td>
 NA </td></tr>
 </table>
+
 ## Bind to ItemSource
 
 The symbol palette supports binding with business objects. A symbol group will be created and added to the symbol palette depending upon the business objects and template provided. The symbol group itself supports binding with business objects. Symbol palette items will be created and added to it depending upon the business objects and template.
@@ -1637,7 +1641,7 @@ ItemSource property gets the source for the list of Symbol groups to be added to
 
 The following code samples illustrate this.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -1674,7 +1678,7 @@ The following code samples illustrate this.
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1772,4 +1776,4 @@ public string Content { get; set; }
 
 _Symbol palette ItemSource_
 
-_Note: Symbol groups are not allowed to be added manually when ItemSource is used._
+> Note: Symbol groups are not allowed to be added manually when ItemSource is used.

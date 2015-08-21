@@ -121,7 +121,7 @@ The following code illustrates these settings.
 
 {% highlight html %}
 
-[XAML]
+
 
 
 
@@ -162,10 +162,10 @@ The following code illustrates these settings.
 
 
 {% highlight c# %}
-[C#]DiagramModel diagramModel = new DiagramModel();diagramModel.VerticalSpacing = 50;diagramModel.HorizontalSpacing = 50;diagramModel.SpaceBetweenSubTrees = 100;
+DiagramModel diagramModel = new DiagramModel();diagramModel.VerticalSpacing = 50;diagramModel.HorizontalSpacing = 50;diagramModel.SpaceBetweenSubTrees = 100;
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]Dim diagramModel As New DiagramModel()diagramModel.VerticalSpacing = 50diagramModel.HorizontalSpacing = 50diagramModel.SpaceBetweenSubTrees = 100
+Dim diagramModel As New DiagramModel()diagramModel.VerticalSpacing = 50diagramModel.HorizontalSpacing = 50diagramModel.SpaceBetweenSubTrees = 100
 {% endhighlight  %}
 
 
@@ -238,7 +238,7 @@ The tree orientation can be set using the following code.
 
 
 {% highlight html %}
-[XAML]
+
 
     <!--Diagram Control-->
 
@@ -275,7 +275,7 @@ The tree orientation can be set using the following code.
 {% highlight c# %}
 
 
-[C#]
+
 
 
 
@@ -286,7 +286,7 @@ diagramModel.Orientation = TreeOrientation.BottomTop;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -300,7 +300,7 @@ The following code may be specified in a Combobox SelectionChanged event.
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -319,7 +319,7 @@ tree.StartNodeArrangement();
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -404,7 +404,7 @@ The following lines of code can be used to clear nodes and connections.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -417,7 +417,7 @@ diagramModel.Connections.Clear();
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -467,7 +467,7 @@ No</td></tr>
 </table>
 
 
-HierarchicalDataTemplate and ItemsSource Properties
+### HierarchicalDataTemplate and ItemsSource Properties
 
 The ItemsSource property gets the source for the list of nodes to be added to the tree. The ItemTemplate property uses the items specified through the ItemsSource property specified in the data type.
 
@@ -475,7 +475,7 @@ The following code illustrates this.
 
 {% highlight html %}
 
-[XAML]
+
 
 
 
@@ -526,7 +526,7 @@ xmlns:sfdiagram="clr-namespace:Syncfusion.Windows.Diagram;assembly=Syncfusion.Di
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -541,7 +541,7 @@ this[0].RegionalSales.Add(new RegionSale() { Name = "San Fransico", Revenue = 84
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -597,7 +597,7 @@ The following code example illustrates how to set the EnableCycleDetection prope
 
 
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -637,7 +637,7 @@ Orientation="TopBottom" >
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -654,7 +654,7 @@ diagramControl.Model = diagramModel;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -722,7 +722,7 @@ The TableExpandMode can be set in the following way,
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -737,7 +737,7 @@ diagramModel.TableExpandMode=TableExpandMode.Horizontal;
 {% highlight c# %}
 
 
-[VB]
+
 
 
 
@@ -752,7 +752,7 @@ diagramModel.TableExpandMode=TableExpandMode.Horizontal
 {% endhighlight  %}
 {% highlight html %}
 
-[XAML]
+
 
 
 
@@ -845,7 +845,7 @@ The RowCount and ColumnCount can be set in the following way:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -862,7 +862,7 @@ diagramModel.ColumnCount=5;
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -879,7 +879,7 @@ diagramModel.ColumnCount=5
 {% endhighlight  %}
 {% highlight html %}
 
-[XAML]
+
 
 
 
@@ -971,7 +971,7 @@ The EnableLayoutWithVariedSizes can be set in the following way:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -986,7 +986,7 @@ diagramModel.EnableLayoutWithVariedSizes = true;
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -1000,7 +1000,7 @@ diagramModel.EnableLayoutWithVariedSizes = True
 
 {% endhighlight  %}
 {% highlight html %}
-[XAML]
+
 
 
 

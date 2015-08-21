@@ -23,7 +23,6 @@ The following code example illustrates how to add the CloseMode feature to an ap
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -73,7 +72,6 @@ The following code example illustrates how to add the CloseButton feature to an 
 
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -123,16 +121,16 @@ The following code example illustrates how to add the CloseButton feature to an 
 
 ## Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }} </td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Data Type**' | markdownify }} </td><td>
-{{ '**Reference links**' | markdownify }} </td></tr>
+<th>
+{{ '**Property**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Data Type**' | markdownify }} </th><th>
+{{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
 <td>
 CloseMode</td><td>

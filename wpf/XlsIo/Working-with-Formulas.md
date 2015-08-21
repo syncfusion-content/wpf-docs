@@ -15,15 +15,15 @@ Formulas are entries in Excel that have equations where values are calculated fo
 
 Excel supports various built-in functions that make large calculations in large sheets easier. The following sections illustrate the usage in XlsIO.
 
-{{ '![](Working-with-Formulas_images/Working-with-Formulas_img1.png)' | markdownify }}
-{:.image }
+![](Working-with-Formulas_images/Working-with-Formulas_img1.png)
+
 
 
 ### Writing a Formula
 
 In a spreadsheet, formulas can be entered by using the Formula property. The following code example illustrates the built-in function of Excel by using XlsIOAPIs.
 
-[C#] 
+{% highlight C# %} 
 
 
 
@@ -73,9 +73,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.Net] 
+{% highlight vbnet %} 
 
 
 
@@ -125,20 +125,20 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
+
+![](Working-with-Formulas_images/Working-with-Formulas_img2.png)
 
 
-{{ '![](Working-with-Formulas_images/Working-with-Formulas_img2.png)' | markdownify }}
-{:.image }
 
-
-Writing a Formula across Worksheets
+##Writing a Formula across Worksheets
 
 * Sheet1 and Sheet2 are the default names of the worksheets.
 * In addition to being able to access values in the same worksheet, you can also access values across worksheets. Assume that B is present on the second worksheet, then use the following code for calculation. 
 
 
 
-[C#] 
+{% highlight C# %} 
 
 
 
@@ -185,10 +185,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -237,12 +237,13 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 ### Reading a Formula
 
 XlsIO allows you to read formulas from a cell. The following code example illustrates how to read the formula from a cell.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -291,10 +292,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -345,12 +346,13 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 ### Applying Augment Separators Based on Cultures
 
 Formula separators vary for each culture/regional settings and throws exception if valid separators are not used for specific culture. This can be overcome by setting the separators by using the SetSeparators method of IWorkbook. The following code example illustrates how to change the formula separators through XlsIO.
 
-[C#] 
+{% highlight C# %} 
 
 
 
@@ -397,10 +399,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -449,12 +451,13 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 ### Accessing Calculated value
 
 XlsIO allows you to read formula from a cell and its calculated value. To perfom a calculation, the method EnableSheetCalculations in the worksheet object must be invoked. The following code example illustrates how a formula can be accessed and a calculated value accessed.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -510,9 +513,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -568,11 +571,11 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 You can also get the Formula values as bool, date, and number type. Note that XlsIO can only read already computed formulas and cannot compute. CalculatedValue property must be called in prior to use these properties.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -645,10 +648,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -722,7 +725,7 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 Following properties of the IRange interface are used to fetch formulas, computed values, and to check if there exists a formula in the cell.
 
@@ -730,9 +733,9 @@ _Properties of the IRange interface_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td></tr>
+<th>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 Formula</td><td>
@@ -834,7 +837,7 @@ Refer to the Calculate Options for more information on dynamic formula computati
 
 Array Formula is a special type of formula in Excel. It works with an array or series of data values rather than a single data value. XlsIO supports the usage of Array formula through the FormulaArray property. The following code example explains how an array of values from Named Range is used for computation. For more details on Named Ranges, refer to the Defined Names.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -888,9 +891,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -945,12 +948,13 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 ### External Formula
 
 Essential XlsIO allows you to insert/preserve formulas that refer to values in other worksheets/workbooks. Note that XlsIO can only write/preserve formulas. You cannot update/refresh the calculated values in Excel that should be refreshed by MS Excel. The following code example illustrates the insertion of a formula that refers to a value in another workbook.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -999,10 +1003,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -1054,9 +1058,9 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-> _Note: Enable automatic updation of links in Excel to view the result for the preceding code._
+> Note: Enable automatic updation of links in Excel to view the result for the preceding code.
 
 ## Supported Functions
 
@@ -1066,9 +1070,9 @@ _Functions that XlsIO performs calculations with_
 
 <table>
 <tr>
-<td>
-Functions</td><td>
-Description</td></tr>
+<th>
+Functions</th><th>
+Description</th></tr>
 <tr>
 <td>
 ABS</td><td>
@@ -2204,21 +2208,21 @@ Named Ranges is a powerful feature in Excel that makes it possible to assign a n
 
 To create Named Ranges in MS Excel, open Formulas tab and click Define Name button under Defined Names section. Names are created at workbook-level, by default, but you can create a sheet-level name, by entering the sheet name followed by an exclamation mark (!), followed by the name of the range. For instance, to create a named range TEST on Sheet1, enter the name as 'Sheet1!TEST'.
 
-{{ '![](Working-with-Formulas_images/Working-with-Formulas_img3.png)' | markdownify }}
-{:.image }
+![](Working-with-Formulas_images/Working-with-Formulas_img3.png)
 
 
-{{ '![](Working-with-Formulas_images/Working-with-Formulas_img4.png)' | markdownify }}
-{:.image }
+
+![](Working-with-Formulas_images/Working-with-Formulas_img4.png)
+
 
 
 You can create named ranges in spreadsheets through XlsIO with the IName interface. Range for the name is specified through RefersToRange property from where you can access the Range text and other information. This can be specified for workbooks and worksheets. 
 
-Accessing a Named Range
+###Accessing a Named Range
 
 The following code example illustrates how to create workbook-level named ranges and use it in formulas.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2284,9 +2288,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2351,18 +2355,18 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
+
+
+![](Working-with-Formulas_images/Working-with-Formulas_img5.png)
 
 
 
-{{ '![](Working-with-Formulas_images/Working-with-Formulas_img5.png)' | markdownify }}
-{:.image }
-
-
-Accessing Sheet-Level Named Ranges
+###Accessing Sheet-Level Named Ranges
 
 The following code example illustrates how to get/set sheet-level named ranges.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2420,9 +2424,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2484,11 +2488,11 @@ workbook.Close()
 
 excelEngine.Dispose();
 
-
+{% endhighlight %}
 
 You can get/read all the names from a worksheet or workbook just by enumerating the INames collection as follows.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2564,9 +2568,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2644,7 +2648,7 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 You can also delete a name in the workbook/worksheet by using the Delete method of IName. Note that deleting the cell does not delete the name from the Name collection.
 
@@ -2694,11 +2698,11 @@ Returns the scope of the name range.</td></tr>
 </table>
 
 
-Scope of Named Range
+##Scope of Named Range
 
 The scope of the named range can be accessed as follows. 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2750,9 +2754,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2805,13 +2809,14 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 ## Formula Auditing
 
 Excel has an option to find the quickest way to identify any cell that contains an error on the active worksheet and ignore the error that shows with green indicator through the Error Checking dialog box. This dialog box provides various options to get information on the error, how a formula is evaluated, its trace, and an option to ignore the error by changing its data type.
 
-{{ '![](Working-with-Formulas_images/Working-with-Formulas_img6.png)' | markdownify }}
-{:.image }
+![](Working-with-Formulas_images/Working-with-Formulas_img6.png)
+
 
 
 Excel has the following set of rules that can be enabled or disabled to show/hide warnings with green indicators.
@@ -2824,8 +2829,8 @@ Excel has the following set of rules that can be enabled or disabled to show/hid
 * Unlocked Cells containing Formulas-This rule treats an unlocked cell containing a formula as an error and displays a warning when checking for errors.
 * Formulas referring to Empty Cells-This rule treats formulas that refer to empty cells as an error and displays a warning.
 
-{{ '![](Working-with-Formulas_images/Working-with-Formulas_img7.png)' | markdownify }}
-{:.image }
+![](Working-with-Formulas_images/Working-with-Formulas_img7.png)
+
 
 
 XlsIO provides all the above options to ignore errors and remove the green indicators. This can be done through the IgnoreErrorOptions property of the IRange interface.
@@ -2836,9 +2841,9 @@ _Values that can be set for the IgnoreError option_
 
 <table>
 <tr>
-<td>
-Members</td><td>
-Description</td></tr>
+<th>
+Members</th><th>
+Description</th></tr>
 <tr>
 <td>
 None</td><td>
@@ -2880,7 +2885,7 @@ Ignores all the errors due to above flags. </td></tr>
 
 The following code example illustrates how to ignore or set an error indicator.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -2936,9 +2941,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -2995,6 +3000,7 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 ## Calculate Options 
 
@@ -3008,25 +3014,25 @@ Excel has a range of options that allows you to control the way it calculates. T
 
 
 
-{{ '![](Working-with-Formulas_images/Working-with-Formulas_img8.png)' | markdownify }}
-{:.image }
+![](Working-with-Formulas_images/Working-with-Formulas_img8.png)
 
 
-Automatic Calculation
+
+##Automatic Calculation
 
 In the Automatic Calculation mode, Excel automatically recalculates all open workbooks at each and every change and also whenever you open a workbook. Usually when you open a workbook in Automatic mode and recalculate, you cannot be able to see the recalculation because the changes are not reflected until the workbook is saved. An exception is raised when you open a workbook in Excel 2000 that is saved by using Excel 97 or open a workbook by using Excel 2002/2003 saved by using Excel 2000. This is because Excel's calculation engines are different and also because a Full calculation is done.
 
-Automatic Except Tables
+###Automatic Except Tables
 
 Excel's Data Tables feature is designed to perform multiple calculations of the workbook, each driven by different values in the table. So using Automatic except Tables stop Excel from automatically triggering multiple calculations at each calculation, but still calculates all dependent formulae except tables.
 
-Manual Calculation
+###Manual Calculation
 
 In the Manual Calculation mode, Excel only recalculates all open workbooks when you request it by pressing F9 or CTRL-ALT-F9, or when you Save a workbook. For workbooks taking more than a fraction of a second to recalculate, it is usually better to set the Calculation to Manual. Excel tells you when the workbook needs recalculation by showing Calculate in the status bar.   
 
 XlsIO provides support for all the above modes of calculation. The following code example illustrates how to set the calculation mode.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -3074,9 +3080,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3126,19 +3132,19 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 There are other options that Excel provides to customize the calculation further.
 
-Recalculate Before Save
+###Recalculate Before Save
 
 In Manual mode, this option controls whether Excel recalculates the workbook as part of the Save process. The default value is set to True. You can control this through XlsIO by using the RecalcOnSave property of ICalculationOptions interface.
 
-Iteration
+###Iteration
 
 When you have intentional circular references in your workbook, these settings allow you to control the maximum number of times the workbook is recalculated (iterations), and the convergence criteria (maximum change: when to stop). The default value should be set to False so that Excel does not try to solve accidental circular references. XlsIO allows control of these iterations as follows.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -3189,10 +3195,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3245,6 +3251,7 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
 #### Calculation Engine
 
@@ -3262,7 +3269,7 @@ Enable Formula Calculations
 
 Essential XlsIO includes support for enabling the calculations of Essential Calculate supported formulas that are added at runtime to the worksheet and the computed value is set to the CalculatedValue property associated to the IRange object. The following code example illustrates how to enable the sheet formula calculations.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -3311,9 +3318,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3368,13 +3375,13 @@ workbook.Close()
 
 excelEngine.Dispose()
 
+{% endhighlight %}
 
-
-Disable Formula Calculations
+##Disable Formula Calculations
 
 Essential XlsIO is able to disable the calculations of Essential Calculate supported formulae that are added at runtime to the worksheet. The following code example illustrates how to disable the sheet formula calculations.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -3421,9 +3428,9 @@ workbook.Close();
 
 excelEngine.Dispose();         
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3474,11 +3481,11 @@ workbook.Close()
 
 excelEngine.Dispose()
 
-
+{% endhighlight %}
 
 Here are some code examples to evaluate some formulas entered by using Essential XlsIO during runtime. The XlsIO computed value is identical to the values computed by using MS Excel.
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -3544,10 +3551,10 @@ workbook.SaveAs(fileName);
 workbook.Close();
 
 excelEngine.Dispose();         
+{% endhighlight %}
 
 
-
-[VB.NET]
+{% highlight vbnet %}
 
 
 
@@ -3616,14 +3623,13 @@ workbook.SaveAs(fileName)
 workbook.Close()
 
 excelEngine.Dispose()
+{% endhighlight %}
 
+> Note:
 
-
-> _Note:_
-
-1. _In order to use the Essential XlsIO's Calculate engine, you have to add the following namespace: using Syncfusion.Calculate_
-2. _Do not add reference to Syncfusion.Calculate.Base. It throws conflict errors as these are already integrated with XlsIO from Version 7.2.X.X._
-3. _Only the formulae that are supported by Calculate engine can be calculated at runtime by using Essential XlsIO._
+1. In order to use the Essential XlsIO's Calculate engine, you have to add the following namespace: using Syncfusion.Calculate
+2. Do not add reference to Syncfusion.Calculate.Base. It throws conflict errors as these are already integrated with XlsIO from Version 7.2.X.X.
+3. Only the formulae that are supported by Calculate engine can be calculated at runtime by using Essential XlsIO
 
 
 

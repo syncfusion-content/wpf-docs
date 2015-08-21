@@ -19,7 +19,6 @@ The NullValue can be set for the UpDown control as shown in the following code e
 
 
 {%highlight xml%}
- [XAML]
 
 <syncfusion:UpDown Name="upDown" UseNullOption="true" NullValue="1"/>
 
@@ -28,7 +27,6 @@ The NullValue can be set for the UpDown control as shown in the following code e
 
 
 {%highlight c#%}
-[C#]
 
 UpDown upDown = new UpDown();
 
@@ -40,16 +38,16 @@ upDown.NullValue = 2;
 
 Tables for Properties and Events
 
-_NullValue properties_
+> NullValue properties
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 UseNullOption</td><td>
@@ -65,7 +63,8 @@ DependencyProperty</td><td>
 double?</td><td>
 Not applicable</td></tr>
 </table>
- _NullValue Event Table_	
+
+> NullValue Event Table	
 
 <table>
 <tr>
@@ -76,12 +75,12 @@ Not applicable</td></tr>
 {{ '**Type**' | markdownify }}</th><th>
 {{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
-<th>
-UseNullOptionChanged</th><th>
-Occurs when the UseNullOption value is changed.</th><th>
-DependencyObject andDependencyPropertyChangedEventArgs.</th><th>
-PropertyChangedCallback</th><th>
-Not applicable.</th></tr>
+<td>
+UseNullOptionChanged</td><td>
+Occurs when the UseNullOption value is changed.</td><td>
+DependencyObject andDependencyPropertyChangedEventArgs.</td><td>
+PropertyChangedCallback</td><td>
+Not applicable.</td></tr>
 </table>
 
 

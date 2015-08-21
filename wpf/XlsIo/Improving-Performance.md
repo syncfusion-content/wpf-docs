@@ -19,7 +19,7 @@ Tips to improve the Performance
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -45,7 +45,7 @@ for(int i = 0;i<sheet.UsedRange.LastRow;i++)
 
 }
 
-
+{% endhighlight %}
 
 * Use IMigrantRange to optimize performance while dealing with large data.
 * Use global styles, rather than using different cell styles for each cell/range.
@@ -56,23 +56,24 @@ for(int i = 0;i<sheet.UsedRange.LastRow;i++)
 
 
 
-[C#]
+{% highlight C# %}
 
 application.DataProviderType = ExcelDataProviderType.Unsafe;
 
 
-
+{% endhighlight %}
 * Make use of GetText, SetText, GetNumber, and SetNumber methods from worksheet object that enable you to get/set values without range object.
 * Set IWorkbook.DetectDateTimeInValue property to false with Value2 property, if you are sure that the given value is not of DateTime data type that improves time performance.
 * Use of BeginUpdate and EndUpdate methods for large blocks of Data Validation greatly improve the performance.
 * Use DataProvider.Unsafe option to increase performance while deleting large number of rows or columns. 
 * Use CompressionLevel to reduce the size of the file. 
+
 ## Filling large data by using IMigrantRange
 
 
 The IMigrantRange interface can be used to access and manipulate worksheet range. This is an optimal method of writing values with better memory performance. The following code example illustrates how the IMigrantRange is accessed. 
 
-[C#]
+{% highlight C# %}
 
 IMigrantRange migrantRange = workbook.Worksheets[0].MigrantRange; 
 
@@ -110,9 +111,9 @@ migrantRange.SetValue(true);
    }
 }
 
+{% endhighlight %}
 
-
-[VB.NET]
+{% highlight vbnet  %}
 
 'Writes Data.
 Dim row As Integer 
@@ -141,5 +142,5 @@ migrantRange.SetValue(5.5)
         Next
 Next
 
-
+{% endhighlight %}
 

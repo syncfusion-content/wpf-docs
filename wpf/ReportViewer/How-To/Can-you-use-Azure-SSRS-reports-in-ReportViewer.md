@@ -7,9 +7,10 @@ control: Report Viewer
 documentation: ug
 ---
 
-### Can you use Azure SSRS reports in ReportViewer?
+# Can you use Azure SSRS reports in ReportViewer?
 
 Yes, Syncfusion Report Viewer supports viewing and exporting Azure hosted reports.  By default, Azure Reporting Service works with a Forms credential. So, provide your Forms credential in the ReportServerFormsCredential to view the report.
+{% highlight C# %}
 
 this.reportViewer1.ReportLoaded += (sen, arg) =>
 
@@ -49,7 +50,7 @@ this.reportViewer1.ReportLoaded += (sen, arg) =>
 
           this.reportViewer1.RefreshReport();
 
-
+{% endhighlight %}
 
 
 

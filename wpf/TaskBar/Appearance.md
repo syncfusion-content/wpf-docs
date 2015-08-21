@@ -17,13 +17,13 @@ The appearance of the TaskBar control is customized by using the VisualStyle pro
 
 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
@@ -40,7 +40,6 @@ To set the visual style for the TaskBar, use the below code.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -77,7 +76,6 @@ This TaskBar that have a TaskBarItem.
 
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -92,34 +90,34 @@ SkinStorage.SetVisualStyle(taskBar, "Office2007Blue");
 ![C:/Users/ramalakshmim/Desktop/ugss/taskbar7blue.png](Appearance_images/Appearance_img1.png)
 
 
-_TaskBar with "Office2007Blue" Visual Style_
+TaskBar with "Office2007Blue" Visual Style
 
 
 
 ![C:/Users/ramalakshmim/Desktop/ugss/task7black.png](Appearance_images/Appearance_img2.png)
 
 
-_TaskBar with "Office2007Black" Visual Style_
+TaskBar with "Office2007Black" Visual Style
 
 
 
 ![C:/Users/ramalakshmim/Desktop/ugss/task7silver.png](Appearance_images/Appearance_img3.png)
 
-_TaskBar with "Office2007Silver" Visual Style_
+TaskBar with "Office2007Silver" Visual Style
 
 
 
 ![C:/Users/ramalakshmim/Desktop/ugss/task10blue.png](Appearance_images/Appearance_img4.png)
 
 
-_TaskBar with "Office2010Blue" Visual Style_
+TaskBar with "Office2010Blue" Visual Style
 
 
 
 ![C:/Users/ramalakshmim/Desktop/ugss/task10black.png](Appearance_images/Appearance_img5.png)
 
 
-_TaskBar with "Office2010Black" Visual Style_
+TaskBar with "Office2010Black" Visual Style
 
 
 
@@ -127,7 +125,7 @@ _TaskBar with "Office2010Black" Visual Style_
 
 
 
-_TaskBar with "Office2010Silver" Visual Style_
+TaskBar with "Office2010Silver" Visual Style
 
 
 
@@ -135,14 +133,14 @@ _TaskBar with "Office2010Silver" Visual Style_
 
 
 
-_TaskBar with "Blend" Visual Style_
+TaskBar with "Blend" Visual Style
 
 
 
 ![C:/Users/ramalakshmim/Desktop/ugss/taskvs2010.png](Appearance_images/Appearance_img8.png)
 
 
-_TaskBar with "VS2010" Visual Style_
+TaskBar with "VS2010" Visual Style
 
 
 
@@ -150,7 +148,7 @@ _TaskBar with "VS2010" Visual Style_
 
 
 
-_TaskBar with "Metro" Visual Style_
+TaskBar with "Metro" Visual Style
 
 
 
@@ -158,7 +156,7 @@ _TaskBar with "Metro" Visual Style_
 
 
 
-_TaskBar with "Transparent" Visual Style_
+TaskBar with "Transparent" Visual Style
 
 
 

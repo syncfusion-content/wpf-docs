@@ -13,7 +13,6 @@ LeafItemSettings of SfTreeMap is a setting by which we can settings the template
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -53,7 +52,6 @@ LabelPath of the leaves is WeightValuePath by default and you can change the Lab
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -85,7 +83,6 @@ LabelTemplate of LeafitemSettings class provides the template for the labels of 
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -133,7 +130,6 @@ Gap provides the gap between the leaves at Leaf Level.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -169,7 +165,6 @@ BorderBrush provides the border color for the leafNodes and BorderThickness prov
 
 
 {% highlight xml %}
-[XAML]
 
 
 

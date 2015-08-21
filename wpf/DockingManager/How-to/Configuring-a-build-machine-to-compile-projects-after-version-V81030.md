@@ -7,7 +7,7 @@ control: DockingManager
 documentation: ug
 ---
 
-### Configuring a build machine to compile projects after version V8.1.0.30  
+## Configuring a build machine to compile projects after version V8.1.0.30  
 
 To compile projects that use Syncfusion controls in a build machine, Syncfusion helps to install the Link Install Setup. The setup installs Syncfusion assemblies into the target folder, and registers the product key to the registry. This allows you to compile a project, developed on a build machine. Please download the link install setup from the below location 
 
@@ -21,7 +21,7 @@ Installing on a build machine
 
 
 
-{{ '![Description: C:/Users/vinothm/Downloads/Link install screen shot/Link install screen shot/Link install.bmp](Configuring-a-build-machine-to-compile-projects-after-version-V81030_images/Configuring-a-build-machine-to-compile-projects-after-version-V81030_img1.png)' | markdownify }}
+   ![Description: C:/Users/vinothm/Downloads/Link install screen shot/Link install screen shot/Link install.bmp](Configuring-a-build-machine-to-compile-projects-after-version-V81030_images/Configuring-a-build-machine-to-compile-projects-after-version-V81030_img1.png)
 
 
 
@@ -31,8 +31,7 @@ Installing on a build machine
 
 
 
-{{ '![Description: C:/Users/vinothm/Downloads/Install without key.bmp](Configuring-a-build-machine-to-compile-projects-after-version-V81030_images/Configuring-a-build-machine-to-compile-projects-after-version-V81030_img2.png)' | markdownify }}
-
+   ![Description: C:/Users/vinothm/Downloads/Install without key.bmp](Configuring-a-build-machine-to-compile-projects-after-version-V81030_images/Configuring-a-build-machine-to-compile-projects-after-version-V81030_img2.png)
 
 
 7. Select the installation folder
@@ -44,13 +43,13 @@ Installing on a build machine
 
 
 
-{{ '![Description: C:/Users/vinothm/Downloads/Link install screen shot/Link install screen shot/Link install 4.bmp](Configuring-a-build-machine-to-compile-projects-after-version-V81030_images/Configuring-a-build-machine-to-compile-projects-after-version-V81030_img3.png)' | markdownify }}
+   ![Description: C:/Users/vinothm/Downloads/Link install screen shot/Link install screen shot/Link install 4.bmp](Configuring-a-build-machine-to-compile-projects-after-version-V81030_images/Configuring-a-build-machine-to-compile-projects-after-version-V81030_img3.png)
 
 
 
 
 
 11. In the next window, click Finish to complete the setup.
-
+    {:.prettyprint}
 
 

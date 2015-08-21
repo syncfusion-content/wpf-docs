@@ -16,7 +16,7 @@ Ranges of the linear scale are a collection of the linear range. A linear range 
 The stroke of the range is personalized by changing the RangeStroke of the linear range. The appearance of linear range is customized by setting the StartWidth and EndWidth properties. With the help of the RangeOffset property, the linear range can be positioned with respect to the linear scale. By setting the RangeOpacity of the LinearRange, the opacity of the range can be modified.
 
 {% highlight xml %}
- [XAML]
+ 
 
 
 
@@ -54,7 +54,7 @@ The stroke of the range is personalized by changing the RangeStroke of the linea
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
+
 
             SfLinearGauge lineargauge = new SfLinearGauge();
 
@@ -84,7 +84,7 @@ The stroke of the range is personalized by changing the RangeStroke of the linea
 By setting the BindWithRangeStrokeToLabels, the stroke of the labels can be set related to the stroke of the specified ranges. Similarly, by setting the BindWithRangeStrokeToTicks, the stroke of the ticks can be set related to the stroke of the specified ranges.
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -126,7 +126,7 @@ By setting the BindWithRangeStrokeToLabels, the stroke of the labels can be set 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -165,7 +165,7 @@ The range can be placed above or below the scale by choosing the options availab
 
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -203,7 +203,7 @@ The range can be placed above or below the scale by choosing the options availab
 
 
 {% highlight c# %}
-[C#]
+
 
             SfLinearGauge lineargauge = new SfLinearGauge();
 

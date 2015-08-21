@@ -9,7 +9,7 @@ documentation: ug
 
 # Tables for Properties, Methods, and Events
 
-## Properties
+##Properties
 
 Properties
 
@@ -90,7 +90,7 @@ ReportServerFormsCredential</td></tr>
 
 ## Methods
 
-Methods_
+Methods
 
 <table>
 <tr>

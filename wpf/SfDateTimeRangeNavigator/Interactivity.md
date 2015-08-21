@@ -71,7 +71,7 @@ This event is triggered when the position of the scrollbar changed</td></tr>
 </table>
 
 {% highlight html %}
-[XAML]
+
 
 <chart:SfChart x:Name="financialChart">            
 

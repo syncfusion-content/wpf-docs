@@ -17,13 +17,13 @@ CurrencyTextBox provides globalization support through the Culture property.
 
 {% highlight xml %}
 
-XAML
+
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Culture="en-US" Value="1234567"/>
 {% endhighlight %}
 
 {% highlight C# %}
 
-C#
+
 Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new Syncfusion.Windows.Shared.CurrencyTextBox();
 currencyTextBox.Width = 100;
 currencyTextBox.Height = 25;
@@ -40,13 +40,13 @@ currencyTextBox.Culture = new CultureInfo("en-US");
 
 {% highlight xml %}
 
-XAML
+
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"Culture="fr-FR" Value="1234567"/>
 {% endhighlight %}
 
 {% highlight C# %}
 
-C#
+
 Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new Syncfusion.Windows.Shared.CurrencyTextBox();
 currencyTextBox.Width = 100;
 currencyTextBox.Height = 25;
@@ -69,7 +69,7 @@ You can customize the Number Format either by using the NumberFormat property or
 
 {% highlight xml %}
 
-XAML
+
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150"  Value="1234567">   
  <syncfusion:CurrencyTextBox.NumberFormat>        
 <numberformat:NumberFormatInfo CurrencyGroupSeparator="/" CurrencyDecimalDigits="4" CurrencyDecimalSeparator="*"   CurrencySymbol="$"/>  
@@ -78,7 +78,7 @@ XAML
 
 {% highlight C# %}
 
-C#
+
 Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new  Syncfusion.Windows.Shared.CurrencyTextBox();
 currencyTextBox.Width = 100;
 currencyTextBox.Height = 25;
@@ -95,7 +95,7 @@ currencyTextBox.NumberFormat = new NumberFormatInfo() { CurrencyGroupSeparator =
 
 {% highlight xml %}
 
-XAML
+
 <syncfusion:CurrencyTextBox x:Name="currencyTextBox" Height="25" Width="150" Value="1234567"                           
  CurrencyGroupSeparator="/" CurrencyDecimalDigits="4"    CurrencyDecimalSeparator="*" CurrencySymbol="$">
  </syncfusion:CurrencyTextBox>
@@ -103,7 +103,7 @@ XAML
 
 {% highlight C# %}
 
-C#
+
 Syncfusion.Windows.Shared.CurrencyTextBox currencyTextBox = new   Syncfusion.Windows.Shared.CurrencyTextBox();
 currencyTextBox.Width = 100;
 currencyTextBox.Height = 25;
@@ -123,13 +123,13 @@ currencyTextBox.CurrencySymbol = "$";
 
 Gets or sets the format pattern for the positive currency values. In the table displayed below “$” denotes the Currency symbol and n denotes the number.
 
-#### _CurrencyPositivePattern table_
+ _CurrencyPositivePattern table_
 
 <table>
 <tr>
-<td>
-Value</td><td>
-Associated Pattern</td></tr>
+<th>
+Value</th><th>
+Associated Pattern</th></tr>
 <tr>
 <td>
 0</td><td>
@@ -150,7 +150,7 @@ n $</td></tr>
 
 {% highlight xml %}
 
-XAML
+
 
 
 
@@ -168,13 +168,13 @@ XAML
 
 Gets or sets the format pattern for the negative currency values. In the table displayed below “$” denotes the Currency symbol and n denotes the number.
 
-#### _CurrencyNegativePattern table_
+_CurrencyNegativePattern table_
 
 <table>
 <tr>
-<td>
-Value</td><td>
-Associated Pattern</td></tr>
+<th>
+Value</th><th>
+Associated Pattern</th></tr>
 <tr>
 <td>
 0</td><td>
@@ -243,7 +243,7 @@ n- $</td></tr>
 
 {% highlight xml %}
 
-XAML
+
 
 
 

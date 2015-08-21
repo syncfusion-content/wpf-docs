@@ -7,13 +7,13 @@ control: Report Writer
 documentation: ug
 ---
 
-### Save a Report as a Stream?
+# Save a Report as a Stream?
 
 You can save a report as a stream using Save(Stream,WriterFormat) (overloaded method). This method is useful when generating the report on the server side and sending it to a client-side application. The following code explains how to save a report as a stream.
 
 
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -35,9 +35,9 @@ MemoryStream stream = new MemoryStream();
 
 reportWriter.Save(stream, WriterFormat.PDF);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -59,7 +59,7 @@ Dim stream As New MemoryStream()
 
 reportWriter.Save(stream WriterFormat.PDF)
 
-
+{% endhighlight %}
 
 
 

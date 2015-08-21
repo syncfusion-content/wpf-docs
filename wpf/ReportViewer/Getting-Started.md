@@ -35,6 +35,7 @@ The section illustrates how to add the Report Viewer to the WPF application. It 
 
    ~~~xml
 
+   
    <Window x:Class="WpfApplication6.Window1"    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
    Title="Window1" Height="371" Width="559" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
@@ -54,6 +55,7 @@ The section illustrates how to add the Report Viewer to the WPF application. It 
 
    ~~~xml
 	
+	
    <Window x:Class="WpfApplication6.Window1"    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     
    Title="Window1" Height="371" Width="559" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
@@ -69,9 +71,9 @@ The section illustrates how to add the Report Viewer to the WPF application. It 
    ~~~
   {:.prettyprint}
 
-4.To render the provided report in Report Viewer, call the RefreshReport method in window or parent control loaded event.
+4. To render the provided report in Report Viewer, call the RefreshReport method in window or parent control loaded event.
    
-  ~~~js
+   ~~~ js
    
   this.Loaded += (sender, arg) =>
    
@@ -84,7 +86,7 @@ The section illustrates how to add the Report Viewer to the WPF application. It 
   };
    
   ~~~
-  {:.prettyprint}
+ {:.prettyprint}
    
 5.Run the application. The following output displays.
 

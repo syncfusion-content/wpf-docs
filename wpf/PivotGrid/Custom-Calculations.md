@@ -7,7 +7,7 @@ control: PivotGrid
 documentation: ug
 ---
 
-## Custom Calculations
+# Custom Calculations
 
 Custom Calculations can be applied to the value fields through the following built-in calculation functions:
 
@@ -25,7 +25,7 @@ Custom Calculations can be applied to the value fields through the following bui
 
 *Index
 
-### Use Case Scenarios
+## Use Case Scenarios
 
 The user can easily analyze the specific value field based on the different value cells through the custom calculations. For example, the user can view the sales amount for United States in FY 2011 as a percentage of the whole sales at United States by selecting the Percentage of Parent Total option.
 
@@ -37,18 +37,18 @@ The sales amount in United States for all years: $120,000,000.00
 
 Hence, the sales amount for FY 2011 is 33.33 % of overall year sales (FY 2008 to FY 2011) at United States.
 
-#### Properties
+### Properties
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }} </td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Data Type**' | markdownify }} </td><td>
-{{ '**Reference links**' | markdownify }} </td></tr>
+<th>
+{{ '**Property**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Data Type**' | markdownify }} </th><th>
+{{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
 <td>
 CalculationType</td><td>
@@ -66,19 +66,18 @@ Class Reference link for BaseField in PivotAnalysis.Base.</td></tr>
 </table>
 
 
-#### Sample Location
+### Sample Location
 
 The sample is available in the following location:
 
 _<SystemDrive>:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\PivotAnalysis.Wpf\Samples\Product Showcase\PivotGrid Demo_
 
-### Implementing Custom Calculations 
+## Implementing Custom Calculations 
 
 To show the value cell as a percentage of its summary cells, use the following code snippet:
 
 {% highlight xml %} 
 
-[XAML]
 
 <syncfusion:PivotGridControl.PivotCalculations>
 
@@ -90,7 +89,6 @@ To show the value cell as a percentage of its summary cells, use the following c
 
 {% highlight C# %}  
 
-[C#]
 
 this.pivotGrid1.PivotCalculations.Add(new Syncfusion.PivotAnalysis.Base.PivotComputationInfo { FieldName = "Amount", Format = "C", CalculationName = "Total Amount", CalculationType = Syncfusion.PivotAnalysis.Base.CalculationType.PercentageOfParentTotal, BaseField = "Country" });
 
@@ -98,7 +96,6 @@ this.pivotGrid1.PivotCalculations.Add(new Syncfusion.PivotAnalysis.Base.PivotCom
 
 {% highlight vbnet %} 
 
-[VB]
 
 Me.pivotGrid1.PivotCalculations.Add(New Syncfusion.PivotAnalysis.Base.PivotComputationInfo() With {.FieldName = "Amount", .Format = "C", .CalculationName = "Total Amount", .CalculationType = Syncfusion.PivotAnalysis.Base.CalculationType.PercentageOfParentTotal, .BaseField = "Country"})
 

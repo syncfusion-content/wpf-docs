@@ -101,7 +101,7 @@ DisplayMemberPath="Name"  />
 
 ![](Concepts_images/Concepts_img2.png)
 
-_Displaying member path_
+Displaying member path
 
 ### Command Path
 

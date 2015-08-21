@@ -11,7 +11,7 @@ documentation: ug
 
 The DataGrid control supports Serialization and Deserialization. The entire Grid setting can be serialized and deserialized at execute time. This section explains on how to serialize and deserialize DataGrid and how to customize serialization and deserialization process by using SerializationController. By customizing SerializationController, you can serialize and deserialize derived DataGrid and also customize column. 
 
-### Overview
+## Overview
 
 The DataGrid control includes following methods for Serialization and Deserialization.
 
@@ -19,10 +19,10 @@ _Methods Table_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Overload</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Overload</th><th>
+Description</th></tr>
 <tr>
 <td>
 Serialize</td><td>
@@ -53,7 +53,7 @@ The following code example illustrates on how to use Serialization and Deseriali
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window.DataContext>
 
@@ -122,7 +122,7 @@ The following code example illustrates on how to use Serialization and Deseriali
 
 {% highlight C# %}
 
-[C#]
+
 
 Private void OnSerializeDataGrid(object sender, RoutedEventArgs args)
 
@@ -208,17 +208,17 @@ _DataGrid with Serialization and Deserialization_
 
 To customize the serialization and deserialization process, you can use SerializationOptions and DeserializationOptions respectively. Following are the list of properties provided by these classes.
 
-#### SerializationOptions
+### SerializationOptions
 
 _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 SerializeSorting</td><td>
@@ -274,11 +274,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 DeserializeSorting</td><td>
@@ -329,7 +329,7 @@ Gets or sets a value that determines whether the method deserialize StackedHeade
 True </td></tr>
 </table>
 
-#### Overriding SerializationController
+## Overriding SerializationController
 
 SerializationController is a public class that handles serialization and deserialization operations in SfDataGrid. DataContractSerializer is used in SerializationController to perform serialization and deserialization.By overriding SerializationController, you can customize serialization and deserialization operations. SerializationController copies the SfDataGrid and its inner class properties to SerializableDataGrid (This class is serialized only using DataContractSerializer). Similarly SerializableDataGrid, GridColumn properties that are to be serialized is copied into SerializableGridColumn. Also GroupColumnDescriptions, SortColumnDescriptions, StackedHeaders and etc., is copied to its corresponding serializable classes.
 
@@ -339,9 +339,9 @@ _Methods table_
 
 <table>
 <tr>
-<td>
-Method </td><td>
-Description</td></tr>
+<th>
+Method </th><th>
+Description</th></tr>
 <tr>
 <td>
 public virtual void Serialize(Stream stream, SerializationOptions serializeOptions)</td><td>
@@ -460,11 +460,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 Datagrid</td><td>
@@ -478,7 +478,7 @@ The following code example illustrates to override methods and how to handle ope
 
 {% highlight C# %}
 
-[C#]
+
 
 // Assign custom serialization controller to datagrid SerializationController
 
@@ -555,16 +555,16 @@ public class SerializationControllerExt : SerializationController
     }
 {% endhighlight %}
 
-### How To
+## How To
 
-#### How to retain new columns when you deserialize SfDataGrid?
+### How to retain new columns when you deserialize SfDataGrid?
 
 By default, the columns that exist in the grid when you apply serialization alone are displayed after deserializing the grid. When you want to preserve the columns that currently exist in the grid while applying deserialization, but not in the layout while serialization, customize SerializationController to achieve this. The following code example illustrates how to customize SerializationController.
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfDataGrid Name="dataGrid"     Grid.Column="0"
 
@@ -609,7 +609,7 @@ After serialization, when new column is added to grid, it is not displayed durin
 
 {% highlight C# %}
 
-[C#]
+
 
 // To add new unbound column at run time
 
@@ -631,7 +631,7 @@ You can overcome the above scenario by customizing the SerilalizationController 
 
 {% highlight C# %}
 
-[C#]
+
 
 // Assigning custom serialization controller to datagrid SerializationController
 
@@ -700,14 +700,14 @@ The following screenshot illustrates the output image after deserializing grid u
 
 _DataGrid after Serialization and Deserialization using custom serialization controller_
 
-#### How to serialize custom column in SfDataGrid
+### How to serialize custom column in SfDataGrid
 
 By default, the grid columns are serialized during serialization of DataGrid. But when custom column is added in grid, it is not serialized. Since DataContractSerializer is used the custom column type has to be identified to serialize and deserialize the custom column. To serialize the custom column, you can override SerializationController. Refer to the following code example.
 
 
 {% highlight C# %}
 
-[C#]
+
 
   public class DatePickerColumn : GridColumn
 
@@ -752,7 +752,7 @@ Consider, the grid contains the following columns. Here DatePickerColumn is cust
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Syncfusion:SfDataGrid x:Name="_dataGrid"
 
@@ -787,7 +787,7 @@ During grid serialization, when you want to copy DatePickerColumn properties, yo
 
 {% highlight C# %}
 
-[C#]
+
 
 [DataContract(Name="SerializableCustomGridColumn")]
 
@@ -808,7 +808,7 @@ The following code illustrates how to override SerializationController to serial
 
 {% highlight C# %}
 
-[C#]
+
 
 // Assigning custom serialization controller to datagrid SerializationController
 

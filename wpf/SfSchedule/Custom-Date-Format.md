@@ -17,7 +17,6 @@ The HeaderDateFormat is a String type, used to customize or override the default
 
 The Header background can be changed by HeaderBackground property.
 {% highlight html %}
-[XAML]
 
 
 
@@ -34,7 +33,6 @@ The Header background can be changed by HeaderBackground property.
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
 
 
 
@@ -72,7 +70,6 @@ The default timespan format in Day, Week and Timeline view can be customized by 
 {% highlight html %}
 
 
-[XAML]
 
 
 
@@ -88,7 +85,6 @@ The default timespan format in Day, Week and Timeline view can be customized by 
 
 {% highlight c# %}
 
-[C#]
 
 
 
@@ -122,8 +118,6 @@ The default timespan format in Day, Week and Timeline view can be customized by 
 
 The default date format of month view can be customized by using the MonthHeaderDateFormat property.                              
 {% highlight html %}
-[XAML]
-
 
 
   <Grid Background="White">
@@ -141,7 +135,6 @@ The default date format of month view can be customized by using the MonthHeader
 
 
 
-[C#]
 
      SfSchedule schedule = new SfSchedule();
 

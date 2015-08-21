@@ -17,7 +17,6 @@ Create a Model class with the necessary properties.
 
 
 {% highlight c# %}
-[C#]
 
   public class TreeModel : NotificationObject
 
@@ -73,15 +72,13 @@ Create a Model class with the necessary properties.
 {% endhighlight %}
 
 
-> _Note: NotificationObject is a class which implements INotifyPropertyChanged interface._
-
+> Note: NotificationObject is a class which implements INotifyPropertyChanged interface.
 
 
 Create a View Model class with the hierarchical items as follows.  
 
 
 {% highlight c# %}
-[C#]
 
 public class TreeViewModel 
 
@@ -145,7 +142,6 @@ public class TreeViewModel
 
 
 {% highlight xml %}
-[XAML]
 
 <navigation:SfTreeNavigator ItemsSource="{Binding Models}"  
 
@@ -177,7 +173,6 @@ ItemTemplate property of the Tree Navigator can be used to customize the display
 
 
 {% highlight xml %}
-[XAML]
 
 <navigation:SfTreeNavigator ItemsSource="{Binding Models}"  
 
@@ -229,7 +224,7 @@ This will populate the Tree Navigator as follows.
 
 
 
-> _Note: HierarchicalDataTemplate available in Syncfusion.SfShared.WPF dll under the Syncfusion.Windows.Primitives namespace_
+> Note: HierarchicalDataTemplate available in Syncfusion.SfShared.WPF dll under the Syncfusion.Windows.Primitives namespace
 
 
 

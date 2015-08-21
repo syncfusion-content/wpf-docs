@@ -13,7 +13,7 @@ PDF Portfolio allows you to bring together content from a variety of sources (fo
 
 PdfPortfolioInformation class is used to create the PDF portfolio. PdfPortfolioViewMode used to specify the view mode of the portfolio.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -69,9 +69,9 @@ document.Save("Sample.pdf");
 
 document.Close(true);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -126,6 +126,7 @@ document.Pages.Add()
 document.Save("Sample.pdf")
 
 document.Close(True)
+{% endhighlight %}
 
 ### Schema Field
 
@@ -133,7 +134,7 @@ Schema field is used to specify the file property such as Name, Description, and
 
 Please refer the following code sample.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -246,10 +247,10 @@ document.Pages.Add();
 document.Save("Sample.pdf");
 
 document.Close(true);
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -362,6 +363,6 @@ document.Pages.Add()
 document.Save("Sample.pdf")
 
 document.Close(True)
-
+{% endhighlight %}
 
 

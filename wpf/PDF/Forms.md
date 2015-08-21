@@ -26,7 +26,7 @@ A text field is a box or space where you can enter text through the keyboard. Th
 
 The following code example illustrates this. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -61,10 +61,10 @@ document.Form.Fields.Add(textBoxField);
 document.Save("Form.pdf");
 
 document.Close();
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -99,12 +99,13 @@ document.Form.Fields.Add(textBoxField)
 document.Save("Form.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ### Adding Button field
 
 A button field represents an interactive control on the screen that you can manipulate using the mouse. PdfButtonField class is used to create Buttons fields.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -136,9 +137,9 @@ document.Save("Form.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -169,6 +170,7 @@ document.Form.Fields.Add(button)
 document.Save("Form.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ### Adding Check Box field
 
@@ -176,7 +178,7 @@ A check box is a graphical user interface element that allows you to make binary
 
 PdfCheckBoxField class is used to create a check box in PDF forms. You can customize the check box style by using properties such as BorderStyle, HighlightMode, BorderWidth, etc.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -210,9 +212,9 @@ document.Save("Form.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -243,6 +245,7 @@ document.Form.Fields.Add(checkBoxField)
 document.Save("Form.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ### Adding Combo box field
 
@@ -250,7 +253,7 @@ A combo box represents a drop-down list of choices for selection, optionally acc
 
 PdfComboBoxField class is used to create a combo box field in PDF forms. You can add a list of items to the combo box by using the PdfListFieldItem class.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -296,9 +299,9 @@ document.Save("Form.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -343,12 +346,13 @@ document.Form.Fields.Add(comboBox)
 document.Save("Form.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ### Adding List box field
 
 A scrollable List Box contains several text items, one or more of that can be selected as the field value. PdfListBoxField is used to create the ListBox field in PDF forms.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -395,10 +399,10 @@ document.Save("Form.pdf");
 document.Close();
 
 
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -443,6 +447,7 @@ document.Form.Fields.Add(listBox)
 document.Save("Form.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ### Adding Radio button field
 
@@ -450,7 +455,7 @@ Radio button fields contain a set of related buttons that can be set to ON or OF
 
 PdfRadioButtonListField class is used to create a radio button in the PDF Forms. You can create the radio button list items by using the PdfRadioButtonListItem class.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -490,9 +495,9 @@ document.Save("Form.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -531,12 +536,13 @@ employeesRadioList.Items.Add(radioItem2)
 document.Save("Form.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ### Adding Signature field
 
 A signature field is a form field that contains a digital signature. PdfSignatureField class is used to create signature fields in PDF forms. PdfSignature class enables you to sign the signature field with the given certificate.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -582,9 +588,9 @@ document.Save("Form.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -629,6 +635,7 @@ document.Form.Fields.Add(signatureField)
 document.Save("Form.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ## Modify Form Field in a PDF Document
 
@@ -652,17 +659,17 @@ The following loaded fields are supported in the library:
 
 You can access each field by using its index or field name. The following code example illustrates this.
 
-[C#]
+{% highlight c# %}
 
 
 
 PdfLoadedTextBoxField field1 = form.Fields["fieldname"] as PdfLoadedTextBoxField;
 
 PdfLoadedTextBoxField field2 = form.Fields[0] as PdfLoadedTextBoxField;
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -670,11 +677,11 @@ Dim field1 As PdfLoadedTextBoxField = form.Fields("fieldname")
 
 Dim field2 As PdfLoadedTextBoxField = form.Fields(0)
 
-
+{% endhighlight %}
 
 The following code example illustrates how to change the bounds and value of the field.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -705,10 +712,10 @@ ldField.Password = false;
 document.Save("sample.pdf");
 
 document.Close();
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 'Loads the PDF document.
 
@@ -737,6 +744,7 @@ ldField.Password = False
 document.Save("sample.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ## Fill Form Field in a PDF Document
 
@@ -746,7 +754,7 @@ Essential PDF provides you support to fill AcroForm fields. You can fill the for
 
 The following code illustrates how to fill the Text Box Field.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -769,10 +777,10 @@ ldField.Text = "First Name";
 document.Save("sample.pdf");
 
 document.Close();
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -795,18 +803,18 @@ ldField.Text = "First Name"
 document.Save("sample.pdf")
 
 document.Close()
-
+{% endhighlight %}
 ### Formatting the text box
 
 The following table lists some of the properties of the TextBoxField.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-TextBoxField Property </td><td>
-Description </td></tr>
+<th>
+TextBoxField Property </th><th>
+Description </th></tr>
 <tr>
 <td>
 BackColor </td><td>
@@ -839,7 +847,7 @@ Gets or sets the alignment of the text in the field. It includes the following o
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -883,9 +891,9 @@ document.Save("sample.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -928,12 +936,13 @@ textBoxField.Text = "first Name"
 document.Save("sample.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ### Filling the combo box field
 
 The following code illustrates how to fill the Combo Box Field.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -957,9 +966,9 @@ document.Save("sample.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -982,12 +991,13 @@ combo.SelectedIndex = 1
 document.Save("sample.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ### Filling the Radio button field
 
 The following code illustrates how to fill the Radio Button Field.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1011,9 +1021,9 @@ document.Save("sample.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 'Loads the PDF document.
 
@@ -1034,12 +1044,13 @@ radio.SelectedIndex = 1
 document.Save("sample.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ### Filling list box field
 
 The following code illustrates how to fill the List Box Field.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1063,9 +1074,9 @@ document.Save("sample.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1088,12 +1099,13 @@ list.SelectedIndex = New Integer(1) {1, 2}
 document.Save("sample.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ### Filling the check Box field
 
 The following code illustrates how to fill the Check Box Field.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1123,9 +1135,9 @@ document.Save("sample.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1155,13 +1167,13 @@ document.Save("sample.pdf")
 
 document.Close()
 
-
+{% endhighlight %}
 
 ### Filling the signature field
 
 The following code illustrates how to fill the Signature Field
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1192,10 +1204,10 @@ sigField.Signature.Reason = "Reason";
 document.Save("sample.pdf");
 
 document.Close();
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1226,12 +1238,13 @@ sigField.Signature.Reason = "Reason"
 document.Save("sample.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ### Enumerate the form fields
 
 You can also enumerate the fields and fill them. The following code example illustrates how to enumerate the text fields.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1269,9 +1282,9 @@ document.Save("sample.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1304,6 +1317,7 @@ Next i
 document.Save("sample.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ## Flatten Form Fields
 
@@ -1311,7 +1325,7 @@ You can flatten the loaded field by using the Flatten property of the PdfLoadedF
 
 The following code example illustrates this.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1343,9 +1357,9 @@ document.Close();
 
 form.Fields[0].Flatten = true;
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1376,6 +1390,7 @@ document.Close()
 'Flattens the first field.
 
 form.Fields(0).Flatten = True
+{% endhighlight %}
 
 ## Adding Actions to Form Fields 
 
@@ -1383,7 +1398,7 @@ Instead of simply jumping to a destination in the document, an annotation or out
 
 The following code example illustrates this. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1455,9 +1470,9 @@ document.Save("sample.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1529,5 +1544,5 @@ document.Save("sample.pdf")
 
 document.Close()
 
-
+{% endhighlight %}
 

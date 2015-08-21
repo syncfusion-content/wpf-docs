@@ -11,7 +11,7 @@ documentation: ug
 
 In Schedule, appointments can be created at various time zones using the properties StartTimeZone and EndTimeZone of the ScheduleAppointment.
 {% highlight c# %}
-[C#]
+
 
 
 

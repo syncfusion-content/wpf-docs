@@ -7,11 +7,11 @@ control: SfChart
 documentation: ug
 ---
 
-## Migrating from Chart to SfChart
+# Migrating from Chart to SfChart
 
 SfChart is a new chart introduced in 11.1 version. SfChart is a very high performance chart enriched with several business features. This section helps you to identify equivalent Chart features/ APIs in SfChart.
 
-### Adding Reference
+## Adding Reference
 
 Chart DLL Name: Syncfusion.Chart.Wpf.dll
 
@@ -19,7 +19,7 @@ SfChart DLL Name: Syncfusion.SfChart.WPF.dll
 
 The following code example illustrates xmlns namespace for Chart. You can include the Syncfusion schema in WPF and both the charts are available in the WPF schema. 
 
-Chart
+### Chart
 
 {% highlight xml %}
 
@@ -27,7 +27,8 @@ xmlns:syncfusion=[http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.c
 
 
 {% endhighlight %}
-SfChart
+
+### SfChart
 
 {% highlight xml %}
 
@@ -39,7 +40,7 @@ xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.Sf
 
 {% endhighlight %}
 
-### Initialization
+## Initialization
 
 One of the biggest differences between Chart and SfChart is, Chart is constructed using one or more ChartArea. So, logically ChartArea is equivalent to SfChart. 
 
@@ -188,13 +189,13 @@ SplitterWidth</td><td>
 Gets or sets width for SyncChartAreas splitter</td></tr>
 </table>
 
-### Legend
+## Legend
 
 The Legends are same for both Chart and SfChart except that you can add multiple Legends for the SfChart. The Legend property in ChartArea accepts single Legend for whole Chart. In case of SfChart, the Legend property of the SfChart is an object that accepts one or more Legends based on your requirement. ([For more details](http://help.syncfusion.com/UG/winrt/Documents/legend.htm))
 
 The following code example illustrates the usage of Legend in Chart and SfChart.
 
-##Chart
+### Chart
 
 {% highlight xml %}
 
@@ -231,7 +232,7 @@ area.Legend = legend;
 chart.Areas.Add(area)
 {% endhighlight %}
 
-##SfChart
+### SfChart
 
 {% highlight xml %}
 
@@ -341,7 +342,8 @@ ShowSymbol</td><td>
 IconVisibility</td><td>
 Gets or sets the visibility for Legend icon symbol.</td></tr>
 </table>
-### Axis
+
+## Axis
 
 The class design for Axis is different for both ChartArea and SfChart. In ChartArea, Axis is the instance of ChartAxis type and its type is mentioned in ValueType property as in the following code example.
 
@@ -523,7 +525,7 @@ ZoomPosition</td><td>
 Gets or sets the zoom position value.</td></tr>
 </table>
 
-##Chart
+### Chart
 
 {% highlight xml %}
 
@@ -637,7 +639,7 @@ area.PrimaryAxis = primaryAxis;
 
 {% endhighlight %}
 
-##SfChart
+### SfChart
 
 {% highlight xml %}
 
@@ -770,7 +772,7 @@ chart.PrimaryAxis = primaryAxis;
 {% endhighlight %}
 Following code example illustrates how to customize gridlines.
 
-##Chart
+### Chart
 
 {% highlight xml %}
 
@@ -803,7 +805,7 @@ pen.Brush = Brushes.Red;
 ChartArea.SetGridLineStroke(primaryAxis, pen);
 {% endhighlight %}
 
-##SfChart
+### SfChart
 
 {% highlight xml %}
 
@@ -830,11 +832,12 @@ lineStyle.Setters.Add(new Setter(Line.StrokeProperty, Brushes.Red));
 
 primaryAxis.MajorGridLineStyle = lineStyle;
 {% endhighlight %}
-### Series
+
+## Series
 
 Like Axis, ChartSeries architecture is also different for Chart and SfChart. Instead of specifying the respective ChartType, you can create the instance of required series (Class name itself represents the type of series) in SfChart as in the following code example.
 
-##Chart
+### Chart
 
 {% highlight xml %}
 
@@ -932,7 +935,7 @@ area.Series.Add(lineseries);
 {% endhighlight %}
 
 
-##SfChart
+### SfChart
 
 {% highlight xml %}
 
@@ -1165,11 +1168,11 @@ PyramidMode</td><td>
 Gets or sets mode for pyramid series.</td></tr>
 </table>
 
-### Adornments
+## Adornments
 
 The Adornments are same as Chart and you can define the Adornments inside the Series like Chart.
 
-##Chart
+### Chart
 
 {% highlight xml %}
 
@@ -1227,7 +1230,7 @@ lineseries.AdornmentsInfo = adornment;
 
 {% endhighlight %}
 
-##SfChart
+### SfChart
 
 {% highlight xml %}
 
@@ -1358,11 +1361,11 @@ ShowConnectorLine</td><td>
 Gets or sets a value to enable connector line.</td></tr>
 </table>
 
-### Interactive Cursor
+## Interactive Cursor
 
 The InteractiveCursor is represented as ChartCrosshairBehavior and ChartTrackballBehavior in SfChart. Following code example illustrates this,
 
-##Chart
+### Chart
 
 {% highlight xml %}
 
@@ -1401,7 +1404,7 @@ incCursor.OffsetY = 100d;
 area.InteractiveCursors.Add(incCursor);
 {% endhighlight %}
 
-##SfChart
+### SfChart
 
 {% highlight xml %}
 
@@ -1430,11 +1433,12 @@ crosshair.HorizontalAxisLabelAlignment = ChartAlignment.Center;
 
 chart.Behaviors.Add(crosshair);
 {% endhighlight %}
-### Zooming and Panning
+
+## Zooming and Panning
 
 The Zooming and Panning are achieved using the ChartZoomPanBehavior in SfChart as in the following code example.
 
-##Chart
+### Chart
 
 {% highlight xml %}
 
@@ -1454,7 +1458,7 @@ ChartZoomingToolkit.SetZoomingToolkitVisibility(area, Visibility.Visible);
 
 {% endhighlight %}
 
-##SfChart
+### SfChart
 
 {% highlight xml %}
 
@@ -1493,11 +1497,11 @@ chart.Behaviors.Add(zoom);
 {% endhighlight %}
 
 
-### StripLines
+## StripLines
 
 The following code example demonstrates the usage of StripLines in Chart and SfChart.
 
-##Chart
+### Chart
 
 {% highlight xml %}
 
@@ -1544,7 +1548,7 @@ area.SecondaryAxis.StripLines.Add(stripline);
 {% endhighlight %}
 
 
-##SfChart
+### SfChart
 
 {% highlight xml %}
 
@@ -1667,11 +1671,11 @@ IsPixelWidth</td><td>
 Gets or sets a value that indicates the unit of the value of Width is pixel.</td></tr>
 </table>
 
-### Watermark
+## Watermark
 
 Following code example illustrates the WatermarkAPI comparison,
 
-##Chart
+### Chart
 
 {% highlight xml %}
 
@@ -1725,7 +1729,7 @@ Text = "Chart", Foreground = Brushes.Gray, FontSize = 60d
 
 {% endhighlight %}
 
-##SfChart
+### SfChart
 
 {% highlight xml %}
 
@@ -1769,13 +1773,13 @@ chart.Watermark = waterMark;
 
 {% endhighlight %}
 
-### Annotation
+## Annotation
 
 In Chart, you can add Annotations to chart and series. Annotations added to Chart are positioned based on OffsetX and OffsetY whose values are in the unit of pixel. Annotations added to series are positioned relative to axis. Annotation shape is specified in AnnotationShape property.
 
 Following code example illustrates the Annotation types and Annotation API’s for both Charts:
 
-##Chart
+### Chart
 
 Chart having following Annotations
 
@@ -1853,7 +1857,7 @@ annoCollection.m_annotationsCollection.Add(seriesAnnotation);
 columnSeries.Annotations = annoCollection;
 {% endhighlight %}
 
-##SfChart
+### SfChart
 
 In SfChart, you can position Annotations in pixel unit or axis. Units are specified using CoordinateUnit property. Unlike Chart, shape is represented by class name itself in SfChart.
 
@@ -2118,7 +2122,7 @@ chart.Annotations.Add(textAnnotation);
 
 {% endhighlight %}
 
-### Technical Indicators
+## Technical Indicators
 
 The following table illustrates the API comparison for TechnicalIndicators,
 
@@ -2180,7 +2184,7 @@ IndicatorType</td><td>
 In Chart, you can set the type of the indicator where as in SfChart, indicator type is indicated by the class name itself.</td></tr>
 </table>
 
-##Chart
+### Chart
 
 {% highlight xml %}
 
@@ -2272,7 +2276,8 @@ indicator.ItemsSource = viewmodel.CompanyDetails;
 
 chart.TechnicalIndicators.Add(indicator);
 {% endhighlight %}
-### SyncChartAreas
+
+## SyncChartAreas
 
 In Chart, you can split chart area into multiple plotting areas that share common axis, crosshair/interactive cursor etc., using SyncChartAreas class.
 
@@ -2280,9 +2285,9 @@ In SfChart, you can split chart into multiple plotting areas that share common a
 
 The following code example illustrates the API’s for both charts,
 
-##Chart
+### Chart
 
-###SyncChartAreas
+## SyncChartAreas
 
 {% highlight xml %}
 
@@ -2398,9 +2403,9 @@ areas.Areas.Add(area2);
 
 {% endhighlight %}
 
-##SfChart
+### SfChart
 
-###Column Row Definition
+##Column Row Definition
 {% highlight xml %}
 <syncfusion:SfChart>
 
@@ -2497,11 +2502,11 @@ chart.Series.Add(lineseries2);
 
 {% endhighlight %}
 
-### Exporting and Printing
+## Exporting and Printing
 
-##Export to Image
+### Export to Image
 
-##Chart
+### Chart
 
 {% highlight C# %}
 
@@ -2524,7 +2529,7 @@ if (saveFileDialog.ShowDialog() == true)
  }
 {% endhighlight %}
 
-##SfChart
+### SfChart
 
 {% highlight C# %}
 
@@ -2551,7 +2556,7 @@ SaveFileDialog sfd = new SaveFileDialog();
 
 ##Printing Chart
 
-##Chart
+### Chart
 
 {% highlight xml %}
 
@@ -2566,7 +2571,7 @@ CommandTarget="{Binding ElementName=chart}"/>
 CommandTarget="{Binding ElementName=chart}"/>
 {% endhighlight %}
 
-##SfChart
+### SfChart
 
 {% highlight C# %}
 

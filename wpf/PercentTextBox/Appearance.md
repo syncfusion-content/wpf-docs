@@ -58,7 +58,6 @@ The result of these steps is an XAML, which is placed within your application. T
 
  {% highlight xml %}
 
-    [XAML]
 
     <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 
 
@@ -86,7 +85,6 @@ Here is a simple example to customize the UnFocused state of the PercentTextBox:
 
  {% highlight xml %}
 
-    [XAML]
 
    <Trigger Property="IsFocused" Value="False">
 

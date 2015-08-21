@@ -19,15 +19,15 @@ Using the PropertyExpandMode property, users can choose whether the nested prope
 
 
 
-_Property table_
+Property table
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 PropertyExpandMode</td><td>
@@ -55,10 +55,10 @@ In the following code sample the PropertyVisiblityMode is set as NestedMode in b
 <table>
 <tr>
 <td>
-[XAML]&lt;syncfusion:PropertyGrid Name="propertyGrid" PropertyExpandMode="NestedMode"&gt;            &lt;/syncfusion:PropertyGrid&gt;</td></tr>
+{% highlight xml %}<syncfusion:PropertyGrid Name="propertyGrid" PropertyExpandMode="NestedMode">            </syncfusion:PropertyGrid>{% endhighlight %}</td></tr>
 <tr>
 <td>
-[C#]propertyGrid.PropertyExpandMode = Syncfusion.Windows.PropertyGrid.PropertyGrid.PropertyExpandModes.NestedMode;  </td></tr>
+{% highlight c# %}propertyGrid.PropertyExpandMode = Syncfusion.Windows.PropertyGrid.PropertyGrid.PropertyExpandModes.NestedMode; {% endhighlight %} </td></tr>
 </table>
 
 

@@ -15,7 +15,6 @@ Filtered data displays only a subset of data that meets criteria that you specif
 
 {% highlight C# %}  
 
-[C#]
 
 // Adding filters with filter expressions
 
@@ -27,7 +26,6 @@ this.PivotGridControl1.Filters.Add(new FilterExpression { Expression="Product = 
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Adding filters with filter expressions
 
@@ -41,7 +39,6 @@ Sorting data enables you to quickly visualize and understand your data better, o
 
 {% highlight C# %} 
 
-[C#]
 
 // Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparer
 
@@ -97,7 +94,6 @@ public class ReverseOrderComparer : IComparer
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparer
 
@@ -149,7 +145,6 @@ PivotGrid for WPF provides built-in support for freezing column and row headers.
 
 {% highlight C# %}  
 
-[C#]
 
 // To Freeze Grid Headers
 
@@ -177,16 +172,16 @@ Me.PivotGridControl1.FreezeHeaders = True
 
 The following properties of a grid cell can be customized so that the grid appears in a custom style rather than the default one.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property Name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Value it Accepts**' | markdownify }}</td><td>
-{{ '**Reference link**' | markdownify }}</td></tr>
+<th>
+{{ '**Property Name**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Value it Accepts**' | markdownify }}</th><th>
+{{ '**Reference link**' | markdownify }}</th></tr>
 <tr>
 <td>
 Background</td><td>
@@ -235,8 +230,7 @@ Column, row, summary, and value cells of a grid can be formatted independently u
 
 
 {% highlight C# %} 
-
-[C#] 
+ 
 
     		// Specifying the Background color for Grid column header
 
@@ -256,7 +250,6 @@ Column, row, summary, and value cells of a grid can be formatted independently u
 
 {% highlight vbnet %}  
 
-[VB]
 
 ' Specifying the Background color for Grid column header
 
@@ -307,7 +300,6 @@ By default, Grouping Bar is enabled. It can be disabled by setting ShowGroupingB
 
 {% highlight xml %} 
 
-[XAML]
 
 <syncfusion:PivotGrid>
 
@@ -347,7 +339,6 @@ By default, Grouping Bar is enabled. It can be disabled by setting ShowGroupingB
 
 {% highlight C# %}  
 
- [C#]
 
 // Instantiating PivotGridControl.
 
@@ -375,7 +366,6 @@ pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Instantiating PivotGridControl.
 
@@ -415,7 +405,6 @@ Filtering of data displays only a subset of data that meets criteria specified b
 
 {% highlight C# %}  
 
-[C#]
 
 // Disabling Filtering.
 
@@ -427,7 +416,6 @@ pivotGridControl1.GroupingBar.AllowFiltering = false;
 
 {% highlight vbnet %} 
 
-[VB]
 
 // Disabling Filtering.
 
@@ -451,7 +439,6 @@ The following image illustrates the Sort indicator with Sort types.
 
 {% highlight C# %} 
 
-[C#]
 
 // Disabling Sorting.
 
@@ -461,7 +448,6 @@ pivotGridControl1.GroupingBar.AllowSorting = false;
 
 {% highlight vbnet %} 
 
-[VB]
 // Disabling Sorting.
 
 pivotGridControl1.GroupingBar.AllowSorting = False 
@@ -492,16 +478,16 @@ The following screenshot shows disabled grouping:
 
 #### Properties
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 AllowRunTimeGroupByField</td><td>
@@ -533,7 +519,6 @@ The following code snippets, explains the implementation of the disable grouping
 
 {% highlight xml %} 
 
-[XAML]
 
 /// Adding Pivot Columns
 
@@ -574,8 +559,6 @@ The following code snippets, explains the implementation of the disable grouping
 
 {% highlight C# %}  
 
-[C#]
-
 /// Adding Pivot Columns
 
 this.pivotGrid1.PivotColumns.Add(new PivotItem() { FieldMappingName = "Country", FieldHeader = "Country", TotalHeader = "Total", AllowRunTimeGroupByField = false });
@@ -603,7 +586,6 @@ this.pivotGrid1.ShowDisabledGroupBackground = true;
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Adding Pivot Columns
 
@@ -653,7 +635,6 @@ The property usage is illustrated in the code given below.
 
 {% highlight C# %} 
 
-[C#]
 
 // Instantiating PivotGridControl.
 
@@ -698,7 +679,6 @@ this.PivotGrid1.ValueCellStyle.IsHyperlinkCell = true;
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Instantiating PivotGridControl.
 
@@ -790,7 +770,6 @@ Conditional Formatting can be added to code behind and XAML, as shown in the fol
 
 {% highlight xml %} 
 
-[XAML]
 
   <!--Specifying PivotRows.-->
 
@@ -878,7 +857,6 @@ Conditional Formatting can be added to code behind and XAML, as shown in the fol
 
 {% highlight C# %} 
 
-[C#]
 
 // Specifying PivotGridDataConditionalFormat.
 
@@ -948,7 +926,6 @@ this.PivotGrid1.ConditionalFormats.Add(conditionalFormat2);
 
 {% highlight vbnet %}  
 
-[VB]
 
 ' Specifying PivotGridDataConditionalFormat.
 
@@ -1050,7 +1027,6 @@ RowHeaderStyle of PivotGrid can be customized by using the Template, as shown in
 
 {% highlight xml %} 
 
-[XAML]
 
 <Style x:Key="rowStyle" TargetType="{x:Type syncfusion:PivotGridTemplateCell}">
 
@@ -1173,7 +1149,6 @@ The following code snippets show how to create a PivotGrid and to specify Cell S
 
 {% highlight xml %} 
 
-[XAML]
 
 <!--Adding PivotGrid and Enabling Cell Selection-->
 
@@ -1216,7 +1191,6 @@ The following code snippets show how to create a PivotGrid and to specify Cell S
 
 {% highlight C# %}  
 
-[C#]
 
 // Instantiating PivotGridControl.
 
@@ -1250,7 +1224,6 @@ this.pivotGridControl1.AllowSelection = false;
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -1304,7 +1277,6 @@ The GridPdfExport class provides support for exporting data from a PivotGrid to 
 
 {% highlight C# %}  
 
-[C#]
 
 
 //// Export to PDF.
@@ -1334,8 +1306,6 @@ if (savedialog.ShowDialog() == true)
 {% endhighlight %} 
 
 {% highlight vbnet %} 
-
-[VB]
 
 ' Export to PDF.
 
@@ -1378,7 +1348,6 @@ The GridExcelExport class provides support for exporting data from a PivotGrid t
 
 {% highlight C# %}  
 
-[C#]
 
 //// Export to Excel.
 
@@ -1407,7 +1376,6 @@ if (savedialog.ShowDialog() == true)
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Export to Excel.
 
@@ -1451,7 +1419,6 @@ The GridWordExport class provides support for exporting data from a PivotGrid to
  
 {% highlight C# %}  
 
-[C#]
 
 //// Export to Word Document.
 
@@ -1482,7 +1449,6 @@ if (savedialog.ShowDialog() == true)
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Export to Word Document.
 
@@ -1520,16 +1486,16 @@ PivotGridControl for WPF provides support to export itself to CSV file format.
 
 You can export the contents of the PivotGridControl to the CSV file format for future references and analysis purposes.
 
-_Methods_
+Methods
 
 <table>
 <tr>
-<td>
-{{ '**Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Return Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 Export(string filename)</td><td>
@@ -1554,8 +1520,7 @@ The GridCsvExport class provides support for exporting data from PivotGridContro
 
 
 {% highlight C# %}  
-
-[C#] 
+ 
 
 SaveFileDialog saveFileDialog = new SaveFileDialog();
 
@@ -1612,7 +1577,6 @@ PivotGrid Field List (or Dynamic Field List ) can be launched by setting the Sho
 
 {% highlight xml %} 
 
-[XAML]
 
         <syncfusion:PivotGridControl ShowFieldList="True"
 
@@ -1660,7 +1624,6 @@ PivotGrid Field List (or Dynamic Field List ) can be launched by setting the Sho
 
 {% highlight C# %}  
 
-[C#]
 
   /// Adding Pivot Columns
 
@@ -1692,7 +1655,6 @@ PivotGrid Field List (or Dynamic Field List ) can be launched by setting the Sho
 
 {% highlight vbnet %} 
 
-[VB]
 
             ' Adding Pivot Columns
 
@@ -1732,11 +1694,11 @@ PivotGridControl Table
 
 <table>
     <tr>
-        <td>{{ '**Property**' | markdownify }}</td>
-		<td>{{ '**Description**' | markdownify }}</td>
-		<td>{{ '**Type**' | markdownify }}</td>
-		<td>{{ '**Data Type**' | markdownify }}</td>
-		<td>{{ '**Reference links**' | markdownify }}</td>
+        <th>{{ '**Property**' | markdownify }}</th>
+		<th>{{ '**Description**' | markdownify }}</th>
+		<th>{{ '**Type**' | markdownify }}</th>
+		<th>{{ '**Data Type**' | markdownify }}</th>
+		<th>{{ '**Reference links**' | markdownify }}</th>
 	</tr>
 	
     <tr>
@@ -1838,15 +1800,15 @@ This feature will restrict the row header items from being stretched and maintai
 
 Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 AllowRowHeaderAreaAutoSizing</td><td>
@@ -1864,7 +1826,6 @@ The following code illustrates how to restrict the items from stretching and how
 
 {% highlight C# %} 
 
-[C#]
 
 this.pivotGrid1.AllowRowHeaderAreaAutoSizing = false;
 
@@ -1872,7 +1833,6 @@ this.pivotGrid1.AllowRowHeaderAreaAutoSizing = false;
 
 {% highlight vbnet %} 
 
-[VB]
 
 Me.pivotGrid1.AllowRowHeaderAreaAutoSizing = False
 
@@ -1886,7 +1846,7 @@ The following code illustrates how to allow the items to stretch and how to hide
 
 {% highlight C# %}  
 
-[C#]
+
 
 this.pivotGrid1.AllowRowHeaderAreaAutoSizing = true;
 
@@ -1894,7 +1854,6 @@ this.pivotGrid1.AllowRowHeaderAreaAutoSizing = true;
 
 {% highlight vbnet %} 
 
-[VB]
 
 Me.pivotGrid1.AllowRowHeaderAreaAutoSizing = True 
 
@@ -1919,13 +1878,13 @@ Using this feature, you can save the current state of PivotGrid as an XML file f
 
 The following properties of PivotGrid control can be serialized.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property Name**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property Name**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 AllowResizeColumns</td><td>
@@ -2021,7 +1980,6 @@ Serialization/Deserialization can be achieved using the following code snippet,
 
 {% highlight C# %} 
 
-[C#]
 
 
 
@@ -2051,7 +2009,6 @@ this.pivotGrid1.Deserialize(@"C:/PivotGrid.xml");
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -2085,16 +2042,16 @@ Me.pivotGrid1.Deserialize("C:/PivotGrid.xml")
 
 #### Methods
 
-_Methods Table_
+Methods Table
 
 <table>
 <tr>
-<td>
-{{ '**Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Return Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 Serialize()</td><td>
@@ -2145,16 +2102,16 @@ To access a Conditional Formatting sample:
 
 Essential PivotGrid provides a remove button for fields in grouping area. This helps you to remove the fields from _Grouping Area._ Removed fields will be stored in the _PivotTable Field List_ dialog for later use. Instead of dragging the field from _Grouping Area_, you can click the remove button to achieve this.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</t><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 AllowRemove </td><td>
@@ -2173,7 +2130,6 @@ The following code illustrates how to enable the remove button:
 
 {% highlight C# %}  
 
-[C#]
 
 this.pivotGrid1.GroupingBar.AllowRemove = true;
 
@@ -2181,7 +2137,6 @@ this.pivotGrid1.GroupingBar.AllowRemove = true;
 
 {% highlight vbnet %}  
 
-[VB]
 
 Me.pivotGrid1.GroupingBar.AllowRemove = True
 
@@ -2220,16 +2175,16 @@ The following screenshot shows the custom summary at runtime:
 
 #### Property
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 CustomSummaryBaseCollection</td><td>
@@ -2273,7 +2228,6 @@ The following code snippets, explains the implementation of adding Runtime Custo
 
 {% highlight C# %}  
 
-[C#]
 
 
 
@@ -2299,7 +2253,6 @@ CalcColumn.SummaryType = SummaryType.Custom;
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Adding Custom SummaryBases to the CustomSummaryBaseCollection property
 
@@ -2336,16 +2289,16 @@ The following image shows state persistence in the PivotGrid control:
 
 #### Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 StatePersistenceEnabled</td><td>
@@ -2368,7 +2321,6 @@ The user can enable or disable the state persistence by using the following code
 
 {% highlight C# %}  
 
-[C#]
 
 pivotGrid1.StatePersistenceEnabled = true;
 
@@ -2376,7 +2328,6 @@ pivotGrid1.StatePersistenceEnabled = true;
 
 {% highlight vbnet %} 
 
-[VB]
 
 pivotGrid1.StatePersistenceEnabled = true
 
@@ -2403,15 +2354,15 @@ The following screenshot shows the PivotGrid with the sub-totals shown and hidde
 
 #### Properties
 
-_Properties_
+Properties
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Value it Accepts**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Value it Accepts**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 ShowSubTotals</td><td>
@@ -2435,7 +2386,7 @@ Boolean</td></tr>
 
 #### Methods
 
-_Methods_
+Methods
 
 <table>
 <tr>
@@ -2446,19 +2397,19 @@ _Methods_
 {{ '**Type**' | markdownify }}</th><th>
 {{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
-<th>
-SubTotalsRendering</th><th>
-Handles rendering of cells(showing or hiding the cells) by calculating the cell range values in the Pivot Engine based on the ShowSubTotals property value in the control</th><th>
-</th><th>
-Server Side </th><th>
-Void </th></tr>
+<td>
+SubTotalsRendering</td><td>
+Handles rendering of cells(showing or hiding the cells) by calculating the cell range values in the Pivot Engine based on the ShowSubTotals property value in the control</td><td>
+</td><td>
+Server Side </td><td>
+Void </td></tr>
 <tr>
-<th>
-SubTotalsVisibilityRenderer</th><th>
-Handles rendering of cells(showing or hiding the cells) by calculating the cell range values for both rows and columns in the PivotEngine</th><th>
-PivotItem</th><th>
-Server Side</th><th>
-Void</th></tr>
+<td>
+SubTotalsVisibilityRenderer</td><td>
+Handles rendering of cells(showing or hiding the cells) by calculating the cell range values for both rows and columns in the PivotEngine</td><td>
+PivotItem</td><td>
+Server Side</td><td>
+Void</td></tr>
 </table>
 
 
@@ -2474,7 +2425,6 @@ To hide sub-totals, set the ShowSubTotals property as False as illustrated here.
 
 {% highlight xml %} 
 
-[XAML]
 
 <Grid>
 
@@ -2494,7 +2444,6 @@ To hide sub-totals, set the ShowSubTotals property as False in the MainWindow() 
 
 {% highlight C# %} 
 
-[C#]
 
 public MainWindow()
 
@@ -2510,7 +2459,6 @@ public MainWindow()
 
 {% highlight vbnet %} 
 
-[VB]
 
 Public Sub MainWindow()
 
@@ -2536,7 +2484,6 @@ To hide sub-totals, set the ShowColumnSubTotals property as False as illustrated
 
 {% highlight xml %} 
 
-[XAML]
 
 <Grid>
 
@@ -2556,7 +2503,6 @@ To hide sub-totals for columns, set the ShowColumnSubTotals property to False in
 
 {% highlight C# %}  
 
-[C#]
 
 public MainWindow()
 
@@ -2572,7 +2518,6 @@ public MainWindow()
 
 {% highlight vbnet %} 
 
-[VB]
 
 Public Sub MainWindow()
 
@@ -2596,7 +2541,6 @@ To hide sub-totals, set the ShowRowSubTotals property as False as illustrated he
 
 {% highlight xml %} 
 
-[XAML]
 
 <Grid>
 
@@ -2616,7 +2560,6 @@ To hide sub-totals for rows, set the ShowRowSubTotals property as False in the M
 
 {% highlight C# %}  
 
-[C#]
 
 public MainWindow()
 
@@ -2626,13 +2569,12 @@ public MainWindow()
 
     this.pivotGrid1.ShowRowSubTotals = false;
 
-_}_
+}
 
 {% endhighlight %} 
 
 {% highlight vbnet %} 
 
-[VB]
 
 Public Sub MainWindow()
 
@@ -2660,16 +2602,16 @@ This feature will be useful to provide more space to display the controls sharin
 
 #### Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 ResizePivotGridToFit </td><td>
@@ -2688,7 +2630,6 @@ The following code illustrates how to enable resizing to fit the content, when y
 
 {% highlight C# %}  
 
-[C#]
 
 
 
@@ -2698,7 +2639,6 @@ this.pivotGrid1.ResizePivotGridToFit = true;
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -2714,7 +2654,6 @@ The following code illustrates how to disable resizing to fit the content, when 
 
 {% highlight C# %}  
 
-[C#]
 
 
 this.pivotGrid1.ResizePivotGridToFit = false;
@@ -2723,7 +2662,6 @@ this.pivotGrid1.ResizePivotGridToFit = false;
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -2796,16 +2734,16 @@ Using this feature, the values in the columns can be sorted in given order, eith
 
 Properties
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 SortDirection</td><td>
@@ -2825,7 +2763,7 @@ NA</td></tr>
 
 Methods
 
-_Method Table_
+Method Table
 
 <table>
 <tr>
@@ -2837,25 +2775,25 @@ _Method Table_
    <th>{{ '**Reference links**' | markdownify }}</th>
 </tr>
 <tr>
-    <th>SortByCalculation</th>
-	<th>Sorts the values in the columns in ascending or descending order.</th>
-	<th>columnIndex </th>
-	<th>NA</th>
-	<th>void</th>
-	<th>NA</th>
+    <td>SortByCalculation</th>
+	<td>Sorts the values in the columns in ascending or descending order.</th>
+	<td>columnIndex </th>
+	<td>NA</th>
+	<td>void</th>
+	<td>NA</th>
 </tr>
 </table>
 
 
 Enum
 
-_Enum Table_
+Enum Table
 
 <table>
 <tr>
-<td>
-{{ '**Name**' | markdownify }}</td><td>
-{{ '**Options**' | markdownify }}</td></tr>
+<th>
+{{ '**Name**' | markdownify }}</th><th>
+{{ '**Options**' | markdownify }}</th></tr>
 <tr>
 <td>
 PivotSortOption</td><td>
@@ -2872,7 +2810,6 @@ Adding sort by value of computations fields to an application
 The following code sample illustrates how to sort computations fields by value:
 
 {% highlight C# %}
-[C#]
 
 Sorting Options
 
@@ -2935,16 +2872,16 @@ This feature helps the user to add or remove the filter items from programmatic 
 
 Properties
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 DimensionName</td><td>
@@ -2971,7 +2908,7 @@ NA</td></tr>
 
 #### Methods
 
-_Methods Table_
+Methods Table
 
 <table>
 <tr>
@@ -2983,21 +2920,21 @@ _Methods Table_
 {{ '**Return Type**' | markdownify }}</th><th>
 {{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
-<th>
-AddFilter</th><th>
-Used to add a filter item in the filter collection.</th><th>
-(FilterExpression item) </th><th>
-NA </th><th>
-void</th><th>
-NA</th></tr>
+<td>
+AddFilter</td><td>
+Used to add a filter item in the filter collection.</td><td>
+(FilterExpression item) </td><td>
+NA </td><td>
+void</td><td>
+NA</td></tr>
 <tr>
-<th>
-RemoveFilter</th><th>
-Used to remove the given item from the filter collection.</th><th>
-(FilterExpress item)</th><th>
-NA</th><th>
-void</th><th>
-NA</th></tr>
+<td>
+RemoveFilter</td><td>
+Used to remove the given item from the filter collection.</td><td>
+(FilterExpress item)</td><td>
+NA</td><td>
+void</td><td>
+NA</td></tr>
 </table>
 
 
@@ -3009,7 +2946,6 @@ NA</th></tr>
 
 {% highlight C# %}  
 
- [C#]
 
  //Add:            
 
@@ -3044,15 +2980,15 @@ ToolTips can be used to show the data of any cell so that user can get the cell�
 
 ### Properties
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 TooltipEnabled</td><td>
@@ -3094,7 +3030,6 @@ To show the ToolTip in the PivotGrid control you need to set the PivotGrid contr
 
 {% highlight C# %} 
 
-[C#]
 
 //Enable Tooltip for PivotGridControl
 
@@ -3104,7 +3039,6 @@ this.pivotGrid1.ToolTipEnabled = true;
 
 {% highlight vbnet %} 
 
-[VB]
 
 //Enable Tooltip for PivotGridControl
 
@@ -3116,7 +3050,6 @@ You can set the appearance of ToolTips with respect to their styles. Each style 
 
 {% highlight C# %}  
 
-[C#]
 
 //Enable Tooltip for RowHeaderCellStyle
 
@@ -3144,7 +3077,6 @@ this.pivotGrid1.SummaryCellStyle.ToolTipEnabled = true;
 
 {% highlight vbnet %} 
 
-[VB]
 
 //Enable Tooltip for RowHeaderCellStyle
 
@@ -3186,7 +3118,6 @@ Custom data templates can be set to the PivotGrid control’s ToolTip. To do so,
 
 {% highlight C# %}   
 
-[C#]
 
 //Set the Custom DataTemplate for PivotGridControl’s Tooltip
 
@@ -3196,7 +3127,6 @@ this.pivotGrid1.CustomToolTipTemplateKey = "CustomTemplateTooltip";
 
 {% highlight vbnet %} 
 
-[VB]
 
 //Set the Custom DataTemplate for PivotGridControl’s Tooltip
 
@@ -3214,7 +3144,6 @@ You can set the data template of ToolTip with respect to its styles. Each style 
 
 {% highlight C# %}  
 
-[C#]
 
 //Set the Custom DataTemplate for ColumnHeaderCellStyle Tooltip
 
@@ -3240,7 +3169,6 @@ this.pivotGrid1.SummaryCellStyle.CustomToolTipTemplateKey = "SummaryCellTemplate
 
 {% highlight vbnet %} 
 
-[VB]
 
 //Set the Custom DataTemplate for ColumnHeaderCellStyle Tooltip
 
@@ -3282,15 +3210,15 @@ Editing and updating features are useful when users would like to edit the value
 
 ### Properties
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 EnableValueEditing</td><td>
@@ -3325,7 +3253,7 @@ Boolean</td></tr>
 
 ### Events
 
-_Event Table_
+Event Table
 
 <table>
 <tr>
@@ -3335,11 +3263,11 @@ _Event Table_
 {{ '**Arguments**' | markdownify }}</th><th>
 {{ '**Type**' | markdownify }}</th></tr>
 <tr>
-<th>
-ChangeValue</th><th>
-Triggered when changing a cell’s value. Using this event we can alter the PivotCellInfo.</th><th>
-Object oldValue, object newValue, int row1, int col1, PivotCellInfo pi</th><th>
-Event </th></tr>
+<td>
+ChangeValue</td><td>
+Triggered when changing a cell’s value. Using this event we can alter the PivotCellInfo.</td><td>
+Object oldValue, object newValue, int row1, int col1, PivotCellInfo pi</td><td>
+Event </td></tr>
 </table>
 
 
@@ -3360,7 +3288,6 @@ You can enable updating in value and total cells by setting the EnableValueEditi
 
 {% highlight C# %} 
 
-[C#]
 
 // To Enable Editing Value cells in PivotGridControl
 
@@ -3376,7 +3303,6 @@ this.pivotGrid1.EnableUpdating = true;
 
 {% highlight vbnet %}
 
-[VB]
 
 ‘To Enable Editing in PivotGridControl
 
@@ -3404,7 +3330,6 @@ A custom editing manager can be used so that you can format the PivotCellInfo. T
 
 {% highlight C# %}  
 
-[C#]
 
 //User derived EditManager.
 
@@ -3452,7 +3377,6 @@ public class CustomEditManager : PivotEditingManager
 
 {% highlight vbnet %} 
 
-[VB]
 
 'User derived EditManager.
 
@@ -3502,7 +3426,6 @@ While updating the PivotGrid control you can throttle its updating speed which c
 
 {% highlight C# %}   
 
-[C#]
 
 // To set throttle rate for updating in PivotGridControl
 
@@ -3512,7 +3435,6 @@ this.pivotGrid1.UpdateManager.ThrottleUpdateRate = 300;
 
 {% highlight vbnet %} 
 
-[VB]
 
 ‘To set throttle rate for updating in PivotGridControl
 
@@ -3540,15 +3462,15 @@ Enabling UI-level expand/collapse operations will allow the end user to expand a
 
 ### Properties
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 EnableContextMenu</td><td>
@@ -3559,7 +3481,7 @@ Boolean </td></tr>
 
 ### Methods
 
-_Methods Table_
+Methods Table
 
 <table>
 <tr>
@@ -3570,66 +3492,66 @@ _Methods Table_
 {{ '**Type**' | markdownify }}</th><th>
 {{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
-<th>
-ExpandRow(string)  </th><th>
-Expands the group for the given row UniqueText.</th><th>
-string </th><th>
-NA </th><th>
-void </th></tr>
+<td>
+ExpandRow(string)  </td><td>
+Expands the group for the given row UniqueText.</td><td>
+string </td><td>
+NA </td><td>
+void </td></tr>
 <tr>
-<th>
-ExpandColumn (string)  </th><th>
-Expands the group for the given column UniqueText.</th><th>
-string</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+ExpandColumn (string)  </td><td>
+Expands the group for the given column UniqueText.</td><td>
+string</td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-CollapseRow(string)  </th><th>
-Collapse the group for the given row UniqueText.</th><th>
-string</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+CollapseRow(string)  </td><td>
+Collapse the group for the given row UniqueText.</td><td>
+string</td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-CollapseColumn (string)  </th><th>
-Collapse the group for the given column UniqueText.</th><th>
-string</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+CollapseColumn (string)  </td><td>
+Collapse the group for the given column UniqueText.</td><td>
+string</td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-ExpandRow(List[string])  </th><th>
-Expands the group for the given list of row UniqueText.</th><th>
-List(string)</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+ExpandRow(List[string])  </td><td>
+Expands the group for the given list of row UniqueText.</td><td>
+List(string)</td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-ExpandColumn (List[string])  </th><th>
-Expands the group for the given list of column UniqueText.</th><th>
-List(string)</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+ExpandColumn (List[string])  </td><td>
+Expands the group for the given list of column UniqueText.</td><td>
+List(string)</td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-CollapseRow(List[string])  </th><th>
-Collapse the group for the given list of row UniqueText.</th><th>
-List(string)</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+CollapseRow(List[string])  </td><td>
+Collapse the group for the given list of row UniqueText.</td><td>
+List(string)</td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-CollapseColumn (List[string])  </th><th>
-Collapse the group for the given list of column UniqueText.</th><th>
-List(string)</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+CollapseColumn (List[string])  </td><td>
+Collapse the group for the given list of column UniqueText.</td><td>
+List(string)</td><td>
+NA</td><td>
+void</td></tr>
 </table> 
 
 ### Events
 
-_Event Table_
+Event Table
 
 <table>
 <tr>
@@ -3639,11 +3561,11 @@ _Event Table_
 {{ '**Arguments**' | markdownify }} </th><th>
 {{ '**Type**' | markdownify }} </th></tr>
 <tr>
-<th>
-ExpandCollapse</th><th>
-Provides enabling/disabling option for expand/collapse for a specific group (using UniqueText).</th><th>
-NA </th><th>
-Event</th></tr>
+<td>
+ExpandCollapse</td><td>
+Provides enabling/disabling option for expand/collapse for a specific group (using UniqueText).</td><td>
+NA </td><td>
+Event</td></tr>
 </table>
 
 
@@ -3663,7 +3585,6 @@ The property usage is illustrated in the code given below.
 
 {% highlight C# %}  
 
-[C#]
 
 // To Enable Context Menu for Column Header.
 
@@ -3677,7 +3598,6 @@ this.PivotGrid1.RowHeaderCellStyle.EnableContextMenu = true;
 
 {% highlight vbnet %} 
 
-[VB]
 
 // To Enable Context Menu for Column Header.
 
@@ -3701,7 +3621,6 @@ To perform the expand/collapse operations programmatically, you can make use of 
 
 {% highlight C# %}   
 
-[C#]
 
 /// Expands the Bike from row       
 
@@ -3739,7 +3658,6 @@ this.pivotGrid1.ExpandColumn(new List<string> { "Canada", "France" });
 
 {% highlight vbnet %}  
 
-[VB]
 
 /// Expands the Bike from row       
 
@@ -3809,16 +3727,16 @@ Hence, the sales amount for FY 2011 is 33.33 % of overall year sales (FY 2008 to
 
 #### Properties
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }} </td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Data Type**' | markdownify }} </td><td>
-{{ '**Reference links**' | markdownify }} </td></tr>
+<th>
+{{ '**Property**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Data Type**' | markdownify }} </th><th>
+{{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
 <td>
 CalculationType</td><td>
@@ -3840,7 +3758,7 @@ Class Reference link for BaseField in PivotAnalysis.Base.</td></tr>
 
 The sample is available in the following location:
 
-_<SystemDrive>:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\PivotAnalysis.Wpf\Samples\Product Showcase\PivotGrid Demo_
+<SystemDrive>:\Users\<user_name>\AppData\Local\Syncfusion\EssentialStudio\<version_number>\BI\WPF\PivotAnalysis.Wpf\Samples\Product Showcase\PivotGrid Demo
 
 ### Implementing Custom Calculations 
 
@@ -3848,7 +3766,6 @@ To show the value cell as a percentage of its summary cells, use the following c
 
 {% highlight xml %} 
 
-[XAML]
 
 <syncfusion:PivotGridControl.PivotCalculations>
 
@@ -3860,7 +3777,6 @@ To show the value cell as a percentage of its summary cells, use the following c
 
 {% highlight C# %}  
 
-[C#]
 
 this.pivotGrid1.PivotCalculations.Add(new Syncfusion.PivotAnalysis.Base.PivotComputationInfo { FieldName = "Amount", Format = "C", CalculationName = "Total Amount", CalculationType = Syncfusion.PivotAnalysis.Base.CalculationType.PercentageOfParentTotal, BaseField = "Country" });
 
@@ -3868,7 +3784,6 @@ this.pivotGrid1.PivotCalculations.Add(new Syncfusion.PivotAnalysis.Base.PivotCom
 
 {% highlight vbnet %} 
 
-[VB]
 
 Me.pivotGrid1.PivotCalculations.Add(New Syncfusion.PivotAnalysis.Base.PivotComputationInfo() With {.FieldName = "Amount", .Format = "C", .CalculationName = "Total Amount", .CalculationType = Syncfusion.PivotAnalysis.Base.CalculationType.PercentageOfParentTotal, .BaseField = "Country"})
 
@@ -3900,7 +3815,7 @@ The user can utilize this method when they want to know the raw item from which 
 Methods
 
 
-_Method Table_
+Method Table
 
 <table>
 <tr>
@@ -3910,11 +3825,11 @@ _Method Table_
  {{ '**Parameters**' | markdownify }}</th><th>
  {{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
-<th>
-GetRawItemFor </th><th>
-This method allows you to get the raw item of the selected cell (Value cell or Summary cell). </th><th>
-int row, int column</th><th>
-List(object)</th></tr>
+<td>
+GetRawItemFor </td><td>
+This method allows you to get the raw item of the selected cell (Value cell or Summary cell). </td><td>
+int row, int column</td><td>
+List(object)</td></tr>
 </table>
 
 
@@ -3989,15 +3904,15 @@ This feature enables users to develop a single application and apply different l
 
 #### Property
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }} </td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Data Type**' | markdownify }} </td></tr>
+<th>
+{{ '**Property**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Data Type**' | markdownify }} </th></tr>
 <tr>
 <td>
 VisualStyle </td><td>
@@ -4019,7 +3934,6 @@ The following code sample demonstrates adding theming to the PivotGrid control.
 
 {% highlight xml %} 
 
-[XAML]
 
       <syncfusion:PivotGridControl  x:Name="pivotGrid" VisualStyle="Transparent"/>
 
@@ -4028,7 +3942,6 @@ The following code sample demonstrates adding theming to the PivotGrid control.
 
 {% highlight C# %}  
 
-[C#]
 
        this.pivotGrid.VisualStyle = PivotGridVisualStyle.Transparent;
 
@@ -4046,16 +3959,16 @@ Users can view the output in a few seconds for a large number of records that ha
 
 #### Properties
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
- {{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }} </td><td>
- {{ '**Type**' | markdownify }}</td><td>
- {{ '**Data Type**' | markdownify }}</td><td>
- {{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+ {{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }} </th><th>
+ {{ '**Type**' | markdownify }}</th><th>
+ {{ '**Data Type**' | markdownify }}</th><th>
+ {{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 UseIndexedEngine</td><td>
@@ -4094,7 +4007,6 @@ The following code sample explains how to achieve on-demand loading support in P
 
 {% highlight C# %}  
 
-[C#]
 
 DateTime _startIndex = DateTime.Now;
 
@@ -4330,14 +4242,14 @@ Pivot Grid allows you to restrict the display of records by using a mechanism ca
 
 The following methods are used to perform filtering on Pivot Columns.
 
-_Methods Table_
+Methods Table
 
 <table>
 <tr>
-<td>
-{{ '**Method**' | markdownify }}</td><td>
-{{ '**Prototype**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Prototype**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 ApplySavedValueFilter</td><td>
@@ -4380,13 +4292,13 @@ This method will recompute all summaries, ignoring any summary row whose�
 
 The following properties are used to perform filtering on Pivot Columns.
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 AllowFilter</td><td>
@@ -4403,14 +4315,14 @@ Specifies whether the PivotGridControl is used to pivot only rows, or both 
 
 The following event is used to perform filtering on Pivot Columns.
 
-_Events Table_
+Events Table
 
 <table>
 <tr>
-<td>
-{{ '**Event**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Event**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 FilterActionCompleted</td><td>
@@ -4423,7 +4335,6 @@ The following code sample illustrates how to use the ApplySavedValueFilter metho
 
 {% highlight C# %}  
 
-[C#]
 
 
 
@@ -4438,8 +4349,6 @@ this.pivotGridControl1.InternalGrid.ApplySavedValueFilter(dictionary);
 The following code sample illustrates how to use the AllowFilter property.
 
 {% highlight C# %} 
-
-[C#]
 
 
 
@@ -4461,7 +4370,7 @@ pivotGridControl1.PivotCalculations.Add(new PivotComputationInfo(){FieldName =
 
 
 
-_Filtering on Pivot Columns_
+Filtering on Pivot Columns
 
 #### Sample Link
 
@@ -4495,7 +4404,7 @@ The default Context Menu lists the following Items:
 
 
 
-_PivotGrid with User-Configurable Context Menu_
+PivotGrid with User-Configurable Context Menu
 
 ### Enabling the User-Configurable Context Menu
 
@@ -4503,7 +4412,6 @@ This User-Configurable Context Menu is available only in the RowPivotsOnly mode.
 
 {% highlight C# %} 
 
-[C#]
 
 
 
@@ -4519,7 +4427,6 @@ This following code illustrates how to reorder the Context Menu Items of the Use
 
 {% highlight C# %}  
 
-[C#]
 
 
 
@@ -4651,19 +4558,19 @@ This feature enables users to show or hide particular pivot calculations in the 
 
 
 
-_Pivot Grid with Pivot Value Chooser_
+Pivot Grid with Pivot Value Chooser
 
 ### Properties
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 ShowPivotValueChooser</td><td>
@@ -4689,13 +4596,12 @@ A sample of this feature can be found in the following location:
 
 Users can show or hide the Pivot Value Chooser by setting the ShowPivotValueChooser property to true or false, respectively. The RowPivotsOnly mode must be enabled in the pivot grid for this feature to function.
 
-_Note: PossiblePivotCalculations is a collection where users can define which fields should appear in the Pivot Value Chooser window. If it is not defined, then this collection will be automatically generated from the PivotGrid control’s ItemSource._
+> Note: PossiblePivotCalculations is a collection where users can define which fields should appear in the Pivot Value Chooser window. If it is not defined, then this collection will be automatically generated from the PivotGrid control’s ItemSource.
 
 #### Showing the Pivot Value Chooser with Possible Pivot Calculations
 
 {% highlight C# %}  
 
-[C#]
 
 ObservableCollection<PivotComputationInfo> possibleComputations = new ObservableCollection<PivotComputationInfo>()
 
@@ -4717,7 +4623,6 @@ this.pivotGridControl1.ShowPivotValueChooser = true;
 
 {% highlight vbnet %} 
 
-[VB]
 
 Dim possibleComputations As New ObservableCollection(Of PivotComputationInfo)() From {}
 
@@ -4735,7 +4640,6 @@ Me.pivotGridControl1.ShowPivotValueChooser = True
 
 {% highlight C# %}  
 
-[C#]
 
 this.pivotGridControl1.RowPivotsOnly = true;
 
@@ -4745,7 +4649,6 @@ this.pivotGridControl1.ShowPivotValueChooser = true;
 
 {% highlight vbnet %} 
 
-[VB]
 
 Me.pivotGridControl1.RowPivotsOnly = True
 
@@ -4759,13 +4662,13 @@ Me.pivotGridControl1.ShowPivotValueChooser = True
 
 The PivotGrid control provides support for loading data in a unique UI thread. That is, the PivotGrid control can perform long running operations asynchronously on a background thread so that users can access other UI controls while the grid is loading. It also loads asynchronously for every layout change operation, such as filtering, sorting, drag and drop, manipulating the field list, or changing the Pivot Schema Designer. This can be achieved by setting the LoadInBackground property to true.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 LoadInBackground</td><td>
@@ -4777,7 +4680,6 @@ This property enables the PivotGrid control to perform loading operations asynch
 
 {% highlight C# %}   
 
-[C#]
 
          // Loading asynchronously on a background thread.
 
@@ -4789,7 +4691,6 @@ This property enables the PivotGrid control to perform loading operations asynch
 
 {% highlight vbnet %} 
 
-[VB]
 
          ’ Loading asynchronously on a background thread.
 
@@ -4803,13 +4704,13 @@ This property enables the PivotGrid control to perform loading operations asynch
 
 
 
-_PivotGrid Control Loading Asynchronously_
+PivotGrid Control Loading Asynchronously
 
 ![](Features_images/Features_img53.png)
 
 
 
-_PivotGrid after Loading_
+PivotGrid after Loading
 
 #### Sample Link
 
@@ -4846,13 +4747,13 @@ The following screenshots show the PivotGrid with the PivotItem “Product” su
 
 
 
-_Subtotals displayed_
+Subtotals displayed
 
 ![](Features_images/Features_img55.png)
 
 
 
-_Subtotals hidden_
+Subtotals hidden
 
 The expander for the item “Car” is collapsed in the following screenshot since it only has a single row (FY2005) after its subtotal is hidden:
 
@@ -4860,20 +4761,20 @@ The expander for the item “Car” is collapsed in the following screenshot sin
 
 
 
-_Car row collapsed_
+Car row collapsed
 
 #### Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
- {{ '**Property**' | markdownify }}</td><td>
- {{ '**Description**' | markdownify }}</td><td>
- {{ '**Type**' | markdownify }}</td><td>
- {{ '**Data Type**' | markdownify }}</td><td>
- {{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+ {{ '**Property**' | markdownify }}</th><th>
+ {{ '**Description**' | markdownify }}</th><th>
+ {{ '**Type**' | markdownify }}</th><th>
+ {{ '**Data Type**' | markdownify }}</th><th>
+ {{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 ShowSubTotal</td><td>
@@ -4911,7 +4812,6 @@ The following code sample shows how to set values for the ShowSubTotal property:
 
 {% highlight xml %} 
 
-[XAML]
 
  <syncfusion:PivotItem FieldMappingName="Product" FieldHeader="Product" ShowSubTotal="False" TotalHeader="Total"/>
 
@@ -4923,7 +4823,6 @@ To show the subtotal of an item at the specified index in a PivotColumn:
 
 {% highlight C# %}  
 
-[C#]
 
  pivotGrid1.PivotColumns[index].ShowSubTotal = true; 
 
@@ -4931,7 +4830,6 @@ To show the subtotal of an item at the specified index in a PivotColumn:
 
 {% highlight vbnet %} 
 
-[VB]
 
 Me.pivotGrid1.PivotColumns[index].ShowSubTotals = True
 
@@ -4941,7 +4839,6 @@ To hide subtotal of an item at the specified index in a PivotRow:
 
 {% highlight C# %}  
 
-[C#]
 
 pivotGrid1.PivotRows[index].ShowSubTotal = false;  
 
@@ -4949,7 +4846,6 @@ pivotGrid1.PivotRows[index].ShowSubTotal = false;  
 
 {% highlight vbnet %} 
 
-[VB]
 
 Me.pivotGrid1.PivotRows[index].ShowSubTotals = False
 
@@ -4961,7 +4857,6 @@ Users can show or hide the expander symbol for items with a single row or column
 
 {% highlight xml %} 
 
-[XAML]
 
   <syncfusion:PivotGridControl ShowExpanderForSinglePivot="False" Name="pivotGrid/>
 
@@ -4973,7 +4868,6 @@ To show the expander of the row or column that has a single row after its subtot
 
 {% highlight C# %} 
 
-[C#]
 
  pivotGrid.ShowExpanderForSinglePivot = true;
 
@@ -4983,7 +4877,6 @@ To show the expander of the row or column that has a single row after its subtot
 
 {% highlight vbnet %}  
 
-[VB]
 
 
 
@@ -4995,7 +4888,6 @@ Me.pivotGrid.ShowExpanderForSinglePivot = True
 
 {% highlight C# %}  
 
-[C#]
 
 pivotGrid.ShowExpanderForSinglePivot = false;
 
@@ -5003,7 +4895,6 @@ pivotGrid.ShowExpanderForSinglePivot = false;
 
 {% highlight vbnet %} 
 
-[VB]
 
 Me.pivotGrid.ShowExpanderForSinglePivot = False
 
@@ -5019,15 +4910,15 @@ Some cultures have a written language that reads from right to left. Controls de
 
 #### Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }} </td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Data Type**' | markdownify }} </td></tr>
+<th>
+{{ '**Property**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Data Type**' | markdownify }} </th></tr>
 <tr>
 <td>
 FlowDirection</td><td>
@@ -5042,7 +4933,6 @@ To enable RTL support, the FlowDirection property of the PivotGrid control needs
 
 {% highlight xml %} 
 
-[XAML]
 
 <syncfusion:PivotGridControl FlowDirection="RightToLeft" x:Name="pivotGrid1" ItemSource="{Binding ProductSalesData}" >  
 
@@ -5050,7 +4940,6 @@ To enable RTL support, the FlowDirection property of the PivotGrid control needs
 
 {% highlight C# %}  
 
-[C#]
 
   this.pivotGrid1.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
@@ -5058,7 +4947,6 @@ To enable RTL support, the FlowDirection property of the PivotGrid control needs
 
 {% highlight vbnet %} 
 
-[VB]
 
   Me.pivotGrid1.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
@@ -5067,7 +4955,7 @@ To enable RTL support, the FlowDirection property of the PivotGrid control needs
 ![](Features_images/Features_img57.jpeg)
 
 
-_RTL support for PivotGrid_
+RTL support for PivotGrid
 
 #### Sample Link
 
@@ -5085,15 +4973,15 @@ This feature provides support to display the summary data of each PivotItem at t
 
 ### Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
- {{ '**Property**' | markdownify }}</td><td>
- {{ '**Description**' | markdownify }}</td><td>
- {{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Default Value**' | markdownify }}</td></tr>
+<th>
+ {{ '**Property**' | markdownify }}</th><th>
+ {{ '**Description**' | markdownify }}</th><th>
+ {{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Default Value**' | markdownify }}</th></tr>
 <tr>
 <td>
 GridLayout </td><td>
@@ -5110,7 +4998,6 @@ The following code shows how to set the GridLayout property. You can also set th
 
 {% highlight xml %} 
 
-[XAML]
 
 <pivotGrid:PivotGridControl Grid.Row="0" GridLayout="TopSummary" VisualStyle="Default" HorizontalAlignment="Left" Margin="0,0,0,0" Name="pivotGrid"                                     ItemSource="{Binding DataTableSFA}" >
 
@@ -5118,7 +5005,6 @@ The following code shows how to set the GridLayout property. You can also set th
 
 {% highlight C# %}  
 
-[C#]
 
 this.pivotGrid.GridLayout = GridLayout.TopSummary;
 
@@ -5127,7 +5013,6 @@ this.pivotGrid.GridLayout = GridLayout.TopSummary;
 
 {% highlight vbnet %} 
 
-[VB]
 
 Me.pivotGrid.GridLayout = GridLayout.TopSummary
 
@@ -5138,7 +5023,7 @@ The following image illustrates a Pivot Grid which is set show the summary data 
 ![](Features_images/Features_img58.png)
 
 
-_Summary data at the top_
+Summary data at the top
 
 #### Sample Link
 
@@ -5159,16 +5044,16 @@ Printing option allows you to have a hard copy of the PivotGrid.
 
 ### Properties
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 PrintHeader </td><td>
@@ -5187,7 +5072,7 @@ Boolean</td><td>
 
 ### Methods
 
-_Methods Table_
+Methods Table
 
 <table>
 <tr>
@@ -5199,29 +5084,29 @@ _Methods Table_
 {{ '**Return Type**' | markdownify }}</th><th>
 {{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
-<th>
-ShowPrintPreview</th><th>
-Shows the Print Preview window with empty template and default title</th><th>
-(Window Win)</th><th>
--</th><th>
-Void</th><th>
--</th></tr>
+<td>
+ShowPrintPreview</td><td>
+Shows the Print Preview window with empty template and default title</td><td>
+(Window Win)</td><td>
+-</td><td>
+Void</td><td>
+-</td></tr>
 <tr>
-<th>
-ShowPrintPreview</th><th>
-Shows the Print Preview window with templates for header, footer and default title.</th><th>
-(DataTemplate headerTemplate, DataTemplate footerTemplate, Window win)</th><th>
--</th><th>
-Void</th><th>
--</th></tr>
+<td>
+ShowPrintPreview</td><td>
+Shows the Print Preview window with templates for header, footer and default title.</td><td>
+(DataTemplate headerTemplate, DataTemplate footerTemplate, Window win)</td><td>
+-</td><td>
+Void</td><td>
+-</td></tr>
 <tr>
-<th>
-ShowPrintPreview</th><th>
-Shows the Print Preview window with templates for header, footer and user defined title</th><th>
-(DataTemplate headerTemplate, DataTemplate footerTemplate, string title, Window win)</th><th>
-</th><th>
-</th><th>
-</th></tr>
+<td>
+ShowPrintPreview</td><td>
+Shows the Print Preview window with templates for header, footer and user defined title</td><td>
+(DataTemplate headerTemplate, DataTemplate footerTemplate, string title, Window win)</td><td>
+</td><td>
+</td><td>
+</td></tr>
 </table>
 
 ### Adding Print Preview and Print for PivotGrid in an Application
@@ -5232,7 +5117,6 @@ Following code example shows how to set the PrintHeader and PrintFooter properti
 
 {% highlight xml %} 
 
-[XAML]
 
 <syncfusion:PivotGridControl x:Name="pivotGrid1" syncfusion:PrintSettings.PrintFooter="True" syncfusion:PrintSettings.PrintHeader="True" VerticalAlignment="Top" ItemSource="{Binding ProductSalesData}">
 
@@ -5243,7 +5127,6 @@ Following code example shows how to call ShowPrintPreview methods.
 
 {% highlight C# %} 
 
-[C#]
 
     //	Shows the Print Preview window with templates for header, footer and with user defined title          
 	this.pivotGrid1.ShowPrintPreview((DataTemplate)this.Resources["HeaderTemplate"], (DataTemplate)this.Resources["FooterTemplate"],"Print Preview", this);
@@ -5269,7 +5152,7 @@ The following screenshot displays a Print Preview window along with a header and
 
 
 
-_Print Preview_
+Print Preview
 
 The Print Preview window provides the following options:  “Zooming”, “Page Settings”,”Print”. 
 
@@ -5287,7 +5170,7 @@ The following screen shot shows the zooming options dropdown in the Print previe
 
 
 
-_Zooming_
+Zooming
 
 #### Page Settings
 
@@ -5299,7 +5182,7 @@ The following screenshot shows the Page setting icon in a Print preview window:
 
 
 
-_Page settings_
+Page settings
 
 #### Print 
 
@@ -5311,7 +5194,7 @@ The following screen shot shows the Print icon in the print preview window.
 
 
 
-_Print option_
+Print option
 
 ### Sample Link
 
@@ -5335,19 +5218,19 @@ Refer the following screenshots that display the step-by-step implementation of 
 
 ![D:/Capture18.PNG](Features_images/Features_img63.png)
 
-_Normal PivotGrid without any sorting_
+Normal PivotGrid without any sorting
 
 ![D:/Capture19.PNG](Features_images/Features_img64.png)
 
- _“Quantity” has been sorted in the descending order_
+ “Quantity” has been sorted in the descending order
 
 ![D:/Capture20.PNG](Features_images/Features_img65.png)
 
-_Multi-columns (Amount and Quantity) has been sorted in the above PivotGrid_
+Multi-columns (Amount and Quantity) has been sorted in the above PivotGrid
 
 ![D:/Capture21.PNG](Features_images/Features_img66.png)
 
- _‘N’ number of column has been sorted in the above PivotGrid_
+ ‘N’ number of column has been sorted in the above PivotGrid
 
 ### Sample Link
 
@@ -5359,16 +5242,16 @@ _Multi-columns (Amount and Quantity) has been sorted in the above PivotGrid_
 
 PivotGrid control provides cell selection feature that is used to select values along the row and column headers according to their covered ranges.
 
-_Properties_
+Properties
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td><td>
-    {{ '**Type**' | markdownify }}</td><td>
-{{ '**Return Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+    {{ '**Type**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 EnableSelectionWithHeaders</td><td>
@@ -5385,7 +5268,6 @@ property either in XAML or C#.
 
 {% highlight xml %}  
 
-[XAML]
 
 <syncfusion:PivotGridControl Margin="5" Grid.Row="0" x:Name="pivotGrid1" ShowGroupingBar="False" ItemSource="{Binding ProductSalesData}" AllowSelectionWithHeaders="True">
 
@@ -5393,7 +5275,6 @@ property either in XAML or C#.
 
 {% highlight C# %}  
 
-[C#]
 
 this.pivotGrid1.AllowSelectionWithHeaders = true;
 
@@ -5405,13 +5286,13 @@ It is used to select the header cells along with the value cells while selecting
 
 
 
-_Selecting the sub-columns along with headers_
+Selecting the sub-columns along with headers
 
 ![D:/Capture16.PNG](Features_images/Features_img68.png)
 
 
 
-_Selecting the entire row along with headers_
+Selecting the entire row along with headers
 
 ### Sample Link
 

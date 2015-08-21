@@ -68,7 +68,7 @@ Load Diagram Page</td></tr>
 
  This process is explained in the following topic:
 
-### Save Diagram Page
+## Save Diagram Page
 
 Save operation can be done in three ways,
 
@@ -80,7 +80,7 @@ Using the Save Dialog Box
 
 To save the page, the following code can be used.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -91,7 +91,7 @@ dc.Save();
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -113,7 +113,7 @@ File name with path
 
 You can also specify the name of the file directly in the Save method.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -124,7 +124,7 @@ dc.Save(@"C:\TestPage.xaml");
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -134,7 +134,7 @@ dc.Save("C:\TestPage.xaml")
 
 {% endhighlight %}
 
-_Note: Essential Diagram WPF does not support serializing bindings and bitmap Images._
+> Note: Essential Diagram WPF does not support serializing bindings and bitmap Images.
 
 Saving to a stream
 
@@ -142,7 +142,7 @@ You can also save to a stream.
 
 The following code example shows how it can be done.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -155,7 +155,7 @@ dc.Save(stream as System.IO.Stream);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -178,7 +178,7 @@ Load using the Load Dialog Box
 
 To load the page, the following code can be used.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -188,7 +188,7 @@ dc.Load();
 
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -210,7 +210,7 @@ File name with path
 
 You can also specify the name of the file directly in the Load method.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -220,7 +220,7 @@ dc.Load(@"C:\TestPage.xaml");
 
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -230,7 +230,7 @@ dc.Load("C:\TestPage.xaml")
 
 {% endhighlight %}
 
-_Note: Essential Diagram WPF does not support serializing bindings and bitmap Images._
+> Note: Essential Diagram WPF does not support serializing bindings and bitmap Images.
 
 Loading from a stream
 
@@ -238,7 +238,7 @@ You can also load from a stream.
 
 To load from the stream use the following code snippet.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -248,7 +248,7 @@ dc.Load(stream as System.IO.Stream);
 
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -258,7 +258,7 @@ dc.Load(TryCast(stream, System.IO.Stream))
 
 {% endhighlight %}
 
-_Note: While loading from memory stream please make sure the stream’s Position property is set to 0._
+> Note: While loading from memory stream please make sure the stream’s Position property is set to 0.
 
 ## Localization
 
@@ -295,7 +295,7 @@ By default, the current culture is set to “en-US”. You can check the current
 
 In the following example, CurrentUICulture is set before IntializeComponent in the StartUp page (MainPage.xaml.cs).
 {% highlight c# %}
-[C#]
+
 
 public MainPage()
 
@@ -310,7 +310,7 @@ public MainPage()
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -330,7 +330,7 @@ End Sub
 
 Else, CurrentUICulture is set in the Application_Startup event in the App.xaml.cs file, as shown in the following example.
 {% highlight c# %}
-[C#]
+
 
 private void Application_Startup(object sender, StartupEventArgs e)
 
@@ -345,7 +345,7 @@ private void Application_Startup(object sender, StartupEventArgs e)
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 Private Sub Application_Startup(ByVal sender As Object, ByVal e As StartupEventArgs)
 
@@ -369,7 +369,7 @@ Specifying the Directory Location of the Resource File
 
 By default, the resource file for a specific culture is obtained from the Resources directory. However, the location of the resource file can be changed by using DiagramControl’s LocalizationPath property, as shown in the following code snippet.
 {% highlight c# %}
-[C#]
+
 
 // The location of the localized resource file is stored in the \Resources\Controls directory.
 
@@ -378,7 +378,7 @@ diagramControl.LocalizationPath = "Resources.Controls";
 
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]
+
 
 'The location of the localized resource file is stored in the \Resources\Controls directory.
 
@@ -394,7 +394,7 @@ _Customized LocalizationPath_
 
 Example
 {% highlight c# %}
-[C#]
+
 
 // The location of the localized resource file is stored in the \Resources\X\Y\Z directory.
 
@@ -403,7 +403,7 @@ diagramControl.LocalizationPath = "Resources.X.Y.Z";
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 'The location of the localized resource file is stored in the \Resources\X\Y\Z directory.
 
@@ -417,7 +417,7 @@ diagramControl.LocalizationPath = "Resources.X.Y.Z"
 
 _Customized LocalizationPath_
 
-_Note: LocalizationPath for the resource file should be specified before DiagramControl’s Template is applied._ 
+> Note: LocalizationPath for the resource file should be specified before DiagramControl’s Template is applied.
 
 Properties
 

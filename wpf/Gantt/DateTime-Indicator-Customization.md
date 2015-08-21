@@ -67,7 +67,7 @@ The following code samples illustrate how to customize the DateTime indicator.
 
 {% highlight html %}
 
-[XAML]
+
 
 <gantt:GanttControl x:Name="Gantt"
 
@@ -107,7 +107,7 @@ The following code samples illustrate how to customize the DateTime indicator.
 {% endhighlight  %}
 
 {% highlight c# %}
-[C#]
+
 
 //StrokeDashArray will change the style of Line
 

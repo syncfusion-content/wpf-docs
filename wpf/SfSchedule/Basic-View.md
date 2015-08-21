@@ -22,7 +22,6 @@ Using the property “ScheduleType” of SfSchedule, we can set the above view. 
 
 Code Example:
 {% highlight html %}
-[XAML]
 
 
 
@@ -50,7 +49,6 @@ Code Example:
 
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -68,7 +66,7 @@ this.grid.Children.Add(schedule);
 
 
 
-_Month View Scheduling_
+Month View Scheduling
 
 
 

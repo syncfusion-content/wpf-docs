@@ -25,7 +25,7 @@ In the following example, 1.3 has been set for the value. The rating item has be
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -47,7 +47,7 @@ In this case, 0.3 has been set for the value. The rating item was filled partial
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -67,7 +67,7 @@ In this case, 1.3 has been set for the Value. Rating item was filled to reflect 
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 

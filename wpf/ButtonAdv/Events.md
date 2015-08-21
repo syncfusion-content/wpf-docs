@@ -16,10 +16,10 @@ The ButtonAdv control comprises the following events:
 The following code adds the Click event handler to the ButtonAdv control:
 
 {% highlight html %}
-[XAML]<sync:ButtonAdv Click="button_Click"/></td></tr>
+<sync:ButtonAdv Click="button_Click"/></td></tr>
 {% endhighlight %}
 {% highlight c# %}
-[C#]ButtonAdv button = new ButtonAdv()button.Click += new RoutedEventHandler(button_Click);
+ButtonAdv button = new ButtonAdv()button.Click += new RoutedEventHandler(button_Click);
 {% endhighlight %}
 
 
@@ -28,10 +28,10 @@ The following code adds the Click event handler to the ButtonAdv control:
 The following code adds the Checked event handler to the ButtonAdv control:
 
 {% highlight html %}
-[XAML]<sync:ButtonAdv Checked="button_Checked"/>
+<sync:ButtonAdv Checked="button_Checked"/>
 {% endhighlight %}
 {% highlight c# %}
-[C#]ButtonAdv button = new ButtonAdv()button.Checked += new RoutedEventHandler(button_Checked);
+ButtonAdv button = new ButtonAdv()button.Checked += new RoutedEventHandler(button_Checked);
 
 {% endhighlight  %}
 

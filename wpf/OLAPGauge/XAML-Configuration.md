@@ -21,11 +21,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 DataSource.ConnectionString</td><td>
@@ -95,7 +95,7 @@ Adding an OLAP report to OLAP Gauge control in design time is described in the f
 
  {% highlight xml %}
 
-    [XAML]
+    
 
 <syncfusion:OlapGauge x:Name="olapChart" 
 

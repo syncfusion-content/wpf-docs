@@ -39,7 +39,7 @@ The following steps explain how to create a SfDateTimeRangeNavigator.
 
 
 {% highlight html %}
-[XAML]
+
 
 xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
 
@@ -49,7 +49,7 @@ xmlns:Syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts"
 
 {% highlight html %}
 
-[XAML]
+
 
 <Syncfusion:SfDateTimeRangeNavigator>
 
@@ -65,7 +65,7 @@ Since the above step will produce an empty SfDateTimeRangeNavigator without any 
 
 {% highlight html %}
 
-[XAML]
+
 
 <Syncfusion:SfDateTimeRangeNavigator ItemsSource="{Binding ItemsSource}" XBindingPath="Date"  >
 
@@ -100,7 +100,7 @@ To add any UI content inside a SfDateTimeRangeNavigator</td></tr>
 
 {% highlight html %}
 
-[XAML]
+
 
 <Syncfusion:SfDateTimeRangeNavigator ItemsSource="{Binding ItemsSource}" XBindingPath="Date"  >
 
@@ -162,7 +162,7 @@ This section demonstrates how to create an application using SfDateTimeRangeNavi
 
 
 {% highlight c# %}
-[C#]
+
 
 using Syncfusion.UI.Xaml.Charts;
 
@@ -174,7 +174,7 @@ Initialize the Range Navigator
 
 {% highlight c# %}
 
-[C#]
+
 
 SfDateTimeRangNavigator rangenavigator = new SfDateTimeRangNavigator ();
 
@@ -186,7 +186,7 @@ Create a Sample Data Source
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -247,7 +247,7 @@ Define the ItemsSource for the Range Navigator as shown in the following code ex
 > Note: You can set any IEnumerable collection as an ItemsSource.
 
 {% highlight c# %}
-[C#]
+
 
 //Intialize the SfDateTimeRangNavigator
 
@@ -267,7 +267,7 @@ Add the content that needs to be displayed inside SfDateTimeRangeNavigator using
 
 {% highlight c# %}
 
-[C#]
+
 
 //Intialize the SfChart
 

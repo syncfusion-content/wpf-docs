@@ -13,7 +13,6 @@ The ContentTemplate property can be used to customize the content of the Radial 
 
 
 {% highlight html %}
-[XAML]
 
   <syncfusion:SfRadialSlider
 

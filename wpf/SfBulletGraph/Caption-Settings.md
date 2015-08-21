@@ -11,7 +11,7 @@ documentation: ug
 
 The Caption for a Bullet Graph is used to specify a unique label describing the value represented. 
 {% highlight html %}
-[XAML]
+
 
          <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -41,7 +41,7 @@ The Caption for a Bullet Graph is used to specify a unique label describing the 
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -87,7 +87,7 @@ The Caption for a Bullet Graph is used to specify a unique label describing the 
 
 ![C:/Users/Giftline/Desktop/blessy3.jpg](Concept-and-Features_images/Concept-and-Features_img3.jpeg)
 
-
+_Customizing Captions in a Bullet Graph_
 
 ## Caption Position
 
@@ -99,7 +99,7 @@ The caption in the Bullet Graph can be placed in the start or end of the quantit
 ### Code Example
 
 {% highlight html %}
-[XAML]
+
 
     <syncfusion:SfBulletGraph Orientation="Horizontal" FlowDirection="Forward" Minimum="0" Maximum="10" Interval="2"  
 
@@ -124,7 +124,7 @@ The caption in the Bullet Graph can be placed in the start or end of the quantit
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -162,5 +162,5 @@ SfBulletGraph bulletgraph = new SfBulletGraph();
 
 ![C:/Users/Giftline/Desktop/New folder/1.jpg](Concept-and-Features_images/Concept-and-Features_img4.png)
 
-
+_Customizing caption position in bullet graph_
 

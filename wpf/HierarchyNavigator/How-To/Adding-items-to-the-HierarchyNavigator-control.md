@@ -7,7 +7,7 @@ control: Hierarchical Navigator
 documentation: ug
 ---
 
-### Adding items to the HierarchyNavigator control
+## Adding items to the HierarchyNavigator control
 
 The steps to add items to the HierarchyNavigator control through code are as follows:
 
@@ -15,8 +15,8 @@ The steps to add items to the HierarchyNavigator control through code are as fol
 2. Specify the item name in the Content property for each item in the hierarchical structure.
 
 
+{% highlight c# %}
 
-C#
 
 
 
@@ -70,11 +70,11 @@ hierarchyNavigatorItem1.Items.Add(hierarchyNavigatorItem11);
 
 hierarchyNavigator1.Items.Add(hierarchyNavigatorItem1);
 
-
+{% endhighlight %}
 
 Or
 
-XAML
+{% highlight xml %}
 
 
 
@@ -106,5 +106,5 @@ XAML
 
 </syncfusion:HierarchyNavigator>
 
-
+{% endhighlight %}
 

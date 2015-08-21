@@ -55,7 +55,7 @@ The following code illustrates how to define style:
 
 
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -371,7 +371,7 @@ The following code illustrates how to add the styles to the application:
 
 
 {% highlight html %}
-[XAML]
+
 
 
 

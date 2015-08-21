@@ -23,7 +23,6 @@ The value of the digital characters is scaled by changing its height and width. 
 
 {% highlight xml %}
 
-[XAML]
 
 
 
@@ -34,7 +33,7 @@ The value of the digital characters is scaled by changing its height and width. 
 
 {% highlight C# %}
 
-[C#]
+
 
             SfDigitalGauge digitalgauge = new SfDigitalGauge();
 
@@ -64,7 +63,6 @@ The value of the digital characters is scaled by changing its height and width. 
 
 {% highlight xml %}
 
-[XAML]
 
 <syncfusion:SfDigitalGauge  Value="SYNCFUSION"  CharacterWidth="60"
 
@@ -74,7 +72,7 @@ The value of the digital characters is scaled by changing its height and width. 
 {% highlight C# %}
 
 
-[C#]
+
 
             SfDigitalGauge digitalgauge = new SfDigitalGauge();
 
@@ -107,7 +105,6 @@ The Digital Gauge also performs skew transformation for the digital characters. 
 
 {% highlight xml %}
 
-[XAML]
 
       <syncfusion:SfDigitalGauge  Value="SYNCFUSION"  SkewAngleX="35"
 
@@ -117,7 +114,7 @@ The Digital Gauge also performs skew transformation for the digital characters. 
 
 {% highlight C# %}
 
-[C#]
+
 
             SfDigitalGauge digitalgauge = new SfDigitalGauge();
 
@@ -149,7 +146,6 @@ The Digital Gauge also performs skew transformation for the digital characters. 
 
 {% highlight xml %}
 
-[XAML]
 
    <syncfusion:SfDigitalGauge  Value="SYNCFUSION"  SkewAngleY="30"
 
@@ -160,7 +156,7 @@ The Digital Gauge also performs skew transformation for the digital characters. 
 
 {% highlight C# %}
 
-[C#]
+
 
             SfDigitalGauge digitalgauge = new SfDigitalGauge();
 

@@ -7,17 +7,17 @@ control: PivotGrid
 documentation: ug
 ---
 
-## DisplayOption
+# DisplayOption
 
 DisplayOption behavior is used to display or hide the computation values in PivotEngine based on the option provided. Following are the display options for PivotGrid.
 
-#### All
+### All
 
 This option is used to display complete values present in the PivotEngine, in the PivotGrid control.
 
-#### Setting DisplayOption as “All”
+### Setting DisplayOption as “All”
 
-#### Through XAML
+### Through XAML
 
 1. First add the PivotGridControl using syncfusion:PivotGridControl class.
 2. Then, create a new PivotItem using PivotGridControl.PivotComputationInfo class.
@@ -27,7 +27,7 @@ This option is used to display complete values present in the PivotEngine, in th
 
 {% highlight xml %} 
 
-[XAML]
+
 
 <Grid>
 
@@ -47,7 +47,7 @@ This option is used to display complete values present in the PivotEngine, in th
 
 {% endhighlight %} 
 
-#### Through Code Behind
+### Through Code Behind
 
 1. First, create a new PivotGridControl using PivotGridControl class in Window_Loaded() event handler.
 2. Then, create a new PivotItem using PivotComputationInfo class in PivotGridControl.
@@ -57,7 +57,6 @@ This option is used to display complete values present in the PivotEngine, in th
 
 {% highlight C# %}  
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -78,7 +77,6 @@ SummaryType = SummaryType.DoubleTotalSum, DisplayOption = DisplayOption.All�
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -102,15 +100,15 @@ End Sub
 
 
 
-_PivotGrid when DisplayOption is set to “All”_
+PivotGrid when DisplayOption is set to “All”
 
-#### Calculations
+### Calculations
 
 This option allows the specific PivotComputationInfo to be visible only in the Calculation columns of PivotGrid.
 
-#### Setting DisplayOption as “Calculations”
+### Setting DisplayOption as “Calculations”
 
-#### Through XAML
+### Through XAML
 
 1. First add the PivotGridControl using syncfusion:PivotGridControl class.
 2. Then create new PivotItem using PivotGridControl.PivotComputationInfo class.
@@ -120,7 +118,6 @@ This option allows the specific PivotComputationInfo to be visible only in the C
 
 {% highlight xml %} 
 
- [XAML]
 
 <Grid>
 
@@ -140,7 +137,7 @@ This option allows the specific PivotComputationInfo to be visible only in the C
 
 {% endhighlight %}
 
-#### Through Code Behind
+### Through Code Behind
 
 1. First create a new PivotGridControl using PivotGridControl class in Window_Loaded() event handler.
 2. Then create new PivotItem using PivotComputationInfo class in PivotGridControl.
@@ -150,7 +147,6 @@ This option allows the specific PivotComputationInfo to be visible only in the C
 
 {% highlight C# %}  
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -171,7 +167,6 @@ SummaryType = SummaryType.DoubleTotalSum, DisplayOption = DisplayOption.Calc
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -194,7 +189,7 @@ End Sub
 
 
 
-_PivotGrid when DisplayOption is set to “Calculations”_
+PivotGrid when DisplayOption is set to “Calculations”
 
 #### Summary
 
@@ -211,8 +206,6 @@ This option allows the specific PivotComputationInfo to be visible only in the S
 
 
 {% highlight xml %} 
-
-[XAML]
 
 <Grid>
 
@@ -244,8 +237,6 @@ This option allows the specific PivotComputationInfo to be visible only in the S
 
 {% highlight C# %}  
 
-[C#]
-
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {
@@ -265,7 +256,6 @@ SummaryType = SummaryType.DoubleTotalSum, DisplayOption = DisplayOption.Summ
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -287,15 +277,15 @@ End Sub
 ![](Concepts_images/Concepts_img3.png)
 
 
-_PivotGrid when DisplayOption is set to “Summary”_
+PivotGrid when DisplayOption is set to “Summary”
 
-#### GrandTotals  
+### GrandTotals  
 
 This option allows the specific PivotComputationInfo to be visible only in the GrandTotal columns of PivotGrid.
 
-#### Setting DisplayOption as GrandTotals
+### Setting DisplayOption as GrandTotals
 
-#### Through XAML
+### Through XAML
 
 1. First add the PivotGridControl using syncfusion:PivotGridControl class.
 2. Then create a new PivotItem using PivotGridControl.PivotComputationInfo class.
@@ -305,7 +295,6 @@ This option allows the specific PivotComputationInfo to be visible only in the G
 
 {% highlight xml %}
 
-[XAML]
 
 <Grid>
 
@@ -326,7 +315,7 @@ This option allows the specific PivotComputationInfo to be visible only in the G
  {% endhighlight %} 
  
 
-#### Through Code Behind
+### Through Code Behind
 
 1. First create a new PivotGridControl using PivotGridControl class in Window_Loaded() event handler.
 2. Then create new PivotItem using PivotComputationInfo class in PivotGridControl.
@@ -336,7 +325,6 @@ This option allows the specific PivotComputationInfo to be visible only in the G
 
 {% highlight C# %}  
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -357,7 +345,6 @@ SummaryType = SummaryType.DoubleTotalSum, DisplayOption = DisplayOption.Gran
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -381,15 +368,15 @@ End Sub
 
 
 
-_PivotGrid when DisplayOption is set to “GrandTotals”_
+PivotGrid when DisplayOption is set to “GrandTotals”
 
-#### None
+### None
 
 This option does not allow the specific PivotComputationInfo to be visible in any region of PivotGrid. 
 
-#### Setting DisplayOption as None
+### Setting DisplayOption as None
 
-#### Through XAML
+### Through XAML
 
 1. First add the PivotGridControl using syncfusion:PivotGridControl class.
 2. Then create a new PivotItem using PivotGridControl.PivotComputationInfo class.
@@ -399,7 +386,6 @@ This option does not allow the specific PivotComputationInfo to be visible in an
 
 {% highlight xml %} 
 
-[XAML]
 
 <Grid>
 
@@ -420,7 +406,7 @@ This option does not allow the specific PivotComputationInfo to be visible in an
 {% endhighlight %} 
 
 
-#### Through Code Behind
+### Through Code Behind
 
 1. First create a new PivotGridControl using PivotGridControl class in Window_Loaded() event handler.
 2. Then create a new PivotItem using PivotComputationInfo class in PivotGridControl.
@@ -430,7 +416,6 @@ This option does not allow the specific PivotComputationInfo to be visible in an
 
 {% highlight C# %}  
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -450,7 +435,6 @@ SummaryType = SummaryType.DoubleTotalSum, DisplayOption = DisplayOption.None
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -471,7 +455,7 @@ End Sub
 
 ![](Concepts_images/Concepts_img5.png)
 
-_PivotGrid when DisplayOption is set to “None”_
+PivotGrid when DisplayOption is set to “None”
 
 
 

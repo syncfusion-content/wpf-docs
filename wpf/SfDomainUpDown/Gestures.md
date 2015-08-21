@@ -9,7 +9,7 @@ documentation: ug
 
 # Gestures
 
-### Mouse Wheel
+## Mouse Wheel
 
 The current item moves up or down when mouse wheel is scrolled.
 

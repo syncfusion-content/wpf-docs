@@ -59,11 +59,11 @@ Following are the steps to add the Spreadsheet control to WPF application using 
 
 
 
-   > _Note: To add the SpreadsheetRibbon control to your application, drag SpreadsheetRibbon to the Designer area and set the Spreadsheet contol as a DataContext as shown the following code._
+   > Note: To add the SpreadsheetRibbon control to your application, drag SpreadsheetRibbon to the Designer area and set the Spreadsheet contol as a DataContext as shown the following code.
 
    ~~~ xml
 
-   [XMAL]
+   
 
    <syncfusion:SpreadsheetRibbon DataContext="{Binding ElementName=spreadsheetControl1}"/>
    ~~~
@@ -77,21 +77,19 @@ You can also add the Spreadsheet control to a WPF application through XAML and C
 {%highlight xml%}
 
 
-[XMAL]
 
 <syncfusion:SpreadsheetControl HorizontalAlignment="Left"  Name="spreadsheetControl1" VerticalAlignment="Top" />
 
 {%endhighlight%}
 
 {%highlight c#%}
- [C#]
  
  SpreadsheetControl Spreadsheet1 = new SpreadsheetControl();LayoutRoot.Children.Add(Spreadsheet1);
 {%endhighlight%}
  
  
 {%highlight vbnet%}
-[VB]
+
 
 Dim Spreadsheet1 As SpreadsheetControl = New SpreadsheetControl()LayoutRoot.Children.Add(Spreadsheet1)
 {%endhighlight%}
@@ -104,22 +102,22 @@ You can open the Excel document in the Spreadsheet control using _ImportFromExce
 
 
 {%highlight c#%}
-[C#]
+
 FileStream stream = new FileStream(@"..\..\Data\DefaultSheet.xlsx", FileMode.Open);
 spreadsheet.ImportFromExcel(stream);
 {%endhighlight%}
 
 {%highlight vbnet%}
- [VB]
+
  
  Dim stream As FileStream = New FileStream("..\..\Data\DefaultSheet.xlsx", FileMode.Open)spreadsheet.ImportFromExcel(stream)
 
 {%endhighlight%}
 
 
-> 
+ 
 
-> _Note: You can also open the Excel document using ImportFromExcelCommand. When you execute the ImportFromExcelCommand it will display the Open dialog box. Using this Open dialog, you can open the Excel document in the Spreadsheet control._
+> Note: You can also open the Excel document using ImportFromExcelCommand. When you execute the ImportFromExcelCommand it will display the Open dialog box. Using this Open dialog, you can open the Excel document in the Spreadsheet control.
 
 ## Appearance and Structure of the Controls
 

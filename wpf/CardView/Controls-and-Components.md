@@ -72,12 +72,12 @@ _Property/Properties Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td><td>
-Reference links</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 CanGroup</td><td>
@@ -92,16 +92,14 @@ NA</td></tr>
 
 CanGroup property can be added directly to an application using the following code snippet:
 
-{% highlight xml %}
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:CardView CanGroup="False">        </syncfusion:CardView></td></tr>
-<tr>
-<td>
-[C#]CardView cardview = new CardView();       cardview.CanGroup = false;</td></tr>
-</table>
+
+{% highlight xml %}
+<syncfusion:CardView CanGroup="False">        </syncfusion:CardView>
+{% endhighlight  %}
+{% highlight c# %}
+CardView cardview = new CardView();       cardview.CanGroup = false;
+
 
 {% endhighlight %}
 
@@ -141,14 +139,12 @@ CanSort can be added directly to an application using the following code snippet
 
 {% highlight xml %}
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:CardView CanSort="False">        </syncfusion:CardView></td></tr>
-<tr>
-<td>
-[C#]CardView cardview = new CardView();       cardview.CanSort = false;</td></tr>
-</table>
+<syncfusion:CardView CanSort="False">        </syncfusion:CardView>
+{% endhighlight  %}
+{% highlight c# %}
+
+CardView cardview = new CardView();       cardview.CanSort = false;
+
 
 {% endhighlight %}
 
@@ -191,16 +187,13 @@ CanEdit property can be added directly to an application using the following cod
 
 {% highlight xml %}
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:CardView CanEdit="False">        </syncfusion:CardView></td></tr>
-<tr>
-<td>
-[C#]CardView cardview = new CardView();       cardview.CanEdit = false;</td></tr>
-</table>
+<syncfusion:CardView CanEdit="False">        </syncfusion:CardView>
+{% endhighlight  %}
+{% highlight c# %}
+CardView cardview = new CardView();       cardview.CanEdit = false;
+{% endhighlight  %}
 
-{% endhighlight %}
+
 
 ## Header Panel
 
@@ -234,14 +227,12 @@ ShowHeader property can be added directly to an application using the following 
 
 {% highlight xml %}
 
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:CardView ShowHeader="False">        </syncfusion:CardView></td></tr>
-<tr>
-<td>
-[C#]CardView cardview = new CardView();       cardview.ShowHeader = false;</td></tr>
-</table>
+
+<syncfusion:CardView ShowHeader="False">        </syncfusion:CardView>
+{% endhighlight %}
+{% highlight c# %}
+CardView cardview = new CardView();       cardview.ShowHeader = false;</td></tr>
+
 
 {% endhighlight %}
 

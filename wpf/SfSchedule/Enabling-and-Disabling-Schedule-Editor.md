@@ -11,7 +11,6 @@ documentation: ug
 
 The Editor can be disabled or enabled using the property AllowEditing and its default value is True.
 {% highlight html %}
-[XAML]
 
 
 
@@ -22,7 +21,6 @@ The Editor can be disabled or enabled using the property AllowEditing and its de
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
 
 
 

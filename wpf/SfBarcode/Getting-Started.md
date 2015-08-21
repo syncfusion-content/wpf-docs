@@ -28,12 +28,12 @@ To create the SfBarcode control in Visual Studio:
 ![](Getting-Started_images/Getting-Started_img1.png)
 
 
-
+_SfBarcode Control after Dragging to Design View_
 
 
 The following code example shows how to create the Barcode control from XAML:
 {% highlight html %}
-[XAML]
+
 
 <Page xmlns:sync="using:Syncfusion.UI.Xaml.Controls.Barcode">
 
@@ -59,7 +59,7 @@ The following code example shows how to create the Barcode control from XAML:
 
 The text to be encoded can be set using the Text property. By default, this original text will be displayed at the bottom of the bar code. The location of the text can be toggled between top and bottom using TextLocation property. The horizontal alignment of the text can be set using TextAlignment. The text brush and other various font customization can also be done using the built-in font properties. Optionally, the user can hide the barcode text by setting the DisplayText property to false.
 {% highlight html %}
-[XAML]
+
 
 <sync:SfBarcode x:Name="barcode" Text="http://www.syncfusion.com" DisplayText="False” Symbology="QRBarcode"/>
 

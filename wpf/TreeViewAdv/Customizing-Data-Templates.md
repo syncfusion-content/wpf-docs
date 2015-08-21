@@ -46,7 +46,7 @@ Different templates can be used for items based on specific constraints using th
 
 The following example illustrates this:
 
-1. Create the template selector as shown in the following code snippet:
+1.Create the template selector as shown in the following code snippet:
 
 
 
@@ -90,7 +90,7 @@ public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 
 
 
-2. Define the Data templates in the Window’s resources as follows:
+2.Define the Data templates in the Window’s resources as follows:
 
 
 
@@ -121,8 +121,7 @@ public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 
 
-
-3.  Create the instance for the template selector in the Window’s resources as follows:
+3.Create the instance for the template selector in the Window’s resources as follows:
 
 
 
@@ -134,7 +133,7 @@ public class TreeViewAdvItemTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 
 
-4. Use the template selector to choose the template for the TreeViewAdv as follows:
+4.Use the template selector to choose the template for the TreeViewAdv as follows:
 
 
 
@@ -157,7 +156,7 @@ The TreeVewAdv generates as shown in the following screenshot:
 
 The user can modify the template while editing the TreeViewItemAdv. The following example illustrates the process of changing the template:
 
-1. Create the DataTemplate instance for the EditTemplate as follows: 
+1.Create the DataTemplate instance for the EditTemplate as follows: 
 
 
 
@@ -177,7 +176,7 @@ The user can modify the template while editing the TreeViewItemAdv. The followin
 {% endhighlight %}
 
 
-2. Set the EditedItemTemplate for the TreeViewAdv to the above template as follows:
+2.Set the EditedItemTemplate for the TreeViewAdv to the above template as follows:
 
 
 {% highlight xml %}
@@ -205,7 +204,7 @@ The user can choose the template at runtime for editing the TreeViewAdv.
 
 The following example explains how to choose the template at runtime:
 
-1. Create the template selector as given in the following code snippet:
+1.Create the template selector as given in the following code snippet:
 
 
 
@@ -246,8 +245,7 @@ public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 
 
-
-2. Define the Data templates in the Window’s resources as follows:
+2.Define the Data templates in the Window’s resources as follows:
 
 
 
@@ -271,7 +269,7 @@ public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 
 
 
-3.  Create the instance for the template selector in the Window’s resources as follows:
+3.Create the instance for the template selector in the Window’s resources as follows:
 
 
 
@@ -283,7 +281,7 @@ public class TreeViewAdvEditTemplateSelector : DataTemplateSelector
 
 
 
-4. Use the template selector to choose the template for the TreeViewAdv as follows:
+4.Use the template selector to choose the template for the TreeViewAdv as follows:
 
 
 

@@ -19,7 +19,7 @@ Enabling the printing feature is like invoking an API – ShowPrintDialog() on t
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -140,7 +140,7 @@ Headers and Footers can be added to the document to be printed.
 
 
 {% highlight html %}
-[XAML]
+
 
 
 

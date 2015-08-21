@@ -11,7 +11,6 @@ documentation: ug
 
 We can customizing the markers by initialize the marker template selector class, and we can differentiate the first, last, high, low, negative points.
 {% highlight html %}
-[XAML]
 
   <Syncfusion:SfLineSparkline 
 

@@ -11,7 +11,6 @@ documentation: ug
 
 Following code used to enable the axis and this feature applicable for all the sparkline except WinLoss sparkline, also you can style the axis by AxisStyle property and position the axis by AxisOrigin property.
 {% highlight html %}
-[XAML]
 
 <Syncfusion:SfLineSparkline ShowAxis="True" ItemsSource="{Binding UsersList}"                     YBindingPath="NoOfUsers" >
 

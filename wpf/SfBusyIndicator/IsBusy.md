@@ -11,7 +11,7 @@ documentation: ug
 
 The IsBusy property in the BusyIndicator control is used to determine whether an animation needs to be executed or not.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -23,7 +23,7 @@ The IsBusy property in the BusyIndicator control is used to determine whether an
 
 {% endhighlight %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -38,6 +38,6 @@ busyIndicator.IsBusy = true;
 ![C:/Users/ApoorvahR/Desktop/1.png](IsBusy_images/IsBusy_img1.png)
 
 
-
+_Busy Indicator_
 
 

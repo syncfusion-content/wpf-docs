@@ -31,7 +31,7 @@ The Data Validation enables you to dynamically validate the data entered in a ce
 
 
 
-Data Validation in Spreadsheet control
+###Data Validation in Spreadsheet control
 
 Essential Spreadsheet control enables you to edit the existing data validation. You can also create new data validation. Spreadsheet control supports the following validation types:
 
@@ -49,7 +49,7 @@ Events
 
 
 
-_Event Table_
+Event Table
 
 <table>
 <tr>
@@ -60,12 +60,12 @@ _Event Table_
 {{ '**Type**' | markdownify }}</th><th>
 {{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
-<th>
-CurrentCellValidating  </th><th>
-Will be triggered when the cell value is committed. This can be cancelled. Error alert can be customized. </th><th>
-void CurrentCellValidating(object sender, CurrentCellValidatingEventArgs e)</th><th>
-Routed </th><th>
-NA </th></tr>
+<td>
+CurrentCellValidating  </td><td>
+Will be triggered when the cell value is committed. This can be cancelled. Error alert can be customized. </td><td>
+void CurrentCellValidating(object sender, CurrentCellValidatingEventArgs e)</td><td>
+Routed </td><td>
+NA </td></tr>
 </table>
 
 
@@ -119,7 +119,6 @@ The following code illustrates how to bind the DataValidationCommand to a button
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -144,7 +143,6 @@ The following code illustrates how to bind the InsertCommentCommand__to a button
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -164,13 +162,13 @@ The following code illustrates how to bind the InsertCommentCommand__to a button
 
 
 
-> _Note: You can insert only one comment for a cell. The InsertCommentCommand will open the Edit comment dialog box if the specific cell already has a comment._
+> Note: You can insert only one comment for a cell. The InsertCommentCommand will open the Edit comment dialog box if the specific cell already has a comment.
 
 
 
 ### Edit Comment
 
-You can edit the existing comments using the Edit Comment dialog box. You can open the Edit comment dialog using the InsertCommentCommand_._
+You can edit the existing comments using the Edit Comment dialog box. You can open the Edit comment dialog using the InsertCommentCommand.
 
 
 ![](Data-Management_images/Data-Management_img9.png)
@@ -183,7 +181,6 @@ The following code illustrates how to bind the InsertCommentCommand__to a button
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -201,7 +198,6 @@ The following code illustrates how to bind the DeleteCommentCommand__to a button
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -244,40 +240,40 @@ Refer to section 2.2 Samples and Location to access the samples location.
 {{ '**Type**' | markdownify }}</th><th>
 {{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
-<th>
-ImportFromDataTable </th><th>
-This method imports data from the DataTable into the Spreadsheet.</th><th>
- ImportDataTable(DataTable dataTable)</th><th>
-N/A</th><th>
-void</th></tr>
+<td>
+ImportFromDataTable </td><td>
+This method imports data from the DataTable into the Spreadsheet.</td><td>
+ ImportDataTable(DataTable dataTable)</td><td>
+N/A</td><td>
+void</td></tr>
 <tr>
-<th>
-ImportFromDataTable</th><th>
-This method imports data from a DataTable into a Spreadsheet with parameters Row and Column of the first cell, where DataTable should be imported.</th><th>
-ImportFromDataTable(DataTable table, bool isFieldNameShow, int startRow, int startCol)</th><th>
-N/A</th><th>
-void</th></tr>
+<td>
+ImportFromDataTable</td><td>
+This method imports data from a DataTable into a Spreadsheet with parameters Row and Column of the first cell, where DataTable should be imported.</td><td>
+ImportFromDataTable(DataTable table, bool isFieldNameShow, int startRow, int startCol)</td><td>
+N/A</td><td>
+void</td></tr>
 <tr>
-<th>
-ImportFromDataTable</th><th>
-This method imports data from a DataTable into a Spreadsheet with parameters  Row index and column index of SpreadSheet, where DataTable should be imported and preserve types  (This Indicates whether Spreadsheet should try to preserve types in DataTable)</th><th>
-ImportFromDataTable(DataTable table, bool isFieldNameShow, int startRow, int startCol, bool preserveTypes)</th><th>
-N/A</th><th>
-void</th></tr>
+<td>
+ImportFromDataTable</td><td>
+This method imports data from a DataTable into a Spreadsheet with parameters  Row index and column index of SpreadSheet, where DataTable should be imported and preserve types  (This Indicates whether Spreadsheet should try to preserve types in DataTable)</td><td>
+ImportFromDataTable(DataTable table, bool isFieldNameShow, int startRow, int startCol, bool preserveTypes)</td><td>
+N/A</td><td>
+void</td></tr>
 <tr>
-<th>
-ImportFromDataTable</th><th>
-This method imports data from a DataTable into a Spreadsheet with parameters starting row index and column index and maximum number of rows and columns to import.</th><th>
-ImportFromDataTable(DataTable table, bool isFieldNameShow, int startRow, int startCol, int maxRow, int maxCol)</th><th>
-N/A</th><th>
-void</th></tr>
+<td>
+ImportFromDataTable</td><td>
+This method imports data from a DataTable into a Spreadsheet with parameters starting row index and column index and maximum number of rows and columns to import.</td><td>
+ImportFromDataTable(DataTable table, bool isFieldNameShow, int startRow, int startCol, int maxRow, int maxCol)</td><td>
+N/A</td><td>
+void</td></tr>
 <tr>
-<th>
-ImportFromDataTable</th><th>
-This method imports data from a DataTable into a Spreadsheet with parameters starting row index and column index and maximum number of rows and columns to import and preserve types.</th><th>
-ImportFromDataTable(DataTable table, bool isFieldNameShow, int startRow, int startCol, int maxRow, int maxCol, bool preserveTypes)</th><th>
-N/A</th><th>
-void</th></tr>
+<td>
+ImportFromDataTable</td><td>
+This method imports data from a DataTable into a Spreadsheet with parameters starting row index and column index and maximum number of rows and columns to import and preserve types.</td><td>
+ImportFromDataTable(DataTable table, bool isFieldNameShow, int startRow, int startCol, int maxRow, int maxCol, bool preserveTypes)</td><td>
+N/A</td><td>
+void</td></tr>
 </table>
 
 
@@ -287,7 +283,6 @@ The following lines of code are used to import data from DataTable to Spreadshee
 
 {%highlight c#%}
 
-[C#]
 
 this.spreadsheetControl.ImportFromDataTable(datatable);
 
@@ -295,7 +290,6 @@ this.spreadsheetControl.ImportFromDataTable(datatable);
 
 
 {%highlight vbnet%}
-[VB]
 
 Me.spreadsheetControl.ImportFromDataTable(datatable)
 {%endhighlight%}
@@ -307,7 +301,6 @@ Similarly, you can to export the Spreadsheet data to a data table by using the E
 
 {%highlight c#%}
 
-[C#]
 
 IWorksheet sheet  = this.spreadsheetControl.ExcelProperties.WorkBook.Worksheets[0];
 
@@ -319,7 +312,6 @@ DataTable Dt = sheet.ExportDataTable(range, ExcelExportDataTableOptions.ColumnNa
 
 {%highlight vbnet%}
 
-[VB]
 
 Dim sheet As IWorksheet = Me.spreadsheetControl.ExcelProperties.WorkBook.Worksheets(0)
 
@@ -385,7 +377,6 @@ By default, this feature is enabled in the Spreadsheet control. You can disable 
 
 {%highlight c#%}
 
-[C#]
 
 spreadsheetControl.GridProperties.ActiveSpreadsheetGrid.Model.GridCopyPaste = null;
 
@@ -423,9 +414,9 @@ This event is triggered when some grid data is about to be copied to the clipboa
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -451,9 +442,9 @@ This event is triggered when some grid data is about to be moved to the clipboar
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -477,9 +468,9 @@ This event is fired when some grid data is about to be pasted from the clipboard
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -505,9 +496,9 @@ This event is fired when some grid data is being copied to the clipboard. Inside
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -535,9 +526,9 @@ This event is fired when some grid data is being moved to the clipboard. Inside 
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -563,9 +554,9 @@ This event is fired when some grid data is being pasted from the clipboard. Insi
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 DataObject</td><td>
@@ -589,7 +580,6 @@ The following code used to copy and paste only the display text.
 
 {%highlight c#%}
 
-[C#]
 
 void spreadsheetControl_WorkBookLoaded(object sender, WorkbookLoadedEventArgs args)
 

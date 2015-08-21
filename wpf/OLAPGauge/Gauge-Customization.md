@@ -9,13 +9,13 @@ documentation: ug
 
 # Gauge Customization
 
-# How to customize the layout of multiple gauge controls?
+## How to customize the layout of multiple gauge controls?
 
 The OLAP Gauge control provides support to display multiple gauges in a structured layout. You can customize the layout by using the ColumnsCount and RowsCount properties. These properties are used to specify the number of columns and rows for displaying controls.
 
 {% highlight c# %}
  
-    [C#]
+    
 
 
 
@@ -30,7 +30,7 @@ this.olapGauge.RowsCount = 2;
 
  {% highlight vbnet %}
   
-    [VB]
+    
 
 
 
@@ -57,7 +57,7 @@ A sample demo is available at the following location:
 
 ..\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OLAPGauge.WPF\Samples\Product ShowCase\Product Showcase Demo\
 
-# How to represent KPI values in OLAP Gauge?
+## How to represent KPI values in OLAP Gauge?
 
 The OLAP Gauge control provides support to display Key Performance Indicators (KPIs) from the OLAP cube. KPIs are displayed with Trend and Status visualizations (Traffic Light, Road Signs and Standard Arrow types are supported).
 
@@ -72,13 +72,13 @@ A sample demo is available at the following location:
 
 ..\Syncfusion\EssentialStudio\<Version Number>\BI\WPF\OLAPGauge.WPF\Samples\Product ShowCase\Product Showcase Demo\
 
-# How to show as well as hide gauge header, gauge factor and gauge labels? 
+## How to show as well as hide gauge header, gauge factor and gauge labels? 
 
 The OLAP Gauge control provides support to customize the header, which displays the measure and KPI name. The ShowGaugeHeader property allows you to show or hide the gauge header. If the property is set to true it displays the gauge header.If it is false, then it hides the gauge header. Similarly ShowGaugeFactors and ShowGaugeLabels properties are used for showing and hiding the gauge factors and labels. The following is the code snippet. 
 
 {% highlight c# %}
  
-    [C#]
+    
 
 
 
@@ -95,7 +95,7 @@ this.olapGauge1.ShowGaugeLabels = true;
 
  {% highlight vbnet %}
   
-   [VB]
+   
 
 
 
@@ -121,7 +121,7 @@ The following screen shot shows the output:
 
 {% highlight c# %}
  
-    [C#]
+    
 
 
 
@@ -138,7 +138,7 @@ this.olapGauge1.ShowGaugeLabels = false;
 
  {% highlight vbnet %}
   
-    [VB]
+    
 
 
 

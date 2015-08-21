@@ -14,17 +14,17 @@ The EnableExtendedScrolling property is used to change the values based on the c
 ![](Extended-Scrolling_images/Extended-Scrolling_img1.png)
 
 
-# Adding Extended Scrolling to an Application
+## Adding Extended Scrolling to an Application
 
 We have to set the EnableExtendedScrolling property either in XAML or the code file.
 
 <table>
 <tr>
 <td colspan = "2">
-[XAML]  EnableExtendedScrolling ="True"</td></tr>
+{% highlight xml %}  EnableExtendedScrolling ="True"{% endhighlight %}</td></tr>
 <tr>
 <td>
-[C#]  control.EnableExtendedScrolling = true;</td></tr>
+{% highlight c# %} control.EnableExtendedScrolling = true;{% endhighlight %}</td></tr>
 </table>
 
 

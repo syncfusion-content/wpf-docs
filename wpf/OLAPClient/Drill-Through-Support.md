@@ -17,11 +17,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-DataType</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+DataType</th></tr>
 <tr>
 <td>
 EnableDrillThrough</td><td>
@@ -36,7 +36,7 @@ The following code example explains you on how to enable the drill-through optio
 
 {% highlight C# %} 
 
-[C#]
+
 
 
 
@@ -65,7 +65,7 @@ void OlapGrid_LinkClick(object sender, Syncfusion.Windows.Grid.Olap.LinkLabelEve
  
  {% highlight vbnet %} 
 
-[VB]
+
 
 
 
@@ -107,7 +107,7 @@ _Attribute Hierarchy Selector_
 
 _Grid with drill-through data_
 
-## Sample Link
+### Sample Link
 
 SystemDrive:\<UserName>\AppData\Local\Syncfusion\EssentialStudio\X.X.X.X\WPF\OlapClient.WPF\CS\Samples\Product Showcase\DrillThrough Demo\CS 
 

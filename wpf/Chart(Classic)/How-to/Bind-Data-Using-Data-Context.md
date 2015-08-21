@@ -7,11 +7,11 @@ control: Chart (Classic)
 documentation: ug
 ---
 
-### Bind Data Using Data Context
+## Bind Data Using Data Context
 
 When using multiple series' in the Chart, it might be convenient to set the Data Contexts at the Chart or Chart Area levels and refer to that context from the Chart Series.
+{% highlight xml %}
 
-[XAML]
 
 
 
@@ -30,7 +30,7 @@ When using multiple series' in the Chart, it might be convenient to set the Data
     </sfchart:ChartArea>
 
 </sfchart:Chart>
-
+{% endhighlight  %}
 See Also
 
 IList Data Source, XML Data Source, ObservableCollection Data Source, CollectionViewSource Data Source, LINQ Data Source

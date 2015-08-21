@@ -49,7 +49,7 @@ The following code illustrates how to change the ZoomScale__of the Grid control:
 
 
 {% highlight c# %}
-[C#]
+
 
 gridControl.ZoomScale = 1.5;
 

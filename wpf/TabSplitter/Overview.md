@@ -11,7 +11,7 @@ documentation: ug
 
 TabSplitter is similar to VS 2008 style spilt view of Tabbed Groups.
 
-Features
+###Features
 
 * Swapping of two groups
 * Collapse and Expand Tab Groups

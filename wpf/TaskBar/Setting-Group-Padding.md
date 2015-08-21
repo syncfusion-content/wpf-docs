@@ -17,7 +17,6 @@ To set the group padding, use the below code
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -67,7 +66,6 @@ To set the group padding, use the below code
 
 
 {% highlight c# %}
-[C#]
 
 
 

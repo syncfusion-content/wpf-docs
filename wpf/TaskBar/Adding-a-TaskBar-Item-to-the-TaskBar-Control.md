@@ -12,7 +12,6 @@ documentation: ug
 The Task Bar Item is added to the Task Bar by using either XAML or C# coding. Use the following code to add a Task Bar Item to the Task Bar control.
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -34,7 +33,6 @@ The Task Bar Item is added to the Task Bar by using either XAML or C# coding. Us
 
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -83,7 +81,6 @@ To add text to the TaskBar Item, use the below code
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -115,7 +112,6 @@ To add text to the TaskBar Item, use the below code
 
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -167,7 +163,7 @@ this.Content = taskBar;
 {% endhighlight %}
 
 
-> _Note: To display the TaskBar Item, you must already have the TaskBar in which you are going to add the TaskBar Item._
+> Note: To display the TaskBar Item, you must already have the TaskBar in which you are going to add the TaskBar Item.
 
 The following screen shot illustrates how text has been added to the TaskBar Item.
 

@@ -26,12 +26,12 @@ These styles can be applied to the control using XAML and C#. The following code
 {% highlight xml %}
 
 
-[XAML]
+
 <syncfusion:MenuAdv        syncfusion:SkinStorage.VisualStyle="Office2010Blue"/>    
 {% endhighlight %}
 {% highlight C# %}
 
-[C#]
+
 SkinStorage.SetVisualStyle(menuAdvinstance, "Office2010Blue");</td></tr>
 {% endhighlight %}
 

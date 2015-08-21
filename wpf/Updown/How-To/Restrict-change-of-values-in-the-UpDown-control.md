@@ -7,11 +7,11 @@ control: UpDown Control
 documentation: ug
 ---
 
-### Restrict change of values in the UpDown control
+# Restrict change of values in the UpDown control
 
 You can restrict the change of the values in the UpDown control by cancelling the ValueChanging event as shown in the following code example.
 
-[C#]
+{%highlight c#%}
 
 void upDown_ValueChanging(object sender, ValueChangingEventArgs e)
 
@@ -22,4 +22,4 @@ void upDown_ValueChanging(object sender, ValueChangingEventArgs e)
 }
 
 
-
+{%endhighlight%}

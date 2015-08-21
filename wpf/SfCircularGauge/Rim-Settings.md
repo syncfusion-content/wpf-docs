@@ -19,7 +19,7 @@ The StartValue and EndValue properties determine the overall range of the circul
 
 {% highlight xml %}
 
-[XAML]
+
 
              <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -54,7 +54,7 @@ The StartValue and EndValue properties determine the overall range of the circul
 
 {% highlight C# %}
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 

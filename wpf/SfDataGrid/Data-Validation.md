@@ -38,7 +38,7 @@ The following code example illustrates how the Email field is validated for prop
 
 {% highlight C# %}
 
-[C#]
+
 
 public class UserInfo : IDataErrorInfo
 
@@ -83,7 +83,7 @@ public class UserInfo : IDataErrorInfo
 
 {% highlight C# %}
 
-[C#]
+
 
 public class UserInfo : INotifyDataErrorInfo
 
@@ -150,7 +150,7 @@ The following code example illustrates how the String Length attribute is applie
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -220,7 +220,7 @@ The following code example illustrates a simple condition to handle Cell Validat
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -285,7 +285,7 @@ The following code example illustrates a simple condition to handle Row Validati
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -340,7 +340,7 @@ The following steps take you though Cutomization on Validation error template.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <ControlTemplate x:Key="ValidationToolTipTemplate">
 
@@ -500,7 +500,7 @@ You can change above ControlTemplate codes to change the tooltip style. You can 
 {% highlight xml %}
 
 
-[XAML]
+
 
 <Style x:Key="GridCellStyle1" TargetType="{x:Type syncfusion:GridCell}">
 

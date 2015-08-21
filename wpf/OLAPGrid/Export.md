@@ -11,11 +11,11 @@ documentation: ug
 
 The OlapGrid Data can be exported to Excel, Word and PDF file formats. The OlapGrid data can be exported using the following methods of OlapGrid.
 
-# Excel Export
+## Excel Export
 
   {% highlight c# %}
 
-    [C#]
+    
 
 
 
@@ -31,7 +31,7 @@ this.OlapGrid1.ExportToExcel("fileName");
 
   {% highlight vbnet %}
 
-   [VB]
+   
 
 
 
@@ -50,11 +50,11 @@ Me.OlapGrid1.ExportToExcel("fileName")
 
 
 
-# Word Export
+## Word Export
 
   {% highlight c# %}
 
-    [C#]
+    
 
 
 
@@ -70,7 +70,7 @@ this.OlapGrid1.ExportToWord("fileName");
 
   {% highlight vbnet %}
 
-     [VB]
+     
 
 
 
@@ -89,11 +89,11 @@ Me.OlapGrid1.ExportToWord("fileName")
 ![Word Export](Export_images/Export_img2.png)
 
 
-# Pdf Export
+## Pdf Export
 
   {% highlight c# %}
 
-    [C#]
+    
 
 
 
@@ -109,7 +109,7 @@ this.OlapGrid1.ExportToPdf("fileName");
 
   {% highlight vbnet %}
 
-    [VB]
+    
 
 
 
@@ -138,26 +138,26 @@ A sample demo is available at the following location:
 
 ..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Exporting\Exporting Grid Demo
 
-# CSV Export
+## CSV Export
 
 OLAP Grid for WPF provides support to export itself to CSV file format. 
 
-## Use Case Scenarios 
+### Use Case Scenarios 
 
 You can export the contents of the OLAP Grid to the CSV file format for future references and analysis purposes.
 
-## Methods
+ Methods
 
 _Methods_
 
 <table>
 <tr>
-<td>
-{{ '**Method**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Return Type**' | markdownify }}</td></tr>
+<th>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th></tr>
 <tr>
 <td>
 Export(string filename)</td><td>
@@ -183,7 +183,7 @@ The GridCsvExport class provides you support for exporting data from OLAP Grid t
 
   {% highlight c# %}
 
-    [C#] 
+     
 
 SaveFileDialog saveFileDialog = new SaveFileDialog();
 
@@ -219,7 +219,7 @@ if (saveFileDialog.ShowDialog() == true)
 
   {% highlight vbnet %}
 
-   [VB]
+   
 
 Dim saveFileDialog As New SaveFileDialog()
 

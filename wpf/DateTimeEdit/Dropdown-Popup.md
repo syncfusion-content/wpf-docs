@@ -29,7 +29,7 @@ You can display the Dropdown Popup by checking the DropDown Button. The visibili
 
 
 {% highlight html %}
-XAML
+
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"                         IsCalendarEnabled="False" IsWatchEnabled="True"                          IsEmptyDateEnabled="True"/>
 
@@ -42,7 +42,7 @@ XAML
 
 
 {% highlight html %}
-XAML
+
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"                         IsCalendarEnabled="True" IsWatchEnabled="False"                          IsEmptyDateEnabled="True"/>
 
@@ -55,7 +55,7 @@ XAML
 
 
 {% highlight html %}
-XAML
+
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="230" Margin="10" EnableClassicStyle="True"                          IsCalendarEnabled="True" IsWatchEnabled="True"                          IsEmptyDateEnabled="False"/>
 {% endhighlight %}
 
@@ -66,7 +66,7 @@ XAML
 
 
 {% highlight html %}
-XAML
+
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200" EnableClassicStyle="False" IsEmptyDateEnabled="True"                         DateTime="07/05/2010" Pattern="LongDate"/>
 

@@ -7,13 +7,13 @@ control: DockingManager
 documentation: ug
 ---
 
-### Activate a particular window
+## Activate a particular window
 
 A Particular child window can be activated using its name or using its reference as follows:
 
 
 
-[C#]
+{% highlight html %}
 
 //Activating Window using its name.
 
@@ -25,7 +25,7 @@ DockingManager.ActivateWindow("element1");
 
 DockingManager.ActiveWindow = element1;
 
-
+{% endhighlight  %}
 
 Refer Also
 

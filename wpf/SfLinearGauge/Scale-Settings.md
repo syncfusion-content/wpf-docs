@@ -16,7 +16,7 @@ The MainScale is a linear scale that integrates ticks, labels, and scale bar to 
 The range of the main scale can be mentioned by Minimum and Maximum of the linear scale. The width and height of the linear scale is customized by using the ScaleBarLength and ScaleBarSize properties respectively. The border thickness of the linear scale is changed by using the ScaleBarBorderThickness property. The direction of the linear scale is personalized by setting the ScaleDirection property of the linear scale.
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -70,7 +70,7 @@ The range of the main scale can be mentioned by Minimum and Maximum of the linea
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
+
 
 
 

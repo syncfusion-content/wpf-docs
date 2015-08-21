@@ -56,6 +56,7 @@ The Create style Resources dialog prompts you to enter the name or change the na
 When Ok is pressed, the Expression Blend generates the style of the SfDataPager control in the Resource section. You can edit the generated XAML in the XAML view or in VisualStudio
 
 * Create Empty- create an empty style for the SfDataPager. When you select this option, the Create style Resources dialog is opened. You can enter the name or change the name of style and choose the location for the style.
+
 ## Edit Appearance in Visual Studio
 
 

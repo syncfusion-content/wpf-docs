@@ -16,7 +16,7 @@ RadiusX and RadiusY properties in the Radial Menu can be used to define the X an
 
 {%highlight xml%}
 
-[XAML]
+
 
 <navigation:SfRadialMenu RadiusX="150" RadiusY="150" />
 
@@ -28,7 +28,6 @@ CenterRimRadiusFactor property can be used to define the radius of the center ri
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -46,7 +45,6 @@ RimBackground property used to fill the outer rim (outer circle).
 
 {%highlight xml%}
 
-[XAML]
 
 {%endhighlight%}
 
@@ -58,7 +56,7 @@ RimBackground property used to fill the outer rim (outer circle).
 
 
 
-_RadialMenu outer ring flled with color_
+RadialMenu outer ring flled with color
 
 
 
@@ -68,7 +66,6 @@ RimActiveBrush property used to fill the expander rim and this expander rim only
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -89,7 +86,6 @@ The RimHoverBrush property can be used to fill the expander rim while the pointe
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -109,7 +105,6 @@ RimRadiusFactor property of Radial Menu can be used to set the radius of the ite
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -127,7 +122,6 @@ The navigation button displayed in the center of radial menu can be styled using
 
 {%highlight xml%}
 
-[XAML]
 
 
 
@@ -143,7 +137,6 @@ Each SfRadialMenuItem can be set with a different background color on mouse over
 
 {%highlight xml%}
 
-[XAML]
 
 
 

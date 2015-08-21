@@ -166,7 +166,7 @@ QAT Items can be added as follows:
 
  {% highlight xml %}
 
-    [XAML]
+    
 
 <syncfusion:Ribbon.QuickAccessToolBar>
 
@@ -215,7 +215,7 @@ All items added to the Ribbon will be included in More Commands dialog. This can
 
  {% highlight xml %}
 
-   [XAML]
+  
 
 <syncfusion:RibbonBar Header="Clipboard" 					syncfusion:Ribbon.ShowInMoreCommands="False">
 
@@ -233,7 +233,7 @@ QAT Menu Items can be added as follows:
 
  {% highlight xml %}
 
-    [XAML]
+    
 
 <syncfusion:Ribbon.QuickAccessToolBar>
 
@@ -289,7 +289,7 @@ Application Menu’s left pane items can be populated as follows:
 
  {% highlight xml %}
 
-    [XAML]
+    
 
 <syncfusion:Ribbon.ApplicationMenu>
 
@@ -343,7 +343,7 @@ Footer items for the Application menu can be added as follows:
 
  {% highlight xml %}
 
-    [XAML]
+    
 
 <syncfusion:ApplicationMenu.ApplicationItems>
 
@@ -380,7 +380,7 @@ The BackStageCommandButton can be added to BackStage as follows:
 
  {% highlight xml %}
 
-    [XAML]
+    
 
 <syncfusion:Ribbon.BackStage>
 
@@ -418,7 +418,7 @@ The BackStageTabItem can be added to BackStage as follows.
 
  {% highlight xml %}
 
-    [XAML]
+    
 
 <syncfusion:Ribbon.BackStage>
 
@@ -478,7 +478,7 @@ Create a class that acts as a model for RibbonTab.
 
 {% highlight c# %}
  
-    [C#]
+    
 
 public class CustomRibbonTab
 
@@ -516,7 +516,7 @@ Create a class that acts as a model for RibbonBar.
 
 {% highlight c# %}
  
-    [C#]
+    
 
 public class CustomRibbonBar
 
@@ -554,7 +554,7 @@ Create a Class that acts as a model for RibbonItem.
 
 {% highlight c# %}
  
-    [C#]
+    
 
 public class CustomRibbonItem
 
@@ -590,7 +590,7 @@ Iinitialize the Ribbon Items in the ViewModel class as follows:
 
 {% highlight c# %}
  
-    [C#]
+    
 
 public class ViewModel
 
@@ -730,7 +730,7 @@ Set the ItemsSource of the Ribbon , RibbonTab and RibbonBar to the corresponding
 
 {% highlight xml %}
 
-    [XAML]
+    
 
 <syncfusion:RibbonWindow x:Class="RibbonDataBindingDemo.MainWindow"
 
@@ -845,7 +845,7 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
 
     ~~~ xml
 
-    [XML]
+    
 
     <?xml version="1.0" encoding="utf-8" ?>
 
@@ -918,10 +918,7 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
     </RibbonTabs>
 	
 	~~~
-    {:.pretty-print }
-
-
-
+    {:.prettyprint }
 
 
 
@@ -930,16 +927,12 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
 
     ~~~ xml
 
-    [XAML]
+    
 
     <XmlDataProvider Source="Data/Data.xml" x:Key="xmlSource" XPath="RibbonTabs"/> 
 	
 	~~~
-    {:.pretty-print }
-
-
-
-
+    {:.prettyprint }
 
 
 
@@ -947,7 +940,7 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
 
     ~~~ xml
 
-    [XAML]
+    
 
     <syncfusion:Ribbon 
 
@@ -1044,7 +1037,7 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
     </syncfusion:Ribbon>
 	
 	~~~
-    {:.pretty-print }
+    {:.prettyprint }
 
 
 
@@ -1054,7 +1047,7 @@ A Ribbon is created as shown in the following screenshot:
 
 
 
-![](Getting-Started_images/Getting-Started_img14.png)
+  ![](Getting-Started_images/Getting-Started_img14.png)
 
 
 # Customizing Data Templates
@@ -1067,7 +1060,7 @@ It is possible to set the ItemTemplate for the RibborBar to control the display 
 
 {% highlight xml %}
 
-    [XAML]
+    
 
        <Style TargetType="{x:Type syncfusion:RibbonBar}">
 
@@ -1109,7 +1102,7 @@ Create the template selector as shown in the following code snippet:
 
 {% highlight c# %}
  
-   [C#]
+   
 
 public class RibbonItemTemplateSelector : DataTemplateSelector
 
@@ -1167,7 +1160,7 @@ Define Data templates in the Window’s resources as follows:
 
 {% highlight xml %}
 
-    [XAML]
+    
 
 <DataTemplate x:Key="SmallButtonTemplate">
 
@@ -1202,7 +1195,7 @@ Define Data templates in the Window’s resources as follows:
  Create the instance for the template selector in the Window’s resources as follows:
 
 {% highlight xml %}
-[XAML]
+
 
 <local:RibbonItemTemplateSelector x:Key="ribbonItemTemplateSelector"/>
 
@@ -1218,7 +1211,7 @@ Use this template selector to choose template for the RibbonBar as follows:
 
 {% highlight xml %}
 
-    [XAML]
+    
 
 <syncfusion:Ribbon Name="Ribbon1"                                       		ItemsSource="{Binding CustomRibbonTabs}">
 
@@ -1302,7 +1295,7 @@ Visual Styles can be applied via XAML as follows:
 
 {% highlight xml %}
 
-    [XAML]
+    
 
 syncfusion:SkinStorage.VisualStyle="Office2010Blue"
 
@@ -1318,7 +1311,7 @@ The following code snippet shows how to set the visual style in XAML:
 
 {% highlight xml %}
 
-    [XAML]
+    
 
 <syncfusion:RibbonWindow x:Class="BackStageSample.MainWindow"        syncfusion:SkinStorage.VisualStyle="Office2010Blue"        Title="BackStage Demo"  xmlns:syncfusion="http://schemas.syncfusion.com/wpf" />    
 
@@ -1336,7 +1329,6 @@ Visual styles can be set using C# as follows:
 
 {% highlight c# %}
  
-    [C#]
 
 SkinStorage.SetVisualStyle(ribbonWindowInstance, "Office2010Blue");
 

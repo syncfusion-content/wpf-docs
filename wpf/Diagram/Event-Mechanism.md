@@ -11,7 +11,7 @@ documentation: ug
 
 This section describes several events triggered and handled while using Essential Diagram WPF in the following topic:
 
-Events for Nodes and Connections
+## Events for Nodes and Connections
 
 Diagram control has several events which respond to several actions performed on nodes and connections.
 
@@ -182,7 +182,7 @@ The events can be specified using DiagramView object as follows.
 
 * For instance, NodeClick event can be specified in the following way.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -193,7 +193,7 @@ The events can be specified using DiagramView object as follows.
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -202,7 +202,7 @@ diagramView.NodeClick += new NodeEventHandler(diagramView_NodeClick);
 {% highlight vbnet %}
 
 
-[VB]
+
 
 
 
@@ -212,7 +212,7 @@ AddHandler diagramView.NodeClick, AddressOf diagramView_NodeClick
 
 * And then the event handler can be specified in the code behind as follows.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -229,7 +229,7 @@ void diagramView_NodeClick(object sender, NodeRoutedEventArgs evtArgs)
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -245,7 +245,7 @@ End Sub
 
 * As another example, the ConnectorDoubleClick event can be specified in the following way.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -255,7 +255,7 @@ End Sub
 
 {% endhighlight %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -263,7 +263,7 @@ diagramView.ConnectorDoubleClick += new ConnChangedEventHandler(diagramView_Conn
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -273,7 +273,7 @@ AddHandler diagramView.ConnectorDoubleClick, AddressOf diagramView_ConnectorDoub
 
 And then the event handler can be specified in the code behind as follows.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -290,7 +290,7 @@ void diagramView_ConnectorDoubleClick(object sender, ConnRoutedEventArgs evtArgs
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -306,7 +306,7 @@ End Sub
 
 * NodeMoved and NodeDrop events
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -331,7 +331,7 @@ void diagramView_NodeDrop(object sender, NodeNudgeEventArgs evtArgs)
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 

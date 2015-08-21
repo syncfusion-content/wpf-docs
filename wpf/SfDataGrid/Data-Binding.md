@@ -12,7 +12,7 @@ documentation: ug
 
 This section explains DataBinding in SfDataGrid, different properties and event available to bind data to SfDataGrid.
 
-### Overview
+## Overview
 
 DataBinding is the master feature of the DataGrid. The DataGrid is bound to an external data source to display the data. DataGrid supports the data sources such as List, Observable Collection, and so on.
 
@@ -29,11 +29,11 @@ SfDataGrid.SourceType: This Dependency property decides the type of source colle
 
 
 
-_Note: It is always not neccessary to set SourceType and IsDynamicItemsSource properties._
+> Note: It is always not neccessary to set SourceType and IsDynamicItemsSource properties.
 
 The following event is associated with Data Binding.
 
-#### ItemsSourceChanged Event
+## ItemsSourceChanged Event
 
 This event rises when the data source for the Grid is changed by using the ItemsSource property. This event receives two arguments namely sender that handles SfDataGrid and GridItemsSourceChangedEventArgs as objects.
 
@@ -44,20 +44,20 @@ The GridItemsSourceChangedEventArgs object contains the following properties:
 
 You can use this event when you want to handle operations after ItemsSource bound to Grid. You can access SfDataGrid.View property from this event. You can know more about View in the following section.
 
-### View 
+## View 
 
 DataGrid has the View property of type ICollectionViewAdv interfacethat implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. When you bind Collection to ItemsSource property of SfDataGrid, then View will be created and maintains the operations on Data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification. Following are some important properties that can be used for various purposes.
 
-_Note: DataGrid creates different types of views derived from ICollectionViewAdv interface based on ItemsSource._
+> Note: DataGrid creates different types of views derived from ICollectionViewAdv interface based on ItemsSource.
 
-#### _Property Table_
+_Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 Records</td><td>
@@ -123,7 +123,7 @@ Maintains the CaptionSummaryRow information.To know more about CaptionSummaries 
 
 The following events are associated with View.
 
-#### RecordPropertyChanged
+### RecordPropertyChanged
 
 This event is rised when the DataModel property value is changed, if the DataModel implements the INotifyPropertyChanged interface. The event receives with two arguments namely sender that handles the DataModel and PropertyChangedEventArgs as object.
 
@@ -131,7 +131,7 @@ PropertyChangedEventArgs has below property,
 
 PropertName – It denotes the PropertyName of the changed value.
 
-#### CollectionChanged
+### CollectionChanged
 
 This event is raised whenever that is some change in Records / DisplayElements collection. The event receives two arguments namely sender that handles View object and NotifyCollectionChangedEventArgs as object.
 
@@ -147,7 +147,7 @@ NewStartingIndex-It contains the index at which the change occurred.
 
 OldStartingIndex-It contains the index at which the Action occurred.
 
-#### SourceCollectionChanged
+### SourceCollectionChanged
 
 This event is raised when you make changes in SourceCollection for example add or remove the collection. The event receives two arguments namely sender that handles GridQueryableCollectionViewWrapper object and NotifyCollectionChangedEventArgs as object.
 
@@ -165,13 +165,13 @@ OldStartingIndex-It contains the index at which the Action occurred.
 
 The following is the methods that are associated with View which can be used to defer refresh the view.
 
-#### _Method Table_
+ _Method Table_
 
 <table>
 <tr>
-<td>
-Method Name</td><td>
-Description</td></tr>
+<th>
+Method Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 DeferRefresh</td><td>
@@ -183,7 +183,7 @@ When BeginInit method is called it suspends all the updates until EndInit method
 </table>
 
 
-_Note: View has properties that already defined in SfDataGrid. It recommended setting those properties via SfDataGrid._
+> Note: View has properties that already defined in SfDataGrid. It recommended setting those properties via SfDataGrid.
 
 ### Complex property Binding
 
@@ -195,7 +195,7 @@ The following code example illustrates how to create Complex property. For data 
 
 {% highlight C# %}
 
-[CS]
+
 
 public class OrderInfo
 
@@ -313,7 +313,7 @@ public class OrderInfo
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -351,11 +351,11 @@ Execute the above code to render the following output.
 
 _DataGrid with Complex Property Binding_
 
-_Note: DataGrid control allows you to set Grouping, Sorting, Filtering and Summaries for Complex property-bound columns. Complex property binding in SfDataGrid does not support LiveDataUpdationMode._
+> Note: DataGrid control allows you to set Grouping, Sorting, Filtering and Summaries for Complex property-bound columns. Complex property binding in SfDataGrid does not support LiveDataUpdationMode.
 
 
 
-### Dynamic Object Binding
+## Dynamic Object Binding
 
 DataGrid control provides extensive support to bind the dynamic object data to DataGrid. For more information about dynamic objects, you can refer below msdn links,
 
@@ -364,14 +364,14 @@ DataGrid control provides extensive support to bind the dynamic object data to D
 
 
 
-_Note: Dynamic is not supported in Silverlight hence it is not supported by SfDataGrid also._
+> Note: Dynamic is not supported in Silverlight hence it is not supported by SfDataGrid also.
 
 The following code example illustrates the dynamic object data creation.
 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -454,7 +454,7 @@ The following code example illustrates binding dynamic object data to DataGrid.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -486,17 +486,17 @@ The following screenshot displays the output.
 
  _DataGrid with Dynamic Object Binding_
 
-_Note: Dynamic Object binding in SfDataGrid does not support LiveDataUpdationMode._
+> Note: Dynamic Object binding in SfDataGrid does not support LiveDataUpdationMode.
 
 
 
-### How To
+## How To
 
-#### Binding data from WCF service – How to bind and Save the data back to Database
+### Binding data from WCF service – How to bind and Save the data back to Database
 
 This section explains you how to bind data from WCF Service step-by-step. To create a WCFDataService, you can add a Web project, create an Entity Data Model, and then create the service from the model.
 
-#### To create the Web Project
+### To create the Web Project
 
 1. In Visual Studio, select New Project.
 2. Add New Project wizard opens.
@@ -511,7 +511,7 @@ This section explains you how to bind data from WCF Service step-by-step. To cre
 
  _Add New Project Wizard_
 
-##### To Create the Entity Data Model
+### To Create the Entity Data Model
 
 1.To create Entity Data Model, you can add “ADO.Net Entity Data Model” to your web project.    
 2.Right-click on your Web application.    
@@ -563,7 +563,7 @@ This section explains you how to bind data from WCF Service step-by-step. To cre
 
 20.Now select Finish. The entity model diagram is displayed, and a “Northwind.edmx” file is added to your web project.  
 
-##### To create the data service
+### To create the data service
 
 1. Then you need to create web service for your application to use WCF service. 
 2. Right-click on your web project, Select Add option.
@@ -585,7 +585,7 @@ _Add New Item Wizard_
 
 {% highlight C# %}
 
-[C#]
+
 
 public class NorthwindSercvice : DataService<NORTHWNDEntities>
 
@@ -617,7 +617,7 @@ public class NorthwindSercvice : DataService<NORTHWNDEntities>
 
 8.This step is important to add service reference to your WPF application. On the menu bar, select Debug, Start Without Debugging to Execute the service. A browser window opens and the XML schema for the service is displayed.
 
-##### To Create the Client Application
+### To Create the Client Application
 
 To create the ClientApplication, you can add a second project, add a service reference to the project, configure a data source, and create a user interface to display the data from the service.
 
@@ -647,7 +647,7 @@ To create the ClientApplication, you can add a second project, add a service ref
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window x:Class="NorthwindEditor.MainWindow"
 
@@ -683,7 +683,7 @@ To create the ClientApplication, you can add a second project, add a service ref
 
 {% highlight C# %}
 
-[C#]
+
 
 this.sfdatagrid.Loaded += sfdatagrid_Loaded;
 
@@ -711,7 +711,7 @@ void sfdatagrid_Loaded(object sender, RoutedEventArgs e)
 
 _DataGrid with Customer Deatails_
 
-##### Save Back to Database
+#### Save Back to Database
 
 You can save the data back to DataBase. You can validate using RowValidating event and then do changes in DataBase. You can add the following code example in RowValidating event. 
 
@@ -719,7 +719,7 @@ You can save the data back to DataBase. You can validate using RowValidating eve
 
 {% highlight C# %}
 
-[C#]
+
 
 sfdatagrid.RowValidated += sfdatagrid_RowValidated;
 
@@ -789,11 +789,11 @@ void sfdatagrid_RowValidated(object sender, Syncfusion.UI.Xaml.Grid.RowValidated
 
 After adding, when you edit the value, it gets updated in DataBase.
 
-#### Binding data from ADO.NET -  – How to bind and save the data back to Database
+### Binding data from ADO.NET -  – How to bind and save the data back to Database
 
 This section explains you how to bind data from ADO.Net data service to SfDataGrid. To use ADO.Net, you need a proper data base connection in SQL or in access or the DataBase that is supported by WPF application as your requirement.
 
-##### To Create a WPF Application
+#### To Create a WPF Application
 
 1. In Visual Studio Select New Project from menu File > Add menu items
 2. In Add New Project wizard, select WPF Application.
@@ -803,45 +803,45 @@ This section explains you how to bind data from ADO.Net data service to SfDataGr
 
 
 
-##### To Create Database with ADO.Net Provider.
+   #### To Create Database with ADO.Net Provider.
 
 1. On Tools Menu, Select Connect to Database option.
 2. Add Connection wizard opens.
 
 
 
-![](Features_images/Features_img11.png)
+   ![](Features_images/Features_img11.png)
 
 
-_Add Connection Wizard_
+   _Add Connection Wizard_
 
 3. Make connection as per your availability. 
 4. Change option to select your data source.
 
 
 
-![](Features_images/Features_img12.png)
+   ![](Features_images/Features_img12.png)
 
 
-_Change Data Source page_
+   _Change Data Source page_
 
 5. Refresh to select your Server name.
 
 
 
-![](Features_images/Features_img13.png)
+   ![](Features_images/Features_img13.png)
 
 
 
-_Modify Connection Page_
+   _Modify Connection Page_
 
 6. Select your Database name
 
-![](Features_images/Features_img14.png)
+   ![](Features_images/Features_img14.png)
 
 
 
-_Add Connection Wizard_
+   _Add Connection Wizard_
 
 7. Now select Test Connection to check whether connection is successful or not.
 8. When Test Connection is successful, you can create itemssource.
@@ -849,14 +849,14 @@ _Add Connection Wizard_
 
 
 
-![](Features_images/Features_img15.png)
+   ![](Features_images/Features_img15.png)
 
 
-_Server Explorer_
+   _Server Explorer_
 
 10. Right-click on Database file, select properties. Copy the connection string.
 
-##### To bind data to Grid
+    #### To bind data to Grid
 
 1. In MainWindow.cs file add System.Data.SqlClient. 
 2. Here your SQL Client provider interacts with Database.
@@ -865,100 +865,101 @@ _Server Explorer_
 5. The following code example illustrates the binded itemssource for a Grid. You can mention the connection string from Database file properties.
 
 
-{% highlight xml %}
-
-[XAML]
-
-<Window x:Class="ADONetAccess.MainWindow"
-
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-        xmlns:local="clr-namespace:ADONetAccess"
-
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-        Title="MainWindow"
-
-        Width="525"
-
-        Height="350">
-
-    <syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                           AllowEditing="True"
-
-                           AutoGenerateColumns="True" />
-
-</Window>
-{% endhighlight %}
-
-{% highlight C# %}
-
-[C#]
-
-public partial class MainWindow : Window
-
-{
-
-    DataSet ds = new DataSet();                
-
-    SqlConnection connectionString = new SqlConnection("Data Source=JAYALESWARIN\\SQL2012;Initial Catalog=..\\APPDATA\\LOCAL\\SYNCFUSION\\ESSENTIALSTUDIO\\12.1.0.43\\COMMON\\DATA\\NORTHWND.MDF;Integrated Security=True");       
-
-    SqlDataAdapter adapter= null;
 
 
 
-    public MainWindow()
 
-    {
+			<Window x:Class="ADONetAccess.MainWindow"
 
-        InitializeComponent();
+					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        BindData();
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        sfdatagrid.RowValidated += sfdatagrid_RowValidated;
+					xmlns:local="clr-namespace:ADONetAccess"
 
-    }
+					xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
+					Title="MainWindow"
 
+					Width="525"
 
-    private void BindData()
+					Height="350">
 
-    {
+				<syncfusion:SfDataGrid x:Name="sfdatagrid"
 
-        connectionString.Open();
+									   AllowEditing="True"
 
-        adapter = new SqlDataAdapter("Select * from Shippers ", connectionString);
+									   AutoGenerateColumns="True" />
 
-        adapter.Fill(ds, "Shippers");
-
-        sfdatagrid.ItemsSource = ds.Tables["Shippers"];
-
-    }
-
-}
-
-{% endhighlight %}
-
-The following screenshot displays the output.
+			</Window>
 
 
 
-![](Features_images/Features_img16.png)
 
 
+
+			public partial class MainWindow : Window
+
+			{
+
+				DataSet ds = new DataSet();                
+
+				SqlConnection connectionString = new SqlConnection("Data Source=JAYALESWARIN\\SQL2012;Initial Catalog=..\\APPDATA\\LOCAL\\SYNCFUSION\\ESSENTIALSTUDIO\\12.1.0.43\\COMMON\\DATA\\NORTHWND.MDF;Integrated Security=True");       
+
+				SqlDataAdapter adapter= null;
+
+
+
+				public MainWindow()
+
+				{
+
+					InitializeComponent();
+
+					BindData();
+
+					sfdatagrid.RowValidated += sfdatagrid_RowValidated;
+
+				}
+
+
+
+				private void BindData()
+
+				{
+
+					connectionString.Open();
+
+					adapter = new SqlDataAdapter("Select * from Shippers ", connectionString);
+
+					adapter.Fill(ds, "Shippers");
+
+					sfdatagrid.ItemsSource = ds.Tables["Shippers"];
+
+				}
+
+			}
+
+
+
+    The following screenshot displays the output.
+
+
+
+    ![](Features_images/Features_img16.png)
+
+    {:.prettyprint}
+	
 _Data Grid with Binded Data from ADO.NET_
 
-##### Save Back to Database
+#### Save Back to Database
 
 You can save the data back to Database. You can validate using RowValidating event and then do changes in Database. You can add the following code example in RowValidating event. 
 
 
 {% highlight C# %}
 
-[C#]
+
 
 sfdatagrid.RowValidated += sfdatagrid_RowValidated;
 
@@ -1010,18 +1011,18 @@ void sfdatagrid_RowValidated(object sender, Syncfusion.UI.Xaml.Grid.RowValidated
 
 After adding, when you edit the value, it gets updated in Database.
 
-#### Entity framework – How to bind and save the data back to Database
+### Entity framework – How to bind and save the data back to Database
 
 This section explains you how to bind data and save back to Database using Entityframework step-by-step. To use Entityframework, you can create a WPF application and require an ADO.Net Entity Data Model.
 
-##### To Create a WPF Application
+#### To Create a WPF Application
 
 1. In Visual Studio Select New Project from menu File > Add menu items
 2. In Add New Project wizard, select WPF Application.
 3. In name text box enter name.
 4. Choose Add option to create project.
 
-##### To create Entity Data Model
+   #### To create Entity Data Model
 
 1. Right-click on your application and select Add option.
 2. Now select New Item. Add New Item Wizard opens.
@@ -1032,10 +1033,10 @@ This section explains you how to bind data and save back to Database using Entit
 
 
 
-![](Features_images/Features_img17.png)
+   ![](Features_images/Features_img17.png)
 
 
-_Add New Item Wizard_
+   _Add New Item Wizard_
 
 5. Configure Database wizard appears. 
 6. Select Generate from database.
@@ -1043,15 +1044,15 @@ _Add New Item Wizard_
 
 
 
-![](Features_images/Features_img18.png)
+   ![](Features_images/Features_img18.png)
 
 
-_Entity Data Model Wizard_
+   _Entity Data Model Wizard_
 
 8. Choose Your Data Connection page appears. 
 9. You can select Northwind sample Database available in the drop-down list. 
 
-(OR)
+    (OR)
 
 10. Select the NewConnection button to configure a new data connection. For more information, you can refer: [How to: Create Connections to SQL Server Databases](http://msdn.microsoft.com/en-us/library/s4yys16a.aspx). 
 11. Select Next button to select tables for use.
@@ -1060,38 +1061,38 @@ _Entity Data Model Wizard_
 
 
 
-![](Features_images/Features_img19.png)
+    ![](Features_images/Features_img19.png)
 
 
 
-_Choose Your Data Connection Page_
+    _Choose Your Data Connection Page_
 
 12. Click New Connection.
 
-![](Features_images/Features_img20.png)
+    ![](Features_images/Features_img20.png)
 
 
 
-_Connection Properties Wizard_
+    _Connection Properties Wizard_
 
 13. Click Change button to create your database. You can get list of available services.
 
-![](Features_images/Features_img21.png)
+    ![](Features_images/Features_img21.png)
 
+    {:.prettyprint}
 
-
-_Change Data Source Wizard_
+ _Change Data Source Wizard_
 
 1. You can use Browse to select your Database. 
 2. Click on Test Connection to make the connection successful.
 
 
 
-![](Features_images/Features_img22.png)
+   ![](Features_images/Features_img22.png)
 
 
 
-_Connection Properties Page_
+   _Connection Properties Page_
 
 3. Then click Next in the Wizard. Dialogue box that contains add Database file to your current project appears. Click Yes
 4. Choose Your Database Objects and settings page appears. 
@@ -1101,66 +1102,66 @@ _Connection Properties Page_
 
 
 
-![](Features_images/Features_img23.png)
+   ![](Features_images/Features_img23.png)
 
 
-_Entity Data Model Wizard_
+   _Entity Data Model Wizard_
 
-Here, Database connection using EntityFramework is completed. EntityBindingFramework.edmx file is added to your application, with your Entity diagram of Order_detail. 
+   Here, Database connection using EntityFramework is completed. EntityBindingFramework.edmx file is added to your application, with your Entity diagram of Order_detail. 
 
-##### To Create View Model
-
-
-{% highlight C# %}
-
-[C#]
-
-public class ViewModel
-
-{
-
-    public ViewModel()
-
-    {
-
-        Northwind40Entities northWind = new Northwind40Entities();
+   To Create View Model
 
 
 
-        OrderDetails = (List<Order_Detail>)(from data in northWind.Order_Details
-
-                        select data).ToList();
-
-    }
 
 
 
-    private List<Order_Detail> orderdetails;
+			public class ViewModel
+
+			{
+
+				public ViewModel()
+
+				{
+
+					Northwind40Entities northWind = new Northwind40Entities();
 
 
 
-    public List<Order_Detail> OrderDetails
+					OrderDetails = (List<Order_Detail>)(from data in northWind.Order_Details
 
-    {
+									select data).ToList();
 
-        get { return orderdetails; }
+				}
 
-        set { orderdetails = value; }
 
-    }
 
-}
+				private List<Order_Detail> orderdetails;
 
-{% endhighlight %}
 
-##### Binding ItemsSource to Grid
+
+				public List<Order_Detail> OrderDetails
+
+				{
+
+					get { return orderdetails; }
+
+					set { orderdetails = value; }
+
+				}
+
+			}
+
+   {:.prettyprint}
+
+#### Binding ItemsSource to Grid
 
 Add required assemblies to your WPF application to use SfDataGrid.
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window x:Class="EntityBinding.MainWindow"
 
@@ -1208,14 +1209,14 @@ Add required assemblies to your WPF application to use SfDataGrid.
 
 _Data Grid with Entity Framework_
 
-##### Save Back to Database
+#### Save Back to Database
 
 You can save the data back to Database. You can validate using RowValidating event and then do changes in Database. You can add the following code example in RowValidating event. 
 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -1257,11 +1258,11 @@ void sfdatagrid_RowValidated(object sender, Syncfusion.UI.Xaml.Grid.RowValidated
 
 After adding, when you edit the value, it gets updated in Database.
 
-#### Linq to SQL – How to bind and Save the data back to Database
+### Linq to SQL – How to bind and Save the data back to Database
 
 This section explains you how to bind data using Linq to SQL step by step. To use Linq to SQL, you can create a WPF application with Linq to SQL Classes
 
-##### To Create a WPF Application
+#### To Create a WPF Application
 
 1. In Visual Studio Select New Project from menu File > Add menu items
 2. In Add New Project wizard, select WPF Application.
@@ -1270,12 +1271,12 @@ This section explains you how to bind data using Linq to SQL step by step. To us
 
  
 
-5.Right-click on your WPF application. 
-6.Select Add option.    
-7.Select Add New ItTo create Linq to SQL Classes  em, the Add New Item wizard opens.  
-8.Select “LINQ to SQL Classes”   
-9.Enter Northwind in Name text box.  
-10.Then Select Add button.  
+5. Right-click on your WPF application. 
+6. Select Add option.    
+7. Select Add New ItTo create Linq to SQL Classes  em, the Add New Item wizard opens.  
+8. Select “LINQ to SQL Classes”   
+9. Enter Northwind in Name text box.  
+10. Then Select Add button.  
 
 
 
@@ -1360,12 +1361,12 @@ _Server Explorer_
 
 
 
-##### To Create a View Model
+ To Create a View Model
 
 
 {% highlight C# %}
 
-[C#]
+
 
 public class ViewModel
 
@@ -1407,67 +1408,69 @@ public class ViewModel
 
 NorthwindDataContext is from Northwind.Designer.cs file (it is from the file that is added with Linq to SQL). Shippers are selected table from Database. 
 
-##### Binding ItemsSource
+#### Binding ItemsSource
 
 1. You can design your user interface with SfDataGrid.
 2. Add required assemblies to your application. 
 
 
-{% highlight xml %}
+  
 
-[XAML]
 
-<Window x:Class="LinqToSql.MainWindow"
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			<Window x:Class="LinqToSql.MainWindow"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:local="clr-namespace:LinqToSql"
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+					xmlns:local="clr-namespace:LinqToSql"
 
-        Title="MainWindow"
+					xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-        Width="525"
+					Title="MainWindow"
 
-        Height="350">
+					Width="525"
 
-    <Window.DataContext>
+					Height="350">
 
-        <local:ViewModel />
+				<Window.DataContext>
 
-    </Window.DataContext>
+					<local:ViewModel />
 
-    <syncfusion:SfDataGrid x:Name="sfdatagrid"
+				</Window.DataContext>
 
-                           AllowEditing="True"
+				<syncfusion:SfDataGrid x:Name="sfdatagrid"
 
-                           AutoGenerateColumns="True"
+									   AllowEditing="True"
 
-                           ItemsSource="{Binding Shippers}" />
+									   AutoGenerateColumns="True"
 
-</Window>
+									   ItemsSource="{Binding Shippers}" />
 
-{% endhighlight %}
+			</Window>
+
+
 
 
 
 3.The following screenshot displays the output.
 
-![](Features_images/Features_img33.png)
+   ![](Features_images/Features_img33.png)
 
 
-_Data Grid with Data from Linq to SQL_
+   _Data Grid with Data from Linq to SQL_
 
-##### Save Back to Database
+   {:.prettyprint}
+   
+#### Save Back to Database
 
 You can save the data back to Database. You can validate using RowValidating event and then do changes in Database. You can add the following code example in RowValidating event. 
 
 
 {% highlight C# %}
 
-[C#]
+
 
 sfdatagrid.RowValidated += sfdatagrid_RowValidated;
 

@@ -51,7 +51,6 @@ In the following code example, the SfTreeMap control is created.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -77,7 +76,6 @@ In the following code example, the SfTreeMap control is created.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -101,7 +99,6 @@ The ItemsSource property accepts the collection values as input. For example, yo
 
 
 {% highlight c# %}
-[C#]
 
 public class PopulationViewModel
 
@@ -175,7 +172,6 @@ After defining the ItemsSource, set the DataContext of the TreeMap as shown here
 
 
 {% highlight xml %}
-[XAML]
 
     <Grid>
 
@@ -211,7 +207,6 @@ After defining the ItemsSource, set the DataContext of the TreeMap as shown here
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 this.TreeMap.DataContext = new PopulationViewModel();
 {% endhighlight %}

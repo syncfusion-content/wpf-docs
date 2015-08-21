@@ -19,7 +19,7 @@ A tick’s length, stroke, and stroke thickness are set by the TickLength, TickS
 
 {% highlight xml %}
 
-[XAML]
+
 
              <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -54,7 +54,7 @@ A tick’s length, stroke, and stroke thickness are set by the TickLength, TickS
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -104,7 +104,7 @@ The shape of the Scales Major and Minor ticks can be set by using TickShape prop
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -151,7 +151,7 @@ The shape of the Scales Major and Minor ticks can be set by using TickShape prop
 
 {% highlight C# %}
 
-[C#]
+
 
            SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -208,7 +208,7 @@ The ticks in the scale can be placed inside the scale, outside the scale, or acr
 
 {% highlight xml %}
 
-[XAML]
+
 
             <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -229,7 +229,7 @@ The ticks in the scale can be placed inside the scale, outside the scale, or acr
 
 {% highlight C# %}
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 

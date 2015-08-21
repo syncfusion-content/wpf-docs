@@ -13,7 +13,6 @@ You can enable ToolTip for TreeMap by setting ShowToolTip to “True”. For mod
 
 
 {% highlight xml %}
-[XAML]
 
 
 

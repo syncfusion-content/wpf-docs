@@ -13,11 +13,11 @@ documentation: ug
 
 Scale labels associate a numeric value with major scale tick marks. The label stroke can be changed by using the LabelStroke property. The size of the Labels can be changed by using the LabelAutoSizeChange property.
 
-#### Code Example:
+### Code Example:
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -38,7 +38,7 @@ Scale labels associate a numeric value with major scale tick marks. The label s
 
 {% highlight C# %}
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -88,7 +88,7 @@ The NumericScaleType property allows you to set the type of label. The following
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -111,7 +111,7 @@ The NumericScaleType property allows you to set the type of label. The following
 
 {% highlight C# %}
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -145,17 +145,15 @@ The NumericScaleType property allows you to set the type of label. The following
 ![](Label-Settings_images/Label-Settings_img2.png)
 
 
-
-
-
-#### _Enable  SmartLabels-‘False’’_
+ _Enable  SmartLabels-‘False’’_
+ 
 
 ## Number of Fraction Digits
 
 The NoOfFractionalDigits property is used to set the number of fractional digits to be displayed in the scale labels.
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -181,7 +179,7 @@ The NoOfFractionalDigits property is used to set the number of fractional digits
 {% highlight C# %}
 
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -224,7 +222,7 @@ The NoOfFractionalDigits property is used to set the number of fractional digits
 This property allows you to set the postfix values to the scale labels. The label postfixes are visible even if the EnableSmartLabels property is set to false. 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -250,7 +248,7 @@ This property allows you to set the postfix values to the scale labels. The labe
 {% highlight C# %}
 
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -295,7 +293,7 @@ This property allows you to set the prefix values for the scale labels. The labe
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -320,7 +318,7 @@ This property allows you to set the prefix values for the scale labels. The labe
 
 {% highlight C# %}
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -369,7 +367,7 @@ The Labels in the scale can be placed inside the scale or outside the scale by s
 
 {% highlight xml %}
 
-[XAML]
+
 
             <syncfusion:SfCircularGauge x:Name="gauge">
 
@@ -390,7 +388,7 @@ The Labels in the scale can be placed inside the scale or outside the scale by s
 
 {% highlight C# %}
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 

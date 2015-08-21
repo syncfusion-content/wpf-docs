@@ -20,10 +20,10 @@ Following code sample illustrates how to use Hyphen (-) to display the labels in
 <table>
 <tr>
 <td>
-[XAML]<syncfusion:RibbonButton Name="ribbonButton" Label="Ribbon-Button" ></syncfusion:RibbonButton><syncfusion:SplitButton Name="splitButton" Label="Split-Button" ></syncfusion:SplitButton><syncfusion:DropDownButton  Name="dropdownButton" Label="DropDown-Button" ></syncfusion:DropDownButton></td></tr>
+{% highlight xml %}<syncfusion:RibbonButton Name="ribbonButton" Label="Ribbon-Button" ></syncfusion:RibbonButton><syncfusion:SplitButton Name="splitButton" Label="Split-Button" ></syncfusion:SplitButton><syncfusion:DropDownButton  Name="dropdownButton" Label="DropDown-Button" ></syncfusion:DropDownButton>{% endhighlight %}</td></tr>
 <tr>
 <td>
-[C#]ribbonButton.Label = "Ribbon-Button";splitButton.Label = "Split-Button";dropdownButton.Label = "DropDown-Button";</td></tr>
+{% highlight C# %}ribbonButton.Label = "Ribbon-Button";splitButton.Label = "Split-Button";dropdownButton.Label = "DropDown-Button";{% endhighlight %}</td></tr>
 </table>
 
 ![](LineBreak-Support_images/LineBreak-Support_img1.jpeg)

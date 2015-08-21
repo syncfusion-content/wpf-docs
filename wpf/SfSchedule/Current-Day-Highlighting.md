@@ -11,7 +11,6 @@ documentation: ug
 
 The current day highlighting brush in all view can be customized by CurrentDateBackground property.
 {% highlight html %}
-[XAML]
 
         <Schedule:SfSchedule x:Name="schedule" ScheduleType="Week"
 
@@ -22,7 +21,6 @@ The current day highlighting brush in all view can be customized by CurrentDateB
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
 
 
 

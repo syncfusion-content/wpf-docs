@@ -69,7 +69,7 @@ The following steps help you to use the SfDataPager in an application:
 
 
 
-![C:/Users/ilanchezhiyan/Desktop/drag.png](Getting-Started_images/Getting-Started_img2.png)
+   ![C:/Users/ilanchezhiyan/Desktop/drag.png](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -78,247 +78,247 @@ The following steps help you to use the SfDataPager in an application:
 2. Syncfusion.SfGrid.WPF
 4. You can either drag the control from Visual Studio or Expression Blend, or add the control to your project manually. You need to add the namespace to make use of SfDataPager in your application.
 
-{% highlight html %}
-
-[XAML]
-
-<Window xmlns:datapager="http://schemas.syncfusion.com/wpf">
-
- <Grid>
-
-      <datapager:SfDataPager x:Name="sfDataPager"/>
 
 
 
-  </Grid>
 
-</Window>
+			<Window xmlns:datapager="http://schemas.syncfusion.com/wpf">
 
-{% endhighlight %}
+			 <Grid>
+
+				  <datapager:SfDataPager x:Name="sfDataPager"/>
+
+
+
+			  </Grid>
+
+			</Window>
+
+
 
 5. Create Business object class named as OrderInfo
-{% highlight c# %}
-[C#]
 
-public class OrderInfo
 
-{
 
-    int orderID;
+			public class OrderInfo
 
-    string customerId;
+			{
 
-    string country;
+				int orderID;
 
-    string customerName;
+				string customerId;
 
-    string shippingCity;
+				string country;
 
-    public int OrderID
+				string customerName;
 
-    {
+				string shippingCity;
 
-          get {   return orderID;  }
+				public int OrderID
 
-          set {   orderID = value; }
+				{
 
-    }
+					  get {   return orderID;  }
 
-    public string CustomerID
+					  set {   orderID = value; }
 
-    {
+				}
 
-          get {  return customerId; }
+				public string CustomerID
 
-          set {  customerId = value; }
+				{
 
-    }
+					  get {  return customerId; }
 
-    public string CustomerName
+					  set {  customerId = value; }
 
-    {
+				}
 
-          get {  return customerName; }
+				public string CustomerName
 
-          set {  customerName = value;}
+				{
 
-    }
+					  get {  return customerName; }
 
-    public string Country
+					  set {  customerName = value;}
 
-    {
+				}
 
-          get { return country; }
+				public string Country
 
-          set  {  country = value; }
+				{
 
-    }
+					  get { return country; }
 
-    public string ShipCity
+					  set  {  country = value; }
 
-    {
+				}
 
-         get {  return shippingCity; }
+				public string ShipCity
 
-         set {  shippingCity = value; }
+				{
 
-    }
+					 get {  return shippingCity; }
 
-    public OrderInfo(int orderId, string customerName, string country, string     
+					 set {  shippingCity = value; }
 
-    customerId,string shipCity)
+				}
 
-    {
+				public OrderInfo(int orderId, string customerName, string country, string     
 
-         this.OrderID = orderId;
+				customerId,string shipCity)
 
-         this.CustomerName = customerName;
+				{
 
-         this.Country = country;
+					 this.OrderID = orderId;
 
-         this.CustomerID = customerId;
+					 this.CustomerName = customerName;
 
-         this.ShipCity = shipCity;
+					 this.Country = country;
 
-    }
+					 this.CustomerID = customerId;
 
-}
+					 this.ShipCity = shipCity;
 
-{% endhighlight  %}
+				}
+
+			}
+
+
 
 6. Add the following code in ViewModel class
-{% highlight c# %}
-[C#]
 
-public class ViewModel
 
-{
 
-    ObservableCollection<OrderInfo> orderCollection;
+			public class ViewModel
 
-    public ObservableCollection<OrderInfo> OrderInfoCollection
+			{
 
-    {
+				ObservableCollection<OrderInfo> orderCollection;
 
-        get { return orderCollection; }
+				public ObservableCollection<OrderInfo> OrderInfoCollection
 
-        set { orderCollection = value; }
+				{
 
-    }
+					get { return orderCollection; }
 
-    public ViewModel()
+					set { orderCollection = value; }
 
-    {
+				}
 
-        orderCollection = new ObservableCollection<OrderInfo>();
+				public ViewModel()
 
-        this.GenerateOrders();
+				{
 
-    }
+					orderCollection = new ObservableCollection<OrderInfo>();
 
-    private void GenerateOrders()
+					this.GenerateOrders();
 
-    {
+				}
 
-        orderCollection.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
+				private void GenerateOrders()
 
-        orderCollection.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "México D.F."));
+				{
 
-        orderCollection.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "México D.F."));
+					orderCollection.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin"));
 
-        orderCollection.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
+					orderCollection.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "México D.F."));
 
-        orderCollection.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Luleå"));
+					orderCollection.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "México D.F."));
 
-        orderCollection.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
+					orderCollection.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London"));
 
-        orderCollection.Add(new OrderInfo(1007, "Frédérique Citeaux", "France", "BLONP", "Strasbourg"));
+					orderCollection.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Luleå"));
 
-        orderCollection.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
+					orderCollection.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim"));
 
-        orderCollection.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
+					orderCollection.Add(new OrderInfo(1007, "Frédérique Citeaux", "France", "BLONP", "Strasbourg"));
 
-        orderCollection.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
+					orderCollection.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid"));
 
-    }
+					orderCollection.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille"));
 
-}
+					orderCollection.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen"));
 
-{% endhighlight  %}
+				}
+
+			}
+
+
 
 7. Set the ViewModel instance as DataContext to window. Now, you can bind the data collection to the SfDataPagerSource property.
-{% highlight html %}
-[XAML]
 
-<Window.DataContext>
 
-  <local:ViewModel/>
 
-</Window.DataContext>
+			<Window.DataContext>
 
-<Grid> 
+			  <local:ViewModel/>
 
-         <datapager:SfDataPager x:Name="sfDataPager" 
+			</Window.DataContext>
 
-                                Grid.Row="1"
+			<Grid> 
 
-                                AccentBackground="DodgerBlue"
+					 <datapager:SfDataPager x:Name="sfDataPager" 
 
-                                NumericButtonCount="5"
+											Grid.Row="1"
 
-                                PageSize="5" 
+											AccentBackground="DodgerBlue"
 
-                                Source="{Binding OrderInfoCollection}" />
+											NumericButtonCount="5"
 
-</Grid>
+											PageSize="5" 
 
-{% endhighlight  %}
+											Source="{Binding OrderInfoCollection}" />
+
+			</Grid>
+
+
 
 8. Then bind the PagedSource property of the SfDataPager control into the SfDataGridItemsSource property.
-{% highlight html %}
-[XAML]
-
-<Window.DataContext>
-
-  <local:Viewmodel/>
-
-</Window.DataContext>
-
-<Grid>
-
-        <Grid.RowDefinitions>
-
-            <RowDefinition Height="*" />
-
-            <RowDefinition Height="Auto" />
-
-        </Grid.RowDefinitions>
-
-        <sfgrid:SfDataGrid AutoGenerateColumns="True" 
-
-                           ItemsSource="{Binding ElementName=sfDataPager,
-
-        Path=PagedSource}"/>
-
-         <datapager:SfDataPager x:Name="sfDataPager" 
-
-                                Grid.Row="1"
-
-                                NumericButtonCount="10"
-
-                                PageSize="10" 
-
-                                Source="{Binding OrdersDetails}" />
-
-</Grid>
-
-{% endhighlight  %}
-
-The following screenshot displays the output for Implementation of the SfDataPager in the SfDataGrid Control.
 
 
 
-![B:/Support/2015/April/24/Image/DataPager/Figure3.png](Getting-Started_images/Getting-Started_img3.png)
+			<Window.DataContext>
+
+			  <local:Viewmodel/>
+
+			</Window.DataContext>
+
+			<Grid>
+
+					<Grid.RowDefinitions>
+
+						<RowDefinition Height="*" />
+
+						<RowDefinition Height="Auto" />
+
+					</Grid.RowDefinitions>
+
+					<sfgrid:SfDataGrid AutoGenerateColumns="True" 
+
+									   ItemsSource="{Binding ElementName=sfDataPager,
+
+					Path=PagedSource}"/>
+
+					 <datapager:SfDataPager x:Name="sfDataPager" 
+
+											Grid.Row="1"
+
+											NumericButtonCount="10"
+
+											PageSize="10" 
+
+											Source="{Binding OrdersDetails}" />
+
+			</Grid>
 
 
+
+   The following screenshot displays the output for Implementation of the SfDataPager in the SfDataGrid Control.
+
+
+
+   ![B:/Support/2015/April/24/Image/DataPager/Figure3.png](Getting-Started_images/Getting-Started_img3.png)
+
+   {:.prettyprint}
 

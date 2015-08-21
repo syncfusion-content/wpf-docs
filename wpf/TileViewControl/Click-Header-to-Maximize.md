@@ -23,7 +23,6 @@ The following code example illustrates how to add the Click Header to Maximize t
 
 
 {% highlight xml %}
-[XAML]
 
 <syncfusion:TileViewControl x:Name="TileView" Height="600" Width="800" 
 
@@ -41,7 +40,6 @@ The following code example illustrates how to add the Click Header to Maximize t
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
       TileViewControl Tile = new TileViewControl();
 
@@ -55,12 +53,12 @@ _ClickHeaderToMaximize Property Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }} </td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Data Type**' | markdownify }} </td><td>
-{{ '**Reference links**' | markdownify }} </td></tr>
+<th>
+{{ '**Property**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Data Type**' | markdownify }} </th><th>
+{{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
 <td>
 ClickHeaderToMaximize</td><td>

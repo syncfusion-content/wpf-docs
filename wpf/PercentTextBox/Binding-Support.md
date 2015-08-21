@@ -15,7 +15,7 @@ The following example shows a simple binding between the PercentValue of the Per
 
  {% highlight xml %}
 
-    [XAML]
+  
 
    <StackPanel>
 
@@ -44,7 +44,7 @@ The Data Context property provides its value to child elements. So you can set t
 
  {% highlight xml %}
 
-    [XAML]
+
 
     <StackPanel DataContext="{StaticResource myCustomer}">
 
@@ -72,7 +72,7 @@ If you want to bind values other than double values, then you need to use the Va
 
  {% highlight xml %}
 
-    [XAML]
+    
 
    <StackPanel>
 

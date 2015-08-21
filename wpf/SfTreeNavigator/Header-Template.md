@@ -13,7 +13,6 @@ The HeaderTemplate property of Tree Navigator can be used to customize the Tree 
 
 
 {% highlight xml %}
-[XAML]
 
 <navigation:SfTreeNavigator.HeaderTemplate>
 

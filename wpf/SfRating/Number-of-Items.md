@@ -13,7 +13,6 @@ The control allows the user to rate items from a predefined list of items.
 
 The following code sample shows how to use the ItemsCount property:
 
-[XAML]
 
 
 {%highlight xml%}

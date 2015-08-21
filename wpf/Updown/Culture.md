@@ -17,7 +17,6 @@ Culture can be set to en-US for the UpDown control as shown in the following cod
 
 {%highlight xml%}
 
- [XAML]
 
 <syncfusion:UpDown Name="upDown" Culture="en-US"/>
 
@@ -26,7 +25,6 @@ Culture can be set to en-US for the UpDown control as shown in the following cod
 
 {%highlight c#%}
 
-[C#]
 
 UpDown upDown = new UpDown();
 
@@ -43,7 +41,6 @@ Culture can also be set to bs-Latn for the UpDown control as shown in the follow
 
 {%highlight xml%}
 
-[XAML]
 
 <syncfusion:UpDown Name="upDown" Culture="bs-Latn"/>
 
@@ -51,7 +48,6 @@ Culture can also be set to bs-Latn for the UpDown control as shown in the follow
 
 {%highlight c#%}
 
-[C#]
 
 UpDown upDown = new UpDown();
 
@@ -67,12 +63,12 @@ _Culture Property_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 Culture</td><td>

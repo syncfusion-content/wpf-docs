@@ -7,19 +7,14 @@ control: DockingManager
 documentation: ug
 ---
 
-### Position FloatWindow using FloatWindowRect
+## Position FloatWindow using FloatWindowRect
 
 FloatWindowRect is used to specify the Rect bounds for the float child that is displayed in FloatWindow.
 
+{% highlight html %}
+<syncfusion:DockingManager Name="DockingManager"><Grid Name="grid1" syncfusion:DockingManager.State="Float" syncfusion:DockingManager.FloatingWindowRect="0,0,200,200"/></syncfusion:DockingManager>
 
-
-<table>
-<tr>
-<td>
-[XAML]<syncfusion:DockingManager Name="DockingManager"><Grid Name="grid1" syncfusion:DockingManager.State="Float" syncfusion:DockingManager.FloatingWindowRect="0,0,200,200"/></syncfusion:DockingManager></td></tr>
-<tr>
-<td>
-[C#]DockingManager.SetFloatingWindowRect(grid1, new Rect(0, 0, 200, 200));</td></tr>
-</table>
+DockingManager.SetFloatingWindowRect(grid1, new Rect(0, 0, 200, 200));
+{% endhighlight  %}
 
 

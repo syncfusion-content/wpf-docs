@@ -16,7 +16,7 @@ Assembly     : Syncfusion.SfColorPalette.Wpf (in Syncfusion.SfColorPalette.WPF.d
 The following code example shows how to create SfColorPalette from XAML and code behind respectively.
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -37,7 +37,7 @@ The following code example shows how to create SfColorPalette from XAML and code
 
 {% highlight C# %}
 
-[C#]
+
 
 SfColorPalette colorPalette = new SfColorPalette();
 {% endhighlight %}

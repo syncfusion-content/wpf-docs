@@ -15,7 +15,7 @@ The Busy Indicator control includes over 20 built-in animations that can be disp
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Overview_images/Overview_img1.png)
 
-
+_Busy Indicator_
 
 ## Key Features
 

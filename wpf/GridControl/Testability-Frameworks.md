@@ -74,7 +74,7 @@ The following set of instructions illustrates the same.
 
 
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -91,7 +91,7 @@ The following set of instructions illustrates the same.
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -131,7 +131,7 @@ The following sample code uses TestApi assemblies.
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -177,7 +177,7 @@ Once you get the actual Grid's Automation Element, you can then make use of diff
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -259,7 +259,7 @@ Initial steps before creating the Coded UI Test project:
 > Note: The following code appears.
 {% highlight html %}
 
-[XAML]
+
 
 <Application x:Class="WpfApplication3.App"
 
@@ -283,7 +283,7 @@ Initial steps before creating the Coded UI Test project:
 
 
 {% highlight html %}
-[XAML]
+
 
 <syncfusion:GridControlTestApplication x:Class="WpfApplication3.App"
 

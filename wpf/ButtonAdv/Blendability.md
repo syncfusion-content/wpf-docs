@@ -18,17 +18,17 @@ To edit the ButtonAdv control:
 
 
 
-![](Blendability_images/Blendability_img1.png)
+   ![](Blendability_images/Blendability_img1.png)
 
-
+   _Editing ButtonAdv Template Using Expression Blend_
 
 3. The Create Style Resource window appears as follows. Click OK to create a new style for Button control.
 
 
 
-![](Blendability_images/Blendability_img2.png)
+   ![](Blendability_images/Blendability_img2.png)
 
-
+   _Creating Style Resource_
 
 
 
@@ -36,13 +36,15 @@ To edit the ButtonAdv control:
 
 
 
-![](Blendability_images/Blendability_img3.png)
+   ![](Blendability_images/Blendability_img3.png)
 
 
+   _Editing Resources_
 
 
-
-![](Blendability_images/Blendability_img4.png)
-
+   ![](Blendability_images/Blendability_img4.png)
 
 
+   _ButtonControlAdv style edited in Blend_
+
+   {:.prettyprint}   

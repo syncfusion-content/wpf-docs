@@ -11,9 +11,9 @@ documentation: ug
 
 This section explains you how to use context menu, Column Chooser window and Rowheader in SfDatagrid. You can also see the different types of available API, methods and events for contextmenu, Column Chooser window and for row header.
 
-### Context Menu
+## Context Menu
 
-#### Overview
+### Overview
 
 ContextMenu in SfDataGrid is entirely customizable menu for the extensible functionalities of Grid. ContextMenu is enabled for various parts of the Grid with the appropriate APIs. SfDataGrid has a set of APIs that allows access to context menu in various parts of Grid. The APIs are as follows:
 
@@ -27,7 +27,7 @@ ContextMenu in SfDataGrid is entirely customizable menu for the extensible funct
 
 All Context Menu APIs are of the type of Context menu, and are easily customized similar to the default context menu.
 
-#### Data Context for Context Menu
+### Data Context for Context Menu
 
 The ContextMenu in SfDataGrid is applied to different DataContext according to the type of the context menu. The DataContext are as follows:
 
@@ -40,7 +40,7 @@ The ContextMenu in SfDataGrid is applied to different DataContext according to t
 * GridGroupDropAreaContextMenuInfo: DataContext for GroupDropAreaContextMenu
 * DataGrid: Contains the instance of DataGrid.
 
-#### Events for Context Menu
+### Events for Context Menu
 
 The GridContextMenuOpening event in SfDataGrid is raised when the context menu is opened. The GridContextMenuOpening event handler has two parameters namely sender that handles SfDataGrid and the other GridContextMenuEventArgs. The properties for these EventArgs are as follows:
 
@@ -55,7 +55,7 @@ The following code example illustrates context menu usage with GroupCaptionConte
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -74,7 +74,7 @@ The following code example illustrates context menu usage with GroupCaptionConte
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -230,20 +230,20 @@ public static class ContextMenuCommands
 
 _Context menu usage with GroupCaptionContextMenu_
 
-#### Limitations:
+### Limitations:
 
 You can not open your custom context menu when you are in edit mode. When you right-click on any record cell, customRecordContextMenu is displayed.                               
 
 When you enter into edit mode and right-click on the cell, the default Microsoft context menu is displayed. This is the default behavior of SfDataGrid.
 
-### Column Chooser 
+## Column Chooser 
 
 ColumnChooser allows you to add or remove columns dynamically from the current Grid view using drag-and-drop operations. You can enable a Column Chooser in an application by creating an instance for ColumnChooser and GridColumnChooserController class, and then assign the GridColumnChooserController’s instance to GridColumnDragDropController. 
 
 The following code example illustrates how to add a default ColumnChooser in an application.
 {% highlight C# %}
 
-[C#]
+
 
 ColumnChooser chooserWindow;
 
@@ -279,31 +279,31 @@ The following screenshot illustrates aDefault Column Chooser window.
 
 _Default Column Chooser window_
 
-> _Note: The default Column Chooser displays the empty window when there is no hidden column initially._
+> Note: The default Column Chooser displays the empty window when there is no hidden column initially.
 
-#### Customizing Column Chooser
+### Customizing Column Chooser
 
 Customization of ColumnChooser is achieved in the following two ways such as:
 
 * UI Customization
 * Drag and Drop Customization
 
-#### UI Customization:
+### UI Customization:
 
 Instead of using default ColumnChooser window, you can also select any other panel as column chooser’s window. You can achieve using IColumnChooser interface.
 
 Default ColumnChooser is implemented with this interface for drag-and-drop operation.
 
-#### Methods in IColumnChooser:
+### Methods in IColumnChooser:
 
 _IColumnChooser method table_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 AddChild</td><td>
@@ -327,7 +327,7 @@ The following code example illustrates how to add and remove a child from Custom
 
 {% highlight C# %}
 
-[C#]
+
 
   #region IColumnChooser methods
 
@@ -493,7 +493,7 @@ The following screenshot illustrates a Custom Column Chooser.
 
 _Custom Column Chooser_
 
-#### Drag and Drop Customization:
+### Drag and Drop Customization:
 
 By default, column drag-and-drop operations are handled by GridColumnDragDropController class. You can achieve drag-and-drop customization by overriding the methods in GridColumnDragDropController class.
 
@@ -501,10 +501,10 @@ _GridColumnDragDropController virtual methods table_
 
 <table>
 <tr>
-<td>
-Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 CanShowPopup</td><td>
@@ -553,21 +553,21 @@ Called when a draggable pop-up is dropped on Grid part</td></tr>
 </table>
 
 
-#### GridColumnChooserController:
+### GridColumnChooserController:
 
 GridColumnChooserController class plays a vital role in Column Chooser drag-and-drop operation. You can achieve drag-and-drop customization by overriding the GridColumnChooserController methods.
 
-#### Properties and Methods in GridColumnChooserController:
+### Properties and Methods in GridColumnChooserController:
 
 _Property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 AllowHidingForLastColumn</td><td>
@@ -592,7 +592,7 @@ Show(int colIndex, MouseEventArgs e)</td><td>
 Called to display the pop-up to enable drag operation.> {{ '_Note: This method shows pop-up in handling pointer events._' | markdownify }}> </td></tr>
 </table>
 
-### RowHeader 
+## RowHeader 
 
 RowHeader is a special Column used to indicate the row status like CurrentRow, Editing status, Errors in row and etc. You can enable or disable RowHeader using ShowRowHeader property in SfDataGrid. 
 
@@ -602,7 +602,7 @@ The following code example displays you how to enable RowHeader in DataGrid.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <Window.DataContext>
 
@@ -628,7 +628,7 @@ The following screenshot displays a DataGrid with a RowHeader:
 
 _DataGrid with a RowHeader_
 
-#### RowHeader Width:
+### RowHeader Width:
 
 By default, the RowHeader width value is set to ’45’ (Data Type: double).you can customize the width by setting any desired width as a numeric value to RowHeaderWidth property in SfDataGrid.
 
@@ -636,7 +636,7 @@ By default, the RowHeader width value is set to ’45’ (Data Type: double).you
 {% highlight xml %}
 
 
-[XAML]
+
 
 <Window.DataContext>
 
@@ -658,7 +658,7 @@ By default, the RowHeader width value is set to ’45’ (Data Type: double).you
 {% endhighlight %}
 
 
-#### RowHeader Indicators:
+### RowHeader Indicators:
 
 The following table lists the different RowHeader indicators.
 
@@ -666,9 +666,9 @@ _RowHeader indicators table_
 
 <table>
 <tr>
-<td>
-Row Indicator</td><td>
-Description</td></tr>
+<th>
+Row Indicator</th><th>
+Description</th></tr>
 <tr>
 <td>
 {{ '![](Features_images/Features_img180.png)' | markdownify }}
@@ -702,15 +702,15 @@ Indicates that the current row has errors.</td></tr>
 </table>
 
 
-> _Note: Using IDataErrorInfo, you can retrieve the error string from Error Field, whereas using INotifyDataErrorInfo the error is retrieved when the HasError Field value is ‘true’._
+> Note: Using IDataErrorInfo, you can retrieve the error string from Error Field, whereas using INotifyDataErrorInfo the error is retrieved when the HasError Field value is ‘true’.
 
 
 
-#### Customizing Row Header:
+### Customizing Row Header:
 
 RowHeader provides customization support, either by using Styles or by overriding Control Template. It is easily customized by editing the visual states in the default control template.
 
-##### Editing Current Row Indicator
+### Editing Current Row Indicator
 
 The following code example shows you how to edit current row indicator in row header.
 
@@ -718,7 +718,7 @@ The following code example shows you how to edit current row indicator in row he
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window.Resources>         
 
@@ -840,7 +840,7 @@ The following image displays the output of the RowHeader with customized current
 
 _RowHeader with customized current row indicator_
 
-### ToolTip
+## ToolTip
 
 The ToolTip provides support to show the pop-up window that displays information when the mouse hovers over the cells in the DataGrid. The following properties in the GridColumn enable and customize the ToolTip support in the SfDataGrid.
 
@@ -848,11 +848,11 @@ _Properties in the GridColumn_
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Properties</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 ShowToolTip</td><td>
@@ -892,7 +892,7 @@ Null</td></tr>
 </table>
 
 
-#### Default ToolTip
+### Default ToolTip
 
 You can enable the ToolTip for columns by setting the GridColumn.ShowToolTip property as given in the following code. 
 
@@ -900,7 +900,7 @@ You can enable the ToolTip for columns by setting the GridColumn.ShowToolTip pro
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -952,7 +952,7 @@ Likewise, you can enable the default ToolTip for the Header by setting the GridC
 
 _Default ToolTip for the Header_
 
-#### ToolTip customization
+### ToolTip customization
 
 You can customize the ToolTip in the following ways:
 
@@ -960,7 +960,7 @@ You can customize the ToolTip in the following ways:
 * By using the GridColumn.ToolTipTemplate.
 * By using the GridColumn.ToolTipTemplateSelector.
 
-##### Style Customization
+### Style Customization
 
 You can customize the default style of the ToolTip to be shown on the GridCell or the GridHeaderCell control by using the following code.
 
@@ -968,7 +968,7 @@ You can customize the default style of the ToolTip to be shown on the GridCell o
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -1006,7 +1006,7 @@ The following screenshot shows the customized default ToolTip of the SfDataGrid.
 
 _Customized default ToolTip_
 
-##### By using the ToolTipTemplate
+### By using the ToolTipTemplate
 
 You can customize the default ToolTip by loading the Data Template as its content by setting the GridColumn.ToolTipTemplate. The DataContext for the ToolTipTemplate is set based on the GridColumn.SetCellBoundToolTip. When the SetCellBoundToolTip is false, the underlying record is the DataContext for the ToolTipTemplate. Otherwise, the DataContextHelper continues to be the DataContext for the ToolTipTemplate.
 
@@ -1015,7 +1015,7 @@ You can customize the default ToolTip by loading the Data Template as its conten
 
 {% highlight xml %}
 
-[XAML]
+
 <!-- Need to add this code in Resources.     Defines the DataTemplate with Key – For GridCellControl-->
 <DataTemplate x:Key="customToolTip">   
  <Image Width="100" Height="100" Source="{Binding CustomerID,Converter={StaticResource stringToImageConverter}}" />
@@ -1063,7 +1063,7 @@ The following screenshot shows the customized ToolTip of the Header loaded in th
 
 _ToolTip of Header with image_
 
-##### By using the ToolTipTemplateSelector
+### By using the ToolTipTemplateSelector
 
 You can customize the default ToolTip by loading different DataTemplates based on the DataContext by setting the GridColumn.ToolTipTemplateSelector. It provides a way to select the DataTemplate based on the data object and the data-bound element. The DataContext for the ToolTip via the ToolTipTemplateSelector is set based on the GridColumn.SetCellBoundToolTip. When the SetCellBoundToolTip is false, underlying record is the DataContext for the Tooltip. Otherwise, the DataContextHelper is the DataContext for the ToolTip.
 
@@ -1073,7 +1073,7 @@ The following XAML has two DataTemplates defined to set for the ToolTip.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -1120,7 +1120,7 @@ The following ToolTipTemplateSelector derived from the DataTemplateSelector retu
 
 {% highlight C# %}
 
-[C#]
+
 
 public class ToolTipTemplateSelector : DataTemplateSelector
 
@@ -1219,7 +1219,7 @@ The above template selector sets the GridColumn.ToolTipTemplateSelector.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -1285,7 +1285,7 @@ The following screenshot shows the different ToolTips of the cells.
 
 _Different ToolTip with ToolTipTemplateSelector_
 
-#### How to use the same DataTemplate for all the columns and display the ToolTip based on Record and Cell value?
+### How to use the same DataTemplate for all the columns and display the ToolTip based on Record and Cell value?
 
 When you are defining the GridColumn.ToolTipTemplate, do not define the DataTemplate for each column separately when you want to display based on the CellValue or the GridColumn.MappingName, in other words. 
 
@@ -1296,7 +1296,7 @@ In the following XAML code, the same DataTemplate is set to all the columns to d
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -1385,9 +1385,9 @@ _Same ToolTip style for all the columns_
 
 In the image, when the mouse hovers on any cell, the tool tip style is the same for all the columns.
 
-### How To
+## How To
 
-#### How to change the context menu item at Execute time
+### How to change the context menu item at Execute time
 
 You can use the GridContextMenuOpening event to change the contextmenu at Execute time. This event argument carries necessary information to work with the contextmenu of Grid.
 
@@ -1396,7 +1396,7 @@ By default, the contextmenu of Grid does not have any instance, and it is initia
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window.DataContext>
 
@@ -1443,7 +1443,7 @@ In the following code example, the Headercontextmenu and Recordcontextmenu are i
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -1514,14 +1514,14 @@ _Menu Items changed at Execute time according to column position_
 
 
 
-#### How to display row index in row header
+### How to display row index in row header
 
 You can also display row index in the row header instead of indicating the status of the row. To display the row index, you have to edit the control template of the GridRowHeaderCell, as shown in the following code example.
 
 
 {% highlight xml %}
 
- [XAML]
+ 
 
 <Window.Resources>
 

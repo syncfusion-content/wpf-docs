@@ -15,15 +15,15 @@ As Inline will be the content property of ParagraphAdv, SpanAdv can be added onl
 
 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 Text </td><td>
@@ -89,7 +89,7 @@ SpanAdv can be added directly to an application using the following code snippet
 
 {% highlight xml %}
 
-[XAML]
+
 <syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            
 <syncfusion:DocumentAdv>                
 <syncfusion:SectionAdv>                   
@@ -103,7 +103,7 @@ SpanAdv can be added directly to an application using the following code snippet
 
 {% highlight C# %}
 
-[C#]           
+          
  RichTextBoxAdv richtext = new RichTextBoxAdv();          
  DocumentAdv document = new DocumentAdv();           
  SectionAdv section = new SectionAdv();           

@@ -41,7 +41,7 @@ BasicSchema class is used to create the basic schema properties.
 
 Refer the following code sample to create XMP basic schema.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -83,9 +83,9 @@ basic.Rating.Add(-25);
 
 pdfDoc.Save("DocumentInformation.pdf");
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -126,6 +126,7 @@ basic.Rating.Add(-25)
 'Saves the document.
 
 pdfDoc.Save("DocumentInformation.pdf")
+{% endhighlight %}
 
 ## Dublin Core Schema
 
@@ -143,7 +144,7 @@ The Dublin Core schema provides a set of commonly used properties such as,
 
 DublinCoreSchema class is used to create the Dublincore schema properties.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -175,9 +176,9 @@ dublin.Publisher.Add("Essential PDF");
 
 pdfDoc.Save("DocumentInformation.pdf");
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -208,6 +209,7 @@ dublin.Publisher.Add("Essential PDF")
 'Saves the document.
 
 pdfDoc.Save("DocumentInformation.pdf")
+{% endhighlight %}
 
 ## Rights Management Schema
 
@@ -221,7 +223,7 @@ This schema includes properties related to rights management. These properties p
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -250,10 +252,10 @@ rights.Marked = true;
 pdfDoc.Save("DocumentInformation.pdf");
 
 pdfDoc.Close();
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -282,6 +284,7 @@ rights.Marked = True
 pdfDoc.Save("DocumentInformation.pdf")
 
 pdfDoc.Close()
+{% endhighlight %}
 
 ## Basic Job Ticket Schema
 
@@ -289,7 +292,7 @@ This schema describes very simple workflow or job information.
 
 * JobRef
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -315,9 +318,9 @@ pdfDoc.Save("DocumentInformation.pdf");
 
 pdfDoc.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -342,6 +345,7 @@ basicJob.JobRef.Add("PDF document creation")
 pdfDoc.Save("DocumentInformation.pdf")
 
 pdfDoc.Close()
+{% endhighlight %}
 
 ## Paged-Text Schema
 
@@ -354,7 +358,7 @@ The Paged-Text schema is used for text appearence on page in a document.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -386,9 +390,9 @@ pdfDoc.Save("DocumentInformation.pdf");
 
 pdfDoc.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -419,6 +423,7 @@ pagedText.PlateNames.Add("Sample page")
 pdfDoc.Save("DocumentInformation.pdf")
 
 pdfDoc.Close()
+{% endhighlight %}
 
 ## PDF Schema
 
@@ -426,7 +431,7 @@ This schema specifies properties used with Adobe PDF documents.
 
 PDFSchema class is used to create the PDF Schema. It has the following set of properties.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -456,9 +461,9 @@ pdfDoc.Save("DocumentInformation.pdf");
 
 pdfDoc.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -487,6 +492,7 @@ pdfSchema.Keywords = "Essential PDF"
 pdfDoc.Save("DocumentInformation.pdf")
 
 pdfDoc.Close()
+{% endhighlight %}
 
 ## Custom Schema
 
@@ -497,7 +503,7 @@ A custom schema defines the structure of the customized information records. You
 
 Add the following code to define a custom schema. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -529,9 +535,9 @@ cs["Project"] = "Data processing";
 
 pdfDoc.Save("DocumentInformation.pdf");
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -562,6 +568,7 @@ cs("Project") = "Data processing"
 'Saves the document.
 
 pdfDoc.Save("DocumentInformation.pdf")
+{% endhighlight %}
 
 ## Adding Custom Metadata
 
@@ -580,38 +587,39 @@ The custom metadata to be created has to be stored and linked to the PDF documen
 
 You can add the following code to create an XML document to store custom metadata fields. 
 
-[C#]
+{% highlight c# %}
 
 
 
 XmpMetadata xmp = new XmpMetadata(pdfDoc.DocumentInformation.XmpMetadata.XmlData); 
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
 Dim xmp As New XmpMetadata(pdfDoc.DocumentInformation.XmpMetadata.XmlData)
 
-
+{% endhighlight %}
 
 The following table provides more information on the code.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Value it accepts</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Value it accepts</th></tr>
 <tr>
 <td>
 XmlData</td><td>
 XmlElement</td><td>
 XmlElement</td></tr>
 </table>
+
 ### Create custom schema
 
 Custom schema defines the structure of the customized information records. 
@@ -623,7 +631,7 @@ You can use the CustomSchema class to:
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -637,9 +645,9 @@ cs["creationDate"] = DateTime.Now.ToString();
 
 cs["DOCID"] = "SYNCSAM001";
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -653,7 +661,7 @@ cs("creationDate") = DateTime.Now.ToString()
 
 cs("DOCID") = "SYNCSAM001"
 
-
+{% endhighlight %}
 
 The above code sample illustrates creation of custom schema or first-level metadata field [www.syncfusion.com](http://www.syncfusion.com), which is a link. The second-level metadata fields under the link are Author, creation date, and DocID.
 
@@ -661,7 +669,7 @@ The above code sample illustrates creation of custom schema or first-level metad
 
 Full code is used to create a custom meatadata field as illustrated in the following code.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -688,10 +696,10 @@ cs["DOCID"] = "SYNCSAM001";
 pdfDoc.Save("CustomMetaField.pdf");
 
 pdfDoc.Close();
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -720,6 +728,7 @@ cs("DOCID") = "SYNCSAM001"
 pdfDoc.Save("CustomMetaField.pdf")
 
 pdfDoc.Close()
+{% endhighlight %}
 
 Security
 
@@ -765,7 +774,7 @@ This property is effective only while using 128 bit encryption and flag set. It 
 
 Essential PDF allows you to encrypt your document in RC4 encryption. 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -812,10 +821,10 @@ graphics.DrawString(text, font, brush, new PointF(0, 40));
 document.Save("Output.pdf");
 
 document.Close();
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -860,12 +869,13 @@ graphics.DrawString(text, font, brush, New PointF(0, 40))
 document.Save("Output.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ## AES Encryption
 
 Essential PDF allows you to create an AES encrypted PDF document.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -913,9 +923,9 @@ document.Save("Output.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -960,6 +970,7 @@ graphics.DrawString(text, font, brush, New PointF(0, 40))
 document.Save("Output.pdf")
 
 document.Close()
+{% endhighlight %}
 
 Digitally Sign the new PDF document
 
@@ -967,13 +978,13 @@ A digital signature is an electronic signature that is used to authenticate the 
 
 Digital signatures are easily transportable, cannot be imitated by someone else, and can be automatically time-stamped. It has the ability to ensure that once the original signed message is received, the sender cannot easily repudiate it later.
 
-_List of Elements in Digital Signature_
+List of Elements in Digital Signature
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 Appearance</td><td>
@@ -1031,7 +1042,7 @@ PdfCertificate class is used to get the certificates from disk or another devic
 
 PdfSignature class has methods and properties that allow setting the signature information such as reason, location information, bounds where the signature has to be placed, and contact information.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1077,9 +1088,9 @@ document.Save("Output.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1125,17 +1136,17 @@ document.Save("Output.pdf")
 
 document.Close()
 
-
+{% endhighlight %}
 
 Author Signature
 
 By default, documents are signed with standard signature types. Certificated property of PdfSignature is used to create author’s signature. When signed with this type of signature, any modification after signing is detected, and hence do not support added multiple signatures.
 
-> _Note: This implementation of certification will only work with Acrobat 7 and higher versions._
+> Note: This implementation of certification will only work with Acrobat 7 and higher versions.
 
 
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1185,9 +1196,9 @@ document.Save("Output.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1236,12 +1247,13 @@ graphics.DrawImage(bmp, 0, 0)
 document.Save("Output.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ## Digitally Sign the existing PDF document
 
 Essential PDF allows you to put signature in an existing PDF document as in a newly created PDF.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1287,9 +1299,9 @@ document.Save("Output.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1338,6 +1350,7 @@ graphics.DrawImage(bmp, 0, 0)
 document.Save("Output.pdf")
 
 document.Close()
+{% endhighlight %}
 
 ## Timestamp in Digital signature
 
@@ -1349,7 +1362,7 @@ To apply timestamp using Essential PDF, the TimeStampServer property of the PdfS
 
 The following code illustrates the method for adding timestamp in the digital signature.
 
-[C#]
+{% highlight c# %}
 
 
 
@@ -1399,9 +1412,9 @@ document.Save("Output.pdf");
 
 document.Close();
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -1451,7 +1464,7 @@ document.Save("Output.pdf")
 
 document.Close()
 
-
+{% endhighlight %}
 
 
 

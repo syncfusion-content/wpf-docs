@@ -17,17 +17,17 @@ This feature is useful when the objective of analysis is to view the drilled dat
 
 ## Tables for Properties, Methods, and Events
 
-### Properties
+ Properties
 
 _Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 DrillType</td><td>
@@ -49,13 +49,13 @@ A sample is available in the following locations:
 
 C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\x.x.x.x\BI\WPF\OlapChart.WPF\Samples\Data Relation\Drill Types Demo
 
-# Adding Drill Position to an Application 
+## Adding Drill Position to an Application 
 
 The following code snippet explains the implementation of Drill Position feature in an application:
 
  {% highlight c# %}
  
-   [CS]
+   
 
 
 
@@ -68,7 +68,7 @@ dataManager.CurrentReport.DrillType = DrillType.DrillPosition;
 
  {% highlight vbnet %}
   
- [VB]
+
 
 
 

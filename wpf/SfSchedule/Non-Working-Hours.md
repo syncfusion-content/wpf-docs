@@ -29,7 +29,6 @@ The starting and ending work hour of a day is set using the WorkStartHour and Wo
 
 The Non-Working hour’s background brush can be customized using the NonWorkingHourBrush property. 
 {% highlight html %}
-[XAML]
 
 
 
@@ -52,7 +51,6 @@ The Non-Working hour’s background brush can be customized using the NonWorking
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
 
 
 

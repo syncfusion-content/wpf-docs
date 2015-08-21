@@ -7,15 +7,15 @@ control: DockingManager
 documentation: ug
 ---
 
-### Set ActiveWindow using SetNewFocusedElement()
+## Set ActiveWindow using SetNewFocusedElement()
 
 This method is used to activate the new child as an active window and the focus is moved to the given child.
 
 
+{% highlight html %}
 
-[C#]
 
 DockingManager.SetNewFocusedElement(element);
 
-
+{% endhighlight  %}
 

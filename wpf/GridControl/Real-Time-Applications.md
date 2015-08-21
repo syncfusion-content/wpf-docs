@@ -52,7 +52,7 @@ You can select a current cell in the Grid, similar to the current cell behavior 
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -76,7 +76,7 @@ The active selection can be outlined with a selection frame by setting the GridM
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -96,7 +96,7 @@ As we discussed in the previous chapter, Grid control provides complete support 
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -122,7 +122,7 @@ The following code illustrates how to handle this event:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 

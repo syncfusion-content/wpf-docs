@@ -20,10 +20,10 @@ _Range Adorner property table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 EnableRangeAdorner </td><td>
@@ -40,14 +40,14 @@ The EnableRangeAdorner property must be set either in XAML or the code file.
 
 {% highlight xml %}
 
-[XAML]  EnableRangeAdorner="True"
+  EnableRangeAdorner="True"
 
 {% endhighlight %}
 
 {% highlight C# %}
 
 
-[C#]   control.EnableRangeAdorner = true;
+   control.EnableRangeAdorner = true;
 {% endhighlight %}
 
 

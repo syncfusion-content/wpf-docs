@@ -16,7 +16,6 @@ The Number formatting controls how a number is displayed in the UpDown control b
 The NumberFormatInfo can be set for the UpDown control as shown in the following code example.
 
 {%highlight xml%}
- [XAML]
 
 <syncfusion:UpDown HorizontalAlignment="Center" VerticalAlignment="Center" Name="upDown" Height="51"Width="140" Value="5555555">
 
@@ -38,7 +37,6 @@ The NumberFormatInfo can be set for the UpDown control as shown in the following
 
 {%highlight c#%}
 
-[C#]
 
 UpDown upDown = new UpDown();
 
@@ -66,16 +64,16 @@ NumberDecimalSeparator = "*"
 
 Tables for Properties, and Events
 
-_NumberFormatInfo Property_
+NumberFormatInfo Property
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
 <td>
 NumberFormatInfo</td><td>
@@ -86,7 +84,7 @@ Not applicable.</td></tr>
 </table>
 
 
-_NumberFormatInfo Event_
+NumberFormatInfo Event
 
 <table>
 <tr>
@@ -97,12 +95,12 @@ _NumberFormatInfo Event_
 {{ '**Type**' | markdownify }}</th><th>
 {{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
-<th>
-NumberFormatInfoChanged</th><th>
-Occurs when the format of the number changes.</th><th>
-DependencyObject andDependencyPropertyChangedEventArgs.</th><th>
-PropertyChangedCallback</th><th>
-Not applicable.</th></tr>
+<td>
+NumberFormatInfoChanged</td><td>
+Occurs when the format of the number changes.</td><td>
+DependencyObject andDependencyPropertyChangedEventArgs.</td><td>
+PropertyChangedCallback</td><td>
+Not applicable.</td></tr>
 </table>
 
 

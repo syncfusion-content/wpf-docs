@@ -16,13 +16,13 @@ The Barcode control helps rendering bar codes in desktop (WPF) application. The 
 ![](Overview_images/Overview_img1.png)
 
 
-
+_Barcode control rendering 1D bar code_
 
 
 ![](Overview_images/Overview_img2.png)
 
 
-
+_Barcode control rendering 2D bar code_
 
 
 Structure of the Control
@@ -30,4 +30,4 @@ Structure of the Control
 ![](Overview_images/Overview_img3.png)
 
 
-
+_Structure of Barcode control_

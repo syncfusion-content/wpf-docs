@@ -35,7 +35,7 @@ This is illustrated in the code given below.
 
 {% highlight xml %}
 
-    [XAML]
+    
 
             <syncfusion:Ribbon.ModalTabCollection >
 
@@ -77,16 +77,16 @@ After adding this collection in Ribbon, you can then handle the Modal Tab visibi
 
 
 
-_ModalTabCollection Table_
+ModalTabCollection Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Default Value**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data Type**' | markdownify }}</th><th>
+{{ '**Default Value**' | markdownify }}</th></tr>
 <tr>
 <td>
 ModalTabCollection</td><td>
@@ -101,7 +101,7 @@ Null Collection</td></tr>
 
 
 
-_ShowModalTab Table_
+ShowModalTab Table
 
 <table>
 <tr>
@@ -112,16 +112,16 @@ _ShowModalTab Table_
 {{ '**Return Type**' | markdownify }}</th><th>
 {{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
-<th>
-ShowModalTab</th><th>
-This method will show the specific Modal Tab in the Ribbon from ModalTabCollection. </th><th>
-(string arg1) arg1- Name of the Ribbon Tab to be displayed as Modal Tab from ModalTabCollection.</th><th>
-bool </th><th>
-How to Show a ModalTab?</th></tr>
+<td>
+ShowModalTab</td><td>
+This method will show the specific Modal Tab in the Ribbon from ModalTabCollection. </td><td>
+(string arg1) arg1- Name of the Ribbon Tab to be displayed as Modal Tab from ModalTabCollection.</td><td>
+bool </td><td>
+How to Show a ModalTab?</td></tr>
 </table>
 
 
-_CloseModalTabs Table_
+CloseModalTabs Table
 
 <table>
 <tr>
@@ -132,12 +132,12 @@ _CloseModalTabs Table_
 {{ '**Return Type**' | markdownify }}</th><th>
 {{ '**Reference links**' | markdownify }}</th></tr>
 <tr>
-<th>
-CloseModalTabs</th><th>
-CloseModalTabs method will close the opened Modal Tabs in Ribbon control.</th><th>
- No Params</th><th>
-bool </th><th>
-How to close ModalTabs?</th></tr>
+<td>
+CloseModalTabs</td><td>
+CloseModalTabs method will close the opened Modal Tabs in Ribbon control.</td><td>
+ No Params</td><td>
+bool </td><td>
+How to close ModalTabs?</td></tr>
 </table>
 
 
@@ -151,7 +151,7 @@ This is illustrated in the code given below.
 
 {% highlight c# %}
  
-   [C#]
+   
 
 
 
@@ -176,7 +176,7 @@ CloseModalTabs method will close the currently opened Modal Tab in Ribbon contro
 This is illustrated in the code given below.
 
 {% highlight c# %}
- [C#]
+ 
  
     private void CloseModalTabBtn_Click(object sender, RoutedEventArgs e)
 

@@ -11,7 +11,7 @@ documentation: ug
 
 The tooltip will display the value of the Rating control. The tooltip can be enabled or disabled using the ShowToolTip property. The default value is true.
 
-[XAML]
+
 
 {%highlight xml%}
 

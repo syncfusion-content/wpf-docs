@@ -9,18 +9,18 @@ documentation: ug
 
 # Scale Label settings
 
-### Labels:
+## Labels:
 
 A quantitative scale label specifies the numeric value according to the major ticks in the range of the scale.
 
-### Customizing Labels:
+## Customizing Labels:
 
 The label’s offset is changed by using the LabelOffset property. The foreground of the label is customized by setting LabelStroke. By setting LabelSize, the font size of the labels is modified. 
 
 ### Code Example:
 
 {% highlight html %}
-[XAML]
+
 
         <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -36,7 +36,7 @@ The label’s offset is changed by using the LabelOffset property. The foregroun
 
 {% endhighlight %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -74,9 +74,9 @@ The label’s offset is changed by using the LabelOffset property. The foregroun
 
 ![C:/Users/Giftline/Desktop/New folder/8.jpg](Concept-and-Features_images/Concept-and-Features_img11.png)
 
+_Customizing Labels of Bullet Graph_
 
-
-### Label Position
+## Label Position
 
 The labels in the scale can be placed above or below the qualitative ranges by choosing the following options available in the LabelPosition property. 
 
@@ -86,7 +86,7 @@ The labels in the scale can be placed above or below the qualitative ranges by c
 ### Code Example:
 
 {% highlight html %}
-[XAML]
+
 
         <syncfusion:SfBulletGraph Orientation="Horizontal" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
@@ -105,7 +105,7 @@ The labels in the scale can be placed above or below the qualitative ranges by c
 {% endhighlight  %}
 {% highlight html %}
 
-[C#]
+
 
 SfBulletGraph bulletgraph = new SfBulletGraph();
 
@@ -136,3 +136,5 @@ SfBulletGraph bulletgraph = new SfBulletGraph();
 {% endhighlight  %}
 
 ![C:/Users/Giftline/Desktop/New folder/9.jpg](Concept-and-Features_images/Concept-and-Features_img12.png)
+
+_Customizing Label Position of Bullet Graph_

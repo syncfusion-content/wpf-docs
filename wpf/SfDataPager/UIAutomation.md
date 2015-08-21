@@ -13,7 +13,8 @@ SfDataPager supports the following UIAutomation,
 
 * CodedUI
 * Quick Test Proffessional
-#### CodedUI
+
+## CodedUI
 
 
 SfDataPager supports CodedUITest automation that helps you to create an automation test with SfDataPager elements and record the sequence of actions.
@@ -32,17 +33,17 @@ There are three levels of support in CodedUITest for SfDataPager
 Levels</th><th>
 Description</th></tr>
 <tr>
-<th>
-Level – 1</th><th>
-Record and Detects the UI Elements when the actions in the Control is performed.</th></tr>
+<td>
+Level – 1</td><td>
+Record and Detects the UI Elements when the actions in the Control is performed.</td></tr>
 <tr>
-<th>
-Level – 2</th><th>
-Provides custom properties for UI elements when you drag the Cross hair to any UI element.</th></tr>
+<td>
+Level – 2</td><td>
+Provides custom properties for UI elements when you drag the Cross hair to any UI element.</td></tr>
 <tr>
-<th>
-Level – 3</th><th>
-CodedUITest Builder generates code from the recorded session and you need to implement custom class to access custom properties, so the generated code is simplified.</th></tr>
+<td>
+Level – 3</td><td>
+CodedUITest Builder generates code from the recorded session and you need to implement custom class to access custom properties, so the generated code is simplified.</td></tr>
 </table>
 
 
@@ -69,7 +70,7 @@ SfDataPager</td><td>
 
 
 
-### Quick Test Professional
+## Quick Test Professional
 
 SfDataPager supports QTP test. You can record the actions perfomed in the control by the corresponding method name with Syncfusion namespace. To know more about QTPtest, refer to the [link](http://help.syncfusion.com/ug/wpf/Documents/quicktestprofessionalqtp.htm)
 
@@ -91,11 +92,11 @@ Description</th><th>
 Parameters </th><th>
 Return Type </th></tr>
 <tr>
-<th>
-void SetCurrentPage(int pageIndex</th><th>
-To set the current page in SfDataPager</th><th>
- Int pageIndex</th><th>
-Void</th></tr>
+<td>
+void SetCurrentPage(int pageIndex</td><td>
+To set the current page in SfDataPager</td><td>
+ Int pageIndex</td><td>
+Void</td></tr>
 </table>
 
 

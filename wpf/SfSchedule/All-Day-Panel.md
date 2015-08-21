@@ -11,7 +11,6 @@ documentation: ug
 
 The schedule All Day panel visibility can be customized by ShowAllDay and its default value is true.
 {% highlight html %}
-[XAML]
 
 
 
@@ -22,7 +21,6 @@ The schedule All Day panel visibility can be customized by ShowAllDay and its de
 {% highlight c# %}
 
 
-[C#]
 
             SfSchedule schedule = new SfSchedule();
 
@@ -42,7 +40,6 @@ The schedule All Day panel visibility can be customized by ShowAllDay and its de
 
 In schedule the date navigation can be done using the MoveToDate method of the schedule.
 {% highlight c# %}
-[C#]
 
 
 

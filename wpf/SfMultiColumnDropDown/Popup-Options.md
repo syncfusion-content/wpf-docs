@@ -7,14 +7,14 @@ control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-## Popup Options
+# Popup Options
 
 SfMultiColumnDropDownControl allows you to customize the DropDownPopup appearance by setting Popup Background, BorderBrush and BorderThickness etc.
 
 The following code example illustrates how to customize the DropDownPopup.
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -60,15 +60,15 @@ SfMultiColumnDropDownControl allows you to resize the DropDownPopup. You can res
 
 SfMuliColumnDropDownControl exposes the following properties to Resize and Customize the DropDownPopup
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 ActualPopupHeight</td><td>
@@ -156,13 +156,13 @@ Null</td></tr>
 </table>
 Events
 
-_Events Table_
+Events Table
 
 <table>
 <tr>
-<td>
-Event</td><td>
-Description</td></tr>
+<th>
+Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 PopupClosed</td><td>
@@ -190,7 +190,7 @@ You can keep the DropDownPopup of SfMultiColumnDropDownControl open always by us
 The following code example illustrates how to set StaysOpen property for DropDownPopup.
 {% highlight C# %}
 
-[C#]
+
 
 
 

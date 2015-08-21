@@ -27,7 +27,7 @@ SubShapeFileLayers is the collection of SubShapeFileLayer. SubShapeFileLayer is 
 
 {% highlight xml %}
 
-[XAML]  
+ 
 <syncfusion:SfMap >            
 <syncfusion:SfMap.Layers>                
 <syncfusion:ShapeFileLayer Background="White" x:Name="shapelayer" ItemsSource="{Binding MuliLayerList}" ShapeIDPath="NAME"  ShapeIDTableField="Continent"  EnableSelection="True" Uri="BubbleVisualization.ShapeFiles.continent.shp">                   
@@ -125,12 +125,13 @@ SubShapeFileLayers is the collection of SubShapeFileLayer. SubShapeFileLayer is 
  </syncfusion:ShapeFileLayer>           
  </syncfusion:SfMap.Layers>      
  </syncfusion:SfMap></td></tr>
-{% endhighlight %}
+
+ {% endhighlight %}
 
 
  
  {% highlight C# %}
- [C#]
+
 
 public class Country : INotifyPropertyChanged    
 {        

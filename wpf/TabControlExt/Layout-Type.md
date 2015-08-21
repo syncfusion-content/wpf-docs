@@ -21,7 +21,6 @@ Here is the code snippet to set the layout type as "MultiLine".
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -49,7 +48,6 @@ Here is the code snippet to set the layout type as "MultiLine".
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -109,7 +107,6 @@ The following code snippet illustrates handling the TabItemLayoutChanged event.
 
 
 {% highlight c# %}
-[C#]
 
 
 

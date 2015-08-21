@@ -18,6 +18,7 @@ Here are some highlights about our ColorPicker control.
 * The selected color is visualized in a tooltip for the benefit of the users
 * ColorPicker is used in two modes—RGB and HSV
 * Support for picking colors using eyedropper. Drag the eyedropper to anywhere in your application to pick the color of a specific location or even a point
+
 ## Create ColorPicker control
 
 
@@ -31,7 +32,7 @@ To create a ColorPicker control through designer, follow the below steps.
 
 
 
-![](Getting-Started_images/Getting-Started_img1.jpeg)
+   ![](Getting-Started_images/Getting-Started_img1.jpeg)
 
 
 
@@ -39,28 +40,27 @@ To create a ColorPicker control through designer, follow the below steps.
 
 2. Set the properties for the ColorPicker in the design mode, using the Smart Tag feature.
 
-### Programmatically
+   ### Programmatically
 
-You can create a ColorPicker control either by using XAML code or C# code. Use the following code example to create a ColorPicker control.
-
-{% highlight xml %}
-[XAML]
-<!-- Adding ColorPicker --><syncfusion:ColorPicker  Name="colorPicker"/>
-{% endhighlight %}
-
-{% highlight C# %}
-[C#]
-//Creating an instance of color picker
-ColorPicker colorPicker = new ColorPicker();
-
-//Adding control to the window
-this.Content = colorPicker;
-{% endhighlight %}
-
-![](Getting-Started_images/Getting-Started_img2.jpeg)
+   You can create a ColorPicker control either by using XAML code or C# code. Use the following code example to create a ColorPicker control.
 
 
 
+			<!-- Adding ColorPicker -->
+			<syncfusion:ColorPicker  Name="colorPicker"/>
+
+
+			//Creating an instance of color picker
+			ColorPicker colorPicker = new ColorPicker();
+
+			//Adding control to the window
+			this.Content = colorPicker;
+
+
+   ![](Getting-Started_images/Getting-Started_img2.jpeg)
+
+
+   {:.prettyprint}
 
 
 ## Create ColorEdit control
@@ -75,7 +75,7 @@ To create the ColorEdit control through designer, follow the below steps.
 
 
 
-![](Getting-Started_images/Getting-Started_img3.jpeg)
+   ![](Getting-Started_images/Getting-Started_img3.jpeg)
 
 
 
@@ -83,26 +83,24 @@ To create the ColorEdit control through designer, follow the below steps.
 
 2. Set the properties for ColorEdit in design mode, using the Smart Tag feature. 
 
-### Programmatically
+   ### Programmatically
 
-You can create a ColorEdit control either by using XAML code or C# code. Use the following code snippet to create a ColorEdit control.
-{% highlight xml %}
-[XAML]
-<!-- Adding ColorEdit -->
-<syncfusion:ColorEdit  Name="colorEdit"/>
-{% endhighlight %}
-{% highlight C# %}
+   You can create a ColorEdit control either by using XAML code or C# code. Use the following code snippet to create a ColorEdit control.
 
-[C#]
-//Creating an instance of ColorEdit control
-ColorEdit colorEdit = new ColorEdit();
-
-//Adding control to the window
-this.Content = colorEdit; 
-
-{% endhighlight %}
-
-![](Getting-Started_images/Getting-Started_img4.jpeg)
+			<!-- Adding ColorEdit -->
+			<syncfusion:ColorEdit  Name="colorEdit"/>
 
 
+
+			//Creating an instance of ColorEdit control
+			ColorEdit colorEdit = new ColorEdit();
+
+			//Adding control to the window
+			this.Content = colorEdit; 
+
+
+
+   ![](Getting-Started_images/Getting-Started_img4.jpeg)
+
+   {:.prettyprint}
 

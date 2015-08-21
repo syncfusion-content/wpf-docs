@@ -102,7 +102,7 @@ The following code example illustrates how to create a group by using code behin
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -177,7 +177,7 @@ public Window1 ()
 
 {% endhighlight   %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -277,7 +277,7 @@ The following code example illustrates how to group objects by using the Group c
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -286,7 +286,7 @@ DiagramCommandManager.Group.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -300,50 +300,51 @@ The following steps illustrate how to create a group by using the Group command.
 
 
 
-![](Groups_images/Groups_img2.jpeg)
+   ![](Groups_images/Groups_img2.jpeg)
 
 
 
-_Selection of Objects to be Grouped_
+   _Selection of Objects to be Grouped_
 
 
 
-![](Groups_images/Groups_img3.jpeg)
+   ![](Groups_images/Groups_img3.jpeg)
 
 
 
-_Selected Objects_
+   _Selected Objects_
 
 2. Invoke the Group command. This creates a group.
 
-The new group is indicated by the selection rectangle which is displayed surrounding the objects in the group.
+   The new group is indicated by the selection rectangle which is displayed surrounding the objects in the group.
 
 
 
-![](Groups_images/Groups_img4.jpeg)
+   ![](Groups_images/Groups_img4.jpeg)
 
 
 
-_Grouped Objects inside the Selection Rectangle_
+   _Grouped Objects inside the Selection Rectangle_
 
-Grouping By Using the Context Menu
+   Grouping By Using the Context Menu
 
-You can also invoke the Group command by using the context menu which is displayed on right-clicking a particular Node or Line Connector.
-
-
-
-![](Groups_images/Groups_img5.jpeg)
+   You can also invoke the Group command by using the context menu which is displayed on right-clicking a particular Node or Line Connector.
 
 
 
-_Grouping By Using the Context Menu_
+   ![](Groups_images/Groups_img5.jpeg)
 
-> Note: The Group command is enabled only when two or more objects are selected.
 
-See Also
 
-Multi-Select Nodes Refer Concepts and Features -> Nodes -> Node Resize -> Resize Single Node on Multiple Selection
+   _Grouping By Using the Context Menu_
 
+   > Note: The Group command is enabled only when two or more objects are selected.
+
+   See Also
+
+   Multi-Select Nodes Refer Concepts and Features -> Nodes -> Node Resize -> Resize Single Node on Multiple Selection
+   {:.prettyprint}
+   
 ## Select Group
 
 You can select a group by clicking on any one of its children. Consecutive clicks on a child object select the parent groups in the order of their creation. In a similar way, consecutive clicks on a child object leads to the selection of inner groups, and eventually the object itself, and the cycle continues. An object can belong to multiple groups, and groups may in turn have multiple subgroups.
@@ -356,32 +357,33 @@ The following steps illustrate how to select an object which has two groups.
 
 
 
-![](Groups_images/Groups_img6.jpeg)
+   ![](Groups_images/Groups_img6.jpeg)
 
 
 
-_Outer Group Selected_
+   _Outer Group Selected_
 
 2. Click again to select the inner group of which it is a part of.
 
 
 
-![](Groups_images/Groups_img7.jpeg)
+   ![](Groups_images/Groups_img7.jpeg)
 
 
 
-_Inner Group Selected_
+   _Inner Group Selected_
 
 3. Finally, click again to select the child itself after all its groups have been traversed.
 
 
 
-![](Groups_images/Groups_img8.jpeg)
+   ![](Groups_images/Groups_img8.jpeg)
 
 
 
-_Selecting the Child Node Again_
-
+   _Selecting the Child Node Again_
+   {:.prettyprint}
+   
 ## Edit Group
 
 To edit a group, you have to make sure that the corresponding group is selected. The following features apply to the edits performed on an object.
@@ -432,58 +434,60 @@ The following steps illustrate how to create connections to a group.
 1. Press the left mouse button while the mouse pointer is over any of the child objects of the group.
 2. While the left mouse button is pressed, drag one end of the line connector to any of the group's children.
 
-This will display a red adorner along the group's boundary, indicating that the connection is to be made to that particular group.
+   This will display a red adorner along the group's boundary, indicating that the connection is to be made to that particular group.
 
 
 
-![](Groups_images/Groups_img12.jpeg)
+   ![](Groups_images/Groups_img12.jpeg)
 
 
 
-_Creating Connection to a Group_
+   _Creating Connection to a Group_
 
 3. Release the mouse button at that point to connect to the group's boundary.
 
 
 
-![](Groups_images/Groups_img13.jpeg)
+   ![](Groups_images/Groups_img13.jpeg)
 
 
 
-_Connection Created to the Group_
-
-Creating Connections to a Objects in a Group
+   _Connection Created to the Group_
+   {:.prettyprint}
+   
+### Creating Connections to a Objects in a Group
 
 The following steps illustrate how to create connections to individual objects in a group.
 
 1. Press the left mouse button while the mouse pointer is over the node to which the connection is to be made.
 2. While the left mouse button is pressed, drag the line connector to the center port of that particular node.
 
-When the mouse pointer is over the center port, a red adorner will be displayed along the node's boundary, indicating that the connection is to be made to that particular node.
+   When the mouse pointer is over the center port, a red adorner will be displayed along the node's boundary, indicating that the connection is to be made to that particular node.
 
 
 
-![](Groups_images/Groups_img14.jpeg)
+   ![](Groups_images/Groups_img14.jpeg)
 
 
 
-_Creating Connection to a Child Object_
-
+   _Creating Connection to a Child Object_
+ 
 3. Release the mouse button at that point to connect to the node's boundary.
 
 
 
-![](Groups_images/Groups_img15.jpeg)
+   ![](Groups_images/Groups_img15.jpeg)
 
 
 
-_Connection Created to the Child Object_
+   _Connection Created to the Child Object_
 
-> Note: Connections cannot be created between a group and its own children. However child objects belonging to the same group can be connected to each other.
+   > Note: Connections cannot be created between a group and its own children. However child objects belonging to the same group can be connected to each other.
 
-See Also
+   See Also
 
-Create Line Connectors Refer Concepts and Features -> Line Connector -> Create Line Connector
+   Create Line Connectors Refer Concepts and Features -> Line Connector -> Create Line Connector
+   {:.prettyprint}
 
 ## Ungroup
 
@@ -503,7 +507,7 @@ For example, the following code illustrates how to remove node n from a group by
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -578,7 +582,7 @@ public Window1 ()
 
 {% endhighlight   %}
 {% highlight vbnet  %}
-[VB]
+
 
 
 
@@ -670,7 +674,7 @@ The following code example illustrates how to ungroup objects by using the Ungro
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -679,7 +683,7 @@ DiagramCommandManager.Ungroup.Execute(diagramView.Page, diagramView);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -693,40 +697,40 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
 
 
 
-![](Groups_images/Groups_img16.jpeg)
+   ![](Groups_images/Groups_img16.jpeg)
 
 
 
-_Selecting a Group_
+   _Selecting a Group_
 
 2. Invoke the Ungroup command. This ungroups the nodes.
 
-As soon as the group is ungrouped, the selection rectangle disappears indicating that the group has been ungrouped.
+   As soon as the group is ungrouped, the selection rectangle disappears indicating that the group has been ungrouped.
 
 
 
-![](Groups_images/Groups_img17.jpeg)
+   ![](Groups_images/Groups_img17.jpeg)
 
 
 
-_Objects Ungrouped_
+   _Objects Ungrouped_
 
-By Using the Context Menu
+   By Using the Context Menu
 
-You can also invoke the Ungroup command by using the context menu which is displayed on right-clicking a particular Node or Line Connector.
-
-
-
-![](Groups_images/Groups_img18.jpeg)
+   You can also invoke the Ungroup command by using the context menu which is displayed on right-clicking a particular Node or Line Connector.
 
 
 
-_Ungrouping By Using the Context Menu_
+   ![](Groups_images/Groups_img18.jpeg)
 
-> Note: The Ungroup command is enabled only when two or more objects are selected.
 
-> 
 
+   _Ungrouping By Using the Context Menu_
+
+   > Note: The Ungroup command is enabled only when two or more objects are selected.
+
+   {:.prettyprint}
+   
 ## Layers
 
 Essential Diagram for WPF supports layer display. Numerous nodes and line connectors can be added to a layer and the visible property of its contents can be hidden by changing the visible property of the layer. A node or line connector can be added to any number of layers and the node is visible only if all layers to which this node or line connector belongs to are visible.
@@ -773,7 +777,7 @@ The following code example illustrates the creation of a layer with two Nodes an
 
 {% highlight c#  %}
 
-[C#]
+
 
 
 
@@ -828,7 +832,7 @@ Lan1.Background = Brushes.Transparent;
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 
@@ -889,7 +893,7 @@ The following code example illustrates the addition of a layer to a model.
 {% endhighlight   %}
 {% highlight c#  %}
 
-[C#]
+
 
 
 Node n1 = new Node();
@@ -945,7 +949,7 @@ diagramModel.Layers.Add(Lan1)
 {% endhighlight  %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 Dim n1 As New Node()
@@ -1010,7 +1014,7 @@ When a new Node or LineConnector is dropped from SymbolPalette into the DiagramP
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 Node n1 = new Node();
@@ -1068,7 +1072,7 @@ Lan1.Active = false;
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 Dim n1 As New Node()
@@ -1131,7 +1135,7 @@ The following code example illustrates hiding a layer. When a layer is hidden al
 
 
 {% highlight c#  %}
-[C#]
+
 
 
 
@@ -1190,7 +1194,7 @@ Lan1.Visible = false;
 {% endhighlight   %}
 {% highlight vbnet  %}
 
-[VB]
+
 
 
 

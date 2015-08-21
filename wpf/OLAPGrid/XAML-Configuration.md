@@ -17,18 +17,18 @@ XAML configuration is one of the important features of OlapGrid. It helps you to
 
 This feature will help you to set the Data source, Report and UI properties in a simple and elegant manner, when you want to perform the entire configuration in XAML.
 
-## Property
+ Property
 
 _Property Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data  Type**' | markdownify }}</td><td>
-{{ '**Reference Link**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Data  Type**' | markdownify }}</th><th>
+{{ '**Reference Link**' | markdownify }}</th></tr>
 <tr>
 <td>
 DataSource.ConnectionString</td><td>
@@ -108,7 +108,7 @@ Adding an OLAP report to OLAP Grid control in design time is described in the fo
 
   {% highlight xml %}
 
-   [XAML]
+   
 
 
 
@@ -168,7 +168,7 @@ _OLAP Grid with SalesReport created by XAML code_
 
 
 
-## Sample Link
+### Sample Link
 
 To access a XAML Configuration Demo sample:
 
@@ -179,7 +179,7 @@ To access a XAML Configuration Demo sample:
 
 Or
 
-Navigate to:
+###Navigate to:
 
 ..\Syncfusion\EssentialStudio\<Versionnumber>\BI\WPF\OlapGrid.WPF\Samples\Defining Reports\XAML Configuration Demo 
 

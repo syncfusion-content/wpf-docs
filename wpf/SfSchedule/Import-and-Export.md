@@ -15,7 +15,7 @@ Similarly, files exported from other schedulers can also be imported into Essent
 
 ## Exporting in the schedule control 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -39,7 +39,7 @@ The exported .ics file will be saved in specified location. These exported files
 
 
 {% highlight c# %}
-[C#]
+
 
 
 

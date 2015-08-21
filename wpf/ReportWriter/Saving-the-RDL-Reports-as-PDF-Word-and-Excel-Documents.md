@@ -21,13 +21,13 @@ This feature is very useful in exporting the generated report as a PDF, Word, or
 
 ### Constructors
 
-_Constructors Table_
+Constructors Table
 
 <table>
 <tr>
-<td>
-Name</td><td>
-Description</td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 ReportWriter()</td><td>
@@ -53,13 +53,13 @@ Initializes a new instance of the ReportWriter with the stream of the report and
 
 ### Properties
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-Property Name</td><td>
-Description </td></tr>
+<th>
+Property Name</th><th>
+Description </th></tr>
 <tr>
 <td>
 DataSources</td><td>
@@ -85,11 +85,12 @@ Gets or sets the report server form credential. This is used to export SQL Azure
 ReportServerUrl</td><td>
 Gets or sets the report server URL.</td></tr>
 </table>
+
 ### Methods
 
 
 
-_Methods Table_
+Methods Table
 
 <table>
 <tr>
@@ -97,29 +98,29 @@ _Methods Table_
 Name</th><th>
 Description</th></tr>
 <tr>
-<th>
-GetDataSetNames()</th><th>
-Returns the names of the data set as IList<string>.</th></tr>
+<td>
+GetDataSetNames()</td><td>
+Returns the names of the data set as IList<string>.</td></tr>
 <tr>
-<th>
-GetParameters()</th><th>
-Returns the parameters of the report as ReportParameterInfoCollection.</th></tr>
+<td>
+GetParameters()</td><td>
+Returns the parameters of the report as ReportParameterInfoCollection.</td></tr>
 <tr>
-<th>
-SetParameters(IEnumberable<ReportParameters>)</th><th>
-Sets the parameters of the report.</th></tr>
+<td>
+SetParameters(IEnumberable<ReportParameters>)</td><td>
+Sets the parameters of the report.</td></tr>
 <tr>
-<th>
-LoadReport(stream)</th><th>
-Loads the report  with the specified stream that contains the RDL contents.</th></tr>
+<td>
+LoadReport(stream)</td><td>
+Loads the report  with the specified stream that contains the RDL contents.</td></tr>
 <tr>
-<th>
-Save(string,writertype)</th><th>
-Saves the report as a PDF, Word, or Excel document in the mentioned path.</th></tr>
+<td>
+Save(string,writertype)</td><td>
+Saves the report as a PDF, Word, or Excel document in the mentioned path.</td></tr>
 <tr>
-<th>
-Save(stream)</th><th>
-Saves the report as a PDF, Word, or Excel document in the stream.</th></tr>
+<td>
+Save(stream)</td><td>
+Saves the report as a PDF, Word, or Excel document in the stream.</td></tr>
 </table>
 
 

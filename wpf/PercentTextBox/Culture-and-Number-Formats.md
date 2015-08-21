@@ -16,10 +16,10 @@ PercentTextBox provides globalization support through the Culture property.
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                          Culture="en-US" PercentValue="1234567"/></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                          Culture="en-US" PercentValue="1234567"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.Culture = new CultureInfo("en-US");</td></tr>
+{% highlight C# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.Culture = new CultureInfo("en-US");{% endhighlight %}</td></tr>
 </table>
 
 
@@ -29,10 +29,10 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 1
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                          Culture="bs-Latn" PercentValue="1234567"/></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                          Culture="bs-Latn" PercentValue="1234567"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.Culture = new CultureInfo("bs-Latn");</td></tr>
+{% highlight C# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.Culture = new CultureInfo("bs-Latn");{% endhighlight %}</td></tr>
 </table>
 
 
@@ -48,20 +48,20 @@ You can customize the Number Format either by using the Number Format property o
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"             PercentValue="1234567">    <syncfusion:PercentTextBox.NumberFormat>        <numberformat:NumberFormatInfo PercentGroupSeparator="/"        PercentDecimalDigits="4" PercentDecimalSeparator="*"         PercentSymbol="%"/>    </syncfusion:PercentTextBox.NumberFormat></syncfusion:PercentTextBox></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"             PercentValue="1234567">    <syncfusion:PercentTextBox.NumberFormat>        <numberformat:NumberFormatInfo PercentGroupSeparator="/"        PercentDecimalDigits="4" PercentDecimalSeparator="*"         PercentSymbol="%"/>    </syncfusion:PercentTextBox.NumberFormat></syncfusion:PercentTextBox>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.NumberFormat = new NumberFormatInfo(){    PercentGroupSeparator = "/",    PercentDecimalDigits = 4,    PercentDecimalSeparator = "*",    PercentSymbol = "%"};</td></tr>
+{% highlight C# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.NumberFormat = new NumberFormatInfo(){    PercentGroupSeparator = "/",    PercentDecimalDigits = 4,    PercentDecimalSeparator = "*",    PercentSymbol = "%"};{% endhighlight %}</td></tr>
 </table>
 
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                            PercentValue="1234567"                            PercentageSymbol="%" PercentDecimalDigits="4"                           PercentDecimalSeparator="*" PercentGroupSeparator="/"/></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                            PercentValue="1234567"                            PercentageSymbol="%" PercentDecimalDigits="4"                           PercentDecimalSeparator="*" PercentGroupSeparator="/"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.PercentageSymbol = "%";percentTextBox.PercentDecimalDigits = 4;percentTextBox.PercentDecimalSeparator = "/";percentTextBox.PercentGroupSeparator = "*";</td></tr>
+{% highlight C# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.PercentValue = 1234567;percentTextBox.PercentageSymbol = "%";percentTextBox.PercentDecimalDigits = 4;percentTextBox.PercentDecimalSeparator = "/";percentTextBox.PercentGroupSeparator = "*";{% endhighlight %}</td></tr>
 </table>
 
 
@@ -72,13 +72,13 @@ C# PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 1
 
 Gets or sets the format pattern for the positive percent values. In the table displayed below “%” denotes the Percent symbol and n denotes the number.
 
-_PercentPositivePattern table_
+PercentPositivePattern table
 
 <table>
 <tr>
-<td>
-{{ '**Value**' | markdownify }}</td><td>
-{{ '**Associated Pattern**' | markdownify }}</td></tr>
+<th>
+{{ '**Value**' | markdownify }}</th><th>
+{{ '**Associated Pattern**' | markdownify }}</th></tr>
 <tr>
 <td>
 0</td><td>
@@ -99,7 +99,7 @@ n%</td></tr>
 
  {% highlight xml %}
 
-    [XAML]
+ 
 
     
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 
@@ -116,17 +116,17 @@ n%</td></tr>
 ![](Culture-and-Number-Formats_images/Culture-and-Number-Formats_img4.png)
 
 
-# PercentNegativePattern
+## PercentNegativePattern
 
 Gets or sets the format pattern for the negative percent values. In the table displayed below “%” denotes the Percent symbol and n denotes the number.
 
-_PercentNegativePattern table_
+PercentNegativePattern table
 
 <table>
 <tr>
-<td>
-{{ '**Value**' | markdownify }}</td><td>
-{{ '**Associated Pattern**' | markdownify }}</td></tr>
+<th>
+{{ '**Value**' | markdownify }}</th><th>
+{{ '**Associated Pattern**' | markdownify }}</th></tr>
 <tr>
 <td>
 0</td><td>
@@ -179,7 +179,7 @@ n- %</td></tr>
 
  {% highlight xml %}
 
-    [XAML]
+    
 
     
 <syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150" 

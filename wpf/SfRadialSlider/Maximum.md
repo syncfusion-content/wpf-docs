@@ -13,7 +13,6 @@ Gets or sets the maximum possible value. (Inherited from [RangeBase](http://msdn
 
 
 {% highlight html %}
-[XAML]
 
 <syncfusion:SfRadialSlider
 

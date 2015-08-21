@@ -21,6 +21,7 @@ Here are some highlights of our Notify Icon control.
 
 * Different Animation support
 * Different shape support
+
 ## Creating NotifyIcon Control
 
 
@@ -29,7 +30,7 @@ NotifyIcon is created either by using XAML code or with C# code, as follows.
 
 {%highlight xml%}
 
-[XAML]
+
 
 <syncfusion:NotifyIcon Name="notifyIcon" BalloonTipText="Custom Notify 
 Icon is Available" BalloonTipTitle="Default NotifyIcon" 
@@ -38,7 +39,7 @@ ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/>
 {%endhighlight%}
 
 {%highlight c#%}
-[C#]NotifyIcon notifyIcon = new NotifyIcon();
+NotifyIcon notifyIcon = new NotifyIcon();
 notifyIcon.BalloonTipText = "Custom Notify Icon is Available";
 notifyIcon.BalloonTipTitle = "Default NotifyIcon";
 notifyIcon.ShowBalloonTipTime = 1000;

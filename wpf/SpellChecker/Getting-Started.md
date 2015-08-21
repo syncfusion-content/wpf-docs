@@ -15,7 +15,6 @@ Spell Checker is a spell checking engine. Using SpellCheck method, you can check
 
 {%highlight c#%}
 
-[C#]
 
 SpellChecker SpellCheck = new SpellChecker();
 

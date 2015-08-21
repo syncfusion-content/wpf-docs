@@ -11,7 +11,7 @@ documentation: ug
 
 Add XML
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -50,10 +50,10 @@ book.SaveAs(fileName);
 book.Close();
 
 excelEngine.Dipose();
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 Dim fileName As String = "output.xlsx"
 
@@ -90,10 +90,11 @@ book.SaveAs(fileName)
 book.Close()
 
 excelEngine.Dipose()
+{% endhighlight %}
 
 Read XML
 
-[C#]
+{% highlight C# %}
 
 
 
@@ -128,10 +129,10 @@ byte[] xmlData = customXmlPart.Data;
 
 
 System.Text.Encoding.Default.GetString(xmlData);
+{% endhighlight %}
 
 
-
-[VB]
+{% highlight vbnet %}
 
 
 
@@ -167,5 +168,5 @@ Dim xmlData() As Byte = customXmlPart.Data
 
 System.Text.Encoding.Default.GetString(xmlData)
 
-
+{% endhighlight %}
 

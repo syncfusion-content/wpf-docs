@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-# Control Structure
+## Control Structure
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
@@ -23,17 +23,17 @@ PercentTextBox exposes the following members:
 
 # Properties
 
-_Property table_
+Property table
 
 <table>
 <tr>
-<td>
-{{ '**Name**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Value it Accepts**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Default Value**' | markdownify }}</td><td>
-{{ '**Reference Link**' | markdownify }}</td></tr>
+<th>
+{{ '**Name**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Value it Accepts**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Default Value**' | markdownify }}</th><th>
+{{ '**Reference Link**' | markdownify }}</th></tr>
 <tr>
 <td>
 ApplyNegativeForeground</td><td>
@@ -323,17 +323,18 @@ Gets or sets the ZeroColor property.</td><td>
 </td><td>
 ZeroColor</td></tr>
 </table>
-# Methods
 
-_Methods table_
+### Methods
+
+Methods table
 
 <table>
 <tr>
-<td>
-{{ '**Name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Return Type**' | markdownify }}</td><td>
-{{ '**Overloads**' | markdownify }}</td></tr>
+<th>
+{{ '**Name**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Return Type**' | markdownify }}</th><th>
+{{ '**Overloads**' | markdownify }}</th></tr>
 <tr>
 <td>
 Copy()</td><td>
@@ -353,18 +354,19 @@ Selects all the content of the Percent text box.</td><td>
 Void</td><td>
 </td></tr>
 </table>
-# Events
 
-_Events table_
+### Events
+
+Events table
 
 <table>
 <tr>
-<td>
-{{ '**Name**' | markdownify }}</td><td>
-{{ '**Event Type**' | markdownify }}</td><td>
-{{ '**Event Args Parameter**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Reference Link**' | markdownify }}</td></tr>
+<th>
+{{ '**Name**' | markdownify }}</th><th>
+{{ '**Event Type**' | markdownify }}</th><th>
+{{ '**Event Args Parameter**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Reference Link**' | markdownify }}</th></tr>
 <tr>
 <td>
 PercentValueChanged</td><td>
@@ -408,11 +410,12 @@ RoutedEventArgs</td><td>
 Occurs when the text selection has changed.</td><td>
 SelectionChanged</td></tr>
 </table>
-# Creating a PercentTextBox Control
+
+## Creating a PercentTextBox Control
 
 PercentTextBox can be added to the application by using Visual Studio and Microsoft Expression Blend.
 
-# Creating a PercentTextBox by using C#
+### Creating a PercentTextBox by using C#
 
 The steps to create a PercentTextBox by using Visual Studio in C# are as follows:
 
@@ -439,7 +442,7 @@ The steps to create a PercentTextBox by using Visual Studio in C# are as follows
 
 {% highlight c# %}
  
-    [C#]
+   
 
     public partial class MainWindow : Window
 
@@ -474,17 +477,17 @@ The steps to create a PercentTextBox by using Visual Studio in C# are as follows
 ![](Getting-Started_images/Getting-Started_img6.png)
 
 
-> _Note:If you do not set any PercentValue to the PercentTextBox then the default value will be as follows:_
+> Note:If you do not set any PercentValue to the PercentTextBox then the default value will be as follows:
 
-> _If the UseNullOption is set to true then, Value of the NullValue property will be the default value. Otherwise Zero will be the default value (based on the MinValue and MaxValue the default value will change)._
+> If the UseNullOption is set to true then, Value of the NullValue property will be the default value. Otherwise Zero will be the default value (based on the MinValue and MaxValue the default value will change).
 
-## See Also
+### See Also
 
 Creating a PercentTextBox by using XAML
 
 Creating a PercentTextBox by using Expression Blend
 
-# Creating a PercentTextBox by using XAML
+## Creating a PercentTextBox by using XAML
 
 The steps to create a PercentTextBox by using Visual Studio in XAML are as follows:
 
@@ -501,7 +504,7 @@ The steps to create a PercentTextBox by using Visual Studio in XAML are as follo
 
  {% highlight xml %}
 
-    [XAML]
+    
 
     <Window x:Class="WpfApp.MainWindow"
 
@@ -532,11 +535,11 @@ The steps to create a PercentTextBox by using Visual Studio in XAML are as follo
 ![](Getting-Started_images/Getting-Started_img8.png)
 
 
-## See Also
+### See Also
 
 Creating a PercentTextBox by using Expression Blend
 
-# Creating a PercentTextBox by using Expression Blend
+## Creating a PercentTextBox by using Expression Blend
 
 The steps to create a PercentTextBox in the application by using Expression Blend are as follows:
 
@@ -569,7 +572,7 @@ The steps to create a PercentTextBox in the application by using Expression Blen
 
  {% highlight xml %}
 
-    [XAML]
+    
 
 
 
@@ -600,7 +603,7 @@ The steps to create a PercentTextBox in the application by using Expression Blen
 ![](Getting-Started_images/Getting-Started_img13.png)
 
 
-## See Also
+### See Also
 
 Creating a PercentTextBox by using XAML
 
@@ -608,68 +611,68 @@ Creating a PercentTextBox by using C#
 
 Blendability
 
-# Setting Value
+## Setting Value
 
 You have to use the PercentValue property to set value for the PercentTextBox.
 
-> _Note: Do not use the Text property to set the value for the PercentTextBox. Use only the PercentValue property._
+> Note: Do not use the Text property to set the value for the PercentTextBox. Use only the PercentValue property.
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                            PercentValue="100"/></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                            PercentValue="100"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# percentTextBox.PercentValue = 100;</td></tr>
+{% highlight c# %}percentTextBox.PercentValue = 100;{% endhighlight %}</td></tr>
 </table>
 
 
 ![](Getting-Started_images/Getting-Started_img14.png)
 
 
-## See Also
+### See Also
 
 Minimum and Maximum Value
 
 NullValue support
 
-# Setting Minimum and Maximum Value
+## Setting Minimum and Maximum Value
 
 You can set the Minimum and Maximum value by using the MinVal and MaxVal properties of the PercentTextBox.
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Width="100" Height="25"                            PercentValue="100" MinValue="-999.99" MaxValue="999.99"/></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Width="100" Height="25"                            PercentValue="100" MinValue="-999.99" MaxValue="999.99"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# percentTextBox.MinValue = -999.99;percentTextBox.MaxValue = 999.99;</td></tr>
+{% highlight c# %}percentTextBox.MinValue = -999.99;percentTextBox.MaxValue = 999.99;{% endhighlight %}</td></tr>
 </table>
 
 
 ![](Getting-Started_images/Getting-Started_img15.png)
 
 
-# Setting Watermark
+## Setting Watermark
 
 You can set the Watermark for the PercentTextBox by using the WatermarkText property. To enable Watermark, you have to set the WatermarkTextIsVisible property to true.
 
-> _Note: WatermarkText is visible only when the value is null._
+> Note: WatermarkText is visible only when the value is null.
 
 <table>
 <tr>
 <td>
-XAML<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="100"            PercentValue="{x:Null}" MinValue="-999" MaxValue="999"            UseNullOption="True"            WatermarkText="Type Here" WatermarkTextIsVisible="True"/></td></tr>
+{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="100"            PercentValue="{x:Null}" MinValue="-999" MaxValue="999"            UseNullOption="True"            WatermarkText="Type Here" WatermarkTextIsVisible="True"/>{% endhighlight %}</td></tr>
 <tr>
 <td>
-C# percentTextBox.UseNullOption = true;percentTextBox.NullValue = null;percentTextBox.WatermarkText = "Type Here";percentTextBox.WatermarkTextIsVisible = true;</td></tr>
+{% highlight c# %}percentTextBox.UseNullOption = true;percentTextBox.NullValue = null;percentTextBox.WatermarkText = "Type Here";percentTextBox.WatermarkTextIsVisible = true;{% endhighlight %}</td></tr>
 </table>
 
 
 ![](Getting-Started_images/Getting-Started_img16.png)
 
 
-## See Also
+### See Also
 
 WatermarkTemplate
 

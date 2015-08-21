@@ -11,13 +11,13 @@ documentation: ug
 
 This section explains you how to group the columns in DataGrid. Different properties, events and methods available for Grouping are discussed in this section.
 
-### Overview
+## Overview
 
 A Group represents a collection of records that belong to a particular category. The DataGrid control allows you to group the data by one or more columns. When Grouping is applied, the data is organized into a hierarchical structure based on matching field values. 
 
 The records having identical values in the grouped column are combined to form a Group. Each Group is identified by its GroupCaptionRow that is expanded to get the underlying records into view. The GroupCaptionRow carries the information about a particular Group like the Group name, number of items (records) in the Group, etc. It also contains expander that allows you to expand or collapse the Groups individually.
 
-### Properties
+Properties
 
 The following are the properties used while Grouping.
 
@@ -25,11 +25,11 @@ _Grouping property table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td><td>
-Default Value</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th><th>
+Default Value</th></tr>
 <tr>
 <td>
 SfDataGrid.AllowGrouping</td><td>
@@ -83,7 +83,7 @@ True</td></tr>
 </table>
 
 
-> _Note: GridColumn.AllowGrouping takes higher priority than DataGrid.AllowGrouping.  When you set AllowGrouping to ‘true’ in DataGrid and AllowGrouping to ‘false’ for particular column then that column is not grouped._
+> Note: GridColumn.AllowGrouping takes higher priority than DataGrid.AllowGrouping.  When you set AllowGrouping to ‘true’ in DataGrid and AllowGrouping to ‘false’ for particular column then that column is not grouped.
 
 The following screenshot illustrates Group or Ungroup the Column in different ways. DataGrid allows you to group the column in following ways:
 
@@ -111,7 +111,7 @@ The following code example illustrates how to perform grouping in XAML.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -174,7 +174,7 @@ The following code example illustrates how to perform grouping in XAML.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -198,7 +198,7 @@ The following screenshot displays the output.
 
 _DataGrid with Grouped columns_
 
-### Ungroup the Column
+## Ungroup the Column
 
 You can ungroup the grouped column in following ways:
 
@@ -229,7 +229,7 @@ _Ungrouping the column by clicking the close button in GroupDropAreaItem_
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -271,7 +271,7 @@ You can freeze the Grouped header. DataGrid provide an interactive support to Fr
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -377,7 +377,7 @@ The following code example explains you how to call the methods. You can call th
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -429,7 +429,7 @@ You can use this event to cancel Expand or Collapse action by setting cancel to 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -452,7 +452,7 @@ You can use this event to cancel Expand or Collapse action by setting cancel to 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -484,9 +484,9 @@ private void sfdatagrid_GroupExpanding(object sender, GroupChangingEventArgs e)
 
 
 
-> _Note: These events do not hit when you use ExpandAllGroup (), CollapseAllGroup (), ExpandGroupsAtLevel () and CollapseGropsAtLevel () methods._
+> Note: These events do not hit when you use ExpandAllGroup (), CollapseAllGroup (), ExpandGroupsAtLevel () and CollapseGropsAtLevel () methods.
 
-### Custom Grouping
+## Custom Grouping
 
 CustomGrouping feature enables you to implement CustomGrouping criteria. For each column, you can apply different Grouping criteria.
 
@@ -497,7 +497,7 @@ The following code example illustrates the converter used for CustomGrouping.
 {% highlight C# %}
 
 
-[C#]
+
 
 
 
@@ -584,7 +584,7 @@ The following code example defines how to set the custom converter for group des
 {% highlight xml %}
 
 
-[XAML]      
+      
 
 
 
@@ -636,16 +636,16 @@ The following screenshot displays the output.
 
 _DataGrid with Custom Grouping_
 
-### How To
+## How To
 
-#### How to customize GroupDropArea Text
+### How to customize GroupDropArea Text
 
 You can customize GroupDropArea text by using GroupDropAreaText property. You can add this property to SfDataGrid and provide value in GroupDropArea. The following code example illustrates how to customize GroupDropArea Text.
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window x:Class="SimpleApplication.MainWindow"
 

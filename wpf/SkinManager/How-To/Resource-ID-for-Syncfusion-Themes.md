@@ -7,25 +7,25 @@ control: SkinManager
 documentation: ug
 ---
 
-### Resource ID for Syncfusion Themes
+# Resource ID for Syncfusion Themes
 
 The WPF Skin Manager provides a swatch of theme colors that contains all Syncfusion theme brushes. These brushes are used by getting key names for the given particular theme. Brush names are stored as properties in the ThemeColors class.
 
-#### Use Case Scenarios
+## Use Case Scenarios
 
 Users can customize brushes easily to get unique colors for all controls in the application.
 
-#### Tables for Properties, Methods, and Events
+### Tables for Properties, Methods, and Events
 
-##### Properties
+#### Properties
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 BackgroundBrush</td><td>
@@ -161,19 +161,16 @@ Brush</td></tr>
 </table>
 
 
-#### Adding Resource ID to an Application
+### Adding Resource ID to an Application
 
-##### Setting Through XAML
+## Setting Through XAML
 
 The following code snippet explains how to set the Resource ID through XAML
 
 1. Add the VisualStyle in the sample.
 
 
-
-[XAML]
-
-syncfusion:SkinStorage.VisualStyle="Office2007Blue”
+             syncfusion:SkinStorage.VisualStyle="Office2007Blue”
 
 
 
@@ -181,19 +178,17 @@ syncfusion:SkinStorage.VisualStyle="Office2007Blue”
 
 
 
-[XAML]
+              <Grid Background="{DynamicResource {x:Static syncfusion:ThemeColors.HoverBrush}}"/>
 
-&lt;Grid Background="{DynamicResource {x:Static syncfusion:ThemeColors.HoverBrush}}"/&gt;
+   {:.prettyprint}
 
-
-
-##### Setting Through C#
+## Setting Through C#
 
 
 
-[C#]
+{% highlight C# %}
 
 Grid.Background = ThemeColors.BackgroundBrush
 
-
+{% endhighlight %}
 

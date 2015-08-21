@@ -11,7 +11,7 @@ documentation: ug
 
  For a particular Starting and Ending time the block could not be accessed by setting the NonAccessibleBlocks property.
 {% highlight html %}
-[XAML]
+
 
               <Schedule:SfSchedule ScheduleType="Week"  IntervalHeight="30">
 
@@ -30,7 +30,7 @@ documentation: ug
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
             SfSchedule schedule = new SfSchedule();
 
@@ -56,7 +56,7 @@ The  NonAccessibleBlockTemplate can be customized by NonAccessibleBlockTemplate 
 
 
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -86,7 +86,7 @@ The  NonAccessibleBlockTemplate can be customized by NonAccessibleBlockTemplate 
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
             SfSchedule schedule = new SfSchedule();
 

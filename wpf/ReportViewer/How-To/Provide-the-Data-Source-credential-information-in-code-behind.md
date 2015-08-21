@@ -7,11 +7,11 @@ control: Report Viewer
 documentation: ug
 ---
 
-### Provide the Data Source credential information in code behind
+# Provide the Data Source credential information in code behind
 
 Use SetDataSourceCredentials to provide the data source credential for the Report Viewer. Use this method in a ReportLoaded event to avoid unexpected issues.
 
-
+{% highlight C# %}
 this.reportViewerControl.ReportLoaded += new ReportLoadedEventHandler (reportViewerControl_ReportLoaded);
 
 void reportViewerControl_ReportLoaded(object sender, EventArgs e)
@@ -42,5 +42,5 @@ this.reportViewerControl.SetDataSourceCredentials (credentials);
 
 }
 
-
+{% endhighlight %}
 

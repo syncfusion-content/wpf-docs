@@ -15,7 +15,6 @@ To create a new workbook, call the New method. New workbook will be created with
 
 {%highlight c#%}
 
-[C#]
 
 spreadControl.New();
 
@@ -23,7 +22,6 @@ spreadControl.New();
 
 {%highlight vbnet%}
 
- [VB]
  
  spreadControl.New()
  
@@ -36,7 +34,6 @@ You can also specify the number of worksheet you want to add in workbook by pass
 
 {%highlight c#%}
 
-[C#]
 
 spreadControl.New(3);
 
@@ -44,7 +41,6 @@ spreadControl.New(3);
 
 {%highlight vbnet%}
 
- [VB]
  
  spreadControl.New(3)
 
@@ -59,7 +55,6 @@ The following code illustrates how to bind the NewCommand__to a button:
 
 {%highlight xml%}
 
-[XAML]
 
 <Button Command="{Binding Path=NewCommand}"/>
 

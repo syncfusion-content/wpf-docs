@@ -45,15 +45,15 @@ _Conventions Table_
 
 <table>
 <tr>
-<td>
-{{ '**Convention**' | markdownify }}</td><td>
-{{ '**Icon**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Convention**' | markdownify }}</th><th>
+{{ '**Icon**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 Note</td><td>
-> {{'![](Overview_images/Overview_img2.jpeg)'| markdownify }}
-{{ '_Note:_' | markdownify }}</td><td>
+ {{'![](Overview_images/Overview_img2.jpeg)'| markdownify }}
+{{ 'Note:' | markdownify }}</td><td>
 Represents important information</td></tr>
 <tr>
 <td>
@@ -64,14 +64,12 @@ Represents an example</td></tr>
 <td>
 Tip</td><td>
 {{'![C:/Users/Hari/Pictures/OlapClient/Tip.png](Overview_images/Overview_img3.png)'| markdownify }}
-{:.image }
 </td><td>
 Represents useful hints that will help you in using the controls/features</td></tr>
 <tr>
 <td>
 Additional Information</td><td>
 {{'![C:/Users/Hari/Pictures/OlapClient/Information.png](Overview_images/Overview_img4.png)'| markdownify }}
-{:.image }
 </td><td>
 Represents additional information on the topic</td></tr>
 </table>

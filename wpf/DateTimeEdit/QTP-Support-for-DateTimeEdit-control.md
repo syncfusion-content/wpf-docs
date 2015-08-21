@@ -17,7 +17,7 @@ QTP Tool interacts with the control through CustomServerBase extension through t
 
 
 {% highlight c# %}
-[C#]
+
 
 <?xml version="1.0" encoding="UTF-8"?>
 

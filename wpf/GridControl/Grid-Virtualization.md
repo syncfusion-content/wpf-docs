@@ -25,7 +25,7 @@ In this example, the Grid Control displays 99,000,000 x 1,000,000 cells (i.e., 9
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -142,7 +142,7 @@ This mechanism will be enabled only if you set SupportsRenderOptimization proper
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -334,7 +334,7 @@ Here is the code to bind the above virtual cell to the grid:
 
 
 {% highlight c# %}
-[C#]
+
 
 
 

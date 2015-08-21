@@ -7,7 +7,7 @@ control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-## Selection
+# Selection
 
 SfMultiColumnControl allows you to select the item from the DropDownGrid. SfMultiColumnDropDownControl exposes the following properties for Selection.
 
@@ -19,7 +19,7 @@ The following code example illustrates how to set SelectedIndex in SfMultiColumn
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -53,15 +53,15 @@ The following screenshot illustrates the output of the above code.
 
 
 
-Event
+###Event
 
-_Event Table_
+Event Table
 
 <table>
 <tr>
-<td>
-EventName</td><td>
-Description</td></tr>
+<th>
+EventName</th><th>
+Description</th></tr>
 <tr>
 <td>
 SelectionChanged</td><td>
@@ -81,7 +81,6 @@ The following code example illustrates how to use TextSelectionOnFocus in SfMult
 {% highlight xml %}
 
 
-[XAML]
 
 <syncfusion:SfMultiColumnDropDownControl x:Name="MultiColumnControl"                                          
 

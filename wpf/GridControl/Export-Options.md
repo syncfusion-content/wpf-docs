@@ -37,7 +37,7 @@ The following code illustrates the conversion of the entire Grid content to an E
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -75,7 +75,7 @@ Consider that you have a chart in a spreadsheet in the range [A1:I19] and you wi
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -153,7 +153,7 @@ You can also pass the Excel Engine with the worksheet number, as illustrated by 
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -210,14 +210,14 @@ You can convert the entire content of a grid control to a CSV file by using the 
 
 
 {% highlight c# %}
-[C#]
+
 
 this.gc.Model.ExportToCSV("Sample.csv");
 
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -248,7 +248,7 @@ You can convert selected grid content to CSV format by using the following code:
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -266,7 +266,7 @@ GridRangeInfoList rangeList = gc.Model.SelectedRanges;
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 
 

@@ -11,7 +11,7 @@ documentation: ug
 
 The RDL report generated using the Report Designer can be exported as a PDF document using the following code.
 
-[C#]
+{% highlight C# %}
 
 //Instantiate the report writer with the parameter "ReportPath" and 
 
@@ -21,9 +21,9 @@ ReportWriter reportWriter = new ReportWriter(reportpath, dataSources);
 
 reportWriter.Save("Sample.pdf", WriterFormat.PDF);
 
+{% endhighlight %}
 
-
-[VB]
+{% highlight vbnet %}
 
 'Instantiate the report writer with the parameter "ReportPath" and 
 
@@ -32,6 +32,6 @@ ReportDataSource Collection
 Dim reportWriter As New ReportWriter (reportpath, dataSources)
 
 reportWriter.Save("Sample.pdf", WriterFormat.PDF);
-
+{% endhighlight %}
 
 

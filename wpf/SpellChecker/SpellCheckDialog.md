@@ -15,14 +15,14 @@ Spell Checker contains in-built dialog for checking spellings for any input cont
 
 
 
-_Methods table_
+Methods table
 
 <table>
 <tr>
-<td>
-{{ '**Method**' | markdownify }}</td><td>
-{{ '**Prototype**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Method**' | markdownify }}</th><th>
+{{ '**Prototype**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 SpellCheckForEditor</td><td>
@@ -37,10 +37,10 @@ Events
 
 <table>
 <tr>
-<td>
-{{ '**Event**' | markdownify }}</td><td>
-{{ '**Parameters**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Event**' | markdownify }}</th><th>
+{{ '**Parameters**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 SpellCheckCompleted</td><td>
@@ -49,13 +49,13 @@ This event will be triggered when the spell checking is completed for the input 
 </table>
 
 
-Spell Checking Using ISpellEditor 
+##Spell Checking Using ISpellEditor 
 
 In the below code snippet, a wrapper class is created for TextBox by implementing ISpellEditor interface.
 
 {%highlight c#%}
 
-[C#]
+
 
         public class TextBoxSpellEditor : ISpellEditor
 
@@ -194,7 +194,7 @@ After creating the wrapper class, you need to pass the instance of the ISpellEdi
 
 {%highlight c#%}
 
-[C#]
+
 
 SpellChecker spellCheck = new SpellChecker();
 

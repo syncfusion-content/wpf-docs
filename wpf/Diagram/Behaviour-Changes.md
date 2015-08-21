@@ -13,6 +13,7 @@ The following are the changes made from version 10.1.0.44:
 
 * The Bounds property of DiagramView will not have any effect and instead a new LayoutBounds property has been implemented with Horizontal and Vertical alignment of Diagram within rectangular bounds.
 * Hereafter RefreshLayout has to be used to update the layout instead of calling StartNodeArrangement and PrepareActivity methods.
+
 ## Frequently Asked Questions
 
 This section comprises an assembled list of questions and answers to provide expert solutions on product and its usage. It contains the following:
@@ -21,17 +22,17 @@ Common—Answers common questions that arises in minds of fresh users of Essenti
 
 Advanced—Answers questions that are in an advanced level, meant for experts.
 
-### Common
+## Common
 
 This section answers the following common question that arises in the minds of fresh users of Essential Diagram WPF. 
 
-#### Refresh the Tree Layout while Binding Dynamic Data to the Diagram
+## Refresh the Tree Layout while Binding Dynamic Data to the Diagram
 
 Essential Diagram for WPF provides support to bind dynamic data to the diagram.. But once the new data is assigned, the tree needs to be refreshed. This can be done using the RefreshLayout method. 
 
 The following code can be used to refresh the layout:
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -44,7 +45,7 @@ tree.RefreshLayout();
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -60,7 +61,7 @@ In case the hierarchical layout is being used, then the following code can be us
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -72,7 +73,7 @@ tree.RefreshLayout();
 
 {% endhighlight %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -86,11 +87,11 @@ tree.RefreshLayout()
 
 So once data has been assigned, call the RefreshLayout() method of the corresponding tree-layout.
 
-#### Host an UIElement as Node’s Content
+## Host an UIElement as Node’s Content
 
 You can host any content inside the node using the Content property.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -110,7 +111,7 @@ n.Content = b;
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -136,11 +137,11 @@ _NodeContent_
 
 Here, Button is a UIElement. Similarly any UIElement can be hosted as Node’s Content.
 
-### Customize Node’s Shape
+## Customize Node’s Shape
 
 Users can specify their own custom shapes to be used for the node as follows. First create a style resource that contains your custom shape.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -156,7 +157,7 @@ Users can specify their own custom shapes to be used for the node as follows. Fi
 
 Now use it for the node; the following code can be used as an example.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -173,7 +174,7 @@ diagramModel.Nodes.Add(n);
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 Dim s As Style = CType(Me.Resources("myNode"), Style)
 
@@ -193,11 +194,11 @@ diagramModel.Nodes.Add(n)
 
 _CustomNode_
 
-### Apply Style with Triggers for all the Nodes
+## Apply Style with Triggers for all the Nodes
 
 You can specify style with triggers which is applied to all the Nodes as shown in the following code snippet.
 {% highlight html %}
-[XAML]
+
 
 
 
@@ -254,7 +255,7 @@ You can specify style with triggers which is applied to all the Nodes as shown i
             </Style>
 {% endhighlight  %}
 
-#### Restrict Port Connections
+## Restrict Port Connections
 
 Using the events provided for LineConnectors we can restrict making connections to ports by checking the desired condition in the event handler. 
 
@@ -262,14 +263,14 @@ Let us consider a case where we want to restrict making connections to the port 
 
 There are two scenarios that we need to take care of:
 
-Scenario 1
+## Scenario 1
 
 In case a new connection is being created by dragging from one port to another, The 
 AfterConnectionCreate event can be used. This event fires soon after a new connection is created.
 
 The following is the code example for restricting connections between ports and allowing connecting ports of the same color:
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -309,7 +310,7 @@ diagramModel.Connections.Remove(evtArgs.Connector);
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -341,7 +342,8 @@ End Sub
 
 
 {% endhighlight  %}
-Scenario 2
+
+## Scenario 2
 
 In case an already existing connection is been dragged to connect to other ports, then the 
 ConnectorDragStart and ConnectorDragEnd events can be used to restrict connections.
@@ -349,7 +351,7 @@ As the name implies, the ConnectorDragStart event fires when either ends of the 
 The ConnectorDragEnd fires soon after the drag operation is complete.
 The following is the code example for restricting connections between ports and allow only red ports to connect.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -386,7 +388,7 @@ oldport = line.ConnectionTailPort;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -424,7 +426,7 @@ End Sub
 
 Now once you have stored the oldport, you can check for the condition in ConnectorDragEnd event as follows.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -483,7 +485,7 @@ evtArgs.Connector.TailNode = oldport.Node;
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -527,11 +529,12 @@ Private diagramView.ConnectorDragEnd += New ConnDragEndChangedEventHandler(Addre
 
 
 {% endhighlight  %}
-### Hide Resizer or Rotator’s Visibility of a Node
+
+## Hide Resizer or Rotator’s Visibility of a Node
 
 Gripper or Rotator Visibility can be hidden using the following code example.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -566,7 +569,7 @@ node.Loaded += new RoutedEventHandler(node_Loaded);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -596,13 +599,13 @@ node.Loaded += new RoutedEventHandler(node_Loaded);
 
 {% endhighlight %}
 
-_Note: Node’s Template will be available only after its template is applied, so if you try to do these operations before it will not give an expected result._
+> Note: Node’s Template will be available only after its template is applied, so if you try to do these operations before it will not give an expected result.
 
-#### Hide the Default Center Port of a Node
+## Hide the Default Center Port of a Node
 
 Each node will have a default center port visibility of this port can be hidden using the following statement.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -629,7 +632,7 @@ node.Loaded += new RoutedEventHandler(node_Loaded);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -651,13 +654,14 @@ node.Loaded += new RoutedEventHandler(node_Loaded);
 
 {% endhighlight  %}
 
-_Note: node.Ports[0] refers to the center port. This default center port will be available only after the Node’s Template is applied. So you have to change the Visibility accordingly._
 
-#### Programmatically Rotate a Node and Keep the Label Horizontal after Rotating
+> Note: node.Ports[0] refers to the center port. This default center port will be available only after the Node’s Template is applied. So you have to change the Visibility accordingly.
+
+## Programmatically Rotate a Node and Keep the Label Horizontal after Rotating
 
 Node can be programmatically rotated and the Label can be kept horizontal after rotation using the following code example.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -684,7 +688,7 @@ NewClient.LabelAngle = 360 - angle;
 
 
 
-[VB]
+
 
 
 
@@ -710,11 +714,11 @@ NewClient.LabelAngle = 360 - angle
 {% endhighlight  %}
 Here diagramModel is an instance of DiagramModel.
 
-#### Identify the Shapes Dropped on the Page from the Palette
+## Identify the Shapes Dropped on the Page from the Palette
 
 The SymbolPaletteItemName property can be used to identify the item dropped on the page in the NodeDrop event. This is particularly useful when you have to identify the item which is dropped and performs an operation on the node before it is added to the View. The Name property of the SymbolPaletteItem can be set while adding the item to the palette and thenby using SymbolPaletteItemName property in the eventargs of NodeDrop.A reference to the corresponding SymbolPaletteItem can be obtained.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -731,7 +735,7 @@ ss.Name = "MyItem";
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -749,7 +753,7 @@ ss.Name = "MyItem"
 
 The NodeDrop event can be declared:
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -774,7 +778,7 @@ if(evtArgs.SymbolPaletteItemName=="MyItem")
 {% endhighlight %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -797,11 +801,11 @@ Private diagramView.NodeDrop += New NodeDroppedEventHandler(AddressOf diagramVie
         End Sub
 {% endhighlight %}
 
-#### Hide ContextMenu for all Nodes and Connections
+## Hide ContextMenu for all Nodes and Connections
 
 ContextMenu for all Nodes and LineConnectors can be hidden using the following code snippet.
 {% highlight c# %}
-[C#]
+
 
 
 diagramView.NodeContextMenu = new ContextMenu { Visibility = Visibility.Collapsed };
@@ -812,7 +816,7 @@ diagramView.LineConnectorContextMenu = new ContextMenu { Visibility = Visibility
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB]
+
 
 
 diagramView.NodeContextMenu = New ContextMenu With {.Visibility = Visibility.Collapsed}
@@ -823,11 +827,11 @@ diagramView.LineConnectorContextMenu = New ContextMenu With {.Visibility = Visib
 
 Where, diagramView is an instance of DiagramView
 
-#### How can the nudge operation be stopped?
+## How can the nudge operation be stopped?
 
 The nudge operation can be stopped by handling the DiagramControl’s PreviewKeyDown event, as shown in the code example displayed below.
 {% highlight c# %}
-[C#]
+
 
         //Register the PreviewKeyDown event.
 
@@ -852,7 +856,7 @@ The nudge operation can be stopped by handling the DiagramControl’s PreviewKey
 {% highlight vbnet %}
 
 
-[VB]
+
 
 'Register the PreviewKeyDown event.
 
@@ -871,11 +875,11 @@ Private diagramControl.PreviewKeyDown += New KeyEventHandler(AddressOf MainWindo
         End Sub
 {% endhighlight  %}
 
-####  How can MultipleTrigger be applied for a Node?
+##  How can MultipleTrigger be applied for a Node?
 
 MultiTrigger enables you to set the property values or start actions based on a collection of conditions. A condition is met when the element’s property value matches the specified value. This comparison is performed by a reference equality check. The following example shows how to use MultipleTrigger.
 {% highlight html %}
-[XAML]
+
 
     <Style.Triggers>
 
@@ -907,17 +911,17 @@ MultiTrigger enables you to set the property values or start actions based on a 
 
 If a Node has the above Trigger set in its Style, then the Node will have a DropShadowEffect when both the IsSelected property and the Tag property are set to True.
 
-###  Advanced
+##  Advanced
 
 This section answers the following questions that are in an advanced level, meant for experts.
 
-#### Animate the Dodes in the Diagram
+## Animate the Dodes in the Diagram
 
 You can perform many kinds of animations on nodes by using the double animation. Rotation and Translation are some of the basic operations performed on the nodes. You can use double animation to perform these operations on the node in a specific pattern.
 
 To rotate a node, the following code can be used.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -944,7 +948,7 @@ rt.BeginAnimation(RotateTransform.AngleProperty, nodeanimation);
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -974,7 +978,7 @@ To translate a node with respect to the x-axis, the TranslateTransform can be ap
 
 
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -991,7 +995,7 @@ nodeanimation.RepeatBehavior = new RepeatBehavior(1);
 {% endhighlight  %}
 {% highlight  vbnet %}
 
-[VB]
+
 
 
 
@@ -1011,7 +1015,7 @@ Once you have created the double animation, you can then apply it to the node wh
 
 {% highlight c# %}
 
-[C#]
+
 
 
 
@@ -1036,7 +1040,7 @@ rt.BeginAnimation(TranslateTransform.XProperty, nodeanimation);
 
 {% endhighlight  %}
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -1059,13 +1063,13 @@ nodeObj.RenderTransform = rt
 rt.BeginAnimation(TranslateTransform.XProperty, nodeanimation)
 {% endhighlight  %}
 
-#### Print DiagramPage in Uniform Print Mode Using Framework Print Dialog
+## Print DiagramPage in Uniform Print Mode Using Framework Print Dialog
 
 DiagramPage can also be printed using Framework PrintDialog instead of using syncfusion DiagramControlPrintPreview Dialog, as shown in the following code example.
 
 {% highlight c# %}
 
-[C#]
+
 
      //Create Framwork Print Dialog.
 
@@ -1170,7 +1174,7 @@ DiagramPage can also be printed using Framework PrintDialog instead of using syn
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -1261,11 +1265,11 @@ brush.Viewport = New Rect(New Point(0, y), New Size(1, height))
 End If
 {% endhighlight  %}
 
-#### Save the Current Zoom Settings and Load the Settings Back
+## Save the Current Zoom Settings and Load the Settings Back
 
 Zoom settings can be saved into variables and this saved settings can be applied back again using the following code example.
 {% highlight c# %}
-[C#]
+
 
             //Save current zoom setting.
 
@@ -1298,7 +1302,7 @@ Zoom settings can be saved into variables and this saved settings can be applied
 {% endhighlight  %}
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -1329,7 +1333,7 @@ ZoomCommands.ZoomIn.Execute(diagramView.Page, diagramView)
 diagramView.ZoomFactor = SavedZoomFactorr
 {% endhighlight  %}
 
-#### Label Alignment
+## Label Alignment
 
 You are provided with a lot more alignment options to customize Label of Node and Connector.
 
@@ -1362,7 +1366,7 @@ No</td></tr>
 
 The following code snippet depicts the behavior of LabelHorizontalTextAllignment and LabelVerticalTextAllignment.
 {% highlight c# %}
-[C#]
+
 
 Node node = new Node();
 
@@ -1382,7 +1386,7 @@ node.LabelVerticalTextAlignment = VerticalAlignment.Top;
 
 _LabelAllignment_
 
-#####  Label Resizer
+##  Label Resizer
 
 You are provided with support for Label Selection and Resizing at runtime. This feature can be enabled by using IsEnableLabelSelection property in DiagramView. By enabling this property you are able to resize, drag and rotate the LabelEditor like Nodes. The default value is “False”.
 
@@ -1408,7 +1412,7 @@ No</td></tr>
 
 The following code example is used to enable LabelEditor for Nodes.
 {% highlight c# %}
-[C#]
+
 
 DiagramView view = new DiagramView();
 
@@ -1432,7 +1436,7 @@ _LableEditor for Node_
 
 The following code example is used to enable LabelEditor for Connectors.
 {% highlight c# %}
-[C#]
+
 
 DiagramView view = new DiagramView();
 

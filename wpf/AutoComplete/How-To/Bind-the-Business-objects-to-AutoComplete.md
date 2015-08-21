@@ -20,7 +20,7 @@ You can bind the Business objects to the AutoComplete as mentioned below.
 
 {% highlight xml %}
 
-[XAML]
+
 <syncfusion:AutoComplete x:Name="AutoCompleteTextBox" Source="Custom” DisplayMemberPath="Name" SelectedValuePath="EmployeeID">   
 <syncfusion:AutoComplete.CustomSource> 
 <local:EmployeeListCollection/>  
@@ -30,7 +30,7 @@ You can bind the Business objects to the AutoComplete as mentioned below.
 
 {% highlight c# %}
 
-[C#]
+
 public class EmployeeList    
 {        
 public int EmployeeID { get; set; }        

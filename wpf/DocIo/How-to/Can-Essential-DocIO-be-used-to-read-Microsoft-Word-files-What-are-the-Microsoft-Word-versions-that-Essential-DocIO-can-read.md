@@ -7,7 +7,7 @@ control: DocIO
 documentation: ug
 ---
 
-### Can Essential DocIO be used to read Microsoft Word files? What are the Microsoft Word versions that Essential DocIO can read?
+## Can Essential DocIO be used to read Microsoft Word files? What are the Microsoft Word versions that Essential DocIO can read?
 
 Yes. Essential DocIO provides support for reading Microsoft Word files. It can read the following Microsoft Word versions:
 

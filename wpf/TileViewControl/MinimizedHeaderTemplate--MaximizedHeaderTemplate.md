@@ -23,7 +23,6 @@ The following code example illustrates how to add the MinimizedHeaderTemplate an
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -107,12 +106,12 @@ _MinimizedHeaderTemplate / MaximizedHeaderTemplate Properties Table_
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }} </td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Data Type**' | markdownify }} </td><td>
-{{ '**Reference links**' | markdownify }} </td></tr>
+<th>
+{{ '**Property**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Data Type**' | markdownify }} </th><th>
+{{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
 <td>
 MinimizedHeaderTemplate</td><td>

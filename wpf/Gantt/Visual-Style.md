@@ -46,14 +46,14 @@ The following code illustrates how to set the VisualStyle of Gantt control:
 
 {% highlight html %}
 
-[XAML]
+
 
 <Sync:GanttControl x:Name="Gantt" VisualStyle="Office2010Blue"/>
 
 
 {% endhighlight %}
 {% highlight c# %}
-[C#]
+
 
 Gantt.VisualStyle = VisualStyle.Office2010Blue;
 

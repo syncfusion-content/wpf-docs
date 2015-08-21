@@ -23,7 +23,6 @@ The following code example illustrates how to add the Orientation for Minimizing
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -67,7 +66,6 @@ The following code example illustrates how to add the Orientation for Minimizing
 
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -110,16 +108,16 @@ The following code example illustrates how to add the Orientation for Minimizing
 
 ## Properties
 
-_MinimizedItemTemplate / MaximizedItemTemplate Properties Table_
+MinimizedItemTemplate / MaximizedItemTemplate Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }} </td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Data Type**' | markdownify }} </td><td>
-{{ '**Reference links**' | markdownify }} </td></tr>
+<th>
+{{ '**Property**' | markdownify }} </th><th>
+{{ '**Description**' | markdownify }} </th><th>
+{{ '**Type**' | markdownify }} </th><th>
+{{ '**Data Type**' | markdownify }} </th><th>
+{{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
 <td>
 MinimizedItemsOrientation </td><td>
@@ -132,7 +130,7 @@ MinimizedItemsOrientation.Right</td><td>
 
 ## Events
 
-_MinimizedItemsOrientationChanged Table_
+MinimizedItemsOrientationChanged Table
 
 <table>
 <tr>
@@ -143,12 +141,12 @@ _MinimizedItemsOrientationChanged Table_
 {{ '**Type**' | markdownify }} </th><th>
 {{ '**Reference links**' | markdownify }} </th></tr>
 <tr>
-<th>
-MinimizedItemsOrientationChanged</th><th>
-The event gets fired when the minimized items orientation of the TileViewItems is changed.</th><th>
-</th><th>
-</th><th>
-</th></tr>
+<td>
+MinimizedItemsOrientationChanged</td><td>
+The event gets fired when the minimized items orientation of the TileViewItems is changed.</td><td>
+</td><td>
+</td><td>
+</td></tr>
 </table>
 
 

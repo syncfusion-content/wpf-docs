@@ -15,7 +15,7 @@ HyperlinkAdv can be kept only inside the ParagraphAdv since the content property
 
 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -100,7 +100,7 @@ HyperlinkAdv can be added directly to an application by using the following code
 
 {% highlight xml %}
 
-[XAML]
+
 <syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">            
 <syncfusion:DocumentAdv>                
 <syncfusion:SectionAdv>                    
@@ -114,7 +114,7 @@ HyperlinkAdv can be added directly to an application by using the following code
 
 {% highlight C# %}
 
-[C#]            
+           
 RichTextBoxAdv richtext = new RichTextBoxAdv();          
  DocumentAdv document = new DocumentAdv();          
  SectionAdv section = new SectionAdv();          

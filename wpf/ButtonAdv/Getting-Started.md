@@ -15,8 +15,6 @@ This section guides you on getting started with the ButtonAdv control. It descri
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
-
-
 _Control Structure_
 
 ## Add ButtonAdv Control to an application:
@@ -24,12 +22,13 @@ _Control Structure_
 The ButtonAdv control is available in the following assembly:
 
 *  Syncfusion.Shared.WPF
+
 ## Setting Label
 
 
 The following code explains how to declare the ButtonAdv control using XAML.
 {% highlight html %}
-[XAML]
+
 
 <sync:ButtonAdv Label="Hello World"/>
 
@@ -38,7 +37,7 @@ The following code explains how to declare the ButtonAdv control using XAML.
 The ButtonAdv control can be created using the C# code as follows:
 {% endhighlight %}
 {% highlight c# %}
-[C#]
+
 
 ButtonAdv button = new ButtonAdv()
 
@@ -48,7 +47,7 @@ button.Label = "Hello World";
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-
+_Typical ButtonAdv Control_
 
 ## Set Size Mode
 
@@ -65,16 +64,16 @@ When the SizeMode is set to Small, the icon of the ButtonAdv control is displaye
 Use the following code example to set the SizeMode to Small:
 
 {% highlight html %}
-[XAML]<sync:ButtonAdv SizeMode="Small" Label="Hello World"/>
+<sync:ButtonAdv SizeMode="Small" Label="Hello World"/>
 {% endhighlight  %}
 {% highlight c# %}
-[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;
+ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;
 {% endhighlight  %}
 
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
-
+_ButtonAdv Control with Small SizeMode_
 
 
 
@@ -85,16 +84,16 @@ The ButtonAdv control retains the default appearance, when the SizeMode is set t
 Use the following code example to set the SizeMode to Normal:
 
 {% highlight html %}
-[XAML]<sync:ButtonAdv SizeMode="Normal" Label="Hello World"/>
+<sync:ButtonAdv SizeMode="Normal" Label="Hello World"/>
 {% endhighlight  %}
 {% highlight c# %}
-[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;
+ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;
 
 {% endhighlight %}
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
-
+_ButtonAdv control with Normal SizeMode_
 
 ## Large Mode
 
@@ -103,16 +102,16 @@ When the SizeMode is set to Large, the ButtonAdv control is displayed with large
 Use the following code example to set the SizeMode to Large:
 
 {% highlight html %}
-[XAML]<sync:ButtonAdv SizeMode="Large" Label="Hello World"/>
+<sync:ButtonAdv SizeMode="Large" Label="Hello World"/>
 {% endhighlight  %}
 {% highlight c# %}
-[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large;
+ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large;
 {% endhighlight  %}
 
 
 ![](Getting-Started_images/Getting-Started_img5.png)
 
-
+_ButtonAdv controls with Large SizeMode_
 
 ## Setting Image
 
@@ -125,48 +124,48 @@ The image displayed on the control can be set using the following two properties
 
 The SmallIcon property can be set as follows:
 {% highlight html %}
-[XAML]<sync:ButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/>
+<sync:ButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/>
 {% endhighlight %}
 {% highlight c# %}
-[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;button.SmallIcon = new BitmapImage(new Uri("employee.png"));
+ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 {% endhighlight  %}
 
 ![](Getting-Started_images/Getting-Started_img6.png)
 
 
-
+_Small Sized ButtonAdv Control with image_
 
 
 The SmallIcon property can be set even when the SizeMode is Normal:
 
 {% highlight html %}
-[XAML]<sync:ButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/>
+<sync:ButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/>
 {% endhighlight %}
 {% highlight c# %}
-[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;button.SmallIcon = new BitmapImage(new Uri("employee.png"));
+ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 {% endhighlight  %}
 
 ![](Getting-Started_images/Getting-Started_img7.png)
 
 
-
+_Normal Sized ButtonAdv Control with Image_
 
 
 The LargeIcon property can be set as follows:
 
 {% highlight html %}
-[XAML]<sync:ButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/>
+<sync:ButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/>
 {% endhighlight  %}
 {% highlight c# %}
-[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large;button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
+ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large;button.SmallIcon = new BitmapImage(new Uri("employee.png"));</td></tr>
 {% endhighlight %}
 
 
 ![](Getting-Started_images/Getting-Started_img8.png)
 
-
+_Large Sized ButtonAdv Control with Image_
 
 ## Set Icon Width and Height
 
@@ -177,29 +176,29 @@ The Iconsize can be set using the following two properties:
 
 ![](Getting-Started_images/Getting-Started_img9.png)
 
-
+_ButtonAdv Control with IconSize(80,80)_
 
 
 
 ![](Getting-Started_images/Getting-Started_img10.png)
 
-
+_ButtonAdv Control with IconSize(20,20)_
 
 
 
 The IconWidth and IconHeight can be set as follows:
 
 {% highlight html %}
-[XAML]  <sync:ButtonAdv   SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Hello World"  SmallIcon ="female.png"  />
+  <sync:ButtonAdv   SizeMode="Normal" IconHeight="20" IconWidth="20"  Label="Hello World"  SmallIcon ="female.png"  />
 {% endhighlight %}
 {% highlight c# %}
-[C#]ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.IconWidth=20;button.IconHeight=20;
+ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.IconWidth=20;button.IconHeight=20;
 {% endhighlight %}
 
 
 ## ButtonAdv Members
 
-Properties
+### Properties
 
 _Properties table_
 
@@ -303,7 +302,7 @@ IconSize</td></tr>
 </table>
 
 
-Events
+### Events
 
 _Events table_
 

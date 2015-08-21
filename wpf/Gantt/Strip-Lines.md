@@ -210,11 +210,11 @@ Description</th><th>
 Arguments</th><th>
 Type</th></tr>
 <tr>
-<th>
-StripLineCreated </th><th>
-Whenever a strip line is created, this event will be triggered. The handler of the event will have the newly created strip line (StripLineInfo) in the argument.By handling this event, you can customize the appearance of the strip line.</th><th>
-StripLineCreated(object sender, StriplineCreatedEventArgs args)</th><th>
-Event </th></tr>
+<td>
+StripLineCreated </td><td>
+Whenever a strip line is created, tdis event will be triggered. tde handler of tde event will have tde newly created strip line (StripLineInfo) in tde argument.By handling tdis event, you can customize tde appearance of tde strip line.</td><td>
+StripLineCreated(object sender, StriplineCreatedEventArgs args)</td><td>
+Event </td></tr>
 </table>
 
 ## Adding Striplines to Application
@@ -229,7 +229,7 @@ The following code illustrates Creating the collection of StripLineInfo.
 
 
 {% highlight c# %}
-[C#]
+
 
 StripCollection =  new List<StripLineInfo>();
 
@@ -273,7 +273,7 @@ The following code example illustrates binding the strip line collection to Stri
 
 
 {% highlight html %}
-[XAML]
+
 
 <sync:GanttControl x:Name="Gantt"
 

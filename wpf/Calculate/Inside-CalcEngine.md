@@ -112,7 +112,7 @@ The error messages that are displayed by Essential Calculate can be found in thi
 {% highlight c# %}
 
 
-[C#]
+
 
 
 

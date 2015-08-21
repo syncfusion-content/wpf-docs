@@ -35,7 +35,6 @@ RowHeaderStyle of PivotGrid can be customized by using the Template, as shown in
 
 {% highlight xml %} 
 
-[XAML]
 
 <Style x:Key="rowStyle" TargetType="{x:Type syncfusion:PivotGridTemplateCell}">
 

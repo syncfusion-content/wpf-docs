@@ -20,7 +20,6 @@ There are two ways you can add appointments to the Schedule control: They are:
 
 You can add appointments directly to the Schedule control, by using the following code. 
 {% highlight c# %}
-[C#]
 
 
 
@@ -51,7 +50,6 @@ Schedule supports full data binding to any type of IEnumerable source. Specify t
 
 Add appointments by using the ItemsSource property.  
 {% highlight html %}
-[XAML]
 
 
 
@@ -94,7 +92,6 @@ Add appointments by using the ItemsSource property.
 {% highlight c# %}
 
 
-[C#]
 
    public partial class MainWindow : Window
 

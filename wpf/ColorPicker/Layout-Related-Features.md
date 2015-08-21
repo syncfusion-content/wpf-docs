@@ -16,14 +16,13 @@ This section illustrates the Layout-related features of ColorPicker and ColorEdi
 Flow Direction of the ColorPicker and ColorEdit controls is set by using the FlowDirection property.
 
 
-
-### _Properties table_
+_Properties table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 FlowDirection</td><td>
@@ -36,7 +35,7 @@ Sets the flow direction for the ColorPicker and ColorEdit controls. The options 
 
 
 {% highlight xml %}
-[XAML]
+
 <!-- Adding ColorPicker -->
 <syncfusion:ColorPicker FlowDirection="RightToLeft" Name="colorPicker"/>
 
@@ -46,7 +45,7 @@ Sets the flow direction for the ColorPicker and ColorEdit controls. The options 
 
 {% highlight C# %}
 
-[C#]
+
 // Setting flow direction as right to left for ColorEditcolorEdit.
 FlowDirection = FlowDirection.RightToLeft;
 
@@ -65,13 +64,13 @@ colorPicker.FlowDirection = FlowDirection.RightToLeft;
 
 You can enhance the appearance of the ColorPicker and ColorEdit control, using the VisualStyle property. VisualStyle is an attached property, which gets or sets the value for the visual style. The various built-in visual styles are listed below.
 
-### _Properties table_
+ _Properties table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
@@ -79,11 +78,11 @@ Sets the visual style for the ColorPicker and ColorEdit controls. The options pr
 </table>
 
 
-### To set the visual style for the ColorPicker and ColorEdit controls, use the following code.
+To set the visual style for the ColorPicker and ColorEdit controls, use the following code.
 
 {% highlight xml %}
 
-[XAML]
+
 <!-- Adding ColorPicker -->
 <syncfusion:ColorPicker  syncfusion:SkinStorage.VisualStyle="Office2003" Name="colorPicker"/>
 
@@ -94,7 +93,7 @@ Sets the visual style for the ColorPicker and ColorEdit controls. The options pr
 {% highlight C# %}
 
 
-[C#]
+
 //Setting the visual style as Office2007Blue for ColorEdit 
 SkinStorage.SetVisualStyle(colorEdit, "Office2007Blue"); 
 
@@ -157,13 +156,13 @@ The sliders available for the ColorEdit control are Alpha, Blue, Green and Red. 
 
 {% highlight xml %}
 
-[XAML]
+
 <Tools:ColorEdit Name="myColorEditor" BackgroundA="DarkBlue" BackgroundB="Yellow" BackgroundG="Black" BackgroundR="Orange"/>
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]
+
 myColorEditor.BackgroundA = Brushes.DarkBlue;
 myColorEditor.BackgroundB = Brushes.Yellow;
 myColorEditor.BackgroundG = Brushes.Black

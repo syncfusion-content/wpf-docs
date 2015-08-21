@@ -22,7 +22,7 @@ The steps to create a DateTimeEdit control by using Visual Studio in C# are as f
 
 
 
-![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img1.png)
+   ![C:/Documents and Settings/labuser/My Documents/WPF Tools correct Image.png](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -31,7 +31,7 @@ The steps to create a DateTimeEdit control by using Visual Studio in C# are as f
 3. On the Project Dialog window, select WPF Application, in the name field, type the name of the project, and then click OK.
 
 
-![](Getting-Started_images/Getting-Started_img2.png)
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
@@ -42,7 +42,7 @@ The steps to create a DateTimeEdit control by using Visual Studio in C# are as f
 
 
 
-![](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
 
 
@@ -50,24 +50,30 @@ The steps to create a DateTimeEdit control by using Visual Studio in C# are as f
 
 5. Click the C# file, to open the C# file and add the DateTimeEdit control to the application. Here is the code to create the DateTimeEdit control in C#:
 
+         namespace WpfApp{     
+		  public partial class MainWindow : Window   
+ 		  {        public MainWindow()       
+ 		    {            InitializeComponent();            
+			//Adding DateTimeEdit control to application from Syncfusion.Windows.Shared            
+			  Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                              
+			  Syncfusion.Windows.Shared.DateTimeEdit();            
+			  dateTimeEdit.Width = 200;            
+			  dateTimeEdit.Height = 25;            
+			  this.LayoutRoot.Children.Add(dateTimeEdit);       
+			  }    }}
 
 
-{% highlight c# %}
-C#
 
-namespace WpfApp{    public partial class MainWindow : Window    {        public MainWindow()        {            InitializeComponent();            //Adding DateTimeEdit control to application from Syncfusion.Windows.Shared            Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                               Syncfusion.Windows.Shared.DateTimeEdit();            dateTimeEdit.Width = 200;            dateTimeEdit.Height = 25;            this.LayoutRoot.Children.Add(dateTimeEdit);        }    }}
-
-{% endhighlight %}
-
-![](Getting-Started_images/Getting-Started_img4.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
-See Also
+   See Also
 
-Creating a DateTimeEdit control in XAML
+   Creating a DateTimeEdit control in XAML
 
-Creating a DateTimeEdit control by using Expression Blend
+   Creating a DateTimeEdit control by using Expression Blend
+   {:.prettyprint}
 
 ### Creating a DateTimeEdit control in XAML
 
@@ -79,7 +85,7 @@ The steps to create a DateTimeEdit control by using VisualStudio in XAML are as 
 
 
 
-![](Getting-Started_images/Getting-Started_img5.png)
+   ![](Getting-Started_images/Getting-Started_img5.png)
 
 
 
@@ -88,20 +94,18 @@ The steps to create a DateTimeEdit control by using VisualStudio in XAML are as 
 4. On the Properties window, customize the properties of the DateTimeEdit control.
 
 
-{% highlight html %}
-
-XAML
-
-<Window x:Class="WpfApp.MainWindow"        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        Title="DateTimeEdit Demo" Height="280" Width="365"        xmlns:syncfusion="              clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.Wpf"        xmlns:local="clr-namespace:WpfApp">    <Grid x:Name="LayoutRoot"><syncfusion:DateTimeEdit Height="29" Margin="75,71,50,0"                                    VerticalAlignment="Top"/>    </Grid></Window>
-
-{% endhighlight %}
-
-![](Getting-Started_images/Getting-Started_img6.png)
 
 
-See Also
+     <Window x:Class="WpfApp.MainWindow"        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        Title="DateTimeEdit Demo" Height="280" Width="365"        xmlns:syncfusion="              clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.Wpf"        xmlns:local="clr-namespace:WpfApp">    <Grid x:Name="LayoutRoot"><syncfusion:DateTimeEdit Height="29" Margin="75,71,50,0"                                    VerticalAlignment="Top"/>    </Grid></Window>
 
-Creating a DateTimeEdit control by using C#
+
+
+   ![](Getting-Started_images/Getting-Started_img6.png)
+   {:.prettyprint}
+
+   See Also
+
+## Creating a DateTimeEdit control by using C#
 
 Creating a DateTimeEdit control by using Expression Blend
 
@@ -114,7 +118,7 @@ The steps to create a DateTimeEdit control in the application by using Expressio
 
 
 
-![](Getting-Started_images/Getting-Started_img7.png)
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
@@ -124,7 +128,7 @@ The steps to create a DateTimeEdit control in the application by using Expressio
 
 
 
-![](Getting-Started_images/Getting-Started_img8.png)
+   ![](Getting-Started_images/Getting-Started_img8.png)
 
 
 
@@ -136,7 +140,7 @@ The steps to create a DateTimeEdit control in the application by using Expressio
 
 
 
-![](Getting-Started_images/Getting-Started_img9.png)
+   ![](Getting-Started_images/Getting-Started_img9.png)
 
 
 
@@ -145,21 +149,20 @@ The steps to create a DateTimeEdit control in the application by using Expressio
 
 
 
-![](Getting-Started_images/Getting-Started_img10.png)
+   ![](Getting-Started_images/Getting-Started_img10.png)
 
 
 
 
 
-{% highlight html %}
-XAML
-
-<Window x:Class="WpfApp.MainWindow"        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        Title="DateTimeEdit Demo" Height="280" Width="365"        xmlns:syncfusion="              clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.Wpf"        xmlns:local="clr-namespace:WpfApp">    <Grid x:Name="LayoutRoot"><syncfusion:DateTimeEdit Height="29" Margin="75,71,50,0"                                    VerticalAlignment="Top"/>    </Grid></Window>
-
-{% endhighlight %}
-![](Getting-Started_images/Getting-Started_img11.png)
 
 
+     <Window x:Class="WpfApp.MainWindow"        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"        Title="DateTimeEdit Demo" Height="280" Width="365"        xmlns:syncfusion="              clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.Wpf"        xmlns:local="clr-namespace:WpfApp">    <Grid x:Name="LayoutRoot"><syncfusion:DateTimeEdit Height="29" Margin="75,71,50,0"                                    VerticalAlignment="Top"/>    </Grid></Window>
+
+
+   ![](Getting-Started_images/Getting-Started_img11.png)
+
+   {:.prettyprint}
 
 See Also
 
@@ -174,12 +177,12 @@ You have to use the DateTime property to set the date for the DateTimeEdit contr
 
 
 {% highlight html %}
-XAML
+
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/05/2010" Pattern="LongDate"/>
 {% endhighlight %}
 {% highlight c# %}
-C#
+
 
 dateTimeEdit.DateTime = new DateTime(2010, 07, 05);
 
@@ -212,12 +215,12 @@ The Minimum and Maximum values of the DateTimeEdit can be specified by the MinDa
 
 
 {% highlight html %}
-XAML
+
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit" Height="25" Width="200"                          DateTime="07/05/2010" Pattern="LongDate"                          MinDateTime="01/01/2010" MaxDateTime="07/15/2010"/>
 {% endhighlight  %}
 {% highlight c# %}
-C#
+
 
 Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new                           Syncfusion.Windows.Shared.DateTimeEdit();dateTimeEdit.Width = 200;dateTimeEdit.Height = 25;dateTimeEdit.DateTime = new DateTime(2010, 07, 05);dateTimeEdit.MinDateTime = new DateTime(2010, 01, 01);dateTimeEdit.MaxDateTime = new DateTime(2010, 07, 15);dateTimeEdit.Pattern = DateTimePattern.LongDate;this.LayoutRoot.Children.Add(dateTimeEdit);
 

@@ -16,7 +16,7 @@ SfDataPager supports appearance styles by using the following properties.
 * DisplayMode
 * Orientation
 
-### AutoEllipsisMode
+## AutoEllipsisMode
 
 
 The AutoEllipsis button is displayed when the page count is greater than numeric button count. The SfDataPager control allows you to define the AutoEllipsis button by using the AutoEllipsisMode property which is the Enum type. 
@@ -62,7 +62,7 @@ It does not display the AutoEllipsisButton.</td></tr>
 
 The following code example explains how to change the AutoEllipsisbuttontext.
 {% highlight html %}
-[XAML]
+
 
 <Window.DataContext>
 
@@ -108,7 +108,7 @@ The following screenshot displays the output for AutoEllipsisText changed as …
 
 
 
-### AccentBrush
+## AccentBrush
 
 AccentBrush properties are used to decorate the SfDataPager control with a solid color. There are two AccentBrush properties in the SfDataPager control:
 
@@ -124,7 +124,7 @@ The following code example explains how to apply the AccentBackground and Accent
 
 
 {% highlight html %}
-[XAML]
+
 
 <Window.DataContext>
 
@@ -164,7 +164,7 @@ The following code example explains how to use NumericButtonStyle in SfDataPager
 
 
 {% highlight html %}
-[XAML]
+
 
 <Window.DataContext>
 
@@ -208,7 +208,7 @@ The following screenshot displays the output of NumericButtonStyle.
 
 
 
-### Display Modes
+## Display Modes
 
 The SfDataPager control allows you to choose the elements that are visible in the control. This can be achieved by using the DisplayMode property.The following table explains the PageDisplayMode enum values.
 
@@ -294,7 +294,7 @@ It does not display anything</td></tr>
 
 > Note: By Default, DisplayMode is set to FirstLastPreviousNextNumeric.
 
-### Orientation
+## Orientation
 
 SfDataPager allows you to arrange the child elements either horizontally or vertically.  This can be achieved by using the Orientation Property. Orientation is an Enum type.  The following table describes the Orientation enum values.
 

@@ -15,7 +15,6 @@ The headers of all the Tab Items are displayed as the menu items of the Tab List
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -43,8 +42,6 @@ The headers of all the Tab Items are displayed as the menu items of the Tab List
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
-
 
 
 // Creating instance of the TabControlExt control

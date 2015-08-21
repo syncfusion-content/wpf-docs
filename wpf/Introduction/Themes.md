@@ -37,52 +37,52 @@ String</td><td>
 </table>
 
 
-Setting VisualStyle in XAML
+## Setting VisualStyle in XAML
 
 The following code example explains how to set the VisualStyle property in XAML.
 
 1. Add the following namespace in the sample.
-{% highlight html %}
- [XAML]
 
-xmlns:yncfusion=”http://schemas.syncfusion.com/wpf”
+   ~~~ html
+         xmlns:yncfusion=”http://schemas.syncfusion.com/wpf”
+   ~~~
+   {:.prettyprint}
 
-{% endhighlight %}
 
 2. Set the VisualStyle property for the control as illustrated in the following code example. 
-{% highlight html %}
- [XAML]
+  
+   ~~~ html
+           <Syncfusion:CalendarEdit syncfusion:SkinStorage.VisualStyle=”Blend”></Syncfusion:CalendarEdit>  
+   ~~~
+   {:.prettyprint}
 
-<Syncfusion:CalendarEdit syncfusion:SkinStorage.VisualStyle=”Blend”></Syncfusion:CalendarEdit>  
 
-{% endhighlight  %}
+   ### Setting VisualStyle in C&#35;                                     
 
-### Setting VisualStyle in C#
+   You can also set the VisualStyle property in C# by using the SetVisualStyle.
 
-You can also set the VisualStyle property in C# by using the SetVisualStyle.
-
-The following code example explains how to set the VisualStyle property in C#.
+   The following code example explains how to set the VisualStyle property in C#.
 
 3. Name the control by using the Name attribute.
-{% highlight html %}
- [XAML]
 
-<Syncfusion:CalendarEdit Name=”calendar”></Syncfusion:CalendarEdit> 
+   ~~~ html
+         <Syncfusion:CalendarEdit Name=”calendar”></Syncfusion:CalendarEdit> 
+   ~~~
+   {:.prettyprint}
 
-{% endhighlight  %}
+
+
 
 4. Add the following line in code behind file.
-{% highlight c# %}
-[C#]
 
-SkinStorage.SetVisualStyle(calendar, “Blend”);
-
-{% endhighlight %}
+   ~~~ cs
+         SkinStorage.SetVisualStyle(calendar, “Blend”);
+   ~~~
+   {:.prettyprint}
 
 The output is displayed as follows.
 
 ![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1013.jpg](Themes_images/Themes_img1.jpeg)
-
 
 
 _Visual Style property for setting Skins_
@@ -118,48 +118,52 @@ SolidColorBrush</td><td>
 The following code example explains how to set the ActiveColorScheme property in XAML.
 
 1. Add the following namespace in the sample.
-{% highlight html %}
-[XAML]
 
-xmlns:Syncfusion=http://schemas.syncfusion.com/wpf
+   ~~~ html
+  
 
+           xmlns:Syncfusion=http://schemas.syncfusion.com/wpf
 
-{% endhighlight %}
+   ~~~
+   {:.prettyprint}
 2. Set the ActiveColorScheme property for the control as illustrated in the following code example.
-{% highlight html %}
-[XAML]
 
-<yncfusion:CalendarEdit Name=”calendar” yncfusion:SkinManager.ActiveColorScheme=”Red”></yncfusion:CalendarEdit> 
+   ~~~ html
 
-{% endhighlight  %}
 
-#### Setting ActiveColorScheme property in C#
+          <Syncfusion:CalendarEdit Name=”calendar” Syncfusion:SkinManager.ActiveColorScheme=”Red”></Syncfusion:CalendarEdit> 
 
-You can also set the custom color for the WPF controls in C# by using _SetActiveColorScheme._
+   ~~~
+   {:.prettyprint}
 
-The following code example explains how to set the ActiveColorScheme property in C#.
+   #### Setting ActiveColorScheme property in C&#35;
 
-3.  Name the control by using the Name attribute.
-{% highlight html %}
-[XAML]
+   You can also set the custom color for the WPF controls in C# by using _SetActiveColorScheme._
 
-<yncfusion:CalendarEdit Name=”calendar”></yncfusion:CalendarEdit> 
+   The following code example explains how to set the ActiveColorScheme property in C#.
 
-{% endhighlight  %}
+3. Name the control by using the Name attribute.
+
+   ~~~ html
+   
+          <Syncfusion:CalendarEdit Name=”calendar”></Syncfusion:CalendarEdit> 
+
+   ~~~
+   {:.prettyprint}
 
 4. Add the following line in code behind file.
-{% highlight c# %}
-[C#]
+   
+   ~~~ cs
 
-SkinManager.SetActiveColorScheme(calendar, Brushes.Red);
 
-{% endhighlight %}
+		SkinManager.SetActiveColorScheme(calendar, Brushes.Red);
+
+   ~~~
+   {:.prettyprint}
 
 The output is displayed as follows.
 
 ![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1014.png](Themes_images/Themes_img2.png)
-
-
 
 _Custom color using ActiveColorScheme_
 
@@ -184,7 +188,7 @@ You can customize the following brushes in Metro Theme.
 #### Setting MetroBackgroundBrush property in XAML
 
 {% highlight html %}
-[XAML]
+
 
 <yncfusion:ChromelessWindow x:Class=”WpfApplication18.MainWindow”       
 
@@ -197,15 +201,13 @@ You can customize the following brushes in Metro Theme.
 
 #### Setting MetroBackgroundBrush property in C#
 {% highlight c# %}
-[C#]
+
 
 SkinStorage.SetMetroBrush(this, Brushes.Green);
 
 {% endhighlight %}
 
 ![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1015.jpg](Themes_images/Themes_img3.jpeg)
-
-
 
 _Metro theme customization_
 

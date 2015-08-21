@@ -13,7 +13,6 @@ Application Items are the items that are displayed in the right pane of the Appl
 
 {% highlight xml %}
 
-    [XAML]
 
 
 

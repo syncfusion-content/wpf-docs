@@ -26,15 +26,15 @@ DOLLARDE( arg1, arg2) where:
 
 #### Remarks:
 
-#NUM! - Occurs if the fraction is less than 0.
+&#35;NUM! - Occurs if the fraction is less than 0.
 
-#DIV/0! - Occurs if the fraction is equal to 0.
+&#35;DIV/0! - Occurs if the fraction is equal to 0.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img1.png)
 
-
+_DOLLARDE_
 
 ### DOLLARFR
 
@@ -51,15 +51,15 @@ DOLLARFR (decNum, arg2) where:
 
 #### Remarks:
 
-#NUM! - Occurs if the fraction is less than 0.
+&#35;NUM! - Occurs if the fraction is less than 0.
 
-#DIV/0! - Occurs if the fraction is 0.
+&#35;DIV/0! - Occurs if the fraction is 0.
 
 Example:
 
 ![](Calculate-functions_images/Calculate-functions_img2.png)
 
-
+_DOLLARFR_
 
 ### DURATION
 
@@ -82,7 +82,7 @@ DURATION(SettlementDate,MaturityDate,rate,profit,frequency,basis) where:
 
 ![](Calculate-functions_images/Calculate-functions_img3.png)
 
-
+_DURATION_
 
 ### RRI
 
@@ -100,7 +100,7 @@ RRI(np,pv,fv) where,
 
 ![](Calculate-functions_images/Calculate-functions_img4.png)
 
-
+_RRI_
 
 ### FVSCHEDULE
 
@@ -115,13 +115,13 @@ FVSCHEDULE(arg1,arg2) where:
 
 #### Remarks:
 
-#VALUE! – occurs any other than numbers or blank cells.
+&#35;VALUE! – occurs any other than numbers or blank cells.
 
 Example:
 
 ![](Calculate-functions_images/Calculate-functions_img5.png)
 
-
+_FVSCHEDULE_
 
 ### DISC
 
@@ -142,7 +142,7 @@ DISC(SettlementDate,MaturityDate,rate,value) where:
 
 ![](Calculate-functions_images/Calculate-functions_img6.png)
 
-
+_DISC_
 
 ### INTRATE
 
@@ -160,15 +160,15 @@ INTRATE(SettlementDate,MaturityDate, investment, amount, basis ) where:
 
 #### Remarks:
 
-#NUM! - occurs if settlementdate is greater than or equal to maturitydate, investment and amount is less than or equal to zero.
+&#35;NUM! - occurs if settlementdate is greater than or equal to maturitydate, investment and amount is less than or equal to zero.
 
-#VALUE! - occurs if settlementdate and maturitydate less than or equal to zero.
+&#35;VALUE! - occurs if settlementdate and maturitydate less than or equal to zero.
 
 Example:
 
 ![](Calculate-functions_images/Calculate-functions_img7.png)
 
-
+_INTRATE_
 
 ### CUMIPMT
 
@@ -189,13 +189,13 @@ CUMIPMT(rate, np,pv,startPeriod, endPeriod, pp) where,
 
 #### Remarks:
 
-#NUM! - occurs if rate,np or pv is less than or equals zero, if startPeriod or endPeriod is less than one, if startPeriod is greater than endPeriod and pp is any number other than 0 or 1.
+&#35;NUM! - occurs if rate,np or pv is less than or equals zero, if startPeriod or endPeriod is less than one, if startPeriod is greater than endPeriod and pp is any number other than 0 or 1.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img8.png)
 
-
+_CUMIPMT_
 
 ### CUMPRINC
 
@@ -216,13 +216,13 @@ CUMPRINC(rate, np, pv, startPeriod, endPeriod, pp) where:
 
 #### Remarks:
 
-#NUM! - occurs if rate, np or pv is less than or equals zero, if startPeriod or endPeriod is less than one, if startPeriod is greater than endPeriod and pp is any number other than 0 or 1.
+&#35;NUM! - occurs if rate, np or pv is less than or equals zero, if startPeriod or endPeriod is less than one, if startPeriod is greater than endPeriod and pp is any number other than 0 or 1.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img9.png)
 
-
+_CUMPRINC_
 
 ### ACCRINT
 
@@ -244,15 +244,15 @@ ACCRINT(IssueDate,FirstIntrestDate,settlementDate,rate,parvalue,frequency,basis)
 
 #### Remarks:
 
-#VALUE - returns only if FirstInterest or settlementDate is invalid. 
+&#35;VALUE - returns only if FirstInterest or settlementDate is invalid. 
 
-#NUM! -  returns if rate ≤ 0, if par ≤ 0, if frequency is any number other than 1, 2, or 4, if basis < 0 or if basis > 4 and if issue ≥ settlement.
+&#35;NUM! -  returns if rate ≤ 0, if par ≤ 0, if frequency is any number other than 1, 2, or 4, if basis < 0 or if basis > 4 and if issue ≥ settlement.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img10.png)
 
-
+_ACCRINT_
 
 ### RECEIVED
 
@@ -272,12 +272,13 @@ RECEIVED(Settlementdate,MaturityDate,investment,discount,basis) where:
 
 #### Remarks:
 
-#NUM! - occurs if settlement ≥ maturity and if investment and discount is ≤ 0.
+&#35;NUM! - occurs if settlement ≥ maturity and if investment and discount is ≤ 0.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img11.png)
 
+_RECEIVED_
 
 
 ## Database Functions
@@ -302,7 +303,7 @@ DCOUNT(collection,column,condition) where:
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img12.png)
 
-
+_DCOUNT_
 
 ### DCOUNTA
 
@@ -322,7 +323,7 @@ DCOUNTA(collection,column,condition) where:
 
 ![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img13.png)
 
-
+_DCOUNTA_
 
 ### DAVERAGE
 
@@ -342,7 +343,7 @@ DAVERAGE(collection,column,condition) where:
 
 ![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img14.png)
 
-
+_DAVERAGE_
 
 ### DGET
 
@@ -382,7 +383,7 @@ DMAX(collection,column,condition) where:
 
 ![](Calculate-functions_images/Calculate-functions_img16.png)
 
-
+_DMAX_
 
 ### DMIN
 
@@ -402,7 +403,7 @@ DMIN(collection,column,condition) where:
 
 ![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img17.png)
 
-
+_DMIN_
 
 ### DSTDEV
 
@@ -420,7 +421,7 @@ DSTDEV(collection,column,condition) where:
 
 ![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img18.png)
 
-
+_DSTDEV_
 
 ### DSTDEVP
 
@@ -440,7 +441,7 @@ DSTDEVP(collection,column,condition) where:
 
 ![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img19.png)
 
-
+_DSTDEVP_
 
 ### DVAR
 
@@ -460,7 +461,7 @@ VAR(collection, column, condition) where:
 
 ![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img20.png)
 
-
+_DVAR_
 
 ### DVARP
 
@@ -480,7 +481,7 @@ DVARP(collection, column, condition) where:
 
 ![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img21.png)
 
-
+_DVARP_
 
 ### DSUM
 
@@ -500,7 +501,7 @@ DSUM(collection, column, condition) where:
 
 ![](Calculate-functions_images/Calculate-functions_img22.png)
 
-
+_DSUM_
 
 ## Math and Trigonometry
 
@@ -516,15 +517,15 @@ SEC(number) where:
 
 #### Remarks:
 
-#NUM! - occurs if the number is outside of its constraints.
+&#35;NUM! - occurs if the number is outside of its constraints.
 
-#VALUE! - occurs if number is a non-numeric value.
+&#35;VALUE! - occurs if number is a non-numeric value.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img23.png)
 
-
+_SEC_
 
 ### SECH
 
@@ -538,15 +539,15 @@ SECH(number) where:
 
 #### REMARKS:
 
-#NUM! - occurs if the number is outside of its constraints.
+&#35;NUM! - occurs if the number is outside of its constraints.
 
-#VALUE! - occurs if the number is a non-numeric value.
+&#35;VALUE! - occurs if the number is a non-numeric value.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img24.png)
 
-
+_SECH_
 
 ### COT
 
@@ -558,15 +559,15 @@ COT(number) where:
 
 * number - angle radians to get the cotangent value.
 
- #NUM! - occurs if the number is out of range.
+ &#35;NUM! - occurs if the number is out of range.
 
-#VALUE! - occurs if the number is a non-numeric value.
+&#35;VALUE! - occurs if the number is a non-numeric value.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img25.png)
 
-
+_COT_
 
 ### COTH
 
@@ -580,9 +581,9 @@ COTH(number) where:
 
 #### Remarks:
 
-#NUM! - occurs if the number is outside of its constraints.
+&#35;NUM! - occurs if the number is outside of its constraints.
 
-#VALUE! - occurs if the number is a non-numeric value.
+&#35;VALUE! - occurs if the number is a non-numeric value.
 
 #### Example:
 
@@ -590,7 +591,7 @@ COTH(number) where:
 
 ![](Calculate-functions_images/Calculate-functions_img26.png)
 
-
+_COTH_
 
 ### CSC
 
@@ -604,15 +605,15 @@ CSC(number) where:
 
 #### Remarks:
 
-#NUM! - occurs if the number is outside of its constraints.
+&#35;NUM! - occurs if the number is outside of its constraints.
 
-#VALUE! - occurs if the number is a non-numeric value.
+&#35;VALUE! - occurs if the number is a non-numeric value.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img27.png)
 
-
+_CSC_
 
 ### CSCH
 
@@ -626,15 +627,15 @@ CSCH(number) where:
 
 #### Remarks:
 
-#NUM! - occurs if the number is outside of its constraints.
+&#35;NUM! - occurs if the number is outside of its constraints.
 
-#VALUE! - occurs if the number is a non-numeric value.
+&#35;VALUE! - occurs if the number is a non-numeric value.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img28.png)
 
-
+_CSCH_
 
 ### ACOT
 
@@ -650,7 +651,7 @@ ACOT(number) or DEGREES ACOT(number) where:
 
 #### Remarks:
 
-#VALUE! - occurs if the number is a non-numeric value.
+&#35;VALUE! - occurs if the number is a non-numeric value.
 
 The returned angle is given in radians in the range of 0 (zero) to pi.
 
@@ -658,7 +659,7 @@ The returned angle is given in radians in the range of 0 (zero) to pi.
 
 ![](Calculate-functions_images/Calculate-functions_img29.png)
 
-
+_ACOT_
 
 ### ACOTH
 
@@ -672,15 +673,15 @@ ACOTH(number) where:
 
 #### Remarks:
 
-#NUM! - occurs if number is less than one.
+&#35;NUM! - occurs if number is less than one.
 
-#VALUE! - occurs if absolute value of number is less than one.
+&#35;VALUE! - occurs if absolute value of number is less than one.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img30.png)
 
-
+_ACOTH_
 
 ### ACSCH
 
@@ -699,7 +700,7 @@ x = ACSCH(y) where:
 
 ![](Calculate-functions_images/Calculate-functions_img31.png)
 
-
+_ACSCH_
 
 ### BIGMUL
 
@@ -718,7 +719,7 @@ Math.BIGMUL(x,y); where:
 
 ![](Calculate-functions_images/Calculate-functions_img32.png)
 
-
+_BIGMUL_
 
 ### DIVREM
 
@@ -734,7 +735,7 @@ Math.DIVREM(num1,num2) where:
 
 ![](Calculate-functions_images/Calculate-functions_img33.png)
 
-
+_DIVREM_
 
 ### IEEERemainder
 
@@ -753,7 +754,7 @@ IEEERemainder(d1, d2) where:
 
 ![](Calculate-functions_images/Calculate-functions_img34.png)
 
-
+_IEEERemainder_
 
 ### TRUNC
 
@@ -772,7 +773,7 @@ TRUNC( number, [num_digits] ) where:
 
 ![](Calculate-functions_images/Calculate-functions_img35.png)
 
-
+_TRUNC_
 
 ### COMBINA
 
@@ -789,15 +790,15 @@ COMBINA(number1, number2) where:
 
 #### Remarks:
 
-#NUM! - occurs if either value is out of range.
+&#35;NUM! - occurs if either value is out of range.
 
-#VALUE! - occurs if either value is non-numeric.
+&#35;VALUE! - occurs if either value is non-numeric.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img36.png)
 
-
+_COMBINA_
 
 ### ARABIC
 
@@ -811,9 +812,9 @@ ARABIC( romannumeral ) where
 
 #### Remarks:
 
-#VALUE! - occurs if text is not a valid value.
+&#35;VALUE! - occurs if text is not a valid value.
 
-#VALUE! - occurs if text is not a valid Roman numeral.
+&#35;VALUE! - occurs if text is not a valid Roman numeral.
 
 Value zero occurs if an empty string is given as an input.
 
@@ -821,7 +822,7 @@ Value zero occurs if an empty string is given as an input.
 
 ![](Calculate-functions_images/Calculate-functions_img37.png)
 
-
+_ARABIC_
 
 ### BASE
 
@@ -839,15 +840,15 @@ BASE(number,radix [Minlength]) where:
 
 #### Remarks:
 
-#NUM! - occurs if Number, Radix, or Minlength are outside the minimum or maximum constraints.
+&#35;NUM! - occurs if Number, Radix, or Minlength are outside the minimum or maximum constraints.
 
-#VALUE! - occurs if Number is a non-numeric value.
+&#35;VALUE! - occurs if Number is a non-numeric value.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img38.png)
 
-
+_BASE_
 
 ### CEILING.MATH
 
@@ -865,7 +866,7 @@ CEILING(number, [significance],  [mode]) where:
 
 ![](Calculate-functions_images/Calculate-functions_img39.png)
 
-
+_CEILING.MATH_
 
 ### DECIMAL
 
@@ -882,13 +883,13 @@ DECIMAL(text, radix) where:
 
 #### Remarks:
 
-#NUM! or #VALUE! - occurs if text or radix is outside the constraints.
+&#35;NUM! or &#35;VALUE! - occurs if text or radix is outside the constraints.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img40.png)
 
-
+_DECIMAL_
 
 ### MDETERM
 
@@ -902,13 +903,13 @@ MDETERM(array) where:
 
 #### Remarks:
 
-#VALUE! - occurs if any cell in the array is empty or has text in it and if the array does not have an equal number of rows and columns.
+&#35;VALUE! - occurs if any cell in the array is empty or has text in it and if the array does not have an equal number of rows and columns.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img41.png)
 
-
+_MDETERM_
 
 ### MINVERSE
 
@@ -922,13 +923,13 @@ MINVERSE(array) where:
 
 #### Remarks:
 
-#VALUE! - occurs when any cell in the array is empty or has text in it and if the array does not have an equal number of rows and columns.
+&#35;VALUE! - occurs when any cell in the array is empty or has text in it and if the array does not have an equal number of rows and columns.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img42.png)
 
-
+_MINVERSE_
 
 ### MMULT
 
@@ -942,13 +943,13 @@ MMULT(M1,M2) where:
 
 #### Remarks:
 
-#VALUE! - occurs if any cell in the array is empty or contains text in it and if the array does not have an equal number of rows and columns.
+&#35;VALUE! - occurs if any cell in the array is empty or contains text in it and if the array does not have an equal number of rows and columns.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img43.png)
 
-
+_MMULT_
 
 ### MUNIT
 
@@ -962,13 +963,13 @@ MUNIT(dimension) where:
 
 #### Remarks:
 
-#VALUE! - occurs if the dimension is a value that is equal to or smaller than zero.
+&#35;VALUE! - occurs if the dimension is a value that is equal to or smaller than zero.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img44.png)
 
-
+_MUNIT_
 
 ## Statistical functions
 
@@ -988,16 +989,17 @@ CONFIDENCE.T(alpha,stdev,size) where:
 
 #### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if alpha  and stdev is less than or equal to zero or if alpha is greater than or equal to zero.
+&#35;NUM! - occurs if alpha  and stdev is less than or equal to zero or if alpha is greater than or equal to zero.
 
-#DIV/0! - occurs if the size is equal to one.
+&#35;DIV/0! - occurs if the size is equal to one.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img45.png)
 
+_CONFIDENCE.T_
 
 ### SKEW.P
 
@@ -1011,17 +1013,17 @@ SKEW.P(number 1, [number 2],…) where:
 
 #### Remarks:
 
-#NUM! - occurs if arguments do not have a valid value.
+&#35;NUM! - occurs if arguments do not have a valid value.
 
-#VALUE! - occurs if arguments do not have valid data types.
+&#35;VALUE! - occurs if arguments do not have valid data types.
 
-#DIV/0! - occurs if there are fewer than three data points, or the sample standard deviation is zero.
+&#35;DIV/0! - occurs if there are fewer than three data points, or the sample standard deviation is zero.
 
-3### Example:
+#### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img46.png)
 
-
+_SKEW.P_
 
 ### COVARIANCE.P
 
@@ -1040,7 +1042,7 @@ COVARIANCE.P(array1,array2) where:
 
 ![](Calculate-functions_images/Calculate-functions_img47.png)
 
-
+_COVARIANCE.P_
 
 ###  COVARIANCE.S
 
@@ -1057,15 +1059,15 @@ COVARIANCE.S(array1,array2) where:
 
 #### Remarks:
 
-#N/A - occurs when values are different number of data points.
+&#35;N/A - occurs when values are different number of data points.
 
-#DIV/0! - occurs if either array1 or array2 is empty or contain only one data point each.
+&#35;DIV/0! - occurs if either array1 or array2 is empty or contain only one data point each.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img48.png)
 
-
+_COVARIANCE.S_
 
 ### PERCENTILE.EXC
 
@@ -1082,15 +1084,15 @@ PERCENTILE.EXC(array, k) where:
 
 ####  Remarks:
 
-#NUM! - occurs if k is equal to or less than zero, if k is equal to or greater than 1and if the array is empty.
+&#35;NUM! - occurs if k is equal to or less than zero, if k is equal to or greater than 1and if the array is empty.
 
-#VALUE! - occurs if k is non-numeric.
+&#35;VALUE! - occurs if k is non-numeric.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img49.png)
 
-
+_PERCENTILE.EXC_
 
 ### PERCENTILE.INC
 
@@ -1107,14 +1109,15 @@ PERCENTILE.INC(array,k) where:
 
 #### Remarks:
 
-#NUM! - occurs if k is equal to or less than zero, if k is equal to or greater than 1and if the array is empty.
+&#35;NUM! - occurs if k is equal to or less than zero, if k is equal to or greater than 1and if the array is empty.
 
-#VALUE! - occurs if k is non-numeric.
+&#35;VALUE! - occurs if k is non-numeric.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img50.png)
 
+_PERCENTILE.INC_
 
 ### PERCENTRANK.EXC
 
@@ -1131,15 +1134,15 @@ PERCENTRANK.EXC(array, x ) where:
 
 #### Remarks:
 
-#NUM! - occurs if this argument is empty.
+&#35;NUM! - occurs if this argument is empty.
 
-#NUM! - occurs if the argument is less than one.
+&#35;NUM! - occurs if the argument is less than one.
 
 Example:
 
 ![](Calculate-functions_images/Calculate-functions_img51.png)
 
-
+_PERCENTRANK.EXC_
 
 ### STDEV.P
 
@@ -1166,7 +1169,7 @@ STDEV.P(number1,[number2],...]) where:
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img52.png)
 
-
+_STDEV.P_
 
 ### STDEV.S
 
@@ -1191,7 +1194,7 @@ STDEV.S(number1,[number2],...]) where:
 
 ![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img53.png)
 
-
+_STDEV.S_
 
 ### PERMUTATIONA
 
@@ -1208,15 +1211,15 @@ PERMUTATIONA(number, number-chosen) where:
 
 #### Remarks:
 
-#VALUE! - occurs if numeric arguments use data types that are non-numeric.
+&#35;VALUE! - occurs if numeric arguments use data types that are non-numeric.
 
-#NUM! - occurs if numeric arguments are values that are not valid.
+&#35;NUM! - occurs if numeric arguments are values that are not valid.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img54.png)
 
-
+_PERMUTATIONA_
 
 ### NORMDIST
 
@@ -1235,14 +1238,15 @@ NORM.DIST(x,mean,stdev,cumulative) where:
 
 #### Remarks:
 
-#VALUE! - occurs if mean or stdev is non-numeric.
+&#35;VALUE! - occurs if mean or stdev is non-numeric.
 
-#NUM! - occurs if stdev is equal to or less than zero.
+&#35;NUM! - occurs if stdev is equal to or less than zero.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img55.png)
 
+_NORMDIST_
 
 ### NORMINV
 
@@ -1260,15 +1264,15 @@ NORMINV(probability, mean, stdev), where:
 
 #### Remarks:
 
-#NUM! - if probability or stdev is equal to or less than zero, equal to or greater than 1.
+&#35;NUM! - if probability or stdev is equal to or less than zero, equal to or greater than 1.
 
-#VALUE! - if probability or mean or stdev is non-numeric.
+&#35;VALUE! - if probability or mean or stdev is non-numeric.
 
 Example:
 
 ![](Calculate-functions_images/Calculate-functions_img56.png)
 
-
+_NORMINV_
 
 ### NORM.S.DIST
 
@@ -1287,7 +1291,7 @@ NORM.S.DIST(val, cumulative) where:
 
 ![](Calculate-functions_images/Calculate-functions_img57.png)
 
-
+_NORM.S.DIST_
 
 ### NORM.S.INV
 
@@ -1303,7 +1307,7 @@ NORM.S.INV(probability) where:
 
 ![](Calculate-functions_images/Calculate-functions_img58.png)
 
-
+_NORM.S.INV_
 
 ### WEIBULL.DIST
 
@@ -1322,15 +1326,15 @@ WEIBULL.DIST(x,alpha,beta,cumulative) where:
 
 #### Remarks:
 
-#NUM! - occurs when x is less than zero and if alpha or beta is equal to or less than zero.
+&#35;NUM! - occurs when x is less than zero and if alpha or beta is equal to or less than zero.
 
-#VALUE! - occurs if beta is non-numeric.
+&#35;VALUE! - occurs if beta is non-numeric.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img59.png)
 
-
+_WEIBULL.DIST_
 
 ### EXPON.DIST
 
@@ -1348,15 +1352,15 @@ EXPON.DIST(x,y,cumulative) where:
 
 #### Remarks:
 
-#NUM! - occurs if x is less than zero and if y is equal to or less than zero. 
+&#35;NUM! - occurs if x is less than zero and if y is equal to or less than zero. 
 
-#VALUE! - occurs if x or y is non-numeric.
+&#35;VALUE! - occurs if x or y is non-numeric.
 
 Example:
 
 ![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img60.png)
 
-
+_EXPON.DIST_
 
 ### GAMMA.DIST
 
@@ -1375,15 +1379,15 @@ GAMMA.DIST(x,y,z,cumulative) where:
 
 #### Remarks:
 
-#NUM! - occurs if x is less than zero, if z  is equal to or less than zero and occurs if alpha is equal to or less than zero. 
+&#35;NUM! - occurs if x is less than zero, if z  is equal to or less than zero and occurs if alpha is equal to or less than zero. 
 
-#VALUE! - occurs if x or y or z is non-numeric.
+&#35;VALUE! - occurs if x or y or z is non-numeric.
 
 Example:
 
 ![](Calculate-functions_images/Calculate-functions_img61.png)
 
-
+_GAMMA.DIST_
 
 ### GAMMA.INV
 
@@ -1402,15 +1406,15 @@ GAMMA.INV(x,y,z,cumulative) where
 
 #### Remarks:
 
-#NUM! - occurs if x is less than zero, if z  is equal to or less than zero and occurs if alpha is equal to or less than zero. 
+&#35;NUM! - occurs if x is less than zero, if z  is equal to or less than zero and occurs if alpha is equal to or less than zero. 
 
-#VALUE! - occurs if x or y or z is non-numeric
+&#35;VALUE! - occurs if x or y or z is non-numeric
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img62.png)
 
-
+_GAMMA.INV_
 
 ### GAMMALN.PRECISE
 
@@ -1424,15 +1428,15 @@ GAMMALN.PRECISE( x ) where:
 
 #### Remarks:
 
-#NUM! - occurs if x is less than zero.
+&#35;NUM! - occurs if x is less than zero.
 
-#VALUE! - occurs if x is non-numeric.
+&#35;VALUE! - occurs if x is non-numeric.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img63.png)
 
-
+_GAMMALN.PRECISE_
 
 ### F.INV
 
@@ -1450,14 +1454,15 @@ F.INV(probability,degFreedom1,degFreedom2) where:
 
 #### Remarks:
 
-#NUM! - occurs if probability is equal to or less than zero and if probability is equal to or greater than one.
+&#35;NUM! - occurs if probability is equal to or less than zero and if probability is equal to or greater than one.
 
-#VALUE! - occurs if probability or degFreedom1 or degFreedom2 is non-numeric.
+&#35;VALUE! - occurs if probability or degFreedom1 or degFreedom2 is non-numeric.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/20.png](Calculate-functions_images/Calculate-functions_img64.png)
 
+_F.INV_
 
 ### F.INV.RT
 
@@ -1475,15 +1480,15 @@ F.INV.RT(probability,degFreedom1,degFreedom2) where:
 
 #### Remarks:
 
-#NUM! - occurs if probability is equal to or less than zero and if probability is equal to or greater than one.
+&#35;NUM! - occurs if probability is equal to or less than zero and if probability is equal to or greater than one.
 
-#VALUE! - occurs if probability or degFreedom1 or degFreedom2 is non-numeric.
+&#35;VALUE! - occurs if probability or degFreedom1 or degFreedom2 is non-numeric.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/4.png](Calculate-functions_images/Calculate-functions_img65.png)
 
-
+_F.INV.RT_
 
 ### BINOM.INV
 
@@ -1501,15 +1506,15 @@ BINOM.INV(trial number,sp,value) where:
 
 #### Remarks:
 
-#NUM! - occurs if trial number is less than zero, if sp and value is less than zero or greater one.
+&#35;NUM! - occurs if trial number is less than zero, if sp and value is less than zero or greater one.
 
-#VALUE! - occurs if trials, sp and value are non-numeric.
+&#35;VALUE! - occurs if trials, sp and value are non-numeric.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/22.png](Calculate-functions_images/Calculate-functions_img66.png)
 
-
+_BINOM.INV_
 
 ### HYPGEOM.DIST
 
@@ -1529,23 +1534,23 @@ HYPGEOM.DIST(S_sample,size,S- population,ps,cumulative) where:
 
 #### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if S_sample < 0 or S_sample is greater than the lesser of size or S- population.
+&#35;NUM! - occurs if S_sample < 0 or S_sample is greater than the lesser of size or S- population.
 
-#NUM! - occurs if S_sample is less than 0.
+&#35;NUM! - occurs if S_sample is less than 0.
 
-#NUM! - occurs if size ≤ 0 or size > ps.
+&#35;NUM! - occurs if size ≤ 0 or size > ps.
 
-#NUM! - occurs if S- population ≤ 0 or S- population > ps.
+&#35;NUM! - occurs if S- population ≤ 0 or S- population > ps.
 
-#NUM! - occurs if ps ≤ 0.
+&#35;NUM! - occurs if ps ≤ 0.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/23.png](Calculate-functions_images/Calculate-functions_img67.png)
 
-
+_HYPGEOM.DIST_
 
 ### LOGNORM.DIST
 
@@ -1564,15 +1569,15 @@ LOGNORM.DIST(x,mean,stdev,cumulative) where:
 
 #### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if x ≤ 0 or if stdev ≤ 0.
+&#35;NUM! - occurs if x ≤ 0 or if stdev ≤ 0.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img68.png)
 
-
+_LOGNORM.DIST_
 
 ### LOGNORM.INV
 
@@ -1590,15 +1595,15 @@ LOGNORM.INV(probability, mean, stdev) where:
 
 #### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if probability <= 0 or probability >= 1 and if Stdev<=0.
+&#35;NUM! - occurs if probability <= 0 or probability >= 1 and if Stdev<=0.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/5.png](Calculate-functions_images/Calculate-functions_img69.png)
 
-
+_LOGNORM.INV_
 
 ### CONFIDENCE.NORM
 
@@ -1616,17 +1621,17 @@ CONFIDENCE.NORM(alpha,stdev,size) where:
 
 #### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if alpha and stdev is less than or equal to zero or if alpha is greater than or equal to zero.
+&#35;NUM! - occurs if alpha and stdev is less than or equal to zero or if alpha is greater than or equal to zero.
 
-#DIV/0! - occurs if the size is equal to one.
+&#35;DIV/0! - occurs if the size is equal to one.
 
 Example:
 
 ![](Calculate-functions_images/Calculate-functions_img70.png)
 
-
+_CONFIDENCE.NORM_
 
 ### CHISQ.DIST
 
@@ -1644,15 +1649,15 @@ CHISQ.DIST(x,degFreedom,cumulative) where:
 
 #### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if x is negative and if f degFreedom < 1 or degFreedom > 10^10.
+&#35;NUM! - occurs if x is negative and if f degFreedom < 1 or degFreedom > 10^10.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img71.png)
 
-
+_CHISQ.DIST_
 
 ### CHISQ.DIST.RT
 
@@ -1669,17 +1674,17 @@ CHISQ.DIST.RT(x,degFreedom) where:
 
 #### Remarks:
 
-#VALUE! - occurs if either argument is non-numeric.
+&#35;VALUE! - occurs if either argument is non-numeric.
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs occurs if f degFreedom < 1 or degFreedom > 10^10.
+&#35;NUM! - occurs occurs if f degFreedom < 1 or degFreedom > 10^10.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img72.png)
 
-
+_CHISQ.DIST.RT_
 
 ### F.DIST 
 
@@ -1698,15 +1703,15 @@ F.DIST(x,degFreedom1,degFreedom2,cumulative) where:
 
 #### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if x is negative, if degFreedom1< 1 and if degFreedom1< 1
+&#35;NUM! - occurs if x is negative, if degFreedom1< 1 and if degFreedom1< 1
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img73.png)
 
-
+_F.DIST _
 
 ### F.DIST.RT
 
@@ -1724,15 +1729,15 @@ F.DIST.RT(x, degFreedom1, degFreedom2) where:
 
 #### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
-#NUM! - occurs if x is negative, if degFreedom1< 1 and  if degFreedom2< 1
+&#35;NUM! - occurs if x is negative, if degFreedom1< 1 and  if degFreedom2< 1
 
 Example:
 
 ![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img74.png)
 
-
+_F.DIST.RT_
 
 ### MODE.MULT
 
@@ -1746,13 +1751,13 @@ MODE.MULT(number1) where:
 
 #### Remarks:
 
-#N/A - occurs if the data set contains no duplicate data points.
+&#35;N/A - occurs if the data set contains no duplicate data points.
 
 Example:
 
 ![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img75.png)
 
-
+_MODE.MULT_
 
 ### CHISQ.TEST
 
@@ -1771,7 +1776,7 @@ CHISQ.TEST(O_range,E_range) where:
 
 ![C:/Users/ApoorvahR/Desktop/11.png](Calculate-functions_images/Calculate-functions_img76.png)
 
-
+_CHISQ.TEST_
 
 ### CHISQ.INV
 
@@ -1788,15 +1793,15 @@ CHISQ.INV(probability,degFreedom) where:
 
 #### Remarks:
 
-#NUM! - occurs if probability is is less than zero, if probability is greater than 1 and degFreedom is less than 1.
+&#35;NUM! - occurs if probability is is less than zero, if probability is greater than 1 and degFreedom is less than 1.
 
-#VALUE! - occurs if probability or degFreedom is non-numeric.
+&#35;VALUE! - occurs if probability or degFreedom is non-numeric.
 
 Example:
 
 ![C:/Users/ApoorvahR/Desktop/12.png](Calculate-functions_images/Calculate-functions_img77.png)
 
-
+_CHISQ.INV_
 
 ### CHISQ.INV.RT
 
@@ -1813,15 +1818,15 @@ CHISQ.INV.RT(probability, degFreedom) where:
 
 #### Remarks:
 
-#NUM! - occurs if probability is is less than zero, if probability is greater than 1 and if degFreedom is less than 1.
+&#35;NUM! - occurs if probability is is less than zero, if probability is greater than 1 and if degFreedom is less than 1.
 
-#VALUE! - occurs if probability or degFreedom is non-numeric. 
+&#35;VALUE! - occurs if probability or degFreedom is non-numeric. 
 
 Example:
 
 ![](Calculate-functions_images/Calculate-functions_img78.png)
 
-
+_CHISQ.INV.RT_
 
 ### BINOM.DIST
 
@@ -1840,15 +1845,15 @@ BINOM.DIST (trial number,sp,value, cumulative) where:
 
 #### Remarks:
 
-#NUM! - occurs if trial number is less than zero, if sp and value is less than zero or greater one.
+&#35;NUM! - occurs if trial number is less than zero, if sp and value is less than zero or greater one.
 
-#VALUE! - occurs if trials, sp and value are non-numeric.
+&#35;VALUE! - occurs if trials, sp and value are non-numeric.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img79.png)
 
-
+_BINOM.DIST_
 
 ### RANK.AVG
 
@@ -1865,9 +1870,9 @@ RANK.AVG(number,ref) where:
 
 #### Example:
 
-'![C:/Users/ApoorvahR/Desktop/14.png](Calculate-functions_images/Calculate-functions_img80.png)
+![C:/Users/ApoorvahR/Desktop/14.png](Calculate-functions_images/Calculate-functions_img80.png)
 
-
+_RANK.AVG_
 
 ### QUARTILE.EXC
 
@@ -1882,13 +1887,13 @@ QUARTILE.EXC(array, quart) where:
 
 #### Remarks:
 
-#NUM! - occurs if the array is empty or if quart ≤ 0 or if quart ≥ 4.
+&#35;NUM! - occurs if the array is empty or if quart ≤ 0 or if quart ≥ 4.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/15.png](Calculate-functions_images/Calculate-functions_img81.png)
 
-
+_QUARTILE.EXC_
 
 ### QUARTILE.INC
 
@@ -1903,13 +1908,13 @@ QUARTILE.INC(array,quart) where:
 
 #### Remarks:
 
-#NUM! - occurs if the array is empty or if quart ≤ 0 or if quart ≥ 4.
+&#35;NUM! - occurs if the array is empty or if quart ≤ 0 or if quart ≥ 4.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/16.png](Calculate-functions_images/Calculate-functions_img82.png)
 
-
+_QUARTILE.INC_
 
 ### NEGBINOM.DIST
 
@@ -1930,7 +1935,7 @@ NEGBINOM.DIST(F_number,S_number,S_probability,cumulative) where:
 
 ![C:/Users/ApoorvahR/Desktop/39.png](Calculate-functions_images/Calculate-functions_img83.png)
 
-
+_NEGBINOM.DIST_
 
 ### POISSON.DIST
 
@@ -1946,15 +1951,15 @@ POISSON.DIST(x,mean,cumulative) where
 
 #### Remarks:
 
-#VALUE! - occurs if x is not an integer.
+&#35;VALUE! - occurs if x is not an integer.
 
-#NUM! - occurs if x or mean is non-numeric and s if x < 0.
+&#35;NUM! - occurs if x or mean is non-numeric and s if x < 0.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/17.png](Calculate-functions_images/Calculate-functions_img84.png)
 
-
+_POISSON.DIST_
 
 ### ZTEST
 
@@ -1974,7 +1979,7 @@ ZTEST(a1,T_value,sigma) where:
 
 ![C:/Users/ApoorvahR/Desktop/18.png](Calculate-functions_images/Calculate-functions_img85.png)
 
-
+_ZTEST_
 
 ### RANK.EQ
 
@@ -1993,7 +1998,7 @@ RANK.EQ( number, ref ) where:
 
 ![C:/Users/ApoorvahR/Desktop/42.png](Calculate-functions_images/Calculate-functions_img86.png)
 
-
+_RANK.EQ_
 
 ### CHIDIST
 
@@ -2010,13 +2015,13 @@ CHIDIST(x, degFreedom) where:
 
 #### Remarks:
 
-#NUM! - occurs when the  x is negative or degFreedom argument is invalid.
+&#35;NUM! - occurs when the  x is negative or degFreedom argument is invalid.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/19.png](Calculate-functions_images/Calculate-functions_img87.png)
 
-
+_CHIDIST_
 
 ## Engineering Functions
 
@@ -2035,15 +2040,15 @@ DEC2BIN(num,places) where:
 
 #### Remarks:
 
-#NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
+&#35;NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
 
-#VALUE! - occurs when number or places is non-numeric, if DEC2BIN requires more than the number of characters specified in places.
+&#35;VALUE! - occurs when number or places is non-numeric, if DEC2BIN requires more than the number of characters specified in places.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/20.png](Calculate-functions_images/Calculate-functions_img88.png)
 
-
+_DEC2BIN_
 
 ### DEC2OCT
 
@@ -2060,15 +2065,15 @@ DEC2OCT(num, places) where:
 
 #### Remarks:
 
-#NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
+&#35;NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
 
-#VALUE! - occurs if number or places is non-numeric, if DEC2OCT requires more than the number of characters specified in places.
+&#35;VALUE! - occurs if number or places is non-numeric, if DEC2OCT requires more than the number of characters specified in places.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/21.png](Calculate-functions_images/Calculate-functions_img89.png)
 
-
+_DEC2OCT_
 
 ### DEC2HEX
 
@@ -2083,15 +2088,15 @@ DEC2HEX(num, places ) where:
 
 #### Remarks:
 
-#NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
+&#35;NUM! - occurs if number < -512 or if number > 511 and if places is zero or negative.
 
-#VALUE! - occurs if number or places is non-numeric, if DEC2HEX requires more than the number of characters specified in places.
+&#35;VALUE! - occurs if number or places is non-numeric, if DEC2HEX requires more than the number of characters specified in places.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/22.png](Calculate-functions_images/Calculate-functions_img90.png)
 
-
+_DEC2HEX_
 
 ### BIN2DEC
 
@@ -2105,13 +2110,13 @@ BIN2DEC(num) where:
 
 #### Remarks:
 
-#NUM! - occurs if number is not a valid binary number, or if number contains more than 10 characters.
+&#35;NUM! - occurs if number is not a valid binary number, or if number contains more than 10 characters.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/23.png](Calculate-functions_images/Calculate-functions_img91.png)
 
-
+_BIN2DEC_
 
 ### BIN2OCT
 
@@ -2130,7 +2135,7 @@ BIN2OCT(num, places) where:
 
 ![C:/Users/ApoorvahR/Desktop/24.png](Calculate-functions_images/Calculate-functions_img92.png)
 
-
+_BIN2OCT_
 
 ### BIN2HEX
 
@@ -2147,15 +2152,15 @@ BIN2HEX(num places) where:
 
 #### Remarks:
 
-#NUM! - occurs if number is not a valid binary number, if if places is negative.
+&#35;NUM! - occurs if number is not a valid binary number, if if places is negative.
 
-#VALUE! - occurs if places is non-numeric.
+&#35;VALUE! - occurs if places is non-numeric.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/25.png](Calculate-functions_images/Calculate-functions_img93.png)
 
-
+_BIN2HEX_
 
 ### HEX2BIN
 
@@ -2172,15 +2177,15 @@ HEX2BIN(num, places ) where:
 
 #### Remarks:
 
-#NUM! - occurs if number is not a valid binary number, if if places is negative.
+&#35;NUM! - occurs if number is not a valid binary number, if if places is negative.
 
-#VALUE! - occurs if places is non-numeric.
+&#35;VALUE! - occurs if places is non-numeric.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/5.7.png](Calculate-functions_images/Calculate-functions_img94.png)
 
-
+_HEX2BIN_
 
 ### HEX2OCT
 
@@ -2197,15 +2202,15 @@ HEX2OCT(num, places) where:
 
 #### Remarks:
 
-#NUM! - occurs if number is not a valid hexadecimal number and if if places is negative.
+&#35;NUM! - occurs if number is not a valid hexadecimal number and if if places is negative.
 
-#VALUE! - occurs if places is non-numeric.
+&#35;VALUE! - occurs if places is non-numeric.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/26.png](Calculate-functions_images/Calculate-functions_img95.png)
 
-
+_HEX2OCT_
 
 ### HEX2DEC
 
@@ -2219,13 +2224,13 @@ HEX2DEC(num) where:
 
 #### Remarks:
 
-#NUM! - occurs if number is not a valid hexadecimal number.
+&#35;NUM! - occurs if number is not a valid hexadecimal number.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/27.png](Calculate-functions_images/Calculate-functions_img96.png)
 
-
+_HEX2DEC_
 
 ### OCT2BIN
 
@@ -2242,15 +2247,15 @@ OCT2BIN(nuM, places ) where:
 
 #### Remarks:
 
-#NUM! - occurs if number is not a valid octal number and if if places is negative.
+&#35;NUM! - occurs if number is not a valid octal number and if if places is negative.
 
-#VALUE! - occurs if places is non-numeric.
+&#35;VALUE! - occurs if places is non-numeric.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/28.png](Calculate-functions_images/Calculate-functions_img97.png)
 
-
+_OCT2BIN_
 
 ### OCT2HEX
 
@@ -2267,15 +2272,15 @@ OCT2HEX(num, places) where:
 
 #### Remarks:
 
-#NUM! - occurs if number is not a valid octal number and if if places is negative.
+&#35;NUM! - occurs if number is not a valid octal number and if if places is negative.
 
-#VALUE! - occurs if places is non-numeric.
+&#35;VALUE! - occurs if places is non-numeric.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/29.png](Calculate-functions_images/Calculate-functions_img98.png)
 
-
+_OCT2HEX_
 
 ### OCT2DEC
 
@@ -2289,13 +2294,13 @@ OCT2DEC(number) where:
 
 #### Remarks:
 
-#NUM! - occurs if number is not a valid octal number.
+&#35;NUM! - occurs if number is not a valid octal number.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/30.png](Calculate-functions_images/Calculate-functions_img99.png)
 
-
+_OCT2DEC_
 
 ### IMABS
 
@@ -2309,13 +2314,13 @@ IMABS(inum) where:
 
 #### Remarks:
 
-#NUM! - occurs if inumber is not in the form a + bi  or a + bj.
+&#35;NUM! - occurs if inumber is not in the form a + bi  or a + bj.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/31.png](Calculate-functions_images/Calculate-functions_img100.png)
 
-
+_IMABS_
 
 ### IMAGINARY
 
@@ -2329,13 +2334,13 @@ IMAGINARY(inum) where:
 
 Remarks:
 
-#NUM! - occurs if inumber is not in the form a + bi  or a + bj.
+&#35;NUM! - occurs if inumber is not in the form a + bi  or a + bj.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/32.png](Calculate-functions_images/Calculate-functions_img101.png)
 
-
+_IMAGINARY_
 
 ### IMREAL
 
@@ -2349,13 +2354,13 @@ IMREAL(inum) where:
 
 #### Remarks:
 
-#NUM! - occurs if inumber is not in the form a + bi  or a + bj.
+&#35;NUM! - occurs if inumber is not in the form a + bi  or a + bj.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/33.png](Calculate-functions_images/Calculate-functions_img102.png)
 
-
+_IMREAL_
 
 ### COMPLEX
 
@@ -2373,13 +2378,13 @@ COMPLEX(num,inum, suffix ) where:
 
 #### Remarks:
 
-#VALUE! - occurs if num or inum is non-numeric, if suffix is neither "i" nor "j".
+&#35;VALUE! - occurs if num or inum is non-numeric, if suffix is neither "i" nor "j".
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/34.png](Calculate-functions_images/Calculate-functions_img103.png)
 
-
+_COMPLEX_
 
 ### IMSUM
 
@@ -2395,7 +2400,7 @@ IMSUM(inum1,inum2,...) where:
 
 ![C:/Users/ApoorvahR/Desktop/35.png](Calculate-functions_images/Calculate-functions_img104.png)
 
-
+_IMSUM_
 
 ### IMSUB
 
@@ -2411,7 +2416,7 @@ IMSUB(inumber1,inumber2) where:
 
 ![C:/Users/ApoorvahR/Desktop/5.18.png](Calculate-functions_images/Calculate-functions_img105.png)
 
-
+_IMSUB_
 
 ### IMPRODUCT
 
@@ -2430,7 +2435,7 @@ IMPRODUCT(inum1, inum2,... ) where:
 
 ![](Calculate-functions_images/Calculate-functions_img106.png)
 
-
+_IMPRODUCT_
 
 ### IMDIV
 
@@ -2449,7 +2454,7 @@ IMDIV(inum1, inum2) where:
 
 ![C:/Users/ApoorvahR/Desktop/36.png](Calculate-functions_images/Calculate-functions_img107.png)
 
-
+_IMDIV_
 
 ### IMCONJUGATE
 
@@ -2465,7 +2470,7 @@ IMCONJUGATE(inum) where:
 
 ![C:/Users/ApoorvahR/Desktop/37.png](Calculate-functions_images/Calculate-functions_img108.png)
 
-
+_IMCONJUGATE_
 
 ### IMSQRT
 
@@ -2481,7 +2486,7 @@ IMSQRT(inum) where:
 
 ![C:/Users/ApoorvahR/Desktop/38.png](Calculate-functions_images/Calculate-functions_img109.png)
 
-
+_IMSQRT_
 
 ### IMARGUMENT
 
@@ -2497,7 +2502,7 @@ IMARGUMENT(inum) where:
 
 ![C:/Users/ApoorvahR/Desktop/39.png](Calculate-functions_images/Calculate-functions_img110.png)
 
-
+_IMARGUMENT_
 
 ### IMSIN
 
@@ -2513,7 +2518,7 @@ IMSIN(inum) where:
 
 ![](Calculate-functions_images/Calculate-functions_img111.png)
 
-
+_IMSIN_
 
 ### IMCSC
 
@@ -2529,15 +2534,15 @@ IMCSC(inum) where:
 
 #### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in the a+bi or a+bj text format.  
+&#35;NUM! - occurs if inumber is a value that is not in the a+bi or a+bj text format.  
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/40.png](Calculate-functions_images/Calculate-functions_img112.png)
 
-
+_IMCSC_
 
 ### IMCOS
 
@@ -2553,7 +2558,7 @@ IMCOS(inum) where:
 
 ![C:/Users/ApoorvahR/Desktop/41.png](Calculate-functions_images/Calculate-functions_img113.png)
 
-
+_IMCOS_
 
 ### IMSEC
 
@@ -2567,15 +2572,15 @@ IMSEC(inum) where:
 
 #### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in the a + bi  or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in the a + bi  or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/42.png](Calculate-functions_images/Calculate-functions_img114.png)
 
-
+_IMSEC_
 
 ### IMTAN
 
@@ -2589,15 +2594,15 @@ IMTAN(inum) where
 
 #### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/43.png](Calculate-functions_images/Calculate-functions_img115.png)
 
-
+_IMTAN_
 
 ### IMCOT
 
@@ -2611,15 +2616,15 @@ IMCOT(inum) where
 
 #### Remarks:
 
-#NUM! - occurs if inum is a value that is not in a + bi or a + bj text format.
+&#35;NUM! - occurs if inum is a value that is not in a + bi or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/44.png](Calculate-functions_images/Calculate-functions_img116.png)
 
-
+_IMCOT_
 
 ### IMSINH
 
@@ -2633,15 +2638,15 @@ IMSINH(inum) where:
 
 #### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/45.png](Calculate-functions_images/Calculate-functions_img117.png)
 
-
+_IMSINH_
 
 ### IMCSCH
 
@@ -2655,15 +2660,15 @@ IMCSCH(inum) where:
 
 #### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/46.png](Calculate-functions_images/Calculate-functions_img118.png)
 
-
+_IMCSCH_
 
 ### IMCOSH
 
@@ -2677,15 +2682,15 @@ IMCOSH(inum) where:
 
 #### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/47.png](Calculate-functions_images/Calculate-functions_img119.png)
 
-
+_IMCOSH_
 
 ### IMSECH
 
@@ -2699,15 +2704,15 @@ IMSECH(inum) where:
 
 #### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/48.png](Calculate-functions_images/Calculate-functions_img120.png)
 
-
+_IMSECH_
 
 ### IMTANH
 
@@ -2721,15 +2726,15 @@ IMTANH(inum) where:
 
 #### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in a + bi or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/49.png](Calculate-functions_images/Calculate-functions_img121.png)
 
-
+_IMTANH_
 
 ### IMCOTH
 
@@ -2743,15 +2748,15 @@ IMCOTH(inum) where:
 
 #### Remarks:
 
-#NUM! - occurs if inumber is a value that is not in the a + bi  or a + bj text format.
+&#35;NUM! - occurs if inumber is a value that is not in the a + bi  or a + bj text format.
 
-#VALUE! - occurs if inumber is a logical value.
+&#35;VALUE! - occurs if inumber is a logical value.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/50.png](Calculate-functions_images/Calculate-functions_img122.png)
 
-
+_IMCOTH_
 
 ### IMLOG10
 
@@ -2765,13 +2770,13 @@ IMLOG10(inum) where:
 
 #### Remarks: 
 
-#NUM! - occurs if inumber is not in the complex format
+&#35;NUM! - occurs if inumber is not in the complex format
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/51.png](Calculate-functions_images/Calculate-functions_img123.png)
 
-
+_IMLOG10_
 
 ### IMLOG2
 
@@ -2785,13 +2790,13 @@ IMLOG2(inum) where:
 
 #### Remarks:
 
-#NUM! - occurs if inumber is not in the complex format.
+&#35;NUM! - occurs if inumber is not in the complex format.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/5.37.png](Calculate-functions_images/Calculate-functions_img124.png)
 
-
+_IMLOG2_
 
 ### IMLN
 
@@ -2805,13 +2810,13 @@ IMLN(inum) where:
 
 #### Remarks:
 
-#NUM! - occurs if inumber is not in the complex format
+&#35;NUM! - occurs if inumber is not in the complex format
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/53.png](Calculate-functions_images/Calculate-functions_img125.png)
 
-
+_IMLN_
 
 ### IMEXP
 
@@ -2825,13 +2830,13 @@ IMEXP(inum) where:
 
 #### Remarks:
 
-#NUM! - occurs if inumber is not in the complex format
+&#35;NUM! - occurs if inumber is not in the complex format
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/54.png](Calculate-functions_images/Calculate-functions_img126.png)
 
-
+_IMEXP_
 
 ### IMPOWER
 
@@ -2848,15 +2853,15 @@ IMPOWER(inum,num) where:
 
 #### Remarks:
 
-#NUM! - occurs if inumber is not in the complex format
+&#35;NUM! - occurs if inumber is not in the complex format
 
-#VALUE! - occurs if number is non-numeric.
+&#35;VALUE! - occurs if number is non-numeric.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/55.png](Calculate-functions_images/Calculate-functions_img127.png)
 
-
+_IMPOWER_
 
 ### GESTEP
 
@@ -2873,13 +2878,13 @@ GESTEP(num, step ) where:
 
 #### Remarks:
 
-#VALUE! - occurs if any argument is non-numeric.
+&#35;VALUE! - occurs if any argument is non-numeric.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/56.png](Calculate-functions_images/Calculate-functions_img128.png)
 
-
+_GESTEP_
 
 ### DELTA
 
@@ -2898,7 +2903,7 @@ DELTA(num1,num2) where:
 
 ![C:/Users/ApoorvahR/Desktop/57.png](Calculate-functions_images/Calculate-functions_img129.png)
 
-
+_DELTA_
 
 ### BITAND
 
@@ -2912,15 +2917,15 @@ BITAND(num1,num2) where:
 
 #### Remarks:
 
-#NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+&#35;NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
 
-#VALUE! - occurs if num1 or num2 is a non-numeric value.
+&#35;VALUE! - occurs if num1 or num2 is a non-numeric value.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/58.png](Calculate-functions_images/Calculate-functions_img130.png)
 
-
+_BITAND_
 
 ### BITOR
 
@@ -2934,15 +2939,15 @@ BITOR(num1, num2) where:
 
 #### Remarks:
 
-#NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+&#35;NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
 
-#VALUE! - occurs if num1 or num2 is a non-numeric value.
+&#35;VALUE! - occurs if num1 or num2 is a non-numeric value.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img131.png)
 
-
+_BITOR_
 
 ### BITXOR
 
@@ -2956,15 +2961,15 @@ BITXOR(num1,num2b) where:
 
 #### Remarks:
 
-#NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+&#35;NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
 
-#VALUE! - occurs if num1 or num2 is a non-numeric value.
+&#35;VALUE! - occurs if num1 or num2 is a non-numeric value.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/60.png](Calculate-functions_images/Calculate-functions_img132.png)
 
-
+_BITXOR_
 
 ### BITLSHIFT
 
@@ -2981,15 +2986,15 @@ BITLSHIFT(num1,num2) where:
 
 #### Remarks:
 
-#NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+&#35;NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
 
-#VALUE! - occurs if num1 or num2 is a non-numeric value.
+&#35;VALUE! - occurs if num1 or num2 is a non-numeric value.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/61.png](Calculate-functions_images/Calculate-functions_img133.png)
 
-
+_BITLSHIFT_
 
 ### BITRSHIFT
 
@@ -3006,15 +3011,15 @@ BITRSHIFT(num1,num2) where:
 
 #### Remarks:
 
-#NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
+&#35;NUM! - occurs if num1 or num2 is less than zero, if num1 or num2 is a non-integer or is greater than (2^48)-1.
 
-#VALUE! - occurs if num1 or num2 is a non-numeric value.
+&#35;VALUE! - occurs if num1 or num2 is a non-numeric value.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/62.png](Calculate-functions_images/Calculate-functions_img134.png)
 
-
+_BITRSHIFT_
 
 ### ERF
 
@@ -3031,15 +3036,15 @@ ERF(lowerLimit, upperLimit ) where:
 
 #### Remarks:
 
-#VALUE! - occurs if lowerLimit or upperLimit  is non-numeric.
+&#35;VALUE! - occurs if lowerLimit or upperLimit  is non-numeric.
 
-#NUM! - occurs if lowerLimit  or upperLimit  is negative.
+&#35;NUM! - occurs if lowerLimit  or upperLimit  is negative.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/63.png](Calculate-functions_images/Calculate-functions_img135.png)
 
-
+_ERF_
 
 ### ERF.PRECISE
 
@@ -3053,13 +3058,13 @@ ERF.PRECISE(a) where:
 
 #### Remarks:
 
-#VALUE! - a is non-numeric
+&#35;VALUE! - a is non-numeric
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/64.png](Calculate-functions_images/Calculate-functions_img136.png)
 
-
+_ERF.PRECISE_
 
 ### BESSELI
 
@@ -3076,15 +3081,15 @@ BESSELI(a,n) where:
 
 #### Remarks:
 
-#VALUE! - occurs if a or n is non-numeric
+&#35;VALUE! - occurs if a or n is non-numeric
 
-#NUM! - occurs if n < 0
+&#35;NUM! - occurs if n < 0
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/65.png](Calculate-functions_images/Calculate-functions_img137.png)
 
-
+_BESSELI_
 
 ### BESSELJ
 
@@ -3101,15 +3106,15 @@ BESSELJ(a,n) where:
 
 #### Remarks:
 
-#VALUE! - occurs if a or n is non-numeric
+&#35;VALUE! - occurs if a or n is non-numeric
 
-#NUM! - occurs if n < 0
+&#35;NUM! - occurs if n < 0
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/66.png](Calculate-functions_images/Calculate-functions_img138.png)
 
-
+_BESSELJ_
 
 ### BESSELY
 
@@ -3126,15 +3131,15 @@ BESSELY(a,n) where:
 
 #### Remarks:
 
-#VALUE! - occurs if a or n is non-numeric
+&#35;VALUE! - occurs if a or n is non-numeric
 
-#NUM! - occurs if n < 0
+&#35;NUM! - occurs if n < 0
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/67.png](Calculate-functions_images/Calculate-functions_img139.png)
 
-
+_BESSELY_
 
 ### BESSELK
 
@@ -3151,16 +3156,16 @@ BESSELK(x,n) where:
 
 #### Remarks:
 
-#VALUE! - occurs if a or n is non-numeric
+&#35;VALUE! - occurs if a or n is non-numeric
 
-#NUM! - occurs if n < 0
+&#35;NUM! - occurs if n < 0
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/68.png](Calculate-functions_images/Calculate-functions_img140.png)
 
 
-
+_BESSELK_
 
 
 ### CONVERT
@@ -3179,15 +3184,15 @@ CONVERT(num,fromUnit,toUnit) where:
 
 #### Remarks:
 
-#VALUE! - occurs if the input data types are incorrect.
+&#35;VALUE! - occurs if the input data types are incorrect.
 
-#N/A - occurs if the unit does not exist or are in different groups.
+&#35;N/A - occurs if the unit does not exist or are in different groups.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/69.png](Calculate-functions_images/Calculate-functions_img141.png)
 
-
+_CONVERT_
 
 ## Web Functions
 
@@ -3205,7 +3210,7 @@ ENCODEURL(name) where:
 
 ![C:/Users/ApoorvahR/Desktop/6.1.png](Calculate-functions_images/Calculate-functions_img142.png)
 
-
+_ENCODEURL_
 
 ### FILTERXML
 
@@ -3222,13 +3227,13 @@ FILTERXML(xml, xpath) where:
 
 #### Remarks:
 
-#VALUE! - occurs if xml is not valid or  if xml contains a namespace with a prefix that is not valid.
+&#35;VALUE! - occurs if xml is not valid or  if xml contains a namespace with a prefix that is not valid.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/6.2.png](Calculate-functions_images/Calculate-functions_img143.png)
 
-
+_FILTERXML_
 
 ### WEBSERVICE
 
@@ -3242,13 +3247,13 @@ WEBSERVICE(url) where:
 
 #### Remarks:
 
-#VALUE! - occurs if url is unable to return the data, if url result in a string that is not valid and if url is a string that contains more than the 2048 characters.
+&#35;VALUE! - occurs if url is unable to return the data, if url result in a string that is not valid and if url is a string that contains more than the 2048 characters.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/6.3.png](Calculate-functions_images/Calculate-functions_img144.png)
 
-
+_WEBSERVICE_
 
 ## Text Functions
 
@@ -3266,7 +3271,7 @@ ASC(text) where:
 
 ![C:/Users/ApoorvahR/Desktop/70.png](Calculate-functions_images/Calculate-functions_img145.png)
 
-
+_ASC_
 
 ### CODE
 
@@ -3282,7 +3287,7 @@ CODE(name) where:
 
 ![C:/Users/ApoorvahR/Desktop/71.png](Calculate-functions_images/Calculate-functions_img146.png)
 
-
+_CODE_
 
 ### FINDB
 
@@ -3300,13 +3305,13 @@ FINDB(text1,text2, num) where:
 
 #### Remarks:
 
-#VALUE! - occurs if text1 does not appear in text2 and if num is not greater than zero.
+&#35;VALUE! - occurs if text1 does not appear in text2 and if num is not greater than zero.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/72.png](Calculate-functions_images/Calculate-functions_img147.png)
 
-
+_FINDB_
 
 ### JIS
 
@@ -3322,7 +3327,7 @@ The JIS function changes single-byte English letters or katakana within a charac
 
 ![C:/Users/ApoorvahR/Desktop/7.4.png](Calculate-functions_images/Calculate-functions_img148.png)
 
-
+_JIS_
 
 ### LEFTB
 
@@ -3339,7 +3344,7 @@ The LEFTB function returns the first character or characters in a text string, b
 
 ![C:/Users/ApoorvahR/Desktop/7.5.png](Calculate-functions_images/Calculate-functions_img149.png)
 
-
+_LEFTB_
 
 ### LENB
 
@@ -3355,7 +3360,7 @@ The LENB function returns the number of bytes used to represent the characters i
 
 ![C:/Users/ApoorvahR/Desktop/74.png](Calculate-functions_images/Calculate-functions_img150.png)
 
-
+_LENB_
 
 ### MIDB
 
@@ -3375,7 +3380,7 @@ The MIDB function returns a specific number of characters from a text string, st
 
 ![C:/Users/ApoorvahR/Desktop/75.png](Calculate-functions_images/Calculate-functions_img151.png)
 
-
+_MIDB_
 
 ### NUMBERVALUE
 
@@ -3389,13 +3394,13 @@ NUMBERVALUE(text) where,
 
 #### Remarks:
 
-#VALUE! - occurs if any of the arguments are not valid.
+&#35;VALUE! - occurs if any of the arguments are not valid.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/76.png](Calculate-functions_images/Calculate-functions_img152.png)
 
-
+_NUMBERVALUE_
 
 ### PROPER
 
@@ -3411,7 +3416,7 @@ The PROPER function changes the first letter of text into a capital letter and f
 
 ![C:/Users/ApoorvahR/Desktop/77.png](Calculate-functions_images/Calculate-functions_img153.png)
 
-
+_PROPER_
 
 ### REPLACE
 
@@ -3432,7 +3437,7 @@ REPLACE(oldText, startNum, numChars, newText) where:
 
 ![C:/Users/ApoorvahR/Desktop/78.png](Calculate-functions_images/Calculate-functions_img154.png)
 
-
+_REPLACE_
 
 ### REPLACEB
 
@@ -3453,7 +3458,7 @@ REPLACEB(oldText, startNum, numBytes, newText) where:
 
 ![C:/Users/ApoorvahR/Desktop/79.png](Calculate-functions_images/Calculate-functions_img155.png)
 
-
+_REPLACEB_
 
 ### REPT
 
@@ -3476,7 +3481,7 @@ Blank text - occurs if number is zero.
 
 ![C:/Users/ApoorvahR/Desktop/80.png](Calculate-functions_images/Calculate-functions_img156.png)
 
-
+_REPT_
 
 ### RIGHTB
 
@@ -3495,7 +3500,7 @@ RIGHTB(string, num) where:
 
 ![C:/Users/ApoorvahR/Desktop/7.13.png](Calculate-functions_images/Calculate-functions_img157.png)
 
-
+_RIGHTB_
 
 ### SEARCHB
 
@@ -3513,13 +3518,13 @@ SEARCHB(findText,withinText, startNum ) where:
 
 #### Remarks:
 
-#VALUE! - occurs if find Text is not found.
+&#35;VALUE! - occurs if find Text is not found.
 
 #### Example: 
 
 ![](Calculate-functions_images/Calculate-functions_img158.png)
 
-
+_SEARCHB_
 
 ### UNICHAR
 
@@ -3533,15 +3538,15 @@ UNICHAR(num) where:
 
 #### Remarks:
 
-#N/A - occurs if data types are not valid.
+&#35;N/A - occurs if data types are not valid.
 
-#VALUE! - occurs if num fall outside the allowable range, if number is zero.
+&#35;VALUE! - occurs if num fall outside the allowable range, if number is zero.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img159.png)
 
-
+_UNICHAR_
 
 ### UNICODE
 
@@ -3555,13 +3560,13 @@ UNICODE(text) where:
 
 #### Remarks:
 
-#VALUE! - occurs if data types is not valid.
+&#35;VALUE! - occurs if data types is not valid.
 
 #### Example:
 
 ![](Calculate-functions_images/Calculate-functions_img160.png)
 
-
+_UNICODE_
 
 ## Lookup and Reference Functions
 
@@ -3579,7 +3584,7 @@ AREAS(reference) where:
 
 ![C:/Users/ApoorvahR/Desktop/81.png](Calculate-functions_images/Calculate-functions_img161.png)
 
-
+_AREAS_
 
 ### COLUMNS
 
@@ -3595,7 +3600,7 @@ COLUMNS( array ) where:
 
 ![C:/Users/ApoorvahR/Desktop/82.png](Calculate-functions_images/Calculate-functions_img162.png)
 
-
+_COLUMNS_
 
 ### HYPERLINK
 
@@ -3614,7 +3619,7 @@ HYPERLINK( linkLocation, friendlyName ) where
 
 ![C:/Users/ApoorvahR/Desktop/8.3.png](Calculate-functions_images/Calculate-functions_img163.png)
 
-
+_HYPERLINK_
 
 ### ROW
 
@@ -3628,7 +3633,7 @@ ROW( [reference] ) where,
 
 ![C:/Users/ApoorvahR/Desktop/83.png](Calculate-functions_images/Calculate-functions_img164.png)
 
-
+_ROW_
 
 ### ROWS
 
@@ -3644,7 +3649,7 @@ ROWS( array ) where:
 
 ![](Calculate-functions_images/Calculate-functions_img165.png)
 
-
+_ROWS_
 
 ### SHEET
 
@@ -3658,9 +3663,9 @@ SHEET(value) where:
 
 #### Remarks:
 
-#REF! - occurs if value argument is not a valid value.
+&#35;REF! - occurs if value argument is not a valid value.
 
-#NA - occurs if value argument is a sheet name that is not valid.
+&#35;NA - occurs if value argument is a sheet name that is not valid.
 
 #### Example:
 
@@ -3668,7 +3673,7 @@ SHEET(value) where:
 
 ![C:/Users/ApoorvahR/Desktop/8.6.png](Calculate-functions_images/Calculate-functions_img166.png)
 
-
+_SHEET_
 
 ### SHEETS
 
@@ -3682,13 +3687,13 @@ SHEETS(reference) where:
 
 #### Remarks:
 
-#REF! - occurs if reference is not a valid value.
+&#35;REF! - occurs if reference is not a valid value.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/8.7.png](Calculate-functions_images/Calculate-functions_img167.png)
 
-
+_SHEETS_
 
 ### TRANSPOSE
 
@@ -3704,7 +3709,7 @@ TRANSPOSE( array ) where:
 
 ![C:/Users/ApoorvahR/Desktop/93.png](Calculate-functions_images/Calculate-functions_img168.png)
 
-
+_TRANSPOSE_
 
 ### FORMULATEXT
 
@@ -3718,23 +3723,23 @@ FORMULATEXT(reference) where:
 
 #### Remarks:
 
-#N/A - occurs if the reference argument is to another workbook that is not open.
+&#35;N/A - occurs if the reference argument is to another workbook that is not open.
 
-#N/A - occurs if the reference argument is to a range containing more than one cell.
+&#35;N/A - occurs if the reference argument is to a range containing more than one cell.
 
-#N/A - occurs if the cell used as the reference argument does not contain a formula.
+&#35;N/A - occurs if the cell used as the reference argument does not contain a formula.
 
-#N/A - occurs if the formula in the cell is longer than 8192 characters.
+&#35;N/A - occurs if the formula in the cell is longer than 8192 characters.
 
-#N/A - occurs if the formula can't be displayed in the worksheet.
+&#35;N/A - occurs if the formula can't be displayed in the worksheet.
 
-#N/A - occurs if an external workbook that contains the formula which is not open.
+&#35;N/A - occurs if an external workbook that contains the formula which is not open.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/8.9.png](Calculate-functions_images/Calculate-functions_img169.png)
 
-
+_FORMULATEXT_
 
 ## Information Functions
 
@@ -3755,7 +3760,7 @@ CELL( infoType, reference ) where
 
 ![](Calculate-functions_images/Calculate-functions_img170.png)
 
-
+_CELL_
 
 ### INFO
 
@@ -3771,7 +3776,7 @@ The INFO function returns a text string containing information about the current
 
 ![C:/Users/ApoorvahR/Desktop/85.png](Calculate-functions_images/Calculate-functions_img171.png)
 
-
+_INFO_
 
 ### TYPE
 
@@ -3789,7 +3794,7 @@ TYPE( value ) where:
 
 ![C:/Users/ApoorvahR/Desktop/86.png](Calculate-functions_images/Calculate-functions_img172.png)
 
-
+_TYPE_
 
 ### ISFORMULA
 
@@ -3803,7 +3808,7 @@ ISFORMULA(reference) where:
 
 #### Remarks:
 
-#VALUE! - occurs if reference is not a valid data type.
+&#35;VALUE! - occurs if reference is not a valid data type.
 
 #### Example:
 
@@ -3811,7 +3816,7 @@ ISFORMULA(reference) where:
 
 ![](Calculate-functions_images/Calculate-functions_img173.png)
 
-
+_ISFORMULA_
 
 ## Date and Time Functions
 
@@ -3830,15 +3835,15 @@ EDATE( startDate, Months ) where:
 
 #### Remarks:
 
-#VALUE! - occurs if the supplied startDate is not a valid date.
+&#35;VALUE! - occurs if the supplied startDate is not a valid date.
 
-#VALUE! - occurs if the supplied Months argument is non-numeric.
+&#35;VALUE! - occurs if the supplied Months argument is non-numeric.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/10.1.png](Calculate-functions_images/Calculate-functions_img174.png)
 
-
+_EDATE_
 
 ### EOMONTH
 
@@ -3855,17 +3860,17 @@ EOMONTH(startDate, Months) where:
 
 #### Remarks:
 
-#VALUE! - occurs if either any of the supplied arguments are not numeric values. 
+&#35;VALUE! - occurs if either any of the supplied arguments are not numeric values. 
 
-#NUM! - occurs if the supplied startDate is not a valid date.
+&#35;NUM! - occurs if the supplied startDate is not a valid date.
 
-#NUM! - occurs if the supplied startDate plus the value of the months argument is not a valid date.
+&#35;NUM! - occurs if the supplied startDate plus the value of the months argument is not a valid date.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/10.2.png](Calculate-functions_images/Calculate-functions_img175.png)
 
-
+_EOMONTH_
 
 ### NETWORKDAYS.INTL
 
@@ -3882,13 +3887,13 @@ NETWORKDAYS.INTL(startDate, endDate) where:
 
 #### Remarks:
 
-#VALUE! - occurs if the supplied startDate, endDate are not valid dates. 
+&#35;VALUE! - occurs if the supplied startDate, endDate are not valid dates. 
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/10.3.png](Calculate-functions_images/Calculate-functions_img176.png)
 
-
+_NETWORKDAYS.INTL_
 
 ### WEEKNUM
 
@@ -3905,17 +3910,17 @@ WEEKNUM( serialNum, [returnType] ) where:
 
 #### Remarks:
 
-#VALUE! - occurs if the supplied serialNum cannot be recognized as a numeric value or a date. 
+&#35;VALUE! - occurs if the supplied serialNum cannot be recognized as a numeric value or a date. 
 
-#NUM! - occurs if the supplied [returnType] argument is not one of the above listed permitted values. 
+&#35;NUM! - occurs if the supplied [returnType] argument is not one of the above listed permitted values. 
 
-#NUM! - occurs if the supplied serialNum argument is numeric but is out of range for the current date base. 
+&#35;NUM! - occurs if the supplied serialNum argument is numeric but is out of range for the current date base. 
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/87.png](Calculate-functions_images/Calculate-functions_img177.png)
 
-
+_WEEKNUM_
 
 ### WORKDAY.INTL
 
@@ -3934,19 +3939,19 @@ WORKDAY.INTL( startDate, days, [weekend], [holidays] ) where:
 
 #### Remarks:
 
-#NUM! - occurs if the supplied startDate plus the supplied days argument results in an invalid date.
+&#35;NUM! - occurs if the supplied startDate plus the supplied days argument results in an invalid date.
 
-#NUM! - occurs if the supplied [weekend] argument is invalid (see above explanation of this argument).
+&#35;NUM! - occurs if the supplied [weekend] argument is invalid (see above explanation of this argument).
 
-#VALUE! - occurs if the supplied startDate  or any of the values in the supplied [holidays] array are not valid dates.
+&#35;VALUE! - occurs if the supplied startDate  or any of the values in the supplied [holidays] array are not valid dates.
 
-#VALUE! - occurs if the supplied days argument is non-numeric.
+&#35;VALUE! - occurs if the supplied days argument is non-numeric.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/88.png](Calculate-functions_images/Calculate-functions_img178.png)
 
-
+_WORKDAY.INTL_
 
 ### YEARFRAC
 
@@ -3964,15 +3969,15 @@ YEARFRAC( startDate, endDate, [basis] ) where:
 
 #### Remarks:
 
-#VALUE! - occurs if the startDate or endDate arguments are not valid dates. 
+&#35;VALUE! - occurs if the startDate or endDate arguments are not valid dates. 
 
-#NUM! - occurs if the value of the supplied [basis] argument is less than 0 or greater than 4. 
+&#35;NUM! - occurs if the value of the supplied [basis] argument is less than 0 or greater than 4. 
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/89.png](Calculate-functions_images/Calculate-functions_img179.png)
 
-
+_YEARFRAC_
 
 ### WORKDAY
 
@@ -3990,15 +3995,15 @@ WORKDAY(startDate, Days, [holidays] ) where:
 
 #### Remarks:
 
-#NUM! - occurs if the supplied startDate plus the supplied days argument results in an invalid date. 
+&#35;NUM! - occurs if the supplied startDate plus the supplied days argument results in an invalid date. 
 
-#VALUE! - occurs if the supplied startDate or any of the values in the supplied [holidays] array are not valid dates, if the supplied days argument is non-numeric.
+&#35;VALUE! - occurs if the supplied startDate or any of the values in the supplied [holidays] array are not valid dates, if the supplied days argument is non-numeric.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/90.png](Calculate-functions_images/Calculate-functions_img180.png)
 
-
+_WORKDAY_
 
 ### ISOWEEKNUM
 
@@ -4012,15 +4017,15 @@ ISOWEEKNUM( DateTime) where:
 
 #### Remarks:
 
-#NUM! - occurs if the date argument is not a valid number.
+&#35;NUM! - occurs if the date argument is not a valid number.
 
-#VALUE! - occurs if the date argument is not a valid date type.
+&#35;VALUE! - occurs if the date argument is not a valid date type.
 
 #### Example:
 
 ![C:/Users/ApoorvahR/Desktop/91.png](Calculate-functions_images/Calculate-functions_img181.png)
 
-
+_ISOWEEKNUM_
 
 ###  DAYS
 
@@ -4036,5 +4041,5 @@ DAYS(endDate, startDate) where:
 
 ![C:/Users/ApoorvahR/Desktop/94.png](Calculate-functions_images/Calculate-functions_img182.png)
 
-
+_DAYS_
 

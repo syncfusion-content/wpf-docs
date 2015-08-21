@@ -26,7 +26,7 @@ The following code example illustrates how to add the New User Interface support
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -49,7 +49,7 @@ The following code example illustrates how to add the New User Interface support
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -104,12 +104,12 @@ _New User Interface Support Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td><td>
-Reference links </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 VisualizationStyle</td><td>

@@ -12,16 +12,16 @@ documentation: ug
 
 The following properties of a grid cell can be customized so that the grid appears in a custom style rather than the default one.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property Name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Value it Accepts**' | markdownify }}</td><td>
-{{ '**Reference link**' | markdownify }}</td></tr>
+<th>
+{{ '**Property Name**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+{{ '**Value it Accepts**' | markdownify }}</th><th>
+{{ '**Reference link**' | markdownify }}</th></tr>
 <tr>
 <td>
 Background</td><td>
@@ -70,8 +70,7 @@ Column, row, summary, and value cells of a grid can be formatted independently u
 
 
 {% highlight C# %} 
-
-[C#] 
+ 
 
     		// Specifying the Background color for Grid column header
 
@@ -91,7 +90,6 @@ Column, row, summary, and value cells of a grid can be formatted independently u
 
 {% highlight vbnet %}  
 
-[VB]
 
 ' Specifying the Background color for Grid column header
 

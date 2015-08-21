@@ -23,20 +23,19 @@ different customer geographic locations.
 
 2.In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application. 
 
-![](Getting-Started_images/Getting-Started_img1.png)
+  ![](Getting-Started_images/Getting-Started_img1.png)
 
 3.Select WPF Application and click OK.
 
 4.Drag and drop the PivotGridControl from the Syncfusion BI WPF toolbox into the Designpage. Required Syncfusion assemblies are added automatically to the application.
 
-![](Getting-Started_images/Getting-Started_img2.png)
+  ![](Getting-Started_images/Getting-Started_img2.png)
 
 5.Add name to the PivotGridControl to access it through code-behind.
 
 
-{% highlight xml %} 
+ {% highlight xml %} 
 
-[XAML]
 
 <Window x:Class="WpfApplication7.Window1"
 
@@ -79,7 +78,6 @@ different customer geographic locations.
 
 {% highlight C# %}  
 
-[C#]
 
 public class ProductSales
 
@@ -185,7 +183,6 @@ ObjectDataProvider is usedto get the ItemSource object. Binding ItemSource with 
 
 {% highlight xml %} 
 
-[XAML]
 
 <Window x:Class="WpfApplication1.Window1"
 
@@ -227,7 +224,6 @@ The PivotGrid in XAML is initialized and binding the ItemSource through code-beh
 
 {% highlight xml %} 
 
-[XAML]
 
 <Window x:Class="WpfApplication7.Window1"
 
@@ -259,7 +255,6 @@ The PivotGrid in XAML is initialized and binding the ItemSource through code-beh
 
 {% highlight C# %}  
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -275,7 +270,6 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% highlight vbnet %} 
 
-[VB]
 
 Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
@@ -295,7 +289,6 @@ End Sub
 
 {% highlight xml %} 
 
-[XAML]
 
 <Window x:Class="WpfApplication1.Window1"
 
@@ -351,7 +344,6 @@ The PivotGrid in XAML is initialized and adding the PivotRows through code-behin
 
 {% highlight xml %} 
 
-[XAML]
 
 <Window x:Class="WpfApplication7.Window1"
 
@@ -381,7 +373,6 @@ The PivotGrid in XAML is initialized and adding the PivotRows through code-behin
 
 {% highlight C# %} 
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -401,7 +392,6 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -424,8 +414,6 @@ End Sub
 Through XAML
 
 {% highlight xml %} 
-
-[XAML]
 
 <Window x:Class="WpfApplication1.Window1"
 
@@ -481,7 +469,6 @@ The PivotGrid in XAML is initialized and adding the PivotColumns through code-be
 
 {% highlight xml %} 
 
-[XAML]
 
 <Window x:Class="WpfApplication7.Window1"
 
@@ -511,7 +498,6 @@ The PivotGrid in XAML is initialized and adding the PivotColumns through code-be
 
 {% highlight C# %} 
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -532,7 +518,6 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% highlight vbnet %} 
 
-[VB]
 
 Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
@@ -552,7 +537,6 @@ End Sub
 
 {% highlight xml %}
 
-[XAML]
 
 <Window x:Class="WpfApplication1.Window1"
 
@@ -609,7 +593,6 @@ The PivotGrid in XAML is initialized and adding the PivotCalculations through co
 
 {% highlight xml %} 
 
-[XAML]
 
 <Window x:Class="WpfApplication7.Window1"
 
@@ -639,7 +622,6 @@ The PivotGrid in XAML is initialized and adding the PivotCalculations through co
 
 {% highlight C# %}  
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -659,7 +641,6 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% highlight vbnet %} 
 
-[VB]
 
 Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
@@ -681,7 +662,6 @@ Through XAML
 
 {% highlight xml %} 
 
-[XAML]
 
 <Window x:Class="WpfApplication1.Window1"
 
@@ -760,7 +740,6 @@ Through XAML
 
 {% highlight C# %}  
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -796,7 +775,6 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -875,7 +853,6 @@ End Sub
 
 {% highlight xml %}  
 
-[XAML]
 
 <Window x:Class="WpfApplication7.Window1"
 
@@ -920,7 +897,6 @@ End Sub
 
 {% highlight C# %} 
 
-[C#]
 
 public class ProductSales
 
@@ -1026,7 +1002,6 @@ ObjectDataProvider is usedto get the ItemSource object. Binding ItemSource with 
 
 {% highlight xml %}  
 
-[XAML]
 
 <Window x:Class="WpfApplication1.Window1"
 
@@ -1068,7 +1043,6 @@ The PivotGrid in XAML is initialized and binding the ItemSource through code-beh
 
 {% highlight xml %} 
 
-[XAML]
 
 <Window x:Class="WpfApplication7.Window1"
 
@@ -1098,7 +1072,6 @@ The PivotGrid in XAML is initialized and binding the ItemSource through code-beh
 
 {% highlight C# %} 
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -1114,7 +1087,6 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% highlight vbnet %} 
 
-[VB]
 
 Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
@@ -1134,7 +1106,6 @@ End Sub
 
 {% highlight xml %} 
 
-[XAML]
 
 <Window x:Class="WpfApplication1.Window1"
 
@@ -1190,7 +1161,6 @@ The PivotGrid in XAML is initialized and adding the PivotRows through code-behin
 
 {% highlight xml %} 
 
-[XAML]
 
 <Window x:Class="WpfApplication7.Window1"
 
@@ -1220,7 +1190,6 @@ The PivotGrid in XAML is initialized and adding the PivotRows through code-behin
 
 {% highlight C# %}  
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -1241,7 +1210,6 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -1266,7 +1234,6 @@ End Sub
 
 {% highlight xml %} 
 
-[XAML]
 
 <Window x:Class="WpfApplication1.Window1"
 
@@ -1323,7 +1290,6 @@ The PivotGrid in XAML is initialized and adding the PivotColumns through code-be
 
 {% highlight xml %} 
 
-[XAML]
 
 <Window x:Class="WpfApplication7.Window1"
 
@@ -1354,8 +1320,6 @@ The PivotGrid in XAML is initialized and adding the PivotColumns through code-be
 
 {% highlight C# %} 
 
-[C#]
-
 
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
@@ -1377,7 +1341,6 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -1399,8 +1362,6 @@ End Sub
 17.Adding PivotCalculations is illustrated in the following code example.
 
 {% highlight xml %} 
-
-[XAML]
 
 <Window x:Class="WpfApplication1.Window1"
 
@@ -1456,8 +1417,6 @@ The PivotGrid in XAML is initialized and adding the PivotCalculations through co
 
 {% highlight xml %} 
 
-[XAML]
-
 <Window x:Class="WpfApplication7.Window1"
 
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -1487,7 +1446,6 @@ The PivotGrid in XAML is initialized and adding the PivotCalculations through co
 
 {% highlight C# %}  
 
-[C#]
 
 
 
@@ -1509,8 +1467,6 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 
 {% highlight vbnet %} 
-
-[VB]
 
 
 
@@ -1534,7 +1490,6 @@ End Sub
 
 {% highlight xml %} 
 
-[XAML]
 
 
 
@@ -1614,8 +1569,6 @@ End Sub
 
 {% highlight C# %}  
 
-[C#]
-
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {
@@ -1648,7 +1601,6 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -1707,7 +1659,6 @@ End Sub
 
 {% highlight xml %} 
 
-[XAML]
 
 <Window x:Class="WpfApplication10.MainWindow"         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
@@ -1753,7 +1704,6 @@ End Sub
 
 {% highlight C# %} 
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -1770,7 +1720,6 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -1800,8 +1749,6 @@ End Sub
 10.Select Class and create file under the name ProductSales.cs. ItemSource can be instantiated from the ProductSales.cs file. 
 
 {% highlight C# %} 
-
-[C#]
 
 public class ProductSales
 
@@ -1906,7 +1853,6 @@ public class ProductSales
 
 {% highlight C# %} 
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -1926,7 +1872,6 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% highlight vbnet %} 
 
-[VB]
 
 Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
@@ -1948,7 +1893,7 @@ End Sub
 
 {% highlight C# %} 
 
-[C#]
+
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -1970,7 +1915,6 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -1995,7 +1939,7 @@ End Sub
 
 {% highlight C# %} 
 
-[C#]
+
 
 
 
@@ -2020,7 +1964,7 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
@@ -2042,7 +1986,7 @@ End Sub
 
 {% highlight C# %}  
 
-[C#]
+
 
 
 
@@ -2068,7 +2012,7 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
@@ -2091,7 +2035,6 @@ To populate a PivotGrid with the sample IList data
 
 {% highlight C# %}  
 
-[C#]
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -2128,7 +2071,7 @@ protected void Window_Loaded(object sender, RoutedEventArgs e)
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 
 

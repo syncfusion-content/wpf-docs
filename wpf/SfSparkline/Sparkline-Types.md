@@ -13,7 +13,6 @@ documentation: ug
 
 Line sparkline rendered using polyline and the following code is used to create line sparkline,
 {% highlight html %}
-[XAML]
 
 …
 
@@ -43,7 +42,6 @@ The following illustrates the result of the above code sample,
 
 Column sparkline used to visualize the raw data as a rectangle and following code is used to create column sparkline,
 {% highlight html %}
-[XAML]
 
    <Syncfusion:SfColumnSparkline ItemsSource="{Binding UsersList}" YBindingPath="NoOfUsers" >
 
@@ -59,7 +57,6 @@ Following is the snapshot for Column Sparkline,
 
 Following code is used to create area sparkline and all the line sparkline features are applicable for area sparkline,
 {% highlight html %}
-[XAML]
 
   <Syncfusion:SfAreaSparkline 
 
@@ -77,7 +74,6 @@ Following is the snapshot for area sparkline,
 
 WinLoss sparkline render as a column segment and it show the positive, negative and neutral values.
 {% highlight html %}
-[XAML]
 
 …
 

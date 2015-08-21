@@ -20,7 +20,6 @@ To set the Tab Item Size mode to "ShrinkToFit", refer the code snippet.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -44,8 +43,6 @@ To set the Tab Item Size mode to "ShrinkToFit", refer the code snippet.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
-
 
 
 // Creating instance of the TabControlExt control

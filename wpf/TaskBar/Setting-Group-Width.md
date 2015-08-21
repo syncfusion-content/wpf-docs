@@ -15,7 +15,6 @@ The following code snippet illustrates how to set the group width.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -65,7 +64,6 @@ The following code snippet illustrates how to set the group width.
 
 
 {% highlight c# %}
-[C#]
 
 
 

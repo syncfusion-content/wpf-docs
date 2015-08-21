@@ -7,11 +7,11 @@ control: PDF Viewer
 documentation: ug
 ---
 
-### Working with Hyperlinks 
+# Working with Hyperlinks 
 
 Essential PDF Viewer provides support for URI annotations (hyperlinks) in the PDF document that enables the URI available in the PDF document to be opened in the browser just by clicking it. This also supports a few events that are listed in the previous table.
 
-_Event Table_
+Event Table
 
 <table>
 <tr>
@@ -21,15 +21,15 @@ Description </th><th>
 Arguments </th><th>
 Type </th></tr>
 <tr>
-<th>
-HyperLinkMouseHover</th><th>
-This event is triggered when the mouse pointer is placed over the URL.</th><th>
-N/A</th><th>
-N/A</th></tr>
+<td>
+HyperLinkMouseHover</td><td>
+This event is triggered when the mouse pointer is placed over the URL.</td><td>
+N/A</td><td>
+N/A</td></tr>
 <tr>
-<th>
-HyperLinkMouseClicked</th><th>
-This event is triggered when the URL in the PDF document is clicked.</th><th>
-N/A</th><th>
-N/A</th></tr>
+<td>
+HyperLinkMouseClicked</td><td>
+This event is triggered when the URL in the PDF document is clicked.</td><td>
+N/A</td><td>
+N/A</td></tr>
 </table>

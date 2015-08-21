@@ -17,7 +17,7 @@ The following code sample shows how to create the rating from code-behind and XA
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -38,7 +38,7 @@ The following code sample shows how to create the rating from code-behind and XA
 
 {%highlight c#%}
 
-[C#]
+
 
 SfRating rating = new SfRating();
 

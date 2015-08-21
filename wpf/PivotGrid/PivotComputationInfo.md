@@ -7,21 +7,21 @@ control: PivotGrid
 documentation: ug
 ---
 
-## PivotComputationInfo
+# PivotComputationInfo
 
 This class holds the information needed for calculations that appear in a PivotGrid. For each calculation, there is an associated 
 PivotComputationInfo object that is added to the PivotCalculations collection. The properties available in PivotComputationInfo are as follows.
 
-_Properties Table_
+Properties Table
 
 <table>
 <tr>
-<td>
-{{ '**Property Name**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-Value it Accepts</td><td>
-Reference link</td></tr>
+<th>
+{{ '**Property Name**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th><th>
+{{ '**Type**' | markdownify }}</th><th>
+Value it Accepts</th><th>
+Reference link</th></tr>
 <tr>
 <td>
 CalculationName</td><td>
@@ -81,11 +81,11 @@ CalculationType</td></tr>
 </table> 
 
 
-### Defining PivotComputationInfo in XAML and Code-Behind
+## Defining PivotComputationInfo in XAML and Code-Behind
 
 PivotComputationInfo can be defined in XAML as well as in C# or VB code.
 
-#### Through XAML
+### Through XAML
 
 1. To define the Pivot Item, you can add the PivotGridControl using the Syncfusion:PivotGridControl class.
 2. Create a new PivotItem using PivotGridControl.PivotComputationInfo class.
@@ -94,7 +94,6 @@ PivotComputationInfo can be defined in XAML as well as in C# or VB code.
 
  {% highlight xml %} 
  
- [XAML]
 
 <Grid>
 
@@ -131,7 +130,7 @@ Through Code Behind
 
 {% highlight C# %}  
 
-[C#]
+
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
 
@@ -154,7 +153,6 @@ this.pivotGrid1.PivotCalculations.Add(m_PivotComputationInfo);
 
 {% highlight vbnet %} 
 
-[VB]
 
 Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
@@ -172,13 +170,12 @@ End Sub
 {% endhighlight %} 
 
 
-### Format String in PivotComputationInfo
+## Format String in PivotComputationInfo
 
 The PivotComputationInfo property replaces each format specification in a specified string with the textual equivalent of a corresponding value.
 
 {% highlight xml %} 
 
-[XAML]
 
 
 
@@ -194,7 +191,6 @@ The PivotComputationInfo property replaces each format specification in a specif
 
 {% highlight C# %} 
 
-[C#]
 
 
 
@@ -208,7 +204,6 @@ PivotComputationInfo m_PivotComputationInfo = new PivotComputationInfo() { Calcu
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -220,13 +215,13 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo() 
 
 ### Types of format settings
 
-_Formats Table_
+Formats Table
 
 <table>
 <tr>
-<td>
-{{ '**Format**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Format**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 0.00</td><td>

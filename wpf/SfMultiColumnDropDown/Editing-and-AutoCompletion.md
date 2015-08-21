@@ -7,9 +7,9 @@ control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-## Editing and AutoCompletion
+# Editing and AutoCompletion
 
-### Editor
+## Editor
 
 You can edit the textbox in the SfMultiColumnDropDownControl. You could make the textbox editable or non –editable in order to prevent typing. SfMulticolumnControl contains the following properties for Editing.
 
@@ -20,7 +20,7 @@ You can edit the textbox in the SfMultiColumnDropDownControl. You could make the
 * IsDropDownOpen - It specifies whether the popup is in open or close state initially. It is a Boolean property and by default it is set to False.
 * Text –Gets or sets the Text to the Editor. It is a string property. It has empty value as default.
 
-### Auto Completion of Text
+## Auto Completion of Text
 
 SfMultiColumnDropDownControl provides auto completion support. When you type into the editor, the control returns the relative match for the typed text based on the Display Member.
 
@@ -30,7 +30,7 @@ As an example of this feature, consider a simple scenario where the SfMultiColum
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window.DataContext>
 

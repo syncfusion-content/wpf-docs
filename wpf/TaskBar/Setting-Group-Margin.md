@@ -17,7 +17,6 @@ Use the below code for setting the group margin.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -71,7 +70,6 @@ This taskbar provides an UI similar to that of Windows XP.</TextBlock>
 
 {% highlight c# %}
 
-[C#]
 
 
 

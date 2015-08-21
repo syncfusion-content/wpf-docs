@@ -15,7 +15,6 @@ The following code illustrates the same.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -31,7 +30,6 @@ The following code illustrates the same.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 

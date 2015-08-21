@@ -24,7 +24,7 @@ If the PopUpAnimationType property is set to Fade, the submenu will open with fa
 {% highlight xml %}
 
 
-[XAML]
+
 
 <shared:MenuAdv x:Name="Menu" Margin="10" PopUpAnimationType="Slide”>
 
@@ -76,11 +76,11 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property </td><td>
-Description </td><td>
-Type </td><td>
-Data Type </td></tr>
+<th>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th></tr>
 <tr>
 <td>
 PopUpAnimationType</td><td>

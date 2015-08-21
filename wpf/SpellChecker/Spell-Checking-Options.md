@@ -17,13 +17,13 @@ The Spell Checking engine can also be customized to ignore certain text or words
 
 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 ExcludeEmailAddress</td><td>
@@ -61,7 +61,7 @@ Create a spell checker instance and set the spell checking options as given belo
 
 {%highlight c#%}
 
-[C#]
+
 
 SpellChecker SpellCheck = new SpellChecker();
 

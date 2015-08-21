@@ -11,11 +11,11 @@ documentation: ug
 
 This section explains the SfDataGridMaster-DetailsView support, creation of Master-Details View by using the DataTableRelation and Collection property and Events associated with the Master-Details View
 
-### Overview 
+## Overview 
 
 The DataGrid displays hierarchical data in the form of nested tables. In a Hierarchical view, each record in the parent table has an associated set of records in the child table. Every record in the parent table contains an Expander button in DataGrid that can be expanded or collapsed to show or hide the underlying records in the child table. The number of tables nested with relations by using a DataGrid control is unlimited.
 
-#### Defining Master-DetailsView
+## Defining Master-DetailsView
 
 DataGrid provides the following properties to define the Master-Details relation:
 
@@ -34,7 +34,7 @@ You can use this event to stop creating relation for a parent row. The following
 
 {% highlight C# %}
 
-[C#]
+
 
 sfdatagrid.AutoGeneratingRelations += sfdatagrid_AutoGeneratingRelations;
 
@@ -64,7 +64,7 @@ The following code example illustrates how to define the GridViewDefinition.
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
 
@@ -134,11 +134,11 @@ The following code example illustrates how to define the GridViewDefinition.
 
 _Data Grid with Master Details View_
 
-> _Note: In GridViewDefinition, when you make changes in one child DataGrid, changes are applied to all the child DataGrids at that level. For example, when you resize the first column in the child DataGrid, the same column width is applied to all child DataGrids at that level. This scenario is applicable for features like filetring, sorting, validation and ReOrdering columns. You can use stacked headers also in the Master-Detail View._
+> Note: In GridViewDefinition, when you make changes in one child DataGrid, changes are applied to all the child DataGrids at that level. For example, when you resize the first column in the child DataGrid, the same column width is applied to all child DataGrids at that level. This scenario is applicable for features like filetring, sorting, validation and ReOrdering columns. You can use stacked headers also in the Master-Detail View.
 
 The following topics explain different methods available to expand or collapse and events to handle during expanding or collapsing. You can use these methods and events to perform your internal operation like stores details view items source or record.
 
-#### Expand or Collapse Master-Details View
+## Expand or Collapse Master-Details View
 
 The following lists of methods expand or collapse records.
 
@@ -147,7 +147,7 @@ The following lists of methods expand or collapse records.
 * ExpandDetailsViewAt(int recodIndex): Expands the Details View at the specified record index.
 * CollapseDetailsViewAt(int recordIndex): Collapses the Details View at the specified record index.
 
-##### DataGrid provides the following events to expand or collapse the Master–Details View:
+## DataGrid provides the following events to expand or collapse the Master–Details View:
 
 * DetailsViewExpanding: Occurs before expanding the Details View by using the Expander button.
 * DetailsViewExpanded: Occurs after expanding the Details View by using the Expander button.
@@ -172,7 +172,7 @@ When you do not want a particular parent row expanded, then you can wire this ev
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -188,14 +188,14 @@ void sfdatagrid_DetailsViewExpanding(object sender, GridDetailsViewExpandingEven
 {% endhighlight %}
 
 
-#### DetailsViewExpanded Event
+## DetailsViewExpanded Event
 
 The DetailsViewExpanded event handler receives two arguments namely sender that is SfDataGrid and GridDetailsViewExpandedEventArgs thatare handled as objects. The GridDetailsViewExpandedEventArgs object contains the following properties:
 
 * Record: Gets the row data.
 * DetailsViewItemsSource: It is a dictionary of strings and IEnumerable objects that hold the Relational Column, its key, and the ItemsSource as its value. 
 
-#### DetailsViewCollapsing Event
+## DetailsViewCollapsing Event
 
 The DetailsViewCollapsing event handler receives two arguments namely sender that is SfDataGrid and GridDetailsViewCollapsingEventArgs that are handled as objects. The GridDetailsViewCollapsingEventArgs object contains the following properties:
 
@@ -207,7 +207,7 @@ When you want to avoid collapsing of the parent row, then you can wire this even
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -225,7 +225,7 @@ GridDetailsViewCollapsingEventArgs e)
 {% endhighlight %}
 
 
-#### DetailsViewCollapsed Event
+## DetailsViewCollapsed Event
 
 The DetailsViewCollapsed event handler receives two arguments namely sender that isSfDataGrid and GridDetailsViewCollapsedEventArgs that are handled as objects. The GridDetailsViewCollapsedEventArgs object contains the following properties:
 
@@ -237,7 +237,7 @@ You can wire those events from XAML or Code-Behind. For example.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -257,7 +257,7 @@ You can wire those events from XAML or Code-Behind. For example.
 {% highlight C# %}
 
 
-[C#]
+
 
 
 
@@ -267,7 +267,7 @@ sfdatagrid.DetailsViewExpanding += sfdatagrid_DetailsViewExpanding;
 
 
 
-#### DetailsViewLoading Event
+## DetailsViewLoading Event
 
 The DetailsViewLoading Event handler receives two arguments, namely sender that is SfDataGrid and DetailsViewLoadingAndUnloadingEventArgs. The DetailsViewLoadingAndUnloadingEventArgs object contains the following property:
 
@@ -278,7 +278,7 @@ The DetailsViewLoading Event handler receives two arguments, namely sender that 
 {% highlight C# %}
 
 
-[C#]
+
 
 
 
@@ -304,7 +304,7 @@ It is not preferable to change the value of the public properties like AllowFilt
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -358,7 +358,7 @@ It is not preferable to change the value of the public properties like AllowFilt
 
 {% endhighlight %}
 
-#### DetailsViewUnloading Event
+## DetailsViewUnloading Event
 
 The DetailsViewUnloading Event handler receives two arguments, namely sender that is SfDataGrid and the DetailsViewLoadingAndUnloadingEventArgs.The DetailsViewLoadingAndUnloadingEventArgs object contains the following property:
 
@@ -367,7 +367,7 @@ The DetailsViewUnloading Event handler receives two arguments, namely sender tha
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -383,7 +383,7 @@ void grid_DetailsViewUnloading(object sender, DetailsViewLoadingAndUnloadingEven
 {% endhighlight %}
 
 
-#### Limitations
+## Limitations
 
 There are some limitations in the Master-DetailsView. Those are:
 
@@ -394,8 +394,9 @@ There are some limitations in the Master-DetailsView. Those are:
 * GroupDropArea is not available for details view grid.                  
 
 
-_Note: You can use GroupColumnDescriptions to group the column in Master-Details View._' | markdownify }}
-### Master-Detail View from DataTable relations
+> Note: You can use GroupColumnDescriptions to group the column in Master-Details View.
+
+## Master-Detail View from DataTable relations
 
 This topic explains step by step procedure to create the Master-Details View by using the DataTable relation. The following example explains you how the Relation is created between the two Datatables as in the SQL relation. 
 
@@ -406,567 +407,567 @@ This topic explains step by step procedure to create the Master-Details View by 
 5. Both tables have common property to make a relation. 
 6. Your model should be like as follows.
 
-#### DataTable 1:
+   ### DataTable 1:
 
 
-{% highlight C# %}
 
-[C#]
 
-public class DTModel1
 
-{        
 
-    public DataTable CreateModel()
+			public class DTModel1
 
-    {
+			{        
 
-        var orderInfo = new DataTable();
+				public DataTable CreateModel()
 
-        orderInfo.Columns.Add("OrderID", typeof(int));
+				{
 
-        orderInfo.Columns.Add("CustomerID", typeof(string));
+					var orderInfo = new DataTable();
 
-        orderInfo.Columns.Add("CustomerName", typeof(string));
+					orderInfo.Columns.Add("OrderID", typeof(int));
 
-        orderInfo.Columns.Add("Country", typeof(string));
+					orderInfo.Columns.Add("CustomerID", typeof(string));
 
-        orderInfo.Columns.Add("ShipCity", typeof(string));                 
+					orderInfo.Columns.Add("CustomerName", typeof(string));
 
-        return orderInfo;
+					orderInfo.Columns.Add("Country", typeof(string));
 
-    }
+					orderInfo.Columns.Add("ShipCity", typeof(string));                 
 
-} 
+					return orderInfo;
 
-{% endhighlight %}
+				}
 
-#### DataTable 2:
+			} 
 
-{% highlight C# %}
 
 
-[C#]
+   ### DataTable 2:
 
-public class DTModel2
 
-{        
 
-    public DataTable CreateDTChild()
 
-    {
 
-        var productInfo = new DataTable();
 
-        productInfo.Columns.Add("OrderID", typeof(int));
+			public class DTModel2
 
-        productInfo.Columns.Add("ProductName", typeof(string));
+			{        
 
-        return productInfo;
+				public DataTable CreateDTChild()
 
-    }       
+				{
 
-} 
-{% endhighlight %}
+					var productInfo = new DataTable();
 
+					productInfo.Columns.Add("OrderID", typeof(int));
 
-> _Note: Both tables have OrderID as common property to make relation._
+					productInfo.Columns.Add("ProductName", typeof(string));
 
-Now, populate data for DataTables.
+					return productInfo;
 
-{% highlight C# %}
+				}       
 
+			} 
 
-[C#]
 
-public class DTRepositiory
 
-{        
+   > Note: Both tables have OrderID as common property to make relation.
 
-public static int value=0;        
+   Now, populate data for DataTables.
 
-public DataTable GetOrdersDetail()
 
-{
 
-    var orders = (new DTModel1()).CreateModel();
 
-    for (int i = 0; i < 10;i++ )
 
-    {
 
-        var row = GetOrderForDT(i, orders);
+			public class DTRepositiory
 
-        orders.Rows.Add(row);
+			{        
 
-    }                           
+			public static int value=0;        
 
-    return orders;
+			public DataTable GetOrdersDetail()
 
+			{
 
+				var orders = (new DTModel1()).CreateModel();
 
-}
+				for (int i = 0; i < 10;i++ )
 
-public DataRow GetOrderForDT(int i, DataTable order)
+				{
 
-{
+					var row = GetOrderForDT(i, orders);
 
-    var row = order.NewRow();
+					orders.Rows.Add(row);
 
-    row[0] = 1000+i;
+				}                           
 
-    row[1] = cutomerID[i];
+				return orders;
 
-    row[2] = cutomerName[i];
 
-    row[3] = country[i];
 
-    row[4] = shipcity[i];                        
+			}
 
-    return row;         
+			public DataRow GetOrderForDT(int i, DataTable order)
 
-}
+			{
 
+				var row = order.NewRow();
 
+				row[0] = 1000+i;
 
-public DataTable GetProductDetail()
+				row[1] = cutomerID[i];
 
-{
+				row[2] = cutomerName[i];
 
-    var products = (new DTModel2()).CreateDTChild();
+				row[3] = country[i];
 
-    for (int i = 0; i < 10; i++)
+				row[4] = shipcity[i];                        
 
-    {
+				return row;         
 
-        for (int j = 0; j < (i%2==0? 2:3); j++)
+			}
 
-        {
 
-            var row = GetProductsForDT(1000 + i, products);
 
-            products.Rows.Add(row);
+			public DataTable GetProductDetail()
 
-        }
+			{
 
-    }           
+				var products = (new DTModel2()).CreateDTChild();
 
-    return products;
+				for (int i = 0; i < 10; i++)
 
-}
+				{
 
-public DataRow GetProductsForDT(int i, DataTable product)
+					for (int j = 0; j < (i%2==0? 2:3); j++)
 
-{           
+					{
 
-    var row = product.NewRow();             
+						var row = GetProductsForDT(1000 + i, products);
 
-    row[0]=i;
+						products.Rows.Add(row);
 
-    row[1] = productsName[value >= 20 ? value= 0:value++];
+					}
 
-    return row;    
+				}           
 
-}
+				return products;
 
+			}
 
+			public DataRow GetProductsForDT(int i, DataTable product)
 
-public DataTable GetItemsSource(DataTable t1, DataTable t2)
+			{           
 
-{
+				var row = product.NewRow();             
 
-    DataSet ds = new DataSet();
+				row[0]=i;
 
-    ds.Tables.Add(t1);
+				row[1] = productsName[value >= 20 ? value= 0:value++];
 
-    ds.Tables.Add(t2);
+				return row;    
 
-    ds.Relations.Add(new DataRelation("Orders_Products",   
+			}
 
-    ds.Tables[0].Columns["OrderID"], ds.Tables[1].Columns["OrderID"]));
 
-    return ds.Tables[0];
 
-}
+			public DataTable GetItemsSource(DataTable t1, DataTable t2)
 
-public string[] cutomerID = new string[]
+			{
 
-{
+				DataSet ds = new DataSet();
 
-    "Maria Anders",
+				ds.Tables.Add(t1);
 
-    "Ana Trujilo",
+				ds.Tables.Add(t2);
 
-    "Antonio Moreno",
+				ds.Relations.Add(new DataRelation("Orders_Products",   
 
-    "Thomas Hardy",
+				ds.Tables[0].Columns["OrderID"], ds.Tables[1].Columns["OrderID"]));
 
-    "Christina Berglund",
+				return ds.Tables[0];
 
-    "Hanna Moos",
+			}
 
-    "Frédérique Citeaux",
+			public string[] cutomerID = new string[]
 
-    "Martin Sommer",
+			{
 
-    "Laurence Lebihan",
+				"Maria Anders",
 
-    "Elizabeth Lincoln"
+				"Ana Trujilo",
 
-};
+				"Antonio Moreno",
 
+				"Thomas Hardy",
 
+				"Christina Berglund",
 
-public string[] cutomerName= new string[]
+				"Hanna Moos",
 
-{
+				"Frédérique Citeaux",
 
-    "ALFKI",
+				"Martin Sommer",
 
-    "ANATR",
+				"Laurence Lebihan",
 
-    "ANTON",
+				"Elizabeth Lincoln"
 
-    "AROUT",
+			};
 
-    "BERGS",
 
-    "BLAUS",
 
-    "BLONP",
+			public string[] cutomerName= new string[]
 
-    "BOLID",
+			{
 
-    "BONAP",
+				"ALFKI",
 
-    "BOTTM"			
+				"ANATR",
 
-};
+				"ANTON",
 
+				"AROUT",
 
+				"BERGS",
 
-public string[] country= new string[]
+				"BLAUS",
 
-{
+				"BLONP",
 
-    "Germany",
+				"BOLID",
 
-    "Mexico",
+				"BONAP",
 
-    "Mexico",
+				"BOTTM"			
 
-    "UK",
+			};
 
-    "Sweden",
 
-    "Germany",
 
-    "France",
+			public string[] country= new string[]
 
-    "Spain",
+			{
 
-    "France",
+				"Germany",
 
-    "Canada"			
+				"Mexico",
 
-};
+				"Mexico",
 
+				"UK",
 
+				"Sweden",
 
-public string[] shipcity= new string[]
+				"Germany",
 
-{
+				"France",
 
-    "Berlin",
+				"Spain",
 
-    "México D.F.",
+				"France",
 
-    "México D.F.",
+				"Canada"			
 
-    "London",
+			};
 
-    "Luleå",
 
-    "Mannheim",
 
-    "Strasbourg",
+			public string[] shipcity= new string[]
 
-    "Madrid",
+			{
 
-    "Marseille",
+				"Berlin",
 
-    "Tsawassen"			
+				"México D.F.",
 
-};
+				"México D.F.",
 
+				"London",
 
+				"Luleå",
 
-public string[] productsName = new string[]
+				"Mannheim",
 
-{
+				"Strasbourg",
 
-    "Laptop",
+				"Madrid",
 
-    "Mobile",
+				"Marseille",
 
-    "Watch",
+				"Tsawassen"			
 
-    "FootWear",
+			};
 
-    "Bike",
 
-    "Car",
 
-    "Tablet",
+			public string[] productsName = new string[]
 
-    "Mouse",
+			{
 
-    "CPU",
+				"Laptop",
 
-    "KeyBoard",
+				"Mobile",
 
-    "Bags",
+				"Watch",
 
-    "Books",
+				"FootWear",
 
-    "Fridge",
+				"Bike",
 
-    "TV",
+				"Car",
 
-    "DeskTop",
+				"Tablet",
 
-    "TelePhone",
+				"Mouse",
 
-    "DataCard",
+				"CPU",
 
-    "PenDrive", 
+				"KeyBoard",
 
-    "Camera",
+				"Bags",
 
-    "MP3"
+				"Books",
 
-};
+				"Fridge",
 
-}
-{% endhighlight %}
+				"TV",
+
+				"DeskTop",
+
+				"TelePhone",
+
+				"DataCard",
+
+				"PenDrive", 
+
+				"Camera",
+
+				"MP3"
+
+			};
+
+			}
+
 
 
 7. The highlighted lines in the above code example make the Master-Details View.  Now, set ItemsSource byusing the following code example. 
 
 
-{% highlight C# %}
 
-[C#]
 
-public class DTViewModel : INotifyPropertyChanged
 
-{
 
-    public DTRepositiory respository = new DTRepositiory();
+			public class DTViewModel : INotifyPropertyChanged
 
+			{
 
+				public DTRepositiory respository = new DTRepositiory();
 
-    private DataTable orderDetails;
 
-    private DataTable productDetails;
 
+				private DataTable orderDetails;
 
+				private DataTable productDetails;
 
-    private DataTable itemsSource;
 
 
+				private DataTable itemsSource;
 
-    public DTViewModel()
 
-    {
 
-        orderDetails = this.respository.GetOrdersDetail();
+				public DTViewModel()
 
-        productDetails = this.respository.GetProductDetail();
+				{
 
+					orderDetails = this.respository.GetOrdersDetail();
 
+					productDetails = this.respository.GetProductDetail();
 
-        itemsSource = this.respository.GetItemsSource(orderDetails, productDetails);
 
-    }
 
+					itemsSource = this.respository.GetItemsSource(orderDetails, productDetails);
 
+				}
 
-    public DataTable OrderDetails
 
-    {
 
-        get { return orderDetails; }
+				public DataTable OrderDetails
 
-        set
+				{
 
-        {
+					get { return orderDetails; }
 
-            orderDetails = value;
+					set
 
-            RaisePropertyChanged("OrderInfoCollection");
+					{
 
-        }
+						orderDetails = value;
 
-    }
+						RaisePropertyChanged("OrderInfoCollection");
 
+					}
 
+				}
 
-    public DataTable ProductDetails
 
-    {
 
-        get { return productDetails; }
+				public DataTable ProductDetails
 
-        set
+				{
 
-        {
+					get { return productDetails; }
 
-            productDetails = value;
+					set
 
-            RaisePropertyChanged("ProductDetails");
+					{
 
-        }
+						productDetails = value;
 
-    }
+						RaisePropertyChanged("ProductDetails");
 
+					}
 
+				}
 
-    public DataTable ItemsSource
 
-    {
 
-        get { return itemsSource; }
+				public DataTable ItemsSource
 
-        set
+				{
 
-        {
+					get { return itemsSource; }
 
-            itemsSource = value;
+					set
 
-            RaisePropertyChanged("ItemsSource");
+					{
 
-        }
+						itemsSource = value;
 
-    }
+						RaisePropertyChanged("ItemsSource");
 
+					}
 
+				}
 
-    public event PropertyChangedEventHandler PropertyChanged;
 
 
+				public event PropertyChangedEventHandler PropertyChanged;
 
-    public void RaisePropertyChanged(string propName)
 
-    {
 
-        if (this.PropertyChanged != null)
+				public void RaisePropertyChanged(string propName)
 
-            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
+				{
 
-    }
+					if (this.PropertyChanged != null)
 
-}
+						this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
 
-{% endhighlight %}
+				}
+
+			}
+
+
 
 8. Bind ItemsSource to the Grid.
 
 
-{% highlight xml %}
 
 
-[XAML]
-
-<Window x:Class="SimpleApplication.MainWindow"
-
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-        xmlns:local="clr-namespace:SimpleApplication"
-
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-        Title="MainWindow"
-
-        Width="525"
-
-        Height="350">
-
-    <Window.DataContext>
-
-        <local:DTViewModel />
-
-    </Window.DataContext>
-
-    <syncfusion:SfDataGrid x:Name="sfdatagrid"
-
-                           AutoGenerateColumns="True"
-
-                           AutoGenerateRelations="True"
-
-                           ColumnSizer="Star"
-
-                           ItemsSource="{Binding ItemsSource}" />
-
-</Window>
 
 
-{% endhighlight %}
+
+			<Window x:Class="SimpleApplication.MainWindow"
+
+					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+					xmlns:local="clr-namespace:SimpleApplication"
+
+					xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+
+					Title="MainWindow"
+
+					Width="525"
+
+					Height="350">
+
+				<Window.DataContext>
+
+					<local:DTViewModel />
+
+				</Window.DataContext>
+
+				<syncfusion:SfDataGrid x:Name="sfdatagrid"
+
+									   AutoGenerateColumns="True"
+
+									   AutoGenerateRelations="True"
+
+									   ColumnSizer="Star"
+
+									   ItemsSource="{Binding ItemsSource}" />
+
+			</Window>
+
+
+
 
 
 9. You can enable the AutogGenerateRelations. Internally, the SfDataGrid searches the relation from data set and makes the Nested Grid. To disable it, you can specify the relation names in the RelationalColumn. The following code example illustrates about the AutogGenerateRelations.
 
 
 
-{% highlight xml %}
 
-[XAML]
 
-<Window x:Class="SimpleApplication.MainWindow"
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			<Window x:Class="SimpleApplication.MainWindow"
 
-        xmlns:local="clr-namespace:SimpleApplication"
+					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        Title="MainWindow"
+					xmlns:local="clr-namespace:SimpleApplication"
 
-        Width="525"
+					xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-        Height="350">
+					Title="MainWindow"
 
-    <Window.DataContext>
+					Width="525"
 
-        <local:DTViewModel />
+					Height="350">
 
-    </Window.DataContext>
+				<Window.DataContext>
 
-    <syncfusion:SfDataGrid x:Name="sfdatagrid"
+					<local:DTViewModel />
 
-                           AutoGenerateColumns="True"
+				</Window.DataContext>
 
-                           AutoGenerateRelations="False"
+				<syncfusion:SfDataGrid x:Name="sfdatagrid"
 
-                           ColumnSizer="Star"
+									   AutoGenerateColumns="True"
 
-                           ItemsSource="{Binding ItemsSource}">
+									   AutoGenerateRelations="False"
 
-        <syncfusion:SfDataGrid.DetailsViewDefinition>
+									   ColumnSizer="Star"
 
-            <syncfusion:GridViewDefinition RelationalColumn="Orders_Products" />
+									   ItemsSource="{Binding ItemsSource}">
 
-        </syncfusion:SfDataGrid.DetailsViewDefinition>
+					<syncfusion:SfDataGrid.DetailsViewDefinition>
 
-    </syncfusion:SfDataGrid>
+						<syncfusion:GridViewDefinition RelationalColumn="Orders_Products" />
 
-</Window>
+					</syncfusion:SfDataGrid.DetailsViewDefinition>
 
-{% endhighlight %}
+				</syncfusion:SfDataGrid>
+
+			</Window>
+
+
 
 
 
@@ -974,13 +975,14 @@ public class DTViewModel : INotifyPropertyChanged
 
 
 
-![](Features_images/Features_img35.png)
+   ![](Features_images/Features_img35.png)
 
 
 
-_Data Grid with Master-Detail View from DataTable relations_
+   _Data Grid with Master-Detail View from DataTable relations_
+   {:.prettyprint}
 
-### Master-Detail View from Collection property
+## Master-Detail View from Collection property
 
 Master–Details DataGrid displays a hierarchical data in a tree format. This topic explains the simple procedure to create the Master-Details View DataGrid. 
 
@@ -989,285 +991,287 @@ Master–Details DataGrid displays a hierarchical data in a tree format. This to
 3. Now, create simple Data Source. 
 4. Create a business model with the Collection property. This value is displayed in a seperate Grid under the parent record in the Grid. 
 
-In the following code example, OrderInfo business class directly bounds to the SfDataGrid and it has ProductDetails property of type List<ProductInfo>. ProductDetails are displayed in the Grid like other property. You can display the ProductDetails property collection in a separate Grid under the OrderInfo record in the Grid using the NestedGrid. 
+   In the following code example, OrderInfo business class directly bounds to the SfDataGrid and it has ProductDetails property of type List<ProductInfo>. ProductDetails are displayed in the Grid like other property. You can display the ProductDetails property collection in a separate Grid under the OrderInfo record in the Grid using the NestedGrid. 
 
-Add the following code example in a newly created class file and save it as OrderInfo.cs
+   Add the following code example in a newly created class file and save it as OrderInfo.cs
 
 
-{% highlight C# %}
 
-[C#]
 
-public class OrderInfo
 
-{
 
-    int orderID;
+			public class OrderInfo
 
-    string customerId;
+			{
 
-    string country;
+				int orderID;
 
-    string customerName;
+				string customerId;
 
-    string shippingCity;
+				string country;
 
-    List<ProductInfo> productDetails;
+				string customerName;
 
+				string shippingCity;
 
+				List<ProductInfo> productDetails;
 
-    public int OrderID
 
-    {
 
-        get { return orderID; }
+				public int OrderID
 
-        set { orderID = value; }
+				{
 
-    }
+					get { return orderID; }
 
+					set { orderID = value; }
 
+				}
 
-    public string CustomerID
 
-    {
 
-        get { return customerId; }
+				public string CustomerID
 
-        set { customerId = value; }
+				{
 
-    }
+					get { return customerId; }
 
+					set { customerId = value; }
 
+				}
 
-    public string CustomerName
 
-    {
 
-        get { return customerName; }
+				public string CustomerName
 
-        set { customerName = value; }
+				{
 
-    }
+					get { return customerName; }
 
+					set { customerName = value; }
 
+				}
 
-    public string Country
 
-    {
 
-        get { return country; }
+				public string Country
 
-        set { country = value; }
+				{
 
-    }
+					get { return country; }
 
+					set { country = value; }
 
+				}
 
-    public string ShipCity
 
-    {
 
-        get { return shippingCity; }
+				public string ShipCity
 
-        set { shippingCity = value; }
+				{
 
-    }
+					get { return shippingCity; }
 
+					set { shippingCity = value; }
 
+				}
 
-    public List<ProductInfo> ProductDetails
 
-    {
 
-        get { return productDetails; }
+				public List<ProductInfo> ProductDetails
 
-        set { productDetails = value; }
+				{
 
-    }
+					get { return productDetails; }
 
-    public OrderInfo(int orderId, string customerName, string country, string
+					set { productDetails = value; }
 
-    customerId, string shipCity, List<ProductInfo> productdetails)
+				}
 
-    {
+				public OrderInfo(int orderId, string customerName, string country, string
 
-        this.OrderID = orderId;
+				customerId, string shipCity, List<ProductInfo> productdetails)
 
-        this.CustomerName = customerName;
+				{
 
-        this.Country = country;
+					this.OrderID = orderId;
 
-        this.CustomerID = customerId;
+					this.CustomerName = customerName;
 
-        this.ShipCity = shipCity;
+					this.Country = country;
 
-        this.ProductDetails = productdetails;
+					this.CustomerID = customerId;
 
-    }
+					this.ShipCity = shipCity;
 
-}
+					this.ProductDetails = productdetails;
 
-{% endhighlight %}
+				}
 
-The ProductDetails property is a List of ProductInfo type. Here you can find the class information of the ProductInfo class. You can add the following code example in a newly created class file and save it as ProductInfo.cs file.
+			}
 
 
 
-{% highlight C# %}
+   The ProductDetails property is a List of ProductInfo type. Here you can find the class information of the ProductInfo class. You can add the following code example in a newly created class file and save it as ProductInfo.cs file.
 
-[C#]    
-public class ProductInfo
-{    
-int orderId;    
-string productName;    
-public int OrderID   
- {       
- get { return orderId; }        
- set { orderId = value; }   
- }   
-public string ProductName    
- {        
- get { return productName; }        
- set { productName = value; }    
- }
-}
-{% endhighlight %}
-> _Note: Both parent collection and child collection have key property OrderID.
+
+
+
+
+    
+			public class ProductInfo
+			{    
+			int orderId;    
+			string productName;    
+			public int OrderID   
+			 {       
+			 get { return orderId; }        
+			 set { orderId = value; }   
+			 }   
+			public string ProductName    
+			 {        
+			 get { return productName; }        
+			 set { productName = value; }    
+			 }
+			}
+
+
+   > Note: Both parent collection and child collection have key property OrderID.
 
 5. Now, load the data for a prepared collection.  Add the following code example in a newly created class file and save it as OrderInfoRepositiory.cs file_._
 
 
-{% highlight C# %}
 
-[C#]
 
-public class OrderInfoRepositiory
 
-{
 
-    ObservableCollection<OrderInfo> orderCollection;        
+			public class OrderInfoRepositiory
 
-    public ObservableCollection<OrderInfo> OrderInfoCollection
+			{
 
-    {
+				ObservableCollection<OrderInfo> orderCollection;        
 
-        get { return orderCollection; }
+				public ObservableCollection<OrderInfo> OrderInfoCollection
 
-        set { orderCollection = value; }
+				{
 
-    }
+					get { return orderCollection; }
 
-    public OrderInfoRepositiory()
+					set { orderCollection = value; }
 
-    {
+				}
 
-        orderCollection = new ObservableCollection<OrderInfo>();
+				public OrderInfoRepositiory()
 
-        this.GenerateProducts();
+				{
 
-        OrderInfoCollection = GenerateOrders();            
+					orderCollection = new ObservableCollection<OrderInfo>();
 
-    }
+					this.GenerateProducts();
 
-    public ObservableCollection<OrderInfo> GenerateOrders()
+					OrderInfoCollection = GenerateOrders();            
 
-    {
+				}
 
-        ObservableCollection<OrderInfo> orders = new ObservableCollection<OrderInfo>();
+				public ObservableCollection<OrderInfo> GenerateOrders()
 
+				{
 
+					ObservableCollection<OrderInfo> orders = new ObservableCollection<OrderInfo>();
 
-        orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin", getorder(1001)));
 
-        orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "México D.F.", getorder(1002)));
 
-        orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "México D.F.", getorder(1003)));
+					orders.Add(new OrderInfo(1001, "Maria Anders", "Germany", "ALFKI", "Berlin", getorder(1001)));
 
-        orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London", getorder(1004)));
+					orders.Add(new OrderInfo(1002, "Ana Trujilo", "Mexico", "ANATR", "México D.F.", getorder(1002)));
 
-        orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Luleå", getorder(1005)));
+					orders.Add(new OrderInfo(1003, "Antonio Moreno", "Mexico", "ANTON", "México D.F.", getorder(1003)));
 
-        orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim", getorder(1006)));
+					orders.Add(new OrderInfo(1004, "Thomas Hardy", "UK", "AROUT", "London", getorder(1004)));
 
-        orders.Add(new OrderInfo(1007, "Frédérique Citeaux", "France", "BLONP", "Strasbourg", getorder(1007)));
+					orders.Add(new OrderInfo(1005, "Christina Berglund", "Sweden", "BERGS", "Luleå", getorder(1005)));
 
-        orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid", getorder(1008)));
+					orders.Add(new OrderInfo(1006, "Hanna Moos", "Germany", "BLAUS", "Mannheim", getorder(1006)));
 
-        orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille", getorder(1009)));
+					orders.Add(new OrderInfo(1007, "Frédérique Citeaux", "France", "BLONP", "Strasbourg", getorder(1007)));
 
-        orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen", getorder(1010)));
+					orders.Add(new OrderInfo(1008, "Martin Sommer", "Spain", "BOLID", "Madrid", getorder(1008)));
 
+					orders.Add(new OrderInfo(1009, "Laurence Lebihan", "France", "BONAP", "Marseille", getorder(1009)));
 
+					orders.Add(new OrderInfo(1010, "Elizabeth Lincoln", "Canada", "BOTTM", "Tsawassen", getorder(1010)));
 
-        return orders;
 
-    }
 
-    List<ProductInfo> prod = new List<ProductInfo>();
+					return orders;
 
-    public void GenerateProducts()
+				}
 
-    {
+				List<ProductInfo> prod = new List<ProductInfo>();
 
-            prod.Add(new ProductInfo() { OrderID = 1001, ProductName = "Laptop" });
+				public void GenerateProducts()
 
-            prod.Add(new ProductInfo() { OrderID = 1001, ProductName = "Mobile" });
+				{
 
-            prod.Add(new ProductInfo() { OrderID = 1001, ProductName = "HeadSet" });
+						prod.Add(new ProductInfo() { OrderID = 1001, ProductName = "Laptop" });
 
-            prod.Add(new ProductInfo() { OrderID = 1002, ProductName = "FootWear" });
+						prod.Add(new ProductInfo() { OrderID = 1001, ProductName = "Mobile" });
 
-            prod.Add(new ProductInfo() { OrderID = 1002, ProductName = "Bags" });
+						prod.Add(new ProductInfo() { OrderID = 1001, ProductName = "HeadSet" });
 
-            prod.Add(new ProductInfo() { OrderID = 1002, ProductName = "DataCard" });
+						prod.Add(new ProductInfo() { OrderID = 1002, ProductName = "FootWear" });
 
-            prod.Add(new ProductInfo() { OrderID = 1003, ProductName = "TV" });
+						prod.Add(new ProductInfo() { OrderID = 1002, ProductName = "Bags" });
 
-            prod.Add(new ProductInfo() { OrderID = 1003, ProductName = "Fridge" });
+						prod.Add(new ProductInfo() { OrderID = 1002, ProductName = "DataCard" });
 
-            prod.Add(new ProductInfo() { OrderID = 1004, ProductName = "Watch" });
+						prod.Add(new ProductInfo() { OrderID = 1003, ProductName = "TV" });
 
-            prod.Add(new ProductInfo() { OrderID = 1004, ProductName = "Bike" });
+						prod.Add(new ProductInfo() { OrderID = 1003, ProductName = "Fridge" });
 
-            prod.Add(new ProductInfo() { OrderID = 1005, ProductName = "Car" });
+						prod.Add(new ProductInfo() { OrderID = 1004, ProductName = "Watch" });
 
-            prod.Add(new ProductInfo() { OrderID = 1005, ProductName = "CPU" });
+						prod.Add(new ProductInfo() { OrderID = 1004, ProductName = "Bike" });
 
-            prod.Add(new ProductInfo() { OrderID = 1005, ProductName = "KeyBoard" });
+						prod.Add(new ProductInfo() { OrderID = 1005, ProductName = "Car" });
 
-            prod.Add(new ProductInfo() { OrderID = 1006, ProductName = "Books" });
+						prod.Add(new ProductInfo() { OrderID = 1005, ProductName = "CPU" });
 
-            prod.Add(new ProductInfo() { OrderID = 1006, ProductName = "PenDrive" });
+						prod.Add(new ProductInfo() { OrderID = 1005, ProductName = "KeyBoard" });
 
-            prod.Add(new ProductInfo() { OrderID = 1007, ProductName = "Camera" });
+						prod.Add(new ProductInfo() { OrderID = 1006, ProductName = "Books" });
 
-            prod.Add(new ProductInfo() { OrderID = 1008, ProductName = "MP3" });
+						prod.Add(new ProductInfo() { OrderID = 1006, ProductName = "PenDrive" });
 
-            prod.Add(new ProductInfo() { OrderID = 1008, ProductName = "DeskTop" });
+						prod.Add(new ProductInfo() { OrderID = 1007, ProductName = "Camera" });
 
-            prod.Add(new ProductInfo() { OrderID = 1008, ProductName = "MemoryCard" });
+						prod.Add(new ProductInfo() { OrderID = 1008, ProductName = "MP3" });
 
-    }
+						prod.Add(new ProductInfo() { OrderID = 1008, ProductName = "DeskTop" });
 
-    public List<ProductInfo> getorder(int i)
+						prod.Add(new ProductInfo() { OrderID = 1008, ProductName = "MemoryCard" });
 
-    {
+				}
 
-        List<ProductInfo> product = new List<ProductInfo>();
+				public List<ProductInfo> getorder(int i)
 
-        foreach (var or in prod)
+				{
 
-            if (or.OrderID == i)
+					List<ProductInfo> product = new List<ProductInfo>();
 
-                product.Add(or);
+					foreach (var or in prod)
 
-        return product;
+						if (or.OrderID == i)
 
-    }
+							product.Add(or);
 
-}
-{% endhighlight %}
+					return product;
+
+				}
+
+			}
+
+   {:.prettyprint}			
 
 
 1. Now, open XAML page in your application. Add names space for the SfDataGrid and create simple application with the SfDataGrid.
@@ -1275,63 +1279,64 @@ public class OrderInfoRepositiory
 3. Create Details-ViewGrid as in the following code example. There are some limitations for the Details-View Grid that is refered by using Master-Details View Section.
 
 
-{% highlight xml %}
 
-[XAML]
 
-<Window x:Class="SimpleApplication.MainWindow"
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			<Window x:Class="SimpleApplication.MainWindow"
 
-        xmlns:local="clr-namespace:SimpleApplication"
+					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        Title="MainWindow"
+					xmlns:local="clr-namespace:SimpleApplication"
 
-        Width="525"
+					xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-        Height="350">
+					Title="MainWindow"
 
-    <Window.DataContext>
+					Width="525"
 
-        <local:OrderInfoRepositiory />
+					Height="350">
 
-    </Window.DataContext>
+				<Window.DataContext>
 
-    <syncfusion:SfDataGrid AutoGenerateColumns="True"
+					<local:OrderInfoRepositiory />
 
-                           ColumnSizer="Star"
+				</Window.DataContext>
 
-                           ItemsSource="{Binding OrderInfoCollection}">
+				<syncfusion:SfDataGrid AutoGenerateColumns="True"
 
-        <syncfusion:SfDataGrid.DetailsViewDefinition>
+									   ColumnSizer="Star"
 
-           <syncfusion:GridViewDefinition RelationalColumn="ProductDetails" />
+									   ItemsSource="{Binding OrderInfoCollection}">
 
-        </syncfusion:SfDataGrid.DetailsViewDefinition>
+					<syncfusion:SfDataGrid.DetailsViewDefinition>
 
-    </syncfusion:SfDataGrid>
+					   <syncfusion:GridViewDefinition RelationalColumn="ProductDetails" />
 
-</Window>
-{% endhighlight %}
+					</syncfusion:SfDataGrid.DetailsViewDefinition>
+
+				</syncfusion:SfDataGrid>
+
+			</Window>
+
 
 
 
 
 4. Execute the application; Grid is loaded with Master Details Grid. Click the first record’s expander to render the following output.
 
-![](Features_images/Features_img36.png)
+   ![](Features_images/Features_img36.png)
 
 
 
-_Data Grid with Master-Detail View from Collection property_
+   _Data Grid with Master-Detail View from Collection property_
+   {:.prettyprint}
+   
+## How To
 
-### How To
-
-#### Populate through Events
+### Populate through Events
 
 By handling the DetailsViewExpanding event, you can populate the NestedGrid with a new ItemsSource or you can modify the existing ItemsSource. To achieve this, you have to set the ItemsSource by using the DetailsViewItemsSource property. The following code example illustrates this.
 
@@ -1339,7 +1344,7 @@ By handling the DetailsViewExpanding event, you can populate the NestedGrid with
 {% highlight C# %}
 
 
-[C#]
+
 
 private void DataGrid_DetailsViewExpanding(object sender, GridDetailsViewExpandingEventArgs e)
 
@@ -1361,7 +1366,7 @@ private void DataGrid_DetailsViewExpanding(object sender, GridDetailsViewExpandi
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
 
@@ -1379,7 +1384,8 @@ private void DataGrid_DetailsViewExpanding(object sender, GridDetailsViewExpandi
 
 </syncfusion:SfDataGrid>
 {% endhighlight %}
-#### Refresh UI when adding the Child Grid records to the Grid
+
+### Refresh UI when adding the Child Grid records to the Grid
 
 When you set the HideEmptyGridViewDefinition to False and add the items to the DetailsView during Execution time, it does not show the DetailsViewExpander until the Grid is refreshed. You can refresh the particular row alone instead of refreshing the entire Grid by using the UpdateDataRow (int rowIndex) method. To access this method, you can include the Syncfusion.UI.Xaml.Grid.Helpers namespace.
 
@@ -1391,7 +1397,7 @@ The following code example shows you how to add the item to the DetailsView in a
 
 {% highlight C# %}
 
-[C#]
+
 
 private void AddItem(object sender, RoutedEventArgs e)
 
@@ -1413,7 +1419,7 @@ private void AddItem(object sender, RoutedEventArgs e)
 {% endhighlight %}
 
 
-#### Customize columns Master-Detail view
+### Customize columns Master-Detail view
 
 You can cusomtize columns and other settings for the Master-Details view Grid for a particular level by using the GridViewDefinition.DataGrid property. In the following code example, Columns are customized for the Master-Details view.
 
@@ -1422,7 +1428,7 @@ You can cusomtize columns and other settings for the Master-Details view Grid fo
 
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -1469,7 +1475,7 @@ The following code example explains how to customize column in code behind.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -1501,7 +1507,7 @@ The following code example explains how to customize column in code behind.
 {% highlight C# %}
 
 
-[C#]
+
 
 this.DetailsView.Columns.Add(new GridTextColumn() { MappingName = "OrderID" });
 
@@ -1525,7 +1531,7 @@ You can customize the columns by using the AutoGeneratingRelations event (when y
 {% highlight C# %}
 
 
-[C#]
+
 
 sfdatagrid.AutoGeneratingRelations += sfdatagrid_AutoGeneratingRelations;
 
@@ -1549,14 +1555,14 @@ The following screenshot displays the output.
 
 _Customized columns Master-Detail view_
 
-#### Handle events for Master-Detail View
+### Handle events for Master-Detail View
 
 You can handle events for the actions in the Master-DetailView like in the Parent Grid.You can wire the events by using the GridViewDefinition.DataGrid from XAML or code behind. 
 
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid.DetailsViewDefinition>
 
@@ -1582,7 +1588,7 @@ You can handle events for the actions in the Master-DetailView like in the Paren
 {% highlight C# %}
 
 
-[C#]
+
 
 this.FirstDetailsViewGrid.CurrentCellBeginEdit += DetailsView_CurrentCellBeginEdit;
 
@@ -1596,7 +1602,7 @@ When Autogenerating columns, you can wire event by using the AutoGeneratingRelat
 
 {% highlight C# %}
 
-[C#]
+
 
 void dataGrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.AutoGeneratingRelationsArgs e)
 
@@ -1629,14 +1635,14 @@ void DataGrid_CurrentCellBeginEdit(object sender, Syncfusion.UI.Xaml.Grid.Curren
 }
 {% endhighlight %}
 
-#### Set properties for Master-Detail View
+### Set properties for Master-Detail View
 
 Master-Details View Grid has the GridViewDefintion property that has the DataGrid property. You can set properties for the Master-Details view by using the GridViewDefinition.DataGrid property. The following code example explains you how to set properties in Master-Details View by using the XAML.
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window x:Class="SimpleApplication.MainWindow"
 
@@ -1717,7 +1723,7 @@ The following code example explains how to set the properties for Master-Details
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -1739,7 +1745,7 @@ You can set the properties for the Master-Details View in the AutoGeneratingRela
 
 {% highlight C# %}
 
-[C#]
+
 
 sfdatagrid.AutoGeneratingRelations += sfdatagrid_AutoGeneratingRelations;
 
@@ -1763,7 +1769,7 @@ void sfdatagrid_AutoGeneratingRelations(object sender, Syncfusion.UI.Xaml.Grid.A
 
 _Master-Details View with set properties_
 
-#### Get SelectedItem in DetailsViewGrid
+### Get SelectedItem in DetailsViewGrid
 
 The SfDataGrid has the SelectedDetailsViewGrid property that returns the Selected Details-View Grid when you use GridViewDefinition. You can access the SelectedItem or SelectedItems via the SelectedDetailsViewGrid.SelectedItem property. You can’t access the SelectedItem property via the GridViewDefinition.DataGrid property. 
 
@@ -1771,7 +1777,7 @@ The SfDataGrid has the SelectedDetailsViewGrid property that returns the Selecte
 
 {% highlight C# %}
 
-[C#]
+
 
 var data = sfdatagrid.SelectedDetailsViewGrid.SelectedItem;
 
@@ -1783,12 +1789,12 @@ The following code is to get the selectedItem from the DetailsGrid of Master-Det
 
 {% highlight C# %}
 
-[C#]
+
 
 var data = sfdatagrid.SelectedDetailsViewGrid.SelectedDetailsViewGrid.SelectedItem;
 {% endhighlight %}
 
-#### Override selection controller in the DetailsViewDataGrid
+### Override selection controller in the DetailsViewDataGrid
 
 Like the SfDataGrid, you can override selection controller in the DetailsViewDataGrid also. But, you cannot directly assign custom selection controller to the DataGrid defined in the GridViewDefintion like other properties like AllowEditing, AllowSorting, AllowFiltering, etc. Instead, you can assign custom selection controller to the DetailsViewDataGrid by using the DetailsViewLoading event. The following code illustrates how to assign custom selection controller to the DetailsViewDataGrid.
 
@@ -1796,7 +1802,7 @@ Like the SfDataGrid, you can override selection controller in the DetailsViewDat
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -1817,7 +1823,7 @@ Like the SfDataGrid, you can override selection controller in the DetailsViewDat
 
 {% highlight C# %}
 
-[C#]
+
 
 
 

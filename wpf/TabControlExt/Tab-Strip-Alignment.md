@@ -24,7 +24,6 @@ To place the TabStrip to the "Left" of the TabControlExt, use the below code.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -48,7 +47,6 @@ To place the TabStrip to the "Left" of the TabControlExt, use the below code.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -126,7 +124,6 @@ Here is the code snippet for rotating the text when tab strip is vertically plac
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -150,7 +147,6 @@ Here is the code snippet for rotating the text when tab strip is vertically plac
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 

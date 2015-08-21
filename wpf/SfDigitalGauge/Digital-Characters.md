@@ -15,7 +15,7 @@ The Digital Characters in the Digital Gauge can be viewed in different types of 
 
 {% highlight xml %}
 
-[XAML]
+
 
    <syncfusion:SfDigitalGauge Value="GAUGE" />    
 {% endhighlight %}
@@ -23,7 +23,7 @@ The Digital Characters in the Digital Gauge can be viewed in different types of 
 
 {% highlight C# %}
 
-[C#]
+
 
             SfDigitalGauge digitalgauge = new SfDigitalGauge();
 
@@ -48,7 +48,7 @@ The digital characters set with the value property of the Digital Gauge are disp
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfDigitalGauge Value="12345"  CharacterType="SegmentSeven" />
 
@@ -57,7 +57,7 @@ The digital characters set with the value property of the Digital Gauge are disp
 
 {% highlight C# %}
 
-[C#]
+
 
             SfDigitalGauge digitalgauge = new SfDigitalGauge();
 
@@ -86,14 +86,14 @@ The digital characters set with the value property of the Digital Gauge are disp
 
 {% highlight xml %}
 
-[XAML]  
+  
 
 <syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentFourteen" />
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]
+
 
             SfDigitalGauge digitalgauge = new SfDigitalGauge();
 
@@ -122,14 +122,14 @@ The digital characters set with the value property of the digital gauge are disp
 
 {% highlight xml %}
 
-[XAML]
+
 
   <syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="SegmentSixteen" /> 
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]
+
 
             SfDigitalGauge digitalgauge = new SfDigitalGauge();
 
@@ -158,14 +158,14 @@ The digital characters set with the value property of the Digital Gauge are disp
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfDigitalGauge Value="SYNCFUSION" CharacterType="EightCrossEightDotMatrix" />
 {% endhighlight %}
 
 
 {% highlight xml %}
-[XAML]  
+  
 
             SfDigitalGauge digitalgauge = new SfDigitalGauge();
 

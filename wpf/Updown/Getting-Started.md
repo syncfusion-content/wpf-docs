@@ -37,7 +37,6 @@ The following code example illustrates how to add the UpDown control to an appli
 
 {%highlight c#%}
 
-[C#]
 
 
 UpDown upDown = new UpDown() { Height = 25, Width = 85 };

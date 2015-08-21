@@ -8,21 +8,19 @@ documentation: ug
 ---
 
 
-## PivotGrid Field List
+# PivotGrid Field List
 
 With the current implementation of ‘Grouping bar, users cannot add or delete items in it. The Delete operation can be easily performed using the context menu, but in case of adding an item there should be a separate window, which should hold the fields present in the Item Source. In order to achieve this, a window called PivotGrid Field List is available in PivotGrid control, which is bound to a collection of PivotItems defined in the PivotFields property of PivotGridControl. 
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 This feature will be useful for applications that need to configure PivotGrid at run-time, that is to add/remove items to/from PivotGrid at run-time
 
-#### Adding PivotGrid Field List
+### Adding PivotGrid Field List
 
 PivotGrid Field List (or Dynamic Field List ) can be launched by setting the ShowFieldList property to true or by clicking on the ShowFieldList menu item of Grouping bar context menu. PivotGrid Field List is bound to PivotFilelds property of PivotGridControl, which is a collection of  PivotItems. PivotFields can be added via code-behind and XAML, as shown in the following code snippets. 
 
 {% highlight xml %} 
-
-[XAML]
 
         <syncfusion:PivotGridControl ShowFieldList="True"
 
@@ -70,7 +68,6 @@ PivotGrid Field List (or Dynamic Field List ) can be launched by setting the Sho
 
 {% highlight C# %}  
 
-[C#]
 
   /// Adding Pivot Columns
 
@@ -102,7 +99,6 @@ PivotGrid Field List (or Dynamic Field List ) can be launched by setting the Sho
 
 {% highlight vbnet %} 
 
-[VB]
 
             ' Adding Pivot Columns
 
@@ -142,11 +138,11 @@ PivotGridControl Table
 
 <table>
     <tr>
-        <td>{{ '**Property**' | markdownify }}</td>
-		<td>{{ '**Description**' | markdownify }}</td>
-		<td>{{ '**Type**' | markdownify }}</td>
-		<td>{{ '**Data Type**' | markdownify }}</td>
-		<td>{{ '**Reference links**' | markdownify }}</td>
+        <th>{{ '**Property**' | markdownify }}</th>
+		<th>{{ '**Description**' | markdownify }}</th>
+		<th>{{ '**Type**' | markdownify }}</th>
+		<th>{{ '**Data Type**' | markdownify }}</th>
+		<th>{{ '**Reference links**' | markdownify }}</th>
 	</tr>
 	
     <tr>
@@ -192,7 +188,7 @@ GroupingBar Table
 	</tr>
 </table>
 
-#### Sample Link
+### Sample Link
 
 To access a Conditional Formatting sample
 

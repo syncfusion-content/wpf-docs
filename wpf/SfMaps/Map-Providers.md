@@ -22,7 +22,6 @@ You can enable this feature by setting the layerType property value as "OSM".
 {% highlight xml %}
 
 
-[XAML]
 
 
 
@@ -60,7 +59,7 @@ The bing Map key is provided as input to this key property. The Bing Map key c
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -90,7 +89,7 @@ The following screenshot illustrates the Aerial View
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -120,7 +119,7 @@ The following screenshot illustrates the Road view.
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 

@@ -11,15 +11,15 @@ documentation: ug
 
 DataVirtualization is a term that achieves Virtualization for the actual data objects that are bound to the DataGrid. For small collection of basic data objects, the memory consumption is not significant; however for large collections, the memory consumption becomes very significant. For these reasons, it is desirable to use some sort of DataVirtualization mechanism to limit the amount of data object that is to be retrieved and instantiated in memory.
 
-### Overview
+## Overview
 
 DataVirtualization support enables you to work with huge data sources. DataGrid control creates records on demand by automatically enabling Data Virtualization when it is bounded to a data source of VirtualizingCollectionView.
 
-### Enabling Virtualization in SfDataGrid
+## Enabling Virtualization in SfDataGrid
 
 You can assign VirtualizingCollectionView object as ItemsSource for DataGrid to enable Virtualization.
 
-### VirtualizingCollectionView
+## VirtualizingCollectionView
 
 VirtualizingCollectionView is a type of ICollectionViewAdv that provides the functionality to create records that are needed. It creates the records for the rows that are in View.
 
@@ -28,7 +28,7 @@ The following code example illustrates how to create a VirtualizingCollectionVie
 
 {% highlight C# %}
 
-[C#]
+
 
 // Create the VirtualizingCollectionView object with enumerable data source.
 
@@ -38,7 +38,7 @@ VirtualizingCollectionView GridItemsSource = new VirtualizingCollectionView(enum
 
 {% highlight xml %}
 }
-[XAML]
+
 
 <Window.DataContext>
 
@@ -64,7 +64,7 @@ The following code example illustrates how to assign a GridVirtualizingCollectio
 
 {% highlight C# %}
 
-[C#]
+
 
 //Create the GridVirtualizingCollectionView object with enumerable data source.
 
@@ -73,7 +73,7 @@ GridVirtualizingCollectionView GridItemsSource = new GridVirtualizingCollectionV
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -84,11 +84,11 @@ GridVirtualizingCollectionView GridItemsSource = new GridVirtualizingCollectionV
                          ItemsSource="{Binding GridItemSource}"/>
 {% endhighlight %}
 
-### Custom Data Virtualization
+## Custom Data Virtualization
 
 Custom Data Virtualization is helpful for retrieving data from data sources on demand. DataGrid provides extensive support to achieve Custom Data Virtualization by inheriting the VirtualizingCollectionView class and overriding the virtual methods. To achieve Custom Data Virtualization, you can use a parameterless constructor of VirtualizingCollectionView.
 
-#### Virtual Methods of VirtualizingCollectionView
+### Virtual Methods of VirtualizingCollectionView
 
 VirtualizingCollectionView contains the following virtual methods to override operations in CustomVirtualizingCollectionView class.
 
@@ -96,10 +96,10 @@ _Virtual Methods Table_
 
 <table>
 <tr>
-<td>
-Virtual Method</td><td>
-Prototype</td><td>
-Description</td></tr>
+<th>
+Virtual Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 GetItemAt</td><td>
@@ -143,14 +143,14 @@ This method returns the Collection of group result after apply grouping.</td></t
 </table>
 
 
-> _Note: GetInternalSource and GetViewRecorCount return the value based on filtering._
+> Note: GetInternalSource and GetViewRecorCount return the value based on filtering.
 
 The following code example illustrates the Custom Data Virtualization class.
 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -242,7 +242,7 @@ public class CustomVirtualizingClass : VirtualizingCollectionView
 
 {% endhighlight %}
 
-> _Note: You can override the GetItemAt, GetIndexOf and GetViewRecordCount virtual methods when you create the custom virtualization class._
+> Note: You can override the GetItemAt, GetIndexOf and GetViewRecordCount virtual methods when you create the custom virtualization class.
 
 You can override the virtual methods in the VirtualizingCollectionView when you perform Sorting, Filtering and Grouping operations by using the Custom Data Virtualization class.
 
@@ -251,7 +251,7 @@ The following code example illustrates the methods that are used to achieve Sort
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -331,28 +331,29 @@ The following code example illustrates the methods that are used to achieve Sort
 
 {% endhighlight %}
 
-#### Limitations of Data Virtualization
+### Limitations of Data Virtualization
 
 DataVirtualization in DataGrid has certain limitations. They are as follows:
 
 * Data reordering does not take place when a property is changed.
 * Data Virtualization does not support Paging.
-### Incremental Loading
+
+## Incremental Loading
 
 
 Incremental Loading allows you to load a subset of data to DataGrid sequentially. It provides support for fast and fluid scrolling and loading a huge set of data. 
 
-#### Enabling Incremental Loading in SfDataGrid
+### Enabling Incremental Loading in SfDataGrid
 
 You can enable IncrementalLoading in DataGrid by creating a data source with ISupportIncrementalLoading interface and assigning it to the ItemsSource property of DataGrid. ISupportIncrementalLoading interface has the following two members:
 
-#### LoadMoreItemsAsync Method
+### LoadMoreItemsAsync Method
 
 This method helps to load data incrementaly to the DataGrid. This method is called to fetch the initial set of data when the DataGrid loads. When you scroll the DataGrid and reach the last record of loaded data, DataGrid requests this method to load the next subset of data.
 
-> _Note: LoadMoreItemsAsync() method is called when HasMoreItems property is set to ‘true’._
+> Note: LoadMoreItemsAsync() method is called when HasMoreItems property is set to ‘true’.
 
-#### HasMoreItems
+### HasMoreItems
 
 This is a boolean property that specifies whether the LoadMoreItemsAsync method is called or not. HasMoreItems is set to ‘false’ when the data source has no more data to load.
 
@@ -365,7 +366,7 @@ The following code example illustrates adding the IncrementaList<T> class as Ite
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -437,7 +438,7 @@ class IncrementalLoadingViewModel
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window.DataContext>
 
@@ -459,7 +460,7 @@ class IncrementalLoadingViewModel
 
 
 
-#### Limitations of Incremental Loading
+### Limitations of Incremental Loading
 
 * Sorting, Filtering and Grouping are applied only for loaded data.
 * Summaries are calculated based on loaded data.

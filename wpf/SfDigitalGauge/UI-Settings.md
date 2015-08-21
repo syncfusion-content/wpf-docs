@@ -25,14 +25,14 @@ The distance between the characters can be set by using the CharacterSpacing p
 
 {% highlight xml %}
 
-[XAML]
+
 
            <syncfusion:SfDigitalGauge  Value="SYNCFUSION" CharacterSpacing="50"/>
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]
+
 
             SfDigitalGauge digitalgauge = new SfDigitalGauge();
 
@@ -61,14 +61,14 @@ The Stroke of the character can be changed by using CharacterStroke property.
 
 {% highlight xml %}
 
-[XAML]
+
 
        <syncfusion:SfDigitalGauge  Value="SYNCFUSION"   CharacterType="SegmentFourteen" CharacterStroke="Yellow" />
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]
+
 
             SfDigitalGauge digitalgauge = new SfDigitalGauge();
 
@@ -99,7 +99,7 @@ By using SegmentThickness property, you can adjust the thickness of the segmen
 
 {% highlight xml %}
 
-[XAML]
+
 
       <syncfusion:SfDigitalGauge  Value="SYNCFUSION"  CharacterType="SegmentFourteen  SegmentThickness="5"/>
 {% endhighlight %}
@@ -107,7 +107,7 @@ By using SegmentThickness property, you can adjust the thickness of the segmen
 {% highlight C# %}
 
 
-[C#]
+
 
 
 
@@ -146,14 +146,14 @@ The Characters are aligned by using EnableRTLFormat property. The default value 
 
 {% highlight xml %}
 
-[XAML]
+
 
       <syncfusion:SfDigitalGauge  Value="SYNCFUSION"  CharacterType="SegmentFourteen"   EnableRTLFormat="True" />
 {% endhighlight %}
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -188,7 +188,7 @@ DimmedBrush property is used to apply brushes to the dimmed segment. This prope
 
 
 {% highlight xml %}
-[XAML]
+
 
       <syncfusion:SfDigitalGauge  Value="SYNCFUSION" CharacterType="SegmentFourteen"  DimmedBrush="White" />
 
@@ -196,7 +196,7 @@ DimmedBrush property is used to apply brushes to the dimmed segment. This prope
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -232,13 +232,13 @@ DimmedBrushOpacity property is used to set the opacity of the brushes to the dim
 
 {% highlight xml %}
 
-[XAML]
+
 
       <syncfusion:SfDigitalGauge  Value="SYNCFUSION" DimmedBrush="White"  DimmedBrushOpacity="20" CharacterType="SegmentFourteen" />
 {% endhighlight %}
 
 {% highlight C# %}
-[C#]
+
 
             SfDigitalGauge digitalgauge = new SfDigitalGauge();
 

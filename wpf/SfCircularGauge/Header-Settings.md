@@ -15,27 +15,28 @@ Header support allows you to show text, an image, or any UI content inside the G
 
 ## Adding Header in Circular Gauge
 
-### To add a header in the gauge, the following properties are required:
+To add a header in the gauge, the following properties are required:
 
 * GaugeHeader
 * GaugeHeaderPosition
 
 
 
-#### Gauge Header
+## Gauge Header
 
 The GaugeHeader is an object that can be used to set a unique header for the Circular Gauge. You can add text as well as images as headers in a circular gauge and only one header can be added in a circular gauge.
 
 
 
-#### GaugeHeaderPosition
+## GaugeHeaderPosition
 
 This property places the header in a Circular Gauge. The value for GaugeHeaderPosition is specified in point type. By default, it is placed at (0, 0).
 
-##### Code Example:
+### Code Example:
+
 {% highlight xml %}
 
-[XAML]
+
 
         <syncfusion:SfCircularGauge GaugeHeaderPosition="300,600" >
 
@@ -54,7 +55,7 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
 
 {% highlight C# %}
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -70,7 +71,7 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
 
 
 
-###### Screenshot:
+### Screenshot:
 
 ![](Header-Settings_images/Header-Settings_img1.png)
 
@@ -78,12 +79,12 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
 
 
 
-#### Gauge Header as Text
+## Gauge Header as Text
 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -134,7 +135,7 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
 
 {% highlight C# %}
 
-[C#]
+
 
             SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -174,17 +175,17 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
 {% endhighlight %}
 
 
-##### Screenshot:
+### Screenshot:
 
 ![](Header-Settings_images/Header-Settings_img2.png)
 
 
 
-#### Gauge Header as UI Element
+## Gauge Header as UI Element
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -221,7 +222,7 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
 
 {% highlight C# %}
 
-[C#]
+
 
            SfCircularGauge circularGauge = new SfCircularGauge();
 
@@ -261,7 +262,7 @@ This property places the header in a Circular Gauge. The value for GaugeHeaderPo
 
 
 
-##### Screenshot:
+### Screenshot:
 
 ![](Header-Settings_images/Header-Settings_img3.png)
 

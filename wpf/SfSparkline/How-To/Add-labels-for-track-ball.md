@@ -11,7 +11,7 @@ documentation: ug
 
 We can add labels for track ball to show the corresponding values. In order to add labels for the trackball, you need to subscribe the event OnSparklineMouseMove and you can get the following data’s from event argument.
 
-[XAML]
+{% highlight xml %}
 
       <Page.DataContext>
 
@@ -23,9 +23,9 @@ We can add labels for track ball to show the corresponding values. In order to a
 
             </Syncfusion:SfLineSparkline>
 
+{% endhighlight %}
 
-
-[C#]
+{% highlight C# %}
 
     ContentPresenter info;
 
@@ -52,10 +52,11 @@ We can add labels for track ball to show the corresponding values. In order to a
             info.Arrange(new Rect(args.Coordinate.X,args.Coordinate.Y,info.ActualWidth,info.ActualHeight));
 
         }
+		{% endhighlight %}
 
 Following is the snapshot for track ball labels,
 
-{{ '![C:/Users/ApoorvahR/Desktop/13.png](Add-labels-for-track-ball_images/Add-labels-for-track-ball_img1.png)' | markdownify }}
+![C:/Users/ApoorvahR/Desktop/13.png](Add-labels-for-track-ball_images/Add-labels-for-track-ball_img1.png)
 
 
 

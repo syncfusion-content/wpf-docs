@@ -17,7 +17,7 @@ The following example shows a simple binding between the value of the CurrencyTe
 
 {% highlight xml %}
 
-XAML
+
 
 
 
@@ -43,7 +43,7 @@ The Data Context property provides its value to child elements. So you can set t
 {% highlight xml %}
 
 
-XAML
+
 
 
 
@@ -66,7 +66,7 @@ If you want to bind values other than decimal values, then you need to use the V
 
 {% highlight xml %}
 
-XAML
+
 
 
 

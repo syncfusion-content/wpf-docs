@@ -19,7 +19,6 @@ If HeaderTemplate is specified for TreeMapLevel, then the header can be bound by
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -59,7 +58,6 @@ For TreeMap with Hierarchical Collection, HeaderPath must be specified. The head
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -96,7 +94,6 @@ If LabelTemplate is specified for TreeMapLevel, then the label can be bound by r
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -137,7 +134,6 @@ For TreeMap with Hierarchical Collection, LabelPath must be specified. The label
 
 
 {% highlight xml %}
-[XAML]
 
 <Grid Background="Black">
 

@@ -13,7 +13,6 @@ New button feature in TabControlExt is used to display NewTabButton similar to I
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -27,7 +26,6 @@ New button feature in TabControlExt is used to display NewTabButton similar to I
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -63,7 +61,6 @@ This New button can also displayed at first end using the code below.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -77,7 +74,6 @@ This New button can also displayed at first end using the code below.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -115,7 +111,6 @@ The following code illustrates the same.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -125,7 +120,6 @@ The following code illustrates the same.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 

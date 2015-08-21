@@ -11,7 +11,7 @@ documentation: ug
 
 This section explains you how to integrate Localization in your application. You can also see the available properties for the Localization in DataGrid.
 
-### Overview
+## Overview
 
 Localization is the process of making your application in different language depending on your culture. The culture is defined as combination of language and location .For example En-US is the culture for English spoken in United States. 
 
@@ -42,14 +42,14 @@ _Adding default resource file in resource folder_
 
 _Entering Name and Value in Resource file_
 
-### Set Culture Information in Application:
+## Set Culture Information in Application:
 
 The CultureInformation is set in the Application before the InitializeComponent() method is called. Now, the Application is set to the German Culture info. The following code example explains the implementation of this,
 
 
 {% highlight C# %}
 
-[C#]
+
 
 public partial class MainWindow :Window
 
@@ -85,10 +85,10 @@ _Property Table_
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Value</td><td>
-Descriptions</td></tr>
+<th>
+Property</th><th>
+Value</th><th>
+Descriptions</th></tr>
 <tr>
 <td>
 AddNewRowText</td><td>

@@ -15,15 +15,15 @@ In order to insert a UI element in the document, ParagraphAdv provides an inline
 
 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Type</td><td>
-Data Type</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 Height</td><td>
@@ -59,7 +59,7 @@ UIContainerAdv can be used to add a UI element directly to an application by usi
 {% highlight xml %}
 
 
-[XAML]     
+    
  <syncfusion:RichTextBoxAdv Height="300" Width="400" x:Name="richtext">           
  <syncfusion:DocumentAdv>                
  <syncfusion:SectionAdv>                   
@@ -75,7 +75,7 @@ UIContainerAdv can be used to add a UI element directly to an application by usi
  
 {% highlight C# %}
 
-[C#]           
+           
 RichTextBoxAdv richtext = new RichTextBoxAdv();           
 DocumentAdv document = new DocumentAdv();           
 SectionAdv section = new SectionAdv();          

@@ -15,7 +15,7 @@ Items will spin up or down with smooth transition. The transition can be disable
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 
@@ -36,7 +36,7 @@ The AccentBrush property is used to decorate the hot spots of a control with a s
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 

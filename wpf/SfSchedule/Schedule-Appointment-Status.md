@@ -11,7 +11,7 @@ documentation: ug
 
 Schedule Appointment status can be set by using the Status Property of the ScheduleAppointment.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -33,7 +33,7 @@ schedule.Appointments.Add(new ScheduleAppointment() { Status= new ScheduleAppoin
 
 The AppointmentStatusCollection property used to set the status to collection of appointments.
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -61,7 +61,7 @@ The AppointmentStatusCollection property used to set the status to collection of
 
 The selected appointment can be marked by AppointmentSelectionBrush property.
 {% highlight c# %}
-[C#]
+
 
 
 

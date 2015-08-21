@@ -1481,6 +1481,7 @@ Gets or sets the HorizontalCapLineStyle used by this series when it is rendered<
 VerticalCapLineStyle</td><td>
 Gets or sets the VerticalCapLineStyle used by this series when it is rendered</td></tr>
 </table>
+
 ### Fixed
 
 Fixed value means each error bar is placed at a constant distance from the data value. This error value corresponds to axis coordinates.

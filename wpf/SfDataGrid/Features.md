@@ -12498,7 +12498,7 @@ The following code example illustrates the selection behavior while editing.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -12593,7 +12593,7 @@ The following code example illustrates about this event.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -12613,7 +12613,7 @@ void sfdatagrid_CurrentCellBeginEdit(object sender, CurrentCellBeginEditEventArg
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -12652,7 +12652,7 @@ The data that you edit in loaded EditElement is the bound value from the ValueBi
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -12695,7 +12695,7 @@ You can update the edited values, like Default, PropertyChanged, LostFocus and E
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -12739,7 +12739,7 @@ The same way, you can achieve it for Editing with Grouping and Editing with Filt
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -12764,7 +12764,7 @@ For more information about IEditableObject you can [ClickHere](http://msdn.micro
 
 {% highlight C# %}
 
-[C#]
+
 
 public class NotificationObject : INotifyPropertyChanged
 
@@ -12956,7 +12956,7 @@ The following code example illustrates that.
 
 {% highlight C# %}
 
-[C#]
+
 
 sfdatagrid.Loaded += sfdatagrid_Loaded;
 
@@ -12987,7 +12987,7 @@ The same way, you can call EndEdit () method to stop edting a cell.
 
 {% highlight C# %}
 
-[C#]
+
 
 void sfdatagrid_Loaded(object sender, RoutedEventArgs e)
 
@@ -13020,7 +13020,7 @@ Consider a example where you do not want the cell (2, 2) to enter into Edit mode
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -13035,7 +13035,7 @@ ItemsSource="{Binding ProductDetails}"/>
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -13064,7 +13064,7 @@ In this scenario, consider the properties for discount and price from the data s
 
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -13084,7 +13084,7 @@ In this scenario, consider the properties for discount and price from the data s
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -13123,7 +13123,7 @@ You can achieve this by applying style directly to TextBox. By defining correspo
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -13183,7 +13183,7 @@ The following code example illustrates how the Email field is validated for prop
 
 {% highlight C# %}
 
-[C#]
+
 
 public class UserInfo : IDataErrorInfo
 
@@ -13228,7 +13228,7 @@ public class UserInfo : IDataErrorInfo
 
 {% highlight C# %}
 
-[C#]
+
 
 public class UserInfo : INotifyDataErrorInfo
 
@@ -13295,7 +13295,7 @@ The following code example illustrates how the String Length attribute is applie
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -13365,7 +13365,7 @@ The following code example illustrates a simple condition to handle Cell Validat
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -13430,7 +13430,7 @@ The following code example illustrates a simple condition to handle Row Validati
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -13485,7 +13485,7 @@ The following steps take you though Cutomization on Validation error template.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <ControlTemplate x:Key="ValidationToolTipTemplate">
 
@@ -13645,7 +13645,7 @@ You can change above ControlTemplate codes to change the tooltip style. You can 
 {% highlight xml %}
 
 
-[XAML]
+
 
 <Style x:Key="GridCellStyle1" TargetType="{x:Type syncfusion:GridCell}">
 
@@ -13855,7 +13855,7 @@ When you need an instant update that happened on DataSource to view, SfDataGrid 
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="sfdatagrid"
 
@@ -13908,7 +13908,7 @@ The following code example illustrates how to add AddNewRow to an application:
 {% highlight xml %}
 
 
-[XAML]
+
 
    <syncfusion:SfDataGrid x:Name="datagrid"
 
@@ -13984,7 +13984,7 @@ The following code example illustrates how to use AddNewRowInitiating event.
 {% highlight xml %}
 
 
-[XAML]
+
 
 AddNewRowInitiating="SfDataGrid_AddNewRowInitiating"
 
@@ -13993,7 +13993,7 @@ AddNewRowInitiating="SfDataGrid_AddNewRowInitiating"
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -14022,7 +14022,7 @@ SfDataGrid has built-in support for deleting records. You can delete a selected 
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -14065,7 +14065,7 @@ The following code example illustrates how to use this event.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -14090,7 +14090,7 @@ You can delete record using Remove() or RemoveAt (int index) in underlying colle
 
 {% highlight C# %}
 
-[C#]
+
 
 private void Delete_Click(object sender, RoutedEventArgs e)
 
@@ -14160,7 +14160,7 @@ Customize the appearance of the AddNewRowwatermarktext by editing the AddNewRowC
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -14285,7 +14285,7 @@ SfDataGrid control provides extensive support to use validation with AddNewRow. 
 
 {% highlight C# %}
 
-[C#]
+
 
 void OnRowValidating(object sender, RowValidatingEventArgs args)
 
@@ -14331,7 +14331,7 @@ When you start editing in AddNewRow, the DataGrid control creates an instance fo
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="dataGrid"
 
@@ -14370,7 +14370,7 @@ ItemsSource="{Binding Path=OrdersDetails}">
 
 {% highlight C# %}
 
-[C#]
+
 
 private void OnAddNewRowInitiating(object sender, AddNewRowInitiatingEventArgs args)
 
@@ -14390,7 +14390,7 @@ This topic explains you how to initialize the default values. You can achieve th
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -14437,7 +14437,7 @@ This article shows how to select a specified row after deleting. By default, whe
 
 {% highlight C# %}
 
-[C#]
+
 
 sfDataGrid.RecordDeleted += OnRecordDeleted;
 
@@ -14464,7 +14464,7 @@ The RecordDeletingEventArgs argument in the RecordDeleting event holds the Items
 
 {% highlight C# %}
 
-[C#]
+
 
 sfDataGrid.RecordDeleting += OnRecordDeleting;
 
@@ -14604,7 +14604,7 @@ The following code example illustrates how to call SelectAll () method.
 
 {% highlight C# %}
 
-[C#]
+
 
 private void SelectAll_Click(object sender, RoutedEventArgs e)
 
@@ -14632,7 +14632,7 @@ The following code example illustrates how to use ClearSelections(bool exceptCur
 
 {% highlight C# %}
 
-[C#]
+
 
 private void ClearSelection_Click(object sender, RoutedEventArgs e)
 
@@ -14651,7 +14651,7 @@ The following code example explains you how to use MoveCurrentCell (RowColumnInd
 
 {% highlight C# %}
 
-[C#]
+
 
 private void MoveCurrentCell_Click(object sender, RoutedEventArgs e)
 
@@ -14686,7 +14686,7 @@ _DataGrid with MoveCurrentCell method_
 
 {% highlight C# %}
 
-[C#]
+
 
 sfdatagrid.ScrollInView(new RowColumnIndex() { RowIndex = sfdatagrid.ResolveToRowIndex(7), ColumnIndex = 1 });
 
@@ -14701,7 +14701,7 @@ The following code example illustrates how to use SelectRows(int startRowIndex, 
 
 {% highlight C# %}
 
-[C#]
+
 
 private void SelectRows_Click(object sender, RoutedEventArgs e)
 
@@ -14722,7 +14722,7 @@ The following code example shows how to use SelectCell(object rowData, GridColum
 
 {% highlight C# %}
 
-[C#]
+
 
 private void SelectCell_Click(object sender, RoutedEventArgs e)
 
@@ -14743,7 +14743,7 @@ The following code example shows how to use SelectCells(object startRowData, Gri
 
 {% highlight C# %}
 
-[C#]
+
 
 private void SelectCells_Click(object sender, RoutedEventArgs e)
 
@@ -14772,7 +14772,7 @@ The following code example shows how to use UnSelectCell(object rowData, GridCol
 
 {% highlight C# %}
 
-[C#]
+
 
 private void UnSelectCell_Click(object sender, RoutedEventArgs e)
 
@@ -14793,7 +14793,7 @@ The following code example shows how to use UnSelectCells(object startRowData, G
 
 {% highlight C# %}
 
-[C#]
+
 
 private void UnSelectCells_Click(object sender, RoutedEventArgs e)
 
@@ -14822,7 +14822,7 @@ The following code example shows how to use GetSelectedCells() method.
 
 {% highlight C# %}
 
-[C#]
+
 
 List<GridCellInfo> selectedCells = this.sfdatagrid.GetSelectedCells();
 {% endhighlight %}
@@ -14840,7 +14840,7 @@ The following code example illustrates SelectionChanging event purpose.
 
 {% highlight C# %}
 
-[C#]
+
 
 void sfdatagrid_SelectionChanging(object sender, GridSelectionChangingEventArgs e)
 
@@ -14891,7 +14891,7 @@ The following code example illustrates how to set a selection mode for DataGrid 
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -14906,7 +14906,7 @@ The following code example illustrates how to set a selection mode for DataGrid 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -14933,7 +14933,7 @@ The following code example shows a DataGrid in row navigation mode.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -15006,7 +15006,7 @@ The following code example shows a DataGrid in Cell selection.
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfDataGrid x:Name="syncgrid"
 
@@ -15274,7 +15274,7 @@ The following code example shows how to select a row based on values in specfic 
 
 {% highlight C# %}
 
-[C#]
+
 
 sfdatagrid.SelectionController = new GridSelectionControllerExt(sfdatagrid);
 
@@ -15402,7 +15402,7 @@ The following code example shows how to override the GridCellSelectionController
 
 {% highlight C# %}
 
-[C#]
+
 
 sfdatagrid.SelectionController = new GridCellSelectionControllerExt(sfdatagrid);
 
@@ -15661,7 +15661,7 @@ The following code example tells you how to access CurrentCell related informati
 
 {% highlight C# %}
 
-[C#]
+
 
 var currencell= sfdatagrid.SelectionController.CurrentCellManager.CurrentCell;
 
@@ -15736,7 +15736,7 @@ You can stop the navigation by cancelling CurrenCellActivating event. The follow
 
 {% highlight C# %}
 
-[C#]
+
 
 void sfdatagrid_CurrentCellActivating(object sender, CurrentCellActivatingEventArgs args)
 
@@ -15778,7 +15778,7 @@ The following code example shows how to define the cut, copy and paste behaviors
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -15866,7 +15866,7 @@ The following code example shows how to call the above methods for processing th
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -15887,7 +15887,7 @@ The following code example shows how to assign the overriding class to SfDataGri
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -16054,7 +16054,7 @@ By default, you can copy one cell and paste it into another cell when Cell Selec
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -16071,7 +16071,7 @@ By default, you can copy one cell and paste it into another cell when Cell Selec
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -16156,7 +16156,7 @@ By default you can able to copy one row and paste it into another row. The follo
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -16174,7 +16174,7 @@ By default you can able to copy one row and paste it into another row. The follo
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -16252,7 +16252,7 @@ By default after pasting also SfDataGrid maintains the previously selected recor
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -16269,7 +16269,7 @@ By default after pasting also SfDataGrid maintains the previously selected recor
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -16353,7 +16353,7 @@ By default while pasting, it changes the values of the already existing records 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -16371,7 +16371,7 @@ By default while pasting, it changes the values of the already existing records 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -16492,7 +16492,7 @@ SfDataGrid supports to copy records without using mouse, to select records and p
 
 {% highlight C# %}
 
-[C#]
+
 
 void sfdatagrid_Loaded(object sender, RoutedEventArgs e)
 
@@ -16527,7 +16527,7 @@ The following code example illustrates Pass row index as SelectedIndex and some 
 
 {% highlight C# %}
 
-[C#]
+
 
 sfdatagrid.ScrollInView(new RowColumnIndex() { RowIndex = sfdatagrid.SelectedIndex=7, ColumnIndex = 1 });
 {% endhighlight %}
@@ -16554,7 +16554,7 @@ This topic explains you how to change the Foreground of SelecetdRow. SfDataGrid 
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Style x:Key="VirtualizingCellsControlStyle1" TargetType="{x:Type syncfusion:VirtualizingCellsControl}">
 
@@ -16675,7 +16675,7 @@ The following code example illustrates using DataPager with the SfDataGrid contr
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -16747,7 +16747,7 @@ The following code example illustrates defining DataPager for OnDemandPaging:
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -16802,7 +16802,7 @@ The following code example illustrates how to load data for the DataPager contro
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -16833,7 +16833,7 @@ The following code example illustrates how to use ResetCache method,
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -16860,7 +16860,7 @@ The following code example illustrates how to use pageoptions in DataGrid.
 
 {% highlight C# %}
 
-[C#]
+
 
  //Setting the Exporting Options by craeting a instance for ExcelExportingOptions.
 
@@ -16889,7 +16889,7 @@ The following code example illustratse how to use ExportPageOptions in DataGrid.
 
 {% highlight C# %}
 
-[C#]
+
 
  //Setting the Exporting Options by craeting a instance for ExcelExportingOptions.
 
@@ -16923,7 +16923,7 @@ The following code example illustrates how to create a VirtualizingCollectionVie
 
 {% highlight C# %}
 
-[C#]
+
 
 // Create the VirtualizingCollectionView object with enumerable data source.
 
@@ -16933,7 +16933,7 @@ VirtualizingCollectionView GridItemsSource = new VirtualizingCollectionView(enum
 
 {% highlight xml %}
 }
-[XAML]
+
 
 <Window.DataContext>
 
@@ -16959,7 +16959,7 @@ The following code example illustrates how to assign a GridVirtualizingCollectio
 
 {% highlight C# %}
 
-[C#]
+
 
 //Create the GridVirtualizingCollectionView object with enumerable data source.
 
@@ -16968,7 +16968,7 @@ GridVirtualizingCollectionView GridItemsSource = new GridVirtualizingCollectionV
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -17045,7 +17045,7 @@ The following code example illustrates the Custom Data Virtualization class.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -17146,7 +17146,7 @@ The following code example illustrates the methods that are used to achieve Sort
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -17261,7 +17261,7 @@ The following code example illustrates adding the IncrementaList<T> class as Ite
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -17333,7 +17333,7 @@ class IncrementalLoadingViewModel
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window.DataContext>
 
@@ -17688,7 +17688,7 @@ The following code example illustrates applying styles for cells.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -17736,7 +17736,7 @@ The following code example illustrates this.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -17776,7 +17776,7 @@ GroupSummary row displays all the summary values in GroupSummaryCells. You can a
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -17816,7 +17816,7 @@ All the table summary values are displayed in GridTableSummaryCell. DataGrid ena
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -17854,7 +17854,7 @@ DataGrid displays the column header in GridHeaderCellControl that displays the c
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -17954,7 +17954,7 @@ The following code example illustrates how to set the row style for DataGrid.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -17990,7 +17990,7 @@ The following code example illustrates how to set the alternate row style for Da
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -18026,7 +18026,7 @@ The following code example illustrates applying styles for Group caption row.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -18070,7 +18070,7 @@ The following code example illustrates styling of Group Summary rows.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -18114,7 +18114,7 @@ The following code example displays the styling of TableSummaryRow.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -18256,7 +18256,7 @@ In the following example, you can set the different row background for DataGrid 
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -18283,7 +18283,7 @@ In the following example, you can set the different row background for DataGrid 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -18320,7 +18320,7 @@ return base.SelectStyle (item, container);
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -18376,7 +18376,7 @@ The following code example illustrates how to use HeaderTemplate in DataGrid Col
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -18490,7 +18490,7 @@ By using this property, you can apply custom templates for cells based on a cust
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -18524,7 +18524,7 @@ class GridCellTemplateSelector : DataTemplateSelector
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -18579,7 +18579,7 @@ By using this property, you can apply custom templates for cells based on a cust
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -18615,7 +18615,7 @@ return base.SelectTemplate(item, container);
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -18693,7 +18693,7 @@ Following steps illustrate how to apply conditional formatting to the Cells in G
 
    ~~~CS
 
-		[C#]
+		
 
 
 
@@ -18741,7 +18741,7 @@ Following steps illustrate how to apply conditional formatting to the Cells in G
 
    ~~~ XML
 
-		[XAML]
+		
 
 
 
@@ -18817,7 +18817,7 @@ Following steps illustrate how to apply conditional formatting to the Rows in Gr
 
    ~~~ CS
 
-		[C#]
+		
 
 
 
@@ -18863,7 +18863,7 @@ Following steps illustrate how to apply conditional formatting to the Rows in Gr
 
    ~~~ XML
 
-		[XAML]
+		
 
 
 
@@ -18918,7 +18918,7 @@ The following code example illustrates how to use AlternatingRowStyle in DataGri
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -18968,7 +18968,7 @@ QueryRowHeight is the event that returns row heights in demand. This is raised f
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -19010,7 +19010,7 @@ The following is the code example of the QueryRowHeight event.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -19048,7 +19048,7 @@ The following is the code example of the QueryRowHeight event.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -19116,7 +19116,7 @@ The following code example explains how to use the GetAutoRowHeight method in th
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -19167,7 +19167,7 @@ By adding the following code example, you can improve the readability of the con
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -19236,7 +19236,7 @@ The following code example explains how to use the GridRowSizingOptions.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -19279,7 +19279,7 @@ The columns that need not be included in the calculation of height can be added 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -19370,7 +19370,7 @@ The SfDataGrid provides support to customize the height of the Header row also. 
 
    ~~~ XML
 
-		[XAML]
+		
 
 
 
@@ -19405,7 +19405,7 @@ The following code example explains how to customize the header rowHeight.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -19427,7 +19427,7 @@ The following code example explains how to customize the header rowHeight.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -19480,7 +19480,7 @@ When you pass the row index to the InValidateRowHeight method, that specific row
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -19556,7 +19556,7 @@ The following code example explains you how to customize the Height of TableSumm
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -19650,7 +19650,7 @@ The following code example illustrates how to use FreezePanes support in SfDataG
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -19736,7 +19736,7 @@ The following code example illustrates how to implement the INotifyPropertyChang
 
 {% highlight C# %}
 
-[C#]
+
 
 public class EmployeeData : INotifyPropertyChanged, INotifyPropertyChanging
 
@@ -19803,7 +19803,7 @@ To disable Optimization, you can set EnableSummaryOptimization property in Colle
 
 {% highlight C# %}
 
-[C#]
+
 
   (dataGrid.View as CollectionViewAdv).EnableSummaryOptimization = false;
 
@@ -19816,7 +19816,7 @@ BatchUpdate allows you to obtain high performance when you are updating more dat
 
 {% highlight C# %}
 
-[C#]
+
 
 this.datagrid.View.BeginInit();
 
@@ -19853,7 +19853,7 @@ You can improve the filter pop-up opening time by setting CanGenerateUniqueItems
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -19943,7 +19943,7 @@ The following code example illustrates context menu usage with GroupCaptionConte
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -19962,7 +19962,7 @@ The following code example illustrates context menu usage with GroupCaptionConte
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -20131,7 +20131,7 @@ ColumnChooser allows you to add or remove columns dynamically from the current G
 The following code example illustrates how to add a default ColumnChooser in an application.
 {% highlight C# %}
 
-[C#]
+
 
 ColumnChooser chooserWindow;
 
@@ -20215,7 +20215,7 @@ The following code example illustrates how to add and remove a child from Custom
 
 {% highlight C# %}
 
-[C#]
+
 
   #region IColumnChooser methods
 
@@ -20490,7 +20490,7 @@ The following code example displays you how to enable RowHeader in DataGrid.
 {% highlight xml %}
 
 
-[XAML]
+
 
 <Window.DataContext>
 
@@ -20524,7 +20524,7 @@ By default, the RowHeader width value is set to ’45’ (Data Type: double).you
 {% highlight xml %}
 
 
-[XAML]
+
 
 <Window.DataContext>
 
@@ -20606,7 +20606,7 @@ The following code example shows you how to edit current row indicator in row he
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window.Resources>         
 
@@ -20788,7 +20788,7 @@ You can enable the ToolTip for columns by setting the GridColumn.ShowToolTip pro
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -20856,7 +20856,7 @@ You can customize the default style of the ToolTip to be shown on the GridCell o
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -20903,7 +20903,7 @@ You can customize the default ToolTip by loading the Data Template as its conten
 
 {% highlight xml %}
 
-[XAML]
+
 <!-- Need to add this code in Resources.     Defines the DataTemplate with Key – For GridCellControl-->
 <DataTemplate x:Key="customToolTip">   
  <Image Width="100" Height="100" Source="{Binding CustomerID,Converter={StaticResource stringToImageConverter}}" />
@@ -20966,7 +20966,7 @@ The following XAML has two DataTemplates defined to set for the ToolTip.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -21013,7 +21013,7 @@ The following ToolTipTemplateSelector derived from the DataTemplateSelector retu
 
 {% highlight C# %}
 
-[C#]
+
 
 public class ToolTipTemplateSelector : DataTemplateSelector
 
@@ -21112,7 +21112,7 @@ The above template selector sets the GridColumn.ToolTipTemplateSelector.
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -21189,7 +21189,7 @@ In the following XAML code, the same DataTemplate is set to all the columns to d
 
 {% highlight xml %}
 
-[XAML]
+
 
 
 
@@ -21289,7 +21289,7 @@ By default, the contextmenu of Grid does not have any instance, and it is initia
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window.DataContext>
 
@@ -21336,7 +21336,7 @@ In the following code example, the Headercontextmenu and Recordcontextmenu are i
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -21414,7 +21414,7 @@ You can also display row index in the row header instead of indicating the statu
 
 {% highlight xml %}
 
- [XAML]
+ 
 
 <Window.Resources>
 
@@ -21514,7 +21514,7 @@ The following code example illustrates on how to use Serialization and Deseriali
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window.DataContext>
 
@@ -21583,7 +21583,7 @@ The following code example illustrates on how to use Serialization and Deseriali
 
 {% highlight C# %}
 
-[C#]
+
 
 Private void OnSerializeDataGrid(object sender, RoutedEventArgs args)
 
@@ -21940,7 +21940,7 @@ The following code example illustrates to override methods and how to handle ope
 
 {% highlight C# %}
 
-[C#]
+
 
 // Assign custom serialization controller to datagrid SerializationController
 
@@ -22027,7 +22027,7 @@ By default, the columns that exist in the grid when you apply serialization alon
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfDataGrid Name="dataGrid"     Grid.Column="0"
 
@@ -22072,7 +22072,7 @@ After serialization, when new column is added to grid, it is not displayed durin
 
 {% highlight C# %}
 
-[C#]
+
 
 // To add new unbound column at run time
 
@@ -22094,7 +22094,7 @@ You can overcome the above scenario by customizing the SerilalizationController 
 
 {% highlight C# %}
 
-[C#]
+
 
 // Assigning custom serialization controller to datagrid SerializationController
 
@@ -22170,7 +22170,7 @@ By default, the grid columns are serialized during serialization of DataGrid. Bu
 
 {% highlight C# %}
 
-[C#]
+
 
   public class DatePickerColumn : GridColumn
 
@@ -22215,7 +22215,7 @@ Consider, the grid contains the following columns. Here DatePickerColumn is cust
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Syncfusion:SfDataGrid x:Name="_dataGrid"
 
@@ -22250,7 +22250,7 @@ During grid serialization, when you want to copy DatePickerColumn properties, yo
 
 {% highlight C# %}
 
-[C#]
+
 
 [DataContract(Name="SerializableCustomGridColumn")]
 
@@ -22271,7 +22271,7 @@ The following code illustrates how to override SerializationController to serial
 
 {% highlight C# %}
 
-[C#]
+
 
 // Assigning custom serialization controller to datagrid SerializationController
 
@@ -22556,7 +22556,7 @@ The following code example shows you how to use Printing feature in SfDataGrid w
 {% highlight xml %}
 
 
-[XAML]
+
 
 <Window.DataContext>
 
@@ -22578,7 +22578,7 @@ The following code example shows you how to use Printing feature in SfDataGrid w
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -22703,7 +22703,7 @@ The following code example shows you how a CustomPrintManager is developed using
 
 {% highlight C# %}
 
-[C#]
+
 
     internal class CustomPrintManager : GridPrintManager
 
@@ -22875,7 +22875,7 @@ When Custom Print Manager is created, you can assign it to PrintManagerBase to l
 
 {% highlight C# %}
 
-[C#]
+
 
 var window = new PreviewWindow();
 
@@ -22906,7 +22906,7 @@ The following code example illustrates how to set Header and Footer in Printable
 
 {% highlight xml %}
 
-[XAML]
+
 
 <Window.Resources>
 
@@ -22927,7 +22927,7 @@ The following code example illustrates how to set Header and Footer in Printable
 
 {% highlight C# %}
 
-[C#]
+
 
 private void ShowPrintPreview(object sender, RoutedEventArgs e)
 
@@ -23014,7 +23014,7 @@ You can Export data to Excel by using the ExportToExcel method by passing ExcelE
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -23217,7 +23217,7 @@ The following code example illustrates how to export data to Excel by using the 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -23323,7 +23323,7 @@ The following code example illustrates how to apply cell styles based on the cel
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -23471,7 +23471,7 @@ The following code example illustrates how to customize the font based on some c
 
 {% highlight C# %}
 
-[C#]
+
 
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
 
@@ -23566,7 +23566,7 @@ The following code example illustrates how to skip the exporting of Details View
 
 {% highlight C# %}
 
-[C#]
+
 
 ExcelExportingOptions exportingOptions = new ExcelExportingOptions();
 
@@ -23777,7 +23777,7 @@ The following code example illustrates you how to export SfDataGrid into PDF by 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -23894,7 +23894,7 @@ The following code example illustrates how to apply cell styles based on the cel
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -24023,7 +24023,7 @@ The following code example illustrates how to customize the particular PDFGridCe
 
 {% highlight C# %}
 
-[C#]
+
 
 var options = new PdfExportingOptions();
 
@@ -24126,7 +24126,7 @@ The following code example illustrates how to skip and customize the exporting o
 
 {% highlight C# %}
 
-[C#]
+
 
 var options = new PdfExportingOptions();
 
@@ -24210,7 +24210,7 @@ The following code example illustrates how to add Header and Footer into the PDF
 
 {% highlight C# %}
 
-[C#]
+
 
 var options = new PdfExportingOptions();
 
@@ -24267,7 +24267,7 @@ The following code example illustrates how to create font from the font file and
 
 {% highlight C# %}
 
-[C#]
+
 
 static void GridPDFExportingEventhandler(object sender, GridPdfExportingEventArgs e)
 
@@ -24305,7 +24305,7 @@ The following code example illustrates how to change page orientation to Landsca
 
 {% highlight C# %}
 
-[C#]
+
 
 var options = new PdfExportingOptions();
 
@@ -24411,7 +24411,7 @@ The CultureInformation is set in the Application before the InitializeComponent(
 
 {% highlight C# %}
 
-[C#]
+
 
 public partial class MainWindow :Window
 
@@ -24764,7 +24764,7 @@ This topic shows you how to create a CodedUITest project and test the SfDataGrid
 
    ~~~ cs
 
-		[C#]
+		
 
 		using Syncfusion.UI.Xaml.Grid;
 
@@ -24995,7 +24995,7 @@ To enable CodedUI Test in SfDataGrid, set AutomationPeerHelper.EnableCodedUI__to
 
 {% highlight C# %}
 
-[C#]
+
 
 using Syncfusion.UI.Xaml.Grid;
 

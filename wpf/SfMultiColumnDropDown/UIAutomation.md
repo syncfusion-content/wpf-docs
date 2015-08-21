@@ -17,7 +17,7 @@ SfMutliColumnDropDownControl supports CodedUITest automation that enables you to
 
 There are three level of support in CodedUITest for SfMultiColumnDropDownControl.
 
-_List of levels_
+List of levels
 
 <table>
 <tr>
@@ -25,17 +25,17 @@ _List of levels_
 Levels</th><th>
 Description</th></tr>
 <tr>
-<th>
-Level – 1</th><th>
-Record and Detecting the UI Elements when you do the actions in the control.</th></tr>
+<td>
+Level – 1</td><td>
+Record and Detecting the UI Elements when you do the actions in the control.</td></tr>
 <tr>
-<th>
-Level – 2</th><th>
-Provide custom properties for UI elements when you drag the Cross hair to any UI element.</th></tr>
+<td>
+Level – 2</td><td>
+Provide custom properties for UI elements when you drag the Cross hair to any UI element.</td></tr>
 <tr>
-<th>
-Level – 3</th><th>
-Coded UI Test Builder generates code from recorded session and custom class is implemented to access custom properties, so the generated code is simplified.</th></tr>
+<td>
+Level – 3</td><td>
+Coded UI Test Builder generates code from recorded session and custom class is implemented to access custom properties, so the generated code is simplified.</td></tr>
 </table>
 The following screenshot illustrates the SfMultiColumnDropDownControl properties, when you drag the crosshair to the SfMultiColumnDropDown control.
 
@@ -45,13 +45,13 @@ The following screenshot illustrates the SfMultiColumnDropDownControl properties
 
 Following are the properties for SfMultiColumnDropDownControl.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-UI Element</td><td>
-Properties</td></tr>
+<th>
+UI Element</th><th>
+Properties</th></tr>
 <tr>
 <td>
 SfMultiColumnDropDownControl</td><td>
@@ -71,7 +71,7 @@ The following screenshot illustrates the QTP Test for SfMultiColumnDropDownContr
 
 Following are methods for SfMultiColumnDropDownControl.
 
-_Methods Table_
+Methods Table
 
 <table>
 <tr>
@@ -81,23 +81,23 @@ Description</th><th>
 Parameters </th><th>
 Return Type </th></tr>
 <tr>
-<th>
-void SetSelectedIndex(int index);</th><th>
-To set the SelectedIndex from the Popup</th><th>
- Int index</th><th>
-void</th></tr>
+<td>
+void SetSelectedIndex(int index);</td><td>
+To set the SelectedIndex from the Popup</td><td>
+ Int index</td><td>
+void</td></tr>
 <tr>
-<th>
-void ShowPopup();</th><th>
-To open the Popup</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+void ShowPopup();</td><td>
+To open the Popup</td><td>
+NA</td><td>
+void</td></tr>
 <tr>
-<th>
-void HidePopup();</th><th>
-To close the Popup</th><th>
-NA</th><th>
-void</th></tr>
+<td>
+void HidePopup();</td><td>
+To close the Popup</td><td>
+NA</td><td>
+void</td></tr>
 </table>
 
 

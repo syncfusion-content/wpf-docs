@@ -49,11 +49,12 @@ The Office 2010 UI themes can be applied to the Ribbon control, as shown in the 
 <table>
 <tr>
 <td>
-[XAML]       <syncfusion:Ribbon shared:SkinManager.VisualStyle="Office2010Black"                                                       Name="MyRibbon">                       <syncfusion:RibbonTab Caption="Tab1">                <syncfusion:RibbonBar Header="Ribbon Bar1"/>                <syncfusion:RibbonBar Header="Ribbon Bar1"/>                <syncfusion:RibbonBar Header="Ribbon Bar1"/>            </syncfusion:RibbonTab>     </syncfusion:Ribbon></td></tr>
+{% highlight xml %}<syncfusion:Ribbon shared:SkinManager.VisualStyle="Office2010Black"                                                       Name="MyRibbon">                       <syncfusion:RibbonTab Caption="Tab1">                <syncfusion:RibbonBar Header="Ribbon Bar1"/>                <syncfusion:RibbonBar Header="Ribbon Bar1"/>                <syncfusion:RibbonBar Header="Ribbon Bar1"/>            </syncfusion:RibbonTab>     </syncfusion:Ribbon>{% endhighlight %}</td></tr>
 <tr>
 <td>
-[C#]   public void RibbonWindow_Loaded(object sender, EventArgs e)   {    SkinManager.SetVisualStyle(this.MyRibbon, VisualStyle.Office2010Black);   }</td></tr>
+{% highlight c# %}public void RibbonWindow_Loaded(object sender, EventArgs e)   {    SkinManager.SetVisualStyle(this.MyRibbon, VisualStyle.Office2010Black);   }{% endhighlight %}</td></tr>
 </table>
+
 # Appearance
 
 The Office 2010 UI in the Ribbon control looks like the Microsoft Office 2010 UI. The Office 2010 UI in the Ribbon control has many changes when compared to the Office 2007 UI. The Ribbon control has many new elements added to it and the visual styles for all the elements have been changed to achieve the Office 2010 UI. The following are the main elements of the Office 2010 UI:
@@ -79,7 +80,7 @@ The Application icon is built-in the Ribbon control and is located in the upper-
 
 {% highlight c# %}
  
-    [C#]   
+      
 
 
 
@@ -180,7 +181,7 @@ The Button panel in the Office 2010 UI has the SeparatorVisibility property to c
 
 {% highlight c# %}
  
-    [C#]   
+       
 
 
 
@@ -207,7 +208,7 @@ The separators in the Button panel can be collapsed, as shown in the following c
 
 {% highlight c# %}
  
-    [C#]   
+       
 
 
 

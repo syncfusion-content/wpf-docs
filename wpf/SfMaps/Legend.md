@@ -19,14 +19,14 @@ Legends are visible only by setting the LegendVisibility property of the Visibil
 
 Map legends can be positioned by setting the LegendPosition property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the x axis and the y axis with the help of the LegendPositionX and LegendPositionY properties availablein ShapeFileLayer. For positioning the legend based on margins corresponding to a map, LegendPosition must be set with value of “Default”.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Type</td><td>
-Description</td></tr>
+<th>
+Property</th><th>
+Type</th><th>
+Description</th></tr>
 <tr>
 <td>
 LegendPosition</td><td>
@@ -69,7 +69,7 @@ Legends are arranged in matrix format. The number of columns in the arranging ma
 
 {% highlight xml %}
 
-[XAML]
+
 
 <syncfusion:SfMap.Layers>
 
@@ -131,13 +131,13 @@ Legends are arranged in matrix format. The number of columns in the arranging ma
 
 
 
-_Legend for shape layers_
+Legend for shape layers
 
 
 {% highlight xml %}
 
 
-[XAML]
+
 
 <syncfusion:SfMap>
 
@@ -191,5 +191,5 @@ _Legend for shape layers_
 
 
 
-_Legend for Bubbles_
+Legend for Bubbles
 

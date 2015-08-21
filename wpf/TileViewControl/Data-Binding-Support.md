@@ -19,7 +19,6 @@ The following code example illustrates how to add the Data Binding to an applica
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -95,7 +94,6 @@ The following code example illustrates how to add the Data Binding to an applica
 
 
 {% highlight c# %}
- [C#]
 
 public ObservableCollection<object> TileViewItemData
 

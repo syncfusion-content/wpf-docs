@@ -23,7 +23,6 @@ To enable the Tab Item context menu, use the below code.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -51,7 +50,6 @@ To enable the Tab Item context menu, use the below code.
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 

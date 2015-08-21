@@ -289,7 +289,7 @@ button.Content = menuItem1;
 
 
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -347,7 +347,7 @@ IsMultiline</td></tr>
 
 
 
-_Events Table_
+Events Table
 
 <table>
 <tr>

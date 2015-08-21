@@ -21,15 +21,15 @@ There are three types of visual modes available in GroupBar.
 * MultipleExpansion
 * StackMode
 
-###Default
+### Default
 
 By setting this enum to the VisualMode property, expand and collapse of the GroupBarItem in GroupBar is enabled. Only one GroupBar item can be expanded at a time. On expanding another GroupBar item, the previously expanded groupbar item will be collapsed.
 
-###MultipleExpansion
+### MultipleExpansion
 
 By setting this enum to the VisualMode property, the style of GroupBar will be similar to the tree view structure in terms of expand and collapse. Any number of GroupBar items can be expanded or collapsed. 
 
-###StackMode
+### StackMode
 
 By setting this enum to the VisualMode property, the GroupBar behavior is set to behave like the Outlook GroupBar.
 
@@ -37,14 +37,11 @@ Use the following code snippet to set the VisualMode property to _Default_.
 
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %} <!-- Adding GroupBar that have visual mode is Default --><syncfusion:GroupBar Height="300" Width="230" VisualMode="Default" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Tasks.png" Name="groupBarItem2" Header="Visual Mode">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Default"/>      <syncfusion:GroupViewItem Text="Multiple Expansion"/>      <syncfusion:GroupViewItem Text="StackMode"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Notes.png" Name="groupBarItem3" Header="State Persistence">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Save State"/>      <syncfusion:GroupViewItem Text="Load State"/>      <syncfusion:GroupViewItem Text="Reset State"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem4" HeaderImageSource="bin.png" Header="Orientation">    <!-- Adding content for GroupBar item using panel -->    <StackPanel Orientation="Vertical">      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>      <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>      <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>    </StackPanel>  </syncfusion:GroupBarItem></syncfusion:GroupBar> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %} //Setting visual mode as DefaultgroupBar.VisualMode = VisualMode.Default; {% endhighlight %} </td></tr>
-</table>
+
+{% highlight xml %} <!-- Adding GroupBar that have visual mode is Default --><syncfusion:GroupBar Height="300" Width="230" VisualMode="Default" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Tasks.png" Name="groupBarItem2" Header="Visual Mode">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Default"/>      <syncfusion:GroupViewItem Text="Multiple Expansion"/>      <syncfusion:GroupViewItem Text="StackMode"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Notes.png" Name="groupBarItem3" Header="State Persistence">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Save State"/>      <syncfusion:GroupViewItem Text="Load State"/>      <syncfusion:GroupViewItem Text="Reset State"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem4" HeaderImageSource="bin.png" Header="Orientation">    <!-- Adding content for GroupBar item using panel -->    <StackPanel Orientation="Vertical">      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>      <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>      <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>    </StackPanel>  </syncfusion:GroupBarItem></syncfusion:GroupBar> {% endhighlight %} 
+
+{% highlight C# %} //Setting visual mode as DefaultgroupBar.VisualMode = VisualMode.Default; {% endhighlight %} 
+
 
 
 
@@ -53,22 +50,17 @@ Use the following code snippet to set the VisualMode property to _Default_.
 
 
 
-####Multiple Expansion
+### Multiple Expansion
 
 In Multiple Expansion mode, more than one item can be expanded as seen in a tree view structure.
 
 Use the following code snippet to set VisualMode property to Multiple Expansion.
 
 
+{% highlight xml %} <!-- Adding GroupBar that have visual mode is Multiple Expansion --><syncfusion:GroupBar Height="300" Width="230" VisualMode="MultipleExpansion" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">    <!-- Adding content for groupbar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Tasks.png" Name="groupBarItem2" Header="Visual Mode">    <!-- Adding content for groupbar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Default"/>      <syncfusion:GroupViewItem Text="Multiple Expansion"/>      <syncfusion:GroupViewItem Text="StackMode"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Notes.png" Name="groupBarItem3" Header="State Persistence">    <!-- Adding content for groupbar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Save State"/>      <syncfusion:GroupViewItem Text="Load State"/>      <syncfusion:GroupViewItem Text="Reset State"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem4" HeaderImageSource="bin.png" Header="Orientation">    <!-- Adding content for groupbar item using panel -->    <StackPanel Orientation="Vertical">      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>      <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>      <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>    </StackPanel>  </syncfusion:GroupBarItem></syncfusion:GroupBar> {% endhighlight %} 
 
-<table>
-<tr>
-<td colspan = "2">
-{% highlight xml %} <!-- Adding GroupBar that have visual mode is Multiple Expansion --><syncfusion:GroupBar Height="300" Width="230" VisualMode="MultipleExpansion" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">    <!-- Adding content for groupbar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Tasks.png" Name="groupBarItem2" Header="Visual Mode">    <!-- Adding content for groupbar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Default"/>      <syncfusion:GroupViewItem Text="Multiple Expansion"/>      <syncfusion:GroupViewItem Text="StackMode"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Notes.png" Name="groupBarItem3" Header="State Persistence">    <!-- Adding content for groupbar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Save State"/>      <syncfusion:GroupViewItem Text="Load State"/>      <syncfusion:GroupViewItem Text="Reset State"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem4" HeaderImageSource="bin.png" Header="Orientation">    <!-- Adding content for groupbar item using panel -->    <StackPanel Orientation="Vertical">      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>      <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>      <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>    </StackPanel>  </syncfusion:GroupBarItem></syncfusion:GroupBar> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %} //groupBar is a name of groupbar//groupbar that have visual mode is MultipleExpansiongroupBar.VisualMode = VisualMode.MultipleExpansion; {% endhighlight %} </td></tr>
-</table>
+{% highlight C# %} //groupBar is a name of groupbar//groupbar that have visual mode is MultipleExpansiongroupBar.VisualMode = VisualMode.MultipleExpansion; {% endhighlight %} 
+
 
 
 
@@ -77,7 +69,7 @@ Use the following code snippet to set VisualMode property to Multiple Expansion.
 
 
 
-####Stack Mode
+### Stack Mode
 
 In StackMode, only one item can be expanded, Items are organized in stack-like mode. It looks like an Outlook groupbar. In stack mode, the pop-up menu is displayed at the bottom of the groupbar. This helps customize groupbar items in a GroupBar control.
 
@@ -85,14 +77,9 @@ Use the following code snippet to set the VisualMode property to StackMode.
 
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %} <!-- Adding GroupBar that have visual mode is StackMode--><syncfusion:GroupBar Height="300" Width="230" VisualMode="StackMode" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">    <!-- Adding content for groupbar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Tasks.png" Name="groupBarItem2" Header="Visual Mode">    <!-- Adding content for groupbar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Default"/>      <syncfusion:GroupViewItem Text="Multiple Expansion"/>      <syncfusion:GroupViewItem Text="StackMode"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Notes.png" Name="groupBarItem3" Header="State Persistence">    <!-- Adding content for groupbar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Save State"/>      <syncfusion:GroupViewItem Text="Load State"/>      <syncfusion:GroupViewItem Text="Reset State"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem4" HeaderImageSource="bin.png" Header="Orientation">    <!-- Adding content for groupbar item using panel -->    <StackPanel Orientation="Vertical">      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>      <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>      <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>    </StackPanel>  </syncfusion:GroupBarItem></syncfusion:GroupBar> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %} //groupBar is a name of groupbar//groupbar that have visual mode is StackModegroupBar.VisualMode = VisualMode.StackMode; </td> {% endhighlight %} </tr>
-</table>
+{% highlight xml %} <!-- Adding GroupBar that have visual mode is StackMode--><syncfusion:GroupBar Height="300" Width="230" VisualMode="StackMode" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">    <!-- Adding content for groupbar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Tasks.png" Name="groupBarItem2" Header="Visual Mode">    <!-- Adding content for groupbar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Default"/>      <syncfusion:GroupViewItem Text="Multiple Expansion"/>      <syncfusion:GroupViewItem Text="StackMode"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Notes.png" Name="groupBarItem3" Header="State Persistence">    <!-- Adding content for groupbar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Save State"/>      <syncfusion:GroupViewItem Text="Load State"/>      <syncfusion:GroupViewItem Text="Reset State"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem4" HeaderImageSource="bin.png" Header="Orientation">    <!-- Adding content for groupbar item using panel -->    <StackPanel Orientation="Vertical">      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>      <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>      <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>    </StackPanel>  </syncfusion:GroupBarItem></syncfusion:GroupBar> {% endhighlight %} 
+
+{% highlight C# %} //groupBar is a name of groupbar//groupbar that have visual mode is StackModegroupBar.VisualMode = VisualMode.StackMode; </td> {% endhighlight %} 
 
 
 ![](Appearance_images/Appearance_img3.jpeg)
@@ -175,98 +162,96 @@ SkinStorage.SetVisualStyle(groupBarInstance, "Office2010Blue");
 
 
 
-{% highlight xml %}
 
-<Style TargetType="{x:Type syncfusion:GroupBarItem}" x:Key="GroupBarItemStyle">
+			<Style TargetType="{x:Type syncfusion:GroupBarItem}" x:Key="GroupBarItemStyle">
 
-            <Setter Property="HeaderTemplate" >
+						<Setter Property="HeaderTemplate" >
 
-                <Setter.Value>
+							<Setter.Value>
 
-                    <DataTemplate >
+								<DataTemplate >
 
-                        <Grid>
+									<Grid>
 
-                            <Grid.ColumnDefinitions>
+										<Grid.ColumnDefinitions>
 
-                                <ColumnDefinition Width="25" />
+											<ColumnDefinition Width="25" />
 
-                                <ColumnDefinition Width="*" />
+											<ColumnDefinition Width="*" />
 
-                            </Grid.ColumnDefinitions>                            
+										</Grid.ColumnDefinitions>                            
 
-                            <TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
+										<TextBlock Text="{Binding XPath=@Name}" Margin="5" Foreground="Green" VerticalAlignment="Center" FontWeight="Bold" FontFamily="Bookman Old Style" Grid.Column="1"/>
 
-                        </Grid>
+									</Grid>
 
-                    </DataTemplate>
-
+								</DataTemplate>
 
 
-                </Setter.Value>
 
-            </Setter>
+							</Setter.Value>
 
-            <Setter Property="ContentTemplate">
+						</Setter>
 
-                <Setter.Value>
+						<Setter Property="ContentTemplate">
 
-                    <DataTemplate>
+							<Setter.Value>
 
-                        <Grid >
+								<DataTemplate>
 
-                            <Grid.ColumnDefinitions>
+									<Grid >
 
-                                <ColumnDefinition Width="4*"/>
+										<Grid.ColumnDefinitions>
 
-                                <ColumnDefinition Width="6*"/>
+											<ColumnDefinition Width="4*"/>
 
-                            </Grid.ColumnDefinitions>
+											<ColumnDefinition Width="6*"/>
 
-                            <Image Source="{Binding XPath=@ImagePath}"/>
+										</Grid.ColumnDefinitions>
 
-                            <TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Grid.Column="1"/>
+										<Image Source="{Binding XPath=@ImagePath}"/>
 
-                        </Grid>
+										<TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Grid.Column="1"/>
 
-                    </DataTemplate>
+									</Grid>
 
-                </Setter.Value>
+								</DataTemplate>
 
-            </Setter>
+							</Setter.Value>
 
-        </Style>
+						</Setter>
+
+					</Style>
 
 
-{% endhighlight %}
+
 
 
 2. Set ItemContainerStyle of GroupBar as follows.
 
 
 
-{% highlight xml %}
 
-<syncfusion:GroupBar Name="groupBar1" AllowCollapse="True" 
+			<syncfusion:GroupBar Name="groupBar1" AllowCollapse="True" 
 
-                    VisualMode="StackMode" 
+								VisualMode="StackMode" 
 
-                    ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  
+								ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  
 
-                    ItemContainerStyle="{StaticResource GroupBarItemStyle}"
+								ItemContainerStyle="{StaticResource GroupBarItemStyle}"
 
-                             />
-
+										 />
 
 
-{% endhighlight %}
+
+
 
 3. This will generate the following GroupBar control.
 
-![](Appearance_images/Appearance_img8.png)
+   ![](Appearance_images/Appearance_img8.png)
 
 
-
+   {:.prettyprint}
 
 
 ## Item Container Style Selector
@@ -277,207 +262,201 @@ The ItemContainerStyleSelector property is used to choose the ItemContainerStyle
 
 
 
-{% highlight xml %}
+			<Style TargetType="{x:Type syncfusion:GroupBarItem}" x:Key="WpfItemStyle">
 
-<Style TargetType="{x:Type syncfusion:GroupBarItem}" x:Key="WpfItemStyle">
+						<Setter Property="HeaderTemplate" >
 
-            <Setter Property="HeaderTemplate" >
+							<Setter.Value>
 
-                <Setter.Value>
+								<DataTemplate>
 
-                    <DataTemplate>
+									<StackPanel Orientation="Horizontal">
 
-                        <StackPanel Orientation="Horizontal">
+									<Image Margin="3" Source="D:\IUE_DOC\GroupBarWPF\GroupBarIUEDemo\GroupBarIUEDemo\Data\wpf.png" Width="20" Height="20"/>
 
-                        <Image Margin="3" Source="D:\IUE_DOC\GroupBarWPF\GroupBarIUEDemo\GroupBarIUEDemo\Data\wpf.png" Width="20" Height="20"/>
+									<TextBlock Text="{Binding XPath=@Name}" FontWeight="Bold" Foreground="Blue"/>
 
-                        <TextBlock Text="{Binding XPath=@Name}" FontWeight="Bold" Foreground="Blue"/>
+									</StackPanel>
 
-                        </StackPanel>
+								</DataTemplate>
 
-                    </DataTemplate>
+							</Setter.Value>
 
-                </Setter.Value>
+						</Setter>            
 
-            </Setter>            
+						<Setter Property="ContentTemplate">
 
-            <Setter Property="ContentTemplate">
+							<Setter.Value>                    
 
-                <Setter.Value>                    
+								<DataTemplate>
 
-                    <DataTemplate>
+									<Grid >
 
-                        <Grid >
+										<Grid.ColumnDefinitions>
 
-                            <Grid.ColumnDefinitions>
+											<ColumnDefinition Width="4*"/>
 
-                                <ColumnDefinition Width="4*"/>
+											<ColumnDefinition Width="6*"/>
 
-                                <ColumnDefinition Width="6*"/>
+										</Grid.ColumnDefinitions>
 
-                            </Grid.ColumnDefinitions>
+										<Image Source="{Binding XPath=@ImagePath}"/>
 
-                            <Image Source="{Binding XPath=@ImagePath}"/>
+										<TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Grid.Column="1"/>
 
-                            <TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Grid.Column="1"/>
+									</Grid>
 
-                        </Grid>
+								</DataTemplate>
 
-                    </DataTemplate>
+							</Setter.Value>
 
-                </Setter.Value>
+						</Setter>
 
-            </Setter>
-
-        </Style>
+					</Style>
 
 
 
-        <Style TargetType="{x:Type syncfusion:GroupBarItem}" x:Key="CsItemStyle">
+					<Style TargetType="{x:Type syncfusion:GroupBarItem}" x:Key="CsItemStyle">
 
-            <Setter Property="HeaderTemplate" >
+						<Setter Property="HeaderTemplate" >
 
-                <Setter.Value>
+							<Setter.Value>
 
-                    <DataTemplate>
+								<DataTemplate>
 
-                        <StackPanel Orientation="Horizontal">
+									<StackPanel Orientation="Horizontal">
 
-                            <Image Margin="3" Source="D:\IUE_DOC\GroupBarWPF\GroupBarIUEDemo\GroupBarIUEDemo\Data\images.jpg" Width="20" Height="20"/>
+										<Image Margin="3" Source="D:\IUE_DOC\GroupBarWPF\GroupBarIUEDemo\GroupBarIUEDemo\Data\images.jpg" Width="20" Height="20"/>
 
-                            <TextBlock Text="{Binding XPath=@Name}" FontWeight="Bold" Foreground="Green"/>
+										<TextBlock Text="{Binding XPath=@Name}" FontWeight="Bold" Foreground="Green"/>
 
-                        </StackPanel>
+									</StackPanel>
 
-                    </DataTemplate>
+								</DataTemplate>
 
-                </Setter.Value>
+							</Setter.Value>
 
-            </Setter>
+						</Setter>
 
-            <Setter Property="ContentTemplate">
+						<Setter Property="ContentTemplate">
 
-                <Setter.Value>
+							<Setter.Value>
 
-                    <DataTemplate>
+								<DataTemplate>
 
-                        <Grid >
+									<Grid >
 
-                            <Grid.ColumnDefinitions>
+										<Grid.ColumnDefinitions>
 
-                                <ColumnDefinition Width="4*"/>
+											<ColumnDefinition Width="4*"/>
 
-                                <ColumnDefinition Width="6*"/>
+											<ColumnDefinition Width="6*"/>
 
-                            </Grid.ColumnDefinitions>
+										</Grid.ColumnDefinitions>
 
-                            <Image Source="{Binding XPath=@ImagePath}"/>
+										<Image Source="{Binding XPath=@ImagePath}"/>
 
-                            <TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Grid.Column="1"/>
+										<TextBlock Text="{Binding XPath=@Description}" TextWrapping="Wrap" Grid.Column="1"/>
 
-                        </Grid>
+									</Grid>
 
-                    </DataTemplate>
+								</DataTemplate>
 
-                </Setter.Value>
+							</Setter.Value>
 
-            </Setter>
+						</Setter>
 
-        </Style>
+					</Style>
 
 
-{% endhighlight %}
 
 
 2. Create the StyleSelector in the code.
 
 
 
-{% highlight C# %}
-
-     public class GroupBarItemContainerStyleSelector : StyleSelector
-
-    {
 
 
+				 public class GroupBarItemContainerStyleSelector : StyleSelector
 
-        public override Style SelectStyle(object item, DependencyObject container)
-
-        {
+				{
 
 
 
-            Window window = Application.Current.MainWindow;
+					public override Style SelectStyle(object item, DependencyObject container)
+
+					{
 
 
 
-            string bookname = (item as System.Xml.XmlElement).GetAttribute("Name").ToString().ToLower();
-
-            if (bookname.Contains("wpf"))
-
-            {
-
-                return ((Style)window.Resources["WpfItemStyle"]);
-
-            }
-
-            else
-
-            {
-
-                return ((Style)window.Resources["CsItemStyle"]);
-
-            }
+						Window window = Application.Current.MainWindow;
 
 
 
-        }
+						string bookname = (item as System.Xml.XmlElement).GetAttribute("Name").ToString().ToLower();
 
-    }
+						if (bookname.Contains("wpf"))
+
+						{
+
+							return ((Style)window.Resources["WpfItemStyle"]);
+
+						}
+
+						else
+
+						{
+
+							return ((Style)window.Resources["CsItemStyle"]);
+
+						}
 
 
-{% endhighlight %}
+
+					}
+
+				}
+
+
 
 
 3. Now define the style selector in the Window’s resource.
 
 
 
-{% highlight xml %}
 
-        <local:GroupBarItemContainerStyleSelector x:Key="groupBarItemContainerStyleSelector"/>
+			<local:GroupBarItemContainerStyleSelector 
+			x:Key="groupBarItemContainerStyleSelector"/>
 
 
-{% endhighlight %}
+
 
 
 4. Now set ItemContainerStyle for the GroupBar control.
 
 
 
-{% highlight xml %}
+		   <syncfusion:GroupBar Name="groupBar1"  AllowCollapse="True" 
 
-   <syncfusion:GroupBar Name="groupBar1"  AllowCollapse="True" 
+				VisualMode="StackMode" 
 
-        VisualMode="StackMode" 
+				ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  
 
-        ItemsSource="{Binding Source={StaticResource xmlSource}, XPath=Book}"  
+				ItemContainerStyleSelector="{StaticResource groupBarItemContainerStyleSelector}"
 
-        ItemContainerStyleSelector="{StaticResource groupBarItemContainerStyleSelector}"
-
-                             />
+									 />
 
 
 
-{% endhighlight %}
-
-This will generate the following GroupBar control.
 
 
+   This will generate the following GroupBar control.
 
-![](Appearance_images/Appearance_img9.png)
 
 
+   ![](Appearance_images/Appearance_img9.png)
+
+   {:.prettyprint}
 
 ## Drag Marker Color
 
@@ -488,14 +467,11 @@ DragMarkerBrush – This dependency property sets the brush value for the drag m
 Use the below code snippet to set this property.
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %} <!-- Adding GroupBar --><syncfusion:GroupBar Height="200" DragMarkerBrush="Red" Width="230" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">    <!-- Adding content for GroupBar item using panel -->    <StackPanel Orientation="Vertical">      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>      <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>      <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>    </StackPanel>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView Name="groupView" IsListViewMode="True">      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem></syncfusion:GroupBar> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %} //Setting drag marker brushgroupBar.DragMarkerBrush = Brushes.Red; {% endhighlight %} </td></tr>
-</table>
+
+{% highlight xml %} <!-- Adding GroupBar --><syncfusion:GroupBar Height="200" DragMarkerBrush="Red" Width="230" Name="groupBar">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem" Header="GroupBarItem">    <!-- Adding content for GroupBar item using panel -->    <StackPanel Orientation="Vertical">      <TextBlock Text="GroupBar Orientation" Margin="4,4,2,2"/>      <RadioButton IsChecked="True" Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton Margin="4,2,2,2">Vertical</RadioButton>      <TextBlock Text="GroupView Orientation" Margin="4,4,2,2"/>      <RadioButton Margin="4,2,2,2">Horizontal</RadioButton>      <RadioButton IsChecked="True" Margin="4,2,2,2">Vertical</RadioButton>    </StackPanel>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif" Header="General">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView Name="groupView" IsListViewMode="True">      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem></syncfusion:GroupBar> {% endhighlight %} 
+
+{% highlight C# %} //Setting drag marker brushgroupBar.DragMarkerBrush = Brushes.Red; {% endhighlight %} 
+
 
 
 ## Custom Template for the Collapse Button
@@ -572,14 +548,10 @@ Use the following code snippet to set these properties.
 
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %} <!-- Adding GroupBar  --><syncfusion:GroupBar Height="300" Width="230" Name="groupBar" CollapseButtonBackground="AliceBlue" CollapseButtonMouseOverBackground="Bisque" AllowCollapse="True"  VisualMode="StackMode">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif"  Header="General">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView Name="groupView" IsListViewMode="True">      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Tasks.png" Name="groupBarItem2"  Header="Visual Mode">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Default"/>      <syncfusion:GroupViewItem Text="Multiple Expansion"/>      <syncfusion:GroupViewItem Text="StackMode"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Notes.png" Name="groupBarItem3"  Header="State Persistence">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Save State"/>      <syncfusion:GroupViewItem Text="Load State"/>      <syncfusion:GroupViewItem Text="Reset State"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem></syncfusion:GroupBar> {% endhighlight %}  </td></tr>
-<tr>
-<td>
-{% highlight C# %} //Enable AllowCollapse property for GroupBargroupBar.AllowCollapse = true; //Set the Background brush for Collapse buttongroupBar.CollapseButtonBackground = Brushes.AliceBlue;//Set the MouseOverBackground brush for Collapse ButtongroupBar.CollapseButtonMouseOverBackground = Brushes.Bisque; {% endhighlight %}  </td></tr>
-</table>
+{% highlight xml %} <!-- Adding GroupBar  --><syncfusion:GroupBar Height="300" Width="230" Name="groupBar" CollapseButtonBackground="AliceBlue" CollapseButtonMouseOverBackground="Bisque" AllowCollapse="True"  VisualMode="StackMode">  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem Name="groupBarItem1" HeaderImageSource="Label.gif"  Header="General">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView Name="groupView" IsListViewMode="True">      <syncfusion:GroupViewItem Text="List View"/>      <syncfusion:GroupViewItem Text="Show ContextMenu"/>      <syncfusion:GroupViewItem Text="Show ToolTip"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Tasks.png" Name="groupBarItem2"  Header="Visual Mode">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Default"/>      <syncfusion:GroupViewItem Text="Multiple Expansion"/>      <syncfusion:GroupViewItem Text="StackMode"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem>  <!-- Adding GroupBarItem -->  <syncfusion:GroupBarItem HeaderImageSource="Notes.png" Name="groupBarItem3"  Header="State Persistence">    <!-- Adding content for GroupBar item using GroupView -->    <syncfusion:GroupView>      <syncfusion:GroupViewItem Text="Save State"/>      <syncfusion:GroupViewItem Text="Load State"/>      <syncfusion:GroupViewItem Text="Reset State"/>    </syncfusion:GroupView>  </syncfusion:GroupBarItem></syncfusion:GroupBar> {% endhighlight %}  
+
+{% highlight C# %} //Enable AllowCollapse property for GroupBargroupBar.AllowCollapse = true; //Set the Background brush for Collapse buttongroupBar.CollapseButtonBackground = Brushes.AliceBlue;//Set the MouseOverBackground brush for Collapse ButtongroupBar.CollapseButtonMouseOverBackground = Brushes.Bisque; {% endhighlight %}  
+
 
 
 ## Customizing Group Bar Header

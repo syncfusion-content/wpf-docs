@@ -40,19 +40,19 @@ Parameters </th><th>
 Type </th><th>
 Return Type </th></tr>
 <tr>
-<th>
-LoadVarianceTableView</th><th>
-This method is used to load the Variance view of the Gantt.</th><th>
-LoadVarianceTableView()</th><th>
-N/A</th><th>
-void </th></tr>
+<td>
+LoadVarianceTableView</td><td>
+tdis metdod is used to load tde Variance view of tde Gantt.</td><td>
+LoadVarianceTableView()</td><td>
+N/A</td><td>
+void </td></tr>
 <tr>
-<th>
-LoadDefaultTableView</th><th>
-This method is used to load the Default (Editing) view of the Gantt.</th><th>
-LoadDefaultTableView()</th><th>
-N/A</th><th>
-void</th></tr>
+<td>
+LoadDefaultTableView</td><td>
+tdis metdod is used to load tde Default (Editing) view of tde Gantt.</td><td>
+LoadDefaultTableView()</td><td>
+N/A</td><td>
+void</td></tr>
 </table>
 
 
@@ -71,7 +71,7 @@ The following codes illustrate this:
 
 
 {% highlight html %}
-[XAML]
+
 
    <gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
 
@@ -116,7 +116,7 @@ The following codes illustrate this:
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
    // To load the Variance Table View 
 
@@ -201,7 +201,7 @@ The following codes illustrate Adding On-Demand Baseline Column Inclusion to an 
 
 {% highlight html %}
 
-[XAML]
+
 
 
 
@@ -252,7 +252,7 @@ The following codes illustrate Adding On-Demand Baseline Column Inclusion to an 
 
 {% endhighlight  %}
 {% highlight c# %}
-[C#]
+
 
 
 
@@ -296,12 +296,12 @@ Parameters </th><th>
 Type </th><th>
 Return Type </th></tr>
 <tr>
-<th>
-GetProjectStatistics</th><th>
-This method is used to get the current statistics information about the project</th><th>
-GetProjectStatistics()</th><th>
-N/A</th><th>
-ProjectInfo </th></tr>
+<td>
+GetProjectStatistics</td><td>
+tdis metdod is used to get tde current statistics information about tde project</td><td>
+GetProjectStatistics()</td><td>
+N/A</td><td>
+ProjectInfo </td></tr>
 </table>
 
 
@@ -317,7 +317,7 @@ The following codes illustrate adding Project Statistics to an application:
 
 {% highlight html %}
 
-[XAML]
+
 
    <gantt:GanttControl Grid.Row="1" x:Name="Gantt"  
 
@@ -364,7 +364,7 @@ The following codes illustrate adding Project Statistics to an application:
 {% endhighlight  %}
 {% highlight c# %}
 
-[C#]
+
 
    // To get the Project Statistics 
 

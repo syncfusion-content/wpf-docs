@@ -15,17 +15,17 @@ Essential Chart for WPF is intended for developers looking to add advanced, feat
 
 The following image shows an example of a Chart control (line chart):
 
-{{ '![](Overview_images/Overview_img1.jpeg)' | markdownify }}
-{:.image }
+![](Overview_images/Overview_img1.jpeg)
 
 
-Real World Scenarios
+
+## Real World Scenarios
 
 Chart is used to show the graphical representation of two values. For example, a Line Chart can be used to depict the variation of sales in the recent years as shown in Figure 1.
 
 Logarithmic charts can be used in Share Price charts where you plot between price and time. In logarithmic chart, you can identify the proportional change in price with respect to the change in time. Proportional change in price is used to observe the market sentiment. 
 
-Key Features
+## Key Features
 
 The following are the key features of Essential Chart for WPF:
 
@@ -43,7 +43,7 @@ The following are the key features of Essential Chart for WPF:
 
 
 
-User Guide Organization
+## User Guide Organization
 
 The product comes with numerous samples as well as an extensive documentation to guide you. This User Guide provides detailed information on the features and functionalities of the Essential Chart for WPF. It is organized into the following sections:
 
@@ -55,7 +55,7 @@ The product comes with numerous samples as well as an extensive documentation to
 
 
 
-Document Conventions 
+## Document Conventions 
 
 The following conventions help you quickly identify the important sections of information, while using the content:
 
@@ -63,9 +63,9 @@ _Document Convention_
 
 <table>
 <tr>
-<td>
-Convention</td><td>
-Description</td></tr>
+<th>
+Convention</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>

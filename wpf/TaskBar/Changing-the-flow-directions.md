@@ -11,13 +11,12 @@ documentation: ug
 
 The flow direction for the TaskBar is set through the FlowDirection property.
 
-_FlowDirection property table_
-
+FlowDirection property table
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td></tr>
+<th>
+{{ '**Property**' | markdownify }}</th><th>
+{{ '**Description**' | markdownify }}</th></tr>
 <tr>
 <td>
 FlowDirection</td><td>
@@ -29,7 +28,6 @@ Here is the code for setting this property.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -63,7 +61,6 @@ This is TaskBar that have a TaskBarItem</TextBlock>
 
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -78,7 +75,7 @@ taskBar.FlowDirection = FlowDirection.RightToLeft;
 ![](Changing-the-flow-directions_images/Changing-the-flow-directions_img1.jpeg)
 
 
-_FlowDirection = "RightToLeft"_
+FlowDirection = "RightToLeft"
 
 
 

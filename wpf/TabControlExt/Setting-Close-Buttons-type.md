@@ -25,7 +25,6 @@ The following code snippet illustrates how to set the "Both" Close button mode i
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -49,7 +48,6 @@ The following code snippet illustrates how to set the "Both" Close button mode i
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 
 
 

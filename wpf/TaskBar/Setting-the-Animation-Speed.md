@@ -15,7 +15,6 @@ Use the following code snippet to set this property.
 
 
 {% highlight xml %}
-[XAML]
 
 
 
@@ -65,7 +64,6 @@ Use the following code snippet to set this property.
 
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -85,7 +83,6 @@ This method is used to get the animation speed, which controls the time taken to
 
 
 {% highlight c# %}
-[C#]
 
 
 
@@ -105,7 +102,6 @@ This method is used to set the animation speed, which controls the time taken to
 
 
 {% highlight c# %}
-[C#]
 
 
 

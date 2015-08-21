@@ -18,7 +18,7 @@ This event occurs when the DateTime property of the DateTimeEdit control is chan
 
 
 {% highlight html %}
-[XAML]
+
 
 <syncfusion:DateTimeEdit Width="150" DateTimeChanged="DateTimeEdit_DateTimeChanged"/>
 
@@ -29,7 +29,7 @@ You can handle the event as follows:
 
 
 {% highlight c# %}
-[C#]
+
 
 private void DateTimeEdit_DateTimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)        {        }
 {% endhighlight  %}
@@ -41,7 +41,7 @@ This event occurs when the MinDateTime property of the DateTimeEdit control is c
 
 
 {% highlight html %}
-XAML
+
 
 <syncfusion:DateTimeEdit Width="150" MinDateTimeChanged="DateTimeEdit_MinDateTimeChanged"/>
 
@@ -52,7 +52,7 @@ You can handle the event as follows:
 
 
 {% highlight c# %}
-C#
+
 
 private void DateTimeEdit_MinDateTimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)        {        }
 {% endhighlight %}
@@ -64,7 +64,7 @@ This event occurs when the MaxDateTime property of the DateTimeEdit control is c
 
 {% highlight html %}
 
-XAML
+
 
 <syncfusion:DateTimeEdit Width="150" MaxDateTimeChanged="DateTimeEdit_MaxDateTimeChanged"/>
 
@@ -75,7 +75,6 @@ You can handle the event as follows:
 
 
 {% highlight c# %}
-C#
 
 private void DateTimeEdit_MaxDateTimeChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)        {        }
 {% endhighlight  %}
@@ -87,7 +86,7 @@ This event occurs when the Pattern property of the DateTimeEdit control is chang
 
 
 {% highlight html %}
-XAML
+
 
 <syncfusion:DateTimeEdit Width="150" PatternChanged="DateTimeEdit_PatternChanged"/>
 
@@ -98,7 +97,7 @@ You can handle the event as follows:
 
 
 {% highlight c# %}
-C#
+
 
 private void DateTimeEdit_PatternChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)        {        }
 {% endhighlight  %}
@@ -110,7 +109,7 @@ This event occurs when the Calendar popup is open.
 
 
 {% highlight html %}
-XAML
+
 
 <syncfusion:DateTimeEdit Height="25" Width="150" EnableClassicStyle="True" CalendarPopupOpened="DateTimeEdit_CalendarPopupOpened"/>
 
@@ -120,7 +119,7 @@ You can handle the event as follows:
 
 
 {% highlight c# %}
-C#
+
 
 private void DateTimeEdit_CalendarPopupOpened(object sender, RoutedEventArgs e)        {        }
 

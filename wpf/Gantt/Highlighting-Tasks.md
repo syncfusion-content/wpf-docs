@@ -52,7 +52,7 @@ To highlight a set of tasks in Gantt chart region:
 
 
 {% highlight html %}
-[XAML]
+
 
 <sync:GanttControl x:Name="Gantt" 
 
@@ -65,7 +65,7 @@ To highlight a set of tasks in Gantt chart region:
 {% endhighlight %}
 {% highlight c# %}
 
-[C#]
+
 
 /// Codes in View Model 
 

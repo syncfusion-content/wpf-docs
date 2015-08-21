@@ -31,7 +31,7 @@ The following code example illustrates how to set Blend scheme for the Ribbon co
 
 {% highlight xml %}
 
-   [XAML]
+  
 
 
 
@@ -82,7 +82,7 @@ You can also set 'custom' active color schemes for the Ribbon control. This enab
 
 {% highlight c# %}
  
-  [C#]
+  
 
 
 
@@ -132,10 +132,10 @@ The following code example illustrates how to set the Blend visual style for the
 <table>
 <tr>
 <td>
-[XAML]<syncfusion:RibbonWindow x:Class="EssentialRibbonApplication.RibbonWindow1"  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"                          Title="Window1" Height="300" Width="320" Loaded="RibbonWindow_Loaded"  syncfusion:SkinStorage.VisualStyle="Blend">    <syncfusion:Ribbon x:Name="ribbon" Loaded="ribbon_Loaded" >        <syncfusion:Ribbon.ApplicationMenu>            <syncfusion:ApplicationMenu Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" >            </syncfusion:ApplicationMenu>        </syncfusion:Ribbon.ApplicationMenu>        <syncfusion:RibbonTab Caption="Message"  syncfusion:Ribbon.KeyTip="H" IsChecked="True">            <syncfusion:RibbonBar Header="Clipboard" Name="barClipboaurd" >            </syncfusion:RibbonBar>        </syncfusion:RibbonTab>    </syncfusion:Ribbon></syncfusion:RibbonWindow></td></tr>
+{% highlight xml %}<syncfusion:RibbonWindow x:Class="EssentialRibbonApplication.RibbonWindow1"  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"                          Title="Window1" Height="300" Width="320" Loaded="RibbonWindow_Loaded"  syncfusion:SkinStorage.VisualStyle="Blend">    <syncfusion:Ribbon x:Name="ribbon" Loaded="ribbon_Loaded" >        <syncfusion:Ribbon.ApplicationMenu>            <syncfusion:ApplicationMenu Width="38" Height="38" syncfusion:Ribbon.KeyTip="F" >            </syncfusion:ApplicationMenu>        </syncfusion:Ribbon.ApplicationMenu>        <syncfusion:RibbonTab Caption="Message"  syncfusion:Ribbon.KeyTip="H" IsChecked="True">            <syncfusion:RibbonBar Header="Clipboard" Name="barClipboaurd" >            </syncfusion:RibbonBar>        </syncfusion:RibbonTab>    </syncfusion:Ribbon></syncfusion:RibbonWindow>{% endhighlight %}</td></tr>
 <tr>
 <td>
-[C#]// Set "Blend" visual style for the Ribbon control.SkinStorage.SetVisualStyle(this, "Blend");</td></tr>
+{% highlight c# %}// Set "Blend" visual style for the Ribbon control.SkinStorage.SetVisualStyle(this, "Blend");{% endhighlight %}</td></tr>
 </table>
 
 

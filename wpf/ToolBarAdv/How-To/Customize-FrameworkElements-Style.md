@@ -15,17 +15,17 @@ Following code snippet shows the resource dictionary containing FrameworkElement
 
 
 
-[XAML]
+{% highlight xml %}
 
 
 
 <shared:ToolBarAdv ControlsResourceDictionary="ControlsResource.xaml"></shared:ToolBarAdv>
+{% endhighlight %}
 
 
 
 
-
-[C#]
+{% highlight C# %}
 
 ToolBarAdv toolBar = new ToolBarAdv();
 
@@ -38,7 +38,7 @@ ToolBarAdv toolBar = new ToolBarAdv();
             }
 
 
-
+{% endhighlight %}
                 * 
 
 

@@ -7,12 +7,12 @@ control: PivotGrid
 documentation: ug
 ---
 
-## PivotItem
+# PivotItem
 
 A pivot item is an item in a PivotTable field. PivotItem provides the information needed to define a pivot item for either a row or column 
 pivot. It consists of the following fields.
 
-_Property Table_
+Property Table
 
 <table>
 <tr>
@@ -61,13 +61,11 @@ string</td><td>
 </table> 
 
 
-### Defining PivotItem in XAML and Code-Behind
+## Defining PivotItem in XAML and Code-Behind
 
 PivotItem can be defined in XAML or in code-behind.
 
 {% highlight xml %} 
-
- [XAML]
 
 
 
@@ -89,7 +87,6 @@ or
 
 {% highlight C# %}  
 
-[C#]
 
 
 
@@ -107,7 +104,6 @@ this.PivotGridControl1.PivotRows.Add(m_PivotItem);
 
 {% highlight vbnet %} 
 
-[VB]
 
 
 
@@ -122,13 +118,13 @@ Me.PivotGridControl1.PivotRows.Add(m_PivotItem)
 {% endhighlight %} 
 
 
-### Sorting Using PivotItem
+## Sorting Using PivotItem
 
 By default, PivotGrid will sort data in ascending order. The sorting order can be changed using the Comparer field of PivotItem.
 
 {% highlight C# %}
 
-[C#]
+
 
 // Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparer
 
@@ -184,7 +180,6 @@ public class ReverseOrderComparer : IComparer
 
 {% highlight vbnet %} 
 
-[VB]
 
 ' Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparer
 

@@ -7,17 +7,17 @@ control: SfMultiColumnDropDownControl
 documentation: ug
 ---
 
-## Keyboard Support
+# Keyboard Support
 
 The following table lists the keyboard shortcuts supported by the MultiColumnDropDown control.
 
-_List of Keyboard Shortcut_
+List of Keyboard Shortcut
 
 <table>
 <tr>
-<td>
-Keyboard Shortcut</td><td>
-Description</td></tr>
+<th>
+Keyboard Shortcut</th><th>
+Description</th></tr>
 <tr>
 <td>
 Enter</td><td>

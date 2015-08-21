@@ -7,25 +7,25 @@ control: UpDown Control
 documentation: ug
 ---
 
-### Restrict the editing of value in the TextBox
+# Restrict the editing of value in the TextBox
 
 You can restrict the editing of value in the TextBox by setting the AllowEdit property to false as shown in the following code example.
 
- [XAML]
+{%highlight xml%}
 
 <syncfusion:UpDown Name="upDown" AllowEdit="false">
  </ syncfusion:UpDown>
 
+{%endhighlight%}
 
-
-[C#]
+{%highlight c#%}
 
 UpDown upDown = new UpDown();
 
 upDown.AllowEdit = false;
 
 
-
+{%endhighlight%}
 
 
 
