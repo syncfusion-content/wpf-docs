@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 141-Working-with-Word-Documents
-description: 1.4.1 working with word documents
+title: Working-with-Word-Documents
+description: working with word documents
 platform: wpf
 control: DocIO
 documentation: ug
