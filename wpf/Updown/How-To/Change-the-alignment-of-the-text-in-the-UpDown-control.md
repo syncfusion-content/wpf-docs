@@ -14,9 +14,7 @@ You can change the alignment of the text in the UpDown control by using the Text
 The TextAlignment can set to the left in the UpDown control as shown in the following code example.
 
 {%highlight xml%}
-<syncfusion:UpDown Name="upDown" TextAlignment="Left"
-
->
+<syncfusion:UpDown Name="upDown" TextAlignment="Left">
  </ syncfusion:UpDown> 
 
 {%endhighlight%}
@@ -39,9 +37,7 @@ The TextAlignment can be set to the right in the UpDown control as shown in the 
 
 {%highlight xml%}
 
-<syncfusion:UpDown Name="upDown" TextAlignment="Right"
-
->
+<syncfusion:UpDown Name="upDown" TextAlignment="Right">
  </ syncfusion:UpDown> 
 
 {%endhighlight%}

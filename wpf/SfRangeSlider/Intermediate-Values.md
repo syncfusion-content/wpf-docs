@@ -23,7 +23,7 @@ Gets the intermediate RangeStart value.
 
 Gets the intermediate RangeEnd value.  
 
-> Note: Above properties are read only properties and cannot set through XAML or code behind.
+N> Above properties are read only properties and cannot set through XAML or code behind.
 
 
 

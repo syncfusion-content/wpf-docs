@@ -273,7 +273,6 @@ Double Value</td></tr>
 </table>
 
 
-> Note:
 
 > The Content property helps represent the required content in an annotation shape.
 

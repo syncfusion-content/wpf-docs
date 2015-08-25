@@ -293,11 +293,7 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 
    {:.prettyprint}
    
-> Note: 
-
-> The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version.
-
-> The Syncfusion Reference Manager can be used only in the Visual Studio 2010, 2012, and 2013.
+N>  The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version. The Syncfusion Reference Manager can be used only in the Visual Studio 2010, 2012, and 2013.
 
 
 

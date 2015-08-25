@@ -66,7 +66,7 @@ VerticalOffset</td><td>
 This is an attached property that gets or sets the tooltip offset position in accordance with the VerticalAlignment property.</td></tr>
 </table> 
 
-> Note : By default, the ToolTip is disabled. It must be enabled inorder to use it. Also, if you require an easy animation for the ToolTip, the EnableAnimation property must be set to True.
+N> : By default, the ToolTip is disabled. It must be enabled inorder to use it. Also, if you require an easy animation for the ToolTip, the EnableAnimation property must be set to True.
 
 The following code example can be added to enable and customize the ToolTip feature.
 
@@ -1070,7 +1070,7 @@ The following screenshots illustrate the SfChart with scrollbar enabled.
 
 SfChart provides data point selection for adornments and the HighlightOnSelection property allows you to select the segment with the corresponding segment adornment. 
 
-> Note: This property works only when you have enabled the selection for the series, by adding the above behavior.
+N> This property works only when you have enabled the selection for the series, by adding the above behavior.
 
 All the series having Selection support, support the Adornment property.
 

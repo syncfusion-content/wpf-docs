@@ -882,7 +882,7 @@ Creating a Basic Report during design-time
 
 
 
-> Note: The Next button is enabled only when any one of the connection options are filled properly.
+N> The Next button is enabled only when any one of the connection options are filled properly.
 
 7. When the connection is valid, it displays the summary page of the Data Source Properties Wizard.
 
@@ -898,7 +898,7 @@ Creating a Basic Report during design-time
 
 
 10. When you are editing an existing query it displays the required dimensions in the specific axis of the query designer and the preview of that query is displayed in a Grid control.
-    >  Note: It does not display any style/formatting applied to the Grid. It displays only the result of the query.
+    N> It does not display any style/formatting applied to the Grid. It displays only the result of the query.
 
 11. Drag and drop dimensions, to frame a new query. 
 

@@ -4900,7 +4900,7 @@ If the data given are 1, 2, 4, 5, 8, 10, 12, 13, 14, 15, 16, 17 and the SetBreak
 ![](Chart-Controls_images/Chart-Controls_img121.jpeg)
 
 
-> Note: This feature can be applied for both Line and Spline type charts. This can be applied for both Double and DateTime type axis values.
+N> This feature can be applied for both Line and Spline type charts. This can be applied for both Double and DateTime type axis values.
 
 Break Lines for Spline Type
 {% highlight c# %}
@@ -4923,7 +4923,7 @@ ChartLineType.SetBreakLineForTimeSpanPointsDistanceMoreThan(Chart2.Areas[0].Seri
 ChartSplineType.SetBreakLineForTimeSpanPointsDistanceMoreThan(Chart2.Areas[0].Series[0], new TimeSpan(1, 0, 0, 0));
 {% endhighlight  %}
 
-> Note: This feature can be applied for non-indexed data alone. It cannot be applied for 3D charts.
+N> This feature can be applied for non-indexed data alone. It cannot be applied for 3D charts.
 
 ## Heat Map Control
 

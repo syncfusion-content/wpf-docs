@@ -83,7 +83,7 @@ True</td></tr>
 </table>
 
 
-> Note: GridColumn.AllowGrouping takes higher priority than DataGrid.AllowGrouping.  When you set AllowGrouping to ‘true’ in DataGrid and AllowGrouping to ‘false’ for particular column then that column is not grouped.
+N> GridColumn.AllowGrouping takes higher priority than DataGrid.AllowGrouping.  When you set AllowGrouping to ‘true’ in DataGrid and AllowGrouping to ‘false’ for particular column then that column is not grouped.
 
 The following screenshot illustrates Group or Ungroup the Column in different ways. DataGrid allows you to group the column in following ways:
 
@@ -484,7 +484,7 @@ private void sfdatagrid_GroupExpanding(object sender, GroupChangingEventArgs e)
 
 
 
-> Note: These events do not hit when you use ExpandAllGroup (), CollapseAllGroup (), ExpandGroupsAtLevel () and CollapseGropsAtLevel () methods.
+N> These events do not hit when you use ExpandAllGroup (), CollapseAllGroup (), ExpandGroupsAtLevel () and CollapseGropsAtLevel () methods.
 
 ## Custom Grouping
 

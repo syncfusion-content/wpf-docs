@@ -15,7 +15,7 @@ You can use the Microsoft Excel to design spreadsheets that can be used on syste
 
 To illustrate this process, consider a sample project, Essential Studio\xx.x.x.xx\WPF\Calculation.Wpf\Samples\2.0\XlsFileUsingExcelRW. 
 
-> Note: This requires you to have Essential XlsIO installed in addition to Essential Calculate. MS Excel is not required.
+N> This requires you to have Essential XlsIO installed in addition to Essential Calculate. MS Excel is not required.
 
 
 The spreadsheet you are using is a car insurance calculator. It uses Names to manage variable values and has the following four sheets.

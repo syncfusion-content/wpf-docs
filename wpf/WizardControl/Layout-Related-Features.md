@@ -112,7 +112,7 @@ Banner Image
 
 Set an image for the banner of the Wizard control using the BannerImage property.
 
-> Note: You can set the banner image either on the interior or exterior wizard page based on the wizard page type.
+N> You can set the banner image either on the interior or exterior wizard page based on the wizard page type.
 
 
 

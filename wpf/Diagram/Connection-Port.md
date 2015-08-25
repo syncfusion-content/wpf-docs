@@ -212,7 +212,7 @@ This adds a port to the node at the location (50,0) with respect to the node.
 
 _Connection Port_
 
-> Note: The ports location should always be specified to be within the node's boundary. Therefore the values of the Left and Top property should always be less than the width and height of the node respectively.
+N> The ports location should always be specified to be within the node's boundary. Therefore the values of the Left and Top property should always be less than the width and height of the node respectively.
 
 ## Adding Connection Port at Runtime
 
@@ -291,7 +291,7 @@ TryCast(node.Ports(1), ConnectionPort).AllowDelete = False
 
 {% endhighlight %}
 
-> Note: Removing a port directly from a node’s Ports collection property will not be affected by setting the AllowDelete property of the connection port to false.
+N> Removing a port directly from a node’s Ports collection property will not be affected by setting the AllowDelete property of the connection port to false.
 
 ## Create Connection Port on Line Connector
 
@@ -474,7 +474,7 @@ The connection port will always be hidden, when PortVisibility property of the N
 
 ConnectionPort will be visible always, when PortVisiblity property of the Node is set to AlwaysVisible.
 
-> Changes: For versions 10.2 and later, the type of PortVisibility property of nodes has been changed from ‘Visibility’ to ’PortVisibility‘ Enum.
+I> Changes: For versions 10.2 and later, the type of PortVisibility property of nodes has been changed from ‘Visibility’ to ’PortVisibility‘ Enum.
 
 
 

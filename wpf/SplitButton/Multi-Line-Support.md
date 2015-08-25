@@ -21,7 +21,7 @@ Multiline support can be enabled by using the following code:
 
 ![](Multi-Line-Support_images/Multi-Line-Support_img1.png)
 
-> Note: This property only applicable for Large Size Mode Buttons.
+N> This property only applicable for Large Size Mode Buttons.
 
 
 

@@ -37,13 +37,13 @@ You can validate the MaxValue in two ways:
 
 If this property is set to true, then when you enter a value less than the MinValue then it will automatically assign the MinValue to the Value property. Otherwise it will not allow the key press.
 
-> Note: This will be enabled only when MinValidation is set to OnKeyPress.
+N> This will be enabled only when MinValidation is set to OnKeyPress.
 
 ## MaxValueOnExceedMaxDigit
 
 If this property is set to true, then when you enter a value greater than the MaxValue then it will automatically assign the MaxValue to the Value property. Otherwise it will not allow the key press.
 
-> Note: This will be enabled only when the MaxValidation is set to OnKeyPress.
+N> This will be enabled only when the MaxValidation is set to OnKeyPress.
 
 
 

@@ -72,7 +72,7 @@ Create a Model class with the necessary properties.
 {% endhighlight %}
 
 
-> Note: NotificationObject is a class which implements INotifyPropertyChanged interface.
+N> NotificationObject is a class which implements INotifyPropertyChanged interface.
 
 
 Create a View Model class with the hierarchical items as follows.  
@@ -224,7 +224,7 @@ This will populate the Tree Navigator as follows.
 
 
 
-> Note: HierarchicalDataTemplate available in Syncfusion.SfShared.WPF dll under the Syncfusion.Windows.Primitives namespace
+N> HierarchicalDataTemplate available in Syncfusion.SfShared.WPF dll under the Syncfusion.Windows.Primitives namespace
 
 
 

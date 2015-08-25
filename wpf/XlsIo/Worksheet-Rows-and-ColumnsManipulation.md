@@ -360,7 +360,7 @@ excelEngine.Dispose()
 {% endhighlight %}
 
 
-> Note: Here, row and column index of Insert methods are "one based"
+N> Here, row and column index of Insert methods are "one based"
 
 _Options provided by the ExcelInsertOptions enumerator_
 
@@ -756,7 +756,7 @@ excelEngine.Dispose()
 
 {% endhighlight %}
 
-> Note:
+N>
 
 * Deletion by using the above method is more efficient than looping.
 * Row/Column index of these methods are "one based".
@@ -1520,7 +1520,7 @@ excelEngine.Dispose()
 
 {% endhighlight %}
 
-> Note: These indexes are "one based".
+N> These indexes are "one based".
 
 You can also AutoFit single row/column as follows.
 
@@ -1632,7 +1632,7 @@ excelEngine.Dispose()
 
 {% endhighlight %}
 
-> Note: Here column and row indexes are "zero based".
+N> Here column and row indexes are "zero based".
 
 
 
@@ -1928,7 +1928,7 @@ excelEngine.Dispose()
 
 Here, though the cell B2 has long text, AutoFit will not be applied to this column as the cell inside the range[5, 2, 19, 2] has text smaller than that. Similarly, row height for Row 15 will not be affected with AutoFit rows as the range [5, 2, 13, 4] has row height smaller than Row 15.  
 
-> Note:
+N>
 
 1. If a Range is text wrapped, AutoFitColumn method will not be applied on it.
 2. If a Range is merged, AutoFit methods will not be applied on it. Note that this is the behavior of MS Word.

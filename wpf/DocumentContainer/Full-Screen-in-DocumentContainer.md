@@ -24,7 +24,7 @@ TDIFullScreenMode is the property used to define the full-screen mode for TDI it
 
 
 
-> Note: This feature also applicable for the TabControlExt.
+N> This feature also applicable for the TabControlExt.
 
 
 

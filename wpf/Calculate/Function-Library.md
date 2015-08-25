@@ -68,7 +68,7 @@ This is the only requirement on the method. You are free to use any kind of conv
 
 Here add a method that accepts an argument list and then returns the minimum value in this list. The list may be individual cell references and cell ranges, or numbers. This sample code uses CalcEngine methods to handle the parsing and retrieving of values from the argument list.
 
-> Note: List separators can vary depending upon culture. While it is reasonable to use a comma as a separator in en-US, this is not the case with fr-FR where the comma is used as a decimal separator. For this reason, CalcEngine.ParseArgumentSeparator is a static member that holds the list separator that is recognized by the parsing of algorithms in the CalcEngine.
+N> List separators can vary depending upon culture. While it is reasonable to use a comma as a separator in en-US, this is not the case with fr-FR where the comma is used as a decimal separator. For this reason, CalcEngine.ParseArgumentSeparator is a static member that holds the list separator that is recognized by the parsing of algorithms in the CalcEngine.
 
 In the following code, CalcEngine.ParseArgumentSeparator is used to split the args into a list. Additionally, the code makes use of two utility methods in the CalcEngine object, GetCellsFromArgs and GetValueFromArg. GetCellsFromArgs accepts a range like A3:C6 and returns a string array of the individual cell references in the range. GetValueFromArg accepts a cell reference, formula, or number and return the numerical value that the cell holds.
 {% highlight c# %}
@@ -319,7 +319,7 @@ Me.engine.AddFunction("Mymin", AddressOf ComputeMymin)
 
 By convention, within the Essential Calculate library, the C# implementation method for each of the library functions that are shipped with the word "Compute" is named and followed by the name of the library function. The above code confirms to this convention, with the function name being 'Mymin' and the method name being 'ComputeMymin'. Our library functions are public members of the CalcEngine class, so that you can access them directly if it serves your purpose. Additionally, if you own the source code version, you can see implementation details that may be of use to you if you try to implement many custom library methods on your own.
 
-> Note: Once this is done, you can use your custom method in the same manner as the default library functions.
+N> Once this is done, you can use your custom method in the same manner as the default library functions.
 
 ## Remove and Replace Function
 
@@ -894,7 +894,7 @@ The syntax of the ISEVEN function is
 
 The given value must be a numeric value. If it is non-integer value, the value is rounded down.
 
-> Note: If the given value is nonnumeric, the ISEVEN function returns the ‘&#35;VALUE!’ error value.
+N> If the given value is nonnumeric, the ISEVEN function returns the ‘&#35;VALUE!’ error value.
 
 
 
@@ -931,7 +931,7 @@ The syntax of the ISODD function is
 
 The given value must be a numeric value. If it is a non-integer value, the value is rounded down.
 
-> Note: If the given value is nonnumeric, ISODD function returns the ‘&#35;VALUE!’ error value.
+N> If the given value is nonnumeric, ISODD function returns the ‘&#35;VALUE!’ error value.
 
 
 
@@ -1007,7 +1007,7 @@ The syntax of NA function is
 
 The NA function syntax has no arguments.
 
-> Note: The function doesn’t have any arguments.
+N> The function doesn’t have any arguments.
 
 #### Example:
 
@@ -1161,7 +1161,7 @@ Ref1 The first named range which is used for the subtotal. This value is require
 
 Ref2 This value is optional.
 
-> Note: If the subtotal function has any nested subtotal functions, then the nested subtotal is ignored for double counting.
+N> If the subtotal function has any nested subtotal functions, then the nested subtotal is ignored for double counting.
 
 
 
@@ -1565,7 +1565,7 @@ XOR (logical_value1, logical_value2,…)
 
 Logical_value1: Required. This can be either TRUE or FALSE, and can be logical values, arrays, or references.
 
-> Note: If the given arguments do not have the logical values, XOR returns the &#35;VALUE! error value.
+N> If the given arguments do not have the logical values, XOR returns the &#35;VALUE! error value.
 
 
 
@@ -1683,7 +1683,7 @@ criteria: The condition to be tested in each of the values of the given range.
 
 average_range: Numeric values to be evaluated against the criteria and averaged.
 
-> Note * If range is blank or a text value, AVERAGEIF returns the #DIV/0! error value. * If a cell in criteria is empty, AVERAGEIF treats it as a 0 value. * If no cells in the range meet the criteria, AVERAGEIF returns the #DIV/0! error value.
+N> * If range is blank or a text value, AVERAGEIF returns the #DIV/0! error value. * If a cell in criteria is empty, AVERAGEIF treats it as a 0 value. * If no cells in the range meet the criteria, AVERAGEIF returns the #DIV/0! error value.
 
 
 
@@ -1754,7 +1754,7 @@ criteria_range1: Array of values to be tested against the given criteria.
 
 criteria1: The condition to be tested on each of the values of the given range.
 
-> Note * If average_range is blank or a text value, AVERAGEIFS returns the #DIV/0! error value. * If a cell in a criteria range is empty, AVERAGEIFS treats it as a 0 value. * If cells in average_range cannot be translated into numbers, AVERAGEIFS returns the #DIV/0! error value.
+N> * If average_range is blank or a text value, AVERAGEIFS returns the #DIV/0! error value. * If a cell in a criteria range is empty, AVERAGEIFS treats it as a 0 value. * If cells in average_range cannot be translated into numbers, AVERAGEIFS returns the #DIV/0! error value.
 
 
 
@@ -1827,7 +1827,7 @@ end_date: The end of the period to find the working days.
 
 [holidays]:  An optional argument, which specifies an array of dates that are not to be counted as working days.
 
-> Note: If any argument is not a valid date, NETWORKDAYS returns the &#35;VALUE! error value.
+N> If any argument is not a valid date, NETWORKDAYS returns the &#35;VALUE! error value.
 
 
 
@@ -1858,7 +1858,7 @@ criteria1: The condition to be tested on each of the values of given range.
 
 sum_range: The range of values to be summed if the associated criteria range meets the specified criteria. 
 
-> Note: Cells in the sum_range argument that contain TRUE evaluate to 1; cells in sum_range that contain FALSE evaluate to 0 (zero).
+N> Cells in the sum_range argument that contain TRUE evaluate to 1; cells in sum_range that contain FALSE evaluate to 0 (zero).
 
 
 
@@ -1966,7 +1966,7 @@ Array form: The array form of LOOKUP looks in the first row or column of an arra
 
 =LOOKUP(lookup_value, array)
 
-> Note * If the LOOKUP function can't find the lookup_value, the function matches the largest value in lookup_vector that is less than or equal to lookup_value. * If lookup_value is smaller than the smallest value in lookup_vector, LOOKUP returns the #N/A error value.
+N> * If the LOOKUP function can't find the lookup_value, the function matches the largest value in lookup_vector that is less than or equal to lookup_value. * If lookup_value is smaller than the smallest value in lookup_vector, LOOKUP returns the #N/A error value.
 
 #### Example
 
@@ -2041,7 +2041,7 @@ string:Required. The text in which to search for the value of the substring.
 
 start_num: Optional. The starting position for searching in the string.
 
-> Note * If the value of find_text is not found, the &#35;VALUE! error value is returned. * If the start_num argument is omitted, it is assumed to be 1. * If start_num is not greater than 0, or is greater than the length of the string argument, the &#35;VALUE! error value is returned.
+N> * If the value of find_text is not found, the &#35;VALUE! error value is returned. * If the start_num argument is omitted, it is assumed to be 1. * If start_num is not greater than 0, or is greater than the length of the string argument, the &#35;VALUE! error value is returned.
 
 
 

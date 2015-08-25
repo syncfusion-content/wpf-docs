@@ -34,7 +34,7 @@ Device color space simply describes the range of colors that a camera can see, a
 
 
 
-> Note: This property does not convert the entire document into different color spaces. It will also not have any impact on pages that have been created before the property value had changed. It just chooses the color space for pages created after the alteration.
+N> This property does not convert the entire document into different color spaces. It will also not have any impact on pages that have been created before the property value had changed. It just chooses the color space for pages created after the alteration.
 
 ### CIE-based Color Spaces
 
@@ -733,7 +733,7 @@ pdfDocument.Close(True)
 {% endhighlight %}
 
 
-> Note: You can change the color space as many times as you wish, however, you cannot alternate the color space for objects that have saved before.
+N> You can change the color space as many times as you wish, however, you cannot alternate the color space for objects that have saved before.
 
 Barcode
 

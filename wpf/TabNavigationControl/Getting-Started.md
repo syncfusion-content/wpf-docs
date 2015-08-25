@@ -17,7 +17,7 @@ documentation: ug
 
 
 
-> Note: Support for Skins is provided only in Silverlight and not in WPF.
+N> Support for Skins is provided only in Silverlight and not in WPF.
 
 ## Adding Tab Navigation Control to an Application 
 

@@ -37,5 +37,5 @@ ContextView.ContextViewMode =ContextViewMode.Predecessors
 
 _Context View_
 
-> Note: By default, the context view manager will show the neighborhood view.
+N> By default, the context view manager will show the neighborhood view.
 

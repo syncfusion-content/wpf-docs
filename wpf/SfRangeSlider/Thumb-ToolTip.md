@@ -57,7 +57,7 @@ Tooltip is placed either below the Thumb in horizontal orientation or right of t
 
 
 
-> Note: This option displays the tooltip to right in vertical orientation.
+N> This option displays the tooltip to right in vertical orientation.
 
 ### TopLeft 
 
@@ -75,7 +75,7 @@ Tooltip is placed either above the Thumb in horizontal orientation or left of th
 
 
 
-> Note: This option displays the tooltip to left in vertical orientation.
+N> This option displays the tooltip to left in vertical orientation.
 
 ### None 
 

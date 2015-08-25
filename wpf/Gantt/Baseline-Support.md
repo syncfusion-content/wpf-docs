@@ -19,7 +19,7 @@ The variances will be calculated only for the mapped baseline fields. For exampl
 
 You can revert to the default view of the Grid by invoking the corresponding method in Gantt.
 
-> Note: Variance view will have the read-only Grid. You cannot edit the cells in Gantt Grid, when it is in variance view.
+N> Variance view will have the read-only Grid. You cannot edit the cells in Gantt Grid, when it is in variance view.
 
 ## Use Case Scenario
 

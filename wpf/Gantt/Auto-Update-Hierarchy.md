@@ -957,7 +957,7 @@ To use your own logics in business objects:
 
 3. Set the UseAutoUpdateHierarchy property as false to handle the custom calculations on the business objects. Set the collection as ItemsSource of the Gantt control.
 
-   > Note: If you use the TaskDetails class as your business object, then you should not set the UseAutoUpdateHierarchy property as false.
+   N> If you use the TaskDetails class as your business object, then you should not set the UseAutoUpdateHierarchy property as false.
 
 
 

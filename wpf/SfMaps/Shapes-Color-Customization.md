@@ -146,7 +146,7 @@ When the under-bound value is under any of the given sorted range or above the s
 
 AutoFillColor must be set to false to enable the range color mapping.
 
-> Note: The shape’s under-bound object value must have numeric property and should be mentioned in ShapeValuePath to work on this. The color between the given ranges is applied only to the shapes that have a proper under-bound values. The color for other shapes is the ShapeFill’s color.
+N> The shape’s under-bound object value must have numeric property and should be mentioned in ShapeValuePath to work on this. The color between the given ranges is applied only to the shapes that have a proper under-bound values. The color for other shapes is the ShapeFill’s color.
 
 
 {% highlight xml %}

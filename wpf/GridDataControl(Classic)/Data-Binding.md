@@ -68,7 +68,7 @@ Here is an example that illustrates how to use Object Data Provider with GDC.
 
 Say, your data source is defined in C# class named Order, and it queries the records from Northwind Orders table. Then the respective Object Data Provider definition is given by the code below: 
 
-> Note: The ObjectType attribute of ObjectDataProvider should point to the data source you defined.
+N> The ObjectType attribute of ObjectDataProvider should point to the data source you defined.
 
 {% highlight xml %}
 
@@ -84,7 +84,7 @@ Say, your data source is defined in C# class named Order, and it queries the rec
 
 {% endhighlight  %}
 
-> Note: The following line in the above code references the Object (Order), which returns the data for binding.
+N> The following line in the above code references the Object (Order), which returns the data for binding.
 
 {% highlight xml %}
 
@@ -762,7 +762,7 @@ CurrentCellValidatingEventdandler. </td></tr>
 </table>
 
 
-> Note: Once Cancel is set as true, the current cell doesn’t leave from edit mode until Cancel is set to false.
+N> Once Cancel is set as true, the current cell doesn’t leave from edit mode until Cancel is set to false.
 
 
 
@@ -925,7 +925,7 @@ GridDataRowValidatingEventArgs contains tde following arguments:IsValid: Boolean
 GridDataRowValidatingEventdandler</td></tr>
 </table>
 
-> Note: Once IsValid is set as false, the current cell doesn’t leave from edit mode until IsValid is set as true.
+N> Once IsValid is set as false, the current cell doesn’t leave from edit mode until IsValid is set as true.
 
 Adding RowValidating Event to an Application
 
@@ -1215,7 +1215,7 @@ Essential Grid supports addition of extra columns to the data source columns. Su
 
 You can create an unbound column by instantiating the class GridDataUnboundVisibleColumn, which is a derivative of GridDataVisibleColumn. It contains a property named Format, which is used to specify a format for the unbound column. Given a visible column, it is possible to check whether it is an unbound column or not, using the IsUnbound property of that visible column.
 
-> Note: Sorting and filtering operations does not work with an unbound column unless the column is associated with the item source that is bound.  So, it is good to turn off the filters wherever applicable.
+N> Sorting and filtering operations does not work with an unbound column unless the column is associated with the item source that is bound.  So, it is good to turn off the filters wherever applicable.
 
 The following example adds an unbound column and displays the record values in the format {Frieght:c} for {ShipCity}. 
 {% highlight xml %}
@@ -1227,9 +1227,7 @@ The following example adds an unbound column and displays the record values in t
 
 ShowFilters="False"                                                                      
 
-ShowAddNewRow="False"                                    
-
->                
+ShowAddNewRow="False"                                    >                
 
 <syncfusion:GridDataControl.VisibleColumns>                    
 

@@ -21,7 +21,7 @@ SfDataGrid provides a convenient way to validate data and indicate the errors al
 
 
 
-> _Note: GridColumn.GridValidationMode takes higher priority that its behavior overrides SfDataGrid behavior._
+N> GridColumn.GridValidationMode takes higher priority that its behavior overrides SfDataGrid behavior._
 
 . The following are different approaches to validate errors on data.
 
@@ -125,7 +125,7 @@ public System.Collections.IEnumerable GetErrors(string propertyName)
 
 _DataGrid with Email field validation_
 
-> _Note: GridTemplateColumn and GridUnboundColumn do not support the GridValidationMode in ‘InEdit’ mode._
+N> GridTemplateColumn and GridUnboundColumn do not support the GridValidationMode in ‘InEdit’ mode._
 
 
 
@@ -135,7 +135,7 @@ _DataGrid with Email field validation_
 
 Once the UI interactive validations are successful, the Data layer validates the corresponding values for the members that specify validation rules. You can use two different modes in Validation like ‘InView’ or ‘InEdit’. System.ComponentModel.DataAnnotations assembly is added to the reference to use DataAnnotations.
 
-> _Note: GridTemplateColumn and GridUnboundColumn do not support the GridValidationMode in ‘InEdit’ mode._
+N> GridTemplateColumn and GridUnboundColumn do not support the GridValidationMode in ‘InEdit’ mode._
 
 #### Some of the commonly used ValidationAttributes are as follows:
 

@@ -15,7 +15,7 @@ Essential XlsIO supports working with form controls, OLE objects, and auto-shape
 
 Essential XlsIO provides support to read and write the Text Box, Check Box, and Combo Box controls. It enables creation of forms that are user-friendly and also enhances the appearance of the forms.
 
-> Note: Essential XlsIO provides support to read and write Form controls. Support for Active X Form controls is not yet available.
+N> Essential XlsIO provides support to read and write Form controls. Support for Active X Form controls is not yet available.
 
 This section explains the usage of the following Form controls.
 
@@ -665,7 +665,7 @@ excelEngine.Dispose()
 
 Object Linking and Embedding (OLE) is one of the best known ways to insert data into Microsoft Office documents. Though embedding or linking objects increases the size of the original document, it helps improve the document readability by providing offline reading of documents (where the existing online links can be replaced). In order to read the content of the object, associated software needs to be installed in the machine. For example, a PDF file linked or embedded to an Excel file needs Adobe Reader in order to launch and read the PDF file. Essential XlsIO supports read and write of OLE Objects in XLSX file format. Objects can either be linked or embedded in the Excel documents by using IOleObject interface. 
 
-> Note: Currently read and write functions for OLE Objects are supported in Windows, ASP.NET, and WPF platforms only.
+N> Currently read and write functions for OLE Objects are supported in Windows, ASP.NET, and WPF platforms only.
 
 List of Properties 
 

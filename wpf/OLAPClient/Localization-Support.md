@@ -36,7 +36,7 @@ Getting Started
 
 The first step in localization is translating the strings that can be localized to the destination locale. Basically, OlapClient.WPF contains control assemblies such as OlapChart.WPF and OlapGrid.WPF and tools assemblies such as OlapShared.WPF and OlapTools.WPF within it. So, it is mandatory to localize those assemblies as well. The following tables contain the Localization Keys and the Strings to be localized for OlapClient.WPF, OlapChart.WPF, OlapGrid.WPF, OlapShared.WPF and OlapTools.WPF assemblies. Translate the second column in each table, which contains the strings to be localized to the target locale. 
 
-> Note: Localization Key field should be same for the all locales. Do not translate it.
+N> Localization Key field should be same for the all locales. Do not translate it.
 
 _Localization Strings Table for OlapClient.WPF_
 
@@ -658,7 +658,7 @@ After translating the strings that can be localized, perform the following in th
 
 
 
-   > Note: The folder name should strictly be Resources.
+   N> The folder name should strictly be Resources.
 
 
 
@@ -681,7 +681,7 @@ After translating the strings that can be localized, perform the following in th
 
 
 
-   > Note: The resource file name should strictly be in the format  “Syncfusion.OlapClient.WPF.<<Culture Code>>.resx”.
+   N> The resource file name should strictly be in the format  “Syncfusion.OlapClient.WPF.<<Culture Code>>.resx”.
 
    ## Examples
 

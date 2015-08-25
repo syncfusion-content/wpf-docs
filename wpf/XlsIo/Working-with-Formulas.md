@@ -1060,7 +1060,7 @@ excelEngine.Dispose()
 
 {% endhighlight %}
 
-> Note: Enable automatic updation of links in Excel to view the result for the preceding code.
+N> Enable automatic updation of links in Excel to view the result for the preceding code.
 
 ## Supported Functions
 
@@ -3625,7 +3625,7 @@ workbook.Close()
 excelEngine.Dispose()
 {% endhighlight %}
 
-> Note:
+N>
 
 1. In order to use the Essential XlsIO's Calculate engine, you have to add the following namespace: using Syncfusion.Calculate
 2. Do not add reference to Syncfusion.Calculate.Base. It throws conflict errors as these are already integrated with XlsIO from Version 7.2.X.X.

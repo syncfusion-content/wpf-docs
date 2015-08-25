@@ -134,7 +134,7 @@ dc.Save("C:\TestPage.xaml")
 
 {% endhighlight %}
 
-> Note: Essential Diagram WPF does not support serializing bindings and bitmap Images.
+N> Essential Diagram WPF does not support serializing bindings and bitmap Images.
 
 Saving to a stream
 
@@ -230,7 +230,7 @@ dc.Load("C:\TestPage.xaml")
 
 {% endhighlight %}
 
-> Note: Essential Diagram WPF does not support serializing bindings and bitmap Images.
+N> Essential Diagram WPF does not support serializing bindings and bitmap Images.
 
 Loading from a stream
 
@@ -258,7 +258,7 @@ dc.Load(TryCast(stream, System.IO.Stream))
 
 {% endhighlight %}
 
-> Note: While loading from memory stream please make sure the stream’s Position property is set to 0.
+N> While loading from memory stream please make sure the stream’s Position property is set to 0.
 
 ## Localization
 
@@ -417,7 +417,7 @@ diagramControl.LocalizationPath = "Resources.X.Y.Z"
 
 _Customized LocalizationPath_
 
-> Note: LocalizationPath for the resource file should be specified before DiagramControl’s Template is applied.
+N> LocalizationPath for the resource file should be specified before DiagramControl’s Template is applied.
 
 Properties
 

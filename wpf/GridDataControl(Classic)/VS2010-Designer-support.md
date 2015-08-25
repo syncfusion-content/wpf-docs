@@ -19,7 +19,7 @@ Activating Designer
 
 
 
-   > Note: An edit menu opens.
+   N> An edit menu opens.
 
 
 
@@ -31,7 +31,7 @@ Activating Designer
 
 
 
-   > Note: Ensure that the grid is assigned with an ItemsSource.
+   N> Ensure that the grid is assigned with an ItemsSource.
 
 
 
@@ -123,7 +123,7 @@ Clear Columns
 ## Generate Columns
 
 1. Click Generate Columns to populate the properties for each visible column. 
-   >  Note: Property list for visible column in the grid displays.
+   N> Property list for visible column in the grid displays.
 
 
 

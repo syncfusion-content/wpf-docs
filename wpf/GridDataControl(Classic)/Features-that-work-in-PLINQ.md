@@ -16,4 +16,4 @@ The following features work by default when UsePLINQ is set to true:
 
 
 
-> Note: For custom summaries, PLINQ code has to be implemented at the client implementation.
+N> For custom summaries, PLINQ code has to be implemented at the client implementation.

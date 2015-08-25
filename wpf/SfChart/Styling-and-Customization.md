@@ -356,9 +356,7 @@ The following code example illustrates the use of CustomTemplate property.
 
                 XBindingPath="Demand" ScatterHeight="40"
 
-                YBindingPath="Year2010" ScatterWidth="40"
-
->
+                YBindingPath="Year2010" ScatterWidth="40">
 
 <syncfusion:ScatterSeries.CustomTemplate> 
 

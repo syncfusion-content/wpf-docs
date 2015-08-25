@@ -181,7 +181,7 @@ The code above displays the following output:
 
 The Background property specifies a background brush for the grid cell. The cell’s background can be painted with either a solid brush or a gradient brush.
 
-> Note: * Gradient-A gradient brush uses two colors. These colors merge to create a transition or fading effect. * Solid-A solid brush is equipped with only one color.
+N> * Gradient-A gradient brush uses two colors. These colors merge to create a transition or fading effect. * Solid-A solid brush is equipped with only one color.
 
 #### Setting Background Brush Type
 

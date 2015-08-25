@@ -421,7 +421,7 @@ excelEngine.Dispose()
 
 XlsIO also provides options to resize the comment size and move/size with cell by using the IsMoveWithCell and IsSizeWithCell properties. You can also autofit the size of the comment by using the AutoFit property.
 
-> Note: Currently it is not possible to insert preformatted RTF tags in Excel by using XlsIO.
+N> Currently it is not possible to insert preformatted RTF tags in Excel by using XlsIO.
 
 
 

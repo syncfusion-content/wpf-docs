@@ -361,7 +361,7 @@ Below is the code that sorts the grid by two columns:
 
 {% endhighlight  %}
 
-> Note: When the grid is sorted against multiple columns, the affected column headers get painted with a number that starts from 0, 1 ... representing the sort order.
+N> When the grid is sorted against multiple columns, the affected column headers get painted with a number that starts from 0, 1 ... representing the sort order.
 
 
 The following screenshot shows a multicolumn sorting enabled GDC:
@@ -1315,7 +1315,7 @@ DataTemplate </td></tr>
 
 ### Methods
 
-> Note: The following methods are available in GridDataControl.Model.Table.
+N> The following methods are available in GridDataControl.Model.Table.
 
 _Methods_
 
@@ -1360,7 +1360,7 @@ Void</td></tr>
 
 ### Events
 
-> Note: The following events are available in GridDataControl.Model.Table.
+N> The following events are available in GridDataControl.Model.Table.
 
 _Events_
 
@@ -2839,7 +2839,7 @@ Essential Grid provides support to associate individual cells with ToolTips. Too
 
 Grid exposes a style property named TooltipTemplateKey that is the name of the template to be used for generating tooltip. You can define this template in xaml and then simply assign its name to the style.TooltipTemplateKey property. This infers that any style content that is defined in this template could be used to display the tooltip. Once the template is defined, you need to enable its display by setting the style.ShowTooltip property to true. 
 
-> Note: If style.ShowToolip is not set, then the default template associated with the Grid is loaded, and the default template would try to show the style.CellValue in a tooltip.
+N> If style.ShowToolip is not set, then the default template associated with the Grid is loaded, and the default template would try to show the style.CellValue in a tooltip.
 
 Example
 
@@ -2962,7 +2962,7 @@ The example below displays a Chart control in the tooltip host. The grid is boun
 
 
 
-   > Note: For the complete code, refer to the following browser sample.
+   N> For the complete code, refer to the following browser sample.
 
    _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Tooltips Demo._
 
@@ -3947,7 +3947,7 @@ Custom Visual Style can be defined for nested tables too. The following code ill
 
 
 
-> Note:  IGridDataVisualStyle is deprecated and this information is provided only for legacy reasons. The recommended approach for customizing the GridDataControl is using_ [GridDataStyleManager ](http://help.syncfusion.com/ug_92/User%20Interface/WPF/Grid/Documents/42316blendsupport.htm)_class through Microsoft Expression Blend.
+N>  IGridDataVisualStyle is deprecated and this information is provided only for legacy reasons. The recommended approach for customizing the GridDataControl is using_ [GridDataStyleManager ](http://help.syncfusion.com/ug_92/User%20Interface/WPF/Grid/Documents/42316blendsupport.htm)_class through Microsoft Expression Blend.
 
 ### Backward Compatibility
 
@@ -4006,7 +4006,7 @@ GridDataStyleManager properties are organized under the following seven groups, 
 
 
 
-> Note: Previously, the appearance of the GridDataControl could be customized through the_ [IGridDataVisualStyle ](http://help.syncfusion.com/ug_92/User%20Interface/WPF/Grid/Documents/423155skins.htm)_interface; even if a visual style was set for the GridDataControl, the values set in the GridDataStyleManager would override it
+N> Previously, the appearance of the GridDataControl could be customized through the_ [IGridDataVisualStyle ](http://help.syncfusion.com/ug_92/User%20Interface/WPF/Grid/Documents/423155skins.htm)_interface; even if a visual style was set for the GridDataControl, the values set in the GridDataStyleManager would override it
 
 Customizing the Column Appearance
 
@@ -4940,7 +4940,7 @@ Customizing the Nested Grid Appearance
 
 The Nested Grid Group enables to customize the Nested cell borders by modifying the margin, borders, and so on.
 
-> Note: For Nested grid, Style Manager can be set by the Child Model. By default, Child inherits the styles from Parent.
+N> For Nested grid, Style Manager can be set by the Child Model. By default, Child inherits the styles from Parent.
 
 The following code example illsutrates this.
 {% highlight c# %}

@@ -260,7 +260,7 @@ The Auto hide button in the docked window is customized by using the AwlButtonTe
 {% endhighlight  %}
 
 
-> Note: For adding the Custom AutoHideButton template to the Docking Manager, you must have the DockingManager in which you are going to add the AutoHideButton template, because the AwlButtonTemplate is the attached property.
+N> For adding the Custom AutoHideButton template to the Docking Manager, you must have the DockingManager in which you are going to add the AutoHideButton template, because the AwlButtonTemplate is the attached property.
 
 
 
@@ -296,7 +296,7 @@ The DockingManager facilitates you to apply an user-defined custom Header Templa
 
 {% endhighlight  %}
 
-> Note: For adding the Custom header template to the Docking Manager, you must have the DockingManager in which you are going to add the Header, because the HeaderTemplate is an attached property.
+N> For adding the Custom header template to the Docking Manager, you must have the DockingManager in which you are going to add the Header, because the HeaderTemplate is an attached property.
 
 
 
@@ -372,7 +372,7 @@ DockingManager.CloseButtonTemplate = (ControlTemplate)FindResource("closebuttont
 
 {% endhighlight  %}
 
-> Note: For adding the Custom Close Button template to the DockingManager, you must already have the DockingManager in which you are going to add the Close Button template, because the CloseButtonTemplate is an attached property.
+N> For adding the Custom Close Button template to the DockingManager, you must already have the DockingManager in which you are going to add the Close Button template, because the CloseButtonTemplate is an attached property.
 
 
 
@@ -416,7 +416,7 @@ The Context Menu button in the dock window header can be changed in order to hav
 
 {% endhighlight  %}
 
-> Note: For adding the Custom Menu Button template to the DockingManager, you must already have the DockingManager in which you are going to add the Menu Button template, because MenuButtonTemplate is the attached property.
+N> For adding the Custom Menu Button template to the DockingManager, you must already have the DockingManager in which you are going to add the Menu Button template, because MenuButtonTemplate is the attached property.
 
 
 

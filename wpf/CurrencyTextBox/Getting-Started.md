@@ -489,11 +489,7 @@ The steps to create a CurrencyTextBox by using Visual Studio in C# are as follow
 
    {:.prettyprint}
 
-> Note:If you do not set any value to the CurrencyTextBox then the default value will be as follows:
-
-> If the UseNullOption is set to true, Value of the NullValue property will be the default value.
-
-> Otherwise Zero will be the default value (based on the MinValue and MaxValue the default value will change).
+N>If you do not set any value to the CurrencyTextBox then the default value will be as follows: If the UseNullOption is set to true, Value of the NullValue property will be the default value. Otherwise Zero will be the default value (based on the MinValue and MaxValue the default value will change).
 
 See Also
 
@@ -644,7 +640,7 @@ Creating a CurrencyTextBox by using C#
 
 You have to use the Value property to set the value for the CurrencyTextBox.
 
-> Note: Do not use the Text property to set the value for the CurrencyTextBox. Use only the Value property.
+N> Do not use the Text property to set the value for the CurrencyTextBox. Use only the Value property.
 
 
 
@@ -705,7 +701,7 @@ Binding support
 
 You can set the Watermark for the CurrencyTextBox by using the WatermarkText property. To enable Watermark, you have to set the WatermarkTextIsVisible property to true.
 
-> Note: WatermarkText is visible only when the value is null.
+N> WatermarkText is visible only when the value is null.
 
 {% highlight xml %}
 

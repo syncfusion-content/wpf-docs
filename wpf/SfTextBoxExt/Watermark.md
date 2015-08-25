@@ -32,7 +32,7 @@ Watermark property allows the users to specify some information, when the text i
 
 ![C:/Users/ApoorvahR/Desktop/2.png](Watermark_images/Watermark_img1.png)
 
-> Note: The Watermark property is of the object type so any framework elements can be hosted as Watermark content. Below example shows how to host an image and text as Watermark content.
+N> The Watermark property is of the object type so any framework elements can be hosted as Watermark content. Below example shows how to host an image and text as Watermark content.
 
 
 {% highlight xml %}

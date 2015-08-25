@@ -937,7 +937,7 @@ this.Content = treeViewAdv;
 
 {% endhighlight %}
 
-> Note: To display the TreeViewAdv using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed._
+N> To display the TreeViewAdv using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed._
 
 The following screen shot shows the TreeViewAdv control.
 

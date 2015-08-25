@@ -279,7 +279,7 @@ The following screenshot illustrates aDefault Column Chooser window.
 
 _Default Column Chooser window_
 
-> Note: The default Column Chooser displays the empty window when there is no hidden column initially.
+N> The default Column Chooser displays the empty window when there is no hidden column initially.
 
 ### Customizing Column Chooser
 
@@ -702,7 +702,7 @@ Indicates that the current row has errors.</td></tr>
 </table>
 
 
-> Note: Using IDataErrorInfo, you can retrieve the error string from Error Field, whereas using INotifyDataErrorInfo the error is retrieved when the HasError Field value is ‘true’.
+N> Using IDataErrorInfo, you can retrieve the error string from Error Field, whereas using INotifyDataErrorInfo the error is retrieved when the HasError Field value is ‘true’.
 
 
 

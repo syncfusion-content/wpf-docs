@@ -22,7 +22,7 @@ The DataGrid control provides an interactive support to select a specific row or
 
 The DataGrid control provides interactive support to select a specific cell or group of cells programmatically or by Mouse and Keyboard interactions. To enable this Selection in DataGrid, you can set SfDataGrid.SelectionUnit property to Cell or Any and the SfDataGrid.NavigationMode should be Cell. In Any, you can select all cells in particular row by clicking on RowHeader.
 
-> Note: HeaderRows and TableSummaryRows do not have support for selection.
+N> HeaderRows and TableSummaryRows do not have support for selection.
 
  Properties
 
@@ -114,7 +114,7 @@ Gets or sets the Border width of Current cell when NavigationMode is in Cell</td
 </table>
 
 
-> Note: In WPF, MouseDown event is triggered after releasing the finger from touch. Hence AllowSelectionOnPointerPressed API only works for mouse in WPF.
+N> In WPF, MouseDown event is triggered after releasing the finger from touch. Hence AllowSelectionOnPointerPressed API only works for mouse in WPF.
 
 Methods
 
@@ -382,7 +382,7 @@ These two events are triggered with GridSelectionChangingEventArgs and GridSelec
 
 
 
-> Note: GridRowInfo is used in Row selection and GridCellInfo is used in Cell selection.
+N> GridRowInfo is used in Row selection and GridCellInfo is used in Cell selection.
 
 
 
@@ -446,7 +446,7 @@ Another vital operation in selection with editing is NavigationMode. DataGrid co
 
 
 
-> Note: Cell based key navigation is disabled in Row navigation mode.
+N> Cell based key navigation is disabled in Row navigation mode.
 
 ### Example:
 
@@ -1099,7 +1099,7 @@ public class GridCellSelectionControllerExt : GridCellSelectionController
 
 {% endhighlight %}
 
-> Note: To use GetRecordAtRowIndex method, you can refer Syncfusion.UI.Xaml.Grid.Helper.
+N> To use GetRecordAtRowIndex method, you can refer Syncfusion.UI.Xaml.Grid.Helper.
 
 
 
@@ -1252,7 +1252,7 @@ Only in Multiple selection mode to select or unselect specific row or cell.</td>
 </table>
 
 
-> _Note: The listed key navigation behaves same as multiple selection. But current cell moves selection, does not move in single selection. In extended mode, all selection modes are like single mode other than Shift+UP/Down selects multiple records and move towards its direction._
+N> The listed key navigation behaves same as multiple selection. But current cell moves selection, does not move in single selection. In extended mode, all selection modes are like single mode other than Shift+UP/Down selects multiple records and move towards its direction._
 
 You can stop the navigation by cancelling CurrenCellActivating event. The following code example describes that.
 
@@ -2006,7 +2006,7 @@ The row is selected initially among the selected items.</td></tr>
 </table>
 
 
-> Note: In Single mode both the CurrentItem and SelectedItem properties have same item. Grid Selected Items are collections of your selected records.
+N> In Single mode both the CurrentItem and SelectedItem properties have same item. Grid Selected Items are collections of your selected records.
 
 ### How to copy records without using mouse pointer
 

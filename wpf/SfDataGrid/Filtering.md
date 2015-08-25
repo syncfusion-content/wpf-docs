@@ -206,7 +206,7 @@ syncgrid.AllowFiltering = true;
 {% endhighlight %}
 
 
-> Note: A column’s AllowFiltering is given more priority than the SfDataGrid control.
+N> A column’s AllowFiltering is given more priority than the SfDataGrid control.
 
 #### Filter Mode
 
@@ -279,7 +279,7 @@ The following filter types are available for Text Filters.
 
 
 
-> Note: When CanGenerateUniqueItems is set to ‘True’, the FilterValue combobox is not editable. Therefore, BeginsWith, EndsWith and Contains are unavailable. These options are available only when CanGenerateUniqueItems is set to ‘False’. So, when you use DataTable as items Source, AdVanceFiltering does not support CaseSensitive.
+N> When CanGenerateUniqueItems is set to ‘True’, the FilterValue combobox is not editable. Therefore, BeginsWith, EndsWith and Contains are unavailable. These options are available only when CanGenerateUniqueItems is set to ‘False’. So, when you use DataTable as items Source, AdVanceFiltering does not support CaseSensitive.
 
 When integer, double, short, decimal, byte or long, Nullable and unsigned types are bound to the GridColumn then Number Filters are loaded in the AdvancedFilterControl.
 
@@ -311,7 +311,7 @@ The following filter types are available for Date Filters.
 
 By setting the FilterBehavior as StringTyped, you can load the Text Filters to the particular column. When you set the FilterBehavior to StronglyTyped, then filter type is automatically detected based on underlying data type.
 
-> Note: Null and NotNull options are available only when AllowBlankFilter is set to ‘True’
+N> Null and NotNull options are available only when AllowBlankFilter is set to ‘True’
 
 ### Blank Filters
 
@@ -614,7 +614,7 @@ The following code example shows how to set the CanGenerateUniqueItems property.
 
 _DataGrid with CanGenerateUniqueItems property_
 
-> Note: You can bind written style to FilterPopupStyle where you need to apply style. It’s in SfDataGrid and also in each column.
+N> You can bind written style to FilterPopupStyle where you need to apply style. It’s in SfDataGrid and also in each column.
 
 ## Programmatic Filtering
 
@@ -871,7 +871,7 @@ The following screenshot displays the filtered records that contain the word “
 
 _DataGrid with filtered records that contain the word “son”_
 
-> _Note: View.Filter is not applied when itemssource is DataTable._
+N> View.Filter is not applied when itemssource is DataTable._
 
 ## How To
 

@@ -30,7 +30,7 @@ Essential PDF provides you support for loading image streams, files on disk, and
 
 Images are supported through the PdfImage class that is an abstract base class that provides the common functionality for PdfBitmap and PdfMetafile classes. There are static methods in PdfImage providing the capability to create a PdfImage instance from different sources.
 
-> Note: Image quality is 100 by default, which increases the resultant file size and quality. Reducing the quality will reduce the file size.
+N> Image quality is 100 by default, which increases the resultant file size and quality. Reducing the quality will reduce the file size.
 
 ### Working with Bitmap
 

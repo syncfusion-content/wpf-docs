@@ -446,7 +446,7 @@ The SfDataGrid provides support to customize the height of the Header row also. 
 
    By using QueryRowHeight event, you can match the RowIndex from QueryRowHeightEventArgs with GetHeaderIndex () helper method that returns index of the Header. You can refer to the following link to get more [resolver](http://help.syncfusion.com/ug/wpf/default.htm) methods of the SfDataGrid.
 
-   > Note: Need to add Syncfusion.UI.Xaml.Grid.Helper namespace to use GetHeaderIndex () method.
+   N> Need to add Syncfusion.UI.Xaml.Grid.Helper namespace to use GetHeaderIndex () method.
 
 
 
@@ -525,7 +525,7 @@ Then call the InvalidateMeasureInfo method in VisualContainer to refresh the vie
 
 When you pass the row index to the InValidateRowHeight method, that specific row Index is added to the Dictionary as a reference to calculate the height of that row again when the InvalidateMeasureInfo is called. Then it raises the QueryRowHeight event for row index that you have invalidated.
 
-> Note: Need to add this Syncfusion.UI.Xaml.Grid.Helpers namespace to use the InvalidateMeasuerInfo method.
+N> Need to add this Syncfusion.UI.Xaml.Grid.Helpers namespace to use the InvalidateMeasuerInfo method.
 
 
 {% highlight C# %}
@@ -591,7 +591,7 @@ Run the above code example. Edit with large text and complete editing. Press Tab
 
 _AutoRowHeight_
 
-> Note: If the InvalidateMeasuerInfo method is not called, grid does not refresh automatically. You need to explicitly refresh the grid though this method.
+N> If the InvalidateMeasuerInfo method is not called, grid does not refresh automatically. You need to explicitly refresh the grid though this method.
 
 
 
@@ -599,7 +599,7 @@ _AutoRowHeight_
 
 The SfDataGrid control provides support to customize the height of the Table summary row. By utilizing the QueryRowHeight event, you can check whether the RowIndex is a table summary index from the QueryRowHeightEventArgs by using helper method IsTableSummaryIndex in GridIndexResolver class. You can refer to the following link to get more [resolver](http://help.syncfusion.com/ug/wpf/default.htm) methods of the SfDataGrid.
 
-> Note: Need to use the namespace Syncfusion.UI.Xaml.Grid.Helper. 
+N> Need to use the namespace Syncfusion.UI.Xaml.Grid.Helper. 
 
 The following code example explains you how to customize the Height of TableSummaryRow control in the QueryRowHeight event. 
 

@@ -11,11 +11,11 @@ documentation: ug
 
 Essential Diagram WPF is an extensible and high-performance diagramming framework for WPF applications. It can be used by the developers who want to develop Microsoft Visio-like interactive graphics and diagramming applications. It stores graphical objects in a node graph and renders those objects on the screen.  
 
-> A node graph is a structure consisting of nodes connected to each other by lines referred to as edges.
+N> A node graph is a structure consisting of nodes connected to each other by lines referred to as edges.
 
 Essential Diagram supports both vector and raster graphics on the drawing surface. 
 
-> A raster (bitmap) image uses a grid of individual pixels where each pixel can be a different color or shade. Bitmaps are composed of pixels.
+N> A raster (bitmap) image uses a grid of individual pixels where each pixel can be a different color or shade. Bitmaps are composed of pixels.
 
 Vector graphics use mathematical relationships between points and the paths connecting them to describe an image. Vector graphics are composed of paths.
 

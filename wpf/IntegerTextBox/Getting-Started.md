@@ -495,7 +495,7 @@ The steps to create an IntegerTextBox by using Visual Studio in XAML are as foll
 
    {:.prettyprint}
    
-> Note:* If you do not set any value to the IntegerTextBox then the default value will be as follows: * If the UseNullOption is set to true then, * Value of the NullValue property will be the default value. * Otherwise * Zero will be the default value (based on the MinValue and MaxValue the default value will change).
+N>* If you do not set any value to the IntegerTextBox then the default value will be as follows: * If the UseNullOption is set to true then, * Value of the NullValue property will be the default value. * Otherwise * Zero will be the default value (based on the MinValue and MaxValue the default value will change).
 
 See Also
 
@@ -577,7 +577,7 @@ Creating an IntegerTextBox by using XAML
 
 You have to use the Value property to set the value for the IntegerTextBox.
 
-> Note: Do not use the Text property to set the value for the IntegerTextBox. Use only the Value property.
+N> Do not use the Text property to set the value for the IntegerTextBox. Use only the Value property.
 
 
 {% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100" Value="100"/>{% endhighlight %}
@@ -619,7 +619,7 @@ See Also
 
 You can set the Watermark for the IntegerTextBox by using the WatermarkText property. To enable Watermark, you have to set the WatermarkTextIsVisible property to true.
 
-> Note: WatermarkText is visible only when the value is null.
+N> WatermarkText is visible only when the value is null.
 
 
 {% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="100"                                    Value="{x:Null}"                                   MinValue="-999" MaxValue="999" UseNullOption="True"                                   WatermarkText="Type Here"                                    WatermarkTextIsVisible="True"/>{% endhighlight %}

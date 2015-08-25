@@ -162,7 +162,7 @@ The following code illustrates how to bind the InsertCommentCommand__to a button
 
 
 
-> Note: You can insert only one comment for a cell. The InsertCommentCommand will open the Edit comment dialog box if the specific cell already has a comment.
+N> You can insert only one comment for a cell. The InsertCommentCommand will open the Edit comment dialog box if the specific cell already has a comment.
 
 
 

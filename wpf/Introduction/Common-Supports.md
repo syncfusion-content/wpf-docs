@@ -85,7 +85,7 @@ To localize WPF controls, the resource file needs to be created as per following
 
 
 
-> Note: In case, the Shared dll controls is used in the application, then create another resource file in name Syncfusion.Shared.Wpf<your culture info name>.resx For example, Syncfusion.Shared.Wpf.fr-FR.resx and the naming convention needs to be followed mandatorily.
+N> In case, the Shared dll controls is used in the application, then create another resource file in name Syncfusion.Shared.Wpf<your culture info name>.resx For example, Syncfusion.Shared.Wpf.fr-FR.resx and the naming convention needs to be followed mandatorily.
 
 
 
@@ -116,7 +116,7 @@ To assign Values in Resource, the resource file need to be updated as per the fo
 
 
 
-> Note: The default resource file for applicable assemblies can be downloaded by table provided at the end of this page.
+N> The default resource file for applicable assemblies can be downloaded by table provided at the end of this page.
 
 
 

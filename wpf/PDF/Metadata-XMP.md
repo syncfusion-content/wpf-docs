@@ -1142,7 +1142,7 @@ Author Signature
 
 By default, documents are signed with standard signature types. Certificated property of PdfSignature is used to create author’s signature. When signed with this type of signature, any modification after signing is detected, and hence do not support added multiple signatures.
 
-> Note: This implementation of certification will only work with Acrobat 7 and higher versions.
+N> This implementation of certification will only work with Acrobat 7 and higher versions.
 
 
 

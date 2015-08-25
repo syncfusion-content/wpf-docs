@@ -149,7 +149,7 @@ This is the Enum property that helps to get or set the AddNewRow position in Dat
 </td></tr>
 </table>
 
-> Note: By default AddNewRowPosition is set as “None”.
+N> By default AddNewRowPosition is set as “None”.
 The following table describes you the event that participates in AddNewRow.
 
 _AddNewRow Event Table_
@@ -167,7 +167,7 @@ NewObject</td><td>
 This event is triggered when you start editing in AddNewRow.NewObject – This contains the newly created object that helps to set the default value when you start editing in AddNewRow.>  </td></tr>
 </table>
 
-> Note: NewObject is the read-only property.
+N> NewObject is the read-only property.
 
 ### Behavior
 
@@ -351,7 +351,7 @@ _DataGrid with changed AddNewRow watermark text_
 
 
 
-> Note: The resource file is hosted in Resources folder and sholud have name with Syncfusion.SfGrid.WPF.resx. Otherwise your changes are not taken into consideration.
+N> The resource file is hosted in Resources folder and sholud have name with Syncfusion.SfGrid.WPF.resx. Otherwise your changes are not taken into consideration.
 
 
 
@@ -525,7 +525,7 @@ The following screenshot illustrate the output.
 
 _Custom row validation with AddNewRow_
 
-> Note: DataGrid adds the new data to the data source only when the data is valid.
+N> DataGrid adds the new data to the data source only when the data is valid.
 
 ### How to handle AddNewRow for complex properties 
 

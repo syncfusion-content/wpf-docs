@@ -155,7 +155,7 @@ The OnDemandLoading event is triggered when the pager moves to the corresponding
 
 In an OnDemandLoading event, you can use the LoadDynamicItems method to load the data for the corresponding page.
 
-> Note: In OnDemand paging, you cannot assign a value for the Source property.
+N> In OnDemand paging, you cannot assign a value for the Source property.
 
 
 

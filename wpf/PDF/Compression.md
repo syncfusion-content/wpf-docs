@@ -27,7 +27,7 @@ Content compression involves following:
 Advantages of Content compression
 
 * Reduces a text file upto 50 percent of its original size.
->  Note: Compression is performed by a program that uses a formula or algorithm, which determines how to compress or decompress the data. This algorithm is one of the critical factors that determines compression quality and is elaborated below. 
+N> Compression is performed by a program that uses a formula or algorithm, which determines how to compress or decompress the data. This algorithm is one of the critical factors that determines compression quality and is elaborated below. 
 
 Controlling the Compression Levels 
 

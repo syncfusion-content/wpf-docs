@@ -86,4 +86,4 @@ The following screenshot displays the SfDataGrid with Freeze Panes support.
 
 _DataGrid with Freeze panes_
 
-> Note:  * While grouping, the FrozenColumnCount denotes only the actual DataColumns instead of any indent columns. So that the Indent columns automatically froze when initializing the FrozenColumnCount. * Header and TableSummary rows that are frozen by default works regardless of the FrozenRowsCount and FooterRowsCount properties. * The count should be less than the number of rows or columns in view.
+N>  * While grouping, the FrozenColumnCount denotes only the actual DataColumns instead of any indent columns. So that the Indent columns automatically froze when initializing the FrozenColumnCount. * Header and TableSummary rows that are frozen by default works regardless of the FrozenRowsCount and FooterRowsCount properties. * The count should be less than the number of rows or columns in view.

@@ -32,9 +32,9 @@ Grid can be used in applications with frequent updates, for example stock values
 
 A sample which demonstrates such an application is available in the following sample installation location:
 
-> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Performance\Trader Grid Test Demo
+N> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Performance\Trader Grid Test Demo
 
-> Note: Refer Performance Optimization section which elaborates on this sample.
+N> Refer Performance Optimization section which elaborates on this sample.
 
 2. Excel-like UI Applications
 
@@ -66,7 +66,7 @@ grid.Model.Options.ExcelLikeCurrentCell = true;
 
 
 
-> Note:  If you have selected a current cell within a specified range, and when you move the current cell selection out of this range, the range will be cleared.
+N>  If you have selected a current cell within a specified range, and when you move the current cell selection out of this range, the range will be cleared.
 
 
 
@@ -176,9 +176,7 @@ You can create a workbook with multiple sheets similar to excel, using a Tab con
 
 
 
-> Note: For the complete code for this example, refer the following browser sample: 
-
-> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Excel Like UI Demo
+N> For the complete code for this example, refer the following browser sample:  ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Excel Like UI Demo
 
 
 

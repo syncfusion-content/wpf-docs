@@ -82,7 +82,7 @@ CalcEngine.Calculate is the method that actually performs calculations. It does 
 
 
 
-> Note: The value returned is a string holding the computed quantity.
+N> The value returned is a string holding the computed quantity.
 
 ## How Things Work
 

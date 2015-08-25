@@ -21,7 +21,7 @@ Font settings of each and every part of Chart such as Chart, ChartArea, ChartLeg
 
 
 
-> Note: Font settings set to the Chart will be applied to all the units of chart. However, properties set separately for those units such as ChartArea, ChartAxis, ChartLegend will override, these settings.
+N> Font settings set to the Chart will be applied to all the units of chart. However, properties set separately for those units such as ChartArea, ChartAxis, ChartLegend will override, these settings.
 
 
 
@@ -330,7 +330,7 @@ The following figure illustrates Chart with Primary Axis labels rotated with 90'
 
 
 
-> Note: LabelRotateAngle property will not have effect when the Axis.IntersectAction property is set as Rotate.
+N> LabelRotateAngle property will not have effect when the Axis.IntersectAction property is set as Rotate.
 
 See Also
 

@@ -337,7 +337,7 @@ The following code example illustrates, appending a HTML formatted string into a
 {% endhighlight   %}
 
 
-> Note: Currently inserting XHTML formatted string in the Word document is not supported in Silverlight and Windows Phone 8 applications.
+N> Currently inserting XHTML formatted string in the Word document is not supported in Silverlight and Windows Phone 8 applications.
 
 
 
@@ -396,7 +396,7 @@ The following code illustrates how to validate a HTML string.
 
 
 
-> Note: Currently XHTML Validation is not supported in Windows Store applications.
+N> Currently XHTML Validation is not supported in Windows Store applications.
 
 ### Saving a HTML Document
 
@@ -859,7 +859,7 @@ Partial</td><td>
 Underline types and colors are ignored.</td></tr>
 </table>
 
-> Note: Currently Doc to Html conversion and vice-versa is not supported in Silverlight and Windows Phone 8 applications.
+N> Currently Doc to Html conversion and vice-versa is not supported in Silverlight and Windows Phone 8 applications.
 
 ## Loading and Saving a Text Document 
 
@@ -950,7 +950,6 @@ Assembly Dependencies for this Conversion
 
 
 
-> Note: 
 
 > You need to have Essential PDF and Essential DocIO installed in your system. Since "Syncfusion.DocToPDFConverter.Base.dll" is conditionally shipped when both DocIO.Base and Pdf.Base is installed.
 
@@ -1101,7 +1100,7 @@ Essential DocIO supports conversion of Microsoft Word documents to EPub v2.0.1. 
 
 By default, Table of Contents (TOC) is enabled in the EPub document. It is generated based on the built-in heading styles or custom styles mentioned in the TOC field. 
 
-> Note: You need to have an EPub reader installed in the machine to view the resultant EPub document.
+N> You need to have an EPub reader installed in the machine to view the resultant EPub document.
 
 The following platforms support the EPub conversion process:
 
@@ -1205,7 +1204,7 @@ The following are the known limitations:
 
 
 
-> Note: Currently Doc to EPub conversion is not supported in Silverlight application.
+N> Currently Doc to EPub conversion is not supported in Silverlight application.
 
 
 
@@ -1222,7 +1221,7 @@ The following overloads of the RenderAsImages method can be used to convert a Wo
 
 
 
-> Note: * Parameter "pageIndex" is a zero based index. * Layouting the contents of a Word document as pages in the Essential DocIO is not exactly the same as the layouting in Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word. * Currently, Word to Image conversion is not supported in Silverlight, WinRT and Windows Phone applications.* You can refer to the [Word to PDF](http://help.syncfusion.com/ug/windows%20forms/default.htm) Conversion for supported and unsupported elements in Word to Image conversion.
+N> * Parameter "pageIndex" is a zero based index. * Layouting the contents of a Word document as pages in the Essential DocIO is not exactly the same as the layouting in Microsoft Word. So, the total number of pages may vary slightly compared to that of the Microsoft Word. * Currently, Word to Image conversion is not supported in Silverlight, WinRT and Windows Phone applications.* You can refer to the [Word to PDF](http://help.syncfusion.com/ug/windows%20forms/default.htm) Conversion for supported and unsupported elements in Word to Image conversion.
 
 The following code example lets you to render a Word document as image.
 

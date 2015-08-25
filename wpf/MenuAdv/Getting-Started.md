@@ -81,7 +81,7 @@ The MenuAdv control can also be created and configured using Expression Blend. T
 
    {:.prettyprint}
 
->  Note: You can customize the appearance of the MenuItemAdv using the template-editing feature available in the Expression Blend.
+N> You can customize the appearance of the MenuItemAdv using the template-editing feature available in the Expression Blend.
 
 ### Through XAML
 

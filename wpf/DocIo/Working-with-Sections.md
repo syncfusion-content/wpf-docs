@@ -256,7 +256,7 @@ The following code example illustrates how to add text to different types of hea
 
 DocIO provides options to link the header or footer of a section to the corresponding header or footer in the previous section by using the LinkToPrevious property. This option is available in the Header or Footer toolbar in Microsoft Word. By default, this property is set to True.
 
-> Note: LinToPrevious property always returns false for the first section, since there is no previous section for the first section.
+N> LinToPrevious property always returns false for the first section, since there is no previous section for the first section.
 
 The following code example illustrates how to turn on this option by using DocIO.
 

@@ -229,7 +229,7 @@ It defines the placement pattern of bar type series like Column, Bar, RangeColum
 
 
 
-> Note: Here Spacing for Series 2 is defined to differentiate both series. Otherwise, both the series of same width
+N> Here Spacing for Series 2 is defined to differentiate both series. Otherwise, both the series of same width
 
 
 

@@ -14,10 +14,3 @@ Yes, Essential XlsIO provides support for Client profile. In order to use Essent
 * Syncfusion.Core.dll
 * Syncfusion.Compresssion.Base.dll
 * Syncfusion.XlsIO.ClientProfile.dll
-
-
-
-> 
-
-> 
-

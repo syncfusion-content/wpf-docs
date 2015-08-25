@@ -67,7 +67,7 @@ this.Content = treeViewAdv;
 {% endhighlight %}
 
 
-> Note: To display the TreeViewItem, you must already have a TreeViewAdv in which you are going to add the TreeViewItem.
+N> To display the TreeViewItem, you must already have a TreeViewAdv in which you are going to add the TreeViewItem.
 
 ## Allowing Multi Select in TreeViewAdv
 
@@ -1180,9 +1180,9 @@ treeViewAdv.AllowsColumnReorder = true;
 
 {% endhighlight %}
 
-> Note: This property takes effect only when the MultiColumnEnable property is set to True.
+N> This property takes effect only when the MultiColumnEnable property is set to True.
 
->  Selecting a Node
+Selecting a Node
 
 You can show a node to be selected, at runtime, when the TreeViewAdv control is loaded, by setting the IsSelected property of a particular node to _true._ Here is the code snippet to enable this property.
 

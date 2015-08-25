@@ -74,7 +74,7 @@ The ToolTip property is used to set the tooltip for the upper half of the Split 
 
 Essential Tool WPF is enhanced with HelpText option. Users can add help text in ScreenTip. A line separator separates the Screen tip information from help text. 
 
-> Note: When no HelpText is set the HelpText area and line separator get automatically hidden.
+N> When no HelpText is set the HelpText area and line separator get automatically hidden.
 
 
 

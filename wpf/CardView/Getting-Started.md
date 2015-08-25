@@ -65,7 +65,7 @@ The CardView control can also be created and configured using Expression Blend. 
 
 
 
-   > Note: You can also customize the appearance of CardView control and its items using the template editing feature available in the Expression Blend.
+   N> You can also customize the appearance of CardView control and its items using the template editing feature available in the Expression Blend.
    {:.prettyprint}
    
 ### Through XAML

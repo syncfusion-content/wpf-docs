@@ -338,7 +338,7 @@ The following steps illustrate how to create a group by using the Group command.
 
    _Grouping By Using the Context Menu_
 
-   > Note: The Group command is enabled only when two or more objects are selected.
+   N> The Group command is enabled only when two or more objects are selected.
 
    See Also
 
@@ -482,7 +482,7 @@ The following steps illustrate how to create connections to individual objects i
 
    _Connection Created to the Child Object_
 
-   > Note: Connections cannot be created between a group and its own children. However child objects belonging to the same group can be connected to each other.
+   N> Connections cannot be created between a group and its own children. However child objects belonging to the same group can be connected to each other.
 
    See Also
 
@@ -727,7 +727,7 @@ The following steps illustrate how to ungroup a group by using the Ungroup comma
 
    _Ungrouping By Using the Context Menu_
 
-   > Note: The Ungroup command is enabled only when two or more objects are selected.
+   N> The Ungroup command is enabled only when two or more objects are selected.
 
    {:.prettyprint}
    

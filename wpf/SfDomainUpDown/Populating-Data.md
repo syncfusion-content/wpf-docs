@@ -115,7 +115,7 @@ Bind the Employees collection to the ItemsSource property of DomainUpDown:
 
 {%endhighlight%}
 
-> Note: When the ContentTemplate property of the DomainUpDown control is not set, Items will be displayed as business objects in the control.
+N> When the ContentTemplate property of the DomainUpDown control is not set, Items will be displayed as business objects in the control.
 
 ## ContentTemplate
 

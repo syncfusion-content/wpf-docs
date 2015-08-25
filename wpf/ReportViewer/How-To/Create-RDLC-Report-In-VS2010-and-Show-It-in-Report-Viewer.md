@@ -12,7 +12,7 @@ documentation: ug
 This section covers the steps to create RDLC report in VS2010 and shows the created RDLC report in the Report viewer.
 
 1. Create a new WPF application with .Net Framework 4. The Solution Explorer dialog opens.
-> Note: In the following example, the new WPF application is created in the name of ReportsApplication8.
+N> In the following example, the new WPF application is created in the name of ReportsApplication8.
 
 
 2. To add a new RDLC report in the WPF application, right-click on the newly added WPF application in the Solution Explorer dialog.
@@ -78,7 +78,7 @@ This section covers the steps to create RDLC report in VS2010 and shows the crea
 
 
 
-> Note: You can create a new data connection by clicking New Connection.
+N> You can create a new data connection by clicking New Connection.
 
 
 
@@ -118,7 +118,7 @@ This section covers the steps to create RDLC report in VS2010 and shows the crea
 
 
 
-> Note: The fields are added under the dataset in Data Sources window.
+N> The fields are added under the dataset in Data Sources window.
 
 
   ![Description: sshot-add.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img12.png)
@@ -161,7 +161,7 @@ This section covers the steps to create RDLC report in VS2010 and shows the crea
 
 
 
-> Note: The following window is shown in the WPF Designer window.
+N> The following window is shown in the WPF Designer window.
 
 
   ![Description: sshot-14.png](Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_images/Create-RDLC-Report-In-VS2010-and-Show-It-in-Report-Viewer_img17.png)

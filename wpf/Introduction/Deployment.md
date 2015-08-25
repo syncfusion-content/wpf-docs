@@ -468,7 +468,7 @@ In the Publish tab, click “Options” and in the publish options dialog check 
 
 _Publish options dialog box_
 
-> Note: Before publishing, install the attached certificate in your machine and also follow step 2. Follow the following steps for installing certificate in your machine.
+N> Before publishing, install the attached certificate in your machine and also follow step 2. Follow the following steps for installing certificate in your machine.
 
 1. _Press Windows + R and type “certmgr.msc” and press enter that opens certificate manager._
 2. _Right click the “Trusted Root certification Authorities” and navigate to All Tasks -> Import. Now import the_ .pfx _to “Trusted Root certification Authorities”. It displays a warning for first time. Press Yes to continue the importing._
@@ -481,7 +481,7 @@ You can sign the application executable by using the Post-build command and use 
 
 "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Bin\signtool.exe" sign /f "$(ProjectDir)syncfusion.pfx" /p Coolcomp299 /v "$(ProjectDir)obj\x86\$(ConfigurationName)\DataGridSampleBrowser.exe"
 
-> Note: Now,sign the exe inside obj folder and Syncfusion.pfx file placed inside Project directory.
+N> Now,sign the exe inside obj folder and Syncfusion.pfx file placed inside Project directory.
 
 
 

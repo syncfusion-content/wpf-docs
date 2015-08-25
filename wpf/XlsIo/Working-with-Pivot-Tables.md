@@ -39,7 +39,7 @@ To filter by a field, open its drop-down list and select the value to filter. Th
 
 XlsIO provides support for creation and manipulation of Pivot Table by using simple APIs. IPivotCache interface caches the data that needs to be summarized. IPivotTable represents a pivot table in object, and has properties that allow customizing it. IPivotTable interface returns the collection of Pivot Tables present in a worksheet. IPivotField represents the field in the pivot table. This includes row, column, and data field axis. IPivotDataFields gets collection of data field.
 
-> Note: Pivot Table is currently not supported for .xls format.
+N> Pivot Table is currently not supported for .xls format.
 
 The following code example illustrates how to create a pivot table by using XlsIO.
 
@@ -2491,7 +2491,7 @@ Once you select a field, the PivotTable and the PivotChart appear. PivotTable an
 
 XlsIO provides support for the creation of PivotTables and PivotCharts by using simple code examples. IPivotCache interface caches the data that need to be summarized when filtering. IPivotTable represents a PivotTable in object and has properties that allow customizing it. IPivotTable interface returns the collection of PivotTables that are present in a worksheet. IPivotField represents the field in the PivotTable. This includes row, column, and data field axes. IPivotDataFields get a collection of the data field and once the PivotTable is created, it is required to create a PivotChart by setting the PivotSource property of the IChart interface that references the created PivotTable.
 
-> Note: PivotTable and PivotChart are currently not supported for .xls format.
+N> PivotTable and PivotChart are currently not supported for .xls format.
 
 The following code example illustrates the creation of a PivotTable and PivotChart by using XlsIO.
 
@@ -2615,7 +2615,7 @@ excelEngine.Dispose()
 
 The field buttons of the PivotChart can be displayed or hidden by selecting PivotChart Tools->Analyze->Field Buttons. XlsIO provides an equivalent API to perform simple properties as follows:
 
-> Note: These properties are exclusive for Excel 2010.
+N> These properties are exclusive for Excel 2010.
 
 
 
@@ -2801,7 +2801,7 @@ NA</td></tr>
 
 To understand this process, consider the sample project: \EssentialStudio\*.*.*.* \Windows\XlsIO.Windows\Samples\2.0\Business Intelligence\Pivot Chart. 
 
-> Note: It is mandatory to have Essential XlsIO installed. MS Excel is not required.
+N> It is mandatory to have Essential XlsIO installed. MS Excel is not required.
 
 
 

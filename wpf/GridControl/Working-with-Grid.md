@@ -98,7 +98,7 @@ grid.Model.ColumnWidths.DefaultLineSize = 100;
 
 Essential Grid supports efficient hiding of rows and columns. You can hide and unhide ranges of rows and columns using SetHidden method on ColumnWidths and RowHeights.
 
-> Note: SetHidden method accepts the following three parameters: 
+N> SetHidden method accepts the following three parameters: 
 
 * _The first parameter is an integer, which specifies the starting row/column to hide/unhide_
 * _The second parameter is an integer, which specifies the ending row/column to hide/unhide_
@@ -251,7 +251,7 @@ controller = grid.MouseControllerDispatcher.Find  ("ResizeColumnsMouseController
 grid.MouseControllerDispatcher.Remove(controller);
 {% endhighlight  %}
 
-> Note: To prevent resizing of specific row or column, it is required to handle ResizingRows and ResizingColumns events.
+N> To prevent resizing of specific row or column, it is required to handle ResizingRows and ResizingColumns events.
 
 ### Inserting Rows and Columns
 
@@ -295,7 +295,7 @@ grid.Model.InsertRows(5, 2);
 
 
 
-> Note: You can track the moment the rows or columns are inserted by handling the RowsInserted and ColumnsInserted events.
+N> You can track the moment the rows or columns are inserted by handling the RowsInserted and ColumnsInserted events.
 
 ### Moving Rows and Columns
 
@@ -336,7 +336,7 @@ grid.Model.MoveColumns(1, 2, 4);
 
 
 
-> Note: You can track the moment the rows or columns are moved by handling the RowsMoved and  ColumnsMoved event.
+N> You can track the moment the rows or columns are moved by handling the RowsMoved and  ColumnsMoved event.
 
 ### Removing Rows and Columns
 
@@ -896,7 +896,7 @@ Let us know more about these selection Modes.
 
 Model-based selection is cell-based selection mode that allows you to do a selection across the cell, which is not possible with record-based selection. It can be set by initializing AllowSelection property to a Flag value, say, Row. 
 
-> Note: Setting the Flag to None will disable selecting of cells.
+N> Setting the Flag to None will disable selecting of cells.
 
 The possible values for this type of selection are defined by the enum GridSelectionFlags. To control the selection behavior of the grid, set any of the following flags to the AllowSelection property. 
 
@@ -1105,7 +1105,7 @@ grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.One;
 
 
 
-> Note: Record can be selected using a single mouse click or using UP or DOWN Arrow Keys
+N> Record can be selected using a single mouse click or using UP or DOWN Arrow Keys
 
 ### SelectionMode - MultiSimple
 
@@ -1130,7 +1130,7 @@ grid.Model.Options.ListBoxSelectionMode = GridSelectionMode.MultiSimple;
 
 
 
-> Note: It does not support the use of SHIFT, CTRL and arrow keys to extend the selection.
+N> It does not support the use of SHIFT, CTRL and arrow keys to extend the selection.
 
 ### SelectionMode - MultiExtended
 
@@ -1220,7 +1220,7 @@ Allowed width values are:
 
 
 
-> Note: You can also provide numeric values for *.
+N> You can also provide numeric values for *.
 
 > * can be preceded by any double value.
 

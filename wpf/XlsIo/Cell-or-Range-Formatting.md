@@ -169,7 +169,7 @@ excelEngine.Dispose()
 
 {% endhighlight %}
 
-> Note: Applying custom styles will override the original styles. See Also_ Global Styles
+N> Applying custom styles will override the original styles. See Also_ Global Styles
 
 ## Apply Global Style
 
@@ -177,7 +177,7 @@ XlsIO provides support for adding and modifying common (or global) styles that c
 
 
 
-> Note: when you want to apply more than one style for cells, enclose the style within the Begin and End calls. This improves the performance.
+N> when you want to apply more than one style for cells, enclose the style within the Begin and End calls. This improves the performance.
 
 
 
@@ -529,7 +529,7 @@ Text placeholder.</td></tr>
 </table>
 
 
-> _Note: Only one asterisk per section of a format is allowed._
+N> Only one asterisk per section of a format is allowed._
 
 
 
@@ -625,11 +625,11 @@ Description</td></tr>
 <tr>
 <td>
 [BLACK], [BLUE], [CYAN], [GREEN], [MAGENTA], [RED], [WHITE], [YELLOW], [COLOR n]</td><td>
-These codes display the characters in the specified colors. <br><br>Note: n is a value from 1 to 56 and refers to the nth color in the color palette.</td></tr>
+These codes display the characters in the specified colors. <br><brN> n is a value from 1 to 56 and refers to the nth color in the color palette.</td></tr>
 <tr>
 <td>
 [Condition value]</td><td>
-Condition may be <, >, =, >=, <=, <> and value may be any number.<br><br>Note: A number format may contain up to two conditions.</td></tr>
+Condition may be <, >, =, >=, <=, <> and value may be any number.<br><brN> A number format may contain up to two conditions.</td></tr>
 </table>
 
 
@@ -3634,7 +3634,7 @@ XlsIO provides support for reading and writing rich text by using the IRichTextS
 
 
 
-> Note: Currently XlsIO cannot write formatted rich text.
+N> Currently XlsIO cannot write formatted rich text.
 
 
 
@@ -3950,7 +3950,7 @@ In MS Excel, click the Format menu and then click Conditional Formatting. You ca
 
 
 
-> Note: Excel allows the addition of a maximum of three conditions for the same cell in the Biff8 format. However, this restriction is removed in Excel 2007 formats.
+N> Excel allows the addition of a maximum of three conditions for the same cell in the Biff8 format. However, this restriction is removed in Excel 2007 formats.
 
 
 ## Create a Conditional Format 
@@ -5186,7 +5186,7 @@ excelEngine.Dispose()
 
 
 
->  Note: XlsIO visualization has been enhanced with backward compatibility for Advanced Conditional Formatting.
+N> XlsIO visualization has been enhanced with backward compatibility for Advanced Conditional Formatting.
 
 
 

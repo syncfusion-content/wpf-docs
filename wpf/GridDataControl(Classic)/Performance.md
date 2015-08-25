@@ -150,9 +150,7 @@ if (toggleInsertRemove > 0 && (timerCount % insertRemoveModulus) == 0)
 
 {% endhighlight  %}
 
-> Note: For complete code of this example, refer the following browser sample:
-
-> ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\ Samples\3.5\WindowsSamples\Grid Data Control – Advanced\Trader Grid Test Demo
+N> For complete code of this example, refer the following browser sample: ...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\ Samples\3.5\WindowsSamples\Grid Data Control – Advanced\Trader Grid Test Demo
 
 ## PLINQ Support in GridDataControl
 
@@ -198,4 +196,4 @@ this.gridDataControl1.UsePLINQ = true;
 
 
 
-> Note: This only works for strongly-typed collections and not for legacy object models like DataTable.
+N> This only works for strongly-typed collections and not for legacy object models like DataTable.

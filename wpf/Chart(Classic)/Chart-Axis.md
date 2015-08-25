@@ -102,7 +102,7 @@ A boolean property used to calculate the axis range based on the modified data v
 </table>
 
 
-> Note: The DesiredIntervalsCount will not be taken into account when the interval is set.
+N> The DesiredIntervalsCount will not be taken into account when the interval is set.
 
 
 
@@ -242,15 +242,7 @@ Chart1.Areas[0].SecondaryAxis.MinimumInterval = 25;
 
 
 
-> Note: 
-
-> The Range set for an axis with Double ValueType and DateTimeRange set for an axis with the DateTime ValueType will be taken into account only when the IsAutoSetRange property is set as false.
-
-> The Interval and DateTimeInterval properties could be used to set intervals when the range calculation is done automatically or when a custom range is set.
-
-> While using custom ranges, make sure that the series.IsIndexed property is set as false. This will ensure that the actual x-axis values and the range will be taken into account.
-
-> Ensure that the Interval value is proportionate to the Range value. When you set a small value as the Interval to an Axis with a large Range, it results in more gridlines, generating an “Out of Memory” exception.
+N> The Range set for an axis with Double ValueType and DateTimeRange set for an axis with the DateTime ValueType will be taken into account only when the IsAutoSetRange property is set as false. The Interval and DateTimeInterval properties could be used to set intervals when the range calculation is done automatically or when a custom range is set. While using custom ranges, make sure that the series.IsIndexed property is set as false. This will ensure that the actual x-axis values and the range will be taken into account. Ensure that the Interval value is proportionate to the Range value. When you set a small value as the Interval to an Axis with a large Range, it results in more gridlines, generating an “Out of Memory” exception.
 
 ### RangeCalculationMode
 
@@ -328,10 +320,7 @@ MessageBox.Show("Start " + range.Start.ToString() +", "+ "End " + range.End.ToSt
 {% endhighlight  %}
  
 
-> Note: Visible Range can also be calculated for the changed value of the range by using the Axis.RangeChanged event.
-
-
->  For details, see_ Chart Axis Events
+N> Visible Range can also be calculated for the changed value of the range by using the Axis.RangeChanged event.  For details, see_ Chart Axis Events
 
 See Also
 

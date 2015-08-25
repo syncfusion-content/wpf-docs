@@ -762,7 +762,7 @@ IDictionary supports for binding the Dictionary list to the chart series Binding
 
 IDictionary is useful to bind this kind of data source.
 
-> Note: In this sample data, 0, 1, 2, 3 …6 are the Keys and the CompanyExpenses are the Values.
+N> In this sample data, 0, 1, 2, 3 …6 are the Keys and the CompanyExpenses are the Values.
 
 {% highlight c# %}
 
@@ -788,7 +788,7 @@ SortedList Expenditure = new SortedList();
 
 Bind the data source, by using the following code. 
 
-> Note: Set BindingPath to Key to bind the key of the dictionary to BindingPathX or BindingPathsY.
+N> Set BindingPath to Key to bind the key of the dictionary to BindingPathX or BindingPathsY.
 
 {% highlight xml %}
 [Xaml]

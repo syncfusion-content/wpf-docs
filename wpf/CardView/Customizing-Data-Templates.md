@@ -224,7 +224,7 @@ You can edit the values loaded in CardViewItem using EditItemTemplate. This is i
 
 
 
-   > Note: You can edit the values in the CardView control by double-clicking the CardViewItem.
+   N> You can edit the values in the CardView control by double-clicking the CardViewItem.
 
    {:.prettyprint}
 

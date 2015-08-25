@@ -23,7 +23,7 @@ The GridData control is specifically designed for the scenarios, where you need 
 
 
 
-> Note: There are several other classes that assist the user in creating groups, summaries, filters, sorted columns, etc.
+N> There are several other classes that assist the user in creating groups, summaries, filters, sorted columns, etc.
 
 The following sections elaborate the properties of the GridData control:
 

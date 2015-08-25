@@ -17,7 +17,7 @@ Zooming: With the touch manipulation event, we can interpret multi-touch input t
 
 Selection: With the touch manipulation event, we can interpret the multi-touch input to simulate directly manipulating the contents rendered on the viewer and allow users to use their fingers to perform select content similar to using a mouse.
 
-> Note: By default, the IsManipulationEnabled property of the RichTextBoxAdv control is set to false and touch manipulations are disabled. In order to enable touch manipulation in the RichTextBoxAdv control, set the IsManipulationEnabled property to true.
+N> By default, the IsManipulationEnabled property of the RichTextBoxAdv control is set to false and touch manipulations are disabled. In order to enable touch manipulation in the RichTextBoxAdv control, set the IsManipulationEnabled property to true.
 
 
 

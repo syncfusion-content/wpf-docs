@@ -31,7 +31,7 @@ The following procedure illustrates how to install Essential Test Studio:
 
 
 
-    > Note: The unlock key is validated.
+    N> The unlock key is validated.
 
 5. Select the installation folder dialog box opens. 
 
@@ -41,7 +41,7 @@ The following procedure illustrates how to install Essential Test Studio:
 
 6. To install in the default location, click Next. 
  
-  > Note: You can also browse to choose a location by clicking Browse.
+  N> You can also browse to choose a location by clicking Browse.
 
 7. Installation type dialog box opens.
 
@@ -62,7 +62,7 @@ The following procedure illustrates how to install Essential Test Studio:
 
 
 
-    > Note: The Completed screen is displayed once the selected package is installed.
+    N> The Completed screen is displayed once the selected package is installed.
 
     ![](Installation-and-Deployment_images/Installation-and-Deployment_img7.png)
 
@@ -78,13 +78,13 @@ The Essential QTP samples are installed in the following location, locally on th
 
 ### Grid samples- {installed location of the product}\ WPF\QTPSamples \
 
-> Note: By default, the installed location of the product corresponds to- <Drive>:\Program Files\Syncfusion\Essential QTP \<version number>\
+N> By default, the installed location of the product corresponds to- <Drive>:\Program Files\Syncfusion\Essential QTP \<version number>\
 
 The executable files for the samples are available in the following location:
 
 ### {Installed location of the product}\ WPF\QTPSamples\bin
 
-> Note: There is no sample browser available to run the samples for Essential QuickTest Professional. You have to manually run the exe from the above-mentioned location._
+N> There is no sample browser available to run the samples for Essential QuickTest Professional. You have to manually run the exe from the above-mentioned location._
 
 ### Source Code Location
 

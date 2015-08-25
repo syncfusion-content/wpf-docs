@@ -264,7 +264,7 @@ The following are the fields displayed:
 * Other document information
 
 
-> Note: These fields are not always evaluated at the moment of constructing the document.
+N> These fields are not always evaluated at the moment of constructing the document.
 
 Numeric fields have an additional NumberingStyle property. There are five possible numbering styles supported by the automatic fields. They are as follows.
 

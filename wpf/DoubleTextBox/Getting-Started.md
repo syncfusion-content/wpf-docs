@@ -471,7 +471,7 @@ The steps to create a DoubleTextBox by using VisualStudio in C# are as follows:
 
    {:.prettyprint}
 
-> Note:If you do not set any value to the DoubleTextbox then the default value will be as follows:
+N>If you do not set any value to the DoubleTextbox then the default value will be as follows:
 
 If the UseNullOption is set to true then,
 
@@ -625,7 +625,7 @@ Blendability
 
 You have to use the Value property to set the value for the DoubleTextBox.
 
-> Note: Do not use the Text property to set the value for the DoubleTextBox. Use only the Value property.
+N> Do not use the Text property to set the value for the DoubleTextBox. Use only the Value property.
 
 
 {% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100"/> {% endhighlight %} 
@@ -674,7 +674,7 @@ See Also
 
 You can set the Watermark for the DoubleTextBox by using the WatermarkText property. To enable Watermark, you have to set the WatermarkTextIsVisible property to true.
 
-> Note: WatermarkText is visible only when the value is null.
+N> WatermarkText is visible only when the value is null.
 
 
 

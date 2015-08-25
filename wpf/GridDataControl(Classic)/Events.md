@@ -53,7 +53,7 @@ private void dataGrid_MouseMove(object sender, MouseEventArgs e)
 
 {% endhighlight  %}
 
-> Note: These Grid WPF mouse events are more advantageous than using any other default mouse events because the default mouse events are controlled by Mouse Controller that makes it very hard to access the underlying data; whereas in case of Grid mouse events, it is directly possible to access the underlying data easily.
+N> These Grid WPF mouse events are more advantageous than using any other default mouse events because the default mouse events are controlled by Mouse Controller that makes it very hard to access the underlying data; whereas in case of Grid mouse events, it is directly possible to access the underlying data easily.
 
 
 

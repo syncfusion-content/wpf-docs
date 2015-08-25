@@ -251,7 +251,7 @@ The GridTree control also features the custom sorting. The following additional 
 
 The GridTree control supports autosizing its columns such that the display of the tree occupies the entire width of the client area available in the Grid Tree. The sizing is done by columns occupying certain percentages of the available space. To implement this feature, the Grid Tree must be free to size with its parent.
 
-> Note: You cannot set the Width or HorizontalAlignment properties of the Grid Tree when this feature has been enabled.
+N> You cannot set the Width or HorizontalAlignment properties of the Grid Tree when this feature has been enabled.
 
 You can enable this feature in two ways. 
 
@@ -539,7 +539,7 @@ _Cell Style_
 
 Thus, the background of a grid cell can be customized.
 
-> Note: Level styles are the lowest in precedence, followed by column styles, and then followed by cell -specific styles set in QueryCellInfo.
+N> Level styles are the lowest in precedence, followed by column styles, and then followed by cell -specific styles set in QueryCellInfo.
 
 ### Customizing the ExpandCell
 

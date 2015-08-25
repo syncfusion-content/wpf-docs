@@ -70,6 +70,6 @@ Syncfusion.Windows.Shared.DateTimeEdit dateTimeEdit = new Syncfusion.Windows.Sha
 
 
 
-> Note: CustomPattern support can be enabled by setting the Pattern property to the DateTimePattern.CustomPattern.
+N> CustomPattern support can be enabled by setting the Pattern property to the DateTimePattern.CustomPattern.
 
 

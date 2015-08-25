@@ -24,6 +24,6 @@ The following image shows the Essential Grid being used in a portfolio applicati
 
 
 
-> Note: For complete code of this example, refer to the following browser sample:
+N> For complete code of this example, refer to the following browser sample:
 
 _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Grid.WPF\Samples\3.5\WindowsSamples\Product Showcase\Stock Dashboard Demo_

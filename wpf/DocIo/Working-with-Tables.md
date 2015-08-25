@@ -547,7 +547,7 @@ _Table Styles_
 * You can get information of the related style that is applied to the table by using the GetStyle method of WTable class.
  
 
-> Note: Essential DocIO currently provides support for built-in table styles in Word2007, Word2010, and Word2013 formats. The visual formatting is also preserved in Word to PDF, Word to Image, and Word to HTML conversions.
+N> Essential DocIO currently provides support for built-in table styles in Word2007, Word2010, and Word2013 formats. The visual formatting is also preserved in Word to PDF, Word to Image, and Word to HTML conversions.
 
 The following code illustrates how to apply and get the table styles in the table.
 

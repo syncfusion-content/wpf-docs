@@ -566,7 +566,7 @@ No</td></tr>
 
 
 
-> Note: If a node is not hit while making a connection, then no connector gets added.
+N> If a node is not hit while making a connection, then no connector gets added.
 
 
 
@@ -709,7 +709,7 @@ This creates a connection between the two specified nodes.
 
 
 
-> Note: For orthogonal and Bezier connectors, the connection always happens at the center of the node's edge.
+N> For orthogonal and Bezier connectors, the connection always happens at the center of the node's edge.
 
 For straight line connectors, the connection happens at the intersection point of the edge and the line connector.
 
@@ -1137,7 +1137,7 @@ lc.IntermediatePoints.Add(New Point(200,300))
 
 
 
-> Note: By default, an orthogonal line connector has two intermediate points. So, newly added intermediate points will need to be added beyond the default intermediate points. If users need to add new intermediate points to the line connector only, they must clear all of the default intermediate points and then add the intermediate points. Otherwise, the newly added intermediate points will be added beyond the default intermediate points.
+N> By default, an orthogonal line connector has two intermediate points. So, newly added intermediate points will need to be added beyond the default intermediate points. If users need to add new intermediate points to the line connector only, they must clear all of the default intermediate points and then add the intermediate points. Otherwise, the newly added intermediate points will be added beyond the default intermediate points.
 
 Modifying Intermediate Points
 
@@ -2813,7 +2813,7 @@ line.FirstSegmentOrientation = SegmentOrientation.Vertical
 
 
 
-> Note: This FirstSegmentOrientation property is only works as expected when the LineConnector satisfies the following things.
+N> This FirstSegmentOrientation property is only works as expected when the LineConnector satisfies the following things.
 
 * _LineConnector is connected between Nodes through ConnectionPort._
 * _When there is only one intermediate Point in Orthogonal LineConnector._
@@ -3398,7 +3398,7 @@ line.LabelOrientation = Syncfusion.Windows.Diagram.LabelOrientation.Auto
 {% endhighlight %}
 
 
-> Note: When this property is set to Auto, the label will be positioned along the angle of the line drawn.
+N> When this property is set to Auto, the label will be positioned along the angle of the line drawn.
 
 
 
@@ -4064,7 +4064,7 @@ view.LineRoutingEnabled = True
 {% endhighlight  %}
 The Line Routing is enabled completely.
 
-> Note: Only Orthogonal Connector type supports Line Routing.
+N> Only Orthogonal Connector type supports Line Routing.
 
 Node settings
 

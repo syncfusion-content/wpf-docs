@@ -2271,7 +2271,7 @@ excelEngine.Dispose()
 
 {% endhighlight %}
 
-> Note: FirstVisibleColumn and FirstVisibleRow indexes are "zero-based".
+N> FirstVisibleColumn and FirstVisibleRow indexes are "zero-based".
 
 ## Split Panes 
 
@@ -2972,7 +2972,7 @@ The protection of the chart sheet is removed.
 
 In MS Excel, the way the spreadsheet fits into paper can be controlled through the Page Setup dialog box. You can select the size and orientation of the paper, the width of the margins, what goes into the header and footer of each page, and the order of printing cells for sheets that will take several pieces of paper.
 
-> Note: Though the code example uses sheet object, it is possible to read/write page setup options for chart worksheet and embedded chart by using IChartPageSetup interface.
+N> Though the code example uses sheet object, it is possible to read/write page setup options for chart worksheet and embedded chart by using IChartPageSetup interface.
 
 There may also be a need to change the first page number that starts with '1', by default. This can be done through the page number customization options provided by the Page Setup dialog box.
 
@@ -3074,7 +3074,7 @@ Page Breaks are dividers that break a worksheet into separate pages for printing
 
 XlsIO provides support for inserting/removing horizontal and vertical page breaks in a worksheet by using the IHPagebreak and IVPagebreak interfaces respectively. 
 
-> Note: By default, page breaks are not shown in the Normal view. However, you can view them by inserting new page breaks.
+N> By default, page breaks are not shown in the Normal view. However, you can view them by inserting new page breaks.
 
 
 {% highlight C# %}
@@ -3612,7 +3612,7 @@ excelEngine.Dispose()
 
 MS Excel enables setting the background for the worksheet with an image that covers the entire worksheet. Depending upon the image size and type, the background graphic may either be stretched across your worksheet or tiled. 
 
-> Note: The sheet backgrounds may tremendously increase the file size of the workbooks.
+N> The sheet backgrounds may tremendously increase the file size of the workbooks.
 
 Background images that are set this way cannot be printed. To set a Watermark that can be printed, you can make use of Headers and Footers. This can be viewed only through the Print Preview option and it is not visible in the Normal view. XlsIO provides support for inserting background images through the BackgroundImage property of IPageSetup.
 
@@ -4094,7 +4094,7 @@ excelEngine.Dispose()
 
 {% endhighlight %}
 
-> Note: XlsIO does not provide any option to get the page count. You can only insert the page count by using the format string as illustrated in the following code example.
+N> XlsIO does not provide any option to get the page count. You can only insert the page count by using the format string as illustrated in the following code example.
 
 
 {% highlight C# %}

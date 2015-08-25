@@ -29,7 +29,7 @@ SfDataGrid.SourceType: This Dependency property decides the type of source colle
 
 
 
-> Note: It is always not neccessary to set SourceType and IsDynamicItemsSource properties.
+N> It is always not neccessary to set SourceType and IsDynamicItemsSource properties.
 
 The following event is associated with Data Binding.
 
@@ -48,7 +48,7 @@ You can use this event when you want to handle operations after ItemsSource boun
 
 DataGrid has the View property of type ICollectionViewAdv interfacethat implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. When you bind Collection to ItemsSource property of SfDataGrid, then View will be created and maintains the operations on Data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification. Following are some important properties that can be used for various purposes.
 
-> Note: DataGrid creates different types of views derived from ICollectionViewAdv interface based on ItemsSource.
+N> DataGrid creates different types of views derived from ICollectionViewAdv interface based on ItemsSource.
 
 _Property Table_
 
@@ -183,7 +183,7 @@ When BeginInit method is called it suspends all the updates until EndInit method
 </table>
 
 
-> Note: View has properties that already defined in SfDataGrid. It recommended setting those properties via SfDataGrid.
+N> View has properties that already defined in SfDataGrid. It recommended setting those properties via SfDataGrid.
 
 ### Complex property Binding
 
@@ -351,7 +351,7 @@ Execute the above code to render the following output.
 
 _DataGrid with Complex Property Binding_
 
-> Note: DataGrid control allows you to set Grouping, Sorting, Filtering and Summaries for Complex property-bound columns. Complex property binding in SfDataGrid does not support LiveDataUpdationMode.
+N> DataGrid control allows you to set Grouping, Sorting, Filtering and Summaries for Complex property-bound columns. Complex property binding in SfDataGrid does not support LiveDataUpdationMode.
 
 
 
@@ -364,7 +364,7 @@ DataGrid control provides extensive support to bind the dynamic object data to D
 
 
 
-> Note: Dynamic is not supported in Silverlight hence it is not supported by SfDataGrid also.
+N> Dynamic is not supported in Silverlight hence it is not supported by SfDataGrid also.
 
 The following code example illustrates the dynamic object data creation.
 
@@ -486,7 +486,7 @@ The following screenshot displays the output.
 
  _DataGrid with Dynamic Object Binding_
 
-> Note: Dynamic Object binding in SfDataGrid does not support LiveDataUpdationMode.
+N> Dynamic Object binding in SfDataGrid does not support LiveDataUpdationMode.
 
 
 

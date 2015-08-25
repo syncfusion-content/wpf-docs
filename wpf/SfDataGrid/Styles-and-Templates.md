@@ -182,7 +182,7 @@ You can also edit the style of the following Datagrid elements in Expression Ble
 
 DataGrid allows you to edit the styles of DataGrid and its elements in Visual studio as your requirement.
 
-> Note: Visual Style Editing option is availble in Visual Studio 2012 and higher versions only.
+N> Visual Style Editing option is availble in Visual Studio 2012 and higher versions only.
 
 
 
@@ -372,7 +372,7 @@ The following code example illustrates applying styles for cells.
 
 
 
-> Note: DataGrid control also allows you to apply the style for the cells in the particular column by using GridColumn.CellStyle property.
+N> DataGrid control also allows you to apply the style for the cells in the particular column by using GridColumn.CellStyle property.
 
 ### SfDataGrid.CaptionSummaryCellStyle
 
@@ -802,7 +802,7 @@ TargetType="syncfusion:TableSummaryRowControl">
 
 DataGrid provides extensive support for StyleSelectors that helps to apply custom style for cells and rows. To know more about the StyleSelectors you can check the following MSDN link: [http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector.aspx](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector.aspx).
 
-> _Note: By default, Silverlight does not support StyleSelectors hence DataGrid too._
+N> By default, Silverlight does not support StyleSelectors hence DataGrid too._
 
 ### Cell Style Selectors
 
@@ -1088,7 +1088,7 @@ HeaderTemplate="{StaticResource headerTemplate}" />
 
 
 
-> Note: DataGrid control also provides the support to apply DataTemplateSelector for a particular column using GridTemplateColumn.CelltemplateSelector property. For more information about this, you can refer_ ColumnType _topic.
+N> DataGrid control also provides the support to apply DataTemplateSelector for a particular column using GridTemplateColumn.CelltemplateSelector property. For more information about this, you can refer_ ColumnType _topic.
 
 
 
@@ -1098,7 +1098,7 @@ DataGrid provides extensive support for DataTemplateSelectors that helps to appl
 
 [http://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx](http://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx).
 
-> Note: By default, Silverlight does not support TemplateSelectors hence DataGrid too.
+N> By default, Silverlight does not support TemplateSelectors hence DataGrid too.
 
 
 
@@ -1545,7 +1545,7 @@ Following steps illustrate how to apply conditional formatting to the Rows in Gr
 
    _Conditional formatting to the Rows in Grid_
 
-   > Note: StyleSelectors & TemplateSelectors are not supported by Silverlight
+   N> StyleSelectors & TemplateSelectors are not supported by Silverlight
 
    {:.prettyprint}
 

@@ -69,7 +69,7 @@ Console.WriteLine(document.DocumentInformation.Creator)
 Console.WriteLine(document.DocumentInformation.Producer)
 {% endhighlight %}
 
-> Note: You can write the document information with the newly created document.
+N> You can write the document information with the newly created document.
 
 The following code example illustrates how to write the document information.
 
@@ -175,7 +175,7 @@ The Document settings help in storing information about the document. It can als
 
 
 
-> Note: You cannot overwrite the existing metadata information.
+N> You cannot overwrite the existing metadata information.
 
 ## Viewer Preference
 

@@ -227,7 +227,7 @@ WTextRange class represents a piece of text that has separate formatting. You ca
 
 You can also use the AppendText method of the WParagraph class to append text to the paragraph.
 
-> Note: AppendText method appends a new text range to the paragraph with the default character formatting.
+N> AppendText method appends a new text range to the paragraph with the default character formatting.
 
 Class Hierarchy
 
@@ -1067,7 +1067,7 @@ Dim doc As IWordDocument = New WordDocument()Dim section As IWSection = doc.AddS
 By using the WOleObject instance, you can insert content from one program to another. To know what types of content you can insert, click Insert tab, and select Object in the Text group.
 
 
-> Note: Only installed programs that support OLE objects appear in the Object dialog box.
+N> Only installed programs that support OLE objects appear in the Object dialog box.
 
 Essential DocIO supports insertion and extraction of these OLE objects with small piece of code in both .doc and docx formats. WOleObject class is responsible for manipulating OLE objects.
 
@@ -1124,7 +1124,7 @@ Essential DocIO provides support for embedding OLE objects in a Word document to
 
 
 
-> Note: Initially DocIO generated documents display the icon (given image) in place of the embedded OLE instance. By setting the DisplayAsIcon property to true, the icon is not updated after opening or editing the OLE instance by using Microsoft Word. However, setting the DisplayAsIcon property to false enables the Word document to update the icons dynamically with the content after opening or editing the OLE instance.
+N> Initially DocIO generated documents display the icon (given image) in place of the embedded OLE instance. By setting the DisplayAsIcon property to true, the icon is not updated after opening or editing the OLE instance by using Microsoft Word. However, setting the DisplayAsIcon property to false enables the Word document to update the icons dynamically with the content after opening or editing the OLE instance.
 
 
 

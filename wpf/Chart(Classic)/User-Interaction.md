@@ -242,7 +242,7 @@ Zooming using mouse can be disabled for a particular axis by using the EnableZoo
 this.Chart1.Areas[0].PrimaryAxis.EnableZooming = false;
 {% endhighlight  %}
 
-> Note: EnableZooming property is useful to disable zooming using mouse and keyboard keys. But it will not take effect when the ZoomFactor property is set. When ZoomFactor property is set between 0 to 1, and EnableZooming property is set to False, the axis will still be zoomed.
+N> EnableZooming property is useful to disable zooming using mouse and keyboard keys. But it will not take effect when the ZoomFactor property is set. When ZoomFactor property is set between 0 to 1, and EnableZooming property is set to False, the axis will still be zoomed.
 
 Zooming Specific ChartAxis Associated with a ChartSeries Through Code
 
@@ -306,7 +306,7 @@ The following screenshot illustrates this.
 
 
 
-> Note: Series.IsZoomable is used to enable/disable the zooming of the Axis associated with it. Hence this property is used only in Multiple Axes Charts. This property takes effect only when zooming is performed through code. (Refer to Zooming using Keyboard Keys in this page for zooming through keyboard keys). When zooming is enabled / disabled through the context menu, this property will not take effect.
+N> Series.IsZoomable is used to enable/disable the zooming of the Axis associated with it. Hence this property is used only in Multiple Axes Charts. This property takes effect only when zooming is performed through code. (Refer to Zooming using Keyboard Keys in this page for zooming through keyboard keys). When zooming is enabled / disabled through the context menu, this property will not take effect.
 
 ### Inactive Series Opacity 
 
@@ -1128,7 +1128,7 @@ This feature helps the user to drag the Chart point from one location to another
 
 
 
-> Note: The AllowSegmentDragDrop property does not work when you apply a custom data template for the Chart Series, because the Chart Series’ default template is overridden by the custom template that affects the existing behavior.
+N> The AllowSegmentDragDrop property does not work when you apply a custom data template for the Chart Series, because the Chart Series’ default template is overridden by the custom template that affects the existing behavior.
 
 ### Tables for Properties, Methods, and Events
 
@@ -1267,7 +1267,7 @@ Chart1.Areas[0].AllowSegmentDragDrop = true;
 
 Essential Chart is now enhanced to obtain the list of points and the DataSource present in the user-given rectangle bounds region, using BoundsToPoints and BoundsToDataSource methods of ChartArea control.  The rectangle region given by the user can also convert to the corresponding axes range values using the ConvertBoundsToAxesRangeValues method of ChartArea control.
 
-> Note: The given points of the rectangle region can internally convert to the relative position of the ChartArea control.
+N> The given points of the rectangle region can internally convert to the relative position of the ChartArea control.
 
 ### Use Case Scenario
 
@@ -1471,7 +1471,7 @@ The property dialog has tabbed structure. There are five tabs available by defau
 
 The property window has [localization support](http://help.syncfusion.com/ug_84/User%20Interface/WPF/Chart/default.htm?turl=localizationsupport.htm). The properties and their options can be viewed in local languages just by adding .resx file with local string for corresponding key values in the application.
 
-> Note: Any changes done in the property window directly affects the Chart control from Essential studio version 9.1 onwards whereas earlier versions have a preview chart in the property window to view the modifications.
+N> Any changes done in the property window directly affects the Chart control from Essential studio version 9.1 onwards whereas earlier versions have a preview chart in the property window to view the modifications.
 
 
 

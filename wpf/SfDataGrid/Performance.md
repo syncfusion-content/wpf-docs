@@ -165,7 +165,7 @@ When you have large amount of data, the filter pop-up opening time becomes slow.
 
 You can improve the filter pop-up opening time by setting CanGenerateUniqueItems property value to ‘False’.A textbox is loaded instead of AdvancedFilterComboBox that allows you to manually enter text for filtering. This increases GridFilterControl’s loading performance.
 
-> Note: You can achieve this, only when you are using AdvanedFilter withoutn CheckBox filter.
+N> You can achieve this, only when you are using AdvanedFilter withoutn CheckBox filter.
 
 
 {% highlight xml %}

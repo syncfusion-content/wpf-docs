@@ -38,7 +38,7 @@ The Corner Radius describes the degree to which corners are rounded. This proper
 
 The Foreground of the PercentTextBox can be customized based on the Value property. When Negative a value is assigned to the PercentValue property, then automatically the NegativeForeground value gets assigned to Foreground property.
 
-> Note: The NegativeForeground in the PercentTextBox can be enabled by setting the ApplyNegativeForeground property to true.
+N> The NegativeForeground in the PercentTextBox can be enabled by setting the ApplyNegativeForeground property to true.
 
  {% highlight xml %}
 
@@ -65,7 +65,7 @@ The Foreground of the PercentTextBox can be customized based on the Value proper
 
 The Foreground of the PercentTextBox can be customized based on the PercentValue property. When zero is assigned as a value to the PercentValue property, then automatically the ZeroColor is set to the Foreground property.
 
-> Note: The ZeroColor in the PercentTextBox can be enabled by setting the ApplyZeroColor property to true.
+N> The ZeroColor in the PercentTextBox can be enabled by setting the ApplyZeroColor property to true.
 
  {% highlight xml %}
 

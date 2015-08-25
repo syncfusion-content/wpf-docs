@@ -194,7 +194,7 @@ Syncfusion Reference Manager is used to add Syncfusion Tools.
 
 
 
-   > Note:   
+   N>   
 
    > 1.   The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version.
 

@@ -477,9 +477,7 @@ The steps to create a PercentTextBox by using Visual Studio in C# are as follows
 ![](Getting-Started_images/Getting-Started_img6.png)
 
 
-> Note:If you do not set any PercentValue to the PercentTextBox then the default value will be as follows:
-
-> If the UseNullOption is set to true then, Value of the NullValue property will be the default value. Otherwise Zero will be the default value (based on the MinValue and MaxValue the default value will change).
+N>If you do not set any PercentValue to the PercentTextBox then the default value will be as follows: If the UseNullOption is set to true then, Value of the NullValue property will be the default value. Otherwise Zero will be the default value (based on the MinValue and MaxValue the default value will change).
 
 ### See Also
 
@@ -615,7 +613,7 @@ Blendability
 
 You have to use the PercentValue property to set value for the PercentTextBox.
 
-> Note: Do not use the Text property to set the value for the PercentTextBox. Use only the PercentValue property.
+N> Do not use the Text property to set the value for the PercentTextBox. Use only the PercentValue property.
 
 <table>
 <tr>
@@ -657,7 +655,7 @@ You can set the Minimum and Maximum value by using the MinVal and MaxVal propert
 
 You can set the Watermark for the PercentTextBox by using the WatermarkText property. To enable Watermark, you have to set the WatermarkTextIsVisible property to true.
 
-> Note: WatermarkText is visible only when the value is null.
+N> WatermarkText is visible only when the value is null.
 
 <table>
 <tr>

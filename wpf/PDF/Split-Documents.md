@@ -49,7 +49,7 @@ loadedDocument.Split(destFilePattern)
 
  {% endhighlight %}
 
-> Note: Splitting algorithm uses Import Page methods, so the result would be similar to it.
+N> Splitting algorithm uses Import Page methods, so the result would be similar to it.
 
 Essential PDF also allows you to split pages as per your wish. The following code example illustrates this.
 

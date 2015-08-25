@@ -194,7 +194,7 @@ This dependency property defines selected header foreground of the float window.
 </table>
 
 
-> Note: The default value of all the above listed properties is Transparent. 
+N> The default value of all the above listed properties is Transparent. 
 
 Use the below code snippet for applying all the customization related properties of the float windows.
 

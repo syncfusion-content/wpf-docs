@@ -26,7 +26,7 @@ The Tick Frequency property is used to define the number of ticks along the trac
 
 
 
-> Note: When the SnapsTo property is set to Ticks, the TickFrequency is used to specify the interval between snap points.
+N> When the SnapsTo property is set to Ticks, the TickFrequency is used to specify the interval between snap points.
 
 ## Step Frequency  
 
@@ -81,7 +81,7 @@ TickFrequency="20" TickPlacement="BottomRight" Value="40"   />
 
 
 
-> Note: In Vertical Orientation, this option places the ticks to right side.
+N> In Vertical Orientation, this option places the ticks to right side.
 
 ### TopLeft  
 
@@ -98,7 +98,7 @@ Tick marks are placed either above the track in horizontal orientation or left o
 
 
 
-> Note: In Vertical Orientation, this option places the ticks to left side. 
+N> In Vertical Orientation, this option places the ticks to left side. 
 
 ### Outside 
 

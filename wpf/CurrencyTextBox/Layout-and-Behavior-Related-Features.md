@@ -37,7 +37,7 @@ The Corner Radius describes the degree to which corners are rounded. This proper
 
 The Foreground of the CurrencyTextBox can be customized based on the Value property. When Negative value is assigned to the Value property, then automatically the NegativeForeground value gets assigned to the Foreground property.
 
-> Note: The NegativeForeground in the CurrencyTextBox can be enabled by setting the ApplyNegativeForeground property to true.
+N> The NegativeForeground in the CurrencyTextBox can be enabled by setting the ApplyNegativeForeground property to true.
 
 
 {% highlight xml %}
@@ -62,7 +62,7 @@ The Foreground of the CurrencyTextBox can be customized based on the Value prope
 
 The Foreground of the CurrencyTextBox can be customized based on the Value property. When zero is assigned as a value to the Value property, then automatically the ZeroColor is set to the Foreground property.
 
-> Note: The ZeroColor in the CurrencyTextBox can be enabled by setting the ApplyZeroColor property to true.
+N> The ZeroColor in the CurrencyTextBox can be enabled by setting the ApplyZeroColor property to true.
 
 
 

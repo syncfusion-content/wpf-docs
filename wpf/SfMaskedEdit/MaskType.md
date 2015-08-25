@@ -61,8 +61,7 @@ Alphanumeric, required.</td></tr>
 <</td><td>
 Shift down. Converts all the characters that follow to lowercase.</td></tr>
 <tr>
-<td>
-></td><td>
+<td> > </td><td>
 Shift up. Converts all the characters that follow to uppercase.</td></tr>
 </table>
 Regular

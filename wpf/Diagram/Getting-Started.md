@@ -365,7 +365,7 @@ diagramgrid.Children.Add(dc)
 
 
 
-> Note: For orthogonal and Bezier connectors, the connection always happens at the center of the node's edge.
+N> For orthogonal and Bezier connectors, the connection always happens at the center of the node's edge.
 
 For straight line connectors, the connection happens at the intersection point of the edge and the line connector.
 

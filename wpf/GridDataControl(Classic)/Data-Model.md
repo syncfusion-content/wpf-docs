@@ -122,7 +122,7 @@ The ICollectionViewAdv interface exposes an ObservableCollection<ISummaryRow> an
 
 Any class implementing this interface should be able to interact with the TopLevelGroup for specifying summaries. 
 
-> Note: The ICollectionViewAdv interface was made as an interface since the WPF properties had to be DependencyProperties to enable binding in XAML. With ICollectionViewAdv, we can specify two kinds of summaries:
+N> The ICollectionViewAdv interface was made as an interface since the WPF properties had to be DependencyProperties to enable binding in XAML. With ICollectionViewAdv, we can specify two kinds of summaries:
 
 
 
@@ -205,7 +205,7 @@ foreach (var record in queryableCollectionView.Records)
 
 {% endhighlight  %}
 
-> Note: When applying sorting with grouping, both the ICollectionViewAdv.TopLevelGroup and the ICollectionViewAdv.Records is in sync.
+N> When applying sorting with grouping, both the ICollectionViewAdv.TopLevelGroup and the ICollectionViewAdv.Records is in sync.
 
 
 

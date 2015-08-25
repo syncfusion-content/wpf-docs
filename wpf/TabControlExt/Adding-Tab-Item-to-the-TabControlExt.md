@@ -217,7 +217,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-> Note: To display the TabItemExt, you must already have the TabControlExt in which you are going to add the TabItemExt.
+N> To display the TabItemExt, you must already have the TabControlExt in which you are going to add the TabItemExt.
 
 
 

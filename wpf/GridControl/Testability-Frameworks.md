@@ -125,7 +125,7 @@ private void InitGrid()
 
 
 
-> Note: Mention the output path as the Console application's bin\Debug directory.
+N> Mention the output path as the Console application's bin\Debug directory.
 
 The following sample code uses TestApi assemblies.
 
@@ -167,7 +167,7 @@ private static AutomationElement GetGridAut(out AutomatedApplication app)
 
 {% endhighlight  %}
 
-> Note: We have added minimal set of Linq-to-UIAutomation classes that would translate the LINQ query for searching the AutomationElement from the root hierarchy. With Linq-To-UIAutomation library, only First method is supported now.
+N> We have added minimal set of Linq-to-UIAutomation classes that would translate the LINQ query for searching the AutomationElement from the root hierarchy. With Linq-To-UIAutomation library, only First method is supported now.
 
 The Grid Automation element is obtained.
 
@@ -256,7 +256,7 @@ Initial steps before creating the Coded UI Test project:
 
 
 
-> Note: The following code appears.
+N> The following code appears.
 {% highlight html %}
 
 
@@ -332,7 +332,7 @@ namespace WpfApplication3
 
 
 5. Build the application to make it ready for testing.
-> Note: The GridControlTestApplication works only with a single Grid instance in the window. For multiple instances the IGridInteropService interface has to be implemented.
+N> The GridControlTestApplication works only with a single Grid instance in the window. For multiple instances the IGridInteropService interface has to be implemented.
 
 Creating Unit Tests with VS2010
 
@@ -410,7 +410,7 @@ The following code illustrates this.
 
 
 
-> Note: The assert window is displayed as below.
+N> The assert window is displayed as below.
 
 
 
@@ -423,7 +423,7 @@ The following code illustrates this.
 
 
 
-> Note: Coded UI Unit Test is created.
+N> Coded UI Unit Test is created.
 
 The following code generates automatically. 
 
@@ -458,7 +458,7 @@ Testing the Application with Generated Coded UI Test
 
 3. Run the test HelloWorld_Test.
 * This will automatically focus the running Grid application and perform automated testing.
->  Note: The sample test procedure mentioned above requires the sample to be run individually, in normal automated testing, this would be included in the TestInitialize method to start the application.
+N> The sample test procedure mentioned above requires the sample to be run individually, in normal automated testing, this would be included in the TestInitialize method to start the application.
 
 
 

@@ -27,7 +27,7 @@ GroupBar Item is added to the GroupBar using XAML or C# code. The following code
 
 
 
-> Note: To display the GroupBar Item, you must have a GroupBar in which you are going to add the GroupBar Item.
+N> To display the GroupBar Item, you must have a GroupBar in which you are going to add the GroupBar Item.
 
 
 

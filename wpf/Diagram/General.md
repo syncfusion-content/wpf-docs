@@ -499,5 +499,5 @@ diagramView.LineConnectorContextMenu = menu1
 
 {% endhighlight %}
 
-> Note: If any node’s context menu is assigned using the ContextMenu property of that node, then it will take precedence over the DiagramView’s NodeContextMenu property. The same applies to Line Connectors.
+N> If any node’s context menu is assigned using the ContextMenu property of that node, then it will take precedence over the DiagramView’s NodeContextMenu property. The same applies to Line Connectors.
 

@@ -134,7 +134,7 @@ The following code example illustrates how to define the GridViewDefinition.
 
 _Data Grid with Master Details View_
 
-> Note: In GridViewDefinition, when you make changes in one child DataGrid, changes are applied to all the child DataGrids at that level. For example, when you resize the first column in the child DataGrid, the same column width is applied to all child DataGrids at that level. This scenario is applicable for features like filetring, sorting, validation and ReOrdering columns. You can use stacked headers also in the Master-Detail View.
+N> In GridViewDefinition, when you make changes in one child DataGrid, changes are applied to all the child DataGrids at that level. For example, when you resize the first column in the child DataGrid, the same column width is applied to all child DataGrids at that level. This scenario is applicable for features like filetring, sorting, validation and ReOrdering columns. You can use stacked headers also in the Master-Detail View.
 
 The following topics explain different methods available to expand or collapse and events to handle during expanding or collapsing. You can use these methods and events to perform your internal operation like stores details view items source or record.
 
@@ -394,7 +394,7 @@ There are some limitations in the Master-DetailsView. Those are:
 * GroupDropArea is not available for details view grid.                  
 
 
-> Note: You can use GroupColumnDescriptions to group the column in Master-Details View.
+N> You can use GroupColumnDescriptions to group the column in Master-Details View.
 
 ## Master-Detail View from DataTable relations
 
@@ -471,7 +471,7 @@ This topic explains step by step procedure to create the Master-Details View by 
 
 
 
-   > Note: Both tables have OrderID as common property to make relation.
+   N> Both tables have OrderID as common property to make relation.
 
    Now, populate data for DataTables.
 
@@ -1136,7 +1136,7 @@ Master–Details DataGrid displays a hierarchical data in a tree format. This to
 			}
 
 
-   > Note: Both parent collection and child collection have key property OrderID.
+   N> Both parent collection and child collection have key property OrderID.
 
 5. Now, load the data for a prepared collection.  Add the following code example in a newly created class file and save it as OrderInfoRepositiory.cs file_._
 

@@ -41,7 +41,7 @@ This is a notification event that is handled once a node has been expanded by th
 </table>
 
 
-> Note: Additionally, you have access to all the Grid control events exposed on the GridTreeControl.InternalGrid.
+N> Additionally, you have access to all the Grid control events exposed on the GridTreeControl.InternalGrid.
 
 
 

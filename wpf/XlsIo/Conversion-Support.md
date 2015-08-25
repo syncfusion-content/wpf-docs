@@ -15,7 +15,7 @@ Essential XlsIO supports converting workbook and worksheets into a Pdf document,
 
 Essential XlsIO allows exporting an Excel document into PDF format. Use the Convert method of the ExcelToPdfConverter class to convert the Excel spreadsheet and save the PDF output. 
 
-> Note: You need to have both Essential PDF and Essential XlsIO installed in your system since Syncfusion.ExceltoPDFConverter.Base.dll is conditionally shipped when both XlsIO.Base and Pdf.Base is installed.
+N> You need to have both Essential PDF and Essential XlsIO installed in your system since Syncfusion.ExceltoPDFConverter.Base.dll is conditionally shipped when both XlsIO.Base and Pdf.Base is installed.
 
 
 
@@ -202,7 +202,7 @@ The other language and unicode present in the input Excel document is preserved 
 
 The Background image present in the Excel document is preserved in the generated PDF document.
 
-> Note: The image gets tiled based on the size of the output pdf document.
+N> The image gets tiled based on the size of the output pdf document.
 
 ###Comments
 
@@ -238,7 +238,7 @@ The Print order enabled in the Excel document is considered while laying out the
 
 
 
-> Note: It considers the Print Area and Page breaks while laying out, based on Print Order.
+N> It considers the Print Area and Page breaks while laying out, based on Print Order.
 
 ###Print Area Support
 
@@ -384,7 +384,7 @@ Essential XlsIO can convert a worksheet based on the input range of the rows and
 * Gradient fill is partially supported
 ## Convert Chart to Image 
 
-> Note:
+N>
 
 * This section is applicable only to the Windows Forms and WPF platforms of XlsIO.
 * For Windows Forms platform, you must add additional references to the following DLLs: PresentationFramework.dll and PresentationCore.dll.

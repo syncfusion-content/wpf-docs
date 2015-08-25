@@ -599,7 +599,7 @@ node.Loaded += new RoutedEventHandler(node_Loaded);
 
 {% endhighlight %}
 
-> Note: Node’s Template will be available only after its template is applied, so if you try to do these operations before it will not give an expected result.
+N> Node’s Template will be available only after its template is applied, so if you try to do these operations before it will not give an expected result.
 
 ## Hide the Default Center Port of a Node
 
@@ -655,7 +655,7 @@ node.Loaded += new RoutedEventHandler(node_Loaded);
 {% endhighlight  %}
 
 
-> Note: node.Ports[0] refers to the center port. This default center port will be available only after the Node’s Template is applied. So you have to change the Visibility accordingly.
+N> node.Ports[0] refers to the center port. This default center port will be available only after the Node’s Template is applied. So you have to change the Visibility accordingly.
 
 ## Programmatically Rotate a Node and Keep the Label Horizontal after Rotating
 

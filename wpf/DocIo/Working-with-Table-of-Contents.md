@@ -100,7 +100,7 @@ Gets or sets a value indicating whether the table is built from TC fields. When 
 </table>
 
 
-> Note: DocIO cannot create Outline levels. However, by turning on the UseOutlineLevels property, you can create TOC from existing outline levels.
+N> DocIO cannot create Outline levels. However, by turning on the UseOutlineLevels property, you can create TOC from existing outline levels.
 
 
 
@@ -145,7 +145,7 @@ UpdatingTableOfContents method of WordDocument class updates table of contents f
 
 
 
-> Note: UpdatingTableOfContents is not supported in Silverlight, WinRT, or Windows Phone applications.
+N> UpdatingTableOfContents is not supported in Silverlight, WinRT, or Windows Phone applications.
 
 ### Known Limitations
 

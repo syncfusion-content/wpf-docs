@@ -242,7 +242,7 @@ _Column wise Summary values_
 
 In the above screenshot, summary values are showed at the bottom of corresponding column that are mapped to the GridSummaryColumn.
 
-> Note: Summary values are displayed based on the GridSummaryColumn.Format value, when the summaries are displayed in column wise.
+N> Summary values are displayed based on the GridSummaryColumn.Format value, when the summaries are displayed in column wise.
 
 ### Show the summaries in row
 
@@ -386,7 +386,7 @@ In the above screenshot, summary values are showed in row because GridSummaryRow
 
 When the summary values are showed in row, summary values are displayed in the format that is defined in GridSummaryRow.Title.
 
-> Note: Default value of GridSummaryRow.ShowSummaryInRow is true.
+N> Default value of GridSummaryRow.ShowSummaryInRow is true.
 
 ## Group Summaries
 
@@ -818,7 +818,7 @@ return ret;
 {% endhighlight %}
 
 
-> Note: When you use Title for GridSummaryRow; you need to concentrate on name of GridSummaryColumn. The name that you used in GridSummaryColumn and Title should match.
+N> When you use Title for GridSummaryRow; you need to concentrate on name of GridSummaryColumn. The name that you used in GridSummaryColumn and Title should match.
 
 ## How To
 

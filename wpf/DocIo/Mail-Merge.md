@@ -425,7 +425,7 @@ string customerID;
 
 In the above example, the customers property in EmployeeDetails has customers related to the particular employee. It does not require any common property employeeID in EmployeeDetails and CustomerDetails. Also it does not require relational commands to relate the EmployeeDetails and CustomerDetails.
 
-> Note:
+N>
 
 > Nested mail merge for a region works when the group start and end is BeginGroup and EndGroup respectively.
 

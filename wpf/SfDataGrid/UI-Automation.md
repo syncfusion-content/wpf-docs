@@ -63,7 +63,7 @@ For Visual Studio 2012: C:\Program Files (x86)\Common Files\Microsoft Shared\VST
 
 For Visual Studio 2013: C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\12.0\UITestExtensionPackages
 
-> Note: Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll need to be installed in GAC location. Please refer the MSDN link for_ [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) _installation.
+N> Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll need to be installed in GAC location. Please refer the MSDN link for_ [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) _installation.
 
 ### Getting Started
 
@@ -312,7 +312,7 @@ Syncfusion provides Essential QTP that contains custom libraries, that help reco
 
 SfDataPager and SfMultiColumnDropDownControl supports QTP Test automation.
 
-> Note: It also support for UFT (QTP latest version).
+N> It also support for UFT (QTP latest version).
 
 ### Installation and Configuration
 
@@ -332,7 +332,7 @@ The following procedure illustrates how to install Essential Test Studio:
 
 Double-click the Syncfusion Essential Test Studio__Setup file. 
 
-> Note: Setup - Syncfusion Essential QuickTest Professional dialog box opens.
+N> Setup - Syncfusion Essential QuickTest Professional dialog box opens.
 
 ![](Features_images/Features_img231.png)
 
@@ -354,7 +354,7 @@ Enter the User Name, Organization and Unlock Key in the corresponding text boxes
 
 Click Next. 
 
-> Note: The unlock key is validated.
+N> The unlock key is validated.
 
 Select the installation folder dialog box opens. 
 
@@ -368,7 +368,7 @@ _Select the installation folder_
 
 To install in the default location, click Next. 
 
-> Note: You can also browse to choose a location by clicking Browse.
+N> You can also browse to choose a location by clicking Browse.
 
 Installation type dialog box opens.
 
@@ -406,11 +406,7 @@ When your system does not contain Syncfusion.CNG , SyncfusionTestObjetcs.XML and
 
 * C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\
  
->Note: By Default QTP supports higher Framework version installed in your machine. When you want to make use of SfDataGrid in a lower framework version, you need to copy and paste the SfGridQTP.WPF DLL in preferred locations.
-
->DLL Copy Location: C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\
-
->DLL Paste Location: C:\Program Files\HP\QuickTestProfessional\data\Extensibility\WPF\Syncfusion
+N> By Default QTP supports higher Framework version installed in your machine. When you want to make use of SfDataGrid in a lower framework version, you need to copy and paste the SfGridQTP.WPF DLL in preferred locations. DLL Copy Location: C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\ DLL Paste Location: C:\Program Files\HP\QuickTestProfessional\data\Extensibility\WPF\Syncfusion
 
  
 
@@ -435,7 +431,7 @@ The following is a list of chapters containing information that guide you throug
 
 1. Open QTP by double-clicking the QuickTest Professional icon. 
  
-   > Note: The QuickTest Professional – Add-in Manager window is displayed.
+   N> The QuickTest Professional – Add-in Manager window is displayed.
 
 
 
@@ -451,7 +447,7 @@ The following is a list of chapters containing information that guide you throug
 
 3. Click OK. 
  
-   > Note: The QuickTest Professional – [Start Page] window opens. There are two tabs namely Start Page and Test in the main pane of the window. The content under the Start Page tab is displayed by default.
+   N> The QuickTest Professional – [Start Page] window opens. There are two tabs namely Start Page and Test in the main pane of the window. The content under the Start Page tab is displayed by default.
 
 
 
@@ -472,7 +468,7 @@ The following is a list of chapters containing information that guide you throug
    _Quick Test Professional – [Start Page] showing New Test icon_
 
 5. A new test is created. 
-   > Note: You can also create a new test by selecting the Test tab in the main pane of the window or Test sub-menu under the New menu in the menu bar.
+   N> You can also create a new test by selecting the Test tab in the main pane of the window or Test sub-menu under the New menu in the menu bar.
 
 
 
@@ -486,7 +482,7 @@ The following is a list of chapters containing information that guide you throug
 
    _Quick Test Professional – [Test] Window showing Record tool_
 
-   >Note: Record and Run Settings dialog box opens.
+   N> Record and Run Settings dialog box opens.
 
    ![](Features_images/Features_img240.png)
 
@@ -516,7 +512,7 @@ The following is a list of chapters containing information that guide you throug
 
 
 
-   > _Note:The Application Details dialog box opens._
+   N>The Application Details dialog box opens._
 
 
 
@@ -536,13 +532,13 @@ The following is a list of chapters containing information that guide you throug
 
 
 
-    > Note:Both Launch application and Include descendant processes check boxes are selected by default
+    N>Both Launch application and Include descendant processes check boxes are selected by default
 
 
 
 14. Click OK. 
  
-    > Note: The path of the application and working folder are displayed in the Application details frame as shown in the following screenshot.
+    N> The path of the application and working folder are displayed in the Application details frame as shown in the following screenshot.
 
 
 
@@ -553,7 +549,7 @@ The following is a list of chapters containing information that guide you throug
 
 15. Click OK. 
  
-    >Note: The recording starts. The application in the given path is opened as shown in the following screenshot.
+    N> The recording starts. The application in the given path is opened as shown in the following screenshot.
 
 
 
@@ -569,7 +565,7 @@ The following is a list of chapters containing information that guide you throug
 On recording, all the user actions performed in the control are just noted with the corresponding method names of the Syncfusion namespace. The errors can be checked while running a test. To run a test: 
 
 1. Click Run in the toolbar. 
->  Note: Run dialog box opens. The Results Location tab is selected by default.
+N> Run dialog box opens. The Results Location tab is selected by default.
 
 
 
@@ -628,7 +624,7 @@ _Save Test Dialog_
 The tests that have been saved can be replayed later. For running such tests:
 
 1. Click Open on the toolbar. 
-> Note: The Open Test dialog box opens with a list of saved tests.
+N> The Open Test dialog box opens with a list of saved tests.
 
 
 
@@ -643,7 +639,7 @@ The tests that have been saved can be replayed later. For running such tests:
 
 
 
-> Note: The saved test is opened with its name and the complete path as the name of the window. By default, Expert View of the Test is opened.
+N> The saved test is opened with its name and the complete path as the name of the window. By default, Expert View of the Test is opened.
 
 ### Tables for Properties and Methods
 

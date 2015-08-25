@@ -538,7 +538,7 @@ diagramModel.Nodes.Add(n)
 
 NewGuid() creates a new instance of the Guid class. The string value sets the identifying name of the element. The name provides a reference so that the code-behind, such as event handler code, can refer to a markup element after it is constructed during processing by an XAML processor.
 
-> Note: If name is not specified for a node, a unique name will be automatically assigned to the node.
+N> If name is not specified for a node, a unique name will be automatically assigned to the node.
 
 ## Node Shapes
 
@@ -758,7 +758,7 @@ _CustomNode_
 
 Node is used to visually represent any UIElements using Content property. You can host any content inside the node using the Content property. Node supports control template too, by defined template for the nodes, business object can be assigned as Node’s Content and the template will look after how to present the business object. 
 
-> Note: A Node can have both Content and Shape at the same time, doing so Content will be placed over the Shape.
+N> A Node can have both Content and Shape at the same time, doing so Content will be placed over the Shape.
 
 _Property Table_
 
@@ -1060,7 +1060,7 @@ No</td></tr>
 </table>
 
 
-> Note: There are two more properties called LogicalOffsetX and LogicalOffsetY which is used only for internal calculations and they do not support negative values,.So use only OffsetX and OffsetY property.
+N> There are two more properties called LogicalOffsetX and LogicalOffsetY which is used only for internal calculations and they do not support negative values,.So use only OffsetX and OffsetY property.
 
 
 
@@ -1121,7 +1121,7 @@ diagramModel.Nodes.Add(n)
 {% endhighlight  %}
 The node will be placed at the point: 50, 50.
 
-> Note: To dynamically change the position of the node, specify the offset values and call the InvalidateMeasure() of the DiagramPage as follows:
+N> To dynamically change the position of the node, specify the offset values and call the InvalidateMeasure() of the DiagramPage as follows:
 
 
 {% highlight c#  %}
@@ -2266,7 +2266,7 @@ Multiple selection can be performed by following the below mentioned steps.
 * Nodes connected to one or more nodes are selected only if one of the connected nodes is also within the drag adorner bounds. The nodes and the connector connecting them act as a single selection.
 
 
-> Note: Resizing or moving any one item affects the other items by the same factor. However, rotating affects only the current node.
+N> Resizing or moving any one item affects the other items by the same factor. However, rotating affects only the current node.
 
 Items can be deselected by clicking on any part of the drawing area other than the selected items.
 

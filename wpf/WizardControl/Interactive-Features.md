@@ -486,7 +486,7 @@ wizardControl.FinishText = "Finish";
 ![](Interactive-Features_images/Interactive-Features_img9.jpeg)
 
 
-> Note: You can set custom text for the navigation buttons in the wizard control only. You cannot set custom text for the navigation buttons in the wizard page.
+N> You can set custom text for the navigation buttons in the wizard control only. You cannot set custom text for the navigation buttons in the wizard page.
 
 
 

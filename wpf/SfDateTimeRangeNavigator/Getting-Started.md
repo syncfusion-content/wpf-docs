@@ -244,7 +244,7 @@ public class UsersViewModel
 
 Define the ItemsSource for the Range Navigator as shown in the following code example.
 
-> Note: You can set any IEnumerable collection as an ItemsSource.
+N> You can set any IEnumerable collection as an ItemsSource.
 
 {% highlight c# %}
 
@@ -307,7 +307,7 @@ The following output is displayed as a result of the above code example.
 
 
 
-> Note:The SelectedData property of SfDateTimeRangeNavigator returns the collection that represents the data between selected ranges in the Navigator.
+N>The SelectedData property of SfDateTimeRangeNavigator returns the collection that represents the data between selected ranges in the Navigator.
 
 
 

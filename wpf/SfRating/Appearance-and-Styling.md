@@ -292,7 +292,7 @@ UnratedStrokeThickness sets the stroke thickness for the unrated area with the s
 
 
 
-> Note: The above properties are available in RatingItem. To set this property, use the ItemContainerStyle property of Rating.
+N> The above properties are available in RatingItem. To set this property, use the ItemContainerStyle property of Rating.
 
 
 

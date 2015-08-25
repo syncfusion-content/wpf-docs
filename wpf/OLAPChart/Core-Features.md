@@ -50,7 +50,7 @@ The steps to add a chart header are as follows:
 
    
 
-> Note: The series will be available only after the data is bound to the control. In other words, you can access the series property of the OlapChart only after the call to DataBind() is made.
+N> The series will be available only after the data is bound to the control. In other words, you can access the series property of the OlapChart only after the call to DataBind() is made.
 
 See also
 
@@ -499,7 +499,7 @@ Me.olapchart1.Series(0).StrokeThickness = 4
 
 
 
-> Note: The behaviour of the series border will vary for different chart types. The following illustration describes them in detail.
+N> The behaviour of the series border will vary for different chart types. The following illustration describes them in detail.
 
 The series border is applied for the first series of a Column chart by using the StrokeThickness property. Notice that the first series element is surrounded with the applied border.
 
@@ -938,7 +938,7 @@ Me.olapChart.Series(0).Area.SecondaryAxis.SetValue(
 
 
 
-> Note: For bar type charts, such as Bar, Stacking bar, and Stacking100 Bar you can disable the horizontal grid lines by using the ShowGridLinesProperty of the PrimaryAxis.
+N> For bar type charts, such as Bar, Stacking bar, and Stacking100 Bar you can disable the horizontal grid lines by using the ShowGridLinesProperty of the PrimaryAxis.
 
 ### How to disable vertical grid lines?
 
@@ -978,7 +978,7 @@ Me.olapChart.Series(0).Area.PrimaryAxis.SetValue(
 
 
 
-> Note: For bar type charts, such as Bar, Stacking bar, and Stacking100 Bar you can disable the vertical grid lines by using the ShowGridLinesProperty of the SecondaryAxis.
+N> For bar type charts, such as Bar, Stacking bar, and Stacking100 Bar you can disable the vertical grid lines by using the ShowGridLinesProperty of the SecondaryAxis.
 
 ### How to display % in secondary axis?
 
@@ -1435,7 +1435,7 @@ Me.olapChart.Legend.ColumnsCount = 2
 
 
 
-> Note: The RowsCount and the ColumnsCount is used to create the rows and the columns in the Grid layout control, which is used to place the legends. If you give extra row or column count than the legend availability then it will display empty spaces to fill the structure of the grid. The following illustration explains this in detail.
+N> The RowsCount and the ColumnsCount is used to create the rows and the columns in the Grid layout control, which is used to place the legends. If you give extra row or column count than the legend availability then it will display empty spaces to fill the structure of the grid. The following illustration explains this in detail.
 
 The following chart has only one legend, but we have set RowsCount = 2 and ColumnsCount = 2. Therefore, the resultant legend will appear as follows: 
 
@@ -1479,7 +1479,7 @@ The default chart type is Column chart. The following illustration shows a colum
 ![](Core-Features_images/Core-Features_img16.png)
 
 
-> Note: The ChartType must be set before invoking the DataBind() method. Whenever you change the ChartType, you need to call the DataBind() method to reflect the changes.
+N> The ChartType must be set before invoking the DataBind() method. Whenever you change the ChartType, you need to call the DataBind() method to reflect the changes.
 
 ### How to create a simple column chart?
 
@@ -2412,7 +2412,7 @@ olapChart.ChartType = ChartTypes.Pie
  {% endhighlight %}
 
 
-> Note: Pie chart should not be used for Comparison analysis of large data points, because it is harder for people to estimate angles rather than distance.
+N> Pie chart should not be used for Comparison analysis of large data points, because it is harder for people to estimate angles rather than distance.
 
 A sample, which demonstrates the Pie chart, can be found in the following installation location:
 
@@ -2814,7 +2814,7 @@ The following image shows an OlapChart with expanders disabled:
 ![](Core-Features_images/Core-Features_img37.png)
 
 
-> Note: Since this property interacts with the OlapDataManager you need to assign this property before the call to DataBind() or DataBind() method in the OlapChart and should be invoked after changing this property to see this in effect.
+N> Since this property interacts with the OlapDataManager you need to assign this property before the call to DataBind() or DataBind() method in the OlapChart and should be invoked after changing this property to see this in effect.
 
 ## KPI
 

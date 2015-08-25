@@ -947,7 +947,7 @@ The following steps explain how to create a report during design-time
 
 
 
-   >  Note: The Next button is enabled only when any one of the connection option is filled properly.
+   N> The Next button is enabled only when any one of the connection option is filled properly.
 
 10. When the connection is valid. It displays the summary page of the Data Source Properties Wizard.
 
@@ -963,7 +963,7 @@ The following steps explain how to create a report during design-time
 
 
 13. When you edit an existing query, it displays the required dimensions in the specific axis of the query designer and the preview of that query is displayed in a Chart control.
-    > Note: It does not display any style/formatting applied to the chart. It only displays the result of the query.
+    N> It does not display any style/formatting applied to the chart. It only displays the result of the query.
 
 14. Drag and drop dimensions, to frame a new query. 
 

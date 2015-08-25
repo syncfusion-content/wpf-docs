@@ -23,7 +23,7 @@ Multiline support can be enabled by using the following code:
 
 _ButtonAdv control without MultiLine_
 
-> Note: This property is applicable only for Large Size Mode Buttons.
+N> This property is applicable only for Large Size Mode Buttons.
 
 
 

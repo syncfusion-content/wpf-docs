@@ -108,7 +108,7 @@ Code 128 is a variable length, high density, alphanumeric, linear bar code symbo
 
 The last seven characters of Code Sets A and B (character values 96 - 102) and the last three characters of Code Set C (character values 100 - 102) are special non-data characters with no ASCII character equivalents, which have particular significance to the bar code reading device.
 
-> Note: When you specify that the data must be encoded by using Char Set C, then the number of characters after it must be even.
+N> When you specify that the data must be encoded by using Char Set C, then the number of characters after it must be even.
 
 
 
@@ -128,7 +128,7 @@ The following code example shows how to create a code39 barcode from XAML:
 
 {% endhighlight  %}
 
-> Note: When a barcode control is shown empty, it means that an invalid or supported character is given as input. In such cases, we recommend the user to validate the input text for that specific barcode.
+N> When a barcode control is shown empty, it means that an invalid or supported character is given as input. In such cases, we recommend the user to validate the input text for that specific barcode.
 
 ## 2D Bar codes
 
@@ -149,7 +149,7 @@ _QR bar code encoding the URL "http://www.syncfusion.com"_
 
 DataMatrix bar codes are widely used in printed media such as labels and letters. It can be read easily by a bar code reader and also by mobile phones. It is a two dimensional barcode that consists of a grid of dark and light dots or blocks forming square or rectangular symbol. The data encoded in the barcode can either be number or alphanumeric.
 
-> Note: By default, the width of the quiet zone on all four sides of the barcode is equal to the dimension of the blocks.
+N> By default, the width of the quiet zone on all four sides of the barcode is equal to the dimension of the blocks.
 
 
 

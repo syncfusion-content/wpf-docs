@@ -173,7 +173,7 @@ SkinStorage.SetVisualStyle(this, "Default");this.ResizeBorderBrush = new SolidCo
 
 {% endhighlight  %}
 
-> Note: The other built-in styles will not reflect any changes with the above property settings. 
+N> The other built-in styles will not reflect any changes with the above property settings. 
 
 
 

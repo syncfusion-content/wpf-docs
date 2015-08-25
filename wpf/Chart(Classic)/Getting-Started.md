@@ -128,7 +128,7 @@ Users can create a simple chart application with Syncfusion WPF Chart control wi
 
 
 
-   > _Note: The chart area legend can also be added in the chart area by setting the ShowLegend property of ChartArea as True._
+   N> The chart area legend can also be added in the chart area by setting the ShowLegend property of ChartArea as True._
 
    ![C:/Users/johnbowlinboscok/Desktop/UG Images/New folder/ShowLegend_HL.png](Getting-Started_images/Getting-Started_img11.png)
 
@@ -400,7 +400,7 @@ To create a data-binding application for Chart control:
 
 
 
-   > Note: Y mapping property should be a double compatible type, and x mapping property can be double string, DateTime, TimeSpan, and etc.
+   N> Y mapping property should be a double compatible type, and x mapping property can be double string, DateTime, TimeSpan, and etc.
 
 
 

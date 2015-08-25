@@ -694,7 +694,7 @@ chart.ChartTitleArea.Bold = true;
 
 The chart type is specified with the help of ChartType property of IOfficeChart interface. 
 
-> _Note: 3D charts are not supported in image & PDF conversion._
+N> 3D charts are not supported in image & PDF conversion._
 
  {% highlight c# %}
  

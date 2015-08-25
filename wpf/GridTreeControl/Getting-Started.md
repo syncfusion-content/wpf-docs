@@ -772,7 +772,7 @@ The following steps explain how to bind a data view from a database to the GridT
 
 
 
-   > Note: Before using this procedure, check that System.data.SqlServerCe.dll has been added to your project.
+   N> Before using this procedure, check that System.data.SqlServerCe.dll has been added to your project.
 
   
 

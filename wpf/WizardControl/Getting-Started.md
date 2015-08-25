@@ -48,7 +48,7 @@ grid.Children.Add(wizardControl);
 {% endhighlight %}
 
 
-> Note: For creating Wizard control using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed.
+N> For creating Wizard control using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed.
 
  
 

@@ -131,7 +131,7 @@ The following screenshot illustrates a chart with a simple legend.
 
 ####CheckBox- It is used to show or collapse the associated series. By default, the CheckBox is collapsed. You can enable it by setting CheckBoxVisibility property in ChartLegend.
 
-> Note: Usually, a legend item provides information about a series. However, for series like PieSeries, each legend item provides information about a single data point.
+N> Usually, a legend item provides information about a series. However, for series like PieSeries, each legend item provides information about a single data point.
 
 ###Positioning
 
@@ -299,7 +299,7 @@ The following screenshot shows a chart with multiple legends.
 
 
 
-> Note: You can change the legend visibility from chart series by using VisibilityOnLegend property
+N> You can change the legend visibility from chart series by using VisibilityOnLegend property
 
 
 

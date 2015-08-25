@@ -22,7 +22,7 @@ A bound column displays information from a bound data source, which is specified
 
 An unbound column does not obtain data from the ItemSource or from the RequestTreeItems event. Instead, you can provide data for unbound columns by creating expressions using the GridTreeUnboundColumn.Expression property, or by creating formatsusing the GridTreeUnboundColumn.Format property, or by handling the QueryUnboundColumnValue event.
 
-> Note: In Unbound columns, you can have the features that are available in the bound columns such as cell type, sorting, and customization.
+N> In Unbound columns, you can have the features that are available in the bound columns such as cell type, sorting, and customization.
 
 ## Bound Columns
 
@@ -338,7 +338,7 @@ _GridTree Static CellType_
 
 The TextBlock cell type allows you to display the values in the cells and also to edit the cells. When you need to display a read only content then you can choose TextBlock cell type.
 
-> Note: The difference between the Static and TextBlock cell type is that the Static cell type draws the cell but the TextBlock cell type loads the cell with TextBlock.
+N> The difference between the Static and TextBlock cell type is that the Static cell type draws the cell but the TextBlock cell type loads the cell with TextBlock.
 
 The following is an example of how to define such a column.
 

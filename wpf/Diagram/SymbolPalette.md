@@ -600,7 +600,7 @@ Run the application. The following output is displayed and the groups and filter
 
 _Palette with Groups and Filters removed_
 
-> Note: Whenever a filter is removed the group containing the next filter index must be decremented by one to get the proper output as mentioned in the above code snippet.
+N> Whenever a filter is removed the group containing the next filter index must be decremented by one to get the proper output as mentioned in the above code snippet.
 
 b) Removing all the groups from the palette
 
@@ -849,7 +849,7 @@ Or you can also place the assembly manually in the following location:
 
 _{$Microsoft Expression]\Blend 4\Extensions_
 
-> Note: currently exporter support is available only for the Blend 4  stable release(4.0.20525.0) and Blend 4 service packs 1 (version 4.0.20901.0).
+N> currently exporter support is available only for the Blend 4  stable release(4.0.20525.0) and Blend 4 service packs 1 (version 4.0.20901.0).
 
 To Create SymbolPaletteItem Content  
 
@@ -881,13 +881,13 @@ To Create SymbolPaletteItem Content
 
 8. Select the part of the element, which you want to export as symbol content. You can also select this from the Object and Timeline. 
 
-   > Note: The selected part will act as the parent element, name the element as desired.
+   N> The selected part will act as the parent element, name the element as desired.
 
 9. Specify the Name property for parent element.
    <table>
    <tr>
    <td>
-   <br> Note: This name property is required for serialization. So this property cannot be set to null.</td></tr>
+   <brN> This name property is required for serialization. So this property cannot be set to null.</td></tr>
    <tr>
    <td>
 10. Click Window option in the blend menu.11. Select the Syncfusion Symbol Exporter add-on. 12. A popup window will be displayed. You can dock this within the blend as shown in following screenshot:</td></tr>
@@ -1776,4 +1776,4 @@ public string Content { get; set; }
 
 _Symbol palette ItemSource_
 
-> Note: Symbol groups are not allowed to be added manually when ItemSource is used.
+N> Symbol groups are not allowed to be added manually when ItemSource is used.

@@ -27,7 +27,7 @@ The following steps illustrate how to add a bookmark in Word:
 
 
 
-> Note: Bookmark names must begin with a letter and can contain numbers. You cannot include spaces in a bookmark name. However, you can use the underscore character to separate words.
+N> Bookmark names must begin with a letter and can contain numbers. You cannot include spaces in a bookmark name. However, you can use the underscore character to separate words.
 
 
 
@@ -105,7 +105,7 @@ Gets the owner paragraph of bookmark.</td></tr>
 
 DocIO provides support to navigate to bookmarks. For details, see BookmarkNavigator.
 
-> Note: Modification of bookmarks in the Bookmarks Collection causes document corruption.
+N> Modification of bookmarks in the Bookmarks Collection causes document corruption.
 
 The following code example illustrates how to use bookmarks.
 
@@ -224,7 +224,6 @@ InsertTextBodyPart</td><td>
 Inserts the body part of the text.</td></tr>
 </table>
 
-> Note:
 
 > * Due to MS Word’s behavior, you cannot replace the Multi Section bookmark content into table bookmark.
 > * Use for loop when replacing all the bookmarks in a document instead of foreach loop to avoid “collection modified exception”, as the Bookmarks collection is modified internally by preserving bookmark position once after replacing.
@@ -288,7 +287,7 @@ You can also preserve the formatting in the template (target) document while ins
 
 WordDocumentPart class contains the collection of sections. WordDocumentPart is usually used with the Bookmark Navigator.
 
-> Note: WordDocumentPart contains the copy of sections from the documents. When you modify the content of the WordDocumentPart, it does not affect the objects inside the document.
+N> WordDocumentPart contains the copy of sections from the documents. When you modify the content of the WordDocumentPart, it does not affect the objects inside the document.
 
 
 

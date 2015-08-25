@@ -791,7 +791,7 @@ period is the period for which, you want to calculate the depreciation. Period 
 
 factor is the rate at which, the balance declines. If factor is omitted, it is assumed to be 2 (the double-declining balance method).
 
-> Note: All five arguments must be positive numbers.
+N> All five arguments must be positive numbers.
 
 ### Remarks
 

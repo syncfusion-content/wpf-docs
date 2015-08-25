@@ -38,7 +38,7 @@ upDown.NullValue = 2;
 
 Tables for Properties and Events
 
-> NullValue properties
+NullValue properties
 
 <table>
 <tr>
@@ -64,7 +64,7 @@ double?</td><td>
 Not applicable</td></tr>
 </table>
 
-> NullValue Event Table	
+NullValue Event Table	
 
 <table>
 <tr>

@@ -18,9 +18,7 @@ Following code illustrates how to set ToolBarAdv to floating state:
 
 
 
-<shared:ToolBarManager x:Name="toolBarManager" 
-
->
+<shared:ToolBarManager x:Name="toolBarManager" >
 
 
 

@@ -335,7 +335,7 @@ Template can be applied according to the logic set by the user using Template Se
 
 The following code illustrates this.
 
-> Note:Data Template has been written for North America Statistics data
+N>Data Template has been written for North America Statistics data
 
 {% highlight xml %}
 
@@ -355,7 +355,7 @@ The following code illustrates this.
 
 {% endhighlight %}
 
-> Note: Data Template has been written for South America Statistics data.
+N> Data Template has been written for South America Statistics data.
 
 {% highlight xml %}
 
@@ -377,7 +377,7 @@ The following code illustrates this.
 {% endhighlight %}
 
 
-> Note: Data Template has been written for Other Statistics data.
+N> Data Template has been written for Other Statistics data.
 
 {% highlight xml %}
 
@@ -397,7 +397,7 @@ The following code illustrates this.
 
 {% endhighlight %}
 
-> Note: Following is the data template selector logic set by the user.
+N> Following is the data template selector logic set by the user.
 
 {% highlight xml %}
 
@@ -449,7 +449,7 @@ The following code illustrates this.
 {% endhighlight %}
 
 
-> Note: The ContentTemplate Selector can be applied as follows.
+N> The ContentTemplate Selector can be applied as follows.
 
 {% highlight xml %}
 
@@ -524,7 +524,7 @@ private void gBar_ContextMenuItemClick(object sender, GroupBarContextMenuItemEve
 }
 {% endhighlight %}
 
-> Note: Set the Handled property of GroupBarContextMenuItemEventArgs to true to avoid the in-built logic to execute.
+N> Set the Handled property of GroupBarContextMenuItemEventArgs to true to avoid the in-built logic to execute.
 
 
 

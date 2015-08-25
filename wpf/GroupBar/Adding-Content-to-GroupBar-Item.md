@@ -96,7 +96,7 @@ You can add content to the GroupBar Item using a Panel as follows. This is achie
 
 
 
-> Note: To display the GroupView Item, you must already have a GroupView control in which you are going to add the GroupView Item.
+N> To display the GroupView Item, you must already have a GroupView control in which you are going to add the GroupView Item.
 
 
 

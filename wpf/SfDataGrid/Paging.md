@@ -99,7 +99,7 @@ The OnDemandLoading event is triggered when the pager moves to the corresponding
 
 
 
-> Note: In OnDemand paging, you cannot assign a value for the Source property in SfDataPager.
+N> In OnDemand paging, you cannot assign a value for the Source property in SfDataPager.
 
 The following code example illustrates defining DataPager for OnDemandPaging:
 

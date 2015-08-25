@@ -157,7 +157,7 @@ The map can be panned with the Pan method in the Maps control. The Pan method ha
 
 The map can be panned by dragging the map through mouse interactions. This works automatically for touch events.
 
-> Note: The map can be panned only when some parts of the map are outside the view of the control.
+N> The map can be panned only when some parts of the map are outside the view of the control.
 
 ![](Zooming-and-Panning_images/Zooming-and-Panning_img2.png)
 

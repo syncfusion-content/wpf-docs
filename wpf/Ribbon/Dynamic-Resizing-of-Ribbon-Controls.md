@@ -58,7 +58,7 @@ Large size form buttons changed to small size form buttons when resized.
 ![](Dynamic-Resizing-of-Ribbon-Controls_images/Dynamic-Resizing-of-Ribbon-Controls_img3.jpeg)
 
 
-> Note: Size form changed on further resizing of window.
+N> Size form changed on further resizing of window.
 
 
 

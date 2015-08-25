@@ -25,7 +25,7 @@ The following are the types of formattings supported by DocIO.
 
 
 
-> Note: DocIO currently does not support table styles.
+N> DocIO currently does not support table styles.
 
 
 
@@ -35,7 +35,7 @@ DocIO allows you to create your own paragraph style and list styles (user-define
 
 
 
-> Note: In a Word document style hierarchy, “Normal” is the base style and is the default style for paragraphs and tables, if the user has not specified style definition.
+N> In a Word document style hierarchy, “Normal” is the base style and is the default style for paragraphs and tables, if the user has not specified style definition.
 
 
 
@@ -147,7 +147,7 @@ Dim style1 As IStyle = coll(0)
 
 This sections elaborates how to deal with the Character Styles. The class CharacterStyle takes resposibilty for handling the character styles. 
 
-> Note: DocIO does not provide support to add user-defined character styles to the document
+N> DocIO does not provide support to add user-defined character styles to the document
 
 Class Hierarchy
 

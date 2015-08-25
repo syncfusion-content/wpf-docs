@@ -115,7 +115,7 @@ No</td></tr>
 
 You can set the horizontal and the vertical distance between the nodes in a tree layout using the HorizontalSpacing and VerticalSpacing properties. The spaces between sub-trees are specified using the SpaceBetweenSubTrees property.
 
-> Note: In case of Table layout, only the HorizontalSpacing and VerticalSpacing properties should be specified. 
+N> In case of Table layout, only the HorizontalSpacing and VerticalSpacing properties should be specified. 
 
 The following code illustrates these settings.
 
@@ -591,7 +591,7 @@ No</td></tr>
 
 To specify a cyclic path is as giving input to the Hierarchical-Tree layout. EnableCycleDetection property must be set to ‘True’. Enabling this property checks for cycles and makes connections accordingly.
 
-> Note: The EnableCycleDetection property takes effect only for the Hierarchical-Tree layout type of the Diagram Model.
+N> The EnableCycleDetection property takes effect only for the Hierarchical-Tree layout type of the Diagram Model.
 
 The following code example illustrates how to set the EnableCycleDetection property.
 
@@ -680,7 +680,7 @@ The following screenshot illustrates Cyclic Paths in the Hierarchical-Tree layou
 
 _Cyclic Paths In Hierarchical-Tree Layout_
 
-> Note: If a cyclic path is specified as input when the EnableCycleDetection property is set to False, then a stack overflow exception is thrown as the loop goes on forever.
+N> If a cyclic path is specified as input when the EnableCycleDetection property is set to False, then a stack overflow exception is thrown as the loop goes on forever.
 
 ### Advantages
 

@@ -149,7 +149,7 @@ Dim workbook As IWorkbook = application.Workbooks.Create(2)
 
 {% endhighlight %}
 
-> See Workbook and Worksheet for more details.
+N> See Workbook and Worksheet for more details.
 
 5. Access a worksheet in the workbook and set data for the given range, say "A1".
 
@@ -234,7 +234,7 @@ workbook.Close()
 {% endhighlight %}
 
 
-> To know more about saving the workbook, see Save.
+N> To know more about saving the workbook, see Save.
 
 7. Dispose the Excel engine. Note that the engine should be disposed after completing workbook operations.
 

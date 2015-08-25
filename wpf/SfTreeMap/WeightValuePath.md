@@ -34,7 +34,7 @@ The WeightValuePath ofSfTreeMap is a path to a field on the source object, which
 
 
 
-> Note: The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection.
+N> The specified field must be available in each and every sub class (object) defined in hierarchical (nested) data collection.
 
 ![](WeightValuePath_images/WeightValuePath_img1.png)
 

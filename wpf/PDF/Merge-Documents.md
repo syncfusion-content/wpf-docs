@@ -237,7 +237,7 @@ document2.Close(True)
 
 Merging multiple large PDF documents can lead to high memory usage. To optimize memory usage, you can use the following code sample. First, parent PDF document needs to be created, loaded, and then import pages and its contents to the parent PDF document and dispose the loaded PDF document. Setting EnableMemoryOptimization to true also reduces the memory usage once the document instance is closed.
 
-> Note: The PDF document (parent document) contents are still in run time memory. It releases the memory once the PDF document instance is disposed.
+N> The PDF document (parent document) contents are still in run time memory. It releases the memory once the PDF document instance is disposed.
 
 > 
 

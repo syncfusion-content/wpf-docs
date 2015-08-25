@@ -43,7 +43,7 @@ IRange this[int row, int column, int lastRow, int lastColumn] { get; }
 
 {% endhighlight %}
 
-> Note: Here row and column indexes in the range are "one based". Following code example explains various ways of accessing cells.
+N> Here row and column indexes in the range are "one based". Following code example explains various ways of accessing cells.
 
 
 {% highlight C# %}
@@ -506,7 +506,7 @@ excelEngine.Dispose()
 
 XlsIO enables you to get the range of cells used in a given sheet. This helps you to apply the same format to all the cells used in the worksheet. You can also get the first row/column, last row/column, and number of rows/columns used in the sheet by using the various methods of IRange.
 
-> Note: By default, XlsIO considers a cell as used, even when there exists some formatting. You can disable this behavior, and make XlsIO consider a cell as used, only when there exists data, by using the UsedRangeIncludesFormatting property.
+N> By default, XlsIO considers a cell as used, even when there exists some formatting. You can disable this behavior, and make XlsIO consider a cell as used, only when there exists data, by using the UsedRangeIncludesFormatting property.
 
 The following code example is used to format the Used Range.
 {% highlight C# %}
@@ -894,7 +894,7 @@ excelEngine.Dispose()
 
 MoveTo method is used to move a range of cells to the destination. The only difference between copy and move operation is that Move does not create a copy in the source. This is similar to the Cut and Paste options in the Excel. 
 
-> Note: Move does not update formulas.
+N> Move does not update formulas.
 
 
 {% highlight C# %}
@@ -1882,7 +1882,7 @@ This feature allows sorting any range of cells dynamically at runtime without an
 
 
 
-> Note: Presently, sorting based on cell icon, parsing, and serialization of its sorting details are not supported.
+N> Presently, sorting based on cell icon, parsing, and serialization of its sorting details are not supported.
 
 1. Sort by Cell Values
 

@@ -656,7 +656,7 @@ diagramView.IsPanEnabled = True
 {% endhighlight  %}
 
 2. Click and drag the diagram page to the desired position. Note that the negative rulers get displayed while panning to the right.
-> Note: No other operations can be performed on page elements while IsPanEnabled is set to True.
+N> No other operations can be performed on page elements while IsPanEnabled is set to True.
 
 
 
@@ -972,7 +972,7 @@ To view a sample of this feature:
 
 
 
-> Note: A demo of this feature is included in the Overview sample.
+N> A demo of this feature is included in the Overview sample.
 
 
 
@@ -1046,7 +1046,7 @@ _Fit-to-Page Enabled_
 
 You can execute a fit-to-page command to bring the whole diagram within the viewport either by zooming in or zooming out.
 
-> Note: Using this command you can fit the content within the viewport even if the EnableFitToPage property of the diagram view is set to False.
+N> Using this command you can fit the content within the viewport even if the EnableFitToPage property of the diagram view is set to False.
 
 The following code illustrates how to bring the whole diagram into the viewport using a command: 
 
@@ -1157,7 +1157,7 @@ table.RefreshLayout()
 
 When the code runs, the table layout will be applied to the specified node collection.  
 
-> Note: If the OrderNodes property is set to null, then the table layout will be applied to the entire diagram.
+N> If the OrderNodes property is set to null, then the table layout will be applied to the entire diagram.
 
 
 
@@ -1865,7 +1865,7 @@ The size of the node can be accessed using DateTime values instead of double val
 
 {% endhighlight %}
 
-> Note: Use these node properties after the nodes are loaded. Also, the unit conversion methods can be used (we have provided methods for conversion as explained below) for converting the double values into DateTime and vice versa.
+N> Use these node properties after the nodes are loaded. Also, the unit conversion methods can be used (we have provided methods for conversion as explained below) for converting the double values into DateTime and vice versa.
 
 ### Methods for Converting
 
@@ -2404,7 +2404,7 @@ diagramView.SnapOffsetY = 50
 
 {% endhighlight  %}
 
-> Note: SnapToGrid will snap objects based on the offset values specified in DiagramView’s SnapOffsetX and SnapOffsetY values and it works independently from grid lines. However, to snap objects along with the grid lines, specify the same offset values for grid lines and snap offset.
+N> SnapToGrid will snap objects based on the offset values specified in DiagramView’s SnapOffsetX and SnapOffsetY values and it works independently from grid lines. However, to snap objects along with the grid lines, specify the same offset values for grid lines and snap offset.
 
 
 
@@ -2527,7 +2527,7 @@ double</td></tr>
 </table>
 
 
-> Note: By default, all the properties of the SnapSettings class are set to true.
+N> By default, all the properties of the SnapSettings class are set to true.
 
 
 
@@ -2806,7 +2806,7 @@ diagramView.IsZoomEnabled = True
 
 2. Now while the CTRL key is pressed, roll the mouse wheel up to zoom in or down to zoom out.
 
-> Note: All other operations can be performed on page elements while IsZoomEnabled is set to True.
+N> All other operations can be performed on page elements while IsZoomEnabled is set to True.
 
 ![](Diagram-View_images/Diagram-View_img18.jpeg)
 
@@ -3520,7 +3520,7 @@ The following screenshot illustrates how the last two nodes are aligned to the b
 
 _AlignBottom command applied to Diagram Objects_
 
-> Note: The connector gets aligned only when the head node and the tail node of the connector is Null.
+N> The connector gets aligned only when the head node and the tail node of the connector is Null.
 
 Alignment commands are useful for ordering the layout of the objects on a page and provide a professional appearance to the diagram.
 
@@ -3575,7 +3575,7 @@ The following screenshot illustrates vertically spaced objects.
 
 _SpaceDown command applied to Diagram Objects_
 
-> Note: The connector gets spaced only when the head node and the tail node of the connector is Null.
+N> The connector gets spaced only when the head node and the tail node of the connector is Null.
 
 ## Delete Command
 
@@ -3588,7 +3588,7 @@ The following steps illustrate how to delete a node or connector.
 
 
 
-> Note: When a node is deleted, all the connectors connected to that node are also deleted. Deleting a connector leads to the deletion of that particular connector only.
+N> When a node is deleted, all the connectors connected to that node are also deleted. Deleting a connector leads to the deletion of that particular connector only.
 
 The following code example illustrates how to invoke the Delete command.
 {% highlight c# %}
@@ -3631,7 +3631,7 @@ DiagramCommandManager.SameHeight.Execute(diagramView.Page, diagramView)
 
 _SameHeight command applied to Diagram Objects_ 
 
-> Note: The width of the selected object remains the same.
+N> The width of the selected object remains the same.
 
 ### Width Customization
 
@@ -3651,7 +3651,7 @@ DiagramCommandManager.SameWidth.Execute(diagramView.Page, diagramView)
 
 _SameWidth command applied to Diagram Objects_
 
-> Note: The height of the selected object remains the same.
+N> The height of the selected object remains the same.
 
 ### Height and Width Customization
 
@@ -3674,7 +3674,7 @@ DiagramCommandManager.SameSize.Execute(diagramView.Page, diagramView)
 
 _SameSize command applied to Diagram Objects_
 
-> Note: The connector gets spaced only when the head node and the tail node of the connector is Null.
+N> The connector gets spaced only when the head node and the tail node of the connector is Null.
 
 ## Undo and Redo Command
 
@@ -4163,7 +4163,7 @@ diagramView.EnableDrawingTools = True
 {% endhighlight %}
 
 
->Note: When the EnableDrawingToolsis set to True, it has to be disabled manually, i.e. it cannot be disabled automatically. This will facilitate drawing shapes or lines continually until EnableDrawingTools is set to false manually. ObjectDrawn Event
+N> When the EnableDrawingToolsis set to True, it has to be disabled manually, i.e. it cannot be disabled automatically. This will facilitate drawing shapes or lines continually until EnableDrawingTools is set to false manually. ObjectDrawn Event
 
 The ObjectDrawn event will be raised when the node or line connector is drawn using the EnableConnection/Drawing Tools property of the diagram view. This event is used to identify the source of the drawing object. 
 
@@ -4471,7 +4471,7 @@ diagramView.DrawingTool = DrawingTools.Rectangle
 
 
 
-> Note: These steps are common for all shapes and lines drawing, except Polygon and Polyline.
+N> These steps are common for all shapes and lines drawing, except Polygon and Polyline.
 
 #### Shape Drawing
 
@@ -4511,7 +4511,7 @@ Bezier Line – After Drawing
 
 _Bezier Line(Line Connector)_
 
-> Note:* The drawn shape will be converted into a Node. * The drawn line will be converted into a LineConnector. * You can continually draw the selected shape. * Lines cannot be drawn continually.
+N>* The drawn shape will be converted into a Node. * The drawn line will be converted into a LineConnector. * You can continually draw the selected shape. * Lines cannot be drawn continually.
 
 Steps for drawing a Polygon and Polyline Drawing:
 
@@ -4855,7 +4855,7 @@ diagramView.Save(@"E:\Fig3.jpg", new Size(500, 500), ImageStretch.Shrink);
 
 {% endhighlight %}
 
-> Note: By default, when exporting a diagram that is huge in size (for example, 30,000 × 2,000), an ‘Out of memory’ exception is raised. By shrinking the diagram to a smaller size, the memory occupied will be less, so the exception will not be raised.
+N> By default, when exporting a diagram that is huge in size (for example, 30,000 × 2,000), an ‘Out of memory’ exception is raised. By shrinking the diagram to a smaller size, the memory occupied will be less, so the exception will not be raised.
 
 ## Export to Clipboard
 

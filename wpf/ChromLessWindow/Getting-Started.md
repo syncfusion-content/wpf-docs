@@ -86,7 +86,7 @@ To create a custom ChromelessWindow, follow the below steps:
 
 
 
-   > Note: All the templates should be written in App.xaml file only.
+   N> All the templates should be written in App.xaml file only.
 
 
 
@@ -139,7 +139,7 @@ To create a custom ChromelessWindow, follow the below steps:
 
 
 
-   > Note: The drag and drop feature for the ChromelessWindow is available only with the TitleBar. You will have to include a TitleBar into your ChromelessWindow, to incorporate this feature. Also it is necessary to specify the name of the TitleBar as "PART_TitleBar", to enable the drag and drop feature.
+   N> The drag and drop feature for the ChromelessWindow is available only with the TitleBar. You will have to include a TitleBar into your ChromelessWindow, to incorporate this feature. Also it is necessary to specify the name of the TitleBar as "PART_TitleBar", to enable the drag and drop feature.
 
 
 

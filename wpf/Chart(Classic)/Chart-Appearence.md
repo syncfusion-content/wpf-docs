@@ -100,7 +100,7 @@ using Syncfusion.Windows.Shared;
 SkinStorage.SetVisualStyle(Chart1, "Office2007Blue");
 {% endhighlight %}
 
-> Note: Shared.WPF assembly should be referenced in the project to make use of this settings.
+N> Shared.WPF assembly should be referenced in the project to make use of this settings.
 
 Various Built-In skins supported are:
 

@@ -33,7 +33,7 @@ SfDataGrid.AutoGenerateColumnsMode: It decides a way to create columns when Auto
 
 The DataGrid control by default creates columns for every public property automatically based on the underlying collection that bounds to the DataGrid using ItemsSource property. In this case, AutoGenerateColumns property value is set to ‘true’ and AutoGenerateColumnsMode property value is AutoGenerateColumnsMode.Reset.
 
-> Note: When you change items source for SfDataGrid during run time, then the columns are generated on the basis of option set for AutoGenerateColumns Mode.
+N> When you change items source for SfDataGrid during run time, then the columns are generated on the basis of option set for AutoGenerateColumns Mode.
 
 The following is the event that is associated with AutoGeneratingColumns.
 
@@ -52,7 +52,7 @@ You can use this event where you want to manipulate columns (apply filtering, so
 
 SfDataGrid supports DataAnnotations for customizing columns, when AutoGenerateColumns set to ‘true’. When [DisplayAttribute](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute(v=vs.110).aspx), [DataTypeAttribute](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.datatypeattribute(v=vs.110).aspx), [EditableAttribute](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.editableattribute.aspx) and [BindableAttribute](http://msdn.microsoft.com/en-us/library/system.componentmodel.bindableattribute.aspx) are specified in model class, columns are generated based on the mentioned attributes that supports DataAnnotation of SfDataGrid.
 
-> Note: When AutoGenerateColumns property value is set to ‘false’, you can ignore mentioned DataAnnotaions attributes. 
+N> When AutoGenerateColumns property value is set to ‘false’, you can ignore mentioned DataAnnotaions attributes. 
 
 The following example illustrates this scenario. For data collection use OrderInfoRepositiory.cs, file.
 
@@ -272,7 +272,7 @@ void sfdatagrid_Loaded(object sender, RoutedEventArgs e)
 
 
 
-> Note: The case where you want to display column in both ways: you can use SfDataGrid.AutoGenerateColumnsMode. to define columns collection and remaining from items Source.
+N> The case where you want to display column in both ways: you can use SfDataGrid.AutoGenerateColumnsMode. to define columns collection and remaining from items Source.
 
 ## Column Properties
 
@@ -470,7 +470,7 @@ Double.NaN</td></tr>
 </table>
 
 
-> Note: GridTextColumnBase is the abstract class that is derived from GridColumn. GridTextColumn, GridMaskColumn and GridTimeSpanColumn are derived from GridTextColumnBase. GridEditorColumn is another abstract column that is derived from GridColumn. GridNumericColumn, GridCurrencyColumn, GridDateTimeColumn and GridPercentColumn are derived from GridEditorColumn.
+N> GridTextColumnBase is the abstract class that is derived from GridColumn. GridTextColumn, GridMaskColumn and GridTimeSpanColumn are derived from GridTextColumnBase. GridEditorColumn is another abstract column that is derived from GridColumn. GridNumericColumn, GridCurrencyColumn, GridDateTimeColumn and GridPercentColumn are derived from GridEditorColumn.
 
 The following provides the list of properties that supports the columns having GridTextColumnBase as Base Class.
 
@@ -1516,7 +1516,7 @@ String.Empty</td></tr>
 </table>
 
 
-> Note: Mask definition is mandatory to use Date separator, Time Separator, Prompt Char and Decimal Separator.
+N> Mask definition is mandatory to use Date separator, Time Separator, Prompt Char and Decimal Separator.
 
 The following code example illustrates how to use GridMaskColumn.
 
@@ -1768,7 +1768,7 @@ False</td></tr>
 </table>
 
 
-> Note: NullValue is displayed when AllowNullValue is set to ‘true’. NullValue takes higher priority than NullText.
+N> NullValue is displayed when AllowNullValue is set to ‘true’. NullValue takes higher priority than NullText.
 
 The following code example illustrates how to use GridDateTimeColumn.
 
@@ -2060,7 +2060,7 @@ The above XAML Code has resulted in following Output:
 
 _DataGrid with GridCheckBoxColumn_
 
-> Note: Due to its behavior (Directly loading CheckBox), it does not fire events of CurrentCellValidating and CurrentCellValidated. You can use CurrentCellValueChanged Event.
+N> Due to its behavior (Directly loading CheckBox), it does not fire events of CurrentCellValidating and CurrentCellValidated. You can use CurrentCellValueChanged Event.
 
  
 
@@ -2232,7 +2232,7 @@ The CurrentCellRequestNavigateEventArgs object contains the following properties
 
 
 
-> Note: The value that is bounded to the DisplayBinding property displays the value. The value that is bounded to the ValueBinding property is the NavigateText. When ValueBinding value that bounds to the MappingName is not specified, it becomes the NavigateText.
+N> The value that is bounded to the DisplayBinding property displays the value. The value that is bounded to the ValueBinding property is the NavigateText. When ValueBinding value that bounds to the MappingName is not specified, it becomes the NavigateText.
 
 ### GridTemplateColumn
 
@@ -2276,7 +2276,7 @@ Null</td></tr>
 </table>
 
 
-> Note: By default, Silverlight does not support TemplateSelectors hence DataGrid too.
+N> By default, Silverlight does not support TemplateSelectors hence DataGrid too.
 
 The following code example shows templating for GridTemplateColumn. Underlying record will be the DataContext for the CellTemplate and EditTemplate.
 
@@ -2535,7 +2535,7 @@ The following code example explains you about WantsKeyInput.
 
 
 
-> Note: Enter and Tab keys are always handled by Grid only. When you set it to’ false’, you cannot navigate using keys within a loaded control.
+N> Enter and Tab keys are always handled by Grid only. When you set it to’ false’, you cannot navigate using keys within a loaded control.
 
 ### WantsMouseInput
 
@@ -2625,7 +2625,7 @@ The following code example shows, how to set the FocusedElement inside DataTempl
 
 
 
-> Note: Other than the above attached properties supported, you can set focused element by using FocuseManager.FocusedElement attached property which comes in WPF frameowkr itself. This can be used only for EditTemplate and can’t be used inside CellTemplate.
+N> Other than the above attached properties supported, you can set focused element by using FocuseManager.FocusedElement attached property which comes in WPF frameowkr itself. This can be used only for EditTemplate and can’t be used inside CellTemplate.
 
 The following XAML code example displays you how to set focus directly to editor.
 
@@ -2822,7 +2822,7 @@ NOT</td><td>
 </table>
 
 
-> Note: It is mandatory to specify the GridColumn.MappingName to the UnBoundColumn, but it should not match with any existing fields in the data source.
+N> It is mandatory to specify the GridColumn.MappingName to the UnBoundColumn, but it should not match with any existing fields in the data source.
 
 The following code example shows how to use unboundcolumns in the DataGrid control.
 
@@ -2941,7 +2941,7 @@ _DataGrid with GridUnBoundColumn_
 
 In above case, when you set CaseSenstive property value to ‘true’, then you can not get quantity column value after that hyphen. 
 
-> Note: UnBound Column’s Expression does not work with DataTable, since DataTable itself provides support for Expression.
+N> UnBound Column’s Expression does not work with DataTable, since DataTable itself provides support for Expression.
 
 ### GridMultiColumnDropDownList
 
@@ -3090,7 +3090,7 @@ The event associated with this column is CurrentCellDropDownSelectionChanged Eve
 
 This event occurs whenever a selected item is changed in DropDown column such as GridMultiColumnDrpDownList. The event handler receives two arguments namely sender that handles SfDataGrid and CurrentCellDropDownSelectionChangedEventArgs as objects.
 
-> Note: To set null value in view, the underlying type needs to be Nullable. Only then it accepts Null value.
+N> To set null value in view, the underlying type needs to be Nullable. Only then it accepts Null value.
 
 
 
@@ -3106,7 +3106,7 @@ ColumnSizer property allows you to specify the column width based on the data pr
 
 
 
-> Note: To set null value in view, the underlying type needs to be Nullable. Only then it accepts Null value.
+N> To set null value in view, the underlying type needs to be Nullable. Only then it accepts Null value.
 
 
 
@@ -3157,7 +3157,7 @@ The DataGrid control also allows you to set the column sizing for a particular c
 
 
 
-> Note: DataGrid control applies column sizing based on Width, MinimumWidth and MaximumWidth properties.
+N> DataGrid control applies column sizing based on Width, MinimumWidth and MaximumWidth properties.
 
 
 
@@ -3174,7 +3174,7 @@ The DataGrid control also allows you to set the column sizing for a particular c
 
 
 
-> Note: When you resize the columns and the Columns sizer is in ‘Star’ or ‘AutoWithLastFill’ mode, it remains its behavior.
+N> When you resize the columns and the Columns sizer is in ‘Star’ or ‘AutoWithLastFill’ mode, it remains its behavior.
 
 The following code example illustrates you how to set the ColumnSizing option for DataGrid control.
 
@@ -3313,7 +3313,7 @@ Used to cacluate the row height based on the content that located in the grid ce
 <table>
 <tr>
 <td>
-> {{ 'Note: The above methods are useful when you create custom GridColumnSizer for SfDataGrid.' | markdownify }}</td></tr>
+> {{ 'N> The above methods are useful when you create custom GridColumnSizer for SfDataGrid.' | markdownify }}</td></tr>
 <tr>
 <td>
 </td></tr>
@@ -3504,7 +3504,7 @@ The following code example shows how to hide the Columns in XAML.
 {% endhighlight %}
 
 
-> Note: Hidden columns are not considered when applying column sizing.
+N> Hidden columns are not considered when applying column sizing.
 
 ## Resizing Columns
 
@@ -3622,7 +3622,7 @@ void sfdatagrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 {% endhighlight %}
 
 
-> Note: Resizing is restricted based on GridColumn.MinimumWidth and GridColumn.MaximumWidth.You can resize the columns to the Header and Cell text by double-clicking the header gridlines.
+N> Resizing is restricted based on GridColumn.MinimumWidth and GridColumn.MaximumWidth.You can resize the columns to the Header and Cell text by double-clicking the header gridlines.
 
 ## Reordering Columns
 
@@ -3896,7 +3896,7 @@ The following screenshot illustrates the output.
 
 _DataGrid with two Frozen columns_
 
-> Note: In the above screenshot, the OrderID and CustomerID columns are frozen. When you group the columns, indent column (while group you can see that another column is created with grouped expander) is also frozen.
+N> In the above screenshot, the OrderID and CustomerID columns are frozen. When you group the columns, indent column (while group you can see that another column is created with grouped expander) is also frozen.
 
 ### Limitation
 
@@ -3916,7 +3916,7 @@ DataGrid allows you to have additional unbound header rows, known as Stacked Hea
 
 Stacked Header Row for the given DataGrid is loaded under Stacked Header Rows Collection.  This collection has definitions for Stacked Header Row that contains StackedColumns controlling the behavior and appearance of the Stacked Header.  A Stacked Header Row is viewed as a set of Stacked Columns where each StackedColumn contains a number of Child Columns. When the Child Columns in the Stacked Header is dragged and dropped to another area of columns, the Child Column isolates itself with its own Stacked Header in the dropped position.
 
-> Note: Stacked Header does not participate in grouping, filtering, sorting and dragging. However, the Child Columns are allowed to group, sort or apply filter.
+N> Stacked Header does not participate in grouping, filtering, sorting and dragging. However, the Child Columns are allowed to group, sort or apply filter.
 
 StackedColumn provides the following properties for implementing StackedHeaders.
 
@@ -4011,9 +4011,7 @@ The following screenshot illustrates the output.
 
 _DataGrid with wrapped Header text_
 
-> Note: You need to set HeaderRowHeight in SfDataGrid to differentiate TextWrap in columnHeader.
-
-> SfDataGrid.HeaderRowHeight = “100”;
+N> You need to set HeaderRowHeight in SfDataGrid to differentiate TextWrap in columnHeader. SfDataGrid.HeaderRowHeight = “100”;
 
 ### How to skip AutoGenerate column for particular property
 
@@ -4920,7 +4918,7 @@ MappingName property denotes the property that present in underlying DataModel t
 
 By default, data manipulation operations like Sorting, Grouping, Filtering and etc will be based MappingName and the values will be reflected using reflection from DataModel. Setting UseBindingValue property to true, will enable the advanced features like sorting, grouping, filtering and etc will reflects the values based in ValueBinding which enables you to bind more complex binding paths. 
 
-> Note: Set UseBindingValue only when you are binding more complex property paths or when standard reflection can’t reflect the data from Data model.
+N> Set UseBindingValue only when you are binding more complex property paths or when standard reflection can’t reflect the data from Data model.
 
 ### Build a DataGrid with Multiple Data Sources
 

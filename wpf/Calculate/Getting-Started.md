@@ -61,7 +61,7 @@ The following steps guide you to deploy Essential Calculate:
 
 
 
-   > Note: There is no toolbox support for Calculate in WPF application.
+   N> There is no toolbox support for Calculate in WPF application.
 
 
 
@@ -137,7 +137,7 @@ The following steps guide you to deploy Essential Calculate:
 
    {:.prettyprint}
 					
-> Note: Engine is a class that is defined as a "property" in Essential Calculate.
+N> Engine is a class that is defined as a "property" in Essential Calculate.
 
 Essential Calculate is now deployed in your WPF application.
 

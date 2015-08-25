@@ -100,7 +100,7 @@ stackPanel.Children.Add(tabControlExt);
 
 
 
-> Note: To display the TabControlExt using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed.
+N> To display the TabControlExt using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed.
 
 
 

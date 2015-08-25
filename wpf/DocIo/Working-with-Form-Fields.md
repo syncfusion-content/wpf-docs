@@ -280,7 +280,7 @@ To set the format of the DocIO text directly from the field, you can use the Str
 
 
 
-> Note: Text form field displays the default text only when the text of the form field has no value, that is, when the Text property has no value.
+N> Text form field displays the default text only when the text of the form field has no value, that is, when the Text property has no value.
 
 Text property is used to set the text of the text form field. Type property specifies the type of the text form field. The various text form field types are as follows:
 

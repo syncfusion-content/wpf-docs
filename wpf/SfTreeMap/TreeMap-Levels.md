@@ -600,7 +600,7 @@ You must specify ChildPath for each and every hierarchical level of TreeMap. It 
 
 
 
-> Note: The specified field must be a collection of sub class (object) specified in the nested data collection.
+N> The specified field must be a collection of sub class (object) specified in the nested data collection.
 
 
 

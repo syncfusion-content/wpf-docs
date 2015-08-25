@@ -94,7 +94,7 @@ gridDataControl.ExportToExcel("Sample.xls", ExcelVersion.Excel97to2003 );
 
 {% endhighlight  %}
 
-> Note: Only the visible child's contents are exported.
+N> Only the visible child's contents are exported.
 
 
 
@@ -129,7 +129,7 @@ gridDataControl.ExportToExcel("Sample.xlsx", ExcelVersion.Excel2007 );
 gridDataControl.ExportToExcel("Sample.xls", ExcelVersion.Excel97to2003 );
 
 {% endhighlight  %}
-> Note: Only the visible grouping contents are exported.
+N> Only the visible grouping contents are exported.
 
 ![](Getting-Started_images/Getting-Started_img133.jpeg)
 

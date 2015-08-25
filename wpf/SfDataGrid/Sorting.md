@@ -59,7 +59,7 @@ True</td></tr>
 </table>
 
 
-> Note: When SfDataGrid.AllowSorting property is set to’ true’, GridColumn.AllowSorting property gets more priorities to sort the columns.
+N> When SfDataGrid.AllowSorting property is set to’ true’, GridColumn.AllowSorting property gets more priorities to sort the columns.
 
 ## Apply Sorting
 
@@ -242,7 +242,7 @@ _DataGrid with Multi Column Sorting_
 
 In the above screenshot, “OrderID” column is sorted first in the descending order. After you sort the “_Name of Customer_”, the sorting of column in any direction happens against OrderID column and previous sorting is maintained.amu.
 
-> Note: When you add columns to SortColumnDescription, SortColumnChanging event is not raised.
+N> When you add columns to SortColumnDescription, SortColumnChanging event is not raised.
 
 ## Sort Numbers
 

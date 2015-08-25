@@ -58,7 +58,7 @@ It does not display the AutoEllipsisButton.</td></tr>
 </table>
 
 
-> Note: By Default AutoEllipsisMode is set to None.
+N> By Default AutoEllipsisMode is set to None.
 
 The following code example explains how to change the AutoEllipsisbuttontext.
 {% highlight html %}
@@ -292,7 +292,7 @@ It does not display anything</td></tr>
 </table>
 
 
-> Note: By Default, DisplayMode is set to FirstLastPreviousNextNumeric.
+N> By Default, DisplayMode is set to FirstLastPreviousNextNumeric.
 
 ## Orientation
 

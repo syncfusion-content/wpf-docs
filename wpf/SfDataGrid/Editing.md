@@ -56,7 +56,7 @@ sfdatagrid.AllowEditing = true;
 
 _DataGrid with AllowEditing set to ‘True’_
 
-> Note: It is mandatory to set the NavigationMode to Cell to enable current cell navigation and editing in the DataGrid control.
+N> It is mandatory to set the NavigationMode to Cell to enable current cell navigation and editing in the DataGrid control.
 
 You are also allowed to control the behavior when the current cell is allowed to enter into Edit Mode by using the EditTriggers property. EditTriggers include the following two modes:
 
@@ -65,7 +65,7 @@ You are also allowed to control the behavior when the current cell is allowed to
 
 
 
-> Note: You can switch between Edit Mode and View Mode by pressing the F2 key.
+N> You can switch between Edit Mode and View Mode by pressing the F2 key.
 
 The DataGrid control also provides the following properties in Grid Columns to support editing.
 

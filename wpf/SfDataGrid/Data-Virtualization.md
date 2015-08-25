@@ -143,7 +143,7 @@ This method returns the Collection of group result after apply grouping.</td></t
 </table>
 
 
-> Note: GetInternalSource and GetViewRecorCount return the value based on filtering.
+N> GetInternalSource and GetViewRecorCount return the value based on filtering.
 
 The following code example illustrates the Custom Data Virtualization class.
 
@@ -242,7 +242,7 @@ public class CustomVirtualizingClass : VirtualizingCollectionView
 
 {% endhighlight %}
 
-> Note: You can override the GetItemAt, GetIndexOf and GetViewRecordCount virtual methods when you create the custom virtualization class.
+N> You can override the GetItemAt, GetIndexOf and GetViewRecordCount virtual methods when you create the custom virtualization class.
 
 You can override the virtual methods in the VirtualizingCollectionView when you perform Sorting, Filtering and Grouping operations by using the Custom Data Virtualization class.
 
@@ -351,7 +351,7 @@ You can enable IncrementalLoading in DataGrid by creating a data source with ISu
 
 This method helps to load data incrementaly to the DataGrid. This method is called to fetch the initial set of data when the DataGrid loads. When you scroll the DataGrid and reach the last record of loaded data, DataGrid requests this method to load the next subset of data.
 
-> Note: LoadMoreItemsAsync() method is called when HasMoreItems property is set to ‘true’.
+N> LoadMoreItemsAsync() method is called when HasMoreItems property is set to ‘true’.
 
 ### HasMoreItems
 

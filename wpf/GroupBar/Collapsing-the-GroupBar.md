@@ -34,7 +34,7 @@ To enable the AllowCollapse property in GroupBar, use the following code.
 
 The event corresponding to this property is BeforeGroupBarItemPopupOpened. This event is triggered when AllowCollapse property gets changed.
 
-> Note: AllowCollapse property settings works only for GroupBar in StackMode.
+N> AllowCollapse property settings works only for GroupBar in StackMode.
 
 Collapsing the GroupBar in Stack Mode
 

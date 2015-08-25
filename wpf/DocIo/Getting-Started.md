@@ -332,7 +332,7 @@ The following code example illustrates how to stream the document to the browser
 
 You can utilize the asynchronous Open and Save methods of WordDocument class to develop UI responsive applications. These asynchronous methods return tasks that have information about the task completion status, history, any exception that is raised or canceled, and the final result.
 
-> Note: Asynchronous support is applicable only to Windows Store, Windows Phone - Silverlight 8 and 8.1, and Windows Phone 8.1 (based on WinRT) apps.
+N> Asynchronous support is applicable only to Windows Store, Windows Phone - Silverlight 8 and 8.1, and Windows Phone 8.1 (based on WinRT) apps.
 
 _Overloads for OpenAsync method_
 

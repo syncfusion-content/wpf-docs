@@ -188,17 +188,7 @@ dateTimeEdit.DateTime = new DateTime(2010, 07, 05);
 
 {% endhighlight  %}
 
-> Note:Use the DateTime property for Binding and Setting the date to the control. Do not use the Text property.
-
-> If you do not set any value to the DateTimeEdit then the default value will be as follows:
-
-> If the IsEmptyDateEnabled is set to true then,
-
-> Value of the NullValue property will be the default value.
-
-> Otherwise 
-
-> DateTime.Today will be the default value (based on the MinValue and MaxValue the default value will change).
+N>Use the DateTime property for Binding and Setting the date to the control. Do not use the Text property. If you do not set any value to the DateTimeEdit then the default value will be as follows: If the IsEmptyDateEnabled is set to true then, Value of the NullValue property will be the default value. Otherwise  DateTime.Today will be the default value (based on the MinValue and MaxValue the default value will change).
 
 See Also
 

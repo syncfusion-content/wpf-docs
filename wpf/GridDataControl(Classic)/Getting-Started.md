@@ -332,7 +332,7 @@ This section explains how to bind a data table from a database to the GridData c
 
 
 
-   > Note: Check that System.data.SqlServerCe.dll has been added to your project before using this procedure.
+   N> Check that System.data.SqlServerCe.dll has been added to your project before using this procedure.
 
 
 
@@ -1316,7 +1316,7 @@ The following steps explain how to bind a data view from a database to the GridT
 
 
 
-   > Note: Before using this procedure, check that System.data.SqlServerCe.dll has been added to your project.
+   N> Before using this procedure, check that System.data.SqlServerCe.dll has been added to your project.
 
  
 

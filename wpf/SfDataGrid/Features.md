@@ -132,7 +132,7 @@ SfDataGrid.SourceType: This Dependency property decides the type of source colle
 
 2. When you use dynamic collection and set type as particular user defined class, then the properties are displayed in the Grid.
    
-   > Note: It is always not neccessary to set SourceType and IsDynamicItemsSource properties.
+   N> It is always not neccessary to set SourceType and IsDynamicItemsSource properties.
 
 The following event is associated with Data Binding.
 
@@ -151,7 +151,7 @@ You can use this event when you want to handle operations after ItemsSource boun
 
 DataGrid has the View property of type ICollectionViewAdv interfacethat implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. When you bind Collection to ItemsSource property of SfDataGrid, then View will be created and maintains the operations on Data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification. Following are some important properties that can be used for various purposes.
 
-> Note: DataGrid creates different types of views derived from ICollectionViewAdv interface based on ItemsSource.
+N> DataGrid creates different types of views derived from ICollectionViewAdv interface based on ItemsSource.
 
 Property Table
 
@@ -287,7 +287,7 @@ When BeginInit method is called it suspends all the updates until EndInit method
 </table>
 
 
-> Note: View has properties that already defined in SfDataGrid. It recommended setting those properties via SfDataGrid.
+N> View has properties that already defined in SfDataGrid. It recommended setting those properties via SfDataGrid.
 
 ### Complex property Binding
 
@@ -443,7 +443,7 @@ Execute the above code to render the following output.
 
 _DataGrid with Complex Property Binding_
 
-> Note: DataGrid control allows you to set Grouping, Sorting, Filtering and Summaries for Complex property-bound columns. Complex property binding in SfDataGrid does not support LiveDataUpdationMode.
+N> DataGrid control allows you to set Grouping, Sorting, Filtering and Summaries for Complex property-bound columns. Complex property binding in SfDataGrid does not support LiveDataUpdationMode.
 
 
 ### Dynamic Object Binding
@@ -455,7 +455,7 @@ DataGrid control provides extensive support to bind the dynamic object data to D
 
 
 
->  Note: Dynamic is not supported in Silverlight hence it is not supported by SfDataGrid also.
+N> Dynamic is not supported in Silverlight hence it is not supported by SfDataGrid also.
 
 The following code example illustrates the dynamic object data creation.
 
@@ -569,7 +569,7 @@ The following screenshot displays the output.
 
 DataGrid with Dynamic Object Binding
 
-> Note: Dynamic Object binding in SfDataGrid does not support LiveDataUpdationMode.
+N> Dynamic Object binding in SfDataGrid does not support LiveDataUpdationMode.
 
 
 ### How To
@@ -1657,7 +1657,7 @@ The following code example illustrates how to define the GridViewDefinition.
 
 _Data Grid with Master Details View_
 
-> Note: In GridViewDefinition, when you make changes in one child DataGrid, changes are applied to all the child DataGrids at that level. For example, when you resize the first column in the child DataGrid, the same column width is applied to all child DataGrids at that level. This scenario is applicable for features like filetring, sorting, validation and ReOrdering columns. You can use stacked headers also in the Master-Detail View.
+N> In GridViewDefinition, when you make changes in one child DataGrid, changes are applied to all the child DataGrids at that level. For example, when you resize the first column in the child DataGrid, the same column width is applied to all child DataGrids at that level. This scenario is applicable for features like filetring, sorting, validation and ReOrdering columns. You can use stacked headers also in the Master-Detail View.
 
 The following topics explain different methods available to expand or collapse and events to handle during expanding or collapsing. You can use these methods and events to perform your internal operation like stores details view items source or record.
 
@@ -1884,7 +1884,7 @@ There are some limitations in the Master-DetailsView. Those are:
 * GroupDropArea is not available for details view grid.                  
 
 
-> Note: You can use GroupColumnDescriptions to group the column in Master-Details View.
+N> You can use GroupColumnDescriptions to group the column in Master-Details View.
 
 ### Master-Detail View from DataTable relations
 
@@ -1959,7 +1959,7 @@ This topic explains step by step procedure to create the Master-Details View by 
 			~~~
 			{:.prettyprint }
 			
-			> Note: Both tables have OrderID as common property to make relation. 
+			N> Both tables have OrderID as common property to make relation. 
 			
 			Now, populate data for DataTables.
 
@@ -2605,7 +2605,7 @@ Master–Details DataGrid displays a hierarchical data in a tree format. This to
    ~~~
    {:.prettyprint }   
     
-   > Note: Both parent collection and child collection have key property OrderID.
+   N> Both parent collection and child collection have key property OrderID.
 
 5. Now, load the data for a prepared collection.  Add the following code example in a newly created class file and save it as OrderInfoRepositiory.cs file_._
 
@@ -3254,7 +3254,7 @@ SfDataGrid.AutoGenerateColumnsMode: It decides a way to create columns when Auto
 
 The DataGrid control by default creates columns for every public property automatically based on the underlying collection that bounds to the DataGrid using ItemsSource property. In this case, AutoGenerateColumns property value is set to ‘true’ and AutoGenerateColumnsMode property value is AutoGenerateColumnsMode.Reset.
 
-> Note: When you change items source for SfDataGrid during run time, then the columns are generated on the basis of option set for AutoGenerateColumns Mode.
+N> When you change items source for SfDataGrid during run time, then the columns are generated on the basis of option set for AutoGenerateColumns Mode.
 
 The following is the event that is associated with AutoGeneratingColumns.
 
@@ -3273,7 +3273,7 @@ You can use this event where you want to manipulate columns (apply filtering, so
 
 SfDataGrid supports DataAnnotations for customizing columns, when AutoGenerateColumns set to ‘true’. When [DisplayAttribute](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute(v=vs.110).aspx), [DataTypeAttribute](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.datatypeattribute(v=vs.110).aspx), [EditableAttribute](http://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.editableattribute.aspx) and [BindableAttribute](http://msdn.microsoft.com/en-us/library/system.componentmodel.bindableattribute.aspx) are specified in model class, columns are generated based on the mentioned attributes that supports DataAnnotation of SfDataGrid.
 
-> Note: When AutoGenerateColumns property value is set to ‘false’, you can ignore mentioned DataAnnotaions attributes.
+N> When AutoGenerateColumns property value is set to ‘false’, you can ignore mentioned DataAnnotaions attributes.
 
 The following example illustrates this scenario. For data collection use OrderInfoRepositiory.cs, file.
 
@@ -3476,7 +3476,7 @@ void sfdatagrid_Loaded(object sender, RoutedEventArgs e)
 {% endhighlight %}
 
 
-> Note: The case where you want to display column in both ways: you can use SfDataGrid.AutoGenerateColumnsMode. to define columns collection and remaining from items Source.
+N> The case where you want to display column in both ways: you can use SfDataGrid.AutoGenerateColumnsMode. to define columns collection and remaining from items Source.
 
 ### Column Properties
 
@@ -3674,7 +3674,7 @@ Double.NaN</td></tr>
 </table>
 
 
-> Note: GridTextColumnBase is the abstract class that is derived from GridColumn. GridTextColumn, GridMaskColumn and GridTimeSpanColumn are derived from GridTextColumnBase. GridEditorColumn is another abstract column that is derived from GridColumn. GridNumericColumn, GridCurrencyColumn, GridDateTimeColumn and GridPercentColumn are derived from GridEditorColumn.
+N> GridTextColumnBase is the abstract class that is derived from GridColumn. GridTextColumn, GridMaskColumn and GridTimeSpanColumn are derived from GridTextColumnBase. GridEditorColumn is another abstract column that is derived from GridColumn. GridNumericColumn, GridCurrencyColumn, GridDateTimeColumn and GridPercentColumn are derived from GridEditorColumn.
 
 The following provides the list of properties that supports the columns having GridTextColumnBase as Base Class.
 
@@ -4632,7 +4632,7 @@ String.Empty</td></tr>
 </table>
 
 
-> Note: Mask definition is mandatory to use Date separator, Time Separator, Prompt Char and Decimal Separator.
+N> Mask definition is mandatory to use Date separator, Time Separator, Prompt Char and Decimal Separator.
 
 The following code example illustrates how to use GridMaskColumn.
 
@@ -4866,7 +4866,7 @@ False</td></tr>
 </table>
 
 
-> Note: NullValue is displayed when AllowNullValue is set to ‘true’. NullValue takes higher priority than NullText.
+N> NullValue is displayed when AllowNullValue is set to ‘true’. NullValue takes higher priority than NullText.
 
 The following code example illustrates how to use GridDateTimeColumn.
 
@@ -5126,7 +5126,7 @@ The above XAML Code has resulted in following Output:
 
 _DataGrid with GridCheckBoxColumn_
 
-> _Note: Due to its behavior (Directly loading CheckBox), it does not fire events of CurrentCellValidating and CurrentCellValidated. You can use CurrentCellValueChanged Event._
+N> Due to its behavior (Directly loading CheckBox), it does not fire events of CurrentCellValidating and CurrentCellValidated. You can use CurrentCellValueChanged Event._
  
 
 #### GridImageColumn
@@ -5281,7 +5281,7 @@ The CurrentCellRequestNavigateEventArgs object contains the following properties
 
 
 
-> Note: The value that is bounded to the DisplayBinding property displays the value. The value that is bounded to the ValueBinding property is the NavigateText. When ValueBinding value that bounds to the MappingName is not specified, it becomes the NavigateText.
+N> The value that is bounded to the DisplayBinding property displays the value. The value that is bounded to the ValueBinding property is the NavigateText. When ValueBinding value that bounds to the MappingName is not specified, it becomes the NavigateText.
 
 #### GridTemplateColumn
 
@@ -5325,7 +5325,7 @@ Null</td></tr>
 </table>
 
 
-> Note: By default, Silverlight does not support TemplateSelectors hence DataGrid too.
+N> By default, Silverlight does not support TemplateSelectors hence DataGrid too.
 
 The following code example shows templating for GridTemplateColumn. Underlying record will be the DataContext for the CellTemplate and EditTemplate.
 
@@ -5559,7 +5559,7 @@ The following code example explains you about WantsKeyInput.
 
 
 
-> Note: Enter and Tab keys are always handled by Grid only. When you set it to’ false’, you cannot navigate using keys within a loaded control.
+N> Enter and Tab keys are always handled by Grid only. When you set it to’ false’, you cannot navigate using keys within a loaded control.
 
 #### WantsMouseInput
 
@@ -5640,7 +5640,7 @@ The following code example shows, how to set the FocusedElement inside DataTempl
 
 {% endhighlight %}
 
-> Note: Other than the above attached properties supported, you can set focused element by using FocuseManager.FocusedElement attached property which comes in WPF frameowkr itself. This can be used only for EditTemplate and can’t be used inside CellTemplate.
+N> Other than the above attached properties supported, you can set focused element by using FocuseManager.FocusedElement attached property which comes in WPF frameowkr itself. This can be used only for EditTemplate and can’t be used inside CellTemplate.
 
 The following XAML code example displays you how to set focus directly to editor.
 
@@ -5823,7 +5823,7 @@ NOT</td><td>
 </table>
 
 
-> Note: It is mandatory to specify the GridColumn.MappingName to the UnBoundColumn, but it should not match with any existing fields in the data source.
+N> It is mandatory to specify the GridColumn.MappingName to the UnBoundColumn, but it should not match with any existing fields in the data source.
 
 The following code example shows how to use unboundcolumns in the DataGrid control.
 
@@ -5928,7 +5928,7 @@ _DataGrid with GridUnBoundColumn_
 
 In above case, when you set CaseSenstive property value to ‘true’, then you can not get quantity column value after that hyphen. 
 
-> Note: UnBound Column’s Expression does not work with DataTable, since DataTable itself provides support for Expression.
+N> UnBound Column’s Expression does not work with DataTable, since DataTable itself provides support for Expression.
 
 #### GridMultiColumnDropDownList
 
@@ -6071,7 +6071,7 @@ The event associated with this column is CurrentCellDropDownSelectionChanged Eve
 
 This event occurs whenever a selected item is changed in DropDown column such as GridMultiColumnDrpDownList. The event handler receives two arguments namely sender that handles SfDataGrid and CurrentCellDropDownSelectionChangedEventArgs as objects.
 
-> Note: To set null value in view, the underlying type needs to be Nullable. Only then it accepts Null value.
+N> To set null value in view, the underlying type needs to be Nullable. Only then it accepts Null value.
 
 
 
@@ -6085,7 +6085,7 @@ ColumnSizer property allows you to specify the column width based on the data pr
 * SelectedIndex: Gets the selected index from the DropDown control.
 * SelectedItem: Gets the selected item from the DropDown control.
   
-  > Note: To set null value in view, the underlying type needs to be Nullable. Only then it accepts Null value.
+  N> To set null value in view, the underlying type needs to be Nullable. Only then it accepts Null value.
 
   * Auto
 * AutoWithLastColumnFill
@@ -6129,7 +6129,7 @@ The DataGrid control also allows you to set the column sizing for a particular c
 * GridColumn.MaximumWidth: Sets the Maximum Width of the column.
 * GridColumn.Width: Sets the Width of the column.
 
-  > Note: DataGrid control applies column sizing based on Width, MinimumWidth and MaximumWidth properties.
+  N> DataGrid control applies column sizing based on Width, MinimumWidth and MaximumWidth properties.
 
 * The Grid resizes the column based on the GridColumn.ColumnSizer property instead of the SfDataGrid.ColumnSizer property when you set the GridColumn.ColumnSizer property explicitly. 
 * For example, when you set SfDataGrid.ColumnSizer property to ‘Auto’, and for a particular column you have set GridColumn.ColumnSizer property to ‘Star’, DataGrid applies ‘Star’ column sizing for that particular column and ‘Auto’ column sizing for all other columns.
@@ -6142,7 +6142,7 @@ The DataGrid control also allows you to set the column sizing for a particular c
 * Else, DataGrid resizes the column with the maximum GridColumn.MinimumWidth and GridColumn.MaximumWidth values.
 
 
-> Note: When you resize the columns and the Columns sizer is in ‘Star’ or ‘AutoWithLastFill’ mode, it remains its behavior.
+N> When you resize the columns and the Columns sizer is in ‘Star’ or ‘AutoWithLastFill’ mode, it remains its behavior.
 
 The following code example illustrates you how to set the ColumnSizing option for DataGrid control.
 
@@ -6266,7 +6266,7 @@ Used to cacluate the row height based on the content that located in the grid ce
 <table>
 <tr>
 <th>
-> {{ '_Note: The above methods are useful when you create custom GridColumnSizer for SfDataGrid._' | markdownify }}</th></tr>
+> {{ 'N> The above methods are useful when you create custom GridColumnSizer for SfDataGrid._' | markdownify }}</th></tr>
 <tr>
 <td>
 </td></tr>
@@ -6449,7 +6449,7 @@ The following code example shows how to hide the Columns in XAML.
 {% endhighlight %}
 
 
-> Note: Hidden columns are not considered when applying column sizing.
+N> Hidden columns are not considered when applying column sizing.
 
 ### Resizing Columns
 
@@ -6544,7 +6544,7 @@ void sfdatagrid_ResizingColumns(object sender, ResizingColumnsEventArgs e)
 {% endhighlight %}
 
 
-> Note: Resizing is restricted based on GridColumn.MinimumWidth and GridColumn.MaximumWidth.You can resize the columns to the Header and Cell text by double-clicking the header gridlines.
+N> Resizing is restricted based on GridColumn.MinimumWidth and GridColumn.MaximumWidth.You can resize the columns to the Header and Cell text by double-clicking the header gridlines.
 
 ### Reordering Columns
 
@@ -6794,7 +6794,7 @@ The following screenshot illustrates the output.
 
 _DataGrid with two Frozen columns_
 
-> Note: In the above screenshot, the OrderID and CustomerID columns are frozen. When you group the columns, indent column (while group you can see that another column is created with grouped expander) is also frozen.
+N> In the above screenshot, the OrderID and CustomerID columns are frozen. When you group the columns, indent column (while group you can see that another column is created with grouped expander) is also frozen.
 
 #### Limitation
 
@@ -6814,7 +6814,7 @@ DataGrid allows you to have additional unbound header rows, known as Stacked Hea
 
 Stacked Header Row for the given DataGrid is loaded under Stacked Header Rows Collection.  This collection has definitions for Stacked Header Row that contains StackedColumns controlling the behavior and appearance of the Stacked Header.  A Stacked Header Row is viewed as a set of Stacked Columns where each StackedColumn contains a number of Child Columns. When the Child Columns in the Stacked Header is dragged and dropped to another area of columns, the Child Column isolates itself with its own Stacked Header in the dropped position.
 
-> Note: Stacked Header does not participate in grouping, filtering, sorting and dragging. However, the Child Columns are allowed to group, sort or apply filter.
+N> Stacked Header does not participate in grouping, filtering, sorting and dragging. However, the Child Columns are allowed to group, sort or apply filter.
 
 StackedColumn provides the following properties for implementing StackedHeaders.
 
@@ -6893,9 +6893,7 @@ The following screenshot illustrates the output.
 
 _DataGrid with wrapped Header text_
 
-> Note: You need to set HeaderRowHeight in SfDataGrid to differentiate TextWrap in columnHeader.
->
-> SfDataGrid.HeaderRowHeight = “100”;
+N> You need to set HeaderRowHeight in SfDataGrid to differentiate TextWrap in columnHeader. SfDataGrid.HeaderRowHeight = “100”;
 
 #### How to skip AutoGenerate column for particular property
 
@@ -7770,7 +7768,7 @@ MappingName property denotes the property that present in underlying DataModel t
 
 By default, data manipulation operations like Sorting, Grouping, Filtering and etc will be based MappingName and the values will be reflected using reflection from DataModel. Setting UseBindingValue property to true, will enable the advanced features like sorting, grouping, filtering and etc will reflects the values based in ValueBinding which enables you to bind more complex binding paths. 
 
-> Note: Set UseBindingValue only when you are binding more complex property paths or when standard reflection can’t reflect the data from Data model.
+N> Set UseBindingValue only when you are binding more complex property paths or when standard reflection can’t reflect the data from Data model.
 
 #### Build a DataGrid with Multiple Data Sources
 
@@ -9459,7 +9457,7 @@ True</td></tr>
 </table>
 
 
-> Note: When SfDataGrid.AllowSorting property is set to’ true’, GridColumn.AllowSorting property gets more priorities to sort the columns.
+N> When SfDataGrid.AllowSorting property is set to’ true’, GridColumn.AllowSorting property gets more priorities to sort the columns.
 
 ### Apply Sorting
 
@@ -9614,7 +9612,7 @@ _DataGrid with Multi Column Sorting_
 
 In the above screenshot, “OrderID” column is sorted first in the descending order. After you sort the “_Name of Customer_”, the sorting of column in any direction happens against OrderID column and previous sorting is maintained.amu.
 
-> Note: When you add columns to SortColumnDescription, SortColumnChanging event is not raised.
+N> When you add columns to SortColumnDescription, SortColumnChanging event is not raised.
 
 #### Sort Numbers
 
@@ -10004,7 +10002,7 @@ True</td></tr>
 </table>
 
 
-> Note: GridColumn.AllowGrouping takes higher priority than DataGrid.AllowGrouping.  When you set AllowGrouping to ‘true’ in DataGrid and AllowGrouping to ‘false’ for particular column then that column is not grouped.
+N> GridColumn.AllowGrouping takes higher priority than DataGrid.AllowGrouping.  When you set AllowGrouping to ‘true’ in DataGrid and AllowGrouping to ‘false’ for particular column then that column is not grouped.
 
 The following screenshot illustrates Group or Ungroup the Column in different ways. DataGrid allows you to group the column in following ways:
 
@@ -10366,7 +10364,7 @@ private void sfdatagrid_GroupExpanding(object sender, GroupChangingEventArgs e)
 
 
 
-> Note: These events do not hit when you use ExpandAllGroup (), CollapseAllGroup (), ExpandGroupsAtLevel () and CollapseGropsAtLevel () methods.
+N> These events do not hit when you use ExpandAllGroup (), CollapseAllGroup (), ExpandGroupsAtLevel () and CollapseGropsAtLevel () methods.
 
 ### Custom Grouping
 
@@ -10800,7 +10798,7 @@ _Column wise Summary values_
 
 In the above screenshot, summary values are showed at the bottom of corresponding column that are mapped to the GridSummaryColumn.
 
-> Note: Summary values are displayed based on the GridSummaryColumn.Format value, when the summaries are displayed in column wise.
+N> Summary values are displayed based on the GridSummaryColumn.Format value, when the summaries are displayed in column wise.
 
 ### Show the summaries in row
 
@@ -10936,7 +10934,7 @@ In the above screenshot, summary values are showed in row because GridSummaryRow
 
 When the summary values are showed in row, summary values are displayed in the format that is defined in GridSummaryRow.Title.
 
-> _Note: Default value of GridSummaryRow.ShowSummaryInRow is true._
+N> Default value of GridSummaryRow.ShowSummaryInRow is true._
 
 ### Group Summaries
 
@@ -11326,7 +11324,7 @@ return ret;
 {% endhighlight %}
 
 
-> Note: When you use Title for GridSummaryRow; you need to concentrate on name of GridSummaryColumn. The name that you used in GridSummaryColumn and Title should match.
+N> When you use Title for GridSummaryRow; you need to concentrate on name of GridSummaryColumn. The name that you used in GridSummaryColumn and Title should match.
 
 ### How To
 
@@ -11557,7 +11555,7 @@ syncgrid.AllowFiltering = true;
 {% endhighlight %}
 
 
-> Note: A column’s AllowFiltering is given more priority than the SfDataGrid control.
+N> A column’s AllowFiltering is given more priority than the SfDataGrid control.
 
 ### Filter Mode
 
@@ -11622,7 +11620,7 @@ The following filter types are available for Text Filters.
 
 
 
-> Note: When CanGenerateUniqueItems is set to ‘True’, the FilterValue combobox is not editable. Therefore, BeginsWith, EndsWith and Contains are unavailable. These options are available only when CanGenerateUniqueItems is set to ‘False’. So, when you use DataTable as items Source, AdVanceFiltering does not support CaseSensitive.
+N> When CanGenerateUniqueItems is set to ‘True’, the FilterValue combobox is not editable. Therefore, BeginsWith, EndsWith and Contains are unavailable. These options are available only when CanGenerateUniqueItems is set to ‘False’. So, when you use DataTable as items Source, AdVanceFiltering does not support CaseSensitive.
 
 When integer, double, short, decimal, byte or long, Nullable and unsigned types are bound to the GridColumn then Number Filters are loaded in the AdvancedFilterControl.
 
@@ -11654,7 +11652,7 @@ The following filter types are available for Date Filters.
 
 By setting the FilterBehavior as StringTyped, you can load the Text Filters to the particular column. When you set the FilterBehavior to StronglyTyped, then filter type is automatically detected based on underlying data type.
 
-> Note: Null and NotNull options are available only when AllowBlankFilter is set to ‘True’
+N> Null and NotNull options are available only when AllowBlankFilter is set to ‘True’
 
 ### Blank Filters
 
@@ -11915,7 +11913,7 @@ The following code example shows how to set the CanGenerateUniqueItems property.
 
 _DataGrid with CanGenerateUniqueItems property_
 
-> Note: You can bind written style to FilterPopupStyle where you need to apply style. It’s in SfDataGrid and also in each column.
+N> You can bind written style to FilterPopupStyle where you need to apply style. It’s in SfDataGrid and also in each column.
 
 ### Programmatic Filtering
 
@@ -12149,7 +12147,7 @@ The following screenshot displays the filtered records that contain the word “
 
 _DataGrid with filtered records that contain the word “son”_
 
-> Note: View.Filter is not applied when itemssource is DataTable.
+N> View.Filter is not applied when itemssource is DataTable.
 
 ### How To
 
@@ -12388,7 +12386,7 @@ sfdatagrid.AllowEditing = true;
 
 _DataGrid with AllowEditing set to ‘True’_
 
-> Note: It is mandatory to set the NavigationMode to Cell to enable current cell navigation and editing in the DataGrid control.
+N> It is mandatory to set the NavigationMode to Cell to enable current cell navigation and editing in the DataGrid control.
 
 You are also allowed to control the behavior when the current cell is allowed to enter into Edit Mode by using the EditTriggers property. EditTriggers include the following two modes:
 
@@ -12397,7 +12395,7 @@ You are also allowed to control the behavior when the current cell is allowed to
 
 
 
-> Note: You can switch between Edit Mode and View Mode by pressing the F2 key.
+N> You can switch between Edit Mode and View Mode by pressing the F2 key.
 
 The DataGrid control also provides the following properties in Grid Columns to support editing.
 
@@ -13165,7 +13163,7 @@ SfDataGrid provides a convenient way to validate data and indicate the errors al
 
 
 
-> Note: GridColumn.GridValidationMode takes higher priority that its behavior overrides SfDataGrid behavior.
+N> GridColumn.GridValidationMode takes higher priority that its behavior overrides SfDataGrid behavior.
 
 . The following are different approaches to validate errors on data.
 
@@ -13270,7 +13268,7 @@ public System.Collections.IEnumerable GetErrors(string propertyName)
 
 _DataGrid with Email field validation_
 
-> Note: GridTemplateColumn and GridUnboundColumn do not support the GridValidationMode in ‘InEdit’ mode.
+N> GridTemplateColumn and GridUnboundColumn do not support the GridValidationMode in ‘InEdit’ mode.
 
 
 
@@ -13280,7 +13278,7 @@ _DataGrid with Email field validation_
 
 Once the UI interactive validations are successful, the Data layer validates the corresponding values for the members that specify validation rules. You can use two different modes in Validation like ‘InView’ or ‘InEdit’. System.ComponentModel.DataAnnotations assembly is added to the reference to use DataAnnotations.
 
-> Note: GridTemplateColumn and GridUnboundColumn do not support the GridValidationMode in ‘InEdit’ mode.
+N> GridTemplateColumn and GridUnboundColumn do not support the GridValidationMode in ‘InEdit’ mode.
 
 #### Some of the commonly used ValidationAttributes are as follows:
 
@@ -13946,7 +13944,7 @@ AddNewRowPosition</td><td>
 This is the Enum property that helps to get or set the AddNewRow position in DataGrid. AddNewRowPositionenum property contains following values:<br/>1. Top – Place the AddNewRow at the top of all data rows.<br/>2. Bottom – Place the AddNewRow at the bottom of all the data rows.<br/> 3. None – This hides the AddNewRow in the DataGrid control.</td></tr>
 </table>
 
-> Note: By default AddNewRowPosition is set as “None”.
+N> By default AddNewRowPosition is set as “None”.
 The following table describes you the event that participates in AddNewRow.
 
 _AddNewRow Event Table_ 
@@ -13964,7 +13962,7 @@ NewObject</td><td>
 This event is triggered when you start editing in AddNewRow.NewObject – This contains the newly created object that helps to set the default value when you start editing in AddNewRow.  </td></tr>
 </table>
 
-> Note: NewObject is the read-only property.
+N> NewObject is the read-only property.
 
 #### Behavior
 
@@ -14148,7 +14146,7 @@ _DataGrid with changed AddNewRow watermark text_
 
 
 
-> Note: The resource file is hosted in Resources folder and sholud have name with Syncfusion.SfGrid.WPF.resx. Otherwise your changes are not taken into consideration.
+N> The resource file is hosted in Resources folder and sholud have name with Syncfusion.SfGrid.WPF.resx. Otherwise your changes are not taken into consideration.
 
 
 
@@ -14322,7 +14320,7 @@ The following screenshot illustrate the output.
 
 _Custom row validation with AddNewRow_
 
-> Note: DataGrid adds the new data to the data source only when the data is valid.
+N> DataGrid adds the new data to the data source only when the data is valid.
 
 #### How to handle AddNewRow for complex properties 
 
@@ -14499,7 +14497,7 @@ The DataGrid control provides an interactive support to select a specific row or
 
 The DataGrid control provides interactive support to select a specific cell or group of cells programmatically or by Mouse and Keyboard interactions. To enable this Selection in DataGrid, you can set SfDataGrid.SelectionUnit property to Cell or Any and the SfDataGrid.NavigationMode should be Cell. In Any, you can select all cells in particular row by clicking on RowHeader.
 
-> Note: HeaderRows and TableSummaryRows do not have support for selection.
+N> HeaderRows and TableSummaryRows do not have support for selection.
 
 #### Properties
 
@@ -14591,7 +14589,7 @@ Gets or sets the Border width of Current cell when NavigationMode is in Cell</td
 </table>
 
 
-> Note: In WPF, MouseDown event is triggered after releasing the finger from touch. Hence AllowSelectionOnPointerPressed API only works for mouse in WPF
+N> In WPF, MouseDown event is triggered after releasing the finger from touch. Hence AllowSelectionOnPointerPressed API only works for mouse in WPF
 
 ### Methods
 
@@ -14859,7 +14857,7 @@ These two events are triggered with GridSelectionChangingEventArgs and GridSelec
 
 
 
-> Note: GridRowInfo is used in Row selection and GridCellInfo is used in Cell selection.
+N> GridRowInfo is used in Row selection and GridCellInfo is used in Cell selection.
 
 
 
@@ -14923,7 +14921,7 @@ Another vital operation in selection with editing is NavigationMode. DataGrid co
 
 
 
-> Note: Cell based key navigation is disabled in Row navigation mode.
+N> Cell based key navigation is disabled in Row navigation mode.
 
 #### Example:
 
@@ -15576,7 +15574,7 @@ public class GridCellSelectionControllerExt : GridCellSelectionController
 
 {% endhighlight %}
 
-> _Note: To use GetRecordAtRowIndex method, you can refer Syncfusion.UI.Xaml.Grid.Helper._
+N> To use GetRecordAtRowIndex method, you can refer Syncfusion.UI.Xaml.Grid.Helper._
 
 
 
@@ -15729,7 +15727,7 @@ Only in Multiple selection mode to select or unselect specific row or cell.</td>
 </table>
 
 
-> Note: The listed key navigation behaves same as multiple selection. But current cell moves selection, does not move in single selection. In extended mode, all selection modes are like single mode other than Shift+UP/Down selects multiple records and move towards its direction.
+N> The listed key navigation behaves same as multiple selection. But current cell moves selection, does not move in single selection. In extended mode, all selection modes are like single mode other than Shift+UP/Down selects multiple records and move towards its direction.
 
 You can stop the navigation by cancelling CurrenCellActivating event. The following code example describes that.
 
@@ -16483,7 +16481,7 @@ The row is selected initially among the selected items.</td></tr>
 </table>
 
 
-> Note: In Single mode both the CurrentItem and SelectedItem properties have same item. Grid Selected Items are collections of your selected records.
+N> In Single mode both the CurrentItem and SelectedItem properties have same item. Grid Selected Items are collections of your selected records.
 
 #### How to copy records without using mouse pointer
 
@@ -16740,7 +16738,7 @@ The OnDemandLoading event is triggered when the pager moves to the corresponding
 
 
 
-> Note: In OnDemand paging, you cannot assign a value for the Source property in SfDataPager.
+N> In OnDemand paging, you cannot assign a value for the Source property in SfDataPager.
 
 The following code example illustrates defining DataPager for OnDemandPaging:
 
@@ -17038,7 +17036,7 @@ This method returns the Collection of group result after apply grouping.</td></t
 </table>
 
 
-> Note: GetInternalSource and GetViewRecorCount return the value based on filtering.
+N> GetInternalSource and GetViewRecorCount return the value based on filtering.
 
 The following code example illustrates the Custom Data Virtualization class.
 
@@ -17137,7 +17135,7 @@ public class CustomVirtualizingClass : VirtualizingCollectionView
 
 {% endhighlight %}
 
-> Note: You can override the GetItemAt, GetIndexOf and GetViewRecordCount virtual methods when you create the custom virtualization class.
+N> You can override the GetItemAt, GetIndexOf and GetViewRecordCount virtual methods when you create the custom virtualization class.
 
 You can override the virtual methods in the VirtualizingCollectionView when you perform Sorting, Filtering and Grouping operations by using the Custom Data Virtualization class.
 
@@ -17246,7 +17244,7 @@ You can enable IncrementalLoading in DataGrid by creating a data source with ISu
 
 This method helps to load data incrementaly to the DataGrid. This method is called to fetch the initial set of data when the DataGrid loads. When you scroll the DataGrid and reach the last record of loaded data, DataGrid requests this method to load the next subset of data.
 
-> Note: LoadMoreItemsAsync() method is called when HasMoreItems property is set to ‘true’.
+N> LoadMoreItemsAsync() method is called when HasMoreItems property is set to ‘true’.
 
 #### HasMoreItems
 
@@ -17535,7 +17533,7 @@ You can also edit the style of the following Datagrid elements in Expression Ble
 
 DataGrid allows you to edit the styles of DataGrid and its elements in Visual studio as your requirement.
 
-> Note: Visual Style Editing option is availble in Visual Studio 2012 and higher versions only.
+N> Visual Style Editing option is availble in Visual Studio 2012 and higher versions only.
 
 
 
@@ -17724,7 +17722,7 @@ The following code example illustrates applying styles for cells.
 
 
 
-> Note: DataGrid control also allows you to apply the style for the cells in the particular column by using GridColumn.CellStyle property.
+N> DataGrid control also allows you to apply the style for the cells in the particular column by using GridColumn.CellStyle property.
 
 #### SfDataGrid.CaptionSummaryCellStyle
 
@@ -18154,7 +18152,7 @@ TargetType="syncfusion:TableSummaryRowControl">
 
 DataGrid provides extensive support for StyleSelectors that helps to apply custom style for cells and rows. To know more about the StyleSelectors you can check the following MSDN link: [http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector.aspx](http://msdn.microsoft.com/en-us/library/system.windows.controls.styleselector.aspx).
 
-> Note: By default, Silverlight does not support StyleSelectors hence DataGrid too.
+N> By default, Silverlight does not support StyleSelectors hence DataGrid too.
 
 #### Cell Style Selectors
 
@@ -18440,7 +18438,7 @@ HeaderTemplate="{StaticResource headerTemplate}" />
 
 
 
-> Note: DataGrid control also provides the support to apply DataTemplateSelector for a particular column using GridTemplateColumn.CelltemplateSelector property. For more information about this, you can refer_ ColumnType _topic.
+N> DataGrid control also provides the support to apply DataTemplateSelector for a particular column using GridTemplateColumn.CelltemplateSelector property. For more information about this, you can refer_ ColumnType _topic.
 
 
 
@@ -18450,7 +18448,7 @@ DataGrid provides extensive support for DataTemplateSelectors that helps to appl
 
 [http://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx](http://msdn.microsoft.com/en-us/library/system.windows.controls.datatemplateselector.aspx).
 
-> Note: By default, Silverlight does not support TemplateSelectors hence DataGrid too.
+N> By default, Silverlight does not support TemplateSelectors hence DataGrid too.
 
 
 
@@ -18902,7 +18900,7 @@ The following screenshot displays the output.
 
 _Conditional formatting to the Rows in Grid_
 
-> Note: StyleSelectors & TemplateSelectors are not supported by Silverlight
+N> StyleSelectors & TemplateSelectors are not supported by Silverlight
 
 
 
@@ -19396,7 +19394,7 @@ The SfDataGrid provides support to customize the height of the Header row also. 
 
 By using QueryRowHeight event, you can match the RowIndex from QueryRowHeightEventArgs with GetHeaderIndex () helper method that returns index of the Header. You can refer to the following link to get more [resolver](http://help.syncfusion.com/ug/wpf/default.htm) methods of the SfDataGrid.
 
-> Note: Need to add Syncfusion.UI.Xaml.Grid.Helper namespace to use GetHeaderIndex () method.
+N> Need to add Syncfusion.UI.Xaml.Grid.Helper namespace to use GetHeaderIndex () method.
 
 
 
@@ -19475,7 +19473,7 @@ Then call the InvalidateMeasureInfo method in VisualContainer to refresh the vie
 
 When you pass the row index to the InValidateRowHeight method, that specific row Index is added to the Dictionary as a reference to calculate the height of that row again when the InvalidateMeasureInfo is called. Then it raises the QueryRowHeight event for row index that you have invalidated.
 
-> Note: Need to add this Syncfusion.UI.Xaml.Grid.Helpers namespace to use the InvalidateMeasuerInfo method.
+N> Need to add this Syncfusion.UI.Xaml.Grid.Helpers namespace to use the InvalidateMeasuerInfo method.
 
 
 {% highlight C# %}
@@ -19541,7 +19539,7 @@ Run the above code example. Edit with large text and complete editing. Press Tab
 
 _AutoRowHeight_
 
-> Note: If the InvalidateMeasuerInfo method is not called, grid does not refresh automatically. You need to explicitly refresh the grid though this method.
+N> If the InvalidateMeasuerInfo method is not called, grid does not refresh automatically. You need to explicitly refresh the grid though this method.
 
 
 
@@ -19549,7 +19547,7 @@ _AutoRowHeight_
 
 The SfDataGrid control provides support to customize the height of the Table summary row. By utilizing the QueryRowHeight event, you can check whether the RowIndex is a table summary index from the QueryRowHeightEventArgs by using helper method IsTableSummaryIndex in GridIndexResolver class. You can refer to the following link to get more [resolver](http://help.syncfusion.com/ug/wpf/default.htm) methods of the SfDataGrid.
 
-> Note: Need to use the namespace Syncfusion.UI.Xaml.Grid.Helper.
+N> Need to use the namespace Syncfusion.UI.Xaml.Grid.Helper.
 
 The following code example explains you how to customize the Height of TableSummaryRow control in the QueryRowHeight event. 
 
@@ -19684,8 +19682,7 @@ The following screenshot displays the SfDataGrid with Freeze Panes support.
 
 _DataGrid with Freeze panes_
 
-> Note: 
->
+
 > * While grouping, the FrozenColumnCount denotes only the actual DataColumns instead of any indent columns. So that the Indent columns automatically froze when initializing the FrozenColumnCount.
 > * Header and TableSummary rows that are frozen by default works regardless of the FrozenRowsCount and FooterRowsCount properties.
 > * The count should be less than the number of rows or columns in view.
@@ -19848,7 +19845,7 @@ When you have large amount of data, the filter pop-up opening time becomes slow.
 
 You can improve the filter pop-up opening time by setting CanGenerateUniqueItems property value to ‘False’.A textbox is loaded instead of AdvancedFilterComboBox that allows you to manually enter text for filtering. This increases GridFilterControl’s loading performance.
 
-> Note: You can achieve this, only when you are using AdvanedFilter withoutn CheckBox filter.
+N> You can achieve this, only when you are using AdvanedFilter withoutn CheckBox filter.
 
 
 {% highlight xml %}
@@ -20167,7 +20164,7 @@ The following screenshot illustrates aDefault Column Chooser window.
 
 _Default Column Chooser window_
 
-> Note: The default Column Chooser displays the empty window when there is no hidden column initially.
+N> The default Column Chooser displays the empty window when there is no hidden column initially.
 
 #### Customizing Column Chooser
 
@@ -20590,7 +20587,7 @@ Indicates that the current row has errors.</td></tr>
 </table>
 
 
-> _Note: Using IDataErrorInfo, you can retrieve the error string from Error Field, whereas using INotifyDataErrorInfo the error is retrieved when the HasError Field value is ‘true’._
+N> Using IDataErrorInfo, you can retrieve the error string from Error Field, whereas using INotifyDataErrorInfo the error is retrieved when the HasError Field value is ‘true’._
 
 
 
@@ -24754,7 +24751,7 @@ For Visual Studio 2012: C:\Program Files (x86)\Common Files\Microsoft Shared\VST
 
 For Visual Studio 2013: C:\Program Files (x86)\Common Files\Microsoft Shared\VSTT\12.0\UITestExtensionPackages
 
-> Note: Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll need to be installed in GAC location. Please refer the MSDN link for_ [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) _installation.
+N> Syncfusion.VisualStudio.TestTools.UITest.SfGridExtension.dll need to be installed in GAC location. Please refer the MSDN link for_ [GAC](https://msdn.microsoft.com/en-us/library/ex0ss12c(v=vs.80).aspx) _installation.
 
 #### Getting Started
 
@@ -25020,7 +25017,7 @@ Syncfusion provides Essential QTP that contains custom libraries, that help reco
 
 SfDataPager and SfMultiColumnDropDownControl supports QTP Test automation.
 
-> Note: It also support for UFT (QTP latest version).
+N> It also support for UFT (QTP latest version).
 
 #### Installation and Configuration
 
@@ -25040,7 +25037,7 @@ The following procedure illustrates how to install Essential Test Studio:
 
 Double-click the Syncfusion Essential Test Studio__Setup file. 
 
-> Note: Setup - Syncfusion Essential QuickTest Professional dialog box opens.
+N> Setup - Syncfusion Essential QuickTest Professional dialog box opens.
 
 ![](Features_images/Features_img231.png)
 
@@ -25062,7 +25059,7 @@ Enter the User Name, Organization and Unlock Key in the corresponding text boxes
 
 Click Next. 
 
-> Note: The unlock key is validated.
+N> The unlock key is validated.
 
 Select the installation folder dialog box opens. 
 
@@ -25076,7 +25073,7 @@ _Select the installation folder_
 
 To install in the default location, click Next. 
 
-> Note: You can also browse to choose a location by clicking Browse.
+N> You can also browse to choose a location by clicking Browse.
 
 Installation type dialog box opens.
 
@@ -25114,11 +25111,7 @@ When your system does not contain Syncfusion.CNG , SyncfusionTestObjetcs.XML and
 
 * C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\
  
->Note: By Default QTP supports higher Framework version installed in your machine. When you want to make use of SfDataGrid in a lower framework version, you need to copy and paste the SfGridQTP.WPF DLL in preferred locations._
->
-> DLL Copy Location: C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\
->
-> DLL Paste Location: C:\Program Files\HP\QuickTestProfessional\data\Extensibility\WPF\Syncfusion
+N> By Default QTP supports higher Framework version installed in your machine. When you want to make use of SfDataGrid in a lower framework version, you need to copy and paste the SfGridQTP.WPF DLL in preferred locations._ DLL Copy Location: C:\Program Files\Syncfusion\Essential QTP\12.4.0.24\WPF\bin\ DLL Paste Location: C:\Program Files\HP\QuickTestProfessional\data\Extensibility\WPF\Syncfusion
 
  
 
@@ -25143,7 +25136,7 @@ The following is a list of chapters containing information that guide you throug
 
 1. Open QTP by double-clicking the QuickTest Professional icon. 
  
-   > Note: The QuickTest Professional – Add-in Manager window is displayed.
+   N> The QuickTest Professional – Add-in Manager window is displayed.
 
 
 
@@ -25155,7 +25148,7 @@ The following is a list of chapters containing information that guide you throug
 
 3. Click OK. 
  
-   > Note: The QuickTest Professional – [Start Page] window opens. There are two tabs namely Start Page and Test in the main pane of the window. The content under the Start Page tab is displayed by default.
+   N> The QuickTest Professional – [Start Page] window opens. There are two tabs namely Start Page and Test in the main pane of the window. The content under the Start Page tab is displayed by default.
 
 
 
@@ -25177,7 +25170,7 @@ The following is a list of chapters containing information that guide you throug
 
 5. A new test is created. 
 
-   > Note: You can also create a new test by selecting the Test tab in the main pane of the window or Test sub-menu under the New menu in the menu bar.
+   N> You can also create a new test by selecting the Test tab in the main pane of the window or Test sub-menu under the New menu in the menu bar.
 
 
 
@@ -25191,7 +25184,7 @@ The following is a list of chapters containing information that guide you throug
 
    _Quick Test Professional – [Test] Window showing Record tool_
 
-   > Note: Record and Run Settings dialog box opens.
+   N> Record and Run Settings dialog box opens.
 
    ![](Features_images/Features_img240.png)
 
@@ -25199,7 +25192,7 @@ The following is a list of chapters containing information that guide you throug
 
 7. Select the Windows Application tab. 
 
-   > Note: The content under the tab is displayed.
+   N> The content under the tab is displayed.
 
    ![](Features_images/Features_img241.png)
 
@@ -25207,7 +25200,7 @@ The following is a list of chapters containing information that guide you throug
 
    _Record and Run Settings-Windows Applications_
 
-   > Note: The Record and run only option is selected by default.
+   N> The Record and run only option is selected by default.
 
 
 
@@ -25218,7 +25211,7 @@ The following is a list of chapters containing information that guide you throug
 
 9. To add an application for testing, click the + button in the Application details.
 
-   > Note:The Application Details dialog box opens.
+   N>The Application Details dialog box opens.
 
    ![](Features_images/Features_img242.png)
 
@@ -25234,13 +25227,13 @@ The following is a list of chapters containing information that guide you throug
 
 
 
-    > Note:Both Launch application and Include descendant processes check boxes are selected by default
+    N>Both Launch application and Include descendant processes check boxes are selected by default
 
 
 
 14. Click OK. 
  
-    > Note: The path of the application and working folder are displayed in the Application details frame as shown in the following screenshot.
+    N> The path of the application and working folder are displayed in the Application details frame as shown in the following screenshot.
 
 
 
@@ -25251,7 +25244,7 @@ The following is a list of chapters containing information that guide you throug
 
 15. Click OK. 
  
-    > Note: The recording starts. The application in the given path is opened as shown in the following screenshot.
+    N> The recording starts. The application in the given path is opened as shown in the following screenshot.
 
 
 
@@ -25267,7 +25260,7 @@ On recording, all the user actions performed in the control are just noted with 
 
 1. Click Run in the toolbar. 
 
-> Note: Run dialog box opens. The Results Location tab is selected by default.
+N> Run dialog box opens. The Results Location tab is selected by default.
 
 
 
@@ -25327,7 +25320,7 @@ The tests that have been saved can be replayed later. For running such tests:
 
 1. Click Open on the toolbar. 
 
-   > Note: The Open Test dialog box opens with a list of saved tests.
+   N> The Open Test dialog box opens with a list of saved tests.
 
 
 
@@ -25342,7 +25335,7 @@ _Open Test dialog_
 
 
 
-> Note: The saved test is opened with its name and the complete path as the name of the window. By default, Expert View of the Test is opened.
+N> The saved test is opened with its name and the complete path as the name of the window. By default, Expert View of the Test is opened.
 
 #### Tables for Properties and Methods
 

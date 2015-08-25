@@ -330,7 +330,7 @@ Updates Paragraph Count, Word Count, and Character Count.</td></tr>
 
 By using Essential DocIO, you can create a copy of a whole Word document or a particular entity (such as WSection, WParagraph, WTable, WTextRange, etc.) by invoking the Clone method of the Entity. This method returns the shallow copy of the Entity that invoked the Clone method. By using this functionality, you can copy the whole document or part of its content along with its formatting from one document and add it to another document.
 
-> Note: When source and destination documents have styles with the same names, then Guid is added as a suffix to the name of the imported styles in the destination document.
+N> When source and destination documents have styles with the same names, then Guid is added as a suffix to the name of the imported styles in the destination document.
 
 The following code example illustrates how to merge two documents by using the Clone method.
 
@@ -401,7 +401,7 @@ The following code example illustrates how to encrypt and decrypt a Word documen
 'Encrypts the Word document with a password.document.EncryptDocument(password)'Opens the encrypted Word document.Dim document As New WordDocument(filename, password)
 {% endhighlight  %}
 
-> Note: Essential DocIO does not support encryption and decryption techniques of Microsoft Word 2013 format documents in Silverlight platform.
+N> Essential DocIO does not support encryption and decryption techniques of Microsoft Word 2013 format documents in Silverlight platform.
 
 
 
@@ -692,7 +692,7 @@ Background class represents the background color and fill effects in a Word docu
 
 
 
-> Note: Pattern fill effect is currently not supported by Essential DocIO.
+N> Pattern fill effect is currently not supported by Essential DocIO.
 
 By using the WordDocument.Background property, you can access the document background. The Background property of WordDocument is automatically initialized with the Type property of the Background set to NoBackground.
 
@@ -724,7 +724,7 @@ Specifies the type of the background effect for a document.</td></tr>
 </table>
 
 
-> Note: For more details on BackgroundGradient class, refer to the BackgroundGradient topic.
+N> For more details on BackgroundGradient class, refer to the BackgroundGradient topic.
 
 The following code example illustrates how to use the Background class.
 

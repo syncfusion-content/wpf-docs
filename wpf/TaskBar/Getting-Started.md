@@ -90,7 +90,7 @@ this.Content = taskBar;
 {% endhighlight %}
 
 
-> Note: To display the TaskBar by using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed.
+N> To display the TaskBar by using C# code, you must already have a panel in which you are going to add the control. Otherwise, the control cannot be displayed.
 
 
 The following screen shot shows the TaskBar control.

@@ -165,7 +165,7 @@ The OnDemandLoading event is triggered when the pager moves to the corresponding
 
 In an OnDemandLoading event, you can use the LoadDynamicItems method to load the data for the corresponding page.
 
-> Note: In OnDemand paging, you cannot assign a value for the Source property.
+N> In OnDemand paging, you cannot assign a value for the Source property.
 
 
 
@@ -405,7 +405,7 @@ It does not display the AutoEllipsisButton.</td></tr>
 </table>
 
 
-> Note: By Default AutoEllipsisMode is set to None.
+N> By Default AutoEllipsisMode is set to None.
 
 The following code example explains how to change the AutoEllipsisbuttontext.
 
@@ -640,7 +640,7 @@ It does not display anything</td></tr>
 </table>
 
 
-> Note: By Default, DisplayMode is set to FirstLastPreviousNextNumeric.
+N> By Default, DisplayMode is set to FirstLastPreviousNextNumeric.
 
 ### Orientation
 

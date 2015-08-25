@@ -25,7 +25,7 @@ Follow the below steps to add ToolBarAdv Control to WPF Application:
 
 
 
-> Note: Following XAML code will be automatically added in the XAML Viewer. You can also manually add this code instead of dragging the control from ToolBox.
+N> Following XAML code will be automatically added in the XAML Viewer. You can also manually add this code instead of dragging the control from ToolBox.
 
 
 

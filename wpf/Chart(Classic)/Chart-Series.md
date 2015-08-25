@@ -473,7 +473,7 @@ Populating Chart Series, Chart Series Template
 
 Chart for WPF enables you to apply custom Data Templates to the Chart Series. By applying the custom data templates, the Chart Series Segments can be altered. The following code example illustrates how to create a sample data template to draw a Line Chart.
 
-> Note: Data templates cannot be customized for a single segment in a series. As each series is drawn as a single segment, we cannot customize the individual segments.
+N> Data templates cannot be customized for a single segment in a series. As each series is drawn as a single segment, we cannot customize the individual segments.
 
 {% highlight xml %}
 
@@ -1096,7 +1096,7 @@ Null</td></tr>
 </table>
 
 
-> Note: To show the segment lines, the SegmentShowLine property must be set to true and a ConnectorTemplate must be associated.
+N> To show the segment lines, the SegmentShowLine property must be set to true and a ConnectorTemplate must be associated.
  
 
 See Also
@@ -1823,7 +1823,7 @@ AutoDiscard can be used to set range for primary axis in a chart. This property 
 
 
 
-> Note: The AutosetRange property of the primary axis needs to be set to False, when the AutoDiscard property is set to ExtendRange or ResetRange.
+N> The AutosetRange property of the primary axis needs to be set to False, when the AutoDiscard property is set to ExtendRange or ResetRange.
 
 The following code example illustrates the usage of the AutoDiscard property, when set to various enumerations.
 {% highlight xml %}
@@ -1988,7 +1988,7 @@ Colors from Brushes</td></tr>
 </table>
 
 
-> Note: The AnnotationShape property helps create the required shape for the annotation and the Fill property helps fill the shape selected with required color.
+N> The AnnotationShape property helps create the required shape for the annotation and the Fill property helps fill the shape selected with required color.
 
 The following code example illustrates creation of a circle with orange fill at points 5 on X series and point 45 on Y series in a Chart.
 {% highlight xml %}
@@ -2181,9 +2181,7 @@ The following code examples are used to add smart labels to the chart series.
 
 <sync:ChartSeries x:Name="series2"                                  AdornmentIntersectAction="AdjustAcrossPoints" 
 
-ShowSmartLabels="True"                                
-
->
+ShowSmartLabels="True"                                >
 
        <sync:ChartSeries.AdornmentsInfo>
 
@@ -2220,9 +2218,7 @@ The following code examples are used to add smart labels to the chart series wit
 
 <sync:ChartSeries x:Name="series2"                                  AdornmentIntersectAction="Hide" 
 
-ShowSmartLabels="True"                                
-
->
+ShowSmartLabels="True"                                >
 
        <sync:ChartSeries.AdornmentsInfo>
 
@@ -2259,9 +2255,7 @@ The following code examples are used to add smart labels to the chart series wit
 
 <sync:ChartSeries x:Name="series2"                                  AdornmentIntersectAction="None" 
 
-ShowSmartLabels="True"                                
-
->
+ShowSmartLabels="True"                                >
 
        <sync:ChartSeries.AdornmentsInfo>
 
