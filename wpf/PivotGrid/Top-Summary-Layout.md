@@ -40,7 +40,7 @@ The following code shows how to set the GridLayout property. You can also set th
 
 {% highlight xml %} 
 
-[XAML]
+
 
 <pivotGrid:PivotGridControl Grid.Row="0" GridLayout="TopSummary" VisualStyle="Default" HorizontalAlignment="Left" Margin="0,0,0,0" Name="pivotGrid"                                     ItemSource="{Binding DataTableSFA}" >
 
@@ -48,7 +48,7 @@ The following code shows how to set the GridLayout property. You can also set th
 
 {% highlight C# %}  
 
-[C#]
+
 
 this.pivotGrid.GridLayout = GridLayout.TopSummary;
 
@@ -57,7 +57,7 @@ this.pivotGrid.GridLayout = GridLayout.TopSummary;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Me.pivotGrid.GridLayout = GridLayout.TopSummary
 

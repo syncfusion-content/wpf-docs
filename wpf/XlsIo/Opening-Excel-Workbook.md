@@ -15,7 +15,7 @@ Essential XlsIO allows you to open the existing MS Excel workbook with an interf
 
 The following is the code example to open a document from file.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -29,7 +29,7 @@ IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelOpenType.Aut
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -45,7 +45,7 @@ To open a binary excel document, the file name with the extension *.xls is suffi
 {% endhighlight %}
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -59,7 +59,7 @@ IWorkbook workbook = application.Workbooks.Open("Sample.xls", ExcelOpenType.Auto
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -76,7 +76,7 @@ Dim workbook As IWorkbook = application.Workbooks.Open("Sample.xls", ExcelOpenTy
 
 The following is the code sample to open a document from file.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -103,7 +103,7 @@ IWorkbook workbook = await application.Workbooks.OpenAsync(openFile);
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -129,7 +129,7 @@ Opening a Workbook as a file in Windows Phone 8
 
 The following is the code example to open a document from file.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -147,7 +147,7 @@ IWorkbook workbook = await application.Workbooks.OpenAsync(outFile);
 
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -169,7 +169,7 @@ To know about saving workbook as a file, refer to Save Workbook as File section.
 
 The following is the code example to open a document from file.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -186,7 +186,7 @@ IWorkbook workbook = application.Workbooks.Open(fileStream, ExcelOpenType.Automa
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 Dim excelEngine As ExcelEngine = New ExcelEngine()
 
@@ -202,7 +202,7 @@ Dim workbook As IWorkbook = application.Workbooks.Open(fileStream, ExcelOpenType
 {% endhighlight %}
 Opening a Workbook as a stream in Windows Phone 8.
 {% highlight C# %}
-[C#]
+
 
 ExcelEngine excelEngine = new ExcelEngine();
 
@@ -217,7 +217,7 @@ IWorkbook workbook = await application.Workbooks.OpenAsync(outFile);
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -244,7 +244,7 @@ XlsIO allows you to open a spreadsheet in Read-Only mode, even if the spreadshee
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -257,7 +257,7 @@ IWorkbook workbook = application.Workbooks.OpenReadOnly("Sample.xlsx");
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 Dim excelEngine As ExcelEngine = New ExcelEngine()
 
@@ -279,7 +279,7 @@ This section illustrates how to open an encrypted document in XlsIO. To open an 
 
 Opening an encrypted workbook
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -295,7 +295,7 @@ IWorkbook workbook = application.Workbooks.Open("Sample.xlsx", ExcelParseOption
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -310,7 +310,7 @@ Dim workbook As IWorkbook = application.Workbooks.Open("Sample.xlsx", ExcelP
 {% endhighlight %}
 Opening Opening an encrypted workbook in WinRT
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -334,7 +334,7 @@ IWorkbook workbook = await application.Workbooks.OpenAsync(openFile, ExcelParseO
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -355,7 +355,7 @@ Dim workbook As IWorkbook = Await application.Workbooks.OpenAsync(openFile, Exce
 {% endhighlight %}
 Opening a Workbook in Windows Phone 8
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -374,7 +374,7 @@ IWorkbook workbook = await application.Workbooks.OpenAsync(openFile, ExcelParseO
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -402,7 +402,7 @@ Opening a Comma Separated Value (CSV) file
 
 XlsIO allows you to open a CSV file. The following code example shows how to achieve this.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -416,7 +416,7 @@ IWorkbook workbook = application.Workbooks.Open("Sample.csv", ",");
 
 {% highlight vbnet %}
 
-[VB.NET]
+
 
 
 
@@ -434,7 +434,7 @@ To know about saving workbook as CSV file, refer to Save Workbook as CSV section
 
 Opening an XML Workbook
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -447,7 +447,7 @@ IWorkbook workbook = application.Workbooks.Open("Sample.xml", ExcelOpenType.Auto
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -461,7 +461,7 @@ Dim workbook As IWorkbook = application.Workbooks.Open("Sample.xml", ExcelOpenTy
 
 Opening an XML Workbook in WinRT
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -484,7 +484,7 @@ IWorkbook workbook = await application.Workbooks.OpenAsync(openFile);
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -508,7 +508,7 @@ Opening an XML Workbook in Windows Phone 8
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -529,7 +529,7 @@ IWorkbook workbook = await application.Workbooks.OpenAsync(openFile);
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 Dim excelEngine As ExcelEngine = New ExcelEngine()
 

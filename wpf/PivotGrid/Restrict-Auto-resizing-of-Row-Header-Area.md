@@ -45,7 +45,7 @@ The following code illustrates how to restrict the items from stretching and how
 
 {% highlight C# %} 
 
-[C#]
+
 
 this.pivotGrid1.AllowRowHeaderAreaAutoSizing = false;
 
@@ -53,7 +53,7 @@ this.pivotGrid1.AllowRowHeaderAreaAutoSizing = false;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Me.pivotGrid1.AllowRowHeaderAreaAutoSizing = False
 
@@ -67,7 +67,7 @@ The following code illustrates how to allow the items to stretch and how to hide
 
 {% highlight C# %}  
 
-[C#]
+
 
 this.pivotGrid1.AllowRowHeaderAreaAutoSizing = true;
 
@@ -75,7 +75,7 @@ this.pivotGrid1.AllowRowHeaderAreaAutoSizing = true;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Me.pivotGrid1.AllowRowHeaderAreaAutoSizing = True 
 

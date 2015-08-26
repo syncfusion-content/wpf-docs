@@ -63,7 +63,7 @@ _Note: PossiblePivotCalculations is a collection where users can define which fi
 
 {% highlight C# %}  
 
-[C#]
+
 
 ObservableCollection<PivotComputationInfo> possibleComputations = new ObservableCollection<PivotComputationInfo>()
 
@@ -85,7 +85,7 @@ this.pivotGridControl1.ShowPivotValueChooser = true;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Dim possibleComputations As New ObservableCollection(Of PivotComputationInfo)() From {}
 
@@ -103,7 +103,7 @@ Me.pivotGridControl1.ShowPivotValueChooser = True
 
 {% highlight C# %}  
 
-[C#]
+
 
 this.pivotGridControl1.RowPivotsOnly = true;
 
@@ -113,7 +113,7 @@ this.pivotGridControl1.ShowPivotValueChooser = true;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Me.pivotGridControl1.RowPivotsOnly = True
 

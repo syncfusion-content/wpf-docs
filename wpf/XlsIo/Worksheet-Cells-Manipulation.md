@@ -15,7 +15,7 @@ The IRange interface represents a single cell or a group of cells in a worksheet
 
 Range of cells can be accessed through the IRange interface. The following code example illustrates this.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -47,7 +47,7 @@ N> Here row and column indexes in the range are "one based". Following code exam
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -129,7 +129,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -219,7 +219,7 @@ You can also access different discontinuous ranges and add them to the RangesCol
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -283,7 +283,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -354,7 +354,7 @@ The IMigrantRange interface can be used to access a worksheet range and manipula
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -426,7 +426,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -510,7 +510,7 @@ N> By default, XlsIO considers a cell as used, even when there exists some forma
 
 The following code example is used to format the Used Range.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -564,7 +564,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -623,7 +623,7 @@ While editing Excel workbooks, one of the most common action that is performed i
 
 The following code example illustrates how to clear a range along with its formatting.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -675,7 +675,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -779,7 +779,7 @@ Indicates functionionality of all the above flags. </td></tr>
 
 The following code example illustrates how to copy a range of cells from the source to the destination.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -837,7 +837,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -898,7 +898,7 @@ N> Move does not update formulas.
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -956,7 +956,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -1116,7 +1116,7 @@ This method searches for the cell with specified string value, again based on th
 </table>
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1173,7 +1173,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -1271,7 +1271,7 @@ This method searches for all the cells with specified string value, again based 
 </table>
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1328,7 +1328,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
- [VB]
+ 
 
 
 
@@ -1415,7 +1415,7 @@ These methods search for cells that start with the specified string value for th
 </table>
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1472,7 +1472,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -1560,7 +1560,7 @@ These methods search for the cell that ends with the specified string value for 
 </table>
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1617,7 +1617,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -1729,7 +1729,7 @@ The following code example illustrates how to replace strings with various data.
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1801,7 +1801,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -1896,7 +1896,7 @@ This is used to sort a range of cells by values at runtime. This is explained in
 
 _Column “Salary” is sorted in Descending order_
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1972,7 +1972,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2064,7 +2064,7 @@ _Sorting by Font Color_
 
 This is explained in the following code examples.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2142,7 +2142,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2238,7 +2238,7 @@ _Sorting by Cell Color_
 
 This is explained in the following code sample.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2316,7 +2316,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2414,7 +2414,7 @@ _AutoFilter from Data Menu_
 
 Essential XlsIO also comes with APIs for reading and writing AutoFilters in a worksheet. You can specify the range of data that needs to be viewed through the FilterRange property. The following code example illustrates writing AutoFilters.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2460,7 +2460,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2513,7 +2513,7 @@ excelEngine.Dispose()
 
 XlsIO also provides options to set the built-in conditions for filters by using various properties of IAutoFilter. The following code example illustrates various conditions based on the data that is to be filtered.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2575,7 +2575,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2674,7 +2674,7 @@ The following are some validation types that XlsIO supports.
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2736,7 +2736,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2817,7 +2817,7 @@ _Error box_
 
 XlsIO has numerous validation rules and features that are demonstrated in the following code example. AllowType property sets the type of validation, CompareOperator sets the validation criteria and ShowErrorBox shows the error box with an error message.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2915,7 +2915,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -3020,7 +3020,7 @@ You can also read the Data Validation settings in an existing workbook. The foll
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -3072,7 +3072,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -3151,7 +3151,7 @@ You can also set the text to be displayed in a hyperlink and a tooltip that show
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -3263,7 +3263,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 

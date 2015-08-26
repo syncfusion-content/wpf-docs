@@ -13,7 +13,7 @@ The Content property can be used to place any content inside the Inner Rim.
 
 
 {% highlight html %}
-[XAML]
+
 
 <syncfusion:SfRadialSlider x:Name="rSlider1">
 

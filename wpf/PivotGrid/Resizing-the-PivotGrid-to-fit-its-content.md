@@ -45,7 +45,7 @@ The following code illustrates how to enable resizing to fit the content, when y
 
 {% highlight C# %}  
 
-[C#]
+
 
 
 
@@ -55,7 +55,7 @@ this.pivotGrid1.ResizePivotGridToFit = true;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 
 
@@ -71,7 +71,7 @@ The following code illustrates how to disable resizing to fit the content, when 
 
 {% highlight C# %}  
 
-[C#]
+
 
 
 this.pivotGrid1.ResizePivotGridToFit = false;
@@ -80,7 +80,7 @@ this.pivotGrid1.ResizePivotGridToFit = false;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 
 

@@ -131,7 +131,7 @@ Adding sort by value of computations fields to an application
 The following code sample illustrates how to sort computations fields by value:
 
 {% highlight C# %}
-[C#]
+
 
 Sorting Options
 
@@ -268,7 +268,7 @@ NA</th></tr>
 
 {% highlight C# %}  
 
- [C#]
+ 
 
  //Add:            
 

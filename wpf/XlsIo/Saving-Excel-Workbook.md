@@ -21,7 +21,7 @@ The following code
 
 {% highlight C# %}
 
-[C#]
+
 
 //Sets workbook version.
 workbook.Version = ExcelVersion.Excel2013;
@@ -37,7 +37,7 @@ workbook.SaveAs("Sample.xlsx", ExcelSaveType.SaveAsXLS, Response, ExcelDownloadT
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -60,7 +60,7 @@ The following code example shows how to save a workbook as a file in WinRT appli
 
  {% highlight C# %}
 
-[C#]
+
 
 //Sets workbook version.
 workbook.Version = ExcelVersion.Excel2013;
@@ -80,7 +80,7 @@ await workbook.SaveAsAsync(storageFile);
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -112,7 +112,7 @@ The following code example shows how to save a workbook as a file in Windows Pho
 
  {% highlight C# %}
 
-[C#]
+
 
 //Sets workbook version.
 workbook.Version = ExcelVersion.Excel2013;
@@ -128,7 +128,7 @@ await workbook.SaveAsAsync(storageFile);
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -154,7 +154,7 @@ For more information on overloads of the Workbook's Save method, refer to Class 
 
 The following code example shows how to save a workbook as a stream in Windows Forms, WPF, Web applications. To know about how to open a workbook as a stream, refer to Open Workbook as Stream section.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -166,7 +166,7 @@ workbook.SaveAs(stream, ExcelSaveType.SaveAsTemplate);
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -214,7 +214,7 @@ XlsIO allows you to set encryption with all the above options through the IWorkb
 
 
  {% highlight C# %}
-[C#]
+
 
 
 
@@ -238,7 +238,7 @@ workbook.ReadOnlyRecommended = true;
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -279,7 +279,7 @@ Parse and serialization support of encrypted files are available in MS Excel 97 
 The following is the code example to save a document as Comma Separated Value (CSV) to disk. To know more about how to open a CSV file, refer to Open a CSV File section.
 
 {% highlight C# %}
-[C#]
+
 
 
 //Saves the CSV file to disk.
@@ -293,7 +293,7 @@ workbook.SaveAs("Sample.csv", ",", response, ExcelDownloadType.PromptDialog, Exc
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -311,7 +311,7 @@ workbook.SaveAs("Sample.csv", ",", response, ExcelDownloadType.PromptDialog, Exc
 
 The following is the code example to save the document as HTML.
  {% highlight C# %}
-[C#]
+
 
 
 
@@ -326,7 +326,7 @@ workbook.SaveAsHTML("Sample.html", HtmlSaveOptions.Default);
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -345,7 +345,7 @@ workbook.SaveAsHTML("Sample.html", HtmlSaveOptions.Default)
 The following code example illustrates how to save the document as XML. To know more about how to open a HTML file, refer to Open an XML Workbook section.
 
 {% highlight C# %}
-[C#]
+
 
 
 //Saves the workbook to a stream with save options.
@@ -359,7 +359,7 @@ workbook.SaveAsXml(xmlWriter, ExcelXmlSaveType.MSExcel);
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -385,7 +385,7 @@ How to set the Compression level:
 
 The Compression level can be set at the IApplication interface. This sets the level for all the workbooks created by using the same instance of Excel Engine.
  {% highlight C# %}
-[C#]
+
 
 
 
@@ -417,7 +417,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 

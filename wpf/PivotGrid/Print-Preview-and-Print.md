@@ -92,7 +92,7 @@ Following code example shows how to set the PrintHeader and PrintFooter properti
 
 {% highlight xml %} 
 
-[XAML]
+
 
 <syncfusion:PivotGridControl x:Name="pivotGrid1" syncfusion:PrintSettings.PrintFooter="True" syncfusion:PrintSettings.PrintHeader="True" VerticalAlignment="Top" ItemSource="{Binding ProductSalesData}">
 
@@ -103,7 +103,7 @@ Following code example shows how to call ShowPrintPreview methods.
 
 {% highlight C# %} 
 
-[C#]
+
 
     //	Shows the Print Preview window with templates for header, footer and with user defined title          
 	this.pivotGrid1.ShowPrintPreview((DataTemplate)this.Resources["HeaderTemplate"], (DataTemplate)this.Resources["FooterTemplate"],"Print Preview", this);

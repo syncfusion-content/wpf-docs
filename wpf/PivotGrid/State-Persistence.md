@@ -55,7 +55,7 @@ The user can enable or disable the state persistence by using the following code
 
 {% highlight C# %}  
 
-[C#]
+
 
 pivotGrid1.StatePersistenceEnabled = true;
 
@@ -63,7 +63,7 @@ pivotGrid1.StatePersistenceEnabled = true;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 pivotGrid1.StatePersistenceEnabled = true
 

@@ -310,7 +310,7 @@ Draws the spline when set to paths {{ '_Data_' | markdownify }} property.</td></
 
 The following code example illustrates the template for the FastSpline chart:
 {% highlight xml %}
-[ASPX]
+
 
 <DataTemplate x:key="{x:Type local:ChartFastSplineSegment}">
 

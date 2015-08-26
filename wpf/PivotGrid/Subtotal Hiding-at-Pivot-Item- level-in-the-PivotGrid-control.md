@@ -93,7 +93,7 @@ The following code sample shows how to set values for the ShowSubTotal property:
 
 {% highlight xml %} 
 
-[XAML]
+
 
  <syncfusion:PivotItem FieldMappingName="Product" FieldHeader="Product" ShowSubTotal="False" TotalHeader="Total"/>
 
@@ -105,7 +105,7 @@ To show the subtotal of an item at the specified index in a PivotColumn:
 
 {% highlight C# %}  
 
-[C#]
+
 
  pivotGrid1.PivotColumns[index].ShowSubTotal = true; 
 
@@ -113,7 +113,7 @@ To show the subtotal of an item at the specified index in a PivotColumn:
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Me.pivotGrid1.PivotColumns[index].ShowSubTotals = True
 
@@ -123,7 +123,7 @@ To hide subtotal of an item at the specified index in a PivotRow:
 
 {% highlight C# %}  
 
-[C#]
+
 
 pivotGrid1.PivotRows[index].ShowSubTotal = false;  
 
@@ -131,7 +131,7 @@ pivotGrid1.PivotRows[index].ShowSubTotal = false;  
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Me.pivotGrid1.PivotRows[index].ShowSubTotals = False
 
@@ -143,7 +143,7 @@ Users can show or hide the expander symbol for items with a single row or column
 
 {% highlight xml %} 
 
-[XAML]
+
 
   <syncfusion:PivotGridControl ShowExpanderForSinglePivot="False" Name="pivotGrid/>
 
@@ -155,7 +155,7 @@ To show the expander of the row or column that has a single row after its subtot
 
 {% highlight C# %} 
 
-[C#]
+
 
  pivotGrid.ShowExpanderForSinglePivot = true;
 
@@ -165,7 +165,7 @@ To show the expander of the row or column that has a single row after its subtot
 
 {% highlight vbnet %}  
 
-[VB]
+
 
 
 
@@ -177,7 +177,7 @@ Me.pivotGrid.ShowExpanderForSinglePivot = True
 
 {% highlight C# %}  
 
-[C#]
+
 
 pivotGrid.ShowExpanderForSinglePivot = false;
 
@@ -185,7 +185,7 @@ pivotGrid.ShowExpanderForSinglePivot = false;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Me.pivotGrid.ShowExpanderForSinglePivot = False
 

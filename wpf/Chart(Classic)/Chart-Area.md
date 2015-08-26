@@ -733,7 +733,7 @@ Essential chart now supports the concepts of Zoomin, Zoomout and panning in the 
 
 Add Additional Zooming Functionality, by using the following code.
 {% highlight xml %}
-[Xaml]
+
 
 
 
@@ -791,7 +791,7 @@ Bind the data source, by using the following code.
 N> Set BindingPath to Key to bind the key of the dictionary to BindingPathX or BindingPathsY.
 
 {% highlight xml %}
-[Xaml]
+
 
 
 
@@ -821,7 +821,7 @@ Set EnableLazyLoading property as true to add this feature.
 
 Add Lazy Loading Support, by using the following code.
 {% highlight xml %}
-[Xaml] 
+ 
 
 
 
@@ -843,7 +843,7 @@ Charts are implemented in 3D with customization to improve the look and feel of 
 
 Display 3D Chart, by using the following code:
 {% highlight xml %}
-[Xaml]
+
 
 
 

@@ -15,7 +15,7 @@ The Workbook and Worksheet classes contain the methods and properties to perform
 
 Essential XlsIO helps to programmatically create a worksheet and then add the worksheet to the collection of worksheets in the workbook. The Create method in worksheets collection does this and returns a worksheet object.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -70,7 +70,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -125,7 +125,7 @@ excelEngine.Dispose()
 
 Worksheets collection can have more than one worksheet in a workbook. Accessing a particular worksheet can be done in two ways. One is by specifying the index and the other one is by specifying the sheet name. The following code example illustrates how to access a worksheet from its worksheets collection.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -185,7 +185,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -241,7 +241,7 @@ excelEngine.Dispose()
 
 Worksheets can be deleted from a workbook either by a worksheet host item or on accessing worksheet by using worksheets collection as illustrated.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -304,7 +304,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -365,7 +365,7 @@ Copying worksheets can be internal or external. XlsIO provides support for copyi
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -420,7 +420,7 @@ destinationWorkbook.Close();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -547,7 +547,7 @@ Represents the CopyWithoutNames copy flags.</td></tr>
 
 The following code example illustrates copying worksheets.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -590,7 +590,7 @@ destinationWorkbook.Close();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -650,7 +650,7 @@ You can also copy a worksheet before or after a particular worksheet by using th
 
 XlsIO also allows moving worksheets from one position to another. This is similar to dragging a worksheet in MS Excel. This can be performed by using the Move method. The following code example illustrates how a worksheet is moved to the second position.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -717,7 +717,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -772,7 +772,7 @@ excelEngine.Dispose()
 
 While saving files, you have options to save as Unicode, ASCII, and other Non-Unicode encoding. The following code example illustrates how to save a file to the CSV format. To know more about opening/saving a CSV file, refer to the Open a CSV File and Save a CSV File sections.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -827,7 +827,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -881,7 +881,7 @@ Save worksheet as text (*.txt)
 
 Essential XlsIO allows you to save worksheet as a text file. This can be done by leaving the delimiter with a space as shown in the following code.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -938,7 +938,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -995,7 +995,7 @@ XlsIO provides support to convert a worksheet or workbook to HTML with the basic
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1056,7 +1056,7 @@ excelEngine.Dispose() ;
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -1120,7 +1120,7 @@ XlsIO also provides various save options to control images and texts in an Excel
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1186,7 +1186,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -1261,7 +1261,7 @@ Hiding and Unhiding a Worksheet in XlsIO
 
 XlsIO also allows you to hide/unhide worksheets by using the Visibility property. The following APIs are used to hide/unhide worksheets.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1316,7 +1316,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -1369,7 +1369,7 @@ XlsIO also provides an option to activate a worksheet while opening it in the wo
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -1420,7 +1420,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -1473,7 +1473,7 @@ Excel allows you to show/hide the workbook tabs to prevent you from switching be
 
 XlsIO provides an option to hide the workbook tabs by using the IWorkbook.DisplayWorkbookTabs property. XlsIO also provides an option to get the current tab that is displayed by using the DisplayedTab property of IWorkbook. This functionality is supported only in the Excel97to2003 format.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1520,7 +1520,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -1580,7 +1580,7 @@ _Show or Hide scroll Bars_
 
 XlsIO allows control of the visibility of these horizontal and vertical scrollbars in a workbook by using the IsHScrollBarVisible and IsVScrollBarVisible properties of IWorkbook as follows.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1631,7 +1631,7 @@ excelEngine.Dispose ();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -1702,7 +1702,7 @@ _Show or Hide Grid Lines_
 
 XlsIO provides support for this feature through the IsGridLine property of IWorksheet. Color for the grid line can also be set through the GridLineColor property of IWorksheet.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1756,7 +1756,7 @@ excelEngine.Dispose ();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -1813,7 +1813,7 @@ excelEngine.Dispose()
 
 Headings are the display labels in worksheets that enable you to find out the cell number with ease. You can show/hide these headings by using the IsRowColumnHeadersVisible property of IWorksheet.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1865,7 +1865,7 @@ excelEngine.Dispose ();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -1925,7 +1925,7 @@ Tab Colors are set to highlight a particular sheet that has some important data.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -1977,7 +1977,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2045,7 +2045,7 @@ XlsIO provides support for the freeze panes functionality through the FreezePane
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2097,7 +2097,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2155,7 +2155,7 @@ _XlsIO with Freeze Pane_
 
 XlsIO also allows you to scroll to the first row in the bottom pane and first column in the right pane. It helps you to navigate to the top row while opening a spreadsheet with large number of rows/columns. Note that this works only with the sheet that has the freeze panes.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2215,7 +2215,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2280,7 +2280,7 @@ A very handy feature of Excel is its ability to view more than one copy of your 
 
 XlsIO provides support for splitting the window through the HorizontalSplit and VerticalSplit properties.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2339,7 +2339,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2416,7 +2416,7 @@ WorkSheet Protection in XlsIO
 
 XlsIO provides support for protecting and unprotecting elements in worksheets by using the Protect method of IWorksheet. Byusing the ExcelSheetProtection enumerator, you can set the elements that need protection. The following code example illustrates how to protect a worksheet with a password. It also restricts formatting columns in the worksheet.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2468,7 +2468,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2530,7 +2530,7 @@ The following sample code illustrates protection of chart sheet (with password).
 
 The following code example chooses default enumerations Contents and Objects. The password chosen in the code example is syncfusion.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2585,7 +2585,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2636,7 +2636,7 @@ excelEngine.Dispose()
 
 The protection can also be performed by using the enumerations in the code example as shown.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2691,7 +2691,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2750,7 +2750,7 @@ You can also unprotect the worksheet by using the Unprotect method of XlsIO. It 
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2804,7 +2804,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2861,7 +2861,7 @@ excelEngine.Dispose()
 
 You can remove the protection of a protected chart sheet by using the Unprotect method. The following code example illustrates this.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2915,7 +2915,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2978,7 +2978,7 @@ There may also be a need to change the first page number that starts with '1', b
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -3030,7 +3030,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -3078,7 +3078,7 @@ N> By default, page breaks are not shown in the Normal view. However, you can vi
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -3151,7 +3151,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -3247,7 +3247,7 @@ _Page Setup-Page Orientation_
 
 XlsIO defines the orientation through the Orientation property of IPageSetup. The following code example illustrates how to set the page orientation.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -3299,7 +3299,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -3368,7 +3368,7 @@ XlsIO allows scaling the page lengthwise and widthwise while printing. The follo
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -3420,7 +3420,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -3489,7 +3489,7 @@ XlsIO has APIs to define the margins in a sheet through the properties of IPageS
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -3548,7 +3548,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -3618,7 +3618,7 @@ Background images that are set this way cannot be printed. To set a Watermark th
 
 The following code example illustrates how to insert a background image.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -3673,7 +3673,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -3751,7 +3751,7 @@ _Page Setup-Paper Size_
 
 The following code example illustrates how to set the paper size in XlsIO.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -3798,7 +3798,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -3980,7 +3980,7 @@ Prints the total number of pages in the document.</td></tr>
 
 The following code example illustrates how to insert images in the header.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -4036,7 +4036,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -4098,7 +4098,7 @@ N> XlsIO does not provide any option to get the page count. You can only insert 
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -4151,7 +4151,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -4233,7 +4233,7 @@ If true, the header and footer margin is aligned with the left and right margins
 
 The following code example illustrates the usage of properties meant for header and footer options.
 {% highlight C# %}
-[C#]
+
 
 // Step 1: Instantiates the spreadsheet creation engine.
 
@@ -4283,7 +4283,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB]
+
 
 
 
@@ -4362,7 +4362,7 @@ The Print Area specifies the range of cells to be printed. You can set the print
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -4415,7 +4415,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -4473,7 +4473,7 @@ excelEngine.Dispose()
 
 MS Excel provides an option to repeat rows and columns so that the labels are displayed on every page that it takes to print the sheet. This can be selected through the Sheet tab of the Page Setup dialog box. XlsIO allows setting these titles through the APIs discussed in the following code example.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -4526,7 +4526,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -4612,7 +4612,7 @@ XlsIO allows you to set the print direction as illustrated in the following code
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -4660,7 +4660,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 

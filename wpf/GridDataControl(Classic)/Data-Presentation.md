@@ -1203,7 +1203,7 @@ The GridDataControl supports paging on demand by specifying queries in order to 
 
 {% endhighlight  %}
 {% highlight xml %}
-[Xaml]
+
 
             pager.PageCount = 400;
 
@@ -1235,7 +1235,7 @@ ViewLevel Sorting, grouping and filtering is provided. Allows to sort the view e
 
 {% endhighlight  %}
 {% highlight xml %}
-[Xaml]
+
 
                         var item = new NorthwindOrders(1000);
 

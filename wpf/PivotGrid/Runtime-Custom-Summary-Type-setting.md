@@ -76,7 +76,7 @@ The following code snippets, explains the implementation of adding Runtime Custo
 
 {% highlight C# %}  
 
-[C#]
+
 
 
 
@@ -102,7 +102,7 @@ CalcColumn.SummaryType = SummaryType.Custom;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 ' Adding Custom SummaryBases to the CustomSummaryBaseCollection property
 

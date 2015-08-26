@@ -89,7 +89,7 @@ WinLoss sparkline render as a column segment and it show the positive, negative 
 
 {% endhighlight %}
 {% highlight c# %}
-[C#]
+
 
 public class MatchDetailsModel
 

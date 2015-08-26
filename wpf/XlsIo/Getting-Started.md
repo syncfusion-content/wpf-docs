@@ -44,7 +44,7 @@ The following steps guide you to create a simple Excel document in Windows/WPF a
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -53,7 +53,7 @@ using Syncfusion.XlsIO;
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -65,7 +65,7 @@ Imports Syncfusion.XlsIO
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -78,7 +78,7 @@ ExcelEngine excelEngine = new ExcelEngine();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -91,7 +91,7 @@ Dim excelEngine As ExcelEngine = New ExcelEngine()
 
 3. Create an instance of the Excel application through the IApplication interface.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -108,7 +108,7 @@ application.DefaultVersion = ExcelVersion.Excel2013;
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -125,7 +125,7 @@ application.DefaultVersion = ExcelVersion.Excel2013
 
 4. Create a workbook. A newly created workbook has three worksheets by default. You can change the number of worksheets by using the Create method of IWorkBook as shown in the following code.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -137,7 +137,7 @@ IWorkbook workbook = application.Workbooks.Create(2);
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -155,7 +155,7 @@ N> See Workbook and Worksheet for more details.
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -171,7 +171,7 @@ sheet.Range["A1"].Text = "Hello World";
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -190,7 +190,7 @@ sheet.Range("A1").Text = "Hello World"
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -212,7 +212,7 @@ workbook.Close();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -240,7 +240,7 @@ N> To know more about saving the workbook, see Save.
 
 {% highlight C# %}
 
-[C#]
+
 
 
 
@@ -251,7 +251,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -263,7 +263,7 @@ excelEngine.Dispose()
 
 The following code example illustrates how to create a hello world document.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -297,7 +297,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 

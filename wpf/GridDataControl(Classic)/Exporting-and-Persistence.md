@@ -312,7 +312,7 @@ The following code example illustrates how to export the entire content of the G
 
 {% highlight c# %}
 
-[CS]
+
 
 
 
@@ -368,7 +368,7 @@ The following screenshot shows the exported pdf document:
 
 The following code example illustrates how to export the entire content of the GridData control into a PdfLightTable document file.
 {% highlight c# %}
-[CS]
+
 
 // Dialog to save the newly created pdf document.
 
@@ -426,7 +426,7 @@ You can convert the selected range of the GridData control into a pdf file.
 
 The following code illustrates the conversion of a selected range of the GridData control to a PdfGrid.
 {% highlight c# %}
-[CS]
+
 
 // Dialog to save the newly created pdf document.
 
@@ -478,7 +478,7 @@ The following screenshot shows the exported pdf document of a selected range of 
 
 The following code illustrates the conversion of a selected range of the GridData control to a PdfLightTable document.
 {% highlight c# %}
-[CS]
+
 
 // Dialog to save the newly created pdf document.
 
@@ -757,7 +757,7 @@ Use the following code to export a customized GridData control:
 {% endhighlight  %}
 Button Click Event Code:
 {% highlight c# %}
-[CS]
+
 
 private void Exportbtn_Click(object sender, RoutedEventArgs e)
 

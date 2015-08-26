@@ -31,7 +31,7 @@ The following code illustrates how to bind the HyperlinkCommand__a button:
 
 {%highlight xml%}
 
-[XAML]
+
 
 
 

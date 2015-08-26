@@ -17,7 +17,7 @@ XlsIO has support for dynamically inserting rows and columns into a new/existing
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -75,7 +75,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -136,7 +136,7 @@ excelEngine.Dispose()
 
 XlsIO also allows you to insert multiple rows and columns. The following code example illustrates this.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -194,7 +194,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -258,7 +258,7 @@ You can also preserve the previous or next row/column formats by using XlsIO. Th
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -308,7 +308,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -389,7 +389,7 @@ It is often necessary to delete unwanted cells, rows, and columns in a spreadshe
 
 To delete cells in XlsIO, you can make use of the Clear method. The following code example demonstrates this.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -447,7 +447,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -521,7 +521,7 @@ Deleting a row moves the following rows one step up and deleting a column moves 
 
 XlsIO allows deleting rows and columns by using the IWorksheet.DeleteRow and IWorksheet.DeleteColumn methods. The following code example illustrates how to delete rows and columns.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -579,7 +579,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -638,7 +638,7 @@ excelEngine.Dispose()
 
 You can also delete multiple rows as follows.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -696,7 +696,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -780,7 +780,7 @@ XlsIO provides support to hide/unhide rows and columns. This can be done by usin
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -850,7 +850,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -929,7 +929,7 @@ _Worksheet with a hidden row_
 
 XlsIO also provides options to focus a particular row/column when it is opened by using the TopVisibleRow and LeftVisibleColumn properties, respectively.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -987,7 +987,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -1054,7 +1054,7 @@ XlsIO provides support to hide/unhide rows and columns. This can be done by usin
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1116,7 +1116,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -1234,7 +1234,7 @@ XlsIO allows you to specify a column width of 0 to 255 in a spreadsheet. This va
 
 XlsIO provides support for setting the RowHeight and ColumnWidth properties in a worksheet. You can also set the column width and row height in pixels by using the IWorksheet.SetColumnWidthInPixel and IWorksheet.SetRowHeightInPixel methods, respectively.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1304,7 +1304,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -1396,7 +1396,7 @@ XlsIO allows you to resize the cells in a column or row based on the row/column 
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1458,7 +1458,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -1526,7 +1526,7 @@ You can also AutoFit single row/column as follows.
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1578,7 +1578,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -1640,7 +1640,7 @@ N> Here column and row indexes are "zero based".
 
 It is also possible to AutoFit multiple rows/column based on the range specified as follows.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1710,7 +1710,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -1786,7 +1786,7 @@ XlsIO also allows to AutoFit a row/column based on the content in a range of cel
 
 
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -1856,7 +1856,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -1951,7 +1951,7 @@ Grouping and Ungrouping in Essential XlsIO
 
 Essential XlsIO provides support to group and ungroup rows and columns by using the Group and UnGroup methods of IRange. You can also collapse or expand groups through one of its overload.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2025,7 +2025,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 
@@ -2123,7 +2123,7 @@ Expand/Collapse Groups
 
 Essential XlsIO supports Expand and Collapse features for the existing groups. Expand group comes with overloads that allow to expand the entire parent including child groups. The Expand and Collapse features are available for both Column and Row groups.
 {% highlight C# %}
-[C#]
+
 
 
 
@@ -2181,7 +2181,7 @@ excelEngine.Dispose();
 {% endhighlight %}
 
 {% highlight vbnet %}
-[VB.NET]
+
 
 
 

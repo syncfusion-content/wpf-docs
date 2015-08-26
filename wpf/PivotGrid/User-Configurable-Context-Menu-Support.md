@@ -41,7 +41,7 @@ This User-Configurable Context Menu is available only in the RowPivotsOnly mode.
 
 {% highlight C# %} 
 
-[C#]
+
 
 
 
@@ -57,7 +57,7 @@ This following code illustrates how to reorder the Context Menu Items of the Use
 
 {% highlight C# %}  
 
-[C#]
+
 
 
 

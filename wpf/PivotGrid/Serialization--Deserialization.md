@@ -117,7 +117,7 @@ Serialization/Deserialization can be achieved using the following code snippet,
 
 {% highlight C# %} 
 
-[C#]
+
 
 
 
@@ -147,7 +147,7 @@ this.pivotGrid1.Deserialize(@"C:/PivotGrid.xml");
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 
 

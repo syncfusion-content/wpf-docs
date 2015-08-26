@@ -21,7 +21,7 @@ The following code example illustrates how to add the Dragging Items to an appli
 
 
 {% highlight xml %}
-[XAML]
+
 
 
 
@@ -39,7 +39,7 @@ The following code example illustrates how to add the Dragging Items to an appli
 
 
 {% highlight c# %}
-[C#]
+
 
 
 

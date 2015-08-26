@@ -91,7 +91,7 @@ You can use this property to specify a custom string in the Pivot Computation co
 
 {% highlight xml %} 
 
-[XAML]
+
 
 
 
@@ -101,7 +101,7 @@ You can use this property to specify a custom string in the Pivot Computation co
 
 {% highlight C# %}  
 
-[C#]
+
 
 
 
@@ -115,7 +115,7 @@ SummaryType = SummaryType.DisplayIfDiscreteValuesEqual, PadString = "***" 
 
 {% highlight vbnet %}
 
-[VB]
+
 
 
 
@@ -174,7 +174,7 @@ The following code sample explains how to set PadString to display the discrete 
 
 {% highlight xml %} 
 
-[XAML]
+
 
 
 
@@ -184,7 +184,7 @@ The following code sample explains how to set PadString to display the discrete 
 
 {% highlight C# %}  
 
-[C#]
+
 
 
 
@@ -199,7 +199,7 @@ SummaryType = SummaryType.DisplayIfDiscreteValuesEqual, PadString = "999" 
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 
 

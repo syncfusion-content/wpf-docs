@@ -69,7 +69,7 @@ The following code sample demonstrates adding theming to the PivotGrid control.
 
 {% highlight xml %} 
 
-[XAML]
+
 
       <syncfusion:PivotGridControl  x:Name="pivotGrid" VisualStyle="Transparent"/>
 
@@ -78,7 +78,7 @@ The following code sample demonstrates adding theming to the PivotGrid control.
 
 {% highlight C# %}  
 
-[C#]
+
 
        this.pivotGrid.VisualStyle = PivotGridVisualStyle.Transparent;
 

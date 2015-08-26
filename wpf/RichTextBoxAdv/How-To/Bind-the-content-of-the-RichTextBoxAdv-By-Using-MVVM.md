@@ -18,7 +18,7 @@ The following code example illustrates defining MVVM extension for the XAMLText 
 {% highlight xml %}
 
 
-[XAML]
+
 
 
 
@@ -29,7 +29,7 @@ The following code example illustrates defining MVVM extension for the XAMLText 
 
 {% highlight C# %}
 
-[C#]
+
 
 
 

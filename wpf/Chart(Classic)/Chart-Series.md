@@ -2060,7 +2060,7 @@ Add Empty Point to the Chart, by using the following code.
 
 Set ShowEmptyPoints to True to enable Empty Point.
 {% highlight xml %}
-[Xaml]
+
 
 
 
@@ -2091,7 +2091,7 @@ This enables the users to customize the Fast chat types like FastScatter, FastCo
 
 Add customization support for FastChart types, by using the following code.
 {% highlight xml %}
-[Xaml] 
+ 
 
 
 

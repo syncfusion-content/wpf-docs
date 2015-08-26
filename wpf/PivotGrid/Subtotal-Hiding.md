@@ -98,7 +98,7 @@ To hide sub-totals, set the ShowSubTotals property as False as illustrated here.
 
 {% highlight xml %} 
 
-[XAML]
+
 
 <Grid>
 
@@ -118,7 +118,7 @@ To hide sub-totals, set the ShowSubTotals property as False in the MainWindow() 
 
 {% highlight C# %} 
 
-[C#]
+
 
 public MainWindow()
 
@@ -134,7 +134,7 @@ public MainWindow()
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Public Sub MainWindow()
 
@@ -160,7 +160,7 @@ To hide sub-totals, set the ShowColumnSubTotals property as False as illustrated
 
 {% highlight xml %} 
 
-[XAML]
+
 
 <Grid>
 
@@ -180,7 +180,7 @@ To hide sub-totals for columns, set the ShowColumnSubTotals property to False in
 
 {% highlight C# %}  
 
-[C#]
+
 
 public MainWindow()
 
@@ -196,7 +196,7 @@ public MainWindow()
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Public Sub MainWindow()
 
@@ -220,7 +220,7 @@ To hide sub-totals, set the ShowRowSubTotals property as False as illustrated he
 
 {% highlight xml %} 
 
-[XAML]
+
 
 <Grid>
 
@@ -240,7 +240,7 @@ To hide sub-totals for rows, set the ShowRowSubTotals property as False in the M
 
 {% highlight C# %}  
 
-[C#]
+
 
 public MainWindow()
 
@@ -256,7 +256,7 @@ _}_
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 Public Sub MainWindow()
 

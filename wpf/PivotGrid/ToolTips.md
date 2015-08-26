@@ -67,7 +67,7 @@ To show the ToolTip in the PivotGrid control you need to set the PivotGrid contr
 
 {% highlight C# %} 
 
-[C#]
+
 
 //Enable Tooltip for PivotGridControl
 
@@ -77,7 +77,7 @@ this.pivotGrid1.ToolTipEnabled = true;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 //Enable Tooltip for PivotGridControl
 
@@ -89,7 +89,7 @@ You can set the appearance of ToolTips with respect to their styles. Each style 
 
 {% highlight C# %}  
 
-[C#]
+
 
 //Enable Tooltip for RowHeaderCellStyle
 
@@ -117,7 +117,7 @@ this.pivotGrid1.SummaryCellStyle.ToolTipEnabled = true;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 //Enable Tooltip for RowHeaderCellStyle
 
@@ -159,7 +159,7 @@ Custom data templates can be set to the PivotGrid control’s ToolTip. To do so,
 
 {% highlight C# %}   
 
-[C#]
+
 
 //Set the Custom DataTemplate for PivotGridControl’s Tooltip
 
@@ -169,7 +169,7 @@ this.pivotGrid1.CustomToolTipTemplateKey = "CustomTemplateTooltip";
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 //Set the Custom DataTemplate for PivotGridControl’s Tooltip
 
@@ -187,7 +187,7 @@ You can set the data template of ToolTip with respect to its styles. Each style 
 
 {% highlight C# %}  
 
-[C#]
+
 
 //Set the Custom DataTemplate for ColumnHeaderCellStyle Tooltip
 
@@ -213,7 +213,7 @@ this.pivotGrid1.SummaryCellStyle.CustomToolTipTemplateKey = "SummaryCellTemplate
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 //Set the Custom DataTemplate for ColumnHeaderCellStyle Tooltip
 

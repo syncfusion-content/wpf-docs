@@ -40,7 +40,7 @@ To enable RTL support, the FlowDirection property of the PivotGrid control needs
 
 {% highlight xml %} 
 
-[XAML]
+
 
 <syncfusion:PivotGridControl FlowDirection="RightToLeft" x:Name="pivotGrid1" ItemSource="{Binding ProductSalesData}" >  
 
@@ -48,7 +48,7 @@ To enable RTL support, the FlowDirection property of the PivotGrid control needs
 
 {% highlight C# %}  
 
-[C#]
+
 
   this.pivotGrid1.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 
@@ -56,7 +56,7 @@ To enable RTL support, the FlowDirection property of the PivotGrid control needs
 
 {% highlight vbnet %} 
 
-[VB]
+
 
   Me.pivotGrid1.FlowDirection = System.Windows.FlowDirection.RightToLeft;
 

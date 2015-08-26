@@ -99,7 +99,7 @@ You can enable updating in value and total cells by setting the EnableValueEditi
 
 {% highlight C# %} 
 
-[C#]
+
 
 // To Enable Editing Value cells in PivotGridControl
 
@@ -115,7 +115,7 @@ this.pivotGrid1.EnableUpdating = true;
 
 {% highlight vbnet %}
 
-[VB]
+
 
 ‘To Enable Editing in PivotGridControl
 
@@ -143,7 +143,7 @@ A custom editing manager can be used so that you can format the PivotCellInfo. T
 
 {% highlight C# %}  
 
-[C#]
+
 
 //User derived EditManager.
 
@@ -191,7 +191,7 @@ public class CustomEditManager : PivotEditingManager
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 'User derived EditManager.
 
@@ -241,7 +241,7 @@ While updating the PivotGrid control you can throttle its updating speed which c
 
 {% highlight C# %}   
 
-[C#]
+
 
 // To set throttle rate for updating in PivotGridControl
 
@@ -251,7 +251,7 @@ this.pivotGrid1.UpdateManager.ThrottleUpdateRate = 300;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 ‘To set throttle rate for updating in PivotGridControl
 

@@ -14,7 +14,7 @@ Sorting data enables you to quickly visualize and understand your data better, o
 
 {% highlight C# %} 
 
-[C#]
+
 
 // Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparer
 
@@ -70,7 +70,7 @@ public class ReverseOrderComparer : IComparer
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 ' Adding Pivot Rows to Grid with FieldMappingName, TotalHeader and Comparer
 

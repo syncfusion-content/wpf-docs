@@ -155,7 +155,7 @@ this.PivotGridControl1.FreezeHeaders = true;
 
 {% highlight vbnet %} 
 
-[VB]
+
 
 ' To Freeze Grid Headers
 

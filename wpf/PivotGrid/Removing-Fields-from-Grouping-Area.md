@@ -41,7 +41,7 @@ The following code illustrates how to enable the remove button:
 
 {% highlight C# %}  
 
-[C#]
+
 
 this.pivotGrid1.GroupingBar.AllowRemove = true;
 
@@ -49,7 +49,7 @@ this.pivotGrid1.GroupingBar.AllowRemove = true;
 
 {% highlight vbnet %}  
 
-[VB]
+
 
 Me.pivotGrid1.GroupingBar.AllowRemove = True
 
