@@ -11,7 +11,7 @@ documentation: ug
 
 This section deals with the appearance of Ribbon control and contains the following topics:
 
-# Active Color Scheme
+## Active Color Scheme
 
 Essential Tools WPF now provides support to set the active color scheme for the Ribbon control to enhance the appearance of the control. This is achieved by using the ActiveColorScheme attached property of the Ribbon Control.
 
@@ -76,7 +76,7 @@ Run the application. The following output is displayed.
 
 
 
-Setting Custom color scheme for Blend Theme:
+### Setting Custom color scheme for Blend Theme:
 
 You can also set 'custom' active color schemes for the Ribbon control. This enables you to display the Ribbon control in any color of your choice. To set "Red" color as the custom color scheme for the Ribbon control, use the below code
 
@@ -101,7 +101,7 @@ Ribbon.SetActiveColorScheme(ribbon, Brushes.Red);
 
 
 
-# Visual Style of Ribbon
+## Visual Style of Ribbon
 
 Essential Tools WPF now provides support to set the visual style for the Ribbon control to enhance the appearance of the control. This is achieved by using the VisualStyle attached property of the Ribbon Control.
 

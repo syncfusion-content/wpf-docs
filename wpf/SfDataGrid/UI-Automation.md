@@ -302,7 +302,7 @@ public MainWindow()
 }
 {% endhighlight %}
 
-### Quick Test Professional (QTP)
+## Quick Test Professional (QTP)
 
 QTP is an automated testing software designed for testing various software applications and environments. It performs functional and regression testing through a user interface, such as native GUI or Web interface. It works by identifying the objects in the application user interface or web page and performing desired operations. It is usually used for UI based Test-case automation.
 
