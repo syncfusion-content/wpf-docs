@@ -110,7 +110,7 @@ To assign Values in Resource, the resource file need to be updated as per the fo
 
 3. Similarly add all need key (Name) for required assembly for example (Syncfusion.Tools.Wpf.dll). And the following screenshot displays the String property names for Tools.WPF controls with French values.
 
-   ![http://help.syncfusion.com/ug/wpf/ImagesExt/image252_12.jpg](Common-Supports_images/Common-Supports_img7.jpeg)
+   ![](Common-Supports_images/Common-Supports_img7.jpeg)
 
    {:.prettyprint}
 

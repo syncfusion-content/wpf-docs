@@ -3076,7 +3076,7 @@ diagramModel.Connections.Add(l1)
 {% endhighlight  %}
 The following screenshot illustrates "Hello" text on an Alice Blue background with an image on the left.
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image29_92.jpg](Line-Connectors_images/Line-Connectors_img37.jpeg)
+![](Line-Connectors_images/Line-Connectors_img37.jpeg)
 
 
 

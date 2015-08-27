@@ -47,7 +47,7 @@ Dim dataBase As String = "Northwind.mdb"‘Opens the Word document.Dim doc
 {% endhighlight   %}
 
 
-N> For more information on mail merge using DocIO, you can refer to online documentation link: [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/46mailmerge.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+N> For more information on mail merge using DocIO, you can refer to online documentation link: <http://docs.syncfusion.com/windowsforms/docio/mail-merge#mail-merge-1>
  
 
 ### Find and Replace
@@ -83,7 +83,7 @@ The following code example shows you how to perform a simple “Find and Replace
 
 
 
-N> For more information on performing the find and replace operation using DocIO, you can refer to online documentation link: [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/45findandreplace.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+N> For more information on performing the find and replace operation using DocIO, you can refer to online documentation link: <http://docs.syncfusion.com/windowsforms/docio/find-and-replace>
 
 
 
@@ -120,7 +120,7 @@ The following code example shows how to insert the bookmark using DocIO. Here, t
 
 
 
-N> For more information on working with bookmarks using DocIO, you can refer to the online documentation link: [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/4413bookmark.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)__
+N> For more information on working with bookmarks using DocIO, you can refer to the online documentation link: <http://docs.syncfusion.com/windowsforms/docio/working-with-bookmarks>
 
 ### Page Numbers
 
@@ -195,7 +195,8 @@ The following code example shows how to insert the text watermark to the Word do
 {% endhighlight   %}
 
 
-N> For more information on adding watermarks to a Word document using DocIO, refer to the online documentation link: [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/4222watermark.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+N> For more information on adding watermarks to a Word document using DocIO, refer to the online documentation link: 
+<http://docs.syncfusion.com/windowsforms/docio/working-with-word-documents#working-with-watermarks>
 
 ### Header or Footer
 
@@ -235,7 +236,7 @@ You can set the header and footer by using the HeadersFooters property in the 
 ‘Opens the Word document.Dim doc As WordDocument = New WordDocument("original.doc")‘Adds header and footer to each section in the document.For Each sec As WSection In doc.Sections     ‘Header.     Dim para As WParagraph = New WParagraph(doc)     para.AppendField("page", FieldType.FieldPage)     para.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Right     sec.HeadersFooters.Header.Paragraphs.Add(para)     ‘Footer.     Dim para1 As WParagraph = New WParagraph(doc)     para1.AppendText("Internal")     para1.ParagraphFormat.HorizontalAlignment = HorizontalAlignment.Left     sec.HeadersFooters.Footer.Paragraphs.Add(para1)Next‘Saves the document.doc.Save("HeaderFooterDocIO.doc", FormatType.Doc)‘Closes the document.doc.Close()
 {% endhighlight   %}
 
-N> For more information on inserting Headers and Footers to a Word document using DocIO, you can refer to the online documentation link: [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/432headersandfooters.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+N> For more information on inserting Headers and Footers to a Word document using DocIO, you can refer to the online documentation link: <http://docs.syncfusion.com/windowsforms/docio/working-with-sections#working-with-headers-and-footers>
 
 
 
@@ -294,7 +295,7 @@ The following code example shows how to insert an empty table to a Word document
 ‘Creates a new Word document.Dim doc As IWordDocument = New WordDocument()Dim section As IWSection = doc.AddSection()‘Adds a table to the document.Dim table As IWTable = section.AddTable()table.ResetCells(3, 2)‘Saves the document.doc.Save("TableDocIO.doc")
 {% endhighlight   %}
 
-N> For more information on creating tables using DocIO, refer to online documentation link: [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/433table.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+N> For more information on creating tables using DocIO, refer to online documentation link: <http://docs.syncfusion.com/windowsforms/docio/working-with-tables>
 
 Comments
 
@@ -354,7 +355,8 @@ The CommentsCollection property holds all the comments present in the Word doc
 {% endhighlight   %}
 
 
-N> For more information on working with the comments using DocIO, you can refer to the online documentation link:_ [http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/44143comment.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+N> For more information on working with the comments using DocIO, you can refer to the online documentation link: <http://docs.syncfusion.com/windowsforms/docio/working-with-paragraphs#comments>
+
 
 ### Document Protection
 
@@ -400,9 +402,8 @@ DocIO uses ProtectionType property to specify the protection type of the Word 
 {% endhighlight   %}
 
 
-Refer to the online documentation link for more details about ways to protect the Word documents using DocIO.
+Refer to the online documentation link for more details about ways to protect the Word documents using DocIO.<http://docs.syncfusion.com/windowsforms/docio/overview.htm>
 
-[http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/47security.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
 
 ### Table of Contents
 
@@ -436,9 +437,9 @@ The following code example illustrates how to insert and update the table of con
 {% endhighlight   %}
 
 
-Refer to the online documentation link for more information about adding the table of contents to the Word document using DocIO:
+Refer to the online documentation link for more information about adding the table of contents to the Word document using DocIO: <http://docs.syncfusion.com/windowsforms/docio/working-with-tables.htm>
 
-[http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm#!documents/4418tableofcontents.htm](http://help.syncfusion.com/Ug_101/Reporting/DocIO/Windows%20Forms/default.htm)
+
 
 
 

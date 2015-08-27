@@ -45,7 +45,7 @@ The LeftDragProvider property of the DockingManager is used to apply custom temp
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1050555374.jpg](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)
+![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)
 
 
 
@@ -83,7 +83,7 @@ The Custom control template for right drag provider is applied using the RightDr
 
 
 {% endhighlight  %}
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1323091430.jpg](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)
+![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)
 
 
 
@@ -117,7 +117,7 @@ Control templates for top drag providers is applied using the TopDragProvider pr
 
 {% endhighlight  %}
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image350502413.jpg](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg)
+![](Styles-and-Templates_images/Styles-and-Templates_img3.jpeg)
 
 
 
@@ -300,7 +300,7 @@ N> For adding the Custom header template to the Docking Manager, you must have t
 
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1256965732.jpg](Styles-and-Templates_images/Styles-and-Templates_img5.jpeg)
+![](Styles-and-Templates_images/Styles-and-Templates_img5.jpeg)
 
 
 
@@ -376,7 +376,7 @@ N> For adding the Custom Close Button template to the DockingManager, you must a
 
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image240648422.jpg](Styles-and-Templates_images/Styles-and-Templates_img6.jpeg)
+![](Styles-and-Templates_images/Styles-and-Templates_img6.jpeg)
 
 
 
@@ -420,7 +420,7 @@ N> For adding the Custom Menu Button template to the DockingManager, you must al
 
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image80401031.jpg](Styles-and-Templates_images/Styles-and-Templates_img7.jpeg)
+![](Styles-and-Templates_images/Styles-and-Templates_img7.jpeg)
 
 
 

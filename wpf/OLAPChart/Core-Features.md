@@ -684,7 +684,7 @@ End Sub
 
 #### See Also
 
-[Chart Series](http://help.syncfusion.com/ug_82/WPFBI_Chart/ChartSeries.html)
+[Chart Series](http://docs.syncfusion.com/wpf/sfchart/series.html)
 
 ### How to enable chart animations
 

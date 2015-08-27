@@ -22,7 +22,12 @@ To set this property, use the following code:
 <syncfusion:CalendarEdit Name="calendarEdit" Width="400" IsDayNamesAbbreviated="False"/>
 {% endhighlight  %}
 {% highlight c# %}
-//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Disable the DayNameAbbreviatedcalendarEdit.IsDayNamesAbbreviated = false; //Adding CalendarEdit as window contentthis.Content = calendarEdit;
+//Creating an instance of CalendarEdit 
+controlCalendarEdit calendarEdit = new CalendarEdit();
+//Disable the DayNameAbbreviated
+calendarEdit.IsDayNamesAbbreviated = false; 
+//Adding CalendarEdit as window content
+this.Content = calendarEdit;
 {% endhighlight  %}
 
 
@@ -40,12 +45,17 @@ To set the IsMonthNamesAbbreviated property, use the following code.
 
 {% highlight xml %}
 
-<!-- Adding calendar with month name been abbreviated --><syncfusion:CalendarEdit Name="calendarEdit" IsMonthNameAbbreviated="True"/>
+<!-- Adding calendar with month name been abbreviated -->
+<syncfusion:CalendarEdit Name="calendarEdit" IsMonthNameAbbreviated="True"/>
 {% endhighlight %}
+
 {% highlight c# %}
-//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();
-//Disable the DayNameAbbreviatedcalendarEdit.IsMonthNameAbbreviated = true;
-//Adding CalendarEdit as window contentthis.Content = calendarEdit;
+//Creating an instance of CalendarEdit 
+controlCalendarEdit calendarEdit = new CalendarEdit();
+//Disable the DayNameAbbreviated
+calendarEdit.IsMonthNameAbbreviated = true;
+//Adding CalendarEdit as window content
+this.Content = calendarEdit;
 {% endhighlight %}
 
 

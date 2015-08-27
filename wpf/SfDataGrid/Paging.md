@@ -13,7 +13,7 @@ This section explains you how to use Paging in SfDataGrid and you can see the ty
 
 ## Overview:
 
-The DataGrid control provides interactive support to manipulate the data using the SfDataPager control. It provides many features. Therefore, you can easily manage the DataPaging.To learn more about the SfDataPager control, you can [click here](/wpf/sfdatapager).
+The DataGrid control provides interactive support to manipulate the data using the SfDataPager control. It provides many features. Therefore, you can easily manage the DataPaging.To learn more about the SfDataPager control, you can [click here](http://help.syncfusion.com/ug/wpf/sfdatagrid/documents/datapagercontrol.htm).
 
 There are two different modes in Data Paging as follows,
 
@@ -192,13 +192,17 @@ The following code example illustrates how to use ResetCache method,
 
 {% highlight C# %}
 
+
+
+
+
 private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs  args)
-{         
-	sfDataPager.LoadDynamicItems(args.StartIndex,source.Skip(args.StartIndex).Take(args.PageSize));
 
-	(sfDataPager.PagedSource as PagedCollectionView).ResetCache();
+{         sfDataPager.LoadDynamicItems(args.StartIndex,source.Skip(args.StartIndex).Take(args.PageSize));
+
+(sfDataPager.PagedSource as PagedCollectionView).ResetCache();
+
 }
-
 {% endhighlight %}
 
 

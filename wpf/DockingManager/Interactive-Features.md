@@ -394,7 +394,7 @@ The following code illustrates changing the tab strip placement.
 {% endhighlight  %}
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image140068940.jpg](Interactive-Features_images/Interactive-Features_img7.jpeg)
+![](Interactive-Features_images/Interactive-Features_img7.jpeg)
 
 
 
@@ -402,7 +402,7 @@ _DockTabAlignment = "Bottom"_
 
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1681845622.jpg](Interactive-Features_images/Interactive-Features_img8.jpeg)
+![](Interactive-Features_images/Interactive-Features_img8.jpeg)
 
 
 
@@ -496,7 +496,7 @@ DockingManager.SetCanFloat(Properties, true);</td></tr>
 {% endhighlight  %}
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image803644431.jpg](Interactive-Features_images/Interactive-Features_img11.jpeg)
+![](Interactive-Features_images/Interactive-Features_img11.jpeg)
 
 
 
@@ -504,7 +504,7 @@ _CanFloat = "False"_
 
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image188242848.jpg](Interactive-Features_images/Interactive-Features_img12.jpeg)
+![](Interactive-Features_images/Interactive-Features_img12.jpeg)
 
 
 
@@ -526,7 +526,7 @@ DockingManager.SetCanClose(Properties, true);
 {% endhighlight  %}
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1015755465.jpg](Interactive-Features_images/Interactive-Features_img13.jpeg)
+![](Interactive-Features_images/Interactive-Features_img13.jpeg)
 
 
 
@@ -534,7 +534,7 @@ _CanClose = "False"_
 
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1824565565.jpg](Interactive-Features_images/Interactive-Features_img14.jpeg)
+![](Interactive-Features_images/Interactive-Features_img14.jpeg)
 
 
 
@@ -562,7 +562,7 @@ Here is the code snippet for setting the above property.
 {% endhighlight  %}
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image611161089.jpg](Interactive-Features_images/Interactive-Features_img15.jpeg)
+![](Interactive-Features_images/Interactive-Features_img15.jpeg)
 
 
 
@@ -570,7 +570,7 @@ _AutoHideVisibility = "False"_
 
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1917721802.jpg](Interactive-Features_images/Interactive-Features_img16.jpeg)
+![](Interactive-Features_images/Interactive-Features_img16.jpeg)
 
 
 
@@ -691,7 +691,7 @@ DockingManager.SetCanDrag(Properties, true);
 {% endhighlight  %}
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1537050122.jpg](Interactive-Features_images/Interactive-Features_img17.jpeg)
+![](Interactive-Features_images/Interactive-Features_img17.jpeg)
 
 
 
@@ -699,7 +699,7 @@ _CanDrag = "False"_
 
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image27394988.jpg](Interactive-Features_images/Interactive-Features_img18.jpeg)
+![](Interactive-Features_images/Interactive-Features_img18.jpeg)
 
 
 
@@ -829,7 +829,7 @@ The following code snippet is used to change the Drag mode of the DockingManager
 {% endhighlight  %}
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1191835022.jpg](Interactive-Features_images/Interactive-Features_img20.jpeg)
+![](Interactive-Features_images/Interactive-Features_img20.jpeg)
 
 
 
@@ -837,7 +837,7 @@ _Normal Drag Mode_
 
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image745951164.jpg](Interactive-Features_images/Interactive-Features_img21.jpeg)
+![](Interactive-Features_images/Interactive-Features_img21.jpeg)
 
 
 
@@ -845,7 +845,7 @@ _Border Drag Mode_
 
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1136896003.jpg](Interactive-Features_images/Interactive-Features_img22.jpeg)
+![](Interactive-Features_images/Interactive-Features_img22.jpeg)
 
 
 
@@ -1051,7 +1051,7 @@ The default value is set to True.
 
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image354521017.jpg](Interactive-Features_images/Interactive-Features_img26.jpeg)
+![](Interactive-Features_images/Interactive-Features_img26.jpeg)
 
 
 
@@ -1071,7 +1071,7 @@ DockingManager.SetIsContextMenuButtonVisible(grid1,false);
 {% endhighlight  %}
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image1839791936.jpg](Interactive-Features_images/Interactive-Features_img27.jpeg)
+![](Interactive-Features_images/Interactive-Features_img27.jpeg)
 
 
 
@@ -1130,7 +1130,7 @@ The Float window can be resized to its child size by setting the sizeToContentIn
 
 
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/image393773567.jpg](Interactive-Features_images/Interactive-Features_img28.jpeg)
+![](Interactive-Features_images/Interactive-Features_img28.jpeg)
 
 
 
@@ -1190,7 +1190,7 @@ This property allows you to specify the your own customized style for the Tab co
 
 {% endhighlight  %}
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/DocumentTabControlStyle.jpg](Interactive-Features_images/Interactive-Features_img29.jpeg)
+![](Interactive-Features_images/Interactive-Features_img29.jpeg)
 
 
 
@@ -1220,7 +1220,7 @@ This property allows you to specify your customized style for tab items inside t
 
 {% endhighlight  %}
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/DocumentTabItemStyle%20in%20TDI%20mode.jpg](Interactive-Features_images/Interactive-Features_img30.jpeg)
+![](Interactive-Features_images/Interactive-Features_img30.jpeg)
 
 
 
@@ -1256,7 +1256,7 @@ This property is used to specify the customized style for the MDI window header,
 
 {% endhighlight  %}
 
-![http://help.syncfusion.com/ug_82/WPFUI_Tools/Images/DocumentMDIHeaderStyle%20in%20MDI%20mode.jpg](Interactive-Features_images/Interactive-Features_img31.jpeg)
+![](Interactive-Features_images/Interactive-Features_img31.jpeg)
 
 
 

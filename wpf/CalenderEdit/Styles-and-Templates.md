@@ -65,7 +65,8 @@ _Style set for Day Cell_
 
 ## Day Name Cells Style
 
-You can set the style of the day name cell, using the DayNameCellsStyle property. Use the following code example to set this property.
+You can set the style of the day name cell, using the DayNameCellsStyle property. Use the following code example to 
+set this property.
 
 
 {% highlight xml %}
@@ -111,7 +112,8 @@ _Style set for Day Name Cell_
 
 ## Data Template for Day Cell
 
-You can create a data template for the day cell, using the DayCellsDataTemplate property. This dependency property sets the day cell data template using the following code example.
+You can create a data template for the day cell, using the DayCellsDataTemplate property. This dependency property 
+sets the day cell data template using the following code example.
 
 {% highlight xml %}
 
@@ -169,7 +171,8 @@ _Data Template set for Day Cell_
 
 ## Data Template for Day Name Cell
 
-You can create a data template for the day name cell, using the DayNameCellsDataTemplate property. This dependency property sets the day name cell data template using the following code example.
+You can create a data template for the day name cell, using the DayNameCellsDataTemplate property. This dependency 
+property sets the day name cell data template using the following code example.
 
 
 

@@ -32,10 +32,11 @@ The following code explains how to declare the ButtonAdv control using XAML.
 
 <sync:ButtonAdv Label="Hello World"/>
 
-
+{% endhighlight %}
 
 The ButtonAdv control can be created using the C# code as follows:
-{% endhighlight %}
+
+
 {% highlight c# %}
 
 

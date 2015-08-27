@@ -1469,7 +1469,7 @@ The property dialog or property window lets you to modify the values of properti
 
 The property dialog has tabbed structure. There are five tabs available by default, namely Chart, ChartArea, ChartSeries, ChartAxis and ChartLegend. You can also add custom tabs to property window, which would help you to access the properties that are not available in these default tabs (For example, you can add custom tab which would modify the Chart Annotation points).
 
-The property window has [localization support](http://help.syncfusion.com/ug_84/User%20Interface/WPF/Chart/default.htm?turl=localizationsupport.htm). The properties and their options can be viewed in local languages just by adding .resx file with local string for corresponding key values in the application.
+The property window has [localization support](http://docs.syncfusion.com/wpf/chart%28classic%29/localization-support.htm). The properties and their options can be viewed in local languages just by adding .resx file with local string for corresponding key values in the application.
 
 N> Any changes done in the property window directly affects the Chart control from Essential studio version 9.1 onwards whereas earlier versions have a preview chart in the property window to view the modifications.
 

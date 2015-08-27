@@ -21,6 +21,7 @@ For setting the selection range mode, use the following code.
 <!-- Adding CalendarEdit with selection range mode -->
 <syncfusion:CalendarEdit Name="calendarEdit" SelectionRangeMode="WholeColumn"/>
 {% endhighlight  %}
+
 {% highlight c# %}
 //Creating an instance of CalendarEdit control
 CalendarEdit calendarEdit = new CalendarEdit();

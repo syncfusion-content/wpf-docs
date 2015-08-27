@@ -9,7 +9,8 @@ documentation: ug
 
 # Calendar Style
 
-Using the CalendarStyle property, you can enhance the appearance of the CalendarEdit control. This dependency property sets the calendar style for the control. 
+Using the CalendarStyle property, you can enhance the appearance of the CalendarEdit control. This dependency property 
+sets the calendar style for the control. 
 
 _Property table_
 
@@ -31,7 +32,12 @@ Use the following code example to set this property.
 <syncfusion:CalendarEdit Name="calendarEdit" CalendarStyle="Standard"/>
 {% endhighlight %}
 {% highlight c# %}
-//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting calendar style as standardcalendarEdit.CalendarStyle = CalendarStyle.Standard;//Adding CalendarEdit as window contentthis.Content = calendarEdit;
+//Creating an instance of CalendarEdit 
+controlCalendarEdit calendarEdit = new CalendarEdit();
+//Setting calendar style as standard
+calendarEdit.CalendarStyle = CalendarStyle.Standard;
+//Adding CalendarEdit as window content
+this.Content = calendarEdit;
 {% endhighlight  %}
 
 

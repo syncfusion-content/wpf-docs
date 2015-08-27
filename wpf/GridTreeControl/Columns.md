@@ -275,8 +275,8 @@ Property enables/disables the data validation tooltip.</td></tr>
 
 
 To know more about the GridStyleInfo and StyleInfo properties please refer the following link.
+<http://docs.syncfusion.com/wpf/gridcontrol/appearance#cell-styles>
 
-[http://help.syncfusion.com/ug/wpf/grid/default.htm#!documents/cellstyles.htm](http://help.syncfusion.com/ug/wpf/grid/default.htm)
 
 ## Cell Types
 

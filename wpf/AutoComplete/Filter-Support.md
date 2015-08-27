@@ -20,7 +20,9 @@ _Filter Support_
 
 ## Adding Filter Support to an Application 
 
-If the IsFilter property is set as True, once you enter text in the AutoComplete textbox, the matched list of items will be displayed in the drop-down list. If this property is set as False the matched list of items will not be displayed in the drop-down list, instead all the items will be displayed.
+If the IsFilter property is set as True, once you enter text in the AutoComplete textbox, the matched list of items 
+will be displayed in the drop-down list. If this property is set as False the matched list of items will not be 
+displayed in the drop-down list, instead all the items will be displayed.
 
 
 

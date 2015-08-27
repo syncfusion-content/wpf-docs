@@ -9,9 +9,11 @@ documentation: ug
 
 # FilePath, Registry & Custom Data Source Support
 
-AutoComplete can be used with different kinds of Data Source like FilePath, Registry & CustomSource. The Data Source of the AutoComplete control can be set using the Source property.
+AutoComplete can be used with different kinds of Data Source like FilePath, Registry & CustomSource. The Data 
+Source of the AutoComplete control can be set using the Source property.
 
-When the value of the Source property is set as FilePath, the AutoComplete will displays the path in the local system as the source. This is illustrated in the following image. 
+When the value of the Source property is set as FilePath, the AutoComplete will displays the path in the local 
+system as the source. This is illustrated in the following image. 
 
 ![](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img1.png)
 
@@ -19,7 +21,8 @@ _Source—FilePath_
 
 
 
-When the value of the Source property is set as Registry, the AutoComplete loads the values from the Registry. It is used when the Registry keys are required as input. This is illustrated in the image given below.
+When the value of the Source property is set as Registry, the AutoComplete loads the values from the Registry. It 
+is used when the Registry keys are required as input. This is illustrated in the image given below.
 
 ![](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img2.png)
 
@@ -27,7 +30,9 @@ When the value of the Source property is set as Registry, the AutoComplete loads
 _Source—Registry_
 
 
-When the value of the Source property is set as Custom, the AutoComplete loads the values from the Business objects bounded to the AutoComplete control by using the CustomSource property. This is illustrated in the image given below.
+When the value of the Source property is set as Custom, the AutoComplete loads the values from the Business objects 
+bounded to the AutoComplete control by using the CustomSource property. This is illustrated in the image given 
+below.
 
 ![](FilePath-Registry--Custom-Data-Source-Support_images/FilePath-Registry--Custom-Data-Source-Support_img3.png)
 
@@ -37,7 +42,8 @@ _Source—Custom_
 
 ## Adding Data Source Support to an Application
 
-AutoComplete can be used with different kinds of Data Sources using the Source property. This support can be added to the application as mentioned in the following code example.
+AutoComplete can be used with different kinds of Data Sources using the Source property. This support can be added 
+to the application as mentioned in the following code example.
 
 {% highlight xml %}
 

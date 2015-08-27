@@ -33,7 +33,7 @@ VisualStyle</td><td>
 Used for setting Skins for the controls. The Built-In-Skins are as follows.* Office2003* Office2007Blue* Office2007Black* Office2007Silver* ShinyRed* Blend* ShinyBlue* SyncOrange* VS2010* Office2010Blue* Office2010Black * Office2010Silver* Metro* Transparent</td><td>
 <br>Attached Property</td><td>
 String</td><td>
-{{ '[Setting VisualStyle in XAML](http://help.syncfusion.com/ug/wpf/documents/builtinskins1.htm)' | markdownify }}{{ '[Setting VisualStyle in C#](http://help.syncfusion.com/ug/wpf/documents/builtinskins1.htm)' | markdownify }}</td></tr>
+{{ '[Setting VisualStyle in XAML](http://docs.syncfusion.com/wpf/hierarchynavigator/skins#built-in-skins)' | markdownify }}{{ '[Setting VisualStyle in C#](http://docs.syncfusion.com/wpf/hierarchynavigator/skins#built-in-skins  )' | markdownify }}</td></tr>
 </table>
 
 
@@ -82,7 +82,7 @@ The following code example explains how to set the VisualStyle property in XAML.
 
 The output is displayed as follows.
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1013.jpg](Themes_images/Themes_img1.jpeg)
+![](Themes_images/Themes_img1.jpeg)
 
 
 _Visual Style property for setting Skins_
@@ -109,7 +109,8 @@ ActiveColorScheme  </td><td>
 Sets the custom color for the controls. </td><td>
 Attached Property</td><td>
 SolidColorBrush</td><td>
-{{ '[Setting ActiveColorScheme property in XAML](http://help.syncfusion.com/ug/wpf/documents/activecolorscheme1.htm)' | markdownify }}{{ '[Setting ActiveColorScheme property in C#](http://help.syncfusion.com/ug/wpf/documents/activecolorscheme1.htm)' | markdownify }}</td></tr>
+{{ '[Setting ActiveColorScheme property in XAML](http://docs.syncfusion.com/wpf/ribbon/appearance#active-color-scheme.htm)' | markdownify }}
+{{ '[Setting ActiveColorScheme property in C#](http://docs.syncfusion.com/wpf/ribbon/appearance#active-color-scheme.htm)' | markdownify }}</td></tr>
 </table>
 
 
@@ -163,7 +164,7 @@ The following code example explains how to set the ActiveColorScheme property in
 
 The output is displayed as follows.
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1014.png](Themes_images/Themes_img2.png)
+![](Themes_images/Themes_img2.png)
 
 _Custom color using ActiveColorScheme_
 
@@ -207,7 +208,7 @@ SkinStorage.SetMetroBrush(this, Brushes.Green);
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1015.jpg](Themes_images/Themes_img3.jpeg)
+![](Themes_images/Themes_img3.jpeg)
 
 _Metro theme customization_
 

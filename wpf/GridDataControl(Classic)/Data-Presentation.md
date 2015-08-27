@@ -1412,7 +1412,7 @@ To view samples:
 
 One can easily add the details view to the GridData control by defining the DetailsViewTemplate and binding it to the corresponding GridData control. In the following procedure we have bound the GridData control with a list of product information and created a details view template and bound it to the GridData control.
 
-1. Bind an items source to the grid. Refer to the following link for more information about binding items source to the grid. [[Data Binding](http://help.syncfusion.com/UG/User%20Interface/WPF/Grid/documents/422databinding.htm)]
+1. Bind an items source to the grid. Refer to the following link for more information about binding items source to the grid. [[Data Binding](http://docs.syncfusion.com/wpf/grid.htm)]
 2. Define a data template for the details view. You can bind the data by fetching it through Record.Data (data is the underlying object bound).
 
 
@@ -3895,7 +3895,7 @@ this.dataGrid.VisualStyle = VisualStyle.Custom;
 
 The following screenshot shows the custom visual style set for the grid using the above given code: 
 
-![http://help.syncfusion.com/ug_92/User%20Interface/WPF/Grid/ImagesExt/image9_290.png](Getting-Started_images/Getting-Started_img112.png)
+![](Getting-Started_images/Getting-Started_img112.png)
 
 
 
@@ -3943,11 +3943,11 @@ Custom Visual Style can be defined for nested tables too. The following code ill
 
 
 {% endhighlight  %}
-![http://help.syncfusion.com/ug_92/User%20Interface/WPF/Grid/ImagesExt/image9_291.png](Getting-Started_images/Getting-Started_img113.png)
+![](Getting-Started_images/Getting-Started_img113.png)
 
 
 
-N>  IGridDataVisualStyle is deprecated and this information is provided only for legacy reasons. The recommended approach for customizing the GridDataControl is using_ [GridDataStyleManager ](http://help.syncfusion.com/ug_92/User%20Interface/WPF/Grid/Documents/42316blendsupport.htm)_class through Microsoft Expression Blend.
+N>  IGridDataVisualStyle is deprecated and this information is provided only for legacy reasons. The recommended approach for customizing the GridDataControl is using_ [GridDataStyleManager ](http://docs.syncfusion.com/wpf/grid.htm)_class through Microsoft Expression Blend.
 
 ### Backward Compatibility
 
@@ -4006,7 +4006,7 @@ GridDataStyleManager properties are organized under the following seven groups, 
 
 
 
-N> Previously, the appearance of the GridDataControl could be customized through the_ [IGridDataVisualStyle ](http://help.syncfusion.com/ug_92/User%20Interface/WPF/Grid/Documents/423155skins.htm)_interface; even if a visual style was set for the GridDataControl, the values set in the GridDataStyleManager would override it
+N> Previously, the appearance of the GridDataControl could be customized through the_ [IGridDataVisualStyle ](http://docs.syncfusion.com/silverlight/grid/grid-data-control#skins.htm)_interface; even if a visual style was set for the GridDataControl, the values set in the GridDataStyleManager would override it
 
 Customizing the Column Appearance
 
@@ -5392,7 +5392,8 @@ Choose the Export to PDF sample to launch.
 
 ## Adding Column Chooser to an Application
 
-1. Bind an ItemsSource to GridDataControl. Refer to the following link for more information about binding an ItemsSource to GridDataControl: [Data Binding](http://help.syncfusion.com/UG/User%20Interface/WPF/Grid/documents/422databinding.htm).
+1. Bind an ItemsSource to GridDataControl. Refer to the following link for more information about binding an ItemsSource to GridDataControl: 
+[Data Binding](http://docs.syncfusion.com//wpf/griddatacontrol/data-binding.htm).
 
 {% highlight xml %}
 

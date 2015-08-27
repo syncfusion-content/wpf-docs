@@ -13,7 +13,8 @@ This section contains the following topics:
 
 ## Setting the Date
 
-You can explicitly set the date for the CalendarEdit control, using the Date property. This dependency property sets the date explicitly to the CalendarEdit control. It returns the current date of the CalendarEdit control.
+You can explicitly set the date for the CalendarEdit control, using the Date property. This dependency property 
+sets the date explicitly to the CalendarEdit control. It returns the current date of the CalendarEdit control.
 
 {% highlight xml %}
 <!-- Adding calendar with date as 12/12/2009 -->
@@ -35,7 +36,8 @@ _Date = "12/12/2009"_
 
 ## Settings the Days
 
-It is possible to hide the days of the next month and the previous month in the calendar, to enhance the appearance of the Calendar. This is done by disabling the ShowNextMonthDays and ShowPreviousMonthDays properties. 
+It is possible to hide the days of the next month and the previous month in the calendar, to enhance the appearance 
+of the Calendar. This is done by disabling the ShowNextMonthDays and ShowPreviousMonthDays properties. 
 
 For setting these properties, use the following code.
 
@@ -61,7 +63,9 @@ this.Content = calendarEdit;
 
 ## Today Row
 
-To know the details of current date in a CalendarEdit control, you need to enable Today Row. Set the TodayRowIsVisible property to true to display today's details. This dependency property indicates whether the today bar is visible or collapsed.
+To know the details of current date in a CalendarEdit control, you need to enable Today Row. Set the 
+TodayRowIsVisible property to true to display today's details. This dependency property indicates whether the today 
+bar is visible or collapsed.
 
 For setting this property, use the following code example.
 
@@ -84,14 +88,19 @@ this.Content = calendarEdit;
 
 ## Week Number
 
-Enhance the usability of the CalendarEdit control, by showing week numbers near the left margin. To show week numbers, set IsShowWeekNumbers property to true as follows.
+Enhance the usability of the CalendarEdit control, by showing week numbers near the left margin. To show week 
+numbers, set IsShowWeekNumbers property to true as follows.
 
 {% highlight xml %}
 <!-- Adding calendar with week numbers -->
 <syncfusion:CalendarEdit Name="calendarEdit" IsShowWeekNumbers="True"/>
 {% endhighlight  %}
 {% highlight c# %}
-//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Show week numberscalendarEdit.IsShowWeekNumbers = true;//Adding CalendarEdit as window contentthis.Content = calendarEdit;</td></tr>
+//Creating an instance of CalendarEdit 
+controlCalendarEdit calendarEdit = new CalendarEdit();
+//Show week numberscalendarEdit.IsShowWeekNumbers = true;
+//Adding CalendarEdit as window content
+this.Content = calendarEdit;</td></tr>
 {% endhighlight  %}
 
 

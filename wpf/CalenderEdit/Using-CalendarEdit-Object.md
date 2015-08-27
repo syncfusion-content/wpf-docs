@@ -9,13 +9,16 @@ documentation: ug
 
 # Using CalendarEdit Object
 
-You can get the object of the CalendarEdit control by using the Calendar property. When you want to see the content after calling the methods, you can store the date in one variable to display or use a MessageBox. The description of each calendar option and code is described as follows.
+You can get the object of the CalendarEdit control by using the Calendar property. When you want to see the content 
+after calling the methods, you can store the date in one variable to display or use a MessageBox. The description of
+each calendar option and code is described as follows.
 
 N> In the following code examples, calendarEdit is used as the instance of the CalendarEdit control.
 
 ## AddDays
 
-Returns the system datetime, that is, the specified number of days away from the specified system datetime. Use MessageBox to see the content of date after this method is called. 
+Returns the system datetime, that is, the specified number of days away from the specified system datetime. Use 
+MessageBox to see the content of date after this method is called. 
 
 
 {% highlight c# %}
@@ -33,7 +36,8 @@ MessageBox.Show(calendarEdit.Calendar.AddDays(calendarEdit.Date, 5);.ToString())
 
 ## AddHours
 
-Returns the system datetime, that is, the specified number of hours away from the specified system datetime. Use Message Box to see the content of date after this method is called.
+Returns the system datetime, that is, the specified number of hours away from the specified system datetime. Use 
+Message Box to see the content of date after this method is called.
 
 
 
@@ -49,7 +53,8 @@ MessageBox.Show(calendarEdit.Calendar.AddHours(calendarEdit.Date, 2).ToString())
 
 ## AddMonths
 
-Returns the system datetime, that is, the specified number of months away from the specified system datetime. Use Message Box to see the content of date after this method is called.
+Returns the system datetime, that is, the specified number of months away from the specified system datetime. Use 
+Message Box to see the content of date after this method is called.
 
 
 
@@ -65,7 +70,8 @@ MessageBox.Show(calendarEdit.Calendar.AddMonths(calendarEdit.Date, 3).ToString()
 
 ## AddMilliseconds 
 
-Returns the system datetime, that is, the specified number of milliseconds away from the specified system datetime. Use Message Box to see the content of date after this method is called.
+Returns the system datetime, that is, the specified number of milliseconds away from the specified system datetime. 
+Use Message Box to see the content of date after this method is called.
 
 
 {% highlight c# %}
@@ -79,7 +85,8 @@ MessageBox.Show(calendarEdit.Calendar.AddMilliseconds(calendarEdit.Date, 200).To
 
 ## AddMinutes
 
-Returns the system datetime, that is, the specified number of milliseconds away from the specified system datetime. Use Message Box to see the content of date after this method is called.
+Returns the system datetime, that is, the specified number of milliseconds away from the specified system datetime. 
+Use Message Box to see the content of date after this method is called.
 
 
 {% highlight c# %}
@@ -94,7 +101,8 @@ MessageBox.Show(calendarEdit.Calendar.AddMinutes(calendarEdit.Date, 5).ToString(
 
 ## AddSeconds
 
-Returns the system datetime, that is, specified number of seconds away from the specified system datetime. Use Message Box to see the content of date after this method is called.
+Returns the system datetime, that is, specified number of seconds away from the specified system datetime. Use 
+Message Box to see the content of date after this method is called.
 
 
 {% highlight c# %}
@@ -108,7 +116,8 @@ MessageBox.Show(calendarEdit.Calendar.AddSeconds(calendarEdit.Date, 30).ToString
 
 ## AddWeeks
 
-Returns the system datetime, that is, specified number of weeks away from the specified system datetime. Use Message Box to see the content of date after this method is called.
+Returns the system datetime, that is, specified number of weeks away from the specified system datetime. Use 
+Message Box to see the content of date after this method is called.
 
 
 {% highlight c# %}
@@ -121,7 +130,8 @@ MessageBox.Show(calendarEdit.Calendar.AddWeeks(calendarEdit.Date, 2).ToString())
 
 ## AddYears
 
-Returns the system datetime, that is, the specified number of years away from the specified system datetime. Use Message Box to see the content of date after this method is called.
+Returns the system datetime, that is, the specified number of years away from the specified system datetime. Use 
+Message Box to see the content of date after this method is called.
 
 
 {% highlight c# %}
@@ -134,7 +144,8 @@ MessageBox.Show(calendarEdit.Calendar.AddYears(calendarEdit.Date, 1).ToString())
 
 ## GetDayOfMonth
 
-Returns the day of the month, in the specified System datetime. You can use a Message Box to see the content of date after this method is called.
+Returns the day of the month, in the specified System datetime. You can use a Message Box to see the content of date
+after this method is called.
 
 
 
@@ -148,7 +159,8 @@ MessageBox.Show(calendarEdit.Calendar.GetDayOfMonth(calendarEdit.Date).ToString(
 
 ## GetDayOfWeek
 
-Returns the day of the week, in the specified System datetime. You can use a Message Box to see the content of date after this method is called.
+Returns the day of the week, in the specified System datetime. You can use a Message Box to see the content of date 
+after this method is called.
 
 
 
@@ -175,7 +187,8 @@ MessageBox.Show(calendarEdit.Calendar.GetDayOfYear(calendarEdit.Date).ToString()
 
 ## GetDayOfYear
 
-Returns the number of days, in the specified month and year of the current era. You can use a Message Box to see the content of date after this method is called.
+Returns the number of days, in the specified month and year of the current era. You can use a Message Box to see the
+content of date after this method is called.
 
 
 
@@ -191,7 +204,8 @@ MessageBox.Show(calendarEdit.Calendar.GetDaysInMonth(2009, 2).ToString());
 
 ## GetDaysInYear
 
-Returns the number of days, in the specified year of the current era. You can use a Message Box to see the content of date after this method is called.
+Returns the number of days, in the specified year of the current era. You can use a Message Box to see the content of
+date after this method is called.
 
 {% highlight c# %}
 

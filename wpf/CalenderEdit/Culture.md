@@ -18,7 +18,12 @@ To change the culture for the CalendarEdit control, use the following code examp
 <syncfusion:CalendarEdit Name="calendarEdit" Culture="Afrikaans"/>
 {% endhighlight  %}
 {% highlight c# %}
-//Creating an instance of CalendarEdit controlCalendarEdit calendarEdit = new CalendarEdit();//Setting the culturecalendarEdit.Culture = new CultureInfo(2); //Adding CalendarEdit as window contentthis.Content = calendarEdit; 
+//Creating an instance of CalendarEdit 
+controlCalendarEdit calendarEdit = new CalendarEdit();
+//Setting the culture
+calendarEdit.Culture = new CultureInfo(2); 
+//Adding CalendarEdit as window content
+this.Content = calendarEdit; 
 {% endhighlight  %}
 
 

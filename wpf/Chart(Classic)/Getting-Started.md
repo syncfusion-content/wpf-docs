@@ -55,7 +55,7 @@ Users can create a simple chart application with Syncfusion WPF Chart control wi
 
 1. Create a new WPF application in VS2010. You can see the Chart control in the Toolbox of Visual Studio. 
 
-   ![Description: http://help.syncfusion.com/resources/Content/Ug_101/User%20Interface/WPF/Chart/ImagesExt/image9_7.png](Getting-Started_images/Getting-Started_img2.png)
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 

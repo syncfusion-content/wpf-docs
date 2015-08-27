@@ -9,11 +9,13 @@ documentation: ug
 
 # Function Reference Section
 
-This section discusses the library functions that are shipped in the Essential Calculate library. The arguments required by each of these functions are listed in bold text. Optional arguments are listed in a normal text.
+This section discusses the library functions that are shipped in the Essential Calculate library. The arguments 
+required by each of these functions are listed in bold text. Optional arguments are listed in a normal text.
 
 ## ABS
 
-Returns the absolute value of a number. The absolute value of a non-negative number is the number itself. Theabsolute value of a negative number is -1 times the number.
+Returns the absolute value of a number. The absolute value of a non-negative number is the number itself. The 
+absolute value of a negative number is -1 times the number.
 
 ### Syntax
 
@@ -25,7 +27,8 @@ number is the real number for which you want the absolute value.
 
 ##  ACOS
 
-Returns the inverse cosine of a number. Inverse cosine is also referred to as arccosine. The arccosine is the angle whose cosine is the given number. The returned angle is given in radians in the range of 0 to pi.
+Returns the inverse cosine of a number. Inverse cosine is also referred to as arccosine. The arccosine is the angle 
+whose cosine is the given number. The returned angle is given in radians in the range of 0 to pi.
 
 ### Syntax
 

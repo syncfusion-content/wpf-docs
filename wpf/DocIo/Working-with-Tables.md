@@ -538,7 +538,7 @@ Gets paddings.</td></tr>
 WTableStyle class represents table style in a Word document. Table style specifies a set of formatting characteristics for a table.
 
 
-![http://help.syncfusion.com/ug/asp.net/ImagesExt/image25_32.png](Working-with-Tables_images/Working-with-Tables_img5.png)
+![](Working-with-Tables_images/Working-with-Tables_img5.png)
 
 
 _Table Styles_

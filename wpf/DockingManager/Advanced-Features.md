@@ -667,7 +667,7 @@ AddToTargetManagersList </td><td>
  (DockingManager dockingmanager)</td><td>
 NA</td><td>
 void </td><td>
-http://help.syncfusion.com/ug_92/User%20Interface/Windows%20Forms/Tools/index.htm</td></tr>
+http://docs.syncfusion.com/windowsforms/tools.htm</td></tr>
 <tr>
 <td>
 RemoveFromTargetManagersList</td><td>
@@ -675,7 +675,7 @@ Removes the DockingManager from the Target Providers List, belonging to the curr
 (DockingManager dockingmanager)</td><td>
 NA</td><td>
 void </td><td>
-http://help.syncfusion.com/ug_92/User%20Interface/Windows%20Forms/Tools/index.htm</td></tr>
+http://docs.syncfusion.com/windowsforms/tools.htm</td></tr>
 </table>
 
 ### Events
@@ -696,14 +696,14 @@ TransferredToManager </td><td>
 The TransferredToManager event occurs after a dockable control that previously belonged to some other Docking Manager has been transferred to the docking layout hosted by the current Docking Manager.</td><td>
 DockingManager PreviousManager, FrameworkElement TargetElement, DockingManager TargetManager</td><td>
 TransferManagerEventArgs</td><td>
-http://help.syncfusion.com/ug_92/User%20Interface/Windows%20Forms/Tools/index.htm</td></tr>
+http://docs.syncfusion.com/windowsforms/tools.htm</td></tr>
 <tr>
 <td>
 TransferringFromManager </td><td>
 The TransferringFromManager event occurs when a dockable control hosted by a Docking Manager is about to be transferred to the docking layout hosted by some other Docking Manager.</td><td>
 DockingManager PreviousManager, FrameworkElement TargetElement, DockingManager TargetManager</td><td>
 TransferManagerEventArgs</td><td>
-http://help.syncfusion.com/ug_92/User%20Interface/Windows%20Forms/Tools/index.htm</td></tr>
+http://docs.syncfusion.com/windowsforms/tools.htm</td></tr>
 </table>
 
 ### Features of Linked Manager Support
