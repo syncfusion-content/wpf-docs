@@ -1,0 +1,51 @@
+---
+layout: post
+title: Connecting-to-Mondrian-Server-through-XMLA
+description: connecting to mondrian server through xmla
+platform: wpf
+control: OLAP Common
+documentation: ug
+---
+
+# Connecting to Mondrian Server through XMLA
+
+
+
+The following code illustrates how to connect to the Mondrian server:
+
+
+
+{% highlight c# %}
+
+
+
+// Connecting to Mondrian Server
+
+OlapDataManager DataManager = new OlapDataManager("Data Source = http://localhost:8080/mondrian/xmla; Initial Catalog = FoodMart;"); //Where localhost is the machine name which has installed Mondrian Services. For example [http://bi.syncfusion.com:8080/mondrian/xmla](http://bi.syncfusion.com:8080/mondrian/xmla)
+
+
+
+DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.Mondrian;
+
+
+{% endhighlight  %}
+
+{% highlight vbnet %}
+
+
+
+' Connecting to Mondrian Server
+
+Dim DataManager As OlapDataManager = New OlapDataManager("Datasource = [http://bi.syncfusion.com:8080/mondrian/xmla](http://bi.syncfusion.com:8080/mondrian/xmla); Initial Catalog=FoodMart;") ’Where localhost is the machine name which has installed Mondrian Services. For example [http://bi.syncfusion.com:8080/mondrian/xmla](http://bi.syncfusion.com:8080/mondrian/xmla)
+
+
+
+DataManager.DataProvider.ProviderName = Syncfusion.Olap.DataProvider.Providers.Mondrian
+
+
+{% endhighlight  %}
+
+[Click here](http://mondrian.pentaho.com/) for more information about Mondrian XMLA configurations.
+
+
+
