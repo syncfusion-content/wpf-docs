@@ -6,7 +6,6 @@ platform: wpf
 control: OLAP Client 
 documentation: ug
 ---
-
 # OlapReport Serialization
 
 This feature enables the user to save additional settings along the OLAP information in an OlapReport and load them whenever required. 

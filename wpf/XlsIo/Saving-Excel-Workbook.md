@@ -148,7 +148,8 @@ Dim storageFile As StorageFile = Await local.CreateFileAsync("CreateSpreadsheet.
 
 Await workbook.SaveAsAsync(storageFile)
 {% endhighlight %}
-For more information on overloads of the Workbook's Save method, refer to Class Reference in the top right of the online [documentation](http://help.syncfusion.com/windows%20forms/xlsio).
+For more information on overloads of the Workbook's Save method, refer to Class Reference in the top right of the
+ online [documentation](http://docs.syncfusion.com/winrt/xlsio/introduction-to-essential-xlsio).
 
 ## Save Workbook as a Stream 
 

@@ -47,7 +47,7 @@ CodedUITest Builder generates code from the recorded session and you need to imp
 </table>
 
 
-To know more about CodedUITest, refer to the [link](http://help.syncfusion.com/ug/wpf/Documents/codeduitest.htm).
+To know more about CodedUITest, refer to the [link](http://docs.syncfusion.com/wpf/sfdatagrid/ui-automation#coded-ui-test).
 
 The following screenshot displays the SfDataPager properties when you drag the crosshair to the SfDataPager
 
@@ -72,7 +72,8 @@ SfDataPager</td><td>
 
 ## Quick Test Professional
 
-SfDataPager supports QTP test. You can record the actions perfomed in the control by the corresponding method name with Syncfusion namespace. To know more about QTPtest, refer to the [link](http://help.syncfusion.com/ug/wpf/Documents/quicktestprofessionalqtp.htm)
+SfDataPager supports QTP test. You can record the actions perfomed in the control by the corresponding method name 
+with Syncfusion namespace. To know more about QTPtest, refer to the [link](http://docs.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp)
 
 The following screenshot displays the QTP Test for SfDataPager
 

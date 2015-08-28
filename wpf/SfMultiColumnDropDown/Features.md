@@ -942,7 +942,7 @@ SfMultiColumnDropDownControl</td><td>
 ### Quick Test Professional
 
 
-SfMultiColumnDropDownControl supports for QTP test. You can record the actions performed in the control, by mentioning the corresponding method name with Syncfusion namespace. To know more about QTP test refer to the [link](http://help.syncfusion.com/ug/wpf/Documents/quicktestprofessionalqtp.htm).
+SfMultiColumnDropDownControl supports for QTP test. You can record the actions performed in the control, by mentioning the corresponding method name with Syncfusion namespace. To know more about QTP test refer to the [link](http://docs.syncfusion.com/wpf/sfdatagrid/ui-automation#quick-test-professional-qtp).
 
 The following screenshot illustrates the QTP Test for SfMultiColumnDropDownControl.
 
