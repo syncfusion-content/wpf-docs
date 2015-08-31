@@ -953,7 +953,7 @@ You can display the value of FeaturedMeasure of SfBulletGraph in ToolTip tha
 {% endhighlight  %}
 
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image279_20.jpg](Concept-and-Features_images/Concept-and-Features_img13.jpeg)
+![](Concept-and-Features_images/Concept-and-Features_img13.jpeg)
 
 
 
@@ -1141,7 +1141,7 @@ You can display the value of QualitativeRange of SfBulletGraph in ToolTip th
 {% endhighlight %}
 
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image279_22.jpg](Concept-and-Features_images/Concept-and-Features_img15.jpeg)
+![](Concept-and-Features_images/Concept-and-Features_img15.jpeg)
 
 
 

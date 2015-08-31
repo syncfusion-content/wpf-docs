@@ -27,7 +27,7 @@ upDown.TextAlignment = TextAlignment.Left;
 
 {%endhighlight%}
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1276.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img1.png)
+![](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img1.png)
 
 
 
@@ -49,7 +49,7 @@ UpDown upDown = new UpDown();
 upDown.TextAlignment = TextAlignment.Right;
 {%endhighlight%}
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1277.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img2.png)
+![](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img2.png)
 
 
 
@@ -70,7 +70,7 @@ upDown.TextAlignment = TextAlignment.Center;
 
 {%endhighlight%}
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1278.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img3.png)
+![](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img3.png)
 
 
 
@@ -91,7 +91,7 @@ upDown.TextAlignment = TextAlignment.Justify;
 
 {%endhighlight%}
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image203_1276.png](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img4.png)
+![](Change-the-alignment-of-the-text-in-the-UpDown-control_images/Change-the-alignment-of-the-text-in-the-UpDown-control_img4.png)
 
 
 

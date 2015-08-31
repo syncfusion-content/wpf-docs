@@ -50,7 +50,7 @@ Itis the default palette for SfChart, used to apply a set of predefined brushes
 {% endhighlight %}
 The following is the screenshot for the series with multiple palettes.
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_149.jpg](Styling-and-Customization_images/Styling-and-Customization_img1.jpeg)
+![](Styling-and-Customization_images/Styling-and-Customization_img1.jpeg)
 
 
 
@@ -104,7 +104,7 @@ The Custom Palette option enables you to define your own color brushes for the
 
 The following screenshot demonstrates series with CustomPalette.
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_150.jpg](Styling-and-Customization_images/Styling-and-Customization_img2.jpeg)
+![](Styling-and-Customization_images/Styling-and-Customization_img2.jpeg)
 
 
 
@@ -136,7 +136,7 @@ It is the default palette for series also. This palette applies a set of predefi
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_151.jpg](Styling-and-Customization_images/Styling-and-Customization_img3.jpeg)
+![](Styling-and-Customization_images/Styling-and-Customization_img3.jpeg)
 
 
 
@@ -144,7 +144,7 @@ It is the default palette for series also. This palette applies a set of predefi
 
 It applies the same color to all the segments, as shown in the following screenshot. And the brushes vary for additional series based on that predefined order.
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_152.jpg](Styling-and-Customization_images/Styling-and-Customization_img4.jpeg)
+![](Styling-and-Customization_images/Styling-and-Customization_img4.jpeg)
 
 
 

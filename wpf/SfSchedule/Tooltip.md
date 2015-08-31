@@ -76,7 +76,7 @@ Location = "Hutchison Road"
 
 {% endhighlight  %}
 
-![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_23.jpg](Tooltip_images/Tooltip_img1.jpeg)
+![](Tooltip_images/Tooltip_img1.jpeg)
 
 
 

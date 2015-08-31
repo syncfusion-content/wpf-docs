@@ -11,7 +11,7 @@ documentation: ug
 
 TextElement is used to render texts using custom fonts, size and style in the page of the PDF document. You can also modify it to include hyperlinks, ordered and unordered list, html styled text, and so on. These are explained in the following topics.
 
-![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_52.jpg](TextElement_images/TextElement_img1.jpeg)
+![](TextElement_images/TextElement_img1.jpeg)
 
 
 
@@ -936,7 +936,7 @@ doc.Save("Output.pdf")
 
 {% endhighlight %}
 
-![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_53.jpg](TextElement_images/TextElement_img2.jpeg)
+![](TextElement_images/TextElement_img2.jpeg)
 
 
 
@@ -1365,7 +1365,7 @@ doc.Close(True)
 {% endhighlight %}
 
 
-![http://help.syncfusion.com/ug/windows%20forms/pdf/ImagesExt/image517_54.jpg](TextElement_images/TextElement_img3.jpeg)
+![](TextElement_images/TextElement_img3.jpeg)
 
 
 

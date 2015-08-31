@@ -60,7 +60,7 @@ ScheduleAppointment app = new ScheduleAppointment() { StartTime = currentdate
 {% endhighlight  %}
 
 
-![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_28.jpg](Resources_images/Resources_img1.jpeg)
+![](Resources_images/Resources_img1.jpeg)
 
 
 
@@ -68,7 +68,7 @@ ScheduleAppointment app = new ScheduleAppointment() { StartTime = currentdate
 
 
 
-![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_29.jpg](Resources_images/Resources_img2.jpeg)
+![](Resources_images/Resources_img2.jpeg)
 
 
 
@@ -76,7 +76,7 @@ ScheduleAppointment app = new ScheduleAppointment() { StartTime = currentdate
 
 
 
-![http://help.syncfusion.com/ug/wpf/sfschedule/ImagesExt/image632_30.jpg](Resources_images/Resources_img3.jpeg)
+![](Resources_images/Resources_img3.jpeg)
 
 
 

@@ -13,15 +13,15 @@ Booklets are documents with multiple pages arranged on sheets of paper. When fol
 
 For example, assume that you have a 13-page document. Creating a booklet of the document results in a PDF file with 7 pages (page 1, null), (page2, page13), (page3, page12), (page7, page8).
 
-![http://help.syncfusion.com/ug/wpf/pdf/ImagesExt/image517_77.jpg](Booklets_images/Booklets_img1.jpeg)
+![](Booklets_images/Booklets_img1.jpeg)
 
 
 
-![http://help.syncfusion.com/ug/wpf/pdf/ImagesExt/image517_78.jpg](Booklets_images/Booklets_img2.jpeg)
+![](Booklets_images/Booklets_img2.jpeg)
 
 
 
-![http://help.syncfusion.com/ug/wpf/pdf/ImagesExt/image517_79.jpg](Booklets_images/Booklets_img3.jpeg)
+![](Booklets_images/Booklets_img3.jpeg)
 
 
 

@@ -149,22 +149,22 @@ The OLAP Gauge control allows you to present your data using different built-in-
 
 
 
-![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/Default%20Theme.png](Appearance_images/Appearance_img8.png)
+![](Appearance_images/Appearance_img8.png)
 
 
-![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/Office2007Blue%20Theme.png](Appearance_images/Appearance_img9.png)
+![](Appearance_images/Appearance_img9.png)
 
 
-![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/Black%202007%20theme.png](Appearance_images/Appearance_img10.png)
+![](Appearance_images/Appearance_img10.png)
 
 
-![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/silver%20Theme.png](Appearance_images/Appearance_img11.png)
+![](Appearance_images/Appearance_img11.png)
 
 
-![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/Blend%20Theme.png](Appearance_images/Appearance_img12.png)
+![](Appearance_images/Appearance_img12.png)
 
 
-![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/2003%20Blue%20theme.png](Appearance_images/Appearance_img13.png)
+![](Appearance_images/Appearance_img13.png)
 
 
 ![C:/Users/manimala.paramasivam/Desktop/OlapGauge.png](Appearance_images/Appearance_img14.png)
@@ -220,7 +220,7 @@ SkinStorage.SetVisualStyle(olapGauge1, "Office2007Blue");
 
 Run the code. The following output is obtained.
 
-![http://help.syncfusion.com/ug_82/WPFBI_Gauge/Images/Office2007Blue%20Theme.png](Appearance_images/Appearance_img15.png)
+![](Appearance_images/Appearance_img15.png)
 
 
 ## Sample Location

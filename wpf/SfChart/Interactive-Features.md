@@ -647,7 +647,7 @@ SegmentSelectionBrush="Red">
 
 
 
-![http://help.syncfusion.com/ug/wpf/ImagesExt/image249_141.jpg](Interactive-Features_images/Interactive-Features_img11.jpeg)
+![](Interactive-Features_images/Interactive-Features_img11.jpeg)
 
 
 

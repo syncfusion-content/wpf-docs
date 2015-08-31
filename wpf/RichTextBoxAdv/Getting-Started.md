@@ -64,7 +64,7 @@ The RichTextBoxAdv control can be added to an application by using the following
 
 
 
-![http://help.syncfusion.com/ug_94/User%20Interface/Silverlight/Tools/ImagesExt/image9_1068.png](Getting-Started_images/Getting-Started_img4.png)
+![](Getting-Started_images/Getting-Started_img4.png)
 
 
 
@@ -83,7 +83,7 @@ The RichTextBoxAdv control can be added to an application by using the following
 
 
 
-![http://help.syncfusion.com/ug_94/User%20Interface/Silverlight/Tools/ImagesExt/image9_1070.png](Getting-Started_images/Getting-Started_img6.png)
+![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
@@ -102,7 +102,7 @@ You can edit the style of the RichTextBoxAdv control by using Expression Blend. 
 
 
 
-![http://help.syncfusion.com/ug_94/User%20Interface/Silverlight/Tools/ImagesExt/image9_1071.png](Getting-Started_images/Getting-Started_img7.png)
+![](Getting-Started_images/Getting-Started_img7.png)
 
 
 
