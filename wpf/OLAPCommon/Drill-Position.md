@@ -3,7 +3,7 @@ layout: post
 title: Drill-Position
 description: drill position
 platform: wpf
-control: OLAP Common 
+control: OLAPCommon 
 documentation: ug
 ---
 

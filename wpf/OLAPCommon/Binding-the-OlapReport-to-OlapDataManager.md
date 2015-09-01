@@ -3,7 +3,7 @@ layout: post
 title: Binding-the-OlapReport-to-OlapDataManager
 description: binding the olapreport to olapdatamanager
 platform: wpf
-control: OLAP Common 
+control: OLAPCommon 
 documentation: ug
 ---
 

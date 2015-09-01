@@ -3,7 +3,7 @@ layout: post
 title: Drill-Replace
 description: drill replace
 platform: wpf
-control: OLAP Common 
+control: OLAPCommon 
 documentation: ug
 ---
 

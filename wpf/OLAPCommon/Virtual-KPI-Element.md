@@ -1,0 +1,380 @@
+---
+layout: post
+title: Virtual-KPI-Element
+description: virtual kpi element
+platform: wpf
+control: OLAPCommon 
+documentation: ug
+---
+
+# Virtual KPI Element
+
+Key performance indicators can be virtually defined during run time. This feature enables users to create KPIs without storing them in SSAS (SQL Server Analysis Services). This feature is very useful when users want to define KPIs at run time and also minimize the time necessary to create KPIs. 
+
+## Properties
+
+_Table12: VirtualKpiElement Class Properties_
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
+<tr>
+<td>
+Name</td><td>
+Gets or sets the name for VirtualKpiElement.</td><td>
+CLR</td><td>
+String</td></tr>
+<tr>
+<td>
+KpiValueExpression</td><td>
+Gets or sets the value which indicates the value expression for VirtualKpiElement.</td><td>
+CLR</td><td>
+String</td></tr>
+<tr>
+<td>
+KpiGoalExpression</td><td>
+Gets or sets the value which indicates the goal expression for VirtualKpiElement.</td><td>
+CLR</td><td>
+String</td></tr>
+<tr>
+<td>
+KpiStatusExpression</td><td>
+Gets or sets the value which indicates the status expression for VirtualKpiElement.</td><td>
+CLR</td><td>
+String</td></tr>
+<tr>
+<td>
+KpiTrendExpression</td><td>
+Gets or sets the value which indicates the trend expression for VirtualKpiElement.</td><td>
+CLR</td><td>
+String</td></tr>
+<tr>
+<td>
+KpiTrendGraphic</td><td>
+Gets or sets the name of the graphic used to represent the result of the trend expression.</td><td>
+CLR</td><td>
+String</td></tr>
+<tr>
+<td>
+KpiStatusGraphic</td><td>
+Gets or sets the name of the graphic used to represent the result of the status expression.</td><td>
+CLR</td><td>
+String</td></tr>
+</table>
+
+
+_Table13: OlapReport Class Properties_
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
+<tr>
+<td>
+VirtualKpiElements</td><td>
+Gets or sets the collection of VirtualKpiElement.</td><td>
+CLR</td><td>
+Items</td></tr>
+</table>
+
+## Adding Virtual KPI Element to the OlapReport
+
+OLAP Report Definition with VirtualKpiElement
+
+{% highlight c# %}
+
+        public OlapReport VirtualKPIReport()
+
+        {
+
+            OlapReport olapReport = new OlapReport("Virtual KPI Report");
+
+            olapReport.CurrentCubeName = "Adventure Works";
+
+            MeasureElements measureElements = new MeasureElements();
+
+            measureElements.Add(new MeasureElement { Name = "Internet Sales Amount" });
+
+            olapReport.CategoricalElements.Add(measureElements);
+
+
+
+            VirtualKpiElement virtualKPIElement = new VirtualKpiElement();
+
+            virtualKPIElement.Name = "Sample KPI";
+
+            virtualKPIElement.KpiValueExpression = ""; //Value expression
+
+            virtualKPIElement.KpiGoalExpression = ""; //Goal expression
+
+            virtualKPIElement.KpiStatusExpression = ""; //Status expression
+
+            virtualKPIElement.KpiTrendExpression = ""; //Trend expression
+
+            virtualKPIElement.StatusGraphic = ""; //Status graphic
+
+            virtualKPIElement.TrendGraphic = ""; //Trend graphic
+
+            olapReport.VirtualKpiElements.Add(virtualKPIElement);
+
+            olapReport.CategoricalElements.Add(virtualKPIElement);
+
+
+
+            DimensionElement internalDimension = new DimensionElement();
+
+            internalDimension.Name = "Product";
+
+            internalDimension.AddLevel("Product Categories", "Category");
+
+            olapReport.SeriesElements.Add(internalDimension);
+
+            return olapReport;
+
+        }
+
+
+
+
+{% endhighlight %}
+
+
+{% highlight vbnet %}
+
+        Public Function VirtualKPIReport() As OlapReport
+
+Dim olapReport As New OlapReport("Virtual KPI Report")
+
+olapReport.CurrentCubeName = "Adventure Works"
+
+Dim measureElements As New MeasureElements()
+
+measureElements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
+
+olapReport.CategoricalElements.Add(measureElements)
+
+
+
+Dim virtualKPIElement As New VirtualKpiElement()
+
+virtualKPIElement.Name = "Sample KPI"
+
+virtualKPIElement.KpiValueExpression = "" 'Value expression
+
+virtualKPIElement.KpiGoalExpression = "" 'Goal expression
+
+virtualKPIElement.KpiStatusExpression = "" 'Status expression
+
+virtualKPIElement.KpiTrendExpression = "" 'Trend expression
+
+virtualKPIElement.StatusGraphic = "" 'Status graphic
+
+virtualKPIElement.TrendGraphic = "" 'Trend graphic
+
+olapReport.VirtualKpiElements.Add(virtualKPIElement)
+
+olapReport.CategoricalElements.Add(virtualKPIElement)
+
+
+
+Dim internalDimension As New DimensionElement()
+
+internalDimension.Name = "Product"
+
+internalDimension.AddLevel("Product Categories", "Category")
+
+olapReport.SeriesElements.Add(internalDimension)
+
+Return olapReport
+
+End Function
+
+
+
+
+
+Sample of Value, Goal, Status, and Trend expressions
+
+[Value Expression]
+
+           [Measures].[Reseller Sales Amount]
+
+
+
+
+
+[Goal Expression]
+
+           [Measures].[Sales Amount Quota]
+
+
+
+
+
+[Status Expression]
+
+Case
+
+    When [Measures].[Reseller Sales Amount] / [Measures].[Sales Amount Quota] >  1
+
+    Then 1
+
+    When [Measures].[Reseller Sales Amount] / [Measures].[Sales Amount Quota] <= 1
+
+         And 
+
+         [Measures].[Reseller Sales Amount] / [Measures].[Sales Amount Quota] >= .85
+
+    Then 0
+
+    Else -1
+
+End
+
+
+
+
+
+
+
+[Trend Expression]
+
+Case
+
+    When IsEmpty
+
+         (
+
+           ParallelPeriod
+
+           (
+
+             [Date].[Fiscal].[Fiscal Year],
+
+             1,
+
+             [Date].[Fiscal].CurrentMember
+
+           )
+
+         )
+
+    Then 0  
+
+    When VBA!Abs
+
+         (
+
+          ( 
+
+            [Measures].[Reseller Sales Amount] 
+
+            - 
+
+            (
+
+              [Measures].[Reseller Sales Amount],
+
+              ParallelPeriod
+
+              ( 
+
+                [Date].[Fiscal].[Fiscal Year],
+
+                1,
+
+                [Date].[Fiscal].CurrentMember
+
+              )
+
+            )
+
+          ) 
+
+          /
+
+          (
+
+            [Measures].[Reseller Sales Amount],
+
+            ParallelPeriod
+
+            ( 
+
+              [Date].[Fiscal].[Fiscal Year],
+
+              1,
+
+              [Date].[Fiscal].CurrentMember
+
+            )
+
+          )  
+
+         ) <=.02
+
+    Then 0
+
+    When ( 
+
+           [Measures].[Reseller Sales Amount] 
+
+           - 
+
+           (
+
+             [Measures].[Reseller Sales Amount],
+
+             ParallelPeriod
+
+             ( 
+
+               [Date].[Fiscal].[Fiscal Year],
+
+               1,
+
+               [Date].[Fiscal].CurrentMember
+
+             )
+
+           ) 
+
+         )
+
+         /
+
+         (
+
+           [Measures].[Reseller Sales Amount],
+
+           ParallelPeriod
+
+           ( 
+
+             [Date].[Fiscal].[Fiscal Year],
+
+             1,
+
+             [Date].[Fiscal].CurrentMember
+
+           )
+
+         ) >.02
+
+    Then 1
+
+    Else -1
+
+End
+{% endhighlight %}
+
+
+
+

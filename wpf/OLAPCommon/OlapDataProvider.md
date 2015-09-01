@@ -3,7 +3,7 @@ layout: post
 title: OlapDataProvider
 description: olapdataprovider
 platform: wpf
-control: OLAP Common 
+control: OLAPCommon 
 documentation: ug
 ---
 

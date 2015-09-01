@@ -3,7 +3,7 @@ layout: post
 title: OLAP-Data-Processing
 description: olap data processing
 platform: wpf
-control: OLAP Common 
+control: OLAPCommon 
 documentation: ug
 ---
 

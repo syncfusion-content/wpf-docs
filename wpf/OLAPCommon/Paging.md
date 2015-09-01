@@ -3,7 +3,7 @@ layout: post
 title: Paging
 description: paging
 platform: wpf
-control: OLAP Common 
+control: OLAPCommon 
 documentation: ug
 ---
 
