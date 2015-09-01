@@ -402,7 +402,7 @@ DocIO uses ProtectionType property to specify the protection type of the Word 
 {% endhighlight   %}
 
 
-Refer to the online documentation link for more details about ways to protect the Word documents using DocIO.<http://docs.syncfusion.com/windowsforms/docio/overview.htm>
+Refer to the online documentation link for more details about ways to protect the Word documents using DocIO.<http://docs.syncfusion.com/windowsforms/docio/migration-from-microsoft-office-automation-to-essential-docio#document-protection>
 
 
 ### Table of Contents
@@ -437,7 +437,7 @@ The following code example illustrates how to insert and update the table of con
 {% endhighlight   %}
 
 
-Refer to the online documentation link for more information about adding the table of contents to the Word document using DocIO: <http://docs.syncfusion.com/windowsforms/docio/working-with-tables.htm>
+Refer to the online documentation link for more information about adding the table of contents to the Word document using DocIO: <http://docs.syncfusion.com/windowsforms/docio/migration-from-microsoft-office-automation-to-essential-docio#table-of-contents>
 
 
 

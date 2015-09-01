@@ -482,7 +482,7 @@ The following steps explain how to add the Silverlight components in MVC project
 
 
 
-    [Click here for Sample Report](http://help.syncfusion.com/UG/Business%20Intelligence/OLAP%20Grid/Silverlight/documents/731olapreportwithsimpledimensionsandmeasure.htm)
+    [Click here for Sample Report](http://docs.syncfusion.com/wpf/olapcommon/business-intelligence-bi/business-intelligence-bi)
 
 
 
@@ -491,4 +491,5 @@ The following steps explain how to add the Silverlight components in MVC project
 
     {:.prettyprint}
 
+	
 

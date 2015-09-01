@@ -15,7 +15,7 @@ This section explains you how to use Paging in SfDataGrid and you can see the ty
 
 The DataGrid control provides interactive support to manipulate the data using the SfDataPager control. It provides 
 many features. Therefore, you can easily manage the DataPaging.To learn more about the SfDataPager control, you can 
-[click here](http://docs.syncfusion.com/wpf/sfdatapager/overview).
+[click here](http://docs.syncfusion.com/wpf/sfdatapager).
 
 There are two different modes in Data Paging as follows,
 

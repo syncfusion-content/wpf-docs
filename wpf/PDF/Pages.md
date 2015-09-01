@@ -455,7 +455,7 @@ Restrictions
 
 
 
-N> To import the document asynchronously for Windows Store apps, refer the_ [Asynchronous Support](http://docs.syncfusion.com/windowsforms/pdf/getting-started#asynchronous-support.htm) _section.
+N> To import the document asynchronously for Windows Store apps, refer the_ [Asynchronous Support](http://docs.syncfusion.com/windowsforms/pdf/getting-started#asynchronous-support) _section.
 
 ## TextElement
 

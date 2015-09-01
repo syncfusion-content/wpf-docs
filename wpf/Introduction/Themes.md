@@ -109,8 +109,8 @@ ActiveColorScheme  </td><td>
 Sets the custom color for the controls. </td><td>
 Attached Property</td><td>
 SolidColorBrush</td><td>
-{{ '[Setting ActiveColorScheme property in XAML](http://docs.syncfusion.com/wpf/ribbon/appearance#active-color-scheme.htm)' | markdownify }}
-{{ '[Setting ActiveColorScheme property in C#](http://docs.syncfusion.com/wpf/ribbon/appearance#active-color-scheme.htm)' | markdownify }}</td></tr>
+{{ '[Setting ActiveColorScheme property in XAML](http://docs.syncfusion.com/wpf/ribbon/appearance#active-color-scheme)' | markdownify }}
+{{ '[Setting ActiveColorScheme property in C#](http://docs.syncfusion.com/wpf/ribbon/appearance#active-color-scheme)' | markdownify }}</td></tr>
 </table>
 
 

@@ -857,7 +857,7 @@ The above code renders the following output.
 ### Limitation
 
 1. When you load Editor directly to CellTemplate (Textbox – MS, DoubleTextBox, PercentTextBox, and CurrencyTextBox - Syncfusion) in Template Column without Edit Template the grid cell cannot change to edit mode. You can just edit a value with loaded editor. 
-2. GridImageColumn, GridCheckBoxColumn and GridHyperLinkColumn does not contain CellTemplate support. You can check [here](http://docs.syncfusion.com/wpf/) for more reference.
+2. GridImageColumn, GridCheckBoxColumn and GridHyperLinkColumn does not contain CellTemplate support. You can check [here](http://docs.syncfusion.com/wpf/sfdatagrid/columns#celltemplate) for more reference.
 
 ## Column types
 
@@ -1487,7 +1487,7 @@ String.Empty</td></tr>
 <td>
 MaskFormat</td><td>
 MaskFormat</td><td>
-Specifies the display format when mask value is used. It determines whether the literals and prompt characters are included in the formatted string. To know more about MaskFormat {{ '[Click Here](http://docs.syncfusion.com/wpf)' | markdownify }}</td><td>
+Specifies the display format when mask value is used. It determines whether the literals and prompt characters are included in the formatted string. To know more about MaskFormat {{ '[Click Here](http://docs.syncfusion.com/wpf/sfdatagrid/columns#gridmaskcolumn)' | markdownify }}</td><td>
 MaskFormat.ExcludePromptAndLiterals</td></tr>
 <tr>
 <td>
@@ -5145,14 +5145,14 @@ _Hyperlink Column redirected to an URI whose values are not bound to a Column us
 
 #### CustomColumn support
 
-SfDataGrid allows you to create your own column other than SfDataGrid predefined [column collection](http://docs.syncfusion.com/wpf). You can decide column’s key board interaction, the events you want to hook and validation from renderer creation. This section explains you on how to create custom column. Custom column can be created by overriding predefined renderers with [renderer replacement](http://docs.syncfusion.com/wpf) or can be adding new custom renderer to renderer collection. There are two steps to create custom column.
+SfDataGrid allows you to create your own column other than SfDataGrid predefined [column collection](http://docs.syncfusion.com/wpf/sfdatagrid/columns#column-creation) or can be adding new custom renderer to renderer collection. There are two steps to create custom column.
 
 * Creating custom Renderer for column
 * Creating custom column
 
 #### Creating custom Renderer for column
 
-You can create custom renderer by deriving from GridVirtualizingCellRenderer<D, E>. It contains generic parameters Where ‘D’ denotes the type display control and ‘E’ denotes the type of edit control. You can load your custom control as display or edit control or you can also load standard controls (TextBlock, Text Box, Combo Box…) and you can customize it in your way. You can also override the existing renderers and you can create customized one. There are some list of existing [renderers](http://docs.syncfusion.com/wpf) available in SfDataGrid.
+You can create custom renderer by deriving from GridVirtualizingCellRenderer<D, E>. It contains generic parameters Where ‘D’ denotes the type display control and ‘E’ denotes the type of edit control. You can load your custom control as display or edit control or you can also load standard controls (TextBlock, Text Box, Combo Box…) and you can customize it in your way. You can also override the existing renderers and you can create customized one. There are some list of existing [renderers](http://docs.syncfusion.com/wpf/sfdatagrid/columns#creating-custom-renderer-for-column) available in SfDataGrid.
 
 The following code example illustrates on how to create custom renderer to load DatePicker as Edit element and TextBlock as display element. 
 

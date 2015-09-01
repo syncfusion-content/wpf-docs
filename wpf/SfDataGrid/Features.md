@@ -4016,7 +4016,7 @@ The above code renders the following output.
 #### Limitation
 
 1. When you load Editor directly to CellTemplate (Textbox – MS, DoubleTextBox, PercentTextBox, and CurrencyTextBox - Syncfusion) in Template Column without Edit Template the grid cell cannot change to edit mode. You can just edit a value with loaded editor. 
-2. GridImageColumn, GridCheckBoxColumn and GridHyperLinkColumn does not contain CellTemplate support. You can check [here](http://docs.syncfusion.com/wpf) for more reference.
+2. GridImageColumn, GridCheckBoxColumn and GridHyperLinkColumn does not contain CellTemplate support. You can check [here](http://docs.syncfusion.com/wpf/sfdatagrid/columns#celltemplate) for more reference.
 
 ### Column types
 
@@ -4603,7 +4603,7 @@ String.Empty</td></tr>
 <td>
 MaskFormat</td><td>
 MaskFormat</td><td>
-Specifies the display format when mask value is used. It determines whether the literals and prompt characters are included in the formatted string. To know more about MaskFormat {{ '[Click Here](http://docs.syncfusion.com/wpf)' | markdownify }}</td><td>
+Specifies the display format when mask value is used. It determines whether the literals and prompt characters are included in the formatted string. To know more about MaskFormat {{ '[Click Here](http://docs.syncfusion.com/wpf/sfdatagrid/columns#gridmaskcolumn)' | markdownify }}</td><td>
 MaskFormat.ExcludePromptAndLiterals</td></tr>
 <tr>
 <td>
@@ -6007,7 +6007,7 @@ Reset</td></tr>
 <td>
 Columns</td><td>
 Columns</td><td>
-This is a collection of GridColumns that helps to generate columns based on the given GridColumns (For information about GridColumns, see {{ '[Columns](http://docs.syncfusion.com/wpf/sfdatagrid)' | markdownify }}).</td><td>
+This is a collection of GridColumns that helps to generate columns based on the given GridColumns (For information about GridColumns, see {{ '[Columns](http://docs.syncfusion.com/wpf/sfdatagrid/columns)' | markdownify }}).</td><td>
 new Columns()</td></tr>
 <tr>
 <td>
@@ -7955,10 +7955,10 @@ _Hyperlink Column redirected to an URI whose values are not bound to a Column us
 
 #### CustomColumn support
 
-SfDataGrid allows you to create your own column other than SfDataGrid predefined [column collection](http://docs.syncfusion.com/wpf/sfdatagrid). 
+SfDataGrid allows you to create your own column other than SfDataGrid predefined [column collection](http://docs.syncfusion.com/wpf/sfdatagrid/columns#column-creation). 
 You can decide column’s key board interaction, the events you want to hook and validation from renderer creation. 
 This section explains you on how to create custom column. Custom column can be created by overriding predefined 
-renderers with [renderer replacement](http://docs.syncfusion.com/wpf) or can be adding new custom renderer to 
+renderers with [renderer replacement](http://docs.syncfusion.com/wpf/sfdatagrid/columns#creating-custom-renderer-for-column) or can be adding new custom renderer to 
 renderer collection. There are two steps to create custom column.
 
 * Creating custom Renderer for column
@@ -7966,7 +7966,7 @@ renderer collection. There are two steps to create custom column.
 
 #### Creating custom Renderer for column
 
-You can create custom renderer by deriving from GridVirtualizingCellRenderer<D, E>. It contains generic parameters Where ‘D’ denotes the type display control and ‘E’ denotes the type of edit control. You can load your custom control as display or edit control or you can also load standard controls (TextBlock, Text Box, Combo Box…) and you can customize it in your way. You can also override the existing renderers and you can create customized one. There are some list of existing [renderers](http://docs.syncfusion.com/wpf) available in SfDataGrid.
+You can create custom renderer by deriving from GridVirtualizingCellRenderer<D, E>. It contains generic parameters Where ‘D’ denotes the type display control and ‘E’ denotes the type of edit control. You can load your custom control as display or edit control or you can also load standard controls (TextBlock, Text Box, Combo Box…) and you can customize it in your way. You can also override the existing renderers and you can create customized one. There are some list of existing [renderers](http://docs.syncfusion.com/wpf/sfdatagrid/columns#creating-custom-renderer-for-column) available in SfDataGrid.
 
 The following code example illustrates on how to create custom renderer to load DatePicker as Edit element and TextBlock as display element. 
 
@@ -16658,7 +16658,7 @@ This section explains you how to use Paging in SfDataGrid and you can see the ty
 
 The DataGrid control provides interactive support to manipulate the data using the SfDataPager control. It 
 provides many features. Therefore, you can easily manage the DataPaging.To learn more about the SfDataPager 
-control, you can [click here](http://docs.syncfusion.com/wpf/sfdatagrid).
+control, you can [click here](http://docs.syncfusion.com/wpf/sfdatapager).
 
 There are two different modes in Data Paging as follows,
 
@@ -19098,7 +19098,7 @@ SfDataGrid enables fitting the height of the row based on its content on-demand 
 
 #### GetAutoRowHeight
 
-The GetAutoRowHeight method returns true or false by which the row height can be calculated. It returns false for index that does not belong to the recorded rows. This method is specifically implemented in the [GridColumnSizer](http://docs.syncfusion.com/wpf)class. 
+The GetAutoRowHeight method returns true or false by which the row height can be calculated. It returns false for index that does not belong to the recorded rows. This method is specifically implemented in the [GridColumnSizer](http://docs.syncfusion.com/wpf/sfdatagrid/row-height-customization#autorowheight)class. 
 
 It calculates height by the column that has large data. The following are the parameters for calculation of height.
 
@@ -19398,7 +19398,7 @@ The SfDataGrid provides support to customize the height of the Header row also. 
 
 2. By using QueryRowHeight Event
 
-By using QueryRowHeight event, you can match the RowIndex from QueryRowHeightEventArgs with GetHeaderIndex () helper method that returns index of the Header. You can refer to the following link to get more [resolver](http://docs.syncfusion.com/wpf) methods of the SfDataGrid.
+By using QueryRowHeight event, you can match the RowIndex from QueryRowHeightEventArgs with GetHeaderIndex () helper method that returns index of the Header. You can refer to the following link to get more [resolver](http://docs.syncfusion.com/wpf/sfdatagrid/row-height-customization#queryrowheight) methods of the SfDataGrid.
 
 N> Need to add Syncfusion.UI.Xaml.Grid.Helper namespace to use GetHeaderIndex () method.
 
@@ -19474,7 +19474,7 @@ _Increased Header Row Height_
 When you utilize the special feature AutoRowHeight support of the SfDataGrid control, the row height can grow automatically with the text length you type. You need to raise the QueryRowHeight event and invalidate the row when you complete the editing.
 
 If you want the row to be resized with text that you have typed after editing, you can call InValidateRowHeight 
-(int RowIndex) method in the [CurrentCellEndEdit](http://docs.syncfusion.com/wpf/cardview/controls-and-components#editing) event of the SfDataGrid and it resets the row height internally. 
+(int RowIndex) method in the [CurrentCellEndEdit](http://docs.syncfusion.com/wpf/sfdatagrid/editing#currentcellendedit) event of the SfDataGrid and it resets the row height internally. 
 
 Then call the InvalidateMeasureInfo method in VisualContainer to refresh the view. The QueryRowHeight event is called again for that row alone and it resizes the row based on the edited content.  This measures the row again and arrange it for you.
 

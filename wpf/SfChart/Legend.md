@@ -72,7 +72,7 @@ IconHeight</td><td>
 Gets or sets the double value that represents that  legend icon(s) height.</td></tr>
 </table>
 
-The following code example shows how to create a simple legend. For sample data, refer to the data section in the code example of [Line Series](http://docs.syncfusion.com/winrt/sfchart/series#lineseries ).
+The following code example shows how to create a simple legend. For sample data, refer to the data section in the code example of [Line Series](http://docs.syncfusion.com/winrt/sfchart/series#lineseries).
 
 {% highlight xml %}
 
