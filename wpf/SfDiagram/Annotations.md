@@ -9,9 +9,9 @@ documentation: ug
 
 ### Annotations
 
-The Annotations property of SfDiagram provides support to add annotations to the Diagraming objects (Node and Connector).
+The Annotations property of the SfDiagram provides support to add annotations to the Diagraming objects (Node and Connector).
 
-Customizing the Appearance of Annotations
+Customizing the Appearance of the Annotations
 
 Template for Editing Annotations
 
@@ -83,7 +83,7 @@ You can edit an annotation by double-clicking it. When a node is double-clicked,
 {:.image }
 
 
-Adding Annotations to Nodes
+Adding the Annotations to Nodes
 
 The following code example shows how to add annotations to a Node:
 
