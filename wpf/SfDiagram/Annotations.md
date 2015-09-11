@@ -77,7 +77,7 @@ ViewTemplate=this.Resources["viewtemplate"] as DataTemplate
 
 Editing Annotations
 
-You can edit an annotation by double-clicking it. When a node is double-clicked, the first annotation displayed will enter the Edit mode.
+You can edit an annotation by double-clicking it. When a node is double-clicked, the first annotation displayed enters the Edit mode.
 
 ![](Annotations_images/Annotations_img1.png)
 {:.image }
@@ -111,7 +111,7 @@ n.ContentTemplate = this.Resources["NodeTemplate"] as DataTemplate;
 
 
 
-// Creating Annotation Collection
+// Creates Annotation Collection
 
 n.Annotations = new ObservableCollection<IAnnotation>()
 
@@ -185,7 +185,7 @@ VerticalAlignment=VerticalAlignment.Bottom
 
 
 
-// Adding Nodes to SfDiagram
+// Adds Nodes to the SfDiagram
 
 nodes.Add(n);
 
@@ -205,7 +205,7 @@ The following code example shows how to add annotations to a Connector:
 
 
 
-// Create Connector
+// Creates Connector
 
 ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
 
@@ -219,7 +219,7 @@ c.Foreground = new SolidColorBrush(Colors.Black);
 
 
 
-// Create Annotator Collection
+// Creates Annotator Collection
 
 c.Annotations = new ObservableCollection<IAnnotation>()
 
@@ -256,7 +256,7 @@ Alignment=ConnectorAnnotationAlignment.Target
 
 };
 
-// Add connector to SfDiagram
+// Adds connector to the SfDiagram
 
 lines.Add(c);
 
