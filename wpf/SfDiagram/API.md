@@ -1344,7 +1344,7 @@ Value</td></tr>
 <tr>
 <td>
 SnapToObject</td><td>
-Enables or disablse the appearance of guidelines and decides when guidelines have to be created.</td><td>
+Enables or disables the appearance of guidelines and decides when guidelines have to be created.</td><td>
 SnapToObject-enumSnapToObject.LeftLeftSnapToObject.LeftRightSnapToObject.LeftSnapToObject.RightRightSnapToObject.RightLeftSnapToObject.RightSnapToObject.TopTopSnapToObject.TopBottomSnapToObject.TopSnapToObject.BottomBottomSnapToObject.BottomTopSnapToObject.BottomSnapToObject.HorizontalCenterSnapToObject.VerticalCenterSnapToObject.HorizontalSpacingSnapToObject.VerticalSpacingSnapToObject.WidthSnapToObject.HeightSnapToObject.Size</td></tr>
 </table>
 
