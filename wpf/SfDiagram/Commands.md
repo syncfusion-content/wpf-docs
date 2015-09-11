@@ -9,7 +9,7 @@ documentation: ug
 
 ### Commands
 
-There are several commands provided in the SfDiagram control. These commands can be executed from XAML or C# as shown in the following code samples. Some commands require parameters to be executed.
+There are several commands provided in the SfDiagram control. These commands can be executed from XAML or C# as shown in the following code examples. Some commands require parameters to be executed.
 
 Execute commands without parameters
 
@@ -37,7 +37,7 @@ Execute commands without parameters
 
           Content="Flip" />
 
-Here, sfDiagram refers to an instance of SfDiagram. 
+Here, the sfDiagram refers to an instance of SfDiagram. 
 
 Customizing the Object Size
 
@@ -59,7 +59,7 @@ _Figure_ _53__: Height Customization_
 
 SameWidth Command
 
-The SameWidth command enables selected objects to be resized to the same width of the first object in the selection list.
+The SameWidth command enables the selected objects to be resized to the same width of the first object in the selection list.
 
 
 
@@ -279,7 +279,7 @@ _Figure_ _67__: SpaceDown_
 
 Undoing or Redoing Actions
 
-The Undo command reverses the last editing action performed. For example, some of the basic operations performed on diagram objects such as translation, rotation, resizing, grouping, ungrouping, changing z-order, addition, deletion, and so on, can be reversed. The Redo command restores the last editing action if no other actions have occurred since the last undo.
+The Undo command reverses the last editing action performed. For example, some of the basic operations performed on diagram objects such as translation, rotation, resizing, grouping, ungrouping, changing z-order, addition, deletion, and so on, can be reversed. The Redo command restores the last editing action when no other actions have occurred since the last undo.
 
 
 
@@ -289,19 +289,19 @@ Commands enable you to move selected objects on the page toward the top, bottom,
 
 NudgeUp Command
 
-The NudgeUp command moves the selected object toward the top by 1 pixel.
+The NudgeUp command moves the selected object towards the top by 1 pixel.
 
 NudgeDown Command
 
-The NudgeDown command moves the selected object toward the bottom by 1 pixel.
+The NudgeDown command moves the selected object towards the bottom by 1 pixel.
 
 NudgeRight Command
 
-The NudgeRight command moves the selected object toward the right by 1 pixel.
+The NudgeRight command moves the selected object towards the right by 1 pixel.
 
 NudgeLeft Command
 
-The NudgeLeft command moves the selected object toward the left by 1 pixel.
+The NudgeLeft command moves the selected object towards the left by 1 pixel.
 
 
 
@@ -309,21 +309,21 @@ Clipboard Commands
 
 Clipboard commands are used to perform cut, copy, and paste operations. 
 
-Clipboard commands allow you to cut or copy selected diagram objects to the Clipboard and paste the valid Clipboard content into the diagram.
+Clipboard commands allow you to cut or copy selected diagram objects to the Clipboard and paste the valid Clipboard content into the Diagram.
 
 
 
 Cut Command
 
-Cut the selected objects from the diagram to the Clipboard. 
+Cuts the selected objects from the Diagram to the Clipboard. 
 
 Copy Command
 
-Copy the selected objects from the diagram to the Clipboard. 
+Copies the selected objects from the Diagram to the Clipboard. 
 
 Paste Command
 
-Paste the valid contents of the Clipboard into the diagram. 
+Pastes the valid contents of the Clipboard into the Diagram. 
 
 
 
@@ -337,7 +337,7 @@ _Figure_ _68__: Pasting Diagram Objects_
 
 Duplicate Command
 
-This command copies the selected objects from the diagram and pastes the copied content into the diagram.
+This command copies the selected objects from the Diagram and pastes the copied content into the Diagram.
 
 
 
@@ -349,7 +349,7 @@ This command copies the selected objects from the diagram and pastes the copied 
 
 Flip Commands
 
-Flip commands are used to mirror a diagram object’s content.
+Flip commands are used to mirror a Diagram object’s content.
 
 Execute Group Command
 
@@ -397,7 +397,7 @@ Execute Flip Command
 
 
 
-If the parameter is null, the object will be flipped both horizontally and vertically.
+When the parameter is null, the object is flipped both horizontally and vertically.
 
 
 
@@ -484,7 +484,7 @@ Value</td></tr>
 <tr>
 <td>
 FitToPage</td><td>
-Gets or sets whether the diagram is to fit into the view in terms of its width, height, or entirety.</td><td>
+Gets or sets whether the Diagram is to fit into the view in terms of its width, height, or entirety.</td><td>
 Enum FitToPageFitToPage.FitToPageFitToPage.FitToHeightFitToPage.FitToWidth</td></tr>
 <tr>
 <td>
@@ -532,7 +532,7 @@ IGraphInfo graphInfo = sfdiagram.Info as IGraphInfo;
 
 Zoom Commands
 
-Zoom commands are used to zoom in and out of the diagram.
+Zoom commands are used to zoom in and out of the Diagram.
 
 To execute zoom commands, parameters of type IZoomParameter (IZoomManipulationParameter, IZoomPositionParameter, or IZoomPointerParameter) have to be passed.
 
@@ -783,7 +783,7 @@ Execute DrawCommand
 
 Command Manager
 
-Command manager is used to map between user gestures (keyboard, mouse) with commands. Refer the following table for inbuilt commands with Key Gesture and Mouse Gesture.
+Command manager is used to map between user gestures (keyboard, mouse) with commands. Refer to the following table for inbuilt commands with Key Gesture and Mouse Gesture.
 
 
 
@@ -946,7 +946,7 @@ new ZoomPointerParamenter {     ZoomCommand = ZoomCommand.VerticalScroll}</td></
 </table>
 
 
-List of Command and Key & Mouse Gestures with Parameter:
+List of Commands and Key and Mouse Gestures with Parameter:
 
 
 
@@ -980,17 +980,17 @@ _Note: Handle the command once executed if different commands can be register wi
 
 Custom Commands:
 
-User defined commands can also be created and mapped with existing gesture using command manager.The following code example explains How to register mouse key gesture with Parameter for Save Command (Control + S)
+User defined commands can also be created and mapped with existing gesture by using command manager.The following code example explains how to register mouse key gesture with Parameter to Save Command (Control + S)
 
 
 
-Create a user defined command: Save command
+Creates a user defined command: Save command
 
 
 
 [C#] 
 
-//Creating ICommand
+//Creates ICommand
 
 private ICommand _save;
 
@@ -1006,12 +1006,12 @@ public ICommand Save
 
 }
 
-//Initializing Command
+//Initializes Command
 
 Save = new DelegateCommand(OnSaveCommand);
 
 
-//Execute Command
+//Executes Command
 
 private async void OnSaveCommand(object obj)
 
@@ -1048,7 +1048,7 @@ Map user defined command with key gesture:
 
 [C#] 
 
-//Adding new Command to CommandManager-Cntrl +S =>Save
+//Adds new Command to CommandManager-Cntrl +S =>Save
 
 sfdiagram.CommandManager.Commands.Add
 

@@ -16,13 +16,13 @@ SfDiagram provides support to specify automatic layouts for nodes. It includes t
 
 Directed-Tree Layout
 
-The Directed-Tree layout mode enables you to arrange the nodes in a tree-like structure. This layout can be applied to any diagram that comprises a directed tree graph with unique root and child nodes. This makes creating diagrams easier because the node position is determined automatically based on the connections. However, it is necessary to specify a layout root for the tree layout, as the Directed-Tree layout will position the nodes based on the layout root.
+The Directed-Tree layout mode enables you to arrange the nodes in a tree-like structure. This layout can be applied to any diagram that comprises a directed tree graph with unique root and child nodes. This creates the diagrams easier because the node position is determined automatically based on the connections. However, it is necessary to specify a layout root for the tree layout, as the Directed-Tree layout positions the nodes based on the layout root.
 
 [C#]
 
 
 
-// Creating Layout
+// Creates Layout
 
 diagramcontrol.LayoutManager = new LayoutManager()
 
@@ -44,7 +44,7 @@ SpaceBetweenSubTrees = 50
 
 
 
-// Creating Nodes
+// Creates Nodes
 
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 
@@ -62,7 +62,7 @@ Node n6 = AddNode("Jim-CSE ");
 
 
 
-// Creating Connections
+// Creates Connections
 
 ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
 
@@ -78,7 +78,7 @@ Connector line5 = AddConnector(n3, n6);
 
 
 
-// Adding Nodes to SfDiagram
+// Adds Nodes to the SfDiagram
 
 nodes.Add(n1);
 
@@ -96,7 +96,7 @@ diagramcontrol.Nodes = nodes;
 
 
 
-// Adding Connections to SfDiagram
+// Adds Connections to the SfDiagram
 
 lines.Add(line1);
 
@@ -180,7 +180,7 @@ return line;
 
 Radial-TreeLayout
 
-The Radial-TreeLayout is a specialization of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the diagram nodes. The Radial-Tree Layout arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout, as the Radial-Tree layout will position the nodes based on the layout root.
+The Radial-TreeLayout is a specialization of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the diagram nodes. The Radial-Tree Layout arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout, as the Radial-Tree layout positions the nodes based on the layout root.
 
 [C#]
 
@@ -210,7 +210,7 @@ ConnectNode(head, Flower(4));
 
 
 
-// Creating a tree of nodes
+// Creates a tree of nodes
 
 private List<Node> Flower(int p)
 
@@ -250,7 +250,7 @@ return nodes;
 
 
 
-// Creating a Node
+// Creates a Node
 
 private Node addNode(bool toggle, int lev)
 
@@ -275,7 +275,7 @@ return n;
 
 
 
-//Connect a node with a collection of nodes
+//Connects a node with a collection of nodes
 
 private void ConnectNode(Node head, List<Node> tail)
 
@@ -309,7 +309,7 @@ diagramcontrol.Connectors = Lines;
 
 Updating the Layout
 
-When changes are made to content in SfDiagram, for example, for linking new nodes or adding new connectors, the layout has to be updated to create space for adding the new content. The following code sample illustrates how to update the layout in SfDiagram:
+When changes are made to content in the SfDiagram, for example, linking new nodes or adding new connectors, the layout has to be updated to create space for adding the new content. The following code example illustrates how to update the layout in the SfDiagram:
 
 [C#]
 

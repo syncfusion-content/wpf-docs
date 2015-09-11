@@ -187,7 +187,7 @@ INode Properties
 
 
 
-The following table lists the Properties associated with INode of SfDiagram control:
+The following table lists the Properties associated with INode of the SfDiagram control:
 
 _Table_ _12__: Property Table_
 
@@ -304,7 +304,7 @@ IConnector Properties
 
 
 
-The following table lists the Properties associated with IConnector of SfDiagram control:
+The following table lists the Properties associated with IConnector of the SfDiagram control:
 
 _Table_ _13__: Property Table_
 
@@ -461,7 +461,7 @@ INodePort Properties
 
 
 
-The following table lists the Properties associated with INodePort of SfDiagram control:
+The following table lists the Properties associated with INodePort of the SfDiagram control:
 
 _Table_ _15__: Property Table_
 
@@ -505,7 +505,7 @@ ISymbol Properties
 
 
 
-The following table lists the Properties associated with ISymbol of SfDiagram control:
+The following table lists the Properties associated with ISymbol of the SfDiagram control:
 
 
 
@@ -532,7 +532,7 @@ Stencil Properties
 
 
 
-The following table lists the Properties associated with Stencil of SfDiagram control:
+The following table lists the Properties associated with Stencil of the SfDiagram control:
 
 
 
@@ -554,7 +554,7 @@ Annotations Properties
 
 
 
-The following table lists the Properties associated with Annotations of SfDiagram control:
+The following table lists the Properties associated with Annotations of the SfDiagram control:
 
 
 
@@ -606,7 +606,7 @@ Layout Properties
 
 
 
-The following table lists the Layout Properties associated with Directed Tree Layout of SfDiagram control:
+The following table lists the Layout Properties associated with Directed Tree Layout of the SfDiagram control:
 
 
 
@@ -760,7 +760,7 @@ Rect </td></tr>
 <tr>
 <td>
 MinimumScrollableArea </td><td rowspan = "2">
-Gets or sets the limited area (Minimum point (i.e Left, Top) and Maximum point (i.e Right, Bottom)) that is the only area to view by auto scrolling. Default value is Null. This property is applicable only when ScrollLimit as Limited.When these properties doesn’t set, compiler gets ScrollableArea property automatically. </td><td rowspan = "2">
+Gets or sets the limited area (Minimum point (i.e Left, Top) and Maximum point (i.e Right, Bottom)) that is the only area to view by auto scrolling. Default value is Null. This property is applicable only when ScrollLimit as Limited.When these properties does not set, compiler gets ScrollableArea property automatically. </td><td rowspan = "2">
 Point</td></tr>
 <tr>
 <td>
@@ -798,7 +798,7 @@ SfDiagram Events
 
 
 
-The following table lists the Events associated with SfDiagram control:
+The following table lists the Events associated with the SfDiagram control:
 
 <table>
 <tr>
@@ -904,7 +904,7 @@ Public or Virtual Methods
 
 
 
-The following table lists the Public or Virtual Methods associated with SfDiagram control:
+The following table lists the Public or Virtual Methods associated with the SfDiagram control:
 
 
 
@@ -1006,7 +1006,7 @@ This method sets the default value for AutoScrolledArgs when you create the inst
 
 INode Methods
 
-The following table lists the INode Methods associated with SfDiagram control:
+The following table lists the INode Methods associated with the SfDiagram control:
 
 
 
@@ -1031,7 +1031,7 @@ To Add object(INodePort) into SfDiagram</td></tr>
 
 IConnector Methods
 
-The following table lists the IConnector Methods associated with SfDiagram control:
+The following table lists the IConnector Methods associated with the SfDiagram control:
 
 
 
@@ -1056,7 +1056,7 @@ To Add object(IConnectorSegment) into SfDiagram</td></tr>
 
 IGroup Methods
 
-The following table lists the IGroup Methods associated with SfDiagram control:
+The following table lists the IGroup Methods associated with the SfDiagram control:
 
 
 
@@ -1088,7 +1088,7 @@ Stencil Methods
 
 
 
-The following table lists the Stencil Methods associated with SfDiagram control:
+The following table lists the Stencil Methods associated with the SfDiagram control:
 
 
 
@@ -1344,7 +1344,7 @@ Value</td></tr>
 <tr>
 <td>
 SnapToObject</td><td>
-Enables or disablse the appearance of guidelines and decides when guidelines have to be created.</td><td>
+Enables or disables the appearance of guidelines and decides when guidelines have to be created.</td><td>
 SnapToObject-enumSnapToObject.LeftLeftSnapToObject.LeftRightSnapToObject.LeftSnapToObject.RightRightSnapToObject.RightLeftSnapToObject.RightSnapToObject.TopTopSnapToObject.TopBottomSnapToObject.TopSnapToObject.BottomBottomSnapToObject.BottomTopSnapToObject.BottomSnapToObject.HorizontalCenterSnapToObject.VerticalCenterSnapToObject.HorizontalSpacingSnapToObject.VerticalSpacingSnapToObject.WidthSnapToObject.HeightSnapToObject.Size</td></tr>
 </table>
 

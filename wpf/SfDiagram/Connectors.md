@@ -25,7 +25,7 @@ Like nodes, connectors can also be added in two ways:
 Adding a Connector at Run Time
 
 1. Set the Tool property of SfDiagram to _DrawOnce_ or _ContinuesDraw_.
-2. Place the Source Point of the connector on the Source Node, and the corresponding node will be treated as the source for the new connection.
+2. Place the Source Point of the connector on the Source Node, and the corresponding node is treated as the source for the new connection.
 3. Finally, drag the Target Point of the connector to the Target Node to create a connection between the Source Node and the Target Node.
 
 Adding a Connector through Code
@@ -725,7 +725,7 @@ Orthogonal Segment Editing
 
 Orthogonal segments can be edited at runtime by dragging control points, called thumbs. While dragging control points, some segments can be added or removed to maintain perpendicularity. 
 
-Segments can be edited by dragging the segment thumbs. Segments will be updated as neighboring segments are adjusted.
+Segments can be edited by dragging the segment thumbs. Segments are updated as neighboring segments are adjusted.
 
 ![](Connectors_images/Connectors_img11.jpeg)
 {:.image }
@@ -737,7 +737,7 @@ While dragging the end thumbs, new segments may be added.
 {:.image }
 
 
-When one segment overlaps another segment, unwanted segments will be deleted.
+When one segment overlaps another segment, unwanted segments are deleted.
 
 ![](Connectors_images/Connectors_img13.jpeg)
 {:.image }
@@ -749,7 +749,7 @@ When one segment overlaps another segment, unwanted segments will be deleted.
 
 Line Routing
 
-When drawing a connector between two nodes, if any other nodes are in the path of the connector, it will be redrawn around the interfering nodes.
+When drawing a connector between two nodes, when any other nodes are in the path of the connector, it is redrawn around the interfering nodes.
 
 ![](Connectors_images/Connectors_img15.png)
 {:.image }
@@ -783,7 +783,7 @@ Through ConnectorConstraints
 
 > ![](Connectors_images/Connectors_img16.jpeg)
 {:.image }
-_Note: When ConnectorConstraints is set to Inherit, GraphConstraints will be considered to enable or disable routing. Otherwise, ConnectorConstraints will be considered._
+_Note: When ConnectorConstraints is set to Inherit, GraphConstraints are considered to enable or disable routing. Otherwise, ConnectorConstraints are considered._
 
 Line Bridging
 
@@ -795,7 +795,7 @@ Line bridging provides a visual bridge at the intersection of two or more line c
 
 Line Bridging Direction
 
-Direction of the Line Bridge is customized using BridgeDirection property. This property decides which intersecting segment shows a bridge based path on the preferred direction. The Default value is BridgeDirection.Top.
+Direction of the Line Bridge is customized by using BridgeDirection property. This property decides the intersecting segment to show a bridge based path on the preferred direction. The Default value is BridgeDirection.Top.
 
 _Table_ _3__: Property Table_
 
@@ -867,7 +867,7 @@ Enabling line bridging through graph constraints applies line bridging to all co
 
 
 
-//Initialize the Diagram control.
+//Initializes the Diagram control.
 
 SfDiagram diagramcontrol = new SfDiagram();
 
@@ -913,7 +913,7 @@ Enabling line bridging through connector constraints applies line bridging only 
 
 [C#]
 
-//Creating lines.
+//Creating lines
 
 ObservableCollection<ConnectorViewModel> lines = new
 
@@ -921,7 +921,7 @@ ObservableCollection<ConnectorViewModel>();
 
 
 
-//Initialize line connectors.
+//Initializes line connectors.
 
 ConnectorViewModel line1 = new ConnectorViewModel()
 
@@ -937,7 +937,7 @@ ConnectorViewModel line1 = new ConnectorViewModel()
 
 
 
-//Initialize line connectors.
+//Initializes line connectors.
 
 ConnectorViewModel line2 = new ConnectorViewModel()
 
@@ -953,7 +953,7 @@ ConnectorViewModel line2 = new ConnectorViewModel()
 
 
 
-// Adding connection to SfDiagram.
+// Adds connection to the SfDiagram.
 
 lines.Add(line1);
 
@@ -979,7 +979,7 @@ public class CustomLine : Connector
 
 {
 
-        //Override function to define custom segments.
+        //Overridess function to define custom segments.
 
         protected override IEnumerable<PathSegment> 
 
@@ -1009,7 +1009,7 @@ CreateSegments(Point start, Point end, double angle)
 
 Freehand Drawing
 
-Users can draw freehand lines in the Diagram control. The control then converts the drawing into a series of Bezier curves to smooth the appearance and allow users to adjust the drawing.
+You can draw freehand lines in the Diagram control. The control then converts the drawing into a series of Bezier curves to smooth the appearance and allowd you to adjust the drawing.
 
 ![FreeHand1](Connectors_images/Connectors_img21.png)
 {:.image }
@@ -1019,7 +1019,7 @@ Users can draw freehand lines in the Diagram control. The control then converts 
 {:.image }
 
 
-The following code sample illustrates how to enable freehand drawing:
+The following code example illustrates how to enable freehand drawing:
 
 [C#]
 
@@ -1035,7 +1035,7 @@ Runtime Connection Indicator
 
 Description
 
-When a connector is dragged toward a port or node for connection, the node will be highlighted with an animated visualization.
+When a connector is dragged towards a port or node for connection, the node is highlighted with an animated visualization.
 
 Visualization
 
@@ -1047,7 +1047,7 @@ Visualization
 {:.image }
 
 
-The node or port toward which the connector is dragged is highlighted with a red border and the mouse position on the node is indicated by an animated circle.
+The node or port towards the connector is dragged and highlighted with a red border.The mouse position on the node is indicated by an animated circle.
 
 Customization of Visualization
 
@@ -1093,7 +1093,7 @@ The following code example illustrates how to set corner radius for connectors.
 
 [C#]
 
-//Adding corner radius for connector
+//Adds corner radius for connector
 
 ConnectorViewModel con = new ConnectorViewModel()
 
@@ -1125,7 +1125,7 @@ The following code example illustrate how to adjust the distance by using paddi
 
 [C#]
 
-//Adding ConnectorPadding for connector
+//Adds ConnectorPadding for connector
 
 ConnectorViewModel con = new ConnectorViewModel()
 
@@ -1145,13 +1145,13 @@ TargetPadding = 10,
 
 Endpoint adjustment with specific to Nodes
 
-ConnectorPadding property of a Node is used to specify, how much space in pixels is to be left between a Node and all its connected Edges.
+ConnectorPadding property of a Node is used to specify how much space in pixels is to be left between a Node and all its connected Edges.
 
 The following code example illustrates how to pad Edges connected to a Node.
 
 [C#]
 
-//Adding ConnectorPadding for Node
+//Adds ConnectorPadding for Node
 
 NodeViewModel node = new NodeViewModel()
 
@@ -1175,7 +1175,7 @@ The following code example illustrates how to pad Edges connected to a Port.
 
 [C#]
 
-//Adding ConnectorPadding for port
+//Adds ConnectorPadding for port
 
 NodePort port = new NodePort()
 

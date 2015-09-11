@@ -20,8 +20,8 @@ Diagram consists of many internal controls like Node, Connector, Port, Annotatio
 
 
 
-* Diagram Objects used for representing Diagram Elements
-* Usage Scenario, Advantages, and Disadvantages of Diagram Objects
+* Diagram Objects are used for representing Diagram Elements
+* Usage of Scenario, Advantages, and Disadvantages of Diagram Objects
 * Mapping a View
 * Workflow
 
@@ -85,11 +85,11 @@ Selector</td></tr>
 </table>
 
 
-Usage Scenario, Advantages and Disadvantages of Diagram Objects
+Usage of Scenario, Advantages and Disadvantages of Diagram Objects
 
 
 
-Following table illustrates the usage scenario, advantages and disadvantages of Diagram Objects.
+The following table illustrates the usage of scenario, advantages and disadvantages of Diagram Objects.
 
 
 
@@ -103,20 +103,20 @@ Disadvantages</td></tr>
 <tr>
 <td>
 Interface</td><td rowspan = "2">
-To follow MVVM pattern.To support large sets of data through virtualization with better performance and reduce memory usage.If required, business objects can directly be used as the source for diagram objects, instead of using types defined in the diagram library.Direct access to the View is not required (as per MVVM guidelines). New properties, commands, behaviors can be added and bound between View and ViewModel to overcome this limitation.</td><td>
+To follow MVVM pattern.To support large sets of data through virtualization with better performance and reduce memory usage.When required, business objects can directly be used as the source for diagram objects, instead of using types defined in the diagram library.Direct access to the View is not required (as per MVVM guidelines). New properties, commands, behaviors can be added and bound between View and ViewModel to overcome this limitation.</td><td>
 Directly use the business objects just by implementing the required interface.High possibility of accessing objects in Non-UI thread.</td><td>
-Have to implement all properties in interfaces.Object needs to be updated on moving to a new version as new properties may be added to new version.</td></tr>
+Have to implement all the properties in interfaces.Object needs to be updated on moving to a new version as new properties may be added to new version.</td></tr>
 <tr>
-<td>
+<td> 
 ViewModel</td><td>
 Directly use the business objects just by deriving required ViewModel.High possibility of accessing objects in Non-UI thread.</td><td>
-If the business object already has a base class, the business object cannot derive this ViewModel.</td></tr>
+When the business object already has a base class, the business object cannot derive this ViewModel.</td></tr>
 <tr>
 <td>
 View</td><td>
 When diagram is not widely used in the application with limited set of data. MVVM pattern is not required.Quick and easy development as everything is directly accessible.</td><td>
 Easy access to View anywhere.Simpler and easy to use.</td><td>
-When requirements keep growing, huge implementation in a single class can make it unclear.Trying to access this object in a Non-UI thread will lead to an exception.During Virtualization, performance and memory usage will not be as good as using Non-UI objects.</td></tr>
+When requirements keep growing, huge implementation in a single class can make it unclear.Trying to access this object in a Non-UI thread will lead to an exception.During Virtualization, performance and memory usage are not as good as using Non-UI objects.</td></tr>
 </table>
 
 
@@ -150,15 +150,15 @@ The following steps illustrate how to add, delete or recycle a View from the Vie
 
 
 
-1. When a view is requested for a Non-UI element based on a matching key, a view will be created from the Data Template and returned. 
-2. If such a Non-UI element is deleted, and it has a matching key found in ViewDictionary, the view will not be deleted. Instead, it will be cached for future use.
-3. If another Non-UI element requires the same view, a cached view will be returned. If a cache is not available, a new view will be loaded from the provided Data Template.
+1. When a view is requested for a Non-UI element based on a matching key, a view is created from the Data Template and returned. 
+2. If such a Non-UI element is deleted, and it has a matching key found in ViewDictionary, the view is not deleted. Instead, it is cached for future use.
+3. If another Non-UI element requires the same view, a cached view is returned. When a cache is not available, a new view is loaded from the provided Data Template.
 
 
 
 Calling Virtual Methods
 
-When there is no View found in the ViewDictionary, following virtual methods can be called to get a view. As these are virtual methods, they can be overridden by deriving the SfDiagram class. The following virtual methods used to create a View for Non-UI elements.
+When there is no View found in the ViewDictionary, following virtual methods can be called to get a view. As these are virtual methods, they can be overridden by deriving the SfDiagram class. The following virtual methods are used to create a View for Non-UI elements.
 
 
 
@@ -171,16 +171,16 @@ When there is no View found in the ViewDictionary, following virtual methods can
 
 Workflow
 
-Following is the internal workflow for creating a view on Diagram Objects:
+The following is the internal workflow for creating a view on Diagram Objects:
 
 
 
 1. Add objects to be visualized into the diagram.
-2. If the added object is already a View, it can be used directly.
-3. If the added object is a Non-UI object (ViewModel or object that implements the necessary interface), diagram will search for a matching View by using ViewDictionary.
-4. If a matching View is not found, a View is created though Virtual methods.
-5. If there is no cached view, a new View instance will be loaded from the Data Template stored in the ViewDictionary.
-6. The Non-UI object will be set as the Data Context for the view that is created or reused dynamically.
+2. When the added object is already a View, it can be used directly.
+3. When the added object is a Non-UI object (ViewModel or object that implements the necessary interface), diagram searches for a matching View by using ViewDictionary.
+4. When a matching View is not found, a View is created though Virtual methods.
+5. When there is no cached view, a new View instance is loaded from the Data Template stored in the ViewDictionary.
+6. The Non-UI object is set as the Data Context for the view that is created or reused dynamically.
 7. View is ready for use.
 
 
@@ -238,14 +238,14 @@ SfDiagram diagramcontrol=new SfDiagram();
 diagramcontrol.Constraints = diagramcontrol.Constraints &~ GraphConstraints.Zoomable;
 
 
-In the preceding example, Zoomable property is disabled in SfDiagram control, but all other constraints are enabled.
+In the preceding example, Zoomable property is disabled in SfDiagram control, but all the other constraints are enabled.
 
 
 Check Operation
 
 
 
-You can check any values using Bitwise ‘&’ (AND) operator.
+You can check any value by using Bitwise ‘&’ (AND) operator.
 
 
 
@@ -257,7 +257,7 @@ SfDiagram diagramcontrol=new SfDiagram();
 if((diagramcontrol.Constraints & GraphConstraints.Zoomable)== GraphConstraints.Zoomable)
 
 
-In the preceding example, a check is made on whether the zoom constraints are enabled in SfDiagram control. The expression will return a zoom constraint, if SfDiagram control constraints have zoom constraints.
+In the preceding example, a check is made on whether the zoom constraints are enabled in the SfDiagram control. The expression returns a zoom constraint, when the SfDiagram control constraints have zoom constraints.
 
 
 
