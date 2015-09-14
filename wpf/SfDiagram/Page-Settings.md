@@ -11,7 +11,7 @@ documentation: ug
 
 Description
 
-Page settings enable users to customize the appearance, width, height, and measurement units of the diagram page. Page size will be based on any one of the following options:
+Page settings enable you to customize the appearance, width, height, and measurement units of the Diagram page. Page size is based on any one of the following options:
 
 * Content of the page.
 * Specified PageWidth and PageHeight.
@@ -23,11 +23,11 @@ Page settings enable users to customize the appearance, width, height, and measu
 
 Page Appearance Based on Content of the Page
 
-If the PageWidth and PageHeight are not specified, the page size will be updated based on the content of the page.
+When the PageWidth and PageHeight are not specified, the page size is updated based on the content of the page.
 
 
 
-By default, the page size will be updated based on the content.
+By default, the page size is updated based on the content.
 
 
 
@@ -41,7 +41,7 @@ _Figure_ _90__: Content-based Page Size_
 
 Page Appearance Based on PageWidth and PageHeight
 
-If PageWidth and PageHeight are specified and MultiplePage is set to false, the page size will be the specified values.
+When PageWidth and PageHeight are specified and MultiplePage is set to false, the page size would be the specified values.
 
 
 
@@ -51,7 +51,7 @@ Set PageWidth and PageHeight
 
 [C#]
 
-//Initializing SfDiagram
+//Initializing the SfDiagram
 
 SfDiagram diagramControl = new SfDiagram();
 
@@ -79,7 +79,7 @@ _Figure_ _91__: Single Page with Specified Width and Height_
 
 MultiplePage and PageBreaks
 
-If MultiplePage is set to true, based on the content of the page, the page size will be in multiples of the specified PageWidth and PageHeight. If ShowPageBreaks is set to true, page break lines will be rendered to separate the pages.
+When MultiplePage is set to true, based on the content of the page, the page size is in multiples of the specified PageWidth and PageHeight. When ShowPageBreaks is set to true, page break lines are rendered to separate the pages.
 
 
 
@@ -87,7 +87,7 @@ Set MultiplePage
 
 [C#]
 
-//Initializing SfDiagram
+//Initializing the SfDiagram
 
 SfDiagram diagramControl = new SfDiagram();
 
@@ -117,7 +117,7 @@ Measurement Units
 
 Description
 
-An element’s position, size, and many other numeric values are measured in pixels by default. These values can be changed to standard measurement units like inches, centimeters, etc. These units can also be changed at runtime. Once the unit is changed, all numeric values will be updated to the new unit to maintain the same visual appearance. Rulers and gridlines will be updated accordingly.
+An element’s position, size, and many other numeric values are measured in pixels, by default. These values can be changed to standard measurement units like inches, centimeters, etc. These units can also be changed at runtime. Once the unit is changed, all numeric values are updated to the new unit to maintain the same visual appearance. Rulers and gridlines are updated accordingly.
 
 
 
@@ -125,7 +125,7 @@ To change measurement units
 
 [C#]
 
-//Initializing SfDiagram
+//Initializing the SfDiagram
 
 SfDiagram diagramControl = new SfDiagram();
 
@@ -165,5 +165,5 @@ MeasurementUnit is an abstract class. LengthUnit is a class that implements this
 
 Custom Units
 
-MeasurementUnit is an abstract class. The Unit property of PageSettings is of type MeasurementUnit. A new kind of measurement unit can also be created by implementing this abstract base class.
+MeasurementUnit is an abstract class. The Unit property of PageSettings is of MeasurementUnit type. A new kind of measurement unit can also be created by implementing this abstract base class.
 
