@@ -9,13 +9,13 @@ documentation: ug
 
 ### Virtualization
 
-Virtualization is the process of loading the diagramming objects that are available in the visible area of the diagram control, that is, only the diagramming objects that lie within the ViewPort of the ScrollViewer are loaded (remaining objects will be loaded only when they come into view).
+Virtualization is the process of loading the diagramming objects available in the visible area of the Diagram control, that is, only the diagramming objects that lie within the ViewPort of the ScrollViewer are loaded (remaining objects are loaded only when they come into view).
 
 
 
-This feature gives optimized performance while loading and dragging items to SfDiagram which consists of many Nodes and Line Connectors.
+This feature gives optimized performance while loading and dragging items to the SfDiagram that consists of many Nodes and Line Connectors.
 
-The following code sample illustrates how to enable Virtualization in SfDiagram:
+The following code example illustrates how to enable Virtualization in SfDiagram:
 
 
 
