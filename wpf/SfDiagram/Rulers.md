@@ -9,13 +9,13 @@ documentation: ug
 
 ### Rulers
 
-The ruler provides a horizontal and vertical guide for measuring in the Diagram control. The ruler can be used to measure diagram objects, indicate positions, and align diagram elements. This is especially useful in creating scale models. Users can set the unit of measure, such as centimeters or inches. The default unit of measure is pixels.
+The ruler provides a horizontal and vertical guide for measuring in the Diagram control. The ruler can be used to measure the Diagram objects, indicate positions, and align Diagram elements. This is especially useful in creating scale models. You can set the unit of measure, such as centimeters or inches. The default unit of measure is pixels.
 
 
 
-Adding Rulers to a Diagram
+Adding Rulers to the Diagram
 
-Use the following code sample to add the ruler to the diagram.
+Use the following code example to add the ruler to the Diagram.
 
 [C#]
 
@@ -37,9 +37,9 @@ _Figure_ _88__: Default ruler_
 
 Customizing the Ruler
 
-By default, ruler segments will be arranged based on measurement units.
+By default, ruler segments are arranged based on measurement units.
 
-Segment width, the textual description of the ruler segment, and the appearance of the ruler ticks can be customized. Use the following code sample to customize the ruler:
+Segment width, the textual description of the ruler segment, and the appearance of the ruler ticks can be customized. Use the following code example to customize the ruler:
 
 [C#]
 
