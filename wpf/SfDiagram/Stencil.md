@@ -167,12 +167,12 @@ SymbolTemplate="{StaticResource FlowChart_Star}">
 
 
 
-This Collection will be the SymbolSource to the Stencil. Based on the SymbolSource, the Stencil will populate the Symbols.
+This Collection is the SymbolSource to the Stencil. Based on the SymbolSource, the Stencil populates the Symbols.
 
 SymbolGroup
 
 
-SymbolGroup is used group the Symbols in Stencil. The SymbolGroupProvider groups the symbols based on the MappingName property.
+SymbolGroup is used to group the Symbols in Stencil. The SymbolGroupProvider groups the symbols based on the MappingName property.
 
 
 
@@ -393,15 +393,15 @@ public class SymbolCollection : ObservableCollection<ISymbol>
 
 
 
-This collection will be the SymbolSource for the stencil. Based on the SymbolSource, the stencil will populate the symbols.
+This collection is the SymbolSource for the stencil. Based on the SymbolSource, the stencil populates the symbols.
 
 Preview for Drag and Drop
 
-SfDiagram provides preview support for Stencil. When you drag an item from Stencil to Diagram, a preview of the dragged item will be displayed. You can enable or disable the preview support. You can also customize the preview.  
+SfDiagram provides preview support for Stencil. When you drag an item from Stencil to Diagram, a preview of the dragged item is displayed. You can enable or disable the preview support. You can also customize the preview.  
 
 Use Case Scenario
 
-This feature displays a preview of the item you drag from Stencil, enabling you to identify the item you are dragging from the Stencil to the SfDiagram control. It also it gives a preview of the size and appearance of the item before it is dropped.
+This feature displays a preview of the item you drag from Stencil, enabling you to identify the item you are dragging from the Stencil to the SfDiagram control. It also gives a preview of the size and appearance of the item before it is dropped.
 
 Enabling Preview
 
@@ -411,13 +411,13 @@ The following code example illustrates how to enable preview support: 
 
 [C#]
 
-//Enable the drag and drop preview.
+//Enables the drag and drop preview.
 
 stencil.Constraints = stencil.Constraints | StencilConstraints.ShowPreview;
 
 
 
-//Disable the drag and drop preview.
+//Disables the drag and drop preview.
 
 stencil.Constraints = stencil.Constraints &~ StencilConstraints.ShowPreview;
 
@@ -513,7 +513,7 @@ The following code example illustrates how to create a SymbolGroup: 
 
 > __![http://help.syncfusion.com/UG/winrt/ImagesExt/image106_19.png](Stencil_images/Stencil_img7.png)
 {:.image }
-_Note: In the preceding code example, “GroupName” is the custom Symbol property that is used to group the symbols using the MappingName property of the SymbolGroupProvider._
+_Note: In the preceding code example, “GroupName” is the custom Symbol property that is used to group the symbols by using the MappingName property of the SymbolGroupProvider._
 
 Expand or Collapse SymbolGroup
 
@@ -529,17 +529,17 @@ Description</td></tr>
 <td>
 1.</td><td>
 One</td><td>
-Always one SymbolGroup will be in expanded state.</td></tr>
+Always one SymbolGroup is in expanded state.</td></tr>
 <tr>
 <td>
 2.</td><td>
 OneOrMore</td><td>
-At least one SymbolGroup will be in Expanded state. </td></tr>
+At least one SymbolGroup is in Expanded state. </td></tr>
 <tr>
 <td>
 3.</td><td>
 ZeroOrOne</td><td>
-Not more than a single SymbolGroup will be in expanded state. All ‘SymbolGroup’ can be in collapsed state.</td></tr>
+Not more than a single SymbolGroup is in expanded state. All ‘SymbolGroup’ can be in collapsed state.</td></tr>
 <tr>
 <td>
 4.</td><td>
@@ -550,9 +550,9 @@ Any number of SymbolGroup can be in the expanded state. All ‘SymbolGroup’ ca
 
 SymbolFilters
 
-SymbolFilterProvider is used to filter or hide the symbols using delegates. SymbolFilters are the collection of SymbolFilterProvider. 
+SymbolFilterProvider is used to filter or hide the symbols by using delegates. SymbolFilters are the collection of SymbolFilterProvider. 
 
-The following code example shows how to create and add the SymbolFilter. Based on the return Boolean value of the SymbolFilter delegate, the corresponding item will be removed from Stencil. When a SymbolGroup does not have any Symbols, the corresponding SymbolGroup will also be removed.
+The following code example shows how to create and add the SymbolFilter. Based on the return Boolean value of the SymbolFilter delegate, the corresponding item is removed from Stencil. When a SymbolGroup does not have any Symbols, the corresponding SymbolGroup is also removed.
 
 [C#]
 
@@ -624,7 +624,7 @@ private bool SymbolFilter(SymbolFilterProvider sender, ISymbol symbol)
 
 SelectedFilter
 
-There can be multiple SymbolFilters, but only one filter can be selected at a time. These SymbolFilters are visually represented in a combo box. When the selected item is changed in the combo box, SelectedFilter will be updated accordingly.
+There can be multiple SymbolFilters, but only one filter can be selected at a time. These SymbolFilters are visually represented in a combo box. When the selected item is changed in the combo box, SelectedFilter is updated accordingly.
 
 ![](Stencil_images/Stencil_img8.png)
 {:.image }
