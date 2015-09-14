@@ -90,7 +90,7 @@ The default value for GraphConstraints property is _Default_.
 
 
 
-The following code example illustrates how to add the Undoable constraint to existing constraints in SfDiagram:
+The following code example illustrates how to add the Undo constraint to existing constraints in SfDiagram:
 
 
 
@@ -102,5 +102,5 @@ sfdiagram.Constraints = sfdiagram.Constraints | GraphConstraints.Undoable;
 
 ![](Constraints_images/Constraints_img1.jpeg)
 {:.image }
-_Note: GraphConstraints property is manipulated using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations_._
+_Note: GraphConstraints property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations_._
 
