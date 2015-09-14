@@ -886,15 +886,15 @@ Item: Gets new object as a node, connector, or group that is added to SfDiagram 
 <tr>
 <td>
 DiagramEventArgs</td><td>
-Item: Gets new object as a node, connector, or group on which the event is raised.</td></tr>
+Item: Gets new object as a node, connector, or group where the event is raised.</td></tr>
 <tr>
 <td>
 ChangeEventArgs<object, ScrollChanged></td><td>
-ChangeEventArgsItem:  Gets the SfDiagram on which the event is raised.OldValue: Gets the old scroll values.NewValue: Gets the new scroll values.ScrollChangedContentBounds:  Gets the size and position of the diagram page based on its children.CurrentZoom: Gets the zoom value.MaxZoom:  Gets the new max zoom value.MinZoom: Gets the new mininmum zoom value.PageBounds:  Gets the size and position of diagram page based on its children and page settings.ScrollFactor:  Gets the scroll factor value.ViewPort:  Gets the viewport value.ZoomFactor: Gets zoom factor value.</td></tr>
+ChangeEventArgsItem:  Gets the SfDiagram on which the event is raised.OldValue: Gets the old scroll values.NewValue: Gets the new scroll values.ScrollChangedContentBounds:  Gets the size and position of the Diagram page based on its children.CurrentZoom: Gets the zoom value.MaxZoom:  Gets the new max zoom value.MinZoom: Gets the new mininmum zoom value.PageBounds:  Gets the size and position of diagram page based on its children and page settings.ScrollFactor:  Gets the scroll factor value.ViewPort:  Gets the viewport value.ZoomFactor: Gets zoom factor value.</td></tr>
 <tr>
 <td>
 DiagramPreviewEventArgs</td><td>
-Item: Gets new object as a node, connector, or group on which the event is raised.Cancel: If set to true, this will be cancelled.</td></tr>
+Item: Gets new object as a node, connector, or group where the event is raised.Cancel: When set to true, this is cancelled.</td></tr>
 </table>
 
 
