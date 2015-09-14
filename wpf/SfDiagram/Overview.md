@@ -9,17 +9,17 @@ documentation: ug
 
 ### Overview
 
-Overview control is used to display a preview (overall view) of the entire content of a diagram. This helps you to look overall picture of large diagram and also to navigate (pan or zoom) to a particular position of the page.
+Overview control is used to display a preview (overall view) of the entire content of a Diagram. This helps you to look overall picture of large Diagram and also to navigate (pan or zoom) to a particular position of the page.
 
-When you work on a very large diagram, you may not know in which part you are actually working or navigation from one part to another might be difficult. To navigation, you can zoom out entire diagram and find where you are. This solution is not suitable if you need some frequent navigation.
+When you work on a very large Diagram, you may not know the part where you are actually working or navigation from one part to another might be difficult. To navigation, you can zoom out entire Diagram and find where you are. This solution is not suitable when you need some frequent navigation.
 
-Overview control solves these problem by displays a preview (overall view) of entire diagram. A rectangle indicates viewport of the diagram. Navigation becomes easy by dragging this rectangle.
+Overview control solves this problem by displaying a preview (overall view) of the entire Diagram. A rectangle indicates viewport of the Diagram. Navigation becomes easy by dragging this rectangle.
 
 Supported platform: WinRT 8.1, Universal
 
 Use Case Scenarios
 
-You can view the entire content of a diagram in a preview window. This helps you to navigate to a particular position of the page.
+You can view the entire content of a Diagram in a preview window. This helps you to navigate to a particular position of the page.
 
 <table>
 <tr>
@@ -51,7 +51,7 @@ Brush</td></tr>
 
  Adding Overview Control to an Application 
 
-The following code example explains how to add Overview to Application
+The following code example explains how to add Overview to an Application
 
 
 
@@ -67,7 +67,7 @@ The following code example explains how to add Overview to Application
 
 
 
-Please refer to the Overview Sample from the following link.
+Refer to the Overview Sample from the following link.
 
 Sample Link:
 
