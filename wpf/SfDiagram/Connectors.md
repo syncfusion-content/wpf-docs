@@ -406,7 +406,7 @@ con.Segments = new ObservableCollection<IConnectorSegment>()
 
 > ![C:/Users/ApoorvahR/Desktop/Note.png](Connectors_images/Connectors_img4.png)
 {:.image }
-_Note: A terminate segment is added to meet the given target point if the given segment is invalid. The terminate segment will be a type that is added previously._ 
+_Note: A terminate segment is added to meet the given target point when the given segment is invalid. The terminate segment can be a type that is added previously._ 
 
 ILineSegmentLength
 
