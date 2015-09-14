@@ -963,11 +963,11 @@ diagramcontrol.Connectors = lines;
 
 Inherit
 
-When ConnectorConstraints is set to Inherit, GraphConstraints will be considered to enable or disable line bridging. Otherwise, ConnectorConstraints will be considered.
+When ConnectorConstraints is set to Inherit, GraphConstraints are considered to enable or disable line bridging. Otherwise, ConnectorConstraints are considered.
 
 Custom Bridging Segment
 
-Bridge segments can be customized by overriding the connector’s virtual method CreateSegments as shown in the following code sample:
+Bridge segments can be customized by overriding the connector’s virtual method CreateSegments as shown in the following code example:
 
 
 
