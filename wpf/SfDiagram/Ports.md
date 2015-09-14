@@ -9,8 +9,7 @@ documentation: ug
 
 ### Ports
 
-Essential Diagram for WinRT provides support to define custom ports for making connections. The ConnectionPort class is used for defining custom ports on nodes. Any number of ports can be defined on a node. Ports in SfDiagram support absolute and relative positioning.
-
+Essential Diagram for WinRT provides support to define custom ports for making connections. The ConnectionPort class is used for defining custom ports on nodes. Any number of ports can be defined on a node. Ports in the SfDiagram support absolute and relative positioning.
 Adding Ports to a Node
 
 To add a port to the node, you must specify the position of the port by using the Left and Top properties, and then specify the Node to host the port by using the Node property. Once this is done, the port is added to the Ports collection of the Node.
@@ -97,7 +96,7 @@ ShapeStyle= this.Resources["portstyle"] as Style
 
 };
 
-// Adding Nodes to SfDiagram
+// Adding Nodes to the SfDiagram
 
 nodes.Add(n);
 
@@ -190,7 +189,7 @@ ShapeStyle=this.Resources["portstyle"] as Style
 
 Port Constraints
 
-PortConstraints property is used to enable or disable certain behaviors of Nodes. This property is applicable only to the Port of SfDiagram control.
+PortConstraints property is used to enable or disable certain behaviors of Nodes. This property isapplicab le only to the Port of the SfDiagram control.
 
 _Table_ _6__: Constraints Table_
 
@@ -232,7 +231,7 @@ Disables all behaviors of the control.</td></tr>
 
 The default value for PortConstraints property is Inherit.
 
-The following code example illustrates how to set the PortConstraints property for a Node Port in SfDiagram:
+The following code example illustrates how to set the PortConstraints property for a Node Port in the SfDiagram:
 
 [C#]
 
@@ -244,7 +243,7 @@ _Note: PortConstraints property is manipulated using bitwise operations. For mor
 
 Setting Up a Port Connection
 
-The SourcePort and TargetPort properties are used to specify the Source and Target Ports for establishing a connecting between two nodes. Also, the SourceNode and TargetNode properties should be specified. 
+The SourcePort and TargetPort properties are used to specify the Source and Target Ports for establishing a connection between two nodes. Also, the SourceNode and TargetNode properties should be specified. 
 
 The following code shows how to establish a port connection:
 
@@ -281,7 +280,7 @@ source.Ports = new ObservableCollection<INodePort>()
 
 {
 
-// NodePort with Absolute Positioning,Customizied Shape and Style
+// NodePort with Absolute Positioning, Customizied Shape and Style
 
 new NodePort()
 
@@ -309,7 +308,7 @@ ShapeStyle=GetPortStyle()}
 
 
 
-// Adding Nodes to Sfdiagram
+// Adding Nodes to the Sfdiagram
 
 nodes.Add(source);
 
@@ -371,7 +370,7 @@ ShapeStyle=GetPortStyle()
 
 
 
-// Adding Nodes to SfDiagram
+// Adding Nodes to the SfDiagram
 
 nodes.Add(target);
 
@@ -393,7 +392,7 @@ TargetPort = target.Ports.ToList()[0] as NodePort,
 
 
 
-// Adding Connection to SfDiagram
+// Adding Connection to the SfDiagram
 lines.Add(con);
 
 diagramcontrol.Connectors = lines;
@@ -410,7 +409,7 @@ PortVisibility
 
 
 
-The PortVisibility property is used to control the visibility of ports on a node. PortVisibility has following four options.
+The PortVisibility property is used to control the visibility of ports on a node. PortVisibility has the following four options.
 
 1. MouseOver 
 2. MouseOverOnConnect 
@@ -430,7 +429,7 @@ Value</td></tr>
 <tr>
 <td>
 PortVisibility </td><td>
-Gets and sets whether the port will be visible or not.</td><td>
+Gets and sets whether the port can be visible or not.</td><td>
 PortVisibility </td></tr>
 </table>
 Enum Fields
@@ -553,11 +552,11 @@ Inherit PortVisibility
 
 
 
-PortVisibility property can be set in Diagram, Node, and Port. This helps control the visibility in a single place (Diagram instance) instead of all ports. Port’s visibility can be controlled by using two properties; 
+PortVisibility property can be set in the Diagram, Node, and Port. This helps control the visibility in a single place (Diagram instance) instead of all ports. Port’s visibility can be controlled by using two properties; 
 
 PortVisibility and Constraints. 
 
-When Port’s Constraint is set to InheritPortVisibility, visibility is updated based on Node’s PortVisibility property. Similarly, when Node’s Constraint property is set to InheritPortVisibility, visibility is updated based in Diagram’s PortVisibility. 
+When Port’s Constraint is set to InheritPortVisibility, visibility is updated based on Node’s PortVisibility property. Similarly, when Node’s Constraint property is set to InheritPortVisibility, visibility is updated based on Diagram’s PortVisibility. 
 
 By default, Port inherits node’s port visibility, and node in turn inherits diagram’s port visibility. This property value inheritance can be stopped for a particular item by changing the constraint as explained.
 
@@ -569,7 +568,7 @@ Port visibility of a particular node can be stopped by removing InheritPortVisib
 
 
 
-//Sets PortVisibility to SfDiagram.
+//Sets PortVisibility to the SfDiagram.
 
 
 
@@ -611,7 +610,7 @@ To stop Port’s inheritance with Node
 
 
 
-// Sets PortVisibility to SfDiagram.
+// Sets PortVisibility to the SfDiagram.
 
 
 
