@@ -9,7 +9,7 @@ documentation: ug
 
 ### Groups
 
-SfDiagram provides support to group and ungroup nodes. Grouping feature is useful when you want to apply the same edits to a number of objects, and yet retain their individuality. All the operations performed on a group also affect the individual items in the group. However, any item in the group can also be edited individually. On ungrouping, the items in the group again act as individual entities. 
+The SfDiagram provides support to group and ungroup nodes. Grouping feature is useful when you want to apply the same edits to a number of objects, and yet retain their individuality. All the operations performed on a group also affect the individual items in the group. However, any item in the group can also be edited individually. On ungrouping, the items in the group again act as individual entities. 
 
 Create Group
 
@@ -56,7 +56,7 @@ n1,n2
 
 
 
-// Adding Nodes to Sfdiagram
+// Adding Nodes to the Sfdiagram
 
 nodes.Add(n1);
 
@@ -66,7 +66,7 @@ diagramcontrol.Nodes = nodes;
 
 
 
-// Adding Groups to SfDiagram
+// Adding Groups to the SfDiagram
 
 groups.Add(g);
 
@@ -98,7 +98,7 @@ return n;
 
 }
 
-By Using ParentGroup property in Node
+By using the ParentGroup property in Node
 
 The following code example illustrates how to create a group by using ParentGroup property of Node:
 
@@ -114,7 +114,7 @@ GroupViewModel g = new GroupViewModel();
 
 
 
-// Create Nodes
+// Creates Nodes
 
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 
@@ -124,7 +124,7 @@ Node n2 = AddNode("Node2",300,100);
 
 
 
-// Add Nodes to Sfdiagram
+// Adds Nodes to the Sfdiagram
 
 nodes.Add(n1);
 
@@ -134,7 +134,7 @@ diagramcontrol.Nodes = nodes;
 
 
 
-// Add Groups to SfDiagram
+// Adds Groups to the SfDiagram
 
 groups.Add(g);
 
@@ -142,7 +142,7 @@ diagramcontrol.Groups = groups;
 
 
 
-// Create Nodes
+// Creates Nodes
 
 private Node AddNode(string name, double x, double y)
 
@@ -178,14 +178,14 @@ Selecting a Group
 
 You can select a group by clicking on any one of its children. Consecutive clicks on a child object, select the parent groups in the order of their creation. In a similar manner, consecutive clicks on a child object leads to the selection of inner groups, and eventually the object itself, and the cycle continues.
 
-The following steps illustrate how to select an object which has two groups.
+The following steps illustrate how to select an object that has two groups.
 
 ![](Groups_images/Groups_img2.png)
 {:.image }
 
 
 1. Click on Node1 to select the outer group.
-2. Click again to select the inner group to which it belongs.
+2. Click again to select the inner group to where it belongs.
 
 ![](Groups_images/Groups_img3.png)
 {:.image }
@@ -201,19 +201,19 @@ Editing a Group
 
 To edit a group, you have to make sure that the corresponding group is selected. The following features apply to the edits performed on an object.
 
-* If the edit operation is performed on an object which is a group, then all its children are also affected. For example, resizing a group, automatically resizes its child objects to fit the selection area.
+* When the edit operation is performed on an object that is a group, then all its children are also affected. For example, resizing a group, automatically resizes its child objects to fit the selection area.
 
 ![](Groups_images/Groups_img5.png)
 {:.image }
 
 
-* If an individual object is selected, then the edit operation will be performed on that particular object only.
+* When an individual object is selected, then the edit operation is performed on that particular object only.
 
 ![](Groups_images/Groups_img6.png)
 {:.image }
 
 
-* When size or position of a node contained in a group is getting changed, the group's size and position updates its area to fit the child objects.
+* When size or position of a node contained in a group is getting changed, the group's size and position update its area to fit the child objects.
 
 ![](Groups_images/Groups_img7.png)
 {:.image }
