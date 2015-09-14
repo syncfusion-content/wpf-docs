@@ -9,16 +9,16 @@ documentation: ug
 
 ### Selector
 
-This is a single entity that binds the selected items in SfDiagram. The Diagramming Objects are selected by Tapping on them, and the changes are reflected in the IsSelected property.
+This is a single entity that binds the selected items in the SfDiagram. The Diagramming Objects are selected by Tapping on them, and the changes are reflected in the IsSelected property.
 
 SelectedItems
 
-This is the collection of Selected Objects (Nodes, Connectors and Groups) in SfDiagram, and is populated based on the IsSelected property of Diagramming Objects (Nodes, Connectors and Groups).
-The following code sample illustrates how to get the selected items:
+This is the collection of Selected Objects (Nodes, Connectors and Groups) in the SfDiagram, and is populated based on the IsSelected property of Diagramming Objects (Nodes, Connectors and Groups).
+The following code example illustrates how to get the selected items:
 
 [C#]
 
-// Selected Items of SfDiagram
+// Selected Items of the SfDiagram
 
 SelectorViewModel selecteditems = (sfdiagram.SelectedItems as SelectorViewModel);
 
@@ -30,7 +30,7 @@ foreach (INode node in selecteditems.Nodes)
 
 {
 
-// Selected Nodes which has IsSelected as true
+// Selected Nodes that have IsSelected as true
 
 }
 
@@ -42,7 +42,7 @@ foreach (IConnector connector in selecteditems.Connectors)
 
 {
 
-// Selected Connectors which has IsSelected as true
+// Selected Connectors that have IsSelected as true
 
 }
 
@@ -54,7 +54,7 @@ foreach (IGroup group in selecteditems.Groups)
 
 {
 
-// Selected Groups which has IsSelected as true
+// Selected Groups that have IsSelected as true
 
 }
 
@@ -120,7 +120,7 @@ Enables or Disables the QuickCommands</td></tr>
 <tr>
 <td>
 Default    </td><td>
-By default, position, size, angle information is shown in the Tooltip and Quick Commands.</td></tr>
+By default, position, size, and angle information are shown in the Tooltip and Quick Commands.</td></tr>
 </table>
 
 
