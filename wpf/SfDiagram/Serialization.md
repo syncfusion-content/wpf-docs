@@ -9,14 +9,14 @@ documentation: ug
 
 ### Serialization
 
-Serialization is the process of saving and loading Essential Diagram for state persistence of SfDiagram.
+Serialization is the process of saving and loading the Essential Diagram for state persistence of the SfDiagram.
 
 
 
-In SfDiagram, DataContractSerializer is used for serialization. The functionalities in DataContractSerializer are applicable to SfDiagram Serialization. It supports saving SfDiagram to stream; the SfDiagram gets saved with all its properties. On loading, it gets loaded in the current view with all its nodes and connections. As a result, this feature enables you to save the SfDiagram for future use. You can continue working on the SfDiagram by loading the appropriate stream.
+In SfDiagram, DataContractSerializer is used for serialization. The functionalities in DataContractSerializer are applicable to the SfDiagram Serialization. It supports saving the SfDiagram to stream; the SfDiagram gets saved with all its properties. On loading, it gets loaded in the current view with all its nodes and connections. As a result, this feature enables you to save the SfDiagram for future use. You can continue working on the SfDiagram by loading the appropriate stream.
 
 
-The following code example illustrates how to save and load SfDiagram control to Stream:
+The following code example illustrates how to save and load the SfDiagram control to Stream:
 
 [C#]
 
