@@ -890,7 +890,7 @@ Item: Gets new object as a node, connector, or group where the event is raised.<
 <tr>
 <td>
 ChangeEventArgs<object, ScrollChanged></td><td>
-ChangeEventArgsItem:  Gets the SfDiagram on which the event is raised.OldValue: Gets the old scroll values.NewValue: Gets the new scroll values.ScrollChangedContentBounds:  Gets the size and position of the Diagram page based on its children.CurrentZoom: Gets the zoom value.MaxZoom:  Gets the new max zoom value.MinZoom: Gets the new mininmum zoom value.PageBounds:  Gets the size and position of diagram page based on its children and page settings.ScrollFactor:  Gets the scroll factor value.ViewPort:  Gets the viewport value.ZoomFactor: Gets zoom factor value.</td></tr>
+ChangeEventArgsItem:  Gets the SfDiagram where the event is raised.OldValue: Gets the old scroll values.NewValue: Gets the new scroll values.ScrollChangedContentBounds:  Gets the size and position of the Diagram page based on its children.CurrentZoom: Gets the zoom value.MaxZoom:  Gets the new max zoom value.MinZoom: Gets the new mininmum zoom value.PageBounds:  Gets the size and position of diagram page based on its children and page settings.ScrollFactor:  Gets the scroll factor value.ViewPort:  Gets the viewport value.ZoomFactor: Gets zoom factor value.</td></tr>
 <tr>
 <td>
 DiagramPreviewEventArgs</td><td>
