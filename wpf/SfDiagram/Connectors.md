@@ -353,7 +353,7 @@ TargetDecoratorStyle = this.Resources["decoratorstyle"] as Style
 
 Segments
 
-Segments are used to define the path connecting a source point and a target point, which can be a point, node, or connection port. Any number of segments can be added to this collection. When a connector is being rendered, each segment will be iterated and the corresponding segments will be drawn. If necessary, additional segments will be added for the path to meet the specified target.
+Segments are used to define the path connecting a source point and a target point. It can be a point, node, or connection port. Any number of segments can be added to this collection. When a connector is being rendered, each segment is iterated and the corresponding segments are drawn. When necessary, additional segments are added for the path to meet the specified target.
 
 The following segments are available:
 
