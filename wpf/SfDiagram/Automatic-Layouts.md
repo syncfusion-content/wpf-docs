@@ -16,7 +16,7 @@ SfDiagram provides support to specify automatic layouts for nodes. It includes t
 
 Directed-Tree Layout
 
-The Directed-Tree layout mode enables you to arrange the nodes in a tree-like structure. This layout can be applied to any diagram that comprises a directed tree graph with unique root and child nodes. This creates the diagrams easier because the node position is determined automatically based on the connections. However, it is necessary to specify a layout root for the tree layout, as the Directed-Tree layout positions the nodes based on the layout root.
+The Directed-Tree layout mode enables you to arrange the nodes in a tree-like structure. This layout can be applied to any Diagram that comprises a directed tree graph with unique root and child nodes. This creates the Diagrams easier because the node position is determined automatically based on the connections. However, it is necessary to specify a layout root for the tree layout, as the Directed-Tree layout positions the nodes based on the layout root.
 
 [C#]
 
@@ -180,7 +180,7 @@ return line;
 
 Radial-TreeLayout
 
-The Radial-TreeLayout is a specialization of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the diagram nodes. The Radial-Tree Layout arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout, as the Radial-Tree layout positions the nodes based on the layout root.
+The Radial-TreeLayout is a specialization of the Directed Tree Layout Manager that employs a circular layout algorithm for locating the Diagram nodes. The Radial-Tree Layout arranges nodes in a circular layout, positioning the root node at the center of the graph and the child nodes in a circular fashion around the root. Sub-trees formed by the branching of child nodes are located radially around the child nodes. This arrangement results in an ever-expanding concentric arrangement with radial proximity to the root node indicating the node level in the hierarchy. However, it is necessary to specify a layout root for the tree layout, as the Radial-Tree layout positions the nodes based on the layout root.
 
 [C#]
 
@@ -309,7 +309,7 @@ diagramcontrol.Connectors = Lines;
 
 Updating the Layout
 
-When changes are made to content in the SfDiagram, for example, linking new nodes or adding new connectors, the layout has to be updated to create space for adding the new content. The following code example illustrates how to update the layout in the SfDiagram:
+When changes are made to content in the SfDiagram. For example, linking new nodes or adding new connectors, the layout has to be updated to create space for adding the new content. The following code example illustrates how to update the layout in the SfDiagram:
 
 [C#]
 
