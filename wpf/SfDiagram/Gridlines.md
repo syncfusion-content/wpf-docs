@@ -11,7 +11,7 @@ documentation: ug
 
 Gridlines
 
-Gridlines are horizontal and vertical lines behind the diagram elements. They provide visual guidance when dragging or arranging objects on the diagram surface.
+Gridlines are horizontal and vertical lines behind the Diagram elements. They provide visual guidance when dragging or arranging objects on the Diagram surface.
 
 ![](Gridlines_images/Gridlines_img1.png)
 {:.image }
@@ -125,13 +125,13 @@ SnapConstraints.None disables gridlines.
 
 Customization of Gridlines
 
-The spacing and appearance of gridlines can be customized using the HorizontalGridlines and VerticalGridlines properties of SfDiagram.SnapSettings, which is of type Gridlines.
+The spacing and appearance of the gridlines can be customized by using the HorizontalGridlines and VerticalGridlines properties of SfDiagram.SnapSettings that is of Gridlines type.
 
 The Gridlines class enables the definition of spacing between gridlines, snapping intervals, and the style and thickness of gridlines.
 
 LinesInterval
 
-The spacing and thickness of gridlines can be customized by changing the value of the LinesInterval property. LinesInterval is a DoubleCollection that contains a series of line thicknesses separated by the space left before the next gridline thickness. This series will be repeated throughout the diagram.
+The spacing and thickness of gridlines can be customized by changing the value of the LinesInterval property. LinesInterval is a DoubleCollection that contains a series of line thicknesses separated by the space left before the next gridline thickness. This series is repeated throughout the Diagram.
 
 
 
@@ -167,33 +167,33 @@ Effect</td></tr>
 <tr>
 <td>
 2</td><td>
-A line with a two-pixel thickness will be drawn.</td></tr>
+A line with a two-pixel thickness is drawn.</td></tr>
 <tr>
 <td>
 23</td><td>
-A 23-pixel gap will be left.</td></tr>
+A 23-pixel gap is left.</td></tr>
 <tr>
 <td>
 1</td><td>
-A line with a one-pixel thickness will be drawn at the 25th pixel (2+23).</td></tr>
+A line with a one-pixel thickness is drawn at the 25th pixel (2+23).</td></tr>
 <tr>
 <td>
 24</td><td>
-A 24-pixel gap will be left.</td></tr>
+A 24-pixel gap is left.</td></tr>
 <tr>
 <td>
 </td><td>
-The cycle will start again with the first item in the collection.</td></tr>
+The cycle starts again with the first item in the collection.</td></tr>
 </table>
 
 
 Strokes
 
-Styles for a pattern of gridlines can be assigned to the Strokes property. This collection will be applied to each line pattern of the diagram.
+Styles for a pattern of gridlines can be assigned to the Strokes property. This collection is applied to each line pattern of the Diagram.
 
 
 
-To change the appearance of gridlines:
+To change the appearance of the gridlines:
 
 [C#]
 
@@ -251,7 +251,7 @@ Snapping
 
 Snap to Grid
 
-The snap-to-grid feature allows diagram objects to snap to the nearest intersection of gridlines when being dragged or resized. This feature enables easier alignment during layout or design.
+The snap-to-grid feature allows Diagram objects to snap to the nearest intersection of gridlines when being dragged or resized. This feature enables easier alignment during layout or design.
 
 
 
@@ -303,27 +303,27 @@ diagramControl.SnapSettings.SnapConstraints = SnapConstraints.None;
 
 
 
-When snapping is set in the SfDiagram control (diagramControl.SnapSettings), the same setting will be applied to every element of the SfDiagram control by default.
+When snapping is set in the SfDiagram control (diagramControl.SnapSettings), the same setting is applied to every element of the SfDiagram control by default.
 
-If there is a need to change or disable snapping to a gridline for a particular element, users can set the constraints of a particular object to SnapToLines, SnapToHorizontalLines, or SnapToVerticalLines.
+When there is a need to change or disable snapping to a gridline for a particular element, you can set the constraints of a particular object to SnapToLines, SnapToHorizontalLines, or SnapToVerticalLines.
 
 
 
 [C#]
 
-//Disable inheritance of snapping from SfDiagram.
+//Disables inheritance of snapping from SfDiagram.
 
 obj.Constraints = obj.Constraints & ~NodeConstraints.InheritSnapping;
 
 
 
-//Enables snapping to horizontal lines for a specific object (e.g., node, connector).
+//Enables snapping to horizontal lines for a specific object (For example, node, connector).
 
 obj.Constraints |= NodeConstraints.SnapToHorizontalLines; 
 
 
 
-//Enables snapping to vertical lines for a specific object (e.g., node, connector).
+//Enables snapping to vertical lines for a specific object (For example, node, connector).
 
 obj.Constraints |= NodeConstraints.SnapToVerticalLines; 
 
@@ -331,7 +331,7 @@ obj.Constraints |= NodeConstraints.SnapToVerticalLines;
 
 //Enables snapping to both horizontal and vertical lines 
 
-//for a specific object (e.g., node, connector).
+//For a specific object (For example, node, connector).
 
 obj.Constraints |= NodeConstraints.SnapToLines; 
 
@@ -339,9 +339,9 @@ obj.Constraints |= NodeConstraints.SnapToLines;
 
 Customizing Snap Interval
 
-The gridline or position to which a diagram object snaps can be customized by changing the value of the Gridlines.SnapInterval property.
+The gridline or position where the Diagram object snaps can be customized by changing the value of the Gridlines.SnapInterval property.
 
-By default, diagramControl.SnapSettings.HorizontalGridlines and diagramControl.SnapSettings.VerticalGridlines are set to null, and gridline intervals will be internally calculated based on measurement units and ruler segments. 
+By default, diagramControl.SnapSettings.HorizontalGridlines and diagramControl.SnapSettings.VerticalGridlines are set to null, and gridline intervals are internally calculated based on measurement units and ruler segments. 
 
 
 
@@ -369,7 +369,7 @@ Gridlines gridlines = new Gridlines()
 
 Snap to Object
 
-The snap-to-object feature provides visual cues to assist with aligning and spacing diagram nodes. A node can be snapped with its neighboring objects based on certain alignments. Such alignments are visually represented as guidelines. For example, users can easily arrange a column of nodes to be evenly spaced apart and horizontally centered with each other.
+The snap-to-object feature provides visual cues to assist with aligning and spacing Diagram nodes. A node can be snapped with its neighboring objects based on certain alignments. Such alignments are visually represented as guidelines. For example, you can easily arrange a column of nodes to be evenly spaced apart and horizontally centered with each other.
 
 
 
@@ -401,15 +401,15 @@ diagramControl.SnapSettings.SnapToObject = SnapToObject.All;
 
 diagramControl.SnapSettings.SnapToObject = SnapToObject.None; 
 
-The value set to diagramControl.SnapSettings will be applied to every element of the SfDiagram control.
+The value set to diagramControl.SnapSettings is applied to every element of the SfDiagram control.
 
-If there is a need to change or deny snapping to a particular object, we can set the desired value to the SnapToObject property of that particular object.
+When there is a need to change or deny snapping to a particular object, you can set the desired value to the SnapToObject property of that particular object.
 
 
 
 [C#]
 
-//Disable inheritance of snapping from SfDiagram.
+//Disables inheritance of snapping from the SfDiagram.
 
 obj.Constraints = obj.Constraints & ~NodeConstraints.InheritSnapToObject;
 
@@ -459,7 +459,7 @@ _Figure_ _87__: Same Size Alignment_
 
 
 
-The following table describes the many enumerable elements of the SnapToObject property.
+The following table describes many enumerable elements of the SnapToObject property.
 
 
 
@@ -479,7 +479,7 @@ Snaps the left side of an object to the right side of another object.</td></tr>
 <tr>
 <td>
 Left</td><td>
-Behaves as if both the LeftLeft and LeftRight settings are applied.</td></tr>
+Behaves as both the LeftLeft and LeftRight settings are applied.</td></tr>
 <tr>
 <td>
 RightRight</td><td>
@@ -491,7 +491,7 @@ Snaps the right side of an object to the left side of another object.</td></tr>
 <tr>
 <td>
 Right</td><td>
-Behaves as if both the RightRight and RightLeft settings are applied.</td></tr>
+Behaves as both the RightRight and RightLeft settings are applied.</td></tr>
 <tr>
 <td>
 TopTop</td><td>
@@ -515,7 +515,7 @@ Snaps the bottom side of an object to the top side of an another object.</td></t
 <tr>
 <td>
 Bottom</td><td>
-Behaves as if both the BottomBottom and BottomTop settings are applied.</td></tr>
+Behaves as both the BottomBottom and BottomTop settings are applied.</td></tr>
 <tr>
 <td>
 VerticalCenter</td><td>
@@ -549,7 +549,7 @@ Sets the width and height of an object.</td></tr>
 
 Customization of Snapping
 
-By default, the objects will be snapped based on the diagramControl.SnapSettings.SnapConstraints or diagramControl.SnapToObject. If in some cases the suggested snapping is not desired, snapping can be disabled or modified by overriding the protected virtual method OnSnap.
+By default, the objects are snapped based on the diagramControl.SnapSettings.SnapConstraints or diagramControl.SnapToObject. In some cases, when the suggested snapping is not desired, snapping can be disabled or modified by overriding the protected virtual method OnSnap.
 
 
 
@@ -580,7 +580,7 @@ Value</td></tr>
 <tr>
 <td>
 SnapChanges</td><td>
-Gets the property that will be changed because of the suggested snap.</td><td>
+Gets the property that is changed because of the suggested snap.</td><td>
 SnapChanges-enumSnapChanges.X,SnapChanges.Y,SnapChanges.Width,SnapChanges.Height,SnapChanges.Angle</td></tr>
 <tr>
 <td>
@@ -605,7 +605,7 @@ SnapState</td></tr>
 </table>
 
 
-SnapInfo property of SnapParameter gives details about the cause of snapping, following table lists the possible cases and corresponding values of SnapParameter.
+SnapInfo property of SnapParameter gives details about the cause of snapping. The following table lists the possible cases and corresponding values of SnapParameter.
 
 
 
@@ -707,7 +707,7 @@ Value</td></tr>
 <tr>
 <td>
 TargetObject</td><td>
-Gets the target object toward which the node has to be snapped.</td><td>
+Gets the target object towards the node that has to be snapped.</td><td>
 object</td></tr>
 <tr>
 <td>
@@ -819,7 +819,7 @@ Point</td></tr>
 <tr>
 <td>
 IntersectingPoints</td><td>
-Gets the collection of points through which TargetSegment intersects the object.</td><td>
+Gets the collection of points where the TargetSegment intersects the object.</td><td>
 List<Point></td></tr>
 </table>
 
