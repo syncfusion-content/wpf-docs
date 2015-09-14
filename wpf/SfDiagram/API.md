@@ -1311,12 +1311,12 @@ Value</td></tr>
 <tr>
 <td>
 Strokes</td><td>
-Defines the style for a group or pattern of lines. The pattern will be repeated throughout the diagram.</td><td>
+Defines the style for a group or pattern of lines. The pattern is repeated throughout the Diagram.</td><td>
 new IEnumerable<Style>(){Style values};</td></tr>
 <tr>
 <td>
 LineInterval</td><td>
-Defines the spacing between a group or pattern of lines. That pattern will be repeated throughout the diagram.</td><td>
+Defines the spacing between a group or pattern of lines. That pattern is repeated throughout the Diagram.</td><td>
 new IEnumerable<double>(){double values};</td></tr>
 <tr>
 <td>
