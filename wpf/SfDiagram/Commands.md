@@ -571,7 +571,7 @@ Value</td></tr>
 <tr>
 <td>
 ZoomTo</td><td>
-Gets or sets the zoom level where the diagram is to be zoomed.</td><td>
+Gets or sets the zoom level where the Diagram is to be zoomed.</td><td>
 double</td></tr>
 <tr>
 <td>
