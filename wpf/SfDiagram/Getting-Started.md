@@ -11,7 +11,7 @@ documentation: ug
 
 
 
-Creating a simple diagram:
+Creating a simple Diagram:
 
 
 
@@ -223,7 +223,7 @@ public class Employees : ObservableCollection<Employee>
 
 5. Initialize Data
 
-Create a collection of employees with each employee having an ID in the Epmid and the reporting person’s ID in the ParentId. This collection is placed in the Window resource and later incorporated in the diagram. This is explained in the next point.
+Create a collection of employees with each employee having an ID in the Epmid and the reporting person’s ID in the ParentId. This collection is placed in the Window resource and later incorporated in the Diagram. This is explained in the next point.
 
 
 
@@ -377,7 +377,7 @@ DataSourceSettings="{StaticResource DataSourceSettings}">
 
 7. Visualize Employees
 
-Now, diagram is configured to load the employees’ information as a tree of organization chart. Next, give visual appearance for the node. To visualize the employees’ details in the Node, a node has to be created for each employee, and then the employee’s details are stored in the node’s content property. To visualize the employee information, define the appearance as a data template and apply it to the node’s content template as shown in the following code example.
+Now, Diagram is configured to load the employees’ information as a tree of organization chart. Next, give visual appearance for the node. To visualize the employees’ details in the Node, a node has to be created for each employee, and then the employee’s details are stored in the node’s content property. To visualize the employee information, define the appearance as a data template and apply it to the node’s content template as shown in the following code example.
 
 
 
@@ -503,7 +503,7 @@ DataSourceSettings="{StaticResource DataSourceSettings}">
 
 8. Initialize Layout
 
-Employees are initialized, populated in the diagram, and appearance for employees are defined. Now, place the nodes and connector by using the layout manager. The following code example shows how to initialize the LayoutManager, specify the layout as the DirectedTreeLayout and set it to the diagram.
+Employees are initialized, populated in the Diagram, and appearance for employees are defined. Now, place the nodes and connector by using the layout manager. The following code example shows how to initialize the LayoutManager, specify the layout as the DirectedTreeLayout and set it to the Diagram.
 
 [XAML]
 
