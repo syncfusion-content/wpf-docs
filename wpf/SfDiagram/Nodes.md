@@ -20,7 +20,7 @@ A node can be created and added to the Diagram by using the following methods:
 
 Adding Nodes through Stencil
 
-Drag the desired Symbol from the Stencil to the drawing area and release the pointer. The desired node is now added to the diagram.
+Drag the desired Symbol from the Stencil to the drawing area and release the pointer. The desired node is now added to the Diagram.
 
 ![](Nodes_images/Nodes_img1.png)
 {:.image }
@@ -110,11 +110,11 @@ diagramcontrol.Nodes = nodes;
 
 Node Content
 
-A node is used to visually represent UI elements by using the Content property. You can host any content inside a node through the content template of the node which provides support for all types of content.
+A node is used to visually represent UI elements by using the Content property. You can host any content inside a node through the content template of the node that provides support for all the types of content.
 
 > ![](Nodes_images/Nodes_img3.jpeg)
 {:.image }
-_Note: Nodes can include both Content and Shape at the same time. In such a case, the Content will be placed over the Shape._
+_Note: Nodes can include both Content and Shape at the same time. In such a case, the Content is placed over the Shape._
 
 [C#]
 
@@ -185,9 +185,9 @@ _Note: Nodes can include both Content and Shape at the same time. In such a case
 {:.image }
 
 
-Using Business Objects as Node Content
+by using Business Objects as Node Content
 
-Business objects can also be used as node content. In such cases, the content template will determine the representation of the business objects.
+Business objects can also be used as node content. In such cases, the content template determines the representation of the business objects.
 The following example illustrates how to add business objects to Node Content:
 
 1. Create an Employee class.
@@ -285,7 +285,7 @@ diagramcontrol.Nodes = nodes;
 
 Node Constraints
 
-NodeConstraints property is used to enable or disable certain behaviors of Nodes. This property is applicable only to the Node of SfDiagram control.
+NodeConstraints property is used to enable or disable certain behaviors of Nodes. This property is applicable only to the Node of the SfDiagram control.
 
 _Table_ _1__: Constraints Table_
 
@@ -349,23 +349,23 @@ Enables panning on the node.</td></tr>
 <tr>
 <td>
 InheritSnapping </td><td>
-Enables to inherit the value of SnapToLines and SnapAngle from SfDiagram by SnapConstraints in SnapSettings.</td></tr>
+Enables to inherit the value of SnapToLines and SnapAngle from the SfDiagram by SnapConstraints in SnapSettings.</td></tr>
 <tr>
 <td>
 InheritSnapToObject </td><td>
-Enables to inherit the value to SnapToObject from SfDiagram by SnapConstraints in SnapSettings.</td></tr>
+Enables to inherit the value to SnapToObject from the SfDiagram by SnapConstraints in SnapSettings.</td></tr>
 <tr>
 <td>
 InheritPortVisibility </td><td>
-Enables to inherit the value for PortVisibility from SfDiagram. </td></tr>
+Enables to inherit the value for PortVisibility from the SfDiagram. </td></tr>
 <tr>
 <td>
 Inherit </td><td>
-Enables to inherit all the Snapping, SnapToObject, and PortVisibility from SfDiagram. </td></tr>
+Enables to inherit all the Snapping, SnapToObject, and PortVisibility from the SfDiagram. </td></tr>
 <tr>
 <td>
 AspectRatio</td><td>
-Enables node to be Resized all the direction </td></tr>
+Enables node to be Resized in all the direction </td></tr>
 <tr>
 <td>
 Default</td><td>
@@ -409,7 +409,7 @@ The default value for NodeConstraints property is Default.
 
 Example 1
 
-The following code example illustrates how to disable Dragging in a Node in SfDiagram:
+The following code example illustrates how to disable Dragging a Node in the SfDiagram:
 
 [C#]
 
@@ -423,7 +423,7 @@ The following code example illustrates how to disable the resizing node in a par
 
 [C#]
 
-//Disable Selector Thumb Resize in Particular direction
+//Disables Selector Thumb Resize in a particular direction
 
 node.Constraints = node.Constraints & ~(NodeConstraints.ResizeNorthWest | NodeConstraints.ResizeNorthEast | NodeConstraints.ResizeSouthWest | NodeConstraints.ResizeSouthEast);
 
