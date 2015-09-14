@@ -41,7 +41,7 @@ Here, the sfDiagram refers to an instance of SfDiagram.
 
 Customizing the Object Size
 
-Object size commands enable selected diagram objects on the page to be resized. The selected objects are resized in proportion to the first object in the selection list.
+Object size commands enable selected Diagram objects on the page to be resized. The selected objects are resized in proportion to the first object in the selection list.
 
 SameHeight Command
 
@@ -168,7 +168,7 @@ _Figure_ _60__: AlignLeft_
 
 AlignCenter Command
 
-The AlignCenter command enables you to center all selected objects vertically. It aligns selected objects to the center with respect to the horizontal axis by changing the x-coordinate of the object.
+The AlignCenter command enables you to center all seletced objects vertically. It aligns selected objects to the center with respect to the horizontal axis by changing the x-coordinate of the object.
 
 
 
@@ -279,13 +279,13 @@ _Figure_ _67__: SpaceDown_
 
 Undoing or Redoing Actions
 
-The Undo command reverses the last editing action performed. For example, some of the basic operations performed on diagram objects such as translation, rotation, resizing, grouping, ungrouping, changing z-order, addition, deletion, and so on, can be reversed. The Redo command restores the last editing action when no other actions have occurred since the last undo.
+The Undo command reverses the last editing action performed. For example, some of the basic operations performed on Diagram objects such as translation, rotation, resizing, grouping, ungrouping, changing z-order, addition, deletion, and so on, can be reversed. The Redo command restores the last editing action when no other actions have occurred since the last undo.
 
 
 
 Nudge Commands
 
-Commands enable you to move selected objects on the page toward the top, bottom, left, or right by 1 pixel. 
+Commands enable you to move the selected objects on the page toward the top, bottom, left, or right by 1 pixel. 
 
 NudgeUp Command
 
@@ -309,7 +309,7 @@ Clipboard Commands
 
 Clipboard commands are used to perform cut, copy, and paste operations. 
 
-Clipboard commands allow you to cut or copy selected diagram objects to the Clipboard and paste the valid Clipboard content into the Diagram.
+Clipboard commands allow you to cut or copy selected Diagram objects to the Clipboard and paste the valid Clipboard content into the Diagram.
 
 
 
@@ -461,7 +461,7 @@ _Figure_ _70__:Without Flip_
 
 FitToPage Commands
 
-FitToPage commands are used to bring the entire diagram into the view.
+FitToPage commands are used to bring the entire Diagram into the view.
 
 
 
@@ -489,12 +489,12 @@ Enum FitToPageFitToPage.FitToPageFitToPage.FitToHeightFitToPage.FitToWidth</td><
 <tr>
 <td>
 Margin</td><td>
-Gets or sets the margin value from the view to diagram.</td><td>
+Gets or sets the margin value from the view to Diagram.</td><td>
 Thickness</td></tr>
 </table>
 
 
-Fit the Entire Diagram into the View
+Fits the Entire Diagram into the View
 
 
 
@@ -571,7 +571,7 @@ Value</td></tr>
 <tr>
 <td>
 ZoomTo</td><td>
-Gets or sets the zoom level to which the diagram is to be zoomed.</td><td>
+Gets or sets the zoom level where the diagram is to be zoomed.</td><td>
 double</td></tr>
 <tr>
 <td>
@@ -663,7 +663,7 @@ Execute ZoomCommand
 
 Reset Commands
 
-Reset commands are used to reset horizontal offset, vertical offset, and zoom level of the diagram.
+Reset commands are used to reset horizontal offset, vertical offset, and zoom level of the Diagram.
 
 To execute a reset command, a parameter of type IReset has to be passed.
 
@@ -974,7 +974,7 @@ new ZoomPointerParamenter { ZoomCommand = ZoomCommand.ZoomIn |   ZoomCommand.Zoo
 
 ![](Commands_images/Commands_img24.jpeg)
 {:.image }
-_Note: Handle the command once executed if different commands can be register with the same key / mouse gestures._
+_Note: When different commands are registered for the same key / mouse gestures, you need to handle the command while execution._
 
 
 
@@ -1042,7 +1042,7 @@ private async void OnSaveCommand(object obj)
 
 
 
-Map user defined command with key gesture:
+Map user defines command with key gesture:
 
 
 
