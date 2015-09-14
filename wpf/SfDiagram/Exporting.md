@@ -21,11 +21,11 @@ Image File Format
 
 
 
-Contents of diagram can be exported as raster image files using Export function. This exporting can be customized using ExportSettings.
+Contents of the Diagram can be exported as raster image files by using Export function. This exporting can be customized by using ExportSettings.
 
 
 
-The following code illustrates how to use ExportSettings Property of SfDiagram:
+The following code illustrates how to use ExportSettings Property of the SfDiagram:
 
 [C#]
 
@@ -44,7 +44,7 @@ The following code illustrates how to use ExportSettings Property of SfDiagram:
 
 
 
-  //Assign the ExportSettings
+  //Assigns the ExportSettings
 
   sfdiagram.ExportSettings = settings;
 
@@ -52,7 +52,7 @@ The following code illustrates how to use ExportSettings Property of SfDiagram:
 
 
 
-The following code shows how to export SfDiagram:
+The following code shows how to export the SfDiagram:
 
 [C#]
 
@@ -74,7 +74,7 @@ Description</th></tr>
 <tr>
 <td>
 PageSettings</td><td>
-The area to be exported will be based on PageSettings and how Children are arranged.</td></tr>
+The area to be exported is based on PageSettings and how Children are arranged.</td></tr>
 <tr>
 <td>
 Content</td><td>

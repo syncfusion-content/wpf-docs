@@ -73,7 +73,7 @@ xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
 3. Initialize Nodes and Connectors
 
-To initialize the Nodes and Connectors property of the SfDiagram, Nodes property is assigned with the NodeCollection, that is, ObservableCollection of the Node. Connectors property is assigned with the ConnectorCollection, that is, ObservableCollection of the Coneector.
+To initialize the Nodes and Connectors properties of the SfDiagram, Nodes property is assigned with the NodeCollection, that is, ObservableCollection of the Node. Connectors property is assigned with the ConnectorCollection, that is, ObservableCollection of the Coneector.
 
 
 
@@ -170,7 +170,7 @@ public sealed partial class MainWindow: Window
 
 4. Create a class to store employee information
 
-Now, you have to create a class named Employee with properties to store the employee’s information like name, designation, ID, reporting person ID, etc. You also have to create a collection that stores a collection of employees.
+Now, you have to create a class, Employee with properties to store the employee’s information like name, designation, ID, reporting person ID, etc. You also have to create a collection that stores a collection of the employees.
 
 
 

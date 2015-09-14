@@ -9,7 +9,7 @@ documentation: ug
 
 ### Constraints
 
-The GraphConstraints property is used to enable or disable all or certain behaviors of the SfDiagram control. This property is applicable to the entire SfDiagram control.
+The GraphConstraints property is used to enable or disable all the behaviors or certain behaviors of the SfDiagram control. This property is applicable to the entire SfDiagram control.
 
 
 

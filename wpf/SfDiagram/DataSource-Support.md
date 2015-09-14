@@ -41,11 +41,11 @@ String</td></tr>
 
 DataSource
 
-The following code example illustrates how to bind data to SfDiagram.
+The following code example illustrates how to bind data to the SfDiagram.
 
 [C#]
 
-//Creating Data
+//Creates Data
 
 ObservableCollection<Employee> employee = new ObservableCollection<Employee>();
 
@@ -63,21 +63,21 @@ employee.Add(new Employee() { Name = "Sarah",  ParentId = "John", Designation = 
 
 employee.Add(new Employee() { Name = "Mike", ParentId = "John”, Designation = "Testing Engineer"});
 
-//Setting ParentId-For Relation
+//Sets ParentId-For Relation
 
 diagram.Nodes = new ObservableCollection<object>();
 
 diagram.Connectors = new ObservableCollection<object>();
 
-//Setting ParentId-For Relation
+//Sets ParentId-For Relation
 
 diagram.DataSourceSchema.RelativeTo = "ParentId";
 
-//Setting ID-for Mapping
+//Sets ID-for Mapping
 
 diagram.DataSourceSchema.MappingName = "Name";
 
-//Assigning Collection
+//Assigns Collection
 
 diagram.DataSourceSchema.DataSource = employee;
 
