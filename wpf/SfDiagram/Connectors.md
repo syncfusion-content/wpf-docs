@@ -35,7 +35,7 @@ The following code illustrates how to create a connection between a Source Node 
 [C#]
 
 
-// Creating NodeViewModel-SourceNode
+// Creates NodeViewModel-SourceNode
 
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 
@@ -56,11 +56,11 @@ Shape = new RectangleGeometry() { Rect = new Rect(0, 0, 10, 10) },
 ShapeStyle = GetStyle()
 
 };
-// Adding Nodes to SfDiagram
+// Adds Nodes to SfDiagram
 
 nodes.Add(source);
 
-// Creating NodeViewModel-TargetNode
+// Creates NodeViewModel-TargetNode
 
 NodeViewModel target = new NodeViewModel()
 
@@ -80,7 +80,7 @@ ShapeStyle = GetStyle()
 
 };
 
-// Adding Nodes to SfDiagram
+// Adds Nodes to SfDiagram
 
 nodes.Add(target);
 
@@ -102,7 +102,7 @@ ConnectorGeometryStyle = GetConStyle()
 
 };
 
-// Adding Connection to SfDiagram
+// Adds Connection to the SfDiagram
 
 lines.Add(con);
 
@@ -130,7 +130,7 @@ ConnectorGeometryStyle property is used to customize the style of the Connectors
 
 
 
-// Creating Connection
+// Creates Connection
 
 ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
 
@@ -147,7 +147,7 @@ TargetNode = target,
 
 
 
-// Adding Connection to SfDiagram
+// Adds Connection to SfDiagram
 
 lines.Add(con);
 
@@ -160,7 +160,7 @@ SourceDecorator and TargetDecorator properties provide support to customize the 
 [C#]   
 
 
-// Creating Connection
+// Creates Connection
 
 ObservableCollection<ConnectorViewModel> lines = new ObservableCollection<ConnectorViewModel>();
 
@@ -173,7 +173,7 @@ SourceNode = source,
 TargetNode = target,
 
 ConnectorGeometryStyle = this.Resources["connectorstyle"] as Style,  
-// Specifying DecoratorShape
+// Specifies DecoratorShape
 
 TargetDecorator = new PathGeometry()
 
@@ -221,7 +221,7 @@ new Point(0,0)
 
 };                        
 
-// Adding Connection to SfDiagram
+// Adds Connection to SfDiagram
 
 lines.Add(con);
 
@@ -380,7 +380,7 @@ ConnectorViewModel con = new ConnectorViewModel()
 
 
 
- // Customizing the ConnectorGeometryStyle.
+ // Customizes the ConnectorGeometryStyle.
 
  ConnectorGeometryStyle = this.Resources["connectorstyle"] as Style
 
@@ -388,7 +388,7 @@ ConnectorViewModel con = new ConnectorViewModel()
 
 
 
-//Adding Line Segment to Segments.
+//Adds Line Segment to Segments.
 
 con.Segments = new ObservableCollection<IConnectorSegment>()
 
@@ -425,7 +425,7 @@ TargetPoint = new Point(200, 200), 
 
 
 
-// Customizing the ConnectorGeometryStyle. 
+// Customizes the ConnectorGeometryStyle. 
 
 ConnectorGeometryStyle = this.Resources["connectorstyle"] as Style
 
@@ -433,7 +433,7 @@ ConnectorGeometryStyle = this.Resources["connectorstyle"] as Style
 
 
 
-//Adding Line Segment to Segments.
+//Adds Line Segment to Segments.
 
 con.Segments = new ObservableCollection<IConnectorSegment>()
 
@@ -477,7 +477,7 @@ ConnectorGeometryStyle = this.Resources["connectorstyle"] as Style
 
 
 
-//Adding Orthogonal Segment to Segments.
+//Adds Orthogonal Segment to Segments.
 
 con.Segments = new ObservableCollection<IConnectorSegment>()
 
@@ -513,7 +513,7 @@ TargetPoint = new Point(300, 100), 
 
 
 
-// Customizing the ConnectorGeometryStyle. 
+// Customizes the ConnectorGeometryStyle. 
 
 ConnectorGeometryStyle = this.Resources["connectorstyle"] as Style
 
@@ -521,13 +521,13 @@ ConnectorGeometryStyle = this.Resources["connectorstyle"] as Style
 
 
 
-//Adding Quadratic Curve Segment to Segments.
+//Adds Quadratic Curve Segment to Segments.
 
 con.Segments = new ObservableCollection<IConnectorSegment>()
 
 {  
 
-       //Adding Quadratic Curve Segment to Segments.        
+       //Adds Quadratic Curve Segment to Segments.        
 
 new QuadraticCurveSegment()
 
@@ -563,7 +563,7 @@ TargetPoint = new Point(400, 100), 
 
 
 
-// Customizing the ConnectorGeometryStyle.
+// Customizes the ConnectorGeometryStyle.
 
 ConnectorGeometryStyle = this.Resources["connectorstyle"] as Style
 
@@ -571,7 +571,7 @@ ConnectorGeometryStyle = this.Resources["connectorstyle"] as Style
 
 
 
-//Adding Cubic Curve Segment to Segments.
+//Adds Cubic Curve Segment to Segments.
 
 con.Segments = new ObservableCollection<IConnectorSegment>()
 
@@ -816,7 +816,7 @@ The following code example explains how to enable the Bridging and set Bridge Di
 
 [C#]
 
-//Initializing Bridging and setting Bridge Direction
+//Initializes Bridging and setting Bridge Direction
 
 diagram.Constraints = diagram.Constraints | GraphConstraints.Bridging;
 
@@ -832,7 +832,7 @@ Example 2: Bridge for Vertical Connector (with BridgeDirection.Left)
 
 [C#]
 
-// setting Bridge Direction
+// sets Bridge Direction
 
 diagramControl.BridgeDirection = BridgeDirection.Left;
 
@@ -873,7 +873,7 @@ SfDiagram diagramcontrol = new SfDiagram();
 
 
 
-//Enable line bridging.
+//Enables line bridging.
 
 diagramcontrol.Constraints |= GraphConstraints.Bridging;
 
@@ -913,7 +913,7 @@ Enabling line bridging through connector constraints applies line bridging only 
 
 [C#]
 
-//Creating lines
+//Creates lines
 
 ObservableCollection<ConnectorViewModel> lines = new
 
