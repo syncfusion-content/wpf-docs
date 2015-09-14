@@ -52,7 +52,7 @@ Enables to draw different types of Line Connector only once</td></tr>
 <td>
 6.</td><td>
 ContinuousDraw</td><td>
-Enables to draw different types of Line Connector at continuously</td></tr>
+Enables to draw different types of Line Connector continuously</td></tr>
 </table>
 
 
@@ -60,7 +60,7 @@ The default value for Tool property is _MultipleSelect_.
 
 
 
-The following code example illustrates how to enable the Panning and Zooming functionality by using Tools property of SfDiagram:
+The following code example illustrates how to enable the Panning and Zooming functionality by using Tools property of the SfDiagram:
 
 
 
@@ -74,7 +74,7 @@ sfdiagram.Tool = Tool.ZoomPan;
 
 ![](Tool_images/Tool_img1.jpeg)
 {:.image }
-_Note: Tool property is manipulated using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.
+_Note: Tool property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.
 
 
 
@@ -86,7 +86,7 @@ There are many ways to select multiple elements. Multiple selection can be custo
 
 
 
-The following table lists the enumerable elements of MultipleSelectionMode.
+The following table lists the enumerable elements of the MultipleSelectionMode.
 
 
 
@@ -98,11 +98,11 @@ Description</td></tr>
 <tr>
 <td>
 RubberbandCompleteIntersect</td><td>
-Elements that are completely positioned in the selection rectangle will be selected.</td></tr>
+Elements that are completely positioned in the selection rectangle are selected.</td></tr>
 <tr>
 <td>
 RubberbandPartialIntersect</td><td>
-Elements that intersect with the selection rectangle will be selected.</td></tr>
+Elements that intersect with the selection rectangle are selected.</td></tr>
 <tr>
 <td>
 JustTap</td><td>
@@ -178,11 +178,11 @@ _Figure_ _78__: After Selection_
 
 JustTap
 
-By default, when tapping an element, the existing selection list will be cleared, and the tapped element will be added to the selection list. JustTap is used to avoid clearing the selection list and add the tapped element to the list.
+By default, when tapping an element, the existing selection list is cleared, and the tapped element is added to the selection list. JustTap is used to avoid clearing the selection list and add the tapped element to the list.
 
 HoldKeyAndTap
 
-By default, when tapping an element, the existing selection list will be cleared, and the tapped element will be added to the selection list. Holding Ctrl and tapping an element will avoid clearing the selection list and add the tapped element to the list.
+By default, when tapping an element, the existing selection list is cleared, and the tapped element is added to the selection list. Holding Ctrl and tapping an element avoid clearing the selection list and add the tapped element to the list.
 
 
 
