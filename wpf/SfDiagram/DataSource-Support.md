@@ -13,7 +13,7 @@ SfDiagram is populated with the node taken from an external hierarchical data so
 
 DataSource Settings
 
-Two mapping fields are necessary to map a hierarchical datatsource with the diagram. Id property is used for unique identification of a record. ParentId property is used to identify the parent object to which a particular object is connected.
+Two mapping fields are necessary to map a hierarchical datatsource with the Diagram. Id property is used for unique identification of a record. ParentId property is used to identify the parent object where a particular object is connected.
 
 <table>
 <tr>
@@ -24,7 +24,7 @@ Value</td></tr>
 <tr>
 <td>
 DataSource</td><td>
-Data source based on the diagram that is to be generated.</td><td>
+Data source based on the Diagram that is to be generated.</td><td>
 Object</td></tr>
 <tr>
 <td>
