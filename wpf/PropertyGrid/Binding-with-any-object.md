@@ -17,15 +17,128 @@ When the SelectedObject property binds to an object, the properties of that obje
 
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %}<syncfusion:PropertyGrid x:Name="propertyGrid" Width="350" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center"/>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight c# %}/// <summary><br>    /// Interaction logic for MainWindow.xaml<br>    /// </summary><br>    public partial class MainWindow : Window<br>    {<br>        public MainWindow()<br>        {<br>            InitializeComponent();<br>            this.propertyGrid.SelectedObject = new Customer();<br>        }<br>    }<br><br>    public class Customer<br>    {<br>        private string _name;<br>        private int _age;<br>        private DateTime _dateOfBirth;<br>        private string _SSN;<br>        private string _address;<br>        private string _email;<br>        private bool _frequentBuyer;<br>        [CategoryAttribute("ID Settings"), DescriptionAttribute("Name of the customer")]<br>        public string Name<br>        {<br>            get<br>            {<br>                return _name;<br>            }<br>            set<br>            {<br>                _name = value;<br>            }<br>        }<br><br>        [CategoryAttribute("ID Settings"),<br>        DescriptionAttribute("Social Security Number of the customer")]<br>        public string SSN<br>        {<br>            get<br>            {<br>                return _SSN;<br>            }<br>            set<br>            {<br>                _SSN = value;<br>            }<br>        }<br>        [CategoryAttribute("ID Settings"),<br>        DescriptionAttribute("Address of the customer")]<br>        public string Address<br>        {<br>            get<br>            {<br>                return _address;<br>            }<br>            set<br>            {<br>                _address = value;<br>            }<br>        }<br>        [CategoryAttribute("ID Settings"),<br>        DescriptionAttribute("Date of Birth of the Customer (optional)")]<br>        public DateTime DateOfBirth<br>        {<br>            get<br>            {<br>                return _dateOfBirth;<br>            }<br>            set<br>            {<br>                _dateOfBirth = value;<br>            }<br>        }<br>        [CategoryAttribute("ID Settings"), DescriptionAttribute("Age of the customer")]<br>        public int Age<br>        {<br>            get<br>            {<br>                return _age;<br>            }<br>            set<br>            {<br>                _age = value;<br>            }<br>        }<br>        [CategoryAttribute("Marketting Settings"), DescriptionAttribute("If the customer as bought more than 10 times, this is set to true")]<br>        public bool FrequentBuyer<br>        {<br>            get<br>            {<br>                return _frequentBuyer;<br>            }<br>            set<br>            {<br>                _frequentBuyer = value;<br>            }<br>        }<br>        [CategoryAttribute("Marketting Settings"), DescriptionAttribute("Most current e-mail of the customer")]<br>        public string Email<br>        {<br>            get<br>            {<br>                return _email;<br>            }<br>            set<br>            {<br>                _email = value;<br>            }<br>        }<br>    } <br>}{% endhighlight %}</td></tr>
-</table>
 
+{% highlight xml %}
+
+<syncfusion:PropertyGrid x:Name="propertyGrid"  Width="350"  BorderBrush="Gray"  BorderThickness="3"  HorizontalAlignment="Center"  VerticalAlignment="Center" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+  /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.propertyGrid.SelectedObject = new Customer();
+        }
+    }
+ 
+    public class Customer
+    {
+        private string _name;
+        private int _age;
+        private DateTime _dateOfBirth;
+        private string _SSN;
+        private string _address;
+        private string _email;
+        private bool _frequentBuyer;
+        [CategoryAttribute("ID Settings"), DescriptionAttribute("Name of the customer")]
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+            set
+            {
+                _name = value;
+            }
+        }
+ 
+        [CategoryAttribute("ID Settings"),
+        DescriptionAttribute("Social Security Number of the customer")]
+        public string SSN
+        {
+            get
+            {
+                return _SSN;
+            }
+            set
+            {
+                _SSN = value;
+            }
+        }
+        [CategoryAttribute("ID Settings"),
+        DescriptionAttribute("Address of the customer")]
+        public string Address
+        {
+            get
+            {
+                return _address;
+            }
+            set
+            {
+                _address = value;
+            }
+        }
+        [CategoryAttribute("ID Settings"),
+        DescriptionAttribute("Date of Birth of the Customer (optional)")]
+        public DateTime DateOfBirth
+        {
+            get
+            {
+                return _dateOfBirth;
+            }
+            set
+            {
+                _dateOfBirth = value;
+            }
+        }
+        [CategoryAttribute("ID Settings"), DescriptionAttribute("Age of the customer")]
+        public int Age
+        {
+            get
+            {
+                return _age;
+            }
+            set
+            {
+                _age = value;
+            }
+        }
+        [CategoryAttribute("Marketting Settings"), DescriptionAttribute("If the customer as bought more than 10 times, this is set to true")]
+        public bool FrequentBuyer
+        {
+            get
+            {
+                return _frequentBuyer;
+            }
+            set
+            {
+                _frequentBuyer = value;
+            }
+        }
+        [CategoryAttribute("Marketting Settings"), DescriptionAttribute("Most current e-mail of the customer")]
+        public string Email
+        {
+            get
+            {
+                return _email;
+            }
+            set
+            {
+                _email = value;
+            }
+        }
+    } 
+}
+
+{% endhighlight %}
 
 ![](Binding-with-any-object_images/Binding-with-any-object_img1.png)
 
@@ -33,7 +146,7 @@ When the SelectedObject property binds to an object, the properties of that obje
 
 
 
-Properties
+### Properties
 
 SelectedObject Table
 
@@ -55,7 +168,7 @@ ObjectDefault Value : Null</td><td>
 </table>
 
 
-Sample Link
+### Sample Link
 
 1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
 2. Select   Run Locally Installed Samples in WPF Button.
