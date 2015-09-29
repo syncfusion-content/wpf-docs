@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Function-Reference-Section
+title: Function Reference Section | Calculate | wpf | Syncfusion
 description: function reference section
 platform: wpf
 control: Calculate
@@ -391,6 +391,7 @@ where,
 
 * index is to specify the index from where you want to retrive the value.
 * valuearray is the array of value from where you want to take the value.
+
 ## Column
 
 

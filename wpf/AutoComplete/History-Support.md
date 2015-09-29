@@ -1,6 +1,6 @@
 ---
 layout: post
-title: History-Support
+title: History-Support | AutoComplete | wpf | Syncfusion
 description: history support
 platform: wpf
 control: AutoComplete
@@ -67,7 +67,6 @@ private void autoComplete1_SelectionChanged(object sender,
 
 ### Properties
 
-_Property Table for History support_
 
 <table>
 <tr>
@@ -89,7 +88,7 @@ bool(true)</td><td>
 
 ### Methods
 
-_MethodsTable for History_
+
 
 <table>
 <tr>

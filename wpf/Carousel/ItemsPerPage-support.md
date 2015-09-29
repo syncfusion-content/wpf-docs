@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ItemsPerPage-support
+title: ItemsPerPage support | Carousel | wpf | Syncfusion
 description: itemsperpage support
 platform: wpf
 control: Carousel
@@ -31,7 +31,6 @@ carousel.ItemsSource = new ObservableCollection<string>() { "Item1", "Item
 
 ## Properties
 
- _Plan Projection Table_
 
 <table>
 <tr>

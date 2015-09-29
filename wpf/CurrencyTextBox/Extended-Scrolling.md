@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Extended-Scrolling
+title: Extended Scrolling | CurrencyTextBox | wpf | Syncfusion
 description: extended scrolling
 platform: wpf
 control: CurrencyTextBox 

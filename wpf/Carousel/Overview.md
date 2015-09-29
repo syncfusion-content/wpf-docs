@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Carousel | wpf | Syncfusion
 description: overview
 platform: wpf
 control: Carousel

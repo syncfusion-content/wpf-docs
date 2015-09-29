@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | ThefollowingcodeaddstheCheckedeventhandlertotheButtonAdv | wpf | Syncfusion
 description: overview
 platform: wpf
 control: ButtonAdv
@@ -15,7 +15,8 @@ The ButtonAdv control is a basic button control that is used to design complex f
 
 ![](Overview_images/Overview_img1.png)
 
-_ButtonAdv_
+ButtonAdv
+{:.caption}
 
 
 

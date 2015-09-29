@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Command-Binding
+title: Command Binding | ButtonAdv | wpf | Syncfusion
 description: command binding
 platform: wpf
 control: ButtonAdv

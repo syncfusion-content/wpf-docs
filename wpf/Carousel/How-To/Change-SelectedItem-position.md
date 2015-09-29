@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change-SelectedItem-position
+title: Change SelectedItem position | Carousel | wpf | Syncfusion
 description: change selecteditem position
 platform: wpf
 control: Carousel
@@ -12,8 +12,6 @@ documentation: ug
 Using TopItemPosition property, you can change the position of SelectedItem in a given path.
 
 
-
-  _Property table_
 
 <table>
 <tr>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | CurrencyTextBox | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: CurrencyTextBox 
@@ -27,9 +27,7 @@ documentation: ug
 
 CurrencyTextBox exposes the following members:
 
-Properties
-
-_CurrencyTextBox members property table_
+#### Properties
 
 <table>
 <tr>
@@ -322,9 +320,8 @@ Gets or sets the ZeroColor property.</td><td>
 ZeroColor</td></tr>
 </table>
 
-Methods
+#### Methods
 
-_CurrencyTextBox methods table_
 
 <table>
 <tr>
@@ -354,9 +351,9 @@ Void</td><td>
 </table>
 
 
- Events
+#### Events
 
-_CurrencyTextBox events table_
+
 
 <table>
 <tr>
@@ -453,7 +450,7 @@ The steps to create a CurrencyTextBox by using Visual Studio in C# are as follow
 5. Click the C# file, to open the C# file and add the CurrencyTextBox to the application.
 
 
-
+   {%highlight c#%}
 
 
 
@@ -482,20 +479,23 @@ The steps to create a CurrencyTextBox by using Visual Studio in C# are as follow
 					}
 
 				 }
+		{%endhighlight%}
 
 
 
    ![](Getting-Started_images/Getting-Started_img6.png)
 
-   {:.prettyprint}
+   
 
-N>If you do not set any value to the CurrencyTextBox then the default value will be as follows: If the UseNullOption is set to true, Value of the NullValue property will be the default value. Otherwise Zero will be the default value (based on the MinValue and MaxValue the default value will change).
+N> If you do not set any value to the CurrencyTextBox then the default value will be as follows: If the UseNullOption is set to true, Value of the NullValue property will be the default value. Otherwise Zero will be the default value (based on the MinValue and MaxValue the default value will change).
 
-See Also
+{%seealso%}
 
 Creating a CurrencyTextBox by using XAML
 
 Creating a CurrencyTextBox by using Expression Blend
+
+{%endseealso%}
 
 ### Creating a CurrencyTextBox by using XAML
 
@@ -516,7 +516,7 @@ The steps to create a CurrencyTextBox by using Visual Studio in XAML are as foll
 4. On the Properties window, customize the properties of the CurrencyTextBox.
 
 
-
+   {%highlight xml%}
 
 
 			<Window x:Class="WpfApp.MainWindow"
@@ -536,20 +536,22 @@ The steps to create a CurrencyTextBox by using Visual Studio in XAML are as foll
 				</Grid>
 
 			</Window>
-
+			
+	 {%endhighlight%}
 
 
 
 
    ![](Getting-Started_images/Getting-Started_img8.png)
 
-   {:.prettyprint}
-
-See Also
+   
+{%seealso%}
 
 Creating a CurrencyTextBox by using Expression Blend
 
 Creating a CurrencyTextBox by using C#
+
+{%endseealso%}
 
 ### Creating a CurrencyTextBox by using Expression Blend
 
@@ -571,16 +573,16 @@ The steps to create a CurrencyTextBox in the application by using Expression Ble
 
 
    ![](Getting-Started_images/Getting-Started_img10.png)
-   {:.prettyprint}
+   
 
 
-1. Add the following reference with the sample project:
+   1. Add the following reference with the sample project:
 
    Syncfusion.Shared.WPF.dll
 
-2. On the Window menu, select Assets. This opens the Assets Library dialog box.
+   2. On the Window menu, select Assets. This opens the Assets Library dialog box.
 
-3. In the Search box, type CurrencyTextBox. This displays the search results.
+   3. In the Search box, type CurrencyTextBox. This displays the search results.
 
 
 
@@ -599,7 +601,7 @@ The steps to create a CurrencyTextBox in the application by using Expression Ble
 
 
 
-
+    {%highlight xml%}
 
 
 
@@ -626,13 +628,10 @@ The steps to create a CurrencyTextBox in the application by using Expression Ble
 
    ![](Getting-Started_images/Getting-Started_img13.png)
 
-   {:.prettyprint}
+   {%endhighlight%}
+   
+   
 
-See Also
-
-Creating a CurrencyTextBox by using XAML
-
-Creating a CurrencyTextBox by using C#
 
 ## Blendability
 
@@ -661,16 +660,17 @@ currencyTextBox.Value = 100;
 
 
 
-See Also
+{%seealso%}
 
 Culture and Number Formats
 
 NullValue support
 
+{%endseealso%}
+
 ### Setting Minimum and Maximum Value
 
 You can set the Minimum and Maximum value by using the MinVal and MaxVal properties of the CurrencyTextBox.
-
 
 
 {% highlight xml %}
@@ -691,11 +691,13 @@ currencyTextBox.MaxValue = 999.99;
 
 
 
-See Also
+{%seealso%}
 
 NullValue support
 
 Binding support
+
+{%endseealso%}
 
 ### Setting Watermark
 
@@ -724,7 +726,7 @@ currencyTextBox.WatermarkTextIsVisible = true;
 
 
 
-See Also
-
+{%seealso%}
 Watermark Template
+{%endseealso%}
 

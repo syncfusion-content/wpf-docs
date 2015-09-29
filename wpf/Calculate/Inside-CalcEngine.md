@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inside-CalcEngine
+title: Inside CalcEngine | Calculate | wpf | Syncfusion
 description: inside calcengine 
 platform: wpf
 control: Calculate
@@ -15,7 +15,7 @@ Following are the topics discussed in this section.
 
 To track information used during calculations, CalcEngine manages several hash tables. Here is a table of the public hash tables in CalcEngine and a description of their keys and values:
 
-_Hash Table_
+
 
 <table>
 <tr>

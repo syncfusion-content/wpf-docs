@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ColorPicker-with-Gradient-Support
+title: ColorPicker with Gradient Support | ColorPicker | wpf | Syncfusion
 description: colorpicker with gradient support
 platform: wpf
 control: ColorPicker

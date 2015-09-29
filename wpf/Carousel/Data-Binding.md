@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding | Carousel | wpf | Syncfusion
 description: data binding
 platform: wpf
 control: Carousel

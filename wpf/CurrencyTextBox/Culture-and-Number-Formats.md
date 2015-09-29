@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Culture-and-Number-Formats
+title: Culture and Number Formats | CurrencyTextBox | wpf | Syncfusion
 description: culture and number formats
 platform: wpf
 control: CurrencyTextBox 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | ButtonAdv | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: ButtonAdv
@@ -15,7 +15,8 @@ This section guides you on getting started with the ButtonAdv control. It descri
 
 ![](Getting-Started_images/Getting-Started_img1.png)
 
-_Control Structure_
+Control Structure
+{:.caption}
 
 ## Add ButtonAdv Control to an application:
 
@@ -48,7 +49,8 @@ button.Label = "Hello World";
 
 ![](Getting-Started_images/Getting-Started_img2.png)
 
-_Typical ButtonAdv Control_
+Typical ButtonAdv Control
+{:.caption}
 
 ## Set Size Mode
 
@@ -74,7 +76,8 @@ ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode =
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
-_ButtonAdv Control with Small SizeMode_
+ButtonAdv Control with Small SizeMode
+{:.caption}
 
 
 
@@ -94,7 +97,8 @@ ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode =
 
 ![](Getting-Started_images/Getting-Started_img4.png)
 
-_ButtonAdv control with Normal SizeMode_
+ButtonAdv control with Normal SizeMode
+{:.caption}
 
 ## Large Mode
 
@@ -112,7 +116,9 @@ ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode =
 
 ![](Getting-Started_images/Getting-Started_img5.png)
 
-_ButtonAdv controls with Large SizeMode_
+ButtonAdv controls with Large SizeMode
+{:.caption}
+
 
 ## Setting Image
 
@@ -135,7 +141,8 @@ ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode =
 ![](Getting-Started_images/Getting-Started_img6.png)
 
 
-_Small Sized ButtonAdv Control with image_
+Small Sized ButtonAdv Control with image
+{:.caption}
 
 
 The SmallIcon property can be set even when the SizeMode is Normal:
@@ -151,7 +158,8 @@ ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode =
 ![](Getting-Started_images/Getting-Started_img7.png)
 
 
-_Normal Sized ButtonAdv Control with Image_
+Normal Sized ButtonAdv Control with Image
+{:.caption}
 
 
 The LargeIcon property can be set as follows:
@@ -166,7 +174,8 @@ ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode =
 
 ![](Getting-Started_images/Getting-Started_img8.png)
 
-_Large Sized ButtonAdv Control with Image_
+Large Sized ButtonAdv Control with Image
+{:.caption}
 
 ## Set Icon Width and Height
 
@@ -177,13 +186,15 @@ The Iconsize can be set using the following two properties:
 
 ![](Getting-Started_images/Getting-Started_img9.png)
 
-_ButtonAdv Control with IconSize(80,80)_
+ButtonAdv Control with IconSize(80,80)
+{:.caption}
 
 
 
 ![](Getting-Started_images/Getting-Started_img10.png)
 
-_ButtonAdv Control with IconSize(20,20)_
+ButtonAdv Control with IconSize(20,20)
+{:.caption}
 
 
 
@@ -201,7 +212,7 @@ ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.IconWidth=
 
 ### Properties
 
-_Properties table_
+
 
 <table>
 <tr>
@@ -305,7 +316,7 @@ IconSize</td></tr>
 
 ### Events
 
-_Events table_
+
 
 <table>
 <tr>

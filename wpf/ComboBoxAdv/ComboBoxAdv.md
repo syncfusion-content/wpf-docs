@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ComboBoxAdv
+title: ComboBoxAdv | ComboBoxAdv | wpf | Syncfusion
 description: comboboxadv 
 platform: wpf
 control: ComboBoxAdv
@@ -64,16 +64,12 @@ To create an ComboBoxAdv instance in Visual Studio:
 
    ![](ComboBoxAdv_images/ComboBoxAdv_img3.png)
 
-
-
-
-
 6. Drag the ComboBoxAdv control from the Toolbox window to the Design View. An instance of the ComboBoxAdv control is created in Design view.
 
 
 
    ![](ComboBoxAdv_images/ComboBoxAdv_img4.png)
-   {:.prettyprint}
+   
 
 
 
@@ -106,7 +102,7 @@ To create ComboBoxAdv instance in Expression Blend:
 
 
    ![](ComboBoxAdv_images/ComboBoxAdv_img7.png)
-   {:.prettyprint}
+   
 
 
 
@@ -137,7 +133,7 @@ If we want to select more than one item in the ComboBoxAdv, AllowMultiSelect pro
 
 #### Properties
 
-_Properties Table_
+
 
 <table>
 <tr>
@@ -194,7 +190,7 @@ comboBox.AllowMultiSelect = true;
 
 It displays the default text in the ComboBoxAdv when none of the items is selected in the drop down list.
 
-#### _Properties Table_
+
 
 <table>
 <tr>
@@ -242,7 +238,7 @@ comboBox.DefaultText = "..Choose Items..";
 
 A delimiter string in a ComboBoxAdv is “A string that can be displayed between the selected items in the ComboBoxAdv”. We can customize this string by using the property called “SelectedValueDelimiter” in the ComboBoxAdv.
 
-_Properties Table_
+
 
 <table>
 <tr>

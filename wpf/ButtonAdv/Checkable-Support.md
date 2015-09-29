@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Checkable-Support
+title: Checkable Support | ToedittheButtonAdv | wpf | Syncfusion
 description: checkable support
 platform: wpf
 control: ButtonAdv
@@ -24,4 +24,5 @@ ButtonAdv button = new ButtonAdv()button.Label = "Hello World";button.SizeMode =
 ![](Checkable-Support_images/Checkable-Support_img1.png)
 
 
-_Checkable ButtonAdv Control_
+Checkable ButtonAdv Control
+{:.caption}

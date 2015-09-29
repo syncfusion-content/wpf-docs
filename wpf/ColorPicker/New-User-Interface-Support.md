@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New-User-Interface-Support
+title: New User Interface Support | ColorPicker | wpf | Syncfusion
 description: new user interface support
 platform: wpf
 control: ColorPicker
