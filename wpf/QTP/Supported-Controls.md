@@ -9,7 +9,7 @@ documentation: ug
 
 ## Essential Grid
 
-This section covers the supported properties and methods in Essential Grid. 
+This section covers the supported properties and methods in the Essential Grid. 
 
 ### Properties 
 
