@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spin-Button-Alignment
+title: Spin Button Alignment | DomainUpDown | wpf | Syncfusion
 description: spin button alignment
 platform: wpf
 control: DomainUpDown

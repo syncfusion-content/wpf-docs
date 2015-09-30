@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | OLAPGauge | wpf | Syncfusion
 description: overview
 platform: wpf
 control: OLAP Gauge
@@ -11,7 +11,7 @@ documentation: ug
 
 Essential BI OLAP Gauge for WPF is ideal for highlighting business critical Key Performance Indicator (KPI) information in executive dashboards and report cards. Gauges let you present values against goals in a very intuitive manner. Built-in data binding support allows you to easily bind a gauge to a KPI result from your OLAP database. The Gauge control comes with sophisticated customization support, which provides endless possibility for control customization. It renders a value as a pointer against a circular scale. You can also easily build high quality dashboards and process controls.
 
-![C:/Users/Hari/Pictures/OlapGauge/OLAP Gauge Control.png](Overview_images/Overview_img1.png)
+![](Overview_images/Overview_img1.png)
 
 
 ## Key Features
@@ -41,19 +41,19 @@ The product comes with numerous samples as well as an extensive documentation to
 
 The following conventions will help you to quickly identify the important sections of information while using the content.
 
-_Conventions Table_
+
 
 <table>
 <tr>
 <th>
-{{ '**Convention**' | markdownify }}</th><th>
-{{ '**Icon**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Convention</th><th>
+Icon</th><th>
+Description</th></tr>
 <tr>
 <td>
 Note</td><td>
  {{'![](Overview_images/Overview_img2.jpeg)'| markdownify }}
-{{ 'Note:' | markdownify }}</td><td>
+{{ 'Note' | markdownify }}</td><td>
 Represents important information</td></tr>
 <tr>
 <td>

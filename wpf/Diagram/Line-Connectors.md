@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Line-Connectors
+title: Line Connectors | Diagram | wpf | Syncfusion
 description: line connectors
 platform: wpf
 control: Diagram
@@ -17,7 +17,6 @@ Connectors are objects that are used to create a link between two nodes. Each co
 
 
 
-_Property Table_
 
 <table>
 <tr>
@@ -339,7 +338,7 @@ AutoAdjustPoints enables the Orthogonal LineConnector to adjust the intermediate
 
 
 
-![Description: C:/Users/jeganr/Desktop/ug/segment1.png](Line-Connectors_images/Line-Connectors_img2.png)
+![](Line-Connectors_images/Line-Connectors_img2.png)
 
 
 
@@ -518,7 +517,7 @@ diagramModel.Connections.Add(line)
 
 {% endhighlight  %}
 
-See Also
+{%seealso%}
 
 * Connector Type
 * Decorator Shapes
@@ -529,7 +528,7 @@ See Also
 * Customize the ContextMenu of Nodes and LineConnectors
 * LineBridging
 
-
+{%endseealso%}
 
 ## Create Line Connector
 
@@ -538,7 +537,7 @@ Like nodes, connectors can also be added in two ways.
 * At run time
 * Through model
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -616,7 +615,7 @@ It is also possible to drag-and-drop line connectors from the SymbolPalette. Thr
 
    ![](Line-Connectors_images/Line-Connectors_img8.jpeg)
 
-   {:.prettyprint}
+   
 
 ### Add Connectors through a Model
 
@@ -719,7 +718,7 @@ This feature provides the ability to drag nodes and connection ports when the En
 
 Properties
 
-## Setting Constraints for EnableConnection Property_
+## Setting Constraints for EnableConnection Property
 
 <table>
 <tr>
@@ -866,7 +865,7 @@ View1.PortMode = ConnectionMode.Move
 
 The ConnectorType property specifies the type of connector to be used for connection.
 
-_Connector Type_
+
 
 <table>
 <tr>
@@ -940,7 +939,7 @@ Arc Line Connector creates link between two nodes. This can act as other line co
 
 Properties
 
-_Arc Line Connector Customization Property Table_
+
 
 <table>
 <tr>
@@ -1027,11 +1026,11 @@ diagramModel1.Connections.Add(l)
 
 {% endhighlight   %}
 
-![Description: C:/Users/jeganr/Desktop/New Images/New Images/ArcHeight.png](Line-Connectors_images/Line-Connectors_img11.png)
+![](Line-Connectors_images/Line-Connectors_img11.png)
 
 
 
-![Description: C:/Users/jeganr/Desktop/New Images/New Images/ArcDirection.png](Line-Connectors_images/Line-Connectors_img12.png)
+![](Line-Connectors_images/Line-Connectors_img12.png)
 
 
 
@@ -1039,7 +1038,6 @@ diagramModel1.Connections.Add(l)
 
 Line connector can be used to draw polylines using IntermediatePoints property. Polylines are drawn using intermediate points for straight lines and orthogonal line connectors. For orthogonal lines, intermediate points are updated so that the adjacent line segments are always perpendicular to each other. These intermediate points are visually represented as vertex.
 
-_Property Table_
 
 <table>
 <tr>
@@ -1255,7 +1253,7 @@ lc.IntermediatePoints.RemoveAt(1)
 
 Vertex template for intermediate points can be set using ConnectorAdornerVertexStyle property of line connector. Custom styles can be set. The following code example illustrates the same.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -1381,7 +1379,6 @@ lc.VertexStyle = TryCast(Me.Resources("vertexStyle"), Style)
 
 Vertex template for terminal points can be set using ConnectorAdornerThumbStyle property of line connector. Custom styles can be set. Following code example illustrates the same.
 
-_Property Table_
 
 <table>
 <tr>
@@ -2824,7 +2821,6 @@ N> This FirstSegmentOrientation property is only works as expected when the Line
 
 Label is a single line or multiline text that is displayed over the Node. This Label is used to textually represent a LineConnector with a string that can be edited in run time, there are many properties that can be used to change the alignment and appearance settings. Label can be represented as multiline text using the TextWrapping property.
 
-_Property Table_
 
 <table>
 <tr>
@@ -3247,7 +3243,7 @@ diagramModel.Connections.Add(line1)
 
 
 {% endhighlight   %}
-![Description: C:/Users/karthikeyanp/Pictures/images/enablemultilinelabel-lc.png](Line-Connectors_images/Line-Connectors_img40.png)
+![](Line-Connectors_images/Line-Connectors_img40.png)
 
 
 
@@ -3263,7 +3259,7 @@ We can also set the Label Position using LabelPosition property of the LineConne
 
 
 
-_Properties Table_
+
 
 <table>
 <tr>
@@ -3350,9 +3346,9 @@ Use Case Scenarios
 
 When the label overlaps with the nodes or connectors, it will not be legible. In such case you can use this feature to align the label to make it legible. 
 
-Properties
 
-_Property Table_
+
+
 
 <table>
 <tr>
@@ -3461,7 +3457,7 @@ You can set an Alignment for the label template. The following code shows how to
 
 Properties
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -3601,7 +3597,7 @@ You can set an orientation for the label template. The following property can be
 
 Properties
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -3711,7 +3707,7 @@ Line.LabelTemplateHorizontalAlignment=Syncfusion.Windows.Diagram.LabelOrientatio
 
 ## Line Bridging
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -3925,7 +3921,7 @@ protected override IEnumerable<PathSegment> CreateSegments(Point start, Point en
 
 Direction of the Line Bridge is customized using BridgeDirection property. This property decides which intersecting segment shows a bridge based path on the preferred direction. The Default value is BridgeDirection.Top.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -3980,13 +3976,13 @@ diagramview.BridgeDirection=BridgeDirection.Left
 
 When a link is drawn between two nodes, by enabling the LineRoutingEnabled property of that link and the diagram view, and if any other node is found in between them, the line will be automatically re-routed around those nodes.
 
-![C:/Users/prakashs/Desktop/Volume 4/Samples/Silverlight/LineRoutingDemo.png](Line-Connectors_images/Line-Connectors_img56.png)
+![](Line-Connectors_images/Line-Connectors_img56.png)
 
 
 
 Property
 
-_Line Routing_
+
 
 <table>
 <tr>
@@ -4072,7 +4068,7 @@ By default, TreatAsObstacle property of the Node is set to true to avoid the lin
 
 Property
 
-_Node Settings_
+
 
 <table>
 <tr>
@@ -4098,7 +4094,6 @@ This feature defines when the connectors have to be routed, by setting the Routi
 
 Properties
 
-_Customization of LineRouting_
 
 <table>
 <tr>

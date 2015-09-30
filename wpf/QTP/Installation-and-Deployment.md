@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation-and-Deployment
+title: Installation and Deployment | QTP | wpf | Syncfusion
 description: installation and deployment
 platform: wpf
 control: QTP
@@ -15,7 +15,7 @@ The following procedure illustrates how to install Essential Test Studio:
 
 1. Double-click the Syncfusion Essential Test Studio Setup file. 
 
-  Note: Setup - Syncfusion Essential QuickTest Professional dialog box opens.
+   N> Setup - Syncfusion Essential QuickTest Professional dialog box opens.
 
    ![](Installation-and-Deployment_images/Installation-and-Deployment_img1.png)
 
@@ -41,7 +41,7 @@ The following procedure illustrates how to install Essential Test Studio:
 
 6. To install in the default location, click Next. 
  
-  N> You can also browse to choose a location by clicking Browse.
+   N> You can also browse to choose a location by clicking Browse.
 
 7. Installation type dialog box opens.
 

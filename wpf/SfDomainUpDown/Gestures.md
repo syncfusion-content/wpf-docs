@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gestures
+title: Gestures | DomainUpDown | wpf | Syncfusion
 description: gestures
 platform: wpf
 control: DomainUpDown

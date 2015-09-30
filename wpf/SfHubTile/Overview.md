@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | <SfHubTilex:Name="hubTile" | wpf | Syncfusion
 description: overview
 platform: wpf
 control: HubTile

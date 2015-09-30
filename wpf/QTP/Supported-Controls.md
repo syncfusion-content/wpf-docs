@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported-Controls
+title: Supported Controls | QTP | wpf | Syncfusion
 description: supported controls
 platform: wpf
 control: QTP
@@ -13,16 +13,16 @@ This section covers the supported properties and methods in the Essential Grid.
 
 ### Properties 
 
-Properties Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th><th>
-{{ '**Reference**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference</th></tr>
 <tr>
 <td>
 Int RowCount</td><td>
@@ -41,15 +41,15 @@ N/A</td></tr>
 
 ### Methods
 
-Methods Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 bool SetCurrentCell(int row, int col)</td><td>
@@ -213,17 +213,17 @@ string</td></tr>
 
 ### Methods
 
-Methods Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Type</th><th>
+Return Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 SetScrollPosition</td><td>
@@ -302,15 +302,15 @@ NA</td></tr>
 
 ### Properties
 
-Properties Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 Int RowCount</td><td>
@@ -329,15 +329,15 @@ N/A</td></tr>
 
 ### Methods
 
-Methods Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
 <tr>
 <th>
 void SetCurrentCell(int row,int col);</th><th>
@@ -380,15 +380,14 @@ void</td></tr>
 
 ### Methods
 
-Methods Table
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
 <tr>
 <th>
 void SetSelectedIndex(int index);</th><th>
@@ -413,15 +412,15 @@ void</td></tr>
 
 ### Methods
 
-Methods Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 void SetCurrentPage(int pageIndex</td><td>
@@ -438,10 +437,10 @@ void</td></tr>
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 void ShowGroupingBar()<br/><br/></td><td>

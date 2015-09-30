@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | AccentBrushpropertiesareusedtodecoratetheSfDataPagercontrolwithasolidcolor.TherearetwoAccentBrushpropertiesintheSfDataPager | wpf | Syncfusion
 description: overview
 platform: wpf
 control: SfDataPager Control

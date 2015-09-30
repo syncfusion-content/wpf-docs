@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DataBinding
+title: DataBinding | AccentBrushpropertiesareusedtodecoratetheSfDataPagercontrolwithasolidcolor.TherearetwoAccentBrushpropertiesintheSfDataPager | wpf | Syncfusion
 description: databinding
 platform: wpf
 control: SfDataPager Control
