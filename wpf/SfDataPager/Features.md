@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Features
+title: Features | SfDataPagerControl | wpf | Syncfusion
 description: features
 platform: wpf
 control: SfDataPager Control

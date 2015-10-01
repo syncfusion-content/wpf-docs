@@ -1,9 +1,9 @@
 ---
 layout: post
-title: End-Angle 
+title: End-Angle  | SfRadialSlider  | wpf | Syncfusion
 description: end angle  
 platform: wpf
-control: Radial Slider 
+control: SfRadialSlider 
 documentation: ug
 ---
 

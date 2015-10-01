@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multi-Line-Support
+title: Multi Line Support | ThefollowingcodeaddstheClickeventhandlertotheButtonAdv | wpf | Syncfusion
 description: multi line support
 platform: wpf
 control: ButtonAdv
@@ -21,7 +21,8 @@ Multiline support can be enabled by using the following code:
 
 ![](Multi-Line-Support_images/Multi-Line-Support_img1.png)
 
-_ButtonAdv control without MultiLine_
+ButtonAdv control without MultiLine
+{:.caption}
 
 N> This property is applicable only for Large Size Mode Buttons.
 

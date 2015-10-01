@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events
+title: Events | CurrencyTextBox | wpf | Syncfusion
 description: events
 platform: wpf
 control: CurrencyTextBox 

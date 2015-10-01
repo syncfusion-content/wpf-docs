@@ -1,6 +1,6 @@
 ---
 layout: post
-title: XAML-Configuration
+title: XAML Configuration | OLAPGauge | wpf | Syncfusion
 description: xaml configuration
 platform: wpf
 control: OLAP Gauge
@@ -17,15 +17,15 @@ If the user wants to perform the entire configuration in XAML , then this featur
 
 ## Properties 
 
-_Property Table_
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 DataSource.ConnectionString</td><td>
@@ -150,7 +150,8 @@ olapshared:DataSource.ConnectionString="datasource=localhost; initial catalog=a
 ![](XAML-Configuration_images/XAML-Configuration_img1.png)
 
 
-_OLAP Gauge with SalesReport created by XAML code_
+OLAP Gauge with SalesReport created by XAML code
+{:.caption}
 
 ## Sample Link
 

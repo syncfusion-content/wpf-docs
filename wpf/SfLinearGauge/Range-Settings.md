@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Range-Settings
+title: Range Settings | SfLinearGauge | wpf | Syncfusion
 description: range settings
 platform: wpf
-control: Linear Gauge 
+control: SfLinearGauge 
 documentation: ug
 ---
 
@@ -15,6 +15,8 @@ Ranges of the linear scale are a collection of the linear range. A linear range 
 
 The stroke of the range is personalized by changing the RangeStroke of the linear range. The appearance of linear range is customized by setting the StartWidth and EndWidth properties. With the help of the RangeOffset property, the linear range can be positioned with respect to the linear scale. By setting the RangeOpacity of the LinearRange, the opacity of the range can be modified.
 
+
+{%tabs%}
 {% highlight xml %}
  
 
@@ -72,7 +74,7 @@ The stroke of the range is personalized by changing the RangeStroke of the linea
 
 {% endhighlight %}
 
-
+{%endtabs%}
 
 
 ![](Concepts-and-Feature_images/Concepts-and-Feature_img6.png)
@@ -83,6 +85,8 @@ The stroke of the range is personalized by changing the RangeStroke of the linea
 
 By setting the BindWithRangeStrokeToLabels, the stroke of the labels can be set related to the stroke of the specified ranges. Similarly, by setting the BindWithRangeStrokeToTicks, the stroke of the ticks can be set related to the stroke of the specified ranges.
 
+
+{%tabs%}
 {% highlight xml %}
 
 
@@ -152,6 +156,7 @@ By setting the BindWithRangeStrokeToLabels, the stroke of the labels can be set 
 
 {% endhighlight %}
 
+{%endtabs%}
 ![](Concepts-and-Feature_images/Concepts-and-Feature_img7.png)
 
 
@@ -163,7 +168,7 @@ The range can be placed above or below the scale by choosing the options availab
 1. Above (Default).
 2. Below.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -225,7 +230,7 @@ The range can be placed above or below the scale by choosing the options availab
 
 {% endhighlight %}
 
-
+{%endtabs%}
 
 The following screenshot displays the Linear Gauge with the Range positioned above:
 

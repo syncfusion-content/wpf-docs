@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance | AutoComplete | wpf | Syncfusion
 description: appearance
 platform: wpf
 control: AutoComplete
@@ -43,52 +43,64 @@ SkinStorage.SetVisualStyle(autoComplete, "Office2007Blue");
 
 ![](Appearance_images/Appearance_img1.png)
 
-_Windows7_
+Windows7
+{:.caption}
 
 ![](Appearance_images/Appearance_img2.png)
 
-_Blend_
+Blend
+{:.caption}
+
 
 
 ![](Appearance_images/Appearance_img3.png)
 
-_Office2007Blue_
+Office2007Blue
+{:.caption}
 
 ![](Appearance_images/Appearance_img4.png)
 
-_Office2007Black_
+Office2007Black
+{:.caption}
 
 ![](Appearance_images/Appearance_img5.png)
 
-_Office2007Silver_
+Office2007Silver
+{:.caption}
 
 ![](Appearance_images/Appearance_img6.png)
 
-_Office2003_
+Office2003
+{:.caption}
 
 ![](Appearance_images/Appearance_img7.png)
 
-_ShinyRed_
+ShinyRed
+{:.caption}
 
 ![](Appearance_images/Appearance_img8.png)
 
-_ShinyBlue_
+ShinyBlue
+{:.caption}
 
 
 
 ![](Appearance_images/Appearance_img9.png)
 
-_SyncOrange_
+SyncOrange
+{:.caption}
 
 
 
 ![](Appearance_images/Appearance_img10.png)
 
-_Metro_
+Metro
+{:.caption}
 
 
 
 ![](Appearance_images/Appearance_img11.png)
 
-_Transparent_
+Transparent
+{:.caption}
 

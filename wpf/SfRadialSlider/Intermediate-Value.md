@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Intermediate Value
+title: Intermediate Value | SfRadialSlider  | wpf | Syncfusion
 description: intermediate value 
 platform: wpf
-control: Radial Slider 
+control: SfRadialSlider 
 documentation: ug
 ---
 

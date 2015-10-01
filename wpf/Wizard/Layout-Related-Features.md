@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout-Related-Features
+title: Layout Related Features | ####UsethefollowingcodesnippettodefinetheNextButtonEventforWizard | wpf | Syncfusion
 description: layout related features
 platform: wpf
 control: Wizard
@@ -18,7 +18,7 @@ You can set the minimum height for the header of the Interior wizard page by usi
 Use the following code snippet for setting the minimum height for the page header.
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -52,6 +52,8 @@ wizardControl.InteriorPageHeaderMinHeight = 150;
 
 {% endhighlight %}
 
+{%endtabs%}
+
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)
 
@@ -59,15 +61,17 @@ wizardControl.InteriorPageHeaderMinHeight = 150;
 
 
 
-See Also
+{%seealso%}
 
 Wizard Page Type
+
+{%endseealso%}
 
 ## Setting the Banner Background Color
 
 Set the background color of the banner for the Wizard control by using the BannerBackground property. The following code snippet is used to set this property.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -99,14 +103,16 @@ wizardPage.BannerBackground = Brushes.Navy;
 
 {% endhighlight %}
 
+{%endtabs%}
+
 ![](Layout-Related-Features_images/Layout-Related-Features_img2.jpeg)
 
 
 
 
-See Also
-
+{%seealso%}
 Banner Image
+{%endseealso%}
 
 ## Setting the Banner Image
 
@@ -118,7 +124,7 @@ N> You can set the banner image either on the interior or exterior wizard page b
 
 The following code snippet can be used to set the banner image.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -146,16 +152,18 @@ wizardControl.Items.Add(wizardPage);
 
 wizardPage.BannerImage = new BitmapImage(new Uri("/Image/sync.bmp", UriKind.RelativeOrAbsolute));  
 {% endhighlight %}
-
+{%endtabs%}
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img3.jpeg)
 
 
 
 
-See Also
+{%seealso%}
 
 Banner Background Color
+
+{%endseealso%}
 
 ## Setting Minimum Width for the Banner Image on the Exterior Wizard Page
 
@@ -163,6 +171,8 @@ You can set the minimum width of the banner image on the 'Exterior' wizard page 
 
 The following code snippet illustrates setting the minimum width for the banner image.
 
+
+{%tabs%}
 {% highlight xml %}
 
 
@@ -198,15 +208,18 @@ wizardControl.ExteriorPageBannerImageMinWidth = 10;
 
 {% endhighlight %}
 
+{%endtabs%}
+
 ![](Layout-Related-Features_images/Layout-Related-Features_img4.jpeg)
 
 
 
 
-
-See Also
+{%seealso%}
 
 Wizard Page Type
+
+{%endseealso%}
 
 ## Setting Visual Styles for Wizard Control
 

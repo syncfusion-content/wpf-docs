@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection-Mode
+title: Selection Mode | ColorPicker | wpf | Syncfusion
 description: selection mode
 platform: wpf
 control: ColorPicker

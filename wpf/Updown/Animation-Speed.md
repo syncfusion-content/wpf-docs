@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation-Speed
+title: Animation Speed | UpDownControl | wpf | Syncfusion
 description: animation speed
 platform: wpf
 control: UpDown Control
@@ -15,6 +15,8 @@ When you change a value in the UpDown by using the repeat buttons, the transitio
 
 The AnimationSpeed can be set for the UpDown control as shown in the following code example.
 
+
+{%tabs%}
 {%highlight xml%}
 
 
@@ -30,19 +32,20 @@ UpDown upDown = new UpDown();
 upDown. AnimationSpeed = 30;
 
 {%endhighlight%}
+{%endtabs%}
 
-Properties
+### Properties
 
-AnimationSpeed Property
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 AnimationSpeed</td><td>

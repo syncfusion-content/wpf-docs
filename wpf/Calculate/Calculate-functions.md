@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculate-functions
+title: Calculate functions | Calculate | wpf | Syncfusion
 description: calculate functions
 platform: wpf
 control: Calculate
@@ -34,7 +34,8 @@ DOLLARDE( arg1, arg2) where:
 
 ![](Calculate-functions_images/Calculate-functions_img1.png)
 
-_DOLLARDE_
+DOLLARDE
+{:.caption}
 
 ### DOLLARFR
 
@@ -59,7 +60,8 @@ Example:
 
 ![](Calculate-functions_images/Calculate-functions_img2.png)
 
-_DOLLARFR_
+DOLLARFR
+{:.caption}
 
 ### DURATION
 
@@ -82,7 +84,8 @@ DURATION(SettlementDate,MaturityDate,rate,profit,frequency,basis) where:
 
 ![](Calculate-functions_images/Calculate-functions_img3.png)
 
-_DURATION_
+DURATION
+{:.caption}
 
 ### RRI
 
@@ -100,7 +103,8 @@ RRI(np,pv,fv) where,
 
 ![](Calculate-functions_images/Calculate-functions_img4.png)
 
-_RRI_
+RRI
+{:.caption}
 
 ### FVSCHEDULE
 
@@ -121,7 +125,8 @@ Example:
 
 ![](Calculate-functions_images/Calculate-functions_img5.png)
 
-_FVSCHEDULE_
+FVSCHEDULE
+{:.caption}
 
 ### DISC
 
@@ -142,7 +147,8 @@ DISC(SettlementDate,MaturityDate,rate,value) where:
 
 ![](Calculate-functions_images/Calculate-functions_img6.png)
 
-_DISC_
+DISC
+{:.caption}
 
 ### INTRATE
 
@@ -168,7 +174,8 @@ Example:
 
 ![](Calculate-functions_images/Calculate-functions_img7.png)
 
-_INTRATE_
+INTRATE
+{:.caption}
 
 ### CUMIPMT
 
@@ -195,7 +202,8 @@ CUMIPMT(rate, np,pv,startPeriod, endPeriod, pp) where,
 
 ![](Calculate-functions_images/Calculate-functions_img8.png)
 
-_CUMIPMT_
+CUMIPMT
+{:.caption}
 
 ### CUMPRINC
 
@@ -222,7 +230,8 @@ CUMPRINC(rate, np, pv, startPeriod, endPeriod, pp) where:
 
 ![](Calculate-functions_images/Calculate-functions_img9.png)
 
-_CUMPRINC_
+CUMPRINC
+{:.caption}
 
 ### ACCRINT
 
@@ -252,7 +261,8 @@ ACCRINT(IssueDate,FirstIntrestDate,settlementDate,rate,parvalue,frequency,basis)
 
 ![](Calculate-functions_images/Calculate-functions_img10.png)
 
-_ACCRINT_
+ACCRINT
+{:.caption}
 
 ### RECEIVED
 
@@ -278,7 +288,8 @@ RECEIVED(Settlementdate,MaturityDate,investment,discount,basis) where:
 
 ![](Calculate-functions_images/Calculate-functions_img11.png)
 
-_RECEIVED_
+RECEIVED
+{:.caption}
 
 
 ## Database Functions
@@ -301,9 +312,10 @@ DCOUNT(collection,column,condition) where:
 
 
 
-![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img12.png)
+![](Calculate-functions_images/Calculate-functions_img12.png)
 
-_DCOUNT_
+DCOUNT
+{:.caption}
 
 ### DCOUNTA
 
@@ -321,9 +333,10 @@ DCOUNTA(collection,column,condition) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img13.png)
+![](Calculate-functions_images/Calculate-functions_img13.png)
 
-_DCOUNTA_
+DCOUNTA
+{:.caption}
 
 ### DAVERAGE
 
@@ -341,9 +354,10 @@ DAVERAGE(collection,column,condition) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img14.png)
+![](Calculate-functions_images/Calculate-functions_img14.png)
 
-_DAVERAGE_
+DAVERAGE
+{:.caption}
 
 ### DGET
 
@@ -361,7 +375,7 @@ DGET(collection,column,condition) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/4.png](Calculate-functions_images/Calculate-functions_img15.png)
+![](Calculate-functions_images/Calculate-functions_img15.png)
 
 
 
@@ -383,7 +397,8 @@ DMAX(collection,column,condition) where:
 
 ![](Calculate-functions_images/Calculate-functions_img16.png)
 
-_DMAX_
+DMAX
+{:.caption}
 
 ### DMIN
 
@@ -401,9 +416,10 @@ DMIN(collection,column,condition) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img17.png)
+![](Calculate-functions_images/Calculate-functions_img17.png)
 
-_DMIN_
+DMIN
+{:.caption}
 
 ### DSTDEV
 
@@ -419,9 +435,10 @@ DSTDEV(collection,column,condition) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img18.png)
+![](Calculate-functions_images/Calculate-functions_img18.png)
 
-_DSTDEV_
+DSTDEV
+{:.caption}
 
 ### DSTDEVP
 
@@ -439,9 +456,10 @@ DSTDEVP(collection,column,condition) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img19.png)
+![](Calculate-functions_images/Calculate-functions_img19.png)
 
-_DSTDEVP_
+DSTDEVP
+{:.caption}
 
 ### DVAR
 
@@ -459,9 +477,10 @@ VAR(collection, column, condition) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img20.png)
+![](Calculate-functions_images/Calculate-functions_img20.png)
 
-_DVAR_
+DVAR
+{:.caption}
 
 ### DVARP
 
@@ -479,9 +498,10 @@ DVARP(collection, column, condition) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img21.png)
+![](Calculate-functions_images/Calculate-functions_img21.png)
 
-_DVARP_
+DVARP
+{:.caption}
 
 ### DSUM
 
@@ -501,7 +521,8 @@ DSUM(collection, column, condition) where:
 
 ![](Calculate-functions_images/Calculate-functions_img22.png)
 
-_DSUM_
+DSUM
+{:.caption}
 
 ## Math and Trigonometry
 
@@ -525,7 +546,8 @@ SEC(number) where:
 
 ![](Calculate-functions_images/Calculate-functions_img23.png)
 
-_SEC_
+SEC
+{:.caption}
 
 ### SECH
 
@@ -547,7 +569,8 @@ SECH(number) where:
 
 ![](Calculate-functions_images/Calculate-functions_img24.png)
 
-_SECH_
+SECH
+{:.caption}
 
 ### COT
 
@@ -567,7 +590,8 @@ COT(number) where:
 
 ![](Calculate-functions_images/Calculate-functions_img25.png)
 
-_COT_
+COT
+{:.caption}
 
 ### COTH
 
@@ -591,7 +615,8 @@ COTH(number) where:
 
 ![](Calculate-functions_images/Calculate-functions_img26.png)
 
-_COTH_
+COTH
+{:.caption}
 
 ### CSC
 
@@ -613,7 +638,8 @@ CSC(number) where:
 
 ![](Calculate-functions_images/Calculate-functions_img27.png)
 
-_CSC_
+CSC
+{:.caption}
 
 ### CSCH
 
@@ -635,7 +661,9 @@ CSCH(number) where:
 
 ![](Calculate-functions_images/Calculate-functions_img28.png)
 
-_CSCH_
+CSCH
+{:.caption}
+
 
 ### ACOT
 
@@ -659,7 +687,8 @@ The returned angle is given in radians in the range of 0 (zero) to pi.
 
 ![](Calculate-functions_images/Calculate-functions_img29.png)
 
-_ACOT_
+ACOT
+{:.caption}
 
 ### ACOTH
 
@@ -681,7 +710,8 @@ ACOTH(number) where:
 
 ![](Calculate-functions_images/Calculate-functions_img30.png)
 
-_ACOTH_
+ACOTH
+{:.caption}
 
 ### ACSCH
 
@@ -700,7 +730,8 @@ x = ACSCH(y) where:
 
 ![](Calculate-functions_images/Calculate-functions_img31.png)
 
-_ACSCH_
+ACSCH
+{:.caption}
 
 ### BIGMUL
 
@@ -719,7 +750,8 @@ Math.BIGMUL(x,y); where:
 
 ![](Calculate-functions_images/Calculate-functions_img32.png)
 
-_BIGMUL_
+BIGMUL
+{:.caption}
 
 ### DIVREM
 
@@ -735,7 +767,8 @@ Math.DIVREM(num1,num2) where:
 
 ![](Calculate-functions_images/Calculate-functions_img33.png)
 
-_DIVREM_
+DIVREM
+{:.caption}
 
 ### IEEERemainder
 
@@ -754,7 +787,8 @@ IEEERemainder(d1, d2) where:
 
 ![](Calculate-functions_images/Calculate-functions_img34.png)
 
-_IEEERemainder_
+IEEERemainder
+{:.caption}
 
 ### TRUNC
 
@@ -773,7 +807,8 @@ TRUNC( number, [num_digits] ) where:
 
 ![](Calculate-functions_images/Calculate-functions_img35.png)
 
-_TRUNC_
+TRUNC
+{:.caption}
 
 ### COMBINA
 
@@ -798,7 +833,8 @@ COMBINA(number1, number2) where:
 
 ![](Calculate-functions_images/Calculate-functions_img36.png)
 
-_COMBINA_
+COMBINA
+{:.caption}
 
 ### ARABIC
 
@@ -822,7 +858,8 @@ Value zero occurs if an empty string is given as an input.
 
 ![](Calculate-functions_images/Calculate-functions_img37.png)
 
-_ARABIC_
+ARABIC
+{:.caption}
 
 ### BASE
 
@@ -848,7 +885,8 @@ BASE(number,radix [Minlength]) where:
 
 ![](Calculate-functions_images/Calculate-functions_img38.png)
 
-_BASE_
+BASE
+{:.caption}
 
 ### CEILING.MATH
 
@@ -866,7 +904,8 @@ CEILING(number, [significance],  [mode]) where:
 
 ![](Calculate-functions_images/Calculate-functions_img39.png)
 
-_CEILING.MATH_
+CEILING.MATH
+{:.caption}
 
 ### DECIMAL
 
@@ -889,7 +928,8 @@ DECIMAL(text, radix) where:
 
 ![](Calculate-functions_images/Calculate-functions_img40.png)
 
-_DECIMAL_
+DECIMAL
+{:.caption}
 
 ### MDETERM
 
@@ -909,7 +949,8 @@ MDETERM(array) where:
 
 ![](Calculate-functions_images/Calculate-functions_img41.png)
 
-_MDETERM_
+MDETERM
+{:.caption}
 
 ### MINVERSE
 
@@ -929,7 +970,8 @@ MINVERSE(array) where:
 
 ![](Calculate-functions_images/Calculate-functions_img42.png)
 
-_MINVERSE_
+MINVERSE
+{:.caption}
 
 ### MMULT
 
@@ -949,7 +991,8 @@ MMULT(M1,M2) where:
 
 ![](Calculate-functions_images/Calculate-functions_img43.png)
 
-_MMULT_
+MMULT
+{:.caption}
 
 ### MUNIT
 
@@ -969,7 +1012,8 @@ MUNIT(dimension) where:
 
 ![](Calculate-functions_images/Calculate-functions_img44.png)
 
-_MUNIT_
+MUNIT
+{:.caption}
 
 ## Statistical functions
 
@@ -999,7 +1043,8 @@ CONFIDENCE.T(alpha,stdev,size) where:
 
 ![](Calculate-functions_images/Calculate-functions_img45.png)
 
-_CONFIDENCE.T_
+CONFIDENCE.T
+{:.caption}
 
 ### SKEW.P
 
@@ -1023,7 +1068,8 @@ SKEW.P(number 1, [number 2],…) where:
 
 ![](Calculate-functions_images/Calculate-functions_img46.png)
 
-_SKEW.P_
+SKEW.P
+{:.caption}
 
 ### COVARIANCE.P
 
@@ -1042,7 +1088,8 @@ COVARIANCE.P(array1,array2) where:
 
 ![](Calculate-functions_images/Calculate-functions_img47.png)
 
-_COVARIANCE.P_
+COVARIANCE.P
+{:.caption}
 
 ###  COVARIANCE.S
 
@@ -1067,7 +1114,8 @@ COVARIANCE.S(array1,array2) where:
 
 ![](Calculate-functions_images/Calculate-functions_img48.png)
 
-_COVARIANCE.S_
+COVARIANCE.S
+{:.caption}
 
 ### PERCENTILE.EXC
 
@@ -1092,7 +1140,8 @@ PERCENTILE.EXC(array, k) where:
 
 ![](Calculate-functions_images/Calculate-functions_img49.png)
 
-_PERCENTILE.EXC_
+PERCENTILE.EXC
+{:.caption}
 
 ### PERCENTILE.INC
 
@@ -1117,7 +1166,8 @@ PERCENTILE.INC(array,k) where:
 
 ![](Calculate-functions_images/Calculate-functions_img50.png)
 
-_PERCENTILE.INC_
+PERCENTILE.INC
+{:.caption}
 
 ### PERCENTRANK.EXC
 
@@ -1142,7 +1192,8 @@ Example:
 
 ![](Calculate-functions_images/Calculate-functions_img51.png)
 
-_PERCENTRANK.EXC_
+PERCENTRANK.EXC
+{:.caption}
 
 ### STDEV.P
 
@@ -1169,7 +1220,8 @@ STDEV.P(number1,[number2],...]) where:
 
 ![C:/Users/ApoorvahR/Desktop/1.png](Calculate-functions_images/Calculate-functions_img52.png)
 
-_STDEV.P_
+STDEV.P
+{:.caption}
 
 ### STDEV.S
 
@@ -1192,9 +1244,10 @@ STDEV.S(number1,[number2],...]) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/2.png](Calculate-functions_images/Calculate-functions_img53.png)
+![](Calculate-functions_images/Calculate-functions_img53.png)
 
-_STDEV.S_
+STDEV.S
+{:.caption}
 
 ### PERMUTATIONA
 
@@ -1219,7 +1272,8 @@ PERMUTATIONA(number, number-chosen) where:
 
 ![](Calculate-functions_images/Calculate-functions_img54.png)
 
-_PERMUTATIONA_
+PERMUTATIONA
+{:.caption}
 
 ### NORMDIST
 
@@ -1246,7 +1300,8 @@ NORM.DIST(x,mean,stdev,cumulative) where:
 
 ![](Calculate-functions_images/Calculate-functions_img55.png)
 
-_NORMDIST_
+NORMDIST
+{:.caption}
 
 ### NORMINV
 
@@ -1272,7 +1327,8 @@ Example:
 
 ![](Calculate-functions_images/Calculate-functions_img56.png)
 
-_NORMINV_
+NORMINV
+{:.caption}
 
 ### NORM.S.DIST
 
@@ -1291,7 +1347,8 @@ NORM.S.DIST(val, cumulative) where:
 
 ![](Calculate-functions_images/Calculate-functions_img57.png)
 
-_NORM.S.DIST_
+NORM.S.DIST
+{:.caption}
 
 ### NORM.S.INV
 
@@ -1307,7 +1364,8 @@ NORM.S.INV(probability) where:
 
 ![](Calculate-functions_images/Calculate-functions_img58.png)
 
-_NORM.S.INV_
+NORM.S.INV
+{:.caption}
 
 ### WEIBULL.DIST
 
@@ -1334,7 +1392,8 @@ WEIBULL.DIST(x,alpha,beta,cumulative) where:
 
 ![](Calculate-functions_images/Calculate-functions_img59.png)
 
-_WEIBULL.DIST_
+WEIBULL.DIST
+{:.caption}
 
 ### EXPON.DIST
 
@@ -1358,9 +1417,10 @@ EXPON.DIST(x,y,cumulative) where:
 
 Example:
 
-![C:/Users/ApoorvahR/Desktop/3.png](Calculate-functions_images/Calculate-functions_img60.png)
+![](Calculate-functions_images/Calculate-functions_img60.png)
 
-_EXPON.DIST_
+EXPON.DIST
+{:.caption}
 
 ### GAMMA.DIST
 
@@ -1387,7 +1447,8 @@ Example:
 
 ![](Calculate-functions_images/Calculate-functions_img61.png)
 
-_GAMMA.DIST_
+GAMMA.DIST
+{:.caption}
 
 ### GAMMA.INV
 
@@ -1414,7 +1475,8 @@ GAMMA.INV(x,y,z,cumulative) where
 
 ![](Calculate-functions_images/Calculate-functions_img62.png)
 
-_GAMMA.INV_
+GAMMA.INV
+{:.caption}
 
 ### GAMMALN.PRECISE
 
@@ -1436,7 +1498,8 @@ GAMMALN.PRECISE( x ) where:
 
 ![](Calculate-functions_images/Calculate-functions_img63.png)
 
-_GAMMALN.PRECISE_
+GAMMALN.PRECISE
+{:.caption}
 
 ### F.INV
 
@@ -1462,7 +1525,9 @@ F.INV(probability,degFreedom1,degFreedom2) where:
 
 ![C:/Users/ApoorvahR/Desktop/20.png](Calculate-functions_images/Calculate-functions_img64.png)
 
-_F.INV_
+F.INV
+{:.caption}
+
 
 ### F.INV.RT
 
@@ -1486,9 +1551,10 @@ F.INV.RT(probability,degFreedom1,degFreedom2) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/4.png](Calculate-functions_images/Calculate-functions_img65.png)
+![](Calculate-functions_images/Calculate-functions_img65.png)
 
-_F.INV.RT_
+F.INV.RT
+{:.caption}
 
 ### BINOM.INV
 
@@ -1512,9 +1578,10 @@ BINOM.INV(trial number,sp,value) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/22.png](Calculate-functions_images/Calculate-functions_img66.png)
+![](Calculate-functions_images/Calculate-functions_img66.png)
 
-_BINOM.INV_
+BINOM.INV
+{:.caption}
 
 ### HYPGEOM.DIST
 
@@ -1548,9 +1615,10 @@ HYPGEOM.DIST(S_sample,size,S- population,ps,cumulative) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/23.png](Calculate-functions_images/Calculate-functions_img67.png)
+![](Calculate-functions_images/Calculate-functions_img67.png)
 
-_HYPGEOM.DIST_
+HYPGEOM.DIST
+{:.caption}
 
 ### LOGNORM.DIST
 
@@ -1577,7 +1645,8 @@ LOGNORM.DIST(x,mean,stdev,cumulative) where:
 
 ![](Calculate-functions_images/Calculate-functions_img68.png)
 
-_LOGNORM.DIST_
+LOGNORM.DIST
+{:.caption}
 
 ### LOGNORM.INV
 
@@ -1601,9 +1670,10 @@ LOGNORM.INV(probability, mean, stdev) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/5.png](Calculate-functions_images/Calculate-functions_img69.png)
+![](Calculate-functions_images/Calculate-functions_img69.png)
 
-_LOGNORM.INV_
+LOGNORM.INV
+{:.caption}
 
 ### CONFIDENCE.NORM
 
@@ -1631,7 +1701,8 @@ Example:
 
 ![](Calculate-functions_images/Calculate-functions_img70.png)
 
-_CONFIDENCE.NORM_
+CONFIDENCE.NORM
+{:.caption}
 
 ### CHISQ.DIST
 
@@ -1655,9 +1726,10 @@ CHISQ.DIST(x,degFreedom,cumulative) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/6.png](Calculate-functions_images/Calculate-functions_img71.png)
+![](Calculate-functions_images/Calculate-functions_img71.png)
 
-_CHISQ.DIST_
+CHISQ.DIST
+{:.caption}
 
 ### CHISQ.DIST.RT
 
@@ -1682,9 +1754,10 @@ CHISQ.DIST.RT(x,degFreedom) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/7.png](Calculate-functions_images/Calculate-functions_img72.png)
+![](Calculate-functions_images/Calculate-functions_img72.png)
 
-_CHISQ.DIST.RT_
+CHISQ.DIST.RT
+{:.caption}
 
 ### F.DIST 
 
@@ -1709,9 +1782,10 @@ F.DIST(x,degFreedom1,degFreedom2,cumulative) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/8.png](Calculate-functions_images/Calculate-functions_img73.png)
+![](Calculate-functions_images/Calculate-functions_img73.png)
 
-_F.DIST _
+F.DIST
+{:.caption}
 
 ### F.DIST.RT
 
@@ -1735,9 +1809,10 @@ F.DIST.RT(x, degFreedom1, degFreedom2) where:
 
 Example:
 
-![C:/Users/ApoorvahR/Desktop/9.png](Calculate-functions_images/Calculate-functions_img74.png)
+![](Calculate-functions_images/Calculate-functions_img74.png)
 
-_F.DIST.RT_
+F.DIST.RT
+{:.caption}
 
 ### MODE.MULT
 
@@ -1755,9 +1830,10 @@ MODE.MULT(number1) where:
 
 Example:
 
-![C:/Users/ApoorvahR/Desktop/10.png](Calculate-functions_images/Calculate-functions_img75.png)
+![](Calculate-functions_images/Calculate-functions_img75.png)
 
-_MODE.MULT_
+MODE.MULT
+{:.caption}
 
 ### CHISQ.TEST
 
@@ -1774,9 +1850,10 @@ CHISQ.TEST(O_range,E_range) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/11.png](Calculate-functions_images/Calculate-functions_img76.png)
+![](Calculate-functions_images/Calculate-functions_img76.png)
 
-_CHISQ.TEST_
+CHISQ.TEST
+{:.caption}
 
 ### CHISQ.INV
 
@@ -1799,9 +1876,10 @@ CHISQ.INV(probability,degFreedom) where:
 
 Example:
 
-![C:/Users/ApoorvahR/Desktop/12.png](Calculate-functions_images/Calculate-functions_img77.png)
+![](Calculate-functions_images/Calculate-functions_img77.png)
 
-_CHISQ.INV_
+CHISQ.INV
+{:.caption}
 
 ### CHISQ.INV.RT
 
@@ -1826,7 +1904,8 @@ Example:
 
 ![](Calculate-functions_images/Calculate-functions_img78.png)
 
-_CHISQ.INV.RT_
+CHISQ.INV.RT
+{:.caption}
 
 ### BINOM.DIST
 
@@ -1853,7 +1932,8 @@ BINOM.DIST (trial number,sp,value, cumulative) where:
 
 ![](Calculate-functions_images/Calculate-functions_img79.png)
 
-_BINOM.DIST_
+BINOM.DIST
+{:.caption}
 
 ### RANK.AVG
 
@@ -1870,9 +1950,10 @@ RANK.AVG(number,ref) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/14.png](Calculate-functions_images/Calculate-functions_img80.png)
+![](Calculate-functions_images/Calculate-functions_img80.png)
 
-_RANK.AVG_
+RANK.AVG
+{:.caption}
 
 ### QUARTILE.EXC
 
@@ -1891,9 +1972,11 @@ QUARTILE.EXC(array, quart) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/15.png](Calculate-functions_images/Calculate-functions_img81.png)
+![](Calculate-functions_images/Calculate-functions_img81.png)
 
-_QUARTILE.EXC_
+QUARTILE.EXC
+{:.caption}
+
 
 ### QUARTILE.INC
 
@@ -1912,9 +1995,10 @@ QUARTILE.INC(array,quart) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/16.png](Calculate-functions_images/Calculate-functions_img82.png)
+![](Calculate-functions_images/Calculate-functions_img82.png)
 
-_QUARTILE.INC_
+QUARTILE.INC
+{:.caption}
 
 ### NEGBINOM.DIST
 
@@ -1933,9 +2017,10 @@ NEGBINOM.DIST(F_number,S_number,S_probability,cumulative) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/39.png](Calculate-functions_images/Calculate-functions_img83.png)
+![](Calculate-functions_images/Calculate-functions_img83.png)
 
-_NEGBINOM.DIST_
+NEGBINOM.DIST
+{:.caption}
 
 ### POISSON.DIST
 
@@ -1957,9 +2042,10 @@ POISSON.DIST(x,mean,cumulative) where
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/17.png](Calculate-functions_images/Calculate-functions_img84.png)
+![](Calculate-functions_images/Calculate-functions_img84.png)
 
-_POISSON.DIST_
+POISSON.DIST
+{:.caption}
 
 ### ZTEST
 
@@ -1977,9 +2063,10 @@ ZTEST(a1,T_value,sigma) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/18.png](Calculate-functions_images/Calculate-functions_img85.png)
+![](Calculate-functions_images/Calculate-functions_img85.png)
 
-_ZTEST_
+ZTEST
+{:.caption}
 
 ### RANK.EQ
 
@@ -1996,9 +2083,10 @@ RANK.EQ( number, ref ) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/42.png](Calculate-functions_images/Calculate-functions_img86.png)
+![](Calculate-functions_images/Calculate-functions_img86.png)
 
-_RANK.EQ_
+RANK.EQ
+{:.caption}
 
 ### CHIDIST
 
@@ -2019,9 +2107,10 @@ CHIDIST(x, degFreedom) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/19.png](Calculate-functions_images/Calculate-functions_img87.png)
+![](Calculate-functions_images/Calculate-functions_img87.png)
 
-_CHIDIST_
+CHIDIST
+{:.caption}
 
 ## Engineering Functions
 
@@ -2046,9 +2135,10 @@ DEC2BIN(num,places) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/20.png](Calculate-functions_images/Calculate-functions_img88.png)
+![](Calculate-functions_images/Calculate-functions_img88.png)
 
-_DEC2BIN_
+DEC2BIN
+{:.caption}
 
 ### DEC2OCT
 
@@ -2071,9 +2161,10 @@ DEC2OCT(num, places) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/21.png](Calculate-functions_images/Calculate-functions_img89.png)
+![](Calculate-functions_images/Calculate-functions_img89.png)
 
-_DEC2OCT_
+DEC2OCT
+{:.caption}
 
 ### DEC2HEX
 
@@ -2094,9 +2185,10 @@ DEC2HEX(num, places ) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/22.png](Calculate-functions_images/Calculate-functions_img90.png)
+![](Calculate-functions_images/Calculate-functions_img90.png)
 
-_DEC2HEX_
+DEC2HEX
+{:.caption}
 
 ### BIN2DEC
 
@@ -2114,9 +2206,10 @@ BIN2DEC(num) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/23.png](Calculate-functions_images/Calculate-functions_img91.png)
+![](Calculate-functions_images/Calculate-functions_img91.png)
 
-_BIN2DEC_
+BIN2DEC
+{:.caption}
 
 ### BIN2OCT
 
@@ -2133,9 +2226,10 @@ BIN2OCT(num, places) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/24.png](Calculate-functions_images/Calculate-functions_img92.png)
+![](Calculate-functions_images/Calculate-functions_img92.png)
 
-_BIN2OCT_
+BIN2OCT
+{:.caption}
 
 ### BIN2HEX
 
@@ -2158,9 +2252,10 @@ BIN2HEX(num places) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/25.png](Calculate-functions_images/Calculate-functions_img93.png)
+![](Calculate-functions_images/Calculate-functions_img93.png)
 
-_BIN2HEX_
+BIN2HEX
+{:.caption}
 
 ### HEX2BIN
 
@@ -2183,9 +2278,10 @@ HEX2BIN(num, places ) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/5.7.png](Calculate-functions_images/Calculate-functions_img94.png)
+![](Calculate-functions_images/Calculate-functions_img94.png)
 
-_HEX2BIN_
+HEX2BIN
+{:.caption}
 
 ### HEX2OCT
 
@@ -2208,9 +2304,10 @@ HEX2OCT(num, places) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/26.png](Calculate-functions_images/Calculate-functions_img95.png)
+![](Calculate-functions_images/Calculate-functions_img95.png)
 
-_HEX2OCT_
+HEX2OCT
+{:.caption}
 
 ### HEX2DEC
 
@@ -2228,9 +2325,10 @@ HEX2DEC(num) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/27.png](Calculate-functions_images/Calculate-functions_img96.png)
+![](Calculate-functions_images/Calculate-functions_img96.png)
 
-_HEX2DEC_
+HEX2DEC
+{:.caption}
 
 ### OCT2BIN
 
@@ -2253,9 +2351,10 @@ OCT2BIN(nuM, places ) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/28.png](Calculate-functions_images/Calculate-functions_img97.png)
+![](Calculate-functions_images/Calculate-functions_img97.png)
 
-_OCT2BIN_
+OCT2BIN
+{:.caption}
 
 ### OCT2HEX
 
@@ -2278,9 +2377,10 @@ OCT2HEX(num, places) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/29.png](Calculate-functions_images/Calculate-functions_img98.png)
+![](Calculate-functions_images/Calculate-functions_img98.png)
 
-_OCT2HEX_
+OCT2HEX
+{:.caption}
 
 ### OCT2DEC
 
@@ -2298,9 +2398,10 @@ OCT2DEC(number) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/30.png](Calculate-functions_images/Calculate-functions_img99.png)
+![](Calculate-functions_images/Calculate-functions_img99.png)
 
-_OCT2DEC_
+OCT2DEC
+{:.caption}
 
 ### IMABS
 
@@ -2318,9 +2419,10 @@ IMABS(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/31.png](Calculate-functions_images/Calculate-functions_img100.png)
+![](Calculate-functions_images/Calculate-functions_img100.png)
 
-_IMABS_
+IMABS
+{:.caption}
 
 ### IMAGINARY
 
@@ -2338,9 +2440,10 @@ Remarks:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/32.png](Calculate-functions_images/Calculate-functions_img101.png)
+![](Calculate-functions_images/Calculate-functions_img101.png)
 
-_IMAGINARY_
+IMAGINARY
+{:.caption}
 
 ### IMREAL
 
@@ -2358,9 +2461,10 @@ IMREAL(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/33.png](Calculate-functions_images/Calculate-functions_img102.png)
+![](Calculate-functions_images/Calculate-functions_img102.png)
 
-_IMREAL_
+IMREAL
+{:.caption}
 
 ### COMPLEX
 
@@ -2382,9 +2486,10 @@ COMPLEX(num,inum, suffix ) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/34.png](Calculate-functions_images/Calculate-functions_img103.png)
+![](Calculate-functions_images/Calculate-functions_img103.png)
 
-_COMPLEX_
+COMPLEX
+{:.caption}
 
 ### IMSUM
 
@@ -2398,9 +2503,10 @@ IMSUM(inum1,inum2,...) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/35.png](Calculate-functions_images/Calculate-functions_img104.png)
+![](Calculate-functions_images/Calculate-functions_img104.png)
 
-_IMSUM_
+IMSUM
+{:.caption}
 
 ### IMSUB
 
@@ -2414,9 +2520,10 @@ IMSUB(inumber1,inumber2) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/5.18.png](Calculate-functions_images/Calculate-functions_img105.png)
+![](Calculate-functions_images/Calculate-functions_img105.png)
 
-_IMSUB_
+IMSUB
+{:.caption}
 
 ### IMPRODUCT
 
@@ -2435,7 +2542,8 @@ IMPRODUCT(inum1, inum2,... ) where:
 
 ![](Calculate-functions_images/Calculate-functions_img106.png)
 
-_IMPRODUCT_
+IMPRODUCT
+{:.caption}
 
 ### IMDIV
 
@@ -2452,9 +2560,10 @@ IMDIV(inum1, inum2) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/36.png](Calculate-functions_images/Calculate-functions_img107.png)
+![](Calculate-functions_images/Calculate-functions_img107.png)
 
-_IMDIV_
+IMDIV
+{:.caption}
 
 ### IMCONJUGATE
 
@@ -2468,9 +2577,10 @@ IMCONJUGATE(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/37.png](Calculate-functions_images/Calculate-functions_img108.png)
+![](Calculate-functions_images/Calculate-functions_img108.png)
 
-_IMCONJUGATE_
+IMCONJUGATE
+{:.caption}
 
 ### IMSQRT
 
@@ -2484,9 +2594,10 @@ IMSQRT(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/38.png](Calculate-functions_images/Calculate-functions_img109.png)
+![](Calculate-functions_images/Calculate-functions_img109.png)
 
-_IMSQRT_
+IMSQRT
+{:.caption}
 
 ### IMARGUMENT
 
@@ -2500,9 +2611,10 @@ IMARGUMENT(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/39.png](Calculate-functions_images/Calculate-functions_img110.png)
+![](Calculate-functions_images/Calculate-functions_img110.png)
 
-_IMARGUMENT_
+IMARGUMENT
+{:.caption}
 
 ### IMSIN
 
@@ -2518,7 +2630,8 @@ IMSIN(inum) where:
 
 ![](Calculate-functions_images/Calculate-functions_img111.png)
 
-_IMSIN_
+IMSIN
+{:.caption}
 
 ### IMCSC
 
@@ -2540,9 +2653,10 @@ IMCSC(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/40.png](Calculate-functions_images/Calculate-functions_img112.png)
+![](Calculate-functions_images/Calculate-functions_img112.png)
 
-_IMCSC_
+IMCSC
+{:.caption}
 
 ### IMCOS
 
@@ -2556,9 +2670,10 @@ IMCOS(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/41.png](Calculate-functions_images/Calculate-functions_img113.png)
+![](Calculate-functions_images/Calculate-functions_img113.png)
 
-_IMCOS_
+IMCOS
+{:.caption}
 
 ### IMSEC
 
@@ -2578,9 +2693,10 @@ IMSEC(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/42.png](Calculate-functions_images/Calculate-functions_img114.png)
+![](Calculate-functions_images/Calculate-functions_img114.png)
 
-_IMSEC_
+IMSEC
+{:.caption}
 
 ### IMTAN
 
@@ -2600,9 +2716,10 @@ IMTAN(inum) where
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/43.png](Calculate-functions_images/Calculate-functions_img115.png)
+![](Calculate-functions_images/Calculate-functions_img115.png)
 
-_IMTAN_
+IMTAN
+{:.caption}
 
 ### IMCOT
 
@@ -2622,9 +2739,10 @@ IMCOT(inum) where
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/44.png](Calculate-functions_images/Calculate-functions_img116.png)
+![](Calculate-functions_images/Calculate-functions_img116.png)
 
-_IMCOT_
+IMCOT
+{:.caption}
 
 ### IMSINH
 
@@ -2644,9 +2762,10 @@ IMSINH(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/45.png](Calculate-functions_images/Calculate-functions_img117.png)
+![](Calculate-functions_images/Calculate-functions_img117.png)
 
-_IMSINH_
+IMSINH
+{:.caption}
 
 ### IMCSCH
 
@@ -2666,9 +2785,10 @@ IMCSCH(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/46.png](Calculate-functions_images/Calculate-functions_img118.png)
+![](Calculate-functions_images/Calculate-functions_img118.png)
 
-_IMCSCH_
+IMCSCH
+{:.caption}
 
 ### IMCOSH
 
@@ -2688,9 +2808,10 @@ IMCOSH(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/47.png](Calculate-functions_images/Calculate-functions_img119.png)
+![](Calculate-functions_images/Calculate-functions_img119.png)
 
-_IMCOSH_
+IMCOSH
+{:.caption}
 
 ### IMSECH
 
@@ -2710,9 +2831,10 @@ IMSECH(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/48.png](Calculate-functions_images/Calculate-functions_img120.png)
+![](Calculate-functions_images/Calculate-functions_img120.png)
 
-_IMSECH_
+IMSECH
+{:.caption}
 
 ### IMTANH
 
@@ -2732,9 +2854,10 @@ IMTANH(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/49.png](Calculate-functions_images/Calculate-functions_img121.png)
+![](Calculate-functions_images/Calculate-functions_img121.png)
 
-_IMTANH_
+IMTANH
+{:.caption}
 
 ### IMCOTH
 
@@ -2754,9 +2877,10 @@ IMCOTH(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/50.png](Calculate-functions_images/Calculate-functions_img122.png)
+![](Calculate-functions_images/Calculate-functions_img122.png)
 
-_IMCOTH_
+IMCOTH
+{:.caption}
 
 ### IMLOG10
 
@@ -2774,9 +2898,10 @@ IMLOG10(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/51.png](Calculate-functions_images/Calculate-functions_img123.png)
+![](Calculate-functions_images/Calculate-functions_img123.png)
 
-_IMLOG10_
+IMLOG10
+{:.caption}
 
 ### IMLOG2
 
@@ -2794,9 +2919,10 @@ IMLOG2(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/5.37.png](Calculate-functions_images/Calculate-functions_img124.png)
+![](Calculate-functions_images/Calculate-functions_img124.png)
 
-_IMLOG2_
+IMLOG2
+{:.caption}
 
 ### IMLN
 
@@ -2814,9 +2940,10 @@ IMLN(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/53.png](Calculate-functions_images/Calculate-functions_img125.png)
+![](Calculate-functions_images/Calculate-functions_img125.png)
 
-_IMLN_
+IMLN
+{:.caption}
 
 ### IMEXP
 
@@ -2834,9 +2961,10 @@ IMEXP(inum) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/54.png](Calculate-functions_images/Calculate-functions_img126.png)
+![](Calculate-functions_images/Calculate-functions_img126.png)
 
-_IMEXP_
+IMEXP
+{:.caption}
 
 ### IMPOWER
 
@@ -2859,9 +2987,10 @@ IMPOWER(inum,num) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/55.png](Calculate-functions_images/Calculate-functions_img127.png)
+![](Calculate-functions_images/Calculate-functions_img127.png)
 
-_IMPOWER_
+IMPOWER
+{:.caption}
 
 ### GESTEP
 
@@ -2882,9 +3011,10 @@ GESTEP(num, step ) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/56.png](Calculate-functions_images/Calculate-functions_img128.png)
+![](Calculate-functions_images/Calculate-functions_img128.png)
 
-_GESTEP_
+GESTEP
+{:.caption}
 
 ### DELTA
 
@@ -2901,9 +3031,10 @@ DELTA(num1,num2) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/57.png](Calculate-functions_images/Calculate-functions_img129.png)
+![](Calculate-functions_images/Calculate-functions_img129.png)
 
-_DELTA_
+DELTA
+{:.caption}
 
 ### BITAND
 
@@ -2923,9 +3054,10 @@ BITAND(num1,num2) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/58.png](Calculate-functions_images/Calculate-functions_img130.png)
+![](Calculate-functions_images/Calculate-functions_img130.png)
 
-_BITAND_
+BITAND
+{:.caption}
 
 ### BITOR
 
@@ -2947,7 +3079,9 @@ BITOR(num1, num2) where:
 
 ![](Calculate-functions_images/Calculate-functions_img131.png)
 
-_BITOR_
+BITOR
+{:.caption}
+
 
 ### BITXOR
 
@@ -2967,9 +3101,10 @@ BITXOR(num1,num2b) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/60.png](Calculate-functions_images/Calculate-functions_img132.png)
+![](Calculate-functions_images/Calculate-functions_img132.png)
 
-_BITXOR_
+BITXOR
+{:.caption}
 
 ### BITLSHIFT
 
@@ -2992,9 +3127,10 @@ BITLSHIFT(num1,num2) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/61.png](Calculate-functions_images/Calculate-functions_img133.png)
+![](Calculate-functions_images/Calculate-functions_img133.png)
 
-_BITLSHIFT_
+BITLSHIFT
+{:.caption}
 
 ### BITRSHIFT
 
@@ -3017,9 +3153,10 @@ BITRSHIFT(num1,num2) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/62.png](Calculate-functions_images/Calculate-functions_img134.png)
+![](Calculate-functions_images/Calculate-functions_img134.png)
 
-_BITRSHIFT_
+BITRSHIFT
+{:.caption}
 
 ### ERF
 
@@ -3042,9 +3179,10 @@ ERF(lowerLimit, upperLimit ) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/63.png](Calculate-functions_images/Calculate-functions_img135.png)
+![](Calculate-functions_images/Calculate-functions_img135.png)
 
-_ERF_
+ERF
+{:.caption}
 
 ### ERF.PRECISE
 
@@ -3062,9 +3200,10 @@ ERF.PRECISE(a) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/64.png](Calculate-functions_images/Calculate-functions_img136.png)
+![](Calculate-functions_images/Calculate-functions_img136.png)
 
-_ERF.PRECISE_
+ERF.PRECISE
+{:.caption}
 
 ### BESSELI
 
@@ -3087,9 +3226,10 @@ BESSELI(a,n) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/65.png](Calculate-functions_images/Calculate-functions_img137.png)
+![](Calculate-functions_images/Calculate-functions_img137.png)
 
-_BESSELI_
+BESSELI
+{:.caption}
 
 ### BESSELJ
 
@@ -3112,9 +3252,10 @@ BESSELJ(a,n) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/66.png](Calculate-functions_images/Calculate-functions_img138.png)
+![](Calculate-functions_images/Calculate-functions_img138.png)
 
-_BESSELJ_
+BESSELJ
+{:.caption}
 
 ### BESSELY
 
@@ -3137,9 +3278,10 @@ BESSELY(a,n) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/67.png](Calculate-functions_images/Calculate-functions_img139.png)
+![](Calculate-functions_images/Calculate-functions_img139.png)
 
-_BESSELY_
+BESSELY
+{:.caption}
 
 ### BESSELK
 
@@ -3162,10 +3304,11 @@ BESSELK(x,n) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/68.png](Calculate-functions_images/Calculate-functions_img140.png)
+![](Calculate-functions_images/Calculate-functions_img140.png)
 
 
-_BESSELK_
+BESSELK
+{:.caption}
 
 
 ### CONVERT
@@ -3190,9 +3333,10 @@ CONVERT(num,fromUnit,toUnit) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/69.png](Calculate-functions_images/Calculate-functions_img141.png)
+![](Calculate-functions_images/Calculate-functions_img141.png)
 
-_CONVERT_
+CONVERT
+{:.caption}
 
 ## Web Functions
 
@@ -3208,9 +3352,10 @@ ENCODEURL(name) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/6.1.png](Calculate-functions_images/Calculate-functions_img142.png)
+![](Calculate-functions_images/Calculate-functions_img142.png)
 
-_ENCODEURL_
+ENCODEURL
+{:.caption}
 
 ### FILTERXML
 
@@ -3231,9 +3376,10 @@ FILTERXML(xml, xpath) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/6.2.png](Calculate-functions_images/Calculate-functions_img143.png)
+![](Calculate-functions_images/Calculate-functions_img143.png)
 
-_FILTERXML_
+FILTERXML
+{:.caption}
 
 ### WEBSERVICE
 
@@ -3251,9 +3397,10 @@ WEBSERVICE(url) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/6.3.png](Calculate-functions_images/Calculate-functions_img144.png)
+![](Calculate-functions_images/Calculate-functions_img144.png)
 
-_WEBSERVICE_
+WEBSERVICE
+{:.caption}
 
 ## Text Functions
 
@@ -3269,9 +3416,10 @@ ASC(text) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/70.png](Calculate-functions_images/Calculate-functions_img145.png)
+![](Calculate-functions_images/Calculate-functions_img145.png)
 
-_ASC_
+ASC
+{:.caption}
 
 ### CODE
 
@@ -3285,9 +3433,10 @@ CODE(name) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/71.png](Calculate-functions_images/Calculate-functions_img146.png)
+![](Calculate-functions_images/Calculate-functions_img146.png)
 
-_CODE_
+CODE
+{:.caption}
 
 ### FINDB
 
@@ -3309,9 +3458,10 @@ FINDB(text1,text2, num) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/72.png](Calculate-functions_images/Calculate-functions_img147.png)
+![](Calculate-functions_images/Calculate-functions_img147.png)
 
-_FINDB_
+FINDB
+{:.caption}
 
 ### JIS
 
@@ -3325,9 +3475,10 @@ The JIS function changes single-byte English letters or katakana within a charac
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/7.4.png](Calculate-functions_images/Calculate-functions_img148.png)
+![](Calculate-functions_images/Calculate-functions_img148.png)
 
-_JIS_
+JIS
+{:.caption}
 
 ### LEFTB
 
@@ -3342,9 +3493,10 @@ The LEFTB function returns the first character or characters in a text string, b
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/7.5.png](Calculate-functions_images/Calculate-functions_img149.png)
+![](Calculate-functions_images/Calculate-functions_img149.png)
 
-_LEFTB_
+LEFTB
+{:.caption}
 
 ### LENB
 
@@ -3358,9 +3510,10 @@ The LENB function returns the number of bytes used to represent the characters i
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/74.png](Calculate-functions_images/Calculate-functions_img150.png)
+![](Calculate-functions_images/Calculate-functions_img150.png)
 
-_LENB_
+LENB
+{:.caption}
 
 ### MIDB
 
@@ -3378,9 +3531,10 @@ The MIDB function returns a specific number of characters from a text string, st
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/75.png](Calculate-functions_images/Calculate-functions_img151.png)
+![](Calculate-functions_images/Calculate-functions_img151.png)
 
-_MIDB_
+MIDB
+{:.caption}
 
 ### NUMBERVALUE
 
@@ -3398,9 +3552,10 @@ NUMBERVALUE(text) where,
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/76.png](Calculate-functions_images/Calculate-functions_img152.png)
+![](Calculate-functions_images/Calculate-functions_img152.png)
 
-_NUMBERVALUE_
+NUMBERVALUE
+{:.caption}
 
 ### PROPER
 
@@ -3414,9 +3569,10 @@ The PROPER function changes the first letter of text into a capital letter and f
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/77.png](Calculate-functions_images/Calculate-functions_img153.png)
+![](Calculate-functions_images/Calculate-functions_img153.png)
 
-_PROPER_
+PROPER
+{:.caption}
 
 ### REPLACE
 
@@ -3435,9 +3591,10 @@ REPLACE(oldText, startNum, numChars, newText) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/78.png](Calculate-functions_images/Calculate-functions_img154.png)
+![](Calculate-functions_images/Calculate-functions_img154.png)
 
-_REPLACE_
+REPLACE
+{:.caption}
 
 ### REPLACEB
 
@@ -3456,9 +3613,10 @@ REPLACEB(oldText, startNum, numBytes, newText) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/79.png](Calculate-functions_images/Calculate-functions_img155.png)
+![](Calculate-functions_images/Calculate-functions_img155.png)
 
-_REPLACEB_
+REPLACEB
+{:.caption}
 
 ### REPT
 
@@ -3479,9 +3637,10 @@ Blank text - occurs if number is zero.
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/80.png](Calculate-functions_images/Calculate-functions_img156.png)
+![](Calculate-functions_images/Calculate-functions_img156.png)
 
-_REPT_
+REPT
+{:.caption}
 
 ### RIGHTB
 
@@ -3498,9 +3657,10 @@ RIGHTB(string, num) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/7.13.png](Calculate-functions_images/Calculate-functions_img157.png)
+![](Calculate-functions_images/Calculate-functions_img157.png)
 
-_RIGHTB_
+RIGHTB
+{:.caption}
 
 ### SEARCHB
 
@@ -3524,7 +3684,8 @@ SEARCHB(findText,withinText, startNum ) where:
 
 ![](Calculate-functions_images/Calculate-functions_img158.png)
 
-_SEARCHB_
+SEARCHB
+{:.caption}
 
 ### UNICHAR
 
@@ -3546,7 +3707,8 @@ UNICHAR(num) where:
 
 ![](Calculate-functions_images/Calculate-functions_img159.png)
 
-_UNICHAR_
+UNICHAR
+{:.caption}
 
 ### UNICODE
 
@@ -3566,7 +3728,8 @@ UNICODE(text) where:
 
 ![](Calculate-functions_images/Calculate-functions_img160.png)
 
-_UNICODE_
+UNICODE
+{:.caption}
 
 ## Lookup and Reference Functions
 
@@ -3582,9 +3745,11 @@ AREAS(reference) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/81.png](Calculate-functions_images/Calculate-functions_img161.png)
+![](Calculate-functions_images/Calculate-functions_img161.png)
 
-_AREAS_
+AREAS
+{:.caption}
+
 
 ### COLUMNS
 
@@ -3598,9 +3763,10 @@ COLUMNS( array ) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/82.png](Calculate-functions_images/Calculate-functions_img162.png)
+![](Calculate-functions_images/Calculate-functions_img162.png)
 
-_COLUMNS_
+COLUMNS
+{:.caption}
 
 ### HYPERLINK
 
@@ -3617,9 +3783,10 @@ HYPERLINK( linkLocation, friendlyName ) where
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/8.3.png](Calculate-functions_images/Calculate-functions_img163.png)
+![](Calculate-functions_images/Calculate-functions_img163.png)
 
-_HYPERLINK_
+HYPERLINK
+{:.caption}
 
 ### ROW
 
@@ -3631,9 +3798,10 @@ ROW( [reference] ) where,
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/83.png](Calculate-functions_images/Calculate-functions_img164.png)
+![](Calculate-functions_images/Calculate-functions_img164.png)
 
-_ROW_
+ROW
+{:.caption}
 
 ### ROWS
 
@@ -3649,7 +3817,8 @@ ROWS( array ) where:
 
 ![](Calculate-functions_images/Calculate-functions_img165.png)
 
-_ROWS_
+ROWS
+{:.caption}
 
 ### SHEET
 
@@ -3671,9 +3840,10 @@ SHEET(value) where:
 
 
 
-![C:/Users/ApoorvahR/Desktop/8.6.png](Calculate-functions_images/Calculate-functions_img166.png)
+![](Calculate-functions_images/Calculate-functions_img166.png)
 
-_SHEET_
+SHEET
+{:.caption}
 
 ### SHEETS
 
@@ -3691,9 +3861,10 @@ SHEETS(reference) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/8.7.png](Calculate-functions_images/Calculate-functions_img167.png)
+![](Calculate-functions_images/Calculate-functions_img167.png)
 
-_SHEETS_
+SHEETS
+{:.caption}
 
 ### TRANSPOSE
 
@@ -3707,9 +3878,10 @@ TRANSPOSE( array ) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/93.png](Calculate-functions_images/Calculate-functions_img168.png)
+![](Calculate-functions_images/Calculate-functions_img168.png)
 
-_TRANSPOSE_
+TRANSPOSE
+{:.caption}
 
 ### FORMULATEXT
 
@@ -3737,9 +3909,10 @@ FORMULATEXT(reference) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/8.9.png](Calculate-functions_images/Calculate-functions_img169.png)
+![](Calculate-functions_images/Calculate-functions_img169.png)
 
-_FORMULATEXT_
+FORMULATEXT
+{:.caption}
 
 ## Information Functions
 
@@ -3760,7 +3933,8 @@ CELL( infoType, reference ) where
 
 ![](Calculate-functions_images/Calculate-functions_img170.png)
 
-_CELL_
+CELL
+{:.caption}
 
 ### INFO
 
@@ -3774,9 +3948,10 @@ The INFO function returns a text string containing information about the current
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/85.png](Calculate-functions_images/Calculate-functions_img171.png)
+![](Calculate-functions_images/Calculate-functions_img171.png)
 
-_INFO_
+INFO
+{:.caption}
 
 ### TYPE
 
@@ -3792,9 +3967,10 @@ TYPE( value ) where:
 
 
 
-![C:/Users/ApoorvahR/Desktop/86.png](Calculate-functions_images/Calculate-functions_img172.png)
+![](Calculate-functions_images/Calculate-functions_img172.png)
 
-_TYPE_
+TYPE
+{:.caption}
 
 ### ISFORMULA
 
@@ -3816,7 +3992,8 @@ ISFORMULA(reference) where:
 
 ![](Calculate-functions_images/Calculate-functions_img173.png)
 
-_ISFORMULA_
+ISFORMULA
+{:.caption}
 
 ## Date and Time Functions
 
@@ -3841,9 +4018,10 @@ EDATE( startDate, Months ) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/10.1.png](Calculate-functions_images/Calculate-functions_img174.png)
+![](Calculate-functions_images/Calculate-functions_img174.png)
 
-_EDATE_
+EDATE
+{:.caption}
 
 ### EOMONTH
 
@@ -3868,9 +4046,10 @@ EOMONTH(startDate, Months) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/10.2.png](Calculate-functions_images/Calculate-functions_img175.png)
+![](Calculate-functions_images/Calculate-functions_img175.png)
 
-_EOMONTH_
+EOMONTH
+{:.caption}
 
 ### NETWORKDAYS.INTL
 
@@ -3891,9 +4070,10 @@ NETWORKDAYS.INTL(startDate, endDate) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/10.3.png](Calculate-functions_images/Calculate-functions_img176.png)
+![](Calculate-functions_images/Calculate-functions_img176.png)
 
-_NETWORKDAYS.INTL_
+NETWORKDAYS.INTL
+{:.caption}
 
 ### WEEKNUM
 
@@ -3918,9 +4098,10 @@ WEEKNUM( serialNum, [returnType] ) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/87.png](Calculate-functions_images/Calculate-functions_img177.png)
+![](Calculate-functions_images/Calculate-functions_img177.png)
 
-_WEEKNUM_
+WEEKNUM
+{:.caption}
 
 ### WORKDAY.INTL
 
@@ -3949,9 +4130,10 @@ WORKDAY.INTL( startDate, days, [weekend], [holidays] ) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/88.png](Calculate-functions_images/Calculate-functions_img178.png)
+![](Calculate-functions_images/Calculate-functions_img178.png)
 
-_WORKDAY.INTL_
+WORKDAY.INTL
+{:.caption}
 
 ### YEARFRAC
 
@@ -3975,9 +4157,10 @@ YEARFRAC( startDate, endDate, [basis] ) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/89.png](Calculate-functions_images/Calculate-functions_img179.png)
+![](Calculate-functions_images/Calculate-functions_img179.png)
 
-_YEARFRAC_
+YEARFRAC
+{:.caption}
 
 ### WORKDAY
 
@@ -4001,9 +4184,10 @@ WORKDAY(startDate, Days, [holidays] ) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/90.png](Calculate-functions_images/Calculate-functions_img180.png)
+![](Calculate-functions_images/Calculate-functions_img180.png)
 
-_WORKDAY_
+WORKDAY
+{:.caption}
 
 ### ISOWEEKNUM
 
@@ -4023,9 +4207,10 @@ ISOWEEKNUM( DateTime) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/91.png](Calculate-functions_images/Calculate-functions_img181.png)
+![](Calculate-functions_images/Calculate-functions_img181.png)
 
-_ISOWEEKNUM_
+ISOWEEKNUM
+{:.caption}
 
 ###  DAYS
 
@@ -4039,7 +4224,8 @@ DAYS(endDate, startDate) where:
 
 #### Example:
 
-![C:/Users/ApoorvahR/Desktop/94.png](Calculate-functions_images/Calculate-functions_img182.png)
+![](Calculate-functions_images/Calculate-functions_img182.png)
 
-_DAYS_
+DAYS
+{:.caption}
 

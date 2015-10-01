@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-an-Excel-Spreadsheet
+title: Working with an Excel Spreadsheet | Calculate | wpf | Syncfusion
 description: working with an excel spreadsheet
 platform: wpf
 control: Calculate

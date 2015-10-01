@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orientation
+title: Orientation | SfRangeSlider | wpf | Syncfusion
 description: orientation  
 platform: wpf
 control: SfRangeSlider 

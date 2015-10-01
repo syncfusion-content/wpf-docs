@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout-Related-Features
+title: Layout Related Features | TabSplitter | wpf | Syncfusion
 description: layout related features
 platform: wpf
 control: TabSplitter
@@ -15,7 +15,7 @@ This section illustrates the following Layout-related feature of TabSplitter con
 
 The appearance of the TabSplitter control is customized by using the appearance properties available in the control. You can set the color for the MouseOver Background, MouseOver Foreground, Selected Foreground and Selected Background of the TabSplitter control. Here is the code snippet.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -94,7 +94,7 @@ tabsplitter.MouseOverForeground = Brushes.Yellow;
 
 {% endhighlight %}
 
-
+{%endtabs%}
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img1.png)
 

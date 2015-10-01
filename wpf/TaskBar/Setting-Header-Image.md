@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-Header-Image
+title: Setting Header Image | TaskBar | wpf | Syncfusion
 description: setting header image
 platform: wpf
 control: TaskBar
@@ -62,8 +62,9 @@ You can set a custom header image for the TaskBarItem. Use the following code sn
 
 
 
-
-See Also
+{%seealso%}
 
 Group Padding for the TaskBar Item
+
+{%endseealso%}
 

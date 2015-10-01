@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Context-View
+title: Context View | Diagram | wpf | Syncfusion
 description: context view
 platform: wpf
 control: Diagram
@@ -17,9 +17,9 @@ A context view is a small view of an entire diagram with a new arrangement, wher
 
 ## Tables for Properties and Methods
 
- Properties
+### Properties
 
-_Properties Table_
+
 
 <table>
 <tr>
@@ -55,9 +55,9 @@ DiagramControl</td></tr>
 </table>
 
 
-Methods
+### Methods
 
-_Methods Table_
+
 
 <table>
 <tr>
@@ -87,9 +87,11 @@ ContextViewManager is a class that helps to communicate between a source diagram
 * Source—it is a Diagram control in which selection changes will be monitored.
 * Target—it is a Diagram control to which a new diagram will be created based on the selected node and the context view chosen.  
 
-Steps to create ContextViewManager
+### Steps to create ContextViewManager
 
 1. Create a Diagram control to be used as a target to show the context view of another Diagram control.
+
+   {%highlight html%}
 
 
 			<syncfusion:DiagramControl  Height="235" Width="250"  Name="targetDiagramControl">
@@ -107,15 +109,18 @@ Steps to create ContextViewManager
 			</syncfusion:DiagramControl.View>
 
 			</syncfusion:DiagramControl>
+			
+		{%endhighlight%}
 
 
 
 
 
 2. Create another Diagram control to be used as a source.
+
 3. Create a ContextViewManager instance to synchronize the source and target diagrams.
 
-
+    {%highlight c#%}
 
 
 			// Create ContextViewManager to attach the source and target diagrams.
@@ -140,9 +145,10 @@ Steps to create ContextViewManager
 
 			ContextView.Layout = layout;
 
+        {%endhighlight%}
 
-
-
+        
+		{%highlight vbnet%}
 
 
 
@@ -168,5 +174,5 @@ Steps to create ContextViewManager
 
 			ContextView.Layout = layout
 
-
-   {:.prettyprint}
+         {%endhighlight%}
+   

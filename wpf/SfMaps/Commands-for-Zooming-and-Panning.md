@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Commands-for-Zooming-and-Panning
+title: Commands for Zooming and Panning | SfMap | wpf | Syncfusion
 description: commands for zooming and panning
 platform: wpf
 control: SfMap

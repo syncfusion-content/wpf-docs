@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | DomainUpDown | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: DomainUpDown
@@ -13,6 +13,8 @@ documentation: ug
  Assembly:  Syncfusion.SfInput.WPF (in Syncfusion.SfInput.WPF.dll)
 
 The following code sample shows how to create the DomainUpDown from code-behind and XAML:
+
+{%tabs%}
 
 {%highlight xml%}
 
@@ -50,6 +52,8 @@ SfDomainUpDown domainUpDown = new SfDomainUpDown();
 
 
 {%endhighlight%}
+
+{%endtabs%}
 
 
 

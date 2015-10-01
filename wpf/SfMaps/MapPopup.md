@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MapPopup
+title: MapPopup | SfMap | wpf | Syncfusion
 description: mappopup
 platform: wpf
 control: SfMap

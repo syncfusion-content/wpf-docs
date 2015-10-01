@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maximum-and-Minimum-Value
+title: Maximum and Minimum Value | CurrencyTextBox | wpf | Syncfusion
 description: maximum and minimum value
 platform: wpf
 control: CurrencyTextBox 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles-and-Templates
+title: Styles and Templates | SfDataPagerControl | wpf | Syncfusion
 description: styles and templates
 platform: wpf
 control: SfDataPager Control

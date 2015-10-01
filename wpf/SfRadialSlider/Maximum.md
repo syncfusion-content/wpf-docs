@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Maximum
+title: Maximum | SfRadialSlider  | wpf | Syncfusion
 description: maximum 
 platform: wpf
-control: Radial Slider 
+control: SfRadialSlider 
 documentation: ug
 ---
 

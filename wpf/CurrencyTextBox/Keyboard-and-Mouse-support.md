@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-and-Mouse-support
+title: Keyboard and Mouse support | CurrencyTextBox | wpf | Syncfusion
 description: keyboard and mouse support
 platform: wpf
 control: CurrencyTextBox 

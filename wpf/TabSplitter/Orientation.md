@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orientation
+title: Orientation | TabSplitter | wpf | Syncfusion
 description: orientation
 platform: wpf
 control: TabSplitter
@@ -18,7 +18,7 @@ TabSplitter Items are placed horizontally or vertically by using the Orientation
 
 Set the orientation using the code given below:
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -79,7 +79,7 @@ Set the orientation using the code given below:
 tabSplitterItem1.Orientation = Orientation.Vertical;
 {% endhighlight %}
 
-
+{%endtabs%}
 
 
 ![](Orientation_images/Orientation_img1.png)

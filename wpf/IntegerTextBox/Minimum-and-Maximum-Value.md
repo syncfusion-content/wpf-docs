@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Minimum-and-Maximum-Value
+title: Minimum and Maximum Value | IntegerTextBox | wpf | Syncfusion
 description: minimum and maximum value
 platform: wpf
 control: IntegerTextBox 
@@ -23,6 +23,8 @@ You can validate the MinValue in two ways:
 
 * OnKeyPress – MinValue of the IntegerTextBox is validated on the key press.
 * OnLostFocus – MinValue of the IntegerTextBox is validated on the lost focus only.
+
+
 ## MaxValidation
 
 
@@ -30,26 +32,28 @@ You can validate the MaxValue in two ways:
 
 * OnKeyPress – MaxValue of the IntegerTextBox is validated on the key press.
 * OnLostFocus – MaxValue of the IntegerTextBox is validated on the lost focus only.
+
+
 ## MinValueOnExceedMinDigit
 
 
 If this property is set to true, then when you enter a value less than the MinValue then it will automatically assign the MinValue to the Value property. Otherwise it will not allow the key press.
 
-Note: This will be enabled only when the MinValidation is set to OnKeyPress.
+N> This will be enabled only when the MinValidation is set to OnKeyPress.
 
 ## MaxValueOnExceedMaxDigit
 
 If this property is set to true, then when you enter a value greater than the MaxValue then it will automatically assign the MaxValue to the Value property. Otherwise it will not allow the key press.
 
-Note: This will be enabled only when the MaxValidation is set to OnKeyPress.
+N> This will be enabled only when the MaxValidation is set to OnKeyPress.
 
-
+{%tabs%}
 
 {% highlight xml %} <syncfusion:IntegerTextBox x:Name="integerTextBox" Height="25" Width="150"                             MinValue="-999" MaxValue="999"                             MinValidation="OnKeyPress" MaxValidation="OnLostFocus"                            MinValueOnExceedMinDigit="True"                             MaxValueOnExceedMaxDigit="True"/>{% endhighlight %}
 
 {% highlight C# %} Syncfusion.Windows.Shared.IntegerTextBox integerTextBox = new Syncfusion.Windows.Shared.IntegerTextBox();integerTextBox.Width = 150;integerTextBox.Height = 25;integerTextBox.MinValue = -999;integerTextBox.MaxValue = 999;integerTextBox.MinValidation = Syncfusion.Windows.Shared.MinValidation.OnKeyPress;integerTextBox.MaxValidation = Syncfusion.Windows.Shared.MaxValidation.OnLostFocus;integerTextBox.MinValueOnExceedMinDigit = true;integerTextBox.MaxValueOnExceedMaxDigit = true;{% endhighlight %}
 
-
+{%endtabs%}
 
 Initially there is no value assigned to the IntegerTextBox. So it displays the default value as zero.
 
@@ -69,9 +73,11 @@ MinValidation is set to OnKeyPress, so you cannot enter a value less than the Mi
 
 
 
-See Also
+{%seealso%}
 
 Nullvalue support
 
 Culture and NumberFormats
+
+{%endseealso%}
 

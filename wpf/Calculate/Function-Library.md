@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Function-Library
+title: Function Library | Calculate | wpf | Syncfusion
 description: function library
 platform: wpf
 control: Calculate
@@ -393,7 +393,7 @@ Here is a list of the Function Library entries included with Essential Calculate
 
 This section lists the logical functions included with Essential calculate in the below table.
 
-_Logical functions_
+
 
 <table>
 <tr>
@@ -446,7 +446,7 @@ Returns TRUE if any of the conditions are TRUE. Otherwise, it returns FALSE.</td
 
 This section lists the Text functions included with Essential calculate in the below table.
 
-_Text functions_
+
 
 <table>
 <tr>
@@ -487,7 +487,7 @@ Returns a text segment of a character string.</td></tr>
 
 This section lists the Date and Time functions included with Essential calculate in the below table.
 
-_Date and Time functions_
+
 
 <table>
 <tr>
@@ -556,7 +556,7 @@ Returns the year from 1900 to 9999.</td></tr>
 
 This section lists the LookUp and Information functions included with Essential calculate in the below table.
 
-_LookUp and Information functions_
+
 
 <table>
 <tr>
@@ -585,7 +585,7 @@ Returns True if cell holds a number.</td></tr>
 
 This section lists the Financial functions included with Essential calculate in the below table.
 
-_Financial functions_
+
 
 <table>
 <tr>
@@ -662,7 +662,7 @@ Returns the depreciation using double declining balance calculation.</td></tr>
 
 This section lists the Math and Trig functions included with Essential calculate in the below table.
 
-_Math and Trig functions_
+
 
 <table>
 <tr>
@@ -1650,7 +1650,7 @@ The ISREF function returns the logical value TRUE if the given value is a refere
 
 =ISREF(given_value)
 
-given_value:Required. The value that is to be tested. The value argument can be a blank (empty cell), error, logical value, text, number, or reference value, or a name referring to any of these.
+given value:Required. The value that is to be tested. The value argument can be a blank (empty cell), error, logical value, text, number, or reference value, or a name referring to any of these.
 
 #### Example
 
@@ -2062,7 +2062,7 @@ RESULT</th></tr>
 
 This section lists the Statistic functions included with Essential calculate in the below table.
 
-_Statistic functions_
+
 
 <table>
 <tr>

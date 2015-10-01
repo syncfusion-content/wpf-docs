@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blendability-support
+title: Blendability support | Carousel | wpf | Syncfusion
 description: blendability support
 platform: wpf
 control: Carousel

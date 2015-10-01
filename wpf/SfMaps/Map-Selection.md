@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Map-Selection
+title: Map Selection | SfMap | wpf | Syncfusion
 description: map selection
 platform: wpf
 control: SfMap

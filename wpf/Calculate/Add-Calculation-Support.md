@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add-Calculation-Support
+title: Add Calculation Support | Calculate | wpf | Syncfusion
 description: add calculation support
 platform: wpf
 control: Calculate

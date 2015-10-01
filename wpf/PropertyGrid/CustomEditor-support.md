@@ -17,14 +17,82 @@ Using CustomEditorCollection property user can add custom editors to PropertyGri
 
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %} <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"><br>        <Button Height="25" Width="100" VerticalAlignment="Top" x:Name="Btn"/><br>        <syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50" Width="500" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center"/><br>    </Grid>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight c# %}/// <summary><br>    /// Interaction logic for MainWindow.xaml.<br>    /// </summary><br>    public partial class MainWindow : Window<br>    {<br>        /// <summary><br>        /// Initializes a new instance of the <see cref="MainWindow"/> class.<br>        /// </summary><br>        public MainWindow()<br>        {<br>            InitializeComponent();<br>            // Creating CustomEditor for Background.<br>            CustomEditor editor = new CustomEditor();<br>            editor.Properties.Add("Background");<br>            editor.Editor = new ColorEditEditor();<br>            this.propertyGrid.CustomEditorCollection.Add(editor);<br>        }<br>    }<br><br>    public class ColorEditEditor : ITypeEditor<br>    {<br>        public void Attach(PropertyViewItem property, PropertyItem info)<br>        {<br>            if (info.CanWrite)<br>            {<br>                var binding = new Binding("Value")<br>                {<br>                    Mode = BindingMode.TwoWay,<br>                    Source = info,<br>                    ValidatesOnExceptions = true,<br>                    ValidatesOnDataErrors = true<br>                };<br>                BindingOperations.SetBinding(colorEdit, ColorEdit.BrushProperty, binding);<br>            }<br>            else<br>            {<br>                var binding = new Binding("Value")<br>                {<br>                    Mode = BindingMode.OneWayToSource,<br>                    Source = info,<br>                    ValidatesOnExceptions = true,<br>                    ValidatesOnDataErrors = true<br>                };<br>                BindingOperations.SetBinding(colorEdit, ColorEdit.BrushProperty, binding);<br>            }<br>        }<br><br>        public ColorEdit colorEdit;<br>        public object Create(System.Reflection.PropertyInfo PropertyInfo)<br>        {<br>            colorEdit = new ColorEdit();<br>            return colorEdit;<br>        }<br><br>        public void Detach(PropertyViewItem property)<br>        {<br>            throw new NotImplementedException();<br>        }<br>    }{% endhighlight %}</td></tr>
-</table>
+{% highlight xml %}
+ 
+<Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+    <br>
+    <Button Height="25" Width="100" VerticalAlignment="Top" x:Name="Btn" />
+    <br>
+    <syncfusion:PropertyGrid x:Name="propertyGrid" SelectedObject="{Binding ElementName=Btn}" Margin="50" Width="500" BorderBrush="Gray" BorderThickness="3" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    <br> </Grid>
+	
+	{% endhighlight %}
+
+{% highlight c# %}
+
+          
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml.
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainWindow"/> class.
+        /// </summary>
+        public MainWindow()
+        {
+            InitializeComponent();
+            // Creating CustomEditor for Background.
+            CustomEditor editor = new CustomEditor();
+            editor.Properties.Add("Background");
+            editor.Editor = new ColorEditEditor();
+            this.propertyGrid.CustomEditorCollection.Add(editor);
+        }
+    }
+ 
+    public class ColorEditEditor : ITypeEditor
+    {
+        public void Attach(PropertyViewItem property, PropertyItem info)
+        {
+            if (info.CanWrite)
+            {
+                var binding = new Binding("Value")
+                {
+                    Mode = BindingMode.TwoWay,
+                    Source = info,
+                    ValidatesOnExceptions = true,
+                    ValidatesOnDataErrors = true
+                };
+                BindingOperations.SetBinding(colorEdit, ColorEdit.BrushProperty, binding);
+            }
+            else
+            {
+                var binding = new Binding("Value")
+                {
+                    Mode = BindingMode.OneWayToSource,
+                    Source = info,
+                    ValidatesOnExceptions = true,
+                    ValidatesOnDataErrors = true
+                };
+                BindingOperations.SetBinding(colorEdit, ColorEdit.BrushProperty, binding);
+            }
+        }
+ 
+        public ColorEdit colorEdit;
+        public object Create(System.Reflection.PropertyInfo PropertyInfo)
+        {
+            colorEdit = new ColorEdit();
+            return colorEdit;
+        }
+ 
+        public void Detach(PropertyViewItem property)
+        {
+            throw new NotImplementedException();
+        }
+    }
+	
+{% endhighlight %}
+
 
 
 ![](CustomEditor-support_images/CustomEditor-support_img1.png)
@@ -33,7 +101,7 @@ Using CustomEditorCollection property user can add custom editors to PropertyGri
 
 
 
-Properties
+### Properties
 
 
 
@@ -57,7 +125,7 @@ CustomEditorCollection</td><td>
 </table>
 
 
-Sample Link
+### Sample Link
 
 1. Select Start -> Programs -> Syncfusion -> Essential Studio xx.x.x.xx -> Dashboard.
 2. Select   Run Locally Installed Samples in WPF Button.

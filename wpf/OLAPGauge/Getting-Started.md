@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | OLAPGauge | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: OLAP Gauge
@@ -28,7 +28,9 @@ This section explains on how to configure an OLAP Gauge component in an applicat
 
 
 5. Add a name to OlapGauge for accessing it through code-behind as shown in the following code example.
-
+   
+   
+   {%highlight xml%}
   
 
 
@@ -51,7 +53,7 @@ This section explains on how to configure an OLAP Gauge component in an applicat
 
 			</Window>
 	
- 
+      {%endhighlight%}
 
     
 
@@ -59,11 +61,11 @@ This section explains on how to configure an OLAP Gauge component in an applicat
 
 
 
-6. Include the following namespaces in the code-behind for handling OlapReport and OlapDataManger.
-   1. Syncfusion.Olap.Reports
-   2. Syncfusion.Olap.Manager
+6.Include the following namespaces in the code-behind for handling OlapReport and OlapDataManger.
+  I. Syncfusion.Olap.Reports
+  II. Syncfusion.Olap.Manager
 
-  
+      {%highlight c#%}
 
 
 				using Syncfusion.Olap.Manager;
@@ -292,7 +294,7 @@ This section explains on how to configure an OLAP Gauge component in an applicat
 
 				  End Namespace
 	
-
+       {%endhighlight%}
 
     
 
@@ -300,11 +302,10 @@ This section explains on how to configure an OLAP Gauge component in an applicat
 
 
 
-7. Run the application                                                    
+7.Run the application                                                    
 
    ![](Getting-Started_images/Getting-Started_img3.png)
 
-   {:.prettyprint}
    
 # Through Expression Blend
 
@@ -321,21 +322,24 @@ OLAP Gauge control can also be created and configured by using Expression Blend 
 
 
 3. Right-click on References and select Add Reference, then add the following assemblies into the project from installed location.
-   1. Syncfusion.Olap.Base
-   2. Syncfusion.OlapGauge.WPF
+   I. Syncfusion.Olap.Base
+   II. Syncfusion.OlapGauge.WPF
 
-   ## Assemblies Location:
+
+   Assemblies Location:
 
    &lt;SystemDrive&gt;:\ProgramFiles(x86)\Syncfusion\EssentialStudio\<version>\precompiledassemblies\<version>\<Framework>\
 
-4. After adding the above assemblies, OlapGauge control is automatically added in the Assests.
-5. Now, find OlapGauge and drag it to the designer window. 
+4.After adding the above assemblies, OlapGauge control is automatically added in the Assests.
+
+5.Now, find OlapGauge and drag it to the designer window. 
 
    ![](Getting-Started_images/Getting-Started_img6.png)
 
 
-6. Add a name to OlapGauge for accessing it through code-behind as shown in the following code example.
-
+6.Add a name to OlapGauge for accessing it through code-behind as shown in the following code example.
+   
+   {%highlight xml%}
  
 
 
@@ -359,17 +363,17 @@ OLAP Gauge control can also be created and configured by using Expression Blend 
 				
 
 
-    
+    {%endhighlight%}
 
 
 
 
 
-7. Include the following namespaces in the code-behind for using OlapReport and OlapDataManger in the application.
-   1. Syncfusion.Olap.Reports
-   2. Syncfusion.Olap.Manager
+7.Include the following namespaces in the code-behind for using OlapReport and OlapDataManger in the application.
+  I. Syncfusion.Olap.Reports
+  II. Syncfusion.Olap.Manager
 
-  
+       {%highlight c#%}
 
 				using Syncfusion.Olap.Manager;
 
@@ -602,20 +606,19 @@ OLAP Gauge control can also be created and configured by using Expression Blend 
 				
  
 
-    
+    {%endhighlight%}
 
 
 
 
 
-8. Run the application
+8.Run the application
 
 
 
-   ![](Getting-Started_images/Getting-Started_img7.png)
+  ![](Getting-Started_images/Getting-Started_img7.png)
 
-   {:.prettyprint}
-
+   
 # Through Code-Behind
 
 1. Open Visual Studio IDE and from the File menu, select New  Project.
@@ -643,12 +646,12 @@ OLAP Gauge control can also be created and configured by using Expression Blend 
    &lt;SystemDrive&gt;:\ProgramFiles(x86)\Syncfusion\EssentialStudio\<version>\precompiledassemblies\<version>\<Framework>\
 
 5. Include the following namespaces in code-behind for using OlapGauge, OlapReport and OlapDataManger in the program.
-   1. Syncfusion.Olap.Reports
-   2. Syncfusion.Olap.Manager
-   3. Syncfusion.Windows.Gauge.Olap
+   I. Syncfusion.Olap.Reports
+   II. Syncfusion.Olap.Manager
+   III. Syncfusion.Windows.Gauge.Olap
 
   
-
+         {%highlight c#%}
 
 				using Syncfusion.Olap.Manager;
 
@@ -895,14 +898,14 @@ OLAP Gauge control can also be created and configured by using Expression Blend 
 				
 
 
-    
+     {%endhighlight%}
 
 
 
 
 
-6. Run the application.                                      
+6.Run the application.                                      
 
    ![](Getting-Started_images/Getting-Started_img10.png)
 
-   {:.prettyprint}
+   

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Run-Time-Feature
+title: Run Time Feature | OLAPGauge | wpf | Syncfusion
 description: run time feature
 platform: wpf
 control: OLAP Gauge
@@ -17,6 +17,8 @@ The OLAP Gauge control can display the tooltip information when the mouse pointe
 
 The OLAP Gauge control for WPF provides value information when the mouse pointer is moved over the pointer. This is achieved by enabling the ShowPointersTooltip property of the gauge control. The following code example illustrates the setting of this property.
 
+
+{%tabs%}
  {% highlight c# %}
  
     
@@ -42,7 +44,7 @@ Me.olapGauge1.ShowPointersTooltip = True
 
 
 
-
+{%endtabs%}
 
 
 
@@ -50,13 +52,15 @@ Me.olapGauge1.ShowPointersTooltip = True
 
 The following screen shot illustrates a pointer tooltip displayed for the OLAP Gauge.
 
-![C:/Users/Hari/Pictures/OlapGauge/Pointer Tooltip.png](Run-Time-Feature_images/Run-Time-Feature_img1.png)
+![](Run-Time-Feature_images/Run-Time-Feature_img1.png)
 
 
 ## Marker ToolTip
 
 The OLAP Gauge control for WPF provides goal information when the mouse pointer is moved over the marker. This is achieved by enabling the ShowMarkersTooltip property of the Gauge control. The following code example illustrates the setting of this property.
 
+
+{%tabs%}
  {% highlight c# %}
  
     
@@ -82,7 +86,7 @@ Me.olapGauge1.ShowMarkersTooltip = True
 
 
 
-
+{%endtabs%}
 
 
 
@@ -90,7 +94,7 @@ Me.olapGauge1.ShowMarkersTooltip = True
 
 The following screen shot illustrates a marker tooltip displayed for the OLAP Gauge.
 
-![C:/Users/Hari/Pictures/OlapGauge/Marker Tooltip.png](Run-Time-Feature_images/Run-Time-Feature_img2.png)
+![](Run-Time-Feature_images/Run-Time-Feature_img2.png)
 
 
 ## Sample Location

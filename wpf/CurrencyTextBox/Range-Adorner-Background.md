@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range-Adorner-Background
+title: Range Adorner Background | CurrencyTextBox | wpf | Syncfusion
 description: range adorner background
 platform: wpf
 control: CurrencyTextBox 
@@ -17,7 +17,7 @@ The RangeAdornerBackground property is used to set the background color of the r
 
 
 
-_RangeAdornerBackground property table_
+
 
 <table>
 <tr>

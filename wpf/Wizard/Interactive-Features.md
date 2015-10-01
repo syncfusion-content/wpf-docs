@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactive-Features
+title: Interactive Features | Wizard | wpf | Syncfusion
 description: interactive features
 platform: wpf
 control: Wizard
@@ -17,7 +17,7 @@ You can add any number of wizard pages to the Wizard control. They are plenty of
 
 To add a wizard page to the Wizard control, use the below code
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -42,7 +42,7 @@ WizardPage wizardPage = new WizardPage();
 
 wizardControl.Items.Add(wizardPage);  
 {% endhighlight %}
-
+{%endtabs%}
 
 
 
@@ -54,7 +54,7 @@ wizardControl.Items.Add(wizardPage);
 
 To add two wizard pages to the Wizard control, refer the below code
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -87,6 +87,7 @@ wizardControl.Items.Add(wizardPage1);
 wizardControl.Items.Add(wizardPage2);
 {% endhighlight %}
 
+{%endtabs%}
 
 ![](Interactive-Features_images/Interactive-Features_img2.jpeg)
 
@@ -100,7 +101,7 @@ You can select the wizard page from the wizard control by using the SelectedWiza
 
 To set this property, use the below code.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -150,7 +151,7 @@ wizardControl.Items.Add(wizardPage3);
 
 wizardControl.SelectedWizardPage = wizardPage2; 
 {% endhighlight %}
-
+{%endtabs%}
 
 ![](Interactive-Features_images/Interactive-Features_img3.jpeg)
 
@@ -161,7 +162,7 @@ You can set the title and description for the wizard page by using the Title and
 
 Use the following code snippet to set these properties.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -195,7 +196,7 @@ wizardPage.Title = "WizardPage1";
 
 wizardPage.Description = "This is the first page of wizard"
 {% endhighlight %}
-
+{%endtabs%}
 
 ![](Interactive-Features_images/Interactive-Features_img4.jpeg)
 
@@ -212,7 +213,7 @@ You can set the type of the wizard page by using the PageType property. There ar
 
 Use the below code snippet to set the PageType as Blank.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -244,6 +245,8 @@ wizardPage.PageType = WizardPageType.Blank;
 
 {% endhighlight %}
 
+{%endtabs%}
+
 ![](Interactive-Features_images/Interactive-Features_img5.jpeg)
 
 
@@ -251,7 +254,7 @@ wizardPage.PageType = WizardPageType.Blank;
 
 Use the following code snippet to set the PageType as Interior.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -282,10 +285,10 @@ wizardControl.Items.Add(wizardPage);
 wizardPage.PageType = WizardPageType.Interior;  
 {% endhighlight %}
 
-
+{%endtabs%}
 Use the following code snippet to set the PageType as Exterior.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -314,15 +317,17 @@ wizardControl.Items.Add(wizardPage);
 wizardPage.PageType = WizardPageType.Exterior;    
 {% endhighlight %}
 
-
+{%endtabs%}
 ![](Interactive-Features_images/Interactive-Features_img6.jpeg)
 
 
 
 
-###  See Also
+{%seealso%}
 
 Minimum Width for the Banner Image on the Exterior Wizard Page, Minimum Height for the Interior Wizard Page Header
+
+{%endseealso%}
 
 ### Navigation Buttons of Wizard Page
 
@@ -340,7 +345,7 @@ You can enable or disable the Back, Cancel, Next and Finish navigation buttons i
 
 Here is the code snippet.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -377,6 +382,7 @@ wizardControl.FinishEnabled = true;
 wizardControl.CancelEnabled = true;  
 
 {% endhighlight %}
+{%endtabs%}
 
 ![](Interactive-Features_images/Interactive-Features_img7.jpeg)
 
@@ -389,6 +395,7 @@ You can show or hide the Back, Cancel, Next, Help and Finish navigation buttons 
 
 To set these properties, refer the below code.
 
+{%tabs%}
 
 {% highlight xml %}
 
@@ -431,6 +438,8 @@ wizardControl.HelpVisible = true;
 
 {% endhighlight %}
 
+{%endtabs%}
+
 ![](Interactive-Features_images/Interactive-Features_img8.jpeg)
 
 
@@ -441,7 +450,7 @@ wizardControl.HelpVisible = true;
 You can set custom text for the Back, Next, Finish, Help and Cancel navigation buttons in the Wizard control. This is done by using the BackText, NextText, FinishText, HelpText and CancelText properties as follows. 
 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -483,6 +492,8 @@ wizardControl.FinishText = "Finish";
 
 {% endhighlight %}
 
+{%endtabs%}
+
 ![](Interactive-Features_images/Interactive-Features_img9.jpeg)
 
 
@@ -491,9 +502,11 @@ N> You can set custom text for the navigation buttons in the wizard control only
 
 
 
- See Also
+{%seealso%}
 
 Next Page and Previous Page Navigation
+
+{%endseealso%}
 
 ### Working with Wizard Control
 
@@ -539,9 +552,11 @@ wizardPage3.PreviousPage = wizardPage1;
 
 {% endhighlight %}
 
-See Also
+{%seealso%}
 
 Navigation Buttons
+
+{%endseealso%}
 
 #### Closing the Wizard Window
 
@@ -549,7 +564,7 @@ You can close the Wizard control window by clicking the Cancel or Finish button 
 
 To enable these properties, refer the below code
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -581,7 +596,7 @@ wizardControl.CloseWindowOnCancel = true;
 
 wizardControl.CloseWindowOnFinish = true; 
 {% endhighlight %}
-
+{%endtabs%}
 
 ## Event for Next Button in Wizard Control  
 
@@ -593,10 +608,6 @@ Users can use this event to do valid code of operations such as displaying a mes
 
 ### Events
 
-
-
-_Next Event Table_
-
 <table>
 <tr>
 <th>
@@ -606,12 +617,12 @@ Arguments </th><th>
 Type </th><th>
 Reference links </th></tr>
 <tr>
-<th>
-Next</th><th>
-The Next button is clicked in Wizard Control</th><th>
--</th><th>
-Routed Event</th><th>
--</th></tr>
+<td>
+Next</td><td>
+The Next button is clicked in Wizard Control</td><td>
+-</td><td>
+Routed Event</td><td>
+-</td></tr>
 </table>
 
 

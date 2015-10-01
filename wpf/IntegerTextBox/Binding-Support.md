@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Binding-Support
+title: Binding Support | IntegerTextBox | wpf | Syncfusion
 description: binding support
 platform: wpf
 control: IntegerTextBox 

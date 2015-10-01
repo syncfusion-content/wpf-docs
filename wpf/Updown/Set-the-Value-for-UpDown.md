@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set-the-Value-for-UpDown
+title: Set the Value for UpDown | UpDownControl | wpf | Syncfusion
 description: set the value for updown 
 platform: wpf
 control: UpDown Control
@@ -14,6 +14,9 @@ The value for UpDown can be specified by using the Value property.
 ### Use of the Value Property
 
 A value can be set for the UpDown control as shown in the following code example.
+
+
+{%tabs%}
 
 {%highlight xml%}
 
@@ -30,18 +33,20 @@ upDown.Value = 10;
 
 {%endhighlight%}
 
-Tables for Properties and Events
+{%endtabs%}
 
- _Value property_
+### Tables for Properties and Events
+
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Property</th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 Value</td><td>
@@ -50,16 +55,19 @@ DependencyProperty</td><td>
 double?</td><td>
 Not applicable.</td></tr>
 </table>
-_Value Events_
+
+
+
+### Value Events
 
 <table>
 <tr>
 <th>
-{{ '**Events**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Arguments**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Events</th><th>
+Description</th><th>
+Arguments</th><th>
+Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 ValueChanged</td><td>

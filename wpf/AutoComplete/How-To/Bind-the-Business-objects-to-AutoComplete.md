@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind-the-Business-objects-to-AutoComplete
+title: Bind-the-Business-objects-to-AutoComplete | AutoComplete | wpf | Syncfusion
 description: bind the business objects to autocomplete
 platform: wpf
 control: AutoComplete

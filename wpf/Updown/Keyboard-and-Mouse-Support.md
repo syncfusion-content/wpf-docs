@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-and-Mouse-Support
+title: Keyboard and Mouse Support | UpDownControl | wpf | Syncfusion
 description: keyboard and mouse support
 platform: wpf
 control: UpDown Control

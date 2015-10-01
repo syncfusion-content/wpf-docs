@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Diagram-View
+title: Diagram View | Diagram | wpf | Syncfusion
 description: diagram view
 platform: wpf
 control: Diagram
@@ -11,7 +11,7 @@ documentation: ug
 
 The Diagram View is responsible for bringing the objects and data which are added into the view through the model. In other words, it deals with the visual representation of data. Zooming and panning are done with respect to the view. 
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -184,7 +184,7 @@ NodeCollection</td><td>
 No</td></tr>
 </table>
 
-{% highlight html %}
+{% highlight xml %}
 
 
 
@@ -256,7 +256,7 @@ diagramgrid.Children.Add(dc)
 
 The drawing area has many properties that can be used to customize a view.
 
-See Also
+{%seealso%}
 
 * Create Rulers Refer Concepts and Features -> Diagram View -> Create Rulers
 * Specify Bounds Refer Concepts and Features -> Diagram View -> Specify Bounds
@@ -267,6 +267,10 @@ See Also
 * Grid Lines Refer Concepts and Features -> Diagram View -> Grid Lines
 * Customize the ContextMenu of Nodes and LineConnectors Refer Concepts and Features -> General -> Customize the ContextMenu of Nodes and LineConnectors
 * Undo and Redo Command. Refer Concepts and Features -> Diagram View -> Undo and Redo Command.
+
+
+{%endseealso%}
+
 
 ## Create Rulers
 
@@ -359,7 +363,8 @@ TryCast(diagramView.VerticalRuler, VerticalRuler())
 
 
 
-_Rulers_
+Rulers
+{:.caption}
 
 
 
@@ -367,10 +372,12 @@ _Rulers_
 
 
 
-_Ruler after Panning, zooming and Measurement unit as Inch_
+Ruler after Panning, zooming and Measurement unit as Inch
+
+{:.caption}
 
 Several customizable options have been provided for the horizontal and vertical rulers. These are common for both the rulers.
-Property Table
+
 
 <table>
 <tr>
@@ -443,7 +450,8 @@ No</td></tr>
 
 
 
-_Ruler Terminology_
+Ruler Terminology
+{:.caption}
 
 
 
@@ -502,13 +510,14 @@ TryCast(diagramView.VerticalRuler, VerticalRuler).LabelFontColor = Brushes.Green
 
 
 
-_Custom Ruler_
+Custom Ruler
+{:.caption}
 
 ## Specify Bounds
 
 The Bounds property of the Diagram View class enables a user to specify the rectangular area where the tree layout is to be displayed. The root of the tree layout is placed at the center of the bounds value. 
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -536,7 +545,7 @@ Bounds can be specified in two ways,
 * Through Code Behind
 
 
-{% highlight html %}
+{% highlight xml %}
 
 
 
@@ -609,7 +618,7 @@ diagramgrid.Children.Add(dc)
 
 Essential Diagram WPF provides the ability to pan a page. Panning is used to move the contents of page both horizontally and vertically by holding down a mouse button and then moving the mouse.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -629,7 +638,7 @@ No</td></tr>
 </table>
 
 
-Steps for panning a page
+### Steps for panning a page
 
 1. A page can be panned by setting the IsPanEnabled property to _True_.
 
@@ -655,22 +664,22 @@ diagramView.IsPanEnabled = True
 
 {% endhighlight  %}
 
-2. Click and drag the diagram page to the desired position. Note that the negative rulers get displayed while panning to the right.
-N> No other operations can be performed on page elements while IsPanEnabled is set to True.
+2.Click and drag the diagram page to the desired position. Note that the negative rulers get displayed while panning to the right.
+   
+  N> No other operations can be performed on page elements while IsPanEnabled is set to True.
 
 
 
-![](Diagram-View_images/Diagram-View_img5.jpeg)
-
-
-
-_Pan_
+   ![](Diagram-View_images/Diagram-View_img5.jpeg)
+   
+   Pan
+   {:.caption}
 
 ## Creating Page
 
 The Diagram View has a Page property which refers to the DiagramPage class. The DiagramPage displays the nodes and connections which are added through the model.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -696,7 +705,7 @@ The DiagramPage can be created for DiagramView in following two ways,
 * Through Code Behind
 
 
-{% highlight html %}
+{% highlight xml %}
 
 
 
@@ -784,7 +793,7 @@ TryCast(diagramView.Page, DiagramPage).GridVerticalOffset = 50
 You can disable editing the page by setting the IsPageEditable property to False. No operation can then be performed on the page or its contents. Default value is True.
 
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -879,7 +888,6 @@ By default, the selection list can be cleared by right-clicking on the diagram p
 
 Properties
 
-_Clear the Selection List_
 
 <table>
 <tr>
@@ -937,7 +945,7 @@ In a large network diagram each object will be far from another. You need to scr
 
 ### Properties
 
-_Fit-to-Page Support_
+
 
 <table>
 <tr>
@@ -1028,19 +1036,21 @@ diagramView.EnableFitToPage = true;
 
 {% endhighlight  %}
 
-![C:/Users/labuser/Desktop/q11.PNG](Diagram-View_images/Diagram-View_img6.png)
+![](Diagram-View_images/Diagram-View_img6.png)
 
 
 
-_Fit-to-Page Disabled_
+Fit-to-Page Disabled
+{:.caption}
 
 
 
-![C:/Users/labuser/Desktop/q1.PNG](Diagram-View_images/Diagram-View_img7.png)
+![](Diagram-View_images/Diagram-View_img7.png)
 
 
 
-_Fit-to-Page Enabled_
+Fit-to-Page Enabled
+{:.caption}
 
 ### Using Command
 
@@ -1084,7 +1094,7 @@ Use Case Scenarios
 
 ### Properties
 
-_Table Layout_
+
 
 <table>
 <tr>
@@ -1161,15 +1171,16 @@ N> If the OrderNodes property is set to null, then the table layout will be appl
 
 
 
-![C:/Users/labuser/Desktop/selection.PNG](Diagram-View_images/Diagram-View_img8.png)
+![](Diagram-View_images/Diagram-View_img8.png)
 
 
 
-_Table Layout Applied for Specified Nodes_
+Table Layout Applied for Specified Nodes
+{:.caption}
 
 
 
-Aligning the Layout on a Specified Location
+### Aligning the Layout on a Specified Location
 
 To align the ordered nodes in a particular position, call the _TableLayout’s__RefreshLayout_ (Point PivotPoint) method and specify the particular point as a parameter. The layout will be positioned in the specified pivot point. 
 
@@ -1204,7 +1215,7 @@ table.RefreshLayout(300,400)
 
 {% endhighlight %}
 
-Removing Table Layout from the Specific Nodes
+### Removing Table Layout from the Specific Nodes
 
 You can remove the table layout applied to specific nodes. To achieve this set the OrderedNodes property of the DiagramMode to null, and call the RefreshLayout method of the TableLayout. The layout will be applied to the entire diagram. By default the OrderedNodes property is set to null.
 
@@ -1246,7 +1257,7 @@ The PageMargin property is used to maintain the distance between DiagramPage and
 
 ### Properties
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -1315,11 +1326,12 @@ diagramView.PageMargin = New Thickness(10, 20, 10, 20)
 
 {% endhighlight %}
 
-![Description: C:/Users/sundarm/Desktop/margin.PNG](Diagram-View_images/Diagram-View_img9.png)
+![](Diagram-View_images/Diagram-View_img9.png)
 
 
 
-_Features Demo_ 
+Features Demo
+{:.caption}
 
 ## Virtualization for DiagramControl
 
@@ -1337,7 +1349,7 @@ Tables for Properties, Methods, and Events
 
 ### Properties
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -1426,7 +1438,7 @@ diagramView.EnableVirtualization = True
 
 
 
-EnableCaching Property:
+### EnableCaching Property:
 
 EnableCaching decides whether the element should be in loaded state or unloaded state, when the element is outside the viewport area. To set the element in unloaded state set the EnableCaching to false. To set it in loaded state set the EnableCaching to true. 
 
@@ -1450,7 +1462,7 @@ diagramView.EnableCaching = True
 
 {% endhighlight %}
 
-Node/LineConnector AllowVirtualization Property:
+### Node/LineConnector AllowVirtualization Property:
 
 AllowVirtualization property is used to enable/disable the Node/LineConnector virtualization. When AllowVirtualization is set to false for an element that lies outside the viewport It will be in loaded state when Virtualization is enabled. The default value is true.
 
@@ -1507,7 +1519,6 @@ Due to virtualization behavior there are some limitations  in the diagram contro
 
 As different fields require different units of measure, several measurement units are provided such that you can choose the unit that is most comfortable and suitable to use. All basic properties can be defined in the specified measurement unit. It is also possible to dynamically change the units at run-time. The rulers are updated accordingly to represent the coordinates in the currently selected unit.
 
-_Property Table_ 
 
 <table>
 <tr>
@@ -1653,15 +1664,16 @@ You can also dynamically change the units at runtime. The ruler values get chang
 
 
 
-_Units changed to Inches_
+Units changed to Inches
+{:.caption}
 
 ### DateTime Unit
 
 This feature enables the ruler to display the position of diagram contents (nodes, line connectors) in a date-time format. This feature also allows users to access nodes, line connectors, and double values as DateTime types.
 
-Properties
+### Properties
 
-_Date Time Unit_
+
 
 <table>
 <tr>
@@ -1721,7 +1733,9 @@ diagramView.DateTimeSettings=New DateTimeSettings(New TimeSpan(1,0,0,0,0),50)
 
 
 
-_Ruler Representing 50 Pixels as One Day_
+
+Ruler Representing 50 Pixels as One Day
+{:.caption}
 
 
 
@@ -1745,7 +1759,8 @@ diagramView.DateTimeSettings.RulerInterval = new TimeSpan(2, 0, 0, 0, 0);
 
 
 
-_RulerInterval Set as Two Days_
+RulerInterval Set as Two Days
+{:.caption}
 
 ### Enable DateTimeSettings
 
@@ -1871,7 +1886,7 @@ N> Use these node properties after the nodes are loaded. Also, the unit conversi
 
 We have provided some methods to convert the DateTime and Timespan as double and vice versa. Please refer to the table and code snippet.
 
-_Convertion_
+
 
 <table>
 <tr>
@@ -1907,7 +1922,7 @@ double</td></tr>
 </table>
 
 
-Node
+### Node
 This code example demonstrates how to create the position and size of the node using the methods listed above.
 
 
@@ -1965,7 +1980,7 @@ diagramModel.Connections.Add(line);
 
 The drawing area of a DiagramControl can be rendered with horizontal and vertical grid lines to allow for proper positioning of the nodes.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -2001,7 +2016,7 @@ The horizontal and vertical grid lines can be enabled or disabled using the Show
 The following code can be used to set these properties.
 
 
-{% highlight html %}
+{% highlight xml %}
 
 
 
@@ -2090,7 +2105,8 @@ diagramgrid.Children.Add(dc)
 
 
 
-_GridLines_
+GridLines
+{:.caption}
 
 
 
@@ -2100,7 +2116,7 @@ The vertical and horizontal spacing between grid lines can be specified using th
 
 The default value is 25d for both properties. 
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -2129,7 +2145,7 @@ No</td></tr>
 
 The following code can be used to set these properties.
 
-{% highlight html %}
+{% highlight xml %}
 
 
 
@@ -2228,9 +2244,10 @@ diagramgrid.Children.Add(dc)
 
 
 
-_GridOffset_
+GridOffset
+{:.caption}
 
-Customizing the GridLineStyle
+### Customizing the GridLineStyle
 
 The following code illustrates how to customize GridLineStyle:
 
@@ -2311,7 +2328,8 @@ Users can snap objects with respect to grid lines in the Design environment by u
 
 
 
-_Node Before Snapping_
+Node Before Snapping
+{:.caption}
 
 
 
@@ -2319,7 +2337,8 @@ _Node Before Snapping_
 
 
 
-_Node After Snapping_
+Node After Snapping
+{:.caption}
 
 #### Enabling Snap to Grid
 
@@ -2367,7 +2386,8 @@ diagramView.SnapToHorizontalGrid = True
 
 
 
-_Snap to Grid Enabled_
+Snap to Grid Enabled
+{:.caption}
 
 #### Customizing Snap to Grid Offset Values
 
@@ -2412,7 +2432,7 @@ Also, snapping of objects will occur only when the objects are dragged during ru
 
 The properties of the Snap to Grid feature are described in the following tabulation:
 
-_Properties Table_
+
 
 <table>
 <tr>
@@ -2467,7 +2487,7 @@ This feature enables you to properly align a node with neighboring nodes. This i
 
 #### Properties
 
-_Propertis of SnapSettings Class_
+
 
 <table>
 <tr>
@@ -2549,11 +2569,11 @@ diagramView.SnapSettings.EnableSnapNode = true;
 
 {% endhighlight %}
 
-SnapSettings
+### SnapSettings
 
 By default, two nodes can be snapped in six positions. To disable snapping on a particular direction, you need to set the corresponding property to false.
 
-Customizing the Snapping Lines
+#### Customizing the Snapping Lines
 
 Snapping to object can be done in six ways. They are:
 
@@ -2693,7 +2713,7 @@ The diagram page can be zoomed in and out. Zooming can be achieved in the follow
 * Using the zoom commands.
 * Using the mouse wheel.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -2720,7 +2740,7 @@ No</td></tr>
 </table>
 
 
-Steps to zooming using the zoom commands
+### Steps to zooming using the zoom commands
 
 
 
@@ -2812,7 +2832,8 @@ N> All other operations can be performed on page elements while IsZoomEnabled is
 
 
 
-_Zooming the Diagram Control_
+Zooming the Diagram Control
+{:.caption}
 
 ### Zoom Factor
 
@@ -2942,7 +2963,8 @@ The corresponding arrow keys can be used to move the selected objects to top, bo
 
 
 
-_Nudge by using Arrow Keys_
+Nudge by using Arrow Keys
+{:.caption}
 
 Nudge commands are particularly useful for accurate placement of objects on the page as it allows you to move by 1 pixel each time.
 
@@ -2950,7 +2972,7 @@ Nudge commands are particularly useful for accurate placement of objects on the 
 
 Clipboard commands are used to perform cut copy and paste operations.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -3168,7 +3190,8 @@ DiagramCommandManager.BringToFront.Execute(diagramView.Page, diagramView)
 
 
 
-_Bring To Front_
+Bring To Front
+{:.caption}
 
 ### SendToBack
 
@@ -3186,7 +3209,8 @@ DiagramCommandManager.SendToBack.Execute(diagramView.Page, diagramView)
 
 
 
-_Send To Back_
+Send To Back
+{:.caption}
 
 ### MoveForward
 
@@ -3204,7 +3228,8 @@ DiagramCommandManager.MoveForward.Execute(diagramView.Page, diagramView)
 
 
 
-_Figure165: Move Forward_
+Move Forward
+{:.caption}
 
 ###  SendBackward
 
@@ -3223,15 +3248,16 @@ DiagramCommandManager.SendBackward.Execute(diagramView.Page, diagramView)
 
 
 
-_Send Backward_
+Send Backward
+{:.caption}
 
 ## ZOrder Mode
 
 Essential Diagram for WPF provides support for the ZOrder mode for diagram view elements. This allows the user to decide whether the ZOrdering of diagram view elements should be done by index or be visually based.
 
-Properties
+### Properties
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -3410,7 +3436,8 @@ The following screenshot illustrates how the last two nodes are aligned to the l
 
 
 
-_AlignLeft command applied to Diagram Objects_
+AlignLeft command applied to Diagram Objects
+{:.caption}
 
 ### Center Alignment (Horizontal Axis)
 
@@ -3434,7 +3461,8 @@ The following screenshot illustrates how the last two nodes are aligned to the c
 
 
 
-_AlignCenter command applied to Diagram Objects_
+AlignCenter command applied to Diagram Objects
+{:.caption}
 
 ### Right Alignment
 
@@ -3458,7 +3486,8 @@ The following screenshot illustrates how the last two nodes are aligned to the r
 
 
 
-_AlignRight command applied to Diagram Objects_
+AlignRight command applied to Diagram Objects
+{:.caption}
 
 ### Top Alignment
 
@@ -3478,7 +3507,8 @@ The following screenshot illustrates how the last two nodes are aligned to the t
 
 
 
-_AlignTop command applied to Diagram Objects_
+AlignTop command applied to Diagram Objects
+{:.caption}
 
 ### Center Alignment (Vertical Axis)
 
@@ -3498,7 +3528,8 @@ The following screenshot illustrates how the last two nodes are aligned to the c
 
 
 
-_AlignMiddle command applied to Diagram Objects_
+AlignMiddle command applied to Diagram Objects
+{:.caption}
 
 ## Bottom Alignment
 
@@ -3518,7 +3549,9 @@ The following screenshot illustrates how the last two nodes are aligned to the b
 
 
 
-_AlignBottom command applied to Diagram Objects_
+AlignBottom command applied to Diagram Objects
+
+{:.caption}
 
 N> The connector gets aligned only when the head node and the tail node of the connector is Null.
 
@@ -3549,7 +3582,8 @@ The following screenshot illustrates horizontally spaced objects.
 
 
 
-_SpaceAcross command applied to Diagram Objects_
+SpaceAcross command applied to Diagram Objects
+{:.caption}
 
 
 
@@ -3573,7 +3607,10 @@ The following screenshot illustrates vertically spaced objects.
 
 
 
-_SpaceDown command applied to Diagram Objects_
+SpaceDown command applied to Diagram Objects
+{:.caption}
+
+
 
 N> The connector gets spaced only when the head node and the tail node of the connector is Null.
 
@@ -3607,6 +3644,8 @@ DiagramCommandManager.Delete.Execute(diagramView.Page, diagramView);
 
 DiagramCommandManager.Delete.Execute(diagramView.Page, diagramView)
 {% endhighlight %}
+
+
 ## Sizing Commands
 
 Sizing commands enable you to resize selected objects (nodes and connectors) on the page. The selected objects get resized with respect to the first object in the selection list.  
@@ -3629,7 +3668,8 @@ DiagramCommandManager.SameHeight.Execute(diagramView.Page, diagramView)
 
 
 
-_SameHeight command applied to Diagram Objects_ 
+SameHeight command applied to Diagram Objects
+{:.caption}
 
 N> The width of the selected object remains the same.
 
@@ -3649,7 +3689,8 @@ DiagramCommandManager.SameWidth.Execute(diagramView.Page, diagramView)
 
 
 
-_SameWidth command applied to Diagram Objects_
+SameWidth command applied to Diagram Objects
+{:.caption}
 
 N> The height of the selected object remains the same.
 
@@ -3672,7 +3713,8 @@ DiagramCommandManager.SameSize.Execute(diagramView.Page, diagramView)
 
 
 
-_SameSize command applied to Diagram Objects_
+SameSize command applied to Diagram Objects
+{:.caption}
 
 N> The connector gets spaced only when the head node and the tail node of the connector is Null.
 
@@ -3704,7 +3746,7 @@ DiagramCommandManager.Redo.Execute(diagramView.Page, diagramView)
 
 Disabling Undo and Redo is helpful when the Diagram control has large number of nodes and line connectors where insertion and deletion are very frequently used. This property can be disabled so that all the references are removed for the stack. This implies that deleted nodes will lose their references and Garbage collected.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -3819,7 +3861,7 @@ Tables for Properties, Methods and Events
 
 ### Properties
 
-_Properties Table for PrintParameters_
+
 
 <table>
 <tr>
@@ -3851,7 +3893,7 @@ No</td></tr>
 
 ### Methods
 
-_Methods Table_
+
 
 <table>
 <tr>
@@ -3925,9 +3967,10 @@ The following custom options can be customized using PrintPreview.
 
 
 
-_Print and PrintPreview Dialog Box_
+Print and PrintPreview Dialog Box
+{:.caption}
 
-Printing a Diagram without PrintDialog Box
+### Printing a Diagram without PrintDialog Box
 
 Diagram can be printed without using PrintDialog or PrintPreview, and by sending PrintPreview as an argument for printing as shown blow:
 
@@ -3974,7 +4017,7 @@ When you want to print a diagram page, in which you have applied effects for the
 
 #### Properties
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -4040,7 +4083,8 @@ diagramModel.Nodes.Add(node)
 
 
 
-_Printed Nodes with Effects_
+Printed Nodes with Effects
+{:.caption}
 
 ## Drawing Tools 
 
@@ -4063,7 +4107,7 @@ DrawingTools such as Microsoft Paint and Expression Blend support drawing a part
 
 ### Properties
 
-_DrawingToolsProperty Table_
+
 
 <table>
 <tr>
@@ -4104,7 +4148,7 @@ To enable DrawingTools set EnableDrawingTools property to true. Shapes and line 
 
 * Through XAML.
 
-__The following code illustrates how to enable the DrawingTools.
+The following code illustrates how to enable the DrawingTools.
 
 {% highlight html %}
 
@@ -4169,7 +4213,7 @@ The ObjectDrawn event will be raised when the node or line connector is drawn us
 
 #### Events
 
-_Events Table_
+
 
 <table>
 <tr>
@@ -4221,13 +4265,15 @@ void diagramView_ObjectDrawn(object sender, Syncfusion.Windows.Diagram.DrawingTo
 
    //User-specified code.
 {% endhighlight %}
+
+
 ### Drawing Mode
 
 Essential Diagram for WPF provides support for Drawing mode in the diagram view drawing tool. It can be used to draw elements in diagram view by continuously or only once.
 
 #### Properties
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -4322,7 +4368,9 @@ diagramview.ZOrderMode = DrawingMode.Default;
 
 
 
-_DrawingMode is Default_
+DrawingMode is Default
+
+{:.caption}
 
 The following code illustrates how to set the DrawingMode as Default:
 {% highlight html %}
@@ -4393,7 +4441,8 @@ diagramview.ZOrderMode = DrawingMode.Continous;
 
 
 
-_DrawingMode is Continous_
+DrawingMode is Continous
+{:.caption}
 
 ### Select a Drawing Tool 
 
@@ -4477,11 +4526,12 @@ N> These steps are common for all shapes and lines drawing, except Polygon and P
 
 Preview Ellipse – while Drawing 
 
-![C:/Users/labuser/Desktop/a.png](Diagram-View_images/Diagram-View_img39.png)
+![](Diagram-View_images/Diagram-View_img39.png)
 
 
 
-_Ellipse Preview_
+Ellipse Preview
+{:.caption}
 
 Ellipse – After Drawing.
 
@@ -4491,7 +4541,8 @@ Ellipse – After Drawing.
 
 
 
-_Ellipse(Node)_
+Ellipse(Node)
+{:.caption}
 
 Line Drawing
 
@@ -4501,7 +4552,8 @@ Bezier Line Preview – While Drawing
 
 
 
-_Bezier Line Preview_
+Bezier Line Preview
+{:.caption}
 
 Bezier Line – After Drawing
 
@@ -4509,7 +4561,8 @@ Bezier Line – After Drawing
 
 
 
-_Bezier Line(Line Connector)_
+Bezier Line(Line Connector)
+{:.caption}
 
 N>* The drawn shape will be converted into a Node. * The drawn line will be converted into a LineConnector. * You can continually draw the selected shape. * Lines cannot be drawn continually.
 
@@ -4528,7 +4581,7 @@ Preview Polygon – While Drawing
 
 
 
-_Polygon Preview_
+Polygon Preview
 
 Polygon – After Drawing
 
@@ -4536,7 +4589,8 @@ Polygon – After Drawing
 
 
 
-_Polygon (Node)_
+Polygon (Node)
+{:.caption}
 
 #### Sample Link
 
@@ -4544,13 +4598,15 @@ To view a sample:
 
 1. Open the WPF sample browser from the dashboard. 
 2. Navigate to WPF Diagram > Product Showcase >Features demo.
+
+
 ### Preview Style for Line Connectors
 
 This feature allows you to modify the preview of a line connector by using the CustomPathStyle property of the DiagramView.
 
 #### Properties
 
-_Preview Style Table_
+
 
 <table>
 <tr>
@@ -4618,7 +4674,8 @@ The CustomPathStyle property of DiagramView applies the style that is assigned t
 
 
 
-_Preview of Dashed Orthogonal Line Connector_
+Preview of Dashed Orthogonal Line Connector
+{:.caption}
 
 ## Export Diagram 
 
@@ -4670,11 +4727,12 @@ diagramview.Save(filestream);
 
 
 {% endhighlight %}
-Stream with Rect and Encoder
+
+#### Stream with Rect and Encoder
 
 You can also save to a stream with type of encoder and rectangle portion to be clipped.
 {% highlight c# %}
-[C#
+
 
 
 
@@ -4690,7 +4748,7 @@ diagramview.Save(filestream, rect, encoder);
 
 ### Filename
 
-Filename with Path
+#### Filename with Path
 
 You can also export Page as an image file with directory path and file name. 
 {% highlight c# %}
@@ -4700,11 +4758,10 @@ diagramview.Save(@"D:\ Diagram.jpeg");
 
 {% endhighlight %}
 
-Filename with Rect and Encoder
+#### Filename with Rect and Encoder
 
 You can also specify the name of the file directly, specified portions of the DiagramPage, type of encoder such as TiffBitmapEncoder and GifBitmapEncoder.
 {% highlight c# %}
-[C#
 
 
 
@@ -4727,7 +4784,7 @@ The DiagramPage can be exported in different ways:
 * Filename with Rect
 * Stream with Rect
 
-Stream
+#### Stream
 
 You can also save to a stream.
 
@@ -4741,7 +4798,7 @@ diagramview.SaveToXps(filestream);
 
 {% endhighlight %}
 
-Stream with Rect
+#### Stream with Rect
 
 You can also save to a stream with specified size of the save area.
 {% highlight c# %}
@@ -4755,21 +4812,22 @@ diagramview.SaveToXps(filestream,rect);
 
 {% endhighlight  %}
 
-Filename with Path
+#### Filename with Path
 
 You can also specify the name of the file directly in the save method.
 {% highlight c# %}
-[C#
+
 
 diagramview.SaveToXps(@"D:\Diagram.xps", rect);
 
 
 {% endhighlight %}
-Filename with Rect
+
+#### Filename with Rect
 
 You can also specify the name of the file directly; Specified size of the save area.in the save method.
 {% highlight c# %}
-[C#
+
 
 Rect rect = new Rect(new Point(100, 100), new Point(500, 500));
 
@@ -4781,9 +4839,9 @@ Rect rect = new Rect(new Point(100, 100), new Point(500, 500));
 
 While exporting a diagram as an image, the exported image size can be shrunk or expanded to a specific size. An aspect ratio of 1:1 will always be maintained while exporting. If the diagram size and the proposed size are in different ratios, the size of the image will be decided internally based on the ImageStretch property.
 
-Parameters
+### Parameters
 
-_Shrink and Expand Table_
+
 
 <table>
 <tr>
@@ -4817,7 +4875,7 @@ None</td></tr>
 </table>
 The following table lists the four options available for the ImageStretch property and their descriptions.
 
-_Options in ImageStretch_
+
 
 <table>
 <tr>
@@ -4869,13 +4927,16 @@ diagramview.CopyToClipboard();
 
 
 {% endhighlight %}
-SizeToContent
+
+
+
+### SizeToContent
 
 SizeToContent support enables you to resize the diagram page depending upon the content size. This option can also be disabled. You can also define the size of diagram page and restrict the diagram element from moving out of a specified area. 
 
 ### Properties 
 
-_SizeToContent Table_
+
 
 <table>
 <tr>
@@ -5019,6 +5080,9 @@ Dim diagramView As New DiagramView()
 
 diagramView.BoundaryConstraintsArea = New Rect(100, 100, 850, 1195)
 {% endhighlight %}
+
+
+
 ### Restricting the Diagram Element
 
 You can restrict the diagram element moving out of a specified area. Use the BoundaryConstraintsEnabled property of DiagramView for this purpose.   
@@ -5076,7 +5140,7 @@ Following properties enables to customize the appearance of the diagram page:
 
 ### Customizing Background
 
-To customize the background, use the PageBackground__of DiagramView. Default value is White.
+To customize the background, use the PageBackground of DiagramView. Default value is White.
 
 Following code illustrated how to customize the background:
 {% highlight html %}
@@ -5104,9 +5168,6 @@ Following code illustrated how to customize the background:
 {% highlight c# %}
 
 
-
-
-
   DiagramView diagramView = new DiagramView();
 
             diagramView.PageBackground = new SolidColorBrush(Colors.Gray);
@@ -5120,6 +5181,9 @@ Dim diagramView As New DiagramView()
 
 diagramView.PageBackground = New SolidColorBrush(Colors.Gray)
 {% endhighlight %}
+
+
+
 ### Customizing the Off Page’s Background 
 
 To customize the background of the Off Page, use the OffPageBackground__property of DiagramView. Default value is White. 
@@ -5165,9 +5229,12 @@ Dim diagramView As New DiagramView()
 
 diagramView.OffPageBackground = New SolidColorBrush(Colors.White)
 {% endhighlight  %}
+
+
+
 ### Customizing page effect
 
-To customize the page effect, use the PageEffect__property of DiagramView. 
+To customize the page effect, use the PageEffect property of DiagramView. 
 
 Following code illustrates how to customize the page effect:
 {% highlight html %}
@@ -5237,11 +5304,12 @@ diagramView.BackgroundEffect = drop
 
 {% endhighlight %}
 
-![C:/Users/jeganr/Desktop/RP9.3/Diagram.WPF/3.5/WindowsSamples/Getting Started/Page Settings Demo/Images/PageSettingsDemo.PNG](Diagram-View_images/Diagram-View_img46.png)
+![](Diagram-View_images/Diagram-View_img46.png)
 
 
 
-_Customized Diagram Page_
+Customized Diagram Page
+{:.caption}
 
 ## Touch Support
 
@@ -5289,7 +5357,8 @@ This dragging gesture is used to perform the following operation.
 
 
 
-_Drag_
+Drag
+{:.caption}
 
 ### MultiTouch Support
 
@@ -5311,7 +5380,8 @@ This spread and pinch gesture is used to perform, zooming and resizing operation
 
 
 
-_Spread_
+Spread
+{:.caption}
 
 
 
@@ -5319,7 +5389,8 @@ _Spread_
 
 
 
-_Pinch_
+Pinch
+{:.caption}
 
 ### Steps for Zooming
 
@@ -5391,11 +5462,12 @@ Follow the steps below to use the Overview control for DiagramControl:
 
 {% endhighlight %}
 
-![C:/Users/labuser/Desktop/ttt.PNG](Diagram-View_images/Diagram-View_img50.png)
+![](Diagram-View_images/Diagram-View_img50.png)
 
 
 
-_Overview Control in a Diagram_
+Overview Control in a Diagram
+{:.caption}
 
 ## BringIntoCenter
 
@@ -5405,7 +5477,7 @@ This is can be used to clearly view the particular element and its neighbor elem
 
 Methods
 
-_BringIntoCentre Table_
+
 
 <table>
 <tr>
@@ -5456,7 +5528,7 @@ The Bring Into ViewPort feature provides option to bring the element or Rect are
 
 This feature can be applied to the Nodes and Connectors.
 
-_Methods Table_
+
 
 <table>
 <tr>
@@ -5505,9 +5577,9 @@ diagramview.BringIntoViewPort(node)
 
 Essential Diagram for WPF provides support for the Item selection mode for diagram view elements. This determines whether the user can select single or multiple elements at a time.
 
-Properties
+### Properties
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -5598,7 +5670,8 @@ diagramview.ItemSelectionMode = ItemSelectionMode.Single;
 
 
 
-_ItemSelectionMode is Single_
+ItemSelectionMode is Single
+{:.caption}
 
 The following code illustrates how to set the ItemSelectionMode as Multiple:
 {% highlight html %}
@@ -5656,10 +5729,6 @@ diagramview.ItemSelectionMode = ItemSelectionMode.Multiple;
 {% highlight vbnet %}
 
 
-
-
-
-
 Dim diagramView As New DiagramView()
 
 diagramview.ItemSelectionMode = ItemSelectionMode.Multiple;
@@ -5672,5 +5741,6 @@ diagramview.ItemSelectionMode = ItemSelectionMode.Multiple;
 
 
 
-_ItemSelectionMode is Multiple_
+ItemSelectionMode is Multiple
+{:.caption}
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Ticks
+title: Ticks | SfRadialSlider  | wpf | Syncfusion
 description: ticks 
 platform: wpf
-control: Radial Slider 
+control: SfRadialSlider
 documentation: ug
 ---
 

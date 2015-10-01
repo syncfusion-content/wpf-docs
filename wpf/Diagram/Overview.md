@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Diagram | wpf | Syncfusion
 description: overview
 platform: wpf
 control: Diagram
@@ -160,7 +160,7 @@ The product comes with numerous samples as well as an extensive documentation to
 
 The conventions below will help you to quickly identify the important sections of information, while using the content:
 
-_Document Conventions_ 
+
 
 <table>
 <tr>

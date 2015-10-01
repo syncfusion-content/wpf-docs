@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout-Related-Features
+title: Layout Related Features | ColorPicker | wpf | Syncfusion
 description: layout related features
 platform: wpf
 control: ColorPicker

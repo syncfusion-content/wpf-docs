@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events
+title: Events | ButtonAdv | wpf | Syncfusion
 description: events
 platform: wpf
 control: ButtonAdv

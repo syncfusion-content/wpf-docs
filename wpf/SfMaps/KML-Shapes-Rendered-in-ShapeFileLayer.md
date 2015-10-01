@@ -1,6 +1,6 @@
 ---
 layout: post
-title: KML-Shapes-Rendered-in-ShapeFileLayer
+title: KML Shapes Rendered in ShapeFileLayer | ThefollowingpropertiesexposedatabindingintheMaps | wpf | Syncfusion
 description: kml shapes rendered in shapefilelayer
 platform: wpf
 control: SfMap

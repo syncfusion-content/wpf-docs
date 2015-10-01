@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview
+title: Overview | SfLinearGauge | wpf | Syncfusion
 description: overview
 platform: wpf
-control: Linear Gauge 
+control: SfLinearGauge 
 documentation: ug
 ---
 

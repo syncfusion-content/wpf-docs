@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | ColorPicker | wpf | Syncfusion
 description: overview
 platform: wpf
 control: ColorPicker

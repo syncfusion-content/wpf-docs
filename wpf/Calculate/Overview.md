@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Calculate | wpf | Syncfusion
 description: overview
 platform: wpf
 control: Calculate
@@ -17,7 +17,8 @@ Essential Calculate allows you to add extensive calculation support to your busi
 
 ![](Overview_images/Overview_img1.jpeg)
 
-_Essential Calculate_
+Essential Calculate
+{:.caption}
 
 ## Key Features
 
@@ -45,7 +46,6 @@ The product comes with numerous samples as well as an extensive documentation to
 
 The following conventions help you quickly identify the important sections of information while using the content.
 
-_Document Conventions_
 
 <table>
 <tr>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Connection-Port
+title: Connection Port | Diagram | wpf | Syncfusion
 description: connection port
 platform: wpf
 control: Diagram
@@ -13,7 +13,6 @@ Essential Diagram WPF provides the ability to define custom ports for making con
 
 ConnectionPort has the following properties:
 
-_Property Table_
 
 <table>
 <tr>
@@ -63,7 +62,7 @@ No</td></tr>
 
 Node properties related to Connection Ports are:
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -92,7 +91,7 @@ No</td></tr>
 
 LineConnector properties related to Connection Port are:
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -119,7 +118,7 @@ No</td></tr>
 </table>
 
 
-See Also
+{%seealso%}
 
 * Create Connection Port Refer Concepts and Features -> Connection Port -> Create Connection Port
 * PortShape Refer Concepts and Features -> Connection Port -> PortShape
@@ -127,6 +126,8 @@ See Also
 * PortVisibility Refer Concepts and Features -> Connection Port -> PortVisibility
 * AllowPortDrag Refer Concepts and Features -> Connection Port -> AllowPortDrag
 * Connections to Port Refer Concepts and Features -> Connection Port -> Connections to Port
+
+{%endseealso%}
 
 ## Create Connection Port on Node
 
@@ -210,7 +211,8 @@ This adds a port to the node at the location (50,0) with respect to the node.
 
 
 
-_Connection Port_
+Connection Port
+{:.caption}
 
 N> The ports location should always be specified to be within the node's boundary. Therefore the values of the Left and Top property should always be less than the width and height of the node respectively.
 
@@ -218,9 +220,9 @@ N> The ports location should always be specified to be within the node's boundar
 
 This feature provides an option to add connection ports at runtime through mouse operations. Similarly, connection ports can be removed from a node through mouse operations. 
 
-Properties
+### Properties
 
-_Connection Port at Runtime_
+
 
 <table>
 <tr>
@@ -333,7 +335,7 @@ Several predefined shapes have been provided for the ports. They are,
 * Circle
 * Diamond
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -428,9 +430,9 @@ diagramModel.Nodes.Add(node)
 
 ![](Connection-Port_images/Connection-Port_img2.jpeg)
 
+Port Shapes
 
-
-_Port Shapes_
+{:.caption}
 
 ## Port Visibility
 
@@ -440,9 +442,9 @@ The PortVisibility property is used to set the visibility of connection ports on
 2. AlwaysHidden
 3. AlwaysVisible
 
-Properties
+### Properties
 
-_Port Visibility_
+
 
 <table>
 <tr>
@@ -482,7 +484,7 @@ I> Changes: For versions 10.2 and later, the type of PortVisibility property of 
 
 The port shapes can be customized by specifying the property values under the PortStyle property.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -592,19 +594,21 @@ diagramModel.Nodes.Add(node)
 
 
 {% endhighlight %}
+
+
 ![](Connection-Port_images/Connection-Port_img3.jpeg)
 
+Port Style
 
-
-_Port Style_
+{:.caption}
 
 ## CustomPathStyle
 
 The CustomPathStyle property enables you to customize the appearance of ConnectionPort. 
 
-Properties
+### Properties
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -658,11 +662,10 @@ Appearance of the ConnectionPort can be customized by applying style for the Cus
 
 {% endhighlight  %}
 
-![Description: C:/Users/sundarm/Desktop/connectionport.PNG](Connection-Port_images/Connection-Port_img4.png)
+![](Connection-Port_images/Connection-Port_img4.png)
 
-
-
-_Custom ConnectionPort using CustomPathStyle_
+Custom ConnectionPort using CustomPathStyle
+{:.caption}
 
 
 
@@ -922,9 +925,8 @@ diagramModel.Connections.Add(o1)
 
 ![](Connection-Port_images/Connection-Port_img5.jpeg)
 
-
-
-_Connecting to Port_
+Connecting to Port
+{:.caption}
 
 Make connection to the port at run time
 
@@ -1039,7 +1041,7 @@ diagramModel.Connections.Add(line1)
 {% endhighlight %}
 
 
-Creating Connections between Line Connectors at Run Time
+### Creating Connections between Line Connectors at Run Time
 
 The connections can be created at run time using mouse operations. Drag one of the line connectors to a target line connector. It will automatically create a connection port on a dropped position to make a connection between the two line connectors. The automatically added connection port will be removed when disconnecting the line connectors from it.
 

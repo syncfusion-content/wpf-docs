@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | SfDataPagerControl | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: SfDataPager Control
@@ -47,7 +47,7 @@ Covers an editors like CurrencyTextBox, PercentEdit, DateTimeEdit.</td></tr>
 
 The following screenshot describes the elements of the DataPager control.
 
-![B:/Support/2015/April/24/Image/DataPager/structure1.png](Getting-Started_images/Getting-Started_img1.png)
+![](Getting-Started_images/Getting-Started_img1.png)
 
 
 
@@ -69,16 +69,19 @@ The following steps help you to use the SfDataPager in an application:
 
 
 
-   ![C:/Users/ilanchezhiyan/Desktop/drag.png](Getting-Started_images/Getting-Started_img2.png)
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
 
 
 3. When you drag the SfDataPager to the window, it automatically adds the required references to the current application.To add the SfDataPager using code, you can add the following assemblies to the project.
-1. Syncfusion.Data.WPF
-2. Syncfusion.SfGrid.WPF
-4. You can either drag the control from Visual Studio or Expression Blend, or add the control to your project manually. You need to add the namespace to make use of SfDataPager in your application.
+   
+   I. Syncfusion.Data.WPF
+   
+   II. Syncfusion.SfGrid.WPF
 
+4.You can either drag the control from Visual Studio or Expression Blend, or add the control to your project manually. You need to add the namespace to make use of SfDataPager in your application.
 
+   {%highlight xml%}
 
 
 
@@ -93,11 +96,14 @@ The following steps help you to use the SfDataPager in an application:
 			  </Grid>
 
 			</Window>
+			
+	{%endhighlight%}
 
 
 
-5. Create Business object class named as OrderInfo
-
+5.Create Business object class named as OrderInfo
+   
+   {%highlight c#%}
 
 
 			public class OrderInfo
@@ -183,12 +189,14 @@ The following steps help you to use the SfDataPager in an application:
 				}
 
 			}
+			
+		{%endhighlight%}
 
 
 
-6. Add the following code in ViewModel class
+6.Add the following code in ViewModel class
 
-
+   {%highlight c#%}
 
 			public class ViewModel
 
@@ -243,12 +251,13 @@ The following steps help you to use the SfDataPager in an application:
 				}
 
 			}
+	{%endhighlight%}
 
 
 
-7. Set the ViewModel instance as DataContext to window. Now, you can bind the data collection to the SfDataPagerSource property.
+7.Set the ViewModel instance as DataContext to window. Now, you can bind the data collection to the SfDataPagerSource property.
 
-
+    {%highlight c#%}
 
 			<Window.DataContext>
 
@@ -271,12 +280,14 @@ The following steps help you to use the SfDataPager in an application:
 											Source="{Binding OrderInfoCollection}" />
 
 			</Grid>
+			
+		{%endhighlight%}
 
 
 
-8. Then bind the PagedSource property of the SfDataPager control into the SfDataGridItemsSource property.
+8.Then bind the PagedSource property of the SfDataPager control into the SfDataGridItemsSource property.
 
-
+   {%highlight c#%}
 
 			<Window.DataContext>
 
@@ -311,6 +322,8 @@ The following steps help you to use the SfDataPager in an application:
 											Source="{Binding OrdersDetails}" />
 
 			</Grid>
+			
+		{%endhighlight%}
 
 
 
@@ -318,7 +331,7 @@ The following steps help you to use the SfDataPager in an application:
 
 
 
-   ![B:/Support/2015/April/24/Image/DataPager/Figure3.png](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
-   {:.prettyprint}
+
 

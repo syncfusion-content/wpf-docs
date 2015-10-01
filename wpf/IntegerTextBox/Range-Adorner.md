@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range-Adorner
+title: Range Adorner | IntegerTextBox | wpf | Syncfusion
 description: range adorner
 platform: wpf
 control: IntegerTextBox 
@@ -15,9 +15,9 @@ The EnableRangeAdorner property is used to show the adorner range based on the m
 
 
 
-Properties
+## Properties
 
-Property table
+
 
 <table>
 <tr>
@@ -36,10 +36,12 @@ bool </td></tr>
 
 The EnableRangeAdorner property must be set either in XAML or the code file.
 
-
+{%tabs%}
 {% highlight xml %} EnableRangeAdorner="True" {% endhighlight %}
 
 {% highlight C# %} control.EnableRangeAdorner = true;{% endhighlight %} 
+
+{%endtabs%}
 
 
 

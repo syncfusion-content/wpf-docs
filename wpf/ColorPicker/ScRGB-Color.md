@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ScRGB-Color
+title: ScRGB Color | ColorPicker | wpf | Syncfusion
 description: scrgb color
 platform: wpf
 control: ColorPicker

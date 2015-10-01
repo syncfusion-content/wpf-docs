@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend
+title: Legend | SfMap | wpf | Syncfusion
 description: legend
 platform: wpf
 control: SfMap
@@ -19,7 +19,7 @@ Legends are visible only by setting the LegendVisibility property of the Visibil
 
 Map legends can be positioned by setting the LegendPosition property in ShapeFileLayer. Also, the legend can be positioned based on the margin values for the x axis and the y axis with the help of the LegendPositionX and LegendPositionY properties availablein ShapeFileLayer. For positioning the legend based on margins corresponding to a map, LegendPosition must be set with value of “Default”.
 
-Property Table
+
 
 <table>
 <tr>
@@ -132,6 +132,7 @@ Legends are arranged in matrix format. The number of columns in the arranging ma
 
 
 Legend for shape layers
+{:.caption}
 
 
 {% highlight xml %}
@@ -192,4 +193,5 @@ Legend for shape layers
 
 
 Legend for Bubbles
+{:.caption}
 

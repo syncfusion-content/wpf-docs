@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic-Core-Features
+title: Basic Core Features | AutoComplete | wpf | Syncfusion
 description: basic core features
 platform: wpf
 control: AutoComplete
@@ -87,7 +87,7 @@ void autoComplete1_SelectionChanged(object sender,
 
 ### Properties
 
-  _Properties Table for Basic Features_
+
 
 <table>
 <tr>
@@ -136,7 +136,6 @@ String(null)</td><td>
 
 ### Events
 
-   _Events Table for Basic Features_
 
 <table>
 <tr>

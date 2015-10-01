@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scaling-Opacity-and-Skewing-Support
+title: Scaling Opacity and Skewing Support | Carousel | wpf | Syncfusion
 description: scaling, opacity and skewing support
 platform: wpf
 control: Carousel
@@ -69,7 +69,7 @@ The following code illustrates the usage of these properties.
 
 
 
- _Properties Table_
+
 
 <table>
 <tr>

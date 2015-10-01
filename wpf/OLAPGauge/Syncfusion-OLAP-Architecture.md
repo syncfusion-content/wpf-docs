@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion-OLAP-Architecture
+title: Syncfusion OLAP Architecture | OLAPGauge | wpf | Syncfusion
 description: syncfusion olap architecture
 platform: wpf
 control: OLAP Gauge
@@ -29,18 +29,16 @@ Let us see how the Syncfusion OLAP components allow you to build a full life cyc
 
 ### Properties and Methods
 
-Properties
 
-_Property Table_
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Value It Accepts**' | markdownify }}</th><th>
-{{ '**Reference Path**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Value It Accepts</th><th>
+Reference Path</th></tr>
 <tr>
 <td>
 FrameType</td><td>
@@ -113,18 +111,19 @@ OlapDataManager</td><td>
 -</td></tr>
 </table>
 
- Methods
 
-_Methods Table_
+### Methods
+
+
 
 <table>
 <tr>
 <th>
-{{ '**Methods**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th><th>
-{{ '**Reference Links**' | markdownify }}</th></tr>
+Methods</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th><th>
+Reference Links</th></tr>
 <tr>
 <td>
 GetConnectionString()</td><td>

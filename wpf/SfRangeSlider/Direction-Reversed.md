@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Direction-Reversed
+title: Direction Reversed | SfRangeSlider | wpf | Syncfusion
 description: direction reversed   
 platform: wpf
 control: SfRangeSlider 

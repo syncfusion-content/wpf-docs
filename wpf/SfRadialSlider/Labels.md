@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Labels
+title: Labels | SfRadialSlider  | wpf | Syncfusion
 description: labels 
 platform: wpf
-control: Radial Slider 
+control: SfRadialSlider 
 documentation: ug
 ---
 

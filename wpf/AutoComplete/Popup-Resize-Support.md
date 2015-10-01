@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Popup-Resize-Support
+title: Popup-Resize-Support | AutoComplete | wpf | Syncfusion
 description: popup resize support
 platform: wpf
 control: AutoComplete
@@ -31,7 +31,7 @@ autoComplete1. CanResizePopup = true;
 
 ## Properties
 
-  _Properties Table for Popup Resize_
+
 
 <table>
 <tr>

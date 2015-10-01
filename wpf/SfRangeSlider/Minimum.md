@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Minimum
+title: Minimum | SfRangeSlider | wpf | Syncfusion
 description: minimum 
 platform: wpf
 control: SfRangeSlider 

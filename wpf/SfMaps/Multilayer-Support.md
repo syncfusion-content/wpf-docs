@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multilayer-Support
+title: Multilayer Support | SfMap | wpf | Syncfusion
 description: multilayer support
 platform: wpf
 control: SfMap
@@ -25,6 +25,8 @@ ShapeFileLayer is the core layer for the map. Multiple layers can be added in th
 
 SubShapeFileLayers is the collection of SubShapeFileLayer. SubShapeFileLayer is also a type of shapefile layer. The following code adds multiple layers in the ShapeFileLayer.
 
+
+{%tabs%}
 {% highlight xml %}
 
  
@@ -208,7 +210,7 @@ private Visibility itemsvisibility = Visibility.Visible;
 {% endhighlight %}
  
 
-
+{%endtabs%}
 
 ![](Multilayer-Support_images/Multilayer-Support_img1.png)
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Start-Angle 
+title: Start-Angle | SfRadialSlider  | wpf | Syncfusion
 description: start angle  
 platform: wpf
-control: Radial Slider 
+control: SfRadialSlider
 documentation: ug
 ---
 

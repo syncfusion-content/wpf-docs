@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom-Filtration-Support
+title: Custom Filtration Support | AutoComplete | wpf | Syncfusion
 description: custom filtration support
 platform: wpf
 control: AutoComplete
@@ -15,7 +15,8 @@ When the value of the StringMode property is set as StartChar, AutoComplete begi
 
 ![](Custom-Filtration-Support_images/Custom-Filtration-Support_img1.png)
 
-_StringMode—StartChar_
+StringMode—StartChar
+{:.caption}
 
 
 
@@ -23,7 +24,8 @@ When the value of the StringMode property is set as IndexBased, starting index v
 
 ![](Custom-Filtration-Support_images/Custom-Filtration-Support_img2.png)
 
-_StringMode—IndexBased_
+StringMode—IndexBased
+{:.caption}
 
 
 
@@ -31,7 +33,8 @@ When the value of the StringMode property is set as AnyChar, the AutoComplete se
 
 ![](Custom-Filtration-Support_images/Custom-Filtration-Support_img3.png)
 
-_StringMode—AnyChar_
+StringMode—AnyChar
+{:.caption}
 
 
 ## Using Custom Filtration Support in an Application 
@@ -63,7 +66,7 @@ this.autoComplete3.StringMode = StringMode.AnyChar;
 
 ### Properties
 
-   _Property Table for Filter_
+
 
 <table>
 <tr>

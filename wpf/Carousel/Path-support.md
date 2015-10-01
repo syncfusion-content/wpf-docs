@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Path-support
+title: Path support | Carousel | wpf | Syncfusion
 description: path support
 platform: wpf
 control: Carousel
@@ -41,7 +41,6 @@ You can set custom path using Path property of Carousel control as shown in the 
 
 
 
-_CustomEditor Table_
 
 <table>
 <tr>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance | TaskBar | wpf | Syncfusion
 description: appearance
 platform: wpf
 control: TaskBar
@@ -17,18 +17,28 @@ The appearance of the TaskBar control is customized by using the VisualStyle pro
 
 
 
-Property Table
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 VisualStyle</td><td>
 Sets the visual style for the TaskBar control. The options provided are as follows. 
-{{ '* BlendOffice2003Office2007BlueOffice2007BlackOffice2007SilverShinyBlueShinyRedSyncOrangeVS2010MetroTransparent*' | markdownify }}</td></tr>
+* Blend <br/>
+* Office2003 <br/>
+* Office2007 <br/>
+* BlueOffice2007 <br/>
+* BlackOffice2007Silver <br/>
+* ShinyBlue <br/>
+* ShinyRed <br/>
+* SyncOrange <br/>
+* VS2010 <br/>
+* Metro <br/>
+* Transparent</td></tr>
 </table>
 
 
@@ -37,7 +47,7 @@ Sets the visual style for the TaskBar control. The options provided are as follo
 To set the visual style for the TaskBar, use the below code.
 
 
-
+{%tabs%}
 
 {% highlight xml %}
 
@@ -85,62 +95,69 @@ SkinStorage.SetVisualStyle(taskBar, "Office2007Blue");
 
 {% endhighlight %}
 
+{%endtabs%}
 
-
-![C:/Users/ramalakshmim/Desktop/ugss/taskbar7blue.png](Appearance_images/Appearance_img1.png)
+![](Appearance_images/Appearance_img1.png)
 
 
 TaskBar with "Office2007Blue" Visual Style
+{:.caption}
 
 
 
-![C:/Users/ramalakshmim/Desktop/ugss/task7black.png](Appearance_images/Appearance_img2.png)
+![](Appearance_images/Appearance_img2.png)
 
 
 TaskBar with "Office2007Black" Visual Style
+{:.caption}
 
 
-
-![C:/Users/ramalakshmim/Desktop/ugss/task7silver.png](Appearance_images/Appearance_img3.png)
+![](Appearance_images/Appearance_img3.png)
 
 TaskBar with "Office2007Silver" Visual Style
+{:.caption}
 
 
 
-![C:/Users/ramalakshmim/Desktop/ugss/task10blue.png](Appearance_images/Appearance_img4.png)
+![](Appearance_images/Appearance_img4.png)
 
 
 TaskBar with "Office2010Blue" Visual Style
+{:.caption}
 
 
 
-![C:/Users/ramalakshmim/Desktop/ugss/task10black.png](Appearance_images/Appearance_img5.png)
+![](Appearance_images/Appearance_img5.png)
 
 
 TaskBar with "Office2010Black" Visual Style
+{:.caption}
 
 
 
-![C:/Users/ramalakshmim/Desktop/ugss/task10silver.png](Appearance_images/Appearance_img6.png)
+![](Appearance_images/Appearance_img6.png)
 
 
 
 TaskBar with "Office2010Silver" Visual Style
+{:.caption}
 
 
 
-![C:/Users/ramalakshmim/Desktop/ugss/taskblend.png](Appearance_images/Appearance_img7.png)
+![](Appearance_images/Appearance_img7.png)
 
 
 
 TaskBar with "Blend" Visual Style
+{:.caption}
 
 
 
-![C:/Users/ramalakshmim/Desktop/ugss/taskvs2010.png](Appearance_images/Appearance_img8.png)
+![](Appearance_images/Appearance_img8.png)
 
 
 TaskBar with "VS2010" Visual Style
+{:.caption}
 
 
 
@@ -149,15 +166,15 @@ TaskBar with "VS2010" Visual Style
 
 
 TaskBar with "Metro" Visual Style
+{:.caption}
 
 
 
 ![](Appearance_images/Appearance_img10.png)
 
 
-
 TaskBar with "Transparent" Visual Style
-
+{:.caption}
 
 
 

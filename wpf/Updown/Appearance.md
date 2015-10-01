@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance | UpDownControl | wpf | Syncfusion
 description: appearance
 platform: wpf
 control: UpDown Control

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selected-Page
+title: Selected Page | TabSplitter | wpf | Syncfusion
 description: selected page
 platform: wpf
 control: TabSplitter
@@ -11,7 +11,7 @@ documentation: ug
 
 You can set the selected page by using the IsSelectedPage property. If this property is set to _true_, the page is selected, else it is not selected.
 
-
+{%tabs%}
 {% highlight xml %}
 
  <!-- Adding TabSplitter -->
@@ -70,7 +70,7 @@ You can set the selected page by using the IsSelectedPage property. If this prop
 splitterPage1.IsSelectedPage = true;
 {% endhighlight %}
 
-
+{%endtabs%}
 ![](Selected-Page_images/Selected-Page_img1.png)
 
 

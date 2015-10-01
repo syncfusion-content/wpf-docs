@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotations
+title: Annotations | SfMap | wpf | Syncfusion
 description: annotations
 platform: wpf
 control: SfMap

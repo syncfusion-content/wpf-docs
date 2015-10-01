@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Minimum
+title: Minimum | SfRadialSlider  | wpf | Syncfusion
 description: minimum  
 platform: wpf
-control: Radial Slider 
+control: SfRadialSlider 
 documentation: ug
 ---
 
