@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maximum
+title: Maximum | SfRangeSlider | wpf | Syncfusion
 description: maximum 
 platform: wpf
 control: SfRangeSlider 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maximum-and-Minimum-Value
+title: Maximum and Minimum Value | UpDownControl | wpf | Syncfusion
 description: maximum and minimum value
 platform: wpf
 control: UpDown Control
@@ -15,6 +15,8 @@ The MaxValue is the maximum value that can be set for the UpDown control and Min
 
 The MaxValue and MinValue can be set for the UpDown control as shown in the following code example.
 
+
+{%tabs%}
 {%highlight xml%}
 
 <syncfusion:UpDown Name="upDown" MaxValue="100" MinValue="0"/>
@@ -31,18 +33,20 @@ upDown.MinValue = 0;
 
 {%endhighlight%}
 
-Tables for Properties, and Events
+{%endtabs%}
 
-MaxValue and MinValue properties
+### Tables for Properties, and Events
+
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 MaxValue</td><td>
@@ -59,16 +63,16 @@ double</td><td>
 Not applicable.</td></tr>
 </table>
 
-MaxValue and MinValue Events
+### MaxValue and MinValue Events
 
 <table>
 <tr>
 <th>
-{{ '**Events**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Arguments**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Events</th><th>
+Description</th><th>
+Arguments</th><th>
+Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 MaxValueChanged</td><td>

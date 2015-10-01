@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Icon
+title: Icon | SfRadialMenu  | wpf | Syncfusion
 description: icon
 platform: wpf
-control: Radial Menu 
+control: SfRadialMenu 
 documentation: ug
 ---
 

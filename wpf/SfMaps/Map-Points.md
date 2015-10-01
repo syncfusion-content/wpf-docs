@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Map-Points
+title: Map Points | SfMap | wpf | Syncfusion
 description: map points
 platform: wpf
 control: SfMap

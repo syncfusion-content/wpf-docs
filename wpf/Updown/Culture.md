@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Culture
+title: Culture | TheappearanceoftheUpDowncontrolcanbecustomizedbyusingtheVisualStyleproperty.Thefollowingarethebuilt-inskinsfortheUpDown | wpf | Syncfusion
 description: culture
 platform: wpf
 control: UpDown Control
@@ -15,6 +15,8 @@ The UpDown control provides globalization support by enabling you to change the 
 
 Culture can be set to en-US for the UpDown control as shown in the following code example. The U.S. culture uses “.” as the NumberGroupSeparator.
 
+
+{%tabs%}
 {%highlight xml%}
 
 
@@ -33,12 +35,16 @@ upDown. Culture = new CultureInfo("en-US");
 
 {%endhighlight%}
 
+{%endtabs%}
+
 ![](Culture_images/Culture_img1.jpeg)
 
 
 
 Culture can also be set to bs-Latn for the UpDown control as shown in the following code example. The Latin culture uses “,” as the NumberGroupSeparator.
 
+
+{%tabs%}
 {%highlight xml%}
 
 
@@ -55,20 +61,24 @@ upDown. Culture = new CultureInfo("bs-Latn");
 
 {%endhighlight%}
 
+{%endtabs%}
+
 ![](Culture_images/Culture_img2.jpeg)
 
 
 
-_Culture Property_
+Culture Property
+
+{:.caption}
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 Culture</td><td>

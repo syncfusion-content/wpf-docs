@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | SfRating | wpf | Syncfusion
 description: appearance and styling
 platform: wpf
-control: Rating
+control: SfRating
 documentation: ug
 ---
 

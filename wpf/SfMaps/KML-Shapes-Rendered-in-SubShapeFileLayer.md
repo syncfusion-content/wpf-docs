@@ -1,6 +1,6 @@
 ---
 layout: post
-title: KML-Shapes-Rendered-in-SubShapeFileLayer
+title: KML Shapes Rendered in SubShapeFileLayer | SfMap | wpf | Syncfusion
 description: kml shapes rendered in subshapefilelayer
 platform: wpf
 control: SfMap

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Content
+title: Content | SfRadialSlider  | wpf | Syncfusion
 description: content 
 platform: wpf
-control: Radial Slider 
+control: SfRadialSlider
 documentation: ug
 ---
 

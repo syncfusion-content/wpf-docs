@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Label-Support
+title: Label Support | SfRangeSlider | wpf | Syncfusion
 description: label support
 platform: wpf
 control: SfRangeSlider 

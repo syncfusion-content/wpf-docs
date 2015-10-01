@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance | IntegerTextBox | wpf | Syncfusion
 description: appearance      
 platform: wpf
 control: IntegerTextBox 
@@ -63,11 +63,13 @@ This will open a dialog (below) where you can give your style a name and define 
 
 The result of these steps is an XAML, which is placed within your application. This XAML represents the default style for the Integer Textbox.
 
+
+{%highlight html%}
 <syncfusion:IntegerTextBox Width="150" Height="25" VerticalAlignment="Top" 
 
                            Style="{StaticResource IntegerTextBoxStyle1}"/>
 
-
+{%endhighlight%}
 
 All template items can now be found in the Objects and Timeline window.
 
@@ -83,12 +85,15 @@ Now you can replace the existing Template setter and Triggers with your own crea
 
 Here is a simple example to customize the UnFocused state of the IntegerTextBox: 
 
+
+{%highlight html%}
+
 <Trigger Property="IsFocused" Value="False">
 
     <Setter Property="Background" TargetName="Border" Value="LightGray"/>
 
 </Trigger>
-
+{%endhighlight%}
 
 
 When a control lost the Focus, the Background color of the IntegerTextBox will change to LightGray. Similarly, you can customize every state and property in Expression Blend.
@@ -97,7 +102,9 @@ When a control lost the Focus, the Background color of the IntegerTextBox will c
 
 
 
-See Also
+{%seealso%}
 
 Creating an IntegerTextBox by using Expression Blend
+
+{%endseealso%}
 

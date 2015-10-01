@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic-KML-Format
+title: Basic KML Format | SfMap | wpf | Syncfusion
 description: basic kml format
 platform: wpf
 control: SfMap

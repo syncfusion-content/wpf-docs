@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | SfLinearGauge | wpf | Syncfusion
 description: getting started
 platform: wpf
-control: Linear Gauge 
+control: SfLinearGauge 
 documentation: ug
 ---
 
@@ -12,6 +12,8 @@ documentation: ug
 ## Create the Linear Gauge Programmatically
 
 Refer to the following code example to add a Linear Gauge to your application:
+
+{%tabs%}
 
 {% highlight xml %}
 
@@ -105,7 +107,7 @@ Refer to the following code example to add a Linear Gauge to your application:
             this.Grid.Children.Add(lineargauge);
 {% endhighlight %}
 
-
+{%endtabs%}
 
 
 The following screenshot displays the Linear Gauge:
@@ -154,7 +156,7 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 
 6. Create a namespace reference to the SfLinearGauge control by using the Syncfusion’s global namespace reference, schemas.syncfusion.com or the SfLinearGauge control’s namespace reference  by using the Syncfusion.UI.Xaml.Gauges available in the Syncfusion.SfLinearGauge.WPF assembly.
 
-  
+    {%highlight xml%}
      
 			 xmlns:LinearGauge="http://schemas.syncfusion.com/wpf" 
 
@@ -165,12 +167,11 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 			 namespace:Syncfusion.UI.Xaml.Gauges;assembly=Syncfusion.SfLinearGauge.WPF"
   
 
+    {%endhighlight%}
 
+7.Add the following code to create a simple SfLinearGauge control.
 
-7. Add the following code to create a simple SfLinearGauge control.
-
-   ~~~ xml
-     
+   {%highlight xml%}
 
 
 
@@ -221,13 +222,14 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 			</Grid>
 
 			 </Window>
+			 
+		{%endhighlight%}
    
-   ~~~
-   {:.prettyprint}
+  
 
 
 
- 
+        {%highlight xml%}
     
 			 using System.Windows;
 
@@ -282,16 +284,17 @@ The SyncfusionReferenceManager is used to add the SyncfusionTools.  To Add the S
 				}
 
 			}
+			
+			{%endhighlight%}
   
 
 
 
-8. The simple SfLinearGauge control is created as shown in the following figure.
+8.The simple SfLinearGauge control is created as shown in the following figure.
 
    ![](Getting-Started_images/Getting-Started_img8.png)
 
 
-   {:.prettyprint}
    
 N>  The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version. The Syncfusion Reference Manager can be used only in the Visual Studio 2010, 2012, and 2013.
 

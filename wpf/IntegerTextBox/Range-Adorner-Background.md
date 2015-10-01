@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range-Adorner-Background
+title: Range Adorner Background | IntegerTextBox | wpf | Syncfusion
 description: range adorner background
 platform: wpf
 control: IntegerTextBox 
@@ -15,9 +15,9 @@ The RangeAdornerBackground property is used to set the background color of the r
 
 
 
-Properties
+## Properties
 
-Property table
+
 
 <table>
 <tr>
@@ -36,10 +36,13 @@ Color name</td></tr>
 
 The RangeAdornerBackground property must be set either in XAML or the code file.
 
+{%tabs%}
 
 {% highlight xml %}  RangeAdornerBackground="LightGreen" {% endhighlight %}
 
 {% highlight C# %} control.RangeAdornerBackground = Brushes.LightGreen; {% endhighlight %} 
+
+{%endtabs%}
 
 
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shapes-Color-Customization
+title: Shapes Color Customization | SfMap | wpf | Syncfusion
 description: shapes color customization
 platform: wpf
 control: SfMap

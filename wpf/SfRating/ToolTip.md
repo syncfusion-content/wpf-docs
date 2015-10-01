@@ -1,9 +1,9 @@
 ---
 layout: post
-title: ToolTip
+title: ToolTip | SfRating | wpf | Syncfusion
 description: tooltip
 platform: wpf
-control: Rating
+control: SfRating
 documentation: ug
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing-the-flow-directions
+title: Changing the flow directions | TaskBar | wpf | Syncfusion
 description: changing the flow directions
 platform: wpf
 control: TaskBar
@@ -15,8 +15,8 @@ FlowDirection property table
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property <th><th>
+Description</th></tr>
 <tr>
 <td>
 FlowDirection</td><td>
@@ -26,7 +26,7 @@ Sets the flow direction for the TaskBar. The options provided are as follows.Lef
 
 Here is the code for setting this property.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -69,7 +69,7 @@ This is TaskBar that have a TaskBarItem</TextBlock>
 taskBar.FlowDirection = FlowDirection.RightToLeft;
 {% endhighlight %}
 
-
+{%endtabs%}
 
 
 ![](Changing-the-flow-directions_images/Changing-the-flow-directions_img1.jpeg)

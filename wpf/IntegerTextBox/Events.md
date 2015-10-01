@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events
+title: Events | IntegerTextBox | wpf | Syncfusion
 description: events
 platform: wpf
 control: IntegerTextBox 
@@ -15,14 +15,16 @@ The IntegerTextBox exposes the following events:
 
 ValueChanged – The event occurs when the Value property of the IntegerTextBox is changed.
 
-
+{%tabs%}
 {% highlight xml %} <syncfusion:IntegerTextBox ValueChanged="IntegerTextBox_ValueChanged"/>{% endhighlight %}
 
 {% highlight C# %} IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.ValueChanged+=new PropertyChangedCallback(IntegerTextBox_ValueChanged);{% endhighlight %}
 
-
+{%endtabs%}
 
 You can handle the event as follows:
+
+
 
 {% highlight C# %}
 
@@ -41,12 +43,12 @@ private void IntegerTextBox_ValueChanged(DependencyObject d, DependencyPropertyC
 
 TextChanged – The event occurs when the Value property of the IntegerTextBox is changed.
 
-
+{%tabs%}
 {% highlight html %}<syncfusion:IntegerTextBox  TextChanged="integerTextBox_TextChanged"/>{% endhighlight %}
 
 {% highlight C# %}IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.TextChanged+=new TextChangedEventHandler(IntegerTextBox_TextChanged);{% endhighlight %}
 
-
+{%endtabs%}
 
 You can handle the TextChanged event as follows:
 
@@ -67,12 +69,12 @@ private void IntegerTextBox_TextChanged(object sender, TextChangedEventArgs e)
 
 CultureChanged – The event occurs when the Culture property of the IntegerTextBox is changed. When the Culture property is changed the value is formatted based on the new Culture.
 
-
+{%tabs%}
 {% highlight html %}<syncfusion:IntegerTextBox  CultureChanged="IntegerTextBox_CultureChanged"/>{% endhighlight %}
 
 {% highlight C# %}IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.CultureChanged+=new                                                PropertyChangedCallback(IntegerTextBox_CultureChanged);{% endhighlight %}
 
-
+{%endtabs%}
 
 You can handle the CultureChanged event as follows:
 
@@ -93,12 +95,12 @@ private void IntegerTextBox_CultureChanged(DependencyObject d, DependencyPropert
 
 MaxValueChanged – The event occurs when the MaxValue property of the IntegerTextBox is changed. When the MaxValue is changed the Value and the MinValue properties are formatted.
 
-
+{%tabs%}
 {% highlight html %}<syncfusion:IntegerTextBox  MaxValueChanged="IntegerTextBox_MaxValueChanged"/>{% endhighlight %}
 
 {% highlight C# %}IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.MaxValueChanged+=new                           PropertyChangedCallback(IntegerTextBox_MaxValueChanged);{% endhighlight %}
 
-
+{%endtabs%}
 
 You can handle the MaxValueChanged event as follows:
 
@@ -119,11 +121,11 @@ private void IntegerTextBox_MaxValueChanged(DependencyObject d, DependencyProper
 
 MinValueChanged – The event occurs when the MinValue property of the IntegerTextBox is changed. When the MinValue is changed the Value and the MaxValue properties are formatted.
 
-
+{%tabs%}
 {% highlight html %}<syncfusion:IntegerTextBox  MinValueChanged="IntegerTextBox_MinValueChanged"/>{% endhighlight %}
 
 {% highlight C# %}IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.MinValueChanged+=new                            PropertyChangedCallback(IntegerTextBox_MinValueChanged);{% endhighlight %}
-
+{%endtabs%}
 
 
 You can handle the MinValueChanged event as follows:
@@ -146,12 +148,12 @@ private void IntegerTextBox_MinValueChanged(DependencyObject d, DependencyProper
 
 SelectionChanged – The event occurs when the selection in the textbox is changed.
 
-
+{%tabs%}
 {% highlight html %}<syncfusion:IntegerTextBox  SelectionChanged="IntegerTextBox_SelectionChanged"/>{% endhighlight %}
 
 {% highlight C# %}IntegerTextBox integerTextBox = new IntegerTextBox();integerTextBox.SelectionChanged+=new RoutedEventHandler(IntegerTextBox_SelectionChanged);{% endhighlight %}
 
-
+{%endtabs%}
 
 You can handle the SelectionChanged event as follows:
 

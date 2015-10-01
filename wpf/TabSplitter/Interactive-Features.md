@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactive-Features
+title: Interactive Features | TabSplitter | wpf | Syncfusion
 description: interactive features
 platform: wpf
 control: TabSplitter
@@ -15,6 +15,8 @@ This section illustrates the following interactive features of TabSplitter contr
 
 TabSplitter contains one or more pages that are defined as TabSplitter Items. Use the following code to add a TabSplitter Item to the TabSplitter control.
 
+
+{%tabs%}
 {% highlight xml %} 
 
  <!-- Adding TabSplitter -->
@@ -68,7 +70,7 @@ this.Content = tabsplitter;
 {% endhighlight %}
 
 
-
+{%endtabs%}
 
 ![](Interactive-Features_images/Interactive-Features_img1.png)
 
@@ -89,6 +91,8 @@ TabSplitter Items contains a collection of pages. These pages are defined as Pan
 
  The following code example can be used to add Panel Items to the TabSplitter Item:
 
+
+{%tabs%}
 {% highlight xml %}
 
 
@@ -210,7 +214,7 @@ tabSplitter.Items.Add(tabSplitterItem1);
 this.Content = tabsplitter;
 {% endhighlight %}
 
-
+{%endtabs%}
 
 
 ![](Interactive-Features_images/Interactive-Features_img2.png)
@@ -223,7 +227,7 @@ this.Content = tabsplitter;
 
 You can split the pages in the TabSplitter Item by using the SplitterPage. The following code example illustrates how to add a SplitterPage to the TabSplitter Item.
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -345,7 +349,7 @@ this.Content = tabsplitter;
 {% endhighlight %}
 
 
-
+{%endtabs%}
 
 ![](Interactive-Features_images/Interactive-Features_img3.png)
 
@@ -357,7 +361,7 @@ this.Content = tabsplitter;
 
 You can collapse or expand the Bottom Panel by using the IsCollapsedBottomPanel property. The default value is _false_. To collapse the Bottom Panel, refer to the following code snippet:
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -427,7 +431,7 @@ tabSplitterItem1.IsCollapsedBottomPanel = true; 
 {% endhighlight %}
 
 
-
+{%endtabs%}
 
 ![](Interactive-Features_images/Interactive-Features_img4.png)
 
@@ -439,7 +443,7 @@ tabSplitterItem1.IsCollapsedBottomPanel = true; 
 
 You can set the height of the BottomPanel in TabSplitter using BottomPanelHeight property. To set the height of the BottomPanel, refer the following code snippet: 
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -507,7 +511,7 @@ You can set the height of the BottomPanel in TabSplitter using BottomPanelHeight
 
 {% endhighlight %}
 
-
+{%endtabs%}
 
 ![](Interactive-Features_images/Interactive-Features_img5.png)
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Restrict-change-of-values-in-the-UpDown-control
+title: Restrict change of values in the UpDown control | UpDownControl | wpf | Syncfusion
 description: restrict change of values in the updown control
 platform: wpf
 control: UpDown Control

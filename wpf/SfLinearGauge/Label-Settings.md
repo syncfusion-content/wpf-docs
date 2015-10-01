@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Label-Settings
+title: Label Settings | SfLinearGauge | wpf | Syncfusion
 description: label settings
 platform: wpf
-control: Linear Gauge 
+control: SfLinearGauge 
 documentation: ug
 ---
 
@@ -16,6 +16,8 @@ Labels of the linear scale provide a numeric value to the major ticks that are s
 
 The foreground of the label is customized by setting the LabelStroke of the linear scale. By making use of the LabelSize property, the font size of the labels is personalized. The labels can be positioned away from the ticks by using the LabelOffset property.
 
+
+{%tabs%}
 {% highlight xml %}
 
 
@@ -62,7 +64,7 @@ The foreground of the label is customized by setting the LabelStroke of the line
             this.Grid.Children.Add(lineargauge);
 
 {% endhighlight %}
-
+{%endtabs%}
 
 
 The following screenshot illustrates customizing Labels of the Linear Gauge:
@@ -78,7 +80,7 @@ The labels in the scale can be placed above or below the linear scale by choosin
 1. Above.
 2. Below (Default).
 
-
+{%tabs%}
 {% highlight xml %}
 
 
@@ -141,7 +143,7 @@ The labels in the scale can be placed above or below the linear scale by choosin
             this.Grid.Children.Add(lineargauge); 
 
 {% endhighlight %}
-
+{%endtabs%}
 
 
 The following screenshot illustrates the labels positioned above the Scale:

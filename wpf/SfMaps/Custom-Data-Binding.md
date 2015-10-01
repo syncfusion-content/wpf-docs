@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom-Data-Binding
+title: Custom Data Binding | SfMap | wpf | Syncfusion
 description: custom data binding
 platform: wpf
 control: SfMap
@@ -21,6 +21,7 @@ The rule for longitude is similar to that of the latitude, apart from the direct
 
 To show the custom data on the map, the CustomDataSourceTemplatemust be specified. CustomDataSourceTemplate is a DataTemplate type API used to expose the template for custom data.
 
+{%tabs%}
 {% highlight C# %}
 
 
@@ -287,6 +288,8 @@ public class ViewModel
 
    </Syncfusion:SfMap >
 {% endhighlight %}
+
+{%endtabs%}
 
 
 ![](Custom-Data-Binding_images/Custom-Data-Binding_img1.png)

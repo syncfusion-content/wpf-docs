@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Tick-settings
+title: Tick settings | SfLinearGauge | wpf | Syncfusion
 description: tick settings
 platform: wpf
-control: Linear Gauge 
+control: SfLinearGauge
 documentation: ug
 ---
 
@@ -15,6 +15,8 @@ Ticks are of two types: major and minor. These ticks are arranged with respect t
 
 By setting the MajorTickStroke and MinorTickStroke, the stroke of the major ticks and minor ticks are personalized. With the help of the MajorTickStrokeThickness and MinorTickStrokeThickness, the stroke thickness of the major and minor ticks is customized. The size of the major ticks and minor ticks can be modified by using the MajorTickSize and MinorTickSize properties.
 
+
+{%tabs%}
 {% highlight xml %}
 
 
@@ -80,7 +82,7 @@ By setting the MajorTickStroke and MinorTickStroke, the stroke of the major tick
 
 {% endhighlight %}
 
-
+{%endtabs%}
 
 The following screenshot illustrates customizingthe Ticks of the Linear Gauge:
 
@@ -96,6 +98,8 @@ The ticks in the scale can be placed above, below, or in between the scale by ch
 2. Below (Default).
 3. Cross.
 
+
+{%tabs%}
 
 {% highlight xml %}
 
@@ -151,6 +155,8 @@ The ticks in the scale can be placed above, below, or in between the scale by ch
             this.Grid.Children.Add(lineargauge);
 
 {% endhighlight %}
+
+{%endtabs%}
 
 The following screenshot displays Ticks Positioned across the Scale: 
 

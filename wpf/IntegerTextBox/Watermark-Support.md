@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Watermark-Support
+title: Watermark Support | IntegerTextBox | wpf | Syncfusion
 description: watermark support
 platform: wpf
 control: IntegerTextBox 

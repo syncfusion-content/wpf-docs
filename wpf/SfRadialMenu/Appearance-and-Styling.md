@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Appearance-and-Styling
+title: Appearance and Styling | SfRadialMenu  | wpf | Syncfusion
 description: appearance and styling 
 platform: wpf
-control: Radial Menu 
+control: SfRadialMenu 
 documentation: ug
 ---
 
