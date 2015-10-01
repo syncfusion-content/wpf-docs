@@ -638,6 +638,10 @@ Gets or sets the text color for the adornment labels.</td></tr>
 <td>
 Margin</td><td>
 Gets or sets the outer margin of the adornment labels.</td></tr>
+<tr>
+<td>
+LabelRotationAngle</td><td>
+Gets or sets the double value that represents the angle to rotate the adornment Label.</td></tr>
 </table>
 
 
@@ -690,8 +694,30 @@ The following code example explains the customization of adornments labels.
 {% endhighlight %}
 
 
-
 ![](Adornments_images/Adornments_img10.png)
+
+### Adornments Label Rotation    
+
+SfChart allows to define the angle for adornments by specifying LabelRotationAngle in ChartAdornmentInfo.
+
+The following code explains the adornments rotation. 
+
+{% highlight xml %}
+
+   <chart:ColumnSeries XBindingPath="Name" Label="Year 2010" YBindingPath="Value"   
+                                              ItemsSource="{Binding Datas}" >
+                                              
+               <chart:ColumnSeries.AdornmentsInfo>
+               
+                   <chart:ChartAdornmentInfo ShowLabel="True" LabelRotationAngle="-45" />
+                   
+               </chart:ColumnSeries.AdornmentsInfo>
+               
+    </chart:ColumnSeries>
+    
+{% endhighlight %}
+
+![](Adornments_images/AdornmentLabelRotation.png)
 
 
 

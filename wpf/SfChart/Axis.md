@@ -718,6 +718,45 @@ When RangePadding for DateTimeAxis is set to Round, the range of the chart axis 
 ![C:/Users/rachel/Desktop/wpf/sshot-9.png](Axis_images/Axis_img17.png)
 
 
+### IncludeStripLineRange
+
+This property is used to enable or disable the range of StripLines in the axis. 
+
+<table>
+<tr>
+<th>
+Property</th><th>
+Definition</th></tr>
+<tr>
+<td>
+IncludeStripLineRange</td><td>
+Gets or sets the value, that decides whether the StripLine range to be included in the axis range or not.</td></tr>
+</table>
+
+{% highlight xml %}
+
+    <chart:SfChart.SecondaryAxis>
+        
+    <chart:NumericalAxis x:Name="y_axis" Header="Items sold" IncludeStripLineRange="True">
+    
+        <chart:NumericalAxis.StripLines>
+        
+            <chart:ChartStripLine x:Name="ystripline" Start="80" Width="20" Background="#FF9b56f6" Opacity="0.7" />
+            
+        </chart:NumericalAxis.StripLines>
+        
+    </chart:NumericalAxis>
+    
+    </chart:SfChart.SecondaryAxis>
+
+
+{% endhighlight %}
+
+![](Axis_images/Axis_img35.png)
+
+
+Note: In above chart, the additional range of stripline from 80 to 100 is included in Y axis since IncludeStripLineRange is enabled for y axis.
+
 
 ## Positioning axis labels
 
