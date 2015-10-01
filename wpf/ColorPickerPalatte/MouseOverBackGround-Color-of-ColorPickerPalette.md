@@ -28,9 +28,9 @@ ColorPickerPalette1.MouseOverBackground = Brushes.Green;
 {% endhighlight %}
 
 
-## Properties
+### Properties
 
-  _Property Table_
+  
 
 <table>
 <tr>

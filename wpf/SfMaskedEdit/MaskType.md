@@ -19,9 +19,9 @@ Each MaskType has different set of mask elements that are combined to form a mas
 
 Expressions that are generated with very simple mask elements come under this group. This is mainly used for fixed length inputs. For example: Phone number.
 
-### Mask elements in this mask type are as follows:
+Mask elements in this mask type are as follows:
 
-Simple Mask elements
+### Simple Mask elements
 
 <table>
 <tr>
@@ -68,7 +68,7 @@ Regular
 
 Expressions that are generated with slightly complex mask elements are under this group, preferable for variable length inputs and input in range. For example: Hexadecimal values [0-9A-C].
 
-Regular Mask elements
+### Regular Mask elements
 
 <table>
 <tr>
@@ -114,7 +114,7 @@ Accepts the input for zero or more times.</td></tr>
 
 Very complex regular expressions come under this category. It accepts input of variable length and allows to use OR expressions.  For example: E-mail_._
 
-ReEx Mask elements
+### ReEx Mask elements
 
 <table>
 <tr>

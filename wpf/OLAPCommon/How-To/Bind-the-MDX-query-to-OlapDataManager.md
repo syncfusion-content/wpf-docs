@@ -20,6 +20,7 @@ OlapDataManager will accept the MDX query in the string format through any one o
 
 The following code will illustrate the passing of the MXD query as input:
 
+{% tabs %}
 {% highlight c# %}
 
 OlapDataManager olapDataManager = new OlapDataManager("DataSource=localhost; Initial Catalog=Adventure Works DW");
@@ -72,9 +73,11 @@ olapDataManager.MdxQuery = mdxQuery
 olapDataManager.ExecuteCellSet()
 
 {% endhighlight  %}
+{% endtabs %}
 
 This will accept the MDX query as a string and assign it to the OlapDataManager’d mdxQuery property and invoke the data process.
 
+{% tabs %}
 {% highlight c# %}
 
 OlapDataManager olapDataManager = new OlapDataManager("DataSource=localhost; Initial Catalog=Adventure Works DW");
@@ -128,7 +131,7 @@ olapDataManager.ExecuteCellSet(mdxQuery)
 
 {% endhighlight  %}
 
-
+{% endtabs %}
 
 
 ## Sequential Diagram 
@@ -143,7 +146,8 @@ The following sequential diagram is matching when user gives input as MDX query:
 
 
 
-_Figure10: Olap base sequential diagram_
+Olap base sequential diagram
+{:.caption}
 
 
 

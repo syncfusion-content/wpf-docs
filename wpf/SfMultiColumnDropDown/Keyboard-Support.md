@@ -11,7 +11,7 @@ documentation: ug
 
 The following table lists the keyboard shortcuts supported by the MultiColumnDropDown control.
 
-List of Keyboard Shortcut
+### List of Keyboard Shortcut
 
 <table>
 <tr>

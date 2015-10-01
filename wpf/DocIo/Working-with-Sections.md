@@ -36,9 +36,9 @@ The following screenshot illustrates the breaks accessible through the Insert me
 
 
 
-Public Constructors
+### Public Constructors
 
-_Public Constructors_
+
 
 <table>
 <tr>
@@ -50,9 +50,10 @@ Description</th></tr>
 WSection.WSection (IWordDocument)</td><td>
 Initializes a new instance of the WSection class.  </td></tr>
 </table>
-Public Properties
 
-_Public Properties_
+### Public Properties
+
+
 
 <table>
 <tr>
@@ -96,9 +97,10 @@ Gets collections of paragraphs in the section as IWParagraphCollection instance.
 Tables</td><td>
 Gets collections of tables in the sections as IWTableCollection instance.</td></tr>
 </table>
-Public Methods
 
-_Public Methods_
+### Public Methods
+
+
 
 <table>
 <tr>
@@ -129,13 +131,45 @@ Makes all columns in current section to be of equal width.  </td></tr>
 The following code example illustrates how to create a simple Word document, and add sections and breaks to it.
 
 
-
+{% tabs %}
 {% highlight c# %}
-//Creates a new Word document.IWordDocument doc = new WordDocument();//Adds the section into Word document.IWSection section = doc.AddSection();//Adds a paragraph to created section.IWParagraph paragraph = section.AddParagraph();//Appends the text to the created paragraph.paragraph.AppendText("Text Body_Text");//Sets Page break.paragraph.ParagraphFormat.PageBreakAfter = true;paragraph = section.AddParagraph();paragraph.AppendText("[ After PAGE BREAK ] \rText Body_Text");section = doc.AddSection();//Sets Section break.section.BreakCode = SectionBreakCode.NewPage;paragraph = section.AddParagraph();paragraph.AppendText("[ After SECTION BREAK ( New page ) ] \rText Body_Text");section = doc.AddSection();section.BreakCode = SectionBreakCode.NoBreak;paragraph = section.AddParagraph();paragraph.AppendText("[ After SECTION BREAK ( continuous page ) ] \rText Body_Text");
+//Creates a new Word document.
+IWordDocument doc = new WordDocument();
+//Adds the section into Word document.
+IWSection section = doc.AddSection();
+//Adds a paragraph to created section.
+IWParagraph paragraph = section.AddParagraph();
+//Appends the text to the created paragraph.
+paragraph.AppendText("Text Body_Text");
+//Sets Page break.
+paragraph.ParagraphFormat.PageBreakAfter = true;
+paragraph = section.AddParagraph();
+paragraph.AppendText("[ After PAGE BREAK ] \rText Body_Text");
+section = doc.AddSection();
+//Sets Section break.
+section.BreakCode = SectionBreakCode.NewPage;
+paragraph = section.AddParagraph();
+paragraph.AppendText("[ After SECTION BREAK ( New page ) ] \rText Body_Text");
+section = doc.AddSection();
+section.BreakCode = SectionBreakCode.NoBreak;
+paragraph = section.AddParagraph();
+paragraph.AppendText("[ After SECTION BREAK ( continuous page ) ] \rText Body_Text");
 {% endhighlight %}
 {% highlight vbnet %}
-'Creates a new Word document.Dim doc As IWordDocument = New WordDocument()‘Adds the section into Word document.Dim section As IWSection = doc.AddSection()‘Adds paragraph to created section.Dim paragraph As IWParagraph = section.AddParagraph()‘Appends the text to the created paragraph.paragraph.AppendText("Text Body_Text")'Sets Page break.paragraph.ParagraphFormat.PageBreakAfter = Trueparagraph = section.AddParagraph()paragraph.AppendText("[ After PAGE BREAK ] " and Constants.VB.NETCr and "Text Body_Text")section = doc.AddSection()'Sets Section break.section.BreakCode = SectionBreakCode.NewPageparagraph = section.AddParagraph()paragraph.AppendText("[ After SECTION BREAK ( New page ) ] " and Constants.VB.NETCr and "Text Body_Text")section = doc.AddSection()section.BreakCode = SectionBreakCode.NoBreakparagraph = section.AddParagraph()paragraph.AppendText("[ After SECTION BREAK ( continuous page ) ] " and Constants.VB.NETCr and "Text Body_Text")
+'Creates a new Word document.
+Dim doc As IWordDocument = New WordDocument()
+‘Adds the section into Word document.
+Dim section As IWSection = doc.AddSection()
+‘Adds paragraph to created section.
+Dim paragraph As IWParagraph = section.AddParagraph()
+‘Appends the text to the created paragraph.
+paragraph.AppendText("Text Body_Text")
+'Sets Page break.
+paragraph.ParagraphFormat.PageBreakAfter = Trueparagraph = section.AddParagraph()paragraph.AppendText("[ After PAGE BREAK ] " and Constants.VB.NETCr and "Text Body_Text")section = doc.AddSection()
+'Sets Section break.
+section.BreakCode = SectionBreakCode.NewPageparagraph = section.AddParagraph()paragraph.AppendText("[ After SECTION BREAK ( New page ) ] " and Constants.VB.NETCr and "Text Body_Text")section = doc.AddSection()section.BreakCode = SectionBreakCode.NoBreakparagraph = section.AddParagraph()paragraph.AppendText("[ After SECTION BREAK ( continuous page ) ] " and Constants.VB.NETCr and "Text Body_Text")
 {% endhighlight %}
+{% endtabs %}
 
 
 ## Working with Headers and Footers
@@ -159,9 +193,9 @@ You can set the header and footer by using the HeadersFooters property of the se
 
 The following properties return the instance of the HeaderFooter type.
 
-Public Properties
+### Public Properties
 
-_Public Properties_
+
 
 <table>
 <tr>
@@ -209,9 +243,10 @@ Gets the odd header information as HeaderFooter instance (This is also the defau
 LinkToPrevious</td><td>
 Links to a previous section's header and footer.</td></tr>
 </table>
-Public Methods
 
-_Public Methods_
+### Public Methods
+
+
 
 <table>
 <tr>
@@ -228,9 +263,9 @@ Returns an enumerator that iterates through a collection.  </td></tr>
 
 The HeaderFooter class represents the page header or footer. It is inherited from the WTextBody, and hence can hold other paragraphs inside.
 
-Public Properties
+### Public Properties
 
-_Public Properties_
+
 
 <table>
 <tr>
@@ -245,13 +280,112 @@ Specifies the type of the entity.  </td></tr>
 The following code example illustrates how to add text to different types of headers and footers.
 
 
-
+{% tabs %}
 {% highlight c# %}
-//Creates a new document.WordDocument document = new WordDocument();//Adds the first section to the document.IWSection section = document.AddSection();//Adds a paragraph to the section.IWParagraph paragraph = section.AddParagraph();//Sets DifferentFirstPage and DifferentOddEvenPages to true for inserting Header and Footer text.section.PageSetup.DifferentFirstPage = true;section.PageSetup.DifferentOddAndEvenPages = true;//Appends some text to the first page in document.paragraph.AppendText("\r\r[ First Page ] \r\rText Body_Text Body_Text Body_Text Body_Text Body_Text Body");paragraph.ParagraphFormat.PageBreakAfter = true;//Appends some text to the second page in document.paragraph = section.AddParagraph();paragraph.AppendText("\r\r[ Second Page ] \r\rText Body_Text Body_Text Body_Text Body_Text Body_Text Body");paragraph.ParagraphFormat.PageBreakAfter = true;//Appends some text to the third page in document.paragraph = section.AddParagraph();paragraph.AppendText("\r\r[ Third Page ] \r\rText Body_Text Body_Text Body_Text Body_Text Body_Text Body");//Inserts First Page Header.paragraph = new WParagraph(document);paragraph.AppendText("[ FIRST PAGE Header ]");section.HeadersFooters.FirstPageHeader.Paragraphs.Add(paragraph);//Inserts First Page Footer.paragraph = new WParagraph(document);paragraph.AppendText("[ FIRST PAGE Footer ]");section.HeadersFooters.FirstPageFooter.Paragraphs.Add(paragraph);//Inserts Odd Pages Header.paragraph = new WParagraph(document);paragraph.AppendText("[ ODD Page Header Text goes here ]");section.HeadersFooters.OddHeader.Paragraphs.Add(paragraph);//Inserts Odd Pages Footer.paragraph = new WParagraph(document);paragraph.AppendText("[ ODD Page Footer Text goes here ]");section.HeadersFooters.OddFooter.Paragraphs.Add(paragraph);//Inserts Even Pages Header.paragraph = new WParagraph(document);paragraph.AppendText("[ EVEN Page Header Text goes here ]");section.HeadersFooters.EvenHeader.Paragraphs.Add(paragraph);//Inserts Even Pages Footer.paragraph = new WParagraph(document);paragraph.AppendText("[ EVEN Page Footer Text goes here ]");section.HeadersFooters.EvenFooter.Paragraphs.Add(paragraph);//Adds the second section to the document.section = document.AddSection();section.PageSetup.DifferentFirstPage = true;//Appends some text to the Second Sections's first page in the document.paragraph = section.AddParagraph();paragraph.AppendText("\r\r[ First Page for SECOND SECTION ]\r[ ON DIFFERENT FIRTS PAGE ]\r\rText Body_Text Body_Text Body_Text Body_Text Body_Text Body");paragraph.ParagraphFormat.PageBreakAfter = true;//Appends some text to the Second Sections's second page in the document.paragraph = section.AddParagraph();paragraph.AppendText("\r\r[ Second Page for SECOND SECTION ]\rText Body_Text Body_Text Body_Text Body_Text Body_Text Body");//Inserts Second Sections's First Header.paragraph = new WParagraph(document);paragraph.AppendText("[ SECOND SECTION FIRST PAGE Header ]");section.HeadersFooters.FirstPageHeader.Paragraphs.Add(paragraph);//Inserts Second Sections's First Footer.paragraph = new WParagraph(document);paragraph.AppendText("[ SECOND SECTION FIRST PAGE Footer ]");section.HeadersFooters.FirstPageFooter.Paragraphs.Add(paragraph);//Inserts Second Sections's Header.paragraph = new WParagraph(document);paragraph.AppendText("SECOND SECTION Header Text goes here");section.HeadersFooters.OddHeader.Paragraphs.Add(paragraph);//Inserts Second Sections's Footer.paragraph = new WParagraph(document);paragraph.AppendText("SECOND SECTION Footer Text goes here");section.HeadersFooters.OddFooter.Paragraphs.Add(paragraph);//Saves the document to disk.document.Save("Sample.doc", FormatType.Doc);
+//Creates a new document.
+WordDocument document = new WordDocument();
+//Adds the first section to the document.
+IWSection section = document.AddSection();
+//Adds a paragraph to the section.
+IWParagraph paragraph = section.AddParagraph();
+//Sets DifferentFirstPage and DifferentOddEvenPages to true for inserting Header and Footer text.
+section.PageSetup.DifferentFirstPage = true;
+section.PageSetup.DifferentOddAndEvenPages = true;
+//Appends some text to the first page in document.
+paragraph.AppendText("\r\r[ First Page ] \r\rText Body_Text Body_Text Body_Text Body_Text Body_Text Body");
+paragraph.ParagraphFormat.PageBreakAfter = true;
+//Appends some text to the second page in document.
+paragraph = section.AddParagraph();
+paragraph.AppendText("\r\r[ Second Page ] \r\rText Body_Text Body_Text Body_Text Body_Text Body_Text Body");
+paragraph.ParagraphFormat.PageBreakAfter = true;
+//Appends some text to the third page in document.
+paragraph = section.AddParagraph();
+paragraph.AppendText("\r\r[ Third Page ] \r\rText Body_Text Body_Text Body_Text Body_Text Body_Text Body");
+//Inserts First Page Header.
+paragraph = new WParagraph(document);
+paragraph.AppendText("[ FIRST PAGE Header ]");
+section.HeadersFooters.FirstPageHeader.
+Paragraphs.Add(paragraph);
+//Inserts First Page Footer.paragraph = new WParagraph(document);
+paragraph.AppendText("[ FIRST PAGE Footer ]");
+section.HeadersFooters.FirstPageFooter.Paragraphs.Add(paragraph);
+//Inserts Odd Pages Header.
+paragraph = new WParagraph(document);
+paragraph.AppendText("[ ODD Page Header Text goes here ]");
+section.HeadersFooters.OddHeader.Paragraphs.Add(paragraph);
+//Inserts Odd Pages Footer.paragraph = new WParagraph(document);
+paragraph.AppendText("[ ODD Page Footer Text goes here ]");
+section.HeadersFooters.OddFooter.Paragraphs.Add(paragraph);
+//Inserts Even Pages Header.
+paragraph = new WParagraph(document);
+paragraph.AppendText("[ EVEN Page Header Text goes here ]");
+section.HeadersFooters.EvenHeader.Paragraphs.Add(paragraph);
+//Inserts Even Pages Footer.
+paragraph = new WParagraph(document);
+paragraph.AppendText("[ EVEN Page Footer Text goes here ]");
+section.HeadersFooters.EvenFooter.Paragraphs.Add(paragraph);
+//Adds the second section to the document.
+section = document.AddSection();
+section.PageSetup.DifferentFirstPage = true;
+//Appends some text to the Second Sections's first page in the document.
+paragraph = section.AddParagraph();
+paragraph.AppendText("\r\r[ First Page for SECOND SECTION ]\r[ ON DIFFERENT FIRTS PAGE ]\r\rText Body_Text Body_Text Body_Text Body_Text Body_Text Body");
+paragraph.ParagraphFormat.PageBreakAfter = true;
+//Appends some text to the Second Sections's second page in the document.
+paragraph = section.AddParagraph();
+paragraph.AppendText("\r\r[ Second Page for SECOND SECTION ]\rText Body_Text Body_Text Body_Text Body_Text Body_Text Body");
+//Inserts Second Sections's First Header.
+paragraph = new WParagraph(document);
+paragraph.AppendText("[ SECOND SECTION FIRST PAGE Header ]");
+section.HeadersFooters.FirstPageHeader.Paragraphs.Add(paragraph);
+//Inserts Second Sections's First Footer.
+paragraph = new WParagraph(document);
+paragraph.AppendText("[ SECOND SECTION FIRST PAGE Footer ]");
+section.HeadersFooters.FirstPageFooter.Paragraphs.Add(paragraph);
+//Inserts Second Sections's Header.
+paragraph = new WParagraph(document);
+paragraph.AppendText("SECOND SECTION Header Text goes here");
+section.HeadersFooters.OddHeader.Paragraphs.Add(paragraph);
+//Inserts Second Sections's Footer.paragraph = new WParagraph(document);
+paragraph.AppendText("SECOND SECTION Footer Text goes here");
+section.HeadersFooters.OddFooter.Paragraphs.Add(paragraph);
+//Saves the document to disk.
+document.Save("Sample.doc", FormatType.Doc);
 {% endhighlight  %}
 {% highlight vbnet %}
-'Creates a new document.Dim document As WordDocument = New WordDocument()'Adds the first section to the document.Dim section As IWSection = document.AddSection()'Adds a paragraph to the section.Dim paragraph As IWParagraph = section.AddParagraph()'Sets DifferentFirstPage and DifferentOddEvenPages as true for inserting Header and Footer text.section.PageSetup.DifferentFirstPage = Truesection.PageSetup.DifferentOddAndEvenPages = True'Appends some text to the first page in document.paragraph.AppendText(Constants.VB.NETCr + Constants.VB.NETCr and "[ First Page ] " and Constants.VB.NETCr + Constants.VB.NETCr and "Text Body_Text Body_Text Body_Text Body_Text Body_Text Body")paragraph.ParagraphFormat.PageBreakAfter = True'Appends some text to the second page in document.paragraph = section.AddParagraph()paragraph.AppendText(Constants.VB.NETCr + Constants.VB.NETCr and "[ Second Page ] " and Constants.VB.NETCr + Constants.VB.NETCr and "Text Body_Text Body_Text Body_Text Body_Text Body_Text Body")paragraph.ParagraphFormat.PageBreakAfter = True'Appends some text to the third page in document.paragraph = section.AddParagraph()paragraph.AppendText(Constants.VB.NETCr + Constants.VB.NETCr and "[ Third Page ] " and Constants.VB.NETCr + Constants.VB.NETCr and "Text Body_Text Body_Text Body_Text Body_Text Body_Text Body")'Inserts First Page Header.paragraph = New WParagraph(document)paragraph.AppendText("[ FIRST PAGE Header ]")section.HeadersFooters.FirstPageHeader.Paragraphs.Add(paragraph)'Inserts First Page Footer.paragraph = New WParagraph(document)paragraph.AppendText("[ FIRST PAGE Footer ]")section.HeadersFooters.FirstPageFooter.Paragraphs.Add(paragraph)'Inserts Odd Pages Header.paragraph = New WParagraph(document)paragraph.AppendText("[ ODD Page Header Text goes here ]")section.HeadersFooters.OddHeader.Paragraphs.Add(paragraph)'Inserts Odd Pages Footer.paragraph = New WParagraph(document)paragraph.AppendText("[ ODD Page Footer Text goes here ]")section.HeadersFooters.OddFooter.Paragraphs.Add(paragraph)'Inserts Even Pages Header.paragraph = New WParagraph(document)paragraph.AppendText("[ EVEN Page Header Text goes here ]")section.HeadersFooters.EvenHeader.Paragraphs.Add(paragraph)'Inserts Even Pages Footer.paragraph = New WParagraph(document)paragraph.AppendText("[ EVEN Page Footer Text goes here ]")section.HeadersFooters.EvenFooter.Paragraphs.Add(paragraph)'Adds the second section to the document.section = document.AddSection()section.PageSetup.DifferentFirstPage = True'Appends some text to the Second Sections's first page in the document.paragraph = section.AddParagraph()paragraph.AppendText(Constants.VB.NETCr + Constants.VB.NETCr and "[ First Page for SECOND SECTION ]" and Constants.VB.NETCr and "[ ON DIFFERENT FIRTS PAGE ]" and Constants.VB.NETCr + Constants.VB.NETCr and "Text Body_Text Body_Text Body_Text Body_Text Body_Text Body")paragraph.ParagraphFormat.PageBreakAfter = True'Appends some text to the Second Sections's second page in the document.paragraph = section.AddParagraph()paragraph.AppendText(Constants.VB.NETCr + Constants.VB.NETCr and "[ Second Page for SECOND SECTION ]" and Constants.VB.NETCr and "Text Body_Text Body_Text Body_Text Body_Text Body_Text Body")'Inserts Second Sections's First Header.paragraph = New WParagraph(document)paragraph.AppendText("[ SECOND SECTION FIRST PAGE Header ]")section.HeadersFooters.FirstPageHeader.Paragraphs.Add(paragraph)'Inserts Second Sections's First Footer.paragraph = New WParagraph(document)paragraph.AppendText("[ SECOND SECTION FIRST PAGE Footer ]")section.HeadersFooters.FirstPageFooter.Paragraphs.Add(paragraph)'Inserts Second Sections's Header.paragraph = New WParagraph(document)paragraph.AppendText("SECOND SECTION Header Text goes here")section.HeadersFooters.OddHeader.Paragraphs.Add(paragraph)'Inserts Second Sections's Footer.paragraph = New WParagraph(document)paragraph.AppendText("SECOND SECTION Footer Text goes here")section.HeadersFooters.OddFooter.Paragraphs.Add(paragraph)'Saves the document to disk.document.Save("Sample.doc", FormatType.Doc)
+'Creates a new document.
+Dim document As WordDocument = New WordDocument()
+'Adds the first section to the document.
+Dim section As IWSection = document.AddSection()
+'Adds a paragraph to the section.
+Dim paragraph As IWParagraph = section.AddParagraph()
+'Sets DifferentFirstPage and DifferentOddEvenPages as true for inserting Header and Footer text.
+section.PageSetup.DifferentFirstPage = Truesection.PageSetup.DifferentOddAndEvenPages = True
+'Appends some text to the first page in document.
+paragraph.AppendText(Constants.VB.NETCr + Constants.VB.NETCr and "[ First Page ] " and Constants.VB.NETCr + Constants.VB.NETCr and "Text Body_Text Body_Text Body_Text Body_Text Body_Text Body")paragraph.ParagraphFormat.PageBreakAfter = True
+'Appends some text to the second page in document.
+paragraph = section.AddParagraph()paragraph.AppendText(Constants.VB.NETCr + Constants.VB.NETCr and "[ Second Page ] " and Constants.VB.NETCr + Constants.VB.NETCr and "Text Body_Text Body_Text Body_Text Body_Text Body_Text Body")paragraph.ParagraphFormat.PageBreakAfter = True'Appends some text to the third page in document.paragraph = section.AddParagraph()paragraph.AppendText(Constants.VB.NETCr + Constants.VB.NETCr and "[ Third Page ] " and Constants.VB.NETCr + Constants.VB.NETCr and "Text Body_Text Body_Text Body_Text Body_Text Body_Text Body")'Inserts First Page Header.paragraph = New WParagraph(document)paragraph.AppendText("[ FIRST PAGE Header ]")section.HeadersFooters.FirstPageHeader.Paragraphs.Add(paragraph)'Inserts First Page Footer.paragraph = New WParagraph(document)paragraph.AppendText("[ FIRST PAGE Footer ]")section.HeadersFooters.FirstPageFooter.Paragraphs.Add(paragraph)'Inserts Odd Pages Header.paragraph = New WParagraph(document)paragraph.AppendText("[ ODD Page Header Text goes here ]")section.HeadersFooters.OddHeader.Paragraphs.Add(paragraph)
+'Inserts Odd Pages Footer.
+paragraph = New WParagraph(document)paragraph.AppendText("[ ODD Page Footer Text goes here ]")
+section.HeadersFooters.OddFooter.Paragraphs.Add(paragraph)
+'Inserts Even Pages Header.
+paragraph = New WParagraph(document)paragraph.AppendText("[ EVEN Page Header Text goes here ]")
+section.HeadersFooters.EvenHeader.Paragraphs.Add(paragraph)
+'Inserts Even Pages Footer.paragraph = New WParagraph(document)paragraph.AppendText("[ EVEN Page Footer Text goes here ]")section.HeadersFooters.EvenFooter.Paragraphs.Add(paragraph)
+'Adds the second section to the document.
+section = document.AddSection()section.PageSetup.DifferentFirstPage = True
+'Appends some text to the Second Sections's first page in the document.
+paragraph = section.AddParagraph()paragraph.AppendText(Constants.VB.NETCr + Constants.VB.NETCr and "[ First Page for SECOND SECTION ]" and Constants.VB.NETCr and "[ ON DIFFERENT FIRTS PAGE ]" and Constants.VB.NETCr + Constants.VB.NETCr and "Text Body_Text Body_Text Body_Text Body_Text Body_Text Body")paragraph.ParagraphFormat.PageBreakAfter = True'Appends some text to the Second Sections's second page in the document.paragraph = section.AddParagraph()paragraph.AppendText(Constants.VB.NETCr + Constants.VB.NETCr and "[ Second Page for SECOND SECTION ]" and Constants.VB.NETCr and "Text Body_Text Body_Text Body_Text Body_Text Body_Text Body")'Inserts Second Sections's First Header.paragraph = New WParagraph(document)paragraph.AppendText("[ SECOND SECTION FIRST PAGE Header ]")section.HeadersFooters.FirstPageHeader.Paragraphs.Add(paragraph)
+'Inserts Second Sections's First Footer.
+paragraph = New WParagraph(document)paragraph.AppendText("[ SECOND SECTION FIRST PAGE Footer ]")
+section.HeadersFooters.FirstPageFooter.Paragraphs.Add(paragraph)'Inserts Second Sections's Header.paragraph = New WParagraph(document)paragraph.AppendText("SECOND SECTION Header Text goes here")section.HeadersFooters.OddHeader.Paragraphs.Add(paragraph)
+'Inserts Second Sections's Footer.
+paragraph = New WParagraph(document)paragraph.AppendText("SECOND SECTION Footer Text goes here")
+section.HeadersFooters.OddFooter.Paragraphs.Add(paragraph)
+'Saves the document to disk.
+document.Save("Sample.doc", FormatType.Doc)
 {% endhighlight  %}
+{% endtabs %}
 
 
 DocIO provides options to link the header or footer of a section to the corresponding header or footer in the previous section by using the LinkToPrevious property. This option is available in the Header or Footer toolbar in Microsoft Word. By default, this property is set to True.
@@ -260,13 +394,14 @@ N> LinToPrevious property always returns false for the first section, since ther
 
 The following code example illustrates how to turn on this option by using DocIO.
 
-
+{% tabs %}
 {% highlight c# %}
 doc.AddSection().HeadersFooters.LinkToPrevious = true;
 {% endhighlight  %}
 {% highlight vbnet %}
 doc.AddSection().HeadersFooters.LinkToPrevious = True
 {% endhighlight  %}
+{% endtabs %}
 
 ## Specifying Page Properties
 
@@ -278,7 +413,7 @@ The following screenshot illustrates the various page setup options accessible t
 
 Page Setup of a section is accessible through the PageSetup property of Essential DocIO. This property allows you to set page size, orientation, margins, and so on.
 
-_PageSetup Properties_
+### PageSetup Properties
 
 <table>
 <tr>
@@ -361,25 +496,42 @@ Gets or sets vertical alignment.</td></tr>
 
 
 The following code example illustrates how to use Page Setup options.
-
+{% tabs %}
 {% highlight c# %}
-//Creates a new Word document.IWordDocument doc = new WordDocument();IWSection section = doc.AddSection();//Sets page setup options.section.PageSetup.Borders.BorderType = BorderStyle.DashLargeGap;section.PageSetup.Borders.Color = Color.DeepPink;section.PageSetup.PageBorderOffsetFrom = PageBorderOffsetFrom.PageEdge;section.PageSetup.Borders.LineWidth = 2;
+//Creates a new Word document.
+IWordDocument doc = new WordDocument();
+IWSection section = doc.AddSection();
+//Sets page setup options.
+section.PageSetup.Borders.BorderType = BorderStyle.DashLargeGap;
+section.PageSetup.Borders.Color = Color.DeepPink;
+section.PageSetup.PageBorderOffsetFrom = PageBorderOffsetFrom.PageEdge;
+section.PageSetup.Borders.LineWidth = 2;
 {% endhighlight  %}
 {% highlight vbnet %}
-'Creates a new Word document.Dim doc As IWordDocument = New WordDocument()Dim section As IWSection = doc.AddSection()'Sets page setup options.section.PageSetup.Borders.BorderType = BorderStyle.DashLargeGapsection.PageSetup.Borders.Color = Color.DeepPinksection.PageSetup.PageBorderOffsetFrom = PageBorderOffsetFrom.PageEdgesection.PageSetup.Borders.LineWidth = 2
+'Creates a new Word document.
+Dim doc As IWordDocument = New WordDocument()
+Dim section As IWSection = doc.AddSection()
+'Sets page setup options.
+section.PageSetup.Borders.BorderType = BorderStyle.DashLargeGapsection.PageSetup.Borders.Color = Color.DeepPinksection.PageSetup.PageBorderOffsetFrom = PageBorderOffsetFrom.PageEdgesection.PageSetup.Borders.LineWidth = 2
 {% endhighlight  %}
+{% endtabs %}
 
 ## Adding Page Numbers
 
 You can insert page numbers of different formats such as Arabic numerals, Roman numerals, and so on, to the pages in the document. It is also possible to restart the page numbers from any section, and change the starting number of the page number for each section. This is equivalent to the Insert -> Page Numbers -> Format option of Microsoft Word.
 
+{% tabs %}
 {% highlight c# %}
-section.PageSetup.PageStartingNumber = 3;section.PageSetup.RestartPageNumbering = true;sections.PageSetup.PageNumberStyle = PageNumberStyle.Arabic;
+section.PageSetup.PageStartingNumber = 3;
+section.PageSetup.RestartPageNumbering = true;
+sections.PageSetup.PageNumberStyle = PageNumberStyle.Arabic;
 {% endhighlight  %}
 {% highlight vbnet %}
 
-section.PageSetup.PageStartingNumber = 3section.PageSetup.RestartPageNumbering = Truesections.PageSetup.PageNumberStyle = PageNumberStyle.Arabic
+section.PageSetup.PageStartingNumber = 3
+section.PageSetup.RestartPageNumbering = Truesections.PageSetup.PageNumberStyle = PageNumberStyle.Arabic
 {% endhighlight  %}
+{% endtabs %}
 
 
 The following screenshot shows the page number option of Microsoft Word.

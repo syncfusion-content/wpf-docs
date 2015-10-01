@@ -23,7 +23,7 @@ Similarly, when the value of the Orientation property is set to Vertical, the It
 
 
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 MenuAdv helps users to set the Menu items in Horizontal or Vertical orientations.
 
@@ -38,51 +38,51 @@ Users can add the Orientation support to MenuAdv used in the application as ment
 
 <shared:MenuAdv x:Name="Menu"  Orientation="Horizontal”/>
 
-                <shared:MenuItemAdv Header="File">
+<shared:MenuItemAdv Header="File">
 
-                    <shared:MenuItemAdv Header="New">
+<shared:MenuItemAdv Header="New">
 
-                        <shared:MenuItemAdv.Icon>
+<shared:MenuItemAdv.Icon>
 
-                            <Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
+<Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
 
-                        </shared:MenuItemAdv.Icon>
+</shared:MenuItemAdv.Icon>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                    <shared:MenuItemAdv Header="Copy">
+<shared:MenuItemAdv Header="Copy">
 
-                        <shared:MenuItemAdv.Icon>
+<shared:MenuItemAdv.Icon>
 
-                            <Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
+<Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
 
-                        </shared:MenuItemAdv.Icon>
+</shared:MenuItemAdv.Icon>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                    <shared:MenuItemAdv Header="Cut">
+<shared:MenuItemAdv Header="Cut">
 
-                        <shared:MenuItemAdv.Icon>
+<shared:MenuItemAdv.Icon>
 
-                            <Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
+<Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
 
-                        </shared:MenuItemAdv.Icon>
+</shared:MenuItemAdv.Icon>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                <shared:MenuItemAdv Header="Edit"/>
+<shared:MenuItemAdv Header="Edit"/>
 
 </shared:MenuAdv>
 {% endhighlight %}
 
 
-## Properties
+### Properties
 
 The property for the Orientation support is described in the following tabulation:
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -100,7 +100,7 @@ Orientation(Horizontal)</td></tr>
 </table>
 
 
-## Sample Link
+### Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 
@@ -125,41 +125,41 @@ When the ExpandMode property is set to ExpandOnClick, you can open the submenu o
 
 <shared:MenuAdv x:Name="Menu"  ExpandMode="ExpandOnMouseOver”/>
 
-                <shared:MenuItemAdv Header="File">
+<shared:MenuItemAdv Header="File">
 
-                    <shared:MenuItemAdv Header="New">
+<shared:MenuItemAdv Header="New">
 
-                        <shared:MenuItemAdv.Icon>
+<shared:MenuItemAdv.Icon>
 
-                            <Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
+<Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
 
-                        </shared:MenuItemAdv.Icon>
+</shared:MenuItemAdv.Icon>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                    <shared:MenuItemAdv Header="Copy">
+<shared:MenuItemAdv Header="Copy">
 
-                        <shared:MenuItemAdv.Icon>
+<shared:MenuItemAdv.Icon>
 
-                            <Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
+<Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
 
-                        </shared:MenuItemAdv.Icon>
+</shared:MenuItemAdv.Icon>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                    <shared:MenuItemAdv Header="Cut">
+<shared:MenuItemAdv Header="Cut">
 
-                        <shared:MenuItemAdv.Icon>
+<shared:MenuItemAdv.Icon>
 
-                            <Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
+<Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
 
-                        </shared:MenuItemAdv.Icon>
+</shared:MenuItemAdv.Icon>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                <shared:MenuItemAdv Header="Edit"/>
+<shared:MenuItemAdv Header="Edit"/>
 
 </shared:MenuAdv>
 
@@ -171,7 +171,7 @@ When the ExpandMode property is set to ExpandOnClick, you can open the submenu o
 
 The property for the Expand Modes support is described in the following tabulation:
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -189,7 +189,7 @@ ExpandModes(ExpandOnClick)</td></tr>
 </table>
 
 
-## Sample Link
+### Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

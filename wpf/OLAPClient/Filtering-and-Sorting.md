@@ -74,16 +74,15 @@ In Client filtering option, the user can apply two filter expressions to a repor
 
 4. Finally by entering the Conditional value and clicking the update button the filter will get reflected in the result set.
 5. In the same way we can apply the Row Filter.
-   {:.prettyprint}
+   
    
 ### ShowColumnFilterDialog
 
 
 By invoking this method the column filter Dialog will be displayed. Using the column filter dialog users can apply the column filter to the current report. 
-
-{% highlight C# %}   
-
-{% highlight C# %}  {% endhighlight %} 
+ 
+{% tabs %}
+{% highlight C# %} 
 
 this.olapClient1.ShowColumnFilterDialog();
 
@@ -98,15 +97,15 @@ this.olapClient1.ShowColumnFilterDialog();
 Me.olapClient1.ShowColumnFilterDialog()
 
 {% endhighlight %}
-
+{% endtabs %}
 
 ### ShowRowFilterDialog
 
 By invoking this method the row filter Dialog will be displayed. Using the row filter dialog users can apply the row filter to the current report. 
 
-{% highlight C# %}  
-
- {% highlight C# %}  {% endhighlight %} 
+ 
+{% tabs %}
+ {% highlight C# %}  
 
 this.olapClient1.ShowRowFilterDialog();
 
@@ -119,6 +118,7 @@ this.olapClient1.ShowRowFilterDialog();
 Me.olapClient1.ShowRowFilterDialog(); 
 
 {% endhighlight %} 
+{% endtabs %}
 
 ## Sorting
 
@@ -170,10 +170,9 @@ By selecting the measure and specifying the sorting order and clicking update, t
 ### ShowColumnSortDialog
 
 By invoking this method the column sorting Dialog will be displayed. Using the column sorting dialog users can apply the column sorting to the current report. 
+{% tabs %}
 
 {% highlight C# %} 
-
-{% highlight C# %}  {% endhighlight %} 
 
 this.olapClient1.ShowColumnSortingDialog();
 
@@ -186,14 +185,15 @@ this.olapClient1.ShowColumnSortingDialog();
 Me.olapClient1.ShowColumnSortingDialog();
 
 {% endhighlight %} 
+{% endtabs %}
 
 ### ShowRowSortDialog
 
 By invoking this method the row sorting Dialog will be displayed. Using the row sorting dialog users can apply the row sorting to the current report. 
 
-{% highlight C# %}   
+{% tabs %}   
 
-{% highlight C# %}  {% endhighlight %} 
+{% highlight C# %}  
 
 this.olapClient1.ShowRowSortingDialog(); 
 
@@ -207,14 +207,15 @@ this.olapClient1.ShowRowSortingDialog();
 Me.olapClient1.ShowRowSortingDialog(); 
 
 {% endhighlight %} 
+{% endtabs %}
 
 ## ShowFilterSortButtons
 
 Users can toggle the visibility of the Filter and Sorting buttons in the OlapClientToolBar by using this property. This property will accept a Boolean value (true/false) and based on this input the visibility will be set. 
 
-{% highlight C# %}  
+{% tabs %} 
 
-{% highlight C# %}  {% endhighlight %} 
+{% highlight C# %}  
 
 {% endhighlight %} 
 
@@ -231,4 +232,4 @@ this.olapClient1.ShowFilterSortButtons = false;
 Me.olapClient1.ShowFilterSortButtons = False
 
 {% endhighlight %} 
-
+{% endtabs %}

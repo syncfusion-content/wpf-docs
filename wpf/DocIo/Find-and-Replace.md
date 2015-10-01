@@ -29,9 +29,8 @@ This represents selected text in a Word document. It is equivalent to selecting 
 
 TextSelection class internally uses the Find and FindAll methods to select text. Please refer to the Find section topic to get more information about Find and FIndAll methods.
 
-Public Constructors
+### Public Constructors
 
-_Public Constructor_
 
 <table>
 <tr>
@@ -68,9 +67,8 @@ TextSelection selection = new TextSelection(paragraph, 0, 10);
 Dim selection As New TextSelection(paragraph, 0, 10)
 {% endhighlight  %}
 
-Public Properties
+### Public Properties
 
-_Public Properties_
 
 <table>
 <tr>
@@ -86,9 +84,10 @@ Gets the count of the text chunks.</td></tr>
 SelectedText</td><td>
 Gets the selected text.  </td></tr>
 </table>
-Public Methods
 
-_Public Methods_
+### Public Methods
+
+
 
 <table>
 <tr>
@@ -140,9 +139,8 @@ N> TextBodyPart contains the copy of objects from the documents (paragraphs, tab
 
 
 
-Public Constructors
+### Public Constructors
 
-_Public Constructors_
 
 <table>
 <tr>
@@ -167,9 +165,7 @@ TextBodyPart.TextBodyPart (WordDocument)</td><td>
 Initializes a new instance of the TextBodyPart class with respect to WordDocument class. Refer to the section WordDocument to know more about this.</td></tr>
 </table>
 
-Public Properties
-
-_Public Properties_
+### Public Properties
 
 <table>
 <tr>
@@ -183,9 +179,8 @@ Gets the body items.  </td></tr>
 </table>
 
 
-Public Methods
+### Public Methods
 
-_Public Methods_
 
 <table>
 <tr>
@@ -251,7 +246,7 @@ This class lets you select text body items from the TextBodyPart class. TextBody
 
 For example, you have the following Contents:
 
-Text-NEED TO COPY
+### Text-NEED TO COPY
 
 <table>
 <tr>
@@ -309,9 +304,8 @@ Dim bodySelection As New TextBodySelection(body, 0, 2, 1, 1)
 * 1: Denotes the paragraph item starting index in first paragraph.
 * 1: Denotes the paragraph item ending index in last paragraph.
 
-Public Constructors
+### Public Constructors
 
-_Public Constructors_
 
 <table>
 <tr>
@@ -329,9 +323,8 @@ Initializes a new instance of the TextBodySelection class with start paragraph i
 </table>
 
 
-Public Properties
+### Public Properties
 
-_Public Properties_
 
 <table>
 <tr>
@@ -570,7 +563,7 @@ document.ResetFindNext()
 
 FindSingleLine method is used to find an entry in a document with a specified text of regular expression, including the newline or carriage return. This works in the same way as the SingleLine mode of .NET Regex. Note that the Find method will find the text only in a single paragraph without any newlines or carriage return considerations.
 
-_Public Methods_
+### Public Methods
 
 <table>
 <tr>
@@ -590,7 +583,7 @@ Finds the first entry of the given text in the single-line mode with the Boolean
 
 It is also possible to find a string with SingleLine mode from a particular region by using the FindNextSingleLine method of the WordDocument class.
 
-_Public Methods_
+### Public Methods
 
 <table>
 <tr>
@@ -686,11 +679,7 @@ The following are the overloads of the Replace method:
 
 
 
-
-
-
-
-Example 1:
+### Example 1:
 
 {% highlight  c# %}
 
@@ -716,7 +705,7 @@ doc.Replace( new Regex( "A" ), textBodyPart );
 {% endhighlight   %}
 
 
-Example 2:
+### Example 2:
 
 {% highlight  c# %}
 
@@ -758,7 +747,8 @@ docTemplate.Replace( new Regex( "PlaceHolder2" ), rangesHolder2 );
 {% endhighlight   %}
 
 
-Example 1:
+### Example 1:
+
 {% highlight  vbnet %}
 
 
@@ -785,7 +775,7 @@ doc.Replace(New Regex("A"), textBodyPart) 
 {% endhighlight   %}
 
 
-Example 2:
+### Example 2:
 
 {% highlight  vbnet %}
 
@@ -841,7 +831,7 @@ It is also possible to replace a string with .NET Regex SingleLine mode by usi
 
 The following table lists the overloads of this method.
 
-_Public Methods_
+### Public Methods
 
 <table>
 <tr>

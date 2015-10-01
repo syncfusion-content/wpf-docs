@@ -30,4 +30,5 @@ The following screenshot displays the Dashboard.
 ![](Sample-Locations_images/Sample-Locations_img1.png)
 
 
-_Essential Studio Dashboard_
+Essential Studio Dashboard
+{:.caption}

@@ -21,10 +21,10 @@ The EnableExtendedScrolling property is used to change the values based on the c
 
 The EnableExtendedScrolling property must be set either in XAML or the code file.
 
-
+{% tabs %}
 {% highlight xml %}  EnableExtendedScrolling ="True" {% endhighlight %} 
 
 {% highlight C# %}  control.EnableExtendedScrolling = true; {% endhighlight %} 
-
+{% endtabs %}
 
 

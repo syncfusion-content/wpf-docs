@@ -206,63 +206,63 @@ SfChart provides you with the option to customize the legends depending on the a
 
 <syncfusion:SfChart.Legend>
 
-            <syncfusion:ChartLegend>
+<syncfusion:ChartLegend>
 
 
 
-                <!-- Custom panel for legend items-->
+<!-- Custom panel for legend items-->
 
-                <syncfusion:ChartLegend.ItemsPanel>
+<syncfusion:ChartLegend.ItemsPanel>
 
-                    <ItemsPanelTemplate >
+<ItemsPanelTemplate >
 
-                        <WrapPanel  Width="300"/>
+<WrapPanel  Width="300"/>
 
-                    </ItemsPanelTemplate>
+</ItemsPanelTemplate>
 
-                </syncfusion:ChartLegend.ItemsPanel>
-
-
-
-                <!--Custom template for legend item-->
-
-                <syncfusion:ChartLegend.ItemTemplate>
-
-                    <DataTemplate>
-
-                        <Grid>
-
-                            <Grid.ColumnDefinitions>
-
-                                <ColumnDefinition/>
-
-                                <ColumnDefinition/>
-
-                            </Grid.ColumnDefinitions>
+</syncfusion:ChartLegend.ItemsPanel>
 
 
 
-                            <!--For Legend icon-->
+<!--Custom template for legend item-->
 
-                            <Ellipse Margin="35,0,0,0"  Width="15" Height="15" Fill="{Binding Interior}"></Ellipse>
+<syncfusion:ChartLegend.ItemTemplate>
+
+<DataTemplate>
+
+<Grid>
+
+<Grid.ColumnDefinitions>
+
+<ColumnDefinition/>
+
+<ColumnDefinition/>
+
+</Grid.ColumnDefinitions>
 
 
 
-                            <!--For Legend label-->
+<!--For Legend icon-->
 
-                            <TextBlock Margin="10,5,5,0" FontSize="16" Grid.Column="1" Foreground="{Binding Interior}" Text="{Binding Label}"></TextBlock>
+<Ellipse Margin="35,0,0,0"  Width="15" Height="15" Fill="{Binding Interior}"></Ellipse>
 
-                        </Grid>
 
-                    </DataTemplate>
 
-                </syncfusion:ChartLegend.ItemTemplate>
+<!--For Legend label-->
 
-            </syncfusion:ChartLegend>
+<TextBlock Margin="10,5,5,0" FontSize="16" Grid.Column="1" Foreground="{Binding Interior}" Text="{Binding Label}"></TextBlock>
 
-        </syncfusion:SfChart.Legend>
+</Grid>
 
-    </Grid>
+</DataTemplate>
+
+</syncfusion:ChartLegend.ItemTemplate>
+
+</syncfusion:ChartLegend>
+
+</syncfusion:SfChart.Legend>
+
+</Grid>
 
 {% endhighlight %}
 
@@ -294,7 +294,7 @@ In this DataTemplate, the respective Segments come as DataContext. For instance,
 
 The following table illustrates the properties available in the corresponding segment class of the series.
 
-Properties in the segment class
+### Properties in the segment class
 
 <table>
 <tr>
@@ -406,59 +406,59 @@ SfChart provides the option to define your own template for Tooltip, based on yo
 
 
 
-<syncfusion:LineSeries Label="2010" 
+	<syncfusion:LineSeries Label="2010" 
 
-                                ItemsSource="{Binding Demands}"
+	ItemsSource="{Binding Demands}"
 
-                                XBindingPath="Demand"
+	XBindingPath="Demand"
 
-                                YBindingPath="Year2010" ShowTooltip="True"
+	YBindingPath="Year2010" ShowTooltip="True"
 
-                                Palette="None"
+	Palette="None"
 
-                                >
+	>
 
-            <syncfusion:LineSeries.TooltipTemplate>
-
-
-
-                <DataTemplate>
-
-                    <Grid >
+	<syncfusion:LineSeries.TooltipTemplate>
 
 
 
-                        <StackPanel HorizontalAlignment="Right">
+	<DataTemplate>
 
-                            <Grid Background="OrangeRed">
-
-                                <TextBlock Text="{Binding Item.Demand }" Width="85" Height="25" Margin="5"
-
-                                VerticalAlignment="Center"    TextAlignment="Center"  Foreground="White" FontSize="15"/>
-
-                            </Grid>
-
-                            <Grid Background="MediumSpringGreen">
-
-                                <TextBlock VerticalAlignment="Center" TextAlignment="Center" Margin="5" Text="{Binding YData}" Height="25"
-
-                                 Width="85" HorizontalAlignment="Center" Foreground="White" FontSize="15"/>
-
-                            </Grid>
-
-                        </StackPanel>
-
-                    </Grid>
-
-                </DataTemplate>
+	<Grid >
 
 
 
-            </syncfusion:LineSeries.TooltipTemplate>
+	<StackPanel HorizontalAlignment="Right">
+
+	<Grid Background="OrangeRed">
+
+	<TextBlock Text="{Binding Item.Demand }" Width="85" Height="25" Margin="5"
+
+	VerticalAlignment="Center"    TextAlignment="Center"  Foreground="White" FontSize="15"/>
+
+	</Grid>
+
+	<Grid Background="MediumSpringGreen">
+
+	<TextBlock VerticalAlignment="Center" TextAlignment="Center" Margin="5" Text="{Binding YData}" Height="25"
+
+	Width="85" HorizontalAlignment="Center" Foreground="White" FontSize="15"/>
+
+	</Grid>
+
+	</StackPanel>
+
+	</Grid>
+
+	</DataTemplate>
 
 
 
-        </syncfusion:LineSeries>
+	</syncfusion:LineSeries.TooltipTemplate>
+
+
+
+	</syncfusion:LineSeries>
 
 
 

@@ -18,14 +18,14 @@ When you process large CellSet, it is splitted into several number of segments a
 ## Adding OlapPager in Application
 
 1. Include the following Syncfusion assembly from the installed location.
-   1. Syncfusion.OlapShared.Wpf
+    1. Syncfusion.OlapShared.Wpf
 
-   Assembly Location: <system drive>:\Program Files (x86)\Syncfusion\EssentialStudio\<version number>\precompiledassemblies\<version number>\
+    Assembly Location: &lt;system drive&gt;:\Program Files (x86)\Syncfusion\EssentialStudio\<version number>\precompiledassemblies\<version number>\
 
 2. Add the namespace and OlapPager in XAML page as follows.
 
- 
 
+   ~~~xaml
 				<Window       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
 				xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -65,14 +65,14 @@ When you process large CellSet, it is splitted into several number of segments a
 				</Window>
 				
 
-
-    
+   ~~~
 
 
 
 3. Enable paging in OlapReport.
 
-  
+
+   ~~~csharp
 
 				using Syncfusion.Olap.Manager;
 
@@ -173,11 +173,9 @@ When you process large CellSet, it is splitted into several number of segments a
 				} 
 
 
-       
+   ~~~
 
-
-
-  
+   ~~~vbnet  
 
 				Imports Syncfusion.Olap.Manager
 
@@ -272,26 +270,22 @@ When you process large CellSet, it is splitted into several number of segments a
 				End Namespace
 				
 
-    
+   ~~~
 
 
 
+     ![](Paging_images/Paging_img1.png)
 
 
+     ![](Paging_images/Paging_img2.png)
 
 
-   ![](Paging_images/Paging_img1.png)
-
-
-   ![](Paging_images/Paging_img2.png)
-
-   {:.prettyprint}
    
 ## Sample Link
 
 Refer to the following location for sample.:
 
-<system drive>\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version number>\
+&lt;system drive&gt;\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version number>\
 
 WPF\OlapGrid.WPF\Paging
 

@@ -80,29 +80,29 @@ Or
 
 <syncfusion:HierarchyNavigator x:Name="hierarchyNavigatorcontrol1"     VerticalAlignment="Top" Height="30" Width="600">
 
-    <syncfusion:HierarchyNavigator.Items>
+<syncfusion:HierarchyNavigator.Items>
 
-        <syncfusion:HierarchyNavigatorItem Content="Syncfusion">
+<syncfusion:HierarchyNavigatorItem Content="Syncfusion">
 
-            <syncfusion:HierarchyNavigatorItem.Items>
+<syncfusion:HierarchyNavigatorItem.Items>
 
-                <syncfusion:HierarchyNavigatorItem Content="User Interface"/>
+<syncfusion:HierarchyNavigatorItem Content="User Interface"/>
 
-                <syncfusion:HierarchyNavigatorItem Content="Silverlight">
+<syncfusion:HierarchyNavigatorItem Content="Silverlight">
 
-                    <syncfusion:HierarchyNavigatorItem.Items>
+<syncfusion:HierarchyNavigatorItem.Items>
 
-                        <syncfusion:HierarchyNavigatorItem Content="Tools"/>
+<syncfusion:HierarchyNavigatorItem Content="Tools"/>
 
-                    </syncfusion:HierarchyNavigatorItem.Items>
+</syncfusion:HierarchyNavigatorItem.Items>
 
-                </syncfusion:HierarchyNavigatorItem>
+</syncfusion:HierarchyNavigatorItem>
 
-            </syncfusion:HierarchyNavigatorItem.Items>
+</syncfusion:HierarchyNavigatorItem.Items>
 
-        </syncfusion:HierarchyNavigatorItem>
+</syncfusion:HierarchyNavigatorItem>
 
-    </syncfusion:HierarchyNavigator.Items>
+</syncfusion:HierarchyNavigator.Items>
 
 </syncfusion:HierarchyNavigator>
 

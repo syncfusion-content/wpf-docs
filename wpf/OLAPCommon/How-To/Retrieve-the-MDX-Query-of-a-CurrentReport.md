@@ -13,6 +13,7 @@ The MDX query of a current report is used to display data in Grid/Chart control 
 
 The following code explains how to retrieve MDX Query from the OlapDataManager:
 
+{% tabs %}
 {% highlight c# %}
 
 olapDataManager.GetMDXQuery();
@@ -24,11 +25,12 @@ olapDataManager.GetMDXQuery();
 olapDataManager.GetMDXQuery()
 
 {% endhighlight  %}
+{% endtabs %}
 
 ## In Silverlight:
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 string currentMdxQuery = null;
@@ -66,4 +68,4 @@ currentMdxQuery = _olapDataManager.CurrentReport.CurrentMdxQuery
 End Function
 
 {% endhighlight  %}
-
+{% endtabs %}

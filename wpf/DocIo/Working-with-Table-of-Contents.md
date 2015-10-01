@@ -22,7 +22,7 @@ UpperHeadingLevel and LowerHeadingLevel define the number of heading levels to b
 
 SetTOCLevelStyle method sets the style for each TOC level. For example, SetTOCLevelStyle(1, "Normal") sets the Normal style to the first level of TOC.
 
-Class Hierarchy
+### Class Hierarchy
 
 ParagraphItem
 
@@ -30,9 +30,8 @@ ParagraphItem
 
 TableOfContent
 
-Public Constructors
+### Public Constructors
 
-_Public Constructors_
 
 <table>
 <tr>
@@ -48,9 +47,10 @@ Initializes a new instance of the TableOfContent class. </td></tr>
 TableOfContent.TableOfContent (IWordDocument, string)</td><td>
 Initializes a new instance of the TableOfContent class.  </td></tr>
 </table>
-Public Properties
 
-_Public Properties_
+### Public Properties
+
+
 
 <table>
 <tr>
@@ -107,11 +107,12 @@ N> DocIO cannot create Outline levels. However, by turning on the UseOutlineLeve
 ![](Working-with-Table-of-Contents_images/Working-with-Table-of-Contents_img1.png)
 
 
-_Outline Levels_
+Outline Levels
+{:.caption}
 
-Public Methods
+### Public Methods
 
-_Public Methods_
+
 
 <table>
 <tr>
@@ -131,13 +132,35 @@ Specifies the style for TOC level.</td></tr>
 
 The following code example illustrates how to insert TOC based on custom styles.
 
-
+{% tabs %}
 {% highlight c# %}
-WordDocument doc = new WordDocument();doc.EnsureMinimal();WParagraph para = doc.LastParagraph;TableOfContent toc = para.AppendTOC(1, 1);toc.UseHeadingStyles = false;//Sets the TOC level style based on which the TOC should be created.toc. SetTOCLevelStyle(1, "MyStyle1");WSection section = doc.LastSection;WParagraph newPara = section.AddParagraph() as WParagraph;WTextRange text = newPara.AppendText("My Style1") as WTextRange;newPara.ApplyStyle("MyStyle1");//Updates the table of contents.doc.UpdateTableOfContents();
+WordDocument doc = new WordDocument();
+doc.EnsureMinimal();
+WParagraph para = doc.LastParagraph;
+TableOfContent toc = para.AppendTOC(1, 1);
+toc.UseHeadingStyles = false;
+//Sets the TOC level style based on which the TOC should be created.
+toc. SetTOCLevelStyle(1, "MyStyle1");
+WSection section = doc.LastSection;
+WParagraph newPara = section.AddParagraph() as WParagraph;
+WTextRange text = newPara.AppendText("My Style1") as WTextRange;
+newPara.ApplyStyle("MyStyle1");
+//Updates the table of contents.
+doc.UpdateTableOfContents();
 {% endhighlight  %}
 {% highlight vbnet  %}
-Dim doc As New WordDocument()doc.EnsureMinimal()Dim para As WParagraph = doc.LastParagraphDim toc As TableOfContent = para.AppendTOC(1, 1)toc.UseHeadingStyles = False'Sets the TOC level style based on which the TOC should be created.toc.SetTOCLevelStyle(1, "MyStyle1")Dim section As WSection = doc.LastSectionDim newPara As WParagraph = TryCast(section.AddParagraph(), WParagraph)Dim text As WTextRange = TryCast(newPara.AppendText("My Style1"), WTextRange)newPara.ApplyStyle("MyStyle1")'Updates the table of contents.doc.UpdateTableOfContents()
+Dim doc As New WordDocument()doc.EnsureMinimal()
+Dim para As WParagraph = doc.LastParagraph
+Dim toc As TableOfContent = para.AppendTOC(1, 1)toc.UseHeadingStyles = False
+'Sets the TOC level style based on which the TOC should be created.
+toc.SetTOCLevelStyle(1, "MyStyle1")
+Dim section As WSection = doc.LastSection
+Dim newPara As WParagraph = TryCast(section.AddParagraph(), WParagraph)
+Dim text As WTextRange = TryCast(newPara.AppendText("My Style1"), WTextRange)newPara.ApplyStyle("MyStyle1")
+'Updates the table of contents.
+doc.UpdateTableOfContents()
 {% endhighlight  %}
+{% endtabs %}
 
 ## Updating Table of contents
 
@@ -157,12 +180,15 @@ The following are the known limitations:
 The following code example illustrates how to update TOC.
 
 
-
+{% tabs %}
 {% highlight c# %}
-WordDocument doc = new WordDocument(“Sample.docx”);//Updates the table of contents.doc.UpdateTableOfContents();
+WordDocument doc = new WordDocument(“Sample.docx”);
+//Updates the table of contents.doc.UpdateTableOfContents();
 {% endhighlight  %}
 {% highlight vbnet %}
-Dim doc As New WordDocument(“Sample.docx”)'Updates the table of contents.doc.UpdateTableOfContents()
+Dim doc As New WordDocument(“Sample.docx”)
+'Updates the table of contents.doc.UpdateTableOfContents()
 {% endhighlight  %}
+{% endtabs %}
 
 

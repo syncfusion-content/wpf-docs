@@ -11,9 +11,8 @@ documentation: ug
 
 Key performance indicators can be virtually defined during run time. This feature enables users to create KPIs without storing them in SSAS (SQL Server Analysis Services). This feature is very useful when users want to define KPIs at run time and also minimize the time necessary to create KPIs. 
 
-## Properties
+### Properties
 
-_Table12: VirtualKpiElement Class Properties_
 
 <table>
 <tr>
@@ -67,7 +66,7 @@ String</td></tr>
 </table>
 
 
-_Table13: OlapReport Class Properties_
+### OlapReport Class Properties
 
 <table>
 <tr>
@@ -88,57 +87,58 @@ Items</td></tr>
 
 OLAP Report Definition with VirtualKpiElement
 
+{% tabs %}
 {% highlight c# %}
 
-        public OlapReport VirtualKPIReport()
+public OlapReport VirtualKPIReport()
 
-        {
+{
 
-            OlapReport olapReport = new OlapReport("Virtual KPI Report");
+OlapReport olapReport = new OlapReport("Virtual KPI Report");
 
-            olapReport.CurrentCubeName = "Adventure Works";
+olapReport.CurrentCubeName = "Adventure Works";
 
-            MeasureElements measureElements = new MeasureElements();
+MeasureElements measureElements = new MeasureElements();
 
-            measureElements.Add(new MeasureElement { Name = "Internet Sales Amount" });
+measureElements.Add(new MeasureElement { Name = "Internet Sales Amount" });
 
-            olapReport.CategoricalElements.Add(measureElements);
-
-
-
-            VirtualKpiElement virtualKPIElement = new VirtualKpiElement();
-
-            virtualKPIElement.Name = "Sample KPI";
-
-            virtualKPIElement.KpiValueExpression = ""; //Value expression
-
-            virtualKPIElement.KpiGoalExpression = ""; //Goal expression
-
-            virtualKPIElement.KpiStatusExpression = ""; //Status expression
-
-            virtualKPIElement.KpiTrendExpression = ""; //Trend expression
-
-            virtualKPIElement.StatusGraphic = ""; //Status graphic
-
-            virtualKPIElement.TrendGraphic = ""; //Trend graphic
-
-            olapReport.VirtualKpiElements.Add(virtualKPIElement);
-
-            olapReport.CategoricalElements.Add(virtualKPIElement);
+olapReport.CategoricalElements.Add(measureElements);
 
 
 
-            DimensionElement internalDimension = new DimensionElement();
+VirtualKpiElement virtualKPIElement = new VirtualKpiElement();
 
-            internalDimension.Name = "Product";
+virtualKPIElement.Name = "Sample KPI";
 
-            internalDimension.AddLevel("Product Categories", "Category");
+virtualKPIElement.KpiValueExpression = ""; //Value expression
 
-            olapReport.SeriesElements.Add(internalDimension);
+virtualKPIElement.KpiGoalExpression = ""; //Goal expression
 
-            return olapReport;
+virtualKPIElement.KpiStatusExpression = ""; //Status expression
 
-        }
+virtualKPIElement.KpiTrendExpression = ""; //Trend expression
+
+virtualKPIElement.StatusGraphic = ""; //Status graphic
+
+virtualKPIElement.TrendGraphic = ""; //Trend graphic
+
+olapReport.VirtualKpiElements.Add(virtualKPIElement);
+
+olapReport.CategoricalElements.Add(virtualKPIElement);
+
+
+
+DimensionElement internalDimension = new DimensionElement();
+
+internalDimension.Name = "Product";
+
+internalDimension.AddLevel("Product Categories", "Category");
+
+olapReport.SeriesElements.Add(internalDimension);
+
+return olapReport;
+
+}
 
 
 
@@ -148,7 +148,7 @@ OLAP Report Definition with VirtualKpiElement
 
 {% highlight vbnet %}
 
-        Public Function VirtualKPIReport() As OlapReport
+Public Function VirtualKPIReport() As OlapReport
 
 Dim olapReport As New OlapReport("Virtual KPI Report")
 
@@ -375,6 +375,6 @@ Case
 End
 {% endhighlight %}
 
-
+{% endtabs %}
 
 

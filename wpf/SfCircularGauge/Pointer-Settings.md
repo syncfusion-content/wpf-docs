@@ -21,64 +21,67 @@ A needle pointer contains two parts, the needle and the pointer cap. The needle 
 
 
 
-### Code Example:
+### Code Example
 
+{% tabs %}
 {% highlight xml %}
 
 
 
 <syncfusion:SfCircularGauge x:Name="gauge">
 
-   <syncfusion:SfCircularGauge.MainScale>
+<syncfusion:SfCircularGauge.MainScale>
 
-      <syncfusion:CircularScale>
+<syncfusion:CircularScale>
 
-         <syncfusion:CircularScale.Pointers>
+<syncfusion:CircularScale.Pointers>
 
-            <syncfusion:CircularPointer Value="80"
+<syncfusion:CircularPointer Value="80"
 
-                                        PointerType="NeedlePointer" 
+PointerType="NeedlePointer" 
 
-                                        EnableAnimation="True"
+EnableAnimation="True"
 
-                                        NeedleLengthFactor="0.5"
+NeedleLengthFactor="0.5"
 
-                                        NeedlePointerStroke="White" 
+NeedlePointerStroke="White" 
 
-                                        NeedlePointerStrokeThickness="2" 
+NeedlePointerStrokeThickness="2" 
 
-                                        PointerCapStroke="White" 
+PointerCapStroke="White" 
 
-                                        PointerCapDiameter="20"  
+PointerCapDiameter="20"  
 
-                                        NeedlePointerVisibility="Visible"   /> 
+NeedlePointerVisibility="Visible"   /> 
 
-         </syncfusion:CircularScale.Pointers>
+</syncfusion:CircularScale.Pointers>
 
-      </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-   </syncfusion:SfCircularGauge.MainScale>
+</syncfusion:SfCircularGauge.MainScale>
 
 </syncfusion:SfCircularGauge>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.Pointers.Add(new CircularPointer() { Value = 80, PointerType = PointerType.NeedlePointer, EnableAnimation = true, NeedleLengthFactor = 0.5, NeedlePointerStroke = new SolidColorBrush(Colors.White), NeedlePointerStrokeThickness = 2, PointerCapStroke = new SolidColorBrush(Colors.White), PointerCapDiameter=20, NeedlePointerVisibility=Visibility.Visible});
+_mainscale.Pointers.Add(new CircularPointer() { Value = 80, PointerType = PointerType.NeedlePointer, EnableAnimation = true, NeedleLengthFactor = 0.5, NeedlePointerStroke = new SolidColorBrush(Colors.White), NeedlePointerStrokeThickness = 2, PointerCapStroke = new SolidColorBrush(Colors.White), PointerCapDiameter=20, NeedlePointerVisibility=Visibility.Visible});
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
+
 {% endhighlight %}
+{% endtabs %}
 
-
-### Screenshot:
+### Screenshot
 
 ![](Pointer-Settings_images/Pointer-Settings_img1.png)
 
@@ -95,50 +98,47 @@ NeedlePointer can be customized by using the NeedlePointerType property of Point
 
 
 
-### Code Example:
+### Code Example
 
-
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 
 <syncfusion:SfCircularGauge x:Name="gauge">
 
-            <syncfusion:SfCircularGauge.Scales>
+<syncfusion:SfCircularGauge.Scales>
 
-                <syncfusion:CircularScale>
+<syncfusion:CircularScale>
 
-                    <syncfusion:CircularScale.Pointers>
+<syncfusion:CircularScale.Pointers>
 
-                        <syncfusion:CircularPointer 
+<syncfusion:CircularPointer 
 
-                                        NeedlePointerType="Tapered"
+NeedlePointerType="Tapered"
 
-                                        Value="70"
+Value="70"
 
-                                        PointerType="NeedlePointer" 
+PointerType="NeedlePointer" 
 
-                                        EnableAnimation="True"
+EnableAnimation="True"
 
-                                        NeedleLengthFactor="0.75"
+NeedleLengthFactor="0.75"
 
-                                        NeedlePointerStroke="Red" 
+NeedlePointerStroke="Red" 
 
-                                        NeedlePointerStrokeThickness="30" 
+NeedlePointerStrokeThickness="30" 
 
-                                        PointerCapStroke="Green" 
+PointerCapStroke="Green" 
 
-                                        NeedlePointerVisibility="Visible"   />
+NeedlePointerVisibility="Visible"   />
 
-                    </syncfusion:CircularScale.Pointers>
+</syncfusion:CircularScale.Pointers>
 
-                </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-            </syncfusion:SfCircularGauge.Scales>
+</syncfusion:SfCircularGauge.Scales>
 
-        </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -147,43 +147,43 @@ NeedlePointer can be customized by using the NeedlePointerType property of Point
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale scale = new CircularScale();
+CircularScale scale = new CircularScale();
 
-            scale.Pointers.Add(new CircularPointer(){
+scale.Pointers.Add(new CircularPointer(){
 
-                Value = 70,
+Value = 70,
 
-                NeedlePointerType=NeedlePointerType.Arrow, 
+NeedlePointerType=NeedlePointerType.Arrow, 
 
-                PointerType = PointerType.NeedlePointer, 
+PointerType = PointerType.NeedlePointer, 
 
-                EnableAnimation = true,
+EnableAnimation = true,
 
-                NeedleLengthFactor = 0.75, 
+NeedleLengthFactor = 0.75, 
 
-                NeedlePointerStroke = new SolidColorBrush(Colors.Red), 
+NeedlePointerStroke = new SolidColorBrush(Colors.Red), 
 
-                NeedlePointerStrokeThickness = 30,
+NeedlePointerStrokeThickness = 30,
 
-                PointerCapStroke = new SolidColorBrush(Colors.Green), 
+PointerCapStroke = new SolidColorBrush(Colors.Green), 
 
-                PointerCapDiameter = 20,
+PointerCapDiameter = 20,
 
-                NeedlePointerVisibility = Visibility.Visible 
+NeedlePointerVisibility = Visibility.Visible 
 
-            });
+});
 
-            circularGauge.Scales.Add(scale);
+circularGauge.Scales.Add(scale);
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
+{% endtabs %}
 
 
-
-### Screenshot:
+### Screenshot
 
 ![](Pointer-Settings_images/Pointer-Settings_img2.png)
 
@@ -197,41 +197,42 @@ Range Pointer is an accenting line or shaded background range that is placed on 
 
 
 
-### Code Example:
+### Code Example
 
+{% tabs %}
 {% highlight xml %}
 
 
 
-   <syncfusion:SfCircularGauge x:Name="gauge">
+<syncfusion:SfCircularGauge x:Name="gauge">
 
-      <syncfusion:SfCircularGauge.MainScale>
+<syncfusion:SfCircularGauge.MainScale>
 
-         <syncfusion:CircularScale>
+<syncfusion:CircularScale>
 
-            <syncfusion:CircularScale.Pointers>
+<syncfusion:CircularScale.Pointers>
 
-               <syncfusion:CircularPointer Value="80"
+<syncfusion:CircularPointer Value="80"
 
-                                           PointerType="RangePointer" 
+PointerType="RangePointer" 
 
-                                           EnableAnimation="True"
+EnableAnimation="True"
 
-                                           RangePointerStroke="Orange"
+RangePointerStroke="Orange"
 
-                                           RangePointerStrokeThickness="10"
+RangePointerStrokeThickness="10"
 
-                                           RangePointerVisibility="Visible"
+RangePointerVisibility="Visible"
 
-                                           />
+/>
 
-            </syncfusion:CircularScale.Pointers>
+</syncfusion:CircularScale.Pointers>
 
-         </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-       </syncfusion:SfCircularGauge.MainScale>
+</syncfusion:SfCircularGauge.MainScale>
 
-   </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
 {% endhighlight %}
 
 {% highlight C# %}
@@ -242,25 +243,27 @@ Range Pointer is an accenting line or shaded background range that is placed on 
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.Pointers.Add(new CircularPointer() { Value = 80, PointerType = PointerType.RangePointer, EnableAnimation = true, RangePointerStroke = new SolidColorBrush(Colors.Orange), RangePointerStrokeThickness =10, RangePointerVisibility=Visibility.Visible});
+_mainscale.Pointers.Add(new CircularPointer() { Value = 80, PointerType = PointerType.RangePointer, EnableAnimation = true, RangePointerStroke = new SolidColorBrush(Colors.Orange), RangePointerStrokeThickness =10, RangePointerVisibility=Visibility.Visible});
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
+
 {% endhighlight %}
+{% endtabs %}
 
 
 
-
-### Screenshot:
+### Screenshot
 
 ![](Pointer-Settings_images/Pointer-Settings_img3.png)
 
-_Circular Scale with Range Pointer_
+Circular Scale with Range Pointer
+{:.caption}
 
 
 ## RangePointerPosition
@@ -271,36 +274,35 @@ The RangePointer in the scale can be placed inside the scale or outside the scal
 2. Outside
 
 
+### Code Example
 
-
-### Code Example:
-
+{% tabs %}
 {% highlight xml %}
 
 
-            <syncfusion:SfCircularGauge x:Name="gauge">
+	<syncfusion:SfCircularGauge x:Name="gauge">
 
-                <syncfusion:SfCircularGauge.MainScale>
+	<syncfusion:SfCircularGauge.MainScale>
 
-                    <syncfusion:CircularScale RangePointerPosition="Outside">
+	<syncfusion:CircularScale RangePointerPosition="Outside">
 
-                        <syncfusion:CircularScale.Pointers>
+	<syncfusion:CircularScale.Pointers>
 
-                            <syncfusion:CircularPointer Value="80"
+	<syncfusion:CircularPointer Value="80"
 
-                                                   PointerType="RangePointer" 
+	PointerType="RangePointer" 
 
-                                                   RangePointerStroke="Orange"
+	RangePointerStroke="Orange"
 
-                                                   RangePointerStrokeThickness="8"/>
+	RangePointerStrokeThickness="8"/>
 
-                        </syncfusion:CircularScale.Pointers>
+	</syncfusion:CircularScale.Pointers>
 
-                    </syncfusion:CircularScale>
+	</syncfusion:CircularScale>
 
-                </syncfusion:SfCircularGauge.MainScale>
+	</syncfusion:SfCircularGauge.MainScale>
 
-            </syncfusion:SfCircularGauge>
+	</syncfusion:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -309,23 +311,24 @@ The RangePointer in the scale can be placed inside the scale or outside the scal
 
 
 
-      SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.RangePointerPosition = RangePointerPosition.Outside;
+_mainscale.RangePointerPosition = RangePointerPosition.Outside;
 
-            _mainscale.Pointers.Add(new CircularPointer() { Value = 80, PointerType = PointerType.RangePointer, EnableAnimation = true, RangePointerStroke = new SolidColorBrush(Colors.Orange), RangePointerStrokeThickness = 8 });
+_mainscale.Pointers.Add(new CircularPointer() { Value = 80, PointerType = PointerType.RangePointer, EnableAnimation = true, RangePointerStroke = new SolidColorBrush(Colors.Orange), RangePointerStrokeThickness = 8 });
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
+
 {% endhighlight %}
 
+{% endtabs %}
 
 
-
-### Screenshot:
+### Screenshot
 
 ![](Pointer-Settings_images/Pointer-Settings_img4.png)
 
@@ -339,8 +342,9 @@ In a Symbol Pointer, the value is pointed out by a symbol on the scale. You can 
 
 
 
-### Code Example:
+### Code Example
 
+{% tabs %}
 {% highlight xml %}
 
 
@@ -348,29 +352,29 @@ In a Symbol Pointer, the value is pointed out by a symbol on the scale. You can 
 
 <syncfusion:SfCircularGauge x:Name="gauge">
 
-   <syncfusion:SfCircularGauge.MainScale>
+<syncfusion:SfCircularGauge.MainScale>
 
-      <syncfusion:CircularScale>
+<syncfusion:CircularScale>
 
-         <syncfusion:CircularScale.Pointers>
+<syncfusion:CircularScale.Pointers>
 
-            <syncfusion:CircularPointer Value="80"
+<syncfusion:CircularPointer Value="80"
 
-                                        PointerType="SymbolPointer" 
+PointerType="SymbolPointer" 
 
-                                         EnableAnimation="True"        
+EnableAnimation="True"        
 
-                                        SymbolPointerStroke="Orange"
+SymbolPointerStroke="Orange"
 
-                                        SymbolPointerVisibility="Visible"
+SymbolPointerVisibility="Visible"
 
-                                        />
+/>
 
-         </syncfusion:CircularScale.Pointers>
+</syncfusion:CircularScale.Pointers>
 
-      </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-   </syncfusion:SfCircularGauge.MainScale>
+</syncfusion:SfCircularGauge.MainScale>
 
 </syncfusion:SfCircularGauge>
 {% endhighlight %}
@@ -382,18 +386,18 @@ In a Symbol Pointer, the value is pointed out by a symbol on the scale. You can 
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.Pointers.Add(new CircularPointer() { Value = 80, PointerType = PointerType.SymbolPointer, EnableAnimation = true, RangePointerStroke = new SolidColorBrush(Colors.Orange), SymbolPointerVisibility=Visibility.Visible});
+_mainscale.Pointers.Add(new CircularPointer() { Value = 80, PointerType = PointerType.SymbolPointer, EnableAnimation = true, RangePointerStroke = new SolidColorBrush(Colors.Orange), SymbolPointerVisibility=Visibility.Visible});
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
-
+{% endtabs %}
 
 
 
@@ -410,42 +414,42 @@ One advantage to the symbol pointer is its customizability. You can change the h
 
 Symbol is an enum property that provides symbol options for the symbol pointer that contains several shapes like rectangle, ellipse, and triangle. The SymbolPointerHeight property is used to set the height of the symbol pointer. The value is given as a double value. The SymbolPointerWidth property is used to set the width of the symbol pointer.
 
-### Code Example:
+### Code Example
 
-
+{% tabs %}
 {% highlight xml %}
 
 
 
 
 
-        <syncfusion:SfCircularGauge x:Name="gauge">
+<syncfusion:SfCircularGauge x:Name="gauge">
 
-            <syncfusion:SfCircularGauge.MainScale>
+<syncfusion:SfCircularGauge.MainScale>
 
-                <syncfusion:CircularScale>
+<syncfusion:CircularScale>
 
-                    <syncfusion:CircularScale.Pointers>
+<syncfusion:CircularScale.Pointers>
 
-                        <syncfusion:CircularPointer PointerType="SymbolPointer" 
+<syncfusion:CircularPointer PointerType="SymbolPointer" 
 
-                                   Symbol="Pentagon" 
+Symbol="Pentagon" 
 
-                                   SymbolPointerStroke="Red" 
+SymbolPointerStroke="Red" 
 
-                                   SymbolPointerHeight ="20" 
+SymbolPointerHeight ="20" 
 
-                                   SymbolPointerWidth ="20"
+SymbolPointerWidth ="20"
 
-                                   Value="50"/>
+Value="50"/>
 
-                    </syncfusion:CircularScale.Pointers>
+</syncfusion:CircularScale.Pointers>
 
-                </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-            </syncfusion:SfCircularGauge.MainScale>
+</syncfusion:SfCircularGauge.MainScale>
 
-        </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
 {% endhighlight %}
 
 
@@ -456,21 +460,21 @@ Symbol is an enum property that provides symbol options for the symbol pointer t
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.Pointers.Add(new CircularPointer() { PointerType = PointerType.SymbolPointer, Symbol = Symbol.Pentagon, SymbolPointerStroke = new SolidColorBrush(Colors.Red), SymbolPointerHeight = 20, SymbolPointerWidth = 20, Value=50});
+_mainscale.Pointers.Add(new CircularPointer() { PointerType = PointerType.SymbolPointer, Symbol = Symbol.Pentagon, SymbolPointerStroke = new SolidColorBrush(Colors.Red), SymbolPointerHeight = 20, SymbolPointerWidth = 20, Value=50});
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
 {% endhighlight %}
+{% endtabs %}
 
 
 
-
-### Screenshot:
+### Screenshot
 
 ![](Pointer-Settings_images/Pointer-Settings_img6.png)
 
@@ -484,7 +488,7 @@ The default appearance of the SymbolPointer can be customized by using the Symbo
 
 The SymbolPointerTemplate is a DataTemplate type, used to customize or override the default template of the SymbolPointer.
 
-### Code Example:
+### Code Example
 
 
 {% highlight xml %}
@@ -493,45 +497,45 @@ The SymbolPointerTemplate is a DataTemplate type, used to customize or override 
 
 
 
-      <syncfusion:SfCircularGauge x:Name="gauge">
+<syncfusion:SfCircularGauge x:Name="gauge">
 
-            <syncfusion:SfCircularGauge.MainScale>
+<syncfusion:SfCircularGauge.MainScale>
 
-                <syncfusion:CircularScale>
+<syncfusion:CircularScale>
 
 <syncfusion:CircularScale.Pointers>
 
-    <syncfusion:CircularPointer   Value="65" PointerType="SymbolPointer" 
+<syncfusion:CircularPointer   Value="65" PointerType="SymbolPointer" 
 
-                                  Symbol="Diamond"   >
+Symbol="Diamond"   >
 
-         <syncfusion:CircularPointer.SymbolPointerTemplate>
+<syncfusion:CircularPointer.SymbolPointerTemplate>
 
-               <DataTemplate>
+<DataTemplate>
 
-                    <Polygon Fill="Red"  Points=" 0,7.5 5,5 5,0 15,0 15,5 10,5 10,10 15,10                      
+<Polygon Fill="Red"  Points=" 0,7.5 5,5 5,0 15,0 15,5 10,5 10,10 15,10                      
 
-                                        15,15 5,15 5,10  ">
+15,15 5,15 5,10  ">
 
 
 
-                     </Polygon>
+</Polygon>
 
-                </DataTemplate>
+</DataTemplate>
 
-         </syncfusion:CircularPointer.SymbolPointerTemplate>
+</syncfusion:CircularPointer.SymbolPointerTemplate>
 
-      </syncfusion:CircularPointer>
+</syncfusion:CircularPointer>
 
 </syncfusion:CircularScale.Pointers>
 
 
 
- </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-            </syncfusion:SfCircularGauge.MainScale>
+</syncfusion:SfCircularGauge.MainScale>
 
-        </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
 {% endhighlight %}
 
 

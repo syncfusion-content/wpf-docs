@@ -11,6 +11,7 @@ documentation: ug
 
 PDF files as stream can be viewed in Essential Pdf Viewer using the overload available in the Load method. Use the following code example to load the PDF streams in viewer:
 
+{% tabs %}
 {% highlight c# %}
 
 FileStream stream = new FileStream("Template.pdf", FileMode.Open);
@@ -44,4 +45,5 @@ Dim pdfViewer1 As New PdfViewerControl()
 pdfViewer1.Load(stream)
 
 {% endhighlight %}
+{% endtabs %}
 

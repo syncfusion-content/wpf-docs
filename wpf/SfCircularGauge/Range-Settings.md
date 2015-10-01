@@ -15,61 +15,57 @@ Range is a visual element that begins and ends at specified values within a scal
 
 
 
-### Code Example:
+### Code Example
 
-
+{% tabs %}
 {% highlight xml %}
 
 
 
 <syncfusion:SfCircularGauge x:Name="gauge">
 
-                <syncfusion:SfCircularGauge.MainScale>
+<syncfusion:SfCircularGauge.MainScale>
 
-                    <syncfusion:CircularScale >
+<syncfusion:CircularScale >
 
-                        <syncfusion:CircularScale.Ranges>
+<syncfusion:CircularScale.Ranges>
 
-                            <syncfusion:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10"/>
+<syncfusion:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10"/>
 
-                            <syncfusion:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10"/>
+<syncfusion:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10"/>
 
-                            <syncfusion:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
+<syncfusion:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
 
-                        </syncfusion:CircularScale.Ranges>
+</syncfusion:CircularScale.Ranges>
 
-                    </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-                </syncfusion:SfCircularGauge.MainScale>
+</syncfusion:SfCircularGauge.MainScale>
 
-            </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
 {% endhighlight %}
 
 
 {% highlight C# %}
 
 
+SfCircularGauge circularGauge = new SfCircularGauge();
 
+CircularScale _mainscale = new CircularScale();
 
+_mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 40, Stroke = new SolidColorBrush(Colors.Green), StrokeThickness = 10 });
 
+_mainscale.Ranges.Add(new CircularRange() { StartValue = 40, EndValue = 60, Stroke = new SolidColorBrush(Colors.Yellow), StrokeThickness = 10 });
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+_mainscale.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Colors.Red), StrokeThickness = 10 });
 
-            CircularScale _mainscale = new CircularScale();
+circularGauge.MainScale = _mainscale;
+this.Grid.Children.Add(circularGauge);
+ {% endhighlight %}           
 
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 40, Stroke = new SolidColorBrush(Colors.Green), StrokeThickness = 10 });
+{% endtabs %}
 
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 40, EndValue = 60, Stroke = new SolidColorBrush(Colors.Yellow), StrokeThickness = 10 });
-
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Colors.Red), StrokeThickness = 10 });
-
-            circularGauge.MainScale = _mainscale;
-
- {% endhighlight %}           this.Grid.Children.Add(circularGauge);
-
-
-
-###Screenshot:
+###Screenshot
 
 ![](Range-Settings_images/Range-Settings_img1.png)
 
@@ -81,8 +77,9 @@ Range is a visual element that begins and ends at specified values within a scal
 
 Range start and end width can be customized by using the StartWidth and EndWidth property of range.
 
-### Code Example:
+### Code Example
 
+{% tabs %}
 {% highlight xml %}
 
 
@@ -91,21 +88,21 @@ Range start and end width can be customized by using the StartWidth and EndWidth
 
 <syncfusion:SfCircularGauge x:Name="gauge">
 
-            <syncfusion:SfCircularGauge.Scales>
+<syncfusion:SfCircularGauge.Scales>
 
-                <syncfusion:CircularScale  RangePosition="Inside">
+<syncfusion:CircularScale  RangePosition="Inside">
 
-                    <syncfusion:CircularScale.Ranges>
+<syncfusion:CircularScale.Ranges>
 
-                        <syncfusion:CircularRange StartValue="30" EndValue="100" Stroke="Red" StartWidth="2" EndWidth="20" />
+<syncfusion:CircularRange StartValue="30" EndValue="100" Stroke="Red" StartWidth="2" EndWidth="20" />
 
-                    </syncfusion:CircularScale.Ranges>
+</syncfusion:CircularScale.Ranges>
 
-                </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-            </syncfusion:SfCircularGauge.Scales>
+</syncfusion:SfCircularGauge.Scales>
 
-        </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
 {% endhighlight %}
 
 
@@ -115,33 +112,34 @@ Range start and end width can be customized by using the StartWidth and EndWidth
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale scale = new CircularScale();
+CircularScale scale = new CircularScale();
 
-            scale.Ranges.Add(
+scale.Ranges.Add(
 
-                new CircularRange() { 
+new CircularRange() { 
 
-                StartValue = 30,
+StartValue = 30,
 
-                EndValue = 100, 
+EndValue = 100, 
 
-                Stroke = new SolidColorBrush(Colors.Red),
+Stroke = new SolidColorBrush(Colors.Red),
 
-                StartWidth = 2,
+StartWidth = 2,
 
-                EndWidth =20
+EndWidth =20
 
-            });
+});
 
-            circularGauge.Scales.Add(scale);
+circularGauge.Scales.Add(scale);
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
 {% endhighlight %}
+{% endtabs %}
 
 
-### Screenshot:
+### Screenshot
 
 ![](Range-Settings_images/Range-Settings_img2.png)
 
@@ -151,60 +149,63 @@ Range start and end width can be customized by using the StartWidth and EndWidth
 
 You can bind the range’s stroke to the tick lines and labels within its range by setting the BindRangeStrokeToLabels and BindRangeStrokeToTicks properties to true.
 
-### Code Example:
+### Code Example
 
+{% tabs %}
 {% highlight xml %}
 
 
-            <syncfusion:SfCircularGauge x:Name="gauge">
+<syncfusion:SfCircularGauge x:Name="gauge">
 
-                <syncfusion:SfCircularGauge.MainScale>
+<syncfusion:SfCircularGauge.MainScale>
 
-                    <syncfusion:CircularScale  BindRangeStrokeToLabels="True"
+<syncfusion:CircularScale  BindRangeStrokeToLabels="True"
 
-                                               BindRangeStrokeToTicks="True">
+   BindRangeStrokeToTicks="True">
 
-                         <syncfusion:CircularScale.Ranges>
+<syncfusion:CircularScale.Ranges>
 
-                            <syncfusion:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10"/>
+<syncfusion:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10"/>
 
-                            <syncfusion:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10"/>
+<syncfusion:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10"/>
 
-                            <syncfusion:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
+<syncfusion:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
 
-                        </syncfusion:CircularScale.Ranges>
+</syncfusion:CircularScale.Ranges>
 
-                    </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-                </syncfusion:SfCircularGauge.MainScale>
+</syncfusion:SfCircularGauge.MainScale>
 
-            </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.BindRangeStrokeToLabels = true;
+_mainscale.BindRangeStrokeToLabels = true;
 
-            _mainscale.BindRangeStrokeToTicks = true;
+_mainscale.BindRangeStrokeToTicks = true;
 
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 40, Stroke = new SolidColorBrush(Colors.Green), StrokeThickness = 10 });
+_mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 40, Stroke = new SolidColorBrush(Colors.Green), StrokeThickness = 10 });
 
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 40, EndValue = 60, Stroke = new SolidColorBrush(Colors.Yellow), StrokeThickness = 10 });
+_mainscale.Ranges.Add(new CircularRange() { StartValue = 40, EndValue = 60, Stroke = new SolidColorBrush(Colors.Yellow), StrokeThickness = 10 });
 
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Colors.Red), StrokeThickness = 10 });
+_mainscale.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Colors.Red), StrokeThickness = 10 });
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
+
 {% endhighlight %}
 
-
+{% endtabs %}
 
 
 ### Screenshot:
@@ -222,33 +223,35 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 
 
-### Code Example:
+### Code Example
 
+{% tabs %}
 {% highlight xml %}
 
 
 
-            <syncfusion:SfCircularGauge x:Name="gauge">
+<syncfusion:SfCircularGauge x:Name="gauge">
 
-                <syncfusion:SfCircularGauge.MainScale>
+<syncfusion:SfCircularGauge.MainScale>
 
-                    <syncfusion:CircularScale RangePosition="Outside">
+<syncfusion:CircularScale RangePosition="Outside">
 
-                        <syncfusion:CircularScale.Ranges>
+<syncfusion:CircularScale.Ranges>
 
-                            <syncfusion:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10"/>
+<syncfusion:CircularRange StartValue="0" EndValue="40" Stroke="Green" StrokeThickness ="10"/>
 
-                            <syncfusion:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10"/>
+<syncfusion:CircularRange StartValue="40" EndValue="60" Stroke="Yellow" StrokeThickness ="10"/>
 
-                            <syncfusion:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
+<syncfusion:CircularRange StartValue="60" EndValue="100" Stroke="Red" StrokeThickness ="10"/>
 
-                        </syncfusion:CircularScale.Ranges>
+</syncfusion:CircularScale.Ranges>
 
-                    </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-                </syncfusion:SfCircularGauge.MainScale>
+</syncfusion:SfCircularGauge.MainScale>
 
-            </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
+
 {% endhighlight %}
 
 
@@ -258,23 +261,24 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.RangePosition = RangePosition.Outside;
+_mainscale.RangePosition = RangePosition.Outside;
 
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 40, Stroke = new SolidColorBrush(Colors.Green), StrokeThickness = 10 });
+_mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 40, Stroke = new SolidColorBrush(Colors.Green), StrokeThickness = 10 });
 
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 40, EndValue = 60, Stroke = new SolidColorBrush(Colors.Yellow), StrokeThickness = 10 });
+_mainscale.Ranges.Add(new CircularRange() { StartValue = 40, EndValue = 60, Stroke = new SolidColorBrush(Colors.Yellow), StrokeThickness = 10 });
 
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Colors.Red), StrokeThickness = 10 });
+_mainscale.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Colors.Red), StrokeThickness = 10 });
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
+
 {% endhighlight %}
-
+{% endtabs %}
 
 ### Screenshot:
 

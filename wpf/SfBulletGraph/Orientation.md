@@ -10,48 +10,50 @@ documentation: ug
 # Orientation
 
 The view of the Bullet Graph is changed by setting the Orientation property. Quantitative scale contains two major components: ticks and labels. The length of the quantitative scale is customized by using the QuantitativeScaleLength property. The direction of the quantitative scale is personalized by making use of the FlowDirection property it’s either Forward or Backward.
+
+{% tabs %}
 {% highlight html %}
 
 
-  <syncfusion:SfBulletGraph Orientation="Vertical"   FlowDirection="Forward"
+<syncfusion:SfBulletGraph Orientation="Vertical"   FlowDirection="Forward"
 
-                                  QualitativeRangesSize="30" 
+QualitativeRangesSize="30" 
 
-                                  QuantitativeScaleLength="400"
+QuantitativeScaleLength="400"
 
-                                  Minimum="0" Maximum="10" Interval="2" >
+Minimum="0" Maximum="10" Interval="2" >
 
-            <syncfusion:SfBulletGraph.QualitativeRanges>
+<syncfusion:SfBulletGraph.QualitativeRanges>
 
-                <syncfusion:QualitativeRange RangeEnd="3" 
+<syncfusion:QualitativeRange RangeEnd="3" 
 
-                                             RangeStroke="LightGray"
+RangeStroke="LightGray"
 
-                                             RangeOpacity="1">
+RangeOpacity="1">
 
-                </syncfusion:QualitativeRange>
+</syncfusion:QualitativeRange>
 
-                <syncfusion:QualitativeRange RangeEnd="7" 
+<syncfusion:QualitativeRange RangeEnd="7" 
 
-                                             RangeStroke="Gray"
+RangeStroke="Gray"
 
-                                             RangeOpacity="1">
+RangeOpacity="1">
 
-                </syncfusion:QualitativeRange>
+</syncfusion:QualitativeRange>
 
-                <syncfusion:QualitativeRange RangeEnd="10" 
+<syncfusion:QualitativeRange RangeEnd="10" 
 
-                                             RangeStroke="DarkGray"
+RangeStroke="DarkGray"
 
-                                             RangeOpacity="1">
+RangeOpacity="1">
 
-                </syncfusion:QualitativeRange>
+</syncfusion:QualitativeRange>
 
-            </syncfusion:SfBulletGraph.QualitativeRanges>
+</syncfusion:SfBulletGraph.QualitativeRanges>
 
 
 
-        </syncfusion:SfBulletGraph>
+</syncfusion:SfBulletGraph>
 
 {% endhighlight  %}
 {% highlight c# %}
@@ -59,40 +61,43 @@ The view of the Bullet Graph is changed by setting the Orientation property. Qua
 
 
 
-            SfBulletGraph bulletgraph = new SfBulletGraph();
+SfBulletGraph bulletgraph = new SfBulletGraph();
 
-            bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
+bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
 
-            bulletgraph.Orientation = Orientation.Vertical;
+bulletgraph.Orientation = Orientation.Vertical;
 
-            bulletgraph.QualitativeRangesSize = 30;
+bulletgraph.QualitativeRangesSize = 30;
 
-            bulletgraph.QuantitativeScaleLength = 400;
+bulletgraph.QuantitativeScaleLength = 400;
 
-            bulletgraph.Minimum = 0;
+bulletgraph.Minimum = 0;
 
-            bulletgraph.Maximum = 10;
+bulletgraph.Maximum = 10;
 
-            bulletgraph.Interval = 2;
+bulletgraph.Interval = 2;
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.LightGray) });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 3, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.LightGray) });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.Gray) });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.Gray) });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.DarkGray) });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.DarkGray) });
 
-            this.Grid.Children.Add(bulletgraph);
+this.Grid.Children.Add(bulletgraph);
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Concept-and-Features_images/Concept-and-Features_img1.png)
 
-_SfBulletGraph with Vertical Orientation_
+SfBulletGraph with Vertical Orientation
+{:.caption}
 
 
 ![](Concept-and-Features_images/Concept-and-Features_img2.png)
 
-_SfBulletGraph with Horizontal Orientation_
+SfBulletGraph with Horizontal Orientation
+{:.caption}
 
 
 

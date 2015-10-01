@@ -13,25 +13,22 @@ documentation: ug
 
 Scale labels associate a numeric value with major scale tick marks. The label stroke can be changed by using the LabelStroke property. The size of the Labels can be changed by using the LabelAutoSizeChange property.
 
-### Code Example:
+### Code Example
 
+{% tabs %}
 {% highlight xml %}
 
+<syncfusion:SfCircularGauge x:Name="gauge">
 
+<syncfusion:SfCircularGauge.MainScale>
 
+<syncfusion:CircularScale LabelStroke="Red"  LabelAutoSizeChange="True" >                              
 
+</syncfusion:CircularScale>
 
-             <syncfusion:SfCircularGauge x:Name="gauge">
+</syncfusion:SfCircularGauge.MainScale>
 
-                <syncfusion:SfCircularGauge.MainScale>
-
-                    <syncfusion:CircularScale LabelStroke="Red"  LabelAutoSizeChange="True" >                              
-
-                    </syncfusion:CircularScale>
-
-                </syncfusion:SfCircularGauge.MainScale>
-
-      </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -40,19 +37,20 @@ Scale labels associate a numeric value with major scale tick marks. The label s
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.LabelStroke = new SolidColorBrush(Colors.Red);
+_mainscale.LabelStroke = new SolidColorBrush(Colors.Red);
 
-            _mainscale.LabelAutoSizeChange = true;
+_mainscale.LabelAutoSizeChange = true;
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
+
 {% endhighlight %}
-
+{% endtabs %}
 
 ![](Label-Settings_images/Label-Settings_img1.png)
 
@@ -85,59 +83,59 @@ The NumericScaleType property allows you to set the type of label. The following
 * Quintillions
 
 
-
+{% tabs %}
 {% highlight xml %}
 
 
 
 
 
- <syncfusion:SfCircularGauge >
+<syncfusion:SfCircularGauge >
 
-    <syncfusion:SfCircularGauge.MainScale>
+<syncfusion:SfCircularGauge.MainScale>
 
-        <syncfusion:CircularScale EnableSmartLabels="False"  NumericScaleType="Thousands" Interval="20" 
+<syncfusion:CircularScale EnableSmartLabels="False"  NumericScaleType="Thousands" Interval="20" 
 
-                                  MinorTicksPerInterval="5" TickLength="20" 
+MinorTicksPerInterval="5" TickLength="20" 
 
-                                  StartAngle="180" SweepAngle="180" StartValue="0"
+StartAngle="180" SweepAngle="180" StartValue="0"
 
-                                   EndValue="100"/>
+EndValue="100"/>
 
-    </syncfusion:SfCircularGauge.MainScale>
+</syncfusion:SfCircularGauge.MainScale>
 
- </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
 {% endhighlight %}
 
 {% highlight C# %}
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.EnableSmartLabels = false;
+_mainscale.EnableSmartLabels = false;
 
-            _mainscale.Interval = 20;
+_mainscale.Interval = 20;
 
-            _mainscale.MinorTicksPerInterval = 5;
+_mainscale.MinorTicksPerInterval = 5;
 
-            _mainscale.TickLength = 20;
+_mainscale.TickLength = 20;
 
-            _mainscale.StartAngle = 180;
+_mainscale.StartAngle = 180;
 
-            _mainscale.SweepAngle = 180;
+_mainscale.SweepAngle = 180;
 
-            _mainscale.StartValue = 0;
+_mainscale.StartValue = 0;
 
-            _mainscale.EndValue = 100;
+_mainscale.EndValue = 100;
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
 {% endhighlight %}
-
+{% endtabs %}
 
 
 
@@ -145,7 +143,8 @@ The NumericScaleType property allows you to set the type of label. The following
 ![](Label-Settings_images/Label-Settings_img2.png)
 
 
- _Enable  SmartLabels-‘False’’_
+ Enable  SmartLabels-‘False’
+ {:.caption}
  
 
 ## Number of Fraction Digits
@@ -153,59 +152,55 @@ The NumericScaleType property allows you to set the type of label. The following
 The NoOfFractionalDigits property is used to set the number of fractional digits to be displayed in the scale labels.
 {% highlight xml %}
 
+	<syncfusion:SfCircularGauge >
 
+	<syncfusion:SfCircularGauge.MainScale>
 
+	<syncfusion:CircularScale EnableSmartLabels="True" 
 
+	Interval="20"  NoOfFractionalDigit="1"
 
- <syncfusion:SfCircularGauge >
+	MinorTicksPerInterval="5" TickLength="20" 
 
-    <syncfusion:SfCircularGauge.MainScale>
+	StartAngle="180" SweepAngle="180" StartValue="0"
 
-        <syncfusion:CircularScale EnableSmartLabels="True" 
+	EndValue="200"/>
 
-                                  Interval="20"  NoOfFractionalDigit="1"
+	</syncfusion:SfCircularGauge.MainScale>
 
-                                  MinorTicksPerInterval="5" TickLength="20" 
-
-                                  StartAngle="180" SweepAngle="180" StartValue="0"
-
-                                  EndValue="200"/>
-
-    </syncfusion:SfCircularGauge.MainScale>
-
- </syncfusion:SfCircularGauge>
+	</syncfusion:SfCircularGauge>
+	
 {% endhighlight %}
 
 {% highlight C# %}
 
 
+	SfCircularGauge circularGauge = new SfCircularGauge();
 
+	CircularScale _mainscale = new CircularScale();
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+	_mainscale.EnableSmartLabels = true;
 
-            CircularScale _mainscale = new CircularScale();
+	_mainscale.Interval = 2000;
 
-            _mainscale.EnableSmartLabels = true;
+	_mainscale.NoOfFractionalDigit = 1;
 
-            _mainscale.Interval = 2000;
+	_mainscale.MinorTicksPerInterval = 5;
 
-           _mainscale.NoOfFractionalDigit = 1;
+	_mainscale.TickLength = 20;
 
-            _mainscale.MinorTicksPerInterval = 5;
+	_mainscale.StartAngle = 180;
 
-            _mainscale.TickLength = 20;
+	_mainscale.SweepAngle = 180;
 
-            _mainscale.StartAngle = 180;
+	_mainscale.StartValue = 0;
 
-            _mainscale.SweepAngle = 180;
+	_mainscale.EndValue = 100;
 
-            _mainscale.StartValue = 0;
+	circularGauge.MainScale = _mainscale;
 
-            _mainscale.EndValue = 100;
-
-            circularGauge.MainScale = _mainscale;
-
-            this.Grid.Children.Add(circularGauge);
+	this.Grid.Children.Add(circularGauge);
+	
 {% endhighlight %}
 
 
@@ -220,29 +215,28 @@ The NoOfFractionalDigits property is used to set the number of fractional digits
 ## Label Postfix
 
 This property allows you to set the postfix values to the scale labels. The label postfixes are visible even if the EnableSmartLabels property is set to false. 
+
+{% tabs %}
 {% highlight xml %}
 
+<syncfusion:SfCircularGauge >
 
+<syncfusion:SfCircularGauge.MainScale>
 
+<syncfusion:CircularScale LabelPostfix="%"
 
+Interval="10"  MinorTicksPerInterval="5" 
 
- <syncfusion:SfCircularGauge >
+TickLength="20" StartAngle="180" 
 
-    <syncfusion:SfCircularGauge.MainScale>
+SweepAngle="180" 
 
-        <syncfusion:CircularScale LabelPostfix="%"
+StartValue="0" EndValue="100"/>
 
-                                  Interval="10"  MinorTicksPerInterval="5" 
+</syncfusion:SfCircularGauge.MainScale>
 
-                                  TickLength="20" StartAngle="180" 
+</syncfusion:SfCircularGauge>
 
-                                  SweepAngle="180" 
-
-                                  StartValue="0" EndValue="100"/>
-
-    </syncfusion:SfCircularGauge.MainScale>
-
- </syncfusion:SfCircularGauge>
 {% endhighlight %}
 
 {% highlight C# %}
@@ -250,29 +244,30 @@ This property allows you to set the postfix values to the scale labels. The labe
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.LabelPostfix = "%";
+_mainscale.LabelPostfix = "%";
 
-            _mainscale.Interval = 10;
+_mainscale.Interval = 10;
 
-            _mainscale.MinorTicksPerInterval = 5;
+_mainscale.MinorTicksPerInterval = 5;
 
-            _mainscale.TickLength = 20;
+_mainscale.TickLength = 20;
 
-            _mainscale.StartAngle = 180;
+_mainscale.StartAngle = 180;
 
-            _mainscale.SweepAngle = 0;
+_mainscale.SweepAngle = 0;
 
-            _mainscale.EndValue = 100;
+_mainscale.EndValue = 100;
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
+
 {% endhighlight %}
-
+{% endtabs %}
 
 
 
@@ -290,60 +285,61 @@ This property allows you to set the postfix values to the scale labels. The labe
 
 This property allows you to set the prefix values for the scale labels. The label prefixes are visible even if the EnableSmartLabels property is set to false.
 
-
+{% tabs %}
 {% highlight xml %}
 
 
 
 
 
- <syncfusion:SfCircularGauge >
+<syncfusion:SfCircularGauge >
 
-    <syncfusion:SfCircularGauge.MainScale>
+<syncfusion:SfCircularGauge.MainScale>
 
-        <syncfusion:CircularScale LabelPrefix="$"
+<syncfusion:CircularScale LabelPrefix="$"
 
-                                  Interval="10"  MinorTicksPerInterval="5" 
+Interval="10"  MinorTicksPerInterval="5" 
 
-                                  TickLength="20" StartAngle="180" 
+TickLength="20" StartAngle="180" 
 
-                                  SweepAngle="180" 
+SweepAngle="180" 
 
-                                  StartValue="0" EndValue="100"/>
+StartValue="0" EndValue="100"/>
 
-    </syncfusion:SfCircularGauge.MainScale>
+</syncfusion:SfCircularGauge.MainScale>
 
- </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.LabelPrefix= "$";
+_mainscale.LabelPrefix= "$";
 
-            _mainscale.Interval = 10;
+_mainscale.Interval = 10;
 
-            _mainscale.MinorTicksPerInterval = 5;
+_mainscale.MinorTicksPerInterval = 5;
 
-            _mainscale.TickLength = 20;
+_mainscale.TickLength = 20;
 
-            _mainscale.StartAngle = 180;
+_mainscale.StartAngle = 180;
 
-            _mainscale.SweepAngle = 0;
+_mainscale.SweepAngle = 0;
 
-            _mainscale.EndValue = 100;
+_mainscale.EndValue = 100;
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
-
+{% endtabs %}
 
 
 
@@ -365,21 +361,22 @@ The Labels in the scale can be placed inside the scale or outside the scale by s
 
 ### Code Example
 
+{% tabs %}
 {% highlight xml %}
 
 
 
-            <syncfusion:SfCircularGauge x:Name="gauge">
+<syncfusion:SfCircularGauge x:Name="gauge">
 
-                <syncfusion:SfCircularGauge.MainScale>
+<syncfusion:SfCircularGauge.MainScale>
 
-                    <syncfusion:CircularScale LabelPosition="Outside">
+<syncfusion:CircularScale LabelPosition="Outside">
 
-                    </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-                </syncfusion:SfCircularGauge.MainScale>
+</syncfusion:SfCircularGauge.MainScale>
 
-            </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -388,23 +385,22 @@ The Labels in the scale can be placed inside the scale or outside the scale by s
 
 {% highlight C# %}
 
+SfCircularGauge circularGauge = new SfCircularGauge();
 
+CircularScale _mainscale = new CircularScale();
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+_mainscale.LabelPosition = LabelPosition.Outside;
 
-            CircularScale _mainscale = new CircularScale();
+circularGauge.MainScale = _mainscale;
 
-            _mainscale.LabelPosition = LabelPosition.Outside;
+this.Grid.Children.Add(circularGauge);
 
-            circularGauge.MainScale = _mainscale;
-
-            this.Grid.Children.Add(circularGauge);
 {% endhighlight %}
 
+{% endtabs %}
 
 
-
-### Screenshot:
+### Screenshot
 
 ![](Label-Settings_images/Label-Settings_img6.png)
 

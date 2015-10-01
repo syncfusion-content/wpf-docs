@@ -28,51 +28,51 @@ If the PopUpAnimationType property is set to Fade, the submenu will open with fa
 
 <shared:MenuAdv x:Name="Menu" Margin="10" PopUpAnimationType="Slide”>
 
-                <shared:MenuItemAdv Header="File"/>
+<shared:MenuItemAdv Header="File"/>
 
-                <shared:MenuItemAdv Header="Edit"/>
+<shared:MenuItemAdv Header="Edit"/>
 
-                <shared:MenuItemAdv Header="View"/>
+<shared:MenuItemAdv Header="View"/>
 
-                <shared:MenuItemAdv Header="Project"/>
+<shared:MenuItemAdv Header="Project"/>
 
-                <shared:MenuItemAdv Header="VerticalAnimation">
+<shared:MenuItemAdv Header="VerticalAnimation">
 
-                    <shared:MenuItemAdv Header="HorizontalAnimation">
+<shared:MenuItemAdv Header="HorizontalAnimation">
 
-                          <shared:MenuItemAdv Header="Item1"/>
+<shared:MenuItemAdv Header="Item1"/>
 
-                          <shared:MenuItemAdv Header="Item2"/>
+<shared:MenuItemAdv Header="Item2"/>
 
-                          <shared:MenuItemAdv Header="Item3"/>
+<shared:MenuItemAdv Header="Item3"/>
 
-                          <shared:MenuItemAdv Header="Item4"/>
+<shared:MenuItemAdv Header="Item4"/>
 
-                          <shared:MenuItemAdv Header="Item5"/>
+<shared:MenuItemAdv Header="Item5"/>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                    <shared:MenuItemAdv Header="Item1"/>
+<shared:MenuItemAdv Header="Item1"/>
 
-                    <shared:MenuItemAdv Header="Item2"/>
+<shared:MenuItemAdv Header="Item2"/>
 
-                    <shared:MenuItemAdv Header="Item3"/>
+<shared:MenuItemAdv Header="Item3"/>
 
-                    <shared:MenuItemAdv Header="Item4"/>
+<shared:MenuItemAdv Header="Item4"/>
 
-                    <shared:MenuItemAdv Header="Item5"/>
+<shared:MenuItemAdv Header="Item5"/>
 
-                </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
 </shared:MenuAdv>
 {% endhighlight %}
 
 
-## Properties
+### Properties
 
 The property for the Animation support is described in the following tabulation:
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -90,7 +90,7 @@ PopUpAnimationType(None)</td></tr>
 </table>
 
 
-## Sample Link
+### Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

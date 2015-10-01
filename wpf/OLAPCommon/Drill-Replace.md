@@ -13,6 +13,7 @@ Drill Replace displays only the immediate child members and ancestors on drill-d
 
 The following code illustrates how to achieve drill replace support in a current report:
 
+{% tabs %}
 {% highlight c# %}
 
 olapDataManager.CurrentReport.DrillType = DrillType.DrillReplace;
@@ -26,6 +27,6 @@ olapDataManager.CurrentReport.DrillType = DrillType.DrillReplace;
 olapDataManager.CurrentReport.DrillType = DrillType.DrillReplace
 
 {% endhighlight %}
-
+{% endtabs %}
 
 

@@ -18,13 +18,13 @@ The following code example explains how to perform the Sorting operation in Char
 
 <syncfusion:LineSeries Label="Series1" IsSortData="True" SortBy="X"                 
 
-                  SortDirection="Descending"  
+SortDirection="Descending"  
 
-                  ItemsSource="{Binding CompanyDetails}" 
+ItemsSource="{Binding CompanyDetails}" 
 
-                  XBindingPath="CompanyName"        YBindingPath="CompanyTurnOver"/>
+XBindingPath="CompanyName"        YBindingPath="CompanyTurnOver"/>
 
-            </syncfusion:SfChart>
+</syncfusion:SfChart>
 
 
 {% endhighlight %}
@@ -42,12 +42,13 @@ The following code example and screenshot demonstrate Sorting in Ascending order
 
 <syncfusion:LineSeries Label="Series1" IsSortData="True" SortBy="X"                 
 
-          SortDirection="Ascending" ItemsSource="{Binding CompanyDetails}" 
+SortDirection="Ascending" ItemsSource="{Binding CompanyDetails}" 
 
-          XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"/>
+XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"/>
 
 </syncfusion:SfChart>
 {% endhighlight %}
+
 ![C:/Users/rachel/Desktop/wpf/sshot-65.png](Sorting_images/Sorting_img2.png)
 
 

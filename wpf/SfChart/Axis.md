@@ -19,7 +19,7 @@ NumericalAxis is used to plot numericals to the chart. You can set NumericalAxis
 
 The following APIs are used to customize NumericalAxis.
 
-Properties
+### Properties
 
 <table>
 <tr>
@@ -52,31 +52,31 @@ Gets or sets the bool that represents a value to enable start the range from ze
 
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            <syncfusion:SfChart.DataContext>
+<syncfusion:SfChart.DataContext>
 
-                <local:ViewModel/>
+<local:ViewModel/>
 
-            </syncfusion:SfChart.DataContext>
+</syncfusion:SfChart.DataContext>
 
-            <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:CategoryAxis   Header="Company Name"/>
+<syncfusion:CategoryAxis   Header="Company Name"/>
 
-            </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
-            <syncfusion:SfChart.SecondaryAxis>
+<syncfusion:SfChart.SecondaryAxis>
 
-                <syncfusion:NumericalAxis Interval="100" Minimum="0" Maximum="1000" RangePadding="Round"   Header="Gross Revenue "/>
+<syncfusion:NumericalAxis Interval="100" Minimum="0" Maximum="1000" RangePadding="Round"   Header="Gross Revenue "/>
 
-            </syncfusion:SfChart.SecondaryAxis>
+</syncfusion:SfChart.SecondaryAxis>
 
 
 
-            <syncfusion:ColumnSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
+<syncfusion:ColumnSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
 
-            </syncfusion:ColumnSeries>
+</syncfusion:ColumnSeries>
 
-        </syncfusion:SfChart>
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -90,7 +90,7 @@ CategoryAxis is an index based axis that plots values based on the index of the 
 
 The following APIs are used in CategoryAxis.
 
-CategoryAxis
+
 
 <table>
 <tr>
@@ -114,37 +114,37 @@ Gets or sets the LabelPlacement that represents the position of the label in the
 
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-                <syncfusion:SfChart.DataContext>
+<syncfusion:SfChart.DataContext>
 
-                    <local:ViewModel/>
+<local:ViewModel/>
 
-                </syncfusion:SfChart.DataContext>
-
-
-
-                <syncfusion:SfChart.PrimaryAxis>
-
-                    <syncfusion:CategoryAxis   Header="Company Name"/>
-
-                </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.DataContext>
 
 
 
-                <syncfusion:SfChart.SecondaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-                    <syncfusion:NumericalAxis Interval="10" Minimum="200" Maximum="400" RangePadding="Round"   Header="Gross Revenue "/>
+<syncfusion:CategoryAxis   Header="Company Name"/>
 
-                </syncfusion:SfChart.SecondaryAxis>
-
-
-
-                <syncfusion:ColumnSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
-
-                </syncfusion:ColumnSeries>
+</syncfusion:SfChart.PrimaryAxis>
 
 
 
-            </syncfusion:SfChart>
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis Interval="10" Minimum="200" Maximum="400" RangePadding="Round"   Header="Gross Revenue "/>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+
+
+<syncfusion:ColumnSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
+
+</syncfusion:ColumnSeries>
+
+
+
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -158,7 +158,7 @@ DateTimeAxis is used to plot DateTime values. The DateTimeAxis is widely used to
 
 The following APIs are used for customizing DateTimeAxis.
 
-DateTimeAxis
+
 
 <table>
 <tr>
@@ -226,11 +226,11 @@ The default IntervalType of a DateTimeAxis is Auto. It calculates the type autom
 
 <syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:DateTimeAxis Name="Primary" 
+<syncfusion:DateTimeAxis Name="Primary" 
 
-                                    IntervalType="Years" Interval="1" />
+IntervalType="Years" Interval="1" />
 
-            </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -282,7 +282,7 @@ The following code example and screenshot are for DateTimeAxis.
 
 DateTimeCategoryAxis is a special type of axis used mainly with financial series. All the data points are plotted with equal spaces, similar to CategoryAxis, thereby removing space for missing dates. Intervals and range for the axis are calculated similar to DateTimeAxis. There are no visual gaps between points, even when the difference between two points is more than a year.
 
-DateTimeCategoryAxis
+
 
 <table>
 <tr>
@@ -306,37 +306,37 @@ Gets or sets the DateTimeIntervalType that represents the type of the interval.<
 
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            <syncfusion:SfChart.DataContext>
+<syncfusion:SfChart.DataContext>
 
-                <local:ViewModel/>
+<local:ViewModel/>
 
-            </syncfusion:SfChart.DataContext>
-
-
-
-            <syncfusion:SfChart.PrimaryAxis>
-
-                <syncfusion:DateTimeCategoryAxis Interval="1" LabelFormat="yyyy" IntervalType="Years"  Header="Company Name"/>
-
-            </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.DataContext>
 
 
 
-            <syncfusion:SfChart.SecondaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:NumericalAxis   Header="Gross Revenue (cr.)"/>
+<syncfusion:DateTimeCategoryAxis Interval="1" LabelFormat="yyyy" IntervalType="Years"  Header="Company Name"/>
 
-            </syncfusion:SfChart.SecondaryAxis>
-
-
-
-            <syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="Year" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
-
-            </syncfusion:LineSeries>
+</syncfusion:SfChart.PrimaryAxis>
 
 
 
-        </syncfusion:SfChart>
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis   Header="Gross Revenue (cr.)"/>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+
+
+<syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="Year" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
+
+</syncfusion:LineSeries>
+
+
+
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -350,7 +350,7 @@ TimeSpanAxis is used to plot the time span values in the PrimaryAxis. TimeSpanAx
 
 The following APIs are used in TimeSpanAxis.
 
-TimeSpanAxis
+
 
 <table>
 <tr>
@@ -416,7 +416,7 @@ LogarithmicAxis is used to plot the logarithmic scale for the chart. In order to
 
 The following APIs are used to customize the LogarithmicAxis.
 
-LogarithmicAxis
+
 
 <table>
 <tr>
@@ -448,39 +448,39 @@ Gets or sets the double value that represents the logarithmic base value of the 
 
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            <syncfusion:SfChart.DataContext>
+<syncfusion:SfChart.DataContext>
 
-                <local:ViewModel/>
+<local:ViewModel/>
 
-            </syncfusion:SfChart.DataContext>
-
-
-
-            <syncfusion:SfChart.PrimaryAxis>
-
-                <syncfusion:CategoryAxis   Header="Company Name"/>
-
-            </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.DataContext>
 
 
 
-            <syncfusion:SfChart.SecondaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:LogarithmicAxis LogarithmicBase="10"   Header="Gross Revenue (cr.)"/>
+<syncfusion:CategoryAxis   Header="Company Name"/>
 
-            </syncfusion:SfChart.SecondaryAxis>
-
-            <syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
-
-            </syncfusion:LineSeries>
+</syncfusion:SfChart.PrimaryAxis>
 
 
 
-        </syncfusion:SfChart>
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:LogarithmicAxis LogarithmicBase="10"   Header="Gross Revenue (cr.)"/>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:LineSeries x:Name="series1" Label="Company Details"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver"   ItemsSource="{Binding CompanyDetails}">
+
+</syncfusion:LineSeries>
+
+
+
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
-Note: Logarithmic Axis does not support zero or negative values._
+N> Logarithmic Axis does not support zero or negative values.
 
 The following screenshot illustrates the SfChart with LogarithmicAxis.
 
@@ -497,51 +497,51 @@ By default, all the series are plotted based on Primary and Secondary Axis. You 
 {% highlight xml %}
 
 
- <syncfusion:ColumnSeries Label="2010" 
+<syncfusion:ColumnSeries Label="2010" 
 
-     ItemsSource="{Binding Demands}"
+ItemsSource="{Binding Demands}"
 
-     XBindingPath="Demand"
+XBindingPath="Demand"
 
-     YBindingPath="Year2010"
+YBindingPath="Year2010"
 
-     Interior="Green"
-
-     
-
-            <syncfusion:ColumnSeries.XAxis>
-
-                <syncfusion:NumericalAxis Header="Additional X Axis"/>
-
-            </syncfusion:ColumnSeries.XAxis>
+Interior="Green"
 
 
 
-            <syncfusion:ColumnSeries.YAxis>
+<syncfusion:ColumnSeries.XAxis>
 
-                <syncfusion:NumericalAxis Header="Additional Y Axis"/>
+<syncfusion:NumericalAxis Header="Additional X Axis"/>
 
-            </syncfusion:ColumnSeries.YAxis>
-
-
-
-        </syncfusion:ColumnSeries>
+</syncfusion:ColumnSeries.XAxis>
 
 
 
-        <syncfusion:LineSeries Label="2011" 
+<syncfusion:ColumnSeries.YAxis>
 
-    ItemsSource="{Binding Demands}"
+<syncfusion:NumericalAxis Header="Additional Y Axis"/>
 
-    XBindingPath="Demand"
+</syncfusion:ColumnSeries.YAxis>
 
-    YBindingPath="Year2011"
 
-    Interior="Black"
 
-    StrokeThickness="2"
+</syncfusion:ColumnSeries>
 
-    />
+
+
+<syncfusion:LineSeries Label="2011" 
+
+ItemsSource="{Binding Demands}"
+
+XBindingPath="Demand"
+
+YBindingPath="Year2011"
+
+Interior="Black"
+
+StrokeThickness="2"
+
+/>
 
 
 {% endhighlight %}
@@ -553,9 +553,9 @@ The following screenshot illustrates SfChart with multiple axes.
 
 
 
-Note: The first series is plotting based on additional X & Y axis and second series (or remaining series) is plotting against the Primary and Secondary axis.
+N> The first series is plotting based on additional X & Y axis and second series (or remaining series) is plotting against the Primary and Secondary axis.
 
-###Axis Positioning
+### Axis Positioning
 
 By default, the x-axis is arranged horizontally at the bottom of the chart and the y-axis is arranged vertically on the left-side of the chart. You can change the alignment of the axes by setting OpposedPosition to True. It arranges the x-axis at the top and the y-axis on the right-side of the chart. 
 
@@ -567,17 +567,17 @@ The following is the code example for setting the OpposedPosition property.
 
 <syncfusion:ColumnSeries.XAxis>
 
-            <syncfusion:NumericalAxis Header="Additional X Axis" OpposedPosition="True"/>
+<syncfusion:NumericalAxis Header="Additional X Axis" OpposedPosition="True"/>
 
-        </syncfusion:ColumnSeries.XAxis>
+</syncfusion:ColumnSeries.XAxis>
 
 
 
-        <syncfusion:ColumnSeries.YAxis>
+<syncfusion:ColumnSeries.YAxis>
 
-            <syncfusion:NumericalAxis Header="Additional Y Axis" OpposedPosition="True"/>
+<syncfusion:NumericalAxis Header="Additional Y Axis" OpposedPosition="True"/>
 
-        </syncfusion:ColumnSeries.YAxis>
+</syncfusion:ColumnSeries.YAxis>
 		
 		{% endhighlight %}
 
@@ -621,7 +621,7 @@ Tip: You cannot specify range for CategoryAxis instead you can use ZoomFactor an
 
 
 
-Note: You can force the NumericalAxis to start range from zero by enabling StartRangeFromZero. The following is the code example for setting the ChartAxis properties.
+N> You can force the NumericalAxis to start range from zero by enabling StartRangeFromZero. The following is the code example for setting the ChartAxis properties.
 
  The following is the code sample for setting the ChartAxis properties:
 
@@ -629,24 +629,24 @@ Note: You can force the NumericalAxis to start range from zero by enabling Start
 
 <syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:CategoryAxis FontSize="14"/>
+<syncfusion:CategoryAxis FontSize="14"/>
 
-            </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 
 
-            <syncfusion:SfChart.SecondaryAxis>
+<syncfusion:SfChart.SecondaryAxis>
 
-                <syncfusion:NumericalAxis FontSize="14"/>
+<syncfusion:NumericalAxis FontSize="14"/>
 
-            </syncfusion:SfChart.SecondaryAxis>
+</syncfusion:SfChart.SecondaryAxis>
 {% endhighlight %}
 
 ###Range Padding
 
 The NumericalAxis and DateTimeAxis have a RangePadding property that can be used to add padding to the range of a chart's axes.
 
-NumericalAxis RangePadding
+### NumericalAxis RangePadding
 
 The following types are available for NumericalAxis: 
 
@@ -734,13 +734,13 @@ The following code example and screenshot shows LabelPlacement set to OnTicks.
 
 {% highlight xml %}
 
-  <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-     <syncfusion:CategoryAxis LabelPlacement="OnTicks" 
+<syncfusion:CategoryAxis LabelPlacement="OnTicks" 
 
-         FontSize="16"  />
+FontSize="16"  />
 
- </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -754,13 +754,13 @@ The following code example and screenshot shows LabelPlacement set to BetweenTic
 
 
 
-  <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-    <syncfusion:CategoryAxis LabelPlacement="BetweenTicks" 
+<syncfusion:CategoryAxis LabelPlacement="BetweenTicks" 
 
-           FontSize="16"  />
+FontSize="16"  />
 
-    </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 
 {% endhighlight %}
@@ -778,13 +778,13 @@ The following code example and screenshot illustrate the use of LabelsPosition.
 
 {% highlight xml %}
 
-  <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-    <syncfusion:CategoryAxis  LabelsPosition="Inside" 
+<syncfusion:CategoryAxis  LabelsPosition="Inside" 
 
-           FontSize="16"  />
+FontSize="16"  />
 
-    </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -794,13 +794,13 @@ The following code example and screenshot illustrate the use of LabelsPosition.
 
 {% highlight xml %}
 
-  <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-    <syncfusion:CategoryAxis  LabelsPosition="Outside" 
+<syncfusion:CategoryAxis  LabelsPosition="Outside" 
 
-           FontSize="16"  />
+	   FontSize="16"  />
 
-    </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 {% endhighlight %}
 
 
@@ -825,11 +825,11 @@ The following code example and screenshot show EdgeLabelsDrawingMode set to Cent
 
 {% highlight xml %}
 
-  <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-  <syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Center" FontSize="16"  />
+<syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Center" FontSize="16"  />
 
-    </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -841,11 +841,11 @@ The following code example and screenshot shows EdgeLabelsDrawingMode set to Fit
 
 {% highlight xml %}
 
-  <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-  <syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Fit" FontSize="16"  />
+<syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Fit" FontSize="16"  />
 
-    </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -857,11 +857,11 @@ The following code example and screenshot shows EdgeLabelDrawingMode set to Hide
 
 {% highlight xml %}
 
-  <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-  <syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Hide" FontSize="16"  />
+<syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Hide" FontSize="16"  />
 
-    </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -873,11 +873,11 @@ The following code example and screenshot shows EdgeLabelsDrawingMode set to Shi
 
 {% highlight xml %}
 
-  <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-  <syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Shift" FontSize="16"  />
+<syncfusion:DateTimeAxis    LabelFormat="MM/yy" EdgeLabelsDrawingMode="Shift" FontSize="16"  />
 
-    </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -901,13 +901,13 @@ The following code example and screenshot shows LabelsIntersectAction set to Non
 
 {% highlight xml %}
 
-  <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-    <syncfusion:DateTimeAxis   LabelsIntersectAction="None"  
+<syncfusion:DateTimeAxis   LabelsIntersectAction="None"  
 
-           FontSize="16"  />
+FontSize="16"  />
 
-    </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -919,13 +919,13 @@ The following code example and screenshot shows LabelsIntersectAction set to Hid
 
 {% highlight xml %}
 
-  <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-    <syncfusion:DateTimeAxis   LabelsIntersectAction="Hide"  
+<syncfusion:DateTimeAxis   LabelsIntersectAction="Hide"  
 
-           FontSize="16"  />
+FontSize="16"  />
 
-    </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -939,13 +939,13 @@ The following code example and screenshot show LabelsIntersectAction set to Mult
 
 
 
-  <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-    <syncfusion:DateTimeAxis   LabelsIntersectAction="MultipleRows"  
+<syncfusion:DateTimeAxis   LabelsIntersectAction="MultipleRows"  
 
-           FontSize="16"  />
+FontSize="16"  />
 
-    </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -985,15 +985,15 @@ The following code example and screenshot demonstrate the usage of PostfixLabelT
 
 {% highlight xml %}
 
-  <DataTemplate x:Key="yPostfix">
+<DataTemplate x:Key="yPostfix">
 
-       <TextBlock FontSize="8" VerticalAlignment="Top" Text="0"/>
+<TextBlock FontSize="8" VerticalAlignment="Top" Text="0"/>
 
- </DataTemplate>
+</DataTemplate>
 
 <chart:SfChart.SecondaryAxis>
 
-       <chart:NumericalAxis FontSize="16" Minimum="0" Maximum="100" PostfixLabelTemplate="{StaticResource yPostfix}" />
+<chart:NumericalAxis FontSize="16" Minimum="0" Maximum="100" PostfixLabelTemplate="{StaticResource yPostfix}" />
 
 </chart:SfChart.SecondaryAxis>
 
@@ -1011,7 +1011,7 @@ SfChart provides the LabelFormat property for defining the custom formatting for
 
  <syncfusion:SfChart.PrimaryAxis>
 
-      <syncfusion:DateTimeAxis LabelFormat="hh:mm tt" IntervalType="Hours" Interval="1" Header="Computer sales" />
+<syncfusion:DateTimeAxis LabelFormat="hh:mm tt" IntervalType="Hours" Interval="1" Header="Computer sales" />
 
 </syncfusion:SfChart.PrimaryAxis>
 
@@ -1019,7 +1019,7 @@ SfChart provides the LabelFormat property for defining the custom formatting for
 
 <syncfusion:SfChart.SecondaryAxis>
 
-      <syncfusion:NumericalAxis Header="Quantity Sold" LabelFormat="##.00"/>
+<syncfusion:NumericalAxis Header="Quantity Sold" LabelFormat="##.00"/>
 
 </syncfusion:SfChart.SecondaryAxis>
 
@@ -1033,7 +1033,7 @@ SfChart provides the LabelFormat property for defining the custom formatting for
 
 SfChart provides support to customize the axis header and label. The following APIs are used to customize the header and label.
 
-HeaderStyle and LabelStyle
+### HeaderStyle and LabelStyle
 
 <table>
 <tr>
@@ -1087,6 +1087,7 @@ Gets or sets the style for the axis labels. The label’s Foreground, FontSize a
 
         </syncfusion:SfChart>
 {% endhighlight %}
+
 ## GridLines and TickLines 
 
 ###GridLines
@@ -1097,13 +1098,13 @@ The following code example and screenshot show ShowGridLines set to False.
 
 {% highlight xml %}
 
-  <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-    <syncfusion:CategoryAxis ShowGridLines="False" 
+<syncfusion:CategoryAxis ShowGridLines="False" 
 
-           FontSize="16"  />
+FontSize="16"  />
 
-    </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 
@@ -1119,11 +1120,11 @@ The following code example and screenshot illustrate major and small ticklines s
 
 {% highlight xml %}
 
-   <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
 <syncfusion:NumericalAxis LabelsPosition="Inside" TickLineSize="10" SmallTickLineSize="5" TickLinesPosition="Inside" SmallTickLinesPosition="Inside" SmallTicksPerInterval="2"  FontSize="16"  />
 
-            </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 {% endhighlight %}
 

@@ -21,7 +21,7 @@ You can bind the OlapReport as xml file to OlapDataManager using the LoadReportD
 The following code snippet will illustrate the loading of the report definition file:
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 olapDataManager.LoadReportDefinitionFile(@"C:\SampleReports\SalesAnalysis.xml");
@@ -34,5 +34,5 @@ olapDataManager.LoadReport("SalesOn2003");
 olapDataManager.LoadReportDefinitionFile("C:\SampleReports\SalesAnalysis.xml")
 olapDataManager.LoadReport("SalesOn2003")
 {% endhighlight  %}
-
+{% endtabs %}
 

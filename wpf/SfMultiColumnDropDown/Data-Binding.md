@@ -19,7 +19,7 @@ The following code example illustrates how bind the itemsSource to the SfMultico
 
 <Window.DataContext>
 
-  <local:Viewmodel/>
+<local:Viewmodel/>
 
 </Window.DataContext>
 
@@ -27,13 +27,13 @@ The following code example illustrates how bind the itemsSource to the SfMultico
 
 <syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"
 
-                                           ItemsSource="{Binding EmpDetails}"
+ItemsSource="{Binding EmpDetails}"
 
-                                           DisplayMember="Name"
+DisplayMember="Name"
 
-                                           ValueMember="Designation"                                             
+ValueMember="Designation"                                             
 
-                                           >
+>
 										   {% endhighlight %}
 
 The following screenshot illustrates the output of the above code.
@@ -95,6 +95,7 @@ SfMultiColumnDropDownControl allows you to bind the Complex property to its colu
 
 The following code example illustrate how to bind Complex property in SfMultiColumnDropDownControl,
 
+{% tabs %}
 {% highlight C# %}
 
 
@@ -220,38 +221,39 @@ public class Data:INotifyPropertyChanged
 
 
 
-<syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"
+	<syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"
 
-                                           SelectedIndex="1"
+	   SelectedIndex="1"
 
-                                           AutoGenerateColumns="False"
+	   AutoGenerateColumns="False"
 
-                                           ItemsSource="{Binding EmpDetails}"
+	   ItemsSource="{Binding EmpDetails}"
 
-                                           DisplayMember="Name"
+	   DisplayMember="Name"
 
-                                           ValueMember="City"                                                                                           
+	   ValueMember="City"                                                                                           
 
-                                                 >
+			 >
 
-     <syncfusion:SfMultiColumnDropDownControl.Columns>
+	<syncfusion:SfMultiColumnDropDownControl.Columns>
 
-       <syncfusion:Columns>
+	<syncfusion:Columns>
 
-         <syncfusion:GridTextColumn MappingName="Name" />
+	<syncfusion:GridTextColumn MappingName="Name" />
 
-         <syncfusion:GridTextColumn MappingName="customerDetails.Designation" />
+	<syncfusion:GridTextColumn MappingName="customerDetails.Designation" />
 
-         <syncfusion:GridTextColumn MappingName="City" />
+	<syncfusion:GridTextColumn MappingName="City" />
 
-         <syncfusion:GridTextColumn MappingName="Country" />
+	<syncfusion:GridTextColumn MappingName="Country" />
 
-       </syncfusion:Columns>
+	</syncfusion:Columns>
 
-     </syncfusion:SfMultiColumnDropDownControl.Columns>
+	</syncfusion:SfMultiColumnDropDownControl.Columns>
 
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
+{% endtabs %}
 The following screenshot illustrates the output for Complex property binding in SfMultiColumnDropDownControl.
 
 ![](Features_images/Features_img3.png)

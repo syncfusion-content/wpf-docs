@@ -266,4 +266,4 @@ The following are the steps to create Gantt control through designer.
 
 
 5. Now you can customize the properties of Gantt control in the Properties Window.
-   {:.prettyprint}
+   

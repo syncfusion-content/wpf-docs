@@ -32,15 +32,15 @@ A bound column displays information from a data source which is specified by the
 
 ## Properties
 
-_Properties_
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th></tr>
+Property</th><th>
+Description}</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 AutoPopulateColumns</td><td>
@@ -60,23 +60,25 @@ Boolean</td></tr>
 
 In the GridTree control, you can populate the columns automatically by setting the AutoPopulateColumns property to True.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
 <syncfusion:GridTreeControl Name="treeGrid" AutoPopulateColumns="True">
 
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
 treeGrid.AutoPopulateColumns = true;
 
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 
 When we set this property to true, the properties that are available in underlying collection populates in the GridTree control as GridTreeColumn.
@@ -85,13 +87,12 @@ When we set this property to true, the properties that are available in underlyi
 
 By setting the AutoGenerateColumnsInfo property to _true_, the GridTree control assigns the appropriate cell type for each column automatically. The following common cell types loadd for the corresponding data.
 
-_Cell Types_
 
 <table>
 <tr>
 <th>
-{{ '**Value Type**' | markdownify }}</th><th>
-{{ '**Cell type**' | markdownify }}</th></tr>
+Value Type</th><th>
+Cell type</th></tr>
 <tr>
 <td>
 String</td><td>
@@ -122,36 +123,37 @@ Uri</td><td>
 Hyperlink</td></tr>
 </table>
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
 <syncfusion:GridTreeControl Name="treeGrid"
 
-                            AutoGenerateColumnsInfo="True">
+ AutoGenerateColumnsInfo="True">
 
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
 treeGrid.AutoGenerateColumnsInfo = true;
 
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
 
 ### Events
 
-_Events_
+
 
 <table>
 <tr>
 <th>
-{{ '**Event**' | markdownify }}</th><th>
-{{ '**Arguments**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Event</th><th>
+Arguments</th><th>
+Description</th></tr>
 <tr>
 <td>
 QueryVisibleColumnInfo</td><td>
@@ -164,7 +166,7 @@ The following code shows a simple customization on the GridTreeColumn by handlin
 
 In the below code snippet, VisibleColumn properties are customized based on the MappingName property.
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -194,19 +196,19 @@ if (Args.VisibleColumn.MappingName == "EmpID")
 
 }
 
-{%endhighlight%}
+{% endhighlight %}
 
 ### VisibleColumn Properties
 
 The following are the list of properties that are available for all visible columns.
 
-_Properties_
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 AllowSort</td><td>
@@ -228,13 +230,13 @@ Fills the columns within the client area. The width of the columns is calculated
 
 The following are the list of common properties for all cell types and available in StyleInfo class.
 
-_Properties_
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 ReadOnly</td><td>
@@ -288,7 +290,7 @@ In GridTree control you can define the cell type for each column by using the pr
 * Static* TextBlock* TextBox* RichText* ExpanderCell* Data Template* ComboBox* DropDownList* CheckBox* Currency edit* Double edit* DateTime edit* Integer edit* Mask edit* Percent edit* Up Down edit* TimeSpan edit* Image* Hyperlink* Button</td></tr>
 <tr>
 <td>
-> <br>{{ '_Note: It is not possible to change the cell type for the first column of the GridTree control._' | markdownify }}</td></tr>
+> <br>It is not possible to change the cell type for the first column of the GridTree control.</td></tr>
 </table>
 
 ## Static
@@ -297,24 +299,25 @@ The Static cell type allows you to only to display the values in the cells and n
 
 The following is an example of how to define such a column.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
 <syncfusion:GridTreeColumn Width="150" MappingName="Address">
 
-                    <syncfusion:GridTreeColumn.StyleInfo>
+<syncfusion:GridTreeColumn.StyleInfo>
 
-                        <syncfusion:GridStyleInfo CellType="Static"/>
+<syncfusion:GridStyleInfo CellType="Static"/>
 
-                    </syncfusion:GridTreeColumn.StyleInfo>
+</syncfusion:GridTreeColumn.StyleInfo>
 
  </syncfusion:GridTreeColumn>
 
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -326,13 +329,15 @@ treeGrid.Columns.Add(new GridTreeColumn("Address")
 
 });
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Columns_images/Columns_img1.png)
 
 
 
-_GridTree Static CellType_
+GridTree Static CellType
+{:.caption}
 
 ### TextBlock
 
@@ -342,45 +347,47 @@ N> The difference between the Static and TextBlock cell type is that the Static 
 
 The following is an example of how to define such a column.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
 <syncfusion:GridTreeColumn Width="130" MappingName="FirstName">
 
-    <syncfusion:GridTreeColumn.StyleInfo>
+<syncfusion:GridTreeColumn.StyleInfo>
 
-        <syncfusion:GridDataStyleInfo CellType="TextBlock" />
+<syncfusion:GridDataStyleInfo CellType="TextBlock" />
 
-    </syncfusion:GridTreeColumn.StyleInfo>
+</syncfusion:GridTreeColumn.StyleInfo>
 
 </syncfusion:GridTreeColumn>
 
-{%endhighlight%}
+{% endhighlight %}
 
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
 this.treeGrid.Columns.Add(new GridTreeColumn()
 
-            {
+{
 
-                MappingName = "FirstName",
+MappingName = "FirstName",
 
-                StyleInfo=new GridStyleInfo()
+StyleInfo=new GridStyleInfo()
 
-                {
+{
 
-                    CellType="TextBlock",
+CellType="TextBlock",
 
-                }
+}
 
-            });
+});
 
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 The following screenshot shows a simple demo of this cell type.
 
@@ -390,7 +397,8 @@ The following screenshot shows a simple demo of this cell type.
 
 
 
-_GridTree TextBlock Cell type_
+GridTree TextBlock Cell type
+{:.caption}
 
 ### TextBox
 
@@ -398,23 +406,23 @@ The TextBox cell type allows you to display the cell values in text boxes. Each 
 
 The following code snippet explains how to define such a column.
 
-{%highlight xml%}
-
+{% tabs %}
+{% highlight xml %}
 
 
 <syncfusion:GridTreeColumn Width="130" MappingName="FirstName">
 
-    <syncfusion:GridTreeColumn.StyleInfo>
+<syncfusion:GridTreeColumn.StyleInfo>
 
-        <syncfusion:GridDataStyleInfo CellType="TextBox" />
+<syncfusion:GridDataStyleInfo CellType="TextBox" />
 
-    </syncfusion:GridTreeColumn.StyleInfo>
+</syncfusion:GridTreeColumn.StyleInfo>
 
 </syncfusion:GridTreeColumn>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -422,19 +430,20 @@ this.treeGrid.Columns.Add(new GridTreeColumn()
 
 {
 
-    MappingName = "FirstName",
+MappingName = "FirstName",
 
-    StyleInfo = new GridStyleInfo()
+StyleInfo = new GridStyleInfo()
 
-    {
+{
 
-        CellType = "TextBox",
+	CellType = "TextBox",
 
-    }
+}
 
 });
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 The following screenshot shows a simple demo of TextBox cell type.
 
@@ -444,7 +453,8 @@ The following screenshot shows a simple demo of TextBox cell type.
 
 
 
-_GridTree TextBox Cell Type_
+GridTree TextBox Cell Type
+{:.caption}
 
 ## RichText
 
@@ -452,49 +462,50 @@ The RichText cell types provide more advanced formatting features than the TextB
 
 The following is an example of how to define such a column.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
 <syncfusion:GridDataVisibleColumn Width="32"
 
-                                  HeaderText=" "
+HeaderText=" "
 
-                                  MappingName="IsRead">
+MappingName="IsRead">
 
-                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+<syncfusion:GridDataVisibleColumn.ColumnStyle>
 
-                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" CellType="RichText" />
+<syncfusion:GridDataColumnStyle HorizontalAlignment="Center" CellType="RichText" />
 
-                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+</syncfusion:GridDataVisibleColumn.ColumnStyle>
 
-                    </syncfusion:GridDataVisibleColumn>
-
-
-{%endhighlight%}
+</syncfusion:GridDataVisibleColumn>
 
 
-{%highlight c#%}
+{% endhighlight %}
+
+
+{% highlight c# %}
 
 
 
 treeGrid.Columns.Add(new GridTreeColumn("Document")
 
-            {
+{
 
-                StyleInfo = new GridStyleInfo()
+StyleInfo = new GridStyleInfo()
 
-                {
+{
 
 
 
-                    CellType = "RichText",
+CellType = "RichText",
 
-                }
+}
 
-            }
+}
 
-        );
+);
 
 
 
@@ -531,14 +542,15 @@ FlowDocument doc = new FlowDocument(p);
 emp.Document = doc;
 
 
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
 
 ![](Columns_images/Columns_img4.png)
 
 
 
-_GridTree RichText Cell Type_
+GridTree RichText Cell Type
+{:.caption}
 
 ### ExpanderCell
 
@@ -572,7 +584,8 @@ In the GridTree control, you can display image in each ExpanderCell and it can b
 
 The following code snippet shows how to load the image in ExpanderCell.
 
-{%highlight c#%}
+
+{% highlight c# %}
 
 
 
@@ -584,14 +597,15 @@ private void treeGrid_RequestNodeImage(object sender, GridTreeRequestNodeImageEv
 
 }
 
-{%endhighlight%}
+{% endhighlight %}
 
 
 ![](Columns_images/Columns_img5.png)
 
 
 
-_GridTree ExpanderCell with Image_
+GridTree ExpanderCell with Image
+{:.caption}
 
 ### DataTemplate
 
@@ -599,13 +613,13 @@ In the GridTree control, DataTemplate cell type allows you to replace the visual
 
 The following are the list of properties specific for this cell type.
 
-_Properties_
+### Properties
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 CellItemTemplate</td><td>
@@ -651,47 +665,48 @@ You can get any property value of the current record by passing the appropriate 
 
 The following example code shows a simple DataTemplate.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
-<Window.Resources>
+	<Window.Resources>
 
-    <DataTemplate x:Key="sliderTemplate">
+	<DataTemplate x:Key="sliderTemplate">
 
-        <Slider Value="{Binding Path=CellBoundValue, Mode=TwoWay}" 
+	<Slider Value="{Binding Path=CellBoundValue, Mode=TwoWay}" 
 
-                Minimum="-10" Maximum="10000" 
+	Minimum="-10" Maximum="10000" 
 
-                Height="30" Width="150" />
+	Height="30" Width="150" />
 
-    </DataTemplate>
+	</DataTemplate>
 
-</Window.Resources>
-
-
-
-<syncfusion:GridTreeColumn MappingName="Weight">
-
-    <syncfusion:GridTreeColumn.StyleInfo>
-
-        <syncfusion:GridDataStyleInfo 
-
-                    CellType="DataBoundTemplate" 
-
-                    CellEditTemplate="{StaticResource sliderTemplate}" 
-
-                    CellItemTemplate="{StaticResource sliderTemplate}"/>
-
-    </syncfusion:GridTreeColumn.StyleInfo>
-
-</syncfusion:GridTreeColumn>
+	</Window.Resources>
 
 
 
-{%endhighlight%}
+	<syncfusion:GridTreeColumn MappingName="Weight">
 
-{%highlight c#%}
+	<syncfusion:GridTreeColumn.StyleInfo>
+
+	<syncfusion:GridDataStyleInfo 
+
+	CellType="DataBoundTemplate" 
+
+	CellEditTemplate="{StaticResource sliderTemplate}" 
+
+	CellItemTemplate="{StaticResource sliderTemplate}"/>
+
+	</syncfusion:GridTreeColumn.StyleInfo>
+
+	</syncfusion:GridTreeColumn>
+
+
+
+{% endhighlight %}
+
+{% highlight c# %}
 
 
 
@@ -699,32 +714,34 @@ treeGrid.Columns.Add(new GridTreeColumn("Weight")
 
 {
 
-    StyleInfo = new GridStyleInfo()
+StyleInfo = new GridStyleInfo()
 
-    {
+{
 
 
 
-        CellType = "DataBoundTemplate",
+CellType = "DataBoundTemplate",
 
-        CellItemTemplateKey = "sliderTemplate",
+CellItemTemplateKey = "sliderTemplate",
 
-        CellEditTemplateKey = "sliderTemplate",
+CellEditTemplateKey = "sliderTemplate",
 
-    }
+}
 
 }
 
 );
 
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Columns_images/Columns_img6.png)
 
 
 
-_GridTree DataTemplate CellType_
+GridTree DataTemplate CellType
+{:.caption}
 
 ### ComboBox
 
@@ -732,13 +749,13 @@ The ComboBox cell type allows you to select an item either by typing the text in
 
 The table below lists the various properties that can affect the combo box cells. 
 
-_Properties_
+
 
 <table>
 <tr>
 <th>
-{{ '**GridStyleInfo**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+GridStyleInfo</th><th>
+Description</th></tr>
 <tr>
 <td>
 CellType</td><td>
@@ -768,14 +785,14 @@ Boolean value indicating whether the Dropdown button should appear or not.</td><
 
 The table below lists the events available in the ComboBox cell type.
 
-_Events_
+### Events
 
 <table>
 <tr>
 <th>
-{{ '**Events**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Arguments**' | markdownify }}</th></tr>
+Events</th><th>
+Description</th><th>
+Arguments</th></tr>
 <tr>
 <td>
 DropDownSelectionChanged</td><td>
@@ -786,7 +803,8 @@ CellRowColumnIndex—contains the RowColumn index of the cell where the combo bo
 
 The following is an example of how to define such a column.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
@@ -811,9 +829,9 @@ The following is an example of how to define such a column.
 </syncfusion:GridTreeColumn>
 
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -829,8 +847,8 @@ coll.StyleInfo.ValueMember = "Shipcity";
 
 coll.StyleInfo.DropDownStyle = GridDropDownStyle.Editable;
 
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
 
 
 We can change the combo box drop-down list style by using the GridDropDownStyle property. This property features the following options:
@@ -844,7 +862,8 @@ We can change the combo box drop-down list style by using the GridDropDownStyle 
 
 
 
-_Combo Box Cell Type_
+Combo Box Cell Type
+{:.caption}
 
 ### DropDownList
 
@@ -852,13 +871,13 @@ This cell type serves the same purpose as the ComboBox control. The difference i
 
 The following are the list of properties that are applicable for this cell type.
 
-_Properties_
+#### Properties
 
 <table>
 <tr>
 <th>
-{{ '**GridStyleInfo**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+GridStyleInfo</th><th>
+Description</th></tr>
 <tr>
 <td>
 CellType</td><td>
@@ -892,14 +911,14 @@ Allows the drop-down list to open while editing.</td></tr>
 
 The following are the list of events that are available for the DropDownList cell type.
 
-_Events_
+#### Events
 
 <table>
 <tr>
 <th>
-{{ '**Events**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Arguments**' | markdownify }}</th></tr>
+Events</th><th>
+Description</th><th>
+Arguments</th></tr>
 <tr>
 <td>
 DropDownSelectionChanged</td><td>
@@ -916,80 +935,82 @@ We can change the drop-down list style by using the GridDropDownStyle property. 
 
 The following is an example of how to define such a column.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
 <syncfusion:GridTreeColumn Width="130"
 
-                            HeaderText="Department"
+HeaderText="Department"
 
-                            MappingName="Department">
+MappingName="Department">
 
-    <syncfusion:GridTreeColumn.StyleInfo>
+<syncfusion:GridTreeColumn.StyleInfo>
 
-        <syncfusion:GridDataStyleInfo CellType="DropDownList"
+<syncfusion:GridDataStyleInfo CellType="DropDownList"
 
-                                        DisplayMember="Shipcity"
+DisplayMember="Shipcity"
 
-                                        DropDownStyle="Editable"
+DropDownStyle="Editable"
 
-                                        ItemsSource="{StaticResource ShipDetails}"
+ItemsSource="{StaticResource ShipDetails}"
 
-                                        ValueMember="Shipcity">
+ValueMember="Shipcity">
 
-            <syncfusion:GridDataStyleInfo.DropdownEdit>
+<syncfusion:GridDataStyleInfo.DropdownEdit>
 
-                <syncfusion:GridDropdownEditStyleInfo ShowButton="False"/>
+<syncfusion:GridDropdownEditStyleInfo ShowButton="False"/>
 
-            </syncfusion:GridDataStyleInfo.DropdownEdit>
+</syncfusion:GridDataStyleInfo.DropdownEdit>
 
-        </syncfusion:GridDataStyleInfo>
+</syncfusion:GridDataStyleInfo>
 
-    </syncfusion:GridTreeColumn.StyleInfo>
+</syncfusion:GridTreeColumn.StyleInfo>
 
 </syncfusion:GridTreeColumn>
 
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 this.treeGrid.Columns.Add(new GridTreeColumn()
 
 {
 
-    MappingName = "Department",
+MappingName = "Department",
 
-    StyleInfo = new GridStyleInfo()
+StyleInfo = new GridStyleInfo()
 
-    {
+{
 
-        CellType = "DropDownList",
+CellType = "DropDownList",
 
-        ValueMember = "shipcity",
+ValueMember = "shipcity",
 
-        DisplayMember = "shipcity",
+DisplayMember = "shipcity",
 
-        ItemsSource = ShipDetails,
+ItemsSource = ShipDetails,
 
-        DropDownStyle = GridDropDownStyle.Editable,
+DropDownStyle = GridDropDownStyle.Editable,
 
-        DropdownEdit = new GridDropdownEditStyleInfo()
+DropdownEdit = new GridDropdownEditStyleInfo()
 
-        {
+{
 
-            ShowButton = false,
+ShowButton = false,
 
-        }
+}
 
-    }
+}
 
 });
 
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 The following screenshot shows a simple demo of the DropDownList cell type.
 
@@ -999,7 +1020,8 @@ The following screenshot shows a simple demo of the DropDownList cell type.
 
 
 
-_GridTree Control DropDownList Cell Type_
+GridTree Control DropDownList Cell Type
+{:.caption}
 
 ### CheckBox
 
@@ -1007,13 +1029,13 @@ The CheckBox cell type allows you to choose Boolean options. There are three opt
 
 The following are the list of properties that are applicable for this cell type.
 
-_Properties_
+#### Properties
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 IsThreeState</td><td>
@@ -1023,23 +1045,24 @@ Applying true to this property allows you to enter null value.</td></tr>
 
 The following code shows how to define such a column.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
 <syncfusion:GridTreeColumn MappingName="IsMajor">
 
-    <syncfusion:GridTreeColumn.StyleInfo>
+<syncfusion:GridTreeColumn.StyleInfo>
 
-        <syncfusion:GridDataStyleInfo CellType="CheckBox" IsThreeState="False"/>
+<syncfusion:GridDataStyleInfo CellType="CheckBox" IsThreeState="False"/>
 
-    </syncfusion:GridTreeColumn.StyleInfo>
+</syncfusion:GridTreeColumn.StyleInfo>
 
 </syncfusion:GridTreeColumn>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -1060,7 +1083,8 @@ this.treeGrid.Columns.Add(new GridTreeColumn("IsMajor")
 
 });
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 The following screenshot shows a simple demo of CheckBox cell type.
 
@@ -1070,19 +1094,20 @@ The following screenshot shows a simple demo of CheckBox cell type.
 
 
 
-_GridTree Control CheckBox Cell Type_
+GridTree Control CheckBox Cell Type
+{:.caption}
 
 ### CurrencyEdit
 
 The CurrencyEdit cell type allows you to represent monetary values to maintain accuracy in calculations. It strips the currency sign in the cell and attempt to parse only the number from the input. Also, by using the GridCurrencyEditStyleInfo class we can customize the CurrencyEdit properties and appearance. Use the GridStyleInfo properties given below to customize these cells. 
 
-_Properties_
+#### Properties
 
 <table>
 <tr>
 <th>
-{{ '**GridStyleInfo**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+GridStyleInfo</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cell Type</td><td>
@@ -1136,7 +1161,8 @@ This property allows you to increase/ decrease the cell value by using Up/Down k
 
 The following code snippet explains how to define a CurrencyEdit column.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
@@ -1150,10 +1176,10 @@ The following code snippet explains how to define a CurrencyEdit column.
 
 </syncfusion:GridTreeColumn>
 
-{%endhighlight%}
+{% endhighlight %}
 
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -1166,25 +1192,27 @@ treeGrid.Columns.Add(new GridTreeColumn("Salary")
 });
 
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Columns_images/Columns_img10.png)
 
 
 
-_GridTree Control CurrencyEdit Cell Type_
+GridTree Control CurrencyEdit Cell Type
+{:.caption}
 
 ### IntegerEdit
 
 The IntegerEdit cell type is a specialized cell type that restricts the data entry to integer values. The following table contains the style properties specific to this cell type.
 
-_Properties_
+#### Properties
 
 <table>
 <tr>
 <th>
-{{ '**GridStyleInfo**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+GridStyleInfo</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cell Type</td><td>
@@ -1222,7 +1250,8 @@ This property allows you to increase/ decrease the cell value by using Up/Down k
 
 The following code demonstrates how to define an IntegerEdit column.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
@@ -1238,9 +1267,9 @@ The following code demonstrates how to define an IntegerEdit column.
 </syncfusion:GridTreeColumn>
 
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -1254,25 +1283,27 @@ treeGrid.Columns.Add(new GridTreeColumn("Employee ID")
 
 });
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Columns_images/Columns_img11.png)
 
 
 
-_GridTree Control IntegerEdit Cell Type_
+GridTree Control IntegerEdit Cell Type
+{:.caption}
 
 ### DoubleEdit
 
 The DoubleEdit cell type allows you to enter only values that are _double_ into the cell. Thus it can be used to display System.Double type values. Also, by using the GridDoubleEditStyleInfo class you can customize the DoubleEdit properties and appearance. The style properties that affect this cell are given below. 
 
-_Properties_
+#### Properties
 
 <table>
 <tr>
 <th>
-{{ '**GridStyleInfo**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+GridStyleInfo</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cell Type</td><td>
@@ -1318,7 +1349,8 @@ This property allows you to increase/ decrease the cell value by using Up/Down k
 
 The following code sample demonstrates how to define a DoubleEdit column.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
@@ -1332,10 +1364,10 @@ The following code sample demonstrates how to define a DoubleEdit column.
 
 </syncfusion:GridTreeColumn>
 
-{%endhighlight%}
+{% endhighlight %}
 
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -1349,27 +1381,29 @@ treeGrid.Columns.Add(new GridTreeColumn("Salary")
 
 });
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Columns_images/Columns_img12.png)
 
 
 
-_DoubleEdit Cell Type_
+DoubleEdit Cell Type
+{:.caption}
 
 ### PercentEdit
 
 The PercentEdit cell type restricts the data entry to percentage values only. The following table describes the style properties available with this cell type.
 
- PercentEdit Cell Properties
+ 
 
-_Properties_
+#### Properties
 
 <table>
 <tr>
 <th>
-{{ '**GridStyleInfo**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+GridStyleInfo</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cell Type</td><td>
@@ -1419,8 +1453,8 @@ This property allows you to increase/ decrease the cell value by using Up/Down k
 
 The following code sample demonstrates how to define a PercentEdit column.
 
-
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 <syncfusion:GridTreeColumn MappingName="Hike">
@@ -1442,9 +1476,9 @@ The following code sample demonstrates how to define a PercentEdit column.
 </syncfusion:GridTreeColumn>
 
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 GridTreeColumn percentColumn = new GridTreeColumn("Hike")
@@ -1472,28 +1506,28 @@ GridTreeColumn percentColumn = new GridTreeColumn("Hike")
 treeGrid.Columns.Add(percentColumn);
 
 
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
 
 ![](Columns_images/Columns_img13.png)
 
 
 
-_GridTree Control PercentEdit Cell Type_
+GridTree Control PercentEdit Cell Type
+{:.caption}
 
 ### DateTimeEdit
 
 The DateTimeEdit cells incorporate the DateTimeEdit controls in the grid cells that will help you interactively set a date and time value. The style properties in the following table are applicable to this cell type.
 
-DateTime Edit Cell Properties
+#### DateTime Edit Cell Properties
 
-_Properties_
 
 <table>
 <tr>
 <th>
-{{ '**GridStyleInfo**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+GridStyleInfo</th><th>
+Description</th></tr>
 <tr>
 <td>
 CellType</td><td>
@@ -1555,13 +1589,13 @@ Applying a color to  this property sets as background of RepeatButton.</td></tr>
 
 ### DateTime Patterns for DateTime Edit Cells
 
-_DateTime Patterns_
+
 
 <table>
 <tr>
 <th>
-{{ '**Date and Time Pattern**' | markdownify }}</th><th>
-{{ '**Example**' | markdownify }}</th></tr>
+Date and Time Pattern</th><th>
+Example</th></tr>
 <tr>
 <td>
 Short Date</td><td>
@@ -1607,7 +1641,8 @@ Year Month</td><td>
 
 The following code sample demonstrates how to define a column with DateTime Edit cells.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
@@ -1621,9 +1656,9 @@ The following code sample demonstrates how to define a column with DateTime Edit
 
 </syncfusion:GridTreeColumn>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -1637,13 +1672,15 @@ treeGrid.Columns.Add(new GridTreeColumn("Birth Date")
 
 });
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Columns_images/Columns_img14.png)
 
 
 
-_DateTime Edit Cell Type_
+DateTime Edit Cell Type
+{:.caption}
 
 ### MaskEdit
 
@@ -1651,13 +1688,13 @@ The MaskEdit cell type allows you to create specially formatted text cells that 
 
 The following table lists the style properties specific to this cell type.
 
-_Properties_
+#### Properties
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 CellType</td><td>
@@ -1683,7 +1720,8 @@ When the cell value or mask is set to null then the cell is validated based on t
 
 The following code sample demonstrates how to define a MaskEdit column.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
@@ -1697,9 +1735,9 @@ The following code sample demonstrates how to define a MaskEdit column.
 
 </syncfusion:GridTreeColumn>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -1713,27 +1751,29 @@ treeGrid.Columns.Add(new GridTreeColumn("LastName")
 
 });
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Columns_images/Columns_img15.png)
 
 
 
-_MaskEdit Cell Type_
+MaskEdit Cell Type
+{:.caption}
 
 ### UpDownEdit
 
 The UpDownEdit cell type hosts an UpDownEdit control which contains a pair of arrow buttons that increases or decreases the cell value. The style properties applicable to this cell type are provided in the following table. 
 
-UpDownEdit Cell Properties
+#### UpDownEdit Cell Properties
 
-_Properties_
+
 
 <table>
 <tr>
 <th>
-{{ '**GridStyleInfo**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+GridStyleInfo}</th><th>
+Description</th></tr>
 <tr>
 <td>
 Cell Type</td><td>
@@ -1767,7 +1807,8 @@ Color to differentiate the negative value.</td></tr>
 
 The following sample demonstrates how to define a column with UpDownEdit cells.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
@@ -1781,10 +1822,10 @@ The following sample demonstrates how to define a column with UpDownEdit cells.
 
 </syncfusion:GridTreeColumn>
 
-{%endhighlight%}
+{% endhighlight %}
 
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 GridTreeColumn updownColumn = new GridTreeColumn("Rating")
@@ -1811,27 +1852,28 @@ GridTreeColumn updownColumn = new GridTreeColumn("Rating")
 
 treeGrid.Columns.Add(updownColumn);
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Columns_images/Columns_img16.png)
 
 
 
-_UpDownEdit Cell Type_
+UpDownEdit Cell Type
+{:.caption}
 
 ### TimeSpanEdit
 
 The TimeSpanEdit cell type is used to display time value in the Day:Hour:Min:Sec format and also in custom format. The fields can be incremented and decremented by using the up and down arrow keys.
 
-TimeSpanEdit properties
+#### TimeSpanEdit properties
 
-_Properties_
 
 <table>
 <tr>
 <th>
-{{ '**Properties**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Properties</th><th>
+Description</th></tr>
 <tr>
 <td>
 AllowNull</td><td>
@@ -1849,7 +1891,8 @@ Displays the arrow buttons to change the value by mouse.</td></tr>
 
 The following code sample demonstrates how to define a column with TimeSpanEdit cells.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
@@ -1863,9 +1906,9 @@ The following code sample demonstrates how to define a column with TimeSpanEdit 
 
 </syncfusion:GridTreeColumn>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -1878,28 +1921,29 @@ treeGrid.Columns.Add(new GridTreeColumn("Time")
     StyleInfo = new GridStyleInfo() { CellType = "TimeSpanEdit" }
 
 });
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
 
 ![](Columns_images/Columns_img17.png)
 
 
 
-_TimeSpanEdit Cell Type_
+TimeSpanEdit Cell Type
+{:.caption}
 
 ## ImageCell
 
 The ImageCell type is used to load images inside the graphic cells. To load the graphic image cell in the GridTree control, you have to set the CellType as ImageCell and the CellValue as BitmapImage.
 
-Image CellType properties
+#### Image CellType properties
 
-_Properties_
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th></tr>
 <tr>
 <td>
 Image</td><td>
@@ -1925,7 +1969,8 @@ Sets the margin of the image.</td></tr>
 
 The following code sample demonstrates how to define a column with Image cells.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
@@ -1939,9 +1984,9 @@ The following code sample demonstrates how to define a column with Image cells.
 
 </syncfusion:GridTreeColumn>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -1956,13 +2001,15 @@ treeGrid.Columns.Add(new GridTreeColumn("Image")
 
 });
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Columns_images/Columns_img18.png)
 
 
 
-_Image Cell Type_
+Image Cell Type
+{:.caption}
 
 ### Hyperlink 
 
@@ -1970,14 +2017,14 @@ This cell type allows you to perform an operation when click on the cell like na
 
 The following are the list of events that are available for this cell type.
 
-_Events_
+#### Events
 
 <table>
 <tr>
 <th>
-{{ '**Events**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Arguments**' | markdownify }}</th></tr>
+Events</th><th>
+Description</th><th>
+Arguments</th></tr>
 <tr>
 <td>
 CellRequestNavigate</td><td>
@@ -1988,7 +2035,8 @@ ColumnIndex—contains the current mouse click hyperlink cell column index.RowIn
 
 The following code shows how to define such a column.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
@@ -2003,10 +2051,10 @@ The following code shows how to define such a column.
                     </syncfusion:GridTreeColumn>
 
 
-{%endhighlight%}
+{% endhighlight %}
 
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -2025,7 +2073,8 @@ this.treeGrid.Columns.Add(new GridTreeColumn("Department")
 });
 
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 The following screenshot shows a simple demo of Hyperlink cell.
 
@@ -2033,7 +2082,8 @@ The following screenshot shows a simple demo of Hyperlink cell.
 
 
 
-_GridTree Control Hyperlink Cell Type_
+GridTree Control Hyperlink Cell Type
+{:.caption}
 
 ### Button
 
@@ -2041,14 +2091,14 @@ The Button cell type allows you to load Button control in each cell of the GridT
 
 The following table shows the events that are available for this cell type.
 
-_Events_
+#### Events
 
 <table>
 <tr>
 <th>
-{{ '**Events**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Arguments**' | markdownify }}</th></tr>
+Events}</th><th>
+Description</th><th>
+Arguments</th></tr>
 <tr>
 <td>
 CellButtonClick</td><td>
@@ -2059,42 +2109,44 @@ It contains the following arguments.ColumnIndex—contains the column index wher
 
 The following code snippet shows a simple demo of Button cell type.
 
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
 <syncfusion:GridTreeColumn HeaderText="Department" MappingName="Department">
 
-                        <syncfusion:GridTreeColumn.StyleInfo>
+<syncfusion:GridTreeColumn.StyleInfo>
 
-                            <syncfusion:GridStyleInfo CellType="Button" />
+<syncfusion:GridStyleInfo CellType="Button" />
 
-                        </syncfusion:GridTreeColumn.StyleInfo>
+</syncfusion:GridTreeColumn.StyleInfo>
 
-                    </syncfusion:GridTreeColumn>
+</syncfusion:GridTreeColumn>
 
-{%endhighlight%}
+{% endhighlight %}
 
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
 this.treeGrid.Columns.Add(new GridTreeColumn("Department")
 
-            {
+{
 
-                StyleInfo = new GridStyleInfo()
+StyleInfo = new GridStyleInfo()
 
-                {
+{
 
-                    CellType = "Button",
+CellType = "Button",
 
-                }
+}
 
-            });
+});
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 The following screenshot shows a simple demo of Button cell type.
 
@@ -2104,7 +2156,8 @@ The following screenshot shows a simple demo of Button cell type.
 
 
 
-_Button Cell Type_
+Button Cell Type
+{:.caption}
 
 ## Unbound Columns
 
@@ -2116,19 +2169,19 @@ You can create an unbound column by instantiating the GridTreeUnboundColumn clas
 
 Also, you can utilize the features that are available in the bound columns, such as sorting, cell type and customization.
 
-### Tables for Properties, Methods, and Events
+
 
 ### Properties
 
-_Properties_
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th></tr>
+Property</th><th>
+Description}</th><th>
+Type</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 Expression</td><td>
@@ -2140,15 +2193,15 @@ String</td></tr>
 
 ### Methods
 
-_Methods_
+
 
 <table>
 <tr>
 <th>
-{{ '**Method Name**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method Name</th><th>
+Description</th><th>
+Parameters</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 GetUnboundColumnValue</td><td>
@@ -2160,14 +2213,14 @@ Object</td></tr>
 
 ### Events
 
-_Events_
+
 
 <table>
 <tr>
 <th>
-{{ '**Event Name**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Arguements**' | markdownify }}</th></tr>
+Event Name</th><th>
+Description</th><th>
+Arguements</th></tr>
 <tr>
 <td>
 QueryUnboundCellInfo</td><td>
@@ -2183,7 +2236,8 @@ This event fires, before the value of the unbound column is evaluated by using E
 
 The following code helps you to display the custom values in the unbound columns:
 
-{%highlight c#%}
+
+{% highlight c# %}
 
 
 
@@ -2198,7 +2252,7 @@ void InternalGrid_QueryUnboundColumnValue(object sender, GridTreeUnboundColum
 }
 
 
-{%endhighlight%}
+{% endhighlight %}
 When the user handles this event and applies cell value then the values calculated by Expression or Format is not displayed in the unbound column.
 
 ### Format
@@ -2213,8 +2267,8 @@ Some example of Format is given below:
 * Format="'{Cost:c} of {Model}'" 
 
 The following code snippet shows a simple usage of Format.
-
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
@@ -2246,9 +2300,9 @@ The following code snippet shows a simple usage of Format.
 
 </syncfusion:GridTreeUnboundColumn
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -2265,13 +2319,15 @@ treeGrid.Columns.Add(new GridTreeUnboundColumn() { 
     of {Model}" });
 
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Columns_images/Columns_img21.png)
 
 
 
-_Using Formats in the GridTree Control_
+Using Formats in the GridTree Control
+{:.caption}
 
 ### Expression
 
@@ -2281,15 +2337,15 @@ This property is used to set an expression formula for the unbound column, based
 
 The following table lists the operators that are supported with example for each.
 
-_Operators_
+#### Operators
 
 <table>
 <tr>
 <th>
-{{ '**Expression**' | markdownify }}</th><th>
-{{ '**Syntax**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Example Usage**' | markdownify }}</th></tr>
+Expression</th><th>
+Syntax</th><th>
+Description</th><th>
+Example Usage</th></tr>
 <tr>
 <td>
 Mod</td><td>
@@ -2378,8 +2434,8 @@ ProductName Contains </td></tr>
 
 
 The following code snippet shows a simple way to use expressions.
-
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
@@ -2399,9 +2455,9 @@ The following code snippet shows a simple way to use expressions.
 
 </syncfusion:GridTreeUnboundColumn>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 
 
 
@@ -2409,10 +2465,12 @@ treeGrid.Columns.Add(new GridTreeUnboundColumn() { MappingName = "GrandTota
 
 Expression = "Quantity*Cost" });
 
-{%endhighlight%}
+{% endhighlight %}
+{% endtabs %}
 
 ![](Columns_images/Columns_img22.png)
 
 
-_Using Expressions in the GridTree Control_
+Using Expressions in the GridTree Control
+{:.caption}
 

@@ -103,11 +103,16 @@ Use the following code snippet to set the SizeMode to Large:
 
 
 
+{% tabs %}
+{% highlight xml %} 
+<sync:DropDownButtonAdv SizeMode="Large" Label="Hello World"/> 
+{% endhighlight %} 
 
-{% highlight xml %} <sync:DropDownButtonAdv SizeMode="Large" Label="Hello World"/> {% endhighlight %} 
-
-{% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Large; {% endhighlight %} 
-
+{% highlight C# %}
+ DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";
+ button.SizeMode = SizeMode.Large;
+ {% endhighlight %} 
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img5.png)
@@ -124,11 +129,15 @@ The Image displayed in the control can be set using two properties:
 The SmallIcon property can be set as follows:
 
 
+{% tabs %}
+{% highlight xml %} 
+<sync:DropDownButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/> 
+{% endhighlight %} 
 
-{% highlight xml %} <sync:DropDownButtonAdv SizeMode="Small" Label="Hello World" SmallIcon="employee.png"/> {% endhighlight %} 
-
-{% highlight C# %}  DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;button.SmallIcon = new BitmapImage(new Uri("employee.png")); {% endhighlight %} 
-
+{% highlight C# %}  
+DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Small;
+button.SmallIcon = new BitmapImage(new Uri("employee.png")); {% endhighlight %} 
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img6.png)
@@ -138,11 +147,16 @@ The SmallIcon property can be set as follows:
 The SmallIcon property can be set even when the SizeMode is Normal:
 
 
+{% tabs %}
+{% highlight xml %} 
+<sync:DropDownButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/>
+ {% endhighlight %} 
 
-{% highlight xml %} <sync:DropDownButtonAdv SizeMode="Normal" SmallIcon="employee.png" Label="Hello World"/> {% endhighlight %} 
-
-{% highlight C# %}  DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";button.SizeMode = SizeMode.Normal;button.SmallIcon = new BitmapImage(new Uri("employee.png")); {% endhighlight %} 
-
+{% highlight C# %} 
+ DropDownButtonAdv button = new DropDownButtonAdv()button.Label = "Hello World";
+ button.SizeMode = SizeMode.Normal;button.SmallIcon = new BitmapImage(new Uri("employee.png")); 
+ {% endhighlight %} 
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img7.png)
@@ -153,11 +167,18 @@ The LargeIcon property can be set as follows:
 
 
 
+{% tabs %}
+{% highlight xml %} 
+<sync:DropDownButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/> 
+{% endhighlight %} 
 
-{% highlight xml %} <sync:DropDownButtonAdv SizeMode="Large" LargeIcon="employee.png" Label="Hello World"/> {% endhighlight %} 
-
-{% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv();button.Label = "Hello World";button.SizeMode = SizeMode.Large;button.LargeIcon = new BitmapImage(new Uri("employee.png")); {% endhighlight %}
-
+{% highlight C# %} 
+DropDownButtonAdv button = new DropDownButtonAdv();
+button.Label = "Hello World";
+button.SizeMode = SizeMode.Large;
+button.LargeIcon = new BitmapImage(new Uri("employee.png")); 
+{% endhighlight %}
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img8.png)
@@ -171,11 +192,28 @@ The DropDownMenuGroup acts as a container for the DropDownButtonAdv control, whi
 Adding DropDownMenuItems to DropDownButtonAdv:
 
 
+{% tabs %}
+{% highlight xml %} 
+<shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">
+<shared:DropDownMenuGroup>      
+<shared:DropDownMenuItem Header="Menu Item 1"/>      
+<shared:DropDownMenuItem Header="Menu Item 2"/>    
+<shared:DropDownMenuItem Header="Menu Item 3"/> 
+</shared:DropDownMenuGroup></shared:DropDownButtonAdv>
+   {% endhighlight %} 
 
-{% highlight xml %} <shared:DropDownButtonAdv Label="Hello World" x:Name="button" SizeMode="Normal" SmallIcon="employee.png">   <shared:DropDownMenuGroup>       <shared:DropDownMenuItem Header="Menu Item 1"/>       <shared:DropDownMenuItem Header="Menu Item 2"/>       <shared:DropDownMenuItem Header="Menu Item 3"/>   </shared:DropDownMenuGroup></shared:DropDownButtonAdv> {% endhighlight %} 
-
-{% highlight C# %} DropDownButtonAdv button = new DropDownButtonAdv();DropDownMenuGroup menu = new DropDownMenuGroup();DropDownMenuItem menuItem1 = new DropDownMenuItem();DropDownMenuItem menuItem2 = new DropDownMenuItem();DropDownMenuItem menuItem3 = new DropDownMenuItem();menu.Items.Add(menuItem1);menu.Items.Add(menuItem2);menu.Items.Add(menuItem3);button.Content = menu; {% endhighlight %}
-
+{% highlight C# %} 
+DropDownButtonAdv button = new DropDownButtonAdv();
+DropDownMenuGroup menu = new DropDownMenuGroup();
+DropDownMenuItem menuItem1 = new DropDownMenuItem();
+DropDownMenuItem menuItem2 = new DropDownMenuItem();
+DropDownMenuItem menuItem3 = new DropDownMenuItem();
+menu.Items.Add(menuItem1);
+menu.Items.Add(menuItem2);
+menu.Items.Add(menuItem3);
+button.Content = menu; 
+{% endhighlight %}
+{% endtabs %}
 
 ![](Getting-Started_images/Getting-Started_img9.png)
 
@@ -185,7 +223,7 @@ Adding DropDownMenuItems to DropDownButtonAdv:
 
 ### Properties
 
-Property table
+
 
 <table>
 <tr>
@@ -240,7 +278,7 @@ Multiline Support</td></tr>
 
 ### Events
 
-Events table
+
 
 <table>
 <tr>

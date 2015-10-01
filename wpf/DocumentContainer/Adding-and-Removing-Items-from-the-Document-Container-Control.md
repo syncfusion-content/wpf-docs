@@ -17,7 +17,7 @@ Document Container allows the user to add new elements to its container(such as 
 
 
 
-
+{% tabs %}
 {% highlight xml %}
 <syncfusion:DocumentContainer Name="DocContainer">
 <Button ></Button></syncfusion:DocumentContainer>
@@ -27,7 +27,7 @@ Document Container allows the user to add new elements to its container(such as 
 Button a = new Button();
 DocContainer.Items.Add(a);
 {% endhighlight %}
-
+{% endtabs %}
 
 
 ## Remove item

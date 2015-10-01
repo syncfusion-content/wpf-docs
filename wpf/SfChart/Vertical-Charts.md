@@ -13,7 +13,6 @@ SfChart provide support for Vertical Charts. You can use this to change the posi
 
 The following APIs are used to change axis positions.
 
-Vertical Charts
 
 <table>
 <tr>
@@ -39,57 +38,57 @@ The following code example illustrates the Vertical Chart feature.
 
 <syncfusion:SfChart   Height="500" Width="650">
 
-        <syncfusion:SfChart.Resources>
+<syncfusion:SfChart.Resources>
 
-                <DataTemplate x:Key="suffix">
+<DataTemplate x:Key="suffix">
 
-                    <TextBlock Text="K"  FontSize="14"/>
+<TextBlock Text="K"  FontSize="14"/>
 
-                </DataTemplate>
+</DataTemplate>
 
-        </syncfusion:SfChart.Resources>
+</syncfusion:SfChart.Resources>
 
-            <syncfusion:SfChart.ColumnDefinitions>
+<syncfusion:SfChart.ColumnDefinitions>
 
-                <syncfusion:ChartColumnDefinition />
+<syncfusion:ChartColumnDefinition />
 
-                <syncfusion:ChartColumnDefinition />
+<syncfusion:ChartColumnDefinition />
 
-            </syncfusion:SfChart.ColumnDefinitions>
+</syncfusion:SfChart.ColumnDefinitions>
 
-            <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:CategoryAxis FontSize="14" />
+<syncfusion:CategoryAxis FontSize="14" />
 
-            </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
-            <syncfusion:SfChart.SecondaryAxis>
+<syncfusion:SfChart.SecondaryAxis>
 
-                <syncfusion:NumericalAxis FontSize="14" PostfixLabelTemplate="{StaticResource suffix}" OpposedPosition="True"/>
+<syncfusion:NumericalAxis FontSize="14" PostfixLabelTemplate="{StaticResource suffix}" OpposedPosition="True"/>
 
-            </syncfusion:SfChart.SecondaryAxis>
-
-
-
-            <syncfusion:LineSeries IsTransposed="True" XBindingPath="CompanyName" 
-
-                 YBindingPath="CompanyTurnOver" ItemsSource="{Binding }"/>
+</syncfusion:SfChart.SecondaryAxis>
 
 
 
-            <syncfusion:LineSeries IsTransposed="True" XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding }">
+<syncfusion:LineSeries IsTransposed="True" XBindingPath="CompanyName" 
 
-                <syncfusion:LineSeries.YAxis>
-
-                    <syncfusion:NumericalAxis FontSize="14" PlotOffset="30" PostfixLabelTemplate="{StaticResource suffix}" OpposedPosition="True" syncfusion:SfChart.Column="1"/>
-
-                </syncfusion:LineSeries.YAxis>
-
-            </syncfusion:LineSeries>
+YBindingPath="CompanyTurnOver" ItemsSource="{Binding }"/>
 
 
 
-        </syncfusion:SfChart>
+<syncfusion:LineSeries IsTransposed="True" XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding }">
+
+<syncfusion:LineSeries.YAxis>
+
+<syncfusion:NumericalAxis FontSize="14" PlotOffset="30" PostfixLabelTemplate="{StaticResource suffix}" OpposedPosition="True" syncfusion:SfChart.Column="1"/>
+
+</syncfusion:LineSeries.YAxis>
+
+</syncfusion:LineSeries>
+
+
+
+</syncfusion:SfChart>
 
 {% endhighlight %}
 

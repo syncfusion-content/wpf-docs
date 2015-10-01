@@ -28,41 +28,41 @@ The Icon support can be added to an application by using the Icon property of Me
 
 <shared:MenuAdv x:Name="Menu"/>
 
-                <shared:MenuItemAdv Header="File">
+<shared:MenuItemAdv Header="File">
 
-                    <shared:MenuItemAdv Header="New">
+<shared:MenuItemAdv Header="New">
 
-                        <shared:MenuItemAdv.Icon>
+<shared:MenuItemAdv.Icon>
 
-                            <Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
+<Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
 
-                        </shared:MenuItemAdv.Icon>
+</shared:MenuItemAdv.Icon>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                    <shared:MenuItemAdv Header="Copy">
+<shared:MenuItemAdv Header="Copy">
 
-                        <shared:MenuItemAdv.Icon>
+<shared:MenuItemAdv.Icon>
 
-                            <Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
+<Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
 
-                        </shared:MenuItemAdv.Icon>
+</shared:MenuItemAdv.Icon>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                    <shared:MenuItemAdv Header="Cut">
+<shared:MenuItemAdv Header="Cut">
 
-                        <shared:MenuItemAdv.Icon>
+<shared:MenuItemAdv.Icon>
 
-                            <Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
+<Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
 
-                        </shared:MenuItemAdv.Icon>
+</shared:MenuItemAdv.Icon>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                <shared:MenuItemAdv Header="Edit"/>
+<shared:MenuItemAdv Header="Edit"/>
 
 </shared:MenuAdv>
 {% endhighlight %}
@@ -71,11 +71,11 @@ The Icon support can be added to an application by using the Icon property of Me
 ![](Icon-Support_images/Icon-Support_img1.png)
 
 
-## Properties
+### Properties
 
 The property for the Icon support is described in the following tabulation:
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -93,7 +93,7 @@ Object(null)</td></tr>
 </table>
 
 
-## Sample Link
+### Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

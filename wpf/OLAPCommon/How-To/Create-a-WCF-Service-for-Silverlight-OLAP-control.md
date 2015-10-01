@@ -20,464 +20,465 @@ The following steps will define the adding of WCF Service to the Web project and
 
    The code snippet explains how to create OLAP WCF service in Web project:
 
+   ~~~csharp
 
+		    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
 
-				    [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
+		    [ServiceBehavior(IncludeExceptionDetailInFaults = true)]
 
-				    [ServiceBehavior(IncludeExceptionDetailInFaults = true)]
+		    public class OlapManager : IOlapDataProvider
 
-				    public class OlapManager : IOlapDataProvider
+		    { 
 
-				    { 
+		        #region Private variables
 
-				        #region Private variables
 
 
+		        private readonly OlapDataProvider _dataManager;
 
-				        private readonly OlapDataProvider _dataManager;
 
 
+		        #endregion
 
-				        #endregion
 
 
+		        #region Constructor
 
-				        #region Constructor
+		        /// <summary>
 
-				        /// <summary>
+		        /// Initializes a new instance of the <see cref="OlapManager"/> class.
 
-				        /// Initializes a new instance of the <see cref="OlapManager"/> class.
+		        /// </summary>
 
-				        /// </summary>
+		        public OlapManager()
 
-				        public OlapManager()
+		        {
 
-				        {
+		            _dataManager = new OlapDataProvider("DataSource=localhost; Initial Catalog=Adventure Works DW");        
 
-				            _dataManager = new OlapDataProvider("DataSource=localhost; Initial Catalog=Adventure Works DW");        
+		} 
 
-						} 
+		        #endregion
 
-				        #endregion
 
 
+		#region IOlapDataProvider Members
 
-				#region IOlapDataProvider Members
 
 
 
 
+		public CellSet ExecuteOlapReportWithLevelTypeAll(OlapReport report, bool showLevelTypeAll)
 
-						public CellSet ExecuteOlapReportWithLevelTypeAll(OlapReport report, bool showLevelTypeAll)
+		{
 
-						{
+		CellSet cellSet = _dataManager.ExecuteOlapReportWithLevelTypeAll(report, showLevelTypeAll);
 
-							CellSet cellSet = _dataManager.ExecuteOlapReportWithLevelTypeAll(report, showLevelTypeAll);
+		_dataManager.DataProvider.CloseConnection();
 
-							_dataManager.DataProvider.CloseConnection();
+		return cellSet;
 
-							return cellSet;
+		}
 
-						}
 
 
+		/// <summary>
 
-						/// <summary>
+		/// Gets the MDX query.
 
-						/// Gets the MDX query.
+		/// </summary>
 
-						/// </summary>
+		/// <param name="report">The report.</param>
 
-						/// <param name="report">The report.</param>
+		/// <returns></returns>
 
-						/// <returns></returns>
+		public string GetMdxQuery(Syncfusion.OlapSilverlight.Reports.OlapReport report)
 
-						public string GetMdxQuery(Syncfusion.OlapSilverlight.Reports.OlapReport report)
+		{
 
-						{
+		string mdxReturned = this._dataManager.GetMdxQuery(report);
 
-							string mdxReturned = this._dataManager.GetMdxQuery(report);
+		// Closing the Provider Connection
 
-							// Closing the Provider Connection
+		this._dataManager.DataProvider.CloseConnection();
 
-							this._dataManager.DataProvider.CloseConnection();
+		return mdxReturned;
 
-							return mdxReturned;
+		}
 
-						}
 
 
+		/// <summary>
 
-						/// <summary>
+		/// Executes the cell set.
 
-						/// Executes the cell set.
+		/// </summary>
 
-						/// </summary>
+		/// <param name="report">The report.</param>
 
-						/// <param name="report">The report.</param>
+		/// <returns></returns>
 
-						/// <returns></returns>
+		public CellSet ExecuteOlapReport(OlapReport report)
 
-						public CellSet ExecuteOlapReport(OlapReport report)
+		{
 
-						{
+		CellSet cellSet = _dataManager.ExecuteOlapReport(report);
 
-							CellSet cellSet = _dataManager.ExecuteOlapReport(report);
+		_dataManager.DataProvider.CloseConnection();
 
-							_dataManager.DataProvider.CloseConnection();
+		return cellSet;
 
-							return cellSet;
+		}
 
-						}
 
 
+		/// <summary>
 
-						/// <summary>
+		/// Executes the MDX query.
 
-						/// Executes the MDX query.
+		/// </summary>
 
-						/// </summary>
+		/// <param name="mdxQuery">The MDX query.</param>
 
-						/// <param name="mdxQuery">The MDX query.</param>
+		/// <returns></returns>
 
-						/// <returns></returns>
+		public CellSet ExecuteMdxQuery(string mdxQuery)
 
-						public CellSet ExecuteMdxQuery(string mdxQuery)
+		{
 
-						{
+		CellSet cellSet = _dataManager.ExecuteMdxQuery(mdxQuery);
 
-							CellSet cellSet = _dataManager.ExecuteMdxQuery(mdxQuery);
+		_dataManager.DataProvider.CloseConnection();
 
-							_dataManager.DataProvider.CloseConnection();
+		return cellSet;
 
-							return cellSet;
+		}
 
-						}
 
 
+		/// <summary>
 
-						/// <summary>
+		/// Gets the cubes.
 
-						/// Gets the cubes.
+		/// </summary>
 
-						/// </summary>
+		/// <returns></returns>
 
-						/// <returns></returns>
+		public CubeInfoCollection GetCubes()
 
-						public CubeInfoCollection GetCubes()
+		{
 
-						{
+		CubeInfoCollection cubes = _dataManager.GetCubes();
 
-							CubeInfoCollection cubes = _dataManager.GetCubes();
+		_dataManager.DataProvider.CloseConnection();
 
-							_dataManager.DataProvider.CloseConnection();
+		return cubes;
 
-							return cubes;
+		}
 
-						}
 
 
+		/// <summary>
 
-						/// <summary>
+		/// Gets the cube schema.
 
-						/// Gets the cube schema.
+		/// </summary>
 
-						/// </summary>
+		/// <param name="cubeName">Name of the cube.</param>
 
-						/// <param name="cubeName">Name of the cube.</param>
+		/// <returns></returns>
 
-						/// <returns></returns>
+		public CubeSchema GetCubeSchema(string cubeName)
 
-						public CubeSchema GetCubeSchema(string cubeName)
+		{
 
-						{
+		CubeSchema cubeSchema = _dataManager.GetCubeSchema(cubeName);
 
-							CubeSchema cubeSchema = _dataManager.GetCubeSchema(cubeName);
+		_dataManager.DataProvider.CloseConnection();
 
-							_dataManager.DataProvider.CloseConnection();
+		return cubeSchema;
 
-							return cubeSchema;
+		}
 
-						}
 
 
+		/// <summary>
 
-						/// <summary>
+		/// Gets the child members.
 
-						/// Gets the child members.
+		/// </summary>
 
-						/// </summary>
+		/// <param name="memberUniqueName">Name of the member unique.</param>
 
-						/// <param name="memberUniqueName">Name of the member unique.</param>
+		/// <param name="cubeName">Name of the cube.</param>
 
-						/// <param name="cubeName">Name of the cube.</param>
+		/// <returns></returns>
 
-						/// <returns></returns>
+		public MemberCollection GetChildMembers(string memberUniqueName, string cubeName)
 
-						public MemberCollection GetChildMembers(string memberUniqueName, string cubeName)
+		{
 
-						{
+		MemberCollection childMembers = _dataManager.GetChildMembers(memberUniqueName, cubeName);
 
-							MemberCollection childMembers = _dataManager.GetChildMembers(memberUniqueName, cubeName);
+		_dataManager.DataProvider.CloseConnection();
 
-							_dataManager.DataProvider.CloseConnection();
+		return childMembers;
 
-							return childMembers;
+		}
 
-						}
 
 
+		/// <summary>
 
-						/// <summary>
+		/// Gets the level members.
 
-						/// Gets the level members.
+		/// </summary>
 
-						/// </summary>
+		/// <param name="levelUniqueName">Name of the level unique.</param>
 
-						/// <param name="levelUniqueName">Name of the level unique.</param>
+		/// <param name="cubeName">Name of the cube.</param>
 
-						/// <param name="cubeName">Name of the cube.</param>
+		/// <returns></returns>
 
-						/// <returns></returns>
+		public MemberCollection GetLevelMembers(string levelUniqueName, string cubeName)
 
-						public MemberCollection GetLevelMembers(string levelUniqueName, string cubeName)
+		{
 
-						{
+		MemberCollection levelMembers = _dataManager.GetLevelMembers(levelUniqueName, cubeName);
 
-							MemberCollection levelMembers = _dataManager.GetLevelMembers(levelUniqueName, cubeName);
+		_dataManager.DataProvider.CloseConnection();
 
-							_dataManager.DataProvider.CloseConnection();
+		return levelMembers;
 
-							return levelMembers;
+		}
 
-						}
 
 
+		/// <summary>
 
-						/// <summary>
+		/// Executes the specified MDX query.
 
-						/// Executes the specified MDX query.
+		/// </summary>
 
-						/// </summary>
+		/// <param name="mdxQuery">The MDX query.</param>
 
-						/// <param name="mdxQuery">The MDX query.</param>
+		/// <returns></returns>
 
-						/// <returns></returns>
+		public object Execute(string mdxQuery)
 
-						public object Execute(string mdxQuery)
+		{
 
-						{
+		var resultSet = this._dataManager.Execute(mdxQuery);
 
-							var resultSet = this._dataManager.Execute(mdxQuery);
+		// Closing the Provider Connection
 
-							// Closing the Provider Connection
+		_dataManager.DataProvider.CloseConnection();
 
-							_dataManager.DataProvider.CloseConnection();
+		return resultSet;
 
-							return resultSet;
+		}
 
-						}
 
 
+		/// <summary>
 
-						/// <summary>
+		/// Executes the olap report with total count.
 
-						/// Executes the olap report with total count.
+		/// </summary>
 
-						/// </summary>
+		/// <param name="report">The report.</param>
 
-						/// <param name="report">The report.</param>
+		/// <returns></returns>
 
-						/// <returns></returns>
+		public Syncfusion.OlapSilverlight.Common.SerializableDictionary<string, object> ExecuteOlapReportWithTotalCount(OlapReport report)
 
-						public Syncfusion.OlapSilverlight.Common.SerializableDictionary<string, object> ExecuteOlapReportWithTotalCount(OlapReport report)
+		{
 
-						{
+		Syncfusion.OlapSilverlight.Common.SerializableDictionary<string, object> dict = this._dataManager.ExecuteOlapReportWithTotalCount(report);
 
-							Syncfusion.OlapSilverlight.Common.SerializableDictionary<string, object> dict = this._dataManager.ExecuteOlapReportWithTotalCount(report);
+		// Closing the Provider Connection
 
-							// Closing the Provider Connection
+		this._dataManager.DataProvider.CloseConnection();
 
-							this._dataManager.DataProvider.CloseConnection();
+		return dict;
 
-							return dict;
+		}
 
-						}
 
 
+		#endregion
 
-						#endregion
+   ~~~
 
+   ~~~vbnet
 
+		<AspNetCompatibilityRequirements(RequirementsMode := AspNetCompatibilityRequirementsMode.Allowed)> _
 
+		<ServiceBehavior(IncludeExceptionDetailInFaults := True)> _
 
+		Public Class OlapManager 
 
-					<AspNetCompatibilityRequirements(RequirementsMode := AspNetCompatibilityRequirementsMode.Allowed)> _
+		Implements IOlapDataProvider
 
-					<ServiceBehavior(IncludeExceptionDetailInFaults := True)> _
 
-					Public Class OlapManager 
 
-					Implements IOlapDataProvider
+		#Region "Member"
 
+		Private ReadOnly _dataManager As OlapDataProvider
 
+		#End Region
 
-					#Region "Member"
 
-						   Private ReadOnly _dataManager As OlapDataProvider
 
-					#End Region
 
 
+		#Region "Constructor"
 
+		Public Sub New()
 
+		_dataManager = New OlapDataProvider("DataSource=localhost; Initial Catalog=Adventure Works DW")
 
-					#Region "Constructor"
+		End Sub
 
-					Public Sub New()
+		#End Region
 
-					_dataManager = New OlapDataProvider("DataSource=localhost; Initial Catalog=Adventure Works DW")
 
-					End Sub
 
-					#End Region
+		#Region "IOlapDataProvider Members"
 
 
 
-					#Region "IOlapDataProvider Members"
+		Public Function ExecuteOlapReportWithLevelTypeAll(ByVal report As OlapReport, ByVal showLevelTypeAll As Boolean) As CellSet
 
+		Dim cellSet As CellSet = _dataManager.ExecuteOlapReportWithLevelTypeAll(report, showLevelTypeAll)
 
+		_dataManager.DataProvider.CloseConnection()
 
-							Public Function ExecuteOlapReportWithLevelTypeAll(ByVal report As OlapReport, ByVal showLevelTypeAll As Boolean) As CellSet
+		Return cellSet
 
-								Dim cellSet As CellSet = _dataManager.ExecuteOlapReportWithLevelTypeAll(report, showLevelTypeAll)
+		End Function
 
-								_dataManager.DataProvider.CloseConnection()
+		Public Function GetMdxQuery(ByVal report As Syncfusion.OlapSilverlight.Reports.OlapReport) As String
 
-								Return cellSet
+		Dim mdxReturned As String = Me._dataManager.GetMdxQuery(report)
 
-							End Function
+		Me._dataManager.DataProvider.CloseConnection()
 
-							Public Function GetMdxQuery(ByVal report As Syncfusion.OlapSilverlight.Reports.OlapReport) As String
+		Return mdxReturned
 
-								Dim mdxReturned As String = Me._dataManager.GetMdxQuery(report)
+		End Function
 
-								Me._dataManager.DataProvider.CloseConnection()
+		Public Function ExecuteOlapReport(ByVal report As OlapReport) As CellSet
 
-								Return mdxReturned
+		Dim cellSet As CellSet = _dataManager.ExecuteOlapReport(report)
 
-							End Function
+		_dataManager.DataProvider.CloseConnection()
 
-							Public Function ExecuteOlapReport(ByVal report As OlapReport) As CellSet
+		Return cellSet
 
-								Dim cellSet As CellSet = _dataManager.ExecuteOlapReport(report)
+		End Function
 
-								_dataManager.DataProvider.CloseConnection()
+		Public Function ExecuteMdxQuery(ByVal mdxQuery As String) As CellSet
 
-								Return cellSet
+		Dim cellSet As CellSet = _dataManager.ExecuteMdxQuery(mdxQuery)
 
-							End Function
+		_dataManager.DataProvider.CloseConnection()
 
-							Public Function ExecuteMdxQuery(ByVal mdxQuery As String) As CellSet
+		Return cellSet
 
-								Dim cellSet As CellSet = _dataManager.ExecuteMdxQuery(mdxQuery)
+		End Function
 
-								_dataManager.DataProvider.CloseConnection()
+		Public Function GetCubes() As CubeInfoCollection
 
-								Return cellSet
+		Dim cubes As CubeInfoCollection = _dataManager.GetCubes()
 
-							End Function
+		_dataManager.DataProvider.CloseConnection()
 
-							Public Function GetCubes() As CubeInfoCollection
+		Return cubes
 
-								Dim cubes As CubeInfoCollection = _dataManager.GetCubes()
+		End Function
 
-								_dataManager.DataProvider.CloseConnection()
+		Public Function GetCubeSchema(ByVal cubeName As String) As CubeSchema
 
-								Return cubes
+		Dim cubeSchema As CubeSchema = _dataManager.GetCubeSchema(cubeName)
 
-							End Function
+		_dataManager.DataProvider.CloseConnection()
 
-							Public Function GetCubeSchema(ByVal cubeName As String) As CubeSchema
+		Return cubeSchema
 
-								Dim cubeSchema As CubeSchema = _dataManager.GetCubeSchema(cubeName)
+		End Function
 
-								_dataManager.DataProvider.CloseConnection()
+		Public Function GetChildMembers(ByVal memberUniqueName As String, ByVal cubeName As String) As MemberCollection
 
-								Return cubeSchema
+		Dim childMembers As MemberCollection = _dataManager.GetChildMembers(memberUniqueName, cubeName)
 
-							End Function
+		_dataManager.DataProvider.CloseConnection()
 
-							Public Function GetChildMembers(ByVal memberUniqueName As String, ByVal cubeName As String) As MemberCollection
+		Return childMembers
 
-								Dim childMembers As MemberCollection = _dataManager.GetChildMembers(memberUniqueName, cubeName)
+		End Function
 
-								_dataManager.DataProvider.CloseConnection()
+		Public Function GetLevelMembers(ByVal levelUniqueName As String, ByVal cubeName As String) As MemberCollection
 
-								Return childMembers
+		Dim levelMembers As MemberCollection = _dataManager.GetLevelMembers(levelUniqueName, cubeName)
 
-							End Function
+		_dataManager.DataProvider.CloseConnection()
 
-							Public Function GetLevelMembers(ByVal levelUniqueName As String, ByVal cubeName As String) As MemberCollection
+		Return levelMembers
 
-								Dim levelMembers As MemberCollection = _dataManager.GetLevelMembers(levelUniqueName, cubeName)
+		End Function
 
-								_dataManager.DataProvider.CloseConnection()
+		Public Function Execute(ByVal mdxQuery As String) As Object
 
-								Return levelMembers
+		Dim resultSet As var = Me._dataManager.Execute(mdxQuery)
 
-							End Function
+		_dataManager.DataProvider.CloseConnection()
 
-							Public Function Execute(ByVal mdxQuery As String) As Object
+		Return resultSet
 
-								Dim resultSet As var = Me._dataManager.Execute(mdxQuery)
+		End Function
 
-								_dataManager.DataProvider.CloseConnection()
+		Public Function ExecuteOlapReportWithTotalCount(ByVal report As OlapReport) As Syncfusion.OlapSilverlight.Common.SerializableDictionary(Of String, Object)
 
-								Return resultSet
+		Dim dict As Syncfusion.OlapSilverlight.Common.SerializableDictionary(Of String, Object) = Me._dataManager.ExecuteOlapReportWithTotalCount(report)
 
-							End Function
+		Me._dataManager.DataProvider.CloseConnection()
 
-							Public Function ExecuteOlapReportWithTotalCount(ByVal report As OlapReport) As Syncfusion.OlapSilverlight.Common.SerializableDictionary(Of String, Object)
+		Return dict
 
-								Dim dict As Syncfusion.OlapSilverlight.Common.SerializableDictionary(Of String, Object) = Me._dataManager.ExecuteOlapReportWithTotalCount(report)
+		End Function
 
-								Me._dataManager.DataProvider.CloseConnection()
+		#End Region
 
-								Return dict
+		#End Class
 
-							End Function
-
-					#End Region
-
-					#End Class
-
-
+   ~~~
 
 3. Include the custom binding and the service endpoint address in the Web.Config file.     
 
 
 
 
+   ~~~xaml
+   
+		<!--Binding-->
 
-				   <!--Binding-->
+		   <bindings>
+		     <customBinding>
+		       <binding name="binaryHttpBinding">
+		        <binaryMessageEncoding/>
+		        <httpTransport maxReceivedMessageSize="2147483647"/>
+		       </binding>
+		     </customBinding>
+		   </bindings>
 
-				   <bindings>
-				     <customBinding>
-				       <binding name="binaryHttpBinding">
-				        <binaryMessageEncoding/>
-				        <httpTransport maxReceivedMessageSize="2147483647"/>
-				       </binding>
-				     </customBinding>
-				   </bindings>
-
-				   <!—Endpoint Address-->
-				   <services>
-				     <service name="SilverlightApplication1.Web.OlapManager" >
-				       <endpoint address="binary" binding="customBinding" bindingConfiguration="binaryHttpBinding" contract="Syncfusion.OlapSilverlight.Manager.IOlapDataProvider">
-				       </endpoint>
-				     </service>
-				   </services>
+		   <!—Endpoint Address-->
+		   <services>
+		     <service name="SilverlightApplication1.Web.OlapManager" >
+		       <endpoint address="binary" binding="customBinding" bindingConfiguration="binaryHttpBinding" contract="Syncfusion.OlapSilverlight.Manager.IOlapDataProvider">
+		       </endpoint>
+		     </service>
+		   </services>
 
 
-   {:.prettyprint}
+   ~~~

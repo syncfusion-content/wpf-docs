@@ -13,6 +13,7 @@ Once the OlapReport is created by assigning the report to the CurrentReport prop
 
 The following code snippet explains the assigning of an OlapReport to CurrentReport property:
 
+{% tabs %}
 {% highlight c# %}
 
 OlapDataManager.CurrentReport = olapReport;
@@ -26,4 +27,4 @@ OlapDataManager.CurrentReport = olapReport
 
 
 {% endhighlight %}
-
+{% endtabs %}

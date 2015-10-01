@@ -19,7 +19,7 @@ This collection is accessible through the Rows property that returns the instanc
 
 
 
-Class Hierarchy
+### Class Hierarchy
 
 TextBodyItem
 
@@ -27,9 +27,9 @@ TextBodyItem
 
 WTable
 
-Public Constructors
+### Public Constructors
 
-_Public Constructors_
+
 
 <table>
 <tr>
@@ -45,9 +45,9 @@ Initializes a new instance of the WTable class.</td></tr>
 WTable.WTable (IWordDocument, bool)</td><td>
 Initializes a new instance of the WTable class.  </td></tr>
 </table>
-Public Properties
 
-_Public Properties_
+
+### Public Properties
 
 <table>
 <tr>
@@ -123,9 +123,10 @@ Gets or sets the value, indicating whether to apply style for last column.</td><
 ApplyStyleForLastRow</td><td>
 Gets or sets the value, indicating whether to apply style for last row.</td></tr>
 </table>
-Public Methods
 
-_Public Methods_
+### Public Methods
+
+
 
 <table>
 <tr>
@@ -175,33 +176,53 @@ Removes absolute positioning information from the table.</td></tr>
 </table>
 The following code example illustrates how to create an empty table with two rows. Each row has two cells (two columns).
 
-
+{% tabs %}
 {% highlight c# %}
-IWordDocument doc = new WordDocument();IWSection section = doc.AddSection();IWParagraph paragraph = section.AddParagraph();paragraph.AppendText("Tiny table");paragraph = section.AddParagraph();IWTable table = section.AddTable();table.ResetCells(2, 2);doc.Save("Table.doc");
+IWordDocument doc = new WordDocument();
+IWSection section = doc.AddSection();
+IWParagraph paragraph = section.AddParagraph();
+paragraph.AppendText("Tiny table");
+paragraph = section.AddParagraph();
+IWTable table = section.AddTable();
+table.ResetCells(2, 2);
+doc.Save("Table.doc");
 {% endhighlight  %}
 {% highlight vbnet %}
-Dim doc As IWordDocument = New WordDocument()Dim section As IWSection = doc.AddSection()Dim paragraph As IWParagraph = section.AddParagraph()paragraph.AppendText("Tiny table")paragraph = section.AddParagraph()Dim table As IWTable = section.AddTable()table.ResetCells(2, 2)doc.Save("Table.doc")
+Dim doc As IWordDocument = New WordDocument()
+Dim section As IWSection = doc.AddSection()
+Dim paragraph As IWParagraph = section.AddParagraph()
+paragraph.AppendText("Tiny table")
+paragraph = section.AddParagraph()
+Dim table As IWTable = section.AddTable()
+table.ResetCells(2, 2)
+doc.Save("Table.doc")
 {% endhighlight  %}
+{% endtabs %}
 
 
 ![](Working-with-Tables_images/Working-with-Tables_img1.png)
 
 
 
-_Table with Two Rows and Two Columns_
+Table with Two Rows and Two Columns
+{:.caption}
 
 ### Nested Table
 
 You can create nested tables by creating a table in the cell of the parent table by using DocIO. The following code example illustrates how to add a table to a cell.
 
-
+{% tabs %}
 {% highlight c# %}
 
-//Adds a nested Table to the cell (2,2)of the parent table.IWTable nestTable = table[2, 2].AddTable();nestTable.ResetCells(3, 3);
+//Adds a nested Table to the cell (2,2)of the parent table.
+IWTable nestTable = table[2, 2].AddTable();
+nestTable.ResetCells(3, 3);
 {% endhighlight  %}
 {% highlight vbnet %}
-'Adds a new Table to the cell (2,2) of the parent table.Dim nestTable as IWTable = table[2, 2].AddTable()nestTable.ResetCells(3, 3)
+'Adds a new Table to the cell (2,2) of the parent table.
+Dim nestTable as IWTable = table[2, 2].AddTable()nestTable.ResetCells(3, 3)
 {% endhighlight  %}
+{% endtabs %}
 
 ## Table Row
 
@@ -209,7 +230,7 @@ WTableRow class represents a table row in the Word document. WTableRow class has
 
 
 
-Table Row Height
+### Table Row Height
 
 Table row height provides the following options:
 
@@ -224,15 +245,15 @@ The following screenshot illustrates how to set the above properties by using th
 
 
 
-_Table Properties Dialog Box_
+Table Properties Dialog Box
+{:.caption}
 
 ### Adding Cells
 
 You can use the AddCell and AddCell(bool isCopyFormat) methods to add new cells to the table row, where isCopyFormat parameter specifies whether to copy formatting from the adjacent cell in the previous row. AddCell method without parameters is the same as AddCell(true).
 
-Public Constructors
+### Public Constructors
 
-_Public Constructors_
 
 <table>
 <tr>
@@ -244,9 +265,9 @@ Description</th></tr>
 WTableRow.WTableRow (IWordDocument)</td><td>
 Initializes a new instance of the WTableRow class.  </td></tr>
 </table>
-Public Properties
 
-_Public Properties_
+### Public Properties
+
 
 <table>
 <tr>
@@ -282,9 +303,10 @@ Gets or sets a value indicating whether a row is a table header. </td></tr>
 RowFormat</td><td>
 Specifies table format.  </td></tr>
 </table>
-Public Methods
 
-_Public Methods_
+### Public Methods
+
+
 
 <table>
 <tr>
@@ -319,11 +341,12 @@ The following screenshot illustrates how to set the Cell Format in Microsoft Wor
 
 
 
-_Cell Format Options in Table Properties Dialog Box_
+Cell Format Options in Table Properties Dialog Box
+{:.caption}
 
-Cell Format Public Properties
+### Cell Format Public Properties
 
-_Cell Format Public Properties_
+
 
 <table>
 <tr>
@@ -367,9 +390,10 @@ Gets or sets a value indicating vertical alignment of a cell. </td></tr>
 VerticalMerge</td><td>
 Gets or sets a value indicating vertical merging of a cell. </td></tr>
 </table>
-Public Constructors
 
-_Public Constructors_
+### Public Constructors
+
+
 
 <table>
 <tr>
@@ -382,9 +406,9 @@ WTableCell.WTableCell (IWordDocument)</td><td>
 Initializes a new instance of the WTableCell class.  </td></tr>
 </table>
 
-Public Properties
+### Public Properties
 
-_Public Properties_
+
 
 <table>
 <tr>
@@ -408,9 +432,10 @@ Gets the owner row of the cell.  </td></tr>
 Width</td><td>
 Specifies the cell width (in points).</td></tr>
 </table>
-Public Methods
 
-_Public Methods_
+### Public Methods
+
+
 
 <table>
 <tr>
@@ -429,43 +454,104 @@ Gets the cell index in a table row.  </td></tr>
 The following code example illustrates how to create a table with basic formatting.
 
 
-
+{% tabs %}
 {% highlight c# %}
-paragraph = section.AddParagraph();paragraph.AppendText("Table with different formatting");paragraph = section.AddParagraph();//Adds a table.table = section.AddTable();//Sets number of rows and columns.table.ResetCells(3, 3);table.TableFormat.Borders.LineWidth = 2f;table.TableFormat.Borders.Color = Color.Green;//Selects the first row and appends text in each cell.WTableRow row0 = table.Rows[0];row0.Cells[0].AddParagraph().AppendText("1");row0.Cells[0].CellFormat.Borders.LineWidth = 2f;row0.Cells[0].CellFormat.Borders.Color = Color.Magenta;WTableRow row = table.Rows[0];row0.Cells[1].AddParagraph().AppendText("2");row0.Cells[2].AddParagraph().AppendText("3");WTableRow row1 = table.Rows[1];row = table.Rows[1];row1.Cells[0].AddParagraph().AppendText("4");row1.Cells[1].AddParagraph().AppendText("5");row1.Cells[1].CellFormat.Borders.LineWidth = 2f;row1.Cells[1].CellFormat.Borders.Color = Color.Brown;row1.Cells[2].AddParagraph().AppendText("6");WTableRow row2 = table.Rows[2];row2.Cells[0].AddParagraph().AppendText("7");row2.Cells[1].AddParagraph().AppendText("8");row2.Cells[2].AddParagraph().AppendText("9");row2.Cells[2].CellFormat.Borders.LineWidth = 2f;row2.Cells[2].CellFormat.Borders.Color = Color.Cyan;row2.Cells[2].CellFormat.Borders.Shadow = true;
+paragraph = section.AddParagraph();
+paragraph.AppendText("Table with different formatting");
+paragraph = section.AddParagraph();
+//Adds a table.
+table = section.AddTable();
+//Sets number of rows and columns.
+table.ResetCells(3, 3);
+table.TableFormat.Borders.LineWidth = 2f;
+table.TableFormat.Borders.Color = Color.Green;
+//Selects the first row and appends text in each cell.
+WTableRow row0 = table.Rows[0];
+row0.Cells[0].AddParagraph().AppendText("1");
+row0.Cells[0].CellFormat.Borders.LineWidth = 2f;
+row0.Cells[0].CellFormat.Borders.Color = Color.Magenta;
+WTableRow row = table.Rows[0];row0.Cells[1].AddParagraph().AppendText("2");
+row0.Cells[2].AddParagraph().AppendText("3");
+WTableRow row1 = table.Rows[1];
+row = table.Rows[1];row1.Cells[0].AddParagraph().AppendText("4");
+row1.Cells[1].AddParagraph().AppendText("5");
+row1.Cells[1].CellFormat.Borders.LineWidth = 2f;
+row1.Cells[1].CellFormat.Borders.Color = Color.Brown;
+row1.Cells[2].AddParagraph().AppendText("6");
+WTableRow row2 = table.Rows[2];
+row2.Cells[0].AddParagraph().AppendText("7");
+row2.Cells[1].AddParagraph().AppendText("8");
+row2.Cells[2].AddParagraph().AppendText("9");
+row2.Cells[2].CellFormat.Borders.LineWidth = 2f;
+row2.Cells[2].CellFormat.Borders.Color = Color.Cyan;
+row2.Cells[2].CellFormat.Borders.Shadow = true;
 {% endhighlight  %}
 {% highlight vbnet %}
-paragraph = Section.AddParagraph()paragraph.AppendText("Table with different formatting")paragraph = Section.AddParagraph()'Adds a table.Table = Section.AddTable()'Sets number of rows and columns.Table.ResetCells(3, 3)Table.TableFormat.Borders.LineWidth = 2.0FTable.TableFormat.Borders.Color = Color.Green'Selects the first row and appends text in each cell.Dim row0 As WTableRow = Table.Rows(0)row0.Cells(0).AddParagraph().AppendText("1")row0.Cells(0).CellFormat.Borders.LineWidth = 2.0Frow0.Cells(0).CellFormat.Borders.Color = Color.MagentaDim row As WTableRow = Table.Rows(0)row0.Cells(1).AddParagraph().AppendText("2")row0.Cells(2).AddParagraph().AppendText("3")Dim row1 As WTableRow = Table.Rows(1)row = Table.Rows(1)row1.Cells(0).AddParagraph().AppendText("4")row1.Cells(1).AddParagraph().AppendText("5")row1.Cells(1).CellFormat.Borders.LineWidth = 2.0Frow1.Cells(1).CellFormat.Borders.Color = Color.Brownrow1.Cells(2).AddParagraph().AppendText("6")Dim row2 As WTableRow = Table.Rows(2)row2.Cells(0).AddParagraph().AppendText("7")row2.Cells(1).AddParagraph().AppendText("8")row2.Cells(2).AddParagraph().AppendText("9")row2.Cells(2).CellFormat.Borders.LineWidth = 2.0Frow2.Cells(2).CellFormat.Borders.Color = Color.Cyanrow2.Cells(2).CellFormat.Borders.Shadow = True
+paragraph = Section.AddParagraph()paragraph.AppendText("Table with different formatting")paragraph = Section.AddParagraph()
+'Adds a table.
+Table = Section.AddTable()
+'Sets number of rows and columns.
+Table.ResetCells(3, 3)Table.TableFormat.Borders.LineWidth = 2.0FTable.TableFormat.Borders.Color = Color.Green
+'Selects the first row and appends text in each cell.
+Dim row0 As WTableRow = Table.Rows(0)row0.Cells(0).AddParagraph().AppendText("1")row0.Cells(0).CellFormat.Borders.LineWidth = 2.0Frow0.Cells(0).CellFormat.Borders.Color = Color.MagentaDim row As WTableRow = Table.Rows(0)row0.Cells(1).AddParagraph().AppendText("2")row0.Cells(2).AddParagraph().AppendText("3")
+Dim row1 As WTableRow = Table.Rows(1)row = Table.Rows(1)row1.Cells(0).AddParagraph().AppendText("4")row1.Cells(1).AddParagraph().AppendText("5")row1.Cells(1).CellFormat.Borders.LineWidth = 2.0Frow1.Cells(1).CellFormat.Borders.Color = Color.Brownrow1.Cells(2).AddParagraph().AppendText("6")
+Dim row2 As WTableRow = Table.Rows(2)row2.Cells(0).AddParagraph().AppendText("7")row2.Cells(1).AddParagraph().AppendText("8")row2.Cells(2).AddParagraph().AppendText("9")row2.Cells(2).CellFormat.Borders.LineWidth = 2.0Frow2.Cells(2).CellFormat.Borders.Color = Color.Cyanrow2.Cells(2).CellFormat.Borders.Shadow = True
 {% endhighlight  %}
+{% endtabs %}
 
 ## Adding Content to a Table Cell
 
 The AddParagraph method of the WTableCell class is used to add paragraphs to the table cell. The AddTable method is used to add a nested table to the cell. For details, see Nested Table_Text_Range.
 
 
-
+{% tabs %}
 {% highlight c# %}
-//Adds a new Table to the text body.IWTable table = sec.body.AddTable();//Inserts rows to the table. This will apply the format to a whole table.table.ResetCells(6, 6, format, 80);WTableCell cell = table.Rows[0].Cells[0] as WTableCell;WTextRange range = cell.AddParagraph().AppendText("aaaaaaaaaaaaaaaaaaaa") as WTextRange ;//Formats first cell first paragraph.range.CharacterFormat.FontName = "Arial";range.CharacterFormat.FontSize = 10;//Formats first cell second paragraph.range = cell.AddParagraph().AppendText("bbbbbbbbbbbbbbbbbbb") as WTextRange;range.CharacterFormat.Italic = true;                    range.CharacterFormat.FontSize = 12;
+//Adds a new Table to the text body.
+IWTable table = sec.body.AddTable();
+//Inserts rows to the table. This will apply the format to a whole table.
+table.ResetCells(6, 6, format, 80);
+WTableCell cell = table.Rows[0].Cells[0] as WTableCell;
+WTextRange range = cell.AddParagraph().AppendText("aaaaaaaaaaaaaaaaaaaa") as WTextRange ;
+//Formats first cell first paragraph.
+range.CharacterFormat.FontName = "Arial";
+range.CharacterFormat.FontSize = 10;
+//Formats first cell second paragraph.
+range = cell.AddParagraph().AppendText("bbbbbbbbbbbbbbbbbbb") as WTextRange;
+range.CharacterFormat.Italic = true;                    range.CharacterFormat.FontSize = 12;
 {% endhighlight  %}
 {% highlight vbnet %}
-‘Adds a new Table to the text body.Dim table As IWTable = sec.body.AddTable()'Inserts rows to the table. This will apply the format to whole table.table.ResetCells(6, 6, Format, 80)Dim cell As WTableCell = TryCast(table.Rows(0).Cells(0), WTableCell)Dim range As WTextRange = TryCast(cell.AddParagraph().AppendText("aaaaaaaaaaaaaaaaaaaa"), WTextRange)'Formats first cell first paragraph.range.CharacterFormat.FontName = "Arial"range.CharacterFormat.FontSize = 10'Formats first cell second paragraph.range = TryCast(cell.AddParagraph().AppendText("bbbbbbbbbbbbbbbbbbb"), WTextRange)range.CharacterFormat.Italic = Truerange.CharacterFormat.FontSize = 12
+‘Adds a new Table to the text body.
+Dim table As IWTable = sec.body.AddTable()
+'Inserts rows to the table. This will apply the format to whole table.
+table.ResetCells(6, 6, Format, 80)
+Dim cell As WTableCell = TryCast(table.Rows(0).Cells(0), WTableCell)Dim range As WTextRange = TryCast(cell.AddParagraph().AppendText("aaaaaaaaaaaaaaaaaaaa"), WTextRange)
+'Formats first cell first paragraph.
+range.CharacterFormat.FontName = "Arial"range.CharacterFormat.FontSize = 10
+'Formats first cell second paragraph.
+range = TryCast(cell.AddParagraph().AppendText("bbbbbbbbbbbbbbbbbbb"), WTextRange)range.CharacterFormat.Italic = Truerange.CharacterFormat.FontSize = 12
 {% endhighlight  %}
+{% endtabs %}
 
 The following code example illustrates how to insert a picture to a table cell.
 
 
-
+{% tabs %}
 {% highlight c# %}
-IWTable table = section.Body.AddTable();table.ResetCells(1, 1);          WTableRow row = table.Rows[0];paragraph = (IWParagraph)row.Cells[0].AddParagraph();paragraph.AppendPicture(new Bitmap("image.png"));
+IWTable table = section.Body.AddTable();table.ResetCells(1, 1);      
+    WTableRow row = table.Rows[0];paragraph = (IWParagraph)row.Cells[0].AddParagraph();
+	paragraph.AppendPicture(new Bitmap("image.png"));
 {% endhighlight  %}
 {% highlight vbnet %}
-Dim table As IWTable = section.Body.AddTable()table.ResetCells(1, 1)Dim row As WTableRow = table.Rows(0)Paragraph = DirectCast(row.Cells(0).AddParagraph(), IWParagraph)Paragraph.AppendPicture(New Bitmap("image.png"))
+Dim table As IWTable = section.Body.AddTable()table.ResetCells(1, 1)
+Dim row As WTableRow = table.Rows(0)Paragraph = DirectCast(row.Cells(0).AddParagraph(), IWParagraph)Paragraph.AppendPicture(New Bitmap("image.png"))
 {% endhighlight  %}
+{% endtabs %}
 
 ## Row Format
 
 RowFormat class represents table and table row formatting in a Word document.
 
-Properties
+### Properties
 
 * Borders: Specifies format of row borders (width of line, line color, and so on).
 * Paddings: Specifies margins for cells in a row or table.
@@ -481,11 +567,12 @@ The following screenshot illustrates how to set Row Format in Microsoft Word.
 
 
 
-_Row Format Options in Table Properties Dialog Box_
+Row Format Options in Table Properties Dialog Box
+{:.caption}
 
-Public Properties
+### Public Properties
 
-_Public Properties_
+
 
 <table>
 <tr>
@@ -526,12 +613,25 @@ Paddings</td><td>
 Gets paddings.</td></tr>
 </table>
 
+{% tabs %}
 {% highlight c# %}
-//Adds a new Table to the textbody.IWTable table = sec.body.AddTable();RowFormat format = new RowFormat();format.Paddings.All = 5;format.Borders.BorderType = Syncfusion.DocIO.DLS.BorderStyle.Dot;format.Borders.LineWidth = 2;//Inserts rows to a table. This will apply the format to a whole table.table.ResetCells(6, 6, format, 80);
+//Adds a new Table to the textbody.
+IWTable table = sec.body.AddTable();
+RowFormat format = new RowFormat();
+format.Paddings.All = 5;
+format.Borders.BorderType = Syncfusion.DocIO.DLS.BorderStyle.Dot;
+format.Borders.LineWidth = 2;
+//Inserts rows to a table. This will apply the format to a whole table.table.ResetCells(6, 6, format, 80);
 {% endhighlight %}
 {% highlight vbnet %}
-'Adds a new Table to the textbody.Dim table As IWTable = sec.body.AddTable()Dim format As New RowFormat()format.Paddings.All = 5format.Borders.BorderType = Syncfusion.DocIO.DLS.BorderStyle.Dotformat.Borders.LineWidth = 2'Inserts rows to a table. This will apply the format to a whole table.table.ResetCells(6, 6, format, 80)
+'Adds a new Table to the textbody.
+Dim table As IWTable = sec.body.AddTable()
+Dim format As New RowFormat()format.Paddings.All = 5format.Borders.BorderType = Syncfusion.DocIO.DLS.BorderStyle.Dotformat.Borders.LineWidth = 2
+'Inserts rows to a table. 
+This will apply the format to a whole table.
+table.ResetCells(6, 6, format, 80)
 {% endhighlight %}
+{% endtabs %}
 
 ## Table Styles
 
@@ -541,7 +641,8 @@ WTableStyle class represents table style in a Word document. Table style specif
 ![](Working-with-Tables_images/Working-with-Tables_img5.png)
 
 
-_Table Styles_
+Table Styles
+{:.caption}
 
 * You can apply Word built-in table styles by using the WTable.ApplyStyle method with Built-inTableStyle enumeration parameter that specifies the built-in table style.
 * You can get information of the related style that is applied to the table by using the GetStyle method of WTable class.
@@ -552,13 +653,36 @@ N> Essential DocIO currently provides support for built-in table styles in Word2
 The following code illustrates how to apply and get the table styles in the table.
 
 
-
+{% tabs %}
 {% highlight c# %}
-//Creates a new Word document.WordDocument document = new WordDocument();//Initializes a new word document with one section and one paragraph           document.EnsureMinimal();//Adds a tableIWTable table = document.LastSection.AddTable();//Resets table with two rows and two columnstable.ResetCells(3, 3);//Applies "LightShading" style to tabletable.ApplyStyle(BuiltinTableStyle.LightShading);//Gets the table styles.IWTableStyle style = table.GetStyle()
+//Creates a new Word document.
+WordDocument document = new WordDocument();
+//Initializes a new word document with one section and one paragraph           document.
+EnsureMinimal();
+//Adds a tableIWTable table = document.
+LastSection.AddTable();
+//Resets table with two rows and two columnstable.
+ResetCells(3, 3);
+//Applies "LightShading" style to tabletable.
+ApplyStyle(BuiltinTableStyle.LightShading);
+//Gets the table styles.
+IWTableStyle style = table.GetStyle()
 {% endhighlight  %}
 {% highlight vbnet %}
-'Creates a new Word document.Dim document As WordDocument = New WordDocument()'Initializes a new word document with one section and one paragraphdocument.EnsureMinimal()'Adds a table Dim table As IWTable = document.LastSection.AddTable()'Resets table with two rows and two columns table.ResetCells(3, 3)'Applies "LightShading" style to table table.ApplyStyle(BuiltinTableStyle.LightShading)'Gets the table style. Dim style As IWTableStyle = table.GetStyle()
+'Creates a new Word document.
+Dim document As WordDocument = New WordDocument()
+'Initializes a new word document with one section and one paragraphdocument.
+EnsureMinimal()
+'Adds a table 
+Dim table As IWTable = document.LastSection.AddTable()
+'Resets table with two rows and two columns table.
+ResetCells(3, 3)
+'Applies "LightShading" style to table table.
+ApplyStyle(BuiltinTableStyle.LightShading)
+'Gets the table style.
+ Dim style As IWTableStyle = table.GetStyle()
 {% endhighlight  %}
+{% endtabs %}
 
 
 ### Table style options
@@ -573,17 +697,50 @@ The following screenshot illustrates how to set the conditional formatting to th
 
 
 
-_Table style options_
+Table style options
+{:.caption}
 
 The following code illustrates how to set the table style options to the table that contains the Built in Table style.
 
 
-
+{% tabs %}
 {% highlight c# %}
-//Creates a new Word document.WordDocument document = new WordDocument();//Initializes a new word document with one section and one paragraph           document.EnsureMinimal();//Adds a tableIWTable table = document.LastSection.AddTable();//Resets table with two rows and two columnstable.ResetCells(3, 3);//Applies "LightShading" style to tabletable.ApplyStyle(BuiltinTableStyle.LightShading);//Formatting the applied built in Table styletable.ApplyStyleForBandedColumns = true;table.ApplyStyleForBandedRows = true;table.ApplyStyleForFirstColumn = false;table.ApplyStyleForHeaderRow = true;table.ApplyStyleForLastColumn = true;table.ApplyStyleForLastRow = false;//Save document. document.Save("sample.docx”,FormatType.Docx);
+//Creates a new Word document.
+WordDocument document = new WordDocument();
+//Initializes a new word document with one section and one paragraph           document.
+EnsureMinimal();
+//Adds a tableIWTable table = document.
+LastSection.AddTable();
+//Resets table with two rows and two columnstable.
+ResetCells(3, 3);
+//Applies "LightShading" style to tabletable.
+ApplyStyle(BuiltinTableStyle.LightShading);
+//Formatting the applied built in Table styletable.
+ApplyStyleForBandedColumns = true;
+table.ApplyStyleForBandedRows = true;
+table.ApplyStyleForFirstColumn = false;
+table.ApplyStyleForHeaderRow = true;
+table.ApplyStyleForLastColumn = true;
+table.ApplyStyleForLastRow = false;
+//Save document. 
+document.Save("sample.docx”,FormatType.Docx);
 {% endhighlight  %}
 {% highlight vbnet %}
-'Creates a new Word document.Dim document As WordDocument = New WordDocument()'Initializes a new word document with one section and one paragraphdocument.EnsureMinimal()'Adds a table Dim table As IWTable = document.LastSection.AddTable()'Resets table with two rows and two columns table.ResetCells(3, 3)'Applies "LightShading" style to table table.ApplyStyle(BuiltinTableStyle.LightShading)'Formatting the applied built in Table style table.ApplyStyleForBandedColumns = Truetable.ApplyStyleForBandedRows = Truetable.ApplyStyleForFirstColumn = Falsetable.ApplyStyleForHeaderRow = Truetable.ApplyStyleForLastColumn = Truetable.ApplyStyleForLastRow = False'Save document document.Save("sample.docx", FormatType.Docx)
+'Creates a new Word document.
+Dim document As WordDocument = New WordDocument()
+'Initializes a new word document with one section and one paragraphdocument.
+EnsureMinimal()
+'Adds a table
+ Dim table As IWTable = document.LastSection.AddTable()
+ 'Resets table with two rows and two columns table.
+ ResetCells(3, 3)
+ 'Applies "LightShading" style to table table.
+ ApplyStyle(BuiltinTableStyle.LightShading)
+ 'Formatting the applied built in Table style table.
+ ApplyStyleForBandedColumns = Truetable.ApplyStyleForBandedRows = Truetable.ApplyStyleForFirstColumn = Falsetable.ApplyStyleForHeaderRow = Truetable.ApplyStyleForLastColumn = Truetable.ApplyStyleForLastRow = False
+ 'Save document
+ document.Save("sample.docx", FormatType.Docx)
 
 {% endhighlight  %}
+{% endtabs %}
 

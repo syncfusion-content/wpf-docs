@@ -15,23 +15,23 @@ There are two methods to cancel a progress bar:
 
 
 
-
+   ~~~csharp
 
 			HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
 
 			hierarchyNavigator.CancelProgressBar();
 
-
+   ~~~
 
 2. Passing an argument in the method to cancel the progress bar for a specified time span. The image below specifies a time span of 1000 ms.
 
 
 
-
+   ~~~csharp
 
 			HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
 
 			hierarchyNavigator.OnCancelProgressBar(new TimeSpan(0, 0, 0, 0, 1000));
 
-   {:.prettyprint}
+   ~~~
 

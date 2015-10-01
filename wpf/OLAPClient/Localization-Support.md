@@ -11,7 +11,7 @@ documentation: ug
 
 Localization is the key feature for providing IT solutions targeted at global users. Essential BI OLAP Client for WPF allows user to localize the control to a specific locale. The following document briefly explains the step by step procedure to localize an OLAP Client for WPF control. 
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 Localization helps the user to create an application that targets several cultures.
 
@@ -28,9 +28,11 @@ The OLAP Client for WPF supports “resx” based localization. The following st
 * <SupportedCultures> Tag inclusion into the project file
 * Specifying the CurrentUICulture
 
-### See Also
+{% seealso %}
 
 Getting Started
+
+{% endseealso %}
 
 ### Translation
 
@@ -38,7 +40,8 @@ The first step in localization is translating the strings that can be localized 
 
 N> Localization Key field should be same for the all locales. Do not translate it.
 
-_Localization Strings Table for OlapClient.WPF_
+### Localization Strings Table for OlapClient.WPF
+
 
 <table>
 <tr>
@@ -274,7 +277,8 @@ Sorting Column</td></tr>
 OlapClient_Toolbar_SortingRow_ToolTip</td><td>
 Sorting Row</td></tr>
 </table>
-_Localization Strings Table for OlapChart.WPF_
+
+### Localization Strings Table for OlapChart.WPF
 
 <table>
 <tr>
@@ -414,7 +418,8 @@ Y Axis</td></tr>
 OlapChart_Dialog_YValueAsLabelContent</td><td>
 Y Value</td></tr>
 </table>
-_Localization Strings Table for OlapGrid.WPF_
+
+### Localization Strings Table for OlapGrid.WPF
 
 <table>
 <tr>
@@ -510,7 +515,8 @@ Rows:</td></tr>
 OlapGrid_Value_Tooltip</td><td>
 Values :</td></tr>
 </table>
-_Localization Strings Table for OlapShared.WPF_
+
+### Localization Strings Table for OlapShared.WPF
 
 <table>
 <tr>
@@ -598,7 +604,8 @@ Update</td></tr>
 OlapTools_FilterSorting_FilterCondition</td><td>
 Condition</td></tr>
 </table>
-_Localization Strings Table for OlapTools.WPF_
+
+### Localization Strings Table for OlapTools.WPF
 
 <table>
 <tr>
@@ -703,9 +710,9 @@ After translating the strings that can be localized, perform the following in th
 
    ![](Localization-Support_images/Localization-Support_img4.png)
 
-   {:.prettyprint}
+   
 
-## <SupportedCultures> Tag Inclusion into the Project File
+## &lt;SupportedCultures&gt; Tag Inclusion into the Project File
 
 In Silverlight, we need to specify the list of supported cultures using the <SupportedCultures> tag in the project file. To specify the supported cultures in a project file, perform the following steps: 
 
@@ -721,13 +728,14 @@ In Silverlight, we need to specify the list of supported cultures using the <Sup
 
 4. Now, right click the project name and select Reload.
 
-   {:.prettyprint}
+   
 Now, the supported cultures are included in the project file.
 
 ## Specifying the CurrentUICulture
 
 Now, you need to specify the CurrentUICulture of the application. We can specify the CurrentUICulture either from Application_Startup in App.XMAL.csor from the constructor on the MainPage (If you are specifying the current culture on the main page, then make sure, this is assigned before calling the InitializeComponent method). The following code snippets describe the two variations.
 
+{% tabs %}
 {% highlight C# %} 
  
 
@@ -777,9 +785,10 @@ InitializeComponent()
 End Sub
 
 {% endhighlight %}
+{% endtabs %}
 
-(Or)
 
+{% tabs %}
 
 {% highlight C# %} 
  
@@ -830,4 +839,4 @@ Me.RootVisual = New MainPage()
 End Sub
 
 {% endhighlight %}
-
+{% endtabs %}

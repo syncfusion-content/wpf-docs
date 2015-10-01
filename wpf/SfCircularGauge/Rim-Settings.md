@@ -15,39 +15,40 @@ Scale determines the structure of the Circular Gauge by using the circular rim. 
 
 The StartValue and EndValue properties determine the overall range of the circular rim. The rim’s stroke and stroke thickness can be set by using the RimStroke and RimStrokeThickness properties.
 
-### Code Example:
+### Code Example
 
+{% tabs %}
 {% highlight xml %}
 
 
 
-             <syncfusion:SfCircularGauge x:Name="gauge">
+<syncfusion:SfCircularGauge x:Name="gauge">
 
-                <syncfusion:SfCircularGauge.MainScale>
+<syncfusion:SfCircularGauge.MainScale>
 
-                    <syncfusion:CircularScale 
+<syncfusion:CircularScale 
 
-                                            StartAngle="180" 
+StartAngle="180" 
 
-                                            SweepAngle="180"
+SweepAngle="180"
 
-                                            SweepDirection="Clockwise"
+SweepDirection="Clockwise"
 
-                                            StartValue="0" 
+StartValue="0" 
 
-                                            EndValue="100"
+EndValue="100"
 
-                                            RimStroke="Black" 
+RimStroke="Black" 
 
-                                            RimStrokeThickness="3"
+RimStrokeThickness="3"
 
-                                            >
+>
 
-                    </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-                </syncfusion:SfCircularGauge.MainScale>
+</syncfusion:SfCircularGauge.MainScale>
 
-      </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -56,33 +57,34 @@ The StartValue and EndValue properties determine the overall range of the circul
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.StartAngle = 180;
+_mainscale.StartAngle = 180;
 
-            _mainscale.SweepAngle = 180;
+_mainscale.SweepAngle = 180;
 
-            _mainscale.SweepDirection = SweepDirection.Clockwise;
+_mainscale.SweepDirection = SweepDirection.Clockwise;
 
-            _mainscale.StartValue=0;
+_mainscale.StartValue=0;
 
-            _mainscale.EndValue = 100;
+_mainscale.EndValue = 100;
 
-            _mainscale.RimStroke = new SolidColorBrush(Colors.Black);
+_mainscale.RimStroke = new SolidColorBrush(Colors.Black);
 
-            _mainscale.RimStrokeThickness = 3;
+_mainscale.RimStrokeThickness = 3;
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
+
 {% endhighlight %}
+{% endtabs %}
 
 
 
-
-### Screenshot:
+### Screenshot
 
 
 

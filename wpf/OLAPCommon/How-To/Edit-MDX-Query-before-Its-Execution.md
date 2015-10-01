@@ -12,7 +12,7 @@ documentation: ug
 MDX Query can be edited before its execution to retrieve the CellSet through handling the BeforeMdxQueryExecute event of OlapDataManager. The following code example illustrates this.
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -48,4 +48,4 @@ Private Sub olapDataManager_BeforeMdxQueryExecute(ByVal sender As Object, ByVal 
 End Sub
 
 {% endhighlight  %}
-
+{% endtabs %}

@@ -14,12 +14,20 @@ The Refresh button enables the HierarchyNavigatorRefreshButtonClick event to ini
 ![](Refresh-Button_images/Refresh-Button_img1.png)
 
 
+{% tabs %}
+{% highlight xml %}
+<locals:HierarchyNavigator HierarchyNavigatorRefreshButtonClick="HierarchyNavigatorRefreshButtonClick" />
+{% endhighlight %}
 
-{% highlight xml %}<locals:HierarchyNavigator HierarchyNavigatorRefreshButtonClick="HierarchyNavigatorRefreshButtonClick" />{% endhighlight %}
+{% highlight C# %}
+HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
+<br>
+hierarchyNavigator.HierarchyNavigatorRefreshButtonClick += new EventHandler(HierarchyNavigatorRefreshButtonClick);
 
-{% highlight C# %}HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();<br>hierarchyNavigator.HierarchyNavigatorRefreshButtonClick += new EventHandler(HierarchyNavigatorRefreshButtonClick);{% endhighlight %}
+private void HierarchyNavigatorRefreshButtonClick(object sender, EventArgs e)
+<br>
+{<br>     //Occurs when Refresh Button Click<br>}
+{% endhighlight %}
 
-{% highlight C# %}private void HierarchyNavigatorRefreshButtonClick(object sender, EventArgs e)<br>{<br>     //Occurs when Refresh Button Click<br>}{% endhighlight %}
-
-
+{% endtabs %}
 

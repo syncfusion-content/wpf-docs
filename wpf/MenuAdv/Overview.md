@@ -7,7 +7,7 @@ control: MenuAdv
 documentation: ug
 ---
 
-# Overview
+# MenuAdv
 
 A MenuAdv control allows the hierarchal organization of elements that are associated with commands and event handlers. This control contains a collection of MenuItemAdv, which can be expanded to display additional MenuItemAdv’s or to perform a specific action when being clicked. 
 

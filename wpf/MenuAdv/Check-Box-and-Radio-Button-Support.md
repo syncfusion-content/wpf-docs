@@ -11,7 +11,7 @@ documentation: ug
 
 MenuAdv provides a support for selecting several items. MenuItemAdv can be checked by setting the IsCheckable property of the MenuItemAdv to “true”. You can change the icon type (Check Box or Radio Button) by using the CheckIcon property also it can be checked by using the IsChecked property.
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 MenuAdv helps users to use MenuItemAdv with the CheckBox or RadioButton support.
 
@@ -26,47 +26,47 @@ If you set the CheckIcon property to RadioButton, then MenuItemAdv’s will be g
 
 <shared:MenuAdv x:Name="Menu" Margin="10">
 
-                <shared:MenuItemAdv Header="File"/>
+<shared:MenuItemAdv Header="File"/>
 
-                <shared:MenuItemAdv Header="Edit"/>
+<shared:MenuItemAdv Header="Edit"/>
 
-                <shared:MenuItemAdv Header="View">
+<shared:MenuItemAdv Header="View">
 
-                    <shared:MenuItemAdv Header="Immediate" 
+<shared:MenuItemAdv Header="Immediate" 
 
 IsCheckable="True" CheckIconType="CheckBox" IsChecked="True"/>
 
-                    <shared:MenuItemAdv Header="CallStack" 
+<shared:MenuItemAdv Header="CallStack" 
 
 IsCheckable="True" CheckIconType="CheckBox" IsChecked="False"/>
 
-                    <shared:MenuItemSeparator/>
+<shared:MenuItemSeparator/>
 
-                    <shared:MenuItemAdv Header="SolutionExplorer" 
+<shared:MenuItemAdv Header="SolutionExplorer" 
 
 IsCheckable="True" CheckIconType="RadioButton" GroupName="group1" 
 
 IsChecked="False"/>
 
-                    <shared:MenuItemAdv Header="TeamExplorer" 
+<shared:MenuItemAdv Header="TeamExplorer" 
 
 IsCheckable="True" CheckIconType="RadioButton" GroupName="group1" 
 
 IsChecked="True"/>
 
-                    <shared:MenuItemAdv Header="ServerExplorer" 
+<shared:MenuItemAdv Header="ServerExplorer" 
 
 IsCheckable="True" CheckIconType="RadioButton" GroupName="group1" 
 
 IsChecked="False"/>
 
-                </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                <shared:MenuItemAdv Header="Project"/>
+<shared:MenuItemAdv Header="Project"/>
 
-                <shared:MenuItemAdv Header="Build"/>
+<shared:MenuItemAdv Header="Build"/>
 
-            </shared:MenuAdv>
+</shared:MenuAdv>
 
 {% endhighlight %}
 
@@ -74,11 +74,11 @@ IsChecked="False"/>
 
 
 
-## Properties
+### Properties
 
 The properties for the Check box and Radio button support are described in the following tabulation:   
 
-_Properties Table_
+
 
 <table>
 <tr>
@@ -108,7 +108,7 @@ bool(false)</td></tr>
 </table>
 
 
-## Sample Link
+### Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

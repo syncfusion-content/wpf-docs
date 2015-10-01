@@ -19,7 +19,7 @@ You can add the text to chart background using this feature. This can be done by
 
 The following APIs are used to add Watermark to chart.
 
-Add Text Watermark
+
 
 <table>
 <tr>
@@ -50,21 +50,21 @@ The following code example explains how to set your custom text as Watermark.
 
 
 
-            <syncfusion:Watermark Canvas.ZIndex="-1"  HorizontalAlignment="Center" VerticalAlignment="Center">
+<syncfusion:Watermark Canvas.ZIndex="-1"  HorizontalAlignment="Center" VerticalAlignment="Center">
 
 
 
-                <syncfusion:Watermark.Content>
+<syncfusion:Watermark.Content>
 
-                    <TextBlock Text="Demand Report" FontSize="60" Foreground="Gray" Opacity="0.5"></TextBlock>
+<TextBlock Text="Demand Report" FontSize="60" Foreground="Gray" Opacity="0.5"></TextBlock>
 
-                </syncfusion:Watermark.Content>
+</syncfusion:Watermark.Content>
 
 
 
-            </syncfusion:Watermark>
+</syncfusion:Watermark>
 
-        </syncfusion:SfChart.Watermark>
+</syncfusion:SfChart.Watermark>
 
 {% endhighlight %}
 
@@ -82,19 +82,19 @@ You can set images as Watermark for SfChart, using the Content property, since i
 
 
 
-        <syncfusion:SfChart.Watermark>
+<syncfusion:SfChart.Watermark>
 
-            <syncfusion:Watermark   HorizontalAlignment="Right" VerticalAlignment="Top">
+<syncfusion:Watermark   HorizontalAlignment="Right" VerticalAlignment="Top">
 
-                <syncfusion:Watermark.Content>
+<syncfusion:Watermark.Content>
 
-                    <Image Source="ms-appx:///Assets/syncfusion.png" Height="50" Width="50"/>
+<Image Source="ms-appx:///Assets/syncfusion.png" Height="50" Width="50"/>
 
-                </syncfusion:Watermark.Content>
+</syncfusion:Watermark.Content>
 
-            </syncfusion:Watermark>
+</syncfusion:Watermark>
 
-        </syncfusion:SfChart.Watermark>
+</syncfusion:SfChart.Watermark>
 
 The following screenshot illustrates the image Watermark, center aligned.
 {% endhighlight %}

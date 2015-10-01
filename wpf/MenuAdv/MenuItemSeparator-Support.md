@@ -11,7 +11,7 @@ documentation: ug
 
 MenuItemSeparator is a line, which is used to separate MenuItemAdv’s. MenuItemSeparator can be included in the items list of MenuItemAdv.  
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 MenuAdv helps users to separate MenuItemAdv’s by using MenuItemSeparator. In the case of separating the radio button group of items from other items, separator can be used.
 
@@ -26,47 +26,47 @@ MenuItemSeparator can be added to an application, as shown in the following code
 
 <shared:MenuAdv x:Name="Menu" Margin="10">
 
-                <shared:MenuItemAdv Header="File"/>
+<shared:MenuItemAdv Header="File"/>
 
-                <shared:MenuItemAdv Header="Edit"/>
+<shared:MenuItemAdv Header="Edit"/>
 
-                <shared:MenuItemAdv Header="View">
+<shared:MenuItemAdv Header="View">
 
-                    <shared:MenuItemAdv Header="Immediate" 
+<shared:MenuItemAdv Header="Immediate" 
 
 IsCheckable="True" CheckIconType="CheckBox" IsChecked="True"/>
 
-                    <shared:MenuItemAdv Header="CallStack" 
+<shared:MenuItemAdv Header="CallStack" 
 
 IsCheckable="True" CheckIconType="CheckBox" IsChecked="False"/>
 
-                    <shared:MenuItemSeparator/>
+<shared:MenuItemSeparator/>
 
-                    <shared:MenuItemAdv Header="SolutionExplorer" 
+<shared:MenuItemAdv Header="SolutionExplorer" 
 
 IsCheckable="True" CheckIconType="RadioButton" GroupName="group1" 
 
 IsChecked="False"/>
 
-                    <shared:MenuItemAdv Header="TeamExplorer" 
+<shared:MenuItemAdv Header="TeamExplorer" 
 
 IsCheckable="True" CheckIconType="RadioButton" GroupName="group1" 
 
 IsChecked="True"/>
 
-                    <shared:MenuItemAdv Header="ServerExplorer" 
+<shared:MenuItemAdv Header="ServerExplorer" 
 
 IsCheckable="True" CheckIconType="RadioButton" GroupName="group1" 
 
 IsChecked="False"/>
 
-                </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                <shared:MenuItemAdv Header="Project"/>
+<shared:MenuItemAdv Header="Project"/>
 
-                <shared:MenuItemAdv Header="Build"/>
+<shared:MenuItemAdv Header="Build"/>
 
-            </shared:MenuAdv>
+</shared:MenuAdv>
 
 {% endhighlight %}
 
@@ -74,7 +74,7 @@ IsChecked="False"/>
 
 
 
-## Sample Link
+### Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

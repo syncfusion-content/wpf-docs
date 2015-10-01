@@ -29,7 +29,8 @@ By clicking the Export menus in the Chart toolbar, the user can export the chart
 
 
 
-_Export Menus in OlapChart Toolbar:_
+Export Menus in OlapChart Toolbar:
+{:.caption}
 
 <table>
 <tr>
@@ -90,7 +91,8 @@ grid to the corresponding format.
 
 
 
-_Export menus in OlapGrid Toolbar_
+Export menus in OlapGrid Toolbar
+{:.caption}
 
 <table>
 <tr>
@@ -134,7 +136,7 @@ You can export the contents of the OLAP Grid in OLAP Client to the CSV file form
 
 ### Methods
 
-_Methods_
+
 
 <table>
 <tr>
@@ -169,7 +171,7 @@ along with the default dll’s in the reference folder:
 * Syncfusion.OlapGridConverter.Wpf
 
 
-
+{% tabs %}
 {% highlight C# %}    
 
 SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -232,7 +234,7 @@ End If
 
 {% endhighlight %}
 
-
+{% endtabs %}
 
 
 

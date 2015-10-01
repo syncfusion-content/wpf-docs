@@ -13,7 +13,7 @@ documentation: ug
 
 The following table illustrates the Control’s assembly and its dependencies.
 
-_List of Control’s assembly and its dependencies_
+### List of Control’s assembly and its dependencies
 
 <table>
 <tr>
@@ -434,13 +434,15 @@ While processing [ClickOnce](https://msdn.microsoft.com/en-us/library/ms996413.a
 
 ![](Deployment_images/Deployment_img1.png)
 
-_Selecting Application Files for changing the status_
+Selecting Application Files for changing the status
+{:.caption}
 
 
 
 ![](Deployment_images/Deployment_img2.png)
 
-_Publish Status option changed as Include_
+Publish Status option changed as Include
+{:.caption}
 
 
 ### ClickOnce signing process
@@ -460,18 +462,20 @@ Navigate to project properties and select Signing tab. In the tab check “Sign 
 
 ![](Deployment_images/Deployment_img3.png)
 
- _ClickOnce signing_
+ ClickOnce signing
+ {:.caption}
 
 In the Publish tab, click “Options” and in the publish options dialog check “Use application manifest for trust information” under Manifest as in the following screenshot.
 
 ![](Deployment_images/Deployment_img4.png)
 
-_Publish options dialog box_
+Publish options dialog box
+{:caption}
 
 N> Before publishing, install the attached certificate in your machine and also follow step 2. Follow the following steps for installing certificate in your machine.
-
-1. _Press Windows + R and type “certmgr.msc” and press enter that opens certificate manager._
-2. _Right click the “Trusted Root certification Authorities” and navigate to All Tasks -> Import. Now import the_ .pfx _to “Trusted Root certification Authorities”. It displays a warning for first time. Press Yes to continue the importing._
+N>
+N>1. _Press Windows + R and type “certmgr.msc” and press enter that opens certificate manager._
+N>2. _Right click the “Trusted Root certification Authorities” and navigate to All Tasks -> Import. Now import the_ .pfx _to “Trusted Root certification Authorities”. It displays a warning for first time. Press Yes to continue the importing._
 
 ### Signing exe
 

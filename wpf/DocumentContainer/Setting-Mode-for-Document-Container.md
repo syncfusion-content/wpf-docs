@@ -18,11 +18,19 @@ To set the Document Container in TDI mode, use the following code snippet.
 
 
 
+{% tabs %}
+{% highlight xml %}
+<!-- Adding Document Container -->
+<syncfusion:DocumentContainer Name="DocContainer" Mode="TDI">…....…....
+</syncfusion:DocumentContainer>
+{% endhighlight %}
 
-{% highlight xml %}<!-- Adding Document Container --><syncfusion:DocumentContainer Name="DocContainer" Mode="TDI">…....…....</syncfusion:DocumentContainer>{% endhighlight %}
-
-{% highlight C# %}//Creating instance of Document ContainerDocumentContainer DocContainer = new DocumentContainer();//Set mode as TDIDocContainer.Mode = DocumentContainerMode.TDI;….......….......//Adding control to windowthis.Content = DocContainer;{% endhighlight %}
-
+{% highlight C# %}
+//Creating instance of Document ContainerDocumentContainer DocContainer = new DocumentContainer();
+//Set mode as TDIDocContainer.Mode = DocumentContainerMode.TDI;….......….......
+//Adding control to windowthis.Content = DocContainer;
+{% endhighlight %}
+{% endtabs %}
 
 
 The following is the screen shot of a document container, which is in TDI mode.
@@ -38,9 +46,20 @@ The following is the screen shot of a document container, which is in TDI mode.
 To set the Document Container in MDI mode, use the following code snippet.
 
 
-{% highlight xml %}<!-- Adding Document Container --><syncfusion:DocumentContainer Name="DocContainer" Mode="MDI">  …....  …....</syncfusion:DocumentContainer>{% endhighlight %}
+{% highlight xml %}
+<!-- Adding Document Container -->
+<syncfusion:DocumentContainer Name="DocContainer" Mode="MDI">  …....  …....
+</syncfusion:DocumentContainer>
+{% endhighlight %}
 
-{% highlight C# %} //Creating instance of Document ContainerDocumentContainer DocContainer = new DocumentContainer();//Set mode as MDIDocContainer.Mode = DocumentContainerMode.MDI;….......….......//Adding control to windowthis.Content = DocContainer;{% endhighlight %}
+{% highlight C# %} 
+//Creating instance of Document Container
+DocumentContainer DocContainer = new DocumentContainer();
+//Set mode as MDIDocContainer.
+Mode = DocumentContainerMode.MDI;….......….......
+//Adding control to windowthis.
+Content = DocContainer;
+{% endhighlight %}
 
 
 

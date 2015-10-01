@@ -17,159 +17,158 @@ The steps to listen to the command binding are as follows:
 
 
 
+   ~~~csharp
 
+		public class DelegateCommand : ICommand
 
-			public class DelegateCommand : ICommand
+		{
 
-			{
+		private Predicate<object> _canExecute;
 
-				private Predicate<object> _canExecute;
+		private Action<object> _method;
 
-				private Action<object> _method;
-
-				public event EventHandler CanExecuteChanged;
-
-
-
-				public DelegateCommand(Action<object> method)
-
-					: this(method, null)
-
-				{
-
-					_method = method;
-
-				}
+		public event EventHandler CanExecuteChanged;
 
 
 
-				public DelegateCommand(Action<object> method, Predicate<object> canExecute)
+		public DelegateCommand(Action<object> method)
 
-				{
+		: this(method, null)
 
-					_method = method;
+		{
 
-					_canExecute = canExecute;
+		_method = method;
 
-				}
-
-
-
-				public bool CanExecute(object parameter)
-
-				{
-
-					if (_canExecute == null)
-
-					{
-
-						return true;
-
-					}
+		}
 
 
 
-					return _canExecute(parameter);
+		public DelegateCommand(Action<object> method, Predicate<object> canExecute)
 
-				}
+		{
 
+		_method = method;
 
+		_canExecute = canExecute;
 
-				public void Execute(object parameter)
-
-				{
-
-					_method.Invoke(parameter);
-
-				}
-
-			}
+		}
 
 
+
+		public bool CanExecute(object parameter)
+
+		{
+
+		if (_canExecute == null)
+
+		{
+
+		return true;
+
+		}
+
+
+
+		return _canExecute(parameter);
+
+		}
+
+
+
+		public void Execute(object parameter)
+
+		{
+
+		_method.Invoke(parameter);
+
+		}
+		}
+
+   ~~~
 
 2. Create the ViewModel sample class, to bind the command in the sample WPF application.
 
 
 
+   ~~~csharp
 
+		public class ViewModel : INotifyPropertyChanged
 
-			public class ViewModel : INotifyPropertyChanged
+		{
 
-				{
-
-					public event PropertyChangedEventHandler PropertyChanged;
-
-
-
-					private DelegateCommand _myCommand1;
+		public event PropertyChangedEventHandler PropertyChanged;
 
 
 
-					private string _lastCommand = "Syncfusion";
+		private DelegateCommand _myCommand1;
 
 
 
-					public string LastCommand
-
-					{
-
-						get
-
-						{
-
-							return _lastCommand;
-
-						}
-
-						private set
-
-						{
-
-							_lastCommand = value;
-
-							PropertyChanged(this, new PropertyChangedEventArgs("LastCommand"));
-
-						}
-
-					}
+		private string _lastCommand = "Syncfusion";
 
 
 
-					public DelegateCommand SelectedItemCommand
+		public string LastCommand
 
-					{
+		{
 
-						get
+		get
 
-						{
+		{
 
-							if (_myCommand1 == null)
+		return _lastCommand;
 
-								_myCommand1 = new DelegateCommand(MyCommand1Method);
+		}
 
+		private set
 
+		{
 
-							return _myCommand1;
+		_lastCommand = value;
 
-						}
+		PropertyChanged(this, new PropertyChangedEventArgs("LastCommand"));
 
-					}
+		}
 
-
-
-					private void MyCommand1Method(object parameter)
-
-					{
-
-						if(parameter as Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem != null)
-
-							LastCommand = (parameter as Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem).Content.ToString();
-
-					}
-
-				}
+		}
 
 
+
+		public DelegateCommand SelectedItemCommand
+
+		{
+
+		get
+
+		{
+
+		if (_myCommand1 == null)
+
+		_myCommand1 = new DelegateCommand(MyCommand1Method);
+
+
+
+		return _myCommand1;
+
+		}
+
+		}
+
+
+
+		private void MyCommand1Method(object parameter)
+
+		{
+
+		if(parameter as Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem != null)
+
+		LastCommand = (parameter as Syncfusion.Windows.Tools.Controls.HierarchyNavigatorItem).Content.ToString();
+
+		}
+
+		}
+
+   ~~~
 
 1. Bind the command in the HierarchyNavigator control.
 2. To do this, create a new instance of the ViewModel sample class and set DataContext for the parent StackPanel. This will reflect changes in the children. Whenever the selected item changes, the TextBox Text value will change.
@@ -177,32 +176,31 @@ The steps to listen to the command binding are as follows:
 
 
 
+   ~~~xaml
 
 
+		<StackPanel Name="CommandBindingStackPanel">
 
-			<StackPanel Name="CommandBindingStackPanel">
+		<StackPanel.DataContext>
 
-				<StackPanel.DataContext>
+		<local:ViewModel />
 
-					<local:ViewModel />
+		</StackPanel.DataContext>
 
-				</StackPanel.DataContext>
+		<syncfusion:HierarchyNavigator Name="hierarchyNavigator1" 
 
-				<syncfusion:HierarchyNavigator Name="hierarchyNavigator1" 
+		VerticalAlignment="Center" 
 
-								 VerticalAlignment="Center" 
+		Command="{Binding SelectedItemCommand}"
 
-								 Command="{Binding SelectedItemCommand}"
+		Items="{StaticResource NavigationSampleData}" />
 
-								 Items="{StaticResource NavigationSampleData}" />
+		<TextBlock Text="Selected Item" VerticalAlignment="Center" FontWeight="Bold" />
 
-				<TextBlock Text="Selected Item" VerticalAlignment="Center" FontWeight="Bold" />
+		<TextBox Text="{Binding LastCommand}" Height="50" IsReadOnly="True" Margin="2" />
 
-				<TextBox Text="{Binding LastCommand}" Height="50" IsReadOnly="True" Margin="2" />
+		</StackPanel>
 
-			</StackPanel>
-
-
-   {:.prettyprint}
+   ~~~
 
 

@@ -11,16 +11,16 @@ documentation: ug
 
 The GridTreeControl.InternalGrid.Nodes collection holds the GridTreeNodes that represents the visible nodes in the GridTree control. The GridTreeNode object has the following properties:
 
-_GridTreeNode Property_
+
 
 <table>
 <tr>
 <th>
-{{ '**GridTreeNode Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type of Property**' | markdownify }}</th><th>
-{{ '**Value It Accepts**' | markdownify }}</th><th>
-{{ '**Property Syntax**' | markdownify }}</th></tr>
+GridTreeNode Property</th><th>
+Description</th><th>
+Type of Property</th><th>
+Value It Accepts</th><th>
+Property Syntax</th></tr>
 <tr>
 <td>
 ChildNodes</td><td>

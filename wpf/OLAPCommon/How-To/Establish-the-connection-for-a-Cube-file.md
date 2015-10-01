@@ -13,6 +13,7 @@ A valid string is required to establish connection for an OlapDataManager.
 
 Here is the code snippet that demonstrates how to connect cube file by using connection string:
 
+{% tabs %}
 {% highlight c# %}
 
 OlapDataManager dataManager = new OlapDataManager("DataSource= AdventureWorks_Ext.cub; Provider=MSOLAP");
@@ -25,10 +26,11 @@ Dim dataManager As New OlapDataManager("DataSource= AdventureWorks_Ext.cub; Pro
 
 
 {% endhighlight  %}
-Or
+{% endtabs %}
 
 
 
+{% tabs %}
 {% highlight c# %}
 
 Syncfusion.Olap.DataProvider.IDataProvider dataProvider = new Syncfusion.Olap.DataProvider.AdomdDataProvider("DataSource= AdventureWorks_Ext.cub; Provider=MSOLAP");
@@ -46,4 +48,4 @@ Dim dataManager As New OlapDataManager(dataProvider)
 
 {% endhighlight  %}
 
-
+{% endtabs %}

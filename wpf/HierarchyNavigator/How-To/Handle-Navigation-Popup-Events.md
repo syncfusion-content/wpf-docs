@@ -24,18 +24,28 @@ hierarchyNavigator.ShowNavigationPopupItems(hierarchyitem);
 
 NavigationPopupOpening occurs when the navigation pop-up window is in the process of opening.
 
+{% tabs %}
 {% highlight xml %}
 <syncfusion:HierarchyNavigator NavigationPopupOpening="NavigationPopupOpening"/>
 {% endhighlight %}
 {% highlight c# %}
-HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();<br>hierarchyNavigator.NavigationPopupOpening +=new EventHandler(NavigationPopupOpening);
+HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
+<br>hierarchyNavigator.NavigationPopupOpening +=new EventHandler(NavigationPopupOpening);
 
-private void NavigationPopupOpening(object sender, EventArgs e)<br>{<br>    //Occurs when Navigation Popup attempt to open<br>}
+private void NavigationPopupOpening(object sender, EventArgs e)<br>
+{
+<br>
+    //Occurs when Navigation Popup attempt to open
+<br>
+}
 {% endhighlight %}
+{% endtabs %}
 
 ### NavigationPopupOpened
 
 NavigationPopupOpened occurs when the navigation pop-up window is open.
+
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:HierarchyNavigator NavigationPopupOpened="NavigationPopupOpened"/>
@@ -43,33 +53,51 @@ NavigationPopupOpened occurs when the navigation pop-up window is open.
 HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();<br>hierarchyNavigator.NavigationPopupOpened += new EventHandler(NavigationPopupOpened);
 {% endhighlight %}
 {% highlight c# %}
-private void NavigationPopupOpened(object sender, EventArgs e)<br>{<br>    //Occurs when Navigation Popup is opened}
+private void NavigationPopupOpened(object sender, EventArgs e)<br>
+{
+<br>
+    //Occurs when Navigation Popup is opened
+}
 {% endhighlight  %}
+{% endtabs %}
 
 ### NavigationPopupClosing
 
 NavigationPopupClosing occurs when the navigation pop-up window is closing.
 
+{% tabs %}
 {% highlight xml %}
 <syncfusion:HierarchyNavigator NavigationPopupClosing="NavigationPopupClosing"/>
 {% endhighlight %}
 {% highlight c# %}
-HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();<br>hierarchyNavigator.NavigationPopupClosing +=new EventHandler(NavigationPopupClosing);
+HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
+<br>hierarchyNavigator.NavigationPopupClosing +=new EventHandler(NavigationPopupClosing);
 
-private void NavigationPopupClosing(object sender, EventArgs e)<br>{<br>    //Occurs when Navigation Popup is Closing}
+private void NavigationPopupClosing(object sender, EventArgs e)<br>
+{<br>    
+//Occurs when Navigation Popup is Closing
+}
 {% endhighlight %}
+{% endtabs %}
 
 ### NavigationPopupClosed 
 
 NavigationPopupClosed occurs when the navigation pop-up window is closed.
 
+{% tabs %}
 {% highlight xml %}
 <syncfusion:HierarchyNavigator NavigationPopupClosing="NavigationPopupClosing"/>
 {% endhighlight  %}
 {% highlight c# %}
-HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();<br>hierarchyNavigator.NavigationPopupClosing +=new EventHandler(NavigationPopupClosing);
+HierarchyNavigator hierarchyNavigator = new HierarchyNavigator();
+<br>
+hierarchyNavigator.NavigationPopupClosing +=new EventHandler(NavigationPopupClosing);
 
-C#private void NavigationPopupClosing(object sender, EventArgs e)<br>{<br>    //Occurs when Navigation Popup is Closing}
+private void NavigationPopupClosing(object sender, EventArgs e)<br>
+{<br>  
+  //Occurs when Navigation Popup is Closing
+}
 
 {% endhighlight %}
+{% endtabs %}
 

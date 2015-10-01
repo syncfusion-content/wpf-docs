@@ -11,6 +11,7 @@ documentation: ug
 
 The following code snippet explains setting an OlapReport to CurrentReport of an OlapDataManager using SetCurrentReport method:
 
+{% tabs %}
 {% highlight c# %}
 
 OlapDataManager.SetCurrentReport(olapReport);
@@ -24,3 +25,4 @@ OlapDataManager.SetCurrentReport(olapReport)
 
 
 {% endhighlight  %}
+{% endtabs %}

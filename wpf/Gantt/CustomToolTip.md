@@ -13,7 +13,6 @@ Essential Gantt provides tooltip support for the TaskBar. Tooltip is a small pop
 
 ## Properties
 
-_Property_
 
 <table>
 <tr>
@@ -52,22 +51,22 @@ The following code illustrates how to add a custom tooltip to the Gantt control.
                     <RowDefinition Height="40" />
                     <RowDefinition Height="40" />
                 </Grid.RowDefinitions>
-                <Border Grid.Column="0" Grid.Row="0" Margin="-2"                        CornerRadius="5" Grid.ColumnSpan="2" Background="#FF1F4877"                        BorderThickness="2">
-                    <TextBlock  Margin="5,0,0,0" Text="{Binding TaskName}"                                HorizontalAlignment="Center"                                VerticalAlignment="Center" FontWeight="Bold"                                FontFamily="Verdana" Foreground="WhiteSmoke" />
+                <Border Grid.Column="0" Grid.Row="0" Margin="-2"                        CornerRadius="5" Grid.ColumnSpan="2" Background="#FF1F4877"                        BorderThickness="2">
+                    <TextBlock  Margin="5,0,0,0" Text="{Binding TaskName}"                               HorizontalAlignment="Center"                                VerticalAlignment="Center" FontWeight="Bold"                                FontFamily="Verdana" Foreground="WhiteSmoke" />
 
                 </Border>
-                <TextBlock Margin="1" Text="TaskID:" Grid.Column="0"                           Grid.Row="1" VerticalAlignment="Center"                           FontFamily="Verdana" />
-                <TextBlock Margin="1" Text="{Binding TaskId}" Grid.Column="1"                           VerticalAlignment="Center" Grid.Row="1"                           FontFamily="Verdana" />
+                <TextBlock Margin="1" Text="TaskID:" Grid.Column="0"                           Grid.Row="1" VerticalAlignment="Center"                           FontFamily="Verdana" />
+                <TextBlock Margin="1" Text="{Binding TaskId}" Grid.Column="1"                          VerticalAlignment="Center" Grid.Row="1"                           FontFamily="Verdana" />
 
-                <TextBlock Margin="1" Text="Start Date:" Grid.Column="0"                           Grid.Row="2" VerticalAlignment="Center"                           FontFamily="Verdana" />
+                <TextBlock Margin="1" Text="Start Date:" Grid.Column="0"                           Grid.Row="2" VerticalAlignment="Center"                           FontFamily="Verdana" />
                 <TextBlock Margin="1" Text="{Binding StartDate}" Grid.Row="2"
 
                            Grid.Column="1" VerticalAlignment="Center"
                            FontFamily="Verdana" />
-                <TextBlock Margin="1" Text="Finish Date:"  Grid.Column="0"                           Grid.Row="3" VerticalAlignment="Center"                           FontFamily="Verdana" />
-                <TextBlock Margin="1" Text="{Binding FinishDate}" Grid.Column="1"                           Grid.Row="3" VerticalAlignment="Center"                           FontFamily="Verdana" />
-                <TextBlock Margin="1" Text="Progress:" Grid.Column="0"                           Grid.Row="4" VerticalAlignment="Center"                           FontFamily="Verdana" />
-                <ProgressBar Margin="1" Height="25" Value="{Binding Progress}"                             Grid.Column="1" VerticalAlignment="Center"                             Grid.Row="4" />
+                <TextBlock Margin="1" Text="Finish Date:"  Grid.Column="0"                           Grid.Row="3" VerticalAlignment="Center"                           FontFamily="Verdana" />
+                <TextBlock Margin="1" Text="{Binding FinishDate}" Grid.Column="1"                           Grid.Row="3" VerticalAlignment="Center"                          FontFamily="Verdana" />
+                <TextBlock Margin="1" Text="Progress:" Grid.Column="0"                           Grid.Row="4" VerticalAlignment="Center"                           FontFamily="Verdana" />
+                <ProgressBar Margin="1" Height="25" Value="{Binding Progress}"                            Grid.Column="1" VerticalAlignment="Center"                             Grid.Row="4" />
             </Grid> 
         </DataTemplate>
 
@@ -85,7 +84,8 @@ The following image shows Custom ToolTip:
 
 
 
-_Custom ToolTip Demo_
+Custom ToolTip Demo
+{:.caption}
 
 ## Samples Link
 

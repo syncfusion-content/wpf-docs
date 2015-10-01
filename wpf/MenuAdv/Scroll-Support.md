@@ -15,7 +15,7 @@ MenuAdv allows users to scroll through the submenu items so that all the items o
 
 
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 MenuAdv will be very useful in the case of adding more number of items to the single MenuItemAdv and the size of the submenu crosses the vertical boundary.
 
@@ -23,11 +23,11 @@ MenuAdv will be very useful in the case of adding more number of items to the si
 
 If the value of the IsScrollEnabled property is set to true, users can scroll through the submenu items by using the TopScrollButton, BottomScrollButton, and  mouse wheel. If the value of the IsScrollEnabled property is set to false, users will not be able to scroll through the submenu items.
 
-## Properties
+### Properties
 
 The property for the Scroll support is described in the following tabulation:
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -45,7 +45,7 @@ bool(true)</td></tr>
 </table>
 
 
-## Sample Link
+### Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

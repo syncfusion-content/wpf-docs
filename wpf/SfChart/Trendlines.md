@@ -19,9 +19,9 @@ The following code examples illustrate how to add Trendlines to the chart.
 
 <syncfusion:LineSeries.Trendlines >
 
-            <syncfusion:Trendline  IsTrendlineVisible="True"/>
+<syncfusion:Trendline  IsTrendlineVisible="True"/>
 
-        </syncfusion:LineSeries.Trendlines>
+</syncfusion:LineSeries.Trendlines>
 
 {% endhighlight %}
 
@@ -80,9 +80,9 @@ Polynomial Trendline is a curved line that is used when data fluctuates.
 
 <syncfusion:LineSeries.Trendlines >
 
-            <syncfusion:Trendline IsTrendlineVisible="True" Type="Linear"/>
+<syncfusion:Trendline IsTrendlineVisible="True" Type="Linear"/>
 
-        </syncfusion:LineSeries.Trendlines>
+</syncfusion:LineSeries.Trendlines>
 
 
 {% endhighlight %}
@@ -109,7 +109,7 @@ The following code example illustrates how to enable Forecasting in Trendlines.
 
 <syncfusion:LineSeries.Trendlines >
 
-    <syncfusion:Trendline ForwardForecast="5" />
+<syncfusion:Trendline ForwardForecast="5" />
 
 </syncfusion:LineSeries.Trendlines>
 
@@ -127,7 +127,7 @@ The following code example illustrates how to enable Forecasting in Trendlines.
 
 <syncfusion:LineSeries.Trendlines >
 
-    <syncfusion:Trendline BackwardForecast="10" />
+<syncfusion:Trendline BackwardForecast="10" />
 
 </syncfusion:LineSeries.Trendlines>
 

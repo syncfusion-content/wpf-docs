@@ -37,6 +37,7 @@ DocContainer.LoadDockState(formatter1);
 
 
 {% endhighlight %}
+
 ##Load and Save in Isolated Storage
 
 In the Document Container you can Load/Save/Reset the dock state in the Isolated Storage. To Load, Save and Reset, use the following code snippet.

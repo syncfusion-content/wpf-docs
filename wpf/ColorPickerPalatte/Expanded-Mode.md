@@ -11,7 +11,7 @@ documentation: ug
 
 Expanded Mode allows you to pick colors from the ColorPickerPalette. By setting IsExpanded Property to True, the ColorPickerPalette control can be hosted in Expanded Mode. By default, this mode is set to False.
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 Expanded Mode can be used when you want to have the ColorPickerPalette without drop down.
 
@@ -44,9 +44,8 @@ The following code example illustrates how to add the Expanded Mode to an applic
 
 
 
-## Properties
+### Properties
 
-  _IsExpanded Property Table_
 
 <table>
 <tr>
@@ -66,7 +65,7 @@ False</td><td>
 </table>
 
 
-## Sample Link
+### Sample Link
 
 To view samples: 
 

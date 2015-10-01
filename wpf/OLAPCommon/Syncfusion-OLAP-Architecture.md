@@ -31,7 +31,8 @@ The following screenshot shows how the Syncfusion OLAP components allow you to b
 
 
 
-_Figure1: Syncfusion OLAP Architecture_
+Syncfusion OLAP Architecture
+{:.caption}
 
 ## OLAP Base
 
@@ -47,18 +48,19 @@ Syncfusion OLAP controls communicate to the OLAP cube through the OlapDataManage
 
 
 
-_Figure2: OLAP Base Architecture_
+OLAP Base Architecture
+{:.caption}
 
 
 
-> Note: This class library was organized under Syncfusion.Olap.Base assembly.
+N> This class library was organized under Syncfusion.Olap.Base assembly.
 
 
 ## OLAP Silverlight Base
 
 OLAP Silverlight Base is a class library, which contains several namespaces and classes to perform data processing operation required by OLAP Silverlight controls. The OlapDataManager retrieves OLAP data and binds the result to an OLAP Control.
 
-> Note: This class library was organized under Syncfusion.OlapSilverlight.Base assembly.
+N> This class library was organized under Syncfusion.OlapSilverlight.Base assembly.
 
 
 ## OLAP Silverlight Base Wrapper
@@ -78,11 +80,12 @@ The OLAP Silverlight Base Wrapper is a class library, which contains several nam
 
 
 
-_Figure3: Dataflow in Silverlight_
+Dataflow in Silverlight
+{:.caption}
 
 
 
-> Note: This class library was organized under Syncfusion.OlapSilverlight.BaseWrapper assembly.
+N> This class library was organized under Syncfusion.OlapSilverlight.BaseWrapper assembly.
 
 ### WCF Service
 

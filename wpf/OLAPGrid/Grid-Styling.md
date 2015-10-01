@@ -38,6 +38,7 @@ The following were the properties of Value cells that can be formatted:
 
 The following code snippet will launch the Grid style dialog:
 
+{% tabs %}
   {% highlight c# %}
 
    
@@ -47,6 +48,7 @@ The following code snippet will launch the Grid style dialog:
 // To Display Style Dialog
 
 this.OlapGrid1.ShowStyleDialog();
+
 
     {% endhighlight %}
 
@@ -67,23 +69,23 @@ Me.OlapGrid1.ShowStyleDialog()
     {% endhighlight %}
 
 
-
+{% endtabs %}
 
 
 ## Configuring the properties of Cell Style
 
 The following properties of Grid cell can be customized, so that the grid appears in a custom style rather than the default one:
 
-_Property Table_
+
 
 <table>
 <tr>
 <th>
-{{ '**Property Name**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Value it Accepts**' | markdownify }}</th><th>
-{{ '**Reference Links**' | markdownify }}</th></tr>
+Property Name</th><th>
+Description</th><th>
+Type</th><th>
+Value it Accepts</th><th>
+Reference Links</th></tr>
 <tr>
 <td>
 Background</td><td>
@@ -130,23 +132,24 @@ The Column, Row, Summary and Value cells of Grid can be formatted independently 
 * SummaryRowStyle
 * ValueCellsStyle
 
+{% tabs %}
   {% highlight c# %}
 
     
 
 
 
-    		// Specifying the Background color for Grid column header
+// Specifying the Background color for Grid column header
 
-            this.OlapGrid1.ColumnHeaderStyle.Background = new SolidColorBrush(Color.FromRgb(175, 209, 255));
+this.OlapGrid1.ColumnHeaderStyle.Background = new SolidColorBrush(Color.FromRgb(175, 209, 255));
 
-            // Specifying the Background color for Grid row header
+// Specifying the Background color for Grid row header
 
-            this.OlapGrid1.RowHeaderCellStyle.Background = new SolidColorBrush(Color.FromRgb(175, 209, 255));
+this.OlapGrid1.RowHeaderCellStyle.Background = new SolidColorBrush(Color.FromRgb(175, 209, 255));
 
-            // Specifying the Background color for Grid summary cell
+// Specifying the Background color for Grid summary cell
 
-            this.OlapGrid1.SummaryColumnStyle.Background = new SolidColorBrush(Color.FromRgb(206, 225, 248)); 
+this.OlapGrid1.SummaryColumnStyle.Background = new SolidColorBrush(Color.FromRgb(206, 225, 248)); 
 
     {% endhighlight %}
 
@@ -175,7 +178,7 @@ Me.OlapGrid1.SummaryColumnStyle.Background = New SolidColorBrush(Color.FromRgb(2
     {% endhighlight %}
 
 
-
+{% endtabs %}
 
 
 The Value cell text alignment can be changed using the following property of OlapGrid,

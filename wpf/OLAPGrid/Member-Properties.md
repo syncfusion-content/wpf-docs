@@ -18,6 +18,7 @@ Click here for Sample Report with Member Properties
 
 To display member properties via header tooltip, the following property of OlapGrid should be set to true.
 
+{% tabs %}
   {% highlight c# %}
 
     
@@ -46,7 +47,7 @@ Me.OlapGrid1.ShowMemberPropertiesToolTip = True
     {% endhighlight %}
 
 
-
+{% endtabs %}
 
 
 
@@ -55,7 +56,7 @@ Me.OlapGrid1.ShowMemberPropertiesToolTip = True
 ![](Member-Properties_images/Member-Properties_img2.png)
 
 
-## Sample Location
+### Sample Location
 
 A sample demo is available at the following location:
 

@@ -11,7 +11,7 @@ documentation: ug
 
 Legend contains a list of ChartSeries, TechnicalIndicators, and Trendlines that appear in a chart. The following properties are used to customize the appearance of the ChartLegend.
 
-Legend List
+### Legend List
 
 <table>
 <tr>
@@ -76,45 +76,45 @@ The following code example shows how to create a simple legend. For sample data,
 
 {% highlight xml %}
 
- <syncfusion:SfChart x:Name="ColumnChart">
+	 <syncfusion:SfChart x:Name="ColumnChart">
 
-            <!-- Assign DataContext object for the Chart-->
+	<!-- Assign DataContext object for the Chart-->
 
-            <syncfusion:SfChart.DataContext>
+	<syncfusion:SfChart.DataContext>
 
-                <local:CategoryDataViewModel/>
+	<local:CategoryDataViewModel/>
 
-            </syncfusion:SfChart.DataContext>
+	</syncfusion:SfChart.DataContext>
 
-            <!-- Add Legend to the Chart-->
+	<!-- Add Legend to the Chart-->
 
-            <syncfusion:SfChart.Legend>
+	<syncfusion:SfChart.Legend>
 
-                <syncfusion:ChartLegend/>
+	<syncfusion:ChartLegend/>
 
-            </syncfusion:SfChart.Legend>
+	</syncfusion:SfChart.Legend>
 
-            <!-- Add Axes to the Chart-->
+	<!-- Add Axes to the Chart-->
 
-            <syncfusion:SfChart.PrimaryAxis>
+	<syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:CategoryAxis/>
+	<syncfusion:CategoryAxis/>
 
-            </syncfusion:SfChart.PrimaryAxis>
+	</syncfusion:SfChart.PrimaryAxis>
 
-            <syncfusion:SfChart.SecondaryAxis>
+	<syncfusion:SfChart.SecondaryAxis>
 
-                <syncfusion:NumericalAxis/>
+	<syncfusion:NumericalAxis/>
 
-            </syncfusion:SfChart.SecondaryAxis>
+	</syncfusion:SfChart.SecondaryAxis>
 
-            <!-- Add ColumnSeries to the Chart-->
+	<!-- Add ColumnSeries to the Chart-->
 
-            <syncfusion:ColumnSeries Label="Turnover" ItemsSource="{BindingCategoricalDatas}"
+	<syncfusion:ColumnSeries Label="Turnover" ItemsSource="{BindingCategoricalDatas}"
 
-                         XBindingPath="Category" YBindingPath="Value"/>
+	XBindingPath="Category" YBindingPath="Value"/>
 
-        </syncfusion:SfChart>  
+	</syncfusion:SfChart>  
 {% endhighlight %}
 
 The following screenshot illustrates a chart with a simple legend.
@@ -141,13 +141,13 @@ The following code example shows how to create a ChartLegend for a chart.
 
 {% highlight xml %}
 
-        <syncfusion:SfChart.Legend>
+<syncfusion:SfChart.Legend>
 
-            <syncfusion:ChartLegend DockPosition="Bottom" Orientation="Horizontal" 
+<syncfusion:ChartLegend DockPosition="Bottom" Orientation="Horizontal" 
 
-                      CheckBoxVisibility="Visible"/>
+CheckBoxVisibility="Visible"/>
 
-        </syncfusion:SfChart.Legend>
+</syncfusion:SfChart.Legend>
 {% endhighlight %}
 
 ###Multiple Legends
@@ -156,81 +156,82 @@ The SfChart control supports showing the legend in multiple panels, to view the 
 
 The following code example shows how to create multiple legends in a single chart. For sample data, please refer to the data section in the code sample of [Line Series.](http://docs.syncfusion.com/wpf/sfchart/series#lineseries)
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart Height="500" Width="600" x:Name="LineChart">
 
 
 
-            <syncfusion:SfChart.ColumnDefinitions>
+<syncfusion:SfChart.ColumnDefinitions>
 
-                <syncfusion:ChartColumnDefinition/>
+<syncfusion:ChartColumnDefinition/>
 
-                <syncfusion:ChartColumnDefinition/>
+<syncfusion:ChartColumnDefinition/>
 
-            </syncfusion:SfChart.ColumnDefinitions>
-
-
-
-            <syncfusion:SfChart.DataContext>
-
-                <local:ChartViewModel/>
-
-            </syncfusion:SfChart.DataContext>
+</syncfusion:SfChart.ColumnDefinitions>
 
 
 
-            <syncfusion:SfChart.Legend>
+<syncfusion:SfChart.DataContext>
 
-                <syncfusion:ChartLegendCollection>
+<local:ChartViewModel/>
 
-                    <syncfusion:ChartLegend syncfusion:ChartBase.Column="0"/>
-
-                    <syncfusion:ChartLegend syncfusion:ChartBase.Column="1"/>
-
-                </syncfusion:ChartLegendCollection>
-
-            </syncfusion:SfChart.Legend>
+</syncfusion:SfChart.DataContext>
 
 
 
-            <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.Legend>
 
-                <syncfusion:CategoryAxis  LabelFormat="yyyy"/>
+<syncfusion:ChartLegendCollection>
 
-            </syncfusion:SfChart.PrimaryAxis>
+<syncfusion:ChartLegend syncfusion:ChartBase.Column="0"/>
 
-            <syncfusion:SfChart.SecondaryAxis>
+<syncfusion:ChartLegend syncfusion:ChartBase.Column="1"/>
 
-                <syncfusion:NumericalAxis/>
+</syncfusion:ChartLegendCollection>
 
-            </syncfusion:SfChart.SecondaryAxis>
-
-
-
-       <syncfusion:ColumnSeries Label="Sports" ItemsSource="{Binding Data}" 
-
-                               XBindingPath="Year" YBindingPath="Sports">
-
-            </syncfusion:ColumnSeries>
-
-       <syncfusion:SplineAreaSeries Label="Books" ItemsSource="{Binding Data}" 
-
-                               XBindingPath="Year" YBindingPath="Books">
-
-            <syncfusion:SplineAreaSeries.XAxis>
-
-                <syncfusion:CategoryAxis syncfusion:ChartBase.Column="1"
-
-                    LabelFormat="yyyy" Visibility="Visible"/>
-
-                </syncfusion:SplineAreaSeries.XAxis>
-
-            </syncfusion:SplineAreaSeries>
+</syncfusion:SfChart.Legend>
 
 
 
-        </syncfusion:SfChart >
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis  LabelFormat="yyyy"/>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis/>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+
+
+<syncfusion:ColumnSeries Label="Sports" ItemsSource="{Binding Data}" 
+
+XBindingPath="Year" YBindingPath="Sports">
+
+</syncfusion:ColumnSeries>
+
+<syncfusion:SplineAreaSeries Label="Books" ItemsSource="{Binding Data}" 
+
+XBindingPath="Year" YBindingPath="Books">
+
+<syncfusion:SplineAreaSeries.XAxis>
+
+<syncfusion:CategoryAxis syncfusion:ChartBase.Column="1"
+
+LabelFormat="yyyy" Visibility="Visible"/>
+
+</syncfusion:SplineAreaSeries.XAxis>
+
+</syncfusion:SplineAreaSeries>
+
+
+
+</syncfusion:SfChart >
 {% endhighlight %}
 
 
@@ -238,60 +239,60 @@ The following code example shows how to create multiple legends in a single char
 
 {% highlight C# %}
 
-    public class ChartViewModel
+public class ChartViewModel
 
-    {
+{
 
-        public ChartViewModel()
+public ChartViewModel()
 
-        {
+{
 
-            this.Data = new ObservableCollection<Entertainment>();
+this.Data = new ObservableCollection<Entertainment>();
 
-            DateTime yr = new DateTime(2002, 5, 1);
+DateTime yr = new DateTime(2002, 5, 1);
 
-            Data.Add(new Entertainment() { Year = yr.AddYears(1), Sports = 28, Books = 31, Music = 36, Dance = 39 });
+Data.Add(new Entertainment() { Year = yr.AddYears(1), Sports = 28, Books = 31, Music = 36, Dance = 39 });
 
-            Data.Add(new Entertainment() { Year = yr.AddYears(2), Sports = 24, Books = 28, Music = 32, Dance = 36 });
+Data.Add(new Entertainment() { Year = yr.AddYears(2), Sports = 24, Books = 28, Music = 32, Dance = 36 });
 
-            Data.Add(new Entertainment() { Year = yr.AddYears(3), Sports = 26, Books = 32, Music = 34, Dance = 40 });
+Data.Add(new Entertainment() { Year = yr.AddYears(3), Sports = 26, Books = 32, Music = 34, Dance = 40 });
 
-            Data.Add(new Entertainment() { Year = yr.AddYears(4), Sports = 27, Books = 36, Music = 41, Dance = 44 });
+Data.Add(new Entertainment() { Year = yr.AddYears(4), Sports = 27, Books = 36, Music = 41, Dance = 44 });
 
-            Data.Add(new Entertainment() { Year = yr.AddYears(5), Sports = 32, Books = 36, Music = 42, Dance = 45 });
+Data.Add(new Entertainment() { Year = yr.AddYears(5), Sports = 32, Books = 36, Music = 42, Dance = 45 });
 
-            Data.Add(new Entertainment() { Year = yr.AddYears(6), Sports = 35, Books = 39, Music = 42, Dance = 48 });
+Data.Add(new Entertainment() { Year = yr.AddYears(6), Sports = 35, Books = 39, Music = 42, Dance = 48 });
 
-            Data.Add(new Entertainment() { Year = yr.AddYears(7), Sports = 30, Books = 37, Music = 43, Dance = 46 });
+Data.Add(new Entertainment() { Year = yr.AddYears(7), Sports = 30, Books = 37, Music = 43, Dance = 46 });
 
-        }
-
-
-
-        public ObservableCollection<Entertainment> Data { get; set; }
+}
 
 
 
-    }
+public ObservableCollection<Entertainment> Data { get; set; }
 
-    public class Entertainment
 
-    {
 
-        public DateTime Year { get; set; }
+}
 
-        public double Sports { get; set; }
+public class Entertainment
 
-        public double Books { get; set; }
+{
 
-        public double Music { get; set; }
+public DateTime Year { get; set; }
 
-        public double Dance { get; set; }
+public double Sports { get; set; }
 
-    }
+public double Books { get; set; }
+
+public double Music { get; set; }
+
+public double Dance { get; set; }
+
+}
 
 {% endhighlight %}
-
+{% endtabs %}
 
 The following screenshot shows a chart with multiple legends.
 

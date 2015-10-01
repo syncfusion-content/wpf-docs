@@ -13,6 +13,7 @@ The user can save the current report set of OlapDataManager as an xml file for t
 
 The following code snippet will illustrate the saving of the current report set as an xml file:
 
+{% tabs %}
 {% highlight c# %}
 
 
@@ -31,6 +32,7 @@ olapDataManager.SaveReport("C:\SampleReport\RevenueAnalysis.xml")
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 
 ## For Silverlight:
@@ -39,6 +41,7 @@ You can save the current report of OlapDataManger as an xml file for their futur
 
 The following code snippet will illustrate the saving of the current report set as an xml file:
 
+{% tabs %}
 {% highlight c# %}
 
 
@@ -97,4 +100,4 @@ End Sub
 
 
 {% endhighlight  %}
-
+{% endtabs %}

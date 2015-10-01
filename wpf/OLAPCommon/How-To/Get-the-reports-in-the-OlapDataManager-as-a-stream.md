@@ -13,6 +13,7 @@ You can get the report collection in the OlapDataManager as a stream by using Ge
 
 The following code snippet will explain obtaining the report as a stream:
 
+{% tabs %}
 {% highlight c# %}
 
 Stream reportStream = olapDataManager.GetReportAsStream();
@@ -25,3 +26,4 @@ Dim reportStream As Stream = olapDataManager.GetReportAsStream()
 
 
 {% endhighlight  %}
+{% endtabs %}

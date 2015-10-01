@@ -11,7 +11,7 @@ documentation: ug
 
 Essential PDF Viewer provides support for URI annotations (hyperlinks) in the PDF document that enables the URI available in the PDF document to be opened in the browser just by clicking it. This also supports a few events that are listed in the previous table.
 
-Event Table
+### Event Table
 
 <table>
 <tr>

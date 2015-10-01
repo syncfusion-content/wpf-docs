@@ -17,6 +17,7 @@ Essential PDF Viewer allows you to search and highlight the text in the PDF docu
 
 The PDF Viewer control also supports searching text in the PDF document with the help of the following API. The FindText method returns true when the text given is found in the document. The dictionary contains the page index and the list of rectangular coordinates of the text found in that page. The following code example illustrates how text search can be achieved in the PDF Viewer control.
 
+{% tabs %}
 {% highlight c# %}
 
 bool IsMatchFound;
@@ -49,3 +50,4 @@ Dim textSearch As New Dictionary(Of Integer, List(Of RectangleF))()
 
 IsMatchFound = pdfViewerControl1.FindText("targetText", textSearch)
 {% endhighlight %}
+{% endtabs %}

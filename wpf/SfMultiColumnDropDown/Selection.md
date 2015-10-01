@@ -35,27 +35,28 @@ The following code example illustrates how to set SelectedIndex in SfMultiColumn
 
 <syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"
 
-                                           SelectedIndex="3"
+SelectedIndex="3"
 
-                                           ValueMember="Designation"                                                   
+ValueMember="Designation"                                                   
 
-                                           DisplayMember="Name" 
+DisplayMember="Name" 
 
-                                           ItemsSource="{Binding GridItemSource}">
+ItemsSource="{Binding GridItemSource}">
 
 
 
 </syncfusion:SfMultiColumnDropDownControl>
 {% endhighlight %}
+
 The following screenshot illustrates the output of the above code.
 
 ![](Features_images/Features_img7.png)
 
 
 
-###Event
+### Event
 
-Event Table
+
 
 <table>
 <tr>
@@ -68,9 +69,9 @@ SelectionChanged</td><td>
 This event is raised when the Selection is changed.The SelectionChanged event handler receives two arguments, namely Sender and SelectionChangedEventArgs{{ '_,_' | markdownify }} as objects.The SelectionChangedEventArgs object contains the following properties:* SelectedIndex: Gets the selected index of the SfDataGrid in the DropDownPopup.* SelectedItem: Gets the selected item of the SfDataGrid in the DropDownPopup.</td></tr>
 </table>
 
-### How To
+## How To
 
-#### How to Select the Text When SfMultiColumnDropDowncontrol got Focus?
+### How to Select the Text When SfMultiColumnDropDowncontrol got Focus?
 
 
 In SfMultiColumnDropDownControl, the TextSelectionOnFocus property automatically selects the text when SfMultiColumnDropDownControl got focus from one control. 
@@ -84,20 +85,22 @@ The following code example illustrates how to use TextSelectionOnFocus in SfMult
 
 <syncfusion:SfMultiColumnDropDownControl x:Name="MultiColumnControl"                                          
 
-                                            AutoGenerateColumns="True"
+AutoGenerateColumns="True"
 
-                                            DisplayMember="Title"
+DisplayMember="Title"
 
-                                            ItemsSource="{Binding MoviesLists}"
+ItemsSource="{Binding MoviesLists}"
 
-                                            SelectedIndex="3"  
+SelectedIndex="3"  
 
-                                            TextSelectionOnFocus="True"  
+TextSelectionOnFocus="True"  
 
-                                            ValueMember="Cast">
+ValueMember="Cast">
 
 </syncfusion:SfMultiColumnDropDownControl>
+
 {% endhighlight %}
+
 The following screenshot displays the SfMultiDropDownControl when setting TextSelectionOnFocus to true.
 
 ![](Features_images/Features_img8.png)

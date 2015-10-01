@@ -21,12 +21,12 @@ The SfBulletGraph tooltip is displayed only when the ShowToolTip property is
 
 You can display the value of FeaturedMeasure of SfBulletGraph in ToolTip that is used to view the FeaturedMeasure value .The FeaturedMeasureToolTipTemplate is DataTemplate type.
 
-### Code Example:
+### Code Example
 
 {% highlight html %}
 
 
-                           <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
+<syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
                               QualitativeRangesSize="30"
 
@@ -100,18 +100,19 @@ You can display the value of FeaturedMeasure of SfBulletGraph in ToolTip tha
 
 ![](Concept-and-Features_images/Concept-and-Features_img13.jpeg)
 
-_SfBulletGraph with FeaturedMeasure ToolTip_
+SfBulletGraph with FeaturedMeasure ToolTip
+{:.caption}
 
 ## ComparativeMeasureToolTipTemplate
 
 You can display the value of ComparativeMeasure of SfBulletGraph in ToolTip that is used to view the ComparativeMeasure value. The ComparativeMeasureToolTipTemplate is DataTemplate type.
 
-### Code Example:
+### Code Example
 
 {% highlight html %}
 
 
-                           <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
+<syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
                               QualitativeRangesSize="30"
 
@@ -187,7 +188,8 @@ You can display the value of ComparativeMeasure of SfBulletGraph in ToolTip 
 
 ![](Concept-and-Features_images/Concept-and-Features_img14.jpeg)
 
-_SfBulletGraph with ComparativeMeasure ToolTip_
+SfBulletGraph with ComparativeMeasure ToolTip
+[:.caption]
 
 
 
@@ -195,12 +197,12 @@ _SfBulletGraph with ComparativeMeasure ToolTip_
 
 You can display the value of QualitativeRange of SfBulletGraph in ToolTip that is used to view the Start and End value of QualitativeRange. The QualitativeRangeToolTipTemplate is DataTemplate type.
 
-### Code Example:
+### Code Example
 
 {% highlight html %}
 
 
-                           <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
+					   <syncfusion:SfBulletGraph Orientation="Horizontal"  Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
                               QualitativeRangesSize="30"
 
@@ -289,6 +291,7 @@ You can display the value of QualitativeRange of SfBulletGraph in ToolTip th
 ![](Concept-and-Features_images/Concept-and-Features_img15.jpeg)
 
 
-_SfBulletGraph with QualitativeRange ToolTip_
+SfBulletGraph with QualitativeRange ToolTip
+{:.caption}
 
 

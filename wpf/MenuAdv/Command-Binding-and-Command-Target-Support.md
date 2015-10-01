@@ -13,7 +13,7 @@ Commands are a way to bind the UI to the logic that performs the action, which i
 
 The command target is the element on which the command is to be executed with regards to a RoutedCommand and routing of the Executed and CanExecute starts. This can be attained by using the CommandTarget property of MenuItemAdv.
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 MenuAdv helps users handle any command that can be routed outside the boundaries of the logical tree and do not require handling logic in code behind.
 
@@ -21,6 +21,7 @@ MenuAdv helps users handle any command that can be routed outside the boundaries
 
 To use the Command Binding support in an application users have to create a DelegateCommand class, which is obtained from the ICommand interface in the ViewModel sample class, which can be used to bind the command in the sample WPF application. The Command can be bound to MenuItemAdv by using the Command property and the target element can be bound to MenuItemAdv by using the CommandTarget property, as shown in the following code snippets.
 
+{% tabs %}
 {% highlight xml %}
 
 
@@ -77,8 +78,7 @@ public partial class MainPage : UserControl
  SkinManager.SetVisualStyle(this,(Syncfusion.Windows.Controls.Theming.VisualStyle)(visualStyle));      
  }
  }
-{% endhighlight %}
-{% highlight C# %}
+
 
 
 public class DelegateCommand : ICommand  
@@ -111,6 +111,7 @@ public class DelegateCommand : ICommand
  }   
  }
 {% endhighlight %}
+{% endtabs %}
 
 
 ![C:/Users/Dhileep/Desktop/Vol4-Documentation/ScreenShots/SL-Menu/Command.png](Command-Binding-and-Command-Target-Support_images/Command-Binding-and-Command-Target-Support_img1.png)
@@ -125,11 +126,11 @@ public class DelegateCommand : ICommand
 
 
 
-## Properties
+### Properties
 
 The properties for the Command Binding support are described in the following tabulation:
 
-_Properties Table_
+
 
 <table>
 <tr>
@@ -159,7 +160,7 @@ IInputElement(null)</td></tr>
 </table>
 
 
-## Sample Link
+### Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

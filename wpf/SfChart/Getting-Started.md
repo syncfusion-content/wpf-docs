@@ -48,6 +48,7 @@ This session demonstrates how to create a chart using SfChart control from XAML.
 xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"
 
 {% endhighlight %}
+
 N> Adding the extension Syncfusion.SfChart.WPF, adds all the Syncfusion WPF controls.You can also add the SfChart reference alone from the following location. C:\Program Files (x86)\Syncfusion\Essential Studio\<version>\Assemblies\(3.5/4.0/4.5.1)<Visual Studio Version>
 
 
@@ -83,7 +84,7 @@ The Syncfusion WPF reference is added to the application reference and the xmlns
 
 The data in the following table is used to plot the chart for the demand for gold in the world market.
 
-Gold Demand in World market
+### Gold Demand in World market
 
 <table>
 <tr>
@@ -124,15 +125,15 @@ Before proceeding with the chart, create data model chart with the above details
 
 public class GoldDemand
 
-        {
+{
 
-            public string Demand { get; set; }
+public string Demand { get; set; }
 
-            public double Year2010 { get; set; }
+public double Year2010 { get; set; }
 
-            public double Year2011 { get; set; }
+public double Year2011 { get; set; }
 
-        }
+}
 
 {% endhighlight %}
 
@@ -153,15 +154,15 @@ this.Demands = new ObservableCollection<GoldDemand>
 
 {
 
-    new GoldDemand() {Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2},
+new GoldDemand() {Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2},
 
-    new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
+new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
 
-    new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
+new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
 
-    new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
+new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
 
-    new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0}
+new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0}
 
 };
 {% endhighlight %}
@@ -181,7 +182,7 @@ Height="300" Width="500">
 
 
 
-        </syncfusion:SfChart>
+</syncfusion:SfChart>
 
 
 {% endhighlight %}
@@ -199,17 +200,17 @@ The following code example illustrates how to add Primary (horizontal) and Secon
 
 <syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:CategoryAxis Header="Demands" FontSize="14"/>
+<syncfusion:CategoryAxis Header="Demands" FontSize="14"/>
 
-            </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 
 
-            <syncfusion:SfChart.SecondaryAxis>
+<syncfusion:SfChart.SecondaryAxis>
 
-                <syncfusion:NumericalAxis Header="Values ( In Tonnes)" FontSize="14"/>
+<syncfusion:NumericalAxis Header="Values ( In Tonnes)" FontSize="14"/>
 
-            </syncfusion:SfChart.SecondaryAxis>
+</syncfusion:SfChart.SecondaryAxis>
 
 
 {% endhighlight %}
@@ -236,6 +237,7 @@ Tip: The graph selection depends on user scenario and the nature of the data. Fo
 <td>
 {{ 'Note: Syncfusion Chart also supports rendering combination of multiple series.' | markdownify }}</td></tr>
 </table>
+
 After you have added the series, you can add ItemSource, XBindingPath and YBindingPath APIs, to populate your data to the chart. 
 
 ####ItemsSource- It is a collection property, like other collection controls like ListBox and ComboBox, that you can bind your underlying collection to.
@@ -246,7 +248,7 @@ After you have added the series, you can add ItemSource, XBindingPath and YBindi
 
 ####Label- This property gives names for the series, mapped by the Legend.
 
-###Add Legends to Chart
+### Add Legends to Chart
 
 Legends act as indicators for the chart. They carry some metadata about plotting data in the ChartSeries. (For more details)
 
@@ -254,9 +256,9 @@ Legends act as indicators for the chart. They carry some metadata about plotting
 
 <syncfusion:SfChart.Legend>
 
-                <syncfusion:ChartLegend Visibility="Visible"/>
+<syncfusion:ChartLegend Visibility="Visible"/>
 
-            </syncfusion:SfChart.Legend>
+</syncfusion:SfChart.Legend>
 
 {% endhighlight %}
 
@@ -268,61 +270,61 @@ Now you have created a Chart demonstrating the studies related to Gold demands i
 
 
 
-                <!--Initialize the Primary Axis for SfChart-->
+<!--Initialize the Primary Axis for SfChart-->
 
-                <syncfusion:SfChart.PrimaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-                    <syncfusion:CategoryAxis Header="Demands" FontSize="14"/>
+<syncfusion:CategoryAxis Header="Demands" FontSize="14"/>
 
-                </syncfusion:SfChart.PrimaryAxis>
-
-
-
-                <!--Initialize the Secondary Axis for SfChart-->
-
-                <syncfusion:SfChart.SecondaryAxis>
-
-                    <syncfusion:NumericalAxis Header="Values( In Tonnes)" FontSize="14"/>
-
-                </syncfusion:SfChart.SecondaryAxis>
+</syncfusion:SfChart.PrimaryAxis>
 
 
 
-                <!--Adding Legend to the SfChart-->
+<!--Initialize the Secondary Axis for SfChart-->
 
-                <syncfusion:SfChart.Legend>
+<syncfusion:SfChart.SecondaryAxis>
 
-                    <syncfusion:ChartLegend Visibility="Visible"/>
+<syncfusion:NumericalAxis Header="Values( In Tonnes)" FontSize="14"/>
 
-                </syncfusion:SfChart.Legend>
-
-
-
-                <!--Initialize the Chart Series for SfChart-->
-
-                <syncfusion:ColumnSeries Label="2010" 
-
-                                ItemsSource="{Binding Demands}"
-
-                                XBindingPath="Demand"
-
-                                YBindingPath="Year2010"
-
-                                />
+</syncfusion:SfChart.SecondaryAxis>
 
 
 
-                <syncfusion:ColumnSeries Label="2011" 
+<!--Adding Legend to the SfChart-->
 
-                                ItemsSource="{Binding Demands}"
+<syncfusion:SfChart.Legend>
 
-                                XBindingPath="Demand"
+<syncfusion:ChartLegend Visibility="Visible"/>
 
-                                YBindingPath="Year2011"
+</syncfusion:SfChart.Legend>
 
-                                />
 
-            </syncfusion:SfChart>
+
+<!--Initialize the Chart Series for SfChart-->
+
+<syncfusion:ColumnSeries Label="2010" 
+
+ItemsSource="{Binding Demands}"
+
+XBindingPath="Demand"
+
+YBindingPath="Year2010"
+
+/>
+
+
+
+<syncfusion:ColumnSeries Label="2011" 
+
+ItemsSource="{Binding Demands}"
+
+XBindingPath="Demand"
+
+YBindingPath="Year2011"
+
+/>
+
+</syncfusion:SfChart>
 
 			{% endhighlight %}
 
@@ -330,57 +332,57 @@ Now you have created a Chart demonstrating the studies related to Gold demands i
 
 {% highlight C# %}
 
-    public sealed partial class MainPage : Page
+	public sealed partial class MainPage : Page
 
-    {
+	{
 
-        public MainPage()
+	public MainPage()
 
-        {
+	{
 
-            this.InitializeComponent();
+	this.InitializeComponent();
 
-            this.Demands = new ObservableCollection<GoldDemand>
+	this.Demands = new ObservableCollection<GoldDemand>
 
-            {
+	{
 
-                new GoldDemand() {Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2},
+	new GoldDemand() {Demand = "Jewelry", Year2010 = 1998.0, Year2011 = 2361.2},
 
-                new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
+	new GoldDemand() {Demand = "Electronics", Year2010 = 1284.0, Year2011 = 1328.0},
 
-                new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
+	new GoldDemand() {Demand = "Research", Year2010 = 1090.5, Year2011 = 1032.0},
 
-                new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
+	new GoldDemand() {Demand = "Investment", Year2010 = 1643.0, Year2011 = 1898.0},
 
-                new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0}
+	new GoldDemand() {Demand = "Bank Purchases", Year2010 = 987.0, Year2011 = 887.0}
 
-            };
-
-
-
-            DataContext = this;
-
-        }
+	};
 
 
 
-        public ObservableCollection<GoldDemand> Demands { get; set; }
+	DataContext = this;
 
-    }
+	}
 
 
 
-    public class GoldDemand
+	public ObservableCollection<GoldDemand> Demands { get; set; }
 
-    {
+	}
 
-        public string Demand { get; set; }
 
-        public double Year2010 { get; set; }
 
-        public double Year2011 { get; set; }
+	public class GoldDemand
 
-    }
+	{
+
+	public string Demand { get; set; }
+
+	public double Year2010 { get; set; }
+
+	public double Year2011 { get; set; }
+
+	}
 
 {% endhighlight %}
 
@@ -535,7 +537,7 @@ To begin plotting data, choose from a wide variety of graphical representations 
 
 Tip: The graph selection depends on the user scenario and the nature of the data. For example, consider the case where a user is developing a chart to visualize the number of online users on a website for any given 30-minute interval during the day. In this scenario, since the data plotted is of high density and also based on two independent variables, choosing the line graph series would provide proper visualization.
  
-
+{% tabs %}
 {% highlight C# %}
 
 //Intialize the first series (ColumnSeries) for the chart
@@ -610,6 +612,7 @@ chart.Series.Add(series1)
 
 chart.Series.Add(series2)
 {% endhighlight %} 
+{% endtabs %}
 
 N> Syncfusion Chart also supports rendering combination of multiple series.
 
@@ -627,6 +630,7 @@ After you add the series, you can add ItemSource, XBindingPath and YBindingPath 
 
 Legends are like indicators for the chart, with metadata about data plotting in the ChartSeries. (For more detail)
 
+{% tabs %}
 {% highlight C# %}
 
 //Adding Legends for the chart
@@ -646,9 +650,11 @@ chart.Legend = New ChartLegend() With {.Visibility = Visibility.Visible}
 
 
 {% endhighlight %}
+{% endtabs %}
 
 Now you have created a chart that demonstrates the studies related to Gold demands in World market. 
 
+{% tabs %}
 {% highlight C# %}
 
 SfChart chart = new SfChart();
@@ -823,6 +829,8 @@ chart.Legend = New ChartLegend() With {.Visibility = Visibility.Visible}
 
 Me.MainGrid.Children.Add(chart)
 {% endhighlight %}
+{% endtabs %}
+
 The following output is displayed as a result of the above code example.
 
 ![C:/Users/rachel/Desktop/snaps/1.png](Getting-Started_images/Getting-Started_img10.png)

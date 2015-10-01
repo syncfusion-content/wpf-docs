@@ -33,9 +33,8 @@ Or
 
 These setup files can be downloaded at [Microsoft download center](http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=8824).
 
-> Note: By default the below setup files will be installed while installing Syncfusion’ Essential studio setup for BI edition:
-
-> SQLSERVER2008_ASADOMD10.msi and SQLSERVER2008_ASOLEDB10.msi
+N>  By default the below setup files will be installed while installing Syncfusion’ Essential studio setup for BI edition:
+N> SQLSERVER2008_ASADOMD10.msi and SQLSERVER2008_ASOLEDB10.msi
 
 
 

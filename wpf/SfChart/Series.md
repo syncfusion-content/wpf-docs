@@ -13,7 +13,7 @@ ChartSeries is the visual representation of the data. SfChart offers many types 
 
 The following APIs are common for most of the series types.
 
-Series Properties
+
 
 <table>
 <tr>
@@ -52,39 +52,40 @@ LineSeries displays a set of points connected by a straight line. Line Charts jo
 
 The following code example explains how to create a simple LineSeries using given data.
 
+{% tabs %}
 {% highlight xml %}
 
 <syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            <syncfusion:SfChart.DataContext>
+<syncfusion:SfChart.DataContext>
 
-                <local:ViewModel></local:ViewModel>
+<local:ViewModel></local:ViewModel>
 
-            </syncfusion:SfChart.DataContext>
-
-
-
-            <syncfusion:SfChart.PrimaryAxis>
-
-                <syncfusion:CategoryAxis  Header="Company Name"/>
-
-            </syncfusion:SfChart.PrimaryAxis>
+</syncfusion:SfChart.DataContext>
 
 
 
-            <syncfusion:SfChart.SecondaryAxis>
+<syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:NumericalAxis  Header="Gross Revenue (cr.)"/>
+<syncfusion:CategoryAxis  Header="Company Name"/>
 
-            </syncfusion:SfChart.SecondaryAxis>
-
-
-
-            <syncfusion:LineSeries  x:Name="series1" Palette="Metro"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+</syncfusion:SfChart.PrimaryAxis>
 
 
 
-        </syncfusion:SfChart>  
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis  Header="Gross Revenue (cr.)"/>
+
+</syncfusion:SfChart.SecondaryAxis>
+
+
+
+<syncfusion:LineSeries  x:Name="series1" Palette="Metro"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+
+
+
+</syncfusion:SfChart>  
 
 {% endhighlight %}
 
@@ -135,6 +136,7 @@ The following code example explains how to create a simple LineSeries using give
     }
 
 {% endhighlight %}
+{% endtabs %}
 
 ![](Series_images/Series_img1.png)
 
@@ -150,29 +152,29 @@ In ColumnSeries, categories are represented along PrimaryAxis and values are rep
 
 
 
-<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
+	<syncfusion:SfChart x:Name="Chart"   Margin="5,0,10,0">
 
-            <syncfusion:SfChart.DataContext>
+	<syncfusion:SfChart.DataContext>
 
-                <local:ViewModel></local:ViewModel>
+	<local:ViewModel></local:ViewModel>
 
-            </syncfusion:SfChart.DataContext>
+	</syncfusion:SfChart.DataContext>
 
-            <syncfusion:SfChart.PrimaryAxis>
+	<syncfusion:SfChart.PrimaryAxis>
 
-                <syncfusion:CategoryAxis  Header="Company Name"/>
+	<syncfusion:CategoryAxis  Header="Company Name"/>
 
-            </syncfusion:SfChart.PrimaryAxis>
+	</syncfusion:SfChart.PrimaryAxis>
 
-            <syncfusion:SfChart.SecondaryAxis>
+	<syncfusion:SfChart.SecondaryAxis>
 
-                <syncfusion:NumericalAxis  Header="Gross Revenue (cr.)"/>
+	<syncfusion:NumericalAxis  Header="Gross Revenue (cr.)"/>
 
-            </syncfusion:SfChart.SecondaryAxis>
+	</syncfusion:SfChart.SecondaryAxis>
 
-            <syncfusion:ColumnSeries  x:Name="series1" Palette="Metro"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+	<syncfusion:ColumnSeries  x:Name="series1" Palette="Metro"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
-        </syncfusion:SfChart>
+	</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -247,7 +249,7 @@ BubbleSeries is a visualization technique. It has a set of numeric quantities, r
 
 The following APIs are used in BubbleSeries.
 
-BubbleSeries
+
 
 <table>
 <tr>
@@ -339,7 +341,7 @@ The FastLineSeries is a special kind of line series that can render a collection
 
 The following APIs are used in Stacking Series.
 
-Stacking Series API
+### Stacking Series API
 
 <table>
 <tr>
@@ -364,37 +366,37 @@ StackingColumnSeries resembles multiple types of series of the ColumnSeries. Eac
 
 
 
-            <syncfusion:SfChart.DataContext>
+<syncfusion:SfChart.DataContext>
 
-                <local:ViewModel1></local:ViewModel1>
+<local:ViewModel1></local:ViewModel1>
 
-            </syncfusion:SfChart.DataContext>
-
-
-
-            <syncfusion:SfChart.PrimaryAxis>
-
-                <syncfusion:CategoryAxis  Header="Company Name"/>
-
-            </syncfusion:SfChart.PrimaryAxis>
-
-            <syncfusion:SfChart.SecondaryAxis>
-
-                <syncfusion:NumericalAxis Interval="100" Header="Gross Revenue (cr.)"/>
-
-            </syncfusion:SfChart.SecondaryAxis>
+</syncfusion:SfChart.DataContext>
 
 
 
-            <syncfusion:StackingColumnSeries   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+<syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:CategoryAxis  Header="Company Name"/>
+
+</syncfusion:SfChart.PrimaryAxis>
+
+<syncfusion:SfChart.SecondaryAxis>
+
+<syncfusion:NumericalAxis Interval="100" Header="Gross Revenue (cr.)"/>
+
+</syncfusion:SfChart.SecondaryAxis>
 
 
 
-            <syncfusion:StackingColumnSeries   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+<syncfusion:StackingColumnSeries   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-        </syncfusion:SfChart>
+<syncfusion:StackingColumnSeries   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+
+
+
+</syncfusion:SfChart>
 
 {% endhighlight %}
 
@@ -410,11 +412,11 @@ StackingColumn100Series resembles StackingColumnSeries. StackingColumn100Series 
 
 
 
-    <syncfusion:StackingColumn100Series   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+<syncfusion:StackingColumn100Series   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
-        <syncfusion:StackingColumn100Series   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+<syncfusion:StackingColumn100Series   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 
@@ -434,7 +436,7 @@ StackingBarSeries is a multiple series type of BarSeries. Each BarSeries is then
 
 
 
-        <syncfusion:StackingBarSeries   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+<syncfusion:StackingBarSeries   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 
 {% endhighlight %}
@@ -450,7 +452,7 @@ StackingBar100Series resembles a StackingBarSeries. StackingBar100Series display
 
 <syncfusion:StackingBar100Series   x:Name="series1"  GroupingLabel="Company Details"  Interior="Blue" Stroke="Red"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
-        <syncfusion:StackingBar100Series   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+<syncfusion:StackingBar100Series   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 {% endhighlight %}
 
@@ -468,7 +470,7 @@ StackingAreaSeries is representing areas stacked vertically one above the other.
 
 
 
-        <syncfusion:StackingAreaSeries   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+<syncfusion:StackingAreaSeries   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 {% endhighlight %}
 
@@ -488,7 +490,7 @@ StackingArea100Series is similar to StackingAreaSeries, but this series displays
 
 
 
-        <syncfusion:StackingArea100Series   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+<syncfusion:StackingArea100Series   x:Name="series2"  GroupingLabel="Company Details"  Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 {% endhighlight %}
 
@@ -508,7 +510,7 @@ FastStackingColumnSeries is similar to StackingColumnSeries with y-coordinate va
 
 
 
-        <syncfusion:FastStackingColumnBitmapSeries x:Name="series2"   Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName"YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
+<syncfusion:FastStackingColumnBitmapSeries x:Name="series2"   Interior="DarkGray" Stroke="Green"   XBindingPath="CompanyName"YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}"/>
 
 {% endhighlight %}
 
@@ -520,7 +522,7 @@ FastStackingColumnSeries is similar to StackingColumnSeries with y-coordinate va
 
 A PieSeries is a CircularChart, divided into sectors, illustrating numerical proportion. The following APIs are used in PieSeries.
 
-PieSeries
+
 
 <table>
 <tr>
@@ -571,23 +573,23 @@ Gets or sets the distance between the actual center point of the chart and the e
 
 
 
-        <syncfusion:PieSeries  x:Name="series1"   EnableSmartLabels="True" LabelPosition="OutsideExtended"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
+<syncfusion:PieSeries  x:Name="series1"   EnableSmartLabels="True" LabelPosition="OutsideExtended"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
 
 
 
-            <syncfusion:PieSeries.AdornmentsInfo>
+<syncfusion:PieSeries.AdornmentsInfo>
 
-                <syncfusion:ChartAdornmentInfo AdornmentsPosition="Bottom" ShowLabel="True" HorizontalAlignment="Center" UseSeriesPalette="True" ShowConnectorLine="True" ConnectorHeight="80" SegmentLabelContent="LabelContentPath">
-
-
+<syncfusion:ChartAdornmentInfo AdornmentsPosition="Bottom" ShowLabel="True" HorizontalAlignment="Center" UseSeriesPalette="True" ShowConnectorLine="True" ConnectorHeight="80" SegmentLabelContent="LabelContentPath">
 
 
 
-                </syncfusion:ChartAdornmentInfo>
 
-            </syncfusion:PieSeries.AdornmentsInfo>
 
-        </syncfusion:PieSeries>
+</syncfusion:ChartAdornmentInfo>
+
+</syncfusion:PieSeries.AdornmentsInfo>
+
+</syncfusion:PieSeries>
 
 {% endhighlight %}
 
@@ -619,7 +621,7 @@ DoughnutSeries displays data in rings, where the rings represent the data series
 
 The following APIs are used in DoughnutSeries.
 
-Doughnut Series
+
 
 <table>
 <tr>
@@ -657,23 +659,23 @@ Gets or sets the double value that is used to control the DoughnutSeries renderi
 
 
 
-  <syncfusion:DoughnutSeries  x:Name="series1"   EnableSmartLabels="True" DoughnutCoefficient="0.5" LabelPosition="OutsideExtended"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
+<syncfusion:DoughnutSeries  x:Name="series1"   EnableSmartLabels="True" DoughnutCoefficient="0.5" LabelPosition="OutsideExtended"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
 
 
 
-            <syncfusion:DoughnutSeries.AdornmentsInfo>
+<syncfusion:DoughnutSeries.AdornmentsInfo>
 
-                <syncfusion:ChartAdornmentInfo AdornmentsPosition="Bottom" ShowLabel="True" HorizontalAlignment="Center" UseSeriesPalette="True" ShowConnectorLine="True" ConnectorHeight="80" SegmentLabelContent="LabelContentPath">
-
-
-
-                </syncfusion:ChartAdornmentInfo>
+<syncfusion:ChartAdornmentInfo AdornmentsPosition="Bottom" ShowLabel="True" HorizontalAlignment="Center" UseSeriesPalette="True" ShowConnectorLine="True" ConnectorHeight="80" SegmentLabelContent="LabelContentPath">
 
 
 
-            </syncfusion:DoughnutSeries.AdornmentsInfo>
+</syncfusion:ChartAdornmentInfo>
 
-        </syncfusion:DoughnutSeries>
+
+
+</syncfusion:DoughnutSeries.AdornmentsInfo>
+
+</syncfusion:DoughnutSeries>
 
 {% endhighlight %}
 
@@ -692,10 +694,7 @@ By having custom StartAngle and EndAngle, you can draw doughnut series in differ
 <syncfusion:DoughnutSeries   StartAngle="180" EndAngle="360" x:Name="doughnutseries" Palette="Metro"   XBindingPath="_Date" YBindingPath="Low"ItemsSource="{Binding StockPriceDetails}"/>
 
 <syncfusion:DoughnutSeries.AdornmentsInfo>
-
-
-
-                    <syncfusion:ChartAdornmentInfo AdornmentsPosition="Bottom"
+<syncfusion:ChartAdornmentInfo AdornmentsPosition="Bottom"
 
 ShowLabel="True"
 
@@ -709,9 +708,9 @@ ConnectorHeight="80"
 
 SegmentLabelContent="LabelContentPath">
 
-                    </syncfusion:ChartAdornmentInfo>
+</syncfusion:ChartAdornmentInfo>
 
-                </syncfusion:DoughnutSeries.AdornmentsInfo>
+</syncfusion:DoughnutSeries.AdornmentsInfo>
 
 </syncfusion:SfChart>
 
@@ -727,7 +726,7 @@ PyramidSeries has the form of a triangle with lines dividing it into sections. A
 
 The following APIs are used in PyramidSeries.
 
-PyramidSeries API
+
 
 <table>
 <tr>
@@ -753,11 +752,11 @@ Represents the mode for the PyramidSeries.</td></tr>
 
 
 
-  <syncfusion:PyramidSeries  x:Name="series1"   PyramidMode="Linear"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
+<syncfusion:PyramidSeries  x:Name="series1"   PyramidMode="Linear"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
 
 
 
-        </syncfusion:PyramidSeries>        
+</syncfusion:PyramidSeries>        
 {% endhighlight %}
 
 
@@ -771,7 +770,7 @@ FunnelSeries is similar to PyramidSeries, displays data in a funnel shape that e
 
 The following APIs used in FunnelSeries.
 
-FunnelSeries
+
 
 <table>
 <tr>
@@ -795,9 +794,9 @@ Represents the mode for the FunnelSeries.</td></tr>
 
 {% highlight xml %}
 
-    <syncfusion:FunnelSeries  x:Name="series1"   FunnelMode="ValueIsHeight" MinHeight="10"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
+<syncfusion:FunnelSeries  x:Name="series1"   FunnelMode="ValueIsHeight" MinHeight="10"  XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
 
-        </syncfusion:FunnelSeries>
+</syncfusion:FunnelSeries>
 
 {% endhighlight %}
 
@@ -811,7 +810,7 @@ RangeColumnSeries is a collection of vertical columns where positioning and heig
 
 The following APIs used in RangeColumnSeries.
 
-RangeColumnSeries
+
 
 <table>
 <tr>
@@ -832,9 +831,9 @@ Gets or sets the string that describes low value in Y-axis.</td></tr>
 {% highlight xml %}
 
 
-  <syncfusion:RangeColumnSeries x:Name="series1"  Low="Value"   XBindingPath="CompanyName" High="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
+<syncfusion:RangeColumnSeries x:Name="series1"  Low="Value"   XBindingPath="CompanyName" High="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
 
-        </syncfusion:RangeColumnSeries>
+</syncfusion:RangeColumnSeries>
 
 {% endhighlight %}
 
@@ -848,7 +847,7 @@ RangeAreaSeries is used to display continuous data points as a set of lines that
 
 The following APIs used in RangeAreaSeries.
 
-RangeAreaSeries
+
 
 <table>
 <tr>
@@ -877,9 +876,9 @@ Gets or sets the brush that represents the interior color for the low value data
 {% highlight xml %}
 
 
-  <syncfusion:RangeAreaSeries x:Name="series1"  Low="Value"   LowValueInterior="Blue"  XBindingPath="CompanyName" High="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
+<syncfusion:RangeAreaSeries x:Name="series1"  Low="Value"   LowValueInterior="Blue"  XBindingPath="CompanyName" High="CompanyTurnOver" ItemsSource="{Binding CompanyDetails}">
 
-        </syncfusion:RangeAreaSeries>
+</syncfusion:RangeAreaSeries>
 
 {% endhighlight %}
 
@@ -893,7 +892,7 @@ RadarSeries represents a collection of data, displayed by quantitative variables
 
 The following APIs are used in RadarSeries.
 
-RadarSeries
+
 
 <table>
 <tr>
@@ -916,11 +915,11 @@ Gets or sets the ChartSeriesDrawType that describes the series rendering type is
 
 
 
-     <syncfusion:RadarSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" IsClosed="True" DrawType="Line" ItemsSource="{Binding CompanyDetails}">
+<syncfusion:RadarSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" IsClosed="True" DrawType="Line" ItemsSource="{Binding CompanyDetails}">
 
 
 
-        </syncfusion:RadarSeries>
+</syncfusion:RadarSeries>
 
 {% endhighlight %}
 
@@ -934,7 +933,7 @@ PolarSeries displays data points that are grouped by category, on a 360 degree c
 
 The following APIs are used in PolarSeries.
 
-PolarSeries
+
 
 <table>
 <tr>
@@ -955,9 +954,9 @@ Gets or sets the ChartSeriesDrawType that describes the series rendering type as
 {% highlight xml %}
 
 
-   <syncfusion:PolarSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" IsClosed="True" DrawType="Line" ItemsSource="{Binding CompanyDetails}">
+<syncfusion:PolarSeries x:Name="series1"    XBindingPath="CompanyName" YBindingPath="CompanyTurnOver" IsClosed="True" DrawType="Line" ItemsSource="{Binding CompanyDetails}">
 
-        </syncfusion:PolarSeries>
+</syncfusion:PolarSeries>
 
 
 {% endhighlight %}
@@ -971,7 +970,7 @@ In HiLoSeries, each segment is represented by a line. The height of the line dep
 
 The following APIs are used in HiLoSeries.
 
-HiLoSeries
+
 
 <table>
 <tr>
@@ -994,9 +993,9 @@ Gets or sets the string that describes low value in Y-axis.</td></tr>
 
 
 
-   <syncfusion:HiLoSeries x:Name="series1"    XBindingPath="CompanyName" High="CompanyTurnOver" Low="Value"  ItemsSource="{Binding CompanyDetails}">
+<syncfusion:HiLoSeries x:Name="series1"    XBindingPath="CompanyName" High="CompanyTurnOver" Low="Value"  ItemsSource="{Binding CompanyDetails}">
 
-        </syncfusion:HiLoSeries>
+</syncfusion:HiLoSeries>
 
 {% endhighlight %}
 
@@ -1012,7 +1011,7 @@ The line that indicates the open value is at the left side of the vertical line,
 
 The following APIs are used in HiLoOpenCloseSeries.
 
-HiLoOpenCloseSeries
+
 
 <table>
 <tr>
@@ -1041,9 +1040,9 @@ Gets or sets the string that describes close value in Y-axis.</td></tr>
 {% highlight xml %}
 
 
-     <syncfusion:HiLoOpenCloseSeries x:Name="series1"    XBindingPath="CompanyName" High="CompanyTurnOver" Low="Value" Open="Open" Close="Close" ItemsSource="{Binding CompanyDetails}">
+<syncfusion:HiLoOpenCloseSeries x:Name="series1"    XBindingPath="CompanyName" High="CompanyTurnOver" Low="Value" Open="Open" Close="Close" ItemsSource="{Binding CompanyDetails}">
 
-        </syncfusion:HiLoOpenCloseSeries>
+</syncfusion:HiLoOpenCloseSeries>
 
 {% endhighlight %}
 
@@ -1057,7 +1056,7 @@ CandleSeries displays each data point as a combination of a vertical column and 
 
 The following APIs are used in CandleSeries.
 
-CandleSeries
+
 
 <table>
 <tr>
@@ -1094,9 +1093,9 @@ Represents that brush color for the segments that show stock price has gone down
 {% highlight xml %}
 
 
-    <syncfusion:CandleSeries x:Name="series1" BearFillColor="Green" BullFillColor="Red"   XBindingPath="CompanyName"High="CompanyTurnOver" Low="Value" Open="Open" Close="Close" ItemsSource="{Binding CompanyDetails}">
+<syncfusion:CandleSeries x:Name="series1" BearFillColor="Green" BullFillColor="Red"   XBindingPath="CompanyName"High="CompanyTurnOver" Low="Value" Open="Open" Close="Close" ItemsSource="{Binding CompanyDetails}">
 
-        </syncfusion:CandleSeries>
+</syncfusion:CandleSeries>
 
 {% endhighlight %}
 
@@ -1110,7 +1109,7 @@ FastLineBitmapSeries displays a series of line segments rendered using WritableB
 
 The following APIs are used in FastLineBitmapSeries.
 
-FastLineBitmapSeries
+
 
 <table>
 <tr>
@@ -1135,7 +1134,7 @@ Gets or sets a collection of Double values that indicates the pattern of dashes 
 
 <syncfusion:FastLineBitmapSeries EnableAntiAliasing="True" ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open">
 
-            </syncfusion:FastLineBitmapSeries>
+ </syncfusion:FastLineBitmapSeries>
 
 
 {% endhighlight %}
@@ -1151,7 +1150,7 @@ FastColumnBitmapSeries displays a series of column segments rendered using Writa
 
 <syncfusion:FastColumnBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open">
 
-            </syncfusion:FastColumnBitmapSeries>
+</syncfusion:FastColumnBitmapSeries>
 
 {% endhighlight %}
 
@@ -1165,7 +1164,6 @@ FastScatterBitmapSeries represents a series of points in the form of an ellipse,
 
 The following APIs are used in FastScatterBitmapSeries.
 
-FastScatterBitmapSeries
 
 <table>
 <tr>
@@ -1189,7 +1187,7 @@ Gets or sets the suggested height of the FastScatterBitmapSeries.</td></tr>
 
 <syncfusion:FastScatterBitmapSeries ScatterHeight="15" ScatterWidth="15" ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open">
 
-            </syncfusion:FastScatterBitmapSeries>
+ </syncfusion:FastScatterBitmapSeries>
 
 {% endhighlight %}
 
@@ -1203,7 +1201,7 @@ FastStepLineSeries is similar to FastLineBitmapSeries, but it does not use the s
 
 The following APIs are used in FastStepLineBitmapSeries.
 
-FastStepLineSeries
+
 
 <table>
 <tr>
@@ -1240,7 +1238,7 @@ FastBarBitmapSeries displays a series of bar segments rendered using WritableBit
 
 <syncfusion:FastBarBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" YBindingPath="Open">
 
-            </syncfusion:FastBarBitmapSeries>
+</syncfusion:FastBarBitmapSeries>
 
 {% endhighlight %}
 
@@ -1254,7 +1252,7 @@ FastHiLoBitmapSeries represents a series of line segments with high and low valu
 
 The following APIs are used in FastHiLoBitmapSeries.
 
-FastHiLoBitmapSeries
+
 
 <table>
 <tr>
@@ -1277,7 +1275,7 @@ Gets or sets the string that describes low value in Y-axis.</td></tr>
 
 <syncfusion:FastHiLoBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" High="High"  Low="Low" >
 
-            </syncfusion:FastHiLoBitmapSeries>
+ </syncfusion:FastHiLoBitmapSeries>
 
 {% endhighlight %}
 
@@ -1291,7 +1289,7 @@ FastHiLoOpenCloseBitmapSeries represents a series of vertical line segments with
 
 The following APIs are used in FastHiLoOpenCloseBitmapSeries.
 
-FastHiLoOpenCloseBitmapSeries
+
 
 <table>
 <tr>
@@ -1321,7 +1319,7 @@ Gets or sets the string that describes close value in Y-axis.</td></tr>
 
 <syncfusion:FastHiLoOpenCloseBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" High="High" Open="Open" Low="Low" Close="Close">
 
-            </syncfusion:FastHiLoOpenCloseBitmapSeries>
+</syncfusion:FastHiLoOpenCloseBitmapSeries>
 
 {% endhighlight %}
 
@@ -1335,7 +1333,7 @@ FastCandleBitmapSeries renders using bitmap and it displays each data point as a
 
 The following APIs are used in FastCandleBitmapSeries.
 
-FastCandleBitmapSeries
+
 
 <table>
 <tr>
@@ -1376,7 +1374,7 @@ Represents that brush color for the segments that shows stock price has gone dow
 
 <syncfusion:FastCandleBitmapSeries ItemsSource="{Binding TestingModel}" XBindingPath="Year" High="High" Open="Open" Low="Low" Close="Close">
 
-            </syncfusion:FastCandleBitmapSeries>
+</syncfusion:FastCandleBitmapSeries>
 
 {% endhighlight %}
 
@@ -1392,7 +1390,7 @@ HistogramSeries is a collection of vertical columns drawn continuously at finite
 
 The following APIs are used in HistogramSeries.
 
-HistogramSeries
+
 
 <table>
 <tr>
@@ -1415,9 +1413,9 @@ Gets or sets bool that represents a value whether to display normal distribution
 
  <syncfusion:HistogramSeries ShowNormalDistributionCurve="True"
 
-                   ItemsSource="{Binding power}" HistogramInterval="1"
+ItemsSource="{Binding power}" HistogramInterval="1"
 
-                  XBindingPath="Year" YBindingPath="Sports"/>
+XBindingPath="Year" YBindingPath="Sports"/>
 
 {% endhighlight %}
 
@@ -1433,7 +1431,7 @@ SfChart supports four different types of ErrorBarSeries namely Fixed, Percentage
 
 The following properties are used to configure ErrorBarSeries.
 
-ErrorBarSeries
+
 
 <table>
 <tr>
@@ -1495,7 +1493,7 @@ The following screenshot is an example of a Fixed value type.
 
 <syncfusion:ErrorBarSeries Name="Errorseries"   ItemsSource="{Binding EnergyProductions}" XBindingPath="ID" YBindingPath="Coal"  HorizontalErrorPath="HorizontalErrorValue" VerticalErrorPath="VerticalErrorValue"    VerticalErrorValue="50" HorizontalErrorValue="1" 
 
-                                  Mode="Both" Type="Fixed" >
+ Mode="Both" Type="Fixed" >
 {% endhighlight %}
 ### Percentage
 
@@ -1531,7 +1529,7 @@ Standard Errors mean that the placement of each end of the error bar corresponds
 {% highlight xml %}
 <syncfusion:ErrorBarSeries Name="Errorseries"   ItemsSource="{Binding EnergyProductions}" XBindingPath="ID" YBindingPath="Coal"  HorizontalErrorPath="HorizontalErrorValue" VerticalErrorPath="VerticalErrorValue"    VerticalErrorValue="50" HorizontalErrorValue="1" 
 
-                                  Mode="Both" Type="StandardErrors" >
+Mode="Both" Type="StandardErrors" >
 {% endhighlight %}
 The following screenshot is an example of StandardErrors.
 

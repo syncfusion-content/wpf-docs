@@ -17,67 +17,68 @@ Scale contains three sub elements: Scale (Rim), Ticks, and Labels.
 
 The MainScale contains a scale that integrates labels, tick marks, and a rim to customize the basic look and feel of the circular gauge. It defines the start angle, sweep direction and sweep angle, overall minimum and maximum values, and frequency of labels and tick marks. It can have multiple ranges. A range is a visual element that begins and ends at specified values within a scale. It can have one or more pointers to point out the values in the scale. It also has a GaugeHeader that is used to set a unique header for the Circular Gauge.
 
-### Code Example:
+### Code Example
 
+{% tabs %}
 {% highlight xml %}
 
 
 
-       <syncfusion:SfCircularGauge x:Name="gauge" GaugeHeaderPosition="300,600" >
+<syncfusion:SfCircularGauge x:Name="gauge" GaugeHeaderPosition="300,600" >
 
 
 
-            <syncfusion:SfCircularGauge.GaugeHeader>
+<syncfusion:SfCircularGauge.GaugeHeader>
 
 
 
-                <TextBlock Text="Temperature (K)" 
+<TextBlock Text="Temperature (K)" 
 
-                              Height="40" Width="150" 
+Height="40" Width="150" 
 
-                              FontSize="20" Foreground="White"/>
-
-
-
-            </syncfusion:SfCircularGauge.GaugeHeader>
-
-            <syncfusion:SfCircularGauge.MainScale>
-
-         <syncfusion:CircularScale StartAngle="135" 
-
-                                   SweepAngle="270" 
-
-                                   StartValue="0"
-
-                                   EndValue="100"
-
-                                   Interval="10">
+FontSize="20" Foreground="White"/>
 
 
 
-              <syncfusion:CircularScale.Ranges>
+</syncfusion:SfCircularGauge.GaugeHeader>
 
-                   <syncfusion:CircularRange StartValue="0" 
+<syncfusion:SfCircularGauge.MainScale>
 
-                                             EndValue="60" Stroke="#666666" />
+<syncfusion:CircularScale StartAngle="135" 
 
-                   <syncfusion:CircularRange StartValue="60" 
+SweepAngle="270" 
 
-                                             EndValue="100" Stroke="#C1252C" />
+StartValue="0"
 
-              </syncfusion:CircularScale.Ranges>
+EndValue="100"
+
+Interval="10">
 
 
 
-              <syncfusion:CircularScale.Pointers>
+<syncfusion:CircularScale.Ranges>
 
-                  <syncfusion:CircularPointer PointerType="NeedlePointer" Value="170"/>
+<syncfusion:CircularRange StartValue="0" 
 
-              </syncfusion:CircularScale.Pointers>
+EndValue="60" Stroke="#666666" />
 
-         </syncfusion:CircularScale>
+<syncfusion:CircularRange StartValue="60" 
 
-    </syncfusion:SfCircularGauge.MainScale>
+EndValue="100" Stroke="#C1252C" />
+
+</syncfusion:CircularScale.Ranges>
+
+
+
+<syncfusion:CircularScale.Pointers>
+
+<syncfusion:CircularPointer PointerType="NeedlePointer" Value="170"/>
+
+</syncfusion:CircularScale.Pointers>
+
+</syncfusion:CircularScale>
+
+</syncfusion:SfCircularGauge.MainScale>
 
 </syncfusion:SfCircularGauge>
 {% endhighlight %}
@@ -89,41 +90,41 @@ The MainScale contains a scale that integrates labels, tick marks, and a rim to 
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            circularGauge.GaugeHeaderPosition = new Point(300,600);
+circularGauge.GaugeHeaderPosition = new Point(300,600);
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            _mainscale.StartAngle = 135;
+_mainscale.StartAngle = 135;
 
-            _mainscale.SweepAngle = 270;
+_mainscale.SweepAngle = 270;
 
-            _mainscale.StartValue = 0;
+_mainscale.StartValue = 0;
 
-            _mainscale.EndValue = 100;
+_mainscale.EndValue = 100;
 
-            _mainscale.Interval = 10;
+_mainscale.Interval = 10;
 
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush() });
+_mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush() });
 
-            _mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush() });
+_mainscale.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush() });
 
-            _mainscale.Pointers.Add(new CircularPointer() { PointerType = PointerType.NeedlePointer, Value = 170 });
+_mainscale.Pointers.Add(new CircularPointer() { PointerType = PointerType.NeedlePointer, Value = 170 });
 
-            circularGauge.MainScale = _mainscale;
+circularGauge.MainScale = _mainscale;
 
-            TextBlock _textBlock = new TextBlock() { Text = "Temperature (K)", Height = 20, Width = 150, FontSize = 20, Foreground = new SolidColorBrush(Colors.White) };
+TextBlock _textBlock = new TextBlock() { Text = "Temperature (K)", Height = 20, Width = 150, FontSize = 20, Foreground = new SolidColorBrush(Colors.White) };
 
-            circularGauge.GaugeHeader = _textBlock;
+circularGauge.GaugeHeader = _textBlock;
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
 
 {% endhighlight %}
 
+{% endtabs %}
 
-
-### Screenshot:
+### Screenshot
 
 ![](Scale-Settings_images/Scale-Settings_img1.png)
 
@@ -135,8 +136,9 @@ The MainScale contains a scale that integrates labels, tick marks, and a rim to 
 
 By using the Radius property, the Scales radius can be set as required.
 
-### Code Example:
+### Code Example
 
+{% tabs %}
 {% highlight xml %}
 
 
@@ -145,75 +147,75 @@ By using the Radius property, the Scales radius can be set as required.
 
 
 
-        <syncfusion:SfCircularGauge  x:Name="gauge">
+<syncfusion:SfCircularGauge  x:Name="gauge">
 
-            <syncfusion:SfCircularGauge.Scales >
+<syncfusion:SfCircularGauge.Scales >
 
-                <syncfusion:CircularScale  x:Name="CircularScale" 
+<syncfusion:CircularScale  x:Name="CircularScale" 
 
-                                           Radius="200"
+Radius="200"
 
-                                           Interval="10" 
+Interval="10" 
 
-                                           MinorTicksPerInterval="1"
+MinorTicksPerInterval="1"
 
-                                           TickLength="20"
+TickLength="20"
 
-                                           TickStroke="White"  
+TickStroke="White"  
 
-                                           TickStrokeThickness="3" 
+TickStrokeThickness="3" 
 
-                                           SmallTickLength="10"
+SmallTickLength="10"
 
-                                           SmallTickStroke="White"
+SmallTickStroke="White"
 
-                                           SmallTickStrokeThickness="3" 
+SmallTickStrokeThickness="3" 
 
-                                           StartAngle="135" 
+StartAngle="135" 
 
-                                           SweepAngle="270" 
+SweepAngle="270" 
 
-                                           StartValue="0"
+StartValue="0"
 
-                                           EndValue="100">
+EndValue="100">
 
-                </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
 
 
-                <syncfusion:CircularScale  x:Name="CircularScale1" 
+<syncfusion:CircularScale  x:Name="CircularScale1" 
 
-                                           Radius="300"
+Radius="300"
 
-                                           Interval="10" 
+Interval="10" 
 
-                                           MinorTicksPerInterval="1"
+MinorTicksPerInterval="1"
 
-                                           TickLength="20"
+TickLength="20"
 
-                                           TickStroke="White"  
+TickStroke="White"  
 
-                                           TickStrokeThickness="3" 
+TickStrokeThickness="3" 
 
-                                           SmallTickLength="10"
+SmallTickLength="10"
 
-                                           SmallTickStroke="White"
+SmallTickStroke="White"
 
-                                           SmallTickStrokeThickness="3" 
+SmallTickStrokeThickness="3" 
 
-                                           StartAngle="135" 
+StartAngle="135" 
 
-                                           SweepAngle="270" 
+SweepAngle="270" 
 
-                                           StartValue="0"
+StartValue="0"
 
-                                           EndValue="100">
+EndValue="100">
 
-                </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-            </syncfusion:SfCircularGauge.Scales>
+</syncfusion:SfCircularGauge.Scales>
 
-        </syncfusion:SfCircularGauge>
+</syncfusion:SfCircularGauge>
 {% endhighlight %}
 
 
@@ -225,65 +227,65 @@ By using the Radius property, the Scales radius can be set as required.
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale scale = new CircularScale();
+CircularScale scale = new CircularScale();
 
-            scale.Radius = 200;
+scale.Radius = 200;
 
-            scale.Interval = 10;
+scale.Interval = 10;
 
-            scale.MinorTicksPerInterval = 1;
+scale.MinorTicksPerInterval = 1;
 
-            scale.TickLength = 20;
+scale.TickLength = 20;
 
-            scale.TickStroke = new SolidColorBrush(Colors.White);
+scale.TickStroke = new SolidColorBrush(Colors.White);
 
-            scale.TickStrokeThickness = 3;
+scale.TickStrokeThickness = 3;
 
-            scale.SmallTickLength = 10;
+scale.SmallTickLength = 10;
 
-            scale.StartValue = 0;
+scale.StartValue = 0;
 
-            scale.EndValue = 100;
+scale.EndValue = 100;
 
-            scale.SmallTickStroke = new SolidColorBrush(Colors.White);
+scale.SmallTickStroke = new SolidColorBrush(Colors.White);
 
-            scale.SmallTickStrokeThickness = 3;
+scale.SmallTickStrokeThickness = 3;
 
-            CircularScale scale1 = new CircularScale();
+CircularScale scale1 = new CircularScale();
 
-            scale1.Radius = 300;
+scale1.Radius = 300;
 
-            scale.Interval = 10;
+scale.Interval = 10;
 
-            scale.MinorTicksPerInterval = 1;
+scale.MinorTicksPerInterval = 1;
 
-            scale.TickLength = 20;
+scale.TickLength = 20;
 
-            scale.TickStroke = new SolidColorBrush(Colors.White);
+scale.TickStroke = new SolidColorBrush(Colors.White);
 
-            scale.TickStrokeThickness = 3;
+scale.TickStrokeThickness = 3;
 
-            scale.SmallTickLength = 10;
+scale.SmallTickLength = 10;
 
-            scale.StartValue = 0;
+scale.StartValue = 0;
 
-            scale.EndValue = 100;
+scale.EndValue = 100;
 
-            scale.SmallTickStroke = new SolidColorBrush(Colors.White);
+scale.SmallTickStroke = new SolidColorBrush(Colors.White);
 
-            scale.SmallTickStrokeThickness = 3;
+scale.SmallTickStrokeThickness = 3;
 
-            circularGauge.Scales.Add(scale);
+circularGauge.Scales.Add(scale);
 
-            circularGauge.Scales.Add(scale1);
+circularGauge.Scales.Add(scale1);
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
 {% endhighlight %}
+{% endtabs %}
 
-
-### Screenshot:
+### Screenshot
 
 ![](Scale-Settings_images/Scale-Settings_img2.png)
 
@@ -297,85 +299,86 @@ It helps to add multiple scales to the same circular gauge and also it helps to 
 
 To add multiple scales in a Circular Gauge, the CircularScale collection has to be in the Scales.
 
-#### Code Example:
+#### Code Example
 
+{% tabs %}
 {% highlight xml %}
 
 
 
-    <syncfusion:SfCircularGauge SpacingMargin="0.7">
+<syncfusion:SfCircularGauge SpacingMargin="0.7">
 
-      <syncfusion:SfCircularGauge.Scales>
+<syncfusion:SfCircularGauge.Scales>
 
-                <syncfusion:CircularScale Height="500" Width="500">
+<syncfusion:CircularScale Height="500" Width="500">
 
-                    <syncfusion:CircularScale.Ranges>
+<syncfusion:CircularScale.Ranges>
 
-                        <syncfusion:CircularRange  StartValue="0" 
+<syncfusion:CircularRange  StartValue="0" 
 
-                                                   EndValue="60" 
+EndValue="60" 
 
-                                                   Stroke="#B0B0B0" 
+Stroke="#B0B0B0" 
 
-                                                   StrokeThickness="5" />
+StrokeThickness="5" />
 
-                        <syncfusion:CircularRange  StartValue="60" 
+<syncfusion:CircularRange  StartValue="60" 
 
-                                                   EndValue="100"    
+EndValue="100"    
 
-                                                   Stroke="#C1252C" StrokeThickness="5"/>
+Stroke="#C1252C" StrokeThickness="5"/>
 
-                    </syncfusion:CircularScale.Ranges>
+</syncfusion:CircularScale.Ranges>
 
-                    <syncfusion:CircularScale.Pointers>
+<syncfusion:CircularScale.Pointers>
 
-                        <syncfusion:CircularPointer Value="30" 
+<syncfusion:CircularPointer Value="30" 
 
-                                                    PointerType="SymbolPointer"
+PointerType="SymbolPointer"
 
-                                                    Symbol="InvertedArrow"  
+Symbol="InvertedArrow"  
 
-                                                    SymbolPointerWidth="30" 
+SymbolPointerWidth="30" 
 
-                                                    SymbolPointerHeight="20" 
+SymbolPointerHeight="20" 
 
-                                                    SymbolPointerStroke="Green"/>
+SymbolPointerStroke="Green"/>
 
-                    </syncfusion:CircularScale.Pointers>
+</syncfusion:CircularScale.Pointers>
 
-                </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-                <syncfusion:CircularScale Height="300" Width="300">
+<syncfusion:CircularScale Height="300" Width="300">
 
-                    <syncfusion:CircularScale.Ranges>
+<syncfusion:CircularScale.Ranges>
 
-                        <syncfusion:CircularRange  StartValue="0" 
+<syncfusion:CircularRange  StartValue="0" 
 
-                                                   EndValue="60" 
+EndValue="60" 
 
-                                                   Stroke="#B0B0B0" 
+Stroke="#B0B0B0" 
 
-                                                   StrokeThickness="5" />
+StrokeThickness="5" />
 
-                        <syncfusion:CircularRange  StartValue="60" 
+<syncfusion:CircularRange  StartValue="60" 
 
-                                                   EndValue="100"    
+EndValue="100"    
 
-                                                   Stroke="#C1252C" StrokeThickness="5"/>
+Stroke="#C1252C" StrokeThickness="5"/>
 
-                    </syncfusion:CircularScale.Ranges>
+</syncfusion:CircularScale.Ranges>
 
-                    <syncfusion:CircularScale.Pointers>
+<syncfusion:CircularScale.Pointers>
 
-                        <syncfusion:CircularPointer Value="30" 
+<syncfusion:CircularPointer Value="30" 
 
-                                                    PointerType="NeedlePointer"/>
+PointerType="NeedlePointer"/>
 
-                    </syncfusion:CircularScale.Pointers>
+</syncfusion:CircularScale.Pointers>
 
-                </syncfusion:CircularScale>
+</syncfusion:CircularScale>
 
-            </syncfusion:SfCircularGauge.Scales>
+</syncfusion:SfCircularGauge.Scales>
 
 </syncfusion:SfCircularGauge>
 {% endhighlight %}
@@ -384,52 +387,52 @@ To add multiple scales in a Circular Gauge, the CircularScale collection has to 
 
 
 
-            SfCircularGauge circularGauge = new SfCircularGauge();
+SfCircularGauge circularGauge = new SfCircularGauge();
 
-            CircularScale _mainscale = new CircularScale();
+CircularScale _mainscale = new CircularScale();
 
-            CircularScale scale1 = new CircularScale();
+CircularScale scale1 = new CircularScale();
 
-            CircularScale scale2 = new CircularScale();
+CircularScale scale2 = new CircularScale();
 
-            scale1.Height = 500;
+scale1.Height = 500;
 
-            scale1.Width = 500;
+scale1.Width = 500;
 
-            scale1.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush(Color.FromArgb(0xB0, 0xB0, 0xB0, 0xB0)), StrokeThickness = 5 });
+scale1.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush(Color.FromArgb(0xB0, 0xB0, 0xB0, 0xB0)), StrokeThickness = 5 });
 
-            scale1.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Color.FromArgb(0xFF,0xC1,0x25,0x2C)), StrokeThickness = 5 });
+scale1.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Color.FromArgb(0xFF,0xC1,0x25,0x2C)), StrokeThickness = 5 });
 
-            scale1.Pointers.Add(new CircularPointer() { Value = 30, PointerType = PointerType.SymbolPointer, Symbol = Symbol.InvertedArrow, SymbolPointerWidth = 30, SymbolPointerHeight = 20, SymbolPointerStroke = new SolidColorBrush(Colors.Green) });
+scale1.Pointers.Add(new CircularPointer() { Value = 30, PointerType = PointerType.SymbolPointer, Symbol = Symbol.InvertedArrow, SymbolPointerWidth = 30, SymbolPointerHeight = 20, SymbolPointerStroke = new SolidColorBrush(Colors.Green) });
 
-            scale2.Height = 300;
+scale2.Height = 300;
 
-            scale2.Width = 300;
+scale2.Width = 300;
 
-            scale2.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush((Color.FromArgb(0xB0, 0xB0, 0xB0, 0xB0))), StrokeThickness = 5 });
+scale2.Ranges.Add(new CircularRange() { StartValue = 0, EndValue = 60, Stroke = new SolidColorBrush((Color.FromArgb(0xB0, 0xB0, 0xB0, 0xB0))), StrokeThickness = 5 });
 
-            scale2.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Color.FromArgb(0xFF,0xC1,0x25,0x2C)), StrokeThickness = 5 });
+scale2.Ranges.Add(new CircularRange() { StartValue = 60, EndValue = 100, Stroke = new SolidColorBrush(Color.FromArgb(0xFF,0xC1,0x25,0x2C)), StrokeThickness = 5 });
 
-            scale2.Pointers.Add(new CircularPointer() { Value = 30, PointerType = PointerType.NeedlePointer });
+scale2.Pointers.Add(new CircularPointer() { Value = 30, PointerType = PointerType.NeedlePointer });
 
-            circularGauge.Scales.Add(scale1);
+circularGauge.Scales.Add(scale1);
 
-            circularGauge.Scales.Add(scale2);
+circularGauge.Scales.Add(scale2);
 
-            this.Grid.Children.Add(circularGauge);
+this.Grid.Children.Add(circularGauge);
 {% endhighlight %}
+{% endtabs %}
 
 
 
-
-### Screenshot:
+### Screenshot
 
 ![](Scale-Settings_images/Scale-Settings_img3.png)
 
 
 
 
-### Screenshot:
+### Screenshot
 
 ![](Scale-Settings_images/Scale-Settings_img4.png)
 

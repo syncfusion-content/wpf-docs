@@ -29,7 +29,7 @@ DoubleTextBox exposes the following members:
 
 ### Properties
 
-Property Table
+
 
 <table>
 <tr>
@@ -308,7 +308,7 @@ ZeroColor</td></tr>
 
 ### Methods
 
-Methods table
+
 
 <table>
 <tr>
@@ -339,7 +339,7 @@ Void</td><td>
 
 ### Events
 
-Events table
+
 
 <table>
 <tr>
@@ -437,39 +437,39 @@ The steps to create a DoubleTextBox by using VisualStudio in C# are as follows:
 
 
 
+   ~~~csharp
 
+		public partial class MainWindow : Window
 
-			public partial class MainWindow : Window
+		{
 
-				{
+		public MainWindow()
 
-					public MainWindow()
+		{
 
-					{
+		InitializeComponent();
 
-						InitializeComponent();
+		//Adding DoubleTextBox to Application
 
-						//Adding DoubleTextBox to Application
+		Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new
 
-						Syncfusion.Windows.Shared.DoubleTextBox doubleTextBox = new
+		Syncfusion.Windows.Shared.DoubleTextBox();
 
-									  Syncfusion.Windows.Shared.DoubleTextBox();
+		doubleTextBox.Height = 25;
 
-						doubleTextBox.Height = 25;
+		doubleTextBox.Width = 100;
 
-						doubleTextBox.Width = 100;
+		this.LayoutRoot.Children.Add(doubleTextBox);
 
-						this.LayoutRoot.Children.Add(doubleTextBox);
+		}
 
-					}
+		}
 
-						}
-
-
+   ~~~
 
    ![](Getting-Started_images/Getting-Started_img6.png)
 
-   {:.prettyprint}
+   
 
 N>If you do not set any value to the DoubleTextbox then the default value will be as follows:
 
@@ -481,11 +481,6 @@ Otherwise
 
 Zero will be the default value (based on the MinValue and MaxValue the default value will change).
 
-See Also
-
-####Creating a DoubleTextBox by using XAML
-
-####Creating a DoubleTextBox by using Expression Blend
 
 ### Creating a DoubleTextBox by using XAML
 
@@ -507,37 +502,33 @@ The steps to create a DoubleTextBox by using Visual Studio in XAML are as follow
 
 
 
+   ~~~xaml
+
+
+		<Window x:Class="WpfApp.MainWindow"
+
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+		Title="DoubleTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
 
 
-			<Window x:Class="WpfApp.MainWindow"
+		<Grid x:Name="LayoutRoot">
 
-					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		<syncfusion:DoubleTextBox Height="23" HorizontalAlignment="Left" Margin="110,114,0,0" Name="doubleTextBox1" VerticalAlignment="Top" Width="120" />
 
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		</Grid>
 
-					Title="DoubleTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
-
-
-
-				<Grid x:Name="LayoutRoot">
-
-					<syncfusion:DoubleTextBox Height="23" HorizontalAlignment="Left" Margin="110,114,0,0" Name="doubleTextBox1" VerticalAlignment="Top" Width="120" />
-
-				</Grid>
-
-			</Window>
-
+		</Window>
+		
+   ~~~
 
    ![](Getting-Started_images/Getting-Started_img8.png)
 
-   {:.prettyprint}
 
-See Also
 
-####Creating a DoubleTextBox by using C# 
-
-####Creating a DoubleTextBox by using Expression Blend
 
 ### Creating a DoubleTextBox by using Expression Blend
 
@@ -587,39 +578,34 @@ The steps to create a DoubleTextBox in the application by using Expression Blend
 
 
 
+   ~~~xaml
+
+		<Window x:Class="WpfApp.MainWindow"
+
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+		Title="DoubleTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
 
-			<Window x:Class="WpfApp.MainWindow"
 
-					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		<Grid x:Name="LayoutRoot">
 
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		<syncfusion:DoubleTextBox Height="23" HorizontalAlignment="Left" Margin="110,114,0,0" Name="doubleTextBox1" VerticalAlignment="Top" Width="120" />
 
-					Title="DoubleTextBox Demo" Height="367" Width="492" xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+		</Grid>
 
+		</Window>
 
-
-				<Grid x:Name="LayoutRoot">
-
-					<syncfusion:DoubleTextBox Height="23" HorizontalAlignment="Left" Margin="110,114,0,0" Name="doubleTextBox1" VerticalAlignment="Top" Width="120" />
-
-				</Grid>
-
-			</Window>
-
-
+   ~~~
 
    ![](Getting-Started_images/Getting-Started_img13.png)
 
-   {:.prettyprint}
+   
 
-See Also
 
-####Creating a DoubleTextBox by using C# 
-
-####Creating a DoubleTextBox by using XAML
-
-Blendability
+## Blendability
 
 ## Setting Value
 
@@ -627,22 +613,20 @@ You have to use the Value property to set the value for the DoubleTextBox.
 
 N> Do not use the Text property to set the value for the DoubleTextBox. Use only the Value property.
 
+{% tabs %}
+{% highlight xml %} 
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100"/> 
+{% endhighlight %} 
 
-{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100"/> {% endhighlight %} 
-
-{% highlight C# %} doubleTextBox.Value = 100; {% endhighlight %} 
-
+{% highlight C# %} 
+doubleTextBox.Value = 100;
+ {% endhighlight %} 
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img14.png)
 
 
-
-See Also
-
-####Maximum and Minimum Value
-
-####NullValue Support
 
 ## Setting Minimum and Maximum Value
 
@@ -650,25 +634,21 @@ You can set the Minimum and Maximum value by using the MinVal and MaxVal propert
 
 
 
-<table>
-<tr>
-<td>
-{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100"                           MinValue="-999.99" MaxValue="999.99"/> {% endhighlight %} </td></tr>
-<tr>
-<td>
-{% highlight C# %} doubleTextBox.MinValue = -999.99;doubleTextBox.MaxValue = 999.99; {% endhighlight %} </td></tr>
-</table>
+{% tabs %}
+{% highlight xml %} 
+<syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100" Value="100" 
+MinValue="-999.99" MaxValue="999.99"/> 
+{% endhighlight %} 
+
+{% highlight C# %} 
+doubleTextBox.MinValue = -999.99;doubleTextBox.MaxValue = 999.99; 
+{% endhighlight %} 
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img15.png)
 
 
-
-See Also
-
-####Culture and Number Formats
-
-####Binding Support
 
 ## Setting Watermark
 
@@ -677,17 +657,31 @@ You can set the Watermark for the DoubleTextBox by using the WatermarkText prope
 N> WatermarkText is visible only when the value is null.
 
 
+{% tabs %}
+{% highlight xml %}
+ <syncfusion:DoubleTextBox x:Name="doubleTextBox" 
+ Height="25" Width="100"                           
+ Value="{x:Null}" MinValue="-999" MaxValue="999"     
+ UseNullOption="True"                           
+ WatermarkText="Type Here" WatermarkTextIsVisible="True"/> 
+ {% endhighlight %} 
 
-{% highlight xml %} <syncfusion:DoubleTextBox x:Name="doubleTextBox" Height="25" Width="100"                            Value="{x:Null}" MinValue="-999" MaxValue="999"                            UseNullOption="True"                            WatermarkText="Type Here" WatermarkTextIsVisible="True"/> {% endhighlight %} 
-
-{% highlight C# %} doubleTextBox.UseNullOption = true;doubleTextBox.NullValue = null;doubleTextBox.WatermarkText = "Type Here";doubleTextBox.WatermarkTextIsVisible = true; {% endhighlight %} 
+{% highlight C# %} 
+doubleTextBox.UseNullOption = true;
+doubleTextBox.NullValue = null;
+doubleTextBox.WatermarkText = "Type Here";
+doubleTextBox.WatermarkTextIsVisible = true; 
+{% endhighlight %} 
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img16.png)
 
 
 
-See Also
+{% seealso %}
 
 WatermarkTemplate
+
+{% endseealso %}
 

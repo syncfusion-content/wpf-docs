@@ -11,13 +11,13 @@ documentation: ug
 
 Here is the list of events exposed in GridTree control. Additionally, you have access to all the GridControl events exposed on the GridTreeControl.InternalGrid.
 
-_GridTree Control Events_
+
 
 <table>
 <tr>
 <th>
-{{ '**GridTree control Event**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+GridTree control Event</th><th>
+Description</th></tr>
 <tr>
 <td>
 ModelLoaded</td><td>

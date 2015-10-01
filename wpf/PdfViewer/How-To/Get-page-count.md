@@ -11,6 +11,7 @@ documentation: ug
 
 The number of pages as viewed in the PDF Viewer can be found by using the PageCount property.
 
+{% tabs %}
 {% highlight c# %}
 
 int count = pdfViewer1.PageCount;
@@ -24,3 +25,4 @@ Dim count As Integer = pdfViewer1.PageCount
 
 
 {% endhighlight %}
+{% endtabs %}

@@ -11,6 +11,7 @@ documentation: ug
 
 PDF Viewer also allows you to save the PDF document that is being displayed in the PDF Viewer. The following code example illustrates the same.
 
+{% tabs %}
 {% highlight c# %}
 
 
@@ -40,3 +41,4 @@ Dim lDoc As PdfLoadedDocument = pdfviewer1.LoadedDocument
 lDoc.Save("Sample.pdf")
 
 {% endhighlight %}
+{% endtabs %}

@@ -39,7 +39,7 @@ All the elements are internally maintained as Item.
 
 ### The OlapReport properties and its descriptions are tabulated:
 
-_Table7: Properties_
+
 
 <table>
 <tr>
@@ -140,11 +140,8 @@ Tag property in OlapReport</td></tr>
 
 ![](OlapReport_images/OlapReport_img1.png)
 
-.
-
-
-
-_Figure4: Architecture of Items_
+Architecture of Items
+{:.caption}
 
 ## Dimension Element
 
@@ -200,7 +197,7 @@ The following code will illustrate the creation of different types of dimensions
 
 ### Creating Simple Dimension Element
 
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -235,11 +232,12 @@ dimensionElementRow.Name = "Date"
 dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
 
 {% endhighlight  %}
+{% endtabs %}
 
 ### Creating Sliced Dimension
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -281,6 +279,7 @@ dimensionElementSlicer.Hierarchy.LevelElements("Category").Add("Bikes")
 dimensionElementSlicer.Hierarchy.LevelElements("Category").IncludeAvailableMembers = True
 
 {% endhighlight  %}
+{% endtabs %}
 
 ## Measure Element
 
@@ -289,7 +288,7 @@ In a cube, a measure is a set of values that are based on a column in the cube's
 We can create a measure element just by specifying its name. The following code will illustrate the creation of a measure element:
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -315,6 +314,7 @@ Dim measureElementColumn As MeasureElements = New MeasureElements()
 measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
 
 {% endhighlight  %}
+{% endtabs %}
 
 ## Key Performance Indicator (KPI) Element
 
@@ -329,6 +329,7 @@ Key Performance Indicator (KPI) is a collection of calculations that are associa
 
 We can create a KPI element by specifying its name and giving details of the indicator that are included in the element. 
 
+{% tabs %}
 {% highlight c# %}
 
 KpiElements kpiElement = new KpiElements();
@@ -356,6 +357,7 @@ kpiElement.Elements.Add(New KpiElement With {.Name =
  .ShowKPIValue = True, .ShowKPITrend = True})
 
 {% endhighlight  %}
+{% endtabs %}
 
 ## NamedSet Element
 
@@ -363,6 +365,7 @@ A named set is a collection of tuples and members, which can be defined and save
 
 The following code will describe the creation of a Named set Element:
 
+{% tabs %}
 {% highlight c# %}
 
 NamedSetElement dimensionElementRow = new NamedSetElement();
@@ -386,6 +389,7 @@ Dim dimensionElementRow As NamedSetElement = New NamedSetElement()
 dimensionElementRow.Name = "Negative Margin Products"
 
 {% endhighlight  %}
+{% endtabs %}
 
 ## Sort Element
 
@@ -398,6 +402,7 @@ The result set can be sorted by using the SortElement. We can create Sort elemen
 
 The following report will illustrate the creation of Sort element:
 
+{% tabs %}
 {% highlight c# %}
 
 SortElement sortElement = new SortElement(AxisPosition.Categorical, SortOrder.BDESC, true);
@@ -413,6 +418,7 @@ Dim sortElement As SortElement = New SortElement(AxisPosition.Categorical, SortO
 sortElement.Element.UniqueName = "[Measures].[Internet Sales Amount]"
 
 {% endhighlight  %}
+{% endtabs %}
 
 ## Calculated Member
 
@@ -446,7 +452,7 @@ Calculated Members are the customized measures or dimension members created with
 ### Calculated Measure
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 MeasureElement measureElement = new MeasureElement();
@@ -482,9 +488,11 @@ calculatedMeasure1.AddElement(measureElement)
 olapReport.CalculatedMembers.Add(calculatedMeasure)
 
 {% endhighlight  %}
+{% endtabs %}
 
 ### Calculated Dimension
 
+{% tabs %}
 {% highlight c# %}
 
 DimensionElement internalDimension = new DimensionElement();
@@ -536,6 +544,7 @@ calculateDimension.AddElement(internalDimension)
 olapReport.CalculatedMembers.Add(calculateDimension)
 
 {% endhighlight  %}
+{% endtabs %}
 
 ## Subset Element
 
@@ -543,6 +552,7 @@ Subset Elements are used to filter the result set by their count. It will just f
 
 The following codes will illustrate the creation of a Subset Element:
 
+{% tabs %}
 {% highlight c# %}
 
 SubsetElement subSetElementColumn = new SubsetElement(5);
@@ -571,6 +581,7 @@ olapReport.CategoricalElements.SubSetElement = subSetElementColumn
 olapReport.SeriesElements.SubSetElement = subSetElementRow
 
 {% endhighlight  %}
+{% endtabs %}
 
 ## Filtering slicer elements by range 
 
@@ -580,11 +591,8 @@ This feature enables you to specify a range for filter elements in the slicer fi
 
 It is not required to enter each member manually. This makes filtering easy.   
 
-### Class 
 
-
-
-_Table8: Class Table_
+### Class Table
 
 <table>
 <tr>
@@ -604,7 +612,7 @@ Used to filter values from one range to another. Unique name of the member eleme
 
 ### Constructor 
 
-_Table9: Constructor  Table_ 
+
 
 <table>
 <tr>
@@ -629,7 +637,7 @@ Name for dimension, hierarchy, level, start value and end value.</td></tr>
 
 Following table consists of SlicerRangeFiltersInfo class’s property:
 
-_Table10: Properties Table_
+
 
 <table>
 <tr>
@@ -685,6 +693,7 @@ There are two methods to add range for the filter elements in a slicer field.
 
 In the first method, you can specify the unique name for start and end value. The following code illustrates this:  
 
+{% tabs %}
 {% highlight c# %}
 
 olapReport.SlicerRangeFilters.Add(new SlicerRangeFiltersInfo("[TimeFlat].[201010100031]", "[TimeFlat].[201010100037]"));
@@ -696,9 +705,11 @@ olapReport.SlicerRangeFilters.Add(new SlicerRangeFiltersInfo("[TimeFlat].[20101
 olapReport.SlicerRangeFilters.Add(New SlicerRangeFiltersInfo ("[TimeFlat].[201010100031]", "[TimeFlat].[201010100037]"))
 
 {% endhighlight  %}
+{% endtabs %}
 
 In the second method, you can specify the member name along with dimension name, hierarchy name and level name. Entering the unique name for start and end value is not mandatory.  The following code illustrates this: 
 
+{% tabs %}
 {% highlight c# %}
 
 olapReport.SlicerRangeFilters.Add(new SlicerRangeFiltersInfo { DimensionName = "TimeFlat", HierarchyName = "TimeFlat", LevelName = "TimeId", StartValue = "201010100031", EndValue = "201010100037" });
@@ -712,6 +723,7 @@ olapReport.SlicerRangeFilters.Add(New SlicerRangeFiltersInfo With {.Dimension
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Filtering-slicer-elements-by-range_images/Filtering-slicer-elements-by-range_img1.png)
 
@@ -725,7 +737,7 @@ olapReport.SlicerRangeFilters.Add(New SlicerRangeFiltersInfo With {.Dimension
 
 ## Creating the OlapReport
 
-### To create a report:
+To create a report:
 
 1. Instantiate a new object for OlapReport.
 2. Create the required elements like dimension element, measure elements.
@@ -739,7 +751,7 @@ This section gives you the code snippet to generate different types of report fo
 ### Simple Report
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -807,11 +819,12 @@ olapReport.SeriesElements.Add(dimensionElementRow)
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 ### Report with slicing operation
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -923,11 +936,12 @@ olapReport.SeriesElements.Add(measureElementRow)
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 ### Report with dicing operation
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -1107,14 +1121,14 @@ olapReport.SeriesElements.Add(dimensionElementRow,excludedRowElement)
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 
 
 ### Ordered Report
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -1227,11 +1241,11 @@ olapReport.SeriesElements.Add(dimensionElementRow)
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 ### Report with Filter
 
-
+{% tabs %}
 
 {% highlight c# %}
 
@@ -1343,12 +1357,12 @@ olapReport.FilterElements.Add(New Item With {.ElementValue = filterElement})
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 ### Report with subset 
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -1485,11 +1499,12 @@ olapReport.SeriesElements.SubSetElement = subSetElementRow
 
 
 {% endhighlight  %}
+{% endtabs %}
 
-# Drill down report
+### Drill down report
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -1636,13 +1651,14 @@ dimensionElementRow.Hierarchy.LevelElements("Fiscal Year"). MemberElements(0).Ch
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 
 
-# Drill down report
+### Drill down report
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -1789,13 +1805,13 @@ dimensionElementRow.Hierarchy.LevelElements("Fiscal Year"). MemberElements(0).Ch
 
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 
 ### Report with Top count Filter
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -1907,11 +1923,12 @@ olapReport.SeriesElements.Add(dimensionElementRow)
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 ### Report with Named set
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -2007,11 +2024,12 @@ olapReport.SeriesElements.Add(dimensionElementRow)
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 ### Report with calculated member
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -2188,11 +2206,12 @@ olapReport.SeriesElements.Add(dimensionElementRow)
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 ### Report with KPI Element
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -2306,11 +2325,12 @@ olapReport.SeriesElements.Add(dimensionElementRow)
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 ### Report with member properties
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -2446,3 +2466,4 @@ olapReport.CategoricalElements.Add(measureElementColumn)
 
 
 {% endhighlight  %}
+{% endtabs %}

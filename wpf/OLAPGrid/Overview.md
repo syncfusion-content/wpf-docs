@@ -7,7 +7,7 @@ control: OLAP Grid
 documentation: ug
 ---
 
-# Overview
+# OLAPGrid
 
 Essential OLAP Grid is a tool that is used to represent Multidimensional Data. 
 
@@ -42,7 +42,7 @@ The product comes with numerous samples as well as an extensive documentation to
 
 The following conventions will help you to quickly identify the important sections of information while using the content.
 
-_Convention Table_
+### Convention Table
 
 <table>
 <tr>

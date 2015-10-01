@@ -19,7 +19,7 @@ You can load the OlapReport as a stream to the OlapDataManager using LoadReportD
 The following code snippet will illustrate the loading of the report definition from a stream:
 
 
-
+{% tabs %}
 {% highlight c# %}
 
 olapDataManager.LoadReportDefinitionFromStream(reportStream);
@@ -33,6 +33,7 @@ olapDataManager.LoadReportDefinitionFromStream(reportStream)
 olapDataManager.LoadReport("SalesOn2003")
 
 {% endhighlight  %}
+{% endtabs %}
 
 ## Sequential Diagram
 
@@ -44,7 +45,8 @@ The following sequential diagram shows the workflow of OlapBase when user gives 
 
 
 
-_Figure9: Olap Base sequential diagram_
+Olap Base sequential diagram
+{:.caption}
 
 
 

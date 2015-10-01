@@ -17,21 +17,29 @@ TDIFullScreenMode is the property used to define the full-screen mode for TDI it
 
 
 
+{% tabs %}
+{% highlight xml %}
+<syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" TDIFullScreenMode="WindowMode" />
+{% endhighlight %}
 
-{% highlight xml %}<syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" TDIFullScreenMode="WindowMode" />{% endhighlight %}
-
-{% highlight C# %}documentcontainer1. TDIFullScreenMode=FullScreenMode.WindowMode;{% endhighlight %}
-
+{% highlight C# %}
+documentcontainer1. TDIFullScreenMode=FullScreenMode.WindowMode;
+{% endhighlight %}
+{% endtabs %}
 
 
 N> This feature also applicable for the TabControlExt.
 
+{% tabs %}
 
+{% highlight xml %}
+<syncfusion:TabControlExt Name="tabcontrol1" FullScreenMode="WindowMode"/>
+{% endhighlight %}
 
-{% highlight xml %}<syncfusion:TabControlExt Name="tabcontrol1" FullScreenMode="WindowMode"/>{% endhighlight %}
-
-{% highlight C# %} tabcontrol1. FullScreenMode= FullScreenMode.WindowMode; {% endhighlight %}
-
+{% highlight C# %} 
+tabcontrol1. FullScreenMode= FullScreenMode.WindowMode;
+ {% endhighlight %}
+{% endtabs %}
 
 
 ## Toolbar in DocumentContainer
@@ -46,20 +54,52 @@ A toolbar can be placed with headers in the header panel of TDI items in Documen
 
 
 
+{% tabs %}
+{% highlight xml %}     
+   <syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" >           
+   <syncfusion:DocumentContainer.TDIToolBarTray>         
+   <ToolBarTray>                    <ToolBar>            
+   <Button Content="Tool" />                    </ToolBar>      
+   </ToolBarTray>            </syncfusion:DocumentContainer.TDIToolBarTray>   
+   <Grid syncfusion:DocumentContainer.Header="tab1" />           
+   <Grid syncfusion:DocumentContainer.Header="tab2"/>       
+   </syncfusion:DocumentContainer>
+   {% endhighlight %}
 
-{% highlight xml %}        <syncfusion:DocumentContainer Name="documentcontainer1" Mode="TDI" >            <syncfusion:DocumentContainer.TDIToolBarTray>                <ToolBarTray>                    <ToolBar>                        <Button Content="Tool" />                    </ToolBar>                </ToolBarTray>            </syncfusion:DocumentContainer.TDIToolBarTray>            <Grid syncfusion:DocumentContainer.Header="tab1" />            <Grid syncfusion:DocumentContainer.Header="tab2"/>        </syncfusion:DocumentContainer>{% endhighlight %}
-
-{% highlight C# %} ToolBarTray tooltray = new ToolBarTray();ToolBar toolbar = new ToolBar(); toolbar.Items.Add(new Button{Content="Tool"}); tooltray.ToolBars.Add(toolbar);documentcontainer1.TDIToolBarTray = tooltray;{% endhighlight %}
-
+{% highlight C# %}
+ ToolBarTray tooltray = new ToolBarTray();
+ ToolBar toolbar = new ToolBar(); 
+ toolbar.Items.Add(new Button{Content="Tool"});
+ tooltray.ToolBars.Add(toolbar);
+ documentcontainer1.TDIToolBarTray = tooltray;
+ {% endhighlight %}
+{% endtabs %}
 
 
 This feature is also applicable to TabControlExt, as demonstrated in the following code.
 
 
+{% tabs %}
+{% highlight xml %}     
+   <syncfusion:TabControlExt Name="tabcontrol">           
+   <syncfusion:TabControlExt.ToolBarTray>             
+   <ToolBarTray>                
+   <ToolBar>                     
+   <Button Content="Tool" />  
+   </ToolBar>                
+   </ToolBarTray>         
+   </syncfusion:TabControlExt.ToolBarTray>     
+   </syncfusion:TabControlExt>
+   {% endhighlight %}
 
-{% highlight xml %}        <syncfusion:TabControlExt Name="tabcontrol">            <syncfusion:TabControlExt.ToolBarTray>                <ToolBarTray>                    <ToolBar>                        <Button Content="Tool" />                    </ToolBar>                </ToolBarTray>            </syncfusion:TabControlExt.ToolBarTray>        </syncfusion:TabControlExt>{% endhighlight %}
-
-{% highlight C# %} ToolBarTray tooltray = new ToolBarTray();ToolBar toolbar = new ToolBar(); toolbar.Items.Add(new Button{Content="Tool"}); tooltray.ToolBars.Add(toolbar);tabcontrol.ToolBarTray = tooltray;{% endhighlight %}
+{% highlight C# %} 
+ToolBarTray tooltray = new ToolBarTray();
+ToolBar toolbar = new ToolBar(); 
+toolbar.Items.Add(new Button{Content="Tool"}); 
+tooltray.ToolBars.Add(toolbar);
+tabcontrol.ToolBarTray = tooltray;
+{% endhighlight %}
+{% endtabs %}
 
 ## SizeToContent for MDI Window in DocumentContainer
 
@@ -67,10 +107,17 @@ SizetoContentInMDI is used to resize an MDI window to its child size. This is an
 
 
 
+{% tabs %}
+{% highlight xml %}        
+<syncfusion:DocumentContainer Mode="MDI">   
+         <Grid Name="grid1" syncfusion:DocumentContainer.SizetoContentInMDI="True" Width="200"  Height="200" />  
+		 </syncfusion:DocumentContainer>
+		 {% endhighlight %}
 
-{% highlight xml %}        <syncfusion:DocumentContainer Mode="MDI">            <Grid Name="grid1" syncfusion:DocumentContainer.SizetoContentInMDI="True" Width="200"  Height="200" />        </syncfusion:DocumentContainer>{% endhighlight %}
-
-{% highlight C# %} DocumentContainer.SetSizetoContentInMDI(grid1,true);{% endhighlight %}
+{% highlight C# %} 
+DocumentContainer.SetSizetoContentInMDI(grid1,true);
+{% endhighlight %}
+{% endtabs %}
 
 
 

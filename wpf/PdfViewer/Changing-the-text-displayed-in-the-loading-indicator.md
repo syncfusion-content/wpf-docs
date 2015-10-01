@@ -11,6 +11,7 @@ documentation: ug
 
 PDF Viewer allows you to change the text displayed in the loading indicator. The following code example illustrates the same.
 
+{% tabs %}
 {% highlight C# %}
 
 // Changing the text displayed in the loading indicator
@@ -28,4 +29,4 @@ pdfviewer1. LoadingIndicator.LoadingMessage = "Document loading";
 pdfviewer1.LoadingIndicator.LoadingMessage = "Document loading"
 
 {% endhighlight %}
-
+{% endtabs %}

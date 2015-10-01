@@ -7,7 +7,7 @@ control: NotifyIcon
 documentation: ug
 ---
 
-# Overview
+# NotifyIcon
 
 Notify Icon control is implemented with different animations and shape support. It allows you to add a icon in the notification tray of the system.
 

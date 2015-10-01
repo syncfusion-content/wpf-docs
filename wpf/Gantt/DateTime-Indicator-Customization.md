@@ -30,10 +30,11 @@ Essential Gantt allows you to customize the appearance of the DateTime indicator
 1. The DateTime indicator enables you to find the current date or time in a scheduled timeline.
 2. You can customize the DateTime indicator to give a similar look and feel to your product.
 3. You can change the style of DateTime indicator to differentiate the DateTime indicator from other vertical lines.
-## Properties
+
+### Properties
 
 
-_Properties_
+
 
 <table>
 <tr>
@@ -64,44 +65,44 @@ Adding the DateTime indicator customization will change the appearance and posit
 2. Customize the appearance of the DateTime indicator using the CurrentDateLine API in the Gantt control.
 
 The following code samples illustrate how to customize the DateTime indicator.
-
+{% tabs %}
 {% highlight html %}
 
 
 
 <gantt:GanttControl x:Name="Gantt"
 
-                    Grid.Row="1"
+Grid.Row="1"
 
-                    StickCurrentDateLineTo="Today"
+StickCurrentDateLineTo="Today"
 
-                    ItemsSource="{Binding TaskDetails}">
+ItemsSource="{Binding TaskDetails}">
 
-        <gantt:GanttControl.CurrentDateLine>   
+<gantt:GanttControl.CurrentDateLine>   
 
-                <Line Stroke="Green" 
+<Line Stroke="Green" 
 
-                      StrokeDashArray="5 1 5" 
+StrokeDashArray="5 1 5" 
 
-                      StrokeThickness="2" />
+StrokeThickness="2" />
 
-        </gantt:GanttControl.CurrentDateLine>
+</gantt:GanttControl.CurrentDateLine>
 
-        <gantt:GanttControl.TaskAttributeMapping>
+<gantt:GanttControl.TaskAttributeMapping>
 
-                <gantt:TaskAttributeMapping TaskIdMapping="Id"
+<gantt:TaskAttributeMapping TaskIdMapping="Id"
 
-                                            TaskNameMapping="Name"
+TaskNameMapping="Name"
 
-                                            StartDateMapping="StDate" 
+StartDateMapping="StDate" 
 
-                                            ChildMapping="ChildTask"
+ChildMapping="ChildTask"
 
-                                            FinishDateMapping="EndDate"
+FinishDateMapping="EndDate"
 
-                                            DurationMapping="Duration/>
+DurationMapping="Duration/>
 
-        </gantt:GanttControl.TaskAttributeMapping>
+</gantt:GanttControl.TaskAttributeMapping>
 
 </gantt:GanttControl>
 {% endhighlight  %}
@@ -126,8 +127,9 @@ this.Gantt.vCurrentDateLine.StrokeDashArray = strokeArray;
 this.Gantt.CurrentDateLine.StrokeThickness = 1;
 
 {% endhighlight  %}
+{% endtabs %}
 
-Output
+### Output
 
 The following image shows the resultant output:
 
@@ -137,7 +139,8 @@ The following image shows the resultant output:
 
 
 
-_Customized DateTime Indicator_
+Customized DateTime Indicator
+{:.caption}
 
 ## Sample Link
 

@@ -12,7 +12,7 @@ documentation: ug
 You can load the xml report set by using the LoadReport method.
 
 The following code snippet will illustrate the loading of the report:
-
+{% tabs %}
 {% highlight c# %}
 
 
@@ -28,6 +28,7 @@ olapDataManager.LoadReport(@"C:\SampleReport\RevenueAnalysis.xml");
 olapDataManager.LoadReport("C:\SampleReport\RevenueAnalysis.xml")
 
 {% endhighlight  %}
+{% endtabs %}
 
 ## For Silverlight:
 
@@ -37,6 +38,7 @@ The saved report file can be used with OlapDataManager by serializing it to type
 
 The following code snippet will illustrate the loading of a saved xml report file:
 
+{% tabs %}
 {% highlight c# %}
 
 
@@ -45,7 +47,7 @@ The following code snippet will illustrate the loading of a saved xml report fil
  {
     OpenFileDialog dlg = new OpenFileDialog();
     dlg.Filter = "XML files (*.xml)|*.xml";
-    bool? b = dlg.ShowDialog();
+ bool? b = dlg.ShowDialog();
 
     if (b.HasValue && b.Value)
     {
@@ -59,7 +61,7 @@ The following code snippet will illustrate the loading of a saved xml report fil
         }
         olapDataManager.SetCurrentReport(report);         
     }            
- }
+}
 
 
 {% endhighlight  %}
@@ -100,4 +102,4 @@ End If
  End Sub
 
 {% endhighlight  %}
-
+{% endtabs %}

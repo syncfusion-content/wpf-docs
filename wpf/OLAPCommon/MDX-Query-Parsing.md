@@ -24,7 +24,7 @@ This feature is useful when the user wants to perform drill up or drill down ope
 
 ### Properties
 
-_Table1: Property Table_
+
 
 <table>
 <tr>
@@ -78,6 +78,7 @@ OlapClient [Silverlight]
 
 The following code samples are used to enable and disable the MDX to OLAP parsing and processing of an MDX query into OLAP data.
 
+{% tabs %}
 {% highlight c# %}  
 
      //Enable MDX to OLAP parsing.
@@ -125,5 +126,5 @@ The following code samples are used to enable and disable the MDX to OLAP parsin
             olapDataManager.ExecuteCellSet()
 
 {% endhighlight  %}  
-
+{% endtabs %}
 

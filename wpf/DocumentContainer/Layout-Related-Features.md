@@ -17,7 +17,7 @@ Document Container comes with the support of visual styles, which gives a great 
 
 
 
-Property table
+### Property table
 
 <table>
 <tr>
@@ -35,12 +35,18 @@ Use the following code to set the skin for the Document Container.
 
 
 
+{% tabs %}
+{% highlight xml %}
+<!-- Adding document container -->
+<syncfusion:DocumentContainer Name="DocContainer" syncfusion:SkinStorage.VisualStyle="Office2007Blue" Mode="MDI">
+  …....  …....</syncfusion:DocumentContainer>
+  {% endhighlight %}
 
-{% highlight xml %}<!-- Adding document container --><syncfusion:DocumentContainer Name="DocContainer" syncfusion:SkinStorage.VisualStyle="Office2007Blue" Mode="MDI">  …....  …....</syncfusion:DocumentContainer>{% endhighlight %}
+{% highlight C# %} 
+// Setting the visual style as Office2007Blue SkinStorage.SetVisualStyle(DocContainer, "Office2007Blue"); 
+{% endhighlight %} 
 
-{% highlight C# %} // Setting the visual style as Office2007Blue SkinStorage.SetVisualStyle(DocContainer, "Office2007Blue"); {% endhighlight %} 
-
-
+{% endtabs %}
 
 ![](Layout-Related-Features_images/Layout-Related-Features_img1.jpeg)
 

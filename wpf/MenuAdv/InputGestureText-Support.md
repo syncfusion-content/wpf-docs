@@ -11,7 +11,7 @@ documentation: ug
 
 InputGestureText is used to set MenuItemAdv to display shortcut keys along with its Header. This support can be utilized by using the InputGestureText property. The value given by using this property will be displayed along with the Header of MenuItemAdv. Also, InputGestureText can be displayed in MenuItemAdv by using the command support. If you set the value of the Command property by using ApplicationCommands the corresponding InputGestureText will be displayed along with its header value automatically.
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 MenuAdv helps users to display the shortcut keys along with the MenuItemAdv header.
 
@@ -26,81 +26,81 @@ The value assigned by using the InputGestureText property will be displayed in M
 
 <shared:MenuAdv x:Name="Menu" Margin="10">
 
-                <shared:MenuItemAdv Header="File">
+<shared:MenuItemAdv Header="File">
 
-                    <shared:MenuItemAdv Header="New" InputGestureText="Ctrl+n">
+<shared:MenuItemAdv Header="New" InputGestureText="Ctrl+n">
 
-                        <shared:MenuItemAdv.Icon>
+<shared:MenuItemAdv.Icon>
 
-                            <Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
+<Image Source="/MenuControlDemo;component/Images/NewIcon.jpg"/>
 
-                        </shared:MenuItemAdv.Icon>
+</shared:MenuItemAdv.Icon>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                    <shared:MenuItemAdv Header="Cut" InputGestureText="Ctrl+x">
+<shared:MenuItemAdv Header="Cut" InputGestureText="Ctrl+x">
 
-                        <shared:MenuItemAdv.Icon>
+<shared:MenuItemAdv.Icon>
 
-                            <Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
+<Image Source="/MenuControlDemo;component/Images/CutIcon.jpg"/>
 
-                        </shared:MenuItemAdv.Icon>
+</shared:MenuItemAdv.Icon>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                    <shared:MenuItemAdv Header="Copy" InputGestureText="Ctrl+c">
+<shared:MenuItemAdv Header="Copy" InputGestureText="Ctrl+c">
 
-                        <shared:MenuItemAdv.Icon>
+<shared:MenuItemAdv.Icon>
 
-                            <Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
+<Image Source="/MenuControlDemo;component/Images/CopyIcon.jpg"/>
 
-                        </shared:MenuItemAdv.Icon>
+</shared:MenuItemAdv.Icon>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                    <shared:MenuItemAdv Header="Paste" InputGestureText="Ctrl+v">
+<shared:MenuItemAdv Header="Paste" InputGestureText="Ctrl+v">
 
-                        <shared:MenuItemAdv.Icon>
+<shared:MenuItemAdv.Icon>
 
-                            <Image Source="/MenuControlDemo;component/Images/PasteIcon.jpg"/>
+<Image Source="/MenuControlDemo;component/Images/PasteIcon.jpg"/>
 
-                        </shared:MenuItemAdv.Icon>
+</shared:MenuItemAdv.Icon>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                    <shared:MenuItemAdv Header="Undo" InputGestureText="Ctrl+z">
+<shared:MenuItemAdv Header="Undo" InputGestureText="Ctrl+z">
 
-                        <shared:MenuItemAdv.Icon>
+<shared:MenuItemAdv.Icon>
 
-                            <Image Source="/MenuControlDemo;component/Images/UndoIcon.jpg"/>
+<Image Source="/MenuControlDemo;component/Images/UndoIcon.jpg"/>
 
-                        </shared:MenuItemAdv.Icon>
+</shared:MenuItemAdv.Icon>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                    <shared:MenuItemAdv Header="Redo" InputGestureText="Ctrl+y">
+<shared:MenuItemAdv Header="Redo" InputGestureText="Ctrl+y">
 
-                        <shared:MenuItemAdv.Icon>
+<shared:MenuItemAdv.Icon>
 
-                            <Image Source="/MenuControlDemo;component/Images/RedoIcon.jpg"/>
+<Image Source="/MenuControlDemo;component/Images/RedoIcon.jpg"/>
 
-                        </shared:MenuItemAdv.Icon>
+</shared:MenuItemAdv.Icon>
 
-                    </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                    <shared:MenuItemSeparator/>
+<shared:MenuItemSeparator/>
 
-                </shared:MenuItemAdv>
+</shared:MenuItemAdv>
 
-                <shared:MenuItemAdv Header="Edit"/>
+<shared:MenuItemAdv Header="Edit"/>
 
-                <shared:MenuItemAdv Header="View"/>
+<shared:MenuItemAdv Header="View"/>
 
-                <shared:MenuItemAdv Header="Project"/>
+<shared:MenuItemAdv Header="Project"/>
 
-                <shared:MenuItemAdv Header="Build"/>
+<shared:MenuItemAdv Header="Build"/>
 
-            </shared:MenuAdv>
+</shared:MenuAdv>
 
 {% endhighlight %}
 
@@ -108,11 +108,11 @@ The value assigned by using the InputGestureText property will be displayed in M
 
 
 
-## Properties
+### Properties
 
 The property for the InputGestureText support is described in the following tabulation:
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -130,7 +130,7 @@ String(string.Empty)</td></tr>
 </table>
 
 
-## Sample Link
+### Sample Link
 
 WPF Sample Browser-> Tools -> MenuAdv -> MenuAdv Demo
 

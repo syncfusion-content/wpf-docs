@@ -30,7 +30,7 @@ The following types of series support Animation.
 
 The following APIs are used to customize the Animation.
 
-## Customization API for Animation
+### Customization API for Animation
 
 <table>
 <tr>
@@ -56,9 +56,9 @@ The following example shows the Animation feature for chart series.
 
 <syncfusion:SfChart>
 
-            <syncfusion:ColumnSeries EnableAnimation="True" AnimationDuration="00:00:02" Palette="Metro" XBindingPath="Category" YBindingPath="Count" ItemsSource="{Binding}"/>
+<syncfusion:ColumnSeries EnableAnimation="True" AnimationDuration="00:00:02" Palette="Metro" XBindingPath="Category" YBindingPath="Count" ItemsSource="{Binding}"/>
 
-        </syncfusion:SfChart>
+</syncfusion:SfChart>
 
 {% endhighlight %}
 

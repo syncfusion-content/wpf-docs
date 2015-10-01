@@ -15,6 +15,7 @@ OlapGrid can additionally display dimension member information within a tooltip 
 
 OlapGrid provides drill down information through the Header Cell ToolTip for hierarchical dimensions, enabling efficient preview of data before drilling down. It can be enabled using the following property of OlapGrid.
 
+{% tabs %}
   {% highlight c# %}
 
     
@@ -43,7 +44,7 @@ Me.OlapGrid1.ShowHeaderCellsToolTip = True
     {% endhighlight %}
 
 
-
+{% endtabs %}
 
 
 
@@ -56,6 +57,7 @@ Me.OlapGrid1.ShowHeaderCellsToolTip = True
 
 OlapGrid provides cell information (Measure, Column Header Value, Row Header Value and Cell Value) when the mouse pointer is hovered on the Value Cells. This property can be enabled by:
 
+{% tabs %}
   {% highlight c# %}
 
     
@@ -85,7 +87,7 @@ Me.OlapGrid1.ShowValueCellToolTip = True
     {% endhighlight %}
 
 
-
+{% endtabs %}
 
 
 ![](ToolTip_images/ToolTip_img2.png)

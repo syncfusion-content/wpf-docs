@@ -33,58 +33,59 @@ Refer to the following code to creating a Bullet Graph with all its basic proper
 
 ### Code example
 
+{% tabs %}
 {% highlight html %}
 
 
 <Window x:Class="SfBulletGraph.MainWindow"
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        xmlns:syncfusion ="http://schemas.syncfusion.com/wpf"
+xmlns:syncfusion ="http://schemas.syncfusion.com/wpf"
 
-        Title="MainWindow" Height="350" Width="525">
+Title="MainWindow" Height="350" Width="525">
 
-    <Grid x:Name="LayoutRoot">
+<Grid x:Name="LayoutRoot">
 
-        <syncfusion:SfBulletGraph Orientation="Horizontal" LabelStroke="Black" MajorTickStroke="Black" TickPosition="Below" LabelPosition="Below"  FeaturedMeasure="4.5" ComparativeMeasure="7" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
+<syncfusion:SfBulletGraph Orientation="Horizontal" LabelStroke="Black" MajorTickStroke="Black" TickPosition="Below" LabelPosition="Below"  FeaturedMeasure="4.5" ComparativeMeasure="7" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
-                                  QualitativeRangesSize="30" 
+QualitativeRangesSize="30" 
 
-                                  QuantitativeScaleLength="400">
+QuantitativeScaleLength="400">
 
-                <syncfusion:SfBulletGraph.QualitativeRanges>
+<syncfusion:SfBulletGraph.QualitativeRanges>
 
-                    <syncfusion:QualitativeRange RangeEnd="4.5" 
+<syncfusion:QualitativeRange RangeEnd="4.5" 
 
-                                             RangeStroke="Red"
+RangeStroke="Red"
 
-                                             RangeOpacity="1">
+RangeOpacity="1">
 
-                    </syncfusion:QualitativeRange>
+</syncfusion:QualitativeRange>
 
-                    <syncfusion:QualitativeRange RangeEnd="7.5" 
+<syncfusion:QualitativeRange RangeEnd="7.5" 
 
-                                             RangeStroke="Yellow"
+RangeStroke="Yellow"
 
-                                             RangeOpacity="1">
+RangeOpacity="1">
 
-                    </syncfusion:QualitativeRange>
+</syncfusion:QualitativeRange>
 
-                    <syncfusion:QualitativeRange RangeEnd="10" 
+<syncfusion:QualitativeRange RangeEnd="10" 
 
-                                             RangeStroke="Green"
+RangeStroke="Green"
 
-                                             RangeOpacity="1">
+RangeOpacity="1">
 
-                    </syncfusion:QualitativeRange>
+</syncfusion:QualitativeRange>
 
-                </syncfusion:SfBulletGraph.QualitativeRanges>
+</syncfusion:SfBulletGraph.QualitativeRanges>
 
-            </syncfusion:SfBulletGraph>
+</syncfusion:SfBulletGraph>
 
-    </Grid>
+</Grid>
 
 </Window>
 
@@ -92,45 +93,47 @@ Refer to the following code to creating a Bullet Graph with all its basic proper
 {% highlight c# %}
 
 
-         SfBulletGraph bulletgraph = new SfBulletGraph();
+SfBulletGraph bulletgraph = new SfBulletGraph();
 
-            bulletgraph.QualitativeRangesSize = 30;
+bulletgraph.QualitativeRangesSize = 30;
 
-            bulletgraph.QuantitativeScaleLength = 400;
+bulletgraph.QuantitativeScaleLength = 400;
 
-            bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
+bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
 
-            bulletgraph.Orientation = Orientation.Horizontal;
+bulletgraph.Orientation = Orientation.Horizontal;
 
-            bulletgraph.FeaturedMeasure = 5;
+bulletgraph.FeaturedMeasure = 5;
 
-            bulletgraph.ComparativeMeasure = 5;
+bulletgraph.ComparativeMeasure = 5;
 
-            bulletgraph.LabelStroke = new SolidColorBrush(Colors.Black);
+bulletgraph.LabelStroke = new SolidColorBrush(Colors.Black);
 
-            bulletgraph.MajorTickStroke = new SolidColorBrush(Colors.Black);
+bulletgraph.MajorTickStroke = new SolidColorBrush(Colors.Black);
 
-            bulletgraph.Minimum = 0;
+bulletgraph.Minimum = 0;
 
-            bulletgraph.Maximum = 10;
+bulletgraph.Maximum = 10;
 
-            bulletgraph.Interval = 2;
+bulletgraph.Interval = 2;
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4.5, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.Red) });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4.5, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.Red) });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7.5, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.Yellow) });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7.5, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.Yellow) });
 
-            bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.Green) });
+bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.Green) });
 
-            this.Grid.Children.Add(bulletgraph);        
+this.Grid.Children.Add(bulletgraph);        
 
 
 {% endhighlight %}
+{% endtabs %}
 
 
 ![C:/Users/Giftline/Desktop/blessy1.jpg](Getting-Started_images/Getting-Started_img1.jpeg)
 
-_SfBulletGraph with its Basic property_
+SfBulletGraph with its Basic property
+{:.caption}
 
 
 ## Create the SfBulletGraph with the Syncfusion Reference Manager
@@ -143,174 +146,183 @@ To Add SfBulletGraph Control, follow the steps:
 
    ![](Getting-Started_images/Getting-Started_img2.png)
 
-    _Create a New Project using Visual Studio_
+    Create a New Project using Visual Studio
+	{:.caption}
 
 2. Right-Click on the Project and select SyncfusionReferenceManager.
 
    ![](Getting-Started_images/Getting-Started_img3.png)
 
-   _Selecting the Syncfusion Reference Manager in Visual Studio_
+    Selecting the Syncfusion Reference Manager in Visual Studio
+	{:.caption}
 
 3. The Syncfusion Reference Manager Wizard opens as follows.
 
    ![](Getting-Started_images/Getting-Started_img4.png)
 
-    _Syncfusion Reference Manager Wizard_
+    Syncfusion Reference Manager Wizard
+	{:.caption}
 
 4. Search SfBulletGraph by using SearchBox and select SfBulletGraph Control.  Click done to add the selected SfBulletGraph Control.
 
    ![](Getting-Started_images/Getting-Started_img5.png)
 
-   _Searching SfBulletGraph Control using Syncfusion Reference Manager_
+   Searching SfBulletGraph Control using Syncfusion Reference Manager
+   {:.caption}
 
 5. The SfBulletGraph assemblies is automatically added to the Project after Clicking OK.
 
    ![](Getting-Started_images/Getting-Started_img6.png)
 
-   _Adding Reference Assemblies to the Project_
+   Adding Reference Assemblies to the Project
+   {:.caption}
 
    ![](Getting-Started_images/Getting-Started_img7.png)
 
-   _Acknowledgement Message for Added Syncfusion Assemblies_
+   Acknowledgement Message for Added Syncfusion Assemblies
+   {:.caption}
 
 6. Create a namespace reference to the SfBulletGraph control by using Syncfusion’s global namespace reference schemas.syncfusion.com or the SfBulletGraph control’s namespace reference by using Syncfusion.UI.Xaml.BulletGraph available in the Syncfusion.SfBulletGraph.WPF assembly.
 
-   
+   ~~~xaml   
 		  xmlns:bulletgraph="http://schemas.syncfusion.com/wpf" 
 
 		(or)
 
 		  xmlns:bulletgraph ="clr-    namespace:Syncfusion.UI.Xaml.BulletGraph;assembly=Syncfusion.SfBulletGraph. WPF"
 
-  
+   ~~~  
 
 7. Add the following code to create a simple SfBulletGraph control.
 
-   ~~~ html
-			<Window x:Class="SfBulletGraph.MainWindow"
+   ~~~ xaml
+   
+		<Window x:Class="SfBulletGraph.MainWindow"
 
-					xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-					xmlns:syncfusion ="http://schemas.syncfusion.com/wpf"
+		xmlns:syncfusion ="http://schemas.syncfusion.com/wpf"
 
-					Title="MainWindow" Height="350" Width="525">
+		Title="MainWindow" Height="350" Width="525">
 
-				<Grid x:Name="LayoutRoot">
+		<Grid x:Name="LayoutRoot">
 
-					<syncfusion:SfBulletGraph Orientation="Horizontal" LabelStroke="Black" MajorTickStroke="Black" TickPosition="Below" LabelPosition="Below"  FeaturedMeasure="4.5" ComparativeMeasure="7" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
+		<syncfusion:SfBulletGraph Orientation="Horizontal" LabelStroke="Black" MajorTickStroke="Black" TickPosition="Below" LabelPosition="Below"  FeaturedMeasure="4.5" ComparativeMeasure="7" Minimum="0" Maximum="10" Interval="2"  FlowDirection="Forward"
 
-											  QualitativeRangesSize="30" 
+		QualitativeRangesSize="30" 
 
-											  QuantitativeScaleLength="400">
+		QuantitativeScaleLength="400">
 
-							<syncfusion:SfBulletGraph.QualitativeRanges>
+		<syncfusion:SfBulletGraph.QualitativeRanges>
 
-								<syncfusion:QualitativeRange RangeEnd="4.5" 
+		<syncfusion:QualitativeRange RangeEnd="4.5" 
 
-														 RangeStroke="Red"
+		RangeStroke="Red"
 
-														 RangeOpacity="1">
+		RangeOpacity="1">
 
-								</syncfusion:QualitativeRange>
+		</syncfusion:QualitativeRange>
 
-								<syncfusion:QualitativeRange RangeEnd="7.5" 
+		<syncfusion:QualitativeRange RangeEnd="7.5" 
 
-														 RangeStroke="Yellow"
+		RangeStroke="Yellow"
 
-														 RangeOpacity="1">
+		RangeOpacity="1">
 
-								</syncfusion:QualitativeRange>
+		</syncfusion:QualitativeRange>
 
-								<syncfusion:QualitativeRange RangeEnd="10" 
+		<syncfusion:QualitativeRange RangeEnd="10" 
 
-														 RangeStroke="Green"
+		RangeStroke="Green"
 
-														 RangeOpacity="1">
+		RangeOpacity="1">
 
-								</syncfusion:QualitativeRange>
+		</syncfusion:QualitativeRange>
 
-							</syncfusion:SfBulletGraph.QualitativeRanges>
+		</syncfusion:SfBulletGraph.QualitativeRanges>
 
-						</syncfusion:SfBulletGraph>
+		</syncfusion:SfBulletGraph>
 
-				</Grid>
+		</Grid>
 
-			</Window>
+		</Window>
 
    ~~~
-   {:.prettyprint}
+   
+
+   ~~~csharp
+
+		using System.Windows;
+
+		using Syncfusion.UI.Xaml.BulletGraph;
+
+		namespace BulletGraph
+
+		{
+
+		public partial class MainWindow : Window
+
+		{
+
+		public MainWindow()
+
+		{
+
+		InitializeComponent();
+
+		SfBulletGraph bulletgraph = new SfBulletGraph();
+
+		bulletgraph.QualitativeRangesSize = 30;
+
+		bulletgraph.QuantitativeScaleLength = 400;
+
+		bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
+
+		bulletgraph.Orientation = Orientation.Horizontal;
+
+		bulletgraph.FeaturedMeasure = 5;
+
+		bulletgraph.ComparativeMeasure = 5;
+
+		bulletgraph.LabelStroke = new SolidColorBrush(Colors.Black);
+
+		bulletgraph.MajorTickStroke = new SolidColorBrush(Colors.Black);
+
+		bulletgraph.Minimum = 0;
+
+		bulletgraph.Maximum = 10;
+
+		bulletgraph.Interval = 2;
+
+		bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4.5, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.Red) });
+
+		bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7.5, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.Yellow) });
+
+		bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.Green) });
+
+		this.Grid.Children.Add(bulletgraph);        
+
+		}
 
 
 
-			using System.Windows;
+		}
 
-			using Syncfusion.UI.Xaml.BulletGraph;
-
-			namespace BulletGraph
-
-			{
-
-				public partial class MainWindow : Window
-
-				{
-
-					public MainWindow()
-
-					{
-
-						InitializeComponent();
-
-						SfBulletGraph bulletgraph = new SfBulletGraph();
-
-						bulletgraph.QualitativeRangesSize = 30;
-
-						bulletgraph.QuantitativeScaleLength = 400;
-
-						bulletgraph.FlowDirection = BulletGraphFlowDirection.Forward;
-
-						bulletgraph.Orientation = Orientation.Horizontal;
-
-						bulletgraph.FeaturedMeasure = 5;
-
-						bulletgraph.ComparativeMeasure = 5;
-
-						bulletgraph.LabelStroke = new SolidColorBrush(Colors.Black);
-
-						bulletgraph.MajorTickStroke = new SolidColorBrush(Colors.Black);
-
-						bulletgraph.Minimum = 0;
-
-						bulletgraph.Maximum = 10;
-
-						bulletgraph.Interval = 2;
-
-						bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 4.5, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.Red) });
-
-						bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 7.5, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.Yellow) });
-
-						bulletgraph.QualitativeRanges.Add(new QualitativeRange() { RangeEnd = 10, RangeOpacity = 1, RangeStroke = new SolidColorBrush(Colors.Green) });
-
-						this.Grid.Children.Add(bulletgraph);        
-
-			  }
+		}
+   
+   ~~~
 
 
-
-			  }
-
-			 }
-
-
-
-8.  The simple SfBulletGraph control is created as follows.
+8. The simple SfBulletGraph control is created as follows.
 
    ![](Getting-Started_images/Getting-Started_img8.jpeg)
 
-    _SfBulletGraph with its Basic property_
+    SfBulletGraph with its Basic property
+	{:.caption}
 
-N>   1. The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version. 2. The Syncfusion Reference Manager can be used only in Visual Studio 2010, 2012, and 2013.
+N> 1. The Syncfusion Reference Manager is available in versions 11.3.0.30 and later. It supports referencing assemblies from version 10.4.0.71 version to the current version. 2. The Syncfusion Reference Manager can be used only in Visual Studio 2010, 2012, and 2013.
 
 
 

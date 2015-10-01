@@ -23,11 +23,7 @@ Important class in DataProvider namespace:
 
 The important properties and methods in AdomdDataProvider class are tabulated below:
 
-
-
-
-
-_Table1: Properties_
+###  Properties
 
 <table>
 <tr>
@@ -69,8 +65,7 @@ CubeInfoCollection</td><td>
 
 
 
-
-_Table2: Methods_
+### Methods
 
 
 

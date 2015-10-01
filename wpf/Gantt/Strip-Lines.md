@@ -31,9 +31,9 @@ Essential Gantt provides support for adding Strip Lines in the Gantt chart regio
 
 The Gantt control will get the information from the application to draw the strip lines. Gantt will accept the strip line information in the form of a collection of StripLineInfo objects and process it to draw the strip lines.
 
-## Properties and Events
 
-_Properties_
+
+### Properties
 
 <table>
 <tr>
@@ -147,14 +147,14 @@ Double</td></tr>
 </table>
 
 
-Use Case Scenarios
+### Use Case Scenarios
 
 * You can mark the important dates and meetings in the scheduled time line.
 * Strip lines help you to avoid missing important events.
 
-## Properties
+### Properties
 
-_Properties_
+
 
 <table>
 <tr>
@@ -178,9 +178,9 @@ IEnumerable</td></tr>
 </table>
 
 
-## Enums
+### Enums
 
-_Enums_
+
 
 <table>
 <tr>
@@ -198,9 +198,9 @@ This property contains the following values:Regular: This denotes the normal str
 </table>
 
 
-## Events
+### Events
 
-_Events_
+
 
 <table>
 <tr>
@@ -243,27 +243,27 @@ private List<StripLineInfo> GetStripCollection()
 
 {
 
-            List<StripLineInfo> stripCollection = new List<StripLineInfo>();
+List<StripLineInfo> stripCollection = new List<StripLineInfo>();
 
-            stripCollection.Add(new StripLineInfo() 
+stripCollection.Add(new StripLineInfo() 
 
-            { 
+{ 
 
-             Content =  "Weekly Team Meeting", StartDate = new DateTime(2012, 6, 4), 
+Content =  "Weekly Team Meeting", StartDate = new DateTime(2012, 6, 4), 
 
-             EndDate = new DateTime(2012, 6, 4), 
+EndDate = new DateTime(2012, 6, 4), 
 
-             HorizontalContentAlignment = HorizontalAlignment.Center, 
+HorizontalContentAlignment = HorizontalAlignment.Center, 
 
-             VerticalContentAlignment = VerticalAlignment.Center, 
+VerticalContentAlignment = VerticalAlignment.Center, 
 
-             Background =  Brushes.Gold, RepeatBehavior = Repeat.Week, RepeatFor = 1,
+Background =  Brushes.Gold, RepeatBehavior = Repeat.Week, RepeatFor = 1,
 
-             RepeatUpto = new DateTime(2012, 12, 10),
+RepeatUpto = new DateTime(2012, 12, 10),
 
-             });
+});
 
-            return stripCollection;
+return stripCollection;
 
 }
 
@@ -277,39 +277,39 @@ The following code example illustrates binding the strip line collection to Stri
 
 <sync:GanttControl x:Name="Gantt"
 
-                   Grid.Row="1"
+Grid.Row="1"
 
-                   ShowStripLines="True"
+ShowStripLines="True"
 
-                   StripLines="{Binding StripCollection}">
+StripLines="{Binding StripCollection}">
 
-         <sync:GanttControl.TaskAttributeMapping>
+<sync:GanttControl.TaskAttributeMapping>
 
-                    <sync:TaskAttributeMapping TaskIdMapping="TaskId"
+<sync:TaskAttributeMapping TaskIdMapping="TaskId"
 
-                                               TaskNameMapping="TaskName"
+TaskNameMapping="TaskName"
 
-                                               StartDateMapping="StartDate"
+StartDateMapping="StartDate"
 
-                                               FinishDateMapping="FinishDate"
+FinishDateMapping="FinishDate"
 
-                                               ChildMapping="Child"
+ChildMapping="Child"
 
-                                               DurationMapping="Duration"
+DurationMapping="Duration"
 
-                                               ProgressMapping="Progress"
+ProgressMapping="Progress"
 
-                                            PredecessorMapping="Predecessor"
+PredecessorMapping="Predecessor"
 
-                                            ResourceInfoMapping="Resources"/>
+ResourceInfoMapping="Resources"/>
 
-         </sync:GanttControl.TaskAttributeMapping>
+</sync:GanttControl.TaskAttributeMapping>
 
 </sync:GanttControl>                                                
 
 {% endhighlight  %}
 
-Output
+### Output
 
 The following image shows the Resultant output:
 
@@ -319,9 +319,10 @@ The following image shows the Resultant output:
 
 
 
-_Strip Lines in Gantt Chart_
+Strip Lines in Gantt Chart
+{:.caption}
 
-## Sample Link
+### Sample Link
 
 To view samples:
 

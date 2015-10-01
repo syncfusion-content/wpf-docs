@@ -11,6 +11,7 @@ documentation: ug
 
 PDF Viewer supports acquiring the index of the page being displayed in the PDF Viewer at any moment. The following code example illustrates the same.
 
+{% tabs %}
 {% highlight C# %}
 
 // Acquiring the number of page being displayed in the Viewer  
@@ -28,3 +29,4 @@ int pageCount = pdfviewer1.CurrentPageIndex;
 Dim pageCount As Integer = pdfviewer1. CurrentPageIndex
 
 {% endhighlight %}
+{% endtabs %}

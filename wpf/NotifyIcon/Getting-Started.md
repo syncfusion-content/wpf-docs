@@ -27,8 +27,8 @@ Here are some highlights of our Notify Icon control.
 
 NotifyIcon is created either by using XAML code or with C# code, as follows.
 
-
-{%highlight xml%}
+{% tabs %}
+{% highlight xml %}
 
 
 
@@ -36,17 +36,17 @@ NotifyIcon is created either by using XAML code or with C# code, as follows.
 Icon is Available" BalloonTipTitle="Default NotifyIcon" 
 ShowBalloonTipTime="1000" HideBalloonTipTime="1000"/>
 
-{%endhighlight%}
+{% endhighlight %}
 
-{%highlight c#%}
+{% highlight c# %}
 NotifyIcon notifyIcon = new NotifyIcon();
 notifyIcon.BalloonTipText = "Custom Notify Icon is Available";
 notifyIcon.BalloonTipTitle = "Default NotifyIcon";
 notifyIcon.ShowBalloonTipTime = 1000;
 notifyIcon.HideBalloonTipTime = 1000;
 
-{%endhighlight%}
-
+{% endhighlight %}
+{% endtabs %}
 
 
 ![](Getting-Started_images/Getting-Started_img2.jpeg)

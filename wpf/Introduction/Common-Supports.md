@@ -33,7 +33,7 @@ Most of the Syncfusion controls are enhanced with blend support. The following s
    ![C:/Users/labuser/Desktop/blend_images/Docking-3.png](Common-Supports_images/Common-Supports_img3.png)
 
   
-   {:.prettyprint}
+   
 
 ## Testing
 
@@ -112,7 +112,7 @@ To assign Values in Resource, the resource file need to be updated as per the fo
 
    ![](Common-Supports_images/Common-Supports_img7.jpeg)
 
-   {:.prettyprint}
+  
 
 
 
@@ -123,6 +123,7 @@ N> The default resource file for applicable assemblies can be downloaded by tabl
 How to assign UI Culture to the application?
 
 Mention the culture to be referred while initializing the application, so that you can refer to the appropriate value provided in resource file. The following code illustrates the implementation of culture information settings.
+
 {% highlight c# %}
 public MainWindow()
 
@@ -138,11 +139,12 @@ public MainWindow()
 
   }
 {% endhighlight  %}
+
 ### Localization Resource file
 
 Following table represents available Resource file to the Assemblies and it can be downloaded.
 
-_Properties_
+### Properties
 
 <table>
 <tr>

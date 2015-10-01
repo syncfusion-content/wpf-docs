@@ -13,6 +13,7 @@ The OlapGrid Data can be exported to Excel, Word and PDF file formats. The OlapG
 
 ## Excel Export
 
+{% tabs %}
   {% highlight c# %}
 
     
@@ -42,7 +43,7 @@ Me.OlapGrid1.ExportToExcel("fileName")
     {% endhighlight %}
 
 
-
+{% endtabs %}
 
 
 ![Excel Export](Export_images/Export_img1.png)
@@ -52,6 +53,7 @@ Me.OlapGrid1.ExportToExcel("fileName")
 
 ## Word Export
 
+{% tabs %}
   {% highlight c# %}
 
     
@@ -80,7 +82,7 @@ Me.OlapGrid1.ExportToWord("fileName")
 
     {% endhighlight %}
 
-
+{% endtabs %}
 
 
 
@@ -91,6 +93,7 @@ Me.OlapGrid1.ExportToWord("fileName")
 
 ## Pdf Export
 
+{% tabs %}
   {% highlight c# %}
 
     
@@ -120,7 +123,7 @@ Me.OlapGrid1.ExportToPdf("fileName")
     {% endhighlight %}
 
 
-
+{% endtabs %}
 
 
 
@@ -132,7 +135,7 @@ The Format state of Grid is maintained on exported documents.
 
 
 
-## Sample Location
+### Sample Location
 
 A sample demo is available at the following location:
 
@@ -146,18 +149,18 @@ OLAP Grid for WPF provides support to export itself to CSV file format.
 
 You can export the contents of the OLAP Grid to the CSV file format for future references and analysis purposes.
 
- Methods
+###  Methods
 
-_Methods_
+
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Type</th><th>
+Return Type</th></tr>
 <tr>
 <td>
 Export(string filename)</td><td>
@@ -181,6 +184,7 @@ The GridCsvExport class provides you support for exporting data from OLAP Grid t
 
 * Syncfusion.OlapGridConverter.Wpf
 
+{% tabs %}
   {% highlight c# %}
 
      
@@ -247,14 +251,14 @@ End If
 
     {% endhighlight %}
 
-
+{% endtabs %}
 
 
 
 ![](Export_images/Export_img4.png)
 
 
-## Sample Link
+### Sample Link
 
 {Installation Drive}:\Users\<user name>\AppData\Local\Syncfusion\EssentialStudio\<version    number>\BI\WPF\OlapGrid.Wpf\Samples\Exporting\Exporting Demo
 

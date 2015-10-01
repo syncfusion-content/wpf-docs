@@ -23,9 +23,9 @@ The HierarchyNavigator control provides powerful data binding, which is fully cu
 
 
 
-## Properties
+### Properties
 
-Property table
+
 
 <table>
 <tr>
@@ -79,9 +79,9 @@ Indicates the item that is currently selected.</td><td>
 </td></tr>
 </table>
 
-## Methods
+### Methods
 
-Methods table
+
 
 <table>
 <tr>
@@ -135,9 +135,9 @@ object</td><td>
 More Details</td></tr>
 </table>
 
-## Events
+### Events
 
-Events table
+
 
 <table>
 <tr>
@@ -214,7 +214,7 @@ The steps to create a HierarchyNavigator control in a WPF application by using V
 
 4. On the Properties window, customize the properties of the HierarchyNavigator control.
 
-   {:.prettyprint}
+
    
 ### Creating a HierarchyNavigator control by using Expression Blend
 
@@ -237,8 +237,8 @@ The steps to create a HierarchyNavigator control in a WPF application by using E
 
 
 4. Add the following references with the sample project:
-1. Syncfusion.Shared.WPF.dll
-2. Syncfusion.Tools.WPF.dll
+   1. Syncfusion.Shared.WPF.dll
+   2. Syncfusion.Tools.WPF.dll
 5. On the Window menu, select Assets. This opens the Assets Library dialog box.
 6. In the search box, type HierarchyNavigator, and then press ENTER. This displays the search results.
 
@@ -262,7 +262,7 @@ The steps to create a HierarchyNavigator control in a WPF application by using E
 
 
 
-The HierarchyNavigator Collection Editor contains the Items and the Properties pane. The Items pane contains a list of items that can be added to the HierarchyNavigator control.
+    The HierarchyNavigator Collection Editor contains the Items and the Properties pane. The Items pane contains a list of items that can be added to the HierarchyNavigator control.
 
    ![](Getting-Started_images/Getting-Started_img11.png)
 
@@ -284,7 +284,7 @@ The HierarchyNavigator Collection Editor contains the Items and the Properties p
 
     ![](Getting-Started_images/Getting-Started_img14.png)
 
-    {:.prettyprint}
+    
 
 ### Editing a HierarchyNavigator Template in Expression Blend
 
@@ -306,4 +306,4 @@ You can edit a HierarchyNavigator control after it is added. The steps to edit a
    ![](Getting-Started_images/Getting-Started_img16.png)
 
 
-   {:.prettyprint}
+   

@@ -30,7 +30,7 @@ In the following example, the OLAP Grid component displays Internet Sales Amount
 
 4. Add name for OLAP Grid in the XAML page to access it from code behind.
 
- 
+   ~~~xaml
 
 				<Window x:Class="WpfApplication.MainWindow1"
 
@@ -49,14 +49,16 @@ In the following example, the OLAP Grid component displays Internet Sales Amount
 				</Window>
 
 
-    
+   ~~~
 
 
 
 5. Add the following namespace in the code behind part for manipulating OlapReport and OlapDataManager.
    1. Syncfusion.Olap.Manager
    2. Syncfusion.Olap.Reports
-
+   
+   
+   ~~~csharp
  
 				using Syncfusion.Olap.Manager;
 
@@ -163,9 +165,9 @@ In the following example, the OLAP Grid component displays Internet Sales Amount
 				}
 				
 
-
+   ~~~
     
-
+   ~~~vbnet
  
 
 				Imports Syncfusion.Olap.Manager
@@ -270,13 +272,13 @@ In the following example, the OLAP Grid component displays Internet Sales Amount
 
 
     
-
+   ~~~
 
 
 6. Run the application.
 
    ![](Getting-Started_images/Getting-Started_img3.png)
-   {:.prettyprint}
+   
 
 ## Through Expression Blend
 
@@ -311,7 +313,7 @@ OLAP Grid control can also be created and configured using Expression Blend as i
 
 6. Add name for OLAP Grid in the XAML page for accessing it in code behind.
 
- 
+   ~~~xaml
 
 				<Window
 
@@ -338,7 +340,7 @@ OLAP Grid control can also be created and configured using Expression Blend as i
 				</Window>
 	
 
-
+   ~~~
     
 
 
@@ -347,7 +349,8 @@ OLAP Grid control can also be created and configured using Expression Blend as i
    1. Syncfusion.Olap.Manager
    2. Syncfusion.Olap.Reports
 
-
+   ~~~csharp
+   
 				using Syncfusion.Olap.Manager;
 
 				using Syncfusion.Olap.Reports;
@@ -455,9 +458,9 @@ OLAP Grid control can also be created and configured using Expression Blend as i
 				}
 				
 
-
+   ~~~
     
-
+   ~~~vbnet
  
 				Imports Syncfusion.Olap.Manager
 
@@ -560,13 +563,13 @@ OLAP Grid control can also be created and configured using Expression Blend as i
 				  End Class
 				
 
-
+   ~~~
     
 
 8. Run the application.
 
    ![](Getting-Started_images/Getting-Started_img7.png)
-   {:.prettyprint}
+   
 
 ## Through Code-Behind
 
@@ -596,253 +599,253 @@ OLAP Grid control can also be created and configured using Expression Blend as i
    2. Syncfusion.Olap.Manager
    3. Syncfusion.Olap.Reports
 
- 
+   ~~~csharp 
 
-					using Syncfusion.Windows.Grid.Olap;
+		using Syncfusion.Windows.Grid.Olap;
 
-					using Syncfusion.Olap.Manager;
+		using Syncfusion.Olap.Manager;
 
-					using Syncfusion.Olap.Reports;
+		using Syncfusion.Olap.Reports;
 
 
 
-					namespace WpfApplication1
+		namespace WpfApplication1
 
-					{
+		{
 
-					public partial class MainWindow : Window
+		public partial class MainWindow : Window
 
-					{
+		{
 
-						public MainWindow()
+		public MainWindow()
 
-						{
+		{
 
-							//OLAP Grid instantiation
+		//OLAP Grid instantiation
 
-							OlapGrid olapGrid1 = new OlapGrid();
+		OlapGrid olapGrid1 = new OlapGrid();
 
-							InitializeComponent();
+		InitializeComponent();
 
-							//Connection string is passed to OlapDataManager as an argument
+		//Connection string is passed to OlapDataManager as an argument
 
-							OlapDataManager olapDataManager = new OlapDataManager("Enter a valid connection string");
+		OlapDataManager olapDataManager = new OlapDataManager("Enter a valid connection string");
 
-							//A default OlapReport is set to OlapDataManager
+		//A default OlapReport is set to OlapDataManager
 
-							olapDataManager.SetCurrentReport(CreateOlapReport());
+		olapDataManager.SetCurrentReport(CreateOlapReport());
 
-							//Finally OLAP Grid gets information from the OlapDataManager 
+		//Finally OLAP Grid gets information from the OlapDataManager 
 
-							olapGrid1.OlapDataManager = olapDataManager;
+		olapGrid1.OlapDataManager = olapDataManager;
 
-							olapGrid1.DataBind();
+		olapGrid1.DataBind();
 
-							// OLAP Grid added to the Main Window
+		// OLAP Grid added to the Main Window
 
-							this.AddChild(olapGrid1);
+		this.AddChild(olapGrid1);
 
-						}
+		}
 
-						/// <summary>
+		/// <summary>
 
-						/// Defining OlapReport with Dimension and Measure
+		/// Defining OlapReport with Dimension and Measure
 
-						/// </summary>
+		/// </summary>
 
-						private OlapReport CreateOlapReport()
+		private OlapReport CreateOlapReport()
 
-						{
+		{
 
-							OlapReport olapReport = new OlapReport();
+		OlapReport olapReport = new OlapReport();
 
-							// Setting the Cube name
+		// Setting the Cube name
 
-							olapReport.CurrentCubeName = "Adventure Works";
+		olapReport.CurrentCubeName = "Adventure Works";
 
 
 
-							DimensionElement dimensionElementColumn = new DimensionElement();
+		DimensionElement dimensionElementColumn = new DimensionElement();
 
-							// Specifying the name of the Dimension
+		// Specifying the name of the Dimension
 
-							dimensionElementColumn.Name = "Customer";
+		dimensionElementColumn.Name = "Customer";
 
-							// Specifying the Hierarchy and Level name
+		// Specifying the Hierarchy and Level name
 
-							dimensionElementColumn.AddLevel("Customer Geography", "Country");
+		dimensionElementColumn.AddLevel("Customer Geography", "Country");
 
 
 
-							MeasureElements measureElementColumn = new MeasureElements();
+		MeasureElements measureElementColumn = new MeasureElements();
 
-							//Specifying the Measure name
+		//Specifying the Measure name
 
-							measureElementColumn.Elements.Add(new MeasureElement { Name = "Internet Sales Amount" });
+		measureElementColumn.Elements.Add(new MeasureElement { Name = "Internet Sales Amount" });
 
 
 
-							DimensionElement dimensionElementRow = new DimensionElement();
+		DimensionElement dimensionElementRow = new DimensionElement();
 
-							// Specifying the name of the Dimension
+		// Specifying the name of the Dimension
 
-							dimensionElementRow.Name = "Date";
+		dimensionElementRow.Name = "Date";
 
-							// Specifying the Hierarchy and Level name
+		// Specifying the Hierarchy and Level name
 
-							dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
+		dimensionElementRow.AddLevel("Fiscal", "Fiscal Year");
 
 
 
-							///Adding Dimension in column axis
+		///Adding Dimension in column axis
 
-							olapReport.CategoricalElements.Add(dimensionElementColumn);
+		olapReport.CategoricalElements.Add(dimensionElementColumn);
 
-							///Adding Measure in column axis
+		///Adding Measure in column axis
 
-							olapReport.CategoricalElements.Add(measureElementColumn);
+		olapReport.CategoricalElements.Add(measureElementColumn);
 
-							///Adding Dimension in row axis
+		///Adding Dimension in row axis
 
-							olapReport.SeriesElements.Add(dimensionElementRow);
+		olapReport.SeriesElements.Add(dimensionElementRow);
 
 
 
-							return olapReport;
+		return olapReport;
 
-						}
+		}
 
 
 
-					}
+		}
 
-					}
-					
+		}
 
 
-    
+   ~~~
 
+   ~~~vbnet
 
-				Imports Syncfusion.Windows.Grid.Olap
+		Imports Syncfusion.Windows.Grid.Olap
 
-				Imports Syncfusion.Olap.Manager
+		Imports Syncfusion.Olap.Manager
 
-				Imports Syncfusion.Olap.Reports
+		Imports Syncfusion.Olap.Reports
 
 
 
-				Partial Public Class MainWindow
+		Partial Public Class MainWindow
 
-				Inherits Window
+		Inherits Window
 
-				Public Sub New()
+		Public Sub New()
 
-					'OLAP Grid instantiation
+		'OLAP Grid instantiation
 
-					Dim olapGrid1 As OlapGrid = New OlapGrid()
+		Dim olapGrid1 As OlapGrid = New OlapGrid()
 
-					InitializeComponent()
+		InitializeComponent()
 
-					'Connection string is passed to OlapDataManager as an argument
+		'Connection string is passed to OlapDataManager as an argument
 
-					Dim olapDataManager As OlapDataManager = New OlapDataManager("Enter a valid connection string")
+		Dim olapDataManager As OlapDataManager = New OlapDataManager("Enter a valid connection string")
 
-					'A default OlapReport is set to OlapDataManager
+		'A default OlapReport is set to OlapDataManager
 
-					olapDataManager.SetCurrentReport(CreateOlapReport())
+		olapDataManager.SetCurrentReport(CreateOlapReport())
 
-					'Finally OLAP Grid gets the information from the OlapDataManager
+		'Finally OLAP Grid gets the information from the OlapDataManager
 
-					olapGrid1.OlapDataManager = olapDataManager
+		olapGrid1.OlapDataManager = olapDataManager
 
-					olapGrid1.DataBind()
+		olapGrid1.DataBind()
 
-					'OLAP Grid added to the Main Window
+		'OLAP Grid added to the Main Window
 
-					Me.AddChild(olapGrid1)
+		Me.AddChild(olapGrid1)
 
-				End Sub
+		End Sub
 
 
 
-				  ''' <summary>
+		''' <summary>
 
-				  ''' Defining OlapReport with Dimension and Measure
+		''' Defining OlapReport with Dimension and Measure
 
-				  ''' </summary>
+		''' </summary>
 
-				  Private Function CreateOlapReport() As OlapReport
+		Private Function CreateOlapReport() As OlapReport
 
-			            Dim olapReport As OlapReport = New OlapReport()
+		            Dim olapReport As OlapReport = New OlapReport()
 
-			            ' Setting the Cube name
+		            ' Setting the Cube name
 
-			            olapReport.CurrentCubeName = "Adventure Works"
+		            olapReport.CurrentCubeName = "Adventure Works"
 
 
 
-			            Dim dimensionElementColumn As DimensionElement = New DimensionElement()
+		            Dim dimensionElementColumn As DimensionElement = New DimensionElement()
 
-			            ' Specifying the name of the Dimension
+		            ' Specifying the name of the Dimension
 
-			            dimensionElementColumn.Name = "Customer"
+		            dimensionElementColumn.Name = "Customer"
 
-			            ' Specifying the Hierarchy and Level name
+		            ' Specifying the Hierarchy and Level name
 
-			            dimensionElementColumn.AddLevel("Customer Geography", "Country")
+		            dimensionElementColumn.AddLevel("Customer Geography", "Country")
 
 
 
-			            Dim measureElementColumn As MeasureElements = New MeasureElements()
+		            Dim measureElementColumn As MeasureElements = New MeasureElements()
 
-			            ' Specifying the Measure name
+		            ' Specifying the Measure name
 
-			            measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
+		            measureElementColumn.Elements.Add(New MeasureElement With {.Name = "Internet Sales Amount"})
 
 
 
-			            Dim dimensionElementRow As DimensionElement = New DimensionElement()
+		            Dim dimensionElementRow As DimensionElement = New DimensionElement()
 
-			            ' Specifying the name of the Dimension
+		            ' Specifying the name of the Dimension
 
-			            dimensionElementRow.Name = "Date"
+		            dimensionElementRow.Name = "Date"
 
-			            ' Specifying the Hierarchy and Level name
+		            ' Specifying the Hierarchy and Level name
 
-			            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
+		            dimensionElementRow.AddLevel("Fiscal", "Fiscal Year")
 
 
 
-			            ''' Adding Dimension in column axis
+		            ''' Adding Dimension in column axis
 
-			            olapReport.CategoricalElements.Add(dimensionElementColumn)
+		            olapReport.CategoricalElements.Add(dimensionElementColumn)
 
-			            ''' Adding Measure in column axis
+		            ''' Adding Measure in column axis
 
-			            olapReport.CategoricalElements.Add(measureElementColumn)
+		            olapReport.CategoricalElements.Add(measureElementColumn)
 
-			            ''' Adding Dimension in row axis
+		            ''' Adding Dimension in row axis
 
-			            olapReport.SeriesElements.Add(dimensionElementRow)
+		            olapReport.SeriesElements.Add(dimensionElementRow)
 
 
 
-			            Return olapReport
+		            Return olapReport
 
-				  End Function
+		End Function
 
 
 
-				End Class
-				
+		End Class
 
 
-    
+   ~~~
+
 
 
 
    ![](Getting-Started_images/Getting-Started_img10.png)
-   {:.prettyprint}
+   
 
 ## Design-Time Binding
 
@@ -882,7 +885,7 @@ Creating a Basic Report during design-time
 
 
 
-N> The Next button is enabled only when any one of the connection options are filled properly.
+   N> The Next button is enabled only when any one of the connection options are filled properly.
 
 7. When the connection is valid, it displays the summary page of the Data Source Properties Wizard.
 
@@ -919,4 +922,4 @@ N> The Next button is enabled only when any one of the connection options are fi
 
     ![](Getting-Started_images/Getting-Started_img19.png)
 
-    {:.prettyprint}
+    

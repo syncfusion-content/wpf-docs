@@ -13,7 +13,7 @@ Here, the assemblies that are required in WPF, to use SfMultiColumnDropDownContr
 
 The following is the list of assemblies.
 
-List of assemblies
+### List of assemblies
 
 <table>
 <tr>
@@ -47,6 +47,7 @@ You can either drag the control from Visual Studio or Expression Blend, or add t
 <syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"/>
 
 </Window>
+
 {% endhighlight %}
 
 ## Populating With Data
@@ -72,190 +73,190 @@ Visual Structure of SfMultiColumnDropDownControl
 
 Refer to the following steps to bind the data in SfMultiColumnDropDownControl
 
-1.Create a business object class as Data.
-{% highlight C# %}
+1. Create a business object class as Data.
 
 
+   ~~~csharp
 
-public class Data:INotifyPropertyChanged
 
-    {
+		public class Data:INotifyPropertyChanged
 
-       public string name;
+		{
 
-       public string designation;
+		public string name;
 
-       public string city;
+		public string designation;
 
-       public string country;
+		public string city;
 
-       public event PropertyChangedEventHandler PropertyChanged;
+		public string country;
 
+		public event PropertyChangedEventHandler PropertyChanged;
 
 
 
 
-        public string Name
 
-        {
+		public string Name
 
-            get { return name;}
+		{
 
-            set {name=value; RaisePropertyChanged("Name");}
+		get { return name;}
 
-        }
+		set {name=value; RaisePropertyChanged("Name");}
 
-        public string Designation
+		}
 
-        {
+		public string Designation
 
-            get { return designation; }
+		{
 
-            set { designation = value; RaisePropertyChanged("Designation"); }
+		get { return designation; }
 
-        }
+		set { designation = value; RaisePropertyChanged("Designation"); }
 
-        public string City
+		}
 
-        {
+		public string City
 
-            get { return city; }
+		{
 
-            set { city = value; RaisePropertyChanged("City"); }
+		get { return city; }
 
-        }
+		set { city = value; RaisePropertyChanged("City"); }
 
+		}
 
 
-        public string Country
 
-        {
+		public string Country
 
-            get { return country; }
+		{
 
-            set { country = value; RaisePropertyChanged("Country"); }
+		get { return country; }
 
-        }
+		set { country = value; RaisePropertyChanged("Country"); }
 
+		}
 
 
-        protected virtual void RaisePropertyChanged(string propertyName)
 
-        {
+		protected virtual void RaisePropertyChanged(string propertyName)
 
-            var handler = PropertyChanged;
+		{
 
-            if (handler != null)
+		var handler = PropertyChanged;
 
-                handler(this, new PropertyChangedEventArgs(propertyName));
+		if (handler != null)
 
-        }
+		handler(this, new PropertyChangedEventArgs(propertyName));
 
-    }
+		}
 
-{% endhighlight %}
+		}
 
-2.Create a new class as ViewModel. This class contains the property EmpDetails that s ItemsSource for SfMultiColumnDropdownControl.
+   ~~~
 
-{% highlight C# %}
+2. Create a new class as ViewModel. This class contains the property EmpDetails that s ItemsSource for SfMultiColumnDropdownControl.
 
 
 
+   ~~~csharp
 
-public class Viewmodel : INotifyPropertyChanged
 
- {
+		public class Viewmodel : INotifyPropertyChanged
 
-        public Viewmodel()
+		{
 
-        {
+		public Viewmodel()
 
-            EmpDetails = getData();
+		{
 
-        }
+		EmpDetails = getData();
 
-private ObservableCollection<Data> employeeDetails;
+		}
 
-        public ObservableCollection<Data> EmpDetails
+		private ObservableCollection<Data> employeeDetails;
 
-        {
+		public ObservableCollection<Data> EmpDetails
 
-            get
+		{
 
-            {
+		get
 
-                return employeeDetails;
+		{
 
-            }
+		return employeeDetails;
 
-            set
+		}
 
-            {
+		set
 
-                employeeDetails = value;
+		{
 
-                RaisePropertyChanged("EmpDetails");
+		employeeDetails = value;
 
-            }
+		RaisePropertyChanged("EmpDetails");
 
-        }
+		}
 
-        private ObservableCollection<Data> getData()
+		}
 
-        {
+		private ObservableCollection<Data> getData()
 
-            var item = new ObservableCollection<Data>();
+		{
 
-            item.Add(new Data() { Name = "Stephen", Designation = "Softwareengineer", City = "Washington", Country = "USA" });
+		var item = new ObservableCollection<Data>();
 
-            item.Add(new Data() { Name = "Michael", Designation = "AccountsManager", City = "Parris", Country = "France" });
+		item.Add(new Data() { Name = "Stephen", Designation = "Softwareengineer", City = "Washington", Country = "USA" });
 
-            item.Add(new Data() { Name = "Mike", Designation = "Senior AccountsManager", City = "Rom", Country = "Italy" });
+		item.Add(new Data() { Name = "Michael", Designation = "AccountsManager", City = "Parris", Country = "France" });
 
-            item.Add(new Data() { Name = "Maxwell", Designation = "WebDesigner", City = "CapeTown", Country = "SouthAfrica" });
+		item.Add(new Data() { Name = "Mike", Designation = "Senior AccountsManager", City = "Rom", Country = "Italy" });
 
-            item.Add(new Data() { Name = "David", Designation = "PhpDeveloper", City = "Parris", Country = "France" });
+		item.Add(new Data() { Name = "Maxwell", Designation = "WebDesigner", City = "CapeTown", Country = "SouthAfrica" });
 
-            item.Add(new Data() { Name = "Hussey", Designation = "Quality Analyst", City = "Parris", Country = "France" });
+		item.Add(new Data() { Name = "David", Designation = "PhpDeveloper", City = "Parris", Country = "France" });
 
-            item.Add(new Data() { Name = "Daniel", Designation = "TeamLead", City = "CapeTown", Country = "SouthAfrica" });
+		item.Add(new Data() { Name = "Hussey", Designation = "Quality Analyst", City = "Parris", Country = "France" });
 
-            item.Add(new Data() { Name = "prabu", Designation = "ProductManager", City = "Chennai", Country = "India" });
+		item.Add(new Data() { Name = "Daniel", Designation = "TeamLead", City = "CapeTown", Country = "SouthAfrica" });
 
+		item.Add(new Data() { Name = "prabu", Designation = "ProductManager", City = "Chennai", Country = "India" });
 
 
-            return item;
 
-        }
+		return item;
 
-}
-{% endhighlight %}
+		}
 
-3.Set the ViewModel instance as DataContext to window. Now you can bind the EmpDetails property in ViewModel as ItemsSource to SfMultiColumnDropdownControl.
+		}
+	
+   ~~~	
 
 
-{% highlight xml %}
+3. Set the ViewModel instance as DataContext to window. Now you can bind the EmpDetails property in ViewModel as ItemsSource to SfMultiColumnDropdownControl.
 
 
+   ~~~xaml
+   
+		<Window.DataContext>
 
+		<local:Viewmodel/>
 
+		</Window.DataContext>
 
-<Window.DataContext>
 
-  <local:Viewmodel/>
 
-</Window.DataContext>
+		<syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"
 
+		ItemsSource="{Binding EmpDetails}"
 
+		DisplayMember="Name"
 
-<syncfusion:SfMultiColumnDropDownControl x:Name="sfmulticolumn"
+		ValueMember="Designation" >                                         
 
-                                           ItemsSource="{Binding EmpDetails}"
-
-                                           DisplayMember="Name"
-
-                                           ValueMember="Designation" >                                         
-{% endhighlight %}
+   ~~~		
                                            
 
 The following screenshot illustrates the output of the above code.
@@ -265,6 +266,7 @@ The following screenshot illustrates the output of the above code.
 
 
 SfMuticolumnDropDownControl
+{:.caption}
 
 ### Add SfMultiColumnDropDownControl inside the SfDataGrid
 
@@ -280,7 +282,7 @@ The following code example illustrates how to add SfMultiColumnDropDownControl i
 
 <Window.DataContext>
 
-  <local:Viewmodel/>
+<local:Viewmodel/>
 
 </Window.DataContext>
 
@@ -288,50 +290,52 @@ The following code example illustrates how to add SfMultiColumnDropDownControl i
 
 <syncfusion:SfDataGrid Grid.Row="0" AutoGenerateColumns="False" 
 
-                                    ItemsSource="{Binding SFSource }" >
+ItemsSource="{Binding SFSource }" >
 
-        syncfusion:SfDataGrid.Columns>
+syncfusion:SfDataGrid.Columns>
 
-                <syncfusion:GridTextColumn MappingName="Name"/>
+<syncfusion:GridTextColumn MappingName="Name"/>
 
-                <syncfusion:GridTextColumn MappingName="Designation"/>
+<syncfusion:GridTextColumn MappingName="Designation"/>
 
-                <syncfusion:GridTextColumn MappingName="City"/>
+<syncfusion:GridTextColumn MappingName="City"/>
 
-                <syncfusion:GridMultiColumnDropDownList ItemsSource="{Binding EmpDetails}"
+<syncfusion:GridMultiColumnDropDownList ItemsSource="{Binding EmpDetails}"
 
-                                                  DisplayMember="Name"                                                                                                                                                                                                                    
+DisplayMember="Name"                                                                                                                                                                                                                    
 
-                                                  ValueMember="Designation"
+ValueMember="Designation"
 
-                                                  MappingName="Name"                  
+MappingName="Name"                  
 
-                                                  AutoGenerateColumns="False"
+AutoGenerateColumns="False"
 
-                                                  AllowEditing="True">                                                        
+AllowEditing="True">                                                        
 
-                    <syncfusion:GridMultiColumnDropDownList.Columns >
+<syncfusion:GridMultiColumnDropDownList.Columns >
 
-                        <syncfusion:Columns>
+<syncfusion:Columns>
 
-                            <syncfusion:GridTextColumn MappingName="Name" />
+<syncfusion:GridTextColumn MappingName="Name" />
 
-                            <syncfusion:GridTextColumn MappingName="Designation" />
+<syncfusion:GridTextColumn MappingName="Designation" />
 
-                            <syncfusion:GridTextColumn MappingName="City" />
+<syncfusion:GridTextColumn MappingName="City" />
 
-                             <syncfusion:GridTextColumn MappingName="Country" />                        
+<syncfusion:GridTextColumn MappingName="Country" />                        
 
-                        </syncfusion:Columns>
+</syncfusion:Columns>
 
-                    </syncfusion:GridMultiColumnDropDownList.Columns >
+</syncfusion:GridMultiColumnDropDownList.Columns >
 
-                </syncfusion:GridMultiColumnDropDownList>
+</syncfusion:GridMultiColumnDropDownList>
 
-            </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid.Columns>
 
-        </syncfusion:SfDataGrid>
+</syncfusion:SfDataGrid>
+
 {% endhighlight %}
+
 The following screenshot displays the output for MultiColumnControl inside the SfDataGrid.
 
 ![B:/Support/2015/April/24/Image/Figure3.png](Getting-Started_images/Getting-Started_img3.png)
@@ -339,4 +343,5 @@ The following screenshot displays the output for MultiColumnControl inside the S
 
 
 SfMuticolumnDropDownContorl inside SfDataGrid
+{:.caption}
 

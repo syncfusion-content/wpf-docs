@@ -15,6 +15,7 @@ Drill position enables the user to drill the current position of a selected memb
 
 The following code illustrates how to achieve drill position support in current report:
 
+{% tabs %}
 {% highlight c# %}
 
 olapDataManager.CurrentReport.DrillType = DrillType.DrillPosition;
@@ -26,6 +27,6 @@ olapDataManager.CurrentReport.DrillType = DrillType.DrillPosition;
 olapDataManager.CurrentReport.DrillType = DrillType.DrillPosition
 
 {% endhighlight %}
-
+{% endtabs %}
 
 

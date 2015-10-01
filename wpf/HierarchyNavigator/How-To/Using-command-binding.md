@@ -11,5 +11,5 @@ documentation: ug
 
 The HierarchyNavigator control allows command binding for selected items.
 
-[See also]
+
 

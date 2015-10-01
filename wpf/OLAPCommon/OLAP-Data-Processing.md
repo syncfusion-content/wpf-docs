@@ -33,7 +33,7 @@ To process the OLAP data:
 8. This result set will be formatted to provide input for the controls. The formatted input should be passed to the controls.
 9. The output will be displayed in the controls.
 
-   {:.prettyprint}
+
 
 ## In Silverlight:
 

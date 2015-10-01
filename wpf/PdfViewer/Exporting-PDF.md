@@ -13,6 +13,7 @@ documentation: ug
 
 Essential PDF Viewer allows selected pages to be exported as raster images. Exporting can be done using the ExportAsImage method. This option helps to convert a PDF into an image.
 
+{% tabs %}
 {% highlight C# %}
 
 Bitmap img = pdfViewer1.ExportAsImage(0);
@@ -36,9 +37,11 @@ Dim img As Bitmap = pdfViewer1.ExportAsImage(0)
 img.Save("Sample.png", ImageFormat.Png)
 
 {% endhighlight %}
+{% endtabs %}
 
 You can also specify the page range instead of converting each page.
 
+{% tabs %}
 {% highlight C# %}
 
 Bitmap[] img = pdfViewer1.ExportAsImage(0, 3);
@@ -49,11 +52,13 @@ Bitmap[] img = pdfViewer1.ExportAsImage(0, 3);
 
 Dim img() As Bitmap = pdfViewer1.ExportAsImage(0, 3)
 {% endhighlight %}
+{% endtabs %}
 
 ### Exporting PDFs as Vector Images
 
 Exporting PDFs as vector images can be done using the ExportAsMetafile method. The following code sample demonstrates how a PDF document can be exported as a metafile.
 
+{% tabs %}
 {% highlight C# %}
 
 Metafile img = pdfViewer1.ExportAsMetafile(0);
@@ -77,9 +82,11 @@ Dim img As Metafile = pdfViewer1.ExportAsMetafile(0)
 img.Save("Sample.emf", ImageFormat.Emf)
 
 {% endhighlight %}
+{% endtabs %}
 
 You can also specify the page range instead of converting each page individually.
 
+{% tabs %}
 {% highlight C# %}
 
 Metafile[] img = pdfViewer1.ExportAsMetafile(0, 3);
@@ -91,3 +98,4 @@ Metafile[] img = pdfViewer1.ExportAsMetafile(0, 3);
 Dim img() As Metafile = pdfViewer1.ExportAsMetafile(0, 3)
 
 {% endhighlight %}
+{% endtabs %}
