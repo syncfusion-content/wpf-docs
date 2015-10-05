@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging
+title: Paging| OLAPCommon  | Wpf | Syncfusion
 description: paging
 platform: wpf
 control: OLAPCommon 

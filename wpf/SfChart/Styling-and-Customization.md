@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styling-and-Customization
+title: Styling and Customization| SfChart | Wpf | Syncfusion
 description: styling and customization
 platform: wpf
 control: SfChart

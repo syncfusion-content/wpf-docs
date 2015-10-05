@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range-Settings
+title: Range Settings| Circular Gauge | Wpf | Syncfusion
 description: range settings
 platform: wpf
 control: Circular Gauge

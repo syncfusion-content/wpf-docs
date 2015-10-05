@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Connecting-to-Mondrian-Server-through-XMLA
+title: Connecting to Mondrian Server through XMLA| OLAPCommon | Wpf | Syncfusion
 description: connecting to mondrian server through xmla
 platform: wpf
 control: OLAPCommon

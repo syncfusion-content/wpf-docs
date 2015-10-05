@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Expanded-Mode
+title: Expanded Mode| ColorPickerPalette | Wpf | Syncfusion
 description: expanded mode
 platform: wpf
 control: ColorPickerPalette

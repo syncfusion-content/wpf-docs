@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing-the-color-of-the-Loading-Indicator 
+title: Changing the color of the Loading Indicator | PDF Viewer | Wpf | Syncfusion
 description: changing the color of the loading indicator 
 platform: wpf
 control: PDF Viewer

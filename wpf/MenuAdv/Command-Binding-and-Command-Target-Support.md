@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Command-Binding-and-Command-Target-Support
+title: Command Binding and Command Target Support| MenuAdv | Wpf | Syncfusion
 description: command binding and command target support
 platform: wpf
 control: MenuAdv

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Handle-Navigation-Popup-Events
+title: Handle Navigation Popup Events| Hierarchical Navigator | Wpf | Syncfusion
 description: handle navigation popup events 
 platform: wpf
 control: Hierarchical Navigator

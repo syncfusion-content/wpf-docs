@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Connect-WCF-Service-in-Silverlight-application
+title: Connect WCF Service in Silverlight application| OLAPCommon | Wpf | Syncfusion
 description: connect wcf service in silverlight application
 platform: wpf
 control: OLAPCommon

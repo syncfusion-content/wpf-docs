@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding| OLAP Client  | Wpf | Syncfusion
 description: data binding
 platform: wpf
 control: OLAP Client 

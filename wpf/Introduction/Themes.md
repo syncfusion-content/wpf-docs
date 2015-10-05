@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Themes
+title: Themes| Introduction | Wpf | Syncfusion
 description: themes
 platform: wpf
 control: Introduction

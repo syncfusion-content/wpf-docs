@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional-Formatting
+title: Conditional Formatting| OLAP Grid | Wpf | Syncfusion
 description: conditional formatting
 platform: wpf
 control: OLAP Grid

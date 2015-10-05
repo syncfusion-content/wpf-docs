@@ -1,9 +1,9 @@
 ---
 layout: post
-title: GridTreeNode-Objects
+title: GridTreeNode Objects| GridTree  | Wpf | Syncfusion
 description: gridtreenode objects
 platform: wpf
-control: GridTree Control
+control: GridTree 
 documentation: ug
 ---
 

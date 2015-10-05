@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual-Style
+title: Visual Style| Gantt | Wpf | Syncfusion
 description: visual style
 platform: wpf
 control: Gantt

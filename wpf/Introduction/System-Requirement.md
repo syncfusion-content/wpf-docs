@@ -1,6 +1,6 @@
 ---
 layout: post
-title: System-Requirement
+title: System Requirement| Introduction | Wpf | Syncfusion
 description: system requirement
 platform: wpf
 control: Introduction

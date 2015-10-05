@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populating-Data
+title: Populating Data| GroupBar | Wpf | Syncfusion
 description: populating data
 platform: wpf
 control: GroupBar

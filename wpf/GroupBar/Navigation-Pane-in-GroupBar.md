@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigation-Pane-in-GroupBar
+title: Navigation Pane in GroupBar| GroupBar | Wpf | Syncfusion
 description: navigation pane in groupbar
 platform: wpf
 control: GroupBar

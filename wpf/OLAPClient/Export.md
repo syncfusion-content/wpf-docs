@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export
+title: Export| OLAP Client  | Wpf | Syncfusion
 description: export
 platform: wpf
 control: OLAP Client 

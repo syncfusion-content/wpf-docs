@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-Support
+title: Keyboard Support| Hierarchical Navigator | Wpf | Syncfusion
 description: keyboard support
 platform: wpf
 control: Hierarchical Navigator

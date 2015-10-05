@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Magnifying-PDF-documents 
+title: Magnifying PDF documents | PDF Viewer | Wpf | Syncfusion
 description: magnifying pdf documents
 platform: wpf
 control: PDF Viewer

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DateTime-Indicator-Customization
+title: DateTime Indicator Customization| | Wpf | Syncfusion
 description: datetime indicator customization
 platform: wpf
 control: Gantt

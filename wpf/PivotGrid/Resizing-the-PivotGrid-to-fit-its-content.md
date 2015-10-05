@@ -1,32 +1,32 @@
 ---
 layout: post
-title: Resizing the PivotGrid to fit its content
+title: Resizing the PivotGrid to fit its content| PivotGrid | Wpf | Syncfusion
 description: Resizing the PivotGrid to fit its content
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## Resizing the PivotGrid to fit its content
+# Resizing the PivotGrid to fit its content
 
 PivotGrid provides support for resizing the grid to fit its content while group expanding and collapsing the groups. The grid will be resized after refreshing the page. 
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 This feature will be useful to provide more space to display the controls sharing its parent control during group collapse operation. 
 
-#### Properties
+### Properties
 
-_Property Table_
+
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 ResizePivotGridToFit </td><td>
@@ -37,12 +37,13 @@ NA </td></tr>
 </table>
 
 
-#### Enabling Resizing Pivot Grid
+### Enabling Resizing Pivot Grid
 
 You can enable or disable this feature using the _ResizePivotGridToFit_ property.  To enable resizing, set this property to true. To disable resizing, set this property to false.  By default this is set to false.
 
 The following code illustrates how to enable resizing to fit the content, when you expand or collapse the PivotGrid group:
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -62,6 +63,7 @@ this.pivotGrid1.ResizePivotGridToFit = true;
 Me.pivotGrid1.ResizePivotGridToFit = True 
 
 {% endhighlight %} 
+{% endtabs %}
 
 ![](Features_images/Features_img32.png)
 
@@ -69,6 +71,7 @@ Me.pivotGrid1.ResizePivotGridToFit = True
 
 The following code illustrates how to disable resizing to fit the content, when you expand or collapse the PivotGrid group:
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -87,12 +90,13 @@ this.pivotGrid1.ResizePivotGridToFit = false;
 Me.pivotGrid1.ResizePivotGridToFit = False
 
 {% endhighlight %} 
+{% endtabs %}
 
 ![](Features_images/Features_img33.png)
 
 
 
-#### Sample Link
+### Sample Link
 
 To view samples: 
 

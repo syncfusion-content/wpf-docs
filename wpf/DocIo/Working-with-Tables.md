@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Tables
+title: Working with Tables| DocIO | Wpf | Syncfusion
 description: working with tables
 platform: wpf
 control: DocIO

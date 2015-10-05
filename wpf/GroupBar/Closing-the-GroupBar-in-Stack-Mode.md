@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Closing-the-GroupBar-in-Stack-Mode
+title: Closing the GroupBar in Stack Mode| GroupBar | Wpf | Syncfusion
 description: closing the groupbar in stack mode
 platform: wpf
 control: GroupBar

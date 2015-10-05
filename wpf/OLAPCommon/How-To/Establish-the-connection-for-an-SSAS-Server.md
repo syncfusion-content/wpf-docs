@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Establish-the-connection-for-an-SSAS-Server
+title: Establish the connection for an SSAS Server| OLAPCommon | Wpf | Syncfusion
 description: establish the connection for an ssas server
 platform: wpf
 control: OLAPCommon

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rim-Settings
+title: Rim Settings| Circular Gauge | Wpf | Syncfusion
 description: rim settings
 platform: wpf
 control: Circular Gauge

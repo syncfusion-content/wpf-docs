@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Binding-Support
+title: Binding Support| DoubleTextBox  | Wpf | Syncfusion
 description: binding support
 platform: wpf
 control: DoubleTextBox 

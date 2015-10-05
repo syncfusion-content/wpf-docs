@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing-Data-Templates
+title: Customizing Data Templates| GroupBar | Wpf | Syncfusion
 description: customizing data templates
 platform: wpf
 control: GroupBar

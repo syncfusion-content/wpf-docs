@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Switch-between-Overridden-Styles
+title: Switch between Overridden Styles| SkinManager | Wpf | Syncfusion
 description: switch between overridden styles
 platform: wpf
 control: SkinManager
@@ -17,120 +17,120 @@ The following steps explain how to switch between the overridden styles.
 
 
 
-{% highlight xml %}
+   ~~~xaml
 
-<ResourceDictionary>
+	<ResourceDictionary>
 
-            <ResourceDictionary.MergedDictionaries>
+	<ResourceDictionary.MergedDictionaries>
 
-                <ResourceDictionary Source="/Syncfusion.Shared.WPF;Component/Controls/Calendar/themes/ShinyRedStyle.xaml"/>
+	<ResourceDictionary Source="/Syncfusion.Shared.WPF;Component/Controls/Calendar/themes/ShinyRedStyle.xaml"/>
 
-                <ResourceDictionary Source="/Syncfusion.Shared.WPF;Component/Controls/Calendar/themes/BlendStyle.xaml"/>
+	<ResourceDictionary Source="/Syncfusion.Shared.WPF;Component/Controls/Calendar/themes/BlendStyle.xaml"/>
 
-            </ResourceDictionary.MergedDictionaries>
+	</ResourceDictionary.MergedDictionaries>
 
-        </ResourceDictionary>
+	</ResourceDictionary>
 
 
-{% endhighlight %}
+   ~~~
 
 
 2. Define the new styles using the BasedOn property. 
 
 
 
-The following code snippet explains how to override the Syncfusion style for the Calendar Control.
+   The following code snippet explains how to override the Syncfusion style for the Calendar Control.
 
 
 
-{% highlight xml %}
+   ~~~xaml
 
-<Grid Name="grid">
+	<Grid Name="grid">
 
-        <Grid.Resources>
+	<Grid.Resources>
 
-            <Style x:Key="ShinyRedStyle" TargetType="syncfusion:CalendarEdit" BasedOn="{StaticResource ShinyRedCalendarEditStyle}" >
+	<Style x:Key="ShinyRedStyle" TargetType="syncfusion:CalendarEdit" BasedOn="{StaticResource ShinyRedCalendarEditStyle}" >
 
-                <Setter Property="Background" Value="PaleGoldenRod"/>
+	<Setter Property="Background" Value="PaleGoldenRod"/>
 
-            </Style>
+	</Style>
 
-            <Style x:Key="BlendStyle" TargetType="syncfusion:CalendarEdit" BasedOn="{StaticResource BlendCalendarEditStyle}" >
+	<Style x:Key="BlendStyle" TargetType="syncfusion:CalendarEdit" BasedOn="{StaticResource BlendCalendarEditStyle}" >
 
-                <Setter Property=" Background" Value="Green"/>
+	<Setter Property=" Background" Value="Green"/>
 
-            </Style>
+	</Style>
 
-        </Grid.Resources>
+	</Grid.Resources>
 
-        <Grid.ColumnDefinitions>
+	<Grid.ColumnDefinitions>
 
-            <ColumnDefinition Width="*"/>
+	<ColumnDefinition Width="*"/>
 
-            <ColumnDefinition Width="*"/>
+	<ColumnDefinition Width="*"/>
 
-        </Grid.ColumnDefinitions>
+	</Grid.ColumnDefinitions>
 
-        <ComboBox Name="themecombobox" Grid.Column="0" SelectionChanged="ComboBox_SelectionChanged">
+	<ComboBox Name="themecombobox" Grid.Column="0" SelectionChanged="ComboBox_SelectionChanged">
 
-            <ComboBoxItem>ShinyRed</ComboBoxItem>
+	<ComboBoxItem>ShinyRed</ComboBoxItem>
 
-            <ComboBoxItem>Blend</ComboBoxItem>
+	<ComboBoxItem>Blend</ComboBoxItem>
 
-        </ComboBox>
+	</ComboBox>
 
-        <syncfusion:CalendarEdit Name="calendar" Grid.Column="1"></syncfusion:CalendarEdit>        
+	<syncfusion:CalendarEdit Name="calendar" Grid.Column="1"></syncfusion:CalendarEdit>        
 
-</Grid>
+	</Grid>
 
-{% endhighlight %}
+   ~~~
 
 3. On ComboBox SelectionChanged event, particular overridden style should be set to the control depending on the current visual style. 
 
 
 
-The following code snippet explains how to set the overridden styles to the controls.
+   The following code snippet explains how to set the overridden styles to the controls.
 
 
 
-{% highlight C# %}
+   ~~~xaml
 
 
 
-Private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+		Private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
 
-        {
+		{
 
-            if (themecombobox.SelectedIndex == 0)
+		if (themecombobox.SelectedIndex == 0)
 
-            {
+		{
 
-                SkinStorage.SetVisualStyle(this, "ShinyRed");
+		SkinStorage.SetVisualStyle(this, "ShinyRed");
 
-                System.Windows.Style style = grid.Resources["ShinyRedStyle"] as Style;
+		System.Windows.Style style = grid.Resources["ShinyRedStyle"] as Style;
 
-                calendar.Style = style;
+		calendar.Style = style;
 
-            }
+		}
 
-            else
+		else
 
-            {
+		{
 
-                SkinStorage.SetVisualStyle(this, "Blend");
+		SkinStorage.SetVisualStyle(this, "Blend");
 
-                System.Windows.Style style = grid.Resources["BlendStyle"] as Style;
+		System.Windows.Style style = grid.Resources["BlendStyle"] as Style;
 
-                calendar.Style = style;
+		calendar.Style = style;
 
-            }
-
-
-
-        }
+		}
 
 
-{% endhighlight %}
+
+		}
+
+
+   ~~~
 
 
 The output is displayed as shown below.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MaskType
+title: MaskType| SfMaskedEdit | Wpf | Syncfusion
 description: masktype
 platform: wpf
 control: SfMaskedEdit

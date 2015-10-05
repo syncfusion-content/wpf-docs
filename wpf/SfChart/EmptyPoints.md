@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EmptyPoints
+title: EmptyPoints| SfChart | Wpf | Syncfusion
 description: emptypoints
 platform: wpf
 control: SfChart

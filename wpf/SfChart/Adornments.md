@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adornments
+title: Adornments| SfChart | Wpf | Syncfusion
 description: adornments
 platform: wpf
 control: SfChart
@@ -17,13 +17,13 @@ Chart adornments are used to display values related to a chart segment element. 
 
 
 
-Various adornment customization are as follows,
+The following topic discuss briefly about various adornment customization,
 
 ## Adornments Positioning
 
-The positioning of adornments inside the series is defined inside the Adornment Position property. This property differs in behavior based on the series type used. 
+The positioning of adornments inside the series is defined inside the Adornment Position property. This property differs in behavior based on the series type being used. 
 
-For instance, when you look at the Adornment Position of ColumnSeries, it can be set as TopandBottom and the adornment is placed in the middle of the segment accordingly, whereas in the LineSeries the only available position to display the Chart Adornment is the (x,y) point. 
+For instance, when you look at the Adornment Position of ColumnSeries it can be set as TopandBottom and the adornment is placed in the middle of the segment accordingly, whereas in the LineSeries the only available position to display the Chart Adornment is the (x,y) point. 
 
 Depending upon the requirement, adornments can be positioned in three ways.
 
@@ -81,9 +81,9 @@ The following code example explains the positioning of adornments in the Chart S
 
 ## Customizing Adornments
 
-Adornment customization can be done by enriching the look of how they are placed in the chart. The symbols placed in the adornments can be modified using SymbolWidth and SymbolHeight properties. There are different types of symbols that can be added by using the Symbol property. 
+Adornment customization can be done by enriching the look of how they are placed in the chart. The symbols placed in the adornments can be modified using SymbolWidth and SymbolHeight properties. There are different types of symbol that can be added using Symbol property. 
 
-SfChart allows you to define your own template for symbols by specifying the SymbolTemplate property. Thus, adornments can be modified according to individual specification or preference. 
+SfChart allows you to define your own template for symbols by specifying SymbolTemplate property. Thus, adornments can be modified according to individual specification or preference. 
 
 The following APIs are used in customizing the adornments.
 
@@ -97,11 +97,11 @@ The following APIs are used in customizing the adornments.
 <tr>
 <td>
 HorizontalAlignment</td><td>
-Gets or sets the HorizontalAlignment value that is used to align the adornment to Left, Right, Center or Stretch. </td></tr>
+Gets or sets the HorizontalAlignment value that is used to align the adornment to Left,Right,Center or Stretch. </td></tr>
 <tr>
 <td>
 VerticalAlignment</td><td>
-Gets or sets the VerticalAlignment value that is used to align the adornment to Top, Bottom, Center or Stretch.</td></tr>
+Gets or sets the VerticalAlignment value that is used to align the adornment to Top,Bottom,Center or Stretch.</td></tr>
 <tr>
 <td>
 SegmentLabelContent</td><td>
@@ -145,7 +145,7 @@ Gets or sets the DataTemplate value that represents the template for the adornme
 </table>
 
 
-The following code example explains the customization of adornments.
+The following code explains the customization of adornments.
 
 {% highlight xml %}
 
@@ -239,7 +239,7 @@ Gets or sets the double value that represents the rotation angle for the connect
 </table>
 
 
-The following code example explains how to add connector line to the adornments.
+The following code explains how to add connector line to the adornments.
 
 {% highlight xml %}
 
@@ -409,7 +409,7 @@ EnableSmartLabels="True">
 
 ###Smart Labels with LabelPosition as Inside
 
-Segment label is positioned inside the circular chart. The following code example illustrates how to set the smart labels position to Inside.
+Segment label is positioned inside the circular chart. The following code illustrates how to set the smart labels position to Inside.
 
 {% highlight xml %}
 
@@ -638,10 +638,6 @@ Gets or sets the text color for the adornment labels.</td></tr>
 <td>
 Margin</td><td>
 Gets or sets the outer margin of the adornment labels.</td></tr>
-<tr>
-<td>
-LabelRotationAngle</td><td>
-Gets or sets the double value that represents the angle to rotate the adornment Label.</td></tr>
 </table>
 
 
@@ -694,30 +690,8 @@ SegmentLabelFormat="# cm">
 {% endhighlight %}
 
 
+
 ![](Adornments_images/Adornments_img10.png)
-
-### Adornments Label Rotation    
-
-SfChart allows you to define the angle for adornments by specifying LabelRotationAngle in ChartAdornmentInfo.
-
-The following code example explains the adornments rotation. 
-
-{% highlight xml %}
-
-   <chart:ColumnSeries XBindingPath="Name" Label="Year 2010" YBindingPath="Value"   
-                                              ItemsSource="{Binding Datas}" >
-                                              
-               <chart:ColumnSeries.AdornmentsInfo>
-               
-                   <chart:ChartAdornmentInfo ShowLabel="True" LabelRotationAngle="-45" />
-                   
-               </chart:ColumnSeries.AdornmentsInfo>
-               
-    </chart:ColumnSeries>
-    
-{% endhighlight %}
-
-![](Adornments_images/AdornmentLabelRotation.png)
 
 
 

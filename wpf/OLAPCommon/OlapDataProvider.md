@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OlapDataProvider
+title: OlapDataProvider| OLAPCommon  | Wpf | Syncfusion
 description: olapdataprovider
 platform: wpf
 control: OLAPCommon 

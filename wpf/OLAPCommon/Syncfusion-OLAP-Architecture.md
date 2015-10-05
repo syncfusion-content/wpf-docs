@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion-OLAP-Architecture
+title: Syncfusion OLAP Architecture| OLAPCommon  | Wpf | Syncfusion
 description: syncfusion olap architecture
 platform: wpf
 control: OLAPCommon 

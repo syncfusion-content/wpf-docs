@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-Panel-Visibilities
+title: Setting Panel Visibilities| ColorPickerPalette | Wpf | Syncfusion
 description: setting panel visibilities
 platform: wpf
 control: ColorPickerPalette

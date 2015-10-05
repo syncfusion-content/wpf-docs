@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview| Hierarchical Navigator | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: Hierarchical Navigator

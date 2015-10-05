@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview| OLAP Client  | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: OLAP Client 

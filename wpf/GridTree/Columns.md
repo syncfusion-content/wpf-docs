@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Columns
+title: Columns| GridTree  | Wpf | Syncfusion
 description: columns
 platform: wpf
-control: GridTree Control
+control: GridTree 
 documentation: ug
 ---
 

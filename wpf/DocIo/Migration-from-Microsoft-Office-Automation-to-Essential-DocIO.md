@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Migration-from-Microsoft-Office-Automation-to-Essential-DocIO
+title: Migration from Microsoft Office Automation to Essential DocIO| DocIO | Wpf | Syncfusion
 description: migration from microsoft office automation to essential docio
 platform: wpf
 control: DocIO

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range-Settings 
+title: Range Settings | Bullet Graph  | Wpf | Syncfusion
 description: range settings 
 platform: wpf
 control: Bullet Graph 

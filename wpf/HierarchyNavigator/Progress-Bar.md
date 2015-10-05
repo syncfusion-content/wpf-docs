@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Progress-Bar
+title: Progress Bar| Hierarchical Navigator | Wpf | Syncfusion
 description: progress bar
 platform: wpf
 control: Hierarchical Navigator

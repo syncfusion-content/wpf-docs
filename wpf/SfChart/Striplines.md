@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Striplines
+title: Striplines| SfChart | Wpf | Syncfusion
 description: striplines
 platform: wpf
 control: SfChart
@@ -206,11 +206,6 @@ The following example illustrates the Segmented Stripline feature of chart.
 {% endhighlight %}
 
 ![](Striplines_images/Striplines_img2.png)
-
-Note : When [IncludeStripLineRange](/wpf/SfChart/Axis/IncludeStripLineRange) is enabled to axis, the range of the striplines is included to the axis.
-
-
-
 
 
 

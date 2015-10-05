@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Check-Box-and-Radio-Button-Support
+title: Check Box and Radio Button Support| MenuAdv | Wpf | Syncfusion
 description: check box and radio button support
 platform: wpf
 control: MenuAdv

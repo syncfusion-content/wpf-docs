@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing-templates-with-Expression-Blend
+title: Customizing templates with Expression Blend| Hierarchical Navigator | Wpf | Syncfusion
 description: customizing templates with expression blend
 platform: wpf
 control: Hierarchical Navigator

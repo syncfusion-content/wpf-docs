@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind-an-OlapReport-with-OlapDataManager
+title: Bind an OlapReport with OlapDataManager| OLAPCommon | Wpf | Syncfusion
 description: bind an olapreport with olapdatamanager
 platform: wpf
 control: OLAPCommon

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-a-ToolTip-programmatically
+title: Setting a ToolTip programmatically| Hierarchical Navigator | Wpf | Syncfusion
 description: setting a tooltip programmatically
 platform: wpf
 control: Hierarchical Navigator

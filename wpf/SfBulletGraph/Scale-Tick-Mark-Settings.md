@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scale-Tick-Mark-Settings
+title: Scale Tick Mark Settings| Bullet Graph  | Wpf | Syncfusion
 description: scale tick mark settings
 platform: wpf
 control: Bullet Graph 

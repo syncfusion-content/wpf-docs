@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zooming-and-Printing
+title: Zooming and Printing| RichTextBoxAdv | Wpf | Syncfusion
 description: zooming and printing
 platform: wpf
 control: RichTextBoxAdv
@@ -34,11 +34,9 @@ __RichTextBox.PrintDocument();
 
 
 
-## Properties
+### Properties
 
 
-
-Property Table
 
 <table>
 <tr>
@@ -62,11 +60,9 @@ Double</td></tr>
 </table>
 
 
-## Methods
+### Methods
 
 
-
-Property Table
 
 <table>
 <tr>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tool-Bar-support
+title: Tool Bar support| OLAP Client  | Wpf | Syncfusion
 description: tool bar support
 platform: wpf
 control: OLAP Client 

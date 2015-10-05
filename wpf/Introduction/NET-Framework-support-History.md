@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NET-Framework-support-History
+title: NET Framework support History| Introduction | Wpf | Syncfusion
 description: .net framework support history
 platform: wpf
 control: Introduction

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export-Chart-to-Image-Windows-81
+title: Export Chart to Image Windows 81| SfChart | Wpf | Syncfusion
 description: export chart to image (windows 8.1)
 platform: wpf
 control: SfChart

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding-Content-to-GroupBar-Item
+title: Adding Content to GroupBar Item| GroupBar | Wpf | Syncfusion
 description: adding content to groupbar item
 platform: wpf
 control: GroupBar

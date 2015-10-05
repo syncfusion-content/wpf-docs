@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Migrating-from-Chart-to-SfChart
+title: Migrating from Chart to SfChart| SfChart | Wpf | Syncfusion
 description: migrating from chart to sfchart
 platform: wpf
 control: SfChart

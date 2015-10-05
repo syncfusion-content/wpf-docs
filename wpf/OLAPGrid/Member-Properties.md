@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Member-Properties
+title: Member Properties| OLAP Grid | Wpf | Syncfusion
 description: member properties
 platform: wpf
 control: OLAP Grid

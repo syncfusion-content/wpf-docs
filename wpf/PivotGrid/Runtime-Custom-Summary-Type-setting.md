@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Runtime Custom Summary Type setting
+title: Runtime Custom Summary Type setting| PivotGrid | Wpf | Syncfusion
 description: Runtime Custom Summary Type setting
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## Runtime Custom Summary Type setting
+# Runtime Custom Summary Type setting
 
 This feature enables the user to set the custom summaries to the pivot item at both load time and runtime (using PivotComputationInfo dialog).
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 The user can set different custom summary types at runtime. 
 
@@ -21,18 +21,18 @@ The following screenshot shows the custom summary at runtime:
 
 
 
-#### Property
+### Property
 
-_Property Table_
+
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 CustomSummaryBaseCollection</td><td>
@@ -43,13 +43,13 @@ ObservableCollection of type SummaryBase </td><td>
 </table>
 
 
-#### Sample Link
+### Sample Link
 
 The user can find a sample in the following location:
 
 {InstalledLoction}:\Users\{User}AppData\Local\Syncfusion\EssentialStudio\{InstalledVersion}\BI\WPF\PivotAnalysis.WPF\Samples\Summaries\CustomSummariesDemo
 
-#### Adding Runtime Custom Summary Type setting to an Application 
+## Adding Runtime Custom Summary Type setting to an Application 
 
 To add the feature to an application:
 
@@ -63,9 +63,9 @@ To add the feature to an application:
 
   Hence this property is an ObservableCollection type of SummaryBase that enable the user to add more than one class object. Each object is considered as a unique Custom SummaryBase. 
 
-5. Using the CustomSummaryBaseCollection, set the summary for the respective columns by its Summary property.  
+5.Using the CustomSummaryBaseCollection, set the summary for the respective columns by its Summary property.  
  
-Note: Ensure to set the SummaryType as Custom, otherwise the default type Count will be assigned._ 
+  N> Ensure to set the SummaryType as Custom, otherwise the default type Count will be assigned.
 
 To set Custom Summary at runtime:
 
@@ -74,6 +74,7 @@ To set Custom Summary at runtime:
 
 The following code snippets, explains the implementation of adding Runtime Custom Summary Type settings feature:
 
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -121,5 +122,5 @@ CalcColumn.Summary = Me.Designer.CustomSummaryBaseCollection(0)
 CalcColumn.SummaryType = SummaryType.Custom
 
 {% endhighlight %}  
-
+{% endtabs %}
 

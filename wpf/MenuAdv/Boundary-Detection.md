@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Boundary-Detection
+title: Boundary Detection| MenuAdv | Wpf | Syncfusion
 description: boundary detection
 platform: wpf
 control: MenuAdv

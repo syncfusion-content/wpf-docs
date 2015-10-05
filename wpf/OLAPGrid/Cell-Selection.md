@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell-Selection
+title: Cell Selection| OLAP Grid | Wpf | Syncfusion
 description: cell selection
 platform: wpf
 control: OLAP Grid

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Interactive-Features
+title: Interactive Features| GridTree  | Wpf | Syncfusion
 description: interactive features
 platform: wpf
-control: GridTree Control
+control: GridTree 
 documentation: ug
 ---
 

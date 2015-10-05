@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events-Supported-in-the-PDF-Viewer
+title: Events Supported in the PDF Viewer| PDF Viewer | Wpf | Syncfusion
 description: events supported in the pdf viewer
 platform: wpf
 control: PDF Viewer

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pointer-Settings
+title: Pointer Settings| Circular Gauge | Wpf | Syncfusion
 description: pointer settings
 platform: wpf
 control: Circular Gauge

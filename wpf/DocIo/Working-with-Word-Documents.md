@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Word-Documents
+title: Working with Word Documents| DocIO | Wpf | Syncfusion
 description: working with word documents
 platform: wpf
 control: DocIO

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using-Context-menu-in-GroupBar
+title: Using Context menu in GroupBar| GroupBar | Wpf | Syncfusion
 description: using context menu in groupbar
 platform: wpf
 control: GroupBar

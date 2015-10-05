@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Theming
+title: Theming| OLAP Grid | Wpf | Syncfusion
 description: theming
 platform: wpf
 control: OLAP Grid

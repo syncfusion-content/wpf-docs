@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Extended-Scrolling
+title: Extended Scrolling| DoubleTextBox  | Wpf | Syncfusion
 description: extended scrolling
 platform: wpf
 control: DoubleTextBox 

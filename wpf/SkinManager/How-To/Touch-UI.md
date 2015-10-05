@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Touch-UI
+title: Touch UI| SkinManager | Wpf | Syncfusion
 description: touch ui 
 platform: wpf
 control: SkinManager

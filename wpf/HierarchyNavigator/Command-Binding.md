@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Command-Binding
+title: Command Binding| Hierarchical Navigator | Wpf | Syncfusion
 description: command binding
 platform: wpf
 control: Hierarchical Navigator

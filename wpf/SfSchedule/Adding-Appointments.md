@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding-Appointments
+title: Adding Appointments| SfSchedule | Wpf | Syncfusion
 description: adding appointments
 platform: wpf
 control: SfSchedule
@@ -48,44 +48,45 @@ Schedule supports full data binding to any type of IEnumerable source. Specify t
 
 
 
-Add appointments by using the ItemsSource property.  
+Add appointments by using the ItemsSource property. 
+{% tabs %} 
 {% highlight html %}
 
 
 
-<Window x:Class="SfSch eduleWpf.MainWindow"
+	<Window x:Class="SfSch eduleWpf.MainWindow"
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        xmlns:schedule="http://schemas.syncfusion.com/wpf"
+	xmlns:schedule="http://schemas.syncfusion.com/wpf"
 
-        Title="MainWindow" Height="350" Width="525"
+	Title="MainWindow" Height="350" Width="525"
 
-        WindowState="Maximized">
+	WindowState="Maximized">
 
-    <Grid Name="grid"}">
+	<Grid Name="grid"}">
 
-        <Schedule:SfSchedule Name="schedule" ScheduleType="Day" ItemsSource="{Binding MappedAppointments}">
+	<Schedule:SfSchedule Name="schedule" ScheduleType="Day" ItemsSource="{Binding MappedAppointments}">
 
-            <Schedule:SfSchedule.AppointmentMapping>
+	<Schedule:SfSchedule.AppointmentMapping>
 
-                <Schedule:ScheduleAppointmentMapping
+	<Schedule:ScheduleAppointmentMapping
 
-                    SubjectMapping="MappedSubject"
+	SubjectMapping="MappedSubject"
 
-                    StartTimeMapping="MappedStartTime"
+	StartTimeMapping="MappedStartTime"
 
-                    EndTimeMapping="MappedEndTime"/>
+	EndTimeMapping="MappedEndTime"/>
 
-            </Schedule:SfSchedule.AppointmentMapping>
+	</Schedule:SfSchedule.AppointmentMapping>
 
-        </Schedule:SfSchedule>
+	</Schedule:SfSchedule>
 
-    </Grid>
+	</Grid>
 
-</Window>
+	</Window>
 
 
 {% endhighlight  %}
@@ -93,53 +94,54 @@ Add appointments by using the ItemsSource property.
 
 
 
-   public partial class MainWindow : Window
+public partial class MainWindow : Window
 
-    {
+{
 
-        public ObservableCollection<MappedAppointment> MappedAppointments { get; set; }
+public ObservableCollection<MappedAppointment> MappedAppointments { get; set; }
 
-        public MainWindow()
+public MainWindow()
 
-        {
+{
 
-            InitializeComponent();
+InitializeComponent();
 
-            MappedAppointments = new ObservableCollection<MappedAppointment>
+MappedAppointments = new ObservableCollection<MappedAppointment>
 
-                     {
+{
 
-                         new MappedAppointment{MappedSubject = "Meeting", MappedStartTime = DateTime.Now.Date.AddHours(10), 
+new MappedAppointment{MappedSubject = "Meeting", MappedStartTime = DateTime.Now.Date.AddHours(10), 
 
-                                                 MappedEndTime = DateTime.Now.Date.AddHours(11)},
+				 MappedEndTime = DateTime.Now.Date.AddHours(11)},
 
-                         new MappedAppointment{MappedSubject = "Conference", MappedStartTime = DateTime.Now.Date.AddHours(15), 
+new MappedAppointment{MappedSubject = "Conference", MappedStartTime = DateTime.Now.Date.AddHours(15), 
 
-                                                 MappedEndTime = DateTime.Now.Date.AddHours(16)},
+				 MappedEndTime = DateTime.Now.Date.AddHours(16)},
 
-                     };
+};
 
-            this.DataContext = this;
+this.DataContext = this;
 
-        }
+}
 
-    }
+}
 
 
 
-    public class MappedAppointment
+public class MappedAppointment
 
-    {
+{
 
-        public string MappedSubject { get; set; }
+public string MappedSubject { get; set; }
 
-        public DateTime MappedStartTime { get; set; }
+public DateTime MappedStartTime { get; set; }
 
-        public DateTime MappedEndTime { get; set; }
+public DateTime MappedEndTime { get; set; }
 
-    }
+}
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Adding-Appointments_images/Adding-Appointments_img2.png)
 

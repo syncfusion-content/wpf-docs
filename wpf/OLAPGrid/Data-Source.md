@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Source
+title: Data Source| OLAP Grid | Wpf | Syncfusion
 description: data source
 platform: wpf
 control: OLAP Grid

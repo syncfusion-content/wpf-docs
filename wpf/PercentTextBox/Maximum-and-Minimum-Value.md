@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maximum-and-Minimum-Value
+title: Maximum and Minimum Value| PercentTextBox  | Wpf | Syncfusion
 description: maximum and minimum value
 platform: wpf
 control: PercentTextBox 
@@ -43,14 +43,24 @@ If this property is set to true, then when you enter a value greater than the Ma
 
 N> This will be enabled only when the MaxValidation is set to OnKeyPress.
 
-<table>
-<tr>
-<td>
-{% highlight xml %}<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"                             MinValue="-999" MaxValue="999"                             MinValidation="OnKeyPress" MaxValidation="OnLostFocus"                            MinValueOnExceedMinDigit="True"                             MaxValueOnExceedMaxDigit="True"/>{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight c# %}PercentTextBox percentTextBox = new PercentTextBox();percentTextBox.Width = 150;percentTextBox.Height = 25;percentTextBox.MinValue = -999.99;percentTextBox.MaxValue = 999.99;percentTextBox.MinValidation = MinValidation.OnKeyPress;percentTextBox.MaxValidation = MaxValidation.OnLostFocus;percentTextBox.MinValueOnExceedMinDigit = true;percentTextBox.MaxValueOnExceedMaxDigit = true;{% endhighlight %}</td></tr>
-</table>
+{% tabs %}
+{% highlight xml %}
+<syncfusion:PercentTextBox x:Name="percentTextBox" Height="25" Width="150"      
+                       MinValue="-999" MaxValue="999"    
+					   MinValidation="OnKeyPress" MaxValidation="OnLostFocus"    
+					   MinValueOnExceedMinDigit="True"                        
+					   MaxValueOnExceedMaxDigit="True"/>{% endhighlight %}
+
+{% highlight c# %}
+PercentTextBox percentTextBox = new PercentTextBox();
+percentTextBox.Width = 150;percentTextBox.Height = 25;
+percentTextBox.MinValue = -999.99;percentTextBox.MaxValue = 999.99;
+percentTextBox.MinValidation = MinValidation.OnKeyPress;
+percentTextBox.MaxValidation = MaxValidation.OnLostFocus;
+percentTextBox.MinValueOnExceedMinDigit = true;
+percentTextBox.MaxValueOnExceedMaxDigit = true;
+{% endhighlight %}
+{% endtabs %}
 
 
 Initially there is no value assigned to the PercentTextBox. So it displays the default value as zero.

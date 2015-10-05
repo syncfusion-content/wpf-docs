@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disabling-Dragging-and-Dropping-of-TDI-Items-in-DockingManager-and-DocumentContainer
+title: Disabling Dragging and Dropping of TDI Items in DockingManager and DocumentContainer| DocumentContainer | Wpf | Syncfusion
 description: disabling dragging and dropping of tdi items in dockingmanager and documentcontainer
 platform: wpf
 control: DocumentContainer

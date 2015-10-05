@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend
+title: Legend| SfChart | Wpf | Syncfusion
 description: legend
 platform: wpf
 control: SfChart

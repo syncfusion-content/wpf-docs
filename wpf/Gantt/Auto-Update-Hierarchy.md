@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Auto-Update-Hierarchy
+title: Auto Update Hierarchy| Gantt | Wpf | Syncfusion
 description: auto update hierarchy
 platform: wpf
 control: Gantt

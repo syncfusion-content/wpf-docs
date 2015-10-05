@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editing-and-AutoCompletion
+title: Editing and AutoCompletion| SfMultiColumnDropDownControl | Wpf | Syncfusion
 description: editing and autocompletion
 platform: wpf
 control: SfMultiColumnDropDownControl

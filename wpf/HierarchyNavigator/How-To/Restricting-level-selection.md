@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Restricting-level-selection
+title: Restricting level selection| Hierarchical Navigator | Wpf | Syncfusion
 description: restricting level selection
 platform: wpf
 control: Hierarchical Navigator

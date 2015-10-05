@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Bookmarks
+title: Working with Bookmarks| DocIO | Wpf | Syncfusion
 description: working with bookmarks
 platform: wpf
 control: DocIO

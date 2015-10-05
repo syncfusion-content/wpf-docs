@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Searching-Text 
+title: Searching Text | PDF Viewer | Wpf | Syncfusion
 description: searching text 
 platform: wpf
 control: PDF Viewer

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RTL-Support
+title: RTL Support| OLAP Grid | Wpf | Syncfusion
 description: rtl support
 platform: wpf
 control: OLAP Grid

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing-the-orientations-of-GroupBar-GroupBar-itemsGroupView-GroupViewItems
+title: Changing the orientations of GroupBar GroupBar itemsGroupView GroupViewItems| GroupBar | Wpf | Syncfusion
 description: changing the orientations of groupbar, groupbar items,groupview, groupviewitems
 platform: wpf
 control: GroupBar

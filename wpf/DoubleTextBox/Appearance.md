@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance| DoubleTextBox  | Wpf | Syncfusion
 description: appearance           
 platform: wpf
 control: DoubleTextBox 

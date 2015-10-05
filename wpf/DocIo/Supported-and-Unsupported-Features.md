@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported-and-Unsupported-Features
+title: Supported and Unsupported Features| DocIO | Wpf | Syncfusion
 description: supported and unsupported features
 platform: wpf
 control: DocIO

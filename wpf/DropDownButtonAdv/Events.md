@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events
+title: Events| DropDownButtonAdv | Wpf | Syncfusion
 description: events
 platform: wpf
 control: DropDownButtonAdv

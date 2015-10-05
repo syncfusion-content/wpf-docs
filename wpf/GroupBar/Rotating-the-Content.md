@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rotating-the-Content
+title: Rotating the Content| GroupBar | Wpf | Syncfusion
 description: rotating the content
 platform: wpf
 control: GroupBar

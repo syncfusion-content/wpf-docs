@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout-Related-Features
+title: Layout Related Features| NotifyIcon | Wpf | Syncfusion
 description: layout related features
 platform: wpf
 control: NotifyIcon

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UIAutomation
+title: UIAutomation| SfMultiColumnDropDownControl | Wpf | Syncfusion
 description: uiautomation
 platform: wpf
 control: SfMultiColumnDropDownControl

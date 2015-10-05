@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ContextMenuType
+title: ContextMenuType| SfSchedule | Wpf | Syncfusion
 description: contextmenutype 
 platform: wpf
 control: SfSchedule
@@ -10,13 +10,14 @@ documentation: ug
 # ContextMenuType 
 
 The collection of MenuItem elements can be organized by ContextMenuType property.
+{% tabs %}
 {% highlight html %}
 
 
 
-        <Schedule:SfSchedule x:Name="schedule"   ScheduleType="Week" ContextMenuType="RadialMenu">
+	<Schedule:SfSchedule x:Name="schedule"   ScheduleType="Week" ContextMenuType="RadialMenu">
 
-        </Schedule:SfSchedule>
+	</Schedule:SfSchedule>
 
 {% endhighlight  %}
 
@@ -25,17 +26,18 @@ The collection of MenuItem elements can be organized by ContextMenuType property
 
 
 
-            SfSchedule schedule = new SfSchedule();
+SfSchedule schedule = new SfSchedule();
 
-            schedule.ScheduleType = ScheduleType.Week;
+schedule.ScheduleType = ScheduleType.Week;
 
-           schedule.EnableTouch = true;  
+schedule.EnableTouch = true;  
 
-            this.grid.Children.Add(schedule);
+this.grid.Children.Add(schedule);
 
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](ContextMenuType_images/ContextMenuType_img1.png)
 

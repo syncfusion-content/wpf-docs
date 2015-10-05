@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding-and-Removing-Items-from-the-Document-Container-Control
+title: Adding and Removing Items from the Document Container Control| DocumentContainer | Wpf | Syncfusion
 description: adding and removing items from the document container control
 platform: wpf
 control: DocumentContainer

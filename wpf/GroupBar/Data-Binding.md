@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding
+title: Data Binding| GroupBar | Wpf | Syncfusion
 description: data binding
 platform: wpf
 control: GroupBar

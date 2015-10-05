@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting
+title: Exporting| SfChart | Wpf | Syncfusion
 description: exporting
 platform: wpf
 control: SfChart

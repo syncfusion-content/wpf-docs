@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic-Features
+title: Basic Features| SfMaskedEdit | Wpf | Syncfusion
 description: basic features
 platform: wpf
 control: SfMaskedEdit

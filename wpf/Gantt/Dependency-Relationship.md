@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dependency-Relationship
+title: Dependency Relationship| Gantt | Wpf | Syncfusion
 description: dependency relationship
 platform: wpf
 control: Gantt

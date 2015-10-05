@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Get-the-reports-in-the-OlapDataManager-as-a-stream
+title: Get the reports in the OlapDataManager as a stream| OLAPCommon | Wpf | Syncfusion
 description: get the reports in the olapdatamanager as a stream
 platform: wpf
 control: OLAPCommon

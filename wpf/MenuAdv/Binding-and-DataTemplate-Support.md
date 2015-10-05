@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Binding-and-DataTemplate-Support
+title: Binding and DataTemplate Support| MenuAdv | Wpf | Syncfusion
 description: binding and datatemplate support
 platform: wpf
 control: MenuAdv

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tick-settings
+title: Tick settings| Circular Gauge | Wpf | Syncfusion
 description: tick settings
 platform: wpf
 control: Circular Gauge

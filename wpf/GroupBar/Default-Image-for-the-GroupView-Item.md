@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Default-Image-for-the-GroupView-Item
+title: Default Image for the GroupView Item| GroupBar | Wpf | Syncfusion
 description: default image for the groupview item
 platform: wpf
 control: GroupBar

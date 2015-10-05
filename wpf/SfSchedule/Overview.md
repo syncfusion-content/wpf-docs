@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
+title: Overview| SfSchedule | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: SfSchedule
 documentation: ug
 ---
 
-# Overview
+# SfSchedule
 
 ## Introduction
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom-Schedule
+title: Custom Schedule| Gantt | Wpf | Syncfusion
 description: custom schedule
 platform: wpf
 control: Gantt

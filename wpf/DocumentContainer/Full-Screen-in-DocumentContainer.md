@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Full-Screen-in-DocumentContainer
+title: Full Screen in DocumentContainer| DocumentContainer | Wpf | Syncfusion
 description: full screen in documentcontainer
 platform: wpf
 control: DocumentContainer

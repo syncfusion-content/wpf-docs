@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Baseline-Support
+title: Baseline Support| Gantt | Wpf | Syncfusion
 description: baseline support
 platform: wpf
 control: Gantt

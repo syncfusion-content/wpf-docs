@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GroupBar-Items
+title: GroupBar Items| GroupBar | Wpf | Syncfusion
 description: groupbar items
 platform: wpf
 control: GroupBar

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Viewing-PDF-Files 
+title: Viewing PDF Files | PDF Viewer | Wpf | Syncfusion
 description: viewing pdf files 
 platform: wpf
 control: PDF Viewer

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Watermark
+title: Watermark| SfChart | Wpf | Syncfusion
 description: watermark
 platform: wpf
 control: SfChart

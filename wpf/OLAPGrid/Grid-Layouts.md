@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid-Layouts
+title: Grid Layouts| OLAP Grid | Wpf | Syncfusion
 description: grid layouts
 platform: wpf
 control: OLAP Grid

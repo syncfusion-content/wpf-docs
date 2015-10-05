@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Get-page-count
+title: Get page count| PDF Viewer | Wpf | Syncfusion
 description: get page count
 platform: wpf
 control: PDF Viewer

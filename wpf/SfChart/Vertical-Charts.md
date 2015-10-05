@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vertical-Charts
+title: Vertical Charts| SfChart | Wpf | Syncfusion
 description: vertical charts
 platform: wpf
 control: SfChart

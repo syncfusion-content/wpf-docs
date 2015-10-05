@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sample-Locations
+title: Sample Locations| Introduction | Wpf | Syncfusion
 description: sample locations
 platform: wpf
 control: Introduction

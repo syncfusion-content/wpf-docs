@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating-Tab-Groups
+title: Creating Tab Groups| DocumentContainer | Wpf | Syncfusion
 description: creating tab groups
 platform: wpf
 control: DocumentContainer

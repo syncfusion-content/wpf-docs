@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout-and-Behavior-Related-Features
+title: Layout and Behavior Related Features| DoubleTextBox  | Wpf | Syncfusion
 description: layout and behavior related features
 platform: wpf
 control: DoubleTextBox 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MouseOverBackGround-Color-of-ColorPickerPalette
+title: MouseOverBackGround Color of ColorPickerPalette| ColorPickerPalette | Wpf | Syncfusion
 description: mouseoverbackground color of colorpickerpalette
 platform: wpf
 control: ColorPickerPalette

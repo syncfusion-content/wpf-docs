@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Color-Themes
+title: Color Themes| ColorPickerPalette | Wpf | Syncfusion
 description: color themes
 platform: wpf
 control: ColorPickerPalette

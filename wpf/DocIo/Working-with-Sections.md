@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Sections
+title: Working with Sections| DocIO | Wpf | Syncfusion
 description: working with sections
 platform: wpf
 control: DocIO

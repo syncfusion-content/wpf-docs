@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started| PivotGrid | Wpf | Syncfusion
 description: getting started
 platform: wpf
 control: PivotGrid
@@ -17,2099 +17,1951 @@ PivotGrid and customize its various options according to your requirements.
 In the following example, PivotGrid component tabulates Amount and Quantity over a period of fiscal years for different products across the 
 different customer geographic locations. 
 
-### Through Visual Studio
+## Through Visual Studio
 
-1.Open Visual Studio IDE and from the File menu, select New  Project. 
+1. Open Visual Studio IDE and from the File menu, select New  Project. 
 
-2.In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application. 
+2. In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application. 
 
-  ![](Getting-Started_images/Getting-Started_img1.png)
+   ![](Getting-Started_images/Getting-Started_img1.png)
 
-3.Select WPF Application and click OK.
+3. Select WPF Application and click OK.
 
-4.Drag and drop the PivotGridControl from the Syncfusion BI WPF toolbox into the Designpage. Required Syncfusion assemblies are added automatically to the application.
+4. Drag and drop the PivotGridControl from the Syncfusion BI WPF toolbox into the Designpage. Required Syncfusion assemblies are added automatically to the application.
 
-  ![](Getting-Started_images/Getting-Started_img2.png)
+   ![](Getting-Started_images/Getting-Started_img2.png)
 
-5.Add name to the PivotGridControl to access it through code-behind.
+5. Add name to the PivotGridControl to access it through code-behind.
 
+   ~~~xaml
 
- {% highlight xml %} 
+		<Window x:Class="WpfApplication7.Window1"
 
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-<Window x:Class="WpfApplication7.Window1"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		Title="Window1" Height="323" Width="500" 
 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-    Title="Window1" Height="323" Width="500" 
+		xmlns:local="clr-namespace:WpfApplication1">
 
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+		<Grid>
 
-    xmlns:local="clr-namespace:WpfApplication1">
+		<!—Adds PivotGrid Control-->
 
-<Grid>
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-        <!—Adds PivotGrid Control-->
+		ItemSource="{Binding Source={StaticResource data}}" >
 
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+		</syncfusion:PivotGridControl>
 
-                                     ItemSource="{Binding Source={StaticResource data}}" >
+		<Grid>
 
-</syncfusion:PivotGridControl>
+		</Window>
+		
+   ~~~
 
-<Grid>
+6. Under Solution Explorer, right-click on the project name and select Add  New Item.
 
-</Window>
+   ![](Getting-Started_images/Getting-Started_img3.png)
 
-{% endhighlight %} 
 
-6.Under Solution Explorer, right-click on the project name and select Add  New Item.
+7. Add New Item dialog box opens as follows.
 
-![](Getting-Started_images/Getting-Started_img3.png)
+   ![](Getting-Started_images/Getting-Started_img4.png)
 
-
-7.Add New Item dialog box opens as follows.
-
-![](Getting-Started_images/Getting-Started_img4.png)
-
-8.Select Class and create file under the name ProductSales.cs. ItemSource can be instantiated from the ProductSales.cs file. 
-
-{% highlight C# %}  
-
-
-public class ProductSales
-
-    {
-
-        public string Product { get; set; }
-
-        public string Year { get; set; }
-
-        public string Country { get; set; }
-
-        public string State { get; set; }
-
-        public int Quantity { get; set; }
-
-        public double Amount { get; set; }
-
-
-
-        public static ProductSalesCollection GetSalesData()
-
-        {
-
-            /// Geography
-
-            string[] countries = new string[] { "Canada" };
-
-            string[] canadaStates = new string[] { "Alberta", "British Columbia","Ontario" };
-
-
-
-            /// Time
-
-            string[] dates = new string[] { "FY 2005", "FY 2006", "FY 2007" };
-
-
-
-            /// Products
-
-            string[] products = new string[] { "Bike", "Car" };
-
-            Random r = new Random(123345345);
-
-            int numberOfRecords = 2000;
-
-            ProductSalesCollection listOfProductSales = new ProductSalesCollection();
-
-            for (int i = 0; i < numberOfRecords; i++)
-
-            {
-
-                ProductSales sales = new ProductSales();
-
-                sales.Country = countries[r.Next(0, countries.GetLength(0))];
-
-                sales.Quantity = r.Next(1, 12);
-
-                /// 1 percent discount for 1 quantity
-
-                double discount = (30000 * sales.Quantity) * (double.Parse(sales.Quantity.ToString()) / 100);
-
-                sales.Amount = (30000 * sales.Quantity) - discount;
-
-                sales.Year = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
-
-                sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
-
-                sales.State = canadaStates[r.Next(canadaStates.GetLength(0))];             
-
-                listOfProductSales.Add(sales);
-
-            }
-
-            return listOfProductSales;
-
-        }
-
-        public override string ToString()
-
-        {
-
-            return string.Format("{0}-{1}-{2}", this.Country, this.State, this.Product);
-
-        }
-
-        public class ProductSalesCollection : List<ProductSales>
-
-        {
-
-        }
-
-    }
-
-{% endhighlight %} 
-
-9.GetSalesData method is used to get the PivotItems that needs to be populated in the PivotGridControl.
-
-10.Binding ItemSource with the PivotGrid control,
-
-#### Through XAML
-
-ObjectDataProvider is usedto get the ItemSource object. Binding ItemSource with the PivotGridControl is shown in the following code example.
-
-{% highlight xml %} 
-
-
-<Window x:Class="WpfApplication1.Window1"
-
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    Title="Window1" Height="323" Width="500" 
-
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-    xmlns:local="clr-namespace:WpfApplication1">
-
-    <!-- Specifies the DataSource in Window Resources -->
-
-    <Window.Resources>
-
-        <ResourceDictionary>
-
-            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
-
-        </ResourceDictionary>
-
-    </Window.Resources>
-
-    <Grid>
-
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"                                     ItemSource="{Binding Source={StaticResource data}}" />
-
-    </Grid>
-
-</Window>
-
-{% endhighlight %} 
-
-#### Through Code Behind
-
-The PivotGrid in XAML is initialized and binding the ItemSource through code-behind is illustrated in the following code example.
-
-{% highlight xml %} 
-
-
-<Window x:Class="WpfApplication7.Window1"
-
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    Title="Window1" Height="323" Width="500" 
-
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-    xmlns:local="clr-namespace:WpfApplication1">
-
-<Grid>
-
-        <!-- Adds PivotGrid Control -->
-
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
-
-</syncfusion:PivotGridControl>
-
-<Grid>
-
-</Window>
-
-{% endhighlight %} 
-
-
-
-{% highlight C# %}  
-
-
-protected void Window_Loaded(object sender, RoutedEventArgs e)
-
-{
-
-    // Specifies the ItemSource for the PivotGrid
-
-    this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
-
-}
-
-{% endhighlight %} 
-
-{% highlight vbnet %} 
-
-
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-
-    ' Specifies the ItemSource for the PivotGrid
-
-    Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
-
-End Sub
-
-{% endhighlight %} 
-
-11.You can specify the PivotRows, PivotColumns and PivotComputationInfo that tabulate values in the PivotGrid.
-
-12.Adding PivotRows is illustrated as follows.
-
-#### Through XAML
-
-{% highlight xml %} 
-
-
-<Window x:Class="WpfApplication1.Window1"
-
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    Title="Window1" Height="323" Width="500" 
-
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-    xmlns:local="clr-namespace:WpfApplication1">
-
-    <!--Specifies the DataSource in Window Resources-->
-
-    <Window.Resources>
-
-        <ResourceDictionary>
-
-            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
-
-        </ResourceDictionary>
-
-    </Window.Resources>
-
-<Grid>
-
-        <!—Adds PivotGrid Control-->
-
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
-
-                                     ItemSource="{Binding Source={StaticResource data}}" >
-
-            <!--Specifies Pivot Rows-->
-
-            <syncfusion:PivotGridControl.PivotRows>
-
-                <syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
-
-            </syncfusion:PivotGridControl.PivotRows>
-
-</syncfusion:PivotGridControl>
-
-<Grid>
-
-</Window>
-
-{% endhighlight %} 
-
-#### Through Code-Behind
-
-The PivotGrid in XAML is initialized and adding the PivotRows through code-behind is illustrated in the following code example.
-
-{% highlight xml %} 
-
-
-<Window x:Class="WpfApplication7.Window1"
-
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    Title="Window1" Height="323" Width="500" 
-
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-    xmlns:local="clr-namespace:WpfApplication1">
-
-<Grid>
-
-        <!—Adds PivotGrid Control-->
-
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
-
-</syncfusion:PivotGridControl>
-
-<Grid>
-
-</Window>
-
-{% endhighlight %} 
-
-{% highlight C# %} 
-
-
-protected void Window_Loaded(object sender, RoutedEventArgs e)
-
-{
-
-    // Specifies the ItemSource for PivotGrid
-
-    this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
-
-    // Adds Pivot Rows to Grid
-
-    this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
-
-}
-
- {% endhighlight %} 
-
-{% highlight vbnet %} 
-
-
-
-
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-
-    ' Specifies the ItemSource for PivotGrid
-
-    Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
-
-    ' Adds Pivot Rows to Grid
-
-    Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
-
-End Sub
-
-{% endhighlight %} 
-
-13.Adding the PivotColumns is illustrated in the following code example.
-
-Through XAML
-
-{% highlight xml %} 
-
-<Window x:Class="WpfApplication1.Window1"
-
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    Title="Window1" Height="323" Width="500" 
-
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-    xmlns:local="clr-namespace:WpfApplication1">
-
-    <!--Specifies the DataSource in Window Resources-->
-
-    <Window.Resources>
-
-        <ResourceDictionary>
-
-            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
-
-        </ResourceDictionary>
-
-    </Window.Resources>
-
-<Grid>
-
-        <!—Adds PivotGrid Control-->
-
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
-
-                                     ItemSource="{Binding Source={StaticResource data}}" >
-
-            <!--Specifies Pivot Columns-->
-
-            <syncfusion:PivotGridControl.PivotColumns>
-
-                <syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
-
-            </syncfusion:PivotGridControl.PivotColumns>
-
-</syncfusion:PivotGridControl>
-
-<Grid>
-
-</Window>
-
-{% endhighlight %} 
-
-#### Through Code-Behind
-
-The PivotGrid in XAML is initialized and adding the PivotColumns through code-behind is illustrated in the following code example.
-
-{% highlight xml %} 
-
-
-<Window x:Class="WpfApplication7.Window1"
-
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    Title="Window1" Height="323" Width="500" 
-
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-    xmlns:local="clr-namespace:WpfApplication1">
-
-<Grid>
-
-        <!—Adds PivotGrid Control-->
-
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
-
-</syncfusion:PivotGridControl>
-
-<Grid>
-
-</Window>
-
-{% endhighlight %} 
-
-{% highlight C# %} 
-
-
-protected void Window_Loaded(object sender, RoutedEventArgs e)
-
-{
-
-    // Specifies the ItemSource for PivotGrid
-
-    this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
-
-    // Adds Pivot Colums to Grid
-
-    this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
-
-}
-
- {% endhighlight %} 
+8. Select Class and create file under the name ProductSales.cs. ItemSource can be instantiated from the ProductSales.cs file. 
  
+   ~~~csharp
 
-{% highlight vbnet %} 
+		public class ProductSales
 
+		{
 
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+		public string Product { get; set; }
 
-    ' Specifies the ItemSource for Pivot Grid
+		public string Year { get; set; }
 
-    Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
+		public string Country { get; set; }
 
-    ' Adds Pivot Colums to Grid
+		public string State { get; set; }
 
-    Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
+		public int Quantity { get; set; }
 
-End Sub
+		public double Amount { get; set; }
 
-{% endhighlight %} 
 
-14.Adding the PivotCalculations is illustrated in the following code example.
 
-{% highlight xml %}
+		public static ProductSalesCollection GetSalesData()
 
+		{
 
-<Window x:Class="WpfApplication1.Window1"
+		/// Geography
 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		string[] countries = new string[] { "Canada" };
 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		string[] canadaStates = new string[] { "Alberta", "British Columbia","Ontario" };
 
-    Title="Window1" Height="323" Width="500" 
 
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-    xmlns:local="clr-namespace:WpfApplication1">
+		/// Time
 
-    <!--Specifies the DataSource in Window Resources-->
+		string[] dates = new string[] { "FY 2005", "FY 2006", "FY 2007" };
 
-    <Window.Resources>
 
-        <ResourceDictionary>
 
-            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
+		/// Products
 
-        </ResourceDictionary>
+		string[] products = new string[] { "Bike", "Car" };
 
-    </Window.Resources>
+		Random r = new Random(123345345);
 
-<Grid>
+		int numberOfRecords = 2000;
 
-        <!—Adds PivotGrid Control-->
+		ProductSalesCollection listOfProductSales = new ProductSalesCollection();
 
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+		for (int i = 0; i < numberOfRecords; i++)
 
-                                     ItemSource="{Binding Source={StaticResource data}}" >
+		{
 
-            <!--Specifies Pivot Calculation Values--> 
+		ProductSales sales = new ProductSales();
 
-            <syncfusion:PivotGridControl.PivotCalculations>
+		sales.Country = countries[r.Next(0, countries.GetLength(0))];
 
-                <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
+		sales.Quantity = r.Next(1, 12);
 
-            </syncfusion:PivotGridControl.PivotCalculations>
+		/// 1 percent discount for 1 quantity
 
-</syncfusion:PivotGridControl>
+		double discount = (30000 * sales.Quantity) * (double.Parse(sales.Quantity.ToString()) / 100);
 
-<Grid>
+		sales.Amount = (30000 * sales.Quantity) - discount;
 
-</Window>
+		sales.Year = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
 
-{% endhighlight %} 
+		sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
 
+		sales.State = canadaStates[r.Next(canadaStates.GetLength(0))];             
 
-#### Through Code-Behind
+		listOfProductSales.Add(sales);
 
-The PivotGrid in XAML is initialized and adding the PivotCalculations through code-behind is illustrated in the following code example.
+		}
 
-{% highlight xml %} 
+		return listOfProductSales;
 
+		}
 
-<Window x:Class="WpfApplication7.Window1"
+		public override string ToString()
 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		{
 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		return string.Format("{0}-{1}-{2}", this.Country, this.State, this.Product);
 
-    Title="Window1" Height="323" Width="500" 
+		}
 
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+		public class ProductSalesCollection : List<ProductSales>
 
-    xmlns:local="clr-namespace:WpfApplication1">
+		{
 
-<Grid>
+		}
 
-        <!—Adds PivotGrid Control-->
+		}
 
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+   ~~~
 
-</syncfusion:PivotGridControl>
+9. GetSalesData method is used to get the PivotItems that needs to be populated in the PivotGridControl.
 
-<Grid>
+10. Binding ItemSource with the PivotGrid control,
 
-</Window>
+    ## Through XAML
 
-{% endhighlight %} 
+    ObjectDataProvider is usedto get the ItemSource object. Binding ItemSource with the PivotGridControl is shown in the following code example.
 
-{% highlight C# %}  
+    ~~~xaml
 
+		<Window x:Class="WpfApplication1.Window1"
 
-protected void Window_Loaded(object sender, RoutedEventArgs e)
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-{
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-    // Specifies the ItemSource for PivotGrid
+		Title="Window1" Height="323" Width="500" 
 
-    this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-    // Adds PivotCalculations to Grid
+		xmlns:local="clr-namespace:WpfApplication1">
 
-    this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount",Format="C" , SummaryType = SummaryType.DoubleTotalSum });
+		<!-- Specifies the DataSource in Window Resources -->
 
-}
+		<Window.Resources>
 
-{% endhighlight %} 
+		<ResourceDictionary>
 
-{% highlight vbnet %} 
+		<ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
+		</ResourceDictionary>
 
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+		</Window.Resources>
 
-    ' Specifies the ItemSource for PivotGrid
+		<Grid>
 
-    Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"                                     ItemSource="{Binding Source={StaticResource data}}" />
 
-    ' Adds PivotCalculations to Grid
+		</Grid>
 
-    Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format="C", .SummaryType = SummaryType.DoubleTotalSum})
+		</Window>
 
-End Sub
+    ~~~ 
 
-{% endhighlight %} 
+    ## Through Code Behind
 
-#### To populate PivotGrid with a sample IList data, 
+    The PivotGrid in XAML is initialized and binding the ItemSource through code-behind is illustrated in the following code example.
 
-Through XAML
+    ~~~xaml
 
-{% highlight xml %} 
+		<Window x:Class="WpfApplication7.Window1"
 
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-<Window x:Class="WpfApplication1.Window1"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		Title="Window1" Height="323" Width="500" 
 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-    Title="Window1" Height="323" Width="500" 
+		xmlns:local="clr-namespace:WpfApplication1">
 
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+		<Grid>
 
-    xmlns:local="clr-namespace:WpfApplication1">
+		<!-- Adds PivotGrid Control -->
 
-    <!--Specifies the DataSource in Window Resources-->
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-    <Window.Resources>
+		</syncfusion:PivotGridControl>
 
-        <ResourceDictionary>
+		<Grid>
 
-            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
+		</Window>
 
-        </ResourceDictionary>
+    ~~~ 
 
-    </Window.Resources>
+    ~~~csharp 
 
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
 
+		{
 
-    <Grid>
+		// Specifies the ItemSource for the PivotGrid
 
-        <!—Adds PivotGrid Control-->
+		this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
 
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+		}
 
-                                     ItemSource="{Binding Source={StaticResource data}}" >
+    ~~~		
+    ~~~vbnet	
 
-            <!--Specifies Pivot Rows-->
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
-            <syncfusion:PivotGridControl.PivotRows>
+		' Specifies the ItemSource for the PivotGrid
 
-                <syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
+		Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
 
-                <syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/>
+		End Sub
+		
+    ~~~
 
-            </syncfusion:PivotGridControl.PivotRows>
+11. You can specify the PivotRows, PivotColumns and PivotComputationInfo that tabulate values in the PivotGrid.
 
-            <!--Specifies Pivot Columns-->
+12. Adding PivotRows is illustrated as follows.
 
-            <syncfusion:PivotGridControl.PivotColumns>
+    ### Through XAML
 
-                <syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
+    ~~~xaml
 
-                <syncfusion:PivotItem FieldMappingName="State" TotalHeader="Total"/>
+		<Window x:Class="WpfApplication1.Window1"
 
-            </syncfusion:PivotGridControl.PivotColumns>
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-            <!--Specifies Pivot Calculation Values--> 
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-            <syncfusion:PivotGridControl.PivotCalculations>
+		Title="Window1" Height="323" Width="500" 
 
-                <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-                <syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/>
+		xmlns:local="clr-namespace:WpfApplication1">
 
-            </syncfusion:PivotGridControl.PivotCalculations>
+		<!--Specifies the DataSource in Window Resources-->
 
-        </syncfusion:PivotGridControl>            
+		<Window.Resources>
 
-    </Grid>
+		<ResourceDictionary>
 
-</Window>
+		<ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
-{% endhighlight %} 
+		</ResourceDictionary>
 
+		</Window.Resources>
 
-#### Through Code-Behind
+		<Grid>
 
-{% highlight C# %}  
+		<!—Adds PivotGrid Control-->
 
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-protected void Window_Loaded(object sender, RoutedEventArgs e)
+		ItemSource="{Binding Source={StaticResource data}}" >
 
-{
+		<!--Specifies Pivot Rows-->
 
-    // Specifies the ItemSource for Pivot Grid
+		<syncfusion:PivotGridControl.PivotRows>
 
-    this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
+		<syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
 
-    // Adds Pivot Rows to Grid
+		</syncfusion:PivotGridControl.PivotRows>
 
-    this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
+		</syncfusion:PivotGridControl>
 
-    this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Year", TotalHeader = "Total" });
+		<Grid>
 
-    // Adds Pivot Colums to Grid
+		</Window>
 
-    this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
+    ### Through Code-Behind
 
-    this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "State", TotalHeader = "Total" });
+	The PivotGrid in XAML is initialized and adding the PivotRows through code-behind is illustrated in the following code example.
 
-    // Adds PivotCalculations to Grid
+    ~~~xaml
 
-    this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount",Format="C" , SummaryType = SummaryType.DoubleTotalSum });
+		<Window x:Class="WpfApplication7.Window1"
 
-    this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Quantity", Format ="#,##0"});
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-}
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-{% endhighlight %} 
+		Title="Window1" Height="323" Width="500" 
 
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
+		xmlns:local="clr-namespace:WpfApplication1">
 
-{% highlight vbnet %} 
+		<Grid>
 
+		<!—Adds PivotGrid Control-->
 
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
+		</syncfusion:PivotGridControl>
 
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+		<Grid>
 
-    ' Specifies the ItemSource for Pivot Grid
+		</Window>
+		
+    ~~~
+    ~~~csharp
 
-    Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
 
-    ' Adds Pivot Rows to Grid
+		{
 
-    Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
+		// Specifies the ItemSource for PivotGrid
 
-    Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Year", .TotalHeader = "Total"})
+		this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
 
-    ' Adds Pivot Colums to Grid
+		// Adds Pivot Rows to Grid
 
-    Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
+		this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
 
-    Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "State", .TotalHeader = "Total"})
+		}
 
-    ' Adds PivotCalculations to Grid
+    ~~~
+    ~~~vbnet
 
-    Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format="C", .SummaryType = SummaryType.DoubleTotalSum})
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
-    Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Quantity", .Format ="#,##0"})
+		' Specifies the ItemSource for PivotGrid
 
-End Sub
+		Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
 
-{% endhighlight %} 
+		' Adds Pivot Rows to Grid
 
+		Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
 
+		End Sub
+		
+    ~~~
 
-15.Run the application and the following output is generated.
+13. Adding the PivotColumns is illustrated in the following code example.
 
-![](Getting-Started_images/Getting-Started_img5.png)
+    Through XAML
 
+    ~~~xaml
 
+		<Window x:Class="WpfApplication1.Window1"
+
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+		Title="Window1" Height="323" Width="500" 
+
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+
+		xmlns:local="clr-namespace:WpfApplication1">
+
+		<!--Specifies the DataSource in Window Resources-->
+
+		<Window.Resources>
+
+		<ResourceDictionary>
+
+		<ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
+
+		</ResourceDictionary>
+
+		</Window.Resources>
+
+		<Grid>
+
+		<!—Adds PivotGrid Control-->
+
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+
+		 ItemSource="{Binding Source={StaticResource data}}" >
+
+		<!--Specifies Pivot Columns-->
+
+		<syncfusion:PivotGridControl.PivotColumns>
+
+		<syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
+
+		</syncfusion:PivotGridControl.PivotColumns>
+
+		</syncfusion:PivotGridControl>
+
+		<Grid>
+
+		</Window>
+
+    ~~~
+
+	### Through Code-Behind
+
+	The PivotGrid in XAML is initialized and adding the PivotColumns through code-behind is illustrated in the following code example.
+ 
+    ~~~xaml
+
+		<Window x:Class="WpfApplication7.Window1"
+
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+		Title="Window1" Height="323" Width="500" 
+
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+
+		xmlns:local="clr-namespace:WpfApplication1">
+
+		<Grid>
+
+			<!—Adds PivotGrid Control-->
+
+			<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+
+		</syncfusion:PivotGridControl>
+
+		<Grid>
+
+		</Window>
+
+    ~~~
+
+    ~~~csharp
+
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
+
+		{
+
+		// Specifies the ItemSource for PivotGrid
+
+		this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
+
+		// Adds Pivot Colums to Grid
+
+		this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
+
+		}
+
+    ~~~
+ 
+    ~~~vbnet
+
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+		' Specifies the ItemSource for Pivot Grid
+
+		Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
+
+		' Adds Pivot Colums to Grid
+
+		Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
+
+		End Sub
+
+    ~~~
+
+14. Adding the PivotCalculations is illustrated in the following code example.
+
+    ~~~xaml
+
+		<Window x:Class="WpfApplication1.Window1"
+
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+		Title="Window1" Height="323" Width="500" 
+
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+
+		xmlns:local="clr-namespace:WpfApplication1">
+
+		<!--Specifies the DataSource in Window Resources-->
+
+		<Window.Resources>
+
+		<ResourceDictionary>
+
+		<ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
+
+		</ResourceDictionary>
+
+		</Window.Resources>
+
+		<Grid>
+
+		<!—Adds PivotGrid Control-->
+
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+
+							 ItemSource="{Binding Source={StaticResource data}}" >
+
+		<!--Specifies Pivot Calculation Values--> 
+
+		<syncfusion:PivotGridControl.PivotCalculations>
+
+		<syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
+
+		</syncfusion:PivotGridControl.PivotCalculations>
+
+		</syncfusion:PivotGridControl>
+
+		<Grid>
+
+		</Window>
+
+    ~~~
+
+
+    #### Through Code-Behind
+
+	The PivotGrid in XAML is initialized and adding the PivotCalculations through code-behind is illustrated in the following code example.
+
+    ~~~xaml
+
+		<Window x:Class="WpfApplication7.Window1"
+
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+		Title="Window1" Height="323" Width="500" 
+
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+
+		xmlns:local="clr-namespace:WpfApplication1">
+
+		<Grid>
+
+		<!—Adds PivotGrid Control-->
+
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+
+		</syncfusion:PivotGridControl>
+
+		<Grid>
+
+		</Window>
+
+    ~~~
+
+    ~~~csharp
+
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
+
+		{
+
+		// Specifies the ItemSource for PivotGrid
+
+		this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
+
+		// Adds PivotCalculations to Grid
+
+		this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount",Format="C" , SummaryType = SummaryType.DoubleTotalSum });
+
+		}
+
+    ~~~
+
+    ~~~vbnet
+
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+		' Specifies the ItemSource for PivotGrid
+
+		Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
+
+		' Adds PivotCalculations to Grid
+
+		Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format="C", .SummaryType = SummaryType.DoubleTotalSum})
+
+		End Sub
+
+    ~~~
+
+    To populate PivotGrid with a sample IList data, 
+
+    Through XAML
+
+    ~~~xaml
+
+		<Window x:Class="WpfApplication1.Window1"
+
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+		Title="Window1" Height="323" Width="500" 
+
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+
+		xmlns:local="clr-namespace:WpfApplication1">
+
+		<!--Specifies the DataSource in Window Resources-->
+
+		<Window.Resources>
+
+		<ResourceDictionary>
+
+		<ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
+
+		</ResourceDictionary>
+
+		</Window.Resources>
+
+
+		<Grid>
+
+		<!—Adds PivotGrid Control-->
+
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+
+		ItemSource="{Binding Source={StaticResource data}}" >
+
+		<!--Specifies Pivot Rows-->
+
+		<syncfusion:PivotGridControl.PivotRows>
+
+		<syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
+
+		<syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/>
+
+		</syncfusion:PivotGridControl.PivotRows>
+
+		<!--Specifies Pivot Columns-->
+
+		<syncfusion:PivotGridControl.PivotColumns>
+
+		<syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
+
+		<syncfusion:PivotItem FieldMappingName="State" TotalHeader="Total"/>
+
+		</syncfusion:PivotGridControl.PivotColumns>
+
+		<!--Specifies Pivot Calculation Values--> 
+
+		<syncfusion:PivotGridControl.PivotCalculations>
+
+		<syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
+
+		<syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/>
+
+		</syncfusion:PivotGridControl.PivotCalculations>
+
+		</syncfusion:PivotGridControl>            
+
+		</Grid>
+
+		</Window>
+		
+    ~~~
+   
+    #### Through Code-Behind
+
+    ~~~csharp
+
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
+
+		{
+
+		// Specifies the ItemSource for Pivot Grid
+
+		this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
+
+		// Adds Pivot Rows to Grid
+
+		this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
+
+		this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Year", TotalHeader = "Total" });
+
+		// Adds Pivot Colums to Grid
+
+		this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
+
+		this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "State", TotalHeader = "Total" });
+
+		// Adds PivotCalculations to Grid
+
+		this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount",Format="C" , SummaryType = SummaryType.DoubleTotalSum });
+
+		this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Quantity", Format ="#,##0"});
+
+		}
+
+    ~~~
+	
+    ~~~vbnet
+
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+		' Specifies the ItemSource for Pivot Grid
+
+		Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
+
+		' Adds Pivot Rows to Grid
+
+		Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
+
+		Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Year", .TotalHeader = "Total"})
+
+		' Adds Pivot Colums to Grid
+
+		Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
+
+		Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "State", .TotalHeader = "Total"})
+
+		' Adds PivotCalculations to Grid
+
+		Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format="C", .SummaryType = SummaryType.DoubleTotalSum})
+
+		Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Quantity", .Format ="#,##0"})
+
+		End Sub
+
+    ~~~
+
+15. Run the application and the following output is generated.
+
+    ![](Getting-Started_images/Getting-Started_img5.png)
+	
+	
 
 ### Through Expression Blend
 
-1.Open the Start menu and select Blend for Visual Studio 2013.
+1. Open the Start menu and select Blend for Visual Studio 2013.
 
-2.Click New Project, now the dialog box for New Project appears as follows.
+2. Click New Project, now the dialog box for New Project appears as follows.
 
-![](Getting-Started_images/Getting-Started_img6.png)
+   ![](Getting-Started_images/Getting-Started_img6.png)
 
+3. Select WPF Application and click OK.
 
+4. Select the Project tab in the application window.
 
-3.Select WPF Application and click OK.
+   ![](Getting-Started_images/Getting-Started_img7.png)
 
-4.Select the Project tab in the application window.
-
-![](Getting-Started_images/Getting-Started_img7.png)
-
-
-
-5.Right-click on the References and select Add Referenc, then add the following assemblies into the project from installed location.
+5. Right-click on the References and select Add Referenc, then add the following assemblies into the project from installed location.
 
    1. Syncfusion.PivotAnalysis.Base
    2. Syncfusion.PivotAnalysis.Wpf
 
-#### Assembly Location
+   #### Assembly Location
 
-{System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\{Version Number}\precompiledassemblies\{Version Number}
+   {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\{Version Number}\precompiledassemblies\{Version Number}
 
-6.After adding the above assemblies, the PivotGridControl is automatically added into Assests.
+6. After adding the above assemblies, the PivotGridControl is automatically added into Assests.
 
-7.Now drag the PivotGridControl from toolbox into the Designer page. Required Syncfusion assemblies are added automatically to the application.
+7. Now drag the PivotGridControl from toolbox into the Designer page. Required Syncfusion assemblies are added automatically to the application.
 
-![](Getting-Started_images/Getting-Started_img8.png)
+   ![](Getting-Started_images/Getting-Started_img8.png)
 
+8. Add name to the PivotGridControl to access it through code-behind.
 
+   ~~~xaml 
 
-8.Add name to the PivotGridControl to access it through code-behind.
+		<Window x:Class="WpfApplication7.Window1"
 
-{% highlight xml %}  
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-<Window x:Class="WpfApplication7.Window1"
+		Title="Window1" Height="323" Width="500" 
 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:local="clr-namespace:WpfApplication1">
 
-    Title="Window1" Height="323" Width="500" 
+		<Grid>
 
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+		<!—Adds the PivotGrid Control-->
 
-    xmlns:local="clr-namespace:WpfApplication1">
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"                                      ItemSource="{Binding Source={StaticResource data}}" >
 
-<Grid>
+		</syncfusion:PivotGridControl>
 
-        <!—Adds the PivotGrid Control-->
+		<Grid>
 
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"                                      ItemSource="{Binding Source={StaticResource data}}" >
+		</Window>
+		
+   ~~~
 
-</syncfusion:PivotGridControl>
+9. Under Solution Explorer, right-click on the project name and select Add  New Item.
 
-<Grid>
+   ![](Getting-Started_images/Getting-Started_img9.png)
 
-</Window>
+10. Add New Item dialog box opens as follows.
 
-{% endhighlight %} 
+    ![](Getting-Started_images/Getting-Started_img10.png)
 
+11. Select Class and create file under the name ProductSales.cs. ItemSource can be instantiated in the ProductSales.cs file. 
 
-9.Under Solution Explorer, right-click on the project name and select Add  New Item.
+    ~~~csharp    
 
-![](Getting-Started_images/Getting-Started_img9.png)
+		public class ProductSales
 
+		{
 
+		public string Product { get; set; }
 
-10.Add New Item dialog box opens as follows.
+		public string Year { get; set; }
 
-![](Getting-Started_images/Getting-Started_img10.png)
+		public string Country { get; set; }
 
+		public string State { get; set; }
 
+		public int Quantity { get; set; }
 
-11.Select Class and create file under the name ProductSales.cs. ItemSource can be instantiated in the ProductSales.cs file. 
+		public double Amount { get; set; }
 
-{% highlight C# %} 
 
 
-public class ProductSales
+		public static ProductSalesCollection GetSalesData()
 
-    {
+		{
 
-        public string Product { get; set; }
+		/// Geography
 
-        public string Year { get; set; }
+		string[] countries = new string[] { "Canada" };
 
-        public string Country { get; set; }
+		string[] canadaStates = new string[] { "Alberta", "British Columbia","Ontario" };
 
-        public string State { get; set; }
 
-        public int Quantity { get; set; }
 
-        public double Amount { get; set; }
+		/// Time
 
+		string[] dates = new string[] { "FY 2005", "FY 2006", "FY 2007" };
 
 
-        public static ProductSalesCollection GetSalesData()
 
-        {
+		/// Products
 
-            /// Geography
+		string[] products = new string[] { "Bike", "Car" };
 
-            string[] countries = new string[] { "Canada" };
+		Random r = new Random(123345345);
 
-            string[] canadaStates = new string[] { "Alberta", "British Columbia","Ontario" };
+		int numberOfRecords = 2000;
 
+		ProductSalesCollection listOfProductSales = new ProductSalesCollection();
 
+		for (int i = 0; i < numberOfRecords; i++)
 
-            /// Time
+		{
 
-            string[] dates = new string[] { "FY 2005", "FY 2006", "FY 2007" };
+		ProductSales sales = new ProductSales();
 
+		sales.Country = countries[r.Next(0, countries.GetLength(0))];
 
+		sales.Quantity = r.Next(1, 12);
 
-            /// Products
+		/// 1 percent discount for 1 quantity
 
-            string[] products = new string[] { "Bike", "Car" };
+		double discount = (30000 * sales.Quantity) * (double.Parse(sales.Quantity.ToString()) / 100);
 
-            Random r = new Random(123345345);
+		sales.Amount = (30000 * sales.Quantity) - discount;
 
-            int numberOfRecords = 2000;
+		sales.Year = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
 
-            ProductSalesCollection listOfProductSales = new ProductSalesCollection();
+		sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
 
-            for (int i = 0; i < numberOfRecords; i++)
+		sales.State = canadaStates[r.Next(canadaStates.GetLength(0))];             
 
-            {
+		listOfProductSales.Add(sales);
 
-                ProductSales sales = new ProductSales();
+		}
 
-                sales.Country = countries[r.Next(0, countries.GetLength(0))];
+		return listOfProductSales;
 
-                sales.Quantity = r.Next(1, 12);
+		}
 
-                /// 1 percent discount for 1 quantity
+		public override string ToString()
 
-                double discount = (30000 * sales.Quantity) * (double.Parse(sales.Quantity.ToString()) / 100);
+		{
 
-                sales.Amount = (30000 * sales.Quantity) - discount;
+		return string.Format("{0}-{1}-{2}", this.Country, this.State, this.Product);
 
-                sales.Year = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
+		}
 
-                sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
+		public class ProductSalesCollection : List<ProductSales>
 
-                sales.State = canadaStates[r.Next(canadaStates.GetLength(0))];             
+		{
 
-                listOfProductSales.Add(sales);
+		}
 
-            }
+		}
 
-            return listOfProductSales;
+    ~~~ 
 
-        }
+12. GetSalesData method is used to get the PivotItems that needs to be populated in the PivotGridControl.
 
-        public override string ToString()
+13. Binding ItemSource with the PivotGrid control,
 
-        {
+	### Through XAML
 
-            return string.Format("{0}-{1}-{2}", this.Country, this.State, this.Product);
+	ObjectDataProvider is usedto get the ItemSource object. Binding ItemSource with the PivotGridControl is shown in the following code example.
 
-        }
+    ~~~xaml
 
-        public class ProductSalesCollection : List<ProductSales>
+		<Window x:Class="WpfApplication1.Window1"
 
-        {
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        }
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-    }
+		Title="Window1" Height="323" Width="500" 
 
- {% endhighlight %} 
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-12.GetSalesData method is used to get the PivotItems that needs to be populated in the PivotGridControl.
+		xmlns:local="clr-namespace:WpfApplication1">
 
-13.Binding ItemSource with the PivotGrid control,
+		<!-- Specifies the DataSource in Window Resources -->
 
-#### Through XAML
+		<Window.Resources>
 
-ObjectDataProvider is usedto get the ItemSource object. Binding ItemSource with the PivotGridControl is shown in the following code example.
+		<ResourceDictionary>
 
-{% highlight xml %}  
+		<ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
+		</ResourceDictionary>
 
-<Window x:Class="WpfApplication1.Window1"
+		</Window.Resources>
 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		<Grid>
 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"                                     ItemSource="{Binding Source={StaticResource data}}" />
 
-    Title="Window1" Height="323" Width="500" 
+		</Grid>
 
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+		</Window>
 
-    xmlns:local="clr-namespace:WpfApplication1">
+    ~~~
 
-    <!-- Specifies the DataSource in Window Resources -->
+    ### Through Code Behind
 
-    <Window.Resources>
+    The PivotGrid in XAML is initialized and binding the ItemSource through code-behind is illustrated in the following code example.
 
-        <ResourceDictionary>
+    ~~~xaml
 
-            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
+		<Window x:Class="WpfApplication7.Window1"
 
-        </ResourceDictionary>
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-    </Window.Resources>
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-    <Grid>
+		Title="Window1" Height="323" Width="500" 
 
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top"                                     ItemSource="{Binding Source={StaticResource data}}" />
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-    </Grid>
+		xmlns:local="clr-namespace:WpfApplication1">
 
-</Window>
+		<Grid>
 
-{% endhighlight %}
+		<!-- Adds PivotGrid Control -->
 
-#### Through Code Behind
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-The PivotGrid in XAML is initialized and binding the ItemSource through code-behind is illustrated in the following code example.
+		</syncfusion:PivotGridControl>
 
-{% highlight xml %} 
+		<Grid>
 
+		</Window>
+		
+    ~~~
 
-<Window x:Class="WpfApplication7.Window1"
+    ~~~csharp 
+	
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		{
 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		// Specifies the ItemSource for Pivot Grid
 
-    Title="Window1" Height="323" Width="500" 
+		this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
 
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+		}
 
-    xmlns:local="clr-namespace:WpfApplication1">
+    ~~~
+    ~~~vbnet	
 
-<Grid>
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
-        <!-- Adds PivotGrid Control -->
+		' Specifies the ItemSource for Pivot Grid
 
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+		Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
 
-</syncfusion:PivotGridControl>
+		End Sub
 
-<Grid>
+    ~~~
 
-</Window>
+14. You can specify PivotRows, PivotColumns and PivotComputationInfo that tabulate the values in the PivotGrid.
 
-{% endhighlight %} 
+15. Adding PivotRows is illustrated in the following code example.
 
-{% highlight C# %} 
+	### Through XAML
 
+    ~~~xaml
 
-protected void Window_Loaded(object sender, RoutedEventArgs e)
+		<Window x:Class="WpfApplication1.Window1"
 
-{
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-    // Specifies the ItemSource for Pivot Grid
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-    this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
+		Title="Window1" Height="323" Width="500" 
 
-}
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
- {% endhighlight %} 
+		xmlns:local="clr-namespace:WpfApplication1">
 
-{% highlight vbnet %} 
+		<!--Specifies the DataSource in Window Resources-->
 
+		<Window.Resources>
 
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+		<ResourceDictionary>
 
-    ' Specifies the ItemSource for Pivot Grid
+		<ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
-    Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
+		</ResourceDictionary>
 
-End Sub
+		</Window.Resources>
 
-{% endhighlight %} 
+		<Grid>
 
-14.You can specify PivotRows, PivotColumns and PivotComputationInfo that tabulate the values in the PivotGrid.
+		<!—Adds PivotGrid Control-->
 
-15.Adding PivotRows is illustrated in the following code example.
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-#### Through XAML
+		 ItemSource="{Binding Source={StaticResource data}}" >
 
-{% highlight xml %} 
+		<!--Specifies Pivot Rows-->
 
+		<syncfusion:PivotGridControl.PivotRows>
 
-<Window x:Class="WpfApplication1.Window1"
+		<syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		</syncfusion:PivotGridControl.PivotRows>
 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		</syncfusion:PivotGridControl>
 
-    Title="Window1" Height="323" Width="500" 
+		<Grid>
 
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+		</Window>
 
-    xmlns:local="clr-namespace:WpfApplication1">
+    ~~~
 
-    <!--Specifies the DataSource in Window Resources-->
+	### Through Code-Behind
 
-    <Window.Resources>
+	The PivotGrid in XAML is initialized and adding the PivotRows through code-behind is illustrated in the following code example.
 
-        <ResourceDictionary>
+    ~~~xaml
 
-            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
+		<Window x:Class="WpfApplication7.Window1"
 
-        </ResourceDictionary>
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-    </Window.Resources>
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-<Grid>
+		Title="Window1" Height="323" Width="500" 
 
-        <!—Adds PivotGrid Control-->
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+		xmlns:local="clr-namespace:WpfApplication1">
 
-                                     ItemSource="{Binding Source={StaticResource data}}" >
+		<Grid>
 
-            <!--Specifies Pivot Rows-->
+		<!—Adds PivotGrid Control-->
 
-            <syncfusion:PivotGridControl.PivotRows>
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-                <syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
+		</syncfusion:PivotGridControl>
 
-            </syncfusion:PivotGridControl.PivotRows>
+		<Grid>
 
-</syncfusion:PivotGridControl>
+		</Window>
 
-<Grid>
+    ~~~
 
-</Window>
+    ~~~csharp
+	
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
 
-{% endhighlight %} 
+		{
 
-#### Through Code-Behind
+		// Specifies the ItemSource for Pivot Grid
 
-The PivotGrid in XAML is initialized and adding the PivotRows through code-behind is illustrated in the following code example.
+		this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
 
-{% highlight xml %} 
+		// Adds Pivot Rows to Grid
 
+		this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
 
-<Window x:Class="WpfApplication7.Window1"
-
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    Title="Window1" Height="323" Width="500" 
-
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-    xmlns:local="clr-namespace:WpfApplication1">
-
-<Grid>
-
-        <!—Adds PivotGrid Control-->
-
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
-
-</syncfusion:PivotGridControl>
-
-<Grid>
-
-</Window>
-
-{% endhighlight %} 
-
-{% highlight C# %}  
-
-
-protected void Window_Loaded(object sender, RoutedEventArgs e)
-
-{
-
-    // Specifies the ItemSource for Pivot Grid
-
-    this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
-
-    // Adds Pivot Rows to Grid
-
-    this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
-
-}
-
-{% endhighlight %} 
-
-
-{% highlight vbnet %} 
-
-
-
-
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-
-    ' Specifies the ItemSource for Pivot Grid
-
-    Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
-
-    ' Adds Pivot Rows to Grid
-
-    Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
-
-End Sub
-
-{% endhighlight %} 
-
-
-16.Adding PivotColumns is illustrated in the following code example.
-
-#### Through XAML
-
-{% highlight xml %} 
-
-
-<Window x:Class="WpfApplication1.Window1"
-
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    Title="Window1" Height="323" Width="500" 
-
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-    xmlns:local="clr-namespace:WpfApplication1">
-
-    <!--Specifies the DataSource in Window Resources-->
-
-    <Window.Resources>
-
-        <ResourceDictionary>
-
-            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
-
-        </ResourceDictionary>
-
-    </Window.Resources>
-
-<Grid>
-
-        <!—Adds PivotGrid Control-->
-
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
-
-                                     ItemSource="{Binding Source={StaticResource data}}" >
-
-            <!--Specifies Pivot Columns-->
-
-            <syncfusion:PivotGridControl.PivotColumns>
-
-                <syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
-
-            </syncfusion:PivotGridControl.PivotColumns>
-
-</syncfusion:PivotGridControl>
-
-<Grid>
-
-</Window>
-
-{% endhighlight %} 
-
-
-#### Through Code-Behind
-
-The PivotGrid in XAML is initialized and adding the PivotColumns through code-behind is illustrated in the following code example.
-
-{% highlight xml %} 
-
-
-<Window x:Class="WpfApplication7.Window1"
-
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-    Title="Window1" Height="323" Width="500" 
-
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-
-    xmlns:local="clr-namespace:WpfApplication1">
-
-<Grid>
-
-        <!—Adds PivotGrid Control-->
-
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
-
-</syncfusion:PivotGridControl>
-
-<Grid>
-
-</Window>
-
-{% endhighlight %}  
-
-
-{% highlight C# %} 
-
-
-
-protected void Window_Loaded(object sender, RoutedEventArgs e)
-
-{
-
-    // Specifies the ItemSource for PivotGrid
-
-    this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
-
-    // Adds Pivot Colums to Grid
-
-    this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
-
-}
-
- {% endhighlight %} 
+		}
  
+    ~~~
 
-{% highlight vbnet %} 
+    ~~~vbnet
 
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
+		' Specifies the ItemSource for Pivot Grid
 
+		Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
 
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+		' Adds Pivot Rows to Grid
 
-    ' Specifies the ItemSource for PivotGrid
+		Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
 
-    Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
+		End Sub
 
-    ' Adding Pivot Colums to Grid
+    ~~~ 
 
-    Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
+16. Adding PivotColumns is illustrated in the following code example.
 
-End Sub
+	### Through XAML
+    
+    ~~~xaml
 
-{% endhighlight %} 
+		<Window x:Class="WpfApplication1.Window1"
 
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-17.Adding PivotCalculations is illustrated in the following code example.
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-{% highlight xml %} 
+		Title="Window1" Height="323" Width="500" 
 
-<Window x:Class="WpfApplication1.Window1"
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:local="clr-namespace:WpfApplication1">
 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		<!--Specifies the DataSource in Window Resources-->
 
-    Title="Window1" Height="323" Width="500" 
+		<Window.Resources>
 
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+		<ResourceDictionary>
 
-    xmlns:local="clr-namespace:WpfApplication1">
+		<ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
-    <!--Specifies the DataSource in Window Resources-->
+		</ResourceDictionary>
 
-    <Window.Resources>
+		</Window.Resources>
 
-        <ResourceDictionary>
+		<Grid>
 
-            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
+		<!—Adds PivotGrid Control-->
 
-        </ResourceDictionary>
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-    </Window.Resources>
+					 ItemSource="{Binding Source={StaticResource data}}" >
 
-<Grid>
+		<!--Specifies Pivot Columns-->
 
-        <!—Adds PivotGrid Control-->
+		<syncfusion:PivotGridControl.PivotColumns>
 
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+		<syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
 
-                                     ItemSource="{Binding Source={StaticResource data}}" >
+		</syncfusion:PivotGridControl.PivotColumns>
 
-            <!--Specifies Pivot Calculation Values--> 
+		</syncfusion:PivotGridControl>
 
-            <syncfusion:PivotGridControl.PivotCalculations>
+		<Grid>
 
-                <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
+		</Window>
 
-            </syncfusion:PivotGridControl.PivotCalculations>
+    ~~~ 
 
-</syncfusion:PivotGridControl>
+	### Through Code-Behind
+	
+    The PivotGrid in XAML is initialized and adding the PivotColumns through code-behind is illustrated in the following code example.
 
-<Grid>
+    ~~~xaml
 
-</Window>
+		<Window x:Class="WpfApplication7.Window1"
 
-{% endhighlight %} 
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-#### Through Code-Behind
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-The PivotGrid in XAML is initialized and adding the PivotCalculations through code-behind is illustrated in the following code example.
+		Title="Window1" Height="323" Width="500" 
 
-{% highlight xml %} 
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-<Window x:Class="WpfApplication7.Window1"
+		xmlns:local="clr-namespace:WpfApplication1">
 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		<Grid>
 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		<!—Adds PivotGrid Control-->
 
-    Title="Window1" Height="323" Width="500" 
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+		</syncfusion:PivotGridControl>
 
-    xmlns:local="clr-namespace:WpfApplication1">
+		<Grid>
 
-<Grid>
+		</Window>
 
-        <!—Adds PivotGrid Control-->
+    ~~~
+	
+    ~~~csharp	
 
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
 
-</syncfusion:PivotGridControl>
+		{
 
-<Grid>
+		// Specifies the ItemSource for PivotGrid
 
-</Window>
+		this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
 
-{% endhighlight %} 
+		// Adds Pivot Colums to Grid
 
+		this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
 
-{% highlight C# %}  
+		}
 
+    ~~~
 
+    ~~~vbnet	
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
+		' Specifies the ItemSource for PivotGrid
 
-protected void Window_Loaded(object sender, RoutedEventArgs e)
+		Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
 
-{
+		' Adding Pivot Colums to Grid
 
-    // Specifies the ItemSource for PivotGrid
+		Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
 
-    this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
+		End Sub
 
-    // Adds PivotCalculations to Grid
+    ~~~
 
-    this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount",Format="C" , SummaryType = SummaryType.DoubleTotalSum });
+17. Adding PivotCalculations is illustrated in the following code example.
 
-}
+    ~~~xaml
 
-{% endhighlight %} 
+		<Window x:Class="WpfApplication1.Window1"
 
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-{% highlight vbnet %} 
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
+		Title="Window1" Height="323" Width="500" 
 
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+		xmlns:local="clr-namespace:WpfApplication1">
 
-    ' Specifies the ItemSource for PivotGrid
+		<!--Specifies the DataSource in Window Resources-->
 
-    Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
+		<Window.Resources>
 
-    ' Adds PivotCalculations to Grid
+		<ResourceDictionary>
 
-    Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format="C", .SummaryType = SummaryType.DoubleTotalSum})
+		<ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
-End Sub
+		</ResourceDictionary>
 
-{% endhighlight %} 
+		</Window.Resources>
 
-#### To populate PivotGrid with a sample IList data
+		<Grid>
 
-#### Through XAML
+		<!—Adds PivotGrid Control-->
 
-{% highlight xml %} 
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
+		ItemSource="{Binding Source={StaticResource data}}" >
 
+		<!--Specifies Pivot Calculation Values--> 
 
+		<syncfusion:PivotGridControl.PivotCalculations>
 
-<Window x:Class="WpfApplication1.Window1"
+		<syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		</syncfusion:PivotGridControl.PivotCalculations>
 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		</syncfusion:PivotGridControl>
 
-    Title="Window1" Height="323" Width="500" 
+		<Grid>
 
-    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+		</Window>
 
-    xmlns:local="clr-namespace:WpfApplication1">
+    ~~~
 
-    <!--Specifies the DataSource in Window Resources-->
+	### Through Code-Behind
 
-    <Window.Resources>
+	The PivotGrid in XAML is initialized and adding the PivotCalculations through code-behind is illustrated in the following code example.
 
-        <ResourceDictionary>
+    ~~~xaml
 
-            <ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
+		<Window x:Class="WpfApplication7.Window1"
 
-        </ResourceDictionary>
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-    </Window.Resources>
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
+		Title="Window1" Height="323" Width="500" 
 
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-    <Grid>
+		xmlns:local="clr-namespace:WpfApplication1">
 
-        <!—Adds PivotGrid Control-->
+		<Grid>
 
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+		<!—Adds PivotGrid Control-->
 
-                                     ItemSource="{Binding Source={StaticResource data}}" >
+		<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-            <!--Specifies Pivot Rows-->
+		</syncfusion:PivotGridControl>
 
-            <syncfusion:PivotGridControl.PivotRows>
+		<Grid>
 
-                <syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
+		</Window>
 
-                <syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/>
+    ~~~
 
-            </syncfusion:PivotGridControl.PivotRows>
+    ~~~csharp
+	
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
 
-            <!--Specifies Pivot Columns-->
+		{
 
-            <syncfusion:PivotGridControl.PivotColumns>
+		// Specifies the ItemSource for PivotGrid
 
-                <syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
+		this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
 
-                <syncfusion:PivotItem FieldMappingName="State" TotalHeader="Total"/>
+		// Adds PivotCalculations to Grid
 
-            </syncfusion:PivotGridControl.PivotColumns>
+		this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount",Format="C" , SummaryType = SummaryType.DoubleTotalSum });
 
-            <!--Specifies Pivot Calculation Values--> 
+		}
 
-            <syncfusion:PivotGridControl.PivotCalculations>
+    ~~~
 
-                <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
+    ~~~vbnet
 
-                <syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/>
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
-            </syncfusion:PivotGridControl.PivotCalculations>
+		' Specifies the ItemSource for PivotGrid
 
-        </syncfusion:PivotGridControl>            
+		Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
 
-    </Grid>
+		' Adds PivotCalculations to Grid
 
-</Window>
+		Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format="C", .SummaryType = SummaryType.DoubleTotalSum})
 
-{% endhighlight %} 
+		End Sub
 
-#### Through Code-Behind
+    ~~~
 
-{% highlight C# %}  
+    To populate PivotGrid with a sample IList data
 
-protected void Window_Loaded(object sender, RoutedEventArgs e)
+	### Through XAML
 
-{
+    ~~~xaml
 
-    // Specifies the ItemSource for PivotGrid
+		<Window x:Class="WpfApplication1.Window1"
 
-    this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-    // Adds Pivot Rows to Grid
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-    this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
+		Title="Window1" Height="323" Width="500" 
 
-    this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Year", TotalHeader = "Total" });
+		xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-    // Adds Pivot Colums to Grid
+		xmlns:local="clr-namespace:WpfApplication1">
 
-    this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
+		<!--Specifies the DataSource in Window Resources-->
 
-    this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "State", TotalHeader = "Total" });
+		<Window.Resources>
 
-    // Adds PivotCalculations to Grid
+			<ResourceDictionary>
 
-    this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount",Format="C" , SummaryType = SummaryType.DoubleTotalSum });
+				<ObjectDataProvider x:Key="data" ObjectType="{x:Type local:ProductSales}" MethodName="GetSalesData"/>
 
-    this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Quantity", Format ="#,##0"});
+			</ResourceDictionary>
 
-}
+		</Window.Resources>
 
-{% endhighlight %} 
 
-{% highlight vbnet %} 
 
+		<Grid>
 
+			<!—Adds PivotGrid Control-->
 
+			<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+										 ItemSource="{Binding Source={StaticResource data}}" >
 
-    ' Specifies the ItemSource for PivotGrid
+				<!--Specifies Pivot Rows-->
 
-    Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
+				<syncfusion:PivotGridControl.PivotRows>
 
-    ' Adds Pivot Rows to Grid
+					<syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
 
-    Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
+					<syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/>
 
-    Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Year", .TotalHeader = "Total"})
+				</syncfusion:PivotGridControl.PivotRows>
 
-    ' Adds Pivot Colums to Grid
+				<!--Specifies Pivot Columns-->
 
-    Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
+				<syncfusion:PivotGridControl.PivotColumns>
 
-    Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "State", .TotalHeader = "Total"})
+					<syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
 
-    ' Adds PivotCalculations to Grid
+					<syncfusion:PivotItem FieldMappingName="State" TotalHeader="Total"/>
 
-    Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format="C", .SummaryType = SummaryType.DoubleTotalSum})
+				</syncfusion:PivotGridControl.PivotColumns>
 
-    Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Quantity", .Format ="#,##0"})
+				<!--Specifies Pivot Calculation Values--> 
 
-End Sub
+				<syncfusion:PivotGridControl.PivotCalculations>
 
-{% endhighlight %} 
+					<syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
 
+					<syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/>
 
-18.Run the application and the following output is generated:
+				</syncfusion:PivotGridControl.PivotCalculations>
 
-![](Getting-Started_images/Getting-Started_img11.png)
+			</syncfusion:PivotGridControl>            
+
+		</Grid>
+
+		</Window>
+
+    ~~~
+
+	### Through Code-Behind
+
+    ~~~csharp
+
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
+
+		{
+
+		// Specifies the ItemSource for PivotGrid
+
+		this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
+
+		// Adds Pivot Rows to Grid
+
+		this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
+
+		this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Year", TotalHeader = "Total" });
+
+		// Adds Pivot Colums to Grid
+
+		this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
+
+		this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "State", TotalHeader = "Total" });
+
+		// Adds PivotCalculations to Grid
+
+		this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount",Format="C" , SummaryType = SummaryType.DoubleTotalSum });
+
+		this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Quantity", Format ="#,##0"});
+
+		}
+
+    ~~~
+
+    ~~~vbnet
+
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+		' Specifies the ItemSource for PivotGrid
+
+		Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
+
+		' Adds Pivot Rows to Grid
+
+		Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
+
+		Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Year", .TotalHeader = "Total"})
+
+		' Adds Pivot Colums to Grid
+
+		Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
+
+		Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "State", .TotalHeader = "Total"})
+
+		' Adds PivotCalculations to Grid
+
+		Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format="C", .SummaryType = SummaryType.DoubleTotalSum})
+
+		Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Quantity", .Format ="#,##0"})
+
+		End Sub
+
+    ~~~
+
+18. Run the application and the following output is generated:
+
+    ![](Getting-Started_images/Getting-Started_img11.png)
 
 
 
 ### Through Code Behind
 
-1.Open Visual Studio IDE and from the File menu, select New  Project. 
+1. Open Visual Studio IDE and from the File menu, select New  Project. 
 
-2.In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application. 
+2. In the New Project Dialog box, click the tree node item Windows under Visual C# and select WPF Application. 
 
-
-
-![](Getting-Started_images/Getting-Started_img12.png)
+   ![](Getting-Started_images/Getting-Started_img12.png)
 
 
 
-3.Select WPF Application and click OK.
+3. Select WPF Application and click OK.
 
-4.Provide a Name to Grid in design page to access it through code-behind.
+4. Provide a Name to Grid in design page to access it through code-behind.
 
+   ~~~xaml
 
+		<Window x:Class="WpfApplication10.MainWindow"         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-{% highlight xml %} 
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
+		Title="MainWindow" Height="350" Width="525">
 
-<Window x:Class="WpfApplication10.MainWindow"         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-
-        Title="MainWindow" Height="350" Width="525">
-
-    <Grid Name="grid1">
+		<Grid Name="grid1">
 
 
 
-    </Grid>
+		</Grid>
 
-</Window>
+		</Window>
 
-{% endhighlight %} 
+   ~~~
 
-5.Use the following namespace to create a new PivotGrid control through code-behind.
+5. Use the following namespace to create a new PivotGrid control through code-behind.
 
-  i. Syncfusion.Windows.Controls.PivotGrid
+   i. Syncfusion.Windows.Controls.PivotGrid
+
+   ![](Getting-Started_images/Getting-Started_img13.png)
+
+6. Right-click on the References and select Add Referene, then add the following assemblies from the mentioned location.
+
+   i. Syncfusin.Grid.Wpf
+   ii. Syncfusion.GridCommon.Wpf
+   iii. Syncfusion.Linq.Base
+   iv. Syncfusion.PivotAnalysis.Base
+   v. Syncfusion.PivotAnalysis.Wpf
+   vi. Syncfusion.Shared.Wpf
+
+   ### Assemblies Location
+
+   {System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\{Version Number}\precompiledassemblies\{Version Number}
+
+7. In Window_Loaded() event, create a new PivotGridControl by using the object created from PivotGridControl class and add this PivotGridControl to the main window by using grid1.Children.Add() method.
 
 
+   ~~~csharp
 
-![](Getting-Started_images/Getting-Started_img13.png)
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
 
+		{
 
+		PivotGridControl PivotGrid1 = new PivotGridControl();
 
-6.Right-click on the References and select Add Referene, then add the following assemblies from the mentioned location.
+		this.grid1.Children.Add(PivotGrid1);
 
-  i. Syncfusin.Grid.Wpf
-  ii. Syncfusion.GridCommon.Wpf
-  iii. Syncfusion.Linq.Base
-  iv. Syncfusion.PivotAnalysis.Base
-  v. Syncfusion.PivotAnalysis.Wpf
-  vi. Syncfusion.Shared.Wpf
+		}
+		
+   ~~~ 
 
+   ~~~vbnet
+
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+
+		Dim PivotGrid1 As New PivotGridControl()
+
+		Me.grid1.Children.Add(PivotGridControl1)
+
+		End Sub
+
+   ~~~ 
    
-#### Assemblies Location
+8. In Solution Explorer, right-click on the project name and select Add New Item.
 
-{System Drive}:\Program Files (x86)\Syncfusion\Essential Studio\{Version Number}\precompiledassemblies\{Version Number}
+   ![](Getting-Started_images/Getting-Started_img14.png)
 
-7.In Window_Loaded() event, create a new PivotGridControl by using the object created from PivotGridControl class and add this PivotGridControl to the main window by using grid1.Children.Add() method.
+9. Add New Item dialog box opens as follows.
 
-{% highlight C# %} 
+   ![](Getting-Started_images/Getting-Started_img15.png)
+
+10. Select Class and create file under the name ProductSales.cs. ItemSource can be instantiated from the ProductSales.cs file. 
+
+    ~~~csharp
+
+		public class ProductSales
+
+		{
+
+		public string Product { get; set; }
+
+		public string Year { get; set; }
+
+		public string Country { get; set; }
+
+		public string State { get; set; }
+
+		public int Quantity { get; set; }
+
+		public double Amount { get; set; }
 
 
-protected void Window_Loaded(object sender, RoutedEventArgs e)
 
-{
+		public static ProductSalesCollection GetSalesData()
 
-    PivotGridControl PivotGrid1 = new PivotGridControl();
+		{
 
-    this.grid1.Children.Add(PivotGrid1);
+		/// Geography
 
-}
+		string[] countries = new string[] { "Canada" };
 
- {% endhighlight %} 
+		string[] canadaStates = new string[] { "Alberta", "British Columbia","Ontario" };
+
+
+
+		/// Time
+
+		string[] dates = new string[] { "FY 2005", "FY 2006", "FY 2007" };
+
+
+
+		/// Products
+
+		string[] products = new string[] { "Bike", "Car" };
+
+		Random r = new Random(123345345);
+
+		int numberOfRecords = 2000;
+
+		ProductSalesCollection listOfProductSales = new ProductSalesCollection();
+
+		for (int i = 0; i < numberOfRecords; i++)
+
+		{
+
+		ProductSales sales = new ProductSales();
+
+		sales.Country = countries[r.Next(0, countries.GetLength(0))];
+
+		sales.Quantity = r.Next(1, 12);
+
+		/// 1 percent discount for 1 quantity
+
+		double discount = (30000 * sales.Quantity) * (double.Parse(sales.Quantity.ToString()) / 100);
+
+		sales.Amount = (30000 * sales.Quantity) - discount;
+
+		sales.Year = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
+
+		sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
+
+		sales.State = canadaStates[r.Next(canadaStates.GetLength(0))];             
+
+		listOfProductSales.Add(sales);
+
+		}
+
+		return listOfProductSales;
+
+		}
+
+		public override string ToString()
+
+		{
+
+		return string.Format("{0}-{1}-{2}", this.Country, this.State, this.Product);
+
+		}
+
+		public class ProductSalesCollection : List<ProductSales>
+
+		{
+
+		}
+
+		}
+
+    ~~~ 
+
+11. GetSalesData method is used to get the PivotItems that needs to be populated in the PivotGridControl.
+
+12. Binding ItemSource with PivotGrid control is illustrated in the following code example.
+
+    ~~~csharp
+
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
+
+		{
+
+		PivotGridControl PivotGridControl1 = new PivotGridControl();
+
+		// Specifies ItemSource for PivotGrid
+
+		this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
+
+		}
+
+    ~~~
  
+    ~~~vbnet 
 
-{% highlight vbnet %} 
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
+		Dim PivotGridControl1 As New PivotGridControl()
 
+		' Specifies ItemSource for PivotGrid
 
+		Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
 
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+		End Sub
 
-    Dim PivotGrid1 As New PivotGridControl()
+    ~~~
 
-    Me.grid1.Children.Add(PivotGridControl1)
+13. You can specify the PivotRows, PivotColumns and PivotComputationInfo that tabulate the values in the PivotGrid.
 
-End Sub
+14. Adding the PivotRows is illustrated in the following code example.
 
-{% endhighlight %} 
+    ~~~csharp
 
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
 
-8.In Solution Explorer, right-click on the project name and select Add New Item.
+		{
 
-![](Getting-Started_images/Getting-Started_img14.png)
+		PivotGridControl PivotGridControl1 = new PivotGridControl();
 
+		// Specifies ItemSource for PivotGrid
 
+		this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
 
-9.Add New Item dialog box opens as follows.
+		// Adds Pivot Rows to Grid
 
-![](Getting-Started_images/Getting-Started_img15.png)
+		this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
 
+		}
 
+    ~~~
 
-10.Select Class and create file under the name ProductSales.cs. ItemSource can be instantiated from the ProductSales.cs file. 
+    ~~~vbnet
 
-{% highlight C# %} 
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
-public class ProductSales
+		Dim PivotGridControl1 As New PivotGridControl()
 
-    {
+		' Specifies ItemSource for PivotGrid
 
-        public string Product { get; set; }
+		Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
 
-        public string Year { get; set; }
+		' Adds Pivot Rows to Grid
 
-        public string Country { get; set; }
+		Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
 
-        public string State { get; set; }
+		End Sub
 
-        public int Quantity { get; set; }
+    ~~~
 
-        public double Amount { get; set; }
+15. Adding PivotColumns is illustrated in the following code example.
 
+    ~~~csharp
 
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
 
-        public static ProductSalesCollection GetSalesData()
+		{
 
-        {
+		PivotGridControl PivotGridControl1 = new PivotGridControl();
 
-            /// Geography
+		// Specifies ItemSource for PivotGrid
 
-            string[] countries = new string[] { "Canada" };
+		this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
 
-            string[] canadaStates = new string[] { "Alberta", "British Columbia","Ontario" };
+		// Adds Pivot Colums to Grid
 
+		this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
 
+		}
 
-            /// Time
+    ~~~
 
-            string[] dates = new string[] { "FY 2005", "FY 2006", "FY 2007" };
+    ~~~vbnet
 
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
+		Dim PivotGridControl1 As New PivotGridControl()
 
-            /// Products
+		' Specifies ItemSource for PivotGrid
 
-            string[] products = new string[] { "Bike", "Car" };
+		Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
 
-            Random r = new Random(123345345);
+		' Adds Pivot Colums to Grid
 
-            int numberOfRecords = 2000;
+		Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
 
-            ProductSalesCollection listOfProductSales = new ProductSalesCollection();
+		End Sub
 
-            for (int i = 0; i < numberOfRecords; i++)
+    ~~~
 
-            {
+16. Adding PivotCalculations is illustrated in the following code example.
 
-                ProductSales sales = new ProductSales();
+    ~~~csharp
 
-                sales.Country = countries[r.Next(0, countries.GetLength(0))];
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
 
-                sales.Quantity = r.Next(1, 12);
+		{
 
-                /// 1 percent discount for 1 quantity
+		PivotGridControl PivotGridControl1 = new PivotGridControl();
 
-                double discount = (30000 * sales.Quantity) * (double.Parse(sales.Quantity.ToString()) / 100);
+		// Specifies ItemSource for PivotGrid
 
-                sales.Amount = (30000 * sales.Quantity) - discount;
+		this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
 
-                sales.Year = dates[r.Next(r.Next(dates.GetLength(0) + 1))];
+		// Adds PivotCalculations to Grid
 
-                sales.Product = products[r.Next(r.Next(products.GetLength(0) + 1))];
+		this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount",Format="C" , SummaryType = SummaryType.DoubleTotalSum });
 
-                sales.State = canadaStates[r.Next(canadaStates.GetLength(0))];             
+		}
 
-                listOfProductSales.Add(sales);
 
-            }
+    ~~~
 
-            return listOfProductSales;
+    ~~~vbnet
+	
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
-        }
+		Dim PivotGridControl1 As New PivotGridControl()
 
-        public override string ToString()
+		' Specifies ItemSource for PivotGrid
 
-        {
+		Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
 
-            return string.Format("{0}-{1}-{2}", this.Country, this.State, this.Product);
+		' Adds PivotCalculations to Grid
 
-        }
+		Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format="C", .SummaryType = SummaryType.DoubleTotalSum})
 
-        public class ProductSalesCollection : List<ProductSales>
+		End Sub
 
-        {
+    ~~~
 
-        }
+    To populate a PivotGrid with the sample IList data
 
-    }
+    ~~~csharp
 
- {% endhighlight %} 
- 
+		protected void Window_Loaded(object sender, RoutedEventArgs e)
 
-11.GetSalesData method is used to get the PivotItems that needs to be populated in the PivotGridControl.
+		{
 
-12.Binding ItemSource with PivotGrid control is illustrated in the following code example.
+		PivotGridControl PivotGridControl1 = new PivotGridControl();
 
+		// Specifies ItemSource for PivotGrid
 
+		this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
 
-{% highlight C# %} 
+		// Adds Pivot Rows to Grid
 
+		this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
 
-protected void Window_Loaded(object sender, RoutedEventArgs e)
+		this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Year", TotalHeader = "Total" });
 
-{
+		// Adds Pivot Colums to Grid
 
-    PivotGridControl PivotGridControl1 = new PivotGridControl();
+		this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
 
-    // Specifies ItemSource for PivotGrid
+		this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "State", TotalHeader = "Total" });
 
-    this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
+		// Adds PivotCalculations to Grid
 
-}
+		this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount",Format="C" , SummaryType = SummaryType.DoubleTotalSum });
 
- {% endhighlight %} 
- 
- 
+		this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Quantity", Format ="#,##0"});
 
-{% highlight vbnet %} 
+		}
 
+    ~~~
 
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
+    ~~~vbnet 
 
-    Dim PivotGridControl1 As New PivotGridControl()
+		Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
-    ' Specifies ItemSource for PivotGrid
+		Dim PivotGridControl1 As New PivotGridControl()
 
-    Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
+		' Specifies ItemSource for PivotGrid
 
-End Sub
+		Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
 
-{% endhighlight %} 
+		' Adds Pivot Rows to Grid
 
-13.You can specify the PivotRows, PivotColumns and PivotComputationInfo that tabulate the values in the PivotGrid.
+		Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
 
-14.Adding the PivotRows is illustrated in the following code example.
+		Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Year", .TotalHeader = "Total"})
 
+		' Adds Pivot Colums to Grid
 
+		Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
 
-{% highlight C# %} 
+		Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "State", .TotalHeader = "Total"})
 
+		' Adds PivotCalculations to Grid
 
+		Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format="C", .SummaryType = SummaryType.DoubleTotalSum})
 
-protected void Window_Loaded(object sender, RoutedEventArgs e)
+		Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Quantity", .Format ="#,##0"})
 
-{
+		End Sub
+		
+    ~~~
 
-    PivotGridControl PivotGridControl1 = new PivotGridControl();
+17. Run the application and the following output is generated. 
 
-    // Specifies ItemSource for PivotGrid
-
-    this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
-
-    // Adds Pivot Rows to Grid
-
-    this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
-
-}
-
- {% endhighlight %} 
-
-{% highlight vbnet %} 
-
-
-
-
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-
-    Dim PivotGridControl1 As New PivotGridControl()
-
-    ' Specifies ItemSource for PivotGrid
-
-    Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
-
-    ' Adds Pivot Rows to Grid
-
-    Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
-
-End Sub
-
-{% endhighlight %} 
-
-
-15.Adding PivotColumns is illustrated in the following code example.
-
-{% highlight C# %} 
-
-
-
-
-
-protected void Window_Loaded(object sender, RoutedEventArgs e)
-
-{
-
-    PivotGridControl PivotGridControl1 = new PivotGridControl();
-
-    // Specifies ItemSource for PivotGrid
-
-    this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
-
-    // Adds Pivot Colums to Grid
-
-    this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
-
-}
-
-{% endhighlight %} 
-
-
-{% highlight vbnet %} 
-
-
-
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-
-    Dim PivotGridControl1 As New PivotGridControl()
-
-    ' Specifies ItemSource for PivotGrid
-
-    Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
-
-    ' Adds Pivot Colums to Grid
-
-    Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
-
-End Sub
-
-{% endhighlight %} 
-
-16.Adding PivotCalculations is illustrated in the following code example.
-
-{% highlight C# %}  
-
-
-
-
-
-protected void Window_Loaded(object sender, RoutedEventArgs e)
-
-{
-
-    PivotGridControl PivotGridControl1 = new PivotGridControl();
-
-    // Specifies ItemSource for PivotGrid
-
-    this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
-
-    // Adds PivotCalculations to Grid
-
-    this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount",Format="C" , SummaryType = SummaryType.DoubleTotalSum });
-
-}
-
-
-{% endhighlight %} 
-
-
-{% highlight vbnet %} 
-
-
-
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-
-    Dim PivotGridControl1 As New PivotGridControl()
-
-    ' Specifies ItemSource for PivotGrid
-
-    Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
-
-    ' Adds PivotCalculations to Grid
-
-    Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format="C", .SummaryType = SummaryType.DoubleTotalSum})
-
-End Sub
-
-{% endhighlight %} 
-
-
-To populate a PivotGrid with the sample IList data
-
-{% highlight C# %}  
-
-
-protected void Window_Loaded(object sender, RoutedEventArgs e)
-
-{
-
-    PivotGridControl PivotGridControl1 = new PivotGridControl();
-
-    // Specifies ItemSource for PivotGrid
-
-    this.PivotGridControl1.ItemSource = ProductSales.GetSalesData();
-
-    // Adds Pivot Rows to Grid
-
-    this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Product", TotalHeader = "Total" });
-
-    this.PivotGridControl1.PivotRows.Add(new PivotItem { FieldMappingName = "Year", TotalHeader = "Total" });
-
-    // Adds Pivot Colums to Grid
-
-    this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "Country", TotalHeader = "Total" });
-
-    this.PivotGridControl1.PivotColumns.Add(new PivotItem { FieldMappingName = "State", TotalHeader = "Total" });
-
-    // Adds PivotCalculations to Grid
-
-    this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Amount",Format="C" , SummaryType = SummaryType.DoubleTotalSum });
-
-    this.PivotGridControl1.PivotCalculations.Add(new PivotComputationInfo { FieldName = "Quantity", Format ="#,##0"});
-
-}
-
-{% endhighlight %} 
-
-
-{% highlight vbnet %} 
-
-
-
-
-
-Protected Sub Window_Loaded(ByVal sender As Object, ByVal e As RoutedEventArgs)
-
-    Dim PivotGridControl1 As New PivotGridControl()
-
-    ' Specifies ItemSource for PivotGrid
-
-    Me.PivotGridControl1.ItemSource = ProductSales.GetSalesData()
-
-    ' Adds Pivot Rows to Grid
-
-    Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Product", .TotalHeader = "Total"})
-
-    Me.PivotGridControl1.PivotRows.Add(New PivotItem With {.FieldMappingName = "Year", .TotalHeader = "Total"})
-
-    ' Adds Pivot Colums to Grid
-
-    Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "Country", .TotalHeader = "Total"})
-
-    Me.PivotGridControl1.PivotColumns.Add(New PivotItem With {.FieldMappingName = "State", .TotalHeader = "Total"})
-
-    ' Adds PivotCalculations to Grid
-
-    Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Amount", .Format="C", .SummaryType = SummaryType.DoubleTotalSum})
-
-    Me.PivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldName = "Quantity", .Format ="#,##0"})
-
-End Sub
-
-{% endhighlight %} 
-
-
-
-17.Run the application and the following output is generated. 
-
-![](Getting-Started_images/Getting-Started_img16.png)
+    ![](Getting-Started_images/Getting-Started_img16.png)
 
 
 

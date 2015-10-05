@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OLAP-Data-Processing
+title: OLAP Data Processing| OLAPCommon  | Wpf | Syncfusion
 description: olap data processing
 platform: wpf
 control: OLAPCommon 

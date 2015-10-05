@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding-items-to-the-HierarchyNavigator-control
+title: Adding items to the HierarchyNavigator control| Hierarchical Navigator | Wpf | Syncfusion
 description: adding items to the hierarchynavigator control
 platform: wpf
 control: Hierarchical Navigator

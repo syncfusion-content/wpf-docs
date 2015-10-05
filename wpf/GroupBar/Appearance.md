@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance| GroupBar | Wpf | Syncfusion
 description: appearance
 platform: wpf
 control: GroupBar

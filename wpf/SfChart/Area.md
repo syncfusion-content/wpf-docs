@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Area
+title: Area| SfChart | Wpf | Syncfusion
 description: area
 platform: wpf
 control: SfChart

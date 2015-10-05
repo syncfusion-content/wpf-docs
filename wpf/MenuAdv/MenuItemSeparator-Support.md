@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MenuItemSeparator-Support
+title: MenuItemSeparator Support| MenuAdv | Wpf | Syncfusion
 description: menuitemseparator support
 platform: wpf
 control: MenuAdv

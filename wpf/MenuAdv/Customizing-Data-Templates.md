@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customizing-Data-Templates
+title: Customizing Data Templates| MenuAdv | Wpf | Syncfusion
 description: customizing data templates
 platform: wpf
 control: MenuAdv

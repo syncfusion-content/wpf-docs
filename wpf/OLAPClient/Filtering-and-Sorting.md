@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering-and-Sorting
+title: Filtering and Sorting| OLAP Client  | Wpf | Syncfusion
 description: filtering and sorting
 platform: wpf
 control: OLAP Client 

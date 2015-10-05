@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-Header-of-the-Document-container
+title: Setting Header of the Document container| DocumentContainer | Wpf | Syncfusion
 description: setting header of the document container
 platform: wpf
 control: DocumentContainer

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Acquiring-total-number-of-pages 
+title: Acquiring total number of pages | PDF Viewer | Wpf | Syncfusion
 description: acquiring total number of pages 
 platform: wpf
 control: PDF Viewer

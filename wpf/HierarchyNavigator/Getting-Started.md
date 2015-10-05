@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started| Hierarchical Navigator | Wpf | Syncfusion
 description: getting started
 platform: wpf
 control: Hierarchical Navigator

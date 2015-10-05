@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zooming
+title: Zooming| Gantt | Wpf | Syncfusion
 description: zooming
 platform: wpf
 control: Gantt

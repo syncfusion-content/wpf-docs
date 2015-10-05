@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DataBinding
+title: DataBinding| SfChart | Wpf | Syncfusion
 description: databinding
 platform: wpf
 control: SfChart

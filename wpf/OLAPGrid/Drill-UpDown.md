@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drill-UpDown
+title: Drill UpDown| OLAP Grid | Wpf | Syncfusion
 description: drill-up/down
 platform: wpf
 control: OLAP Grid

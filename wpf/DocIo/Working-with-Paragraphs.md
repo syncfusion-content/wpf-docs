@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working-with-Paragraphs
+title: Working with Paragraphs| DocIO | Wpf | Syncfusion
 description: working with paragraphs
 platform: wpf
 control: DocIO

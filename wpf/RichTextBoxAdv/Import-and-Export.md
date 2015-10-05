@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Import-and-Export
+title: Import and Export| RichTextBoxAdv | Wpf | Syncfusion
 description:  import and export
 platform: wpf
 control: RichTextBoxAdv
@@ -22,9 +22,7 @@ The HTML import feature allows the user to import an .html file into the RichTex
      
  DocumentAdv doucment = HTMLImporting.ConvertToDocumentAdv(stream);  
  DocumentAdv document = HTMLImporting.ConvertToDocumentAdv(htmlstring);
-{% endhighlight %}
 
-{% highlight C# %}
       
 string html = HTMLExporting.ConvertToHtml(RichTextBox.Document, stream);
 {% endhighlight %}
@@ -33,8 +31,6 @@ string html = HTMLExporting.ConvertToHtml(RichTextBox.Document, stream);
 ### Methods
 
 
-
-Methods Table
 
 <table>
 <tr>
@@ -104,8 +100,6 @@ The following assembly references are required to use this feature and its names
 
 You can convert the Word document stream to RichTextBoxAdv document by invoking the ConvertToDocumentAdv method from the extension class DocxImporting. 
 
-ConvertToDocumentAdv Method
-
 <table>
 <tr>
 <th>
@@ -122,6 +116,7 @@ DocumentAdv</td><td>
 Converts the Word document stream to DocumentAdv instance.</td></tr>
 </table>
 
+{% tabs %}
 {% highlight C# %}
 
 
@@ -157,13 +152,13 @@ richTextBoxAdv.Document = DocxImporting.ConvertToDocumentAdv(documentStream, ".d
 
 richTextBoxAdv.Document = DocxImporting.ConvertToDocumentAdv(documentStream, ".docx")
 {% endhighlight %}
-
+{% endtabs %}
 
 ### Doc and Docx Export
 
 You can convert the RichTextBoxAdv document to Word document stream by invoking the ConvertToDocument method from the extension class DocxExporting. 
 
-ConvertToDocument Method
+
 
 <table>
 <tr>
@@ -180,6 +175,7 @@ void</td><td>
 Converts the DocumentAdv instance to Word document stream.</td></tr>
 </table>
 
+{% tabs %}
 {% highlight C# %}
 
 
@@ -209,6 +205,7 @@ DocxExporting.ConvertToDocument(richTextBoxAdv.Document, documentStream, ".doc")
 
 DocxExporting.ConvertToDocument(richTextBoxAdv.Document, documentStream, ".docx")
 {% endhighlight %}
+{% endtabs %}
 
 ####  Limitations
 
@@ -224,9 +221,6 @@ The XAML import feature allows users to import a .xaml file into the RichTextBox
 
 
 RichTextBox.Document=XAMLImporting.ConvertToDocumentAdv(xamlStream)
-{% endhighlight %}
-
-{% highlight C# %}
 
 
 
@@ -236,11 +230,8 @@ string xaml = XAMLExporting.ConvertToXAML(RichTextBox.Document, xamlstream);
 
 
 
-Methods
+### Methods
 
-
-
-Methods table
 
 <table>
 <tr>
@@ -289,11 +280,10 @@ string txtstring= TextExporting.ConvertToText(RichTextBox.Document, textStream);
 
 
 
-Methods
+### Methods
 
 
 
-Methods table
 
 <table>
 <tr>

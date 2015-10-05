@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles-and-Templates
+title: Styles and Templates| SfMultiColumnDropDownControl | Wpf | Syncfusion
 description: styles and templates
 platform: wpf
 control: SfMultiColumnDropDownControl

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
+title: Overview| GridTree | Wpf | Syncfusion
 description: overview
 platform: wpf
-control: GridTree Control
+control: GridTree 
 documentation: ug
 ---
 
-# Overview
+# GridTree 
 
 The grid at its core functions as a very efficient display engine for tabular data that can be customized down to the cell level. It does not make any assumptions on the structure of the data (many grid controls implemented as straight data-bound controls make such explicit assumptions). This leads to a very flexible design that can be easily adapted to a variety of tasks including the display of completely unstructured data and the display of structured data from a database. 
 

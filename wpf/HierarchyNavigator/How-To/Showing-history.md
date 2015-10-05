@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Showing-history
+title: Showing history| Hierarchical Navigator | Wpf | Syncfusion
 description: showing history 
 platform: wpf
 control: Hierarchical Navigator

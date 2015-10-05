@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orientation
+title: Orientation| Bullet Graph  | Wpf | Syncfusion
 description: orientation
 platform: wpf
 control: Bullet Graph 

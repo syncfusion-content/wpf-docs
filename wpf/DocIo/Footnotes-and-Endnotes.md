@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Footnotes-and-Endnotes
+title: Footnotes and Endnotes| DocIO | Wpf | Syncfusion
 description: footnotes and endnotes
 platform: wpf
 control: DocIO

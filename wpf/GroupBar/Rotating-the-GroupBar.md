@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rotating-the-GroupBar
+title: Rotating the GroupBar| GroupBar | Wpf | Syncfusion
 description: rotating the groupbar
 platform: wpf
 control: GroupBar

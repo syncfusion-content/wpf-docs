@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ShowPromptOnFocus
+title: ShowPromptOnFocus| SfMaskedEdit | Wpf | Syncfusion
 description: showpromptonfocus
 platform: wpf
 control: SfMaskedEdit

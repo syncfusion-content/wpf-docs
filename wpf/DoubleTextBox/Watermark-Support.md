@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Watermark-Support
+title: Watermark Support| DoubleTextBox  | Wpf | Syncfusion
 description: watermark support
 platform: wpf
 control: DoubleTextBox 

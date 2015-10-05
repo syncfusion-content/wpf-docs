@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Host-BI-Silverlight-component-in-ASPNET-MVC-Web-Pr
+title: Host BI Silverlight component in ASPNET MVC Web Pr| OLAPCommon | Wpf | Syncfusion
 description: host bi silverlight component in asp.net mvc web project
 platform: wpf
 control: OLAPCommon

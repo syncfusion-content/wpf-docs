@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting
+title: Sorting| SfChart | Wpf | Syncfusion
 description: sorting 
 platform: wpf
 control: SfChart

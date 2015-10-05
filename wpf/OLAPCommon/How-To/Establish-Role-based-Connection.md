@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Establish-Role-based-Connection
+title: Establish Role based Connection| OLAPCommon | Wpf | Syncfusion
 description: establish role-based connection
 platform: wpf
 control: OLAPCommon

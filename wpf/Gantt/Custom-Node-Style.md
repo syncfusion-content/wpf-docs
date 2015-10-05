@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom-Node-Style
+title: Custom Node Style| Gantt | Wpf | Syncfusion
 description: custom node style
 platform: wpf
 control: Gantt

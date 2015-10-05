@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles-and-Formatting
+title: Styles and Formatting| DocIO | Wpf | Syncfusion
 description: styles and formatting
 platform: wpf
 control: DocIO

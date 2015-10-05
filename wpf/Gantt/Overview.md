@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview| Gantt | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: Gantt

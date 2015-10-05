@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization-Support
+title: Localization Support| OLAP Client  | Wpf | Syncfusion
 description: localization support
 platform: wpf
 control: OLAP Client 

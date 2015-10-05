@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing-the-text-displayed-in-the-loading-indicator 
+title: Changing the text displayed in the loading indicator | PDF Viewer | Wpf | Syncfusion
 description: changing the text displayed in the loading indicator
 platform: wpf
 control: PDF Viewer

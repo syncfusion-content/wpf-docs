@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disable-Editing
+title: Disable Editing| RichTextBoxAdv | Wpf | Syncfusion
 description: disable editing
 platform: wpf
 control: RichTextBoxAdv
@@ -11,11 +11,9 @@ documentation: ug
 
 You can disable editing in RichTextBoxAdv by enabling the property called IsReadOnly.It will not allow the user to edit the content.
 
-## Properties
+### Properties
 
 
-
-Property Table
 
 <table>
 <tr>

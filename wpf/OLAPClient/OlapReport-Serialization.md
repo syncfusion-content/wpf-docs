@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OlapReport-Serialization
+title: OlapReport Serialization| OLAP Client  | Wpf | Syncfusion
 description: olapreport serialization
 platform: wpf
 control: OLAP Client 

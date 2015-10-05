@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visible-Dates-customization
+title: Visible Dates customization| SfSchedule | Wpf | Syncfusion
 description: visible dates customization
 platform: wpf
 control: SfSchedule
@@ -12,6 +12,7 @@ documentation: ug
 All views in the schedule have their own number of visible dates. The SfSchedule control allows users to view multiple dates in the day and time line views.
 
 If users want to view particular dates in a single view, users can provide a DateTime collection to the ScheduleDateRange property to view the particular dates in the day and time line view types.
+
 {% highlight c# %}
 
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Data-Population
+title: Data Population| GridTree | Wpf | Syncfusion
 description: data population
 platform: wpf
-control: GridTree Control
+control: GridTree 
 documentation: ug
 ---
 

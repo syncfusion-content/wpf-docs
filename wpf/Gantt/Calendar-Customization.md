@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calendar-Customization
+title: Calendar Customization| Gantt | Wpf | Syncfusion
 description: calendar customization
 platform: wpf
 control: Gantt

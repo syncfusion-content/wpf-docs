@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MoreColor-Option
+title: MoreColor Option| ColorPickerPalette | Wpf | Syncfusion
 description: morecolor option
 platform: wpf
 control: ColorPickerPalette

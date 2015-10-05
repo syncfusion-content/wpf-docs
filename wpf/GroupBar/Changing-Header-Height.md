@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing-Header-Height
+title: Changing Header Height| GroupBar | Wpf | Syncfusion
 description: changing header height
 platform: wpf
 control: GroupBar

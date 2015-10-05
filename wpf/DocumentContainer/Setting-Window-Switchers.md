@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-Window-Switchers
+title: Setting Window Switchers| DocumentContainer | Wpf | Syncfusion
 description: setting window switchers
 platform: wpf
 control: DocumentContainer

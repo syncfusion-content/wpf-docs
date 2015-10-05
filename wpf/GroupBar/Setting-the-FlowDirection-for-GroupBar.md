@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-the-FlowDirection-for-GroupBar
+title: Setting the FlowDirection for GroupBar| GroupBar | Wpf | Syncfusion
 description: setting the flowdirection for groupbar
 platform: wpf
 control: GroupBar

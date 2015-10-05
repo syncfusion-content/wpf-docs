@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip-Support
+title: ToolTip Support| ColorPickerPalette | Wpf | Syncfusion
 description: tooltip support
 platform: wpf
 control: ColorPickerPalette

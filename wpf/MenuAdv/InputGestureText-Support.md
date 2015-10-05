@@ -1,6 +1,6 @@
 ---
 layout: post
-title: InputGestureText-Support
+title: InputGestureText Support| MenuAdv | Wpf | Syncfusion
 description: inputgesturetext support
 platform: wpf
 control: MenuAdv

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enabling-and-Disabling-Notification-bar
+title: Enabling and Disabling Notification bar| PDF Viewer | Wpf | Syncfusion
 description: enabling and disabling notification bar
 platform: wpf
 control: PDF Viewer

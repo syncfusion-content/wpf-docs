@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbars-in-GroupBar
+title: Toolbars in GroupBar| GroupBar | Wpf | Syncfusion
 description: toolbars in groupbar
 platform: wpf
 control: GroupBar

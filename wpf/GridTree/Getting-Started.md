@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started| GridTree | Wpf | Syncfusion
 description: getting started	
 platform: wpf
-control: GridTree Control
+control: GridTree
 documentation: ug
 ---
 

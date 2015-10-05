@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind-the-MDX-query-to-OlapDataManager
+title: Bind the MDX query to OlapDataManager| OLAPCommon | Wpf | Syncfusion
 description: bind the mdx query to olapdatamanager
 platform: wpf
 control: OLAPCommon

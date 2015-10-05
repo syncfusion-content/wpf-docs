@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Acquiring-current-page-being-displayed
+title: Acquiring current page being displayed| PDF Viewer | Wpf | Syncfusion
 description: acquiring current page being displayed 
 platform: wpf
 control: PDF Viewer

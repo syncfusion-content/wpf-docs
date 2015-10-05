@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LoadReportDefinitionFromStream
+title: LoadReportDefinitionFromStream| OLAPCommon | Wpf | Syncfusion
 description: loadreportdefinitionfromstream
 platform: wpf
 control: OLAPCommon

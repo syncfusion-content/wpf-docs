@@ -1,9 +1,9 @@
 ---
 layout: post
-title: GridTree-Control-Events
+title: GridTree Control Events| GridTree | Wpf | Syncfusion
 description: gridtree control events
 platform: wpf
-control: GridTree Control
+control: GridTree
 documentation: ug
 ---
 

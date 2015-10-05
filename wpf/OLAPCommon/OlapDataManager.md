@@ -1,6 +1,6 @@
 ---
 layout: post
-title: OlapDataManager
+title: OlapDataManager| OLAPCommon  | Wpf | Syncfusion
 description: olapdatamanager
 platform: wpf
 control: OLAPCommon 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create-a-WCF-Service-for-Silverlight-OLAP-control
+title: Create a WCF Service for Silverlight OLAP control| OLAPCommon | Wpf | Syncfusion
 description: create a wcf service for silverlight olap control
 platform: wpf
 control: OLAPCommon

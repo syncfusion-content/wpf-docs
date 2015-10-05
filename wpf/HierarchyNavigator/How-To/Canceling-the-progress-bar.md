@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Canceling-the-progress-bar
+title: Canceling the progress bar| Hierarchical Navigator | Wpf | Syncfusion
 description: canceling the progress bar
 platform: wpf
 control: Hierarchical Navigator

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Series
+title: Series| SfChart | Wpf | Syncfusion
 description: series
 platform: wpf
 control: SfChart

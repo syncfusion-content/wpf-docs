@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Handle-Drill-DownUp-Process
+title: Handle Drill DownUp Process| OLAPCommon | Wpf | Syncfusion
 description: handle drill down/up process
 platform: wpf
 control: OLAPCommon

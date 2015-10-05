@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Caption-Settings
+title: Caption Settings| Bullet Graph  | Wpf | Syncfusion
 description: caption settings
 platform: wpf
 control: Bullet Graph 

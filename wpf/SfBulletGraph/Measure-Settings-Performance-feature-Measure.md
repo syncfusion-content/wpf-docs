@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Measure-Settings-Performance--feature-Measure
+title: Measure Settings Performance  feature Measure| Bullet Graph  | Wpf | Syncfusion
 description: measure settings (performance/feature measure)
 platform: wpf
 control: Bullet Graph 

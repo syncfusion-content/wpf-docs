@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview| NotifyIcon | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: NotifyIcon

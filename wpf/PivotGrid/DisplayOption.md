@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DisplayOption
+title: DisplayOption| PivotGrid | Wpf | Syncfusion
 description: displayoption
 platform: wpf
 control: PivotGrid
@@ -11,13 +11,13 @@ documentation: ug
 
 DisplayOption behavior is used to display or hide the computation values in PivotEngine based on the option provided. Following are the display options for PivotGrid.
 
-### All
+## All
 
 This option is used to display complete values present in the PivotEngine, in the PivotGrid control.
 
-### Setting DisplayOption as “All”
+Setting DisplayOption as “All”
 
-### Through XAML
+## Through XAML
 
 1. First add the PivotGridControl using syncfusion:PivotGridControl class.
 2. Then, create a new PivotItem using PivotGridControl.PivotComputationInfo class.
@@ -31,11 +31,11 @@ This option is used to display complete values present in the PivotEngine, in th
 
 <Grid>
 
-        <!—Adding PivotGrid Control-->
+<!—Adding PivotGrid Control-->
 
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-                                     ItemSource="{Binding Source={StaticResource data}}" >
+ItemSource="{Binding Source={StaticResource data}}" >
 
 
 
@@ -47,14 +47,14 @@ This option is used to display complete values present in the PivotEngine, in th
 
 {% endhighlight %} 
 
-### Through Code Behind
+## Through Code Behind
 
 1. First, create a new PivotGridControl using PivotGridControl class in Window_Loaded() event handler.
 2. Then, create a new PivotItem using PivotComputationInfo class in PivotGridControl.
 3. Finally set the DisplayOption property for PivotCalculations as illustrated here.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -93,6 +93,7 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo()W
 End Sub
 
 {% endhighlight %} 
+{% endtabs %}
 
 
 ![](Concepts_images/Concepts_img1.png)
@@ -101,14 +102,15 @@ End Sub
 
 
 PivotGrid when DisplayOption is set to “All”
+{:.caption}
 
-### Calculations
+## Calculations
 
 This option allows the specific PivotComputationInfo to be visible only in the Calculation columns of PivotGrid.
 
-### Setting DisplayOption as “Calculations”
+## Setting DisplayOption as “Calculations”
 
-### Through XAML
+## Through XAML
 
 1. First add the PivotGridControl using syncfusion:PivotGridControl class.
 2. Then create new PivotItem using PivotGridControl.PivotComputationInfo class.
@@ -137,14 +139,14 @@ This option allows the specific PivotComputationInfo to be visible only in the C
 
 {% endhighlight %}
 
-### Through Code Behind
+## Through Code Behind
 
 1. First create a new PivotGridControl using PivotGridControl class in Window_Loaded() event handler.
 2. Then create new PivotItem using PivotComputationInfo class in PivotGridControl.
 3. Finally set the DisplayOption property for PivotCalculations as illustrated here.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -183,21 +185,22 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo()W
 End Sub
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 ![](Concepts_images/Concepts_img2.png)
 
 
 
 PivotGrid when DisplayOption is set to “Calculations”
+{:.caption}
 
-#### Summary
+### Summary
 
 This option allows the specific PivotComputationInfo to be visible only in the Summary columns of PivotGrid.
 
-#### Setting DisplayOption as Summary
+### Setting DisplayOption as Summary
 
-#### Through XAML
+### Through XAML
 
 1. First add the PivotGridControl using syncfusion:PivotGridControl class.
 2. Then create a new PivotItem using PivotGridControl.PivotComputationInfo class.
@@ -227,14 +230,14 @@ This option allows the specific PivotComputationInfo to be visible only in the S
 {% endhighlight %} 
 
 
-#### Through Code Behind
+### Through Code Behind
 
 1. First create a new PivotGridControl using PivotGridControl class in Window_Loaded() event handler.
 2. Then create a new PivotItem using PivotComputationInfo class in PivotGridControl.
 3. Finally set the DisplayOption property for PivotCalculations as illustrated here.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 protected void Window_Loaded(object sender, RoutedEventArgs e)
@@ -272,7 +275,7 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo()W
 End Sub
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 ![](Concepts_images/Concepts_img3.png)
 
@@ -298,11 +301,11 @@ This option allows the specific PivotComputationInfo to be visible only in the G
 
 <Grid>
 
-        <!—Adding PivotGrid Control-->
+	<!—Adding PivotGrid Control-->
 
-        <syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
+	<syncfusion:PivotGridControl HorizontalAlignment="Left" Name="PivotGridControl1" VerticalAlignment="Top" 
 
-                                     ItemSource="{Binding Source={StaticResource data}}" >
+	ItemSource="{Binding Source={StaticResource data}}" >
 
 
 
@@ -322,7 +325,7 @@ This option allows the specific PivotComputationInfo to be visible only in the G
 3. Finally set the DisplayOption property for PivotCalculations as illustrated here.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -361,7 +364,7 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo()W
 End Sub
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 
 ![](Concepts_images/Concepts_img4.png)
@@ -369,6 +372,7 @@ End Sub
 
 
 PivotGrid when DisplayOption is set to “GrandTotals”
+{:.caption}
 
 ### None
 
@@ -413,7 +417,7 @@ This option does not allow the specific PivotComputationInfo to be visible in an
 3. Finally set the DisplayOption property for PivotCalculations as illustrated here.
 
 
-
+{% tabs %}
 {% highlight C# %}  
 
 
@@ -451,11 +455,12 @@ Dim m_PivotComputationInfo As PivotComputationInfo = New PivotComputationInfo()W
 End Sub
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 ![](Concepts_images/Concepts_img5.png)
 
 PivotGrid when DisplayOption is set to “None”
+{:.caption}
 
 
 

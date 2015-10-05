@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load-xml-report-file
+title: Load xml report file| OLAPCommon | Wpf | Syncfusion
 description: load xml report file
 platform: wpf
 control: OLAPCommon

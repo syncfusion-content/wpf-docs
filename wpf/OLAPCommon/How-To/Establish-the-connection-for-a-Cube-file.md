@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Establish-the-connection-for-a-Cube-file
+title: Establish the connection for a Cube file| OLAPCommon | Wpf | Syncfusion
 description: establish the connection for a cube file
 platform: wpf
 control: OLAPCommon

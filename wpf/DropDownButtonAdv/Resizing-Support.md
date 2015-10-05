@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resizing-Support
+title: Resizing Support| | Wpf | Syncfusion
 description: resizing support
 platform: wpf
 control: DropDownButtonAdv

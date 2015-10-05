@@ -1,6 +1,6 @@
 ---
 layout: post
-title: View-the-PDF-stream-in-viewer
+title: View the PDF stream in viewer| PDF Viewer | Wpf | Syncfusion
 description: view the pdf stream in viewer
 platform: wpf
 control: PDF Viewer

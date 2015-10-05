@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting-PDF 
+title: Exporting PDF | PDF Viewer | Wpf | Syncfusion
 description: exporting pdf 
 platform: wpf
 control: PDF Viewer

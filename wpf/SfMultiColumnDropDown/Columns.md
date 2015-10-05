@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Columns
+title: Columns| SfMultiColumnDropDownControl | Wpf | Syncfusion
 description: columns
 platform: wpf
 control: SfMultiColumnDropDownControl

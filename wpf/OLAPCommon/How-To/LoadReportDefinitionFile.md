@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LoadReportDefinitionFile
+title: LoadReportDefinitionFile| OLAPCommon | Wpf | Syncfusion
 description: loadreportdefinitionfile
 platform: wpf
 control: OLAPCommon

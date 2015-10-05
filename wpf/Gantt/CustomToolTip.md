@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CustomToolTip
+title: CustomToolTip| Gantt | Wpf | Syncfusion
 description: customtooltip
 platform: wpf
 control: Gantt

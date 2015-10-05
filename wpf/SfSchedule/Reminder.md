@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reminder
+title: Reminder| SfSchedule | Wpf | Syncfusion
 description: reminder
 platform: wpf
 control: SfSchedule
@@ -15,59 +15,59 @@ Schedule reminds you the particular appointment in the specified time by setting
 
 
 
-     SfSchedule schedule = new SfSchedule();
+	SfSchedule schedule = new SfSchedule();
 
-     schedule.EnableReminderTimer = true;
+	schedule.EnableReminderTimer = true;
 
-     schedule.Appointments.Add(new ScheduleAppointment
+	schedule.Appointments.Add(new ScheduleAppointment
 
-            {
+	{
 
-                StartTime = DateTime.Now.Date.AddHours(9),
+	StartTime = DateTime.Now.Date.AddHours(9),
 
-                EndTime   = DateTime.Now.Date.AddHours(12),
+	EndTime   = DateTime.Now.Date.AddHours(12),
 
-                AppointmentBackground = new SolidColorBrush(Color.FromArgb(0xFf, 0xA2, 0xC1, 0x39)),
+	AppointmentBackground = new SolidColorBrush(Color.FromArgb(0xFf, 0xA2, 0xC1, 0x39)),
 
-                Subject = "Business Meeting",
+	Subject = "Business Meeting",
 
-                ReminderTime = ReminderTimeType.TenHours
+	ReminderTime = ReminderTimeType.TenHours
 
-            });
+	});
 
-            schedule.Appointments.Add(new ScheduleAppointment
+	schedule.Appointments.Add(new ScheduleAppointment
 
-            {
+	{
 
-                StartTime = currentDate.Date.AddDays(1).AddHours(10),
+	StartTime = currentDate.Date.AddDays(1).AddHours(10),
 
-                EndTime = currectDate.Date.AddDays(1).AddHours(16),
+	EndTime = currectDate.Date.AddDays(1).AddHours(16),
 
-                AppointmentBackground = new SolidColorBrush(Color.FromArgb(0xFf, 0xD8, 0x00, 0x73)),
+	AppointmentBackground = new SolidColorBrush(Color.FromArgb(0xFf, 0xD8, 0x00, 0x73)),
 
-                Subject = "Auditing",
+	Subject = "Auditing",
 
-                ReminderTime = ReminderTimeType.TwoDays
+	ReminderTime = ReminderTimeType.TwoDays
 
-            });
+	});
 
-             schedule.Appointments.Add(new ScheduleAppointment
+	schedule.Appointments.Add(new ScheduleAppointment
 
-            {
+	{
 
-                StartTime = DateTime.Now.Date.AddDays(7).AddHours(10),
+	StartTime = DateTime.Now.Date.AddDays(7).AddHours(10),
 
-                EndTime = DateTime.Now.Date.AddDays(7).AddHours(13),
+	EndTime = DateTime.Now.Date.AddDays(7).AddHours(13),
 
-                AppointmentBackground = new SolidColorBrush(Color.FromArgb(0xFf, 0xF0, 0x96, 0x09)),
+	AppointmentBackground = new SolidColorBrush(Color.FromArgb(0xFf, 0xF0, 0x96, 0x09)),
 
-                Subject = "Conference",
+	Subject = "Conference",
 
-                ReminderTime = ReminderTimeType.TwoWeeks
+	ReminderTime = ReminderTimeType.TwoWeeks
 
-            });
+	});
 
-            this.grid.Children.Add(schedule);
+	this.grid.Children.Add(schedule);
 
 
 {% endhighlight %}

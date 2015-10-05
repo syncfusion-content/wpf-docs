@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Template-Customizing
+title: Template Customizing| Hierarchical Navigator | Wpf | Syncfusion
 description: template customizing
 platform: wpf
 control: Hierarchical Navigator

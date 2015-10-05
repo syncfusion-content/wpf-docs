@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Technical-Indicators
+title: Technical Indicators| SfChart | Wpf | Syncfusion
 description: technical indicators
 platform: wpf
 control: SfChart

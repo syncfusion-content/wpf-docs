@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load-PDF-without-ToolStrip-in-viewer
+title: Load PDF without ToolStrip in viewer| PDF Viewer | Wpf | Syncfusion
 description: load pdf without toolstrip in viewer
 platform: wpf
 control: PDF Viewer

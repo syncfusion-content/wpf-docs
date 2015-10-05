@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation
+title: Animation| SfChart | Wpf | Syncfusion
 description: animation
 platform: wpf
 control: SfChart

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Navigating-through-the-pages 
+title: Navigating through the pages | PDF Viewer | Wpf | Syncfusion
 description: navigating through the pages
 platform: wpf
 control: PDF Viewer

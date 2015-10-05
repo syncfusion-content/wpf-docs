@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range-Adorner
+title: Range Adorner| PercentTextBox  | Wpf | Syncfusion
 description: range adorner
 platform: wpf
 control: PercentTextBox 
@@ -14,16 +14,16 @@ The EnableRangeAdorner property is used to show the adorner range based on the m
 ![](Range-Adorner_images/Range-Adorner_img1.png)
 
 
-## Properties
+### Properties
 
-Property table
+
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Data Type**' | markdownify }}</th></tr>
+Property</th><th>
+Description</th><th>
+Data Type</th></tr>
 <tr>
 <td>
 EnableRangeAdorner </td><td>
@@ -35,13 +35,13 @@ bool </td></tr>
 
 We have to set the EnableRangeAdorner property, either in XAML or the code file.
 
-<table>
-<tr>
-<td>
-{% highlight xml %} EnableRangeAdorner="True"{% endhighlight %}</td></tr>
-<tr>
-<td>
-{% highlight c# %}control.EnableRangeAdorner = true;{% endhighlight %}</td></tr>
-</table>
+{% tabs %}
+{% highlight xml %} EnableRangeAdorner="True"
+{% endhighlight %}
+
+
+{% highlight c# %}control.EnableRangeAdorner = true;
+{% endhighlight %}
+{% endtabs %}
 
 

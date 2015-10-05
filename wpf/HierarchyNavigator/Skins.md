@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Skins
+title: Skins| Hierarchical Navigator | Wpf | Syncfusion
 description: skins
 platform: wpf
 control: Hierarchical Navigator

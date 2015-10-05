@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DocIO-Document-Object-Model
+title: DocIO Document Object Model| DocIO | Wpf | Syncfusion
 description: docio document object model
 platform: wpf
 control: DocIO

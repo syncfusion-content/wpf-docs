@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rename-and-remove-a-report
+title: Rename and remove a report| OLAPCommon | Wpf | Syncfusion
 description: rename and remove a report
 platform: wpf
 control: OLAPCommon

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SetCurrentReport
+title: SetCurrentReport| OLAPCommon | Wpf | Syncfusion
 description: setcurrentreport 
 platform: wpf
 control: OLAPCommon

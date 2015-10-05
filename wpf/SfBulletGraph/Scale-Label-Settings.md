@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scale-Label-Settings
+title: Scale Label Settings| Bullet Graph  | Wpf | Syncfusion
 description: scale label settings
 platform: wpf
 control: Bullet Graph 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with Hyperlinks 
+title: Working with Hyperlinks | PDF Viewer | Wpf | Syncfusion
 description: working with hyperlinks 
 platform: wpf
 control: PDF Viewer

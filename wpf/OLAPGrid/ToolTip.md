@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip
+title: ToolTip| OLAP Grid | Wpf | Syncfusion
 description: tooltip
 platform: wpf
 control: OLAP Grid

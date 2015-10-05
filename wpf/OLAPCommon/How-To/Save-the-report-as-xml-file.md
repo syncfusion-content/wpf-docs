@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Save-the-report-as-xml-file
+title: Save the report as xml file| OLAPCommon | Wpf | Syncfusion
 description: save the report as xml file
 platform: wpf
 control: OLAPCommon

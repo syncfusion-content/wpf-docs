@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export
+title: Export| OLAP Grid | Wpf | Syncfusion
 description: export
 platform: wpf
 control: OLAP Grid

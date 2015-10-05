@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MDI-Resize
+title: MDI Resize| DocumentContainer | Wpf | Syncfusion
 description: mdi resize
 platform: wpf
 control: DocumentContainer

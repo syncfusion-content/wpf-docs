@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Freeze-Headers
+title: Freeze Headers| OLAP Grid | Wpf | Syncfusion
 description: freeze headers
 platform: wpf
 control: OLAP Grid

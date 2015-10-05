@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Header-Settings
+title: Header Settings| Circular Gauge | Wpf | Syncfusion
 description: header settings
 platform: wpf
 control: Circular Gauge

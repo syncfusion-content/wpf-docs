@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-ToolTip-for-GroupBar
+title: Setting ToolTip for GroupBar| GroupBar | Wpf | Syncfusion
 description: setting tooltip for groupbar
 platform: wpf
 control: GroupBar

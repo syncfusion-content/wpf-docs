@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MDX-Query-Parsing
+title: MDX Query Parsing| OLAPCommon  | Wpf | Syncfusion
 description: mdx query parsing
 platform: wpf
 control: OLAPCommon 

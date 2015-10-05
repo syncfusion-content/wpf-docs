@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deployment
+title: Deployment| | Wpf | Syncfusion
 description: deployment
 platform: wpf
 control: Introduction

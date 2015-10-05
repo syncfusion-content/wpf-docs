@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selected-Hierarchy-Navigator-Item-Changed
+title: Selected Hierarchy Navigator Item Changed| Hierarchical Navigator | Wpf | Syncfusion
 description: selected hierarchy navigator item changed
 platform: wpf
 control: Hierarchical Navigator

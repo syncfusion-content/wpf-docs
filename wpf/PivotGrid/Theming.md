@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Theming
+title: Theming| PivotGrid | Wpf | Syncfusion
 description: Theming
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## Theming
+# Theming
 
 Theming is the process of applying particular settings to the visual elements of a product. This feature provides the following theming options:
 
@@ -33,21 +33,21 @@ Theming is the process of applying particular settings to the visual elements of
 
 *Default
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 This feature enables users to develop a single application and apply different looks as necessary. 
 
-#### Property
+### Property
 
-_Property Table_
+
 
 <table>
 <tr>
 <td>
-{{ '**Property**' | markdownify }} </td><td>
-{{ '**Description**' | markdownify }} </td><td>
-{{ '**Type**' | markdownify }} </td><td>
-{{ '**Data Type**' | markdownify }} </td></tr>
+Property </td><td>
+Description </td><td>
+Type </td><td>
+Data Type </td></tr>
 <tr>
 <td>
 VisualStyle </td><td>
@@ -57,16 +57,17 @@ PivotGridVisualStyle</td></tr>
 </table>
 
 
-#### Sample Link
+### Sample Link
 
 A sample demo available in the following link,
 
 {InstalledDrive} :\Users\sabapathyk\AppData\Local\Syncfusion\EssentialStudio\10.4.0.53\BI\WPF\PivotAnalysis.WPF\Samples\Appearance\Skin Customization Demo
 
-### Adding Theming to an Application 
+## Adding Theming to an Application 
 
 The following code sample demonstrates adding theming to the PivotGrid control.
 
+{% tabs %}
 {% highlight xml %} 
 
 
@@ -83,6 +84,6 @@ The following code sample demonstrates adding theming to the PivotGrid control.
        this.pivotGrid.VisualStyle = PivotGridVisualStyle.Transparent;
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 

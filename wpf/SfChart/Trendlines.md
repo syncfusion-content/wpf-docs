@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trendlines
+title: Trendlines| SfChart | Wpf | Syncfusion
 description: trendlines
 platform: wpf
 control: SfChart

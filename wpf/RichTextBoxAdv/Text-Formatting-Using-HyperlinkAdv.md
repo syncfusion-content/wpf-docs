@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text-Formatting-Using-HyperlinkAdv
+title: Text Formatting Using HyperlinkAdv| RichTextBoxAdv | Wpf | Syncfusion
 description: text formatting using hyperlinkadv
 platform: wpf
 control: RichTextBoxAdv
@@ -11,11 +11,9 @@ documentation: ug
 
 HyperlinkAdv can be kept only inside the ParagraphAdv since the content property of ParagraphAdv is Inline. It allows you to display the formatted text using advanced features like NavigationUrl and TargetType. It simply differs by these properties when compared to SpanAdv.
 
-## Properties
+### Properties
 
 
-
-Property Table
 
 <table>
 <tr>
@@ -96,7 +94,7 @@ Underline</td></tr>
 
 HyperlinkAdv can be added directly to an application by using the following code snippet:
 
-
+{% tabs %}
 
 {% highlight xml %}
 
@@ -128,4 +126,4 @@ RichTextBoxAdv richtext = new RichTextBoxAdv();
 {% endhighlight %}
  
 
-
+{% endtabs %}

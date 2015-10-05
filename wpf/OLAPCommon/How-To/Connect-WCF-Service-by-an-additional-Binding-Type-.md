@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Connect-WCF-Service-by-an-additional-Binding-Type-
+title: Connect WCF Service by an additional Binding Type | OLAPCommon | Wpf | Syncfusion
 description: connect wcf service by an additional binding type in silverlight application
 platform: wpf
 control: OLAPCommon

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started| PDF Viewer | Wpf | Syncfusion
 description: getting started
 platform: wpf
 control: PDF Viewer

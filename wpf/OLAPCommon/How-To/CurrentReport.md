@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CurrentReport
+title: CurrentReport| OLAPCommon | Wpf | Syncfusion
 description: currentreport
 platform: wpf
 control: OLAPCommon

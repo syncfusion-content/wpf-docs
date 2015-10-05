@@ -1,6 +1,6 @@
 ---
 layout: post
-title: XAML-Configuration
+title: XAML Configuration| OLAP Grid | Wpf | Syncfusion
 description: xaml configuration
 platform: wpf
 control: OLAP Grid

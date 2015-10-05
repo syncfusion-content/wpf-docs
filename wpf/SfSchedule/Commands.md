@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Commands
+title: Commands| SfSchedule | Wpf | Syncfusion
 description: commands
 platform: wpf
 control: SfSchedule

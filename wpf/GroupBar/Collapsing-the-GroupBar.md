@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collapsing-the-GroupBar
+title: Collapsing the GroupBar| GroupBar | Wpf | Syncfusion
 description: collapsing the groupbar
 platform: wpf
 control: GroupBar

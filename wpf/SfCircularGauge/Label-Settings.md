@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Label-Settings
+title: Label Settings| Circular Gauge | Wpf | Syncfusion
 description: label settings
 platform: wpf
 control: Circular Gauge

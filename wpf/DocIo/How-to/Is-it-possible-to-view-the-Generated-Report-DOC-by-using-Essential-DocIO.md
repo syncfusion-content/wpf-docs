@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Is-it-possible-to-view-the-Generated-Report-DOC-by-using-Essential-DocIO
+title: Is it possible to view the Generated Report DOC by using Essential DocIO| DocIO | Wpf | Syncfusion
 description: is it possible to view the generated report [doc] by using essential docio?
 platform: wpf
 control: DocIO

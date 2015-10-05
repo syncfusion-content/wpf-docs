@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drill-Position
+title: Drill Position| OLAP Grid | Wpf | Syncfusion
 description: drill position
 platform: wpf
 control: OLAP Grid

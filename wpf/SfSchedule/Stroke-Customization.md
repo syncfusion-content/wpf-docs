@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stroke-Customization
+title: Stroke Customization| SfSchedule | Wpf | Syncfusion
 description: stroke customization
 platform: wpf
 control: SfSchedule
@@ -17,7 +17,7 @@ In the month view, the horizontal and vertical line strokes can be customized by
 
 
 
- Property Table
+###  Property Table
 
 <table>
 <tr>
@@ -67,6 +67,7 @@ Brush</td><td>
 Used to customize the line stroke of month view.</td></tr>
 </table>
 
+{% tabs %}
 {% highlight html %}
 
 
@@ -124,7 +125,7 @@ Used to customize the line stroke of month view.</td></tr>
             this.grid.Children.Add(schedule);
 
 {% endhighlight  %}
-
+{% endtabs %}
 
 
 ![](Stroke-Customization_images/Stroke-Customization_img1.png)

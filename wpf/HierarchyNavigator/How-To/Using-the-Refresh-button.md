@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using-the-Refresh-button
+title: Using the Refresh button| Hierarchical Navigator | Wpf | Syncfusion
 description: using the refresh button
 platform: wpf
 control: Hierarchical Navigator

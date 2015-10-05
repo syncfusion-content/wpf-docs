@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding-GroupBar-Item-to-GroupBar
+title: Adding GroupBar Item to GroupBar| GroupBar | Wpf | Syncfusion
 description: adding groupbar item to groupbar
 platform: wpf
 control: GroupBar

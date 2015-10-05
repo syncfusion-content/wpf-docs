@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotations
+title: Annotations| SfChart | Wpf | Syncfusion
 description: annotations
 platform: wpf
 control: SfChart

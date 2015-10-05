@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-Navigation-Support
+title: Keyboard Navigation Support| MenuAdv | Wpf | Syncfusion
 description: keyboard navigation support
 platform: wpf
 control: MenuAdv

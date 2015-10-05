@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Subset-Filter
+title: Subset Filter| OLAP Client  | Wpf | Syncfusion
 description: subset filter
 platform: wpf
 control: OLAP Client 

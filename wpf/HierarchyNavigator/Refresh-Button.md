@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Refresh-Button
+title: Refresh Button| Hierarchical Navigator | Wpf | Syncfusion
 description: refresh button
 platform: wpf
 control: Hierarchical Navigator

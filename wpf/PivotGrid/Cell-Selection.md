@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Selection 
+title: Cell Selection | PivotGrid | Wpf | Syncfusion
 description: Cell Selection 
 platform: wpf
 control: PivotGrid
@@ -8,19 +8,20 @@ documentation: ug
 ---
 
 
-## Cell Selection
+# Cell Selection
 
 
 PivotGrid for WPF supports excel like cell selection where you can select grid value cells as like in MS-Excel. On cell selection, an event called PivotGridSelectionChanged will be triggered and the PivotGridSelectionChangedEventArgs will return an IEnumerable collection of column, row and value of the corresponding selected cell. The EventArgs will also return the cell range and the selection reason like mousedown, mousemove, mouseup etc,.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 Using Cell Selection, you can select cells that can be copied to clipboard or notepad. You can perform custom operation on cell selection and also can bind any control based on the selected cell values.
 
-#### Adding Cell Selection 
+### Adding Cell Selection 
 
 The following code snippets show how to create a PivotGrid and to specify Cell Selection.
 
+{% tabs %}
 {% highlight xml %} 
 
 
@@ -128,12 +129,13 @@ pivotGridControl1.PivotCalculations.Add(New PivotComputationInfo With {.FieldNam
 Me.pivotGridControl1.AllowSelection = False
 
 {% endhighlight %} 
+{% endtabs %}
 
-![C:/Users/dwarageshmb/Desktop/Vol 4 Docs/Images/PivotGrid Cell Selection.png](Features_images/Features_img14.png)
+![](Features_images/Features_img14.png)
 
 
 
-#### Sample Link
+### Sample Link
 
 ..\..\ Syncfusion\BI\WPF\PivotAnalysis.WPF\Samples\Appearance\Cell Selection Demo
 

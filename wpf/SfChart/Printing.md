@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Printing
+title: Printing| SfChart | Wpf | Syncfusion
 description: printing
 platform: wpf
 control: SfChart

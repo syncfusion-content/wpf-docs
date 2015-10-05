@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Support-for-All-Level-Type-Member
+title: Support for All Level Type Member| OLAP Grid | Wpf | Syncfusion
 description: support for "all" level type member 
 platform: wpf
 control: OLAP Grid

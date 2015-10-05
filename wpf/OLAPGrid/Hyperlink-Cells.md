@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hyperlink-Cells
+title: Hyperlink Cells| OLAP Grid | Wpf | Syncfusion
 description: hyperlink cells
 platform: wpf
 control: OLAP Grid

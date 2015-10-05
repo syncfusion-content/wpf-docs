@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Apply-the-Filter-through-filter-element
+title: Apply the Filter through filter element| OLAPCommon | Wpf | Syncfusion
 description: apply the filter through filter element
 platform: wpf
 control: OLAPCommon

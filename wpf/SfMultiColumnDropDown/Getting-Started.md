@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started| SfMultiColumnDropDownControl | Wpf | Syncfusion
 description: getting started
 platform: wpf
 control: SfMultiColumnDropDownControl

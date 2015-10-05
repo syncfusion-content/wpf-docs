@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
+title: Overview| Circular Gauge | Wpf | Syncfusion
 description: overview
 platform: wpf
 control: Circular Gauge
 documentation: ug
 ---
 
-# Overview
+# CircularGauge
 
 ## Introduction
 

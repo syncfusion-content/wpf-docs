@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Templates
+title: Cell Templates| PivotGrid | Wpf | Syncfusion
 description: Cell Templates
 platform: wpf
 control: PivotGrid
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-## Cell Templates
+# Cell Templates
 
 
 The Cell Templates feature of PivotGrid allows you to define Templates and change the appearance of elements, such as column, row, summary, and value cells that are present in the Grid. The style for each element in the Grid should be defined of type PivotGridTemplateCell. The customized template can be defined for the following properties of PivotGrid:
@@ -21,7 +21,7 @@ The Cell Templates feature of PivotGrid allows you to define Templates and chang
 
 The Expander’s in the Grid can also be customized with any UIElement and it should be named as “PART_Expander” to perform drill-up and drill-down operations.
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 Cell Templates will be useful when users require a rich User Interface (UI) appearance.
 
@@ -29,7 +29,7 @@ Cell Templates will be useful when users require a rich User Interface (UI) appe
 
 
 
-#### Adding Cell Template
+### Adding Cell Template
 
 RowHeaderStyle of PivotGrid can be customized by using the Template, as shown in the following XAML. 
 
@@ -38,71 +38,71 @@ RowHeaderStyle of PivotGrid can be customized by using the Template, as shown in
 
 <Style x:Key="rowStyle" TargetType="{x:Type syncfusion:PivotGridTemplateCell}">
 
- <Setter Property="Template">
+<Setter Property="Template">
 
-  <Setter.Value>
+<Setter.Value>
 
-    <ControlTemplate TargetType="{x:Type syncfusion:PivotGridTemplateCell}">
+<ControlTemplate TargetType="{x:Type syncfusion:PivotGridTemplateCell}">
 
-     <StackPanel Grid.Column="1" Orientation="Horizontal" Background="{StaticResource RowHeaderBackgroundBrush}">
+<StackPanel Grid.Column="1" Orientation="Horizontal" Background="{StaticResource RowHeaderBackgroundBrush}">
 
-       <!—Adding an Expander. -->                                
+<!—Adding an Expander. -->                                
 
-       <Expander Margin="1" x:Name="PART_Expander" IsExpanded="{Binding IsExpanded,RelativeSource={RelativeSource TemplatedParent}}" Visibility="{Binding Converter={StaticResource expanderVisiblityConverter}}" Grid.Column="0"/>
+<Expander Margin="1" x:Name="PART_Expander" IsExpanded="{Binding IsExpanded,RelativeSource={RelativeSource TemplatedParent}}" Visibility="{Binding Converter={StaticResource expanderVisiblityConverter}}" Grid.Column="0"/>
 
-       <!—Adding an Image. -->
+<!—Adding an Image. -->
 
-       <Image Margin="2,5,1,0" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center">
+<Image Margin="2,5,1,0" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center">
 
-         <Image.Style>
+<Image.Style>
 
-          <Style TargetType="{x:Type Image}">
+<Style TargetType="{x:Type Image}">
 
-           <Style.Triggers>
+<Style.Triggers>
 
-             <DataTrigger Binding="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}}" Value="Car">
+<DataTrigger Binding="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}}" Value="Car">
 
-               <Setter Property="Source" Value="{StaticResource Car}"/>
+<Setter Property="Source" Value="{StaticResource Car}"/>
 
-               <Setter Property="Width" Value="32"/>
+<Setter Property="Width" Value="32"/>
 
-               <Setter Property="Height" Value="32"/>
+<Setter Property="Height" Value="32"/>
 
-             </DataTrigger>
+</DataTrigger>
 
-             <DataTrigger Binding="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}}" Value="Bike">
+<DataTrigger Binding="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}}" Value="Bike">
 
-               <Setter Property="Source" Value="{StaticResource Bike}"/>
+<Setter Property="Source" Value="{StaticResource Bike}"/>
 
-               <Setter Property="Width" Value="32"/>
+<Setter Property="Width" Value="32"/>
 
-               <Setter Property="Height" Value="32"/>
+<Setter Property="Height" Value="32"/>
 
-              </DataTrigger>                                              
+</DataTrigger>                                              
 
-             </Style.Triggers>                                                
+</Style.Triggers>                                                
 
-            </Style>
+</Style>
 
-           </Image.Style>
+</Image.Style>
 
-          </Image>
+</Image>
 
-          <!-- A Textblock representing the Cell Value. -->
+<!-- A Textblock representing the Cell Value. -->
 
-          <TextBlock Grid.Column="1" VerticalAlignment="Top" Margin="2,5,2,0"
+<TextBlock Grid.Column="1" VerticalAlignment="Top" Margin="2,5,2,0"
 
-            Text="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}}" 
+Text="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}}" 
 
-            TextWrapping="Wrap" FontFamily="Calibri" FontSize="12" />                                   
+TextWrapping="Wrap" FontFamily="Calibri" FontSize="12" />                                   
 
-      </StackPanel>                            
+</StackPanel>                            
 
-     </ControlTemplate>
+</ControlTemplate>
 
-   </Setter.Value>
+</Setter.Value>
 
- </Setter>
+</Setter>
 
 </Style>
 
@@ -110,13 +110,13 @@ RowHeaderStyle of PivotGrid can be customized by using the Template, as shown in
 
 <syncfusion:PivotGridControl>
 
- <!—Specifying RowHeaderCellStyle. -->
+<!—Specifying RowHeaderCellStyle. -->
 
- <syncfusion:PivotGridControl.RowHeaderCellStyle>
+<syncfusion:PivotGridControl.RowHeaderCellStyle>
 
-   <syncfusion:PivotGridCellStyle Style="{StaticResource rowStyle}"/>
+<syncfusion:PivotGridCellStyle Style="{StaticResource rowStyle}"/>
 
-  </syncfusion:PivotGridControl.RowHeaderCellStyle>
+</syncfusion:PivotGridControl.RowHeaderCellStyle>
 
 </syncfusion:PivotGridControl>
 
@@ -128,13 +128,13 @@ RowHeaderStyle of PivotGrid can be customized by using the Template, as shown in
 
 
 
-#### Sample Link
+### Sample Link
 
 A sample application that illustrates Cell Template is distributed along with the Essential PivotGrid WPF installation and can be found at:
 
 ..\Syncfusion\BI\WPF\PivotAnalysis.WPF\Samples\Appearance\Cell Template Demo
 
-#### To access a Cell Template sample
+To access a Cell Template sample
 
 1. Open the Syncfusion Dashboard. 
 2. Click Business Intelligence.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection
+title: Selection| SfMultiColumnDropDownControl | Wpf | Syncfusion
 description: selection
 platform: wpf
 control: SfMultiColumnDropDownControl

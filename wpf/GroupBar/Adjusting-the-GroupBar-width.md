@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adjusting-the-GroupBar-width
+title: Adjusting the GroupBar width| GroupBar | Wpf | Syncfusion
 description: adjusting the groupbar width
 platform: wpf
 control: GroupBar

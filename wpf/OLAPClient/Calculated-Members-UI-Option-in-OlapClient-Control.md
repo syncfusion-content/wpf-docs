@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculated-Members-UI-Option-in-OlapClient-Control
+title: Calculated Members UI Option in OlapClient Control| OLAP Client  | Wpf | Syncfusion
 description: calculated members ui option in olapclient control
 platform: wpf
 control: OLAP Client 

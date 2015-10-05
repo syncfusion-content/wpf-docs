@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blendability-Support
+title: Blendability Support| MenuAdv | Wpf | Syncfusion
 description: blendability support
 platform: wpf
 control: MenuAdv

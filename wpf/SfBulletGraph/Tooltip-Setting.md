@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip-Setting
+title: Tooltip Setting| Bullet Graph  | Wpf | Syncfusion
 description: tooltip setting
 platform: wpf
 control: Bullet Graph 

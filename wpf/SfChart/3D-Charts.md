@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 3D-Charts
+title: 3D Charts| SfChart | Wpf | Syncfusion
 description: 3d charts
 platform: wpf
 control: SfChart

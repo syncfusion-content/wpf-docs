@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Named-Set-Records
+title: Named Set Records| OLAP Client  | Wpf | Syncfusion
 description: named set records
 platform: wpf
 control: OLAP Client 

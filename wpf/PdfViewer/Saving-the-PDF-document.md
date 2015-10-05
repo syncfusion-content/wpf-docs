@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Saving-the-PDF-document 
+title: Saving the PDF document | PDF Viewer | Wpf | Syncfusion
 description: saving the pdf document
 platform: wpf
 control: PDF Viewer

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation-Support
+title: Animation Support| MenuAdv | Wpf | Syncfusion
 description: animation support
 platform: wpf
 control: MenuAdv

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard-and-Mouse-support
+title: Keyboard and Mouse support| PercentTextBox  | Wpf | Syncfusion
 description: keyboard and mouse support
 platform: wpf
 control: PercentTextBox 

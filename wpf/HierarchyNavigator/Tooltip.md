@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip
+title: Tooltip| Hierarchical Navigator | Wpf | Syncfusion
 description: tooltip
 platform: wpf
 control: Hierarchical Navigator

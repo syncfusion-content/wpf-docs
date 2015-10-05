@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering
+title: Filtering| SfMultiColumnDropDownControl | Wpf | Syncfusion
 description: filtering
 platform: wpf
 control: SfMultiColumnDropDownControl

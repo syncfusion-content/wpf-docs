@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populating-Data
+title: Populating Data| Hierarchical Navigator | Wpf | Syncfusion
 description: populating data
 platform: wpf
 control: Hierarchical Navigator

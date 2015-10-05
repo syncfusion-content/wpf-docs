@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding-Groupview-in-ListView-Mode
+title: Adding Groupview in ListView Mode| GroupBar | Wpf | Syncfusion
 description: adding groupview in listview mode
 platform: wpf
 control: GroupBar

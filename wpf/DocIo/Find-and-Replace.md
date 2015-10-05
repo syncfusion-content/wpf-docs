@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Find-and-Replace
+title: Find and Replace| DocIO | Wpf | Syncfusion
 description: find and replace
 platform: wpf
 control: DocIO

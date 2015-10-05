@@ -1,9 +1,9 @@
 ---
 layout: post
-title: GridTree-Control-Properties
+title: GridTree Control Properties| GridTree  | Wpf | Syncfusion
 description: gridtree control properties
 platform: wpf
-control: GridTree Control
+control: GridTree 
 documentation: ug
 ---
 

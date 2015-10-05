@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Code-Snippet
+title: Code Snippet| RichTextBoxAdv | Wpf | Syncfusion
 description: code snippet
 platform: wpf
 control: RichTextBoxAdv
@@ -16,49 +16,49 @@ documentation: ug
 
 
 
-        <Window x:Class="Testing.MainWindow"
+	<Window x:Class="Testing.MainWindow"
 
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+	xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
 
-        Title="MainWindow" Height="350" Width="525">
+	Title="MainWindow" Height="350" Width="525">
 
-    <Grid>
+	<Grid>
 
-        <DockPanel>
+	<DockPanel>
 
-            <Menu DockPanel.Dock="Top">
+	<Menu DockPanel.Dock="Top">
 
-                <MenuItem Command="{x:Static syncfusion:RichTextBoxAdv.ToggleBold}" 
+	<MenuItem Command="{x:Static syncfusion:RichTextBoxAdv.ToggleBold}" 
 
-                          Header="Bold"/>
+	Header="Bold"/>
 
-            </Menu>
+	</Menu>
 
-            <syncfusion:RichTextBoxAdv x:Name="richtextbox">
+	<syncfusion:RichTextBoxAdv x:Name="richtextbox">
 
-                <syncfusion:DocumentAdv>
+	<syncfusion:DocumentAdv>
 
-                    <syncfusion:SectionAdv>
+	<syncfusion:SectionAdv>
 
-                        <syncfusion:ParagraphAdv>
+	<syncfusion:ParagraphAdv>
 
-                            <syncfusion:SpanAdv Text="I am the Text...."/>
+	<syncfusion:SpanAdv Text="I am the Text...."/>
 
-                        </syncfusion:ParagraphAdv>
+	</syncfusion:ParagraphAdv>
 
-                    </syncfusion:SectionAdv>
+	</syncfusion:SectionAdv>
 
-                </syncfusion:DocumentAdv>
+	</syncfusion:DocumentAdv>
 
-            </syncfusion:RichTextBoxAdv>
+	</syncfusion:RichTextBoxAdv>
 
-        </DockPanel>
+	</DockPanel>
 
-    </Grid>
+	</Grid>
 
 </Window>
 {% endhighlight %}

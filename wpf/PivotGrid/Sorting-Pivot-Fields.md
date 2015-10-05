@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting Pivot Fields
+title: Sorting Pivot Fields| PivotGrid | Wpf | Syncfusion
 description: Sorting Pivot Fields
 platform: wpf
 control: PivotGrid
 documentation: ug
 ---
 
-## Sorting Pivot Fields
+# Sorting Pivot Fields
 
 The pivot row fields, pivot column fields, and PivotComputationInfo fields can be arranged individually either in ascending or descending order. The following options to handle this arrangement are available in the context menu that appears in the grouping bar:
 
@@ -21,14 +21,14 @@ The above mentioned options will rearrange the fields in the respective pivot it
 
 
 
-#### Sample Link
+### Sample Link
 
 A demo of this feature is available in the following location:
 
 C:\Users\<UserName>\AppData\Local\Syncfusion\EssentialStudio\x.x.x.x\ BI\WPF\PivotAnalysis.WPF\Samples\Grouping Bar\Context Menu Demo\
 
 
-### Sort by value of computations fields
+## Sort by value of computations fields
 
 This feature allows users to sort column values in ascending or descending order. 
 
@@ -45,7 +45,7 @@ There are five options for sorting:
 5.Disable sort.
 
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 Using this feature, the values in the columns can be sorted in given order, either ascending or descending. 
 
@@ -53,18 +53,19 @@ Using this feature, the values in the columns can be sorted in given order, eith
 
 
 
-Properties
+### Properties
 
-_Properties Table_
+
+
 
 <table>
 <tr>
-<td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Type</th><th>
+Data Type</th><th>
+Reference links</th></tr>
 <tr>
 <td>
 SortDirection</td><td>
@@ -82,18 +83,18 @@ NA</td></tr>
 </table>
 
 
-Methods
+### Methods
 
-_Method Table_
+
 
 <table>
 <tr>
-   <th>{{ '**Method**' | markdownify }}</th>
-   <th>{{ '**Description**' | markdownify }}</th>
-   <th>{{ '**Parameters**' | markdownify }}</th>
-   <th>{{ '**Type**' | markdownify }}</th>
-   <th>{{ '**Return Type**' | markdownify }}</th>
-   <th>{{ '**Reference links**' | markdownify }}</th>
+   <th>Method</th>
+   <th>Description</th>
+   <th>Parameters</th>
+   <th>Type</th>
+   <th>Return Type</th>
+   <th>Reference links</th>
 </tr>
 <tr>
     <th>SortByCalculation</th>
@@ -106,15 +107,15 @@ _Method Table_
 </table>
 
 
-Enum
+### Enum
 
-_Enum Table_
+
 
 <table>
 <tr>
 <td>
-{{ '**Name**' | markdownify }}</td><td>
-{{ '**Options**' | markdownify }}</td></tr>
+Name</td><td>
+Options</td></tr>
 <tr>
 <td>
 PivotSortOption</td><td>
@@ -122,13 +123,14 @@ NoneAll Column SortingTotal SortingGrandTotal Sorting </td></tr>
 </table>
 
 
-#### Sample Link
+### Sample Link
 
 {InstalledDrive}:\Users\{username}\AppData\Local\Syncfusion\EssentialStudio\11.1.0.9\Wpf\PivotAnalysis.WPF\Interactivity features\SortingDemo
 
 Adding sort by value of computations fields to an application
 
 The following code sample illustrates how to sort computations fields by value:
+
 
 {% highlight C# %}
 
@@ -167,7 +169,7 @@ this.pivotGrid.SortOption = PivotSortOption.None;
 {% endhighlight %}
 
 
-### Providing the option to add/remove Report Filters in the PivotGrid control
+## Providing the option to add/remove Report Filters in the PivotGrid control
 
 This feature provides programmatic-level support to apply filtering (Add, Remove, Insert, RemoveAt, InsertAt) to the pivot grid.
 
@@ -184,7 +186,7 @@ The following filter operations can be done from programmatic level:
 5.Clear- Removes all the items in the filter collection.
 
 
-#### Use Case Scenarios
+### Use Case Scenarios
 
 This feature helps the user to add or remove the filter items from programmatic level instead of UI.
 
@@ -192,18 +194,18 @@ This feature helps the user to add or remove the filter items from programmatic 
 
 
 
-Properties
+### Properties
 
-_Properties Table_
+
 
 <table>
 <tr>
 <td>
-{{ '**Property**' | markdownify }}</td><td>
-{{ '**Description**' | markdownify }}</td><td>
-{{ '**Type**' | markdownify }}</td><td>
-{{ '**Data Type**' | markdownify }}</td><td>
-{{ '**Reference links**' | markdownify }}</td></tr>
+Property</td><td>
+Description</td><td>
+Type</td><td>
+Data Type</td><td>
+Reference links</td></tr>
 <tr>
 <td>
 DimensionName</td><td>
@@ -228,19 +230,19 @@ NA</td></tr>
 </table>
 
 
-#### Methods
+### Methods
 
-_Methods Table_
+
 
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Type**' | markdownify }}</th><th>
-{{ '**Return Type**' | markdownify }}</th><th>
-{{ '**Reference links**' | markdownify }}</th></tr>
+Method</th><th>
+Description</th><th>
+Parameters</th><th>
+Type</th><th>
+Return Type</th><th>
+Reference links</th></tr>
 <tr>
 <th>
 AddFilter</th><th>
@@ -260,11 +262,12 @@ NA</th></tr>
 </table>
 
 
-#### Sample Link
+### Sample Link
 
 {InstallationDrive}:\Users\{UserName} \AppData\Local\Syncfusion\EssentialStudio\11.1.0.9\Wpf \PivotAnalysis.Wpf\Interactivity features\FilteringDemo
 
-### Adding the providing option to add or remove Report Filters in the PivotGrid control to an application
+## Adding the providing option to add or remove Report Filters in the PivotGrid control to an application
+
 
 {% highlight C# %}  
 

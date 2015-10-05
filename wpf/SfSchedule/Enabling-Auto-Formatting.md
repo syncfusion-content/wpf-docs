@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enabling-Auto-Formatting
+title: Enabling Auto Formatting| SfSchedule | Wpf | Syncfusion
 description: enabling auto formatting
 platform: wpf
 control: SfSchedule

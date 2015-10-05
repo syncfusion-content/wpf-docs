@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toggling-visibility-of-the-scroll-bar 
+title: Toggling visibility of the scroll bar | PDF Viewer | Wpf | Syncfusion
 description: toggling visibility of the scroll bar 
 platform: wpf
 control: PDF Viewer

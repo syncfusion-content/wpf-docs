@@ -1,6 +1,6 @@
 ---
 layout: post
-title: QueryBuilderEngine
+title: QueryBuilderEngine| OLAPCommon  | Wpf | Syncfusion
 description: querybuilderengine
 platform: wpf
 control: OLAPCommon 

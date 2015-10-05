@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PivotGrid Field List
+title: PivotGrid Field List| PivotGrid | Wpf | Syncfusion
 description: PivotGrid Field List
 platform: wpf
 control: PivotGrid
@@ -20,47 +20,48 @@ This feature will be useful for applications that need to configure PivotGrid at
 
 PivotGrid Field List (or Dynamic Field List ) can be launched by setting the ShowFieldList property to true or by clicking on the ShowFieldList menu item of Grouping bar context menu. PivotGrid Field List is bound to PivotFilelds property of PivotGridControl, which is a collection of  PivotItems. PivotFields can be added via code-behind and XAML, as shown in the following code snippets. 
 
+{% tabs %}
 {% highlight xml %} 
 
-        <syncfusion:PivotGridControl ShowFieldList="True"
+	<syncfusion:PivotGridControl ShowFieldList="True"
 
-           <!--Specifying PivotRows-->
+	           <!--Specifying PivotRows-->
 
-            <syncfusion:PivotGridControl.PivotRows>
+	            <syncfusion:PivotGridControl.PivotRows>
 
-                <syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
+	                <syncfusion:PivotItem FieldMappingName="Product" TotalHeader="Total"/>
 
-                <syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/>
+	<syncfusion:PivotItem FieldMappingName="Date" TotalHeader="Total"/>
 
-             </syncfusion:PivotGridControl.PivotRows>
+	             </syncfusion:PivotGridControl.PivotRows>
 
-            <!--Specifying PivotColumns-->
+	            <!--Specifying PivotColumns-->
 
-            <syncfusion:PivotGridControl.PivotColumns>
+	            <syncfusion:PivotGridControl.PivotColumns>
 
-                <syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
+	                <syncfusion:PivotItem FieldMappingName="Country" TotalHeader="Total"/>
 
-            </syncfusion:PivotGridControl.PivotColumns>
+	            </syncfusion:PivotGridControl.PivotColumns>
 
-            <!--Specifying PivotCalculationValues--> 
+	            <!--Specifying PivotCalculationValues--> 
 
-            <syncfusion:PivotGridControl.PivotCalculations>
+	            <syncfusion:PivotGridControl.PivotCalculations>
 
-                <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
+	                <syncfusion:PivotComputationInfo FieldName="Amount" Format="C" SummaryType="DoubleTotalSum"/>
 
-                <syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/>
+	                <syncfusion:PivotComputationInfo FieldName="Quantity" Format="#,##0"/>
 
-            </syncfusion:PivotGridControl.PivotCalculations>
+	            </syncfusion:PivotGridControl.PivotCalculations>
 
-            <!--Specifying Pivot Fields--> 
+	            <!--Specifying Pivot Fields--> 
 
-               <syncfusion:PivotGridControl.PivotFields>
+	               <syncfusion:PivotGridControl.PivotFields>
 
-                <syncfusion:PivotItem FieldMappingName="State" FieldHeader="State" TotalHeader="Total"/>
+	<syncfusion:PivotItem FieldMappingName="State" FieldHeader="State" TotalHeader="Total"/>
 
-            </syncfusion:PivotGridControl.PivotFields>
+	</syncfusion:PivotGridControl.PivotFields>
 
-                   </syncfusion:PivotGridControl>
+	</syncfusion:PivotGridControl>
 
 
 {% endhighlight %} 
@@ -125,7 +126,7 @@ PivotGrid Field List (or Dynamic Field List ) can be launched by setting the Sho
             Me.pivotGrid1.ShowFieldList = True
 
 {% endhighlight %} 
-
+{% endtabs %}
 
 
 ![Description: C:/Users/dwarageshmb/Desktop/2011 Vol 1 Docs/PivotGrid Field List.png](Features_images/Features_img19.png)
@@ -134,15 +135,15 @@ PivotGrid Field List (or Dynamic Field List ) can be launched by setting the Sho
 
 #### Properties
 
-PivotGridControl Table
+
 
 <table>
     <tr>
-        <th>{{ '**Property**' | markdownify }}</th>
-		<th>{{ '**Description**' | markdownify }}</th>
-		<th>{{ '**Type**' | markdownify }}</th>
-		<th>{{ '**Data Type**' | markdownify }}</th>
-		<th>{{ '**Reference links**' | markdownify }}</th>
+        <th>Property</th>
+		<th>Description</th>
+		<th>Type</th>
+		<th>Data Type</th>
+		<th>Reference links</th>
 	</tr>
 	
     <tr>
@@ -162,15 +163,15 @@ PivotGridControl Table
     </tr>
 </table>
 
-GroupingBar Table
+### GroupingBar Table
 
 <table>
 	<tr>
-		<th>{{ '**Property**' | markdownify }}</th>
-		<th>{{ '**Description**' | markdownify }}</th>
-		<th>{{ '**Type**' | markdownify }}</th>
-		<th>{{ '**Data Type**' | markdownify }}</th>
-		<th>{{ '**Reference links**' | markdownify }}</th>
+		<th>Property</th>
+		<th>Description</th>
+		<th>Type</th>
+		<th>Data Type</th>
+		<th>Reference links</th>
 	</tr>
 	<tr>
 		<td>FieldList</td>

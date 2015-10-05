@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Highlighting-Tasks
+title: Highlighting Tasks| Gantt | Wpf | Syncfusion
 description: highlighting tasks
 platform: wpf
 control: Gantt

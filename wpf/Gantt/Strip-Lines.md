@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Strip-Lines
+title: Strip Lines| Gantt | Wpf | Syncfusion
 description: strip lines
 platform: wpf
 control: Gantt

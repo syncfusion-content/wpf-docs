@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mail-Merge
+title: Mail Merge| DocIO | Wpf | Syncfusion
 description: mail merge
 platform: wpf
 control: DocIO

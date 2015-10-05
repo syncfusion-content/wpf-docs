@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resource-View-Gantt-Inline-Items
+title: Resource View Gantt Inline Items| Gantt | Wpf | Syncfusion
 description: resource view gantt (inline items)
 platform: wpf
 control: Gantt

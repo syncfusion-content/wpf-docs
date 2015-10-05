@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scale-Settings
+title: Scale Settings| Circular Gauge | Wpf | Syncfusion
 description: scale settings
 platform: wpf
 control: Circular Gauge

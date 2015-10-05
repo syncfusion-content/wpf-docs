@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RichTextRibbon-Support
+title: RichTextRibbon Support| RichTextBoxAdv | Wpf | Syncfusion
 description: richtextribbon support
 platform: wpf
 control: RichTextBoxAdv

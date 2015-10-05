@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting-Mode-for-Document-Container
+title: Setting Mode for Document Container| DocumentContainer | Wpf | Syncfusion
 description: setting mode for document container
 platform: wpf
 control: DocumentContainer
