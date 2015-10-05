@@ -1,24 +1,24 @@
 ﻿# Getting Started
 
-This section helps you to get started with SfSurfaceChart control.
+This section helps you get started with SfSurfaceChart control.
 
 ## Visual Structure
 
-The following image helps you understand various elements in SfSurfaceChart, when you use it for the first time.
+The following image helps you understand various elements in SfSurfaceChart when you use it for the first time.
 
 ![](surface_chart_images/surface_chart_img2.jpeg)
 
 
-* Surface Header – Represent the title of surface chart
-* Wall – Represent the wall which bounds to surface chart. 
-* Major Gridlines- Represent the surface axis gridline for surface chart.
-* Color Bar- Display the value range in color for surface chart. 
-* Axis Label- Display the label for surface axis. 
-* Axis Header- Display the header of Surface axis.
+* Surface Header – Represents the title of surface chart
+* Wall – Represents the wall that bounds the surface chart. 
+* Major Gridlines- Represents the surface axis gridline for surface chart.
+* Color Bar- Displays the value range in color for surface chart. 
+* Axis Label- Displays the label for surface axis. 
+* Axis Header- Displays the header of Surface axis.
 
 ## Create simple surface chart from XAML
 
-This session demonstrates how to create a surface chart using SfSurfaceChart control from XAML. For that, we should add the **SfChart** assembly as a reference to our application.
+This section demonstrates how to create a surface chart using SfSurfaceChart control from XAML. You can add the **SfChart** assembly as a reference to your application to create a surface chart using SfSurfaceChart control from XAML.
 
 ### Add Assembly reference
 
@@ -31,7 +31,7 @@ This session demonstrates how to create a surface chart using SfSurfaceChart con
 xmlns:syncfusion="clr-namespace:Syncfusion.UI.Xaml.Charts;assembly=Syncfusion.SfChart.WPF"<br/><br/></td></tr>
 
 {% endhighlight %}
-N> Adding the extension Syncfusion.SfChart.WPF, adds all the Syncfusion WPF controls. We can also add the SfChart reference alone from the following location. C:\Program Files (x86)\Syncfusion\Essential Studio<version>\Assemblies (4.0/4.5.1/4.6)
+N> Adding the extension Syncfusion.SfChart.WPF, adds all the Syncfusion WPF controls. You can also add the SfChart reference alone from the following location. C:\Program Files (x86)\Syncfusion\Essential Studio<version>\Assemblies (4.0/4.5.1/4.6)
 
 ### Initialize the surface chart
 
@@ -47,7 +47,7 @@ We need to initialize the surface chart from the following namespace Syncfusion.
 
 #Add Surface chart from Toolbox
 
-Drag and drop the **SfSurfaceChart** control from the Toolbox to the required location, where the surface chart has to be displayed. We can select Toolbox from the View menu, when the toolbox window is not available in the project. Now the Toolbox window appears at the left end of the screen.
+Drag and drop the **SfSurfaceChart** control from the Toolbox to the required location, where the surface chart has to be displayed. You can select Toolbox from the View menu, when the toolbox window is not available in the project. Now the Toolbox window appears at the left end of the screen.
 
 ![](surface_chart_images/surface_chart_img3.jpeg)
 
@@ -113,14 +113,14 @@ public class Data
 
 {% endhighlight %}
 
-Now, we have a data model property which hold values of each item in the collection.
+Now, you have a data model property which hold values of each item in the collection.
 
 {% highlight C# %}
 
 public ObservableCollection<Data> DataValues { get; set; }
 	
 {% endhighlight %}
-Also we have a property for row and column size in the given data’s. 
+Also you have a property for row and column size in the given data. 
 
 {% highlight C# %}
 
@@ -149,11 +149,11 @@ RowSize = 3;
 ColumnSize = 3;
 
 {% endhighlight %}
-Now we can add the elements required for the above scenario to the Surface instance created.
+Now you can add the elements required for the above scenario to the Surface instance created.
 
 ### Add Data to surface chart
 
-After we have populate data to the chart, we can bind the properties as shown in the below code.   
+After you populate the data to the chart, you can bind the properties as shown in the following code example.   
 
 {% highlight xml %}
 <Syncfusion:SfSurfaceChart ItemsSource="{Binding DataValues}"  XBindingPath="X"                              
@@ -166,7 +166,7 @@ After we have populate data to the chart, we can bind the properties as shown in
 
 ### Add Header to the surface chart
 
-The header is acts as the title of the surface chart created, to identify its purpose. 
+The header acts as the title of the surface chart created, to identify its purpose. 
 
 {% highlight xml %}
 
@@ -197,11 +197,11 @@ The following code example illustrates how to add XAxis, YAxis and ZAxis to the 
 
 {% endhighlight %}
 
-N> SfSurfaceChart supports default axes ( i.e., all the axes will be generated automatically, if we didn’t define it explicitly).
+N> SfSurfaceChart supports default axes, all the axes are generated automatically, even when it has not been defined explicitly.
 
 ### Add Surface Type
 
-The following code example illustrate how to add surface type to the surface chart. 
+The following code example illustrates how to add surface type to the surface chart. 
 
 {% highlight xml %}
 
@@ -211,7 +211,7 @@ The following code example illustrate how to add surface type to the surface cha
 
 ### Add Color bar to the surface chart
 
-The following code example illustrate how to add color bar to the surface chart
+The following code example illustrates how to add color bar to the surface chart
 
 {% highlight xml %}
 
@@ -220,7 +220,7 @@ The following code example illustrate how to add color bar to the surface chart
 </Syncfusion:SfSurfaceChart.ColorBar>
 
 {% endhighlight %}
-Now we have created a simple surface chart and following code example are for XAML. 
+Now you have created a simple surface chart. The following code example is for XAML. 
 
 {% highlight xml %}
 
@@ -254,9 +254,9 @@ The following output is displayed as a result of the above code example.
 ![C:/Users/sheiksyedm/Documents/My Received Files/Doc_Images/Simple Surface.png](surface_chart_images/surface_chart_img6.jpeg)
 
 
-## Create simple surface chart from Code behind
+## Create a simple surface chart from Code behind.
 
-This session demonstrates how to create a surface chart using SfSurfaceChart control from code behind. For that, we must add the **SfChart** assembly reference to your application.
+This section demonstrates how to create a surface chart using SfSurfaceChart control from code behind. For that, you can add the **SfChart** assembly reference to your application.
 
 ### Add Assembly reference
 
@@ -269,7 +269,7 @@ This session demonstrates how to create a surface chart using SfSurfaceChart con
 using Syncfusion.UI.Xaml.Charts;
 
 {% endhighlight %}
-The following section demonstrates a simple surface chart with the data discussed above table.
+The following section demonstrates a simple surface chart with the data discussed in the above table.
 
 ### Initialize the surface chart
 
@@ -281,7 +281,7 @@ SfSurfaceChart surface = new SfSurfaceChart();
 
 ### Add Data to surface chart
 
-We can set the surface chart data in code behind by directly adding data points to Data property of surface chart using **AddPoints****(****x****,****y****,****z****)** method as shown in the below code.
+You can set the surface chart data in code behind, by directly adding data points to the Data property of surface chart using **AddPoints****(****x****,****y****,****z****)** method as shown in the following code example.
 
 {% highlight C# %}
 
@@ -309,7 +309,7 @@ surface.ColumnSize = 3;
 
 ### Add Header to the Surface chart
 
-The header is acts as the title of the surface chart created, to identify its purpose. 
+The header acts as the title of the surface chart created, to identify its purpose. 
 
 {% highlight C# %}
 
@@ -340,11 +340,11 @@ surface.ZAxis = zAxis;
 
 {% endhighlight %}
 
-N> SfSurfaceChart supports default axes ( i.e., all the axes will be generated automatically, if we didn’t define it explicitly).
+N> SfSurfaceChart supports default axes, where all the axes are generated automatically, even when they are not defined explicitly.
 
 ### Add Surface Type
 
-The following code example illustrate how to add surface type to the surface chart. 
+The following code example illustrates how to add surface type to the surface chart. 
 
 {% highlight C# %}
 
@@ -352,9 +352,9 @@ surface.Type = SurfaceType.Surface;
 
 {% endhighlight %}
 
-### Add Color bar to the surface chart
+### Add ColorBar to the surface chart
 
-The following code example illustrate how to add color bar to the surface chart
+The following code example illustrates how to add color bar to the surface chart.
 
 {% highlight C# %}
 
@@ -362,7 +362,7 @@ surface.ColorBar = new ChartColorBar() {DockPosition = ChartDock.Right};
 
 {% endhighlight %}
 
-Now we have created a simple surface chart and following code example are for code behind
+Now you have created a simple surface chart. The following code example is for code behind.
 
 {% highlight C# %}
 
