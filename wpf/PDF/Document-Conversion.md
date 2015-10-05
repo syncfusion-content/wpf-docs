@@ -19,6 +19,7 @@ Syncfusion products support conversion of the HTML and webpages into PDF documen
 
 * IE Rendering 
 * Gecko Rendering
+
 ## IE Rendering
 
 
@@ -36,14 +37,15 @@ This section covers the following:
 * Converting Methods
 * HTMLConvertor Options 
 
-Converting Methods
+### Converting Methods
 
 HTML documents can be converted to PDF through the following methods:
 
 * ConvertToImage
 * FromString
 
-ConvertToImage
+
+#### ConvertToImage
 
 The ConvertToImage method converts the URL into an image. It recognizes tables, images, lists, etc. The URL parameter can be a HTTP or HTTPS address such as "http://www.server.com/path/file.html", or a local physical path such as "c:\path\file.html".
 
@@ -51,9 +53,8 @@ N> If you want to open a dynamically generated document such as .asp or aspx fil
 
 The overloaded ConvertToImage method enables converting an HTML page to an image with AspectRatio to maintain the ratio of the image dimension. This prevents text truncation at the corners.
 
+
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -99,9 +100,9 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -148,17 +149,18 @@ End If
 pdfDocument.Save("Output.pdf")
 
 pdfDocument.Close(True)
+
 {% endhighlight %}
 
 N> HTML To PDF conversion allows text selection and search within the generated document. However, in machines where IE9 is installed, document would contain Bitmap image of the converted page/file thereby restricting text selection and search. This behavior can be changed for certain webpages by changing the registry value. For more details, refer to Frequently Asked Questions section.
 
-Authentication
+#### Authentication
 
 You can use the ConvertToImage method to access the authenticated web pages by passing its user credential values as arguments. The following code example illustrates this:
 
+
+
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -206,9 +208,9 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -258,13 +260,13 @@ pdfDocument.Close(True)
 
 {% endhighlight %}
 
-FromString
+#### FromString
 
 FromString method renders HTML from the string to the image. The following code example illustrates this:
 
+
+
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -310,9 +312,9 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -355,11 +357,13 @@ pdfImage__1.Draw(page, PointF.Empty, bitmapFormat)
 pdfDocument.Save("Output.pdf")
 
 pdfDocument.Close(True)
+
 {% endhighlight %}
 
 N> Both ConvertToImage() and FromString() methods are used to convert the HTML pages whose height is less than 32767 pixels as image, and the options like  EnableHyperlinks, EnableJavascript  and AutoDetectPageBreak has no effect.
 
-HtmlConverter Options
+
+#### HtmlConverter Options
 
 HtmlConverter provides the following options to control HtmlToPDF conversions.
 
@@ -367,25 +371,25 @@ HtmlConverter provides the following options to control HtmlToPDF conversions.
 * AutoDetectPageBreak
 * Enable Hyperlinks
 
-EnableJavaScript
+#### EnableJavaScript
 
 You can control the JavaScript by using the EnableJavaScript property of the HtmlConverter class library. By default this property is set to False. So the JavaScript code is disabled during conversion. Set the EnableJavaScript property to True to activate the JavaScript code during conversion.
 
 N> If JavaScript code is not executed by setting the EnableJavaScript property, it means the Internet Security Settings on the server does not allow the JavaScript execution.
 
-Enable Hyperlink
+#### Enable Hyperlink
 
 Essential PDF provides support to enabe or disable the live hyperlinks in PDF when converting web pages to PDF. The following code example illustrates this:
 
-AutoDetectPageBreak 
+#### AutoDetectPageBreak 
 
 The HtmlConverter supports custom page breaks with standard CSS styles like page-break-before: always and page-break-after: always that can be applied to any HTML object. You can enable custom page breaks by setting the AutoDetectPageBreak property to True.
 
 The following code example illustrates the use of EnableJavaScript, EnableHyperlink and AutoDetectPageBreak:
 
+
+
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -437,9 +441,9 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -491,13 +495,13 @@ pdfDocument.Close(True)
 
 {% endhighlight %}
 
-Rendering HTML page without Splitting
+#### Rendering HTML page without Splitting
 
 To avoid images and text split across page breaks when rendering a large Meta file with images and text in a PDF document, disable the SplitTextLines and SplitImages properties of PdfMetafileLayoutFormat class. The following code illustrates this:
 
+
+
 {% highlight c# %}
-
-
 
 //Creates a new PDF document.
 
@@ -546,12 +550,13 @@ image.Draw(page, new RectangleF(0, 0, pageSize.Width, -1), format);
 pdfDocument.Save("Output.pdf");
 
 pdfDocument.Close(true);
+
 {% endhighlight %}
 
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -600,7 +605,9 @@ image.Draw(page, New RectangleF(0, 0, pageSize.Width, -1), format)
 pdfDocument.Save("Output.pdf")
 
 pdfDocument.Close(True)
+
 {% endhighlight %}
+
 
 ### Gecko Rendering
 
@@ -620,12 +627,18 @@ Prerequisites
 <tr>
 <th>
 Dlls</th><th>
-* Syncfusion.Core.dll* Syncfusion.Compression.Base.dll* Syncfusion.Pdf.Base.dll* Syncfusion.HtmlConverter.Base.dll* Syncfusion.GeckoHtmlRenderer.dll* Syncfusion.GeckoWrapper.dll</th></tr>
+<br>* Syncfusion.Core.dll
+<br>* Syncfusion.Compression.Base.dll
+<br>* Syncfusion.Pdf.Base.dll
+<br>* Syncfusion.HtmlConverter.Base.dll
+<br>* Syncfusion.GeckoHtmlRenderer.dll
+<br>* Syncfusion.GeckoWrapper.dll</th></tr>
 <tr>
 <td>
 <br>Software Development Kit (SDK)</td><td>
 * XulRunner-SDK 2.0</td></tr>
 </table>
+
 #### Installation Steps
 
 
@@ -647,14 +660,13 @@ The limitations with this approach are as follows:
 
 1. Formatting/styles created by using dynamic scripts are not rendered in the resultant PDF.
 2. Other features in HTML to PDF conversion such as hyperlinks are not available for conversion by using Gecko rendering engine. However, the page breaks are supported, but the page break cannot be explicitly controlled.
+
 #### Conversion of HTML to PDF using Gecko Rendering Engine
 
 
 The following code sample explains you the conversion of HTML to PDF using the Gecko Rendering Engine.
 
 {% highlight c# %}
-
-
 
 //Creates PDF Generator.
 
@@ -694,9 +706,9 @@ doc.Save("HtmlToPdf.pdf");
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates PDF Generator.
 
@@ -727,7 +739,10 @@ End Using
 'Saves PDF document.
 
 doc.Save("HtmlToPdf.pdf")
+
 {% endhighlight %}
+
+
 
 ## Word to PDF
 
@@ -751,9 +766,9 @@ Assembly Dependency for this Conversion
 
 The following code illustrates you on how to convert a Word document, say, "sample.doc" to a PDF document.
 
+
+
 {% highlight c# %}
-
-
 
 //Loads the Word document.
 
@@ -773,9 +788,9 @@ pdfDoc.Save("DoctoPDF.pdf");
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Loads the Word document.
 
@@ -792,7 +807,9 @@ Dim pdfDoc As PdfDocument = converter.ConvertToPDF(wordDoc)
 'Saves the PDF file.
 
 pdfDoc.Save("DoctoPDF.pdf")
+
 {% endhighlight %}
+
 
 ### Supported Elements
 
@@ -809,6 +826,8 @@ This feature provides support for the following elements.
 * Text Box
 * Page Settings and Background Image
 * Document Properties
+
+
 #### Paragraph and Character Formatting 
 
 
@@ -827,6 +846,7 @@ Known Limitations
 * Borders around paragraphs.
 * Full Justification.
 * MultiColumn Text
+
 #### MultiColumn Text
 
 
@@ -858,6 +878,7 @@ Known Limitations
 
 * Tables making use of patterns and 3D borders cannot be retained in the output document.
 * Absolutely positioned tables are not supported.
+
 #### Breaks
 
 
@@ -894,7 +915,7 @@ The following are the list of unsupported elements that cannot be preserved in t
 
 Known Limitations - Pagination 
 
-Pagination
+#### Pagination
 
 Essential DocIO, when generating the PDF document, makes sensible decisions while laying out the text and its supported elements. However, pagination is not guaranteed with all the documents.
 
@@ -904,9 +925,9 @@ TIFF image can be converted into PDF document and it can be done by accessing ea
 
 The code sample to illustrate the same is as follows.
 
+
+
 {% highlight c# %}
-
-
 
 //Creates a PDF document.
 
@@ -952,9 +973,9 @@ pdfDocument.Close(true);
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a PDF document.
 
@@ -995,7 +1016,9 @@ Next
 pdfDocument.Save("Sample.pdf")
 
 pdfDocument.Close(True)
+
 {% endhighlight %}
+
 
 ## RTF to PDF
 
@@ -1195,9 +1218,9 @@ document.Close(true);
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates converter class.
 
@@ -1212,9 +1235,10 @@ Dim document As PdfDocument = converter.Convert("Sample.xps")
 document.Save("Sample.pdf")
 
 document.Close(True)
+
 {% endhighlight %}
 
-Supported Elements
+#### Supported Elements
 
 List of Supported Elements
 
@@ -1360,6 +1384,7 @@ No</td></tr>
 VisualBrush</td><td>
 No</td></tr>
 </table>
+
 ## Tagged PDF
 
 HTML to PDF conversion handled using MSHTML rendering library can now generate tagged PDF documents.
@@ -1370,9 +1395,8 @@ HTML documents can be converted to tagged PDFs using the ConvertToTaggedPDF meth
 
 A tagged PDF can be converted from a Web page or HTML string by using the following code sample.
 
+
 {% highlight c# %}
-
-
 
 //Creates a new PdfDocument.
 

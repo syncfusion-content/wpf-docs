@@ -90,6 +90,7 @@ pdfDocument.Template.Bottom = footer;
 pdfDocument.Save("Output.pdf");
 
 pdfDocument.Close(true);
+
 {% endhighlight %}
 
 

@@ -87,9 +87,9 @@ document.Close();
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new document.
 
@@ -156,6 +156,7 @@ bookmark.Destination = New PdfDestination(page1)
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight %}
 
 
@@ -163,9 +164,9 @@ We can add new bookmarks to an existing document at any location such as in the 
 
 The following code example illustrates how to insert new bookmarks in the existing PDF document.
 
+
+
 {% highlight c# %}
-
-
 
 //Creates a new document.
 
@@ -186,12 +187,13 @@ bookmark.Destination.Location = new PointF(0, 300);
 document.Save("Output.pdf");
 
 document.Close();
+
 {% endhighlight %}
 
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new document.
 
@@ -212,7 +214,9 @@ bookmark.Destination.Location = New PointF(0, 300)
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight %}
+
 
 ## Modifying bookmarks
 
@@ -225,9 +229,9 @@ Essential PDF allows you to modify the bookmarks in the existing PDF document. T
 
 
 
+
+
 {% highlight c# %}
-
-
 
 //Loads the PDF document.
 
@@ -255,9 +259,9 @@ document.Close();
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Loads the PDF document.
 
@@ -282,7 +286,9 @@ bookmark.Title = "Changed title"
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight %}
+
 
 ## Adding Actions to Bookmark
 
@@ -321,8 +327,6 @@ This action goes to a destination in the current document.</td></tr>
 The following code sample illustrates you on how to add action to bookmarks.
 
 {% highlight c# %}
-
-
 
 //Creates a new document.
 
@@ -372,9 +376,9 @@ document.Close();
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Creates a new document.
 
@@ -421,7 +425,10 @@ bookmark.Action = javaScriptAction
 document.Save("Output.pdf")
 
 document.Close()
+
 {% endhighlight %}
+
+
 
 ## Removing a bookmarks 
 
@@ -432,9 +439,9 @@ You can also remove bookmarks from the existing PDF document by using the follow
 
 
 
+
+
 {% highlight c# %}
-
-
 
 //Loads the PDF document.
 
@@ -460,9 +467,9 @@ document.Close();
 
 {% endhighlight %}
 
+
+
 {% highlight vbnet %}
-
-
 
 'Loads the PDF document.
 

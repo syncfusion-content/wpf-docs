@@ -15,19 +15,19 @@ Each page template has four properties for Left, Right, Top, and Bottom docked t
 
 N> A PdfPageTemplateElement is added as one template. It can be assigned to Left, Right, Top, or Bottom only once.
 
-Using the Page Templates 
+#### Using the Page Templates 
 
 When you want to define some graphics content to all pages of the document, use the Template property of the PdfDocument class. You can define Left, Top, Right, and Bottom templates, as well as an arbitrary quantity of the other templates (stamps) that can be used for water marking or stamping of the pages.
 
 When you decide to use some custom templates for a specified range of the page, use Template property of the PdfSection class containing these pages. It involves the same functionality as in the PdfDocument class. Additionally, you can disable or enable the document templates from the section.
 
-Default Behavior
+#### Default Behavior
 
 Document templates are enabled, by default.
 
 N> Section template that is printed over the parent template, does not replace document templates. When you want to insert a watermark or stamp on the page, use Stamps property of the PdfDocumentTemplate class.
 
-Behavior
+#### Behavior
 
 PdfPageTemplateElement class has the functionality of aligning (use Alignment property) and docking (use Dock property) of this class. Docking to the Left, Top, Right, and Bottom are implemented similar to Windows Forms Docking functionality (Top and Bottom have priority). Docking stamp elements do not have any priorities and the appearance depends on their order in the collection. 
 
@@ -37,7 +37,7 @@ Each template element that is docked, sticks to its appropriate side of the page
 
 N> In this scenario, you can set the Alignment property to the appropriate side only (depending on the Dock style). For example, when you want to set some template element as Top, the allowed values for Alignment are: TopLeft, TopCenter, and TopRight. You cannot set any other value attributing to the possible inconsistency with docking style.
 
-Z-Order of the Layers
+#### Z-Order of the Layers
 
 Each page can contain page templates from the document and from the parent section. Also, it can contain its own layers. The order of the layers is as follows (from back to top): 
 

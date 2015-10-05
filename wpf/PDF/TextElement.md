@@ -197,12 +197,11 @@ doc.Save("Output.pdf");
 //Closes the document.
 
 doc.Close(true);
+
 {% endhighlight %}
 
 
 {% highlight vbnet %}
-
-
 
 'Creates a new PDF document.
 
@@ -250,6 +249,7 @@ doc.Save("Output.pdf")
 
 doc.Close(True)
 {% endhighlight %}
+
 
 ## Automatic Fields
 
@@ -396,7 +396,7 @@ document.Save("Output.pdf")
 document.Close(True)
 {% endhighlight %}
 
-Page count field
+#### Page count field
 
 The Essential PDF provides the ability to display document's page count in an automated way.  Page count field displays the actual number of pages added to the document.
 
@@ -485,9 +485,11 @@ document.Save("Output.pdf")
 'Closes the document.
 
 document.Close(True)
+
 {% endhighlight %}
 
-Creation Date Time field
+
+#### Creation Date Time field
 
 The Essential PDF provides the ability to display creation date time in an automated way. You can draw the Automatic Fields on the PdfTemplate and set them as the document template or manually draw them on the necessary pages. The values of the fields are automatically populated on each copy of the template.
 
@@ -592,9 +594,12 @@ document.Save("Output.pdf")
 'Closes the document.
 
 document.Close(True)
+
 {% endhighlight %}
 
-Composite field
+
+
+#### Composite field
 
 Composite field comprises any number of automatic fields. You can add many number of automatic fields in the composite field.
 
@@ -946,7 +951,7 @@ Essential PDF allows you to create an ordered list in the document. Ordered List
 
 The PdfOrdered class is derived from the PdfList class that contains an item collection represented by the PdfListItemCollection class. The items from the collection are represented by the PdfListItem class.
 
-Initialize Lists 
+#### Initialize Lists 
 
 You can create new instances of the PdfOrderedList class by using the following constructors.
 
@@ -980,7 +985,7 @@ Creates list from the specified text and with specified marker. It splits text b
 </table>
 
 
-List Marker
+#### List Marker
 
 Ordered list has ordered markers that are represented by the PdfOrderedMarker class. To create a new instance of the ordered marker, you can use the following constructors.
 
@@ -1001,14 +1006,14 @@ PdfOrderedMarker (PdfNumberStyle style, string delimiter, string finalizer, PdfF
 Creates marker with the number style, font, finalizer, delimiter, and the specified symbol located between numbers. It is used when the MarkerHierarchy property of the PdfOrderedList class is set {{ '_True_' | markdownify }}. Default value for delimiter is '.'.</td></tr>
 </table>
 
-
 Default list marker contains Number style.
+
 
 ## UnOrdered List 
 
 Essential Pdf also provides support to render unordered List that isrepresented by the PdfUnorderedList class. An Unordered list can be bullets, circle or an image. 
 
-Initialize Lists
+#### Initialize Lists
 
 You can create a new instance of the PdfUnorderedList class by using the following constructors.
 
@@ -1042,7 +1047,7 @@ Creates list from the specified text and with the specified marker. It splits te
 </table>
 
 
-List Marker
+#### List Marker
 
 Unordered list has an unordered marker that is represented by the PdfUnorderedMarker class. Unordered marker has the marker style represented by thePdfUnorderedMarkerStyle class. The following marker styles are supported. 
 
@@ -1262,6 +1267,7 @@ document.Save("Sample.pdf")
 document.Close(True)
 {% endhighlight %}
 
+
 ## Rich Text 
 
 The Rich Text Format (RTF) specification provides you a format for text and graphics interchange that can be used with different output devices, operating environments, and operating systems.
@@ -1362,10 +1368,10 @@ metafile.Draw(page, 0, 0, format)
 doc.Save("Output.pdf")
 
 doc.Close(True)
+
 {% endhighlight %}
 
 
 ![](TextElement_images/TextElement_img3.jpeg)
-
 
 
