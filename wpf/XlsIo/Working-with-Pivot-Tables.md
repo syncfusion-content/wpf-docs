@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Working-with-Pivot-Tables
+title: Working with Pivot Tables | XlsIO | WPF | Syncfusion
 description: working with pivot tables 
 platform: wpf
-control: XlsIO	
+control: Xlsio
 documentation: ug
 ---
 
@@ -21,7 +21,11 @@ In Excel, Pivot Table can be inserted by selecting the PivotTable option from th
 
 
 
+
+
 Excel automatically selects the entire range. However, it is possible to modify it if necessary. It also allows choosing where to place the PivotTable. New Worksheet is most commonly used to place the pivot table.
+
+
 
 ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img2.png)
 
@@ -29,23 +33,29 @@ Excel automatically selects the entire range. However, it is possible to modify 
 
 Once you select a field, the Pivot Table appears. Now you need to populate it with data fields that appear in the field list on the right. Fields can be dragged to one of the defined areas of the Pivot Table grid.
 
+
+
 ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img3.png)
 
 
 
 To filter by a field, open its drop-down list and select the value to filter. The table now displays data only for the filtered criterion (in this case, the Central region). You can also sort by a field by opening its drop-down list and selecting one of the sort orders.
 
-##PivotTable Creation Manipulation by Using XlsIO
+PivotTable Creation Manipulation by Using XlsIO
 
 XlsIO provides support for creation and manipulation of Pivot Table by using simple APIs. IPivotCache interface caches the data that needs to be summarized. IPivotTable represents a pivot table in object, and has properties that allow customizing it. IPivotTable interface returns the collection of Pivot Tables present in a worksheet. IPivotField represents the field in the pivot table. This includes row, column, and data field axis. IPivotDataFields gets collection of data field.
+
+
 
 N> Pivot Table is currently not supported for .xls format.
 
 The following code example illustrates how to create a pivot table by using XlsIO.
 
-{% highlight C# %}
 
 
+{% tabs %}
+
+{% highlight C# %}  
 
 //Step 1: Instantiates the spreadsheet creation engine.
 
@@ -101,8 +111,8 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
 
+{% highlight vbnet %} 
 
 
 'Step 1: Instantiates the spreadsheet creation engine.
@@ -158,12 +168,12 @@ workbook.Close()
 excelEngine.Dispose();
 
 {% endhighlight %}
+{% endtabs %}
 
 Properties
 
 The following properties of the IPivotTable interface are used to fetch pivot table fields.
 
-_IPivotTable Properties_ 
 
 <table>
 <tr>
@@ -223,7 +233,7 @@ Represents the pivot table options.Read-only.</td></tr>
 
 The following properties of the IPivotTableOption interface are used to customize the settings of the pivot table.
 
-_IPivotTableOption Properties_ 
+IPivotTableOption Properties
 
 <table>
 <tr>
@@ -325,7 +335,7 @@ Following are the properties of the IPivotCache interface.
 
 
 
-_IPivotCache Properties_ 
+IPivotCache Properties
 
 <table>
 <tr>
@@ -345,13 +355,13 @@ Specifies the pivot table cache source type. Read-only</td></tr>
 SourceRange</td><td>
 Returns the data source for the PivotTable report. Read-only.</td></tr>
 </table>
-
-
-##SubTotals
+SubTotals
 
 You can also insert various subtotal types for the pivot table through the PivotSubtotalTypes enum. It is also possible to insert multiple subtotals for a field by using Subtotal property of IPivotField. This is demonstrated in the following code example.
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight C# %}  
 
 
 
@@ -404,9 +414,8 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
 
-
+{% highlight vbnet %} 
 
 'Step 1: Instantiates the spreadsheet creation engine.
 
@@ -458,21 +467,23 @@ workbook.SaveAs("PivotTable.xlsx")
 workbook.Close()
 
 excelEngine.Dispose()
-{% endhighlight %}
 
-## Edit a Pivot Table
+{% endhighlight %}
+{% endtabs %}
+
+##  Edit a Pivot Table
 
 XlsIO supports the usage of Pivot Tables in a Template file. It is even possible to dynamically refresh the data in a pivot table by using XlsIO. The following steps illustrate how to do this.
 
 1. Create the Pivot Table by using MS Excel GUI.
-1. Specify the named range to be the data source of the Pivot Table.
-2. Make sure that the Refresh On Open option of the pivot table is selected.
-3. Dynamically refresh the data in the Named Range.
+2. Specify the named range to be the data source of the Pivot Table.
+3. Make sure that the Refresh On Open option of the pivot table is selected.
+4. Dynamically refresh the data in the Named Range.
 
 
+{% tabs %}
 
-{% highlight C# %}
-
+{% highlight C# %} 
 
 
 //Step 1: Instantiates the spreadsheet creation engine.
@@ -532,10 +543,10 @@ workbook.SaveAs("PivotTable.xlsx");
 workbook.Close();
 
 excelEngine.Dispose();
-{% endhighlight %}
 
+ {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -587,7 +598,9 @@ workbook.SaveAs("PivotTable.xlsx")
 workbook.Close()
 
 excelEngine.Dispose()
+
 {% endhighlight %}
+{% endtabs %}
 
 ## Applying Pivot Table Filters 
 
@@ -597,8 +610,10 @@ In Microsoft Excel, filtered data of a pivot table displays only the subset of d
 
 The page field filter filters the Pivot Table based on page field items. The following code example illustrates how to apply multiple filters to the page field items.
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %}  
 
 
 //Step 1: Instantiates the spreadsheet creation engine.
@@ -663,7 +678,7 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
- {% highlight vbnet %}
+ {% highlight vbnet %} 
 
 
 
@@ -727,8 +742,10 @@ excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img4.png)
+
+![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img5.png)
 
 
 
@@ -736,8 +753,10 @@ excelEngine.Dispose()
 
 The row field and column field filters, filter the pivot table based on labels, values, and items of fields. The following code example illustrates how to apply these filters to a Pivot Table.
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %}  
 
 
 //Step 1: Instantiates the spreadsheet creation engine.
@@ -803,7 +822,7 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
- {% highlight vbnet %}
+ {% highlight vbnet %} 
 
 
 
@@ -866,16 +885,22 @@ workbook.Close()
 'No exception will be thrown if there are unsaved workbooks.
 excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
+
+
+
 {% endhighlight %}
 
+{% endtabs %}
 
-![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img5.png)
+![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img6.png)
 
 
 
-##Label Filter 
+###Label Filter 
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight C# %}  
 
 
 
@@ -933,11 +958,11 @@ workbook.Close();
 excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
+
+
 {% endhighlight %}
 
-
-{% highlight vbnet %}
-
+{% highlight vbnet %} 
 
 
 'Step 1: Instantiates the spreadsheet creation engine.
@@ -988,14 +1013,16 @@ workbook.Close();
 'No exception will be thrown if there are unsaved workbooks.
 excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
-
 {% endhighlight %}
-
-##Value Filter 
-
-{% highlight C# %}
+{% endtabs %}
 
 
+###Value Filter 
+
+
+{% tabs %}
+
+{% highlight C# %}  
 
 //Step 1: Instantiates the spreadsheet creation engine.
 
@@ -1049,12 +1076,12 @@ workbook.Close();
 excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
+
 {% endhighlight %}
 
 
-{% highlight vbnet %}
 
-
+{% highlight vbnet %} 
 
 'Step 1: Instantiates the spreadsheet creation engine.
 Dim excelEngine As New ExcelEngine()
@@ -1101,17 +1128,20 @@ workbook.Close()
 'No exception will be thrown if there are unsaved workbooks.
 excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
+
 {% endhighlight %}
+{% endtabs %}
+
+![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img7.png)
 
 
-![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img6.png)
+
+#### Multiple Filter 
 
 
+{% tabs %}
 
-## Multiple Filter 
-
-{% highlight C# %}
-
+{% highlight C# %}  
 
 
 //Step 1: Instantiates the spreadsheet creation engine.
@@ -1167,8 +1197,8 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
- {% highlight vbnet %}
-
+ 
+{% highlight vbnet %} 
 
 
 'Step 1: Instantiates the spreadsheet creation engine.
@@ -1213,8 +1243,9 @@ excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
-![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img7.png)
+![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img8.png)
 
 
 
@@ -1222,13 +1253,15 @@ excelEngine.Dispose()
 
 Excel provides various options through the PivotTableOptions dialog box to customize the appearance of the pivot table.
 
-![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img8.png)
+![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img9.png)
 
 
 
 XlsIO supports the pivot table options by using IPivotTableOptions interface to control various settings for the existing Pivot table.  The following code example illustrates the same.  
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight C# %} 
 
 
 
@@ -1277,10 +1310,10 @@ excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
 
-{% endhighlight %}
+ {% endhighlight %}
 
-{% highlight vbnet %}
 
+{% highlight vbnet %} 
 
 
 'Step 1: Instantiates the spreadsheet creation engine.
@@ -1332,13 +1365,16 @@ excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 ##Show or Hide the Field List
 
 In MS Excel, click the Field List button in the Design Tab. Show or Hide the pivot table field list pane in XlsIO by using ShowFieldList property as represented in the following code example.
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %}  
 
 
 //Step 1: Instantiates the spreadsheet creation engine.
@@ -1383,8 +1419,8 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
 
+{% highlight vbnet %} 
 
 
 'Step 1: Instantiates the spreadsheet creation engine.
@@ -1432,12 +1468,15 @@ excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 ##Header Caption
 
 In MS Excel, the Field Header button is used to show or hide the pivot table caption. In XlsIO, to enable and disable the caption, use the DisplayFieldCaption property. Use the RowHeaderCaption and ColumnHeadercaption properties to edit the respective pivot table headers.
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight C# %} 
 
 
 
@@ -1485,11 +1524,10 @@ excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
 
-{% endhighlight %}
-
-{% highlight vbnet %}
+ {% endhighlight %}
 
 
+{% highlight vbnet %} 
 
 'Step 1: Instantiates the spreadsheet creation engine.
 
@@ -1534,13 +1572,16 @@ workbook.SaveAs("PivotTable.xlsx")
 workbook.Close()
 
 {% endhighlight %}
+{% endtabs %}
 
-##Grand Total
+###Grand Total
 
 You can display or hide the totals for the current Pivot Table report by selecting an option from Design -> Layout-> Grand Totals. XlsIO provides an equivalent API to perform with simple properties as follows.
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %} 
 
 
 //Step 1: Instantiates the spreadsheet creation engine.
@@ -1588,10 +1629,10 @@ excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
 
-{% endhighlight %}
+ {% endhighlight %}
 
-{% highlight vbnet %}
 
+{% highlight vbnet %} 
 
 
 'Step 1: Instantiates the spreadsheet creation engine.
@@ -1641,13 +1682,16 @@ excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 ##Show/Hide Collapse Button
 
 You can also show/hide the Collapse button that appears in the fields of the pivot table, when there exists more than one item in a field. The following code example illustrates how to do this.
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %}  
 
 
 //Step 1: Instantiates the spreadsheet creation engine.
@@ -1694,10 +1738,10 @@ workbook.Close();
 excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
+
 {% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -1746,13 +1790,16 @@ excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 ##Display Field Caption and Filter Option
 
 It is also possible to show/hide the Filter button and field name in the pivot table by using the PivotTable Options dialog box in Excel. This is illustrated in the following code example.
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %}  
 
 
 //Step 1: Instantiates the spreadsheet creation engine.
@@ -1802,7 +1849,8 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vbnet %} 
+
 
 
 
@@ -1852,13 +1900,11 @@ excelEngine.Dispose()
 
 {% endhighlight %}
 
+{% endtabs %}
 
 
 
-
-
-
-![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img9.png)
+![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img10.png)
 
 
 
@@ -1866,8 +1912,10 @@ excelEngine.Dispose()
 
 XlsIO allows setting the row label on each page while printing to view the header on each page.
 
-{% highlight C# %}
 
+{% tabs %}
+
+{% highlight C# %} 
 
 
 //Step 1: Instantiates the spreadsheet creation engine.
@@ -1915,10 +1963,9 @@ excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
 
-{% endhighlight %}
+ {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vbnet %} 
 
 
 'Step 1: Instantiates the spreadsheet creation engine.
@@ -1972,12 +2019,15 @@ excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 ##Formatting the Pivot Table By using Excel 2007
 
 Excel 2007 provides set of built-in styles that allow formatting the pivot table row and column header. When your cell pointer is inside the pivot table, you have two new ribbon tabs under PivotTable Tools heading, Options and Design. On the Design ribbon, the Pivot Table Styles gallery offers 85 built-in formats for pivot tables. 
 
-![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img10.png)
+
+
+![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img11.png)
 
 
 
@@ -1985,9 +2035,9 @@ Excel 2007 provides set of built-in styles that allow formatting the pivot table
 
 XlsIO supports 85 built-in styles of Excel 2007 that enables creation of a table with rich formatting. This is done by using the BuiltInStyle property of IPivotTable as follows.
 
+{% tabs %}
 
-
-{% highlight C# %}
+{% highlight C# %} 
 
 
 
@@ -2033,11 +2083,11 @@ workbook.Close();
 excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
-{% endhighlight %}
+
+ {% endhighlight %}
 
 
-{% highlight vbnet %}
-
+{% highlight vbnet %} 
 
 
 'Step 1: Instantiates the spreadsheet creation engine.
@@ -2081,8 +2131,9 @@ workbook.Close()
 'No exception will be thrown if there are unsaved workbooks.
 excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
-{% endhighlight %}
 
+{% endhighlight %}
+{% endtabs %}
 
 ##Adding Calculated Field in the existing Pivot Table
 
@@ -2094,7 +2145,9 @@ Calculated fields are a special type of database field that perform calculations
 
 In MS Excel, the Calculated Field can be added by using the calculation option from the Option tab. In XlsIO, the same can be achieved with the following code example.
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight C# %}  
 
 
 
@@ -2143,8 +2196,7 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
-
+{% highlight vbnet %} 
 
 
 'Step 1: Instantiates the spreadsheet creation engine.
@@ -2188,10 +2240,13 @@ excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 The formula can be fetched from the formula property of the IPivotField.
 
-{% highlight C# %}
+
+{% tabs %}
+{% highlight C# %} 
 
 
 
@@ -2238,9 +2293,9 @@ excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
 
-{% endhighlight %}
+ {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -2289,13 +2344,14 @@ workbook.Close()
 'No exception will be thrown if there are unsaved workbooks.
 excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
-{% endhighlight %}
 
-##Lay Out the Pivot Table as MS Excel 2007
+{% endhighlight %}
+{% endtabs %}
+Lay Out the Pivot Table as MS Excel 2007
 
 Support is provided for drawing a pivot table similar to the MS Excel layout by using Essential XlsIO. Previously, MS Excel lay out the pivot table for XlsIO. By using a layout method, the pivot table layout was drawn by using XlsIO. By using XlsIO dynamically, you can get any value of the pivot table, apply a filter to the pivot table, and can get the filtered values of the pivot table dynamically.
 
-_Method_
+Method
 
 <table>
 <tr>
@@ -2308,11 +2364,11 @@ Layout</td><td>
 Method to lay out the pivot table byusing XlsIO like the MS Excel pivot table layout.</td></tr>
 </table>
 
-
-
 The following code example illustrates how to enable Essential XlsIO to lay out the pivot table like MS Excel. 
 
-{% highlight C# %}
+{% tabs %}
+
+{% highlight C# %}  
 
 
 
@@ -2387,7 +2443,7 @@ excelEngine.Dispose();
 
 {% endhighlight %}
 
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -2456,14 +2512,18 @@ workbook.Close()
 'No exception will be thrown if there are unsaved workbooks.
 excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
-{% endhighlight %}
 
-##Supported Elements
+{% endhighlight %}
+{% endtabs %}
+
+###Supported Elements:
 
 1. Apply filter value to page filter of the pivot table.
 2. Pivot table values can be accessed dynamically.
-## Create a Pivot Chart 
 
+
+
+## Create a Pivot Chart 
 
 Pivot Charts are interactive graphical representations of the PivotTable data that allows rapid analysis of the displayed data. PivotTable is an Excel feature that helps in summarizing large volume of data such as stock market report, cash flow report, etc. A PivotTable can aggregate data instead of analyzing rows upon large volume of records and within a few clicks the PivotChart allows rapid, dynamic, and flexible data analysis. The following sections describe the creation of PivotTables and PivotCharts. 
 
@@ -2471,32 +2531,37 @@ PivotChart Creation by Using MS Excel 2010
 
 In Microsoft Excel, the PivotChart can be created by using the PivotChart Option from the Insert menu. Refer to Figure 113: PivotChart Creation.
 
-![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img11.png)
+![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img12.png)
 
 
 
 By default, MS Excel selects the entire range. However, it is possible to modify the selected range if required. It also allows choosing the position of the PivotChart. New Worksheet is most commonly used to place the PivotChart.
 
-![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img12.png)
 
-
-
-Once you select a field, the PivotTable and the PivotChart appear. PivotTable and PivotChart should be popoulated with data fields that appear on the field list to the right. Fields can be dragged to the PivotTable grid to one of the defined areas and also there is an option to move the created PivotChart to a separate sheet.
 
 ![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img13.png)
 
 
 
-##PivotChart Creation by Using XlsIO
+Once you select a field, the PivotTable and the PivotChart appear. PivotTable and PivotChart should be popoulated with data fields that appear on the field list to the right. Fields can be dragged to the PivotTable grid to one of the defined areas and also there is an option to move the created PivotChart to a separate sheet.
+
+
+
+![](Working-with-Pivot-Tables_images/Working-with-Pivot-Tables_img14.png)
+
+
+
+PivotChart Creation by Using XlsIO
 
 XlsIO provides support for the creation of PivotTables and PivotCharts by using simple code examples. IPivotCache interface caches the data that need to be summarized when filtering. IPivotTable represents a PivotTable in object and has properties that allow customizing it. IPivotTable interface returns the collection of PivotTables that are present in a worksheet. IPivotField represents the field in the PivotTable. This includes row, column, and data field axes. IPivotDataFields get a collection of the data field and once the PivotTable is created, it is required to create a PivotChart by setting the PivotSource property of the IChart interface that references the created PivotTable.
+
 
 N> PivotTable and PivotChart are currently not supported for .xls format.
 
 The following code example illustrates the creation of a PivotTable and PivotChart by using XlsIO.
 
-{% highlight C# %}
-
+{% tabs %}
+{% highlight C# %}  
 
 
 //Step 1: Instantiates the spreadsheet creation engine.
@@ -2550,10 +2615,10 @@ workbook.Close();
 excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();
+
 {% endhighlight %}
 
-
-{% highlight vbnet %}
+{% highlight vbnet %} 
 
 
 
@@ -2610,17 +2675,19 @@ excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
 
 {% endhighlight %}
+{% endtabs %}
 
 ##PivotChart Options
 
 The field buttons of the PivotChart can be displayed or hidden by selecting PivotChart Tools->Analyze->Field Buttons. XlsIO provides an equivalent API to perform simple properties as follows:
 
+
 N> These properties are exclusive for Excel 2010.
 
 
+{% tabs %}
 
-{% highlight C# %}
-
+{% highlight C# %}  
 
 
 //Step 1: Instantiates the spreadsheet creation engine.
@@ -2672,8 +2739,8 @@ workbook.Close();
 excelEngine.ThrowNotSavedOnDestroy = false;
 
 excelEngine.Dispose();        
-{% endhighlight %}
 
+{% endhighlight %}
 
 {% highlight vbnet %}
 
@@ -2731,11 +2798,10 @@ workbook.Close()
 excelEngine.ThrowNotSavedOnDestroy = False
 excelEngine.Dispose()
 
-{% endhighlight %}
+ {% endhighlight %}
+{% endtabs %}
 
 Properties
-
-_Properties of PivotChart_ 
 
 <table>
 <tr>
@@ -2795,11 +2861,10 @@ Public property</td><td>
 True/False</td><td>
 NA</td></tr>
 </table>
+Sample Link
 
+ To understand this process, consider the sample project: \EssentialStudio\*.*.*.* \Windows\XlsIO.Windows\Samples\2.0\Business Intelligence\Pivot Chart. 
 
-####Sample Link
-
-To understand this process, consider the sample project: \EssentialStudio\*.*.*.* \Windows\XlsIO.Windows\Samples\2.0\Business Intelligence\Pivot Chart. 
 
 N> It is mandatory to have Essential XlsIO installed. MS Excel is not required.
 
