@@ -207,7 +207,7 @@ Gets or sets the double value that represents the working days of a week.</td></
 
 The DateTime interval corresponds to the type specified in the IntervalType property.
 
-For instance, if the Interval is set as 2 and IntervalType is set as Days, the labels are plotted for every two days. The following are the values for IntervalType property:
+For instance, when the Interval is set as 2 and IntervalType is set as Days, the labels are plotted for every two days. The following are the values for IntervalType property:
 
 * Auto
 * Days
