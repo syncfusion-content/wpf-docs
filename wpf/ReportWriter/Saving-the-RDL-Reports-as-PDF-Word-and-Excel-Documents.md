@@ -1,17 +1,15 @@
 ---
 layout: post
-title: Saving-the-RDL-Reports-as-PDF-Word-and-Excel-Documents
+title: Saving the RDL Reports as PDF Word and Excel Documents | ReportWriter | WPF | Syncfusion
 description: saving the rdl reports as pdf, word, and excel documents
 platform: wpf
-control: Report Writer
+control: ReportWriter
 documentation: ug
 ---
 
 # Saving the RDL Reports as PDF, Word, and Excel Documents
 
 Essential Report Writer provides support for saving a report as a PDF, Word, or Excel document with the help of the class ReportWriter. The report elements such as Tablix, matrices, charts, gauges, shapes, and text boxes are supported in this feature.
-
-
 
 Use Case Scenario
 
@@ -20,8 +18,6 @@ This feature is very useful in exporting the generated report as a PDF, Word, or
 ## Constructors, Properties and Methods Tables
 
 ### Constructors
-
-Constructors Table
 
 <table>
 <tr>
@@ -52,8 +48,6 @@ Initializes a new instance of the ReportWriter with the stream of the report and
 
 
 ### Properties
-
-Properties Table
 
 <table>
 <tr>
@@ -87,10 +81,6 @@ Gets or sets the report server URL.</td></tr>
 </table>
 
 ### Methods
-
-
-
-Methods Table
 
 <table>
 <tr>

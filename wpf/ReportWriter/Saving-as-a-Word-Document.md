@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Saving-as-a-Word-Document
+title: Saving as a Word Document | ReportWriter | WPF | Syncfusion
 description: saving as a word document
 platform: wpf
-control: Report Writer
+control: ReportWriter
 documentation: ug
 ---
 
@@ -11,10 +11,9 @@ documentation: ug
 
 The RDL report generated using the Report Designer can also be exported as a Word document. The following code example demonstrates how to do this.
 
-
+{% tabs %}
 
 {% highlight C# %}
-
 // Instantiate the report writer with the parameter "ReportPath" and 
 
 ReportDataSource Collection
@@ -22,11 +21,9 @@ ReportDataSource Collection
 ReportWriter reportWriter = new ReportWriter(reportPath, dataSources);
 
 reportWriter.Save("Sample.doc", WriterFormat.WORD);
-
 {% endhighlight %}
 
 {% highlight vbnet %}
-
 'Instantiate the report writer with the parameter "ReportPath" and 
 
 ReportDataSource Collection.
@@ -34,6 +31,6 @@ ReportDataSource Collection.
 Dim reportWriter As New ReportWriter (reportPath, dataSources)
 
 reportWriter.Save("Sample.doc", WriterFormat.WORD);
-
-
 {% endhighlight %}
+
+{% endtabs %}

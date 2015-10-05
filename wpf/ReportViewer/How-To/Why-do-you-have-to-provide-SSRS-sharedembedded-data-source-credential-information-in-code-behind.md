@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Why-do-you-have-to-provide-SSRS-sharedembedded-data-source-credential-information-in-code-behind
+title: Why do you have to provide SSRS sharedembedded data source credential information in code behind | ReportViewer | WPF | Syncfusion
 description: why do you have to provide ssrs shared/embedded data source credential information in code behind? 
 platform: wpf
-control: Report Viewer
+control: ReportViewer
 documentation: ug
 ---
 
@@ -41,6 +41,5 @@ credentials.Add (credential);
 this.reportViewerControl.SetDataSourceCredentials (credentials);
 
 }
-
 {% endhighlight %}
 

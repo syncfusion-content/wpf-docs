@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel-Importing
+title: Excel Importing | GridControl | wpf | Syncfusion
 description: excel importing
 platform: wpf
 control: Grid Control
@@ -38,7 +38,7 @@ To view samples:
 
 ### Methods
 
-_Methods Table_
+
 
 <table>
 <tr>
@@ -141,7 +141,7 @@ NA</td></tr>
 
 ### Events
 
-_Event Table_
+
 
 <table>
 <tr>

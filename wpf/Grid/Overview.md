@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
+title: Grid | Grid | WPF | Syncfusion
 description: overview
 platform: wpf
-control: Grid Control
+control: Grid
 documentation: ug
 ---
 
-# Overview
+# Grid
 
 The grid at its core functions as a very efficient display engine for tabular data that can be customized down to the cell level. It does not make any assumptions on the structure of the data (many grid controls implemented as straight data-bound controls make such explicit assumptions). This leads to a very flexible design that can be easily adapted to a variety of tasks including the display of completely unstructured data and the display of structured data from a database. 
 
@@ -15,33 +15,32 @@ The display system also hosts a powerfull and complete styles architecture. Sett
 
 With this version, our core focus has been on the underlying architecture for displaying cells with virtualized cell editors in a manner that enables good performance characteristics. The core display system also supports several building-block features such as nested grids, virtual modes, and support for a virtually unlimited number of rows and columns.
 
-## Use Case Scenarios
+### Use Case Scenarios
 
 EssentialGrid for WPF can be applied to a variety of industries such as finance, banking, software, etc. Some of its important features are:
 
 Excel-Like UI: Essential Grid’s rich feature set allows you to build Excel-like UI applications. 
 
-
-
 ![](Overview_images/Overview_img1.png)
 
-
+Excel-Like UI
+{:.caption}
 
 High Performance - EssentialGrid is a great asset to high-performance applications, as it can display large amounts of real-time data that tends to periodic changes without any performance hits. Below is an illustration of a stock portfolio application using the GridData control.
 
-
-
 ![](Overview_images/Overview_img2.png)
 
-
+Stock Portfolio
+{:.caption}
 
 File Explorer - Applications that deal with hierarchical data can make use of Essential Grid’s file explorer feature, which allows child items to be displayed on-demand by using the GridTree control.
 
 ![](Overview_images/Overview_img3.png)
 
-
+File Explorer
+{:.caption}
 
-## Key Features
+### Key Features
 
 You will find the following features of EssentialGrid for WPF:
 
@@ -64,7 +63,7 @@ You will find the following features of EssentialGrid for WPF:
 * Drag-Drop Support - Essential Grid lets you drag any column and drop it at any position in the grid. This allows columns to be repositioned as required.
 * Virtual Mode - Essential Grid for WPF supports a virtual mode, which lets you dynamically provide data to the grid from an external data source through an event. This means the grid does not store any data in its internal data structure.
 
-## User Guide Organization
+### User Guide Organization
 
 EssentialGrid for WPF comes with numerous samples as well as extensive documentation for your reference. This user guide provides detailed information on features and functionalities. It is organized into the following sections:
 
@@ -72,11 +71,9 @@ EssentialGrid for WPF comes with numerous samples as well as extensive documenta
 * Getting Started – This section guides you on getting started with a WPF application and WPF controls.
 * Concepts and Features –Under this section, the features of individual controls are illustrated with use-case scenarios, code examples, and screen shots.
 
-## Document Conventions 
+### Document Conventions 
 
 The conventions below will help you quickly identify important sections of information when using this user guide:
-
-_Document Conventions_
 
 <table>
 <tr>
@@ -115,25 +112,24 @@ Because the Grid control is cell based, it doesn’t have any internal data stru
 
 ![](Overview_images/Overview_img4.png)
 
-
+Virtual Grid
+{:.caption}
 
 #### Data Presentation and Formatting
 
 The Grid control supports many cell types to present data. In addition to built-in cell types, any WPF control or any custom control can be placed inside a cell by using a data-template cell.
 
-
-
 ![](Overview_images/Overview_img5.png)
 
-
+Various Cell Types of the Grid Control
+{:.caption}
 
 The Grid control’s appearance can be customized very easily. Common style properties include options to change background or text color, font, alignment, orientation, border, and wrap text. Various cell formats include date-time, currency, numeric, and text formats, and Excel-like comments are supported.
 
+![](Overview_images/Overview_img6.png)
 
-
-![D:/OS/features/Documentation/Images/VJ.PNG](Overview_images/Overview_img6.png)
-
-
+Customization Possibilities of the Grid Control
+{:.caption}
 
 * Excel-Like Behaviors: The Grid control supports most Excel behaviors, including the following:
 * Various Cell Support: Cells in the Grid control are very similar to Excel cells. Unique cells such as covered cells and floating cells are supported.
@@ -151,16 +147,12 @@ The Grid control’s appearance can be customized very easily. Common style prop
 * CTRL+X, CTRL+V, CTRL+C, INSERT & DELETE – For common clipboard operations.
 * Cell Selection – The Grid control also supports Excel-like cell selection.
 
-
-
 ![](Overview_images/Overview_img7.png)
 
-
+Excel Features of the Grid Control
+{:.caption}
 
 #### Excel Compatibility
 
 * Import Options: The import feature allows an Excel workbook to be imported into a grid while preserving the workbook’s look and feel. The following items can be imported: entire spreadsheets, formulas, styles, conditional formats, frozen panes, backgrounds, foregrounds, and comments.
 * Export Options: The Grid control provides inherent support for exporting content to Excel files (.xls and .xlsx format) and to .csv files. 
-
-
-

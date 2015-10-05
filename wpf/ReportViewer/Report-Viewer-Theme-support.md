@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Report-Viewer-Theme-support
+title: Report Viewer Theme support | ReportViewer | WPF | Syncfusion
 description: report viewer theme support
 platform: wpf
-control: Report Viewer
+control: ReportViewer
 documentation: ug
 ---
 
@@ -74,10 +74,7 @@ To customize a Report Viewer, you have to modify the following control parts.
 
 The following code example illustrates a Report Viewer control template.
 
-{%highlight xml%}
-
-
-
+{% highlight xml %}
 
 <Style TargetType="local:ReportViewer">
 
@@ -86,8 +83,6 @@ The following code example illustrates a Report Viewer control template.
             <Setter.Value>
 
                 <ControlTemplate TargetType="local:ReportViewer">
-
-
 
                     <Grid x:Name="PART_MainGrid" Height="Auto" Margin="0,0,0,0" Background="Transparent">
 
@@ -106,10 +101,8 @@ The following code example illustrates a Report Viewer control template.
                             <RowDefinition Name="PART_loadingIndicatorRow" Height="0"/>
 
                         </Grid.RowDefinitions>
-
-
-
-                        <!--Toolbar-->
+						
+						<!--Toolbar-->
 
                         <StackPanel Name="PART_toolBar" Height="28" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="0">
 
@@ -130,14 +123,10 @@ The following code example illustrates a Report Viewer control template.
                                     <GradientStop Color="#FFD4DBEB" Offset="0.503"/>
 
                                 </LinearGradientBrush>
-
-
-
-                            </StackPanel.Background>
-
-
-
-                            <!--Print-->
+								
+							</StackPanel.Background>
+							
+							<!--Print-->
 
                             <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonPrint" Width="22" Height="22" ToolTip="{x:Static prop:Resources.menuItemPrint}" IsEnabled="False" Margin="2,3,2,3" >
 
@@ -172,14 +161,10 @@ The following code example illustrates a Report Viewer control template.
                                 <!--PrintDisabled-->
 
                             </Button>
-
-
-
-                            <ComboBox Name="PART_exportControl" Height="22" Width="35" Style="{StaticResource ExportComboBox}" ItemContainerStyle="{StaticResource ItemTemplate}" IsEnabled="False" ToolTip="Export" />
-
-
-
-                            <Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6">
+							
+							<ComboBox Name="PART_exportControl" Height="22" Width="35" Style="{StaticResource ExportComboBox}" ItemContainerStyle="{StaticResource ItemTemplate}" IsEnabled="False" ToolTip="Export" />
+							
+							<Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6">
 
                                 <Rectangle.Fill>
 
@@ -194,10 +179,8 @@ The following code example illustrates a Report Viewer control template.
                                 </Rectangle.Fill>
 
                             </Rectangle>
-
-
-
-                            <!--Navigates to First-->
+							
+							<!--Navigates to First-->
 
                             <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonFirst" ToolTip="{x:Static prop:Resources.menuItemFirst}" Width="22" Height="22" IsEnabled="False" Margin="0,3,0,3" >
 
@@ -232,10 +215,8 @@ The following code example illustrates a Report Viewer control template.
                                 <!--First_NavDisabled-->
 
                             </Button>
-
-
-
-                            <!--Navigates to Previous-->
+							
+							<!--Navigates to Previous-->
 
                             <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonPrevious" Width="22" Height="22" ToolTip="{x:Static prop:Resources.menuItemPrevious}" IsEnabled="False" Margin="2,3,2,3" >
 
@@ -270,26 +251,20 @@ The following code example illustrates a Report Viewer control template.
                                 <!--Previous_NavDisabled-->
 
                             </Button>
-
-
-
-                            <!--Current Page-->
+							
+							<!--Current Page-->
 
                             <TextBox Name="PART_textBoxCurrentPage" Width="60" Height="22" IsReadOnly="False" IsEnabled="False" BorderBrush="Gray" Margin="2,3,2,3" >
 
                             </TextBox>
 
                             <TextBlock Name="PART_labelOf" Width="Auto" VerticalAlignment="Center" Foreground="Black" Margin="2,3,5,3">of</TextBlock>
-
-
-
-                            <!--Total number of pages-->
+							
+							<!--Total number of pages-->
 
                             <TextBlock Name="PART_textBoxTotalPages" Width="Auto" xml:space="preserve" IsEnabled="false" Margin="2,3,5,3" VerticalAlignment="Center" Foreground="Black" TextAlignment="Center" HorizontalAlignment="Center"/>
 
-
-
-                            <!--Navigates to Next-->
+							<!--Navigates to Next-->
 
                             <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonNext" Width="22" Height="22" ToolTip="{x:Static prop:Resources.menuItemNext}" IsEnabled="False" Margin="2,3,2,3" >
 
@@ -324,10 +299,8 @@ The following code example illustrates a Report Viewer control template.
                                 <!--Next_NavDisabled-->
 
                             </Button>
-
-
-
-                            <!--Navigates to Last-->
+							
+							<!--Navigates to Last-->
 
                             <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonLast" Width="22" Height="22" ToolTip="{x:Static prop:Resources.menuItemLast}" IsEnabled="False" Margin="2,3,2,3" >
 
@@ -362,20 +335,16 @@ The following code example illustrates a Report Viewer control template.
                                 <!--Last_NavDisabled-->
 
                             </Button>
-
-
-
-                            <!--Back Parent Report-->
+							
+							<!--Back Parent Report-->
 
                             <Button Style="{StaticResource ButtonStyle}" Name="PART_btnback" Width="22" Height="22" ToolTip="{x:Static prop:Resources.toolTipBack}" IsEnabled="True" Margin="2,3,2,3" Visibility="Collapsed">
 
                                 <Image Source="{StaticResource ReportBack}" Stretch="None"/>
 
                             </Button>
-
-
-
-                            <Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6">
+							
+							<Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6">
 
                                 <Rectangle.Fill>
 
@@ -390,10 +359,8 @@ The following code example illustrates a Report Viewer control template.
                                 </Rectangle.Fill>
 
                             </Rectangle>
-
-
-
-                            <!--Zooming-->
+							
+							<!--Zooming-->
 
                             <Border Name="PART_comboBoxExternalBorder" BorderBrush="Gray" Width="70" Height="22" ToolTip="{x:Static prop:Resources.toolTipZoom}" BorderThickness="0" Margin="2,3,2,3">
 
@@ -416,10 +383,8 @@ The following code example illustrates a Report Viewer control template.
                                 </ComboBox>
 
                             </Border>
-
-
-
-                            <!--Prints Layout-->
+							
+							<!--Prints Layout-->
 
                             <ToggleButton Style="{StaticResource ViewerToggleButtonStyle}" Name="PART_buttonPrintLayout" Width="22" Height="22" ToolTip="{x:Static prop:Resources.menuItemPrintLayout}" IsEnabled="False" Margin="2,3,2,3">
 
@@ -454,10 +419,8 @@ The following code example illustrates a Report Viewer control template.
                                 <!--PrintLayoutXDisabled-->
 
                             </ToggleButton>
-
-
-
-                            <!--Prints Setup-->
+							
+							<!--Prints Setup-->
 
                             <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonPageSetup" Width="22" Height="22" ToolTip="{x:Static prop:Resources.toolTipPageSetUp}" IsEnabled="False" Margin="2,3,2,3" Visibility="Visible" >
 
@@ -466,10 +429,8 @@ The following code example illustrates a Report Viewer control template.
                                 <!--PrintSetupDisabled-->
 
                             </Button>
-
-
-
-                            <Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6">
+							
+							<Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6">
 
                                 <Rectangle.Fill>
 
@@ -484,10 +445,8 @@ The following code example illustrates a Report Viewer control template.
                                 </Rectangle.Fill>
 
                             </Rectangle>
-
-
-
-                            <!--Refresh -->
+							
+							<!--Refresh -->
 
                             <Button Style="{StaticResource ButtonStyle}" Height="22" Width="22" Name="PART_buttonRefresh" ToolTip="{x:Static prop:Resources.menuItemRefresh}" IsEnabled="False" Margin="2,3,2,3">
 
@@ -522,10 +481,8 @@ The following code example illustrates a Report Viewer control template.
                                 <!--RefreshDisabled-->
 
                             </Button>
-
-
-
-                            <!--Shows/Hides Document map-->
+							
+							<!--Shows/Hides Document map-->
 
                             <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonShowOrHideDocumentMap" Width="22" ToolTip="{x:Static prop:Resources.menuItemShowHide}" IsEnabled="False" Visibility="Collapsed" Margin="2,3,2,3">
 
@@ -534,10 +491,8 @@ The following code example illustrates a Report Viewer control template.
                                 <!--ShowHideDisabled-->
 
                             </Button>
-
-
-
-                            <!--Parameterised query-->
+							
+							<!--Parameterised query-->
 
                             <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonParameters" Width="22" Height="22" ToolTip="{x:Static prop:Resources.toolTipParameters}" IsEnabled="False" Visibility="Collapsed" Margin="2,3,2,3" Background="Transparent" >
 
@@ -572,10 +527,8 @@ The following code example illustrates a Report Viewer control template.
                                 <!--ParametersDisabled-->
 
                             </Button>
-
-
-
-                            <Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6">
+							
+							<Rectangle HorizontalAlignment="Center"  Height="21.599" VerticalAlignment="Center" Width="1.6">
 
                                 <Rectangle.Fill>
 
@@ -591,13 +544,9 @@ The following code example illustrates a Report Viewer control template.
 
                             </Rectangle>
 
-
-
-                            <TextBox Name="PART_textBoxFind" Width="60" Height="22" xml:space="preserve" IsEnabled="False" BorderBrush="Gray" ToolTip="{x:Static prop:Resources.toolTipFindTextBox}" Margin="2,3,2,3" Visibility="Collapsed"/>
-
-
-
-            <!--Find-->
+							<TextBox Name="PART_textBoxFind" Width="60" Height="22" xml:space="preserve" IsEnabled="False" BorderBrush="Gray" ToolTip="{x:Static prop:Resources.toolTipFindTextBox}" Margin="2,3,2,3" Visibility="Collapsed"/>
+							
+			<!--Find-->
 
             <Button Style="{StaticResource ButtonStyle}" Name="PART_buttonFind" Width="22" Height="22" ToolTip="{x:Static prop:Resources.toolTipFind}" IsEnabled="False" Visibility="Collapsed" Margin="2,3,2,3">
 
@@ -635,9 +584,7 @@ The following code example illustrates a Report Viewer control template.
 
         </StackPanel>
 
-
-
-                        <!-- DataSoruce Credential Prompt -->
+		                <!-- DataSoruce Credential Prompt -->
 
                         <Grid Grid.Row="1" FlowDirection="LeftToRight">
 
@@ -682,12 +629,8 @@ The following code example illustrates a Report Viewer control template.
                             </ScrollViewer>
 
                         </Grid>
-
-
-
-
-
-                        <Grid Grid.Row="2" FlowDirection="LeftToRight">
+						
+						<Grid Grid.Row="2" FlowDirection="LeftToRight">
 
                             <!--Parameter prompt panel-->
 
@@ -748,10 +691,8 @@ The following code example illustrates a Report Viewer control template.
                             </ScrollViewer>
 
                         </Grid>
-
-
-
-                        <Grid Name="PART_gridRenderingRegion" Grid.Row="3" Height="Auto" Margin="0,0,0,0" FlowDirection="LeftToRight">
+						
+						<Grid Name="PART_gridRenderingRegion" Grid.Row="3" Height="Auto" Margin="0,0,0,0" FlowDirection="LeftToRight">
 
                             <Grid>
 
@@ -779,7 +720,7 @@ The following code example illustrates a Report Viewer control template.
 
                                     <TextBlock Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="23" Margin="10,7,10,0" Width="730">
 
-                        Report Viewer encountered some issues loading this report. Please click <Hyperlink x:Name="PART_hyperlink">here </Hyperlink>  to see details of the issues.
+                                    Report Viewer encountered some issues loading this report. Please click <Hyperlink x:Name="PART_hyperlink">here </Hyperlink>  to see details of the issues.
 
                                     </TextBlock>
 
@@ -860,14 +801,10 @@ The following code example illustrates a Report Viewer control template.
                                 </Grid>
 
                             </Grid>
-
-
-
-                        </Grid>
-
-
-
-                        <Grid x:Name="PART_gridException" Grid.Row="4" Background="White" Visibility="Collapsed" FlowDirection="LeftToRight">
+							
+						</Grid>
+						
+						<Grid x:Name="PART_gridException" Grid.Row="4" Background="White" Visibility="Collapsed" FlowDirection="LeftToRight">
 
                             <StackPanel  Orientation="Vertical" HorizontalAlignment="Center">
 
@@ -904,10 +841,8 @@ The following code example illustrates a Report Viewer control template.
                             </StackPanel>
 
                         </Grid>
-
-
-
-                        <Grid x:Name="PART_gridLoadingIndicator" Grid.Row="5" Background="White" Visibility="Collapsed" FlowDirection="LeftToRight">
+						
+						<Grid x:Name="PART_gridLoadingIndicator" Grid.Row="5" Background="White" Visibility="Collapsed" FlowDirection="LeftToRight">
 
                             <loading:LoadingIndicator></loading:LoadingIndicator>
 
@@ -936,8 +871,5 @@ The following code example illustrates a Report Viewer control template.
             </Setter.Value>
 
         </Setter>
-
 </Style>
-
-
 {%endhighlight%}
