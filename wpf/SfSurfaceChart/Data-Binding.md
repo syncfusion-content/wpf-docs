@@ -1,6 +1,6 @@
 ﻿# Data Binding 
 
-In surface chart we should be apply data in grid table format, which contains the number of rows and columns as shown in the below table. 
+In surface chart, you cane apply data in a grid table format, that contains the number of rows and columns as shown in the following table. 
 
 <table>
 <tr>
@@ -39,16 +39,16 @@ Yn1<br/><br/></td><td>
 Yn2<br/><br/></td><td>
 Ynn<br/><br/></td></tr>
 </table>
-We can apply the data in surface in two ways. 
+You can apply the data in surface in two ways. 
 
 * Using ItemsSource property 
 * Directly passing value through Data.AddPoints method.
 
 ### Using ItemsSource
 
-We have to bind the IEnumerable collection property to surface chart ItemsSource property. That property each items holds the model properties which are used to map surface XBindingPath, YBindingPath and ZBindingPath property. 
+You can bind the IEnumerable collection property to surface chart ItemsSource property. Each item holds the model properties used to map surface XBindingPath, YBindingPath and ZBindingPath property. 
 
-Also we need to set given data row and column size to surface chart RowSize and ColumnSize Property. 
+Also you must set the given data row and column size to surface chart RowSize and ColumnSize Property. 
 
 {% highlight C# %}
 
