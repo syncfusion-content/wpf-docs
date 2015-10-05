@@ -65,8 +65,6 @@ The following set of instructions illustrates the same.
 
    Syncfusion Assemblies referenced in the WPF Application
 
-
-
 2.Create a console project as shown below.
 
 {% tabs %}
