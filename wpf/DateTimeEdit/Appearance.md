@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance
+title: Appearance  | DateTimeEdit | wpf | Syncfusion 
 description: appearance     
 platform: wpf
 control: DateTimeEdit
@@ -21,6 +21,3 @@ The appearance of the DateTimeEdit control can be customized by using the Visual
 * SyncOrange
 * VS2010
 * Transparent
-
-
-

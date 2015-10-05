@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Symbology-Settings
+title: Symbology Settings | SfBarcode | wpf | Syncfusion
 description: symbology settings
 platform: wpf
 control: SfBarcode
@@ -10,8 +10,8 @@ documentation: ug
 # Symbology Settings
 
 Each Barcode symbol can be associated with optional settings that may affect that specific bar code. The code sample below shows the settings of a code39 Barcode.
-{% highlight html %}
 
+{% highlight html %}
 
 <sync:SfBarcode.SymbologySettings>
 
@@ -24,8 +24,8 @@ Each Barcode symbol can be associated with optional settings that may affect tha
 ## 1D Barcode settings
 
 The one dimensional barcodes have some of the settings in common, such as BarHeight which modifies the height of the bars and NarrowBarWidth which modifies the width ratio of the wide and narrow bars.
-{% highlight html %}
 
+{% highlight html %}
 
 <sync:SfBarcode.SymbologySettings>
 
@@ -35,11 +35,12 @@ The one dimensional barcodes have some of the settings in common, such as BarHei
 
 
 {% endhighlight  %}
+
 The one dimensional barcodes also has the error detection settings. The EnableCheckDigit property enables the redundancy check using a check digit, the decimal equivalent of a binary parity bit. It consists of a single digit computed from the other digits in the message. The check digit can be shown in the barcode or kept hidden by using the ShowCheckDigit property.
 
 The EncodeStartStopSymbols property adds Start and Stop symbols to signal a bar code reader that a bar code has been scanned.
-{% highlight html %}
 
+{% highlight html %}
 
 <sync:SfBarcode.SymbologySettings>
 
@@ -56,15 +57,14 @@ The two dimensional barcodes have a common XDimension property which modifies th
 ### DataMatrix Barcode settings
 
 The DataMatrix barcode settings has the properties to modify the encoding and size of the DataMatrix barcode.
-{% highlight html %}
 
+{% highlight html %}
 
 <sync:SfBarcode.SymbologySettings>
 
          <sync:DataMatrixSetting XDimension="8" Encoding="ASCIINumeric” Size="Size104x104" />
 
 </sync:SfBarcode.SymbologySettings>
-
 
 {% endhighlight  %}
 
@@ -218,15 +218,14 @@ Rectangular matrix with 16 rows and 48 columns.</td></tr>
 ### QRBarcode settings
 
 The QRBarcode settings has properties to modify the version, error correction level and Input mode of the QRBarcode.
-{% highlight html %}
 
+{% highlight html %}
 
 <sync:SfBarcode.SymbologySettings>
 
-         <sync:QRBarcodeSetting XDimension="8" ErrorCorrectionLevel="High” InputMode="BinaryMode”  Version="Auto" />
+    <sync:QRBarcodeSetting XDimension="8" ErrorCorrectionLevel="High” InputMode="BinaryMode”  Version="Auto" />
 
 </sync:SfBarcode.SymbologySettings>
-
 
 {% endhighlight  %}
 
@@ -288,7 +287,3 @@ Alphanumeric Mode</td><td>
 Binary Mode</td><td>
 Shift JIS characters</td></tr>
 </table>
-
-
-
-

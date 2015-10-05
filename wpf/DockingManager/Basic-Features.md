@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic-Features
+title: Basic Features | DockingManager | wpf | Syncfusion
 description: basic features
 platform: wpf
 control: DockingManager
@@ -17,55 +17,92 @@ States of child is nothing but a different appearance of the DockingManager chil
 
 Dock State is a state which represents the child as Dock Window as shown below:
 
+{% tabs %}
 
+{% highlight xaml %}
 
-{% highlight html %}
-<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.State="Dock"   syncfusion:DockingManager.Header="Dock Window"/></syncfusion:DockingManager>
+<syncfusion:DockingManager>
+
+<Grid Name="grid1" syncfusion:DockingManager.State="Dock"   syncfusion:DockingManager.Header="Dock Window"/>
+
+</syncfusion:DockingManager>
+
 {% endhighlight  %}
+
 {% highlight c# %}
-DockingManager.SetHeader(grid1,"Dock Window");DockingManager.SetState(grid1, DockState.Dock);
+
+DockingManager.SetHeader(grid1,"Dock Window");
+
+DockingManager.SetState(grid1, DockState.Dock);
+
 {% endhighlight %}
 
+{% endtabs %} 
 
-![C:/Users/Hemanth/Desktop/Documentation/Images/DockingWindow.jpg](Basic-Features_images/Basic-Features_img1.jpeg)
 
 
+![](Basic-Features_images/Basic-Features_img1.jpeg)
 
 ### Float State:
 
 Float State displays the child in FloatWindow as shown below:
 
-
-
-{% highlight html %}
-<syncfusion:DockingManager>   <Grid Name="grid1" syncfusion:DockingManager.State="Float"/></syncfusion:DockingManager>
-{% endhighlight  %}
-{% highlight c# %}
-DockingManager.SetState(grid1, DockState.Float);
-{% endhighlight  %}
-
-
-![C:/Users/Hemanth/Desktop/Documentation/Images/FloatState.jpg](Basic-Features_images/Basic-Features_img2.jpeg)
+{% tabs %}
 
 
 
-Auto Hidden State:
+{% endtabs %} 
+
+
+![](Basic-Features_images/Basic-Features_img2.jpeg)
+
+### Auto Hidden State:
 
 Auto hidden state hides the children in one of the side panels available with the DockingManager.
 
+{% tabs %}
 
+{% highlight xaml %}
 
-{% highlight html %}
-<syncfusion:DockingManager>   <Grid Name="grid1" syncfusion:DockingManager.State="AutoHidden"/></syncfusion:DockingManager>
+<syncfusion:DockingManager>   
+
+<Grid Name="grid1" syncfusion:DockingManager.State="Float"/>
+
+</syncfusion:DockingManager>
+
 {% endhighlight  %}
+
 {% highlight c# %}
-DockingManager.SetState(grid1, DockState.AutoHidden);
+
+DockingManager.SetState(grid1, DockState.Float);
+
 {% endhighlight  %}
 
+{% endtabs %} 
 
-![C:/Users/Hemanth/Desktop/Documentation/Images/FloatState.jpg](Basic-Features_images/Basic-Features_img3.jpeg)
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:DockingManager>   
+
+	<Grid Name="grid1" syncfusion:DockingManager.State="AutoHidden"/>
+
+</syncfusion:DockingManager>
+
+{% endhighlight  %}
+
+{% highlight c# %}
+
+DockingManager.SetState(grid1, DockState.AutoHidden);
+
+{% endhighlight  %}
+
+{% endtabs %} 
 
 
+
+![](Basic-Features_images/Basic-Features_img3.jpeg)
 
 ### Document State Child
 
@@ -78,37 +115,77 @@ Document State Child can be of two types.
 
 You can create MDI Documents by specifying ContainerMode to MDI as a child state,and as Document , as shown below.
 
+{% tabs %}
 
+{% highlight xaml %}
 
-{% highlight html %}
-<syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="MDI"><Grid Name="grid1" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.Header="MDI"/></syncfusion:DockingManager>
+<syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="MDI"><Grid Name="grid1" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.Header="MDI"/>
+
+</syncfusion:DockingManager>
+
 {% endhighlight %}
+
 {% highlight c# %}
- DockingManager manager=new DockingManager();manager.UseDocumentContainer = true;manager.ContainerMode = DocumentContainerMode.MDI;Grid child=new Grid();DockingManager.SetHeader(child, "MDI");DockingManager.SetState(child,DockState.Document);manager.Children.Add(child);
+
+ DockingManager manager=new DockingManager();
+ 
+ manager.UseDocumentContainer = true;
+ 
+ manager.ContainerMode = DocumentContainerMode.MDI;
+ 
+ Grid child=new Grid();
+ 
+ DockingManager.SetHeader(child, "MDI");
+ 
+ DockingManager.SetState(child,DockState.Document);
+ 
+ manager.Children.Add(child);
+ 
 {% endhighlight  %}
 
+{% endtabs %} 
 
-![C:/Users/Hemanth/Desktop/Documentation/Images/MDI.jpg](Basic-Features_images/Basic-Features_img4.jpeg)
 
-
+![](Basic-Features_images/Basic-Features_img4.jpeg)
 
 Similarly you can create a TDI Document by specifying ContainerMode as TDI and child state as document.
 
+{% tabs %}
 
+{% highlight xaml %}
 
-{% highlight html %}
-<syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="TDI"><Grid Name="grid1" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.Header="TDI"/></syncfusion:DockingManager>
+<syncfusion:DockingManager UseDocumentContainer="True" ContainerMode="TDI">
+
+	<Grid Name="grid1" syncfusion:DockingManager.State="Document" syncfusion:DockingManager.Header="TDI"/>
+
+</syncfusion:DockingManager>
+
 {% endhighlight %}
+
 {% highlight c# %}
- DockingManager manager=new DockingManager();manager.UseDocumentContainer = true;manager.ContainerMode = DocumentContainerMode.TDI;Grid child=new Grid();DockingManager.SetHeader(child, "TDI");DockingManager.SetState(child,DockState.Document);manager.Children.Add(child);
+
+ DockingManager manager=new DockingManager();
+ 
+ manager.UseDocumentContainer = true;
+ 
+ manager.ContainerMode = DocumentContainerMode.TDI;
+ 
+ Grid child=new Grid();
+ 
+ DockingManager.SetHeader(child, "TDI");
+ 
+ DockingManager.SetState(child,DockState.Document);
+ 
+ manager.Children.Add(child);
+ 
 {% endhighlight  %}
 
-
-![C:/Users/Hemanth/Desktop/Documentation/Images/TDI.jpg](Basic-Features_images/Basic-Features_img5.jpeg)
-
+{% endtabs %} 
 
 
-Refer Also:
+![](Basic-Features_images/Basic-Features_img5.jpeg)
+
+#### Refer Also:
 
 How to Create Docking Manager?
 
@@ -116,21 +193,31 @@ How to Create Docking Manager?
 
 We can achieve the layout that we want using TargetName attached property.  Target names are generally used to specify where the child needs to be docked or floated. The following code shows the usage of TargetNameInDockMode.
 
+{% tabs %}
 
+{% highlight xaml %}
 
-{% highlight html %}
-<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.Header="grid1"/><Grid Name="grid2" syncfusion:DockingManager.Header="grid2" syncfusion:DockingManager.TargetNameInDockedMode="grid1" syncfusion:DockingManager.SideInDockedMode="Bottom"/></syncfusion:DockingManager>
+<syncfusion:DockingManager>
+
+	<Grid Name="grid1" syncfusion:DockingManager.Header="grid1"/>
+
+	<Grid Name="grid2" syncfusion:DockingManager.Header="grid2" syncfusion:DockingManager.TargetNameInDockedMode="grid1" syncfusion:DockingManager.SideInDockedMode="Bottom"/>
+
+</syncfusion:DockingManager>
+
 {% endhighlight  %}
+
 {% highlight c# %}
+
 DockingManager.SetTargetNameInDockedMode(grid2, "grid1");
+
 {% endhighlight  %}
 
+{% endtabs %} 
 
-![C:/Users/Hemanth/Desktop/Documentation/Images/TargetNameInDockMode.jpg](Basic-Features_images/Basic-Features_img6.jpeg)
+![](Basic-Features_images/Basic-Features_img6.jpeg)
 
-
-
-Refer Also:
+#### Refer Also:
 
 How to Create Docking Manager?
 
@@ -138,78 +225,137 @@ How to Create Docking Manager?
 
 SideInDockMode and SideInFloatMode are used to decide the dock side of child with respect to their target names in dock mode and float mode.
 
+{% tabs %}
 
+{% highlight xaml %}
 
-{% highlight html %}
-<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Left" syncfusion:DockingManager.Header="Dock Left"/></syncfusion:DockingManager>
+<syncfusion:DockingManager>
+
+	<Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Left" syncfusion:DockingManager.Header="Dock Left"/>
+
+</syncfusion:DockingManager>
+
 {% endhighlight  %}
+
 {% highlight c# %}
-DockingManager.SetHeader(grid1, "Dock Left");DockingManager.SetSideInDockedMode(grid1, DockSide.Left);
+
+DockingManager.SetHeader(grid1, "Dock Left");
+
+DockingManager.SetSideInDockedMode(grid1, DockSide.Left);
+
 {% endhighlight  %}
 
+{% endtabs %} 
 
-![C:/Users/Hemanth/Desktop/Documentation/Images/DockLeft.jpg](Basic-Features_images/Basic-Features_img7.jpeg)
 
 
+![](Basic-Features_images/Basic-Features_img7.jpeg)
 
 The following code represents child in a Dock right position.
 
+{% tabs %}
 
 
-{% highlight html %}
-<syncfusion:DockingManager>            <Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.Header="Dock Right"/>        </syncfusion:DockingManager>
+
+{% endtabs %} 
+
+
+![](Basic-Features_images/Basic-Features_img8.jpeg)
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:DockingManager>            
+
+	<Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Right" syncfusion:DockingManager.Header="Dock Right"/>        
+
+</syncfusion:DockingManager>
+
 {% endhighlight  %}
+
 {% highlight c# %}
-DockingManager.SetHeader(grid1, "Dock Right");DockingManager.SetSideInDockedMode(grid1, DockSide.Right);
+
+DockingManager.SetHeader(grid1, "Dock Right");
+
+DockingManager.SetSideInDockedMode(grid1, DockSide.Right);
+
 {% endhighlight  %}
-![C:/Users/Hemanth/Desktop/Documentation/Images/DockRight.jpg](Basic-Features_images/Basic-Features_img8.jpeg)
 
+{% endtabs %} 
+{% highlight xaml %}
 
+<syncfusion:DockingManager>
 
+	<Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Top"/>
 
-
-{% highlight html %}
-<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Top"/></syncfusion:DockingManager>
+</syncfusion:DockingManager>
 {% endhighlight  %}
+
 {% highlight c# %}
-DockingManager.SetHeader(grid1, "Dock Top");DockingManager.SetSideInDockedMode(grid1, DockSide.Top);
+
+DockingManager.SetHeader(grid1, "Dock Top");
+
+DockingManager.SetSideInDockedMode(grid1, DockSide.Top);
+
 {% endhighlight %}
 
-
-![C:/Users/Hemanth/Desktop/Documentation/Images/DockTop.jpg](Basic-Features_images/Basic-Features_img9.jpeg)
-
-
+![](Basic-Features_images/Basic-Features_img9.jpeg)
 
 The code below shows child position in a Dock bottom.
 
+{% tabs %}
 
+{% highlight xaml %}
 
-{% highlight html %}
-<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Dock Bottom"/></syncfusion:DockingManager>
+<syncfusion:DockingManager>
+
+	<Grid Name="grid1" syncfusion:DockingManager.SideInDockedMode="Bottom" syncfusion:DockingManager.Header="Dock Bottom"/>
+
+</syncfusion:DockingManager>
+
 {% endhighlight %}
+
 {% highlight c# %}
-DockingManager.SetHeader(grid1, "Dock Bottom");DockingManager.SetSideInDockedMode(grid1, DockSide.Bottom);
+
+DockingManager.SetHeader(grid1, "Dock Bottom");
+
+DockingManager.SetSideInDockedMode(grid1, DockSide.Bottom);
+
 {% endhighlight  %}
 
-
-![C:/Users/Hemanth/Desktop/Documentation/Images/DockBottom.jpg](Basic-Features_images/Basic-Features_img10.jpeg)
-
+{% endtabs %} 
 
 
+![](Basic-Features_images/Basic-Features_img10.jpeg)
 
-{% highlight html %}
-<syncfusion:DockingManager><Grid Name="grid1" syncfusion:DockingManager.Header="grid1"/><Grid Name="grid2" syncfusion:DockingManager.TargetNameInDockedMode="grid1" syncfusion:DockingManager.Header="grid2" syncfusion:DockingManager.SideInDockedMode="Tabbed" /></syncfusion:DockingManager>
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:DockingManager>
+
+	<Grid Name="grid1" syncfusion:DockingManager.Header="grid1"/>
+	
+	<Grid Name="grid2" syncfusion:DockingManager.TargetNameInDockedMode="grid1" syncfusion:DockingManager.Header="grid2" syncfusion:DockingManager.SideInDockedMode="Tabbed" />
+
+	</syncfusion:DockingManager>
+	
 {% endhighlight  %}
+
 {% highlight c# %}
-DockingManager.SetTargetNameInDockedMode(grid2, "grid1");DockingManager.SetSideInDockedMode(grid2, DockSide.Tabbed);
+
+DockingManager.SetTargetNameInDockedMode(grid2, "grid1");
+
+DockingManager.SetSideInDockedMode(grid2, DockSide.Tabbed);
+
 {% endhighlight  %}
 
-
-![C:/Users/Hemanth/Desktop/Documentation/Images/DockTabbed.jpg](Basic-Features_images/Basic-Features_img11.jpeg)
-
+{% endtabs %} 
 
 
-Refer Also:
+![](Basic-Features_images/Basic-Features_img11.jpeg)
+
+#### Refer Also:
 
 How to Create Docking Manager?
-

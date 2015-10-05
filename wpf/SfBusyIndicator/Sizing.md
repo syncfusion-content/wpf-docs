@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sizing
+title: Sizing | Busy Indicator | wpf | Syncfusion
 description: sizing
 platform: wpf
 control: Busy Indicator
@@ -17,7 +17,7 @@ The ViewBoxHeight property allows the user to set the height of the ViewBox.
 
 ViewBoxWidth property allows the user to set the width of the ViewBox.
 
-![C:/Users/ApoorvahR/Desktop/4.png](Sizing_images/Sizing_img1.png)
+![](Sizing_images/Sizing_img1.png)
 
-
-_Busy Indicator with height and width_
+Busy Indicator with height and width
+{:.caption}

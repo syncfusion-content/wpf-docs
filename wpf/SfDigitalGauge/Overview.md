@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview
+title: Overview | SfDigitalGauge  | wpf | Syncfusion
 description: overview
 platform: wpf
-control: Digital Gauge 
+control: SfDigitalGauge 
 documentation: ug
 ---
 

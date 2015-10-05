@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles-and-Templates
+title: Styles and Templates | ChromelessWindow | wpf | Syncfusion
 description: styles and templates
 platform: wpf
 control: ChromelessWindow
@@ -16,10 +16,8 @@ This section deals with the following Styles and Templates supported by Chromele
 ChromelessWindow enables you to write your own templates for the TitleBar. The TitleBarTemplate property is used to apply this custom template to the TitleBar.
 
 The following code snippet illustrates how to set the TitleBarTemplate property.
+
 {% highlight html %}
-
-
-
 
 <shared:ChromelessWindow x:Class="TestChromeless.Window1"
 
@@ -38,10 +36,8 @@ TitleBarTemplate="{StaticResource TemplateKey}">
 {% endhighlight  %}
 
 For example, use the following code for a TitleBarTemplate.
+
 {% highlight html %}
-
-
-
 
 <ControlTemplate x:Key="TemplateKey" TargetType="{x:Type shared:TitleBar}">
 
@@ -59,10 +55,6 @@ For example, use the following code for a TitleBarTemplate.
 
 ![](Styles-and-Templates_images/Styles-and-Templates_img1.jpeg)
 
-
-
-
-
 ![](Styles-and-Templates_images/Styles-and-Templates_img2.jpeg)
 
 
@@ -72,10 +64,8 @@ For example, use the following code for a TitleBarTemplate.
 ChromelessWindow enables you to write your own templates for the Minimize button that is used in the TitleBar. MinimizeButtonTemplate property is used to apply the custom template for the Minimize button of the TitleBar.
 
 The following code snippet illustrates how to set the MinimizeButtonTemplate property.
+
 {% highlight html %}
-
-
-
 
 <shared:ChromelessWindow x:Class="TestChromeless.Window1"
 
@@ -87,17 +77,13 @@ xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared
 
 Title="ChromelessWindowTestSample"  Height="300" Width="300"  MinimizeButtonTemplate="{StaticResource  MinTemplateKey}">
 
-
-
 </ shared:ChromelessWindow>
 
 {% endhighlight %}
 
 For example, use the following code for a MinimizeButtonTemplate.
+
 {% highlight html %}
-
-
-
 
 <!--Sample code for the Control Template-->
 
@@ -120,10 +106,8 @@ For example, use the following code for a MinimizeButtonTemplate.
 ChromelessWindow enables you to write your own templates for the Maximize button that is used in the TitleBar. MaximizeButtonTemplate property is used to apply the template for the Maximize button of the TitleBar.
 
 The following code snippet illustrates how to set the MaximizeButtonTemplate property.
+
 {% highlight html %}
-
-
-
 
 <shared:ChromelessWindow x:Class="TestChromeless.Window1"
 
@@ -135,17 +119,13 @@ xmlns:shared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared
 
 Title="ChromelessWindowTestSample"  Height="300" Width="300"  MaximizeButtonTemplate="{StaticResource  MaxTemplateKey}">
 
-
-
 </ shared:ChromelessWindow>
 
 {% endhighlight %}
 
 For example, use the following code for a MaximizeButtonTemplate.
+
 {% highlight html %}
-
-
-
 
 <!--Sample code for the Control Template-->
 
@@ -168,10 +148,8 @@ For example, use the following code for a MaximizeButtonTemplate.
 ChromelessWindow enables you to write your own template for the Restore button in the TitleBar. RestoreButtonTemplate property is used to apply the template for the Restore button.
 
 To set the RestoreButtonTemplate property, use the below code
+
 {% highlight html %}
-
-
-
 
 <shared:ChromelessWindow x:Class="TestChromeless.Window1"
 
@@ -188,10 +166,8 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  RestoreButtonTempl
 {% endhighlight  %}
 
 For example, use the following code for a RestoreButtonTemplate.
+
 {% highlight html %}
-
-
-
 
 <!--Sample code for the Control Template-->
 
@@ -214,10 +190,8 @@ For example, use the following code for a RestoreButtonTemplate.
 ChromelessWindow enables you to write your own templates for the Close button in the TitleBar. CloseButtonTemplate property is used to apply the template for the close button.
 
 To set the CloseButtonTemplate property, use the following code.
+
 {% highlight html %}
-
-
-
 
 <shared:ChromelessWindow x:Class="TestChromeless.Window1"
 
@@ -231,13 +205,11 @@ Title="ChromelessWindowTestSample"  Height="300" Width="300"  CloseButtonTemplat
 
 </ shared:ChromelessWindow>
 
-
 {% endhighlight  %}
+
 For example, use the following code for a CloseButtonTemplate.
+
 {% highlight html %}
-
-
-
 
 <!--Sample code for the Control Template-->
 
@@ -254,4 +226,3 @@ For example, use the following code for a CloseButtonTemplate.
 </ControlTemplate>
 
 {% endhighlight  %}
-

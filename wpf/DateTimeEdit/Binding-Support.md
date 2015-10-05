@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Binding-Support
+title: Binding Support | DateTimeEdit | wpf | Syncfusion
 description: binding support
 platform: wpf
 control: DateTimeEdit
@@ -14,9 +14,7 @@ Data binding is the process of establishing a connection between the application
 The following example shows a simple binding between the DateTime property of the DateTimeEditcontrol and another DateTimeEdit control:
 
 
-
-{% highlight html %}
-
+{% highlight xaml %}
 
 <syncfusion:DateTimeEdit x:Name="dateTimeEdit1" Height="25" Width="220" Margin="10"/><syncfusion:DateTimeEdit x:Name="dateTimeEdit2" Height="25" Width="220"                          DateTime="{Binding ElementName=dateTimeEdit1,                                             Path=DateTime,Mode=TwoWay}"                         Margin="10"/>
 
@@ -25,8 +23,7 @@ The following example shows a simple binding between the DateTime property of th
 ![](Binding-Support_images/Binding-Support_img1.png)
 
 
-
-See Also
+{% seealso %}
 
 Setting Date
 
@@ -34,3 +31,4 @@ NullValue Support
 
 Maximum and Minimum Value
 
+{% endseealso %}

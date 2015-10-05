@@ -1,19 +1,17 @@
 ---
 layout: post
-title: Set-Header-Icon-for-MDI-Window
+title: Set Header Icon for MDI Window | DockingManager | wpf | Syncfusion
 description: set header icon for mdi window
 platform: wpf
 control: DockingManager
 documentation: ug
 ---
 
-## Set Header Icon for MDI Window
+# Set Header Icon for MDI Window
 
 The Icon property is used to specify the icon for Document children. Consider the following code:
 
-
-
-{% highlight html %}
+{% highlight xaml %}
 
 <Window.Resources>
 
@@ -39,33 +37,24 @@ The Icon property is used to specify the icon for Document children. Consider th
 
 </Window.Resources>
 
+<Grid>
 
+	<syncfusion:DockingManager Name="DockingManager" ContainerMode="MDI" UseDocumentContainer="True">
 
-    <Grid>
+		<syncfusion:DockingManager.Icon>
 
-        <syncfusion:DockingManager Name="DockingManager" ContainerMode="MDI"                UseDocumentContainer="True">
+			<ImageBrush ImageSource="{StaticResource closeBlue}"/>
 
-            <syncfusion:DockingManager.Icon>
+		</syncfusion:DockingManager.Icon>
 
-                <ImageBrush ImageSource="{StaticResource closeBlue}"/>
+	<Grid Name="grid1"  syncfusion:DockingManager.State="Document"/>
 
-            </syncfusion:DockingManager.Icon>
+	</syncfusion:DockingManager>
 
-
-
-        <Grid Name="grid1"  syncfusion:DockingManager.State="Document"/>
-
-        </syncfusion:DockingManager>
-
-   </Grid>
+</Grid>
 
 {% endhighlight  %}
 
 In the above code a DrawingImage object is created as a staticresource and assigned to the Icon property of DockingManager. The MDIWindow with the icon on left top corner will be displayed. 
 
-
-
-![C:/Users/Hemanth/Desktop/Documentation/Images/Icon.png](Set-Header-Icon-for-MDI-Window_images/Set-Header-Icon-for-MDI-Window_img1.png)
-
-
-
+![](Set-Header-Icon-for-MDI-Window_images/Set-Header-Icon-for-MDI-Window_img1.png)

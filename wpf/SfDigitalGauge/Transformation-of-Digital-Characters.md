@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Transformation-of-Digital-Characters
+title: Transformation of Digital Characters | SfDigitalGauge  | wpf | Syncfusion
 description: transformation of digital characters
 platform: wpf
-control: Digital Gauge 
+control: SfDigitalGauge
 documentation: ug
 ---
 
@@ -20,81 +20,64 @@ The value of the digital characters is scaled by changing its height and width. 
 
 ### CharacterHeight
 
+{% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
+<syncfusion:SfDigitalGauge Value="SYNCFUSION"  CharacterHeight="70" CharacterType="SegmentFourteen" />
 
-
-
-<syncfusion:SfDigitalGauge Value="SYNCFUSION"  CharacterHeight="70"
-
-                                   CharacterType="SegmentFourteen" />
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
+SfDigitalGauge digitalgauge = new SfDigitalGauge();
 
+digitalgauge.Value = "SYNCFUSION";
 
-            SfDigitalGauge digitalgauge = new SfDigitalGauge();
+digitalgauge.CharacterHeight = 70;
 
-            digitalgauge.Value = "SYNCFUSION";
+digitalgauge.CharacterType = CharacterType.SegmentFourteen;
 
-            digitalgauge.CharacterHeight = 70;
+this.Grid.Children.Add(digitalgauge);
 
-            digitalgauge.CharacterType = CharacterType.SegmentFourteen;
-
-            this.Grid.Children.Add(digitalgauge);
 {% endhighlight %}
 
-
+{% endtabs %}
 
 
 #### Screenshot:
-
-
 
 ![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img1.png)
 
-
-
 ### CharacterWidth
 
+{% tabs %}
 
+{% highlight xaml %}
 
-{% highlight xml %}
+<syncfusion:SfDigitalGauge  Value="SYNCFUSION"  CharacterWidth="60" CharacterType="SegmentFourteen" />
 
-
-<syncfusion:SfDigitalGauge  Value="SYNCFUSION"  CharacterWidth="60"
-
-                                   CharacterType="SegmentFourteen" />
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
+SfDigitalGauge digitalgauge = new SfDigitalGauge();
 
+digitalgauge.Value = "SYNCFUSION";
 
+digitalgauge.CharacterWidth = 60;
 
-            SfDigitalGauge digitalgauge = new SfDigitalGauge();
+digitalgauge.CharacterType = CharacterType.SegmentFourteen;
 
-            digitalgauge.Value = "SYNCFUSION";
+this.Grid.Children.Add(digitalgauge);
 
-            digitalgauge.CharacterWidth = 60;
-
-            digitalgauge.CharacterType = CharacterType.SegmentFourteen;
-
-            this.Grid.Children.Add(digitalgauge);
 {% endhighlight %}
 
+{% endtabs %}
 
 #### Screenshot:
 
-
-
-{{ '![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img2.png)' | markdownify }}
-
-
-
-
+![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img2.png)
 
 ## Skewing
 
@@ -102,79 +85,61 @@ The Digital Gauge also performs skew transformation for the digital characters. 
 
 ### SkewAngleX
 
+{% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
+<syncfusion:SfDigitalGauge  Value="SYNCFUSION"  SkewAngleX="35" CharacterType="SegmentFourteen" />
 
-      <syncfusion:SfDigitalGauge  Value="SYNCFUSION"  SkewAngleX="35"
-
-                                   CharacterType="SegmentFourteen" />
 {% endhighlight %}
 
 
-{% highlight C# %}
+{% highlight c# %}
 
+SfDigitalGauge digitalgauge = new SfDigitalGauge();
 
+digitalgauge.Value = "SYNCFUSION";
 
-            SfDigitalGauge digitalgauge = new SfDigitalGauge();
+digitalgauge.SkewAngleX = 35;
 
-            digitalgauge.Value = "SYNCFUSION";
+digitalgauge.CharacterType = CharacterType.SegmentFourteen;
 
-            digitalgauge.SkewAngleX = 35;
-
-            digitalgauge.CharacterType = CharacterType.SegmentFourteen;
-
-            this.Grid.Children.Add(digitalgauge);
-			
+this.Grid.Children.Add(digitalgauge);
+						
 {% endhighlight %}
 
-
+{% endtabs %}
 
 #### Screenshot:
-
-
 
 ![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img3.png)
 
-
-
-
-
 ### SkewAngleY
 
+{% tabs %}
 
+{% highlight xaml %}
 
-{% highlight xml %}
-
-
-   <syncfusion:SfDigitalGauge  Value="SYNCFUSION"  SkewAngleY="30"
-
-                                   CharacterType="SegmentFourteen" />   
+<syncfusion:SfDigitalGauge  Value="SYNCFUSION"  SkewAngleY="30" CharacterType="SegmentFourteen" />   
 
 {% endhighlight %}
 
+{% highlight c# %}
 
-{% highlight C# %}
+SfDigitalGauge digitalgauge = new SfDigitalGauge();
 
+digitalgauge.Value = "SYNCFUSION";
 
+digitalgauge.SkewAngleY = 30;
 
-            SfDigitalGauge digitalgauge = new SfDigitalGauge();
+digitalgauge.CharacterType = CharacterType.SegmentFourteen;
 
-            digitalgauge.Value = "SYNCFUSION";
+this.Grid.Children.Add(digitalgauge);
 
-            digitalgauge.SkewAngleY = 30;
-
-            digitalgauge.CharacterType = CharacterType.SegmentFourteen;
-
-            this.Grid.Children.Add(digitalgauge);
 {% endhighlight %}
 
+{% endtabs %}
 
 #### Screenshot:
 
-
-
 ![](Transformation-of-Digital-Characters_images/Transformation-of-Digital-Characters_img4.png)
-
-
-
