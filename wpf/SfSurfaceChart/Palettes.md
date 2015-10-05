@@ -2,7 +2,7 @@
 
 Surface chart provides options to apply different kinds of palettes.
 
-We have some predefined palette such as
+Some of the predefined palettes include:
 
 * Metro
 * AutumnBrights
@@ -19,7 +19,7 @@ We have some predefined palette such as
 
 ### Applying Predefined Brushes
 
-Using the above palette we can apply a set of predefined brushes to surface chart as shown in the below code snippet. 
+Using the above palette you can apply a set of predefined brushes to surface chart as shown in the following code example. 
 
 {% highlight xml %}
 
