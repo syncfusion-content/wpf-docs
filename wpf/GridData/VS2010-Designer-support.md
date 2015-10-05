@@ -1,39 +1,31 @@
 ---
 layout: post
-title: VS2010 Designer support  
+title: VS2010 Designer support   | GridData (Classic) | wpf | Syncfusion
 description: VS2010 Designer support  
 platform: wpf
-control: GridDataControl (Classic)
+control: GridData (Classic)
 documentation: ug
 ---
+
 # VS2010 Designer support  
 
 GridDataControl provides rich design time experience by associating a designer. This allows the users to modify the various grid settings to change the look and feel of the grid.
 
 The grid designer is populated with numerous options when ItemsSource assigned to the grid. This enables the users to edit the basic grid properties and the properties of individual column. Changes in any of these properties in the designer have an immediate impact on its XAML code and hence the designer makes the grid more user-friendly.
 
-Activating Designer
+## Activating Designer
 
 1. Open Design window.
+
 2. Right-click on the grid.
-
-
 
    N> An edit menu opens.
 
-
-
    ![](Getting-Started_images/Getting-Started_img149.jpeg)
-
-
 
 3. Select Designer View -> Show Designer. 
 
-
-
    N> Ensure that the grid is assigned with an ItemsSource.
-
-
 
 4. Designer Window is displayed.
 
@@ -42,15 +34,8 @@ Activating Designer
    * Basic Properties - Modify the overall settings of the grid.
    * Visible Columns - Automatically generates a property list for each visible column in the grid.
 
-
-
-
-
    ![](Getting-Started_images/Getting-Started_img150.jpeg)
 
-   {:.prettyprint}
-
-   
 ## Basic Properties
 
 This option enables the users to modify the overall settings of the grid. The properties are categorized into three types:
@@ -59,13 +44,7 @@ This option enables the users to modify the overall settings of the grid. The pr
 * Row Properties
 * Cell Properties
 
-
-
 ![](Getting-Started_images/Getting-Started_img151.jpeg)
-
-
-
-
 
 ## Column Properties 
 
@@ -73,11 +52,7 @@ This section explores the various column options such as Auto Populate Columns, 
 
 1. Select as you require in this list.
 
-
-
 ![](Getting-Started_images/Getting-Started_img152.jpeg)
-
-
 
 ## Row Properties
 
@@ -88,16 +63,11 @@ Select as you require in this list.
 ![](Getting-Started_images/Getting-Started_img153.jpeg)
 
 
-
-
-
 ## Cell Properties
 
 This section explores cell level properties such as Allow Edit, Show Error Tooltips, Show Tooltips, Allow Selection combo box, Activate Current Cell Behavior combo box and Visual Style combo box.
 
 ![](Getting-Started_images/Getting-Started_img154.jpeg)
-
-
 
 Select as you require in this list.
 
@@ -110,38 +80,23 @@ This section automatically generates a property list for each visible column in 
 
 ## Generate Columns
 
-Clear Columns
-
-
+### Clear Columns
 
 ![](Getting-Started_images/Getting-Started_img155.jpeg)
-
-
-
 
 
 ## Generate Columns
 
 1. Click Generate Columns to populate the properties for each visible column. 
+   
    N> Property list for visible column in the grid displays.
-
-
 
    ![](Getting-Started_images/Getting-Started_img156.jpeg)
 
 
-
-
-
 2. Select as you require. 
 
-
-
    ![](Getting-Started_images/Getting-Started_img157.jpeg)
-
-
-
-   {:.prettyprint}
 
 ## Special Cell Types
 
@@ -149,11 +104,6 @@ This combo box lists the various possible cell types applicable to the column. I
 
 ![](Getting-Started_images/Getting-Started_img158.jpeg)
 
-
-
 ## Clear Columns
 
 Click Clear Columns to clear the visible column settings.
-
-
-

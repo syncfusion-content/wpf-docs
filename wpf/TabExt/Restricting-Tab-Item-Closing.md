@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Restricting-Tab-Item-Closing
+title: Restricting Tab Item Closing | TabControlExt | wpf | Syncfusion
 description: restricting tab item closing
 platform: wpf
 control: TabControlExt
@@ -13,10 +13,9 @@ The closure of TabItem can now be restricted by setting e.Cancel to true in OnCl
 
 The following code illustrates the same.
 
+{% tabs %}
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <syncfusion:TabControlExt  OnCloseButtonClick="OnCloseButtonClick" >
 
@@ -27,11 +26,10 @@ The following code illustrates the same.
         <Grid syncfusion:TabControlExt.Header="Tab3" />
 
 </syncfusion:TabControlExt>
+
 {% endhighlight %}
 
 {% highlight c# %}
-
-
 
 private void SelectedItemChangedEvent(object sender, CloseTabEventArgs e)
 
@@ -46,6 +44,7 @@ private void SelectedItemChangedEvent(object sender, CloseTabEventArgs e)
     }      
 
 }
+
 {% endhighlight %}
 
-
+{% endtabs %}

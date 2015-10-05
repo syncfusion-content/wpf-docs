@@ -1,37 +1,60 @@
-﻿# Surface Axis
+---
+layout: post
+title: Surface Axis | SfSurfaceChart | wpf | Syncfusion
+description: Surface Axis
+platform: wpf
+control: SfSurfaceChart
+documentation: ug
+---
+
+# Surface Axis
 
 SurfaceAxis is used to locate a data point inside the surface area. In surface, you require three axis to locate data points, such as X-Axis, Y-Axis and Z-Axis. You can define axis in surface using the following code example. If you do not define the axis, then it automatically takes the default axis with default properties values.
 
 XAML:
 
-{% highlight xml %}
+{% tabs %}
+
+{% highlight xaml %}
 
 <chart:SfSurfaceChart>
-     <chart:SfSurfaceChart.XAxis>
-         <chart:SurfaceAxis  />
-     </chart:SfSurfaceChart.XAxis>
 
-     <chart:SfSurfaceChart.YAxis>
-         <chart:SurfaceAxis />
-     </chart:SfSurfaceChart.YAxis>
+	<chart:SfSurfaceChart.XAxis>
+	
+		<chart:SurfaceAxis  />
+		
+	</chart:SfSurfaceChart.XAxis>
 
-     <chart:SfSurfaceChart.ZAxis>
-         <chart:SurfaceAxis />
-     </chart:SfSurfaceChart.ZAxis>
+	<chart:SfSurfaceChart.YAxis>
+	
+		<chart:SurfaceAxis />
+		
+	</chart:SfSurfaceChart.YAxis>
+
+	<chart:SfSurfaceChart.ZAxis>
+	
+		<chart:SurfaceAxis />
+		
+	</chart:SfSurfaceChart.ZAxis>
+	
 <chart:SfSurfaceChart />
 	
 {% endhighlight %}
 
-C#:
-
 {% highlight c# %}
 
 SfSurfaceChart surface = new SfSurfaceChart();
+
 surface.XAxis = new SurfaceAxis();
+
 surface.YAxis = new SurfaceAxis();
+
 surface.ZAxis = new SurfaceAxis();
 	
 {% endhighlight %}
+
+{% endtabs %}
+
 
 The following APIs are used to customize the surface axis. 
 
@@ -39,9 +62,9 @@ The following APIs are used to customize the surface axis.
 
 <table>
 <tr>
-<td>
-******Name******<br/><br/></td><td>
-******Definition** ****<br/><br/></td></tr>
+<th>
+Name</th><th>
+Definition</th></tr>
 <tr>
 <td>
 Header<br/><br/></td><td>

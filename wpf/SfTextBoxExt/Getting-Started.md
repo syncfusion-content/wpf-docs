@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | SfTextBoxExt | wpf | Syncfusion
 description: getting started
 platform: wpf
-control: TextBoxExt
+control: SfTextBoxExt
 documentation: ug
 ---
 
 # Getting Started
 
 Namespace:  Syncfusion.Windows.Controls.Input
+
 Assembly:  Syncfusion.SfInput.WPF (in Syncfusion.SfInput.WPF.dll) 
 
 The following code sample shows how to create the TextBoxExt from code-behind and XAML:
 
+{% tabs %}
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syncfusion.SfInput.Wpf"
 
@@ -34,11 +34,13 @@ Page xmlns:editors="clr-namespace:Syncfusion.Windows.Controls.Input;assembly=Syn
     </Grid>
 
 </Page>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfTextBoxExt textBox = new SfTextBoxExt();
+
 {% endhighlight %}
 
-
+{% endtabs %}

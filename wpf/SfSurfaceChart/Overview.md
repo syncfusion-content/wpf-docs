@@ -1,4 +1,13 @@
-﻿# Overview
+---
+layout: post
+title: Overview | SfSurfaceChart | wpf | Syncfusion
+description: overview
+platform: wpf
+control: SfSurfaceChart
+documentation: ug
+---
+
+# Overview
 
 Essential Surface Chart shows a three-dimensional surface that connects a set of data points.  
 

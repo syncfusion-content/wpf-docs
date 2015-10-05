@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TabItemValidation-Support
+title: TabItemValidation Support | TabControlExt | wpf | Syncfusion
 description: tabitemvalidation support
 platform: wpf
 control: TabControlExt
@@ -13,10 +13,9 @@ TabItem now allows you cancel the selection of a tab item by setting e.Cancel=tr
 
 The following code illustrates the same.
 
+{% tabs %}
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <syncfusion:TabControlExt  SelectedItemChangedEvent="SelectedItemChanged" >
 
@@ -27,11 +26,10 @@ The following code illustrates the same.
             <Grid syncfusion:TabControlExt.Header="Tab3" />
 
 </syncfusion:TabControlExt>
+
 {% endhighlight %}
 
 {% highlight c# %}
-
-
 
 private void SelectedItemChangedEvent(object sender,SelectedItemChangedEventArgs e)
 
@@ -46,6 +44,7 @@ private void SelectedItemChangedEvent(object sender,SelectedItemChangedEventArgs
     }      
 
 }
+
 {% endhighlight %}
 
-
+{% endtabs %}

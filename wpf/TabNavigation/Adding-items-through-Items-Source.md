@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Adding-items-through-Items-Source
+title: Adding items through Items Source | TabNavigation | wpf | Syncfusion
 description: adding items through items source
 platform: wpf
-control: TabNavigationControl
+control: TabNavigation
 documentation: ug
 ---
 
@@ -19,22 +19,19 @@ Business object collections can be easily bound to the Tab Navigation control us
 
 ## Observable Collection 
 
+{% tabs %}
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <syncfusion:TabNavigationControl TransitionEffect="Slide" ItemsSource="{Binding MyCollection}">
 
 </syncfusion:TabNavigationControl>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-
-
 public partial class MainPage : UserControl
-
 {
 
 public MainPage()
@@ -94,82 +91,76 @@ public static readonly DependencyProperty MyCollectionProperty =
 DependencyProperty.Register("MyCollection", typeof(ObservableCollection<TabNavigationItem>), typeof(MainPage), new PropertyMetadata(null));
 
 }
+
 {% endhighlight %}
 
 {% highlight vbnet %}
 
-
-
-
-
 Partial Public Class MainPage
 
-        Inherits UserControl
+Inherits UserControl
 
-        Public Sub New()
+    Public Sub New()
 
-            InitializeComponent()
+		InitializeComponent()
 
-            MyCollection = New ObservableCollection(Of String)()
+		MyCollection = New ObservableCollection(Of String)()
 
-            For i As Integer = 0 To 9
+		For i As Integer = 0 To 9
 
-                MyCollection.Add("Item " & i.ToString())
+			MyCollection.Add("Item " & i.ToString())
 
-            Next
+		Next
 
-            LayoutRoot.DataContext = Me
+		LayoutRoot.DataContext = Me
 
-        End Sub
-
-
-
-        Public Property MyCollection() As ObservableCollection(Of String)
-
-            Get
-
-                Return DirectCast(GetValue(MyCollectionProperty), ObservableCollection(Of String))
-
-            End Get
-
-            Set(ByVal value As ObservableCollection(Of String))
-
-                SetValue(MyCollectionProperty, value)
-
-            End Set
-
-        End Property
+	End Sub
 
 
 
-        ' Using a DependencyProperty as the backing store for MyCollection.  This enables animation, styling, binding and so on
+	Public Property MyCollection() As ObservableCollection(Of String)
 
-        Public Shared ReadOnly MyCollectionProperty As DependencyProperty = DependencyProperty.Register("MyCollection", GetType(ObservableCollection(Of String)), GetType(MainPage), New PropertyMetadata(Nothing))
+		Get
 
+			Return DirectCast(GetValue(MyCollectionProperty), ObservableCollection(Of String))
 
+		End Get
 
-    End Class
+		Set(ByVal value As ObservableCollection(Of String))
+
+			SetValue(MyCollectionProperty, value)
+
+		End Set
+
+	End Property
+
+' Using a DependencyProperty as the backing store for MyCollection.  This enables animation, styling, binding and so on
+
+Public Shared ReadOnly MyCollectionProperty As DependencyProperty = DependencyProperty.Register("MyCollection", GetType(ObservableCollection(Of String)), GetType(MainPage), New PropertyMetadata(Nothing))
+
+End Class
+
 {% endhighlight %}
 
+{% endtabs %}
 
 
 
 ## ILIST Binding
 
+{% tabs %}
 
-{% highlight xml %}
-
-
+{% highlight xaml %}
 
 <syncfusion:TabNavigationControl TransitionEffect="Slide" 
 
 ItemsSource="{Binding MyCollection}">
 
 </syncfusion:TabNavigationControl>
+
 {% endhighlight %}
 
 {% highlight c# %}
-
 
 public partial class MainPage : UserControl
 
@@ -218,19 +209,14 @@ public partial class MainPage : UserControl
 
 
     }
+
 {% endhighlight %}
-
-
 
 {% highlight vbnet %}
 
-
-
-
-
 Partial Public Class MainPage
 
-        Inherits UserControl
+    Inherits UserControl
 
         Public Sub New()
 
@@ -274,22 +260,16 @@ Partial Public Class MainPage
 
 
 
+		
     End Class
+	
 {% endhighlight %}
 
-
-
-
+{% endtabs %}
 
 
 ## XML binding 
 
 To bind XML data to a TabNavigation control, convert the XML data to a collection like Observable collection or ILIST collection, and then bind the collection by using the ItemsSource property of the TabNavigation control.
 
-
-
 ![](Adding-items-through-Items-Source_images/Adding-items-through-Items-Source_img1.png)
-
-
-
-

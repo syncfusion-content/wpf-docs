@@ -1,28 +1,27 @@
 ---
 layout: post
-title: Selector
+title: Selector | SfDiagram | wpf | Syncfusion
 description: selector
 platform: wpf
-control: Control Name undefined
+control: SfDiagram
 documentation: ug
 ---
 
-### Selector
+# Selector
 
 This is a single entity that binds the selected items in the SfDiagram. The Diagramming Objects are selected by Tapping on them, and the changes are reflected in the IsSelected property.
 
-SelectedItems
+## SelectedItems
 
 This is the collection of Selected Objects (Nodes, Connectors and Groups) in the SfDiagram, and is populated based on the IsSelected property of Diagramming Objects (Nodes, Connectors and Groups).
+
 The following code example illustrates how to get the selected items:
 
-[C#]
+{% highlight c# %}
 
 // Selected Items of the SfDiagram
 
 SelectorViewModel selecteditems = (sfdiagram.SelectedItems as SelectorViewModel);
-
-
 
 // Selected Items-Collection for Nodes
 
@@ -34,8 +33,6 @@ foreach (INode node in selecteditems.Nodes)
 
 }
 
-
-
 // SelectedItems-Collection for Connectors
 
 foreach (IConnector connector in selecteditems.Connectors)
@@ -45,8 +42,6 @@ foreach (IConnector connector in selecteditems.Connectors)
 // Selected Connectors that have IsSelected as true
 
 }
-
-
 
 //SelectedItems-Collection for Groups
 
@@ -58,37 +53,35 @@ foreach (IGroup group in selecteditems.Groups)
 
 }
 
-Multiple Selections
+ {% endhighlight %}
+
+## Multiple Selections
 
 During multiple selections, the selector binds all the selected items. 
 
 ![](Selector_images/Selector_img1.png)
-{:.image }
 
 
-Customizing the Selector
+
+## Customizing the Selector
 
 This has 12 Diagram Thumbs for Node, Connector, Pivot and Rotator. The Selector Style can be customized by overriding the existing template.
 
-
-
-Tooltip and Quick commands
-
-
+## Tooltip and Quick commands
 
 This feature enables visual guide for arranging the Nodes. Tooltip shows information like Size, Position and Angle when you manipulate the Node.
 
-SelectorConstraints
+## SelectorConstraints
 
 SelectorConstraints property is used to enable or disable certain behaviors of Selector (Quick Commands, Rotator and Resizer) 
 
-_Table_ _9__: List of constraints Table_
+_List of constraints Table_
 
 <table>
 <tr>
-<td>
-Constraints</td><td>
-Description</td></tr>
+<th>
+Constraints</th><th>
+Description</th></tr>
 <tr>
 <td>
 Resizer</td><td>
@@ -124,35 +117,30 @@ By default, position, size, and angle information are shown in the Tooltip and Q
 </table>
 
 
-SelectorConstraints.Resizer
+### SelectorConstraints.Resizer
 
-Enables or disables the Resizer
+#### Enables or disables the Resizer
 
 The following code example illustrates how to enable the SelectorConstraints for Resizer. 
 
-[C#]
+{% highlight c# %}
 
-(Diagram.SelectedItems as SelectorViewModel).SelectorConstraints =                (Diagram.SelectedItems as SelectorViewModel).SelectorConstraints & ~SelectorConstraints.Resizer;
+(Diagram.SelectedItems as SelectorViewModel).SelectorConstraints = (Diagram.SelectedItems as SelectorViewModel).SelectorConstraints & ~SelectorConstraints.Resizer;
 
-
+{% endhighlight %}
 
 ![](Selector_images/Selector_img2.png)
-{:.image }
 
+### SelectorConstraints.Rotator
 
-SelectorConstraints.Rotator
-
-Enables or disables the Rotator
+#### Enables or disables the Rotator
 
 The following code example illustrates how to enable the SelectorConstraints for Rotator. 
 
-[C#]
+{% highlight c# %}
 
-(Diagram.SelectedItems as SelectorViewModel).SelectorConstraints =                (Diagram.SelectedItems as SelectorViewModel).SelectorConstraints & ~SelectorConstraints.Rotator;
+(Diagram.SelectedItems as SelectorViewModel).SelectorConstraints = (Diagram.SelectedItems as SelectorViewModel).SelectorConstraints & ~SelectorConstraints.Rotator;
 
-
+{% endhighlight %}
 
 ![](Selector_images/Selector_img3.png)
-{:.image }
-
-

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SpellCheckDialog
+title: SpellCheckDialog | SpellChecker | wpf | Syncfusion
 description: spellcheckdialog
 platform: wpf
 control: SpellChecker
@@ -13,16 +13,12 @@ Spell Checker contains in-built dialog for checking spellings for any input cont
 
 ### Methods
 
-
-
-Methods table
-
 <table>
 <tr>
 <th>
-{{ '**Method**' | markdownify }}</th><th>
-{{ '**Prototype**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Method</th><th>
+Prototype</th><th>
+Description</th></tr>
 <tr>
 <td>
 SpellCheckForEditor</td><td>
@@ -31,16 +27,14 @@ If you use this method for checking spellings, the SpellChecker will launch a Sp
 </table>
 
 
-Events
-
-
+### Events
 
 <table>
 <tr>
 <th>
-{{ '**Event**' | markdownify }}</th><th>
-{{ '**Parameters**' | markdownify }}</th><th>
-{{ '**Description**' | markdownify }}</th></tr>
+Event</th><th>
+Parameters</th><th>
+Description</th></tr>
 <tr>
 <td>
 SpellCheckCompleted</td><td>
@@ -49,152 +43,129 @@ This event will be triggered when the spell checking is completed for the input 
 </table>
 
 
-##Spell Checking Using ISpellEditor 
+## Spell Checking Using ISpellEditor 
 
 In the below code snippet, a wrapper class is created for TextBox by implementing ISpellEditor interface.
 
-{%highlight c#%}
+{%highlight c# %}
 
+public class TextBoxSpellEditor : ISpellEditor
 
+{
 
-        public class TextBoxSpellEditor : ISpellEditor
+	private TextBox textBox;
 
-        {
+	public TextBoxSpellEditor(Control control)
 
-            private TextBox textBox;
+	{
 
-            public TextBoxSpellEditor(Control control)
+		ControlToCheck = control;
 
-            {
+	}
 
-                ControlToCheck = control;
+	public Control ControlToCheck
 
-            }
+	{
 
-            public Control ControlToCheck
+		get
 
-            {
+		{
 
-                get
+			return textBox;
 
-                {
+		}
 
-                    return textBox;
+		set
 
-                }
+		{
 
-                set
+			textBox = value as TextBox;
 
-                {
+		}
 
-                    textBox = value as TextBox;
+	}
 
-                }
+	public string SelectedText
 
-            }
+	{
 
+		get
 
+		{
 
-            public string SelectedText
+			return textBox.SelectedText;
 
-            {
+		}
 
-                get
+		set
 
-                {
+		{
 
-                    return textBox.SelectedText;
+			textBox.SelectedText = value;
 
-                }
+		}
 
-                set
+	}
 
-                {
+	public string Text
 
-                    textBox.SelectedText = value;
+	{
 
-                }
+		get
 
-            }
+		{
 
+			return textBox.Text;
 
+		}
 
-            public string Text
+		set
 
-            {
+		{
 
-                get
+			textBox.Text = value;
 
-                {
+		}
 
-                    return textBox.Text;
+	}
 
-                }
+	public void Select(int selectionStart, int selectionLength)
 
-                set
+	{
 
-                {
+		textBox.Select(selectionStart, selectionLength);
 
-                    textBox.Text = value;
+	}
 
-                }
+	public bool HasMoreTextToCheck()
 
-            }
+	{
 
+		return false;
 
+	}
+	
+	public void Focus()
 
-            public void Select(int selectionStart, int selectionLength)
+	{
 
-            {
+		textBox.Focus();
 
-                textBox.Select(selectionStart, selectionLength);
+	}
 
-            }
+	public void UpdateTextField()
 
+	{
 
+	}
 
-            public bool HasMoreTextToCheck()
+}
 
-            {
-
-                return false;
-
-            }
-
-
-
-            public void Focus()
-
-            {
-
-                textBox.Focus();
-
-            }
-
-
-
-
-
-            public void UpdateTextField()
-
-            {
-
-
-
-            }
-
-        }
-
-
-{%endhighlight%}
-
+{% endhighlight %}
 
 After creating the wrapper class, you need to pass the instance of the ISpellEditor to SpellCheckForEditor method as given in the following code snippet:
 
-
-{%highlight c#%}
-
-
+{% highlight c# %}
 
 SpellChecker spellCheck = new SpellChecker();
 
@@ -202,9 +173,9 @@ TextBoxSpellEditor spellEditor = new TextBoxSpellEditor(txtbx);
 
 spellCheck.SpellCheckForEditor(spellEditor);
 
-{%endhighlight%}
+{% endhighlight %}
 
-### Sample Link
+#### Sample Link
 
 To access the sample link:
 
@@ -212,10 +183,3 @@ To access the sample link:
 2. Select User Interface.
 3. Click the WPF drop-down list and select Explore Samples.
 4. Navigate to Tools -> SpellChecker -> SpellCheckerDemo.
-
-
-
-
-
-
-

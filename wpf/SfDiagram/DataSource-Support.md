@@ -1,26 +1,26 @@
 ---
 layout: post
-title: DataSource-Support
+title: DataSource Support | SfDiagram | wpf | Syncfusion
 description: datasource support
 platform: wpf
-control: Control Name undefined
+control: SfDiagram
 documentation: ug
 ---
 
-### DataSource Support
+# DataSource Support
 
 SfDiagram is populated with the node taken from an external hierarchical data source. SfDiagram exposes its specific, data-related properties and allows you to specify the data source fields from where the node information is retrieved from.
 
-DataSource Settings
+## DataSource Settings
 
 Two mapping fields are necessary to map a hierarchical datatsource with the Diagram. Id property is used for unique identification of a record. ParentId property is used to identify the parent object where a particular object is connected.
 
 <table>
 <tr>
-<td>
-Properties</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Properties</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 DataSource</td><td>
@@ -39,11 +39,11 @@ String</td></tr>
 </table>
 
 
-DataSource
+## DataSource
 
 The following code example illustrates how to bind data to the SfDiagram.
 
-[C#]
+{% highlight c# %}
 
 //Creates Data
 
@@ -81,9 +81,6 @@ diagram.DataSourceSchema.MappingName = "Name";
 
 diagram.DataSourceSchema.DataSource = employee;
 
-
+{% endhighlight %}
 
 ![](DataSource-Support_images/DataSource-Support_img1.png)
-{:.image }
-
-

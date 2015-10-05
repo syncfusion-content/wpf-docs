@@ -1,28 +1,24 @@
 ---
 layout: post
-title: Tool
+title: Tool | SfDiagram | wpf | Syncfusion
 description: tool
 platform: wpf
-control: Control Name undefined
+control: SfDiagram
 documentation: ug
 ---
 
-### Tool
+# Tool
 
 Some gestures have multiple functionalities; for example, “Touch and Drag” gesture is used for panning, drawing and rubber band selection.
 
-
-
 Tool property provides support to operate any one of the multiple functionalities at any particular time. It supports the following functionalities:
-
-
 
 <table>
 <tr>
-<td>
-S.No</td><td>
-Tools</td><td>
-Description</td></tr>
+<th>
+S.No</th><th>
+Tools</th><th>
+Description</th></tr>
 <tr>
 <td>
 1.</td><td>
@@ -55,46 +51,33 @@ ContinuousDraw</td><td>
 Enables to draw different types of Line Connector continuously</td></tr>
 </table>
 
-
 The default value for Tool property is _MultipleSelect_.
-
-
 
 The following code example illustrates how to enable the Panning and Zooming functionality by using Tools property of the SfDiagram:
 
-
-
-[C#]
-
-
+{% highlight c# %}
 
 sfdiagram.Tool = Tool.ZoomPan;
 
+{% endhighlight %}
 
-
-![](Tool_images/Tool_img1.jpeg)
-{:.image }
-_Note: Tool property is manipulated by using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.
+N> Tool property is manipulated by using bitwise operations. For more information about bitwise operations, see Bitwise Operations.
 
 
 
-Multiple Selection
+## Multiple Selection
 
-Description
+#### Description
 
 There are many ways to select multiple elements. Multiple selection can be customized by changing the values of SfDiagram.MultipleSelectionMode.
 
-
-
 The following table lists the enumerable elements of the MultipleSelectionMode.
-
-
 
 <table>
 <tr>
-<td>
-Enumerable Elements</td><td>
-Description</td></tr>
+<th>
+Enumerable Elements</th><th>
+Description</th></tr>
 <tr>
 <td>
 RubberbandCompleteIntersect</td><td>
@@ -114,81 +97,48 @@ Elements can be selected by holding a key and tapping.</td></tr>
 </table>
 
 
-Change the MultipleSelectionMode
+### Change the MultipleSelectionMode
 
-
-
-[C#]
+{% highlight c# %}
 
 diagramControl.MultipleSelectionMode = MultipleSelectionMode.RubberBandPartialIntersect; 
 
+{% endhighlight %}
 
+#### Examples
 
-Examples
-
-RubberbandCompleteIntersect
+#### RubberbandCompleteIntersect
 
 Elements that are completely positioned in the selection rectangle are selected.
 
-
-
 ![](Tool_images/Tool_img2.png)
-{:.image }
 
-
-
-
-_Figure_ _75__: While Selecting_
-
-
+While Selecting
+{:.caption}
 
 ![](Tool_images/Tool_img3.png)
-{:.image }
 
+After Selection
+{:.caption}
 
-
-
-_Figure_ _76__: After Selection_
-
-RubberbandPartialIntersect
+#### RubberbandPartialIntersect
 
 Elements that intersect with the selection rectangle are selected.
 
-
-
-
-
 ![](Tool_images/Tool_img4.png)
-{:.image }
 
-
-
-
-_Figure_ _77__: While Selecting_
-
-
+While Selecting
+{:.caption}
 
 ![](Tool_images/Tool_img5.png)
-{:.image }
 
+After Selection
+{:.caption}
 
-
-
-_Figure_ _78__: After Selection_
-
-JustTap
+## JustTap
 
 By default, when tapping an element, the existing selection list is cleared, and the tapped element is added to the selection list. JustTap is used to avoid clearing the selection list and add the tapped element to the list.
 
-HoldKeyAndTap
+## HoldKeyAndTap
 
 By default, when tapping an element, the existing selection list is cleared, and the tapped element is added to the selection list. Holding Ctrl and tapping an element avoid clearing the selection list and add the tapped element to the list.
-
-
-
-
-
-
-
-_Figure_ _95__: DataSource_
-

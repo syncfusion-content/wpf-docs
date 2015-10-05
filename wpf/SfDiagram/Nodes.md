@@ -1,38 +1,36 @@
 ---
 layout: post
-title: Nodes
+title: Nodes | SfDiagram | wpf | Syncfusion
 description: nodes
 platform: wpf
-control: Control Name undefined
+control: SfDiagram
 documentation: ug
 ---
 
-### Nodes
+# Nodes
 
 Nodes are graphical objects used to represent data in the SfDiagram.
 
-Creating a Node
+## Creating a Node
 
 A node can be created and added to the Diagram by using the following methods:
 
 * Through Stencil
 * Through Code
 
-Adding Nodes through Stencil
+### Adding Nodes through Stencil
 
 Drag the desired Symbol from the Stencil to the drawing area and release the pointer. The desired node is now added to the Diagram.
 
 ![](Nodes_images/Nodes_img1.png)
-{:.image }
 
 
-Adding Nodes through Code
+
+### Adding Nodes through Code
 
 The NodeViewModel is implemented with the INode interface. The NodeViewModel does not have any default Shape.
 
-[C#]
-
-
+{% highlight c# %}
 
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 
@@ -50,27 +48,29 @@ nodes.Add(node);
 
 diagramcontrol.Nodes = nodes;
 
-Setting the Node Shape and Shape Style
+{% endhighlight %}
+
+## Setting the Node Shape and Shape Style
 
 Shape is a type of geometry that can be customized by using ShapeStyle property. A node shape visually lies between the content and background of the node.
 
-[XAML]
+{% tabs %}
 
+{% highlight xaml %}
 
+<Style TargetType="Path" x:Key="shapestyle">
 
-&lt;Style TargetType="Path" x:Key="shapestyle"&gt;
+    <Setter Property="Fill" Value="DeepSkyBlue"></Setter>
 
-    &lt;Setter Property="Fill" Value="DeepSkyBlue"&gt;&lt;/Setter&gt;
+    <Setter Property="StrokeThickness" Value="1"></Setter>
 
-    &lt;Setter Property="StrokeThickness" Value="1"&gt;&lt;/Setter&gt;
+    <Setter Property="Stretch" Value="Fill"></Setter>
 
-    &lt;Setter Property="Stretch" Value="Fill"&gt;&lt;/Setter&gt;
+</Style>
 
-&lt;/Style&gt;
+{% endhighlight %}
 
-
-
-[C#]  
+{% highlight c# %}  
 
 ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 
@@ -100,200 +100,190 @@ nodes.Add(node);
 
 diagramcontrol.Nodes = nodes;
 
+{% endhighlight %}
 
-
-
+{% endtabs %}
 
 ![](Nodes_images/Nodes_img2.png)
-{:.image }
 
-
-Node Content
+## Node Content
 
 A node is used to visually represent UI elements by using the Content property. You can host any content inside a node through the content template of the node that provides support for all the types of content.
 
-> ![](Nodes_images/Nodes_img3.jpeg)
-{:.image }
-_Note: Nodes can include both Content and Shape at the same time. In such a case, the Content is placed over the Shape._
+N> Nodes can include both Content and Shape at the same time. In such a case, the Content is placed over the Shape.
 
-[C#]
+{% highlight xaml %}
 
+<!--<NodeViewModel>-->
 
+<SynDiagram:NodeViewModel Width="110" Height="50" OffsetX="100" OffsetY="100">
 
-&lt;!--&lt;NodeViewModel&gt;-->
+<!--<Content-RatingControl>-->
 
-&lt;SynDiagram:NodeViewModel Width="110" Height="50" OffsetX="100" OffsetY="100"&gt;
+<SynDiagram:NodeViewModel.Content>
 
+<rating:SfRating ItemsCount="5" Margin="0,10,0,0">
 
+<rating:SfRating.Resources>
 
-&lt;!--&lt;Content-RatingControl&gt;-->
+<Style TargetType="rating:SfRatingItem">
 
-&lt;SynDiagram:NodeViewModel.Content&gt;
+<Setter Property="Width" Value="20"></Setter>
 
-&lt;rating:SfRating ItemsCount="5" Margin="0,10,0,0"&gt;
+<Setter Property="Height" Value="23"></Setter>
 
-&lt;rating:SfRating.Resources&gt;
+<Setter Property="RatedFill" Value="Green"></Setter>
 
-&lt;Style TargetType="rating:SfRatingItem"&gt;
+</Style>
 
-&lt;Setter Property="Width" Value="20"&gt;&lt;/Setter&gt;
+</rating:SfRating.Resources>
 
-&lt;Setter Property="Height" Value="23"&gt;&lt;/Setter&gt;
+</rating:SfRating>
 
-&lt;Setter Property="RatedFill" Value="Green"&gt;&lt;/Setter&gt;
-
-&lt;/Style&gt;
-
-&lt;/rating:SfRating.Resources&gt;
-
-&lt;/rating:SfRating&gt;
-
-&lt;/SynDiagram:NodeViewModel.Content&gt;
+</SynDiagram:NodeViewModel.Content>
 
 
 
-&lt;!--&lt;Shape-Ellipse&gt;-->
+<!--<Shape-Ellipse>-->
 
-&lt;SynDiagram:NodeViewModel.Shape&gt;
+<SynDiagram:NodeViewModel.Shape>
 
-&lt;EllipseGeometry RadiusX="10" RadiusY="10"&gt;                                
+<EllipseGeometry RadiusX="10" RadiusY="10">                                
 
-&lt;/EllipseGeometry&gt;
+</EllipseGeometry>
 
-&lt;/SynDiagram:NodeViewModel.Shape&gt;
+</SynDiagram:NodeViewModel.Shape>
 
 
 
-&lt;!--&lt;Shape-Style&gt;-->
+<!--<Shape-Style>-->
 
-&lt;SynDiagram:NodeViewModel.ShapeStyle&gt;
+<SynDiagram:NodeViewModel.ShapeStyle>
 
-&lt;Style TargetType="Path"&gt;
+<Style TargetType="Path">
 
-&lt;Setter Property="Fill" Value="DeepSkyBlue"&gt;&lt;/Setter&gt;
+<Setter Property="Fill" Value="DeepSkyBlue"></Setter>
 
-&lt;Setter Property="Stretch" Value="Fill"&gt;&lt;/Setter&gt;
+<Setter Property="Stretch" Value="Fill"></Setter>
 
-&lt;/Style&gt;
+</Style>
 
-&lt;/SynDiagram:NodeViewModel.ShapeStyle&gt;
+</SynDiagram:NodeViewModel.ShapeStyle>
 
-&lt;/SynDiagram:NodeViewModel&gt;
+</SynDiagram:NodeViewModel>
 
+{% endhighlight %}
 
 ![](Nodes_images/Nodes_img4.png)
-{:.image }
 
-
-by using Business Objects as Node Content
+### By using Business Objects as Node Content
 
 Business objects can also be used as node content. In such cases, the content template determines the representation of the business objects.
 The following example illustrates how to add business objects to Node Content:
 
 1. Create an Employee class.
 
-[C#]  
+   ~~~ csharp
 
+		public class Employee
 
-public class Employee
+		{    
 
-{    
+			public string Name
 
-public string Name
+			{
 
-{
+				get;
 
-get;
+				set;
 
-set;
+			}
 
-}
+			public int ID
 
-public int ID
+			{
 
-{
+				get;
 
-get;
+				set;
 
-set;
+			}
 
-}
+		}    
 
-}    
+   ~~~
 
 2. Create the Content Template.
 
-[XAML]
+   ~~~ xaml
 
+		<DataTemplate x:Key="contenttemplate">
 
+		<Border BorderBrush="Black" BorderThickness="2" Background="DeepSkyBlue">
 
-&lt;DataTemplate x:Key="contenttemplate"&gt;
+		<StackPanel Orientation="Vertical">
 
-&lt;Border BorderBrush="Black" BorderThickness="2" Background="DeepSkyBlue"&gt;
+		<TextBlock Text="{Binding Name}" Foreground="White" FontSize="12">
 
-&lt;StackPanel Orientation="Vertical"&gt;
+		</TextBlock>
 
-&lt;TextBlock Text="{Binding Name}" Foreground="White"                        FontSize="12"&gt;
+		<TextBlock Text="{Binding ID}" Foreground="White" FontSize="12">
 
-&lt;/TextBlock&gt;
+		</TextBlock>
 
-&lt;TextBlock Text="{Binding ID}" Foreground="White"FontSize="12"&gt;
+		</StackPanel>
 
-&lt;/TextBlock&gt;
+		</Border>
 
-&lt;/StackPanel&gt;
+		</DataTemplate>
 
-&lt;/Border&gt;
-
-&lt;/DataTemplate&gt;
+   ~~~
 
 3. Add the Node Content and Content Template to the INode interface.
 
-[C#]
+   ~~~ csharp
 
-ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
+		ObservableCollection<NodeViewModel> nodes = new ObservableCollection<NodeViewModel>();
 
-NodeViewModel node = new NodeViewModel()
+		NodeViewModel node = new NodeViewModel()
 
-{
+		{
 
-    UnitWidth = 100,
+			UnitWidth = 100,
 
-    UnitHeight = 50,
+			UnitHeight = 50,
 
-    OffsetX = 200,
+			OffsetX = 200,
 
-    OffsetY = 200,
+			OffsetY = 200,
 
-    // Unique Guid for NodeViewModel
+			// Unique Guid for NodeViewModel
 
-    ID = Guid.NewGuid(),
+			ID = Guid.NewGuid(),
 
-  Content = new Employee() { Name = "Kevin", ID = 3567 },    ContentTemplate = this.Resources["contenttemplate"] as DataTemplate
+		  Content = new Employee() { Name = "Kevin", ID = 3567 },    ContentTemplate = this.Resources["contenttemplate"] as DataTemplate
 
-};
+		};
 
-nodes.Add(node);
+		nodes.Add(node);
 
-diagramcontrol.Nodes = nodes;
+		diagramcontrol.Nodes = nodes;
 
+   ~~~
+   
+   ![](Nodes_images/Nodes_img5.png)
 
-
-![](Nodes_images/Nodes_img5.png)
-{:.image }
-
-
-Node Constraints
+## Node Constraints
 
 NodeConstraints property is used to enable or disable certain behaviors of Nodes. This property is applicable only to the Node of the SfDiagram control.
 
-_Table_ _1__: Constraints Table_
+_Constraints Table_
 
 <table>
 <tr>
-<td>
-Constraints</td><td>
-Description</td></tr>
+<th>
+Constraints</th><th>
+Description</th></tr>
 <tr>
 <td>
 None</td><td>
@@ -407,53 +397,46 @@ Enables or disables resizing nodes in the north.</td></tr>
 
 The default value for NodeConstraints property is Default.
 
-Example 1
+#### Example 1
 
 The following code example illustrates how to disable Dragging a Node in the SfDiagram:
 
-[C#]
+{% highlight c# %}
 
 node.Constraints = node.Constraints &~ NodeConstraints.Selectable &~ NodeConstraints.Draggable;
 
+{% endhighlight %}
 
-
-Example 2
+#### Example 2
 
 The following code example illustrates how to disable the resizing node in a particular direction.
 
-[C#]
+{% highlight c# %}
 
 //Disables Selector Thumb Resize in a particular direction
 
 node.Constraints = node.Constraints & ~(NodeConstraints.ResizeNorthWest | NodeConstraints.ResizeNorthEast | NodeConstraints.ResizeSouthWest | NodeConstraints.ResizeSouthEast);
 
-
+{% endhighlight %}
 
 Here, node is instance of a Node.
 
 ![](Nodes_images/Nodes_img6.png)
-{:.image }
 
 
-> ![](Nodes_images/Nodes_img7.jpeg)
-{:.image }
-_Note: NodeConstraints property is manipulated using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations_._
 
-Aspect Ratio 
+N> NodeConstraints property is manipulated using bitwise operations. For more information about bitwise operations, see_ Bitwise Operations.
+
+## Aspect Ratio 
 
 Aspect Ratio is used to enable/disable proportional resizing of Nodes. When the width of a node is resized to double its value, its height also automatically doubles to maintain its Aspect Ratio.
 
 The following code example illustrates how to enable Aspect Ratio.
 
-[C#] 
-
-
+{% highlight c# %} 
 
 //Enables AspectRatio. 
 
-
-
 node.Constraints = node.Constraints | NodeConstraints.AspectRatio;
 
-
-
+{% endhighlight %}

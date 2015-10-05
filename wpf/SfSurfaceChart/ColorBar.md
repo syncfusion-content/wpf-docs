@@ -1,28 +1,44 @@
-﻿# ColorBar
+---
+layout: post
+title: ColorBar | SfSurfaceChart | wpf | Syncfusion
+description: colorbar
+platform: wpf
+control: SfSurfaceChart
+documentation: ug
+---
+
+# ColorBar
 
 ColorBar is used to represent the value range in surface via colors. You can define ColorBar for surface chart as shown in the following code example. 
 
-XAML:
+{% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <chart:SfSurfaceChart />
-      <chart:SfSurfaceChart.ColorBar>
-           <chart:ColorBar DockPosition="Right" ></chart:ColorBar>
-      </chart:SfSurfaceChart.ColorBar>
+
+	<chart:SfSurfaceChart.ColorBar>
+
+		<chart:ColorBar DockPosition="Right" ></chart:ColorBar>
+	   
+	</chart:SfSurfaceChart.ColorBar>
+	  
 <chart:SfSurfaceChart />
 	
 {% endhighlight %}
-
-C#:
 
 {% highlight c# %}
 
 SfSurfaceChart surface = new SfSurfaceChart();
+
 surface.ColorBar = new ChartColorBar();
+
 surface.DockPosition = ChartDock.Right;
 	
 {% endhighlight %}
+
+{% endtabs %}
+
 
 The following properties are used to customize the ColorBar. 
 
@@ -30,9 +46,9 @@ The following properties are used to customize the ColorBar.
 
 <table>
 <tr>
-<td>
-******Name******<br/><br/></td><td>
-******Description******<br/><br/></td></tr>
+<th>
+Name</th><th>
+Description</th></tr>
 <tr>
 <td>
 DockPosition<br/><br/></td><td>

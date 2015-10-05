@@ -1,35 +1,31 @@
 ---
 layout: post
-title: Gridlines
+title: Gridlines | SfDiagram | wpf | Syncfusion
 description: gridlines
 platform: wpf
-control: Control Name undefined
+control: SfDiagram
 documentation: ug
 ---
 
-### Gridlines
-
-Gridlines
+# Gridlines
 
 Gridlines are horizontal and vertical lines behind the Diagram elements. They provide visual guidance when dragging or arranging objects on the Diagram surface.
 
 ![](Gridlines_images/Gridlines_img1.png)
-{:.image }
+
+Diagram with Gridlines Enabled
+{:.caption}
 
 
-_Figure_ _79__: Diagram with Gridlines Enabled_
-
-
-
-SfDiagram.SnapSettings.SnapConstraints
+### SfDiagram.SnapSettings.SnapConstraints
 
 The visibility of gridlines and their snapping feature can be enabled or disabled by changing the values of the enum property SfDiagram.SnapSettings.SnapConstraints.
 
 <table>
 <tr>
-<td>
-Elements</td><td>
-Description</td></tr>
+<th>
+Elements</th><th>
+Description</th></tr>
 <tr>
 <td>
 ShowHorizontalLines</td><td>
@@ -67,77 +63,59 @@ Disable gridlines and disable snapping.</td></tr>
 
 
 
-Enabling and Disabling Gridlines
+## Enabling and Disabling Gridlines
 
 The visibility of gridlines can be enabled or disabled by changing the values of the enum property SfDiagram.SnapSettings.SnapConstraints.
 
 SnapConstraints.All and SnapConstraints.ShowLines enables the visibility of both horizontal and vertical gridlines.
 
-
-
-[C#]
+{% highlight c# %}
 
 diagramControl.SnapSettings.SnapConstraints = SnapConstraints.All; 
 
-
-
 Or
-
-
-
-[C#]
 
 diagramControl.SnapSettings.SnapConstraints = SnapConstraints.ShowLines;
 
-
-
-
-
-
+{% endhighlight %}
 
 SnapConstraints.HorizontalLines enables the visibility of horizontal gridlines.
 
-
-
-[C#]
+{% highlight c# %}
 
  diagramControl.SnapSettings.SnapConstraints = SnapConstraints.HorizontalLines;
 
-
-
-
+{% endhighlight %}
 
 SnapConstraints.VerticalLines enables the visibility of vertical gridlines.
 
-
-
-[C#]
+{% highlight c# %}
 
  diagramControl.SnapSettings.SnapConstraints = SnapConstraints.VerticalLines;
 
-
+{% endhighlight %}
 
 SnapConstraints.None disables gridlines.
 
-[C#]
+{% highlight c# %}
 
  diagramControl.SnapSettings.SnapConstraints = SnapConstraints.None;
 
-Customization of Gridlines
+{% endhighlight %}
+ 
+## Customization of Gridlines
 
 The spacing and appearance of the gridlines can be customized by using the HorizontalGridlines and VerticalGridlines properties of SfDiagram.SnapSettings that is of Gridlines type.
 
 The Gridlines class enables the definition of spacing between gridlines, snapping intervals, and the style and thickness of gridlines.
 
-LinesInterval
+### LinesInterval
 
 The spacing and thickness of gridlines can be customized by changing the value of the LinesInterval property. LinesInterval is a DoubleCollection that contains a series of line thicknesses separated by the space left before the next gridline thickness. This series is repeated throughout the Diagram.
 
-
-
 To change spacing between lines:
 
-[C#]
+{% highlight c# %}
 
  Gridlines gridlines = new Gridlines()
 
@@ -147,23 +125,17 @@ To change spacing between lines:
 
  };
 
-
-
  diagramControl.SnapSettings.HorizontalGridlines = gridlines;
-
-
 
  diagramControl.SnapSettings.VerticalGridlines = gridlines;
 
-
-
-
+{% endhighlight %}
 
 <table>
 <tr>
-<td>
-LinesInterval</td><td>
-Effect</td></tr>
+<th>
+LinesInterval</th><th>
+Effect</th></tr>
 <tr>
 <td>
 2</td><td>
@@ -187,147 +159,104 @@ The cycle starts again with the first item in the collection.</td></tr>
 </table>
 
 
-Strokes
+### Strokes
 
 Styles for a pattern of gridlines can be assigned to the Strokes property. This collection is applied to each line pattern of the Diagram.
 
-
-
 To change the appearance of the gridlines:
 
-[C#]
+{% highlight c# %}
 
  Style brown = new Style(typeof(Path));
 
- brown.Setters.Add(new Setter(Path.StrokeProperty, new
-
-                                      SolidColorBrush(Colors.Brown)));
+ brown.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.Brown)));
 
  Style sandyBrown = new Style(typeof(Path));
 
- sandyBrown.Setters.Add(new Setter(Path.StrokeProperty, new
-
-                                      SolidColorBrush(Colors.SandyBrown)));
-
-
+ sandyBrown.Setters.Add(new Setter(Path.StrokeProperty, new SolidColorBrush(Colors.SandyBrown)));
 
  Gridlines gridlines = new Gridlines()
 
  {
-
        LinesInterval = new List<double>() { 2, 23, 1, 24 }
 
        Strokes = new List<Style>() { brown, sandyBrown }
 
  };
 
-
-
  diagramControl.SnapSettings.HorizontalGridlines= gridlines;
-
-
 
  diagramControl.SnapSettings.VerticalGridlines= gridlines;
 
-
-
-
-
-
+{% endhighlight %}
 
 In the following screenshot, the gridline styles are customized. 
 
-
-
-
-
 ![](Gridlines_images/Gridlines_img2.png)
-{:.image }
 
+Customized Gridlines
+{:.caption}
 
-_Figure_ _80__: Customized Gridlines_
-
-Snapping
+## Snapping
 
 Snap to Grid
 
 The snap-to-grid feature allows Diagram objects to snap to the nearest intersection of gridlines when being dragged or resized. This feature enables easier alignment during layout or design.
 
-
-
 ![](Gridlines_images/Gridlines_img3.png)
-{:.image }
+
+Diagram Objects Snapped to Gridlines
+{:.caption}
 
 
-_Figure_ _81__: Diagram Objects Snapped to Gridlines_
 
-
-
-Enabling and Disabling Snapping to Gridlines
+### Enabling and Disabling Snapping to Gridlines
 
 Snapping to gridlines can be enabled or disabled by changing the value of the enum property
 
 SfDiagram.SnapSettings.SnapConstraints.
 
-
-
-[C#]
+{% highlight c# %}
 
 //Enables snapping to both horizontal and vertical lines.
 
  diagramControl.SnapSettings.SnapConstraints = SnapConstraints.All; 
 
-
-
 //Enables snapping to both horizontal and vertical lines.
 
 diagramControl.SnapSettings.SnapConstraints = SnapConstraints.SnapToLines; 
-
-
 
 //Enables snapping to horizontal lines.
 
 diagramControl.SnapSettings.SnapConstraints = SnapConstraints.SnapToHorizontalLines; 
 
-
-
 //Enables snapping to vertical lines.
 
 diagramControl.SnapSettings.SnapConstraints = SnapConstraints.SnapToVerticalLines;
-
-
 
 //Disables snapping to lines.
 
 diagramControl.SnapSettings.SnapConstraints = SnapConstraints.None; 
 
-
+{% endhighlight %}
 
 When snapping is set in the SfDiagram control (diagramControl.SnapSettings), the same setting is applied to every element of the SfDiagram control by default.
 
 When there is a need to change or disable snapping to a gridline for a particular element, you can set the constraints of a particular object to SnapToLines, SnapToHorizontalLines, or SnapToVerticalLines.
 
-
-
-[C#]
+{% highlight c# %}
 
 //Disables inheritance of snapping from SfDiagram.
 
 obj.Constraints = obj.Constraints & ~NodeConstraints.InheritSnapping;
 
-
-
 //Enables snapping to horizontal lines for a specific object (For example, node, connector).
 
 obj.Constraints |= NodeConstraints.SnapToHorizontalLines; 
 
-
-
 //Enables snapping to vertical lines for a specific object (For example, node, connector).
 
 obj.Constraints |= NodeConstraints.SnapToVerticalLines; 
-
-
 
 //Enables snapping to both horizontal and vertical lines 
 
@@ -335,21 +264,17 @@ obj.Constraints |= NodeConstraints.SnapToVerticalLines;
 
 obj.Constraints |= NodeConstraints.SnapToLines; 
 
+{% endhighlight %}
 
-
-Customizing Snap Interval
+### Customizing Snap Interval
 
 The gridline or position where the Diagram object snaps can be customized by changing the value of the Gridlines.SnapInterval property.
 
 By default, diagramControl.SnapSettings.HorizontalGridlines and diagramControl.SnapSettings.VerticalGridlines are set to null, and gridline intervals are internally calculated based on measurement units and ruler segments. 
 
-
-
 Gridlines.SnapInterval is a double collection that determines the space between patterns of gridlines.
 
-
-
- [C#]
+ {% highlight c# %}
 
 Gridlines gridlines = new Gridlines()
 
@@ -365,41 +290,35 @@ Gridlines gridlines = new Gridlines()
 
  diagramControl.SnapSettings.VerticalGridlines= gridlines;
 
+{% endhighlight %}
 
-
-Snap to Object
+### Snap to Object
 
 The snap-to-object feature provides visual cues to assist with aligning and spacing Diagram nodes. A node can be snapped with its neighboring objects based on certain alignments. Such alignments are visually represented as guidelines. For example, you can easily arrange a column of nodes to be evenly spaced apart and horizontally centered with each other.
 
-
-
 ![](Gridlines_images/Gridlines_img4.png)
-{:.image }
+
+Guidelines in a Diagram
+{:.caption}
 
 
-_Figure_ _82__: Guidelines in a Diagram_
-
-
-
-Enabling and Disabling Snapping to Objects
+### Enabling and Disabling Snapping to Objects
 
 diagramControl.SnapSettings.SnapToObject determines whether nodes can be snapped to objects. 
 
 Snapping to objects can be enabled by assigning values other than SnapToObject.None to SfDiagram.SnapSettings.SnapToObject.
 
-
-
-[C#]
+{% highlight c# %}
 
 //Enables snapping to objects.
 
 diagramControl.SnapSettings.SnapToObject = SnapToObject.All; 
 
-
-
 //Disables snapping to objects. 
 
 diagramControl.SnapSettings.SnapToObject = SnapToObject.None; 
+
+{% endhighlight %}
 
 The value set to diagramControl.SnapSettings is applied to every element of the SfDiagram control.
 
@@ -407,67 +326,54 @@ When there is a need to change or deny snapping to a particular object, you can 
 
 
 
-[C#]
+{% highlight c# %}
 
 //Disables inheritance of snapping from the SfDiagram.
 
 obj.Constraints = obj.Constraints & ~NodeConstraints.InheritSnapToObject;
 
-
-
 //Enables SnapToObject.
 
 node.SnapToObject = SnapToObject.All;
 
+{% endhighlight %}
 
-
-Examples
+#### Examples
 
 ![](Gridlines_images/Gridlines_img5.png)
-{:.image }
 
-
-_Figure_ _83__: Center Alignment_ 
+Center Alignment
+{:.caption}
 
 ![](Gridlines_images/Gridlines_img6.png)
-{:.image }
 
-
-_Figure_ _84__: Equal Spacing_ 
-
-
+Equal Spacing 
+{:.caption}
 
 ![](Gridlines_images/Gridlines_img7.png)
-{:.image }
 
-
-_Figure_ _85__: Left and Top Alignment_ 
+Left and Top Alignment
+{:.caption}
 
 ![](Gridlines_images/Gridlines_img8.png)
-{:.image }
 
-
-_Figure_ _86__: Bottom and Right Alignment_ 
-
+Bottom and Right Alignment
+{:.caption}
 
 
 ![](Gridlines_images/Gridlines_img9.png)
-{:.image }
 
-
-_Figure_ _87__: Same Size Alignment_
-
-
+Same Size Alignment
+{:.caption}
 
 The following table describes many enumerable elements of the SnapToObject property.
 
 
-
 <table>
 <tr>
-<td>
-Enumerable Elements</td><td>
-Description</td></tr>
+<th>
+Enumerable Elements</th><th>
+Description</th></tr>
 <tr>
 <td>
 LeftLeft</td><td>
@@ -547,7 +453,7 @@ Sets the width and height of an object.</td></tr>
 </table>
 
 
-Customization of Snapping
+### Customization of Snapping
 
 By default, the objects are snapped based on the diagramControl.SnapSettings.SnapConstraints or diagramControl.SnapToObject. In some cases, when the suggested snapping is not desired, snapping can be disabled or modified by overriding the protected virtual method OnSnap.
 
@@ -555,15 +461,15 @@ By default, the objects are snapped based on the diagramControl.SnapSettings.Sna
 
 <table>
 <tr>
-<td>
-Virtual Method</td><td>
-Description</td><td>
-Parameters</td></tr>
+<th>
+Virtual Method</th><th>
+Description</th><th>
+Parameters</th></tr>
 <tr>
 <td>
 Node.OnSnap</td><td>
 Snaps an object to the grid, an object, or to a custom position.</td><td>
-List<SnapParameter>,out SnapAccepted</td></tr>
+List&lt;SnapParameter&gt;,out SnapAccepted</td></tr>
 </table>
 
 
@@ -573,10 +479,10 @@ The following table lists the properties associated with SnapParameter.
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 SnapChanges</td><td>
@@ -611,12 +517,12 @@ SnapInfo property of SnapParameter gives details about the cause of snapping. Th
 
 <table>
 <tr>
-<td>
-Change</td><td>
-Possible Snap</td><td>
-SnapReason</td><td>
-SnapChanges</td><td>
-SnapInfo</td></tr>
+<th>
+Change</th><th>
+Possible Snap</th><th>
+SnapReason</th><th>
+SnapChanges</th><th>
+SnapInfo</th></tr>
 <tr>
 <td rowspan = "4">
 Dragging</td><td>
@@ -671,16 +577,16 @@ null</td></tr>
 </table>
 
 
-Properties associated with GridlineSnapInfo.
+#### Properties associated with GridlineSnapInfo.
 
 
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 TargetLine</td><td>
@@ -694,16 +600,16 @@ enum Side Side.LeftSide.RightSide.TopSide.Bottom</td></tr>
 </table>
 
 
-Properties associated with the ObjectSnapInfo.
+#### Properties associated with the ObjectSnapInfo.
 
 
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 TargetObject</td><td>
@@ -717,16 +623,16 @@ enum SnapToObject</td></tr>
 </table>
 
 
-Properties associated with the EqualSpaceSnapInfo.
+#### Properties associated with the EqualSpaceSnapInfo.
 
 
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 Target</td><td>
@@ -746,20 +652,20 @@ double</td></tr>
 <td>
 EquallySpacedObjects</td><td>
 Gets the collection of objects that are equally spaced.</td><td>
-List<object></td></tr>
+List&lt;object&gt;</td></tr>
 </table>
 
 
-Properties associated with the SameSizeSnapInfo.
+#### Properties associated with the SameSizeSnapInfo.
 
 
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 SnapToObject</td><td>
@@ -769,20 +675,20 @@ SnapToObject enum</td></tr>
 <td>
 EquallySizedObjects</td><td>
 Gets the collection of objects that are of the same size.</td><td>
-List<object></td></tr>
+List&lt;object&gt;</td></tr>
 </table>
 
 
-Properties associated with the SegmentSnapInfo.
+#### Properties associated with the SegmentSnapInfo.
 
 
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 TargetConnectors</td><td>
@@ -791,16 +697,14 @@ object</td></tr>
 </table>
 
 
-Properties associated with the TargetConnector.
-
-
+#### Properties associated with the TargetConnector.
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 Connector</td><td>
@@ -820,7 +724,7 @@ Point</td></tr>
 <td>
 IntersectingPoints</td><td>
 Gets the collection of points where the TargetSegment intersects the object.</td><td>
-List<Point></td></tr>
+List&lt;Point&gt;</td></tr>
 </table>
 
 
@@ -832,10 +736,10 @@ The following table lists the properties associated with SnapState.
 
 <table>
 <tr>
-<td>
-Property</td><td>
-Description</td><td>
-Value</td></tr>
+<th>
+Property</th><th>
+Description</th><th>
+Value</th></tr>
 <tr>
 <td>
 X</td><td>
@@ -862,5 +766,3 @@ Angle</td><td>
 Gets the RotateAngle of the object.</td><td>
 double</td></tr>
 </table>
-
-
