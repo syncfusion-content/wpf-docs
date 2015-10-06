@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SplitMenuButton-Popup-KeyTip
+title: SplitMenuButton Popup KeyTip | Ribbon | WPF | Syncfusion
 description: splitmenubutton popup keytip
 platform: wpf
 control: Ribbon
@@ -22,11 +22,15 @@ The following code snippet illustrates how to set keytip for SplitMenuButton Pop
 
 <table>
 <tr>
-<td>
-{% highlight xml %}<syncfusion:SplitMenuButton Label="Print" Name="printBtn" syncfusion:Ribbon.SplitMenuKeyTip="U" syncfusion:Ribbon.KeyTip="PR">{% endhighlight %}</td></tr>
+{% highlight xml %}
+<syncfusion:SplitMenuButton Label="Print" Name="printBtn" syncfusion:Ribbon.SplitMenuKeyTip="U" syncfusion:Ribbon.KeyTip="PR">
+{% endhighlight %}
+</tr>
 <tr>
-<td>
-{% highlight C# %}Ribbon.SetKeyTip(printBtn, "PR");Ribbon.SetSplitMenuKeyTip(printBtn, "U");{% endhighlight %}</td></tr>
+{% highlight C# %}
+Ribbon.SetKeyTip(printBtn, "PR");Ribbon.SetSplitMenuKeyTip(printBtn, "U");
+{% endhighlight %}
+</tr>
 </table>
 
 

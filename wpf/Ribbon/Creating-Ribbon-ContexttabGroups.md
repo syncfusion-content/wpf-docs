@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating-Ribbon-ContexttabGroups
+title: Creating Ribbon ContexttabGroups | Ribbon | WPF | Syncfusion
 description: creating ribbon contexttabgroups
 platform: wpf
 control: Ribbon

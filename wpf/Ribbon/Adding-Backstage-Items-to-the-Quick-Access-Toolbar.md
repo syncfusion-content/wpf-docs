@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding-Backstage-Items-to-the-Quick-Access-Toolbar
+title: Adding Backstage Items to the Quick Access Toolbar | Ribbon | WPF | Syncfusion
 description: adding backstage items to the quick access toolbar
 platform: wpf
 control: Ribbon

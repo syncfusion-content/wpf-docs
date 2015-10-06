@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom-Menu-Items-in-Ribbon-Context-Menu
+title: Custom Menu Items in Ribbon Context Menu | Ribbon | WPF | Syncfusion
 description: custom menu items in ribbon context menu
 platform: wpf
 control: Ribbon

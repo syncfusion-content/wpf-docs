@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting
+title: Sorting | SfDataGrid | WPF | Syncfusion
 description: sorting
 platform: wpf
 control: SfDataGrid
@@ -17,7 +17,7 @@ DataGrid control allows you to sort the table data against one or more columns. 
 
 DataGrid provides following properties for Sorting.
 
-_Sorting property table_
+Sorting property table
 
 <table>
 <tr>
@@ -121,8 +121,8 @@ The following screenshot displays the output.
 
 
 
-_Sorted DataGrid_
-
+Sorted DataGrid
+{:.caption}
 ## Events
 
 The DataGrid provides you the following Events for the sorting functionality:
@@ -236,8 +236,8 @@ The following screenshot illustrates the MultiColumnSorting in DataGrid.
 
 
 
-_DataGrid with Multi Column Sorting_
-
+DataGrid with Multi Column Sorting
+{:.caption}
 
 
 In the above screenshot, “OrderID” column is sorted first in the descending order. After you sort the “_Name of Customer_”, the sorting of column in any direction happens against OrderID column and previous sorting is maintained.amu.
@@ -282,7 +282,7 @@ The following screenshot illustrates the SortNumbers in DataGrid.
 
 
 
-_DataGrid with Sorted Numbers_
+DataGrid with Sorted Numbers
 
  In the above screenshot DataGrid shows the sort order numbers in column header. OrderId column is sorted first in ascending order. Then you can apply multi sort to Name of Customer and ShipCountry column. Now the DataGrid shows sort numbers in column header, based on column sorting order.
 
@@ -436,8 +436,8 @@ The following screenshot displays the output.
 ![](Features_images/Features_img83.png)
 
 
-_DataGrid with Custom Sorting_
-
+DataGrid with Custom Sorting
+{:.caption}
 In the preceding screenshot, Name of Customer column is sorted based on string.Length value.
 
 ## Sort groups based on summary
@@ -450,8 +450,8 @@ When you group data by any column, the records are grouped by identical values o
 
 
 
-_Sorting groups based on summary_
-
+Sorting groups based on summary
+{:.caption}
 Now you can sort the grouped records based on key values of the column. You can sort the records based on Caption Summary value that is achieved by using SummaryGroupComparer property in DataGrid.
 
 Following are the steps to create comparer to sort the record based on Caption Summary value of the group,
@@ -560,6 +560,6 @@ Now the group rows are automatically sorted by their summary values. You can sor
 
 
 
-_Sorted groups based on summary_
-
+Sorted groups based on summary
+{:.caption}
 The above screenshot shows the output for sort by summary value example.

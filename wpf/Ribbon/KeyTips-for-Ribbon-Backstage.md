@@ -1,6 +1,6 @@
 ---
 layout: post
-title: KeyTips-for-Ribbon-Backstage
+title: KeyTips for Ribbon Backstage | Ribbon | WPF | Syncfusion
 description: keytips for ribbon backstage
 platform: wpf
 control: Ribbon

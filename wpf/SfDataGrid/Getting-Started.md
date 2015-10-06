@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | SfDataGrid | WPF | Syncfusion
 description: getting started
 platform: wpf
 control: SfDataGrid
@@ -17,7 +17,7 @@ This topic describes assembly that is required in your WPF application when you 
 
  The following is the list of assemblies.
 
-_List of Assemblies_
+List of Assemblies
 
 <table>
 <tr>
@@ -63,8 +63,8 @@ The following screenshot displays you the elements in SfDataGrid.
 ![](Getting-Started_images/Getting-Started_img1.png)
 
 
- _Elements of SfDataGrid_
-
+ Elements of SfDataGrid
+ {:.caption}
 ## Create a Simple Application with DataGrid
 
 Following steps demonstrate how to create a DataGrid and bind data to it:
@@ -78,8 +78,8 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-   _Syncfusion Control tab_
-
+   Syncfusion Control tab
+   {:.caption}
    When you drag the SfDataGrid toolbox item to the window, it automatically adds the required references to the current application.
 
    To add the SfDataGrid using code, you can add the following assemblies to the project.
@@ -91,7 +91,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-
+{% highlight c# %}
 
 
 
@@ -189,7 +189,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 			}
 
-
+{% endhighlight %}
 
 4. Add the following code example in a newly created class file and save it as__OrderInfoRepositiory.cs file.
 
@@ -197,7 +197,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-
+{% highlight c# %}
 
 			public class OrderInfoRepositiory
 
@@ -253,14 +253,14 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 			}
 
-
+{% endhighlight %}
 
 5. You can add Syncfusion schema ([http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.com/wpf)) or namespace (Syncfusion.UI.XAML.Grid) of SfDataGrid in XAML to create SfDataGrid. Here, your sample name space to set ViewModel as data context to Grid or to Window. 
 
 
 
 
-
+{% highlight xml %}
 
 			<Window x:Class="SimpleApplication.MainWindow"
 
@@ -272,7 +272,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 					xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
 
-
+{% endhighlight %}
 
 
 
@@ -281,7 +281,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-
+{% highlight xml %}
 
 			<Window.DataContext>
 
@@ -289,17 +289,17 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 			</Window.DataContext>
 
-
+{% endhighlight %}
    You can bind the data using the following code example.
 
 
-
+{% highlight xml %}
 
 
               <syncfusion:SfDataGrid ColumnSizer="Auto" ItemsSource="{Binding OrderInfoCollection}" />
 
 
-
+{% endhighlight %}
 
 
    To set the data context using Resource, you can refer the following code example.
@@ -307,7 +307,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-
+{% highlight xml %}
 
 
 
@@ -316,15 +316,15 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 				<local:OrderInfoRepositiory x:Key="data" />
 
 			</Window.Resources>
-
+{% endhighlight %}
 
    You can bind the data using the following code example.
 
-
+{% highlight xml %}
 
       <syncfusion:SfDataGrid ColumnSizer="Auto" ItemsSource="{Binding OrderInfoCollection, Source={StaticResource data}}" />
 
-
+{% endhighlight %}
 
 
 
@@ -336,8 +336,8 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
    ![](Getting-Started_images/Getting-Started_img3.png)
 
 
-   _Data Grid_
-
+   Data Grid
+   {:.caption}
 
 
 9. You can also define the columns manually by setting the SfDataGrid.AutoGenerateColumns property to ‘false’_,_ and add the GridColumn object to the SfDataGrid.Columns collection. The following code example illustrates this.
@@ -346,7 +346,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-
+{% highlight xml %}
 
 
 			<syncfusion:SfDataGrid AutoGenerateColumns="False"
@@ -370,7 +370,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 			</syncfusion:SfDataGrid>
 
 
-
+{% endhighlight %}
 
 
 10. Execute the application to render the following output.
@@ -381,15 +381,15 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-    _Data Grid_
-
+    Data Grid
+    {:.caption}
 
 
 11. SfDataGrid allows you to group its data by dragging a column and drop it in GroupDropArea. To apply grouping with mouse pointer, you can enable ShowGroupDropArea and AllowGrouping.  The following code example illustrates this.
 
 
     
-
+{% highlight xml %}
 
 
 			<syncfusion:SfDataGrid ColumnSizer="Star"
@@ -402,7 +402,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 								   ShowGroupDropArea="True" />
 
-
+{% endhighlight %}
 
 12. Execute the application and drag Order ID Column and drop it in GroupDropAreaarea. It displays the following output.
 
@@ -412,14 +412,14 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-    _DataGrid with ShowGroupDropArea and AllowGrouping enabled_
- 
+    DataGrid with ShowGroupDropArea and AllowGrouping enabled
+    {:.caption} 
 
 
 13. SfDataGrid allows you to apply sorting on its data by setting AllowSorting to ‘true. Following code example illustrates this.
 
 
-
+{% highlight xml %}
 
 
 			<syncfusion:SfDataGrid AllowSorting="True"
@@ -430,7 +430,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 														 Source={StaticResource data}}" />
 
-
+{% endhighlight %}
 
 14. Execute the application and click header cell to sort the data and the following output is displayed.
 
@@ -440,7 +440,8 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-    _DataGrid with AllowSorting property set to true_
+    DataGrid with AllowSorting property set to true
+	{:.caption}
 
 
 
@@ -448,7 +449,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-
+{% highlight xml %}
 
 
 			<syncfusion:SfDataGrid AllowFiltering="True"
@@ -459,7 +460,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 														 Source={StaticResource data}}" />
 
-
+{% endhighlight %}
 
 16. Execute the application; you can see that Header loaded with filter toggle button. 
 
@@ -468,7 +469,8 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
     ![](Getting-Started_images/Getting-Started_img7.png)
 
 
-    _DataGrid Header loaded with filter toggle button_
+    DataGrid Header loaded with filter toggle button
+	{:.caption}
 
 
 
@@ -480,8 +482,9 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-    _Filter pop-up window_
-    {:.prettyprint}
+    Filter pop-up window
+	{:.caption}
+    
 	
 ## Create Master-Details view DataGrid
 
@@ -501,7 +504,7 @@ Master-Detail view also called as Hierarchical or Nested Grid can be used to dis
 
 
 
-
+{% highlight c# %}
 
 
 				public class OrderInfo
@@ -614,14 +617,14 @@ Master-Detail view also called as Hierarchical or Nested Grid can be used to dis
 
 				}
 
-
+{% endhighlight %}
 
    The ProductDetails property is a List of ProductInfo type. Here you can find the class information of ProductInfo class. You can add the following code example in a newly created class file and save it as ProductInfo.cs file
 
 
 
 
-    
+    {% highlight c# %}
 
 			public class ProductInfo
 
@@ -657,13 +660,13 @@ Master-Detail view also called as Hierarchical or Nested Grid can be used to dis
 
 			}
 
-
+{% endhighlight %}
 
 4. Now create data to bind to SfDataGrid. Add the following code example in a newly created class file and save it as OrderInfoRepositiory.cs file_._
 
 
 
-
+{% highlight c# %}
 
 
 			public class OrderInfoRepositiory
@@ -792,7 +795,7 @@ Master-Detail view also called as Hierarchical or Nested Grid can be used to dis
 
 			}
 
-
+{% endhighlight %}
 
 5. Now open XAML page in your application. Add names space for SfDataGrid and create simple application with SfDataGrid.
 6. SfDataGrid.DetailsViewDefinition in SfDataGrid creates Master-Detail DataGrid and RelationalColumn property in GridViewDefinition creates ItemsSource for associate ChildGrid from Parent Grid Data. 
@@ -801,7 +804,7 @@ Master-Detail view also called as Hierarchical or Nested Grid can be used to dis
 
 
 
-
+{% highlight xml %}
 
 			<Window x:Class="SimpleApplication.MainWindow"
 
@@ -847,7 +850,7 @@ Master-Detail view also called as Hierarchical or Nested Grid can be used to dis
 
 			</Window>
 
-
+{% endhighlight %}
 
 8. Execute the application; Grid is loaded with Master Details Grid. Click the first record’s expander to render the following output.
 
@@ -857,6 +860,6 @@ Master-Detail view also called as Hierarchical or Nested Grid can be used to dis
 
 
 
-   _Master-Details view DataGrid_
-   {:.prettyprint}
+   Master-Details view DataGrid
+   {:.caption}
 

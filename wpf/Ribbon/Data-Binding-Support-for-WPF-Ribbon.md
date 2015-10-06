@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data-Binding-Support-for-WPF-Ribbon
+title: Data Binding Support for WPF Ribbon | Ribbon | WPF | Syncfusion
 description: data binding support for wpf ribbon
 platform: wpf
 control: Ribbon
@@ -206,11 +206,17 @@ Binding the items source property is demonstrated in the code below.
 
 <table>
 <tr>
-<td>
-<sync:Ribbon ItemsSource="{Binding SampleList}" Name="ribbon"></sync:Ribbon></td></tr>
+{% highlight xml %}
+<sync:Ribbon ItemsSource="{Binding SampleList}" Name="ribbon">
+</sync:Ribbon>
+{% endhighlight %}</tr>
 <tr>
-<td>
-Binding binding = new Binding("SampleList");binding.Source = this;ribbon.SetBinding(Ribbon.ItemsSourceProperty, binding);</td></tr>
+{% highlight c# %}
+Binding binding = new Binding("SampleList");
+binding.Source = this;
+ribbon.SetBinding(Ribbon.ItemsSourceProperty, binding);
+{% endhighlight %}
+</tr>
 </table>
 
 

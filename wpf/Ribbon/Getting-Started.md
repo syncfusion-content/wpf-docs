@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | Ribbon | WPF | Syncfusion
 description: getting started
 platform: wpf
 control: Ribbon
@@ -164,7 +164,7 @@ This section explains how to create and configure the QAT (Quick Access Toolbar)
 
 QAT Items can be added as follows: 
 
- {% highlight xml %}
+{% highlight xml %}
 
     
 
@@ -918,7 +918,6 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
     </RibbonTabs>
 	
 	~~~
-    {:.prettyprint }
 
 
 
@@ -932,7 +931,7 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
     <XmlDataProvider Source="Data/Data.xml" x:Key="xmlSource" XPath="RibbonTabs"/> 
 	
 	~~~
-    {:.prettyprint }
+    
 
 
 
@@ -1037,7 +1036,7 @@ XML file can also be used as ItemsSource for the Ribbon. The following example i
     </syncfusion:Ribbon>
 	
 	~~~
-    {:.prettyprint }
+    
 
 
 

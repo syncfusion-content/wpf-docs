@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection
+title: Selection | SfDataGrid | WPF | Syncfusion
 description: Selection
 platform: wpf
 control: SfDataGrid
@@ -28,7 +28,7 @@ N> HeaderRows and TableSummaryRows do not have support for selection.
 
 SfDataGrid control provides the following properties for Selection.
 
-_Selection properties table_
+Selection properties table
 
 <table>
 <tr>
@@ -146,8 +146,8 @@ When you click on button that contains above code example, all the rows or cells
 ![](Features_images/Features_img132.png)
 
 
-_DataGrid with SelectAll () method_
-
+DataGrid with SelectAll () method
+{:.caption}
 * ClearSelections – Clears all selection in Grid.
 
 The following code example illustrates how to use ClearSelections(bool exceptCurrentRow). When exceptCurrentRow is set to true, the current row is not cleared; otherwise, all the selections are cleared.
@@ -200,8 +200,8 @@ The current cell is moved to third column (‘0’ based index), second row in s
 
 
 
-_DataGrid with MoveCurrentCell method_
-
+DataGrid with MoveCurrentCell method
+{:.caption}
 
 
 * ScrollInView – You can scroll the view to a particular record using ScrollInView (RowColumnIndex rowColumnIndex) method where you can view the record that is not in view also.
@@ -482,8 +482,8 @@ The following screenshot shows a DataGrid in Row Navigation Mode.
 
 
 
-_DataGrid in Row Navigation Mode_
-
+DataGrid in Row Navigation Mode
+{:.caption}
 The following screenshot shows a DataGrid in Cell Navigation Mode.
 
 
@@ -492,8 +492,8 @@ The following screenshot shows a DataGrid in Cell Navigation Mode.
 
 
 
-_DataGrid in Cell Navigation Mode_
-
+DataGrid in Cell Navigation Mode
+{:.caption}
 ## Cell Selection
 
 DataGrid control provides an interactive support for selecting cells in different mode with smooth and ease manner. 
@@ -553,8 +553,8 @@ The following screenshot shows a DataGrid inCell Selection.
 
 
 
-_DataGrid in Cell selection_
-
+DataGrid in Cell selection
+{:.caption}
 ### Customizing Selection operations
 
 Selection related operations are handled in Selection Controllers of SfDataGrid and it is possible to override and customize the Selection Controller to achieve some custom behaviors. The selection controller class hierarchy is shown as follows.
@@ -565,18 +565,17 @@ Selection related operations are handled in Selection Controllers of SfDataGrid 
 
 
 
-_Selectiom Operations_
-
+Selectiom Operations
+{:.caption}
 The GridSelectionController and GridCellSelectionController have been derived from GridBaseSelectionController that contains abstract methods and properties. You can customize the selection behaviors in two different controllers; GridSelectionConroller and GridCellSelectionController.
 
 * GridSelectionController – GridSelectionController is responsible for Row selection. The selection related operations are handled by this controller when SfDataGrid.SelectionUnit is set as Row.
 * GridCellSelectionController – GridCellSelectionController is responsible for Cell selection. The selection related operations are handled by this controller when SfDataGrid.SelectionUnit is set as Cell or Any.
 
- Properties
+Properties
 
 GridBaseSelectionController contains the following properties to handle the selection.
 
-_GridBaseSelectionController properties table_
 
 <table>
 <tr>
@@ -620,7 +619,6 @@ Methods
 
 GridBasSelectionController contains some important methods to handle selection as follows.
 
-_GridBasSelectionController methods table_
 
 <table>
 <tr>
@@ -668,7 +666,8 @@ Invoked when AutoScroller scrolls the rows or columns.</td></tr>
 CheckIsLastRow</td><td>
 Returns the value indicating whether the current row is last row for all parent and child grids.</td></tr>
 </table>
-_GridSelectionController methods table_
+
+GridSelectionController methods table
 
 <table>
 <tr>
@@ -722,7 +721,6 @@ Methods
 
 The following list provides some important methods that is defined in GridSelectionController.
 
-_GridSelectionController methods table_
 
 <table>
 <tr>
@@ -872,7 +870,6 @@ You can customize the Cell selection by overriding GridCellSelectionController t
 
 The following list provides some important public methods that are defined in GridCellSelectionController.
 
-_GridCellSelectionController methods table_
 
 <table>
 <tr>
@@ -1109,7 +1106,6 @@ GridCurrentCellManager provides support to edit and navigate current cell naviga
 
 Properties:
 
-_Property Table_
 
 <table>
 <tr>
@@ -1133,7 +1129,6 @@ Checks the value of current cell. Returns True when the current cell column base
 
  Methods:
 
-_Methods Table_
 
 <table>
 <tr>
@@ -1151,9 +1146,7 @@ Ends an edit operation in current cell.</td></tr>
 </table>
 
 
- Events:
-
-_Eevents Table_
+Events:
 
 <table>
 <tr>
@@ -1194,7 +1187,7 @@ The following list provides you navigation on Grid cell in DataGrid. It needs a 
 
 This list provides you navigation behavior with Single selection mode. In all cases selection is also changed.
 
-_Navigation Table_
+Navigation Table
 
 <table>
 <tr>
@@ -1353,7 +1346,6 @@ This event is triggered when the paste operation is performing for each cell. 
 
 In SfDataGrid.GridCopyPaste contains the following methods for performing clipboard operations from coding.
 
-_Methods_
 
 <table>
 <tr>
@@ -1418,7 +1410,7 @@ this.sfdatagrid.GridCopyPaste = new CustomCopyPaste(sfdatagrid);
 
 {% endhighlight %}
 
-_Copy_
+Copy
 
 <table>
 <tr>
@@ -1464,7 +1456,7 @@ In this method, based on row data and column it gets the corresponding cell valu
 </table>
 
 
-_Cut_
+Cut
 
 <table>
 <tr>
@@ -1485,7 +1477,7 @@ Property in rowdata corresponding to column resets it to back to its default val
 </table>
 
 
-_Paste_
+Paste
 
 <table>
 <tr>
@@ -1549,24 +1541,24 @@ The following layout shows the method flow in GridCutCopyPaste andwhere you can 
 
 
 
-_Copy Operation_
-
+Copy Operation
+{:.caption}
 
 
 ![](Features_images/Features_img140.png)
 
 
 
-_Cut Operation_
-
+Cut Operation
+{:.caption}
 
 
 ![](Features_images/Features_img141.png)
 
 
 
-_Paste Operation_
-
+Paste Operation
+{:.caption}
 ### How to
 
 ### How to copy one cell and paste into many cells
@@ -1985,7 +1977,6 @@ public class CustomCopyPaste  : GridCutCopyPaste
 
 This following table differentiates GridCurrentItem and SelectedItem.
 
-_Difference between CurrentItem and SelectedItem_
 
 <table>
 <tr>
@@ -2169,4 +2160,5 @@ The following screenshot illustrates the output. To differentiate you can use Ro
 
 
 
-_Changed Foreground of SelectedRow_
+Changed Foreground of SelectedRow
+{:.caption}

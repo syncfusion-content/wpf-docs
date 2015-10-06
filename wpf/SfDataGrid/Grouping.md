@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping
+title: Grouping | SfDataGrid | WPF | Syncfusion
 description: grouping
 platform: wpf
 control: SfDataGrid
@@ -17,11 +17,11 @@ A Group represents a collection of records that belong to a particular category.
 
 The records having identical values in the grouped column are combined to form a Group. Each Group is identified by its GroupCaptionRow that is expanded to get the underlying records into view. The GroupCaptionRow carries the information about a particular Group like the Group name, number of items (records) in the Group, etc. It also contains expander that allows you to expand or collapse the Groups individually.
 
-Properties
+###Properties
 
 The following are the properties used while Grouping.
 
-_Grouping property table_
+
 
 <table>
 <tr>
@@ -95,8 +95,8 @@ The following screenshot illustrates Group or Ungroup the Column in different wa
 
 
 
-_DataGrid Grouping by dragging and dropping column header to GroupDropArea_
-
+DataGrid Grouping by dragging and dropping column header to GroupDropArea
+{:.caption}
 
 
 * By adding the GroupColumnDescription object to SfDataGrid,GroupColumnDescriptions__collections in code contains the following properties:
@@ -196,8 +196,8 @@ The following screenshot displays the output.
 
 
 
-_DataGrid with Grouped columns_
-
+DataGrid with Grouped columns
+{:.caption}
 ## Ungroup the Column
 
 You can ungroup the grouped column in following ways:
@@ -209,8 +209,8 @@ You can ungroup the grouped column in following ways:
 ![](Features_images/Features_img89.png)
 
 
-_Ungrouping the column by dragging and dropping the corresponding GroupDropAreaItem to column header._
-
+Ungrouping the column by dragging and dropping the corresponding GroupDropAreaItem to column header.
+{:.caption}
 
 
 * Click the close button in GroupDropAreaItem.
@@ -221,8 +221,8 @@ _Ungrouping the column by dragging and dropping the corresponding GroupDropAreaI
 
 
 
-_Ungrouping the column by clicking the close button in GroupDropAreaItem_
-
+Ungrouping the column by clicking the close button in GroupDropAreaItem
+{:.caption}
 
 
 * Remove the corresponding GroupColumnDescription entry from SfDataGrid.GroupColoumnDescriptions Collection.
@@ -264,8 +264,8 @@ for (int i = groups.Count-1; i >= 0 ; i--)
 
 
 
-_Sorted Grouped Columns using sorting indicator in GroupDropAreaItem_
-
+Sorted Grouped Columns using sorting indicator in GroupDropAreaItem
+{:.caption}
 You can freeze the Grouped header. DataGrid provide an interactive support to Freeze the group caption header while scrolling the Grid vertically. Set SfDataGrid_._AllowFrozenGroupHeaders property to ‘true’ in SfDataGrid. The following code example illustrates how to freeze the group caption header. 
 
 
@@ -360,8 +360,8 @@ The following screenshot displays the output.
 ![](Features_images/Features_img92.png)
 
 
-_Freezed group caption header_
-
+Freezed group caption header
+{:.caption}
 The following statements describe you the methods that participate in Expand and Collapse of groups. DataGrid control enables you to expand or collapse the Group by clicking the expander or Group Caption Row. The following methods help to Expand or Collapse the groups in code behind:
 
 * SfDataGrid.ExpandAllGroup(): This method enables you to expand all the groups.
@@ -584,10 +584,6 @@ The following code example defines how to set the custom converter for group des
 {% highlight xml %}
 
 
-      
-
-
-
 <Window.Resources>
 
 <local:GroupDateTimeConverter x:Key="customGroupConverter">
@@ -631,10 +627,10 @@ The following screenshot displays the output.
 
 
 ![](Features_images/Features_img93.png)
+{:.caption}
 
 
-
-_DataGrid with Custom Grouping_
+DataGrid with Custom Grouping
 
 ## How To
 
@@ -701,4 +697,5 @@ The following screenshot displays Group Columns as GroupDropAreaText in GroupDro
 
 
 
-_Group Columns as GroupDropArea Text in GroupDropArea_
+Group Columns as GroupDropArea Text in GroupDropArea
+{:.caption}

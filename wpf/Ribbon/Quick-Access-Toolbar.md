@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Quick-Access-Toolbar
+title: Quick Access Toolbar | Ribbon | WPF | Syncfusion
 description: quick access toolbar
 platform: wpf
 control: Ribbon
@@ -24,11 +24,22 @@ Common application commands like Save, Close, Print, and so on, are executed on 
 
 <table>
 <tr>
-<td>
-{% highlight xml %}<ribbon:Ribbon.QuickAccessToolBar><ribbon:QuickAccessToolBar><ribbon:RibbonButton ribbon:Ribbon.KeyTip="1" Command="ApplicationCommands.Close"/><ribbon:RibbonButton ribbon:Ribbon.KeyTip="2" Command="ApplicationCommands.Save"></ribbon:QuickAccessToolBar></ribbon:Ribbon.QuickAccessToolBar>{% endhighlight %}</td></tr>
+{% highlight xml %}
+<ribbon:Ribbon.QuickAccessToolBar>
+<ribbon:QuickAccessToolBar>
+<ribbon:RibbonButton ribbon:Ribbon.KeyTip="1" Command="ApplicationCommands.Close"/>
+<ribbon:RibbonButton ribbon:Ribbon.KeyTip="2" Command="ApplicationCommands.Save">
+</ribbon:QuickAccessToolBar></ribbon:Ribbon.QuickAccessToolBar>
+{% endhighlight %}
+</tr>
 <tr>
-<td>
-{% highlight C# %}RibbonButton rr = new RibbonButton();rr.SmallIcon = new BitmapImage(new Uri("/../SampleImages/Bold16.png", UriKind.Relative));rr.SizeForm = SizeForm.ExtraSmall;RibbonWindow.QuickAccessToolBar.Items.Add(rr);{% endhighlight %}</td></tr>
+{% highlight C# %}
+RibbonButton rr = new RibbonButton();
+rr.SmallIcon = new BitmapImage(new Uri("/../SampleImages/Bold16.png", UriKind.Relative));
+rr.SizeForm = SizeForm.ExtraSmall;
+RibbonWindow.QuickAccessToolBar.Items.Add(rr);
+{% endhighlight %}
+</tr>
 </table>
 
 
@@ -58,11 +69,23 @@ The following code sample illustrates how you can synchronize Quick Access Toolb
 
 <table>
 <tr>
-<td>
-{% highlight xml %}<syncfusion:Ribbon.ApplicationMenu>     <syncfusion:ApplicationMenu IsPopupOpen="False">          <syncfusion:SimpleMenuButton  Name="appMenuSave" Label="Save" Icon="/Save.png" syncfusion:RibbonCommandManager.SynchronizedItem="Save"/>     </syncfusion:ApplicationMenu></syncfusion:Ribbon.ApplicationMenu><syncfusion:QuickAccessToolBar.QATMenuItems><syncfusion:RibbonButton  Name="qatMenuSave" Label="Save" syncfusion:RibbonCommandManager.SynchronizedItem="Save"/></syncfusion:QuickAccessToolBar.QATMenuItems>{% endhighlight %}</td></tr>
+{% highlight xml %}
+<syncfusion:Ribbon.ApplicationMenu>     
+<syncfusion:ApplicationMenu IsPopupOpen="False">          
+<syncfusion:SimpleMenuButton  Name="appMenuSave" Label="Save" Icon="/Save.png" syncfusion:RibbonCommandManager.SynchronizedItem="Save"/>     
+</syncfusion:ApplicationMenu>
+</syncfusion:Ribbon.ApplicationMenu>
+<syncfusion:QuickAccessToolBar.QATMenuItems>
+<syncfusion:RibbonButton  Name="qatMenuSave" Label="Save" syncfusion:RibbonCommandManager.SynchronizedItem="Save"/>
+</syncfusion:QuickAccessToolBar.QATMenuItems>
+{% endhighlight %}
+</tr>
 <tr>
-<td>
-{% highlight C# %}RibbonCommandManager.SetSynchronizedItem(appMenuSave, "Save");RibbonCommandManager.SetSynchronizedItem(qatMenuSave, "Save");{% endhighlight %}</td></tr>
+{% highlight C# %}
+RibbonCommandManager.SetSynchronizedItem(appMenuSave, "Save");
+RibbonCommandManager.SetSynchronizedItem(qatMenuSave, "Save");
+{% endhighlight %}
+</tr>
 </table>
 
 ![](Quick-Access-Toolbar_images/Quick-Access-Toolbar_img3.jpeg)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UI-Automation
+title: UI Automation | SfDataGrid | WPF | Syncfusion
 description: ui automation
 platform: wpf
 control: SfDataGrid
@@ -25,7 +25,7 @@ SfDataPager and SfMultiColumnDropDownControl support Coded UI Test automation.
 
 Provided here are three levels of support in Coded UI Test automation.
 
-_Coded UI Test_
+Coded UI Test
 
 <table>
 <tr>
@@ -73,7 +73,7 @@ This topic shows you how to create a CodedUITest project and test the SfDataGrid
 
 
 
-
+{% highlight c# %}
 
 			using Syncfusion.UI.Xaml.Grid;
 
@@ -87,7 +87,7 @@ This topic shows you how to create a CodedUITest project and test the SfDataGrid
 
 			}
 
-
+{% endhighlight %}
 
 2. Build the application and launch the .exe file from the bin folder.          
 3. Create a Coded UI Test Project as shown in the following screenshot.               
@@ -98,16 +98,16 @@ This topic shows you how to create a CodedUITest project and test the SfDataGrid
 
 
 
-   _Add New Project_
-
+   Add New Project
+   {:.caption}
 4. After you create a new Coded UI project, a CUIT file is added automatically and the Generate Code dialog box appears. In this, choose Record actions, edit UI map or add assertions.
 
    ![](Features_images/Features_img224.png)
 
 
 
-   _Generate Code for Coded UI Test_
-
+   Generate Code for Coded UI Test
+   {:.caption}
 5. Now the Coded UI project Visual Studio gets minimized and CodedUITestBuilder appears in the bottom right corner of your window. You can record the actions by clicking Start Recording in CodedUITestBuilder.
 
 
@@ -116,16 +116,16 @@ This topic shows you how to create a CodedUITest project and test the SfDataGrid
 
 
 
-   _CodedUITestBuilder_
-
+   CodedUITestBuilder
+   {:.caption}
 6. You can also open the CodedUITestBuilder from existing Coded UI project by right clicking on the CodedUITestMethod1 in CUIT file and clicking the Generate Code For Coded UI Test as shown in the following screenshot. You can see the same CodedUITestBuilder in the bottom right corner of the window.
 
    ![](Features_images/Features_img226.png)
 
 
 
-   _CodedUITestMethod_
-
+   CodedUITestMethod
+   {:.caption}
 7. Now you can drag the Crosshairs on to the UI elements of your WPF SfDataGrid application and it shows the available properties of the inner UI elements in SfDataGrid.
 8. You can record the actions made on UI elements by clicking Record button on the CodedUITest builder. For example you can record the action of changing the cell value in SfDataGrid. Click the Pause button to finish the record.
 
@@ -135,12 +135,12 @@ This topic shows you how to create a CodedUITest project and test the SfDataGrid
 
 
 
-   _CodedUITest_
-
+   CodedUITest
+   {:.caption}
 9. Once the record is completed, click the GenerateCode icon in CodedUITestBuilder for generate a test method. Then close the CodedUITestBuilder and you can see the generated code for cell value changed action as follows.
 
 
-
+{% highlight c# %}
 
 
 			public void RecordedMethod1()
@@ -161,7 +161,7 @@ This topic shows you how to create a CodedUITest project and test the SfDataGrid
 
 			 }
 
-
+{% endhighlight %}
 
 
 10. You can also create an assertion to check the modified cell value. Drag the crosshair to the modified cell, and the Assertion window appears. The properties for control (Cell) is now listed in the Assertion dialog box. You can add assertion by clicking the Generate Code button in CodedUITestBuilder.
@@ -170,22 +170,22 @@ This topic shows you how to create a CodedUITest project and test the SfDataGrid
 
 
 
-    _Assertion window_
-
+    Assertion window
+    {:.caption}
 11. After all tests and assertion are created, right-click on the Test method and click Run Tests to run the test as follows.
 
     ![](Features_images/Features_img229.png)
 
 
 
-    _Run Test_
-	{:.prettyprint}
+    Run Test
+	{:.caption}
 
 ### Tables for Properties 
 
 The following properties are for each of the UI elements in SfDataGrid.
 
-_UI Elements:_
+UI Elements:
 
 <table>
 <tr>
@@ -249,7 +249,7 @@ GridIndentCell</th><th>
 
 The following properties are for SfMultiColumnDropDownControl.
 
-_SfMultiColumnDropDownControl Properties_
+SfMultiColumnDropDownControl Properties
 
 <table>
 <tr>
@@ -265,7 +265,7 @@ AllowAutoCompleteAllowNullInputAllowImmediatePopupAllowIncrementalFilteringAllow
 
 The following properties are for SfDataPager.
 
-_SfDataPager Properties_
+SfDataPager Properties
 
 <table>
 <tr>
@@ -324,8 +324,8 @@ While installing the UFT, make sure that the WPF Add-in is installed. Otherwise,
 
 
 
-_UFT - WPF Add in_
-
+UFT - WPF Add in
+{:.caption}
 ### Essential Syncfusion QTP Installation
 
 The following procedure illustrates how to install Essential Test Studio:
@@ -338,8 +338,8 @@ N> Setup - Syncfusion Essential QuickTest Professional dialog box opens.
 
 
 
-_Setup - Essential QuickTest Professional Welcome screen_
-
+Setup - Essential QuickTest Professional Welcome screen
+{:.caption}
 Click Next. The User Information dialog box opens. 
 
 
@@ -348,8 +348,8 @@ Click Next. The User Information dialog box opens.
 
 
 
-_User Information screen_
-
+User Information screen
+{:.caption}
 Enter the User Name, Organization and Unlock Key in the corresponding text boxes provided. 
 
 Click Next. 
@@ -364,8 +364,8 @@ Select the installation folder dialog box opens.
 
 
 
-_Select the installation folder_
-
+Select the installation folder
+{:.caption}
 To install in the default location, click Next. 
 
 N> You can also browse to choose a location by clicking Browse.
@@ -375,8 +375,8 @@ Installation type dialog box opens.
 ![](Features_images/Features_img234.png)
 
 
-_Installation type_
-
+Installation type
+{:.caption}
 Choose from the options listed. For example, to install the complete setup, click Complete.
 
 Click Next. The Ready to Install dialog box opens.
@@ -387,8 +387,8 @@ Click Next. The Ready to Install dialog box opens.
 
 
 
-_Ready to install screen_
-
+Ready to install screen
+{:.caption}
 Click Install to continue with the installation.
 
 ### Configuration:
@@ -443,8 +443,8 @@ The following is a list of chapters containing information that guide you throug
 
 
 
-   _QuickTest Professional - Add-In Manager_
-
+   QuickTest Professional - Add-In Manager
+   {:.caption}
 3. Click OK. 
  
    N> The QuickTest Professional – [Start Page] window opens. There are two tabs namely Start Page and Test in the main pane of the window. The content under the Start Page tab is displayed by default.
@@ -455,8 +455,8 @@ The following is a list of chapters containing information that guide you throug
 
 
 
-   _Quick Test Professional – [Start Page]_
-
+   Quick Test Professional – [Start Page]
+   {:.caption}
 4. Click the New Test icon in the Start Page. 
 
 
@@ -465,8 +465,8 @@ The following is a list of chapters containing information that guide you throug
 
 
 
-   _Quick Test Professional – [Start Page] showing New Test icon_
-
+   Quick Test Professional – [Start Page] showing New Test icon
+   {:.caption}
 5. A new test is created. 
    N> You can also create a new test by selecting the Test tab in the main pane of the window or Test sub-menu under the New menu in the menu bar.
 
@@ -477,28 +477,28 @@ The following is a list of chapters containing information that guide you throug
 
 
    ![](Features_images/Features_img239.png)
+   
 
 
-
-   _Quick Test Professional – [Test] Window showing Record tool_
-
+   Quick Test Professional – [Test] Window showing Record tool
+   {:.caption}
    N> Record and Run Settings dialog box opens.
 
    ![](Features_images/Features_img240.png)
 
-   _Record and Run Settings-Web tab_
-
+   Record and Run Settings-Web tab
+   {:.caption}
 7. Select the Windows Application tab. 
 
-   >_Note: The content under the tab is displayed._
+   N> The content under the tab is displayed.
 
    ![](Features_images/Features_img241.png)
 
 
 
-   _Record and Run Settings-Windows Applications_
- 
-   >_Note: The Record and run only option is selected by default._
+   Record and Run Settings-Windows Applications
+   {:.caption}
+   N> The Record and run only option is selected by default.
 
 
 
@@ -512,7 +512,7 @@ The following is a list of chapters containing information that guide you throug
 
 
 
-   N>The Application Details dialog box opens._
+   N>The Application Details dialog box opens.
 
 
 
@@ -520,8 +520,8 @@ The following is a list of chapters containing information that guide you throug
 
 
 
-   _Application Details_
-
+   Application Details
+   {:.caption}
 10. For Application field, browse and select the path of the application that has to be tested by clicking ![](Features_images/Features_img243.png)
 
     button.
@@ -545,8 +545,8 @@ The following is a list of chapters containing information that guide you throug
     ![](Features_images/Features_img245.png)
 
 
-    _Record and Run Settings with application location._
-
+    Record and Run Settings with application location.
+    {:.caption}
 15. Click OK. 
  
     N> The recording starts. The application in the given path is opened as shown in the following screenshot.
@@ -557,9 +557,9 @@ The following is a list of chapters containing information that guide you throug
 
 
 
-    _Application using SfDataGrid Recording_
-	{:.prettyprint}
-
+    Application using SfDataGrid Recording
+	{:.caption}
+ 
 ### Running a Test
 
 On recording, all the user actions performed in the control are just noted with the corresponding method names of the Syncfusion namespace. The errors can be checked while running a test. To run a test: 
@@ -573,8 +573,8 @@ N> Run dialog box opens. The Results Location tab is selected by default.
 
 
 
-_Run dialog_
-
+Run dialog
+{:.caption}
 ### Editing a Test
 
 The editing of a test can be done either in the Keyword view or in the Expert view. You can switch between these views by selecting the required tab at the bottom left of the QTP screen. 
@@ -589,8 +589,8 @@ The following image shows adding a script line to the Expert View pane.
 
 
 
-_Edit in Expert view_
-
+Edit in Expert view
+{:.caption}
 ### Editing in Keyboard View
 
 The keyword view is meant for people with no expertise in VB scripts. Keyword view contains the controls used, the user-actions or operations performed, values involved in the operation and the documentation summary in a table format. The controls used are listed under the Item header in a tree-view format as shown in the following screenshot:
@@ -599,8 +599,8 @@ The keyword view is meant for people with no expertise in VB scripts. Keyword vi
 
 
 
-_Edit in Keyword view_
-
+Edit in Keyword view
+{:.caption}
 ### Saving a Test
 
 Saving a test is as simple as saving any other document or picture. To save a test:
@@ -611,8 +611,8 @@ Saving a test is as simple as saving any other document or picture. To save a te
 
 
 
-_Save Test Dialog_        
-
+Save Test Dialog        
+{:.caption}
 2.Select the location, to save the file from the Look in drop-down list.                                     
 3.Type the name of the file to be saved in the File name text box.                                           
 4.Click Save.                                           
@@ -632,8 +632,8 @@ N> The Open Test dialog box opens with a list of saved tests.
 
 
 
- _Open Test dialog_
-
+ Open Test dialog
+ {:.caption}
 1.Select the required test.                                                   
 2.Click Open.                                               
 
@@ -643,7 +643,7 @@ N> The saved test is opened with its name and the complete path as the name of t
 
 ### Tables for Properties and Methods
 
-_SfDataGrid_
+SfDataGrid
 
 <table>
 <tr>
@@ -689,7 +689,8 @@ To EndEdit the current cell</th><th>
 NA</th><th>
 Void</th></tr>
 </table>
-_Properties_
+
+Properties
 
 <table>
 <tr>
@@ -718,11 +719,11 @@ The following images show QTP test for SfDataGrid.
 
 
 
-_SfDataGrid QTP Test_
+SfDataGrid QTP Test
+{:.caption}
 
 
-
-_SfMulticolumnDropDownControl_
+SfMulticolumnDropDownControl
 
 <table>
 <tr>
@@ -758,11 +759,11 @@ The following image shows the QTP Test for SfMultiColumnDropDownControl.
 
 
 
-_SfMultiColumnDropDownControl QTP Test_
+SfMultiColumnDropDownControl QTP Test
+{:.caption}
 
 
-
-_SfDataPager_
+SfDataPager
 
 <table>
 <tr>
@@ -784,4 +785,5 @@ Void</th></tr>
 
 
 
-_SfDataPager QTP Test_
+SfDataPager QTP Test
+{:.caption}

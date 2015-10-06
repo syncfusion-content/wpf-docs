@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LineBreaks-in-RibbonButton-Label
+title: LineBreaks in RibbonButton Label | Ribbon | WPF | Syncfusion
 description: linebreaks in ribbonbutton label
 platform: wpf
 control: Ribbon
@@ -17,11 +17,19 @@ Setting RibbonButton label in multiple lines:
 
 <table>
 <tr>
-<td>
-{% highlight xml %}<!--RibbonButton with IsMultiLine set to true-->        <syncfusion:RibbonButton Name="ribbonButton"  IsMultiLine="True" Label="Ribbon Button Label \nwill be displayed in \nmultiple lines"/>{% endhighlight %}</td></tr>
+{% highlight xml %}
+<!--RibbonButton with IsMultiLine set to true-->        
+<syncfusion:RibbonButton Name="ribbonButton"  
+IsMultiLine="True" 
+Label="Ribbon Button Label \nwill be displayed in \nmultiple lines"/>
+{% endhighlight %}
+</tr>
 <tr>
-<td>
-{% highlight C# %}//RibbonButton with IsMultiline set to trueribbonButton.IsMultiLine = true;ribbonButton.Label = "Ribbon Button Label \nwill be displayed in \nmultiple lines";{% endhighlight %}</td></tr>
+{% highlight C# %}
+//RibbonButton with IsMultiline set to trueribbonButton.IsMultiLine = true;
+ribbonButton.Label = "Ribbon Button Label \nwill be displayed in \nmultiple lines";
+{% endhighlight %}
+</tr>
 </table>
 
 

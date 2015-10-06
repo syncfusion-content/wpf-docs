@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Ribbon | WPF | Syncfusion
 description: overview
 platform: wpf
 control: Ribbon
