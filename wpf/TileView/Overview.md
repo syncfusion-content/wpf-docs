@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | TileView | wpf | Syncfusion
 description: overview
 platform: wpf
 control: TileView Control

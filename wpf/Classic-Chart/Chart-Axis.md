@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Axis
+title: Chart Axis | Chart(Classic) | wpf | Syncfusion
 description: Chart Axis
 platform: wpf
 control: Chart (Classic)
@@ -10,28 +10,25 @@ documentation: ug
 
 ## Indexed X Values
 
-
 By default points in a series are plotted against their X and Y values. However in some cases the X values are meaningless, they simply represent categories, and you do not want to plot the points against such X values. Such an X axis that ignores the X-values and simply uses the positional value of a point in a series is said to be indexed.
 
 The following code example could be used to make a series as Indexed.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <sfchart:ChartSeries IsIndexed="True" />
 
-
 {% endhighlight  %}
 {% highlight c# %}
-
-
-
 
 //Sets the series as indexed
 
 series.IsIndexed = true;            
 {% endhighlight  %}
+
+{% endtabs %}
 
 In the following figure, the first chart shows a column chart that is not-indexed while the second chart shows a column chart whose x-axis is indexed.
 
@@ -59,7 +56,6 @@ Essential Chart for WPF lets you customize the range and intervals that are disp
 
 You can customize the range and intervals that are displayed in the axes by using the following ChartAxis properties.
 
-_ChartAxis Properties_
 
 <table>
 <tr>
@@ -76,7 +72,7 @@ A bool property specifies whether the range of the axis should be set automatica
 
 With the default auto range calculation setting (IsAutoSetRange=true), the following properties let you customize the automatic range calculation.
 
-_ChartAxis Properties_
+
 
 <table>
 <tr>
@@ -104,13 +100,9 @@ A boolean property used to calculate the axis range based on the modified data v
 
 N> The DesiredIntervalsCount will not be taken into account when the interval is set.
 
-
-
+{% tabs %}
 
 {% highlight xml %}
-
-
-
 
 <sfchart:Chart>
 
@@ -131,10 +123,6 @@ N> The DesiredIntervalsCount will not be taken into account when the interval is
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
-
 Chart1.Areas[0].SecondaryAxis.IsAutoSetRange = true;
 
 Chart1.Areas[0].SecondaryAxis.RangePadding = ChartRangePaddingType.Additional;
@@ -142,6 +130,8 @@ Chart1.Areas[0].SecondaryAxis.RangePadding = ChartRangePaddingType.Additional;
 Chart1.Areas[0].SecondaryAxis.DesiredIntervalsCount = 5;
 
 {% endhighlight  %}
+{% endtabs %}
+
 
 ![](Chart-Controls_images/Chart-Controls_img131.png)
 
@@ -159,7 +149,6 @@ Chart1.Areas[0].SecondaryAxis.DesiredIntervalsCount = 5;
 
 With the auto range calculation turned off (IsAutoSetRange=false), use the following properties to format the chart on the custom range and interval length to use. 
 
-_ChartAxis Properties_
 
 <table>
 <tr>
@@ -195,10 +184,10 @@ An integer property that indicates the length of the MinimumInterval in the cust
 MinimumDateTimeInterval</td><td>
 The frequency at which the MinimumDateTimeInterval should be rendered. Specified in TimeSpan, when the ValueType=DateTime. The DateTime Interval will not fall below this value.</td></tr>
 </table>
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 
 <sfchart:Chart>
@@ -221,9 +210,6 @@ The frequency at which the MinimumDateTimeInterval should be rendered. Specified
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
 Chart1.Areas[0].SecondaryAxis.IsAutoSetRange = false;
 
 Chart1.Areas[0].SecondaryAxis.Range = new DoubleRange(0, 100);
@@ -236,7 +222,7 @@ Chart1.Areas[0].SecondaryAxis.MinimumInterval = 25;
 {% endhighlight  %}
 
 
-
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img134.png)
 
@@ -252,8 +238,6 @@ Some charts need to render between TickLines so that the series segments will no
 
 However, in some cases we require either of the types to be consistent. For this we could use the RangeCalculationMode property. 
 
-_ChartAxis Property_
-
 <table>
 <tr>
 <th>
@@ -265,8 +249,10 @@ RangeCalculationMode</td><td>
 An enum property used to specify the segment position. This property can take two values:AdjustAcrossChartTypes: Segment will render between the ticks. Segment position for this mode will be BetweenTicks.ConsistentAcrossChartTypes: Segment will render from the 1st axis. Segment position for this mode will be OnTicks. In this case, column charts will also be drawn with same range as other charts, making the first and last segments hidden partially. This is the default mode.</td></tr>
 </table>
 The following code example illustrates how to set the Range Calculation mode for the chart axis.
-{% highlight xml %}
 
+{% tabs %}
+
+{% highlight xml %}
 
 <syncfusion:ChartArea>
 
@@ -298,6 +284,9 @@ chart.Areas[0].PrimaryAxis.RangeCalculationMode = RangeCalculationMode.Consisten
 
 {% endhighlight  %}
 
+{% endtabs %}
+
+
 ![](Chart-Controls_images/Chart-Controls_img135.png)
 
 
@@ -312,8 +301,6 @@ It is possible to get the Range that is visible in the ChartAxis by using the Ch
 {% highlight c# %}
 
 
-
-
 DoubleRange range = this.Chart1.Areas[0].PrimaryAxis.VisibleRange;
 
 MessageBox.Show("Start " + range.Start.ToString() +", "+ "End " + range.End.ToString());
@@ -322,11 +309,8 @@ MessageBox.Show("Start " + range.Start.ToString() +", "+ "End " + range.End.ToSt
 
 N> Visible Range can also be calculated for the changed value of the range by using the Axis.RangeChanged event.  For details, see_ Chart Axis Events
 
-See Also
 
-Indexed X Values
-
-Support to Set Axis Range Based on the Data Value
+### Support to Set Axis Range Based on the Data Value
 
 This feature implements support for sharing a data range between axes, and concurrently both axes will have appropriate visible labels rendered on them based on the modified data range at run time.
 
@@ -336,7 +320,6 @@ In a real-time data charting scenario such as a stock analysis, if the number of
 
 ### Properties
 
-_Properties_
 
 <table>
 <tr>
@@ -363,6 +346,8 @@ Open the Sample Browser and select the following,
 
 ### Adding IsSetDataValueRange to an Application
 
+{% tabs %}
+
 {% highlight xml %}
   <syncfusion:ChartAxis x:Name="YAxis" IsAutoSetRange="True" RangeCalculationMode="Default" RangePadding="Normal" IsSetDataValueRange="True"/>
 {% endhighlight  %}
@@ -370,6 +355,7 @@ Open the Sample Browser and select the following,
             this.YAxis.IsAutoSetRange = true;            this.YAxis.IsSetDataValueRange = true;
 {% endhighlight  %}
 
+{% endtabs %}
 
 ![C:/Users/ganesan/Desktop/Before.png](Chart-Controls_images/Chart-Controls_img137.png)
 
@@ -384,10 +370,10 @@ Open the Sample Browser and select the following,
 Chart for WPF allows you to show/hide the grid lines in the Chart Area using some attached properties in ChartArea. It also allows you to customize the look and feel of the grid lines using some attached properties.
 
 The following lines of code can be used to hide the grid lines of an axis.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <Window.Resources>
 
@@ -421,22 +407,22 @@ The following lines of code can be used to hide the grid lines of an axis.
 {% highlight c# %}
 
 
-
-
 ChartArea.SetShowGridLines(Chart1.Areas[0].PrimaryAxis, false);
 
 ChartArea.SetShowGridLines(Chart1.Areas[0].SecondaryAxis, false);
 {% endhighlight  %}
 
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img139.jpeg)
 
 
 
 Grid lines style can be changed using the ChartArea.GridLineStroke attached property as follows.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
 
 
 <sfchart:ChartArea Background="LightGray" GridBackground="White">
@@ -485,9 +471,6 @@ Grid lines style can be changed using the ChartArea.GridLineStroke attached prop
 {% highlight c# %}
 
 
-
-
-
 Pen pen = new Pen(Brushes.LightGray, 0.75);
 
 DashStyle style = new DashStyle();
@@ -508,7 +491,7 @@ Pen pen1 = new Pen(Brushes.LightGray, 0.75);
 
 ChartArea.SetGridLineStroke(Chart1.Areas[0].SecondaryAxis, pen1);
 {% endhighlight  %}
-
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img140.jpeg)
 
@@ -517,9 +500,9 @@ ChartArea.SetGridLineStroke(Chart1.Areas[0].SecondaryAxis, pen1);
 ### Small Tick Lines
 
 The number of small ticks to be drawn per interval can be controlled using the SmallTicksPerInterval property. The following lines of code can be used to change the number of small ticks to draw per interval.
+
+{% tabs %}
 {% highlight xml %}
-
-
 
 
 <Window.Resources>
@@ -553,31 +536,21 @@ The number of small ticks to be drawn per interval can be controlled using the S
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
-
 Chart1.Areas[0].PrimaryAxis.SmallTicksPerInterval= 4;
 
 Chart1.Areas[0].SecondaryAxis.SmallTicksPerInterval = 6;
 {% endhighlight  %}
-
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img141.jpeg)
 
 
-
-See Also
-
-ChartAxis Lines, ChartAxis OriginLines, Chart StripLines
-
 ## ChartAxis Lines
 
 The ChartAxis line and tick lines can be customized using the LineStroke and TickLineStroke properties as follows.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <sfchart:Chart>
 
@@ -632,10 +605,6 @@ The ChartAxis line and tick lines can be customized using the LineStroke and Tic
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
-
 Pen pen = new Pen(Brushes.Blue, 2);
 
 Chart1.Areas[0].PrimaryAxis.LineStroke = pen;
@@ -657,14 +626,9 @@ ChartArea.SetShowGridLines(Chart1.Areas[0].PrimaryAxis, false);
 ChartArea.SetShowGridLines(Chart1.Areas[0].SecondaryAxis, false);
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img142.jpeg)
-
-
-
-See Also
-
-ChartAxis GridLines,ChartAxis OriginLines, Chart StripLines
 
 ## Chart Striplines
 
@@ -673,8 +637,6 @@ Chart for WPF enables the user to highlight a specific area of the chart by addi
 Start, Frequency and Width of the line
 
 The following properties let you customize the start, frequency and width of the lines.
-
-_ChartStripLine Properties_
 
 <table>
 <tr>
@@ -709,7 +671,6 @@ A double property that specifies until where the striplines should repeat.</td><
 
 ### Appearance
 
-_Properties_
 
 <table>
 <tr>
@@ -727,8 +688,6 @@ A Pen type used to specify the border style around the strip area.</td></tr>
 </table>
 
 ### Text Label
-
-_Text Label_
 
 <table>
 <tr>
@@ -754,9 +713,9 @@ A Brush for the text background.</td></tr>
 </table>
 
 ### Code Example
+
+
 {% highlight xml %}
-
-
 
 
 <sfchart:Chart>
@@ -807,7 +766,9 @@ A Brush for the text background.</td></tr>
 
 </sfchart:Chart>
 {% endhighlight  %}
+
 To set the labels for the striplines, use the following code example.
+
 {% highlight c# %}
 
 
@@ -824,18 +785,12 @@ strip3.Text = new FormattedText("High", CultureInfo.CurrentCulture, FlowDirectio
 ![](Chart-Controls_images/Chart-Controls_img143.jpeg)
 
 
-
-See Also
-
-ChartAxis Lines, ChartAxis GridLines, ChartAxis OriginLines, Chart StripLines
-
-Stripline Customization
+### Stripline Customization
 
 Essential Chart for WPF now supports customizing the position of strip line text. Users can set the strip line text using the TextOffsetX and TextOffsetY properties. 
 
 ### Property Details
 
-_Property_
 
 <table>
 <tr>
@@ -864,10 +819,8 @@ double</td><td>
 ### Setting the Position of Strip Line Text
 
 The following code is used to set the position of strip line text.
+
 {% highlight c# %}
-
-
-
 
 ChartStripLine csY = new ChartStripLine();
 
@@ -899,10 +852,10 @@ After setting the offset:
 ## ChartAxis OriginLines
 
 Custom Origin Lines can be drawn for the X and Y axis by using the ChartArea.ShowOriginLine attached property as follows. The ChartArea.OriginLineStroke can be used to customize the look and feel.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <sfchart:ChartArea GridBackground="White">
 
@@ -950,9 +903,6 @@ Custom Origin Lines can be drawn for the X and Y axis by using the ChartArea.Sho
 {% highlight c# %}
 
 
-
-
-
 ChartArea.SetShowOriginLine(Chart1.Areas[0].PrimaryAxis, true);
 
 ChartArea.SetShowOriginLine(Chart1.Areas[0].SecondaryAxis, true);
@@ -976,19 +926,14 @@ Chart1.Areas[0].SecondaryAxis.Origin = 2;
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img146.jpeg)
-
-
-
-See Also
-
-ChartAxis Lines, ChartAxis GridLines, Chart StripLines
 
 ## Chart Axis Ticks
 
 Chart for WPF allows to customize the length of the Axis Ticks and SmallTicks by using the ChartAxis.TickSize and ChartAxis.SmallTicksize properties.
 
-_ChartAxis Property_
 
 <table>
 <tr>
@@ -1005,10 +950,9 @@ SmallTickSize</td><td>
 gets or sets the length of the axis small tick</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartArea.PrimaryAxis>
 
@@ -1020,9 +964,6 @@ gets or sets the length of the axis small tick</td></tr>
 {% highlight c# %}
 
 
-
-
-
 // Sets the Axis tick size.
 
 area.PrimaryAxis.TickSize = 7;
@@ -1031,23 +972,18 @@ area.PrimaryAxis.SmallTickSize = 3;
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 The following image illustrates Chart with Axis TickSize and SmallTickSize set.
 
 ![](Chart-Controls_images/Chart-Controls_img147.jpeg)
 
 
-
-See Also
-
-ChartAxis GridLines, ChartAxis Lines, ChartAxis OriginLines
-
-Support for customizing the Label position and TickLines along with the OrginAxis
+### Support for customizing the Label position and TickLines along with the OrginAxis
 
 This feature supports customizing the label position and TickLines along with the OrginAxis. Labels can be moved based on the AxisLabels type. Position of label will be changed based on LabelsPosition, and TickLines will be changed based on TickLinesPosition. 
 
 ### Properties 
-
-_Properties Table_
 
 <table>
 <tr>
@@ -1098,10 +1034,9 @@ Customizing the Label position and TickLines along with the OrginAxis
 You can customize the Label position and TickLines along with the OrginAxis using the properties given in the above table. 
 
 The following code illustrates this:
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartArea.SecondaryAxis >
 
@@ -1124,6 +1059,9 @@ The following code illustrates this:
 
 
 {% endhighlight  %}
+
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img148.png)
 
 
@@ -1141,7 +1079,7 @@ To view samples:
 
 WPF Chart enables to set the orientation of the ChartAxis. The default orientation of the ChartAxis is Horizontal. This property is mostly used in Multiple Axes Scenarios.
 
-_ChartAxis Property_
+
 
 <table>
 <tr>
@@ -1155,9 +1093,6 @@ gets / sets the orientation of the axis.</td></tr>
 </table>
 
 {% highlight xml %}
-
-
-
 
  <syncfusion:ChartArea Name="area">                    
 
@@ -1182,16 +1117,9 @@ The following image illustrates Chart with Y-axis orientation set as Horizontal.
 ![](Chart-Controls_images/Chart-Controls_img149.jpeg)
 
 
-
-See Also
-
-Inverted Axis, Opposed Axis, Multiple Axes
-
 ## Inverted Axis
 
 Essential Chart provides support for inverting the values on the axis. Data on an inverted axis is plotted in the opposite direction - Top to Bottom for Y-axis and Right to Left for X-axis. To enable this behavior, set the ChartAxis.IsInversed property to True.
-
-_ChartAxis Property_
 
 <table>
 <tr>
@@ -1204,10 +1132,9 @@ IsInversed</td><td>
 Indicates whether the axis should be reversed. When reversed, the axis will render points from right to left if horizontal, top to bottom when vertical, and clockwise if radial.</td></tr>
 </table>
 
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartArea>
 
@@ -1229,30 +1156,23 @@ Indicates whether the axis should be reversed. When reversed, the axis will rend
 {% highlight c# %}
 
 
-
-
-
 // Sets the Axis as inversed.
 
 chart.Areas[0].PrimaryAxis.IsInversed = true;
 
 chart.Areas[0].SecondaryAxis.IsInversed = true;                       
 {% endhighlight  %}
+
+{% endtabs %}
+
 The following image illustrates Chart with an Inversed Axis.
 
 ![](Chart-Controls_images/Chart-Controls_img150.png)
 
 
-
-See Also
-
-Chart Axis Orientation, Opposed Axis, Multiple Axes
-
 ## Opposed Axis
 
 For every Chart Type, there is an implied X-axis and Y-axis position, and by default all the X-axes and Y-axes will be rendered in that corresponding position. You can override this default behavior by setting the OpposedPosition property to True for an axis, which will cause it to be rendered in the opposite side of the implied position. This feature is also used with Multiple Axes, where you can position the Secondary axis opposite to the Primary axis.
-
-_ChartAxis Property_
 
 <table>
 <tr>
@@ -1266,8 +1186,6 @@ Gets / sets a value indicating whether axis should be in opposed position.</td><
 </table>
 
 {% highlight xml %}
-
-
 
 
 <syncfusion:ChartArea Name="area">                    
@@ -1290,18 +1208,12 @@ The following image illustrates Chart with Opposed Axis.
 
 ![](Chart-Controls_images/Chart-Controls_img151.jpeg)
 
-
-
-See Also
-
-Inverted Axis, Chart Axis Orientation, Opposed Axis
-
 ## Multiple Axes
 
 Chart is capable of rendering multiple axes in the same plot. Different series can be plotted against different axes as follows.
+
+
 {% highlight xml %}
-
-
 
 
 <sfchart:Chart Name="Chart1">
@@ -1350,10 +1262,6 @@ __For more details, refer to the sample in the following location:
 
 _...\My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Axis\Chart Multiple Opposed Axes Demo_
 
-See Also
-
-Chart Axis Orientation, Inverted Axis, Opposed Axis, Logarithmic Axis
-
 ## Axis Range Selection
 
 Essential Chart for WPF now supports axis range selection. This enables the user to select a particular range of a primary axis by using two cursors.  
@@ -1361,9 +1269,10 @@ Essential Chart for WPF now supports axis range selection. This enables the user
 Adding an Axis Range Selection
 
 To add axis range selction, set the EnableRangeSelection to True. The following code illustrates this.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
 
 
   <syncfusion:ChartArea Name="area" EnableRangeSelection="True" LineStroke="Maroon" SelectionStroke="LightPink" />
@@ -1371,9 +1280,6 @@ To add axis range selction, set the EnableRangeSelection to True. The following 
 
 {% endhighlight  %}
 {% highlight c# %}
-
-
- 
 
 chart1.Areas[0].EnableRangeSelection = true;
 
@@ -1385,6 +1291,9 @@ chart1.Areas[0].EnableRangeSelection = true;
 
             chart1.Areas[0].SelectionStroke = Brushes.LightPink;
 {% endhighlight  %}
+
+{% endtabs %}
+
 When the code runs, the following output displays.
 
 ![C:/Users/sujithas/Desktop/Assigned wrk/VOl2_2010/Feature/WPF/RangeSalection/sshot-1.png](Chart-Controls_images/Chart-Controls_img153.png)
@@ -1393,7 +1302,6 @@ When the code runs, the following output displays.
 
 ### Property Details
 
-_Property Table_
 
 <table>
 <tr>
@@ -1416,9 +1324,6 @@ StartValue Type: double EndValueType: double LineStrokeType: Brush SelectionStro
 
 Logarithmic values can be applied to the Chart. This is facilitated by the IsLogarithmic and LogarithmicBase properties. On setting the Axis.IsLogarithmic property, the Axis range, interval and padding will be plotted as per the log values provided. The LogarithmicBase value allows to set the base values for Logarithmic Axis.
 {% highlight c# %}
-
-
-
 
 // Add Data points to Chart
 
@@ -1468,10 +1373,10 @@ Essential Chart WPF is enhanced with minor grid lines and ticks when the axis is
 ### Adding Show Minor Grid Lines 
 
 Add Show Minor Grid Lines, by using the following code. 
+
+{% tabs %}
 {% highlight xml %}
  
-
-
 
 <syncfusion:Chart Name="Chart1" Grid.Row="1" Margin="10">
 
@@ -1508,8 +1413,6 @@ EnableLogLabels="True">
 {% endhighlight  %}
 {% highlight c# %}
 
- 
-
 Chart1.Areas[0].PrimaryAxis.IsLogarithmic = true;
 
             Chart1.Areas[0].PrimaryAxis.EnableLogLabels = true;
@@ -1522,6 +1425,9 @@ Chart1.Areas[0].PrimaryAxis.IsLogarithmic = true;
 
             Chart1.Areas[0].SecondaryAxis.EnableLogLabels = true;
 {% endhighlight %}
+
+{% endtabs %}
+
 When the code runs, the following output displays.
 
 ![](Chart-Controls_images/Chart-Controls_img155.jpeg)
@@ -1530,7 +1436,6 @@ When the code runs, the following output displays.
 
 The following table contains the property Details.
 
-_Property_
 
 <table>
 <tr>
@@ -1548,13 +1453,12 @@ Bool (true or false)</td></tr>
 </table>
 See Also
 
-Multiple Axes
+### Multiple Axes
 
 Small tick for Logarithmic axis
 
 Essential chart allows user to set the minor grid lines for log axis.
 
-_Property Table_
 
 <table>
 <tr>
@@ -1573,10 +1477,8 @@ SmallTicksPerInterval = 5</td><td>
 NA</td></tr>
 </table>
 
+
 {% highlight xml %}
-
-
-
 
   <syncfusion:ChartAxis SmallTicksPerInterval="20" IsLogarithmic="True" >
 
@@ -1590,7 +1492,6 @@ NA</td></tr>
 
 Chart for WPF provides support for Chart Axis Titles with the help of the attached property ChartAxis.Header. Its position can be adjusted by using the HeaderAlignment property of the ChartAxis class.
 
-_ChartAxis Property_
 
 <table>
 <tr>
@@ -1607,10 +1508,9 @@ HeaderAlignment</td><td>
 Gets/sets the header alignment. The options included are as follows.FarCenterNear</td></tr>
 </table>
 
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartArea Name="area">
 
@@ -1633,9 +1533,6 @@ Gets/sets the header alignment. The options included are as follows.FarCenterNea
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
 area.PrimaryAxis.Header = "X-Axis";
 
 area.PrimaryAxis.HeaderAlignment = ChartAlignment.Near;
@@ -1646,15 +1543,12 @@ area.SecondaryAxis.HeaderAlignment = ChartAlignment.Far;
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 The following image illustrates Chart with Axis HeaderAlignment set.
 
 ![](Chart-Controls_images/Chart-Controls_img157.jpeg)
 
-
-
-See Also
-
-Chart Axis Label
 
 ## Chart Striplines
 
@@ -1663,9 +1557,9 @@ Strip lines are horizontal or vertical bands marked in the background of a chart
 Segmented strip lines are created when the vertical and horizontal strip lines intersect each other. The segment created by this intersection for each strip line is a called a Segmented Strip Line.
 
 The following code examples illustrate the creation of Segmented Strip Line at required locations.
+
+{% tabs %}
 {% highlight xml %}
-
-
 
 
 <syncfusion:ChartAxis.StripLines>
@@ -1678,9 +1572,6 @@ The following code examples illustrate the creation of Segmented Strip Line at r
 
 {% endhighlight  %}
 {% highlight c# %}
-
-
-
 
 ChartStripLine sp = new ChartStripLine();
 
@@ -1702,10 +1593,11 @@ sp.SegmentStartValue = 10;
 
 sp.SegmentEndValue = 60;
 
-
-
 sp.Text = new FormattedText(item.Production.ToString(), CultureInfo.CurrentCulture, FlowDirection.LeftToRight, new Typeface("Arial"), 10, Brushes.Black);
 {% endhighlight  %}
+
+{% endtabs %}
+
 Run the code. The following output is displayed.
 
 ![](Chart-Controls_images/Chart-Controls_img158.jpeg)
@@ -1751,7 +1643,7 @@ There are three possible modes. They are,
 
 ### Properties 
 
-_Properties_
+
 
 <table>
 <tr>
@@ -1812,7 +1704,6 @@ NA</td></tr>
 
 ### Methods
 
-_Methods_
 
 <table>
 <tr>
@@ -1854,9 +1745,6 @@ Essential Chart for WPF enables users to retain the axis position of the primary
 Set the IsRetainAxisPosition propertyto True to add axesin the order they are added to the chart area. The following code illustrates this.  
 {% highlight xml %}
 
-
-
-
 <syncfusion:ChartArea IsRetainAxisPosition="True">
 {% endhighlight  %}
 When the code runs, the following output displays. 
@@ -1869,9 +1757,6 @@ Set IsRetainAxisPosition is False to add axes in reverse order.
 
 ![](Chart-Controls_images/Chart-Controls_img163.png)
 
-
-
-_Property Details_
 
 <table>
 <tr>
@@ -1903,7 +1788,7 @@ Essential Chart provides support for some improvements in the existing chart axi
 
 ### Properties
 
-_Properties_
+
 
 <table>
 <tr>
@@ -1973,15 +1858,16 @@ To access the chart axis improvement demo:
 
 
 
-Adding Axis Improvement properties to an Application 
+### Adding Axis Improvement properties to an Application 
 
+{% tabs %}
 {% highlight xml %}
             <syncfusion:ChartAxis HeaderPosition="Cross"                      LabelHeight="40" LabelWidth="120"                                            LabelsPrefix="{StaticResource yPrefix}"                       LabelsPostfix="{StaticResource yPostfix}"                      LabelHorizontalAlignment="Left" LabelVerticalAlignment="Top"                      EdgeLabelsDrawingMode="Fit">            </syncfusion:ChartAxis>
 {% endhighlight %}
 {% highlight c# %}
             this.primaryAxis.HeaderPosition = AxisPositions.Cross;            this.primaryAxis.LabelHeight = 40;            this.primaryAxis.LabelWidth = 120;            this.primaryAxis.LabelHorizontalAlignment = HorizontalAlignment.Left;            this.primaryAxis.LabelVerticalAlignment = VerticalAlignment.Top;            this.primaryAxis.LabelsPrefix = xPrefix;            this.primaryAxis.LabelsPostfix = xPostfix;            this.primaryAxis.EdgeLabelsDrawingMode = EdgeLabelsDrawingMode.Fit;
 {% endhighlight  %}
-
+{% endtabs %}
 
 ![C:/Users/johnbowlinboscok/Desktop/REt/Images/AxisHeader.png](Chart-Controls_images/Chart-Controls_img164.png)
 
@@ -2029,8 +1915,6 @@ Axis Type TimeSpan: In cases where the time span is set with intervals of hours,
 
 ### Properties
 
-_Properties_
-
 <table>
 <tr>
 <th>
@@ -2065,6 +1949,8 @@ C:\Documents and Settings\<user name>\My documents\Syncfusion\Essential Studio\S
 Enabling Smart Axis Labels in Chart Axis
 
 The following code example shows how to enable smart axis labels:
+
+{% tabs %}
 {% highlight c# %}
 
 
@@ -2084,6 +1970,8 @@ The following code example shows how to enable smart axis labels:
 
 </syncfusion:ChartArea.PrimaryAxis>
 {% endhighlight  %}
+{% endtabs %}
+
 
 ## Placing axis labels and series segment in between Ticklines
 
@@ -2103,7 +1991,7 @@ The following screenshot depicts the segments on TickLine
 
 ### Properties
 
-_Property_
+
 
 <table>
 <tr>
@@ -2135,6 +2023,8 @@ For placing axis label and series segment in between Ticklines do the following:
 ### Code Example
 
 The following code example illustrates the usage of placing axis label and series segment between the Ticklines
+
+
 {% highlight xml %}
 
 

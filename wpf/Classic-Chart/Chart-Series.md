@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Series
+title: Chart Series | Chart(Classic) | wpf | Syncfusion
 description: Chart Series
 platform: wpf
 control: Chart (Classic)
@@ -23,9 +23,9 @@ The following are the three steps that should be followed:
 You can add one or more Chart Series to a Chart Area to plot points in the Chart. Note that you can specify one of the several built-in Chart types for rendering the series points.
 
 
+{% tabs %}
+
 {% highlight xml %}
-
-
 
 
 <sfchart:Chart>
@@ -38,24 +38,24 @@ You can add one or more Chart Series to a Chart Area to plot points in the Chart
 
 </sfchart:Chart>
 {% endhighlight  %}
-{% highlight c# %}
 
-
-
-
-
+{% highlight C# %}
 
 ChartSeries series = new ChartSeries();
 
 Chart1.Areas[0].Series.Add(series);
+
 {% endhighlight  %}
+
+{% endtabs %}
+
 You can then add points to the series using one of the following Data Binding techniques.
 
 ### Data Binding
 
 The most common and convenient approach to populate a Chart Series is by simply binding the Chart Series to a business object list. The following properties are used for this purpose.
 
-_Property Table_
+### Property Table
 
 <table>
 <tr>
@@ -90,10 +90,8 @@ All the common data sources are supported by the Chart control. The following ar
 Note that the chart plot will automatically update when the bound data sends a change notification.
 
 The following code example illustrates how to bind the Chart control to an XMLDataProvider.
+
 {% highlight xml %}
-
-
-
 
 <Window.Resources>
 
@@ -153,16 +151,11 @@ The following code example illustrates how to bind the Chart control to an XMLDa
 ### Sorting the Series Data
 
 The data can either be sorted or unsorted. If you are sure that the data passed to the collection is sorted, then you can turn off the sorting feature by using the following code.
-{% highlight c# %}
-
-
-
+{% highlight C# %}
 
 Series.IsSortData = false;
 {% endhighlight  %}
-See Also
 
-Creating a Chart, Data Binding, Series Customization
 
 ## Series Customization
 
@@ -171,10 +164,8 @@ Chart Series can be customized with various properties. This section discusses t
 ### Interior
 
 The interior of the Chart Series can be set by using the Interior property.
+
 {% highlight xml %}
-
-
-
 
 <Window.Resources>
 
@@ -203,24 +194,25 @@ The interior of the Chart Series can be set by using the Interior property.
 <syncfusion:ChartSeries Interior="Red" Data="1 20 2 30 3 55 4 35 5 40" />
 
 <syncfusion:ChartSeries Interior="{StaticResource SeriesAInterior}" Label="Series 2" Data="1 30 2 40 3 50 4 25 5 45" />
+
+
 {% endhighlight  %}
+
+
 The following screenshot illustrates Chart Series Interior settings.
 
 ![](Chart-Controls_images/Chart-Controls_img27.jpeg)
 
 
 
-See Also
-
-IsVisible, IsRotated, Label
 
 ### IsVisible
 
 Essential Chart for WPF enables you to show / hide the Chart Series by using the IsVisible boolean property provided by the ChartSeries class.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:Chart >
 
@@ -234,11 +226,8 @@ Essential Chart for WPF enables you to show / hide the Chart Series by using the
 
 </syncfusion:Chart>
 {% endhighlight  %}
-{% highlight c# %}
 
-
-
-
+{% highlight C# %}
 
 
 ChartSeries series = new ChartSeries();
@@ -246,6 +235,7 @@ ChartSeries series = new ChartSeries();
 series.IsVisible = false;
 
 {% endhighlight  %}
+{% endtabs %}
 
 The following screenshot illustrates Chart with Series 1 invisible.
 
@@ -253,17 +243,13 @@ The following screenshot illustrates Chart with Series 1 invisible.
 
 
 
-See Also
-
-IsRotated, Label
-
 ### IsRotated
 
 Chart Series can be rotated by using the ChartSeries.IsRotated property.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:Chart >
 
@@ -281,27 +267,27 @@ Chart Series can be rotated by using the ChartSeries.IsRotated property.
 {% endhighlight %}
 
 
-{% highlight c# %}
+{% highlight C# %}
 
 area.Series[0].IsRotated = true;
+
 {% endhighlight  %}
+
+{% endtabs %}
+
 The following screenshot illustrates Chart with Series 1 rotated.
 
 ![](Chart-Controls_images/Chart-Controls_img29.jpeg)
 
 
 
-See Also
-
-IsVisible, Label
-
 ### Label
 
 The text displayed in the Chart Legends and the Chart Area context menu can be customized by using the ChartSeries.Label property.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartArea>
 
@@ -310,42 +296,39 @@ The text displayed in the Chart Legends and the Chart Area context menu can be c
      <syncfusion:ChartSeries Type="Column" Label="Series 2"/>
 
 </syncfusion:ChartArea>
+
 {% endhighlight  %}
-{% highlight c# %}
 
-
-
-
+{% highlight C# %}
 
 area.Series[0].Label = "Series 1";
 
 area.Series[1].Label = "Series 2";
+
 {% endhighlight  %}
+
+{% endtabs %}
+
 The following screenshot illustrates Chart with customized Series Labels.
 
 ![](Chart-Controls_images/Chart-Controls_img30.jpeg)
 
 
 
-See Also
-
-IsVisible, IsRotated
 
 ## Chart Series Types
 
 Chart control supports 34 types of charts, among which 12 types are supported in 3D mode as well. The Type property is used to specify the Chart Type.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <Window.Resources>
 
   <local:ProductSalesCollection x:Key="SeriesData1"/>
 
 </Window.Resources>
-
-
 
 <sfchart:Chart>
 
@@ -358,11 +341,8 @@ Chart control supports 34 types of charts, among which 12 types are supported in
 </sfchart:Chart>
 
 {% endhighlight  %}
-{% highlight c# %}
 
-
-
-
+{% highlight C# %}
 
 ChartSeries series = new ChartSeries();
 
@@ -375,20 +355,17 @@ series.BindingPathsY = new string[] { "Sales" };
 Chart1.Areas[0].Series.Add(series);
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img31.jpeg)
 
 
 
-See Also
-
-Populating Chart Series, Chart Types
-
 ## Chart Series Look and Feel
 
 Chart for WPF provides various options to customize the look and feel of the Chart Series. The following are some of the properties that are used for this purpose.
 
-_Property Table_
+### Property 
 
 <table>
 <tr>
@@ -411,18 +388,16 @@ specifies the thickness of the chart series segment border</td></tr>
 
 
 The following code example illustrates how to set the preceding properties.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <Window.Resources>
 
   <local:ProductSalesCollection x:Key="SeriesData1"/>
 
 </Window.Resources>
-
-
 
 <sfchart:Chart>
 
@@ -438,10 +413,8 @@ The following code example illustrates how to set the preceding properties.
 
 
 {% endhighlight  %}
-{% highlight c# %}
 
-
-
+{% highlight C# %}
 
 ChartSeries series = new ChartSeries();
 
@@ -461,13 +434,11 @@ Chart1.Areas[0].Series.Add(series);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img32.jpeg)
 
 
-
-See Also
-
-Populating Chart Series, Chart Series Template
 
 ## Chart Series Template
 
@@ -476,10 +447,6 @@ Chart for WPF enables you to apply custom Data Templates to the Chart Series. By
 N> Data templates cannot be customized for a single segment in a series. As each series is drawn as a single segment, we cannot customize the individual segments.
 
 {% highlight xml %}
-
-
-
-
 
 <Window.Resources>
 
@@ -517,8 +484,6 @@ N> Data templates cannot be customized for a single segment in a series. As eac
 
 </Window.Resources>
 
-
-
 <sfchart:Chart>
 
    <sfchart:ChartArea Background="LightGray" GridBackground="White">
@@ -537,15 +502,11 @@ N> Data templates cannot be customized for a single segment in a series. As eac
 
 
 
-See Also
-
-Populating Chart Series, Chart Series Look And Feel
-
 ## Chart Series Adornments
 
 Chart Series Adornments are used to display values in a Chart Segment related to it. Values from data points (x value, y value) or other properties from a data source can be displayed. ChartAdornmentsInfo class is used to display Chart Series Adornments. ChartAdornmentsInfo class provides the following properties to customize the chart series adornments.
 
-_Property Table_
+### Property Table
 
 <table>
 <tr>
@@ -592,10 +553,10 @@ customizes the look and feel of the adornments being displayed</td></tr>
 
 
 The following code example illustrates how to display adornments in a Chart Series.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <Window.Resources>
 
@@ -633,8 +594,6 @@ The following code example illustrates how to display adornments in a Chart Seri
 
 </Window.Resources>
 
-
-
 <!--Chart with Adornments-->
 
 <sfchart:Chart>
@@ -663,10 +622,8 @@ The following code example illustrates how to display adornments in a Chart Seri
 
 </sfchart:Chart>
 {% endhighlight  %}
-{% highlight c# %}
 
-
-
+{% highlight C# %}
 
 
 ChartSeries series = Chart1.Areas[0].Series[0];           
@@ -682,6 +639,8 @@ adornments.Visible = true;
 adornments.VerticalAlignment = VerticalAlignment.Top;
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img34.jpeg)
 
@@ -714,10 +673,10 @@ You can set any one of the following predefined symbols for ChartAdornmentInfo.
 
 
 The following code example illustrates how to apply predefined symbol templates to chart adornments.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
  <Syncfusion:ChartSeries Type="Column"  DataSource="{StaticResource collection1}" BindingPathX="X" BindingPathsY="Y" IsIndexed="True"         Stroke="Black" StrokeThickness="1.5">
 
@@ -730,11 +689,8 @@ The following code example illustrates how to apply predefined symbol templates 
       </Syncfusion:ChartSeries>
 
 {% endhighlight  %}
-{% highlight c# %}
 
-
-
-
+{% highlight C# %}
 
 series1.AdornmentsInfo.Visible = true;
 
@@ -748,6 +704,8 @@ series1.AdornmentsInfo.SymbolWidth = 25;
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img35.jpeg)
 
 
@@ -755,10 +713,10 @@ series1.AdornmentsInfo.SymbolWidth = 25;
 ### Custom Symbol Template
 
 The following code example illustrates how to apply custom symbol templates to chart adornments.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <Window.Resources>
 
@@ -782,8 +740,6 @@ The following code example illustrates how to apply custom symbol templates to c
 
 </Window.Resources>
 
-
-
 <sfchart:Chart>
 
     <sfchart:ChartArea>
@@ -805,11 +761,8 @@ The following code example illustrates how to apply custom symbol templates to c
 </sfchart:Chart>
 
 {% endhighlight  %}
-{% highlight c# %}
 
-
-
-
+{% highlight C# %}
 
 ChartSeries series = new ChartSeries();
 
@@ -839,6 +792,9 @@ adornments.SymbolTemplate = this.Resources["SymbolTemplate"] as DataTemplate;
 
 
 {% endhighlight  %}
+
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img36.jpeg)
 
 
@@ -882,6 +838,9 @@ Most fastchart types are used in stock market charts. Users can display the data
 Essential Chart WPF > Chart Series > Adornments Configuration Demo
 
 Adding Fastchart Types with Adornments to an Application
+
+{% tabs %}
+
 {% highlight xml %}
 
 
@@ -895,7 +854,8 @@ Adding Fastchart Types with Adornments to an Application
 
 
 {% endhighlight  %}
-{% highlight c# %}
+
+{% highlight C# %}
 
 
 series1.AdornmentsInfo.Visible = true;
@@ -908,17 +868,13 @@ series1.AdornmentsInfo.SymbolHeight = 20;
 
 series1.AdornmentsInfo.SymbolWidth = 20;
 {% endhighlight  %}
-See Also
+{% endtabs %}
 
-Populating Chart Series
 
 ## Chart Segment Labels
 
 Labels can be displayed in the chart types such as Pie, Doughnut, Pyramid and Funnel. Chart Segment Labels can be used to display information like x value, y value, percentage, y value of total and datetime. This feature has been implemented based on the ChartAdornmentsInfo class. The following code example illustrates how to add Chart Segment Labels.
 {% highlight xml %}
-
-
-
 
 <sfchart:ChartArea>
 
@@ -945,10 +901,9 @@ Labels can be displayed in the chart types such as Pie, Doughnut, Pyramid and Fu
 
 
 Chart supports applying custom templates to the chart segment labels. The following code example illustrates this.
+
+
 {% highlight xml %}
-
-
-
 
 <Window.Resources>
 
@@ -988,13 +943,14 @@ BindingPathsY="Sales" Type="Pie">
 
 
 {% endhighlight  %}
+
 ![](Chart-Controls_images/Chart-Controls_img42.jpeg)
 
 
 
 The following properties are used to customize the look and feel of the Chart Segment Labels.
 
-_Property Table_
+### Property 
 
 <table>
 <tr>
@@ -1099,23 +1055,20 @@ Null</td></tr>
 N> To show the segment lines, the SegmentShowLine property must be set to true and a ConnectorTemplate must be associated.
  
 
-See Also
-
-Populating Chart Series
 
 ## Chart Series Empty Points
 
 Essential Chart provides support for Empty Points. The data collection that is passed to the chart can have NaN or infinite values that will be considered as Empty Points. You can also hide the empty points by setting the ShowEmptyPoints property to _false_.
+
 {% highlight xml %}
-
-
 
 
 <syncfusion:ChartSeries Type="Column" Name="series1" EmptyPointInterior="Red" EmptyPointStyle="SymbolAndInterior" Interior="Green" IsIndexed="False" ShowEmptyPoints="True" Stroke="Black"  StrokeThickness="1"/>
 
 
 {% endhighlight  %}
-{% highlight c# %}
+
+{% highlight C# %}
 
 
 
@@ -1172,6 +1125,7 @@ public IList products()
 
 
 {% endhighlight  %}
+
 ![](Chart-Controls_images/Chart-Controls_img43.jpeg)
 
 
@@ -1181,8 +1135,6 @@ public IList products()
 This feature enables you to customize the marker for the empty point. You can differentiate the points using symbol or interior color. This support is available for all chart types except Fast chart type.
 
 ### Property
-
-_Propert Table_
 
 <table>
 <tr>
@@ -1204,6 +1156,7 @@ NA </td></tr>
 ### Customizing Chart Empty Point Symbol
 
 You can customize the empty point symbol using the _EmpyPointSymbolTemplate_ property. The following code illustrates this:
+
 {% highlight xml %}
 
 
@@ -1216,6 +1169,7 @@ You can customize the empty point symbol using the _EmpyPointSymbolTemplate_ pro
 <!— Adding Data Template for Chart series-->
 
 <syncfusion:ChartSeries Name="series1" Label="Profit" EmptyPointSymbolTemplate="{StaticResource EmptyTemp}">
+
 {% endhighlight  %}
 
 
@@ -1228,8 +1182,11 @@ You can customize the empty point symbol using the _EmpyPointSymbolTemplate_ pro
 To view a sample:
 
 1. Open the Syncfusion Dashboard.
+
 2. Select User Interface.
+
 3. Click the WPF drop-down list and select Explore Samples.
+
 4. Navigate to _Chart.WPF\Samples\3.5\WindowsSamples\Chart Customization\_
 
 
@@ -1240,7 +1197,6 @@ This feature enables you to specify the default value of the empty point.  You c
 
 ### Properties
 
-_Property Table_
 
 <table>
 <tr>
@@ -1265,20 +1221,17 @@ You can customize the default value of the empty point using the _EmptyPointValu
 Set the EmptyPointValue property to _Zero_, the default empty point value will be zero.
 
 The following code illustrates this:
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartSeries Name="series1" EmptyPointValue="Zero"  EmptyPointStyle="Symbol" ShowEmptyPoints="True" EmptyPointSymbolTemplate="{StaticResource EmptyTemp}"
 
  Stroke="Black"  StrokeThickness="1"/>
 
 {% endhighlight  %}
-{% highlight c# %}
 
-
-
+{% highlight C# %}
 
 
 series1.EmptyPointValue = EmptyPointValue.Zero;
@@ -1287,6 +1240,8 @@ series1.EmptyPointValue = EmptyPointValue.Zero;
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img45.png)
 
 
@@ -1294,26 +1249,24 @@ series1.EmptyPointValue = EmptyPointValue.Zero;
 Set the EmptyPointValue property to Average, the default empty point value will be the average of nearest value on the adjacent side.
 
 The following code illustrates this: 
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartSeries Name="series1" EmptyPointValue="Average"  EmptyPointStyle="Symbol" ShowEmptyPoints="True" EmptyPointSymbolTemplate="{StaticResource EmptyTemp}"
 
  Stroke="Black"  StrokeThickness="1"/>
 
 {% endhighlight  %}
-{% highlight c# %}
 
-
-
-
+{% highlight C# %}
 
 series1.EmptyPointValue = EmptyPointValue.Average;
 
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img46.png)
 
@@ -1332,7 +1285,7 @@ With the help of this feature, users can differentiate huge numbers of data poin
 
 Tables for Properties, Methods, and Events
 
-_Properties Table_
+### Properties 
 
 <table>
 <tr>
@@ -1366,8 +1319,11 @@ Brush[]</td></tr>
 To access the chart series multi-color segments demo:
 
 1. Open the Syncfusion Dashboard.
+
 2. Select User Interface.
+
 3. Click the WPF drop-down list and select Explore Samples.
+
 4. Browse to the path Chart.WPF\Samples\3.5\WindowsSamples\Chart Series\Series Multi-Color Segments Demo.
 
 
@@ -1376,27 +1332,36 @@ Adding Colorful Chart Series Segments to an Application
 
 ### Built-in Palette
 
+{% tabs %}
+
 {% highlight xml %}
    <syncfusion:ChartSeries DataSource="{Binding ProductModel}"            ColorEach="True" Palette="Gradient"                      BindingPathX="Months" BindingPathsY="Sales">     </syncfusion:ChartSeries>
 {% endhighlight  %}
-{% highlight c# %}
+
+{% highlight C# %}
      this.Series1.ColorEach = true;     this.Series1.Palette = ChartColorPalette.Gradient;
 
 {% endhighlight  %}
+{% endtabs %}
 
-![C:/Users/johnbowlinboscok/Desktop/REt/Images/Built-In.png](Chart-Controls_images/Chart-Controls_img47.png)
+![](Chart-Controls_images/Chart-Controls_img47.png)
 
 
 
 ### Custom Palette
 
+{% tabs %}
+
 {% highlight xml %}
 <syncfusion:ChartSeries DataSource="{Binding ProductModel}"ColorEach="True" Palette="Custom" BindingPathX="Months" BindingPathsY="Sales">    <syncfusion:ChartStyleModel.CustomPalette>        <x:Array Type='Brush'>            <SolidColorBrush Color='Violet"></SolidColorBrush><SolidColorBrush Color='Indigo'></SolidColorBrush><SolidColorBrush Color='Blue'></SolidColorBrush><SolidColorBrush Color='Green'></SolidColorBrush><SolidColorBrush Color='Yellow'></SolidColorBrush><SolidColorBrush Color='Orange'></SolidColorBrush><SolidColorBrush Color='Red'></SolidColorBrush>        </x:Array>    </syncfusion:ChartStyleModel.CustomPalette></syncfusion:ChartSeries>
 {% endhighlight  %}
-{% highlight c# %}
+
+{% highlight C# %}
 this.Series1.ColorEach = true;this.Series1.Palette = ChartColorPalette.Custom;this.Series1.CustomPalette = new Brush[]{Brushes.Violet,Brushes.Indigo,Brushes.Blue,Brushes.Green,Brushes.Yellow,Brushes.Orange,Brushes.Red};
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img48.png)
 
@@ -1409,10 +1374,10 @@ Chart for WPF lets you to "highlight" all the data points in a series when you m
 
 
 The following code example illustrates this.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <!--Include this in the Window's Resources section.-->
 
@@ -1446,7 +1411,8 @@ The following code example illustrates this.
 
 
 {% endhighlight  %}
-{% highlight c# %}
+
+{% highlight C# %}
 
 
 
@@ -1491,6 +1457,8 @@ public class HighlightedToOpacityConverter : IValueConverter
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img49.jpeg)
 
 
@@ -1498,10 +1466,6 @@ public class HighlightedToOpacityConverter : IValueConverter
 A sample which demonstrates Series highlighting feature is available in the following sample installation path.
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Series\Series Highlight Demo_
-
-See Also
-
-Populating Chart Series, Highlighting Data Points, Selecting Points
 
 ## Highlighting Data Points
 
@@ -1629,9 +1593,6 @@ A sample which demonstrates Data Point highlighting feature is available in the 
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Series\Data Point Highlight Demo_
 
-See Also
-
-Populating Chart Series, Highlighting Data Points, Selecting Points
 
 ## Selecting Points
 
@@ -1642,7 +1603,7 @@ Chart for WPF lets you implement list box-like selection of data point segments 
    Wrap your data in a CollectionViewSource and bind this to a Chart Series.
 
 
-
+   ~~~ xaml
 
 
 				<!--Create a CollectionViewSource.-->
@@ -1658,14 +1619,15 @@ Chart for WPF lets you implement list box-like selection of data point segments 
 				<!--Bind this to a Chart Series.-->
 
 				<sfchart:ChartSeries DataSource="{Binding Source={StaticResource cvs}}" Template="{StaticResource SeriesTemplate}" Type="Column" BindingPathX="Date" BindingPathsY="Y2" />
-
+   ~~~
+   
    The CollectionViewSource has a CurrentItem property which tracks the "selected item". The Chart control listens to this property change and updates the corresponding data point's ChartSegment.IsSelected property appropriately.
 
 2. Create a Custom Template
 
    Create a custom template that renders a data-point segment with a "selected" look and feel, when the ChartSegment.IsSelected property changes to _true_.
 
-
+   ~~~ xaml
 
 
 				<!-- This template helps in 2 ways. 1) It enables to bind to IsSelected property to change the selected segment color. 2) It enables to listen to Canvas.MouseDown event to change selection.-->
@@ -1735,7 +1697,8 @@ Chart for WPF lets you implement list box-like selection of data point segments 
 					<GradientStop Color="#FFFDDD77" Offset="1"/>
 
 				</LinearGradientBrush>
-
+   ~~~
+   
    This will cause the CollectionView.CurrentItem to be rendered distinctly. Note that the CurrentItem can be changed by a different Control bound to the same CollectionView, and this change will be automatically reflected in the Chart.
 
 3. Change CollectionView.CurrentItem 
@@ -1746,7 +1709,7 @@ Chart for WPF lets you implement list box-like selection of data point segments 
 
 
 
-
+   ~~~ csharp
 
 				private void Canvas_MouseDown(object sender, MouseButtonEventArgs e)
 
@@ -1770,28 +1733,23 @@ Chart for WPF lets you implement list box-like selection of data point segments 
 
 				}
 
-
+   ~~~
 
    ![](Chart-Controls_images/Chart-Controls_img51.jpeg)
 
 
-   {:.prettyprint}
    
 A sample which demonstrates Data Point highlighting feature is available in the following sample installation path.
 
 _..My Documents\Syncfusion\EssentialStudio\<Version Number>\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Series\Selectable Data Points Demo_
 
-See Also
-
-Highlighting Series,Highlighting Data Points, Populating Chart Series
 
 ## Side-By-Side Series
 
 Series can be placed side by side or overlapped by using the ChartArea.SideBySideSeriesPlacement property. This is especially used when multiple HiLo type series are used in the Chart. HiLo type series that get stacked and plotted can be separated and placed side by side by using this property.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartArea SideBySideSeriesPlacement="True">
 
@@ -1800,13 +1758,13 @@ Series can be placed side by side or overlapped by using the ChartArea.SideBySid
 </syncfusion:ChartArea>
 {% endhighlight  %}
 
-{% highlight c# %}
-
-
-
+{% highlight C# %}
 
 area.SideBySideSeriesPlacement = true;
 {% endhighlight  %}
+
+{% endtabs %}
+
 The following screenshot illustrates Chart Series placed side by side.
 
 ![](Chart-Controls_images/Chart-Controls_img52.jpeg)
@@ -1827,8 +1785,6 @@ N> The AutosetRange property of the primary axis needs to be set to False, when 
 
 The following code example illustrates the usage of the AutoDiscard property, when set to various enumerations.
 {% highlight xml %}
-
-
 
 
 <syncfusion:ChartArea.PrimaryAxis>
@@ -1852,7 +1808,7 @@ or
 
 Essential Chart WPF now provides support to toggle the visibility of the Chart Legend Items. This is achieved by using the VisibilityOnLegend property.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -1867,10 +1823,9 @@ Sets the visibility of Legend Items. It includes the following options.Visible-
 
 
 The following code example illustrates how to set this property.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartSeries Name="SeriesB" Type="Bar" VisibilityOnLegend="Hidden" BindingPathX="FruitName"
 
@@ -1880,14 +1835,17 @@ BindingPathsY="FruitID,NumberOfFruits,Price,Year" Label="Series B" Stroke="#FF00
 
 
 {% endhighlight  %}
-{% highlight c# %}
 
+
+{% highlight C# %}
 
 
 
 Chart1.Areas[0].Series[0].VisibilityOnLegend = Visibility.Hidden;
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img53.png)
 
@@ -1896,9 +1854,9 @@ Chart1.Areas[0].Series[0].VisibilityOnLegend = Visibility.Hidden;
 ### Methods
 
 The LegendItemSource method associated with this feature can also be used to control the visibility of the Legend Items. The following code example illustrates how to use this method.
-{% highlight c# %}
 
 
+{% highlight C# %}
 
 
 public void LegendItemSource(ChartSeries chartSeries)
@@ -1929,9 +1887,7 @@ public void LegendItemSource(ChartSeries chartSeries)
 ### Events
 
 The OnVisibilityOnLegend event is triggered when the value of the VisibilityOnLegend property is changed. The following code example illustrates how to handle this event.
-{% highlight c# %}
-
-
+{% highlight C# %}
 
 
 public static readonly DependencyProperty VisibilityOnLegendProperty =
@@ -1967,7 +1923,7 @@ private static void OnVisibilityOnLegend(DependencyObject d, DependencyPropertyC
 
 Predefined shapes for annotation objects are used to point at specific information about a point in the chart series. For example: Circle, Down arrow, and so on. The following table describes more about the annotation shapes:
 
-_Property Table_
+### Property
 
 <table>
 <tr>
@@ -1991,10 +1947,10 @@ Colors from Brushes</td></tr>
 N> The AnnotationShape property helps create the required shape for the annotation and the Fill property helps fill the shape selected with required color.
 
 The following code example illustrates creation of a circle with orange fill at points 5 on X series and point 45 on Y series in a Chart.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartSeries DataSource="{Binding Source={StaticResource myXmlData}, XPath=Products/Product}" BindingPathX="Month" BindingPathsY="Sales" IsIndexed="False" Name="series1" Label="Series1" Type="Area" Interior="{StaticResource SeriesAInterior}">
 
@@ -2013,16 +1969,12 @@ The following code example illustrates creation of a circle with orange fill at 
 </syncfusion:ChartSeries>
 
 {% endhighlight  %}
-{% highlight c# %}
 
-
-
-
+{% highlight C# %}
 
 Chart1.Areas[0].Series[0].Annotations.Items[0].AnnotationShape = AnnotationShapes.Circle;
 
 Chart1.Areas[0].Series[0].Annotations.Items[0].X = 5;
-
 
 
 Chart1.Areas[0].Series[0].Annotations.Items[0].Y = 45;
@@ -2036,10 +1988,11 @@ Chart1.Areas[0].Series[0].Annotations.Items[0].Fill = Brushes.Orange;
 Chart1.Areas[0].Series[0].Annotations.Items[0].Stroke = Brushes.Black;
 {% endhighlight  %}
 
+{% endtabs %}
+
 Run the sample. The following output is provided.
 
 ![](Chart-Controls_images/Chart-Controls_img54.jpeg)
-
 
 
 ## Empty point support for FastLine Chart type
@@ -2059,25 +2012,24 @@ e.g.  In population analysis if you do not get the result for previous years the
 Add Empty Point to the Chart, by using the following code.
 
 Set ShowEmptyPoints to True to enable Empty Point.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
   <syncfusion:ChartSeries Name="series1" ShowEmptyPoints="True" 
 
 Type="FastLine" Interior="Red" Stroke="Black" DataSource="{Binding}"/>
 
 {% endhighlight  %}
-{% highlight c# %}
+
+{% highlight C# %}
 
  
-
-
 
 Series1.ShowEmptyPoints = true;
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img55.jpeg)
 
@@ -2090,10 +2042,10 @@ This enables the users to customize the Fast chat types like FastScatter, FastCo
 ### Adding Customization Support
 
 Add customization support for FastChart types, by using the following code.
+{% tabs %}
+
 {% highlight xml %}
  
-
-
 
   <syncfusion:ChartSeries Name="series1" Type="FastStackingColumn" 
 
@@ -2102,11 +2054,8 @@ FastSegmentProperties="{Binding Converter={StaticResource interiorConverter} }"
 Stroke="Black" DataSource="{Binding}"/>
 
 {% endhighlight  %}
-{% highlight c# %}
 
- 
-
-
+{% highlight C# %}
 
 FastSegmnetPropertiesCollection list = new FastSegmnetPropertiesCollection();
 
@@ -2119,6 +2068,8 @@ list.Add(segmentProperty);
 series1.FastSegmentProperties= list;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img56.jpeg)
 
@@ -2140,7 +2091,7 @@ Essential Chart ships with the enhancement of smart labels support to avoid the 
 2. To view the label clearly and place the labels around the data points.
 3. Additional connector lines are shown between a label and its corresponding chart point.
 
-_Properties_
+### Properties
 
 <table>
 <tr>
@@ -2171,12 +2122,13 @@ Enum</td></tr>
 
 
 
-Adding Smart Labels Support to an Application
+### Adding Smart Labels Support to an Application
 
 The following code examples are used to add smart labels to the chart series.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
 
 
 <sync:ChartSeries x:Name="series2"                                  AdornmentIntersectAction="AdjustAcrossPoints" 
@@ -2193,9 +2145,8 @@ ShowSmartLabels="True"                                >
 
 
 {% endhighlight  %}
-{% highlight c# %}
 
-
+{% highlight C# %}
 
 
 series.ShowSmartLabels = true;
@@ -2206,15 +2157,16 @@ series.ShowSmartLabels = true;
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img57.png)
 
 
 
 The following code examples are used to add smart labels to the chart series with intersect action set to Hide.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <sync:ChartSeries x:Name="series2"                                  AdornmentIntersectAction="Hide" 
 
@@ -2231,7 +2183,8 @@ ShowSmartLabels="True"                                >
 
 
 {% endhighlight  %}
-{% highlight c# %}
+
+{% highlight C# %}
 
 
 
@@ -2243,14 +2196,17 @@ AdornemntIntersectActions.AdjustAcrossPoints;
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img58.png)
 
 
 
 The following code examples are used to add smart labels to the chart series with intersect action set to Hide.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
 
 
 <sync:ChartSeries x:Name="series2"                                  AdornmentIntersectAction="None" 
@@ -2267,7 +2223,9 @@ ShowSmartLabels="True"                                >
 
 
 {% endhighlight  %}
-{% highlight c# %}
+
+
+{% highlight C# %}
 
 
 
@@ -2278,6 +2236,8 @@ series.ShowSmartLabels = true;
 AdornemntIntersectActions.None; 
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img59.png)
 
@@ -2310,7 +2270,6 @@ A technical indicator is a graphic representation of price action. Some technica
 
 Accumulation Distribution Indicator is a volume indicator which was essentially designed to measure underlying supply and demand. It accomplishes this by trying to determine whether traders are actually accumulating (buying) or distributing (selling).
 
-_Accumulation Distribution Properties_
 
 <table>
 <tr>
@@ -2427,7 +2386,6 @@ Indicates the identification of a trend.</td></tr>
 
 The exponential moving average (EMA) is a weighted average of a price data which put a higher weight on recent data point.
 
-_Exponential Moving Average Properties_
 
 <table>
 <tr>
@@ -2468,7 +2426,6 @@ Indicates the identification of a trend.</td></tr>
 
 The simple moving average is an arithmetic mean of price data. It is calculated by summing up each interval's price and dividing the sum by the number of intervals covered by the moving average. For instance, adding the closing prices of an instrument for the most recent 25 days, and then dividing it by 25 will get you the 25 day moving average.
 
-_Simple Average Properties_
 
 <table>
 <tr>
@@ -2484,6 +2441,8 @@ Specifies the color for the signal line of the Simple Average technical indicato
 MovingAverage</td><td>
 Indicates the identification of a trend.</td></tr>
 </table>
+
+
 {% highlight xml %}
 
 
@@ -2512,7 +2471,6 @@ Indicates the identification of a trend.</td></tr>
 
 The Moving Average Triangular indicator measures a simple arithmetic average of prices, specified by the input Price and creates a simple arithmetic average of this average. The length of every of these averages is one more than half the value specified in the input Length, rounded to a whole number. This uses all the price data from the latest number of bars specified by the input Length, but with the smoothing effect of so-called averaging the average.
 
-_Triangular Average Properties_
 
 <table>
 <tr>
@@ -2528,6 +2486,8 @@ Specifies the color for the signal line of the Triangular Average technical indi
 TriangularMovingAverage</td><td>
 Indicates the identification of a trend.</td></tr>
 </table>
+
+
 {% highlight xml %}
 
 
@@ -2555,7 +2515,7 @@ sync:ChartTriangularAverage.SignalLineInterior="Red" />
 
 MACD is an extremely popular indicator used in technical analysis. MACD can be used to identify aspects of a security's overall trend. Most notably these aspects are momentum, as well as trend direction and duration.
 
-_MACD Properties_
+
 
 <table>
 <tr>
@@ -2603,7 +2563,7 @@ Specifies the color for the divergence line of the MACD technical indicator.</td
 
 Momentum and rate of change (ROC) are simple technical analysis indicators showing the difference between today's closing price and the close N days ago.
 
-_Momentum Properties_
+
 
 <table>
 <tr>
@@ -2644,7 +2604,7 @@ Measures the amount that a security's price has changed over a given time span.<
 
 The Stochastic Oscillator is a range bound momentum oscillator. The Stochastic indicator is designed to display the location of the close compared to the high or low range over a user-defined number of periods. Typically, the Stochastic Oscillator is used for three things: Identifying overbought and oversold levels, spotting divergences, and also identifying bull and bear set ups or signals.
 
-_Stochastic Properties_
+
 
 <table>
 <tr>

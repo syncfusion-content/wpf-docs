@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview
+title: Overview | Chart(Classic) | wpf | Syncfusion
 description: overview
 platform: wpf
 control: Chart (Classic)
@@ -16,7 +16,6 @@ Essential Chart for WPF is intended for developers looking to add advanced, feat
 The following image shows an example of a Chart control (line chart):
 
 ![](Overview_images/Overview_img1.jpeg)
-
 
 
 ## Real World Scenarios
@@ -59,7 +58,6 @@ The product comes with numerous samples as well as an extensive documentation to
 
 The following conventions help you quickly identify the important sections of information, while using the content:
 
-_Document Convention_
 
 <table>
 <tr>

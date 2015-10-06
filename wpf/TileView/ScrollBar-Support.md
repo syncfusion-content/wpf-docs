@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ScrollBar-Support
+title: ScrollBar Support | TileView | wpf | Syncfusion
 description: scrollbar support
 platform: wpf
 control: TileView Control
@@ -80,11 +80,11 @@ Property Table
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Data Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Property </th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 OnMinimizedHeight</td><td>

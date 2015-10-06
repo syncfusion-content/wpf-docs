@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting-Started
+title: Getting Started | SplitButton | wpf | Syncfusion
 description: getting started
 platform: wpf
 control: SplitButtonAdv
@@ -72,6 +72,7 @@ When the SizeMode is set to Small, the icon of the DropDownButtonAdv control is 
 
 Use the following code snippet to set the SizeMode to Small:
 
+{% tabs %}
 
 {% highlight xml %}
 
@@ -89,6 +90,8 @@ button.SizeMode = SizeMode.Small;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 
 ![](Getting-Started_images/Getting-Started_img3.png)
 
@@ -99,6 +102,8 @@ button.SizeMode = SizeMode.Small;
 The DropDownButtonAdv control retains the default appearance, when the SizeMode is set to Normal, 
 
 Use the following code snippet to set the SizeMode to Normal:
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -116,6 +121,8 @@ button.SizeMode = SizeMode.Normal;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Getting-Started_images/Getting-Started_img4.png)
 
 
@@ -126,6 +133,7 @@ When the SizeMode is set to Large, the DropDownButtonAdv control is displayed wi
 
 Use the following code snippet to set the SizeMode to Large:
 
+{% tabs %}
 
 {% highlight xml %}
 
@@ -143,6 +151,8 @@ button.SizeMode = SizeMode.Large;
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Getting-Started_images/Getting-Started_img5.png)
 
 
@@ -158,6 +168,7 @@ The Image displayed in the control can be set using two properties:
 
 The SmallIcon property can be set as follows:
 
+{% tabs %}
 
 {% highlight xml %}
 
@@ -177,11 +188,15 @@ button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Getting-Started_images/Getting-Started_img6.png)
 
 
 
 The SmallIcon property can be set even when the SizeMode is Normal:
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -202,12 +217,14 @@ button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Getting-Started_images/Getting-Started_img7.png)
 
 
 The LargeIcon property can be set as follows:
 
-
+{% tabs %}
 
 {% highlight xml %}
 
@@ -227,6 +244,8 @@ button.SmallIcon = new BitmapImage(new Uri("employee.png"));
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![](Getting-Started_images/Getting-Started_img8.png)
 
 
@@ -238,6 +257,7 @@ The DropDownMenuGroup acts as a container for SplitButtonAdv, which provides cus
 #### Adding DropDownMenuItems to DropDownButtonAdv:
 
 
+{% tabs %}
 
 {% highlight xml %}
 
@@ -279,6 +299,8 @@ button.Content = menuItem1;
 
 {% endhighlight %}
 
+
+{% endtabs %}
 ![](Getting-Started_images/Getting-Started_img9.png)
 
 

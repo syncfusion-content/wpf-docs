@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dragand-Drop
+title: Dragand Drop | TileView | wpf | Syncfusion
 description: drag–and-drop
 platform: wpf
 control: TileView Control
@@ -18,6 +18,8 @@ The Dragging items can be added to an application by using either XAML or C# cod
 ## Adding through XAML
 
 The following code example illustrates how to add the Dragging Items to an application through XAML.
+
+
 
 
 {% highlight xml %}
@@ -38,6 +40,8 @@ The following code example illustrates how to add the Dragging Items to an appli
 The following code example illustrates how to add the Dragging Items to an application through C#.
 
 
+
+
 {% highlight c# %}
 
 
@@ -51,16 +55,15 @@ tileViewCntrl.AllowItemRepositioning = true;
 
 ## Properties
 
-_MinimizedItemTemplate / MaximizedItemTemplate Properties Table_
 
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Data Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Property</th><th>
+Description </th><th>
+Type </th><th>
+Data Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 AllowItemRepositioning</td><td>
@@ -73,16 +76,15 @@ True</td><td>
 
 ## Events
 
-_AllowItemRepositioningChanged Table_
 
 <table>
 <tr>
 <th>
-{{ '**Event**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Arguments**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Event </th><th>
+Description </th><th>
+Arguments </th><th>
+Type </th><th>
+Reference links </th></tr>
 <tr>
 <td>
 AllowItemRepositioningChanged</td><td>

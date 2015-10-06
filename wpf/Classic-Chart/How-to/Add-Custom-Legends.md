@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add-Custom-Legends
+title: Add Custom Legends | wpf | Syncfusion
 description: add custom legends
 platform: wpf
 control: Chart (Classic)
@@ -13,9 +13,6 @@ It's easy to replace existing, default, legend items with custom items in Chart 
 
 Remember to clear the existing default entries, before adding new custom items. Otherwise, this results in exceptions. The following lines of code can be used to add items to chart legend.
 {% highlight c# %}
-
-
-
 
 ChartLegend legend = new ChartLegend();
 
@@ -32,9 +29,3 @@ Chart1.Legends.Add(legend);
 {% endhighlight %}
 
 ![](Add-Custom-Legends_images/Add-Custom-Legends_img1.jpeg)
-
-
-See Also
-
-Chart And Chart Area Legends
-

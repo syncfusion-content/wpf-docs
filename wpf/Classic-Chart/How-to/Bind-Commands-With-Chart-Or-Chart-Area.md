@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind-Commands-With-Chart-Or-Chart-Area
+title: Bind Commands With Chart Or Chart Area | wpf | Syncfusion
 description: bind commands with chart or chart area
 platform: wpf
 control: Chart (Classic)
@@ -10,10 +10,9 @@ documentation: ug
 ## Bind Commands With Chart Or Chart Area
 
 Custom RoutedUICommands can be bound to the Chart or ChartArea just like any other control and InputBindings such as KeyboardGestures and MouseGestures can be set for those commands. Note that for KeyboardGestures and MouseGestures to work, Chart or ChartArea should be in focus. In the following sample, a custom command is created to change the series type of all the ChartSeries in the ChartArea to ChartType.Bar.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <Window.Resources>
 
@@ -65,10 +64,6 @@ Custom RoutedUICommands can be bound to the Chart or ChartArea just like any oth
 
 {% endhighlight  %}
 {% highlight c# %}
-
-
-
-
 
 public partial class Window1 : Window
 
@@ -150,8 +145,6 @@ public partial class Window1 : Window
 
 }
 
-
-
 public class CustomCommand
 
 {
@@ -176,5 +169,5 @@ public class CustomCommand
 
 }
 
-
 {% endhighlight  %}
+{% endtabs %}

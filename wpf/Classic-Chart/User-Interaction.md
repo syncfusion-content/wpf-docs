@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Interaction
+title: User Interaction | Chart(Classic) | wpf | Syncfusion
 description: User Interaction
 platform: wpf
 control: Chart (Classic)
@@ -32,7 +32,6 @@ In the Zooming mode, a Zooming toolkit is displayed at the top-left corner of th
 
 The visibility of the Zooming Toolkit or the individual buttons in the toolkit can be controlled by using the following properties.
 
-_Property Table_
 
 <table>
 <tr>
@@ -61,10 +60,9 @@ ZoomingToolkitVisibility</td><td>
 gets or sets zooming toolkit visibility</td></tr>
 </table>
 
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <sfchart:ChartArea  sfchart:ChartZoomingToolkit.ZoomInButtonVisibility="Collapsed"
 
@@ -74,11 +72,9 @@ sch:ChartZoomingToolkit.ZoomOutButtonVisibility="Hidden" sch:ChartZoomingToolkit
 
 </sfchart:ChartArea>
 {% endhighlight  %}
-{% highlight c# %}
 
 
-
-
+{% highlight csharp %}
 
 
 ChartZoomingToolkit.SetZoomInButtonVisibility(chartArea, Visibility.Collapsed);
@@ -89,6 +85,8 @@ ChartZoomingToolkit.SetZoomResetButtonVisibility(chartArea, Visibility.Collapsed
 
 ChartZoomingToolkit.SetZoomingToolkitVisibility(chartArea, Visibility.Visible);
 {% endhighlight  %}
+{% endtabs %}
+
 
 ### Zooming by Manual Drag
 
@@ -105,21 +103,15 @@ Chart can be zoomed programmatically by using Chart Commands, Keyboard Keys and 
 ### Zooming Using Chart Commands
 
 Zooming mode can be enabled by calling the appropriate Chart Commands.
-{% highlight c# %}
-
-
-
+{% highlight csharp %}
 
 // To enter Zooming mode.
 
 ChartAreaCommands.SwitchZooming.Execute(null, chart1.Areas[0]);
 
-
-
 // To perform Zoom In.
 
 ChartAreaCommands.ZoomIn.Execute(null, Chart1.Areas[0]);
-
 
 
 // To perform Zoom Out.
@@ -142,16 +134,12 @@ ChartAreaCommands.CancelZooming.Execute(null, Chart1.Areas[0]);
 ### Enabling Zooming Without Using Zooming Toolkit
 
 Drag-select an area in the Chart to enable zooming when the zooming toolkit is invisible. The following code example illustrates this.
-{% highlight c# %}
-
-
+{% highlight csharp %}
 
 
 // Enable zoom mode.
 
 ChartAreaCommands.SwitchZooming.Execute(null, Chart1.Areas[0]);
-
-
 
 // Hide the zooming toolkit.
 
@@ -163,10 +151,8 @@ ChartZoomingToolkit.SetZoomingToolkitVisibility(Chart1.Areas[0], Visibility.Coll
 You can enable zooming by using the keyboard keys. The following code example shows how the ChartArea can be Zoomed by using the
 
 ALT+I key combination.
-{% highlight c# %}
 
-
-
+{% highlight csharp %}
 
 // Adding Key Gesture Alt + I keys to Zoom In the Chart Area.
 
@@ -182,10 +168,7 @@ this.InputBindings.Add(zoomInGesture);
 ### ZoomFactor
 
 The Chart can be zoomed by using the Axis.ZoomFactor property. The ZoomFactor is usually between 0 and 1. When set to 1, the chart will not be zoomed. When set to 0.5, the size of the chart will be doubled. Scrollbars will be automatically displayed to allow any section of the hidden range to be viewed. The default value is 1.
-{% highlight c# %}
-
-
-
+{% highlight csharp %}
 
 // Zoom the Chart with Zoom factor 0.5.
 
@@ -197,15 +180,11 @@ this.Chart1.Areas[0].PrimaryAxis.ZoomFactor = 0.5;
 You can also programmatically specify the scrollbar position of the zoomed-in axes by using the Axis.ZoomPosition property.
 
 The following code example shows how the chart with values 0 to 5 will have the scrollbar positioned near point 5, when the ChartAxis is zoomed, with the ZoomFactor set to 0.5.
-{% highlight c# %}
-
-
-
+{% highlight csharp %}
 
 // Zoom the Chart with Zoom factor 0.5.
 
 this.Chart1.Areas[0].PrimaryAxis.ZoomFactor = 0.5;
-
 
 
 // Position the ScrollBar to point 5.
@@ -221,10 +200,8 @@ this.Chart1.Areas[0].PrimaryAxis.ZoomPosition = 5;
 ### Disable Zooming
 
 Zooming using mouse can be disabled for a particular axis by using the EnableZooming property. The following code example illustrates how zooming is disabled only for the Primary axis of the ChartArea while it is enabled for the other axes.
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartArea.PrimaryAxis>
 
@@ -233,14 +210,11 @@ Zooming using mouse can be disabled for a particular axis by using the EnableZoo
 </syncfusion:ChartArea.PrimaryAxis>
 
 {% endhighlight  %}
-{% highlight c# %}
-
-
-
-
+{% highlight csharp %}
 
 this.Chart1.Areas[0].PrimaryAxis.EnableZooming = false;
 {% endhighlight  %}
+{% endtabs %}
 
 N> EnableZooming property is useful to disable zooming using mouse and keyboard keys. But it will not take effect when the ZoomFactor property is set. When ZoomFactor property is set between 0 to 1, and EnableZooming property is set to False, the axis will still be zoomed.
 
@@ -249,10 +223,8 @@ Zooming Specific ChartAxis Associated with a ChartSeries Through Code
 The Axis associated with a particular ChartSeries can be enabled/disabled through the Zooming functionality. This is achieved by using the series.IsZoomable property. 
 
 The following code illustrates how zooming can be disabled for all the axis in Chart and enabled only for the axis associated with Chart Series2.
-{% highlight c# %}
 
-
-
+{% highlight csharp%}
 
 <syncfusion:Chart>
 
@@ -284,10 +256,7 @@ The following code illustrates how zooming can be disabled for all the axis in C
 
 </syncfusion:Chart>
 {% endhighlight  %}
-{% highlight c# %}
-
-
-
+{% highlight csharp %}
 
 
 void Window1_Loaded(object sender, RoutedEventArgs e)
@@ -315,9 +284,6 @@ When an individual series in the chart is zoomed, the opacity of the series whic
 The following lines of code can be used to change the opacity of an inactive series while zooming.
 {% highlight xml %}
 
-
-
-
 <syncfusion:ChartSeries Name="Series1" Label="Series1" Interior="Red" InactiveSeriesOpacityOnZoom="0.65" Data="1 1 2 2 3 3 4 4 5 5 6 6"/>
 
 {% endhighlight  %}
@@ -329,10 +295,9 @@ The following lines of code can be used to change the opacity of an inactive ser
 Fractional Values in Axis while Zooming
 
 On zooming the chart, the ChartAxis Labels appear with fractional values. This can be restricted by using the Axis.IsFractionEnabledOnZoom property.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <syncfusion:Chart Name="Chart1" Height="300" Width="400">
 
@@ -351,16 +316,15 @@ On zooming the chart, the ChartAxis Labels appear with fractional values. This c
 </syncfusion:Chart>
 
 {% endhighlight  %}
-{% highlight c# %}
-
-
-
+{% highlight csharp %}
 
 // Hides fractional values in Secondary Axis labels.
 
 Chart1.Areas[0].SecondaryAxis.IsFractionEnabledOnZoom = false;
 
 {% endhighlight  %}
+{% endtabs %}
+
 
 __For more details, refer to the sample in the following location:
 
@@ -373,11 +337,11 @@ Essential Chart WPF is now enhanced with Zooming and Panning. This feature is us
 #### Adding Zooming and Panning
 
 Add Zooming and Panning to the chart, by using the following code.
+
+{% tabs %}
+
 {% highlight xml %}
  
-
-
-
  <syncfusion:Chart Name="Chart1" Grid.Row="1" Margin="10">
 
          <syncfusion:ChartArea Name="area" IsContextMenuEnabled="True"/>
@@ -385,11 +349,7 @@ Add Zooming and Panning to the chart, by using the following code.
 < syncfusion:Chart/>
 
 {% endhighlight  %}
-{% highlight c# %}
-
- 
-
-
+{% highlight csharp %}
 
 ChartArea area = this.Chart1.Areas[0];
 
@@ -397,13 +357,10 @@ ChartArea area = this.Chart1.Areas[0];
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img202.jpeg)
 
-
-
-See Also
-
-Highlighting and Selection, Chart Area ContextMenu
 
 ## Highlighting And Selection
 
@@ -413,9 +370,6 @@ The following topics discuss highlight data points and selecting data points:
 
 ToolTip can be shown on various sections of a chart control such as chart, chart area, chart legend and chart series. Refer to the following code example for creating and assigning the tooltip to the chart.
 {% highlight xml %}
-
-
-
 
 <!-- Sets Tooltips for a chart-->
 
@@ -440,13 +394,9 @@ The following image illustrates the tooltip feature in various sections of the c
 
 ![](Chart-Controls_images/Chart-Controls_img203.jpeg)
 
-
-
 ### Default ToolTips for a Chart
 
 Essential Chart for WPF is now enhanced with the ShowTooltip property, which allows ToolTips to be displayed.  
-
-_Property Table_
 
 
 <table>
@@ -469,31 +419,29 @@ _Property Table_
 ### Setting a ToolTip for a Chart
 
 To enable ToolTips for a chart, set the ShowTooltip property to True. The following code illustrates setting the ShowTooltip property.
-{% highlight xml %}
 
+{% tabs %}
+{% highlight xml %}
 
 <syncfusion:ChartSeries ShowToolTip="True">
 
-
 {% endhighlight  %}
+
 {% highlight c# %}
  
-
 Series.ShowToolTip = true;
 
-
 {% endhighlight  %}
-![](Chart-Controls_images/Chart-Controls_img204.png)
+{% endtabs %}
 
+
+![](Chart-Controls_images/Chart-Controls_img204.png)
 
 
 ### Custom ToolTip for a Series
 
 You can set custom tooltips for the chart series. Associate a custom tooltip text with appealing appearance to the chart series using the following code example.
 {% highlight xml %}
-
-
-
 
 <Window.Resources>
 
@@ -583,9 +531,6 @@ A built-in toolbar is available for the Chart control, which can be made visible
 The code as follows illustrates how a ToolBar could be added to the Chart control.
 {% highlight xml %}
 
-
-
-
 <syncfusion:Chart.ToolBar >
 
         <syncfusion:ChartToolBar Name="chartToolbar"  SelectedItemChanged="ChartToolBar_SelectedItemChanged" 
@@ -598,6 +543,7 @@ The code as follows illustrates how a ToolBar could be added to the Chart contro
 
 
 {% endhighlight  %}
+
 ![](Chart-Controls_images/Chart-Controls_img206.jpeg)
 
 
@@ -607,10 +553,10 @@ Excluding or including the Toolbar While Printing and Saving a Chart
 You can exclude or include the toolbar while printing and saving a chart using the _ShowToolBarOnPrintAndSave_ property. To include the toolbar, set this to true. To exclude it set this to false. By default this is set to true. 
 
 The following code illustrates how to exclude the toolbar while printing and saving:
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:Chart ShowToolBarOnPrintAndSave="False">
 
@@ -626,20 +572,19 @@ The following code illustrates how to exclude the toolbar while printing and sav
 
 </syncfusion:Chart>
 {% endhighlight  %}
-{% highlight c# %}
 
-
-
-
+{% highlight csharp %}
 
 Chart1.ShowToolBarOnPrintAndSave = false;
 
 The following code illustrates how to include the toolbar while printing and saving:
 {% endhighlight  %}
+
+
+{% endtabs %}
+
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:Chart ShowToolBarOnPrintAndSave="True">
 
@@ -656,14 +601,13 @@ The following code illustrates how to include the toolbar while printing and sav
 </syncfusion:Chart>
 
 {% endhighlight  %}
-{% highlight c# %}
 
-
-
-
+{% highlight csharp %}
 
 Chart1.ShowToolBarOnPrintAndSave = true;
 {% endhighlight  %}
+
+
 ## Property Settings Dialog
 
 This topic provides an introduction to Property Settings Dialog. Property Settings Dialog lets you to change the properties of the chart during runtime.
@@ -689,14 +633,12 @@ By clicking the Properties Tool Item in the Toolbar, the property settings dialo
 
 ![](Chart-Controls_images/Chart-Controls_img207.jpeg)
 
-
-
 ### Using ShowPropertyDialog
 
 The API, Show Propert dialog, helps you to invoke the property settings dialog.
-{% highlight c# %}
+{% tabs %}
 
-
+{% highlight csharp %}
 
 
 // Invokes the property dialog box.
@@ -719,9 +661,6 @@ private void PropertyDialogbtn_Click(object sender, RoutedEventArgs e)
 {% endhighlight  %}
 {% highlight vbnet %}
 
-
-
-
 ' Invokes the property dialog box.
 
 Private Sub PropertyDialogbtn_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
@@ -734,6 +673,7 @@ Private Sub PropertyDialogbtn_Click(ByVal sender As Object, ByVal e As RoutedEve
 
 End Sub
 {% endhighlight  %}
+{% endtabs %}
 
 ### Setting Properties
 
@@ -745,8 +685,6 @@ The property settings dialog allows you to set various properties of the chart. 
 * Legend
 * x-axis
 * y-axis  
-
-_Properties_
 
 <table>
 <tr>
@@ -793,10 +731,10 @@ The modified settings can be applied to the Main Chart when you click Apply or O
 The WPF Chart property settings dialog allows you to add your own custom tabs in the dialog. The added custom tab also has features through other tabs, like initializing the properties, changing the settings of the properties, Applying settings to the main chart. The following segment illustrates this special feature.
 
 This option is to allow the developer to add his/her own tab into the property settings dialog. To add custom tab, AddCustomTabs API is used.
-{% highlight c# %}
 
+{% tabs %}
 
-
+{% highlight csharp %}
 
   //  Adding the Custom Tab 
 
@@ -814,9 +752,6 @@ private void AddTab_Click(object sender, RoutedEventArgs e)
 {% highlight vbnet %}
 
 
-
-
-
 'Adding the Custom Tab
 
 Private Sub AddTab_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
@@ -828,14 +763,13 @@ Private Sub AddTab_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 End Sub
 
 {% endhighlight  %}
+{% endtabs %}
+
 
 ![](Chart-Controls_images/Chart-Controls_img209.jpeg)
 
 
-{% highlight c# %}
-
-
-
+{% highlight csharp %}
 
 //Adding the custom tab in the propertdialog
 
@@ -848,10 +782,7 @@ You can hide the tab that is not required using the Chart.HideTabItem(tabIndex) 
 
 ![](Chart-Controls_images/Chart-Controls_img210.jpeg)
 
-{% highlight c# %}
-
-
-
+{% highlight csharp %}
 
 
 //To hide the ChartSeries Tab.
@@ -866,10 +797,7 @@ Various events that can be used while invoking a property Dialog are listed as f
 Initialize CustomTab Page
 
 The InitializeCustomTabPages event is used to intialize the Custom tab that is created using the above code.
-{% highlight c# %}
-
-
-
+{% highlight csharp %}
 
 //event raised
 
@@ -893,9 +821,7 @@ private void AddTab_Click(object sender, RoutedEventArgs e)
 ### Apply Custom Tab Page
 
 The Custom Tab page properties can be applied to the Main chart, similar to applying property settings available in the other tabs. This can be achieved by raising the ApplyCustomTabPages event.
-{% highlight c# %}
-
-
+{% highlight csharp %}
 
 
 // Event raising
@@ -935,7 +861,7 @@ Essential Chart WPF lets the user to select the zoomed area in a chart. This can
 
 The following table provides more information on the property used.
 
-_Property_
+
 
 <table>
 <tr>
@@ -962,7 +888,7 @@ Selects the zoomed area for vertical axis.</td></tr>
 
 The following table provides more information on the method used.
 
-_Methods_
+
 
 <table>
 <tr>
@@ -997,7 +923,7 @@ The following code example illustrates selection of zoomed area in a chart.
 
 1. Using XAML
 
-
+   ~~~ xaml
 
 
 
@@ -1009,11 +935,11 @@ The following code example illustrates selection of zoomed area in a chart.
 
 				Converter={StaticResource rangeConverter}}"/>
 
-
+   ~~~
 
    ![](Chart-Controls_images/Chart-Controls_img211.jpeg)
 
-   {:.prettyprint}
+  
 
 ## Customizing Context Menu
 
@@ -1028,10 +954,8 @@ Adding with the Default Menu
 By setting ContextMenuType to DefaultWithCustom, the menu item is added along with the default list.
 
 The following code illustrates this.
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartArea IsContextMenuEnabled="True" ContextMenuType="DefaultWithCustom">                <syncfusion:ChartArea.CustomContextMenuItems>
 
@@ -1055,8 +979,7 @@ The following code illustrates this.
 
 By setting ContextMenuType to Custom, menu items are added as a new list.
 {% highlight xml %}
-  
-
+ 
 <syncfusion:ChartArea IsContextMenuEnabled="True" ContextMenuType="Custom">
 
                 <syncfusion:ChartArea.CustomContextMenuItems>
@@ -1071,9 +994,6 @@ By setting ContextMenuType to Custom, menu items are added as a new list.
 
 ![](Chart-Controls_images/Chart-Controls_img213.png)
 
-
-
-_Property Table_
 
 <table>
 <tr>
@@ -1093,7 +1013,6 @@ ObservableCollection&lt;MenuItem&gt;</td><td>
 &lt;syncfusion:ChartArea.CustomContextMenuItems&gt;                    &lt;MenuItem Header="MyMenuItem"/&gt;               &lt;/syncfusion:ChartArea.CustomContextMenuItems&gt;</td><td>
 Property Name : ContextMenuType Type:DependacyProperty /ContextMenuTypes /Ex: ContextMenuTypes.Custom </td></tr>
 </table>
-_Events_
 
 <table>
 <tr>
@@ -1208,7 +1127,7 @@ ChartSegment </td><td>
 Routed Event </td><td>
 NA</td></tr>
 </table>
-_ChartSegmentDropped Table_
+
 
 <table>
 <tr>
@@ -1239,16 +1158,16 @@ To view sample:
 Adding Inbuilt Drag and Drop Support for Chart Series to an Application 
 
 Inbuilt Drag and Drop Support can be added to an Application using the following code example:
-{% highlight c# %}
 
-
+{% tabs %}
+{% highlight csharp %}
 
 
 Chart1.Areas[0].AllowSegmentDragDrop = true;
 
 {% endhighlight  %}
-{% highlight xml %}
 
+{% highlight xml %}
 
 
         <sync:Chart x:Name="Chart1">
@@ -1261,7 +1180,7 @@ Chart1.Areas[0].AllowSegmentDragDrop = true;
 
         </sync:Chart>     
 {% endhighlight  %}		
-
+{% endtabs %}
 
 ## ChartAreaBounds
 
@@ -1277,12 +1196,10 @@ ChartAreaBounds is used in obtaining the list of points bound to a user-given re
 
 
 
-Adding ChartAreaBounds to an Application 
+### Adding ChartAreaBounds to an Application 
 
 BoundsToDataSource: You can use the BoundsToDataSource method of ChartArea control to get the list of the data that exist in the given rectangle region. The following code example illustrates the invoke of this method:
-{% highlight c# %}
-
-
+{% highlight csharp %}
 
 
 //Get the List of underlying objects avilable in the given "rect" region
@@ -1292,10 +1209,7 @@ chartdatasource.ItemsSource = chart.Areas[0].BoundsToDataSource(rect, chart.Area
 
 
 BoundsToPoints: You can use the BoundsToPoints method of ChartArea control to get the list of the chart points that exist in the given rectangle region. The following code example illustrates how to invoke this method.
-{% highlight c# %}
-
-
-
+{% highlight csharp %}
 
 //Get the list of chart points existing in the given "rect" region
 
@@ -1308,8 +1222,6 @@ chartpoints.ItemsSource = chart.Areas[0].BoundsToPoints(rect, chart.Areas[0].Ser
 ![C:/Users/sujithas/Desktop/BoundsToRectangle.png](Chart-Controls_images/Chart-Controls_img216.png)
 
 
-
-_Methods_
 
 <table>
 <tr>
@@ -1383,8 +1295,6 @@ Following are some useful behaviors of Essential Chart Serialization feature.
 
 ### Methods
 
-_MethodsTable_
-
 <table>
 <tr>
 <th>
@@ -1436,13 +1346,13 @@ Adding Serialization to an Application
 ### Serialize Chart control
 
 The following code example explains the serialization of the Chart control.
-{% highlight c# %}
-
+{% highlight csharp %}
 
        string Serializedstring =  Chart1.Serialize();
 
 
 {% endhighlight  %}
+
 The Chart1 in above code example represents the Chart object, and Serializedstring in above code example has the serialized string (XAML string) while execution. 
 
 ![Description: C:/Users/Abdulrahman/Desktop/serialization.png](Chart-Controls_images/Chart-Controls_img217.png)
@@ -1454,8 +1364,7 @@ _Serialized XAML string representing Essential Chart WPF_
 ### Deserialize Chart control
 
 The following code example explains the deserialization of the Chart control.
-{% highlight c# %}
-
+{% highlight csharp %}
 
 Chart DeserializedChartControl = new Chart();
 
@@ -1486,8 +1395,6 @@ N> Any changes done in the property window directly affects the Chart control fr
 
 ### Properties
 
-_Property Table_
-
 <table>
 <tr>
 <th>
@@ -1507,7 +1414,6 @@ NA</td></tr>
 
 ### Methods
 
-_Method Table_
 
 <table>
 <tr>
@@ -1538,7 +1444,6 @@ NA</td></tr>
 
 ### Events
 
-_Events Table_
 
 <table>
 <tr>
@@ -1587,8 +1492,6 @@ To run the UI WPF sample:
 3. Select Chart in the sample browser.
 4. Select User Interaction -> Property Dialog Demo on the Essential Chart pane and click the Run Sample button.
 
-
-
 To open the sample project:
 
 Go to the following sample location in your system:  
@@ -1602,9 +1505,7 @@ Adding Property Dialog to an Application
 There are two ways to invoke the Property dialog. They are, using Toolbar and ShowPropertyDialog. The following section briefs these two options.
 
 Opening Property Dialog through code
-{% highlight c# %}
-
-
+{% highlight csharp %}
 
 
 Chart1.ShowPropertyDialog();
@@ -1628,8 +1529,9 @@ By clicking the Properties Tool Item in the Toolbar, the property settings dia
 ### Adding custom tabs to property window of Chart
 
 You can include a custom tab to the property window in your application easily by adding a tab to the PropertyWindowTabs property. The following code example explains adding custom tab to the property window through XAML and in C#.
-{% highlight xml %}
+{% tabs %}
 
+{% highlight xml %}
 
 <syncfusion:Chart Margin="20" Grid.Row="1" Grid.Column="0" Name="Chart1">
 
@@ -1648,10 +1550,7 @@ You can include a custom tab to the property window in your application easily b
 </syncfusion:Chart>
 
 {% endhighlight  %}
-{% highlight c# %}
-
-
-
+{% highlight csharp %}
 
 
 TabItem CustomTab = new TabItem();
@@ -1660,14 +1559,16 @@ Chart1.PropertyWindowTabs.Add(CustomTab);
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 Listen to opening and closing of the property window
 
 You can listen to opening of the property window by adding a delegate method to the event ChartPropertyWindowOpening. Similarly, you can listen to opening of the property window by adding a delegate method to the event ChartPropertyWindowClosing.
+
+{% tabs %}
 {% highlight c# %}
 
-
 Chart1.ChartPropertyWindowOpening += new ChartPropertyWindowCancelEventHandler(Chart1_ChartPropertyWindowOpening);
-
 
 
 Chart1.ChartPropertyWindowClosing += new ChartPropertyWindowCancelEventHandler(Chart1_ChartPropertyWindowClosing);
@@ -1681,6 +1582,7 @@ Chart1.ChartPropertyWindowClosing += new ChartPropertyWindowCancelEventHandler(C
 <syncfusion:Chart Margin="20" Grid.Row="1" Grid.Column="0" Name="Chart1" ChartPropertyWindowOpening="Chart1_ChartPropertyWindowOpening" ChartPropertyWindowClosing="Chart1_ChartPropertyWindowClosing" />
 
 {% endhighlight  %}
+{% endtabs %}
 
 ## Adding Scroll Bar to a Chart
 
@@ -1696,7 +1598,6 @@ While adding huge amount of data to the chart in real time, the autoscrolling fu
 
 ### Property
 
-_Properties_
 
 <table>
 <tr>
@@ -1725,6 +1626,8 @@ NA</td></tr>
 ### Adding Scroll Bar to a Chart
 
 To enable AutoScrolling 
+
+{% tabs %}
 {% highlight xml %}
 
 
@@ -1740,10 +1643,7 @@ To enable AutoScrolling
 
 
 {% endhighlight  %}
-{% highlight c# %}
-
-
-
+{% highlight csharp %}
 
        this.XAxis.EnableAutoScrolling = true;
 
@@ -1760,3 +1660,5 @@ To enable AutoScrolling
       Me.XAxis.AutoScrollingDelta = 50
 
 {% endhighlight  %}
+
+{% endtabs %}

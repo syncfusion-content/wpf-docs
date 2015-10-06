@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Area
+title: Chart Area | Chart(Classic) | wpf | Syncfusion
 description: Chart Area
 platform: wpf
 control: Chart (Classic)
@@ -11,10 +11,10 @@ documentation: ug
 ## Adding Chart Area
 
 Once you add the Chart control, the first thing to do is to add a Chart Area and and Chart Series. The following code example illustrates how to do this.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <sfchart:Chart>
 
@@ -30,9 +30,6 @@ Once you add the Chart control, the first thing to do is to add a Chart Area and
 {% highlight c# %}
 
 
-
-
-
 ChartArea area = new ChartArea();
 
 Chart1.Areas.Add(area);
@@ -43,21 +40,18 @@ area.Series.Add(series);
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img6.jpeg)
 
-
-
-See Also
-
-Multiple Areas, Chart Area Layout Customization
 
 ## Multiple Areas
 
 Essential Chart provides support to add multiple Chart Areas to a Chart to visualize related data side by side. The following code example illustrates this.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <sfchart:Chart>
 
@@ -80,10 +74,6 @@ Essential Chart provides support to add multiple Chart Areas to a Chart to visua
 {% highlight c# %}
 
 
-
-
-
-
 ChartArea area = new ChartArea();
 
 area.Background = Brushes.LightGray;
@@ -103,20 +93,18 @@ Chart1.Areas.Add(area1);
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img7.jpeg)
 
 
 
-See Also
-
-Adding Chart Area, Chart Area Layout Customization
-
 ## Chart Area Header
 
 Chart enables you to add headers to the Chart Area object. Any element can be added as a Chart Area header by using the Header property of the ChartArea class.
+
+
 {% highlight xml %}
-
-
 
 
 <sfchart:Chart>
@@ -156,16 +144,9 @@ Chart enables you to add headers to the Chart Area object. Any element can be ad
 ![](Chart-Controls_images/Chart-Controls_img8.jpeg)
 
 
-
-See Also
-
-Adding Chart Area
-
 ## Chart Header
 
 Essential Chart for WPF enables users to set the title for a chart.
-
-_Property Table_
 
 <table>
 <tr>
@@ -190,8 +171,9 @@ Sub Property Name : HeaderAlignment Type: HorizontalAlignment / HorizontalAlignm
 ### Setting the Title for a Chart
 
 Set the title for a chart by using the following code.
-{% highlight xml %}
 
+{% tabs %}
+{% highlight xml %}
 
 <sfchart:Chart Name="Chart1" Header="Sales and Month">
 
@@ -201,13 +183,13 @@ Set the title for a chart by using the following code.
 {% highlight c# %}
 
 
-
-
-
 chart1.Header = " Sales and Month "
 
 
 {% endhighlight  %}
+
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img9.png)
 
 
@@ -218,9 +200,6 @@ Users can customize the chart header using a text block, text box, rectangle, or
 
 Customize the chart header by using the following code.
 {% highlight xml %}
-
-
-
 
 <sfchart:Chart Name="Chart1" >
 
@@ -247,10 +226,10 @@ WPF Chart has a built-in context menu which can be enabled by setting the ChartA
 ### Default Context Menu
 
 The following code example illustrates how to display the built-in context menu of Chart Area.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:Chart >
 
@@ -261,13 +240,11 @@ The following code example illustrates how to display the built-in context menu 
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
-
 area.IsContextMenuEnabled = true;
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img11.jpeg)
 
@@ -276,10 +253,9 @@ area.IsContextMenuEnabled = true;
 ### Custom Context Menu
 
 You can also customize the context menu items to display any desired text. The following code example illustrates this.
+
+
 {% highlight c# %}
-
-
-
 
 ContextMenu contextMenu = new ContextMenu();
 
@@ -298,10 +274,9 @@ Chart1.Areas[0].ContextMenu = contextMenu;
 ## Background
 
 You can customize the background of the Chart Area to suit the application by specifying custom brushes for the Background property. The following code example illustrates this.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <sfchart:Chart>
 
@@ -317,9 +292,6 @@ You can customize the background of the Chart Area to suit the application by sp
 {% highlight c# %}
 
 
-
-
-
 ChartArea area = new ChartArea();
 
 area.Background = Brushes.LightSkyBlue;
@@ -328,17 +300,17 @@ Chart1.Areas.Add(area);
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img13.jpeg)
-
-
 
 ### Grid Background
 
 The GridBackground property of the Chart Area is used to change the color of the inner area of the Chart Area object. The following code example illustrates how to set this property.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <sfchart:Chart>
 
@@ -350,11 +322,8 @@ The GridBackground property of the Chart Area is used to change the color of the
 
 </sfchart:Chart>
 
-
 {% endhighlight  %}
 {% highlight c# %}
-
-
 
 
 ChartArea area = new ChartArea();
@@ -367,13 +336,14 @@ Chart1.Areas.Add(area);
 
 {% endhighlight  %}
 
+{% endtabs %}
+
 ![](Chart-Controls_images/Chart-Controls_img14.jpeg)
 
 
 
 Essential Chart alternatively provides options to apply two backgrounds to a single Chart Area. The following properties of the ChartArea class are used for this purpose.
 
-_Property Table_
 
 <table>
 <tr>
@@ -396,10 +366,9 @@ orientation property that specifies whether the alternating background should be
 
 
 The following code example illustrates how to set the preceding properties.
+
+{% tabs %}
 {% highlight xml %}
-
-
-
 
 <sfchart:Chart>
 
@@ -413,9 +382,6 @@ The following code example illustrates how to set the preceding properties.
 
 {% endhighlight  %}
 {% highlight c# %}
-
-
-
 
 
 ChartArea area = new ChartArea();
@@ -433,14 +399,11 @@ area.AlternatingFillDirection = Orientation.Horizontal;
 Chart1.Areas.Add(area);
 
 {% endhighlight  %}
+{% endtabs %}
 
 ![](Chart-Controls_images/Chart-Controls_img15.jpeg)
 
 
-
-See Also
-
-Adding Chart Area
 
 ## Chart Watermark Support
 
@@ -462,8 +425,6 @@ Essential Chart supports watermarks which can be used to show text or images beh
 
 
 ### Properties
-
-_Properties_
 
 <table>
 <tr>
@@ -495,13 +456,18 @@ To access the chart watermark demo:
 
 #### Image Watermark 
 
+{% tabs %}
+
 {% highlight xml %}
      <syncfusion:ChartArea.Watermark>        <VisualBrush Stretch="None" Opacity="0.5" AlignmentX="Center"                                                     AlignmentY="Top">            <VisualBrush.Visual>                <Image Name="img" Source="/WatermarkDemo;component/SyncLogo1.png">                    <Image.LayoutTransform>                        <RotateTransform Angle="-45"/>                    </Image.LayoutTransform>                </Image>            </VisualBrush.Visual>        </VisualBrush>    </syncfusion:ChartArea.Watermark>
 {% endhighlight  %}
+
 {% highlight c# %}
             Image image = new Image()            {                Source = new BitmapImage(new Uri(@"D:\WatermarkDemo\SyncLogo1.png")),                LayoutTransform = new RotateTransform() { Angle = -45 }            };                       this.chartArea.Watermark = new VisualBrush()            {                Visual = image,                Stretch = Stretch.None,                AlignmentX = AlignmentX.Center,                AlignmentY = AlignmentY.Top,                Opacity = 0.5                           };
 
 {% endhighlight  %}
+
+{% endtabs %}
 
 ![Description: C:/Users/johnbowlinboscok/Desktop/REt/Images/ImageWatermark.png](Chart-Controls_images/Chart-Controls_img16.png)
 
@@ -509,13 +475,17 @@ To access the chart watermark demo:
 
 #### Text Watermark 
 
+{% tabs %}
+
 {% highlight xml %}
     <syncfusion:ChartArea.Watermark>        <VisualBrush Stretch="None" Opacity="0.8" AlignmentX="Right"                                                     AlignmentY="Bottom">            <VisualBrush.Visual>                <TextBlock Name="txt" Text="Syncfusion" FontSize="64" Foreground="Red"                                      FontFamily="Microsoft Sans Serif">                    <TextBlock.LayoutTransform>                        <RotateTransform Angle="325"/>                    </TextBlock.LayoutTransform>                </TextBlock>            </VisualBrush.Visual>        </VisualBrush>    </syncfusion:ChartArea.Watermark>
 {% endhighlight  %}
+
 {% highlight c# %}
             TextBlock text = new TextBlock()            {                Text = "Syncfusion",                FontSize = 64,                Foreground = Brushes.Red,                FontFamily = new FontFamily("Microsoft Sans Serif"),                LayoutTransform = new RotateTransform() { Angle = 325 }            };            this.chartArea.Watermark = new VisualBrush()            {                Visual = text,                Stretch = Stretch.None,                AlignmentX = AlignmentX.Right,                AlignmentY = AlignmentY.Bottom,                Opacity = 0.5                           };
 {% endhighlight  %}
 
+{% endtabs %}
 
 ![Description: C:/Users/johnbowlinboscok/Desktop/REt/Images/TextWatermark.png](Chart-Controls_images/Chart-Controls_img17.png)
 
@@ -531,12 +501,8 @@ ChartGrid is the container that is used by Chart, by default, to host the Chart 
 
 ![](Chart-Controls_images/Chart-Controls_img18.jpeg)
 
-
-
 However, the default settings of the ChartGrid can be customized to display the Chart Areas side by side. The following code example illustrates how this can be done by using the Orientation and AutoRowsCount properties.
 {% highlight xml %}
-
-
 
 
 <sfchart:Chart>
@@ -557,17 +523,15 @@ However, the default settings of the ChartGrid can be customized to display the 
 {% endhighlight  %}
 ![](Chart-Controls_images/Chart-Controls_img19.jpeg)
 
-
-
 The ChartGrid also provides options to control the aspect ratio (number of rows / number of columns) of the layout grid. Take a look at the ChartGrid class reference for more information.
 
 ### Other Panels
 
 Also you can plug-in any kind of Panel as the container for the Chart Area. The following code example illustrates how to use a DockPanel as the Areas Panel of the Chart.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <sfchart:Chart>
 
@@ -605,9 +569,6 @@ Also you can plug-in any kind of Panel as the container for the Chart Area. The 
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
 ChartArea area = new ChartArea();
 
 area.Background = Brushes.LightGray;
@@ -634,24 +595,23 @@ Chart1.Areas.Add(area2);
 
 {% endhighlight  %}
 
-![](Chart-Controls_images/Chart-Controls_img20.jpeg)
+{% endtabs %}
 
+![](Chart-Controls_images/Chart-Controls_img20.jpeg)
 
 
 A sample which demonstrates how to use different containers as the Areas Panel is available in the following sample installation path.
 
 .._My Documents\Syncfusion\EssentialStudio\Version Number\WPF\Chart.WPF\Samples\3.5\WindowsSamples\Chart Area\Custom Panel Demo_
 
-See Also
-
-Adding Chart Area
 
 ## Synchronization of Chart Axis
 
 Essential Chart WPF lets you align multiple chart areas by using a single primary axis. You can synchronize the chart axis by using the following code example.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
 
 
 <sfChart:SyncChartAreas>
@@ -698,9 +658,6 @@ Essential Chart WPF lets you align multiple chart areas by using a single primar
 {% highlight c# %}
 
 
-
-
-
 SyncChartAreas syncAreas = new SyncChartAreas();
 
 ChartAxis primaryAxis = new ChartAxis();
@@ -719,6 +676,9 @@ ChartArea area2 = new ChartArea();
 
 syncAreas.Areas.Add(area2);
 {% endhighlight  %}
+
+{% endtabs %}
+
 Run the code. The following output is displayed.
 
 ![](Chart-Controls_images/Chart-Controls_img21.jpeg)
@@ -732,22 +692,20 @@ Essential chart now supports the concepts of Zoomin, Zoomout and panning in the 
 ### Adding Additional Zooming Functionality
 
 Add Additional Zooming Functionality, by using the following code.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <sfChart:SyncChartAreas IsContextMenuEnabled="True"> 
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
-
-
 syncArea.IsContextMenuEnabled = true;
 {% endhighlight  %}
+
+{% endtabs %}
+
 When the code runs, the following output displays.
 
 ![](Chart-Controls_images/Chart-Controls_img22.jpeg)
@@ -790,10 +748,9 @@ Bind the data source, by using the following code.
 
 N> Set BindingPath to Key to bind the key of the dictionary to BindingPathX or BindingPathsY.
 
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartSeries BindingPathX="Key" BindingPathsY="y" 
 
@@ -801,15 +758,12 @@ DataSource={StaticResource expenditure}>
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
-
-
 Series.BindingPathX=”Key”;
 
 Series.BindingPathsY =”y”;
 {% endhighlight  %}
+
+{% endtabs %}
 
 ## Lazy Loading Support for Chart WPF 
 
@@ -820,10 +774,11 @@ Lazy Loading Support reduces the loading time of chart area. This belongs to Cha
 Set EnableLazyLoading property as true to add this feature.
 
 Add Lazy Loading Support, by using the following code.
+
+{% tabs %}
+
 {% highlight xml %}
  
-
-
 
 <syncfusion:ChartArea EnableLazyLoading="True" IsContextMenuEnabled="True">
 
@@ -831,21 +786,19 @@ Add Lazy Loading Support, by using the following code.
 {% highlight c# %}
 
 
-
-
-
 Area1.EnableLAzyLoading = true;
 {% endhighlight  %}
+{% endtabs %}
 
 ## Revamping 3D charts in Chart WPF Feature 
 
 Charts are implemented in 3D with customization to improve the look and feel of the chart.
 
 Display 3D Chart, by using the following code:
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 //To display the chart type in 3d mode
 
@@ -863,9 +816,6 @@ BottomWallBackground="Transparent" BottomWallThickness="0"/>
 {% endhighlight  %}
 {% highlight c# %}
  
-
-
-
 //To set the background
 
 Chart1.Areas[0].Chart3DSettings.BackWallBackground = Brushes.AliceBlue;
@@ -887,10 +837,6 @@ Chart1.Areas[0].Chart3DSettings.BackWallBackground = Brushes.AliceBlue;
                 Chart1.Areas[0].Chart3DSettings.CameraProjection = 
 
 CameraProjection.Orthographic;
-
-
-
-
 
                 Light light=new AmbientLight(Color.FromArgb(200, 200, 200, 200));
 
@@ -938,6 +884,9 @@ CameraProjection.Orthographic;
 
                 Chart1.Areas[0].Chart3DSettings.ViewDefaultTurn = 10; Screen 
 {% endhighlight  %}
+
+{% endtabs %}
+
 When the code runs, the following output displays.
 
 ![](Chart-Controls_images/Chart-Controls_img23.jpeg)
@@ -952,7 +901,7 @@ The Interactive cursor hints the X value and Y value of a specific data point, a
 
 The following table contains the property details of the table.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -1044,10 +993,10 @@ Bool</td></tr>
 ### Adding Interactive Cursors
 
 Add Interactive Cursors, by using the following code.
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 //sets the interactive cursor
 
@@ -1105,9 +1054,6 @@ Add Interactive Cursors, by using the following code.
 {% highlight c# %}
 
 
-
-
-
 // sets the cursor visibility
 
 this.chart1.Areas[0].InteractiveCursors[0].CursorVisibility = Visibility. Visible;
@@ -1153,6 +1099,8 @@ this.chart1.Areas[0].InteractiveCursors[0].OffsetY = 100;
 this.chart1.Areas[0].InteractiveCursors[0].CursorStrokethickness = 3;
 {% endhighlight  %}
 
+{% endtabs %}
+
 ## Splitter for SyncChartArea should be implemented
 
 Essential Chart WPF is now enhanced with Splitter forSyncChartArea. This is usefulto differentiate the implementation of more than one Chart Area.
@@ -1161,7 +1109,7 @@ Essential Chart WPF is now enhanced with Splitter forSyncChartArea. This is usef
 
 The following table contains the property details.
 
-_Property Table_
+
 
 <table>
 <tr>
@@ -1199,6 +1147,9 @@ Brush</td></tr>
 ### Adding Splitter for SyncChartArea
 
 Add Splitter for SyncChartArea, by using the following code.
+
+{% tabs %}
+
 {% highlight xml %}
  
 
@@ -1209,10 +1160,6 @@ SplitterStroke="Red" SplitterColor="Blue"  SplitterWidth="2" />
 {% endhighlight  %}
 {% highlight c# %}
 
- 
-
-
-
 this.SyncChart.SplitterVisibility = SplitterVisibility.ShowAlways;
 
             this.SyncChart.SplitterStroke = Brushes.Red;
@@ -1222,6 +1169,8 @@ this.SyncChart.SplitterVisibility = SplitterVisibility.ShowAlways;
             this.SyncChart.SplitterWidth = 2;
 {% endhighlight  %}
 
+{% endtabs %}
+
 ## Bind Array kind of Objects in Chart WPF
 
 Essential chart now supports binding of array kind of values in BindingPathX and BindingPathsY.
@@ -1229,18 +1178,12 @@ Essential chart now supports binding of array kind of values in BindingPathX and
 This feature is useful when we use an array or list as data source.
 {% highlight c# %}
  
-
-
-
     <syncfusion:ChartSeries Name="series1" BindingPathsY="Y" BindingPathX="X[0]"  Type="FastStackingColumn" Stroke="Black" DataSource="{Binding}"/>
 {% endhighlight  %}
 We can bind the data values with the index “X[0]“ .
 
 ### Sample Data Source
 {% highlight c# %}
-
-
-
 
 public class TestClass
 
@@ -1253,10 +1196,6 @@ public class TestClass
         public double[] X { get; set; }
 
     }
-
-
-
-
 
 
 
@@ -1285,9 +1224,6 @@ TestClassCollection is collection of TestClass which has an array object and a d
 When we bind this kind of data source to the chart series, we can specify the BindingpathX and BindingPathsY values using this feature.
 {% highlight c# %}
  
-
-
-
 item.DataContext = new TestClassCollection1 
 
 item.BindingPathX = "X[0]";
@@ -1300,8 +1236,6 @@ item.BindingPathsY = new string[] { "Y" };
 Formerly, the chart area’s scrolling bar value change could not be customized by users. This feature enables the user to specify the large and small change values similar to the Slider control.
 
 ### Properties
-
-_Property Table_
 
 <table>
 <tr>
@@ -1337,10 +1271,10 @@ double</td></tr>
 </table>
 
 ## Adding SmallChange and LargeChange Properties for Chart Area Scrolling Bar to an Application 
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <syncfusion:ChartArea Name="area" syncfusion:ChartZoomingScrollBar.VerticalBarSmallChange="{Binding ElementName=ver_sma,Path=Value,Mode=TwoWay}" syncfusion:ChartZoomingScrollBar.VerticalBarLargeChange="{Binding ElementName=ver_lar,Path=Value,Mode=TwoWay}" syncfusion:ChartZoomingScrollBar.HorizontalBarLargeChange="{Binding ElementName=hor_lar,Path=Value,Mode=TwoWay}" syncfusion:ChartZoomingScrollBar.HorizontalBarSmallChange="{Binding
 
@@ -1351,10 +1285,8 @@ double</td></tr>
  </syncfusion:ChartArea>
 
 {% endhighlight  %}
+
 {% highlight c# %}
-
-
-
 
 ChartZoomingScrollBar.SetHorizontalBarLargeChange(area, 0.5);
 
@@ -1365,6 +1297,8 @@ ChartZoomingScrollBar.SetVerticalBarLargeChange(area, 0.4);
 ChartZoomingScrollBar.SetVerticalBarSmallChange(area, 0.1);
 {% endhighlight  %}
 
+{% endtabs %}
+
 ## Additional Zooming Functionality for SyncChartAreas
 
 Essential Chart now supports the concepts of Zoomin, Zoomout, and panning in the SyncChartArea
@@ -1372,20 +1306,20 @@ Essential Chart now supports the concepts of Zoomin, Zoomout, and panning in the
 ### Adding Additional Zooming Functionality
 
 Add additional zooming functionality by using the following code.
-{% highlight xml %}
 
+{% tabs %}
+
+{% highlight xml %}
 
 <sfChart:SyncChartAreas IsContextMenuEnabled="True"> 
 
 {% endhighlight  %}
+
 {% highlight c# %}
-
- 
-
-
 
 syncArea.IsContextMenuEnabled = true;
 {% endhighlight  %}
+{% endtabs %}
 
 
 ![](Chart-Controls_images/Chart-Controls_img24.png)
@@ -1405,10 +1339,10 @@ SyncChartArea also has support for sector zooming as in ordinary chart areas.
 ### Sample Link
 
 Essential Chart WPF > User Interaction > Zooming and Scrolling Demo
+
+{% tabs %}
+
 {% highlight xml %}
-
-
-
 
 <sfChart:SyncChartAreas   Name="syncChart" EnableMouseDragZooming="True">
 
@@ -1417,9 +1351,7 @@ Essential Chart WPF > User Interaction > Zooming and Scrolling Demo
 {% endhighlight  %}
 {% highlight c# %}
 
-
-
-
-
 syncChart.EnableMouseDragZooming = true;
 {% endhighlight  %}
+
+{% endtabs %}

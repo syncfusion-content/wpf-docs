@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CloseMode
+title: CloseMode | TileView | wpf | Syncfusion
 description: closemode 
 platform: wpf
 control: TileView Control
@@ -19,8 +19,10 @@ This feature can be used when you want to move the TileViewItems state to Hidden
 
 The CloseMode feature can be added to an application by using either XAML or C# code.
 
-The following code example illustrates how to add the CloseMode feature to an application through XAML.
+The following code example illustrates how to add the CloseMode feature to an application through XAML and C#.
 
+
+{% tabs %}
 
 {% highlight xml %}
 
@@ -68,8 +70,6 @@ Background="White">
 
 
 
-The following code example illustrates how to add the CloseButton feature to an application through C#.
-
 
 {% highlight c# %}
 
@@ -116,7 +116,7 @@ The following code example illustrates how to add the CloseButton feature to an 
       this.LayoutRoot.Children.Add(Tile);
 {% endhighlight %}
 
-
+{% endtabs %}
 
 
 ## Properties
@@ -126,11 +126,11 @@ Property Table
 <table>
 <tr>
 <th>
-{{ '**Property**' | markdownify }} </th><th>
-{{ '**Description**' | markdownify }} </th><th>
-{{ '**Type**' | markdownify }} </th><th>
-{{ '**Data Type**' | markdownify }} </th><th>
-{{ '**Reference links**' | markdownify }} </th></tr>
+Property </th><th>
+Description </th><th>
+Type  </th><th>
+Data Type </th><th>
+Reference links  </th></tr>
 <tr>
 <td>
 CloseMode</td><td>
