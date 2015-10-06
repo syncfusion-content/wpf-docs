@@ -31,13 +31,16 @@ When the SelectedObject property binds to an object, the properties of that obje
 
 /// </summary>
 
-partial class MainWindow :  Window {
-	public MainWindow() {
+partial class MainWindow :  Window 
+{
+	public MainWindow() 
+	{
 		InitializeComponent();
 		this.propertyGrid.SelectedObject  =  new Customer();
 	}
 }
-public class Customer {
+public class Customer 
+{
 	private string _name;
 	private int _age;
 	private DateTime _dateOfBirth;
@@ -46,56 +49,76 @@ public class Customer {
 	ng _email;
 	private bool _frequentBuyer;
 	[CategoryAttribute("ID Settings"),  DescriptionAttribute("Name of the customer")]
-	public string Name {
-		get {
+	public string Name 
+	{
+		get 
+		{
 			return _name;
 		}
-		set {
+		set 
+		{
 			_name  =  value;
 		}
 	}
 	[CategoryAttribute("ID Settings"), DescriptionAttribute("Social Security Number of the customer")]
-	public string SSN {     get {
+	public string SSN 
+	{     get 
+		{
 			return _SSN;
 		}
 		set {}
 		[CategoryAttribute("ID Settings"), DescriptionAttribute("Address of the customer")]
-		public string Address {
-			get {
+		public string Address 
+		{
+			get 
+			{
 				return _address;
 			}
-			set {
+			set 
+			{
 				_address  =  value;
 			}
 		}
 		[CategoryAttribute("ID Settings"), DescriptionAttribute("Date of Birth of the Customer (optional)")]
-		public DateTime DateOfBirth {
-			get {
+		public DateTime DateOfBirth 
+		{
+			get 
+			{
 				return _dateOfBirth;
 			}
-			set {
+			set 
+			{
 				_dateOfBirth  =  value; 
 			}
 		}
 		[CategoryAttribute("ID Settings"),  DescriptionAttribute("Age of the customer")]
-		public int Age { 
-			get {
+		public int Age 
+		{ 
+			get 
+			{
 				return _age;
 			}
-			set  {
+			set  
+			{
 				_age  =  value;
 			}
 		}
 		[CategoryAttribute("Marketting Settings"),  DescriptionAttribute("If the customer as bought more than 10 times, this is set to true")]        
-		public bool FrequentBuyer { get {
+		public bool FrequentBuyer 
+		{ 
+			get 
+			{
 				return _frequentBuyer;
 			}
-			set {
+			set 
+			{
 				_frequentBuyer  =  value;
 			}
 		}
 		[CategoryAttribute("Marketting Settings"),  DescriptionAttribute("Most current e-mail of the customer")]
-		public string Email { get  { 
+		public string Email 
+		{ 	get 
+			{ 
 				return _email;
 			}
 			set { _email  =  value; 
@@ -103,7 +126,6 @@ public class Customer {
 		}
 	} 
 }
-
 {% endhighlight  %}
 
 {% endtabs %}

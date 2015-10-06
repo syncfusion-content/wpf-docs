@@ -38,11 +38,13 @@ Using CustomEditorCollection property user can add custom editors to PropertyGri
     
 /// </summary>
   
-public partial class MainWindow :  Window     {
+public partial class MainWindow :  Window     
+{
 	/// <summary> 
 	/// Initializes a new instance of the <see cref="MainWindow"/> class.<br>        
 	/// </summary><br>        
-	public MainWindow()  {
+	public MainWindow()  
+	{
 		InitializeComponent();
 		// Creating CustomEditor for Background.
 		CustomEditor editor  =  new CustomEditor();
@@ -51,18 +53,25 @@ public partial class MainWindow :  Window     {
 		this.propertyGrid.CustomEditorCollection.Add(editor);
 	}
 }
-public class ColorEditEditor :  ITypeEditor {
-	public void Attach(PropertyViewItem property,  PropertyItem info) {
-		if  (info.CanWrite) {
-			var binding  =  new Binding("Value") {
+public class ColorEditEditor :  ITypeEditor 
+{
+	public void Attach(PropertyViewItem property,  PropertyItem info) 
+	{
+		if  (info.CanWrite) 
+		{
+			var binding  =  new Binding("Value")
+			{
 				Mode  =  BindingMode.TwoWay,
 				Source  =  info,
 				ValidatesOnExceptions  =  true,
 				ValidatesOnDataErrors  =  true
 			};
 			BindingOperations.SetBinding(colorEdit,  ColorEdit.BrushProperty,  binding);
-		} else {
-			var binding  =  new Binding("Value") {
+		} 
+		else 
+		{
+			var binding  =  new Binding("Value") 
+			{
 				Mode  =  BindingMode.OneWayToSource,
 				Source  =  info, < br >                     
 				ValidatesOnExceptions  =  true,
@@ -72,11 +81,13 @@ public class ColorEditEditor :  ITypeEditor {
 		}
 	}
 	public ColorEdit colorEdit;
-	public object Create(System.Reflection.PropertyInfo PropertyInfo) {
+	public object Create(System.Reflection.PropertyInfo PropertyInfo) 
+	{
 		colorEdit  =  new ColorEdit();
 		return colorEdit;
 	}
-	public void Detach(PropertyViewItem property) {
+	public void Detach(PropertyViewItem property) 
+	{
 		throw new NotImplementedException();
 	}
 }
