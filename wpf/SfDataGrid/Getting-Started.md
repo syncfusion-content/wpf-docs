@@ -255,7 +255,7 @@ Following steps demonstrate how to create a DataGrid and bind data to it:
 
 
 
-5. You can add Syncfusion schema ([http://schemas.syncfusion.com/wpf](http://schemas.syncfusion.com/wpf)) or namespace (Syncfusion.UI.XAML.Grid) of SfDataGrid in XAML to create SfDataGrid. Here, your sample name space to set ViewModel as data context to Grid or to Window. 
+5. You can add Syncfusion schema (http://schemas.syncfusion.com/wpf) or namespace (Syncfusion.UI.XAML.Grid) of SfDataGrid in XAML to create SfDataGrid. Here, your sample name space to set ViewModel as data context to Grid or to Window. 
 
 
 

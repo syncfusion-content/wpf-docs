@@ -1825,7 +1825,7 @@ start_date: The start of the period to find the working days
 
 end_date: The end of the period to find the working days.
 
-[holidays]:  An optional argument, which specifies an array of dates that are not to be counted as working days.
+holidays:  An optional argument, which specifies an array of dates that are not to be counted as working days.
 
 N> If any argument is not a valid date, NETWORKDAYS returns the &#35;VALUE! error value.
 
