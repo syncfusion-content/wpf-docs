@@ -11,7 +11,7 @@ documentation: ug
 
 ### Hosting a Windows Form control
 
-DockingManager allows to host a WindowsForm control as a Docking Child 
+DockingManager allows you to host a WindowsForm control as a Docking Child. 
 
 {%highlight xml%}
 <syncfusion:DockingManager x:Name="DockingManager1" DockFill="True"   ><WebBrowser Name="Web1"></syncfusion:DockingManager> Web1.Navigate("http://www.syncfusion.com/");
@@ -23,8 +23,8 @@ DockingManager allows to host a WindowsForm control as a Docking Child
 
 ### Interaction with control hosted by Win32 Host 
 
-* While interacting the  WindowsForm control with WPF controls it leads to inaccessibility of WPF controls behind WindowsForm control, since the WindowsForm control will be on top. 
-* While floating the WindowsForm control in DockingManager, it will not be visible. For these case , set **UseInteropCompatibilityMode** property as **True** for the DockingManager. 
+* While interacting with the  WindowsForm control with WPF controls it leads to inaccessibility of WPF controls behind WindowsForm control, since the WindowsForm control is on top. 
+* While floating the WindowsForm control in DockingManager, it is not visible. For these cases, set **UseInteropCompatibilityMode** property as **True** for the DockingManager. 
 
 {%highlight xml %}
 <syncfusion:DockingManager x:Name="DockingManager1" DockFill="True" UseInteropCompatibilityMode="True"><WebBrowser Name="Web1"  ></syncfusion:DockingManager>
