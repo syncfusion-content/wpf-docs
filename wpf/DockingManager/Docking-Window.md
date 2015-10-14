@@ -1,11 +1,11 @@
 ## Docking Window
 
-Docking windows is one of the state of DockingManager, Since **Dock** is the default value, so initially all children are stay in Docking Window![](DockingWindow_images/DockingWindow_img1.jpeg)
+Docking windows is one of the states of DockingManager, Since **Dock** is the default value, so initially all the children stay in Docking Window![](DockingWindow_images/DockingWindow_img1.jpeg)
 .
 
 ### Configuring window in Different Sides
 
-The five sides that the docking windows can be docked are 
+The five sides that can be docked are 
 
 * Left
 * Right
@@ -31,13 +31,13 @@ To dock 4 children of a DockingManager in 4 different sides, then use **SideInDo
 ![](DockingWindow_images/DockingWindow_img2.jpeg)
 
 
-To set as Tabbed Window, the window should aware of a Target window name and this concepts have explained below. 
+To set as Tabbed Window, the window should be made aware of a Target window name, as explained here. 
 
 ### Docking window in various Targets 
 
-Docking window can also dock at any side of the Target Docking Window, through an attached property named **TargetNameInDockedMode**. 
+Docking window can also be docked at any side of the Target Docking Window, through an attached property named **TargetNameInDockedMode**. 
 
-The following code helps to arrange children of DockingManager which targets a single Docking window, and docked along Left, Top, Right and Tabbed.
+The following code helps to arrange children of DockingManager that targets a single Docking window, and docked along Left, Top, Right and Tabbed.
 
 {% highlight xml %}
 <ContentControl x:Name="DockingWindow1" syncfusion:DockingManager.Header="Targeted Window" />
@@ -87,7 +87,7 @@ To enable the feature of maximizing the Docking Window, set **“MaximizeButtonE
 
 #### Maximize Docking Window to full screen
 
-Using **"MaximizeMode”** property to **“FullScreen”** then the Docking Windows occupies entire screen when it will be in Maximized state 
+Using **"MaximizeMode”** property to **“FullScreen”** then the Docking Windows occupies entire screen when it is in the Maximized state.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="SyncDockingManager" MaximizeButtonEnabled="True" MaximizeMode="FullScreen"/>
@@ -140,7 +140,7 @@ DockingManager provides two attached property named “**CanMaximize**” and �
 
 ### Hot Drag the window
 
-The DockWindow Header can be highlighted when the mouse is hover an active Docking window, through **IsEnableHotTracking** property. By default its value is **False**, to enable this functionality turn its value to **True**.
+The DockWindow Header can be highlighted when the mouse is hovered on an active Docking window, through **IsEnableHotTracking** property. By default its value is **False**, to enable this functionality turn its value to **True**.
 
 {% highlight xml %}
 
@@ -172,7 +172,7 @@ The **“CanDock"** property can help to enable or disable the docking functiona
 
 ### Enabling and disabling the Header Visibility
 
-**NoHeader** is a property, which is used to hide the header of the Docked Window, by default its value is **False**. To hide the Header, turn its value to **True**.
+**NoHeader** is a property, that is used to hide the header of the Docked Window, by default its value is **False**. To hide the Header, turn its value to **True**.
 
 {% highlight xml %}
 
