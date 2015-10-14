@@ -9,11 +9,11 @@ documentation: ug
 ---
 ## MDI/ TDI functionalities
 
-The MDI and TDI functionalities is applicable for the Document window in the DockingManager.
+The MDI and TDI functionalities are applicable for the Document window in the DockingManager.
 
-The Document window can be displayed in both Multiple Document Interface and Tabbed Document Interface. To switch this functionality between MDI / TDI mode for the Document window, set the property **ContainerMode** with its respective values.
+The Document window can be displayed in both Multiple Document Interface and Tabbed Document Interface. To switch this functionality between MDI and TDI mode for the Document window, set the property **ContainerMode** with its respective values.
 
-By default, the document state window will be in TDI mode, that display tab as tabbed document.
+By default, the document state window is in TDI mode, with the display tab as tabbed document.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="DockingManager1" UseDocumentContainer="True"  ContainerMode="TDI">        
@@ -57,7 +57,7 @@ syncfusion:DockingManager.State="Document"/>
 
 ### Setting MDI Window state
 
-The differenet state for the MDI Window can be set using the **SetMDIWindowState()** method of DocumentContainer 
+The differenet state for the MDI Window can be set using the **SetMDIWindowState()** method of DocumentContainer. 
 
 * Setting MDIWindowstate as Minimized
 
@@ -117,9 +117,9 @@ MDI document window can be able to resize using the navigation arrows, to restri
 
 ### Different Keyboard Navigation Modes
 
-DockingManager allows to navigate between the TDI/MDI windows easily using the keyboard key with combination of **CTRL** **+** **TAB** in five different modes through the property **SwitchMode** of the Documentcontainer that can be fetched using the DocContainer in the DocumentContainer loaded event
+DockingManager allows you to navigate between the TDI and MDI windows easily using the keyboard keys with combination of **CTRL** **+** **TAB** in five different modes through the property **SwitchMode** of the Documentcontainer that can be fetched using the DocContainer in the DocumentContainer loaded event.
 
-There are five switch modes such as:
+There are five switch modes.
 
 * Immediate
 * List
@@ -127,7 +127,7 @@ There are five switch modes such as:
 * VS2005
 * Vista Flip
 
-* Immediate – switch the MDI document windows immediately
+* Immediate – Switch the MDI document windows immediately.
 
 {% highlight c# %}
 
@@ -144,7 +144,7 @@ DockingManager1.SwitchMode =SwitchMode.Immediate;
 ![](MDI_TDIfunctionalities_images/MDI_TDIfunctionalities_img4.jpeg)
 
 
-* List – Switch the MDI document windows in list format
+* List – Switch the MDI document windows in list format.
 
 {% highlight c# %}
 
@@ -201,7 +201,7 @@ DockingManager1.SwitchMode = SwitchMode.VS2005;s
 
 ### Setting MDI Layout
 
-DockingManager allows to set the different layout for the MDI windows with the different MDILayout values such as **Horizontal****,** **Vertical****,** **and** **Cascade** layout through the property **SetLayout****()** of DocumentContainer.
+DockingManager allows you to set the different layout for the MDI windows with the different MDILayout values such as **Horizontal****,** **Vertical****,** **and** **Cascade** layout through the property **SetLayout****()** of DocumentContainer.
 
 * Horizontal - Arranges the MDI windows horizontally.
 
@@ -277,7 +277,7 @@ TDILayoutPanel.SetTDIIndex(Content1,0);
 
 ### Drag / Drop support in TDI
 
-The TDI document index can be changed by drag and drop like Visual Studio. This functionality can be enable or disable through the property **IsTDIDragDropEnabled** of DockingManager depends upon its value **True** or **False** respectively.
+The TDI document index can be changed by dragging and dropping it like Visual Studio. This functionality can be enabled or disabled through the property **IsTDIDragDropEnabled** of DockingManager depends upon its value **True** or **False** respectively.
 
 {% highlight xml %}
 
@@ -305,7 +305,7 @@ syncfusion:DockingManager.State="Document"/>
 
 ### Customizing Close Menu
 
-When two or more documents used in the DockingManager the Close, CloseAll and CloseAllButThis menu item will be available for the document window. To collapse the visibility of these menu item, set the property **ShowClose** , **ShowCloseAll** and **ShowCloseAllButThis** as **False**.
+When two or more documents used in the DockingManager the Close, CloseAll and CloseAllButThis menu items are available for the document window. To collapse the visibility of these menu item, set the property **ShowClose** , **ShowCloseAll** and **ShowCloseAllButThis** as **False**.
 
 {% highlight xml %}
 
@@ -390,13 +390,13 @@ In TDI document, a new tab group can be created by dragging the TabItem into the
 
 
 #### Disable TabGroups
-Vertical and Horizontal Tab Grouping feature can be enabled/disabled using the property TabGroupEnabled in DockingManager. 
+Vertical and Horizontal Tab Grouping feature can be enabled or disabled using the property TabGroupEnabled in DockingManager. 
 
 TabGroupEnabled
-Enables or disables the ability to create tab groups and it is a boolean property
+Enables or disables the ability to create tab groups. It is a boolean property.
  
 Disabling Tab Groups
-Setting TabGroupEnabled=”False” will not display New Horizontal Tab Group and New Vertical Tab Group context menu items even if ShowHorizontalTabGroupMenuItem is true. Drag and drop support to create new tab group is also restricted. TabGroupEnabled property can be set as shown below:
+Setting TabGroupEnabled=”False” does not display New Horizontal Tab Group and New Vertical Tab Group context menu items even when ShowHorizontalTabGroupMenuItem is true. Drag and drop support to create new tab group is also restricted. TabGroupEnabled property can be set as shown here:
 
 {% highlight xml%}
  [C#]
@@ -416,7 +416,7 @@ dockingManager.TabGroupEnabled = false;
 
 ### VS2010 Behavior of TDI
 
-TDI document of DockingManager can be changed to Float while dragging its TDI header like the Visual Studio. This functionality can be enabled or disable using the property **IsVs2010DraggingEnabled** depends upon its value **True** or **False** respectively. 
+TDI document of DockingManager can be changed to Float while dragging its TDI header like the Visual Studio. This functionality can be enabled or disabled using the property **IsVs2010DraggingEnabled** depends upon its value **True** or **False** respectively. 
 
 {% highlight xml %}
 
@@ -437,7 +437,7 @@ syncfusion:DockingManager.State="Document"/>
 
 ### TDI Header Renaming Support
 
-To enable the functionality of editing the TDI document header when double click on Document header at runtime, set the property **EnableDocumentTabHeaderEdit** of the DockingManager as **True**. By default, its value is **False**.
+To enable the functionality of editing the TDI document header when you double click the document header at runtime, set the property **EnableDocumentTabHeaderEdit** of the DockingManager as **True**. By default, its value is **False**.
 
 {% highlight xml %}
 
@@ -451,7 +451,7 @@ To enable the functionality of editing the TDI document header when double click
 
 ### Hiding TDI Header
 
-To hide the TDI document header while single document child present in a DockingManager set the property **HideTDIHeaderOnSingleChild** as **True**. By default its value is **False**.
+To hide the TDI document header when a single document child present in a DockingManager set the property **HideTDIHeaderOnSingleChild** as **True**. By default its value is **False**.
 
 {% highlight xml %}
 
@@ -470,11 +470,11 @@ To hide the TDI document header while single document child present in a Docking
 
 ### Add new button in Header Panel
 
-In DockingManager, the new button can be added in the Document state windows using the **IsNewButtonEnabled** property of the DocumentTabControl. To achieve this, the DocumentTabControl need to fetch from the DockingManager using the VisualUtils in Document container loaded event.
+In DockingManager, the new button can be added in the Document state windows using the **IsNewButtonEnabled** property of the DocumentTabControl. To achieve this, the DocumentTabControl must be fetched from the DockingManager using the VisualUtils in Document container loaded event.
 
 {%highlight c#}
 
-//shows the loaded event for the DocumentContainer
+//shows the loaded event for the DocumentContainer.
 (DockingManager1.DocContainer as DocumentContainer).Loaded += DocumentContainer_Loaded;<br/><br/>void DocumentContainer_Loaded(object sender, RoutedEventArgs e)<br/><br/>{<br/><br/>DocumentTabControl tab = VisualUtils.FindDescendant(DockingManager1,<br/><br/>typeof (DocumentTabControl)) as DocumentTabControl;
 if (tab != null)
 {
