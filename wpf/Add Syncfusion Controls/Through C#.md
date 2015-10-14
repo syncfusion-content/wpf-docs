@@ -1,10 +1,10 @@
 ## Through C# / VB
 
-The following steps will helps to add a required Essential WPF Control (For example:DockingManager) through C# / VB Code
+The following steps help you add a required Essential WPF Control through C# or VB Code, like DockingManager.
 
 1. Create a WPF project in Visual Studio and refer the following assemblies.
-* Syncfusion.Tools.Wpf
-* Syncfusion.Shared.Wpf
+  * Syncfusion.Tools.Wpf
+  * Syncfusion.Shared.Wpf
 2. Create instance of Docking Manager.
 
 {% highlight c# %}
