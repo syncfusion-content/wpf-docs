@@ -8,14 +8,14 @@ documentation: ug
 ---
 ## Tabbed Window
 
-To make the children as Tabbed window, it should aware of the TargetName and set the side value as **“Tabbed”** through the property **SideInDockedMode**.
+To make the children as Tabbed windows, you can use the TargetName and set the side value as **“Tabbed”** using the property **SideInDockedMode**.
 
 ![](TabbedWindow_images/TabbedWindow_img1.jpeg)
 
 
 ###  Tab alignments
 
-The tabs of the Docked window placed at the bottom by default. To place the tabs of the docked window at different sides set the property **“DockTabAlignment”** with desired values such as **Top**, **Bottom**, **Left** and **Right**. 
+The tabs of the Docked window are placed at the bottom, by default. To place the tabs of the docked window at different sides set the property **“DockTabAlignment”** with desired values such as **Top**, **Bottom**, **Left** and **Right**. 
 
 * DockTabAlignment as **Bottom**
 
@@ -82,7 +82,7 @@ syncfusion:DockingManager.TargetNameInDockedMode="Content1"/>
 
 ### Closing a Tabbed window
 
-Tabbed window provides two different closing behavior are **CloseActive** and **CloseAll** modes of   **CloseTabs** property.
+Tabbed window provides two different closing behaviors. They are **CloseActive** and **CloseAll** modes of **CloseTabs** property.
 
 * **CloseActive** **–** Used to close the active element of Tabbed window.
 
@@ -101,7 +101,7 @@ Tabbed window provides two different closing behavior are **CloseActive** and **
 
 {% endhighlight %}
 
- **CloseAll** **–** Used to close all the Tabbed window
+ **CloseAll** **–** Used to close all the Tabbed window.
 
 {% highlight xml %}
 <syncfusion:DockingManager x:Name="DockingManager1" CloseTabs="CloseAll">
