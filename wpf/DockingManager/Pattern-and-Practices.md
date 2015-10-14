@@ -10,9 +10,9 @@ documentation: ug
 
 ### MVVM 
 
-This session explains how to adapt the Syncfusion docking manager to an MVVM application. Since the WPF DockingManager is not an __item__ __control__, it is not possible to have a traditional **"Itemsource"** binding to a collection of objects in the view model. This can, however, be achieved by creating a wrapper or adapter for the DockingManager.
+This section explains how to adapt the Syncfusion docking manager to an MVVM application. Since the WPF DockingManager is not an __item__ __control__, it is not possible to have a traditional **"Itemsource"** binding to a collection of objects in the view model. This can, however, be achieved by creating a wrapper or adapter for the DockingManager.
 
-Here a simple text-reader application is used to demonstrate this approach. The sample looks like this:
+Here a simple text-reader application is used to demonstrate this approach. Example:
 
 ![](PatternandPractices_images/PatternandPractices_img1.jpeg)
 
@@ -27,7 +27,7 @@ Here a simple text-reader application is used to demonstrate this approach. The 
 
 
 **Docking** **Adapter** 
-The adapter is simply a user control that contains our docking manager as its content. The adapter has two properties— **ItemsSource** and **ActiveDocument**. Binding a collection of objects to the **ItemsSource** property will trigger a collection change in which the adapter will create a corresponding framework element (e.g., a Content control) in the docking manager, setting the underlying data context of the control to the business model.
+The adapter is simply a user control that contains docking manager as its content. The adapter has two properties— **ItemsSource** and **ActiveDocument**. Binding a collection of objects to the **ItemsSource** property triggers a collection change where the adapter creates a corresponding framework element, example: a Content control, in the docking manager, setting the underlying data context of the control to the business model.
 
 {% highlight xml %}
 
@@ -47,7 +47,7 @@ The adapter is simply a user control that contains our docking manager as its co
 ![](PatternandPractices_images/PatternandPractices_img3.jpeg)
 
 
-Our text-reader application maintains a collection of workspaces. A workspace can be a normal dock pane or a document pane. The adapter also maintains an interface called __IDockElement____,__ which maintains basic attributes needed for every dock element.
+The text-reader application maintains a collection of workspaces. A workspace can be a normal dock pane or a document pane. The adapter also maintains an interface called __IDockElement____,__ that maintains basic attributes needed for every dock element.
 
 (The__ __text____-____reader__ __application__ __is__ __just__ __for__ __the__ __sample__ __and__ __contains__ __very__ __basic__ __operations.
 
@@ -64,13 +64,13 @@ The docking manager provides an **ActiveWindowChanged** event. Using this, the
 ![](PatternandPractices_images/PatternandPractices_img4.jpeg)
 
 
-The view model has a collection of workspaces that is data-bond to the **ItemsSource** property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the docking manager.
+The view model has a collection of workspaces that is data-bound to the **ItemsSource** property of the docking adapter. The adapter transforms the particular view model or business object into a corresponding dock element in the docking manager.
 
 Every dock element we see in the application is a workspace. There are three kinds of workspaces: the All Documents view, the Properties view, and the Document view. The docking adapter hooks up the “active window changed” event of the docking manager; the view model receives the message whenever the active document is changed.
 
 **Data** **Template** 
 
-Since WPF has an implicit template approach, it is easy for us to apply visuals to the view models. In this application, the data templates are defined in **App.xaml** with only the **DataType** attribute mentioned and not key-specified. The WPF template engine will traverse the tree and find the appropriate model type and apply the templates.
+Since WPF has an implicit template approach, it is easy for us to apply visuals to the view models. In this application, the data templates are defined in **App.xaml** with only the **DataType** attribute mentioned and not key-specified. The WPF template engine can traverse the tree and find the appropriate model type and apply the templates.
 
 {% highlight xml %}
 <application.resources>
@@ -119,7 +119,7 @@ Following this approach, the docking adapter can also be treated as a normal ite
 
 ### Practice with PRISM
 
-The following steps will help to create sample project in the PRISM.
+The following steps help you create sample project in the PRISM.
 
 1. Create a New WPF project and add the following references to the solution project.
 
@@ -195,7 +195,7 @@ bootstrapper.Run();
 
 {% endhighlight %}
 
-5. Next step is to create regions in the shell. To do this, first add the following namespace in the shell Window
+5. Next step is to create regions in the shell. To do this, first add the following namespace in the shell Window.
 {% highlight xml %}
 
 xmlns:prsm="http://www.codeplex.com/prism"
@@ -206,7 +206,7 @@ xmlns:prsm="http://www.codeplex.com/prism"
 
 {% endhighlight %}
 
-In the below code, a region called “MainRegion” has been created to load DockingManager Module views
+In the following code, a region called “MainRegion” has been created to load DockingManager Module views
 
 {% highlight xml %}
 <Window x:Class="DockingManagerPrism.App.MainWindow "
@@ -237,15 +237,15 @@ Title="MainWindow" Height="350" Width="525">
 
 6. Adding Module to the project
 
-Right click the Solution project, point to “Add” and then click “NewProject”.Then NewWindow called AddNewProject will open.Select “ClassLibrary” from Visual C# .then rename the project with desired name and click OK.Now a New Module will be created in the Solution Project
+Right-click the Solution project, point to “Add” and then click “NewProject”. Then a new window called AddNewProject opens. Select “ClassLibrary” from Visual C#, then rename the project with desired name and click OK. Now a New Module is created in the Solution Project.
 
-Now add following assemblies to the Module project
+Now add following assemblies to the Module project:
 
 * PresentationCore.dll
 * PresentationFramework.dll
 * WindowsBase.dll
 
-Also add following Prism assemblies
+Also add following Prism assemblies:
 
 * Microsoft.Practices.Composite.dll
 * Microsoft.Practices.Composite.Presentation.dll
@@ -253,7 +253,7 @@ Also add following Prism assemblies
 * Microsoft.Practices.ServiceLocation.dll
 * Microsoft.Practices.Unity.dll
 
-7. In the Shell project, add the reference to the type of DockingManager module by registering with ModuleCatalog instance in the ConfigureModuleCatalog method
+7. In the Shell project, add the reference to the type of DockingManager module by registering with ModuleCatalog instance in the ConfigureModuleCatalog method.
 
 
 {% highlight c# %}
@@ -274,7 +274,7 @@ moduleCatalog.AddModule(typeof(DockingModule));
 
 {% endhighlight %}
 
-8. Adding Views to the Module, here shows bottomleftmodule, similary the view for the module can be added according to numer of module
+8. Adding Views to the Module, shown here bottomleftmodule, similary the view for the module can be added according to number of modules.
 
 {% highlight xml %}
 <UserControl x:Class="DockingManagerPrism.Modules.BottomLeftModule"
@@ -309,9 +309,9 @@ d:DesignHeight="300" d:DesignWidth="300">
 
 {% endhighlight %}
 
-9. Add a region to the shell
+9. Add a region to the shell.
 
-After creating View for the Module, register the view as Module using the below code.
+After creating View for the Module, register the view as Module using the following code.
 
 {% highlight c# %}
 public class DockingModule : IModule
@@ -346,7 +346,7 @@ regionManager.RegisterViewWithRegion("MainRegion", typeof(TopModule));
 
 {% endhighlight %}
 
-Then Run the project will get added as three of the Module in the Shell.The number of modules can be add based on the complexity of the project.
+Then when you run the project, it is added as three of the Module in the Shell. The number of modules can be add based on the complexity of the project.
 
 ![](PatternandPractices_images/PatternandPractices_img5.jpeg)
 
